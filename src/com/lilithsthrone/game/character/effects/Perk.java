@@ -49,7 +49,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_HARPY_MATRIARCH = new AbstractPerk(20,
 			true,
-			"queen of the skies",
+			"королева небес",
 			PerkCategory.JOB,
 			"perks/jobs/npc_harpy_matriarch",
 			PresetColour.RACE_HARPY,
@@ -60,7 +60,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] risen to the position of matriarch of a harpy flock through a combination of [npc.her] natural beauty and willingness to do anything it takes to rule.");
+			return UtilText.parse(owner, "[npc.NameHasFull] поднялась на позицию матриарха стаи гарпий благодаря сочетанию [npc.her] природной красоты и готовности делать все, что нужно, чтобы править.");
 		}
 	};
 
@@ -77,7 +77,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] the member of a harpy flock, and as such has considerable experience in both flattering and backstabbing others.");
+			return UtilText.parse(owner, "[npc.NameIsFull] член стаи гарпий, и как таковая имеет значительный опыт как в лести, так и в подкупе.");
 		}
 	};
 
@@ -86,7 +86,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_PATROL_INSPECTOR = new AbstractPerk(20,
 			true,
-			"Enforcer: Patrol Inspector",
+			"Инспектор: Инспектор",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_inspector",
 			PresetColour.CLOTHING_BLUE,
@@ -99,7 +99,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Inspector' in the Enforcer's Frontline Patrol division, and has received a moderate amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает звание 'Инспектор' в дивизионе 'Фронтовой Патруль' Инспектора, и получила умеренное количество боевой подготовки.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -114,7 +114,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_PATROL_SERGEANT = new AbstractPerk(20,
 			true,
-			"Enforcer: Patrol Sergeant",
+			"Инспектор: Сержант",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_sergeant",
 			PresetColour.CLOTHING_BLUE,
@@ -126,7 +126,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Sergeant' in the Enforcer's Frontline Patrol division, and has received a limited amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает звание 'Сержант' в дивизионе 'Фронтовой Патруль' Инспектора, и получила ограниченное количество боевой подготовки.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -141,7 +141,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_PATROL_CONSTABLE = new AbstractPerk(20,
 			true,
-			"Enforcer: Patrol Constable",
+			"Инспектор: Констебль",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_constable",
 			PresetColour.CLOTHING_BLUE,
@@ -153,7 +153,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Constable' in the Enforcer's Frontline Patrol division, and has received a very limited amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает звание 'Констебль' в дивизионе 'Фронтовой Патруль' Инспектора, и получила очень ограниченное количество боевой подготовки.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -168,7 +168,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_ENFORCER_SWORD_SUPER = new AbstractPerk(20,
 			true,
-			"Enforcer: SWORD Superintendent",
+			"Инспектор: Суперинтендант",
 			PerkCategory.JOB,
 			"perks/jobs/npc_enforcer_superintendent",
 			PresetColour.CLOTHING_BLUE,
@@ -181,7 +181,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Superintendent' in the Enforcer's 'Special Weapons and Operations Response Department', and has received an extensive amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Супервайзера' в 'Отделе специального оружия и операций', и прошел обширную боевую подготовку.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -209,7 +209,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Chief Inspector' in the Enforcer's 'Special Weapons and Operations Response Department', and has received an extensive amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Главного инспектора' в 'Отделе специального оружия и операций', и прошел обширную боевую подготовку.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -237,7 +237,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Inspector' in the Enforcer's 'Special Weapons and Operations Response Department', and has received an extensive amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Инспектора' в 'Отделе специального оружия и операций', и прошел обширную боевую подготовку.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -265,7 +265,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Sergeant' in the Enforcer's 'Special Weapons and Operations Response Department', and has received a significant amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Сержанта' в 'Отделе специального оружия и операций', и прошел значительную боевую подготовку.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -293,7 +293,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Constable' in the Enforcer's 'Special Weapons and Operations Response Department', and has received a good amount of combat training.");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Констебля' в 'Отделе специального оружия и операций', и прошел хорошую боевую подготовку.");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -323,7 +323,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Inspector' in the Enforcer's 'Office of Realm Intelligence, Counter-Espionage, and Logistics', and knows many ways in which to get someone to talk...");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Инспектора' в 'Управлении разведки, контрразведки и логистики' и знает множество способов заставить кого-то говорить...");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -353,7 +353,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Sergeant' in the Enforcer's 'Office of Realm Intelligence, Counter-Espionage, and Logistics', and knows many ways in which to get someone to talk...");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Сержанта' в 'Управлении разведки, контрразведки и логистики' и знает множество способов заставить кого-то говорить...");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -383,7 +383,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] holds the rank of 'Constable' in the Enforcer's 'Office of Realm Intelligence, Counter-Espionage, and Logistics', and knows many ways in which to get someone to talk...");
+			return UtilText.parse(owner, "[npc.Name] занимает должность 'Констебля' в 'Управлении разведки, контрразведки и логистики' и знает множество способов заставить кого-то говорить...");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -398,7 +398,7 @@ public class Perk {
 	
 	public static AbstractPerk JOB_NPC_CULTIST = new AbstractPerk(20,
 			true,
-			"Worshipper of Lilith",
+			"Поклонник Лилит",
 			PerkCategory.JOB,
 			"perks/jobs/npc_cultist",
 			PresetColour.CLOTHING_BLACK,
@@ -428,7 +428,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] the manager of Slaver Alley's 'Slave Administration' building, and while [npc.she] acts friendly enough, it's sure to have taken a lot more than simply being nice to get to this position...");
+					"[npc.NameIsFull] является менеджером здания 'Администрация рабов' в Славер-Аллее, и хотя [npc.she] ведет себя достаточно дружелюбно, наверняка, чтобы занять эту должность, понадобилось гораздо больше, чем просто быть милым...");
 		}
 	};
 
@@ -446,7 +446,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a bouncer, and [npc.has] accumulated a significant amount of fighting experience while working to keep the riff-raff out of nightclubs and bars.");
+					"[npc.NameIsFull] является швейцаром, и [npc.has] накопил значительный опыт в боях, работая, чтобы не пускать нежелательных людей в ночные клубы и бары.");
 		}
 	};
 
@@ -473,7 +473,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Thanks to [npc.her] experience working as a "+(owner.isFeminine()?"barmaid":"barman")+", [npc.name] knows all the tricks to flirting, as well as how to resist the advances of lustful drunks.");
+					"Благодаря [npc.her] опыту работы в качестве "+(owner.isFeminine()?"barmaid":"barman")+", [npc.name] знает все хитрости флирта, а также как сопротивляться настойчивым ухаживаниям пьяных.");
 		}
 	};
 
@@ -490,7 +490,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.Name] knows all there is to how to make people look their best.");
+					"[npc.Name] знает все, что нужно, чтобы люди выглядели наилучшим образом.");
 		}
 	};
 	
@@ -506,13 +506,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] the very wealthy owner of one of Dominion's most popular nightclubs, and has no trouble in getting company for each evening.");
+					"[npc.NameIsFull] - очень богатый владелец одного из самых популярных ночных клубов Dominion, и у него нет проблем с тем, чтобы найти компанию на каждый вечер.");
 		}
 	};
 
 	public static AbstractPerk JOB_NPC_ARCANE_RESEARCHER = new AbstractPerk(20,
 			true,
-			"secrets of the arcane",
+			"@@T0@@ посвятил большую часть своей жизни изучению Арканы и разгадыванию ее секретов.",
 			PerkCategory.JOB,
 			"perks/jobs/npc_arcane_researcher",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -541,7 +541,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The pressure of having to make sure [npc.her] business is successful has caused [npc.name] to have to do a lot of work, building up [npc.her] resistances in the process.");
+					"Давление, связанное с необходимостью добиться успеха в бизнесе [npc.her], заставило [npc.name] работать очень много, в процессе чего он развил [npc.her] устойчивость.");
 		}
 	};
         
@@ -558,13 +558,13 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] training has given [npc.herHim] some defence against Lilith's forces.");
+			return UtilText.parse(owner, "[npc.NamePos] тренировки дали [npc.herHim] некоторую защиту от сил Лилит.");
 		}
 	};
 	
 	public static AbstractPerk JOB_NPC_FARMER = new AbstractPerk(20,
 			true,
-			"Feeding the World",
+			"Накормить мир",
 			PerkCategory.JOB,
 			"perks/jobs/npc_farmer",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -578,9 +578,9 @@ public class Perk {
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
 					"#IF(!game.isSillyMode())"
-						+ "The back-breaking work required to make fields bloom has made [npc.name] strong and tough. [npc.She] is also no stranger to the biting cold or the scorching sun."
+						+ "Утомительная работа, необходимая для того, чтобы заставить поля цвести, сделала [npc.name] сильным и выносливым. [npc.She] также не чурается холода или жары."
 					+ "#ELSE"
-						+ "[npc.NameHasFull] a brand new combine harvester and [npc.she]'ll give you the key, but only after driving [npc.her] tractor through your haystack, ooar-ooar!"
+						+ "[npc.NameHasFull] новый комбайн, и [npc.she] дам вам ключ, но только после того, как вы проедете [npc.her] трактором через ваш стог сена, уар-уар!"
 					+ "#ENDIF");
 		}
 	};
@@ -598,13 +598,13 @@ public class Perk {
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "In a society where only the state's version of the news is permitted, journalists need to walk a very fine line...");
+			return UtilText.parse(owner, "В обществе, где разрешена только версия новостей, предоставленная государством, журналисты должны ходить по очень тонкой линии...");
 		}
 	};
 	
 	public static AbstractPerk JOB_NPC_OFFICE_WORKER = new AbstractPerk(20,
 			true,
-			"It's just good business",
+			"Это просто хороший бизнес",
 			PerkCategory.JOB,
 			"perks/jobs/npc_office_worker",
 			PresetColour.CURRENCY_GOLD,
@@ -612,7 +612,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "The constant pressure of meeting targets and managing difficult colleagues and clients has built up [npc.namePos] endurance.");
+			return UtilText.parse(owner, "Постоянное давление, связанное с выполнением задач и управлением трудными коллегами и клиентами, выработало у [npc.namePos] выносливость.");
 		}
 	};
 
@@ -629,7 +629,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] the overseer of a reindeer workgang, and has built up not only a very strong body, but also an impressive resistance to the cold.");
+					"[npc.NameIsFull] смотритель стада оленей, и выработала не только очень сильное тело, но и впечатляющую устойчивость к холоду.");
 		}
 	};
 
@@ -660,7 +660,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] one of the seven elder lilin, and [npc.verb(hold)] powers that mere mortals can only dream of.");
+					"[npc.NameIsFull] один из семи старших лилин, и [npc.verb(hold)] силы, о которых простые смертные могут только мечтать.");
 		}
 	};
 
@@ -679,7 +679,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] the queen of all slimes, and is able to use [npc.her] shape-shifting abilities to make [npc.herself] look truly beautiful.");
+					"[npc.NameIsFull] королева всех слаймов, и может использовать [npc.her] способности к изменению формы, чтобы сделать [npc.herself] выглядеть действительно красиво.");
 		}
 	};
 
@@ -696,7 +696,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] one of the slime queen's personal guardians, and is well trained in how to handle a sword.");
+					"[npc.NameIsFull] один из личных стражников королевы слаймов, и хорошо обучен в обращении с мечом.");
 		}
 	};
 
@@ -736,7 +736,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameHasFull] all the strength and cunning expected of one who has risen to be the leader of a criminal gang, and [npc.has] furthermore survived countless attempts to challenge [npc.her] position of authority.");
+					"[npc.NameHasFull] вся сила и хитрость, ожидаемые от того, кто поднялся на должность лидера преступной банды, и [npc.has] к тому же пережил бесчисленное количество попыток оспорить [npc.her] позицию власти.");
 		}
 	};
 	
@@ -759,13 +759,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Having been recognised as one of the most powerful members of [npc.her] gang, [npc.name] has earned the position of being a bodyguard of [npc.her] leader.");
+					"Будучи признанным одним из самых могущественных членов [npc.her] банды, [npc.name] заработал позицию телохранителя [npc.her] лидера.");
 		}
 	};
 	
 	public static AbstractPerk JOB_GANG_MEMBER = new AbstractPerk(20,
 			true,
-			"one of us",
+			"один из нас",
 			PerkCategory.JOB,
 			"perks/jobs/npc_rat_gang",
 			Util.newArrayListOfValues(
@@ -782,7 +782,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a member of a criminal gang, and as such, has seen [npc.her] fair share of fights.");
+					"[npc.NameIsFull] член преступной банды, и как таковой, видел [npc.her] свою долю боев.");
 		}
 	};
 
@@ -803,7 +803,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"As a result of working hard to train and care for a huge number of centaur slaves, [npc.nameIsFull] very fit and healthy, and knows exactly how to deal with any unruly individuals.");
+					"В результате упорной работы по тренировке и уходу за огромным количеством рабов-цетавров, [npc.nameIsFull] очень сильный и здоровый, и знает, как справляться с любыми непослушными людьми.");
 		}
 	};
 	
@@ -826,13 +826,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] an unrecognised daughter of the elder lilin, Lyssieth, and has been given the task of defending her mother's palace from unwelcome visitors.");
+					"[npc.NameIsFull] не признанная дочь старшего лилина, Лиссит, и ей было поручено защищать дворец своей матери от нежелательных посетителей.");
 		}
 	};
 	
 	public static AbstractPerk JOB_TAUR_TRANSPORT = new AbstractPerk(20,
 			true,
-			"Keep on pulling!",
+			"Продолжай тянуть!",
 			PerkCategory.JOB,
 			"perks/jobs/taur_transport",
 			PresetColour.BASE_GOLD,
@@ -844,13 +844,13 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Having spent a significant amount of time using [npc.her] tauric body to pull carts and carry cargo, [npc.nameHasFull] built up a considerable level of physical fitness.");
+					"Проведя значительное количество времени, используя [npc.her] таврическое тело для тяги телег и перевозки грузов, [npc.nameHasFull] набрал значительный уровень физической подготовки.");
 		}
 	};
 	
 	public static AbstractPerk JOB_NPC_MAYOR = new AbstractPerk(20,
 			true,
-			"Weight of Responsibility",
+			"Вес ответственности",
 			PerkCategory.JOB,
 			"perks/jobs/mayor",
 			Util.newArrayListOfValues(
@@ -865,7 +865,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Having had to make countless difficult decisions which affect the lives of thousands of people, [npc.nameHasFull] hardened [npc.her] mind and [npc.is] able to act with full conviction.");
+					"Будучи вынужденным принимать бесчисленное количество трудных решений, которые влияют на жизни тысяч людей, [npc.nameHasFull] закалило [npc.her] ум и [npc.is] способно действовать с полной убежденностью.");
 		}
 	};
 	
@@ -882,7 +882,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Acting as [npc.her] superior's personal assistant, [npc.nameHasFull] to always be in prime physical condition in order to always be ready to offer a helping hand.");
+					"Действуя в качестве личного помощника [npc.her], [npc.nameHasFull] всегда должен быть в отличной физической форме, чтобы всегда быть готовым предложить помощь.");
 		}
 	};
 	
@@ -906,7 +906,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Having spent time training alongside Lunette herself, this demonic-centaur strives to be as destructive and merciless as [npc.her] mother!");
+					"Проведя время, тренируясь вместе с самой Лунетт, этот демонический кентавр стремится быть таким же разрушительным и безжалостным, как и мать [npc.her]!");
 		}
 	};
 
@@ -927,7 +927,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NamePos] body [npc.has] become highly resistant to poison through an arduous, and oft-times nauseating, process of discovering which mushrooms are edible, psychedelic, or toxic.");
+					"[npc.NamePos] тело [npc.has] становится высоко устойчивым к ядам благодаря сложному и часто тошнотворному процессу выявления съедобных, психоделических или токсичных грибов.");
 		}
 	};
 
@@ -950,7 +950,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a recognised daughter of Lunette herself, and as such is considerably more powerful than a regular demon.");
+					"[npc.NameIsFull] признанная дочь Лунетт, и как таковая, значительно мощнее обычного демона.");
 		}
 	};
 
@@ -982,21 +982,21 @@ public class Perk {
 			Util.newArrayListOfValues(PresetColour.RACE_DOLL),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"[style.boldGood(Obeys)] any command",
-					"[style.boldExcellent(Prioritises)] owner's commands",
-					"[style.boldBad(Ignores)] slaves and other dolls"),
+					"[style.boldGood(Послушен)] любым командам",
+					"[style.boldExcellent(Приоритет)] командам владельца",
+					"[style.boldBad(Игнорирует)] рабов и других кукол"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] an extremely realistic-looking sex doll, who was created at 'Lovienne's Luxuries'."
-					+ " [npc.She] will obey any command given to [npc.herHim], so long as it's not from a slave or another doll, with commands from [npc.her] owner taking priority.");
+					"[npc.NameIsFull] чрезвычайно реалистичная секс-кукла, созданная в 'Lovienne's Luxuries'."
+					+ " [npc.She] будет подчиняться любым командам, данным [npc.herHim], если они не от раба или другой куклы, при этом команды от владельца [npc.her] имеют приоритет.");
 		}
 	};
 	
 	public static AbstractPerk JOB_AMAZONIAN_QUEEN = new AbstractPerk(20,
 			true,
-			"Queen of Queens",
+			"Королева Королев",
 			PerkCategory.JOB,
 			"perks/jobs/npc_amazonian_queen",
 			Util.newArrayListOfValues(
@@ -1012,7 +1012,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] the queen of the Amazons, and as such has lived a life full of rigorous physical activity and combat training.");
+					"[npc.NameIsFull] королева амазонок, и как таковая, провела жизнь, полную интенсивных физических упражнений и боевой подготовки.");
 		}
 	};
 	
@@ -1033,7 +1033,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] an Amazon, and as such regularly engages in physical activity and combat training.");
+					"[npc.NameIsFull] амазонка, и как таковая, регулярно занимается физическими упражнениями и боевой подготовкой.");
 		}
 	};
 
@@ -1052,7 +1052,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a Youko, hailing from the Shinrin Highlands. [npc.SheHasFull] spent most of [npc.her] life practicing with the arcane, and as such [npc.her] spells are particularly potent.");
+					"[npc.NameIsFull] юко, родом из Шинринских Высот. [npc.SheHasFull] провела большую часть [npc.her] жизни, практикуясь с арканами, и как таковая, [npc.her] заклинания особенно сильны.");
 		}
 	};
 	
@@ -1070,14 +1070,14 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] a professional boxer, and as such is a fearsome opponent in a fight.");
+					"[npc.NameIsFull] профессиональный боксер, и как таковой, является грозным противником в бою.");
 		}
 	};
 	
 	
 	public static AbstractPerk JOB_SLAVE = new AbstractPerk(20,
 			true,
-			"A life of servitude",
+			"Жизнь в рабстве",
 			PerkCategory.JOB,
 			"perks/jobs/slave",
 			PresetColour.BASE_CRIMSON,
@@ -1088,7 +1088,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] steeled [npc.her] body and mind to help [npc.herHim] deal with the fact that [npc.sheIs] just someone else's property.");
+			return UtilText.parse(owner, "[npc.NameHasFull] закалила [npc.her] тело и разум, чтобы помочь [npc.herHim] справиться с тем, что [npc.sheIs] просто чья-то собственность.");
 		}
 	};
 
@@ -1104,13 +1104,13 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] been kidnapped and is being illegally held prisoner against [npc.her] will.");
+			return UtilText.parse(owner, "[npc.NameHasFull] была похищена и незаконно удерживается в плену против [npc.her] воли.");
 		}
 	};
 	
 	public static AbstractPerk JOB_PROSTITUTE = new AbstractPerk(20,
 			true,
-			"The oldest profession",
+			"Самая древняя профессия",
 			PerkCategory.JOB,
 			"perks/jobs/prostitute",
 			PresetColour.BASE_PINK,
@@ -1118,10 +1118,10 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 50),
 					new Value<>(Attribute.DAMAGE_LUST, 25),
 					new Value<>(Attribute.RESISTANCE_LUST, 2)),
-			Util.newArrayListOfValues("[style.boldExcellent(Doubles)] all slave and self-prostitution income")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Doubles)] все доходы от рабства и самопроституции")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] experienced at selling [npc.her] body to strangers in order to make a living. After having sex so many times, it takes a lot to get [npc.herHim] really turned on.");
+			return UtilText.parse(owner, "[npc.NameIsFull] имеет опыт продажи [npc.her] тела незнакомцам, чтобы заработать на жизнь. После стольких раз занятий сексом, нужно много, чтобы [npc.herHim] действительно возбудиться.");
 		}
 	};
 	
@@ -1134,10 +1134,10 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_PHYSICAL, 10),
 					new Value<>(Attribute.HEALTH_MAXIMUM, 15)),
-			Util.newArrayListOfValues("[style.boldExcellent(Triples)] all mugging income")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Triples)] весь доход от грабежей")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(live)] a life of crime, stealing from the rich and poor alike.");
+			return UtilText.parse(owner, "[npc.Name] [npc.verb(live)] жизнь преступника, крадущего у богатых и бедных.");
 		}
 	};
 	
@@ -1150,10 +1150,10 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.CRITICAL_DAMAGE, 25),
 					new Value<>(Attribute.HEALTH_MAXIMUM, 15)),
-			Util.newArrayListOfValues("[style.boldExcellent(-50%)] chance of enemy escape")) {
+			Util.newArrayListOfValues("[style.boldExcellent(-50%)] шанс на побег врага")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] an expert at tracking down and capturing fugitives, and as such, enemies have a hard time escaping from [npc.herHim] in combat.");
+			return UtilText.parse(owner, "[npc.NameIsFull] мастер по отслеживанию и поимке беглецов, и поэтому враги с трудом могут сбежать от [npc.herHim] в бою.");
 		}
 	};
 	
@@ -1170,7 +1170,7 @@ public class Perk {
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] [npc.verb(spent)] a while working in the construction industry, helping to build and repair both infrastructure and property.");
+			return UtilText.parse(owner, "[npc.NameHasFull] [npc.verb(spent)] некоторое время, работая в строительной отрасли, помогая строить и ремонтировать как инфраструктуру, так и недвижимость.");
 		}
 	};
 	
@@ -1187,7 +1187,7 @@ public class Perk {
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Being able to harness the arcane, and therefore able to telekinetically manipulate manner, [npc.nameIsFull] a very valuable asset for construction firms to have in their employ.");
+			return UtilText.parse(owner, "Умение использовать Аркана, и, следовательно, способность телекинетически манипулировать вещами, [npc.nameIsFull] очень ценный актив для строительных фирм иметь в своем штате.");
 		}
 	};
 	
@@ -1206,11 +1206,11 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_PHYSIQUE, 2),
 					new Value<>(Attribute.DAMAGE_UNARMED, 5),
 					new Value<>(Attribute.DAMAGE_PHYSICAL, 5)),
-			Util.newArrayListOfValues("[style.boldExcellent(Boosts)] 'Well Rested' bonus")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Boosts)] бонус 'Хорошо отдохнувший'")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "With so much free time on [npc.herPos] hands, [npc.nameHas] managed to improve [npc.herself] in several different ways."
-					+ " [npc.Name] also [npc.verb(benefit)] from knowing exactly how best to relax, boosting the bonus [npc.she] [npc.verb(get)] from sleeping.");
+			return UtilText.parse(owner, "У [npc.herPos] было так много свободного времени, что [npc.nameHas] смог улучшить [npc.herself] несколькими разными способами."
+					+ " [npc.Name] также [npc.verb(benefit)] от знания того, как лучше всего расслабиться, увеличивая бонус [npc.she] [npc.verb(get)] от сна.");
 		}
 	};
 	
@@ -1222,19 +1222,19 @@ public class Perk {
 			PresetColour.BASE_BROWN,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.CRITICAL_DAMAGE, 50)),
-			Util.newArrayListOfValues("[style.boldExcellent(+25%)] all slave income")) {
+			Util.newArrayListOfValues("[style.boldExcellent(+25%)] все доходы рабыни")) {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner!=null && owner.isFeminine()) {
-				return "The Career Woman";
+				return "Карьера Женщины";
 			} else {
 				return "The Salaryman";
 			}
 		}
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "From [npc.herPos] considerable office experience, [npc.name] [npc.verb(know)] exactly how to motivate those working beneath [npc.herPro]."
-					+ " The stressful work environment has caused [npc.herPro] to bottle up a lot of frustration, which manifests in increased critical power.");
+			return UtilText.parse(owner, "Из [npc.herPos] значительного опыта работы в офисе, [npc.name] [npc.verb(know)] точно, как мотивировать тех, кто работает под [npc.herPro]."
+					+ "Стрессовая рабочая среда заставила [npc.herPro] затаить много разочарований, что проявляется в увеличении критического урона.");
 		}
 	};
 	
@@ -1246,11 +1246,11 @@ public class Perk {
 			PresetColour.BASE_YELLOW,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MAJOR_ARCANE, 10)),
-			Util.newArrayListOfValues("[style.boldExcellent(25%)] discount in all stores")) {
+			Util.newArrayListOfValues("[style.boldExcellent(25%)] скидка во всех магазинах")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] student discount has never failed [npc.herPro] before!"
-					+ " Along with a guaranteed 25% discount in all stores, [npc.she] can be confident in [npc.herPos] ability to quickly learn new things.");
+			return UtilText.parse(owner, "[npc.NamePos] студенческая скидка никогда не подводила [npc.herPro]!"
+					+ "Наряду с гарантированной 25% скидкой во всех магазинах, [npc.she] может быть уверен в способности [npc.herPos] быстро осваивать новые вещи.");
 		}
 	};
 	
@@ -1262,10 +1262,10 @@ public class Perk {
 			PresetColour.BASE_GREY,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_LUST, 25)),
-			Util.newArrayListOfValues("[style.boldExcellent(Double)] length of all spell effects")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Double)] продолжительность всех эффектов заклинаний")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(find)] that [npc.herPos] abilities as a musician translate quite well into the art of seduction."
+			return UtilText.parse(owner, "[npc.Name] [npc.verb(find)] что [npc.herPos] способности как музыканта довольно хорошо переводятся на искусство соблазнения."
 					+ " [npc.She] [npc.verb(feel)] the same sort of rhythm in casting spells as [npc.she] [npc.do] with music, resulting in all of [npc.herPos] spell effects lasting twice as long as usual.");
 		}
 	};
@@ -1278,11 +1278,11 @@ public class Perk {
 			PresetColour.BASE_BLUE_LIGHT,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.SPELL_COST_MODIFIER, 10)),
-			Util.newArrayListOfValues("[style.boldExcellent(Triple)] all slave obedience gains")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Triple)] все награды за покорность")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(know)] exactly how to deal with unruly students."
-					+ " [npc.HerPos] ability to clearly understand and explain difficult subjects is reflected in a reduced cost of casting spells.");
+			return UtilText.parse(owner, " [npc.Name] [npc.verb(know)] как именно обращаться с непослушными учениками."
+					+ " [npc.HerPos] способность четко понимать и объяснять сложные предметы отражается в снижении стоимости заклинаний.");
 		}
 	};
 	
@@ -1294,11 +1294,11 @@ public class Perk {
 			PresetColour.BASE_PURPLE,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_SPELLS, 25)),
-			Util.newArrayListOfValues("[style.boldExcellent(+25%)] to all experience gains")) {
+			Util.newArrayListOfValues("[style.boldExcellent(+25%)] ко всем наградам за опыт")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(keep)] a diary of [npc.herPos] personal thoughts and encounters, allowing [npc.herPro] to reflect upon and learn from [npc.herPos] experiences."
-					+ " [npc.HerPos] keen interest in books also allows [npc.herPro] to quickly read up on the most effective application of spells.");
+			return UtilText.parse(owner, " [npc.Name] [npc.verb(keep)] дневник [npc.herPos] личных мыслей и встреч, позволяющий [npc.herPro] размышлять и учиться на [npc.herPos] опыте."
+					+ " [npc.HerPos] живой интерес к книгам также позволяет [npc.herPro] быстро изучать наиболее эффективные способы применения заклинаний.");
 		}
 	};
 
@@ -1311,11 +1311,11 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.RESISTANCE_POISON, 25)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Double)] duration of all potion effects",
-					"[style.boldExcellent(Doubles)] potion effect limit")) {
+					"[style.boldExcellent(Double)] продолжительность всех эффектов зелий",
+					"[style.boldExcellent(Doubles)] предел эффекта зелий")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Thanks to spending a considerable amount of time tasting food, [npc.name] [npc.has] both a significant resistance to poison, as well as the ability to make culinary marvels out of basic ingredients.");
+			return UtilText.parse(owner, "Благодаря тому, что [npc.name] [npc.has] проводит значительное время, пробуя еду, [npc.name] [npc.has] обладает как значительной устойчивостью к яду, так и способностью создавать кулинарные чудеса из простых ингредиентов.");
 		}
 	};
 
@@ -1329,12 +1329,12 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_PHYSIQUE, 5),
 					new Value<>(Attribute.HEALTH_MAXIMUM, 10),
 					new Value<>(Attribute.DAMAGE_PHYSICAL, 5)),
-			Util.newArrayListOfValues("[style.boldExcellent(Halves)] cost of all room upgrades"),
+			Util.newArrayListOfValues("[style.boldExcellent(Halves)] стоимость всех улучшений комнат"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Thanks to [npc.her] considerable experience in the industry, [npc.name] [npc.verb(know)] how to efficiently manage construction projects."
-					+ " [npc.Her] time performing manual labour has also given [npc.herHim] a healthy body.");
+			return UtilText.parse(owner, "Благодаря [npc.her] большому опыту в этой области, [npc.name] [npc.verb(know)] как эффективно управлять строительными проектами."
+					+ " [npc.Her] время, проведенное в физическом труде, также дало [npc.herHim] крепкое здоровье.");
 		}
 	};
 	
@@ -1350,26 +1350,26 @@ public class Perk {
 					new Value<>(Attribute.HEALTH_MAXIMUM, 25),
 					new Value<>(Attribute.RESISTANCE_PHYSICAL, 5),
 					new Value<>(Attribute.DAMAGE_PHYSICAL, 10)),
-			Util.newArrayListOfValues("Your damage is [style.boldExcellent(doubled)] in the first turn of combat")) {
+			Util.newArrayListOfValues("Ваш урон [style.boldExcellent(удваивается)] в первой атаке.")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHas] spent a considerable amount of time training to fight, and as a result, [npc.she] [npc.is] far stronger and healthier than a normal person."
-					+ " Thanks to this training, [npc.she] [npc.is] also able to channel [npc.herPos] aggression into [npc.herPos] attacks.");
+			return UtilText.parse(owner, "[npc.NameHas] потратил много времени на тренировки, и в результате, [npc.she] [npc.is] намного сильнее и здоровее, чем обычный человек."
+					+ "Благодаря этим тренировкам, [npc.she] [npc.is] также может направлять [npc.herPos] агрессию в [npc.herPos] атаки.");
 		}
 	};
 
 	public static AbstractPerk JOB_ATHLETE = new AbstractPerk(20,
 			true,
-			"Ten-Second Barrier",
+			"Десятисекундная Барьер",
 			PerkCategory.JOB,
 			"perks/jobs/athlete",
 			PresetColour.BASE_TEAL,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MAJOR_PHYSIQUE, 10)),
-			Util.newArrayListOfValues("All non-zero escape chances in combat are boosted to [style.boldExcellent(100%)]")) {
+			Util.newArrayListOfValues("Все шансы на побег в бою, отличные от нуля, увеличиваются до [style.boldExcellent(100%)].")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.is] a world-class sprinter, and [npc.has] a guaranteed 100% success of escaping any combat situation where running away is an option.");
+			return UtilText.parse(owner, "[npc.Name] [npc.is] sprinter мирового класса, и [npc.has] гарантированно 100% шанс на побег из любой боевой ситуации, где есть возможность убежать.");
 		}
 	};
 
@@ -1384,12 +1384,12 @@ public class Perk {
 					new Value<>(Attribute.DAMAGE_MELEE_WEAPON, 25),
 					new Value<>(Attribute.DAMAGE_RANGED_WEAPON, 25)),
 			Util.newArrayListOfValues(
-					"All [style.colourCorruption(corruption)] gains are [style.colourBad(doubled)]",
-					"[style.colourGood(+0.25)] to [style.colourExcellent(all resistances)] per 1 corruption")) {
+					"Все [style.colourCorruption(corruption)] бонусы [style.colourBad(удваиваются)]",
+					"[style.colourGood(+0.25)] до [style.colourExcellent(всех сопротивлений)] за 1 единицу порочности")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] from an ancient aristocratic family, and [npc.has] been given the best education money can buy."
-					+ " Insufferably arrogant, [npc.name] [npc.verb(know)] that [npc.sheIsFull] better than everyone else, and won't let any filthy peasant get the better of [npc.herHim]!");
+			return UtilText.parse(owner, "[npc.NameIsFull] из древней аристократической семьи, и [npc.has] получил лучшее образование, на которое можно потратить деньги."
+					+ "Невыносимо высокомерный, [npc.name] [npc.verb(know)] что [npc.sheIsFull] лучше всех остальных, и не позволит ни одному грязному крестьянину превзойти [npc.herHim]!");
 		}
 	};
 	
@@ -1404,18 +1404,18 @@ public class Perk {
 					new Value<>(Attribute.DAMAGE_LUST, 5),
 					new Value<>(Attribute.MAJOR_PHYSIQUE, 5)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Boosted)] Maid's set bonuses",
-					"[style.boldExcellent(Double)] slave income from maids and butlers")) {
+					"[style.boldExcellent(Boosted)] Бонус за комплект слуги",
+					"[style.boldExcellent(Double)] Двойной доход от слуг")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.is] the perfect example of a hard-working maid, and while wearing a complete set of maid's clothes, the bonus that [npc.she] [npc.verb(receive)] is considerably boosted."
-					+ " [npc.She] also [npc.verb(know)] how to train butlers and other maids to be exceptional at their jobs.");
+			return UtilText.parse(owner, "[npc.Name] [npc.is] идеальный пример трудолюбивой слуги, и, надев полный комплект служебной одежды, бонус, который [npc.she] [npc.verb(receive)] значительно усиливается."
+					+ " [npc.She] также [npc.verb(know)] как тренировать слуг и других слуг, чтобы они были исключительными в своей работе.");
 		}
 	};
 
 	public static AbstractPerk JOB_BUTLER = new AbstractPerk(20,
 			true,
-			"Legacy of Jeeves",
+			"Наследие Дживса",
 			PerkCategory.JOB,
 			"perks/jobs/butler",
 			PresetColour.BASE_BLUE_STEEL,
@@ -1423,12 +1423,12 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_PHYSIQUE, 5),
 					new Value<>(Attribute.RESISTANCE_LUST, 25)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Boosted)] Butler's set bonuses",
-					"[style.boldExcellent(Double)] slave income from maids and butlers")) {
+					"[style.boldExcellent(Boosted)] Бонус за комплект слуги",
+					"[style.boldExcellent(Double)] Двойной доход от слуг")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.is] the perfect example of a hard-working butler, and while wearing a complete set of butler's clothes, the bonus that [npc.she] [npc.verb(receive)] is considerably boosted."
-					+ " [npc.She] also [npc.verb(know)] how to train maids and other butlers to be exceptional at their jobs.");
+			return UtilText.parse(owner, "[npc.Name] [npc.is] идеальный пример трудолюбивого слуги, и, надев полный комплект служебной одежды, бонус, который [npc.she] [npc.verb(receive)] значительно усиливается."
+					+ " [npc.She] также [npc.verb(know)] как тренировать девушек и других слуг, чтобы они были исключительны в своей работе.");
 		}
 	};
 
@@ -1441,12 +1441,12 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.HEALTH_MAXIMUM, 25)),
 			Util.newArrayListOfValues(
-					"All incorrect English spellings are [style.boldExcellent(automatically fixed)]",
-					"Enemies are blinded by your [style.colourFreedom(freedom)] for [style.colourExcellent(-1)] <span style='color:"+Attribute.ACTION_POINTS.getColour().toWebHexString()+";'>"+Attribute.ACTION_POINTS.getName()+"</span>",
-					"Burger effects are [style.colourGood(doubled)]")) {
+					"Все неправильные английские орфографии [style.boldExcellent(автоматически исправлены)]",
+					"Враги ослеплены вашим [style.colourFreedom(freedom)] на [style.colourExcellent(-1)] <span style='color:"+Attribute.ACTION_POINTS.getColour().toWebHexString()+";'>"+Attribute.ACTION_POINTS.getName()+"</span>",
+					"Эффекты бургеров [style.colourGood(удвоены)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.speech(Excuse me! I'm an American! Do you speak English?! My visa expires in four days, where's the embassy?!)]");
+			return UtilText.parse(owner, "[npc.speech(Извините! Я американец! Вы говорите по-английски?! Моя виза истекает через четыре дня, где посольство?!)]");
 		}
 	};
 	
@@ -1463,7 +1463,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.has] a natural amount of physical fitness.");
+			return UtilText.parse(owner, "[npc.Name] [npc.has] естественное количество физической подготовки.");
 		}
 	};
 
@@ -1480,7 +1480,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] able to really get the most out of any critical moves [npc.she] [npc.verb(make)].");
+			return UtilText.parse(owner, "[npc.NameIsFull] способен действительно максимально использовать любые критические удары [npc.she] [npc.verb(make)].");
 		}
 	};
 
@@ -1497,7 +1497,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] able to really get the most out of any critical moves [npc.she] [npc.verb(make)].");
+			return UtilText.parse(owner, "[npc.NameIsFull] способен действительно максимально использовать любые критические удары [npc.she] [npc.verb(make)].");
 		}
 	};
 
@@ -1514,7 +1514,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] able to really get the most out of any critical moves [npc.she] [npc.verb(make)].");
+			return UtilText.parse(owner, "[npc.NameIsFull] способен действительно максимально использовать любые критические удары [npc.she] [npc.verb(make)].");
 		}
 	};
 	
@@ -1529,7 +1529,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a lot of time working towards improving [npc.her] physical fitness.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил много времени на улучшение [npc.her] физической подготовки.");
 		}
 	};
 	
@@ -1544,7 +1544,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a lot of time working towards improving [npc.her] physical fitness.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил много времени на улучшение физической подготовки [npc.her].");
 		}
 	};
 
@@ -1559,7 +1559,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Through hard work and perseverance, [npc.nameHasFull] managed to massively improve [npc.her] level of physical fitness.");
+			return UtilText.parse(owner, "Благодаря упорному труду и настойчивости, [npc.nameHasFull] смог значительно улучшить уровень физической подготовки [npc.her].");
 		}
 	};
 	
@@ -1574,7 +1574,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "By training without the aid of the arcane, [npc.nameHasFull] managed to improve the damage of [npc.her] physical attacks.");
+			return UtilText.parse(owner, "Тренируясь без помощи Аркана, [npc.nameHasFull] смог улучшить урон от физических атак [npc.her].");
 		}
 	};
 
@@ -1589,13 +1589,13 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent many hours in training for hand-to-hand combat, making [npc.herHim] a dangerous foe even when unarmed.");
+			return UtilText.parse(owner, "[npc.NameHasFull] провел много часов, тренируясь в рукопашном бою, что сделало [npc.herHim] опасным противником даже без оружия.");
 		}
 	};
 
 	public static AbstractPerk MELEE_DAMAGE = new AbstractPerk(20,
 			false,
-			"melee weapons expert",
+			"эксперт по ближнему бою",
 			PerkCategory.PHYSICAL,
 			"perks/melee_damage",
 			PresetColour.DAMAGE_TYPE_PHYSICAL,
@@ -1604,7 +1604,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Having spent considerable time training with all sorts of different melee weapons, [npc.nameIsFull] now a very dangerous foe to face in close combat.");
+			return UtilText.parse(owner, "Проведя много времени, тренируясь с различными видами холодного оружия, [npc.nameIsFull] теперь очень опасный противник в ближнем бою.");
 		}
 	};
 
@@ -1619,7 +1619,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Proficient with all sorts of ranged weapons, [npc.nameIsFull] a truly terrifying foe to face in long-distance engagements.");
+			return UtilText.parse(owner, "Умелый в использовании всех видов дистанционного оружия, [npc.nameIsFull] действительно ужасный противник в дальнем бою.");
 		}
 	};
 
@@ -1654,7 +1654,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a good deal of time working on improving [npc.her] ability to counter physical attacks.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил много времени на улучшение способности [npc.her] парировать физические атаки.");
 		}
 	};
 
@@ -1667,13 +1667,13 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.CRITICAL_DAMAGE, 15)),
 			Util.newArrayListOfValues(
-					"[style.colourExcellent(Unlocks)] autofellatio and autocunnilingus [style.colourSex(sex actions)]")) {
+					"[style.colourExcellent(Разблокирует)] авто fellatio и autocunnilingus [style.colourSex(сексуальные действия)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] exceptionally flexible, allowing [npc.herHim] to strike from completely unexpected angles."
-					+ " As [npc.sheIs] able to bend all the way down until [npc.her] head touches [npc.her] groin, [npc.sheIs] able to perform oral on [npc.herself].");
+					"[npc.NameIsFull] исключительно гибкий, что позволяет [npc.herHim] наносить удары с совершенно неожиданных углов."
+					+ "Как [npc.sheIs], способный согнуться до такой степени, что [npc.her] голова касается [npc.her] паха, [npc.sheIs] может заниматься оральным сексом с [npc.herself].");
 		}
 	};
 	
@@ -1687,7 +1687,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "By spending time practicing the casting of spells, [npc.nameHasFull] discovered new ways in which to increase their effectiveness.");
+			return UtilText.parse(owner, "Проведя время, практикуя заклинания, [npc.nameHasFull] открыл новые способы повышения их эффективности.");
 		}
 	};
 	
@@ -1701,7 +1701,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "By spending a great deal of time focusing on improving the power of [npc.her] spells, [npc.nameIsFull] now able to cast them much more effectively than before.");
+			return UtilText.parse(owner, "Проведя много времени, сосредоточившись на улучшении силы заклинаний [npc.her], [npc.nameIsFull] теперь может использовать их гораздо эффективнее, чем раньше.");
 		}
 	};
 	
@@ -1715,7 +1715,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] managed to improve the efficiency of [npc.her] spell casting!");
+			return UtilText.parse(owner, "[npc.NameHasFull] смог улучшить эффективность заклинаний [npc.her]!");
 		}
 	};
 	
@@ -1730,7 +1730,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "After spending quite some time focusing inwards, [npc.nameHasFull] managed to increase [npc.her] aura reserves.");
+			return UtilText.parse(owner, "После того, как [npc.nameHasFull] провел довольно много времени, сосредотачиваясь на себе, [npc.nameHasFull] смог увеличить запасы ауры [npc.her].");
 		}
 	};
 	
@@ -1745,7 +1745,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] increased [npc.her] energy reserves, allowing [npc.herHim] to withstand attacks that would once have taken [npc.herHim] out of the fight.");
+			return UtilText.parse(owner, "[npc.NameHasFull] увеличил запасы энергии [npc.her], что позволяет [npc.herHim] выдерживать удары, которые раньше могли бы вывести [npc.herHim] из боя.");
 		}
 	};
 
@@ -1780,7 +1780,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] dedicated [npc.herself] to learning how to harness all of the arcane elements more effectively.");
+			return UtilText.parse(owner, "[npc.NameHasFull] посвятил [npc.herself] изучению того, как более эффективно использовать все арканические элементы.");
 		}
 	};
 	
@@ -1798,7 +1798,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] dedicated [npc.herself] to learning how to harness all of the arcane elements more effectively.");
+			return UtilText.parse(owner, "[npc.NameHasFull] посвятил [npc.herself] изучению того, как более эффективно использовать все арканические элементы.");
 		}
 	};
 	
@@ -1834,14 +1834,14 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent time learning how best to defend [npc.herself] from the arcane elements.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил время на изучение того, как лучше всего защитить [npc.herself] от арканов.");
 		}
 	};
 	
 	
 	public static AbstractPerk ARCANE_BASE = new AbstractPerk(20,
 			false,
-			"natural arcane power",
+			"естественная аркана",
 			PerkCategory.ARCANE,
 			"perks/attIntelligence5",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -1849,7 +1849,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return "Everybody in this reality has an arcane aura, no matter how weak, and so at the very least has a tiny hint of arcane power available to them.";
+			return "У каждого в этой реальности есть аркана, независимо от того, насколько она слабая, и поэтому у каждого есть хотя бы немного арканы.";
 		}
 	};
 	
@@ -1864,7 +1864,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] focused on improving [npc.her] ability to harness the arcane.");
+			return UtilText.parse(owner, "[npc.NameHasFull] сосредоточился на улучшении [npc.her] способности использовать аркана.");
 		}
 	};
 
@@ -1879,7 +1879,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] focused on improving [npc.her] ability to harness the arcane.");
+			return UtilText.parse(owner, "[npc.NameHasFull] сосредоточился на улучшении [npc.her] способности использовать аркана.");
 		}
 	};
 
@@ -1894,7 +1894,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] unlocked secrets of the arcane which few ever get to know.");
+			return UtilText.parse(owner, "[npc.NameHasFull] раскрыл секреты арканы, о которых мало кто знает.");
 		}
 	};
 	
@@ -1926,7 +1926,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a good deal of time working on [npc.her] seduction techniques, allowing [npc.herHim] to deal extra damage when teasing others.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил много времени на изучение техник соблазнения [npc.her], что позволяет [npc.herHim] наносить дополнительный урон при подтрунивании над другими.");
 		}
 	};
 	
@@ -1940,7 +1940,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a good deal of time working on [npc.her] seduction techniques, allowing [npc.herHim] to deal extra damage when teasing others.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил много времени на изучение техник соблазнения [npc.her], что позволяет [npc.herHim] наносить дополнительный урон при подтрунивании над другими.");
 		}
 	};
 	
@@ -1954,7 +1954,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a good deal of time working on [npc.her] seduction techniques, allowing [npc.herHim] to deal extra damage when teasing others.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратил много времени на изучение техник соблазнения [npc.her], что позволило [npc.herHim] наносить дополнительный урон при teasing других.");
 		}
 	};
 	
@@ -1968,7 +1968,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a walking sex bomb. [npc.Her] every movement drips with suggestive body language, and people can't help but feel extremely aroused just by looking at [npc.herHim].");
+			return UtilText.parse(owner, "[npc.NameIsFull] ходячая сексуальная бомба. [npc.Her] каждое движение пропитано сексуальным подтекстом, и люди не могут не чувствовать сильное возбуждение, просто глядя на [npc.herHim].");
 		}
 	};
 	
@@ -1996,7 +1996,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] body is able to produce very potent sperm, increasing the chance that any sexual partner of [npc.hers] gets pregnant.");
+			return UtilText.parse(owner, "[npc.NamePos] тело способно производить очень мощную сперму, увеличивая вероятность того, что любой сексуальный партнер [npc.hers] забеременеет.");
 		}
 	};
 	
@@ -2010,7 +2010,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] body is able to produce incredibly potent sperm, greatly increasing the chance that any sexual partner of [npc.hers] gets pregnant.");
+			return UtilText.parse(owner, "[npc.NamePos] тело способно производить невероятно мощную сперму, значительно увеличивая вероятность того, что любой сексуальный партнер [npc.hers] забеременеет.");
 		}
 	};
 
@@ -2024,7 +2024,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] body is very fertile, increasing the chance that any sexual partner of [npc.hers] manages to get [npc.herHim] pregnant.");
+			return UtilText.parse(owner, "[npc.NamePos] тело очень плодородное, увеличивая шансы того, что любой сексуальный партнер [npc.hers] сможет забеременеть [npc.herHim].");
 		}
 	};
 
@@ -2038,7 +2038,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] body is incredibly fertile, increasing the chance that any sexual partner of [npc.hers] manages to get [npc.herHim] pregnant.");
+			return UtilText.parse(owner, "[npc.NamePos] тело невероятно плодородное, что увеличивает вероятность того, что любой сексуальный партнер [npc.hers] сможет забеременеть [npc.herHim].");
 		}
 	};
 	
@@ -2056,7 +2056,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] an expert harnessing the arcane for combat applications. [npc.She] [npc.verb(gain)] a bonus to [npc.her] spell damage and efficiency.");
+			return UtilText.parse(owner, "[npc.NameIsFull] мастер в использовании Аркана для боевых целей. [npc.She] [npc.verb(gain)] бонус к урону и эффективности заклинаний [npc.her].");
 		}
 	};
 	
@@ -2086,7 +2086,7 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, -25)),
 			Util.newArrayListOfValues(
-					"[style.colourExcellent(Absorb 50%)] of any combatant's remaining [style.colourMana("+Attribute.MANA_MAXIMUM.getName()+")]",
+					"[style.colourExcellent(Поглощение 50%)] от любого бойца оставшейся [style.colourMana("+Attribute.MANA_MAXIMUM.getName()+")]",
 					 "when they are defeated")) {
 
 		@Override
@@ -2170,8 +2170,8 @@ public class Perk {
 		public String getDescription(GameCharacter owner) {
 			if(owner!=null) {
 				return UtilText.parse(owner,
-						"[npc.Name] [npc.verb(sleep)] very deeply, with even shouting and physically shaking [npc.herHim] often not being enough to wake [npc.herHim] up."
-							+" [npc.SheIs] so unresponsive while sleeping that a gentle partner could get away with having sex with [npc.herHim] without causing [npc.herHim] to wake...");
+						"[npc.Name] [npc.verb(sleep)] очень глубоко, причём даже крики и физические потряхивания [npc.herHim] часто не помогают разбудить [npc.herHim]."
+							+" [npc.SheIs] настолько нечувствителен во сне, что нежный партнер может заниматься сексом с [npc.herHim], не боясь разбудить [npc.herHim]...");
 			}
 			return "";
 		}
@@ -2186,7 +2186,7 @@ public class Perk {
 			"perks/physical_accurate",
 			PresetColour.GENERIC_ARCANE,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_SPELLS, 5)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_COMBAT.toWebHexString()+ ";'>Critical</span> spells apply <b style='color:"+PresetColour.ATTRIBUTE_LUST.toWebHexString()+";'>Arcane weakness</b>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_COMBAT.toWebHexString()+ ";'>Критические</span> заклинания наносят <b style='color:"+PresetColour.ATTRIBUTE_LUST.toWebHexString()+";'>Arcane weakness</b>")) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
 			return UtilText.parsePlayerThought("");
@@ -2199,8 +2199,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spells are particularly effective when striking a target's weak spots."
-					+ " Any critical hits from [npc.her] spells apply 'Arcane weakness' for one turn (-10 to all shielding).");
+			return UtilText.parse(owner, "[npc.NamePos] заклинания особенно эффективны, когда поражают слабые места цели."
+					+ " Любые критические попадания от [npc.her] заклинаний накладывают 'Аркана слабость' на один ход (-10 к всем щитам).");
 		}
 	};
 	
@@ -2293,9 +2293,9 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You have a heightened affinity with arcane fire. You know just how to manipulate it in order to maximise the damage caused.";
+				return "У вас повышенная склонность к аркана огню. Вы знаете, как им управлять, чтобы максимизировать наносимый урон.";
 			else
-				return UtilText.parse(owner, "[npc.Name] has a heightened affinity with arcane fire. [npc.She] knows just how to manipulate it in order to maximise the damage caused.");
+				return UtilText.parse(owner, "[npc.Name] имеет повышенную склонность к аркана огню. [npc.She] знает, как им управлять, чтобы максимизировать наносимый урон.");
 		}
 	};
 
@@ -2312,9 +2312,9 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You are an expert at manipulating arcane fire. Not only are you able to maximise its damage, but you also have a heightened resistance to its effects.";
+				return "Вы мастер в управлении аркана огнем. Вы не только можете максимизировать его урон, но и обладаете повышенной устойчивостью к его эффектам.";
 			else
-				return UtilText.parse(owner, "[npc.Name] is an expert at manipulating arcane fire. Not only is [npc.she] able to maximise its damage, but [npc.she] also has a heightened resistance to its effects.");
+				return UtilText.parse(owner, "[npc.Name] - мастер по манипуляции аркана огня. Не только [npc.she] способен максимизировать его повреждения, но и [npc.she] обладает повышенной устойчивостью к его эффектам.");
 		}
 	};
 
@@ -2329,9 +2329,9 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You have a heightened affinity with arcane ice. You know just how to manipulate it in order to maximise the damage caused.";
+				return "У вас повышенная склонность к арканизму льда. Вы знаете, как манипулировать им, чтобы максимизировать наносимый урон.";
 			else
-				return UtilText.parse(owner, "[npc.Name] has a heightened affinity with arcane ice. [npc.She] knows just how to manipulate it in order to maximise the damage caused.");
+				return UtilText.parse(owner, "[npc.Name] имеет повышенную склонность к арканизму льда. [npc.She] знает, как манипулировать им, чтобы максимизировать наносимый урон.");
 		}
 	};
 
@@ -2349,7 +2349,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You are an expert at manipulating arcane ice. Not only are you able to maximise its damage, but you also have a heightened resistance to its effects.";
+				return "Вы мастер в манипуляции арканизмом льда. Вы не только можете максимизировать его урон, но и иметь повышенную устойчивость к его эффектам.";
 			else
 				return UtilText.parse(owner, "[npc.Name] is an expert at manipulating arcane ice. Not only is [npc.she] able to maximise its damage, but [npc.she] also has a heightened resistance to its effects.");
 		}
@@ -2366,9 +2366,9 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You have a heightened affinity with arcane poison. You know just how to manipulate it in order to maximise the damage caused.";
+				return "У вас повышенная склонность к арканизму яда. Вы знаете, как манипулировать им, чтобы максимизировать наносимый урон.";
 			else
-				return UtilText.parse(owner, "[npc.Name] has a heightened affinity with arcane poison. [npc.She] knows just how to manipulate it in order to maximise the damage caused.");
+				return UtilText.parse(owner, "[npc.Name] имеет повышенную склонность к арканизму яда. [npc.She] знает, как манипулировать им, чтобы максимизировать наносимый урон.");
 		}
 	};
 
@@ -2386,9 +2386,9 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You are an expert at manipulating arcane poison. Not only are you able to maximise its damage, but you also have a heightened resistance to its effects.";
+				return "Вы мастер в манипуляции арканизмом яда. Вы не только можете максимизировать его урон, но и иметь повышенную устойчивость к его эффектам.";
 			else
-				return UtilText.parse(owner, "[npc.Name] is an expert at manipulating arcane poison. Not only is [npc.she] able to maximise its damage, but [npc.she] also has a heightened resistance to its effects.");
+				return UtilText.parse(owner, "[npc.Name] - мастер по обращению с аркана-яд. [npc.she] не только умеет максимизировать его вред, но и [npc.she] обладает повышенной устойчивостью к его действию.");
 		}
 	};
 
@@ -2400,14 +2400,14 @@ public class Perk {
 			"perks/fitness_runner",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_PHYSIQUE, 3)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+ ";'>Improved escape chance</span>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+ ";'>Улучшенная вероятность побега</span>")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer())
-				return "You're a natural runner and possess a good level of stamina.";
+				return "Ты прирожденный бегун и обладаешь хорошим уровнем выносливости.";
 			else
-				return UtilText.parse(owner, "[npc.Name] is natural runner and possesses a good level of stamina.");
+				return UtilText.parse(owner, "[npc.Name] прирожденный бегун и обладает хорошим уровнем выносливости.");
 		}
 	};
 
@@ -2418,7 +2418,7 @@ public class Perk {
 			"perks/fitness_runner_2",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
 			Util.newHashMapOfValues(new Value<>(Attribute.HEALTH_MAXIMUM, 5)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+ ";'>Improved escape chance</span>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.ATTRIBUTE_PHYSIQUE.toWebHexString()+ ";'>Улучшенная вероятность побега</span>")) {
 		@Override
 		public String getName(GameCharacter character) {
 			if (character!=null && character.isFeminine()) {
@@ -2430,7 +2430,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] the " + (owner.isFeminine() ? "queen" : "king") + " of cardio, possessing a seemingly endless reserve of energy.");
+			return UtilText.parse(owner, "[npc.NameIsFull] " + (owner.isFeminine() ? "queen" : "king") + " кардио, обладающий, казалось бы, бесконечным запасом энергии.");
 		}
 	};
 
@@ -2441,10 +2441,10 @@ public class Perk {
 			"perks/regeneration",
 			PresetColour.ATTRIBUTE_PHYSIQUE,
 			Util.newHashMapOfValues(new Value<>(Attribute.MANA_MAXIMUM, -25)),
-			Util.newArrayListOfValues("[style.boldExcellent(Regenerate 5%)] total [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")] per turn in combat")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Восстанавливать 5%)] общего [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")] за ход в бою")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "At the expense of some of [npc.namePos] "+Attribute.MANA_MAXIMUM.getName()+", the arcane's natural healing properties will now be amplified when in the presence of [npc.her] adrenaline.");
+			return UtilText.parse(owner, "За счет некоторого [npc.namePos] "+Attribute.MANA_MAXIMUM.getName()+", природные исцеляющие свойства аркана теперь усиливаются при присутствии [npc.her] адреналина.");
 		}
 	};
 	
@@ -2460,7 +2460,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] [npc.verb(love)] a good brawl, and [npc.is] a fearsome opponent in unarmed combat.");
+			return UtilText.parse(owner, "[npc.Name] [npc.verb(love)] хорошую драку, и [npc.is] страшного противника в рукопашной схватке.");
 		}
 	};
 
@@ -2484,7 +2484,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] very flirtatious, and although [npc.her] charms work well on both sexes, [npc.she] [npc.verb(find)] that [npc.her] advances are particularly effective against feminine people.");
+			return UtilText.parse(owner, "[npc.NameIsFull] очень кокетливый, и хотя [npc.her] чары работают хорошо на обоих полах, [npc.she] [npc.verb(find)] что [npc.her] ухаживания особенно эффективны против женщин.");
 		}
 
 	};
@@ -2509,7 +2509,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] quite a tease, and although [npc.her] charms work well on both sexes, [npc.she] [npc.verb(find)] that [npc.her] advances are particularly effective against masculine people.");
+			return UtilText.parse(owner, "[npc.NameIsFull] довольно провокационно, и хотя [npc.her] чары работают на обоих полах, [npc.she] [npc.verb(find)] что [npc.her] ухаживания особенно эффективны против мужчин.");
 		}
 	};
 	
@@ -2522,43 +2522,43 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_LUST, 1)),
 			Util.newArrayListOfValues(
-					"Requests made during normal sex scenes are always granted",
-					"Unlocks positioning actions in all normal sex scenes"),
+					"Запросы, сделанные во время обычных сцен секса, всегда удовлетворяются",
+					"Разблокирует позиции в всех обычных сценах секса"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] mastered the art of sexual persuasion, and [npc.is] able to convince even the cruelest of dominant partners to do as [npc.she] [npc.verb(ask)].");
+			return UtilText.parse(owner, "[npc.NameHasFull] освоила искусство сексуального обольщения, и [npc.is] может убедить даже самых жестоких доминирующих партнеров сделать то, что [npc.she] [npc.verb(ask)].");
 		}
 	};
 	
 	public static AbstractPerk OBJECT_OF_DESIRE = new AbstractPerk(20,
 			true,
-			"object of desire",
+			"объект желания",
 			PerkCategory.LUST,
 			"perks/object_of_desire",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_LUST, 1)),
-			Util.newArrayListOfValues("All partners in sex require [style.colourSex(+1 orgasm)] before being satisfied")) {
+			Util.newArrayListOfValues("Все партнеры по сексу требуют [style.colourSex(+1 оргазм)] перед тем, как они будут удовлетворены")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] so astoundingly "+(owner.getFemininity()==Femininity.ANDROGYNOUS?"attractive":(owner.isFeminine()?"beautiful":"handsome"))
-					+" that [npc.her] sexual partners can't help but keep on fucking well after they've had their first orgasm.");
+			return UtilText.parse(owner, "[npc.NameIsFull] настолько поразительно "+(owner.getFemininity()==Femininity.ANDROGYNOUS?"attractive":(owner.isFeminine()?"beautiful":"handsome"))
+					+" что [npc.her] сексуальные партнеры не могут не продолжать трахаться, даже после того, как они получили свой первый оргазм.");
 		}
 	};
 
 	public static AbstractPerk ORGASMIC_LEVEL_DRAIN = new AbstractPerk(20,
 			true,
-			"orgasmic level drain",
+			"уровень оргазма",
 			PerkCategory.LUST,
 			"perks/orgasmic_level_drain",
 			Util.newArrayListOfValues(PresetColour.GENERIC_SEX, PresetColour.GENERIC_EXPERIENCE),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"[style.boldTerrible(-95% to all)] [style.boldExperience(experience gains)]",
-					"In all [style.boldSex(sex scenes)]:",
-					"Can choose to [style.boldTerrible(drain 1 level)] from orgasming partners",
-					"You gain [style.boldExcellent(5)] [style.boldExperience(experience)] multiplied by the level drained"),
+					"[style.boldУжасно(-95% ко всем)] [style.boldОпыт(приобретение опыта)]",
+					"Во всех [style.boldSex(сценах секса)]:",
+					"Может выбрать [style.boldTerrible(выкачивать 1 уровень)] из партнеров по оргазму",
+					"Вы получаете [style.boldExcellent(5)] [style.boldExperience(опыта)] умноженного на уровень, выкачанный из партнера"),
 			null, null, null) {
 
 		@Override
@@ -2579,12 +2579,12 @@ public class Perk {
 					new Value<>(Attribute.DAMAGE_LUST, 5),
 					new Value<>(Attribute.RESISTANCE_LUST, -2)),
 			Util.newArrayListOfValues(
-					"[style.colourExcellent(x2)] [style.colourArcane(essence gain)] from orgasming",
-					"Gain [style.colourSex(pent-up)] and [style.colourSex(chastity)] status effects [style.colourTerrible(2x faster)]")) {
+					"[style.colourExcellent(x2)] [style.colourArcane(Эссенция)] от оргазма",
+					"Получаете [style.colourSex(накопление)] и [style.colourSex(девственность)] статусные эффекты [style.colourTerrible(2x быстрее)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] completely and hopelessly addicted to sex.");
+			return UtilText.parse(owner, "[npc.NameIsFull] полностью и безнадежно зависим от секса.");
 		}
 	};
 	
@@ -2597,10 +2597,10 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_LUST, 15),
 					new Value<>(Attribute.RESISTANCE_LUST, -5)),
-			Util.newArrayListOfValues("Goes [style.colourSex(ahegao)] upon orgasming")) {
+			Util.newArrayListOfValues("@@T0@@ полностью и безнадежно одержим сексом")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] orgasms are particularly intense, and [npc.she] can't help but make an exaggerated facial expression every time [npc.she] [npc.verb(climax)].");
+			return UtilText.parse(owner, "Оргазмы [npc.NamePos] особенно интенсивны, и [npc.she] не может не делать преувеличенное выражение лица каждый раз, когда [npc.she] [npc.verb(климакс)].");
 		}
 	};
 
@@ -2611,11 +2611,11 @@ public class Perk {
 			"perks/lustful_leech",
 			PresetColour.ATTRIBUTE_MANA,
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_LUST, 2)),
-			Util.newArrayListOfValues("[style.boldExcellent(Absorb 2%)] of target's maximum "+Attribute.MANA_MAXIMUM.getName()+" on each attack which deals [style.boldLust("+Attribute.DAMAGE_LUST.getName()+")]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Поглощение 2%)] от максимального "+Attribute.MANA_MAXIMUM.getName()+" на каждом ударе, который наносит [style.boldПохоть("+Attribute.DAMAGE_LUST.getName()+")]")) {
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "The arcane itself reacts to [npc.namePos] lustful advances, draining a small amount of [npc.her] enemy's "+Attribute.MANA_MAXIMUM.getName()+" each time [npc.she] teases them.");
+			return UtilText.parse(owner, "The arcane itself reacts to [npc.namePos] lustful advances, draining a small amount of [npc.her] enemy's "+Attribute.MANA_MAXIMUM.getName()+" каждый раз, когда [npc.she] дразнит их.");
 		}
 	};
 
@@ -2626,12 +2626,12 @@ public class Perk {
 			"perks/pure_mind",
 			PresetColour.DAMAGE_TYPE_LUST,
 			Util.newHashMapOfValues(new Value<>(Attribute.RESISTANCE_LUST, 2)),
-			Util.newArrayListOfValues("[style.boldExcellent(Regain 2%)] of your maximum "+Attribute.MANA_MAXIMUM.getName()+" on each attack in which you take [style.boldLust("+Attribute.DAMAGE_LUST.getName()+")]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Восстановление 2%)] от вашего максимального "+Attribute.MANA_MAXIMUM.getName()+" на каждом ударе, в котором вы испытываете [style.boldПохоть("+Attribute.DAMAGE_LUST.getName()+")]")) {
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Steeling [npc.her] mind against any lustful advances, [npc.nameIsFull] able to enter a meditative state,"
-					+ " reacting to any lust damage [npc.she] [npc.verb(receive)] by regenerating some of [npc.her] "+Attribute.MANA_MAXIMUM.getName()+".");
+			return UtilText.parse(owner, "Защита [npc.her] от любых похотливых попыток, [npc.nameIsFull] может входить в состояние медитации,"
+					+ " реагируя на любой урон от похоти [npc.she] [npc.verb(receive)] путем восстановления некоторого количества [npc.her] "+Attribute.MANA_MAXIMUM.getName()+".");
 		}
 	};
 	
@@ -2643,11 +2643,11 @@ public class Perk {
 			"perks/arcaneWeaver",
 			PresetColour.GENERIC_ARCANE,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENCHANTMENT_LIMIT, 15)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Halves cost of all clothing enchantments</span>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Половина стоимости всех заклинаний на одежду</span>")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] a natural affinity for weaving arcane enchantments into items of clothing, allowing [npc.herHim] to expend only half of the usual arcane essences when enchanting clothing.");
+			return UtilText.parse(owner, "[npc.NameHasFull] природная склонность к созданию арканных заклинаний на предметах одежды, позволяющая [npc.herHim] тратить только половину обычной арканной эссенции при создании заклинаний на одежде.");
 		}
 	};
 	
@@ -2658,11 +2658,11 @@ public class Perk {
 			"perks/arcaneSmith",
 			PresetColour.GENERIC_ARCANE,
 			Util.newHashMapOfValues(new Value<>(Attribute.ENCHANTMENT_LIMIT, 15)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Halves cost of all weapon enchantments</span>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_GOOD.toWebHexString()+ ";'>Половина стоимости всех арканных заклинаний</span>")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] a natural affinity for imbuing weapons with arcane enchantments, allowing [npc.herHim] to expend only half of the usual arcane essences when enchanting weapons.");
+			return UtilText.parse(owner, "[npc.NameHasFull] природная склонность к созданию арканных заклинаний на оружии, позволяющая [npc.herHim] тратить только половину обычной арканной эссенции при создании заклинаний на оружии.");
 		}
 	};
 	
@@ -2677,7 +2677,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent time training [npc.her] body and mind in order to handle a higher "+Attribute.ENCHANTMENT_LIMIT.getName()+", allowing [npc.herHim] to equip more enchanted weapons, clothing, and tattoos.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потраченное время на тренировку [npc.her] тела и ума, чтобы справиться с более высоким "+Attribute.ENCHANTMENT_LIMIT.getName()+", позволяющая [npc.herHim] надевать больше арканных заклинаний на оружие, одежду и татуировки.");
 		}
 	};
 
@@ -2692,7 +2692,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent time training [npc.her] body and mind in order to handle a higher "+Attribute.ENCHANTMENT_LIMIT.getName()+", allowing [npc.herHim] to equip more enchanted weapons, clothing, and tattoos.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потраченное время на тренировку [npc.her] тела и ума, чтобы справиться с более высоким "+Attribute.ENCHANTMENT_LIMIT.getName()+", позволяющая [npc.herHim] надевать больше арканных заклинаний на оружие, одежду и татуировки.");
 		}
 	};
 	
@@ -2703,11 +2703,11 @@ public class Perk {
 			"perks/barren",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(new Value<>(Attribute.FERTILITY, -200)),
-			Util.newArrayListOfValues("While "+Attribute.FERTILITY.getName()+" value is 0 or less, pregnancy is [style.colourTerrible(impossible)]")) {
+			Util.newArrayListOfValues("While "+Attribute.FERTILITY.getName()+" значение равно 0 или меньше, беременность [style.colourTerrible(impossible)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] very infertile, and as a result, [npc.is] highly unlikely to ever get pregnant.");
+			return UtilText.parse(owner, "[npc.NameIsFull] очень бесплодна, и как следствие, [npc.is] крайне маловероятно, что она когда-нибудь забеременеет.");
 		}
 	};
 	
@@ -2718,11 +2718,11 @@ public class Perk {
 			"perks/firing_blanks",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(new Value<>(Attribute.VIRILITY, -200)),
-			Util.newArrayListOfValues("While "+Attribute.VIRILITY.getName()+" value is 0 or less, impregnation is [style.colourTerrible(impossible)]")) {
+			Util.newArrayListOfValues("While "+Attribute.VIRILITY.getName()+" значение равно 0 или меньше, оплодотворение [style.colourTerrible(impossible)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] seed is incredibly weak, and [npc.sheIs] highly unlikely to ever get anyone pregnant.");
+			return UtilText.parse(owner, "[npc.NamePos] семя невероятно слабое, и [npc.sheIs] маловероятно, что оно когда-либо забеременеет.");
 		}
 	};
 	
@@ -2735,16 +2735,16 @@ public class Perk {
 			"fetishes/fetish_broodmother",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(new Value<>(Attribute.FERTILITY, 20)),
-			Util.newArrayListOfValues("2x <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>Maximum offspring in mothered litters</span>")) {
+			Util.newArrayListOfValues("2x <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>Максимальное количество потомства в материнских пометах</span>")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer()) {
-				return "Your body is built for one thing; pumping out as many children as possible."
-							+ " Whether due to an effect of your arcane aura, or perhaps just because of your body's natural fertility, you seem to always give birth to huge numbers of children at once.";
+				return "Ваше тело создано для одной вещи; выжимать как можно больше детей."
+							+ " Будь то из-за эффекта вашей арканой ауры, или, возможно, из-за естественной фертильности вашего тела, вы всегда рождаете огромное количество детей за один раз.";
 			} else {
-				return UtilText.parse(owner, "[npc.NamePos] body is built for one thing; pumping out as many children as possible."
-						+ " [npc.She] seems to always give birth to huge numbers of children at once.");
+				return UtilText.parse(owner, "[npc.NamePos] тело создано для одной вещи; выжимать как можно больше детей."
+						+ " [npc.She] всегда рождаете огромное количество детей за один раз.");
 			}
 		}
 		
@@ -2761,14 +2761,14 @@ public class Perk {
 			"fetishes/fetish_seeder",
 			PresetColour.GENERIC_SEX,
 			Util.newHashMapOfValues(new Value<>(Attribute.VIRILITY, 20)),
-			Util.newArrayListOfValues("2x <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>Maximum offspring in fathered litters</span>")) {
+			Util.newArrayListOfValues("2x <span style='color:"+ PresetColour.GENERIC_SEX.toWebHexString()+ ";'>Максимальное количество потомства в отцовских пометах</span>")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
 			if (owner.isPlayer()) {
-				return "Your seed has the potent effect of causing anyone impregnated by it to give birth to huge numbers of children.";
+				return "Ваше семя имеет мощное действие, вызывающее у любого, кто им забеременеет, рождение огромного количества детей.";
 			} else {
-				return UtilText.parse(owner, "[npc.NamePos] seed has the potent effect of causing anyone impregnated by it to give birth to huge numbers of children.");
+				return UtilText.parse(owner, "[npc.NamePos] семя имеет мощное действие, вызывающее у любого, кто им забеременеет, рождение огромного количества детей.");
 			}
 		}
 
@@ -2787,12 +2787,12 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_SPELLS, 20),
 					new Value<>(Attribute.SPELL_COST_MODIFIER, 20)),
-			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Embarrassing spell dialogue</span>")) {
+			Util.newArrayListOfValues("<span style='color:"+ PresetColour.GENERIC_BAD.toWebHexString()+ ";'>Затруднительный диалог заклинания</span>")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Roughly translated from Japanese as 'Middle School 2nd Year Syndrome', those with 'chuunibyou' believe and act as though they possess special powers."
-					+ " While chuunis may once have been purely delusional, the arcane now lends some truth to their beliefs...");
+			return UtilText.parse(owner, "Приблизительно переведенное с японского как 'Синдром второго года средней школы', те, кто страдает 'чуунибиё', верят и действуют так, как будто они обладают особыми силами."
+					+ "Хотя чууни когда-то могли быть чисто бредовыми, Аркана теперь придает некоторую правду их убеждениям...");
 		}
 	};
 
@@ -2806,7 +2806,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return "You have a surprisingly large amount of natural arcane power; far more than a regular person ought to have.";
+			return "У вас удивительно большое количество природной Арканы; гораздо больше, чем у обычного человека.";
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2816,7 +2816,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_MERAXIS = new AbstractPerk(20,
 			false,
-			"The Dark Siren",
+			"Темная Сирена",
 			PerkCategory.ARCANE,
 			"perks/dark_siren",
 			PresetColour.ATTRIBUTE_LUST,
@@ -2829,7 +2829,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Meraxis is none other than the Dark Siren herself! Being the recognised daughter of the elder Lilin Lyssieth, she has considerable skill with wielding the arcane.");
+			return UtilText.parse(owner, "Мераксис - это ни кто иной, как сама Темная Сирена! Будучи признанной дочерью старшего лилина Лиссита, она обладает значительным мастерством в использовании Арканы.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2850,7 +2850,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] undergone extensive training in order to learn how to imbue tattoos with arcane enchantments.");
+			return UtilText.parse(owner, "[npc.NameHasFull] прошла обширную подготовку, чтобы научиться наносить татуировки с Арканическими заклинаниями.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2860,7 +2860,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_CLOTHING_MASCULINITY_INDIFFERENCE = new AbstractPerk(20,
 			false,
-			"masculine clothing indifference",
+			"indifference to masculine clothing",
 			PerkCategory.PHYSICAL,
 			"perks/clothingIndifferenceMasculinity",
 			Util.newArrayListOfValues(PresetColour.MASCULINE, PresetColour.CLOTHING_GREY),
@@ -2880,7 +2880,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_CLOTHING_FEMININITY_INDIFFERENCE = new AbstractPerk(20,
 			false,
-			"feminine clothing indifference",
+			"indifference to feminine clothing",
 			PerkCategory.PHYSICAL,
 			"perks/clothingIndifferenceFemininity",
 			Util.newArrayListOfValues(PresetColour.FEMININE, PresetColour.CLOTHING_GREY),
@@ -2962,7 +2962,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When not partaking in it with complete strangers, [npc.nameIsFull] almost always fantasising about sex, and thinks of little else but what sort of lewd act [npc.she] should perform with [npc.her] next partner.");
+			return UtilText.parse(owner, "Когда не занимается сексом с совершенно незнакомыми людьми, [npc.nameIsFull] почти всегда фантазирует о сексе и думает о том, какой следующий непристойный акт [npc.she] должен совершить с [npc.her].");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -2987,7 +2987,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] undergone extensive training in order to learn how to harness the arcane.");
+			return UtilText.parse(owner, "[npc.NameHasFull] прошла обширную подготовку, чтобы научиться использовать Аркана.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3013,7 +3013,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Thanks to an exceptional event in [npc.her] past, [npc.nameHasFull] gained a not only a huge amount of natural arcane power, but also an innate understanding of how best to harness the arcane.");
+			return UtilText.parse(owner, "Благодаря исключительным событиям в прошлом [npc.her], [npc.nameHasFull] не только получила огромную природную силу Аркана, но и врожденное понимание того, как лучше всего использовать Аркана.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3037,7 +3037,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.Name] suffers from a rare allergic reaction to the arcane, and is therefore almost completely incapable of harnessing its power.");
+			return UtilText.parse(owner, "[npc.Name] страдает от редкой аллергической реакции на Аркана, и поэтому почти полностью неспособна использовать его силу.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3085,7 +3085,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] spent a lot of time training [npc.her] body for combat, and as a result, [npc.sheIs] far stronger than the average person.");
+			return UtilText.parse(owner, "[npc.NameHasFull] потратила много времени на тренировку тела [npc.her] для боя, и в результате, [npc.sheIs] намного сильнее, чем среднестатистический человек.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3108,7 +3108,7 @@ public class Perk {
 					PresetColour.GENERIC_BAD),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"While [style.colourMinorBad(not wearing prescription glasses)], suffer from [style.colourTerrible(blurry vision)]"),
+					"Когда [style.colourMinorBad(не носит очки)] страдает от [style.colourTerrible(расплывчатого зрения)]"),
 			null, null, null) {
 		@Override
 		public String applyPerkGained(GameCharacter character) {
@@ -3122,11 +3122,11 @@ public class Perk {
 		public String getDescription(GameCharacter owner) {
 			if(owner.isPerfectVision()) {
 				return UtilText.parse(owner,
-						"[npc.Name] would ordinarily suffer from visual impairment, but thanks to [npc.her] [npc.eyeRace] [npc.eyes], [npc.she] can see perfectly without needing prescription glasses.");
+						"[npc.Name] обычно страдает от нарушения зрения, но благодаря [npc.her] [npc.eyeRace] [npc.eyes], [npc.she] может видеть идеально, не нуждаясь в очках.");
 			}
 			return UtilText.parse(owner,
-					"[npc.Name] [npc.verb(suffer)] from visual impairment, and as a result [npc.she] [npc.verb(struggle)] to see without wearing prescription glasses."
-					+ " When [npc.she] [npc.is] wearing corrective eyewear, however, [npc.her] vision is nothing less than perfect.");
+					"[npc.Name] [npc.verb(страдает)] от нарушения зрения, и в результате [npc.she] [npc.verb(борется)] за то, чтобы видеть без ношения очков."
+					+ "Когда [npc.she] [npc.is] носит корректирующую оптику, однако, зрение [npc.her] не менее чем идеально.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3188,7 +3188,7 @@ public class Perk {
 	
 	public static AbstractPerk SPECIAL_CHILD_OF_THE_CRAG = new AbstractPerk(20,
 			true,
-			"Child of the Crag",
+			"Сын Крага",
 			PerkCategory.PHYSICAL_WATER,
 			"perks/cragchild",
 			PresetColour.DAMAGE_TYPE_COLD,
@@ -3199,7 +3199,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "The blood of Cimryth runs through [npc.namePos] veins and [npc.she] is long inured to the cold of living so high up in the mountains. However, being so removed from [npc.her] desert kin has lessened [npc.her] natural resistance to fire.");
+			return UtilText.parse(owner, "Кровь Цимеры flows through the veins of [npc.namePos], and [npc.she] is long accustomed to the cold of living so high up in the mountains. However, being so removed from [npc.her] desert kin has lessened [npc.her] natural resistance to fire.");
 		}
 		
 		@Override
@@ -3218,13 +3218,13 @@ public class Perk {
 					PresetColour.CLOTHING_BLACK,
 					PresetColour.CLOTHING_GUNMETAL),
 			Util.newHashMapOfValues(new Value<>(Attribute.DAMAGE_RANGED_WEAPON, 75)),
-			Util.newArrayListOfValues("[style.colourExcellent(Doubles)] all firearms damage"),
+			Util.newArrayListOfValues("[style.colourExcellent(Doubles)] весь урон от огнестрельного оружия"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameHasFull] not only completed the notoriously grueling Firearms Proficiency Program required of all SWORD Enforcers, but finished with a grade of Master."
-					+ " No doubt this left some dark, lingering memories, but as a result [npc.sheIs] one of the most proficient #IF(npc.isFeminine())markswomen#ELSEmarksmen#ENDIF in the realm.");
+					"[npc.NameHasFull] не только успешно завершил программу подготовки по обращению с огнестрельным оружием, требуемую от всех SWORD Enforcers, но и получил оценку 'Мастер'."
+					+ "Без сомнения, это оставило некоторые темные, затянувшиеся воспоминания, но в результате [npc.sheIs] стал одним из самых искусных #IF(npc.isFeminine())markswomen#ELSEmarksmen#ENDIF в королевстве.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3251,7 +3251,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Having survived multiple intense workout sessions with Dominion's most excitable and motivated physical trainer, you feel noticeably stronger.");
+			return UtilText.parse(owner, "Вы пережили несколько интенсивных тренировок с самым возбужденным и мотивированным физическим тренером Dominion, и теперь чувствуете себя заметно сильнее.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3272,7 +3272,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] received formal training in martial arts, making [npc.herHim] an extremely dangerous individual even while unarmed.");
+			return UtilText.parse(owner, "[npc.NameHasFull] прошел официальную подготовку по боевым искусствам, что делает [npc.herHim] крайне опасным человеком даже без оружия.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3301,7 +3301,7 @@ public class Perk {
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "<i>It's the same old shit. People think they can fuck with me, and there's only one way to prove 'em wrong!</i>");
+			return UtilText.parse(owner, "<i>Это всё та же старая хрень. Люди думают, что могут со мной связаться, и есть только один способ доказать им обратное!</i>");
 		}
 		
 		@Override
@@ -3312,7 +3312,7 @@ public class Perk {
 	
 	public static AbstractPerk HERO_OF_THEMISCYRA = new AbstractPerk(20,
 			false,
-			"Hero of Themiscyra",
+			"Герой Темискиры",
 			PerkCategory.ARCANE,
 			"perks/hero_of_themiscyra",
 			PresetColour.BASE_GOLD,
@@ -3323,16 +3323,16 @@ public class Perk {
 		@Override
 		public String getName(GameCharacter owner) {
 			if(owner!=null && owner.isFeminine()) {
-				return "Heroine of Themiscyra";
+				return "Героиня Темискиры";
 			} else {
 				return super.getName(owner);
 			}
 		}
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return "<i>The skies, the fountains, every region near"
-					+ "<br/>Seem'd all one mutual cry: I never heard"
-					+ "<br/>So musical a discord, such sweet thunder.</i>";
+			return "<i>Небо, фонтаны, каждый регион поблизости"
+					+ "<br/>Казалось, все вокруг кричали одно и то же: Я никогда не слышал"
+					+ "<br/>Такой музыкальный дисгармоничный звук, такой сладкий гром.</i>";
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3359,7 +3359,7 @@ public class Perk {
 			null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Having participated in several sparring sessions with Aurokaris, you feel like you've learned a new thing or two about how to fight.");
+			return UtilText.parse(owner, "Участвуя в нескольких спаррингах с Аурокарисом, вы чувствуете, что узнали кое-что новое о том, как сражаться.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3384,10 +3384,10 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lirecea's power has been infused into your arcane aura."
+					"Эссенция силы Лирецы была впитана в вашу арканическую ауру."
 					+ (owner.getSubspeciesOverride()==Subspecies.DEMON
-							?" Her power has additionally enabled you to transform your demonic body into that of any aquatic species!"
-							:" If you were a demon, this power would enable you to transform your body parts into those of any aquatic species!"));
+							?"Её сила также позволила вам превратить своё демоническое тело в тело любой водной сущности!"
+							:"Если бы вы были демоном, эта сила позволила бы вам превратить части своего тела в части любой водной сущности!"));
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3397,7 +3397,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LIRECEA_1_DEMON = new AbstractPerk(20,
 			false,
-			"Lirecea's true power",
+			"Истинная сила Лиреа",
 			PerkCategory.ARCANE,
 			"perks/lilin1",
 			PresetColour.BASE_BLUE_LIGHT,
@@ -3412,8 +3412,8 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lirecea's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform your demonic body into that of any aquatic species!");
+					"Эссенция силы Лиреа была впитана в вашу арканическую ауру."
+					+ "Её сила была усилена вашей демонической формой, которая также позволила вам превратить своё демоническое тело в тело любой водной сущности!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3435,10 +3435,10 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lovienne's power has been infused into your arcane aura."
+					"Эссенция силы Ловиенны была впитана в вашу арканическую ауру."
 					+ (owner.getSubspeciesOverride()==Subspecies.DEMON
-							?" Her power has additionally enabled you to transform your demonic body into that of feral animals!"
-							:" If you were a demon, this power would enable you to transform your body parts into those of feral animals!"));
+							?"Её сила также позволила вам превратить своё демоническое тело в тело диких животных!"
+							:"Если бы вы были демоном, эта сила позволила бы вам превратить части своего тела в части диких животных!"));
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3448,7 +3448,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LOVIENNE_2_DEMON = new AbstractPerk(21,
 			false,
-			"Lovienne's true power",
+			"Истинная сила Ловиенн",
 			PerkCategory.ARCANE,
 			"perks/lilin2",
 			PresetColour.RACE_BESTIAL,
@@ -3458,13 +3458,13 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 15),
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldFeral(feral transformations)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] [style.boldFeral(дикие трансформации)]",
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команде Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lovienne's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform your demonic body into that of feral animals!");
+					"Эссенция силы Ловиенн была впитана в вашу арканическую ауру."
+					+ "Её сила была усилена вашей демонической формой, которая также позволила вам превратить своё демоническое тело в тело диких животных!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3481,16 +3481,16 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] ability to transform others into [style.boldDemon(demons)] if a [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] способность превращать других в [style.boldDemon(демонов)] если демон", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команде Лилит)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lasielle's power has been infused into your arcane aura."
+					"Эссенция силы Ласиэль была впитана в вашу арканическую ауру."
 					+ (owner.getSubspeciesOverride()==Subspecies.DEMON
-							?" Her power has additionally enabled you to transform others into demons!"
-							:" If you were a demon, this power would enable you to transform others into demons!"));
+							?"Её сила также позволила вам превращать других в демонов!"
+							:"Если бы вы были демоном, эта сила позволила бы вам превращать других в демонов!"));
 		}
 		
 		@Override
@@ -3501,7 +3501,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LASIELLE_3_DEMON = new AbstractPerk(22,
 			false,
-			"Lasielle's true power",
+			"Истинная сила Ласиэль",
 			PerkCategory.ARCANE,
 			"perks/lilin3",
 			PresetColour.RACE_DEMON,
@@ -3511,13 +3511,13 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 15),
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] ability to transform others into [style.boldDemon(demons)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] способность превращать других в [style.boldDemon(демонов)]",
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команде Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lasielle's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform others into demons!");
+					"Эссенция силы Ласиэль была впитана в вашу арканическую ауру."
+					+ "Её сила была усилена вашей демонической формой, что также позволило вам превращать других в демонов!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3534,13 +3534,13 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 25)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHuman(human transformations)] if a [style.boldDemon(demon)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] [style.boldHuman(человеческие превращения)] если демон",
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команде Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lyssieth's power has been infused into your arcane aura."
-					+ " If you were a demon, this power would be enhanced, and also enable you to transform your body parts into those of a regular human!");
+					"Эссенция силы Лисиэли была впитана в вашу арканическую ауру."
+					+ "Если бы ты был демоном, эта сила усилилась бы, и также позволила бы тебе превратить свои части тела в части тела обычного человека!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3550,7 +3550,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LYSSIETH_4_DEMON = new AbstractPerk(23,
 			false,
-			"Lyssieth's true power",
+			"Истинная сила Лиссит",
 			PerkCategory.ARCANE,
 			"perks/lilin4",
 			PresetColour.RACE_HUMAN,
@@ -3561,13 +3561,13 @@ public class Perk {
 					new Value<>(Attribute.MANA_MAXIMUM, 50),
 					new Value<>(Attribute.getRacialDamageAttribute(Race.HUMAN), 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHuman(human transformations)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] [style.boldHuman(человеческие трансформации)]",
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команды Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lyssieth's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform your demonic body parts into those of a regular human!");
+					"Эссенция силы Лиссит была впитана в твою арканическую ауру."
+					+ "Ее сила была усилена твоей демонической формой, которая также позволила тебе превратить свои демонические части тела в части тела обычного человека!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3584,15 +3584,15 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHorse(mammalian transformations)] if a [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] [style.boldHorse(трансформации млекопитающих)] если [style.boldDemon(демон)]", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команды Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lunette's power has been infused into your arcane aura."
+					"Эссенция силы Лунетт была впитана в твою арканическую ауру."
 					+ (owner.getSubspeciesOverride()==Subspecies.DEMON
-							?" Her power has additionally enabled you to transform your demonic body into that of a regular human!"
-							:" If you were a demon, this power would enable you to transform your body parts into those of a regular human!"));
+							?"Ее сила дополнительно позволила тебе превратить свое демоническое тело в тело обычного человека!"
+							:"Если бы ты был демоном, эта сила позволила бы тебе превратить части своего тела в части обычного человека!"));
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3602,7 +3602,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LUNETTE_5_DEMON = new AbstractPerk(24,
 			false,
-			"Lunette's true power",
+			"Истинная сила Лунетт",
 			PerkCategory.ARCANE,
 			"perks/lilin5",
 			PresetColour.RACE_HORSE_MORPH,
@@ -3613,12 +3613,12 @@ public class Perk {
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
 					"[style.boldExcellent(Unlocks)] [style.boldHorse(mammalian transformations)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команда Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lunette's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform your demonic body parts into those of mammalian species!");
+					"Эссенция силы Лунетт была впитана в твою арканическую ауру."
+					+ "Ее сила была усилена твоей демонической формой, что также позволило тебе превратить свои демонические части тела в части тела млекопитающих!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3635,15 +3635,15 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldHarpy(avian transformations)] if a [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] [style.boldHarpy(avian transformations)] если [style.boldDemon(demon)]", //TODO placeholder TF unlock, might change in the future
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команда Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lyxias's power has been infused into your arcane aura."
+					"Эссенция силы Ликсиас была впитана в твою арканическую ауру."
 					+ (owner.getSubspeciesOverride()==Subspecies.DEMON
-							?" Her power has additionally enabled you to transform your demonic body into that of avian species!"
-							:" If you were a demon, this power would enable you to transform your body parts into those of avian species!"));
+							?"Ее сила дополнительно позволила тебе превратить свое демоническое тело в тело птицы!"
+							:"Если бы ты был демоном, эта сила позволила бы тебе превращать свои части тела в части тела птиц!"));
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3653,7 +3653,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LYXIAS_6_DEMON = new AbstractPerk(25,
 			false,
-			"Lyxias's true power",
+			"Истинная сила Ликсиас",
 			PerkCategory.ARCANE,
 			"perks/lilin6",
 			PresetColour.RACE_HARPY,
@@ -3668,8 +3668,8 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lyxias's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform your demonic body parts into those of avian species!");
+					"Эссенция силы Ликсиас была впитана в твою арканическую ауру."
+					+ "Ее сила была усилена твоей демонической формой, что также позволило тебе превращать свои демонические части тела в части тела птиц!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3692,10 +3692,10 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lyssieth's power has been infused into your arcane aura."
+					"Эссенция силы Лиссит был впитана в твою арканическую ауру."
 					+ (owner.getSubspeciesOverride()==Subspecies.DEMON
-							?" Her power has additionally enabled you to transform your demonic body into that of reptilian and amphibian species!"
-							:" If you were a demon, this power would enable you to transform your body parts into those of reptilian and amphibian species!"));
+							?"Ее сила дополнительно позволила тебе превращать свое демоническое тело в тело рептилий и амфибий!"
+							:"Если бы ты был демоном, эта сила позволила бы тебе превращать свои части тела в рептилий и амфибий!"));
 		}
 		
 		@Override
@@ -3706,7 +3706,7 @@ public class Perk {
 
 	public static AbstractPerk POWER_OF_LISOPHIA_7_DEMON = new AbstractPerk(26,
 			false,
-			"Lisophia's true power",
+			"Истинная сила Лисофии",
 			PerkCategory.ARCANE,
 			"perks/lilin7",
 			PresetColour.BASE_GREEN_LIGHT,
@@ -3716,13 +3716,13 @@ public class Perk {
 					new Value<>(Attribute.MAJOR_CORRUPTION, 15),
 					new Value<>(Attribute.MANA_MAXIMUM, 50)),
 			Util.newArrayListOfValues(
-					"[style.boldExcellent(Unlocks)] [style.boldGreenLight(reptilian and amphibian transformations)]",
-					"[style.boldExcellent(Immunity)] to [style.boldArcane(Lilith's Command)]")) {
+					"[style.boldExcellent(Unlocks)] [style.boldGreenLight(рептилий и амфибий трансформации)]",
+					"[style.boldExcellent(Immunity)] к [style.boldArcane(Команде Лилит)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The essence of Lisophia's power has been infused into your arcane aura."
-					+ " Her power has been enhanced by your demonic form, which has also enabled you to transform your demonic body parts into those of reptilian and amphibian species!");
+					"Эссенция силы Лисофии была впитана в твою арканическую ауру."
+					+ "Ее сила была усилена твоей демонической формой, что также позволило тебе превращать свои демонические части тела в рептилий и амфибий!");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -3732,16 +3732,16 @@ public class Perk {
 	
 	public static AbstractPerk SINGLE_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Single tailed Youko",
+			"Однохвостая Юко",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail1",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(трансформации Юко!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] one arcane tail.");
+			return UtilText.parse(owner, "[npc.NameIsFull] юко; тип арканически-усиленной лис-морф, обычно встречающийся только в Шинринских Высотах. [npc.Her] служба более высокоранговой юко позволила [npc.him] одной арканической хвосте.");
 		}
 
 		@Override
@@ -3750,7 +3750,7 @@ public class Perk {
 
 	public static AbstractPerk TWO_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Two tailed Youko",
+			"Двуххвостая Юко",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail2",
 			PresetColour.RACE_FOX_MORPH,
@@ -3759,7 +3759,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] two arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркана-усиленного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] служба более высокоранговому лис-морфу позволила [npc.him] иметь два аркана-хвоста.");
 		}
 
 		@Override
@@ -3768,7 +3768,7 @@ public class Perk {
 
 	public static AbstractPerk THREE_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Three tailed Youko",
+			"Треххвостый лис-морф",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail3",
 			PresetColour.RACE_FOX_MORPH,
@@ -3777,7 +3777,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] three arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркана-усиленного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] служба более высокоранговому лис-морфу позволила [npc.him] иметь три аркана-хвоста.");
 		}
 
 		@Override
@@ -3786,7 +3786,7 @@ public class Perk {
 
 	public static AbstractPerk FOUR_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Four tailed Youko",
+			"Четыреххвостый лис-морф",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail4",
 			PresetColour.RACE_FOX_MORPH,
@@ -3795,7 +3795,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] four arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркана-усиленного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] служба более высокоранговому лис-морфу позволила [npc.him] иметь четыре аркана-хвоста.");
 		}
 
 		@Override
@@ -3804,7 +3804,7 @@ public class Perk {
 
 	public static AbstractPerk FIVE_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Five tailed Youko",
+			"Пятихвостый лис-морф",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail5",
 			PresetColour.RACE_FOX_MORPH,
@@ -3813,7 +3813,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] five arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркано-мощного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] Служба у более высокорангового лис-морфа позволила [npc.him] иметь пять аркановых хвостов.");
 		}
 
 		@Override
@@ -3822,16 +3822,16 @@ public class Perk {
 
 	public static AbstractPerk SIX_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Six tailed Youko",
+			"Шестихвостый лис-морф",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail6",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(трансформации лис-морфа!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] six arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркано-мощного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] Служба у более высокорангового лис-морфа позволила [npc.him] иметь шесть аркановых хвостов.");
 		}
 
 		@Override
@@ -3840,16 +3840,16 @@ public class Perk {
 
 	public static AbstractPerk SEVEN_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Seven tailed Youko",
+			"Семихвостый лис-морф",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail7",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(трансформации лис-морфа!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] seven arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркано-мощного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] Служба у более высокорангового лис-морфа позволила [npc.him] иметь семь аркановых хвостов.");
 		}
 
 		@Override
@@ -3858,16 +3858,16 @@ public class Perk {
 
 	public static AbstractPerk EIGHT_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Eight tailed Youko",
+			"Восьмихвостый лис-морф",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail8",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(трансформации лис-морфа!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] eight arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] лис-морф; тип аркано-мощного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] Служба у более высокорангового лис-морфа позволила [npc.him] иметь восемь аркановых хвостов.");
 		}
 
 		@Override
@@ -3876,16 +3876,16 @@ public class Perk {
 
 	public static AbstractPerk NINE_TAILED_YOUKO = new AbstractPerk(20,
 			false,
-			"Nine tailed Youko",
+			"Девятихвостая Юко",
 			PerkCategory.ARCANE,
 			"statusEffects/race/raceFoxTail9",
 			PresetColour.RACE_FOX_MORPH,
 			Util.newHashMapOfValues(),
-			Util.newArrayListOfValues("[style.boldExcellent(Unlocks)] [style.boldFox(youko transformations!)]")) {
+			Util.newArrayListOfValues("[style.boldExcellent(Разблокирует)] [style.boldFox(трансформации Юко!)]")) {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] a youko; a type of arcane-powered fox-morph typically found only in the Shinrin Highlands. [npc.Her] service to a higher-ranked youko has afforded [npc.him] nine arcane tails.");
+			return UtilText.parse(owner, "[npc.NameIsFull] Юко; это тип аркано-мощного лис-морфа, обычно встречающийся только в Шинринских Высотах. [npc.Her] Служба у более высокоранговой Юко позволила [npc.him] обрести девять аркановых хвостов.");
 		}
 
 		@Override
@@ -4002,8 +4002,8 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"As beings of pure arcane energy, elementals are able to effortlessly harness the arcane in order to cast spells."
-					+ " Due to the lustful nature of the arcane, they are also incredibly perverted, and are always willing and ready to have sex...");
+					"Как существа из чистой аркановой энергии, элементали способны без усилий использовать аркану для заклинаний."
+					+ "Из-за похотливой природы арканы, они также невероятно развращены и всегда готовы к сексу...");
 		}
 	};
 
@@ -4045,13 +4045,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получите заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " привязанность к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] will be able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "Привязанность к школе "+getSchool().getName()+", [npc.name] сможет использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -4079,13 +4079,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшите заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4113,13 +4113,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4147,13 +4147,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4181,13 +4181,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] will be able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] сможет использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -4215,13 +4215,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4249,13 +4249,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4283,13 +4283,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4317,13 +4317,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] will be able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] сможет использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -4351,13 +4351,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4385,13 +4385,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4419,13 +4419,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4447,7 +4447,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "If instructed to focus on [npc.her] ability at harnessing and taking the form of arcane fire, [npc.name] could take the first step towards unlocking the next secret of the school of arcane Fire.");
+			return UtilText.parse(owner, "Если инструктировать [npc.her] способность к управлению и принятию формы аркана огня, [npc.name] может сделать первый шаг к разблокировке следующей тайны школы аркана Огня.");
 		}
 	};
 	
@@ -4464,8 +4464,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] continuing to pursue the path of a fire elemental, and,"
-					+ " while [npc.she] still has a way to go before reaching a new milestone, [npc.her] affinity with arcane fire is steadily increasing.");
+			return UtilText.parse(owner, "[npc.NameIsFull] продолжает следовать по пути элемента огня, и,"
+					+ " хотя [npc.she] еще предстоит пройти путь до достижения нового этапа, [npc.her] склонность к аркану огня неуклонно растет.");
 		}
 	};
 	
@@ -4482,7 +4482,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] affinity with arcane fire has massively increased, and [npc.sheIs] on the verge of discovering something incredibly powerful!");
+			return UtilText.parse(owner, "[npc.NamePos] склонность к аркану огня значительно увеличилась, и [npc.sheIs] на пороге открытия чего-то невероятно мощного!");
 		}
 	};
 	
@@ -4500,7 +4500,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Burning with the beautiful and terrifying power of the sun itself, one strike from [npc.name] is typically all it takes to incapacitate anyone unfortunate enough to incur [npc.her] wrath.");
+			return UtilText.parse(owner, "Горящий красивой и ужасающей силой самого солнца, один удар от [npc.name] обычно достаточно, чтобы вывести из строя любого, кто был настолько неfortunен, чтобы вызвать [npc.her] гнев.");
 		}
 	};
 	
@@ -4525,13 +4525,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " когда привязан к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "Когда заклинание привязано к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -4559,13 +4559,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4593,13 +4593,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4627,13 +4627,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+" будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4661,13 +4661,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -4695,13 +4695,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4729,13 +4729,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4763,13 +4763,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4797,13 +4797,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -4831,13 +4831,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, получив дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4865,13 +4865,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4899,13 +4899,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -4927,7 +4927,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "If instructed to focus on [npc.her] ability to create powerful physical manifestations, [npc.name] could take the first step towards unlocking the next secret of the school of arcane Earth.");
+			return UtilText.parse(owner, "Если инструктировать [npc.her] способность создавать мощные физические проявления, [npc.name] может сделать первый шаг к разгадке следующей тайны школы Аркана Земли.");
 		}
 	};
 	
@@ -4944,8 +4944,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] continuing to pursue the path of an earth elemental, and,"
-					+ " while [npc.she] still has a way to go before reaching a new milestone, [npc.her] affinity with arcane force is steadily increasing.");
+			return UtilText.parse(owner, "[npc.NameIsFull] продолжает следовать по пути земного элементаля, и,"
+					+ " хотя [npc.she] еще предстоит пройти долгий путь, прежде чем достичь нового рубежа, [npc.her] аффинитет с Арканой Силой неуклонно растет.");
 		}
 	};
 	
@@ -4962,7 +4962,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] affinity with arcane force has massively increased, and [npc.sheIs] on the verge of discovering something incredibly powerful!");
+			return UtilText.parse(owner, "[npc.NamePos] аффинитет с Арканой Силой значительно увеличился, и [npc.sheIs] на пороге открытия чего-то невероятно мощного!");
 		}
 	};
 	
@@ -4980,7 +4980,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Taking on a nigh-invincible form, [npc.name] is now able to shrug off almost any attack, which allows [npc.herHim] to get close to [npc.her] enemies and deliver a knock-out punch or kick.");
+			return UtilText.parse(owner, "Принимая форму, почти неуязвимую для атак, [npc.name] теперь может отмахнуться от почти любого удара, что позволяет [npc.herHim] подойти ближе к врагам [npc.her] и нанести им нокаутирующий удар или удар ногой.");
 		}
 	};
 	
@@ -5005,13 +5005,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -5039,13 +5039,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5073,13 +5073,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5107,13 +5107,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5141,13 +5141,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -5175,13 +5175,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5209,13 +5209,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5243,13 +5243,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5277,13 +5277,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] сможет использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -5311,13 +5311,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5345,13 +5345,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5379,13 +5379,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшен, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5407,7 +5407,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "If instructed to focus on [npc.her] ability at harnessing and taking the form of arcane ice, [npc.name] could take the first step towards unlocking the next secret of the school of arcane Water.");
+			return UtilText.parse(owner, "Если инструктировать [npc.her] способность к управлению и принятию формы аркана льда, [npc.name] может сделать первый шаг к разблокировке следующей тайны школы аркана Вода.");
 		}
 	};
 	
@@ -5424,8 +5424,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] continuing to pursue the path of a water elemental, and,"
-					+ " while [npc.she] still has a way to go before reaching a new milestone, [npc.her] affinity with arcane ice is steadily increasing.");
+			return UtilText.parse(owner, "[npc.NameIsFull] продолжает идти по пути водного элемента, и,"
+					+ "[npc.she] еще далеко до нового этапа, но [npc.her] связь с аркана льда неуклонно растет.");
 		}
 	};
 	
@@ -5442,7 +5442,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] affinity with arcane ice has massively increased, and [npc.sheIs] on the verge of discovering something incredibly powerful!");
+			return UtilText.parse(owner, "[npc.NamePos] связь с аркана льда значительно усилилась, и [npc.sheIs] на пороге открытия чего-то невероятно мощного!");
 		}
 	};
 	
@@ -5460,7 +5460,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Gliding from place to place with an ethereal grace, [npc.name] is able to shift and reform [npc.her] body in an instant, enabling [npc.herHim] to perform the most impossible of physical feats.");
+			return UtilText.parse(owner, "Летая с места на место с эфирной грацией, [npc.name] может мгновенно менять и восстанавливать [npc.her] тело, что позволяет [npc.herHim] совершать самые невероятные физические подвиги.");
 		}
 	};
 	
@@ -5485,13 +5485,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -5519,13 +5519,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5553,13 +5553,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5587,13 +5587,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5621,13 +5621,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -5655,13 +5655,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, получив дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5689,13 +5689,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5723,13 +5723,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5757,13 +5757,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -5791,13 +5791,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5825,13 +5825,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинанием, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5859,13 +5859,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -5887,7 +5887,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "If instructed to focus on [npc.her] ability at harnessing the power of arcane poison, [npc.name] could take the first step towards unlocking the next secret of the school of arcane Air.");
+			return UtilText.parse(owner, "Если instructed to focus on [npc.her] ability at harnessing the power of arcane poison, [npc.name] could take the first step towards unlocking the next secret of the school of arcane Air.");
 		}
 	};
 	
@@ -5904,8 +5904,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] continuing to pursue the path of an air elemental, and,"
-					+ " while [npc.she] still has a way to go before reaching a new milestone, [npc.her] affinity with arcane poison is steadily increasing.");
+			return UtilText.parse(owner, "[npc.NameIsFull] продолжая идти по пути воздушного элементаля, и,"
+					+ " в то время как [npc.she] еще предстоит пройти долгий путь, прежде чем достичь нового рубежа, [npc.her] аффинитет с арканическим ядом неуклонно растет.");
 		}
 	};
 	
@@ -5922,7 +5922,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] affinity with arcane poison has massively increased, and [npc.sheIs] on the verge of discovering something incredibly powerful!");
+			return UtilText.parse(owner, "[npc.NamePos] аффинитет с арканическим ядом значительно увеличился, и [npc.sheIs] на грани открытия чего-то невероятно мощного!");
 		}
 	};
 	
@@ -5940,8 +5940,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Any enemy foolish enough to draw [npc.namePos] ire soon finds themselves reaping the whirlwind,"
-					+ " with each of [npc.her] devastating missiles landing perfectly on-target thanks to the guiding gusts that [npc.she] summons.");
+			return UtilText.parse(owner, "Любой враг, достаточно глупый, чтобы вызвать гнев [npc.namePos], вскоре сам столкнется с бурей,"
+					+ " с каждым из [npc.her] разрушительных снарядов, попадающих точно в цель благодаря направляющим порывам, которые [npc.she] вызывает.");
 		}
 	};
 	
@@ -5966,13 +5966,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получить заклинание '<span style='color:"+ PresetColour.GENERIC_ARCANE.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " когда привязан к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "Когда заклинание привязано к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -6000,13 +6000,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6034,13 +6034,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6068,13 +6068,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+" будет улучшено, чтобы иметь дополнительную силу "+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6102,13 +6102,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -6136,13 +6136,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6170,13 +6170,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6204,13 +6204,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6238,13 +6238,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Gain spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " when bound to <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
+			return Util.newArrayListOfValues("Получение заклинания '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " при привязанности к <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSchool().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "When bound to the school of "+getSchool().getName()+", [npc.name] is able to use the spell '"+getSpell().getName()+"'.");
+			return UtilText.parse(owner, "При привязанности к школе "+getSchool().getName()+", [npc.name] может использовать заклинание '"+getSpell().getName()+"'.");
 		}
 
 		@Override
@@ -6272,13 +6272,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, получив дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6306,13 +6306,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшение заклинания '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6340,13 +6340,13 @@ public class Perk {
 
 		@Override
 		public List<String> getExtraEffects() {
-			return Util.newArrayListOfValues("Upgrades spell '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
-					+ " with <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
+			return Util.newArrayListOfValues("Улучшает заклинание '<span style='color:"+ PresetColour.DAMAGE_TYPE_LUST.toWebHexString()+ ";'>"+getSpell().getName()+"</span>'"
+					+ " с <span style='color:"+ getSchool().getColour().toWebHexString()+ ";'>"+getSpellUpgrade().getName()+"</span>");
 		}
 		
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] spell, "+getSpell().getName()+", will be upgraded to have the extra power '"+getSpellUpgrade().getName()+"'.");
+			return UtilText.parse(owner, "[npc.NamePos] заклинание, "+getSpell().getName()+", будет улучшено, чтобы иметь дополнительную силу '"+getSpellUpgrade().getName()+"'.");
 		}
 
 		@Override
@@ -6368,7 +6368,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "If instructed to focus on [npc.her] ability at harnessing the pure power of the arcane, [npc.name] could take the first step towards unlocking the next secret of the school of the Arcane.");
+			return UtilText.parse(owner, "Если инструктировать [npc.her] способность к использованию чистой силы Аркана, [npc.name] может сделать первый шаг к разблокированию следующей тайны школы Аркана.");
 		}
 	};
 	
@@ -6385,8 +6385,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameIsFull] continuing to pursue the path of an arcane elemental, and,"
-					+ " while [npc.she] still has a way to go before reaching a new milestone, [npc.her] affinity with arcane lust is steadily increasing.");
+			return UtilText.parse(owner, "[npc.NameIsFull] продолжает следовать по пути аркана, и,"
+					+ " хотя [npc.she] еще предстоит пройти долгий путь, прежде чем достичь нового рубежа, [npc.her] аффинити с арканой похотью неуклонно растет.");
 		}
 	};
 	
@@ -6403,7 +6403,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NamePos] affinity with the arcane has massively increased, and [npc.sheIs] on the verge of discovering something incredibly powerful!");
+			return UtilText.parse(owner, "[npc.NamePos] аффинити с арканой магии значительно увеличилось, и [npc.sheIs] на пороге открытия чего-то невероятно мощного!");
 		}
 	};
 	
@@ -6421,8 +6421,8 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "Those who look upon [npc.namePos] "+(owner.isFeminine()?"gorgeous body and stunning":"chiselled body and handsome")
-					+" face find themselves falling under [npc.her] spell, and within moments, are completely consumed by a wild, animalistic lust.");
+			return UtilText.parse(owner, "Те, кто смотрит на [npc.namePos] "+(owner.isFeminine()?"прекрасное тело и потрясающую":"скульпторированное тело и красивую")
+					+"лицо, оказываются под влиянием [npc.her] заклинания, и в течение нескольких мгновений, полностью поглощены дикой, животной похотью.");
 		}
 	};
 	
@@ -6430,7 +6430,7 @@ public class Perk {
 	
 	public static AbstractPerk DOLL_PHYSICAL_CORE = new AbstractPerk(20,
 			false,
-			"arcane-infused silicone",
+			"аркано-инфузированный силикон",
 			PerkCategory.PHYSICAL,
 			"perks/doll/physical0",
 			Util.newArrayListOfValues(PresetColour.BASE_WHITE, PresetColour.GENERIC_ARCANE),
@@ -6440,13 +6440,13 @@ public class Perk {
 					new Value<>(Attribute.RESISTANCE_ICE, 10),
 					new Value<>(Attribute.RESISTANCE_POISON, 10)),
 			Util.newArrayListOfValues(
-					"Orifices slowly absorb fluids"),
+					"Органы медленно поглощают жидкости"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NamePos] body is made entirely out of an arcane-infused, silicone-like polymer, the composition of which is a closely-guarded secret of 'Lovienne's Luxuries'."
-						+ " As well as being able to slowly absorb and convert stored fluids to energy, this material is extraordinarily durable.");
+					"[npc.NamePos] тело полностью состоит из аркано-инфузированного, силиконоподобного полимера, состав которого является тщательно охраняемой тайной 'Lovienne's Luxuries'."
+						+ "Помимо того, что он может медленно поглощать и преобразовывать хранящиеся жидкости в энергию, этот материал чрезвычайно прочный.");
 		}
 	};
 	
@@ -6458,17 +6458,17 @@ public class Perk {
 			PresetColour.BASE_PINK_LIGHT,
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"[style.colourExcellent(Unlocks)] autofellatio and autocunnilingus")) {
+					"[style.colourExcellent(Unlocks)] авто fellatio и автоcunnilingus")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NamePos] body is exceptionally flexible, allowing [npc.herHim] to twist [npc.her] body into poses which would make a gymnast jealous.");
+					"[npc.NamePos] тело чрезвычайно гибкое, что позволяет [npc.herHim] скручивать [npc.her] тело в позы, которые заставят любого гимнаста позавидовать.");
 		}
 	};
 	
 	public static AbstractPerk DOLL_PHYSICAL_2 = new AbstractPerk(20,
 			false,
-			"no means of reproduction",
+			"без возможности размножения",
 			PerkCategory.PHYSICAL,
 			"perks/doll/physical2",
 			PresetColour.RACE_DOLL,
@@ -6476,33 +6476,33 @@ public class Perk {
 					new Value<>(Attribute.VIRILITY, -1000),
 					new Value<>(Attribute.FERTILITY, -1000)),
 			Util.newArrayListOfValues(
-					"Impregnation is [style.colourTerrible(impossible)]",
-					"Pregnancy is [style.colourTerrible(impossible)]",
-					"[style.colourTerrible(Cannot)] incubate eggs")) {
+					"Оплодотворение [style.colourTerrible(невозможно)]",
+					"Беременность [style.colourTerrible(невозможна)]",
+					"[style.colourTerrible(Нельзя)] высиживать яйца")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NamePos] artificial body is completely unable to bear offspring of [npc.her] own."
-					+ " [npc.Her] rubbery orifices are also inhospitable places for eggs.");
+					"[npc.NamePos] искусственное тело совершенно не способно выносить потомство [npc.her]"
+					+ " [npc.Her] резиновые отверстия также являются непригодными местами для яиц.");
 		}
 	};
 	
 	public static AbstractPerk DOLL_PHYSICAL_3 = new AbstractPerk(20,
 			false,
-			"organs not included",
+			"органы не включены",
 			PerkCategory.PHYSICAL,
 			"perks/doll/physical3",
 			PresetColour.BASE_RED_LIGHT,
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.RESISTANCE_POISON, 50)),
 			Util.newArrayListOfValues(
-					"[style.colourExcellent(Unaffected)] by fluid addictions, psychoactive substances, and alcohol",
-					"Orifices have [style.colourExcellent(unlimited)] depth")) {
+					"[style.colourExcellent(Невосприимчив)] к жидкостным зависимостям, психоактивным веществам и алкоголю",
+					"Отверстия имеют [style.colourExcellent(неограниченную)] глубину")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"The internal structure of [npc.namePos] body consists solely of deep passages which are linked to [npc.her] orifices."
-					+ " Lacking biological systems of any sort, [npc.name] [npc.is] immune to most substances' effects.");
+					"Внутренняя структура тела [npc.namePos] состоит исключительно из глубоких проходов, которые связаны с отверстиями [npc.her]."
+					+ "[npc.name] [npc.is] не имеют биологических систем, поэтому @@T2@@ невосприимчив к воздействию большинства веществ.");
 		}
 	};
 
@@ -6519,25 +6519,25 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameHasFull] been designed and made to be a sex doll, and although [npc.she] can carry out a wide range of other tasks, [npc.her] true purpose is to get fucked.");
+					"[npc.NameHasFull] был создан и сделан для того, чтобы быть секс-куклой, и хотя [npc.she] может выполнять широкий спектр других задач, [npc.her] его истинная цель - это быть ебаной.");
 		}
 	};
 
 	public static AbstractPerk DOLL_LUST_1 = new AbstractPerk(20,
 			false,
-			"live to fuck",
+			"жить, чтобы ебаться",
 			PerkCategory.LUST,
 			"perks/doll/lust1",
 			PresetColour.RACE_DOLL,
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"Can [style.colourTerrible(never)] <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>resist</span> in [style.colourSex(sex scenes)]",
-					"Does not object to <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>sadistic</span> sex actions",
-					"Orientation always [style.colourAndrogynous(ambiphilic)]")) {
+					"Может [style.colourTerrible(never)] <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>resist</span> in [style.colourSex(sex scenes)]",
+					"Не возражает против <span style='color:"+SexPace.SUB_RESISTING.getColour().toWebHexString()+";'>sadistic</span> sex actions",
+					"Ориентация всегда [style.colourAndrogynous(ambiphilic)]")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.Name] only [npc.verb(want)] one thing - to be fucked non-stop, no matter who's doing the fucking nor how rough they are.");
+					"[npc.Name] хочет только одного - быть ебаной без перерывов, независимо от того, кто ебет, и как грубо это происходит.");
 		}
 	};
 
@@ -6549,13 +6549,13 @@ public class Perk {
 			Util.newArrayListOfValues(PresetColour.CLOTHING_BLACK_STEEL, PresetColour.CLOTHING_GOLD, PresetColour.CLOTHING_GOLD),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"Will always [style.colourSex(obey)] owner",
-					"[style.colourObedience(Obedience)] is [style.colourExcellent(always 100)]"),
+					"Всегда [style.colourSex(obey)] хозяина",
+					"[style.colourObedience(Покорность)] является [style.colourExcellent(всегда 100)]"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.Name] [npc.verb(know)] that [npc.sheIs] nothing more than an object, and will do absolutely anything [npc.her] owner asks of [npc.herHim].");
+					"[npc.Name] [npc.verb(знать)] что [npc.sheIs] не более чем объект, и будет делать абсолютно всё, что [npc.her] попросит от [npc.herHim].");
 		}
 	};
 
@@ -6567,14 +6567,14 @@ public class Perk {
 			Util.newArrayListOfValues(PresetColour.CLOTHING_BLUE_GREY, PresetColour.BASE_GREY_LIGHT),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"[style.colourTerrible(Cannot)] gain [style.colourFetish(fetishes)]",
-					"[style.colourFetish(Fetish desires)] are always [style.colourHuman(neutral)]",
-					"Indifferent to exhibitionism, clothing femininity, chastity, and being dirty"),
+					"[style.colourTerrible(Не может)] получить [style.colourFetish(фетиши)]",
+					"[style.colourFetish(Фетиши)] всегда [style.colourHuman(нейтральные)]",
+					"Безразлична к экспозиционизму, женственности одежды, девственности и грязи"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"As an automaton who lacks free will, [npc.name] [npc.do] not have any opinion on different fetishes, and [npc.is] content to go along with whatever [npc.her] partner asks of [npc.herHim].");
+					"Как автомат, который не имеет свободной воли, [npc.name] [npc.do] не имеет своего мнения о различных фетишах, и [npc.is] довольна тем, что [npc.her] делает то, что [npc.herHim] просит от @@T5@@.");
 		}
 	};
 	
@@ -6589,13 +6589,13 @@ public class Perk {
 					new Value<>(Attribute.DAMAGE_MELEE_WEAPON, -25),
 					new Value<>(Attribute.DAMAGE_RANGED_WEAPON, -25)),
 			Util.newArrayListOfValues(
-					"Can remain motionless indefinitely"),
+					"Может оставаться неподвижной неограниченное время"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"[npc.NameIsFull] an automaton, and while [npc.sheIs] capable of moving in a life-like fashion, [npc.she] will never be as agile or responsive as a real person."
-					+ " If ordered to, [npc.she] can remain completely motionless for an unlimited amount of time.");
+					"[npc.NameIsFull] автомат, и хотя [npc.sheIs] может двигаться как живой человек, [npc.she] никогда не будет такой же гибкой или отзывчивой, как настоящий человек."
+					+ "Если прикажут, [npc.she] может оставаться совершенно неподвижной неограниченное время.");
 		}
 	};
 	
@@ -6608,15 +6608,15 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.MAJOR_ARCANE, -1000)),
 			Util.newArrayListOfValues(
-					"Can [style.colourTerrible(never)] generate essences from [style.colourSex(orgasming)]",
-					"Can [style.colourTerrible(never)] absorb essences",
-					"[style.colourExcellent(Immune)] to [style.colourTfGeneric(standard transformatives)]"),
+					"Может [style.colourTerrible(никогда)] генерировать эссенции из [style.colourSex(оргазм)]",
+					"Может [style.colourTerrible(never)] поглощать эссенции",
+					"[style.colourExcellent(Иммунный)] к [style.colourTfGeneric(стандартным трансформациям)]"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"As [npc.sheIs] just a doll, and not a real person, [npc.name] [npc.verb(lack)] an arcane aura, and as such cannot absorb nor generate essences."
-						+ " Normal transformation methods also have no effect on [npc.herHim], with only special doll-specific transformatives having any effect.");
+					"Как [npc.sheIs] просто кукла, а не настоящий человек, [npc.name] [npc.verb(lack)] аркана ауры, и как таковой не может поглощать ни генерировать эссенции."
+						+ "Нормальные методы трансформации также не имеют эффекта на [npc.herHim], с только специальными куклами-специфичными трансформациями, имеющими какой-либо эффект.");
 		}
 	};
 
@@ -6628,14 +6628,14 @@ public class Perk {
 			PresetColour.GENERIC_EXPERIENCE,
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"Can [style.colourTerrible(never)] gain [style.colourExperience(experience)]",
-					"[style.colourTerrible(Permanently locked)] to [style.colourExperience(level 1)]",
-					"Can [style.colourTerrible(never)] gain personality traits",
-					"[style.colourAffection(Affection)] to others is <span style='color:"+PresetColour.AFFECTION_NEUTRAL.toWebHexString()+";'>always neutral</span>")) {
+					"Может [style.colourTerrible(never)] получать опыт",
+					"[style.colourTerrible(Постоянно заблокирован)] до [style.colourExperience(уровень 1)]",
+					"Может [style.colourTerrible(never)] получать черты личности",
+					"[style.colourAffection(Привязанность)] к другим всегда нейтральна@@H0@@"+PresetColour.AFFECTION_NEUTRAL.toWebHexString()+";'>всегда нейтральна</span>")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"With no free will or a conscience, [npc.nameIsFull] unable to learn from [npc.her] experiences, and [npc.is] therefore never going to grow or develop as a real person would.");
+					"Без свободной воли или совести, [npc.nameIsFull] не может учиться на опыте [npc.her], и [npc.is] поэтому никогда не будет расти или развиваться, как настоящий человек.");
 		}
 	};
 
@@ -6647,14 +6647,14 @@ public class Perk {
 			Util.newArrayListOfValues(PresetColour.BASE_PINK, PresetColour.GENERIC_ARCANE),
 			Util.newHashMapOfValues(),
 			Util.newArrayListOfValues(
-					"Do not need to eat, drink, nor sleep",
-					"Gain [style.colourExcellent(1000)] "+Attribute.HEALTH_MAXIMUM.getColouredName("span")+" while exposed to an arcane storm"),
+					"Не нужно есть, пить или спать",
+					"Получаете [style.colourExcellent(1000)] "+Attribute.HEALTH_MAXIMUM.getColouredName("span")+"при воздействии аркана"),
 			null, null, null) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Instead of requiring calories from food or drink to function, [npc.name] passively [npc.verb(absorb)] background arcane energy to power [npc.herself]."
-						+ " Thanks to this, arcane storms grant [npc.herHim] a significant amount of vitality.");
+					"Вместо того, чтобы получать калории из пищи или напитков для функционирования, [npc.name] пассивно [npc.verb(absorb)] фоновую арканическую энергию для питания [npc.herself]."
+						+ "Благодаря этому, арканические бури предоставляют [npc.herHim] значительное количество жизненной силы.");
 		}
 	};
 	
@@ -6765,7 +6765,7 @@ public class Perk {
 						null) {
 					@Override
 					public String getDescription(GameCharacter owner) {
-						return UtilText.parse(owner, "[npc.NameHasFull] advanced knowledge of "+(mainSubspecies?sub.getRace().getNamePlural(false):subToUse.getNamePlural(null))+", and can therefore do increased damage when fighting them.");
+						return UtilText.parse(owner, "[npc.NameHasFull] продвинутые знания о "+(mainSubspecies?sub.getRace().getNamePlural(false):subToUse.getNamePlural(null))+", и поэтому может наносить больший урон при борьбе с ними.");
 					}
 					@Override
 					public String getSVGString(GameCharacter owner) {
