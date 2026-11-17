@@ -7,7 +7,8 @@
     "res/txt/misc/milking.xml",
     "res/txt/misc/misc.xml",
     "res/txt/misc/quickTransformations.xml",
-    "res/txt/misc/slaveDialogue.xml"
+    "res/txt/misc/slaveDialogue.xml",
+    "res/txt/quests/main/elisDefenceMeeting.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
@@ -17,6 +18,13 @@
     "src/com/lilithsthrone/game/dialogue/story/LyssiethReveal.java",
     "src/com/lilithsthrone/game/character/quests/Quest.java",
     "src/com/lilithsthrone/game/character/quests/QuestLine.java",
-    "src/com/lilithsthrone/game/character/effects/Perk.java"
+    "src/com/lilithsthrone/game/character/effects/Perk.java",
+    "src/com/lilithsthrone/game/character/effects/StatusEffect.java",
+    "src/com/lilithsthrone/game/combat/spells/Spell.java",
+    "src/com/lilithsthrone/game/combat/DamageType.java",
+    "src/com/lilithsthrone/controller/MainController.java",
+    "src/com/lilithsthrone/controller/OptionsController.java",
+    "src/com/lilithsthrone/controller/CreationController.java",
+    "src/com/lilithsthrone/controller/InventoryController.java"
   ]
 }

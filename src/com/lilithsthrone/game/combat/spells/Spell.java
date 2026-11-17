@@ -56,7 +56,7 @@ public enum Spell {
 			false,
 			"Fireball",
 			"fireball",
-			"Summons a ball of arcane flames that can be launched at a target.",
+			"Призывает шар аркана, который можно запустить в цель.",
 			30,
 			DamageVariance.LOW,
 			75,
@@ -102,17 +102,17 @@ public enum Spell {
 
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"By the fires of eternity, I release this seal upon the maelstrom within! Come forth, flames of destruction!",
-													"From beyond the veil of flames, I hear the arcane's call! Through me, now is hell unleashed!",
-													"May the dark void shatter the ancient seals which keep the fires of hell itself at bay! Go forth, flaming fury!"),
-											"Summoning a swirling vortex of arcane fire around your [pc.arm], you focus its raw power into a ball of roiling flames before launching it at yourself!",
-											"Summoning a swirling vortex of arcane fire around your [pc.arm], you focus its raw power into a ball of roiling flames before launching it at [npc.name]!",
+													"Силами вечности, я снимаю этот заклятие с маelstrom внутри! Выйди, огонь разрушения!",
+													"За пределами огня, я слышу призыв аркана! Через меня, теперь ад освобожден!",
+													"Пусть темная пустота разрушит древние печати, которые удерживают огонь ада на расстоянии! Иди, огонь ярости!"),
+											"Призывая вихрь аркана вокруг твоего [pc.arm], ты сосредотачиваешь его силу в шар бурлящего огня, прежде чем запустить его в себя!",
+											"Призывая вихрь аркана вокруг твоего [pc.arm], ты сосредотачиваешь его силу в шар бурлящего огня, прежде чем запустить его в [npc.name]!",
 											"",
-											"Summoning a swirling vortex of arcane fire around [npc.her] [npc.arm], [npc.she] focuses its raw power into a ball of roiling flames before launching it directly at you!",
-											"Summoning a swirling vortex of arcane fire around [npc1.her] [npc1.arm], [npc1.name] focuses its raw power into a ball of roiling flames before launching it directly at [npc2.name]!")
+											"Призывая вихрь аркана вокруг [npc.her] [npc.arm], [npc.she] сосредотачивает его силу в шар бурлящего огня, прежде чем запустить его прямо в тебя!",
+											"Призывая вихрь аркана вокруг [npc1.her] [npc1.arm], [npc1.name] сосредотачивает его силу в шар бурлящего огня, прежде чем запустить его прямо в [npc2.name]!")
 								);
 			if(caster.hasSpellUpgrade(SpellUpgrade.FIREBALL_2)) {
-				descriptionSB.append(" The fireball instantly splits in two after being cast!");
+				descriptionSB.append("Огонь мгновенно разделяется на две части после того, как он был запущен!");
 			}
 			
 			descriptionSB.append(getDamageDescription(caster, target, damage, isHit, isCritical));
@@ -214,17 +214,17 @@ public enum Spell {
 
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Locked away for a thousand years, the powers lying dormant within me have awoken! Now, bear witness to the blinding fury of a universe being born!",
-													"The light of a million stars are as nothing to the power that I now unleash! May my arcane seals be broken, and blind all who dare stand before me!",
-													"By fury of sun, and gaze of moon, may the heavens themselves bear witness to the power that I now unleash! Gaze upon the end of worlds, and despair!"),
-											"With a flick of your wrist, you summon a blinding flash of light right in front of your own face!",
-											"With a flick of your wrist, you summon a blinding flash of light right in front of [npc.namePos] face!",
+													"Закрытая на тысячу лет, сила, дремлющая во мне, пробудилась! Теперь, будьте свидетелями ослепительной ярости вселенной, рождающейся!",
+													"Свет миллиона звезд - ничто по сравнению с силой, которую я теперь высвобождаю! Пусть мои аркана будут разрушены, и ослеплены все, кто осмеливается стоять передо мной!",
+													"Силой солнца и взглядом луны, пусть небеса сами станут свидетелями силы, которую я теперь высвобождаю! Взирайте на конец миров, и отчаяние!"),
+											"Одним движением руки, ты вызываешь ослепительный вспышку света прямо перед твоим собственным лицом!",
+											"Одним движением руки, ты вызываешь ослепительный вспышку света прямо перед лицом [npc.namePos]!",
 											"",
-											"With a flick of [npc.her] wrist, [npc.name] summons a blinding flash of light right in front of your face!",
-											"With a flick of [npc1.her] wrist, [npc1.name] summons a blinding flash of light right in front of [npc2.namePos] face!")
+											"Одним движением руки [npc.her], [npc.name] вызываешь ослепительный вспышку света прямо перед твоим лицом!",
+											"Одним движением руки [npc1.her], [npc1.name] вызываешь ослепительный вспышку света прямо перед лицом [npc2.namePos]!")
 								);
 			if(caster.hasSpellUpgrade(SpellUpgrade.FLASH_2)) {
-				descriptionSB.append(" A secondary flash of light arcs away from the first, seeking out another target!");
+				descriptionSB.append("Вторая вспышка света дугой уходит от первой, ища другую цель!");
 			}
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
@@ -240,11 +240,11 @@ public enum Spell {
 					
 					if(secondaryTarget.equals(target)) {
 						descriptionSB.append("<br/>"
-								+"The second Flash fails to find another target, and quickly fizzles out...");
+								+"Вторая вспышка не находит другую цель, и быстро гаснет...");
 						
 					} else {
 						descriptionSB.append("<br/>"
-								+"The second Flash shoots out in front of "+UtilText.parse(secondaryTarget,"[npc.namePos] face, dazzling [npc.herHim] as well!"));
+								+"Вторая вспышка бьет перед "+UtilText.parse(secondaryTarget,"[npc.namePos], ослепляя [npc.herHim]!"));
 
 						descriptionSB.append(getDamageDescription(caster, secondaryTarget, 0, isHit, isCritical));
 						applyStatusEffects(caster, secondaryTarget, isCritical);
@@ -255,7 +255,7 @@ public enum Spell {
 				
 			} else {
 				descriptionSB.append("<p style='text-align:center;'>"
-						+ "[style.italicsBad(The flash misses!)]"
+						+ "[style.italicsBad(Вспышка пролетает мимо!)]"
 						+ "</p>");
 			}
 			
@@ -270,9 +270,9 @@ public enum Spell {
 			SpellType.DEFENSIVE_STATUS_EFFECT,
 			DamageType.FIRE,
 			true,
-			"Cloak of Flames",
+			"Плащ Огня",
 			"cloak_of_flames",
-			"Shrouds the target in a protective cloak of arcane flames, granting them improved fire and ice resistance.",
+			"Окутывает цель в защитный плащ из аркана, даруя ей улучшенную устойчивость к огню и льду.",
 			0,
 			DamageVariance.LOW,
 			50,
@@ -284,7 +284,7 @@ public enum Spell {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.RESISTANCE_FIRE, 5),
 					new Value<>(Attribute.RESISTANCE_ICE, 10)),
-			Util.newArrayListOfValues("Lasts for [style.colourGood(3 turns)]")) {
+			Util.newArrayListOfValues("Действует [style.colourGood(3 хода)]")) {
 
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -304,7 +304,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Grants the target a protective cloak of flames.";
+			return "Окутывает цель в защитный плащ из огня.";
 		}
 		
 		@Override
@@ -319,14 +319,14 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"By my power, shall glaciers melt, and a thousand suns be extinguished! Oh, fury of the stars, I call upon thee to shield your [npc.master]!",
-													"Know now that the flames of hell itself obey my every command, and from the fiery chasm of the dimension of flame, I summon forth the power to shield me from all harm!",
-													"By fire and fury, I unleash the infernal flames of the sun itself! Come now, arcane inferno, shield your [npc.master] from all that dare harm [npc.herHim]!"),
-											"With a swipe of your [pc.arm], you summon a protective cloak of arcane fire around yourself!",
-											"With a swipe of your [pc.arm], you summon a protective cloak of arcane fire around [npc.name]!",
-											"With a swipe of [npc.her] [npc.arm], [npc.name] summons a protective cloak of arcane fire around [npc.herself]!",
-											"With a swipe of [npc.her] [npc.arm], [npc.name] summons a protective cloak of arcane fire around you!",
-											"With a swipe of [npc1.her] [npc1.arm], [npc1.name] summons a protective cloak of arcane fire around [npc2.name]!"));
+													"Силой моей, пусть тают ледники, и пусть погаснут тысячи солнц! О, ярость звезд, я призываю тебя защитить [npc.master]!",
+													"Знай теперь, что пламя ада само подчиняется каждому моему приказу, и из огненной бездны измерения огня я вызываю силу, чтобы защитить себя от всего вреда!",
+													"Огнем и яростью, я вызываю адское пламя самого солнца! Приди теперь, аркана inferno, защити [npc.master] от всего, что осмеливается навредить [npc.herHim]!"),
+											"Одним взмахом [pc.arm], ты вызываешь защитный плащ из аркана огня вокруг себя!",
+											"Одним взмахом [pc.arm], ты вызываешь защитный плащ из аркана огня вокруг [npc.name]!",
+											"Одним взмахом [npc.her] [npc.arm], [npc.name] вызываешь защитный плащ из аркана огня вокруг [npc.herself]!",
+											"Одним взмахом [npc.her] [npc.arm], [npc.name] вызываешь защитный плащ из аркана огня вокруг тебя!",
+											"Одним взмахом [npc1.her] [npc1.arm], [npc1.name] вызываешь защитный плащ из аркана огня вокруг [npc2.name]!"));
 			
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -353,7 +353,7 @@ public enum Spell {
 			true,
 			"Elemental Fire",
 			"elemental_fire",
-			"Summon forth your elemental in a physical form by binding them to the school of Fire.",
+			"Вызови своего элементаля в физической форме, связав его со школой огня.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -363,37 +363,37 @@ public enum Spell {
 					SpellUpgrade.ELEMENTAL_FIRE_2,
 					SpellUpgrade.ELEMENTAL_FIRE_3A,
 					SpellUpgrade.ELEMENTAL_FIRE_3B),
-			null, Util.newArrayListOfValues("Summons [style.colourArcane(Elemental)] in form of [style.colourSchoolFire(Fire)]")) {
+			null, Util.newArrayListOfValues("Вызываешь [style.colourArcane(Elemental)] в форме [style.colourSchoolFire(Fire)]")) {
 		@Override
 		public Value<Boolean, String> getSpellCastOutOfCombatDescription(GameCharacter owner, GameCharacter target) {
 			if(!owner.hasSpell(this)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do]n't know this spell, so cannot cast it!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do] не знает этого заклинания, поэтому не может его использовать!"));
 				
 			} else if(owner.isCaptive()) {
-				return new Value<>(false, UtilText.parse(owner, "Spells cannot be cast while in captivity!"));
+				return new Value<>(false, UtilText.parse(owner, "Заклинания не могут быть использованы, пока ты в плену!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "While in combat, spells can only be cast as a combat move!"));
+				return new Value<>(false, UtilText.parse(owner, "Во время боя заклинания могут быть использованы только как боевой ход!"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_FIRE?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "Spells can only be cast in a neutral scene!");
+				return new Value<>(false, "Заклинания могут быть использованы только в нейтральной сцене!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner) && !owner.isSpellSchoolSpecialAbilityUnlocked(SpellSchool.FIRE)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] at least <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] in order to cast this spell!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
 				
 			} else {
-				String description = owner.isPlayer()?"Summon your elemental by binding it to the school of Fire!":"Get [npc.name] to summon [npc.her] elemental by binding it to the school of Fire!";
-				String cost = " This will cost <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
+				String description = owner.isPlayer()?"Призови своего элемента, связав его со школой Огня!":"Заставь [npc.name] призвать [npc.her] элемента, связав его со школой Огня!";
+				String cost = "Это будет стоить <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
 				if(owner.getMana()<this.getModifiedCost(owner)) {
-					cost = " This will cost <b>"+Math.round((owner.getMana()-this.getModifiedCost(owner))*-0.25f)+"</b> [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]!";
+					cost = "Это будет стоить <b>"+Math.round((owner.getMana()-this.getModifiedCost(owner))*-0.25f)+"</b> [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]!";
 				}
 				return new Value<>(true, UtilText.parse(owner, description+"<br/>"+cost));
 			}
 		}
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons your elemental in the form of fire.";
+			return "Призывает твоего элементаля в форме огня.";
 		}
 		@Override
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -420,13 +420,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 									?Util.randomItemFrom(
 									Util.newArrayListOfValues(
-										"[npc.speech(By the ancient rites of flame, I summon forth hell and fury incarnate! Answer your [npc.master]'s call, [npc2.name], and, by the incineration of a million dimensions, be bound to my will!)] ",
-										"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! I call upon the dimension of flame itself, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-										"[npc.speech(Let fire consume, and the inferno within me be unleashed! Flame and fury, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+										"[npc.speech(По древним обрядам огня, я призываю ад и воплощение ярости! Ответь на зов твоего [npc.master], [npc2.name], и, через уничтожение миллиона измерений, будь связан с моей волей!)] ",
+										"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc2.name] зовет! Послушай и будь призвана, @@T1@@!)] ",
+										"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc.master] зовет! Послушай и будь призвана, [npc2.name]!)] "))
 									:"")
 								+(caster.isPlayer()
-									?"With a flash of light and a burst of flames, you bind your elemental, [npc2.name], to the school of Fire!"
-									:"With a flash of light and a burst of flames, [npc1.name] binds [npc1.her] elemental, [npc2.name], to the school of Fire!")));
+									?"С вспышкой света и вспышкой огня, ты привязываешь твоего элементаля, [npc2.name], к школе Огня!"
+									:"С вспышкой света и вспышкой огня, [npc1.name] привязывает элементаля [npc1.her], [npc2.name], к школе Огня!")));
 				
 			} else {
 				//caster.addCompanion(caster.getElemental());
@@ -434,13 +434,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rites of flame, I summon forth hell and fury incarnate! Answer your [npc.master]'s call, [npc2.name], and, by the incineration of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! I call upon the dimension of flame itself, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let fire consume, and the inferno within me be unleashed! Flame and fury, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древним обрядам огня, я призываю ад и воплощение ярости! Ответь на зов твоего [npc.master], [npc2.name], и, через уничтожение миллиона измерений, будь связан с моей волей!)] ",
+											"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc2.name] зовет! Послушай и будь призвана, @@T1@@!)] ",
+											"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc.master] зовет! Послушай и будь призвана, [npc2.name]!)] "))
 										:"")
 								+(caster.isPlayer()
-									?"With a flash of light and a burst of flames, you summon forth your elemental, [npc2.name], by binding [npc2.herHim] to the school of Fire!"
-									:"With a flash of light and a burst of flames, [npc1.name] summons forth [npc1.her] elemental, [npc2.name], by binding [npc2.herHim] to the school of Fire!")));
+									?"С вспышкой света и вспышкой огня, ты призываешь твоего элементаля, [npc2.name], привязывая [npc2.herHim] к школе Огня!"
+									:"С вспышкой света и вспышкой огня, [npc1.name] вызывает [npc1.her] элементаль, [npc2.name], связывая [npc2.herHim] с школой Огня!")));
 				
 				if(Main.game.isInCombat()) {
 					caster.getElemental().setLocation(caster, false);
@@ -467,7 +467,7 @@ public enum Spell {
 			false,
 			"Ice Shard",
 			"ice_shard",
-			"Summons a shard of ice that can be launched at a target.",
+			"Вызывает осколок льда, который можно запустить в цель.",
 			25,
 			DamageVariance.LOW,
 			35,
@@ -507,18 +507,18 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Witness now, the terror of the starless void! By hail of ice, and fury of the blizzard, let my arcane power be unleashed!",
-													"The seals within me have been broken, and by my power, now will the universe itself freeze! Hail, sleet, and ice, hear my call, and come forth!",
-													"From beyond the frozen void, now is my power unleashed! Crossing the boundary from the frozen realm of chaos, let my power be manifest!"),
-											"Summoning a swirling vortex of water from the moisture in the air, you focus your energy on freezing it in place, creating a shard of ice that you then launch at yourself!",
-											"Summoning a swirling vortex of water from the moisture in the air, you focus your energy on freezing it in place, creating a shard of ice that you then launch at [npc.name]!",
+													"Свидетельствую теперь, ужас беззвездной пустоты! Дождем льда и яростью метели, пусть моя аркана сила будет развязана!",
+													"Печать внутри меня была разорвана, и моей силой теперь будет заморожена сама вселенная! Град, мокрый снег и лед, услышьте мой призыв и придите!",
+													"Из-за замерзшей пустоты теперь моя сила развязана! Пересекая границу из замерзшего царства хаоса, пусть моя сила будет проявлена!"),
+											"Призывая вихрь воды из влаги в воздухе, вы сосредотачиваете свою энергию на замораживании ее на месте, создавая осколок льда, который вы затем запускаете в себя!",
+											"Призывая вихрь воды из влаги в воздухе, вы сосредотачиваете свою энергию на замораживании ее на месте, создавая осколок льда, который вы затем запускаете в [npc.name]!",
 											"",
-											"Summoning a swirling vortex of water from the moisture in the air, [npc1.name] focuses [npc1.her] energy on freezing it in place, creating a shard of ice that [npc.she] then launches at you!",
-											"Summoning a swirling vortex of water from the moisture in the air, [npc1.name] focuses [npc1.her] energy on freezing it in place, creating a shard of ice that [npc.she] then launches at [npc2.name]!")
+											"Призывая вихрь воды из влаги в воздухе, [npc1.name] сосредотачивает [npc1.her] энергию на замораживании ее на месте, создавая осколок льда, который [npc.she] затем запускает в вас!",
+											"Призывая вихрь воды из влаги в воздухе, [npc1.name] сосредотачивает [npc1.her] энергию на замораживании ее на месте, создавая осколок льда, который [npc.she] затем запускает в [npc2.name]!")
 								);
 			
 			if(isHit && isCritical && caster.hasSpellUpgrade(SpellUpgrade.ICE_SHARD_2)) {
-				descriptionSB.append(" The freezing fog detonates as the Ice Shard travels through it");
+				descriptionSB.append(" Замерзший туман взрывается, когда осколок льда проходит через него");
 				if(caster.hasSpellUpgrade(SpellUpgrade.ICE_SHARD_3)) {
 					descriptionSB.append(", entombing everything in the immediate vicinity in a thin layer of ice!");
 				} else {
@@ -642,7 +642,7 @@ public enum Spell {
 			true,
 			"Soothing Waters",
 			"soothing_waters",
-			"Summons an orb of soothing arcane-infused water, which restores the "+Attribute.HEALTH_MAXIMUM.getName()+" of anyone who drinks it.",
+			"Призывает шар успокаивающей воды, пропитанной арканой энергией, которая восстанавливает "+Attribute.HEALTH_MAXIMUM.getName()+" @@T0@@ @@T1@@ не знает этого заклинания, поэтому не может его использовать!",
 			0,
 			DamageVariance.LOW,
 			100,
@@ -653,7 +653,7 @@ public enum Spell {
 					SpellUpgrade.SOOTHING_WATERS_1,
 					SpellUpgrade.SOOTHING_WATERS_2,
 					SpellUpgrade.SOOTHING_WATERS_3),
-			null, Util.newArrayListOfValues("[style.boldGood(Restores)] 20% [style.boldHealth("+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
+			null, Util.newArrayListOfValues("Заклинания не могут быть использованы в плену!"+Attribute.HEALTH_MAXIMUM.getName()+")]")) {
 		@Override
 		public Map<Integer, List<TreeEntry<SpellSchool, SpellUpgrade>>> getSpellUpgradeTree() {
 			return Spell.soothingWatersUpgradeTree;
@@ -661,29 +661,29 @@ public enum Spell {
 		@Override
 		public Value<Boolean, String> getSpellCastOutOfCombatDescription(GameCharacter owner, GameCharacter target) {
 			if(!owner.hasSpell(this)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do]n't know this spell, so cannot cast it!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do] не знаю этого заклинания, поэтому не могу его использовать!"));
 				
 			} else if(owner.isCaptive()) {
-				return new Value<>(false, UtilText.parse(owner, "Spells cannot be cast while in captivity!"));
+				return new Value<>(false, UtilText.parse(owner, "Заклинания могут быть использованы только в нейтральной сцене!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "While in combat, spells can only be cast as a combat move!"));
+				return new Value<>(false, UtilText.parse(owner, "@@T1@@ [npc.verb(need)] как минимум @@H0@@"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_WATER?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "Spells can only be cast in a neutral scene!");
+				return new Value<>(false, "@@H0@@ [style.boldMana(aura)] для использования этого заклинания!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] at least <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] in order to cast this spell!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
 				
 			} else {
-				String description = owner.isPlayer()?"Cast Soothing Waters":"Get [npc.name] to cast Soothing Waters";
+				String description = owner.isPlayer()?"Запустите заклинание \"Успокаивающие воды\"":"Заставить [npc.name] использовать Волшебную воду";
 				if(owner==target) {
-					description+=" on [npc.herself]!";
+					description+=" на [npc.herself]!";
 				} else {
-					description+=" on [npc2.name]!";
+					description+=" на [npc2.name]!";
 				}
-				String cost = " This will cost <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
+				String cost = "Это будет стоить <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
 				return new Value<>(true, UtilText.parse(owner, target, description+"<br/>"+cost));
 			}
 		}
@@ -693,7 +693,7 @@ public enum Spell {
 		}
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Heals the target.";
+			return "Исцеляет цель.";
 		}
 		@Override
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -704,15 +704,15 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"By stream and brook, river and sea, I call upon the eternal currents that know no end! I cast my power unto thee, and bring forth the fountain of eternal life!"),
-											"With a gentle swish of your [pc.hand], you summon forth an orb of healing water, which you quickly drink.",
-											"With a gentle swish of your [pc.hand], you summon forth an orb of healing water, which you send to [npc.name] to drink.",
-											"With a gentle swish of [npc.her] [npc.hand], [npc.name] summons forth an orb of healing water, which [npc.she] quickly drinks.",
-											"With a gentle swish of [npc.her] [npc.hand], [npc.name] summons forth an orb of healing water, which [npc.she] sends to you to drink.",
-											"With a gentle swish of [npc.her] [npc.hand], [npc.name] summons forth an orb of healing water, which [npc.she] sends to [npc2.name]to drink."));
+													"Силой потока и ручья, реки и моря, я призываю вечные течения, которые не знают конца! Я передаю свою силу тебе и призываю источник вечной жизни!"),
+											"С легким взмахом [pc.hand], ты вызываешь шар исцеляющей воды, который ты быстро пьешь.",
+											"С легким взмахом [pc.hand], ты вызываешь шар исцеляющей воды, который ты посылаешь [npc.name] пить.",
+											"С легким взмахом [npc.her] [npc.hand], [npc.name] вызываешь шар исцеляющей воды, который [npc.she] быстро пьет.",
+											"С легким взмахом [npc.her] [npc.hand], [npc.name] вызывает шар с целебной водой, который [npc.she] посылает тебе, чтобы ты мог выпить.",
+											"С легким взмахом [npc.her] [npc.hand], [npc.name] вызывает шар с целебной водой, который [npc.she] посылает [npc2.name], чтобы он мог выпить."));
 
 			if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_3) ) {
-				descriptionSB.append(" Smaller globes of water split off from the primary orb!");
+				descriptionSB.append("От основного шара отделились несколько меньших шаров с водой!");
 			}
 			
 			// If attack hits, apply damage and effects:
@@ -721,7 +721,7 @@ public enum Spell {
 					descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 
 					descriptionSB.append("<br/>"
-								+ "The orb of water heals "+UtilText.parse(target,"[npc.name]")+" for a total of "
+								+ "Шар с водой исцеляет "+UtilText.parse(target,"[npc.name]")+"на общую сумму "
 									+(int)(target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.4f)+" "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+" and "
 									+(int)(target.getAttributeValue(Attribute.MANA_MAXIMUM)*0.2f)+" "+Attribute.MANA_MAXIMUM.getColouredName("b")+"!");
 					descriptionSB.append(applyDamage(caster, target, -target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.4f));
@@ -739,18 +739,18 @@ public enum Spell {
 						alliesPlusCaster.add(caster);
 						for(GameCharacter combatant : alliesPlusCaster) {
 							descriptionSB.append("<br/>"
-									+ UtilText.parse(combatant, "One of the small orbs flies towards [npc.name], healing [npc.herHim] for a total of "
+									+ UtilText.parse(combatant, "Один из маленьких шаров летит в сторону [npc.name], исцеляя [npc.herHim] на общую сумму "
 																+(int)(target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.1f)+" "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+" and "
 																+(int)(target.getAttributeValue(Attribute.MANA_MAXIMUM)*0.1f)+" "+Attribute.MANA_MAXIMUM.getColouredName("b")+"!"));
 							descriptionSB.append(applyDamage(caster, combatant, -combatant.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.1f));
 							combatant.incrementMana(combatant.getAttributeValue(Attribute.MANA_MAXIMUM)*0.1f);
 							if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_1_CLEAN)) {
-								descriptionSB.append(UtilText.parse(combatant, "<br/>[npc.NamePos] body and all of [npc.her] worn clothing is [style.colourAqua(cleaned)] by the spell!"));
+								descriptionSB.append(UtilText.parse(combatant, "<br/>[npc.NamePos] тело и вся одежда [npc.her] [style.colourAqua(cleaned)] заклинанием!"));
 								combatant.cleanAllClothing(false, false);
 								combatant.cleanAllDirtySlots(true);
 							}
 							if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_2_CLEAN)) {
-								descriptionSB.append(UtilText.parse(combatant, "<br/>[npc.NamePos] body is [style.colourAqua(thoroughly washed)] by the spell!"));
+								descriptionSB.append(UtilText.parse(combatant, "<br/>[npc.NamePos] тело [style.colourAqua(thoroughly washed)] заклинанием!"));
 								combatant.drainTotalFluidsStored(SexAreaOrifice.ANUS, 250);
 								combatant.drainTotalFluidsStored(SexAreaOrifice.VAGINA, 250);
 								combatant.drainTotalFluidsStored(SexAreaOrifice.NIPPLE, 250);
@@ -764,7 +764,7 @@ public enum Spell {
 				} else if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_2)) {
 					descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 					descriptionSB.append("<br/>"
-								+ "The orb of water heals "+UtilText.parse(target,"[npc.name]")+" for a total of "
+								+ "Амулет воды исцеляет "+UtilText.parse(target,"[npc.name]")+" на сумму "
 									+(int)(target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.4f)+" "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+" and "
 									+(int)(target.getAttributeValue(Attribute.MANA_MAXIMUM)*0.2f)+" "+Attribute.MANA_MAXIMUM.getColouredName("b")+"!");
 					descriptionSB.append(applyDamage(caster, target, -target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.4f));
@@ -773,7 +773,7 @@ public enum Spell {
 				} else if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_1)) {
 					descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 					descriptionSB.append("<br/>"
-								+"The orb of water heals "+UtilText.parse(target,"[npc.name]")+" for a total of "
+								+"Амулет воды исцеляет "+UtilText.parse(target,"[npc.name]")+" на сумму "
 									+(int)(target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.2f)+" "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+" and "
 									+(int)(target.getAttributeValue(Attribute.MANA_MAXIMUM)*0.2f)+" "+Attribute.MANA_MAXIMUM.getColouredName("b")+"!");
 					descriptionSB.append(applyDamage(caster, target, -target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.2f));
@@ -782,17 +782,17 @@ public enum Spell {
 				} else {
 					descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 					descriptionSB.append("<br/>"
-								+ "The orb of water heals "+UtilText.parse(target,"[npc.name]")+" for a total of "
+								+ "Орбита воды исцеляет "+UtilText.parse(target,"[npc.name]")+" на сумму "
 									+(int)(target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.2f)+" "+Attribute.HEALTH_MAXIMUM.getColouredName("b")+"!");
 					descriptionSB.append(applyDamage(caster, target, -target.getAttributeValue(Attribute.HEALTH_MAXIMUM)*0.2f));
 				}
 				if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_1_CLEAN)) {
-					descriptionSB.append(UtilText.parse(target, "<br/>[npc.NamePos] body and all of [npc.her] worn clothing is [style.colourAqua(cleaned)] by the spell!"));
+					descriptionSB.append(UtilText.parse(target, "<br/>[npc.NamePos] тело и вся [npc.her] одежда [style.colourAqua(чистая)] заклинанием!"));
 					target.cleanAllClothing(false, false);
 					target.cleanAllDirtySlots(true);
 				}
 				if(caster.hasSpellUpgrade(SpellUpgrade.SOOTHING_WATERS_2_CLEAN)) {
-					descriptionSB.append(UtilText.parse(target, "<br/>[npc.NamePos] body is [style.colourAqua(thoroughly washed)] by the spell!"));
+					descriptionSB.append(UtilText.parse(target, "<br/>[npc.NamePos] тело [style.colourAqua(thoroughly washed)] заклинанием!"));
 					target.drainTotalFluidsStored(SexAreaOrifice.ANUS, 250);
 					target.drainTotalFluidsStored(SexAreaOrifice.VAGINA, 250);
 					target.drainTotalFluidsStored(SexAreaOrifice.NIPPLE, 250);
@@ -815,7 +815,7 @@ public enum Spell {
 			true,
 			"Elemental Water",
 			"elemental_water",
-			"Summon forth your elemental in a physical form by binding them to the school of Water.",
+			"Призовите своего элемента в физической форме, связав его со школой воды.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -825,34 +825,34 @@ public enum Spell {
 					SpellUpgrade.ELEMENTAL_WATER_2,
 					SpellUpgrade.ELEMENTAL_WATER_3A,
 					SpellUpgrade.ELEMENTAL_WATER_3B),
-			null, Util.newArrayListOfValues("Summons [style.colourArcane(Elemental)] in form of [style.colourSchoolWater(Water)]")) {
+			null, Util.newArrayListOfValues("Призывает [style.colourArcane(Элементал)] в форме [style.colourSchoolWater(Вода)]")) {
 		@Override
 		public Value<Boolean, String> getSpellCastOutOfCombatDescription(GameCharacter owner, GameCharacter target) {
 			if(!owner.hasSpell(this)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do]n't know this spell, so cannot cast it!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do] не знает этого заклинания, поэтому не может его использовать!"));
 				
 			} else if(owner.isCaptive()) {
-				return new Value<>(false, UtilText.parse(owner, "Spells cannot be cast while in captivity!"));
+				return new Value<>(false, UtilText.parse(owner, "Заклинания не могут быть использованы в плену!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "While in combat, spells can only be cast as a combat move!"));
+				return new Value<>(false, UtilText.parse(owner, "Во время боя заклинания могут быть использованы только как боевой ход!"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_WATER?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "Spells can only be cast in a neutral scene!");
+				return new Value<>(false, "Заклинания могут быть использованы только в нейтральной сцене!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] at least <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] in order to cast this spell!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
 				
 			} else {
-				String description = owner.isPlayer()?"Summon your elemental by binding it to the school of Water!":"Get [npc.name] to summon [npc.her] elemental by binding it to the school of Water!";
-				String cost = " This will cost <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
+				String description = owner.isPlayer()?"Призовите ваше элементальное существо, связав его со школой Воды!":"Заставьте [npc.name] призвать [npc.her] элементальное существо, связав его со школой Воды!";
+				String cost = "Это будет стоить <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
 				return new Value<>(true, UtilText.parse(owner, description+"<br/>"+cost));
 			}
 		}
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons your elemental in the form of water.";
+			return "Призывает ваше элементальное существо в форме воды.";
 		}
 		@Override
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -876,13 +876,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of sea and sky, I summon forth the eternal torrent! Answer your [npc.master]'s call, [npc2.name], and, by the drowning of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May all waters be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the seas rise, and the tsunami within me be unleashed! Flood and deluge, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему обряду моря и неба, я призываю вечный поток! Ответь на зов твоего [npc.master], [npc2.name], и, утопив миллион измерений, будь связан с моей волей!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут развязаны! Пусть все воды будут под моим контролем, и, через наш вечный договор, я призываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть моря поднимутся, и цунами внутри меня будет освобождено! Наводнение и затопление, твой [npc.master] зовёт! Послушай, и будь призвана, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a huge splash, you bind your elemental, [npc2.name], to the school of Water!"
-									:"With a huge splash, [npc1.name] binds [npc1.her] elemental, [npc2.name], to the school of Water!")));
+									?"С огромным всплеском, ты привязываешь своего элементаля, [npc2.name], к школе Воды!"
+									:"С огромным всплеском, [npc1.name] привязывает [npc1.her] элементаля, [npc2.name], к школе Воды!")));
 				
 			} else {
 				//caster.addCompanion(caster.getElemental());
@@ -890,13 +890,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of sea and sky, I summon forth the eternal torrent! Answer your [npc.master]'s call, [npc2.name], and, by the drowning of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May all waters be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the seas rise, and the tsunami within me be unleashed! Flood and deluge, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему обряду моря и неба, я призываю вечный поток! Ответь на зов твоего [npc.master], [npc2.name], и, через утопление миллиона измерений, будь привязана к моей воле!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут освобождены! Пусть все воды будут под моим командованием, и, через наш вечный контракт, я призываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть моря поднимутся, и цунами внутри меня будет освобождено! Наводнение и затопление, твой [npc.master] зовёт! Послушай, и будь призвана, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a huge splash, you summon forth your elemental, [npc2.name], by binding [npc2.herHim] to the school of Water!"
-									:"With a huge splash, [npc1.name] summons forth [npc1.her] elemental, [npc2.name], by binding [npc2.herHim] to the school of Water!")));
+									?"С огромным всплеском, ты призываешь своего элементаля, [npc2.name], привязывая [npc2.herHim] к школе Воды!"
+									:"С огромным всплеском, [npc1.name] призывает [npc1.her] элементаля, [npc2.name], привязывая [npc2.herHim] к школе Воды!")));
 				
 				if(Main.game.isInCombat()) {
 					caster.getElemental().setLocation(caster, false);
@@ -924,7 +924,7 @@ public enum Spell {
 			false,
 			"Poison Vapours",
 			"poison_vapours",
-			"Summons a cloud of poisonous gas around a target.",
+			"Призывает облако ядовитого газа вокруг цели.",
 			0,
 			DamageVariance.LOW,
 			50,
@@ -934,7 +934,7 @@ public enum Spell {
 					SpellUpgrade.POISON_VAPOURS_2,
 					SpellUpgrade.POISON_VAPOURS_3),
 			null,
-			Util.newArrayListOfValues("<b>25</b> [style.colourPoison(Poison Damage)] per turn for [style.colourGood(3 turns)]")) {
+			Util.newArrayListOfValues("<b>25</b> [style.colourPoison(Poison Damage)] за ход за [style.colourGood(3 хода)]")) {
 
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -957,7 +957,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons a poison cloud around the target.";
+			return "Призывает облако яда вокруг цели.";
 		}
 		
 		@Override
@@ -969,12 +969,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Let seal be broken, and by true power be unleashed! Now, by haze and smog, the air itself obeys my command!"),
-											"With a sweeping motion of your [pc.arm], you summon forth a cloud of poison vapours around yourself!",
-											"With a sweeping motion of your [pc.arm], you summon forth a cloud of poison vapours around [npc.name]!",
+													"Пусть печать будет разорвана, и истинная сила будет освобождена! Теперь, через туман и смог, сам воздух подчиняется моему приказу!"),
+											"С широким движением вашей [pc.arm], вы вызываете облако ядовитых паров вокруг себя!",
+											"С широким движением вашей [pc.arm], вы вызываете облако ядовитых паров вокруг [npc.name]!",
 											"",
-											"With a sweeping motion of [npc.her] [npc.arm], [npc.name] summons forth a cloud of poison vapours around you!",
-											"With a sweeping motion of [npc1.her] [npc1.arm], [npc1.name] summons forth a cloud of poison vapours around [npc2.name]!"));
+											"С широким движением [npc.her] [npc.arm], [npc.name] вызываете облако ядовитых паров вокруг вас!",
+											"С широким движением [npc1.her] [npc1.arm], [npc1.name] вызываете облако ядовитых паров вокруг [npc2.name]!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -1003,7 +1003,7 @@ public enum Spell {
 			false,
 			"Vacuum",
 			"vacuum",
-			"Creates a void in the air, dealing a small amount of initial damage as it sucks in the target, before lingering around to continue to disrupt their movements.",
+			"Создает пустоту в воздухе, нанося небольшое начальное повреждение, когда оно всасывает цель, прежде чем оставаться рядом, чтобы продолжать нарушать ее движения.",
 			5,
 			DamageVariance.LOW,
 			60,
@@ -1013,7 +1013,7 @@ public enum Spell {
 					SpellUpgrade.VACUUM_2,
 					SpellUpgrade.VACUUM_3),
 			Util.newHashMapOfValues(new Value<>(Attribute.ENERGY_SHIELDING, -5)),
-			Util.newArrayListOfValues("Lasts for [style.colourGood(4 turns)]")) {
+			Util.newArrayListOfValues("Продолжится [style.colourGood(4 хода)]")) {
 
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -1036,7 +1036,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons a disruptive vacuum next to the target.";
+			return "Призывает разрушительный вакуум рядом с целью.";
 		}
 		
 		@Override
@@ -1049,12 +1049,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Darkness blacker than black! I call upon the eternal void, and by rift through time and space, is my power made manifest!"),
-											"With a clench of your fist, you summon forth a vacuum right next to yourself!",
-											"With a clench of your fist, you summon forth a vacuum right next to [npc.name]!",
+													"Тьма, чернее черной! Я призываю вечную пустоту, и через разрыв во времени и пространстве, моя сила становится очевидной!"),
+											"Сжатием кулака, ты вызываешь вакуум прямо рядом с собой!",
+											"Сжатием кулака, ты вызываешь вакуум прямо рядом с [npc.name]!",
 											"",
-											"With a clench of [npc.her] fist, [npc.name] summons forth a vacuum right next to you!",
-											"With a clench of [npc.her] fist, [npc.name] summons forth a vacuum right next to [npc2.name]!"));
+											"Сжатием кулака [npc.her], [npc.name] вызываешь вакуум прямо рядом с тобой!",
+											"Сжатием кулака [npc.her], [npc.name] вызываешь вакуум прямо рядом с [npc2.name]!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, damage, isHit, isCritical));
 			
@@ -1084,7 +1084,7 @@ public enum Spell {
 			true,
 			"Protective Gusts",
 			"protective_gusts",
-			"Summons a benevolent wind to protect the target, as well as to help guide their attacks.",
+			"Вызываешь благоприятный ветер, чтобы защитить цель, а также помочь направить её атаки.",
 			0,
 			DamageVariance.LOW,
 			50,
@@ -1096,7 +1096,7 @@ public enum Spell {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.RESISTANCE_POISON, 5),
 					new Value<>(Attribute.ENERGY_SHIELDING, 1)),
-			Util.newArrayListOfValues("Lasts for [style.colourGood(3 turns)]")) {
+			Util.newArrayListOfValues("Продолжительность: [style.colourGood(3 хода)]")) {
 		
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -1119,7 +1119,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons a benevolent wind to protect the target.";
+			return "Вызываешь благоприятный ветер, чтобы защитить цель.";
 		}
 		
 		@Override
@@ -1130,12 +1130,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"The very air itself obeys my command! Now, may my true power be unleashed, and bind the wind itself to my will!"),
-											"Swishing both of your [pc.arms] up into the air, you summon forth a benevolent wind to help protect you!",
-											"Swishing both of your [pc.arms] up into the air, you summon forth a benevolent wind to help protect [npc.name]!",
-											"Swishing both of [npc.her] [npc.arms] up into the air, [npc.name] summons forth a benevolent wind to help protect [npc.herHim]!",
-											"Swishing both of [npc.her] [npc.arms] up into the air, [npc.name] summons forth a benevolent wind to help protect you!",
-											"Swishing both of [npc.her] [npc.arms] up into the air, [npc.name] summons forth a benevolent wind to help protect [npc2.name]!"));
+													"Сама атмосфера подчиняется моему приказу! Теперь, пусть моя истинная сила будет раскрепощена, и пусть ветер сам по себе будет подчинен моей воле!"),
+											"Размахивая обоими [pc.arms] в воздухе, ты вызываешь благоприятный ветер, чтобы помочь защитить тебя!",
+											"Размахивая обоими [pc.arms] в воздухе, ты вызываешь благоприятный ветер, чтобы помочь защитить [npc.name]!",
+											"Махая обеими руками [npc.her] [npc.arms] вверх, [npc.name] призывает благосклонный ветер, чтобы защитить [npc.herHim]!",
+											"Махая обеими руками [npc.her] [npc.arms] вверх, [npc.name] призывает благосклонный ветер, чтобы защитить тебя!",
+											"Махая обеими руками [npc.her] [npc.arms] вверх, [npc.name] призывает благосклонный ветер, чтобы защитить [npc2.name]!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -1163,7 +1163,7 @@ public enum Spell {
 			true,
 			"Elemental Air",
 			"elemental_air",
-			"Summon forth your elemental in a physical form by binding them to the school of Air.",
+			"Призываешь своего элемента в физической форме, привязывая его к школе Воздуха.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -1173,34 +1173,34 @@ public enum Spell {
 					SpellUpgrade.ELEMENTAL_AIR_2,
 					SpellUpgrade.ELEMENTAL_AIR_3A,
 					SpellUpgrade.ELEMENTAL_AIR_3B),
-			null, Util.newArrayListOfValues("Summons [style.colourArcane(Elemental)] in form of [style.colourSchoolAir(Air)]")) {
+			null, Util.newArrayListOfValues("Призываешь [style.colourArcane(Elemental)] в форме [style.colourSchoolAir(Воздух)]")) {
 		@Override
 		public Value<Boolean, String> getSpellCastOutOfCombatDescription(GameCharacter owner, GameCharacter target) {
 			if(!owner.hasSpell(this)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do]n't know this spell, so cannot cast it!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do] не знает этого заклинания, поэтому не может его использовать!"));
 				
 			} else if(owner.isCaptive()) {
-				return new Value<>(false, UtilText.parse(owner, "Spells cannot be cast while in captivity!"));
+				return new Value<>(false, UtilText.parse(owner, "Заклинания не могут быть использованы в плену!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "While in combat, spells can only be cast as a combat move!"));
+				return new Value<>(false, UtilText.parse(owner, "Во время боя заклинания могут быть использованы только как боевой ход!"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_AIR?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "Spells can only be cast in a neutral scene!");
+				return new Value<>(false, "Заклинания могут быть использованы только в нейтральной сцене!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] at least <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] in order to cast this spell!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
 				
 			} else {
-				String description = owner.isPlayer()?"Summon your elemental by binding it to the school of Air!":"Get [npc.name] to summon [npc.her] elemental by binding it to the school of Air!";
-				String cost = " This will cost <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
+				String description = owner.isPlayer()?"Призовите ваше элементальное существо, связав его с школой Воздуха!":"Заставьте [npc.name] призвать [npc.her] элементальное существо, связав его с школой Воздуха!";
+				String cost = "Это будет стоить <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
 				return new Value<>(true, UtilText.parse(owner, description+"<br/>"+cost));
 			}
 		}
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons your elemental in the form of air.";
+			return "Призывает ваше элементальное существо в форме воздуха.";
 		}
 		@Override
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -1224,13 +1224,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of wind and gale, I summon forth the hurricane itself! Answer your [npc.master]'s call, [npc2.name], and, by the offering of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May the air itself be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the winds rise, and the hurricane within me be unleashed! Storm and chaos, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему обряду ветра и бури, я призываю ураган! Ответь на призыв [npc.master], [npc2.name], и, благодаря жертве из миллиона измерений, будь связан с моей волей!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут развязаны! Пусть воздух сам будет под моим контролем, и, благодаря нашему вечному договору, я призываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть ветер поднимется, и ураган внутри меня будет развязан! Шторм и хаос, твой [npc.master] зовёт! Послушай и будь призван, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a tremendous gust of wind, you bind your elemental, [npc2.name], to the school of Air!"
-									:"With a tremendous gust of wind, [npc1.name] binds [npc1.her] elemental, [npc2.name], to the school of Air!")));
+									?"С помощью сильного порыва ветра ты связываешь твое элементальное существо, [npc2.name], с школой Воздуха!"
+									:"С огромным порывом ветра, [npc1.name] связывает [npc1.her] элементаль, [npc2.name], со школой Воздуха!")));
 				
 			} else {
 				//caster.addCompanion(caster.getElemental());
@@ -1238,13 +1238,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of wind and gale, I summon forth the hurricane itself! Answer your [npc.master]'s call, [npc2.name], and, by the offering of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May the air itself be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the winds rise, and the hurricane within me be unleashed! Storm and chaos, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему обряду ветра и бури, я вызываю ураган! Ответь на призыв твоего [npc.master], [npc2.name], и, благодаря жертве из миллиона измерений, будь привязан к моей воле!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут развязаны! Пусть воздух сам будет под моим контролем, и, благодаря нашему вечному договору, я вызываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть ветер поднимется, и ураган внутри меня будет развязан! Шторм и хаос, твой [npc.master] зовет! Послушай и будь вызван, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a tremendous gust of wind, you summon forth your elemental, [npc2.name], by binding [npc2.herHim] to the school of Air!"
-									:"With a tremendous gust of wind, [npc1.name] summons forth [npc1.her] elemental, [npc2.name], by binding [npc2.herHim] to the school of Air!")));
+									?"С огромным порывом ветра, ты вызываешь своего элементаля, [npc2.name], привязывая [npc2.herHim] к стихии Воздуха!"
+									:"С огромным порывом ветра, [npc1.name] вызывается [npc1.her] элементаль, [npc2.name], привязывая [npc2.herHim] к стихии Воздуха!")));
 				
 				if(Main.game.isInCombat()) {
 					caster.getElemental().setLocation(caster, false);
@@ -1271,7 +1271,7 @@ public enum Spell {
 			false,
 			"Slam",
 			"slam",
-			"Summons a crushing wave of force that slams down onto a target.",
+			"Вызывает сокрушительную волну силы, которая обрушивается на цель.",
 			40,
 			DamageVariance.LOW,
 			60,
@@ -1309,19 +1309,19 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"May the mountains shake, and the earth be split asunder! My power now shall be unleashed, and the cosmic forces at my command deliver unto you your demise!"),
-											"With a downward, striking gesture, you summon forth a huge wave of pure force, which slams down on yourself!",
-											"With a downward, striking gesture, you summon forth a huge wave of pure force, which slams down on [npc.name]!",
+													"Пусть горы трясутся, и земля раскалывается! Моя сила теперь будет развязана, и космические силы под моим контролем приведут к твоей гибели!"),
+											"С движением руки вниз, ты вызываешь огромную волну чистой силы, которая обрушивается на тебя!",
+											"С движением руки вниз, ты вызываешь огромную волну чистой силы, которая обрушивается на [npc.name]!",
 											"",
-											"With a downward, striking gesture, [npc.name] summons forth a huge wave of pure force, which slams down on you!",
-											"With a downward, striking gesture, [npc.name] summons forth a huge wave of pure force, which slams down on [npc2.name]!")
+											"С помощью движений вниз и вперед, [npc.name] вызывает огромную волну чистой силы, которая обрушивается на вас!",
+											"С помощью движений вниз и вперед, [npc.name] вызывает огромную волну чистой силы, которая обрушивается на [npc2.name]!")
 								);
 			
 			if(isHit) {
 				if(caster.hasSpellUpgrade(SpellUpgrade.SLAM_3)) {
-					descriptionSB.append(" The force then strikes down into the ground, causing a huge earthquake!");
+					descriptionSB.append("Сила затем ударяет по земле, вызывая огромный землетрясение!");
 				} else if(caster.hasSpellUpgrade(SpellUpgrade.SLAM_1)) {
-					descriptionSB.append(" The force then strikes down into the ground, causing the ground to shake!");
+					descriptionSB.append("Сила затем ударяет по земле, вызывая колебания!");
 				}
 			}
 			
@@ -1359,7 +1359,7 @@ public enum Spell {
 			false,
 			"Telekinetic Shower",
 			"telekinetic_shower",
-			"Lifts any small objects in the surrounding area into the air, before hurling them at the target.",
+			"Поднимает все мелкие предметы в окрестностях в воздух, прежде чем бросать их в цель.",
 			0,
 			DamageVariance.LOW,
 			125,
@@ -1368,7 +1368,7 @@ public enum Spell {
 					SpellUpgrade.TELEKENETIC_SHOWER_1,
 					SpellUpgrade.TELEKENETIC_SHOWER_2,
 					SpellUpgrade.TELEKENETIC_SHOWER_3),
-			null, Util.newArrayListOfValues("<b>25</b> [style.colourPhysical(Physical Damage)] per turn for [style.colourGood(3 turns)]")) {
+			null, Util.newArrayListOfValues("<b>25</b> [style.colourPhysical(Физический Урон)] за ход за [style.colourGood(3 хода)]")) {
 		
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -1391,7 +1391,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Launch small objects at your target to damage and disrupt them.";
+			return "Запускает мелкие предметы в вашу цель, чтобы нанести урон и нарушить её.";
 		}
 		
 		@Override
@@ -1403,12 +1403,12 @@ public enum Spell {
 
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"The cosmic forces of the universe obey my every command! With this dimensional vortex, shall I warp the boundaries of space and time!"),
-											"Raising your [pc.arms], you lift all manner of small objects in the immediate vicinity up into the air, before hurling them at yourself!",
-											"Raising your [pc.arms], you lift all manner of small objects in the immediate vicinity up into the air, before hurling them at [npc.name]!",
+													"Космические силы вселенной подчиняются каждому моему приказу! С помощью этого межпространственного вихря, я искажаю границы пространства и времени!"),
+											"Поднимая ваше [pc.arms], вы поднимаете все мелкие предметы в непосредственной близости в воздух, прежде чем бросать их в себя!",
+											"Поднимая ваше [pc.arms], вы поднимаете все мелкие предметы в непосредственной близости в воздух, прежде чем бросать их в [npc.name]!",
 											"",
-											"Raising [npc.her] [npc.arms], [npc.name] lifts all manner of small objects in the immediate vicinity up into the air, before hurling them at you!",
-											"Raising [npc.her] [npc.arms], [npc.name] lifts all manner of small objects in the immediate vicinity up into the air, before hurling them at [npc2.name]!"));
+											"Поднимая [npc.her] [npc.arms], [npc.name] поднимает всевозможные мелкие предметы в непосредственной близости, прежде чем швырнуть их в вас!",
+											"Поднимая [npc.her] [npc.arms], [npc.name] поднимает всевозможные мелкие предметы в непосредственной близости, прежде чем швырнуть их в [npc2.name]!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -1436,7 +1436,7 @@ public enum Spell {
 			true,
 			"Stone Shell",
 			"stone_shell",
-			"Summons a protective layer of stone around the target.",
+			"Призывает защитный слой камня вокруг цели.",
 			0,
 			DamageVariance.LOW,
 			25,
@@ -1447,7 +1447,7 @@ public enum Spell {
 					SpellUpgrade.STONE_SHELL_3),
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.RESISTANCE_PHYSICAL, 5)),
-			Util.newArrayListOfValues("Lasts for [style.colourGood(3 turns)]")) {
+			Util.newArrayListOfValues("Действует в течение [style.colourGood(3 хода)]")) {
 		
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -1470,7 +1470,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summon a shield to protect your target.";
+			return "Призывает щит, чтобы защитить вашу цель.";
 		}
 		
 		@Override
@@ -1480,12 +1480,12 @@ public enum Spell {
 			descriptionSB.setLength(0);
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"The confinement of my astral powers is at an end! By my power unleashed, the very Earth itself serves its [npc.master]'s call!"),
-											"Thrusting your [pc.hand] forwards, you summon forth a levitating stone shell to protect you from incoming attacks!",
-											"Thrusting your [pc.hand] forwards, you summon forth a levitating stone shell to protect [npc.name] from incoming attacks!",
-											"Thrusting [npc.her] [npc.hand] forwards, [npc.name] summons forth a levitating stone shell to protect [npc.herHim] from incoming attacks!",
-											"Thrusting [npc.her] [npc.hand] forwards, [npc.name] summons forth a levitating stone shell to protect you from incoming attacks!",
-											"Thrusting [npc1.her] [npc1.hand] forwards, [npc1.name] summons forth a levitating stone shell to protect [npc2.name] from incoming attacks!"));
+													"Ограничение моих астральных сил подошло к концу! По моей силе, высвобожденной, сама Земля служит [npc.master]'s призыву!"),
+											"Толкая ваше [pc.hand] вперед, вы призываете левитирующий каменный панцирь, чтобы защитить вас от входящих атак!",
+											"Толкая ваше [pc.hand] вперед, вы призываете левитирующий каменный панцирь, чтобы защитить [npc.name] от входящих атак!",
+											"Толкая [npc.her] [npc.hand] вперед, [npc.name] призывает левитирующий каменный панцирь, чтобы защитить [npc.herHim] от входящих атак!",
+											"Толкая [npc.her] [npc.hand] вперед, [npc.name] призывает левитирующий каменный панцирь, чтобы защитить вас от входящих атак!",
+											"[npc1.her] [npc1.hand] выталкивает [npc1.name] вперед, [npc2.name] вызывает левитирующую каменную оболочку, чтобы защитить @@T4@@ от входящих атак!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -1513,7 +1513,7 @@ public enum Spell {
 			false,
 			"Elemental Earth",
 			"elemental_earth",
-			"Summon forth your elemental in a physical form by binding them to the school of Earth.",
+			"Вызывайте ваше элементальное существо в физической форме, привязывая его к школе Земли.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -1523,34 +1523,34 @@ public enum Spell {
 					SpellUpgrade.ELEMENTAL_EARTH_2,
 					SpellUpgrade.ELEMENTAL_EARTH_3A,
 					SpellUpgrade.ELEMENTAL_EARTH_3B),
-			null, Util.newArrayListOfValues("Summons [style.colourArcane(Elemental)] in form of [style.colourSchoolEarth(Earth)]")) {
+			null, Util.newArrayListOfValues("Вызывайте [style.colourArcane(Elemental)] в форме [style.colourSchoolEarth(Earth)]")) {
 		@Override
 		public Value<Boolean, String> getSpellCastOutOfCombatDescription(GameCharacter owner, GameCharacter target) {
 			if(!owner.hasSpell(this)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do]n't know this spell, so cannot cast it!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do] не знает этого заклинания, поэтому не может его использовать!"));
 				
 			} else if(owner.isCaptive()) {
-				return new Value<>(false, UtilText.parse(owner, "Spells cannot be cast while in captivity!"));
+				return new Value<>(false, UtilText.parse(owner, "Заклинания не могут быть использованы во время заточения!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "While in combat, spells can only be cast as a combat move!"));
+				return new Value<>(false, UtilText.parse(owner, "Во время боя заклинания могут быть использованы только как боевой ход!"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_EARTH?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "Spells can only be cast in a neutral scene!");
+				return new Value<>(false, "Заклинания могут быть использованы только в нейтральной сцене!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] at least <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] in order to cast this spell!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
 				
 			} else {
-				String description = owner.isPlayer()?"Summon your elemental by binding it to the school of Earth!":"Get [npc.name] to summon [npc.her] elemental by binding it to the school of Earth!";
-				String cost = " This will cost <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
+				String description = owner.isPlayer()?"Вызывайте ваше элементальное существо, привязывая его к школе Земли!":"Пригласите [npc.name], чтобы он привел в действие [npc.her] элементаль, связав его с школой Земли!";
+				String cost = "Это будет стоить <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
 				return new Value<>(true, UtilText.parse(owner, description+"<br/>"+cost));
 			}
 		}
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons your elemental in the form of earth.";
+			return "Призывает вашего элементаля в форме земли.";
 		}
 		@Override
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -1575,13 +1575,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of sand and stone, I summon forth the earthquake itself! Answer your [npc.master]'s call, [npc2.name], and, by the crushing of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May the earth itself be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the earth shake, and the power within me be unleashed! Boulder and mountain, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему ритуалу песка и камня, я вызываю землетрясение! Ответьте на зов вашего [npc.master], [npc2.name], и, благодаря сокрушению миллиона измерений, будьте связаны с моей волей!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут развязаны! Пусть сама земля будет под моим контролем, и, благодаря нашему вечному контракту, я вызываю вас, [npc2.name]!)] ",
+											"[npc.speech(Пусть земля дрожит, и сила внутри меня развязана! Камень и гора, ваш [npc.master] зовет! Послушайте и будьте вызваны, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a burst of rocks and debris, you bind your elemental, [npc2.name], to the school of Earth!"
-									:"With a burst of rocks and debris, [npc1.name] binds [npc1.her] elemental, [npc2.name], to the school of Earth!")));
+									?"С помощью взрыва камней и обломков вы связываете вашего элементаля, [npc2.name], с школой Земли!"
+									:"С помощью взрыва камней и обломков, [npc1.name] связывает [npc1.her] элементаль, [npc2.name], с школой Земли!")));
 				
 			} else {
 				//caster.addCompanion(caster.getElemental());
@@ -1589,13 +1589,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of sand and stone, I summon forth the earthquake itself! Answer your [npc.master]'s call, [npc2.name], and, by the crushing of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May the earth itself be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the earth shake, and the power within me be unleashed! Boulder and mountain, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему ритуалу песка и камня, я вызываю землетрясение! Ответьте на зов вашего [npc.master], [npc2.name], и, благодаря сокрушению миллиона измерений, будьте связаны с моей волей!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, будут освобождены! Пусть сама земля будет под моим контролем, и, благодаря нашему вечному договору, я призываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть земля дрожит, и сила во мне будет освобождена! Камень и гора, твой [npc.master] зовёт! Послушай, и будь призвана, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a burst of rocks and debris, you summon forth your elemental, [npc2.name], by binding [npc2.herHim] to the school of Earth!"
-									:"With a burst of rocks and debris, [npc1.name] summons forth [npc1.her] elemental, [npc2.name], by binding [npc2.herHim] to the school of Earth!")));
+									?"С помощью взрыва камней и обломков, ты призываешь своего элементаль, [npc2.name], связывая [npc2.herHim] с школой Земли!"
+									:"С помощью взрыва камней и обломков, [npc1.name] призывает элементаль, [npc1.her], [npc2.name], связывая [npc2.herHim] с школой Земли!")));
 				
 				if(Main.game.isInCombat()) {
 					caster.getElemental().setLocation(caster, false);
@@ -1622,7 +1622,7 @@ public enum Spell {
 			false,
 			"Arcane Arousal",
 			"arcane_arousal",
-			"Causes the target to witness a highly arousing arcane vision.",
+			"Вызывает у цели сильное возбуждающее арканическое видение.",
 			15,
 			DamageVariance.LOW,
 			50,
@@ -1668,12 +1668,12 @@ public enum Spell {
 
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"By the true nature of the arcane, do I deliver unto you the prophecy of Lilith herself! Behold, the fate that awaits all mortals who dare stand against me!"),
-											"You focus your arcane energy on projecting an arousing vision into your own mind",
-											"You focus your arcane energy on projecting an arousing vision into [npc.namePos] mind.",
+													"С помощью истинной природы арканических сил, я передаю тебе пророчество самой Лилит! Посмотри, судьба, которая ждёт всех смертных, осмеливающихся встать против меня!"),
+											"Ты сосредотачиваешь свою арканическую энергию на проецировании возбуждающего видения в свой собственный разум",
+											"Ты сосредотачиваешь свою арканическую энергию на проецировании возбуждающего видения в разум [npc.namePos].",
 											"",
-											"[npc.Name] focuses [npc.her] arcane energy on projecting an arousing vision into your mind!",
-											"[npc.Name] focuses [npc.her] arcane energy on projecting an arousing vision into [npc2.namePos] mind!"));
+											"[npc.Name] сосредотачивает [npc.her] арканическую энергию на проецировании возбуждающего видения в твой разум!",
+											"[npc.Name] сосредотачивает [npc.her] арканическую энергию на проецировании возбуждающего видения в разум [npc2.namePos]!"));
 			
 			descriptionSB.append(getDamageDescription(caster, target, damage, isHit, isCritical));
 			
@@ -1706,7 +1706,7 @@ public enum Spell {
 			true,
 			"Telepathic Communication",
 			"telepathic_communication",
-			"The caster projects seductive voices into the mind of the target.",
+			"Заговорщик проецирует соблазнительные голоса в сознание цели.",
 			0,
 			DamageVariance.LOW,
 			75,
@@ -1716,7 +1716,7 @@ public enum Spell {
 					SpellUpgrade.TELEPATHIC_COMMUNICATION_2,
 					SpellUpgrade.TELEPATHIC_COMMUNICATION_3),
 			Util.newHashMapOfValues(
-					new Value<>(Attribute.DAMAGE_LUST, 15)), Util.newArrayListOfValues("Lasts for [style.colourGood(5 turns)]")) {
+					new Value<>(Attribute.DAMAGE_LUST, 15)), Util.newArrayListOfValues("Продолжительность: [style.colourGood(5 ходов)]")) {
 		
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -1739,7 +1739,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Speak directly into the target's mind.";
+			return "Говорите напрямую в сознание цели.";
 		}
 		
 		@Override
@@ -1750,12 +1750,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"By my mastery of all dimensions, I now shatter the boundaries of space and time! The heavens themselves shall hear my voice, and despair!"),
-											"You focus your arcane energy on enabling your thoughts to be projected into others' minds!",
-											"You focus your arcane energy on enabling [npc.namePos] thoughts to be projected into others' minds!",
-											"[npc.Name] focuses [npc.her] arcane energy on enabling [npc.her] thoughts to be projected into others' minds!",
-											"[npc.Name] focuses [npc.her] arcane energy on enabling your thoughts to be projected into others' minds!",
-											"[npc1.Name] focuses [npc1.her] arcane energy on enabling [npc2.namePos] thoughts to be projected into others' minds!"));
+													"Своей властью над всеми измерениями я теперь разрушаю границы пространства и времени! Сами небеса услышат мой голос, и отчаяние!"),
+											"Вы сосредотачиваете свою арканическую энергию на том, чтобы ваши мысли могли быть проецированы в сознание других!",
+											"Вы сосредотачиваете свою арканическую энергию на том, чтобы мысли [npc.namePos] могли быть проецированы в сознание других!",
+											"[npc.Name] сосредотачивает [npc.her] арканическую энергию на том, чтобы мысли [npc.her] могли быть проецированы в сознание других!",
+											"[npc.Name] сосредотачивает [npc.her] арканическую энергию на том, чтобы ваши мысли могли быть проецированы в сознание других!",
+											"[npc1.Name] сосредотачивает [npc1.her] арканическую энергию на том, чтобы мысли [npc2.namePos] могли быть проецированы в сознание других!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -1782,7 +1782,7 @@ public enum Spell {
 			false,
 			"Arcane Cloud",
 			"arcane_cloud",
-			"Summons an arcane-imbued stormcloud over the target's head.",
+			"Призывает арканически заряженную грозовую тучу над головой цели.",
 			0,
 			DamageVariance.LOW,
 			150,
@@ -1792,7 +1792,7 @@ public enum Spell {
 					SpellUpgrade.ARCANE_CLOUD_2,
 					SpellUpgrade.ARCANE_CLOUD_3),
 			Util.newHashMapOfValues(
-					new Value<>(Attribute.RESISTANCE_LUST, -25)), Util.newArrayListOfValues("Lasts for [style.colourGood(3 turns)]")) {
+					new Value<>(Attribute.RESISTANCE_LUST, -25)), Util.newArrayListOfValues("Продолжается [style.colourGood(3 хода)]")) {
 
 		@Override
 		public Map<AbstractStatusEffect, Integer> getStatusEffects(GameCharacter caster, GameCharacter target, boolean isCritical) {
@@ -1815,7 +1815,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summon an arcane cloud above the target.";
+			return "Призывает аркана облако над целью.";
 		}
 		
 		@Override
@@ -1827,12 +1827,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Oh, dark seals containing my ultimate power, now be rend to pieces! Let arcane manifestations be summoned forth, to deliver unto my enemies their final judgement!"),
-											"With an upwards thrust of your [pc.arm], you summon forth an arcane cloud above your own head!",
-											"With an upwards thrust of your [pc.arm], you summon forth an arcane cloud above [npc.namePos] head!",
+													"О, тёмные печати, содержащие мою высшую силу, теперь разрывайте на части! Пусть аркана проявления будут призваны, чтобы нанести моим врагам их окончательный приговор!"),
+											"С поднятием [pc.arm], ты призываешь аркана облако над собственной головой!",
+											"С поднятием [pc.arm], ты призываешь аркана облако над головой [npc.namePos]!",
 											"",
-											"With an upwards thrust of [npc.her] [npc.arm], [npc.name] summons forth an arcane cloud above your head!",
-											"With an upwards thrust of [npc1.her] [npc1.arm], [npc1.name] summons forth an arcane cloud above [npc2.namePos] head!"));
+											"С поднятием [npc.her] [npc.arm], [npc.name] призывает аркана облако над собственной головой!",
+											"С поднятием [npc1.her] [npc1.arm], [npc1.name] призывает аркана облако над головой [npc2.namePos]!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -1860,7 +1860,7 @@ public enum Spell {
 			true,
 			"Cleanse",
 			"cleanse",
-			"A cleansing wave of arcane energy bursts forth from the target, removing all of their status effects.",
+			"Очищающая волна аркана энергии вырывается из цели, удаляя все её эффекты статуса.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -1870,12 +1870,12 @@ public enum Spell {
 					SpellUpgrade.CLEANSE_2,
 					SpellUpgrade.CLEANSE_3),
 			null, Util.newArrayListOfValues(
-					"[style.colourGood(Removes all)] combat status effects from",
-					"both the targeted ally and enemy")) {
+					"[style.colourGood(Удаляет все)] эффекты статуса из",
+					"как союзника, так и врага")) {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Removes combat status effects from the targeted ally and enemy.";
+			return "Убирает с полей боя все негативные эффекты как с союзников, так и с врагов.";
 		}
 		
 		@Override
@@ -1907,16 +1907,16 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"By Lilith's power, I do shatter the world's illusions! Let time and space be torn asunder, and by my arcane dominance, shall reality itself be warped to my will!"),
-											"Thrusting your [pc.hand] forwards, you summon forth an explosion of cleansing arcane energy upon yourself!",
-											"Thrusting your [pc.hand] forwards, you summon forth an explosion of cleansing arcane energy upon [npc.name]!",
-											"Thrusting [npc.her] [npc.hand] forwards, [npc.name] summons forth an explosion of cleansing arcane energy upon [npc.herself]!",
-											"Thrusting [npc.her] [npc.hand] forwards, [npc.name] summons forth an explosion of cleansing arcane energy upon you!",
-											"Thrusting [npc.her] [npc.hand] forwards, [npc.name] summons forth an explosion of cleansing arcane energy upon [npc2.name]!")
+													"Силой Лилит, я разрушаю иллюзии мира! Пусть время и пространство будут разорваны, и под моим арканическим господством, сама реальность будет извращена в мою пользу!"),
+											"Выдвигая вперед свое [pc.hand], вы вызываете взрыв очищающей арканической энергии на себя!",
+											"Выдвигая вперед свое [pc.hand], вы вызываете взрыв очищающей арканической энергии на [npc.name]!",
+											"Выдвигая [npc.her] [npc.hand] вперед, [npc.name] вызываете взрыв очищающей арканической энергии на [npc.herself]!",
+											"Выдвигая [npc.her] [npc.hand] вперед, [npc.name] вызываете взрыв очищающей арканической энергии на вас!",
+											"Выдвигая [npc.her] [npc.hand] вперед, [npc.name] вызываете взрыв очищающей арканической энергии на [npc2.name]!")
 								);
 
 			descriptionSB.append(UtilText.parse(this.getPreferredTarget(caster, enemies, allies),
-					" The energy then shoots off and explodes around [npc.name]!"));
+					"Энергия затем вылетает и взрывается вокруг [npc.name]!"));
 			
 			
 			// If attack hits, apply damage and effects: TODO
@@ -1960,7 +1960,7 @@ public enum Spell {
 			false,
 			"Steal",
 			"steal",
-			"A lesser form of teleport, this spell enables the caster to steal an item from out of the target's inventory.",
+			"Меньшая форма телепортации, это заклинание позволяет заклинателю украсть предмет из инвентаря цели.",
 			0,
 			DamageVariance.LOW,
 			100,
@@ -1970,11 +1970,11 @@ public enum Spell {
 					SpellUpgrade.STEAL_2,
 					SpellUpgrade.STEAL_3A,
 					SpellUpgrade.STEAL_3B),
-			null, Util.newArrayListOfValues("[style.colourExcellent(Steals)] a random item from the target's inventory")) {
+			null, Util.newArrayListOfValues("[style.colourExcellent(Крадет)] случайный предмет из инвентаря цели")) {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Steals the target's items.";
+			return "Крадет предметы цели.";
 		}
 		
 		@Override
@@ -1986,12 +1986,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"The fabric of space and time is mine to command! Cosmic dimensions, obey my command, and deliver unto me the assets of my hated foes!"),
-											"Thrusting out your [pc.hand] and clenching your fist, you channel your arcane power into stealing one of your own items...", // ...
-											"Thrusting out your [pc.hand] and clenching your fist, you channel your arcane power into stealing one of [npc.namePos] items!",
+													"Ткань пространства и времени принадлежит мне! Космические измерения, подчиняйтесь моему приказу, и передайте мне имущество моих ненавистных врагов!"),
+											"Вытянув [pc.hand] и сжав кулак, вы направляете свою арканическую силу, чтобы украсть один из ваших собственных предметов...", // ...
+											"Вытянув [pc.hand] и сжав кулак, вы направляете свою арканическую силу, чтобы украсть один из предметов [npc.namePos]!",
 											"",
-											"Thrusting out [npc.her] [npc.hand] and clenching [npc.her] fist, [npc.name] channels [npc.her] arcane power into stealing one of your items!",
-											"Thrusting out [npc.her] [npc.hand] and clenching [npc.her] fist, [npc.name] channels [npc.her] arcane power into stealing one of [npc2.namePos] items!"));
+											"Выталкивая [npc.her] [npc.hand] и сжимая [npc.her] кулак, [npc.name] направляет [npc.her] аркана, чтобы украсть один из ваших предметов!",
+											"Выталкивая [npc.her] [npc.hand] и сжимая [npc.her] кулак, [npc.name] направляет [npc.her] аркана, чтобы украсть один из [npc2.namePos] предметов!"));
 			
 			// If attack hits, apply damage and effects:
 			if (isHit) {
@@ -2007,11 +2007,11 @@ public enum Spell {
 						descriptionSB.append("<br/>"
 								+getCastDescription(caster, target,
 										null,
-										"You stole your own "+clothingToSteal.getName()+"...",
-										"[npc.Name] lets out an embarrassed cry as you steal the "+clothingToSteal.getName()+" that [npc.sheIs] currently wearing, [npc.speech(Y-You pervert!)]",
+										"Вы украли свой собственный "+clothingToSteal.getName()+"...",
+										"[npc.Name] издает смущенный крик, когда вы украли "+clothingToSteal.getName()+" что [npc.sheIs] в данный момент носит, [npc.speech(Y-Ты pervert!)]",
 										"",
-										"You can't help but let out an embarrassed cry as [npc.name] steals the "+clothingToSteal.getName()+" that you're currently wearing, [pc.speech(Y-You pervert!)]",
-										"[npc2.Name] lets out an embarrassed cry as [npc1.name] steals the "+clothingToSteal.getName()+" that [npc2.sheIs] currently wearing, [npc2.speech(Y-You pervert!)]")
+										"Ты не можешь не выпустить смущенный крик, когда [npc.name] крадет "+clothingToSteal.getName()+" то, что ты сейчас носишь, [pc.speech(Y-Ты pervert!)]",
+										"[npc2.Name] выпустил смущенный крик, когда [npc1.name] украл "+clothingToSteal.getName()+" то, что [npc2.sheIs] в данный момент носит, [npc2.speech(Y-Ты pervert!)]")
 								+ "<br/>");
 						clothingToSteal.setName(target.getNameIgnoresPlayerKnowledge() + "'s " +clothingToSteal.getName());
 						descriptionSB.append(caster.addClothing(clothingToSteal, true));
@@ -2083,11 +2083,11 @@ public enum Spell {
 						descriptionSB.append("<br/>"
 								+ getCastDescription(caster, target,
 										null,
-										"You stole your own "+mainWeapon.getName()+"...",
-										"You stole [npc.namePos] "+mainWeapon.getName()+" from out of [npc.her] [npc.hands]!",
+										"Ты украл свою собственную "+mainWeapon.getName()+"...",
+										"Ты украл [npc.namePos] "+mainWeapon.getName()+" из [npc.her] [npc.hands]!",
 										"",
-										"[npc.Name] stole your "+mainWeapon.getName()+" from out of your [pc.hands]!",
-										"[npc1.Name] stole [npc2.namePos] "+mainWeapon.getName()+" from out of [npc2.her] [npc2.hands]!")
+										"[npc.Name] украл твой "+mainWeapon.getName()+" из твоего [pc.hands]!",
+										"[npc1.Name] украл [npc2.namePos] "+mainWeapon.getName()+" у [npc2.her] [npc2.hands]!")
 								+ "<br/>"
 								+ caster.addWeapon(mainWeapon, true));
 						
@@ -2096,11 +2096,11 @@ public enum Spell {
 						descriptionSB.append("<br/>"
 								+ getCastDescription(caster, target,
 										null,
-										"You stole your own "+offhandWeapon.getName()+"...",
-										"You stole [npc.namePos] "+offhandWeapon.getName()+" from out of [npc.her] [npc.hands]!",
+										"Ты украл свою "+offhandWeapon.getName()+"...",
+										"Ты украл [npc.namePos] "+offhandWeapon.getName()+" у [npc.her] [npc.hands]!",
 										"",
-										"[npc.Name] stole your "+offhandWeapon.getName()+" from out of your [pc.hands]!",
-										"[npc1.Name] stole [npc2.namePos] "+offhandWeapon.getName()+" from out of [npc2.her] [npc2.hands]!")
+										"[npc.Name] украл твой "+offhandWeapon.getName()+" у твоего [pc.hands]!",
+										"[npc1.Name] украл [npc2.namePos] "+offhandWeapon.getName()+" у [npc2.her] [npc2.hands]!")
 								+ "<br/>"
 								+ caster.addWeapon(offhandWeapon, true));
 						
@@ -2123,11 +2123,11 @@ public enum Spell {
 							descriptionSB.append("<br/>"
 									+ getCastDescription(caster, target,
 											null,
-											"You stole your own "+item.getName()+"...",
-											"You stole [npc.namePos] "+item.getName()+" from out of [npc.her] inventory!",
+											"Ты украл(а) свой собственный "+item.getName()+"...",
+											"Ты украл(а) [npc.namePos] "+item.getName()+" из [npc.her] инвентаря!",
 											"",
-											"[npc.Name] stole your "+item.getName()+" from out of your inventory!",
-											"[npc1.Name] stole [npc2.namePos] "+item.getName()+" from out of [npc2.her] inventory!")
+											"[npc.Name] украл(а) твой "+item.getName()+" из твоего инвентаря!",
+											"[npc1.Name] украл(а) [npc2.namePos] "+item.getName()+" из [npc2.her] инвентаря!")
 									+ "<br/>"
 									+ caster.addItem(item, false));
 							
@@ -2136,11 +2136,11 @@ public enum Spell {
 							descriptionSB.append("<br/>"
 									+ getCastDescription(caster, target,
 											null,
-											"You stole your own "+weapon.getName()+"...",
-											"You stole [npc.namePos] "+weapon.getName()+" from out of [npc.her] inventory!",
+											"Ты украл(а) свой собственный "+weapon.getName()+"...",
+											"Ты украл [npc.namePos] "+weapon.getName()+" из инвентаря [npc.her]!",
 											"",
-											"[npc.Name] stole your "+weapon.getName()+" from out of your inventory!",
-											"[npc1.Name] stole [npc2.namePos] "+weapon.getName()+" from out of [npc2.her] inventory!")
+											"[npc.Name] украл твой "+weapon.getName()+" из твоего инвентаря!",
+											"[npc1.Name] украл [npc2.namePos] "+weapon.getName()+" из инвентаря [npc2.her]!")
 									+ "<br/>"
 									+ caster.addWeapon(weapon, false));
 							
@@ -2149,11 +2149,11 @@ public enum Spell {
 							descriptionSB.append("<br/>"
 									+ getCastDescription(caster, target,
 											null,
-											"You stole your own "+clothing.getName()+"...",
-											"You stole [npc.namePos] "+clothing.getName()+" from out of [npc.her] inventory!",
+											"Ты украл свой "+clothing.getName()+"...",
+											"Ты украл [npc.namePos] "+clothing.getName()+" из инвентаря [npc.her]!",
 											"",
-											"[npc.Name] stole your "+clothing.getName()+" from out of your inventory!",
-											"[npc1.Name] stole [npc2.namePos] "+clothing.getName()+" from out of [npc2.her] inventory!")
+											"[npc.Name] украл твой "+clothing.getName()+" из твоего инвентаря!",
+											"[npc1.Name] украл [npc2.namePos] "+clothing.getName()+" из инвентаря [npc2.her]!")
 									+ "<br/>"
 									+ caster.addClothing(clothing, false));
 						}
@@ -2163,17 +2163,17 @@ public enum Spell {
 						descriptionSB.append("<br/>"
 								+ getCastDescription(caster, target,
 										null,
-										"You stole your own "+clothingToSteal.getName()+"...",
-										"[npc.Name] lets out an embarrassed cry as you steal the "+clothingToSteal.getName()+" that [npc.sheIs] currently wearing!",
+										"Ты украл свой собственный "+clothingToSteal.getName()+"...",
+										"[npc.Name] издает смущенный крик, когда ты украл "+clothingToSteal.getName()+" который [npc.sheIs] в данный момент носит!",
 										"",
-										"You can't help but let out an embarrassed cry as [npc.name] steals the "+clothingToSteal.getName()+" that you're currently wearing!",
-										"[npc2.Name] lets out an embarrassed cry as [npc1.name] steals the "+clothingToSteal.getName()+" that [npc2.sheIs] currently wearing!")
+										"Ты не можешь сдержать смущенный крик, когда [npc.name] украл "+clothingToSteal.getName()+" который ты в данный момент носишь!",
+										"[npc2.Name] издает смущенный крик, когда [npc1.name] крадет "+clothingToSteal.getName()+" то, что [npc2.sheIs] в данный момент носит!")
 								+ "<br/>");
 						clothingToSteal.setName(target.getNameIgnoresPlayerKnowledge() + "'s " +clothingToSteal.getName());
 						descriptionSB.append(caster.addClothing(clothingToSteal, true));
 						
 					} else {
-						descriptionSB.append("<br/>[style.italicsDisabled(There's nothing to steal...)]");
+						descriptionSB.append("<br/>[style.italicsDisabled(Там нечего красть...)]");
 					}
 				}
 			}
@@ -2196,7 +2196,7 @@ public enum Spell {
 			true,
 			"Teleport",
 			"teleport",
-			"The target is teleported behind their enemies, granting a huge boost to dodge chance.",
+			"Целью является телепортация за спину своих врагов, что значительно повышает шанс уклонения.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -2207,13 +2207,13 @@ public enum Spell {
 					SpellUpgrade.TELEPORT_3),
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.ENERGY_SHIELDING, 100)), Util.newArrayListOfValues(
-					"Lasts for [style.colourGood(1 turn)]",
-					"[style.colourExcellent(Unlocks)] map teleport",
-					"Map teleport [style.colourTerrible(blocked)] by companions")) {
+					"Действует [style.colourGood(1 ход)]",
+					"[style.colourExcellent(Разблокирует)] телепорт на карте",
+					"Телепорт на карте [style.colourTerrible(заблокирован)] компаньонами")) {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Teleport behind your target.";
+			return "Телепортируйтесь за спину своей цели.";
 		}
 
 		@Override
@@ -2241,22 +2241,22 @@ public enum Spell {
 			if(caster.hasSpellUpgrade(SpellUpgrade.TELEPORT_2) && !allies.isEmpty()) {
 				descriptionSB.append(getCastDescription(caster, target,
 						Util.newArrayListOfValues(
-								"Through a thousand dimensions, and across a million worlds, have I wandered! Distance and time are nothing more than the insignificant trappings of the ignorant masses!"),
-						"With a quick, cutting motion from one of your [pc.hands], you teleport both yourself and your allies behind your enemies!",
-						"With a quick, cutting motion from one of your [pc.hands], you teleport both yourself and your allies behind your enemies!",
-						"With a quick, cutting motion from one of [npc.her] [npc.hands], [npc.name] teleports both [npc.herself] and [npc.her] allies behind [npc.her] enemies!",
-						"With a quick, cutting motion from one of [npc.her] [npc.hands], [npc.name] teleports both [npc.herself] and [npc.her] allies behind [npc.her] enemies!",
-						"With a quick, cutting motion from one of [npc.her] [npc.hands], [npc.name] teleports both [npc.herself] and [npc.her] allies behind [npc.her] enemies!"));
+								"Через тысячу измерений и через миллион миров, я бродю! Расстояние и время - это лишь незначительные атрибуты невежественных масс!"),
+						"С быстрым, резким движением одной из ваших [pc.hands], вы телепортируете себя и своих союзников за спину своих врагов!",
+						"С быстрым, резким движением одного из ваших [pc.hands], вы телепортируете себя и своих союзников за спину врагов!",
+						"С быстрым, резким движением одного из [npc.her] [npc.hands], [npc.name] телепортирует обоих [npc.herself] и [npc.her] союзников за спину [npc.her] врагов!",
+						"С быстрым, резким движением одного из [npc.her] [npc.hands], [npc.name] телепортирует обоих [npc.herself] и [npc.her] союзников за спину [npc.her] врагов!",
+						"С быстрым, резким движением одного из [npc.her] [npc.hands], [npc.name] телепортирует обоих [npc.herself] и [npc.her] союзников за спину [npc.her] врагов!"));
 				
 			} else {
 				descriptionSB.append(getCastDescription(caster, target,
 						Util.newArrayListOfValues(
-								"Through a thousand dimensions, and across a million worlds, have I wandered! Distance and time are nothing more than the insignificant trappings of the ignorant masses!"),
-						"With a quick, cutting motion from one of your [pc.hands], you teleport behind your enemies!",
-						"With a quick, cutting motion from one of your [pc.hands], you teleport [npc.name] behind [npc.her] enemies!",
-						"With a quick, cutting motion from one of [npc.her] [npc.hands], [npc.name] teleports behind [npc.her] enemies!",
-						"With a quick, cutting motion from one of [npc.her] [npc.hands], [npc.name] teleports you behind your enemies!",
-						"With a quick, cutting motion from one of [npc.her] [npc.hands], [npc.name] teleports [npc2.name] behind [npc2.her] enemies!"));
+								"Через тысячу измерений и через миллион миров, я скитался! Расстояние и время - это не более чем незначительные атрибуты невежественных масс!"),
+						"С быстрым, резким движением одного из ваших [pc.hands], вы телепортируете себя за спину врагов!",
+						"С быстрым, резким движением одного из ваших [pc.hands], вы телепортируете [npc.name] за спину [npc.her] врагов!",
+						"С быстрым, резким движением одного из [npc.her] [npc.hands], [npc.name] телепортирует за спину [npc.her] врагов!",
+						"С быстрым, резким движением одного из [npc.her] [npc.hands], [npc.name] телепортирует вас за спину врагов!",
+						"С быстрым, резким движением одного из [npc.her] [npc.hands], [npc.name] телепортирует [npc2.name] за спину [npc2.her] врагов!"));
 			}
 			
 			// If attack hits, apply damage and effects:
@@ -2293,7 +2293,7 @@ public enum Spell {
 			false,
 			"Lilith's Command",
 			"liliths_command",
-			"Imbues the caster's words with the power of Lilith herself, forcing the target to instantly submit.",
+			"Наполняет слова заклинателя силой самой Лилит, заставляя цель мгновенно подчиниться.",
 			0,
 			DamageVariance.LOW,
 			400,
@@ -2303,11 +2303,11 @@ public enum Spell {
 					SpellUpgrade.LILITHS_COMMAND_2,
 					SpellUpgrade.LILITHS_COMMAND_3),
 			null,
-			Util.newArrayListOfValues("[style.colourGood(25%)] chance for target to [style.colourExcellent(instantly submit)]")) {
+			Util.newArrayListOfValues("[style.colourGood(25%)] шанс, что цель [style.colourExcellent(мгновенно подчинится)]")) {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Force your target to submit.";
+			return "Заставьте вашу цель подчиниться.";
 		}
 		
 		@Override
@@ -2318,12 +2318,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Through me, is Lilith made manifest! Across the gulf of time and space, her command is infinite, and does order you to obey!"),
+													"Через меня, Лилит становится явной! Через пропасть времени и пространства, её власть безгранична, и она приказывает вам подчиниться!"),
 											"",
-											"Drawing an immense amount of power from your arcane aura, you project the words of Lilith herself into the mind of [npc.name], ordering [npc.herHim] to submit.",
+											"Зачерпывая огромную силу из вашей арканой ауры, вы проецируете слова самой Лилит в разум [npc.name], приказывая [npc.herHim] подчиниться.",
 											"",
-											"Drawing an immense amount of power from [npc.her] arcane aura, [npc.name] projects the words of Lilith herself into your mind, ordering you to submit!",
-											"Drawing an immense amount of power from [npc1.her] arcane aura, [npc1.name] projects the words of Lilith herself into [npc2.namePos] mind, ordering [npc2.herHim] to submit!"));
+											"Зачерпывая огромную силу из арканой ауры [npc.her], [npc.name] проецирует слова самой Лилит в ваш разум, приказывая вам подчиниться!",
+											"Зачерпывая огромную силу из арканой ауры [npc1.her], [npc1.name] проецирует слова самой Лилит в разум [npc2.namePos], приказывая [npc2.herHim] подчиниться!"));
 			
 			// If attack hits, apply damage and effects:
 			if (isHit) {
@@ -2349,26 +2349,26 @@ public enum Spell {
 					if(target.isPlayer()) {
 						descriptionSB.append(
 								"<br/>"
-								+ "You find yourself standing face-to-face with the queen of all demons herself."
-								+ " Snapping her fingers, Lilith points to the floor, and as she does so, you find yourself dropping to your knees in front of her."
-								+ " Eager to please her, you look up into Lilith's eyes as you [pc.moan], [pc.speech(Please, Lilith... Do what you want with me... I'm your loyal slave...)]");
+								+ "Вы оказываетесь лицом к лицу с самой королевой всех демонов."
+								+ "Щелкая пальцами, Лилит указывает на пол, и, делая это, вы находите себя на коленях перед ней."
+								+ " Желая угодить ей, ты смотрю в глаза Лилит, когда ты [pc.moan], [pc.speech(Пожалуйста, Лилит... Делай со мной, что хочешь... Я твой верный раб...)]");
 						
 					} else {
 						descriptionSB.append(UtilText.parse(target,
 								"<br/>"
-								+ "[npc.Name] sinks to [npc.her] knees as the effect of Lilith's Command completely overwhelms [npc.herHim]."
-										+ " Letting out [npc.a_moan+], [npc.she] starts touching [npc.herself] as [npc.she] pleads, [npc.speech(Please, Lilith... Do what you want with me... I'm your loyal slave...)]"));
+								+ "[npc.Name] опускается на [npc.her] колени, когда эффект заклинания Лилит полностью овладевает [npc.herHim]."
+										+ " Выдавая [npc.a_moan+], [npc.she] начинает трогать [npc.herself], когда [npc.she] умоляет, [npc.speech(Пожалуйста, Лилит... Делай со мной, что хочешь... Я твой верный раб...)]"));
 					}
 					
 				} else {
 					if(target.isPlayer()) {
 						descriptionSB.append(
-								"<br/>You shake your head and jump back as you resist the effects of Lilith's Command!");
+								"<br/> Ты качаешь головой и отпрыгиваешь назад, когда ты сопротивляешься эффектам заклинания Лилит!");
 						
 					} else if(target.isVulnerableToArcaneStorm() || !caster.hasSpellUpgrade(SpellUpgrade.LILITHS_COMMAND_2)) {
 						descriptionSB.append(UtilText.parse(target, "<br/>[npc.Name] shakes [npc.her] head and jumps back as [npc.she] resists the effects of Lilith's Command!"));
 					} else {
-						descriptionSB.append(UtilText.parse(target, "<br/>[npc.Name] grins as [npc.she] taunts, [npc.speech(That cheap trick isn't going to affect [npc.a_race] like me!)]"));
+						descriptionSB.append(UtilText.parse(target, "<br/>[npc.Name] хихикает, когда [npc.she] дразнит, [npc.speech(Этот дешевый трюк не повлияет на [npc.a_race], как на меня!)]"));
 					}
 				}
 			}
@@ -2386,7 +2386,7 @@ public enum Spell {
 			false,
 			"Elemental Arcane",
 			"elemental_arcane",
-			"Summon forth your elemental in a physical form by binding them to the school of Arcane.",
+			"Призови своего элемента в физической форме, связав его со школой Аркана.",
 			0,
 			DamageVariance.LOW,
 			200,
@@ -2396,34 +2396,34 @@ public enum Spell {
 					SpellUpgrade.ELEMENTAL_ARCANE_2,
 					SpellUpgrade.ELEMENTAL_ARCANE_3A,
 					SpellUpgrade.ELEMENTAL_ARCANE_3B),
-			null, Util.newArrayListOfValues("Summons [style.colourArcane(Elemental)] in form of [style.colourArcane(Arcane)]")) {
+			null, Util.newArrayListOfValues("Призывает [style.colourArcane(Элемент)] в форме [style.colourArcane(Аркана)]")) {
 		@Override
 		public Value<Boolean, String> getSpellCastOutOfCombatDescription(GameCharacter owner, GameCharacter target) {
 			if(!owner.hasSpell(this)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do]n't know this spell, so cannot cast it!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.do] не знает этого заклинания, поэтому не может его использовать!"));
 				
 			} else if(owner.isCaptive()) {
-				return new Value<>(false, UtilText.parse(owner, "Spells cannot be cast while in captivity!"));
+				return new Value<>(false, UtilText.parse(owner, "Заклинания не могут быть использованы, пока вы в плену!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "While in combat, spells can only be cast as a combat move!"));
+				return new Value<>(false, UtilText.parse(owner, "Во время боя заклинания могут быть использованы только как боевой ход!"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_ARCANE?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "Spells can only be cast in a neutral scene!");
+				return new Value<>(false, "Заклинания могут быть использованы только в нейтральной сцене!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner)) {
-				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] at least <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] in order to cast this spell!"));
+				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
 				
 			} else {
-				String description = owner.isPlayer()?"Summon your elemental by binding it to the school of Arcane!":"Get [npc.name] to summon [npc.her] elemental by binding it to the school of Arcane!";
-				String cost = " This will cost <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
+				String description = owner.isPlayer()?"Призовите ваше элементальное существо, связав его со школой Аркана!":"Заставьте [npc.name] призвать [npc.her] элементальное существо, связав его со школой Аркана!";
+				String cost = "Это будет стоить <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)]!";
 				return new Value<>(true, UtilText.parse(owner, description+"<br/>"+cost));
 			}
 		}
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Summons your elemental in the form of arcane energy.";
+			return "Призывает ваше элементальное существо в форме арканой энергии.";
 		}
 		@Override
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -2446,13 +2446,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of devil and demon, I summon forth the arcane itself! Answer your [npc.master]'s call, [npc2.name], and, by the conquest of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May the arcane itself be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the arcane be mine, and the power within me be unleashed! The spirit of arcane itself, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему обряду дьявола и демона, я призываю Аркана! Ответь на зов твоего [npc.master], [npc2.name], и, покорив миллион измерений, будь подчинен моей воле!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут развязаны! Пусть Аркана сама будет в моем распоряжении, и, через наш вечный договор, я призываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть Аркана будет моей, и сила во мне будет развязана! Дух Аркана сам, твой [npc.master] зовет! Послушай и будь призвана, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a flash of purple arcane lightning, you bind your elemental, [npc2.name], to the school of Arcane!"
-									:"With a flash of purple arcane lightning, [npc1.name] binds [npc1.her] elemental, [npc2.name], to the school of Arcane!")));
+									?"С вспышкой фиолетовой арканической молнии, ты привязываешь твоего элементаля, [npc2.name], к школе Аркана!"
+									:"С вспышкой фиолетовой арканической молнии, [npc1.name] привязывает твоего элементаля, [npc1.her], [npc2.name], к школе Аркана!")));
 				
 			} else {
 				//caster.addCompanion(caster.getElemental());
@@ -2460,13 +2460,13 @@ public enum Spell {
 								(caster.hasTraitActivated(Perk.CHUUNI)
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
-											"[npc.speech(By the ancient rite of devil and demon, I summon forth the arcane itself! Answer your [npc.master]'s call, [npc2.name], and, by the conquest of a million dimensions, be bound to my will!)] ",
-											"[npc.speech(May the powers sealed away within me for a thousand years now be unleashed! May the arcane itself be at my command, and, through our eternal contract, I summon you forth, [npc2.name]!)] ",
-											"[npc.speech(Let the arcane be mine, and the power within me be unleashed! The spirit of arcane itself, your [npc.master] calls! Obey, and be summoned forth, [npc2.name]!)] "))
+											"[npc.speech(По древнему обряду дьявола и демона, я призываю Аркана! Ответь на зов твоего [npc.master], [npc2.name], и, покорив миллион измерений, будь подчинен моей воле!)] ",
+											"[npc.speech(Пусть силы, запечатанные во мне на тысячу лет, теперь будут развязаны! Пусть Аркана сама будет в моем распоряжении, и, через наш вечный договор, я призываю тебя, [npc2.name]!)] ",
+											"[npc.speech(Пусть Аркана будет моей, и сила во мне будет развязана! Дух Аркана сам, твой [npc.master] зовет! Послушай и будь призвана, [npc2.name]!)] "))
 										:"")
 								+ (caster.isPlayer()
-									?"With a flash of purple arcane lightning, you summon forth your elemental, [npc2.name], by binding [npc2.herHim] to the school of Arcane!"
-									:"With a flash of purple arcane lightning, [npc1.name] summons forth [npc1.her] elemental, [npc2.name], by binding [npc2.herHim] to the school of Arcane!")));
+									?"С вспышкой фиолетовой арканической молнии, ты призываешь своего элементаля, [npc2.name], привязывая [npc2.herHim] к школе Аркана!"
+									:"С вспышкой фиолетовой арканой молнии, [npc1.name] призывает [npc1.her] элементаль, [npc2.name], связывая [npc2.herHim] со школой Аркана!")));
 				
 				if(Main.game.isInCombat()) {
 					caster.getElemental().setLocation(caster, false);
@@ -2493,7 +2493,7 @@ public enum Spell {
 			false,
 			"Witch's Seal",
 			"spell_witch_seal",
-			"Places an arcane seal upon the target, completely preventing them from moving.",
+			"Накладывает арканный знак на цель, полностью лишая её возможности двигаться.",
 			0,
 			DamageVariance.NONE,
 			80,
@@ -2501,7 +2501,7 @@ public enum Spell {
 			null,
 			null,
 			Util.newArrayListOfValues(
-					"[style.colourExcellent(Seals)] the target for [style.colourTerrible(-3)] [style.colourActionPoints(action points)]!")) {
+					"[style.colourExcellent(Seals)] цель на [style.colourTerrible(-3)] [style.colourActionPoints(action points)]!")) {
 		
 		@Override
 		public boolean isSpellBook() {
@@ -2510,7 +2510,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Seals for [style.colourTerrible(-3)] action points!";
+			return "Накладывает знаки на [style.colourTerrible(-3)] действия!";
 		}
 		
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -2521,12 +2521,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Let the seal which once contained my arcane power now obey my command! Render unto my foe the debilitating darkness of absolute submission, and bind them to their fate!"),
+													"Пусть знак, который когда-то содержал мою арканую силу, теперь подчиняется моей воле! Наложи на моего врага парализующую тьму абсолютного подчинения и привяжи его к его судьбе!"),
 										"",
-										"Concentrating on the arcane power within your broomstick, you summon forth a powerful seal, which traps [npc.name] in place!",
+										"Сосредоточившись на арканой силе в твоей метле, ты призываешь мощный знак, который захватывает [npc.name] на месте!",
 										"",
-										"Concentrating on the arcane power within [npc.her] broomstick, [npc.name] summons forth a powerful seal, which traps you in place!",
-										"Concentrating on the arcane power within [npc1.her] broomstick, [npc1.name] [npc.verb(summon)] forth a powerful seal, which traps [npc2.name] in place!"));
+										"Сосредоточившись на арканой силе в [npc.her] метле, [npc.name] призывает мощный знак, который захватывает тебя на месте!",
+										"Сосредоточившись на арканой силе в [npc1.her] метле, [npc1.name] [npc.verb(summon)] мощный знак, который захватывает [npc2.name] на месте!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -2548,14 +2548,14 @@ public enum Spell {
 			true,
 			"Witch's Charm",
 			"spell_witch_charm",
-			"Places an arcane enchantment upon the target, causing them to appear irresistibly beautiful to anyone who looks upon them.",
+			"Накладывает арканный заклятие на цель, заставляя её казаться неотразимо красивой для всех, кто на неё смотрит.",
 			0,
 			DamageVariance.NONE,
 			40,
 			Util.newHashMapOfValues(new Value<AbstractStatusEffect, Integer>(StatusEffect.WITCH_CHARM, 5)),
 			null,
 			Util.newHashMapOfValues(
-					new Value<>(Attribute.DAMAGE_LUST, 25)), Util.newArrayListOfValues("Lasts for [style.colourGood(5 turns)]")) {
+					new Value<>(Attribute.DAMAGE_LUST, 25)), Util.newArrayListOfValues("Действует в течение [style.colourGood(5 ходов)]")) {
 		
 		@Override
 		public boolean isSpellBook() {
@@ -2564,7 +2564,7 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Increases seduction damage.";
+			return "Увеличивает урон от соблазнения.";
 		}
 		
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -2575,12 +2575,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Let reality itself be warped by my ultimate power! All who gaze upon my visage be bewitched, and see their heart's true desire!"),
-										"Concentrating on the arcane power within your broomstick, you cast a bewitching charm upon yourself!",
-										"Concentrating on the arcane power within your broomstick, you cast a bewitching charm upon [npc.name]!",
-										"Concentrating on the arcane power within [npc.her] broomstick, [npc.name] casts a bewitching charm upon [npc.herself]!",
-										"Concentrating on the arcane power within [npc.her] broomstick, [npc.name] casts a bewitching charm upon you!",
-										"Concentrating on the arcane power within [npc1.her] broomstick, [npc.name] casts a bewitching charm upon [npc2.name]!"));
+													"Пусть сама реальность будет искажена моей высшей силой! Все, кто смотрит на мое лицо, будут очарованы, и увидят истинное желание своего сердца!"),
+										"Сосредоточившись на арканической силе в твоей метле, ты накладываешь на себя очаровывающий заклятье!",
+										"Сосредоточившись на арканической силе в твоей метле, ты накладываешь на [npc.name] очаровывающий заклятье!",
+										"Сосредоточившись на арканической силе в метле [npc.her], [npc.name] накладывает очаровывающий заклятье на [npc.herself]!",
+										"Сосредоточившись на арканической силе в метле [npc.her], [npc.name] накладывает очаровывающий заклятье на тебя!",
+										"Сосредоточившись на арканической силе в метле [npc1.her], [npc.name] накладывает очаровывающий заклятье на [npc2.name]!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -2604,7 +2604,7 @@ public enum Spell {
 			false,
 			"Siren's Call",
 			"dark_siren_sirens_call",
-			"Unleashes a reverberating scream, the power of which causes the ground to split open. From this fissure, poisonous vapours rise to choke and stifle all nearby enemies.",
+			"Освобождает реверберационный крик, сила которого заставляет землю расколоться. Из этой трещины поднимаются ядовитые пары, которые задыхают и подавляют всех близлежащих врагов.",
 			10,
 			DamageVariance.NONE,
 			200,
@@ -2612,8 +2612,8 @@ public enum Spell {
 			null,
 			null,
 			Util.newArrayListOfValues(
-					"<b>25</b> [style.colourPoison(Poison Damage)] per turn for [style.colourGood(10 turns)]",
-					"Affects [style.colourExcellent(all enemies)]")) {
+					"<b>25</b> [style.colourPoison(Poison Damage)] за ход за [style.colourGood(10 ходов)]",
+					"Поражает [style.colourExcellent(всех врагов)]")) {
 
 		@Override
 		public boolean isSpellBook() {
@@ -2634,12 +2634,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Powers beneath the earth, obey your [npc.master]'s command! Rend unto the end of time a chasm of darkness, from which the suffocating miasma of toxic dimensions may pour forth!"),
+													"Силы под землей, послушайтесь приказа [npc.master]! Разрывайте до конца времен пропасть тьмы, из которой может вырваться удушливый миазм токсичных измерений!"),
 										"",
-										"Concentrating on the immense arcane power within your scythe, you smite down into the ground beneath [npc.namePos] [npc.feet], splitting the earth and summoning forth poison fumes!",
+										"Сосредоточившись на огромной арканой силе в вашем серпе, вы ударяете вниз в землю под [npc.namePos] [npc.feet], разрывая землю и вызывая ядовитые испарения!",
 										"",
-										"Concentrating on the immense arcane power within [npc.her] scythe, [npc.name] smites down into the ground beneath your [pc.feet], splitting the earth and summoning forth poison fumes!",
-										"Concentrating on the immense arcane power within [npc.her] scythe, [npc.name] smites down into the ground beneath [npc2.namePos] [npc2.feet], splitting the earth and summoning forth poison fumes!"));
+										"Сосредоточившись на огромной арканой силе в [npc.her] серпе, [npc.name] ударяет вниз в землю под вашим [pc.feet], разрывая землю и вызывая ядовитые испарения!",
+										"Сосредоточившись на огромной арканой силе в [npc.her] серпе, [npc.name] ударяет вниз в землю под [npc2.namePos] [npc2.feet], разрывая землю и вызывая ядовитые испарения!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, damage, isHit, isCritical));
 			
@@ -2670,7 +2670,7 @@ public enum Spell {
 			false,
 			"Lightning Discharge",
 			"arcane_lightning_sphere_discharge",
-			"By drawing a small amount of aura from its wielder, the arcane lightning globe can discharge a burst of arousing arcane lightning, hitting everyone, [style.colourBad(including the caster)], in its immediate vicinity.",
+			"Забирая небольшое количество ауры от своего владельца, арканный молниевой шар может выпустить вспышку возбуждающей арканной молнии, поражая всех, [style.colourBad(включая заклинателя)], в своей непосредственной близости.",
 			10,
 			DamageVariance.MEDIUM,
 			50,
@@ -2678,9 +2678,9 @@ public enum Spell {
 			null,
 			null,
 			Util.newArrayListOfValues(
-					"Affects [style.colourExcellent(all enemies)]",
-					"Affects [style.colourTerrible(the caster)]",
-					"Affects [style.colourTerrible(all allies)]")) {
+					"Поражает [style.colourExcellent(всех врагов)]",
+					"Поражает [style.colourTerrible(заклинателя)]",
+					"Поражает [style.colourTerrible(всех союзников, включая заклинателя)]")) {
 
 		@Override
 		public int getAPCost() {
@@ -2699,13 +2699,13 @@ public enum Spell {
 		
 		@Override
 		public String getBasicEffectsString(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies) {
-			return "Deals [style.colourDmgLust("
+			return "Наносит [style.colourDmgLust("
 					+Attack.getMinimumSpellDamage(caster, target, getDamageType(), this.getDamage(caster), this.getDamageVariance())
 					+"-"
 					+Attack.getMaximumSpellDamage(caster, target, getDamageType(), this.getDamage(caster), this.getDamageVariance())
 					+ " " +damageType.getName()
 					+ ")]"
-					+ " damage to [style.colourExcellent(all enemies)] <i>and</i> [style.colourTerrible(all allies, including the caster)].";
+					+ "ущерб [style.colourExcellent(всем врагам)] <i>и</i> [style.colourTerrible(всем союзникам, включая заклинателя)].";
 		}
 		
 		public String applyEffect(GameCharacter caster, GameCharacter target, List<GameCharacter> enemies, List<GameCharacter> allies, boolean isHit, boolean isCritical) {
@@ -2715,12 +2715,12 @@ public enum Spell {
 			
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
-													"Sealed away for countless millennia, this infinite cosmic power shall now be unleashed! Witness the arcane maelstrom I call forth, then submit to your fate as my lust-crazed puppet!"),
-										"Channelling some of your aura into the arcane lightning globe, you force it to unleash a portion of its power in the form of a lightning discharge!",
-										"Channelling some of your aura into the arcane lightning globe, you force it to unleash a portion of its power in the form of a lightning discharge!",
-										"Channelling some of [npc.her] aura into the arcane lightning globe, [npc.name] [npc.verb(force)] it to unleash a portion of its power in the form of a lightning discharge!",
-										"Channelling some of [npc.her] aura into the arcane lightning globe, [npc.name] [npc.verb(force)] it to unleash a portion of its power in the form of a lightning discharge!",
-										"Channelling some of [npc.her] aura into the arcane lightning globe, [npc.name] [npc.verb(force)] it to unleash a portion of its power in the form of a lightning discharge!"));
+													"Запечатанная на долгие тысячелетия, эта бесконечная космическая сила теперь будет развязана! Свидетельствуй о том, как я вызываю аркана, а затем подчиняюсь своей судьбе как творец, одержимый похотью!"),
+										"Направляя часть твоей ауры в арканный шарик молнии, ты заставляешь его высвободить часть своей силы в виде разряда молнии!",
+										"Направляя часть твоей ауры в арканный шарик молнии, ты заставляешь его высвободить часть своей силы в виде разряда молнии!",
+										"Направляя часть ауры [npc.her] в арканный шарик молнии, [npc.name] [npc.verb(force)] заставляешь его высвободить часть своей силы в виде разряда молнии!",
+										"Направляя часть ауры [npc.her] в арканный шарик молнии, [npc.name] [npc.verb(force)] заставляешь его высвободить часть своей силы в виде разряда молнии!",
+										"Направляя часть ауры [npc.her] в арканный шарик молнии, [npc.name] [npc.verb(force)] заставляешь его высвободить часть своей силы в виде разряда молнии!"));
 			
 			// If attack hits, apply damage. Status effect always applies.:
 			if (isHit) {
@@ -2760,7 +2760,7 @@ public enum Spell {
 			false,
 			"Lightning Overcharge",
 			"arcane_lightning_sphere_overcharge",
-			"By drawing a huge amount of aura from its wielder, the arcane lightning globe can discharge a massive burst of arousing arcane lightning, hitting everyone, [style.colourBad(including the caster)], in its immediate vicinity.",
+			"Забирая огромное количество ауры у своего владельца, арканный шарик молнии может высвободить огромный заряд возбуждающей арканной молнии, поражая всех, [style.colourBad(включая заклинателя)], в непосредственной близости.",
 			30,
 			DamageVariance.HIGH,
 			250,
@@ -2768,9 +2768,9 @@ public enum Spell {
 			null,
 			null,
 			Util.newArrayListOfValues(
-					"Affects [style.colourExcellent(all enemies)]",
-					"Affects [style.colourTerrible(the caster)]",
-					"Affects [style.colourTerrible(all allies)]")) {
+					"Поражает [style.colourExcellent(всех врагов)]",
+					"Поражает [style.colourTerrible(заклинателя)]",
+					"Поражает [style.colourTerrible(всех союзников)]")) {
 
 		@Override
 		public int getAPCost() {
@@ -2967,11 +2967,11 @@ public enum Spell {
 			descriptionSB.append(getCastDescription(caster, target,
 											Util.newArrayListOfValues(
 													"Sealed away for countless millennia, this infinite cosmic power shall now be unleashed! Witness the arcane apocalypse I call forth, then submit to your fate as my lust-crazed puppet!"),
-													"After taking a moment to focus your aura, you summon forth an almighty arcane lightning superbolt, before launching it directly at yourself!",
-													"After taking a moment to focus your aura, you summon forth an almighty arcane lightning superbolt, before launching it directly at [npc.name]!",
-													"After taking a moment to focus [npc.her] aura, [npc.name] [npc.verb(summon)] forth an almighty arcane lightning superbolt, before launching it directly at [npc.herself]!",
-													"After taking a moment to focus [npc.her] aura, [npc.name] [npc.verb(summon)] forth an almighty arcane lightning superbolt, before launching it directly at you!",
-													"After taking a moment to focus [npc.her] aura, [npc.name] [npc.verb(summon)] forth an almighty arcane lightning superbolt, before launching it directly at [npc2.name]!"));
+													"После того, как ты сосредоточишься на своей ауре, ты призываешь могущественное заклинание молнии, прежде чем запустить его прямо в себя!",
+													"После того, как ты сосредоточишься на своей ауре, ты призываешь могущественное заклинание молнии, прежде чем запустить его прямо в [npc.name]!",
+													"После того, как ты сосредоточишься на ауре [npc.her], [npc.name] [npc.verb(summon)] призывает могущественное заклинание молнии, прежде чем запустить его прямо в [npc.herself]!",
+													"После того, как ты сосредоточишься на ауре [npc.her], [npc.name] [npc.verb(summon)] призывает могущественное заклинание молнии, прежде чем запустить его прямо в тебя!",
+													"После того, как ты сосредоточишься на ауре [npc.her], [npc.name] [npc.verb(summon)] призывает могущественное заклинание молнии, прежде чем запустить его прямо в [npc2.name]!"));
 			
 			// If attack hits, apply damage. Status effect always applies.:
 			if (isHit) {
@@ -3300,23 +3300,23 @@ public enum Spell {
 			if (caster.isPlayer()) {
 				if (isCritical) {
 					if(!isHit) {
-						damageCostDescriptionSB.append("[style.italicsBad(You missed!)]");
+						damageCostDescriptionSB.append("[style.italicsBad(Ты промахнулся!)]");
 					} else {
 						if(damage>0) {
 							damageCostDescriptionSB.append(UtilText.parse(target,
-									"You [style.boldExcellent(critically)] hit [npc.name] for <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
+									"Ты [style.boldExcellent(критично)] поразишь [npc.name] на <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
 						}
 						if(appliesEffects) {
-							damageCostDescriptionSB.append(" You [style.boldExcellent(critically)] cast the spell, doubling its duration!");
+							damageCostDescriptionSB.append(" Ты [style.boldExcellent(критично)] запустишь заклинание, удвоив его продолжительность!");
 						}
 					}
 				} else {
 					if(!isHit) {
-						damageCostDescriptionSB.append("[style.italicsBad(You missed!)]");
+						damageCostDescriptionSB.append("[style.italicsBad(Вы промахнулись!)]");
 					} else {
 						if(damage>0) {
 							damageCostDescriptionSB.append(UtilText.parse(target,
-									"You hit [npc.name] for <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
+									"Вы поразили [npc.name] на <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
 						}
 					}
 				}
@@ -3324,23 +3324,23 @@ public enum Spell {
 			} else {
 				if (isCritical) {
 					if(!isHit) {
-						damageCostDescriptionSB.append(UtilText.parse(caster, "[style.italicsBad([npc1.Name] missed!)]"));
+						damageCostDescriptionSB.append(UtilText.parse(caster, "[style.italicsBad([npc1.Name] промахнулся!)]"));
 					} else {
 						if(damage>0) {
 							damageCostDescriptionSB.append(UtilText.parse(caster, target,
-									"[npc1.Name] [style.boldExcellent(critically)] hits " + (target.isPlayer()?"you":"[npc2.name]")+" for <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
+									"[npc1.Name] [style.boldExcellent(критически)] поразил " + (target.isPlayer()?"you":"[npc2.name]")+" for <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
 						}
 						if(appliesEffects) {
-							damageCostDescriptionSB.append(UtilText.parse(caster, " [npc.Name] [style.boldExcellent(critically)] casts the spell, doubling its duration!"));
+							damageCostDescriptionSB.append(UtilText.parse(caster, " [npc.Name] [style.boldExcellent(критически)] запустил заклинание, удвоив его продолжительность!"));
 						}
 					}
 				} else {
 					if(!isHit) {
-						damageCostDescriptionSB.append(UtilText.parse(caster, "[style.italicsBad([npc1.Name] missed!)]"));
+						damageCostDescriptionSB.append(UtilText.parse(caster, "[style.italicsBad([npc1.Name] промахнулся!)]"));
 					} else {
 						if(damage>0) {
 							damageCostDescriptionSB.append(UtilText.parse(caster, target,
-									"[npc1.Name] hits " + (target.isPlayer()?"you":"[npc2.name]")+" for <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
+									"[npc1.Name] поразил " + (target.isPlayer()?"you":"[npc2.name]")+" for <b>" + damage + "</b> " + damageType.getMultiplierAttribute().getColouredName("b") + "!"));
 						}
 					}
 				}
@@ -3364,8 +3364,8 @@ public enum Spell {
 			damageCostDescriptionSB.append(
 					"<br/>"+UtilText.parse(target,
 								(!target.isPlayer()
-									? "[npc.Name] is now "
-									: "You are now ")
+									? "[npc.Name] теперь "
+									: "Вы теперь ")
 								+(this.isBeneficial()
 										?"benefiting from "
 										:"suffering from ")));
@@ -3374,7 +3374,7 @@ public enum Spell {
 			for (Entry<AbstractStatusEffect, Integer> seEntry : this.getStatusEffects(caster, target, isCritical).entrySet()) {
 				if (i != 0) {
 					if (i == statusEffects.size() - 1) {
-						damageCostDescriptionSB.append(" and ");
+						damageCostDescriptionSB.append(" и ");
 					} else {
 						damageCostDescriptionSB.append(", ");
 					}
@@ -3382,9 +3382,9 @@ public enum Spell {
 				damageCostDescriptionSB.append("<b>" + seEntry.getValue() * (caster.isPlayer() && caster.hasTrait(Perk.JOB_MUSICIAN, true)?2:1) * (isCritical?2:1)
 						+ "</b> turns"
 						+(caster.hasTrait(Perk.JOB_MUSICIAN, true)
-								?" ([style.boldExcellent(doubled)] from <b style='color:"+Perk.JOB_MUSICIAN.getColour().toWebHexString()+";'>"+Perk.JOB_MUSICIAN.getName(caster)+"</b>)"
+								?" ([style.boldОтличный(удвоенный)] от <b style='color:"+Perk.JOB_MUSICIAN.getColour().toWebHexString()+";'>"+Perk.JOB_MUSICIAN.getName(caster)+"</b>)"
 								:"")
-						+ " of <b style='color:" + seEntry.getKey().getColour().toWebHexString() + ";'>" + seEntry.getKey().getName(target) + "</b>");
+						+ " из <b style='color:" + seEntry.getKey().getColour().toWebHexString() + ";'>" + seEntry.getKey().getName(target) + "</b>");
 				i++;
 			}
 			damageCostDescriptionSB.append(".");
@@ -3399,8 +3399,8 @@ public enum Spell {
 		damageCostDescriptionSB.append(
 				"<br/>"+UtilText.parse(target,
 							(!target.isPlayer()
-								? "[npc.She] is now "
-								: "You are now ")
+								? "[npc.She] теперь "
+								: "Ты теперь ")
 							+(beneficial
 									?"benefiting from "
 									:"suffering from ")));
@@ -3409,12 +3409,12 @@ public enum Spell {
 		for (Entry<AbstractStatusEffect, Integer> seEntry : statusEffects.entrySet()) {
 			if (i != 0) {
 				if (i == statusEffects.size() - 1) {
-					damageCostDescriptionSB.append(" and ");
+					damageCostDescriptionSB.append(" и ");
 				} else {
 					damageCostDescriptionSB.append(", ");
 				}
 			}
-			damageCostDescriptionSB.append("<b>" + seEntry.getValue() + "</b> turns of <b style='color:" + seEntry.getKey().getColour().toWebHexString() + ";'>" + seEntry.getKey().getName(target) + "</b>");
+			damageCostDescriptionSB.append("<b>" + seEntry.getValue() + "</b> раундов <b style='color:" + seEntry.getKey().getColour().toWebHexString() + ";'>" + seEntry.getKey().getName(target) + "</b>");
 			i++;
 		}
 		damageCostDescriptionSB.append(".");
@@ -3424,10 +3424,10 @@ public enum Spell {
 
 	protected String getCostDescription(GameCharacter caster, float cost) {
 		if(cost<0) {
-			return "<br/>Casting this spell cost "+(caster.isPlayer()?"you":UtilText.parse(caster, "[npc.name]"))+" <b>"
+			return "<br/>Зачатие этого заклинания стоит "+(caster.isPlayer()?"you":UtilText.parse(caster, "[npc.name]"))+" <b>"
 					+ -cost + "</b> <b style='color:" + Attribute.HEALTH_MAXIMUM.getColour().toWebHexString() + ";'>"+Attribute.HEALTH_MAXIMUM.getName()+"</b>!</b>";
 		} else {
-			return "<br/>Casting this spell cost "+(caster.isPlayer()?"you":UtilText.parse(caster, "[npc.name]"))+" <b>"
+			return "<br/>Зачатие этого заклинания стоит "+(caster.isPlayer()?"you":UtilText.parse(caster, "[npc.name]"))+" <b>"
 					+ cost + "</b> <b style='color:" + Attribute.MANA_MAXIMUM.getColour().toWebHexString() + ";'>aura</b>!</b>";
 		}
 	}
@@ -3943,7 +3943,7 @@ public enum Spell {
     		predictionSB.append("<br/>This will cost <b style='color:"+PresetColour.ATTRIBUTE_HEALTH.toWebHexString()+";'>"+Units.round((-Main.combat.getManaBurnStack().get(source).peek()), 1)+" "+Attribute.HEALTH_MAXIMUM.getName()+"</b>"
     				+ " ([style.colourFire("+StatusEffect.FIRE_MANA_BURN.getName(source)+")]).");
     	} else {
-    		predictionSB.append("<br/>This will cost <b style='color:"+PresetColour.ATTRIBUTE_MANA.toWebHexString()+";'>"+this.getModifiedCost(source)+" aura</b>.");
+    		predictionSB.append("<br/>Это будет стоить <b style='color:"+PresetColour.ATTRIBUTE_MANA.toWebHexString()+";'>"+this.getModifiedCost(source)+" aura</b>.");
     	}
     	
         predictionSB.append("<br/><i>"+getBasicEffectsString(source, target, enemies, allies)+"</i>");
@@ -3959,12 +3959,12 @@ public enum Spell {
 		sb.append(this.applyEffect(source, target, enemies, allies, true, isCrit));
 		
 		if(isCrit && !this.isBeneficial() && source.hasPerkAnywhereInTree(Perk.ARCANE_CRITICALS)) {
-			sb.append(UtilText.parse(source, "<br/>[npc.NamePos] [style.boldExcellent(critical)] spell applies [style.boldArcane(arcane weakness)] to "+(target.isPlayer()?"you":UtilText.parse(target, "[npc.name]"))+"!"));
+			sb.append(UtilText.parse(source, "<br/>[npc.NamePos] [style.boldExcellent(critical)] заклинание накладывает [style.boldArcane(arcane weakness)] на "+(target.isPlayer()?"you":UtilText.parse(target, "[npc.name]"))+"!"));
 			target.addStatusEffect(StatusEffect.ARCANE_WEAKNESS, 2);
 			sb.append(
 					UtilText.parse(target,
-							"<br/>[npc.NameIsFull] now affected by <b style='color:"+StatusEffect.ARCANE_WEAKNESS.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(StatusEffect.ARCANE_WEAKNESS.getName(target))+"</b>"
-									+ " for <b>two turns</b>!"));
+							"<br/>[npc.NameIsFull] теперь под действием <b style='color:"+StatusEffect.ARCANE_WEAKNESS.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(StatusEffect.ARCANE_WEAKNESS.getName(target))+"</b>"
+									+ " на <b>две ходы</b>!"));
 		}
 		
 		return sb.toString();
@@ -4008,7 +4008,7 @@ public enum Spell {
     	if(this.getSpellSchool() == SpellSchool.FIRE) {
     		critReqs.add(UtilText.parse(source, "[npc.NamePos] "+Attribute.HEALTH_MAXIMUM.getName()+" is below 25%."));
     	} else {
-        	return Util.newArrayListOfValues("It's the only action being used.");
+        	return Util.newArrayListOfValues("Это единственное действие, используемое.");
     	}
     	
     	return critReqs;

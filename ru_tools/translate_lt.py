@@ -20,7 +20,25 @@ ROOT = Path(__file__).resolve().parent.parent
 GLOSSARY_PATH = Path(__file__).resolve().parent / "GLOSSARY_RU.json"
 PROGRESS_PATH = Path(__file__).resolve().parent / "progress.json"
 ENERGY_PATH = Path(__file__).resolve().parent / "energy_stats.json"
+TM_CACHE_PATH = Path(__file__).resolve().parent / "tm_cache.json"
 DEFAULT_API = "http://127.0.0.1:8089/v1/chat/completions"
+
+_TM_CACHE: dict | None = None
+
+
+def load_tm_cache() -> dict:
+    global _TM_CACHE
+    if _TM_CACHE is None:
+        if TM_CACHE_PATH.exists():
+            _TM_CACHE = json.loads(TM_CACHE_PATH.read_text(encoding="utf-8"))
+        else:
+            _TM_CACHE = {}
+    return _TM_CACHE
+
+
+def save_tm_cache():
+    if _TM_CACHE is not None:
+        TM_CACHE_PATH.write_text(json.dumps(_TM_CACHE, ensure_ascii=False), encoding="utf-8")
 
 HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>]*?>")
 BRACKET_ATOMIC_RE = re.compile(r"\[[a-zA-Z0-9_]+\.[a-zA-Z0-9_+\-]+\]")
@@ -209,8 +227,16 @@ def translate_single(api_url: str, text: str, glossary: dict, context_note: str)
 def translate_batch(api_url: str, items: list[str], glossary: dict, context_note: str) -> list[str]:
     if not items:
         return []
+    tm = load_tm_cache()
     if len(items) == 1:
-        return [translate_single(api_url, items[0], glossary, context_note)]
+        s0 = items[0]
+        if s0 in tm:
+            return [tm[s0]]
+        res0 = translate_single(api_url, s0, glossary, context_note)
+        if res0 != s0:
+            tm[s0] = res0
+            save_tm_cache()
+        return [res0]
 
     results = list(items)
     idx = 0
@@ -220,6 +246,10 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
         while idx < len(items) and len(batch_indices) < 10:
             s = items[idx]
             if not s or not s.strip() or re.fullmatch(r"[\s\d\W_]+", s):
+                idx += 1
+                continue
+            if s in tm:
+                results[idx] = tm[s]
                 idx += 1
                 continue
             if batch_indices and char_sum + len(s) > 1600:
@@ -232,7 +262,11 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
             continue
         if len(batch_indices) == 1:
             i = batch_indices[0]
-            results[i] = translate_single(api_url, items[i], glossary, context_note)
+            res_i = translate_single(api_url, items[i], glossary, context_note)
+            results[i] = res_i
+            if res_i != items[i]:
+                tm[items[i]] = res_i
+                save_tm_cache()
             continue
 
         masked_map = {}
@@ -264,9 +298,13 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
         for pos, orig_i in enumerate(batch_indices):
             k = str(pos)
             if isinstance(parsed, dict) and isinstance(parsed.get(k), str) and validate_masks(parsed[k], masks_map[k]):
-                results[orig_i] = unmask_text(parsed[k], masks_map[k])
+                tr_val = unmask_text(parsed[k], masks_map[k])
             else:
-                results[orig_i] = translate_single(api_url, items[orig_i], glossary, context_note)
+                tr_val = translate_single(api_url, items[orig_i], glossary, context_note)
+            results[orig_i] = tr_val
+            if tr_val != items[orig_i]:
+                tm[items[orig_i]] = tr_val
+        save_tm_cache()
 
     return results
 

@@ -77,7 +77,7 @@ def build_queue(prog: dict) -> list[dict]:
         rel = p.relative_to(ROOT).as_posix()
         if rel in seen_xml:
             continue
-        if rel.startswith("res/maps/"):
+        if rel.startswith("res/maps/") or rel.startswith("res/mods/"):
             continue
         seen_xml.add(rel)
         q.append({"type": "xml", "path": rel})

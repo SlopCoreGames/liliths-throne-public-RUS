@@ -852,14 +852,14 @@ public class MainController implements Initializable {
 										}
 										
 										if (!unsuitableName) {
-											Main.game.setContent(new Response("Rename Room", "Rename this room to whatever you've entered in the text box.", Main.game.getCurrentDialogueNode()){
+											Main.game.setContent(new Response("Переименовать комнату", "Переименовать эту комнату в то, что вы ввели в текстовое поле.", Main.game.getCurrentDialogueNode()){
 												@Override
 												public void effects() {
 													Main.game.getPlayerCell().getPlace().setName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
 												}
 											});
 										} else {
-											Main.game.setContent(new Response("Rename Room", "", Main.game.getCurrentDialogueNode()));
+											Main.game.setContent(new Response("Переименовать комнату", "", Main.game.getCurrentDialogueNode()));
 										}
 									}
 								}
@@ -874,7 +874,7 @@ public class MainController implements Initializable {
 									if(Main.isSaveGameAvailable()) {
 										Main.saveGame(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, false);
 									}
-									Main.game.setContent(new Response("Save", "", Main.game.getCurrentDialogueNode()));
+									Main.game.setContent(new Response("Сохранить", "", Main.game.getCurrentDialogueNode()));
 								}
 							}
 						}
@@ -896,7 +896,7 @@ public class MainController implements Initializable {
 									enterConsumed = true;
 									Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 									EnchantmentDialogue.saveEnchant(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, EnchantmentDialogue.ENCHANTMENT_SAVE_LOAD);
-									Main.game.setContent(new Response("Save", "", Main.game.getCurrentDialogueNode()));
+									Main.game.setContent(new Response("Сохранить", "", Main.game.getCurrentDialogueNode()));
 								}
 							}
 						}
@@ -907,7 +907,7 @@ public class MainController implements Initializable {
 									enterConsumed = true;
 									Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 									BodyChanging.saveBody(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false);
-									Main.game.setContent(new Response("Save", "", Main.game.getCurrentDialogueNode()));
+									Main.game.setContent(new Response("Сохранить", "", Main.game.getCurrentDialogueNode()));
 								}
 							}
 						}
@@ -918,7 +918,7 @@ public class MainController implements Initializable {
 									enterConsumed = true;
 									Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('new_save_name').value;");
 									EnchantmentDialogue.saveEnchant(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent(), false, CosmeticsDialogue.TATTOO_SAVE_LOAD);
-									Main.game.setContent(new Response("Save", "", Main.game.getCurrentDialogueNode()));
+									Main.game.setContent(new Response("Сохранить", "", Main.game.getCurrentDialogueNode()));
 								}
 							}
 						}
@@ -965,14 +965,14 @@ public class MainController implements Initializable {
 										}
 										
 										if(!unsuitableName) {
-											Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()){
+											Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()){
 												@Override
 												public void effects() {
 													slaveFinal.setPetName(Main.game.getPlayer(), Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
 												}
 											});
 										} else {
-											Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()));
+											Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()));
 										}
 										
 									}
@@ -992,14 +992,14 @@ public class MainController implements Initializable {
 										}
 										
 										if (!unsuitableName) {
-											Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()){
+											Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()){
 												@Override
 												public void effects() {
 													slaveFinal.setName(new NameTriplet(Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent()));
 												}
 											});
 										} else {
-											Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()));
+											Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()));
 										}
 									}
 								}
@@ -1018,14 +1018,14 @@ public class MainController implements Initializable {
 										}
 										
 										if (!unsuitableName) {
-											Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()){
+											Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()){
 												@Override
 												public void effects() {
 													slaveFinal.setSurname(Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
 												}
 											});
 										} else {
-											Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()));
+											Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()));
 										}
 									}
 								}
@@ -1042,7 +1042,7 @@ public class MainController implements Initializable {
 									if((boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('feminine_" + gp + "') === document.activeElement")
 										|| (boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('masculine_" + gp + "') === document.activeElement")) {
 										Main.game.setContent(
-												new Response("Save", "Save all the pronouns that are currently displayed.", OptionsDialogue.OPTIONS_PRONOUNS) {
+												new Response("Сохранить", "Сохранить все местоимения, которые в настоящее время отображаются.", OptionsDialogue.OPTIONS_PRONOUNS) {
 													@Override
 													public void effects() {
 														OptionsDialogue.OPTIONS_PRONOUNS.getResponse(0, 1).effects();
@@ -1058,7 +1058,7 @@ public class MainController implements Initializable {
 											|| (boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('GENDER_NAME_ANDROGYNOUS_" + genderName + "') === document.activeElement")
 											|| (boolean) Main.mainController.getWebEngine().executeScript("document.getElementById('GENDER_NAME_FEMININE_" + genderName + "') === document.activeElement")) {
 											Main.game.setContent(
-													new Response("Save", "Save all the pronouns that are currently displayed.", OptionsDialogue.OPTIONS_PRONOUNS) {
+													new Response("Сохранить", "Сохранить все местоимения, которые в настоящее время отображаются.", OptionsDialogue.OPTIONS_PRONOUNS) {
 														@Override
 														public void effects() {
 															OptionsDialogue.OPTIONS_PRONOUNS.getResponse(0, 1).effects();
@@ -1088,14 +1088,14 @@ public class MainController implements Initializable {
 									}
 									
 									if (!unsuitableName) {
-										Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()){
+										Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()){
 											@Override
 											public void effects() {
 												Main.game.getActiveNPC().setPetName(Main.game.getPlayer(), Main.mainController.getWebEngine().getDocument().getElementById("hiddenFieldName").getTextContent());
 											}
 										});
 									} else {
-										Main.game.setContent(new Response("Rename", "", Main.game.getCurrentDialogueNode()));
+										Main.game.setContent(new Response("Переименовать", "", Main.game.getCurrentDialogueNode()));
 									}
 									
 								}
@@ -1109,7 +1109,7 @@ public class MainController implements Initializable {
 									enterConsumed = true;
 									Main.mainController.getWebEngine().executeScript("document.getElementById('hiddenPField').innerHTML=document.getElementById('outfit_name').value;");
 									LilayaDressingRoomDialogue.setOutfitName(Main.mainController.getWebEngine().getDocument().getElementById("hiddenPField").getTextContent());
-									Main.game.setContent(new Response("Outfit editor", "", Main.game.getCurrentDialogueNode()));
+									Main.game.setContent(new Response("Редактор одежды", "", Main.game.getCurrentDialogueNode()));
 								}
 							}
 						}
@@ -1459,8 +1459,8 @@ public class MainController implements Initializable {
 						}
 					}, false);
 					MainController.addTooltipListeners(id, new TooltipInformationEventListener().setInformation(
-							"Mark for reroll",
-							DicePoker.isAbleToSelectReroll()?"":"[style.italicsBad(You cannot mark your dice for reroll in this scene!)]"));
+							"Отметить для переброски",
+							DicePoker.isAbleToSelectReroll()?"":"[style.italicsBad(Вы не можете отметить свои кубики для переброса в этой сцене!)]"));
 				}
 			}
 		}
@@ -2044,14 +2044,14 @@ public class MainController implements Initializable {
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.QUICKSAVE);
 			MainController.addEventListener(documentButtonsRight, "quickSave", "mouseenter", new TooltipInformationEventListener().setInformation(
 					quickSaveAvailable
-						?"[style.colourGood(Quick Save"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
-						:"[style.colourBad(Quick Save"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
-					"Either creates or "+(quickLoadAvailable?"[style.italicsBad(overrides)]":"")+" the save file with the name '"+Main.getQuickSaveName()+"'."
+						?"[style.colourGood(Быстрое сохранение"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
+						:"[style.colourBad(Быстрое сохранение"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
+					"Либо создает, либо "+(quickLoadAvailable?"[style.italicsBad(overrides)]":"")+"файл сохранения с именем '"+Main.getQuickSaveName()+"'."
 						+ (hotKey==null
-							?"<br/>There is no keyboard shortcut currently bound to this action."
-							:"<br/>You can also quick save by pressing the '"+hotKey.getFullName()+"' key.")
+							?"<br/>Нет горячих клавиш, назначенных на эту акцию."
+							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+"' key.")
 						+ (quickSaveAvailable
-							?"<br/>[style.italicsGood(You can save the game in this scene!)]"
+							?"<br/>[style.italicsGood(Вы можете сохранить игру в этой сцене!)]"
 							:"<br/>[style.italicsBad("+Main.getQuickSaveUnavailabilityDescription()+")]")),
 					false);
 		}
@@ -2066,15 +2066,15 @@ public class MainController implements Initializable {
 			hotKey = Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.QUICKLOAD);
 			MainController.addEventListener(documentButtonsRight, "quickLoad", "mouseenter", new TooltipInformationEventListener().setInformation(
 					quickLoadAvailable
-						?"[style.colourGood(Quick Load"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
-						:"[style.colourBad(Quick Load"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
-					"Loads the game file with the name '"+Main.getQuickSaveName()+"'."
+						?"[style.colourGood(Быстрое загрузка"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]"
+						:"[style.colourBad(Быстрое загрузка"+(hotKey==null?"":" ("+hotKey.getFullName()+")")+")]",
+					"Загружает файл игры с именем '"+Main.getQuickSaveName()+"'."
 						+(hotKey==null
-							?"<br/>There is no keyboard shortcut currently bound to this action."
-							:"<br/>You can also quick load by pressing the '"+hotKey.getFullName()+"' key.")
+							?"<br/>В настоящее время к этой функции не присвоено сочетание клавиш."
+							:"<br/>Вы также можете быстро сохранить, нажав '"+hotKey.getFullName()+"' key.")
 						+(quickLoadAvailable
-							?"<br/>[style.italicsGood(Quick save file is detected for this character!)]"
-							:"<br/>[style.italicsBad(No quick save file detected for this character!)]")),
+							?"<br/>[style.italicsGood(Быстро сохраняемый файл обнаружен для этого персонажа!)]"
+							:"<br/>[style.italicsBad(Для этого персонажа не обнаружен быстро сохраняемый файл!)]")),
 					false);
 		}
 		
@@ -2087,8 +2087,8 @@ public class MainController implements Initializable {
 
 			MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
 					Main.game.getCurrentDialogueNode().getLabel() == "" || Main.game.getCurrentDialogueNode().getLabel() == null ? "-" : Main.game.getCurrentDialogueNode().getLabel(),
-					"Click to copy the currently displayed dialogue to your clipboard. You can then paste the output into a text editor, save it as a <i>.html</i> file, then open that file in a browser to retain the game's formatting.<br/>"
-					+ "This scene was written by: <b>"+Main.game.getCurrentDialogueNode().getAuthor()+"</b>",
+					"Нажмите, чтобы скопировать текущий диалог в буфер обмена. Затем вы можете вставить результат в текстовый редактор, сохранить его как файл <i>.html</i>, а затем открыть этот файл в браузере, чтобы сохранить форматирование игры.<br/>"
+					+ "Эта сцена была написана: <b>"+Main.game.getCurrentDialogueNode().getAuthor()+"</b>",
 					80), false);
 			
 		}
@@ -2113,13 +2113,13 @@ public class MainController implements Initializable {
 				}, false);
 				MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
 						"Export Character",
-						"Export "+name+" to the 'data/characters' folder. Exported characters can be imported at the auction block in Slaver Alley.",
+						"Export "+name+" в папку 'data/characters'. Экспортированные персонажи могут быть импортированы на аукционном блоке в Улице работорговцев.",
 						48), false);
 				
 			} else {
 				MainController.addEventListener(documentButtonsRight, id, "mouseenter", new TooltipInformationEventListener().setInformation(
 						"Export Character",
-						"To export any character, including your own, you need to be viewing them in your phone's 'Characters Present' screen.",
+						"Чтобы экспортировать любого персонажа, включая вашего собственного, вам нужно просматривать их на экране 'Присутствующие персонажи' в вашем телефоне.",
 						48), false);
 			}
 		}
@@ -2225,9 +2225,9 @@ public class MainController implements Initializable {
 				dateSB.append("<br/>");
 				dateSB.append("It is currently "+UtilText.generateSingularDeterminer(day)+" [style.colourBlueLight("+day+")].<br/>"
 						+ "You've been in this new world for: [style.colourExcellent("+Main.game.getDayNumber()+" day"+(Main.game.getDayNumber()>1?"s":"")+")]");
-				dateSB.append("<br/><i>Click to toggle between a date and day count.</i>");
+				dateSB.append("<br/><i>Нажмите, чтобы переключаться между датой и счётом дней.</i>");
 			}
-			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("Toggle Calendar Display",
+			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("Переключить отображение календаря",
 						dateSB.toString());
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
@@ -2252,12 +2252,12 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			StringBuilder timeSB = new StringBuilder();
 			if(Main.game.isBadEnd()) {
-				timeSB.append("[style.italicsBad(Given your current situation, you've lost track of what time it is...)]");
+				timeSB.append("[style.italicsBad(Учитывая вашу текущую ситуацию, вы потеряли отчёт о том, какое сейчас время...)]");
 			} else {
-				timeSB.append("Current time: "+Units.time(Main.game.getDateNow())+" (<span style='color:"+dp.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(dp.getName())+"</span>)<br/>"
+				timeSB.append("Текущее время: "+Units.time(Main.game.getDateNow())+" (<span style='color:"+dp.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(dp.getName())+"</span>)<br/>"
 					+ "Sunrise: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourYellow("+Units.time(ldt[0]):"[style.colourYellow("+Units.dateTime(ldt[0]))+")]<br/>"
 					+ "Sunset: "+(!dateKnown?"[style.colourMinorBad(??/??/??)] [style.colourOrange("+Units.time(ldt[1]):"[style.colourOrange("+Units.dateTime(ldt[1]))+")]<br/>"
-					+ "<i>Click to toggle the time display between a 24-hour and 12-hour clock.</i>");
+					+ "<i>Нажмите, чтобы переключать отображение времени между 24-часовым и 12-часовым часами.</i>");
 			}
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					(Main.game.isDayTime()?"Day-time":"Night-time"),
@@ -2270,7 +2270,7 @@ public class MainController implements Initializable {
 			addEventListener(documentAttributes, id, "mousemove", moveTooltipListener, false);
 			addEventListener(documentAttributes, id, "mouseleave", hideTooltipListener, false);
 			
-			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("[style.boldArcane(Arcane Essences)]", "");
+			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation("[style.boldArcane(Аркана Эссенции)]", "");
 			addEventListener(documentAttributes, id, "mouseenter", el2, false);
 		}
 		
@@ -2596,8 +2596,8 @@ public class MainController implements Initializable {
 			addEventListener(documentRight, id, "mouseleave", hideTooltipListener, false);
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					!RenderingEngine.ENGINE.isRenderingTattoosRight()
-						?"Switch to tattoos"
-						:"Switch to clothing",
+						?"Переключить на татуировки"
+						:"Переключиться на одежду",
 					"");
 			addEventListener(documentRight, id, "mouseenter", el2, false);
 		}
@@ -2609,8 +2609,8 @@ public class MainController implements Initializable {
 			TooltipInformationEventListener el2 = new TooltipInformationEventListener().setInformation(
 					Util.capitaliseSentence(Attribute.ENCHANTMENT_LIMIT.getName()),
 					UtilText.parse(RenderingEngine.getCharacterToRender(),
-							"The total amount of weapon, clothing, and tattoo attribute enchantments [npc.nameIsFull] able to handle without incurring massive penalties."
-								+" [npc.Her] maximum is calculated from: <i>10 + (level) + (perk gains)</i>"));
+							"Общая сумма заклинаний оружия, одежды и татуировок [npc.nameIsFull], которые можно использовать без значительных штрафов."
+								+" [npc.Her] максимальное значение рассчитывается из: <i>10 + (уровень) + (преимущества)</i>"));
 			addEventListener(documentRight, id, "mouseenter", el2, false);
 		}
 		
@@ -3017,7 +3017,7 @@ public class MainController implements Initializable {
 					Main.game.saveDialogueNode();
 					Main.game.setContent(new Response("", "", DebugDialogue.DEBUG_MENU));
 				} else {
-					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Unavailable in prologue!");
+					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Недоступно в прологе!");
 				}
 			}
 		}
@@ -3047,7 +3047,7 @@ public class MainController implements Initializable {
 					Main.combat.endCombat(true);
 //					Main.game.setContent(new Response("", "", Main.game.getDefaultDialogue(false)));
 					Main.game.setContent(new ResponseSex(
-							"Dominate",
+							"Доминировать",
 							"",
 							false,
 							false,
@@ -3126,7 +3126,7 @@ public class MainController implements Initializable {
 					Main.combat.endCombat(false);
 //					Main.game.setContent(new Response("", "", Main.game.getDefaultDialogue(false)));
 					Main.game.setContent(new ResponseSex(
-							"Dominated",
+							"Доминировать",
 							"",
 							false,
 							false,
@@ -3247,7 +3247,7 @@ public class MainController implements Initializable {
 			
 			if(!placeTypeTarget.getPlace().getPlaceType().equals(PlaceType.GENERIC_IMPASSABLE)) {
 				if(Main.game.isInGlobalMap() && placeTypeTarget.getDialogue(false)==null) {
-					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Cannot travel here!");
+					Main.game.flashMessage(PresetColour.GENERIC_BAD, "Нельзя путешествовать сюда!");
 					
 				} else {
 					if(Main.game.isInGlobalMap()) {
