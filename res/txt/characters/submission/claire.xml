@@ -4,18 +4,18 @@
 	<!-- PARTNER_INTERRUPTED  -->
 	
 	<htmlContent tag="PARTNER_INTERRUPTED"><![CDATA[
-		[claire.speechNoEffects(~Mmm!~ Yes!)] Claire moans, before suddenly opening her eyes wide and hissing, [claire.speechNoEffects(I think I hear someone coming!)]
+		[claire.speechNoEffects(~Ммм!~ Да!)] Клэр стонет, но вдруг широко распахивает глаза и шипит: [claire.speechNoEffects(Кажется, кто-то идет!)]
 	</p>
 	<p>
-		Sure enough, as you look over towards the door to the storeroom, you see the handle beginning to turn.
+		И действительно, когда ты смотришь в сторону двери кладовой, ты видишь, как начинает поворачиваться ручка.
 		#IF(sex.getSexPositionSlot(pc).isStanding(pc))
-			Before you can make a move, Claire frantically grabs hold of you and pulls you behind a nearby filing cabinet. With her hot breath falling on your bare [pc.skin], [npc.she] hisses, [claire.speech(Don't make a sound!)]
+			Прежде чем ты успеваешь что-то предпринять, Клэр лихорадочно хватает тебя и затягивает за стоящий рядом шкаф для документов. Ее горячее дыхание касается твоего обнаженного [pc.skin], и [npc.she] шипит: [claire.speech(Ни звука!)]
 		#ELSE
-			Before you can make a move, Claire frantically grabs hold of you and pulls you down onto the carpeted floor behind a stack of papers. With her hot breath falling on your bare [pc.skin], [npc.she] hisses, [claire.speech(Don't make a sound!)]
+			Прежде чем ты успеваешь что-то предпринять, Клэр лихорадочно хватает тебя и утягивает на ковер за стопкой бумаг. Ее горячее дыхание касается твоего обнаженного [pc.skin], и [npc.she] шипит: [claire.speech(Ни звука!)]
 		#ENDIF
 	</p>
 	<p style='text-align:center;'>
-		[style.italicsBad(There is an Enforcer entering the stockroom!)]
+		[style.italicsBad(В складскую заходит Enforcer!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -23,22 +23,22 @@
 	<!-- PLAYER_STAY_QUIET and PLAYER_KEEP_GOING -->
 	
 	<htmlContent tag="ENFORCER_ENTERING"><![CDATA[
-		From your hiding place, you and Claire are only just concealed from the angle of the doorway, and as you hear it swing open, you wonder if the two of you are about to be discovered. Turning to look back over their shoulder, the Enforcer who's entering the room shouts,
+		Из вашего укрытия вы с Клэр едва скрыты от обзора из дверного проема, и когда ты слышишь, как дверь распахивается, ты гадаешь, не обнаружат ли вас. Обернувшись через плечо, вошедший в комнату Enforcer выкрикивает:
 	#IF(RND.nextInt(100)<50)
 		[style.speechFeminine(
 	#ELSE
 		[style.speechMasculine(
 	#ENDIF
 	[style.random(
-		What?! Just one box?!
+		Что?! Всего одна коробка?!
 		|
-		Yeah, I know, I'm getting it now!
+		Да знаю я, уже иду!
 		|
-		Did you say you were after the red ones?! ... Ok!
+		Ты сказал, что тебе нужны красные?! ... Ладно!
 		|
-		I think I know where they're kept by now! I <i>have</i> been working here for two years, remember?!
+		Кажется, я уже знаю, где они лежат! Я же <i>работаю</i> здесь уже два года, помнишь?!
 		|
-		Yeah, I'll grab you some pencils as well, hold on!)]
+		Да, я захвачу тебе еще и карандаши, погоди!)]
 	)]
 	]]>
 	</htmlContent>

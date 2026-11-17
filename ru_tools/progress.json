@@ -27,7 +27,22 @@
     "res/txt/characters/elemental.xml",
     "res/txt/characters/enslavement.xml",
     "res/txt/characters/meraxis/duel.xml",
-    "res/txt/characters/offspring/bat_cavern.xml"
+    "res/txt/characters/offspring/bat_cavern.xml",
+    "res/txt/characters/offspring/dominionAlleyway.xml",
+    "res/txt/characters/offspring/elisAlleyway.xml",
+    "res/txt/characters/offspring/enslavement.xml",
+    "res/txt/characters/offspring/harpyNests.xml",
+    "res/txt/characters/offspring/occupant.xml",
+    "res/txt/characters/offspring/slave.xml",
+    "res/txt/characters/offspring/submission_tunnel.xml",
+    "res/txt/characters/player/virginity.xml",
+    "res/txt/characters/raceInfo.xml",
+    "res/txt/characters/submission/batCavernBat.xml",
+    "res/txt/characters/submission/batCavernDefault.xml",
+    "res/txt/characters/submission/batCavernSlime.xml",
+    "res/txt/characters/submission/claire.xml",
+    "res/txt/characters/submission/lyssieth.xml",
+    "res/txt/characters/submission/roxy.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

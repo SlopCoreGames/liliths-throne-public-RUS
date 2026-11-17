@@ -3,115 +3,112 @@
 
 	<htmlContent tag="ATTACK_REPEAT_PREGNANCY_REACT"><![CDATA[
 	<p>
-		In your peripheral vision, you suddenly see a figure swooping down towards you from high up above. Turning towards them, you ready yourself for a fight, and within just a moment, the familiar figure of [npc.name] lands just in front of you.
+		Боковым зрением ты внезапно замечаешь фигуру, стремительно пикирующую на тебя сверху. Ты резко оборачиваешься, готовясь к бою, и всего мгновение спустя прямо перед тобой приземляется знакомый силуэт [npc.name].
 	</p>
 	<p>
 		[npc.speech(Well, well, well!)] [npc.she] states, placing one of [npc.her] [npc.hands] on [npc.her] [npc.hips+], while the other strokes [npc.her] rounded belly. [npc.speech(Take a look at what you did! See? You got me pregnant! That's right, you've gone and got me knocked up! I'm carrying your kids now, see, see, see?)]
 	</p>
 	<p>
-		You look down at [npc.her] swollen belly, but before you can make a comment, the talkative [npc.race] continues chattering away, [npc.speech(So, now, I was talking with my friends, and we were all in agreement. You're going to have to give me some money. I'm going to need to buy clothes, food, all that stuff, y'know? And it's kind of unfair that I have to pay for all of that. I mean, this is kinda all your fault, not pulling out and everything, so you should really pay me for all that. Oh, oh, and also, if you don't, then I'm gonna have to kinda make you. My friends and I agreed, you see? We decided that I'd be well within my rights to force you to give me that money. I was just kinda being nice briefly explaining all this to you, but I'm going to have to put my foot down now. You hand over that money, and I'll be on my way, ok? If you don't, I'm going to attack you and make you! And you don't want that, do you? Of course you don't! To think, the mother of your children, attacking you just so that [npc.she] can get some money for our kids! That's kind of wrong, don't you think? So hand it over now, ok. Five hundred flames. That should do it. My friends and I agreed, you see? That's far less than others would ask, so just hand it over, ok? Ok?)]
+		Ты смотришь на раздувшийся живот [npc.her], но не успеваешь ты прокомментировать увиденное, как болтливая [npc.race] продолжает тараторить: [npc.speech(В общем, слушай, мы тут с подругами обсудили и все сошлись на одном: тебе придется отстегнуть мне денежку. Мне же нужно покупать одежду, еду и всё такое, понимаешь? И как-то несправедливо, что за всё это платить мне. В конце концов, это же почти целиком твоя вина — не вытащил ты вовремя, так что ты просто обязан мне за это отблагодарить. О, и еще: если не отдашь по-хорошему, то мне придется заставить тебя. Мы с подругами так решили, понимаешь? Мы договорились, что я имею полное право вытрясти из тебя эти деньги. Я тут пыталась быть милой и всё тебе объяснять, но пора переходить к делу. Отдавай деньги, и я пойду своей дорогой, идет? А если нет — я нападу и заставлю! А ты ведь этого не хочешь, правда? Конечно, не хочешь! Только подумай: мать твоих детей нападает на тебя только ради того, чтобы [npc.she] получила деньги на наших деток! Это же как-то неправильно, не находишь? Так что отдавай прямо сейчас, ладно? Пятьсот огней. И дело с концом. Мы с подругами договорились, понимаешь? Это куда меньше, чем попросили бы другие, так что просто отдай их, а? Ну?)]
 	</p>
 	<p>
-		With [npc.name]'s fast-paced rant finally at an end, you're given a moment in which to think about your situation. You can tell that [npc.name] is willing to fight you in order to get some money, so you could choose to defend yourself, or just hand over the cash that [npc.she]'s asking for...
+		Когда скороговорка [npc.name] наконец затихает, у тебя появляется минутка, чтобы обдумать ситуацию. Очевидно, что [npc.name] готова ввязаться в драку ради денег, так что ты можешь либо защищаться, либо просто отдать наличку, которую требует [npc.she]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_REPEAT_PREGNANCY"><![CDATA[
 	<p>
-		In your peripheral vision, you suddenly see a figure swooping down towards you from high up above. Turning towards them, you ready yourself for a fight, and within just a moment, the familiar figure of [npc.name] lands just in front of you.
+		Боковым зрением ты внезапно замечаешь фигуру, стремительно пикирующую на тебя сверху. Ты резко оборачиваешься, готовясь к бою, и всего мгновение спустя прямо перед тобой приземляется знакомый силуэт [npc.name].
 	</p>
 	<p>
 		[npc.speech(Well, well, well!)] [npc.she] states, placing one of [npc.her] [npc.hands] on [npc.her] [npc.hips+], while the other strokes [npc.her] rounded belly. [npc.speech(Look who it is! I'm still carrying our kids around, see?)]
 	</p>
 	<p>
-		You look down at [npc.her] swollen belly, but before you can make a comment, the talkative [npc.race] continues chattering away, [npc.speech(So, now, I was talking with my friends, and we were all in agreement. You're going to have to give me some money. I'm going to need to buy clothes, food, all that stuff, y'know? And it's kind of unfair that I have to pay for all of that. I mean, this is kinda all your fault, not pulling out and everything, so you should really pay me for all that. Oh, oh, and also, if you don't, then I'm gonna have to kinda make you. My friends and I agreed, you see? We decided that I'd be well within my rights to force you to give me that money. I was just kinda being nice briefly explaining all this to you, but I'm going to have to put my foot down now. You hand over that money, and I'll be on my way, ok? If you don't, I'm going to attack you and make you! And you don't want that, do you? Of course you don't! To think, the mother of your children, attacking you just so that [npc.she] can get some money for our kids! That's kind of wrong, don't you think? So hand it over now, ok. Five hundred flames. That should do it. My friends and I agreed, you see? That's far less than others would ask, so just hand it over, ok? Ok?)]
+		Ты смотришь на раздувшийся живот [npc.her], но не успеваешь ты прокомментировать увиденное, как болтливая [npc.race] продолжает тараторить: [npc.speech(В общем, слушай, мы тут с подругами обсудили и все сошлись на одном: тебе придется отстегнуть мне денежку. Мне же нужно покупать одежду, еду и всё такое, понимаешь? И как-то несправедливо, что за всё это платить мне. В конце концов, это же почти целиком твоя вина — не вытащил ты вовремя, так что ты просто обязан мне за это отблагодарить. О, и еще: если не отдашь по-хорошему, то мне придется заставить тебя. Мы с подругами так решили, понимаешь? Мы договорились, что я имею полное право вытрясти из тебя эти деньги. Я тут пыталась быть милой и всё тебе объяснять, но пора переходить к делу. Отдавай деньги, и я пойду своей дорогой, идет? А если нет — я нападу и заставлю! А ты ведь этого не хочешь, правда? Конечно, не хочешь! Только подумай: мать твоих детей нападает на тебя только ради того, чтобы [npc.she] получила деньги на наших деток! Это же как-то неправильно, не находишь? Так что отдавай прямо сейчас, ладно? Пятьсот огней. И дело с концом. Мы с подругами договорились, понимаешь? Это куда меньше, чем попросили бы другие, так что просто отдай их, а? Ну?)]
 	</p>
 	<p>
-		With [npc.name]'s fast-paced rant finally at an end, you're given a moment in which to think about your situation. You can tell that [npc.name] is willing to fight you in order to get some money, so you could choose to defend yourself, or just hand over the cash that [npc.she]'s asking for...
+		Когда скороговорка [npc.name] наконец затихает, у тебя появляется минутка, чтобы обдумать ситуацию. Очевидно, что [npc.name] готова ввязаться в драку ради денег, так что ты можешь либо защищаться, либо просто отдать наличку, которую требует [npc.she]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_REPEAT"><![CDATA[
 	<p>
-		In your peripheral vision, you suddenly see a figure swooping down towards you from high up above. Turning towards them, you ready yourself for a fight, and within just a moment, the familiar figure of [npc.name] lands just in front of you.
+		Боковым зрением ты внезапно замечаешь фигуру, стремительно пикирующую на тебя сверху. Ты резко оборачиваешься, готовясь к бою, и всего мгновение спустя прямо перед тобой приземляется знакомый силуэт [npc.name].
 	</p>
 	<p>
-		[npc.speech(Well, well, well!)] [npc.she] states, placing [npc.her] [npc.hands] on [npc.her] [npc.hips+] and striking a confident pose. [npc.speech(Look who it is! You didn't have enough of me the last time, huh?)]
-	</p>
+		[npc.speech(Ну надо же!)] [npc.she] произносит, кладя [npc.her] [npc.hands] на [npc.her] [npc.hips+] и принимая уверенную позу. [npc.speech(Посмотри-ка! Тебе что, в прошлый раз меня было мало, а?)]
+	</p><p>
+Прежде чем ты успеваешь что-то сказать, болтливая [npc.race] продолжает тараторить: [npc.speech(Значит, решил вернуться на мою территорию, а? Ну, то есть, это не совсем <i>моя</i> территория, у нас там наверху, в гнездах, полно народу, но я имею в виду, что это место, которое я зову домом. И ты проходил мимо, явно замышляя что-то недоброе, и я такая: «Хммм, этот человек выглядит подозрительно!». И тогда я спикировала посмотреть, кто это, и это оказался ты! И я точно знаю, что <i>ты</i> замышляешь что-то недоброе, так что я подумала: «Хммммм, надо бы поставить его на место!». Понимаешь, о чем я? Нельзя же просто смотреть, как ты проходишь мимо, и ничего не делать! Это сделало бы меня, ну, типа, безответственной! Так что теперь я здесь, ты там, и мне придется преподать тебе урок! Мы с друзьями как раз обсуждали подобные вещи на днях, понимаешь? Говорили, что нельзя просто так отпускать людей, не попытавшись сначала вступить с ними в противоборство! Вот я здесь, противостою тебе! И теперь тебе придется мне заплатить. Да-да, именно так, заплатить! Пятьсот огней, если быть точной! Так что плати, иначе мне придется заставить тебя заплатить! Забавно это устроено, а? В общем, что скажешь? Я постаралась быть краткой, так как сейчас очень занята, так что буду признательна, если ты сделаешь так же. Просто отдай деньги, и дело с концом, идет?)]
+</p>
 	<p>
-		Before you can make a comment, the talkative [npc.race] continues chattering away, [npc.speech(So you thought you'd come back into my territory, hmm? I mean, not that it's really <i>my</i> territory, there are loads of us living up in the roosts, but I mean that this is the place that I call home. And you came walking past, obviously up to no good, and so I thought to myself, 'Hmmm, that person looks like they're up to no good!'. And so then I swooped down to see who it was, and it was you! And I know that <i>you're</i> up to no good, so then I thought, 'Hmmmmmm, I'd better put them in their place!'. Y'know what I mean? I can't just be watching you walk past and choose not to do anything! That would make me, like, irresponsible or something! So now I'm here, and you're there, and I'm gonna have to teach you a lesson! My friends and I were talking about this sort of thing just the other day, y'know? We were saying how we can't just let people go without trying to confront them first! So here I am, confronting you! And now you're going to have to pay me. Yes, that's right, pay me! Five hundred flames, to be exact! So you pay me, or else I'm gonna make you pay! Funny how that works, huh? Anyway, what's it going to be? I tried to keep this brief, as I'm very busy right now, so I'd appreciate it if you could do the same. Just hand over your money, and that'll be that, ok?)]
-	</p>
-	<p>
-		With [npc.name]'s fast-paced rant finally at an end, you're given a moment in which to think about your situation. You can tell that [npc.name] is willing to fight you in order to get some money, so you could choose to defend yourself, or just hand over the cash that [npc.she]'s asking for...
+		Когда скороговорка [npc.name] наконец затихает, у тебя появляется минутка, чтобы обдумать ситуацию. Очевидно, что [npc.name] готова ввязаться в драку ради денег, так что ты можешь либо защищаться, либо просто отдать наличку, которую требует [npc.she]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK"><![CDATA[
 	<p>
-		In your peripheral vision, you suddenly see a figure swooping down towards you from high up above. Turning towards them, you ready yourself for a fight, and within just a moment, [npc.a_fullRace(true)] lands just in front of you.
+		Краем глаза ты внезапно замечаешь фигуру, стремительно пикирующую на тебя сверху. Ты резко оборачиваешься, готовясь к схватке, и спустя мгновение [npc.a_fullRace(true)] приземляется прямо перед тобой.
 	</p>
 	<p>
-		[npc.speech(Well, well, well!)] [npc.she] states, placing [npc.her] [npc.hands] on [npc.her] [npc.hips+] and striking a confident pose. [npc.speech(A trespasser! What kind of business do you have down here?!)]
+		[npc.speech(Ну надо же!)] [npc.she] заявляет, водружая [npc.her] [npc.hands] на [npc.her] [npc.hips+] и принимая уверенную позу. [npc.speech(Нарушитель! Какими судьбами ты здесь забыл?!)]
+	</p><p>
+		Прежде чем ты успеваешь хоть что-то ответить, болтливая [npc.race] продолжает тараторить без умолку: [npc.speech(Значит, ты думал, что сможешь вот так запросто ввалиться на мою территорию, а? Ну, то есть, не то чтобы это была именно <i>моя</i> территория, наверху в гнездах живет полно народу, но я имею в виду, что это место, которое я называю домом. И тут ты идешь мимо, явно замышляя что-то недоброе, и я такая: «Хммм, этот человек выглядит подозрительно!». И тогда я спикировала вниз, чтобы посмотреть, кто это, и это оказался ты! По одному твоему виду сразу понятно, что ты замышляешь какую-то пакость, так что я подумала: «Хммммм, надо же его проучить!». Понимаешь, о чем я? Нельзя же просто смотреть, как ты проходишь мимо, и ничего не делать! Это сделало бы меня, ну, типа, безответственной! Так что теперь я здесь, ты там, и мне придется преподать тебе урок! Мы с друзьями как раз на днях обсуждали подобные вещи, знаешь? Говорили о том, что нельзя просто так отпускать людей, не попытавшись сначала вступить с ними в конфронтацию! Вот, я здесь, и я вступаю с тобой в конфронтацию! И теперь тебе придется мне заплатить. Да-да, именно так, заплатить! Пятьсот огней, если быть точной! Так что либо ты платишь мне, либо я заставлю тебя заплатить! Забавно это устроено, а? В общем, что скажешь? Я старалась говорить кратко, потому что сейчас очень занята, так что буду признательна, если ты сделаешь так же. Просто отдай деньги, и дело с концом, идет?)]
 	</p>
 	<p>
-		Before you can even start to answer, the talkative [npc.race] continues chattering away, [npc.speech(So you thought you'd just waltz right into my territory, hmm? I mean, not that it's really <i>my</i> territory, there are loads of us living up in the roosts, but I mean that this is the place that I call home. And you came walking past, obviously up to no good, and so I thought to myself, 'Hmmm, that person looks like they're up to no good!'. And so then I swooped down to see who it was, and it was you! And I can just tell from looking at you that you're up to no good, so then I thought, 'Hmmmmmm, I'd better put them in their place!'. Y'know what I mean? I can't just be watching you walk past and choose not to do anything! That would make me, like, irresponsible or something! So now I'm here, and you're there, and I'm gonna have to teach you a lesson! My friends and I were talking about this sort of thing just the other day, y'know? We were saying how we can't just let people go without trying to confront them first! So here I am, confronting you! And now you're going to have to pay me. Yes, that's right, pay me! Five hundred flames, to be exact! So you pay me, or else I'm gonna make you pay! Funny how that works, huh? Anyway, what's it going to be? I tried to keep this brief, as I'm very busy right now, so I'd appreciate it if you could do the same. Just hand over your money, and that'll be that, ok?)]
-	</p>
-	<p>
-		With [npc.name]'s fast-paced rant finally at an end, you're given a moment in which to think about your situation. You can tell that [npc.name] is willing to fight you in order to get some money, so you could choose to defend yourself, or just hand over the cash that [npc.she]'s asking for...
+		Когда скороговорка [npc.name] наконец затихает, у тебя появляется минутка, чтобы обдумать ситуацию. Очевидно, что [npc.name] готова ввязаться в драку ради денег, так что ты можешь либо защищаться, либо просто отдать наличку, которую требует [npc.she]...
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ATTRACTED_TO_PLAYER"><![CDATA[
-	<p>
-		From the way [npc.she] keeps on glancing hungrily down at your body, you can tell that [npc.name] is attracted to you. If you were to fight [npc.herHim], and lose, [npc.she]'d be sure to force [npc.herself] on you...
+	<htmlContent tag="ATTRACTED_TO_PLAYER"><![CDATA[<p>
+		Судя по тому, как [npc.she] то и дело жадно оглядывает твоё тело, можно понять, что [npc.name] тобой увлечён/а. Если ты решишь сразиться с [npc.herHim] и проиграешь, [npc.she] непременно заставит [npc.herself] на тебя...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="NOT_ATTRACTED_TO_PLAYER"><![CDATA[
 	<p>
-		You can tell that [npc.name] isn't attracted to you. If you were to fight [npc.herHim], and lose, [npc.she]'d most likely only be interested in stealing your flames...
+		Ты понимаешь, что [npc.name] к тебе не испытывает влечения. Если ты решишь сразиться с [npc.herHim] и проиграешь, [npc.she], скорее всего, будет заинтересована лишь в том, чтобы украсть твои огни...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="ATTACK_PAID_OFF"><![CDATA[
 	<p>
-		You really don't want to fight [npc.name], and take a step backwards as you agree to [npc.her] demands. [pc.speech(Ok, ok. I'll give you your money. There's no need for violence, ok?)]
+		Тебе очень не хочется драться с [npc.name], поэтому ты делаешь шаг назад, соглашаясь на требования [npc.her]. [pc.speech(Ладно, ладно. Я отдам тебе деньги. Нет нужды в насилии, идет?)]
 	</p>
 	<p>
-		[npc.speech(Good, that's good!)] [npc.name] replies, stepping forwards and holding out [npc.her] [npc.hands]. [npc.speech(So hand it over, ok? I need that money, or else I'll have failed to confront you! And I can't go back to my friends and say that, now, can I? So give me the money! That's right, five hundred flames!)]
+		[npc.speech(Хорошо, вот и славно!)] — отвечает [npc.name], делая шаг вперед и протягивая свою [npc.her] [npc.hands]. [npc.speech(Так отдавай их, а? Мне нужны эти деньги, иначе мое противостояние с тобой будет считаться провалом! А я не смогу вернуться к друзьям и сказать им такое, верно? Так что давай деньги! Именно так, пятьсот огней!)]
 	</p>
 	<p>
-		Wanting to put an end to the [npc.race]'s incessant chattering, you quickly give [npc.herHim] the five hundred flames. As soon as you've handed the money over, [npc.she] lets out a happy little giggle, before turning around and quickly flying off in the direction from whence [npc.she] came.
+		Желая покончить с непрекращающейся болтовней [npc.race], ты быстро отдаешь [npc.herHim] пятьсот огней. Как только ты передаешь деньги, [npc.she] издает радостный смешок, после чего разворачивается и быстро улетает в ту сторону, откуда прилетела [npc.she].
 	</p>
 	<p>
-		You let out a sigh of relief as you see [npc.herHim] go, and, happy that you were able to avoid a fight, you continue on your way...
+		Ты облегченно вздыхаешь, глядя вслед улетающей [npc.herHim], и, радуясь тому, что удалось избежать драки, продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_OFFER_BODY"><![CDATA[
 	<p>
-		Wanting to avoid a fight, and unwilling to hand over any of your money, you decide to do the only other thing you can think of, and step forwards smiling seductively at [npc.name]. 
-		 [pc.speech(There's no need to fight. If you're looking for a bit of fun, all you had to do was ask...)]
+		Желая избежать драки и не желая расставаться с деньгами, ты решаешь сделать единственное, что приходит на ум: делаешь шаг вперед, соблазнительно улыбаясь [npc.name]. 
+		 [pc.speech(Драться вовсе не обязательно. Если тебе хочется немного развлечься, стоило только попросить...)]
 	</p>
 	<p>
-		[npc.speech(Oh really?)]
-		 [npc.name] replies, stepping forwards in an intimidating manner.
-		 You remain in place, putting on your most seductive look and trying to make yourself as small as possible as you attempt to entice [npc.name] into using you for some sexual relief.
+		[npc.speech(О, неужели?)]
+		 Отвечает [npc.name], угрожающе делая шаг тебе навстречу.
+		 Ты замираешь на месте, принимая самый соблазнительный вид и стараясь казаться как можно меньше, пытаясь завлечь [npc.name], чтобы он использовал тебя для сексуальной разрядки.
 	</p>
 	<p>
-		Much to your delight, your would-be attacker reaches up and grabs you by the [pc.arms], before pulling you forwards into a tight embrace.
-		 Pressing [npc.her] [npc.lips] against yours, [npc.she] thrusts [npc.her] [npc.tongue] into your mouth, aggressively kissing you for a moment before pulling back, growling,
-		 [npc.speech(You're going to be a good [pc.girl] now, aren't you bitch?)]
+		К твоему восторгу, потенциальный агрессор протягивает руку, хватает тебя за [pc.arms] и резко притягивает к себе в крепких объятиях.
+		 Прижимая [npc.her] [npc.lips] к твоему телу, [npc.she] грубо втискивает [npc.her] [npc.tongue] тебе в рот, на мгновение агрессивно целуя тебя, а затем отстраняется с рычанием:
+		 [npc.speech(Теперь ты будешь послушным [pc.girl], а, сучка?)]
 	</p>
 	<p>
-		Whimpering in the affirmative, you surrender yourself to [npc.name]'s dominant touch, allowing yourself to be used as payment for trespassing on [npc.her] territory...
+		Смиренно скуля в знак согласия, ты отдаешься на милость доминантным рукам [npc.name], позволяя использовать себя в качестве платы за вторжение на территорию [npc.her]...
 	</p>
 	]]>
 	</htmlContent>
@@ -121,10 +118,10 @@
 		[npc.Name] collapses to the floor, letting out a defeated sigh as [npc.she] gazes up at you. Looking down at the vanquished [npc.race] before you, you see that [npc.she]'s got a desperately hungry look in [npc.her] eyes. Before you can say anything, [npc.she] suddenly #IF(npc.isTaur())starts bucking [npc.her] hips in a humping motion,#ELSEreaches down to [npc.her] crotch and starts stroking [npc.herself],#ENDIF making pitiful little whining noises as [npc.she] squirms on the floor.
 	</p>
 	<p>
-		[npc.speech(Aaah! What are you waiting for?! Come fuck me!)] [npc.she] pleads, biting [npc.her] [npc.lip] as [npc.she] continues touching [npc.herself].
+		[npc.speech(Ааах! Чего ты ждешь?! Трахни меня!)] [npc.she] умоляет, прикусывая [npc.her] [npc.lip], пока [npc.she] продолжает ласкать [npc.herself].
 	</p>
 	<p>
-		You wonder if you should indulge [npc.her] request. After all, [npc.she] <i>was</i> going to do the same to you, and [npc.she] quite clearly wants it. Then again, maybe it's best to just leave...
+		Ты раздумываешь, стоит ли исполнить просьбу [npc.her]. В конце концов, [npc.she] <i>собиралась</i> сделать то же самое с тобой, да и [npc.she] явно этого хочет. С другой стороны, возможно, лучше просто уйти...
 	</p>
 	]]>
 	</htmlContent>
@@ -134,7 +131,7 @@
 		[npc.Name] collapses to the floor, letting out a defeated sigh as [npc.she] gazes up at you. Looking down at the vanquished [npc.race] before you, you see that [npc.she]'s got a desperate look of regret in [npc.her] eyes. Making pitiful little whining noises, [npc.she] tries to shuffle away from you, clearly worried about what your intentions might be.
 	</p>
 	<p>
-		[npc.speech(J-Just take my money and leave me alone!)] [npc.she] pleads, throwing some flames at your feet.
+		[npc.speech(П-просто забери мои деньги и оставь меня в покое!)] [npc.she] умоляет, швыряя тебе под ноги несколько огней.
 	</p>
 	<p>
 		You wonder if you should do as [npc.she] says, and leave [npc.herHim] alone. Then again, you <i>could</i> take advantage of [npc.her] weakened, vulnerable body...
@@ -144,16 +141,14 @@
 	
 	<htmlContent tag="ENEMY_DEFEATED_SUBMIT"><![CDATA[
 	<p>
-		You really aren't sure what to do next, and start to feel pretty uncomfortable with the fact that you just beat up this poor [npc.race]. Leaning down, you do the first thing that comes into your mind, and start apologising. [pc.speech(Sorry... I was just trying to defend myself, you know... Erm... Is there anything I can do to make it up to you?)]
+		Ты толком не знаешь, что делать дальше, и начинаешь чувствовать себя довольно неловко из-за того, что только что избила эту бедную [npc.race]. Наклонившись, ты делаешь первое, что приходит в голову, и начинаешь извиняться. [pc.speech(Прости... Я просто пыталась защититься, понимаешь... Эм... Могу я как-то загладить свою вину?)]
+	</p><p>
+		На мгновение на лице [npc.name] отражается замешательство, но, когда [npc.she] видит, что ты искренне расстроен своим поступком, по лицу [npc.her] расплывается зловещая ухмылка. [npc.She] встаёт, хватает тебя за [pc.arm] и грубо притягивает к [npc.her], пока [npc.she] рычит: [npc.speech(Как насчёт того, чтобы начать с нормальных извинений?!)]
 	</p>
 	<p>
-		For a moment, a look of confusion crosses over [npc.name]'s face, but, as [npc.she] sees that you're genuinely troubled by what you've just done, an evil grin crosses [npc.her] face. [npc.She] stands up, and, grabbing you by the [pc.arm], roughly pulls you into [npc.her] as [npc.she] growls, [npc.speech(How about you start by apologising properly?!)]
-	</p>
-	<p>
-		[npc.Name]'s strong, dominant grip on your [pc.arm] causes you to let out a lewd little moan, and your submissive nature takes over as you do as [npc.she] asks. [pc.speech(I'm really sorry! Please forgive me! I'll do anything! Anything you ask! Just please, don't be mad!)]
-	</p>
-	<p>
-		[npc.Name] roughly yanks you forwards, and with a menacing growl, [npc.she] forces [npc.her] tongue into your mouth. You let out a muffled yelp as your opponent takes charge, but as you feel [npc.her] [npc.hands] reaching down to start roughly groping your ass, you realise that you couldn't be happier with how things have turned out...
+		Крепкая, доминантная хватка [npc.Name] на твоей [pc.arm] заставляет тебя издать похотливый стон, и твоя покорная натура берет верх, когда ты беспрекословно выполняешь просьбу [npc.she]. [pc.speech(Мне правда очень жаль! Пожалуйста, прости меня! Я сделаю всё что угодно! Всё, что попросишь! Только, пожалуйста, не злись!)]
+	</p><p>
+		[npc.Name] грубо тянет тебя вперёд и с угрожающим рычанием [npc.she] впивается [npc.her] языком в твой рот. Ты издаёшь приглушённый вскрик, когда противник берёт инициативу в свои руки, но когда ты чувствуешь, как [npc.her] [npc.hands] тянется вниз, чтобы начать бесцеремонно ощупывать твою задницу, ты понимаешь, что не мог бы и мечтать о лучшем исходе событий...
 	</p>
 	]]>
 	</htmlContent>
