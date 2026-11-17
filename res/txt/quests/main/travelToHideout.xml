@@ -28,29 +28,29 @@
 			#ENDIF
 		</p>
 		<p>
-			Not giving you a moment in which to object, Meraxis suddenly teleports away. Shaking your head, you sit down on the sofa and wait for her to return...
+			Не давая тебе ни минуты, чтобы ты могла возразить, Мераксис внезапно телепортируется. Встряхивая головой, ты садишься на диван и ждешь, пока она вернется...
 		</p>
 	#ELSE
-		<p>
-			[meraxis.speech(Then what are we waiting for?!)] the chuuni [meraxis.race] excitedly asks. Leaping to her feet, she loudly proclaims, [meraxis.speech(Fear not, Takahashi, for we are on our way to rescue you!)]
+<p>
+			[meraxis.speech(Тогда чего мы ждем?!)] Чуунни [meraxis.race] с восторгом спрашивает. Подпрыгнув на месте, она громко заявляет: [meraxis.speech(Не бойся, Такахаси, мы идем тебя спасать!)]
 		</p>
 		<p>
-			You ask Meraxis if she's sure that Takahashi will need rescuing. After all, maybe she's just forgotten to check in with her, and is simply living in the Shinrin Highlands, waiting for Meraxis to come and find her.
+			Ты спрашиваешь Мераксис, не уверена ли она, что Такахаси действительно нуждается в спасении. Ведь, возможно, она просто забыла с ней связаться, и просто живет в Шинрин Хайлендс, ожидая, когда Мераксис придет и найдет ее.
 		</p>
 		<p>
-			[meraxis.speech(Takahashi has never failed to contact me before,)] Meraxis replies, [meraxis.speech(I find it hard to believe that she's really in trouble, but I can't think of another reason why she'd have kept me in the dark for so long. Hopefully we'll find her at my old hideout, and if not, then we should at least be able to find some clue as to her current whereabouts there. Come on, my nemesis, let's go!)]
+			[meraxis.speech(Такахаси никогда не переставала связываться со мной,)] отвечает Мераксис, [meraxis.speech(Мне трудно поверить, что она действительно в беде, но я не могу придумать другой причины, почему она держала меня в неведении так долго. Надеюсь, мы найдем ее в моей старой укрытии, а если нет, то, по крайней мере, мы сможем найти там какую-то подсказку о ее текущем местонахождении. Ну что ж, мой недруг, давай пойдем!)]
 		</p>
 		<p>
-			You're left to catch up as Meraxis energetically bounds over to the door and rushes outside. Following in her wake, you step outside and hurry to catch up as the cheerful chuuni [meraxis.race] turns to the right and skips down the road in a westward direction.
+			Ты остаешься позади, пока Мераксис энергично подбегает к двери и выбегает на улицу. Следуя за ней, ты выходишь на улицу и спешишь догнать ее, когда жизнерадостная чуун [meraxis.race] поворачивает направо и бежит по дороге в западном направлении. 
 		</p>
 		<p>
-			[meraxis.speech(I wish we could just teleport there, but the youko's spells prevent teleportation from working in the Shinrin Highlands,)] she says as the two of you head towards the west gate, [meraxis.speech(That book you saw me reading earlier gave me some clues as to how their anti-teleportation spells work, so once we're at my hideout, I should be able to counteract them within a localised area. In other words, we'll be able to teleport back here after we've reclaimed my hideout.)]
+			[meraxis.speech(Я бы хотела, чтобы мы могли просто телепортироваться туда, но заклинания юко мешают телепортации в Шинринских Высотах,)] говорит она, когда вы с двумя подругами направляетесь к западным воротам, [meraxis.speech(То, что ты видела, как я читаю, дало мне некоторые подсказки о том, как работают их заклинания против телепортации, поэтому, когда мы окажемся в моей укрытии, я смогу противодействовать им в пределах локальной области. Другими словами, мы сможем телепортироваться обратно сюда после того, как мы вернем мою укрытие.)]
 		</p>
 		<p>
-			Continuing down the road, the two of you are soon passing through the gate. You look over at the Amazon's camp as you [pc.walk] past it, but although you see many of the Amazons moving about between the tents, you don't spot Ursa or Aurokaris.
+			Продолжая путь, вы с двумя подругами скоро проходите через ворота. Вы смотрите на лагерь амазонок, когда вы [pc.walk] проходите мимо него, но, хотя вы видите, как многие амазонки перемещаются между палатками, вы не замечаете Урсу или Аурокариса.
 		</p>
 		<p>
-			After about fifteen minutes since you set out from The Red Dragon, Elis is getting smaller behind you, and the mountains to the west are looming up ahead. Between you and the snow-capped peaks in the far distance, lies a rolling landscape of forest-covered hills. Pointing to those hills, Meraxis proclaims, [meraxis.speech(Behold the Shinrin Highlands! My hideout isn't really too far away, but it'll still take us a few hours to get there.)]
+			Через пятнадцать минут после того, как вы отправились из Красного Дракона, Элис становится меньше позади вас, а горы на западе возвышаются впереди. Между вами и заснеженными вершинами вдалеке лежит холмистый ландшафт, покрытый лесом. Указывая на эти холмы, Мераксис восклицает, [meraxis.speech(Вот Шинринские Высоты! Моя укрытие не слишком далеко, но нам все равно понадобится несколько часов, чтобы добраться туда.)]
 		</p>
 	#ENDIF
 	]]>
@@ -58,99 +58,96 @@
 	
 	<htmlContent tag="START_PREGNANCY_SORTED"><![CDATA[
 	<p>
-		It takes an hour for Meraxis to return. One moment you're waiting alone on the sofa, and the next, in a flash of purple light, the chuuni [meraxis.race] has appeared in front of you.
+			Проходит час, прежде чем Мераксис возвращается. В один момент вы ждете в одиночестве на диване, а в следующий, в вспышке фиолетового света, чууни [meraxis.race] появляется перед вами.
 	</p>
 	<p>
-		[meraxis.speech(Mommy sorted it all out!)] she happily exclaims as she pats her flat tummy. Despite having spent quite some time in this new world, you're still not completely used to how easily pregnancies can be dealt with, and for a moment you're stunned and not sure what to say. Taking this opportunity to point her finger at you and strike a heroic pose, Meraxis energetically shouts, [meraxis.speech(What are we waiting for?! Fear not, Takahashi, for we are on our way to rescue you!)]
+		[meraxis.speech(Мама все устроила!)] с радостью восклицает она, поглаживая свой плоский живот. Несмотря на то, что вы уже некоторое время находитесь в этом новом мире, вы все еще не совсем привыкли к тому, как легко можно справиться с беременностью, и на мгновение вы ошеломлены и не знаете, что сказать. Пользуясь этой возможностью, чтобы указать на вас пальцем и принять героическую позу, Мераксис энергично кричит, [meraxis.speech(Что мы ждем?! Не бойся, Такахаси, мы идем тебя спасать!)]
 	</p>
 	<p>
-		Recovering from the shock of realising that Meraxis has just given birth, you ask her if she's feeling ok, and if she's sure that Takahashi will need rescuing. After all, maybe she's just forgotten to check in with her, and is simply living in the Shinrin Highlands, waiting for Meraxis to come and find her.
+		Приходя в себя после шока от осознания того, что Мераксис только что родила, вы спрашиваете ее, чувствует ли она себя хорошо, и действительно ли Такахаси нуждается в спасении. В конце концов, возможно, она просто забыла проверить, и просто живет в Шинрин Хайлендс, ожидая, когда Мераксис придет и найдет ее.
 	</p>
 	<p>
-		[meraxis.speech(I'm fine, don't worry about me! And as for Takahashi; she's never failed to contact me before,)] Meraxis replies, [meraxis.speech(I find it hard to believe that she's really in trouble, but I can't think of another reason why she'd have kept me in the dark for so long. Hopefully we'll find her at my old hideout, and if not, then we should at least be able to find some clue as to her current whereabouts there. Come on, my nemesis, let's go!)]
+		[meraxis.speech(Я в порядке, не беспокойся обо мне! А что касается Такахаси; она никогда не переставала со мной общаться,)] отвечает Мераксис, [meraxis.speech(Мне трудно поверить, что она действительно в беде, но я не могу придумать другого объяснения, почему она держала меня в неведении так долго. Надеюсь, мы найдем ее в моем старом убежище, а если нет, то, по крайней мере, мы сможем найти там какую-то подсказку о ее текущем местонахождении. Ну что ж, мой недруг, давай пойдем!)]
 	</p>
 	<p>
-		You're left to catch up as Meraxis energetically bounds over to the door and rushes outside. Following in her wake, you step outside and hurry to catch up as the cheerful chuuni [meraxis.race] turns to the right and skips down the road in a westward direction.
+		Вы остаетесь позади, пока Мераксис энергично подбегает к двери и выбегает наружу. Следуя за ней, вы выходите на улицу и спешите догнать ее, когда радостная чуни [meraxis.race] поворачивает направо и бежит по дороге в западном направлении.
 	</p>
 	<p>
-		[meraxis.speech(I wish we could just teleport there, but the youko's spells prevent teleportation from working in the Shinrin Highlands,)] she says as the two of you head towards the west gate, [meraxis.speech(That book you saw me reading earlier gave me some clues as to how their anti-teleportation spells work, so once we're at my hideout, I should be able to counteract them within a localised area. In other words, we'll be able to teleport back here after we've reclaimed my hideout.)]
+		[meraxis.speech(Я бы с удовольствием телепортировалась туда, но заклинания юко не позволяют телепортации работать в Шинринских Высотах,)] говорит она, когда вы с ней направляетесь к западным воротам, [meraxis.speech(То, что я читала раньше, дало мне некоторые подсказки о том, как работают их заклинания против телепортации, поэтому, когда мы окажемся в моей укрытии, я смогу противодействовать им в локальной области. Другими словами, мы сможем телепортироваться обратно сюда после того, как мы вернем мою укрытие.)]
 	</p>
 	<p>
-		Continuing down the road, the two of you are soon passing through the gate. You look over at the Amazon's camp as you [pc.walk] past it, but although you see many of the Amazons moving about between the tents, you don't spot Ursa or Aurokaris.
-	</p>
-	<p>
-		After about fifteen minutes since you set out from The Red Dragon, Elis is getting smaller behind you, and the mountains to the west are looming up ahead. Between you and the snow-capped peaks in the far distance, lies a rolling landscape of forest-covered hills. Pointing to those hills, Meraxis proclaims, [meraxis.speech(Behold the Shinrin Highlands! My hideout isn't really too far away, but it'll still take us a few hours to get there.)]
-	</p>
+		Продолжая путь, вы скоро проходите через ворота. Вы смотрите на лагерь амазонок, когда вы [pc.walk] проходите мимо него, но, хотя вы видите, как многие амазонки перемещаются между палатками, вы не замечаете Урсу или Аурокариса.
+	</p><p>
+		Через пятнадцать минут после того, как вы отправились из Красного Дракона, Элис становится меньше позади вас, а горы на западе поднимаются впереди. Между вами и заснеженными вершинами вдалеке лежит холмистый ландшафт, покрытый лесом. Указывая на эти холмы, Мераксис восклицает: [meraxis.speech(Посмотрите на Шинринские Высоты! Моя укрытие не слишком далеко, но нам все равно потребуется несколько часов, чтобы добраться туда.)]
+</p>
 	]]>
 	</htmlContent>
 	
 	
 	<htmlContent tag="WORLD_MAP"><![CDATA[
 	<p>
-		Continuing west, you make your way through the fields which lie to the west of Elis, before reaching a point where the elevation and nature of the surrounding flora noticeably changes. Instead of a flat, open landscape, you find yourselves travelling up and down undulating terrain, which is sometimes punctuated by long, flat valleys in which rice fields and the occasional Japanese-style farmhouse is located.
+		Продолжая путь на запад, вы проходите через поля, которые находятся к западу от Элиса, прежде чем достичь точки, где рельеф и характер окружающей флоры заметно меняются. Вместо плоского, открытого ландшафта, вы оказываетесь в горах, которые иногда пересекаются с длинными, плоскими долинами, в которых расположены рисовые поля и отдельные фермы в японском стиле.
 	</p>
 	<p>
-		[meraxis.speech(Do not approach those dwellings, my nemesis!)] Meraxis warns when you encounter your first farm, [meraxis.speech(There's no telling if it's a benevolent or trickster youko who lives there. A follower of Kazuha would invite us in and treat us well, but if it's a servant of Kayo who lives there, then we'd receive nothing but misfortune.)]
+		[meraxis.speech(Не подходите к этим домам, мой недруг!)] Мераксис предупреждает, когда вы встречаете свою первую ферму, [meraxis.speech(Неизвестно, добродушный это юко или обманщик. Последователь Кадзухи пригласил бы нас в дом и угостил бы, но если это слуга Кайо, то мы бы не получили ничего, кроме несчастья.)]
 	</p>
 	<p>
-		After a couple of hours spent trekking through the Shinrin Highlands, you ask Meraxis if
+		После нескольких часов, проведенных в поисках в Шинринских Высотах, вы спрашиваете Мераксис, 
 		#IF(pc.isAbleToFly())
-			 it'd be quicker for her to just grow her wings so that the two of you could simply fly to her hideout.
+			будет ли быстрее, если она просто разрастет свои крылья, чтобы вы могли просто лететь к ее укрытию.
 		#ELSE
-			 she's planning on growing her wings and flying up to scout the way ahead.
+			она планирует разрастить свои крылья и взлететь, чтобы разглядеть путь вперед.
 		#ENDIF
-		 Shaking her head, she warns, [meraxis.speech(There's nothing inherently dangerous about flying over these lands, but for now I want to avoid being seen as much as possible. If my hideout has fallen into the wicked claws of a trickster youko, then I don't want her to have any warning that her doom approaches.)]
+			Мераксис качает головой и предупреждает, [meraxis.speech(Нет ничего опасного в том, чтобы летать над этими землями, но на данный момент я хочу избежать внимания как можно больше. Если мое укрытие попало в коварные руки обманщика юко, то я не хочу, чтобы она знала, что ее конец приближается.)]
 	</p>
 	<p>
-		After almost five hours have passed since you left Elis, Meraxis suddenly stops and declares, [meraxis.speech(Our journey is almost at an end! My hideout is located within the next valley, and so after we've conquered this last hill we shall arrive at our destination.)]
+		После почти пяти часов пути с момента вашего отъезда из Элиса, Мераксис внезапно останавливается и заявляет, [meraxis.speech(Наш путь почти завершен! Моя укрытие находится в следующей долине, и поэтому, после того как мы преодолеем этот последний холм, мы достигнем нашей цели.)]
 	</p>
 	<p>
-		At that moment, a feminine voice drifts to you on the breeze, [style.speechFeminine(Please heed my words, travellers. You must turn back.)]
+		В этот момент к вам на ветру доносится женский голос, [style.speechFeminine(Пожалуйста, прислушайтесь к моим словам, путешественники. Вам нужно повернуть назад.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING"><![CDATA[
 	<p>
-		Spinning around to face the direction which the voice came from, you call out and demand that the owner of the voice show herself. Doing as you ask, a beautiful young woman, with long, white hair and four similarly-coloured tails swishing behind her, steps out from behind a tree. On top of her head, she has a pair of large, white-furred fox ears, which droop in a rather submissive manner as she courteously bows to you and Meraxis and introduces herself, [style.speechFeminine(I am Akinaga, and these are my lands which you are travelling through.)]
+		Оборачиваясь в сторону, откуда доносился голос, вы зовете и требуете, чтобы владелица голоса показалась. Выполняя ваше требование, красивая молодая женщина с длинными, белыми волосами и четырьмя хвостами того же цвета, свисающими за ней, выходит из-за дерева. На ее голове у нее есть пара больших, белых хвостов лисы, которые вяло свисают, когда она учтиво кланяется вам и Мераксису и представляет себя, [style.speechFeminine(Я Акинага, и это мои земли, через которые вы путешествуете.)]
+	</p><p>
+		[meraxis.speech(Она должна быть последовательницей Казухи; обманщица Юко никогда не показала бы себя нам так легко,) Мерэксис шепчет, прежде чем удивляет тебя, возвращая лук Юко в жесте, который слишком вежлив для тебя, чтобы ожидать его от чууни [meraxis.race]. Обращаясь к этой незнакомке, она говорит: [meraxis.speech(Я Мерэксис, тёмная сирена, владелица вселенских сил, способных разрушить вселенную! Ах, и это [pc.name]. Одна из моих многих тайных обителей находится за этим холмом, и мы с ней направляемся туда, чтобы узнать, находится ли там мой спутник, Такахаси.)]
 	</p>
 	<p>
-		[meraxis.speech(She must be a follower of Kazuha; a trickster youko would never have shown herself to us so readily,)] Meraxis whispers, before surprising you by returning the youko's bow in a gesture that's too polite for you to have expected to come from the chuuni [meraxis.race]. Addressing this stranger, she says, [meraxis.speech(I'm Meraxis, the dark siren, wielder of universe-shattering cosmic powers! Oh, and this is [pc.name]. One of my many secret lairs lies over this hill, and the two of us are on our way to see if my companion, Takahashi, is there.)]
+		[style.speechFeminine(Да, я помню вас, когда вы проходили через мою территорию много лет назад,)] Акинага раскрывает, прежде чем повторить свое предупреждение, [style.speechFeminine(Я не хочу, чтобы вам причинили вред, поэтому, пожалуйста, поверните назад. Семихвостая юко по имени Ширануи заняла место, где вы когда-то жили, и она наложила на эту область мощное заклинание, которое заманивает в ловушку всех, кто в нее попадает. Я думаю, что ваш друг, Такахаси, попал в эту ловушку.)] 
 	</p>
 	<p>
-		[style.speechFeminine(Yes, I recognise you from when you used to pass through my territory many years ago,)] Akinaga reveals, before repeating her warning, [style.speechFeminine(I do not wish to see you come to harm, so please, turn back. A seven-tailed youko by the name of Shiranui has claimed the place where once you dwelt, and she has laid a potent spell over the area which will trap anyone who enters it within a realm of illusions. I believe that your friend, Takahashi, has wandered into this trap.)] 
+		[meraxis.speech(Эти иллюзии не страшат меня!)] Мераксис хвастается, возвращая свою обычную энергичную манеру разговора в процессе. Продолжая, она заявляет, [meraxis.speech(Все, что вам нужно сделать, чтобы разрушить эти заклинания, это уничтожить аркана внутри иллюзорной реальности. Такахаси должен был знать это... Неважно! Мы собираемся спасти ее!)]
 	</p>
 	<p>
-		[meraxis.speech(Those illusion spells don't scare me!)] Meraxis boasts, regaining her usual energetic manner of talking in the process. Continuing on, she declares, [meraxis.speech(All you need to do to break those spells is to destroy the arcane anchors within the realm of illusion. Takahashi should have known that as well... No matter! We're going to rescue her!)]
+		[style.speechFeminine(Вы правы,)] юко отвечает, прежде чем вздыхая, оставляет вас с этими прощальными словами, [style.speechFeminine(Я вижу, что вы преданны своему пути. Ширануи-сама служит Кайо и является как могущественной, так и хитрой. Я думаю, что аркана, которые она использует, имеют форму огней, которые горят ярко-розовым цветом и не могут быть потушены водой, ветром или любыми другими мирскими средствами. Если вы добровольно рискуете своей жизнью, чтобы спасти своего друга, ищите объекты, которые кажутся неуместными рядом с этими огнями. Уничтожив эти объекты, огни погаснут, и заклинание будет разрушено. Удачи.)] 
 	</p>
 	<p>
-		[style.speechFeminine(You are correct,)] the youko replies, before sighing and leaving you with these parting words, [style.speechFeminine(I see that you are committed to your path. Shiranui-sama is a servant of Kayo, and is both powerful and crafty. I believe that the anchors she uses take the form of fires which burn bright pink and cannot be extinguished with water, wind, or any other mundane means. If you do willingly venture into her realm in order to save your friend, look for objects which seem out of place beside these fires. By destroying those objects, the fires will extinguish and the spell will be broken. Good luck.)]
+		С этим, вспышка света проходит по Акинаге, и она превращается в массу осенних листьев клена, которые улетают в внезапный, неестественный порыв ветра.
 	</p>
 	<p>
-		With that, a shimmer of light passes over Akinaga, and she turns into a mass of autumnal-coloured acer leaves, which blow away in a sudden, unnatural gust of wind.
+		[meraxis.speech(Хм... Это объясняет, почему Такахаси не связался со мной,)] Мерэксис фыркает, прежде чем повернуться к вам с серьезным выражением лица и сказать, [meraxis.speech(Семь хвостов у ёко - это невероятно мощно, но даже для одной из них, будет трудно поддерживать заклинание иллюзии, если мы трое заперты в нем. Хотя Такахаси и не смог потушить огонь, это должно быть относительно легко сделать, когда мы окажемся внутри. Нам просто нужно помнить, что сказала Акинага; сломать любые необычные предметы рядом с огнями, чтобы потушить их. Огонь служит якорем, чтобы поддерживать заклинание, так что без него ловушка Ширануи развалится, и мы будем свободны.)]
 	</p>
 	<p>
-		[meraxis.speech(Hmm... That explains why Takahashi hasn't made contact with me,)] Meraxis tuts, before turning to you with a serious look on her face and saying, [meraxis.speech(A seven-tailed youko is incredibly powerful, but even for one of them, it will be hard to keep the illusion spell going if there are three of us trapped within it. While it might have been impossible for Takahashi to extinguish the fires, it should be relatively easy to do once the two of us get in there. We just need to remember what Akinaga said; break any unusual objects near the fires to extinguish them. The fires serve as anchors to keep the spell going, so without them, Shiranui's trap will fall apart and we'll be set free.)]
-	</p>
-	<p>
-		You tell Meraxis that you understand, to which she happily nods and loudly declares in her usual, energetic manner, [meraxis.speech(Onwards! We're coming to save you, Takahashi!)]
+		Вы говорите Мерэксис, что понимаете, на что она радостно кивает и громко заявляет в своем обычном, энергичном манере, [meraxis.speech(Вперед! Мы идем спасти тебя, Такахаси!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HIDEOUT"><![CDATA[
 	<p>
-		The two of you continue on your way over the next hill, and from your elevated vantage point, you're able to get your first look at the place where Meraxis's hideout is located. Gazing down into the valley, all you can see is a swirling, impenetrable wall of mist.
+		Вы продолжаете путь через следующую гору, и с вашей возвышенной точки обзора, вы можете впервые увидеть место, где находится укрытие Мерэксис. Глядя вниз в долину, вы видите только закручивающуюся, непроницаемую стену тумана.
 	</p>
 	<p>
-		[meraxis.speech(That's Shiranui's trap; once we enter that mist, there's no way out except via destroying the arcane anchors which keep the spell powered. These traps are favourites of the followers of Kayo, but it takes at least a six-tailed youko to properly set one up,)] Meraxis says, [meraxis.speech(A seven-tail like Shiranui should be able to support three anchors within her trap, so there'll be three fires to extinguish. What a foolish youko she is! Some trickster youko use blades of grass or small pebbles as their anchors, but by using fires, we'll easily be able to find Shiranui's anchors and extinguish them!)]
+		[meraxis.speech(Это ловушка Ширануи; как только мы войдем в туман, единственный выход - уничтожить аркана, которые поддерживают заклинание. Эти ловушки - любимое оружие последователей Кайо, но для их установки требуется как минимум шестворневой юко.)] Мераксис говорит, [meraxis.speech(Семихвостая, как Ширануи, должна быть способна поддерживать три якоря в своей ловушке, так что нам придется потушить три огня. Какая глупая юко! Некоторые юко-трикстеры используют в качестве якорей лезвия травы или мелкие камешки, но используя огонь, мы легко сможем найти якоря Ширануи и потушить их!)]
 	</p>
 	<p>
-		Committed to rescuing Takahashi, and with a clear plan of how to escape from within Shiranui's trap, the two of you travel down the side of the hill and enter the mist-wreathed valley. Behind the ghostly silhouettes of the trees which line the sides of the path you find yourself travelling down, a shadowy, feminine figure flits in and out of your peripheral vision.
-	</p>
-	<p>
-		[shiranui.speech(Two more rude trespassers caught in my net!)] an amused-sounding, feminine voice calls out from all around you. This morphs into a burst of sinister-sounding laughter, and then suddenly the shadowy figure can be seen peeking out at you from behind multiple trees all at once. Turning to face these shadowy threats, you and Meraxis stand back-to-back, ready for whatever will come your way.
-	</p>
+		Приверженные спасению Такахаси и имея четкий план, как выбраться из ловушки Ширануи, вы с Мераксисом спускаетесь с холма и входите в окутанную туманом долину. За призрачными силуэтами деревьев, которые выстроились вдоль тропы, вы видите, как теневая, женственная фигура мелькает в вашем периферийном зрении.
+	</p><p>
+		[shiranui.speech(Еще двое грубых нарушителей попались в мою сеть!)] веселый, женственный голос раздается вокруг тебя. Это переходит в вспышку зловещего смеха, а затем внезапно теневая фигура выглядывает из-за нескольких деревьев одновременно. Обернувшись к этим теневым угрозам, ты и Мераксис стоите спиной к спине, готовые к тому, что принесет вам судьба.
+</p>
 	<p>
 		[meraxis.speech(Stay focused, my nemesis! So long as we don't get split up we should be-)] Meraxis says from behind you, but her words are suddenly cut short. Spinning around, you see that the chuuni [meraxis.race] has vanished, and so too have all of the shadowy figures. A total silence, as thick and as heavy as the surrounding mists, completely envelops you, and although you remain ready for her to reappear, Shiranui doesn't show herself to you again.
 	</p>

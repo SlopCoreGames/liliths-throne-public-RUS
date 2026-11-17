@@ -3,121 +3,123 @@
 
 	<htmlContent tag="LUMI_APPEARS"><![CDATA[
 	<p>
-		You find yourself walking through labyrinthine alleyways, with not a soul in sight. Back-doors and steaming vents line the dark brick walls, and you must often navigate around overflowing bins and stacks of empty crates in order to make any progress. These less-travelled parts of Dominion have a dangerous feel to them, and you can't shake the feeling that you're being followed.
+		Вы оказываетесь в лабиринте узких переулков, где никого не видно. Задние двери и горячие вентиляционные отверстия выложены темными кирпичными стенами, и вам часто приходится обходить переполненные мусорные баки и стопки пустых ящиков, чтобы продолжить путь. Эти менее посещаемые части Dominion имеют опасный вид, и вы не можете избавиться от ощущения, что за вами следят.
 	</p>
 	<p>
-		As you find yourself walking down yet another narrow passage, you hear a high-pitched tinkling noise coming from somewhere behind you, as though someone's just stepped on broken glass. Quickly turning to face the origin of the sound, you see nothing but a deserted alleyway, with not a soul in sight. Shrugging, you continue on your way.
+		Когда вы оказываетесь в еще одном узком проходе, вы слышите высокий звонкий звук, доносящийся из-за вашей спины, как будто кто-то наступил на разбитое стекло. Быстро повернувшись, чтобы посмотреть в сторону источника звука, вы видите только пустынный переулок, где никого не видно. Шейпнув плечами, вы продолжаете свой путь.
 	</p>
 	<p>
-		A few moments later, you hear yet another sound coming from behind you, though this time, it's one of quick, barely-audible footsteps. Whoever it is that's making these noises is definitely doing their best to try and remain silent, but, despite their efforts, you're now convinced that someone is stalking you.
+		Через несколько мгновений вы слышите еще один звук, доносящийся из-за вашей спины, но на этот раз это быстрые, едва слышные шаги. Кто бы это ни был, кто делает эти звуки, определенно старается оставаться тихим, но, несмотря на свои усилия, вы теперь убеждены, что кто-то преследует вас.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_APPEARS_EVADE"><![CDATA[
 	<p>
-		Not wanting to stick around to discover who this mysterious stalker could be, you turn and hurry down a particularly narrow passageway. Reaching the far end, you look back to see a little shadowy figure rush past the opening.
+		Не желая оставаться, чтобы узнать, кто этот загадочный преследователь, вы поворачиваетесь и спешите по особенно узкому проходу. Дойдя до его дальнего конца, вы оглядываетесь и видите, как маленькая теневая фигура мчится мимо отверстия.
 	</p>
 	<p>
-		It looks like you've evaded your pursuer, and you turn around to continue on your way.
+		Похоже, вы уклонились от преследователя, и вы поворачиваетесь, чтобы продолжить свой путь.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_APPEARS_FIRST_ENCOUNTER"><![CDATA[
 	<p>
-		You aren't going to run from the first hint of danger, and decide that you'll turn the tables on the person who's been tailing you for all this time.
+		Вы не собираетесь бежать при первом же намеке на опасность и решаете, что повернетесь к тому, кто преследовал вас все это время.
 	</p>
 	<p>
-		[pc.speech(Oh no! It looks like I've got lost again!)]
-		 You sigh, trying to lull your pursuer into a sense of false security.
+		[pc.speech(О нет! Кажется, я снова заблудилась!)]
+		 Вы вздыхаете, пытаясь усыпить бдительность преследователя.
 	</p>
 	<p>
-		Continuing forwards down the narrow alleyway, you soon come to a sharp T-junction; the perfect spot where you'll be able to hide. Striding forwards, you take the turn to your left, and, being certain that your stalker must have lost sight of you, you squat down behind a stack of wooden crates and prepare to spring your ambush.
+		Продолжая идти вперед по узкому переулку, вы вскоре попадаете в резкий поворот на Т-образном перекрестке; идеальное место, где вы сможете спрятаться. Идя вперед, вы поворачиваете налево, и, будучи уверенной, что ваш преследователь потерял вас из виду, вы приседаете за стопкой деревянных ящиков и готовитесь к тому, чтобы устроить засаду.
 	</p>
 	<p>
-		Just as you'd planned, you soon hear the sounds of chinking bottles and scuffed footsteps as your assailant follows your trail. You can't help but grin and gloat at the thought of what you're going to do once you get your [pc.hands] on them. The sound of footsteps suddenly dies away, and you prepare for the mysterious stalker to silently sneak right past your hiding place.
+		Как и планировалось, вы вскоре слышите звуки бьющихся бутылок и шагов по мостовой, когда ваш нападающий следует по вашим следам. Вы не можете сдержать улыбку и наслаждаетесь мыслью о том, что вы собираетесь сделать, когда получите своего [pc.hands]. Звук шагов внезапно стихает, и вы готовитесь к тому, что таинственный преследователь тихо проскользнет мимо вашего укрытия.
 	</p>
 	<p>
-		Except nobody is coming.
+		Но никто не приходит.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_APPEARS_FIRST_ENCOUNTER_WAITING"><![CDATA[
 	<p>
-		[pc.thought(Wait, how long has it been? Why aren't they coming?)]
-		 You think to yourself, confused at how easily your perfect plan has been foiled. The only explanation that you're able to think of is that whoever was silently chasing you decided to give up and leave before stumbling upon your ambush.
+		[pc.thought(Подожди, сколько времени прошло? Почему они не приходят?)]
+		 Вы думаете, озадаченная тем, как легко ваш идеальный план был сорван. Единственное объяснение, которое вы можете себе представить, это то, что тот, кто тихо преследовал вас, решил сдаться и уйти, прежде чем наткнуться на вашу засаду.
+	</p><p>
+		Вздохнув, ты встаешь и быстро растягиваешься, прыгая на месте несколько раз, чтобы привести в порядок свои конечности. Оглядываясь по всей длине переулка, ты не замечаешь никаких признаков жизни или какой-либо подозрительной деятельности.
 	</p>
 	<p>
-		Letting out a sigh, you stand up and quickly stretch, hopping back and forth a few times on your feet in order to get your limbs back in shape. Looking up and down the length of the alley, you don't see any sign of life, or of any suspicious activity whatsoever.
-	</p>
-	<p>
-		[pc.speech(I've wasted enough time here, I'd better lea-)]
-		 You start to say, but you're suddenly cut short by a flash of movement that rushes past you from behind. Your eyes catch up with what looks to be a humanoid with a big, white fluffy tail just as she reaches the end of the alleyway.
+		[pc.speech(Я потратил здесь достаточно времени, я лучше уйду-)]
+		 Вы начинаете говорить, но вас внезапно перебивает вспышка движения, которая проносится мимо вас сзади. Ваши глаза улавливают движение, которое выглядит как гуманоид с большим, белым пушистым хвостом, как раз когда она достигает конца переулка.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MAX_MONEY_STOLEN"><![CDATA[
 	<p>
-		You reflexively check your belongings, and quickly discover that [style.boldTerrible(you're missing seven-hundred flames!)]
+		Вы рефлекторно проверяете свои вещи и быстро обнаруживаете, что [style.boldTerrible(у вас не хватает семисот огней!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALL_MONEY_STOLEN"><![CDATA[
 	<p>
-		You reflexively check your belongings, and quickly discover that [style.boldTerrible(all of your money has been stolen!)]
+		Вы рефлекторно проверяете свои вещи и быстро обнаруживаете, что [style.boldTerrible(все ваши деньги украдены!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_LET_THEM_ESCAPE"><![CDATA[
 	<p>
-		Deciding that you have better things to do than chasing some thief through the alleyways, you tell yourself that being a few flames lighter won't do you much harm, and, with a shrug, you continue on your way, reminding yourself to stay alert for any possible thieves in the future.
+		Решив, что у вас есть более важные дела, чем преследование вора по переулкам, вы говорите себе, что быть на несколько огней легче не причинит вам большого вреда, и, с пожиманием плечами, вы продолжаете свой путь, напоминая себе, чтобы вы оставались настороже в отношении любых возможных воров в будущем.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_CHASE"><![CDATA[
 	<p>
-		[pc.speech(Hey! Come back here, you thief!)]
-		 You shout as you start running after the white, fluffy tail.
-		 The humanoid thief unsurprisingly ignores your command, and you see them quickly dash off down the right-hand turn at the end of the alley.
+		[pc.speech(Эй! Вернись сюда, вор!)]
+		 Вы кричите, когда начинаете бежать за белым, пушистым хвостом.
+		 Гуманоидный вор, как и ожидалось, игнорирует ваш приказ, и вы видите, как она быстро устремляется вниз по правому повороту в конце переулка.
 	</p>
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF game.isDayTime()
 		#THEN
-			Running after them, you take the same right-hand turn, and immediately find yourself confronted with one of Dominion's bustling streets. Quickly scanning the crowd, you manage to spot a flash of the fugitive's white furry tail as they dart and weave through the throngs of people with alarming agility. Following in their wake, you end up bumping into numerous people, pushing them aside and excusing yourself while doing your best not to fall behind.
+			Бегая за ними, ты поворачиваешь направо и сразу оказываешься лицом к лицу с одной из оживленных улиц Доминиона. Быстро осматривая толпу, ты замечаешь белую пушистую мордочку беглеца, который ловко пробирается сквозь толпу людей. Следуя за ним, ты натыкаешься на множество людей, отталкивая их в сторону и извиняясь, стараясь не отстать.
 		#ELSE
-			Running after them, you take the same right-hand turn, and immediately find yourself confronted with one of Dominion's streets. As it's night-time, the area is far less busy than it would be during the day, and you easily spot the fugitive, lit by the ornate street-lights, running off down the path before you.
+			Бегая за ними, ты поворачиваешь направо и сразу оказываешься лицом к лицу с одной из улиц Доминиона. Поскольку сейчас ночь, улица гораздо менее оживлена, чем днем, и ты легко замечаешь беглеца, освещенного украшенными фонарями, который убегает по тротуару перед тобой.
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
-		The escapee turns their head in mid-sprint, and, catching sight of you still in full pursuit, their eyes go wide, and they immediately turn back to focus on the way ahead. From what you saw in that moment, the thief has a rather feminine face with a small, pointy nose and puffy jowls, as if they were holding something in their mouth. You suspect that something to be your stolen money, and you're not sure whether to be amused by this animalistic behaviour, or disgusted by the fact that your money is now sure to be covered in saliva.
+		Беглец поворачивает голову на полном ходу, и, увидев, что ты все еще преследуешь его, глаза его расширяются, и он сразу же возвращает внимание на путь впереди. Из того, что ты увидел в тот момент, у вора довольно женское лицо с маленьким, острым носом и пухлыми щеками, как будто он что-то держит в зубах. Ты подозреваешь, что это твои украденные деньги, и не уверен, стоит ли тебе смеяться над этим животным поведением или отвращаться от того, что твои деньги теперь наверняка покрыты слюной.
 	</p>
 	<p>
-		With you hot on their heels, the small figure suddenly darts back into a nearby alleyway, obviously hoping to shake you off their tail. Unfortunately for this opportunistic thief, you're determined to catch them, no matter what it takes, and turn to follow them down the dark passage.
+		С тобой горячо на пятках, маленький силуэт внезапно устремляется обратно в ближайший переулок, очевидно надеясь сбросить тебя с себя. К сожалению для этой оппортунистической воровки, ты намерен поймать ее, неважно, что для этого потребуется, и поворачиваешь, чтобы последовать за ней по темному проходу.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_CHASE_CONTINUE"><![CDATA[
 	<p>
-		As you enter the alleyway, your eyes quickly settle on the unmistakable figure of the fluffy-tailed thief, desperately trying to climb a twelve-foot-high wall. As you hurry forwards, she loses her grip, and falls back onto her butt. It looks like it's a dead-end for your fluffy fugitive, and a win for you.
+		Когда ты входишь в переулок, твои глаза быстро останавливаются на непередаваемом силуэте пушистого вора, отчаянно пытающегося взобраться на двенадцатифутовую стену. Когда ты спешишь вперед, она теряет хватку и падает на ягодицы. Кажется, что это тупик для твоего пушистого беглеца, и победа для тебя.
 	</p>
 	<p>
-		Now that you have a moment to take a good look at the thief, you see that she has a small, human body, covered in light skin. The only non-human parts that she has are a fluffy white wolf tail and two perky wolf ears perched on top of her head, which twitch backwards as they hear you approach. Just like her tail and ears, her long, messy hair is a brilliant white colour, and falls all the way down to her small, round butt, which is sure to be well-bruised from the fall she just took. As she jumps to her feet and spins around to face you, you see that she has small, B-cup breasts, and, standing at full height, she can't measure more than five-foot-two.
+		Теперь, когда у тебя есть момент, чтобы хорошенько рассмотреть воровку, ты видишь, что у нее маленький, человеческий корпус, покрытый светлой кожей. Единственные нечеловеческие части, которые у нее есть, это пушистый белый волчий хвост и два пушистых волчьих уха, сидящих на макушке ее головы, которые отдергиваются назад, когда они слышат, как ты приближаешься. Как и ее хвост и уши, ее длинные, растрепанные волосы бледно-белого цвета, и они падают до ее маленькой, круглой попки, которая, несомненно, будет хорошо ушиблена от падения, которое она только что взяла. Когда она прыгает на ноги и поворачивается, чтобы посмотреть на тебя, ты видишь, что у нее маленькие, B-куповые груди, и, стоя на полном росте, она не может быть выше пяти футов двух дюймов.
 	</p>
 	<p>
-		The small [lumi.race] blushes as she realises that she's caught, and, you see that her cheeks are still swollen from the coin purse she's holding in her mouth. Her emerald-green eyes lock onto yours, and, from a mix of shame and anger, tears start to well up in them. You can't help but think how cute she looks, but, reminding yourself that she's a thief, you step forwards and take on a stern tone as you call out to her.
+		Маленькая [lumi.race] краснеет, понимая, что ее поймали, и, как ты видишь, ее щеки все еще опухли от кошелька, который она держит во рту. Ее изумрудно-зеленые глаза прикованы к твоим, и, из-за смешения стыда и гнева, в них начинают появляться слезы. Ты не можешь не подумать, как мило она выглядит, но, напоминая себе, что она воровка, ты шагаешь вперед и принимаешь строгий тон, когда зовешь ее.
 	</p>
 	<p>
-		[pc.speech(So, the little thief's run has finally come to an end.)] You say, with hands on hips.
+		[pc.speech(Итак, бег маленькой воровки наконец закончился.)] Ты говоришь, скрестив руки на бедрах.
 	</p>
 	<p>
-		[lumi.speech(Mmmph mphh mph!)] The girl tries to reply, and blushes even harder from embarrassment as she seems to only just remember that she's got her mouth full. Quickly raising [lumi.her] hands in front of [lumi.her] face, she suddenly spits out a handful of coins, your coins. Now finally able to speak, she replies, [lumi.speech(W-What do you want?!)]
+		[lumi.speech(Ммм-мм-мм!)] Девушка пытается ответить, и краснеет еще сильнее от смущения, так как она только что вспомнила, что у нее во рту. Быстро поднимая [lumi.her] руки перед лицом [lumi.her], она вдруг выплевывает горсть монет, твои монеты. Теперь, наконец, способная говорить, она отвечает, [lumi.speech(Что ты хочешь?!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -125,17 +127,16 @@
 	
 	<htmlContent tag="LUMI_COMBAT_PC_OPENING"><![CDATA[
 	<p>
-		[pc.speech(What do I want? Well, my money first of all, and then to teach a lesson to a certain naughty wolf-girl.)]
-		 You tell her, taking a proper stance to fight.
+		[pc.speech(Что я хочу? Ну, сначала мои деньги, а потом научить урок определенной непослушной волчице.)]
+		 Ты говоришь ей, принимая правильную стойку для боя.
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="LUMI_COMBAT_LUMI_OPENING"><![CDATA[
-	<p>
-		[lumi.speech(I knew it! I knew you wanted to hurt me, l-like all the others!)]
-		 The wolf-girl replies, before suddenly jumping back down into a squatting position.
-		 Not giving you a chance to react, [lumi.she] suddenly pounces forwards, hurling herself at you!
+	<htmlContent tag="LUMI_COMBAT_LUMI_OPENING"><![CDATA[<p>
+		[lumi.speech(Я знала это! Я знала, что ты хочешь мне навредить, как и все остальные!)]
+		 Волчица отвечает, прежде чем внезапно прыгает обратно в положение приседа.
+		 Не давая тебе времени на реакцию, [lumi.she] внезапно бросается вперед, нацеливаясь на тебя!
 	</p>
 	]]>
 	</htmlContent>
@@ -168,82 +169,82 @@
 		You quietly start to gather up the stolen coins. Most of them were dropped at your feet, but a few are lying beside the defeated wolf-girl. As you step forwards to collect them, you take a glance at the half-unconscious thief to make sure that she's ok.
 	</p>
 	<p>
-		As you do so, she suddenly opens an eye, which flicks over to peek at your bent down form as you reach for another coin. Taking this opportunity, she jumps to her feet with surprising flexibility, and, darting past you, sprints off down the alleyway at full tilt. You suddenly find yourself alone and wondering how she managed to run off that quickly after taking such a beating. Shrugging, you finish collecting the last couple of coins and prepare to leave.
+		Как только ты это делаешь, она внезапно открывает один глаз, который скользит по тебе, когда ты тянешься за еще одной монетой. Увидев это, она с удивительной гибкостью прыгает на ноги и, обогнав тебя, мчится по переулку на полную катушку. Ты вдруг оказываешься один и задаешься вопросом, как ей удалось так быстро убежать после того, как она получила такой удар. Пожимая плечами, ты собираешь последние монеты и готовишься уйти.
 	</p>
 	<p>
-		After putting up a fight, you can be sure that you won't be bothered by that particular wolf-girl ever again...
+		После того, как ты дал ей отпор, ты можешь быть уверен, что эта конкретная волчица больше не будет тебе докучать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_PLAYER_WIN_TAKE_ADVANTAGE"><![CDATA[
 	<p>
-		The fight has gotten you riled up, and, looking down at the helpless wolf-girl before you, the thought of using her as sexual relief is foremost on your mind. Stepping forwards, you allow a devilish grin to settle on your face, and prepare to take advantage of the defeated thief.
+		Борьба разозлила тебя, и, глядя на беспомощную волчицу перед тобой, мысль о том, чтобы использовать ее в качестве сексуального облегчения, стоит на первом месте в твоих мыслях. Сделав шаг вперед, ты позволяешь зловещей улыбке осесть на твоем лице и готов воспользоваться побежденной воровкой.
 	</p>
 	<p>
-		[pc.speech(Oh, this is going to be good!)]
-		 You laugh, bending down to grab the wolf-girl's shoulders before pinning her to the ground. Shaken out of her daze by the sudden physical contact, the thief opens her eyes and looks up at you. At first, she simply seems to be surprised, but as she sees the hungry grin on your face, her eyes fill with panic. 
+		[pc.speech(О, это будет здорово!)]
+		 Ты смеешься, наклоняясь, чтобы взять волчицу за плечи, и прижимаешь ее к земле. Вырвавшись из оцепенения от внезапного физического контакта, воровка открывает глаза и смотрит на тебя. Сначала она просто удивлена, но когда видит жадную улыбку на твоем лице, ее глаза наполняются паникой.
 	</p>
 	<p>
-		[lumi.speech(W-What are you doing? Let me go!)] She shouts as she starts to struggle against you. Tears quickly well up in her eyes as she discovers that you've totally immobilised her, and her struggles and cries quickly start to get more frantic and desperate.
+		[lumi.speech(W-What are you doing? Let me go!)] Она кричит, когда начинает бороться с тобой. Слезы быстро наполняют ее глаза, когда она понимает, что ты полностью обездвижил ее, и ее борьба и крики быстро становятся более отчаянными и отчаянными.
 	</p>
 	<p>
-		[pc.speech(Don't worry, I'll make this as enjoyable as possible... For me, that is!)] You sneer as you pin the little wolf-girl to the floor. Unable to hold back any longer, you quickly drop your lips down to hers, intent on putting her whining to an end by forcing her into a kiss.
+		[pc.speech(Не волнуйся, я сделаю это как можно более приятным... Для меня, конечно!)] Ты усмехаешься, прижимая маленькую волчицу к полу. Не в силах больше сдерживаться, ты быстро прижимаешь свои губы к её губам, пытаясь заставить её замолчать, принуждая её к поцелую.
 	</p>
 	<p>
-		[lumi.speech(Nooo! Let me go! Let me go, let me go, lemmegolemmegolemmego!)] She shouts, struggling more and more and kicking out into mid-air as she tries to wriggle out of your grasp, but to no avail.
+		[lumi.speech(Нетууу! Отпусти меня! Отпусти, отпусти, отпусти, отпусти!)] Она кричит, всё сильнее и сильнее бьёт ногами в воздухе, пытаясь вырваться из твоих объятий, но безуспешно.
 	</p>
 	<p>
-		You lean in and forcibly kiss her, tightening your grip on her arms as you hold her in place. The small [lumi.race] stops struggling and shouting, shocked from having her first kiss stolen. Tears quickly well up in her eyes as she stares at you in fear.
+		Ты наклоняешься и насильно целуешь её, крепче сжимая её руки, удерживая её на месте. Маленькая [lumi.race] перестаёт сопротивляться и кричать, шокированная тем, что её первый поцелуй был украден. Слезы быстро наполняют её глаза, когда она смотрит на тебя в страхе.
 	</p>
 	<p>
-		Taking this opportunity, you [pc.moanVerb] as you look hungrily into her eyes, [pc.speech(This will be a fitting punishment for you!)]
+		Пользуясь моментом, ты [pc.moanVerb], глядя жадно в её глаза, [pc.speech(Это будет подходящее наказание для тебя!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX"><![CDATA[
 	<p>
-		As you step back from the [lumi.race], she sinks to the floor, tears running down her face. She doesn't say anything, nor does she make any move. She just stays immobile, staring blankly off into space.
+		Когда ты отступаешь от [lumi.race], она падает на пол, слезы текут по её лицу. Она ничего не говорит, не делает никаких движений. Она просто остаётся неподвижной, глядя в пустоту.
 	</p>
 	<p>
-		You gather your belongings and walk away, leaving the traumatized [lumi.race] behind you. After what just happened, you can be sure that you won't be bothered by that particular wolf-girl ever again...
+		Ты собираешь свои вещи и уходишь, оставив травмированную [lumi.race] позади. После того, что только что произошло, ты можешь быть уверен, что тебя больше не побеспокоит эта конкретная волчица...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_CAUGHT_TALK"><![CDATA[
 	<p>
-		[pc.speech(Calm down, little pup, I'm not going to hurt you, I just want to talk.)]
-		 You say, trying to reassure the frightened wolf-girl.
+		[pc.speech(Спокойно, малышка, я не собираюсь тебе навредить, я просто хочу поговорить.)]
+		 Ты говоришь, пытаясь успокоить испуганную волчицу.
 	</p>
 	<p>
 		[lumi.speech(R-Really? You won't try to hurt me? You promise?)]
-		 She mutters, her [lumi.tail] starting to wag lightly behind [lumi.her] back as her angry expression softens into one of concern.
+		 Она бормочет, её [lumi.tail] начинает слегка вилять за спиной [lumi.her], а её сердитое выражение смягчается до выражения беспокойства.
 	</p>
 	<p>
-		[pc.speech(Yes, I promise.)] You smile, caught off guard by how cute [lumi.she] is.
+		[pc.speech(Yes, I promise.)] Ты улыбаешься, застигнутый врасплох тем, как мило [lumi.she].
 	</p>
 	<p>
-		With those words, the wolf-girl lets out a relieved sigh, before suddenly dropping down onto [lumi.her] knees as her adrenaline rush comes to an end. Wanting to spend a moment talking with this unusual thief, you walk towards her and crouch down so as to be on the same level. [pc.speech(Now tell me, why do you steal?)]
+		С этими словами, волчица выдыхает облегчённо, прежде чем внезапно опускается на колени [lumi.her], когда её адреналин подходит к концу. Желая провести момент, разговаривая с этой необычной воровкой, ты идёшь к ней и приседаешь, чтобы быть на одном уровне. [pc.speech(Теперь расскажи, почему ты крадёшь?)]
 	</p>
 	<p>
-		[lumi.speech(Because I'm hungry, and people are mean!)] She huffs, [lumi.speech(A-At first I tried stealing food from m-mar... morch...)]
+		[lumi.speech(Потому что я голодная, и люди злые!)] Она фыркает, [lumi.speech(А-А сначала я пыталась украсть еду у м-ма... морч...)]
 	</p>
 	<p>
-		[pc.speech(Merchants?)]
+		[pc.speech(Торговцы?)]
 	</p>
 	<p>
-		[lumi.speech(Y-Yes, merchants... But those meanies in blue uniforms caught me and scolded me for trying to eat, they said I had to pay with these shiny things...)] She looks at your money in [lumi.her] hands. [lumi.speech(And I need so many...)]
+		[lumi.speech(Да, торговцы... Но те злые в синих мундирах поймали меня и ругали за то, что я пыталась есть, они сказали, что я должна платить этими блестящими вещами...)] Она смотрит на твои деньги в руках [lumi.her]. [lumi.speech(И мне нужно так много...)]
 	</p>
 	<p>
-		[pc.speech(So many? What do you mean? Food isn't that expensive.)]
+		[pc.speech(Так много? Что ты имеешь в виду? Еда не такая уж и дорогая.)]
 	</p>
 	<p>
-		[lumi.speech(Uh? I give them all of the shiny things, I take the food and I leave, but then I have no more shiny things, so I have to steal again!)]
+		[lumi.speech(Э-Э, я отдала им все блестящие вещи, я взяла еду и ушла, но у меня больше нет блестящих вещей, так что мне приходится снова красть!)]
 	</p>
 	<p>
-		[pc.thought(She means she never takes her change when she pays? No wonder she needs to steal all the time,)] you think to yourself, [pc.thought(Those merchants are taking advantage of her...)]
+		[pc.thought(Она имеет в виду, что она никогда не берёт сдачу, когда платит? Неудивительно, что ей приходится красть всё время,)] ты думаешь, [pc.thought(Те торговцы используют её...)]
 	</p>
 	<p>
 		[pc.speech(You know, when you give all your money to the merchants, they should be giving you some of your money back.)] You explain, trying not to sound too condescending. [pc.speech(It only costs about ten or fifteen of these coins to buy a sandwich... Seeing as you don't know all this, I'd guess you're not from Dominion, right?)]
@@ -258,6 +259,7 @@
 		[lumi.speech(Yes, I lived alone, I never really knew my parents, I just barely remember that I was small, then my body grew super fast and then I hugged my mum and left her.)] She explains.
 	</p>
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF !pc.getLittersBirthed().isEmpty()
 		#THEN
 			You know that feeling all too well, to have your children leave before you even have the time to say hello and hold them close to you.
@@ -296,41 +298,41 @@
 		[lumi.speech([pc.Name]... [pc.Name], [pc.Name]... I like your name! I'm [lumi.Name]!)] [lumi.She] says with a big smile on [lumi.her] face. Before you can reply, [lumi.she] quickly drops down onto all fours, lowering her torso to the ground and wiggling her butt in the air a few times, before suddenly pouncing forwards, [lumi.her] [lumi.arms] stretched out towards you. Caught off guard, you reflexively try to back off, but the wolf-girl's movement is way too sudden and unexpected, and you suddenly find yourself falling onto your back, with Lumi's arms wrapped tightly around you as she gives you a big hug.
 	</p>
 	<p>
-		Thankfully, the floor in this part of the alleyway seems clean enough, and so you're content to spend the next few minutes lying on the ground, with [lumi.Name] snuggled against you. It's hard to imagine that this cute, trusting wolf-girl is the same thief that just minutes ago was wildly sprinting off with your money.
+		К счастью, пол в этой части переулка кажется достаточно чистым, и поэтому вы довольны, что можете провести следующие несколько минут, лежа на земле, с [lumi.Name], прижатой к вам. Трудно представить, что эта милая, доверчивая волчица - та самая воровка, которая всего несколько минут назад бежала прочь с вашими деньгами.
 	</p>
 	<p>
-		After some time has passed, you reach up to scratch her head to get her attention. [pc.speech(Alright you little pup, I have other things to be getting on with.)]
+		Через некоторое время вы тянетесь, чтобы почесать ее за ухом, чтобы привлечь ее внимание. [pc.speech(Ладно, маленькая собачка, у меня есть другие дела.)]
 	</p>
 	<p>
-		[lumi.Name] quickly lets you go and you both push yourselves up onto your feet. [lumi.She] looks at you with a gleeful stare, and exclaims, [lumi.speech(I like you, [pc.Name]! You're the first to be really kind to me in a long time! I hope I'll see you again!)]
+		[lumi.Name] быстро отпускает вас, и вы оба встаете на ноги. [lumi.She] смотрит на вас с радостной улыбкой и восклицает, [lumi.speech(Мне нравится, [pc.Name]! Ты первый, кто был действительно добр ко мне за долгое время! Надеюсь, я увижу тебя снова!)]
 	</p>
 	<p>
-		With that, Lumi puts [lumi.her] coins back into [lumi.her] mouth, stacking them in [lumi.her] jowls like a rodent before running off in the direction of the Shopping Arcade. You wonder if the merchants will raise any objection to be getting paid with coins coated in saliva.
+		С этими словами Lumi вкладывает [lumi.her] монеты обратно в рот [lumi.her], складывая их в щеки [lumi.her], как грызун, прежде чем убежать в сторону Торговой Аркады. Вы задаетесь вопросом, будут ли торговцы возражать против того, что их платят монетами, покрытыми слюной.
 	</p>
 	<p>
-		You decide that it's also time for you to go. You may have lost some flames, but in exchange, you met a curious, cute little [lumi.race]. As this seems to be the area in which she's made her home, if you ever wanted to meet her again, all you'd have to do would be to wander around through these alleyways...
+		Вы решаете, что пришло время и для вас. Вы могли потерять несколько кредитов, но взамен вы встретили любопытную, милую маленькую [lumi.race]. Поскольку это, похоже, область, в которой она сделала свой дом, если бы вы хотели снова встретить ее, все, что вам нужно было бы сделать, это бродить по этим переулкам...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LUMI_CAUGHT_TALK_ASK_FOR_MONEY_BACK"><![CDATA[
 	<p>
-		[pc.speech(Listen, I can see that you're not a mean girl, but stealing is bad, ok?)] You tell the wolf-girl, putting a hand on [lumi.her] shoulder. [pc.speech(I can't force you not to do it, but you should know that other people won't be as kind or understanding as I am.)]
+		[pc.speech(Listen, I can see что ты не злая девочка, но воровство - это плохо, хорошо?)] Ты говоришь волчице, положив руку на [lumi.her] плечо. [pc.speech(Я не могу заставить тебя не делать это, но ты должна знать, что другие люди не будут такими же добрыми или понимающими, как я.)]
 	</p>
 	<p>
-		The wolf-girl pouts and looks at the ground as she receives her scolding. Putting on a gentler and more reassuring tone, you continue, [pc.speech(Look at me. I will take my money back now, ok?)]
+		Волчица нахмурилась и смотрит на землю, когда получает выговор. Смягчая тон, ты продолжаешь, [pc.speech(Посмотри на меня. Я сейчас возьму свои деньги обратно, хорошо?)]
 	</p>
 	<p>
-		She looks at you with sad eyes, her shoulders drooped as she reluctantly hands over your coins. In a barely audible whimper, she mutters, [lumi.speech(H-Here... I'm... I'm sorry...)]
+		Она смотрит на тебя с грустными глазами, её плечи опущены, когда она неохотно отдает твои монеты. С трудом выговаривая, она бормочет, [lumi.speech(Х-Вот... Я... Я извиняюсь...)]
 	</p>
 	<p>
-		You feel a prickling sensation in your chest, as you hear the sincerity and sadness in the wolf-girl's voice, you get a twinge of regret about scolding her. Reminding yourself that it was for her own good, you compassionately pat [lumi.her] head, before taking back what is yours. [pc.speech(Thank you, little thief. So, what is your name?)]
+		Ты чувствуешь щекотание в груди, когда слышишь искренность и грусть в голосе волчицы, ты испытываешь угрызения совести за то, что ругала её. Напоминая себе, что это было ради её же блага, ты с сочувствием гладишь [lumi.her] по голове, прежде чем забрать обратно то, что тебе принадлежит. [pc.speech(Спасибо, маленькая воровка. Так, как тебя зовут?)]
 	</p>
 	<p>
-		[lumi.speech(M-Me? I'm... I'm [lumi.Name].)] [lumi.She] says, hesitantly.
+		[lumi.speech(М-Меня? Я... Я [lumi.Name].)] [lumi.She] говорит, колеблясь.
 	</p>
 	<p>
-		[pc.speech(Nice to meet you [lumi.Name], I wish we'd have met in better circumstances... I'm [pc.Name].)] You reply, stopping your head-petting in order to safely put your money back where it belongs. [pc.speech(As you've been so reasonable, how about I treat you to dinner some time?)]
+		[pc.speech(Приятно познакомиться, [lumi.Name], я бы хотела, чтобы мы встретились при лучших обстоятельствах... Я [pc.Name].)] Ты отвечаешь, останавливая поглаживание головы, чтобы безопасно вернуть свои деньги. [pc.speech(Поскольку ты была такой разумной, как насчет того, чтобы я угостила тебя ужином когда-нибудь?)]
 	</p>
 	<p>
 		Lumi's eyes instantly brighten and [lumi.her] [lumi.ears] stand fully erect. It looks like the magic keyword to make [lumi.her] feel better is 'dinner'. [lumi.speech(You... You'd really do that? Yes! I'd love to!)] [lumi.She] shouts, [lumi.her] [lumi.tail] wiggling excitingly behind [lumi.her] back as she gazes into your eyes.
@@ -350,12 +352,10 @@
 	</p>
 	<p>
 		The wolf-girl's gaze instantly drops to the ground, and tears start visibly welling in [lumi.her] eyes as she mutters, [lumi.speech(I knew it... I knew you wouldn't be nice to me either...)] 
-	</p>
-	<p>
-		The wolf-girl's voice starts trembling as she realises that you're not the friendly person she took you for. Stepping towards you, she puts your money in your palm, before quickly dashing past you, sobbing uncontrollably and disappearing into the backalleys of Dominion.
-	</p>
-	<p>
-		With that, you're left alone with your money in the alleyway. You tell yourself that it's best not to try and make friends with thieves, and, putting your money safely away, you move to continue on your way. After what just happened, you can be sure that you won't be bothered by that particular wolf-girl ever again...
+	</p><p>
+		Голос девочки-волка начинает дрожать, когда она понимает, что ты не тот дружелюбный человек, за которого она тебя приняла. Подходя к тебе, она кладет твои деньги в твою ладонь, прежде чем быстро пробежать мимо тебя, рыдая и исчезая в переулках Dominion.
+	</p><p>
+		В итоге, ты остаёшься один со своими деньгами в переулке. Ты говоришь себе, что лучше не пытаться подружиться с ворами, и, спрятав свои деньги, ты продолжаешь свой путь. После того, что только что произошло, ты можешь быть уверен, что эта конкретная волчица больше никогда не будет тебе докучать...
 	</p>
 	]]>
 	</htmlContent>

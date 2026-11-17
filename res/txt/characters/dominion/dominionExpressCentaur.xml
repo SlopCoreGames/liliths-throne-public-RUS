@@ -3,36 +3,37 @@
 
 	<!-- Dirty talk -->
 	
-	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(Suck my cock, you [style.mule] slut!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(I love hearing you gagging on my cock!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(Take it deep, you dirty [style.mule] slut!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(You like the taste of my horse-cock?!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(Ссать мой член, ты [style.mule] шлюха!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(Мне нравится, как ты задыхаешься на моем члене!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(Засунь его глубже, ты грязная [style.mule] шлюха!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ORAL"><![CDATA[[npc.speech(Тебе нравится вкус моего конского члена?!)]]]></htmlContent>
 	
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Eat my ass, you dirty [style.mule] slut!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Use your tongue some more, [style.mule]!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Keep on kissing my ass, you filthy [style.mule] slut!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(You like the taste of my horse-ass?!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Ешь мой зад, ты грязная [style.mule] шлюха!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Используй язык больше, [style.mule]!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Продолжай целовать мой зад, ты грязная [style.mule] шлюха!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANILINGUS"><![CDATA[[npc.speech(Тебе нравится вкус моего конского задницы?!)]]]></htmlContent>
 	
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Fuck, I love rutting [style.mule] ass!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Your ass was made for my cock, you dirty [style.mule] slut!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Take it deep, you dirty [style.mule] slut!)]]]></htmlContent>
-	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(You like the feel of my horse-cock deep in your ass, you filthy [style.mule] slut?!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Черт, я люблю трахать [style.mule] задницу!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Твой зад был создан для моего члена, ты грязная [style.mule] шлюха!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Засунь его глубже, ты грязная [style.mule] шлюха!)]]]></htmlContent>
+	<htmlContent tag="OFFICE_DIRTY_TALK_ANAL"><![CDATA[[npc.speech(Ты любишь, когда мой конский член глубоко в твоей жопе, ты грязная [style.mule] шлюха?!)]]]></htmlContent>
 	
 	
 	<!-- INITIAL_ENCOUNTER -->
 	
 	<htmlContent tag="INITIAL_ENCOUNTER"><![CDATA[
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			As you [pc.walk] through the warehouse, you suddenly notice that there's [npc.a_race] quickly trotting directly towards you. Turning to face [npc.herHim], you find your gaze being drawn down to the [npc.cockSize], erect horse-cock between [npc.her] feral hindquarters. Stepping forwards and pinning you up against a nearby wall, this clearly-aroused [npc.race] pants, [npc.speech([style.Mule], you need to help me get some release! I'll give you [#SPECIAL_PARSE_0] [style.mule] points, please, just [#SPECIAL_PARSE_1]!)]
-		#ELSE
+Когда вы [pc.walk] проходите через склад, вы вдруг замечаете, что [npc.a_race] быстро бежит прямо к вам. Обернувшись к [npc.herHim], вы замечаете, что ваш взгляд прикован к [npc.cockSize], эрегированному конскому члену между [npc.her] дикими задницами. Подступив ближе и прижав вас к стене, этот явно возбужденный [npc.race] дрожит, [npc.speech([style.Mule], мне нужно помочь мне получить некоторое облегчение! Я дам вам [#SPECIAL_PARSE_0] [style.mule] баллов, пожалуйста, просто [#SPECIAL_PARSE_1]!)]		#ELSE
 			#IF(pc.getLocationPlace().getPlaceType()==PLACE_TYPE_DOMINION_BOULEVARD)
-				As you [pc.walk] down the wide boulevard
+				Когда ты [pc.walk] по широкой улице
 			#ELSE
-				As you [pc.walk] down the street
+				Когда ты [pc.walk] по улице
 			#ENDIF
-			, you suddenly notice that there's [npc.a_race] quickly trotting directly towards you. Turning to face [npc.herHim], you find your gaze being drawn down to the [npc.cockSize], erect horse-cock between [npc.her] feral hindquarters. Realising that this clearly-aroused [npc.race] must be one of Dominion Express's slaves, you listen as [npc.she] pants, [npc.speech(I saw your [style.mule] choker from the other side of the street! Please, you need to help me get some release! I'll give you [#SPECIAL_PARSE_0] [style.mule] points, please, just [#SPECIAL_PARSE_1]!)]
-		#ENDIF
+, вы вдруг замечаете, что [npc.a_race] быстро бежит прямо к вам. Поворачиваясь к [npc.herHim], вы замечаете, что ваш взгляд прикован к [npc.cockSize], эрегированному конскому пенису между [npc.her] дикими задницами. Осознав, что эта явно возбужденная [npc.race] должна быть одной из работок Dominion Express, вы слушаете, как [npc.she] хрипит, [npc.speech(Я видела твою [style.mule] ошейник с другой стороны улицы! Пожалуйста, ты должен помочь мне получить немного облегчения! Я дам тебе [#SPECIAL_PARSE_0] [style.mule] баллов, пожалуйста, просто [#SPECIAL_PARSE_1]!)]		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
 		Stepping away from you, [npc.name] quickly turns around and flicks [npc.her] tail to one side, presenting you with [npc.her] puffy, feral horse-anus. Clearly not at all bothered by the fact that you're in such a public place, [npc.she] looks back over [npc.her] shoulder and demands, [npc.speech(Come on, [style.mule]! Kiss my ass so that we can get started!)]
@@ -51,6 +52,8 @@
 				 down the street in search for another [style.mule].
 			#ENDIF
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
 		After taking a moment to watch [npc.herHim] leave, you turn around and prepare to continue on your way...
@@ -89,50 +92,48 @@
 	
 	<htmlContent tag="INITIAL_ENCOUNTER_MOUNTED_START"><![CDATA[
 	<p>
-		Seeing no reason to refuse [npc.namePos] request, you obediently drop down behind [npc.her] feral hindquarters,
+		Не видя причин отказываться от просьбы [npc.namePos], ты послушно опускаешься вниз, за [npc.her] дикими задними четвертями,
 		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			 and in full view of the rest of the warehouse,
+			 и на глазах у остальных в складе,
 		#ELSE
-			 and in full view of the public,
+			 и на глазах у публики,
 		#ENDIF
-		 you plant a wet, passionate kiss on [npc.her] puffy, horse-like asshole. Pulling back and smiling to yourself as you hear [npc.herHim] let out a deep [npc.moan], you quickly shuffle around and present your [pc.asshole+] to [npc.herHim], before calling out for [npc.herHim] to mount you and get started.
+		ты целуешь [npc.her] пухлый, лошадиный зад, отступаешь и улыбаешься, когда слышишь, как [npc.herHim] издает глубокий [npc.moan], ты быстро переставляешь ноги и представляешь свое [pc.asshole+] [npc.herHim], прежде чем позвать [npc.herHim], чтобы он седлал тебя и начинал.
 	</p>
 	<p>
-		[npc.speech(That's what I like to hear, [style.mule]! You're going to love my cock!)] [npc.name] excitedly calls out, before quickly mounting you and pressing the flat, flared head of [npc.her] feral horse-cock against your [pc.asshole+]. letting out a frantic, desperate [npc.moan], your partner wastes no time in thrusting forwards and ramming [npc.her] [npc.cockSize], feral horse-cock into your [pc.asshole]. Letting out [pc.a_moan+] of your own, you push your hips back, helping to sink [npc.namePos] [npc.cockGirth] cock into your ass as [npc.she] starts anally rutting you...
+		[npc.speech(Вот что я люблю слышать, [style.mule]! Ты полюбишь мой член!)] [npc.name] взволнованно кричит, прежде чем быстро сесть на тебя и прижать плоскую, расширенную головку [npc.her] дикого, лошадиного члена к твоему [pc.asshole+], издав отчаянный, отчаянный [npc.moan], твой партнер не теряет времени и впихивает [npc.her] [npc.cockSize], дикий, лошадиный член в твой [pc.asshole]. Издавая [pc.a_moan+], ты отводишь бедра назад, помогая погрузить [npc.namePos] [npc.cockGirth] член в твой зад, пока [npc.she] начинает анально трахать тебя...
 	</p>
 	]]></htmlContent>
 	
 	
 	<!-- AFTER_SEX -->
 	
-	<htmlContent tag="AFTER_SEX"><![CDATA[
-	<p>
-		Having had [npc.her] fun, and also having put on a show for
-		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			 the occasional passing centaur slave
+	<htmlContent tag="AFTER_SEX"><![CDATA[<p>
+		Получив [npc.her] удовольствие, а также устроив шоу для		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
+			случайного проходящего раба-цера
 		#ELSE
-			 the members of the public who gathered to watch
+			членов публики, которые собрались, чтобы посмотреть,
 		#ENDIF
-		, [npc.name] steps back, before turning to look at you and demand, [npc.speech(Come on, [style.mule]; clean my cock off and I'll give you those [style.mule] points!)]
+		[npc.name] отступает, прежде чем повернуться к тебе и потребовать, [npc.speech(Ну что ж, [style.mule]; очисти мой член, и я дам тебе эти [style.mule] очки!)]
 	</p>
 	<p>
-		Doing as you're told, you shuffle forwards and lick all of the thick, salty cum off of [npc.namePos] softening horse-cock. Letting out a deeply-satisfied sigh, the [npc.race] once again steps back, before tossing [#SPECIAL_PARSE_0] small arcane beads to the floor in front of you. Before you can pick them up, the enchanted beads disintegrate into arcane energy, before swirling up and being absorbed into your [style.mule] choker.
+		Выполняя указания, вы передвигаетесь вперед и лижете всю густую, соленую сперму с [npc.namePos], которая размягчает конь. Выдавая глубокий удовлетворенный вздох, [npc.race] снова отступает, прежде чем бросить [#SPECIAL_PARSE_0] маленькие арканы на пол перед вами. Прежде чем вы успеваете их поднять, зачарованные арканы рассыпаются в арканическую энергию, которая затем поднимается и впитывается в ваш [style.mule] ошейник.
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_LEAVE"><![CDATA[
 	<p>
-		Looking up and thanking the now-satisfied [npc.race] for the [style.mule] points, you watch as [npc.she] flashes you one last smirk, before turning and trotting off
+		Взглянув вверх и поблагодарив [npc.race] за [style.mule] очки, вы наблюдаете, как [npc.she] бросает вам последний усмешливый взгляд, прежде чем повернуть и уйти
 		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			 into the warehouse's storage area.
+			 в складской район склада.
 		#ELSE
 			#IF(pc.getLocationPlace().getPlaceType()==PLACE_TYPE_DOMINION_BOULEVARD)
-				 down the wide boulevard.
+				 по широкой улице.
 			#ELSE
-				 down the street.
+				 по улице.
 			#ENDIF
 		#ENDIF
-		 After taking a moment to watch [npc.herHim] leave, you stand up, turn around, and prepare to continue on your way...
+			 После того, как вы постояли, наблюдая за тем, как [npc.herHim] уходит, вы встаете, поворачиваетесь и готовитесь продолжить свой путь...
 	</p>
 	]]></htmlContent>
 	

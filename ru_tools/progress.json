@@ -8,7 +8,16 @@
     "res/txt/misc/misc.xml",
     "res/txt/misc/quickTransformations.xml",
     "res/txt/misc/slaveDialogue.xml",
-    "res/txt/quests/main/elisDefenceMeeting.xml"
+    "res/txt/quests/main/elisDefenceMeeting.xml",
+    "res/txt/quests/main/lyssiethReveal.xml",
+    "res/txt/quests/main/minotallys_meeting.xml",
+    "res/txt/quests/main/travelToHideout.xml",
+    "res/txt/characters/dominion/daddy.xml",
+    "res/txt/characters/dominion/dominionExpressCentaur.xml",
+    "res/txt/characters/dominion/helena.xml",
+    "res/txt/characters/dominion/lilaya.xml",
+    "res/txt/characters/dominion/lumi.xml",
+    "res/txt/characters/dominion/natalya.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

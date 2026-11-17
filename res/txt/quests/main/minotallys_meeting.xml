@@ -7,26 +7,27 @@
 	
 	<htmlContent tag="START"><![CDATA[
 	<p>
-		Eager to get started on your mission to defeat Lunette, you tell Meraxis that you're ready to meet the town's lilin mayor, Minotallys. Upon hearing your request, the energetic [meraxis.race] spins around on the spot, before pointing to the door and declaring, [meraxis.speech(Then let us not waste a moment more! Onwards!)]
+		С нетерпением желая начать свою миссию по победе над Лунетт, ты говоришь Мераксис, что готов встретиться с мэром города лилин, Миноталлис. Услышав твой запрос, энергичная [meraxis.race] крутится на месте, прежде чем указывая на дверь, заявляет: [meraxis.speech(Тогда давайте не терять ни минуты! Вперед!)]
 	</p>
 	<p>
-		With that, Meraxis skips off towards the tavern's exit, leaving you to follow in her footsteps...
+		С этими словами Мераксис уходит к выходу таверны, оставляя тебя следовать по ее следам...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOWN_HALL"><![CDATA[
 	<p>
-		Quickly catching up to the chuuni [meraxis.race] as she flings open the tavern's door and steps outside, you ask her where this meeting is to take place. Turning her head and flashing you a smug grin, she returns your question with one of her own, [meraxis.speech(You truly wish for me to reveal the secrets of our fateful meeting place? Well then, the answer lies in front of you!)]
+		Быстро догоняя чуунную [meraxis.race], когда она распахивает дверь таверны и выходит наружу, ты спрашиваешь ее, где состоится эта встреча. Поворачивая голову и подмигивая тебе, она отвечает на твой вопрос своим: [meraxis.speech(Ты действительно хочешь, чтобы я раскрыла секреты нашего судьбоносного места встречи? Ну что ж, ответ лежит перед тобой!)]
 	</p>
 	<p>
-		Meraxis points down the road as she says this, and you look down the street to see the tower of Elis's town hall off in the distance. Swirling her cloak about herself in a dramatic fashion, she continues, [meraxis.speech(That's right; we shall be meeting the dreaded Minotallys in her tower of the damned! Mwhahaha!)]
+		Мераксис указывает на дорогу, когда она это говорит, и ты смотрю вниз по улице, чтобы увидеть башню мэрии города Элис вдали. Размахивая своим плащом вокруг себя в драматичной манере, она продолжает: [meraxis.speech(Верно; мы встретимся с ужасной Миноталлис в ее башне проклятых! Мвахаха!)]
 	</p>
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.hasTraitActivated(PERK_CHUUNI))
-			Approving of Meraxis's choice of words, you play along with her chuuni mannerisms as the two of you engage in idle smalltalk,
+			Соглашаясь с выбором слов Мераксис, ты играешь с ее чуунными манерами, когда вы двое вступаете в пустую болтовню,
 		#ELSE
-			Shaking your head at Meraxis's ridiculous words, you do your best to endure her chuuni mannerisms as the two of you engage in idle smalltalk,
+			Качая головой в знак несогласия с чуунными словами Мераксис, ты делаешь все возможное, чтобы терпеть ее чуунные манеры, когда вы двое вступаете в пустую болтовню,
 		#ENDIF
 		 and after ten minutes of [pc.walking] along at her side, the two of you find yourselves standing before Elis's town hall. Consisting of two long, timber-framed buildings joined in the middle by a five-story, steepled tower, the town hall is by far the largest structure in all of Elis. Before you can comment on its size or appearance, Meraxis skips forwards and heads inside, once again leaving you to follow along behind her...
 	</p>
@@ -41,6 +42,7 @@
 		[meraxis.speech(Mwhahaha! Bow down before me, you mere mortals! I am the Dark Siren, bringer of ruin and wielder of the darkest secrets of the universe!)] she loudly declares, causing the couple of members of the public who are present to turn their heads. One of the receptionists stationed behind this desk starts to look very worried, and she turns to nervously ask her colleague if she should call for the Enforcers. Hearing her question, Meraxis spins around on the spot and declares, [meraxis.speech(The Enforcers cannot save you now! I am the recognised daughter of Lyssieth herself! None dare question my authority, and those who do soon meet their ultimate fate! Mwhahaha!)]
 	</p>
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.hasTraitActivated(PERK_CHUUNI))
 			Not wanting to waste your time on such lowly peons, you [pc.step] up beside Meraxis and tell the receptionist that the two of you are here to meet Minotallys.
 		#ELSE
@@ -75,13 +77,13 @@
 	
 	<htmlContent tag="TOWN_HALL_UPSTAIRS"><![CDATA[
 	<p>
-		Although the town hall's tower is five stories tall, the spiral staircase curiously only takes you and Meraxis up to the fourth floor. Quickly reaching the top of these stairs, you find yourself confronted by two more succubi Enforcers, each of which is heavily armed and uniformed in the same fashion as the one which you met on the ground floor. Just like their colleague, these two Enforcers immediately recognise Meraxis, and after letting out a synchronised groan, they tell the two of you to wait while they inform Minotallys of your arrival.
+		Хотя башня ратуши имеет пять этажей, винтовая лестница, к удивлению, поднимает вас и Мераксиса только на четвертый этаж. Быстро достигнув вершины этих ступеней, вы оказываетесь лицом к лицу с двумя суккубами-принудителями, каждая из которых хорошо вооружена и одет в ту же форму, что и та, с которой вы встретились на первом этаже. Как и их коллега, эти две суккубы-принудители сразу узнают Мераксиса, и, издав синхронизированный стон, они говорят вам ждать, пока они не извещают Миноталлис о вашем прибытии.
 	</p>
 	<p>
-		As one of these Enforcers steps over to knock on the door of what you assume to be Minotallys's office, you're able to take a quick look around at your surroundings. Surrounding the tower's central staircase, a wide, wooden-floored landing separates you from the doors which are set into each of the tower's four sides. The slightly-uneven wooden floorboards, along with the exposed wooden beams which hold up the high ceiling, give the impression that this is a very old structure. Hanging from the walls, there are large, painted portraits of who you assume to be Minotallys, who appears to take the form of a greater cow-girl. What draws your attention to these portraits is that her white, cow-like fur has differently-coloured spots in each of them, ranging from the typical black and brown to exotic shades of pink, green, yellow, purple, and blue.
+		Когда один из этих принудителей подходит к двери, которую вы предполагаете, является кабинетом Миноталлиса, вы можете быстро осмотреть свое окружение. Широкая деревянная лестница, окружающая центральную лестницу башни, отделяет вас от дверей, которые установлены в каждой из четырех сторон башни. Неравномерные деревянные доски, вместе с обнаженными деревянными балками, поддерживающими высокий потолок, создают впечатление, что это очень старое сооружение. На стенах висят большие, раскрашенные портреты того, кого вы предполагаете, является Миноталлисом, который, кажется, принимает форму великой ковбойши. То, что привлекает ваше внимание к этим портретам, это то, что ее белая, похожая на корову шерсть имеет пятна разных цветов в каждом из них, от типичного черного и коричневого до экзотических оттенков розового, зеленого, желтого, фиолетового и синего.
 	</p>
 	<p>
-		Before you're able to ask the remaining Enforcer about these paintings, the door to Minotallys's office swings open, but instead of the cow-girl lilin you were expecting to see, a greater alicorn-boy emerges. Standing at [arion.heightValue], and looking to be in his mid-twenties, both the horse-like hair which covers his body, as well as his large feathered wings, are coloured in a soft shade of grey. His smart, black suit, complete with a burgundy tie, gives him a very professional appearance, and as he steps over to where you and Meraxis are standing, he gives you a confident, albeit suspicious glance, before stating, [arion.speech(My name is Arion, and I'm Minotallys's personal assistant. I've had the 'pleasure' of meeting Meraxis already. I assume that you're the [pc.race] she told me about. '[pc.Name]', is it?)]
+		Перед тем, как вы сможете спросить оставшегося Лилина о этих картинах, дверь в кабинет Миноталлиса распахивается, но вместо ожидаемой ковбойши-лилин, появляется более крупный аликворт-мальчик. Высота его составляет [arion.heightValue], и, судя по всему, ему около двадцати пяти лет. Как и у лилин, у него есть лошадиная шерсть, покрывающая его тело, а также большие перья на крыльях, окрашенные в мягкий серый оттенок. Его умный черный костюм, дополненный бордовой галстуком, придает ему очень профессиональный вид, и когда он подходит к вам и Мераксису, он бросает вам уверенный, хотя и подозрительный взгляд, прежде чем заявляет: [arion.speech(Меня зовут Арион, и я личный помощник Миноталлиса. Я уже имел 'удовольствие' встретить Мераксиса. Я предполагаю, что вы тот [pc.race], о котором она мне говорила. '[pc.Name]', это так?)] 
 	</p>
 	]]>
 	</htmlContent>
@@ -91,10 +93,10 @@
 	
 	<htmlContent tag="ARION_INTRO"><![CDATA[
 	<p>
-		After you've confirmed who you are, Arion narrows his eyes a little and states, [arion.speech(I understand that the two of you have been sent here by Lyssieth herself. At least, that's what Meraxis told me when she came here before...)]
+		После того, как вы подтвердите, кто вы, Арион немного сужает глаза и заявляет: [arion.speech(Я понимаю, что вас двоих сюда отправила сама Лиссит. По крайней мере, так мне сказала Мераксис, когда она пришла сюда раньше...)]
 	</p>
 	<p>
-		[meraxis.speech(That's right! Mommy- I mean, Lyssieth, sent us here on top secret official business!)] Meraxis exclaims, [meraxis.speech(Now show us through to see Minotallys!)]
+		[meraxis.speech(Верно! Мама-я имею в виду, Лиссит, отправила нас сюда по секретному официальному делу!)] Мераксис восклицает, [meraxis.speech(Теперь покажите нам Миноталлиса!)]
 	</p>
 	<p>
 		[arion.speech(I'm sorry, but you'll have to wait a few minutes first,)] Arion states, blushing a little as he does so. Clearing his throat, he hesitantly explains, [arion.speech(Minotallys will be occupied with some... erm... <i>personal matters</i> for a short while. If you have any questions while we're waiting, please go ahead and ask...)]
@@ -120,33 +122,33 @@
 	
 	<htmlContent tag="ARION_PAINTINGS"><![CDATA[
 	<p>
-		Wanting to find out the story behind the seven differently-coloured paintings of Minotallys, you gesture to the portraits and ask him about their unusual colour scheme.
+		Хозяйка, желая узнать историю семи картин с изображением Миноталыса, указывает на портреты и спрашивает его о необычной цветовой гамме.
 	</p>
 	<p>
-		[arion.speech(Ah yes, that's just one of her little quirks,)] Arion replies, [arion.speech(She likes to change the flavour- Erm, I mean, she likes to change her style based on the day of the week. Today, for example, she's transformed to make her spots [minotallys.skinColourSecondary]. Tomorrow they'll be something else. It's just how it is with her...)]
+		[arion.speech(Ах да, это просто одна из её маленьких причуд,)] отвечает Арион, [arion.speech(Она любит менять вкус- Э-э-м, она любит менять свой стиль в зависимости от дня недели. Сегодня, например, она превратилась, чтобы сделать свои пятна [minotallys.skinColourSecondary]. Завтра они будут чем-то другим. Так вот как это у неё получается...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ARION_ROOMS"><![CDATA[
 	<p>
-		Looking around at the many doors which are to be found on this floor of the tower, you ask Arion what these rooms are used for.
+		Оглядываясь на множество дверей, которые можно найти на этом этаже башни, ты спрашиваешь Ариона, для чего используются эти комнаты.
 	</p>
 	<p>
-		[arion.speech(The largest is Minotallys's office,)] he replies, gesturing to the door through which he appeared. Pointing to the opposing walls which flank the one that holds the door to Minotally's office, he continues, [arion.speech(These doors lead into the archive rooms. There's nothing in there except shelves stacked full of old paper records.)]
+		[arion.speech(Самая большая - это кабинет Миноталыса,)] отвечает он, указывая на дверь, через которую он появился. Указывая на противоположные стены, которые находятся по обе стороны от двери в кабинет Миноталыса, он продолжает, [arion.speech(Эти двери ведут в архивные комнаты. Там нет ничего, кроме полок, на которых стоят старые бумажные записи.)]
 	</p>
 	<p>
-		[meraxis.speech(And what about those two?)] Meraxis asks, pointing to the pair of doors which are on the opposite side of the room to Minotally's office.
+		[meraxis.speech(А что насчёт этих двух?)] Мераксис спрашивает, указывая на пару дверей, которые находятся на противоположной стороне комнаты от кабинета Миноталыса.
 	</p>
 	<p>
-		[arion.speech(Ah, well those used to be archive rooms as well, but due to the increased workload caused by the recent influx of refugees from the Foloi Fields, Minotallys and I have temporarily converted them into our living quarters,)] the alicorn-boy states, [arion.speech(By moving here, we've cut out the time we were spending on the daily commute, and if there's an emergency situation, we can respond very quickly. There have been quite a few of those recently, typically following news of another village being burned down by Lunette's daughters...)]
+		[arion.speech(Ах, ну, это были и архивные комнаты, но из-за увеличенной рабочей нагрузки, вызванной недавним притоком беженцев с Полей Фолои, Миноталлис и я временно превратили их в наши жилые помещения,)] говорит аликнорн-мальчик, [arion.speech(Переехав сюда, мы сократили время, которое мы тратили на ежедневные поездки, и если возникает чрезвычайная ситуация, мы можем очень быстро отреагировать. Таких ситуаций было довольно много в последнее время, обычно после новостей о том, что еще одна деревня была сожжена дочерями Лунетт...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ARION_MINOTALLYS_READY"><![CDATA[
 	<p>
-		Before you can ask Arion anything else, the door to Minotally's office swings open, and a voice calls out from the other side, [minotallys.speech(Arion! You can show them in now!)]
+		Прежде чем ты можешь спросить Ариона что-то еще, дверь в кабинет Миноталлис распахивается, и голос зовет с другой стороны, [minotallys.speech(Арион! Ты можешь показать их внутрь!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -154,18 +156,16 @@
 	
 	<!-- Minotallys office meeting: -->
 	
-	<htmlContent tag="MINOTALLYS_START"><![CDATA[
+	<htmlContent tag="MINOTALLYS_START"><![CDATA[<p>
+		Минотались, наконец, закончив свои "личные дела", идет к теперь открытой двери ее кабинета, говоря: [arion.speech(Пожалуйста, следуйте за мной.)]
+</p><p>
+		Следуя указаниям, ты и Мераксис заходишь в кабинет Лилин. Оглядываясь по сторонам, ты замечаешь, что кабинет мэра Элиса украшен так, чтобы быть достойным лилин. Под ногами у тебя находится роскошный, кремовый ковер, покрывающий большую часть полированных дубовых досок, а на всех четырёх стенах комнаты висят цветные, абстрактные картины. Над головой висят brushed-steel светильники, которые создают естественный свет в помещении. По обеим сторонам комнаты стоят дубовые книжные полки, полные редких и экзотических книг, сувениров и произведений искусства.
+</p>
 	<p>
-		With Minotallys having finally finished whatever 'personal matters' she was dealing with, Arion sets off towards the now-open door of her office, saying, [arion.speech(Please follow me.)]
+		Как Арион отстраняется, чтобы представить тебя и Мераксиса, ты можешь впервые увидеть Минотались. Сидя за большим, красным столом, который почти полностью покрыт стопками документов, лилин в образе ковболки сидит на роскошном офисном стуле, спиной к широкому окну, из которого видна улица Элиса. Почти точно такая же, как на её серии портретов, Минотались выглядит как большая ковболка и покрыта белой шерстью с [minotallys.skinColourSecondary(true)] пятнами. Её волосы, уложенные в боб, имеют такой же оттенок [minotallys.skinColourSecondary], как и её пятна, а из-за боков её лба растут две маленькие, белые рожки. Как только Арион заканчивает представлять тебя, лилин смотрит на тебя своими золотыми глазами и встаёт из-за стола, позволяя тебе увидеть, что она стоит на высоте около [minotallys.heightValue].
 	</p>
 	<p>
-		Doing as you're instructed, you and Meraxis follow the alicorn-boy into Minotallys's office. Taking a quick look around at your new surroundings, you see that the office of Elis's mayor has been decorated so as to be worthy of a lilin. Underfoot, a lush, cream-coloured rug covers most of the polished, mahogany floorboards, while on all four sides of the room, a series of colourful, abstract paintings have been hung on the smooth, white walls. Overhead, brushed-steel lights hang down between the ceiling's high beams to cast a natural shade of light over the interior. Several mahogany bookshelves have been placed on either side of the room, and have been stacked full of rare and exotic-looking tomes, trinkets, and pieces of artwork.
-	</p>
-	<p>
-		As Arion steps aside to introduce you and Meraxis, you're able to get your first sight of Minotallys. Situated behind a large, mahogany desk, which is almost completely covered in piles of paperwork, the cow-girl lilin is sitting on a luxurious office chair, with her back to the wide window that overlooks the streets of Elis. Appearing almost exactly as she did in her series of portraits, Minotallys has taken the appearance of a greater cow-girl, and is covered in white fur with [minotallys.skinColourSecondary(true)] spots. Her hair, which is styled into a bobcut, is of a similar shade of [minotallys.skinColourSecondary] as her spots, while growing out from the sides of her forehead she has a pair of small, white horns. As Arion finishes introducing you, the lilin locks her golden eyes onto yours and stands up from her chair, allowing you to see that she stands at about [minotallys.heightValue].
-	</p>
-	<p>
-		[minotallys.speech(Hello again, Meraxis. And I'm pleased to meet you, [pc.name],)] Minotallys cheerfully states, holding out her hand for a shake. As she moves, your eyes are naturally drawn down to her chest, where the feminine blazer and shirt which she's wearing are straining to contain her massive, [minotallys.cupSize]-cup breasts. [pc.Stepping] forwards, you shake the lilin's hand and return her greeting. From your close proximity, you're able to look over the edge of the desk to see that she's wearing a miniskirt, allowing her to show off a good portion of her legs and cow-like hoofs.
+		[minotallys.speech(Привет, Мераксис. И я рада познакомиться с тобой, [pc.name],)] Минотались радостно говорит, протягивая руку для рукопожатия. Когда она двигается, твои глаза естественным образом притягиваются к её груди, где женская пиджак и рубашка, которые она носит, с трудом сдерживают её огромные, [minotallys.cupSize]-куповые груди. [pc.Stepping] вперёд, ты пожимаешь лилин руку и отвечаешь на её приветствие. Из-за твоего близкого расположения, ты можешь видеть, что она носит короткую юбку, позволяющую ей показать большую часть своих ног и коровьи копыта.
 	</p>
 	<p>
 		[meraxis.speech(Before we progress any further, I must warn you that my ultimate power is at risk of erupting and dooming this world! The only thing which can prevent this terrible fate is for you to hand over more of the milk which you had the last time I was here!)] Meraxis exclaims, before striking another of her dramatic poses and looking expectantly at Minotallys. 
@@ -177,24 +177,24 @@
 		With that, Minotallys reaches down beneath her desk, and you hear the distinctive sound of a fridge being opened, before the lilin produces two glasses of milk and sets them down on the desk in front of her. Absently-mindedly reaching up to touch her massive breasts, she flashes you a little grin and pants, [minotallys.speech(It's [minotallys.milkFlavour]-flavoured today, and it's <i>very</i> fresh... Please, help yourselves...)]
 	</p>
 	<p>
-		Considering the fact that this flavour matches the colouring of Minotallys's spots and hair, and that the lilin is fondling her tits while gazing in anticipation at you and Meraxis, you're almost completely certain that this milk has been freshly squeezed from her breasts. As Meraxis has just alluded to the fact that she's drunk this before, and that there's no reason for you to mistrust Minotallys, you don't think that there'd be any harm in drinking her milk. Then again, if you don't like the idea of it, you could always politely refuse...
+		Учитывая, что этот вкус соответствует цвету пятен и волос Миноталлис, и что лилин ласкает её сиськи, глядя с нетерпением на тебя и Мераксис, ты почти уверен, что это молоко было свежевыжатым из её груди. Поскольку Мераксис только что намекнула на то, что она пила это раньше, и что нет причин не доверять Миноталлис, ты не думаешь, что в этом есть что-то плохое, и поэтому не против выпить её молоко. Если же тебе не нравится эта идея, ты всегда можешь вежливо отказаться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MINOTALLYS_START_DECLINE"><![CDATA[
 	<p>
-		Not wanting to drink Minotallys's breast milk, you politely decline the offer. Looking across at you as though you're mad, Meraxis exclaims, [meraxis.speech(My foolish nemesis, you don't understand what's on offer! If this is truly your chosen fate, then your milk shall be mine! Mwhahaha!)]
+		Не желая пить молоко Миноталлис, ты вежливо отказываешься от предложения. Глядя на тебя, как будто ты сошел с ума, Мераксис восклицает: [meraxis.speech(Мой глупый неприятель, ты не понимаешь, что тебе предлагают! Если это действительно твоя судьба, то твоё молоко будет моим! Мвахаха!)]
 	</p>
 	<p>
-		As Meraxis proceeds to quickly chug down both glasses of milk, Minotallys pouts at you, before rubbing her huge breasts and saying, [minotallys.speech(If you ever change your mind and would like to try some of my milk, then you're welcome to drop by at any time...)]
+		Мераксис быстро выпивает оба стакана молока, а Миноталлис нахмуривается на тебя, прежде чем потереть свои огромные сиськи и сказать: [minotallys.speech(Если ты когда-нибудь передумаешь и захочешь попробовать моё молоко, то ты всегда можешь зайти в любое время...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MINOTALLYS_START_DRINK"><![CDATA[
 	<p>
-		Seeing no harm in drinking what is obviously Minotallys's breast milk, you pick up the glass and join Meraxis in gulping it down. Immediately thanking yourself for having chosen to drink it, you find yourself enjoying the creamiest, most delicious milk that you've ever tasted. While there's an underlying flavour of [minotallys.milkFlavour], it's very subtle, allowing you to fully enjoy the creamy goodness of the dairy beverage.
+		Не видя ничего плохого в том, чтобы выпить то, что, очевидно, является молоком Миноталлис, ты поднимаешь стакан и присоединяешься к Мераксис, выпивая его. Сразу же благодаришь себя за то, что решил выпить, ты наслаждаешься самым кремовым, вкусным молоком, которое ты когда-либо пробовал. Хотя в нём есть лёгкий привкус [minotallys.milkFlavour], он очень тонкий, что позволяет тебе полностью насладиться кремовой сладостью молочного напитка.
 	</p>
 	<p>
 		As you and Meraxis proceed to quickly chug down your glasses of milk, Minotallys happily smiles at the two of you, and as you finish and put the empty glass back down on the desk, she rubs her huge breasts and says, [minotallys.speech(Come back tomorrow if you want to try a different flavour...)]
@@ -217,14 +217,13 @@
 	
 	<htmlContent tag="MINOTALLYS_EXPLAIN"><![CDATA[
 	<p>
-		Although it's clear that there's something off about Minotallys's reaction, you feel like the best thing to do is to tell the truth. Confirming what Meraxis has just said, you explain that Lyssieth has recognised you as being capable of dealing with Lunette, and that all of the political implications of an elder lilin being opposed are to be handled by her.
+		Хотя очевидно, что с реакцией Минотались что-то не так, вы чувствуете, что лучше всего будет сказать правду. Подтверждая то, что только что сказал Мераксис, вы объясняете, что Лиссит признала вас способным справиться с Лунетт, и что все политические последствия того, что старший лилин против, должны быть улажены ею.
 	</p>
 	<p>
-		[minotallys.speech(I really can't believe what I'm hearing,)] Minotallys replies, shaking her head. Turning her chair to one side, she gestures towards the window behind her and states, [minotallys.speech(Does it look like Lunette is causing a problem? Do you really think that Lilith, our most perfect and benevolent ruler, would allow anything bad to happen to her subjects? Of course not. There's nothing bad happening in the Foloi Fields, and I won't hear otherwise!)]
-	</p>
-	<p>
-		[arion.speech(You agreed to hear them out,)] Arion snaps, alarming you with the steely tone of his voice. You hadn't expected Minotallys's subordinate to talk to her in such an insolent manner, but much to your surprise, and relief, the lilin responds in a submissive manner. Crossing her arms beneath her huge breasts, she sinks down into her chair and pouts at Arion in a childish manner. Letting out an impatient sigh, the alicorn-boy continues, [arion.speech(You can't deny what's happening forever. Listen to what these two have to say, and remember that they carry the authority of Lyssieth herself.)]
-	</p>
+		[minotallys.speech(Я действительно не могу поверить в то, что я слышу,)] Минотались отвечает, качая головой. Поворачиваясь на стуле на бок, она жестикулирует в сторону окна за ней и заявляет, [minotallys.speech(Неужели Лунетт вызывает проблемы? Неужели вы действительно думаете, что Лилит, наша самая совершенная и благодетельная правительница, позволила бы что-то плохое случиться с ее подданными? Конечно нет. В Полях Фолои ничего плохого не происходит, и я не хочу слышать ничего другого!)]
+	</p><p>
+		[arion.speech(Ты согласилась выслушать их,)] Арион вскипает, пугая тебя своим холодным голосом. Ты не ожидала, что подчиненная Минотались будет разговаривать с ней таким дерзким образом, но к твоему удивлению и облегчению, лилин отвечает подчиненным тоном. Скрестив руки под своими огромными грудями, она опускается на стул и фыркает на Ариона детским тоном. Выдыхая нетерпеливый вздох, мальчик-аликорн продолжает, [arion.speech(Ты не можешь отрицать то, что происходит вечно. Слушай, что эти двое хотят сказать, и помни, что они несут авторитет самой Лиссит.)]
+</p>
 	<p>
 		[minotallys.speech(Mmm, yes, well, the authority of a direct daughter of Lilith cannot be questioned,)] Minotallys concedes, before stubbornly stating, [minotallys.speech(That includes Lunette as well, you know. There's no way she would be responsible for anything bad that's happening in the Foloi Fields...)]
 	</p>
@@ -261,17 +260,16 @@
 		With Minotallys refusing to accept that Lunette is a threat, you don't seem to have much choice but to agree to Arion's proposal, and so you tell the lilin that you'll travel to Themiscyra and find you what the situation is.
 	</p>
 	<p>
-		[meraxis.speech(I can't believe that you're making us do this. Is it not obvious that Lunette needs dealing with?!)] Meraxis angrily objects, but as she sees the lilin avoid her gaze, she lets out a deep sigh and states, [meraxis.speech(Fine... Well, I know the way to Themiscyra, so I can lead you there when you're ready, [pc.name].)]
+		[meraxis.speech(Я не могу поверить, что ты заставляешь нас это делать. Разве не очевидно, что с Лунетт нужно разобраться?!)] Мерэксис гневно возражает, но, видя, что лилин избегает ее взгляда, она вздыхает и говорит, [meraxis.speech(Хорошо... Ну, я знаю дорогу в Темисциру, так что могу провести тебя туда, когда ты будешь готова, [pc.name].)]
 	</p>
 	<p>
-		Giving you an appreciative nod, Arion warns, [arion.speech(The woods have always been regarded as lawless, despite our Enforcers' best efforts to keep things under control. Be careful on your way there.)]
+		Отвечая тебе с благодарностью, Арион предупреждает, [arion.speech(Леса всегда считались беззаконными, несмотря на все усилия наших энурсеров держать всё под контролем. Будь осторожен на своём пути.)]
 	</p>
 	<p>
-		[minotallys.speech(Yes, do take care of yourselves,)] Minotallys curtly states. Clearly being a little annoyed at having been ganged up on by the three of you, she dismisses you and Meraxis with a wave of her hands, saying, [minotallys.speech(You're welcome to drop in at any time, but for now Arion and I have work to do, so goodbye!)]
-	</p>
-	<p>
-		Taking the hint, you and Meraxis stand up, before allowing Arion to escort you out of the office. Closing the door behind the three of you, the alicorn-boy sighs, [arion.speech(Thank you for helping me to convince Minotallys to finally do something about Lunette. She doesn't mean any harm, she's just so enamoured with Lilith that she refuses to see what's happening right in front of her eyes... Oh, and before you go, take this pass. It'll grant you access to this tower at any time of the day or night.)]
-	</p>
+		[minotallys.speech(Да, берегите себя,)] Минотались резко отвечает. Явно раздражённая тем, что ты и двое других напали на неё, она отмахивается от вас и Мерэксис, говоря, [minotallys.speech(Вы можете заходить в любое время, но сейчас у Ариона и у меня есть работа, так что до свидания!)]
+	</p><p>
+		Понимая намек, ты и Мераксис встаете, прежде чем позволить Ариону проводить вас из кабинета. Закрывая дверь за вами, мальчик-аликорн вздыхает, [arion.speech(Спасибо, что помогли мне убедить Миноталлис наконец-то сделать что-то с Лунетт. Она не имеет злых намерений, она просто так влюблена в Лилит, что отказывается видеть то, что происходит прямо перед ее глазами... Ах, и прежде чем уйти, возьми этот пропуск. Он даст тебе доступ к этой башне в любое время дня и ночи.)]
+</p>
 	<p>
 		Taking the small, plastic card which Arion holds out to you, you thank him for the help and say that you hope to be back with your report on Themiscyra soon. Giving you a curt nod, the alicorn-boy returns to the office, leaving you and Meraxis to head back down the stairs to the town hall's ground floor...
 	</p>
