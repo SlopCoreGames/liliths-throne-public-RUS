@@ -5,54 +5,54 @@
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY"><![CDATA[
 	<p>
-		Zaranix staggers back, reaching out to grab hold of the edge of a nearby table as he pants, [zaranix.speech(Please! No more!)]
+		Зараникс пошатывается, хватаясь за край ближайшего стола; он тяжело дышит, [zaranix.speech(Пожалуйста! Еще нет!)]
 	</p>
 	<p>
-		It's quite clear that he's completely unable to continue fighting any longer, so, [pc.stepping] forwards, you make your demands known, [pc.speech(You're going to hand over Arthur now, understood?)]
+		Совершенно очевидно, что он больше не в силах сражаться, поэтому, [pc.stepping] вперед, ты выдвигаешь свои требования: [pc.speech(Теперь ты отдашь мне Arthur, понял?)]
 	</p>
 	<p>
-		[zaranix.speech(F-Fine...)] he sighs, understanding that he has little choice in the matter, [zaranix.speech(You heard the [pc.race], Arthur, you're free to go...)]
+		[zaranix.speech(Л-ладно...)] — вздыхает он, понимая, что выбора у него почти нет, — [zaranix.speech(Ты слышал [pc.race], Arthur, ты свободен...)]
 	</p>
 	<p>
-		Arthur, up until now having been hiding behind one of the laboratory's cabinets, slowly stands up and exclaims, [arthur.speech(Bloody hell! Well, you're certainly letting me go easily! Not that I should be complaining...)]
+		Arthur, до этого момента прятавшийся за одним из лабораторных шкафов, медленно встает и восклицает: [arthur.speech(Черт возьми! Ну, ты определенно отпускаешь меня слишком легко! Хотя не то чтобы мне стоило жаловаться...)]
 	</p>
 	<p>
-		[zaranix.speech(If it were anyone else, I'd have refused to let you go, but I just realised who this [pc.race] is,)] Zaranix says, stepping back and collapsing down into a nearby chair. [zaranix.speech(<i>[pc.SheIs]</i> the [pc.race] who's moved in with Lilaya... Yes, I know who you are. I may not get out much, but I still keep my ear close to the grapevine.)]
+		[zaranix.speech(Будь на твоем месте кто-то другой, я бы не отпустил тебя, но я только что понял, кто этот [pc.race],)] — говорит Зараникс, отступая и тяжело опускаясь в ближайшее кресло. [zaranix.speech(<i>[pc.SheIs]</i> тот самый [pc.race], что поселился у Lilaya... Да, я знаю, кто ты. Может, я и редко выбираюсь в свет, но все же держу ухо востро.)]
 	</p>
 	<p>
-		By this time already half-way across the room towards the door, Arthur stops to once again exclaim, [arthur.speech(Bloody hell! So it's Lilaya who's behind this rescue? The last I heard, oh, what was it now... Oh yes! She was going to 'blast me into a million pieces, or banish me into an alternate dimension' the next time she saw me. I mean, considering that nobody's managed to travel between dimensions before, I couldn't quite take her threat seriously, but she <i>did</i> seem to be pretty angry. Maybe I'd be better off staying he-)]
+		Успев преодолеть уже половину комнаты по направлению к двери, Arthur останавливается, чтобы снова воскликнуть: [arthur.speech(Черт возьми! Так это Lilaya стоит за этим спасением? Последнее, что я слышал, о, как же там было... Ах да! Она собиралась «разнести меня на миллион осколков или изгнать в другое измерение», когда увидит меня в следующий раз. Ну, учитывая, что до этого никому не удавалось путешествовать между измерениями, я не мог воспринимать её угрозу всерьез, но она <i>действительно</i> казалась весьма разгневанной. Может, мне лучше остаться зд-)]
 	</p>
 	<p>
-		[zaranix.speech(Be quiet Arthur!)] Zaranix shouts, [zaranix.speech(I may have wealth and a modicum of power in this city, but having never been recognised by my Lilin mother, I'd be a fool to stand against the wishes of a demon who has. And it's not just any demon! Hah! Lyssieth's precious little half-demon herself! So go on, get out of here!)]
+		[zaranix.speech(Тише, Arthur!)] — кричит Zaranix, — [zaranix.speech(Пусть у меня есть богатство и толика власти в этом городе, но, так как меня никогда не признавала моя мать-лилин, было бы глупо идти против воли демона, которая это сделала. И это не просто какой-то демон! Ха! Сама драгоценная полукровка Lyssieth! Так что давай, проваливай!)]
 	</p>
 	<p>
-		[arthur.speech(Well, when you put it like that... Maybe I'll see you around Zaranix. It wasn't too bad living here, all things considered,)] Arthur says, before turning to you and stating, [arthur.speech(I'll go on ahead, so I suppose I'll see you over at Lilaya's place.)]
+		[arthur.speech(Ну, если ты так говоришь... Что ж, может, еще увидимся, Zaranix. Жить здесь было не так уж плохо, если учитывать все обстоятельства,)] — говорит Arthur, после чего поворачивается к тебе и заявляет: [arthur.speech(Я пойду вперед, так что, полагаю, увидимся у Lilaya.)]
 	</p>
 	<p>
-		With that, he steps past you and makes his hasty exit, leaving you alone in the lab with the defeated incubus. You wonder if you should take advantage of his weakened state, or simply turn around and leave...
+		С этими словами он проходит мимо тебя и поспешно уходит, оставляя тебя одну в лаборатории с поверженным инкубом. Ты гадаешь, стоит ли воспользоваться его ослабленным состоянием или просто развернуться и уйти...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_USE_HIM"><![CDATA[
 	<p>
-		[pc.speech(You made me go through a lot of trouble to find Arthur,)] you say, stepping towards the exhausted [zaranix.race], [pc.speech(I think you owe me an apology...)]
+		[pc.speech(Ты заставила меня изрядно помучиться, пока я искал Arthur,)] — говоришь ты, шагая к изможденной [zaranix.race], — [pc.speech(Думаю, ты теперь просто обязана мне извиниться...)]
 	</p>
 	<p>
-		Despite the fact that [zaranix.sheIs] a powerful demon, [zaranix.name] lets out a lewd little sigh as [zaranix.she] looks up into your [pc.eyes]. Your strong arcane aura is quite clearly having a profound effect on [zaranix.herHim], and as you approach, [zaranix.she] pleads, [zaranix.speech(Please! Let me make it up to you!)]
+		Несмотря на то, что [zaranix.sheIs] — могущественный демон, [zaranix.name] издает похотливый вздох, когда [zaranix.she] заглядывает тебе в [pc.eyes]. Твоя мощная аркана-аура явно оказывает на [zaranix.herHim] глубокое воздействие, и когда ты приближаешься, [zaranix.she] умоляет: [zaranix.speech(Пожалуйста! Позволь мне загладить свою вину!)]
 	</p>
 	<p>
-		Grinning down at [zaranix.name], you prepare to have some fun...
+		Усмехаясь, глядя на [zaranix.name] сверху вниз, ты готовишься немного развлечься...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SUBMIT"><![CDATA[
 	<p>
-		You weren't really expecting it to be so easy to convince [zaranix.name] to part with Arthur, and subsequently feeling a little guilty for fighting [zaranix.herHim] in [zaranix.her] own house, you decide to try and make it up to [zaranix.herHim]. Looking down at [zaranix.her] crotch and biting your [pc.lip], you let out a pleading little whine, [pc.speech(Sorry for all this trouble, [zaranix.name]... Perhaps you'd like me to do something for you...)]
+		Ты не ожидал, что убедить [zaranix.name] расстаться с Arthur окажется так просто, и, почувствовав легкую вину за то, что сражаешься с [zaranix.herHim] в [zaranix.her] собственном доме, ты решаешь попытаться загладить вину перед [zaranix.herHim]. Глядя на промежность [zaranix.her] и прикусывая [pc.lip], ты издаешь жалобный скулящий звук: [pc.speech(Прости за все эти хлопоты, [zaranix.name]... Может, ты хочешь, чтобы я сделал для тебя что-нибудь...)]
 	</p>
 	<p>
-		[zaranix.Name] looks up at you, a big grin spreading across [zaranix.her] face as [zaranix.she] realises what it is you want. Standing up, [zaranix.she] steps over towards you, before running [zaranix.her] hands over your [pc.hips] and around to give your [pc.ass+] a firm squeeze. You can tell by the hungry look in [zaranix.her] eyes that your arcane aura is filling [zaranix.her] mind with lust, and, to confirm your suspicions, the [zaranix.race] leans forwards, before [zaranix.moaning], [zaranix.speech(There is one thing you can do... I want to hear you call out my name as I fuck you!)]
+		[zaranix.Name] смотрит на тебя, и по [zaranix.her] лицу расплывается широкая ухмылка, когда [zaranix.she] понимает, чего именно ты хочешь. Поднявшись, [zaranix.she] делает шаг к тебе, после чего запускает [zaranix.her] руки тебе под [pc.hips] и крепко сжимает твои [pc.ass+]. По голодному блеску в [zaranix.her] глазах можно понять, что твоя аркана-аура наполняет [zaranix.her] разум похотью, и, чтобы подтвердить твои подозрения, [zaranix.race] наклоняется вперед, а затем [zaranix.moaning], [zaranix.speech(Есть одна вещь, которую ты можешь сделать... Я хочу слышать, как ты выкрикиваешь мое имя, пока я трахаю тебя!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -63,13 +63,13 @@
 	<htmlContent tag="AFTER_SEX_VICTORY"><![CDATA[
 	<p>
 		#IF(sex.getNumberOfOrgasms(zaranix) >= zaranix.getOrgasmsBeforeSatisfied())
-			[zaranix.Name] steps back and sinks down into a nearby chair, a happy smile on [zaranix.her] face as [zaranix.she] gazes up at you, [zaranix.speech(That was fun... I guess losing Arthur for that wasn't too bad a deal...)]
+			[zaranix.Name] отступает назад и опускается в ближайшее кресло, а на [zaranix.her] лице играет счастливая улыбка, пока [zaranix.she] смотрит на тебя снизу вверх, [zaranix.speech(Это было весело... Думаю, потеря Arthur — не такая уж плохая сделка...)]
 		#ELSE
-			[zaranix.Name] steps back and sinks down to the floor, letting out [zaranix.a_moan+] as [zaranix.her] hands drop down between [zaranix.her] legs, [zaranix.speech(Ah! You didn't even satisfy me...)]
+			[zaranix.Name] отступает назад и опускается на пол, издавая [zaranix.a_moan+], пока руки [zaranix.her] скользят между [zaranix.her] ног, [zaranix.speech(Ах! Ты даже не удовлетворил меня...)]
 		#ENDIF
 	</p>
 	<p>
-		Smirking down at the [zaranix.race] one last time, you turn around and take your leave. Retracing your steps through [zaranix.her] house, you soon find yourself back out in the streets of Demon Home. Now that Arthur's been rescued, you realise that you should probably head over to Lilaya's house to find out what your next step will be...
+		В последний раз ухмыльнувшись [zaranix.race], ты разворачиваешься и уходишь. Возвращаясь тем же путем через дом [zaranix.her], ты вскоре снова оказываешься на улицах Демоньего Дома. Теперь, когда Arthur спасен, ты понимаешь, что тебе, пожалуй, стоит заглянуть к Lilaya, чтобы узнать, каков твой следующий шаг...
 	</p>
 	]]>
 	</htmlContent>
@@ -80,48 +80,48 @@
 	<htmlContent tag="AFTER_COMBAT_DEFEAT"><![CDATA[
 	#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, false))
 		<p>
-			You can't continue fighting any longer, and after letting out a defeated groan, you stagger backwards and slump down against one wall of Zaranix's lab. Glancing up at your conqueror, you see the imposing form of the huge incubus towering over you with a stern expression on his face.
+			Ты больше не можешь сражаться. Издав побежденный стон, ты пошатываешься назад и сползаешь по стене в лаборатории Zaranix. Подняв взгляд на своего победителя, ты видишь внушительную фигуру огромного инкуба, который возвышается над тобой с суровым выражением лица.
 		</p>
 		<p>
-			[zaranix.speech(So, you thought you'd barge into my lab, pick a fight, and get away with it?!)] he scolds you, [zaranix.speech(Instead of simply throwing you out, I had plans to make you into a test subject, but seeing as you've got your mouth all blocked like that, I guess I'll have to forget that plan...)]
+			[zaranix.speech(Значит, ты думал, что сможешь просто вломиться в мою лабораторию, затеять драку и выйти сухим из воды?!)] — отчитывает он тебя, — [zaranix.speech(Вместо того чтобы просто вышвырнуть тебя, у меня были планы сделать из тебя подопытного, но раз уж у тебя рот так плотно забит, полагаю, придется об этом забыть...)]
 		</p>
 	#ELSEIF(game.isNonConEnabled())
 		<p>
-			You can't continue fighting any longer, and after letting out a defeated groan, you stagger backwards and slump down against one wall of Zaranix's lab. Glancing up at your conqueror, you see the imposing form of the huge incubus towering over you with a maniacal grin on his face.
+			Ты больше не можешь сражаться. Издав побежденный стон, ты пошатываешься назад и сползаешь по стене в лаборатории Zaranix. Подняв взгляд на своего победителя, ты видишь внушительную фигуру огромного инкуба, который возвышается над тобой с маниакальной ухмылкой на лице.
 		</p>
 		<p>
-			[zaranix.speech(So, you thought you'd barge into my lab, pick a fight, and get away with it?! Hah!)] he shouts while stepping over to one of the lab's many cabinets. Grabbing a small glass bottle, he turns to face you once more and declares, [zaranix.speech(Well, Arthur and I were in need of a test subject, and you'll do nicely!)]
+			[zaranix.speech(Значит, ты думал, что сможешь просто вломиться в мою лабораторию, затеять драку и выйти сухим из воды?! Ха!)] — выкрикивает он, направляясь к одному из многочисленных шкафов в лаборатории. Схватив маленький стеклянный флакон, он снова поворачивается к тебе и заявляет: [zaranix.speech(Что ж, нам с Arthur как раз нужен был подопытный, и ты отлично подойдешь!)]
 		</p>
 		<p>
-			Before you can say anything, the huge incubus pulls the stopper out of the top of the bottle, and after quickly advancing upon you,
+			Прежде чем ты успеваешь что-либо сказать, огромный инкуб выдергивает пробку из горлышка флакона и, стремительно приближаясь к тебе,
 			#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, false))
-				 he kneels down and displaces your clothing so as to gain access to your mouth, after which he forces the rim of the bottle against your lips and demands,
+				 он опускается на колени и раздвигает твою одежду, чтобы добраться до твоего рта, после чего прижимает край флакона к твоим губам и требует,
 			#ELSE
-				 he kneels down and forces the rim against your lips, demanding,
+				 Он опускается на колени и прижимает край бутылки к твоим губам, требуя:
 			#ENDIF
-			 [zaranix.speech(Come on, drink up! Arthur assures me that this particular concoction will transform you into the perfect little cock-sucker, and I can't wait to be the judge of that myself!)]
+			 [zaranix.speech(Давай, пей! Arthur уверяет меня, что этот состав превратит тебя в идеальную маленькую соску, и мне не терпится убедиться в этом лично!)]
 		</p>
 		<p>
-			You still have a little energy left, and as you feel the first few drops of the potion seeping into your mouth, you realise that you could spit it out and try to throw the bottle to the floor. Then again, maybe it's best to just do as the demon says...
+			У тебя еще осталось немного Энергии, и когда ты чувствуешь первые капли зелья, просачивающиеся в рот, ты понимаешь, что могла бы выплюнуть его и попытаться швырнуть бутылку на пол. С другой стороны, возможно, лучше просто сделать то, что говорит демон...
 		</p>
 	#ELSE
 		<p>
-			You can't continue fighting any longer, and after letting out a defeated groan, you stagger backwards and slump down against one wall of Zaranix's lab. Glancing up at your conqueror, you see the imposing form of the huge incubus towering over you with a stern expression on his face.
+			Ты больше не можешь сражаться. Издав побежденный стон, ты пошатываешься назад и сползаешь по стене в лаборатории Zaranix. Подняв взгляд на своего победителя, ты видишь внушительную фигуру огромного инкуба, который возвышается над тобой с суровым выражением лица.
 		</p>
 		<p>
-			[zaranix.speech(So, you thought you'd barge into my lab, pick a fight, and get away with it?!)] he scolds you, before an idea suddenly seems to enter his mind and he asks, [zaranix.speech(Instead of simply being thrown out, how about you apologise by volunteering as a test subject?)]
+			[zaranix.speech(Так ты думала, что сможешь просто вломиться в мою лабораторию, затеять драку и выйти сухой из воды?!)] — отчитывает он тебя, но вдруг в его голове рождается идея, и он спрашивает: [zaranix.speech(Вместо того чтобы просто вылететь отсюда вон, как насчет того, чтобы извиниться и вызваться в качестве подопытной?!)]
 		</p>
 		<p>
-			Before you can say anything, the huge incubus grabs a glass bottle from out of a nearby cabinet, and after quickly advancing upon you, kneels down and playfully swirls around the liquid contained within.
+			Прежде чем ты успеваешь что-то сказать, огромный инкуб хватает стеклянную бутылку из ближайшего шкафа, стремительно подходит к тебе, опускается на колени и игриво взбалтывает жидкость внутри.
 			#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, false))
-				 Displacing your clothing so as to gain access to your mouth, he looks into your eyes and he states,
+				 Расправив твою одежду, чтобы добраться до твоего рта, он заглядывает тебе в глаза и произносит:
 			#ELSE
-				 Looking into your eyes, he states,
+				 Заглядывая тебе в глаза, он произносит:
 			#ENDIF
-			 [zaranix.speech(Arthur assures me that this particular concoction will transform the drinker into the perfect little cock-sucker. I'm not going to force this on you, but if you feel even slightly sorry for what you've done, you can make it up to me by drinking this. After that, I'm sure you won't object to sucking my cock...)]
+			 [zaranix.speech(Arthur уверяет меня, что этот состав превратит того, кто его выпьет, в идеальную маленькую соску. Я не собираюсь заставлять тебя силой, но если тебе хоть капельку жаль содеянного, ты можешь загладить вину, выпив это. А после этого, я уверен, ты не будешь возражать против того, чтобы пососать мой член...)]
 		</p>
 		<p>
-			With both Zaranix and Arthur awaiting your response, you wonder whether to agree to drink the transformative liquid and then give the incubus a blowjob or instead simply get thrown out of the building...
+		И Зараникс, и Arthur ждут твоего ответа. Ты гадаешь: согласиться ли выпить трансформирующую жидкость, а затем отсосать инкубу, или же просто оказаться выброшенной из здания...
 		</p>
 	#ENDIF
 	]]>
@@ -129,20 +129,20 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_NO_MOUTH"><![CDATA[
 	<p>
-		With access to your mouth being blocked, Zaranix cannot make use of you as a test subject, and so instead of wasting any further time with you, he angrily reaches down and grabs your [pc.arm]. The grip of his big, strong hand is too much for you to escape from, and so left with little choice but to shuffle and crawl alongside Zaranix, you're quickly dragged back through the house and to the front door.
+	Поскольку твой рот чем-то заблокирован, Зараникс не может использовать тебя в качестве подопытной, и, чтобы не тратить на тебя больше времени, он в гневе наклоняется и хватает тебя за [pc.arm]. Его огромная, сильная ладонь сжимается слишком крепко, чтобы ты могла вырваться, и, не имея иного выбора, кроме как ползти и шаркать следом за ним, ты быстро проносишься через весь дом к входной двери.
 	</p>
 	<p>
-		[zaranix.speech(I wouldn't bother coming back, if I were you!)] he shouts as he throws you out into the street and slams the door behind you...
+	[zaranix.speech(На твоем месте я бы не утруждала себя возвращением!)] — кричит он, вышвыривая тебя на улицу и с грохотом захлопывая за тобой дверь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_REFUSE"><![CDATA[
 	<p>
-		Not at all interested in being transformed and then sucking Zaranix's cock, you flatly refuse to drink his potion. Before you can say anything further, the incubus angrily reaches down and grabs your [pc.arm]. The grip of his big, strong hand is too much for you to escape from, and so left with little choice but to shuffle and crawl alongside Zaranix, you're quickly dragged back through the house and to the front door.
+	Совершенно не желая превращаться, чтобы потом сосать член Зараникса, ты решительно отказываешься пить его зелье. Прежде чем ты успеваешь что-то добавить, инкуб в ярости наклоняется и хватает тебя за [pc.arm]. Его огромная, сильная ладонь сжимается слишком крепко, чтобы ты могла вырваться, и, не имея иного выбора, кроме как ползти и шаркать следом за ним, ты быстро проносишься через весь дом к входной двери.
 	</p>
 	<p>
-		[zaranix.speech(I wouldn't bother coming back, if I were you!)] he shouts as he throws you out into the street and slams the door behind you...
+	[zaranix.speech(На твоем месте я бы не утруждала себя возвращением!)] — кричит он, вышвыривая тебя на улицу и с грохотом захлопывая за тобой дверь...
 	</p>
 	]]>
 	</htmlContent>
@@ -152,64 +152,64 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SPIT"><![CDATA[
 	<p>
-		There's no way you want to be transformed into Zaranix's 'perfect little cock-sucker'. Summoning the last of your energy, you twist your head to one side, spitting the few drops of the potion that entered your mouth to the floor, before grabbing the little glass bottle and hurling it to the other side of the room.
+		Ты точно не хочешь превращаться в «идеальную маленькую соску» Зараникса. Собрав последние капли своей Энергии, ты резко поворачиваешь голову и выплевываешь на пол остатки зелья, попавшего в рот, после чего хватаешь маленькую стеклянную бутылочку и швыряешь её в другой конец комнаты.
 	</p>
 	<p>
-		The sound of smashing glass is accompanied by a deep, booming roar as the now-furious incubus shouts, [zaranix.speech(You insolent #IF(pc.isFeminine())whore#ELSEbastard#ENDIF! You'll suck my cock, with or without that potion!)]
+		Звон разбитого стекла сопровождается глубоким, громоподобным ревом: разъяренный инкуб кричит, [zaranix.speech(Ты, дерзкая...) #IF(pc.isFeminine())whore#ELSEbastard#ENDIF! You'll suck my cock, with or without that potion!)]
 	</p>
 	<p>
-		Grabbing you by the [pc.arm], Zaranix roughly drags you across the lab. Collapsing down in a nearby chair, he grabs you by the shoulders and pulls you forwards as he spreads his legs, bringing your face right up against his crotch and booming, [zaranix.speech(You're going to love my cock, slut!)]
+		Схватив тебя за [pc.arm], Зараник грубо тащит тебя через всю лабораторию. Рухнув в ближайшее кресло, он хватает тебя за плечи и тянет на себя, широко раздвигая ноги так, что твое лицо оказывается вплотную к его паху, и гремит: [zaranix.speech(Ты будешь обожать мой член, шлюшка!)]
 	</p>
 	<p>
-		Quickly undoing his trousers and pulling both them and his underwear down, he fully exposes his rapidly-hardening cock to you. Although a hefty [zaranix.cockLengthValues] in length, his girthy, [zaranix.cockColour] shaft is relatively plain for a demon, as its only uncommon attribute is being circled by a series of hard, fleshy ribs. As a bead of slimy precum starts to ooze from his urethra, the incubus grabs the back of your head and starts to pull your mouth towards his erect cock...
+		Быстро расстегнув брюки и стянув их вместе с нижним бельем, он полностью обнажает перед тобой свой стремительно твердеющий член. Несмотря на внушительную [zaranix.cockLengthValues] в длину, его толстый, [zaranix.cockColour] ствол выглядит довольно просто для демона — лишь ряд твердых мясных ребер опоясывает его. Когда из уретры начинает сочиться капля склизкой предэякулята, инкуб хватает тебя за затылок и начинает тянуть твой рот к своему эрегированному члену...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SPIT_SEX_START"><![CDATA[
 	<p>
-		You're far too exhausted from your fight to put up much of a resistance, and so quickly resigning yourself to your fate, you allow Zaranix to pull your face down into his groin. Pressing your [pc.lips+] against the head of his [zaranix.cock+], you obediently give it a big, wet kiss. Delighted by your submission, the incubus happily grunts, [zaranix.speech(That's it, slut. Keep on kissing it... Just like that...)]
+		Ты слишком измотана после битвы, чтобы оказывать серьезное сопротивление, и, быстро смирившись со своей участью, позволяешь Зараниксу прижать твое лицо к своему паху. Прижимая свой [pc.lips+] к головке его [zaranix.cock+], ты послушно даришь ему долгий, влажный поцелуй. В восторге от твоей покорности инкуб довольно хрипит: [zaranix.speech(Вот так, сучка. Целуй его дальше... Вот так...)]
 	</p>
 	<p>
-		Doing as you're told, you plant a series of kisses on Zaranix's demonic cock, licking up his salty, oozing precum in the process. Following yet more of his instructions, you then move down and dart out your [pc.tongue+], before starting to lick the underside of his girthy shaft. It's only as you proceed to start kissing and licking his huge balls that you realise the incubus has let go of your head, but by this point you're so into what you're doing that you don't even consider pulling away.
+		Повинуясь его приказам, ты осыпаешь демонический член Зараникса поцелуями, слизывая по пути соленую, сочащуюся предэякулятом смазку. Следуя его дальнейшим указаниям, ты опускаешься ниже и высовываешь свой [pc.tongue+], начиная вылизывать нижнюю часть его толстого ствола. Только когда ты переходишь к поцелуям и облизыванию его огромных яичек, ты понимаешь, что инкуб разжал руки, сжимавшие твою голову, но к этому моменту ты настолько увлечена процессом, что даже не думаешь отстраниться.
 	</p>
 	<p>
-		After he's made you spend a good few minutes kissing and licking his cock and balls, Zaranix seems ready for the main event, and after leaning back on his chair and spreading his legs, he commands, [zaranix.speech(Go on then, slut, take my cock down your throat. Show me what a good little cock-sucker you are...)]
+		Заставив тебя несколько минут возиться с его членом и яичками, Зараникс, кажется, готов к главному. Откинувшись на спинку кресла и широко раздвинув ноги, он командует: [zaranix.speech(Ну же, сучка, заглоти мой член. Покажи мне, какая ты хорошая маленькая сосальщица...)]
 	</p>
 	<p>
-		Feeling incredibly turned on and happy to obey, you lift your mouth up to the [zaranix.cockHead+] of Zaranix's cock, and after parting your [pc.lips+], you drop your head down and take his [zaranix.cock+] down your throat. Placing a hand on the back of your head, Zaranix lets out an approving grunt, which encourages you to start bobbing your head up and down and do your best to give him a good blowjob...
+		Чувствуя невероятное возбуждение и радость от возможности подчиниться, ты подносишь свои губы к [zaranix.cockHead+] члена Зараникса, и, разомкнув [pc.lips+], ты опускаешь голову, принимая его [zaranix.cock+] глубоко в глотку. Положив руку тебе на затылок, Зараникс издает одобряющее хрюканье, что побуждает тебя начать ритмично двигать головой вверх-вниз, изо всех сил стараясь доставить ему удовольствие от минета...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SPIT_SEX_START_EAGER"><![CDATA[
 	<p>
-		Although you didn't like the idea of being transformed, you're excited as the prospect of getting to suck Zaranix's cock, and so you submissively let him pull your face down into his groin. Eagerly pressing your [pc.lips+] against the head of his [zaranix.cock+], you lovingly give it a big, wet kiss. Delighted by your enthusiasm, the incubus happily grunts, [zaranix.speech(That's it, slut. Keep on kissing it... Just like that...)]
+		Хотя сама идея трансформации тебе не слишком понравилась, перспектива пососать член Зараникса приводит тебя в восторг, поэтому ты покорно позволяешь ему прижать твое лицо к своему паху. Жадно прижимая [pc.lips+] к головке его [zaranix.cock+], ты с любовью осыпаешь её долгим, влажным поцелуем. В восторге от твоего энтузиазма, инкуб довольно хрюкает: [zaranix.speech(Вот так, сучка. Продолжай целовать его... Именно так...)]
 	</p>
 	<p>
-		Not needing to be told what to do, you plant a series of passionate kisses on Zaranix's demonic cock, greedily licking up his salty, oozing precum in the process. Seeing that he doesn't need to give you any more instructions, Zaranix simply lets out a series of deep grunts as you then move down and dart out your [pc.tongue+], before starting to lick the underside of his girthy shaft. It's only as you proceed to start kissing and licking his huge balls that you realise the incubus has let go of your head, but the thought of pulling away doesn't even enter your mind for a moment.
+		Не дожидаясь указаний, ты осыпаешь демонический член Зараникса страстными поцелуями, жадно слизывая соленую, сочащуюся смазку. Видя, что больше объяснять ничего не нужно, Зараникс лишь издает серию глубоких стонов, пока ты спускаешься ниже и выстреливаешь своим [pc.tongue+], начиная вылизывать нижнюю часть его толстого ствола. И только когда ты переходишь к поцелуям и облизыванию его огромных яичек, до тебя доходит, что инкуб отпустил твою голову, но мысль о том, чтобы отстраниться, даже на мгновение не посещает твой разум.
 	</p>
 	<p>
-		After you've spent a good few minutes kissing and licking his cock and balls, Zaranix seems ready for the main event, and after leaning back on his chair and spreading his legs, he commands, [zaranix.speech(Go on then, slut, take my cock down your throat. Show me what a good little cock-sucker you are...)]
+		После того как ты потратила несколько минут, облизывая и посасывая его член и яички, Зараникс, кажется, готов к главному блюду. Откинувшись на спинку стула и широко раздвинув ноги, он командует: [zaranix.speech(Ну же, шлюшка, заглоти мой член. Покажи мне, какая ты хорошая сосальщица...)]
 	</p>
 	<p>
-		Feeling incredibly turned on and happy to obey, you lift your mouth up to the [zaranix.cockHead+] of Zaranix's cock, and after parting your [pc.lips+], you drop your head down and take his [zaranix.cock+] down your throat. Placing a hand on the back of your head, Zaranix lets out an approving grunt, which encourages you to start bobbing your head up and down and do your best to give him a good blowjob...
+		Чувствуя невероятное возбуждение и радость от возможности подчиниться, ты подносишь свои губы к [zaranix.cockHead+] члена Зараникса, и, разомкнув [pc.lips+], ты опускаешь голову, принимая его [zaranix.cock+] глубоко в глотку. Положив руку тебе на затылок, Зараникс издает одобряющее хрюканье, что побуждает тебя начать ритмично двигать головой вверх-вниз, изо всех сил стараясь доставить ему удовольствие от минета...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SPIT_SEX_START_RESIST"><![CDATA[
 	<p>
-		Desperate not to have that thing in your mouth, you try to pull away from Zaranix's cock, but his grip on the back of your head is too strong, and after preventing your escape, he growls, [zaranix.speech(I see you're not going to play along, so we can skip the foreplay. Open wide, bitch!)]
+		Отчаянно пытаясь избежать этого зрелища во рту, ты пытаешься отстраниться от члена Зараникса, но его хватка на твоем затылке слишком крепка. Предотвратив твое бегство, он рычит: [zaranix.speech(Вижу, играть по правилам ты не собираешься, так что можем пропустить прелюдию. Раскрой пасть, сучка!)]
 	</p>
 	<p>
-		You're far too exhausted from your fight to put up much of a resistance, and feel totally powerless as the strong incubus pulls your head into his groin and forces the precum-coated head of his cock up against your [pc.lips+]. Pinching your nose, the incubus waits until you have to open your mouth to take a breath, and at that moment he roughly thrusts his hips and forces his hard cock into your mouth. With tears streaming down your face, you try to ignore the salty taste of the demon's precum as his girthy shaft forces its way past your tongue and down your throat.
+		После битвы ты слишком истощена, чтобы оказывать серьезное сопротивление, и чувствуешь себя совершенно беспомощной, когда сильный инкуб прижимает твою голову к своему паху, втискивая покрытую предэякулятом головку члена тебе в [pc.lips+]. Зажав тебе нос, инкуб ждет, когда тебе придется открыть рот, чтобы вдохнуть, и в этот момент он грубо толкает бедрами, вбивая свой твердый член тебе в рот. По лицу текут слезы, пока ты пытаешься игнорировать соленый вкус смазки демона, когда его толстый ствол проталкивается мимо языка глубоко в твое горло.
 	</p>
 	<p>
-		[zaranix.speech(Fuck, your throat feels good,)] Zaranix teases as he ignores your muffled, choking sobs. Using both hands, he starts forcefully bobbing your head up and down, and as he dominantly fucks your throat in this manner, he grunts, [zaranix.speech(That's it, slut... ~Mmm!~ You'll be swallowing my cum soon enough...)]
+		[zaranix.speech(Блядь, как же приятно в горле,)] — дразнит Зараникс, игнорируя твои приглушенные, удушливые всхлипы. Обхватив твою голову обеими руками, он начинает с силой двигать её вверх-вниз, и, доминантно трахая твое горло таким образом, он рычит: [zaranix.speech(Вот так, шлюшка... ~Ммм!~ Скоро ты будешь глотать мою сперму...)]
 	</p>
 	<p>
-		Although your efforts are completely fruitless, you continue to do your best to try and resist as Zaranix continues to dominantly thrust his [zaranix.cock+] deep down your throat...
+		Хотя твои усилия совершенно тщетны, ты продолжаешь изо всех сил пытаться сопротивляться, пока Зараник продолжает властно вбивать свой [zaranix.cock+] глубоко тебе в глотку...
 	</p>
 	]]>
 	</htmlContent>
@@ -220,32 +220,32 @@
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SWALLOW"><![CDATA[
 	<p>
 		#IF(pc.hasFetish(FETISH_TRANSFORMATION_RECEIVING))
-			Loving the idea of being transformed, the thought of refusing this dominant incubus doesn't enter your head for even a moment. Opening wide to accept the neck of the bottle past your lips, you obediently take the thick, creamy liquid into your mouth.
+			Обожающая саму мысль о грядущем превращении, ты даже на мгновение не задумываешься о том, чтобы отказать этому доминантному инкубу. Широко раскрывая рот, чтобы принять горлышко бутылки, ты послушно принимаешь в себя густую кремообразную жидкость.
 		#ELSEIF(game.isNonConEnabled())
-			You decide that there's no point in resisting the dominant incubus, and so you obediently part your lips and take the thick, creamy liquid into your mouth.
+			Ты решаешь, что сопротивляться властному инкубу нет никакого смысла, и послушно размыкаешь губы, принимая в рот густую кремообразную жидкость.
 		#ELSE
-			Feeling as though being Zaranix's test subject is the least you could do, you obediently part your lips and take the thick, creamy liquid into your mouth.
+			Чувствуя, что стать подопытной для Зараникa — это меньшее, что ты можешь сделать, ты послушно размыкаешь губы и принимаешь в рот густую кремообразную жидкость.
 		#ENDIF
-		 The potion turns out to have an extremely strong, salty taste to it, which is far from what anyone in their right mind could consider to be appetising. Scrunching your eyes shut and forcing yourself to start swallowing the unpleasant mixture, you quickly find yourself becoming accustomed to the taste, and by the time you've quickly downed the entire bottle, you're desperately licking and sucking every last drop from off of its rim.
+			Оказывается, что зелье обладает чрезвычайно сильным, соленым вкусом, который вряд ли кто-то в здравом уме назвал бы аппетитным. Зажмурившись и заставляя себя глотать эту неприятную смесь, ты быстро привыкаешь к вкусу, и к тому моменту, когда ты залпом осушаешь всю бутылку, ты уже отчаянно слизываешь и высасываешь каждую последнюю каплю с её краев.
 	</p>
 	<p>
-		As Zaranix takes the now-empty bottle away from your mouth, a fuzzy, warm feeling starts spreading across your face and up into your head. You suddenly find yourself thinking how utterly wonderful it would be if Zaranix gave you even more of that liquid to drink. Even better, you think, if there was an endless supply...
+		Когда Зараник убирает пустую бутылку от твоих губ, по лицу и вверх к голове начинает разливаться приятное, теплое чувство. Ты вдруг ловишь себя на мысли, как же чудесно было бы, если бы Зараник дал тебе еще этой жидкости. А еще лучше, думаешь ты, если бы она была бесконечной...
 	</p>
 	<p>
-		Perhaps you could convince Zaranix to enchant his cock so that he cums that delicious liquid...
+		Возможно, тебе удастся убедить Зараникса заколдовать свой член, чтобы он кончал той самой восхитительной жидкостью...
 	</p>
 	<p>
-		You'd happily wrap your fat, juicy, cock-sucking lips -<i>were they always this big?</i>- around his huge, thick cock if it meant you got to taste that again... You can't help but salivate at the thought, and absently-mindedly run your slimy tongue over your gigantic lips as you imagine getting to taste that same salty mixture again...
+		Ты бы с радостью обхватила свои жирные, сочные, сосательные губы — <i>неужели они всегда были такими огромными?</i> — вокруг его огромного, толстого члена, если бы это значило, что ты сможешь попробовать это снова... Ты невольно пускаешь слюни при одной только мысли об этом, рассеянно водя влажным языком по своим гигантским губам и представляя, как снова вкушаешь ту самую соленую смесь...
 	</p>
 	<i>[#pc.incrementLipSize(7)]</i>
 	<i>[#pc.incrementFaceWetness(7)]</i>
 	<p>
-		Now that you think about it, just getting to suck his cock would be reward enough! A desperate, overwhelming need to orally service Zaranix's huge demonic dick causes you to let out an incredibly lewd moan. You need to kiss his cock... You <i>need</i> his cock in your mouth... No, you <b><i>need</i></b> it thrusting as deep as possible down your throat!
+		Теперь, когда ты об этом задумалась, даже просто пососать его член было бы достаточной наградой! Отчаянная, всепоглощающая потребность отсосать огромный демонический член Зараникса заставляет тебя издать невероятно похотливый стон. Тебе нужно поцеловать его член... Тебе <i>нужен</i> его член во рту... Нет, тебе <b><i>нужно</i></b>, чтобы он входил как можно глубже в твое горло!
 	</p>
 	<i>[#pc.addFetish(FETISH_ORAL_GIVING)]</i>
 	<i>[#pc.incrementFaceDepth(2)]</i>
 	<p>
-		You can't help but continue to lick your massive, cock-sucking lips as you imagine the incubus hilting his shaft deep down your throat and giving you your delicious reward; a huge load of his salty, demonic cum... You'd swallow every drop and beg for more... You can't help it; you simply <i>need</i> to drink some cum!
+		Ты не можешь перестать облизывать свои массивные, сосательные губы, представляя, как инкуб вонзает свой ствол глубоко тебе в глотку, даря тебе твою восхитительную награду — огромную порцию его соленой демонической спермы... Ты бы проглотила каждую каплю и умоляла о добавке... Ты ничего не можешь с собой поделать; тебе просто <i>нужно</i> выпить немного спермы!
 	</p>
 	<i>[#pc.addFetish(FETISH_CUM_ADDICT)]</i>
 	]]>
@@ -253,45 +253,44 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SWALLOW_START"><![CDATA[
 	<p>
-		With a triumphant smirk on [zaranix.her] face, Zaranix steps back and sits down on one of the lab's many chairs. Spreading [zaranix.her] legs, [zaranix.she] grins at you and teases, [zaranix.speech(I bet you want to put those new lips of yours to use, don't you, my little cock-sucker?)]
+		С торжествующей ухмылкой на [zaranix.her] лице, Зараникс отступает назад и усаживается на один из многочисленных стульев в лаборатории. Разведя [zaranix.her] ноги, [zaranix.she] скалится тебе в лицо и дразнит: [zaranix.speech(Бьюсь об заклад, тебе не терпится опробовать свои новые губки, а, моя маленькая соска?)]
+	</p><p>
+	Ты издаёшь истошный, отчаянный скулёж, жадно уставившись на бугор в паху Зараникс. Прежде чем ты успеваешь осознать свои действия, ты уже опускаешься на колени перед [zaranix.herHim] и проводишь руками по паху [zaranix.her]. Из-за твоих огромных, сочных губ ты невольно начинаешь шепелявить, когда умоляешь: [pc.speechNoEffects(~Ммм!~ Пожа<i>луй</i>ста! Нужно... член!)]
+</p>
+	<p>
+		[zaranix.speech(Ха!)] — гремит [zaranix.race], — [zaranix.speech(Тогда за дело, соска!)]
 	</p>
 	<p>
-		You let out an intense, desperate whine as you gaze hungrily at the bulge in Zaranix's groin. Before you know what you're doing, you've dropped down in front of [zaranix.herHim] and are running your hands over [zaranix.her] groin. Your huge, juicy lips cause you to uncontrollably speak with a lisp as you plead, [pc.speechNoEffects(~Mmm!~ Plea<i>th</i>e! Need... cock!)]
+		Издавая отчаянный, похотливый скулеж, ты изо всех сил стараешься поскорее расстегнуть брюки Зараникса, а затем стягиваешь и их, и [zaranix.her] нижнее белье, полностью обнажая [zaranix.her] стремительно твердеющий член. Несмотря на внушительную [zaranix.cockLengthValues] в длину и [zaranix.her] толщину, [zaranix.cockColour] ствол выглядит довольно обыденно для демона — лишь ряд твердых мясистых ребер служит его необычной чертой. Когда из [zaranix.her] уретры начинает сочиться капля склизкой смазки, ты чувствуешь, как слюна непроизвольно течет из уголков твоего рта.
 	</p>
 	<p>
-		[zaranix.speech(Hah!)] the [zaranix.race] booms, [zaranix.speech(Then get to it, cock-sucker!)]
+		[zaranix.speech(Нет смысла заставлять тебя ждать; так ты скоро весь пол намочишь!)] Зараникс смеется, прежде чем ткнуть [zaranix.her] эрегированным членом тебе в лицо. Жаждущий начать, ты издаешь серию похотливых стонов, принявшись осыпать демонический член Зараникса страстными, влажными поцелуями и жадно слизывая [zaranix.her] соленую, сочащуюся предэякулятом смазку. Доминантный демон лишь издает серию глубоких гортанных звуков, когда ты спускаешься ниже и высовываешь свой [pc.tongue+], начиная вылизывать нижнюю часть [zaranix.her] толстого ствола. Затем ты подносишь свои сочные губы ниже, чтобы начать целовать и лизать [zaranix.her] огромные яички, и спустя всего несколько мгновений ты покрываешь гениталии демона скользким слоем своей слюны.
 	</p>
 	<p>
-		Letting out a desperate, horny whine, you move as quickly as you can to undo Zaranix's trousers, before pulling both them and [zaranix.her] underwear down and fully exposing [zaranix.her] rapidly-hardening cock. Although a hefty [zaranix.cockLengthValues] in length, [zaranix.her] girthy, [zaranix.cockColour] shaft is relatively plain for a demon, as its only uncommon attribute is being circled by a series of hard, fleshy ribs. As a bead of slimy precum starts to ooze from [zaranix.her] urethra, you feel your saliva uncontrollably drooling from the corners of your mouth.
+		[zaranix.speech(Это зелье оказалось огромным успехом,)] дразнит Зараникс, прежде чем откинуться на [zaranix.her] кресло и раздвинуть [zaranix.her] ноги. Ухмыляясь тебе сверху вниз, [zaranix.she] приказывает: [zaranix.speech(Ну же, шлюшка, заглоти мой член. Покажи мне, в какую отличную сосальщицу ты превратилась...)]
 	</p>
 	<p>
-		[zaranix.speech(No sense in keeping you waiting; you'll be getting the floor wet at this rate!)] Zaranix laughs, before thrusting [zaranix.her] erect cock towards your face. Desperate to get started, you let out a series of horny little whines as you set about planting a series of passionate, wet kisses on Zaranix's demonic cock, greedily licking up [zaranix.her] salty, oozing precum in the process. The dominant demon simply lets out a series of deep grunts as you then move down and dart out your [pc.tongue+], before starting to lick the underside of [zaranix.her] girthy shaft. You then proceed to move your juicy lips down to start kissing and licking [zaranix.her] huge balls, and within a few moments, you've coated the demon's genitalia in a slimy layer of your slippery saliva.
-	</p>
-	<p>
-		[zaranix.speech(This potion turned out to be a huge success,)] Zaranix teases, before leaning back on [zaranix.her] chair and spreading [zaranix.her] legs. Grinning down at you, [zaranix.she] commands, [zaranix.speech(Go on then, slut, take my cock down your throat. Show me what a good little cock-sucker you've turned into...)]
-	</p>
-	<p>
-		Feeling incredibly turned on and happy to obey, you lift your mouth up to the [zaranix.cockHead+] of Zaranix's cock, and after parting your huge, juicy lips, you drop your head down and take [zaranix.her] [zaranix.cock+] down your throat. Placing a hand on the back of your head, Zaranix lets out an approving grunt, which encourages you to start bobbing your head up and down as you desperately anticipate [zaranix.her] hot cum shooting deep down your throat...
+		Чувствуя невероятное возбуждение и радость от возможности подчиняться, ты подносишь рот к [zaranix.cockHead+] члена Зараникса. Раскрыв свои огромные, сочные губы, ты опускаешь голову и заглатываешь [zaranix.her] [zaranix.cock+] глубоко в глотку. Положив руку тебе на затылок, Зараникс издает одобряющий хриплый звук, что побуждает тебя начать ритмично двигать головой вверх-вниз в отчаянном предвкушении того, как [zaranix.her] горячая сперма ударит тебе прямо в горло...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SWALLOW_ZARANIX_TF_START"><![CDATA[
 	<p>
-		Although your mind is almost totally fogged over with the desperate need to suck Zaranix's cock, you still can't help but feel slightly uncomfortable about how masculine he is. Momentarily shaking the overwhelming desire to suck cock out of your mind, you ask the dominant demon if he could use his self-transformative powers to take on a feminine form.
+		Хотя твой разум почти полностью затуманен от неистового желания сосать член Зараникса, ты всё же не можешь избавиться от легкого чувства дискомфорта из-за того, насколько он мужественен. На мгновение отогнав от себя всепоглощающую похоть, ты спрашиваешь доминантного демона, не мог бы он использовать свои способности к трансформации, чтобы принять женский облик.
 	</p>
 	<p>
-		[zaranix.speech(Oh, you want to see me as a succubus?)] Zaranix asks in a slightly annoyed tone, before rolling his eyes and sighing, [zaranix.speech(I suppose I'm a rare exception to the rule in that I'm a demon that prefers to stay as an incubus, but I don't particularly dislike my succubus form. Seeing as you've agreed to swallow that potion, I suppose it's only fair that I do something for you...)]
+		[zaranix.speech(О, ты хочешь увидеть меня суккубом?)] — спрашивает Зараникс слегка раздраженным тоном, после чего закатывает глаза и вздыхает: [zaranix.speech(Полагаю, я редкое исключение из правил — демон, который предпочитает оставаться инкубом, но мне не то чтобы противна форма суккуба. Раз уж ты согласилась выпить это зелье, будет честно, если я сделаю что-то для тебя...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SWALLOW_ZARANIX_TF_END"><![CDATA[
 	<p>
-		As you watch, Zaranix's masculine features start to soften and become distinctly more feminine, and while she retains her muscles and short, black hair, she shrinks down a little and gains more mass around her hips, ass, and chest. Within a few moments, Zaranix has completely transformed into her tomboyish succubus form, and after clearing her throat, she teases, [zaranix.speech(You prefer me like this then? Do these get you turned on too?)]
+		Пока ты наблюдаешь, мужественные черты Зараникс начинают смягчаться, становясь отчетливо женственными. Сохранив мускулатуру и короткие черные волосы, она немного уменьшается в росте, но при этом обретает больше объемов в бедрах, ягодицах и груди. Спустя мгновение Зараникс полностью превращается в свою дерзкую форму суккуба; прочистив горло, она дразнит тебя: [zaranix.speech(Значит, тебе больше нравится такой вариант? Эти тоже тебя заводят?)]
 	</p>
 	<p>
-		With that, the succubus unbuttons her shirt and reveals her breasts to you. While extremely small by succubus standards, they're still about a [zaranix.cupSize]-cup, and sport large, dark-purple nipples on each of their perky tips. Liking Zaranix's new form far more than the one she had before, you find yourself lustfully gazing first at her chest, and then down to her groin, where there's still a large bulge pressing out from beneath her trousers. Seeing what it is you're looking at, the succubus laughs and teases, [zaranix.speech(Still hungry for cock, huh? Well, I guess I should indulge you...)]
+		С этими словами суккуб расстегивает рубашку, обнажая перед тобой грудь. По меркам суккубов она совсем небольшая, примерно [zaranix.cupSize]-го размера, но на упругих сосках красуются крупные темно-пурпурные ареолы. Твоя новая форма Зараникс нравится тебе куда больше прежней, и ты ловишь себя на том, что с похотью разглядываешь сначала её грудь, а затем опускаешь взгляд к паху, где сквозь брюки всё еще отчетливо проступает внушительный бугорок. Заметив, куда ты смотришь, суккуб смеется и поддразнивает: [zaranix.speech(Всё еще жаждешь члена, а? Ну, пожалуй, стоит тебя побаловать...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -302,30 +301,34 @@
 	<htmlContent tag="AFTER_SEX_DEFEAT"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_zaranixTransformedPlayer))
 		<p>
-			Having had enough of using your mouth, Zaranix rather unceremoniously pushes you away and stands up, before stating, [zaranix.speech(I'd definitely call that potion a success! Those lewd, juicy lips of yours feel better than most pussies!)]
+		Наевшись твоим ртом, Зараникс довольно бесцеремонно отталкивает тебя и поднимается на ноги, заявляя: [zaranix.speech(Я бы точно назвала это зелье успехом! Твои похотливые, сочные губки ощущаются лучше, чем большинство кисок!)]
 		</p>
 		<p>
-			Before you can reply, the [zaranix.race] reaches down and pushes [zaranix.her] thumb into your mouth. Grinning as [zaranix.she] gets a good feel of your massive, cum-coated lips, [zaranix.she] turns [zaranix.her] head towards the door and calls out, [zaranix.speech(Arthur, get back in here! You can have a go at fucking [pc.her] face too; this potion was your creation, so it's only fitting that you get to enjoy it!)]
+		
+Прежде чем ты успеваешь ответить, [zaranix.race] наклоняется и засовывает [zaranix.her] большой палец тебе в рот. Ухмыляясь, пока [zaranix.she] вовсю ощущает твои влажные от спермы губы, [zaranix.she] поворачивает [zaranix.her] голову к двери и выкрикивает: [zaranix.speech(Arthur, а ну живо сюда! Можешь заодно и [pc.her] лицо оттрахать; этот эликсир был твоим творением, так что будет справедливо, если ты им насладишься!)]
 		</p>
 		<p>
-			Arthur, who you'd forgotten about until now, seemed to have hastily exited the room some time during your transformation, and after returning from his brief exile to the corridor, flatly states, [arthur.speech(No thank you, Zaranix. I created that potion to your specifications; it's not like I had any intention of using it.)]
+		
+Arthur, о котором ты совсем забыла до этого момента, судя по всему, поспешно покинул комнату где-то во время твоей трансформации, а вернувшись из своего недолгого изгнания в коридор, бесстрастно заявляет: [arthur.speech(Нет, спасибо, Zaranix. Я создал этот эликсир по твоим рецептам; у меня и в мыслях не было его использовать.)]
 		</p>
 	#ELSE
 		<p>
-			Having had enough of using your mouth, Zaranix rather unceremoniously pushes you away and stands up, before stating, [zaranix.speech(You're not half bad at sucking cock, slut!)]
+		
+Насытившись твоим ртом, Zaranix довольно бесцеремонно отталкивает тебя и встает, бросая напоследок: [zaranix.speech(А ты неплохо сосешь член, шлюшка!)]
 		</p>
 		<p>
-			Before you can reply, the [zaranix.race] reaches down and pushes [zaranix.her] thumb into your mouth. Grinning as [zaranix.she] gets a good feel of your cum-coated lips, [zaranix.she] turns [zaranix.her] head towards the door and calls out, [zaranix.speech(Arthur, get back in here! You can have a go at fucking [pc.her] face too!)]
+		
+Прежде чем ты успеваешь ответить, [zaranix.race] наклоняется и засовывает [zaranix.her] большой палец тебе в рот. Ухмыляясь, пока [zaranix.she] вовсю ощущает твои влажные от спермы губы, [zaranix.she] поворачивает [zaranix.her] голову к двери и выкрикивает: [zaranix.speech(Arthur, а ну живо сюда! Можешь заодно и [pc.her] лицо оттрахать!)]
 		</p>
 		<p>
-			Arthur, who you'd forgotten about until now, seemed to have hastily exited the room some time before you started sucking Zaranix's cock, and after returning from his brief exile to the corridor, flatly states, [arthur.speech(No thank you, Zaranix. I'd like to get back on with my work.)]
+			Arthur, о котором ты совсем забыл, кажется, поспешно покинул комнату незадолго до того, как ты принялся сосать член Zaranix. Вернувшись из своего недолгого изгнания в коридор, он бесцеремонно заявляет: [arthur.speech(Нет, спасибо, Zaranix. Я бы хотел вернуться к своей работе.)]
 		</p>
 	#ENDIF
 	<p>
-		[zaranix.speech(Your loss,)] Zaranix huffs, before grabbing hold of your [pc.arm] and unceremoniously pulling you along beside [zaranix.herHim] as [zaranix.she] heads towards the door. Looking down at you, [zaranix.she] growls, [zaranix.speech(I'll forgive your earlier actions, but you're still trespassing, so I'll show you to the door.)]
+		[zaranix.speech(Твоя потеря,)] — фыркает Zaranix, прежде чем схватить тебя за [pc.arm] и бесцеремонно потащить следом за [zaranix.herHim], пока [zaranix.she] направляется к двери. Глядя на тебя сверху вниз, [zaranix.she] рычит: [zaranix.speech(Твои прошлые заслуги я прощу, но ты всё ещё нарушаешь мои границы, так что я лично провожу тебя к выходу.)]
 	</p>
 	<p>
-		Left with little choice but to shuffle and crawl alongside the dominant [zaranix.race], you're quickly dragged back through the house and to the front door. [zaranix.speech(I wouldn't bother coming back, unless you want another taste of my cock, slut!)] Zaranix laughs, before throwing you out into the street and slamming the door behind you...
+		Не имея иного выбора, кроме как семенить и ползти следом за доминантным [zaranix.race], ты быстро проносишься через весь дом к входной двери. [zaranix.speech(Не советую возвращаться, если только ты не хочешь снова попробовать мой член на вкус, шлюха!)] — смеется Zaranix, прежде чем вышвырнуть тебя на улицу и с грохотом захлопнуть дверь...
 	</p>
 	]]>
 	</htmlContent>

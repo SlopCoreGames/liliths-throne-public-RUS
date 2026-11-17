@@ -6,29 +6,29 @@
 	<htmlContent tag="START"><![CDATA[
 	<p>
 		#IF(pc.hasTraitActivated(PERK_CHUUNI))
-			Not able to refuse Meraxis's challenge, you quickly reply by exclaiming, [pc.speech(You're no match for my ultimate power! Get ready to suffer defeat!)]
+			Не в силах отвергнуть вызов Мераксис, ты поспешно выкрикиваешь в ответ: [pc.speech(Тебе не сравниться с моей высшей мощью! Готовься к позорному поражению!)]
 		#ELSEIF(flags.hasFlag(FLAG_innoxia_meraxis_duel_place_elis))
-			Deciding to indulge Meraxis, and thinking that you have a decent shot at beating her and putting her in her place, you accept her challenge.
+			Решив потакать Мераксис и полагая, что у тебя есть вполне реальный шанс одолеть её и поставить на место, ты принимаешь её вызов.
 		#ELSE
-			Deciding to indulge Meraxis, and thinking that the duel should offer you some practice for what you might be about to encounter in the fields, you accept her challenge.
+			Решив потакать Мераксис и рассудив, что дуэль станет отличной тренировкой перед тем, что может ждать тебя на полях, ты принимаешь её вызов.
 		#ENDIF
 	</p>
 	<p>
-		[meraxis.speech(Mwhahaha! As expected of my nemesis!)] the chuuni [meraxis.race] laughs. Striking a heroic pose, a sinister grin settles on Meraxis's face as she reveals,
+		[meraxis.speech(Мва-ха-ха! Как и ожидалось от моего заклятого врага!)] — хохочет эта чуни-девочка [meraxis.race]. Приняв героическую позу, Мераксис расплывается в зловещей ухмылке и объявляет:
 		#IF(flags.hasSavedLong('meraxis_duel_player_losses'))
-			 [meraxis.speech(I've got another potion to test on you! If I win, you have to drink it again, ok?! I want to see you transform again...)]
+			 [meraxis.speech(У меня есть еще одно зелье, которое нужно на тебе испытать! Если я выиграю, ты выпьешь его снова, идет?! Я хочу снова увидеть твое превращение...)]
 		#ELSEIF(flags.hasSavedLong('meraxis_duel_player_wins'))
-			 [meraxis.speech(You may have won before, but not this time! When I win, you have to drink the potion I've made for you, ok?!)]
+			 [meraxis.speech(Может, ты и побеждал раньше, но не в этот раз! Когда выиграю я, ты выпьешь зелье, которое я для тебя сварила, идет?!)]
 		#ELSE
-			 [meraxis.speech(You might not be aware of this, but just like Lilaya my supreme power covers the field of arcane research. My experiments have yielded many potions, and I need to test them on someone. When I win, you have to drink one of my transformative potions, ok?!)]
+			 [meraxis.speech(Ты можешь и не знать, но, как и Lilaya, моя высшая мощь охватывает область исследований Арканы. Мои эксперименты породили множество зелий, и мне нужно на ком-то их протестировать. Когда я выиграю, ты выпьешь одно из моих трансформирующих зелий, идет?!)]
 		#ENDIF
 	</p>
 	<p>
-		Not yet agreeing to Meraxis's demands, you ask what you'll get if you win. Letting out another theatrical laugh in response to your question, Meraxis replies,
+		Пока не соглашаясь на условия Мераксис, ты спрашиваешь, что достанется тебе в случае победы. В ответ на твой вопрос Мераксис издает очередной театральный смешок и отвечает:
 		#IF(flags.hasSavedLong('meraxis_duel_player_wins'))
-			 [meraxis.speech(Mwhahaha! You have no chance of winning this time! I've been training since my last defeat and will surely destroy you! However, to make things interesting, you may decide upon a reward if you were to somehow best me in combat. So go on, choose what it is that you desire!)]
+			 [meraxis.speech(Мва-ха-ха! В этот раз у тебя нет ни единого шанса! С момента моего последнего поражения я усердно тренировалась и теперь точно тебя уничтожу! Впрочем, чтобы было интереснее, ты можешь сам выбрать награду, если каким-то чудом одолеешь меня в бою. Ну же, решайся, чего ты так жаждешь!)]
 		#ELSE
-			 [meraxis.speech(Mwhahaha! You have no chance of winning! However, to make things interesting, you may decide upon a reward if you were to somehow best me in combat. So go on, choose what it is that you desire!)]
+			 [meraxis.speech(Мва-ха-ха! У тебя нет шансов на победу! Но чтобы было интереснее, ты можешь сам выбрать награду, если каким-то чудом одолеешь меня в бою. Ну же, решайся, чего ты так жаждешь!)]
 		#ENDIF
 	</p>
 	]]>
@@ -36,96 +36,96 @@
 	
 	<htmlContent tag="BACK_OUT"><![CDATA[
 	<p>
-		Not liking the idea of being transformed if you were to lose the duel, you tell Meraxis that you've had a change of mind and don't want to fight her after all.
+	Тебе не нравится мысль о том, что в случае проигрыша в дуэли тебя могут превратить во что-то иное, поэтому ты говоришь Мераксис, что передумал и вовсе не хочешь с ней сражаться.
 	</p>
 	<p>
-		[meraxis.speech(Eugh... Fine...)] Meraxis sighs, before pouting at you and asking, [meraxis.speech(If you don't want to fight, then why have you interrupted me?)]
+	[meraxis.speech(Эх... Ладно...)] — вздыхает Меракс, а затем, надув губы, спрашивает тебя: [meraxis.speech(Если не хочешь сражаться, то зачем тогда меня прервал?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="REWARD_NONE"><![CDATA[
 	<p>
-		Not really being interested in any kind of reward, you tell Meraxis that the satisfaction of beating her will be enough. Letting out another burst of manic laughter, the chuuni [meraxis.race] declares, [meraxis.speech(Mwhahahah! So, you desire no reward at all? Don't think that that will make me go easy on you! I shall swiftly destroy you and then laugh as I transform you! Mwhahaha!)]
+	Награды тебя не особо прельщают, поэтому ты говоришь Меракс, что одного лишь удовлетворения от победы над ней будет достаточно. Издав очередной приступ маниакального смеха, эта чуни [meraxis.race] заявляет: [meraxis.speech(Мва-ха-ха-ха! Значит, тебе вообще не нужна награда? Не думай, что это заставит меня смягчиться! Я мигом тебя уничтожу, а потом буду смеяться, превращая тебя во что-то иное! Мва-ха-ха!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="REWARD_MONEY"><![CDATA[
 	<p>
-		Feeling like you could do with an extra bit of cash, you tell Meraxis that if you win she's got to give you all the money she has on her. A look of shocked surprise quickly flashes across her face as she hears you say this, and she blurts out, [meraxis.speech(But that's my allowance from mommy! I-I mean, you dare to act like a common thief?! I shall swiftly destroy you and then laugh as I transform you! Mwhahaha!)]
+		Почувствовав, что тебе не помешало бы лишнее бабло, ты заявляешь Мераксис: если ты победишь, она отдаст тебе все свои деньги. Услышав это, она на мгновение замирает от шока, а затем выпаливает: [meraxis.speech(Но это же мои карманные деньги от мамочки! Т-ты... ты смеешь вести себя как обычная воровка?! Я мигом уничтожу тебя, а потом буду смеяться, превращая тебя во что-то жалкое! Мва-ха-ха!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="REWARD_TRANSFORM"><![CDATA[
 	<p>
-		You respond to Meraxis by stating that as she's planning on transforming you, she has to be prepared for the same. If you win, you say, then she has to permanently transform herself in whatever manner you see fit.
+		В ответ ты говоришь Мераксис, что раз уж она планирует тебя трансформировать, то должна быть готова к ответному ходу. Если победишь ты, то она должна будет навсегда превратить саму себя в то, что ты пожелаешь.
 	</p>
 	<p>
-		[meraxis.speech(You dare to ask me that?! There's no way I'd agree to that!)] she exclaims in indignation, before pouting and offering a compromise, [meraxis.speech(If you win, you can choose one aspect of me to transform. I'm not going to do anything too extreme, a-and I'm not growing a penis or becoming an incubus, so don't even ask for that!)]
+		[meraxis.speech(Ты смеешь просить меня о таком?! Я ни за что на это не соглашусь!)] — возмущенно восклицает она, но тут же надувает губы и предлагает компромисс: [meraxis.speech(Если победишь ты, то сможешь выбрать одну мою черту для трансформации. Но ничего слишком экстремального! И... и я не собираюсь отращивать себе член или становиться инкубом, так что даже не вздумай об этом просить!)]
 	</p>
 	<p>
-		Knowing that she'll never agree to any more than that, you accept Meraxis's offer, to which she laughs and declares, [meraxis.speech(Mwhahaha! It doesn't even matter anyway; I shall swiftly destroy you and then laugh as I transform you!)]
+		Понимая, что на большее она всё равно не согласится, ты принимаешь предложение Мераксис. Она заливается смехом и торжествующе объявляет: [meraxis.speech(Мва-ха-ха! Впрочем, это уже не важно; я мигом уничтожу тебя, а потом буду смеяться, превращая тебя во что-то жалкое!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="REWARD_SEX"><![CDATA[
 	<p>
-		Wanting to have some intimate fun with the cute chuuni [meraxis.race], you tell Meraxis that if you win then she has to have sex with you. It takes a moment for your request to fully sink in, and after a moment of looking bewildered, Meraxis's cheeks flush red and she stammers, [meraxis.speech(Y-You want me to do w-what?! S-Sex? You... Why... What?!)]
+		Желая немного интимного веселья с милой чуни [meraxis.race], ты заявляешь Мераксис, что если победишь, ей придется заняться с тобой сексом. Ей требуется мгновение, чтобы осознать твою просьбу, и после короткого замешательства щеки Мераксис заливаются румянцем, и она заикается: [meraxis.speech(Т-ты хочешь, чтобы я сделала ч-что?! С-секс? Ты... Почему... Что?!)]
 	</p>
 	<p>
-		Repeating your request, you tell Meraxis that she doesn't need to act so shy; after all,
+		Повторяя свою просьбу, ты говоришь Мераксис, что ей не стоит так стесняться; ведь,
 		#IF(meraxis.getSexCount(pc).getTotalTimesHadSex()>0 && flags.hasSavedLong('meraxis_duel_player_wins'))
-			 the two of you have already done some lewd stuff together.
+			вы двое уже успели перепробовать немало всяких пошлых штук.
 			[style.random(
 			#IF(meraxis.hasFetish(FETISH_ANAL_RECEIVING))
-				 Pointedly looking down towards her ass, you remind the shy [meraxis.race] of how much she likes receiving anal attention.
+				Выжидательно глядя на её задницу, ты напоминаешь застенчивой [meraxis.race], как сильно она любит, когда её ласкают в анус.
 			#ENDIF
 			|
 			#IF(meraxis.hasFetish(FETISH_VAGINAL_RECEIVING))
-				 Pointedly looking down towards her groin, you remind the shy [meraxis.race] of how much she likes having her pussy used.
+				Выжидательно глядя на её пах, ты напоминаешь застенчивой [meraxis.race], как сильно ей нравится, когда её киску используют.
 			#ENDIF
 			|
 			#IF(meraxis.hasFetish(FETISH_BREASTS_SELF))
-				 Pointedly looking down towards her chest, you remind the shy [meraxis.race] of how much she likes having her breasts used.
+				Выжидательно глядя на её грудь, ты напоминаешь застенчивой [meraxis.race], как сильно ей нравится, когда её соски и грудь используют.
 			#ENDIF
 			)]
 		#ELSE
-			 she's [meraxis.a_race] and so should surely be comfortable performing sexual favours.
+				 она [meraxis.a_race], а значит, ей наверняка должно быть комфортно оказывать сексуальные услуги.
 		#ENDIF
-		 Your words only make Meraxis blush even harder, and she stammers, [meraxis.speech(S-Shut up! Fine, I'll do a small sexual favour for you if you win, just s-stop embarrassing me! I-I mean, It doesn't even matter anyway; I-I shall swiftly destroy you and then laugh as I transform you!)]
+		 Твои слова заставляют Мераксис покраснеть еще сильнее, и она заикается: [meraxis.speech(З-замолчи! Ладно, я сделаю для тебя небольшую сексуальную услугу, если ты победишь, только п-перестань меня смущать! Я-я имею в виду, это вообще не важно; я быстро тебя уничтожу, а потом буду смеяться, превращая тебя!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DUEL_START_ELIS"><![CDATA[
 	<p>
-		Pointing out that your current location is not exactly a suitable place in which to be having a duel, you suggest to Meraxis that the two of you could settle this outside the walls of Elis. Agreeing to your proposal, the chuuni [meraxis.race] accompanies you out of the eastern gate, and after [pc.walking] over to a nearby copse of deciduous trees, you're ready to get started.
+		Заметив, что нынешнее место не слишком подходит для дуэли, ты предлагаешь Мераксису разобраться со всем за стенами Элиса. Согласившись на твоё предложение, чунибьё [meraxis.race] сопровождает тебя через восточные ворота, и после того как вы [pc.walking] к ближайшей роще лиственных деревьев, вы готовы начать.
 	</p>
 	<p>
-		[meraxis.speech(Prepare to be defeated!)] Meraxis declares. Before you can reply, she then performs some kind of matter-manipulation spell and seemingly pulls her huge scythe from out of mid-air. Pointing the arcane-bladed weapon at you, she lets out a maniacal laugh and exclaims, [meraxis.speech(Mwhahaha! I shall show you the cosmic powers of the dark siren!)]
+		[meraxis.speech(Готовься к поражению!)] — заявляет Мераксис. Прежде чем ты успеваешь ответить, она произносит какое-то заклинание манипуляции материей и, кажется, вытягивает свою огромную косу прямо из воздуха. Нацелив на тебя оружие с лезвием из арканы, она издаёт маниакальный смех и восклицает: [meraxis.speech(Мва-ха-ха! Я явлю тебе космическую мощь тёмной сирены!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DUEL_START_DOMINION"><![CDATA[
 	<p>
-		As there's nobody around, you determine that your current location is a suitable one in which to carry out your duel. Preparing yourself for combat, you ask Meraxis if she's ready to start.
+		Поскольку вокруг никого нет, ты решаешь, что нынешнее место вполне подходит для проведения дуэли. Подготавливаясь к бою, ты спрашиваешь Мераксис, готова ли она начать.
 	</p>
 	<p>
-		[meraxis.speech(I'm always ready!)] Meraxis declares, before hefting her scythe and letting out a maniacal laugh, [meraxis.speech(Mwhahaha! I shall show you the cosmic powers of the dark siren!)]
+		[meraxis.speech(Я всегда готова!)] — заявляет Мераксис, прежде чем перехватить косу поудобнее и разразиться маниакальным смехом: [meraxis.speech(Мва-ха-ха! Я явлю тебе космическую мощь тёмной сирены!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DUEL_START_HIDEOUT"><![CDATA[
 	<p>
-		Pointing out that it wouldn't be a good idea to have a duel in her hideout, you suggest to Meraxis that the two of you could settle this outside. Agreeing to your proposal, the chuuni [meraxis.race] joins you as you [pc.walk] over to the entranceway, and after sliding open the front door, the two of you walk out into the nearby field and declare to one another that you're ready to get started.
+		Указывая на то, что устраивать дуэль в её убежище — не лучшая идея, ты предлагаешь Мераксису разобраться со всем снаружи. Согласившись на твоё предложение, чунибьё [meraxis.race] следует за тобой, пока вы [pc.walk] к входу; раздвинув входную дверь, вы выходите на ближайшее поле и объявляете друг другу, что готовы начать.
 	</p>
 	<p>
-		[meraxis.speech(Prepare to be defeated!)] Meraxis declares. Before you can reply, she then performs some kind of matter-manipulation spell and seemingly pulls her huge scythe from out of mid-air. Pointing the arcane-bladed weapon at you, she lets out a maniacal laugh and exclaims, [meraxis.speech(Mwhahaha! I shall show you the cosmic powers of the dark siren!)]
+		[meraxis.speech(Готовься к поражению!)] — заявляет Мераксис. Прежде чем ты успеваешь ответить, она произносит какое-то заклинание манипуляции материей и, кажется, вытягивает свою огромную косу прямо из воздуха. Нацелив на тебя оружие с лезвием из арканы, она издаёт маниакальный смех и восклицает: [meraxis.speech(Мва-ха-ха! Я явлю тебе космическую мощь тёмной сирены!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -135,106 +135,106 @@
 	
 	<htmlContent tag="LOST"><![CDATA[
 	<p>
-		Unable to continue fighting, you signal for Meraxis to stop, before collapsing to the ground and panting for breath. Relishing in her victory, the chuuni [meraxis.race] lets out a smug laugh, before advancing upon you and declaring, [meraxis.speech(You never stood a chance! My ultimate power cannot be matched by anyone! Mwhahaha!)]
+		Не в силах продолжать бой, ты подаешь Мераксис знак остановиться, после чего валишься на землю, жадно хватая ртом воздух. Наслаждаясь своей победой, эта чуни [meraxis.race] издает самодовольный смешок, прежде чем двинуться на тебя и провозгласить: [meraxis.speech(У тебя никогда не было шансов! Мою абсолютную мощь не превзойти никому! Мва-ха-ха!)]
 	</p>
 	<p>
-		Looking up, you see that Meraxis is holding a bottle of transformative fluid, and after removing the cap she teases, [meraxis.speech(You ready for this? Remember, you agreed to drink it before we started the duel!)]
+		Подняв взгляд, ты видишь, что Мераксис держит бутылочку с трансформирующей жидкостью, и, сняв крышку, она дразнит тебя: [meraxis.speech(Ну что, готов? Помни, ты сам согласился выпить её перед началом дуэли!)]
 	</p>
 	<p>
 		#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			Although your mouth is blocked by sealed clothing, this poses no obstacle to Meraxis, who swiftly channels essences into removing their seals. With your mouth now exposed,
+			Хотя твой рот перекрыт плотной тканью одежды, для Мераксис это не помеха — она ловко направляет потоки эссенций, чтобы снять печати. Теперь, когда твой рот открыт,
 		#ELSE
-			Leaning down,
+			Наклонившись,
 		#ENDIF
-		 the [meraxis.race] impatiently pushes the neck of the bottle past your [pc.lips+], and after tilting your head back, the transformative fluid starts to flow into your mouth...
+		 эта [meraxis.race] нетерпеливо просовывает горлышко бутылки мимо твоих [pc.lips+], и, когда ты запрокидываешь голову, трансформирующая жидкость начинает литься тебе в рот...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_DRINK"><![CDATA[
 	<p>
-		With Meraxis continuing to force the bottle into your mouth, you have little option but to swallow the transformative fluid that's flowing out into your mouth. As you gulp down the sickly-sweet concoction, Meraxis takes this opportunity to gloat, [meraxis.speech(How does it feel, my arch-nemesis? To know that I, the dark siren, have not only defeated you, but am also making you transform! Mwhahaha!)]
+		Пока Мераксис продолжает втискивать бутылку тебе в рот, у тебя почти нет выбора, кроме как глотать льющуюся жидкость. Пока ты заглатываешь эту приторно-сладкую смесь, Мераксис пользуется случаем, чтобы злорадствовать: [meraxis.speech(Каково это, мой заклятый враг? Знать, что я, темная сирена, не только победила тебя, но и заставляю тебя трансформироваться! Мва-ха-ха!)]
 	</p>
 	<p>
-		Swallowing down the last drop, you pull back and take a deep breath, but before you can respond to Meraxis's taunts, you find yourself letting out a shocked gasp as a wave of unnatural warmth starts to spread throughout your body. Smirking at your reaction to the fluid's effects, the triumphant [meraxis.race] stands up and declares, [meraxis.speech(Your body is nothing more than a vessel for my experiments! Now, submit to your transformation!)]
+		Проглотив последнюю каплю, ты отстраняешься и глубоко вдыхаешь, но не успеваешь ты ответить на насмешки Мераксис, как из твоего горла вырывается потрясенный вздох — волна неестественного тепла начинает разливаться по всему твоему телу. Усмехнувшись твоей реакции на эффект жидкости, торжествующая [meraxis.race] выпрямляется и заявляет: [meraxis.speech(Твое тело — не более чем сосуд для моих экспериментов! А теперь, покорись своей трансформации!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_SPIT"><![CDATA[
 	<p>
-		Not wanting to be transformed by Meraxis, you twist your head to one side and spit out the transformative liquid. With the rest of the concoction being spilt all over the ground, the chuuni [meraxis.race] lets out an annoyed cry and shouts, [meraxis.speech(Hey! You agreed to this when you accepted my offer of a duel! What the hell?!)]
+		Не желая поддаваться трансформации под властью Мераксис, ты поворачиваешь голову в сторону и выплевываешь преобразующую жидкость. Когда остатки зелья разливаются по земле, раздраженно вскрикивает чуниббэй [meraxis.race]: [meraxis.speech(Эй! Ты согласилась на это, когда приняла мой вызов на дуэль! Какого черта?!)]
 	</p>
 	<p>
-		Seeming to be quite angry at your refusal to drink her potion, Meraxis stands up and takes a step back, before frowning at you and shouting, [meraxis.speech(You've really let me down, [pc.name]! If you agree to do something, you should actually do it! I can't believe that you wasted my experimental potion like that!)]
+		Кажется, Мераксис крайне разгневана тем, что ты отказалась пить её зелье. Она встает, делает шаг назад, а затем, нахмурившись, кричит тебе: [meraxis.speech(Ты меня по-настоящему разочаровала, [pc.name]! Если уж согласилась на что-то, то делай это до конца! Поверить не могу, что ты вот так просто разбазарила мой экспериментальный состав!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_END_SPIT"><![CDATA[
 	<p>
-		After continuing to shout at you in this manner for a few more moments, Meraxis takes a step back and places her hands on her hips, before sighing, [meraxis.speech(I'm disappointed in you, my nemesis!)]
+		Прокричав тебе это еще несколько мгновений, Мераксис отступает на шаг и упирает руки в бока, после чего тяжело вздыхает: [meraxis.speech(Я разочарована в тебе, мой заклятый враг!)]
 	</p>
 	<p>
-		Spinning around on the spot, the chuuni [meraxis.race] strikes a dramatic pose and exclaims, [meraxis.speech(I shall return to the tavern now! There's no hard feelings between us because of this duel, right? Right. Now, witness my power!)]
+		Прокрутившись на месте, чунибьё [meraxis.race] принимает драматичную позу и восклицает: [meraxis.speech(Теперь я возвращаюсь в таверну! Надеюсь, этот поединок не оставил между нами никаких обид? Ну точно! А теперь — узрите мою мощь!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_TF_BREASTS"><![CDATA[
 	<p>
-		The strange warmth flowing throughout your body suddenly rises up into your chest, and after letting out another shocked gasp, you look down to see your breasts swelling and growing larger. Despite being the one responsible for creating this potion, Meraxis starts to get a little flustered as she watches your breasts expand and mutters, [meraxis.speech(It's not like I like big breasts or anything... This is just an experiment...)]
+		Странное тепло, разливающееся по телу, внезапно поднимается к груди. Издав очередной потрясенный вздох, ты опускаешь взгляд и видишь, как твоя грудь набухает и становится всё больше. Несмотря на то, что именно она создала это зелье, Мераксис начинает слегка смущаться, наблюдая за тем, как разрастаются твои сиськи, и бормочет: [meraxis.speech(Не то чтобы мне нравятся большие груди... Это просто эксперимент...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_TF_BREASTS_END"><![CDATA[
 	<p>
-		With the transformation coming to an abrupt end, you look up to see a blushing Meraxis staring lustfully down at your chest. Before you can say anything about how she seems to be more embarrassed about your transformation than you are, she clears her throat and declares, [meraxis.speech(My experiment is finished, and you've been put in your place, my nemesis! Now you must suffer from having strangers stare at your big boobs! Mwhahaha!)]
+		Трансформация внезапно прекращается, и ты поднимаешь глаза, видя раскрасневшуюся Мераксис, которая с похотью пялится на твою грудь. Прежде чем ты успеваешь заметить, что она смущена твоим превращением даже больше, чем ты сама, она откашливается и провозглашает: [meraxis.speech(Мой эксперимент завершен, и ты повержена, мой заклятый враг! Теперь тебе придется страдать от того, что незнакомцы будут пялиться на твои огромные сиськи! Мва-ха-ха!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_TF_COCK"><![CDATA[
 	<p>
-		The strange warmth flowing throughout your body suddenly drops down into your groin, and after letting out another shocked gasp, you feel your [pc.cock] swelling and growing larger. Despite being the one responsible for creating this potion, Meraxis starts to get a little flustered as she watches 
+		Странное тепло, разливающееся по телу, внезапно опускается к паху. Издав очередной потрясенный вздох, ты чувствуешь, как твой [pc.cock] набухает и растет.
 		#IF(pc.isCoverableAreaVisible(CA_PENIS))
-			 your exposed cock expand
+			 твой обнаженный член увеличивается в размерах
 		#ELSE
-			 your bulge expand in size
+			 твой бугорок под одеждой раздувается
 		#ENDIF
-		 and mutters, [meraxis.speech(It's not like I like big cocks or anything... This is just an experiment...)]
+		 и бормочет, [meraxis.speech(Не то чтобы мне нравятся огромные члены... Это просто эксперимент...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_TF_COCK_END"><![CDATA[
 	<p>
-		With the transformation coming to an abrupt end, you look up to see a blushing Meraxis staring lustfully down at your groin. Before you can say anything about how she seems to be more embarrassed about your transformation than you are, she clears her throat and declares, [meraxis.speech(My experiment is finished, and you've been put in your place, my nemesis! Now you must suffer from having strangers stare at your big cock! Mwhahaha!)]
+		Трансформация внезапно завершается, и ты поднимаешь взгляд, видя, как раскрасневшаяся Мераксис с похотью пялится на твой пах. Прежде чем ты успеваешь заметить, что она смущена твоим превращением даже больше, чем ты сам, она откашливается и провозглашает: [meraxis.speech(Мой эксперимент окончен, и ты получил по заслугам, мой заклятый враг! Теперь тебе придется страдать от того, что незнакомцы будут пялиться на твой огромный член! Мва-ха-ха!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_TF_FEMINISE"><![CDATA[
 	<p>
-		The strange warmth flowing throughout your body suddenly increases in intensity, with a particularly noticeable concentration rising up into your chest. After letting out another shocked gasp, you feel your body shifting to look significantly more feminine, before looking down to see your breasts swelling and growing larger. Despite being the one responsible for creating this potion, Meraxis starts to get a little flustered as she watches your breasts expand and mutters, [meraxis.speech(It's not like I like big breasts or anything... This is just an experiment...)]
+		Странное тепло, разливающееся по твоему телу, внезапно усиливается, и особенно ощутимый прилив концентрируется в груди. Издав очередной потрясенный вздох, ты чувствуешь, как твое тело меняется, становясь куда более женственным, а затем опускаешь взгляд и видишь, как твоя грудь набухает и растет. Несмотря на то, что именно она создала это зелье, Мераксис начинает слегка смущаться, наблюдая за тем, как увеличиваются твои сиськи, и бормочет: [meraxis.speech(Не то чтобы мне нравятся большие сиськи... Это просто эксперимент...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_TF_FEMINISE_END"><![CDATA[
 	<p>
-		With the transformation coming to an abrupt end, you look up to see a blushing Meraxis staring lustfully down at your chest. Before you can say anything about how she seems to be more embarrassed about your transformation than you are, she clears her throat and declares, [meraxis.speech(My experiment is finished, and you've been put in your place, my nemesis! Now you must suffer from having strangers stare at your big boobs! Mwhahaha!)]
+		Трансформация внезапно прекращается, и ты поднимаешь глаза, видя раскрасневшуюся Мераксис, которая с похотью пялится на твою грудь. Прежде чем ты успеваешь заметить, что она смущена твоим превращением даже больше, чем ты сама, она откашливается и провозглашает: [meraxis.speech(Мой эксперимент завершен, и ты повержена, мой заклятый враг! Теперь тебе придется страдать от того, что незнакомцы будут пялиться на твои огромные сиськи! Мва-ха-ха!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOST_END"><![CDATA[
 	<p>
-		After continuing to gloat in this manner for a few more moments, Meraxis takes a step back and places her hands on her hips, before revealing, [meraxis.speech(I didn't even need to prove myself by winning that duel; I know that I'm the most powerful! Mwhahaha!)] 
+		Продолжив злорадствовать еще несколько мгновений, Мераксис делает шаг назад и упирает руки в бока, прежде чем заявить: [meraxis.speech(Мне даже не нужно было доказывать свое превосходство в той дуэли; я и так знаю, что я самая могущественная! Мва-ха-ха!)] 
 	</p>
 	<p>
-		Spinning around on the spot, Meraxis strikes a dramatic pose and exclaims, [meraxis.speech(I shall return to the tavern now! There's no hard feelings between us because of this duel, right? Right. Now, witness my power!)]
+		Прокрутившись на месте, Мераксис принимает эффектную позу и восклицает: [meraxis.speech(Теперь я возвращаюсь в таверну! Надеюсь, этот поединок не оставил между нами никаких обид, а? Ну точно! А теперь — узрите мою мощь!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -242,17 +242,17 @@
 	<htmlContent tag="MERAXIS_END"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_meraxis_duel_place_hideout))
 		<p>
-			Sensing that Meraxis is about to show off her knowledge of how to teleport, you quickly point out that it would take less than a minute to simply walk back to her hideout, which is right there behind her. With her grand exit interrupted by your observation, Meraxis pouts a little and awkwardly replies, [meraxis.speech(T-That's not the point! I have to do it this way, [pc.name]... I-I mean, silence, my nemesis! We shall meet again one day!)]
+			Чувствуя, что Мераксис вот-вот начнет хвастаться своими навыками телепортации, ты быстро замечаешь, что до её убежища, которое находится прямо у неё за спиной, можно дойти пешком меньше чем за минуту. Её эффектный уход прерывается твоим замечанием, и Мераксис, слегка надувшись, неловко отвечает: [meraxis.speech(Э-это не главное! Я должна сделать именно так, [pc.name]... В-в смысле, молчи, мой заклятый враг! Мы еще встретимся однажды!)]
 		</p>
 		<p>
-			With that, Meraxis casts her teleportation spell, and in a flash of purple light she disappears from sight. As the building which serves as her hideout is right there in front of you, you could simply [pc.walk] back over to it and no doubt find Meraxis inside. Then again, if you have other things to do, you could head off into the Shinrin Highlands...
+			С этими словами Мераксис произносит заклинание телепортации и в яркой вспышке фиолетового света исчезает из виду. Поскольку здание, служащее ей убежищем, находится прямо перед тобой, ты мог бы просто [pc.walk] к нему и, без сомнения, найти там Мераксис. С другой стороны, если у тебя есть другие дела, ты можешь отправиться на Нагорье Шинрин...
 		</p>
 	#ELSE
 		<p>
-			Sensing that Meraxis is about to show off her knowledge of how to teleport, you quickly say goodbye to her. With her grand exit interrupted by your farewell, Meraxis pouts a little and awkwardly replies, [meraxis.speech(Oh, yes, well, goodbye to you too, [pc.name]. I-I mean, farewell, my nemesis! We shall meet once more at The Red Dragon!)]
+			Чувствуя, что Мераксис вот-вот начнет хвастаться своими навыками телепортации, ты поспешно прощаешься с ней. Её эффектный уход прерывается твоим прощанием, и Мераксис, слегка надувшись, неловко отвечает: [meraxis.speech(О, ну да, и тебе прощай, [pc.name]. В-в смысле, прощай, мой заклятый враг! Мы еще встретимся в «Рыжем драконе»!)]
 		</p>
 		<p>
-			With that, Meraxis casts her teleportation spell, and in a flash of purple light she disappears from sight, leaving you with little else to do except continue on your way...
+		С этими словами Мераксис произносит заклинание телепортации и во вспышке фиолетового света исчезает из виду, не оставляя тебе иного выбора, кроме как продолжить свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -262,23 +262,23 @@
 	
 	<htmlContent tag="WON"><![CDATA[
 	<p>
-		Having been well and truly beaten, Meraxis staggers back and breathlessly pants, [meraxis.speech(No more... Y-You are victorious this day...)]
+	Потерпевшая полное и окончательное поражение, Мераксис пошатывается и тяжело дышит: [meraxis.speech(Больше... Т-ты победил в этот раз...)]
 	</p>
 	<p>
-		Having said beforehand that you didn't want any kind of reward for winning the duel, you're content to simply relish in the fact that you were able to defeat Meraxis. Your sense of pride and accomplishment at having beaten so formidable an opponent doesn't last too long however, as Meraxis seems to genuinely be struggling to regain her strength. Worried that you might have gone too far, you ask the exhausted [meraxis.race] if she's ok.
+	Заранее сказав, что не хочешь никакой награды за победу в дуэли, ты просто наслаждаешься самим фактом того, что сумел одолеть Мераксис. Однако чувство гордости и триумфа от победы над столь грозным противником длится недолго: кажется, Мераксис действительно с трудом пытается восстановить силы. Опасаясь, что ты зашел слишком далеко, ты спрашиваешь изможденную [meraxis.race], всё ли с ней в порядке.
 	</p>
 	<p>
-		[meraxis.speech(O-Of course I'm ok,)] she replies, before spending the next few moments taking a series of deep breaths. Thankfully after performing this breathing exercise she seems to recover some of her usual spirit, and boisterously declares, [meraxis.speech(You may have triumphed today, my nemesis, but next time you shall surely lose! Now listen to what I have to say...)]
+	[meraxis.speech(К-конечно, всё в порядке,)] — отвечает она, после чего несколько мгновений делает глубокие вдохи. К счастью, после этой дыхательной гимнастики к ней, кажется, возвращается былая энергия, и она громогласно заявляет: [meraxis.speech(Сегодня тебе и удалось восторжествовать, мой заклятый враг, но в следующий раз ты непременно проиграешь! А теперь слушай, что я скажу...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_NO_TF"><![CDATA[
 	<p>
-		Doing as you're asked, you listen as Meraxis places her hands on her hips and declares, [meraxis.speech(Although you may have won that duel, I know that I'm really the most powerful! The next time we fight, I shall surely destroy you! Mwhahaha!)] 
+	Повинуясь просьбе, ты слушаешь, как Мераксис упирает руки в бока и провозглашает: [meraxis.speech(Пусть в этой дуэли ты и победил, но я-то знаю, что на самом деле самая могущественная! В следующий раз, когда мы сойдемся в бою, я тебя точно уничтожу! Мва-ха-ха!)] 
 	</p>
 	<p>
-		Spinning around on the spot, Meraxis strikes a dramatic pose and exclaims, [meraxis.speech(I shall return to the tavern now! There's no hard feelings between us because of this duel, right? Right. Now, witness my power!)]
+		Прокрутившись на месте, Мераксис принимает эффектную позу и восклицает: [meraxis.speech(Теперь я возвращаюсь в таверну! Надеюсь, этот поединок не оставил между нами никаких обид, а? Ну точно! А теперь — узрите мою мощь!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -287,37 +287,37 @@
 	
 	<htmlContent tag="WON_MONEY"><![CDATA[
 	<p>
-		Having been well and truly beaten, Meraxis staggers back and breathlessly pants, [meraxis.speech(No more... Y-You are victorious this day...)]
+	Потерпевшая полное и окончательное поражение, Мераксис пошатывается и тяжело дышит: [meraxis.speech(Больше... Т-ты победил в этот раз...)]
 	</p>
 	<p>
-		Not wanting to give her any time in which to make up an excuse as to why she can't pay up, you quickly remind Meraxis that she agreed to hand over her money should you win the duel. Letting out a high-pitched whine, the exhausted [meraxis.race] drops down onto her knees, before splaying her legs out to either side of her and putting on the most innocent expression she can muster. Pathetically pouting at you, she whines, [meraxis.speech(But mommy said that I could spend this allowance on buying something nice for myself... You wouldn't take that way from me, would you?)]
+		Не желая давать ей ни секунды на придумывание оправданий, почему она не может расплатиться, ты поспешно напоминаешь Мераксис, что она согласилась отдать деньги в случае твоей победы в дуэли. Издав тонкий, жалобный скулёж, измотанная [meraxis.race] падает на колени, широко разводя ноги в стороны и принимая самый невинный вид, на который только способна. Жалобно надув губки, она заныла: [meraxis.speech(Но мамочка сказала, что я могу потратить эти карманные деньги на что-нибудь приятное для себя... Ты ведь не отберешь их у меня, правда?)]
 	</p>
 	<p>
-		Even though you're almost certain that Meraxis is putting on this display as a way to manipulate you into letting her keep her money, she looks so sad and innocent that you find yourself wondering if you should just forget about the reward. Then again, you could always use some extra flames, and you're sure that Lyssieth would be happy to give her daughter some more money if she truly needed it...
+		Хотя ты почти уверен, что Мераксис разыгрывает этот спектакль лишь для того, чтобы манипулировать тобой и оставить деньги при себе, она выглядит настолько печальной и невинной, что ты невольно задумываешься — а не стоит ли просто забыть о награде? С другой стороны, лишние Огни тебе никогда не помешают, да и ты уверен, что Lyssieth с радостью даст дочери еще денег, если ей действительно будет нужно...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_MONEY_TAKE"><![CDATA[
 	<p>
-		Showing no sympathy, you demand that Meraxis hand over the money she'd promised as your reward. Letting out another pathetic, high-pitched whine Meraxis stands up and brushes herself down, before reluctantly handing all of her flames over to you. Pouting at you, she sighs, [meraxis.speech(I can't believe you actually took that from me... Anyway, listen to what I have to say...)]
+		Не выказывая ни капли сочувствия, ты требуешь, чтобы Мераксис передала обещанную награду. Издав очередной жалкий, высокий скулёж, Мераксис поднимается, отряхивается и, неохотно, отдает тебе все свои Огни. Надув губы, она вздыхает: [meraxis.speech(Поверить не могу, что ты и правда это сделал... Ладно, слушай, что я хочу сказать...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_MONEY_LEAVE"><![CDATA[
 	<p>
-		You can't bring yourself to take Meraxis's money from her, and so you let out a sigh and tell her that she can keep it. Just as you suspected, Meraxis seems to have been putting on a show, for as soon as she hears that you're not going to take her money she immediately changes her expression and bounces to her feet, before quickly brushing herself down. Smiling at you, she exclaims, [meraxis.speech(Thanks, [pc.name]! You're the best nemesis! Anyway, listen to what I have to say!)]
+		У тебя не хватает духу забрать у Мераксис её деньги, поэтому ты лишь вздыхаешь и говоришь ей, что она может оставить их себе. Как ты и подозревал, Мераксис, похоже, просто разыгрывала спектакль: едва услышав, что ты не возьмёшь её монеты, она тут же меняется в лице, вскакивает на ноги и поспешно отряхивается. Улыбаясь тебе, она восклицает: [meraxis.speech(Спасибо, [pc.name]! Ты лучшая соперница! В общем, слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MONEY_END"><![CDATA[
 	<p>
-		Doing as you're asked, you listen as Meraxis places her hands on her hips and declares, [meraxis.speech(Although you may have won that duel, I know that I'm really the most powerful! The next time we fight, I shall surely destroy you! Mwhahaha!)] 
+	Повинуясь просьбе, ты слушаешь, как Мераксис упирает руки в бока и провозглашает: [meraxis.speech(Пусть в этой дуэли ты и победил, но я-то знаю, что на самом деле самая могущественная! В следующий раз, когда мы сойдемся в бою, я тебя точно уничтожу! Мва-ха-ха!)] 
 	</p>
 	<p>
-		Spinning around on the spot, Meraxis strikes a dramatic pose and exclaims, [meraxis.speech(I shall return to the tavern now! There's no hard feelings between us because of this duel, right? Right. Now, witness my power!)]
+		Прокрутившись на месте, Мераксис принимает эффектную позу и восклицает: [meraxis.speech(Теперь я возвращаюсь в таверну! Надеюсь, этот поединок не оставил между нами никаких обид, а? Ну точно! А теперь — узрите мою мощь!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -326,79 +326,76 @@
 	
 	<htmlContent tag="WON_TRANSFORM"><![CDATA[
 	<p>
-		Having been well and truly beaten, Meraxis staggers back and breathlessly pants, [meraxis.speech(No more... Y-You are victorious this day...)]
+	Потерпевшая полное и окончательное поражение, Мераксис пошатывается и тяжело дышит: [meraxis.speech(Больше... Т-ты победил в этот раз...)]
 	</p>
 	<p>
-		[pc.Stepping] forwards, you remind Meraxis of your agreement, and ask her if she's ready to submit to your transformations. Letting out an indignant huff, the vanquished [meraxis.race] complains, [meraxis.speech(That's not fair... Y-You cheated... I shouldn't have to transform myself...)]
+		[pc.Stepping], ты напоминаешь Мераксис о вашем соглашении и спрашиваешь, готова ли она подчиниться твоим трансформациям. Издав возмущённый фырк, побеждённая [meraxis.race] жалуется: [meraxis.speech(Это нечестно... Т-ты сжульничала... Мне не обязательно самой трансформироваться...)]
 	</p>
 	<p>
-		Deciding not to say anything in response to that, you simply wait and give Meraxis a disapproving look as she crosses her arms and pouts. After just a few seconds of silence, she cracks and lets out a deep, drawn-out sigh, before relenting and saying, [meraxis.speech(Fine... I suppose I <i>did</i> agree to it... But I only said that you could get me to transform one part of my body, remember? And no stuff with cocks or turning me into an incubus!)]
+		Решив ничего не отвечать, ты просто ждёшь, бросая на Мераксис неодобрительный взгляд, пока та стоит, скрестив руки на груди и надув губы. Спустя всего несколько секунд молчания она не выдерживает, тяжело и протяжно вздыхает, а затем сдаётся: [meraxis.speech(Ладно... Полагаю, я <i>действительно</i> на это согласилась... Но я сказала, что ты можешь изменить лишь одну часть моего тела, помнишь? И никакого дерьма с членами или превращением меня в инкуба!)]
 	</p>
 	<p>
-		Tapping her foot on the ground, the chuuni [meraxis.race] waits to hear what part of her you want to transform...
+		Постукивая ногой по земле, эта чунибёйская [meraxis.race] ждёт, когда ты скажешь, какую именно часть её тела ты хочешь трансформировать...
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="WON_TRANSFORM_NOTHING"><![CDATA[
-	<p>
-		Changing your mind as you see how unwilling Meraxis is to be transformed, you let out a sigh and tell her that she doesn't need to transform herself after all. Surprised and delighted at your decision, the chuuni [meraxis.race] flashes you a big smile and exclaims, [meraxis.speech(Really?! Thanks, [pc.name]! I-I mean... Mwhahaha! You are foolish to be so merciful, my nemesis! Now tremble before me and listen to what I have to say!)]
-	</p>
+	<htmlContent tag="WON_TRANSFORM_NOTHING"><![CDATA[<p>
+Видя, как неохотно Мераксис идет на трансформацию, ты меняешь решение. Тяжело вздохнув, ты говоришь ей, что ей вовсе не обязательно превращаться. Удивленная и обрадованная твоим решением, эта чунибёё [meraxis.race] расплывается в широкой улыбке и восклицает: [meraxis.speech(Правда?! Спасибо, [pc.name]! Т-то есть... Мва-ха-ха! Ты глупец, раз проявляешь такое милосердие к своему заклятому врагу! А теперь трепещи предо мной и внимай моим словам!)]
+</p>
 	]]>
 	</htmlContent>
 	
 	<!-- TF Ass: -->
 	
-	<htmlContent tag="WON_TRANSFORM_ASS"><![CDATA[
+	<htmlContent tag="WON_TRANSFORM_ASS"><![CDATA[<p>
+Желая, чтобы она сосредоточила свою трансформацию на заднице, ты велишь Мераксис повернуться и поднять плащ, чтобы ты мог как следует рассмотреть её тыл. Яростно краснея, смущённая [meraxis.race] вяло протестует, но всё же делает так, как ты просишь. Развернувшись и приподняв подол, она позволяет тебе разглядывать свою маленькую попку и девичьи бёдра.
+</p>
 	<p>
-		Wanting her to focus her transformation on her ass, you tell Meraxis to turn around and lift up her cape so that you can get a good look at her rear-end. Furiously blushing, the embarrassed [meraxis.race] makes some half-hearted protests, but nevertheless does as you say. Turning around and lifting her cape, she allows you to look at her small ass and girly hips.
+		Убедившись, что задница Мераксис слишком мала, ты сообщаешь ей, что уже определился с её трансформацией. Когда ты говоришь, что хочешь, чтобы её попа и бедра стали намного больше, она оборачивается и восклицает: [meraxis.speech(Только не делай их слишком огромными, ясно?! Поверить не могу, что мой заклятый враг такой извращенец...)]
 	</p>
 	<p>
-		Confirming to yourself that Meraxis's ass is far too small, you tell her that you've decided upon her transformation. After you've told her that you want her to make her ass and hips a lot bigger, she turns her head back and exclaims, [meraxis.speech(I'm not making them too big, ok?! I can't believe that my nemesis is such a pervert...)]
-	</p>
-	<p>
-		With her cheeks still burning bright red, Meraxis starts to focus her demonic self-transformative powers into her butt, and you can't help but smile in appreciation as you watch her ass and hips start to grow bigger...
+		Пока её щеки пылают ярко-красным цветом, Мераксис начинает направлять свою демоническую силу самотрансформации в задницу, и ты невольно улыбаешься в предвкушении, наблюдая за тем, как её попа и бедра начинают расти...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_ASS_DONE"><![CDATA[
 	<p>
-		With her back still to you, Meraxis lets go of her cape and reaches down to give her butt an experimental grope. Letting out a little moan as she runs her hands down over her now-[meraxis.hipSize] [meraxis.hips], she gives her [meraxis.assSize] [meraxis.ass] a firm squeeze, before turning her head back to glare at you and stutter in embarrassment, [meraxis.speech(Y-You will regret this, my nemesis! The next time we duel, I shall surely destroy you for making me look like this!)]
+		Все еще повернувшись к тебе спиной, Меракс отпускает плащ и тянется вниз, чтобы экспериментально ощупать свою задницу. Издав тихий стон, она проводит руками по своим теперь уже [meraxis.hipSize] [meraxis.hips], крепко сжимает свои [meraxis.assSize] [meraxis.ass], а затем оборачивается, чтобы сердито взглянуть на тебя, заикаясь от смущения: [meraxis.speech(Т-ты пожалеешь об этом, мой заклятый враг! В следующий раз, когда мы сойдемся в дуэли, я непременно уничтожу тебя за то, что ты заставил меня так выглядеть!)]
 	</p>
 	<p>
-		With that, Meraxis spins around on the spot in an attempt to strike one of her usual heroic poses. As she's not yet used to the extra size and weight of her rear end, however, she ends up tripping over her feet and stumbling into you, ass-first. Catching the unbalanced [meraxis.race] before she falls to the ground, you end up with her plump ass cheeks bumping directly into
+		С этими словами Меракс резко разворачивается на месте, пытаясь принять одну из своих привычных героических поз. Однако, поскольку она еще не привыкла к увеличившемуся размеру и весу своего зада, она спотыкается о собственные ноги и, завалившись назад, врезается в тебя ягодицами. Подхватив потерявшую равновесие [meraxis.race] до того, как она рухнет на землю, ты чувствуешь, как её пухлые ягодицы с силой прижимаются прямо к
 		#IF(pc.isTaur())
-			you.
+			тебе.
 		#ELSE
-			your groin.
+			твоему паху.
 		#ENDIF
 	</p>
 	<p>
-		[meraxis.speech(Y-You pervert!)] Meraxis exclaims as she hastily pulls away from you. Despite her words, however, you detect more than a little arousal in her voice, but before you can comment on this she points her finger at you and shouts, [meraxis.speech(Y-You shall remain silent! Tremble before me and listen to what I have to say!)]
+		[meraxis.speech(Извращенец!)] — восклицает Меракс, поспешно отстраняясь от тебя. Однако, вопреки её словам, ты улавливаешь в её голосе немалое возбуждение, но прежде чем ты успеваешь это прокомментировать, она тычет в тебя пальцем и выкрикивает: [meraxis.speech(Т-ты будешь молчать! Трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_ASS_REVERSE"><![CDATA[
 	<p>
-		Looking down at Meraxis's ass, you feel like you went too far in getting her to increase the size of her hips and butt. Wanting to check her out before making your final decision, you tell Meraxis to turn around and lift up her cape so that you can get a good look at her rear-end. Furiously blushing, the embarrassed [meraxis.race] makes some half-hearted protests, but nevertheless does as you say. Turning around and lifting her cape, she allows you to look at her [meraxis.assSize] [meraxis.ass] and [meraxis.hipSize] [meraxis.hips].
+		Глядя на задницу Мераксис, ты начинаешь думать, что зашел слишком далеко, заставив её увеличить бедра и ягодицы. Желая рассмотреть её получше перед принятием окончательного решения, ты велишь Мераксис повернуться и поднять плащ, чтобы ты мог вдоволь налюбоваться её тылом. Яростно краснея, смущенная [meraxis.race] вяло протестует, но всё же делает, как ты сказал. Развернувшись и приподняв плащ, она позволяет тебе осмотреть свои [meraxis.assSize] [meraxis.ass] и [meraxis.hipSize] [meraxis.hips].
 	</p>
 	<p>
-		Confirming to yourself that you preferred Meraxis's ass back when it was small, you tell her that you've decided upon her transformation. After you've told her that you want her to shrink her ass and hips back their old size, she turns her head back and whines, [meraxis.speech(I've kind of got used to having my ass being like this... But fine, whatever...)]
+		В очередной раз убедившись, что раньше задница Мераксис тебе нравилась больше, ты сообщаешь ей, что определился с её трансформацией. Когда ты говоришь, что хочешь, чтобы она уменьшила свои ягодицы и бедра до прежних размеров, она оборачивается и скулит: [meraxis.speech(Я уже вроде как привыкла к таким формам... Но ладно, хрен с тобой...)]
 	</p>
 	<p>
-		With her cheeks still burning bright red, Meraxis starts to focus her demonic self-transformative powers into her butt, and you can't help but smile in appreciation as you watch her ass and hips start to shrink...
+		Пока её щеки пылают ярко-красным, Мераксис начинает концентрировать свою демоническую силу самотрансформации в ягодицах, и ты невольно улыбаешься в предвкушении, наблюдая, как её задница и бедра начинают уменьшаться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_ASS_REVERSE_DONE"><![CDATA[
-	<p>
-		With her back still to you, Meraxis lets go of her cape and reaches down to give her butt an experimental grope. Letting out a little moan as she runs her hands down over her now-[meraxis.hipSize] [meraxis.hips], she gives her [meraxis.assSize] [meraxis.ass] a firm squeeze, before turning to face you and exclaim, [meraxis.speech(You will regret toying with me like this! The next time we duel, I shall surely destroy you!)]
+	<p>		Пока она стоит к тебе спиной, Мераксис отпускает плащ и тянется вниз, чтобы экспериментально прощупать свою задницу. Издав тихий стон, когда её руки скользят по её теперь уже [meraxis.hipSize] [meraxis.hips], она крепко сжимает свои [meraxis.assSize] [meraxis.ass], после чего оборачивается к тебе и восклицает: [meraxis.speech(Ты пожалеешь, что так играешь со мной! В следующий раз, когда мы сойдемся в дуэли, я тебя точно уничтожу!)]
 	</p>
 	<p>
-		As she takes a step back, Meraxis staggers a little and looks like she's about to trip over. Catching herself at the last second, she points her finger at you and shouts, [meraxis.speech(I-It's your fault that I'm feeling unbalanced like this! Now tremble before me and listen to what I have to say!)]
+		Когда она делает шаг назад, Мераксис слегка пошатывается, будто вот-вот споткнется. Успев удержать равновесие в последний момент, она тычет в тебя пальцем и выкрикивает: [meraxis.speech(Э-это всё твоя вина, что меня так шатает! А теперь трепещи перед моей мощью и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -407,43 +404,43 @@
 	
 	<htmlContent tag="WON_TRANSFORM_BREASTS"><![CDATA[
 	<p>
-		Looking down at Meraxis's tiny, AA-cup breasts, you decide that this is the area you want her to transform. Telling her that it's not right for a demon to be so flat-chested, you demand that she grows her boobs into a more respectable size. Furiously blushing as she hears you say this, the embarrassed [meraxis.race] points a finger at you and stammers, [meraxis.speech(H-How dare you! I-I'll have you know that my small boobs make moving around in combat far easier! Y-You just want to make it harder for me to win our next duel!)]
+		Глядя на крошечную грудь Мераксис размера AA, ты решаешь, что именно эту часть тела ей стоит трансформировать. Заявив, что демону не пристало быть такой плоской, ты требуешь, чтобы она вырастила себе более приличный бюст. Яростно краснея от твоих слов, смущенная [meraxis.race] тычет в тебя пальцем и заикается: [meraxis.speech(К-как ты смеешь! З-знай, что с моей маленькой грудью в бою двигаться гораздо проще! Т-ты просто хочешь усложнить мне победу в нашей следующей дуэли!)]
 	</p>
 	<p>
-		Reminding Meraxis that she agreed to transform whatever part of herself you chose, you tell her to start growing her boobs. Angrily scowling at you for a moment, she lets out a sigh and quickly focuses her demonic self-transformative powers into her breasts. Before your eyes, you see her flat boobs swell up a little, before abruptly stopping at what you'd guess are just about B-cups. Shaking your head, you tell Meraxis that that's not good enough, to which she shouts, [meraxis.speech(Fine! Y-You want me looking like a cow, then how about this?!)]
+		Напоминая Мераксис, что она согласилась трансформировать любую часть своего тела по твоему выбору, ты велишь ей начать наращивать грудь. Некоторое время она гневно хмурится на тебя, но затем вздыхает и быстро направляет свою демоническую силу самотрансформации в грудь. На твоих глазах её плоские соски начинают набухать, но внезапно останавливаются на размере, который можно было бы назвать едва ли B-кубком. Покачав головой, ты говоришь Мераксис, что этого недостаточно, на что она выкрикивает: [meraxis.speech(Ладно! Р-раз ты хочешь, чтобы я выглядела как корова, то как тебе такое?!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_BREASTS_DONE"><![CDATA[
 	<p>
-		Looking down at her inflated, [meraxis.cupSize]-cup breasts, Meraxis experimentally reaches up and gives them a squeeze, and with her cheeks still burning bright red, she looks at you and stutters, [meraxis.speech(Y-You will regret this, my nemesis! The next time we duel, I shall surely destroy you for making me look like a cow!)]
+		Взглянув на свою раздутую [meraxis.cupSize]-грудь, Мераксис экспериментально сжимает её ладонями. Всё ещё пунцовая от смущения, она смотрит на тебя и заикается: [meraxis.speech(Т-ты пожалеешь об этом, мой заклятый враг! В следующий раз, когда мы сойдемся в дуэли, я непременно уничтожу тебя за то, что ты превратил меня в корову!)]
 	</p>
 	<p>
-		Spinning around on the spot, the chuuni [meraxis.race] strikes a heroic pose, but as she does so her arms bump into her large boobs, which combined with the fact that her body is far more top-heavy that she's used to, causes her to stumble and fall right into your arms. Catching the unbalanced [meraxis.race] before she falls to the ground, you end up with her [meraxis.breastSize] boobs squished into your chest.
+		Прокрутившись на месте, эта чунибьянка [meraxis.race] принимает героическую позу, но в этот момент её руки задевают огромную грудь. Из-за того, что её тело стало куда тяжелее в верхней части, чем она привыкла, она спотыкается и буквально влетает тебе в объятия. Подхватив неустойчивую [meraxis.race] до того, как она рухнет на землю, ты чувствуешь, как её [meraxis.breastSize] грудь плотно прижимается к твоей груди.
 	</p>
 	<p>
-		[meraxis.speech(Y-You pervert!)] Meraxis exclaims as she hastily pulls away from you. Despite her words, however, you detect more than a little arousal in her voice, but before you can comment on this she points her finger at you and shouts, [meraxis.speech(Y-You shall remain silent! Tremble before me and listen to what I have to say!)]
+		[meraxis.speech(Извращенец!)] — восклицает Меракс, поспешно отстраняясь от тебя. Однако, вопреки её словам, ты улавливаешь в её голосе немалое возбуждение, но прежде чем ты успеваешь это прокомментировать, она тычет в тебя пальцем и выкрикивает: [meraxis.speech(Т-ты будешь молчать! Трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_BREASTS_REVERSE"><![CDATA[
 	<p>
-		Looking down at Meraxis's [meraxis.cupSize]-cup breasts, you can't help but think that you went too far in making them so big. Telling her that she looked better being flat-chested, you demand that she shrinks her boobs down into the AA-cups they were previously. Furiously blushing as she hears you say this, the embarrassed [meraxis.race] points a finger at you and stammers, [meraxis.speech(Y-You're the one who wanted them so big in the first place! Y-You'll pay for toying with my body in so careless a manner!)]
+		Глядя на [meraxis.cupSize]-грудь Мераксис, ты невольно думаешь, что всё-таки переборщил с её размером. Сказав ей, что с плоской грудью она выглядела лучше, ты требуешь, чтобы она уменьшила её обратно до прежнего размера AA. Яростно краснея от твоих слов, смущенная [meraxis.race] тычет в тебя пальцем и лепечет: [meraxis.speech(Э-это ты изначально хотел, чтобы они были такими огромными! Т-ты заплатишь за то, что так беспечно играешь с моим телом!)]
 	</p>
 	<p>
-		With her cheeks still burning bright red, Meraxis starts to focus her demonic self-transformative powers into her breasts, and you can't help but smile in appreciation as you watch them shrink down...
+		Всё ещё пунцовая от смущения, Мераксис начинает концентрировать свою демоническую силу самотрансформации в груди, и ты не можешь сдержать одобрительную улыбку, наблюдая за тем, как она уменьшается...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_BREASTS_REVERSE_DONE"><![CDATA[
 	<p>
-		Meraxis runs her hands over her tiny breasts, and with her cheeks still burning bright red, she mutters, [meraxis.speech(I'd kind of got used to having big ones...)]
+		Мераксис проводит руками по своей крошечной груди, и, всё ещё заливаясь густой краской, бормочет: [meraxis.speech(А ведь я вроде как привыкла к большим...)]
 	</p>
 	<p>
-		Before you can respond to this, the blushing [meraxis.race] clears her throat and declares, [meraxis.speech(A-Anyway, I feel better like this! Now tremble before me and listen to what I have to say!)]
+		Прежде чем ты успеваешь ответить, раскрасневшаяся [meraxis.race] откашливается и заявляет: [meraxis.speech(К-кстати, так мне даже лучше! А теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -452,37 +449,37 @@
 	
 	<htmlContent tag="WON_TRANSFORM_LACTATION"><![CDATA[
 	<p>
-		Liking the idea of Meraxis having to regularly milk herself, you tell her that you want her to start lactating. Not being able to process what it is you've just asked, she shakes her head in disbelief and stammers, [meraxis.speech(Y-You want me to do <i>what</i>?)]
+		Тебе нравится мысль о том, что Мераксис придётся регулярно доить саму себя, поэтому ты говоришь ей, что хочешь, чтобы у неё началось лактация. Не в силах осознать то, о чём ты только что попросил, она недоверчиво качает головой и заикается: [meraxis.speech(Т-ты хочешь, чтобы я делала <i>что</i>?)]
 	</p>
 	<p>
-		Repeating your demand, you tell the astounded [meraxis.race] that you want her nipples to be squirting out milk whenever they're squeezed. As she starts to blush, you continue your demands by telling her to slip out of her dress and flash you her boobs so that you can confirm that she's gone through with the transformation. Although she tried to make some protests, you silence Meraxis by firmly reminding her of her agreement. Muttering angrily to herself, she reluctantly does as you say, and after slipping out of her dress, she undoes her bra and reveals her [meraxis.breastSize], [meraxis.cupSize]-cup boobs.
+		Повторяя своё требование, ты говоришь ошеломлённой [meraxis.race], что хочешь, чтобы из её сосков брызгало молоко всякий раз, когда их сжимают. Пока она начинает краснеть, ты продолжаешь свои требования, веля ей выскользнуть из платья и продемонстрировать тебе грудь, чтобы ты мог убедиться, что трансформация прошла успешно. Хотя она и пытается протестовать, ты заставляешь Мераксис замолчать, твердо напоминая ей о её соглашении. Сердито бормоча себе под нос, она неохотно подчиняется: выскользнув из платья, она расстегивает бюстгальтер и являет тебе свою [meraxis.breastSize], [meraxis.cupSize]-размера грудь.
 	</p>
 	<p>
-		[meraxis.speech(G-Go on, stare all you want,)] she stutters in defiance, before focusing her self-transformative powers into her breasts...
+		[meraxis.speech(Ну же, пялься сколько влезет,)] — вызывающе заикается она, прежде чем сосредоточить свои силы самотрансформации в груди...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_LACTATION_DONE"><![CDATA[
 	<p>
-		[meraxis.speech(Ok, I-I've done it,)] the chuuni [meraxis.race] declares. As there's no sign that she's done as you've asked, you demand that Meraxis squeeze her nipples, to which she indignantly replies, [meraxis.speech(F-Fine, if that's the last thing you're asking, I'll do it. You pervert...)]
+		[meraxis.speech(В-все, я сделала,)] — заявляет эта чунибьянка [meraxis.race]. Поскольку признаков того, что она выполнила твою просьбу, пока нет, ты требуешь, чтобы Мераксис сжала свои соски, на что она возмущенно отвечает: [meraxis.speech(Л-ладно, если это последнее, о чем ты просишь, я сделаю это. Извращенец...)]
 	</p>
 	<p>
-		Reaching up to her breasts, she gives her [meraxis.nipples+] a firm squeeze, and lets out a high-pitched gasp as milk quickly beads up on their surface before dripping down to run over her [meraxis.breastSize], [meraxis.breastShape] breasts. Flashing you a flustered glare, she quickly puts her bra and dress back on, before pointing her finger at you and declaring, [meraxis.speech(Y-You shall pay for this! Now tremble before me and listen to what I have to say!)]
+		Подняв руки к груди, она крепко сжимает свои [meraxis.nipples+] и издает высокий вздох; молоко быстро выступает каплями на поверхности, а затем стекает по её [meraxis.breastSize], [meraxis.breastShape] груди. Бросив на тебя смущенный взгляд, она поспешно натягивает лифчик и платье обратно, после чего тычет в тебя пальцем и провозглашает: [meraxis.speech(Т-ты за это заплатишь! А теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_LACTATION_REVERSE"><![CDATA[
 	<p>
-		Feeling as though you've had your fun by making Meraxis lactate for a while, you tell her to self-transform so that she's no longer producing milk. Furiously blushing, she mutters, [meraxis.speech(Good... It's not like I liked milking myself...)]
+		Чувствуя, что ты вдоволь нагулялся, заставив Мераксис лактировать, ты велишь ей самотрансформироваться, чтобы молоко перестало течь. Яростно краснея, она бормочет: [meraxis.speech(Хорошо... Не то чтобы мне нравилось доить саму себя...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_LACTATION_REVERSE_DONE"><![CDATA[
 	<p>
-		As there's really nothing to see from her transformation, you simply nod in approval as Meraxis tells you that she's done as you asked. Pouting at you, she then points her finger in your direction and declares, [meraxis.speech(Y-You shall pay for toying with my body! Now tremble before me and listen to what I have to say!)]
+		Поскольку в её трансформации особо не на что смотреть, ты просто одобрительно киваешь, когда Мераксис сообщает, что сделала всё, как ты просил. Надув губы, она тычет в тебя пальцем и заявляет: [meraxis.speech(Т-ты заплатишь за то, что играл с моим телом! А теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -491,43 +488,43 @@
 	
 	<htmlContent tag="WON_TRANSFORM_LIPS"><![CDATA[
 	<p>
-		Letting your gaze settle on Meraxis's face, you find yourself thinking that her mouth could do with looking a lot lewder. As you tell her of your desire, the chuuni [meraxis.race] blushes and asks, [meraxis.speech(What do you mean by 'lewder'? What's wrong with how my mouth looks as it is?)]
+		Твой взгляд задерживается на лице Мераксис, и ты ловишь себя на мысли, что её рот мог бы выглядеть куда более похотливо. Когда ты озвучиваешь своё желание, эта чунибьё [meraxis.race] краснеет и спрашивает: [meraxis.speech(Что ты имеешь в виду под «похотливо»? Что не так с моим ртом сейчас?)]
 	</p>
 	<p>
-		Smiling at Meraxis, you tell her that her lips need to be bigger and puffier, and that she should not only have a long tongue, but that her throat should always be drenched in slimy saliva. The embarrassed [meraxis.race]'s cheeks turn a deep shade of scarlet as she hears you say this and objects, [meraxis.speech(You're really going to make me transform like that? I-I'll look ridiculous!)]
+		Улыбаясь Мераксис, ты говоришь ей, что её губы должны стать больше и пухлее, и что ей мало иметь лишь длинный язык — её горло должно быть всегда залито липкой слюной. Смущённая [meraxis.race] заливается густой краской, слыша твои слова, и начинает протестовать: [meraxis.speech(Ты и правда хочешь, чтобы я так трансформировалась? Я... я же буду выглядеть нелепо!)]
 	</p>
 	<p>
-		Telling her to get on with it, you smile as Meraxis relents and starts to focus her self-transformative powers into her mouth...
+		Повелев ей не медлить, ты улыбаешься, пока Мераксис сдаётся и начинает концентрировать свою силу самотрансформации на своём рту...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_LIPS_DONE"><![CDATA[
 	<p>
-		Meraxis darts out her long, slimy tongue and licks her huge, puffy lips, spreading a copious amount of saliva over them and making them look extremely juicy and lewd. She furiously blushes as she sees the approving look on your face, and after swallowing the large amount of saliva that's built up in her mouth, she declares, [meraxis.speech(Y-You'll pay for making me look like this! The next time we duel, I shall destroy you!)]
+		Мераксис высовывает свой длинный, скользкий язык и облизывает огромные, пухлые губы, обильно покрывая их слюной, отчего те выглядят невероятно сочными и похотливыми. Она яростно краснеет, видя твой одобряющий взгляд, и, проглотив скопившуюся во рту слюну, заявляет: [meraxis.speech(Т-ты ещё поплатишься за то, что заставил меня так выглядеть! В следующий раз, когда мы сойдёмся в дуэли, я тебя уничтожу!)]
 	</p>
 	<p>
-		Not yet used to the copious amount of saliva which now fills her mouth, the chuuni [meraxis.race]'s excitable manner of talking causes her to drool out of the corners of her mouth. Realising what's happening, she blushes even more and hastily wipes away the excess saliva with her sleeve, before stuttering in embarrassment, [meraxis.speech(I-It's your fault that I drooled like that! N-Now tremble before me and listen to what I have to say!)]
+		Еще не привыкшая к такому количеству слюны, наполняющей её рот, возбужденная [meraxis.race] начинает срываться на слюнявый лепет. Осознав, что происходит, она краснеет еще сильнее и поспешно вытирает излишки слюны рукавом, после чего заикаясь от смущения, произносит: [meraxis.speech(Э-это всё твоя вина, что я так пускаю слюни! А теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_LIPS_REVERSE"><![CDATA[
 	<p>
-		Looking at Meraxis's puffy, juicy lips, you can't help but feel as though you went too far in making her transform them into that state. Telling her that she looked better with her normal-sized lips, you order Meraxis to transform her mouth back to how it used to be. Blushing as she hears you say this, the [meraxis.race] mutters, [meraxis.speech(Just as I was getting used to this...)]
+		Глядя на пухлые, сочные губы Мераксис, ты невольно чувствуешь, что, возможно, зашел слишком далеко, заставив её принять такой вид. Сказав ей, что с обычными губами она выглядела лучше, ты приказываешь Мераксис вернуть их в прежнее состояние. Краснея от твоих слов, [meraxis.race] бормочет: [meraxis.speech(Только я к ним привыкла...)]
 	</p>
 	<p>
-		Focusing her demonic self-transformative powers into her mouth, Meraxis then proceeds to do as you've told her...
+		Направив свою демоническую силу самотрансформации на рот, Мераксис приступает выполнять твой приказ...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_LIPS_REVERSE_DONE"><![CDATA[
 	<p>
-		Experimentally licking her lips, Meraxis lets out a sigh and says, [meraxis.speech(Those feel much better. It was so annoying to always be drooling all the time...)]
+		Пробуя губы на вкус, Мераксис вздыхает и говорит: [meraxis.speech(Так гораздо лучше. А то вечно эта слюна мешала, так раздражало...)]
 	</p>
 	<p>
-		Before you can react to this, Meraxis spins around and strikes a heroic pose, before pointing her finger at you and declaring, [meraxis.speech(You shall pay for toying with my body! Now tremble before me and listen to what I have to say!)]
+		Прежде чем ты успеваешь на это отреагировать, Мераксис резко разворачивается и принимает героическую позу, после чего указывает на тебя пальцем и провозглашает: [meraxis.speech(Ты заплатишь за то, что играл с моим телом! А теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -536,46 +533,46 @@
 	
 	<htmlContent tag="WON_TRANSFORM_PUSSY"><![CDATA[
 	<p>
-		Wanting Meraxis to have a lewd pussy, you tell her that she's going to have to transform her cunt into one that looks like it's always in desperate need of being fucked. She's so shocked to hear you make this demand of her that she simply stands in silence for a moment, before furiously blushing and stammering, [meraxis.speech(W-What? What do you mean? L-Like it wants to be... F-Fucked?!)]
+		Желая, чтобы у Мераксис была похотливая киска, ты заявляешь ей, что ей придется превратить свою щель в такую, которая будет выглядеть так, будто она отчаянно жаждет траха, не переставая. Она настолько шокирована твоим требованием, что на мгновение просто замирает в молчании, а затем заливается яростным румянцем и начинает заикаться: [meraxis.speech(Ч-что? Что ты имеешь в виду? Б-будто она хочет... Б-быть траханной?!)]
 	</p>
 	<p>
-		Clarifying your demands, you tell the embarrassed [meraxis.race] that her pussy should have big labia, it should always be nothing less than sopping wet, and that it should be a little loose so that it looks like it's always needing to be filled by something. With her cheeks burning bright red, Meraxis pouts at you and complains, [meraxis.speech(I-I can't believe that you want me to do that... Y-You're so perverted...)]
+		Уточняя свои требования, ты говоришь смущенной [meraxis.race], что у её киски должны быть большие половые губы, она всегда должна быть не иначе как насквозь мокрой, и что она должна быть слегка расслабленной, чтобы казалось, будто её постоянно нужно чем-то наполнять. С пылающими алым цветом щеками Мераксис дует губы и жалуется: [meraxis.speech(П-поверить не могу, что ты хочешь, чтобы я это сделала... Т-ты такой извращенец...)]
 	</p>
 	<p>
-		Not yet finished with your demands, you tell Meraxis that you want to see that she's doing as you say, and so she needs to hike up her dress and drop her panties. Although she refuses to comply at first, a couple of reminders of how she promised to do as you asked eventually gets her to obey, and after pulling up her dress, she slides down her panties and shows you her cute pussy as it undergoes its transformation...
+		Не заканчивая список своих требований, ты говоришь Мераксис, что хочешь лично убедиться, что она всё делает по твоему слову, а значит, ей нужно задрать платье и спустить трусики. Хотя поначалу она отказывается подчиняться, пара напоминаний о том, что она обещала исполнить твою просьбу, в итоге заставляют её повиноваться; задрав платье, она сползает с трусиков и демонстрирует тебе свою милую киску, которая начинает свое превращение...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_PUSSY_DONE"><![CDATA[
 	<p>
-		As you've watched it transform, you're happy to know that Meraxis has transformed her once-cute pussy into the lewd, sopping-wet cunt that's now between her legs. Without any external stimulus, you see her [meraxis.labia+] start to glisten and grow slick with her natural juices, which causes Meraxis to gasp, [meraxis.speech(I'm getting wet already... D-Damn you, [pc.name]!)]
+		Наблюдая за процессом, ты с удовольствием замечаешь, что Мераксис превратила свою когда-то милую киску в похотливую, насквозь промокшую щель, что теперь красуется между её ног. Даже без внешних стимулов ты видишь, как её [meraxis.labia+] начинает блестеть и покрываться естественной смазкой, отчего Мераксис судорожно вздыхает: [meraxis.speech(Я уже становлюсь такой мокрой... Ч-черт возьми, [pc.name]!)]
 	</p>
 	<p>
-		With that, she quickly pulls up her panties and drops the skirt of her dress, and with her cheeks still flushing bright red, she points her finger at you and declares, [meraxis.speech(I'll make you pay for embarrassing me like this! N-Now tremble before me and listen to what I have to say!)]
+		С этими словами она быстро натягивает трусики и приспускает подол платья, а затем, всё ещё заливаясь густым румянцем, тычет в тебя пальцем и заявляет: [meraxis.speech(Ты заплатишь за то, что так меня опозорил! А-а теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_PUSSY_REVERSE"><![CDATA[
 	<p>
-		Regretting how you previously made Meraxis gain a lewd, wet cunt, you tell her to reverse the transformation and regain her old, cute pussy. Furiously blushing, she stammers, [meraxis.speech(I-I suppose that you want to watch me transform it again?)]
+		Сожалея о том, что ранее заставил Мераксис обрести эту похотливую, мокрую щель, ты велишь ей обратить трансформацию вспять и вернуть свою прежнюю милую киску. Яростно краснея, она заикается: [meraxis.speech(Т-ты что, хочешь снова смотреть, как я превращаю её обратно?)]
 	</p>
 	<p>
-		After you've replies in the positive, the chuuni [meraxis.race] mutters, [meraxis.speech(Y-You're so perverted...)]
+		После твоего утвердительного ответа эта чунибьянка [meraxis.race] бормочет: [meraxis.speech(Т-ты такой извращенец...)]
 	</p>
 	<p>
-		Far more willing to reverse the transformation than she was to initially undergo it, Meraxis quickly hikes up her dress and pulls down her panties, showing you her lewd, dripping-wet cunt as it undergoes its transformation...
+		Гораздо охотнее, чем в первый раз, Мераксис соглашается на обратную трансформацию; она быстро задирает платье и спускает трусики, демонстрируя тебе свою похотливую, сочащуюся влагой щель, которая начинает меняться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_PUSSY_REVERSE_DONE"><![CDATA[
 	<p>
-		As you've watched it transform, you're happy to know that Meraxis has transformed her lewd, sopping-wet cunt back into her old, cute pussy. Furiously blushing, the impatient [meraxis.race] asks, [meraxis.speech(Are you happy now?!)]
+		Наблюдая за процессом, ты с радостью видишь, что Мераксис превратила свою похотливую, мокрую щель обратно в прежнюю милую киску. Яростно краснея, нетерпеливая [meraxis.race] спрашивает: [meraxis.speech(Теперь ты доволен?!)]
 	</p>
 	<p>
-		After you've let her know that you're satisfied with her transformation, Meraxis quickly pulls up her panties and drops the skirt of her dress, and with her cheeks still flushing bright red, she points her finger at you and declares, [meraxis.speech(I'll make you pay for embarrassing me like this! N-Now tremble before me and listen to what I have to say!)]
+		Когда ты даешь ей понять, что доволен ее трансформацией, Мераксис быстро натягивает трусики и приспускает юбку платья. Все еще заливаясь ярко-красным румянцем, она тычет в тебя пальцем и заявляет: [meraxis.speech(Ты заплатишь за то, что так меня опозорил! А-а теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -584,44 +581,44 @@
 	
 	<htmlContent tag="WON_TRANSFORM_SQUIRTER"><![CDATA[
 	<p>
-		Liking the idea of making Meraxis squirt whenever she orgasms, you tell her to transform her pussy to make that into a reality. Blushing as she hears you say this, the embarrassed [meraxis.race] mutters, [meraxis.speech(You're so perverted...)]
+		Тебе нравится идея заставить Мераксис сочиться смазкой при каждом оргазме, и ты велишь ей трансформировать свою киску, чтобы воплотить это в реальность. Покраснев от твоих слов, смущенная [meraxis.race] бормочет: [meraxis.speech(Какой же ты извращенец...)]
 	</p>
 	<p>
-		Despite her words, Meraxis starts to do as you say, and focuses her demonic self-transformative powers into her pussy...
+		Несмотря на свои слова, Мераксис начинает делать то, что ты велел, направляя свои демонические силы самотрансформации в свою киску...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_SQUIRTER_DONE"><![CDATA[
 	<p>
-		Although there's no way to verify it at the moment, you're sure that Meraxis has done as you asked. Not giving you any time in which to embarrass her further, she quickly points her finger at you and declares, [meraxis.speech(I'll make you pay for transforming me like this! N-Now tremble before me and listen to what I have to say!)]
+		Хотя прямо сейчас это невозможно проверить, ты уверен, что Мераксис сделала всё, как ты просил. Не давая тебе возможности смутить её еще сильнее, она быстро тычет в тебя пальцем и заявляет: [meraxis.speech(Ты заплатишь за то, что так меня изменил! А-а теперь трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_SQUIRTER_REVERSE"><![CDATA[
 	<p>
-		No longer liking the idea of making Meraxis squirt whenever she orgasms, you tell her to transform her pussy so that she's no longer a squirter. Blushing as she hears you say this, the embarrassed [meraxis.race] mutters, [meraxis.speech(You're so perverted...)]
+		Тебе больше не нравится идея с сочащейся смазкой при каждом оргазме, и ты велишь ей трансформировать киску так, чтобы она перестала быть такой влажной. Покраснев от твоих слов, смущенная [meraxis.race] бормочет: [meraxis.speech(Какой же ты извращенец...)]
 	</p>
 	<p>
-		Despite her words, Meraxis starts to do as you say, and focuses her demonic self-transformative powers into her pussy...
+		Несмотря на свои слова, Мераксис начинает делать то, что ты велел, направляя свои демонические силы самотрансформации в свою киску...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_TRANSFORM_SQUIRTER_REVERSE_DONE"><![CDATA[
 	<p>
-		Although there's no way to verify it at the moment, you're sure that Meraxis has done as you asked. Not giving you any time in which to embarrass her further, she quickly points her finger at you and declares, [meraxis.speech(I'll make you pay for playing with my body like this! N-Now tremble before me and listen to what I have to say!)]
+		Пусть сейчас это и невозможно проверить, ты точно знаешь: Мераксис сделала всё, как ты просил. Не давая тебе ни секунды, чтобы еще больше её опозорить, она резко тычет в тебя пальцем и заявляет: [meraxis.speech(Я заставлю тебя заплатить за то, что ты так играешь с моим телом! Н-немедленно трепещи предо мной и слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRANSFORMATION_END"><![CDATA[
 	<p>
-		Doing as you're asked, you listen as Meraxis places her hands on her hips and declares, [meraxis.speech(Although you may have won that duel, I know that I'm really the most powerful! The next time we fight, I shall surely destroy you! Mwhahaha!)] 
+	Повинуясь просьбе, ты слушаешь, как Мераксис упирает руки в бока и провозглашает: [meraxis.speech(Пусть в этой дуэли ты и победил, но я-то знаю, что на самом деле самая могущественная! В следующий раз, когда мы сойдемся в бою, я тебя точно уничтожу! Мва-ха-ха!)] 
 	</p>
 	<p>
-		Throwing her cape around herself in an overly-dramatic gesture, the chuuni [meraxis.race] exclaims, [meraxis.speech(I will not endure a single moment more in your presence! Now, witness my power!)]
+		Драматичным жестом накинув на себя плащ, чунибьянская [meraxis.race] восклицает: [meraxis.speech(Я не намерена выносить твое присутствие ни мгновением дольше! А теперь — узри мою мощь!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -630,21 +627,21 @@
 	
 	<htmlContent tag="WON_SEX"><![CDATA[
 	<p>
-		Having been well and truly beaten, Meraxis staggers back and breathlessly pants, [meraxis.speech(No more... Y-You are victorious this day...)]
+	Потерпевшая полное и окончательное поражение, Мераксис пошатывается и тяжело дышит: [meraxis.speech(Больше... Т-ты победил в этот раз...)]
 	</p>
 	<p>
-		[pc.Stepping] forwards, you remind Meraxis of your agreement, and ask her if she's ready to have sex. Letting out an indignant huff, the vanquished [meraxis.race] complains, [meraxis.speech(That's not fair... Y-You cheated... But fine, whatever, I'll let you choose a sexual favour... B-But I'm only agreeing to this because I want to do it too; don't think for one moment that you're getting to force me into anything!)]
+		Когда [pc.Stepping] делает шаг вперед, ты напоминаешь Мераксис о вашем уговоре и спрашиваешь, готова ли она заняться сексом. Издав возмущенный фырк, поверженная [meraxis.race] жалуется: [meraxis.speech(Это нечестно... Т-ты жульничал... Но ладно, черт с тобой, я позволю тебе выбрать сексуальную услугу... Н-но я соглашаюсь только потому, что сама этого хочу; не вздумай даже подумать, что ты меня заставляешь!)]
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_meraxis_any_sex_unlocked))
 		<p>
-			Realising what she's just said, the chuuni [meraxis.race]'s cheeks flush red, and she stammers in embarrassment, [meraxis.speech(C-Come on then, d-do you want to hug, hold hands, or what?! I-I mean, we could then do some other stuff like we did before...)]
+			Осознав, что она только что ляпнула, чунибьянская [meraxis.race] заливается краской и смущенно заикается: [meraxis.speech(Н-ну же, д-давай, ты хочешь обняться, подержаться за руки или как?! Я... в смысле, мы могли бы потом заняться чем-то еще, как в прошлый раз...)]
 		</p>
 	#ELSE
 		<p>
-			Realising what she's just said, the chuuni [meraxis.race]'s cheeks flush red, and she stammers in embarrassment, [meraxis.speech(C-Come on then, d-do you want to hug, hold hands, or what?!)]
+			Осознав, что она только что ляпнула, чунибьянская [meraxis.race] заливается краской и смущенно заикается: [meraxis.speech(Н-ну же, д-давай, ты хочешь обняться, подержаться за руки или как?!)]
 		</p>
 		<p>
-			Although she's making a show of being flustered, you can't help but notice the lewd look in Meraxis's eye as she glances over at you. As you wonder what to ask of her, you think that you might be able to push her into doing something quite lewd...
+		Хотя она и старается казаться смущенной, ты не можешь не заметить похотливый блеск в глазах Мераксис, когда она бросает на тебя взгляд. Раздумывая, чего бы от нее потребовать, ты понимаешь, что вполне мог бы подтолкнуть ее к чему-то весьма развратному...
 		</p>
 	#ENDIF
 	]]>
@@ -652,10 +649,10 @@
 	
 	<htmlContent tag="WON_SEX_NOTHING"><![CDATA[
 	<p>
-		Deciding that you don't want to do anything lewd with Meraxis after all, you tell her that you've changed your mind, and that she's free to go without having to offer you a sexual favour.
+		Решив, что в итоге ты не хочешь заниматься с Мераксис ничем непристойным, ты говоришь ей, что передумал, и что она вольна идти, не обязана оказывать тебе сексуальную услугу.
 	</p>
 	<p>
-		[meraxis.speech(So you lead me on like that and then say that you're not interested?)] she huffs, before suddenly spinning around on the spot and striking a heroic pose. Pointing at you, she takes on her usual chuuni personality as she declares, [meraxis.speech(Now, my nemesis, I have something important to say, so listen up!)]
+		[meraxis.speech(Значит, ты сначала заигрываешь со мной, а потом заявляешь, что тебе не интересно?!)] — фыркает она, после чего внезапно кружится на месте и принимает героическую позу. Указывая на тебя пальцем, она возвращается к своей привычной манере «чунибё» и провозглашает: [meraxis.speech(А теперь, мой заклятый враг, слушай внимательно, ибо мне есть что сказать!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -664,17 +661,17 @@
 	
 	<htmlContent tag="WON_SEX_HOLD_HANDS"><![CDATA[
 	<p>
-		Not wanting to demand anything of Meraxis which would cause her to have a hostile reaction, you tell her that you'd simply like to hold her hand. Shuffling her feet, she thrusts her arm out towards you and mutters, [meraxis.speech(G-Go on then... You can hold it for a while...)]
+		Не желая требовать от Мераксис чего-то, что вызвало бы у нее враждебную реакцию, ты говоришь, что просто хочешь подержать ее за руку. Переминаясь с ноги на ногу, она протягивает тебе руку и бормочет: [meraxis.speech(Т-тогда давай... Можешь подержать ее какое-то время...)]
 	</p>
 	<p>
-		Taking hold of her soft, feminine hand, you suggest that the two of you go for a walk. Blushing and looking down at the floor, Meraxis asks, [meraxis.speech(W-While still holding hands? S-Sure, I guess...)]
+		Взяв ее мягкую, женственную ладонь в свою, ты предлагаешь вам прогуляться. Покраснев и уставившись в пол, Мераксис спрашивает: [meraxis.speech(П-прямо так, держась за руки? Н-ну, ладно, пожалуй...)]
 	</p>
 	<p>
-		Holding the blushing [meraxis.race]'s hand in yours, the two of you set off on your walk. After only travelling a short distance together, you begin to notice that Meraxis is gently panting, and she suddenly starts to slide her [meraxis.fingers+] around your [pc.hand(true)] and make gentle little moaning sounds. Taking this as a sign to push things a little further, you move in closer to Meraxis, who reacts to your move by pulling you over behind a nearby tree, and after guiding your [pc.hand(true)] down between her legs, pants, 
+		Сжимая в руке ладонь раскрасневшейся [meraxis.race], вы отправляетесь на прогулку. Пройдя совсем немного, ты замечаешь, что Мераксис начинает тихонько дышать, и вдруг она начинает водить своей [meraxis.fingers+] вокруг твоего [pc.hand(true)], издавая нежные, едва слышные стоны. Восприняв это как знак, что пора действовать решительнее, ты придвигаешься к Мераксис. Она реагирует на твой порыв, увлекая тебя за ближайшее дерево, и, направив твою [pc.hand(true)] между своих ног, тяжело дышит...
 		#IF(flags.hasFlag(FLAG_innoxia_meraxis_handjobs_unlocked))
-			 [meraxis.speech(C-Come on then... My pussy's getting all wet... Finger me...)]
+			 [meraxis.speech(Н-ну же... У меня там уже всё намокло... Поласкай меня пальцами...)]
 		#ELSE
-			 [meraxis.speech(C-Come on then... Let's do something naughty...)]
+			 [meraxis.speech(Н-ну же... Давай сделаем что-нибудь неприличное...)]
 		#ENDIF
 	</p>
 	]]>
@@ -682,41 +679,41 @@
 	
 	<htmlContent tag="WON_SEX_HOLD_HANDS_FINISHED"><![CDATA[
 	<p>
-		Deciding that you don't want to do anything lewd with Meraxis, you gently take your [pc.hand(true)] away from her groin. Cutting off her disappointed moan, you offer the cute [meraxis.race] a compliment on her appearance and say that simply being able to spend some time holding her hand was enough for you.
+		Решив, что пока не готов к какой-то пошлости с Мераксис, ты осторожно убираешь свою [pc.hand(true)] от её паха. Прервав её разочарованный стон, ты делаешь милой [meraxis.race] комплимент её внешности и говоришь, что тебе вполне достаточно того, что вы просто гуляете, держась за руки.
 	</p>
 	<p>
-		[meraxis.speech(W-Why are you saying all these embarrassing things?!)] Meraxis cries out as she releases your hand. With her cheeks flushing bright red, she can't help but smile as she looks down at the ground and shuffles her feet. Before you can say anything, she suddenly seems to realise what she's doing and covers up her embarrassment by striking a heroic pose and declaring, [meraxis.speech(Y-You shall not trick me so easily, my nemesis! I am immune to all forms of psychological attack; your efforts are wasted on me! Mwhahaha! N-Now listen to what I have to say!)]
+		[meraxis.speech(П-почему ты несешь всю эту смущающую чепуху?!)] — вскрикивает Мераксис, выпуская твою руку. Ее щеки пылают ярко-алым цветом, и она не может сдержать улыбки, глядя в землю и переминаясь с ноги на ногу. Прежде чем ты успеваешь что-то сказать, она внезапно словно осознает, что творит, и пытается скрыть смущение, принимая героическую позу и провозглашая: [meraxis.speech(Т-тебе не удастся так легко обхитрить меня, мой заклятый враг! Я неуязвима для любых видов психологических атак; твои усилия напрасны! Мва-ха-ха! А теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_HOLD_HANDS_GROPE"><![CDATA[
 	<p>
-		Letting Meraxis pull one of your [pc.hands] down to her groin, you raise your other to start squeezing and groping her [meraxis.breasts+]. As she begins to let out a horny moan in response to your bold move, you slide your [pc.fingers+] down between her legs and press her thin dress and panties up against her pussy. Meraxis's moan quickly turns into a lewd squeal as you do this, and she breathlessly pants, [meraxis.speech(Yes... ~Mmm!~ My pussy's getting wet... Perhaps we could...)]
+		Позволив Мераксис притянуть одну из твоих [pc.hands] к своему паху, ты поднимаешь другую руку, чтобы начать сжимать и ласкать ее [meraxis.breasts+]. Когда в ответ на твой дерзкий жест она издает томный стон, ты просовываешь свою [pc.fingers+] между ее ног, прижимая тонкое платье и трусики к ее киске. От этого стон Мераксис быстро переходит в похотливый визг, и она прерывисто дышит, выдавая: [meraxis.speech(Да... ~Ммм!~ Моя киска становится такой мокрой... Может быть, нам стоит...)]
 	</p>
 	<p>
-		Just as Meraxis seems like she's about to go all the way and ask for you to start fingering her, she abruptly pushes you away from her and jumps back. With her cheeks flushed bright red, she points at you and stammers, [meraxis.speech(Y-You almost defeated my psychological defences! As expected of my nemesis, but you shall not triumph this day! Now listen to what I have to say!)]
+		Как раз в тот момент, когда кажется, что Мераксис готова пойти до конца и попросить тебя ввести пальцы в нее, она внезапно отталкивает тебя и отпрыгивает назад. С ярко-красными щеками она тычет в тебя пальцем и заикается: [meraxis.speech(Т-ты почти сокрушил мою психологическую защиту! Как и ожидалось от моего заклятого врага, но сегодня победа не за тобой! А теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_FINGERING"><![CDATA[
 	<p>
-		Letting Meraxis pull one of your [pc.hands] down to her groin, you raise your other to start squeezing and groping her [meraxis.breasts+]. As she begins to let out a horny moan in response to your bold move, you pull up the bottom of her dress and slide your [pc.fingers+] over her panties. Meraxis's moan quickly turns into a lewd squeal as you do this, and she breathlessly pants, [meraxis.speech(Yes... ~Mmm!~ My pussy's getting wet... Come on, finger me, I need it...)]
+		Позволив Меракси прижать одну из твоих [pc.hands] к своему паху, ты поднимаешь другую руку, чтобы начать сжимать и ласкать её [meraxis.breasts+]. Когда в ответ на твой смелый жест она издает похотливый стон, ты задираешь подол её платья и проводишь [pc.fingers+] по её трусикам. От этого движения стон Меракси быстро переходит в похотливый визг, и она прерывисто дышит: [meraxis.speech(Да... ~Ммм!~ Моя киска уже намокает... Давай же, потыкай мне пальцами, мне это нужно...)]
 	</p>
 	#IF(meraxis.isPussyChanged())
 		<p>
-			Overcome by her lust, Meraxis hastily shifts her panties to one side and fully exposes her pussy to you. Having previously instructed her to transform it into a lewd one, you look down to see that Meraxis's cunt has large labia, and her slightly-loose entrance is a sloppy mess of slimy girlcum. Turning her head to one side in order to shyly avoid your gaze, she pants, [meraxis.speech(Y-You're the one who made it look like this... S-So go on, do it already...)]
-		</p>
+			Охваченная похотью, Меракси поспешно сдвигает трусики набок, полностью открывая тебе свою киску. Поскольку ты заранее велел ей превратить её в развратную, ты видишь, что у Меракси крупные половые губы, а её слегка расслабленное лоно залито скользкой девичьей смазкой. Поворачивая голову в сторону, чтобы застенчиво избежать твоего взгляда, она тяжело дышит: [meraxis.speech(Э-это ты сделал её такой... Т-так чего же ты ждешь, давай уже...)]
+	</p>
 		<p>
-			Reaching forwards once more, you slide your [pc.fingers+] over Meraxis's drooling cunt, which causes her to let out a desperately-horny moan. Taking a moment to tease the embarrassed [meraxis.race], you tell her how sexy and lewd her slimy cunt is, and just as she opens her mouth to respond, you slide your [pc.fingers+] inside and start eagerly fingering her. Caught out by your sudden move, Meraxis gasps and squeals, [meraxis.speech(~Aah!~ Oh, fuck! Yes! ~Mmm!~ Keep going... Yes... More!)]
-		</p>
+			Снова подавшись вперед, ты проводишь [pc.fingers+] по сочащейся смазкой киске Меракси, отчего та издает отчаянно-похотливый стон. Немного дразня её смущенную [meraxis.race], ты говоришь ей, какая сексуальная и развратная её мокрая киска, и как раз в тот момент, когда она открывает рот, чтобы ответить, ты просовываешь [pc.fingers+] внутрь и начинаешь жадно ласкать её пальцами. Застигнутая врасплох твоим внезапным движением, Меракси ахает и визжит: [meraxis.speech(~Аах!~ Ох, блядь! Да! ~Ммм!~ Продолжай... Да... Еще!)]
+	</p>
 	#ELSE
 		<p>
-			Overcome by her lust, Meraxis hastily shifts her panties to one side and fully exposes her pussy to you. Looking down, you see that Meraxis's cute cunt has tiny labia, and is just starting to get wet from arousal. Turning her head to one side in order to shyly avoid your gaze, she pants, [meraxis.speech(Y-You don't have to stare so much... G-Go on, do it already...)]
+			Охваченная похотью, Меракс поспешно сдвигает трусики набок, полностью открывая тебе свою киску. Посмотрев вниз, ты видишь, что у милой щелочки Меракс крошечные половые губы, которые только начинают увлажняться от возбуждения. Застенчиво отвернув голову, чтобы избежать твоего взгляда, она тяжело дышит: [meraxis.speech(Т-ты не обязательно так пристально пялиться... Д-давай же, просто сделай это...)]
 		</p>
 		<p>
-			Reaching forwards once more, you slide your [pc.fingers+] over Meraxis's hot cunt, which causes her to let out a desperately-horny moan. Taking a moment to tease the embarrassed [meraxis.race], you tell her how sexy her tight, cute pussy is, and just as she opens her mouth to respond, you slide your [pc.fingers+] inside and start eagerly fingering her. Caught out by your sudden move, Meraxis gasps and squeals, [meraxis.speech(~Aah!~ Oh, fuck! Yes! ~Mmm!~ Keep going... Yes... More!)]
+			Снова подавшись вперед, ты проводишь своим [pc.fingers+] по горячей киске Меракс, заставляя её издать отчаянно-возбужденный стон. Немного дразня смущенную [meraxis.race], ты говоришь ей, какая у неё сексуальная и узкая киска, и как раз в тот момент, когда она открывает рот, чтобы ответить, ты вставляешь свой [pc.fingers+] внутрь и начинаешь жадно ласкать её пальцами. Застигнутая врасплох твоим резким движением, Меракс ахает и визжит: [meraxis.speech(~Аах!~ Ох, блядь! Да! ~Ммм!~ Продолжай... Да... Еще!)]
 		</p>
 	#ENDIF
 	]]>
@@ -724,58 +721,58 @@
 	
 	<htmlContent tag="WON_SEX_FINGERED"><![CDATA[
 	<p>
-		Wanting the opposite of what Meraxis is after, you tell her that you're going to be the one who's on the receiving end of things.
+		Желая получить прямо противоположное тому, чего добивается Меракс, ты говоришь ей, что на этот раз принимать всё будешь ты.
 		#IF(pc.isTaur())
-			 Exposing your [pc.pussy+], you turn around and present Meraxis with your rear-end, before looking back over your shoulder and asking her if she likes the look of your [pc.legRace] pussy. Staring hungrily down at your [pc.pussy+], the chuuni [meraxis.race] reaches forwards and slides her [meraxis.fingers+] over your [pc.labia+] as she replies, [meraxis.speech(Yes... ~Mmm!~ Let me just do it like this...)]
-		#ELSE
-			 Exposing your [pc.pussy+], you present yourself to Meraxis and ask her if she's ready to get started. Staring hungrily down at your [pc.pussy+], the chuuni [meraxis.race] reaches forwards and slides her [meraxis.fingers+] over your [pc.labia+] as she replies, [meraxis.speech(Yes... ~Mmm!~ Let me just do it like this...)]
+			Обнажив свой [pc.pussy+], ты поворачиваешься спиной, подставляя Меракс свой зад, а затем оглядываешься через плечо и спрашиваешь, нравится ли ей вид твоей [pc.legRace] киски. Жадно уставившись на твой [pc.pussy+], чунибья [meraxis.race] тянется вперед и проводит своим [meraxis.fingers+] по твоему [pc.labia+], отвечая: [meraxis.speech(Да... ~Ммм!~ Просто дай мне сделать это вот так...)]
+			#ELSE
+			 Обнажив свой [pc.pussy+], ты предстаешь перед Мераксис и спрашиваешь, готова ли она начать. Голодно уставившись на твой [pc.pussy+], эта чунибьё [meraxis.race] подается вперед и проводит своей [meraxis.fingers+] по твоему [pc.labia+], отвечая: [meraxis.speech(Да... ~Ммм!~ Дай-ка мне просто сделать вот так...)]
 		#ENDIF
 	</p>
 	<p>
-		Letting out a delighted [pc.moan] in response to her touch, you push your groin out against Meraxis's hand. Encouraged by your enthusiasm, she slides her feminine fingers into your [pc.pussy+] and starts eagerly fingering you. Caught out by her sudden move, you gasp and squeal, [pc.speech(~Aah!~ Oh, fuck! Yes! ~Mmm!~ Keep going... Yes... More!)]
+	Издавая восторженный [pc.moan] в ответ на её прикосновение, ты подаешься пахом навстречу руке Мераксис. Воодушевленная твоим энтузиазмом, она просовывает свои женственные пальцы в твой [pc.pussy+] и с жадностью начинает ласкать тебя. Застигнутый врасплох её резким движением, ты ахаешь и визжишь: [pc.speech(~Аах!~ Ох, блядь! Да! ~Ммм!~ Продолжай... Да... Еще!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_HANDJOB"><![CDATA[
 	<p>
-		Wanting the opposite of what Meraxis is after, you tell her that you're going to be the one who's on the receiving end of things.
+		Желая получить прямо противоположное тому, чего добивается Меракс, ты говоришь ей, что на этот раз принимать всё будешь ты.
 		#IF(pc.isTaur())
-			 Exposing your [pc.cock+], you turn to one side and present it to Meraxis, before turning your head towards her and asking if she likes the look of your [pc.legRace] cock. Staring hungrily down at your [pc.cock+], the chuuni [meraxis.race] drops down onto her knees, before reaching forwards and sliding her [meraxis.fingers+] over your throbbing length. Biting her lip, she pants, [meraxis.speech(Yes... ~Mmm!~ Let me just do it like this...)]
+			 Обнажив свой [pc.cock+], ты поворачиваешься боком, подставляя его Мераксис, а затем поворачиваешь голову к ней и спрашиваешь, нравится ли ей вид твоего [pc.legRace] члена. Голодно уставившись на твой [pc.cock+], чунибьё [meraxis.race] опускается на колени, после чего подается вперед и проводит своей [meraxis.fingers+] по твоему пульсирующему стволу. Прикусив губу, она тяжело дышит: [meraxis.speech(Да... ~Ммм!~ Дай-ка мне просто сделать вот так...)]
 		#ELSE
-			 Exposing your [pc.cock+], you present yourself to Meraxis and ask her if she's ready to get started. Staring hungrily down at your [pc.cock+], the chuuni [meraxis.race] reaches forwards and slides her [meraxis.fingers+] over your throbbing length as she replies, [meraxis.speech(Yes... ~Mmm!~ Let me just do it like this...)]
+			 Обнажив свой [pc.cock+], ты предстаешь перед Мераксис и спрашиваешь, готова ли она начать. Голодно уставившись на твой [pc.cock+], чунибьё [meraxis.race] подается вперед и проводит своей [meraxis.fingers+] по твоему пульсирующему стволу, отвечая: [meraxis.speech(Да... ~Ммм!~ Дай-ка мне просто сделать вот так...)]
 		#ENDIF
 	</p>
 	<p>
-		Letting out a delighted [pc.moan] in response to her touch, you push your groin out against Meraxis's hand. Encouraged by your enthusiasm, she wraps her feminine fingers around your [pc.cock+] and starts eagerly jerking you off. Caught out by her sudden move, you gasp and [pc.moan], [pc.speech(~Aah!~ Fuck, yes! ~Mmm!~ Keep going... Yes... More!)]
+		Издавая восторженный [pc.moan] в ответ на её прикосновение, ты подаёшься пахом навстречу руке Мераксис. Воодушевлённая твоим энтузиазмом, она обхватывает своими женственными пальцами твой [pc.cock+] и начинает жадно ласкать тебя, двигая рукой вверх-вниз. Застигнутый врасплох её внезапным напором, ты ахаешь и [pc.moan], [pc.speech(~Аах!~ Блядь, да! ~Ммм!~ Продолжай... Да... Ещё!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_FINGERING"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and looks down at the sloppy mess of girlcum that's splattered all over her pussy and upper thighs. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Мераксис отступает назад и смотрит на липкое месиво из девичьей смазки, размазанное по её киске и верхней части бёдер. Достав салфетку, она принимается вытираться, пока ты пытаешься привести в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_FINGERED"><![CDATA[
 	<p>
-		Panting for breath, Meraxis teases her feminine fingers over your [pc.labia+] one last time, before stepping back and giving you a moment in which to clean yourself up.
+		Тяжело дыша, Мераксис в последний раз дразнит твои [pc.labia+] своими женственными пальцами, прежде чем отступить и дать тебе минутку, чтобы привести себя в порядок.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_HANDJOB"><![CDATA[
 	<p>
-		Panting for breath, Meraxis teases her feminine fingers over your [pc.labia+] one last time, before stepping back and giving you a moment in which to clean yourself up.
+		Тяжело дыша, Мераксис в последний раз дразнит твои [pc.labia+] своими женственными пальцами, прежде чем отступить и дать тебе минутку, чтобы привести себя в порядок.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_END"><![CDATA[
 	<p>
-		[meraxis.speech(You know... It was kind of worth losing that duel for this...)] she says, before flashing you a quick smile and then suddenly spinning around on the spot. Striking a heroic pose, she points at you and takes on her usual chuuni personality as she declares, [meraxis.speech(Now, my nemesis, as I have deceived you into giving me what I wanted, I have something important to say, so listen up!)]
+		[meraxis.speech(Знаешь... Ради такого стоило проиграть тот поединок...)] — говорит она, одарив тебя мимолётной улыбкой, а затем внезапно кружится на месте. Приняв героическую позу, она указывает на тебя и, вернув свой привычный образ чунибё, провозглашает: [meraxis.speech(А теперь, мой заклятый враг! Раз уж я обманом заставила тебя отдать мне то, чего я желала, у меня есть важное объявление, так что слушай внимательно!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -784,21 +781,21 @@
 	
 	<htmlContent tag="WON_SEX_HUG"><![CDATA[
 	<p>
-		Not wanting to demand anything of Meraxis which would cause her to have a hostile reaction, you tell her that you'd simply like to give her a hug. Shuffling her feet, she thrusts her arms out towards you and mutters, [meraxis.speech(C-Come on then... You can hug me...)]
+		Не желая требовать от Мераксис чего-то, что вызвало бы у неё враждебную реакцию, ты говоришь, что просто хочешь её обнять. Переминаясь с ноги на ногу, она протягивает к тебе руки и бормочет: [meraxis.speech(Н-ну же... Можешь меня обнять...)]
 	</p>
 	<p>
-		[pc.Stepping] into Meraxis's outstretched arms, you pull her into a big hug. Although you can't see her face from this position, you know that she must be blushing as she mutters, [meraxis.speech(A-As if you like this sort of thing...)]
+		[pc.Stepping] в распростертые объятия Мераксис, ты крепко прижимаешь её к себе. Хотя из этого положения ты не видишь её лица, ты понимаешь, что она наверняка краснеет, когда бормочет: [meraxis.speech(Б-будто тебе такое вообще нравится...)]
 	</p>
 	<p>
-		Before you can respond to that, you suddenly notice that Meraxis is starting to gently grind up against you, and with a little moan, she firmly presses her [meraxis.breasts+] against your torso. Seeing this as a sign to take things a little further, you pull Meraxis into you, which causes her to lift her ass and pant, 
+		Прежде чем ты успеваешь ответить, ты внезапно замечаешь, что Мераксис начинает нежно тереться о тебя, и с тихим стоном она плотно прижимается своей [meraxis.breasts+] к твоему торсу. Видя в этом знак того, что пора действовать решительнее, ты притягиваешь Мераксис к себе, отчего она приподнимает задницу и начинает тяжело дышать, 
 		#IF(flags.hasFlag(FLAG_innoxia_meraxis_anal_unlocked))
 			#IF(game.isAnalContentEnabled())
-				 [meraxis.speech(I know you want to do anal stuff again... And, well, I kind of want it as well...)]
+				 [meraxis.speech(Я знаю, что ты снова хочешь заняться анальным сексом... И, ну... я тоже этого вроде как хочу...)]
 			#ELSE
-				 [meraxis.speech(G-Go on then... I know you want to grope my ass again, so just do it already...)]
+				 [meraxis.speech(Н-ну же... Я знаю, что ты хочешь снова потискать мою задницу, так что просто сделай это уже...)]
 			#ENDIF
 		#ELSE
-			 [meraxis.speech(G-Go on then... I know you want to grope my ass, so just do it already...)]
+			 [meraxis.speech(Н-ну же... Я знаю, что ты хочешь потискать мою задницу, так что просто сделай это уже...)]
 		#ENDIF
 	</p>
 	]]>
@@ -806,106 +803,104 @@
 	
 	<htmlContent tag="WON_SEX_HUG_FINISHED"><![CDATA[
 	<p>
-		Deciding that you don't want to do anything lewd with Meraxis, you continue to simply hug her for a few more moments, before [pc.stepping] back and putting an end to your physical contact. Cutting off her disappointed moan, you offer the cute [meraxis.race] a compliment on her appearance and say that simply being able to spend some time in her embrace was enough for you.
+		Решив, что не хочешь заниматься с Мераксис чем-то непристойным, ты продолжаешь просто обнимать её ещё несколько мгновений, после чего [pc.stepping] назад, прекращая физический контакт. Прервав её разочарованный стон, ты делаешь милой [meraxis.race] комплимент её внешности и говоришь, что возможности просто провести немного времени в её объятиях тебе вполне достаточно.
 	</p>
 	<p>
-		[meraxis.speech(W-Why are you saying all these embarrassing things?!)] Meraxis cries out in response to your compliments. With her cheeks flushing bright red, she can't help but smile as she looks down at the ground and shuffles her feet. Before you can say anything, she suddenly seems to realise what she's doing and covers up her embarrassment by striking a heroic pose and declaring, [meraxis.speech(Y-You shall not trick me so easily, my nemesis! I am immune to all forms of psychological attack; your efforts are wasted on me! Mwhahaha! N-Now listen to what I have to say!)]
+		[meraxis.speech(П-почему ты несешь всю эту смущающую чепуху?!)] — вскрикивает Мераксис в ответ на твои комплименты. Ее щеки заливаются ярко-красным румянцем, и она не может сдержать улыбку, глядя в землю и переминаясь с ноги на ногу. Прежде чем ты успеваешь что-то сказать, она внезапно осознает, как выглядит, и пытается скрыть смущение, принимая героическую позу и провозглашая: [meraxis.speech(Т-тебе не обмануть меня так просто, мой заклятый враг! Я неуязвима для любых видов психологических атак; твои усилия напрасны! Мва-ха-ха! А-а теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_HUG_ASS_GRAB"><![CDATA[
 	<p>
-		Not wanting to miss this opportunity, you reach around and dominantly grab Meraxis's ass with both [pc.hands].
+		Не желая упускать возможность, ты обхватываешь Мераксис сзади и властно сжимаешь ее задницу обеими [pc.hands].
 		#IF(meraxis.isAssChanged())
-			 Having previously got her to transform her ass, you enjoy how large it feels, and after sliding your hands over the chuuni [meraxis.race]'s very wide hips, you've got her panting and lewdly pushing her ass back against your touch.
-		#ELSE
-			 Meraxis has a small, flat ass, but despite its unimpressive size you still enjoy how it feels, and after sliding your hands over the chuuni [meraxis.race]'s girly hips, you've got her panting and pushing her ass out against your touch.
-		#ENDIF
+Ты уже заставил её изменить форму своей задницы и теперь наслаждаешься тем, какой огромной она стала; проведя ладонями по очень широким бёдрам этой чуни [meraxis.race], ты доводишь её до прерывистого дыхания, заставляя похотливо прижиматься задом к твоим рукам.		#ELSE
+У Мераксис маленькая и плоская попка, но, несмотря на её невпечатляющие размеры, тебе всё равно нравится, как она ощущается; проведя руками по девичьих бёдрах этой чуни [meraxis.race], ты заставляешь её тяжело дышать и выпячивать задницу тебе навстречу.		#ENDIF
 		#IF(game.isAnalContentEnabled())
-			 Gripping her cheeks, you gently pull them apart, before sliding your [pc.fingers+] down over the thin material of her dress to tease her asshole.
+			 Схватив ее за щеки, ты осторожно разводишь их в стороны, а затем проводишь своим [pc.fingers+] по тонкой ткани ее платья, дразня ее анус.
 		#ENDIF
 	</p>
 	<p>
-		[meraxis.speech(That's it... ~Mmm!~ Perhaps we could even...)] Meraxis starts to say, before abruptly pushing you away from her and jumping back. With her cheeks flushed bright red, she points at you and stammers, [meraxis.speech(Y-You almost defeated my psychological defences! As expected of my nemesis, but you shall not triumph this day! Now listen to what I have to say!)]
+		[meraxis.speech(Вот оно что... ~Ммм!~ А может быть, мы могли бы даже...)] — начинает было Мераксис, прежде чем резко оттолкнуть тебя и отпрыгнуть назад. С ярко-красными щеками она тычет в тебя пальцем и заикается: [meraxis.speech(Т-ты почти пробил мою психологическую защиту! Как и ожидалось от моего заклятого врага, но сегодня тебе не победить! А теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_ANILINGUS"><![CDATA[
 	<p>
-		Wanting to get intimate with Meraxis's asshole, you tell her that you're going to perform anilingus on her. With her cheeks burning a bright shade of red, the embarrassed [meraxis.race] reveals just how horny she is by grabbing hold of your [pc.hand] and leading you over behind a nearby tree. Without needing any more encouragement, she turns around and hikes up her dress, before shifting her panties aside and presenting you with her [meraxis.asshole+].
+		Желая приобщиться к анусу Мераксис, ты говоришь ей, что собираешься заняться анилингусом. С пылающими алым цветом щеками, смущенная [meraxis.race] демонстрирует, насколько она возбуждена, хватая тебя за [pc.hand] и увлекая за ближайшее дерево. Не нуждаясь в дальнейших уговорах, она поворачивается спиной и задирает платье, отодвигая трусики и подставляя тебе свою [meraxis.asshole+].
 	</p>
 	<p>
-		[meraxis.speech(This is what you want, right?)] she asks, turning her head back over her shoulder to see your reaction. Responding in the affirmative, you quickly [pc.step] forwards and drop down behind her, before leaning forwards and planting a big, wet kiss on her [meraxis.asshole+].
+		[meraxis.speech(Это ведь то, чего ты хочешь, да?)] — спрашивает она, оглядываясь через плечо, чтобы увидеть твою реакцию. Подтвердив её слова, ты быстро [pc.step] вперед и опускаешься позади неё, после чего наклоняешься и оставляешь долгий, влажный поцелуй на её [meraxis.asshole+].
 	</p>
 	<p>
-		[meraxis.speech(~Aah!~ Oh, yes... Come on, [pc.name]... Give it to me...)] Meraxis breathlessly pants. More than happy to do as she says, you take hold of her [meraxis.hips+] and shuffle forwards, before burying your face in her [meraxis.ass+] and starting to eagerly lick, kiss, and nuzzle into her [meraxis.asshole+]...
+		[meraxis.speech(~Аах!~ О, да... Давай, [pc.name]... Дай мне это...)] — прерывисто стонет Мераксис. С радостью исполняя её просьбу, ты берешь её за [meraxis.hips+] и подаешься вперед, после чего утыкаешься лицом в её [meraxis.ass+] и начинаешь жадно лизать, целовать и ласкать её [meraxis.asshole+]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_HOTDOGGING"><![CDATA[
 	<p>
-		Wanting to get intimate with Meraxis's ass, you tell her that you're going to hotdog her. With her cheeks burning a bright shade of red, the embarrassed [meraxis.race] reveals just how horny she is by grabbing hold of your [pc.hand] and leading you over behind a nearby tree. Without needing any more encouragement, she turns around and hikes up her dress, before shifting her panties aside and presenting you with her [meraxis.asshole+].
+		Желая приобщиться к заднице Мераксис, ты заявляешь, что собираешься устроить ей «хот-дог». С пылающими алым румянцем на щеках, смущенная [meraxis.race] демонстрирует, насколько она возбуждена, хватая тебя за [pc.hand] и увлекая за ближайшее дерево. Не нуждаясь в дальнейших уговорах, она поворачивается спиной и задирает платье, а затем отодвигает трусики, подставляя тебе свою [meraxis.asshole+].
 	</p>
 	<p>
-		[meraxis.speech(This is what you want, right?)] she asks, turning her head back over her shoulder to see your reaction.
+		[meraxis.speech(Это ведь то, чего ты хочешь, да?)] — спрашивает она, оглядываясь через плечо, чтобы увидеть твою реакцию.
 		#IF(pc.isTaur())
-			 Responding in the affirmative, you order Meraxis to get down on all fours, and after she's obediently done so, you [pc.step] over the top of her and slap your [pc.cock+] against her naked backside.
+			 Подтвердив свои намерения, ты приказываешь Мераксис встать на четвереньки, и когда она послушно это делает, ты [pc.step] сверху и шлепаешь своей [pc.cock+] по её голой заднице.
 		#ELSE
-			 Responding in the affirmative, you quickly [pc.step] forwards and slap your [pc.cock+] against her naked backside.
+			 Подтвердив свои намерения, ты быстро [pc.step] вперед и шлепаешь своей [pc.cock+] по её голой заднице.
 		#ENDIF
 	</p>
 	<p>
-		[meraxis.speech(~Aah!~ Oh, yes... Come on, [pc.name]... Give it to me...)] Meraxis breathlessly pants. More than happy to do as she says, you shuffle forwards and slide your [pc.cock+] up between her [meraxis.assSize] cheeks. Smirking at the horny moan that she lets out in response to this, you start to thrust forwards and backwards, rubbing your [pc.cock+] up and down over her [meraxis.asshole+] as you start to hotdog her...
+		[meraxis.speech(~Аах!~ О, да... Давай, [pc.name]... Дай мне это...)] — прерывисто стонет Мераксис. С радостью исполняя её желания, ты подаешься вперед и просовываешь свой [pc.cock+] между её [meraxis.assSize] ягодицами. Усмехаясь её похотливому стону, ты начинаешь двигаться вперед-назад, потирая свой [pc.cock+] вверх и вниз по её [meraxis.asshole+], начиная свой «хот-дог»...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_ANAL"><![CDATA[
 	<p>
-		Wanting to get intimate with Meraxis's ass, you tell her that you're going to fuck her asshole. With her cheeks burning a bright shade of red, the embarrassed [meraxis.race] reveals just how horny she is by grabbing hold of your [pc.hand] and leading you over behind a nearby tree. Without needing any more encouragement, she turns around and hikes up her dress, before shifting her panties aside and presenting you with her [meraxis.asshole+].
+		Желая приобщиться к заднице Мераксис, ты заявляешь ей, что собираешься трахнуть её в анус. Её щеки пылают ярко-красным цветом, и смущенная [meraxis.race], демонстрируя, насколько она возбуждена, хватает тебя за [pc.hand] и ведет за ближайшее дерево. Не нуждаясь в дальнейших уговорах, она поворачивается спиной и задирает платье, а затем отодвигает трусики, подставляя тебе свою [meraxis.asshole+].
 	</p>
 	<p>
-		[meraxis.speech(This is what you want, right?)] she asks, turning her head back over her shoulder to see your reaction.
+		[meraxis.speech(Это ведь то, чего ты хочешь, да?)] — спрашивает она, оглядываясь через плечо, чтобы увидеть твою реакцию.
 		#IF(pc.isTaur())
-			 Responding in the affirmative, you order Meraxis to get down on all fours, and after she's obediently done so, you [pc.step] over the top of her and slap your [pc.cock+] against her naked backside.
+			 Подтвердив свои намерения, ты приказываешь Мераксис встать на четвереньки, и когда она послушно это делает, ты [pc.step] сверху и шлепаешь своей [pc.cock+] по её голой заднице.
 		#ELSE
-			 Responding in the affirmative, you order Meraxis to get down on all fours, and after she's obediently done so, you drop down behind her and slap your [pc.cock+] against her naked backside.
+			Подтвердив свое согласие, ты приказываешь Мераксис встать на четвереньки, и когда она послушно это делает, ты опускаешься позади неё и хлопаешь своим [pc.cock+] по её голой заднице.
 		#ENDIF
 	</p>
 	<p>
 		#IF(meraxis.isAnalVirgin())
-			[meraxis.speech(~Aah!~ Oh, yes... Give it to me, [pc.name]... B-But I'm still an anal virgin, so be gentle...)] Meraxis breathlessly pants.
+			[meraxis.speech(~Аах!~ О, да... Дай мне это, [pc.name]... Н-но я всё еще анальная девственница, так что будь нежнее...)] — прерывисто стонет Мераксис.
 		#ELSE
-			[meraxis.speech(~Aah!~ Oh, yes... Come on, [pc.name]... Give it to me...)] Meraxis breathlessly pants.
+			[meraxis.speech(~Аах!~ О, да... Ну же, [pc.name]... Дай мне это...)] — прерывисто стонет Мераксис.
 		#ENDIF
-		 More than happy to do as she says, you shuffle forwards and press your [pc.cock+] against her [meraxis.asshole+]. Pushing forwards, you slowly force the [pc.cockHead+] of your throbbing shaft into the [meraxis.race]'s [meraxis.asshole+], causing her to squeal, [meraxis.speech(~Ooh!~ Fuck, yes! ~Mmm!~ That's it, fuck my ass!)]
+			С радостью повинуясь её просьбе, ты подаешься вперед и прижимаешь свой [pc.cock+] к её [meraxis.asshole+]. Толкаясь вперед, ты медленно втискиваешь [pc.cockHead+] своего пульсирующего члена в [meraxis.asshole+] её [meraxis.race], заставляя её взвизгнуть: [meraxis.speech(~Ооо!~ Блядь, да! ~Ммм!~ Вот так, трахай мой зад!)]
 	</p>
 	<p>
-		Needing no further encouragement, you thrust forwards and sink your [pc.cock+] into Meraxis's ass, and as you start to fuck her [meraxis.asshole+], she starts to let out a series of ecstatic moans, pants, and squeals...
+		Больше не нуждаясь в уговорах, ты мощно толкаешься вперед и погружаешь свой [pc.cock+] в задницу Мераксис, и как только ты начинаешь трахать её [meraxis.asshole+], она издает череду экстатических стонов, тяжелое дыхание и визги...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_ANILINGUS"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and reaches around to experimentally touch her saliva-coated asshole. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отступает назад и, пробуя на ощупь, касается своего покрытого слюной ануса. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_HOTDOGGING"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and reaches around to rub her ass. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отступает назад и начинает потирать задницу. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_ANAL"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and reaches around to experimentally touch her well-fucked asshole. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отступает назад и, пробуя на ощупь, касается своего изрядно оттраханного ануса. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
@@ -914,24 +909,24 @@
 	
 	<htmlContent tag="WON_SEX_KISS"><![CDATA[
 	<p>
-		Wanting something a little more than a hug or hand-holding, you tell Meraxis that you'd like to kiss her. Shuffling her feet, she blushes and mutters, [meraxis.speech(F-Fine... You can kiss me...)]
+		Желая чего-то большего, чем просто объятия или держание за руки, ты говоришь Меракс, что хочешь её поцеловать. Переминаясь с ноги на ногу, она краснеет и бормочет: [meraxis.speech(Х-хорошо... Можешь меня поцеловать...)]
 	</p>
 	<p>
-		[pc.Stepping] towards Meraxis, you lean forwards and press your [pc.lips+] against hers.
+		[pc.Stepping] к Меракс, ты наклоняешься вперед и прижимаешь свой [pc.lips+] к её.
 	</p>
 	<p>
 		#IF(meraxis.isMouthChanged())
-			 Having previously instructed Meraxis to transform her mouth, you enjoy how her wet, plump lips feel as they press against your mouth.
+			 Поскольку ты заранее велел Меракс изменить форму рта, ты наслаждаешься тем, какими влажными и пухлыми ощущаются её губы, прижимающиеся к твоим.
 		#ELSE
-			 Meraxis lets out a muffled moan as you start kissing her, and leans into you as the two of you continue pressing your lips against one another.
+			 Меракс издает приглушенный стон, когда ты начинаешь её целовать, и прижимается к тебе, пока вы продолжаете терзать друг друга поцелуями.
 		#ENDIF
 	</p>
 	<p>
-		After only a few moments of kissing, and having not even used your tongues, Meraxis starts letting out a series of incredibly lewd noises. Before you can decide how to respond to her horny behaviour, she suddenly pulls back and breathlessly pants,
+		Спустя всего несколько мгновений поцелуев, когда вы даже не успели задействовать языки, Меракс начинает издавать невероятно похотливые звуки. Прежде чем ты успеваешь решить, как ответить на её возбужденное поведение, она внезапно отстраняется и, задыхаясь, произносит:
 		#IF(flags.hasFlag(FLAG_innoxia_meraxis_oral_unlocked))
-			 [meraxis.speech(Come on then, [pc.name]. You want to do oral stuff, don't you?)]
+			 [meraxis.speech(Ну же, [pc.name]. Ты ведь хочешь отсосать, правда?)]
 		#ELSE
-			 [meraxis.speech(Give me more, [pc.name]! Come on, I want to really make out with you...)]
+			 [meraxis.speech(Дай мне еще, [pc.name]! Ну же, я хочу по-настоящему зацеловаться с тобой...)]
 		#ENDIF
 	</p>
 	]]>
@@ -939,99 +934,99 @@
 	
 	<htmlContent tag="WON_SEX_KISS_FINISHED"><![CDATA[
 	<p>
-		Deciding that you don't want to do anything too lewd with Meraxis, you simply plant another wet kiss on her lips, before [pc.stepping] back and putting an end to your physical contact. Cutting off her disappointed moan, you offer the cute [meraxis.race] a compliment on her appearance and say that simply being able to kiss her was enough for you.
+		Решив, что не хочешь заходить слишком далеко в своих ласках с Мераксис, ты просто оставляешь еще один влажный поцелуй на ее губах, а затем [pc.stepping] назад, прекращая физический контакт. Прервав ее разочарованный стон, ты делаешь милой [meraxis.race] комплимент по поводу ее внешности и говоришь, что одного лишь возможности целовать ее тебе вполне достаточно.
 	</p>
 	<p>
-		[meraxis.speech(W-Why are you saying all these embarrassing things?!)] Meraxis cries out in response to your compliments. With her cheeks flushing bright red, she can't help but smile as she looks down at the ground and shuffles her feet. Before you can say anything, she suddenly seems to realise what she's doing and covers up her embarrassment by striking a heroic pose and declaring, [meraxis.speech(Y-You shall not trick me so easily, my nemesis! I am immune to all forms of psychological attack; your efforts are wasted on me! Mwhahaha! N-Now listen to what I have to say!)]
+		[meraxis.speech(П-почему ты несешь всю эту смущающую чепуху?!)] — вскрикивает Мераксис в ответ на твои комплименты. Ее щеки заливаются ярко-красным румянцем, и она не может сдержать улыбку, глядя в землю и переминаясь с ноги на ногу. Прежде чем ты успеваешь что-то сказать, она внезапно осознает, как выглядит, и пытается скрыть смущение, принимая героическую позу и провозглашая: [meraxis.speech(Т-тебе не обмануть меня так просто, мой заклятый враг! Я неуязвима для любых видов психологических атак; твои усилия напрасны! Мва-ха-ха! А-а теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_KISS_MAKE_OUT"><![CDATA[
 	<p>
-		Taking hold of Meraxis, you pull her into your embrace, before planting your [pc.lips+] against hers and starting to passionately make out with her.
+		Притянув Мераксис к себе, ты заключаешь ее в объятия, прижимаешь свои [pc.lips+] к ее губам и начинаешь страстно целоваться.
 		#IF(meraxis.isMouthChanged())
-			 In response, the horny [meraxis.race] parts her huge, puffy lips and lewdly slides her long, wet tongue into your mouth, before starting to desperately grind up against you.
+			 В ответ похотливая [meraxis.race] размыкает свои огромные, пухлые губы и бесстыдно просовывает длинный влажный язык тебе в рот, после чего начинает отчаянно тереться о тебя всем телом.
 		#ELSE
-			 In response, the horny [meraxis.race] parts her lips and lewdly slides her tongue into your mouth, before starting to desperately grind up against you.
+			 В ответ похотливая [meraxis.race] размыкает губы и бесстыдно просовывает язык тебе в рот, после чего начинает отчаянно тереться о тебя всем телом.
 		#ENDIF
 	</p>
 	<p>
-		For the next several minutes, the two of you continue making out with one another. Sliding your tongues into each other's mouths, each of your lips are soon coated in a copious amount of saliva. Breaking off your kiss, Meraxis moans, [meraxis.speech(That's it... ~Mmm!~ Perhaps we could even...)]
+		В течение следующих нескольких минут вы продолжаете страстно целоваться. Когда ваши языки переплетаются во рту, ваши губы вскоре покрываются обильным слоем слюны. Прервав поцелуй, Мераксис стонет: [meraxis.speech(Вот так... ~Ммм!~ А может, мы могли бы даже...)]
 	</p>
 	<p>
-		At that moment, the horny [meraxis.race] abruptly pushes you away from her and jumps back. With her cheeks flushed bright red, she points at you and stammers, [meraxis.speech(Y-You almost defeated my psychological defences! As expected of my nemesis, but you shall not triumph this day! Now listen to what I have to say!)]
+		В этот момент возбужденная [meraxis.race] резко отталкивает тебя и отпрыгивает назад. С ярко-красными щеками она указывает на тебя и заикается: [meraxis.speech(Т-ты почти пробил мою психологическую защиту! Как и ожидалось от моего заклятого врага, но сегодня тебе не победить! А теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_CUNNILINGUS"><![CDATA[
 	<p>
-		Wanting to get intimate with Meraxis's pussy, you tell her that you're going to perform cunnilingus on her. With her cheeks burning a bright shade of red, the embarrassed [meraxis.race] reveals just how horny she is by grabbing hold of your [pc.hand] and leading you over behind a nearby tree. Without needing any more encouragement, she hikes up her dress and shifts her panties aside, presenting you with her
+		Желая прикоснуться к киске Меракс, ты говоришь ей, что собираешься заняться куннилингусом. С пылающими алым румянцем на щеках, смущенная [meraxis.race] выдает свое нетерпение, хватая тебя за [pc.hand] и увлекая за ближайшее дерево. Не нужно больше никаких уговоров: она задирает платье и отодвигает трусики, подставляя тебе свою
 		#IF(meraxis.isPussyChanged())
-			 pussy. Having previously instructed her to transform her cunt, you see that Meraxis has [meraxis.labiaSize] labia, and a slimy stream of girlcum is practically drooling from out of her slightly-loose orifice.
+			 киску. Поскольку ты ранее велел ей изменить форму своего лона, ты видишь, что у Меракс [meraxis.labiaSize] половые губы, а из её слегка расслабленного отверстия практически течет слизистая струйка девичьей смазки.
 		#ELSE
-			 [meraxis.pussyCapacity], cute pussy.
+			 [meraxis.pussyCapacity], милая киска.
 		#ENDIF
 	</p>
 	<p>
-		[meraxis.speech(This is what you want, right?)] she asks. Responding in the affirmative, you quickly [pc.step] forwards and drop down in front of her, before leaning forwards and planting a big, wet kiss on her [meraxis.pussy+].
+		[meraxis.speech(Ты ведь этого хочешь, да?)] — спрашивает она. Ответив утвердительно, ты быстро [pc.step] вперед и опускаешься перед ней на колени, после чего наклоняешься и даришь ей долгий, влажный поцелуй в [meraxis.pussy+].
 	</p>
 	<p>
-		[meraxis.speech(~Aah!~ Oh, yes... Come on, [pc.name]... Give it to me...)] Meraxis breathlessly pants. More than happy to do as she says, you take hold of her [meraxis.hips+] and shuffle forwards, before burying your face between her thighs and starting to eagerly lick, kiss, and nuzzle into her [meraxis.pussy+]...
+		[meraxis.speech(~Аах!~ О, да... Давай, [pc.name]... Дай мне это...~)] — прерывисто стонет Меракс. С радостью исполняя её желание, ты берешь её [meraxis.hips+] и подаешься вперед, после чего утыкаешься лицом между её бедер и начинаешь жадно лизать, целовать и ласкать её [meraxis.pussy+]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_CUNNILINGUS_RECEIVE"><![CDATA[
 	<p>
-		Wanting Meraxis to service your pussy with her tongue, you tell her that you want her to have a go at performing cunnilingus.
+		Желая, чтобы Меракс обслуживала твою киску своим языком, ты говоришь ей, что хочешь, чтобы она занялась куннилингусом.
 		#IF(pc.isTaur())
-			 Exposing your [pc.pussy+], you turn around and present Meraxis with your rear-end, before looking back over your shoulder and asking her if she likes the look of your [pc.legRace] pussy.
+			 Обнажив свою [pc.pussy+], ты поворачиваешься задом к Меракс, а затем оглядываешься через плечо и спрашиваешь, нравится ли ей вид твоей [pc.legRace] киски.
 		#ELSE
-			 Exposing your [pc.pussy+], you present yourself to Meraxis and ask her if she's ready to get started.
+			 Обнажив свой [pc.pussy+], ты предстаешь перед Мераксис и спрашиваешь, готова ли она начать.
 		#ENDIF
-		  Hungrily staring at your [pc.pussy+], the chuuni [meraxis.race] drops down and plants a quick kiss on your [pc.labia+], before replying, [meraxis.speech(Yes... ~Mmm!~ Let me just do it like this...)]
+		  Голодно уставившись на твой [pc.pussy+], чунибьянка [meraxis.race] опускается на колени и быстро целует твой [pc.labia+], прежде чем ответить: [meraxis.speech(Да... ~Ммм!~ Дай мне просто сделать это вот так...)]
 	</p>
 	<p>
-		Letting out a delighted [pc.moan] in response to her oral attention, you push your groin out against Meraxis's face. Encouraged by your enthusiasm, she slides her [meraxis.tongue+] over your [pc.labia+], before pressing forwards and sinking it into your [pc.pussy+]. Caught out by her sudden move, you gasp and squeal, [pc.speech(~Aah!~ Oh, fuck! Yes! ~Mmm!~ Keep going... Yes... More!)]
+		Издавая восторженный [pc.moan] в ответ на ее оральные ласки, ты подаешься пахом навстречу лицу Мераксис. Воодушевленная твоим энтузиазмом, она проводит своим [meraxis.tongue+] по твоему [pc.labia+], а затем подается вперед и заглатывает его в твой [pc.pussy+]. Застигнутый врасплох ее резким движением, ты ахаешь и визжишь: [pc.speech(~Аах!~ Ох, бля! Да! ~Ммм!~ Продолжай... Да... Еще!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_BLOWJOB"><![CDATA[
 	<p>
-		Wanting Meraxis to service your cock with her mouth, you tell her that you want her to have a go at giving you a blowjob.
+		Желая, чтобы Мераксис обслуживала твой член ртом, ты говоришь ей, что хочешь, чтобы она сделала тебе минет.
 		#IF(pc.isTaur())
-			 Exposing your [pc.cock+], you turn to one side and present it to Meraxis, before turning your head towards her and asking if she likes the look of your [pc.legRace] cock.
+			 Обнажив свой [pc.cock+], ты поворачиваешься боком, подставляя его Мераксис, а затем поворачиваешь голову к ней и спрашиваешь, нравится ли ей вид твоего [pc.legRace] члена.
 		#ELSE
-			 Exposing your [pc.cock+], you present yourself to Meraxis and ask her if she's ready to get started.
+			 Обнажив свой [pc.cock+], ты предстаешь перед Мераксис и спрашиваешь, готова ли она начать.
 		#ENDIF
-		 Hungrily staring at your [pc.cock+], the chuuni [meraxis.race] drops down onto her knees, before reaching forwards and planting a quick kiss on your throbbing length. After letting out a horny moan, she pants, [meraxis.speech(Yes... ~Mmm!~ Let me just do it like this...)]
+		 Голодно уставившись на твой [pc.cock+], чунибьянка [meraxis.race] опускается на колени, после чего тянется вперед и быстро целует твой пульсирующий член. Издав похотливый стон, она тяжело дышит: [meraxis.speech(Да... ~Ммм!~ Дай мне просто сделать это вот так...)]
 	</p>
 	<p>
-		Letting out a delighted [pc.moan] in response to her oral attention, you push your groin out against Meraxis's face. Encouraged by your enthusiasm, she parts her [meraxis.lip+] and takes the [pc.cockHead+] of your erect shaft into her mouth, before pressing forwards and starting to eagerly give you a blowjob. Caught out by her sudden move, you [pc.moan], [pc.speech(~Aah!~ Oh, fuck! Yes! ~Mmm!~ Keep going... Yes... More!)]
+		Издавая восторженный [pc.moan] в ответ на её ласки губами, ты подаешься пахом вперед, упираясь в лицо Меракс. Воодушевленная твоим энтузиазмом, она размыкает свои [meraxis.lip+] и принимает [pc.cockHead+] твоего эрегированного члена в рот, после чего подается вперед и с жадностью принимается отсасывать тебе. Застигнутый врасплох её внезапным движением, ты [pc.moan], [pc.speech(~Аах!~ Ох, блядь! Да! ~Ммм!~ Продолжай... Да... Еще!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_CUNNILINGUS"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and reaches down to experimentally touch her saliva-coated pussy. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отстраняется и тянется вниз, чтобы экспериментально коснуться своей покрытой слюной киски. Достав салфетку, она начинает вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_CUNNILINGUS_RECEIVE"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and licks her [meraxis.lips+]. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отстраняется и облизывает свою [meraxis.lips+]. Достав салфетку, она начинает вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_BLOWJOB"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and licks her [meraxis.lips+]. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отстраняется и облизывает свою [meraxis.lips+]. Достав салфетку, она начинает вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
@@ -1040,76 +1035,76 @@
 	
 	<htmlContent tag="WON_SEX_FLASH_BREASTS"><![CDATA[
 	<p>
-		Knowing that Meraxis is really quite fond of you, you think that you'll be able to get away with asking something quite demanding of her. Pointedly looking down at her
+		Зная, что Меракс к тебе очень расположена, ты решаешь, что сможешь позволить себе попросить её о чем-то весьма требовательном. Намеренно глядя на её
 		#IF(meraxis.getBreastRawSizeValue()>5)
-			 large boobs,
+			 пышную грудь,
 		#ELSE
-			 flat chest,
+			 плоскую грудь,
 		#ENDIF
-		 you tell Meraxis that you want to see her naked breasts. As she hears what it is you're asking of her, Meraxis's cheeks flush a bright shade of red, and she pants, [meraxis.speech(M-My naked breasts? You're so lewd, [pc.name]...)]
+		 ты говоришь Меракс, что хочешь увидеть её обнаженную грудь. Услышав твою просьбу, Меракс заливается ярко-красным румянцем и часто дышит, [meraxis.speech(М-моя обнаженная грудь? Ты такой похотливый, [pc.name]...)]
 	</p>
 	<p>
-		With her cheeks continuing to burn a bright shade of red, the embarrassed [meraxis.race] reveals just how horny she is by grabbing hold of your [pc.hand] and leading you over behind a nearby tree. Without needing any more encouragement, she turns around and swiftly strips out of her dress and cape, before taking off her bra and revealing her tits.
+		Её щеки пылают ярко-алым цветом, и смущенная [meraxis.race], не скрывая своего возбуждения, хватает тебя за [pc.hand] и уводит за ближайшее дерево. Больше не нужно никаких уговоров: она резко разворачивается и быстро скидывает платье и плащ, а затем стягивает лифчик, обнажая свою грудь.
 	</p>
 	<p>
 		#IF(meraxis.getBreastRawSizeValue()>5)
-			Although Meraxis once had an almost completely flat chest, you find yourself looking at a pair of round, [meraxis.cupSize]-cup boobs. Her large nipples and areolae make her breasts look very lewd, and you find yourself getting turned on by the sight of them.
+			Хотя когда-то грудь Мераксис была почти плоской, сейчас перед тобой пара округлых сисек [meraxis.cupSize]-го размера. Её крупные соски и ареолы делают грудь невероятно похотливой, и ты ловишь себя на мысли, что этот вид чертовски тебя заводит.
 		#ELSE
-			Having an almost completely-flat chest, you find yourself looking at a pair of round, [meraxis.cupSize]-cup boobs. Despite their tiny size, Meraxis's big nipples and areolae make her breasts look quite lewd, and you find yourself getting turned on by the sight of them.
+			Несмотря на то, что раньше её грудь была почти плоской, сейчас перед тобой пара округлых сисек [meraxis.cupSize]-го размера. При всей их миниатюрности, крупные соски и ареолы Мераксис делают её грудь очень соблазнительной, и ты чувствуешь, как возбуждаешься от одного только взгляда на них.
 		#ENDIF
-		 Biting her lip and continuing to blush, the horny [meraxis.race] asks, [meraxis.speech(So, is this all you wanted? I-I mean, you could ask for more if you want...)]
+		 Прикусив губу и продолжая краснеть, похотливая [meraxis.race] спрашивает: [meraxis.speech(Ну что, это всё, чего ты хотел? В-в смысле, ты можешь попросить о большем, если хочешь...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_FLASH_BREASTS_FINISHED"><![CDATA[
 	<p>
-		Deciding that you don't want to do anything too lewd with Meraxis, you simply take a moment to stare at her [meraxis.boobs+], before telling her that you don't want to go any further. Cutting off her disappointed moan, you offer the cute [meraxis.race] a compliment on her breasts' appearance and say that simply being able to admire them was enough for you.
+		Решив, что не хочешь заходить слишком далеко в своих ласках с Мераксис, ты просто замираешь, любуясь её [meraxis.boobs+], а затем говоришь ей, что не готов продолжать. Прервав её разочарованный стон, ты делаешь милой [meraxis.race] комплимент её груди, признаваясь, что одного возможности любоваться ею тебе вполне достаточно.
 	</p>
 	<p>
-		[meraxis.speech(W-Why are you saying all these embarrassing things?!)] Meraxis cries out in response to your compliments. With her cheeks flushing bright red, she can't help but smile as she looks down at the ground and shuffles her feet. Before you can say anything, she suddenly seems to realise what she's doing and covers up her embarrassment by striking a heroic pose and declaring, [meraxis.speech(Y-You shall not trick me so easily, my nemesis! I am immune to all forms of psychological attack; your efforts are wasted on me! Mwhahaha! N-Now listen to what I have to say!)]
+		[meraxis.speech(П-почему ты несешь всю эту смущающую чепуху?!)] — вскрикивает Мераксис в ответ на твои комплименты. Ее щеки заливаются ярко-красным румянцем, и она не может сдержать улыбку, глядя в землю и переминаясь с ноги на ногу. Прежде чем ты успеваешь что-то сказать, она внезапно осознает, как выглядит, и пытается скрыть смущение, принимая героическую позу и провозглашая: [meraxis.speech(Т-тебе не обмануть меня так просто, мой заклятый враг! Я неуязвима для любых видов психологических атак; твои усилия напрасны! Мва-ха-ха! А-а теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_FLASH_BREASTS_PLAY"><![CDATA[
 	<p>
-		Wanting Meraxis to put on a show, you tell her to start playing with her breasts. Despite furiously blushing and mumbling something about how lewd you are, she swiftly does as you say.
+		Желая, чтобы Меракси устроила тебе шоу, ты велено ей начать ласкать свою грудь. Несмотря на яростный румянец и бормотание о том, какой ты похотливый, она быстро исполняет твою просьбу.
 		#IF(meraxis.getBreastRawSizeValue()>5)
-			 Reaching up to her large, [meraxis.cupSize]-cup boobs, she hefts them in both hands, before squishing them together and then starting to play with her nipples.
+			Подняв руки к своим пышным грудям [meraxis.cupSize]-го размера, она обхватывает их обеими ладонями, сжимает их вместе, а затем принимается играть с сосками.
 		#ELSE
-			 Reaching up to her tiny, [meraxis.cupSize]-cup boobs, she does her best to cup them in her hands, and after fruitlessly trying to squish them together, she moves on to play with her big nipples.
+			Подняв руки к своей крошечной груди [meraxis.cupSize]-го размера, она изо всех сил пытается обхватить её ладонями, но, тщетно пытаясь сжать её, переходит к ласкам своих больших сосков.
 		#ENDIF
 	</p>
 	<p>
-		For the next couple of minutes, Meraxis continues playing with her [meraxis.breasts+] while you watch. Teasing her nipples, she playfully pinches them and moans, [meraxis.speech(So you like this kind of thing... ~Mmm!~ Perhaps you could...)]
+		В течение следующих пары минут Меракси продолжает ласкать свою [meraxis.breasts+] под твоим пристальным взглядом. Игриво щипая соски и стоная, она произносит: [meraxis.speech(Значит, тебе нравится такое... ~Ммм!~ Может быть, ты мог бы...)]
 	</p>
 	<p>
-		At that moment, the horny [meraxis.race] abruptly stops playing with her breasts and jumps back. With her cheeks flushed bright red, she starts hastily pulling her clothes back on and stammers, [meraxis.speech(Y-You almost defeated my psychological defences! As expected of my nemesis, but you shall not triumph this day! Now listen to what I have to say!)]
+		В этот момент возбужденная [meraxis.race] внезапно прекращает ласкать грудь и отпрыгивает назад. С ярко-красными щеками она начинает поспешно натягивать одежду обратно и заикается: [meraxis.speech(Т-ты почти пробил мою психологическую защиту! Как и ожидалось от моего заклятого врага, но сегодня тебе не победить! А теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_PLAY_BREASTS_MASTURBATE"><![CDATA[
 	<p>
-		Wanting Meraxis to put on a show, you tell her to start playing with her breasts so that you can masturbate to the sight of them. Immediately upon hearing this, the [meraxis.race]'s cheeks flush red, and she stammers, [meraxis.speech(Y-You want to do what? You're so lewd, [pc.name]... I-I guess I don't really mind though, seeing as it's you...)]
+		Желая, чтобы Меракси устроила тебе шоу, ты велено ей начать ласкать свою грудь, чтобы ты мог мастурбировать, глядя на это. Услышав такое, щеки [meraxis.race] мгновенно заливаются краской, и она заикается: [meraxis.speech(Т-ты хочешь что сделать? Какой же ты похотливый, [pc.name]... Х-хотя, пожалуй, я не против, раз уж это ты...)]
 	</p>
 	<p>
 		#IF(meraxis.getBreastRawSizeValue()>5)
-			Reaching up to her large, [meraxis.cupSize]-cup boobs, she hefts them in both hands, before squishing them together and then starting to play with her nipples.
+			Она подносит руки к своей пышной груди [meraxis.cupSize] размера, обхватывает её обеими ладонями, сжимает соски вместе, а затем принимается ими ласкать.
 		#ELSE
-			Reaching up to her tiny, [meraxis.cupSize]-cup boobs, she does her best to cup them in her hands, and after fruitlessly trying to squish them together, she moves on to play with her big nipples.
+			Она подносит руки к своей крошечной груди [meraxis.cupSize] размера, изо всех сил пытаясь обхватить её ладонями, но, тщетно попытавшись сжать соски вместе, переходит к их ласкам.
 		#ENDIF
 		#IF(pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
 			#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-				 Exposing your [pc.cock+] and [pc.pussy+], you start touching yourself as you watch Meraxis putting on this show for you...
+				 Обнажив свои [pc.cock+] и [pc.pussy+], ты начинаешь ласкать себя, наблюдая за тем, как Мераксис устраивает это шоу специально для тебя...
 			#ELSE
-				 Exposing your [pc.cock+], you start touching yourself as you watch Meraxis putting on this show for you...
+				 Обнажив свои [pc.cock+], ты начинаешь ласкать себя, наблюдая за тем, как Мераксис устраивает это шоу специально для тебя...
 			#ENDIF
 		#ELSEIF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			  Exposing your [pc.pussy+], you start touching yourself as you watch Meraxis putting on this show for you...
+			  Обнажив свои [pc.pussy+], ты начинаешь ласкать себя, наблюдая за тем, как Мераксис устраивает это шоу специально для тебя...
 		#ELSE
-			 Watching Meraxis as she puts on this show for you,
+			 Наблюдая за тем, как Мераксис устраивает это шоу для тебя,
 		#ENDIF
 	</p>
 	]]>
@@ -1117,64 +1112,64 @@
 	
 	<htmlContent tag="WON_SEX_PLAY_BREASTS_KISSING"><![CDATA[
 	<p>
-		Wanting to have some fun with Meraxis's [meraxis.breasts+], you [pc.step] forwards and tell her that you're going to give them the love they deserve. Blushing as she realises what it is that you want to do, the embarrassed [meraxis.race] pushes out her chest and pants, [meraxis.speech(Go on then... You can do what you want...)]
+		Желая немного развлечься с [meraxis.breasts+] Мераксис, ты [pc.step] вперёд и говоришь ей, что собираешься подарить им всю ту любовь, которую они заслуживают. Покраснев от осознания твоих намерений, смущённая [meraxis.race] выпячивает грудь и тяжело дышит, [meraxis.speech(Ну же... Делай всё, что хочешь...)]
 	</p>
 	<p>
-		Not needing any further encouragement, you drop your mouth down to Meraxis's chest and deliver a big kiss to each of her [meraxis.breasts+].
+		Больше не нуждаясь в словах, ты припадаешь губами к груди Мераксис и жадно целуешь каждую её [meraxis.breasts+].
 		#IF(meraxis.getBreastRawSizeValue()>5)
-			 Letting out a sensual moan, she pushes her large boobs out towards you, and reaches up to hold the top of your head as you start to kiss and suck on her large nipples.
+			 Издав чувственный стон, она выставляет свою пышную грудь тебе навстречу и обхватывает твою голову руками, когда ты начинаешь целовать и посасывать её большие соски.
 		#ELSE
-			 Letting out a sensual moan, she pushes her flat chest out towards you, and reaches up to hold the top of your head as you start to kiss and suck on her big nipples.
+			Издавая чувственный стон, она выпячивает свою плоскую грудь навстречу тебе и обхватывает макушку твоей головы, пока ты начинаешь целовать и сосать её большие соски.
 		#ENDIF
 		#IF(meraxis.isLactating())
-			 As a few drops of milk seep out of her teats and enter your mouth,
+			Когда несколько капель молока просачиваются из её сосков тебе в рот,
 		#ELSE
-			 As you continue to suck on her teats,
+			Пока ты продолжаешь сосать её соски,
 		#ENDIF
-		 Meraxis excitedly moans, [meraxis.speech(~Ooh!~ That's it! Don't stop!)]
+		 Мераксис возбужденно стонет, [meraxis.speech(~Ох!~ Вот так! Не останавливайся!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_PLAY_BREASTS_FUCK"><![CDATA[
 	<p>
-		Wanting to have some fun with Meraxis's [meraxis.breasts+], you expose your [pc.cock+] and [pc.step] forwards to tell her that you want her to give you a titjob. Furiously blushing as she hears you say this, the embarrassed [meraxis.race] pants, [meraxis.speech(O-Ok... I can do that...)]
+		Желая немного развлечься с [meraxis.breasts+] Мераксис, ты выставляешь свои [pc.cock+] и [pc.step] вперед, давая ей понять, что хочешь, чтобы она отсосала тебе грудью. Яростно краснея от твоих слов, смущенная [meraxis.race] тяжело дышит, [meraxis.speech(Х-хорошо... Я могу это сделать...)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Moving around and dropping down to her knees beneath your [pc.legRace] body,
+			Двигаясь и опускаясь на колени перед твоим [pc.legRace] телом,
 		#ELSE
-			Dropping down onto her knees in front of you,
+			Опускаясь на колени перед тобой,
 		#ENDIF
 		#IF(meraxis.isBreastFuckablePaizuri())
-			 Meraxis repositions herself so that her large tits are at roughly the same level as your cock. Pressing them together, she forms a decent amount of cleavage, into which she guides your [pc.cock+]. Letting out a horny moan, she then starts moving up and down in order to give you a titjob, and pants, [meraxis.speech(Your cock feels so good... That's it, get nice and hard for me...)]
+		 Мераксис устраивается так, чтобы её огромные сиськи были примерно на одном уровне с твоим членом. Сжимая их вместе, она образует глубокую ложбинку, в которую направляет твой [pc.cock+]. Издав похотливый стон, она начинает двигаться вверх-вниз, чтобы сделать тебе титджоб, и тяжело дышит: [meraxis.speech(Твой член такой классный... Вот так, стань хорошенько твердым для меня...)]
 		#ELSE
-			 Meraxis repositions herself so that her flat chest is at roughly the same level as your cock. Doing her best to press them together, she fails to form any amount of cleavage, and has to resort to simply rubbing your [pc.cock+] over her exposed chest. Letting out a horny moan, she then starts moving up and down in order to give you her interpretation of a titjob, and pants, [meraxis.speech(Your cock feels so good... That's it, get nice and hard for me...)]
+			 Мераксис перестраивается так, чтобы её плоская грудь оказалась примерно на одном уровне с твоим членом. Она изо всех сил пытается прижать их друг к другу, но ей никак не удается создать хоть какую-то ложбинку, поэтому ей приходится просто тереть твой [pc.cock+] о свою обнаженную грудь. Издав похотливый стон, она начинает двигаться вверх и вниз, пытаясь исполнить свою версию минета грудью, и тяжело дышит: [meraxis.speech(Твой член такой классный... Вот так, становись еще тверже для меня...)]
 		#ENDIF
 	</p>
 	<p>
-		Letting out [pc.a_moan] of your own, you concentrate on the enjoyable feeling of Meraxis's [meraxis.breasts+] rubbing against your [pc.cock+]...
+		Издавая свой собственный [pc.a_moan], ты концентрируешься на приятном ощущении от того, как [meraxis.breasts+] Мераксис трется о твой [pc.cock+]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_MASTURBATION_BREASTS"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and flashes you a dirty grin. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Мераксис отступает назад и одаривает тебя грязной ухмылкой. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_BREASTS_KISSING"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and flashes you a dirty grin. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Мераксис отступает назад и одаривает тебя грязной ухмылкой. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_BREAST_FUCK"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and flashes you a dirty grin. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Мераксис отступает назад и одаривает тебя грязной ухмылкой. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
@@ -1183,141 +1178,141 @@
 	
 	<htmlContent tag="WON_SEX_FLASH_PUSSY"><![CDATA[
 	<p>
-		Knowing that Meraxis is really quite fond of you, you think that you'll be able to get away with asking something quite demanding of her. Pointedly looking down at her groin, you tell her to hike up her dress and drop her panties so that you can get a good look at her pussy. With her cheeks burning a bright shade of red, the embarrassed [meraxis.race] reveals just how horny she is by grabbing hold of your [pc.hand] and leading you over behind a nearby tree. Without needing any more encouragement, she displaces her clothing as you've instructed, presenting you with her
+		Понимая, что Мераксис к тебе не прочь привязаться, ты решаешь, что можешь позволить себе весьма дерзкую просьбу. Многозначительно глядя ей в пах, ты приказываешь ей задрать платье и спустить трусики, чтобы ты мог хорошенько рассмотреть её киску. С пылающими алым цветом щеками, смущенная [meraxis.race] демонстрирует, насколько она возбуждена, хватая тебя за [pc.hand] и увлекая за ближайшее дерево. Больше не нужно никаких уговоров: она сбрасывает одежду, как ты и велел, являя тебе свою...
 		#IF(meraxis.isPussyChanged())
-			 pussy. Having previously instructed her to transform her cunt, you see that Meraxis has [meraxis.labiaSize] labia, and a slimy stream of girlcum is practically drooling from out of her slightly-loose orifice.
+			 киску. Поскольку ты ранее велел ей изменить форму своего лона, ты видишь, что у Меракс [meraxis.labiaSize] половые губы, а из её слегка расслабленного отверстия практически течет слизистая струйка девичьей смазки.
 		#ELSE
-			 [meraxis.pussyCapacity], cute pussy.
+			 [meraxis.pussyCapacity], милая киска.
 		#ENDIF
 	</p>
 	<p>
-		[meraxis.speech(This is what you want, right?)] she asks. Responding in the affirmative, you look down at her exposed cunt and tell her that the sight of it is turning you on. Letting out a little moan as you say this, Meraxis offers, [meraxis.speech(I-I guess I could do a little more than just show it to you...)]
+		[meraxis.speech(Это ведь то, чего ты хочешь?)] — спрашивает она. Подтвердив её догадку, ты смотришь на её обнаженную киску и говоришь, что этот вид заводит тебя. Издав тихий стон на твои слова, Мераксис предлагает: [meraxis.speech(Я... я, пожалуй, могу сделать нечто большее, чем просто показать её тебе...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_FLASH_PUSSY_FINISHED"><![CDATA[
 	<p>
-		Deciding that you don't want to do anything too lewd with Meraxis, you simply take a moment to stare at her [meraxis.pussy+], before telling her that you don't want to go any further. Cutting off her disappointed moan, you offer the cute [meraxis.race] a compliment on her pussy's appearance and say that simply being able to admire it was enough for you.
+		Решив, что не хочешь заходить слишком далеко с Мераксис, ты просто замираешь, любуясь её [meraxis.pussy+], а затем говоришь, что не намерен продолжать. Прервав её разочарованный стон, ты делаешь милой [meraxis.race] комплимент по поводу её киски, добавляя, что одного лишь возможности любоваться ею тебе вполне достаточно.
 	</p>
 	<p>
-		[meraxis.speech(W-Why are you saying all these embarrassing things?!)] Meraxis cries out in response to your compliments. With her cheeks flushing bright red, she can't help but smile as she looks down at the ground and shuffles her feet. Before you can say anything, she suddenly seems to realise what she's doing and covers up her embarrassment by striking a heroic pose and declaring, [meraxis.speech(Y-You shall not trick me so easily, my nemesis! I am immune to all forms of psychological attack; your efforts are wasted on me! Mwhahaha! N-Now listen to what I have to say!)]
+		[meraxis.speech(П-почему ты несешь всю эту смущающую чепуху?!)] — вскрикивает Мераксис в ответ на твои комплименты. Ее щеки заливаются ярко-красным румянцем, и она не может сдержать улыбку, глядя в землю и переминаясь с ноги на ногу. Прежде чем ты успеваешь что-то сказать, она внезапно осознает, как выглядит, и пытается скрыть смущение, принимая героическую позу и провозглашая: [meraxis.speech(Т-тебе не обмануть меня так просто, мой заклятый враг! Я неуязвима для любых видов психологических атак; твои усилия напрасны! Мва-ха-ха! А-а теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_FLASH_PUSSY_PLAY"><![CDATA[
 	<p>
-		Wanting Meraxis to put on a show, you tell her to start playing with her pussy. Despite furiously blushing and mumbling something about how lewd you are, she swiftly does as you say.
-		#IF(meraxis.isPussyChanged())
-			 Reaching down, she slowly slides her fingers over her large labia, and after she's spread her pussy lips to show off her [meraxis.pussyCapacity] cunt, you're able to see that she's producing a significant amount of slimy girlcum. As she plays with herself, this natural lubrication drools down over Meraxis's feminine fingers, allowing her to easily spread it over her clit. 
+		Желая, чтобы Мераксис устроила тебе настоящее шоу, ты велишь ей начать ласкать свою киску. Несмотря на яростный румянец и бормотание о том, какой же ты развратник, она быстро исполняет твою волю.
+			#IF(meraxis.isPussyChanged())
+			 Протянув руку вниз, она медленно ведет пальцами по своим крупным половым губам, и когда она раздвигает их, чтобы продемонстрировать свою [meraxis.pussyCapacity] щелку, ты видишь, что она выделяет изрядное количество скользкой смазки. Пока она ласкает себя, эта естественная влага стекает по женским пальцам Мераксис, позволяя ей с легкостью размазывать её по клитору. 
 		#ELSE
-			 Reaching down, she slowly slides her fingers over her tiny labia, and after she's spread her pussy lips to show off her [meraxis.pussyCapacity] cunt, you're able to see that she's producing a small amount of slimy girlcum. As she plays with herself, this natural lubrication gets coated over Meraxis's feminine fingers, allowing her to spread it over her clit.
+			 Протянув руку вниз, она медленно ведет пальцами по своим крошечным половым губам, и когда она раздвигает их, чтобы продемонстрировать свою [meraxis.pussyCapacity] щелку, ты видишь, что она выделяет совсем немного скользкой смазки. Пока она ласкает себя, эта естественная влага обволакивает женские пальцы Мераксис, позволяя ей размазывать её по клитору.
 		#ENDIF
 	</p>
 	<p>
-		For the next couple of minutes, Meraxis continues playing with her [meraxis.pussy+] while you watch. Teasing her [meraxis.clit+], she playfully pinches it and moans, [meraxis.speech(So you like this kind of thing... ~Mmm!~ Perhaps you could...)]
+		В течение следующих пары минут Мераксис продолжает играть со своей [meraxis.pussy+] под твоим пристальным взглядом. Дразня свою [meraxis.clit+], она игриво щиплет её и стонет: [meraxis.speech(Значит, тебе нравится такое... ~Ммм!~ Может быть, ты мог бы...)]
 	</p>
 	<p>
-		At that moment, the horny [meraxis.race] abruptly stops playing with her breasts and jumps back. With her cheeks flushed bright red, she starts hastily pulling her clothes back on and stammers, [meraxis.speech(Y-You almost defeated my psychological defences! As expected of my nemesis, but you shall not triumph this day! Now listen to what I have to say!)]
+		В этот момент возбужденная [meraxis.race] внезапно прекращает ласкать грудь и отпрыгивает назад. С ярко-красными щеками она начинает поспешно натягивать одежду обратно и заикается: [meraxis.speech(Т-ты почти пробил мою психологическую защиту! Как и ожидалось от моего заклятого врага, но сегодня тебе не победить! А теперь слушай, что я скажу!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_INTERCRURAL"><![CDATA[
 	<p>
-		Wanting to have some fun with Meraxis's [meraxis.legs+], you expose your [pc.cock+] and [pc.step] forwards to tell her that you want to fuck her delicious thighs. Furiously blushing as she hears you say this, the embarrassed [meraxis.race] pants, [meraxis.speech(O-Ok... You can do that if you'd like...)]
+		Желая немного развлечься с [meraxis.legs+] Мераксис, ты выставляешь свои [pc.cock+] и [pc.step] вперед, давая ей понять, что хочешь трахнуть её аппетитные бедра. Густо покраснев от твоих слов, смущенная [meraxis.race] тяжело дышит: [meraxis.speech(Х-хорошо... Можешь так сделать, если хочешь...)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Happy to hear that she's willing to do as you ask, you tell Meraxis to get down on all fours, and after she's obediently done so, you [pc.step] over the top of her and slap your [pc.cock+] against her naked pussy.
+			Обрадованный тем, что она готова исполнить твою просьбу, ты велишь Мераксис встать на четвереньки, и когда она послушно это делает, ты [pc.step] сверху и шлепаешь свои [pc.cock+] по её голой киске.
 		#ELSE
-			Happy to hear that she's willing to do as you ask, you tell Meraxis to squeeze her legs together, and after she's obediently done so, you [pc.step] forwards and slap your [pc.cock+] against her naked pussy.
+			Обрадованный тем, что она готова беспрекословно подчиняться, ты велишь Мераксис свести ноги. Когда она послушно это делает, ты [pc.step] вперед и с размаху шлепаешь своей [pc.cock+] по ее голой киске.
 		#ENDIF
-		 Letting out a surprised squeal, the [meraxis.race] bites her lip and asks, [meraxis.speech(Am I doing this right?)]
+		Издавая удивленный писк, [meraxis.race] прикусывает губу и спрашивает: [meraxis.speech(Я всё правильно делаю?)]
 	</p>
 	<p>
-		Responding in the affirmative, you thrust forwards and push your [pc.cock+] between Meraxis's [meraxis.legs+]. Remarking on how soft and smooth her thighs feel against your throbbing shaft, you tease Meraxis by saying that you might switch to fucking her [meraxis.pussy+] at any time...
+		Подтвердив ее слова, ты резко подаешься вперед и втискиваешь свой [pc.cock+] между [meraxis.legs+] Мераксис. Заметив, какие мягкие и гладкие у нее бедра, обволакивающие твой пульсирующий член, ты дразнишь Мераксис, намекая, что в любой момент можешь переключиться на ее [meraxis.pussy+]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_FUCK"><![CDATA[
 	<p>
-		Wanting to get right down to it, you expose your [pc.cock+] and [pc.step] forwards, before telling Meraxis that you want to fuck her [meraxis.pussy+]. Furiously blushing as she hears you say this, the embarrassed [meraxis.race] pants,
+		Желая поскорее перейти к делу, ты выставляешь вперед свой [pc.cock+] и [pc.step], после чего говоришь Мераксис, что хочешь трахнуть ее в [meraxis.pussy+]. Густо покраснев от твоих слов, смущенная [meraxis.race] тяжело дышит,
 		#IF(meraxis.isVaginaVirgin())
-			 [meraxis.speech(O-Ok... But I'm... Well, I'm still a virgin, so go easy, ok?)]
+			 [meraxis.speech(Х-хорошо... Но я... Ну, я всё еще девственница, так что не слишком грубо, ладно?)]
 		#ELSE
-			 [meraxis.speech(O-Ok... I was actually hoping that you'd want to fuck my pussy...)]
+			 [meraxis.speech(Х-хорошо... Вообще-то, я надеялась, что ты захочешь трахнуть мою киску...)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(meraxis.isVaginaVirgin())
-			Telling her that you'll make her first time a memorable one,
+			Обещаешь ей, что ее первый раз станет незабываемым,
 		#ELSE
-			Happy to hear that she's willing to do as you ask,
+			Обрадованный тем, что она готова делать всё, что ты просишь,
 		#ENDIF
 		#IF(pc.isTaur())
-			 you tell Meraxis to get down on all fours, and after she's obediently done so, you [pc.step] over the top of her and slap your [pc.cock+] against her naked pussy.
+			 ты велишь Мераксис встать на четвереньки, и когда она послушно подчиняется, ты [pc.step] сверху и шлепаешь своей [pc.cock+] по ее голой киске.
 		#ELSE
-			 you tell Meraxis to get down on all fours, and after she's obediently done so, you drop down behind her and slap your [pc.cock+] against her naked pussy.
+			 ты велишь Мераксис встать на четвереньки, и когда она послушно подчиняется, ты опускаешься позади нее и шлепаешь своим [pc.cock+] по ее голой киске.
 		#ENDIF
-		 Looking back over her shoulder, the [meraxis.race] lifts her hips and pants,
+		 Оглянувшись через плечо, [meraxis.race] приподнимает бедра и тяжело дышит,
 		#IF(meraxis.isVaginaVirgin())
-			 [meraxis.speech(Come on then... Take my virginity!)]
+			 [meraxis.speech(Ну же... Забери мою девственность!)]
 		#ELSE
-			 [meraxis.speech(Come on then... Give it to me!)]
+			 [meraxis.speech(Ну же... Дай мне это!)]
 		#ENDIF
 	</p>
 	<p>
-		More than happy to do as she asks, you slide the [pc.cockHead+] of your [pc.cock+] up and down over Meraxis's [meraxis.labia+], before pushing forwards and thrusting your hard shaft into her [meraxis.pussy+]. Letting out a horny squeal, the [meraxis.race] moans, [meraxis.speech(Oh, fuck! ~Aah!~ Yes! Fuck me! Fuck me, [pc.name]!)]
+		С радостью исполняя её просьбу, ты двигаешь [pc.cockHead+] своего [pc.cock+] вверх и вниз по [meraxis.labia+] Меракс, а затем подаешься вперед, вгоняя свой твердый член в её [meraxis.pussy+]. Издав похотливый визг, [meraxis.race] стонет: [meraxis.speech(Ох, блядь! ~Аах!~ Да! Трахни меня! Трахни меня, [pc.name]!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_SCISSOR"><![CDATA[
 	<p>
-		Wanting to get right down to it, you expose your [pc.pussy+] and [pc.step] forwards, before telling Meraxis that you want to scissor with her. Furiously blushing as she hears you say this, the embarrassed [meraxis.race] pants, [meraxis.speech(O-Ok... That sounds kind of fun...)]
+		Желая сразу перейти к делу, ты выставляешь вперед свои [pc.pussy+] и [pc.step], а затем говоришь Меракс, что хочешь заняться с ней сквиртом (ножницами). Густо покраснев от твоих слов, смущенная [meraxis.race] тяжело дышит: [meraxis.speech(Х-хорошо... Звучит вроде бы весело...)]
 	</p>
 	<p>
-		Happy to hear that she's willing to do as you ask, you tell Meraxis to lie down and present you with her [meraxis.pussy+]. After she's obediently done so, you [pc.step] forwards and drop down to press your own [pc.pussy+] against hers. Letting out a surprised squeal, the [meraxis.race] bites her lip and asks, [meraxis.speech(Am I doing this right?)]
+		Обрадованный тем, что она готова на всё, ты велишь Меракс лечь и подставить тебе свои [meraxis.pussy+]. Когда она послушно делает это, ты [pc.step] вперед и нависаешь над ней, прижимая свои [pc.pussy+] к её [pc.pussy+]. Издав удивленный вскрик, [meraxis.race] прикусывает губу и спрашивает: [meraxis.speech(Я всё правильно делаю?)]
 	</p>
 	<p>
-		Responding in the affirmative, you take hold of Meraxis's leg, before pushing forwards and starting to slide your [pc.clit+] up and down over Meraxis's [meraxis.pussy+]. Remarking on how wet her [meraxis.labia+] feel against your [pc.pussy+], you start enthusiastically scissoring with her...
+		Подтвердив согласием, ты берешь Меракс за ногу, подаешься вперед и начинаешь скользить своим [pc.clit+] вверх и вниз по её [meraxis.pussy+]. Заметив, какая она мокрая, когда её [meraxis.labia+] касается твоего [pc.pussy+], ты с энтузиазмом начинаешь заниматься с ней сквиртом...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_INTERCRURAL"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and flashes you a dirty grin. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Мераксис отступает назад и одаривает тебя грязной ухмылкой. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_FUCK"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and looks down at the sloppy mess of sexual fluids that are splattered all over her pussy and upper thighs. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Меракс отступает назад и смотрит вниз на липкую смесь из секс-жидкостей, размазанную по её киске и верхней части бёдер. Достав салфетку, она принимается вытираться, пока ты приводишь в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WON_SEX_POST_SCISSOR"><![CDATA[
 	<p>
-		Panting for breath, Meraxis steps back and looks down at the sloppy mess of girlcum that's splattered all over her pussy and upper thighs. Producing a tissue, she starts cleaning herself up as you set about getting your own things back in order.
+		Тяжело дыша, Мераксис отступает назад и смотрит на липкое месиво из девичьей смазки, размазанное по её киске и верхней части бёдер. Достав салфетку, она принимается вытираться, пока ты пытаешься привести в порядок свои вещи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_SEX_END"><![CDATA[
 	<p>
-		Still furiously blushing, Meraxis places her hands on her hips and declares, [meraxis.speech(Although you may have won that duel, I know that I'm really the most powerful! The next time we fight, I shall surely destroy you! Mwhahaha!)] 
+		Всё ещё заливаясь густым румянцем, Меракс упирает руки в бёдра и заявляет: [meraxis.speech(Пусть в этой дуэли победил ты, знай — на самом деле самая могущественная здесь я! В следующий раз, когда мы сойдёмся, я тебя точно уничтожу! Мва-ха-ха!)] 
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_meraxis_duel_place_hideout))
-			After finishing her lengthy laugh, she spins around on the spot, before striking a dramatic pose and exclaiming, [meraxis.speech(I'm going back inside! There's no hard feelings between us because of this duel, right? Right. Now, witness my power!)]
+			Закончив свой заливистый смех, она кружится на месте, после чего принимает драматичную позу и восклицает: [meraxis.speech(Я возвращаюсь внутрь! Между нами ведь не осталось обид из-за этой дуэли, верно? То-то же! А теперь — узри мою мощь!)]
 		#ELSE
-			After finishing her lengthy laugh, she spins around on the spot, before striking a dramatic pose and exclaiming, [meraxis.speech(I shall return to the tavern now! There's no hard feelings between us because of this duel, right? Right. Now, witness my power!)]
+			Закончив свой заливистый смех, она кружится на месте, после чего принимает драматичную позу и восклицает: [meraxis.speech(Теперь я возвращаюсь в таверну! Между нами ведь не осталось обид из-за этой дуэли, верно? То-то же! А теперь — узри мою мощь!)]
 		#ENDIF
 	</p>
 	]]>

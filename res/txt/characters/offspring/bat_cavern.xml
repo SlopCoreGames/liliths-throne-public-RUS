@@ -12,80 +12,79 @@
 	
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringIntroduced))
 		<p>
-			Although the area of the bat caverns in which you find yourself appears to be deserted, you suddenly hear the unmistakable sound of someone shuffling about coming from somewhere up ahead. Approaching with caution, you turn a corner and see [npc.a_fullRace(true)] a short way up ahead, who's crouched down and appears to be pulling at something on the floor.
+			Хотя область пещер летучих мышей, в которой ты находишься, кажется безлюдной, ты внезапно слышишь отчетливый звук чьих-то шаркающих шагов откуда-то впереди. Осторожно приближаясь, ты заходишь за угол и видишь [npc.a_fullRace(true)], которая присела неподалеку и, кажется, что-то выковыривает с пола.
 		</p>
 		<p>
-			Seeing that [npc.sheIs] focusing on a patch of glowing mushrooms, you quickly assume that [npc.sheIs] some kind of mycologist, and must be foraging for edible, or more likely psychedelic, mushrooms.
+			Заметив, что [npc.sheIs] сосредоточена на скоплении светящихся грибов, ты быстро предполагаешь, что [npc.sheIs] какой-то миколог и, должно быть, собирает съедобные или, что более вероятно, галлюциногенные грибы.
 			#IF(npc.isConfident())
-				 As [npc.she] notices your approach, the [npc.race] looks over at you, and in a confident tone, confirms your suspicions, [npc.speech(Hey there, just me a moment to gather this! I've gathered some great mushrooms today, and they're all at reasonable prices!)]
+				 Когда [npc.she] замечает твое приближение, [npc.race] переводит на тебя взгляд и уверенным тоном подтверждает твои подозрения: [npc.speech(Эй, дай мне всего минутку, чтобы собрать это! Сегодня попались отличные грибы, и все по разумным ценам!)]
 			#ELSE
-				 As [npc.she] notices your approach, the [npc.race] looks over at you, and in a cautious tone, confirms your suspicions, [npc.speech(Give me a moment to gather this, will you? I can sell you some mushrooms once I'm done...)]
+				 Когда [npc.she] замечает твое приближение, [npc.race] переводит на тебя взгляд и осторожным тоном подтверждает твои подозрения: [npc.speech(Дай мне минутку закончить, ладно? Как только закончу, смогу продать тебе немного грибов...)]
 			#ENDIF
 		</p>
 		<p>
-			As [npc.she] quickly finishes gathering the mushrooms before [npc.herHim], you take a moment to look over this [npc.race]'s body, taking note of [npc.her] [npc.feminine]
+			Пока [npc.she] быстро заканчивает сбор грибов перед [npc.herHim], ты на мгновение засматриваешься на тело этой [npc.race], отмечая её [npc.her] [npc.feminine]
 			#IF(npc.hasBreasts())
-				 features, [npc.cupSize]-cup breasts,
+				 черты, грудь [npc.cupSize]-го размера,
 			#ELSE
-				 features
+				 черты
 			#ENDIF
 			#IF(npc.isTaur())
-				 and [npc.legRace], tauric lower body.
+				 и [npc.legRace], таврическое нижнее тело.
 			#ELSE
-				 and [npc.arms+].
+				 и [npc.arms+].
 			#ENDIF
-			 As you allow your wandering gaze to come to a halt on [npc.her] [npc.face+], your planned response leaves your mouth as a surprised gasp, for you find yourself instantly recognising the person before you.
+			 Когда твой блуждающий взгляд останавливается на [npc.her] [npc.face+], заготовленный ответ срывается с твоих губ удивленным вздохом, ибо ты мгновенно узнаешь человека перед собой.
 		</p>
 		<p>
 			#IF(npc.isConfident())
-				[npc.speech(No need to gasp, these 'shrooms aren't anything special! You should have seen the ones I found earlier, I-)] [npc.Her] words are abruptly cut off as [npc.her] [npc.eyeColour] [npc.eyes] finally come to rest on your [pc.face]. [npc.speech(No way... [pc.name]?!)]
+				[npc.speech(Чего так ахать, эти грибы — ничего особенного! Тебе стоит было видеть те, что я нашла раньше, я-)] слова [npc.Her] резко обрываются, когда [npc.her] [npc.eyeColour] [npc.eyes] наконец замирают на твоих [pc.face]. [npc.speech(Да ладно... [pc.name]?!)]
 			#ELSE
-				[npc.speech(These 'shrooms aren't all that special... Some of the other ones I've got are-)] [npc.Her] words are abruptly cut off as [npc.her] [npc.eyeColour] [npc.eyes] finally come to rest on your [pc.face]. [npc.speech(No way... [pc.name]?!)]
+				[npc.speech(Эти грибы не так уж и особенные... Другие, что у меня есть...)] слова [npc.Her] резко обрываются, когда [npc.her] [npc.eyeColour] [npc.eyes] наконец замирают на твоих [pc.face]. [npc.speech(Да ладно... [pc.name]?!)]
 			#ENDIF
 		</p>
 		<p>
-			Whether by some natural instinct, or perhaps some curious quirk of the arcane, you're instantly left with no doubt in your mind that the [npc.woman] in front of you is your [npc.relation(pc)]. From [npc.her] reaction, it's quite apparent that [npc.sheHas] recognised you as well, and as [npc.her] [npc.hands] reach up to cover [npc.her] [npc.mouth] in shock, you're left to decide how best to respond...
+			Будь то по какому-то природному инстинкту или из-за причудливой особенности Арканы, тебя мгновенно посещает непоколебимая уверенность: [npc.woman] перед тобой — твой [npc.relation(pc)]. Судя по [npc.her] реакции, [npc.sheHas] тоже тебя узнал(а), и когда [npc.her] [npc.hands] в шоке прикрывает(ют) [npc.her] [npc.mouth], тебе остается лишь решить, как лучше на это ответить...
 		</p>
 	#ELSE
 		<p>
-			Knowing that [npc.name] lives in this area, you keep an eye out for your [npc.relation(pc)] as you travel through the bat caverns. Sure enough, as you cast your glance around the next corner, you see the familiar figure of your [npc.race] [npc.relation(pc)] bending down over a patch of glowing mushrooms. Deciding to take a quick detour to check in on [npc.herHim], you turn the corner and start to [pc.walk] towards [npc.herHim].
+			Зная, что в этих краях обитает [npc.name], ты внимательно высматриваешь своего [npc.relation(pc)], пробираясь сквозь пещеры летучих мышей. И действительно, за следующим поворотом твой взгляд натыкается на знакомую фигуру твоей [npc.race] [npc.relation(pc)], склонившейся над скоплением светящихся грибов. Решив ненадолго свернуть, чтобы проведать [npc.herHim], ты сворачиваешь за угол и начинаешь [pc.walk] к [npc.herHim].
 		</p>
 		<p>
 			#IF(affection<AFFECTION_NEGATIVE_FOUR_HATE.getMaximumValue())
 				#IF(npc.isSelfish())
-					Hearing your approach, [npc.name] turns towards you, and in a furious tone, [npc.she] shouts at you, [npc.speech(What the fuck do you want?! If you're not here to apologise, then turn around and fuck off!)]
+					Услышав твои шаги, [npc.name] оборачивается, и в яростном тоне [npc.she] выкрикивает тебе: [npc.speech(Какого хера тебе надо?! Если ты здесь не для того, чтобы извиниться, то разворачивайся и съебывай!)]
 				#ELSE
-					Hearing your approach, [npc.name] turns towards you, and with an angry scowl, [npc.she] cries out, [npc.speech(What the hell do you want?! Unless you're here to apologise, I'm not interested in anything you have to say!)]
+					Услышав твои шаги, [npc.name] оборачивается, и с сердитой гримасой [npc.she] восклицает: [npc.speech(Какого черта тебе нужно?! Если ты не пришел извиняться, то мне плевать на всё, что ты хочешь сказать!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_NEGATIVE_TWO_DISLIKE.getMaximumValue())
 				#IF(npc.isConfident())
-					Hearing your approach, [npc.name] turns towards you, and in an angry tone, [npc.she] scowls at you, [npc.speech(I'm not talking to you! If you're not here to apologise, you may as well turn right around and get out of here!)]
+					Услышав твои шаги, [npc.name] оборачивается, и в гневе [npc.she] хмурится на тебя: [npc.speech(Я не собираюсь с тобой разговаривать! Если ты здесь не для того, чтобы извиниться, то лучше сразу разворачивайся и вали отсюда!)]
 				#ELSE
-					Hearing your approach, [npc.name] turns towards you, and with an angry scowl, [npc.she] calls out, [npc.speech(I'm not talking to you! Unless you're here to apologise, just go away and leave me alone!)]
+					Услышав твои шаги, [npc.name] оборачивается, и с сердитой гримасой [npc.she] кричит: [npc.speech(Я не хочу с тобой говорить! Если ты не пришел извиняться, просто уйди и оставь меня в покое!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
 				#IF(npc.isConfident())
-					Hearing your approach, [npc.name] turns towards you, and in a rather cold manner, [npc.she] calls out, [npc.speech(Oh, it's you. Hi, [npc.pcName].)]
+					Услышав твои шаги, [npc.name] оборачивается, и довольно холодным тоном [npc.she] произносит: [npc.speech(А, это ты. Привет, [npc.pcName].)]
 				#ELSE
-					Hearing your approach, [npc.name] turns towards you, and with a distinct lack of emotion in [npc.her] voice, [npc.she] calls out, [npc.speech(Hi, [npc.pcName].)]
-				#ENDIF
+Услышав твои шаги, [npc.name] поворачивается к тебе и совершенно бесстрастным голосом [npc.she] окликает тебя: [npc.speech(Привет, [npc.pcName].)] [npc.her]				#ENDIF
 			#ELSEIF (affection<AFFECTION_POSITIVE_ONE_FRIENDLY.getMaximumValue())
 				#IF(npc.isConfident())
-					Hearing your approach, [npc.name] turns towards you, and with a big smile on [npc.her] [npc.face], [npc.she] calls out, [npc.speech([npc.PcName]! You're back!)]
+					Услышав твои шаги, [npc.name] поворачивается к тебе, и с широкой улыбкой на [npc.her] [npc.face], [npc.she] восклицает: [npc.speech([npc.PcName]! Ты вернулся/лась!)]
 				#ELSE
-					Hearing your approach, [npc.name] turns towards you, and with a smile on [npc.her] [npc.face], [npc.she] calls out, [npc.speech(Hi, [npc.pcName]!)]
+					Услышав твои шаги, [npc.name] поворачивается к тебе, и с улыбкой на [npc.her] [npc.face], [npc.she] окликает тебя: [npc.speech(Привет, [npc.pcName]!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_POSITIVE_THREE_CARING.getMaximumValue())
 				#IF(npc.isConfident())
-					Hearing your approach, [npc.name] turns towards you, and you see [npc.her] [npc.face] light up as [npc.she] excitedly calls out, [npc.speech([npc.PcName]! I've missed you so much!)]
+					Услышав твои шаги, [npc.name] поворачивается к тебе, и ты видишь, как лицо [npc.her] [npc.face] озаряется радостью, когда [npc.she] восторженно кричит: [npc.speech([npc.PcName]! Я так по тебе скучал(а)!)]
 				#ELSE
-					Hearing your approach, [npc.name] turns towards you, and with a voice filled with excitement, [npc.she] calls out, [npc.speech([npc.PcName]! You've come back to see me again!)]
+					Услышав твои шаги, [npc.name] поворачивается к тебе, и голосом, полным восторга, [npc.she] восклицает: [npc.speech([npc.PcName]! Ты снова пришел/ла навестить меня!)]
 				#ENDIF
 			#ELSE
 				#IF(npc.isConfident())
-					Hearing your approach, [npc.name] turns towards you, and upon seeing who you are, [npc.she] excitedly jumps up and down on the spot and [npc.she] gleefully calls out, [npc.speech([npc.PcName]! You're back! I've missed you so much! I love you!)]
+					Услышав твои шаги, [npc.name] поворачивается к тебе, и, узнав тебя, [npc.she] начинает радостно подпрыгивать на месте, а [npc.she] ликует: [npc.speech([npc.PcName]! Ты вернулся/лась! Я так по тебе скучал(а)! Я люблю тебя!)]
 				#ELSE
-					Hearing your approach, [npc.name] turns towards you, and you see [npc.her] [npc.eyes] light up with joy as [npc.she] gleefully calls out, [npc.speech([npc.PcName]! You've come back to see me again! I love you!)]
+					Услышав твои шаги, [npc.name] поворачивается к тебе, и ты видишь, как [npc.her] [npc.eyes] сияет от счастья, пока [npc.she] радостно кричит: [npc.speech([npc.PcName]! Ты снова пришел/ла навестить меня! Я люблю тебя!)]
 				#ENDIF
 			#ENDIF
 		</p>
@@ -94,9 +93,9 @@
 				#IF(affection<AFFECTION_NEGATIVE_THREE_STRONG_DISLIKE.getMaximumValue())
 					#IF(playerPregnant)
 						#IF(reactedToPlayerPregnancy)
-							As you continue to approach your [npc.relation(pc)], [npc.she] lets out a disapproving snort as [npc.her] [npc.eyes] move down to rest on your pregnant belly. [npc.speech(Still pregnant, I see. Stupid slut.)]
+							Пока ты продолжаешь приближаться к своему [npc.relation(pc)], [npc.she] неодобрительно фыркает, когда [npc.her] [npc.eyes] опускаются, чтобы прижаться к твоему беременному животу. [npc.speech(Все еще беременная, как я погляжу. Глупая шлюха.)]
 						#ELSE
-							As you continue to approach your [npc.relation(pc)], [npc.she] lets out an exasperated gasp as [npc.her] [npc.eyes] move down to rest on your pregnant belly. [npc.speech(You're pregnant?! Again?! Do this next lot a favour and don't try to ruin their lives, like you have with mine!)]
+							По мере того как ты приближаешься к своему [npc.relation(pc)], [npc.she] издает раздраженный вздох, когда [npc.her] [npc.eyes] спускаются вниз, чтобы устроиться на твоем беременном животе. [npc.speech(Ты беременна?! Опять?! Сделай одолжение следующему выводку — не пытайся разрушить им жизни, как ты сделала это с моей!)]
 						#ENDIF
 						#IF(offspringPregnant)
 							</p>
@@ -105,17 +104,17 @@
 					#ENDIF
 					#IF(offspringPregnant)
 						#IF(reactedToOffspringPregnancy)
-							The sound of your footsteps are interrupted as [npc.name] stands up and steps towards you, stroking [npc.her] swollen stomach as [npc.she] calls out, [npc.speech(Unlike <i>you</i>, I'm taking good care of my children! Not that you'd give a damn; you're probably going to treat them just as badly as you do with me!)]
+							Звук твоих шагов прерывается, когда [npc.name] встает и делает шаг к тебе, поглаживая [npc.her] раздувшийся живот, пока [npc.she] выкрикивает: [npc.speech(В отличие от <i>тебя</i>, я забочусь о своих детях! Хотя тебе-то плевать; ты, небось, будешь обращаться с ними так же хреново, как со мной!)]
 						#ELSE
-							The sound of your footsteps are suddenly silenced as you stop dead in your tracks. As [npc.name] stands up and steps towards you, you see that [npc.sheIs] stroking a very swollen stomach, and calls out," [npc.speech(That's right, <i>[npc.pcName]</i>! You got me pregnant, you stupid slut! I seriously can't believe that my own [pc.mother] knocked me up! I hate you, I <i>hate</i> you!)]
+							Звук твоих шагов внезапно затихает, когда ты замираешь на месте. Когда [npc.name] встает и делает шаг к тебе, ты видишь, что [npc.sheIs] поглаживает свой огромный живот, и она выкрикивает: " [npc.speech(Именно так, <i>[npc.pcName]</i>! Ты забеременел, тупая шлюха! Просто поверить не могу, что мой собственный [pc.mother] умудрился меня оплодотворить! Ненавижу тебя, я <i>ненавижу</i> тебя!)]
 						#ENDIF
 					#ENDIF
 				#ELSEIF (affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
 					#IF(playerPregnant)
 						#IF(reactedToPlayerPregnancy)
-							As you continue to approach your [npc.relation(pc)], [npc.she] lets out a disinterested hum as [npc.her] [npc.eyes] move down to rest on your pregnant belly. [npc.speech(Still pregnant, I see.)]
+							По мере того как ты приближаешься к своему [npc.relation(pc)], [npc.she] издает безучастный гул, когда [npc.her] [npc.eyes] спускаются вниз, чтобы устроиться на твоем беременном животе. [npc.speech(Все еще беременна, как я погляжу.)]
 						#ELSE
-							As you continue to approach your [npc.relation(pc)], [npc.she] lets out a shocked gasp as [npc.her] [npc.eyes] move down to rest on your pregnant belly. [npc.speech(You're pregnant?! Well, it's obviously not your first time, so I'm sure you know what you're doing...)]
+							По мере того как ты приближаешься к своему [npc.relation(pc)], [npc.she] издает потрясенный вздох, когда [npc.her] [npc.eyes] спускаются вниз, чтобы устроиться на твоем беременном животе. [npc.speech(Ты беременна?! Ну, очевидно, что это не в первый раз, так что, уверена, ты знаешь, что делаешь...)]
 						#ENDIF
 						#IF(offspringPregnant)
 							</p>
@@ -124,17 +123,17 @@
 					#ENDIF
 					#IF(offspringPregnant)
 						#IF(reactedToOffspringPregnancy)
-							The sound of your footsteps are interrupted as [npc.name] stands up and steps towards you, stroking [npc.her] swollen stomach as [npc.she] calls out, [npc.speech(I'm taking good care of our children.)]
+							Звук твоих шагов прерывается, когда [npc.name] встает и делает шаг к тебе, поглаживая [npc.her] раздувшийся живот, пока [npc.she] восклицает: [npc.speech(Я отлично забочусь о наших детях.)]
 						#ELSE
-							The sound of your footsteps are suddenly silenced as you stop dead in your tracks. As [npc.name] stands up and steps towards you, you see that [npc.sheIs] stroking a very swollen stomach, and calls out, [npc.speech(That's right, [npc.pcName], you got me pregnant! I can't believe that my own [pc.mother] knocked me up...)]
+							Звук твоих шагов внезапно затихает, когда ты замираешь на месте. Когда [npc.name] встает и идет к тебе, ты видишь, как [npc.sheIs] поглаживает свой заметно раздувшийся живот, и она восклицает: [npc.speech(Все верно, [npc.pcName], ты залетел! Поверить не могу, что мой собственный [pc.mother] меня оплодотворил...)]
 						#ENDIF
 					#ENDIF
 				#ELSE
 					#IF(playerPregnant)
 						#IF(reactedToPlayerPregnancy)
-							As you continue to approach your [npc.relation(pc)], [npc.she] lets out a happy gasp as [npc.her] [npc.eyes] move down to rest on your pregnant belly. [npc.speech(You're still pregnant, I see. I wonder if I'll end up meeting any of my new brothers and sisters?)]
+							Пока ты продолжаешь приближаться к своему [npc.relation(pc)], [npc.she] радостно ахает, когда [npc.her] [npc.eyes] опускаются, чтобы прильнуть к твоему беременному животу. [npc.speech(Вижу, ты всё еще беременна. Интересно, удастся ли мне познакомиться с моими новыми братишками и сестренками?)]
 						#ELSE
-							As you continue to approach your [npc.relation(pc)], [npc.she] lets out a surprised gasp as [npc.her] [npc.eyes] move down to rest on your pregnant belly. [npc.speech(You're pregnant?! Oh, [npc.pcName], I'm so happy for you! I'm going to have some new brothers and sisters!)]
+							Пока ты продолжаешь приближаться к своему [npc.relation(pc)], [npc.she] удивленно ахает, когда [npc.her] [npc.eyes] опускаются, чтобы прильнуть к твоему беременному животу. [npc.speech(Ты беременна?! О, [npc.pcName], я так за тебя рада! У меня скоро появятся новые братишки и сестренки!)]
 						#ENDIF
 						#IF(offspringPregnant)
 							</p>
@@ -143,9 +142,9 @@
 					#ENDIF
 					#IF(offspringPregnant)
 						#IF(reactedToOffspringPregnancy)
-							The sound of your footsteps are interrupted as [npc.name] stands up and steps towards you, stroking [npc.her] swollen stomach as [npc.she] calls out, [npc.speech(I'm taking good care of our children, [npc.pcName]! I'll make you proud!)]
+							Звук твоих шагов прерывается, когда [npc.name] встает и делает шаг к тебе, поглаживая [npc.her] раздувшийся живот, пока [npc.she] восклицает: [npc.speech(Я отлично забочусь о наших детях, [npc.pcName]! Ты будешь мной гордиться!)]
 						#ELSE
-							The sound of your footsteps are suddenly silenced as you stop dead in your tracks. As [npc.name] stands up and steps towards you, you see that [npc.sheIs] stroking a very swollen stomach, and calls out, [npc.speech([npc.PcName]... You got me pregnant! I can't believe that my own [pc.mother] knocked me up... I love you [npc.pcName], and I'll take good care of our children!)]
+							Звук твоих шагов внезапно затихает, когда ты замираешь на месте. Когда [npc.name] встает и делает шаг к тебе, ты замечаешь, что [npc.sheIs] поглаживает свой заметно раздувшийся живот, и слышишь: [npc.speech([npc.PcName]... Ты заставил меня забеременеть! Поверить не могу, что мой собственный [pc.mother] обрюхатил меня... Я люблю тебя, [npc.pcName], и буду заботиться о наших детях!)]
 						#ENDIF
 					#ENDIF
 				#ENDIF
@@ -154,25 +153,25 @@
 		<p>
 			#IF(npc.hasFlag(NPC_FLAG_flagOffspringFightApologyNeeded) || npc.hasFlag(NPC_FLAG_flagOffspringRapeApologyNeeded))
 				#IF(affection<AFFECTION_NEGATIVE_THREE_STRONG_DISLIKE.getMaximumValue())
-					Coming to a halt in front of your [npc.relation(pc)], you see that [npc.sheIs] sunk into a slight crouch, as though [npc.sheIs] prepared to attack you at any moment. You're not entirely surprised by [npc.her] reaction, and considering what you did to [npc.herHim], you're lucky that [npc.she] didn't run away or attempt to fight you the moment [npc.she] saw you. Realising that you're not going to be able to have a proper conversation with [npc.herHim] until you've sincerely apologised, you're only left with a few options...
+					Остановившись перед твоим [npc.relation(pc)], [npc.sheIs] слегка приседает, словно [npc.sheIs] готова в любой момент броситься на тебя в атаку. Реакция [npc.her] тебя не то чтобы удивляет, и, учитывая то, что ты сделал с [npc.herHim], тебе еще повезло, что [npc.she] не сбежала и не попыталась напасть на тебя в ту же секунду, как [npc.she] тебя увидела. Понимая, что нормального разговора с [npc.herHim] не выйдет, пока ты искренне не извинишься, тебе остается лишь несколько вариантов...
 				#ELSEIF (affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
-					Coming to a halt in front of your [npc.relation(pc)], you see that [npc.sheIs] avoiding looking directly at you, as though [npc.sheIs] disinterested in anything you have to say. You're not entirely surprised by [npc.her] reaction, and considering what you did to [npc.herHim], you're lucky that [npc.sheIs] tolerating your presence in such a dignified manner. Realising that you're not going to be able to have a proper conversation with [npc.herHim] until you've apologised for your actions, you're only left with a few options...
+					Остановившись перед твоим [npc.relation(pc)], [npc.sheIs] старается не смотреть тебе прямо в глаза, будто [npc.sheIs] совершенно безразлична ко всему, что ты можешь сказать. Реакция [npc.her] тебя не то чтобы удивляет, и, учитывая то, что ты сделал с [npc.herHim], тебе еще повезло, что [npc.sheIs] так достойно терпит твое присутствие. Понимая, что нормального разговора с [npc.herHim] не получится, пока ты не извинишься за свои поступки, тебе остается лишь несколько вариантов...
 				#ELSE
-					Coming to a halt in front of your [npc.relation(pc)], you get the sense that [npc.sheIs] slightly uneasy in your presence, despite [npc.her] amicable greeting. You're not entirely surprised by this, and considering what you did to [npc.herHim], you're lucky that [npc.sheIs] still treating you in such a friendly manner. Realising that you're not going to be able to have a proper conversation with [npc.herHim] until you've apologised for your actions, you're only left with a few options...
+					Остановившись перед своей [npc.relation(pc)], ты чувствуешь, что [npc.sheIs] слегка не по себе в твоем присутствии, несмотря на [npc.her] дружелюбное приветствие. Это тебя не особо удивляет: учитывая то, что ты сотворил с [npc.herHim], тебе еще повезло, что [npc.sheIs] до сих пор относится к тебе так тепло. Понимая, что полноценного разговора с [npc.herHim] не выйдет, пока ты не извинишься за свои поступки, тебе остается лишь несколько вариантов...
 				#ENDIF
 			#ELSE
 				#IF(affection<AFFECTION_NEGATIVE_FOUR_HATE.getMaximumValue())
-					Coming to a halt in front of your [npc.relation(pc)], you see that [npc.sheIs] sunk into a slight crouch, as though [npc.sheIs] prepared to attack you at any moment. It really seems as though [npc.she] hates you, and you consider that you're quite lucky that [npc.she] didn't run away or attempt to fight you the moment [npc.she] saw you. Realising that you're not going to be able to have a proper conversation with [npc.herHim] until you've apologised for the way you've acted towards [npc.herHim], you're only left with a few options...
+					Остановившись перед своей [npc.relation(pc)], ты замечаешь, что [npc.sheIs] слегка пригнулась, словно [npc.sheIs] готова напасть на тебя в любой момент. Кажется, [npc.she] тебя просто ненавидит, и тебе чертовски повезло, что [npc.she] не сбежала и не попыталась вцепиться тебе в глотку, едва [npc.she] тебя увидела. Понимая, что нормально поговорить с [npc.herHim] не получится, пока ты не извинишься за то, как вел себя по отношению к [npc.herHim], тебе остается лишь несколько вариантов...
 				#ELSEIF (affection<AFFECTION_NEGATIVE_TWO_DISLIKE.getMaximumValue())
-					Coming to a halt in front of your [npc.relation(pc)], you see that [npc.sheIs] making a point of not looking in your direction, and with head held high, [npc.she] lets out a derisive hum. It really seems as though [npc.she] dislikes you, and if you wanted to have a proper conversation with [npc.herHim], it looks like you'll have to apologise for the way you've acted towards [npc.herHim]...
+					Остановившись перед своей [npc.relation(pc)], ты видишь, что [npc.sheIs] демонстративно избегает твоего взгляда, а затем, высоко задрав голову, [npc.she] издает насмешливое хмыканье. Похоже, [npc.she] тебя недолюбливает, и если ты хочешь нормально поговорить с [npc.herHim], тебе придется извиниться за то, как ты вел себя по отношению к [npc.herHim]...
 				#ELSEIF (affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
-					As you come to a halt in front of your [npc.relation(pc)], [npc.she] steps forwards and looks into your [pc.eyes]. [npc.She] seems to be mildly annoyed with you at the moment, and you wonder how best to greet [npc.herHim] while [npc.sheIs] like this...
+					Когда ты замираешь перед своим [npc.relation(pc)], [npc.she] делает шаг вперед и заглядывает тебе в [pc.eyes]. Кажется, [npc.She] сейчас слегка раздражена тобой, и ты гадаешь, как лучше поприветствовать [npc.herHim], пока [npc.sheIs] в таком настроении...
 				#ELSEIF (affection<AFFECTION_POSITIVE_ONE_FRIENDLY.getMaximumValue())
-					As you come to a halt in front of your [npc.relation(pc)], [npc.she] steps forwards, and with a smile on [npc.her] face, looks into your [pc.eyes]. [npc.She] seems to be happy to see you, and you wonder how best to greet [npc.herHim] while [npc.sheIs] like this...
+					Когда ты замираешь перед своим [npc.relation(pc)], [npc.she] делает шаг вперед и с улыбкой на [npc.her] смотрит тебе в [pc.eyes]. Похоже, [npc.She] рада тебя видеть, и ты гадаешь, как лучше поприветствовать [npc.herHim], пока [npc.sheIs] в таком настроении...
 				#ELSEIF (affection<AFFECTION_POSITIVE_THREE_CARING.getMaximumValue())
-					As you come to a halt in front of your [npc.relation(pc)], [npc.she] bounces forwards, and with a big smile on [npc.her] face, [npc.she] looks expectantly at you as [npc.she] waits for your greeting. It's quite obvious that's [npc.sheIs] very happy to see you, and you wonder how best to greet [npc.herHim] while [npc.sheIs] like this...
+					Когда ты замираешь перед своим [npc.relation(pc)], [npc.she] подпрыгивает к тебе, и с широкой улыбкой на [npc.her], [npc.she] с предвкушением смотрит на тебя, пока [npc.she] ждет твоего приветствия. Совершенно очевидно, что [npc.sheIs] очень счастлива тебя видеть, и ты гадаешь, как лучше поприветствовать [npc.herHim], пока [npc.sheIs] в таком настроении...
 				#ELSE
-					As you come to a halt in front of your [npc.relation(pc)], [npc.she] bounces forwards, and with a big smile on [npc.her] face, [npc.she] gazes lovingly into your [pc.eyes]. It's quite obvious that's [npc.sheIs] more than happy to see you, and you wonder how best to greet [npc.herHim] while [npc.sheIs] like this...
+					Когда ты замираешь перед своим [npc.relation(pc)], [npc.she] подпрыгивает к тебе, и с широкой улыбкой на [npc.her], [npc.she] влюбленно смотрит тебе в [pc.eyes]. Совершенно очевидно, что [npc.sheIs] более чем счастлива тебя видеть, и ты гадаешь, как лучше поприветствовать [npc.herHim], пока [npc.sheIs] в таком настроении...
 				#ENDIF
 			#ENDIF
 		</p>
@@ -187,27 +186,27 @@
 		
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringIntroduced))
 		<p>
-			You're the first to recover from the shock of your surprise meeting, and, stepping forwards, you greet your [npc.relation(pc)],
+		Ты первым приходишь в себя после шока от этой неожиданной встречи и, сделав шаг вперед, приветствуешь своего [npc.relation(pc)],
 			#IF(npc.getIncubator()!=null)
 				#IF(!npc.getIncubator().isPlayer())
-					 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure [#npc.getIncubator().getName(true)] told you, but I'm-)]
+					 [pc.speech([npc.Name], неужели это ты? Я так счастлива встретить тебя! Уверена, [#npc.getIncubator().getName(true)] уже рассказывал тебе, но я...)]
 				#ELSE
 					#IF(pcIsMother)
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched, but I'm your mother. You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рада встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился, но я твоя мать. Можешь звать меня [pc.name].)]
 					#ELSEIF(npc.getFather()!=null && npc.getFather().isPlayer())
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched, but I'm your father. You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился, но я твой отец. Можешь звать меня [pc.name].)]
 					#ELSE
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched. I'm neither your mother nor father, but I did incubate you until you were ready to hatch... You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился. Я тебе не мать и не отец, но именно я высиживал тебя, пока ты не был готов к вылуплению... Можешь звать меня [pc.name].)]
 					#ENDIF
 				#ENDIF
 			#ELSE
 				#IF(pcIsMother)
-					 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure Lilaya told you, but I'm-)]
+					 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, Lilaya тебе говорила, но я...)]
 				#ELSE
 					#IF(npc.getMother()==null || !npc.getMother().isPlayerKnowsName())
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure your mother told you, but I'm-)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, твоя мать тебе говорила, но я...)]
 					#ELSE
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure [#npc.getMother().getName(true)] told you, but I'm-)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, [#npc.getMother().getName(true)] тебе говорила, но я...)]
 					#ENDIF
 				#ENDIF
 			#ENDIF
@@ -215,25 +214,25 @@
 		<p>
 			#IF(npc.getIncubator()!=null)
 				#IF(!npc.getIncubator().isPlayer())
-					[npc.speech([pc.Name], yeah, [#npc.getIncubator().getName(true)] told me about you. I didn't really hang around to get the full story, though. You know how it is...)]
+					[npc.speech([pc.Name], ага, [#npc.getIncubator().getName(true)] рассказывал мне о тебе. Правда, я не особо задерживался, чтобы узнать все подробности. Ну, ты понимаешь...)]
 				#ELSE
-					[npc.speech(Yeah, sorry that I didn't hang around to get the full story. You know how it is...)]
+					[npc.speech(Да, прости, что не остался подождать, чтобы узнать всю историю. Ну, ты понимаешь...)]
 				#ENDIF
 			#ELSE
 				#IF(pcIsMother)
-					[npc.speech([pc.Name], yeah, Lilaya told me about you. Sorry that I didn't stick around for you to wake up, but, you know how it is...)]
+					[npc.speech([pc.Name], ага, Lilaya рассказывала мне о тебе. Прости, что не дождался твоего пробуждения, но, сама понимаешь, как это бывает...)]
 				#ELSE
-					[npc.speech([pc.Name], yeah, mum told me about you. I didn't really hang around to get the full story, though. You know how it is...)]
+					[npc.speech([pc.Name], ага, мама рассказывала мне о тебе. Правда, я не особо задерживался, чтобы узнать все подробности. Ну, ты понимаешь...)]
 				#ENDIF
 			#ENDIF
-			 [npc.name] explains, clearly feeling a little guilty about it. [npc.speech(But anyway! Now that you're here, come with me! I can show you my place!)]
+			 [npc.name] объясняет, явно чувствуя за это легкую вину. [npc.speech(Но всё в любом случае! Раз уж ты здесь, пойдем со мной! Я покажу тебе свое жилище!)]
 		</p>
 	#ELSE
 		<p>
-			Deciding that just a friendly verbal greeting will do, you smile at [npc.name]. [pc.speech(Hello again, [npc.Name], how have you been?)]
+			Решив, что простого дружелюбного приветствия будет достаточно, ты улыбаешься [npc.name]. [pc.speech(Снова привет, [npc.Name], как поживаешь?)]
 		</p>
 		<p>
-			[npc.speech(I've been fine, [npc.pcName], you don't need to worry about me,)] [npc.she] replies, before continuing, [npc.speech(I don't like to stop and chat in the same place as I work, so let's go back to my place.)]
+			[npc.speech(У меня всё хорошо, [npc.pcName], тебе не стоит за меня беспокоиться,)] — отвечает [npc.she], после чего продолжает: [npc.speech(Не люблю задерживаться на болтовню там, где работаю, так что давай вернемся ко мне.)]
 		</p>
 	#ENDIF
 	]]>
@@ -246,27 +245,27 @@
 		
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringIntroduced))
 		<p>
-			You're the first to recover from the shock of your surprise meeting, and, stepping forwards, you wrap your [pc.arms] around your [npc.relation(pc)], before pulling [npc.herHim] into a loving hug. [npc.She] returns your embrace, hugging you close to [npc.her] warm body as you both share a happy moment, before breaking away from each other. Looking into [npc.her] [npc.eyes+], you greet your [npc.relation(pc)] for the first time,
+			Ты первым приходишь в себя после шока от этой неожиданной встречи и, сделав шаг вперед, обнимаешь свою [pc.arms], а затем притягиваешь [npc.herHim] в нежные объятия. [npc.She] отвечает на твои объятия, прижимаясь к [npc.her] теплому телу; вы оба наслаждаетесь этим счастливым моментом, прежде чем отстраниться друг от друга. Заглянув в [npc.her] [npc.eyes+], ты впервые приветствуешь своего [npc.relation(pc)],
 			#IF(npc.getIncubator()!=null)
 				#IF(!npc.getIncubator().isPlayer())
-					 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure [#npc.getIncubator().getName(true)] told you, but I'm-)]
+					 [pc.speech([npc.Name], неужели это ты? Я так счастлива встретить тебя! Уверена, [#npc.getIncubator().getName(true)] уже рассказывал тебе, но я...)]
 				#ELSE
 					#IF(pcIsMother)
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched, but I'm your mother. You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рада встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился, но я твоя мать. Можешь звать меня [pc.name].)]
 					#ELSEIF(npc.getFather()!=null && npc.getFather().isPlayer())
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched, but I'm your father. You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился, но я твой отец. Можешь звать меня [pc.name].)]
 					#ELSE
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched. I'm neither your mother nor father, but I did incubate you until you were ready to hatch... You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился. Я тебе не мать и не отец, но именно я высиживал тебя, пока ты не был готов к вылуплению... Можешь звать меня [pc.name].)]
 					#ENDIF
 				#ENDIF
 			#ELSE
 				#IF(pcIsMother)
-					 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure Lilaya told you, but I'm-)]
+					 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, Lilaya тебе говорила, но я...)]
 				#ELSE
 					#IF(npc.getMother()==null || !npc.getMother().isPlayerKnowsName())
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure your mother told you, but I'm-)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, твоя мать тебе говорила, но я...)]
 					#ELSE
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure [#npc.getMother().getName(true)] told you, but I'm-)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, [#npc.getMother().getName(true)] тебе говорила, но я...)]
 					#ENDIF
 				#ENDIF
 			#ENDIF
@@ -274,25 +273,25 @@
 		<p>
 			#IF(npc.getIncubator()!=null)
 				#IF(!npc.getIncubator().isPlayer())
-					[npc.speech([pc.Name], yeah, [#npc.getIncubator().getName(true)] told me about you. I didn't really hang around to get the full story, though. You know how it is...)]
+					[npc.speech([pc.Name], ага, [#npc.getIncubator().getName(true)] рассказывал мне о тебе. Правда, я не особо задерживался, чтобы узнать все подробности. Ну, ты понимаешь...)]
 				#ELSE
-					[npc.speech(Yeah, sorry that I didn't hang around to get the full story. You know how it is...)]
+					[npc.speech(Да, прости, что не остался подождать, чтобы узнать всю историю. Ну, ты понимаешь...)]
 				#ENDIF
 			#ELSE
 				#IF(pcIsMother)
-					[npc.speech([pc.Name], yeah, Lilaya told me about you. Sorry that I didn't stick around for you to wake up, but, you know how it is...)]
+					[npc.speech([pc.Name], ага, Lilaya рассказывала мне о тебе. Прости, что не дождался твоего пробуждения, но, сама понимаешь, как это бывает...)]
 				#ELSE
-					[npc.speech([pc.Name], yeah, mum told me about you. I didn't really hang around to get the full story, though. You know how it is...)]
+					[npc.speech([pc.Name], ага, мама рассказывала мне о тебе. Правда, я не особо задерживался, чтобы узнать все подробности. Ну, ты понимаешь...)]
 				#ENDIF
 			#ENDIF
-			 [npc.name] explains, clearly feeling a little guilty about it. [npc.speech(But anyway! Now that you're here, come with me! I can show you my place!)]
+			 [npc.name] объясняет, явно чувствуя за это легкую вину. [npc.speech(Но всё в любом случае! Раз уж ты здесь, пойдем со мной! Я покажу тебе свое жилище!)]
 		</p>
 	#ELSE
 		<p>
-			Deciding that [npc.namePos] in need of a hug, you step forwards and wrap your [pc.arms] around your [npc.relation(pc)], before pulling [npc.herHim] into your loving embrace. [npc.She] returns your gesture, hugging you close to [npc.her] warm body as you both share a happy moment, before breaking away from each other. Looking into [npc.her] [npc.eyes+], you greet your [npc.relation(pc)] once again, [pc.speech(Hello again, [npc.Name], how have you been?)]
+			Решив, что [npc.namePos] нуждается в объятиях, ты делаешь шаг вперед и обвиваешь свои [pc.arms] вокруг [npc.relation(pc)], прежде чем притянуть [npc.herHim] в свои любящие объятия. [npc.She] отвечает на твой жест, прижимая тебя к своему [npc.her] теплому телу; вы оба наслаждаетесь этим счастливым мгновением, прежде чем отстраниться друг от друга. Заглянув в [npc.her] [npc.eyes+], ты снова приветствуешь своего [npc.relation(pc)], [pc.speech(Снова привет, [npc.Name], как ты поживаешь?)]
 		</p>
 		<p>
-			[npc.speech(I've been fine, [npc.pcName], you don't need to worry about me,)] [npc.she] replies, before continuing, [npc.speech(I don't like to stop and chat in the same place as I work, so let's go back to my place.)]
+			[npc.speech(У меня всё хорошо, [npc.pcName], тебе не стоит за меня беспокоиться,)] — отвечает [npc.she], после чего продолжает: [npc.speech(Не люблю задерживаться на болтовню там, где работаю, так что давай вернемся ко мне.)]
 		</p>
 	#ENDIF
 	]]>
@@ -305,27 +304,27 @@
 		
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringIntroduced))
 		<p>
-			You're the first to recover from the shock of your surprise meeting, and, stepping forwards, you wrap your [pc.arms] around your [npc.relation(pc)], before planting a wet kiss on [npc.her] cheek and pulling [npc.herHim] into a loving hug. [npc.She] returns your embrace, hugging you close to [npc.her] warm body as you both share a happy moment, before breaking away from each other. Looking into [npc.her] [npc.eyes+], you greet your [npc.relation(pc)] for the first time,
+			Ты первым приходишь в себя после шока от этой неожиданной встречи и, сделав шаг вперед, обвиваешь свои [pc.arms] вокруг [npc.relation(pc)], прежде чем запечатлеть влажный поцелуй на [npc.her] щеке и притянуть [npc.herHim] в любящие объятия. [npc.She] отвечает на твои объятия, прижимая тебя к своему [npc.her] теплому телу; вы оба наслаждаетесь этим счастливым мгновением, прежде чем отстраниться друг от друга. Заглянув в [npc.her] [npc.eyes+], ты впервые приветствуешь своего [npc.relation(pc)],
 			#IF(npc.getIncubator()!=null)
 				#IF(!npc.getIncubator().isPlayer())
-					 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure [#npc.getIncubator().getName(true)] told you, but I'm-)]
+					 [pc.speech([npc.Name], неужели это ты? Я так счастлива встретить тебя! Уверена, [#npc.getIncubator().getName(true)] уже рассказывал тебе, но я...)]
 				#ELSE
 					#IF(pcIsMother)
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched, but I'm your mother. You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рада встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился, но я твоя мать. Можешь звать меня [pc.name].)]
 					#ELSEIF(npc.getFather()!=null && npc.getFather().isPlayer())
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched, but I'm your father. You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился, но я твой отец. Можешь звать меня [pc.name].)]
 					#ELSE
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I didn't get a chance to speak to you after you'd hatched. I'm neither your mother nor father, but I did incubate you until you were ready to hatch... You can call me [pc.name].)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! У меня не было возможности поговорить с тобой сразу после того, как ты вылупился. Я тебе не мать и не отец, но именно я высиживал тебя, пока ты не был готов к вылуплению... Можешь звать меня [pc.name].)]
 					#ENDIF
 				#ENDIF
 			#ELSE
 				#IF(pcIsMother)
-					 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure Lilaya told you, but I'm-)]
+					 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, Lilaya тебе говорила, но я...)]
 				#ELSE
 					#IF(npc.getMother()==null || !npc.getMother().isPlayerKnowsName())
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure your mother told you, but I'm-)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, твоя мать тебе говорила, но я...)]
 					#ELSE
-						 [pc.speech([npc.Name], was it? I'm so happy to meet you! I'm sure [#npc.getMother().getName(true)] told you, but I'm-)]
+						 [pc.speech([npc.Name], значит, так? Я так рад встрече с тобой! Уверен, [#npc.getMother().getName(true)] тебе говорила, но я...)]
 					#ENDIF
 				#ENDIF
 			#ENDIF
@@ -333,25 +332,25 @@
 		<p>
 			#IF(npc.getIncubator()!=null)
 				#IF(!npc.getIncubator().isPlayer())
-					[npc.speech([pc.Name], yeah, [#npc.getIncubator().getName(true)] told me about you. I didn't really hang around to get the full story, though. You know how it is...)]
+					[npc.speech([pc.Name], ага, [#npc.getIncubator().getName(true)] рассказывал мне о тебе. Правда, я не особо задерживался, чтобы узнать все подробности. Ну, ты понимаешь...)]
 				#ELSE
-					[npc.speech(Yeah, sorry that I didn't hang around to get the full story. You know how it is...)]
+					[npc.speech(Да, прости, что не остался подождать, чтобы узнать всю историю. Ну, ты понимаешь...)]
 				#ENDIF
 			#ELSE
 				#IF(pcIsMother)
-					[npc.speech([pc.Name], yeah, Lilaya told me about you. Sorry that I didn't stick around for you to wake up, but, you know how it is...)]
+					[npc.speech([pc.Name], ага, Lilaya рассказывала мне о тебе. Прости, что не дождался твоего пробуждения, но, сама понимаешь, как это бывает...)]
 				#ELSE
-					[npc.speech([pc.Name], yeah, mum told me about you. I didn't really hang around to get the full story, though. You know how it is...)]
+					[npc.speech([pc.Name], ага, мама рассказывала мне о тебе. Правда, я не особо задерживался, чтобы узнать все подробности. Ну, ты понимаешь...)]
 				#ENDIF
 			#ENDIF
-			 [npc.name] explains, clearly feeling a little guilty about it. [npc.speech(But anyway! Now that you're here, come with me! I can show you my place!)]
+			 [npc.name] объясняет, явно чувствуя за это легкую вину. [npc.speech(Но всё в любом случае! Раз уж ты здесь, пойдем со мной! Я покажу тебе свое жилище!)]
 		</p>
 	#ELSE
 		<p>
-			Deciding that [npc.namePos] in need of some parental love, you step forwards and wrap your [pc.arms] around your [npc.relation(pc)], before planting a wet kiss on [npc.her] cheek and pulling [npc.herHim] into a loving hug. [npc.She] returns your gesture, hugging you close to [npc.her] warm body as you both share a happy moment, before breaking away from each other. Looking into [npc.her] [npc.eyes+], you greet your [npc.relation(pc)] once again, [pc.speech(Hello again, [npc.Name], how have you been?)]
+			Решив, что [npc.namePos] нуждается в родительской любви, ты делаешь шаг вперед и обвиваешь свои [pc.arms] вокруг [npc.relation(pc)], прежде чем запечатлеть влажный поцелуй на [npc.her] щеке и притянуть [npc.herHim] в любящие объятия. [npc.She] отвечает на твой жест, прижимая тебя к своему [npc.her] теплому телу; вы оба наслаждаетесь этим счастливым мгновением, прежде чем отстраниться друг от друга. Заглянув в [npc.her] [npc.eyes+], ты снова приветствуешь своего [npc.relation(pc)], [pc.speech(Снова привет, [npc.Name], как ты поживаешь?)]
 		</p>
 		<p>
-			[npc.speech(I've been fine, [npc.pcName], you don't need to worry about me,)] [npc.she] replies, before continuing, [npc.speech(I don't like to stop and chat in the same place as I work, so let's go back to my place.)]
+			[npc.speech(У меня всё хорошо, [npc.pcName], тебе не стоит за меня беспокоиться,)] — отвечает [npc.she], после чего продолжает: [npc.speech(Не люблю задерживаться на болтовню там, где работаю, так что давай вернемся ко мне.)]
 		</p>
 	#ENDIF
 	]]>
@@ -360,88 +359,86 @@
 	<htmlContent tag="OFFSPRING_ENCOUNTER_PASSIONATE_KISS"><![CDATA[
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringIntroduced))
 		#IF(npc.isAttractedTo(pc))
+<p>
+Ты первым приходишь в себя после шока от вашей неожиданной встречи и, с одной лишь мыслью в голове, делаешь шаг вперед, прежде чем обвить свои [pc.arms] вокруг [npc.namePos] спины. [npc.She] нежно улыбается тебе, а [npc.her] невинный [npc.eyes] подсказывает, что [npc.sheIs] не ждёт ничего большего, чем любящее объятие.
+</p>
 			<p>
-				You're the first to recover from the shock of your surprise meeting, and, with one thought in your mind, you step forwards, before wrapping your [pc.arms] around [npc.namePos] back. [npc.She] smiles fondly at you, [npc.her] innocent [npc.eyes] informing you that [npc.sheIs] expecting nothing more than a loving hug.
+				Однако в твоих планах не только это, и когда [npc.she] наклоняется вперед, чтобы ответить на твои объятия, ты резко прижимаешь свои [pc.lips+] к [npc.hers]. Резко вскинув [pc.hands], чтобы обхватить [npc.her] голову, ты страстно втискиваешь свой [pc.tongue+] в [npc.her] рот, отчаянно [pc.moaning], прижимая свою удивленную [npc.relation(pc)] к ближайшей стене и начиная жадно целовать [npc.herHim].
+			</p><p>
+				К твоему огромному удовольствию, [npc.she] не пытается оттолкнуть тебя, а вместо этого [npc.her] протягивает свои [npc.hands] руки, чтобы обхватить тебя со спины. Притягивая тебя ближе, [npc.she] начинает тесно прижиматься к тебе, и ты чувствуешь, как [npc.her] влажные [npc.tongue] скользят по твоим, пока [npc.she] с энтузиазмом отвечает на твой поцелуй.
 			</p>
 			<p>
-				That's not quite what you have in mind, however, and as [npc.she] leans forwards to return your embrace, you quickly press your [pc.lips+] against [npc.hers]. Darting your [pc.hands] up to take hold of [npc.her] head, you passionately thrust your [pc.tongue+] into [npc.her] mouth, desperately [pc.moaning] as you push your surprised [npc.relation(pc)] back against a nearby wall and start to make out with [npc.herHim].
+				Так продолжается какое-то время, и пока ты прижимаешь свою [npc.relation(pc)] к стене, твои [pc.hands] начинают спускаться по [npc.her] телу, жадно ощупывая, поглаживая и сжимая каждую [unit.size] на [npc.her] теле, до которой могут дотянуться. В конце концов, ты решаешь дать [npc.herHim] возможность что-то сказать, и, оставив последний влажный поцелуй на [npc.her] [npc.lips+], ты отстраняешься с улыбкой.
 			</p>
 			<p>
-				Much to your delight, [npc.she] doesn't try to push you away, and instead, [npc.her] own [npc.hands] reach up to wrap around your back. Pulling you in closer, [npc.she] starts grinding against you, and you feel [npc.her] own [npc.tongue] wetly sliding over yours as [npc.she] enthusiastically returns your kiss.
+				[npc.speech([pc.Name]... Это было...)] [npc.she] тяжело дышит, вытирая лишнюю слюну с [npc.her] рта. [npc.speech(Вау...)]
 			</p>
 			<p>
-				You continue with this for some time, and as you press your [npc.relation(pc)] back against the wall, your [pc.hands] start to move down over [npc.her] body, eagerly groping, stroking, and squeezing every [unit.size] of [npc.her] body that's within your reach. Eventually, you feel as though you should give [npc.herHim] a chance to say something, and after planting one last wet kiss on [npc.her] [npc.lips+], you pull back, smiling.
+				Ты не можешь удержаться от смеха, глядя на ошеломленную реакцию [npc.namePos], [pc.speech(Ха-ха, значит, тебе нравятся такие приветствия?)]
 			</p>
 			<p>
-				[npc.speech([pc.Name]... That was...)] [npc.she] pants, wiping the excess saliva from [npc.her] mouth. [npc.speech(Wow...)]
-			</p>
-			<p>
-				You can't help but laugh at [npc.namePos] stunned reaction, [pc.speech(Haha, you like that sort of greeting then?)]
-			</p>
-			<p>
-				[npc.speech(Yeah, perhaps we should do it more often... But first, come with me! We'll be more comfortable at my place!)]
+				[npc.speech(Да, пожалуй, нам стоит делать это почаще... Но сначала, пойдем со мной! У меня будет уютнее!)]
 			</p>
 		#ELSE
+<p>
+Ты первым приходишь в себя после шока от вашей неожиданной встречи и, с одной лишь мыслью в голове, делаешь шаг вперед, прежде чем обвить свои [pc.arms] вокруг [npc.namePos] спины. [npc.She] нежно улыбается тебе, а [npc.her] невинный [npc.eyes] подсказывает, что [npc.sheIs] не ждёт ничего большего, чем любящее объятие.
+</p>
 			<p>
-				You're the first to recover from the shock of your surprise meeting, and, with one thought in your mind, you step forwards, before wrapping your [pc.arms] around [npc.namePos] back. [npc.She] smiles fondly at you, [npc.her] innocent [npc.eyes] informing you that [npc.sheIs] expecting nothing more than a loving hug.
+				Однако в твоих планах не только это, и когда [npc.she] наклоняется вперед, чтобы ответить на твои объятия, ты резко прижимаешь свои [pc.lips+] к [npc.hers]. Резко вскинув [pc.hands], чтобы обхватить [npc.her] голову, ты страстно втискиваешь свой [pc.tongue+] в [npc.her] рот, отчаянно [pc.moaning], прижимая свою удивленную [npc.relation(pc)] к ближайшей стене и начиная жадно целовать [npc.herHim].
 			</p>
 			<p>
-				That's not quite what you have in mind, however, and as [npc.she] leans forwards to return your embrace, you quickly press your [pc.lips+] against [npc.hers]. Darting your [pc.hands] up to take hold of [npc.her] head, you passionately thrust your [pc.tongue+] into [npc.her] mouth, desperately [pc.moaning] as you push your surprised [npc.relation(pc)] back against a nearby wall and start to make out with [npc.herHim].
+				Когда первый шок проходит, [npc.name] начинает сопротивляться и отчаянно отталкивает тебя от [npc.herHim]. Пользуясь случаем, ты оставляешь последний влажный поцелуй на [npc.her] [npc.lips+], а затем позволяешь ей оттолкнуть себя, тихо посмеиваясь при виде ошарашенного лица твоей [npc.relation(pc)].
 			</p>
 			<p>
-				As the initial shock wears off, [npc.name] starts to struggle, and desperately pushes you away from [npc.herHim]. Taking the opportunity to plant one last wet kiss on [npc.her] [npc.lips+], you then allow yourself to be pushed away, and let out a little laugh as you see the startled expression on your [npc.relation(pc)]'s face.
+				[npc.speech([pc.Name]! Что это сейчас было?!)] [npc.she] тяжело дышит, вытирая лишнюю слюну с [npc.her] рта. [npc.speech(Т-ты не можешь так приветствовать своего [npc.relation(pc)]!)]
 			</p>
 			<p>
-				[npc.speech([pc.Name]! What was that?!)] [npc.she] pants, wiping the excess saliva from [npc.her] mouth. [npc.speech(Y-You can't greet your [npc.relation(pc)] like that!)]
+				Ты не можешь перестать улыбаться, глядя на реакцию [npc.namePos]. [pc.speech(Ой, прости, [npc.name], я просто хотел показать, как сильно я тебя люблю!)]
 			</p>
 			<p>
-				You can't help but continue to smile at [npc.namePos] reaction. [pc.speech(Aw, sorry [npc.name], I just wanted to show you how much I love you!)]
-			</p>
-			<p>
-				[npc.speech(Yeah, well, perhaps leave out the whole kissing part next time... Anyway, come with me! We can talk more at my place.)]
+				[npc.speech(Ну да, пожалуй, в следующий раз обойдемся без поцелуев... В любом случае, идем со мной! Мы сможем поболтать у меня дома.)]
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(npc.isAttractedTo(pc))
+<p>
+Решив, что твоему [npc.relation(pc)] не помешает немного нежной родительской любви, ты делаешь шаг вперед и обвиваешь [pc.arms] спину [npc.her]. [npc.She] нежно улыбается тебе, а [npc.her] невинный [npc.eyes] сообщает, что [npc.sheIs] не ждет ничего, кроме любящих объятий.
+</p>
 			<p>
-				Deciding that your [npc.relation(pc)]'s in need of some intimate parental love, you step forwards and wrap your [pc.arms] around [npc.her] back. [npc.She] smiles fondly at you, [npc.her] innocent [npc.eyes] informing you that [npc.sheIs] expecting nothing more than a loving hug.
+				Однако в твоих планах не только это, и когда [npc.she] наклоняется вперед, чтобы ответить на твои объятия, ты резко прижимаешь свои [pc.lips+] к [npc.hers]. Резко вскинув [pc.hands], чтобы обхватить [npc.her] голову, ты страстно втискиваешь свой [pc.tongue+] в [npc.her] рот, отчаянно [pc.moaning], прижимая свою удивленную [npc.relation(pc)] к ближайшей стене и начиная жадно целовать [npc.herHim].
+			</p><p>
+				К твоему огромному удовольствию, [npc.she] не пытается оттолкнуть тебя, а вместо этого [npc.her] протягивает свои [npc.hands] руки, чтобы обхватить тебя со спины. Притягивая тебя ближе, [npc.she] начинает тесно прижиматься к тебе, и ты чувствуешь, как [npc.her] влажные [npc.tongue] скользят по твоим, пока [npc.she] с энтузиазмом отвечает на твой поцелуй.
 			</p>
 			<p>
-				That's not quite what you have in mind, however, and as [npc.she] leans forwards to return your embrace, you quickly press your [pc.lips+] against [npc.hers]. Darting your [pc.hands] up to take hold of [npc.her] head, you passionately thrust your [pc.tongue+] into [npc.her] mouth, desperately [pc.moaning] as you push your surprised [npc.relation(pc)] back against a nearby wall and start to make out with [npc.herHim].
+				Так продолжается какое-то время, и пока ты прижимаешь свою [npc.relation(pc)] к стене, твои [pc.hands] начинают спускаться по [npc.her] телу, жадно ощупывая, поглаживая и сжимая каждую [unit.size] на [npc.her] теле, до которой могут дотянуться. В конце концов, ты решаешь дать [npc.herHim] возможность что-то сказать, и, оставив последний влажный поцелуй на [npc.her] [npc.lips+], ты отстраняешься с улыбкой.
 			</p>
 			<p>
-				Much to your delight, [npc.she] doesn't try to push you away, and instead, [npc.her] own [npc.hands] reach up to wrap around your back. Pulling you in closer, [npc.she] starts grinding against you, and you feel [npc.her] own [npc.tongue] wetly sliding over yours as [npc.she] enthusiastically returns your kiss.
+				[npc.speech(Ммм, спасибо, [npc.pcName]...)] [npc.she] тяжело дышит, вытирая лишнюю слюну с [npc.her] рта. [npc.speech(Обожаю твои приветствия!)]
 			</p>
 			<p>
-				You continue with this for some time, and as you press your [npc.relation(pc)] back against the wall, your [pc.hands] start to move down over [npc.her] body, eagerly groping, stroking, and squeezing every [unit.size] of [npc.her] body that's within your reach. Eventually, you feel as though you should give [npc.herHim] a chance to say something, and after planting one last wet kiss on [npc.her] [npc.lips+], you pull back, smiling.
+				Ты не можешь не улыбнуться, глядя на [npc.namePos] счастливую реакцию. [pc.speech(Так и быть, буду радовать тебя ими почаще!)]
 			</p>
 			<p>
-				[npc.speech(Mmm, thanks, [npc.pcName]...)] [npc.she] pants, wiping the excess saliva from [npc.her] mouth. [npc.speech(I love these greetings of yours!)]
-			</p>
-			<p>
-				You can't help but smile at [npc.namePos] happy reaction. [pc.speech(I'll make sure to keep them coming!)]
-			</p>
-			<p>
-				[npc.speech(Mmm, I think I'm in the mood for some more of your attention... We'll be more comfortable at my place, follow me!)]
+				[npc.speech(Ммм, кажется, я не прочь получить еще немного твоего внимания... Нам будет уютнее у меня, пошли за мной!)]
 			</p>
 		#ELSE
+<p>
+Решив, что твоему [npc.relation(pc)] не помешает немного нежной родительской любви, ты делаешь шаг вперед и обвиваешь [pc.arms] спину [npc.her]. [npc.She] нежно улыбается тебе, а [npc.her] невинный [npc.eyes] сообщает, что [npc.sheIs] не ждет ничего, кроме любящих объятий.
+</p>
 			<p>
-				Deciding that your [npc.relation(pc)]'s in need of some intimate parental love, you step forwards and wrap your [pc.arms] around [npc.her] back. [npc.She] smiles fondly at you, [npc.her] innocent [npc.eyes] informing you that [npc.sheIs] expecting nothing more than a loving hug.
+				Однако в твоих планах не только это, и когда [npc.she] наклоняется вперед, чтобы ответить на твои объятия, ты резко прижимаешь свои [pc.lips+] к [npc.hers]. Резко вскинув [pc.hands], чтобы обхватить [npc.her] голову, ты страстно втискиваешь свой [pc.tongue+] в [npc.her] рот, отчаянно [pc.moaning], прижимая свою удивленную [npc.relation(pc)] к ближайшей стене и начиная жадно целовать [npc.herHim].
 			</p>
 			<p>
-				That's not quite what you have in mind, however, and as [npc.she] leans forwards to return your embrace, you quickly press your [pc.lips+] against [npc.hers]. Darting your [pc.hands] up to take hold of [npc.her] head, you passionately thrust your [pc.tongue+] into [npc.her] mouth, desperately [pc.moaning] as you push your surprised [npc.relation(pc)] back against a nearby wall and start to make out with [npc.herHim].
+				Когда первый шок проходит, [npc.name] начинает сопротивляться и отчаянно отталкивает тебя от [npc.herHim]. Пользуясь случаем, ты оставляешь последний влажный поцелуй на [npc.her] [npc.lips+], а затем позволяешь ей оттолкнуть себя, тихо посмеиваясь при виде ошарашенного лица твоей [npc.relation(pc)].
 			</p>
 			<p>
-				As the initial shock wears off, [npc.name] starts to struggle, and desperately pushes you away from [npc.herHim]. Taking the opportunity to plant one last wet kiss on [npc.her] [npc.lips+], you then allow yourself to be pushed away, and let out a little laugh as you see the startled expression on your [npc.relation(pc)]'s face.
+				[npc.speech([pc.Name]! Что это сейчас было?!)] [npc.she] тяжело дышит, вытирая лишнюю слюну с [npc.her] рта. [npc.speech(Т-ты не можешь так приветствовать своего [npc.relation(pc)]!)]
 			</p>
 			<p>
-				[npc.speech([pc.Name]! What was that?!)] [npc.she] pants, wiping the excess saliva from [npc.her] mouth. [npc.speech(Y-You can't greet your [npc.relation(pc)] like that!)]
+				Ты не можешь перестать улыбаться, глядя на реакцию [npc.namePos]. [pc.speech(Ой, прости, [npc.name], я просто хотел показать, как сильно я тебя люблю!)]
 			</p>
 			<p>
-				You can't help but continue to smile at [npc.namePos] reaction. [pc.speech(Aw, sorry [npc.name], I just wanted to show you how much I love you!)]
-			</p>
-			<p>
-				[npc.speech(Yeah, well, perhaps leave out the whole kissing part next time... Anyway, come with me. We can talk more at my place.)]
+				[npc.speech(Ну да, ладно, может, в следующий раз обойдемся без поцелуев... В любом случае, идем со мной. Поболтаем у меня дома.)]
 			</p>
 		#ENDIF
 	#ENDIF
@@ -450,45 +447,44 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_SCOLDING"><![CDATA[
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringIntroduced))
+
 		<p>
-			You're the first to recover from the shock of your surprise meeting, and as your initial surprise fades away, you find that you're shaking your head in utter disbelief. Looking into your [npc.relation(pc)]'s [npc.eyes], you frown in disapproval as you start to voice your concerns, [pc.speech([npc.Name]! Please don't tell me that you're collecting drugs and selling them to others!)]
+			Ты первым приходишь в себя после шока от этой неожиданной встречи, и когда первичное изумление проходит, ты ловишь себя на том, что недоверчиво качаешь головой. Глядя в [npc.eyes] своей [npc.relation(pc)], ты хмуришься в неодобрении и начинаешь высказывать свои опасения: [pc.speech([npc.Name]! Только не говори мне, что ты собираешь наркотики, чтобы перепродавать их другим!)]
 		</p>
 		<p>
 			#IF(npc.isConfident())
-				[npc.speech(So what if I am?!)] [npc.name] shouts back, clearly upset by your judgemental remark. [npc.speech(Do you know how hard it is to make a living around here?!)]
+				[npc.speech(Ну и что, если да?!)] [npc.name] выкрикивает в ответ, явно задетый твоим осуждающим тоном. [npc.speech(Ты хоть знаешь, как трудно здесь заработать на жизнь?!)]
 			#ELSE
-				[npc.speech(Yeah, so what if I am?)] [npc.name] replies, shuffling [npc.her] [npc.feet]. [npc.speech(I need a way to earn money...)]
+				[npc.speech(Ну и что, если да?)] [npc.name] отвечает, переминаясь с [npc.her] на [npc.feet]. [npc.speech(Мне нужен способ добывать деньги...)]
 			#ENDIF
 		</p>
 		<p>
-			[pc.speech(Don't you back-talk me!)] you respond in the sternest tone you can muster, [pc.speech(I don't approve of what you're doing, and what's more, I don't want you hanging out in these bat caverns! It's very dangerous down here!)]
+			[pc.speech(Не смей мне дерзить!)] — отвечаешь ты самым суровым тоном, на который только способен, — [pc.speech(Мне не нравится то, чем ты занимаешься, и более того, я не хочу, чтобы ты ошивалась в этих пещерах летучих мышей! Здесь очень опасно!)]
 		</p>
 		<p>
-			Obviously deciding that it's better to just endure your lecture rather than trying to talk back, [npc.name] just rolls [npc.her] [npc.eyes] and leans back against the wall. You continue to scold [npc.herHim] for a little while, making comments on everything, from the state of [npc.her] clothes, to speculating about the sort of hours [npc.she] keeps.
-		</p>
-		<p>
-			Eventually, however, you run out of steam, and [npc.name] pushes [npc.herself] off of the wall, before turning to you. [npc.speech(Thanks for the lecture, [npc.pcName], I'll do my best to meet with your approval for the next time we see each other. Anyway, I don't like to stop and chat in the same place as I work, so let's go back to my place. Perhaps you can have fun lecturing me about the state of my room as well...)]
-		</p>
+			Очевидно решив, что проще просто терпеть твою лекцию, чем пытаться огрызаться, [npc.name] просто закатывает [npc.her] [npc.eyes] и прислоняется спиной к стене. Ты еще какое-то время продолжаешь отчитывать [npc.herHim], комментируя всё подряд: от состояния одежды [npc.her] до догадок о том, в какое время [npc.she] обычно пропадает.
+		</p><p>
+Однако в конце концов у тебя заканчиваются силы, и [npc.name] отталкивает [npc.herself] от стены, после чего поворачивается к тебе. [npc.speech(Спасибо за лекцию, [npc.pcName], в следующий раз я постараюсь тебя не разочаровать. В любом случае, я не люблю стоять и болтать там же, где работаю, так что давай отправимся ко мне. Может, ты ещё и поучишь меня наведению порядка в моей комнате...)]
+</p>
 	#ELSE
 		<p>
-			As you look [npc.name] up and down, you find yourself shaking your head in utter disbelief. Looking into your [npc.relation(pc)]'s [npc.eyes], you frown in disapproval as you start to voice your concerns, [pc.speech([npc.Name]! Please don't tell me that you're still out here collecting drugs and selling them to others!)]
+			Оглядывая [npc.name] с ног до головы, ты невольно качаешь головой в полном недоумении. Заглянув в [npc.eyes] своего [npc.relation(pc)], ты хмуришься в неодобрении и начинаешь высказывать свои опасения: [pc.speech([npc.Name]! Только не говори мне, что ты всё еще торчишь здесь, собирая дурь и продавая её другим!)]
 		</p>
 		<p>
 			#IF(npc.isConfident())
-				[npc.speech(So what if I am?!)] [npc.name] shouts back, clearly upset by your judgemental remark. [npc.speech(Do you know how hard it is to make a living around here?!)]
+				[npc.speech(Ну и что, если да?!)] [npc.name] выкрикивает в ответ, явно задетый твоим осуждающим тоном. [npc.speech(Ты хоть знаешь, как трудно здесь заработать на жизнь?!)]
 			#ELSE
-				[npc.speech(Yeah, so what if I am?)] [npc.name] replies, shuffling [npc.her] [npc.feet]. [npc.speech(I need a way to earn money...)]
+				[npc.speech(Ну и что, если да?)] [npc.name] отвечает, переминаясь с [npc.her] на [npc.feet]. [npc.speech(Мне нужен способ добывать деньги...)]
 			#ENDIF
 		</p>
 		<p>
-			[pc.speech(Don't you back-talk me!)] you respond in the sternest tone you can muster. [pc.speech(I don't approve of what you're doing, and what's more, I don't want you hanging out in these caverns! It's very dangerous down here!)]
+			[pc.speech(Не смей мне дерзить!)] — отвечаешь ты самым суровым тоном, на который только способна. [pc.speech(Мне не нравится то, чем ты занимаешься, и более того, я не хочу, чтобы ты ошивалась в этих пещерах! Здесь очень опасно!)]
 		</p>
 		<p>
-			Obviously deciding that it's better to just endure your lecture rather than trying to talk back, [npc.name] just rolls [npc.her] [npc.eyes] and leans back against the wall. You continue to scold [npc.herHim] for a little while, making comments on everything, from the state of [npc.her] clothes, to speculating about the sort of hours [npc.she] keeps.
-		</p>
-		<p>
-			Eventually, however, you run out of steam, and [npc.name] pushes [npc.herself] off of the wall, before turning to you. [npc.speech(Thanks for the lecture, [npc.pcName], I'll do my best to meet with your approval for the next time we see each other. Anyway, I don't like to stop and chat in the same place as I work, so let's go back to my place. Perhaps you can have fun lecturing me about the state of my room as well...)]
-		</p>
+			Очевидно решив, что проще просто терпеть твою лекцию, чем пытаться огрызаться, [npc.name] просто закатывает [npc.her] [npc.eyes] и прислоняется спиной к стене. Ты еще какое-то время продолжаешь отчитывать [npc.herHim], комментируя всё подряд: от состояния одежды [npc.her] до догадок о том, в какое время [npc.she] обычно пропадает.
+		</p><p>
+Однако в конце концов у тебя заканчиваются силы, и [npc.name] отталкивает [npc.herself] от стены, после чего поворачивается к тебе. [npc.speech(Спасибо за лекцию, [npc.pcName], в следующий раз я постараюсь тебя не разочаровать. В любом случае, я не люблю стоять и болтать там же, где работаю, так что давай отправимся ко мне. Может, ты ещё и поучишь меня наведению порядка в моей комнате...)]
+</p>
 	#ENDIF
 	]]>
 	</htmlContent>
@@ -499,82 +495,82 @@
 	#ENDVAR
 
 	<p>
-		You don't really have time to stop and talk with [npc.name] at the moment, and you tell [npc.herHim] as much, [pc.speech(This isn't the best time for me right now, I'll come back later.)]
+	Сейчас у тебя не особо есть время, чтобы остановиться и поболтать с [npc.name], и ты так и говоришь [npc.herHim], [pc.speech(Сейчас не самое подходящее время, я загляну позже.)]
 	</p>
 	#IF(npc.hasFlag(NPC_FLAG_flagOffspringFightApologyNeeded) || npc.hasFlag(NPC_FLAG_flagOffspringRapeApologyNeeded))
 		<p>
 			#IF(affection<AFFECTION_NEGATIVE_THREE_STRONG_DISLIKE.getMaximumValue())
-				Letting out an angry snort, your [npc.relation(pc)] turns [npc.her] back on you and starts to walk away, shouting over [npc.her] shoulder as [npc.she] makes [npc.her] exit,
+				Раздраженно фыркнув, твоя [npc.relation(pc)] разворачивается к тебе [npc.her] спиной и уходит, крикнув через [npc.her] плечо, пока [npc.she] заставляет [npc.her] уйти,
 				#IF(npc.isConfident())
-					 [npc.speech(Fine, fuck off then! See if I care! Don't bother coming back unless you're gonna apologise!)]
+					 [npc.speech(Ладно, вали уже! Посмотрим, будет ли мне не плевать! И не вздумай возвращаться, пока не извинишься!)]
 				#ELSE
-					 [npc.speech(Eugh, fine! See if I care! Oh, and don't bother coming back unless you're gonna apologise!)]
+					 [npc.speech(Фу, ладно! Посмотрим, будет ли мне не плевать! Ах да, и не вздумай возвращаться, пока не извинишься!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
-				Letting out a dismissive snort, your [npc.relation(pc)] turns [npc.her] back on you and starts to walk away, shouting over [npc.her] shoulder as [npc.she] makes [npc.her] exit,
+				Пренебрежительно фыркнув, твоя [npc.relation(pc)] разворачивается к тебе [npc.her] спиной и уходит, крикнув через [npc.her] плечо, пока [npc.she] заставляет [npc.her] уйти,
 				#IF(npc.isConfident())
-					 [npc.speech(Fine, see you later! And you'd better be ready to apologise by then!)]
+					 [npc.speech(Ладно, увидимся! И лучше сразу приготовь извинения к тому моменту!)]
 				#ELSE
-					 [npc.speech(Fine, see you later! I'm expecting an apology when you return!)])
+					 [npc.speech(Ладно, увидимся! Жду извинений, когда вернешься!)]
 				#ENDIF
 			#ELSE
-				Letting out a disappointed whine, your [npc.relation(pc)] reluctantly accepts your excuse to leave.
+				Разочарованно заскулив, твоя [npc.relation(pc)] неохотно принимает твое оправдание и уходит.
 				#IF(npc.isConfident())
-					 [npc.speech(Ok then... I'll see you later!)]
+					 [npc.speech(Ну ладно... Увидимся!)]
 				#ELSE
-					 [npc.speech(Ok then... I'll see you later I guess...)])
+					 [npc.speech(Ну ладно... Наверное, увидимся...)]
 				#ENDIF
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
 			#IF(affection<AFFECTION_NEGATIVE_FOUR_HATE.getMaximumValue())
-				Letting out an angry snort, your [npc.relation(pc)] turns [npc.her] back on you and starts to walk away, shouting over [npc.her] shoulder as [npc.she] makes [npc.her] exit,
+				Раздраженно фыркнув, твоя [npc.relation(pc)] разворачивается к тебе [npc.her] спиной и уходит, крикнув через [npc.her] плечо, пока [npc.she] заставляет [npc.her] уйти,
 				#IF(npc.isConfident())
-					[npc.speech(Fine, fuck off then! See if I care!)]
+					[npc.speech(Ладно, да и хрен с тобой! Посмотрим, будет ли мне не плевать!)]
 				#ELSE
-					[npc.speech(Eugh, fine! See if I care!)]
+					[npc.speech(Фу, ладно! Посмотрим, будет ли мне не плевать!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_NEGATIVE_TWO_DISLIKE.getMaximumValue())
-				Letting out a derisive snort, your [npc.relation(pc)] turns [npc.her] back on you and starts to walk away, shouting over [npc.her] shoulder as [npc.she] makes [npc.her] exit,
+				Презрительно фыркнув, твоя [npc.relation(pc)] поворачивается к тебе [npc.her] спиной и уходит, крича через [npc.her] плечо, пока [npc.she] делает [npc.her] выход,
 				#IF(npc.isConfident())
-					[npc.speech(Fine! See if I care!)]
+					[npc.speech(Ладно! Посмотрим, будет ли мне не плевать!)]
 				#ELSE
-					[npc.speech(Eugh, fine! See if I care!)]
+					[npc.speech(Фу, ладно! Посмотрим, будет ли мне не плевать!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
-				Letting out a dismissive snort, your [npc.relation(pc)] turns [npc.her] back on you and starts to walk away, shouting over [npc.her] shoulder as [npc.she] makes [npc.her] exit,
+				Пренебрежительно фыркнув, твоя [npc.relation(pc)] разворачивается к тебе [npc.her] спиной и уходит, крикнув через [npc.her] плечо, пока [npc.she] заставляет [npc.her] уйти,
 				#IF(npc.isConfident())
-					[npc.speech(Fine, see you later [npc.pcName]!)]
+					[npc.speech(Ладно, увидимся позже, [npc.pcName]!)]
 				#ELSE
-					[npc.speech(Fine, see you later I guess!)]
+					[npc.speech(Ладно, ну, увидимся, наверное!)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_POSITIVE_ONE_FRIENDLY.getMaximumValue())
-				Letting out a disappointed whine, your [npc.relation(pc)] reluctantly accepts your excuse to leave.
+				Разочарованно заскулив, твоя [npc.relation(pc)] неохотно принимает твое оправдание и уходит.
 				#IF(npc.isConfident())
-					[npc.speech(Fine, see you later [npc.pcName]...)]
+					[npc.speech(Ладно, увидимся позже, [npc.pcName]...)]
 				#ELSE
-					[npc.speech(Fine, see you later I guess...)]
+					[npc.speech(Ладно, ну, увидимся, наверное...)]
 				#ENDIF
 			#ELSEIF (affection<AFFECTION_POSITIVE_THREE_CARING.getMaximumValue())
-					Letting out a miserable whine, your [npc.relation(pc)] reluctantly accepts your excuse to leave.
+					Издавая жалобный скулёж, твоя [npc.relation(pc)] неохотно принимает твое оправдание, чтобы уйти.
 				#IF(npc.isConfident())
-					[npc.speech(Aww... Come back soon, ok?! I miss you!)]
+					[npc.speech(Ох... Возвращайся скорее, ладно?! Я буду скучать!)]
 				#ELSE
-					[npc.speech(Aww... I hope you come back soon...)]
+					[npc.speech(Ох... Надеюсь, ты скоро вернешься...)]
 				#ENDIF
 			#ELSE
-				With a look of despair on [npc.her] face, your [npc.relation(pc)] miserably accepts your excuse to leave.
+					С отчаянием на [npc.her] лице, твоя [npc.relation(pc)] с грустью принимает твое оправдание и отпускает тебя.
 				#IF(npc.isConfident())
-					[npc.speech(Aww... Please come back soon! I love you [npc.pcName]!)]
+					[npc.speech(Ох... Пожалуйста, возвращайся скорее! Я люблю тебя, [npc.pcName]!)]
 				#ELSE
-					[npc.speech(Aww... I hope you come back soon... I love you [npc.pcName]!)]
+					[npc.speech(Ох... Надеюсь, ты скоро вернешься... Я люблю тебя, [npc.pcName]!)]
 				#ENDIF
 			#ENDIF
 		</p>
 	#ENDIF
 	<p>
-		Walking away, you leave your [npc.relation(pc)] to get on with [npc.her] mushroom foraging and continue on your journey.
+		Уходя, ты оставляешь свою [npc.relation(pc)] заниматься [npc.her] сбором грибов и продолжаешь свой путь.
 	</p>
 	]]>
 	</htmlContent>
@@ -582,47 +578,49 @@
 	<htmlContent tag="OFFSPRING_ENCOUNTER_APOLOGY"><![CDATA[
 	<p>
 		#IF(npc.hasFlag(NPC_FLAG_flagOffspringFightApologyNeeded) && npc.hasFlag(NPC_FLAG_flagOffspringRapeApologyNeeded))
-			Deciding that you need to apologise for both attacking, and then raping your [npc.relation(pc)], you step forwards and start to speak, [pc.speech([npc.Name], I really am sorry for what I've done to you. I'm truly sorry...)]
+			Решив, что тебе нужно извиниться и за нападение, и за изнасилование твоей [npc.relation(pc)], ты делаешь шаг вперед и начинаешь говорить: [pc.speech([npc.Name], Мне правда очень жаль за то, что я с тобой сделал. Я искренне раскаиваюсь...)]
 		#ELSEIF (npc.hasFlag(NPC_FLAG_flagOffspringFightApologyNeeded))
-			Deciding that you need to apologise for attacking your [npc.relation(pc)], you step forwards and start to speak, [pc.speech([npc.Name], I really am sorry for what I've done to you. I'm truly sorry...)]
+			Решив, что тебе нужно извиниться за нападение на свою [npc.relation(pc)], ты делаешь шаг вперед и начинаешь говорить: [pc.speech([npc.Name], Мне правда очень жаль за то, что я с тобой сделал. Я искренне раскаиваюсь...)]
 		#ELSEIF (npc.hasFlag(NPC_FLAG_flagOffspringRapeApologyNeeded))
-			Deciding that you need to apologise for attacking your [npc.relation(pc)], you step forwards and start to speak, [pc.speech([npc.Name], I really am sorry for what I've done to you. I'm truly sorry...)]
+			Решив, что тебе нужно извиниться за нападение на свою [npc.relation(pc)], ты делаешь шаг вперед и начинаешь говорить: [pc.speech([npc.Name], Мне правда очень жаль за то, что я с тобой сделал. Я искренне раскаиваюсь...)]
 		#ELSE
-			Deciding that you need to apologise for treating your [npc.relation(pc)] so poorly, you step forwards and start to speak, [pc.speech([npc.Name], I really am sorry for the way I've treated you. I know I've done some bad things, but please believe me when I say that I'm truly sorry.)]
+			Решив, что тебе нужно извиниться за то, как плохо ты обращался со своей [npc.relation(pc)], ты делаешь шаг вперед и начинаешь говорить: [pc.speech([npc.Name], Мне правда очень жаль за то, как я с тобой обращался. Знаю, я натворил дел, но, пожалуйста, поверь мне — я искренне раскаиваюсь.)]
 		#ENDIF
 	</p>
 		
 	#IF(npc.isConfident())
 		<p>
-			[npc.Name] turns towards you and puts [npc.her] [npc.hands] on [npc.her] [npc.hips]. [npc.speech(You're damn right you're sorry! And you're going to need to say more than that if you want me to forgive you!)]
+			[npc.Name] поворачивается к тебе и упирает [npc.her] [npc.hands] в [npc.her] [npc.hips]. [npc.speech(Чертовски верно, что тебе жаль! И тебе придется сказать куда больше, если хочешь, чтобы я тебя простила!)]
 		</p>
 		<p>
-			You continue to apologise to your [npc.relation(pc)] for some time, and while [npc.she] frequently interrupts you to berate you, you can tell that your words are having a positive effect. After a while of this back-and-forth, you run out of ways in which to say sorry, and [npc.name] finally stops shouting at you, before stepping back and sighing.
+			Ты какое-то время продолжаешь извиняться перед своей [npc.relation(pc)], и хотя [npc.she] то и дело прерывает тебя, чтобы отчитать, ты чувствуешь, что твои слова действуют. Спустя время этих эмоциональных качелей у тебя заканчиваются способы выразить раскаяние, и [npc.name] наконец перестает на тебя кричать, после чего отступает и тяжело вздыхает.
 		</p>
 		<p>
-			A heavy silence fills the air, and just as you're about to say something to break it, [npc.name] finally speaks once more, [npc.speech(I need some time to think about this. Just... Eugh! Come back later if you really care.)]
+			В воздухе повисает тяжелая тишина, и как раз в тот момент, когда ты собираешься что-то сказать, чтобы ее прервать, [npc.name] наконец снова заговаривает: [npc.speech(Мне нужно время, чтобы все обдумать. Просто... Эх! Приходи позже, если тебе действительно не плевать.)]
 		</p>
 		<p>
-			With that, [npc.she] spins around and hurriedly walks off, [npc.her] words echoing in your [pc.ears] as you watch [npc.herHim] turn the corner and disappear out of sight.
+		
+			С этими словами [npc.she] резко разворачивается и поспешно уходит, а слова [npc.her] эхом отдаются в твоих [pc.ears], пока ты наблюдаешь, как [npc.herHim] сворачивает за угол и скрывается из виду.
 		</p>
 		<p>
-			[pc.thought(That could have gone better,)] you think to yourself as you prepare to continue on your way, [pc.thought(then again, it could also have gone a lot worse...)]
+			[pc.thought(Могло бы выйти и лучше,)] — думаешь ты про себя, собираясь продолжить путь, — [pc.thought(хотя, с другой стороны, могло быть и куда хуже...)]
 		</p>
 	#ELSE
 		<p>
-			[npc.Name] turns towards you and crosses [npc.her] [npc.arms]. [npc.speech(Yeah? Go on, I'm listening.)]
+			[npc.Name] поворачивается к тебе, скрестив [npc.her] [npc.arms]. [npc.speech(Да? Ну давай, я слушаю.)]
 		</p>
 		<p>
-			You continue to apologise to your [npc.relation(pc)] for some time, and while [npc.she] frequently turns [npc.her] back on you, before spinning around to mention yet another thing you've done wrong, you can tell that your words are having a positive effect. After a while of this back-and-forth, you run out of ways in which to say sorry, and [npc.name] lets out a deep sigh, before starting to pace back and forth in front of you.
+			Ты какое-то время продолжаешь извиняться перед своим [npc.relation(pc)], и хотя [npc.she] то и дело поворачивается к тебе [npc.her] спиной, чтобы затем развернуться и упомянуть очередную твою оплошность, ты чувствуешь, что твои слова действуют. Спустя некоторое время этих взаимных причитаний у тебя заканчиваются варианты, как выразить раскаяние, и [npc.name] тяжело вздыхает, после чего начинает мерить шагами пространство перед тобой.
 		</p>
 		<p>
-			A heavy silence fills the air, and just as you're about to say something to break it, [npc.name] finally speaks once more, [npc.speech(I need some time to think about this. Just... Eugh! Come back later if you really care.)]
+			В воздухе повисает тяжелая тишина, и как раз в тот момент, когда ты собираешься что-то сказать, чтобы ее прервать, [npc.name] наконец снова заговаривает: [npc.speech(Мне нужно время, чтобы все обдумать. Просто... Эх! Приходи позже, если тебе действительно не плевать.)]
 		</p>
 		<p>
-			With that, [npc.she] spins around and hurriedly walks off, [npc.her] words echoing in your [pc.ears] as you watch [npc.herHim] turn the corner and disappear out of sight.
+		
+			С этими словами [npc.she] резко разворачивается и поспешно уходит, а слова [npc.her] эхом отдаются в твоих [pc.ears], пока ты наблюдаешь, как [npc.herHim] сворачивает за угол и скрывается из виду.
 		</p>
 		<p>
-			[pc.thought(That could have gone better,)] you think to yourself as you prepare to continue on your way, [pc.thought(then again, it could also have gone a lot worse...)]
+			[pc.thought(Могло бы выйти и лучше,)] — думаешь ты про себя, собираясь продолжить путь, — [pc.thought(хотя, с другой стороны, могло быть и куда хуже...)]
 		</p>
 	#ENDIF
 	]]>
@@ -630,13 +628,13 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_FIGHT"><![CDATA[
 	<p>
-		Just because [npc.sheIs] your [npc.relation(pc)], that doesn't mean [npc.sheIs] any better than the rest of the lowlifes inhabiting these caverns. Lowering into a combat stance, you grin at [npc.name]. [pc.speech(No [npc.relation(pc)] of mine is going to live like this and expect not to be punished! I'm going to teach you a lesson!)]
+		То, что [npc.sheIs] — твой [npc.relation(pc)], еще не значит, что [npc.sheIs] лучше прочей отребья, обитающего в этих пещерах. Приняв боевую стойку, ты ухмыляешься [npc.name]. [pc.speech(Ни один мой [npc.relation(pc)] не будет жить вот так и ждать, что его не накажут! Я преподам тебе урок!)]
 	</p>
 	<p>
 		#IF(npc.isConfident())
-			[npc.speech(What the hell?!)] [npc.name] cries out, before jumping back and preparing to defend [npc.herself]. [npc.speech(You'll be sorry!)]
+			[npc.speech(Какого черта?!)] вскрикивает [npc.name], отпрыгивая назад и готовясь защищать [npc.herself]. [npc.speech(Ты пожалеешь о своем выборе!)]
 		#ELSE
-			[npc.speech(W-What?!)] [npc.name] cries out, before jumping back and preparing to defend [npc.herself]. [npc.speech(I can't believe this!)]
+			[npc.speech(Ч-что?!)] вскрикивает [npc.name], отпрыгивая назад и готовясь защищать [npc.herself]. [npc.speech(Поверить в это не могу!)]
 		#ENDIF
 	</p>
 	]]>
@@ -644,46 +642,48 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_TALKING"><![CDATA[
 	#IF(!npc.hasFlag(NPC_FLAG_flagOffspringApartmentIntroduced))
+
 		<p>
-			[npc.Name] turns around and sets off down a nearby path. Following in [npc.her] footsteps, you allow your [npc.relation(pc)] to take the lead as [npc.she] guides you through the trail of narrow passageways that lead to [npc.her] home. With how narrow the paths are which [npc.she] leads you down, you rarely get the chance to walk side-by-side, and so decide to save conversation for when you finally arrive, resulting in your five-minute journey being mostly in silence.
+			[npc.Name] разворачивается и отправляется по ближайшей тропе. Следуя по стопам [npc.her], ты позволяешь своему [npc.relation(pc)] вести тебя, пока [npc.she] направляет тебя через лабиринт узких проходов, ведущих к дому [npc.her]. Из-за того, насколько узки тропы, по которым [npc.she] ведет тебя, вам редко удается идти плечом к плечу, поэтому ты решаешь приберечь разговоры до прибытия, из-за чего ваше пятиминутное путешествие проходит почти в тишине.
 		</p>
 		<p>
-			Eventually, [npc.name] steps off to one side, and, bending a patch of tall, glowing mushrooms to one side, [npc.she] reveals a hidden cave, before stepping inside and calling for you to follow [npc.herHim]. Although there's not much of an exterior to look at, as you step into your [npc.relation(pc)]'s home, you find that the interior gives the impression of this place being at least somewhat inhabitable.
+			Наконец, [npc.name] отходит в сторону и, отодвинув пучок высоких светящихся грибов, [npc.she] открывает вход в потайную пещеру, после чего заходит внутрь и зовет тебя следовать за [npc.herHim]. Хотя снаружи почти ничего не видно, как только ты вступаешь в дом своего [npc.relation(pc)], становится ясно, что внутри это место выглядит вполне обитаемым.
 		</p>
 		<p>
 			Looking down the length of what must at one time have been an Enforcer outpost, you see that [npc.name] has done [npc.her] best to convert it into having the appearance of an apartment. You assume that the single door off to the left-hand side leads into your [npc.relation(pc)]'s bedroom, while the main area in which you find yourself standing is being used as a combined living and dining-room, with a small section partitioned off at the far end serving as a kitchen.
 		</p>
 		<p>
-			[pc.speech(You've done well with this place,)] you say, and even if you don't approve of the methods in which [npc.she] earns a living, you're happy that your [npc.relation(pc)] at least has a roof over [npc.her] head. [pc.speech(You seem to be keeping the place clean. Good [npc.girl]!)]
+			[pc.speech(Ты отлично обустроилась здесь,)] — говоришь ты, и даже если тебе не нравятся способы, которыми [npc.she] зарабатывает на жизнь, ты рад, что у твоего [npc.relation(pc)] хотя бы есть крыша над [npc.her] головой. [pc.speech(Кажется, ты поддерживаешь здесь чистоту. Молодец, [npc.girl]!)]
 		</p>
 		<p>
 			#IF(npc.isConfident())
-				[npc.speech(Thanks, [npc.pcName]!)]
+				[npc.speech(Спасибо, [npc.pcName]!)]
 			#ELSE
-				[npc.speech([pc.Name]... You're embarrassing me...)]
+				[npc.speech([pc.Name]... Ты меня смущаешь...)]
 			#ENDIF
-			 [npc.name] replies, locking the door after you and motioning for you to take a seat, before heading over to the kitchen to make you a drink. After just a moment [npc.she] returns, and sits down on the sofa next to you. [npc.speech(So, what do you want to talk about? I only have a little while before I need to get back to... erm... 'work', but let's make the most of our time together!)]
+			 [npc.name] отвечает, запирая за тобой дверь и жестом приглашая присесть, после чего направляется на кухню, чтобы приготовить тебе напиток. Спустя мгновение [npc.she] возвращается и садится на диван рядом с тобой. [npc.speech(Ну, о чем хочешь поговорить? У меня есть всего немного времени, прежде чем нужно будет вернуться к... э-э... «работе», но давай проведем это время с пользой!)]
 		</p>
 	#ELSE
+
 		<p>
-			[npc.Name] turns around and sets off down a nearby path. Following in [npc.her] footsteps, you allow your [npc.relation(pc)] to take the lead as [npc.she] guides you through the trail of narrow passageways that lead to [npc.her] home. With how narrow the paths are which [npc.she] leads you down, you rarely get the chance to walk side-by-side, and so decide to save conversation for when you finally arrive, resulting in your five-minute journey being mostly in silence.
+			[npc.Name] разворачивается и отправляется по ближайшей тропе. Следуя по стопам [npc.her], ты позволяешь своему [npc.relation(pc)] вести тебя, пока [npc.she] направляет тебя через лабиринт узких проходов, ведущих к дому [npc.her]. Из-за того, насколько узки тропы, по которым [npc.she] ведет тебя, вам редко удается идти плечом к плечу, поэтому ты решаешь приберечь разговоры до прибытия, из-за чего ваше пятиминутное путешествие проходит почти в тишине.
 		</p>
 		<p>
-			Eventually, you recognise that you're almost at your destination, and sure enough, [npc.name] soon steps off to one side, before bending a patch of tall, glowing mushrooms to one side to reveal a hidden cave. Following your [npc.relation(pc)] into the area beyond, you're once again pleasantly surprised to see that the interior is in a relatively clean and orderly state.
+			В конце концов ты понимаешь, что почти добрался до места назначения, и действительно, вскоре [npc.name] отходит в сторону, отодвигая пучок высоких светящихся грибов, чтобы открыть вход в скрытую пещеру. Следуя за твоим [npc.relation(pc)] внутрь, ты снова с приятным удивлением обнаруживаешь, что внутри всё относительно чисто и прибрано.
 		</p>
 		<p>
-			Looking down the length of what must at one time have been an Enforcer outpost, you see that [npc.name] has done [npc.her] best to convert it into having the appearance of an apartment. You assume that the single door off to the left-hand side leads into your [npc.relation(pc)]'s bedroom, while the main area in which you find yourself standing is being used as a combined living and dining-room, with a small section partitioned off at the far end serving as a kitchen.
+			Глядя вдоль помещения, которое когда-то наверняка было аванпостом Enforcer, ты видишь, что [npc.name] приложила [npc.her] всех усилий, чтобы превратить его в подобие уютной квартиры. Ты предполагаешь, что одинокая дверь слева ведет в спальню твоего [npc.relation(pc)], а основное пространство, в котором ты стоишь, служит совмещенной гостиной и столовой, при этом небольшая часть в дальнем конце отделена перегородкой под кухню.
 		</p>
 		<p>
-			[pc.speech(Good [npc.girl], you're keeping this place nice and clean,)] you say, turning to smile at [npc.name].
+			[pc.speech(Молодец, [npc.girl], ты содержишь это место в чистоте,)] — говоришь ты, поворачиваясь и улыбаясь [npc.name].
 		</p>
 		<p>
 			#IF(npc.isConfident())
-				[npc.speech(Thanks, [npc.pcName], I'm doing my best!)]
+				[npc.speech(Спасибо, [npc.pcName], я очень стараюсь!)]
 			#ELSE
-				[npc.speech([pc.Name]... You're embarrassing me again...)]
+				[npc.speech([pc.Name]... Ты снова заставляешь меня краснеть...)]
 			#ENDIF
-			 [npc.name] replies, locking the door after you and motioning for you to take your usual seat, before heading over to the kitchen to fetch some refreshments. After just a moment [npc.she] returns, and sits down on the sofa next to you. [npc.speech(So, what do you want to talk about? I only have a little while before I need to get back to... erm... 'work', but let's make the most of our time together!)]
+			 [npc.name] отвечает, запирая за тобой дверь, и жестом приглашает тебя занять привычное место, после чего отправляется на кухню за угощениями. Спустя мгновение [npc.she] возвращается и садится на диван рядом с тобой. [npc.speech(Ну, о чем хочешь поговорить? У меня есть всего немного времени, прежде чем нужно будет вернуться к... э-э... «работе», но давай проведем это время с пользой!)]
 		</p>
 	#ENDIF
 	]]>
@@ -691,74 +691,75 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_TALKING_OUT_OF_TIME"><![CDATA[
 	<p>
-		[npc.Name] has been glancing at the clock on the wall for the last few minutes, and as you finish what you were talking about, [npc.she] stands up. [npc.speech(Sorry, [npc.pcName], I really need to be getting on now...)]
+		Последние несколько минут [npc.Name] поглядывает на настенные часы, и как только ты заканчиваешь свою мысль, [npc.she] встает. [npc.speech(Прости, [npc.pcName], мне действительно пора идти...)]
 	</p>
 	<p>
-		You follow your [npc.relation(pc)]'s lead and get up off the sofa. [pc.speech(Ok, well I hope you don't mind me coming to visit some other time!)]
+		Ты следуешь примеру своего [npc.relation(pc)] и тоже поднимаешься с дивана. [pc.speech(Хорошо, надеюсь, ты не против, если я загляну к тебе как-нибудь в другой раз!)]
 	</p>
 	<p>
-		[npc.speech(Not at all! I'd love to see you again!)] [npc.she] replies, showing you to the door. You both say your farewells, and after just a few moments, you find yourself back out in the bat caverns once again...
+		[npc.speech(Вовсе нет! Я буду только рада увидеть тебя снова!)] — отвечает [npc.she], провожая тебя к двери. Вы прощаетесь, и всего через пару мгновений ты снова оказываешься в пещерах летучих мышей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_TALKING_INVENTORY"><![CDATA[
 	<p>
-		You shuffle a bit closer to [npc.name], and [npc.she] looks up at you expectantly as [npc.she] asks, [npc.speech(What is it, [npc.pcName]?)]
+		Ты чуть ближе пододвигаешься к [npc.name], и [npc.she] выжидающе смотрит на тебя, пока [npc.she] спрашивает: [npc.speech(В чем дело, [npc.pcName]?)]
 	</p>
 	<p>
-		[pc.speech(I think we need to have a little talk about the state of your clothes,)] you reply, looking up and down over you [npc.relation(pc)]'s body.
+		[pc.speech(Думаю, нам нужно немного поговорить о состоянии твоей одежды,)] — отвечаешь ты, бесстыдно оглядывая тело своего [npc.relation(pc)] с ног до головы.
 	</p>
 	<p>
-		[npc.speech(Yes, [npc.pcName]...)] [npc.she] obediently answers, clearly comfortable with doing whatever [npc.sheIs] told.
+		[npc.speech(Да, [npc.pcName]...)] — послушно отвечает [npc.she], явно чувствуя себя вполне комфортно, исполняя всё, что велела [npc.sheIs].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_TALKING_LEAVE"><![CDATA[
 	<p>
-		As you finish what you were talking about, you glance up at the clock on the wall, letting out a little gasp as you see what the time is. [pc.speech(Sorry, [npc.name], I really need to be getting on now...)]
+		Закончив свой рассказ, ты бросаешь взгляд на настенные часы и невольно ахаешь, увидев, сколько времени. [pc.speech(Прости, [npc.name], мне правда пора идти...)]
 	</p>
 	<p>
-		Your [npc.relation(pc)] follows your lead as you stand up and get up off the sofa. [npc.speech(Ok, [npc.pcName], come back to visit soon!)]
+		Твой [npc.relation(pc)] следует твоему примеру и тоже поднимается с дивана. [npc.speech(Хорошо, [npc.pcName], заходи к нам поскорее!)]
 	</p>
 	<p>
-		[pc.speech(Of course, I'll visit you again as soon as I can,)] you reply, allowing [npc.name] to show you to the door. You both say your farewells, and after just a few moments, you find yourself back out in the bat caverns once again...
+		[pc.speech(Конечно, я обязательно навещу тебя, как только смогу,)] — отвечаешь ты, позволяя [npc.name] проводить тебя к двери. Вы прощаетесь, и спустя всего мгновение ты снова оказываешься в пещерах летучих мышей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_BACKGROUND"><![CDATA[
 	<p>
-		Deciding that you'd like to get to know [npc.name] a little better, you ask [npc.herHim] about how [npc.sheIs] doing, [pc.speech(Tell me about your life! How's everything going for you right now?)]
+		Решив, что тебе хотелось бы узнать [npc.name] получше, ты спрашиваешь [npc.herHim] о том, как поживает [npc.sheIs]: [pc.speech(Расскажи о своей жизни! Как у тебя сейчас дела?)]
 	</p>
 	#IF(npc.isConfident())
 		<p>
-			[npc.She] leans back on the sofa and smiles. [npc.speech(Well, you know, there's always <i>someone</i> willing to pay for their next fix of 'shrooms, so I never have any problems with money. I mean, it's not my fault that they're addicted to drugs, so I may as well profit from it!)]
+			[npc.She] откидывается на спинку дивана и улыбается. [npc.speech(Ну, знаешь, всегда найдется <i>кто-то</i>, готовый раскошелиться на очередную дозу грибов, так что с деньгами у меня проблем нет. В конце концов, это не моя вина, что они сидят на наркотиках, так что грех не нажиться на этом!)]
 		</p>
 		<p>
-			From [npc.her] blasé attitude, you can tell that [npc.sheHasFull] absolutely no qualms about supplying desperate junkies with their next fix. Before you can offer a response, [npc.she] continues, [npc.speech(So yeah, everything's pretty good for me at the moment. Sure, it's a bit dark and gloomy all the way down here, but it's nice enough!)]
+		
+		По безразличному виду [npc.her] понимаешь, что [npc.sheHasFull] совершенно не мучается совестью, снабжая отчаявшихся торчков очередной дозой. Прежде чем ты успеваешь что-то ответить, [npc.she] продолжает: [npc.speech(Так что да, сейчас у меня всё довольно неплохо. Конечно, здесь, внизу, довольно темно и мрачно, но в целом вполне уютно!)]
 		</p>
 	#ELSE
 		<p>
-			[npc.She] leans back on the sofa and smiles. [npc.speech(Well, you know, there's always <i>someone</i> who's wanting to buy some 'shrooms, so I never have any problems with money. It's not my fault that they're addicted...)]
+			[npc.She] откидывается на спинку дивана и улыбается. [npc.speech(Ну, знаешь, всегда найдется <i>кто-то</i>, кто хочет прикупить грибов, так что с деньгами у меня проблем никогда нет. И это не моя вина, что они сидят на них...)]
 		</p>
 		<p>
-			From [npc.her] blasé attitude, you can tell that [npc.sheHasFull] absolutely no qualms about supplying desperate junkies with their next fix, although [npc.sheIs] a little nervous talking to you about it. Before you can offer a response, [npc.she] continues, [npc.speech(So yeah, everything's pretty good for me at the moment. Sure, it's a bit dark and gloomy all the way down here, but it's nice enough!)]
+			По [npc.her] беспечному виду можно понять, что [npc.sheHasFull] совершенно не мучается совестью, снабжая отчаявшихся торчков очередной дозой, хотя [npc.sheIs] немного нервничает, обсуждая это с тобой. Прежде чем ты успеваешь что-то ответить, [npc.she] продолжает: [npc.speech(Так что да, сейчас у меня всё довольно неплохо. Конечно, здесь, внизу, довольно темно и мрачно, но вполне уютно!)]
 		</p>
 	#ENDIF
-	<p>
-		Wanting to learn more about the manner in which [npc.she] earns a living, you encourage your [npc.relation(pc)] to talk about [npc.her] situation a little more, and as you ask a few more questions, [npc.she] starts to get carried away while giving you the details of one of the recent encounters [npc.she] had,
+<p>
+		Желая разузнать побольше о том, как [npc.she] зарабатывает на жизнь, ты подталкиваешь своего [npc.relation(pc)] рассказать о ситуации с [npc.her] поподробнее. Задавая всё новые и новые вопросы, ты замечаешь, как [npc.she] вовлекается в рассказ, с упоением описывая подробности одной из недавних встреч, которые случились у [npc.she],
 	 [style.random(
-			[npc.speech(... And he said he wasn't paying and attacked me! Of course I beat him, and then it was only fair that I took everything he had!)]
+			[npc.speech(... И он заявляет, что не собирается платить, и нападает на меня! Ну, конечно, я его отделала, а потом было вполне справедливо забрать у него всё до нитки!)]
 			|
-			[npc.speech(... So then as she pays me and leaves, she's like, 'I'm gonna tell my boyfriend to buy from you too!', and then later this horse-boy shows up and buys everything I had!)]
+			[npc.speech(... И вот она расплачивается и уходит, такая: «Я скажу своему парню, чтобы он тоже у тебя покупал!», а чуть позже заявляется этот конь-мальчик и скупает вообще всё, что у меня было!)]
 			|
-			[npc.speech(... And then the Enforcers turned up, shouting that selling psychedelic substances is illegal, and I only just managed to get away! That was a close one...)]
+			[npc.speech(... А потом нагрянули Enforcer, вопя, что торговать психоделиками незаконно, и мне едва удалось улизнуть! Ну и ну...)]
 			|
-			[npc.speech(... So after I'd sold her some 'shrooms, that slutty cat-girl starts hitting on me, and the next thing I know, she's dropping down on all fours and begging me to fuck her!)]
+			[npc.speech(... В общем, стоило мне продать ей немного «грибов», как эта похотливая кошкодевочка начала на меня заглядываться, и не успела я оглянуться, как она уже встала на четвереньки и умоляла трахнуть её!)]
 			|
-			[npc.speech(... And so I tell him that there's no haggling, and he whips out his cock and asks if he can partially pay by letting him fuck me! Some people really are desperate...)])]
+			[npc.speech(... И тогда я говорю ему, что торговаться не стоит, а он выхватывает свой член и спрашивает, можно ли частично расплатиться, если он оттрахает меня! Ну и отчаявшиеся же бывают люди...)]])]
 	</p>
 	]]>
 	</htmlContent>
@@ -769,28 +770,26 @@
 	#ENDVAR
 		
 	<p>
-		You start to talk with [npc.name] about all sorts of unimportant things, ranging from the recent weather you've been having, to the state of the bat caverns. Talking to your [npc.relation(pc)] fills you with a deep sense of calm and happiness, and every time [npc.she] smiles and offers [npc.her] opinion on something, you listen with rapt attention to every word that comes out of [npc.her] mouth.
+	Ты начинаешь болтать с [npc.name] обо всем на свете: от недавней погоды до состояния пещер летучих мышей. Разговоры с твоим [npc.relation(pc)] наполняют тебя глубоким чувством спокойствия и счастья, и каждый раз, когда [npc.she] улыбается и высказывает [npc.her] мнение о чем-либо, ты с замиранием сердца ловишь каждое слово, слетающее с уст [npc.her].
 	</p>
 	<p>
 		#IF(affection<AFFECTION_ZERO_NEUTRAL.getMaximumValue())
-			After a short while, [npc.she] offers you another drink, and after happily accepting, you sit with your [npc.relation(pc)] on the sofa in [npc.her] apartment, talking away as though you've known each other forever.
+			Спустя некоторое время [npc.she] предлагает тебе еще по одной выпивке, и, с радостью согласившись, ты усаживаешься со своим [npc.relation(pc)] на диван в квартире [npc.her], болтая без умолку, будто вы знаете друг друга целую вечность.
 		#ELSEIF (affection<AFFECTION_POSITIVE_ONE_FRIENDLY.getMaximumValue())
 			#IF(npc.isConfident())
-				 After a short while, [npc.she] offers you another drink, and after happily accepting, your [npc.relation(pc)] hurries off to the kitchen to fetch it for you. When [npc.she] returns, [npc.she] sits down right beside you on the sofa, smiling in a friendly manner as [npc.she] hands you your glass, before the two of you continue talking away as though you've known each other forever.
-			#ELSE
-				 After a short while, [npc.she] offers you another drink, and after happily accepting, your [npc.relation(pc)] hurries off to the kitchen to fetch it for you. When [npc.she] returns, [npc.she] sits down beside you on the sofa, smiling in a friendly manner as [npc.she] hands you your glass, before the two of you continue talking away as though you've known each other forever.
-			#ENDIF
+Спустя короткое время [npc.she] предлагает тебе ещё по одной, и, с радостью принимая угощение, твой [npc.relation(pc)] спешит на кухню, чтобы принести напиток. Когда [npc.she] возвращается, [npc.she] садится прямо рядом с тобой на диван и дружелюбно улыбается, пока [npc.she] протягивает тебе бокал, после чего вы вдвоём продолжаете болтать так, будто знаете друг друга целую вечность.			#ELSE
+Спустя короткое время [npc.she] предлагает тебе ещё по одной, и, с радостью принимая угощение, твой [npc.relation(pc)] спешит на кухню, чтобы принести напиток. Когда [npc.she] возвращается, [npc.she] садится рядом с тобой на диван, дружелюбно улыбаясь, пока [npc.she] протягивает тебе бокал, после чего вы вдвоём продолжаете болтать так, будто знаете друг друга целую вечность.			#ENDIF
 		#ELSEIF (affection<AFFECTION_POSITIVE_THREE_CARING.getMaximumValue())
 			#IF(npc.isConfident())
-				 After a short while, [npc.she] offers you another drink, and after happily accepting, your [npc.relation(pc)] hurries off to the kitchen to fetch it for you. When [npc.she] returns, [npc.she] sits down right beside you on the sofa, smiling in a loving manner as [npc.she] hands you your glass, before the two of you continue talking away as though you've known each other forever.
+				 Спустя короткое время [npc.she] предлагает тебе еще по одной. С радостным согласием твой [npc.relation(pc)] спешит на кухню, чтобы принести напиток. Когда [npc.she] возвращается, [npc.she] садится прямо рядом с тобой на диван, нежно улыбаясь, пока [npc.she] протягивает тебе бокал, после чего вы оба продолжаете болтать так, будто знаете друг друга целую вечность.
 			#ELSE
-				 After a short while, [npc.she] offers you another drink, and after happily accepting, your [npc.relation(pc)] hurries off to the kitchen to fetch it for you. When [npc.she] returns, [npc.she] sits down beside you on the sofa, smiling in a loving manner as [npc.she] hands you your glass, before the two of you continue talking away as though you've known each other forever.
+				 Спустя короткое время [npc.she] предлагает тебе еще по одной. С радостным согласием твой [npc.relation(pc)] спешит на кухню, чтобы принести напиток. Когда [npc.she] возвращается, [npc.she] садится рядом с тобой на диван, нежно улыбаясь, пока [npc.she] протягивает тебе бокал, после чего вы оба продолжаете болтать так, будто знаете друг друга целую вечность.
 			#ENDIF
 		#ELSE
 			#IF(npc.isConfident())
-				 After a short while, [npc.she] offers you another drink, and after happily accepting, your [npc.relation(pc)] hurries off to the kitchen to fetch it for you. When [npc.she] returns, [npc.she] sits down right beside you on the sofa, smiling in a loving manner as [npc.she] hands you your glass, before the two of you continue talking away as though you've known each other forever.
+				 Спустя короткое время [npc.she] предлагает тебе еще по одной. С радостным согласием твой [npc.relation(pc)] спешит на кухню, чтобы принести напиток. Когда [npc.she] возвращается, [npc.she] садится прямо рядом с тобой на диван, нежно улыбаясь, пока [npc.she] протягивает тебе бокал, после чего вы оба продолжаете болтать так, будто знаете друг друга целую вечность.
 			#ELSE
-				 After a short while, [npc.she] offers you another drink, and after happily accepting, your [npc.relation(pc)] hurries off to the kitchen to fetch it for you. When [npc.she] returns, [npc.she] sits down beside you on the sofa, smiling in a loving manner as [npc.she] hands you your glass, before the two of you continue talking away as though you've known each other forever.
+				 Спустя короткое время [npc.she] предлагает тебе еще по одной. С радостным согласием твой [npc.relation(pc)] спешит на кухню, чтобы принести напиток. Когда [npc.she] возвращается, [npc.she] садится рядом с тобой на диван, нежно улыбаясь, пока [npc.she] протягивает тебе бокал, после чего вы оба продолжаете болтать так, будто знаете друг друга целую вечность.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -799,21 +798,21 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_ENCOURAGE"><![CDATA[
 	<p>
-		Thinking that it must be hard for [npc.name] to make a living down here in the bat caverns, you decide to offer [npc.her] some words of encouragement, [pc.speech(I know that it must be hard to try and make a living down here, so I just wanted you to know that I'm happy to see that you're taking good care of yourself, [npc.name].)]
-	</p>
+		Подумав о том, как непросто [npc.name] выживать здесь, в пещерах летучих мышей, ты решаешь подбодрить [npc.her], [pc.speech(Я знаю, что здесь нелегко сводить концы с концами, поэтому просто хотел сказать, что рад видеть, как хорошо ты о себе заботишься, [npc.name].)]
+		</p>
 	#IF(npc.isConfident())
 		<p>
-			[npc.Name] blushes a little, and casts [npc.her] [npc.eyes] to the floor as [npc.she] replies, [npc.speech([npc.PcName], stop! You're embarrassing me!)]
+			[npc.Name] слегка краснеет и роняет [npc.her] [npc.eyes] на пол, пока [npc.she] отвечает: [npc.speech([npc.PcName], ну хватит! Ты меня смущаешь!)]
 		</p>
 		<p>
-			Despite [npc.her] reaction, you can tell that your words have made a positive difference, and when [npc.she] looks up again, you see that there's a big smile on [npc.her] face. Reiterating what you've just said, you go on to encourage your [npc.relation(pc)] to do [npc.her] best, and once you've finished, [npc.she] sincerely thanks you for your kind words.
+			Несмотря на реакцию [npc.her], ты понимаешь, что твои слова пошли ей на пользу, ведь когда [npc.she] снова поднимает взгляд, ты видишь широкую улыбку на [npc.her] лице. Повторив сказанное, ты продолжаешь подбадривать своего [npc.relation(pc)], призывая её делать [npc.her] всё возможное, а когда ты заканчиваешь, [npc.she] искренне благодарит тебя за добрые слова.
 		</p>
 	#ELSE
-		<p>
-			[npc.Name] smiles as [npc.she] hears your words, and happily replies, [npc.speech(Thanks, [npc.pcName], that really means a lot to me.)]
+<p>
+			[npc.Name] улыбается, когда [npc.she] слышит твои слова, и радостно отвечает: [npc.speech(Спасибо, [npc.pcName], это действительно много значит для меня.)]
 		</p>
 		<p>
-			From the sincerity of [npc.her] reaction, you can tell that your words have made a positive difference, and the big smile on [npc.her] face fills your heart with happiness. Reiterating what you've just said, you go on to encourage your [npc.relation(pc)] to do [npc.her] best, and once you've finished, [npc.she] lovingly thanks you for your kind words.
+			По искренности реакции [npc.her] ты понимаешь, что твои слова согрели ей душу, а широкая улыбка на лице [npc.her] наполняет твоё сердце радостью. Повторив сказанное, ты продолжаешь подбадривать своего [npc.relation(pc)], призывая её делать [npc.her] всё, на что она способна, а когда ты заканчиваешь, [npc.she] с любовью благодарит тебя за добрые слова.
 		</p>
 	#ENDIF
 	]]>
@@ -821,27 +820,27 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_SEX"><![CDATA[
 	<p>
-		From the moment you entered [npc.namePos] apartment, you haven't been able to take your [pc.eyes] off of [npc.herHim]. The fact that [npc.sheIs] your [npc.relation(pc)] is only serving to make you even more aroused, and as [npc.she] smiles #IF(npc.isFeminine())sweetly#ELSEcharmingly#ENDIF at you once more, you can't help but act.
+		С того самого момента, как ты переступил порог [npc.namePos], ты не можешь оторвать взгляда от [pc.eyes], стоящей перед [npc.herHim]. Тот факт, что [npc.sheIs] твоя [npc.relation(pc)], лишь сильнее разжигает твое желание, а [npc.she] лишь лукаво улыбается. #IF(npc.isFeminine())sweetly#ELSEcharmingly#ENDIF at you once more, you can't help but act.
 	</p>
 	<p>
-		[pc.speech(So, [npc.name],)] you say, putting on your most seductive voice as you shuffle closer to [npc.herHim] on the sofa, [pc.speech(you must get lonely down here all alone. How about we have a little intimate fun together to make up for it?)]
+		[pc.speech(Ну что, [npc.name],)] — произносишь ты самым соблазнительным голосом, пододвигаясь ближе к [npc.herHim] на диване, — [pc.speech(тебе, должно быть, одиноко здесь одной. Как насчет того, чтобы немного пошалить и развлечься вместе?)]
 	</p>
 	#IF(npc.isAttractedTo(pc))
 		<p>
-			[npc.NamePos] mouth opens a little as [npc.she] lets out a desperate little whine. With that as your only warning, your [npc.relation(pc)] suddenly lurches forwards, grabbing your head in both [npc.hands] as [npc.she] desperately presses [npc.her] [npc.lips] to yours.
+			Рот [npc.NamePos] слегка приоткрывается, когда [npc.she] издает отчаянный тихий стон. И это служит тебе единственным предупреждением: твоя [npc.relation(pc)] внезапно подается вперед, обхватывая твою голову обеими [npc.hands], пока [npc.she] отчаянно прижимает [npc.her] [npc.lips] к твоим.
 		</p>
 		<p>
-			Reaching up to pull [npc.herHim] close, you eagerly return [npc.namePos] passionate kiss, and, right there in the middle of [npc.her] apartment, you show your [npc.relation(pc)] just how much you love [npc.herHim]...
+			Притянув [npc.herHim] к себе, ты жадно отвечаешь на [npc.namePos] страстный поцелуй, и прямо посреди [npc.her] квартиры ты показываешь своей [npc.relation(pc)], как сильно ты любишь [npc.herHim]...
 		</p>
 	#ELSE
 		<p>
-			[npc.Name] backs away from you with a very worried look on [npc.her] face. [npc.speech([pc.Name]?! What the hell?! I'm not going to have sex with my own [pc.mother]!)]
+			[npc.Name] отстраняется от тебя с крайне обеспокоенным выражением лица на [npc.her]. [npc.speech([pc.Name]?! Какого черта?! Я не собираюсь заниматься сексом с собственной [pc.mother]!)]
 		</p>
 		<p>
 			#IF(pc.isFeminine())You pout#ELSEYou frown#ENDIF at your [npc.relation(pc)], upset that [npc.sheIs] not interested in what you had in mind, [pc.speech(Well, the offer's out there, if you ever change your mind.)]
 		</p>
 		<p>
-			[npc.speech(Ok, can we move on and pretend that this never happened now?!)] [npc.she] says, clearly upset by this turn of events.
+			[npc.speech(Ладно, может, просто сделаем вид, что этого никогда не было?!)] — говорит [npc.she], явно расстроенная таким поворотом событий.
 		</p>
 	#ENDIF
 	]]>
@@ -849,21 +848,21 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_SCOLD"><![CDATA[
 	<p>
-		Unimpressed by [npc.namePos] method of making a living, you decide to scold [npc.herHim] in the hopes that [npc.she]'ll change [npc.her] ways, [pc.speech(I really don't want my [npc.daughter] foraging and selling mushrooms all the way down here in the bat caverns. You need to start thinking about getting a real job, [npc.name]!)]
+		Не впечатленный тем, как [npc.namePos] добывает себе на жизнь, ты решаешь отчитать [npc.herHim] в надежде, что [npc.she] изменит свои [npc.her] привычки, [pc.speech(Мне правда не хочется, чтобы мой [npc.daughter] собирал и продавал грибы всё здесь, в пещерах летучих мышей. Тебе пора подумать о настоящей работе, [npc.name]!)]
 	</p>
 	#IF(npc.isConfident())
-		<p>
-			[npc.Name] leans back on the sofa, letting out an annoyed snort as [npc.she] hears your words. Rolling [npc.her] [npc.eyes], [npc.she] replies, [npc.speech(Don't come in here and try to tell me how to live my life, [npc.pcName]! I can do what I want!)]
+<p>
+			[npc.Name] откидывается на спинку дивана и раздражённо фыркает, когда [npc.she] слышит твои слова. [npc.she] закатывает [npc.her] [npc.eyes] и отвечает: [npc.speech(Не смей вваливаться сюда и указывать мне, как жить, [npc.pcName]! Я сама решаю, что мне делать!)]
 		</p>
 		<p>
-			You don't like [npc.her] insolent attitude, and after [npc.she] stops speaking, you start to berate [npc.her] some more. Reiterating what you've just said, you tell your [npc.relation(pc)] that you expect far more from [npc.herHim], and that you don't want [npc.herHim] doing this any longer. You're not sure if your words really have any effect, but at least [npc.she] now knows that [npc.her] [pc.mother] doesn't approve of the way in which [npc.sheIs] living [npc.her] life.
+			Тебе не нравится дерзкое поведение [npc.her], и когда [npc.she] замолкает, ты начинаешь распекать [npc.her] еще сильнее. Повторяя сказанное, ты говоришь своему [npc.relation(pc)], что ждешь от [npc.herHim] гораздо большего и не хочешь, чтобы [npc.herHim] занимался этим и дальше. Ты не уверен, подействовали ли твои слова на самом деле, но, по крайней мере, теперь [npc.she] знает, что [npc.her] [pc.mother] не одобряет то, как [npc.sheIs] ведет свою [npc.her] жизнь.
 		</p>
 	#ELSE
 		<p>
 			[npc.Name] leans back on the sofa, letting out a little sigh as [npc.she] hears your words. Rolling [npc.her] [npc.eyes], [npc.she] replies, [npc.speech(This is how I'm choosing to live my life, [npc.pcName]! I can do what I want!)]
 		</p>
 		<p>
-			You don't like [npc.her] insolent attitude, and after [npc.she] stops speaking, you start to berate [npc.her] some more. Reiterating what you've just said, you tell your [npc.relation(pc)] that you expect far more from [npc.herHim], and that you don't want [npc.herHim] doing this any longer. You're not sure if your words really have any effect, but at least [npc.she] now knows that [npc.her] [pc.mother] doesn't approve of the way in which [npc.sheIs] living [npc.her] life.
+			Тебе не нравится дерзкое поведение [npc.her], и когда [npc.she] замолкает, ты начинаешь распекать [npc.her] еще сильнее. Повторяя сказанное, ты говоришь своему [npc.relation(pc)], что ждешь от [npc.herHim] гораздо большего и не хочешь, чтобы [npc.herHim] занимался этим и дальше. Ты не уверен, подействовали ли твои слова на самом деле, но, по крайней мере, теперь [npc.she] знает, что [npc.her] [pc.mother] не одобряет то, как [npc.sheIs] ведет свою [npc.her] жизнь.
 		</p>
 	#ENDIF
 	]]>
@@ -871,29 +870,29 @@
 	
 	<htmlContent tag="OFFSPRING_PRESENT"><![CDATA[
 	<p>
-		Deciding that it would be nice to give your [npc.relation(pc)] a present this Yuletide, you hold out the gift towards [npc.herHim]. [pc.speech(This is for you, [npc.name]. Happy Yuletide!)]
+		Решив, что было бы мило сделать подарок своей [npc.relation(pc)] в эти праздничные дни, ты протягиваешь подношение [npc.herHim]. [pc.speech(Это тебе, [npc.name]. С праздником!)]
 	</p>
 	<p>
-		[npc.Name] lets out a little gasp as you give [npc.herHim] the present, and, looking up into your [pc.eyes], [npc.she] cries out, [npc.speech([npc.pcName]! Thank you so much! I-I don't know what to say!)]
+		[npc.Name] издает тихий вздох, когда ты вручаешь [npc.herHim] подарок, и, заглядывая тебе в [pc.eyes], [npc.she] восклицает: [npc.speech([npc.pcName]! Спасибо тебе огромное! Я... я даже не знаю, что сказать!)]
 	</p>
 	<p>
-		Choosing to express [npc.her] gratitude in a more physical form, [npc.name] places the present to one side, before moving up next to you and pulling you into a loving hug. You return your [npc.relation(pc)]'s warm embrace, and spend a few moments pressing your body against [npc.hers] as you both share in a loving moment together.
+		Желая выразить благодарность [npc.her] более физически, [npc.name] откладывает подарок в сторону, подходит к тебе вплотную и заключает в нежные объятия. Ты отвечаешь на теплые объятия своей [npc.relation(pc)], и несколько мгновений прижимаешься всем телом к [npc.hers], наслаждаясь этим моментом близости.
 	</p>
 	<p>
-		After a little while, [npc.name] pulls back, before smiling up at you. [npc.speech(Really, thank you, [npc.pcName]. That really means a lot to me...)]
+		Спустя некоторое время [npc.name] отстраняется и с улыбкой смотрит на тебя. [npc.speech(Правда, спасибо тебе, [npc.pcName]. Это очень много значит для меня...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_APARTMENT_FIGHT"><![CDATA[
 	<p>
-		Deciding that [npc.name] needs to be taught a lesson, you get up off the sofa and step towards [npc.herHim]. [pc.speech(No [npc.relation(pc)] of mine is going to live like this and expect not to be punished! It's time that I put you in your place!)]
+		Решив, что [npc.name] пора преподать урок, ты встаешь с дивана и делаешь шаг к [npc.herHim]. [pc.speech(Ни одна моя [npc.relation(pc)] не будет жить вот так и ждать, что её не накажут! Пора поставить тебя на место!)]
 	</p>
 	<p>
 		#IF(npc.isConfident())
-			[npc.speech(What the hell?!)] [npc.name] cries out, before jumping up and preparing to defend [npc.herself]. [npc.speech(You'll be sorry!)]
+			[npc.speech(Какого черта?!)] — вскрикивает [npc.name], вскакивая на ноги и готовясь защищать [npc.herself]. [npc.speech(Ты еще пожалеешь!)]
 		#ELSE
-			[npc.speech(W-What?!)] [npc.name] cries out, before jumping up and preparing to defend [npc.herself]. [npc.speech(I can't believe this!)]
+			[npc.speech(Ч-что?!)] — вскрикивает [npc.name], вскакивая на ноги и готовясь защищать [npc.herself]. [npc.speech(Поверить в это не могу!)]
 		#ENDIF
 	</p>
 	]]>
@@ -902,17 +901,17 @@
 	<htmlContent tag="AFTER_COMBAT_VICTORY"><![CDATA[
 	#IF(npc.isAttractedTo(pc) || !game.isNonConEnabled())
 		<p>
-			[npc.Name] collapses to the floor, completely defeated. As [npc.she] looks up at you, you see that your powerful aura is having a strong effect on [npc.herHim], and there's a hungry, lustful look in [npc.her] [npc.eyes+]. [npc.She] #IF(npc.isTaur())starts bucking [npc.her] hips in a humping motion,#ELSEreaches down to [npc.her] crotch and starts stroking [npc.herself],#ENDIF making pitiful little whining noises as [npc.she] squirms on the floor.
+			[npc.Name] бессильно оседает на пол, полностью побежденная. Когда [npc.she] смотрит на тебя снизу вверх, ты замечаешь, что твоя мощная Аура оказывает на [npc.herHim] сильнейшее воздействие, а в [npc.her] [npc.eyes+] читается голодный, полный похоти взгляд. [npc.She] #IF(npc.isTaur())starts bucking [npc.her] hips in a humping motion,#ELSEreaches down to [npc.her] crotch and starts stroking [npc.herself],#ENDIF making pitiful little whining noises as [npc.she] squirms on the floor.
 		</p>
 		<p>
-			[npc.speech(Please, [npc.pcName]! Fuck me!)], [npc.she] pleads, biting [npc.her] [npc.lip] as [npc.she] continues touching [npc.herself]. [npc.speech(I'll be a good [npc.daughter]! Just please, fuck me!)]
+			[npc.speech(Пожалуйста, [npc.pcName]! Трахни меня!)], — умоляет [npc.she], прикусывая [npc.her] [npc.lip], пока [npc.she] продолжает ласкать [npc.herself]. [npc.speech(Я буду послушной [npc.daughter]! Только, пожалуйста, трахни меня!)]
 		</p>
 	#ELSE
 		<p>
-			[npc.Name] collapses to the floor, completely defeated. As [npc.she] looks up at you, you see that there's a desperate look of fear in [npc.her] [npc.eyes+]. Making pitiful little whining noises, [npc.she] tries to shuffle away from you, clearly worried about what your intentions are.
+			[npc.Name] бессильно оседает на пол, полностью побежденная. Когда [npc.she] смотрит на тебя снизу вверх, ты видишь в [npc.her] [npc.eyes+] отчаянный взгляд, полный страха. Издавая жалобное скуление, [npc.she] пытается отползти от тебя, явно опасаясь твоих намерений.
 		</p>
 		<p>
-			[npc.speech(Please, [npc.pcName]! Don't! Leave me alone!)], [npc.she] pleads with tears in [npc.her] [npc.eyes]. [npc.speech(I'll be a good [npc.daughter]! I promise!)]
+			[npc.speech(Пожалуйста, [npc.pcName]! Не надо! Оставь меня в покое!)], — умоляет [npc.she] со слезами на [npc.her] [npc.eyes]. [npc.speech(Я буду хорошей [npc.daughter]! Обещаю!)]
 		</p>
 	#ENDIF
 	]]>
@@ -920,95 +919,95 @@
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_APOLOGISE"><![CDATA[
 	<p>
-		Looking down at your [npc.relation(pc)] as [npc.she] shuffles about on the floor, you're suddenly overcome with regret, and, kneeling down next to [npc.herHim], you pull [npc.herHim] into a loving hug. Leaning in over [npc.her] shoulder as you press yourself to [npc.herHim], you apologise for what you've done, [pc.speech([npc.Name], I'm so sorry! I don't know what came over me! Please forgive me!)]
+		Глядя на свою [npc.relation(pc)], пока [npc.she] копошится на полу, ты внезапно охвачен раскаянием и, опустившись на колени рядом с [npc.herHim], притягиваешь [npc.herHim] в нежные объятия. Наклонившись к [npc.her] через плечо и прижимаясь к [npc.herHim], ты извиняешься за содеянное: [pc.speech([npc.Name], прости меня! Я не знаю, что на меня нашло! Пожалуйста, прости меня!)]
 	</p>
 	<p>
-		[npc.She] hesitantly wraps [npc.her] [npc.arms] around you, and after a few moments, you feel [npc.her] grip tightening, before [npc.she] speaks out in a surprisingly stern voice, [npc.speech(I can't believe what you've done, [npc.pcName]! I'm going to need some time...)]
+		[npc.She] нерешительно обвивает [npc.her] [npc.arms] вокруг тебя, и спустя мгновение ты чувствуешь, как [npc.her] сжимается сильнее, прежде чем [npc.she] произносит на удивление суровым голосом: [npc.speech(Поверить не могу, что ты наделал, [npc.pcName]! Мне нужно немного времени...)]
 	</p>
 	<p>
-		[pc.speech(I understand,)] you say, pulling back from your [npc.relation(pc)]. [pc.speech(I really am sorry...)]
+		[pc.speech(Я понимаю,)] — говоришь ты, отстраняясь от своей [npc.relation(pc)]. [pc.speech(Мне правда очень жаль...)]
 	</p>
 	<p>
-		[npc.Name] walks you to the door in silence, and after trying to say sorry once more, only to have your [npc.relation(pc)] slam the door in your face, you find yourself back out in the bat caverns once again...
+		[npc.Name] молча провожает тебя до двери, и после того, как ты пытаешься извиниться еще раз, но твоя [npc.relation(pc)] лишь захлопывает дверь прямо перед твоим носом, ты обнаруживаешь, что снова стоишь в пещерах летучих мышей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX"><![CDATA[
 	<p>
-		Reaching down to take hold of one of [npc.namePos] [npc.arms], you pull [npc.herHim] to [npc.her] [npc.feet], before wrapping your [pc.arms] around [npc.her] back and stepping forwards. Tilting your head to one side, you press your [pc.lips+] against [npc.hers] and start passionately thrusting your [pc.tongue+] into [npc.her] mouth.
+		Потянувшись вниз, чтобы схватить одну из [npc.arms] [npc.namePos], ты притягиваешь [npc.herHim] к [npc.her] [npc.feet], после чего обвиваешь свою [pc.arms] вокруг [npc.her] и делаешь шаг вперед. Наклонив голову набок, ты прижимаешься своими [pc.lips+] к [npc.hers] и начинаешь страстно вбивать свой [pc.tongue+] в [npc.her] рот.
 	</p>
 	<p>
-		Much to your delight, you feel [npc.herHim] returning your kiss, and as your [npc.relation(pc)] leans into you, [npc.she] mumbles, [npc.speech(Yes, [npc.pcName]... Fuck me...)]
+		К твоему огромному удовольствию, ты чувствуешь, как [npc.herHim] отвечает на поцелуй, и когда твоя [npc.relation(pc)] прижимается к тебе всем телом, [npc.she] бормочет: [npc.speech(Да, [npc.pcName]... Трахни меня...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_RAPE"><![CDATA[
 	<p>
-		Reaching down, you grab [npc.namePos] [npc.arm], and, pulling [npc.herHim] to [npc.her] feet, you start grinding yourself up against [npc.herHim]. Seeing the lustful look in your [pc.eyes], [npc.she] lets out a little [npc.sob], desperately trying to struggle out of your grip as you hold [npc.herHim] firmly in your embrace.
+		Потянувшись вниз, ты хватаешь [npc.arm] [npc.namePos] и, притягивая [npc.herHim] к [npc.her] ногам, начинаешь тереться о [npc.herHim]. Заметив похотливый взгляд в твоих [pc.eyes], [npc.she] издает тихий [npc.sob], отчаянно пытаясь вырваться из твоих рук, пока ты крепко сжимаешь [npc.herHim] в своих объятиях.
 	</p>
 	<p>
-		[npc.speech([pc.Name]! No! Please!)]
+		[npc.speech([pc.Name]! Нет! Пожалуйста!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX_GENTLE"><![CDATA[
 	<p>
-		Reaching down to take hold of one of [npc.namePos] [npc.arms], you gently lift [npc.herHim] to [npc.her] [npc.feet], before wrapping your [pc.arms] around [npc.her] back and stepping forwards. Tilting your head to one side, you softly press your [pc.lips+] against [npc.hers] and start slowly thrusting your [pc.tongue+] into [npc.her] mouth.
+		Протянув руку вниз, чтобы обхватить одну из [npc.namePos] [npc.arms], ты осторожно приподнимаешь [npc.herHim] к [npc.her] [npc.feet], после чего обвиваешь свою [pc.arms] вокруг [npc.her] спины и делаешь шаг вперед. Чуть наклонив голову набок, ты мягко прижимаешься своими [pc.lips+] к [npc.hers] и начинаешь медленно втискивать свой [pc.tongue+] в [npc.her] рот.
 	</p>
 	<p>
-		Much to your delight, you feel [npc.herHim] returning your loving kiss, and as your [npc.relation(pc)] leans into you, [npc.she] mumbles, [npc.speech(Yes, [npc.pcName]... Fuck me...)]
+		К твоему огромному удовольствию, ты чувствуешь, как [npc.herHim] отвечает на твой нежный поцелуй, и пока твой [npc.relation(pc)] прижимается к тебе, [npc.she] бормочет: [npc.speech(Да, [npc.pcName]... Трахни меня...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_RAPE_GENTLE"><![CDATA[
 	<p>
-		Reaching down, you take hold of [npc.namePos] [npc.arm], and, pulling [npc.herHim] to [npc.her] feet, you start pressing yourself up against [npc.herHim]. Seeing the lustful look in your [pc.eyes], [npc.she] lets out a little [npc.sob], desperately trying to struggle out of your grip as you hold [npc.herHim] in your embrace.
+		Потянувшись вниз, ты берешь [npc.namePos] [npc.arm] и, подтягивая [npc.herHim] к [npc.her] ног, начинаешь прижиматься всем телом к [npc.herHim]. Заметив похотливый взгляд в твоих [pc.eyes], [npc.she] издает тихий [npc.sob], отчаянно пытаясь вырваться из твоих рук, пока ты удерживаешь [npc.herHim] в своих объятиях.
 	</p>
 	<p>
-		[npc.speech([pc.Name]! No! Please!)]
+		[npc.speech([pc.Name]! Нет! Пожалуйста!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX_ROUGH"><![CDATA[
 	<p>
-		Reaching down to take hold of one of [npc.namePos] [npc.arms], you roughly yank [npc.herHim] to [npc.her] [npc.feet], before wrapping your [pc.arms] around [npc.her] back and stepping forwards. Tilting your head to one side, you greedily press your [pc.lips+] against [npc.hers] and start dominantly thrusting your [pc.tongue+] into [npc.her] mouth.
+		Протянув руку вниз, чтобы обхватить одну из [npc.namePos] [npc.arms], ты грубо дергаешь [npc.herHim] к [npc.her] [npc.feet], после чего обвиваешь свою [pc.arms] вокруг [npc.her] спины и делаешь шаг вперед. Чуть наклонив голову набок, ты жадно прижимаешься своими [pc.lips+] к [npc.hers] и начинаешь властно вбивать свой [pc.tongue+] в [npc.her] рот.
 	</p>
 	<p>
-		Much to your delight, you feel [npc.herHim] returning your forceful kiss, and as your [npc.relation(pc)] leans into you, [npc.she] mumbles, [npc.speech(Yes, [npc.pcName]... Fuck me...)]
+		К твоему огромному удовольствию, ты чувствуешь, как [npc.herHim] отвечает на твой напористый поцелуй, и пока твой [npc.relation(pc)] прижимается к тебе, [npc.she] бормочет: [npc.speech(Да, [npc.pcName]... Трахни меня...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_RAPE_ROUGH"><![CDATA[
 	<p>
-		Reaching down, you grab [npc.namePos] [npc.arm], and, roughly yanking [npc.herHim] to [npc.her] feet, you start forcefully grinding yourself up against [npc.herHim]. Seeing the lustful look in your [pc.eyes], [npc.she] lets out a little [npc.sob], desperately trying to struggle out of your grip as you firmly hold [npc.herHim] in your embrace.
+		Протянув руку вниз, ты хватаешь [npc.namePos] [npc.arm] и, грубо потянув [npc.herHim] за [npc.her] футов, начинаешь с силой тереться о [npc.herHim]. Заметив похотливый взгляд в твоих [pc.eyes], [npc.she] издает тихий [npc.sob], отчаянно пытаясь вырваться из твоих рук, пока ты крепко сжимаешь [npc.herHim] в своих объятиях.
 	</p>
 	<p>
-		[npc.speech([pc.Name]! No! Please!)]
+		[npc.speech([pc.Name]! Нет! Пожалуйста!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SUBMIT"><![CDATA[
 	<p>
-		Looking down at your [npc.relation(pc)] as [npc.she] shuffles about on the floor, you're suddenly overcome with regret, and, kneeling down next to [npc.herHim], you pull [npc.herHim] into a loving hug. Leaning in over [npc.her] shoulder as you press yourself to [npc.herHim], you apologise for what you've done, [pc.speech([npc.Name], I'm so sorry! I don't know what came over me! Please forgive me!)]
+		Глядя на свою [npc.relation(pc)], пока [npc.she] копошится на полу, ты внезапно охвачен раскаянием и, опустившись на колени рядом с [npc.herHim], притягиваешь [npc.herHim] в нежные объятия. Наклонившись к [npc.her] через плечо и прижимаясь к [npc.herHim], ты извиняешься за содеянное: [pc.speech([npc.Name], прости меня! Я не знаю, что на меня нашло! Пожалуйста, прости меня!)]
 	</p>
 	<p>
-		[npc.She] hesitantly wraps [npc.her] [npc.arms] around you, and after a few moments, you feel [npc.her] grip tightening, before [npc.she] speaks out in a surprisingly stern voice, [npc.speech(If you're really sorry, you're going to prove it to me! Show me how much you <i>really</i> love me!)]
+		[npc.She] нерешительно обвивает [npc.her] [npc.arms] вокруг тебя, и спустя мгновение ты чувствуешь, как хватка [npc.her] усиливается, после чего [npc.she] произносит на удивление строгим голосом: [npc.speech(Если тебе действительно жаль, ты должен это доказать! Покажи мне, как сильно ты <i>на самом деле</i> меня любишь!)]
 	</p>
 	<p>
-		As you pull away in order to respond, [npc.name] suddenly leans forwards and grabs your head, before pressing [npc.her] [npc.lips+] against yours. Shuffling forwards, [npc.she] pins you back against the wall behind you, thrusting [npc.her] [npc.tongue+] into your mouth as [npc.she] takes advantage of your guilty state of mind.
+		Когда ты отстраняешься, чтобы ответить, [npc.name] внезапно подается вперед, хватает тебя за голову и прижимает [npc.her] [npc.lips+] к твоему лицу. Подавшись вперед, [npc.she] прижимает тебя спиной к стене, втискивая [npc.her] [npc.tongue+] тебе в рот, пока [npc.she] пользуется твоим чувством вины.
 	</p>
 	<p>
-		Eventually, [npc.she] pulls back in order to demand a response from you, and, eager to earn your [npc.relation(pc)]'s forgiveness, you reply, [pc.speech(I love you, [npc.name]! Please, do whatever you want to me!)]
+		В конце концов, [npc.she] отстраняется, требуя ответа, и, стремясь заслужить прощение своего [npc.relation(pc)], ты отвечаешь: [pc.speech(Я люблю тебя, [npc.name]! Пожалуйста, делай со мной всё, что захочешь!)]
 	</p>
 	<p>
-		A hungry grin spreads across [npc.namePos] face, before [npc.she] pulls you to your feet and starts to kiss you once more...
+		На лице [npc.namePos] расплывается голодная ухмылка, после чего [npc.she] поднимает тебя на ноги и снова начинает тебя целовать...
 	</p>
 	]]>
 	</htmlContent>
@@ -1016,23 +1015,23 @@
 	<htmlContent tag="AFTER_COMBAT_VICTORY_REMOVE_CHARACTER"><![CDATA[
 	#IF(npc.hasFlag(NPC_FLAG_fightOffspringInApartment))
 		<p>
-			Looking down at your [npc.relation(pc)] as [npc.she] shuffles about on the floor, you remind yourself that you're doing this for [npc.her] own good. With your [pc.hands] on your [pc.hips], you speak down to [npc.herHim], [pc.speech([npc.Name], this is the end of your shameful lifestyle! You're going to pack everything up and move elsewhere! It's time for you to find a respectable job and lead an honest life!)]
+			Глядя сверху вниз на своего [npc.relation(pc)], пока [npc.she] копошится на полу, ты напоминаешь себе, что делаешь это ради блага [npc.her]. Сжимая [pc.hands] в своей [pc.hips], ты покровительственно обращаешься к [npc.herHim]: [pc.speech([npc.Name], это конец твоему позорному образу жизни! Ты всё соберешь и переедешь в другое место! Пора тебе найти достойную работу и начать жить честно!)]
 		</p>
 		<p>
-			[npc.She] doesn't offer much resistance, and you watch as your [npc.relation(pc)] packs up [npc.her] things and prepares to move out. After a short while, [npc.sheIs] ready, and before [npc.she] leaves your life forever, [npc.she] turns around and mutters, [npc.speech(I'll make you proud, [pc.mom]...)]
+			[npc.She] не особо сопротивляется, и ты наблюдаешь, как твой [npc.relation(pc)] пакует [npc.her] вещи, готовясь к переезду. Спустя короткое время [npc.sheIs] на месте, и прежде чем [npc.she] навсегда покинет твою жизнь, [npc.she] оборачивается и бормочет: [npc.speech(Я заставлю тебя гордиться мной, [pc.mom]...)]
 		</p>
 		<p>
-			With that, [npc.sheIs] gone, and you're left with little else to do but set off into the bat caverns once again...
+			На этом всё — [npc.sheIs] уходит, и тебе остается лишь отправиться в пещеры летучих мышей вновь...
 		</p>
 	#ELSE
 		<p>
-			Looking down at your [npc.relation(pc)] as [npc.she] shuffles about on the floor, you remind yourself that you're doing this for [npc.her] own good. With your [pc.hands] on your [pc.hips], you speak down to [npc.herHim], [pc.speech([npc.Name], this is the end of your shameful lifestyle! You're going to pack everything up and move elsewhere! It's time for you to find a respectable job and lead an honest life!)]
+			Глядя сверху вниз на своего [npc.relation(pc)], пока [npc.she] копошится на полу, ты напоминаешь себе, что делаешь это ради блага [npc.her]. Сжимая [pc.hands] в своей [pc.hips], ты покровительственно обращаешься к [npc.herHim]: [pc.speech([npc.Name], это конец твоему позорному образу жизни! Ты всё соберешь и переедешь в другое место! Пора тебе найти достойную работу и начать жить честно!)]
 		</p>
 		<p>
-			[npc.She] doesn't offer much resistance, and you watch as your [npc.relation(pc)] meekly hangs [npc.her] head and agrees to do as you say. Before [npc.she] walks off and leaves your life forever, [npc.she] turns around and mutters, [npc.speech(I'll make you proud, [pc.mom]...)]
+			[npc.She] не особо сопротивляется, и ты наблюдаешь, как твой [npc.relation(pc)] покорно склоняет [npc.her] голову и соглашается делать всё, что ты скажешь. Прежде чем [npc.she] уходит и навсегда покидает твою жизнь, [npc.she] оборачивается и бормочет: [npc.speech(Я заставлю тебя гордиться мной, [pc.mom]...)]
 		</p>
 		<p>
-			With that, [npc.sheIs] gone, and you're left with little else to do but set off into the bat caverns once again...
+			На этом всё — [npc.sheIs] уходит, и тебе остается лишь отправиться в пещеры летучих мышей вновь...
 		</p>
 	#ENDIF
 	]]>
@@ -1040,10 +1039,10 @@
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_LEAVE"><![CDATA[
 	<p>
-		[pc.speech(I hope you've learned your lesson,)] you say, speaking down to your [npc.relation(pc)] as [npc.she] shuffles about on the floor. [pc.speech(Maybe I'll come and visit you another time, but I need to be going now.)]
+		[pc.speech(Надеюсь, ты усвоил(а) урок,)] — говоришь ты, высокомерно обращаясь к своему [npc.relation(pc)], пока [npc.she] копошится на полу. [pc.speech(Может, я загляну к тебе как-нибудь в другой раз, но сейчас мне пора.)]
 	</p>
 	<p>
-		With that, you turn around and walk over to the front door, ignoring the little whimpers coming from your defeated [npc.relation(pc)]. Turning the handle, you open the door and make your exit, and within a few minutes, find yourself walking through the bat caverns once again...
+		С этими словами ты разворачиваешься и идешь к входной двери, игнорируя тихое поскуливание твоего поверженного [npc.relation(pc)]. Повернув ручку, ты открываешь дверь и выходишь наружу, а через несколько минут обнаруживаешь, что снова идешь по пещерам летучих мышей...
 	</p>
 	]]>
 	</htmlContent>
@@ -1051,29 +1050,29 @@
 	<htmlContent tag="AFTER_COMBAT_DEFEAT"><![CDATA[
 	#IF(npc.isAttractedTo(pc) && game.isIncestEnabled())
 		<p>
-			You can't carry on fighting any more, and you feel your [pc.legs] giving out beneath you as you collapse to the ground, defeated.
+			Ты больше не можешь сражаться, и чувствуешь, как твои [pc.legs] подкашиваются, когда ты в изнеможении падаешь на землю, побежденный(ая).
 		</p>
 		<p>
-			[npc.speech(Are you ok, [npc.pcName]?!)] [npc.name] shouts, before leaning down to grab one of your [pc.arms]. [npc.speech(I was only defending myself!)]
+			[npc.speech(Ты в порядке, [npc.pcName]?!)] — кричит [npc.name], прежде чем наклониться и схватить одну из твоих [pc.arms]. [npc.speech(Я всего лишь защищался(ась)!)]
 		</p>
 		<p>
-			As you groan in the affirmative, [npc.name] lets out a sigh of relief. Pulling you to your feet, [npc.she] suddenly steps forwards and presses [npc.herself] up against you. [npc.speech(Well, so long as you're ok, I think it's time for your apology!)]
+			Когда ты стонешь в знак согласия, [npc.name] облегченно вздыхает. Помогая тебе подняться на ноги, [npc.she] внезапно делает шаг вперед и прижимает [npc.herself] к тебе. [npc.speech(Ну, раз уж с тобой всё хорошо, думаю, пришло время для твоих извинений!)]
 		</p>
 		<p>
-			The moment that you open your mouth to respond, your [npc.relation(pc)] darts forwards, pressing [npc.her] [npc.lips+] against yours as [npc.she] pulls you into a passionate kiss. Grinding [npc.herself] up against your body, [npc.she] breaks off the kiss for a moment to [npc.moanVerb] into your [pc.ear], [npc.speech(So, [npc.pcName] likes a little bit of rough play, huh?! Well, I like that sort of thing too!)]
+			Стоит тебе только открыть рот, чтобы ответить, как твой [npc.relation(pc)] бросается вперед, прижимая [npc.her] [npc.lips+] к твоим губам, пока [npc.she] втягивает тебя в страстный поцелуй. Вжимаясь [npc.herself] в твое тело, [npc.she] на мгновение прерывает поцелуй, чтобы [npc.moanVerb] в твою [pc.ear], [npc.speech(Значит, [npc.pcName] любит немного грубой игры, да?! Что ж, мне такое тоже по душе!)]
 		</p>
 	#ELSE
 		<p>
-			You can't carry on fighting any more, and you feel your [pc.legs] giving out beneath you as you collapse to the ground, defeated.
+			Ты больше не можешь сражаться, и чувствуешь, как твои [pc.legs] подкашиваются, когда ты в изнеможении падаешь на землю, побежденный(ая).
 		</p>
 		<p>
-			[npc.speech(Are you ok [npc.pcName]?!)] [npc.name] shouts, before leaning down to grab one of your [pc.arms]. [npc.speech(I was only defending myself!)]
+			[npc.speech(Ты в порядке, [npc.pcName]?!)] — кричит [npc.name], прежде чем наклониться и схватить тебя за одну из [pc.arms]. [npc.speech(Я всего лишь защищалась!)]
 		</p>
 		<p>
-			As you groan in the affirmative, [npc.name] lets out a sigh of relief. Pulling you to your feet, [npc.she] makes sure that you're able to stand under your own strength before stepping back and taking on a stern tone, [npc.speech(What the hell was that all about?! You owe me an apology!)]
+			Когда ты стонешь в знак согласия, [npc.name] облегченно вздыхает. Помогая тебе подняться, [npc.she] убеждается, что ты можешь стоять самостоятельно, после чего отступает и принимает суровый вид, [npc.speech(Что это вообще сейчас было?! Ты просто обязан извиниться!)]
 		</p>
 		<p>
-			Not being in any kind of situation to refuse, you apologise to your [npc.relation(pc)] for attacking [npc.herHim]. Letting out a little huff, [npc.she] continues, [npc.speech(Well, I can't forgive you just yet! Anyway, you can help make it up to me by giving me some allowance money!)]
+			Не имея возможности отказаться, ты извиняешься перед своим [npc.relation(pc)] за нападение на [npc.herHim]. Издав короткий фыркающий звук, [npc.she] продолжает: [npc.speech(Ну, простить тебя прямо сейчас я не могу! Впрочем, ты можешь загладить вину, если дашь мне немного денег на карманные расходы!)]
 		</p>
 		<p>
 			Letting out a groan, you're forced to comply with [npc.her] request, and after handing over some of your cash, [npc.name] leads you away from [npc.her] home. Leaving you somewhere in the bat caverns, [npc.she] calls out behind [npc.herHim] as [npc.she] takes [npc.her] leave, [npc.speech(Don't bother to come back unless you're truly sorry!)]
@@ -1084,30 +1083,30 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SEX"><![CDATA[
 	<p>
-		[npc.NamePos] [npc.arms] wrap around your back, and [npc.she] continues passionately making out with you for a few moments, before finally breaking away from you. Giving you an evil grin, [npc.she] hungrily licks [npc.her] [npc.lips], and you realise that [npc.sheIs] probably not going to be content with just a kiss...
+		[npc.NamePos] [npc.arms] обвивают твою спину, и [npc.she] еще несколько мгновений страстно целует тебя, прежде чем наконец отстраниться. Одарив тебя злобной ухмылкой, [npc.she] жадно облизывает [npc.her] [npc.lips], и ты понимаешь, что [npc.sheIs], скорее всего, не успокоится одним лишь поцелуем...
 	</p>
 	<p>
-		[npc.speech(Time for some fun, [npc.pcName]!)]
+		[npc.speech(Пора повеселиться, [npc.pcName]!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SEX_EAGER"><![CDATA[
 	<p>
-		[npc.NamePos] [npc.arms] wrap around your back, and you eagerly lean into [npc.herHim], passionately returning [npc.her] kiss for a few moments, before [npc.she] breaks away from you. Giving you an evil grin, [npc.she] hungrily licks [npc.her] [npc.lips], and you feel a rush of excitement as you realise that [npc.sheIs] going to want more than just a kiss...
+		[npc.NamePos] [npc.arms] обвивают твою спину, и ты с жадностью прижимаешься к [npc.herHim], страстно отвечая на поцелуи [npc.her] в течение нескольких мгновений, пока [npc.she] не отстраняется от тебя. Одарив тебя злобной ухмылкой, [npc.she] жадно облизывает [npc.her] [npc.lips], и ты чувствуешь прилив возбуждения, понимая, что [npc.sheIs] захочет гораздо большего, чем просто поцелуй...
 	</p>
 	<p>
-		[npc.speech(Time for some fun, [npc.pcName]!)]
+		[npc.speech(Пора повеселиться, [npc.pcName]!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SEX_RESIST"><![CDATA[
 	<p>
-		[npc.NamePos] [npc.arms] wrap around your back, and you let out a distressed cry as [npc.she] pulls you into a forceful kiss. Summoning the last of your strength, you desperately try to push [npc.herHim] away, pleading for [npc.herHim] to stop. Giving you an evil grin, [npc.she] ignores your protests, and as you see [npc.herHim] hungrily licking [npc.her] [npc.lips], you realise that [npc.sheIs] not going to let you go...
+		[npc.NamePos] [npc.arms] обвивают твою спину, и ты издаешь полный тревоги крик, когда [npc.she] впивается в тебя в напористом поцелуе. Собрав последние силы, ты отчаянно пытаешься оттолкнуть [npc.herHim], умоляя [npc.herHim] остановиться. Одарив тебя злобной ухмылкой, [npc.she] игнорирует твои протесты, и когда ты видишь, как [npc.herHim] жадно облизывает [npc.her] [npc.lips], ты понимаешь, что [npc.sheIs] тебя просто так не отпустит...
 	</p>
 	<p>
-		[npc.speech(Time for some fun, [npc.pcName]!)]
+		[npc.speech(Пора повеселиться, [npc.pcName]!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -1115,17 +1114,17 @@
 	<htmlContent tag="AFTER_SEX_CONSENSUAL"><![CDATA[
 	#IF(npc.isSatisfiedFromLastSex())
 		<p>
-			Disentangling yourselves from each other's clutches, you both sink down onto [npc.namePos] sofa once again. Turning [npc.her] head towards you, your [npc.relation(pc)] sighs, [npc.speech(Fuck... That was good, [npc.pcName]...)]
+			Выпутавшись из объятий друг друга, вы оба снова опускаетесь на [npc.namePos] диван. Повернув [npc.her] голову к тебе, твой [npc.relation(pc)] вздыхает: [npc.speech(Бля... Это было хорошо, [npc.pcName]...)]
 		</p>
 		<p>
-			You lie with each other for a little while, enjoying the closeness of one another's company, before eventually it's time for you to leave. Giving [npc.name] a kiss goodbye, you promise that you'll come and see [npc.herHim] again, before setting out to continue on your journey.
+			Вы еще какое-то время лежите вместе, наслаждаясь близостью друг друга, пока наконец не приходит время расставаться. Поцеловав [npc.name] на прощание, ты обещаешь, что обязательно вернешься к [npc.herHim], после чего отправляешься в дальнейший путь.
 		</p>
 	#ELSE
 		<p>
-			Disentangling yourselves from each other's clutches, you both sink down onto [npc.namePos] sofa once again. Turning [npc.her] head towards you, your [npc.relation(pc)] whines, [npc.speech(Fuck... [npc.pcName], I'm not satisfied from that...)]
+			Вы высвобождаетесь из объятий друг друга и оба снова опускаетесь на [npc.namePos] диван. Твой [npc.relation(pc)] [npc.her] поворачивает к тебе голову и скулит: [npc.speech(Блядь... [npc.pcName], мне этого мало...)]
 		</p>
 		<p>
-			You lie with each other for a little while, reassuring [npc.name] that you'll allow [npc.herHim] to orgasm next time, before eventually it's time for you to leave. Giving [npc.herHim] a kiss goodbye, you promise that you'll come and see [npc.herHim] again, before setting out to continue on your journey.
+			Вы еще какое-то время лежите вместе; ты успокаиваешь [npc.name], обещая, что в следующий раз позволишь [npc.herHim] кончить, пока наконец не приходит время расставаться. Поцеловав [npc.herHim] на прощание, ты обещаешь, что снова придешь навестить [npc.herHim], после чего отправляешься в дальнейший путь.
 		</p>
 	#ENDIF
 	]]>
@@ -1135,41 +1134,41 @@
 	#IF(npc.hasFlag(NPC_FLAG_fightOffspringInApartment))
 		#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
 			<p>
-				As you step back from [npc.name], [npc.she] grabs on to the edge of the sofa and sinks to the floor, letting out a thankful sob as [npc.she] realises that you've finished.
+				Когда ты отстраняешься от [npc.name], [npc.she] хватается за край дивана и сползает на пол, издавая благодарный всхлип, когда [npc.she] понимает, что ты закончил.
 			</p>
 		#ELSEIF (npc.isSatisfiedFromLastSex())
 			<p>
-				As you step back from [npc.name], [npc.she] grabs on to the edge of the sofa and sinks to the floor, totally worn out from [npc.her] orgasm. Looking up at you, a satisfied smile settles across [npc.her] face, and you lean down to pat [npc.her] head.
+				Когда ты отстраняешься от [npc.name], [npc.she] хватается за край дивана и сползает на пол, совершенно измотанная [npc.her] оргазмом. Она смотрит на тебя с довольной улыбкой на [npc.her] лице, и ты наклоняешься, чтобы погладить [npc.her] по голове.
 			</p>
 			<p>
-				[npc.speech(Thanks, [npc.pcName],)] [npc.she] sighs, before resting [npc.her] head on the sofa's cushions and falling asleep.
+				[npc.speech(Спасибо, [npc.pcName],)] — вздыхает [npc.she], прежде чем уронить [npc.her] голову на подушки дивана и уснуть.
 			</p>
 		#ELSE
 			<p>
-				As you step back from [npc.name], [npc.she] grabs on to the edge of the sofa and sinks to the floor, letting out a desperate whine as [npc.she] realises that you've finished. [npc.Her] [npc.hands] dart down between [npc.her] [npc.legs], and [npc.she] frantically starts masturbating as [npc.she] seeks to finish what you started.
+				Когда ты отстраняешься от [npc.name], [npc.she] вцепляется в край дивана и сползает на пол, издавая отчаянный скулящий звук, когда [npc.she] осознает, что ты закончил. [npc.Her] и [npc.hands] ныряют между [npc.her] и [npc.legs], а [npc.she] начинает неистово мастурбировать, пока [npc.she] пытается завершить то, что ты начал.
 			</p>
 			<p>
-				[npc.speech([pc.Name]! I'm still horny!)] [npc.she] whines.
+				[npc.speech([pc.Name]! Я всё еще хочу!)] — скулит [npc.she].
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
 			<p>
-				As you step back from [npc.name], [npc.she] sinks down to floor, letting out a thankful sob as [npc.she] realises that you've finished.
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая благодарный всхлип, когда [npc.she] понимает, что ты закончил.
 			</p>
 		#ELSEIF (npc.isSatisfiedFromLastSex())
 			<p>
-				As you step back from [npc.name], [npc.she] sinks to the floor, totally worn out from [npc.her] orgasm. Looking up at you, a satisfied smile settles across [npc.her] face, and you realise that you gave [npc.herHim] exactly what [npc.she] wanted.
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, совершенно измотанная оргазмом [npc.her]. Подняв на тебя взгляд, [npc.her] расплывается в довольной улыбке, и ты понимаешь, что дал [npc.herHim] именно то, чего [npc.she] так хотела.
 			</p>
 			<p>
-				[npc.speech(Thanks, [npc.pcName],)] [npc.she] sighs.
+				[npc.speech(Спасибо, [npc.pcName],)] — вздыхает [npc.she].
 			</p>
 		#ELSE
 			<p>
-				As you step back from [npc.name], [npc.she] sinks to the floor, letting out a desperate whine as [npc.she] realises that you've finished. [npc.Her] [npc.hands] dart down between [npc.her] [npc.legs], and [npc.she] frantically starts masturbating as [npc.she] seeks to finish what you started.
+				Когда ты отстраняешься от [npc.name], [npc.she] сползает на пол, издавая отчаянный скулящий звук, когда [npc.she] осознает, что ты закончил. [npc.Her] и [npc.hands] ныряют между [npc.her] и [npc.legs], а [npc.she] начинает неистово мастурбировать, пока [npc.she] пытается завершить то, что ты начал.
 			</p>
 			<p>
-				[npc.speech([pc.Name]! I'm still horny!)] [npc.she] whines.
+				[npc.speech([pc.Name]! Я всё еще хочу!)] — скулит [npc.she].
 			</p>
 		#ENDIF
 	#ENDIF
@@ -1180,22 +1179,22 @@
 	<p>
 	#IF(npc.hasFlag(NPC_FLAG_fightOffspringInApartment))
 		#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
-			 Smirking down at your [npc.relation(pc)] one last time, you turn around and walk over to the door, before pulling it open and heading back out into the bat caverns.
+			 В последний раз ухмыльнувшись твоему [npc.relation(pc)], ты разворачиваешься и идешь к двери, распахиваешь её и выходишь обратно в пещеры летучих мышей.
 		#ELSE
 			#IF(npc.isSatisfiedFromLastSex())
-				Leaving [npc.herHim] to recover by [npc.herself], you turn around and walk over to the door, before pulling it open and heading back out into the bat caverns.
+				Оставив [npc.herHim] приходить в себя у [npc.herself], ты разворачиваешься и идешь к двери, распахиваешь её и снова выходишь в пещеры летучих мышей.
 			#ELSE
-				Having already had your fun, you leave [npc.herHim] to get some pleasure by [npc.herself]. Turning around and walking over to the door, you pull it open and head back out into the bat caverns.
+				Насладившись вдоволь, ты оставляешь [npc.herHim] получать удовольствие у [npc.herself]. Развернувшись, ты идешь к двери, распахиваешь её и снова выходишь в пещеры летучих мышей.
 			#ENDIF
 		#ENDIF
 	#ELSE
 		#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
-			As you step back from [npc.name], [npc.she] sinks down to floor, letting out a thankful sob as [npc.she] realises that you've finished. Smirking down at your [npc.relation(pc)] one last time, you turn around and take your leave, feeling thoroughly satisfied as you continue on your journey through the bat caverns.
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая благодарный всхлип, когда [npc.she] понимает, что ты закончил. В последний раз ухмыльнувшись своей [npc.relation(pc)], ты разворачиваешься и уходишь, чувствуя полное удовлетворение, и продолжаешь свой путь по пещерам летучих мышей.
 		#ELSE
 			#IF(npc.isSatisfiedFromLastSex())
-				Leaving [npc.herHim] to recover by [npc.herself], you set off and continue on your journey through the bat caverns.
+				Оставив [npc.herHim] приходить в себя у [npc.herself], ты отправляешься дальше в свой путь по пещерам летучих мышей.
 			#ELSE
-				Leaving [npc.herHim] to get some pleasure by [npc.herself], you set off and continue on your journey through the bat caverns.
+				Оставив [npc.herHim] получать удовольствие у [npc.herself], ты отправляешься дальше в свой путь по пещерам летучих мышей.
 			#ENDIF
 		#ENDIF
 	#ENDIF
@@ -1206,23 +1205,23 @@
 	<htmlContent tag="AFTER_SEX_VICTORY_REMOVE_CHARACTER"><![CDATA[
 	#IF(npc.hasFlag(NPC_FLAG_fightOffspringInApartment))
 		<p>
-			Looking down at your [npc.relation(pc)] as [npc.she] shuffles about on the floor, you remind yourself that you're doing this for [npc.her] own good. With your [pc.hands] on your [pc.hips], you speak down to [npc.herHim], [pc.speech([npc.Name], this is the end of your shameful lifestyle! You're going to pack everything up and move elsewhere! It's time for you to find a respectable job and lead an honest life!)]
+			Глядя сверху вниз на своего [npc.relation(pc)], пока [npc.she] копошится на полу, ты напоминаешь себе, что делаешь это ради блага [npc.her]. Сжимая [pc.hands] в своей [pc.hips], ты покровительственно обращаешься к [npc.herHim]: [pc.speech([npc.Name], это конец твоему позорному образу жизни! Ты всё соберешь и переедешь в другое место! Пора тебе найти достойную работу и начать жить честно!)]
 		</p>
 		<p>
-			[npc.She] doesn't offer much resistance, and you watch as your [npc.relation(pc)] packs up [npc.her] things and prepares to move out. After a short while, [npc.sheIs] ready, and before [npc.she] leaves your life forever, [npc.she] turns around and mutters, [npc.speech(I'll make you proud, [pc.mom]...)]
+			[npc.She] не особо сопротивляется, и ты наблюдаешь, как твой [npc.relation(pc)] пакует [npc.her] вещи, готовясь к переезду. Спустя короткое время [npc.sheIs] на месте, и прежде чем [npc.she] навсегда покинет твою жизнь, [npc.she] оборачивается и бормочет: [npc.speech(Я заставлю тебя гордиться мной, [pc.mom]...)]
 		</p>
 		<p>
-			With that, [npc.sheIs] gone, and you're left with little else to do but set off into the bat caverns once again...
+			На этом всё — [npc.sheIs] уходит, и тебе остается лишь отправиться в пещеры летучих мышей вновь...
 		</p>
 	#ELSE
 		<p>
-			Looking down at your [npc.relation(pc)] as [npc.she] shuffles about on the floor, you remind yourself that you're doing this for [npc.her] own good. With your [pc.hands] on your [pc.hips], you speak down to [npc.herHim], [pc.speech([npc.Name], this is the end of your shameful lifestyle! You're going to pack everything up and move elsewhere! It's time for you to find a respectable job and lead an honest life!)]
+			Глядя сверху вниз на своего [npc.relation(pc)], пока [npc.she] копошится на полу, ты напоминаешь себе, что делаешь это ради блага [npc.her]. Сжимая [pc.hands] в своей [pc.hips], ты покровительственно обращаешься к [npc.herHim]: [pc.speech([npc.Name], это конец твоему позорному образу жизни! Ты всё соберешь и переедешь в другое место! Пора тебе найти достойную работу и начать жить честно!)]
 		</p>
 		<p>
-			[npc.She] doesn't offer much resistance, and you watch as your [npc.relation(pc)] meekly hangs [npc.her] head and agrees to do as you say. Before [npc.she] walks off and leaves your life forever, [npc.she] turns around and mutters, [npc.speech(I'll make you proud, [pc.mom]...)]
+			[npc.She] не особо сопротивляется, и ты наблюдаешь, как твой [npc.relation(pc)] покорно склоняет [npc.her] голову и соглашается делать всё, что ты скажешь. Прежде чем [npc.she] уходит и навсегда покидает твою жизнь, [npc.she] оборачивается и бормочет: [npc.speech(Я заставлю тебя гордиться мной, [pc.mom]...)]
 		</p>
 		<p>
-			With that, [npc.sheIs] gone, and you're left with little else to do but set off into the bat caverns once again...
+			На этом всё — [npc.sheIs] уходит, и тебе остается лишь отправиться в пещеры летучих мышей вновь...
 		</p>
 	#ENDIF
 	]]>
@@ -1230,27 +1229,30 @@
 	
 	<htmlContent tag="AFTER_SEX_DEFEAT"><![CDATA[
 	#IF(npc.hasFlag(NPC_FLAG_fightOffspringInApartment))
-		<p>
-			As [npc.name] steps back and sorts [npc.her] clothes out, you sink down onto the sofa, totally worn out from [npc.her] dominant treatment of you. Once [npc.sheIs] finished getting [npc.her] things in order, [npc.she] walks over and looks down at you, smirking in a very satisfied manner. Leaning down, [npc.she] pats you on the head. [npc.speech(Silly [npc.pcName]! This is what happens if you try attacking me!)]
+			<p>
+			Пока [npc.name] отступает и поправляет [npc.her] одежду, ты валишься на диван, совершенно измотанный после того, как [npc.her] доминировала над тобой. Когда [npc.sheIs] заканчивает приводить [npc.her] в порядок, [npc.she] подходит к тебе и смотрит сверху вниз с самодовольной ухмылкой. Наклонившись, [npc.she] похлопывает тебя по голове. [npc.speech(Глупый [npc.pcName]! Вот что бывает, когда пытаешься напасть на меня!)]
 		</p>
 		<p>
-			With that, [npc.she] hooks one of [npc.her] [npc.arms] under yours, and, after pulling you to your feet and handing you your things, walks you over to the door. Still exhausted from your ordeal, you can do nothing but allow yourself to be led out of your [npc.relation(pc)]'s apartment.
+		
+С этими словами [npc.she] подхватывает одну из [npc.her] [npc.arms] под твою руку, а затем, подняв тебя на ноги и вручив твои вещи, ведет к двери. Все еще измотанная пережитым, ты не можешь ничего другого, кроме как позволить вести себя прочь из квартиры твоего [npc.relation(pc)].
+		</p><p>
+			Спустя короткое время [npc.she] замирает, поворачивается к тебе и, широко ухмыляясь, [npc.she] произносит: [npc.speech(Даже не пытайся больше нападать на меня вот так! Если сделаешь это снова, мне придётся трахать тебя до тех пор, пока ты не усвоишь урок!)]
 		</p>
 		<p>
-			After a short while, [npc.she] comes to a halt, and, turning to look at you, [npc.she] grins. [npc.speech(Don't bother trying to attack me like that again! If you do, I'll just have to keep on fucking you until you've learned your lesson!)]
-		</p>
-		<p>
-			With that, [npc.she] turns around and walks off, leaving you to get your things in order before setting off into the bat caverns once again...
+		
+С этими словами [npc.she] разворачивается и уходит, оставляя тебя приводить вещи в порядок перед тем, как снова отправиться в пещеры летучих мышей...
 		</p>
 	#ELSE
 		<p>
-			As [npc.name] steps back and sorts [npc.her] clothes out, you sink down onto the ground, totally worn out from [npc.her] dominant treatment of you. Once [npc.sheIs] finished getting [npc.her] things in order, [npc.she] walks over and looks down at you, smirking in a very satisfied manner. Leaning down, [npc.she] pats you on the head. [npc.speech(Silly [npc.pcName]! This is what happens if you try attacking me!)]
+		
+Пока [npc.name] отступает и поправляет [npc.her] одежду, ты опускаешься на землю, совершенно обессиленная после доминантного обращения [npc.her] с тобой. Как только [npc.sheIs] заканчивает приводить [npc.her] в порядок, [npc.she] подходит и смотрит на тебя сверху вниз с очень довольной ухмылкой. Наклонившись, [npc.she] похлопывает тебя по голове. [npc.speech(Глупая [npc.pcName]! Вот что бывает, когда пытаешься на меня напасть!)]
 		</p>
 		<p>
-			With that, [npc.she] hooks one of [npc.her] [npc.arms] under yours, and, after pulling you to your feet and handing you your things, makes sure that you're strong enough to stand under your own strength. Still exhausted from your ordeal, you can do nothing but allow yourself to be manhandled by your [npc.relation(pc)], and obediently stand in place as [npc.she] scolds you, [npc.speech(Don't bother trying to attack me like that again! If you do, I'll just have to keep on fucking you until you've learned your lesson!)]
+			С этими словами [npc.she] подхватывает одну из [npc.her] [npc.arms] под твою руку, а затем, подняв тебя на ноги и вручив твои вещи, проверяет, достаточно ли ты окрепла, чтобы стоять самостоятельно. Всё ещё измотанная перенесённым испытанием, ты не можешь ничего не делать, кроме как позволять своей [npc.relation(pc)] бесцеремонно обращаться с собой, послушно замирая на месте, пока [npc.she] отчитывает тебя: [npc.speech(Даже не вздумай больше так на меня нападать! Если повторишь — мне придётся трахать тебя до тех пор, пока ты не усвоишь урок!)]
 		</p>
 		<p>
-			With that, [npc.she] turns around and walks off, leaving you to get your things in order before setting off into the bat caverns once again...
+		
+С этими словами [npc.she] разворачивается и уходит, оставляя тебя приводить вещи в порядок перед тем, как снова отправиться в пещеры летучих мышей...
 		</p>
 	#ENDIF
 	]]>
@@ -1261,116 +1263,115 @@
 		var affection = npc.getAffection(pc);
 	#ENDVAR
 	<p>
-		You can't bear to let any [npc.relation(pc)] of yours continue to live in such squalid conditions, and so you say, [pc.speech([npc.Name], I really don't think living here is good for you. I want you to move in with me, so that you can live in comfort until you get your life back on track.)]
+		Ты не можешь смотреть, как твоя [npc.relation(pc)] продолжает жить в таких нищенских условиях, и говоришь: [pc.speech([npc.Name], Мне правда кажется, что жить здесь тебе не к чему. Я хочу, чтобы ты переехала ко мне — так ты сможешь жить в комфорте, пока не встанешь на ноги.)]
 	</p>
 	<p>
 		#IF(affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
-			[npc.speech(Really? After how you've treated me?)] [npc.name] asks, crossing [npc.her] [npc.arms] and letting out an exasperated sigh,
+			[npc.speech(Правда? После того, как ты со мной обращался?)] — спрашивает [npc.name], скрестив [npc.her] [npc.arms] и тяжело вздыхая.
 			#IF(npc.getMother()!=null && npc.getMother().isPlayer())
-				 [npc.speech(I mean, I suppose I can forgive you... Y-You're really serious about letting me come and live with you in that massive mansion?)]
+				 [npc.speech(В смысле... наверное, я могу тебя простить... Т-ты правда серьезно хочешь, чтобы я переехала к тебе в тот огромный особняк?)]
 			#ELSE
-				 [npc.speech(I mean, I suppose I can forgive you... Y-You're really serious about letting me come and live with you?)]
+				 [npc.speech(В смысле... наверное, я могу тебя простить... Т-ты правда серьезно хочешь, чтобы я переехала к тебе?)]
 			#ENDIF
 		#ELSE
-			[npc.speech(Really?!)] [npc.name] asks, [npc.her] face lighting up as [npc.she] realises that [npc.sheIs] soon to be free of [npc.her] old, miserable life.
+			[npc.speech(Правда?!)] — восклицает [npc.name], и её [npc.her] лицо светлеет, когда [npc.she] осознаёт, что [npc.sheIs] скоро избавится от своей старой, жалкой жизни в [npc.her].
 			#IF(npc.getMother()!=null && npc.getMother().isPlayer())
-				 [npc.speech(I get to come and live with you in that massive mansion?!)]
+				 [npc.speech(Я смогу переехать к тебе в тот огромный особняк?!)]
 			#ELSE
-				 [npc.speech(I get to come and live with you?!)]
+				 [npc.speech(Я смогу переехать к тебе?!)]
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
-		[pc.speech(That's right, I have a room already waiting for you. We just need to get your luggage sorted and then we can head straight the-)] you explain, but your sentence is cut short as your [npc.relation(pc)], with tears of joy in [npc.her] [npc.eyes], suddenly launches [npc.herself] at you and gives you a big, loving hug.
+		[pc.speech(Все верно, комната уже ждет тебя. Нам только нужно разобраться с багажом, и можно сразу отправляться...)] — объясняешь ты, но не успеваешь договорить, как твоя [npc.relation(pc)], со слезами радости в [npc.her] [npc.eyes], внезапно бросается [npc.herself] на тебя и крепко, с любовью обнимает.
 	</p>
 	<p>
 		#IF(affection<AFFECTION_NEGATIVE_ONE_ANNOYED.getMaximumValue())
-			[npc.speech(I-I can't believe it!)] [npc.she] sobs,
+			[npc.speech(П-поверить не могу!)] — всхлипывает [npc.she],
 			#IF(npc.isSizeDifferenceTallerThan(pc))
-			 pulling your [pc.face] into [npc.her] torso.
+			 прижимая твою [pc.face] к своему [npc.her] торсу.
 			#ELSE
-			 burying [npc.her] [npc.face] into your shoulder.
+			 утыкаясь [npc.her] [npc.face] в твое плечо.
 			#ENDIF
-			 [npc.speech(I-I thought you hated me!)]
+			 [npc.speech(Я-я думала, ты меня ненавидишь!)]
 			</p>
 			<p>
-				[pc.speech(Don't be ridiculous,)] you reassure your [npc.relation(pc)], [pc.speech(I love you, and want to see you happy.)]
+				[pc.speech(Не говори глупостей,)] — успокаиваешь ты свою [npc.relation(pc)], [pc.speech(Я люблю тебя и хочу, чтобы ты была счастлива.)]
 		#ELSE
-			[npc.speech(I'm so happy, thank you [pc.name]!)] [npc.she] sobs,
+			[npc.speech(Я так счастлива, спасибо тебе, [pc.name]!)] — рыдает [npc.she],
 			#IF(npc.isSizeDifferenceTallerThan(pc))
-			 pulling your [pc.face] into [npc.her] torso.
+			 прижимая твою [pc.face] к своему [npc.her] торсу.
 			#ELSE
-			 burying [npc.her] [npc.face] into your shoulder.
+			 утыкаясь [npc.her] [npc.face] в твое плечо.
 			#ENDIF
-			 [npc.speech(This is the best day of my life!)]
+			 [npc.speech(Это лучший день в моей жизни!)]
 			</p>
 			<p>
-				[pc.speech(I'm just sorry it took me so long to find you,)] you say to your [npc.relation(pc)], [pc.speech(but it'll all be ok now.)]
+				[pc.speech(Мне просто жаль, что мне потребовалось столько времени, чтобы найти тебя,)] — говоришь ты своей [npc.relation(pc)], — [pc.speech(но теперь всё будет хорошо.)]
 		#ENDIF
 	</p>
 	<p>
-		Pulling back, [npc.name] wipes the tears from [npc.her] [npc.eyes], before smiling at you and sniffling, [npc.speech(Sorry, [pc.name], I didn't mean to get so emotional... S-Shall I get my stuff packed then?)]
+		Отстранившись, [npc.name] вытирает слёзы с [npc.her] [npc.eyes], а затем, шмыгая носом, улыбается тебе: [npc.speech(Прости, [pc.name], я не хотела так расчувствоваться... М-мне уже начинать собирать вещи?)]
 	</p>
 	<p>
-		Replying in the affirmative, you help your [npc.relation(pc)] to pack up what little personal belongings [npc.sheHasFull]. It turns out that the vast majority of [npc.her] apartment's furniture and furnishings are either owned by the landlord, or too old and shabby to be worth taking with you. As a result, the packing only takes ten minutes or so, and with a small suitcase filled with [npc.namePos] belongings, the two of you leave [npc.her] old apartment behind and set off in the direction of Lilaya's home.
+		Подтвердив её слова, ты помогаешь своей [npc.relation(pc)] собрать те немногие личные вещи, что есть у [npc.sheHasFull]. Оказывается, подавляющая часть мебели и предметов обстановки в квартире [npc.her] либо принадлежит домовладельцу, либо слишком стары и ветхи, чтобы их стоило брать с собой. В итоге сборы занимают от силы минут десять, и с небольшим чемоданом, набитым [npc.namePos] вещами, вы вдвоём покидаете старую квартиру [npc.her] и отправляетесь в сторону дома Lilaya.
 	</p>
 	<p>
-		After a short while you arrive at your destination,
+		Спустя короткое время вы прибываете на место,
 		#IF(npc.getMother()!=null && npc.getMother().isPlayer())
-			 which [npc.name] recognises as the place in which [npc.she] was born. Looking up at the familiar mansion in which [npc.sheIs] soon to live, [npc.name] sighs, [npc.speech(It's even bigger than I remember... Lilaya briefly told me that you were living here with her, but I didn't stick around to find out more...)]
+			 которое [npc.name] узнаёт как место, где родилась [npc.she]. Глядя на знакомый особняк, в котором вскоре будет жить [npc.sheIs], [npc.name] вздыхает: [npc.speech(Он даже больше, чем я помню... Lilaya вкратце упоминала, что ты живёшь здесь вместе с ней, но я не стала расспрашивать подробнее...)]
 		#ELSE
-			 and, upon realising that you live in the huge mansion before [npc.herHim], [npc.name] gasps, [npc.speech(You live here?! But this is a palace!)]
+			 и, осознав, что ты живёшь в этом огромном особняке перед [npc.herHim], [npc.name] ахает: [npc.speech(Ты живёшь здесь?! Но это же настоящий дворец!)]
 		#ENDIF
 	</p>
 	<p>
-		Briefly explaining how Lilaya is not only your aunt, but also the recognised daughter of Lyssieth, you reach up to knock on the front door.
+		Вкратце объяснив, что Lilaya — не только твоя тётя, но и признанная дочь Lyssieth, ты протягиваешь руку, чтобы постучать в парадную дверь.
 	</p>
 	<p>
 		#IF((npc.getMother()!=null && npc.getMother().equals(lyssieth)) || (npc.getFather()!=null && npc.getFather().equals(lyssieth)))
-				[npc.speech(So Lilaya's my half-sister?)] [npc.name] gasps once again, [npc.speech(Is there any chance of convincing her to have mommy recognise me as well?)]
+				[npc.speech(Значит, Lilaya — моя сводная сестра?)] [npc.name] снова ахает, [npc.speech(Есть шанс убедить её, чтобы мамочка признала и меня тоже?)]
 			</p>
 			<p>
-				[pc.speech(I think that would be pushing your luck,)] you reply, but before you can say anything further, the front door swings open, and you're greeted by the familiar sight of the cat-girl maid, Rose.
+				[pc.speech(Думаю, это уже перебор,)] — отвечаешь ты, но не успеваешь ты сказать ничего больше, как входная дверь распахивается, и перед тобой предстает знакомая фигура кошкодевочки-горничной, Роуз.
 		#ELSE
-				[npc.speech(So we're related to an elder Lilin?!)] [npc.name] gasps once again, [npc.speech(So we're royalty?!)]
+				[npc.speech(То есть мы родственники старшей лилин?!)] [npc.name] снова ахает, [npc.speech(Значит, мы королевской крови?!)]
 			</p>
 			<p>
-				[pc.speech(Well, not really; we're not exactly recognised as such,)] you reply, but before you can say anything further, the front door swings open, and you're greeted by the familiar sight of the cat-girl maid, Rose.
+				[pc.speech(Ну, не совсем; нас не особо признают таковыми,)] — отвечаешь ты, но не успеваешь ты сказать ничего больше, как входная дверь распахивается, и перед тобой предстает знакомая фигура кошкодевочки-горничной, Роуз.
 		#ENDIF
 	</p>
 	<p>
-		[rose.speech(Good [style.evening], [pc.name],)] Rose greets you, curtsying and stepping aside to let you and [npc.name] enter. [rose.speech(I see you have company, would you like me to prepare a room?)]
+		[rose.speech(Добрый [style.evening], [pc.name],)] — приветствует тебя Роуз, приседая в реверансе и отступая в сторону, чтобы дать тебе и [npc.name] войти. [rose.speech(Вижу, вы не одни, желаете, чтобы я подготовила комнату?)]
 	</p>
 	<p>
-		[pc.speech(One's already been set aside for [npc.name],)] you reply, [pc.speech(I was going to let [npc.herHim] have the guest room that you prepared for me before, remember?)]
+		[pc.speech(Одна уже зарезервирована для [npc.name],)] — отвечаешь ты, [pc.speech(Я собирался отдать [npc.herHim] гостевую комнату, которую ты готовила для меня раньше, помнишь?)]
 	</p>
 	<p>
-		[rose.speech(Of course,)] Rose replies, shutting the front door as you and [npc.name] move forwards into the grand entrance hall. The cat-girl maid then turns to address your [npc.relation(pc)], [rose.speech(Welcome to the household, [npc.name]. If there's anything you need, please don't hesitate to use the pull-cord in your room to summon me. Now, if the two of you will excuse me, I'll inform Mistress Lilaya of your arrival.)]
+		[rose.speech(Конечно,)] — отвечает Роуз, закрывая входную дверь, пока вы с [npc.name] проходите в величественный вестибюль. Затем кошкодевочка-горничная поворачивается к твоему [npc.relation(pc)]: [rose.speech(Добро пожаловать в наш дом, [npc.name]. Если вам что-нибудь понадобится, пожалуйста, не стесняйтесь дернуть за шнурок в своей комнате, чтобы позвать меня. А теперь, если вы меня позволите, я извещу госпожу Lilaya о вашем прибытии.)]
 	</p>
 	<p>
-		Curtsying once more, Rose turns and hurries off back to the lab. Taking hold of [npc.namePos] [npc.hand], you then set off into the mansion, leading [npc.herHim] to [npc.her] new room...
+		Еще раз приседая в реверансе, Роуз разворачивается и спешит обратно в лабораторию. Взяв [npc.namePos] [npc.hand], ты отправляешься вглубь особняка, ведя [npc.herHim] в [npc.her] новую комнату...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFSPRING_OFFER_ROOM_BACK_HOME"><![CDATA[
 	<p>
-		It doesn't take long for you and your [npc.relation(pc)] to arrive at [npc.her] new room, and after you've opened the door and lead [npc.her] inside, you turn to [npc.name] and say, [pc.speech(This is your room now, so please make yourself feel at home. You've got an ensuite bathroom over there, and if you put your dirty clothes in the laundry basket, they'll be cleaned for you for the next day. You can leave all of your worries behind, now that you're living here with me.)]
+		Ты и твой [npc.relation(pc)] довольно быстро добираетесь до [npc.her] новой комнаты. Открыв дверь и проведя [npc.her] внутрь, ты поворачиваешься к [npc.name] и говоришь: [pc.speech(Теперь это твоя комната, так что чувствуй себя как дома. Вон там у тебя личная ванная, а если будешь класть грязную одежду в корзину для белья, её постирают к следующему дню. Теперь, когда ты живешь здесь со мной, можешь оставить все заботы позади.)]
+	</p><p>
+Бросив [npc.her] чемодан на пол, твой [npc.relation(pc)] снова бросается к тебе с [npc.herself], и пока [npc.she] крепко тебя обнимает, [npc.she] восклицает: [npc.speech(Я люблю тебя, [pc.mom]! Спасибо тебе огромное! Я... я просто не верит, что это происходит наяву!)]
+</p>
+	<p>
+		[pc.speech(И я тебя тоже,)] — отвечаешь ты, обнимая своего [npc.relation(pc)] в ответ и разделяя этот драгоценный момент с [npc.herHim].
 	</p>
 	<p>
-		Dropping [npc.her] suitcase to the floor, your [npc.relation(pc)] once again launches [npc.herself] at you, and as [npc.she] pulls you into a big hug, [npc.she] exclaims, [npc.speech(I love you, [pc.mom]! Thank you so much! I-I can't believe this is really happening!)]
+		Спустя мгновение [npc.name] отстраняется, чтобы запечатлеть поцелуй на твоей щеке, и произносит: [npc.speech(Честное слово, это лучшее, что случалось со мной в жизни... Мне никогда не отблагодарить тебя! Я продолжу искать работу, и как только найду, начну платить за жилье. Я обязательно отплачу тебе за всё это, обещаю!)]
 	</p>
 	<p>
-		[pc.speech(I love you too,)] you respond, returning your [npc.relation(pc)]'s hug as you share this precious moment with [npc.herHim].
+		Посоветовав [npc.name] не принимать всё слишком близко к сердцу и дать себе время привыкнуть к новой комнате [npc.her], ты подходишь к двери, собираясь уходить. Но прежде чем ты покинешь её, [npc.relation(pc)] снова благодарит тебя за доброту и говорит, что [npc.she] бесконечно признательна тебе за то, что ты не обрек [npc.herHim] на жизнь преступницы.
 	</p>
 	<p>
-		After a moment, [npc.name] pulls back, before planting a kiss on your cheek and saying, [npc.speech(This is honestly the best thing that's ever happened to me... I can never thank you enough! I'll keep on looking for a job, and once I've got one, I'll start paying rent. I'll repay you for all of this, I promise!)]
-	</p>
-	<p>
-		Telling [npc.name] to take it easy, and to spend some time getting used to [npc.her] new room, you step over to the door and prepare to take your leave. Before you depart, however, your [npc.relation(pc)] once again thanks you for your kindness, and tells you that [npc.she] is eternally grateful to you for not abandoning [npc.herHim] to a life of crime.
-	</p>
-	<p>
-		Promising [npc.herHim] that you'll be back later to check up on [npc.herHim], you step out of [npc.namePos] room and wonder what to do next...
+		Пообещав [npc.herHim], что заглянешь к [npc.herHim] попозже, ты выходишь из комнаты [npc.namePos] и раздумываешь, чем бы заняться теперь...
 	</p>
 	]]>
 	</htmlContent>

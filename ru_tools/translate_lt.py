@@ -21,7 +21,8 @@ GLOSSARY_PATH = Path(__file__).resolve().parent / "GLOSSARY_RU.json"
 PROGRESS_PATH = Path(__file__).resolve().parent / "progress.json"
 ENERGY_PATH = Path(__file__).resolve().parent / "energy_stats.json"
 TM_CACHE_PATH = Path(__file__).resolve().parent / "tm_cache.json"
-DEFAULT_API = "http://127.0.0.1:8089/v1/chat/completions"
+DEFAULT_API = "http://127.0.0.1:8080/v1/chat/completions"
+DEFAULT_MODEL = "gemma-4-26b-abliterated"
 
 _TM_CACHE: dict | None = None
 
@@ -160,6 +161,8 @@ def unmask_text(text: str, masks: dict) -> str:
 
 
 def validate_masks(translated: str, masks: dict) -> bool:
+    if "Контекст:" in translated or "Context:" in translated:
+        return False
     return all(key in translated for key in masks)
 
 
@@ -181,10 +184,11 @@ def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_toke
     temp_b, w_b = get_gpu_telemetry()
 
     body = {
-        "model": "local",
+        "model": DEFAULT_MODEL,
         "messages": messages,
-        "temperature": 0.15,
+        "temperature": 0.25,
         "max_tokens": max_tokens,
+        "chat_template_kwargs": {"enable_thinking": False},
     }
     if json_mode:
         body["response_format"] = {"type": "json_object"}
@@ -206,15 +210,24 @@ def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_toke
     return data["choices"][0]["message"]["content"].strip()
 
 
+def has_translatable_words(text: str) -> bool:
+    """Return True only if text contains actual English words outside HTML tags and [tokens]."""
+    stripped = HTML_TAG_RE.sub(" ", text)
+    stripped = BRACKET_ATOMIC_RE.sub(" ", stripped)
+    return bool(re.search(r"[a-zA-Z]{2,}", stripped))
+
+
 def translate_single(api_url: str, text: str, glossary: dict, context_note: str) -> str:
-    if not text or not text.strip() or re.fullmatch(r"[\s\d\W_]+", text):
+    if not text or not text.strip() or not has_translatable_words(text):
         return text
     masked, masks = mask_text(text)
     hint = build_glossary_hint(text, glossary)
     sys_p = (
-        "You are an expert Russian translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
-        "Translate into natural, uncensored Russian. Keep ALL @@H*@@ and @@T*@@ tokens and [obj.speech(...)] wrappers intact. "
-        "Output ONLY the Russian translation."
+        "You are an expert Russian literary translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
+        "Translate into natural, idiomatic, uncensored Russian (avoid stiff literal English calques). "
+        "Prefer present tense for 'you' ('ты' — e.g. 'ты видишь', 'ты берёшь') so it fits any player gender naturally. "
+        "Keep ALL @@H*@@ and @@T*@@ mask tokens and [obj.speech(...)] / [style.bold(...)] wrappers intact. "
+        "Output ONLY the Russian translation without notes."
     )
     usr_p = f"Context: {context_note}\n" + (hint + "\n" if hint else "") + f"Text:\n{masked}"
     for _ in range(3):
@@ -245,7 +258,7 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
         char_sum = 0
         while idx < len(items) and len(batch_indices) < 10:
             s = items[idx]
-            if not s or not s.strip() or re.fullmatch(r"[\s\d\W_]+", s):
+            if not s or not s.strip() or not has_translatable_words(s):
                 idx += 1
                 continue
             if s in tm:
@@ -280,8 +293,9 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
 
         hint = build_glossary_hint("\n".join(combined_src), glossary)
         sys_p = (
-            "You are an expert Russian translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
-            "Translate each JSON string value from English into natural, uncensored Russian. "
+            "You are an expert Russian literary translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
+            "Translate each JSON string value from English into natural, idiomatic, uncensored Russian (no stiff calques). "
+            "Prefer present tense for 'you' ('ты') where natural so it fits any player gender. "
             "CRITICAL: Keep exact JSON keys, preserve all @@H*@@ and @@T*@@ mask tokens, and keep [obj.speech(...)] / [style.bold(...)] wrappers intact. "
             "Return ONLY a valid JSON object."
         )

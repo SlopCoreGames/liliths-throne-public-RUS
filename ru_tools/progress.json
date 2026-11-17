@@ -21,7 +21,13 @@
     "res/txt/characters/dominion/nyan.xml",
     "res/txt/characters/dominion/reindeerOverseer.xml",
     "res/txt/characters/dominion/rentalMommy.xml",
-    "res/txt/characters/dominion/scarlett.xml"
+    "res/txt/characters/dominion/scarlett.xml",
+    "res/txt/characters/dominion/wes.xml",
+    "res/txt/characters/dominion/zaranix.xml",
+    "res/txt/characters/elemental.xml",
+    "res/txt/characters/enslavement.xml",
+    "res/txt/characters/meraxis/duel.xml",
+    "res/txt/characters/offspring/bat_cavern.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

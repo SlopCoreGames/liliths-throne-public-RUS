@@ -6,37 +6,37 @@
 	<htmlContent tag="ELEMENTAL_START"><![CDATA[
 	<p>
 		#IF(el.getPassiveForm()==null)
-			Wanting to take a moment in which to speak to your elemental, you turn towards [el.name], only to see that [el.sheIs] already expectantly hovering up near to your face. The pale [el.skinColour] glow of [el.her] ethereal, wisp-like form noticeably brightens as [el.she] projects [el.her] thoughts directly into your mind,
+			Желая поговорить со своим элементалем, ты поворачиваешься к [el.name], но видишь, что [el.sheIs] уже с предвкушением парит прямо перед твоим лицом. Бледное [el.skinColour] свечение эфирной, похожей на дымку формы [el.her] заметно ярче вспыхивает, когда [el.she] транслирует [el.her] мысли прямо тебе в разум,
 		#ELSE
-			Wanting to take a moment in which to speak to your elemental, you turn towards [el.name], only to see that [el.sheIs] already expectantly
+			Желая поговорить со своим элементалем, ты поворачиваешься к [el.name], но видишь, что [el.sheIs] уже с предвкушением
 			#IF(el.getPassiveForm().getRace().isFlyingRace())
-				 flying around in little circles near to your face.
+				 кружит маленькими кругами прямо перед твоим лицом.
 			#ELSE
-				 looking up at you.
+				 заглядывая тебе в глаза.
 			#ENDIF
-			 The pale [el.skinColour] glow which surrounds [el.her] feral [el.passiveRace]'s body noticeably brightens as [el.she] projects [el.her] thoughts directly into your mind,
+			 Бледное [el.skinColour] свечение, окружающее дикое тело [el.her] [el.passiveRace], заметно ярче вспыхивает, когда [el.she] транслирует [el.her] мысли прямо тебе в разум,
 		#ENDIF
 		#IF(el.isSummonerServant())
-			 [el.thought(You dare to ask something of me, servant? Bow down before me, and I shall consider your request.)]
+			 [el.thought(Ты смеешь просить меня о чем-то, слуга? Склонись предо мной, и тогда я рассмотрю твою просьбу.)]
 		#ELSEIF(el.isServant())
-			 [el.thought(May I serve you, [pc.name]? Your every wish is my command...)]
+			 [el.thought(Позволь мне служить тебе, [pc.name]? Каждое твое желание — мой приказ...)]
 		#ELSE
-			 [el.thought(You wish to speak with me, [pc.name]?)]
+			 [el.thought(Ты хочешь поговорить со мной, [pc.name]?)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(el.isSummonerServant())
-			Having sworn to be subservient to the school of [el.school(true)], you feel obliged to do as [el.name] commands, and dutifully bow down before [el.herHim]. Satisfied with your display of submission, your elemental once again projects [el.her] voice into your mind and dominantly orders, [el.thought(Tell me what it is you want then, servant!)]
+			Дав клятву подчиняться школе [el.school(true)], ты чувствуешь обязанность исполнить волю [el.name], и послушно склоняешься перед [el.herHim]. Довольный твоим проявлением покорности, твой элементаль вновь транслирует [el.her] голос в твой разум и властно приказывает: [el.thought(Тогда говори, чего ты хочешь, слуга!)]
 		#ELSE
-			Clearly wanting to show [el.her] affection towards you,
+			Явно желая проявить к тебе [el.her] привязанность,
 			#IF(el.getPassiveForm()==null)
-				 [el.name] hovers up close to your face and rubs up against your cheek
+				 [el.name] зависает совсем рядом с твоим лицом и трется о твою щеку
 			#ELSEIF(el.getPassiveForm().getRace().isFlyingRace())
-				 [el.name] lands on your shoulder and rubs up against your cheek
+				 [el.name] опускается тебе на плечо и трется о твою щеку
 			#ELSE
-				 [el.name] rubs up against your [pc.leg(true)]
+				 [el.name] трется о твою [pc.leg(true)]
 			#ENDIF
-			 as [el.she] waits to hear what it is you want...
+			 пока [el.she] ждет, чтобы услышать, чего именно ты хочешь...
 		#ENDIF
 	</p>
 	]]>
@@ -44,100 +44,95 @@
 	
 	<htmlContent tag="ELEMENTAL_START_SEX_DOMINANT"><![CDATA[
 	<p>
-		Whether due to [el.name] planting the idea in your subconscious, or perhaps just from the sight of [el.her] active form, you suddenly find yourself feeling desperately turned-on. [pc.Stepping] forwards to dominantly take hold of your elemental, you pull [el.herHim] into
+		То ли из-за того, что [el.name] заронила эту мысль в твое подсознание, то ли просто от вида [el.her] в активной форме, ты внезапно чувствуешь, как тебя неистово возбуждает. [pc.Stepping] предвкушает возможность властно подчинить твоего элементаля, и ты притягиваешь [el.herHim] к себе для
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, false) && el.isAbleToAccessCoverableArea(CA_MOUTH, false))
-			 a passionate kiss, and as you push your [pc.tongue+] into [el.her] mouth, [el.she] projects [el.her] voice into your mind, [el.thought(~Ooh!~ Yes! That's it... ~Mmm!~ Let's give in to our desires...)]
+			 страстного поцелуя, и пока ты вжимаешь своего [pc.tongue+] в [el.her] рот, [el.she] транслирует [el.her] голос прямо тебе в разум: [el.thought(~Ох!~ Да! Вот так... ~Ммм!~ Давай отдадимся нашим желаниям...)]
 		#ELSE	
-			 your embrace, and as you press yourself against [el.herHim], [el.she] excitedly [el.moans], [el.speech(~Ooh!~ Yes! That's it... ~Mmm!~ Let's give in to our desires...)]
+			 своим объятиям, и пока ты прижимаешься к [el.herHim], [el.she] в возбуждении [el.moans], [el.speech(~Ох!~ Да! Вот так... ~Ммм!~ Давай отдадимся нашим желаниям...)]
 		#ENDIF
 	</p>
 	<p>
-		More than happy to do as your elemental suggests, you prepare to give [el.herHim] a good fucking...
+		С радостью следуя совету своего элементаля, ты готовишься хорошенько оттрахать [el.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ELEMENTAL_START_SEX_SUBMISSIVE"><![CDATA[
 	<p>
-		Whether due to [el.name] planting the idea in your subconscious, or perhaps just from the sight of [el.her] active form, you suddenly find yourself feeling desperately turned-on. Knowing exactly what it is that you want, [el.name] [el.steps] forwards and firmly takes hold of your waist, before pulling you into
+		То ли из-за того, что [el.name] заронила эту мысль в твое подсознание, то ли просто от вида [el.her] в активной форме, ты внезапно чувствуешь, как тебя неистово возбуждает. Точно зная, чего ты хочешь, [el.name] [el.steps] делает шаг вперед и крепко хватает тебя за талию, прежде чем вовлечь в
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, false) && el.isAbleToAccessCoverableArea(CA_MOUTH, false))
-			 a passionate kiss. As [el.she] forcefully pushes [el.her] [el.tongue+] into your mouth, [el.she] projects [el.her] voice into your mind,
+			 страстный поцелуй. Пока [el.she] властно втискивает [el.her] [el.tongue+] тебе в рот, [el.she] транслирует [el.her] голос прямо тебе в разум,
 			#IF(el.isSummonerServant())
-				 [el.thought(~Mmm!~ Good servant... ~Aah!~ I'll show you what it means to pledge your subservience to me!)]
+				 [el.thought(~Ммм!~ Хороший слуга... ~Аах!~ Я покажу тебе, что значит присягнуть мне на верность!)]
 			#ELSE
-				 [el.thought(~Mmm!~ Yes! That's it... ~Aah!~ Let's give in to our desires...)]
+				 [el.thought(~Ммм!~ Да! Вот так... ~Аах!~ Давай отдадимся нашим желаниям...)]
 			#ENDIF
 		#ELSE
 			#IF(el.isSummonerServant())
-				 [el.her] embrace. As [el.she] presses [el.herself] against you, [el.she] dominantly [el.moans], [el.speech(~Mmm!~ Good servant... ~Aah!~ I'll show you what it means to pledge your subservience to me!)]
+				 [el.her] обнимает тебя. Пока [el.she] прижимает [el.herself] к тебе, [el.she] властно [el.moans], [el.speech(~Ммм!~ Хороший слуга... ~Аах!~ Я покажу тебе, что значит присягнуть мне на верность!)]
 			#ELSE
-				 [el.her] embrace. As [el.she] presses [el.herself] against you, [el.she] excitedly [el.moans], [el.speech(~Mmm!~ Yes! That's it... ~Aah!~ Let's give in to our desires...)]
+				 [el.her] обнимает тебя. Пока [el.she] прижимает [el.herself] к тебе, [el.she] возбужденно [el.moans], [el.speech(~Ммм!~ Да! Вот так... ~Аах!~ Давай отдадимся нашим желаниям...)]
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
-		More than happy to do as your elemental suggests, you prepare to submit to [el.herHim] and receive a good fucking...
+		С большим удовольствием исполняя пожелание своего элементаля, ты готовишься подчиниться [el.herHim] и получить хорошую еблей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ELEMENTAL_TAKE_FORM_PASSIVE"><![CDATA[
 	<p>
-		Having had enough of [el.namePos] active form, you
+		Насытившись активной формой [el.namePos], ты
 		#IF(el.isSummonerServant())
-			 kindly ask [el.herHim] if [el.she] could return to [el.her] passive form. For a moment, it looks as though [el.sheIs] going to refuse to do as you say, but after flashing you an amused smirk, [el.she] relents, [el.speech(Fine. Staying in this form for too long gives me a headache anyway...)]
+			 вежливо просишь [el.herHim], чтобы [el.she] вернулась в пассивную форму [el.her]. На мгновение кажется, что [el.sheIs] собирается тебе отказать, но, одарив тебя забавной ухмылкой, [el.she] уступает, [el.speech(Ладно. В этой форме у меня всё равно голова начинает болеть, если долго оставаться...)]
 		#ELSE
-			 tell [el.herHim] to return to [el.her] passive form. Obediently nodding [el.her] head as you give [el.herHim] your command, [el.she] says, [el.speech(Of course, [pc.name]. Give me just a moment...)]
-		#ENDIF
+скажи [el.herHim] вернуться в пассивную форму [el.her]. Послушно кивая [el.her] голова, когда ты отдаёшь [el.herHim] свою команду, [el.she] произносит: [el.speech(Конечно, [pc.name]. Дай мне всего лишь мгновение...)]		#ENDIF
 	</p>
 	<p>
-		Letting out a deep breath, [el.name] is suddenly enveloped by a flash of [el.skinColour] arcane energy, and as it quickly fades down into a dull glow, you're able to see that your elemental has once again taken the form of [el.a_passiveForm].
+		Глубоко вздохнув, [el.name] внезапно окутывает вспышка [el.skinColour] арканной энергии, и когда она быстро угасает, превращаясь в тусклое сияние, ты видишь, что твой элементаль снова принял облик [el.a_passiveForm].
 		#IF(el.getPassiveForm()==null)
-			 Hovering around you, [el.her] ethereal, wisp-like form brightens as [el.she] projects [el.her] voice into your head and asks,
+			 Паря вокруг тебя, [el.her] эфирная, похожая на огонек сущность вспыхивает ярче, когда [el.she] проецирует [el.her] голос прямо тебе в голову и спрашивает,
 		#ELSE
 			#IF(el.getPassiveForm().getRace().isFlyingRace())
-				 Quickly taking off and flying around in little circles,
+				 Быстро взмывая вверх и описывая маленькие круги,
 			#ELSE
-				 Looking up at you,
+				 Глядя на тебя,
 			#ENDIF
-			  the faint glow emitted by [el.her] feral [el.passiveRace]'s body brightens as [el.she] projects [el.her] voice into your head and asks,
-		#ENDIF
+слабое свечение, исходящее от тела дикого [el.passiveRace] [el.her], становится ярче, когда [el.she] проецирует [el.her] голос прямо тебе в голову и спрашивает,		#ENDIF
 		#IF(el.isSummonerServant())
-			 [el.thought(Are you quite satisfied now, servant?)]
+			 [el.thought(Ну что, теперь ты вполне доволен, слуга?)]
 		#ELSE
-			 [el.thought(Is there anything else you need, [pc.name]?)]
+			 [el.thought(Тебе нужно что-нибудь еще, [pc.name]?)]
 		#ENDIF
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ELEMENTAL_TAKE_FORM_ACTIVE"><![CDATA[
-	<p>
-		Wanting [el.name] to switch out of [el.her] passive form and take on [el.her] real appearance, you
-		#IF(el.isSummonerServant())
-			 kindly ask [el.herHim] if [el.she] could change into [el.her] active form. Seemingly eager to show you [el.her] true form, [el.she] projects [el.her] voice into your head and states, [el.thought(Very well, servant, I shall allow you to see my true form!)]
-		#ELSE
-			 tell [el.herHim] to change into [el.her] active form. Quickly projecting [el.her] voice into your head, [el.she] obediently states, [el.thought(Of course, [pc.name]. Give me just a moment...)]
+	<htmlContent tag="ELEMENTAL_TAKE_FORM_ACTIVE"><![CDATA[<p>
+		Желая, чтобы [el.name] сменила свою пассивную форму [el.her] на свой истинный облик [el.her], ты		#IF(el.isSummonerServant())
+[el.herHim] любезно спрашивает, не могла бы [el.she] принять свою активную форму [el.her]. Кажется, [el.she] жаждет явить тебе [el.her] истинный облик, поэтому [el.she] проецирует [el.her] голос прямо в твою голову и заявляет: [el.thought(Что ж, слуга, так и быть, я позволю тебе узреть мой истинный облик!)]		#ELSE
+			 приказываешь [el.herHim] принять [el.her] активную форму. Быстро проецируя [el.her] голос тебе в голову, [el.she] послушно отвечает: [el.thought(Конечно, [pc.name]. Дай мне всего мгновение...)]
 		#ENDIF
 	</p>
 	<p>
-		Suddenly, [el.name] is concealed from your view by a blinding flash of [el.skinColour] arcane energy. Thankfully, this bright light quickly fades away, allowing you to see that your elemental has changed out of [el.her] passive form of [el.a_passiveForm].
+	Внезапно [el.name] скрывается из виду ослепительной вспышкой [el.skinColour] арканной энергии. К счастью, яркий свет быстро гаснет, позволяя тебе увидеть, что твой элементаль сменила свою [el.her] пассивную форму [el.a_passiveForm].
 		#IF(el.isFeminine())
-			 Flashing you a cheeky grin and seductively teasing [el.her] [el.fingers+] over [el.her] sexy body,
+			 Одаривая тебя дерзкой ухмылкой, [el.her] соблазнительно ласкает [el.fingers+] по всему [el.her] сексуальному телу,
 		#ELSE
-			 Flashing you a charming smile and confidently [el.stepping] forwards,
+			 Одаривая тебя очаровательной улыбкой, [el.stepping] уверенно шагает вперед,
 		#ENDIF
 		#IF([#SPECIAL_PARSE_0])
 			#IF(el.isSummonerServant())
-				 [el.she] ponders out loud, [el.speech(I find myself getting quite aroused when in this form... Perhaps I should fuck you?)]
+				 [el.she] задумчиво произносит вслух: [el.speech(В этой форме я чувствую, как во мне разгорается возбуждение... Может, мне стоит трахнуть тебя?)]
 			#ELSE
-				 [el.she] teases, [el.speech(I find myself getting quite aroused when in this form... Perhaps you'd like to fuck me?)]
+				 [el.she] дразнит: [el.speech(В этой форме я чувствую, как во мне разгорается возбуждение... Может, ты хочешь трахнуть меня?)]
 			#ENDIF
 		#ELSE
 			#IF(el.isSummonerServant())
-				 [el.she] asks, [el.speech(So what did you want to ask of me now, servant?)]
+				 [el.she] спрашивает: [el.speech(Ну, и что ты хотел попросить у меня сейчас, слуга?)]
 			#ELSE
-				 [el.she] asks, [el.speech(So what would you like to do with me while in this form, [pc.name]?)]
+				 [el.she] спрашивает: [el.speech(И что бы ты хотел сделать со мной, пока я в этой форме, [pc.name]?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -150,22 +145,22 @@
 	<htmlContent tag="ELEMENTAL_AFTER_SEX"><![CDATA[
 	<p>
 		#IF(game.isSillyModeEnabled())
-			[pc.speech(So <i>that's</i> how it feels to go fuck myself,)]
+			[pc.speech(Так вот <i>как же</i> ощущается, когда трахаешь самого себя,)]
 			#IF(sex.isDom(pc))
-				 you pant as you [pc.step] back from [el.name].
+				 ты тяжело дышишь, когда [pc.step] [el.name] назад от тебя.
 			#ELSE
-				 you pant as [el.name] [el.steps] back from you and brings an end to the sex.
+				 ты тяжело дышишь, когда [el.name] [el.steps] назад от тебя, завершая секс.
 			#ENDIF
 		#ELSE
 			#IF(sex.isDom(pc))
-				Having had your fun, you tell [el.name] that you've finished with [el.herHim] and [pc.step] back, leaving [el.herHim] to [el.moan], [el.speech(~Ooh!~ That felt good... We should do this again some time...)]
+			Насладившись, ты говоришь [el.name], что с [el.herHim] покончено, и [pc.step] назад, оставляя [el.herHim] [el.moan], [el.speech(~Ох!~ Это было приятно... Нам стоит повторить это как-нибудь...)]
 			#ELSE
-				Having had [el.her] fun, [el.name] [el.steps] back and [el.moans], [el.speech(~Mmm!~ That felt good... We should do this again some time!)]
+				Насладившись [el.her], [el.name] [el.steps] возвращается [el.moans], [el.speech(~Ммм!~ Как же хорошо... Нам стоит повторить это как-нибудь еще!~)]
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
-		Quickly getting your things back in order, you take a moment to catch your breath and turn to face [el.name] once again. Seeing that [el.sheHas] already fully recovered from your shared intimate experience, you wonder what to say to [el.herHim] next...
+		Быстро приводя вещи в порядок, ты на мгновение замираешь, чтобы перевести дух, и снова поворачиваешься к [el.name]. Видя, что [el.sheHas] уже полностью восстановилась после вашего интимного приключения, ты гадаешь, что сказать [el.herHim] дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -176,20 +171,20 @@
 	<htmlContent tag="ELEMENTAL_INSPECT"><![CDATA[
 	#IF(el.isSummonerServant())
 		<p>
-			Wanting to take a closer look at [el.namePos] body, you kindly ask [el.herHim] if [el.she] could pose for you. 
+			Желая получше рассмотреть тело [el.namePos], ты вежливо просишь [el.herHim], чтобы [el.she] могла принять для тебя позу.
 		</p>
 		<p>
-			[el.speech(You, a mere servant, dare to ask me such a thing?!)] [el.she] scowls, before letting out a deep huff and saying, [el.speech(Bow down to me again and I'll consider it.)]
+			[el.speech(Ты, жалкий слуга, смеешь просить меня о таком?!)] [el.she] хмурится, но затем глубоко вздыхает и произносит: [el.speech(Склонись предо мной еще раз, и тогда я подумаю.)]
 		</p>
 		<p>
-			Doing as you're told, you bow down before your elemental, which is thankfully enough to get what you want, as [el.she] strikes a revealing pose before you and huffs, [el.speech(Go on then, servant! Get a good look at the one you've sworn your subservience to!)]
+			Повинуясь приказу, ты склоняешься перед своей элементалкой, чего, к счастью, оказывается достаточно: [el.she] принимает соблазнительную позу перед тобой и фыркает: [el.speech(Ну же, слуга! Рассматривай как следует ту, кому ты поклялся в верности!)]
 		</p>
 	#ELSE
 		<p>
-			Wanting to take a closer look at [el.namePos] body, you tell [el.herHim] to assume a revealing pose for you. 
+			Желая получше рассмотреть тело [el.namePos], ты велишь [el.herHim] принять для тебя соблазнительную позу.
 		</p>
 		<p>
-			[el.speech(Of course, if that's what you want,)] your elemental obediently replies, before presenting [el.herself] to you and holding still so that you can inspect [el.herHim]...
+			[el.speech(Конечно, если ты так хочешь,)] послушно отвечает твоя элементалка, после чего демонстрирует тебе [el.herself] и замирает, позволяя тебе внимательно осмотреть [el.herHim]...
 		</p>
 	#ENDIF
 	]]>
@@ -200,59 +195,59 @@
 	
 	<htmlContent tag="ELEMENTAL_TALK"><![CDATA[
 	<p>
-		Wanting to know more about what exactly [el.name] is, you ask [el.herHim] what [el.she] knows about [el.her] existence.
+		Желая узнать побольше о том, что именно собой представляет [el.name], ты спрашиваешь [el.herHim], что [el.she] знает о существовании [el.her].
 	</p>
 	<p>
 		#IF(el.isSummonerServant())
 			#IF(el.isActive())
-				[el.speech(How presumptuous of a mere servant to ask such a thing!)]
+				[el.speech(Какая дерзость — слышать такое от простого слуги!)]
 			#ELSE
-				[el.thought(How presumptuous of a mere servant to ask such a thing!)]
+				[el.thought(Какая дерзость! Обычный слуга смеет спрашивать о подобном!)]
 			#ENDIF
-			 [el.she] huffs, before nevertheless beginning to answer your question by stating,
+			 [el.she] фыркает, но всё же начинает отвечать на твой вопрос:
 		#ELSE
 			#IF(el.isActive())
-				[el.speech(You want to know what I am?)] 
+				[el.speech(Ты хочешь знать, что я такое?)] 
 			#ELSE
-				[el.thought(You want to know what I am?)] 
+				[el.thought(Ты хочешь знать, что я такое?)] 
 			#ENDIF
-			 [el.she] asks, before beginning to answer your question by stating,
+			 [el.she] спрашивает, а затем начинает отвечать на твой вопрос:
 		#ENDIF
 		#IF(el.isActive())
-			 [el.speech(I'm a construct of your subconscious, and have been brought to life by the power of your arcane aura. While it may appear that I am able to think and act in an independent manner, I am merely a physical manifestation of your mind, and so in reality, I am just another part of you.)]
+			 [el.speech(Я — порождение твоего подсознания, оживленное силой твоей арканной Ауры. И хотя может показаться, будто я мыслю и действую самостоятельно, на самом деле я лишь физическое воплощение твоего разума. Так что, по сути, я — всего лишь еще одна часть тебя.)]
 		#ELSE
-			 [el.thought(I'm a construct of your subconscious, and have been brought to life by the power of your arcane aura. While it may appear that I am able to think and act in an independent manner, I am merely a physical manifestation of your mind, and so in reality, I am just another part of you.)]
+			 [el.thought(Я — порождение твоего подсознания, оживленное силой твоей арканной Ауры. И хотя может показаться, будто я мыслю и действую самостоятельно, на самом деле я лишь физическое воплощение твоего разума. Так что, по сути, я — всего лишь еще одна часть тебя.)]
 		#ENDIF
 	</p>
 	<p>
-		Prompted by further questioning, [el.name] goes on to reveal that while the potential exists in everyone, only those with exceptionally powerful arcane auras are capable of actually summoning an elemental. [el.She] goes on to say that only an aura of equivalent strength to that of a lilin is able to permanently sustain an elemental in an active state, and as powerful as your aura is, [el.she] is only able to stay in [el.her] active form for short periods of time. Finishing off this topic of conversation, [el.name] sighs,
+		Подгоняемая твоими расспросами, [el.name] продолжает объяснять: хотя потенциал есть в каждом, лишь обладатели исключительно мощной арканной Ауры способны на самом деле призвать элементаля. [el.She] добавляет, что только аура, сопоставимая по силе с силой лилин, способна поддерживать элементаля в активном состоянии постоянно. И какой бы мощной ни была твоя аура, [el.she] может оставаться в своей активной форме [el.her] лишь короткие промежутки времени. Завершая эту тему, [el.name] вздыхает,
 		#IF(el.isActive())
-			 [el.speech(<i>You</i> might not feel the strain of having me stay in my active form, but <i>I</i> certainly do. I'll only ever use it when I need to help you defend yourself, or when you've got a specific purpose for me to be in my active form...)]
+			 [el.speech(<i>Ты</i> можешь и не чувствовать нагрузки от того, что я нахожусь в активной форме, но <i>я</i> — определенно чувствую. Я буду принимать её лишь тогда, когда мне нужно будет помочь тебе защититься, или когда у тебя будет какая-то особая цель для моего воплощения...)]
 		#ELSE
-			 [el.thought(<b>You</b> might not feel the strain of having me stay in my active form, but <b>I</b> certainly do. I'll only ever use it when I need to help you defend yourself, or when you've got a specific purpose for me to be in my active form...)]
+			 [el.thought(<b>Ты</b> можешь и не чувствовать нагрузки от того, что я нахожусь в активной форме, но <b>я</b> — определенно чувствую. Я буду принимать её лишь тогда, когда мне нужно будет помочь тебе защититься, или когда у тебя будет какая-то особая цель для моего воплощения...)]
 		#ENDIF
 	</p>
 	<p>
-		With the topic of [el.namePos] nature being exhausted, you try to talk to [el.herHim] about some of the recent events in your life, but after a short while, [el.she] admits,
+	Когда тема [el.namePos] природы исчерпана, ты пытаешься поговорить с [el.herHim] о недавних событиях в твоей жизни, но спустя короткое время [el.she] признается:
 		#IF(el.isActive())
-			 [el.speech(I already know everything that you're saying... I'm formed from your subconscious, remember? That means I know absolutely everything about you, and conversely, you know everything about me...)]
+			 [el.speech(Я и так уже знаю всё, что ты говоришь... Помнишь, я создана из твоего подсознания? Это значит, что я знаю о тебе абсолютно всё, и наоборот — ты знаешь обо мне всё...)]
 		#ELSE
-			 [el.thought(I already know everything that you're saying... I'm formed from your subconscious, remember? That means I know absolutely everything about you, and conversely, you know everything about me...)]
+			 [el.thought(Я и так уже знаю всё, что ты говоришь... Помнишь, я создана из твоего подсознания? Это значит, что я знаю о тебе абсолютно всё, и наоборот — ты знаешь обо мне всё...)]
 		#ENDIF
 	</p>
 	<p>
-		With this fact now out in the open, the two of you quickly realise that there's not much point in making small talk. With your conversation now at an end, [el.name] asks,
+	Теперь, когда этот факт стал очевиден, вы оба быстро понимаете, что в светских беседах мало смысла. Когда разговор подходит к концу, [el.name] спрашивает:
 		#IF(el.isSummonerServant())
 			#IF(el.isActive())
-				 [el.speech(So, servant, is there anything else you wished to request of me?)]
+				 [el.speech(Итак, слуга, есть ли что-то еще, о чем ты желаешь меня просить?)]
 			#ELSE
-				 [el.thought(So, servant, is there anything else you wished to request of me?)]
+				 [el.thought(Итак, слуга, есть ли что-то еще, о чем ты желаешь меня просить?)]
 			#ENDIF
 		#ELSE
 			#IF(el.isActive())
-				 [el.speech(So, [pc.name], is there anything else you wanted me to do?)]
+				 [el.speech(Итак, [pc.name], есть ли что-то еще, что ты хотел бы, чтобы я сделала?)]
 			#ELSE
-				 [el.thought(So, [pc.name], is there anything else you wanted me to do?)]
+				 [el.thought(Итак, [pc.name], ты хочешь, чтобы я сделала что-то еще?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -265,25 +260,25 @@
 	<htmlContent tag="ELEMENTAL_PETTING"><![CDATA[
 	#IF(el.getPassiveForm()==null)
 		<p>
-			Deciding that your elemental deserves a good petting, you [pc.step] towards [el.her] wisp-like form and hold your [pc.hand] up towards [el.herHim]. Knowing exactly what it is that you intend to do, [el.name] focuses on solidifying the core of [el.her] ethereal body, allowing you to reach up and touch [el.herHim].
+			Решив, что твой элементаль заслуживает хорошей порции ласки, ты [pc.step] к [el.her], похожему на огонек, и протягиваешь свою [pc.hand] к [el.herHim]. Точно зная твои намерения, [el.name] сосредотачивается на том, чтобы уплотнить ядро своего [el.her] эфирного тела, позволяя тебе протянуть руку и коснуться [el.herHim].
 		</p>
 		<p>
-			[el.thought(That feels... good...)] [el.namePos] voice echoes into your mind as you start stroking [el.herHim]. Thanks to the fact that [el.sheIsFull] directly linked to your subconscious, you find yourself sharing in the pleasurable feeling of being petted, which encourages you to keep on doing it. The [el.skinColour] light of [el.namePos] wisp-like form shimmers as [el.she] projects a deeply-satisfied sigh into your mind, [el.thought(Yes... Keep going...)]
+			[el.thought(Это так... приятно...)] [el.namePos] голос отдается в твоем разуме, когда ты начинаешь гладить [el.herHim]. Благодаря тому, что [el.sheIsFull] напрямую связана с твоим подсознанием, ты ощущаешь то же удовольствие от ласк, что и она, и это побуждает тебя продолжать. [el.skinColour] свет [el.namePos], напоминающей огонек, мерцает, когда [el.she] посылает в твой разум глубокий, удовлетворенный вздох: [el.thought(Да... Продолжай...)]
 		</p>
 	#ELSE
 		<p>
 			#IF(el.getPassiveForm().getRace().isFlyingRace())
-				Deciding that your cute little elemental deserves a good petting, you hold your [pc.hand] out towards [el.herHim]. Knowing exactly what it is that you intend to do, [el.name], who's in the form of a small [el.passiveForm], happily flies over to land on your outstretched [pc.hand] and let you pet [el.herHim].
+				Решив, что твой милый маленький элементаль заслуживает хорошей порции ласки, ты протягиваешь свою [pc.hand] к [el.herHim]. Точно зная твои намерения, [el.name], принявшая облик маленького [el.passiveForm], радостно подлетает к твоей протянутой [pc.hand], позволяя тебе погладить [el.herHim].
 			#ELSE
-				Deciding that your cute little elemental deserves a good petting, you bend down and hold your [pc.hand] out towards [el.herHim]. Knowing exactly what it is that you intend to do, [el.name], who's in the form of a small [el.passiveForm], happily moves towards you and lets you pet [el.herHim].
+				Решив, что твой милый маленький элементаль заслуживает хорошей порции ласки, ты наклоняешься и протягиваешь свою [pc.hand] к [el.herHim]. Точно зная твои намерения, [el.name], принявшая облик маленького [el.passiveForm], радостно направляется к тебе, позволяя тебе погладить [el.herHim].
 			#ENDIF
 		</p>
 		<p>
-			[el.thought(That feels... good...)] [el.namePos] voice echoes into your mind as you start stroking [el.herHim]. Thanks to the fact that [el.sheIsFull] directly linked to your subconscious, you find yourself sharing in the pleasurable feeling of being petted, which encourages you to keep on doing it. The faint [el.skinColour] light which surrounds [el.namePos] body shimmers as [el.she] projects a deeply-satisfied sigh into your mind, [el.thought(Yes... Keep going...)]
+			[el.thought(Это так... приятно...)] [el.namePos] эхом отзывается в твоем сознании, когда ты начинаешь гладить [el.herHim]. Благодаря тому, что [el.sheIsFull] напрямую связана с твоим подсознанием, ты начинаешь разделять это удовольствие от ласк, что побуждает тебя продолжать. Слабое сияние [el.skinColour], окружающее тело [el.namePos], мерцает, когда [el.she] посылает тебе в разум глубокий, удовлетворенный вздох: [el.thought(Да... Продолжай...)]
 		</p>
 	#ENDIF
 	<p>
-		Doing as [el.she] suggests, you keep on petting your elemental for some time, and soon find yourself letting out happy sighs of your own as you bond with [el.name]. Eventually, however, you feel as though you've spent enough time doing this, and after forcing yourself to stop stroking and petting your elemental, you wonder what to do next...
+		Следуя совету [el.she], ты продолжаешь гладить своего элементаля какое-то время, и вскоре ловишь себя на том, что сам издаешь счастливые вздохи, укрепляя связь с [el.name]. Однако в конце концов тебе кажется, что ты уже достаточно наласкал её, и, заставив себя перестать гладить элементаля, ты задумываешься, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -293,45 +288,45 @@
 	
 	<htmlContent tag="ELEMENTAL_PASSIVE_FORM"><![CDATA[
 	<p>
-		Wanting to know more about the passive form which [el.name] is current in, you ask [el.herHim] what [el.she] can tell you about it.
+		Желая узнать больше о пассивной форме, в которой сейчас находится [el.name], ты спрашиваешь [el.herHim], что [el.she] может об этом поведать.
 	</p>
 	<p>
 		#IF(el.isSummonerServant())
-			[el.thought(If you must know, <i>servant</i>, I have to assume a smaller, passive form for the vast majority of the time, or else I'll quickly run out of energy and return to your aura,)]
+			[el.thought(Если тебе так уж нужно знать, <i>слуга</i>, большую часть времени мне приходится принимать маленькую пассивную форму, иначе у меня быстро закончится энергия и я вернусь в твою ауру,)]
 		#ELSE
-			[el.thought(Well, I have to assume a smaller, passive form for the vast majority of the time, or else I'll quickly run out of energy and return to your aura,)]
+			[el.thought(Ну, мне приходится принимать маленькую пассивную форму большую часть времени, иначе у меня быстро закончится энергия и я вернусь в твою ауру,)]
 		#ENDIF
-		 [el.name] says, before continuing, [el.thought(Only the elementals of lilin can indefinitely maintain their active forms, and while your aura is definitely an exceptionally strong one, I still need to stay in my passive form until I'm required for combat or sex...)]
+		[el.name] говорит, прежде чем продолжить, [el.thought(Только элементали лилин способны бесконечно поддерживать свои активные формы, и хотя твоя Аура определенно исключительно сильна, мне все же нужно оставаться в пассивной форме, пока не потребуется для боя или секса...)]
 	</p>
 	<p>
-		Asking your elemental if it would be possible for [el.herHim] to transform [el.her] passive form into a different shape, you're given the answer, [el.thought(Of course. Apart from taking the form of a wisp, I can transform myself into the shape of any animal you'd like. I can't maintain a form larger than a small cat, however, so taking on the form of a large animal may make me look silly... Did you want me to change my form now?)]
+		Когда ты спрашиваешь своего элементаля, сможет ли [el.herHim] превратить пассивную форму [el.her] в какой-то другой облик, ты получаешь ответ: [el.thought(Конечно. Помимо формы огонька, я могу принять облик любого животного, которое ты пожелаешь. Однако я не могу удерживать форму крупнее маленькой кошки, так что если я стану слишком большим зверем, это может выглядеть нелепо... Ты хочешь, чтобы я изменила форму прямо сейчас?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ELEMENTAL_PASSIVE_FORM_BACK"><![CDATA[
 	<p>
-		After you've told [el.name] that you don't want [el.herHim] to change [el.her] passive form, [el.she] asks, [el.thought(So, is there anything else you needed?)]
+		После того как ты говоришь [el.name], что не хочешь, чтобы [el.herHim] меняла свою пассивную форму [el.her], [el.she] спрашивает: [el.thought(Итак, тебе нужно что-нибудь еще?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ELEMENTAL_PASSIVE_FORM_CHANGE"><![CDATA[
 	<p>
-		Wanting [el.name] to take on a different passive form, you ask [el.herHim] to transform into [#SPECIAL_PARSE_0].
+		Желая, чтобы [el.name] приняла другой пассивный облик, ты просишь [el.herHim] превратиться в [#SPECIAL_PARSE_0].
 	</p>
 	<p>
 		#IF(el.isSummonerServant())
-			[el.thought(Very well, I suppose that I see no reason to decline your request,)] [el.name] says, and then in a sudden flash of [el.skinColour] arcane energy, [el.she] takes on the form of [#SPECIAL_PARSE_0], just as you asked.
+			[el.thought(Что ж, полагаю, мне нет причин отклонить твою просьбу,)] — говорит [el.name], и затем в яркой вспышке Арканы [el.skinColour], [el.she] принимает форму [#SPECIAL_PARSE_0], как ты и просил.
 		#ELSE
-			[el.thought(Very well, please give me just a moment,)] [el.name] obediently says, and then in a sudden flash of [el.skinColour] arcane energy, [el.she] takes on the form of [#SPECIAL_PARSE_0], just as you asked.
+			[el.thought(Хорошо, дай мне всего лишь мгновение,)] — послушно отвечает [el.name], и затем в яркой вспышке Арканы [el.skinColour], [el.she] принимает форму [#SPECIAL_PARSE_0], как ты и просил.
 		#ENDIF
 	</p>
 	<p>
 		#IF(el.getPassiveForm()==null)
-			Now in the form of an ethereal, floating wisp, your elemental hovers in front of you and asks, [el.thought(Is there anything else you needed?)]
+			Теперь твой элементаль, приняв облик бесплотного парящего огонька, зависает перед тобой и спрашивает: [el.thought(Тебе нужно что-нибудь еще?)]
 		#ELSE
-			Now in the form of a small, cute [el.passiveForm], your elemental asks, [el.thought(So, is there anything else you needed?)]
+			Теперь твой элементаль, приняв облик маленького милого [el.passiveForm], спрашивает: [el.thought(Ну так что, тебе нужно что-нибудь еще?)]
 		#ENDIF
 	</p>
 	]]>
