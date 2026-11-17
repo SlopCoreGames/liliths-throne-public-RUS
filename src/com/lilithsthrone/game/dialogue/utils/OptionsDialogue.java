@@ -83,34 +83,34 @@ public class OptionsDialogue {
 			StringBuilder sb = new StringBuilder();
 			sb.append("<h1 class='special-text' style='font-size:48px; line-height:52px; text-align:center;'>"+Main.NAME_OF_GAME+"</h1>");
 			if(Main.game.isSillyMode()) {
-				sb.append("<p class='special-text' style='text-align:center; margin:0 0; padding:0 0;'><i>Or, I can't believe I fell into a magic mirror and entered a world in which my aunt is a demon?!</i></p>");
+				sb.append("<p class='special-text' style='text-align:center; margin:0 0; padding:0 0;'><i>Или, я не могу поверить, что попал в волшебное зеркало и попал в мир, в котором моя тетя - демон?!</i></p>");
 			}
 			
-			sb.append("<h5 class='special-text' style='text-align:center;'>Created by "+Main.AUTHOR+"</h5>");
+			sb.append("<h5 class='special-text' style='text-align:center;'>Создано "+Main.AUTHOR+"</h5>");
 			
 			if (Main.CheckNotUnpacked()) {
-				sb.append("<h3 class='special-text' style='text-align:center;'>[style.italicsBad("+Main.NAME_OF_GAME+" is currently running from a temporary directory!");
-				sb.append("<br/>Please unpack the .zip file before playing!)]</h3>");
+				sb.append("<h3 class='special-text' style='text-align:center;'>[style.italicsBad("+Main.NAME_OF_GAME+" сейчас работает из временной директории!");
+				sb.append("<br/>Пожалуйста, распакуйте .zip файл перед игрой!)]</h3>");
 //				return sb.toString();
 			}
 			
-			sb.append("<p>This game is a text-based erotic RPG, and contains a lot of graphic sexual content. You must agree to the game's disclaimer before playing this game!</p>")
-					.append("<p>You can visit my blog (https://lilithsthrone.blogspot.co.uk) to check on development progress (use the 'Blog' button below to open the blog in your default browser).")
+			sb.append("<p>Эта игра - это текстовая эротическая RPG, и содержит много графического сексуального содержания. Вы должны согласиться с отговоркой игры, прежде чем играть в эту игру!</p>")
+					.append("<p>@@H1@@Пожалуйста, используйте либо мой блог, либо github, чтобы получить последнюю официальную версию Трон Лилит!@@H2@@@@H3@@")
 					//.append(" [style.italicsMinorBad(<b>Note:</b> Intrusive age verification is being rolled out on blogspot, so I will likely create a new blog soon.)]</p>")
-					.append("<p style='text-align:center'><b>Please use either my blog or github to get the latest official version of Lilith's Throne!</b></p>")
-					.append("<p style='text-align:center'><i>Copy over the contents of your 'data' folder to use your old saves in this version!</i></p>");
+					.append("<p style='text-align:center'><b>Пожалуйста, используйте мой блог или github, чтобы получить последнюю официальную версию Трон Лилит!</b></p>")
+					.append("<p style='text-align:center'><i>Скопируйте содержимое вашей папки 'data', чтобы использовать ваши старые сохранения в этой версии!</i></p>");
 			
 			sb.append(getJavaVersionInformation());
 			
 			if(Toolkit.getDefaultToolkit().getScreenSize().getHeight()<800) {
 				sb.append("<p style='text-align:center; color:").append(PresetColour.GENERIC_ARCANE.toWebHexString()).append(";'>")
-					.append("If the game's resolution isn't fitting to your screen, press the keys: 'Windows' + 'Up Arrow' to maximise!</p>");
+					.append("Если разрешение игры не подходит для вашего экрана, нажмите клавиши: 'Windows' + 'Вверх', чтобы максимизировать!</p>");
 			}
 			if(!Main.game.isStarted() && !Main.getProperties().name.isEmpty()) {
-				sb.append("<h4 style='text-align:center;'>Last save:</h4>");
+				sb.append("<h4 style='text-align:center;'>Последнее сохранение:</h4>");
 				sb.append("<div class='container-full-width' style='width:50%;margin:0 25%;'>");
 					sb.append("<h5 style='color:").append(Main.getProperties().nameColour).append(";text-align:center;'>").append(Main.getProperties().name).append("</h5>");
-					sb.append("<p style='text-align:center;margin:0;padding:0;'><b>Level ").append(Main.getProperties().level).append("</b></p>");
+					sb.append("<p style='text-align:center;margin:0;padding:0;'><b>Уровень ").append(Main.getProperties().level).append("</b></p>");
 					String colourString = Main.getProperties().raceColour;
 					if(!colourString.isEmpty()) {
 						colourString = "color:"+colourString+";";
@@ -132,9 +132,9 @@ public class OptionsDialogue {
 							(!Main.game.isStarted()
 									?"New Game"
 									:"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Confirm</b>"),
-							"Start a new game."
+							"Начать новую игру."
 								+(Main.game.isStarted()
-									?"<br/><br/>[style.italicsMinorBad(Remember to save your game first!)]</b>"
+									?"<br/><br/>[style.italicsMinorBad(Не забудьте сначала сохранить свою игру!)]</b>"
 									:"")){
 						@Override
 						public void effects() {
@@ -160,10 +160,10 @@ public class OptionsDialogue {
 					
 				 } else {
 					 return new Response(
-							 "New Game",
-							 "Start a new game."
+							 "Новая игра",
+							 "Начать новую игру."
 								+(Main.game.isStarted()
-									?"<br/><br/>[style.italicsMinorBad(Remember to save your game first!)]"
+									?"<br/><br/>[style.italicsMinorBad(Не забудьте сначала сохранить свою игру!)]"
 									:""),
 								MENU){
 							@Override
@@ -174,7 +174,7 @@ public class OptionsDialogue {
 				 }
 				
 			} else if (index == 2) {
-				return new Response("Save/Load", "Open the save/load game window.", SAVE_LOAD){
+				return new Response("Сохранить/Загрузить", "Открыть окно сохранения/загрузки игры.", SAVE_LOAD){
 					@Override
 					public void effects() {
 						loadConfirmationName = ""; overwriteConfirmationName = ""; deleteConfirmationName = "";
@@ -183,7 +183,7 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 3) {
-				return new Response("Export character", "Open the character export game window.", IMPORT_EXPORT){
+				return new Response("Экспортировать персонажа", "Открыть окно экспорта персонажа.", IMPORT_EXPORT){
 					@Override
 					public void effects() {
 						loadConfirmationName = ""; overwriteConfirmationName = ""; deleteConfirmationName = "";
@@ -192,7 +192,7 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 4) {
-				return new Response("Disclaimer", "View the game's disclaimer.", DISCLAIMER){
+				return new Response("Отказ от ответственности", "Просмотр отметки об авторских правах игры.", DISCLAIMER){
 					@Override
 					public void effects() {
 						confirmNewGame=false;
@@ -200,7 +200,7 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 5) {
-				return new ResponseEffectsOnly("Quit", "Quits your current game and closes the program.<br/><br/><b>Remember to save your game first!</b>"){
+				return new ResponseEffectsOnly("Выйти", "Завершает текущую игру и закрывает программу.<br/><br/><b>Не забудьте сначала сохранить свою игру!</b>"){
 					@Override
 					public void effects() {
 						Main.primaryStage.close();
@@ -210,7 +210,7 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 6) {
-				return new Response("Options", "Open the options page.", OPTIONS){
+				return new Response("Настройки", "Открыть страницу настроек.", OPTIONS){
 					@Override
 					public void effects() {
 						confirmNewGame=false;
@@ -219,7 +219,7 @@ public class OptionsDialogue {
 				};
 
 			} else if (index == 7) {
-				return new Response("Content Options", "Set your preferred content settings.", MISCELLANEOUS){
+				return new Response("Настройки контента", "Установить предпочитаемые настройки контента.", MISCELLANEOUS){
 					@Override
 					public void effects() {
 						confirmNewGame=false;
@@ -227,13 +227,13 @@ public class OptionsDialogue {
 				};
 			
 			} else if (index == 8) {
-				return new Response("Patch notes", "View the patch notes for this version.", PATCH_NOTES);
+				return new Response("Заметки о патчах", "Просмотр заметок о патчах для этой версии.", PATCH_NOTES);
 			
 			} else if (index == 9) {
-				return new Response("Credits", "View the game's credits screen.", CREDITS);
+				return new Response("Титульные кредиты", "Просмотр титров игры.", CREDITS);
 				
 			} else if (index == 11) {
-				return new ResponseEffectsOnly("Blog", "Opens the page:<br/><br/><i>https://lilithsthrone.blogspot.co.uk/</i><br/><br/><b>Externally in your default browser.</b>"){
+				return new ResponseEffectsOnly("Блог", "Открывает страницу:<br/><br/><i>https://lilithsthrone.blogspot.co.uk/</i><br/><br/><b>Внешне в вашем браузере по умолчанию.</b>"){
 					@Override
 					public void effects() {
 						Util.openLinkInDefaultBrowser("https://lilithsthrone.blogspot.co.uk/");
@@ -242,7 +242,7 @@ public class OptionsDialogue {
 				};
 			
 			} else if (index == 12) {
-				return new ResponseEffectsOnly("Github", "Opens the page:<br/><br/><i>https://github.com/Innoxia/liliths-throne-public</i><br/><br/><b>Externally in your default browser.</b>"){
+				return new ResponseEffectsOnly("Github", "Открывает страницу:<br/><br/><i>https://github.com/Innoxia/liliths-throne-public</i><br/><br/><b>Внешне в вашем браузере по умолчанию.</b>"){
 					@Override
 					public void effects() {
 						Util.openLinkInDefaultBrowser("https://github.com/Innoxia/liliths-throne-public");
@@ -251,7 +251,7 @@ public class OptionsDialogue {
 				};
 			
 			} else if (index == 13) {
-				return new ResponseEffectsOnly("Wiki", "Opens the page:<br/><br/><i>https://www.lilithsthrone.com/wiki/doku.php</i><br/><br/><b>Externally in your default browser.</b>"){
+				return new ResponseEffectsOnly("Wiki", "Открывает страницу:<br/><br/><i>https://www.lilithsthrone.com/wiki/doku.php</i><br/><br/><b>Внешне в вашем браузере по умолчанию.</b>"){
 					@Override
 					public void effects() {
 						Util.openLinkInDefaultBrowser("https://www.lilithsthrone.com/wiki/doku.php");
@@ -261,7 +261,7 @@ public class OptionsDialogue {
 			
 			} else if (index == 0) {
 				if(Main.game.isStarted()) {
-					return new ResponseEffectsOnly("Resume", "Return to whatever you were doing before opening this menu."){
+					return new ResponseEffectsOnly("Резюме", "Вернуться к тому, чем вы занимались до открытия этого меню."){
 						@Override
 						public void effects() {
 							Main.mainController.openOptions();
@@ -272,7 +272,7 @@ public class OptionsDialogue {
 					
 				} else {
 					if(Main.isLoadGameAvailable(Main.getProperties().lastSaveLocation)) {
-						return new ResponseEffectsOnly("Resume", "Continue playing from your last save."){
+						return new ResponseEffectsOnly("Возобновить", "Продолжить игру с вашего последнего сохранения."){
 							@Override
 							public void effects() {
 								Main.loadGame(Main.getProperties().lastSaveLocation);
@@ -281,9 +281,9 @@ public class OptionsDialogue {
 							}
 						};
 					} else if ( "".equals(Main.getProperties().lastSaveLocation) ) {
-						return new Response("Resume", "There is no previously saved game to resume.", null);
+						return new Response("Возобновить", "Нет ранее сохраненной игры для возобновления.", null);
 					} else {
-						return new Response("Resume", "Previously saved game (by the title '"+Main.getProperties().lastSaveLocation+"') not found in 'data/saves' folder.", null);
+						return new Response("Возобновить", "Ранее сохраненная игра (по названию '"+Main.getProperties().lastSaveLocation+"') не найдена в папке 'data/saves'.", null);
 					}
 				}
 				
@@ -303,10 +303,10 @@ public class OptionsDialogue {
 		String version = System.getProperty("java.version");
 		
 		sb.append("<p style='text-align:center;'>");
-			sb.append("Your java version: "+System.getProperty("java.version"));
+			sb.append("Ваша версия Java: "+System.getProperty("java.version"));
 			if (!version.equals("1.8.0_172")) {
-				sb.append("<br/>[style.italicsBad(1.8.0_172 is the recommended java version!)]");
-				sb.append("<br/>[style.italicsMinorBad(This may result in abnormal behaviour such as tooltips getting stuck! Please launch with the recommended version or use the .exe build.)]");
+				sb.append("<br/>[style.italicsBad(Рекомендуемая версия Java: 1.8.0_172!)]");
+				sb.append("<br/>[style.italicsMinorBad(Это может привести к аномальному поведению, например, к тому, что подсказки застрянут! Пожалуйста, запустите игру с рекомендуемой версией или используйте .exe-версию.)]");
 			}
 		sb.append("</p>");
 //				+" | ");
@@ -347,7 +347,7 @@ public class OptionsDialogue {
 	public static String overwriteConfirmationName = "";
 	public static String deleteConfirmationName = "";
 	
-	public static final DialogueNode SAVE_LOAD = new DialogueNode("Save game files", "", true) {
+	public static final DialogueNode SAVE_LOAD = new DialogueNode("Сохранить игру", "", true) {
 
 		@Override
 		public String getContent() {
@@ -363,10 +363,10 @@ public class OptionsDialogue {
 						+ "<b>Please Note:</b>"
 					+ "</p>"
 					+ "<p>"
-						+ "1. Only standard characters (letters and numbers) will work for save file names.<br/>"
-						+ "2. The 'AutoSave' file is automatically overwritten every time you move between maps.<br/>"
-						+ "3. The 'QuickSave' file is automatically overwritten every time you quick save (binding is "+Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.QUICKSAVE).getFullName()+").<br/>"
-						+ "4. You cannot save during scenes which restrict your movement, including combat and sex."
+						+ "1. Для имен файлов сохранения подойдут только стандартные символы (буквы и цифры).<br/>"
+						+ "2. Файл 'Автосохранение' перезаписывается автоматически каждый раз, когда вы перемещаетесь между картами.<br/>"
+						+ "3. Файл 'Быстрое сохранение' перезаписывается автоматически каждый раз, когда вы делаете быстрое сохранение (назначение клавиши "+Main.getProperties().hotkeyMapPrimary.get(KeyboardAction.QUICKSAVE).getFullName()+").<br/>"
+						+ "4. Вы не можете сохранить игру во время сцен, которые ограничивают ваше передвижение, включая бой и секс."
 					+ "</p>"
 					+ "<div class='container-full-width' style='padding:0; margin:0;'>"
 						+ "<div class='container-full-width' style='width:calc(25% - 16px); background:transparent;'>"
@@ -376,7 +376,7 @@ public class OptionsDialogue {
 							+ "Name"
 						+ "</div>"
 						+ "<div class='container-full-width' style='width:calc(25% - 16px); text-align:center; background:transparent;'>"
-							+ "Save | Load | Delete"
+							+ "Сохранить | Загрузить | Удалить"
 						+ "</div>"
 					+ "</div>");
 
@@ -403,10 +403,10 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Confirmations: ",
-						"Toggle confirmations being shown when you click to load, overwrite, or delete a saved game."
-							+ " When turned on, it will take two clicks to apply any button press."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Переключатель подтверждений, которые показываются при нажатии на кнопку Загрузить, Перезаписать или Удалить сохраненную игру."
+							+ "Когда включено, потребуется два нажатия для применения любого нажатия кнопки."
+							+ "Когда выключено, потребуется только одно нажатие.",
 						SAVE_LOAD) {
 					@Override
 					public String getTitle() {
@@ -426,7 +426,7 @@ public class OptionsDialogue {
 				};
 
 			} else if (index == 2) {
-				return new Response("Sort: Date", "Sort all of your saved games by their date.", SAVE_LOAD) {
+				return new Response("Сортировка: Дата", "Сортировка всех ваших сохраненных игр по дате.", SAVE_LOAD) {
 					@Override
 					public void effects() {
 						alphabeticalFileSort = false;
@@ -434,7 +434,7 @@ public class OptionsDialogue {
 				};
 
 			} else if (index == 3) {
-				return new Response("Sort: Name", "Sort all of your saved games by their name.", SAVE_LOAD) {
+				return new Response("Сортировка: Имя", "Сортировка всех ваших сохраненных игр по имени.", SAVE_LOAD) {
 					@Override
 					public void effects() {
 						alphabeticalFileSort = true;
@@ -442,7 +442,7 @@ public class OptionsDialogue {
 				};
 
 			} else if (index == 0) {
-				return new Response("Back", "Back to the main menu.", MENU);
+				return new Response("Назад", "Назад в главное меню.", MENU);
 
 			} else {
 				return null;
@@ -455,7 +455,7 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode IMPORT_EXPORT = new DialogueNode("Export character", "", true) {
+	public static final DialogueNode IMPORT_EXPORT = new DialogueNode("Экспорт персонажа", "", true) {
 	
 		@Override
 		public String getContent() {
@@ -467,11 +467,11 @@ public class OptionsDialogue {
 			StringBuilder saveLoadSB = new StringBuilder();
 	
 			saveLoadSB.append("<p>"
-						+ "Here you can export your current character, or delete any characters that you've exported in the past."
-						+ " Any NPC can be exported in-game by viewing their information screen (either from the 'characters present' or your phone's 'contacts' screen), and then pressing the 'export character' button (in the bottom-right of the UI)."
+						+ "Здесь вы можете экспортировать своего текущего персонажа, или удалить любых персонажей, которых вы экспортировали в прошлом."
+						+ "Любой NPC может быть экспортирован в игре, посмотрев его информацию (либо из 'присутствующих персонажей', либо из 'контактов' вашего телефона), а затем нажав на кнопку 'экспорт персонажа' (в правом нижнем углу интерфейса)."
 					+ "</p>"
 					+ "<p>"
-						+ "Exported characters can be used as a playable character when starting a new game (choose 'Start (Import)'), or as an importable slave at the Auction Block in Slaver Alley."
+						+ "Экспортированные персонажи могут быть использованы в качестве игрового персонажа при начале новой игры (выберите 'Начать (Импорт')), или как импортируемый раб на Аукционном Блоке в Улице Рабовладельцев."
 					+ "</p>"
 					+ "<div class='container-full-width' style='padding:0; margin:0;'>"
 						+ "<div class='container-quarter-width' style='text-align:center;'>"
@@ -499,10 +499,10 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Confirmations: ",
-						"Toggle confirmations being shown when you click to load, overwrite, or delete a saved game."
-							+ " When turned on, it will take two clicks to apply any button press."
-							+ " When turned off, it will only take one click.",
+				return new Response("Подтверждения: ",
+						"Переключатель подтверждений, которые появляются при нажатии на кнопку 'Загрузить', 'Перезаписать' или 'Удалить' сохраненную игру."
+							+ "Когда включен, требуется два нажатия для применения любого нажатия кнопки."
+							+ "Когда выключено, это займет только один клик.",
 							IMPORT_EXPORT) {
 					@Override
 					public String getTitle() {
@@ -523,7 +523,7 @@ public class OptionsDialogue {
 	
 			} else if (index == 2) {
 				if(Main.game.isStarted()) {
-					return new Response("Export character", "Exports your character file to the 'data/characters/' folder.", IMPORT_EXPORT){
+					return new Response("Экспорт персонажа", "Экспортирует ваш файл персонажа в папку 'data/characters/'.", IMPORT_EXPORT){
 						@Override
 						public void effects() {
 							Main.game.getCharacterUtils().saveCharacterAsXML(Main.game.getPlayer());
@@ -531,11 +531,11 @@ public class OptionsDialogue {
 						}
 					};
 				} else {
-					return new Response("Export character", "You'll need to start a game first!", null);
+					return new Response("Экспорт персонажа", "Вам нужно сначала начать игру!", null);
 				}
 			
 			} else if (index == 0) {
-				return new Response("Back", "Back to the main menu.", OptionsDialogue.MENU);
+				return new Response("Назад", "Назад в главное меню.", OptionsDialogue.MENU);
 	
 			} else {
 				return null;
@@ -610,39 +610,39 @@ public class OptionsDialogue {
 					+ "<div class='container-quarter-width' style='padding:auto 0; margin:auto 0; width:20%; text-align:center; background:transparent;'>"
 					+ (name.equals(deleteConfirmationName)
 							?"<div class='square-button big' id='DELETE_CHARACTER_" + identifierName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDeleteConfirm()+"</div></div>"
-							:"<div class='square-button big' id='DELETE_CHARACTER_" + identifierName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDelete()+"</div></div>")
+							:"<div class='square-button big' id='DELETE_CHARACTER_', " + identifierName + "Вот перевод на русский язык:\n\n'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDelete()+"</div></div>")
 					+ "</div>"
 				+ "</div>";
 	}
 	
 	
-	public static final DialogueNode OPTIONS = new DialogueNode("Options", "Options", true) {
+	public static final DialogueNode OPTIONS = new DialogueNode("Настройки", "Options", true) {
 		
 		@Override
 		public String getContent(){
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					"<p>"
-					+ "<b>Light/Dark theme:</b>"
-					+ "<br/>This switches the main display between a light and dark theme. (Work in progress!)"
+					"Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<p>"
+					+ "<b>Светлая/Темная тема:</b>"
+					+ "<br/>Это переключает основной дисплей между светлой и темной темой. (Работа в процессе!)"
 					+ "</p>"
 					
 					+"<p>"
 					+ "<b>Font-size:</b><br/>"
-					+ "This cycles the game's base font size. This currently only affects the size of the text in the main dialogue, but in the future I'll expand it to include every display element.<br/>"
-					+ "Minimum font size is "+Game.FONT_SIZE_MINIMUM+". Default font size is "+Game.FONT_SIZE_NORMAL+". Maximum font size is "+Game.FONT_SIZE_HUGE+".<br/>"
-					+ "Current font size: "+Main.getProperties().fontSize+"."
+					+ "Это меняет размер шрифта в игре. В настоящее время это влияет только на размер текста в основном диалоге, но в будущем я расширю его, чтобы включить все элементы отображения.<br/>"
+					+ "Минимальный размер шрифта -"+Game.FONT_SIZE_MINIMUM+". По умолчанию размер шрифта равен"+Game.FONT_SIZE_NORMAL+". Максимальный размер шрифта -"+Game.FONT_SIZE_HUGE+".<br/>"
+					+ "Текущий размер шрифта: "+Main.getProperties().fontSize+"."
 					+ "</p>"
 
 					+"<p>"
 					+ "<b>Fade-in:</b>"
-					+ "<br/>This option is responsible for fading in the main part of the text each time a new scene is displayed."
-					+ " Although it makes scene transitions a little prettier, it is off by default, as it can cause some annoying lag in inventory screens."
+					+ "<br/>Эта опция отвечает за появление основного текста при каждом новом сцене."
+					+ "Хотя это делает переходы сцен немного красивее, оно отключено по умолчанию, так как оно может вызвать некоторую раздражающую задержку на экранах инвентаря."
 					+ "</p>"
 
 					+"<p>"
-					+ "<b>Difficulty (Currently set to "+Main.getProperties().difficultyLevel.getName()+"):</b>");
+					+ "<b>Сложность (В настоящее время установлена на "+Main.getProperties().difficultyLevel.getName()+"):</b>");
 			
 			for(DifficultyLevel dl : DifficultyLevel.values()) {
 				UtilText.nodeContentSB.append("<br/>"+(
@@ -660,12 +660,12 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new Response("Keybinds", "Open the keybinds page, where you can customise all the game's key bindings.", KEYBINDS);
+				return new Response("Кнопки", "Открыть страницу с кнопками, где вы можете настроить все игровые клавиши.", KEYBINDS);
 				
 			} else if (index == 2) {
 
 				if (Main.getProperties().hasValue(PropertyValue.lightTheme)) {
-					return new Response("Dark theme", "Switch the theme to the dark variant.", OPTIONS){
+					return new Response("Темная тема", "Переключить тему на темную.@@H0@@@@H1@@@@H2@@Это еще не закончено...@@H3@@.", OPTIONS){
 						@Override
 						public void effects() {
 							Main.mainController.switchTheme();
@@ -673,7 +673,7 @@ public class OptionsDialogue {
 						}
 						};
 				} else {
-					return new Response("Light theme (WIP)", "Switch the theme to the light variant.<br/><br/><b>This is still a work in progress...</b>.", OPTIONS){
+					return new Response("Светлая тема (WIP)", "Переключить тему на светлую.<br/><br/><b>Это еще не закончено...</b>.", OPTIONS){
 						@Override
 						public void effects() {
 							Main.mainController.switchTheme();
@@ -683,8 +683,8 @@ public class OptionsDialogue {
 				}
 
 			} else if (index == 3) {
-				return new Response("Font-size -",
-						"Decrease the size of the game's font. Default value is 18. Current value is "+Main.getProperties().fontSize+".",
+				return new Response("Размер шрифта -",
+						"Уменьшить размер шрифта игры. По умолчанию 18. Текущее значение "+Main.getProperties().fontSize+".",
 								OPTIONS){
 					@Override
 					public void effects() {
@@ -697,8 +697,8 @@ public class OptionsDialogue {
 				};
 			
 			} else if (index == 4) {
-				return new Response("Font-size +",
-						"Increase the size of the game's font. Default value is 18. Current value is "+Main.getProperties().fontSize+".",
+				return new Response("Размер шрифта +",
+						"Увеличить размер шрифта игры. По умолчанию 18. Текущее значение "+Main.getProperties().fontSize+".",
 								OPTIONS){
 					@Override
 					public void effects() {
@@ -711,9 +711,9 @@ public class OptionsDialogue {
 				};
 			
 			} else if (index == 5) {
-				return new Response("Fade-in: " + (Main.getProperties().hasValue(PropertyValue.fadeInText)
+				return new Response("Фейд-ин: " + (Main.getProperties().hasValue(PropertyValue.fadeInText)
 						? "[style.boldGood(ON)]"
-						: "[style.boldBad(OFF)]"), "Toggle the fading in of the game's text. If turned on, it may cause some minor lag in inventory screens.", OPTIONS) {
+						: "[style.boldBad(OFF)]"), "Включить или выключить замедление текста игры. Если включено, может вызвать небольшую задержку на экранах инвентаря.", OPTIONS) {
 					@Override
 					public void effects() {
 						Main.getProperties().setValue(PropertyValue.fadeInText, !Main.getProperties().hasValue(PropertyValue.fadeInText));
@@ -722,12 +722,12 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 6) {
-				return new Response("Gender pronouns", "Customise all gender pronouns and names.", OPTIONS_PRONOUNS);
+				return new Response("Пол", "Настроить все полные местоимения и имена.", OPTIONS_PRONOUNS);
 				
 			} else if (index == 7) {
-				return new Response("Unit preferences", "Set your preferred measurement units.", UNIT_PREFERENCE);
+				return new Response("Настройки юнитов", "Установить предпочитаемые единицы измерения.", UNIT_PREFERENCE);
 			} else if (index == 8) {
-				return new Response("Difficulty: "+Main.getProperties().difficultyLevel.getName(), "Cycle the game's difficulty.", OPTIONS){
+				return new Response("Сложность: "+Main.getProperties().difficultyLevel.getName(), "Изменить сложность игры.", OPTIONS){
 					@Override
 					public void effects() {
 						switch(Main.getProperties().difficultyLevel) {
@@ -758,7 +758,7 @@ public class OptionsDialogue {
 					}
 				};
 			} else if (index == 0) {
-				return new Response("Back", "Back to the main menu.", MENU);
+				return new Response("Назад", "Назад в главное меню.", MENU);
 
 			} else {
 				return null;
@@ -771,13 +771,13 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode KEYBINDS = new DialogueNode("Options", "Options", true) {
+	public static final DialogueNode KEYBINDS = new DialogueNode("Настройки", "Options", true) {
 
 		@Override
 		public String getHeaderContent() {
 			return "<p>"
 					+ "<table align='center'>"
-					+ "<tr><th>Action</th><th>Primary binding</th><th>Secondary binding</th></tr>"
+					+ "<tr><th>Действие</th><th>Основная привязка</th><th>Вторичная привязка</th></tr>"
 					+ getKeybindTableRow(KeyboardAction.MENU)
 					+ "<tr style='height:8px;'></tr>"
 
@@ -877,7 +877,7 @@ public class OptionsDialogue {
 			// Create new properties containing current key mappings
 			Properties preset = new Properties();
 			preset.setProperty("NAME", "Custom " + index);
-			preset.setProperty("DESCRIPTION", "Reapply your previously saved key bindings.");
+			preset.setProperty("DESCRIPTION", "Повторно применить сохраненные привязки клавиш.");
 
 			for (Map.Entry<KeyboardAction, KeyCodeWithModifiers> e : Main.getProperties().hotkeyMapPrimary.entrySet())
 				if (e.getValue() != null)
@@ -906,11 +906,11 @@ public class OptionsDialogue {
 			if (presets == null) loadPresets();
 
 			if (index == 0) {
-				return new Response("Back", "Go back to the options menu.", OPTIONS);
+				return new Response("Назад", "Вернуться в меню настроек.", OPTIONS);
 				
 			} else if (index <= presets.size()) {
 				Properties preset = presets.get(index - 1);
-				return new Response(preset.getProperty("NAME", "Custom " + index), preset.getProperty("DESCRIPTION", "Reapply your previously saved key bindings."), KEYBINDS) {
+				return new Response(preset.getProperty("NAME", "Custom " + index), preset.getProperty("DESCRIPTION", "Применить сохраненные ранее настройки клавиш."), KEYBINDS) {
 					@Override
 					public void effects() {
 						loadPreset(preset);
@@ -919,9 +919,9 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 14) {
-				return new Response("Save preset",
-						"Store the current key bindings in a file. If you want to delete any saved presets, navigate to the 'res/keybinds' folder and delete the .txt files that you no longer want."
-								+ " (They will stop showing up in this list after a game restart.)",
+				return new Response("Сохранить настройки",
+						"Сохранить текущие настройки клавиш в файл. Если вы хотите удалить какие-либо сохраненные настройки, перейдите в папку 'res/keybinds' и удалите файлы .txt, которые вы больше не хотите."
+								+ " (Они перестанут появляться в этом списке после перезапуска игры.)",
 						KEYBINDS) {
 					@Override
 					public void effects() {
@@ -977,7 +977,7 @@ public class OptionsDialogue {
 				+ "</tr>";
 	}
 	
-	public static final DialogueNode OPTIONS_PRONOUNS = new DialogueNode("Options", "Options", true) {
+	public static final DialogueNode OPTIONS_PRONOUNS = new DialogueNode("Настройки", "Options", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -987,10 +987,10 @@ public class OptionsDialogue {
 			StringBuilder sb = new StringBuilder();
 			
 			sb.append("<p>"
-						+ "<h5 style='text-align:center;'>Global gender names:</h5>"
+						+ "<h5 style='text-align:center;'>Глобальные имена полов:</h5>"
 						+ "<table align='center'>"
 							+ "<tr>"
-							+ "<th>Body Parts</th>"
+							+ "<th>Части тела</th>"
 								+ "<th style='color:"+PresetColour.MASCULINE.toWebHexString()+";'>Masculine</th>"
 								+ "<th style='color:"+PresetColour.ANDROGYNOUS.toWebHexString()+";'>Androgynous</th>"
 								+ "<th style='color:"+PresetColour.FEMININE.toWebHexString()+";'>Feminine</th>"
@@ -1004,7 +1004,7 @@ public class OptionsDialogue {
 					+ "</p>"
 					
 					+ "<p>"
-						+ "<h5 style='text-align:center;'>Player-specific pronouns:</h5>"
+						+ "<h5 style='text-align:center;'>Игрок-специфичные местоимения:</h5>"
 						+ "<table align='center'>"
 							+ "<tr>"
 								+ "<th>Pronoun</th>"
@@ -1035,7 +1035,7 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 1) {
-				return new ResponseEffectsOnly("Save", "Save all the pronouns that are currently displayed.") {
+				return new ResponseEffectsOnly("Сохранить", "Сохранить все местоимения, которые в настоящее время отображаются.") {
 					@Override
 					public void effects() {
 						for(GenderNames gn : GenderNames.values()) {
@@ -1054,7 +1054,7 @@ public class OptionsDialogue {
 				
 			} else if (index == 2) {
 				return new Response("<span style='color:"+Main.getProperties().androgynousIdentification.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(Main.getProperties().androgynousIdentification.getName())+"</span>",
-						"Cycle the way the game treats androgynous bodies as described above.", OPTIONS_PRONOUNS){
+						"Цикл, как игра обращается с андрогинными телами, как описано выше.", OPTIONS_PRONOUNS){
 					@Override
 					public void effects() {
 						switch(Main.getProperties().androgynousIdentification){
@@ -1082,7 +1082,7 @@ public class OptionsDialogue {
 				if(!defaultResetConfirmation) {
 					return getDefaultResetConfirmationResponse();
 				}
-				return new Response("[style.colourMinorBad(Confirm Defaults)]", "Resets all pronouns to their default values.", OPTIONS_PRONOUNS){
+				return new Response("[style.colourMinorBad(Подтвердить)]", "Сбрасывает все местоимения к их значениям по умолчанию.", OPTIONS_PRONOUNS){
 					@Override
 					public void effects() {
 						for(GenderNames gn : GenderNames.values()) {
@@ -1100,7 +1100,7 @@ public class OptionsDialogue {
 				};
 				
 			} else if (index == 0) {
-				return new Response("Back", "Go back to the options menu.", OPTIONS);
+				return new Response("Назад", "Вернуться в меню настроек.", OPTIONS);
 				
 			} else {
 				return null;
@@ -1114,7 +1114,7 @@ public class OptionsDialogue {
 	};
 	
 	private static Response getDefaultResetConfirmationResponse() {
-		return new ResponseEffectsOnly("Defaults", "Resets all pronouns to their default values.<br/>[style.italicsMinorBad(Requires a second activation to confirm.)]") {
+		return new ResponseEffectsOnly("По умолчанию", "Сбрасывает все местоимения к их значениям по умолчанию.<br/>[style.italicsMinorBad(Требуется повторная активация для подтверждения.)]") {
 			@Override
 			public void effects() {
 				defaultResetConfirmation = true;
@@ -1167,7 +1167,7 @@ public class OptionsDialogue {
 	}
 	
 	
-	public static final DialogueNode PATCH_NOTES = new DialogueNode("Patch Notes", "Patch notes", true) {
+	public static final DialogueNode PATCH_NOTES = new DialogueNode("@@H0@@Patch Notes", "Patch notes", true) {
 		
 		@Override
 		public String getContent(){
@@ -1177,7 +1177,7 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Go back to the options menu.", MENU);
+				return new Response("@@H0@@Назад", "@@H0@@", MENU);
 				
 			}else {
 				return null;
@@ -1205,7 +1205,7 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index == 0) {
-				return new Response("Back", "Go back to the options menu.", MENU);
+				return new Response("Назад", "Вернуться в меню настроек.", MENU);
 			}
 			return null;
 		}
@@ -1217,7 +1217,7 @@ public class OptionsDialogue {
 	};
 	
 	
-	public static final DialogueNode GENDER_PREFERENCE = new DialogueNode("Gender preferences", "", true) {
+	public static final DialogueNode GENDER_PREFERENCE = new DialogueNode("Предпочтения по полу", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -1229,18 +1229,18 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(
 					"<details>"
-						+ "<summary>[style.boldFeminine(Click for more info.)]</summary>"
-						+ "These options will determine the gender encounter rates of random NPCs."
-						+ " Some NPCs, such as random succubi attackers, have restrictions on their gender, but your preferences will be taken into account wherever possible.<br/>"
-						+ "<b>A visual representation of the encounter chances can be seen in the bars at the bottom of each section.</b>"
-						+ " (The different shades of each gender are solely for recognition in the bars, and don't mean anything other than that.)"
+						+ "<summary>[style.boldFeminine(Нажмите для получения дополнительной информации.)]</summary>"
+						+ "Эти настройки определяют частоту встреч с персонажами женского пола."
+						+ "Некоторые персонажи, такие как случайные нападающие-суккубы, имеют ограничения по полу, но ваши предпочтения будут учтены, где это возможно.<br/>"
+						+ "<b>Наглядное представление шансов на встречу можно увидеть в барах внизу каждой секции.</b>"
+						+ " (Разные оттенки каждого пола предназначены исключительно для распознавания в барах и не несут никакого другого значения.)"
 						+ "<br/>"
-						+ "A character is considered to have breasts if they are at least an AA-cup."
+						+ "Персонаж считается имеющим грудь, если он имеет размер по крайней мере AA-cup."
 					+ "</details>");
 			
 			// Offspring preferences:
 
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.ANDROGYNOUS, "Offspring using gender preferences", "Define which offspring use your gender preferences."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.ANDROGYNOUS, "Потомство, использующее гендерные предпочтения", "Определите, какое потомство использует ваши гендерные предпочтения."));
 				int[] orderOptions = new int[] {3, 0, 2, 1};
 				for(int i : orderOptions) {
 					UtilText.nodeContentSB.append(
@@ -1275,7 +1275,7 @@ public class OptionsDialogue {
 				if(!defaultResetConfirmation) {
 					return getDefaultResetConfirmationResponse();
 				}
-				return new Response("[style.colourMinorBad(Confirm Defaults)]", "Restore all gender preferences to their default values.", GENDER_PREFERENCE) {
+				return new Response("[style.colourMinorBad(Подтвердить)]", "Восстановить все гендерные предпочтения к их значениям по умолчанию.", GENDER_PREFERENCE) {
 					@Override
 					public void effects() {
 						Main.getProperties().resetGenderPreferences();
@@ -1379,11 +1379,11 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(
 					"<details>"
-						+ "<summary>[style.boldAndrogynous(Click for more info.)]</summary>"
-						+ "These options will determine the sexual orientation encounter rates of random NPCs."
-						+ " Note that the race and femininity of NPCs can have an influence on their orientation, and that some NPCs have pre-determined orientations, but your preferences will be taken into account wherever possible.</br>"
-						+ "<b>A visual representation of the encounter chances can be seen in the bars at the bottom.</b>"
-						+ " (The different shades of each orientation are solely for recognition in the bars, and don't mean anything other than that.)"
+						+ "<summary>[style.boldAndrogynous(Нажмите для получения дополнительной информации.)]</summary>"
+						+ "Эти настройки определят частоту встреч с НПС с разной сексуальной ориентацией."
+						+ "Обратите внимание, что раса и женственность НПС могут влиять на их ориентацию, и что у некоторых НПС есть предопределенная ориентация, но ваши предпочтения будут учтены, где это возможно.</br>"
+						+ "<b>Наглядное представление шансов на встречу можно увидеть на панелях внизу.</b>"
+						+ " (Разные оттенки каждой ориентации служат только для распознавания на панелях и не несут никакого другого значения.)"
 					+ "</details>"
 		
 					+ "<div class='container-full-width' style='text-align:center;'>");
@@ -1408,7 +1408,7 @@ public class OptionsDialogue {
 				if(!defaultResetConfirmation) {
 					return getDefaultResetConfirmationResponse();
 				}
-				return new Response("[style.colourMinorBad(Confirm Defaults)]", "Restore all orientation preferences to their default values.", ORIENTATION_PREFERENCE) {
+				return new Response("[style.colourMinorBad(Подтвердить значения по умолчанию)]", "Восстановить все настройки ориентации к их значениям по умолчанию.", ORIENTATION_PREFERENCE) {
 					@Override
 					public void effects() {
 						Main.getProperties().resetOrientationPreferences();
@@ -1425,7 +1425,7 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode FETISH_PREFERENCE = new DialogueNode("Fetish preferences", "", true) {
+	public static final DialogueNode FETISH_PREFERENCE = new DialogueNode("Настройки фетишей", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -1437,10 +1437,10 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(
 					"<details>"
-						+ "<summary>[style.boldFetish(Click for more info.)]</summary>"
-						+ "These options will determine the likelihood of random NPCs having these fetishes & preferences."
-						+ " Some races are more likely to get specific fetishes, but your preferences will be taken into account wherever possible.<br/>"
-						+ " Content settings will enable/disable related fetishes."
+						+ "<summary>[style.boldFetish(Нажмите для получения дополнительной информации.)]</summary>"
+						+ "Эти настройки определят вероятность того, что у случайных персонажей будут эти фетиши и предпочтения."
+						+ " Некоторые расы более склонны к определенным фетишам, но ваши предпочтения будут учтены по возможности.<br/>"
+						+ " Настройки контента позволят включить/отключить связанные фетиши."
 					+ "</details>"
 							
 					+ "<div class='container-full-width' style='text-align:center;'>");
@@ -1465,7 +1465,7 @@ public class OptionsDialogue {
 				if(!defaultResetConfirmation) {
 					return getDefaultResetConfirmationResponse();
 				}
-				return new Response("[style.colourMinorBad(Confirm Defaults)]", "Reset all fetish preferences to their default settings.", FETISH_PREFERENCE) {
+				return new Response("[style.colourMinorBad(Подтвердить значения по умолчанию)]", "Сбросить все настройки фетишей к значениям по умолчанию.", FETISH_PREFERENCE) {
 					@Override
 					public void effects() {
 						Main.getProperties().resetFetishPreferences();
@@ -1525,7 +1525,7 @@ public class OptionsDialogue {
 			String disabledMsg=null;
 			if(!fetish.isContentEnabled()) {
 				if (Fetish.FETISH_SIZE_QUEEN.equals(fetish)) {
-					disabledMsg = "Penetrative size-difference";
+					disabledMsg = "Разница в размере при проникновении";
 				} else if (Fetish.FETISH_NON_CON_DOM.equals(fetish) || Fetish.FETISH_NON_CON_SUB.equals(fetish)) {
 					disabledMsg = "Non-consent";
 				} else if (Fetish.FETISH_INCEST.equals(fetish)) {
@@ -1545,7 +1545,7 @@ public class OptionsDialogue {
 			if(disabledMsg!=null) {
 				// Disabled fetishes to default, the fetish won't be a valid option for the generator anyway
 				Main.getProperties().fetishPreferencesMap.put(fetish, fetish.getFetishPreferenceDefault().getValue());
-				sb.append("<div style='display:inline-block;'><span class='option-disabled'>Fetish forcibly disabled due to "+disabledMsg+" setting!</span></div>");
+				sb.append("<div style='display:inline-block;'><span class='option-disabled'>Фетиш насильно отключен из-за "+disabledMsg+" установки!</span></div>");
 				break;
 			} else {
 				sb.append("<div id='"+preference+"_"+Fetish.getIdFromFetish(fetish)+"' class='preference-button"+(Main.getProperties().fetishPreferencesMap.get(fetish)==preference.getValue()?" selected":"")+"'"
@@ -1616,7 +1616,7 @@ public class OptionsDialogue {
 		return sb.toString();
 	}
 	
-	public static final DialogueNode AGE_PREFERENCE = new DialogueNode("Age preferences", "", true) {
+	public static final DialogueNode AGE_PREFERENCE = new DialogueNode("Возрастные предпочтения", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -1628,10 +1628,10 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(
 					"<details>"
-						+ "<summary>[style.boldAge(Click for more info.)]</summary>"
-						+ "These options will determine the age encounter rates of random NPCs, based on their femininity."
-						+ " Some NPCs, such as demons and harpies, may appear to be younger than they actually are, but your preferences will be taken into account wherever possible.<br/>"
-						+ "<b>A visual representation of the age chances can be seen in the bars at the bottom of each section.</b>"
+						+ "<summary>[style.boldAge(Нажмите для получения дополнительной информации.)]</summary>"
+						+ "Эти настройки определят вероятность встреч с НПС по возрасту, в зависимости от их женственности."
+						+ "Некоторые НПС, такие как демоны и гарпии, могут казаться моложе, чем они есть на самом деле, но ваши предпочтения будут учтены, где это возможно.<br/>"
+						+ "<b>Наглядное представление вероятности возраста можно увидеть на графиках внизу каждой секции.</b>"
 					+ "</details>");
 			
 			UtilText.nodeContentSB.append(getAgePreferencesPanel(PronounType.MASCULINE));
@@ -1653,7 +1653,7 @@ public class OptionsDialogue {
 				if(!defaultResetConfirmation) {
 					return getDefaultResetConfirmationResponse();
 				}
-				return new Response("[style.colourMinorBad(Confirm Defaults)]", "Restore all age preferences to their default values.", AGE_PREFERENCE) {
+				return new Response("[style.colourMinorBad(Подтвердить значения по умолчанию)]", "Восстановить все предпочтения возраста к их значениям по умолчанию.", AGE_PREFERENCE) {
 					@Override
 					public void effects() {
 						Main.getProperties().resetAgePreferences();
@@ -1736,7 +1736,7 @@ public class OptionsDialogue {
 		return sb.toString();
 	}
 	
-	public static final DialogueNode FURRY_PREFERENCE = new DialogueNode("Furry preferences", "", true) {
+	public static final DialogueNode FURRY_PREFERENCE = new DialogueNode("Настройки", "", true) {
 		@Override
 		public void applyPreParsingEffects() {
 			defaultResetConfirmation = false;
@@ -1748,13 +1748,13 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(
 					"<details>"
-						+ "<summary>[style.boldHuman(Click for more info.)]</summary>"
-						+ "These options determine the amount of furry content that you'll encounter in the game."
-						+ " <i>These options only affect random NPCs at the moment, but reduced-furry versions of each major NPC may be added later on in development.</i>"
+						+ "<summary>[style.boldHuman(Нажмите для получения дополнительной информации.)]</summary>"
+						+ "Эти настройки определяют количество контента с участием животных, с которым вы столкнетесь в игре."
+						+ " <i>На данный момент эти настройки влияют только на случайных NPC, но в будущем могут быть добавлены уменьшенные версии каждого NPC.</i>"
 						
-						+ "<br/>[style.italicsGood(Hover over the buttons to see what each option means!)]"
+						+ "<br/>[style.italicsGood(Наведите курсор на кнопки, чтобы узнать, что означает каждый параметр!)]"
 						
-						+ "<br/>Please note that some races, such as demons and harpies, are limited in their available furry preference options."
+						+ "<br/>Обратите внимание, что некоторые расы, такие как демоны и гарпии, имеют ограниченные варианты предпочтений в отношении пушистости."
 					+ "</details>"
 							
 					+ "<span style='height:16px;width:800px;float:left;'></span>");
@@ -1762,7 +1762,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append("<div class='container-full-width'>");
 					
 				UtilText.nodeContentSB.append("<div class='container-half-width inner' style='width:31.3%; margin:1%; padding:1%;'>");
-					UtilText.nodeContentSB.append("<b style='color:"+PresetColour.RACE_HUMAN.toWebHexString()+"; float:left; width:100%; text-align:center;'>Human Spawn Rate</b>");
+					UtilText.nodeContentSB.append("<b style='color:"+PresetColour.RACE_HUMAN.toWebHexString()+"; float:left; width:100%; text-align:center;'>Частота появления людей</b>");
 					UtilText.nodeContentSB.append("<div style='display:inline-block; padding-left:5%; width:100%;'>");
 							UtilText.nodeContentSB.append(getSpawnRateDiv(
 											"HUMAN_SPAWN_RATE",
@@ -1801,7 +1801,7 @@ public class OptionsDialogue {
 				UtilText.nodeContentSB.append("</div>");
 			UtilText.nodeContentSB.append("</div>");
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.RACE_CENTAUR, "Tauric Upper-body Furriness", "Set how furry you prefer the upper bodies of taurs to be."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.RACE_CENTAUR, "Тауринская пушистость верхней части тела", "Установите, насколько пушистыми вы предпочитаете видеть верхнюю часть тела тауров."));
 			UtilText.nodeContentSB.append(
 					(Main.getProperties().taurFurryLevel==2
 						?"<div id='TAUR_FURRY_LIMIT_"+2+"' class='normal-button selected' style='width:31%; margin:1%; text-align:center; float:right; color:"+FurryPreference.MINIMUM.getColour().toWebHexString()+";'>"
@@ -1860,7 +1860,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append("</div>"
 												+ "<div style='display:inline-block; margin:4px auto;'>"
 													+"<div style='float:left; text-align:right; margin-right:16px;'>"
-														+ "<b>Set all spawn frequencies:</b>"
+														+ "<b>Установить все частоты спауна:</b>"
 													+ "</div>");
 			for(SubspeciesPreference sp : SubspeciesPreference.values()) {
 				UtilText.nodeContentSB.append("<div id='ALL_SPAWN_"+sp+"' class='normal-button' style='width:80px; margin:0 2px;'>"+Util.capitaliseSentence(sp.getName())+"</div>");
@@ -1871,8 +1871,8 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align: center;'>"
 											+"<div class='container-full-width' style='text-align:center; background:"+getEntryBackgroundColour(false)+";'>"
 												+"<div class='container-full-width' style='text-align:center; width:calc(60% - 16px);background:transparent; margin:0 0 0 40%; padding:0;'>"
-													+ "<b style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+"; float:left; width:50%; text-align:center;'>Furry Preference</b>"
-													+ "<b style='color:"+PresetColour.BASE_YELLOW_LIGHT.toWebHexString()+"; float:left; width:50%; text-align:center;'>Spawn frequency</b>"
+													+ "<b style='color:"+PresetColour.TRANSFORMATION_GENERIC.toWebHexString()+"; float:left; width:50%; text-align:center;'>Фурри-предпочтения</b>"
+													+ "<b style='color:"+PresetColour.BASE_YELLOW_LIGHT.toWebHexString()+"; float:left; width:50%; text-align:center;'>Частота спауна</b>"
 												+ "</div>"
 											+ "</div>");
 
@@ -1899,7 +1899,7 @@ public class OptionsDialogue {
 				if(!defaultResetConfirmation) {
 					return getDefaultResetConfirmationResponse();
 				}
-				return new Response("[style.colourMinorBad(Confirm Defaults)]", "Reset all furry and spawn preferences to their default settings.", FURRY_PREFERENCE) {
+				return new Response("[style.colourMinorBad(Подтвердить)]", "Сбросить все настройки по умолчанию для фурри и генерации.", FURRY_PREFERENCE) {
 					@Override
 					public void effects() {
 						for(AbstractSubspecies subspecies : Subspecies.getAllSubspecies()) {
@@ -2037,9 +2037,9 @@ public class OptionsDialogue {
 
 			UtilText.nodeContentSB.append(
 					"<div class='container-full-width'>"
-							+ "These options determine the units used throughout the game."
-							+ " Using auto detect will attempt to identify the correct settings for your system language."
-							+ " <br/><b>Overriding any option disables auto detect.</b>"
+							+ "Эти настройки определяют единицы измерения, используемые в игре."
+							+ "Использование автоматического определения попытается определить правильные настройки для языка вашей системы."
+							+ "<br/><b>Отмена любых настроек отключает автоматическое определение.</b>"
 							+ "</div>"
 
 							+ "<span style='height:16px;width:800px;float:left;'></span>");
@@ -2047,37 +2047,37 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AUTO_LOCALE",
 					PresetColour.BASE_BLUE_LIGHT,
 					"Automatic",
-					"When enabled, the system locale is used. Otherwise, the following options are applied.",
+					"Когда включено, используется локаль системы. В противном случае, применяются следующие настройки.",
 					Main.getProperties().hasValue(PropertyValue.autoLocale)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("METRIC_SIZES",
 					PresetColour.BASE_BLUE_STEEL,
 					"Metric sizes",
-					"The game will use metres and centimetres instead of feet and inches.",
+					"Игра будет использовать метры и сантиметры вместо футов и дюймов.",
 					Main.getProperties().hasValue(PropertyValue.metricSizes)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("METRIC_FLUIDS",
 					PresetColour.BASE_BLUE_STEEL,
 					"Metric fluids",
-					"The game will use litres and millilitres instead of gallons and ounces.",
+					"Игра будет использовать литры и миллилитры вместо галлонов и унций.",
 					Main.getProperties().hasValue(PropertyValue.metricFluids)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("METRIC_WEIGHTS",
 					PresetColour.BASE_BLUE_STEEL,
 					"Metric weights",
-					"The game will use kilograms and grams instead of pounds and ounces.",
+					"Игра будет использовать килограммы и граммы вместо фунтов и унций.",
 					Main.getProperties().hasValue(PropertyValue.metricWeights)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("TWENTYFOUR_HOUR_TIME",
 					PresetColour.BASE_LILAC_LIGHT,
 					"24 hour time",
-					"The time will be displayed as 24 hours instead of AM/PM.",
+					"Время будет отображаться в формате 24 часа вместо AM/PM.",
 					Main.getProperties().hasValue(PropertyValue.twentyFourHourTime)));
 
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INTERNATIONAL_DATE",
 					PresetColour.BASE_LILAC_LIGHT,
 					"International date",
-					"The abbreviated date will be displayed as day.month.year instead of month/day/year.",
+					"Сокращённая дата будет отображаться в формате день.месяц.год вместо месяц/день/год.",
 					Main.getProperties().hasValue(PropertyValue.internationalDate)));
 
 			return UtilText.nodeContentSB.toString();
@@ -2091,7 +2091,7 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Go back to the options menu.", OPTIONS);
+				return new Response("Назад", "Вернуться в меню настроек.", OPTIONS);
 
 			} else {
 				return null;
@@ -2264,17 +2264,17 @@ public class OptionsDialogue {
 					+ "<div class='container-half-width' style='width:calc(45% - 16px);'>");
 		
 		contentSB.append(
-				"<div id='"+id+"_ON' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 				+ "</div>"
-				+ "<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
+				+ "Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
 					+ "<b>"+valueDisplay+"</b>"
 				+ "</div>"
 				+ "<div id='"+id+"_OFF' class='normal-button"+(value==minimum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 					+ (value==minimum?"[style.boldDisabled(-)]":"[style.boldBad(-)]")
 				+ "</div>");
 		
-		contentSB.append("</div>"
+		contentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n</div>"
 				+"</div>");
 		
 		return contentSB.toString();
@@ -2288,15 +2288,15 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.setLength(0);
 			
 			UtilText.nodeContentSB.append(
-					"<p>"
-						+ "Thank you for playing "+Main.NAME_OF_GAME+", I hope you enjoy it just as much as I do making it!"
-						+ " Thank you so much to all of you who offer financial support! Thanks to you, I'm able to spend more time working on "+Main.NAME_OF_GAME+", and I promise that I'll make this game the very best that I can!"
+					"Вот перевод текста на русский язык:\n\n<p>"
+						+ "Спасибо за игру"+Main.NAME_OF_GAME+", Я надеюсь, что вам это понравится так же, как и мне, когда я это делаю!"
+						+ " Большое спасибо всем, кто оказывает финансовую поддержку! Благодаря вам, я могу уделять больше времени работе над "+Main.NAME_OF_GAME+", и я обещаю, что сделаю эту игру самой лучшей, на что я способна!"
 					+ "</p>"
 					+"<p style='text-align:center;'>"
-						+ Main.NAME_OF_GAME+" has been created by:<br/>"
+						+ Main.NAME_OF_GAME+" создана:<br/>"
 						+ "<b style='color:#9b78fa;'>Innoxia</b>"
 						+ "<br/><br/>"
-						+ "Artists whose character art can be found in the game:<br/>");
+						+ " Художники, чьи персонажи можно найти в игре:<br/>");
 			
 			for(Artist artist : Artwork.allArtists) {
 				if (!artist.getName().equals("Custom")) {
@@ -2321,14 +2321,14 @@ public class OptionsDialogue {
 					+ "<b style='color:#21bfc5;'>Tukaima</b></br>");
 			
 			UtilText.nodeContentSB.append("<br/>"
-						+ "Special thanks to:<br/>"
+						+ "Особая благодарность:<br/>"
 						+ "<b>Sensei</b>,<br/>"
-						+ "<b style='color:#fa0063;'>loveless</b>, <b style='color:#c790b2;'>Blue999</b>, and <b style='color:#ec9538;'>DesuDemona</b><br/>"
-						+ "<b style='color:#21bec4;'>Github & wiki contributors</b><br/>"
-						+ "<b style='color:#e06e5f;'>Everyone who's financially supported me</b>,<br/>"
-						+ "<b>Bug reporters</b>,<br/>"
+						+ "<b style='color:#fa0063;'>loveless</b>, <b style='color:#c790b2;'>Blue999</b>, и <b style='color:#ec9538;'>DesuDemona</b><br/>"
+						+ "<b style='color:#21bec4;'>Соавторы на GitHub и вики</b><br/>"
+						+ "<b style='color:#e06e5f;'>Все, кто финансово поддержал меня</b>,<br/>"
+						+ "<b>Те, кто сообщил о багах</b>,<br/>"
 						+ "and<br/>"
-						+ "<b>Everyone for playing Lilith's Throne!</b>"
+						+ "<b>Всем за игру в Трон Лилит!</b>"
 					+ "</p>"
 					+ "<br/>"
 					+ "<h5 style='text-align:center; color:"+PresetColour.RARITY_LEGENDARY.toWebHexString()+";'>Legendary Patrons</h5>"
@@ -2425,14 +2425,14 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("Back", "Go back to the options menu.", MENU);
+				return new Response("Назад", "Возвращаемся в меню настроек.", MENU);
 				
 			} else {
 				int i=1;
 				for(Artist artist : Artwork.allArtists) {
 					for(ArtistWebsite website : artist.getWebsites()) {
 						if(index==i) {
-							return new ResponseEffectsOnly(website.getName(), "Opens the page:<br/><br/><i>"+website.getURL()+"</i><br/><br/><b>Externally in your default browser.</b>"){
+							return new ResponseEffectsOnly(website.getName(), "Открывает страницу:<br/><br/><i>"+website.getURL()+"</i><br/><br/><b>Внешне в вашем браузере по умолчанию.</b>"){
 								@Override
 								public void effects() {
 									Util.openLinkInDefaultBrowser(website.getURL());
@@ -2455,27 +2455,27 @@ public class OptionsDialogue {
 	private static Response getContentOptionsResponse(int responseTab, int index) {
 		if (index == 1) {
 			if (Main.game.getCurrentDialogueNode().equals(MISCELLANEOUS)) {
-				return new Response("Misc.", "You are already viewing the miscellaneous content options!", null);
+				return new Response("Разное.", "Вы уже просматриваете настройки разного содержания!", null);
 			}
-			return new Response("Misc.", "View the miscellaneous content options.", MISCELLANEOUS);
+			return new Response("Разное.", "Просмотреть настройки разного содержания.", MISCELLANEOUS);
 		} else if (index == 2) {
 			if (Main.game.getCurrentDialogueNode().equals(GAMEPLAY)) {
-				return new Response("Gameplay", "You are already viewing the gameplay content options!", null);
+				return new Response("Игровой процесс", "Вы уже просматриваете настройки игрового процесса!", null);
 			}
-			return new Response("Gameplay", "View the game's gameplay content options.", GAMEPLAY);
+			return new Response("Игровой процесс", "Просмотреть настройки игрового процесса.", GAMEPLAY);
 		} else if (index == 3) {
 			if (Main.game.getCurrentDialogueNode().equals(SEX)) {
-				return new Response("Sex & Fetishes", "You are already viewing the sex & fetishes content options!", null);
+				return new Response("Секс и фетиши", "Вы уже просматриваете настройки секса и фетишей!", null);
 			}
-			return new Response("Sex & Fetishes", "View the game's sex & fetishes content options.", SEX);
+			return new Response("Секс и фетиши", "Просмотр опций контента игры по сексу и фетишам.", SEX);
 		} else if (index == 4) {
 			if (Main.game.getCurrentDialogueNode().equals(BODIES)) {
-				return new Response("Bodies", "You are already viewing the bodies content options!", null);
+				return new Response("Тела", "Вы уже просматриваете опции контента по телам!", null);
 			}
-			return new Response("Bodies", "View the game's bodies content options.", BODIES);
+			return new Response("Тела", "Просмотр опций контента игры по телам.", BODIES);
 		} else if (index == 5) {
-			return new Response("[style.colourMinorBad(Reset)]",
-					"Resets <b>all 'Misc.', 'Gameplay', 'Sex & Fetishes', and 'Bodies'</b> content preferences to their default values!"
+			return new Response("[style.colourMinorBad(Сброс)]",
+					"Сбрасывает <b>все предпочтения 'Разное', 'Игровой процесс', 'Секс и фетиши' и 'Тела'</b> к их значениям по умолчанию!"
 							+"<br/>Does <b>not</b> reset Gender, Orientation, Age, Furry, or Fetish preferences.",
 					MISCELLANEOUS) {
 				@Override
@@ -2489,63 +2489,63 @@ public class OptionsDialogue {
 			};
 		} else if (index == 6) {
 			if (Main.game.getCurrentDialogueNode().equals(GENDER_PREFERENCE)) {
-				return new Response("Gender preferences", "You are already viewing the gender preferences screen!", null);
+				return new Response("Предпочтения по полу", "Вы уже просматриваете экран предпочтений по полу!", null);
 			}
-			return new Response("Gender preferences", "Set your preferred gender encounter rates.", GENDER_PREFERENCE);
+			return new Response("Предпочтения по полу", "Установите свои предпочитаемые частоты встреч по полу.", GENDER_PREFERENCE);
 		} else if (index == 7) {
 			if (Main.game.getCurrentDialogueNode().equals(ORIENTATION_PREFERENCE)) {
-				return new Response("Orientation preferences", "You are already viewing the sexual orientation preferences screen!", null);
+				return new Response("Предпочтения по ориентации", "Вы уже просматриваете экран предпочтений по сексуальной ориентации!", null);
 			}
-			return new Response("Orientation preferences", "Set your preferred sexual orientation encounter rates.", ORIENTATION_PREFERENCE);
+			return new Response("Предпочтения по ориентации", "Установите свои предпочитаемые частоты встреч по сексуальной ориентации.", ORIENTATION_PREFERENCE);
 		} else if (index == 8) {
 			if (Main.game.getCurrentDialogueNode().equals(AGE_PREFERENCE)) {
-				return new Response("Age preferences", "You are already viewing the age preferences screen!", null);
+				return new Response("Предпочтения по возрасту", "Вы уже просматриваете экран предпочтений по возрасту!", null);
 			}
-			return new Response("Age preferences", "Set your preferred age encounter rates.", AGE_PREFERENCE);
+			return new Response("Предпочтения по возрасту", "Установите свои предпочтения по возрасту для встреч.", AGE_PREFERENCE);
 		} else if (index == 9) {
 			if (Main.game.getCurrentDialogueNode().equals(FURRY_PREFERENCE)) {
-				return new Response("Furry preferences", "You are already viewing the furry preferences screen!", null);
+				return new Response("Фурри предпочтения", "Вы уже просматриваете экран фурри предпочтений!", null);
 			}
-			return new Response("Furry preferences", "Set your preferred furry level for encounters.", FURRY_PREFERENCE);
+			return new Response("Фурри предпочтения", "Установите свой предпочтительный уровень фурри для встреч.", FURRY_PREFERENCE);
 		} else if (index == 10) {
 			if (Main.game.getCurrentDialogueNode().equals(FETISH_PREFERENCE)) {
-				return new Response("Fetish preferences", "You are already viewing the fetish preferences screen!", null);
+				return new Response("Фетэш предпочтения", "Вы уже просматриваете экран фетэш предпочтений!", null);
 			}
-			return new Response("Fetish preferences", "Set your preferred fetish encounter rates.", FETISH_PREFERENCE);
+			return new Response("Фетэш предпочтения", "Установите свои предпочтения по фетэшу для встреч.", FETISH_PREFERENCE);
 		} else if (index == 0) {
-			return new Response("Back", "Go back to the main menu.", MENU);
+			return new Response("Назад", "Вернуться в главное меню.", MENU);
 		}
 		return null;
 	}
 	
-	public static final DialogueNode MISCELLANEOUS = new DialogueNode("Content Options (Misc.)", "", true) {
+	public static final DialogueNode MISCELLANEOUS = new DialogueNode("Настройки контента (Разное)", "", true) {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.GENERIC_GOOD, "Autosave Frequency", "Choose how often want the game to autosave when you transition from one map to another."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.GENERIC_GOOD, "Autosave Frequency", "Выберите, как часто вы хотите, чтобы игра автоматически сохранялась при переходе с одной карты на другую."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button"+(Main.getProperties().autoSaveFrequency == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button', "+(Main.getProperties().autoSaveFrequency == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().autoSaveFrequency == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
 						+com.lilithsthrone.game.Properties.autoSaveLabels[i]+")]</div>");
 			}
-			UtilText.nodeContentSB.append("</div></div>");
+			UtilText.nodeContentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n</div></div>");
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ARTWORK",
 					PresetColour.BASE_BLUE_LIGHT,
 					"Artwork",
-					"Enables artwork to be displayed in characters' information screens.",
+					"Вот перевод на русский язык:\n\nВключает возможность отображения иллюстраций на экранах информации о персонажах.",
 					Main.getProperties().hasValue(PropertyValue.artwork)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("THUMBNAIL",
 					PresetColour.BASE_BLUE_STEEL,
 					"Thumbnails",
-					"Enables tooltips containing thumbnail images of the character.",
+					"Вот перевод на естественный, нецензурный русский язык:\n\nsrc/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\n\nТекст:\nВключает подсказки, содержащие миниатюрные изображения персонажа.",
 					Main.getProperties().hasValue(PropertyValue.thumbnail)));
 			
 //			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_AQUA, "Preferred Artist", "Which artist's work is used by default."));
 			
-			UtilText.nodeContentSB.append("<div class='container-full-width' style='padding:0; margin:2px 0;'>"
+			UtilText.nodeContentSB.append("Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='padding:0; margin:2px 0;'>"
 				+ "<div class='container-half-width' style='width:calc(55% - 16px);'>"
 					+ "<b style='text-align:center; color:"+PresetColour.BASE_AQUA.toWebHexString()+";'>Preferred Artist</b><b>:</b> "
 					+ "Which artist's work is used by default."
@@ -2577,23 +2577,23 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SHARED_ENCYCLOPEDIA",
 					PresetColour.GENERIC_EXCELLENT,
 					"Shared Encyclopedia",
-					"When enabled, your character will use the shared Encyclopedia (whose entries are unlocked across any playthrough). If disabled, unlocked Encyclopedia entries are only shown if your current character has discovered them.",
+					"Когда включена, ваша персонаж будет использовать общую Энциклопедию (чьи записи разблокированы в любой игре). Если отключена, разблокированные записи Энциклопедии показываются только если ваша текущая персонаж обнаружила их.",
 					Main.getProperties().hasValue(PropertyValue.sharedEncyclopedia)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("WEATHER_INTERRUPTION",
 					PresetColour.GENERIC_ARCANE,
 					"Storm interruptions",
-					"When enabled, arcane storms will interrupt dialogue to let you know that they've started.",
+					"Когда включена, арканические бури будут прерывать диалог, чтобы сообщить вам, что они начались.",
 					Main.getProperties().hasValue(PropertyValue.weatherInterruptions)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("DIALOGUE_COPY",
 					PresetColour.BASE_BLUE_STEEL,
-					"Automatic text copying",
-					"When enabled, the current scene's text will automatically be copied to your system's clipboard every time a new scene is loaded."
-							+" This option is so that you can easily paste the game's text into text readers without needing to select and copy the scene's text every time.",
+					"Автоматическая копирование текста",
+					"Когда включена, текст текущей сцены автоматически копируется в буфер обмена вашей системы каждый раз, когда загружается новая сцена."
+							+"Этот параметр позволяет вам легко вставлять текст игры в текстовые ридеры, не нужно каждый раз выбирать и копировать текст сцены.",
 					Main.getProperties().hasValue(PropertyValue.automaticDialogueCopy)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SILLY",
 					PresetColour.GENERIC_GOOD,
 					"Silly mode",
-					"This enables additional silly content throughout the game.",
+					"Этот параметр позволяет добавлять дополнительные смешные контенты в игру.",
 					Main.getProperties().hasValue(PropertyValue.sillyMode)));
 			
 			return UtilText.nodeContentSB.toString();
@@ -2610,7 +2610,7 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode GAMEPLAY = new DialogueNode("Content Options (Gameplay)", "", true) {
+	public static final DialogueNode GAMEPLAY = new DialogueNode("Настройки контента (Игровой процесс)", "", true) {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -2618,33 +2618,33 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ENCHANTMENT_LIMITS",
 					PresetColour.GENERIC_ARCANE,
 					"Enchantment Instability",
-					"Toggle the '"+Attribute.ENCHANTMENT_LIMIT.getName()+"' mechanic, which restricts how many enchanted items you can wear. This is on by default, and you will potentially break the balance of the game's combat by turning it off.",
+					"Toggle the '"+Attribute.ENCHANTMENT_LIMIT.getName()+"Механика, которая ограничивает количество зачарованных предметов, которые вы можете носить. По умолчанию она включена, и при отключении она может нарушить баланс боевой системы игры.",
 					Main.getProperties().hasValue(PropertyValue.enchantmentLimits)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("BAD_END",
 					PresetColour.GENERIC_TERRIBLE,
 					"Bad Ends",
-					"Toggle the ability to trigger 'bad ends', which end the game for your character when encountered."
-							+"<br/>[style.italicsMinorBad(Please note that bad ends involve non-con content, and so ignore your non-con setting.)]",
+					"Включает возможность вызывать 'плохие концовки', которые заканчивают игру для вашего персонажа, когда они происходят."
+							+"<br/>[style.italicsMinorBad(Пожалуйста, обратите внимание, что плохие концовки включают в себя не-контент, поэтому игнорируйте ваше не-кон настройку.)]",
 //							+"<br/>[style.italicsTerrible(Please be aware that some bad ends are unaffected by this setting and are always present in the game.)]"
 					Main.getProperties().hasValue(PropertyValue.badEndContent)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LEVEL_DRAIN",
 					PresetColour.GENERIC_TERRIBLE,
 					"Level Drain",
-					"Toggle the use of the 'orgasmic level drain' perk by unique NPCs (such as some scenes with Amber), which causes them to drain your level for each orgasm you have in sex with them.",
+					"Включает возможность использовать перк 'уровень оргазма' у уникальных NPC (например, в некоторых сценах с Эмбер), который заставляет их сливать ваш уровень за каждый оргазм, который вы имеете с ними.",
 					Main.getProperties().hasValue(PropertyValue.levelDrain)));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("OPPORTUNISTIC_ATTACKERS",
 					PresetColour.BASE_CRIMSON,
 					"Opportunistic attackers",
-					"This makes random attacks more likely when you're high on lust, low on health, covered in fluids, exposed, or drunk.",
+					"Это делает случайные атаки более вероятными, когда вы находитесь под воздействием похоти, низкого здоровья, покрыты жидкостями, обнажены или пьяны.",
 					Main.game.isOpportunisticAttackersEnabled()));
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("OFFSPRING_ENCOUNTERS",
 					PresetColour.BASE_INDIGO,
 					"Offspring Encounters",
-					"This enables you to randomly encounter your offspring throughout the world."
-					+ "<br/><i>This setting has no effect on the Offspring Map, nor on offspring who you've already met.</i>",
+					"Это позволяет вам случайно встретить свое потомство по всему миру."
+					+ "<br/><i>Этот параметр не влияет на Карту Потомства, а также на потомство, с которым вы уже встретились.</i>",
 					Main.game.isOffspringEncountersEnabled()));
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BLUE_LIGHT, "Clothing Femininity", "This sets the limitations of clothing femininity values."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BLUE_LIGHT, "Clothing Femininity", "Это устанавливает ограничения по значениям женственности одежды."));
 			for (int i=Main.getProperties().clothingFemininityTitles.length-1; i>=0; i--) {
 				if (Main.getProperties().getClothingFemininityLevel() == i) {
 					UtilText.nodeContentSB.append("<div id='CLOTHING_FEMININITY_"+i
@@ -2658,9 +2658,9 @@ public class OptionsDialogue {
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Sex action bypass", "If this is enabled, sex action corruption requirements may be bypassed."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Обход действия секса", "Если это включено, требования к порочности при действии секса могут быть обходятся."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='BYPASS_SEX_ACTIONS_"+i+"' class='normal-button"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='BYPASS_SEX_ACTIONS_"+i+"' class='normal-button'}"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().bypassSexActions == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2672,7 +2672,7 @@ public class OptionsDialogue {
 					"PREGNANCY_DURATION",
 					PresetColour.BASE_PINK_DEEP,
 					"Pregnancy duration",
-					"This sets the maximum time it takes for a pregnancy to progress from conception to birth.",
+					"Это устанавливает максимальное время, которое требуется для прогрессирования беременности от зачатия до рождения.",
 					Main.getProperties().pregnancyDuration+" week"+(Main.getProperties().pregnancyDuration == 1?"":"s"),
 					Main.getProperties().pregnancyDuration,
 					1,
@@ -2680,21 +2680,21 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SPITTING_ENABLED",
 					PresetColour.BASE_BLUE,
-					"Rejecting TF potions",
-					"Forced TF potions may be spat out if this is enabled.",
+					"Отказ от зелий ТФ",
+					"Принудительные зелья ТФ могут быть выплюнуты, если это включено.",
 					!Main.game.isSpittingDisabled()));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceVariableDiv(
 					"FORCED_TF",
 					PresetColour.TRANSFORMATION_GENERIC,
 					"Forced TF",
-					"This sets the amount of NPCs spawning with the '"+Fetish.FETISH_TRANSFORMATION_GIVING.getName(null)+"' fetish, which causes them to forcibly transform you after beating you in combat.",
+					"Это устанавливает количество НПС, появляющихся с фетишем '"+Fetish.FETISH_TRANSFORMATION_GIVING.getName(null)+"' фетиш, который заставляет их насильно трансформировать вас после победы в бою.",
 					Main.getProperties().forcedTFPercentage+"%",
 					Main.getProperties().forcedTFPercentage,
 					0,
 					100));
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_GREEN, "Forced TF Racial Limits", "This allows you to set the maximum furry limit of what an NPC will forcibly transform you into."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_GREEN, "Принудительные ограничения по расе ТФ", "Это позволяет вам установить максимальный лимит по расе, в которую НПС может насильно трансформировать вас."));
 			for (FurryPreference fp : Util.newArrayListOfValues(FurryPreference.REDUCED,
 					FurryPreference.MINIMUM,
 					FurryPreference.HUMAN,
@@ -2734,15 +2734,15 @@ public class OptionsDialogue {
 					"FORCED_FETISH",
 					PresetColour.FETISH,
 					"Forced Fetishes",
-					"This sets the amount of NPCs spawning with the '"+Fetish.FETISH_KINK_GIVING.getName(null)+"' fetish, which causes them to try and forcibly give you fetishes after beating you in combat.",
+					"Это устанавливает количество НПС, появляющихся с фетишем '"+Fetish.FETISH_KINK_GIVING.getName(null)+"' фетишем, который заставляет их пытаться насильно давать вам фетиши после того, как они побеждают вас в бою.",
 					Main.getProperties().forcedFetishPercentage+"%",
 					Main.getProperties().forcedFetishPercentage,
 					0,
 					100));
 			
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.FETISH, "Forced Fetish Tendency",
-					"This allows you to override NPC tastes and control the tendency for forced fetishes to be for topping or bottoming."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.FETISH, "Принудительная фетиш-тенденция",
+					"Это позволяет вам переопределить вкусы НПС и контролировать тенденцию к принудительным фетишам, чтобы они были для топинга или ботминга."));
 			for (ForcedFetishTendency fft : Util.newArrayListOfValues(ForcedFetishTendency.NEUTRAL,
 					ForcedFetishTendency.BOTTOM,
 					ForcedFetishTendency.BOTTOM_HEAVY,
@@ -2763,8 +2763,8 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("COMPANION",
 					PresetColour.BASE_GREEN_LIGHT,
 					"Companions",
-					"Enable the ability to add slaves or friendly occupants as your companion."
-							+"<br/>[style.boldBad(Warning:)] This is an experimental feature, and support for companions was dropped in v0.3.9, so there will be no special dialogue or actions involving your companions outside of Dominion.",
+					"Включить возможность добавлять рабов или дружелюбных обитателей в качестве спутника."
+							+"<br/>[style.boldBad(Предупреждение:)] Это экспериментальная функция, и поддержка спутников была убрана в v0.3.9, поэтому не будет никаких особых диалогов или действий, связанных с вашими спутниками, за пределами Dominion.",
 					Main.getProperties().hasValue(PropertyValue.companionContent)));
 			
 			return UtilText.nodeContentSB.toString();
@@ -2781,7 +2781,7 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode SEX = new DialogueNode("Content Options (Sex & Fetishes)", "", true) {
+	public static final DialogueNode SEX = new DialogueNode("Настройки (Секс & Фетиши)", "", true) {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -2789,140 +2789,140 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("NON_CON",
 					PresetColour.BASE_CRIMSON,
 					"Non-consent",
-					"This enables the 'resist' pace in sex scenes, which contains some more extreme non-consensual descriptions, as well as dialogue references and actions related to this content."
-							+"<br/>[style.italicsMinorBad(Please note that bad ends involve non-con content, regardless of whether or not this option is enabled.)]",
+					"Это включает в себя 'resist' темп в сценах секса, который содержит некоторые более экстремальные неконсенсуальные описания, а также диалоговые ссылки и действия, связанные с этим контентом."
+							+"<br/>[style.italicsMinorBad(Пожалуйста, обратите внимание, что плохие концовки включают в себя неконтент, независимо от того, включена ли эта опция.)]",
 					Main.getProperties().hasValue(PropertyValue.nonConContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SADISTIC_SEX",
 					PresetColour.BASE_RED,
 					"Sadistic sex",
-					"This unlocks 'sadistic' sex actions, such as choking, slapping, and spitting on partners in sex.",
+					"Это разблокирует 'садистские' сексуальные действия, такие как удушение, хлопанье по лицу и плюхание на партнера во время секса.",
 					Main.getProperties().hasValue(PropertyValue.sadisticSexContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LIPSTICK_MARKING",
 					PresetColour.BASE_RED_DARK,
 					"Lipstick marking",
-					"This enables lipstick marking of body parts via kisses during sex.",
+					"Это включает в себя маркировку губной помадой частей тела через поцелуи во время секса.",
 					Main.getProperties().hasValue(PropertyValue.lipstickMarkingContent)));
 			
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("VOLUNTARY_NTR",
 					PresetColour.GENERIC_MINOR_BAD,
 					"Voluntary NTR",
-					"When enabled, you will get the option to offer certain enemies sex with your companions as a way to avoid combat.",
+					"Когда включено, у вас будет возможность предложить некоторым врагам секс с вашим спутником как способ избежать боя.",
 					Main.getProperties().hasValue(PropertyValue.voluntaryNTR)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INVOLUNTARY_NTR",
 					PresetColour.GENERIC_BAD,
 					"Involuntary NTR",
-					"When enabled, enemies might choose to only have sex with your companion after beating your party in combat."
-							+" When disabled, all post-combat-loss sex scenes will involve you.",
+					"Когда включено, враги могут выбрать, чтобы заниматься сексом только с вашим спутником после победы над вашей группой в бою."
+							+"Когда отключено, все сцены секса после поражения в бою будут включать вас.",
 					Main.getProperties().hasValue(PropertyValue.involuntaryNTR)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INCEST",
 					PresetColour.BASE_ROSE,
 					"Incest",
-					"This will enable sexual actions between characters who are related to one another.",
+					"Это позволит сексуальные действия между персонажами, которые связаны друг с другом.",
 					Main.getProperties().hasValue(PropertyValue.incestContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("LACTATION",
 					PresetColour.BASE_YELLOW_LIGHT,
 					"Lactation",
-					"This enables lactation content.",
+					"Это позволяет контент о лактации.",
 					Main.getProperties().hasValue(PropertyValue.lactationContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("SEXUAL_UDDERS",
 					PresetColour.BASE_ORANGE_LIGHT,
-					"Crotch-boob & udder content",
-					"This enables crotch-boob & udder-related sex actions and allows crotch-boob & udder transformations to be inflicted upon the player.",
+					"Контент о промежности и вымени",
+					"Это позволяет сексуальные действия, связанные с промежностью и выменем, и позволяет накладывать на игрока трансформации промежности и вымени.",
 					Main.getProperties().hasValue(PropertyValue.udderContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("URETHRAL",
 					PresetColour.BASE_PINK_DEEP,
 					"Urethral content",
-					"This enables urethral transformations and penetrations.",
+					"Это позволяет трансформации и проникновения в уретру.",
 					Main.getProperties().hasValue(PropertyValue.urethralContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("NIPPLE_PEN",
 					PresetColour.BASE_PINK_DEEP,
 					"Nipple penetrations",
-					"This enables nipple-penetration transformations and sex actions.",
+					"Это позволяет трансформации и сексуальные действия, связанные с сосками.",
 					Main.getProperties().hasValue(PropertyValue.nipplePenContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ANAL",
 					PresetColour.BASE_ORANGE,
 					"Anal content",
-					"When disabled, removes all anal-related actions from being available during sex.",
+					"Когда отключена, удаляет все анальные действия из доступных во время секса.",
 					Main.getProperties().hasValue(PropertyValue.analContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("GAPE",
 					PresetColour.BASE_PINK_DEEP,
 					"Gape content",
-					"When disabled, changes descriptions of gaping orifices to simply be 'loose', and also hides any special gape-related content.",
+					"Когда отключена, изменяет описания широко раскрытых отверстий на просто 'расслабленные', а также скрывает любой специальный контент, связанный с раскрытием.",
 					Main.getProperties().hasValue(PropertyValue.gapeContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("PENETRATION_LIMITATION",
 					PresetColour.BASE_PINK_DEEP,
-					"Penetrative size-difference",
-					"When enabled, orifices will have a limited depth to them, meaning that penetrative objects (penises and tails) can be too long to fit all the way inside.",
+					"Разница в размерах при проникновении",
+					"Когда включена, отверстия будут иметь ограниченную глубину, что означает, что проникнущие объекты (пенисы и хвосты) могут быть слишком длинными, чтобы полностью входить внутрь.",
 					Main.getProperties().hasValue(PropertyValue.penetrationLimitations)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("PENETRATION_LIMITATION_DYNAMIC",
 					PresetColour.BASE_PINK_DEEP,
-					"Elasticity depth effects",
-					"When enabled, if an orifice has an elasticity of at least 'limber', the maximum 'uncomfortable depth' value will be increased, with greater elasticity values increasing it further."
-							+" (Note: Only applies when 'Penetrative size-difference' is also turned on.)",
+					"Эффекты глубины эластичности",
+					"При включении, если у отверстия есть эластичность не менее 'гибкий', максимальное значение 'неудобной глубины' будет увеличено, при этом более высокие значения эластичности увеличивают его еще больше."
+							+" (Примечание: Применяется только при включении 'Разница в размере при проникновении'.)",
 					Main.getProperties().hasValue(PropertyValue.elasticityAffectDepth)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FOOT",
 					PresetColour.BASE_TAN,
 					"Foot content",
-					"When disabled, removes all foot-related actions from being available during sex.",
+					"При отключении, все действия, связанные с ногами, будут недоступны во время секса.",
 					Main.getProperties().hasValue(PropertyValue.footContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("ARMPIT",
 					PresetColour.BASE_PINK_LIGHT,
 					"Armpit content",
-					"When disabled, removes all armpit-related actions from being available during sex.",
+					"При отключении, все действия, связанные с подмышками, будут недоступны во время секса.",
 					Main.getProperties().hasValue(PropertyValue.armpitContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("MUSK",
 					PresetColour.BASE_YELLOW_LIGHT,
 					"Musk content",
-					"When disabled, some scenes will either have reduced musk content or be omitted entirely, and the 'marked by musk' status effect will be disabled.",
+					"При отключении, некоторые сцены будут иметь либо сниженное содержание мускуса, либо будут опущены полностью, а эффект статуса 'запах мускуса' будет отключен.",
 					Main.getProperties().hasValue(PropertyValue.muskContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FURRY_TAIL_PENETRATION",
 					PresetColour.BASE_MAGENTA,
-					"Furry tail penetrations",
-					"This marks all prehensile tail types as being suitable for penetration, thereby enabling furry prehensile tails to engage in penetrative actions in sex.",
+					"Проникновение в пушистый хвост",
+					"Это отмечает все типы пушистых хвостов как подходящие для проникновения, тем самым позволяя пушистым хвостам участвовать в проникновении во время секса.",
 					Main.getProperties().hasValue(PropertyValue.furryTailPenetrationContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("INFLATION_CONTENT",
 					PresetColour.CUM,
 					"Cum inflation",
-					"This enables cum inflation mechanics.",
+					"Это включает механику надувания спермы.",
 					Main.getProperties().hasValue(PropertyValue.inflationContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AUTO_SEX_CLOTHING_MANAGEMENT",
 					PresetColour.BASE_BLUE_STEEL,
-					"Post-sex clothing replacement",
-					"Enables equipped clothing to be automatically pulled back into their pre-sex states after sex scenes.",
+					"Замена одежды после секса",
+					"Позволяет автоматически возвращать одежду в её исходное состояние после секса.",
 					Main.getProperties().hasValue(PropertyValue.autoSexClothingManagement)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AUTO_SEX_CLOTHING_STRIP",
 					PresetColour.BASE_PINK_LIGHT,
 					"Automatic stripping",
-					"When enabled, all non-spectating characters which you are allowed to strip during sex (including yourself) will start sex naked.",
+					"Когда включено, все персонажи, которых вы можете раздеть во время секса (включая себя), начнут секс голыми.",
 					Main.getProperties().hasValue(PropertyValue.autoSexStrip)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("RAPE_PLAY_BY_DEFAULT",
 					PresetColour.BASE_CRIMSON,
-					"Rape-play allowed by default",
-					"When enabled, submissive characters in sex who have the 'unwilling fuck-toy' fetish will be able to engage in rape-play without first being given permission to do so.",
+					"Изнасилование разрешено по умолчанию",
+					"Когда включено, подчиненные персонажи в сексе, у которых есть фетиш 'нежелательная секс-игрушка', смогут заниматься изнасилованием без предварительного разрешения.",
 					Main.getProperties().hasValue(PropertyValue.rapePlayAtSexStart)));
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Full exposure descriptions", "Set how often revealed body parts are fully described during sex."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Полные описания обнажения", "Устанавливает, как часто обнаженные части тела полностью описываются во время секса."));
 			for (int i = 2; i>=0; i--) {
 				UtilText.nodeContentSB.append("<div id='FULL_EXPOSURE_DESCRIPTIONS_"+i+"' class='normal-button"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().fullExposureDescriptions == i
@@ -2947,7 +2947,7 @@ public class OptionsDialogue {
 		}
 	};
 	
-	public static final DialogueNode BODIES = new DialogueNode("Content Options (Bodies)", "", true) {
+	public static final DialogueNode BODIES = new DialogueNode("Настройки", "", true) {
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
@@ -2955,45 +2955,45 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("AGE",
 					PresetColour.AGE_TWENTIES,
 					"Age",
-					"This enables descriptions of the age that characters appear to be.",
+					"Это позволяет описывать возраст, который имеют персонажи.",
 					Main.getProperties().hasValue(PropertyValue.ageContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FERAL",
 					PresetColour.BASE_TAN,
 					"Feral",
-					"This enables feral content, which contains sexual and non-sexual interactions with sapient characters who have fully-animal bodies.",
+					"Это позволяет использовать феромонные взаимодействия, которые включают в себя сексуальные и несексуальные взаимодействия с разумными персонажами, имеющими полностью животные тела.",
 					Main.getProperties().hasValue(PropertyValue.feralContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("CUM_REGENERATION",
 					PresetColour.CUM,
 					"Cum Regeneration",
-					"This enables cum regeneration related content, such as decreasing quantity for multiple orgasms in one session and the full balls status effect."
-							+"<br>When disabled, balls will always be treated as full, but without any negative effects.",
+					"Это позволяет использовать контент, связанный с регенерацией спермы, например, уменьшение количества спермы при многократных оргазмах за один сеанс и эффект полного наполнения яичек."
+							+"<br>При отключении, яички всегда будут считаться полными, но без каких-либо негативных эффектов.",
 					Main.getProperties().hasValue(PropertyValue.cumRegenerationContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("FUTA_BALLS",
 					PresetColour.BASE_PINK,
 					"Futanari Testicles",
-					"When enabled, futanari NPCs will be able to have external testicles. When disabled, they are locked to always being internal.",
+					"При включении, NPC футани смогут иметь внешние яички. При отключении, они всегда будут иметь внутренние.",
 					Main.getProperties().hasValue(PropertyValue.futanariTesticles)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("CLOACA",
 					PresetColour.BASE_PINK_LIGHT,
 					"Bipedal Cloacas",
-					"When enabled, certain bipedal races (such as harpies and alligator-morphs) will have cloacas."
-							+" When disabled, all bipeds with cloacas will be treated as having a regular genitalia configuration."
-							+" Some special races, such as lamia, always have cloacas, and are not affected by this.",
+					"При включении, некоторые двуногие расы (например, гарпии и аллигатор-морфы) будут иметь клоаки."
+							+"При отключении, все двуногие с клоаками будут считаться имеющими обычную генитальную конфигурацию."
+							+"Некоторые специальные расы, такие как ламии, всегда имеют клоаки и не подвержены этому эффекту.",
 					Main.getProperties().hasValue(PropertyValue.bipedalCloaca)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("VESTIGIAL_MULTI_BREAST",
 					PresetColour.BASE_PURPLE_LIGHT,
-					"Vestigial Multi-breasts",
-					"When enabled, characters who have multiple rows of breasts will have the rows beneath their top one described as being vestigial in size."
-							+" When disabled, breast rows will be described as being one cup size smaller than the one above them.",
+					"Остаточные многогрудь",
+					"При включении, персонажи, у которых есть несколько рядов груди, будут иметь ряды ниже их верхнего ряда, описанные как везигиальные по размеру."
+							+"При отключении, ряды груди будут описаны как на один размер меньше, чем тот, что выше них.",
 					Main.getProperties().hasValue(PropertyValue.vestigialMultiBreasts)));
 			
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES, "Multi-breasts", "Choose whether randomly-generated furry characters should be given multiple rows of breasts."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES, "Multi-breasts", "Выберите, должны ли случайно сгенерированные пушистые персонажи иметь несколько рядов груди."));
 			int[] buttonOrder = new int[] {2, 1, 0, 3}; // Order buttons in this manner so that they appear to be a little more logical
 			for (int i : buttonOrder) {
 				UtilText.nodeContentSB.append("<div id='MULTI_BREAST_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().multiBreasts == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
@@ -3008,7 +3008,7 @@ public class OptionsDialogue {
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES_CROTCH, "Crotch-boobs & Udders", "Choose whether randomly-generated taurs and furry characters should be given udders or crotch-boobs."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES_CROTCH, "Груди в паху & Вымя", "Выберите, должны ли случайно сгенерированные тауры и пушистые персонажи иметь вымя или грудь в паху."));
 			for (int i = com.lilithsthrone.game.Properties.uddersLabels.length-1; i>=0; i--) {
 				UtilText.nodeContentSB.append("<div id='UDDER_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getUddersLevel() == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().getUddersLevel() == i
@@ -3018,7 +3018,7 @@ public class OptionsDialogue {
 			}
 			UtilText.nodeContentSB.append("</div></div>");
 			
-			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BROWN_LIGHT, "Hair growth", "Select how often the player's hair will grow by 1cm. NPCs maintain their hair lengths, so this setting only affects you."));
+			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_BROWN_LIGHT, "Hair growth", "Выберите, как часто волосы игрока будут расти на 1 см. НПС поддерживают свою длину волос, поэтому этот параметр влияет только на вас."));
 			int[] hairButtonOrder = new int[] {2, 1, 0, 3}; // Order buttons in this manner so that they appear to be a little more logical
 			for (int i : hairButtonOrder) {
 				boolean active = Main.getProperties().getHairGrowth() == i;
@@ -3037,13 +3037,13 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_FACIAL",
 					PresetColour.BASE_LILAC_LIGHT,
 					"Facial hair",
-					"This enables facial hair descriptions and content.",
+					"Это позволяет описывать и показывать усы.",
 					Main.getProperties().hasValue(PropertyValue.facialHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_PUBIC",
 					PresetColour.BASE_LILAC,
 					"Pubic hair",
-					"This enables pubic hair descriptions and content.",
+					"Это позволяет описывать и показывать лобковые волосы.",
 					Main.getProperties().hasValue(PropertyValue.pubicHairContent)));
 			
 			UtilText.nodeContentSB.append(getContentPreferenceDiv("HAIR_BODY",
@@ -3100,7 +3100,7 @@ public class OptionsDialogue {
 					"PREGNANCY_BREAST_GROWTH_LIMIT",
 					PresetColour.BASE_PINK_LIGHT,
 					"Pregnancy Breast Growth Limit",
-					"Set the maximum limit of cup size that characters' breasts will grow to from pregnancies.",
+					"Установите максимальный предел размера чашки, до которого будут расти груди персонажей в результате беременностей.",
 					CupSize.getCupSizeFromInt(Main.getProperties().pregnancyBreastGrowthLimit).getCupSizeName()+"-cup",
 					Main.getProperties().pregnancyBreastGrowthLimit, 0, 100,
 					CupSize.getCupSizeFromInt(Main.getProperties().pregnancyUdderGrowthLimit).getCupSizeName()+"-cup",
@@ -3109,9 +3109,9 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getBreastsContentPreferenceVariableDiv(
 					"PREGNANCY_LACTATION",
 					PresetColour.BASE_YELLOW,
-					"Average Pregnancy Lactation",
-					"Set the <b>average</b> increase in lactation that characters will gain as a result of each pregnancy. Actual lactation increase will be within "
-							+Units.fluid(Main.getProperties().pregnancyLactationIncreaseVariance)+" of this value.",
+					"Средняя беременность и лактация",
+					"Установите <b>среднее</b> увеличение лактации, которое персонажи получат в результате каждой беременности. Фактическое увеличение лактации будет в пределах "
+							+Units.fluid(Main.getProperties().pregnancyLactationIncreaseVariance)+" из этого значения.",
 					Main.getProperties().pregnancyLactationIncrease == 0
 							?"[style.boldDisabled(Disabled)]"
 							:Units.fluid(Main.getProperties().pregnancyLactationIncrease),
@@ -3124,8 +3124,8 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getBreastsContentPreferenceVariableDiv(
 					"PREGNANCY_LACTATION_LIMIT",
 					PresetColour.BASE_YELLOW_LIGHT,
-					"Pregnancy Lactation Limit",
-					"Set the maximum limit of lactation that characters will gain from pregnancies.",
+					"Предел лактации при беременности",
+					"Установите максимальный предел лактации, который персонажи получат в результате беременностей.",
 					Units.fluid(Main.getProperties().pregnancyLactationLimit, Units.ValueType.PRECISE, Units.UnitType.SHORT),
 					Main.getProperties().pregnancyLactationLimit, 0, Lactation.SEVEN_MONSTROUS_AMOUNT_POURING.getMaximumValue(),
 					Units.fluid(Main.getProperties().pregnancyUdderLactationLimit, Units.ValueType.PRECISE, Units.UnitType.SHORT),
@@ -3134,8 +3134,8 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getBreastsContentPreferenceVariableDiv(
 					"BREAST_SIZE_PREFERENCE",
 					PresetColour.NIPPLES,
-					"Cup Size Preference",
-					"Affects randomly-generated NPCs' cup sizes (will not be reduced to below AA-cup).",
+					"Размер чашки",
+					"Влияет на случайные размеры чашек персонажей (не будет уменьшено до размера меньше AA-чашки).",
 					(Main.getProperties().breastSizePreference>=0?"+":"")+Main.getProperties().breastSizePreference,
 					Main.getProperties().breastSizePreference, -20, 20,
 					(Main.getProperties().udderSizePreference>=0?"+":"")+Main.getProperties().udderSizePreference,
@@ -3144,8 +3144,8 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getContentPreferenceVariableDiv(
 					"PENIS_SIZE_PREFERENCE",
 					PresetColour.PENIS,
-					"Penis Size Preference",
-					"Affects randomly-generated NPCs' penis sizes (will not be reduced to below "+Units.size(8)+").",
+					"Размер пениса",
+					"Влияет на случайные размеры пенисов персонажей (не будет уменьшено до размера меньше "+Units.size(8)+").",
 					(Main.getProperties().penisSizePreference>=0?"+":"")+Units.size(Main.getProperties().penisSizePreference, Units.ValueType.PRECISE, Units.UnitType.SHORT),
 					Main.getProperties().penisSizePreference,
 					-20,
@@ -3155,7 +3155,7 @@ public class OptionsDialogue {
 					"TRAP_PENIS_SIZE_PREFERENCE",
 					PresetColour.BASE_PINK_LIGHT,
 					Util.capitaliseSentence(Gender.N_P_TRAP.getName())+" penis size",
-					"The penis size of randomly-generated "+Gender.N_P_TRAP.getName()+"s. 100% represents an unaltered size. Testicle size and cum production will also be altered in proportion to this setting.",
+					"Размер пениса случайно сгенерированного "+Gender.N_P_TRAP.getName()+"s. 100% представляет собой неизмененный размер. Размер яичек и производство спермы также будут изменены пропорционально этому параметру.",
 					(100+Main.getProperties().trapPenisSizePreference)+"%",
 					Main.getProperties().trapPenisSizePreference,
 					-90,
@@ -3164,9 +3164,9 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getSkinColourContentPreferenceVariableDiv(
 					"SKIN_COLOUR_PREFERENCE",
 					PresetColour.RACE_HUMAN,
-					"Skin Colour Preference",
-					"Affects the weighting of human skin colour for randomly-generated NPCs."
-							+" This does not affect 'Greater' furry NPCs, as they have no human skin coverings."));
+					"Цвет кожи",
+					"Влияет на вес человеческой кожи для случайно сгенерированных NPC."
+							+"Это не влияет на 'Больше' пушистых NPC, так как у них нет человеческой кожи."));
 			
 			return UtilText.nodeContentSB.toString();
 		}

@@ -9,5 +9,8 @@
     "res/txt/misc/quickTransformations.xml",
     "res/txt/misc/slaveDialogue.xml"
   ],
-  "translated_java": []
+  "translated_java": [
+    "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
+    "src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java"
+  ]
 }
