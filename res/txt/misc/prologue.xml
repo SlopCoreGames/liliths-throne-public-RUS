@@ -1,84 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dialogue>
 
-	<htmlContent tag="INTRO_FEMALE"><![CDATA[
-	<p>
-		As the two of you talk about your sexual backgrounds, you find yourself increasingly unable to control your arousal, and from the desperate look in [prologueFemale.namePos] eyes, she's having the same problem as you are. Stepping forwards, she half-speaks, half-moans, [prologueFemale.speech(All this talk's got me pretty turned on... I don't usually do things like this, but everyone's busy around the stage right now. I'm sure one of the rooms around here is empty, if you want to have some fun...)]
-	</p>
-	<p>
-		[prologueFemale.Name] is right; everyone who's present for the event seems to be clustered around the stage on the far side of the room. There'd be nothing stopping you and her from sneaking off and having a little fun in one of the empty rooms...
+	<htmlContent tag="INTRO_FEMALE"><![CDATA[<p>
+		Когда вы двое разговариваете о своем сексуальном опыте, вы обнаруживаете, что все больше не можете контролировать свое возбуждение, и по отчаянному взгляду в глазах [prologueFemale.namePos], у нее тоже проблемы с контролем. Шагая вперед, она наполовину говорит, наполовину стонет, [prologueFemale.speech(Все эти разговоры так меня возбудили... Я обычно не делаю такие вещи, но сейчас все заняты на сцене. Я уверен, что одна из комнат здесь пуста, если вы хотите повеселиться...)]
+	</p><p>
+		[prologueFemale.Name] прав; все, кто присутствует на мероприятии, кажутся сгруппированными вокруг сцены на дальнем конце комнаты. Ничто не мешает вам и ей ускользнуть и немного повеселиться в одной из пустых комнат...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_MALE"><![CDATA[
-	<p>
-		As the two of you talk about your sexual backgrounds, you find yourself increasingly unable to control your arousal, and from the desperate look in [prologueMale.namePos] eyes, he's having the same problem as you are. Stepping forwards, he half-speaks, half-groans, [prologueMale.speech(All this talk's got me pretty turned on... I don't usually do things like this, but everyone's busy around the stage right now. I'm sure one of the rooms around here is empty, if you want to have some fun...)]
-	</p>
-	<p>
-		[prologueMale.Name] is right; everyone who's present for the event seems to be clustered around the stage on the far side of the room. There'd be nothing stopping you and him from sneaking off and having a little fun in one of the empty rooms...
+	<htmlContent tag="INTRO_MALE"><![CDATA[<p>
+		Пока вы с ним разговариваете о вашем сексуальном опыте, вы замечаете, что не можете контролировать свое Возбуждение, и по отчаянному взгляду в глазах [prologueMale.namePos], он испытывает ту же проблему, что и вы. Сделав шаг вперед, он в полуголосе, полушепоте говорит: [prologueMale.speech(Все это разговоры заставили меня сильно возбудиться... Я обычно не занимаюсь такими вещами, но все заняты вокруг сцены прямо сейчас. Я уверен, что одна из комнат здесь пуста, если вы хотите немного повеселиться...)]
+	</p><p>
+		[prologueMale.Name] прав; все, кто присутствует на мероприятии, кажутся сгруппированными вокруг сцены на дальнем конце комнаты. Ничто не мешает вам и ему ускользнуть и немного повеселиться в одной из пустых комнат...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_EMPTY_ROOM_FEMALE"><![CDATA[
-	<p>
-		Grinning at [prologueFemale.name], you reach down and take hold of her hand, before leading her off towards a quiet, shaded doorway nearby. [pc.speech(This looks like it'll be empty...)]
-	</p>
-	<p>
-		[prologueFemale.Name] giggles at your observation, before skipping forwards and moaning into your ear, [prologueFemale.speech(~Mmm!~ This is going to be good!)]
-	</p>
-	<p>
-		Ignoring the sign which reads 'Staff Only', you push the heavy oaken door ajar and peer inside, smiling to yourself as you discover that the room beyond is pitch black; proof that it's completely empty. Pulling [prologueFemale.name] inside, you flick the lights on as you close the door behind you.
-	</p>
-	<p>
-		The room that you find yourself in appears to be some sort of office, and from the numerous ceiling-height bookshelves lining the walls, the rich mahogany desk, and the pair of expensive-looking leather sofas, you guess that it belongs to someone very important.
-	</p>
-	<p>
-		[prologueFemale.speech(I've never been fucked in an office as nice as this one before,)] [prologueFemale.name] giggles again, before stepping forwards and pressing her full, plump lips against yours. Instantly, she slides her tongue into your mouth, reaching up to take hold of your head as you passionately start to kiss one another...
+	<htmlContent tag="INTRO_EMPTY_ROOM_FEMALE"><![CDATA[<p>
+		Улыбаясь [prologueFemale.name], ты спускаешь руку и берешь ее за руку, затем ведешь ее к тихому, затененному дверному проему неподалеку. [pc.speech(Похоже, здесь будет пусто...)]
+	</p><p>
+		[prologueFemale.Name] хихикает над твоим замечанием, прежде чем подпрыгнуть и зашептаться тебе в ухо, [prologueFemale.speech(~Mmm!~ Это будет здорово!)]
+	</p><p>
+		Не обращая внимания на табличку "Только для персонала", ты приоткрываешь тяжелую дубовую дверь и заглядываешь внутрь, улыбаясь, когда замечаешь, что комната за дверью совершенно темная; доказательство того, что она полностью пуста. Втягивая [prologueFemale.name] внутрь, ты включаешь свет, закрывая дверь за собой.
+	</p><p>
+		Комната, в которой вы оказались, кажется, является своего рода кабинетом, и по многочисленным книжным полкам, идущим вдоль стен, богатому масляному столу и паре дорогих кожаных диванов, вы предполагаете, что она принадлежит кому-то очень важному.
+	</p><p>
+		[prologueFemale.speech(Я никогда не трахалась в таком офисе, как этот, раньше,)] [prologueFemale.name] снова хихикает, прежде чем сделать шаг вперед и прижать свои полные, пухлые губы к твоим. Сразу же она засовывает свой язык в твой рот, поднимая его, чтобы взять тебя за голову, и вы начинаете страстно целоваться...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_EMPTY_ROOM_MALE"><![CDATA[
-	<p>
-		Grinning at [prologueMale.name], you allow him to reach down and take hold of your hand, before being led off towards a quiet, shaded doorway nearby. [prologueMale.speech(This looks like it'll be empty...)]
+	<htmlContent tag="INTRO_EMPTY_ROOM_MALE"><![CDATA[<p>
+		Улыбаясь [prologueMale.name], ты позволяешь ему протянуть руку и взять твою за руку, прежде чем тебя ведут к тихому, затененному дверному проему неподалеку. [prologueMale.speech(Похоже, здесь будет пусто...)]
 	</p>
 	<p>
 		You can't help but smile at his observation, before skipping forwards and [pc.moaning] into his ear, [pc.speech(~Mmm!~ This is going to be good!)]
-	</p>
-	<p>
-		Ignoring the sign which reads 'Staff Only', [prologueMale.name] pushes the heavy oaken door ajar and peers inside, smiling to himself as you both see that the room beyond is pitch black; proof that it's completely empty. Pulling you inside, he flicks the lights on before closing the door behind you.
-	</p>
-	<p>
-		The room that you find yourself in appears to be some sort of office, and from the numerous ceiling-height bookshelves lining the walls, the rich mahogany desk, and the pair of expensive-looking leather sofas, you guess that it belongs to someone very important.
-	</p>
-	<p>
-		[prologueMale.speech(I've never fucked anyone in an office as nice as this one before,)] [prologueMale.name] grins, before stepping forwards and pressing his lips against yours. Instantly, he pushes his tongue into your mouth, reaching around to squeeze your [pc.ass+] as you passionately start to kiss one another...
+	</p><p>
+		Не обращая внимания на табличку "Только для персонала", [prologueMale.name] отпирает тяжелую дубовую дверь и заглядывает внутрь, улыбаясь, когда вы оба видите, что комната за дверью совершенно темная; доказательство того, что она полностью пуста. Втягивая вас внутрь, он включает свет, прежде чем закрыть дверь за вами.
+	</p><p>
+		Комната, в которой вы оказались, кажется, является своего рода кабинетом, и по многочисленным книжным полкам, идущим по стенам, богатому масляному столу и паре дорогих кожаных диванов, вы предполагаете, что она принадлежит кому-то очень важному.
+	</p><p>
+		[prologueMale.speech(Я никогда не трахался с кем-либо в таком офисе, как этот,)] [prologueMale.name] хихикает, прежде чем сделать шаг вперед и прижать свои губы к твоим. Сразу же он впивается в твой рот, проникая туда своим языком, и одновременно с этим он сжимает твою [pc.ass+], пока вы страстно целуетесь...
 	</p>
 	]]>
 	</htmlContent>
 
 	<!-- Sex with female character: -->
 	
-	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_MALE_START_DOM"><![CDATA[
-	#IF(pc.isFeminine() && !pc.isPenisBulgeVisible() && !pc.isTesticleBulgeVisible())
+	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_MALE_START_DOM"><![CDATA[#IF(pc.isFeminine() && !pc.isPenisBulgeVisible() && !pc.isTesticleBulgeVisible())
+<p>
+Ты втягиваешь [prologueFemale.name] в свое [pc.breasts], отчаянно [pc.moaning] в ее рот, когда ты доминирующе ощупываешь и ласкаешь тело [npc.her]. Ее собственные руки опускаются между твоими ногами, и когда она обнаруживает, что у тебя есть член, она прерывает поцелуй и выдает возбужденный смешок. Вынимая что-то из своей сумочки, она вставляет это в твои руки и говорит: [prologueFemale.speech(Я на таблетках, так что не волнуйся о том, что я забеременею. Если ты действительно хочешь быть уверен, то можешь надеть это...)]
+</p>#ELSE
 		<p>
-			You pull [prologueFemale.name] into your [pc.breasts], desperately [pc.moaning] into her mouth as you dominantly grope and fondle [npc.her] body. Her own hands drop down between your legs, and as she discovers that you've got a cock, she breaks off the kiss and lets out an excited giggle. Pulling something out of her purse, she pushes it into your hands and says, [prologueFemale.speech(I'm on the pill, so don't worry about getting me knocked up. If you really want to be sure, though, you can wear this...)]
-		</p>
-	#ELSE
-		<p>
-			You pull [prologueFemale.name] into your [pc.breasts], desperately [pc.moaning] into her mouth as you dominantly grope and fondle [npc.her] body. Breaking off the kiss for a moment, she pulls something out of her purse, before pushing it into your hands and saying, [prologueFemale.speech(I'm on the pill, so don't worry about getting me knocked up. If you really want to be sure, though, you can wear this...)]
-		</p>
-		<p>
-			You look down to see that you've just been given a condom, still sealed in its small square packet...
-		</p>
-	#ENDIF
+			Ты втягиваешь [prologueFemale.name] в свою [pc.breasts], отчаянно [pc.moaning] в её рот, когда ты доминирующе трогаешь и ласкаешь тело [npc.her]. Прерывая поцелуй на мгновение, она достаёт что-то из сумочки, прежде чем вкладывает это в твои руки и говорит: [prologueFemale.speech(Я на таблетках, так что не волнуйся о том, что я забеременею. Если ты действительно хочешь быть уверен, то можешь надеть это...)]
+		</p><p>
+			Ты сможешь опустить взгляд и увидеть, что тебе только что дали презерватив, все еще запечатанный в маленькой квадратной упаковке...
+		</p>#ENDIF
 	<div class='container-full-width' style='text-align:center;'>
-		<i>If you'd like to use the condom, open your inventory (by pressing 'i') and select it from the menu.
-		<br/>(Your penis will need to be exposed before it can be used!)</i>
-	</div>
-	]]>
+		<i>Если вы хотите использовать презерватив, откройте свой инвентарь (нажимая 'i') и выберите его из меню.
+		<br/>(Ваш пенис должен быть обнажен, прежде чем его можно будет использовать!)</i>
+	</div>]]>
 	</htmlContent>
 
 	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_FEMALE_START_DOM"><![CDATA[
@@ -88,447 +70,342 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_MALE_START_SUB"><![CDATA[
-	#IF(pc.isFeminine() && !pc.isPenisBulgeVisible() && !pc.isTesticleBulgeVisible())
+	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_MALE_START_SUB"><![CDATA[#IF(pc.isFeminine() && !pc.isPenisBulgeVisible() && !pc.isTesticleBulgeVisible())
 		<p>
-			Not wanting to be the one to take the lead, you lean into [prologueFemale.namePos] [prologueFemale.breasts], before letting out a desperate [pc.moan] and begging her to fuck you. Smirking at your submissively display, [prologueFemale.name] presses her lips against yours, before thrusting her tongue into your mouth as she dominantly gropes and fondles your body. Her hands drop down between your legs, and as she discovers that you've got a cock, she breaks off the kiss and lets out an excited giggle. Pulling something out of her purse, she pushes it into your hands and says, [prologueFemale.speech(I'm on the pill, so don't worry about getting me knocked up. If you really want to be sure, though, you can wear this...)]
-		</p>
-	#ELSE
+			Не желая быть той, кто возьмет инициативу в свои руки, ты прижимаешься к [prologueFemale.namePos] [prologueFemale.breasts], прежде чем выпустить отчаянное [pc.moan] и умолять ее трахнуть тебя. Улыбаясь твоей покорности, [prologueFemale.name] прижимает свои губы к твоим, прежде чем впивается языком в твою рот, одновременно доминируя и трогая твое тело. Ее руки опускаются вниз между твоими ногами, и когда она обнаруживает, что у тебя есть член, она прерывает поцелуй и выдает возбужденный смешок. Вытащив что-то из своей сумочки, она вставляет это в твои руки и говорит: [prologueFemale.speech(Я на таблетках, так что не волнуйся о том, что я забеременею. Если ты действительно хочешь быть уверен, то можешь надеть это...)]
+		</p>#ELSE
 		<p>
-			Not wanting to be the one to take the lead, you lean into [prologueFemale.namePos] [prologueFemale.breasts], before letting out a desperate [pc.moan] and begging her to fuck you. Smirking at your submissively display, [prologueFemale.name] presses her lips against yours, before thrusting her tongue into your mouth as she dominantly gropes and fondles your body. Breaking off the kiss for a moment, she pulls something out of her purse, before pushing it into your hands and saying, [prologueFemale.speech(I'm on the pill, so don't worry about getting me knocked up. If you really want to be sure, though, you can wear this...)]
-		</p>
-		<p>
-			You look down to see that you've just been given a condom, still sealed in its small square packet...
-		</p>
-	#ENDIF
+			Не желая быть тем, кто берет на себя инициативу, ты прижимаешься к [prologueFemale.namePos] [prologueFemale.breasts], прежде чем выпустить отчаянное [pc.moan] и умолять ее трахнуть тебя. Улыбаясь твоей подчиненной демонстрации, [prologueFemale.name] прижимает свои губы к твоим, прежде чем впивать свой язык в твою рот, одновременно доминируя и трогая твое тело. Прервав поцелуй на мгновение, она достает что-то из своей сумочки, прежде чем вкладывает это тебе в руки и говорит: [prologueFemale.speech(Я на таблетках, так что не волнуйся о том, что я забеременею. Но если ты действительно хочешь быть уверен, то можешь надеть это...)]
+		</p><p>
+			Ты сможешь увидеть, что тебе только что дали презерватив, все еще запечатанный в маленькую квадратную упаковку...
+		</p>#ENDIF
 	<div class='container-full-width' style='text-align:center;'>
-		<i>If you'd like to use the condom, open your inventory (by pressing 'i') and select it from the menu.<br/>
-		(Your penis will need to be exposed before it can be used!)</i>
-	</div>
-	]]>
+		<i>Если вы хотите использовать презерватив, откройте свой инвентарь (нажав 'i') и выберите его из меню.<br/>
+		(Ваш пенис должен быть оголен, прежде чем его можно будет использовать!)</i>
+	</div>]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_FEMALE_START_SUB"><![CDATA[
-	<p>
-		Not wanting to be the one to take the lead, you lean into [prologueFemale.namePos] [prologueFemale.breasts], before letting out a desperate [pc.moan] and begging her to fuck you. Smirking at your submissively display, [prologueFemale.name] presses her lips against yours, before thrusting her tongue into your mouth as she dominantly gropes and fondles your body...
+	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_FEMALE_START_SUB"><![CDATA[<p>
+		Не желая быть тем, кто берет на себя инициативу, ты прижимаешься к [prologueFemale.namePos] [prologueFemale.breasts], прежде чем выпустить отчаянное [pc.moan] и умолять ее трахнуть тебя. Улыбаясь твоей подчиненной демонстрации, [prologueFemale.name] прижимает свои губы к твоим, прежде чем впивать свой язык в твою рот, одновременно доминируя и трогая твое тело...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<!-- Sex with male character: -->
 	
-	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_MALE_START_DOM"><![CDATA[
-	<p>
-		Deciding to take charge, you dominantly pull [prologueMale.name] into your torso, before thrusting your tongue into his mouth as you grope and fondle his body. Breaking off the kiss for a moment, [prologueMale.name] pulls something out of his pocket, before pushing it into your hands and saying, [prologueMale.speech(I'd rather you didn't, but if you want to, you can wear this.)]
-	</p>
-		#IF(pc.hasPenis())
+	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_MALE_START_DOM"><![CDATA[<p>
+		Решив взять дело в свои руки, ты доминирующе тянешь [prologueMale.name] к себе, прежде чем впиться языком в его рот, одновременно ощупывая и лаская его тело. На мгновение прервав поцелуй, [prologueMale.name] достает что-то из кармана, прежде чем вкладывает это тебе в руки и говорит: [prologueMale.speech(Я бы предпочел, чтобы ты этого не делала, но если хочешь, можешь надеть это.)]
+	</p>#IF(pc.hasPenis())
 		  #IF(pc.isFeminine() && !pc.isPenisBulgeVisible() && !pc.isTesticleBulgeVisible())
-		    You look down to see that you've just been given a condom, still sealed in its small square packet. It's a good thing that you always keep a condom in your purse as well, so that you've got one for both [prologueMale.name] and yourself if need be.
+		    Ты смотрю вниз и вижу, что тебе только что дали презерватив, все еще запечатанный в маленькую квадратную упаковку. Это хорошо, что у тебя всегда есть презерватив в сумочке, так что у тебя есть один для [prologueMale.name] и для себя, если понадобится.
 		  #ELSE
-			You look down to see that you've just been given a pair of condoms, still sealed in their small square packets.
+			Ты смотрю вниз и вижу, что тебе только что дали пару презервативов, все еще запечатанных в маленькие квадратные упаковки.
 		  #ENDIF
 		#ELSE
-			You look down to see that you've just been given a condom, still sealed in its small square packet.
+			Ты смотрю вниз и вижу, что тебе только что дали презерватив, все еще запечатанный в маленькую квадратную упаковку.
 		#ENDIF
-	</p>
-	<div class='container-full-width' style='text-align:center;'>
+	</p><div class='container-full-width' style='text-align:center;'>
 		#IF(pc.hasPenis())
-			<i>If you'd like to use the condoms, open your inventory (by pressing 'i') and select them from the menu.<br/>([prologueMale.namePos] penis will need to be exposed before it can be equipped onto him, and the same applies for if you want to equip one yourself!)</i>
+			<i>Если вы хотите использовать презервативы, откройте свой инвентарь (нажимая 'i') и выберите их из меню.<br/>([prologueMale.namePos] пенис должен быть обнажен, прежде чем его можно будет надеть на него, и то же самое касается, если вы хотите надеть его на себя!)</i>
 		#ELSE
-			<i>If you'd like to use the condom, open your inventory (by pressing 'i') and select it from the menu.<br/>([prologueMale.namePos] penis will need to be exposed before it can be used!)</i>
+			<i>Если вы хотите использовать презерватив, откройте свой инвентарь (нажимая 'i') и выберите его из меню.<br/>([prologueMale.namePos] пенис должен быть обнажен, прежде чем его можно будет использовать!)</i>
 		#ENDIF
-	</div>
-	]]>
+	</div>]]>
 	</htmlContent>
 	
-	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_MALE_START_SUB"><![CDATA[
-	<p>
-		You allow [prologueMale.name] to pull you into his strong, masculine torso, desperately moaning into his mouth as he dominantly gropes and fondles your body. Breaking off the kiss for a moment, he pulls something out of his pocket, before pushing it into your hands and saying, [prologueMale.speech(I'd rather not, but if you want me to, I can wear this.)]
-	</p>
-		#IF(pc.hasPenis())
+	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_MALE_START_SUB"><![CDATA[<p>
+		Ты позволяешь [prologueMale.name] втянуть тебя в его сильное, мужественное тело, отчаянно стоная в его рот, пока он доминирует, ощупывая и лаская твое тело. Прерывая поцелуй на мгновение, он достает что-то из кармана, прежде чем вложить это в твои руки и сказать: [prologueMale.speech(Я бы не хотел, но если ты хочешь, я могу надеть это.)]
+	</p>#IF(pc.hasPenis())
 		  #IF(pc.isFeminine() && !pc.isPenisBulgeVisible() && !pc.isTesticleBulgeVisible())
-		    You look down to see that you've just been given a condom, still sealed in its small square packet. It's a good thing that you always keep a condom in your purse as well, so that you've got one for both [prologueMale.name] and yourself if need be.
+		    Ты смотрю вниз и вижу, что тебе только что дали презерватив, все еще запечатанный в маленькой квадратной упаковке. Это хорошо, что у тебя всегда есть презерватив в сумочке, так что у тебя есть один для [prologueMale.name] и для себя, если это необходимо.
 		  #ELSE
-			You look down to see that you've just been given a pair of condoms, still sealed in their small square packets.
+			Ты смотрю вниз и вижу, что тебе только что дали пару презервативов, все еще запечатанных в маленьких квадратных упаковках.
 		  #ENDIF
 		#ELSE
-			You look down to see that you've just been given a condom, still sealed in its small square packet.
+			Ты смотрю вниз и вижу, что тебе только что дали презерватив, все еще запечатанный в маленькой квадратной упаковке.
 		#ENDIF
-	</p>
-	<div class='container-full-width' style='text-align:center;'>
+	</p><div class='container-full-width' style='text-align:center;'>
 		#IF(pc.hasPenis())
-			<i>If you'd like to use the condoms, open your inventory (by pressing 'i') and select them from the menu.<br/>([prologueMale.namePos] penis will need to be exposed before it can be equipped onto him, and the same applies for if you want to equip one yourself!)</i>
+			<i>Если вы хотите использовать презервативы, откройте свой инвентарь (нажимая 'i') и выберите их из меню.<br/>([prologueMale.namePos] пенис должен быть обнажен, прежде чем его можно будет надеть на него, и то же самое касается, если вы хотите надеть его на себя!)</i>
 		#ELSE
-			<i>If you'd like to use the condom, open your inventory (by pressing 'i') and select it from the menu.<br/>([prologueMale.namePos] penis will need to be exposed before it can be used!)</i>
+			<i>Если вы хотите использовать презерватив, откройте свой инвентарь (нажимая 'i') и выберите его из меню.<br/>([prologueMale.namePos] пенис должен быть обнажен, прежде чем его можно будет использовать!)</i>
 		#ENDIF
-	</div>
-	]]>
+	</div>]]>
 	</htmlContent>
 
-	<htmlContent tag="SEX_CLOTHING_MANAGEMENT_TIP"><![CDATA[
-	<div class='container-full-width' style='text-align:center;'>
-		<i>You can click on both your and [npc.namePos] clothing (in the bottom-left and bottom-right of the screen) to manage clothing during sex!</i>
-	</div>
-	]]>
+	<htmlContent tag="SEX_CLOTHING_MANAGEMENT_TIP"><![CDATA[<div class='container-full-width' style='text-align:center;'>
+		<i>Вы можете нажимать на свою одежду и одежду [npc.namePos] (в левом и правом нижних углах экрана), чтобы управлять одеждой во время секса!</i>
+	</div>]]>
 	</htmlContent>
 
-	<htmlContent tag="AFTER_SEX_FEMALE_SATISFIED"><![CDATA[
-	<p>
-		[prologueFemale.Name] sinks down onto one of the leather sofas with a sigh, [prologueFemale.speech(Fuck... That was good... I'm going to need some time to rest...)]
-	</p>
-	<p>
-		Grinning down at her as her breasts heave up and down from exertion, you reply, [pc.speech(Yeah, that was good. I'll go on ahead, I'll catch up with you later!)]
+	<htmlContent tag="AFTER_SEX_FEMALE_SATISFIED"><![CDATA[<p>
+		[prologueFemale.Name] опускается на один из кожаных диванов с вздохом, [prologueFemale.speech(Черт... Это было хорошо... Мне нужно время, чтобы отдохнуть...)]
+	</p><p>
+		Улыбаясь ей, ты замечаешь, как её грудь поднимается и опускается от напряжения, и отвечаешь: [pc.speech(Да, это было хорошо. Я пойду впереди, догоню тебя позже!)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="AFTER_SEX_FEMALE_NOT_SATISFIED"><![CDATA[
-	<p>
-		[prologueFemale.Name] sinks down onto one of the leather sofas with a sigh, [prologueFemale.speech(Fuck... That really wasn't satisfying at all... I'm going to finish myself off...)]
-	</p>
-	<p>
-		Grinning down at her as she starts frantically fingering herself, you reply, [pc.speech(Yeah, sure. I'll catch up with you later!)]
+	<htmlContent tag="AFTER_SEX_FEMALE_NOT_SATISFIED"><![CDATA[<p>
+		[prologueFemale.Name] опускается на один из кожаных диванов с вздохом, [prologueFemale.speech(Черт... Это совсем не удовлетворило... Я закончу себя...)]
+	</p><p>
+		Улыбаясь ей, ты замечаешь, как она начинает лихорадочно трогать себя, и отвечаешь: [pc.speech(Да, конечно. Я догоню тебя позже!)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="AFTER_SEX_MALE_SATISFIED"><![CDATA[
-	<p>
-		[prologueMale.Name] sinks down onto one of the leather sofas with a sigh, [prologueMale.speech(Fuck... That was good... I'm going to need some time to rest...)]
-	</p>
-	<p>
-		Grinning down at him as his chest heaves up and down from exertion, you reply, [pc.speech(Yeah, that was good. I'll go on ahead, I'll catch up with you later!)]
+	<htmlContent tag="AFTER_SEX_MALE_SATISFIED"><![CDATA[<p>
+		[prologueMale.Name] опускается на один из кожаных диванов с вздохом, [prologueMale.speech(Черт... Это было здорово... Мне нужно время, чтобы отдохнуть...)]
+	</p><p>
+		Улыбаясь, ты сможешь увидеть, как его грудь поднимается и опускается от напряжения. Ты отвечаешь: [pc.speech(Да, это было здорово. Я пойду впереди, я догоню тебя позже!)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="AFTER_SEX_MALE_NOT_SATISFIED"><![CDATA[
-	<p>
-		[prologueMale.Name] sinks down onto one of the leather sofas with a sigh, [prologueMale.speech(Fuck... That really wasn't satisfying at all... I'm going to finish myself off...)]
-	</p>
-	<p>
-		Grinning down at him as he starts frantically masturbating, you reply, [pc.speech(Yeah, sure. I'll catch up with you later!)]
+	<htmlContent tag="AFTER_SEX_MALE_NOT_SATISFIED"><![CDATA[<p>
+		[prologueMale.Name] опускается на один из кожаных диванов с вздохом, [prologueMale.speech(Черт... Это совсем не удовлетворило... Я собираюсь закончить себя...)]
+	</p><p>
+		Улыбаясь, ты смотришь на него, пока он начинает лихорадочно мастурбировать, и отвечаешь: [pc.speech(Да, конечно. Я догоню тебя позже!)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="AFTER_SEX"><![CDATA[
-	<p>
-		Leaving your partner behind, you step out of the office, before heading off towards the stage. As you approach the large crowd that's gathered before it, you see your aunt Lily off to one side, pacing impatiently back and forth. From the way she's frantically wringing her hands and glancing this way and that, you can tell that she's been flustered by something.
-	</p>
-	<p>
-		[pc.speech(Hi, Lily!)] you call out, walking towards her.
-	</p>
-	<p>
-		[lilaya.speech([pc.Name]! There you are! I've been looking everywhere for you,)] your aunt calls out, bounding over towards you and sighing with relief. [lilaya.speech(I really need your help!)]
-	</p>
-	<p>
-		Giving her a reassuring smile, you reply, [pc.speech(Don't worry, Lily, I can help. Is this about the opening being delayed?)]
-	</p>
-	<p>
-		[lilaya.speech(Yes! This is to do with the delay! Arthur's gone missing, and I can't start without him! Everyone's crowding me asking questions, so I can't go out and look for him myself.	 Please, please <i>please</i> can you go and find him for me?)]
-	</p>
-	<p>
-		Lily's puppy-dog eyes always were too much for you to say no to, and you find yourself agreeing to do as she asks, [pc.speech(Ok, Lily, I'll find him for you, don't worry.)]
-	</p>
-	<p>
-		As Lily starts thanking you, someone calls out from behind her, asking her to return to the stage. Thanking you once more, she then rushes off, leaving you to do as you said you would...
+	<htmlContent tag="AFTER_SEX"><![CDATA[<p>
+		Оставив свою партнершу, ты выходишь из офиса и направляешься к сцене. Когда ты подходишь к большой толпе, собравшейся перед ней, ты видишь свою тетю Лилию в стороне, которая нетерпеливо ходит туда-сюда. По тому, как она суетливо сжимает руки и оглядывается по сторонам, можно понять, что ее что-то смутило.
+	</p><p>
+		[pc.speech(Привет, Лили!)] ты кричишь, направляясь к ней.
+	</p><p>
+		[lilaya.speech([pc.Name]! Вот ты! Я искала тебя повсюду,)] твоя тетя зовет тебя, подбегая к тебе и вздыхая с облегчением. [lilaya.speech(Мне очень нужна твоя помощь!)]
+	</p><p>
+		Улыбаясь, ты говоришь: [pc.speech(Не волнуйся, Лили, я могу помочь. Это связано с задержкой открытия?)]
+	</p><p>
+		[lilaya.speech(Да! Это связано с задержкой! Артур пропал, и я не могу начать без него! Все окружают меня вопросами, поэтому я не могу выйти и искать его сам. Пожалуйста, пожалуйста <i>пожалуйста</i>, можешь ты пойти и найти его для меня?)]
+	</p><p>
+		Глаза Лили, как у щенка, всегда были слишком привлекательными, чтобы отказать ей, и вы соглашаетесь сделать, что она просит, [pc.speech(Хорошо, Лили, я найду его для тебя, не волнуйся.)]
+	</p><p>
+		Лили начинает благодарить вас, но кто-то зовёт её с улицы, прося вернуться на сцену. Она ещё раз благодарит вас и уходит, оставив вас делать то, что вы обещали...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_SECOND_THOUGHTS_FEMALE"><![CDATA[
-	<p>
-		In a sudden moment of clarity, you realise that what you're about to do isn't a very good idea, and you step away from [prologueFemale.name]. [pc.speech(I'm sorry, but on second thoughts, I don't think this a good idea. Anyway, I'm sure the presentation will be starting soon...)]
-	</p>
-	<p>
-		[prologueFemale.speech(Eugh... Fine...)] [prologueFemale.name] sighs, before collapsing down onto one of the leather sofas. [prologueFemale.speech(You go on ahead then, I need a moment to calm down.)]
+	<htmlContent tag="INTRO_SECOND_THOUGHTS_FEMALE"><![CDATA[<p>
+		Внезапно, в момент просветления, вы понимаете, что то, что вы собираетесь сделать, не очень хорошая идея, и отходите от [prologueFemale.name]. [pc.speech(Мне жаль, но, подумав, я не думаю, что это хорошая идея. В любом случае, я уверен, что презентация начнется вскоре...)]
+	</p><p>
+		[prologueFemale.speech(Эх... Ладно...)] [prologueFemale.name] вздыхает, прежде чем упасть на один из кожаных диванов. [prologueFemale.speech(Ты иди впереди, мне нужно немного успокоиться.)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_SECOND_THOUGHTS_MALE"><![CDATA[
-	<p>
-		In a sudden moment of clarity, you realise that what you're about to do isn't a very good idea, and you step away from [prologueMale.name]. [pc.speech(I'm sorry, but on second thoughts, I don't think this a good idea. Anyway, I'm sure the presentation will be starting soon...)]
-	</p>
-	<p>
-		[prologueMale.speech(Eugh... Fine...)] [prologueMale.name] sighs, before collapsing down onto one of the leather sofas. [prologueMale.speech(You go on ahead then, I need a moment to calm down.)]
+	<htmlContent tag="INTRO_SECOND_THOUGHTS_MALE"><![CDATA[<p>
+		Внезапно, в момент просветления, ты понимаешь, что то, что ты собираешься сделать, не очень хорошая идея, и отступаешь от [prologueMale.name]. [pc.speech(Извините, но, подумав, я не думаю, что это хорошая идея. В любом случае, я уверен, что презентация начнется вскоре...)]
+	</p><p>
+		[prologueMale.speech(Эх... Ладно...)] [prologueMale.name] вздыхает, прежде чем упасть на один из кожаных диванов. [prologueMale.speech(Ты иди впереди, мне нужно немного успокоиться.)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_SECOND_THOUGHTS"><![CDATA[
-	<p>
-		Leaving your partner behind, you step out of the office, before heading off towards the stage. As you approach the large crowd that's gathered before it, you see your aunt Lily off to one side, pacing impatiently back and forth. From the way she's frantically wringing her hands and glancing this way and that, you can tell that she's been flustered by something.
-	</p>
-	<p>
-		[pc.speech(Hi, Lily!)] you call out, walking towards her.
-	</p>
-	<p>
-		[lilaya.speech([pc.Name]! There you are! I've been looking everywhere for you,)] your aunt calls out, bounding over towards you and sighing with relief. [lilaya.speech(I really need your help!)]
-	</p>
-	<p>
-		Giving her a reassuring smile, you reply, [pc.speech(Don't worry, Lily, I can help. Is this about the opening being delayed?)]
-	</p>
-	<p>
-		[lilaya.speech(Yes! This is to do with the delay! Arthur's gone missing, and I can't start without him! Everyone's crowding me asking questions, so I can't go out and look for him myself. Please, please <i>please</i> can you go and find him for me?)]
-	</p>
-	<p>
-		Lily's puppy-dog eyes always were too much for you to say no to, and you find yourself agreeing to do as she asks, [pc.speech(Ok, Lily, I'll find him for you, don't worry.)]
-	</p>
-	<p>
-		As Lily starts thanking you, someone calls out from behind her, asking her to return to the stage. Thanking you once more, she then rushes off, leaving you to do as you said you would...
+	<htmlContent tag="INTRO_SECOND_THOUGHTS"><![CDATA[<p>
+		Оставив свою партнершу, ты выходишь из офиса и направляешься к сцене. Когда ты подходишь к толпе, собравшейся перед ней, ты замечаешь, что твоя тетя Лили стоит в стороне, нетерпеливо вертясь из стороны в сторону. По тому, как она судорожно сжимает руки и оглядывается по сторонам, можно понять, что ее что-то беспокоит.
+	</p><p>
+		[pc.speech(Привет, Лили!)] ты кричишь, направляясь к ней.
+	</p><p>
+		[lilaya.speech([pc.Name]! Вот ты! Я искала тебя повсюду,)] твоя тетя зовет тебя, подбегая к тебе и вздыхая с облегчением. [lilaya.speech(Мне очень нужна твоя помощь!)]
+	</p><p>
+		Улыбаясь, ты говоришь: [pc.speech(Не волнуйся, Лили, я могу помочь. Это связано с задержкой открытия?)]
+	</p><p>
+		[lilaya.speech(Да! Это связано с задержкой! Артур пропал, и я не могу начать без него! Все окружают меня вопросами, поэтому я не могу выйти и искать его сам. Пожалуйста, пожалуйста <i>пожалуйста</i>, можешь ты пойти и найти его для меня?)]
+	</p><p>
+		Глаза Лили, как у щенка, всегда были слишком привлекательными, чтобы сказать ей "нет", и ты соглашаешься сделать то, о чём она просит, [pc.speech(Хорошо, Лили, я найду его для тебя, не волнуйся.)]
+	</p><p>
+		Лили начинает благодарить вас, но кто-то зовёт её с улицы, прося вернуться на сцену. Благодарив вас ещё раз, она уходит, оставив вас делать то, что вы обещали...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NO_FEMALE"><![CDATA[
-	<p>
-		Keeping your growing arousal under control, you step away from [prologueFemale.name]. [pc.speech(I don't think that's a good idea. Anyway, I'm sure the presentation will be starting soo-)]
-	</p>
-	<p>
-		[lilaya.speech([pc.Name]! There you are! I've been looking everywhere for you,)] a very familiar voice calls out, cutting your sentence short, [lilaya.speech(sorry if I'm interrupting, but I really need your help!)]
-	</p>
-	<p>
-		Turning towards the unmistakable voice of your aunt Lily, you give her a reassuring smile. [pc.speech(Don't worry, Lily, you're not interrupting. Is this about the opening being delayed?)]
-	</p>
-	<p>
-		[prologueFemale.speech(I see you're going to be busy, perhaps I'll catch you later,)] [prologueFemale.name] says, before walking off and leaving you alone with your aunt.
+	<htmlContent tag="INTRO_NO_FEMALE"><![CDATA[<p>
+		Сдерживая растущее возбуждение, ты отходишь от [prologueFemale.name]. [pc.speech(Я не думаю, что это хорошая идея. В любом случае, я уверен, что презентация начнется soo-)]
+	</p><p>
+		[lilaya.speech([pc.Name]! Вот ты! Я искала тебя везде,)] знакомый голос прерывает тебя, [lilaya.speech(извини, если я вмешиваюсь, но мне действительно нужна твоя помощь!)]
+	</p><p>
+		Обращаясь к неизменному голосу твоей тети Лили, ты даёшь ей успокаивающую улыбку. [pc.speech(Не волнуйся, Лили, ты не перебиваешь. Это про задержку открытия?)]
+	</p><p>
+		[прологЖенщина.реплика(Я вижу, что ты будешь занят, возможно, я догоню тебя позже,)] [prologueFemale.name] говорит, прежде чем уйти и оставить тебя наедине с твоей тетей.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NO_MALE"><![CDATA[
-	<p>
-		Keeping your growing arousal under control, you step away from [prologueMale.name]. [pc.speech(I don't think that's a good idea. Anyway, I'm sure the presentation will be starting soo-)]
-	</p>
-	<p>
-		[lilaya.speech([pc.Name]! There you are! I've been looking everywhere for you,)] a very familiar voice calls out, cutting your sentence short, [lilaya.speech(sorry if I'm interrupting, but I really need your help!)]
-	</p>
-	<p>
-		Turning towards the unmistakable voice of your aunt Lily, you give her a reassuring smile. [pc.speech(Don't worry, Lily, you're not interrupting. Is this about the opening being delayed?)]
-	</p>
-	<p>
-		[prologueMale.speech(I see you're going to be busy, perhaps I'll catch you later,)] [prologueMale.name] says, before walking off and leaving you alone with your aunt.
+	<htmlContent tag="INTRO_NO_MALE"><![CDATA[<p>
+		Сдерживая растущее возбуждение, ты отходишь от [prologueMale.name]. [pc.speech(Я не думаю, что это хорошая идея. В любом случае, я уверен, что презентация начнется soo-)]
+	</p><p>
+		[lilaya.speech([pc.Name]! Вот ты! Я искала тебя повсюду,)] знакомый голос перебивает тебя, [lilaya.speech(извини, если я перебиваю, но мне действительно нужна твоя помощь!)]
+	</p><p>
+	Обращаясь к неизменному голосу твоей тети Лили, ты даёшь ей успокаивающую улыбку. [pc.speech(Не волнуйся, Лили, ты не перебиваешь. Это про задержку открытия?)]
+	</p><p>
+		[прологМуж.speech(Я вижу, что ты будешь занят, возможно, я догоню тебя позже,)] [prologueMale.name] говорит, прежде чем уйти и оставить тебя наедине с твоей тетей.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NO"><![CDATA[
-	<p>
-		[lilaya.speech(Erm... goodbye!)] Lily awkwardly calls out, completely oblivious as to what was going on, before turning back to you. [lilaya.speech(Yes! This is to do with the delay! Arthur's gone missing, and I can't start without him! Everyone's crowding me asking questions, so I can't go out and look for him myself. Please, please <i>please</i> can you go and find him for me?)]
-	</p>
-	<p>
-		Lily's puppy-dog eyes always were too much for you to say no to, and you find yourself agreeing to do as she asks, [pc.speech(Ok, Lily, I'll find him for you, don't worry.)]
-	</p>
-	<p>
-		As Lily starts thanking you, someone calls out from behind her, asking her to return to the stage. Thanking you once more, she then rushes off, leaving you to do as you said you would...
+	<htmlContent tag="INTRO_NO"><![CDATA[<p>
+		[lilaya.speech(Эр... до свидания!)] Лили неловко кричит, совершенно не понимая, что происходит, прежде чем повернуться к вам. [lilaya.speech(Да! Это связано с задержкой! Артур пропал, и я не могу начать без него! Все окружают меня вопросами, поэтому я не могу выйти и сама искать его. Пожалуйста, пожалуйста <i>пожалуйста</i>, можете ли вы пойти и найти его для меня?)]
+	</p><p>
+		Глаза Лили, как у щенка, всегда заставляли тебя сказать "да", и ты соглашаешься сделать, что она просит, [pc.speech(Хорошо, Лили, я найду его для тебя, не волнуйся.)]
+	</p><p>
+		Лили начинает благодарить тебя, но кто-то зовёт её с улицы, прося вернуться на сцену. Благодарив тебя ещё раз, она уходит, оставив тебя делать то, что ты обещал...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_2"><![CDATA[
-	<p>
-		Having agreed to help Lily by finding Arthur, you set off into the museum. The steady hum of voices from the entrance hall quickly fades away into silence as you delve deep into the museum's deserted rooms and corridors. It's a lot larger in here than you anticipated, and before long you realise that you've become hopelessly lost. As you step into yet another cavernous hall lined with glass cabinets and ancient stonework, you thankfully see a map of the museum on the far side of the room. Muttering thanks to whoever put that there, you quickly make your way towards it, hoping to find a route out of here.
-	</p>
-	<p>
-		The sound of your footfalls echoing off the walls are suddenly interrupted as a seductive female voice sounds in your ear, [style.speechFeminineStrong(Looking for something?)]
-	</p>
-	<p>
-		You let out a startled cry and spin around to face the direction of the voice, almost jumping out of your skin as you end up face-to-face with your own reflection. A gigantic ceiling-height mirror stands against the wall, its silver edges finely decorated with hundreds of tiny figures. The woman who spoke must be hiding behind it, as there's nothing else nearby that could conceal a person.</p>
-	<p>
-		[style.speechFeminineStrong(Aww, did I scare the poor little thing?)] the woman speaks again, her voice definitely coming from behind the mirror. She seems to be putting on her most sultry tone as she continues, [style.speechFeminineStrong(Perhaps you should come back here so I can calm you down...)]
+	<htmlContent tag="INTRO_2"><![CDATA[<p>
+		Договорившись помочь Лили, найдя Артура, вы отправились в музей. Устойчивый гул голосов из вестибюля быстро стихает, когда вы заходите в глубокие, пустые комнаты и коридоры музея. Здесь гораздо больше, чем вы ожидали, и вскоре вы понимаете, что заблудились. Когда вы входите в еще одну огромную залу, выложенную стеклянными витринами и древними каменными конструкциями, вы с благодарностью видите карту музея на противоположной стороне комнаты. Шепотом благодаря тому, кто повесил эту карту, вы быстро направляетесь к ней, надеясь найти выход из музея.
+	</p><p>
+		Звук твоих шагов, отголоски которых раздаются по стенам, внезапно прерывается, когда в твою ухо доносится соблазнительный женский голос, [style.speechFeminineStrong(Ищешь что-то?)]
+	</p><p>
+		Ты вскрикнула от неожиданности и обернулась в сторону голоса, чуть не выпрыгнув из своей кожи, когда оказалась лицом к лицу со своим отражением. На стене стоит огромное зеркало, достигающее потолка, его серебряные края изящно украшены сотнями крошечных фигурок. Женщина, которая говорила, должна прятаться за ним, так как вблизи нет ничего, что могло бы скрыть человека.</p><p>
+		[style.speechFeminineStrong(Ах, я напугала бедняжку?)] женщина снова говорит, ее голос явно исходит из-за зеркала. Она, кажется, надевает на себя самый соблазнительный тон, когда продолжает, [style.speechFeminineStrong(Возможно, вам стоит вернуться сюда, чтобы я могла успокоить вас...)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_3A"><![CDATA[
-	<p>
-		You aren't entirely sure that it's the right thing to do, but you decide to accept the mysterious woman's invitation. You boldly stroll towards the mirror, duly impressed with your confident reflection as you close in on her hiding place.
-	</p>
-	<p>
-		[style.speechFeminineStrong(That's right, darling, come back here and see what I've got for you.)]
-	</p>
-	<p>
-		You vaguely consider the possibility that this could be a prank being played at your expense, but you find yourself too curious to turn back now. Reaching the mirror, you step over the rope barrier and lean forwards to take a look behind.
+	<htmlContent tag="INTRO_3A"><![CDATA[<p>
+		Ты не совсем уверен, что это правильное решение, но ты решаешь принять приглашение таинственной женщины. Ты смело подходишь к зеркалу, довольный своим отражением, и приближаешься к ее укрытию.
+	</p><p>
+		[style.speechFeminineStrong(Вот так, дорогая, вернись сюда и посмотри, что я для тебя приготовила.)]
+	</p><p>
+		Вы смутно размышляете о возможности того, что это может быть шутка, устроенная в вашу пользу, но вы находите себя слишком любопытным, чтобы повернуть назад. Дойдя до зеркала, вы перешагиваете через веревочный барьер и наклоняетесь вперед, чтобы заглянуть за него.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_3B"><![CDATA[
-	<p>
-		A deserted museum after dark, an ominous mirror, and an unknown person hiding in the shadows? You distinctly remember seeing this horror film before. You turn back the way you came and start running.
-	</p>
-	<p>
-		[style.speechFeminineStrong(Where do you think <i>you're</i> going?)]
-	</p>
-	<p>
-		You're only a few steps away as the door slams shut, and as you reach for the handle, you hear the distinct sound of a key turning in the lock. You knew it! You're the [pc.girl] who dies first! On the edge of despair, your mind suddenly shifts into a different gear. Nobody ever expects the victim to go on the attack! You turn back towards the mirror and start to run at it, certain that the would-be murderer would never expect your bold move. You quickly close the distance across the room, steeling yourself for the worst as you valiantly leap over the rope barrier and look behind the mirror.
+	<htmlContent tag="INTRO_3B"><![CDATA[<p>
+		Опустевший музей после заката, зловещее зеркало и неизвестный человек, прячущийся в тени? Вы отчетливо помните, как смотрели этот фильм ужасов раньше. Вы поворачиваете назад и начинаете бежать.
+</p><p>
+		[style.speechFeminineStrong(Куда ты думаешь <i>, куда ты</i> идёшь?)]
+	</p><p>
+		Ты находишься всего в нескольких шагах от двери, которая захлопнулась, и когда ты тянешься за ручкой, слышишь характерный звук ключа, поворачивающегося в замке. Ты знал это! Ты [pc.girl], который умирает первым! На грани отчаяния, твой разум внезапно переключается на другую передачу. Никто никогда не ожидает, что жертва сама нападет! Ты поворачиваешься к зеркалу и начинаешь бежать к нему, уверенный, что убийца никогда не ожидает твоего смелого шага. Ты быстро преодолеваешь расстояние по комнате, готовясь к худшему, когда ты героически перепрыгиваешь через веревочное заграждение и заглядываешь за зеркало.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_4"><![CDATA[
-	<p>
-		You reel back in shock as you unwittingly step straight into a thick cobweb. You desperately pull the sticky webbing from your face, opening your eyes to find...
-	</p>
-	<p>
-		<i>There's nobody there.</i>
-	</p>
-	<p>
-		Your over-active imagination runs wild, and you feel your heart hammering as you break out in a cold sweat. A shiver runs down your spine, and before any more signs of your unease present themselves, the woman suddenly breaks the silence.
-	</p>
-	<p>
-		[style.speechFeminineStrong(Foolish human!)]
-	</p>
-	<p>
-		You physically jump into the air as she shouts from right behind you!
+	<htmlContent tag="INTRO_4"><![CDATA[<p>
+		Ты отступаешь в шоке, невольно задев густую паутину. Ты отчаянно отдираешь липкую паутину от лица, открывая глаза и видя...
+</p><p>
+		<i>Там никого нет.</i>
+	</p><p>
+		Ваше чрезмерно активное воображение разыгралось, и вы чувствуете, как ваше сердце бьется в груди, вы покрываетесь холодным потом. По спине пробегает мурашка, и прежде чем появятся какие-либо другие признаки вашего беспокойства, женщина внезапно нарушает тишину.
+	</p><p>
+		[style.speechFeminineStrong(Безумный человек!)]
+	</p><p>
+		Ты физически взлетаешь в воздух, когда она кричит прямо позади тебя!
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_5"><![CDATA[
-	<p>
-		You feel that the time to panic has definitely arrived, and you let out a scream of sheer terror. As your startled wail echoes around the room, you dart forwards, spinning around to face your elusive tormentor. Once again, there's nobody there. With your back to the mirror, you scan the room once more before reaching for your phone. You need to call for help, right now.
-	</p>
-	<p>
-		Before you're even halfway to your pocket, the room in front of you is suddenly illuminated by a flash of purple light. As you see your shadow being cast onto the wall before you, you feel a pair of slender hands grab your shoulders.
-	</p>
-	<p>
-		[style.speechFeminineStrong(Time to come play with Lilith!)]
-	</p>
-	<p>
-		Before you can react, you're violently pulled backwards. Instead of crashing into the mirror behind you, you feel yourself falling, and as your head hits the hard ground, your vision cuts to black...
+	<htmlContent tag="INTRO_5"><![CDATA[<p>
+		Вы чувствуете, что время для паники действительно наступило, и вы выкрикиваете крик от ужаса. Когда ваш испуганный крик разносится по комнате, вы бросаетесь вперед, поворачиваясь, чтобы столкнуться со своим неуловимым мучителем. Опять же, никого нет. Обернувшись к зеркалу, вы еще раз осматриваетесь по комнате, прежде чем достать телефон. Вам нужно вызвать помощь, прямо сейчас.
+	</p><p>
+		Прежде чем ты успеешь дотянуться до кармана, комнату перед тобой озаряет вспышка фиолетового света. Ты замечаешь, как твоя тень падает на стену перед тобой, и чувствуешь, как две тонкие руки сжимают твои плечи.
+	</p><p>
+		[style.speechFeminineStrong(Время поиграть с Лилит!)]
+	</p><p>
+		Прежде чем ты успеваешь среагировать, тебя резко тянут назад. Вместо того чтобы удариться о зеркало позади тебя, ты чувствуешь, как падаешь, и когда твоя голова ударяется о твердую землю, твое зрение гаснет...
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_1"><![CDATA[
-	<p>
-		[pc.speech(~Ow!~)] you groan as you reach up to rub your throbbing head. As you do, you become aware that you're lying on something cold and hard. Pushing yourself up into a sitting position, you quickly scrunch your eyes shut as jolts of pain shoot through your skull. As you hold your head, trying to stop it from spinning, you start to hear voices speaking all around you.
-	</p>
-	<p>
-		[style.speechMasculineStrong(Oh shit, [pc.sheIs] alive!)] someone says.
-	</p>
-	<p>
-		[style.speechMasculine(You idiot, don't get that close! Didn't you see [pc.herHim] just fall out of mid-air?! [pc.sheIs] obviously an arcane user! We need to get out of here!)] a rather worried-sounding man replies.
-	</p>
-	<p>
-		The harsh tone of a woman's voice cuts them off, [style.speechFeminine(Shut up, both of you! Honestly, I don't know why I bring you two along... Anyway, take a look at [pc.herHim], don't you see something wrong with what you just said?)]
-	</p>
-	<p>
-		[style.speechMasculineStrong(Umm...)] the two voices say in unison.
+	<htmlContent tag="INTRO_NEW_WORLD_1"><![CDATA[<p>
+		[pc.speech(~Ow!~)] Ты вскрикиваешь, когда тянешься, чтобы потереть свою пульсирующую голову. Когда ты это делаешь, ты замечаешь, что лежишь на чем-то холодном и твердом. Поднимаясь в сидячее положение, ты быстро закрываешь глаза, когда через твою голову пронзают боли. Держа голову, пытаясь остановить ее вращение, ты начинаешь слышать голоса, раздающиеся вокруг тебя.
+	</p><p>
+		[style.speechMasculineStrong(О боже, [pc.sheIs] жива!)] кто-то говорит.
+	</p><p>
+		[style.speechMasculine(Ты идиот, не подходи так близко! Не видел, как [pc.herHim] просто выпал из воздуха?! [pc.sheIs] явно пользователь Аркана! Нам нужно отсюда убираться!)] отвечает довольно обеспокоенный мужчина.
+	</p><p>
+		Жесткий тон женского голоса перебивает их, [style.speechFeminine(Заткнись, вы оба! Честно говоря, я не знаю, зачем я вас привела... В любом случае, посмотрите на [pc.herHim], разве вы не видите, что в том, что вы только что сказали, что-то не так?)]
+	</p><p>
+		[style.speechMasculineStrong(Эм...)] говорят два голоса в унисон.
 	</p>
 	<p>
 		[style.speechFeminine(You two don't have a brain between you... [pc.SheIs] human, get it? Since when could a human use that kind of arcane power? Hell, only a Lilin could just appear out of thin air like that. This little runt obviously pissed off a lilin, or messed with some artefact [pc.she] didn't understand. In other words, [pc.sheIs] fair game, so just hold [pc.herHim] still until the storm starts.)]
-	</p>
-	<p>
-		As the people reach the end of their conversation, you're surprised to find that most of the pain in your head has already faded away. You open your eyes to see what's going on, but as you do, you're suddenly grabbed by two pairs of strong hands.
-	</p>
-	<p>
-		[pc.speech(Hey, what the hell?! Let me g- ~Mrph~!)] you cry, but your objections are cut short as the woman presses her hand firmly down over your mouth.
-	</p>
-
-	<p>
-		You kick and squirm as you desperately try to wriggle out of the strange people's grasp. As you struggle, you catch brief glimpses of your three tormentors, and as you do, your eyes open wide in shock. You stop squirming and go limp, your mind completely unable to process what it's seeing.
-	</p>
-
-	<p>
-		While the men looked to be normal people on first glance, as you take a closer look, you see that something's not quite right. Their arms and legs are covered in a layer of coarse hair, and instead of feet, they each have a pair of horse-like hoofs. Their ears are also similar to that of a horse's, and sit high up on their heads, and a horse-like tail swishes behind each of them.
-	</p>
-
-	<p>
-		As alarming as the two mens' appearances are, they're nothing compared to the woman in front of you. While the men are in possession of horse-like features, the woman could better be described as a cat possessing human-like features. She's completely covered in a fine layer of black fur, and every part of her body, including her face, has somehow transformed into that of an anthropomorphic cat-girl. Her long tail swishes excitedly behind her, and as she brushes a strand of loose fur-like hair behind her upright cat-ears, she looks down at you with an evil grin on her face.
+	</p><p>
+		Когда люди заканчивают свой разговор, вы удивляетесь, обнаружив, что большая часть боли в вашей голове уже исчезла. Вы открываете глаза, чтобы увидеть, что происходит, но как только вы это делаете, вас внезапно хватают две пары сильных рук.
+	</p><p>
+		[pc.speech(Эй, что за чертовщина?! Позволь мне г- ~Mrph~!)] ты кричишь, но твои возражения пресекаются, когда женщина нажимает на твою руку, прижимая её к твоей рту.
+	</p><p>
+		Ты бьешься и вертишься, пытаясь вырваться из хватки этих странных людей. В процессе ты мельком видишь своих трех мучителей, и твои глаза широко раскрываются от шока. Ты перестаешь вертеться и застываешь, твой разум совершенно не в состоянии обработать то, что он видит.
+	</p><p>
+		На первый взгляд, мужчины кажутся нормальными людьми, но при ближайшем рассмотрении вы замечаете, что что-то не так. Их руки и ноги покрыты слоем грубой шерсти, а вместо ног у каждого из них по паре копыт, похожих на лошадиные. Их уши также похожи на лошадиные и расположены высоко на голове, а за каждым из них виляет лошадиная хвоста.
+	</p><p>
+		Как бы ни были тревожны внешности двух мужчин, они ничто по сравнению с женщиной перед вами. В то время как мужчины обладают лошадиными чертами, женщину лучше всего описать как кошку, обладающую человеческими чертами. Она полностью покрыта тонким слоем черной шерсти, и каждая часть ее тела, включая лицо, каким-то образом превратилась в антропоморфную кошку-девушку. Ее длинный хвост взволнованно машет за ней, и когда она расчесывает прядь свободной шерсти за своими вертикальными кошачьими ушами, она смотрит на вас с злобной улыбкой на лице.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_1_STRUGGLE"><![CDATA[
-	<p>
-		You start to struggle again, kicking and thrashing wildly as you try to free yourself. The cat-girl simply laughs, and in one swift movement she pounces forwards, slamming you to the floor as she straddles your chest.
-	</p>
-	<p>
-		She leans down, her cat-like pupils dilating as she pushes your head to the ground and delivers a long, slow lick up your cheek.
+	<htmlContent tag="INTRO_NEW_WORLD_1_STRUGGLE"><![CDATA[<p>
+		Ты начинаешь снова бороться, бьешься и дергаешься, пытаясь освободиться. Девушка-кот просто смеется, и в одно мгновение она прыгает вперед, прижимая тебя к полу, когда она садится тебе на грудь.
+	</p><p>
+		Она наклоняется, её кошачьи зрачки расширяются, когда она нажимает твою голову к земле и делает долгий, медленный лиз на твоей щеке.
 		#IF pc.isFeminine()
-		#THEN [style.speechFeminineStrong(Mmmm, you taste good, my little prey. We'll just wait for the thunder to start, and then you'll be begging for my boys here to fuck your tight little pussy.)]
-		#ELSE [style.speechFeminineStrong(Mmmm, you taste good, my little prey. We'll just wait for the thunder to start, and then you'll be begging for my boys here to fuck your tight little ass.)]
+		#THEN [style.speechFeminineStrong(Мммм, ты вкусная, моя маленькая добыча. Мы просто подождем, пока не начнётся гром, и тогда ты будешь умолять моих парней здесь трахнуть твою тесную маленькую киску.)]
+		#ELSE [style.speechFeminineStrong(Мммм, ты вкусная, моя маленькая добыча. Мы просто подождем, пока не начнётся гром, и тогда ты будешь умолять моих парней здесь трахнуть твою тесную маленькую жопу.)]
 		#ENDIF
-	</p>
-	<p>
-		The cat-girl sits back up, still holding her paw-like hands over your mouth, and points up to the sky. The two horse-boys have completely immobilised you, and being unable to do anything about your current situation, you look up to see what the cat-girl is pointing at.
-	</p>
-	<p>
-		High above you, a roiling mass of dark black storm clouds are blotting out the evening sky. There's a strange pink tint around the edge of each one, and as the cat-girl stares down at you, you see a flash of the same pink tint glowing deep within her cat-like pupils. She seems content to simply hold you still, waiting for the storm to break, and seeing no way to gain your freedom, you take a moment to glance around and take in your surroundings.
+	</p><p>
+		Девушка-кот садится обратно, все еще держа свои лапы на твоем рту, и указывает на небо. Двое мальчиков-лошадок полностью обездвижили тебя, и, не в силах что-либо сделать в твоей нынешней ситуации, ты смотрю вверх, чтобы увидеть, на что указывает девушка-кот.
+	</p><p>
+		Высоко над тобой, бушующая масса темно-черных грозовых облаков закрывает собой ночное небо. На краю каждого из них есть странный розовый оттенок, и когда кошка-девушка смотрит на тебя, ты видишь вспышку того же розового оттенка, светящегося глубоко в ее кошачьих зрачках. Она кажется довольной тем, что просто держит тебя неподвижным, ожидая, когда гроза утихнет, и не видя способа обрести свободу, ты на мгновение оглядываешься и замечаешь свое окружение.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_1_BY_THE_POWER_OF_HATING_FURRIES"><![CDATA[
-	<p>
-		[pc.thought(Fucking furries! Why do they always have to ruin everything?!)]
-	</p>
-	<p>
-		You violently jerk your arm away from the horse-boy's grip, and, leaning to one side, use it to deliver a punch square in the jaw of the other one. He falls back, dazed, as you quickly turn back and strike the first horse-boy with all your might, right in the solar plexus. Like his friend, he instantly falls back, the wind completely knocked out of him.
-	</p>
-	<p>
-		Having dealt with the two guys holding you down, you turn to whom you assume is their ringleader. Unfortunately, it seems as though you chose the wrong people to target first. As you turn to face the grinning cat-girl, she lets out a mocking laugh, and in one swift movement she pounces forwards, slamming you to the floor as she straddles your chest.
-	</p>
-	<p>
-		[pc.speech(Aah!)]
-	</p>
-	<p>
-		Before you have the chance to strike back at her, she quickly pins your arms to the floor with her knees, and you suddenly feel a row of sharp claws pressing against your neck. You realise that you have no chance against that, and as you feel the little daggers gently pressing into your skin, you stop struggling.
-	</p>
-	<p>
-		Seeing that you've surrendered, she grins and leans down, her cat-like pupils dilating as she pushes your head to the ground and delivers a long, slow lick up your cheek.
+	<htmlContent tag="INTRO_NEW_WORLD_1_BY_THE_POWER_OF_HATING_FURRIES"><![CDATA[<p>
+		[pc.thought(Вот чертовы фурри! Почему они всегда должны все испортить?!)]
+	</p><p>
+		Ты резко отдергиваешь руку от хватки мальчика-лошади и, наклонившись в сторону, ударяешь кулаком прямо в челюсть другого. Он отступает назад, ошеломленный, и ты быстро поворачиваешься и ударяешь первого мальчика-лошадь с всей силой, прямо в солнечное сплетение. Как и его друг, он мгновенно отступает назад, ветер полностью выбивает из него дух.
+	</p><p>
+		Покончив с двумя парнями, удерживающими тебя, ты поворачиваешься к тому, кого ты считаешь их лидером. К сожалению, похоже, ты выбрал не тех людей, на которых стоит нацелить оружие. Когда ты поворачиваешься к хищной девушке-коту, она издает насмешливый смешок и одним быстрым движением набрасывается на тебя, прижимая тебя к полу, когда она садится тебе на грудь.
+	</p><p>
+		[pc.speech(Ах!)]
+	</p><p>
+		Прежде чем у вас будет шанс нанести ей ответный удар, она быстро прижимает ваши руки к полу коленями, и вы вдруг чувствуете, как ряд острых когтей давит на вашу шею. Вы понимаете, что у вас нет шансов против этого, и, чувствуя, как маленькие кинжалы мягко впиваются в вашу кожу, вы перестаете сопротивляться.
+	</p><p>
+		Видя, что ты сдался, она улыбается и наклоняется, её кошачьи зрачки расширяются, когда она нажимает твою голову на землю и делает долгий, медленный лиз на твоей щеке.
 		#IF(pc.isFeminine())
-			 [style.speechFeminineStrong(~Mmm!~ You taste good, my little prey. We'll just wait for the thunder to start, and then you'll be begging for my boys here to fuck your tight little pussy.)]
+			 [style.speechFeminineStrong(~Mmm!~ Ты вкусная, моя маленькая добыча. Мы просто подождем, пока не начнётся гром, и тогда ты будешь просить моих парней здесь трахнуть твою тугую маленькую киску.)]
 		#ELSE
-			 [style.speechFeminineStrong(~Mmm!~ You taste good, my little prey. We'll just wait for the thunder to start, and then you'll be begging for my boys here to fuck your tight little ass.)]
+			 [style.speechFeminineStrong(~Mmm!~ Ты вкусная, моя маленькая добыча. Мы просто подождем, пока не начнётся гром, и тогда ты будешь просить моих парней здесь трахнуть твою тугую маленькую жопу.)]
 		#ENDIF
-	</p>
-	<p>
-		The cat-girl sits back, still holding her claws against your throat, and points up to the sky. As she does this, you see that the horse-boys have recovered and moved back to either side of you. The cat-girl has you pinned down and completely immobilised, and, being unable to do anything about your current situation, you look up to see what she's pointing at.
-	</p>
-	<p>
-		High above you, a roiling mass of dark black storm clouds are blotting out the evening sky. There's a strange pink tint around the edge of each one, and as the cat-girl stares down at you, you see a flash of the same pink tint glowing deep within her cat-like pupils. She seems content to simply hold you still, waiting for the storm to break, and seeing no way to gain your freedom, you take a moment to glance around and take in your surroundings.
+	</p><p>
+		Девушка-кот садится назад, всё ещё держа свои когти на твоей шее, и указывает на небо. Когда она это делает, ты замечаешь, что мальчики-лошади оправились и вернулись на свои места по обе стороны от тебя. Девушка-кот прижала тебя к земле и полностью обездвижила, и, не имея возможности что-либо сделать с твоей текущей ситуацией, ты смотрю вверх, чтобы увидеть, на что она указывает.
+	</p><p>
+		Высоко над тобой, бурлящая масса темно-черных грозовых облаков затмевает вечернее небо. На краю каждого из них есть странный розовый оттенок, и когда девушка-кот смотрит на тебя, ты видишь вспышку того же розового оттенка, светящегося глубоко в ее кошачьих зрачках. Она кажется довольной тем, что просто держит тебя неподвижно, ожидая, когда разразится буря, и не видя способа обрести свободу, ты на мгновение оглядываешься и замечаешь свое окружение.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_1_BY_THE_POWER_OF_LOVING_FURRIES"><![CDATA[
-	<p>
-		[pc.thought(Furries are real?! This is amazing!)]
-	</p>
-	<p>
-		Despite your excitement upon discovering that furries are no longer simply a fantasy, you're still not entirely comfortable with what's going on. As you come to your senses, you start to struggle again, kicking and thrashing wildly as you try to free yourself. The cat-girl simply laughs, and in one swift movement she pounces forwards, slamming you to the floor as she straddles your chest.
-	</p>
-	<p>
-		She leans down, her cat-like pupils dilating as she pushes your head to the ground and delivers a long, slow lick up your cheek.
+	<htmlContent tag="INTRO_NEW_WORLD_1_BY_THE_POWER_OF_LOVING_FURRIES"><![CDATA[<p>
+		[pc.thought(Фурри реальны?! Это потрясающе!)]
+	</p><p>
+		Несмотря на ваше волнение от того, что фурри больше не являются просто фантазией, вы все еще не совсем комфортно себя чувствуете. Когда вы приходите в себя, вы начинаете снова бороться, бьетесь и дергаетесь, пытаясь освободиться. Девушка-кот просто смеется, и одним быстрым движением она прыгает вперед, прижимая вас к полу, когда она садится вам на грудь.
+	</p><p>
+		Она наклоняется, её кошачьи зрачки расширяются, когда она нажимает твою голову на землю и делает долгий, медленный лиз на твоей щеке.
 		#IF(pc.isFeminine())
-			 [style.speechFeminineStrong(~Mmm!~ You taste good, my little prey. We'll just wait for the thunder to start, and then you'll be begging for my boys here to fuck your tight little pussy.)]
+			 [style.speechFeminineStrong(~Mmm!~ Ты вкусная, моя маленькая добыча. Мы просто подождем, пока не начнётся гром, и тогда ты будешь умолять моих парней здесь, чтобы они ебали твою тесную маленькую киску.)]
 		#ELSE
-			 [style.speechFeminineStrong(~Mmm!~ You taste good, my little prey. We'll just wait for the thunder to start, and then you'll be begging for my boys here to fuck your tight little ass.)]
+			 [style.speechFeminineStrong(~Mmm!~ Ты вкусная, моя маленькая добыча. Мы просто подождем, пока не начнётся гром, и тогда ты будешь умолять моих парней здесь, чтобы они ебали твою тесную маленькую жопу.)]
 		#ENDIF
-	</p>
-	<p>
-		The cat-girl sits back up, still holding her paw-like hands over your mouth, and points up to the sky. The two horse-boys have completely immobilised you, and being unable to do anything about your current situation, you look up to see what the cat-girl is pointing at.
-	</p>
-	<p>
-		High above you, a roiling mass of dark black storm clouds are blotting out the evening sky. There's a strange pink tint around the edge of each one, and as the cat-girl stares down at you, you see a flash of the same pink tint glowing deep within her cat-like pupils. She seems content to simply hold you still, waiting for the storm to break, and seeing no way to gain your freedom, you take a moment to glance around and take in your surroundings.
+	</p><p>
+		Девушка-кот садится обратно, всё ещё держа свои лапы на твоём рту, и указывает на небо. Два мальчика-лошади полностью обездвижили тебя, и, не в состоянии ничего сделать с твоей текущей ситуацией, ты смотрю вверх, чтобы увидеть, на что указывает девушка-кот.
+	</p><p>
+		Высоко над вами, бурлящая масса темно-черных грозовых облаков закрывает вечернее небо. На краю каждого из них есть странный розовый оттенок, и когда девушка-кот смотрит на вас, вы видите вспышку того же розового оттенка, светящегося глубоко в ее кошачьих зрачках. Она кажется довольной тем, что просто держит вас, ожидая, пока гроза утихнет, и не видя способа обрести свободу, вы на мгновение оглядываетесь и замечаете свое окружение.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_1_STRUGGLE_END"><![CDATA[
-	<p>
-		You're lying in the middle of a deserted street, and a series of old-fashioned street lamps are illuminating the area around you in a soft amber glow. You notice that the entire road is paved with clean, whitish-blue paving stones, and with the numerous wooden benches and small, leafy trees that are dotted about the place, you realise that this street is entirely pedestrianised. There's no sign of any cars or passersby that could come to your aid, and the imposing, neo-classical frontages of the surrounding buildings offer no hope of any help, as all their windows and curtains are tightly shut.
-	</p>
-	<p>
-		[pc.thought(How am I going to get out of this?!)]
-	</p>
-	<p>
-		Just as you're on the edge of losing all hope, an oddly-familiar voice suddenly rings out from somewhere behind you.
+	<htmlContent tag="INTRO_NEW_WORLD_1_STRUGGLE_END"><![CDATA[<p>
+	Ты лежишь посреди заброшенной улицы, и ряд старинных фонарей освещает окрестности мягким янтарным светом. Ты замечаешь, что вся дорога выложена чистыми, бело-голубыми брусчатными камнями, и с многочисленными деревянными скамейками и небольшими, лиственными деревьями, разбросанными по всему месту, ты понимаешь, что эта улица полностью пешеходная. Нет никаких признаков автомобилей или прохожих, которые могли бы прийти тебе на помощь, и внушительные, неоклассические фасады окружающих зданий не дают никакой надежды на помощь, так как все их окна и шторы плотно закрыты.
+	</p><p>
+		[pc.thought(Как мне выбраться из этого?!)]
+	</p><p>
+		Именно когда вы теряете последнюю надежду, откуда-то сзади раздаётся странно знакомый голос.
 	</p>
 	<p>
 		[lilaya.speech(Do you <i>really</i> have to play your silly little games right here in the middle of the street? You know, some people don't really care for that sort of thing, and by the looks of it, your little friend under there may just be one of them.)]
@@ -536,381 +413,254 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_2"><![CDATA[
-	<p>
-		The cat-girl spins around, turning to see who's talking. Her claws press against your throat, preventing you from using this opportunity to attempt to escape.
-	</p>
-	<p>
-		[style.speechFeminineStrong(Well, perhaps <i>some</i> people would like to come on out and join in. There's plenty of roo-)] the cat-girl's voice cuts off as you hear the mysterious woman's footfalls getting closer.
-	</p>
-	<p>
-		[style.speechMasculine(Oh shit! Run!)] The horse-boys quickly dart off, abandoning their leader.
-	</p>
-	<p>
-		The cat-girl quickly starts stuttering out excuses as you hear the mysterious woman walking closer, [style.speechFeminineStrong(L-look, w-we were only playing! Anyway, if [pc.she] didn't want to have some fun, why's [pc.she] outside just before a storm's about to break?!)]
-	</p>
-	<p>
-		[lilaya.speech(Well, it's really none of my business, but now that your little friends have run off, what's to stop <i>[pc.herHim]</i> from having a little fun with <i>you</i>?)] the woman replies, and this time, you're certain that you recognise her voice.
-	</p>
-	<p>
-		You feel the cat-girl's grip loosening around your throat, and, taking advantage of the fact that she's been distracted, you pull your arms out from under her knees, grab her wrists and throw her off of you. Quickly jumping to your feet, you turn to face your tormentor, only to see her running off down a nearby alleyway.
-	</p>
-	<p>
-		[lilaya.speech(You're welcome...)] you hear your saviour say as she starts to walk off.
-	</p>
-	<p>
-		[pc.thought(Wait... That voice... Lily?!)]
-	</p>
-	<p>
-		You spin around, certain that your mysterious benefactor is none other than your aunt Lily. Even as she walks away, you can tell that it's her. The way she walks, her long, black hair, even her usual attire are all how they should be. Even though you've often criticised her for never wearing anything other than her plain black skirt, white shirt and black heels, right now you've never been happier to see them.
-	</p>
-	<p>
-		[pc.speech(Lily! Oh Lily, I'm so glad you're here! Those... <i>people</i>, they were about to... well... I'm just glad you're here now!)] You run to catch up with your aunt, wrapping your arms around her and pulling her into a loving hug. As you press into her back, you notice what feels to be a large, lumpy backpack digging into your chest, but due to the dim street-light, you didn't see it.
-	</p>
-	<p>
-		[lilaya.speech(W-What the hell are you doing?!)] Lily exclaims, wriggling free as she pushes you away from her. [lilaya.speech(I-It's not like I was <i>trying</i> to save you! J-Just say thanks and go find some cover before the storm breaks!)]
-	</p>
-	<p>
-		You don't quite understand her reaction. She usually loves it when you hug her like that, but as Lily turns around, you realise that something is wrong. It's still Lily, sort of, but she's got a few extra parts that you certainly don't remember her having before. As she steps back from you, she ends up directly beneath the glow of one of the street lights, and as you get a good look at her, you feel your jaw dropping.
-	</p>
-	<p>
-		Just one glance at her face is enough to convince you that this is Lily, but instead of being in her fifties, she now looks to be in her late thirties. What's more worrying than her regression of age, however, is that fact that there are a pair of low, swept-back horns growing out from her forehead. A thin, spaded tail, which you hadn't noticed in the dark, curls around behind her, rising up to draw attention to a pair of large, bat-like wings that suddenly unfurl from her back. Her chest is another area that's different, and you see that Lily now has a massive pair of E-cup breasts, quite unlike the more modestly-sized ones she used to have.
-	</p>
-	<p>
-		[lilaya.speech(Stop staring!)] Lily commands. [lilaya.speech(I-I'll banish you to another dimension! Or... um... Freeze you and leave you lying out here! What do you want?!)]
-	</p>
-	<p>
-		She clearly doesn't recognise you, and seems quite shocked by your actions. You notice that she's blushing profusely, and you wonder if that's the result of your sudden hug or the way you've been staring at her. As you try to think of something to say, Lily raises her hand, and as she does so, a swirling vortex of snow and ice materialises around her arm.
-	</p>
-	<p>
-		You don't really want to be frozen by this demonic version of your aunt, so you quickly blurt out everything you know about what's just happened.
+	<htmlContent tag="INTRO_NEW_WORLD_2"><![CDATA[<p>
+		Девушка-кот крутится, поворачиваясь, чтобы увидеть, кто с ней разговаривает. Её когти прижимаются к твоей шее, не позволяя тебе воспользоваться этой возможностью, чтобы попытаться сбежать.
+	</p><p>
+		[style.speechFeminineStrong(Ну, возможно, <i>некоторым</i> людям захочется выйти и присоединиться. Здесь достаточно места для всех.)] голос девушки-кошки прерывается, когда вы слышите, как шаги таинственной женщины становятся всё ближе.
+	</p><p>
+		[style.speechMasculine(О боже! Бежать!)] Мальчики-лошади быстро убегают, оставив своего лидера.
+	</p><p>
+		Девушка-кот быстро начинает оправдываться, когда вы слышите, как таинственная женщина подходит ближе, [style.speechFeminineStrong(L-look, w-we were only playing! Anyway, if [pc.she] didn't want to have some fun, why's [pc.she] outside just before a storm's about to break?!)]
+	</p><p>
+		[lilaya.speech(Ну, это действительно не мое дело, но теперь, когда ваши маленькие друзья убежали, что мешает <i>[pc.herHim]</i> немного повеселиться с <i>вами</i>?)] отвечает женщина, и на этот раз вы уверены, что узнаете ее голос.
+	</p><p>
+		Ты чувствуешь, как хватка девушки-кошки ослабевает вокруг твоего горла, и, воспользовавшись тем, что она отвлеклась, ты вытаскиваешь руки из-под ее колен, хватаешь ее за запястья и сбрасываешь ее с себя. Быстро вставая на ноги, ты поворачиваешься к своей мучительнице, только чтобы увидеть, как она убегает по близлежащему переулку.
+	</p><p>
+		[lilaya.speech(На здоровье...)] ты слышишь, как твоя спасительница говорит, прежде чем уйти.
+	</p><p>
+		[pc.thought(Подожди... Этот голос... Лили?!)]
+	</p><p>
+		Ты крутишься на месте, уверенный, что твоя таинственная благотворительница - это ни кто иная, как твоя тетя Лили. Даже когда она уходит, ты можешь сказать, что это она. То, как она ходит, её длинные, чёрные волосы, даже её обычная одежда - всё как должно быть. Хотя ты часто критиковал её за то, что она никогда не носит ничего, кроме своей простой чёрной юбки, белой рубашки и чёрных туфель, прямо сейчас ты никогда не был так счастлив, увидев их.
+	</p><p>
+	[pc.speech(Лили! О, Лили, я так рада, что ты здесь! Эти... <i>люди</i>, они собирались... ну... Я просто рада, что ты теперь здесь!)] Ты бежишь, чтобы догнать свою тетю, обнимаешь ее и тянешь к себе в нежный поцелуй. Когда ты прижимаешься к ней, ты замечаешь, что большой, грузный рюкзак давит тебе на грудь, но из-за тусклого уличного фонаря ты этого не увидела.
+	</p><p>
+		[lilaya.speech(W-Что за черт ты делаешь?!)] Лилия восклицает, вырываясь из твоего объятия. [lilaya.speech(I-Это не то, что я <i>пыталась</i> спасти тебя! J-Просто скажи спасибо и ищи укрытие, пока буря не разразится!)]
+	</p><p>
+		Ты не совсем понимаешь её реакцию. Она обычно любит, когда ты обнимаешь её так, но когда Лили поворачивается, ты понимаешь, что что-то не так. Это всё ещё Лили, в каком-то роде, но у неё есть несколько дополнительных частей, которые ты, безусловно, не помнишь, что у неё были раньше. Когда она отступает от тебя, она оказывается прямо под светом одного из уличных фонарей, и когда ты хорошо её рассматриваешь, ты чувствуешь, как твой подбородок опускается.
+</p><p>
+		Достаточно одного взгляда на её лицо, чтобы убедиться, что это Лили, но вместо того, чтобы быть в возрасте пятидесяти лет, она теперь выглядит на тридцать лет. Что ещё более тревожно, чем её регрессия в возрасте, так это то, что у неё на лбу выросли две пары низких, приподнятых назад рогов. Тонкая, лопатообразная хвоя, которую вы не заметили в темноте, обвивается вокруг её спины, поднимаясь вверх, чтобы привлечь внимание к паре больших, похожих на крылья летучей мыши крыльев, которые внезапно расправляются у неё на спине. Её грудь - ещё одна область, которая отличается, и вы видите, что у Лили теперь огромные груди E-размера, совсем не похожие на те, которые у неё были раньше.
+	</p><p>
+		[lilaya.speech(Прекрати пялиться!)] Лилия приказала. [lilaya.speech(Я-Я изгоню тебя в другую вселенную! Или... э-э... заморожу тебя и оставлю здесь лежать! Что ты хочешь?!)]
+	</p><p>
+		Она явно не узнает тебя и выглядит довольно шокированной твоей реакцией. Ты замечаешь, что она краснеет, и задаешься вопросом, является ли это результатом твоего внезапного обнимания или того, как ты на нее смотрел. Пока ты пытаешься придумать, что сказать, Лили поднимает руку, и в этот момент вокруг ее руки появляется вихрь из снега и льда.
+	</p><p>
+		Ты не хочешь, чтобы тебя заморозила эта демоническая версия твоей тети, поэтому ты быстро выпаливаешь все, что знаешь о том, что только что произошло.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_2_A"><![CDATA[
-	<p>
-		You quickly describe all the events at the museum, finishing with how you woke up here just moments before she arrived. When you mention that the mysterious woman in the mirror called herself 'Lilith', you see Lily frown and shuffle about on her feet. Apart from that minor display of emotion, she listens to your tale with a stony expression on her face. As you explain to her that she's supposed to be your aunt, she lowers her hand and banishes the swirling vortex that she'd summoned around her arm.
-	</p>
-
-	<p>
-		[lilaya.speech(But that's just a theory...)] she mutters, barely loud enough to be audible. She then raises her voice as she continues, [lilaya.speech(From what you've said, it sounds as though you're claiming to be from an alternate universe. While <i>theoretically</i> possible, there's never been a recorded case of inter-dimensional travel actually working. As unlikely as your story sounds, there <i>is</i> one way we can test the truth, right here, right now. If you're from another universe, you shouldn't be infused with the arcane, so when this storm finally breaks...)]
-	</p>
-
-	<p>
-		Suddenly, the entire street is illuminated in a bright flash of pink as a bolt of lightning streaks across the sky. Lily grins as she finishes her sentence, [lilaya.speech(You shouldn't be affected by the arcane thunder!)]
-	</p>
-
-	<p>
-		A moment later, the deep rumble of thunder starts echoing down the street. At first, it sounds just like any old thunder strike that you've heard a hundred times before, but instead of fading away into silence, it builds and builds until the very ground itself seems to shake from its intensity. Just as you're wondering how long this is going to last, the rumbling sound suddenly bursts into a cacophony of moans and squeals, as though a thousand women are suddenly brought to a crashing orgasm all around you. The sound is so unexpected and so sudden, that you forget for a moment that it's caused by this strange arcane thunder, and you turn this way and that, looking around for the source of the sound.
-	</p>
-
-	<p>
-		After a few seconds, the noise starts to fade away, quickly dropping to a whisper before silence envelops the dimly-lit street once again. You turn back to Lily and see that a very concerned expression has fallen over her face.
-	</p>
-
-	<p>
-		[lilaya.speech(This is impossible... Well... Not <i>impossible</i>, but there's no way...)] she whispers, before addressing you in her normal voice, [lilaya.speech(So you don't have any sudden desire to try and fuck me?)]
-	</p>
-
-	<p>
-		[pc.speech(Uuuum... That's a bit of a weird question, but... no?)] you answer, before suddenly realising that you might have offended this demonic version of your aunt. [pc.speech(I mean, you're obviously extremely attractive and anyone would be lucky to have you, but you're my aunt! Well, sort of, anyway...)]
-	</p>
-
-	<p>
-		You see Lily blushing at your flattering, and, looking back on it, slightly inappropriate, response. [lilaya.speech(Y-You're not meant to say that sort of thing! C-Can't you see that I'm a... Eugh!)] She turns around, stomping her foot on the ground as she starts walking away. [lilaya.speech(Just come with me, and don't embarrass yourself any more!)] she says, motioning for you to follow her.
-	</p>
-
-	<p>
-		You do as she says, and quickly rush forwards to her side. You glance across to see that her cheeks are still burning red, and you think that you're embarrassing her far more than you are yourself. You keep that thought to yourself, however, and let Lily lead the way, ignoring several more crashes of arcane thunder as you thank your lucky stars that she was there to save you.
+	<htmlContent tag="INTRO_NEW_WORLD_2_A"><![CDATA[<p>
+		Ты быстро описываешь все события в музее, заканчивая тем, что ты проснулся здесь за несколько мгновений до её прибытия. Когда ты упоминаешь, что таинственная женщина в зеркале называла себя 'Лилит', ты видишь, как Лили нахмуривается и поправляет свои туфли. Помимо этого незначительного проявления эмоций, она слушает твою историю с каменным выражением лица. Когда ты объясняешь ей, что она должна быть твоей тетей, она опускает руку и устраняет вихрь, который она вызвала вокруг своей руки.
+	</p><p>
+		[lilaya.speech(Но это всего лишь теория...)] - бормочет она, едва слышно. Затем она повышает голос, продолжая: [lilaya.speech(Судя по вашим словам, вы утверждаете, что вы из параллельной вселенной. Хотя <i>теоретически</i> возможно, никогда не было зафиксировано ни одного случая успешной межпространственной телепортации. Как бы невероятна ни была ваша история, есть <i>один</i> способ проверить правду, прямо здесь, прямо сейчас. Если вы из другой вселенной, вы не должны быть пропитаны Арканой, поэтому, когда эта буря наконец закончится...)]
+	</p><p>
+		Внезапно вся улица озаряется ярким розовым светом, когда молния пронзает небо. Лили улыбается, заканчивая свою фразу: [lilaya.speech(Ты не должна быть подвержена воздействию аркана!)]
+	</p><p>
+		Через мгновение по улице начинает раздаваться глухой грохот грома. Сначала он звучит как обычный удар молнии, который ты слышал сотню раз, но вместо того, чтобы утихнуть, он нарастает и нарастает, пока сама земля не начинает дрожать от его силы. Ты думаешь, как долго это будет продолжаться, как вдруг грохот внезапно переходит в какофонию стонов и визгов, как будто тысяча женщин внезапно достигает кульминации вокруг тебя. Звук настолько неожиданный и внезапный, что на мгновение ты забываешь, что он вызван этим странным арканическим громом, и начинаешь крутиться, пытаясь найти источник звука.
+	</p><p>
+		Через несколько секунд шум начинает стихать, быстро превращаясь в шепот, прежде чем тишина снова окутывает слабо освещенную улицу. Ты поворачиваешься к Лили и видишь, что на ее лице появляется очень обеспокоенное выражение.
+	</p><p>
+		[lilaya.speech(Это невозможно... Ну... Не <i>невозможно</i>, но нет никакого способа...)] она шепчет, прежде чем обратиться к тебе на своем обычном голосе, [lilaya.speech(Так что у тебя нет внезапного желания попробовать и трахнуть меня?)]
+	</p><p>
+		[pc.speech(Эээ... Это немного странный вопрос, но... нет?) отвечаешь ты, прежде чем внезапно осознаешь, что, возможно, обиделась эта демоническая версия твоей тети. [pc.speech(Я имею в виду, ты, очевидно, очень привлекательна, и любой был бы счастлив иметь тебя, но ты моя тетя! Ну, в общем-то...)]
+	</p><p>
+	Ты видишь, как Лили краснеет от твоего лестящего, и, если подумать, немного неприличного, ответа. [lilaya.speech(Ты не должна говорить такие вещи! C-Не видишь, что я... Эх!)] Она поворачивается, топчась ногой по земле, и начинает уходить. [lilaya.speech(Просто иди со мной, и не смущай себя больше!)] говорит она, жестикулируя, чтобы ты последовал за ней.
+	</p><p>
+		Ты делаешь, как она говорит, и быстро бежишь к ней. Ты бросаешь взгляд на ее щеки, которые все еще горят красным цветом, и думаешь, что ты смущаешь ее гораздо больше, чем сама. Ты, однако, держишь эту мысль при себе и позволяешь Лиди привести тебя к себе, игнорируя несколько разрядов аркана, когда ты благодаришь свою удачу за то, что она была там, чтобы спасти тебя.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_3"><![CDATA[
-	<p>
-		Nothing ever seemed to embarrass your real aunt, but it seems like this version of Lily is the complete polar opposite. Almost everything you've said to her so far has resulted in her blushing or stuttering over her words, and as you let her lead you through the unfamiliar streets of this strange city, you decide that you won't be the first to speak and risk saying the wrong thing yet again. As a result, the rest of the walk proceeds in silence, allowing you to observe several differences between this city and the one you used to call home.
-	</p>
-	<p>
-		Every single street seems to be pedestrianised, and there isn't a single car to be seen anywhere. The street lights are curiously different from the ones you're used to seeing, and instead of producing the usual dull fluorescent glow, tiny little balls of energetic light dance within glass globes, casting a steady, albeit slightly flickering, orange glow over the street's clean paving stones. The buildings on either side all adhere to old-fashioned designs that look very similar to pictures you've seen of Victorian architecture. When combined with the style of street-lights, a casual observer could easily be confused into believing that they'd been transported back to an alternate version of mid-nineteenth century central London. As you look closer, however, the fashion trends being displayed in shop-fronts and on advertisement billboards make it quite clear that this 'alternate dimension' must be of the same time period that you're familiar with.
-	</p>
-	<p>
-		[lilaya.speech(Right, here we are,)] Lily suddenly says, snapping you out of your trance. [lilaya.speech(You're going to come inside and let me run a few little tests on you, ok? After all, I <i>did</i> save you back there,)] she finishes, walking up a short external staircase to a rather imposing-looking front door.
-	</p>
-
-	<p>
-		You decide not to mention the fact that Lily said earlier that she 'wasn't trying to save you', and instead answer as you always do when your aunt holds you to ransom like this, [pc.speech(Ok, Lily, I guess you're right,)] you sigh, following her up the steps. [pc.speech(I hope these 'little tests' aren't anything I should worry about...)]
+	<htmlContent tag="INTRO_NEW_WORLD_3"><![CDATA[<p>
+		Ничто никогда не смущало твою настоящую тетю, но похоже, что эта версия Лили - полная противоположность. Почти всё, что ты сказал ей до сих пор, привело к тому, что она покраснела или заикалась, и когда ты позволил ей вести тебя по незнакомым улицам этого странного города, ты решил, что не будешь первым, кто заговорит, чтобы не рисковать снова сказать что-то не то. В результате, остальная часть прогулки проходит в тишине, что позволяет тебе заметить несколько различий между этим городом и тем, который ты называл своим домом.
+	</p><p>
+		Каждая улица, кажется, пешеходная, и нигде не видно ни одного автомобиля. Уличные фонари отличаются от тех, к которым вы привыкли, и вместо обычного тусклого флуоресцентного свечения, внутри стеклянных шаров танцуют крошечные шарики энергичного света, создавая стабильный, хотя и слегка мерцающий, оранжевый свет на чистых мостовых. Здания по обе стороны придерживаются старомодных дизайнов, которые очень похожи на картинки, которые вы видели о викторианской архитектуре. В сочетании со стилем уличных фонарей, невооруженный глаз легко может спутать это с переместившимся в альтернативную версию центра Лондона середины девятнадцатого века. Однако, если присмотреться, то модные тенденции, представленные в витринах магазинов и на рекламных щитах, дают понять, что эта 'альтернативная реальность' должна быть того же времени, что и ваша.
+	</p><p>
+		[lilaya.speech(Вот и мы здесь,)] Лилия внезапно говорит, вырвав вас из транса. [lilaya.speech(Ты войдешь внутрь, и я проведу с тобой несколько небольших тестов, хорошо? Ведь я <i>сделала</i> тебе одолжение, когда спасла тебя там,)], она заканчивает, поднимаясь по короткой внешней лестнице к довольно внушительному внешнему виду двери.
+	</p><p>
+		Ты решаешь не упоминать о том, что Лили сказала ранее, что она 'не пыталась тебя спасти', и вместо этого отвечаешь, как всегда, когда твоя тетя держит тебя в заложниках, [pc.speech(Хорошо, Лили, я думаю, ты права,)], ты вздыхаешь, следуя за ней вверх по лестнице. [pc.speech(Надеюсь, эти 'маленькие испытания' не вызовут у меня беспокойства...)]
 	</p>
 
 	<p>
 	Lily knocks on the door and turns back to you, sighing, [lilaya.speech(Of course they're nothing to worry about! Oh, and stop calling me 'Lily'! Maybe back in <i>your</i> world, I was your aunt and was called that, but <i>here</i>, I'm not your aunt, and my name is 'Lilaya'. S-So call me that!)]
-	</p>
-
-	<p>
-		As 'Lilaya' says this, she quickly turns away to face the door, and you let out a sigh as you think, [pc.thought(Damn, she's even getting embarrassed about telling me her own name? Does she never speak to people or something?)]
-	</p>
-
-	<p>
-		You don't have to see her face to know that she's blushing again, and, not wanting to make matters worse for her, you decide to try and put her at ease by introducing yourself, [pc.speech(Well, I'm [pc.name], by the way. It seems quite strange to be telling you that, though. I mean, I've known you forever!)]
-	</p>
-
-	<p>
-		Before you get to hear Lilaya's response, the door before you suddenly opens, casting a warm glow out onto the street behind you. Whoever opened the door must have moved to one side, and as Lilaya enters, you follow in her footsteps, looking to greet the person who's let you inside.
-	</p>
-
-	<p>
-		[rose.speech(Welcome home, Mistress!)] a young woman's voice sounds from behind the door as you enter. [rose.speech(Did you have a nice evenin- ~eek!~ A stranger! Mistress?!)]
-	</p>
-
-	<p>
-		As you step inside, you see a rather panic-stricken girl, who appears to be in her late teens, desperately looking at Lilaya for guidance. She's wearing a complete French-Maid's uniform, and you're rather shocked that this world's version of your aunt can afford to hire a personal maid. Like the other people you've seen so far, she seems to be some kind of human-animal hybrid, and has a pair of sleek cat-ears, covered in pinkish-red fur, sitting amongst her red, fur-like hair. A cat-like tail, covered in the same reddish fur as her feline ears, is sticking straight up behind her, and her green, cat-like eyes glance nervously between you and Lilaya as she hops back and forth on her feet.
-	</p>
-
-	<p>
-		Lilaya makes a soothing hushing sound before patting her on the head. [lilaya.speech(Shh, it's alright, Rose, [pc.sheIs] a guest of mine, you can calm down,)] she says, before pulling Rose into a surprisingly intimate hug. [lilaya.speech(Why don't you go make us some tea, you can bring it down to us in the lab.)]
-	</p>
-
-	<p>
-		[rose.speech(Yes, Mistress! Right away, Mistress!)] Rose replies, and as Lilaya releases her, she quickly closes the door behind you and rushes off to another part of the house.
-	</p>
-
-	<p>
-		As the excitable maid makes her exit, you find yourself standing in the most extravagantly furnished town-house that you've ever seen. A huge crystal chandelier hangs from the double-height ceiling, casting its warm light over a grand, red-carpeted staircase that leads to the upper floor. Fine paintings and marble busts line the walls of the entrance hall, and you find your jaw dropping for the second time this evening.
-	</p>
-
-	<p>
-		[lilaya.speech(So I take it that your real aunt doesn't live in a place like this?)] Lilaya asks, smirking at your stunned expression. [lilaya.speech(Anyway, come with me. My lab's this way,)] she says, walking over to a side-corridor.
+	</p><p>
+		Лилая, произнеся это, быстро поворачивается к двери, и ты вздыхаешь, думая: [pc.thought(Чёрт, она даже смущается, когда называет своё имя? Она никогда не разговаривает с людьми или что-то в этом роде?)]
+	</p><p>
+		Вы не должны видеть её лицо, чтобы знать, что она снова краснеет, и, не желая усугубить её положение, вы решаете попытаться успокоить её, представившись, [pc.speech(Ну, я [pc.name], кстати. Мне кажется, это довольно странно, ведь я знаю вас уже вечность!)]
+	</p><p>
+		Прежде чем вы услышите ответ Лилайи, дверь перед вами внезапно открывается, и теплый свет льется на улицу за вами. Кто бы ни открыл дверь, он, должно быть, отошел в сторону, и когда Лилайя входит, вы следуете за ней, чтобы приветствовать человека, который впустил вас внутрь.
+	</p><p>
+		[rose.speech(Добро пожаловать домой, госпожа!)] молодой женский голос раздается из-за двери, когда вы заходите. [rose.speech(Вы хорошо провели вечер? ~eek!~ Незнакомец! Госпожа?!)]
+	</p><p>
+		Как только ты заходишь, ты видишь испуганную девушку, которая, судя по всему, старше тебя на несколько лет. Она отчаянно смотрит на Лилайу в поисках помощи. Она носит полный французский мейд-костюм, и ты в шоке от того, что эта версия твоей тети может позволить себе нанять личную горничную. Как и другие люди, которых ты видел до этого, она, похоже, является гибридом человека и животного, и у неё есть пара гладких кошачьих ушей, покрытых розово-красной шерстью, которые сидят среди её красных, похожих на шерсть волос. Кошачий хвост, покрытый той же красноватой шерстью, что и её кошачьи уши, торчит прямо за её спиной, а её зелёные, кошачьи глаза нервно перебегают между тобой и Лилайу, пока она прыгает с ноги на ногу.
+	</p><p>
+		Лилая делает успокаивающий звук, прежде чем погладить её по голове. [lilaya.speech(Тише, всё в порядке, Роуз, [pc.sheIs] гостья моя, ты можешь успокоиться,)] говорит она, прежде чем потянуть Роуз в неожиданно интимную объятия. [lilaya.speech(Почему бы тебе не заварить нам чай, ты можешь принести его нам в лабораторию.)]
+	</p><p>
+		[rose.speech(Да, госпожа! Сразу, госпожа!)] Роза отвечает, и как только Лилая отпускает её, она быстро закрывает дверь за вами и спешит в другую часть дома.
+	</p><p>
+		Когда возбужденная служанка выходит из комнаты, вы оказываетесь в самом роскошно обставленном особняке, который вы когда-либо видели. Огромная хрустальная люстра висит на двойной высоте потолка, и ее теплое свечение падает на величественную лестницу, покрытую красным ковром, которая ведет на верхний этаж. На стенах прихожей висят прекрасные картины и мраморные бюсты, и вы в третий раз за этот вечер от удивления откидываете голову назад.
+	</p><p>
+		[lilaya.speech(Так что, ваша настоящая тетя не живет в таком месте?)] Lilaya спрашивает, ухмыляясь, видя ваше ошеломленное выражение. [lilaya.speech(Ну что ж, иди со мной. Моя лаборатория здесь,)] говорит она, направляясь в сторону коридора.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_4"><![CDATA[
-	<p>
-		You hurry to follow Lilaya as she leads the way to her lab. As you walk down a long corridor at her side, you get the chance to ask her the question at the forefront of your mind.
-	</p>
-	<p>
-		[pc.speech(So, Lilaya, do you have any idea what's going on?)]
-	</p>
-	<p>
-		You see her face scrunch up into a thoughtful frown as she answers, [lilaya.speech(Well, after seeing your immunity to the arcane thunder, I'm convinced that you're telling the truth, but...)] Lilaya stops and turns to face you. [lilaya.speech(Inter-dimensional travel is far above and beyond any arcane skill I've ever heard of. Perhaps with some tests, we can discover more...)] She turns around and opens the door behind her, stepping through into her lab.
-	</p>
-	<p>
-		You follow Lilaya into what appears at first to be a huge library. The walls are covered in shelving, holding what must be hundreds, if not thousands, of ancient-looking leather-bound tomes. Most of the room, however, is occupied by a series of long tables, each covered in strange glass vials, odd-looking instruments, and bottles of glowing liquids.
-	</p>
-	<p>
-		Lilaya grabs a white lab coat that's hanging beside the door, and although she slips it on, she doesn't bother to button it up, causing the bottom to bellow out a little as she strides over to the other side of the room. Where she comes to a halt, you see that there's a large pentagram marked out on the floor in white chalk. She then produces a pair of safety goggles from a nearby desk, and, after putting them on, she motions for you to come over to her.
-	</p>
-	<p>
-		[pc.speech(Wow, so what is it you do here? You -well, my other aunt, I mean- used to be a researcher at the city museum, but it doesn't look like you share her profession.)]
-	</p>
-	<p>
-		Lilaya drags a chair into the middle of the chalked-out pentagram and starts fiddling with a series of strange-looking spotlights at each of the five corners. As she adjusts her instruments, she motions for you to sit and answers your question, [lilaya.speech(So, the other 'me' is a researcher too? I spend most of my time in here, finding new ways to harness the arcane and infuse it into every-day objects. Mommy provides-)] Lilaya cuts her sentence short, obviously saying more than she meant to, before quickly trying to change the topic, [lilaya.speech(L-Look, just sit down there and keep still while I calibrate these!)]
-	</p>
-
-	<p>
-		You do as she says, not wanting to press the matter and give her another cause to feel embarrassed. As she works, you see her little spaded tail working like a third limb, rising up to twist dials and slide levers as she busily finishes calibrating the strange instruments.
-	</p>
-
-	<p>
-		After a few moments she seems to be satisfied with her adjustments, and steps out of the chalked area, before turning to smile at you. [lilaya.speech(Right, all set! Don't worry, this doesn't hurt or anything, it's just going to let me know a little bit more about you. Are you ready?)] she asks, and you quickly answer in the affirmative.
-	</p>
-
-	<p>
-		Lilaya brings her hand up, conjuring a swirling vortex of strange pink lights around her arm as she prepares to run her test. Magic quite clearly exists in this world, and you make a mental note to ask Lilaya more about it after she's finished her test, but for now, you sit still like she asked. The pink lights rapidly grow stronger, and with a sudden thrust forwards, they shoot from Lilaya's arm, darting towards the five floodlight-like instruments and causing them to emit a blinding pink flash.
+	<htmlContent tag="INTRO_NEW_WORLD_4"><![CDATA[<p>
+		Вы спешите за Лилайей, которая ведет вас в свою лабораторию. Проходя по длинному коридору рядом с ней, вы получаете возможность задать ей вопрос, который вас волнует.
+	</p><p>
+		[pc.speech(Итак, Лилая, ты имеешь представление о том, что происходит?)]
+	</p><p>
+		Вы видите, как её лицо морщится в задумчивой хмурости, когда она отвечает: [lilaya.speech(Ну, после того, как я увидела вашу устойчивость к арканическому грому, я убеждена, что вы говорите правду, но...)] Лилая останавливается и поворачивается к вам. [lilaya.speech(Межпространственные путешествия далеко за пределами любых арканических навыков, о которых я когда-либо слышала. Возможно, с помощью некоторых тестов мы сможем узнать больше...)] Она поворачивается и открывает дверь за спиной, проходя в свою лабораторию.
+</p><p>
+		Ты следуешь за Лилайей в то, что на первый взгляд кажется огромной библиотекой. Стены покрыты книжными полками, на которых хранятся сотни, если не тысячи, древних кожаных томов. Большую часть комнаты занимают длинные столы, на каждом из которых стоят странные стеклянные флаконы, необычные инструменты и бутылки с светящимися жидкостями.
+	</p><p>
+		Лилая хватает белый халат, который висит рядом с дверью, и, хотя она надевает его, она не удосуживается застегнуть его, в результате чего низ немного выпячивается, когда она идет к другой стороне комнаты. Там, где она останавливается, вы видите, что на полу белой мелкой нарисована большая пентаграмма. Затем она достает защитные очки с соседнего стола и, надев их, жестом приглашает вас подойти к ней.
+	</p><p>
+		[pc.speech(Вау, так что же ты здесь делаешь? Ты - ну, моя другая тетя, я имею в виду - раньше была исследователем в городском музее, но похоже, ты не делись ее профессией.)]
+	</p><p>
+		Лилая тащит стул в центр нарисованной мелом пентаграммы и начинает возиться с рядом странных прожекторов на каждом из пяти углов. Настраивая свои инструменты, она жестикулирует, приглашая тебя сесть, и отвечает на твой вопрос, [lilaya.speech(Так, другая 'я' тоже исследователь? Я большую часть времени провожу здесь, находя новые способы использовать Аркана и вводить её в повседневные предметы. Мама обеспечивает-)] Лилая обрывает свою фразу, очевидно сказав больше, чем собиралась, прежде чем быстро пытается сменить тему, [lilaya.speech(Л-Л-Ложись туда и сиди тихо, пока я настраиваю эти!)]
+	</p><p>
+		Ты делаешь, как она говорит, не желая поднимать вопрос и не давая ей еще одной причины чувствовать себя смущенной. Пока она работает, ты видишь, как ее маленький хвост работает как третья конечность, поднимаясь, чтобы поворачивать ручки и тянуть рычаги, пока она занято настраивает странные приборы.
+	</p><p>
+		После нескольких минут она, кажется, удовлетворена своими настройками и выходит из отмеченной области, прежде чем повернуться к вам и улыбнуться. [lilaya.speech(Всё готово! Не волнуйтесь, это не больно и ничего подобного, это просто позволит мне узнать немного больше о вас. Вы готовы?)] она спрашивает, и вы быстро отвечаете утвердительно.
+	</p><p>
+		Лилая поднимает руку, создавая вокруг нее вихрь странных розовых огней, готовясь к своему тесту. Магия явно существует в этом мире, и вы делаете себе заметку, чтобы спросить Лилайю больше об этом после того, как она закончит свой тест, но пока вы сидите неподвижно, как она попросила. Розовые огни быстро усиливаются, и с внезапным толчком вперед они вылетают из руки Лилайи, стремясь к пяти инструментам, похожим на прожекторы, и заставляя их издать ослепительный розовый вспышку.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_5"><![CDATA[
-	<p>
-		You blink once, then twice, then try rubbing your eyes. No matter what you do, all you can see is a pulsating pink glow. You start to panic as you realise that you've been blinded by Lilaya's test.
-	</p>
-	<p>
-		[pc.speech(Erm, Lilaya?! I can't see!)] you call out.
-	</p>
-	<p>
-		Thankfully, Lilaya quickly responds with some good news, [lilaya.speech(O-Oh, s-sorry! I should have m-mentioned that! E-Erm... Don't worry, it'll pass in j-just a few moments!)] She sounds incredibly nervous, and you wonder what's happened to embarrass her this time.
-	</p>
-	<p>
-		True to her word, after a few moments the blindness starts to recede. Slowly at first, you start to make out the figure of Lilaya standing in front of you. After a few more blinks, your vision is completely back to normal, and you see that you're surrounded by a faint pink mist. You look up to see that Lilaya is holding her hands up at arms-length in front of her, as though she's trying to block part of her view of you. Her cheeks look like they're about to burst into flames, so red they've gone, and it's at that moment you notice a cool breeze blowing over your chest.
-	</p>
-	<p>
-		As you look down, Lilaya makes a little startled cry and somehow manages to blush even more, [lilaya.speech(~Eek!~ S-sorry! I-I didn't know that would happen!)]
-	</p>
-	<p>
-		Now it's your turn to blush, as you look down to see that all of your clothes have disappeared. You quickly push your legs together, moving your hands to cover yourself up as you try to hide your naked body from Lilaya's sight. It's at this moment that the door to the lab swings open, and you and Lilaya turn to see Rose entering the room, carrying a tray with a couple of cups of tea on it. She looks across at the two of you, and suddenly there are three blushing people in the room.
-	</p>
-	<p>
-		[lilaya.speech(Rose! Quick, d-do something!)] Lilaya shouts, frantically hopping up and down on the spot. [lilaya.speech([pc.NamePos] c-clothes have gone!)]
-	</p>
-	<p>
-		Rose quickly places the tray of tea down on one of the tables, and, obeying her mistress's command, points up at one of the room's many chandeliers. Immediately, you and Lilaya both turn your heads up to look at what the cat-girl maid is pointing at. There, hanging from the light-fixture above you, you see some of the clothes that you were wearing just moments ago. Glancing around, you see the other pieces of your outfit similarly scattered throughout the lab.
-	</p>
-	<p>
-		[rose.speech(I'll retrieve your clothing now,)] Rose states, casting her gaze back down at the floor as her cheeks continue to burn bright red, [rose.speech(this will only take a moment.)]
-	</p>
-	<p>
-		As Rose hurries to fetch a ladder, Lilaya turns her gaze back towards you. [lilaya.speech(This is amazing...)] she says, looking at the strange pink mist that's hovering all around you.  [lilaya.speech(I thought you wouldn't have any arcane aura at all, but... well... yours is easily as powerful as a demon's!)]
-	</p>
-	<p>
-		[pc.speech(Uum... So is that good?)] you venture, shifting uncomfortably as you try to conceal more of your naked body.
-	</p>
-	<p>
-		[lilaya.speech(Well, only people with weak auras are affected by the arcane thunder, so having one that you'd normally find on a demon is kind of good in that regard,)] she explains. [lilaya.speech(But if you've got an aura like a demon... Then you should be able to harness the arcane like a demon!)]
+	<htmlContent tag="INTRO_NEW_WORLD_5"><![CDATA[<p>
+		Ты моргаешь один раз, затем два раза, затем пытаешься потереть глаза. Независимо от того, что ты делаешь, всё, что ты можешь видеть, - это пульсирующий розовый свет. Ты начинаешь паниковать, когда понимаешь, что ты ослеплен испытанием Лилайи.
+	</p><p>
+		[pc.speech(Эрм, Лилая?! Я ничего не вижу!)] ты кричишь.
+	</p><p>
+		К счастью, Лилая быстро отвечает с хорошей новостью, [lilaya.speech(О-О, с-извините! Я должна была упомянуть это! Э-Эр... Не волнуйтесь, это пройдет через j-всего несколько минут!)] Она звучит невероятно нервно, и вы задаетесь вопросом, что же произошло, чтобы смутить ее на этот раз.
+	</p><p>
+		Сдержав свое слово, через несколько мгновений слепота начинает отступать. Сначала медленно, вы начинаете различать фигуру Лилаи, стоящей перед вами. После еще нескольких морганий ваше зрение полностью восстанавливается, и вы видите, что вас окружает легкий розовый туман. Вы смотрите вверх и видите, что Лилая поднимает руки на длину своих рук перед собой, как будто она пытается заблокировать часть своего взгляда на вас. Ее щеки выглядят так, будто они вот-вот вспыхнут пламенем, настолько красными они стали, и в этот момент вы замечаете, что по вашему телу дует прохладный ветерок.
+	</p><p>
+		Лилая, глядя вниз, издает маленький испуганный крик и каким-то образом еще больше краснеет, [lilaya.speech(~Э-э-э-э! П-прости! Я-я не знала, что это произойдет!)]
+	</p><p>
+		Теперь ваша очередь покраснеть, когда вы опускаете взгляд и замечаете, что вся ваша одежда исчезла. Вы быстро скрестите ноги, прикрывая себя руками, пытаясь скрыть своё обнажённое тело от взгляда Лилайи. В этот момент дверь лаборатории распахивается, и вы с Лилайей поворачиваетесь, чтобы увидеть Розу, входящую в комнату, неся поднос с двумя чашками чая. Она смотрит на вас обоих, и вдруг в комнате оказываются три покрасневших человека.
+	</p><p>
+		[lilaya.speech(Роза! Быстро, д-сделай что-нибудь!)] Лилая кричит, судорожно прыгая на месте. [lilaya.speech([pc.NamePos] р-одежда пропала!)]
+	</p><p>
+		Роуз быстро ставит поднос с чаем на один из столов и, повинуясь приказу своей госпожи, указывает на одну из многочисленных люстр в комнате. Сразу же ты и Лилая поворачиваешь головы, чтобы посмотреть на то, на что указывает девушка-кот. Там, вися на люстре над вами, вы видите часть одежды, которую вы носили всего несколько мгновений назад. Оглядываясь вокруг, вы видите, что другие части вашего наряда также разбросаны по лаборатории.
+	</p><p>
+		[rose.speech(Я сейчас возьму твою одежду,)] Роуз говорит, бросая взгляд вниз на пол, её щеки продолжают гореть ярким красным цветом, [rose.speech(это займёт всего лишь минуту.)]
+	</p><p>
+		Пока Роуз спешит за лестницей, Лилая обращает свой взгляд на тебя. [lilaya.speech(Это удивительно...)] говорит она, глядя на странную розовую дымку, которая витает вокруг тебя.  [lilaya.speech(Я думала, что у тебя вообще не будет аркана, но... ну... твой аркан легко сравним с арканом демона!)]
+	</p><p>
+		[pc.speech(Ум... Так это хорошо?)] ты спрашиваешь, неловко сдвигая тело, пытаясь прикрыть больше своей наготы.
+	</p><p>
+		[lilaya.speech(Ну, только люди со слабой Аурой подвержены воздействию Аркана грозы, так что наличие Ауры, которую обычно можно найти у демона, в этом отношении довольно хорошо,)] она объясняет. [lilaya.speech(Но если у вас есть Аура, как у демона... То вы должны быть в состоянии использовать Аркана, как демон!)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_6"><![CDATA[
-	<p>
-		[pc.speech(So I'm a... <i>demon</i>?! Like you?!)] you ask, not quite believing what Lilaya's saying.
-	</p>
-	<p>
-		[lilaya.speech(W-What do you mean, l-like me? C-Can't you see that I'm only a... a <i>half</i>-demon?)] Lilaya says, sounding more than a little upset. Before you can offer any sort of apology, she waves it off with one hand before turning around to search a nearby desk for something. She shouts back at you as she pulls open drawers and shifts piles of paperwork aside, [lilaya.speech(A-Anyway, you're not an <i>actual</i> demon. I mean, not having horns or anything is kind of a giveaway there! You mentioned that Lilith had something to do with this, and if that's the case, then she's probably the one who's given you an aura this strong. Oh, I guess you don't know, but Lilith is the ruler of this world. She's the most powerful demon to ever have existed, so if she's involved, this could be interesting! Anyway, seeing as you've got this aura, I want to test to see if you're able to use the arcane like a demon can. ~Aha! Found it!~)]
-	</p>
-	<p>
-		Just as Lilaya finds what she's looking for, Rose similarly finishes with her task, and, climbing back down the ladder she erected to retrieve your clothing, she starts moving towards you. Averting her gaze from your naked form, she folds your clothing neatly in her arms, before bowing her head a little and presenting them to you. As you take back your clothing, you groan as you see that there's something terribly wrong. Although all of your clothing is accounted for, the arcane power that caused them to teleport up onto the chandelier appears to have also shrunk them. Holding them up in your hands, they look to be at least several sizes too small.
-	</p>
-	<p>
-		[pc.speech(Erm... Lilaya? Your test has kind of... well, shrunk everything...)] you groan.
-	</p>
-	<p>
-		[lilaya.speech(So? Just put it on! I'm not looking, I promise!)] Lilaya responds, barely reacting to your predicament.
-	</p>
-	<p>
-		Sensing that you don't know what to do, Rose bows her head a little once more, and addresses you, [rose.speech([pc.Sir], please forgive the interruption, but I assume that you're not aware of the fact that the arcane causes clothing to adjust to fit to your body. If you start pulling them on, your clothes will fit themselves to you.)]
-	</p>
-	<p>
-		[lilaya.speech(T-Thank you, Rose,)] Lilaya says, clearly flustered by her inability to identify the problem you were having. [lilaya.speech(If you could just wait by the door for a few moments, I'll need you again in a minute.)]
-	</p>
-	<p>
-		As the two women turn their backs on you, you start to quickly pull on your clothes again. Just like Rose said, they shift to fit to your body, and you wonder what else is magical in this world. Once you're done, you inform your host that you've finished, and she turns around, smiling, before quickly moving over to you.
-	</p>
-	<p>
-		[lilaya.speech(Right, so let's try out this demonstone! Just hold out your hand, yes, like that,)] Lilaya instructs. [lilaya.speech(Now, when I place it on your palm, just let the energy flow into you. Don't worry, you can draw it back out at any time, but for now, just let it in...)]
-	</p>
-	<p>
-		Lilaya flicks a switch on one of the spotlights, and the pink mist vanishes from sight. Stepping forwards, you see that she's holding a strange shard of crystal, and you look on in wonder as you see its surface glittering and swirling with [#SPECIAL_PARSE_0]. She takes hold of your wrist with one hand, and with the other, places this 'demonstone' into your open palm. As its surprisingly cool surface comes into contact with your skin, you feel a gentle pulsing force pushing against you, trying to push its way in. You do as Lilaya instructed, and with surprising ease, you allow the demonstone to melt down into arcane energy and enter your body.
-	</p>
-	<p>
-		As a soothing warmth spreads up your arm, it feels like you've done this a thousand times before. You instinctively know that you're able to harness its power into what you'd once have called magic, and that it's the same sort of arcane power that's found in that strange thunderstorm, and, indeed, all throughout this world. Eager to try out this new power, you twist your hand, and a swirling vortex of [#SPECIAL_PARSE_1] immediately materialises around your arm. With another motion, you dispel it, and look up to see Lilaya beaming at you in excitement.
+	<htmlContent tag="INTRO_NEW_WORLD_6"><![CDATA[<p>
+		[pc.speech(Так я... <i>демон</i>?! Как ты?!)] ты спрашиваешь, не совсем веря словам Лилайи.
+	</p><p>
+		[lilaya.speech(W-Что ты имеешь в виду, л-как будто я? Н-Не видишь, что я всего лишь... всего лишь <i>полу</i>-демон?)] Лилая говорит, звуча более чем расстроенной. Прежде чем ты сможешь предложить какую-либо извинение, она отмахивается от тебя одной рукой, прежде чем повернуться и начать искать что-то на соседнем столе. Она кричит тебе вслед, когда открывает ящики и разбрасывает стопки бумаг, [lilaya.speech(A-В любом случае, ты не <i>настоящий</i> демон. Я имею в виду, отсутствие рогов - это довольно явный признак! Ты упомянул, что Лилит имела к этому отношение, и если это так, то, вероятно, именно она дала тебе такую сильную Ауру. О, я полагаю, ты не знаешь, но Лилит - правительница этого мира. Она самая могущественная демон, которая когда-либо существовала, так что если она причастна, это может быть интересно! В любом случае, поскольку у тебя есть эта Аура, я хочу проверить, можешь ли ты использовать Аркана так, как это может делать демон. ~Ага! Нашла!~)]
+	</p><p>
+		Лилая только что нашла то, что искала, и Роуз, завершив свою задачу, начинает спускаться по лестнице, которую она установила, чтобы забрать вашу одежду. Она отводит взгляд от вашего обнаженного тела, аккуратно складывает вашу одежду в руки, затем слегка наклоняет голову и протягивает вам ее. Вы берете свою одежду, и, увидев, что с ней что-то ужасно не так, вы стонете. Хотя вся ваша одежда на месте, аркана, которая заставила ее телепортироваться на люстру, также уменьшила ее размер. Держа ее в руках, вы видите, что она, по крайней мере, на несколько размеров меньше.
+	</p><p>
+		[pc.speech(Эр... Лилая? Твой тест как бы... ну, уменьшил всё...)] ты воешь.
+	</p><p>
+		[lilaya.speech(Ну и что? Просто надень! Я не смотрю, обещаю!)] Лилая отвечает, едва реагируя на твоё положение.
+	</p><p>
+		Чувствуя, что ты не знаешь, что делать, Роуз наклоняет голову еще раз и обращается к тебе: [rose.speech([pc.Sir], прошу прощения за вторжение, но я предполагаю, что ты не знаешь о том, что аркана заставляют одежду приспосабливаться к твоему телу. Если ты начнешь надевать их, твоя одежда приспособится к тебе.)]
+	</p><p>
+		[lilaya.speech(Спасибо, Роза,)] Лилая говорит, явно смутившись своей неспособностью определить проблему, с которой вы столкнулись. [lilaya.speech(Если бы вы могли подождать у двери несколько минут, мне понадобится ваша помощь через минуту.)]
+	</p><p>
+		Когда две женщины отворачиваются от вас, вы начинаете быстро надевать свою одежду. Как сказала Роуз, она приспосабливается к вашему телу, и вы задаетесь вопросом, что еще в этом мире является магическим. Когда вы закончите, вы сообщаете вашей хозяйке, что вы закончили, и она поворачивается, улыбаясь, прежде чем быстро подойти к вам.
+	</p><p>
+		[lilaya.speech(Ну, давайте попробуем этот демонский камень! Просто протяните руку, да, так, как я вам показываю,)] Лилая инструктирует. [lilaya.speech(Теперь, когда я помещу его на вашу ладонь, просто позвольте энергии проникнуть в вас. Не волнуйтесь, вы можете вытащить ее обратно в любой момент, но пока что просто позвольте ей проникнуть...)]
+	</p><p>
+		Лилая щелкает переключателем на одном из прожекторов, и розовая дымка исчезает из виду. Сделав шаг вперед, ты видишь, что она держит в руках странный кристалл, и ты с удивлением наблюдаешь, как его поверхность мерцает и крутится с [#SPECIAL_PARSE_0]. Она берет тебя за запястье одной рукой, а другой помещает этот "демон-камень" в твою открытую ладонь. Когда его удивительно прохладная поверхность соприкасается с твоей кожей, ты чувствуешь мягкое пульсирующее давление, пытающееся проникнуть внутрь. Ты делаешь то, что тебе говорит Лилая, и с удивительной легкостью позволяешь демон-камню раствориться в Аркане и проникнуть в твое тело.
+	</p><p>
+		Когда тепло распространяется по вашему телу, вы чувствуете, что делали это уже тысячу раз. Вы инстинктивно знаете, что можете использовать его силу для того, что раньше называли магией, и что это та же аркана, которую можно найти в том странном грозе, и, действительно, по всему этому миру. Желая попробовать эту новую силу, вы сжимаете кулак, и вокруг вашей руки немедленно появляется вихрь [#SPECIAL_PARSE_1]. Сделав еще один жест, вы рассеиваете его и смотрите на Лилайу, которая с восторгом смотрит на вас.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_7"><![CDATA[
-	<p>
-		[lilaya.speech(Haha! Yes, I <i>knew</i> it!)] Lilaya exclaims. [lilaya.speech(If you had contact with Lilith, then your aura... Well... Where's that book gone?!)]
-	</p>
-	<p>
-		Lilaya rushes off to one of the bookcases, pulling out old tomes and piling them up on one of the tables. You're left standing there, feeling more than a little alarmed with everything that's going on.
-	</p>
-	<p>
-		[pc.speech(Erm... Did you want this thing back?)] you ask, knowing that if you concentrate, you can draw the energy back out of your arm to re-form the demonstone that Lilaya gave you.
-	</p>
-	<p>
-		[lilaya.speech(What? Oh, no, that's fine, you keep it!)] Lilaya exclaims, still piling books up on the table. [lilaya.speech(You should be able to cast [#SPECIAL_PARSE_0] while you've got that absorbed! If you want to permanently learn how to cast spells, you'll need to reference a spell tome. I know I've got a spare tome somewhere around here. I'll get Rose to deliver it to you once I find it!)]
-	</p>
-	<p>
-		[pc.speech(Ok, thanks Lilaya. So... What now?)] you ask.
-	</p>
-	<p>
-		[lilaya.speech(This is all just the beginning!)] Lilaya calls out, stopping what she's doing and turning to face you. [lilaya.speech(Look, once I've got through all this, we'll need to run more tests! Inter-dimensional travel! And you've somehow been <i>given</i> a demon's aura! You're the most amazing discovery since, well, <i>ever</i>! I'd like it if you'd stay here so I can keep an eye on you. After all, it's not like you have anywhere else to go, right?)]
-	</p>
-	<p>
-		For the first time since arriving in this strange new world, you realise that you know nobody here, you have no money on you, and you're mostly clueless as to how this whole place works. Thankfully, Lilaya seems to be just as kind to you as your real aunt was, and you happily accept her offer of letting you stay with her.
-	</p>
-	<p>
-		[lilaya.speech(Rose? You can show [pc.name] to a suitable room now,)] Lilaya says, before sitting down to consult the books she's gathered.
-	</p>
-	<p>
-		[rose.speech(Yes, Mistress. Please come with me,)] Rose says, and you hurry to follow her as she leaves the lab.
-	</p>
-	<p>
-		You turn back to thank Lilaya once more, but you see that she's already busy flipping through pages and taking notes, and you decide against disturbing her. Falling into line behind Rose, you let her lead the way through the house as she takes you up to your new room.
+	<htmlContent tag="INTRO_NEW_WORLD_7"><![CDATA[<p>
+		[lilaya.speech(Ха! Да, я <i>знала</i> это!)] Лилая восклицает. [lilaya.speech(Если ты контактировал с Лилит, то твоя аура... Ну... Куда делась книга?!)]
+	</p><p>
+		Лилая бросается к одной из книжных полок, вытаскивая старинные тома и складывая их на один из столов. Ты стоишь там, чувствуя себя более чем напуганным всем, что происходит.
+	</p><p>
+		[pc.speech(Эр... Ты хотела вернуть эту штуку?)] ты спрашиваешь, зная, что если ты сосредоточишься, ты сможешь вытягивать энергию из своей руки, чтобы снова сформировать демонек, который Лилая тебе дала.
+	</p><p>
+		[lilaya.speech(Что? О, нет, это нормально, ты можешь оставить его!)] Лилая восклицает, продолжая складывать книги на стол. [lilaya.speech(Ты сможешь использовать [#SPECIAL_PARSE_0], пока оно у тебя впитано! Если ты хочешь навсегда научиться использовать заклинания, тебе нужно будет обратиться к книге заклинаний. Я знаю, что у меня есть запасная книга где-то здесь. Я попрошу Розу доставить её тебе, как только найду!)]
+	</p><p>
+		[pc.speech(Хорошо, спасибо, Лилая. Итак... Что теперь?)] ты спрашиваешь.
+	</p><p>
+		[lilaya.speech(Это только начало!)] Лилая вскрикивает, останавливая то, что она делает, и поворачиваясь к вам. [lilaya.speech(Посмотри, как только я пройду через все это, нам нужно будет провести больше тестов! Межпространственные путешествия! И ты каким-то образом <i>получил</i> ауру демона! Ты самое удивительное открытие с тех пор, как, ну, <i>когда-либо</i>! Мне бы хотелось, чтобы ты остался здесь, чтобы я могла следить за тобой. В конце концов, у тебя нет другого места, куда можно пойти, верно?)]
+	</p><p>
+		Впервые с момента прибытия в этот странный новый мир, вы понимаете, что не знаете здесь никого, у вас нет денег, и вы в основном не знаете, как работает это место. К счастью, Лилая кажется такой же доброй к вам, как и ваша настоящая тетя, и вы с радостью принимаете ее предложение остаться у нее.
+	</p><p>
+		[lilaya.speech(Роза? Ты можешь показать [pc.name] в подходящей комнате сейчас,)] Лилая говорит, прежде чем сесть, чтобы проконсультироваться с книгами, которые она собрала.
+	</p><p>
+		[rose.speech(Да, госпожа. Пожалуйста, идите со мной,)] Роза говорит, и вы спешите за ней, когда она покидает лабораторию.
+	</p><p>
+		Ты поворачиваешься, чтобы еще раз поблагодарить Лилайю, но замечаешь, что она уже занята перелистыванием страниц и деланием заметок, и решаешь не беспокоить ее. Вставая в очередь за Роуз, ты позволяешь ей вести тебя по дому, пока она ведет тебя в твою новую комнату.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_8"><![CDATA[
-	<p>
-		As you follow Rose up to your new room, she starts filling you in on some important details about this world.
-	</p>
-	<p>
-		[rose.speech(Mistress obviously wants you to stay safe while you're here, and from what I understand, you know nothing about this world. While staying here, you're free to come and go as you please, but there are certain things you should know about Dominion.)]
-	</p>
-	<p>
-		[pc.speech(Dominion?)] you ask.
-	</p>
-	<p>
-		[rose.speech(That's the name of this city. I think you've already seen that it's a bad idea to go outside during an arcane storm. While <i>you</i> might not be affected, everyone else <i>is</i>. Well, that is, apart from demons and those who've trained to harness the arcane. So anyway, all those other people turn into sex-crazed maniacs during an arcane storm, and they won't care if you're immune or not, they'll still try to fuck you.)]
-	</p>
-	<p>
-		[pc.speech(Err... Don't the police do anything about that?)] you ask, slightly taken aback at Rose's warning.
-	</p>
-	<p>
-		[rose.speech(You mean the Enforcers? Why would they? Once the arcane seeps into a person's mind, they'll happily consent to anything,)] Rose replies, [rose.speech(So if you don't like it, then don't go outside during a storm. Oh, and don't wander off down alleyways. Although the main streets are safe, the less-travelled parts of Dominion are often home to the more... unsavoury sorts of people.)]
-	</p>
-	<p>
-		By this time, Rose has led you up the grand staircase in the entrance hall and down a long corridor. She suddenly stops by one of the doors, and, opening it, steps through. You follow her inside, and find yourself standing in a lavishly decorated bedroom. A king-sized bed sits on one side of the room, flanked by a pair of finely-crafted drawers. An impressively-sized wardrobe and bookcase stand in the opposite corners, and between them, there's another door. On the far side of the room, a row of windows overlook a well-tended garden courtyard, and as you see a pink flash illuminate the neatly clipped hedgerows and colourful flower beds, you notice that no sound of the accompanying thunder manages to penetrate into the room.
-	</p>
-	<p>
-		[rose.speech(This is your room,)] Rose says, before walking over to the door next to the wardrobe, [rose.speech(and in here is your bathroom. If you leave your dirty clothes out here when you take a shower or bath, I'll have them cleaned by the time you're finished.)]
-	</p>
-	<p>
-		[pc.speech(Thanks,)] you say, not really knowing quite how to react to the fact that you're now living in what looks like a palace. [pc.speech(So, Lilaya's pretty important then, huh? I mean, this place is huge! Does she share these gardens with those other houses?)]
-	</p>
-	<p>
-		Rose sees you looking out the windows at the courtyard garden, [rose.speech(Everything you can see from here is owned by Mistress. And yes, seeing as you're completely unaware of who she is, Lilaya is a recognised daughter of Lyssieth; one of the seven elder Lilin.)]
-	</p>
-	<p>
-		Seeing the blank expression on your face, Rose sighs and continues, [rose.speech(The Lilin are the daughters of Lilith herself, and the most powerful and important of all of them are the seven elders. While the Lilin have numerous offspring, only a few are ever publicly acknowledged, and those that are, like Lilaya, are considered to be at the very pinnacle of the social hierarchy.)] Rose pauses for a moment to make sure that you're following along, before continuing, [rose.speech(Oh, and I heard you call Lilaya a demon earlier. Please don't say anything like that to her again. You see, the vast, vast majority of all the Lilins' recognised children are full demons, which makes my Mistress very self-conscious about being 'only' a half-demon. While it's not usually a slave's place to speak to someone like this, I hope you understand that I'm only telling you what Lilaya would want you to know. If there's nothing else, I shall return to my duties now. I'll be back in about half an hour to give you any further instructions that Lilaya might have.)]
-	</p>
-	<p>
-		[pc.speech(Wait, did you just say you're a <i>slave</i>?)]
-	</p>
-	<p>
-		[rose.speech(Mistress allows me to perform my duties without wearing a slave collar. Sorry if there was any confusion.)] Rose curtsies to you and exits the room, leaving you in a state of shock.
-	</p>
-	<p>
-		[pc.thought(They have slavery in this world?! And my aunt is apparently demon nobility, who owns at least one slave herself?! This is all just so unbelievable...)]
-	</p>
-	<p>
-		You walk over to your new bed and fall back onto it. The events of the past few hours finally have a chance to catch up with you, and you sink down onto the comfortable mattress, letting out a deep sigh as you try to sort out in your mind what's going on. Just as you feel yourself drifting off to sleep, a sudden knock at the door brings you back to your senses.
+	<htmlContent tag="INTRO_NEW_WORLD_8"><![CDATA[<p>
+		Когда ты следуешь за Роуз в свою новую комнату, она начинает рассказывать тебе важные детали об этом мире.
+	</p><p>
+		[rose.speech(Госпожа, очевидно, хочет, чтобы вы оставались в безопасности, пока вы здесь, и, насколько я понимаю, вы ничего не знаете об этом мире. Пока вы здесь, вы можете приходить и уходить, как вам угодно, но есть определенные вещи, которые вы должны знать о Dominion.)]
+	</p><p>
+		[pc.speech(Доминион?)] ты спрашиваешь.
+	</p><p>
+		[rose.speech(Это название этого города. Я думаю, вы уже видели, что это плохая идея выходить на улицу во время Аркана. Хотя <i>вы</i> можете не быть затронуты, все остальные <i>являются</i>. Ну, то есть, кроме демонов и тех, кто обучился использовать Аркана. Так или иначе, все эти люди превращаются в сексуально одержимых маньяков во время Аркана, и им все равно, вы ли вы невосприимчивы, они все равно попытаются трахнуть вас.)]
+	</p><p>
+		[pc.speech(Эр... Полиция не делает ничего по этому поводу?)] ты спрашиваешь, немного ошеломленный предупреждением Роуз.
+	</p><p>
+		[rose.speech(Вы имеете в виду Врачей? Зачем им это? Как только Аркана проникает в разум человека, он с радостью согласится на все,)] Роуз отвечает, [rose.speech(Так что, если вам это не нравится, то не выходите на улицу во время шторма. О, и не заблудитесь в переулках. Хотя на главных улицах безопасно, в менее посещаемых районах Доминиона часто живут более... неприятные люди.)]
+	</p><p>
+		К этому времени Роуз привела вас вверх по величественной лестнице в вестибюле и вниз по длинному коридору. Она вдруг останавливается у одной из дверей, и, открыв её, заходит внутрь. Вы следуете за ней и оказываетесь в роскошно оформленной спальне. На одной стороне комнаты стоит кровать размера "king-size", с обеих сторон которой стоят два изящно оформленных ящика. В противоположных углах комнаты стоят впечатляющего размера гардероб и книжная полка, а между ними - ещё одна дверь. На противоположной стороне комнаты ряд окон выходят на ухоженный садовый двор, и, когда вы видите, как розовый вспышка освещает аккуратно подстриженные кусты и цветники, вы замечаете, что ни один звук сопровождающего грозы не проникает в комнату.
+	</p><p>
+		[rose.speech(Это ваша комната,)] Роуз говорит, прежде чем подойти к двери рядом с гардеробом, [rose.speech(и здесь ваша ванная комната. Если вы оставите здесь грязную одежду, когда будете принимать душ или ванну, я сотру ее к тому времени, когда вы закончите.)]
+	</p><p>
+		[pc.speech(Спасибо,)] говоришь ты, не совсем понимая, как реагировать на то, что теперь ты живешь в том, что выглядит как дворец. [pc.speech(Так что Лилая довольно важная, да? Я имею в виду, это место огромно! Она делит эти сады с другими домами?)]
+	</p><p>
+		Роуз видит, как ты выглядываешь в окно во двор сада, [rose.speech(Всё, что ты видишь отсюда, принадлежит Матушке. И да, поскольку ты совершенно не представляешь, кто она, Лилая - признанная дочь Лиссит; одна из семи старших лилин.)]
+	</p><p>
+		Увидев ваше безразличное выражение лица, Роуз вздыхает и продолжает: [rose.speech(Лилины - это дочери самой Лилит, и самые могущественные и важные из них - семь старейшин. Хотя у Лилин много потомков, только немногие из них когда-либо признаются публично, и те, которые признаются, как Лилая, считаются вершиной социальной иерархии.)] Роуз делает паузу, чтобы убедиться, что вы следуете за ней, прежде чем продолжать: [rose.speech(О, и я слышала, как вы называли Лилую демоном раньше. Пожалуйста, не говорите ничего подобного о ней снова. Видите ли, подавляющее большинство всех признанных детей Лилин - это полные демоны, что заставляет мою Госпожу чувствовать себя неловко из-за того, что она 'только' наполовину демон. Хотя обычно раба не должен говорить с кем-то таким, я надеюсь, что вы поймете, что я говорю вам только то, что Лилая хотела бы, чтобы вы знали. Если больше нет вопросов, я вернусь к своим обязанностям. Я вернусь через полчаса, чтобы дать вам любые дальнейшие инструкции, которые Лилая могла бы иметь.)]
+	</p><p>
+		[pc.speech(Подожди, ты только что сказала, что ты <i>раб</i>?)]
+	</p><p>
+		[rose.speech(Госпожа позволяет мне выполнять свои обязанности без ошейника. Извините, если возникла путаница.)] Роуз делает вам поклон и выходит из комнаты, оставляя вас в состоянии шока.
+	</p><p>
+		[pc.thought(В этом мире есть рабство?! И моя тетя, по всей видимости, демонская аристократка, сама владеет хотя бы одним рабом?! Это все так невероятно...)]
+	</p><p>
+		Ты подходишь к своей новой кровати и ложишься на неё. События последних нескольких часов наконец дают тебе возможность догнать тебя, и ты садишься на удобный матрас, глубоко вздыхая, пытаясь разобраться в своей голове, что происходит. Как только ты чувствуешь, что засыпаешь, внезапный стук в дверь возвращает тебя в чувство.
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="INTRO_NEW_WORLD_9"><![CDATA[
-	<p>
-		[pc.speech(Come in!)] you shout, and Rose quickly opens the door and steps inside.
-	</p>
-	<p>
-		She curtsies to you before stepping back to pick something up she'd left outside. A moment later, she steps back into your room, carrying one of those strange floodlight-like instruments from Lilaya's lab.
-	</p>
-	<p>
-		[rose.speech(Good evening, Mistress would like to monitor your aura as you sleep, so she needs to put this in here,)] Rose explains, setting up the instrument in one corner of your room as she continues speaking, [rose.speech(Mistress also said that you can come back to the lab whenever you're ready for your next test. There's no rush, so if you wanted to go out and get some other clothing, or explore Dominion, then you can do all that first. Oh, and on the subject of clothing, Mistress also tasked me to warn you about the dangers of enchanted clothing, weapons, and tattoos. If you go out and buy some of these, please be aware that there's a limit to how many arcane enchantments a person can handle at once. Push yourself past your enchantment stability, and the arcane will very quickly start to drain your energy, as well as to remove any inhibitions you have regarding degrading sexual acts... So don't buy too much, and be careful.)]
-	</p>
-	<p>
-		[pc.speech(Ah, well, that's not really a problem right now. That is to say, I can't really go shopping; I don't think my credit card's going to work here,)] you explain.
-	</p>
-	<p>
-		[rose.speech(Well, I don't know what a credit card is, but if you're trying to say you've got no money, then Mistress already thought of that.)]
-	</p>
-	<p>
-		Rose finishes installing the equipment and walks over to you, and you see that she's carrying a small purse in her hand. She holds it out for you to take, and as she places it into your palm, you notice that it's heavier than you expected, and you can hear the sound of metal coins clinking over one another as you place the purse to one side.
-	</p>
-	<p>
-		[rose.speech(There are five-thousand flames in there, which should be more than enough to get some new clothes or whatever else it is you need. Mistress advises that you rest through this storm and go out shopping tomorrow; after all, the stores are usually only open between six in the morning to ten at night, so you might not even make it there before closing time. Mistress and I usually work through those hours as well, so the two of us will be retiring to our rooms soon. Oh, and please remember what I said about the alleyways being dangerous.)]
-	</p>
-	<p>
-		Rose turns and steps out of the room once more, and you see her bending down to retrieve something else that she's brought up with her. As she enters the room, you see that she's carrying a large, leather-bound book, with a pile of papers balanced on the top. [rose.speech(Here's the spell tome that Mistress said she'd give to you. These papers are copies of her research notes, which she said should give you all the information you'd need about arcane spells.)]
-	</p>
-	<p>
-		[pc.speech(Thank you Rose,)] You say, smiling at the cat-girl as she places the items down on your bedside table. Rose turns towards you and curtsies, before making her exit once again.
-	</p>
-	<p>
-		You spend the next half-hour copying down Lilaya's research notes into your phone, and once that's finished, you wonder what you should do next. The arcane storm seems to still be raging outside, and you think that it'd probably be best to get a good night's rest before wandering back out into the streets of Dominion...
+	<htmlContent tag="INTRO_NEW_WORLD_9"><![CDATA[<p>
+		[pc.speech(Заходи!)] ты кричишь, и Роуз быстро открывает дверь и заходит внутрь.
+	</p><p>
+		Она делает вам поклон, прежде чем отступить назад, чтобы поднять то, что она оставила снаружи. Через мгновение она возвращается в вашу комнату, неся одно из тех странных устройств, похожих на прожекторы, из лаборатории Лилайи.
+	</p><p>
+		[rose.speech(Добрый вечер, Госпожа хотела бы следить за вашей Аурой, пока вы спите, поэтому ей нужно вставить это сюда,) Роуз объясняет, устанавливая прибор в одном из углов вашей комнаты, продолжая говорить, [rose.speech(Госпожа также сказала, что вы можете вернуться в лабораторию, когда будете готовы к следующему тесту. Не спешите, поэтому, если вы захотите выйти и купить другую одежду, или исследовать Dominion, то вы можете сделать все это сначала. О, и по поводу одежды, Госпожа также поручила мне предупредить вас об опасностях, связанных с волшебной одеждой, оружием и татуировками. Если вы выйдете и купите что-то из этого, пожалуйста, имейте в виду, что есть предел того, сколько арканических заклинаний человек может выдержать за раз. Если вы перегрузите свою арканическую стабильность, аркана очень быстро начнут истощать вашу Энергию, а также снимать любые ингибиции, связанные с унизительными сексуальными действиями... Так что не покупайте слишком много, и будьте осторожны.)]
+	</p><p>
+		[pc.speech(Ах, ну, это не такая уж и проблема прямо сейчас. То есть, я не могу пойти по магазинам; я не думаю, что моя кредитная карта будет работать здесь,) ты объясняешь.
+	</p><p>
+		[rose.speech(Ну, я не знаю, что такое кредитная карта, но если вы пытаетесь сказать, что у вас нет денег, то Mistress уже подумала об этом.)]
+	</p><p>
+	Роуз заканчивает установку оборудования и подходит к тебе, и ты замечаешь, что она держит в руке маленькую сумочку. Она протягивает ее тебе, и когда ты берешь ее в руку, ты замечаешь, что она тяжелее, чем ты ожидал, и ты слышишь звук металлических монет, которые стучат друг о друга, когда ты кладешь сумочку в сторону.
+	</p><p>
+		[rose.speech(Внутри нас пять тысяч огней, которых должно хватить, чтобы купить новую одежду или что-то еще, в чем ты нуждаешься. Госпожа советует отдохнуть во время этой бури и отправиться на шопинг завтра; в конце концов, магазины обычно открыты с шести утра до десяти вечера, так что ты можешь не успеть туда добраться до закрытия. Госпожа и я обычно работаем в течение этих часов, так что мы скоро пойдем в свои комнаты. О, и пожалуйста, помни, что я сказала о том, что переулки опасны.)]
+	</p><p>
+		Роуз поворачивается и выходит из комнаты, а затем снова входит, наклоняясь, чтобы поднять что-то еще, что она принесла с собой. Когда она входит в комнату, вы видите, что она несет большую, переплетенную в кожу книгу, на которой лежит стопка бумаг. [rose.speech(Вот том с заклинаниями, который Mistress сказала, что она даст тебе. Эти бумаги - копии ее исследовательских заметок, которые, по ее словам, должны дать тебе всю необходимую информацию о арканах.)]
+	</p><p>
+		[pc.speech(Спасибо, Роза,)] Ты говоришь, улыбаясь кошачьей девушке, когда она ставит вещи на твою тумбочку. Роза поворачивается к тебе и делает поклон, прежде чем снова уйти.
+	</p><p>
+		Вы проводите следующие полчаса, переписывая заметки Лилайи в свой телефон, и, когда это заканчивается, вы задумываетесь, что же делать дальше. Аркана storm, похоже, все еще бушует снаружи, и вы думаете, что, вероятно, лучше всего будет хорошо выспаться, прежде чем снова выйти на улицы Доминиона...
 	</p>
 	]]>
 	</htmlContent>
