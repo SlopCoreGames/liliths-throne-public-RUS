@@ -17,7 +17,11 @@
     "res/txt/characters/dominion/helena.xml",
     "res/txt/characters/dominion/lilaya.xml",
     "res/txt/characters/dominion/lumi.xml",
-    "res/txt/characters/dominion/natalya.xml"
+    "res/txt/characters/dominion/natalya.xml",
+    "res/txt/characters/dominion/nyan.xml",
+    "res/txt/characters/dominion/reindeerOverseer.xml",
+    "res/txt/characters/dominion/rentalMommy.xml",
+    "res/txt/characters/dominion/scarlett.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

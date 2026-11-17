@@ -15,126 +15,124 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="ENCOUNTER_REPEAT"><![CDATA[
-	<p>
-		As you walk down one of Dominion's wide, marble-paved boulevards, you find yourself passing by Mommy's house again. Glancing over towards it, you see the [npc.race] sitting on her usual wooden bench. Almost instantly, she looks up and catches your eye, before beckoning you over.
+	<htmlContent tag="ENCOUNTER_REPEAT"><![CDATA[<p>
+		Прогуливаясь по одной из широких, мощёных мрамором улиц Доминиона, вы снова проходите мимо дома Мамочки. Заглянув в его сторону, вы видите [npc.race], сидящую на своей обычной деревянной скамейке. Почти мгновенно она поднимает взгляд и встречает ваш взгляд, прежде чем машет вам рукой, приглашая вас подойти ближе.
 	</p>
 	<p>
-		Walking up to the rental mommy, you smile at her as she uncrosses her legs and pats her thick thighs. [npc.speech(Heya sweetie! Do you want Mommy to give you a nice lap pillow? As the shirt says, it's only fifty flames!)]
+		Подходя к арендованной мамочке, вы улыбаетесь ей, когда она разводит ноги и поглаживает свои толстые бедра. [npc.speech(Привет, малышка! Хочешь, чтобы мамочка дала тебе хороший подушку для колен? Как написано на футболке, это всего лишь пятьдесят огней!)]
 	</p>
 	<p>
-		You wonder if you should take Mommy up on her offer, or decline and continue on your way...
+		Вы думаете, стоит ли принять предложение мамочки, или лучше продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DECLINE"><![CDATA[
 	<p>
-		[pc.speech(I'm on some important business right now,)] you say, before stepping back and preparing to move off. 
+		[pc.speech(Я сейчас в важном деле,)] говорите вы, прежде чем отступить и подготовиться к движению. 
 	</p>
 	<p>
-		[npc.speech(I understand, sweetie! If ever you need some comfort from Mommy, you know where to find me!)] Mommy cheerfully calls out, before sitting back and crossing her legs once more.
+		[npc.speech(Я понимаю, малышка! Если когда-нибудь тебе понадобится утешение от мамочки, ты знаешь, где меня найти!)] Мамочка радостно кричит, прежде чем снова сесть и скрестить ноги.
 	</p>
 	<p>
-		You make a brief, non-committal response, before quickly moving off and continuing on your way down the boulevard.
+		Вы делаете краткий, некомпрометирующий ответ, прежде чем быстро уйти и продолжить свой путь по бульвару.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMYS_EXTRAS"><![CDATA[
 	<p>
-		[pc.speech(That sounds kind of nice...)]
-		 you find yourself answering.
+		[pc.speech(Это звучит довольно мило...)]
+		 вы отвечаете.
+	</p><p>
+		[npc.speech(Ну, пятьдесят кредитов, и вы сможете узнать, насколько это приятно!)] Мама радостно отвечает, прежде чем снова погладить свои пышные бедра.
 	</p>
 	<p>
-		[npc.speech(Well, fifty flames, and you can find out just how nice it is!)] Mommy cheerfully replies, before patting her plump thighs once more.
+		Не в силах устоять перед предложением [npc.race], ты быстро передаёшь нужную сумму, прежде чем садишься на скамейку рядом с ней. Прежде чем ты сможешь сделать хоть один шаг, Мама наклоняется и обнимает тебя, прежде чем втягивает тебя в тесное, любящее объятие. Её [npc.breastSize] [npc.breasts] приятно давят на тебя, когда Мама внезапно наклоняется, чтобы поцеловать тебя в щеку. [npc.speech(Хорошо [pc.girl]! Теперь позволь Маме хорошо позаботиться о тебе!)]
 	</p>
 	<p>
-		Unable to resist the [npc.race]'s offer, you quickly hand over the requested sum, before sitting down on the bench next to her. Before you can make any further move, Mommy leans over and wraps her arms around you, before pulling you into a tight, loving hug. Her [npc.breastSize] [npc.breasts] pleasantly press against you as Mommy suddenly leans in to kiss you on the cheek. [npc.speech(Good [pc.girl]! Now, let Mommy take good care of you!)]
+		С этим, Мама мягко, но твёрдо тянет тебя вниз, пока твоя голова не окажется на её коленях. Ты поднимаешь своё [pc.legs] и ложишься полностью на скамейку, когда Мама позволяет тебе использовать её колени как подушку, и, выдыхая глубокий удовлетворённый вздох, ты закрываешь глаза, когда она начинает мягко гладить твою голову.
 	</p>
 	<p>
-		With that, Mommy gently, but firmly, pulls you down towards her, until your head is resting on her lap. You lift your [pc.legs] up and lie down fully on the bench as Mommy lets you use her lap as a pillow, and, letting out a deeply satisfied sigh, you close your eyes as she starts gently stroking your head.
+		На следующие пятнадцать минут ты позволяешь себе полностью расслабиться, наслаждаясь этим перерывом в темпе, когда [npc.race] мягко напевает и гладит твою голову. В конце концов, Мама мягко вздыхает, нарушая тишину, когда она говорит тебе. [npc.speech(Хорошо [pc.girl]... Ты любимец Мамы, ты знаешь? И потому что ты мой любимец, у меня есть для тебя специальное предложение. Мама в последнее время была одинока, и ей очень хотелось бы повеселиться...)]
 	</p>
 	<p>
-		For the next fifteen minutes, you allow yourself to completely relax, enjoying this break of pace as the busty [npc.race] softly hums and strokes your head. Eventually, Mommy gently sighs, breaking the silence as she speaks down to you. [npc.speech(Good [pc.girl]... You're Mommy's favourite, you know? And because you're my favourite, I've got a special offer for you. Mommy's been lonely lately, you see, and she'd really like to have some fun...)]
+		Вы можете услышать волнение в голосе Мамочки, когда она наклоняется, чтобы шептать вам на ухо, [npc.speech(За тысячу огней, ты можешь вернуться в мой дом, и я покажу тебе, как Мамочка обращается со своим хорошим [pc.girl]. Или, если ты думаешь, что у тебя есть на это способности, ты можешь заплатить две тысячи огней и взять на себя ответственность. Мамочка, конечно, хотела бы узнать, на что ты способен...)]
 	</p>
 	<p>
-		You can hear the excitement in Mommy's voice as she leans down to whisper in your ear, [npc.speech(For a thousand flames, you can come back into my house, and I'll show you how Mommy treats her good [pc.girl]. Or, if you think you've got what it takes, you can pay two thousand flames and take charge. Mommy sure would like to find out what you're capable of...)]
-	</p>
-	<p>
-		With that, Mommy straightens back up, continuing to stroke your head as she sighs, [npc.speech(Just let me know if you're interested.)]
+		С этими словами Мамочка выпрямляется, продолжая гладить твою голову, когда она вздыхает, [npc.speech(Просто дай мне знать, если ты заинтересован.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMYS_EXTRAS_OFFER_BREASTFEEDING"><![CDATA[
 	<p>
-		As you're wondering if you should take Mommy up on her offer or not, she suddenly seems to remember something, and happily continues, [npc.speech(Oh! If you wanted Mommy to feed you, I can do that too! It's five hundred flames if you want to do it inside, or a thousand if you want me to feed you out here. And just so we're clear, I'm talking about feeding you with these right here.)]
+		Пока ты размышляешь, стоит ли принять предложение Мамочки или нет, она внезапно, кажется, вспоминает что-то, и с радостью продолжает, [npc.speech(О! Если ты хотел, чтобы Мамочка накормила тебя, я могу это сделать! Это пятьсот огней, если ты хочешь сделать это внутри, или тысяча, если ты хочешь, чтобы я накормила тебя здесь. И, чтобы было ясно, я говорю о том, что накормлю тебя вот этим.)]
 	</p>
 	<p>
-		You roll your head back to look up at Mommy, who playfully squeezes her [npc.breastSize] [npc.breasts] as she smiles down at you. You wonder if you should take Mommy up on any of her offers, or decline and continue on your way...
+		Ты откидываешь голову назад, чтобы посмотреть на Мамочку, которая игриво сжимает свои [npc.breastSize] [npc.breasts], когда она улыбается тебе. Ты задаешься вопросом, стоит ли принять предложение Мамочки или отказаться и продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_HOUSE_ENTRY_BREASTFEEDING"><![CDATA[
 	<p>
-		[pc.speech(Mommy, could I have some milk?)] you ask, producing five hundred flames before handing them over to the [npc.name].
+		[pc.speech(Мамочка, можно мне молока?)] ты спрашиваешь, производя пятьсот огней, прежде чем передать их [npc.name].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_HOUSE_ENTRY_SEX_SUB"><![CDATA[
 	<p>
-		[pc.speech(Mommy, could I help you to have some fun?)] you ask, producing one thousand flames before handing them over to the [npc.name].
+		[pc.speech(Мамочка, можно мне помочь тебе повеселиться?)] ты спрашиваешь, производя тысячу огней, прежде чем передать их [npc.name].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_HOUSE_ENTRY_SEX_DOM"><![CDATA[
 	<p>
-		[pc.speech(Mommy, I'd like to show you a good time,)] you say, producing two thousand flames before handing them over to the [npc.name].
+		[pc.speech(Мама, я бы хотел(а) показать тебе, как я провожу время,)] ты говоришь, создавая две тысячи огней, прежде чем передать их [npc.name].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_HOUSE_ENTRY"><![CDATA[
 	<p>
-		[npc.speech(Of course, sweetie!)] Mommy happily replies, before gently sitting you up and taking hold of your [pc.hand]. [npc.speech(Come with me!)]
+		[npc.speech(Конечно, дорогая!)] Мама с радостью отвечает, прежде чем мягко посадить тебя и взять твою [pc.hand].
 	</p>
 	<p>
-		With that, Mommy stands up, and, still holding on to your [pc.hand], leads you over to the front door of her house, before quickly unlocking it and pulling you inside. You find yourself being led into a large, marble-floored entrance hall, which is furnished with several small cabinets and potted plants. You aren't given much time to look around, however, as Mommy quickly pulls you over towards the nearest door, before leading you into her lounge.
+		С этими словами Мама встает и, все еще держа твою [pc.hand], ведет тебя к входной двери своего дома, прежде чем быстро отпирает ее и тянет тебя внутрь. Ты оказываешься в большом вестибюле с мраморным полом, который обставлен несколькими маленькими шкафами и горшками с растениями. У тебя нет много времени, чтобы осмотреться, однако, так как Мама быстро тянет тебя к ближайшей двери, прежде чем заводить тебя в свою гостиную.
 	</p>
 	<p>
-		The lush, cream-coloured carpet is almost the exact same hue as that of the floral wallpaper, which, in combination with the white leather sofas and large skylight, gives this room a very bright and airy feel. You don't get much time to examine this room either, however, as the moment that you're led inside, Mommy turns around and wraps her arms around you. Stepping forwards, she plants a big, wet kiss on your lips, before leaning back and smiling lovingly at you.
+		Пышный, кремовый ковер почти такого же оттенка, как и цветочный обой, который, в сочетании с белыми кожаными диванами и большим фонарем, придает этой комнате очень яркий и воздушный вид. У тебя нет много времени, чтобы осмотреться, однако, так как в тот момент, когда тебя завели внутрь, Мама поворачивается и обнимает тебя. Сделав шаг вперед, она целует тебя в губы, прежде чем отступить и с любовью улыбнуться тебе.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_SEX_SUB"><![CDATA[
 	<p>
-		[npc.speech(Good [pc.girl]!)] she cheerfully exclaims. [npc.speech(Now, let Mommy take good care of you...)]
+		[npc.speech(Хороший [pc.girl]!)] она радостно восклицает. [npc.speech(Теперь дай Маме хорошо позаботиться о тебе...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_SEX_DOM"><![CDATA[
 	<p>
-		[npc.speech(Good [pc.girl]!)] she cheerfully exclaims. [npc.speech(Now, show me how you want to treat your Mommy...)]
+		[npc.speech(Хороший [pc.girl]!)] она радостно восклицает. [npc.speech(Теперь покажи, как ты хочешь обращаться с твоей Мамой...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMYS_EXTRAS_DECLINED"><![CDATA[
 	<p>
-		Not liking the sound of Mommy's offers, you slowly sit back up on the bench.
+		Не liking the sound of Mommy's offers, you slowly sit back up on the bench.
 		 [pc.speech(Sorry, but I've got some business that I need to take care of. Maybe another time.)]
 	</p>
 	<p>
 		[npc.speech(I understand, sweetie! If ever you need some extra comfort from Mommy, you know where to find me!)] Mommy cheerfully calls out, before sitting back and crossing her legs once more.
 	</p>
 	<p>
-		You make a brief, non-committal response, before quickly moving off and continuing on your way down the boulevard.
+		Вы делаете краткий, некомпрометирующий ответ, прежде чем быстро уйти и продолжить свой путь по бульвару.
 	</p>
 	]]>
 	</htmlContent>
@@ -153,57 +151,57 @@
 		[npc.speech(Come on then, don't keep Mommy waiting!)] Mommy gently teases, before leaning forwards to take hold of your head in her hands. You allow the [npc.race] to guide your face down to her breasts, before pressing one of her [npc.nipples+] against your [pc.lips+].
 	</p>
 	<p>
-		Letting out a hungry little [pc.moan], you wrap your [pc.lips] around Mommy's [npc.nipple+(true)], before starting to greedily kiss and suck on it. A deep, satisfied sigh drifts down to you as Mommy feels you start to suckle away at her teat. Almost instantly, a stream of [npc.milk+] starts to leak out into your mouth, and you find yourself hungrily gulping it down as Mommy strokes and cradles your head. 
+		Пускаясь в голодную маленькую [pc.moan], ты обхватываешь [pc.lips] вокруг [npc.nipple+(true)], прежде чем начать жадно целовать и сосать его. Глубокий, удовлетворённый вздох доносится до тебя, когда Мама чувствует, как ты начинаешь сосать её грудь. Почти мгновенно, поток [npc.milk+] начинает вытекать в твою рот, и ты находишь себя, жадно глотая его, в то время как Мама гладит и прижимает твою голову. 
 	</p>
 	<p>
-		After a little while, the milk from Mommy's teat starts to dry up, and with a little wet sucking noise, she pries you away from her breast. Before you can complain, she quickly shifts her torso to one side, and presents her other breast to your still-hungry mouth. Instantly, you wrap your [pc.lips] around the [npc.nipple+(true)], and let out a muffled [pc.moan] of delight as a fresh stream of [npc.milk] starts flowing into your mouth.
+		Через некоторое время, молоко из груди Мамы начинает иссякать, и, с небольшим звуком влажного сосания, она отрывает тебя от её груди. Прежде чем ты можешь пожаловаться, она быстро поворачивает своё тело в сторону, и представляет тебе свою другую грудь для твоей всё ещё голодной рта. Мгновенно, ты обхватываешь [pc.lips] вокруг [npc.nipple+(true)], и выдыхаешь приглушённое [pc.moan] удовольствия, когда свежий поток [npc.milk] начинает течь в твою рот.
 	</p>
 	<p>
-		After some time, you've drunk all of Mommy's milk, and she slowly moves your head away from her breasts. [npc.speech(Good [pc.girl]! Mommy's all out of milk now!)]
+		Через некоторое время, ты выпил всё молоко Мамы, и она медленно отводит твою голову от её груди. [npc.speech(Хорошая [pc.girl]! У Мамы больше нет молока!)]
 	</p>
 	<p>
-		You smile at Mommy as she clips her bra back into place, before pulling her t-shirt back down over her head. Taking hold of your hand, she then leads you back outside, before planting a wet kiss on your cheek and giving your [pc.ass] a little slap. [npc.speech(Run along now, and please do visit if you get hungry again!)]
+		Ты улыбаешься Маме, когда она застегивает свой лифчик обратно, прежде чем тянет свою майку обратно на голову. Схватив твою руку, она затем ведёт тебя обратно на улицу, прежде чем накладывает властный поцелуй на твою щеку и даёт твоей [pc.ass] лёгкую пощечину. [npc.speech(Беги теперь, и, пожалуйста, приходи снова, если ты снова проголодаешься!)]
 	</p>
 	<p>
-		[pc.speech(I will!)] you call out to Mommy, before continuing on your way down Dominion's boulevard.
+		[pc.speech(Я приду!)] ты кричишь Маме, прежде чем продолжать свой путь по бульвару Доминиона.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMYS_EXTRAS_BREASTFEEDING_PUBLIC"><![CDATA[
 	<p>
-		[pc.speech(Mommy, could I have some milk out here?)] you ask, before handing over one thousand flames.
+		[pc.speech(Мама, можно мне немного молока?)] ты спрашиваешь, прежде чем передать ей тысячу кредитов / огней (Flames).
 	</p>
 	<p>
-		[npc.speech(Of course, sweetie!)] Mommy happily replies, while continuing to stroke your head. [npc.speech(Mommy's nice and full today, so you make sure to drink as much milk as you want!)]
+		[npc.speech(Конечно, малыш!)] Мама радостно отвечает, продолжая гладить твою голову. [npc.speech(Мама сегодня очень полная, поэтому ты можешь пить столько молока, сколько хочешь!)]
 	</p>
 	<p>
-		You eagerly watch as Mommy pulls her t-shirt up to just beneath her chin, exposing her [npc.breastSize], [npc.breastShape] [npc.breasts], and the black maternity bra which is supporting them. Reaching up to unfasten one of the bra's specially-designed cups, she reveals her [npc.nippleSize], puffy [npc.nipples], which are surrounded by [npc.areolaSize] areolae.
+		Ты с нетерпением наблюдаешь, как Мама поднимает свою футболку до подбородка, обнажая свои [npc.breastSize], [npc.breastShape] [npc.breasts] и черный бюстгальтер для беременных, который их поддерживает. Доставая одну из чашек бюстгальтера, она обнажает свои [npc.nippleSize], пухлые [npc.nipples], которые окружены [npc.areolaSize] ареолами.
 	</p>
 	<p>
-		[npc.speech(Come on then, don't keep Mommy waiting!)] Mommy gently teases, before leaning forwards to take hold of your head in her hands. You allow the [npc.race] to guide your face up to her breasts, before pressing one of her [npc.nipples+] against your [pc.lips+].
+		[npc.speech(Ну что ж, не заставляй Маму ждать!)] Мама нежно поддразнивает, прежде чем наклониться вперед, чтобы взять твою голову в свои руки. Ты позволяешь [npc.race] провести твою голову к ее груди, прежде чем прижать одну из ее [npc.nipples+] к твоей [pc.lips+].
 	</p>
 	<p>
-		Letting out a hungry little [pc.moan], you wrap your [pc.lips] around Mommy's [npc.nipple+(true)], before starting to greedily kiss and suck on it. A deep, satisfied sigh drifts down to you as Mommy feels you start to suckle away at her teat. Almost instantly, a stream of [npc.milk+] starts to leak out into your mouth, and you find yourself hungrily gulping it down as Mommy strokes and cradles your head. 
+		Пускаясь в голодную маленькую [pc.moan], ты обхватываешь [pc.lips] вокруг [npc.nipple+(true)], прежде чем начать жадно целовать и сосать его. Глубокий, удовлетворённый вздох доносится до тебя, когда Мама чувствует, как ты начинаешь сосать её грудь. Почти мгновенно, поток [npc.milk+] начинает вытекать в твою рот, и ты находишь себя, жадно глотая его, в то время как Мама гладит и прижимает твою голову. 
 	</p>
 	<p>
-		After a little while, the milk from Mommy's teat starts to dry up, and with a little wet sucking noise, she pries you away from her breast. Before you can complain, she quickly shifts her torso to one side, and presents her other breast to your still-hungry mouth. Instantly, you wrap your [pc.lips] around the [npc.nipple+(true)], and let out a muffled [pc.moan] of delight as a fresh stream of [npc.milk] starts flowing into your mouth.
+		Через некоторое время, молоко из груди Мамы начинает иссякать, и, с небольшим звуком влажного сосания, она отрывает тебя от её груди. Прежде чем ты можешь пожаловаться, она быстро поворачивает своё тело в сторону, и представляет тебе свою другую грудь для твоей всё ещё голодной рта. Мгновенно, ты обхватываешь [pc.lips] вокруг [npc.nipple+(true)], и выдыхаешь приглушённое [pc.moan] удовольствия, когда свежий поток [npc.milk] начинает течь в твою рот.
 	</p>
 	<p>
-		After some time, you've drunk all of Mommy's milk, and she slowly moves your head away from her breasts. [npc.speech(Good [pc.girl]! Mommy's all out of milk now!)]
+		Через некоторое время, ты выпил всё молоко Мамы, и она медленно отводит твою голову от её груди. [npc.speech(Хорошая [pc.girl]! У Мамы больше нет молока!)]
 	</p>
 	<p>
-		You smile at Mommy as she clips her bra's cups back into place, before pulling her t-shirt back down over her breasts. As you sit up on the bench, Mommy leans over to plant a wet kiss on your cheek, before giving your head a little pat. [npc.speech(Run along now, and please do visit if you get hungry again!)]
+		Ты улыбаешься Маме, когда она застегивает чашки бюстгальтера обратно, прежде чем снова опускает футболку на свои груди. Когда ты садишься на скамейку, Мама наклоняется, чтобы поцеловать тебя в щеку, прежде чем слегка погладить твою голову. [npc.speech(Беги, а если захочешь еще раз поесть, приходи!)]
 	</p>
 	<p>
-		[pc.speech(I will!)] you call out to Mommy, before standing up and continuing on your way down Dominion's boulevard.
+		[pc.speech(Я приду!)] ты кричишь Маме, прежде чем встать и продолжить свой путь по бульвару Dominion.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MOMMY_ORGASMED"><![CDATA[
 	<p>
-		Mommy collapses down onto the nearest sofa, panting. [npc.speech(Mmm... That was great...)]
+		Мама падает на ближайший диван, тяжело дыша. [npc.speech(Ммм... Это было здорово...)]
 	</p>
 	<p>
 		You smile down at Mommy as she catches her breath, and reply, [pc.speech(I'm glad you had fun, Mommy!)]
@@ -229,7 +227,7 @@
 		You do as Mommy says, tidying up the lounge so that it's in the same state as when you entered. Once you're done, Mommy takes hold of your hand, before leading you back outside, planting a wet kiss on your cheek, and giving your [pc.ass] a little slap. [npc.speech(Run along now, and please do visit Mommy again!)]
 	</p>
 	<p>
-		[pc.speech(I will!)] you call out to Mommy, before continuing on your way down Dominion's boulevard.
+		[pc.speech(Я приду!)] ты кричишь Маме, прежде чем продолжать свой путь по бульвару Доминиона.
 	</p>
 	]]>
 	</htmlContent>
@@ -242,7 +240,7 @@
 		You do as Mommy says, sitting down on one of her sofas as she tidies up the lounge. Once she's done, Mommy takes hold of your hand, before leading you back outside, planting a wet kiss on your cheek, and giving your [pc.ass] a little slap. [npc.speech(Run along now, and please do visit Mommy again!)]
 	</p>
 	<p>
-		[pc.speech(I will!)] you call out to Mommy, before continuing on your way down Dominion's boulevard.
+		[pc.speech(Я приду!)] ты кричишь Маме, прежде чем продолжать свой путь по бульвару Доминиона.
 	</p>
 	]]>
 	</htmlContent>

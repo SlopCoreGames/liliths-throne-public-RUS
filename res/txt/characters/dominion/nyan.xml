@@ -31,21 +31,22 @@
 			Curious to find out more about the sort of books your girlfriend likes reading, you ask Nyan about the romance novel she showed you before.
 		</p>
 		<p>
-			[nyan.speechNoEffects(O-Oh, you mean 'Paradise Found'?)] she asks, holding up the book in question. Shuffling her feet, the cat-girl continues, [nyan.speechNoEffects(I-It's the final book in a t-trilogy about a c-cat-girl finding love in D-Dominion. It's by my f-favourite author...)]
+			[nyan.speechNoEffects(O-Oh, вы имеете в виду 'Paradise Found'?)] она спрашивает, держа в руках книгу. Переступая с ноги на ногу, девушка-кот продолжает, [nyan.speechNoEffects(I-Это последняя книга в трилогии о том, как девушка-кот находит любовь в D-Dominion. Она написана моим любимым автором...)]
 		</p>
 		<p>
-			Continuing to question Nyan about these books, you soon discover that she's quite the bibliophile, and while she's happy to read books of any genre, she has a particular love for romance novels. From what she says, it sounds as though she's read almost everything ever published in this genre, and has a signed copy of every book ever written by her favourite author.
+			Продолжая задавать вопросы Нян о этих книгах, вы вскоре обнаруживаете, что она довольно большая любительница книг, и хотя она с удовольствием читает книги любого жанра, она особенно любит романы. Судя по её словам, похоже, что она прочитала почти всё, что когда-либо было опубликовано в этом жанре, и у неё есть подписной экземпляр каждой книги, когда-либо написанной её любимым автором.
 		</p>
 		<p style='text-align:center;'>
-			<i>From your conversation with Nyan, you learn that [style.italicsMinorGood(her favourite book is called 'One Day in June')].</i>
+			<i>Из вашего разговора с Нян вы узнаёте, что [style.italicsMinorGood(любимая книга называется 'One Day in June')].</i>
 		</p>
 	#ENDIF
 	<p>
 		#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
-			In her excitement at being able to talk with you about this topic, Nyan's stutter almost completely disappears. Encouraged by this sign, you happily continue talking with your girlfriend about books, and before you know it, almost an hour has passed by.
+			В своём восторге от того, что может поговорить с вами на эту тему, заикание Нян почти полностью исчезает. Ободренный этим признаком, вы с удовольствием продолжаете разговор с вашей девушкой о книгах, и прежде чем вы успеваете это осознать, уже прошло почти час.
 		#ELSE
-			In her excitement at being able to talk with you about this topic, Nyan starts enthusiastically recounting the storylines of all of her favourite books. Happy to see your girlfriend enjoying herself, you continue talking with her about her books for quite some time, and before you know it, almost an hour has passed by.
-		#ENDIF
+			В своём восторге от того, что может поговорить с вами на эту тему, Нян начинает с энтузиазмом пересказывать сюжеты всех своих любимых книг. Рад, что видите, как ваша девушка наслаждается, вы продолжаете разговаривать с ней о её книгах довольно долго, и прежде чем вы успеваете это осознать, уже прошло почти час.		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	]]>
 	</htmlContent>
@@ -53,19 +54,21 @@
 	<htmlContent tag="NYAN_TALK_NYAN_WORK"><![CDATA[
 	#IF(game.getDialogueFlags().getSavedLong('NYAN_WORK')>-1)
 		<p>
-			Deciding that it would be a good idea to find out how Nyan's work has been going lately, you ask her how she's coping with being this store's owner and manager.
+			Решив, что было бы неплохо узнать, как у Ньян дела с работой в последнее время, вы спрашиваете её, как она справляется с тем, что является владелицей и управляющей этого магазина.
 		</p>
 		#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
 			<p>
-				[nyan.speechNoEffects(O-Oh, well, I try my best, but I'm still not v-very good at dealing with customers,)] Nyan admits once again. Looking down at the floor and shuffling her feet, she continues, [nyan.speechNoEffects(I-I asked all the staff the other d-day if they'd like me to get m-more involved on the shop floor, b-but they all said that I can s-stick to doing the finances and ordering s-stock. They know how n-nervous I get around people, and they're a-all so considerate...)]
+				[nyan.speechNoEffects(O-О, ну, я стараюсь изо всех сил, но всё равно не очень хорошо справляюсь с клиентами,)] Ньян снова признаётся. Смотря вниз на пол и перебирая ногами, она продолжает, [nyan.speechNoEffects(I-Я спросила весь персонал в прошлый д-день, хотят ли они, чтобы я больше участвовала в работе магазина, но они все сказали, что я могу с-сидеть за финансами и заказывать с-товар. Они знают, как я н-нервничаю рядом с людьми, и все так заботливы...)]
 			</p>
 			<p>
-				Curious to hear more about Nyan's role in her business, you continue talking with her about this topic for quite some time. While most of what she tells you is relatively mundane, she again reveals a hint at how she came to own this business, and says how she was given it by someone close to her.
-				#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateRequested))
-					 Not wanting to reveal much more than that, however, the nervous cat-girl quickly shifts the topic and starts talking about her long work-hours, and how at some point in the future she'd like to start taking weekends off.
-				#ELSE
-					 Not wanting to reveal much more than that, however, the nervous cat-girl quickly shifts the topic and starts talking about her long work-hours, and how that her decision to start taking weekends off will give her more time in which to relax.
-				#ENDIF
+				[nyan.speechNoEffects(O-О, ну, я стараюсь изо всех сил, но всё равно не очень хорошо справляюсь с клиентами,)] Ньян снова признаётся. Смотря вниз на пол и перебирая ногами, она продолжает, [nyan.speechNoEffects(I-Я спросила весь персонал в прошлый д-день, хотят ли они, чтобы я больше участвовала в работе магазина, но они все сказали, что я могу с-сидеть за финансами и заказывать с-товар. Они знают, как я н-нервничаю рядом с людьми, и все так заботливы...)]
+			@@H1@@				#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateRequested))
+
+			@@H0@@
+				[nyan.speechNoEffects(O-О, ну, я стараюсь изо всех сил, но всё равно не очень хорошо справляюсь с клиентами,)] Ньян снова признаётся. Смотря вниз на пол и перебирая ногами, она продолжает, [nyan.speechNoEffects(I-Я спросила весь персонал в прошлый д-день, хотят ли они, чтобы я больше участвовала в работе магазина, но они все сказали, что я могу с-сидеть за финансами и заказывать с-товар. Они знают, как я н-нервничаю рядом с людьми, и все так заботливы...)]
+			@@H1@@				#ELSE
+					[nyan.speechNoEffects(O-О, ну, я стараюсь изо всех сил, но всё равно не очень хорошо справляюсь с клиентами,)] Ньян снова признаётся. Смотря вниз на пол и перебирая ногами, она продолжает, [nyan.speechNoEffects(I-Я спросила весь персонал в прошлый д-день, хотят ли они, чтобы я больше участвовала в работе магазина, но они все сказали, что я могу с-сидеть за финансами и заказывать с-товар. Они знают, как я н-нервничаю рядом с людьми, и все так заботливы...)]
+			@@H1@@				#ENDIF
 			</p>
 			<p style='text-align:center;'>
 				<i>From your conversation with Nyan, you're reminded that [style.italicsMinorGood(her store was called 'Golden Threads' before she took it over)].</i>
@@ -81,9 +84,8 @@
 	#ELSE
 		<p>
 			As it clearly plays such an important role in her life, you decide to ask Nyan about her work and how she copes with being this store's owner and manager.
-		</p>
-		<p>
-			[nyan.speechNoEffects(O-Oh, well, I try my best, but I'm really not v-very good at dealing with customers,)] Nyan admits. Looking down at the floor and shuffling her feet, she continues, [nyan.speechNoEffects(A-All of my staff are s-super nice and considerate, s-so they don't object to me j-just being in charge of finances and ordering s-stock.)]
+		</p><p>
+			[nyan.speechNoEffects(О-О, ну, я стараюсь изо всех сил, но я действительно не очень хорошо справляюсь с клиентами,)] Нян признается. Смотря вниз на пол и перебирая ногами, она продолжает, [nyan.speechNoEffects(А-Все мои сотрудники очень милые и внимательные, так что они не возражают против того, что я просто отвечаю за финансы и заказываю с-товар.)]
 		</p>
 		<p>
 			Curious to hear more about Nyan's role in her business, you continue talking with her about this topic for quite some time. While most of what she tells you is relatively mundane, she does reveal a hint at how she came to own this business, and lets slip that she was given it by someone close to her. Not wanting to say much more than that, however, the nervous cat-girl quickly shifts the topic and starts talking about her long work-hours, and how at some point in the future she'd like to start taking weekends off.
@@ -98,6 +100,8 @@
 		#ELSE
 			Soon enough, Nyan is enthusiastically talking about the finer details of her work. Happy to see your girlfriend enjoying herself, you continue talking with her about her store for quite some time, and before you know it, almost an hour has passed by.
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	]]>
 	</htmlContent>
@@ -124,18 +128,18 @@
 			</p>
 		#ELSE
 			<p>
-				[nyan.speech(Well, since I decided to start taking weekends off, I'm managed to spend a good deal of time enjoying both fashion and baking,)] she happily reveals, [nyan.speech(While I still don't really feel comfortable wearing the same sort of fashionable clothing which my mum does, I do like helping her choose her outfits. I've also started baking cakes as well, which is a lot of fun!)]
+				[nyan.speech(Ну, поскольку я решила начать брать выходные, я смогла провести много времени, наслаждаясь как модой, так и выпечкой,)] она с радостью рассказывает, [nyan.speech(Хотя я все еще не очень комфортно себя чувствую, надевая такую же модную одежду, как моя мама, мне нравится помогать ей выбирать наряды. Я также начала печь торты, что очень весело!)]
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Deciding that it would be a good idea to talk about a topic which she'll surely enjoy, you ask your girlfriend if she has any hobbies other than reading books.
+			Решив, что было бы неплохо поговорить на тему, которая ей наверняка понравится, ты спрашиваешь свою подругу, есть ли у нее какие-нибудь хобби помимо чтения книг.
 		</p>
 		<p>
-			[nyan.speechNoEffects(W-Well, I do like f-fashion, but I don't ever feel c-comfortable wearing anything other than m-my uniform,)] she reveals, [nyan.speechNoEffects(I-I also like baking, but I don't r-really get much time to d-do that these days...)]
+			[nyan.speechNoEffects(Ну, я действительно люблю моду, но я никогда не чувствую себя комфортно, надевая что-то, кроме моей формы,)] она рассказывает, [nyan.speechNoEffects(Я также люблю печь, но у меня не так много времени на это в последнее время...)]
 		</p>
 		<p>
-			Questioning Nyan further, you soon discover that her interest in fashion led her to her first job as a seamstress, and although she enjoyed that work, she eventually gave it up in order to assume her current role as owner and manager of this store. It was due to this change in career, and the subsequent longer work-hours which she's taken on, that she now doesn't have as much free time as she used to, and so can no longer pursue her other hobby of baking. Regretting the fact that she also no longer has the time to spare in which to keep up with any fashion trends not directly related to her work, your girlfriend says that she'd like to start taking weekends off at some point.
+			Продолжая расспрашивать Нян, ты вскоре узнаешь, что ее интерес к моде привел ее к первой работе швеей, и хотя она наслаждалась этой работой, она в конце концов оставила ее, чтобы занять свою нынешнюю должность владелицы и управляющей этого магазина. Именно из-за этой смены карьеры и последующих более долгих рабочих часов, которые она взяла на себя, у нее теперь не так много свободного времени, как раньше, и поэтому она больше не может заниматься своим другим хобби - выпечкой. Сожалея о том, что у нее также больше нет времени, чтобы следить за модными тенденциями, не связанными напрямую с ее работой, твоя подруга говорит, что хотела бы начать брать выходные в какой-то момент. 
 		</p>
 		<p style='text-align:center;'>
 			<i>From your conversation with Nyan, you learn that [style.italicsMinorGood(she used to bake pastries for her mum every morning)].</i>
@@ -147,6 +151,8 @@
 		#ELSE
 			Asking questions about her favourite dresses and cakes, you've soon got Nyan enthusiastically talking about her hobbies. Happy to see your girlfriend enjoying herself, you continue talking with her about fashion and baking for quite some time, and before you know it, almost an hour has passed by.
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	]]>
 	</htmlContent>
@@ -172,27 +178,25 @@
 			</p>
 			<p>
 				[nyan.speech(Yes, she's still living there with me,)] she reveals, [nyan.speech(She's got several other apartments all over Dominion, but she likes spending time with me, and said that she'll be living with me for the foreseeable future.)]
-			</p>
-			<p>
-				Switching to talk about the recent events in Nyan's life, you again hear about how she lives in an apartment very close to the Shopping Arcade, and that while she loves going out into the countryside, her work doesn't give her enough time in which to do so these days.
+			</p><p>
+				Переходя к разговору о недавних событиях в жизни Ньян, вы снова слышите о том, как она живет в квартире очень близко к Торговому Центру, и что, хотя она любит выезжать за город, ее работа не дает ей достаточно времени, чтобы это делать в последнее время.
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Wanting to find out more about Nyan's earlier life, you ask her if she's always lived in Dominion, and if she has family here in the city.
+			Хотите узнать больше о прошлом Нян, вы спрашиваете её, всегда ли она жила в Доминионе, и есть ли у неё здесь в городе семья.
 		</p>
 		<p>
-			[nyan.speechNoEffects(Y-Yes, I've always lived here, a-although I used to often v-visit the countryside with m-my mum,)] she reveals, [nyan.speechNoEffects(She's the only f-family I have here, although s-she's really busy these days, and I-I haven't seen her in a while...)]
+			[nyan.speechNoEffects(Да, я всегда жила здесь, хотя и часто ездила на дачу с мамой,)] она рассказывает, [nyan.speechNoEffects(Она единственная семья, которую я здесь имею, хотя и сейчас она очень занята, и я давно её не видела...)]
 		</p>
 		<p>
-			Continuing to question Nyan further on this topic, you discover that she lives in an apartment very close to the Shopping Arcade, and that while she loves going out into the countryside, her work doesn't give her enough time in which to do so these days. You also find out some details about her family, and although Nyan doesn't reveal too much, she does say how her mum is a very important businesswoman who travels all over Lilith's Realm to conduct her work. Her father, on the other hand, hasn't ever been involved in Nyan's life, and while she does have siblings elsewhere in the Realm, it's only her mother who she has a real relationship with.
-		</p>
-		<p style='text-align:center;'>
-			<i>From your conversation with Nyan, you learn that [style.italicsMinorGood(fields of daisies were her favourite sight when visiting the countryside)].</i>
+			Продолжая расспрашивать Нян по этому поводу, вы узнаёте, что она живёт в квартире очень близко к Торговому Центру, и что, хотя она и любит ездить на дачу, её работа не даёт ей достаточно времени для этого в последнее время. Вы также узнаёте некоторые подробности о её семье, и, хотя Нян не раскрывает слишком много, она говорит, как её мама - очень важная бизнесвумен, которая ездит по всему Царству Лилит, чтобы заниматься своей работой. Её отец, с другой стороны, никогда не был вовлечён в жизнь Нян, и, хотя у неё есть братья и сёстры в других частях Царства, это только с мамой у неё настоящие отношения.
+		</p><p style='text-align:center;'>
+			<i>Из вашего разговора с Нян вы узнаете, что [style.italicsMinorGood(поля с ромашками были ее любимым зрелищем при посещении деревни)].</i>
 		</p>
 	#ENDIF
 	<p>
-		By encouraging Nyan to talk about her life in Dominion, as well as about her family, you soon manage to get her enthusiastically engaged in conversation. Happy to see your girlfriend enjoying herself, you continue talking with her for quite some time, and before you know it, almost an hour has passed by.
+		Приглашая Нян поговорить о её жизни в Доминионе, а также о её семье, вы вскоре добиваетесь её восторженного участия в разговоре. Рад, что ваша девушка наслаждается, вы продолжаете разговаривать с ней в течение довольно долгого времени, и прежде чем вы это осознаете, прошло почти час.
 	</p>
 	]]>
 	</htmlContent>
@@ -200,17 +204,17 @@
 	<htmlContent tag="NYAN_TALK_FINAL"><![CDATA[
 	#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
 		<p>
-			Glancing down at her watch and seeing the time, Nyan lets out a little eek and declares, [nyan.speechNoEffects(Oh no! I've still got so much work to do t-today! Sorry, [pc.name], but I think we'll h-have to continue this topic another time... I-I really enjoyed talking with you, though!)]
+			Взглянув на свои часы и увидев время, Нян выдает маленький звук и заявляет, [nyan.speechNoEffects(О нет! У меня ещё столько работы сегодня! Прости, [pc.name], но, думаю, мы продолжим эту тему в другой раз... Мне очень понравилось с тобой разговаривать!)]
 		</p>
 		<p>
-			With no more time in which to talk today, Nyan starts shyly shuffling her feet and waiting to hear what it is you'll ask of her next...
+			Не имея больше времени для разговора сегодня, Нян начинает смущённо переступать с ноги на ногу и ждёт, чтобы услышать, что вы попросите от неё в следующий раз...
 		</p>
 	#ELSE
 		<p>
-			Glancing down at her watch and seeing the time, Nyan lets out a disappointed sigh and says, [nyan.speech(Sorry, [pc.name], but I've still got so much work left to do today... Is it ok if we continue this topic another time?)]
+			Взглянув на свои часы и увидев время, Нян выдает разочарованный вздох и говорит, [nyan.speech(Прости, [pc.name], но у меня ещё столько работы сегодня... Можно ли продолжить эту тему в другой раз?)]
 		</p>
 		<p>
-			After you've told your girlfriend that it's no problem, she happily smiles at you and waits to hear what it is you'll ask of her next...
+			После того, как вы сказали вашей девушке, что это не проблема, она с радостью улыбается вам и ждёт, чтобы услышать, что вы попросите от неё в следующий раз...
 		</p>
 	#ENDIF
 	]]>
@@ -221,7 +225,7 @@
 	
 	<htmlContent tag="NYAN_COMPLIMENT_BASE"><![CDATA[
 	<p>
-		Thinking that Nyan could use a compliment to help boost her confidence, but not wanting to rush into it and potentially give her a panic attack, you first ask her some innocent questions about the clothing she has on offer. As you see her nervous expression start to give way into a smile, you decide that the time's right to say what's on your mind.
+		Думая, что Нян могла бы использовать комплимент, чтобы помочь ей повысить уверенность, но не желая торопиться и потенциально вызвать у неё паническую атаку, вы сначала задаёте ей несколько невинных вопросов о одежде, которую она предлагает. Увидев, что её нервное выражение начинает сменяться улыбкой, вы решаете, что пришло время сказать, что на уме.
 	</p>
 	]]>
 	</htmlContent>
@@ -408,7 +412,7 @@
 		</p>
 	#ELSE
 		<p>
-			Thinking that your girlfriend could do with some time away from her work, you ask her if she'd like to go out on a walk with you.
+			Thinking that your girlfriend could do with some time away from her work, you ask her if she'd like to go out on a walk with you. 
 		</p>
 		<p>
 			[nyan.speech(Oh, you mean right now?)] she replies, but after rubbing her slender, padded fingers together in contemplation for a moment, she looks into your eyes and declares, [nyan.speech(Ok! It would be nice to stretch my legs, and also to spend some more time with you...)]
@@ -428,11 +432,14 @@
 	
 	<htmlContent tag="ROMANCE_WALK_REPEAT_START"><![CDATA[
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
 			Wanting to get out of the storeroom and spend some time with Nyan out in the Arcade, you ask her if she'd like to go out for a walk. Happily smiling at you, your cute girlfriend eagerly replies, [nyan.speechNoEffects(I-I'd like that, [pc.name]! Come on, let's g-go!)]
 		#ELSE
 			Wanting to get out of the storeroom and spend some time with Nyan out in the Arcade, you ask her if she'd like to go out for a walk. Happily smiling at you, your cute girlfriend eagerly replies, [nyan.speech(I'd like that, [pc.name]! Come on, let's go!)]
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
 		Happy to hear the cat-girl's positive reply, you accompany her to the door of the storeroom and then out across the shop floor. Within minutes the two of you are walking down the wide, marble-floored walkways of the Arcade, talking with one another about everything from how Nyan's day is going to the contents on display in the shop windows.
@@ -472,45 +479,46 @@
 	
 	<htmlContent tag="ROMANCE_WALK_REPEAT_PIX"><![CDATA[
 	<p>
-		With Nyan by your side, you travel around the entire Arcade in a circuitous route, and end up passing by the gym, 'Pix's Playground'. Looking over at the huge, glass-panelled frontage, your girlfriend reveals, [nyan.speech(The owner of that place is really friendly. She keeps on trying to get me to join her gym whenever I see her, but I really don't have time for it...)]
+		С Нян у тебя на руках, ты путешествуешь по всему Аркаду по извилистому маршруту и в конце концов проходишь мимо спортзала, 'Игровой площадки Пикса'. Глядя на огромный, стеклянный фасад, твоя девушка говорит, [nyan.speech(Владелица этого места очень дружелюбна. Она постоянно пытается заманить меня в свой спортзал, но у меня действительно нет времени на это...)]
 	</p>
 	<p>
-		Taking this opportunity to ask Nyan her opinion on physical exercise and sports, you're given the response, [nyan.speech(Well, I do yoga every day at home... Oh, I also used to be a member of a swimming club, but I was never really good at it and gave it up a long time ago...)]
+		Пользуясь случаем, чтобы спросить Нян её мнение о физических упражнениях и спорте, ты получаешь ответ, [nyan.speech(Ну, я каждый день занимаюсь йогой дома... О, я также была членом клуба плавания, но я никогда не была в нём хороша и бросила это давно...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROMANCE_WALK_REPEAT_RALPH"><![CDATA[
 	<p>
-		With Nyan by your side, you travel around the entire Arcade in a circuitous route, and end up passing by the shop, 'Ralph's Snacks'. Frowning at the shop as you pass, your girlfriend declares, [nyan.speech(I don't trust Ralph; I've only been in there a couple of times to buy a snack, and both times he was really overbearing and creepy.)]
-	</p>
-	<p>
-		Looking over at the shop, you ask Nyan where she goes to buy snacks, if not to there. Swishing her fluffy tail around behind her, she proudly states, [nyan.speech(I always make my own packed lunches now, so I don't need to go shopping anywhere for snacks. I can eat a lot healthier by bringing my own food to work as well...)]
+		С Нян у тебя на руках, ты путешествуешь по всему Аркаду по извилистому маршруту и в конце концов проходишь мимо магазина, 'Перекусы Ральфа'. Глядя на магазин, ты спрашиваешь Нян, где она покупает перекусы, если не там. Она взмахивает своим пушистым хвостом за спиной и гордо заявляет, [nyan.speech(Я всегда делаю свои собственные обеды, поэтому мне не нужно ходить за покупками в магазин. Я могу есть гораздо здоровее, принося свою еду на работу...)]
+	</p><p>
+		Взглянув на магазин, ты спрашиваешь Нян, где она покупает закуски, если не там. Она взмахивает своим пушистым хвостом и гордо заявляет: [nyan.speech(Я всегда делаю свои собственные ланч-боксы, поэтому мне не нужно никуда ходить за закусками. Я могу есть гораздо более здоровую пищу, принося свою еду на работу...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROMANCE_WALK_REPEAT_RESTAURANT"><![CDATA[
 	<p>
-		With Nyan by your side, you travel around the entire Arcade in a circuitous route, and end up passing by the restaurant, 'The Oaken Glade'. Gazing longingly at the arcane illusion of a summer-time forest glade, your girlfriend wistfully sighs,
+		С Нян у твоей стороны, ты путешествуешь по всему Аркаду по круговой трассе и в конце концов проходишь мимо ресторана, 'Дубовая Роща'. Вглядываясь с тоской в арканическую иллюзию летней лесной поляны, твоя девушка вздыхает,
 		#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
-			 [nyan.speech(I've got a lot of good memories of being here with mum...)]
+			 [nyan.speech(У меня много хороших воспоминаний о том, как я была здесь с мамой...)]
 		#ELSE
-			 [nyan.speech(I've got a lot of good memories of being here with mum... And now I've got good memories of going here with you, too!)]
+			 [nyan.speech(У меня много хороших воспоминаний о том, как я была здесь с мамой... И теперь у меня есть хорошие воспоминания о том, как я была здесь с тобой!)]
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
-		Asking Nyan to tell you more, you listen as she goes on to reveal, [nyan.speech(My mum helped to fund the head chef to get this place set up. We'd always get given the same table near the back of the restaurant...)]
+		Запрашивая Нян рассказать тебе больше, ты слушаешь, как она продолжает рассказывать, [nyan.speech(Моя мама помогла финансировать шеф-повара, чтобы он запустил это место. Мы всегда получали один и тот же стол в задней части ресторана...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROMANCE_WALK_REPEAT_VICKY"><![CDATA[
 	<p>
-		With Nyan by your side, you travel around the entire Arcade in a circuitous route, and end up passing by the shop, 'Arcane Arts'. Glancing through the windows and taking a brief look at the store's dimly-lit interior, Nyan shudders and moves a little closer to you, before gossiping, [nyan.speech(I heard that the wolf-girl who runs that place is an ex-slave, you know...)]
+		С Нян у твоей стороны, ты путешествуешь по всему Аркаду по круговой трассе и в конце концов проходишь мимо магазина, 'Арканические Искусства'. Заглядывая в окна и краем глаза бросая взгляд на слабо освещенный интерьер магазина, Нян вздрагивает и прижимается к тебе поближе, прежде чем шепчет, [nyan.speech(Я слышала, что девушка-волчица, которая управляет этим местом, была бывшей рабыней, знаешь...)]
 	</p>
 	<p>
-		Asking the cat-girl for more information, you listen as she nervously reveals, [nyan.speech(Oh, well, don't tell anyone that I told you this, but one of my mum's Enforcer friends told us once that the wolf-girl was arrested for sexually assaulting someone. After that, more victims of hers came forwards, and she ended up being sentenced to eight years as a slave. I suppose she must have changed her ways, seeing as she was given a license to open her own business...)]
+		Запрашивая кошачью девушку о больше информации, ты слушаешь, как она нервно рассказывает, [nyan.speech(О, ну, не говори никому, что я рассказала тебе это, но одна из подруг моей мамы, Энфорсер, однажды рассказала нам, что девушку-волчицу арестовали за сексуальное насилие. После этого, еще несколько ее жертв выступили, и она была приговорена к восьми годам рабства. Я предполагаю, что она, должно быть, изменила свои привычки, поскольку ей дали лицензию на открытие своего собственного бизнеса...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -542,35 +550,35 @@
 		Sensing that your shy girlfriend is relaxed and comfortable enough to allow you to do so, you reach down and take hold of her hand. Despite profusely blushing at this overt display of affection, Nyan squeezes her slender, padded fingers around your [pc.hand] and moves closer so as to walk right beside you. Looking over at her, you see her cat-like ears twitching in excitement, and as her fluffy tail curls up behind her, she quietly mutters, [nyan.speech(I really like this...)]
 	</p>
 	<p>
-		Smiling at her confession, you continue holding Nyan's delicate, feminine hand all the way back to where your walk began. Not letting go, your girlfriend then allows you to lead the way as you cross the shop's busy floor, and only once the two of you are back in the quiet of the storeroom does she release her grip.
+		Улыбаясь её признанию, ты продолжаешь держать нежную, женственную руку Нян всё время назад, к месту, где вы начали прогулку. Не отпуская, твоя девушка затем позволяет тебе вести её, когда вы пересекаете оживлённый пол магазина, и только когда вы оба оказываетесь в тишине кладовой, она отпускает свою хватку.
 	</p>
 	<p>
-		Turning to smile at you, and with her cheeks still flushed red, the cute cat-girl curls her tail around to playfully stroke it and says, [nyan.speech(Thank you for the w-walk, [pc.name]. I really like holding hands like that...)]
+		Поворачиваясь к тебе с улыбкой, и с её щеками всё ещё покрасневшими, милая кошка-девушка обвивает свою хвостик вокруг себя, чтобы игриво погладить его и говорит, [nyan.speech(Спасибо за прогулку, [pc.name]. Мне очень нравится так держать руки...)]
 	</p>
 	<p>
-		Returning both your girlfriend's smile and sentiments, you wonder what to ask of her next...
+		Возвращаясь с улыбкой и чувствами, ты задаёшься вопросом, что спросить у неё дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROMANCE_WALK_END_KISS"><![CDATA[
 	<p>
-		Leading Nyan over to one side of the path, you take hold of her [nyan.hips+] and pull her up against you. Sensing what it is you're about to do, your shy girlfriend blushes and stammers, [nyan.speech(Right here in public? [pc.Name]... I...)]
+		Ведя Нян к одной из сторон тропы, ты берешь её [nyan.hips+] и тянешь её к себе. Чувствуя, что ты собираешься сделать, твоя застенчивая девушка краснеет и запинается, [nyan.speech(Прямо здесь на публике? [pc.Name]... Я...)]
 	</p>
 	<p>
-		Despite her words, Nyan happily leans into you, before gently tilting her head to one side and slightly parting her [nyan.lips+]. With her hot breath falling on your face, and the faint scent of her perfume in the air, you lean forwards and press your [pc.lips] against hers. Almost instantly, you feel Nyan's arms wrap around your back, and she starts letting out little muffled moans as you slide your [pc.tongue+] into her mouth.
+		Несмотря на её слова, Нян с радостью прижимается к тебе, прежде чем мягко наклоняет голову в сторону и слегка раздвигает свою [nyan.lips+]. С её горячим дыханием, падающим на твоё лицо, и едва уловимым ароматом её парфюма в воздухе, ты наклоняешься вперёд и прижимаешь свой [pc.lips] к её рту. Почти мгновенно, ты чувствуешь, как руки Нян обнимают тебя за спину, и она начинает издавать маленькие приглушённые стоны, когда ты вводишь свой [pc.tongue+] в её рот.
 	</p>
 	<p>
-		Although she'd initially expressed alarm at kissing in public, your girlfriend quickly loses herself in the moment, and continues to passionately return your kiss for quite some time. Eventually, however, she pulls back to breathe, at which point she suddenly seems to recall where she is, and with her cheeks flushing bright red, she buries her face in your shoulder and exclaims, [nyan.speech(Let's go back now!)]
+		Хотя она изначально выразила тревогу по поводу поцелуев на публике, ваша девушка быстро теряет себя в моменте и продолжает страстно отвечать на ваш поцелуй на протяжении довольно долгого времени. Однако в конце концов она отдергивается, чтобы подышать, и в этот момент она внезапно вспоминает, где она находится, и, с ярко-красными щеками, прячет лицо в вашем плече и восклицает, [nyan.speech(Давайте вернемся!)]
 	</p>
 	<p>
-		Smiling at her sudden turn of shyness, you allow Nyan to hold onto you and hide her face in your chest as you somewhat-awkwardly [pc.walk] all the way back to her store. Still not letting go, your girlfriend tightly wraps her fluffy tail around your [pc.leg] as you cross the shop's busy floor, and only once the two of you are back in the quiet of the storeroom does she release her grip.
+		Улыбаясь ее внезапной робости, вы позволяете Нян держаться за вас и прятать лицо в вашей груди, когда вы довольно неловко [pc.walk] возвращаетесь в ее магазин. Все еще не отпускаясь, ваша девушка плотно обматывает свою пушистую хвост вокруг вашей [pc.leg], когда вы пересекаете оживленную площадь магазина, и только когда вы оба оказываетесь в тихом кладовой, она отпускает свою хватку.
 	</p>
 	<p>
-		Turning to shyly smile at you, and with her cheeks still flushed bright red, the cute cat-girl curls her tail around to playfully stroke it and stutters, [nyan.speech(Thank you for the walk, [pc.name]. It was fun, but that kiss in public was so embarrassing...)]
+		Поворачиваясь, чтобы смущенно улыбнуться вам, и с ее щеками все еще ярко-красными, милая девушка-кот закручивает хвост вокруг себя, чтобы игриво погладить его и запинается, [nyan.speech(Спасибо за прогулку, [pc.name]. Это было весело, но этот поцелуй на публике был так смущающе...)]
 	</p>
 	<p>
-		Returning your girlfriend's smile, you wonder what to ask of her next...
+		Возвращая улыбку вашей девушке, вы задумываетесь, что же спросить у нее в следующий раз...
 	</p>
 	]]>
 	</htmlContent>
@@ -580,7 +588,7 @@
 	
 	<htmlContent tag="ROMANCE_WALK_INITIAL_CONTINUE"><![CDATA[
 	<p>
-		More than happy to do as she asks, you accompany Nyan around the other half of the Shopping Arcade. As you continue to talk with one another, you realise that the cat-girl's stutter is slightly less pronounced than it usually is, and what's more, with every step she takes, she moves closer and closer towards your side.
+		С радостью выполняя ее просьбу, вы сопровождаете Нян по другой половине Торгового Аркада. Пока вы продолжаете разговаривать друг с другом, вы понимаете, что заикание девушки-кота немного менее выражено, чем обычно, и что более того, с каждым шагом, который она делает, она все ближе и ближе подходит к вашей стороне.
 	</p>
 	<p>
 		Having by now travelled around most of the Arcade, the two of you soon find yourselves approaching the corner near to where Nyan's store is located. At this moment, your girlfriend suddenly lets out an excited gasp and exclaims, [nyan.speechNoEffects(That's my favourite restaurant! L-Look, [pc.name]!)]
@@ -592,12 +600,14 @@
 		#ELSEIF(game.getCurrentDayPeriod()==DAY_PERIOD_NIGHT)
 			 Glowing lanterns have been hung from the branches of the huge oak trees which border this clearing, casting the tables and chairs in a soft, orange glow.
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
 		[nyan.speechNoEffects(I-Isn't it amazing? I've been in there a few times with my mum, but she's been so busy that she h-hasn't been able to visit for a while,)] Nyan sighs, before giving you a big smile and revealing, [nyan.speechNoEffects(T-The owner knows my mum well, and so he s-said that there's always a table reserved for me, but I d-don't feel comfortable going there a-alone... A-Anyway, let's go back now; m-my staff are probably wondering where I am...)]
 	</p>
 	<p>
-		Making a mental note of the fact that Nyan likes this restaurant, as well as the fact that there's no need for her to book a reservation in order to get a table, you do as she suggests and accompany her back towards her store...
+		Заметив, что Нян нравится этот ресторан, а также то, что ей не нужно бронировать столик, чтобы получить его, вы делаете, как она предлагает, и сопровождаете её обратно к её магазину...
 	</p>
 	]]>
 	</htmlContent>
@@ -607,29 +617,28 @@
 	
 	<htmlContent tag="ROMANCE_WALK_INITIAL_END"><![CDATA[
 	<p>
-		It only takes a few minutes before the two of you have arrived back at Nyan's Clothing Emporium, and after weaving your way through the busy crowds, your girlfriend once again leads you back into the quiet storeroom. Turning to face you, she gives you another of her cute smiles, and while gazing longingly at you with her big, blue eyes, she reveals, [nyan.speechNoEffects(That was the m-most fun I've had in a long time. I don't ever go out or do anything while my m-mum's not in town, you see... T-Thank you, [pc.name]...)]
+		Проходит всего несколько минут, и вы с Нян возвращаетесь в её магазин. Пробираясь сквозь толпу, ваша девушка снова ведёт вас в тихую складскую комнату. Обернувшись к вам, она снова улыбается вам своей милой улыбкой, и, глядя на вас с тоской своими большими, голубыми глазами, она говорит: [nyan.speechNoEffects(Это было самое веселое, что я делала за долгое время. Я никогда не хожу куда-либо или не делаю ничего, пока моя м-мама не в городе, понимаете... Спасибо, [pc.name]...)]
 	</p>
 	<p>
-		Although it was no more than a short walk, your time together seems to have had a significant impact on the typically-nervous cat-girl's demeanour, and as you respond to her thanks, she suddenly does something very uncharacteristic of her. Still gazing into your [pc.eyes], your girlfriend steps forwards, and with her [nyan.breastSize], [nyan.cupSize]-cup breasts rising and falling as she pants with excitement, she leans forwards and allows her [nyan.lips+] to part a little.
+		Хотя это был всего лишь короткий прогулка, ваше время вместе, похоже, оказало значительное влияние на поведение обычно нервной кошачьей девушки, и, отвечая на её благодарность, она вдруг делает что-то очень нехарактерное для неё. Всё ещё глядя на вас, [pc.eyes], ваша девушка делает шаг вперёд, и, с её [nyan.breastSize], [nyan.cupSize]-чашечными грудями, поднимающимися и опускающимися, когда она дышит с восторгом, она наклоняется вперёд и позволяет своему [nyan.lips+] немного раздвинуться.
 	</p>
 	<p>
-		Knowing that this opportunity will only last a few seconds, you quickly decide whether or not to take things to the next level with your shy girlfriend...
+		Зная, что эта возможность продлится всего несколько секунд, вы быстро решаете, стоит ли продолжить с вашей застенчивой девушкой... 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROMANCE_WALK_INITIAL_END_KISS"><![CDATA[
 	<p>
-		Taking hold of Nyan's [nyan.hipSize] hips, you [pc.step] forwards and gently pull her into your body. You feel the cute cat-girl's hot breath on your face as she lets out an excited little sigh, after which she closes her eyes and slightly tilts her head to one side. At that moment, you suddenly feel your girlfriend's furry tail excitedly curling around your [pc.leg(true)], while her cat-like ears twitch in anticipation of what's about to happen.
+		Схватив Ньян за [nyan.hipSize] бедра, ты [pc.step] вперёд и мягко втягиваешь её в себя. Ты чувствуешь горячий дыхание этой милой кошачьей девушки на своём лице, когда она выдыхает взволнованный маленький вздох, после чего закрывает глаза и слегка наклоняет голову в сторону. В этот момент ты вдруг чувствуешь, как её пушистый хвост с восторгом обвивается вокруг твоей [pc.leg(true)], а её кошачьи уши в предвкушении того, что вот-вот произойдёт, начинают двигаться.
+	</p><p>
+		С тонким ароматом её парфюма, который манит тебя, ты наклоняешься вперёд и даёшь Нян то, что она хочет. Прижимая свои [pc.lips] к её губам, ты втягиваешь девочку-кошку в глубокий, страстный поцелуй. Поднимая её руки и обнимая их вокруг своей спины, твоя девушка начинает издавать маленькие приглушённые стоны, когда ты похотливым языком вводишь свой язык в её рот.
 	</p>
 	<p>
-		With the delicate scent of her perfume drawing you in, you lean forwards and give Nyan what she wants. Pressing your [pc.lips] against hers, you pull the cat-girl into a deep, passionate kiss. Lifting her arms and wrapping them around your back, your girlfriend starts letting out little muffled moans as you lustfully slide your tongues into one another's mouths.
+		Не желая отпускать, Ньян крепко обнимает тебя, не оставляя тебе другого выбора, кроме как продолжать целовать её в течение довольно долгого времени. В конце концов, однако, она отступает и делает вдох, и, всё ещё держась за тебя своими руками и хвостом, она с любовью смотрит тебе в глаза и тяжело дышит, [nyan.speechNoEffects(Это было... Удивительно...)]
 	</p>
 	<p>
-		Not wanting to let go, Nyan tightly holds onto you, giving you little choice but to continue kissing her for quite some time. Eventually, however, she pulls back and takes a breath, and with her arms and tail still wrapped around you, she gazes lovingly into your eyes and pants, [nyan.speechNoEffects(That was... Amazing...)]
-	</p>
-	<p>
-		Despite the fact that you're eager for more physical contact with her, Nyan suddenly seems to regain control of her emotions, and after releasing you from her grip, she shyly states, [nyan.speechNoEffects(I-I think that we shouldn't go any further just yet... A-After all, we haven't even been out on a proper date yet...)]
+		Несмотря на то, что ты жаждешь большего физического контакта с ней, Ньян внезапно, кажется, снова обретает контроль над своими эмоциями, и, освободив тебя от своего хватки, она смущённо заявляет, [nyan.speechNoEffects(Я-Я думаю, что мы не должны идти дальше прямо сейчас... А-В конце концов, мы ещё даже не были на настоящем свидании...)]
 	</p>
 	<p>
 		Knowing that the influence of her romance novels has given Nyan some well-defined ideas about how a relationship should progress, you don't try to push her past her comfort zone, and instead let go of her hips and allow her to take a step back. Lifting her tail and happily stroking it, the cute cat-girl happily smiles at you and asks, [nyan.speechNoEffects(We'll do this again, right? T-That was so much better than my books made it out to be...)]
@@ -642,11 +651,14 @@
 	
 	<htmlContent tag="ROMANCE_WALK_INITIAL_END_NO_KISS"><![CDATA[
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
 			With your mouth being blocked, there's no way that you can give Nyan the kiss she's obviously craving, and so you don't make any move in response to hers. Detecting your inability to give her what she wants, the cat-girl pulls back, and within seconds, the moment's passed. 
 		#ELSE
 			Deciding that now's not the best time in which to take things to the next level and give Nyan the kiss she's obviously craving, you don't make any move in response to hers. Detecting your reluctance to give her what she wants, the cat-girl pulls back, and within seconds, the moment's passed.
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
 		Nervously shuffling her feet, your girlfriend pouts a little, before asking, [nyan.speechNoEffects(W-We'll go out on another walk some time, won't we, [pc.name]?)]
@@ -662,16 +674,16 @@
 	
 	<htmlContent tag="ROMANCE_DATE_REQUESTED"><![CDATA[
 	<p>
-		Feeling confident that your nervous girlfriend is by now comfortable enough to go out on a proper date with you, but mindful that a sudden proposition might cause her distress, you start a conversation with her regarding the nearby restaurant, 'The Oaken Glade', and eventually build up to asking her if she'd like to go there for a meal with you.
+		Чувствуя себя уверенно, что твоя нервная подруга теперь достаточно комфортно себя чувствует, чтобы пойти на свидание с тобой, но помня, что внезапное предложение может вызвать у неё беспокойство, ты начинаешь с ней разговор о близлежащем ресторане, 'The Oaken Glade', и в конце концов доходишь до вопроса, не хочет ли она пойти туда на ужин с тобой.
 	</p>
 	<p>
-		[nyan.speechNoEffects(O-Oh, you mean as in... G-Going out to dinner together, l-like a date?)] she asks, blushing and shuffling her feet. As you confirm that's what you meant, your girlfriend lets out a happy little squeak and gives her reply, [nyan.speechNoEffects(Y-Yes! I'd love to go there with you, [pc.name]! D-Don't worry about making a reservation; like I said before, t-the owner knows me and my mum and a-always has a table reserved for me...)]
+		[nyan.speechNoEffects(O-О, ты имеешь в виду... Г-Г-Going out to dinner together, l-like a date?)] она спрашивает, краснея и перебирая ногами. Когда ты подтверждаешь, что это именно то, что ты имел в виду, твоя подруга издает радостное маленькое писк и дает свой ответ, [nyan.speechNoEffects(Y-Yes! I'd love to go there with you, [pc.name]! D-Don't worry about making a reservation; like I said before, t-the owner knows me and my mum and a-always has a table reserved for me...)]
 	</p>
 	<p>
-		Happy and relieved to hear Nyan's positive response, you ask her what day and time she'll be available to go out with you. 
+		Счастливый и облегчённый, услышав положительный ответ Нян, ты спрашиваешь её, в какой день и в какое время она будет доступна для свидания с тобой.
 	</p>
 	<p>
-		[nyan.speechNoEffects(Well I-I've been thinking of taking weekends off for a while now, so Friday or S-Saturday evenings would be best for me, I think,)] she replies, before standing up straight and taking on an uncharacteristic look of determination. Producing a small key and holding it out towards you, she declares, [nyan.speechNoEffects(I-I can trust you with this! It's a k-key to this storeroom, s-so if you need to buy anything at the weekend while I-I'm not here, just take a l-look at my price list a-and leave the flames on the s-shelves...)]
+		[nyan.speechNoEffects(Well I-I've been thinking of taking weekends off for a while now, so Friday or S-Saturday evenings would be best for me, I think,)] она отвечает, прежде чем встать прямо и принять на себя необычный вид решимости. Вынимая маленький ключ и протягивая его тебе, она заявляет, [nyan.speechNoEffects(I-I can trust you with this! It's a k-key to this storeroom, s-so if you need to buy anything at the weekend while I-I'm not here, just take a l-look at my price list a-and leave the flames on the s-shelves...)]
 	</p>
 	<p>
 		Thanking your nervous girlfriend for her trust, you take the key and tell her that you still need to know where to go in order to pick her up at the weekend.
@@ -705,14 +717,14 @@
 		Much to your surprise, however, it's Nyan who makes the first move. As you open your mouth to say something to her, she suddenly leaps forwards, pressing her lips against yours and moaning, [nyan.speechNoEffects(<i>~Mmm!~</i> Yes...)]
 	</p>
 	<p>
-		Her hands quickly dart up to caress and grope your body, and you eagerly reciprocate, slipping a [pc.hand] up beneath her blouse to cup and squeeze her [nyan.breastSize], [nyan.cupSize]-cup breasts. Your touch causes the horny cat-girl's moans to get louder and more frantic, and she grinds her body against yours as you thrust your tongues into one another's mouths.
+		Ее руки быстро поднимаются, чтобы погладить и ощупать твое тело, и ты с жадностью вставляешь [pc.hand] под ее блузку, чтобы обнять и сжимать ее [nyan.breastSize], [nyan.cupSize]-купированные груди. Твой прикосновение заставляет хриплую кошачью девушку издавать все более громкие и отчаянные стоны, и она трется о тебя, когда ты вставляешь свои языки в ее рот.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_MAKE_OUT_FINAL"><![CDATA[
 	<p>
-		After quite some time of this, Nyan starts to pull back, gasping for breath. From the wild look in her eyes, she's obviously immensely turned on, and as she hungrily glances down at your body, you think that she wouldn't need much encouragement to agree to perform or receive oral sex right here in her storeroom...
+		После довольно долгого времени такого, Нян начинает отступать, задыхаясь от дыхания. По дикому взгляду в ее глазах, она явно очень возбуждена, и, когда она жадно смотрит на твое тело, ты думаешь, что ей не нужно много encouragement, чтобы согласиться на оральный секс прямо здесь в ее кладовой...
 	</p>
 	]]>
 	</htmlContent>
@@ -721,15 +733,14 @@
 	
 	<htmlContent tag="ROMANCE_MAKE_OUT_CUNNILINGUS"><![CDATA[
 	<p>
-		Sensing that Nyan is desperate for more than just a kiss, you suggest that you could eat her out right here in her stockroom. Immediately, the cute cat-girl's cheeks flush red from embarrassment, but instead of refusing your suggestion, she bites her lip and pants, [nyan.speechNoEffects(Lock the door first... I don't want to be caught by one of my staff...)]
+		Чувствуя, что Нян жаждет большего, чем просто поцелуй, ты предлагаешь, что можешь лизнуть ее здесь в ее кладовой. Сразу же, лицо милой кошачьей девушки краснеет от смущения, но вместо того, чтобы отказать в твоем предложении, она кусает губу и тяжело дышит, [nyan.speechNoEffects(Заперь дверь сначала... Я не хочу быть пойманной одним из моих сотрудников...)]
 	</p>
 	<p>
-		Doing as she asks, you hurry over to lock the storeroom's door, before returning to drop down in front of your girlfriend. Still furiously blushing, Nyan lifts up her miniskirt, presenting you with her [nyan.slotClothing(GROIN, true)]. Eager to get started, you reach up and pull down her underwear, revealing
+		Соблюдая ее просьбу, ты спешишь запереть дверь кладовой, прежде чем возвращаешься, чтобы опуститься перед твоей девушкой. Все еще краснея, Нян поднимает свою мини-юбку, представляя тебе свою [nyan.slotClothing(GROIN, true)]. Желая начать, ты тянешься и срываешь ее нижнее белье, показывая
 		#IF(game.isPubicHairEnabled())
-			 the fact that her cute, tight pussy is surrounded by a black, furry bush of pubic hair. 
+			 то, что ее милая, плотная киска окружена черной, пушистой растительностью лобка.
 		#ELSE
-			 her cute, tight pussy.
-		#ENDIF
+			 ее милая, плотная киска.		#ENDIF
 		 Panting from excitement, your girlfriend whines, [nyan.speechNoEffects(Are you ready, [pc.name]?)]
 	</p>
 	<p>
@@ -748,42 +759,47 @@
 	<p>
 		Doing as she asks, you hurry over to lock the storeroom's door, before returning to take hold of your girlfriend once again. Still furiously blushing, Nyan wraps her arms around your back and pulls you into a passionate kiss. While continuing to make out with her, you reach down to lift up her miniskirt, before rubbing your [pc.fingers] over her [nyan.slotClothing(GROIN, false)]. Encouraged by the bucking of her hips, you slide her underwear to one side,
 		#IF(game.isPubicHairEnabled())
-			 and as you move your [pc.fingers] down to stroke her cute, tight pussy, you discover that she's got a furry bush of pubic hair growing between her legs. 
+			 и когда ты опускаешь свой [pc.fingers] вниз, чтобы погладить её милую, тугую киску, ты обнаруживаешь, что между её ногами растёт пушистый куст лобковых волос. 
 		#ELSE
-			 before moving your [pc.fingers] down to stroke her cute, tight pussy.
+			 прежде чем опустить свой [pc.fingers] вниз, чтобы погладить её милую, тугую киску.
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
-		Briefly breaking off from your kiss, the horny cat-girl moans, [nyan.speechNoEffects(~Aah!~ Yes, keep on going... ~Ooh!~ Right there...)]
+		Кратко прервав поцелуй, возбуждённая кошка-девушка стонет, [nyan.speechNoEffects(~Ах!~ Да, продолжай... ~Ох!~ Вот так! ~Ах!~)]
 	</p>
 	<p>
-		Doing as she asks, you continue sliding your [pc.fingers+] up and down over Nyan's pussy, and by teasing her sensitive clit, you get your shy girlfriend to let out a series of cute moans. Once again encouraged by her reaction, you gently push your [pc.fingers] into Nyan's pussy, before starting to eagerly finger her.
+		Соблюдая её просьбу, ты продолжаешь скользить своим [pc.fingers+] вверх и вниз по киске Нян, и, дразня её чувствительную клитор, ты заставляешь свою застенчивую подругу выпустить серию милых стонов. Опять же, ободренный её реакцией, ты нежно вставляешь свой [pc.fingers] в киску Нян, прежде чем начать жадно трахать её. 
 	</p>
 	<p>
-		[nyan.speechNoEffects(~Aah!~ [pc.Name]! ~Ooh!~ More! Yes, like that! ~Aah!~)] she squeals, before once again starting to passionately kiss you...
+		[nyan.speechNoEffects(~Ах!~ [pc.Name]! ~Ох!~ Больше! Да, так! ~Ах!~)] она визжит, прежде чем снова начать страстно целоваться с тобой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROMANCE_MAKE_OUT_RECEIVE_BLOWJOB"><![CDATA[
 	<p>
-		Sensing that Nyan is desperate for more than just a kiss, you suggest that she could give you a blowjob right here in her stockroom. Immediately, the cute cat-girl's cheeks flush red from embarrassment, but instead of refusing your suggestion, she bites her lip and pants, [nyan.speechNoEffects(Lock the door first... I don't want to be caught by one of my staff...)]
+		Чувствуя, что Нян отчаянно хочет большего, чем просто поцелуи, ты предлагаешь ей сделать тебе минет прямо здесь, в её складском помещении. Мгновенно, щеки милой кошки-девушки краснеют от смущения, но вместо того, чтобы отказать в твоём предложении, она сжимает губы и тяжело дышит, [nyan.speechNoEffects(Сперва закрой дверь... Я не хочу, чтобы меня застал кто-то из моих сотрудников...)]
 	</p>
 	<p>
-		Doing as she asks, you hurry over to lock the storeroom's door, before returning to your girlfriend and exposing your cock to her. The realisation of what she's about to do suddenly dawns on the shy cat-girl, and she pants, [nyan.speech(Right, so I just... I mean... Should I start?)]
+		Соблюдая её просьбу, ты спешишь закрыть дверь складского помещения, прежде чем вернуться к своей подруге и обнажить свой член перед ней. Осознание того, что она собирается сделать, внезапно приходит к застенчивой кошке-девушке, и она тяжело дышит, [nyan.speech(Ну, так... то есть... Может, я просто...)]
 	</p>
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.isTaur())
-			Reassuring her that she can go at her own pace, you patiently wait as Nyan kneels down beneath your feral [pc.legRace]'s body. After reaching up to experimentally touch your [pc.cock+], she leans forwards, and you feel her hot breath on your cock as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+			Успокоив ее, что она может идти в своем темпе, вы терпеливо ждете, пока Нян опускается на колени под тело вашего дикого [pc.legRace]. После того, как она поднимает руку, чтобы экспериментально потрогать ваш [pc.cock+], она наклоняется вперед, и вы чувствуете ее горячий дыхание на вашем члене, когда она размышляет вслух, [nyan.speech(Так я просто... Я имею в виду, я делаю это так?)]
 		#ELSE
-			Reassuring her that she can go at her own pace, you patiently wait as Nyan kneels down before you. After experimentally touching your [pc.cock+], she lowers her face towards your groin, and you feel her hot breath on your cock as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+			Успокоив ее, что она может идти в своем темпе, вы терпеливо ждете, пока Нян опускается на колени перед вами. После того, как она экспериментально трогает ваш [pc.cock+], она опускает лицо к вашему паху, и вы чувствуете ее горячий дыхание на вашем члене, когда она размышляет вслух, [nyan.speech(Так я просто... Я имею в виду, я делаю это так?)]
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
-		Letting out a high-pitched moan, Nyan presses her [nyan.lips+] against the [pc.cockHead+] of your cock, and after she's delivered a quick kiss, she pulls back and declares, [nyan.speech(That wasn't too bad... Now If I just...)] 
+			Издавая высокий стон, Нян прижимает свой [nyan.lips+] к [pc.cockHead+] вашего члена, и после того, как она целует его, она отступает и заявляет, [nyan.speech(Это было не так уж плохо... Теперь, если я просто...)] 
 	</p>
 	<p>
-		Giving her some encouraging words, you watch as Nyan plants a slow series of kisses up the length of your [pc.cock+], before starting to clumsily lick and nuzzle into it. Building up her confidence, she finally decides to take your [pc.cock+] into her mouth, and after letting out a determined little moan, she opens wide and wraps her [nyan.lips+] around your throbbing shaft. Placing her hands on your [pc.legs+], Nyan starts making muffled, gargled moans as she does her best to give you a blowjob...
+			Давая ей несколько ободряющих слов, вы наблюдаете, как Нян целует ваш [pc.cock+], прежде чем начать неловко лизать и нюхать его. Набираясь уверенности, она наконец решается взять ваш [pc.cock+] в рот, и после того, как она издает решительный маленький стон, она широко открывает рот и обматывает свой [nyan.lips+] вокруг вашего пульсирующего ствола. Положив руки на ваш [pc.legs+], Нян начинает издавать приглушенные, хриплые стоны, когда она делает все возможное, чтобы дать вам минет... 
 	</p>
 	]]>
 	</htmlContent>
@@ -796,11 +812,14 @@
 		Doing as she asks, you hurry over to lock the storeroom's door, before returning to your girlfriend and exposing your pussy to her. The realisation of what she's about to do suddenly dawns on the shy cat-girl, and she pants, [nyan.speech(Right, so I just... I mean... Should I start?)]
 	</p>
 	<p>
+		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.isTaur())
 			Reassuring her that she can go at her own pace, you patiently wait as Nyan kneels down behind your feral [pc.legRace]'s body. After reaching up to experimentally touch your [pc.pussy+], she leans forwards, and you feel her hot breath on your rear end as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
 		#ELSE
 			Reassuring her that she can go at her own pace, you patiently wait as Nyan kneels down before you. After experimentally touching your [pc.pussy+], she lowers her face towards your groin, and you feel her hot breath on your [pc.labia+] as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
 		#ENDIF
+Контекст: XML res/txt/quests/main/lyssiethReveal.xml
+Текст:
 	</p>
 	<p>
 		Letting out a high-pitched moan, Nyan presses her [nyan.lips+] against your [pc.labia+], and after she's delivered a quick kiss, she pulls back and declares, [nyan.speech(That wasn't too bad... Now If I just...)] 
@@ -882,44 +901,44 @@
 		Your cute girlfriend gasps in shock, before tentatively reaching out and taking the box from you. Blushing and looking longingly at you with her big, blue eyes, she exclaims, [nyan.speechNoEffects(I-I don't know what to say! T-Thank you so much, [pc.name]!)]
 	</p>
 	<p>
-		You can't help but smile at Nyan's genuine reaction to the gift, and at her suggestion, you both sit down in one corner of the stockroom and spend a few minutes feeding the chocolates to one another.
+		Вы не можете не улыбнуться, увидев искреннюю реакцию Нян на подарок, и по её предложению, вы оба садитесь в один из углов склада и проводите несколько минут, даря друг другу шоколадные конфеты.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_GIFT_PERFUME"><![CDATA[
 	<p>
-		You produce the bottle of perfume that you've bought for Nyan, and after telling her that you hope it's one she likes, you present it to her as a gift.
+		Вы достаете бутылку духов, которую купили для Нян, и после того, как говорите ей, что надеетесь, что она понравится, вы вручаете её ей в качестве подарка.
 	</p>
 	<p>
-		The nervous cat-girl lets out an excited squeak in response and happily exclaims, [nyan.speechNoEffects([pc.Name]! Y-You're so kind!)]
+		Нервная девушка-кот выпускает возбужденный писк в ответ и с радостью восклицает, [nyan.speechNoEffects([pc.Name]! Т-Ты такая добрая!)]
 	</p>
 	<p>
-		Blushing as she takes the bottle from out of your [pc.hands], your girlfriend happily squirts a small amount of the perfume onto her neck, giggling a little in her excitement. You can't help but smile at her display of happiness, and as the cat-girl sees the look on your face, she shyly shuffles her feet and thanks you once again.
+		Краснея, она берет бутылку из твоей [pc.hands], твоя девушка с радостью наносит небольшое количество духов на шею, немного хихикая от своего волнения. Ты не можешь не улыбнуться, увидев её радость, и когда девушка-кот видит твой взгляд, она смущенно переступает с ноги на ногу и еще раз благодарит тебя.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_GIFT_SINGLE_ROSE"><![CDATA[
 	<p>
-		From behind your back, you produce the rose which you obtained from one of Dominion's parks. Holding it towards the blushing cat-girl, you smile and tell her that its beauty reminded you of her.
+		Из-за спины ты достаешь розу, которую ты получил в одном из парков Доминиона. Поднеся её к blushing cat-girl, ты улыбаешься и говоришь ей, что её красота напоминает тебе её.
 	</p>
 	<p>
-		[nyan.speechNoEffects(O-Oh! Oh!)] Nyan squeals, overcome with joy at your gift and accompanying words, [nyan.speechNoEffects(I-I don't know what to say! T-Thank you so much!)]
+		[nyan.speechNoEffects(О-О! О!)] Нян визжит, переполненная радостью от твоего подарка и сопровождающих слов, [nyan.speechNoEffects(Я-Я не знаю, что сказать! Т-Спасибо тебе огромное!)]
 	</p>
 	#IF(nyan.getClothingInSlot(IS_HAIR)==null)
 		<p>
-			Taking the rose from you, Nyan picks off a couple of the thorns on its stem, before tucking it into her hair and gazing lovingly into your eyes. Coyly shuffling her feet, she asks, [nyan.speechNoEffects(W-What do you think? S-Should I keep it in for the rest of the day?)]
+			Взяв розу из твоих рук, Нян удаляет несколько шипов на её стебле, прежде чем вставить её в свою причёску и с любовью смотрит тебе в глаза. С хитростью переступая с ноги на ногу, она спрашивает, [nyan.speechNoEffects(Ч-Что ты думаешь? С-Следует ли мне оставить её на весь день?)]
 		</p>
 		<p>
-			Telling your girlfriend that she looks truly beautiful, you encourage her to continue wearing the rose. Blushing at your words, Nyan happily bites her lip and thanks you for the gift once again.
+			Рассказывая своей подруге, что она выглядит действительно красиво, ты подбадриваешь её продолжить носить розу. Краснея от твоих слов, Нян счастливо кусает губу и ещё раз благодарит тебя за подарок.
 		</p>
 	#ELSE
 		<p>
-			Taking the rose from you, Nyan shuffles her feet and points to the rose which she's already wearing, saying, [nyan.speechNoEffects(I-I think I'll keep wearing this first one you gave me, b-but I'll but this other one in some water when I g-get home. T-Thank you again, [pc.name]...)]
+			Беря розу из твоих рук, Нян переступает с ноги на ногу и указывает на розу, которую она уже носит, говоря: [nyan.speechNoEffects(Я-Я думаю, что я оставлю себе эту первую, которую ты мне дал, но я поставлю эту другую в воду, когда вернусь домой. Спасибо тебе ещё раз, [pc.name]...)]
 		</p>
 		<p>
-			Telling your girlfriend that she looks truly beautiful, you can't help but smile as she blushes at your words, before happily biting her lip and thanking you for the gift once again.
+			Рассказывая своей подруге, что она выглядит действительно красиво, ты не можешь не улыбнуться, когда она краснеет от твоих слов, прежде чем счастливо кусает губу и ещё раз благодарит тебя за подарок.
 		</p>
 	#ENDIF
 	]]>
@@ -927,29 +946,29 @@
 	
 	<htmlContent tag="NYAN_GIFT_ROSES"><![CDATA[
 	<p>
-		From behind your back, you produce the bouquet of roses which you'd bought for Nyan. Holding them out towards the nervous cat-girl, you present them to her as a gift.
+		Сзади твоей спины, ты достаёшь букет роз, который ты купил для Нян. Поднеся его к нервной кошачьей девушке, ты даришь её букет в качестве подарка.
 	</p>
 	<p>
-		[nyan.speechNoEffects(O-Oh m-my goodness!)] Nyan squeaks, her voice trembling with excitement, [nyan.speechNoEffects(N-Nobody else h-has ever given m-me flowers before! T-Thank you so much!)]
+		[nyan.speechNoEffects(О-О, Боже мой!)] Нян пищит, её голос дрожит от волнения, [nyan.speechNoEffects(Н-Никто ещё никогда не дарил мне цветы! Спасибо тебе так много!)]
 	</p>
 	<p>
-		Taking the roses from you, your girlfriend shuffles her feet and flashes you one of the cutest smiles you've ever seen. Her joyous expression turns out to be highly infectious, and as you help Nyan to find a vase of water, you find that you can't stop smiling either...
+		Беря розы из твоих рук, твоя подруга переступает с ноги на ногу и показывает тебе одну из самых милых улыбок, которые ты когда-либо видел. Её радостное выражение оказывается очень заразительным, и когда ты помогаешь Нян найти вазу с водой, ты понимаешь, что не можешь перестать улыбаться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_GIFT_TEDDY_BEAR"><![CDATA[
 	<p>
-		Holding out the fluffy teddy bear, you smile at Nyan and tell her that you've bought it for her as a gift.
+		Поднеся плюшевого мишку, ты улыбаешься Нян и говоришь, что купил её в подарок. 
 	</p>
 	<p>
-		The delicate cat-girl lets out a delighted squeak as she sees the cute toy, before declaring, [nyan.speechNoEffects([pc.Name]! H-How did you know?! I-I love cuddly toys!)]
+		Няня издает радостный писк, увидев эту милую игрушку, и восклицает: [nyan.speechNoEffects([pc.Name]! Как ты догадался?! Я-Я люблю мягкие игрушки!)]
 	</p>
 	<p>
-		Much to your surprise, Nyan's nervousness seems to melt away in the face of such a cute toy, and she rushes forwards, wrapping her arms around both you and the toy. Burying her face into you, she mumbles, [nyan.speechNoEffects(Thank you so much!)]
+		К твоему удивлению, нервозность Няни исчезает, когда она видит такую милую игрушку, и она бросается вперед, обнимая тебя и игрушку. Зарывшись в тебя, она бормочет: [nyan.speechNoEffects(Спасибо тебе!)]
 	</p>
 	<p>
-		You reciprocate the gesture, hugging Nyan close to your chest and smiling to yourself...
+		Ты отвечаешь на ее жест, обнимая Няню к груди и улыбаясь вполголоса...
 	</p>
 	]]>
 	</htmlContent>
