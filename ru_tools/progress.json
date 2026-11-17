@@ -14,6 +14,9 @@
     "src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java",
     "src/com/lilithsthrone/game/dialogue/story/CharacterCreation.java",
     "src/com/lilithsthrone/game/character/persona/PersonalityTrait.java",
-    "src/com/lilithsthrone/game/dialogue/story/LyssiethReveal.java"
+    "src/com/lilithsthrone/game/dialogue/story/LyssiethReveal.java",
+    "src/com/lilithsthrone/game/character/quests/Quest.java",
+    "src/com/lilithsthrone/game/character/quests/QuestLine.java",
+    "src/com/lilithsthrone/game/character/effects/Perk.java"
   ]
 }
