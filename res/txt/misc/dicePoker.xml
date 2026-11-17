@@ -3,113 +3,91 @@
 
 	<!-- START -->
 	
-	<htmlContent tag="START"><![CDATA[
-	#IF(npc.isPlayerKnowsName())
+	<htmlContent tag="START"><![CDATA[<p>
+	Сядешь за один из свободных столов в секции [#SPECIAL_PARSE_0], ты снова садишься напротив [npc.name].
+</p><p>
+			[npc.speech(Назад за больше, а?)] [npc.she] дразнит, [npc.speech(Не начинай плакать, когда я заберу все твои деньги!)]
+		</p><p>
+			Ты ставишь на стол бай-ин в размере [#SPECIAL_PARSE_1], и [npc.race] делает то же самое, прежде чем сказать: [npc.speech(Хорошо, давайте играть.)]
+		</p>#ELSE
 		<p>
-			Walking up to one of the free tables in the [#SPECIAL_PARSE_0] section, you once again decide to sit down opposite [npc.name].
-		</p>
-		<p>
-			[npc.speech(Back for more, huh?)] [npc.she] taunts, [npc.speech(Don't start crying when I take all your cash!)]
-		</p>
-		<p>
-			You place the buy-in of [#SPECIAL_PARSE_1] on the table, and the [npc.race] does the same, before stating, [npc.speech(Right, let's play.)]
-		</p>
-	#ELSE
-		<p>
-			Walking up to one of the free tables in the [#SPECIAL_PARSE_0] section, you sit down opposite [npc.a_race].
-		</p>
-		<p>
-			[npc.speech(You think you can take me on, huh?)] [npc.she] taunts, [npc.speech(Don't start crying when I take all your cash!)]
-		</p>
-		<p>
-			You place the buy-in of [#SPECIAL_PARSE_1] on the table, and the [npc.race] does the same, before revealing, [npc.speech(The name's [npc.name(true)], by the way. Now let's play.)]
-		</p>
-	#ENDIF
-	]]>
+			Подходя к одному из свободных столов в секции [#SPECIAL_PARSE_0], вы садитесь напротив [npc.a_race].
+		</p><p>
+			[npc.speech(Ты думаешь, ты можешь меня победить, а?)] [npc.she] ехидно говорит: [npc.speech(Не начинай плакать, когда я заберу все твои деньги!)]
+		</p><p>
+			Ты ставишь бай-ин в [#SPECIAL_PARSE_1] на стол, и [npc.race] делает то же самое, прежде чем раскрыть, [npc.speech(Имя [npc.name(true)], кстати. Теперь давайте играть.)]
+		</p>Контекст: XML res/txt/misc/dicePoker.xml
+Текст:
+
+	#ENDIF]]>
 	</htmlContent>
 	
 	
 	<!-- ROLL -->
 	
-	<htmlContent tag="ROLL_WINNING"><![CDATA[
-	<p>
-		Both you and [npc.name] roll all five of your dice to get the game started. As they clatter to a halt, your opponent lets out an annoyed sigh as [npc.she] sees that you have a better hand. [npc.speech(Damn it... Well, this is just the start! You gonna' call, or you want to raise the stakes?)]
+	<htmlContent tag="ROLL_WINNING"><![CDATA[<p>
+		Вы и [npc.name] бросаете все пять костей, чтобы начать игру. Когда они останавливаются, ваш оппонент с раздражением вздыхает, когда [npc.she] видит, что у вас лучшая рука. [npc.speech(Чёрт... Ну, это только начало! Ты собираешься сдать, или хочешь поднять ставки?)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="ROLL_DRAWING"><![CDATA[
-	<p>
-		Both you and [npc.name] roll all five of your dice to get the game started. As they clatter to a halt, your opponent lets out a surprised hum as [npc.she] sees that you're drawing. [npc.speech(Well, would you look at that... You gonna' call, or you want to raise the stakes?)]
+	<htmlContent tag="ROLL_DRAWING"><![CDATA[<p>
+		Вы и [npc.name] бросаете все пять костей, чтобы начать игру. Когда они останавливаются, ваш оппонент издает удивленный звук, а [npc.she] видит, что вы тянете. [npc.speech(Ну, посмотри на это... Ты собираешься сдать, или ты хочешь поднять ставки?)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="ROLL_LOSING"><![CDATA[
-	<p>
-		Both you and [npc.name] roll all five of your dice to get the game started. As they clatter to a halt, your opponent lets out a triumphant laugh as [npc.she] sees that [npc.sheHasFull] a better hand. [npc.speech(Hah! This is just the start, and I'm already winning! Now, you gonna' call, or you want to raise the stakes?)]
+	<htmlContent tag="ROLL_LOSING"><![CDATA[<p>
+		Вы и [npc.name] бросаете все пять костей, чтобы начать игру. Когда они останавливаются, ваш оппонент выдает триумфальный смешок, поскольку [npc.she] видит, что [npc.sheHasFull] лучшая рука. [npc.speech(Ха! Это только начало, и я уже выигрываю! Теперь ты хочешь сдать, или ты хочешь поднять ставки?)]
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="ROLL_CALL_OPPONENT_RAISES"><![CDATA[
-	<p>
-		[pc.speech(I call,)] you say, leaning back in your chair.
-	</p>
-	<p>
-		[npc.speech(Well, no surprise there,)] [npc.name] laughs, [npc.speech(We both know I'm going to win.)]
+	<htmlContent tag="ROLL_CALL_OPPONENT_RAISES"><![CDATA[<p>
+		[pc.speech(Я ставлю,)] говоришь ты, откидываясь на спинку стула.
+	</p><p>
+		[npc.speech(Ну, и это не удивительно,)] [npc.name] смеется, [npc.speech(Мы оба знаем, что я выиграю.)]
 	</p>
 	<p>
 		Leaning forwards, [npc.name] places [#SPECIAL_PARSE_0] on the table, before locking [npc.her] gaze with yours and letting out another mocking laugh. [npc.speech(Go on, just fold. You're as good as finished.)]
-	</p>
-	<p style='text-align:center;'>
-		<i>[npc.Name] <b>raised</b> by [#SPECIAL_PARSE_0]!</i>
-	</p>
-	]]>
-	</htmlContent>
-
-	<htmlContent tag="ROLL_CALL_OPPONENT_CALLS"><![CDATA[
-	<p>
-		[pc.speech(I call,)] you say, leaning back in your chair.
-	</p>
-	<p>
-		[npc.speech(Yeah, I'm feeling the same,)] [npc.name] sighs, [npc.speech(I call too. Now let's finish this.)]
-	</p>
-	<p style='text-align:center;'>
-		<i>[npc.Name] <b>called</b> as well!<br/>
-		Click the dice you want to reroll, then press 'Roll'.</i>
+	</p><p style='text-align:center;'>
+		<i>[npc.Name] <b>поднял</b> [#SPECIAL_PARSE_0]!</i>
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="ROLL_RAISE_OPPONENT_FOLDS"><![CDATA[
-	<p>
-		[pc.speech(I think I'll raise,)] you say, placing [#SPECIAL_PARSE_0] on the table.
+	<htmlContent tag="ROLL_CALL_OPPONENT_CALLS"><![CDATA[<p>
+		[pc.speech(Я ставлю,)] говоришь ты, откидываясь на спинку стула.
+	</p><p>
+		[npc.speech(Да, я чувствую то же самое,)] [npc.name] вздыхает, [npc.speech(Я тоже ставлю. Теперь давайте закончим это.)]
+	</p><p style='text-align:center;'>
+		<i>[npc.Name] <b>называется</b> тоже!<br/>
+		Нажмите на кубик, который вы хотите перебросить, затем нажмите 'Бросить'.</i>
 	</p>
-	<p>
-		[npc.speech(Damn it... You got me,)] [npc.name] sighs, [npc.speech(I fold.)]
-	</p>
-	<p style='text-align:center;'>
+	]]>
+	</htmlContent>
+
+	<htmlContent tag="ROLL_RAISE_OPPONENT_FOLDS"><![CDATA[<p>
+		[pc.speech(Я думаю, я повышу,)] говоришь ты, кладя [#SPECIAL_PARSE_0] на стол.
+	</p><p>
+		[npc.speech(Проклятье... Ты меня поймала,) [npc.name] вздыхает, [npc.speech(Я сдаюсь.)]
+	</p><p style='text-align:center;'>
 		<i>[npc.Name] <b>folded</b>! [style.colourExcellent(You won!)]</i>
-	</p>
-	[#SPECIAL_PARSE_1]
-	]]>
+	</p>Контекст: XML res/txt/misc/dicePoker.xml
+Текст:
+
+	[#SPECIAL_PARSE_1]]]>
 	</htmlContent>
 
-	<htmlContent tag="ROLL_RAISE_OPPONENT_CALLS"><![CDATA[
-	[#SPECIAL_PARSE_1]
-	<p>
-		[pc.speech(I think I'll raise,)] you say, placing [#SPECIAL_PARSE_0] on the table.
-	</p>
-	<p>
-		[npc.speech(That's fine with me,)] [npc.name] replies, [npc.speech(I'll call that.)]
-	</p>
-	<p>
-		[npc.Name] places [#SPECIAL_PARSE_0] on the table, before grinning at you and exclaiming, [npc.speech(Let's finish this!)]
-	</p>
-	<p style='text-align:center;'>
-		<i>[npc.Name] <b>called</b> your raise!<br/>
-		Click the dice you want to reroll, then press 'Roll'.</i>
+	<htmlContent tag="ROLL_RAISE_OPPONENT_CALLS"><![CDATA[<p>
+[pc.speech(Я думаю, я повышу,)] вы говорите, кладя [#SPECIAL_PARSE_0] на стол.
+</p><p>
+		[npc.speech(Мне это тоже подходит,)] [npc.name] отвечает, [npc.speech(Я позволю себе это.)]
+	</p><p>
+		[npc.Name] размещает [#SPECIAL_PARSE_0] на столе, прежде чем улыбается вам и восклицает: [npc.speech(Давайте закончим это!)]
+	</p><p style='text-align:center;'>
+		<i>[npc.Name] <b>назвавший</b> вашу ставку!<br/>
+		Нажмите на кубик, который вы хотите перебросить, затем нажмите 'Бросить'.</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -117,38 +95,32 @@
 	
 	<!-- BET_NEED_REACT -->
 	
-	<htmlContent tag="BET_NEED_REACT_CALL"><![CDATA[
-	[#SPECIAL_PARSE_1]
+	<htmlContent tag="BET_NEED_REACT_CALL"><![CDATA[[#SPECIAL_PARSE_1]
 	<p>
-		[pc.speech(I'll call that,)] you say, placing [#SPECIAL_PARSE_0] on the table.
-	</p>
-	<p>
-		[npc.speech(Fine,)] [npc.name] huffs, [npc.speech(that's only going to be more money for me! Now, let's finish this!)]
-	</p>
-	<p style='text-align:center;'>
-		<i>You <b>called</b> [npc.namePos] raise!<br/>
-		Click the dice you want to reroll, then press 'Roll'.</i>
+		[pc.speech(Я сделаю ставку,)] говоришь ты, размещая [#SPECIAL_PARSE_0] на столе.
+	</p><p>
+		[npc.speech(Хорошо,)] [npc.name] фыркает, [npc.speech(это только принесет мне больше денег! Теперь, давайте закончим это!)]
+	</p><p style='text-align:center;'>
+		<i>Ты <b>назвал</b> [npc.namePos] повышение!<br/>
+		Нажми на кубик, который хочешь перебросить, затем нажми 'Бросить'.</i>
 	</p>
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="BET_NEED_REACT_FOLD"><![CDATA[
-	<p>
-		[pc.speech(That's too steep for me,)] you sigh. [pc.speech(I fold.)]
+	<htmlContent tag="BET_NEED_REACT_FOLD"><![CDATA[<p>
+		[pc.speech(Это слишком круто для меня,)], вздыхаешь ты. [pc.speech(Я сдаюсь.)]
 	</p>
 	<p>
 		[npc.speech(Hah!)] [npc.name] laughs in triumph. [npc.speech(You never stood a chance!)]
-	</p>
-	<p>
-		With that, [npc.she] moves to take the pool of [#SPECIAL_PARSE_0].
+	</p><p>
+		С этими словами [npc.she] подходит к бассейну [#SPECIAL_PARSE_0].
 		#IF(npc.isAttractedTo(pc))
-			 You could take your leave, or perhaps try to use your body to convince [npc.herHim] to let you keep your money...
+			 Вы можете уйти, или, возможно, попытаться использовать свое тело, чтобы убедить [npc.herHim] оставить вам свои деньги...
 		#ELSE
-			 You can tell that [npc.name] isn't attracted to you, so you should just take your leave...
+			 Вы можете заметить, что [npc.name] не испытывает к вам влечения, поэтому вам следует просто уйти...
 		#ENDIF
-	</p>
-	<p style='text-align:center;'>
-		<i>You <b>folded</b>! [style.colourTerrible(You lost!)]</i>
+	</p><p style='text-align:center;'>
+		<i>Ты <b>сложил</b>! [style.colourTerrible(Ты проиграл!)]</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -156,88 +128,80 @@
 	
 	<!-- REROLL -->
 	
-	<htmlContent tag="REROLL_DRAW_WITH_ROLL"><![CDATA[
-	<p>
-		As the dice come clattering to a halt, both you and [npc.name] sigh in unison as you see that your hands are identical in value. With the game being a draw, you split the money pool in half and take your leave...
-	</p>
-	<p style='text-align:center;'>
-		<i>You <b>drew</b>! You split the pool of [#SPECIAL_PARSE_0] 50/50.</i>
-	</p>
-	[#SPECIAL_PARSE_1]
-	]]>
+	<htmlContent tag="REROLL_DRAW_WITH_ROLL"><![CDATA[<p>
+		Когда кости останавливаются, вы и [npc.name] вздыхаете в унисон, увидев, что ваши руки имеют одинаковую ценность. Поскольку игра закончилась вничью, вы делите пул денег пополам и уходите...
+	</p><p style='text-align:center;'>
+		<i>Ты <b>выиграл</b>! Ты разделил пул [#SPECIAL_PARSE_0] поровну.</i>
+	</p>[style.bold(Dice Poker)]
+
+[style.bold(Rules)]
+
+1. **Setup**: Each player starts with a deck of 52 cards. The dealer shuffles the deck and deals 5 cards to each player.
+
+2. **Betting**: The player to the left of the dealer starts the betting. Players can bet up to the size of the pot.
+
+3. **Reveal**: After the betting is complete, the dealer reveals the top card of the deck. This card is the "dealer's card".
+
+4. **Comparison**: Each player compares their hand to the dealer's card. The player with the highest card wins the pot.
+
+5. **Tie**: If two or more players have the same highest card, the pot is split equally among them.
+
+6. **Bluffing**: Players can bluff to try to win the pot without having the highest card.
+
+7. **Bluffing Detection**: If a player is caught bluffing, they lose the pot.]]>
 	</htmlContent>
 	
-	<htmlContent tag="REROLL_DRAW_WITHOUT_ROLL"><![CDATA[
-	<p>
-		As both you and [npc.name] choose not to reroll any dice, you sigh in unison as you resign yourselves to having identically valued hands. With the game being a draw, you split the money pool in half and take your leave...
-	</p>
-	<p style='text-align:center;'>
-		<i>You <b>drew</b>! You split the pool of [#SPECIAL_PARSE_0] 50/50.</i>
-	</p>
-	[#SPECIAL_PARSE_1]
-	]]>
+	<htmlContent tag="REROLL_DRAW_WITHOUT_ROLL"><![CDATA[<p>
+		Поскольку вы и [npc.name] решили не перебрасывать кости, вы вздыхаете в унисон, смирившись с тем, что ваши руки имеют одинаковую ценность. Поскольку игра закончилась вничью, вы разделили денежный пул пополам и разошлись...
+	</p><p style='text-align:center;'>
+		<i>Ты <b>выиграл</b>! Ты разделил пул [#SPECIAL_PARSE_0] поровну.</i>
+	</p>[style.bold(Dice Poker)]]]>
 	</htmlContent>
 	
-	<htmlContent tag="REROLL_WIN_WITH_ROLL"><![CDATA[
-	<p>
-		As the dice come clattering to a halt, [npc.name] lets out a defeated sigh as [npc.she] sees that you've won. [npc.speech(Damn it... Well, good game...)]
-	</p>
-	<p>
-		You collect your winnings and return [npc.namePos] remark, before moving off and taking your leave...
-	</p>
-	<p style='text-align:center;'>
-		[style.colourExcellent(You won!)]</i>
-	</p>
-	[#SPECIAL_PARSE_0]
-	]]>
+	<htmlContent tag="REROLL_WIN_WITH_ROLL"><![CDATA[<p>
+		Когда кости останавливаются, [npc.name] вздыхает, признавая свое поражение, а [npc.she] видит, что вы выиграли. [npc.speech(Черт... Ну, хорошая игра...)]
+	</p><p>
+		Ты собираешь свои выигрыши и возвращаешь [npc.namePos] замечание, прежде чем уйти...
+	</p><p style='text-align:center;'>
+		[style.colourExcellent(Вы выиграли!)]</i>
+	</p>[style.bold(@@H0@@)]]]>
 	</htmlContent>
 	
-	<htmlContent tag="REROLL_WIN_WITHOUT_ROLL"><![CDATA[
-	<p>
-		As both you and [npc.name] choose not to reroll any dice, [npc.sheIs] already resigned [npc.herself] to a loss, and lets out a frustrated little sigh. [npc.speech(Damn it... Well, good game...)]
-	</p>
-	<p>
-		You collect your winnings and return [npc.namePos] remark, before moving off and taking your leave...
-	</p>
-	<p style='text-align:center;'>
-		[style.colourExcellent(You won!)]</i>
-	</p>
-	[#SPECIAL_PARSE_0]
-	]]>
+	<htmlContent tag="REROLL_WIN_WITHOUT_ROLL"><![CDATA[<p>
+		Поскольку и вы, и [npc.name] решили не перебрасывать кости, [npc.sheIs] уже признал поражение [npc.herself] и с досадой выпустил из себя маленький вздох. [npc.speech(Черт... Ну, хорошая игра...)]
+	</p><p>
+		Ты собираешь свои выигрыши и возвращаешься с замечанием [npc.namePos], прежде чем уйти...
+	</p><p style='text-align:center;'>
+		[style.colourExcellent(Вы выиграли!)]</i>
+	</p>[style.bold(@@H0@@)]]]>
 	</htmlContent>
 	
-	<htmlContent tag="REROLL_LOSS_WITH_ROLL"><![CDATA[
-	<p>
-		As the dice come clattering to a halt, [npc.name] lets out a triumphant laugh as [npc.she] sees that [npc.sheIs] won. [npc.speech(Hah! Good game, but you never stood a chance!)]
-	</p>
-	<p>
-		With that, [npc.she] moves to take the pool of [#SPECIAL_PARSE_0].
+	<htmlContent tag="REROLL_LOSS_WITH_ROLL"><![CDATA[<p>
+		Когда кости останавливаются, [npc.name] заливается победоносной смехом, а [npc.she] видит, что [npc.sheIs] выиграл. [npc.speech(Ха! Хорошая игра, но у тебя никогда не было шансов!)]
+	</p><p>
+		С этими словами [npc.she] подходит к столу с [#SPECIAL_PARSE_0].
 		#IF(npc.isAttractedTo(pc))
-			 You could take your leave, or perhaps try to use your body to convince [npc.herHim] to let you keep your money...
+			 Вы можете уйти, или, возможно, попытаться использовать свое тело, чтобы убедить [npc.herHim] оставить вам деньги...
 		#ELSE
-			 You can tell that [npc.name] isn't attracted to you, so you should just take your leave...
+			 Вы можете заметить, что [npc.name] не привлекается к вам, поэтому вам следует просто уйти...
 		#ENDIF
-	</p>
-	<p style='text-align:center;'>
-		[style.colourTerrible(You lost!)]</i>
+	</p><p style='text-align:center;'>
+		[style.colourTerrible(Ты проиграл!)]</i>
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="REROLL_LOSS_WITHOUT_ROLL"><![CDATA[
-	<p>
-		As both you and [npc.name] choose not to reroll any dice, you've already resigned yourself to a loss, and try not to feel too unhappy as your opponent lets out a triumphant laugh. [npc.speech(Hah! Good game, but you never stood a chance!)]
-	</p>
-	<p>
-		With that, [npc.she] moves to take the pool of [#SPECIAL_PARSE_0].
+	<htmlContent tag="REROLL_LOSS_WITHOUT_ROLL"><![CDATA[<p>
+		Поскольку вы и [npc.name] решили не перебрасывать кости, вы уже смирились с поражением и стараетесь не слишком расстраиваться, когда ваш оппонент вырывает из себя триумфальный смешок. [npc.speech(Ха! Хорошая игра, но у вас никогда не было шансов!)]
+	</p><p>
+		С этими словами, [npc.she] подходит к столу с [#SPECIAL_PARSE_0].
 		#IF(npc.isAttractedTo(pc))
-			 You could take your leave, or perhaps try to use your body to convince [npc.herHim] to let you keep your money...
+			 Вы можете уйти, или, возможно, попытаться использовать свое тело, чтобы убедить [npc.herHim] оставить вам деньги...
 		#ELSE
-			 You can tell that [npc.name] isn't attracted to you, so you should just take your leave...
+			 Вы можете сказать, что [npc.name] не привлекает вас, поэтому вам следует просто уйти...
 		#ENDIF
-	</p>
-	<p style='text-align:center;'>
-		[style.colourTerrible(You lost!)]</i>
+	</p><p style='text-align:center;'>
+		[style.colourTerrible(Ты проиграл!)]</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -245,35 +209,28 @@
 	
 	<!-- END_LOSS_OFFER_BODY -->
 	
-	<htmlContent tag="END_LOSS_OFFER_BODY"><![CDATA[
-	<p>
-		[pc.speech(Wait!)] you cry out, desperate not to lose your money.
-	</p>
-	<p>
-		[npc.speech(Huh? What is it?)] [npc.name] asks, narrowing [npc.her] eyes in suspicion as [npc.she] looks up from gathering the money that's on the table.
-	</p>
-	<p>
-		[pc.speech(Well... I mean... Is there no way I can get my money back?)] you ask, putting on your most innocent look as you submissively cast your eyes to the floor.
-	</p>
-	<p>
-		[npc.speech(Hmm, well, there is one way you could get your half of the pool back,)] [npc.name] replies, with an unmistakable hint of lust in [npc.her] voice. [npc.speech(I'll give you your flames back, but only if you let me fuck you, right here, right now.)]
+	<htmlContent tag="END_LOSS_OFFER_BODY"><![CDATA[<p>
+		[pc.speech(Ждите!)] Вы кричите, отчаянно пытаясь не потерять свои деньги.
+	</p><p>
+		[npc.speech(Эй? Что это?)] [npc.name] спрашивает, суживая [npc.her] глаза в подозрении, когда [npc.she] поднимает голову от сбора денег, лежащих на столе.
+	</p><p>
+		[pc.speech(Ну... Я имею в виду... Нет ли способа вернуть свои деньги?)], спрашиваешь ты, надевая свой самый невинный вид, когда ты подчиненно опускаешь глаза на пол.
+	</p><p>
+		[npc.speech(Эм, ну, есть один способ вернуть тебе половину пула,)] [npc.name] отвечает, с unmistakable намеком на похоть в голосе [npc.her]. [npc.speech(Я верну тебе твои огни, но только если ты позволишь мне трахнуть тебя прямо здесь, прямо сейчас.)]
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="END_LOSS_OFFER_BODY_DECLINE"><![CDATA[
-	<p>
-		[pc.speech(On second thoughts, I don't need my money back,)] you say, before turning around and quickly taking your leave.
+	<htmlContent tag="END_LOSS_OFFER_BODY_DECLINE"><![CDATA[<p>
+		[pc.speech(Передумал, не нужно мне назад мои деньги,)] говоришь ты, прежде чем обернуться и быстро уйти.
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="END_LOSS_OFFER_BODY_ACCEPT"><![CDATA[
-	<p>
-		Accepting [npc.namePos] demand, you tell [npc.herHim] that [npc.she] can use you however [npc.she] wants, so long as [npc.she] gives you your money back first.
-	</p>
-	<p>
-		[npc.Name] lets out a lustful [npc.moan], before stepping forwards and wrapping [npc.her] [npc.arms] around your back. Giving you an evil grin, [npc.she] hungrily licks [npc.her] [npc.lips], before growling, [npc.speech(This is gonna' be good!)]
+	<htmlContent tag="END_LOSS_OFFER_BODY_ACCEPT"><![CDATA[<p>
+		Принимая [npc.namePos] требование, вы говорите [npc.herHim], что [npc.she] может использовать вас, как [npc.she] хочет, до тех пор, пока [npc.she] вернет вам деньги.
+	</p><p>
+		[npc.Name] выдает похотливый [npc.moan], прежде чем шагнуть вперед и обнять [npc.her] [npc.arms] за спину. Улыбаясь злобно, [npc.she] жадно лижет [npc.her] [npc.lips], прежде чем рычит: [npc.speech(Это будет здорово!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -281,12 +238,10 @@
 	
 	<!-- END_LOSS_SEX -->
 	
-	<htmlContent tag="END_LOSS_AFTER_SEX"><![CDATA[
-	<p>
-		[npc.Name] steps away from you, sighing, [npc.speech(You're a pretty good fuck. Perhaps you could make a living out of whoring yourself out? You're no good at dice poker, that's for sure.)]
-	</p>
-	<p>
-		As the crowd laughs along with [npc.name] as [npc.she] gives you that advice, you quickly gather your things and hurry off, determined to do better at dice poker the next time you play...
+	<htmlContent tag="END_LOSS_AFTER_SEX"><![CDATA[<p>
+		[npc.Name] отходит от вас, вздыхая, [npc.speech(Ты довольно хороша. Возможно, ты могла бы зарабатывать на жизнь, занимаясь проституцией? В покер ты играешь плохо, это точно.)]
+	</p><p>
+		В то время как толпа смеется вместе с [npc.name], когда [npc.she] дает вам этот совет, вы быстро собираете свои вещи и спешите уйти, решив играть в кости в следующий раз лучше...
 	</p>
 	]]>
 	</htmlContent>

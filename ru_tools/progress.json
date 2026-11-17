@@ -1,6 +1,7 @@
 {
   "translated_xml": [
-    "res/txt/misc/prologue.xml"
+    "res/txt/misc/prologue.xml",
+    "res/txt/misc/dicePoker.xml"
   ],
   "translated_java": []
 }
