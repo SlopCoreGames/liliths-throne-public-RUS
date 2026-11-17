@@ -15,3 +15,5 @@ dependency-reduced-pom.xml
 
 # Ignore all generic character images
 res/images/characters/generic/
+
+ru_tools/__pycache__/

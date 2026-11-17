@@ -288,20 +288,29 @@ def translate_xml_file(path: Path, api_url: str, glossary: dict) -> bool:
 
     cdata_paras = []
     block_splits = []
+    directive_re = re.compile(r"(</p>|[ \t]*#(?:IF|ELSEIF|ELSE|ENDIF)[^\n]*\n?)")
     for b_idx, inner in enumerate(cdata_blocks):
-        parts = re.split(r"(</p>)", inner)
+        parts = directive_re.split(inner)
         chunks = []
         buf = ""
         for p in parts:
-            buf += p
-            if p == "</p>":
-                chunks.append(buf)
-                buf = ""
+            if not p:
+                continue
+            if re.match(r"^[ \t]*#(?:IF|ELSEIF|ELSE|ENDIF)", p):
+                if buf:
+                    chunks.append(buf)
+                    buf = ""
+                chunks.append(p)
+            else:
+                buf += p
+                if p == "</p>":
+                    chunks.append(buf)
+                    buf = ""
         if buf:
             chunks.append(buf)
         block_splits.append(chunks)
         for p_idx, ch in enumerate(chunks):
-            if ch.strip():
+            if ch.strip() and not re.match(r"^[ \t]*#(?:IF|ELSEIF|ELSE|ENDIF)", ch):
                 cdata_paras.append((b_idx, p_idx, ch))
 
     leaf_tags = ["name", "namePlural", "description", "title", "tooltip", "determiner", "displayName"]
