@@ -1,7 +1,13 @@
 {
   "translated_xml": [
     "res/txt/misc/prologue.xml",
-    "res/txt/misc/dicePoker.xml"
+    "res/txt/misc/dicePoker.xml",
+    "res/txt/misc/friendlyOccupantDialogue.xml",
+    "res/txt/misc/glory_hole.xml",
+    "res/txt/misc/milking.xml",
+    "res/txt/misc/misc.xml",
+    "res/txt/misc/quickTransformations.xml",
+    "res/txt/misc/slaveDialogue.xml"
   ],
   "translated_java": []
 }

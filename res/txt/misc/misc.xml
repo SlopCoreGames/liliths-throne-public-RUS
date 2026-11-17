@@ -6,12 +6,12 @@
 		[npc2.Name] can't help but laugh as [npc2.she] [npc2.verb(realise)] that [npc.name] actually [npc.verb(think)] [npc.she] [npc.verb(stand)] a chance against [npc2.herHim]. With a mocking smirk on [npc2.her] face, [npc2.she] [npc2.verb(taunt)], [npc2.speech(Hah! You should know your place, you pathetic little thing! Get down and beg for my forgiveness, before I decide to end you!)]
 	</p>
 	<p style='text-align:center;'>
-		[style.italics(A few moments later...)]
+		[style.italics(Через несколько мгновений...)]
 	</p>
 	<p>
-		[npc2.speechNoEffects(~Aah!~ Oh, yes! That's right, ruin my pussy! ~Mmm!~ I'm your bitch!
-		#IF(npc2.isVisiblyPregnant()) Fuck me! #ELSE Breed me! #ENDIF
-		~Aah!~ Yes!)]
+		[npc2.speechNoEffects(~Ах!~ О, да! Вот так! Разрушь мою киску! ~Ммм!~ Я твоя шлюха!
+		#IF(npc2.isVisiblyPregnant()) Трахни меня! #ELSE Разведи меня! #ENDIF
+		~Ах!~ Да!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -25,14 +25,14 @@
 
 	<htmlContent tag="POST_SEX_2KOMA_AS_SUB"><![CDATA[
 	<p>
-		Having put you in your place, [npc.name] gathers [npc.her] things and makes [npc.her] exit, leaving you panting and [pc.moaning] on the floor. After a few minutes, you've got your breath back, and, getting your own things in order, you brush yourself down and set off on your way.
+		Поставив тебя на место, [npc.name] собирает [npc.her] вещи и заставляет [npc.her] уйти, оставляя тебя задыхающимся и [pc.moaning] на полу. Через несколько минут ты восстанавливаешь дыхание, и, приведя себя в порядок, ты отправляешься по своим делам.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="A_WILD_CENTAUR_APPEARS"><![CDATA[
 	<p>
-		As you find yourself thinking about the nature of centaurs, one suddenly appears before you! From the lustful look in [npc.her] [npc.eyes], you can tell that [npc.she] wants some sex...
+		Когда ты думаешь о природе кентавров, перед тобой внезапно появляется один! По жадной позе в глазах [npc.her] [npc.eyes], ты можешь понять, что [npc.she] хочет секса...
 	</p>
 	]]>
 	</htmlContent>
@@ -105,13 +105,13 @@
 	<htmlContent tag="INCUBATION_EGG_LAYING_VAGINA_SINGLE"><![CDATA[
 	#IF(game.getPlayerCell().getPlace().isPopulated())
 		<p>
-			Thanks to the hormones released into your system by the egg that's been maturing in your womb, your pussy instantly responds to your touch by secreting a thick, slimy stream of natural lubricant. Panting and [pc.moaning] in excitement, you #IF(pc.hasLegs())spread your [pc.legs]#ELSElower your [pc.hips] towards the ground#ENDIF and start to push, smiling to yourself as the strangers gathered around you lustfully stare at your drooling cunt.
+			Благодаря гормонам, выпущенным в вашу систему яйцеклеткой, которая созревала в вашем чреве, ваша пизда мгновенно реагирует на ваше прикосновение, выделяя густую, липкой струю естественного смазки. Задыхаясь и [pc.moaning] от возбуждения, вы #IF(pc.hasLegs())расправляете свои [pc.legs]#ELSEопускаете свое [pc.hips] к земле#ENDIF и начинаете толкать, улыбаясь себе, как чужие люди, собравшиеся вокруг вас, похотливо смотрят на вашу слюнявую пизду.
 		</p>
 		<p>
-			Almost immediately, you feel the huge, bulbous egg pushing its way down and out of your exposed pussy. A desperate cry bursts out from between your [pc.lips] as your labia lewdly stretch apart, and before you have time to think about what's happening, the egg has escaped from your slimy cunt and has been safely deposited onto the floor beneath you.
+			Почти сразу вы чувствуете, как огромная, выпуклая яйцеклетка проталкивается вниз и выходит из вашей обнаженной пизды. Отчаянный крик вырывается из ваших [pc.lips], когда ваши половые губы похотливо расходятся, и прежде чем у вас есть время подумать о том, что происходит, яйцеклетка выходит из вашей липкой пизды и попадает на пол под вами.
 		</p>
 		<p>
-			After releasing a chorus of crass remarks and low whistles, the crowd of strangers starts to depart, leaving you panting for breath as you collapse down next to the egg. Suddenly, a huge wave of exhaustion washes over you, and it takes all of your effort to stop yourself from fainting as you try to rest and recover your strength...
+			После того, как вы выпустили хор непристойных замечаний и низких свистов, толпа чужих людей начинает уходить, оставляя вас задыхающейся от дыхания, когда вы падаете рядом с яйцеклеткой. Вдруг, огромная волна усталости накрывает вас, и вам приходится приложить все усилия, чтобы не потерять сознание, когда вы пытаетесь отдохнуть и восстановить свои силы...
 		</p>
 	#ELSE
 		<p>
@@ -154,7 +154,7 @@
 	<htmlContent tag="INCUBATION_EGG_LAYING_ANUS"><![CDATA[
 	#IF(game.getPlayerCell().getPlace().isPopulated())
 		<p>
-			Thinking that it would be fun to put on a show for passing strangers, you decide to stop and lay the [#SPECIAL_PARSE_1] you've incubated in your stomach right here in public. Getting excited at the prospect of performing such an act, you quickly find a suitable spot and squat down on the ground. Quietly [pc.moaning] in delight, you expose your [pc.assCloaca] and tease your [pc.fingers] over your [pc.asshole+], which proves to be more than enough to attract a couple of curious passersby.
+			Thinking that it would be fun to put on a show for passing strangers, you decide to stop and lay the [#SPECIAL_PARSE_1] you've incubated in your stomach right here in public. Quietly [pc.moaning] in delight, you expose your [pc.assCloaca] and tease your [pc.fingers] over your [pc.asshole+], which proves to be more than enough to attract a couple of curious passersby.
 		</p>
 	#ELSE
 		<p>
@@ -323,13 +323,13 @@
 		</p>
 	#ELSE
 		<p>
-			Thanks to the hormones released into your system by the eggs that have been maturing in your body, your [pc.crotchNipples] instantly respond to your touch by secreting a thick, slimy stream of natural lubricant. Panting and [pc.moaning] as a sudden wave of excitement washes over you, you begin to massage your [pc.crotchBoobs].
+			Благодаря гормонам, выпущенным в вашу систему яйцами, которые созревали в вашем теле, ваши [pc.crotchNipples] мгновенно реагируют на ваше прикосновение, выделяя густую, слизистую струю естественного смазки. Задыхаясь и [pc.moaning], как внезапная волна возбуждения охватывает вас, вы начинаете массировать свои [pc.crotchBoobs].
 		</p>
 		<p>
-			Almost immediately, you feel the first huge, bulbous egg pushing its way down and out of one of your exposed [pc.crotchBoobs]. A desperate cry bursts out from between your [pc.lips] as your [pc.crotchNipple(true)] lewdly stretches out, and before you have time to think about what's happening, the egg has escaped from your slimy hole and you've safely deposited it onto the floor beneath you. Seemingly with a mind of its own, your [pc.crotchNipples] start spasming and contracting, pushing the next egg out from your other [pc.crotchBoob(true)]. A few moments later, you're left desperately gasping for breath as this next egg stretches out your [pc.crotchNipple(true)] and slides free from your slimy hole to join the first on the floor beneath you.
+			Практически сразу вы чувствуете, как первое огромное, выпуклое яйцо проталкивается вниз и выходит из одного из ваших обнаженных [pc.crotchBoobs]. Отчаянный крик вырывается из ваших [pc.lips], когда ваш [pc.crotchNipple(true)] раздувается, и прежде чем вы успеваете подумать о том, что происходит, яйцо выскользнуло из вашей слизистой дыры и вы успешно положили его на пол под вами. Кажется, что яйцо имеет свою волю, и ваш [pc.crotchNipples] начинает подергиваться и сокращаться, выталкивая следующее яйцо из вашего другого [pc.crotchBoob(true)]. Через несколько мгновений вы остаетесь, отчаянно задыхаясь, пытаясь отдышаться, когда это следующее яйцо растягивает ваш [pc.crotchNipple(true)] и выскользает из вашей слизистой дыры, присоединяясь к первому на полу под вами.
 		</p>
 		<p>
-			Before you know it, you're collapsing down next to the [#SPECIAL_PARSE_0] eggs you've managed to squeeze out from your slimy, stretched [pc.crotchNipples]. Having safely laid all of your eggs, a huge wave of exhaustion suddenly washes over you, and it takes all of your effort to stop yourself from fainting as you try to rest and recover your strength...
+			Прежде чем вы успеваете осознать, что происходит, вы падаете на пол рядом с [#SPECIAL_PARSE_0] яйцами, которые вам удалось выжать из ваших слизистых, растянутых [pc.crotchNipples]. После того, как вы успешно отложили все свои яйца, огромная волна усталости внезапно охватывает вас, и вам приходится приложить все усилия, чтобы не упасть в обморок, когда вы пытаетесь отдохнуть и восстановить свои силы...
 		</p>
 	#ENDIF
 	]]>
@@ -340,17 +340,17 @@
 	<htmlContent tag="INCUBATION_EGG_LAYING_SPINNERET"><![CDATA[
 	#IF(game.getPlayerCell().getPlace().isPopulated())
 		<p>
-			Public laying.
+			Публичное откладывание яиц.
 		</p>
 		<p>
-			Gain access to spinneret and squat down to lay. Members of public stop to watch.
+			Получить доступ к спиннету и присесть, чтобы отложить. Члены публики останавливаются, чтобы посмотреть.
 		</p>
 	#ELSE
 		<p>
-			Private laying.
+			Частная откладка.
 		</p>
 		<p>
-			Gain access to spinneret and squat down to lay.
+			Получить доступ к спиннету и присесть, чтобы отложить.
 		</p>
 	#ENDIF
 	]]>
@@ -359,11 +359,11 @@
 	<htmlContent tag="INCUBATION_EGG_LAYING_SPINNERET_SINGLE"><![CDATA[
 	#IF(game.getPlayerCell().getPlace().isPopulated())
 		<p>
-			Lay a single egg. Members of public comment and leave.
+			Отложить одно яйцо. Члены публики комментируют и уходят.
 		</p>
 	#ELSE
 		<p>
-			Lay a single egg.
+			Отложить одно яйцо.
 		</p>
 	#ENDIF
 	]]>
@@ -372,11 +372,11 @@
 	<htmlContent tag="INCUBATION_EGG_LAYING_SPINNERET_MULTIPLE"><![CDATA[
 	#IF(game.getPlayerCell().getPlace().isPopulated())
 		<p>
-			Lay [#SPECIAL_PARSE_0] eggs. Members of public comment and leave.
+			Отложить [#SPECIAL_PARSE_0] яиц. Члены публики комментируют и уходят.
 		</p>
 	#ELSE
 		<p>
-			Lay [#SPECIAL_PARSE_0] eggs.
+			Отложить [#SPECIAL_PARSE_0] яиц.
 		</p>
 	#ENDIF
 	]]>
@@ -387,14 +387,14 @@
 
 	<htmlContent tag="INCUBATION_EGG_LAYING_FINISHED_SINGLE"><![CDATA[
 	<p>
-		The process of laying the egg has really taken its toll on you, and you're unable to summon the energy to do anything other than try to keep your eyes open and watch as it hatches. As the shell breaks, you feel the arcane using you as a source of energy, rapidly maturing your offspring into a young adult right before your eyes. Finding yourself completely depleted of energy, you manage to take one good look at your offspring before you fall unconscious:
+		Процесс откладывания яйца действительно истощил вас, и вы не можете собрать достаточно энергии, чтобы сделать что-либо, кроме как попытаться держать глаза открытыми и наблюдать, как оно вылупляется. Когда скорлупа трескается, вы чувствуете, как аркана использует вас в качестве источника энергии, быстро созревая ваше потомство в молодого взрослого прямо на ваших глазах. Оказавшись полностью обессиленным, вы успеваете один раз хорошенько взглянуть на свое потомство, прежде чем теряете сознание:
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="INCUBATION_EGG_LAYING_FINISHED_MULTIPLE"><![CDATA[
 	<p>
-		The process of laying the [#SPECIAL_PARSE_0] eggs has really taken its toll on you, and you're unable to summon the energy to do anything other than try to keep your eyes open and watch as they hatch. As their shells break, you feel the arcane using you as a source of energy, rapidly maturing your offspring into young adults right before your eyes. Finding yourself completely depleted of energy, you manage to take one good look at your offspring before you fall unconscious:
+		Процесс откладывания [#SPECIAL_PARSE_0] яиц действительно истощил вас, и вы не можете собрать достаточно энергии, чтобы сделать что-либо, кроме как попытаться держать глаза открытыми и наблюдать, как они вылупляются. Когда их скорлупы трескаются, вы чувствуете, как аркана использует вас в качестве источника энергии, быстро созревая ваше потомство в молодых взрослых прямо на ваших глазах. Оказавшись полностью обессиленным, вы успеваете один раз хорошенько взглянуть на свое потомство, прежде чем теряете сознание:
 	</p>
 	]]>
 	</htmlContent>
@@ -404,7 +404,7 @@
 		...
 	</p>
 	<p>
-		A short time later, you awake to discover that the [#SPECIAL_PARSE_0] has departed, leaving you to laboriously stand back up and prepare to continue on your way...
+		Через некоторое время вы просыпаетесь и обнаруживаете, что [#SPECIAL_PARSE_0] ушло, оставив вас, чтобы вы с трудом встали и продолжили свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -414,7 +414,7 @@
 		...
 	</p>
 	<p>
-		A short time later, you awake to discover that your offspring have departed, leaving you to laboriously stand back up and prepare to continue on your way...
+		Через некоторое время вы просыпаетесь и обнаруживаете, что ваше потомство ушло, оставив вас, чтобы вы с трудом встали и продолжили свой путь...
 	</p>
 	]]>
 	</htmlContent>

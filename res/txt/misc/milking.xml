@@ -3,43 +3,29 @@
 
 	<!-- Milking breasts -->
 	
-	<htmlContent tag="MILKING_PLAYER"><![CDATA[
-	#VAR
-		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
-	#ENDVAR
-	
-	#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
-		<p>
-			You lie down on the artisan milker's comfortable, padded leather bed, and, attaching the
-			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
-			#ELSE
-				 soft suction cups
-			#ENDIF
-			 to your [pc.breastRows] [pc.breasts], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
-			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [pc.milk+] from your [pc.nipples+].
-			#ELSE
-				 begins to squeeze and suck the [pc.milk+] from your [pc.nipples+].
-			#ENDIF
-			 You let out a delighted sigh at the satisfying feeling of being milked in comfort, and, allowing your eyes to close, you take a relaxing, well-earned break from your daily activities.
-		</p>
-	#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
-		<p>
-			You lie down on the industrial milker's uncomfortable metal bed, and, attaching the
-			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
-			#ELSE
-				 hard suction cups
-			#ENDIF
-			 to your [pc.breastRows] [pc.breasts], you flick the nearby switch to 'on'. Immediately, the machine starts loudly whirring and humming, and
-			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [pc.milk+] from your [pc.nipples+].
-			#ELSE
-				 begins to roughly squeeze and suck the [pc.milk+] from your [pc.nipples+].
-			#ENDIF
-			 You let out a distressed moan at the harsh feeling of being milked by such a crude machine, but, determined to see this through to the end, you hold still and allow the industrial-grade contraption to do its work.
-		</p>
+	<htmlContent tag="MILKING_PLAYER"><![CDATA[#VAR
+	var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
+#ENDVAR
+
+#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
+	<p>
+		Ты ложишься на удобную, мягкую кожаную кровать мастера-дояра, и, прикрепив к своим [pc.breastRows] [pc.breasts] специальные 'Lact-o-Cups', ты переключаешь переключатель на 'включено'. Сразу же машина начинает тихо гудеть, и, если у тебя есть улучшение 'Увеличение эффективности доения', то послепродажные насадки начинают мастерски выдавливать и всасывать [pc.milk+] из твоих [pc.nipples+]. Если же у тебя нет этого улучшения, то насадки начинают выдавливать и всасывать [pc.milk+] из твоих [pc.nipples+]. Ты издает довольный вздох, наслаждаясь ощущением комфортного доения, и, закрыв глаза, отдыхаешь, наслаждаясь заслуженным отдыхом от своих повседневных занятий.
+	</p>#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
+<p>
+	Ты ложишься на неудобную металлическую кровать промышленного доильного аппарата, и, прикрепив
+	#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
+		 специальные 'Lact-o-Cups'
+	#ELSE
+		 жесткие присоски
+	#ENDIF
+		 к твоим [pc.breastRows] [pc.breasts], ты нажимаешь на находящийся рядом переключатель, чтобы включить его. Сразу же машина начинает громко гудеть и жужжать, и
+	#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
+		 послепродажные присоски начинают мастерски выдавливать и всасывать [pc.milk+] из твоих [pc.nipples+].
+	#ELSE
+		 начинает грубо выдавливать и всасывать [pc.milk+] из твоих [pc.nipples+].
+	#ENDIF
+		 Ты издает расстроенный стон от неприятного ощущения, когда тебя доят такой грубой машиной, но, решив довести это до конца, ты остаешься неподвижной и позволяешь промышленному устройству делать свою работу.
+	</p>
 	#ELSE
 		<p>
 			You lie down on the milking machine's leather bed, and, attaching the
@@ -63,8 +49,7 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="MILKING_SLAVE_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_SLAVE_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
@@ -101,66 +86,64 @@
 				 and is quickly sucked away into the storage vats.
 			#ENDIF
 		 Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to squeeze and milk [npc.namePos] [npc.breasts+].
-	</p>
-	<p>
-		Before you know it, an hour has passed, and, leaving [npc.name] to continue being milked by the machine, you stand up and wonder what to do next...
+	</p><p>
+		Не успеешь оглянуться, как проходит час, и, оставив [npc.name] продолжать доить машину, ты встаешь и задумываешься, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="MILKING_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
 	<p>
 		#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
-			Wanting to have [npc.name] milked, you get [npc.herHim] to lie down on the artisan milker's comfortable, padded leather bed, and, attaching the
+			Хозяйка хочет, чтобы её [npc.name] доили, и заставляет [npc.herHim] лечь на удобную, обитую кожей кровать мастера, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 soft suction cups
+				 мягкие присоски
 			#ENDIF
-			 to [npc.her] [npc.breastRows] [npc.breasts], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 к [npc.her] [npc.breastRows] [npc.breasts], она включает машину. Сразу же машина начинает тихо гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [npc.milk+] from [npc.her] [npc.nipples+].
+				 присоски начинают мастерски сжимать и сосать [npc.milk+] из [npc.her] [npc.nipples+].
 			#ELSE
-				 begins to squeeze and suck the [npc.milk+] from [npc.her] [npc.nipples+].
+				 начинает сжимать и сосать [npc.milk+] из [npc.her] [npc.nipples+].
 			#ENDIF
 		#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
-			Wanting to have [npc.name] milked, you get [npc.herHim] to lie down on the industrial milker's uncomfortable metal bed, and, attaching the
+			Хозяйка хочет, чтобы её [npc.name] доили, и заставляет [npc.herHim] лечь на неудобную металлическую кровать мастера, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 hard suction cups
+				 жесткие присоски
 			#ENDIF
-			 to [npc.her] [npc.breastRows] [npc.breasts], you flick the nearby switch to 'on'. Immediately, the machine starts loudly whirring and humming, and
+			 к [npc.her] [npc.breastRows] [npc.breasts], она включает машину. Сразу же машина начинает громко гудеть и вибрировать, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [npc.milk+] from [npc.her] [npc.nipples+].
+				 присоски начинают мастерски сжимать и сосать [npc.milk+] из [npc.her] [npc.nipples+].
 			#ELSE
-				 begins to roughly squeeze and suck the [npc.milk+] from [npc.her] [npc.nipples+].
+				 начинает грубо сжимать и сосать [npc.milk+] из [npc.her] [npc.nipples+].
 			#ENDIF
 		#ELSE
-			Wanting to have [npc.name] milked, you get [npc.herHim] to lie down on the milking machine's leather bed, and, attaching the
+			Хозяйка хочет, чтобы её [npc.name] доили, и заставляет [npc.herHim] лечь на кожаную кровать доильного аппарата, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 suction cups
+				 присоски
 			#ENDIF
-			 to [npc.her] [npc.breastRows] [npc.breasts], you flick the nearby switch to 'on'. Immediately, the machine starts humming, and
+			 к [npc.her] [npc.breastRows] [npc.breasts], она включает машину. Сразу же машина начинает гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [npc.milk+] from [npc.her] [npc.nipples+].
+				 присоски начинают мастерски сжимать и сосать [npc.milk+] из [npc.her] [npc.nipples+].
 			#ELSE
-				 begins to squeeze and suck the [npc.milk+] from [npc.her] [npc.nipples+].
+				 начинает сжимать и сосать [npc.milk+] из [npc.her] [npc.nipples+].
 			#ENDIF
 		#ENDIF
-		 Sitting down on the padded leather seat next to [npc.herHim], you reach out and give [npc.her] [npc.breasts+] a firm squeeze, smiling in delight as an extra squirt of [npc.her] [npc.milk+] is 
+		 Сидя на обитой кожей подушке рядом с [npc.herHim], ты протягиваешь руку и крепко сжимаешь [npc.her] [npc.breasts+], улыбаясь в восторге, когда дополнительная порция [npc.her] [npc.milk+] 
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 sucked out and pumped away into the storage vats.
+				 высасывается и перекачивается в резервуары для хранения.
 			#ELSE
-				 greedily sucked out and pumped away into the storage vats.
+				 жадно высасывается и перекачивается в резервуары для хранения.
 			#ENDIF
-		 Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to squeeze and milk [npc.namePos] [npc.breasts+].
+		 Выдыхая довольный вздох, ты делаешь заслуженный перерыв в своих ежедневных занятиях, и чередуешь простое расслабление в удобном кожаном кресле с вытягиванием вперед, чтобы сжимать и доить [npc.namePos] [npc.breasts+].
 	</p>
 	<p>
 		Before you know it, an hour has passed, and after unstrapping [npc.name] from the machine, you stand up and wonder what to do next...
@@ -193,22 +176,21 @@
 				 begins to squeeze and stroke your [pc.cock+].
 			#ENDIF
 			 It doesn't take long before your orgasm crashes over you, and, bucking your [pc.hips] into the bed's soft leather padding, you feel your [pc.cum+] shooting out into the tube that's enveloping your [pc.cock].
-		</p>
-	#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
+		</p>#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
 		<p>
-			You lie down on the industrial milker's uncomfortable metal bed, and, sliding the
+			Ты ложишься на неудобную металлическую кровать промышленного доильного аппарата, и, вставляя специальную трубку 'Succ-u-Bus'
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_CUM_EFFICIENCY))
-				 special 'Succ-u-Bus' suction tube
+				 или послепродажную трубку
 			#ELSE
-				 industrial-strength suction tube
+				 промышленную трубку
 			#ENDIF
-			 down over your [pc.cock+], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 в свою [pc.cock+], ты нажимаешь на выключатель, который находится рядом. Сразу же машина начинает тихо гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_CUM_EFFICIENCY))
-				 the aftermarket suction device begin to expertly squeeze and stroke your [pc.cock+].
+				 послепродажная трубка начинает мастерски сжимать и гладить твою [pc.cock+].
 			#ELSE
-				 begins to roughly squeeze and stroke your [pc.cock+].
+				 промышленная трубка начинает грубо сжимать и гладить твою [pc.cock+].
 			#ENDIF
-			 You let out a distressed moan at the harsh feeling of being milked by such a crude machine, but, determined to see this through to the end, you hold still and allow the industrial-grade contraption to do its work. Despite the machine's rough touch, it doesn't take long before you're letting out a heavy groan, and, bucking your [pc.hips] against the bed's cold metal, you feel your [pc.cum+] shooting out into the machine's tube.
+			 Ты издает хриплый стон, испытывая дискомфорт от того, что тебя доит такая грубая машина, но, решив довести это до конца, ты остаешься неподвижным и позволяешь промышленному устройству делать свою работу. Несмотря на грубое прикосновение машины, это не занимает много времени, и ты начинаешь издавать тяжелый стон, и, подтягивая свою [pc.hips] к холодной металлической кровати, ты чувствуешь, как твоя [pc.cum+] выстреливает в трубку машины.
 		</p>
 	#ELSE
 		<p>
@@ -236,49 +218,48 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="MILKING_COCK_SLAVE_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_COCK_SLAVE_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
 	<p>
 		#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
-			As [npc.name] is already lying down on the artisan milker's comfortable, padded leather bed, you simply confirm that the
+			Как [npc.name] уже лежит на удобной, мягкой кожаной кровати мастера-молочника, вы просто подтверждаете, что
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_CUM_EFFICIENCY))
-				 special 'Succ-u-Bus' suction tube
+				 специальная трубка 'Succ-u-Bus'
 			#ELSE
-				 soft suction tube
+				 мягкая трубка
 			#ENDIF
-			 is fastly secured over [npc.her] [npc.cock+], and that the gently-humming milking machine's switch is set to 'on'.
+			 быстро закреплена на [npc.her] [npc.cock+], и что переключатель тихо гудящей доильной машины установлен на 'включено'.
 		#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
-			As [npc.name] is already lying down on the industrial milker's uncomfortable metal bed, you simply confirm that the
+			Как [npc.name] уже лежит на неудобной металлической кровати промышленного молочника, вы просто подтверждаете, что
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_CUM_EFFICIENCY))
-				 special 'Succ-u-Bus' suction tube
+				 специальная трубка 'Succ-u-Bus'
 			#ELSE
-				 industrial-strength suction tube
+				 промышленная трубка
 			#ENDIF
-			 is fastly secured over [npc.her] [npc.cock+], and that the loudly-whirring milking machine's switch is set to 'on'.
+			 быстро закреплена на [npc.her] [npc.cock+], и что переключатель громко гудящей доильной машины установлен на 'включено'.
 		#ELSE
-			As [npc.name] is already lying down on the milking machine's leather bed, you simply confirm that the
+			Как [npc.name] уже лежит на кожаной кровати доильной машины, вы просто подтверждаете, что
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_CUM_EFFICIENCY))
-				 special 'Succ-u-Bus' suction tube
+				 специальная трубка 'Succ-u-Bus'
 			#ELSE
-				 suction tube
+				 трубка
 			#ENDIF
-			 is fastly secured over [npc.her] [npc.cock+], and that the steadily-humming milking machine's switch is set to 'on'.
+			 быстро закреплена на [npc.her] [npc.cock+], и что переключатель тихо гудящей доильной машины установлен на 'включено'.
 		#ENDIF
-		 Sitting down on the padded leather seat next to [npc.herHim], you reach out and take hold of the tube, before smoothly oscillating it up and down over [npc.her] [npc.cock+]. Much to your delight, it only takes a few strokes before [npc.namePos] orgasm crashes over [npc.herHim], and as [npc.she] bucks [npc.her] [npc.hips] into the bed's padding, you watch as [npc.her] [npc.cum+]
+		 Сидя на мягком кожаном сиденье рядом с [npc.herHim], вы тянетесь и берете трубку, прежде чем плавно двигать ее вверх и вниз по [npc.her] [npc.cock+]. К вашему восторгу, проходит всего несколько движений, прежде чем [npc.namePos] оргазм накрывает [npc.herHim], и когда [npc.she] бьет [npc.her] [npc.hips] в подушку кровати, вы наблюдаете, как [npc.her] [npc.cum+]
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 shoots out into the tube that's enveloping [npc.her] [npc.cock], before being pumped away into the storage vats.
+				 выстреливает в трубку, которая обнимает [npc.her] [npc.cock], прежде чем быть откачанным в хранилища.
 			#ELSE
-				 shoots out into the tube that's enveloping [npc.her] [npc.cock], before being greedily pumped away into the storage vats.
+				 выстреливает в трубку, которая обнимает [npc.her] [npc.cock], прежде чем быть жадно откачанным в хранилища.
 			#ENDIF
 	</p>
 	<p>
-		Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to squeeze and milk [npc.namePos] [npc.cock+].
+		Выдыхая довольный вздох, вы делаете заслуженный перерыв от своих повседневных занятий, и попеременно просто отдыхаете в удобном кожаном кресле, и тянетесь вперед, чтобы сжимать и доить [npc.namePos] [npc.cock+].
 	</p>
 	<p>
-		Before you know it, an hour has passed, and, leaving [npc.name] to continue being milked by the machine, you stand up and wonder what to do next...
+		Прежде чем вы успеете опомниться, проходит час, и, оставив [npc.name] продолжать доить машину, вы встаете и задумываетесь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -350,54 +331,52 @@
 	
 	<!-- Milking pussy -->
 	
-	<htmlContent tag="MILKING_PUSSY_PLAYER"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_PUSSY_PLAYER"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
 	#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
 		<p>
-			You lie down on the artisan milker's comfortable, padded leather bed, and, sliding the
+			Ты ложишься на удобную, мягкую кожаную кровать мастера-дояра, и, вставляя
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 special 'Vibro-Pump'
+				 специальный 'Вибро-Насос'
 			#ELSE
-				 soft suction tube
+				 мягкую насадку
 			#ENDIF
-			 down over your [pc.pussy+], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 на твою [pc.pussy+], ты включаешь его. Сразу же машина начинает тихо гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 the aftermarket pump begins rapidly vibrating against your [pc.clit+].
+				 послепродажная установка начинает быстро вибрировать против твоей [pc.clit+].
 			#ELSE
-				 begins to gently vibrate against your [pc.clit+].
+				 начинает мягко вибрировать против твоей [pc.clit+].
 			#ENDIF
-			 It doesn't take long before your orgasm crashes over you, and as your [pc.legs] tremble against the bed's soft leather padding, you feel your [pc.girlcum+]
+			 Не проходит и минуты, как твой оргазм накрывает тебя, и, когда твои [pc.legs] дрожат на мягкой кожаной подушке кровати, ты чувствуешь, как твои [pc.girlcum+]
 				#IF(pc.isVaginaSquirter())
-				 squirting
+				 спринцуешь
 				#ELSE
-				 drooling
+				 выделяется слюна
 				#ENDIF
-			 into the machine's greedy pump.
-		</p>
-	#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
+			 в жадный насос машины.
+		</p>#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
 		<p>
-			You lie down on the industrial milker's uncomfortable metal bed, and, sliding the
+			Ты ложишься на неудобную металлическую кровать промышленного доильного аппарата, и, вставляя
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 special 'Vibro-Pump'
+				 специальный 'Вибро-Насос'
 			#ELSE
-				 industrial-strength suction tube
+				 промышленную трубу для сосания
 			#ENDIF
-			 down over your [pc.pussy+], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 вниз по твоей [pc.pussy+], ты нажимаешь на ближайший переключатель, чтобы включить его. Сразу же машина начинает тихо гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 the aftermarket pump begins rapidly vibrating against your [pc.clit+].
+				 послепродажный насос начинает быстро вибрировать против твоего [pc.clit+].
 			#ELSE
-				 begins to roughly vibrate against your [pc.clit+].
+				 начинает грубо вибрировать против твоего [pc.clit+].
 			#ENDIF
-			 Despite the machine's rough touch, it doesn't take long before you're letting out a high-pitched squeal, and as your [pc.legs] tremble against the bed's cold metal surface, you feel your [pc.girlcum+]
+			 Несмотря на грубое прикосновение машины, не проходит много времени, прежде чем ты начинаешь издавать высокий писк, и, когда твои [pc.legs] дрожат против холодной металлической поверхности кровати, ты чувствуешь, как твои [pc.girlcum+]
 				#IF(pc.isVaginaSquirter())
-				 squirting
+				 спринцуешь
 				#ELSE
-				 drooling
+				 слюнявлю
 				#ENDIF
-			 into the machine's greedy pump.
+			 в жадный насос машины.
 		</p>
 	#ELSE
 		<p>
@@ -431,8 +410,7 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="MILKING_PUSSY_SLAVE_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_PUSSY_SLAVE_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
@@ -471,73 +449,72 @@
 		 into the machine's greedy pump.
 	</p>
 	<p>
-		Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to rub and milk [npc.namePos] [npc.pussy+].
+		Выдыхая довольный вздох, вы делаете заслуженный перерыв от своих повседневных дел, и попеременно просто отдыхаете в удобном кожаном кресле, и тянетесь вперед, чтобы погладить и доить [npc.namePos] [npc.pussy+].
 	</p>
 	<p>
-		Before you know it, an hour has passed, and, leaving [npc.name] to continue being milked by the machine, you stand up and wonder what to do next...
+		Прежде чем вы успеваете осознать, прошел час, и, оставив [npc.name] продолжать доиться машиной, вы встаете и задумываетесь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="MILKING_PUSSY_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_PUSSY_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
 	<p>
 		#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
-			Wanting to have [npc.namePos] girlcum milked, you get [npc.herHim] to lie down on the artisan milker's comfortable, padded leather bed, and, sliding the
+			Хозяйка хочет, чтобы [npc.namePos] девушка была доена, и заставляет [npc.herHim] лечь на удобную, мягкую кожаную кровать мастера, и, вставляя
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 special 'Vibro-Pump'
+				 специальный 'Вибро-Насос'
 			#ELSE
-				 soft suction tube
+				 мягкую насадку
 			#ENDIF
-			 down over [npc.her] [npc.pussy], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 в [npc.her] [npc.pussy], ты включаешь машину. Сразу же машина начинает тихо гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 the aftermarket pump begins rapidly vibrating against [npc.her] [npc.clit+].
+				 насадка начинает быстро вибрировать против [npc.her] [npc.clit+].
 			#ELSE
-				 begins to vibrate against [npc.her] [npc.clit+].
+				 начинает вибрировать против [npc.her] [npc.clit+].
 			#ENDIF
 		#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
-			Wanting to have [npc.name] girlcum, you get [npc.herHim] to lie down on the industrial milker's uncomfortable metal bed, and, sliding the
+			Хозяйка хочет, чтобы [npc.name] девушка была доена, и заставляет [npc.herHim] лечь на неудобную металлическую кровать мастера, и, вставляя
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 special 'Vibro-Pump'
+				 специальный 'Вибро-Насос'
 			#ELSE
-				 industrial-strength suction tube
+				 промышленные насадки
 			#ENDIF
-			 down over [npc.her] [npc.cock], you flick the nearby switch to 'on'. Immediately, the machine starts loudly whirring and humming, and
+			 в [npc.her] [npc.cock], ты включаешь машину. Сразу же машина начинает громко гудеть и вибрировать, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 the aftermarket pump begins rapidly vibrating against [npc.her] [npc.clit+].
+				 насадка начинает быстро вибрировать против [npc.her] [npc.clit+].
 			#ELSE
-				 begins to roughly vibrate against [npc.her] [npc.clit+].
+				 начинает грубо вибрировать против [npc.her] [npc.clit+].
 			#ENDIF
 		#ELSE
-			Wanting to have [npc.name] girlcum, you get [npc.herHim] to lie down on the milking machine's leather bed, and, sliding the
+			Хозяйка хочет, чтобы [npc.name] девушка была доена, и заставляет [npc.herHim] лечь на кожаную кровать мастера, и, вставляя
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 special 'Vibro-Pump'
+				 специальный 'Вибро-Насос'
 			#ELSE
-				 suction tube
+				 насадку
 			#ENDIF
-			 down over [npc.her] [npc.cock], you flick the nearby switch to 'on'. Immediately, the machine starts humming, and
+			 в [npc.her] [npc.cock], ты включаешь машину. Сразу же машина начинает гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_GIRLCUM_EFFICIENCY))
-				 the aftermarket pump begins rapidly vibrating against [npc.her] [npc.clit+].
+				 насадка начинает быстро вибрировать против [npc.her] [npc.clit+].
 			#ELSE
-				 begins to vibrate against [npc.her] [npc.clit+].
+				 начинает вибрировать против [npc.her] [npc.clit+].
 			#ENDIF
 		#ENDIF
-		 Sitting down on the padded leather seat next to [npc.herHim], you reach out and take hold of the pump, before smoothly pressing it down and rubbing the inner lining against [npc.her] [npc.clit+]. Much to your delight, it only takes a few rubs before [npc.namePos] orgasm crashes over [npc.herHim], and as [npc.her] [npc.legs] tremble and quiver, you see [npc.her] [npc.girlcum+]
+		 Сидя на мягком кожаном сиденье рядом с [npc.herHim], ты тянешься и берешь насос, прежде чем плавно нажимая на него, ты трушь его внутреннюю поверхность против [npc.her] [npc.clit+]. К твоему удовольствию, уже через несколько движений [npc.namePos] оргазм накрывает [npc.herHim], и, когда [npc.her] [npc.legs] дрожат и подергиваются, ты видишь, как [npc.her] [npc.girlcum+]
 			#IF(pc.isVaginaSquirter())
-			 squirting
+			 спринтует
 			#ELSE
-			 drooling
+			 слюнявит
 			#ENDIF
-		 into the machine's greedy pump.
+		 в жадный насос машины.
 	</p>
 	<p>
-		Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to rub and milk [npc.namePos] [npc.pussy+].
+		Выдыхая довольный вздох, вы делаете заслуженный перерыв от своих повседневных занятий, и попеременно просто отдыхаете в удобном кожаном кресле, и тянетесь вперед, чтобы погладить и доить [npc.namePos] [npc.pussy+].
 	</p>
 	<p>
-		Before you know it, an hour has passed, and, leaving [npc.name] to continue being milked by the machine, you stand up and wonder what to do next...
+		Не успев опомниться, прошла уже час, и, оставив [npc.name] продолжать доиться машиной, вы встаете и думаете, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -554,35 +531,34 @@
 	
 	#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
 		<p>
-			You lie down on the artisan milker's comfortable, padded leather bed, and, attaching the
+			Вы ложитесь на удобную, мягкую кожаную кровать мастера-дояра, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 soft suction cups
+				 мягкие присоски
 			#ENDIF
-			 to your [pc.crotchBoobsRows] [pc.crotchBoobs], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 к вашим [pc.crotchBoobsRows] [pc.crotchBoobs], вы включаете переключатель.
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [pc.crotchMilk+] from your [pc.crotchNipples+].
+				 aftermarket suction cups начинают мастерски выдавливать и всасывать [pc.crotchMilk+] из ваших [pc.crotchNipples+].
 			#ELSE
-				 begins to squeeze and suck the [pc.crotchMilk+] from your [pc.crotchNipples+].
+				 начинают выдавливать и всасывать [pc.crotchMilk+] из ваших [pc.crotchNipples+].
 			#ENDIF
-			 You let out a delighted sigh at the satisfying feeling of being milked in comfort, and, allowing your eyes to close, you take a relaxing, well-earned break from your daily activities.
-		</p>
-	#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
+			 Вы изливаете довольный вздох от удовлетворения от того, что вас доят в комфорте, и, закрыв глаза, вы делаете заслуженный перерыв от своих повседневных занятий.
+		</p>#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
 		<p>
-			You lie down on the industrial milker's uncomfortable metal bed, and, attaching the
+			Ты ложишься на неудобную металлическую кровать промышленного доильного аппарата, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 hard suction cups
+				 жесткие присоски
 			#ENDIF
-			 to your [pc.crotchBoobsRows] [pc.crotchBoobs], you flick the nearby switch to 'on'. Immediately, the machine starts loudly whirring and humming, and
+			 к твоим [pc.crotchBoobsRows] [pc.crotchBoobs], ты переключаешь ближайший выключатель на 'включено'. Сразу же машина начинает громко гудеть и жужжать, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [pc.crotchMilk+] from your [pc.crotchNipples+].
+				 послепродажные присоски начинают мастерски выдавливать и всасывать [pc.crotchMilk+] из твоих [pc.crotchNipples+].
 			#ELSE
-				 begins to roughly squeeze and suck the [pc.crotchMilk+] from your [pc.crotchNipples+].
+				 начинает грубо выдавливать и всасывать [pc.crotchMilk+] из твоих [pc.crotchNipples+].
 			#ENDIF
-			 You let out a distressed moan at the harsh feeling of being milked by such a crude machine, but, determined to see this through to the end, you hold still and allow the industrial-grade contraption to do its work.
+			 Ты издает расстроенный стон от неприятного ощущения, когда тебя доят таким грубым аппаратом, но, решив довести это до конца, ты остаешься неподвижной и позволяешь промышленному устройству делать свою работу.
 		</p>
 	#ELSE
 		<p>
@@ -607,8 +583,7 @@
 	]]>
 	</htmlContent>
 
-	<htmlContent tag="MILKING_UDDERS_SLAVE_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_UDDERS_SLAVE_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
@@ -645,69 +620,66 @@
 				 and is quickly sucked away into the storage vats.
 			#ENDIF
 		 Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to squeeze and milk [npc.namePos] [npc.crotchBoobs+].
-	</p>
-	<p>
-		Before you know it, an hour has passed, and, leaving [npc.name] to continue being milked by the machine, you stand up and wonder what to do next...
-	</p>
+	</p><p>
+		Не успеешь оглянуться, как проходит час, и, оставив [npc.name] продолжать доить машину, ты встаешь и задумываешься, что делать дальше...
+</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="MILKING_UDDERS_TARGET"><![CDATA[
-	#VAR
+	<htmlContent tag="MILKING_UDDERS_TARGET"><![CDATA[#VAR
 		var upgrades = game.getPlayerCell().getPlace().getPlaceUpgrades();
 	#ENDVAR
 	
 	<p>
 		#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_ARTISAN_MILKERS))
-			Wanting to have [npc.name] milked, you get [npc.herHim] to lie down on the artisan milker's comfortable, padded leather bed, and, attaching the
+			Хозяйка, желая, чтобы её [npc.name] доили, заставляет [npc.herHim] лечь на удобную, мягкую кожаную кровать, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 soft suction cups
+				 мягкие присоски
 			#ENDIF
-			 to [npc.her] [npc.crotchBoobsRows] [npc.crotchBoobs], you flick the nearby switch to 'on'. Immediately, the machine starts gently humming, and
+			 к [npc.her] [npc.crotchBoobsRows] [npc.crotchBoobs], ты переключаешь выключатель на 'включено'. Сразу же машина начинает тихо гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [npc.crotchMilk+] from [npc.her] [npc.crotchNipples+].
+				 присоски начинают мастерски сжимать и сосать [npc.crotchMilk+] из [npc.her] [npc.crotchNipples+].
 			#ELSE
-				 begins to squeeze and suck the [npc.crotchMilk+] from [npc.her] [npc.crotchNipples+].
+				 начинает сжимать и сосать [npc.crotchMilk+] из [npc.her] [npc.crotchNipples+].
 			#ENDIF
 		#ELSEIF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_INDUSTRIAL_MILKERS))
-			Wanting to have [npc.name] milked, you get [npc.herHim] to lie down on the industrial milker's uncomfortable metal bed, and, attaching the
+			Хозяйка, желая, чтобы её [npc.name] доили, заставляет [npc.herHim] лечь на неудобную металлическую кровать, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 hard suction cups
+				 жесткие присоски
 			#ENDIF
-			 to [npc.her] [npc.crotchBoobsRows] [npc.crotchBoobs], you flick the nearby switch to 'on'. Immediately, the machine starts loudly whirring and humming, and
+			 к [npc.her] [npc.crotchBoobsRows] [npc.crotchBoobs], ты переключаешь выключатель на 'включено'. Сразу же машина начинает громко гудеть и вибрировать, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [npc.crotchMilk+] from [npc.her] [npc.crotchNipples+].
+				 присоски начинают мастерски сжимать и сосать [npc.crotchMilk+] из [npc.her] [npc.crotchNipples+].
 			#ELSE
-				 begins to roughly squeeze and suck the [npc.crotchMilk+] from [npc.her] [npc.crotchNipples+].
+				 начинает грубо сжимать и сосать [npc.crotchMilk+] из [npc.her] [npc.crotchNipples+].
 			#ENDIF
 		#ELSE
-			Wanting to have [npc.name] milked, you get [npc.herHim] to lie down on the milking machine's leather bed, and, attaching the
+			Хозяйка, желая, чтобы её [npc.name] доили, заставляет [npc.herHim] лечь на кожаную кровать, и, прикрепив
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 special 'Lact-o-Cups'
+				 специальные 'Lact-o-Cups'
 			#ELSE
-				 suction cups
+				 присоски
 			#ENDIF
-			 to [npc.her] [npc.crotchBoobsRows] [npc.crotchBoobs], you flick the nearby switch to 'on'. Immediately, the machine starts humming, and
+			 к [npc.her] [npc.crotchBoobsRows] [npc.crotchBoobs], ты переключаешь выключатель на 'включено'. Сразу же машина начинает гудеть, и
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 the aftermarket suction cups begin to expertly squeeze and suck the [npc.crotchMilk+] from [npc.her] [npc.crotchNipples+].
+				 присоски начинают мастерски сжимать и сосать [npc.crotchMilk+] из [npc.her] [npc.crotchNipples+].
 			#ELSE
-				 begins to squeeze and suck the [npc.crotchMilk+] from [npc.her] [npc.crotchNipples+].
+				 начинает сжимать и сосать [npc.crotchMilk+] из [npc.her] [npc.crotchNipples+].
 			#ENDIF
 		#ENDIF
-		 Sitting down on the padded leather seat next to [npc.herHim], you reach out and give [npc.her] [npc.crotchBoobs+] a firm squeeze, smiling in delight as an extra squirt of [npc.her] [npc.crotchMilk+] is 
+		 Сидя на кожаном сиденье рядом с [npc.herHim], ты протягиваешь руку и даешь [npc.her] [npc.crotchBoobs+] крепкий сжатие, улыбаясь в восторге, когда дополнительная порция [npc.her] [npc.crotchMilk+] 
 			#IF(upgrades.contains(PLACE_UPGRADE_LILAYA_MILKING_ROOM_MILK_EFFICIENCY))
-				 sucked out and pumped away into the storage vats.
+				 высасывается и перекачивается в хранилища.
 			#ELSE
-				 greedily sucked out and pumped away into the storage vats.
+				 жадно высасывается и перекачивается в хранилища.
 			#ENDIF
-		 Letting out a contented sigh, you take a well-earned break from your daily activities, and alternate between simply relaxing in the comfortable leather chair, and reaching forwards to squeeze and milk [npc.namePos] [npc.crotchBoobs+].
-	</p>
-	<p>
-		Before you know it, an hour has passed, and after unstrapping [npc.name] from the machine, you stand up and wonder what to do next...
+		 Вдохнув с удовлетворением, ты делаешь заслуженный перерыв в своих ежедневных занятиях, и чередуешь простое расслабление в удобном кожаном кресле с вытягиванием вперед, чтобы сжимать и доить [npc.namePos] [npc.crotchBoobs+].
+	</p><p>
+		Не успел оглянуться, как прошло уже час, и, отстегнув [npc.name] от машины, ты встаешь и задумываешься, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
