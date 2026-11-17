@@ -7,77 +7,77 @@
 	#IF(game.isDayTime())
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 			<p>
-				Although the streets of Dominion look similar to those of Victorian-era London, there's a few major differences that reveal the other-worldly nature of this place. The paved roads which are normally home to horse or centaur-pulled wooden carts are currently deserted. Marble benches line either side of the pedestrianised streets, interspersed by rows of trees and arcane-powered street lamps. The tree's branches sway wildly in the storm's wind as it howls down the empty streets. The glass frontages of the surrounding buildings reflect each and every lightning strike, filling the streets with bright purple and pink flashes.
+				Хотя улицы Dominion напоминают улицы Лондона викторианской эпохи, в них есть несколько существенных отличий, выдающих потустороннюю природу этого места. Мощеные дороги, по которым обычно ездят деревянные повозки, запряженные лошадьми или кентаврами, сейчас пусты. Вдоль пешеходных улиц стоят мраморные скамьи, перемежающиеся рядами деревьев и уличными фонарями, работающими на энергии Арканы. Ветви деревьев неистово раскачиваются под порывами штормового ветра, завывающего в пустых переулках. Стеклянные фасады окружающих зданий отражают каждую вспышку молнии, заливая улицы яркими пурпурными и розовыми всполохами.
 			</p>
 			 <p>
-				Due to the ongoing storm, the entire city seems to be almost totally deserted. Doors are locked, windows are shuttered, and, for the most part, not a soul can be seen. The only people able to withstand the storm's thunderous power are demons, and every now and then you see one strutting down the street.
+				Из-за непрекращающегося шторма весь город кажется почти совершенно пустым. Двери заперты, окна закрыты ставнями, и в большинстве мест не видно ни души. Единственные, кто способен выдержать громовую мощь шторма, — это демоны, и время от времени ты видишь, как кто-то из них вальяжно вышагивает по улице.
 				#IF(pc.getRace()==RACE_DEMON)
-					 They sometimes cast a nod, a smile, or even a seductive glance your way, but most are on business of their own and content to simply ignore you.
+					 Иногда они кивают тебе, улыбаются или даже бросают соблазнительный взгляд, но большинство занято своими делами и вполне довольно тем, что просто тебя игнорируют.
 				#ELSE
-					 They sometimes cast a curious glance your way, but most are content to simply ignore you.
+					 Иногда они бросают на тебя любопытный взгляд, но большинство предпочитает просто не обращать на тебя внимания.
 				#ENDIF
 			</p>
 			<p>
-				The size and emptiness of the city streets fills you with a sense of foreboding, and you frantically look around for signs of danger as you hurry on your way. Remembering what happened the first night you arrived in this world, you know full well that any non-demons caught out in the storm will be filled with an uncontrollable lust. If they catch you, they'll be sure to force you into a fight.
+				Размеры и пустота городских улиц наполняют тебя предчувствием беды, и ты лихорадочно оглядываешься в поисках опасности, поспешно двигаясь вперед. Вспоминая то, что случилось в твою первую ночь в этом мире, ты прекрасно знаешь: любого не-демона, застигнутого штормом, охватит неудержимая Похоть. Если они поймают тебя, то непременно заставят вступить в бой.
 			</p>
 		#ELSE
 			<p>
-				Although the streets of Dominion look similar to those of Victorian-era London, there's a strange feel to them that hints at the other-worldly nature of this place. Instead of cars and trucks, the paved roads are home to wooden carts being pulled by either horses or centaur slaves.
+				Хотя улицы Dominion напоминают улицы Лондона викторианской эпохи, в них чувствуется нечто странное, намекающее на потустороннюю природу этого места. Вместо машин и грузовиков по мощеным дорогам едут деревянные повозки, запряженные лошадьми или рабами-кентаврами.
 				#IF(game.getCurrentWeather()==WEATHER_CLEAR)
-					 Rows of trees and marble benches line either side of the pedestrianised streets, offering shade and a place to rest for weary shoppers. On either side of you, the building's clean façades gleam in the sunshine, and high above in the sky, you see harpies flying about on business of their own.
+					Ряды деревьев и мраморные скамьи тянутся вдоль обеих сторон пешеходных улиц, предлагая тень и место для отдыха уставшим покупателям. По обе стороны от тебя на солнце блестят чистые фасады зданий, а высоко в небе ты видишь гарпий, летающих по своим делам.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_CLOUD)
-					 Rows of trees and marble benches line either side of the pedestrianised streets, offering a place to rest. On either side of you, the building's clean façades gleam in the sunshine, and high above in the sky, you see harpies flying about on business of their own.
+					Ряды деревьев и мраморные скамьи тянутся вдоль обеих сторон пешеходных улиц, предлагая место для отдыха. По обе стороны от тебя на солнце блестят чистые фасады зданий, а высоко в небе ты видишь гарпий, летающих по своим делам.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_MAGIC_STORM_GATHERING)
-					 Marble benches line either side of the pedestrianised streets, granted shade from the summer sun by rows of trees. The tree's branches sway as the wind starts to pick up, and the rustling of leaves can be head over the steady hum of the busy crowds. On either side of you, the glass frontages of the recently renovated buildings reflect the darkening sky.
+					 Вдоль пешеходных улиц стоят мраморные скамьи, а ряды деревьев даруют спасительную тень от летнего солнца. Ветви деревьев колышутся под порывами ветра, и шелест листвы слышен даже сквозь мерный гул толпы. По обе стороны от тебя стеклянные витрины недавно отреставрированных зданий отражают темнеющее небо.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-					 Rows of trees and marble benches line either side of the pedestrianised streets, offering a place to rest and cover from the rain. On either side of you, large canvas awnings have been extended from the buildings, shielding passersby from the sudden downpour.
+					 Вдоль пешеходных улиц тянутся ряды деревьев и мраморные скамьи, предлагая место для отдыха и укрытия от дождя. По обе стороны от тебя из зданий выдвинуты широкие брезентовые навесы, защищающие прохожих от внезапного ливня.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_SNOW)
-					 Large white snowflakes continue to fall all around you as you walk past the rows of trees and marble benches that line either side of the pedestrianised streets.
+					 Крупные белые снежинки продолжают падать повсюду, пока ты идешь мимо рядов деревьев и мраморных скамей, выстроившихся вдоль пешеходных улиц.
 				#ENDIF
 			</p>
 			<p>
-				The streets are very busy at this time of day, and are packed with people hurrying to and fro. Despite their alarming appearances, the citizens of Dominion appear to be completely normal in every other way. You see those people who are always in a rush to be somewhere else, the crowds of shoppers lazily ambling by, the groups of friends laughing and chatting on benches, and all the other sorts that you'd find in any old city. As the streets are so busy at this time, you find yourself having to occasionally push your way through the dense crowds.
+				В это время суток улицы очень оживлены и забиты спешащими туда-сюда людьми. Несмотря на их пугающий вид, в остальном жители Dominion кажутся совершенно обычными. Ты видишь тех, кто вечно куда-то спешит, толпы лениво прогуливающихся покупателей, группы друзей, смеющихся и болтающих на скамейках, — в общем, всё то, что можно встретить в любом старом городе. Поскольку улицы сейчас так переполнены, тебе приходится время от времени пробираться сквозь плотную толпу.
 			</p>
 			<p>
-				Most of the people around you are partial or lesser morphs, although there are a quite a few greater morphs to be seen walking the streets as well. Dog, cat and horse-morphs are by far the most common races that you see, but it wouldn't take long to find examples of every race. The rarest races that you see are humans and demons. The latter are very easy to spot, as wherever they walk, people hurriedly move to make way.
+				Большинство окружающих тебя — это частичные или низшие морфы, хотя на улицах можно встретить и немало высших. Собаки, кошки и конь-морфы — самые распространенные расы, но не составит труда найти представителей любого вида. Реже всего встречаются люди и демоны. Последних заметить очень легко: куда бы они ни пошли, люди поспешно расступаются, освобождая им путь.
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 			<p>
-				Although the streets of Dominion look similar to those of Victorian-era London, there's a few major differences that reveal the other-worldly nature of this place. The paved roads which are normally home to horse or centaur-pulled wooden carts are currently deserted. Marble benches line either side of the pedestrianised streets, interspersed by rows of trees, all illuminated by the soft amber glow of arcane-powered street lamps. The tree's branches sway wildly in the storm's wind as it howls down the empty streets. The glass frontages of the surrounding buildings reflect each and every lightning strike, filling the streets with bright purple and pink flashes.
+				Хотя улицы Dominion напоминают викторианский Лондон, в них есть несколько ключевых отличий, выдающих потустороннюю природу этого места. Мощеные дороги, по которым обычно ездят деревянные повозки, запряженные конями или кентаврами, сейчас пусты. Вдоль пешеходных улиц стоят мраморные скамьи, перемежающиеся рядами деревьев, и всё это залито мягким янтарным светом уличных фонарей на Аркане. Ветви деревьев неистово раскачиваются под порывами штормового ветра, воющего в пустых переулках. Стеклянные фасады окружающих зданий отражают каждую вспышку молнии, озаряя улицы яркими пурпурными и розовыми всполохами.
 			</p>
 			<p>
-				Due to the ongoing storm, the entire city seems to be almost totally deserted. Doors are locked, windows are shuttered, and, for the most part, not a soul can be seen. The only people able to withstand the storm's thunderous power are demons, and every now and then you see one strutting down the street.
-				#IF(pc.getRace()==RACE_DEMON)
-					 They sometimes cast a nod, a smile, or even a seductive glance your way, but most are on business of their own and content to simply ignore you.
+				Из-за затянувшегося шторма весь город кажется почти совершенно пустым. Двери заперты, окна закрыты ставнями, и в большинстве мест не видно ни души. Единственные, кто способен выдержать громовую мощь бури — это демоны, и время от времени ты видишь, как кто-то из них вальяжно вышагивает по улице.
+							#IF(pc.getRace()==RACE_DEMON)
+					 Иногда они кивают тебе, улыбаются или даже бросают соблазнительный взгляд, но большинство занято своими делами и вполне довольно тем, что просто тебя игнорируют.
 				#ELSE
-					 They sometimes cast a curious glance your way, but most are content to simply ignore you.
+					 Иногда они бросают на тебя любопытный взгляд, но большинство предпочитает просто не обращать на тебя внимания.
 				#ENDIF
 			</p>
 			<p>
-				The size and emptiness of the city streets fills you with a sense of foreboding, and you frantically look around for signs of danger as you hurry on your way. Remembering what happened the first night you arrived in this world, you know full well that any non-demons caught out in the storm will be filled with an uncontrollable lust. If they catch you, they'll be sure to force you into a fight.
+				Размеры и пустота городских улиц наполняют тебя предчувствием беды, и ты лихорадочно оглядываешься в поисках опасности, поспешно двигаясь вперед. Вспоминая то, что случилось в твою первую ночь в этом мире, ты прекрасно знаешь: любого не-демона, застигнутого штормом, охватит неудержимая Похоть. Если они поймают тебя, то непременно заставят вступить в бой.
 			</p>
 		#ELSE
 			<p>
-				Although the streets of Dominion look similar to those of Victorian-era London, there's a strange feel to them that hints at the other-worldly nature of this place. Even at this time of night, the paved roads are home to numerous wooden carts being pulled by either horses or centaur slaves. Marble benches line both sides of the pedestrianised streets, and are interspersed by rows of trees, softly illuminated by the amber glow of arcane-powered street lamps.
+				Хотя улицы Dominion напоминают улицы Лондона викторианской эпохи, в них чувствуется нечто странное, намекающее на потустороннюю природу этого места. Даже в такой поздний час по мощеным дорогам тянутся многочисленные деревянные повозки, запряженные лошадьми или рабами-кентаврами. Вдоль пешеходных улиц стоят мраморные скамьи, перемежающиеся рядами деревьев, которые мягко подсвечены янтарным сиянием уличных фонарей, работающих на Аркане.
 				#IF(game.getCurrentWeather()==WEATHER_CLEAR)
-					  On either side of you, lights shine out from the windows of the tall buildings.
+					  По обе стороны от тебя из окон высоких зданий льется свет.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_CLOUD)
-					  On either side of you, lights shine out from the windows of the tall buildings.
+					  По обе стороны от тебя из окон высоких зданий льется свет.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_MAGIC_STORM_GATHERING)
-					 The tree's branches sway as the wind starts to pick up, and the rustling of leaves fills the still night air.
+					 Ветви деревьев колышутся под порывами ветра, и шелест листвы наполняет неподвижный ночной воздух.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-					 On either side of you, large canvas awnings have been extended from the buildings, shielding passersby from the sudden downpour.
+					 По обе стороны от тебя из зданий выдвинуты широкие брезентовые навесы, укрывающие прохожих от внезапного ливня.
 				#ELSEIF(game.getCurrentWeather()==WEATHER_SNOW)
-					 Large fluffy snowflakes continue to fall all around you; their haphazard paths illuminated by the lights shining out from the windows of the tall buildings.
+					 Вокруг тебя продолжают падать крупные пушистые снежинки; их хаотичный полет подсвечен огнями, струящимися из окон высоких зданий.
 				#ENDIF
 			</p>
 			<p>
-				Although the streets are noticeably quieter than during the day, there are still plenty of people hurrying to and fro. Despite their alarming appearances, the citizens of Dominion appear to be completely normal in every other way. You see those people who are always in a rush to be somewhere else, the crowds of shoppers lazily ambling by, the groups of friends laughing and chatting on benches, and all the other sorts that you'd find in any old city. As the streets are quiet at this time, you have plenty of room to weave your way through the sparse crowds.
+				Хотя на улицах заметно тише, чем днем, здесь все еще полно людей, спешащих по своим делам. Несмотря на их пугающий вид, жители Dominion кажутся совершенно обычными во всем остальном. Ты видишь тех, кто вечно куда-то торопится, лениво прогуливающиеся толпы покупателей, группы друзей, смеющихся и болтающих на скамейках, — в общем, всё то, что можно встретить в любом старом городе. Поскольку в это время на улицах тихо, у тебя достаточно места, чтобы лавировать сквозь редкие толпы.
 			</p>
 			<p>
-				Most of the people around you are partial or lesser morphs, although there are a quite a few greater morphs to be seen walking the streets as well. Dog, cat and horse-morphs are by far the most common races that you see, but it wouldn't take long to find examples of every race. The rarest races that you see are humans and demons. The latter are very easy to spot, as wherever they walk, people hurriedly move to make way.
+				Большинство окружающих тебя — это частичные или низшие морфы, хотя на улицах можно встретить и немало высших. Собаки, кошки и конь-морфы — самые распространенные расы, но не составит труда найти представителей любого вида. Реже всего встречаются люди и демоны. Последних заметить очень легко: куда бы они ни пошли, люди поспешно расступаются, освобождая им путь.
 			</p>
 		#ENDIF
 	#ENDIF
@@ -86,15 +86,15 @@
 	
 	<htmlContent tag="STREET_EVENT_OCTOBER"><![CDATA[
 	<p>
-		[style.boldOrange(October;)] [style.boldArcane(Lilith's Month:)]
-		<br/>Orange, black, and purple flags fly from almost every window, and you look up to see that large banners have been hung across the street, each one bearing a different slogan celebrating Lilith's rule. The occasional demon that you see is usually dressed up in a Halloween-esque costume for the occasion, which does nothing to help alleviate the eerie atmosphere.
+		[style.boldOrange(Октябрь;)] [style.boldArcane(Месяц Lilith:)]
+		<br/>Оранжевые, черные и фиолетовые флаги развеваются почти в каждом окне, а подняв глаза, ты видишь огромные баннеры, натянутые через всю улицу, каждый из которых несет свой лозунг в честь правления Lilith. Редкие демоны, которых ты встречаешь, обычно наряжены в костюмы в духе Хэллоуина, что лишь добавляет жутковатой атмосферы.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STREET_EVENT_SNOW"><![CDATA[
 	<p>
-		The reindeer-morph workers are doing a good job of keeping Dominion's streets clear from the snow, but the rooftops, trees, and tops of lamp posts are all home to a thick layer of white. You see your breath exiting your mouth in a little cloud of condensation, but despite the clear evidence of the air's freezing temperature, your arcane aura protects your body from feeling the cold.
+		Рабочие-олени отлично справляются с расчисткой улиц Dominion от снега, но крыши, деревья и верхушки фонарных столбов покрыты толстым слоем белого пушистого одеяла. Ты видишь, как твое дыхание вырывается изо рта маленьким облачком пара, но, несмотря на явные признаки ледяного воздуха, твоя arcane Аура защищает тело от холода.
 	</p>
 	]]>
 	</htmlContent>
@@ -105,22 +105,21 @@
 	<htmlContent tag="BACK_ALLEYS_SAFE"><![CDATA[
 	<p>
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			The back alleys in this particular section of Dominion are not only considerably cleaner and wider than those found throughout the rest of the city, but they are also usually far more frequently travelled. As there's an ongoing arcane storm, however, they are currently just as deserted as any other.
+			Задворки в этой части Dominion не только заметно чище и шире, чем в остальном городе, но и обычно гораздо люднее. Однако из-за затянувшейся арканы они сейчас так же пусты, как и любые другие.
 		#ELSE
-			The back alleys in this particular section of Dominion are not only considerably cleaner and wider than those found throughout the rest of the city, but they are also far more frequently travelled.
+			Задворки в этой части Dominion не только заметно чище и шире, чем в остальном городе, но и обычно гораздо люднее.
 			#IF(pc.getRace()==RACE_DEMON)
-				 While significantly less busy than the main streets of the city, you still often find yourself encountering groups of slow-moving shoppers, who invariably hurry to one side to let you pass as they see that you're [pc.a_race].
+				Хотя здесь куда меньше суеты, чем на главных улицах города, тебе всё равно часто попадаются группы медлительных покупателей, которые неизменно прижимаются к обочине, чтобы дать тебе пройти, едва завидев, что ты [pc.a_race].
 			#ELSE
-				 While significantly less busy than the main streets of the city, you still often find yourself having to weave your way past groups of slow-moving shoppers, which greatly slows down your progress through these twisting passageways.
+				Хотя здесь куда меньше суеты, чем на главных улицах города, тебе всё равно часто приходится лавировать между группами медлительных покупателей, что сильно замедляет твой путь по этим извилистым переулкам.
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			While there is usually a large Enforcer presence in this area, it doesn't appear to be considered important enough to warrant the presence of demon officers, and so until the arcane storm passes, there will be nobody to come to your aid should you be attacked...
+			Хотя в этом районе обычно много Enforcer, он не кажется достаточно важным, чтобы здесь дежурили офицеры-демоны, так что, пока не утихнет аркана, тебе некому будет прийти на помощь в случае нападения...
 		#ELSE
-			The reason for this alleyway being treated as a safe passage is due to an unusually large Enforcer presence in the area. A uniformed officer never seems to be more than one or two corners away, ready to rush to the aid of anyone who would call for it.
-		#ENDIF
+			Этот переулок считается безопасным благодаря необычайно большому присутствию Enforcer в округе. Офицер в форме, кажется, всегда находится не дальше одного-двух поворотов, готовый броситься на помощь любому, кто позовет.		#ENDIF
 	</p>
 	]]>
 	</htmlContent>
@@ -130,20 +129,20 @@
 	
 	<htmlContent tag="BACK_ALLEYS"><![CDATA[
 	<p>
-		You find yourself walking through labyrinthine alleyways, with not a soul in sight. Back-doors and steaming vents line the dark brick walls, and you often have to navigate around overflowing bins and stacks of empty crates in order to make progress.
+		Ты бредешь по лабиринтам узких переулков, где нет ни души. Вдоль темных кирпичных стен тянутся задние двери и дымящие вентиляционные отверстия, и тебе то и дело приходится обходить переполненные баки и груды пустых ящиков, чтобы продвинуться вперед.
 	</p>
 	<p>
 		#IF(game.getNonCompanionCharactersPresent().isEmpty())
-			Due to the abundance of hiding places from which an ambush could be sprung, you recognise this as being a [style.colourBad(dangerous)] area, and you realise that you could be attacked at any moment...
+			Из-за обилия укрытий, из которых может выскочить засада, ты понимаешь, что это [style.colourBad(опасная)] зона, и осознаешь, что нападение может произойти в любой момент...
 		#ELSEIF(npc.isRelatedTo(pc))
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is your [npc.relation(pc)], [npc.name]...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это твой [npc.relation(pc)], [npc.name]...
 		#ELSEIF(npc.getHistory()==OCCUPATION_NPC_PROSTITUTE)
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is far more interested in whoring [npc.herself] out rather than fighting anyone...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это [npc.name], которому куда интереснее торговать [npc.herself] в борделях, чем с кем-то сражаться...
 		#ELSE
 			#IF(npc.getAffectionLevel(pc).isLessThan(AFFECTION_POSITIVE_ONE_FRIENDLY))
-				Due to the abundance of hiding places from which an ambush could be sprung, you recognise this as being a [style.colourBad(dangerous)] area, and you realise that you could be attacked at any moment...
+				Из-за обилия укрытий, из которых может выскочить засада, ты понимаешь, что это [style.colourBad(опасная)] зона, и осознаешь, что нападение может произойти в любой момент...
 			#ELSE
-				Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is on friendly terms with you...
+				Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это [npc.name], с которым вы в дружеских отношениях...
 			#ENDIF
 		#ENDIF
 	</p>
@@ -155,19 +154,19 @@
 	
 	<htmlContent tag="DARK_ALLEYS"><![CDATA[
 	<p>
-		You find yourself walking through labyrinthine alleyways, with not a soul in sight. Back-doors and steaming vents line the dark brick walls, and you often have to navigate around overflowing bins and stacks of empty crates in order to make progress.
+		Ты бредешь по лабиринтам узких переулков, где нет ни души. Вдоль темных кирпичных стен тянутся задние двери и дымящие вентиляционные отверстия, и тебе то и дело приходится обходить переполненные баки и груды пустых ящиков, чтобы продвинуться вперед.
 	</p>
 	<p>
 		#IF(game.getNonCompanionCharactersPresent().isEmpty())
-			Due to the abundance of hiding places from which an ambush could be sprung, as well as your significant distance from any of Dominion's main streets, you recognise this as being a [style.colourTerrible(very dangerous)] area, and you realise that you could be attacked at any moment...
+			Из-за обилия укрытий, в которых может затаиться враг, а также из-за того, что ты находишься далеко от главных улиц Dominion, ты понимаешь, что это [style.colourTerrible(очень опасная)] местность, и осознаёшь, что нападение может произойти в любой момент...
 		#ELSEIF(npc.isRelatedTo(pc))
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is your [npc.relation(pc)], [npc.name]...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это твой [npc.relation(pc)], [npc.name]...
 		#ELSEIF(npc.getHistory()==OCCUPATION_NPC_PROSTITUTE)
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is far more interested in whoring [npc.herself] out rather than fighting anyone...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это [npc.name], которому куда интереснее торговать [npc.herself] в борделях, чем с кем-то сражаться...
 		#ELSEIF(npc.getAffectionLevel(pc).isLessThan(AFFECTION_POSITIVE_ONE_FRIENDLY))
-			Due to the abundance of hiding places from which an ambush could be sprung, as well as your significant distance from any of Dominion's main streets, you recognise this as being a [style.colourTerrible(very dangerous)] area, and you realise that you could be attacked at any moment...
+			Из-за обилия укрытий, в которых может затаиться враг, а также из-за того, что ты находишься далеко от главных улиц Dominion, ты понимаешь, что это [style.colourTerrible(очень опасная)] местность, и осознаёшь, что нападение может произойти в любой момент...
 		#ELSE
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is on friendly terms with you...
+			Несмотря на обилие укрытий, в которых может затаиться враг, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственным, кого ты можешь здесь встретить, является [npc.name], с кем у тебя дружеские отношения...
 		#ENDIF
 	</p>
 	]]>
@@ -178,19 +177,19 @@
 	
 	<htmlContent tag="BACK_ALLEYS_CANAL"><![CDATA[
 	<p>
-		At the junction between the canal and Dominion's dingy back-alleys, a series of crude wooden walkways criss-cross over the water. Providing a bridge between the numerous passageways set into the flanking buildings on both sides of the waterway, these makeshift constructs are quite clearly the work of the denizens that haunt this area.
+	На стыке канала и зачуханных переулков Dominion тянется сеть грубых деревянных настилов, перекинутых через воду. Эти самодельные конструкции, соединяющие многочисленные проходы в зданиях по обе стороны канала, явно возведены обитателями этих мест.
 	</p>
 	<p>
 		#IF(game.getNonCompanionCharactersPresent().isEmpty())
-			Cautiously glancing around your deserted, [style.colourBad(dangerous)] surroundings, you half-expect to see a shadowy figure emerge from one of the gloomy openings, but much to your relief, there doesn't seem to be anyone waiting in ambush. Letting out a sigh, you continue on your way, happy that you didn't run into any of the lowlifes that operate in this area...
+			Осторожно озираясь по сторонам в поисках угроз в этом пустынном, [style.colourBad(опасном)] месте, ты невольно ждешь, что из одного из мрачных проемов вот-вот вынырнет чья-то тень, но, к твоему облегчению, засады вроде бы нет. С облегчением выдохнув, ты продолжаешь путь, радуясь, что не наткнулась на местных отбросов...
 		#ELSEIF(npc.isRelatedTo(pc))
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is your [npc.relation(pc)], [npc.name]...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это твой [npc.relation(pc)], [npc.name]...
 		#ELSEIF(npc.getHistory()==OCCUPATION_NPC_PROSTITUTE)
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is far more interested in whoring [npc.herself] out rather than fighting anyone...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это [npc.name], которому куда интереснее торговать [npc.herself] в борделях, чем с кем-то сражаться...
 		#ELSEIF(npc.getAffectionLevel(pc).isLessThan(AFFECTION_POSITIVE_ONE_FRIENDLY))
-			Cautiously glancing around your deserted, [style.colourBad(dangerous)] surroundings, you half-expect to see a shadowy figure emerge from one of the gloomy openings, but much to your relief, there doesn't seem to be anyone waiting in ambush. Letting out a sigh, you continue on your way, happy that you didn't run into any of the lowlifes that operate in this area...
+			Осторожно озираясь по сторонам в поисках угроз в этом пустынном, [style.colourBad(опасном)] месте, ты невольно ждешь, что из одного из мрачных проемов вот-вот вынырнет чья-то тень, но, к твоему облегчению, засады вроде бы нет. С облегчением выдохнув, ты продолжаешь путь, радуясь, что не наткнулась на местных отбросов...
 		#ELSE
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is on friendly terms with you...
+			Несмотря на обилие укрытий, в которых может затаиться враг, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственным, кого ты можешь здесь встретить, является [npc.name], с кем у тебя дружеские отношения...
 		#ENDIF
 	</p>
 	]]>
@@ -202,20 +201,20 @@
 	<htmlContent tag="BOULEVARD"><![CDATA[
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			You find yourself walking down one of Dominion's main boulevards, which is at least twice the width of all the other streets that you've seen in the city. Large, immaculately-maintained residential and commercial buildings flank the road on each side; their white marble façades decorated with countless flags bearing the black pentagram of Lilith. Thanks to the ongoing arcane storm, these wide, paved roads which are normally home to horse or centaur-pulled wooden carts are almost completely deserted.
+			Ты идешь по одному из главных бульваров Dominion, который как минимум вдвое шире всех остальных улиц, что ты видел в городе. По обе стороны дороги высятся огромные, безупречно ухоженные жилые и торговые здания; их фасады из белого мрамора украшены бесчисленными флагами с черной пентаграммой Lilith. Из-за непрекращающегося аркана-шторма эти широкие мощеные дороги, где обычно снуют повозки, запряженные лошадьми или кентаврами, почти совершенно пусты.
 		</p>
 		<p>
-			The only people who you see out and about all seem to be demons, including the occasional smartly-dressed Enforcer. Unaffected by the arousing power of the storm's thunder, these elite Enforcers keep a close watch on you as you walk down quiet boulevard. There's no way anyone would be able to assault you while under their watchful gaze, allowing you to continue on your way in peace...
+			Единственные, кого ты видишь вокруг — это демоны, среди которых изредка попадаются элегантно одетые Enforcer. Невозмутимые перед возбуждающей мощью грозовых раскатов, эти элитные Enforcer пристально следят за тобой, пока ты идешь по тихому бульвару. Под их бдительным взором никто не посмеет напасть на тебя, что позволяет тебе спокойно продолжать свой путь...
 		</p>
 	#ELSE
 		<p>
-			You find yourself walking down one of Dominion's main boulevards, which is at least twice the width of all the other streets that you've seen in the city. Large, immaculately-maintained residential and commercial buildings flank the road on each side; their white marble façades decorated with countless flags bearing the black pentagram of Lilith. A never-ending stream of horse and centaur-pulled carts trundle back and forth down the middle of the wide, paved street as they transport all manner of goods to and from the countless businesses and residences found throughout the city.
+			Ты идешь по одному из главных бульваров Dominion, который как минимум вдвое шире всех остальных улиц, что ты видел в городе. По обе стороны дороги высятся огромные, безупречно ухоженные жилые и торговые здания; их фасады из белого мрамора украшены бесчисленными флагами с черной пентаграммой Lilith. По широкой мощеной улице непрерывным потоком снуют повозки, запряженные лошадьми и кентаврами, перевозя всевозможные товары в бесчисленные лавки и дома по всему городу.
 		</p>
 		<p>
 			#IF(game.isDayTime())
-				Being one of Dominion's main thoroughfares, this boulevard is packed with pedestrians, and you walk past individuals of all different races and appearances as you continue onwards through the crowds. Although dog, cat and horse-morphs are the most common races that you see, there are a significant number of demons and other more exotic races mixed in with the crowds here. Demons and half-demons in particular are very easy to spot, as wherever they walk, people hurriedly move to make way for them.
+				Этот бульвар — одна из главных магистралей Dominion, поэтому он буквально кишит пешеходами. Пробираясь сквозь толпу, ты проходишь мимо существ самых разных рас и внешностей. Хотя чаще всего тебе встречаются псы, кошки и конь-морфы, в толпе полно демонов и других, более экзотических рас. Демонов и полудемонов заметить особенно легко: куда бы они ни пошли, люди тут же поспешно расступаются, освобождая им дорогу.
 			#ELSE
-				Despite the fact that it's night-time, this boulevard is packed with pedestrians, and you walk past individuals of all different races and appearances as you continue onwards through the crowds. Although dog, cat and horse-morphs are the most common races that you see, there are a significant number of demons and other more exotic races mixed in with the crowds here. Demons and half-demons in particular are very easy to spot, as wherever they walk, people hurriedly move to make way for them.
+				Несмотря на поздний час, этот бульвар забит пешеходами. Пробираясь сквозь толпу, ты проходишь мимо существ самых разных рас и внешностей. Хотя чаще всего тебе встречаются псы, кошки и конь-морфы, в толпе полно демонов и других, более экзотических рас. Демонов и полудемонов заметить особенно легко: куда бы они ни пошли, люди тут же поспешно расступаются, освобождая им дорогу.
 			#ENDIF
 		</p>
 	#ENDIF
@@ -227,36 +226,36 @@
 	
 	<htmlContent tag="DOMINION_PLAZA"><![CDATA[
 	<p>
-		You find yourself standing in the very centre of Dominion, where an expansive public square is situated. Large residential and commercial buildings flank the plaza on each of its four sides. Looking around, you see that each and every one of their white marble façades are decorated with dark-purple flags bearing the black pentagram of Lilith. Numerous grandiose statues and extravagantly-detailed water fountains, all carved from polished white marble, are scattered about throughout this large area. Each one of these sculptures appears to represent a demon or Lilin, and although they're each a marvellous work of art, the one in the very middle of the square is quite simply breathtaking.
+		Ты стоишь в самом центре Dominion, на просторной общественной площади. С четырех сторон площадь окружают массивные жилые и торговые здания. Оглядевшись, ты замечаешь, что каждый их фасад из белого мрамора украшен темно-пурпурными знаменами с черной пентаграммой Lilith. По всей этой огромной территории разбросаны многочисленные величественные статуи и невероятно детализированные фонтаны, высеченные из полированного белого мрамора. Каждая из этих скульптур изображает демона или лилин, и хотя каждая из них — шедевр искусства, та, что стоит в самом центре площади, просто захватывает дух.
 	</p>
 	<p>
-		On top of a plinth of at least [unit.lSizes(3000)] in height, there stands a gigantic marble statue of Lilith herself; with wings fully unfurled, and with her hands resting on her wide hips, she smirks down with a visage of manic delight at the crowds below. Although she no doubt possesses the power to transform into almost any form imaginable, this statue represents her as a cliché, stereotypical succubus, albeit an exceptionally beautiful one. Wearing only the scantiest of sexy, form-fitting lingerie, every [unit.size] of Lilith's curvaceous body is on display for all to see, and you find yourself looking straight up at Lilith's tight pussy as the thin fabric of her thong rides up between her tiny labia.
+		На постаменте высотой не менее [unit.lSizes(3000)] возвышается гигантская мраморная статуя самой Lilith; с полностью распростертыми крыльями и руками на широких бедрах, она смотрит на толпу внизу с ликом маниакального восторга. Хотя она, без сомнения, способна принимать почти любую вообразимую форму, эта статуя представляет её в образе клишированной, стереотипной суккуба, пусть и исключительно прекрасной. На ней лишь самое крошечное, облегающее сексуальное белье, и каждый [unit.size] изгибов тела Lilith выставлен на всеобщее обозрение; ты ловишь себя на том, что смотришь прямо на её тугую киску, пока тонкая полоска стрингов врезается между её крошечными половинками губ.
 	</p>
 	#IF(RND.nextInt(100)<20)
 		<p>
-			As you marvel at the extraordinarily skilled workmanship that must have gone into this astounding piece of art, you suddenly feel a chill run down your spine. Allowing your gaze to travel up to the top of the statue, you see that this marble mimicry of the demon queen is looking right down at you, and she has
+			Пока ты восхищаешься необычайным мастерством, которое потребовалось для создания этого поразительного произведения искусства, по твоей спине внезапно пробегает холодок. Подняв взгляд к вершине статуи, ты видишь, что эта мраморная имитация королевы демонов смотрит прямо на тебя, и на её прекрасном лице застыло
 			#IF(pc.getCorruptionLevel()==CORRUPTION_LEVEL_ZERO_PURE || pc.getCorruptionLevel()==CORRUPTION_LEVEL_ONE_VANILLA)
-				 a look of absolute revulsion on her gorgeous face. Before you can react to this alarming event, you hear an icy, feminine voice in your head, [style.thoughtFeminineHeavy(You disgust me, citizen... Your purity... It sickens me...)]
+				 выражение абсолютного отвращения. Прежде чем ты успеваешь среагировать на это пугающее событие, в твоей голове раздается ледяной женский голос: [style.thoughtFeminineHeavy(Ты вызываешь у меня отвращение, смертный... Твоя чистота... Она тошнотворна...)]
 			#ELSEIF(pc.getCorruptionLevel()==CORRUPTION_LEVEL_TWO_HORNY || pc.getCorruptionLevel()==CORRUPTION_LEVEL_THREE_DIRTY)
-				 a look of annoyance on her gorgeous face. Before you can react to this alarming event, you hear an icy, feminine voice in your head, [style.thoughtFeminineHeavy(You displease me, citizen... You must lose what remains of your purity...)]
+				 выражение раздражения. Прежде чем ты успеваешь среагировать на это пугающее событие, в твоей голове раздается ледяной женский голос: [style.thoughtFeminineHeavy(Ты не радуешь меня, смертный... Ты должен утратить то, что осталось от твоей чистоты...)]
 			#ELSE
-				 a look of arrogant approval on her gorgeous face. Before you can react to this alarming event, you hear an icy, feminine voice in your head, [style.thoughtFeminineHeavy(You please me, citizen... Your corruption is admirable...)]
+				 выражение высокомерного одобрения. Прежде чем ты успеваешь среагировать на это пугающее событие, в твоей голове раздается ледяной женский голос: [style.thoughtFeminineHeavy(Ты радуешь меня, смертный... Твоя Порочность достойна восхищения...)]
 			#ENDIF
 		</p>
 		<p>
-			As soon as it began, this alarming judgement of your character is over, and in the blink of an eye the statue's face has returned to its previous position. Wondering whether the marble had actually moved, or if it was some kind of arcane mirage, you turn away from the statue and continue on your way across the plaza.
+			Как только это началось, столь пугающее суждение о твоей натуре закончилось, и в мгновение ока лицо статуи вернулось в прежнее состояние. Гадая, действительно ли мрамор пришел в движение или это был какой-то арканный мираж, ты отворачиваешься от статуи и продолжаешь свой путь через площадь.
 		</p>
 	#ENDIF
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			The arcane storm that's raging overhead has brought out a heavy presence of demon Enforcers in this area. Unaffected by the arousing power of the storm's thunder, these elite Enforcers keep a close watch on you as you pass through the all-but-deserted plaza. There's no way anyone would be able to assault you while under their watchful gaze, allowing you to continue on your way in peace...
+			Бушующий над головой шторм Арканы привлек в эти края целую толпу демонов Enforcer. Невозмутимые перед возбуждающей мощью грозовых раскатов, эти элитные Enforcer пристально следят за тобой, пока ты идешь через почти опустевшую площадь. Под их бдительным взором никто не посмеет на тебя напасть, что позволяет тебе спокойно продолжать свой путь...
 		</p>
 	#ELSE
 		<p>
-			Being the central meeting place for Dominion's citizens, this plaza is the busiest location in all of Dominion. Throngs of people, of all different races and appearances, fill the square. Some appear to be simply passing through the area, while others lounge about on the many wooden benches and marble steps at the base of each statue.
+			Будучи главным местом встреч для жителей Dominion, эта площадь — самое оживленное место во всем Dominion. Толпы людей самых разных рас и внешности заполняют площадь. Кто-то просто проходит мимо, а кто-то бездельничает на многочисленных деревянных скамьях и мраморных ступенях у подножия статуй.
 		</p>
 		<p>
-			On raised platforms, well-spoken orators address the crowds, relaying news and important announcements to the many citizens who pass by. Pamphlets and newspapers are handed out beside each one of these stands, and you realise that this is the only place where you've seen any form of news being distributed to the population.
+			На возвышениях красноречивые ораторы обращаются к толпе, сообщая новости и важные объявления проходящим мимо горожанам. Возле каждого из этих стендов раздают памфлеты и газеты, и ты понимаешь, что это единственное место, где ты видел хоть какую-то прессу, распространяемую среди населения.
 		</p>
 	#ENDIF
 	]]>
@@ -267,9 +266,9 @@
 	
 	<htmlContent tag="HELENAS_HOTEL"><![CDATA[
 	<p>
-		[style.boldGold(The Golden Feather:)]
-		<br/>Helena's hotel, 'The Golden Feather', is located in this area. Now that you're aware of its existence, you could head inside and make use of the elevator to travel directly up to Helena's nest.
-	</p>
+		[style.boldGold(Золотое перо:)]
+		<br/>Отель Helena, «Золотое перо», находится в этом районе. Теперь, когда ты знаешь о его существовании, ты можешь зайти внутрь и воспользоваться лифтом, чтобы подняться прямиком в гнездо Helena.
+		</p>
 	]]>
 	</htmlContent>
 	
@@ -278,8 +277,8 @@
 
 	<htmlContent tag="STREET_SHADED"><![CDATA[
 	<p>
-		[style.boldHarpy(Harpy Nests:)]
-		<br/>The wooden platforms and bridges of the rooftop Harpy Nests cast a shadow over these streets. Looking up, you see the occasional flash of brightly-coloured feathers as harpies swoop this way and that.
+		[style.boldHarpy(Гнезда гарпий:)]
+		<br/>Деревянные платформы и мосты на крышах — Гнезда гарпий — отбрасывают тень на эти улицы. Если поднять взгляд, можно заметить случайные вспышки ярких перьев: гарпии то и дело пикируют то туда, то сюда.
 	</p>
 	]]>
 	</htmlContent>
@@ -291,47 +290,47 @@
 	#IF(game.isDayTime())
 		<p>
 			#IF(pc.hasCompanions())
-				You and [com.name] find yourselves travelling down the narrow dirt path which runs alongside the entire length of Dominion's extensive canal network.
+				Ты и [com.name] идете по узкой грунтовой тропе, которая тянется вдоль всей разветвленной сети каналов Dominion.
 			#ELSE
-				You find yourself travelling down the narrow dirt path which runs alongside the entire length of Dominion's extensive canal network.
+				Ты идешь по узкой грунтовой тропе, которая тянется вдоль всей разветвленной сети каналов Dominion.
 			#ENDIF
-			 While the track occasionally widens out or runs past small clearings and gardens, it is for the most part closely flanked by dark, red-bricked buildings. Despite the fact that these high walls create a gloomy, oppressive atmosphere, you find yourself preferring to be in their presence rather than that of the more spacious, foliage-filled areas, as their leafy bushes, wooden fences, and waist-high walls provide ample hiding places from which muggers could launch an ambush.
+				Хотя местами тропа расширяется или проходит мимо небольших полян и садов, по большей части она зажата между темными зданиями из красного кирпича. И хотя эти высокие стены создают мрачную, гнетущую атмосферу, тебе приятнее находиться здесь, чем в более просторных, заросших зеленью местах, где кусты, деревянные заборы и стены по пояс служат отличными укрытиями для засад грабителей.
 		</p>
 		<p>
-			Unlike the city's back-alleys, this canal-side path is not completely deserted, as every now and then you come across a harmless citizen, who invariably averts their gaze as they hurry past you. The wide waterway itself is also extremely busy, with a seemingly never-ending procession of barges slowly trawling past on their way to destinations unknown. While several of them seem to be for recreational purposes, the vast majority of these narrow boats are hauling cargo of one sort or another; their long decks are stacked high with crates, packed with industrial machinery, or filled with tarpaulin-covered mounds of raw materials.
+			В отличие от городских закоулков, эта тропа вдоль канала не совсем безлюдна: время от времени тебе попадаются безобидные горожане, которые неизменно отводят взгляд, поспешно проходя мимо. Сама широкая водная артерия тоже кипит жизнью: кажется, бесконечная процессия барж медленно тянется мимо, направляясь в неведомые края. Хотя некоторые из них, похоже, предназначены для прогулок, подавляющее большинство этих узких судов везет тот или иной груз; их длинные палубы завалены высокими штабелями ящиков с промышленным оборудованием или укрытыми брезентом кучами сырья.
 		</p>
 	#ELSE
 		<p>
 			#IF(pc.hasCompanions())
-				You and [com.name] find yourselves travelling down the narrow, dimly-lit dirt path which runs alongside the entire length of Dominion's extensive canal network.
+				Ты и [com.name] идете по узкой, тускло освещенной грунтовой тропе, которая тянется вдоль всей разветвленной сети каналов Dominion.
 			#ELSE
-				You find yourself travelling down the narrow, dimly-lit dirt path which runs alongside the entire length of Dominion's extensive canal network.
+				Ты идешь по узкой, тускло освещенной грунтовой тропе, которая тянется вдоль всей разветвленной сети каналов Dominion.
 			#ENDIF
-			 While the track occasionally widens out or runs past small clearings and gardens, it is for the most part closely flanked by dark, red-bricked buildings. Despite the fact that the flickering arcane lights fixed to these high walls create a gloomy, sinister atmosphere, you find yourself preferring to be in their presence rather than that of the more spacious, foliage-filled areas, as their leafy bushes, wooden fences, and waist-high walls provide ample pitch-black hiding places from which muggers could launch an ambush.
+				Хотя тропа временами расширяется или проходит мимо небольших полянок и садов, по большей части она зажата между темными зданиями из красного кирпича. Несмотря на то, что мерцающие огни Арканы, закрепленные на высоких стенах, создают мрачную и зловещую атмосферу, тебе приятнее находиться здесь, чем в более просторных, заросших зеленью местах, ведь их лиственные кусты, деревянные заборы и стены по пояс высотой изобилуют непроглядными укрытиями, из которых грабители могут устроить засаду.
 		</p>
 		<p>
-			Due to the fact that it's currently night-time, this canal-side path is completely deserted. The wide waterway itself is also far less busy than it is during the day, with just the occasional arcane spotlight sweeping over the gloomy waterway as the barge it's fixed to slowly trawls past. While there may be the infrequent recreational narrow boat to be seen during daylight hours, these night-time barges are invariably hauling cargo of one sort or another; their long decks are stacked high with crates, packed with industrial machinery, or filled with tarpaulin-covered mounds of raw materials.
+			Поскольку сейчас ночь, эта тропа вдоль канала совершенно безлюдна. Сама широкая водная артерия тоже куда менее оживлена, чем днем: лишь изредка луч арканального прожектора скользит по мрачной воде, когда мимо медленно проплывает баржа, к которой он закреплен. Если днем здесь можно встретить редкие прогулочные узкие лодки, то ночные баржи неизменно тащат какой-нибудь груз; их длинные палубы завалены высокими штабелями ящиков с промышленным оборудованием или укрытыми брезентом кучами сырья.
 		</p>
 	#ENDIF
 	<p>
 		#IF(game.getNonCompanionCharactersPresent().isEmpty())
 			#IF(game.isDayTime())
-				Despite the high level of traffic on the canal itself, you get the feeling that nobody would come to your aid if you were to be attacked while travelling on this path. The distinct lack of any Enforcer presence is a clear indication that this [style.colourBad(dangerous)] area is ripe territory for muggers, and so you make sure to stay alert as you continue on your way...
+				Несмотря на оживленное движение в самом канале, у тебя возникает чувство, что никто не придет тебе на помощь, если на тебя нападут на этой тропе. Отсутствие патрулей Enforcer явно указывает на то, что эта [style.colourBad(опасная)] местность — идеальное место для грабителей, поэтому ты стараешься сохранять бдительность, продолжая свой путь...
 			#ELSE
-				Despite the fact that there are people keeping a lookout up on the decks of these barges, you get the feeling that none of them would come to your aid if you were to be attacked while travelling on this poorly-lit path. The distinct lack of any Enforcer presence is a clear indication that this [style.colourBad(dangerous)] area is ripe territory for muggers, and so you make sure to stay alert as you continue on your way...
+				Хотя на палубах барж и дежурят люди, у тебя не покидает ощущение, что никто из них не бросится тебе на выручку, если на тебя нападут на этой плохо освещенной тропе. Отсутствие патрулей Enforcer явно указывает на то, что эта [style.colourBad(опасная)] местность — идеальное место для грабителей, поэтому ты стараешься сохранять бдительность, продолжая свой путь...
 			#ENDIF
 		#ELSEIF(npc.isRelatedTo(pc))
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is your [npc.relation(pc)], [npc.name]...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это твой [npc.relation(pc)], [npc.name]...
 		#ELSEIF(npc.getHistory()==OCCUPATION_NPC_PROSTITUTE)
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is far more interested in whoring [npc.herself] out rather than fighting anyone...
+			Несмотря на обилие укрытий, из которых может выскочить засада, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственный, кого ты здесь можешь встретить — это [npc.name], которому куда интереснее торговать [npc.herself] в борделях, чем с кем-то сражаться...
 		#ELSEIF(npc.getAffectionLevel(pc).isLessThan(AFFECTION_POSITIVE_ONE_FRIENDLY))
 			#IF(game.isDayTime())
-				Despite the high level of traffic on the canal itself, you get the feeling that nobody would come to your aid if you were to be attacked while travelling on this path. The distinct lack of any Enforcer presence is a clear indication that this [style.colourBad(dangerous)] area is ripe territory for muggers, and so you make sure to stay alert as you continue on your way...
+				Несмотря на оживленное движение в самом канале, у тебя возникает чувство, что никто не придет тебе на помощь, если на тебя нападут на этой тропе. Отсутствие патрулей Enforcer явно указывает на то, что эта [style.colourBad(опасная)] местность — идеальное место для грабителей, поэтому ты стараешься сохранять бдительность, продолжая свой путь...
 			#ELSE
-				Despite the fact that there are people keeping a lookout up on the decks of these barges, you get the feeling that none of them would come to your aid if you were to be attacked while travelling on this poorly-lit path. The distinct lack of any Enforcer presence is a clear indication that this [style.colourBad(dangerous)] area is ripe territory for muggers, and so you make sure to stay alert as you continue on your way...
+				Хотя на палубах барж и дежурят люди, у тебя не покидает ощущение, что никто из них не бросится тебе на выручку, если на тебя нападут на этой плохо освещенной тропе. Отсутствие патрулей Enforcer явно указывает на то, что эта [style.colourBad(опасная)] местность — идеальное место для грабителей, поэтому ты стараешься сохранять бдительность, продолжая свой путь...
 			#ENDIF
 		#ELSE
-			Despite the abundance of hiding places from which an ambush could be sprung, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is on friendly terms with you...
+			Несмотря на обилие укрытий, в которых может затаиться враг, ты чувствуешь себя здесь довольно [style.colourGood(безопасно)], ведь единственным, кого ты можешь здесь встретить, является [npc.name], с кем у тебя дружеские отношения...
 		#ENDIF
 	</p>
 	]]>
@@ -342,7 +341,7 @@
 
 	<htmlContent tag="CANAL_END"><![CDATA[
 	<p>
-		<i>The path before you abruptly ends, and although the canal continues on its way to the outskirts of the city, there's no way for you to continue onwards...</i>
+		<i>Путь перед тобой внезапно обрывается, и хотя канал продолжает свой путь к окраинам города, у тебя нет возможности двигаться дальше...</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -352,13 +351,13 @@
 
 	<htmlContent tag="CITY_EXIT_SEWERS"><![CDATA[
 	<p>
-		A large stone bridge has been built over Dominion's canal, and as you walk over it, you hear the unmistakable sound of rushing water coming from below. Peering over the side, you see the origin of the noise; a huge, brick-lined opening, covered in metal bars, has been dug out on one side of the waterway, and it's into this that the water from the canal is flowing. Looking closer, you see that on the other side of the bars, there's a wide set of stone steps leading down into the gloom below.
+		На канале Dominion возведен массивный каменный мост. Когда ты идешь по нему, снизу доносится отчетливый шум бурлящей воды. Заглянув за перила, ты видишь источник шума: в одном из берегов прорыт огромный, выложенный кирпичом проем, закрытый металлическими решетками, куда и стекает вода из канала. Присмотревшись, ты замечаешь, что по ту сторону решеток широкая каменная лестница уходит вниз, в густую мглу.
 	</p>
 	<p>
-		Searching for a way to get access to those steps, and the area beyond, you soon find yourself standing before a building marked as 'Submission Enforcer Post'. The doors are wide open, and, peering inside, you see that the origin of the stone staircase is situated in the middle of a large, mostly-empty waiting room.
+		В поисках способа добраться до лестницы и территории за ней, ты вскоре оказываешься перед зданием с надписью «Submission Enforcer Post». Двери широко распахнуты, и, заглянув внутрь, ты видишь, что каменная лестница ведет прямиком в центр большой, почти пустой приемной.
 	</p>
 	<p>
-		There only appears to be one Enforcer guarding the staircase, who half-heartedly glances up from their newspaper as they catch sight of you. Letting out a sigh, they motion towards the staircase, clearly gesturing that you're able to come and go as you please.
+		Лестницу охраняет всего один Enforcer, который лишь лениво отрывает взгляд от газеты, заметив тебя. Тяжело вздохнув, он указывает на лестницу, явно давая понять, что ты можешь приходить и уходить, когда пожелаешь.
 	</p>
 	]]>
 	</htmlContent>
@@ -368,27 +367,27 @@
 	
 	<htmlContent tag="ENTER_SUBMISSION"><![CDATA[
 	<p>
-		Stepping into the building marked as the 'Submission Enforcer Post', you start to make your way towards the staircase. A solitary Enforcer is stationed behind a desk on one side of the room, and he barely even bothers to look up to see who's entering before continuing to read the newspaper in his hands. Obviously not being of any sort of hindrance to you, you ignore the Enforcer and continue forwards, before starting to descend the stone staircase. The deafening roar of rushing water quickly envelops you, and beneath the orange glow of arcane-powered lamps, you quickly hurry down the damp stone steps.
+		Переступив порог здания с вывеской «Пост Submission Enforcer», ты направляешься к лестнице. За одним из столов сидит одинокий Enforcer; он едва удостаивает вошедшего взглядом, продолжая увлеченно читать газету. Очевидно, что он не станет тебе помехой, поэтому ты игнорируешь его и идешь вперед, начиная спускаться по каменной лестнице. Тебя тут же окутывает оглушительный рев бурлящей воды, и под оранжевым сиянием ламп, питаемых Арканой, ты поспешно спускаешься по влажным каменным ступеням.
 	</p>
 	<p>
-		As you reach the bottom, you find yourself confronted by a weathered wooden door, which has a helpful sign tacked to the front, reading; 'Please Enter'. Following the sign's instruction, you push open the door and step forwards into the large, well-lit interior of yet another Enforcer post. This one is far more active than its counterpart on the surface, and all around you, Enforcers are either hurrying to and fro, busily working at one of a dozen or so desks, or standing guard beside the several doors which branch off into internal offices.
+		Дойдя до низа, ты оказываешься перед видавшей виды деревянной дверью, на которой красуется полезная табличка: «Пожалуйста, входите». Следуя указанию, ты толкаешь дверь и шагаешь в просторное, ярко освещенное помещение еще одного поста Enforcer. Этот пост куда более оживленный, чем тот, что был на поверхности: вокруг тебя снуют Enforcer'ы, кто-то деловито работает за одним из дюжины столов, а кто-то стоит на страже у дверей, ведущих в служебные кабинеты.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTER_SUBMISSION_FIRST_TIME"><![CDATA[
 	<p>
-		As the door swings shut behind you, a short, pink-furred, greater cat-girl Enforcer rushes forwards. Even with the high heels that she's currently wearing, she can't be any more than [units.sizes(152)] in height, but her breasts, hips, and thighs are without doubt the largest of any of the Enforcers in the room. As she comes to a rather unsteady halt in front of you, a big grin breaks out across her face, and she cries out in a very friendly voice, [claire.speech(Hey, I haven't seen you down here before, so this must be your first time in Submission!)]
+		Как только дверь за тобой захлопывается, к тебе бросается невысокая Enforcer — кошкодевочка с розовой шерстью. Даже на своих высоких каблуках она едва достигает [units.sizes(152)] в росте, но её грудь, бёдра и ягодицы, без сомнения, самые внушительные среди всех Enforcer в этой комнате. Когда она, слегка пошатываясь, останавливается перед тобой, её лицо расплывается в широкой улыбке, и она восклицает очень дружелюбным голосом: [claire.speech(Эй, я раньше тебя здесь не видела, так что это, должно быть, твой первый раз в Submission!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTER_SUBMISSION_REPEAT"><![CDATA[
 	<p>
-		As the door behind you swings shut, you see the familiar, pink-furred figure of Claire busily collecting papers on the other side of the room. As she travels between the desks, you can't help but notice how huge her breasts, hips, and ass are on her short figure, and how even her armoured vest isn't enough to stop her massive [claire.cupSize]-cup boobs from swaying to and fro in time with her hurried movements.
+		Пока дверь за твоей спиной закрывается, ты замечаешь знакомую фигуру розовошерстной Клэр, которая деловито собирает бумаги на другом конце комнаты. Пока она перемещается между столами, ты невольно обращаешь внимание на то, насколько огромными выглядят её грудь, бёдра и задница на фоне её невысокого роста, и как даже бронежилет не в силах удержать её массивную [claire.cupSize]-размерную грудь, которая колышется в такт её поспешным движениям.
 	</p>
 	<p>
-		If you wanted to, you could walk up to her and ask her more about Submission, or simply ignore her for the time being and continue on through the door on the far side of the room marked as 'Public Access to Submission'...
+		Если захочешь, ты можешь подойти к ней и расспросить о Submission, или же просто проигнорировать её на время и пройти через дверь в дальнем конце комнаты с надписью «Общий доступ в Submission»...
 	</p>
 	]]>
 	</htmlContent>
@@ -398,40 +397,40 @@
 	
 	<htmlContent tag="ENTER_SUBMISSION_FIRST_TIME_CONFIRMATION"><![CDATA[
 	<p>
-		Confirming to the cat-girl that this is indeed your first time visiting Submission, you then ask her how she's so sure that this is your first time coming down here. After all, there are numerous entrances, and you could have previously visited via one of those.
+		Подтвердив кошкодевочке, что это действительно твой первый визит в Submission, ты спрашиваешь, откуда ей такая уверенность. Ведь здесь множество входов, и ты вполне мог приходить сюда раньше через один из них.
 	</p>
 	<p>
-		A very smug smile quickly settles on the cat-girl's face, and, placing her hands on her hips, she puffs up her chest, thrusting her disproportionately-large breasts out in your general direction. Having assumed this striking pose, she proudly states, [claire.speech(Although not normally granted to someone of my rank, I, sergeant Claire Kasun, have permission to use teleportation pads! Being assigned the job of relaying messages, I can instantaneously travel between any of Submission's Enforcer posts, so nobody who enters Submission escapes my notice! Anyway, now that I've introduced myself, who are you?)]
+		На лице кошкодевочки расплывается самодовольная ухмылка. Уперев руки в бока, она выпячивает грудь, направляя свои непропорционально огромные сиськи прямо в твою сторону. Приняв столь эффектную позу, она гордо заявляет: [claire.speech(Хотя обычно это не положено людям моего ранга, мне, сержанту Клэр Касун, разрешено пользоваться телепортационными платформами! Поскольку на меня возложена обязанность передачи сообщений, я могу мгновенно перемещаться между любыми постами Enforcer в Submission, так что никто, кто входит в Submission, не ускользнет от моего взора! В общем, раз уж я представилась, то кто ты такой?)]
 	</p>
 	<p>
-		Deciding that there'd be no harm in giving your name to Claire, you introduce yourself to her, [pc.speech(I'm [pc.name].)]
+		Решив, что нет ничего плохого в том, чтобы назвать свое имя Клэр, ты представляешься ей: [pc.speech(Я [pc.name].)]
 	</p>
 	<p>
-		[claire.speech(Pleased to meet you, [pc.name]. So, as you're new, I need to let you know a few things! One, please don't go swimming in the waterways. The alligator-morphs can get a little snappy if they think you're barging in on their territory. Two, stay away from Lyssieth's palace. She doesn't receive visitors, and those guards of hers don't take kindly to strangers loitering about the place,)] the cat-girl Enforcer warns, before wagging a finger under your nose and continuing, [claire.speech(Now this third one's the most important of all, so listen up! Whatever you do, stay out of the tunnels!)]
+		[claire.speech(Приятно познакомиться, [pc.name]. Раз уж ты здесь новенький, мне нужно ввести тебя в курс дела! Во-первых, пожалуйста, не вздумай плавать в местных водоемах. Морфы-аллигаторы могут стать довольно агрессивными, если решат, что ты бесцеремонно вторгся на их территорию. Во-вторых, держись подальше от дворца Lyssieth. Она не принимает посетителей, а её стража не жалует незнакомцев, слоняющихся поблизости,)] — предупреждает кошкодевочка-Enforcer, после чего машет пальцем перед твоим носом и продолжает: [claire.speech(А теперь третье, самое важное, так что слушай внимательно! Что бы ты ни делал, держись подальше от туннелей!)]
 	</p>
 	<p>
-		[pc.speech(I was told the same thing about the alleyways in Dominion. I'll be careful,)] you reply, thinking back to the warning Rose gave you shortly after arriving in Dominion.
+		[pc.speech(Мне говорили то же самое про переулки в Dominion. Буду осторожен,)] — отвечаешь ты, вспоминая предостережение, которое Роуз дала тебе вскоре после прибытия в Dominion.
 	</p>
 	<p>
-		[claire.speech(Don't take my warning so lightly!)] Claire huffs, putting her hands back on her hips and pouting at you, [claire.speech(Dominion's nothing compared to what we have to deal with! Now, we're not meant to go around telling people this, but I can see that you're going to need some extra convincing! The truth is, we Enforcers are extremely under-staffed down here, and we count ourselves lucky if we can send even one patrol through those tunnels per week. As a result, they're absolutely infested with roving gangs of nasty little imps, who love nothing more than to have their wicked ways with innocent travellers.)]
+		[claire.speech(Не воспринимай моё предупреждение так легкомысленно!)] Клэр фыркает, упирая руки в бока и обиженно глядя на тебя. [claire.speech(Dominion — это ничто по сравнению с тем, с чем нам приходится иметь дело! Вообще-то, нам не положено разглашать такие вещи, но я вижу, что тебя нужно хорошенько убедить! Правда в том, что нам, Enforcer, здесь катастрофически не хватает людей, и нам везёт, если удаётся отправить хотя бы один патруль в эти туннели в неделю. В результате они буквально кишат бродячими бандами мерзких мелких бесов, которые только и мечтают о том, чтобы потешить свои порочные наклонности на невинных путешественниках.)]
 	</p>
 	<p>
-		[pc.speech(If they've formed gangs, then surely they have leaders? Can't you attack and arrest them directly?)] you ask.
+		[pc.speech(Если они сбились в банды, значит, у них наверняка есть вожаки? Разве вы не можете просто напасть на них и арестовать?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[claire.speech(If only! The problem is, their leaders are powerful demons, and they've gone and built fortresses in those tunnels. Although they're not much more than just crude defensive walls, we're not exactly equipped to go and lay siege to them. Just accept that the tunnels are off-limits, ok?)]
+		[claire.speech(Если бы! Проблема в том, что их предводители — могущественные демоны, и они умудрились построить в этих туннелях целые крепости. Пусть это всего лишь грубые оборонительные стены, но мы не особо оснащены для того, чтобы идти на их штурм. Просто прими как факт: туннели пока под запретом, ладно?)]
 	</p>
 	<p>
-		Thanking Claire again for the warning, you wonder to yourself if you'll ever end up having to visit these fortresses.
+		Снова поблагодарив Клэр за предупреждение, ты задаёшься вопросом: придётся ли тебе когда-нибудь посетить эти крепости лично.
 	</p>
 	<p>
-		[claire.speech(Oh, and one last thing! We've recently been having some trouble with slimes attacking innocent travellers and then forcibly transforming them into even more slimes,)] the cat-girl says, taking on a stern expression and starting to wag her finger again as she continues, [claire.speech(Now, I know I just told you to stay out of the tunnels, but if you do decide to foolishly ignore my warning and end up venturing into some of the ones not claimed by imps, just be extra careful of any slimes you bump into. And if, by some miracle, you're able to get any information on why these slimes are doing this, there's a five-thousand flame reward being offered if you report it to me.)]
+		[claire.speech(О, и последнее! В последнее время у нас возникли проблемы: слаймы нападают на невинных путешественников, а затем насильно превращают их в новых слаймов,)] — говорит кошкодевочка, принимая суровый вид и снова начиная грозить тебе пальцем, — [claire.speech(Знаю, я только что велела тебе держаться подальше от туннелей, но если ты всё же решишь по глупости проигнорировать моё предупреждение и забредёшь в те, что не заняты бесами, будь предельно осторожен со всеми слаймами, которых встретишь. И если, по какому-то чуду, тебе удастся разузнать, почему они так себя ведут, за отчет мне полагается награда в пять тысяч огней.)]
 	</p>
 	<p>
-		[pc.speech(I'll keep that in mind,)] you reply, wondering if it would be worth your time to find one of these slimes and ask them about these forced transformations.
+		[pc.speech(Буду иметь в виду,)] — отвечаешь ты, гадая, не стоит ли потратить время на то, чтобы найти одного из этих слаймов и расспросить их о таких насильственных превращениях.
 	</p>
 	<p>
-		[claire.speech(That reward isn't meant to encourage you to go and seek out danger, [pc.name],)] Claire sighs, obviously having picked up on the interested tone of your voice, before smiling and finally stating, [claire.speech(Anyway, if you need anything else, I'm always around, so don't hesitate to come and ask me about anything!)]
+		[claire.speech(Эта награда дана не для того, чтобы ты искал приключений на свою голову, [pc.name],)] — Клэр вздыхает, явно уловив заинтересованный тон твоего голоса, а затем улыбается и наконец добавляет: [claire.speech(В любом случае, если тебе что-нибудь понадобится, я всегда рядом, так что не стесняйся подходить и спрашивать о чём угодно!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -441,17 +440,17 @@
 
 	<htmlContent tag="CITY_EXIT_BAT_CAVERNS"><![CDATA[
 	<p>
-		Once again you find yourself near the shaft which links Dominion to the Bat Caverns far below. The tunnel entrance itself is completely concealed behind a brick wall that's topped with barbed wire, with only an old, rusted sign to declare its presence.
+		Ты снова оказываешься у шахты, соединяющей Dominion с глубокими Пещерами Летучих Мышей. Сам вход в туннель полностью скрыт за кирпичной стеной, увенчанной колючей проволокой, и лишь старая ржавая табличка напоминает о его существовании.
 	</p>
 	<p>
 		#IF(pc.isAbleToFly())
 			#IF(!pc.isPartyAbleToFly())
-				Although you're able to fly, your companion cannot, and so you can't make use of this shaft to swiftly return to the Bat Caverns...
+				Хотя ты и умеешь летать, твой спутник — нет, так что ты не сможешь использовать этот шахтный проход, чтобы быстро вернуться в Летучие пещеры...
 			#ELSE
-				As you're able to fly, you could travel down this shaft to swiftly return to the Bat Caverns...
+				Так как ты умеешь летать, ты можешь спуститься по этому шахтному проходу, чтобы быстро вернуться в Летучие пещеры...
 			#ENDIF
 		#ELSE
-			As you're unable to fly, you can't make use of this shaft to swiftly return to the Bat Caverns...
+			Так как ты не умеешь летать, ты не сможешь использовать этот шахтный проход, чтобы быстро вернуться в Летучие пещеры...
 		#ENDIF
 	</p>
 	]]>
@@ -459,20 +458,20 @@
 	
 	<htmlContent tag="CITY_EXIT_BAT_CAVERNS_FLY_DOWN"><![CDATA[
 	<p>
-		Deciding that you'd like to return to the Bat Caverns, you leap into the air and take off. Flying up above the shaft, you dive down into its dark depths, confident from your last journey through it that you know the way.
+		Решив, что пора возвращаться в Летучие пещеры, ты отталкиваешься от земли и взмываешь в воздух. Пролетев над шахтой, ты ныряешь в её тёмные глубины, уверенная в том, что после прошлого путешествия хорошо знаешь дорогу.
 	</p>
 	<p>
-		As you delve down into the darkness, you once again see the series of dim lights and aggressive proximity warning buzzers which have been fitted to the jagged walls.
+		Погружаясь во тьму, ты снова видишь череду тусклых огней и агрессивно мигающих датчиков приближения, закреплённых на зазубренных стенах.
 		#IF(pc.hasEchoLocation())
-			 What's more, you're able to use echolocation to navigate through dark areas, and so you're able to speedily dive down through the shaft without fear of hitting the uneven walls.
+			 Более того, ты можешь использовать эхолокацию для навигации в темноте, что позволяет тебе стремительно нестись вниз по шахте, не боясь врезаться в неровные стены.
 		#ELSEIF(pc.isSelfImmuneToDarkness())
-			 What's more, you're able to see in the dark, and so you're able to speedily dive down through the shaft without fear of hitting the uneven walls.
+			 Более того, ты видишь в темноте, что позволяет тебе стремительно нестись вниз по шахте, не боясь врезаться в неровные стены.
 		#ELSE
-			 Thanks to these safety devices, you're able to speedily dive down through the shaft without fear of hitting the uneven walls.
+			 Благодаря этим защитным устройствам ты можешь стремительно нестись вниз по шахте, не боясь врезаться в неровные стены.
 		#ENDIF
 	</p>
 	<p>
-		A minute later and you're swooping down to land. Settling to the floor, you look around to make sure that you're not in any danger before continuing on your way...
+		Спустя минуту ты уже планируешь для посадки. Опустившись на пол, ты оглядываешься по сторонам, чтобы убедиться в отсутствии опасности, прежде чем продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -482,24 +481,24 @@
 
 	<htmlContent tag="DEMON_HOME_SEX_SHOP"><![CDATA[
 	<p>
-		You find yourself [pc.walking] down what looks to be the main high street of Demon Home, with dozens of upmarket shops, eateries, and other such premises located to your left and right.
+		Ты оказываешься [pc.walking] на чем-то вроде главной улицы Обители Демонов, по обе стороны от которой тянутся десятки элитных лавок, ресторанов и прочих заведений.
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			 As there's currently an arcane storm raging overhead, the usual crowds of shoppers are mostly gone, with just a few demons here and there taking advantage of the quiet.
+			 Поскольку над головой сейчас бушует арканный шторм, привычные толпы покупателей почти исчезли — лишь кое-где можно встретить демонов, решивших воспользоваться тишиной.
 		#ELSE
-			 Being the city's most affluent district, the shoppers you see around you all look to be very wealthy, with most of them sporting designer clothing and accessories.
+			 Поскольку это самый богатый район города, все покупатели вокруг кажутся очень состоятельными; большинство из них щеголяют в дизайнерской одежде и аксессуарах.
 		#ENDIF
 	</p>
 	<p>
-		Although the vast majority of the shops here are of no interest or use to you, there is one which catches your eye. A long, black awning has been extended over a line of large glass windows, and upon the front it reads in gold lettering; 'Lovienne's Luxuries'. Looking through the glass, you see an impressive collection of sex toys of all different shapes and sizes on display. A very posh-looking black-and-gold sign positioned beside the entrance declares:
+		Хотя подавляющее большинство здешних лавок не представляют для тебя ни интереса, ни пользы, одна всё же бросается в глаза. Над рядом больших стеклянных витрин натянут длинный черный навес, на котором золотыми буквами красуется надпись: «Роскошь Ловьенны». Глядя сквозь стекло, ты видишь впечатляющую коллекцию секс-игрушек самых разных форм и размеров. Рядом с входом стоит очень шикарная черно-золотая табличка, гласящая:
 	</p>
 	<p style='text-align:center;'><i>
-		<b>Lovienne's Luxuries</b>
+		<b>Роскошь Ловьенны</b>
 		<br/>
-		Premium sex toys designed by the elder lilin Lovienne herself
+		Премиальные секс-игрушки, созданные самой старшей лилин Ловьенной
 		<br/>
-		Exclusive home to Lovienne's premium sex dolls
+		Эксклюзивный дом премиальных секс-кукол Ловьенны
 		<br/>
-		Open every day between
+		Открыто ежедневно с
 		#IF(game.isHourBetween(11, 23))
 			 [style.colourMinorGood([units.time(11)]-[units.time(23)])]
 		#ELSE
@@ -508,9 +507,9 @@
 	</i></p>
 	<p>
 		#IF(game.isHourBetween(11, 23))
-			As the current time is within the shop's opening hours, Lovienne's Luxuries is [style.colourGood(open)]. You could push open the door and head inside if you wanted to take a look at what's for sale...
+			Так как сейчас магазин работает, «Роскошь Ловьенны» [style.colourGood(открыта)]. Ты можешь толкнуть дверь и зайти внутрь, если хочешь взглянуть на ассортимент...
 		#ELSE
-			As the current time is outside of the shop's opening hours, Lovienne's Luxuries is [style.colourBad(closed)]. You'll have to return at another time if you wanted to take a look at what's for sale...
+			 Так как сейчас магазин не работает, «Роскошь Ловьенны» [style.colourBad(закрыта)]. Тебе придется вернуться в другое время, если ты захочешь взглянуть на ассортимент...
 		#ENDIF
 	</p>
 	]]>
@@ -519,38 +518,38 @@
 	<htmlContent tag="DEMON_HOME_SEX_SHOP_RIOT"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_doll_factory_ending_riot_witnessed))
 		<p>
-			As you approach Lovienne's Luxuries, you see that the angry crowd is still milling about outside of it. Drawing closer, you see that several members of this crowd are holding placards which bear slogans such as 'No More Dolls!', 'Dollification is Illegal!', and 'Shut It Down!'. The inside of the shop is still dark, and the door is securely locked with a 'Closed Until Further Notice' sign hanging in the window.
+			Когда ты подходишь к «Роскоши Ловиенны», ты видишь, что перед входом всё ещё толпится разгневанная толпа. Подойдя ближе, ты замечаешь, что некоторые люди держат плакаты с лозунгами вроде «Долой кукол!», «Доллификация незаконна!» и «Закрыть лавку!». Внутри магазина всё ещё темно, а дверь наглухо заперта, и в окне висит табличка: «Закрыто до особого распоряжения».
 		</p>
 		<p>
-			Kitted out in riot gear, two dozen Enforcers are standing guard outside of the shop. Holding large, transparent shields and collapsible batons, they look ready to deal with any protester who tries to turn to violence.
+			Снаряженные для подавления беспорядков, снаружи магазина стоят два десятка Enforcer. Вооруженные большими прозрачными щитами и складными дубинками, они выглядят готовыми расправиться с любым протестующим, который решит прибегнуть к насилию.
 		</p>
 		<p>
-			Thanks to the presence of these Enforcers, the crowd seems to be quite subdued, and you imagine that despite their outrage at the crimes which were being committed within Saellatrix's store, they'll have eventually had enough and naturally disperse. At that point the store is sure to reopen, and around the same time Fia will undoubtedly make her reappearance, but until then there's not much for you to do here...
+			Благодаря присутствию этих Enforcer толпа кажется довольно смирной. Ты представляешь, что, несмотря на их негодование из-за преступлений, творившихся в лавке Саэллатрикс, рано или поздно им всё надоест, и они естественным образом разойдутся. После этого магазин наверняка откроется, и примерно в то же время Фиа, без сомнения, снова появится на свет божий, но пока что тебе здесь особо делать нечего...
 		</p>
 		<p style='text-align:center'>
 			[#SPECIAL_PARSE_0]
 		</p>
 	#ELSE
 		<p>
-			As you approach Lovienne's Luxuries, you see that a small crowd has gathered outside of it. Drawing closer, you see that several members of this crowd are holding placards which bear slogans such as 'No More Dolls!', 'Dollification is Illegal!', and 'Shut It Down!'. The inside of the shop is dark, and the door is securely locked with a 'Closed Until Further Notice' sign hanging in the window.
+			Когда ты подходишь к «Роскоши Ловиенны», ты видишь, что перед входом собралась небольшая толпа. Подойдя ближе, ты замечаешь, что некоторые люди держат плакаты с лозунгами вроде «Долой кукол!», «Доллификация незаконна!» и «Закрыть лавку!». Внутри магазина темно, а дверь наглухо заперта, и в окне висит табличка: «Закрыто до особого распоряжения».
 		</p>
 		<p>
-			It seems as though Fia's article has already hit the presses, and as you come to a halt a short distance from Saellatrix's store, more and more people start to appear. As angry voices start to be raised, and a few confident protesters call for the throwing of rocks through the windows, two dozen Enforcers suddenly rush onto the scene. Kitted out in riot gear, these Enforcers are holding large, transparent shields and collapsible batons. Shouting to make himself heard over the crowd, the most senior of these Enforcers declares, [style.speechMasculineHeavy(You will remain calm and peaceful! Any calls for violence against the property of an elder lilin will be treated as treason!)]
+			Похоже, статья Фии уже успела выйти в печать, и пока ты останавливаешься неподалеку от лавки Саэллатрикс, вокруг начинает собираться всё больше и больше людей. Когда раздаются первые гневные выкрики, а несколько уверенных протестующих призывают закидывать окна камнями, на сцену внезапно вылетает пара десятков Enforcer. Облаченные в снаряжение для подавления беспорядков, эти Enforcer держат большие прозрачные щиты и складные дубинки. Перекрикивая толпу, самый старший из них провозглашает: [style.speechMasculineHeavy(Сохраняйте спокойствие и мир! Любые призывы к насилию против имущества старшей лилин будут расцениваться как государственная измена!)]
 		</p>
 		<p>
-			This warning proves to be enough to dissuade the crowd from taking direct action, and the angry voices quiet down to a restless murmur. At that moment, someone taps you on the shoulder, and you turn to see the familiar figure of Fia standing right there behind you. Flashing you a happy smile, she proudly declares, [fia.speech(We did it, [pc.name]! Now all of Dominion knows about the crimes which were committed here! I mean, sure, Lovienne directly intervened with the consent of Lilith to have my story pulled shortly after it was published, but enough people have already read it. Sae's going to have no choice but to put an end to the dollification process.)]
+			Этого предупреждения оказывается достаточно, чтобы отговорить толпу от решительных действий, и гневные голоса стихают, превращаясь в беспокойный ропот. В этот момент кто-то хлопает тебя по плечу, и ты оборачиваешься, видя перед собой знакомую фигуру Фии. Сияя счастливой улыбкой, она гордо заявляет: [fia.speech(Мы сделали это, [pc.name]! Теперь весь Dominion знает о преступлениях, совершенных здесь! Ну, конечно, Ловиенна при поддержке Lilith сразу же добилась того, чтобы мою статью сняли с пелёнок после публикации, но достаточно людей её уже успели прочитать. У Саэ не останется иного выбора, кроме как остановить процесс куколизации.)]
 		</p>
 		<p>
-			With Lilith herself having been made aware of Fia's story, you find yourself concerned for your friend's well-being, and so ask her if she's going to be ok.
+			Поскольку сама Lilith узнала об истории Фии, ты начинаешь беспокоиться о благополучии подруги и спрашиваешь её, всё ли с ней будет в порядке.
 		</p>
 		<p>
-			[fia.speech(Yeah, my editor's taking the flak, and she's dealt with stories like this before,)] Fia casually replies with a dismissive wave of her hand. With a smirk still on her face, she continues, [fia.speech(I wouldn't put it past Sae to try and get some revenge, though. I'm going to go and stay with some family until all of this has blown over. I just had to come and see the fallout for myself before leaving, and I was also hoping to find you here. I've got those flames I promised you!)]
+			[fia.speech(Да, сейчас все накинулись на моего редактора, хотя она и раньше сталкивалась с подобными историями,)] — небрежно отвечает Фия, отмахнувшись рукой. С ухмылкой на лице она продолжает: [fia.speech(Впрочем, я не удивлюсь, если Саэ захочет отомстить. Я собираюсь пожить у родственников, пока всё это не утихнет. Мне просто нужно было лично увидеть последствия, прежде чем уехать, да и вообще надеялась встретить здесь тебя. У меня есть те самые огни, что я тебе обещала!)]
 		</p>
 		<p>
-			Handing a small bag to you, the reporter grins and says, [fia.speech(There's fifty thousand flames in there, just like I promised. Oh, one more thing! I'll be in one of the bars near here most evenings once I'm back, so come and find me some time!)]
+			Протягивая тебе небольшой мешочек, репортерша широко улыбается: [fia.speech(Там пятьдесят тысяч огней, как я и обещала. О, и еще кое-что! Когда я вернусь, почти каждый вечер я буду пропадать в одном из местных баров, так что заходи как-нибудь найти меня!)]
 		</p>
 		<p>
-			Still concerned for her safety, you tell Fia to be careful. Giving you a reassuring nod, she says, [fia.speech(Don't worry, I'll be fine. Oh, and thanks for sticking with me, by the way. I know that Saellatrix went to see you, and I'm sure that she offered you something that was hard to turn down in exchange for betraying me. I really appreciate that you stuck with me. Anyway, I'll catch you around some time. Bye for now!)]
+			Всё еще беспокоясь о её безопасности, ты советуешь Фие быть осторожной. Ободряюще кивнув, она говорит: [fia.speech(Не волнуйся, со мной всё будет в порядке. О, и кстати, спасибо, что не бросил меня. Я знаю, что Саэллатрикс навещала тебя, и уверена, что она предложила тебе что-то такое, от чего трудно было отказаться в обмен на предательство меня. Я правда ценю, что ты остался на моей стороне. Ладно, еще увидимся. Пока!)]
 		</p>
 	#ENDIF
 	]]>
@@ -558,7 +557,7 @@
 	
 	<htmlContent tag="DEMON_HOME_SEX_SHOP_FIA_CLOSED"><![CDATA[
 	<p>
-		As you approach Lovienne's Luxuries, you see that the inside of the shop is dark, and the door is securely locked with a 'Closed Until Further Notice' sign hanging in the window. Remembering that Saellatrix said she was going to keep her shop closed for a day or two while dealing with Fiammetta, you decide that it'd be best to leave for now and come back later...
+		Когда ты подходишь к «Роскоши Ловиенны», ты видишь, что внутри лавки темно, а дверь наглухо заперта, и в окне висит табличка «Закрыто до особого распоряжения». Вспомнив слова Саэллатрикс о том, что она закроет магазин на день-другой, пока разбирается с Фиамметой, ты решаешь, что лучше уйти сейчас и вернуться позже...
 	</p>
 	<p style='text-align:center'>
 		[#SPECIAL_PARSE_0]
@@ -568,20 +567,20 @@
 	
 	<htmlContent tag="DEMON_HOME_SEX_SHOP_RIOT_ENDED"><![CDATA[
 	<p>
-		As you approach Lovienne's Luxuries, you immediately notice that the crowd of protesters, and the Enforcers which were watching over them, have disappeared. The outrage at Saellatrix's crimes seems to have blown over, and with the presence of the protesters now removed, the store appears to have returned to normal.
+		Когда ты подходишь к «Роскоши Ловиенны», ты сразу замечаешь, что толпа протестующих и сопровождающие их Enforcer исчезли. Похоже, возмущение преступлениями Саэллатрикс утихло, и теперь, когда протестующих нет, в магазине, кажется, всё вернулось на круги своя.
 	</p>
 	<p style='text-align:center'>
-		[style.italicsMinorGood(Lovienne's Luxuries will now once again be open during its regular opening hours.)]
+		[style.italicsMinorGood(Теперь «Роскошь Ловиенны» снова работает в обычном режиме.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DEMON_HOME_SEX_SHOP_RIOT_CONTINUE"><![CDATA[
 	<p>
-		As she looks quite keen to leave, you say a brief farewell to Fia. With that, the reporter gives you one last grin and says, [fia.speech(Remember, I'll be in the bars around this area once I'm back. See you around!)]
+		Видя, что она явно спешит, ты коротко прощаешься с Фией. Напоследок репортерша одаривает тебя ухмылкой и говорит: [fia.speech(Не забывай, когда вернусь, я буду ошиваться в местных барах. Еще увидимся!)]
 	</p>
 	<p>
-		Before you can say anything else, your friend turns and dashes off into the crowd. With Fia having left for a while, and Lovienne's Luxuries closed for the time being, there's not much for you to do here...
+		Прежде чем ты успеваешь что-то ответить, подруга разворачивается и ныряет в толпу. Поскольку Фия ушла, а «Роскошь Ловиенны» пока закрыта, делать здесь тебе особо нечего...
 	</p>
 	]]>
 	</htmlContent>

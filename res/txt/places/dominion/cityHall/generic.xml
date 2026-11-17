@@ -3,7 +3,7 @@
 
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	<p>
-		This particular street is dominated by the huge structure of Dominion's city hall. The architecture of this seat of local government is distinctly classical, with the frontage consisting of a series of huge marble pillars and polished stone steps. A sign near the entrance of this impressive building informs you that it's open to the public from
+	На этой улице возвышается величественное здание ратуши Dominion. Архитектура этого центра местного самоуправления выдержана в классическом стиле: фасад украшен рядом массивных мраморных колонн и ступенями из полированного камня. Табличка у входа в это впечатляющее здание сообщает, что оно открыто для посещения с
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<=16)
 			 [style.colourMinorGood([units.time(9)]-[units.time(16)])].
 		#ELSE
@@ -12,17 +12,17 @@
 	</p>
 	<p>
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			As there's an arcane storm raging overhead, your surroundings are almost completely deserted, with only the occasional demon to be seen walking down the street.
+			Поскольку над головой бушует шторм Арканы, вокруг почти пусто — лишь изредка по улице можно встретить какого-нибудь демона.
 			#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<=16)
-				 As city hall is [style.colourGood(currently open to the public)], you wonder how many people are inside due to legitimate business, and how many are just making use of the building to take shelter from the storm.
+				 Поскольку ратуша [style.colourGood(сейчас открыта для посещения)], ты гадаешь, сколько людей внутри по настоящим делам, а сколько просто решили укрыться здесь от бури.
 			#ELSE
-				 Unfortunately, due to the time of day, city hall is [style.colourBad(currently closed to the public)], so if you had any business within, you'll have to return during regular opening times.
+				 К сожалению, из-за времени суток ратуша [style.colourBad(сейчас закрыта для посещения)], так что, если у тебя здесь были дела, придется вернуться в часы официального приема.
 			#ENDIF
 		#ELSE
 			#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<=16)
-				As city hall is [style.colourGood(currently open to the public)], you could always head inside and seek to conduct whatever business you have to attend to.
+				 Поскольку ратуша [style.colourGood(сейчас открыта для посещения)], ты всегда можешь зайти внутрь и попытаться решить свои вопросы.
 			#ELSE
-				Unfortunately, due to the time of day, city hall is [style.colourBad(currently closed to the public)], so if you had any business within, you'll have to return during regular opening times.
+				 К сожалению, из-за времени суток ратуша [style.colourBad(сейчас закрыта для посещения)], так что, если у тебя здесь были дела, придется вернуться в часы официального приема.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -34,20 +34,20 @@
 
 	<htmlContent tag="ENTRY"><![CDATA[
 	<p>
-		Walking up the short series of polished marble steps which lead to city hall's main entrance, you find yourself confronted by a pair of revolving glass doors. Heading through the one marked 'Entrance', you step into the main foyer and take a look at your new surroundings.
+	Поднимаясь по невысоким ступеням из полированного мрамора, ведущим к главному входу в ратушу, ты оказываешься перед парой вращающихся стеклянных дверей. Проходя через ту, что помечена как «Вход», ты попадаешь в главный вестибюль и осматриваешься вокруг.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="CITY_HALL_FOYER"><![CDATA[
 	<p>
-		The grand entrance to Dominion's city hall gives visitors the impression of great wealth and prestige. Huge marble pillars line the edges of this colossal foyer, and between them, sitting upon the polished marble floor, are numerous finely-carved busts of notable demons. Hanging from the walls are gigantic portraits of yet more demons and half-demons, with nameplates identifying them as particularly important members of the local government. Looking up at the high vaulted ceiling, you see the source of this area's illumination taking the form of several huge, crystal chandeliers.
+	Величественный вход в ратушу Dominion производит на посетителей впечатление огромного богатства и престижа. Края этого колоссального вестибюля обрамляют массивные мраморные колонны, а между ними на полированном полу расставлены многочисленные искусно вырезанные бюсты выдающихся демонов. На стенах висят гигантские портреты множества других демонов и полудемонов, а таблички под ними указывают на их особый статус в местном правительстве. Подняв взгляд к высокому сводчатому потолку, ты видишь, что освещают это пространство несколько огромных хрустальных люстр.
 	</p>
 	<p>
-		On one end of this grand foyer, there's the pair of revolving glass doors which serve as the public entrance and exit, while on the other, a huge, circular desk is staffed by ten or so receptionists, who each wait patiently to answer any queries directed their way by visiting members of the public. Beyond that, the entrance hall branches off left and right into two corridors, which lead into the depths of this centre of bureaucracy.
+	На одном конце этого парадного вестибюля расположены те самые вращающиеся стеклянные двери, служащие входом и выходом для публики, а на другом — огромная круглая стойка, за которой сидят около десяти администраторов, терпеливо ожидающих вопросов от посетителей. За стойкой входной зал разветвляется на два коридора — налево и направо, уходящих вглубь этого бюрократического центра.
 	</p>
 	<p>
-		Although not busy by any stretch of the imagination, several members of the public are milling around in this area, and are no doubt waiting for their friends or companions to finish conducting whatever business they had within.
+	Хотя здесь и нет суеты в полном смысле этого слова, по залу расхаживают несколько посетителей, которые, без сомнения, ждут своих друзей или спутников, заканчивающих свои дела внутри.
 	</p>
 	]]>
 	</htmlContent>
@@ -57,33 +57,33 @@
 	
 	<htmlContent tag="CITY_HALL_INFORMATION_DESK"><![CDATA[
 	<p>
-		Near the far end of the grand foyer, there's a huge, circular desk, which is staffed by ten or so receptionists. It's beside this desk that you currently find yourself standing, and you wonder whether you should approach one of the helpful-looking girls currently on duty, or simply head past them without asking for assistance.
+		В дальнем конце величественного фойе стоит огромный круглый стол, за которым трудятся человек десять регистраторов. Ты стоишь прямо перед этим столом и раздумываешь: стоит ли подойти к одной из этих выглядящих весьма услужливыми девушек или просто пройти мимо, не прося помощи.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="CITY_HALL_INFORMATION_DESK_NAME_CHANGE"><![CDATA[
 	<p>
-		Wanting to know where to go in order to get your name officially changed, you step up to the desk and ask one of the receptionists for directions.
+		Желая узнать, куда податься, чтобы официально сменить имя, ты подходишь к столу и спрашиваешь дорогу у одной из регистраторш.
 	</p>
 	<p>
-		[genericFemale.speech(Ah, you'll want the Bureau of Demographics for that,)] the girl happily answers, before turning in her chair and pointing down the corridor which leads to the left. [genericFemale.speech(You need to head that way, and at the end of the corridor, take another left, and then the office you're looking for will be at the end of that corridor on your right. Applying for a change of name is considered minor business, so once you're there, you'll only need to fill out forms 2-B, 7-D, and the usual series of A-series documents from 1 to 13. There's also no need to wait for an appointment; the Bureau of Demographics is always open to all members of the public. Have a nice day!)]
+		[genericFemale.speech(А, для этого вам нужно в Бюро демографии,)] — радостно отвечает девушка, после чего разворачивается на стуле и указывает на коридор, уходящий налево. [genericFemale.speech(Вам нужно идти туда, в конце коридора снова поверните налево, и тогда нужный вам офис окажется в конце того коридора справа от вас. Смена имени считается мелким делом, так что, когда придете, вам нужно будет лишь заполнить формы 2-Б, 7-Д и стандартный набор документов серии А с первого по тринадцатый. И ждать записи не нужно; Бюро демографии всегда открыто для всех желающих. Хорошего дня!)]
 	</p>
 	<p>
-		Without asking if there was anything else you needed, the receptionist calls out to someone standing behind you, and proceeds to ask them if there's anything she can help them with. As you've already got the information you wanted, you step away from the desk and wonder if you should head down to this 'Bureau of Demographics' right away...
+		Даже не спросив, нужно ли тебе что-то еще, регистраторша окликает кого-то, стоящего позади тебя, и спрашивает, может ли она чем-то помочь. Поскольку нужная информация у тебя уже есть, ты отходишь от стола, размышляя, стоит ли отправиться в это «Бюро демографии» прямо сейчас...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="CITY_HALL_INFORMATION_DESK_PROPERTY"><![CDATA[
 	<p>
-		Curious about the purchase of property in Dominion, you approach the information desk and ask one of the free receptionists where you'd need to go to talk about such a matter.
+		Заинтересовавшись покупкой недвижимости в Dominion, ты подходишь к информационной стойке и спрашиваешь одну из свободных регистраторш, куда тебе нужно обратиться по такому вопросу.
 	</p>
 	<p>
-		[genericFemale.speech(Oh, I'm sorry, [pc.sir],)] the receptionist says, the forced smile on her face making it clear that she isn't actually sorry at all. [genericFemale.speech(The transfer of property rights have recently been suspended, and there's no telling when they might be available again. For future reference, the Bureau of Property and Commerce is down the corridor on the right. Have a good day!)]
+		[genericFemale.speech(Ох, простите, [pc.sir],)] — говорит регистраторша, и её натянутая улыбка ясно дает понять, что на самом деле ей вовсе не жаль. [genericFemale.speech(Передача прав собственности недавно была приостановлена, и неизвестно, когда она возобновится. На будущее: Бюро собственности и торговли находится дальше по коридору справа. Хорошего дня!)]
 	</p>
 	<p>
-		Looking right past you, the girl then calls out to someone who was waiting behind you, and proceeds to ask them if they need any assistance. As your question has now been answered, you step away from the desk and wonder what to do next...
+		Заглянув тебе прямо за спину, девушка окликает кого-то, кто ждал позади тебя, и спрашивает, нужна ли тому помощь. Поскольку на твой вопрос ответили, ты отходишь от стойки, раздумывая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -93,10 +93,10 @@
 	
 	<htmlContent tag="CITY_HALL_CORRIDOR"><![CDATA[
 	<p>
-		Just like the main foyer, the corridors of Dominion's city hall are a grand affair. Polished marble flooring, high-vaulted ceilings, and impressive portraits lining the walls all give the impression of great wealth and importance.
+		Коридоры городской ратуши Dominion так же величественны, как и главный вестибюль. Полированный мраморный пол, высокие сводчатые потолки и впечатляющие портреты на стенах — всё здесь дышит богатством и важностью.
 	</p>
 	<p>
-		Although there are several office workers and self-important bureaucrats hurrying to and fro, the corridor is easily wide enough to accommodate all of you, and, thanks to this abundance of space, you find that there's no need for anyone to adjust their tangent as you all continue on your separate ways.
+		Хотя вокруг суетятся офисные работники и самодовольные бюрократы, коридор достаточно широк, чтобы всем хватило места; благодаря такому простору тебе не приходится ни под кого подстраиваться, когда вы все расходитесь по своим делам.
 	</p>
 	]]>
 	</htmlContent>
@@ -106,7 +106,7 @@
 	
 	<htmlContent tag="CITY_HALL_WAITING_AREA"><![CDATA[
 	<p>
-		For those residents of Dominion who have specific business with the city's administrators, a large, well-furnished waiting room has been provided. Sitting upon the many low-backed sofas which litter this open area, there are numerous members of the public, and you notice that many of them are holding little ticket stubs. A large, arcane-powered notification board is fixed to the far wall, and you see that it reads: <i>Now serving: [#((game.getHourOfDay()*115)+(game.getDayMinutes()%60)).toFixed(0)]</i>
+		Для жителей Dominion, у которых есть дела к городским администраторам, предусмотрена большая, уютная приемная. На многочисленных низких диванах, расставленных по всей этой открытой зоне, сидит множество людей, и ты замечаешь, что многие из них держат в руках маленькие талончики. На дальней стене закреплено огромное табло, работающее на энергии Арканы, и ты видишь надпись: <i>Обслуживается номер: [#((game.getHourOfDay()*115)+(game.getDayMinutes()%60)).toFixed(0)]</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -114,17 +114,17 @@
 	<htmlContent tag="CITY_HALL_WAITING_AREA_LODGER_QUEST"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_cityHallLodgerBoardSeen))
 		<p>
-			Shuddering at the thought of being at the mercy of Dominion's bureaucracy, you turn your attention towards the small, free-standing notice board that's positioned on one side of the waiting room. Curious to see if there's anything to be discovered from reading the many notes pinned to it, you quickly head over to this notice board and start reading.
+			Вздрогнув от мысли о том, что тебе придется зависеть от бюрократии Dominion, ты переводишь взгляд на небольшую отдельно стоящую доску объявлений, расположенную сбоку от зала ожидания. Из любопытства желая узнать, нет ли там чего интересного среди множества приколотых записок, ты быстро подходишь к доске и начинаешь читать.
 		</p>
 		<p>
-			It soon becomes apparent that the only item which holds any interest to you is the piece of paper titled 'Lodgers Seeking Rooms To Rent'. While you're sure that this will be a way in which to meet new and exciting people, there's not much point in looking over the list of Lodgers until you've gained Lilaya's permission to invite guests to stay in one of the empty rooms in her mansion. Resolving to ask your [lilaya.relation(pc)] about that as soon as possible, you [pc.step] back and prepare to continue on your way...
+			Вскоре становится ясно, что единственный предмет, вызвавший у тебя интерес — это листок с заголовком «Жильцы, ищущие комнату». Ты уверен, что это отличный способ познакомиться с новыми интересными людьми, но нет особого смысла изучать список жильцов, пока ты не получишь разрешение от Lilaya приглашать гостей в одну из пустых комнат её особняка. Решив как можно скорее спросить об этом свою [lilaya.relation(pc)], ты [pc.step] назад и готовишься продолжить свой путь...
 		</p>
 	#ELSE
 		<p>
-			Shuddering at the thought of being at the mercy of Dominion's bureaucracy, you turn away and prepare to leave, but as you do so, you spot a small, free-standing notice board positioned on one side of the waiting room. Curious to see if there's anything to be discovered from reading the many notes pinned to it, you quickly head over to the notice board and start reading.
+			Дрожа от одной мысли о том, что ты окажешься во власти бюрократии Dominion, ты отворачиваешься, собираясь уходить. Но в этот момент твой взгляд падает на небольшую отдельно стоящую доску объявлений в углу зала ожидания. Из любопытства, желая узнать, нет ли там чего интересного среди множества приколотых записок, ты быстро подходишь к ней и начинаешь читать.
 		</p>
 		<p>
-			Unfortunately, the vast majority of the posters and proclamations pinned to the board are either advertising some frivolous product or making a common-sense public service announcement. There is, however, one piece of paper which attracts your attention, as it's titled 'Lodgers Seeking Rooms To Rent'. Wondering if this could be a way in which to meet new and exciting people, you decide to ask Lilaya about inviting guests to stay in one of the empty rooms in her mansion. Until such time as you've gained her permission, there's not much point in looking over the list of Lodgers, and so you [pc.step] back and prepare to continue on your way...
+			К сожалению, подавляющее большинство плакатов и прокламаций на доске — это либо реклама каких-то пустяковых товаров, либо банальные объявления городской службы. Однако твое внимание привлекает один листок с заголовком «Жильцы, ищущие комнаты в аренду». Задумавшись, не станет ли это способом познакомиться с новыми интересными людьми, ты решаешь спросить Lilaya, можно ли приглашать гостей, чтобы они поселились в одной из пустующих комнат её особняка. Пока ты не получишь её разрешения, нет особого смысла изучать список жильцов, поэтому ты [pc.step] назад и готовишься продолжить свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -133,17 +133,18 @@
 	<htmlContent tag="CITY_HALL_WAITING_AREA_LODGER_NO_ROOM"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_cityHallLodgerBoardSeen))
 		<p>
-			Shuddering at the thought of being at the mercy of Dominion's bureaucracy, you turn your attention towards the small, free-standing notice board that's positioned on one side of the waiting room. Curious to see if there's anything to be discovered from reading the many notes pinned to it, you quickly head over to this notice board and start reading.
+			Вздрогнув от мысли о том, что тебе придется зависеть от бюрократии Dominion, ты переводишь взгляд на небольшую отдельно стоящую доску объявлений, расположенную сбоку от зала ожидания. Из любопытства желая узнать, нет ли там чего интересного среди множества приколотых записок, ты быстро подходишь к доске и начинаешь читать.
 		</p>
 		<p>
-			It soon becomes apparent that the only item which holds any interest to you is the piece of paper titled 'Lodgers Seeking Rooms To Rent'. Unfortunately, you don't currently have any free guest rooms in Lilaya's mansion where you could house a lodger, and so with little point in reading over the list of names, you [pc.step] back and prepare to continue on your way...
+			Вскоре становится ясно, что единственный предмет, вызвавший у тебя интерес, — это листок с заголовком «Жильцы, ищущие комнаты в аренду». К сожалению, в особняке Lilaya сейчас нет свободных гостевых комнат, где можно было бы поселить жильца, поэтому, не видя смысла изучать список имен, ты [pc.step] назад и готовишься продолжить свой путь...
 		</p>
 	#ELSE
 		<p>
-			Shuddering at the thought of being at the mercy of Dominion's bureaucracy, you turn away and prepare to leave, but as you do so, you spot a small, free-standing notice board positioned on one side of the waiting room. Curious to see if there's anything to be discovered from reading the many notes pinned to it, you quickly head over to the notice board and start reading.
+			Дрожа от одной мысли о том, что ты окажешься во власти бюрократии Dominion, ты отворачиваешься, собираясь уходить. Но в этот момент твой взгляд падает на небольшую отдельно стоящую доску объявлений в углу зала ожидания. Из любопытства, желая узнать, нет ли там чего интересного среди множества приколотых записок, ты быстро подходишь к ней и начинаешь читать.
 		</p>
 		<p>
-			Unfortunately, the vast majority of the posters and proclamations pinned to the board are either advertising some frivolous product or making a common-sense public service announcement. There is, however, one piece of paper which attracts your attention, as it's titled 'Lodgers Seeking Rooms To Rent'. Unfortunately, you don't currently have any free guest rooms in Lilaya's mansion where you could house a lodger, and so with little point in reading over the list of names, you [pc.step] back and prepare to continue on your way...
+		
+К сожалению, подавляющее большинство объявлений и прокламаций, приколотых к доске, — это либо реклама какого-нибудь пустякового товара, либо банальные общественные извещения. Однако твое внимание привлекает один листок с заголовком «Жильцы, ищущие комнаты в аренду». Увы, в особняке Lilaya сейчас нет свободных гостевых комнат, где можно было бы поселить квартиранта, поэтому, не видя смысла изучать список имен, ты [pc.step] назад и готовишься продолжить свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -152,17 +153,19 @@
 	<htmlContent tag="CITY_HALL_WAITING_AREA_LODGER_AVAILABLE"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_cityHallLodgerBoardSeen))
 		<p>
-			Shuddering at the thought of being at the mercy of Dominion's bureaucracy, you turn your attention towards the small, free-standing notice board that's positioned on one side of the waiting room. Curious to see if there's anything to be discovered from reading the many notes pinned to it, you quickly head over to this notice board and start reading.
+			Вздрогнув от мысли о том, что тебе придется зависеть от бюрократии Dominion, ты переводишь взгляд на небольшую отдельно стоящую доску объявлений, расположенную сбоку от зала ожидания. Из любопытства желая узнать, нет ли там чего интересного среди множества приколотых записок, ты быстро подходишь к доске и начинаешь читать.
 		</p>
 		<p>
-			It soon becomes apparent that the only item which holds any interest to you is the piece of paper titled 'Lodgers Seeking Rooms To Rent'. You wonder whether you should take some time to read over the list of names of people looking for lodgings, or simply [pc.step] back and continue on your way...
+		
+Вскоре становится ясно, что единственный предмет, представляющий для тебя интерес, — это листок с заголовком «Жильцы, ищущие комнаты в аренду». Ты раздумываешь, стоит ли уделить время чтению списка людей, ищущих жилье, или же просто [pc.step] назад и продолжить свой путь...
 		</p>
 	#ELSE
 		<p>
-			Shuddering at the thought of being at the mercy of Dominion's bureaucracy, you turn away and prepare to leave, but as you do so, you spot a small, free-standing notice board positioned on one side of the waiting room. Curious to see if there's anything to be discovered from reading the many notes pinned to it, you quickly head over to the notice board and start reading.
+			Дрожа от одной мысли о том, что ты окажешься во власти бюрократии Dominion, ты отворачиваешься, собираясь уходить. Но в этот момент твой взгляд падает на небольшую отдельно стоящую доску объявлений в углу зала ожидания. Из любопытства, желая узнать, нет ли там чего интересного среди множества приколотых записок, ты быстро подходишь к ней и начинаешь читать.
 		</p>
 		<p>
-			Unfortunately, the vast majority of the posters and proclamations pinned to the board are either advertising some frivolous product or making a common-sense public service announcement. There is, however, one piece of paper which attracts your attention, as it's titled 'Lodgers Seeking Rooms To Rent'. You wonder whether you should take some time to read over the list of names of people looking for lodgings, or simply [pc.step] back and continue on your way...
+		
+К сожалению, подавляющее большинство объявлений и прокламаций, приколотых к доске, — это либо реклама какого-нибудь пустякового товара, либо банальные общественные извещения. Однако твое внимание привлекает один листок с заголовком «Жильцы, ищущие комнаты в аренду». Ты раздумываешь, стоит ли уделить время чтению списка людей, ищущих жилье, или же просто [pc.step] назад и продолжить свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -173,7 +176,7 @@
 	
 	<htmlContent tag="CITY_HALL_WAITING_AREA_LODGER_LIST"><![CDATA[
 	<p>
-		Thinking that it would be fun to have someone staying in one of the guest rooms which you've had prepared, you take a closer look at the piece of paper titled 'Lodgers Seeking Rooms To Rent' and spend some time reading through the list of names...
+		Подумав, что будет весело поселить кого-нибудь в одной из подготовленных тобой гостевых комнат, ты внимательнее присматриваешься к листку бумаги с заголовком «Жильцы, ищущие комнаты в аренду», и неспешно изучаешь список имен...
 	</p>
 	]]>
 	</htmlContent>
@@ -183,10 +186,10 @@
 	
 	<htmlContent tag="LODGER_IMPORT_START"><![CDATA[
 	<p>
-		You can import any of your previously exported characters in order to add them to the lodger list. Once imported, this character will show up in this area, and by interacting with them you can add them as a friendly occupant.
+		Ты можешь импортировать любых своих ранее экспортированных персонажей, чтобы добавить их в список жильцов. После импорта этот персонаж появится здесь, и, взаимодействуя с ним, ты сможешь сделать его дружелюбным жильцом.
 	</p>
 	<p>
-		<i>You can export any character in the game by viewing their character sheet and pressing the little export button in the bottom-right of the screen.</i>
+		<i>Ты можешь экспортировать любого персонажа игры, открыв его лист персонажа и нажав на маленькую кнопку экспорта в правом нижнем углу экрана.</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -196,32 +199,32 @@
 	
 	<htmlContent tag="CITY_HALL_APPROACH_LODGER"><![CDATA[
 	<p>
-		Liking the sound of '[npc.name]', you look around the waiting room to see if you can find anyone matching [npc.her] description. Sure enough, after a brief [pc.walk] around the many low-backed sofas which litter the waiting room, you see [npc.a_race] sitting beside a small suitcase which undoubtedly contains [npc.her] possessions.
+		Заинтересовавшись «[npc.name]», ты оглядываешь зал ожидания, пытаясь найти кого-то, кто подходит под описание [npc.her]. И действительно, после недолгого [pc.walk] среди множества низких диванов, разбросанных по залу, ты замечаешь [npc.a_race], сидящую рядом с маленьким чемоданом, в котором, без сомнения, лежат [npc.her] вещи.
 	</p>
 	<p>
-		[pc.Walking] up to this [npc.race], you ask [npc.her] if [npc.sheIs] the same [npc.name] who's put [npc.her] name down on the list of lodgers looking for rooms to rent.
+		[pc.Walking] к этому [npc.race], ты спрашиваешь [npc.her], не является ли [npc.sheIs] той самой [npc.name], что вписала [npc.her] имя в список жильцов, ищущих комнаты в аренду.
 		#IF(npc.isShy())
-			 Shyly averting [npc.her] [npc.eyes+] and looking down at the floor,
+			 Застенчиво отводя [npc.her] [npc.eyes+] и глядя в пол,
 		#ELSEIF(npc.isConfident())
-			 Confidently standing up and fixing [npc.her] [npc.eyes+] upon your face,
+			 Уверенно выпрямляясь и устремляя [npc.her] [npc.eyes+] на твое лицо,
 		#ELSE
-			 Looking up at you with [npc.her] [npc.eyes+],
+			 Глядя на тебя с [npc.her] [npc.eyes+],
 		#ENDIF
 		#IF(npc.isMute())
-			 the [npc.name] reveals the fact that [npc.sheIs] mute by simply nodding [npc.her] head up and down as a means of conveying a positive response.
+			 [npc.name] обнаруживает, что [npc.sheIs] немой, просто кивая [npc.her] головой вверх-вниз, чтобы дать утвердительный ответ.
 		#ELSE
-			  the [npc.name] replies,
+			  [npc.name] отвечает,
 			#IF(npc.isSelfish())
-				 [npc.speech(Yes, that's me. You've got a room for me, right? I deserve it more than anyone else.)]
+				 [npc.speech(Да, это я. У вас ведь найдется для меня комната? Я заслуживаю её больше, чем кто-либо другой.)]
 			#ELSEIF(npc.isKind())
-				 [npc.speech(Yes, that's me. You've got a room for me? If someone needs it more than me then you can give it to them, but if not, then I'd really appreciate having a place to stay.)]
+				 [npc.speech(Да, это я. У вас найдется для меня комната? Если она нужнее кому-то другому, можете отдать её, но если нет, я буду очень признательна за место для ночлега.)]
 			#ELSE
-				 [npc.speech(Yes, that's me. You've got a room for me?)]
+				 [npc.speech(Да, это я. У вас найдется для меня комната?)]
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
-		Taking hold of [npc.her] suitcase, [npc.name] seems ready to leave, and so you need to quickly decide whether or not you really do want to offer [npc.herHim] a room in which to stay...
+		Схватив [npc.her] чемодан, [npc.name], кажется, готова отправиться в путь, так что тебе нужно поскорее решить, действительно ли ты хочешь предложить [npc.herHim] комнату...
 	</p>
 	]]>
 	</htmlContent>
@@ -231,15 +234,15 @@
 	
 	<htmlContent tag="LODGER_DENIED"><![CDATA[
 	<p>
-		Not liking your first impression of [npc.name], you tell [npc.herHim] that you've changed your mind and don't have a room to offer [npc.herHim] after all. Letting out a weary sigh, the [npc.race] picks up [npc.her] suitcase and
+		Первое впечатление об [npc.name] тебе не понравилось, и ты говоришь [npc.herHim], что передумал(а) и комнаты для [npc.herHim] всё-таки нет. Тяжело вздохнув, [npc.race] подхватывает [npc.her] чемодан и
 		#IF(npc.isMute())
-			 silently heads for the exit.
+			 молча направляется к выходу.
 		#ELSE
-			 heads for the exit, muttering, [npc.speech(I'll have better luck elsewhere in the Realm...)]
+			 направляется к выходу, бормоча: [npc.speech(В других уголках Королевства мне повезет больше...)]
 		#ENDIF
 	</p>
 	<p>
-		With [npc.name] having swiftly departed, you're left standing in the waiting room wondering what to do next...
+		Поскольку [npc.name] быстро ушла, ты остаешься стоять в приемной, раздумывая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -249,11 +252,11 @@
 	
 	<htmlContent tag="LODGER_GIVEN_ROOM"><![CDATA[
 	<p>
-		Responding to [npc.namePos] question by confirming that you are indeed here to offer [npc.herHim] a room, you ask the [npc.race] if [npc.sheIs] ready to leave this place straight away.
+		Отвечая на вопрос [npc.namePos] и подтверждая, что ты действительно здесь, чтобы предложить [npc.herHim] комнату, ты спрашиваешь [npc.race], готова ли [npc.sheIs] отправиться в путь прямо сейчас.
 	</p>
 	#IF(npc.isMute())
 		<p>
-			As [npc.sheIs] unable to talk, [npc.name] responds once again by nodding [npc.her] head, before taking hold of [npc.her] suitcase and accompanying you out of city hall and down the street. As the two of you travel beside one another, [npc.name] seems to be getting more excited about [npc.her] future, and by the time that you've arrived at Lilaya's mansion, the previous worn-out look on [npc.her] face has been replaced by an expression of wide-eyed wonder.
+			Поскольку [npc.sheIs] не может говорить, [npc.name] снова отвечает кивком [npc.her] головы, после чего берет [npc.her] чемодан и сопровождает тебя из ратуши вниз по улице. Пока вы идете плечом к плечу, [npc.name] кажется всё более воодушевленной своим [npc.her] будущим, и к тому времени, как вы прибываете к особняку Lilaya, прежнее изможденное выражение [npc.her] лица сменяется взглядом, полным детского восторга.
 		</p>
 		<p>
 			Although [npc.she] can't talk, [npc.name] makes [npc.her] emotions known by giving you a look of utter disbelief as you head to the front door. After telling [npc.herHim] that this is where you live, the [npc.race] shakes [npc.her] head in wonder, before following you up the steps to the mansion's entrance.
@@ -263,25 +266,24 @@
 		</p>
 	#ELSE
 		<p>
-			[npc.speech(Yes,)] [npc.she] immediately replies, before sighing, [npc.speech(I've been waiting here for an opportunity like this for days...)]
+			[npc.speech(Да,)] — немедленно отвечает [npc.she], прежде чем вздохнуть: [npc.speech(Я ждала возможности вроде этой целыми днями...)]
 		</p>
 		<p>
-			Taking hold of [npc.her] suitcase, [npc.name] accompanies you out of city hall and down the street. As the two of you travel and talk with one another, [npc.name] starts to get more excited about [npc.her] future, and by the time that you've arrived at Lilaya's mansion, the previous worn-out look on [npc.her] face has been replaced by an expression of wide-eyed wonder.
+			Взяв [npc.her] чемодан, [npc.name] сопровождает тебя из ратуши и идет по улице. Пока вы идете и болтаете, [npc.name] начинает всё больше воодушевляться по поводу [npc.her] будущего, и к тому времени, как вы добираетесь до особняка Lilaya, изнуренное выражение лица [npc.her] сменяется восторгом в широко раскрытых глазах.
 		</p>
 		<p>
-			[npc.speech(You mean, you're offering me a place to stay in <i>there</i>?)] [npc.name] asks in disbelief as you head to the front door. After responding in the positive, the [npc.race] sighs, [npc.speech(Wow...)]
+			[npc.speech(Ты хочешь сказать, что предлагаешь мне пристанище в <i>там</i>?)] — недоверчиво спрашивает [npc.name], когда вы подходите к парадной двери. Получив утвердительный ответ, [npc.race] вздыхает: [npc.speech(Вау...)]
 		</p>
 		<p>
-			After Rose has opened the door, you accompany [npc.name] through the mansion and show [npc.herHim] to [npc.her] room. Putting [npc.her] suitcase down beside the bed, [npc.she] turns towards you and offers you [npc.her] sincere thanks, 
+			Когда Роуз открывает дверь, ты сопровождаешь [npc.name] по особняку и показываешь [npc.herHim] комнату для [npc.her]. Поставив [npc.her] чемодан рядом с кроватью, [npc.she] поворачивается к тебе и выражает [npc.her] искреннюю благодарность.
 			#IF(npc.hasJob())
-				 [npc.speech(Thank you so much for offering me this place to stay. I've got a pretty steady job, so paying rent won't be an issue. Seriously, thank you.)]
+				 [npc.speech(Огромное спасибо, что предложил мне здесь остановиться. У меня довольно стабильная работа, так что с оплатой аренды проблем не будет. Серьезно, спасибо!)]
 			#ELSE
-				 [npc.speech(Thank you so much for offering me this place to stay. I don't have a job right now, but I'll be sure to find one soon, and then paying rent won't be an issue. Seriously, thank you.)]
+				 [npc.speech(Огромное спасибо, что предложил мне здесь остановиться. Сейчас у меня нет работы, но я обязательно скоро что-нибудь найду, так что с оплатой аренды проблем не будет. Серьезно, спасибо!)]
 			#ENDIF
-		</p>
-		<p>
-			Telling [npc.name] that [npc.sheIs] very welcome, you tell [npc.herHim] to take [npc.her] time getting settled in, before [pc.stepping] out of [npc.her] room and giving [npc.herHim] some privacy in which to unpack. Feeling as though you've done a good thing, you wonder what to do next...
-		</p>
+		</p><p>
+Сказав [npc.name], что [npc.sheIs] здесь очень рады, ты предлагаешь [npc.herHim] не спешить с [npc.her] и спокойно обустроиться, после чего [pc.stepping] выходит из [npc.her], оставляя [npc.herHim] наедине с вещами, чтобы та могла спокойно распаковаться. Чувствуя, что совершил доброе дело, ты задумываешься, чем заняться теперь...
+</p>
 	#ENDIF
 	]]>
 	</htmlContent>
@@ -291,7 +293,7 @@
 	
 	<htmlContent tag="CITY_HALL_OFFICE"><![CDATA[
 	<p>
-		The door to the office before you is made from rich mahogany and frosted glass, with a brass plate fixed to the centre which reads: <i>'Private'</i>. Knowing that a private office such as this one would have nothing to offer you except for tedious, pointless government bureaucracy, you decide against taking a look inside, and instead turn around and prepare to continue on your way elsewhere...
+		Дверь в кабинет перед тобой сделана из дорогого красного дерева с матовыми стеклянными вставками, а в центре закреплена латунная табличка с надписью: <i>«Частный кабинет»</i>. Понимая, что такой кабинет не предложит тебе ничего, кроме нудной и бессмысленной государственной бюрократии, ты решаешь не заглядывать внутрь, а вместо этого разворачиваешься, готовясь продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -301,13 +303,13 @@
 	
 	<htmlContent tag="CITY_HALL_STAIRS"><![CDATA[
 	<p>
-		While the polished marble stairs before you offer access to the upper floors of city hall, you are unable to scale them, as a barrier of red rope bars your passage. A little sign hangs from this obstacle, which reads:
+		Перед тобой — лестница из полированного мрамора, ведущая на верхние этажи ратуши, но подняться по ней не удается, так как путь преграждает барьер из красного каната. На этом препятствии висит небольшая табличка, на которой написано:
 	</p>
 	<p style='text-align:center;'>
-		<i>'Public access prohibited!<br/>Admission only to visitors accompanied by a member of staff.'</i>
+		<i>«Вход свободным посетителям воспрещен!<br/>Допуск только для гостей в сопровождении сотрудников.»</i>
 	</p>
 	<p>
-		While there is obviously nothing really stopping you from simply stepping over this barrier and proceeding upstairs, you know that only the dull inner-workings of government bureaucracy would await you, and so, with that in mind, you decide not to waste your time and choose to head elsewhere...
+		Хотя, очевидно, ничто не мешает тебе просто перешагнуть через этот барьер и подняться наверх, ты понимаешь, что тебя ждут лишь скучные механизмы государственного аппарата. С учетом этого, ты решаешь не тратить время попусту и отправляешься в другое место...
 	</p>
 	]]>
 	</htmlContent>

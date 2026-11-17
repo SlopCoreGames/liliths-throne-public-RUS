@@ -5,13 +5,13 @@
 	
 	<htmlContent tag="ENCLOSURE_TELEPORT_PADS"><![CDATA[
 	<p>
-		Lying flat on the floor in this area of the enclosure is the teleportation pad which you and Claire arrived on. Lacking the specially-shaped essence cells which the pad requires in order to function, you and Claire are unable to use it to return to the Enforcer post in Submission.
+		Прямо на полу в этой части вольера лежит телепортационная платформа, на которой прибыли ты и Claire. Из-за отсутствия специальных эссенционных ячеек, необходимых для работы платформы, вы с Claire не можете использовать её, чтобы вернуться на пост Enforcer в Submission.
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_claireEnclosureEscaped))
-			There's really nothing more that can be done here; you're going to have to escape by sneaking through the warehouse.
+			Делать здесь больше решительно нечего; вам придётся выбираться отсюда, пробираясь через склад тайком.
 		#ELSE
-			[claire.speech(It's a shame that these things can't be powered directly by aura, or even by absorbing freed essences,)] Claire sighs as she tinkers with the control panel, [claire.speech(I really don't think I'm going to be able to get this working again...)]
+			[claire.speech(Жаль, что эти штуки нельзя запитать напрямую от ауры или хотя бы поглощая высвобожденную эссенцию,)] — вздыхает Claire, копаясь в панели управления, — [claire.speech(Не думаю, что мне удастся снова заставить её работать...)]
 		#ENDIF
 	</p>
 	]]>
@@ -22,73 +22,73 @@
 	
 	<htmlContent tag="ENCLOSURE_TELEPORT_PADS_INVESTIGATE"><![CDATA[
 	<p>
-		Doing as Claire asks, you kneel down and start looking over the side of the teleportation pad's base. Sure enough, after just a moment spent searching for it, you spot the round hatch which Claire is after, and draw her attention to it, [pc.speech(I think I've found that 'essence port' you're looking for.)]
+		Повинуясь просьбе Claire, ты опускаешься на колени и начинаешь заглядывать под основание телепортационной платформы. И действительно, спустя всего мгновение поисков ты замечаешь тот самый круглый люк, который искала Claire, и привлекаешь её внимание: [pc.speech(Кажется, я нашёл тот «порт для эссенции», который ты искала.)]
 	</p>
 	<p>
-		Rushing over to kneel down beside you, the short cat-girl lets out a deep sigh of relief, [claire.speech(Thank goodness! I always carry a couple of spare essence cells with me, so once I've inserted one, this pad should activate again and we can get out of here!)]
+		Подбежав и опустившись на колени рядом с тобой, невысокая кошкодевочка облегченно вздыхает: [claire.speech(Слава богу! Я всегда ношу с собой пару запасных эссенционных ячеек, так что как только я вставлю одну из них, платформа должна снова активироваться, и мы сможем выбраться отсюда!)]
 	</p>
 	<p>
-		Opening the round hatch, your Enforcer companion then reaches into a pocket on her armoured vest. Obviously finding it empty, she lets out a little huff, before checking the pocket beside it. Finding that one empty too, she starts frantically patting down and searching every pocket and pouch on her uniform. Finding each one as empty as the last, her breathing starts getting heavier and heavier, until finally she lets out a wail of despair. Allowing her hands to drop down onto her thick thighs, she sinks down onto her large, rounded ass and cries, [claire.speech(This can't be happening! We're going to be in so much trouble! I-I might even lose my job... Or even get arrested! What if they enslave us?! I don't want to be a sex slave! These SWORD guys aren't like regular Enforcers; they're trigger-happy maniacs! This is a disaster! What'll we do?!)]
+		Открыв круглый люк, твоя спутница Enforcer лезет в карман на своем бронежилете. Очевидно, обнаружив его пустым, она разочарованно фыркает и проверяет соседний карман. Тот тоже оказывается пуст, и тогда она начинает лихорадочно прощупывать каждый кармашек и каждый мешочек на своей униформе. Каждый из них оказывается таким же пустым, как и предыдущий, её дыхание становится всё более тяжелым и прерывистым, пока она, наконец, не издает отчаянный вопль. Опустив руки на свои мощные бедра, она тяжело опускается на свою крупную, округлую задницу и рыдает: [claire.speech(Этого не может быть! У нас будут огромные неприятности! Я... я могу даже потерять работу... или меня вообще арестуют! А вдруг нас поработят?! Я не хочу быть секс-рабыней! Эти парни из SWORD — не обычные Enforcer, они же просто безумцы, готовые палить во всё, что движется! Это катастрофа! Что же нам делать?!)]
 	</p>
 	<p>
-		Sensing that she's going to start hyper-ventilating if you don't take immediate action, you wonder what you should do to get Claire to calm down...
+		Чувствуя, что если ты не предпримешь немедленных действий, у Клэр начнется гипервентиляция, ты задаешься вопросом: что же сделать, чтобы успокоить её...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENCLOSURE_TELEPORT_PADS_PULL_TOGETHER"><![CDATA[
 	<p>
-		Seeking to remind Claire of her usual happy, confident self, you take hold of her shoulders and sternly state, [pc.speech(Pull yourself together, Claire! We're not going to get out of here by panicking and feeling sorry for ourselves!)]
+		Желая вернуть Клэр её привычное веселое и уверенное состояние, ты берешь её за плечи и строго произносишь: [pc.speech(Соберись, Клэр! Мы не выберемся отсюда, если будем паниковать и жалеть себя!)]
 	</p>
 	<p>
-		Taking a deep breath, the cat-girl allows a smile to return to her face, and, joining you in standing up, she says, [claire.speech(You're right. Thanks, [pc.name], I don't know what came over me. I'm sure there must be some way out of here, and maybe there aren't even any SWORD guards in here. We might be able to escape without any trouble at all.)]
+		Глубоко вздохнув, кошкодевочка снова улыбается и, поднимаясь вместе с тобой, произносит: [claire.speech(Ты прав. Спасибо, [pc.name], сама не знаю, что на меня нашло. Уверена, здесь должен быть выход, и, может, здесь даже нет стражников SWORD. Мы вполне можем сбежать без лишних хлопот.)]
 	</p>
 	<p>
-		[pc.speech(That's the spirit,)] you say, [pc.speech(and if worse comes to worst, we can always climb over these crates...)]
+		[pc.speech(Вот это настрой,)] — говоришь ты, — [pc.speech(и если дело примет совсем плохой оборот, мы всегда сможем перелезть через эти ящики...)]
 	</p>
 	<p>
-		Looking up at the towering stacks of crates all around you, you wonder if the short, top-heavy cat-girl would really be able to scale them, but before you have too much time to think about such a thing, she says, [claire.speech(I'll see if I can get this pad working somehow. Could you try to look for a gap in these crates or something?)]
+		Глядя на возвышающиеся вокруг тебя горы ящиков, ты задаешься вопросом, сможет ли эта невысокая, неуклюжая кошкодевочка действительно взобраться на них, но не успеваешь ты толком об этом подумать, как она говорит: [claire.speech(Попробую как-нибудь заставить эту платформу работать. А ты не мог бы поискать лазейку между ящиками или что-то в этом роде?)]
 	</p>
 	<p>
-		Replying in the affirmative, you leave Claire to tinker with the teleportation pad, before starting to take a closer look at the walls of crates surrounding you...
+		Подтвердив согласием, ты оставляешь Клэр возиться с телепортационной платформой и начинаешь внимательнее осматривать окружающие вас стены из ящиков...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENCLOSURE_TELEPORT_PADS_REASSURE"><![CDATA[
 	<p>
-		Seeking to calm Claire down by reassuring her that everything's ok, you place one [pc.hand] on her shoulder and say, [pc.speech(Come on, Claire! It's not that hopeless; I'm sure we can find a way out of here, or even get that pad working again!)]
+		Пытаясь успокоить Клэр и заверить её, что всё будет хорошо, ты кладешь одну [pc.hand] ей на плечо и говоришь: [pc.speech(Да ладно тебе, Клэр! Всё не так уж безнадежно; я уверен, мы найдем выход отсюда или даже заставим эту платформу снова работать!)]
 	</p>
 	<p>
-		Taking a deep breath, the cat-girl slowly allows a smile to return to her face, and, joining you in standing up, she says, [claire.speech(I guess... I mean, there's got to be a way out somewhere, and maybe there aren't even any SWORD guards in here. We might be able to escape without any trouble at all.)]
+		Глубоко вздохнув, кошкодевочка медленно позволяет улыбке вернуться на лицо и, поднимаясь вместе с тобой, произносит: [claire.speech(Наверное... то есть, где-то должен быть выход, и, может, здесь даже нет стражников SWORD. Мы вполне можем сбежать без всяких проблем.)]
 	</p>
 	<p>
-		[pc.speech(That's the spirit,)] you say, [pc.speech(and if worse comes to worst, we can always climb over these crates...)]
+		[pc.speech(Вот это настрой,)] — говоришь ты, — [pc.speech(и если дело примет совсем плохой оборот, мы всегда сможем перелезть через эти ящики...)]
 	</p>
 	<p>
-		Looking up at the towering stacks of crates all around you, you wonder if the short, top-heavy cat-girl would really be able to scale them, but before you have too much time to think about such a thing, she says, [claire.speech(I'll see if I can get this pad working somehow. Could you try to look for a gap in these crates or something?)]
+		Глядя на возвышающиеся вокруг тебя горы ящиков, ты задаешься вопросом, сможет ли эта невысокая, неуклюжая кошкодевочка действительно взобраться на них, но не успеваешь ты толком об этом подумать, как она говорит: [claire.speech(Попробую как-нибудь заставить эту платформу работать. А ты не мог бы поискать лазейку между ящиками или что-то в этом роде?)]
 	</p>
 	<p>
-		Replying in the affirmative, you leave Claire to tinker with the teleportation pad, before starting to take a closer look at the walls of crates surrounding you...
+		Подтвердив согласием, ты оставляешь Клэр возиться с телепортационной платформой и начинаешь внимательнее осматривать окружающие вас стены из ящиков...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENCLOSURE_TELEPORT_PADS_HUG"><![CDATA[
 	<p>
-		Seeking to calm Claire down, you shuffle a little closer to her and, wrapping your [pc.arms] around her, you pull her into a big hug.
+		Желая успокоить Клэр, ты придвигаешься к ней чуть ближе и, обхватив её своими [pc.arms], крепко прижимаешь к себе в объятиях.
 	</p>
 	<p>
-		[claire.speech(H-Hey, I'm not that far gone, there's no need to hug me or anything,)] she objects, but despite her words, you can tell from the soft tone of her voice that she's not really disliking the experience. Taking a deep breath, the cat-girl waits for you to release her and back off, before joining you in standing up and saying, [claire.speech(Thanks for the support, [pc.name], but I'm not really that fragile... A-Anyway, I suppose that there's got to be a way out of here somewhere, and maybe there aren't even any SWORD guards in here. We might be able to escape without any trouble at all.)]
+		[claire.speech(Э-эй, я не настолько уж в отчаянии, не нужно меня обнимать или типа того,)] — протестует она, но, несмотря на слова, по мягкому тону её голоса ты понимаешь, что на самом деле ей это даже нравится. Глубоко вздохнув, кошкодевочка ждет, когда ты отпустишь её и отстранишься, после чего поднимается вместе с тобой и говорит: [claire.speech(Спасибо за поддержку, [pc.name], но я не такая уж и хрупкая... В-в любом случае, полагаю, где-то здесь должен быть выход, и, может, здесь даже нет стражников SWORD. Мы вполне можем сбежать без всяких проблем.)]
 	</p>
 	<p>
-		[pc.speech(Well, if worse comes to worst, we can always climb over these crates,)] you suggest.
+		[pc.speech(Ну, если станет совсем худо, мы всегда сможем перелезть через эти ящики,)] — предлагаешь ты.
 	</p>
 	<p>
-		Looking up at the towering stacks of crates all around you, you wonder if the short, top-heavy cat-girl would really be able to scale them, but before you have too much time to think about such a thing, she says, [claire.speech(I'll see if I can get this pad working somehow. Could you try to look for a gap in these crates or something?)]
+		Глядя на возвышающиеся вокруг тебя горы ящиков, ты задаешься вопросом, сможет ли эта невысокая, неуклюжая кошкодевочка действительно взобраться на них, но не успеваешь ты толком об этом подумать, как она говорит: [claire.speech(Попробую как-нибудь заставить эту платформу работать. А ты не мог бы поискать лазейку между ящиками или что-то в этом роде?)]
 	</p>
 	<p>
-		Replying in the affirmative, you leave Claire to tinker with the teleportation pad, before starting to take a closer look at the walls of crates surrounding you...
+		Подтвердив согласием, ты оставляешь Клэр возиться с телепортационной платформой и начинаешь внимательнее осматривать окружающие вас стены из ящиков...
 	</p>
 	]]>
 	</htmlContent>
@@ -98,13 +98,13 @@
 	
 	<htmlContent tag="ENCLOSURE"><![CDATA[
 	<p>
-		Towering stacks of wooden crates surround you on all four sides, forming what is sure to present an all-but-impassable barrier to your top-heavy cat-girl companion. A closer look at these containers reveals that each one has been stamped both with a serial number and with the words <i>'SWORD: Special Weapons and Operations Response Department'</i>.
+		Тебя со всех четырех сторон окружают возвышающиеся штабеля деревянных ящиков, образующие почти непреодолимую преграду для твоей неуклюжей кошкодевочки. При ближайшем рассмотрении оказывается, что на каждом контейнере выбит серийный номер и надпись <i>'SWORD: Департамент специального вооружения и оперативного реагирования'</i>.
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_claireEnclosureEscaped))
-			You can't see any gap at all in the stacks of crates in this area. It seems as though the only way in or out of this small enclosure is via the passage you opened up by moving those shelves...
+			В этой области среди штабелей ящиков совсем не видно проходов. Похоже, единственный способ попасть внутрь этого тесного закутка или выбраться из него — через проход, который ты открыла, отодвинув те стеллажи...
 		#ELSE
-			You can't see any gap at all in the stacks of crates in this area, but surely there must be a way out somewhere nearby...
+			В этой области среди штабелей ящиков совсем не видно проходов, но где-то поблизости наверняка должен быть выход...
 		#ENDIF
 	</p>
 	]]>
@@ -115,18 +115,18 @@
 	
 	<htmlContent tag="ENCLOSURE_SHELVING"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_claireEnclosureEscaped))
-		<p>
-			By pulling the wheeled shelving units back into the crate-encircled enclosure, you've managed to open up a path linking it to the warehouse proper. Although it was in this location where you were fortunate enough to find a fabled spell book containing the secrets of teleportation, these shelves really don't seem to contain anything else of value.
+			<p>
+			Отодвинув на колесиках передвижные стеллажи обратно в окруженное ящиками пространство, ты сумела открыть путь, соединяющий его с основным складом. Хотя именно здесь тебе посчастливилось найти легендарную книгу заклинаний, хранящую секреты телепортации, кажется, что на этих полках больше нет ничего ценного.
 		</p>
 		<p>
-			[claire.speech(Come on, we've got to get out of here!)] Claire hisses, motioning with one hand for you to come and join her as she waits for you by the opening in the wall of crates.
+			[claire.speech(Давай же, нам нужно убираться отсюда!)] — шипит Клэр, маня тебя рукой, чтобы ты подошла к ней, пока она ждет у проема в стене из ящиков.
 		</p>
 	#ELSE
 		<p>
-			Although not visible from where you initially teleported in due to the angle at which you were viewing it, there's a ceiling-high gap in the crates in this particular corner of the enclosure. Unfortunately, someone seems to have pushed several wheeled shelving units into this breach, effectively blocking off your current location from the rest of the warehouse.
+			Хотя из места, куда ты телепортировалась изначально, из-за угла обзора этого не было видно, в этом конкретном углу загороженного пространства в ящиках есть проход в рост человека. К сожалению, кто-то задвинул в этот разрыв несколько передвижных стеллажей, фактически отрезав твое нынешнее местоположение от остального склада.
 		</p>
 		<p>
-			If you were to pull these shelves out, you could probably open up a way to escape...
+			Если отодвинуть эти стеллажи, то, вероятно, можно будет найти путь к спасению...
 		</p>
 	#ENDIF
 	]]>
@@ -137,68 +137,68 @@
 	
 	<htmlContent tag="ENCLOSURE_SHELVING_MOVE"><![CDATA[
 	<p>
-		With only these wheeled shelving units blocking what looks to be the way out, you step over towards the nearest one, and, grabbing it by the end, start to pull it out.
-		#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)<5)
-				Despite it having wheels, you're so weak that you're completely unable to move it. Thankfully, having seen what it is you're doing, Claire quickly walks over to give you a helping hand.
+		Поскольку единственный путь наружу преграждают лишь эти передвижные стеллажи, ты шагаешь к ближайшему, хватаешься за край и начинаешь тянуть его на себя.
+			#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)<5)
+				Несмотря на то, что у него есть колеса, ты настолько слаб, что совершенно не можешь его сдвинуть. К счастью, увидев твои старания, Клэр быстро подходит, чтобы помочь тебе.
 			</p>
 			<p>
-				[claire.speech(That pad's definitely not going to work without the proper essence cell,)] she says, grabbing the end of the shelf, [claire.speech(So this is the way out? These things are heavier than they look I guess? Or not...)]
+				[claire.speech(Без подходящей ячейки с эссенцией эта панель точно не заработает,)] — говорит она, хватаясь за край стеллажа, — [claire.speech(Так это выход? Похоже, эти штуки тяжелее, чем кажутся? Или нет...)]
 			</p>
 			<p>
-				With absolute ease, the cat-girl gets the shelf moving, and in just a few moments she's wheeled it fully back into the enclosure, thereby opening a path from your current location into the rest of the warehouse. It not being her intention to show you up like that, she says, [claire.speech(Hey, don't worry about not being able to move it; it was pretty heavy, and I'm stronger than I look!)]
+				С абсолютной легкостью кошкодевочка сдвигает стеллаж, и всего через несколько мгновений она полностью завоздит его обратно в проем, открывая путь из твоего нынешнего местоположения в остальную часть склада. Не желая тебя унижать, она говорит: [claire.speech(Эй, не переживай, что не смог его сдвинуть; он был довольно тяжелым, а я сильнее, чем кажусь!)]
 		#ELSE
-				Although you're able to get it moving with absolute ease, the front set of wheels suddenly catch on the side of a crate, and the whole shelving unit comes to a shuddering halt. Having seen what it is you're doing, Claire quickly walks over to give you a helping hand.
+				Хотя тебе удается сдвинуть его с места без особых усилий, передние колеса внезапно цепляются за край ящика, и весь стеллаж с содроганием замирает. Увидев, что ты пытаешься сделать, Клэр быстро подходит, чтобы помочь тебе.
 			</p>
 			<p>
-				[claire.speech(That pad's definitely not going to work without the proper essence cell,)] she says, walking past you to bend down and free the shelf's wheels, before continuing, [claire.speech(So this is the way out? Let's get moving then!)]
+				[claire.speech(Без подходящей ячейки с эссенцией эта панель точно не заработает,)] — говорит она, проходя мимо тебя, чтобы наклониться и освободить колеса стеллажа, а затем продолжает: [claire.speech(Так это выход? Тогда погнали!)]
 			</p>
 			<p>
-				Agreeing with the once-again happy cat-girl, you wheel the shelving unit fully back into the enclosure, thereby opening a path from your current location into the rest of the warehouse.
+				Согласившись с вновь сияющей кошкодевочкой, ты полностью завозишь стеллаж обратно в проем, открывая путь из твоего нынешнего местоположения в остальную часть склада.
 		#ENDIF
 	</p>
 	<p>
-		Along with the other two still sitting in the gap, this shelving unit looks to be full of nothing more than dusty old accounting books. As you and Claire start to move through the opening you've just created, however, you see a book lying on the floor which is very unlike all these others. Instantly recognising it as a spell book, you bend down to pick it up, and feel your eyes widening in surprise as you see that it contains detailed instructions on how to cast the very spell which got you into this whole mess; 'teleport'.
+		Наряду с двумя другими стеллажами, застрявшими в проёме, этот кажется забитым лишь пыльными старыми бухгалтерскими книгами. Однако, когда ты и Клэр начинаете пробираться сквозь только что созданный вами проход, ты замечаешь на полу книгу, которая совсем не похожа на остальные. Мгновенно узнав в ней книгу заклинаний, ты наклоняешься, чтобы поднять её, и твои глаза расширяются от удивления: внутри содержатся подробные инструкции о том, как сотворить то самое заклинание, из-за которого ты попал в эту передрягу — «телепортация».
 	</p>
 	<p>
-		[claire.speech(Hey, what's that you've found? It must have fallen out of the shelf as it was moving,)] Claire says, stepping up beside you. As she sees what it is, the tone of her voice instantly changes from one of curiosity to one of alarm, and she hisses, [claire.speech(A teleport spell book?! Y-You can't take that! What are you doing?! That's a forbidden spell; only lilin or the highest-ranking Enforcers are allowed those!)]
+		[claire.speech(Эй, что это ты нашёл? Наверное, выпало с полки, когда она двигалась,)] — говорит Клэр, подходя к тебе. Когда она видит, что это такое, тон её голоса мгновенно меняется с любопытства на тревогу, и она шипит: [claire.speech(Книга заклинаний телепортации?! Т-ты не можешь её взять! Что ты творишь?! Это запретное заклинание; им дозволено владеть только лилин или высокопоставленные Enforcer!)]
 	</p>
 	<p>
-		[pc.speech(But if I can quickly learn it, maybe I'd be able to teleport back to your Enforcer post and pick up one of those essence cells, and then come back to save you,)] you suggest.
+		[pc.speech(Но если я смогу быстро его выучить, то, возможно, сумею телепортироваться обратно на твой пост Enforcer, схватить одну из ячеек с эссенцией, а затем вернуться и спасти тебя,)] — предлагаешь ты.
 	</p>
 	<p>
-		Torn between her duty as an Enforcer and the prospect of escaping this whole mess the two of you are in, the little cat-girl paces back and forth for a moment before turning towards you and letting out a defeated sigh. Placing her hands on her wide hips, she pouts at you as she says, [claire.speech(Fine... Just don't you <i>ever</i> tell <i>anyone</i> that I allowed you to do this... A-And anyway, you haven't broken the law until you attempt to learn that spell, so if I don't see you doing it, then I'm not responsible for having to arrest you!)]
+		Разрываясь между долгом Enforcer и желанием сбежать из всей этой заварухи, в которой вы оказались, маленькая кошкодевочка какое-то время мечется взад-вперед, прежде чем повернуться к тебе и издавая обреченный вздох. Упершив руки в широкие бедра, она надувает губы и говорит: [claire.speech(Ладно... Только ты <i>никогда</i> не говори <i>кому-либо</i>, что я позволила тебе это... И-и вообще, ты еще не нарушил закон, пока не попытаешься выучить это заклинание, так что если я не увижу, как ты это делаешь, то и арестовывать тебя — не моя забота!)]
 	</p>
 	<p>
-		Having found a solution to her moral dilemma, Claire turns her back on you, before hissing over her shoulder for you to hurry up. Not wanting to point out the flaws in Claire's logic, you turn your attention back to the book still in your hands...
+		Найдя решение своей моральной дилеммы, Клэр поворачивается к тебе спиной, а затем шипит через плечо, чтобы ты поторапливался. Не желая указывать на изъяны в логике Клэр, ты переключаешь внимание на книгу, всё еще лежащую в твоих руках...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENCLOSURE_SHELVING_DRAG_TELEPORT_LEARNED_START"><![CDATA[
 	<p>
-		With the possibility of a SWORD guard discovering this enclosure, you skim through the spellbook as quickly as possible...
+		Поскольку стражники SWORD могут обнаружить это помещение, ты как можно быстрее пролистываешь книгу заклинаний...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENCLOSURE_SHELVING_DRAG_TELEPORT_LEARNED_END"><![CDATA[
 	<p>
-		Thanks to your natural affinity with the arcane, you're able to learn how to cast teleport very quickly, and once you feel confident enough to try it out, you tap Claire on the shoulder and let her know that you're ready.
+		Благодаря твоей природной склонности к аркане, тебе удается очень быстро научиться телепортации, и, почувствовав уверенность, чтобы опробовать её, ты касаешься плеча Клэр, давая ей понять, что ты готов.
 	</p>
 	<p>
-		[claire.speech(Ok, so just teleport back to the room we came from, and then go back into the adjoining office,)] Claire instructs, [claire.speech(Lucy should be on duty now, and she owes me a huge favour, so just ask her for a couple of essence cells, and say that this is in return for when I helped her with the 'alligator incident'.)]
+		[claire.speech(Так, просто телепортируйся обратно в комнату, из которой мы пришли, а затем зайди в соседний кабинет,)] — инструктирует Клэр, — [claire.speech(Люси сейчас должна быть на дежурстве, и она будет мне очень должна, так что просто попроси у неё пару ячеек эссенции и скажи, что это в благодарность за то, как я помогла ей с «инцидентом с аллигатором».)]
 	</p>
 	<p>
-		[pc.speech(Ok, here I go,)] you say. Following the book's instructions, you visualise the room back in Submission's Enforcer post, before casting the teleport spell. A flash of purple light instantly surrounds you, but instead of being instantaneously transported to your destination, you feel yourself being pulled back by some strange, powerful force. As the light fades, you discover that you're still standing in exactly the same place as you were a moment ago.
+		[pc.speech(Ну, погнали,)] — говоришь ты. Следуя инструкциям из книги, ты визуализируешь комнату в прежнем положении Submission, прежде чем сотворить заклинание телепортации. Вспышка фиолетового света мгновенно окружает тебя, но вместо того, чтобы сразу оказаться в пункте назначения, ты чувствуешь, как какая-то странная, мощная сила тянет тебя назад. Когда свет гаснет, ты обнаруживаешь, что стоишь ровно на том же самом месте, где и мгновение назад.
 	</p>
 	<p>
-		[claire.speech(I should have known there'd be a teleport inhibition device in here...)] Claire sighs as she sees that your spell failed. Bringing her palm up to her forehead, she whines in frustration, [claire.speech(Now not only are we in serious trouble for the unauthorised teleport and trespassing in a SWORD installation, but I've also gone and let you learn a forbidden spell for no reason!)]
+		[claire.speech(Нужно было догадаться, что здесь стоит подавитель телепортации...)] — вздыхает Claire, видя, что твое заклинание провалилось. Прижав ладонь ко лбу, она разочарованно стонет: [claire.speech(Теперь мы не только в серьезной беде из-за несанкционированного телепорта и вторжения на объект SWORD, но я еще и зря заставила тебя выучить запретное заклинание!)]
 	</p>
 	<p>
-		[pc.speech(A teleport inhibition device? So that's what pulled me back?)] you ask, relieved to discover that it wasn't your fault that the teleport spell failed.
+		[pc.speech(Подавитель телепортации? Так вот что меня отбросило назад?)] — спрашиваешь ты, испытывая облегчение от того, что провал заклинания не был твоей виной.
 	</p>
 	<p>
-		[claire.speech(Yeah, it's not like there are many people who can teleport, but a lot of places still have them as a security precaution. I was hoping that they'd not have bothered to put one in this old warehouse,)] Claire replies, before shaking her head free of negative thoughts and continuing, [claire.speech(Anyway, it looks like we'll just have to get out of here the old fashioned way. I'll follow you, so lead on. Oh, and watch out for SWORD guards...)]
+		[claire.speech(Ага, не то чтобы телепортироваться умеют многие, но во многих местах их ставят для безопасности. Я надеялась, что в этом старом складе на них не поскупились,)] — отвечает Claire, после чего встряхивает головой, отгоняя мрачные мысли, и продолжает: [claire.speech(В любом случае, похоже, нам придется выбираться отсюда по старинке. Я пойду за тобой, так что веди. О, и берегись стражников SWORD...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -208,18 +208,18 @@
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		The paths leading through the warehouse are flanked on both sides by towering stacks of wooden crates. In some areas they're at such a height that they're almost touching the bright arcane lights which hang down from the corrugated steel roof high overhead. As you pass them, you notice that every single one of these crates is stamped with a serial number and accompanying text, reading <i>'SWORD: Special Weapons and Operations Response Department'</i>.
+		Пути, ведущие через склад, с обеих сторон фланкированы возвышающимися штабелями деревянных ящиков. В некоторых местах они нагромождены так высоко, что почти касаются ярких огней Арканы, свисающих с гофрированной стальной крыши высоко над головой. Проходя мимо них, ты замечаешь, что на каждом ящике стоит серийный номер и сопроводительный текст: <i>'SWORD: Департамент специального вооружения и оперативного реагирования'</i>.
 	</p>
 	#IF(RND.nextInt(100)<15)
 		<p>
 			#IF(claire.getLust()>75)
 				[claire.speech(
-				[style.random(I'm so horny...|Can't think... So horny...|I'm so turned on right now...|You know, you're really hot...|I need a good, hard fuck...)]
-				)] Claire [style.random(moans|sighs)].
+				[style.random(Как же меня штырит...|Не могу соображать... Так хочется...|Меня так возбуждает прямо сейчас...|Знаешь, ты чертовски горяч...|Мне нужен хороший, жесткий трах...)]
+				)] Клэр [style.random(стонет|вздыхает)].
 			#ELSE
 				[claire.speech(
-				[style.random(This place is huge...|It's like a labyrinth in here...|I'm sure we'll be out of here soon...|Just watch out for those SWORD guards...|How long have we even been in here?)]
-				)] Claire [style.random(whispers|hisses)].
+				[style.random(Это место просто огромное...|Тут настоящий лабиринт...|Уверена, мы скоро выберемся...|Только смотри, чтобы не попались стражники SWORD...|Сколько мы тут уже бродим?)]
+				)] Клэр [style.random(шепчет|шипит)].
 			#ENDIF
 		</p>
 	#ENDIF
@@ -229,7 +229,7 @@
 	<htmlContent tag="CORRIDOR_ENTRANCE_WARNING"><![CDATA[
 	<p>
 		<i>
-		The area to your north looks like this warehouse's only exit. Although you can see that it's being guarded by no less than [style.colourBad(four SWORD Enforcers)], [style.colourMinorGood(you're confident that you can move closer without alerting them)].
+		Область к северу от тебя кажется единственным выходом со склада. Хотя ты видишь, что её охраняют не менее [style.colourBad(четыре Enforcer из SWORD)], [style.colourMinorGood(ты уверена, что сможешь подобраться ближе, не привлекая их внимания)].
 		</i>
 	</p>
 	]]>
@@ -240,22 +240,21 @@
 	
 	<htmlContent tag="CLAIRE_WARNING"><![CDATA[
 	<p>
-		Almost immediately as you start moving into the warehouse, you see that the path before you forks off to the left. Wanting to make sure that the way is clear, you slowly move up to the junction and carefully peek around the corner.
+		Почти сразу, как только ты начинаешь продвигаться вглубь склада, ты видишь, что путь перед тобой раздваивается налево. Желая убедиться, что дорога свободна, ты медленно подходишь к развилке и осторожно выглядываешь из-за угла.
 	</p>
 	<p>
-		Just like the rest of the warehouse that you've seen so far, the path which you find yourself looking down is flanked on both sides by towering stacks of wooden crates. What's different about the scene before you, however, is that there's [npc.a_race] Enforcer standing guard about [unit.lSize(2000)] away from you. Thankfully, [npc.sheIs] currently preoccupied with throwing darts into the side of a nearby crate, and hasn't noticed either you or Claire, who has snuck up behind you and joined you in peeking around the corner.
+		Как и во всей остальной части склада, которую ты уже успела увидеть, путь перед тобой зажат с обеих сторон возвышающимися стопками деревянных ящиков. Однако отличие этой сцены в том, что в [unit.lSize(2000)] от тебя стоит на страже [npc.a_race] Enforcer. К счастью, [npc.sheIs] сейчас увлеченно кидает дротики в бок стоящего неподалеку ящика и не заметил ни тебя, ни Клэр, которая незаметно подобралась к тебе со спины и теперь вместе с тобой выглядывает из-за угла.
 	</p>
 	<p>
-		[claire.speech(That's a member of SWORD, all right,)] the cat-girl whispers in your ear, [claire.speech(just look at all that gear [npc.sheIs] wearing...)]
+		[claire.speech(Это точно кто-то из SWORD,)] — шепчет тебе на ухо кошкодевочка, — [claire.speech(только взгляни на всё это снаряжение, что на [npc.sheIs] надето...)]
+	</p><p>
+		И действительно, когда ты снова бросаешь взгляд на [npc.race] Enforcer, ты замечаешь, что [npc.sheIs] не только одет в строгую военную форму, дополненную бронежилетом и шлемом, но и [npc.she] за спиной, на [npc.her] плече, висит что-то похожее на винтовку. Хотя в данный момент [npc.sheIs] не представляет угрозы, так как полностью поглощён попытками попасть в [npc.her] самодельный дартс, ты понимаешь, что [npc.she] станет крайне опасным противником, если тебе придётся вступить с [npc.herHim] в бой.
 	</p>
 	<p>
-		Sure enough, as you take another look at the [npc.race] Enforcer, you take note of the fact that [npc.sheIs] not only wearing a very militarised uniform, complete with armoured vest and helmet, but [npc.she] also has what looks to be a rifle of some sort slung over [npc.her] shoulder. Although [npc.sheIs] no threat at the moment, due to being concerned only with trying to score a bullseye on [npc.her] makeshift dartboard, you imagine that [npc.she]'d be a very dangerous opponent if you were to drawn into a fight with [npc.herHim].
+		[claire.speech(SWORD даже в лучшие времена славятся тем, что они — безумцы с легкой рукой на спусковом крючке,)] — шепчет Клэр, и в ее голосе слышится тревога, — [claire.speech(Мы никак не сможем проскользнуть мимо [npc.herHim], и [npc.she] наверняка просто пристрелит нас, если [npc.she] нас заметит. Пойдем, давай поищем другой путь...)]
 	</p>
 	<p>
-		[claire.speech(SWORD are known for being trigger-happy maniacs at the best of times,)] Claire whispers with a sense of urgency in her voice, [claire.speech(There's no way we can sneak past [npc.herHim], and [npc.she]'ll probably just shoot us if [npc.she] sees us. Come on, let's find another way around...)]
-	</p>
-	<p>
-		Realising that you'll end up having to fight the [npc.race] if you move any closer to [npc.herHim], you suppose that it would be the safer option to do as Claire suggests and find another route by which the two of you can escape... 
+		Понимая, что если ты подойдешь ближе к [npc.herHim], тебе неизбежно придется сразиться с [npc.race], ты решаешь, что будет безопаснее поступить так, как советует Клэр, и найти другой путь для вашего побега... 
 	</p>
 	]]>
 	</htmlContent>
@@ -265,29 +264,29 @@
 	
 	<htmlContent tag="START_CLAIRE_SEX"><![CDATA[
 	<p>
-		Thinking that Claire's overwhelming lust really needs to be dealt with, you turn to her and say, [pc.speech(It looks like there's a place to hide behind some of these crates...)]
+		Подумав, что с непреодолимой похотью Клэр нужно срочно что-то делать, ты поворачиваешься к ней и говоришь: [pc.speech(Похоже, за этими ящиками есть местечко, где можно спрятаться...)]
 	</p>
 	<p>
-		Immediately picking up on what it is you mean by that, the busty little cat-girl practically jumps with excitement as she rushes forwards and grabs you by the [pc.hand]. Pulling you over into the recess which you just mentioned, she turns towards you and squeals, [claire.speech(Yes! Please, I'm going to go crazy if I don't get some release soon!)]
+		Мгновенно уловив твой намек, пышногрудая кошкодевочка буквально подпрыгивает от восторга, бросается вперед и хватает тебя за [pc.hand]. Затащив тебя в упомянутую нишу, она поворачивается к тебе и визжит: [claire.speech(Да! Пожалуйста, я просто сойду с ума, если не получу разрядку прямо сейчас!)]
 	</p>
 	<p>
-		All too happy to help her with her problem, you step up to Claire and pull her into a deep, passionate kiss. Her huge, [claire.cupSize]-cup breasts press into your chest as the two of you thrust your tongues into each other's mouths, and, grabbing your hand, the horny cat-girl guides your [pc.fingers] down between her legs. As you start stroking her groin, she pulls back from the kiss and desperately pants, [claire.speech(Fuck... This is so naughty! Just think; we could be caught at any moment! Oh, fuck! This is turning me on so much!)]
+		С радостью решив помочь ей справиться с этой проблемой, ты подходишь к Клэр и вовлекаешь её в глубокий, страстный поцелуй. Её огромная грудь [claire.cupSize]-го размера прижимается к твоей груди, пока вы жадно исследуете языками рты друг друга; схватив твою руку, похотливая кошкодевочка направляет твой [pc.fingers] между своих ног. Как только ты начинаешь ласкать её пах, она отстраняется от поцелуя и отчаянно дышит: [claire.speech(Блядь... Это так неприлично! Только подумай — нас могут поймать в любую секунду! Ох, черт! Как же меня от этого штырит!)]
 	</p>
 	<p>
-		Claire's sudden passion seems to be more than just the result of being exposed to the arcane lightning globe, and you realise that this whole situation must have awoken a hidden desire for having risky sex deep within her. Leaning back against the crates in your little hiding spot, the busty cat-girl once again pulls you into her, before breathing heavily into your ear, [claire.speech(Come on, fuck me already!)]
+		Внезапная страсть Клэр, похоже, — не просто результат воздействия сферы аркана-молний; ты понимаешь, что вся эта ситуация пробудила в ней глубоко скрытую жажду рискованного секса. Откинувшись спиной на ящики в вашем маленьком укрытии, пышногрудая кошкодевочка снова притягивает тебя к себе и, тяжело дыша тебе в ухо, шепчет: [claire.speech(Давай же, трахни меня уже!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_CLAIRE_SEX"><![CDATA[
 	<p>
-		Claire leans heavily back against the crates, happily panting, [claire.speech(Fuck... I've never had sex quite like <i>that</i> before...)]
+		Клэр тяжело откидывается на ящики, счастливо и часто дыша: [claire.speech(Блядь... У меня еще никогда не было такого секса, как <i>вот так</i>...)]
 	</p>
 	<p>
-		Telling your partner that you enjoyed it as well, the two of you then set about getting your clothing back in order. Despite the fact that she should have got her lust back under control by now, Claire seems to be rather excited by the situation you're in, and she cheekily leans in to plant a kiss on your cheek, before saying, [claire.speech(Once we've escaped, we've got to do something like this again, ok? Perhaps when you visit me down in Submission, we could do it in an office, knowing that someone could walk in on us at any moment...)]
+		Сказав партнерше, что тебе тоже всё очень понравилось, вы оба принимаетесь приводить одежду в порядок. Несмотря на то, что к этому моменту она уже должна была обуздать свою похоть, Клэр, кажется, пребывает в полном восторге от происходящего; она игриво наклоняется, чтобы запечатлеть поцелуй на твоей щеке, и говорит: [claire.speech(Когда выберемся, нам нужно будет повторить нечто подобное, ладно? Может, когда ты навестишь меня в Submission, мы сделаем это прямо в кабинете, зная, что кто-то может войти в любой момент...)]
 	</p>
 	<p>
-		Realising that you've definitely awoken some kind of risky sex fetish in this cat-girl Enforcer, you tell her that there will be plenty of opportunities to play out her fantasies in the future, but for now, you need to focus on escaping from this place. Agreeing with your assessment, Claire falls in behind you once again as the two of you set off into the warehouse once more...
+		Понимая, что ты определенно пробудил в этой кошкодевочке-Enforcer фетиш на рискованный секс, ты говоришь ей, что в будущем будет полно возможностей воплотить её фантазии в жизнь, но сейчас нужно сосредоточиться на побеге. Соглашаясь с твоими словами, Клэр снова следует за тобой, и вы вдвоем отправляетесь вглубь склада...
 	</p>
 	]]>
 	</htmlContent>
@@ -297,13 +296,13 @@
 	
 	<htmlContent tag="ASK_CLAIRE_REPEAT_SEX"><![CDATA[
 	<p>
-		Wondering if Claire is still feeling turned-on by your current dangerous situation, you ask her if she'd like to go for another round behind some nearby crates.
+		Задаваясь вопросом, продолжает ли Клэр возбуждаться от вашей нынешней опасной ситуации, ты спрашиваешь её, не хочет ли она замахнуться на ещё один раунд за ближайшими ящиками.
 	</p>
 	<p>
-		Obviously excited by the thought of doing such a thing, she bites her lip and lets out a horny little whine, but, getting a hold of herself, she shakes her head and explains, [claire.speech(I'd love to, but if we spend too long in here, people are going to start to notice that I'm missing. After we've escaped from this place, you can always visit me down in Submission. We could do it in an office down there, knowing that someone could walk in on us at any moment...)]
+		Очевидно, заведенная одной лишь мыслью о таком, она прикусывает губу и издает томный, похотливый стон, но, взяв себя в руки, качает головой и объясняет: [claire.speech(Я бы с радостью, но если мы застрянем здесь слишком долго, люди заметят, что меня нет. Когда мы выберемся отсюда, ты всегда сможешь навестить меня в Submission. Мы могли бы заняться этим в одном из кабинетов, зная, что кто-то может войти в любую секунду...)]
 	</p>
 	<p>
-		Having to make do with her offer of more sex once the two of you have escaped from this place, you prepare to set off into the warehouse once again...
+		Вынужденный согласиться на её обещание секса после того, как вы оба выберетесь из этого места, ты готовишься снова отправиться вглубь склада...
 	</p>
 	]]>
 	</htmlContent>
@@ -313,34 +312,35 @@
 	
 	<htmlContent tag="CRATES"><![CDATA[
 	<p>
-		This particular section of the warehouse appears to have been marked as a temporary storage bay of sorts, and alongside several lift dollies, there are a half-dozen or so crates waiting to be carted off and stacked in their proper location. While all the other crates in this warehouse are firmly sealed shut, the wooden lids on these ones have only been loosely closed, which, if you wanted to, would enable you to search through them.
+		Эта часть склада, судя по всему, служит зоной временного хранения: рядом с несколькими погрузочными тележками стоят около полудюжины ящиков, ожидающих отправки на постоянное место. В то время как все остальные ящики на складе наглухо запечатаны, крышки этих деревянных коробов прикрыты лишь слегка, так что, если захочешь, ты вполне можешь заглянуть внутрь.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CRATE_SEARCHED"><![CDATA[
 	<p>
-		This particular section of the warehouse appears to have been marked as a temporary storage bay of sorts, and alongside several lift dollies, there are a half-dozen or so crates waiting to be carted off and stacked in their proper location. While all the other crates in this warehouse are firmly sealed shut, the wooden lids on these ones have only been loosely closed, which enabled you and Claire to search through them. Having already done this once already, there'd be no point in spending time searching though them for a second time.
+		Этот сектор склада, судя по всему, служит зоной временного хранения. Рядом с несколькими грузовыми тележками стоят около полудюжины ящиков, ожидающих отправки на постоянное место. В то время как остальные контейнеры на складе наглухо запечатаны, крышки этих деревянных ящиков прикрыты лишь слегка, что позволило тебе и Клэр заглянуть внутрь. Поскольку вы уже обыскивали их один раз, нет смысла тратить время на повторный осмотр.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CRATES_RECESS"><![CDATA[
 	<p>
-		The way some of the crates have been stacked up in this area has created a hidden recess in which you and Claire could hide...
+		Из-за того, как в этой зоне навалены ящики, здесь образовалась скрытая ниша, в которой ты и Клэр могли бы спрятаться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CRATES_SEARCH"><![CDATA[
 	<p>
-		Wondering what could be contained within the unsealed crates sitting before you, you step forwards and start searching through them. As you do so, Claire starts protesting, pointing out how she should be arresting you for what you're doing, but after you tell her that you might find something which could help the two of you escape from this warehouse, she reluctantly joins you in your search.
+		Задаваясь вопросом, что же может скрываться в этих небрежно закрытых ящиках, ты делаешь шаг вперед и начинаешь их обыскивать. Клэр тут же начинает протестовать, указывая на то, что за такие дела она должна тебя арестовать, но стоит тебе сказать, что там может найтись что-то полезное для вашего побега, как она неохотно присоединяется к поискам.
 	</p>
 	<p>
 		#IF(RND.nextInt(100)<50)
-			Unfortunately, most of the boxes turn out to contain nothing but stacks of mundane paperwork. In one of the last crates you check, however, you do find something worth taking, but you're not sure if it's going to be of any use in escaping from the warehouse...
-		#ELSE
-			Unfortunately, most of the boxes turn out to contain nothing but stacks of mundane paperwork. In one of the last crates which your cat-girl Enforcer companion checks, however, she does find something worth taking, but as she hands it over to you, you're not sure if it's going to be of any use in escaping from the warehouse...
+		
+Увы, большинство коробок оказываются забиты лишь стопками скучной бумажной волокиты. Однако в одном из последних ящиков тебе попадается нечто действительно стоящее, хотя ты и не уверен, поможет ли эта находка выбраться со склада...
+					#ELSE
+			К сожалению, большинство ящиков оказываются забиты лишь стопками скучной бумажной волокиты. Однако в одном из последних контейнеров, которые проверяет твоя спутница — кошкодевочка Enforcer, ей удается найти нечто стоящее. Но когда она протягивает находку тебе, ты не уверен, поможет ли она вам сбежать со склада...
 		#ENDIF
 	</p>
 	]]>
@@ -351,20 +351,20 @@
 	
 	<htmlContent tag="CRATES_ARK"><![CDATA[
 	<p>
-		This particular section of the warehouse appears to have been marked as a temporary storage bay of sorts, and alongside several lift dollies, there are a half-dozen or so crates waiting to be carted off and stacked in their proper location. One of these wooden crates has a corner broken off of it, revealing that it contains a curious golden ark. Pushing back the lid, you see that it's covered in locks and sealed with an immeasurably-powerful arcane spell. You get the feeling that an adventurous archaeologist would insist that it belongs in a museum...
+		Эта часть склада, судя по всему, служит зоной временного хранения: здесь стоят грузовые тележки и около полудюжины ящиков, ожидающих отправки на постоянное место. У одного из деревянных ящиков отломан угол, и внутри обнаруживается любопытный золотой ковчег. Отодвинув крышку, ты видишь, что он утыкан замками и скреплен невероятно мощным аркана-заклинанием. Кажется, какой-нибудь авантюрный археолог настоял бы на том, что этой вещи место в музее...
 	</p>
 	<p>
-		While all the other crates in this warehouse are firmly sealed shut, the wooden lids on these ones have only been loosely closed, which, if you wanted to, would enable you to search through them.
+		В то время как остальные ящики на складе наглухо запечатаны, крышки этих деревянных коробов прикрыты лишь слегка, так что, если захочешь, ты вполне можешь заглянуть внутрь.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CRATES_ARK_SEARCHED"><![CDATA[
 	<p>
-		This particular section of the warehouse appears to have been marked as a temporary storage bay of sorts, and alongside several lift dollies, there are a half-dozen or so crates waiting to be carted off and stacked in their proper location. One of these wooden crates has a corner broken off of it, revealing that it contains a curious golden ark. Pushing back the lid, you see that it's covered in locks and sealed with an immeasurably-powerful arcane spell. You get the feeling that an adventurous archaeologist would insist that it belongs in a museum...
+		Эта часть склада, судя по всему, служит зоной временного хранения: здесь стоят грузовые тележки и около полудюжины ящиков, ожидающих отправки на постоянное место. У одного из деревянных ящиков отломан угол, и внутри обнаруживается любопытный золотой ковчег. Отодвинув крышку, ты видишь, что он утыкан замками и скреплен невероятно мощным аркана-заклинанием. Кажется, какой-нибудь авантюрный археолог настоял бы на том, что этой вещи место в музее...
 	</p>
 	<p>
-		While all the other crates in this warehouse are firmly sealed shut, the wooden lids on these ones have only been loosely closed, which enabled you and Claire to search through them. Having already done this once already, there'd be no point in spending time searching though them for a second time.
+		В то время как все остальные ящики на этом складе наглухо запечатаны, крышки этих деревянных ящиков прикрыты лишь слегка, что позволило тебе и Клэр заглянуть внутрь. Вы уже обыскивали их один раз, так что тратить время на повторный осмотр нет никакого смысла.
 	</p>
 	]]>
 	</htmlContent>
@@ -374,17 +374,17 @@
 	
 	<htmlContent tag="CRATES_LUST_WEAPON"><![CDATA[
 	<p>
-		Solid red lines have been marked out on the floor of this particular part of the warehouse, and within the area which they encompass, you see that the words 'Restricted Area' have been spray-painted in regular intervals. Within this specially-designated zone, you see that there's a single wooden crate waiting to be collected and carted off some other part of the warehouse. On the side of this solitary container, you see that the words 'Top Secret' have been burned into the pale brown wood.
+		На полу этой части склада проведены четкие красные линии, а внутри обозначенной ими зоны через равные промежутки краской нанесены слова «Зона ограниченного доступа». В этой специальной зоне ты видишь единственный деревянный ящик, ожидающий погрузки и отправки в другую часть склада. На боку этого одинокого контейнера на бледной древесине выжжены слова «Совершенно секретно».
 	</p>
 	<p>
-		Although Claire would probably object, there's nothing really stopping you from walking up to this curious crate and taking a look inside. Perhaps it contains some sort of powerful artefact which would help the two of you to escape?
+		Хотя Клэр, скорее всего, будет против, ничто не мешает тебе подойти к этому любопытному ящику и заглянуть внутрь. Может, в нем спрятан какой-нибудь мощный артефакт, который поможет вам двоим сбежать?
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CRATES_LUST_WEAPON_SEARCHED"><![CDATA[
 	<p>
-		Solid red lines have been marked out on the floor of this particular part of the warehouse, and within the area which they encompass, you see that the words 'Restricted Area' have been spray-painted in regular intervals. The crate marked as 'Top Secret', which contained the arcane lightning globe, is sitting in the middle of this forbidden zone, and as you were careful to leave it exactly as you found it, you don't think that whoever carts it off into storage will discover that its contents are missing...
+		На полу этой части склада проведены четкие красные линии, а внутри обозначенной ими зоны через равные промежутки краской нанесены слова «Зона ограниченного доступа». Ящик с пометкой «Совершенно секретно», в котором лежал шар арканальной молнии, стоит прямо посреди этой запретной зоны. Поскольку ты постарался оставить всё в точности так, как нашел, вряд ли тот, кто утащит его на склад, заметит пропажу содержимого...
 	</p>
 	]]>
 	</htmlContent>
@@ -394,40 +394,39 @@
 	
 	<htmlContent tag="CRATES_LUST_WEAPON_SEARCH"><![CDATA[
 	<p>
-		There's no way that you're not going to take the opportunity to search through a 'Top Secret' crate locked away in a guarded warehouse like this. Stepping forwards over the solid red line that's painted on the floor, you enter the 'Restricted Area' and head directly over to this curious container.
+		Ты просто не можешь упустить шанс обыскать ящик с пометкой «Совершенно секретно», спрятанный на таком охраняемом складе. Переступив через жирную красную линию на полу, ты входишь в «Зону ограниченного доступа» и направляешься прямиком к этому любопытному контейнеру.
 	</p>
 	<p>
-		[claire.speech(What are you doing?)] Claire hisses, before puffing up her chest, placing her hands on her hips, and continuing to scold you, [claire.speech(Can't you read?! That's a restricted area!)]
+		[claire.speech(Ты что творишь?!)] — шипит Клэр, после чего выпячивает грудь, упирает руки в бока и продолжает тебя отчитывать: [claire.speech(Ты читать-то умеешь?! Это же закрытая зона!)]
+	</p>
+	<p>		Предвидя такую реакцию, ты поворачиваешься к надувшейся кошкодевочке и объясняешь: [pc.speech(Там может быть что-то, что поможет нам выбраться. Ты ведь тоже хочешь отсюда свалить, верно?)]
 	</p>
 	<p>
-		Having already expected this response, you turn to face the pouting cat-girl and explain, [pc.speech(This might just contain something that can get us out of here. You do want to escape from here, right?)]
+		[claire.speech(Конечно, хочу!)] — отвечает она, шагая рядом с тобой, чтобы продолжать ворчать, не переходя на крик: [claire.speech(Но я еще не хочу, чтобы меня обвинили в проникновении на режимный объект и разграблении секретного ящика! Впрочем, сейчас не время спорить; просто делай, что задумал, и пошли отсюда!)]
 	</p>
 	<p>
-		[claire.speech(Of course I do!)] she responds, marching forwards beside you so that she can continue objecting without having to shout, [claire.speech(I also don't want to be charged with entering a restricted area and looting some top secret crate! Anyway, we don't have time to argue; just do what you've got to do and then let's get going!)]
+		[pc.speech(Так будет быстрее, если ты поможешь,)] — говоришь ты, подходя к ящику и начиная поддевать крышку.
 	</p>
 	<p>
-		[pc.speech(It'll be faster if you help,)] you say, stepping up to the crate and starting to pull open the lid.
+		[claire.speech(Ох, ладно!)] — отвечает она, хватаясь за другой край крышки и помогая тебе поднять её и снять с ящика.
 	</p>
 	<p>
-		[claire.speech(Oh, fine!)] she replies, grabbing the other end of the lid and helping you to lift it up and off the top of the crate.
+		Теперь, когда контейнер открыт, вы оба делаете шаг вперед и заглядываете внутрь. К разочарованию, всё, что вы видите — это стопки папок из коричневой бумаги, на каждой из которых крупными красными буквами выведено «Совершенно секретно». Однако твоя спутница замечает в ящике нечто большее; отодвинув часть папок, она обнаруживает небольшую металлическую шкатулку, лежащую рядом с дюжиной флаконов с бурлящей арканной эссенцией. Просунув руку внутрь, любопытная кошкодевочка достает шкатулку, вертит её в руках и озадаченно хмурится.
 	</p>
 	<p>
-		With the container now open, the two of you step forwards and peer inside. Rather disappointingly, all you see are stacks of brown paper folders, each one stamped with 'Top Secret' in big red lettering. Your companion, however, notices something more to the crate's contents, and, pushing some of these folders out of the way, she reveals a small metal box sitting beside a dozen or so bottles of swirling arcane essence. Reaching inside, the curious cat-girl retrieves the metal box, before turning it over in her hands and making a puzzled expression.
+		[claire.speech(Интересно, что там внутри,)] — размышляет она, быстро забыв о своих недавних возражениях под натиском любопытства. Прежде чем ты успеваешь что-то сказать или сделать, чтобы остановить её, она откидывает защелку, быстро открывает крышку и достает содержимое. Когда она подносит предмет к лицу, чтобы рассмотреть поближе, ты видишь, что в её руках — небольшой кристальный шар размером не больше мячика для гольфа. В самом его центре парит слабый светящийся белый огонек, но в остальном в нем нет ничего особенно впечатляющего или опасного.
 	</p>
 	<p>
-		[claire.speech(I wonder what's in here,)] she muses, her objections of a moment ago quickly forgotten as she's overcome by curiosity. Before you can say or do anything to stop her, she unfastens the box's latch, before quickly opening the hinged lid and retrieving what's stored inside. As she brings it up to her face to take a closer look, you see that the mysterious object that she's holding is a small, crystal globe, no larger than a golf ball. Suspended in the very centre of it, there's a faint ball of glowing white light, but other than that, there doesn't seem to be anything particularly spectacular or dangerous about it.
+		[claire.speech(И это всё?)] — спрашивает кошкодевочка, — [claire.speech(Похоже на какое-то арканное рождественское украшение или типа того. Что тут такого секретного... Ой!)]
 	</p>
 	<p>
-		[claire.speech(Is this all there is?)] the cat-girl asks, [claire.speech(It looks like some kind of arcane Yule decoration or something. What's so top secret about- Eek!)]
+		Вопрос Клэр прерывается, когда маленький шар внезапно и эффектно оживает. Мгновение назад это был лишь кажущийся инертным сгусток арканального света, но всего секунду спустя он наполняется пляшущими всполохами ярко-фиолетовых арканальных молний. Хотя эти разряды, кажется, надежно удерживаются внутри сферы, их внезапное появление заставляет Клэр вздрогнуть, и в панике она с силой швыряет шар обратно в деревянный ящик. К несчастью, бросок приходится прямо по бутылкам с арканальной эссенцией, хранящимся в ящике; несколько из них разлетаются вдребезги, и из маленького хрустального шара вырывается мощная вспышка фиолетовых молний.
 	</p>
 	<p>
-		Claire's question is interrupted as the small globe suddenly bursts into life in a spectacular fashion. One moment containing nothing but a seemingly-inert ball of arcane light, a split second later it's filled with dancing streaks of bright purple arcane lightning. While these arcing flashes look to be safely contained within the globe, their sudden appearance is nevertheless enough to make Claire jump, and in her panic, she throws it back into the wooden crate with considerable force. Unfortunately, this throw manages to directly strike the bottles of arcane essence stored within the box, and as several of them smash into pieces, a huge flash of purple-hued lightning is discharged from the little crystal globe.
+		[claire.speech(Ай!)] — вскрикивает Клэр, приседая и прикрывая голову от выброса энергии. Разумеется, такая реакция никак не защищает кошкодевочку от арканальных молний, и точно так же ты тоже не можешь от них укрыться. Подобно более концентрированной версии природного арканального шторма, этот разряд не наносит физического вреда, но вместо этого ты чувствуешь, как внизу живота начинает разгораться возбуждение.
 	</p>
 	<p>
-		[claire.speech(Eek!)] Claire cries, dropping down into a crouch and shielding her head from the burst of energy. Of course, such a reaction does nothing to shield the cat-girl from the arcane lightning, and, similarly, there's nothing you can do to protect yourself from it either. Like a more focused version of a naturally-occurring arcane storm, this energy discharge doesn't cause any physical harm, but instead, you feel yourself starting to get aroused.
-	</p>
-	<p>
-		Thankfully, this lightning discharge only lasts for a moment, and it rapidly dissipates before you're affected too strongly by its effects. Claire, on the other hand, seems to have been hit by a much stronger burst, and with a horny whine, she drops one hand down into her trousers and starts touching herself...
+		К счастью, разряд молний длится лишь мгновение и быстро рассеивается, прежде чем ты успеваешь слишком сильно ощутить его эффект. Клэр же, напротив, похоже, приняла на себя куда более мощный удар: с томным стоном она запускает руку в штаны и начинает ласкать себя...
 	</p>
 	]]>
 	</htmlContent>
@@ -437,37 +436,37 @@
 	
 	<htmlContent tag="CRATES_LUST_WEAPON_OBTAINED"><![CDATA[
 	<p>
-		Concerned with how Claire has suddenly been affected by the arcane lightning, you step forwards and ask her if she's ok. As though woken from a dream, she seems to suddenly become aware of what she's doing, and, pulling her hand out of her trousers, she blushes and stammers, [claire.speech(Y-Yes, I-I'm fine! That lightning's just... Well... You can see how it's made me feel!)]
+		Обеспокоенный тем, как внезапно на Клэр подействовала арканальная молния, ты делаешь шаг вперед и спрашиваешь, всё ли с ней в порядке. Словно очнувшись от сна, она внезапно осознает, что делает, и, вынимая руку из брюк, краснеет и заикается: [claire.speech(Д-да, я... я в порядке! Эта молния просто... Ну... Ты же видишь, что она со мной сделала!)]
 	</p>
 	<p>
-		Before you can suggest a solution to her problem, she pushes herself away from the crate and takes a deep breath. Assuming her favourite pose, she places her hands on her wide hips and states, [claire.speech(I-I can control myself! Come on, we need to get out of here!)]
+		Прежде чем ты успеваешь предложить решение её проблемы, она отталкивается от ящика и делает глубокий вдох. Приняв свою любимую позу, она упирает руки в широкие бёдра и заявляет: [claire.speech(Я... я могу контролировать себя! Пойдём, нам нужно убираться отсюда!)]
 	</p>
 	<p>
-		From the way she's starting hungrily at your body, combined with her blushing cheeks and the little whimpering moans she starts to make, you can tell that it's taking everything Claire's got to keep her lust under control. Satisfied that she's not going to do anything crazy that would alert the SWORD guards to your presence, you shift your attention back to the crate, and the curious globe that's sitting inside of it.
+	
+	По тому, как она начинает жадно пожирать тебя взглядом, в сочетании с её раскрасневшимися щеками и тихими стонами, ты понимаешь: Клэр стоит всех своих сил, чтобы сдерживать Похоть. Убедившись, что она не выкинет какую-нибудь безумную выходку, которая выдаст ваше присутствие стражникам SWORD, ты переключаешь внимание обратно на ящик и лежащий внутри него любопытный шар.
 	</p>
 	<p>
-		Miraculously, despite having shattered a half-dozen or so vials of arcane essence, the lightning globe doesn't seem to have even the slightest scratch upon it, and what's more, it seems to have reverted to its inactive state, and once again contains just a seemingly-inert ball of white arcane light. Reaching inside the box, you pick up the small, golf-ball-sized globe, and as you lift it up to take a closer look at it, purple flashes of arcane lightning once again start streaking out from the central core.
+		Чудесным образом, несмотря на то что около полудюжины флаконов с арканной эссенцией разлетелись вдребезги, на грозовом шаре, кажется, нет ни единой царапины. Более того, он, похоже, вернулся в неактивное состояние и снова представляет собой лишь внешне инертный шар белого арканного света. Засунув руку в ящик, ты берешь маленький шарик размером с мячик для гольфа, и как только ты поднимаешь его, чтобы рассмотреть поближе, из его центрального ядра снова начинают вырываться фиолетовые вспышки арканной молнии.
 	</p>
 	<p>
-		[claire.speech(I-Is that thing safe to touch?)] Claire asks, her voice still a little shaky as she desperately tries to keep her lust under control. 
+		[claire.speech(Э-этот предмет безопасно трогать?)] — спрашивает Клэр; её голос всё ещё слегка дрожит, пока она отчаянно пытается обуздать свою похоть.
 	</p>
 	<p>
-		[pc.speech(Yes, I don't think it's going to discharge again without having some kind of arcane energy channelled into it,)] you reply, your natural affinity for the arcane instinctively telling you that this is the case. Deciding to take this lightning globe with you, you tell your cat-girl companion, [pc.speech(Perhaps it will be useful in helping us to escape from this place.)]
+		[pc.speech(Да, не думаю, что он снова разрядится, пока в него не направят поток арканной энергии,)] — отвечаешь ты, чувствуя это благодаря своей природной близости к аркане. Решив прихватить грозовой шар с собой, ты говоришь своей спутнице-кошкодевушке: [pc.speech(Возможно, он поможет нам сбежать отсюда.)]
 	</p>
 	<p>
-		Looking back into the crate, you see that a few of the bottled essences are still intact.
+		Заглянув обратно в ящик, ты замечаешь, что несколько флаконов с эссенцией всё ещё целы.
 		#IF(!pc.hasQuest(QUEST_LINE_SIDE_ENCHANTMENT_DISCOVERY))
-			 You get the feeling that if you were to open them, you'd be able to absorb the energy contained within, and could then channel that energy into the lightning globe in order to shoot a single bolt at a target.
-		#ELSE
-			 You get the feeling that arcane essences must be used as some sort of ammunition for this curious weapon, and that by channelling them into the lightning globe, you'd be able to shoot a single bolt at a target.
+			 У тебя возникает предчувствие, что если ты откроешь их, то сможешь поглотить заключенную в них энергию, а затем направить её в грозовой шар, чтобы выпустить в цель одиночный разряд.		#ELSE
+			 У тебя возникает ощущение, что арканные эссенции служат своего рода боеприпасами для этого странного оружия, и если направить их в грозовой шар, то можно будет выпустить в цель одиночный разряд.
 		#ENDIF
-		 Picking them up, you add them to your inventory, then, after firmly closing the lid of the crate, you turn back towards Claire and tell her that the two of you should continue on your way.
+		 Подбирая их, ты добавляешь их в свой инвентарь, затем, плотно закрыв крышку ящика, поворачиваешься к Клэр и говоришь ей, что вам пора продолжать путь.
 	</p>
 	<p>
-		[claire.speech(~Mmm!~)] she whines, and you see that one of her hands has found its way back down the front of her trousers again, while the other is busily groping her huge breasts. Suddenly becoming aware of what it is she's doing, she quickly stops playing with herself, and with her cheeks flushing bright red, she insists, [claire.speech(I-I'll be fine! I can control myself! Let's just get out of here!)]
+		[claire.speech(~Ммм!~)] — стонет она, и ты замечаешь, что одна её рука снова скользнула под брючины, в то время как другая увлеченно ласкает её огромную грудь. Внезапно осознав, чем она занимается, она поспешно прекращает самоудволетворение, и, залившись густым румянцем, настаивает: [claire.speech(Я... я справлюсь! Я смогу себя контролировать! Давай просто уберемся отсюда!)]
 	</p>
 	<p>
-		While you're convinced that she will indeed be able to control herself, you get the feeling that it wouldn't take much to convince her to have sex with you...
+		Хотя ты и убежден, что она действительно сможет сдержаться, у тебя не покидает чувство, что убедить её заняться с тобой сексом будет совсем несложно...
 	</p>
 	]]>
 	</htmlContent>
@@ -477,7 +476,7 @@
 	
 	<htmlContent tag="CRATES_LUST_WEAPON_OBTAINED_CONTINUE"><![CDATA[
 	<p>
-		Trusting that Claire will be able to control herself, you step back from the 'Top Secret' crate and prepare to continue on your way...
+		Доверившись Клэр и полагая, что она сможет взять себя в руки, ты отходишь от ящика с пометкой «Совершенно секретно» и готовишься продолжить путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -487,14 +486,14 @@
 	
 	<htmlContent tag="SHELVES_SPELL_BOOK"><![CDATA[
 	<p>
-		Instead of the usual wooden crates which fill the rest of the warehouse, this particular section is home to dozens of wheeled shelving units, of the same sort which were blocking your way when you first arrived here. At first glance they all seem to be filled with nothing more than miscellaneous documents and old accounting books, but perhaps if you were to take a closer look, you'd find something of value...
+		В отличие от обычных деревянных ящиков, заполняющих остальную часть склада, эта секция заставлена десятками стеллажей на колесиках — таких же, что преграждали вам путь в самом начале. На первый взгляд кажется, что они набиты лишь всякой всячиной вроде документов и старых бухгалтерских книг, но, возможно, если присмотреться повнимательнее, можно найти что-то ценное...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SHELVES_SPELL_BOOK_SEARCHED"><![CDATA[
 	<p>
-		Instead of the usual wooden crates which fill the rest of the warehouse, this particular section is home to dozens of wheeled shelving units, of the same sort which were blocking your way when you first arrived here. Having already searched through them all, you know that there's nothing else in this area that's of any value to you...
+		Вместо привычных деревянных ящиков, заполняющих остальную часть склада, в этой секции стоят десятки передвижных стеллажей — точно таких же, как те, что преграждали тебе путь по прибытии. Ты уже обыскал их все и понимаешь, что в этой зоне нет ничего, что могло бы представлять для тебя ценность...
 	</p>
 	]]>
 	</htmlContent>
@@ -504,30 +503,30 @@
 	
 	<htmlContent tag="CRATES_SPELL_BOOK_SEARCH"><![CDATA[
 	<p>
-		Deciding that it would be worth your time to conduct a thorough search of this area, you move forwards between the nearest shelves and start taking a look at the documents stored here.
+		Решив, что стоит потратить время на тщательный осмотр этой области, ты проходишь между ближайшими стеллажами и начинаешь изучать хранящиеся здесь документы.
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-			[claire.speech(~Mmm!~ I-I'll just wait here,)] Claire says, too preoccupied with trying to control her lust to object to your plans. 
+			[claire.speech(~Ммм!~ Я... я просто подожду здесь,)] — говорит Claire, слишком занятая попытками обуздать свою похоть, чтобы возражать против твоих планов.
 		#ELSE
-			[claire.speech(This isn't a bookshop!)] Claire hisses at you, [claire.speech(You can't just go helping yourself to official Enforcer documents!)]
+			[claire.speech(Это тебе не книжная лавка!)] — шипит на тебя Claire, [claire.speech(Нельзя просто так брать официальные документы Enforcer!)]
 			</p>
 			<p>
-				By explaining to the cat-girl that you might find something which could help the two of you to escape, you manage to convince her to let you go ahead with your planned search of the shelves. Putting her hands on her hips, she pouts at you as she concedes, [claire.speech(I suppose if there's something here which would help us to escape, you can take that... But nothing else!)]
-		#ENDIF
+				Объяснив кошкодевочке, что ты, возможно, найдешь что-то, что поможет вам обоим сбежать, тебе удается убедить её позволить тебе продолжить осмотр стеллажей. Уперев руки в бока, она обиженно дует губы, но уступает: [claire.speech(Полагаю, если здесь найдется что-то, что поможет нам сбежать, то можешь брать... Но только это!)]
+				#ENDIF
 	</p>
 	<p>
-		While Claire keeps watch, you sweep down each row formed by the bookcases, checking each shelf for anything of value. After finding nothing but mundane documents of some form of another, you're just about to give up when you suddenly spot a rather unusual book nestled away between two stacks of papers. Pulling it out, you discover that it's a spell book containing details on how to cast 'Telepathic Communication'. Taking it with you, you head back to where your cat-girl Enforcer companion is waiting for you, and, showing it to her, you get her approval for keeping it.
+		Пока Клэр несет караул, ты прочесываешь каждый ряд книжных шкафов, проверяя каждую полку в поисках чего-нибудь ценного. Не найдя ничего, кроме очередных скучных документов, ты уже готов было сдаться, как вдруг замечаешь довольно необычную книгу, зажатую между двумя стопками бумаг. Вытащив её, ты обнаруживаешь, что это книга заклинаний с подробным описанием того, как сотворить «Телепатическое общение». Забрав её с собой, ты возвращаешься к своей спутнице, кошкодевочке Enforcer, и, показав находку, получаешь её одобрение.
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-		[claire.speech(Sure, you can take that, just please, I need to get out of here and have a good fuck!)] she whines, clearly not interested in anything but satiating her overwhelming lust.
+		[claire.speech(Конечно, забирай, только, пожалуйста, дай мне уже выбраться отсюда и хорошенько трахнуться!)] — канючит она, явно не заинтересованная ни в чем, кроме утоления своей всепоглощающей похоти.
 		#ELSE
-		[claire.speech(Fine, I suppose you can take that,)] she says, placing her hands on her massive hips and frowning at you, [claire.speech(Maybe you could use it to trick some of these guards or something.)]
+		[claire.speech(Ладно, полагаю, можешь взять,)] — говорит она, уперев руки в свои массивные бедра и хмурясь на тебя, — [claire.speech(Может, пригодится, чтобы обхитрить этих стражников или типа того.)]
 		#ENDIF
 	</p>
 	<p>
-		Having got all you can from this area, you prepare to continue on your way through the warehouse...
+		Собрав всё, что только можно было найти в этой области, ты готовишься продолжить свой путь через склад...
 	</p>
 	]]>
 	</htmlContent>
@@ -537,45 +536,43 @@
 	
 	<htmlContent tag="ENFORCER_GUARD_POST"><![CDATA[
 	<p>
-		Deciding that the best way to escape is by taking a direct route straight through this Enforcer post, you step forwards and start to approach [npc.name].
+		Решив, что лучший способ сбежать — это пойти прямым путем через этот пост Enforcer, ты делаешь шаг вперед и начинаешь приближаться к [npc.name].
 		#IF(claire.getLust()>75)
-			 Seeing what it is you're doing, Claire hides behind a nearby crate, and with her voice still dripping with lust, she hisses, [claire.speech(~Aah!~ D-Don't try to fight them! Stop!)]
+			 Видя, что ты задумал, Клэр прячется за ближайшим ящиком и, всё еще источая похоть, шипит: [claire.speech(~Аах!~ Н-не пытайся сражаться с ними! Стой!)]
 		#ELSE
-			 Seeing what it is you're doing, Claire hides behind a nearby crate, before hissing after you, [claire.speech(Don't try to fight them! Come back!)]
+			 Видя, что ты задумал, Клэр прячется за ближайшим ящиком, а затем шипит тебе вслед: [claire.speech(Не пытайся сражаться с ними! Вернись!)]
 		#ENDIF
 	</p>
 	<p>
-		Knowing that this SWORD Enforcer is no match for you, you ignore Claire's words of warning and continue to stride forwards. Obviously not expecting to see an intruder, the SWORD guard only notices you out of the corner of [npc.her] eye when you're less than [unit.lSize(1000)] away. As soon as [npc.she] detects your presence, however, [npc.she] springs into action; rapidly unslinging [npc.her] [npc.mainWeapon], [npc.she] points it at you and orders, [npc.speech(Stop right there!)]
+		Понимая, что этому Enforcer из SWORD тебе не соперник, ты игнорируешь предостережения Клэр и продолжаешь уверенно шагать вперед. Охранник SWORD, явно не ожидавший увидеть нарушителя, замечает тебя лишь краем [npc.her] глаза, когда ты находишься на расстоянии менее [unit.lSize(1000)]. Однако, как только [npc.she] чувствует твое присутствие, [npc.she] тут же переходит в наступление; стремительно сдернув [npc.her] [npc.mainWeapon], [npc.she] наводит её на тебя и приказывает: [npc.speech(А ну, стой на месте!)]
 	</p>
 	<p>
-		Without even giving you time in which to obey [npc.her] command, the trigger-happy [npc.race] starts shooting at you!
+		Не давая тебе и секунды, чтобы подчиниться приказу [npc.her], легкомысленная [npc.race] начинает палить в тебя из оружия!
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENFORCER_GUARD_POST_CLEARED"><![CDATA[
 	<p>
-		Having been defeated by you in combat, and then tazed into complete submission by Claire, the [npc.race] Enforcer is slumped down, unconscious, against a nearby crate in this area.
+		Потерпев поражение в бою от твоей руки, а затем окончательно вырубившись от удара электрошокером, который применила Клэр, [npc.race] Enforcer без сознания сполз на ящик неподалеку.
 		#IF(claire.getLust()>75)
-			 Having warned you against touching [npc.name] or any of [npc.her] gear, Claire moans, [claire.speech(Come on, let's go! ~Mmm!~ I need to get out of here and masturbate or something!)]
+			 Предупредив тебя не трогать [npc.name] и снаряжение [npc.her], Клэр стонет: [claire.speech(Давай, идем! ~Ммм!~ Мне нужно поскорее выбраться отсюда и заняться мастурбацией или типа того!)]
 		#ELSE
-			 Having warned you against touching [npc.name] or any of [npc.her] gear, Claire hisses at you, [claire.speech(Come on, let's get out of here before [npc.she] wakes up!)]
+			 Предупредив тебя не трогать [npc.name] и снаряжение [npc.her], Клэр шипит тебе на ухо: [claire.speech(Давай, уберемся отсюда, пока [npc.she] не очнулся!)]
 		#ENDIF
 	</p>
 	<p>
-		Not wanting to give SWORD any further reason to hunt you or Claire down, you decide to do as your cat-girl companion says and move on through this area before the [npc.race] regains consciousness...
+		Не желая давать SWORD лишний повод охотиться за тобой или Клэр, ты решаешь последовать совету своей спутницы-кошкодевочки и поскорее покинуть эту зону, пока [npc.race] не пришел в себя...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENFORCER_GUARD_POST_PLAYER_FIGHT_START"><![CDATA[
-	You prepare to fight the trigger-happy SWORD Enforcer.
+	Ты готовишься к бою с безрассудным Enforcer из SWORD.
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ENFORCER_GUARD_POST_GUARD_FIGHT_START"><![CDATA[
-	Thankfully, [npc.name] seems more interested in testing [npc.her] mettle against you than calling for reinforcements...
-	]]>
+	<htmlContent tag="ENFORCER_GUARD_POST_GUARD_FIGHT_START"><![CDATA[К счастью, [npc.name], похоже, больше заинтересован в том, чтобы испытать [npc.her] на прочность в бою с тобой, чем в вызове подкрепления...]]>
 	</htmlContent>
 	
 	
@@ -583,24 +580,23 @@
 	
 	<htmlContent tag="AFTER_GUARD_COMBAT_VICTORY"><![CDATA[
 	<p>
-		With no energy left to continue the fight, the [npc.race] staggers back and collapses against a nearby crate. Glaring up at you, [npc.she] suddenly reaches into [npc.her] vest and pulls out a small tube, which you instantly realise is an arcane signal flare. Before you can react, [npc.she] laughs, [npc.speech(Let's see you beat the rest of- Argh!)]
-	</p>
-	<p>
-		Before [npc.she] can finish [npc.her] sentence, or set off the signal flare, a pair of wires shoot out from somewhere nearby, and, embedding themselves in the [npc.race]'s aura, they deliver a huge surge of arcane lightning. Having already been exhausted from your fight, this final attack proves to be too much for the [npc.race] to endure, and [npc.she] slumps to the floor, unconscious.
-	</p>
+		Совсем без энергии, чтобы продолжать бой, [npc.race] отшатывается и валится на стоящий рядом ящик. Яростно глядя на тебя, [npc.she] внезапно запускает руку в [npc.her] жилет и выхватывает маленькую трубку, которую ты мгновенно узнаешь как арканную сигнальную ракету. Прежде чем ты успеваешь среагировать, [npc.she] смеется: [npc.speech(Ну, попробуй- Аргх!)]
+	</p><p>
+Прежде чем [npc.she] успевает закончить [npc.her] предложение или запустить сигнальную ракету, откуда-то рядом вылетает пара проводов. Впиваясь в [npc.race]'s Аура, они выпускают мощный разряд аркана-молнии. Измотанная недавним боем, [npc.race] не выдерживает этой последней атаки, и [npc.she] бессильно оседает на пол без сознания.
+</p>
 	#IF(claire.getLust()>75)
 		<p>
-			Looking across to where this unexpected attack came from, you see Claire still pointing her discharged taser at the SWORD guard. Glaring at you with a mixture of aroused anger in her eyes, she quickly moves forwards and deftly uses the [npc.race]'s own handcuffs to shackle [npc.herHim] to a nearby crate. Still struggling to control her lust, she whines, [claire.speech(~Mmm!~ Look what you made me do! [npc.She] almost saw me! Y-You know, you can't just assault Enforcers like that! If this were any other situation, I'd have arrested you for what you've just done!)]
+		Оглянувшись в сторону неожиданной атаки, ты видишь, что Клэр всё еще целится разряженным тазером в стражника SWORD. Глядя на тебя с примесью возбужденного гнева в глазах, она быстро делает шаг вперед и ловко использует собственные наручники [npc.race], чтобы приковать [npc.herHim] к ближайшему ящику. Все еще пытаясь совладать со своей похотью, она скулит: [claire.speech(~Ммм!~ Посмотри, на что ты меня вынудил! [npc.She] почти заметила меня! З-знаешь, нельзя вот так просто нападать на Enforcer! Будь это любая другая ситуация, я бы уже арестовала тебя за то, что ты только что устроил!)]
 		</p>
 		<p>
-			Pointing out that the [npc.race] was the one who shot at you first, you tell Claire that you were simply defending yourself, and, furthermore, that the [npc.race] was blocking your escape route. Subconsciously groping her breasts with one hand, Claire tuts, [claire.speech(W-Well, I don't know about that. ~Mmm!~ Let's just never speak of this again, ok? Oh, and don't even think about trying to take any of [npc.her] gear or anything. As it stands, [npc.she] probably won't even report this to [npc.her] superiors, as that'd mean [npc.herHim] losing a lot of face for being defeated like this. ~Aah!~ I-If you were to take [npc.her] gear, then it'd be a different matter entirely. You don't want SWORD after you for the rest of your life, do you?)]
+			Указывая на то, что именно [npc.race] первым открыл по тебе огонь, ты объясняешь Клэр, что всего лишь защищался, и более того — что [npc.race] преградил тебе путь к отступлению. Подсознательно нащупывая её грудь одной рукой, Клэр цокает языком: [claire.speech(Ну-у... не знаю, так ли это на самом деле. ~Ммм!~ Давай просто больше никогда об этом не будем вспоминать, ладно? О, и даже не вздумай пытаться стащить какое-нибудь снаряжение [npc.her] или что-то в этом роде. Скорее всего, [npc.she] даже не станет докладывать об этом своим начальству в [npc.her], ведь тогда [npc.herHim] потеряет лицо из-за такого позорного поражения. ~Аах!~ Н-но если ты возьмёшь снаряжение [npc.her], тогда это совсем другое дело. Ты ведь не хочешь, чтобы SWORD преследовала тебя всю оставшуюся жизнь?)]
 		</p>
 	#ELSE
 		<p>
-			Looking across to where this unexpected attack came from, you see Claire still pointing her discharged taser at the SWORD guard. Glaring angrily at you, she then quickly moves forwards and deftly uses the [npc.race]'s own handcuffs to shackle [npc.herHim] to a nearby crate. Letting out a little huff, she asks, [claire.speech(Look what you made me do! [npc.She] almost saw me! You know, you can't just assault Enforcers like that! If this were any other situation, I'd have arrested you for what you've just done!)]
+			Оглянувшись в сторону неожиданной атаки, ты видишь, что Клэр всё ещё целится разряженным тазером в стражника SWORD. Яростно зыркнув на тебя, она быстро делает шаг вперед и ловко использует наручники самой [npc.race], чтобы приковать [npc.herHim] к ближайшему ящику. Слегка фыркнув, она спрашивает: [claire.speech(Посмотри, на что ты меня вынудил! [npc.She] чуть не заметила меня! Знаешь, нельзя вот так просто нападать на Enforcer! Будь это любая другая ситуация, я бы уже арестовала тебя за этот выпад!)]
 		</p>
 		<p>
-			Pointing out that the [npc.race] was the one who shot at you first, you tell Claire that you were simply defending yourself, and, furthermore, that the [npc.race] was blocking your escape route. Placing her hands on her hips, Claire tuts, [claire.speech(Well, I don't know about that. Let's just never speak of this again, ok? Oh, and don't even think about trying to take any of [npc.her] gear or anything. As it stands, [npc.she] probably won't even report this to [npc.her] superiors, as that'd mean [npc.herHim] losing a lot of face for being defeated like this. If you were to take [npc.her] gear, then it'd be a different matter entirely. You don't want SWORD after you for the rest of your life, do you?)]
+		Указывая на то, что именно [npc.race] первой открыла по тебе огонь, ты объясняешь Клэр, что всего лишь защищался, и более того — [npc.race] преграждала тебе путь к отступлению. Уперши руки в бока, Клэр цокает языком: [claire.speech(Ну, не знаю. Давай просто больше никогда об этом не будем вспоминать, ладно? О, и даже не вздумай пытаться прибрать к рукам снаряжение [npc.her] или что-то в этом роде. Скорее всего, [npc.she] даже не станет докладывать об этом своим начальству в [npc.her], потому что тогда [npc.herHim] будет очень стыдно за такое позорное поражение. А вот если ты заберешь экипировку [npc.her], тогда дело примет совсем другой оборот. Ты ведь не хочешь, чтобы SWORD охотились за тобой до конца своих дней?)]
 		</p>
 	#ENDIF
 	<p>
@@ -614,13 +610,13 @@
 	
 	<htmlContent tag="AFTER_GUARD_COMBAT_DEFEAT"><![CDATA[
 	<p>
-		[npc.Name] proves to be too much for you to handle, and with one last burst from [npc.her] [npc.mainWeapon] hitting you straight in the chest, you stagger back against a nearby crate and slump down to the floor, defeated.
+		[npc.Name] оказывается слишком сильным противником. После последнего залпа из [npc.her], когда снаряд [npc.mainWeapon] попадает тебе прямо в грудь, ты пошатываешься, отлетаешь к ближайшему ящику и бессильно оседаешь на пол, поверженный.
 	</p>
 	<p>
-		The next thing you know, [npc.name] is roughly putting you in handcuffs, gloating as [npc.she] does so, [npc.speech(Heh, you actually thought it was a good idea to break into this warehouse and then have the audacity to fight me? Well, you'll have the rest of your miserable life as a slave to think about what a stupid fucking mistake that was!)]
+		В следующий миг [npc.name] грубо надевает на тебя наручники, самодовольно ухмыляясь, пока [npc.she] это делает, [npc.speech(Хех, ты и правда думал, что вломиться на этот склад, да еще и иметь наглость сражаться со мной — хорошая идея? Что ж, у тебя будет остаток твоей жалкой жизни, чтобы обдумывать, какой же это был ебаный глупый промах!)]
 	</p>
 	<p>
-		Without any consideration for your comfort, the [npc.race] then starts dragging you off through the warehouse, continuing to insult and mock you as [npc.she] does so...
+		Ни капли не заботясь о твоем удобстве, [npc.race] начинает тащить тебя через весь склад, продолжая оскорблять и насмехаться над тобой, пока [npc.she] делает это...
 	</p>
 	]]>
 	</htmlContent>
@@ -630,27 +626,27 @@
 	
 	<htmlContent tag="AFTER_GUARD_COMBAT_DEFEAT_ENTRANCE"><![CDATA[
 	<p>
-		Soon enough, you and the [npc.race] reach the entrance to the warehouse, where you're confronted by four more SWORD guards. The Inspector in charge steps forwards as [npc2.she] sees the two of you approach, and asks, [npc2.speech(What's all this then? Who's that?)]
+		Вскоре ты и [npc.race] добираетесь до выхода со склада, где вас встречают еще четверо стражников SWORD. Когда [npc2.she] видит ваше приближение, вперед выходит старший инспектор и спрашивает: [npc2.speech(Это еще что такое? Кто это?)]
 	</p>
 	<p>
-		After quickly explaining to [npc.her] superior how [npc.she] was 'assaulted' by you, [npc.name] suggests, [npc.speech(We should charge [pc.herHim] with trespass and assault on an Enforcer at least, right?)]
+		После того как [npc.her] быстро объясняет своему начальнику, как ты «напал» на [npc.she], [npc.name] предлагает: [npc.speech(Нам стоит предъявить [pc.herHim] обвинение как минимум в незаконном проникновении и нападении на Enforcer, верно?)]
 	</p>
 	<p>
-		[npc2.speech(At the very least. I can think of some more stuff to throw at [pc.herHim], but I can't be bothered to fill out the paperwork right now, so just go and get [pc.herHim] locked up, and I'll deal with [npc.herHim] tomorrow,)] [npc2.name] says, [npc2.speech(We'll go and sweep the warehouse to see if the other units are ok.)]
+	[npc2.name] говорит: [npc2.speech(Как минимум. Я могу придумать и другие статьи для [pc.herHim], но сейчас мне лень возиться с бумагами, так что просто идите и заприте [pc.herHim], а с [npc.herHim] я разберусь завтра),] [npc2.speech(А мы пока пройдемся по складу и проверим, всё ли в порядке с остальными подразделениями.)]
 	</p>
 	#IF(game.isNonConEnabled())
 		<p>
-			[npc.speech(Right, I'll be back within the hour,)] [npc.name] replies, before dragging you out of the warehouse and growling, [npc.speech(Come on, get a move on! [npc2.She] didn't say exactly <i>where</i> to lock you up, so I think it'd be ok if I got some revenge...)]
+			[npc.speech(Ладно, вернусь через час,)] — отвечает [npc.name], прежде чем вытащить тебя из склада и прорычать: [npc.speech(Шевелись, поторапливайся! [npc2.She] не сказал точно, <i>куда</i> тебя запереть, так что, думаю, будет не грех немного отомстить...)]
 		</p>
 		<p>
-			In your dazed, post-defeat state, you're vaguely aware of the fact that the warehouse was located just behind Dominion's main Enforcer Headquarters, but instead of leading you inside to be thrown into the cells, [npc.name] starts dragging you off down the street. As you wonder whether Claire's got caught as well, you hear the [npc.race] muttering to [npc.herself], [npc.speech(I'm going to enjoy fucking you in front of everyone...)]
+			В оцепенении после поражения ты смутно осознаешь, что склад находился прямо за главным штабом Enforcer в Dominion, но вместо того, чтобы затащить тебя внутрь и бросить в камеры, [npc.name] начинает тащить тебя прочь по улице. Пока ты гадаешь, не поймали ли Клэр, ты слышишь, как [npc.race] бормочет [npc.herself]: [npc.speech(Я получу истинное удовольствие, трахая тебя на глазах у всех...)]
 		</p>
 	#ELSE
 		<p>
-			[npc.speech(Right, I'll be back in a moment,)] [npc.name] replies, before dragging you out of the warehouse and growling, [npc.speech(Come on, get a move on!)]
+			[npc.speech(Ладно, я сейчас вернусь,)] — отвечает [npc.name], прежде чем вытащить тебя из склада и прорычать: [npc.speech(Шевелись, поторапливайся!)]
 		</p>
 		<p>
-			In your dazed, post-defeat state, you're vaguely aware of the fact that the warehouse was located just behind Dominion's main Enforcer Headquarters, and after just a few minutes, you find yourself being dragged inside. As you stumble down the corridor behind the [npc.race], you realise that [npc.sheIs] leading you to the cells...
+			В оцепенении после поражения ты смутно осознаешь, что склад находился прямо за главным штабом Enforcer в Dominion, и всего через несколько минут тебя затаскивают внутрь. Пока ты спотыкаешься в коридоре вслед за [npc.race], до тебя доходит, что [npc.sheIs] ведет тебя прямиком в камеры...
 		</p>
 	#ENDIF
 	]]>
@@ -661,54 +657,52 @@
 	
 	<htmlContent tag="ENTRANCE"><![CDATA[
 	<p>
-		After spending quite some time making your way through the labyrinthine passages of the SWORD warehouse, you and Claire finally arrive at the solitary exit. Your troubles aren't yet over, however, as before you stand four guards. From your hiding place behind a stack of wooden crates, you're able to tell that the leader of this group
+		Проведя немало времени, пробираясь сквозь лабиринты проходов на складе SWORD, ты и Клэр наконец добираетесь до единственного выхода. Однако твои беды еще не закончились: перед вами стоят четверо стражников. Прячась за штабелем деревянных ящиков, ты успеваешь заметить, что предводитель этой группы
 		#IF(game.isSillyMode())
-			 of top men
+			элитных бойцов
 		#ENDIF
-		 is [npc.a_race], while the other three look to be [npc2.a_race], [npc3.a_race], and [npc4.a_race].
+		 — это [npc.a_race], в то время как остальные трое, похоже, [npc2.a_race], [npc3.a_race] и [npc4.a_race].
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-			[claire.speech(~Ooh!~ H-How are we going to get past them?)] Claire lustfully pants into your ear, [claire.speech(Y-You can think of something, right?)]
+			[claire.speech(~Ох!~ К-как нам миновать их?~)] — Клэр с похотливым стоном шепчет тебе на ухо, [claire.speech(Т-ты ведь можешь что-нибудь придумать, да?)]
 		#ELSE
-			[claire.speech(How are we going to get past them?)] Claire whispers into your ear, [claire.speech(You can think of something, right?)]
+			[claire.speech(Как нам миновать их?~)] — шепчет Клэр тебе на ухо, [claire.speech(Ты ведь можешь что-нибудь придумать, да?)]
 		#ENDIF
 	</p>
 	<p>
-		Taking another look at the SWORD guards, you realise that there's no way the two of you are going to be able to sneak your way past them. Fighting them head-on also seems like an incredibly bad idea, but surely there must be another way...
+		Еще раз взглянув на стражников SWORD, ты понимаешь, что незаметно проскользнуть мимо них вам не удастся. А вступать в открытый бой кажется невероятно плохой затеей, но наверняка должен быть какой-то другой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_BACK_OFF"><![CDATA[
 	<p>
-		You tell Claire that you need some time to think about how to get past these guards, and, using the stack of wooden crates to remain out of sight, the two of you carefully back off.
+		Ты говоришь Клэр, что тебе нужно время, чтобы обдумать план, и, используя ящики как укрытие, вы осторожно отступаете назад.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_PLAYER_CHALLENGE"><![CDATA[
-	Deciding that the easiest way to get out of here is by fighting your way past these four SWORD Enforcers, you step forwards and tell them to get out of your way.
+	Решив, что самый простой способ выбраться отсюда — это пробиться силой сквозь этих четверых Enforcer из SWORD, ты делаешь шаг вперед и приказываешь им убраться с дороги.
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_GUARD_RESPONSE_1"><![CDATA[
-	[npc.speech(Who the fuck are you?! How did you get in here?)] [npc.name] exclaims, before turning to [npc.her] subordinates and commanding, [npc.speech(Take [pc.herHim] down!)]
+	[npc.speech(Ты еще кто, блять?! Как ты сюда попал?!)] — восклицает [npc.name], после чего поворачивается к подчиненным [npc.her] и командует: [npc.speech(Свалите [pc.herHim]!)]
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_GUARD_RESPONSE_2"><![CDATA[
-	[npc.speech(You don't know what you're in for,)] [npc.name] says, unslinging [npc.her] [npc.mainWeapon].
+	[npc.speech(Ты еще не знаешь, во что ввязался,)] [npc.name] произносит, перекидывая через плечо [npc.her] [npc.mainWeapon].
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ENTRANCE_GUARD_RESPONSE_3"><![CDATA[
-	Taking aim at you with [npc.her] [npc.mainWeapon], [npc.name] prepares to support [npc.her] comrades in subduing you.
-	]]>
+	<htmlContent tag="ENTRANCE_GUARD_RESPONSE_3"><![CDATA[Нацелив на тебя [npc.her] [npc.mainWeapon], [npc.name] готовится помочь своим товарищам [npc.her], чтобы усмирить тебя.]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_GUARD_RESPONSE_4"><![CDATA[
-	[npc.speech(Finally, some action!)] [npc.name] growls.
+	[npc.speech(Наконец-то хоть какое-то веселье!)] рычит [npc.name].
 	]]>
 	</htmlContent>
 	
@@ -717,21 +711,24 @@
 	
 	<htmlContent tag="AFTER_ENTRANCE_VICTORY"><![CDATA[
 	<p>
-		As the last of the SWORD guards slumps down, defeated, Claire moves out from her hiding place and rushes forwards,
+		Когда последний из стражей SWORD оседает на землю, поверженный, Клэр выбирается из своего укрытия и бросается вперед,
 		#IF(claire.getLust()>75)
-			 moaning, [claire.speech(~Aah!~ Y-You actually beat them all?! Are they ok?!)]
+
+			стоная: [claire.speech(~Аах!~ Т-ты правда одолел их всех?! С ними всё в порядке?!)]
 		#ELSE
-			 hissing, [claire.speech(You actually beat them all?! Are they ok?!)]
+
+			шипя: [claire.speech(Ты и правда разгромил их всех?! С ними всё хорошо?!)]
 		#ENDIF
 	</p>
 	<p>
-		[pc.speech(I'm sure they'll be fine,)] you reply.
+		[pc.speech(Уверен, с ними всё будет в порядке,)] отвечаешь ты.
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-			After moving between each of the dazed Enforcers to make sure that they'll be alright, Claire turns towards you. Still struggling to control her overwhelming lust, she starts subconsciously groping her breasts with one hand as she tuts, [claire.speech(W-Well, I don't know why you had to attack them like that; if this were in any other situation I'd have to arrest you for what you just did! ~Mmm!~ A-Anyway, let's just never speak of this again, ok? Oh, and don't even think about trying to take any of [npc.her] gear or anything; that'd be a sure-fire way to get SWORD chasing after you for the rest of your life! ~Aah!~ As it is right now, they might not even report this out of embarrassment at being defeated by just one person.)]
+
+			Убедившись, что с каждым из ошеломленных Enforcer всё в порядке, Клэр поворачивается к тебе. Всё еще пытаясь совладать с бушующей в ней похотью, она неосознанно начинает ласкать свою грудь одной рукой и, цокая языком, говорит: [claire.speech(Н-ну, не знаю, зачем тебе пришлось так на них нападать; будь это любая другая ситуация, мне пришлось бы арестовать тебя за такое! ~Ммм!~ В-в любом случае, давай просто сделаем вид, что этого не было, ладно? О, и даже не думай пытаться стащить чьё-нибудь [npc.her] снаряжение или что-то еще; это верный способ заставить SWORD гоняться за тобой до конца жизни! ~Аах!~ Сейчас они, может, даже не доложат об этом из-за стыда за то, что их одолел всего один человек.)]
 		#ELSE
-			After moving between each of the dazed Enforcers to make sure that they'll be alright, Claire turns towards you and puts her hands on her hips, before tutting, [claire.speech(Well, I don't know why you had to attack them like that; if this were in any other situation I'd have to arrest you for what you just did! Anyway, let's just never speak of this again, ok? Oh, and don't even think about trying to take any of [npc.her] gear or anything; that'd be a sure-fire way to get SWORD chasing after you for the rest of your life! As it is right now, they might not even report this out of embarrassment at being defeated by just one person.)]
+			Обойдя каждого из ошеломленных Enforcer, чтобы убедиться, что с ними всё в порядке, Клэр поворачивается к тебе и упирает руки в бока, после чего цокает языком: [claire.speech(Ну, не знаю, зачем тебе пришлось так на них нападать; будь это любая другая ситуация, мне пришлось бы арестовать тебя за то, что ты только что натворил! Впрочем, давай просто больше никогда об этом не будем вспоминать, ладно? О, и даже не вздумай пытаться прихватить какое-нибудь снаряжение [npc.her] или что-то в этом роде; это верный способ заставить SWORD гоняться за тобой до конца жизни! Сейчас они могут даже не доложить об этом из чистого стыда за то, что их одолел всего один человек.)]
 		#ENDIF
 	</p>
 	<p>
@@ -745,24 +742,24 @@
 	
 	<htmlContent tag="AFTER_ENTRANCE_VICTORY_ESCAPE"><![CDATA[
 	<p>
-		Looking around as you step out into the fresh air, you see that you're in a deserted back-road, with a huge concrete office-block on the opposite side to the warehouse you've just exited. Recognising where you are, Claire exclaims,
+		Выйдя на свежий воздух и оглядевшись, ты понимаешь, что находишься на пустынной проселочной дороге, а напротив склада, из которого ты только что вышел, возвышается огромный бетонный офисный блок. Узнав это место, Клэр восклицает:
 		#IF(claire.getLust()>75)
-			 [claire.speech(~Ooh!~ That's the back of the Enforcer Headquarters! I can finally find somewhere to get some release! C-Come on, this way!)]
+			 [claire.speech(~Ох!~ Это же задний двор штаб-квартиры Enforcer! Наконец-то я найду место, где смогу немного разрядиться! П-пошли, сюда!)]
 		#ELSE
-			 [claire.speech(That's the back of the Enforcer Headquarters! Come on, this way!)]
+			 [claire.speech(Это задний двор штаб-квартиры Enforcer! Пошли, сюда!)]
 		#ENDIF
 	</p>
 	<p>
-		Trusting in Claire's sense of direction, you follow her as she jogs off down the road, and, sure enough, after turning the corner, you find yourself stepping out onto the main street in front of Dominion's Enforcer Headquarters. Turning to face you, the little cat-girl Enforcer lets out a relieved sigh and says, [claire.speech(That was a close one... Let's never mention what we just went through to anyone else, ok? If the Enforcers discover that I allowed you to learn teleport, we'd both be in big trouble...)]
+		Доверившись чувству направления Клэр, ты следуешь за ней. Она бежит по дороге, и, как и ожидалось, за поворотом ты оказываешься на главной улице прямо перед штаб-квартирой Enforcer в Dominion. Повернувшись к тебе, маленькая кошкодевочка-Enforcer облегченно вздыхает и говорит: [claire.speech(Пронесло... Давай больше никому не рассказывать о том, через что мы только что прошли, ладно? Если Enforcer узнают, что я позволила тебе освоить телепортацию, нам обоим несдобровать...)]
 	</p>
 	<p>
-		Agreeing to keep your warehouse experience a secret, you ask Claire if she knows the way back to her post from here.
+		Согласившись оставить ваше приключение на складе в секрете, ты спрашиваешь Клэр, знает ли она дорогу обратно к своему посту.
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-			[claire.speech(~Mmm!~ Y-Yeah, it's just down the road,)] she sensually replies, and, clearly desperate to find somewhere where she can masturbate, she continues, [claire.speech(I-I'd better get going right now, before anyone notices that I'm missing! ~Mmm!~ T-Thanks for getting me out of that warehouse, [pc.name]. Come and visit me down in Submission again some time!)]
+			[claire.speech(~Ммм!~ Д-да, это совсем рядом,)] — соблазнительно отвечает она. Очевидно, отчаянно желая найти место, где можно заняться мастурбацией, она продолжает: [claire.speech(М-мне лучше поспешить, пока никто не заметил, что меня нет! ~Ммм!~ С-спасибо, что вытащил меня из того склада, [pc.name]. Приходи ко мне в Submission как-нибудь еще!)]
 		#ELSE
-			[claire.speech(Oh, yeah, it's just down the road,)] she replies, [claire.speech(I'd better get going right now, before anyone notices that I'm missing. Thanks for getting me out of that warehouse, [pc.name]. Come and visit me down in Submission again some time!)]
+			[claire.speech(О, да, это совсем рядом,)] — отвечает она, — [claire.speech(Мне лучше поспешить, пока никто не заметил, что меня нет. Спасибо, что вытащил меня из того склада, [pc.name]. Приходи ко мне в Submission как-нибудь еще!)]
 		#ENDIF
 	</p>
 	]]>
@@ -770,7 +767,7 @@
 	
 	<htmlContent tag="AFTER_ENTRANCE_VICTORY_ESCAPE_END"><![CDATA[
 	<p>
-		You tell Claire that you'll see her later, and after she's thanked you once again for helping her to escape without being detected, she rushes off down the street towards the nearest entrance to Submission. With nothing more to do here, you similarly set off down the road as you continue on your way...
+		Ты говоришь Клэр, что увидишься с ней позже, и после того как она еще раз благодарит тебя за помощь в незаметном побеге, она спешит прочь по улице к ближайшему входу в Submission. Дела здесь больше нет, и ты так же отправляешься в путь, продолжая свое путешествие...
 	</p>
 	]]>
 	</htmlContent>
@@ -780,33 +777,33 @@
 	
 	<htmlContent tag="AFTER_ENTRANCE_DEFEAT"><![CDATA[
 	<p>
-		Unable to withstand the combined attacks of the four SWORD guards, you collapse back against a nearby crate, before slumping to the floor, defeated. With a sadistic smile on [npc.her] face, [npc.name] steps up in front of and says, [npc.speech(I think at the very least I can have you charged with trespass, resisting arrest, and assault on an Enforcer. You know what that means?)]
+		Не в силах выдержать натиск четверых стражников SWORD, ты откидываешься на стоящий рядом ящик, а затем бессильно оседаешь на пол, поверженный. С садистской ухмылкой на [npc.her] лице, [npc.name] подходит к тебе и произносит: [npc.speech(Думаю, как минимум, я смогу предъявить тебе обвинения в незаконном проникновении, сопротивлении при аресте и нападении на Enforcer. Знаешь, что это значит?)]
 	</p>
 	#IF(game.isNonConEnabled())
 		<p>
-			Before you can offer a reply, two of [npc.her] subordinates roughly push you to the ground, before twisting your [pc.arms] behind your back and locking you in handcuffs. Squatting down in front of you, [npc.name] continues, [npc.speech(It means that this was your last day as a free citizen. You know, I can't really be bothered to fill out the paperwork right now, so how about you spend a day locked up somewhere nice and safe, and I'll come and deal with you tomorrow.)]
+			Прежде чем ты успеваешь что-то ответить, двое подчиненных [npc.her] грубо толкают тебя на землю, после чего выкручивают твои [pc.arms] за спину и застегивают наручники. Присев перед тобой, [npc.name] продолжает: [npc.speech(Это значит, что сегодня был твой последний день в качестве свободного гражданина. Знаешь, мне сейчас неохота возиться с бумагами, так что давай ты проведешь день взаперти, в каком-нибудь приятном и безопасном месте, а я приду и разберусь с тобой завтра.)]
 		</p>
 		<p>
-			Grabbing you by the [pc.arm], [npc.name] stands back up, pulling you up onto your [pc.feet] as [npc.she] addresses [npc.her] subordinates, [npc.speech(You three go and sweep the warehouse to see if the other units are ok. I'll be back in an hour or so.)]
+			Схватив тебя за [pc.arm], [npc.name] поднимается во весь рост, заставляя тебя встать на [pc.feet], пока [npc.she] обращается к подчиненным [npc.her]: [npc.speech(Вы трое, идите проверьте склад, чтобы убедиться, что с остальными отрядами всё в порядке. Я вернусь где-то через час.)]
 		</p>
 		<p>
-			As the other three guards rush off into the warehouse, [npc.name] drags you out through the nearby door, growling, [npc.speech(Come on, get a move on!)]
+			Пока остальные три стражника устремляются вглубь склада, [npc.name], ворча, [npc.speech(Живее, шевелись!)] тащит тебя через ближайшую дверь.
 		</p>
 		<p>
-			In your dazed, post-defeat state, you're vaguely aware of the fact that the warehouse was located just behind Dominion's main Enforcer Headquarters, but instead of leading you inside to be thrown into the cells, [npc.name] starts dragging you off down the street. As you wonder whether Claire's got caught as well, you hear the [npc.race] muttering to [npc.herself], [npc.speech(I'm going to enjoy fucking you in front of everyone...)]
+			В оцепенении после поражения ты смутно осознаешь, что склад находился прямо за главным штабом Enforcer в Dominion, но вместо того, чтобы затащить тебя внутрь и бросить в камеры, [npc.name] начинает тащить тебя прочь по улице. Пока ты гадаешь, не поймали ли Клэр, ты слышишь, как [npc.race] бормочет [npc.herself]: [npc.speech(Я получу истинное удовольствие, трахая тебя на глазах у всех...)]
 		</p>
 	#ELSE
 		<p>
-			Before you can offer a reply, two of [npc.her] subordinates roughly push you to the ground, before twisting your [pc.arms] behind your back and locking you in handcuffs. Squatting down in front of you, [npc.name] continues, [npc.speech(It means that this was your last day as a free citizen. You know, I can't really be bothered to fill out the paperwork right now, so how about you spend a day locked up somewhere nice and safe, and I'll come and deal with you tomorrow.)]
+			Прежде чем ты успеваешь что-то ответить, двое подчиненных [npc.her] грубо толкают тебя на землю, после чего выкручивают твои [pc.arms] за спину и застегивают наручники. Присев перед тобой, [npc.name] продолжает: [npc.speech(Это значит, что сегодня был твой последний день в качестве свободного гражданина. Знаешь, мне сейчас неохота возиться с бумагами, так что давай ты проведешь день взаперти, в каком-нибудь приятном и безопасном месте, а я приду и разберусь с тобой завтра.)]
 		</p>
 		<p>
-			Grabbing you by the [pc.arm], [npc.name] stands back up, pulling you up onto your [pc.feet] as [npc.she] addresses [npc.her] subordinates, [npc.speech(You three go and sweep the warehouse to see if the other units are ok. I'll be back in an hour or so.)]
+			Схватив тебя за [pc.arm], [npc.name] поднимается во весь рост, заставляя тебя встать на [pc.feet], пока [npc.she] обращается к подчиненным [npc.her]: [npc.speech(Вы трое, идите проверьте склад, чтобы убедиться, что с остальными отрядами всё в порядке. Я вернусь где-то через час.)]
 		</p>
 		<p>
-			As the other three guards rush off into the warehouse, [npc.name] drags you out through the nearby door, growling, [npc.speech(Come on, get a move on!)]
+			Пока остальные три стражника устремляются вглубь склада, [npc.name], ворча, [npc.speech(Живее, шевелись!)] тащит тебя через ближайшую дверь.
 		</p>
 		<p>
-			In your dazed, post-defeat state, you're vaguely aware of the fact that the warehouse was located just behind Dominion's main Enforcer Headquarters, and after just a few minutes, you find yourself being dragged inside. As you stumble down the corridor behind the [npc.race], you realise that [npc.sheIs] leading you to the cells...
+			В оцепенении после поражения ты смутно осознаешь, что склад находился прямо за главным штабом Enforcer в Dominion, и всего через несколько минут тебя затаскивают внутрь. Пока ты спотыкаешься в коридоре вслед за [npc.race], до тебя доходит, что [npc.sheIs] ведет тебя прямиком в камеры...
 		</p>
 	#ENDIF
 	]]>
@@ -817,41 +814,40 @@
 	
 	<htmlContent tag="ENTRANCE_LIGHTNING_GLOBE"><![CDATA[
 	<p>
-		Realising that trying to fight your way past four heavily-armed and armoured SWORD Enforcers is not a very good idea, you try to think of another way to get past them and escape from the warehouse. After a moment of all sorts of ideas running through your head, you suddenly remember the curious weapon you found earlier. Holding the small arcane lightning globe up in front of you, you wonder if you could somehow channel your aura into it in order to trigger a lightning discharge of the same sort that hit you and Claire. Perhaps if you were able to do that, and get it to hit all of the guards, they'd be so turned on that they wouldn't notice you and Claire sneaking past them... 
+		Понимая, что пытаться прорваться сквозь четырех тяжело вооруженных и закованных в броню Enforcer из SWORD — затея так себе, ты пытаешься придумать другой способ обойти их и сбежать со склада. После мгновения, когда в голове проносится куча разных идей, ты вдруг вспоминаешь о том странном оружии, что нашел раньше. Держишь перед собой маленький арканный шар с молнией и гадаешь: а можно ли направить в него свою ауру, чтобы вызвать такой же разряд, который ударил в тебя и Клэр? Возможно, если тебе это удастся и ты попадешь сразу во всех стражников, они так возбудятся, что не заметят, как ты и Клэр проскользнете мимо них...
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-			With this idea in your head, you tell Claire what you're about to do. Letting out a horny little huff, she gives you her thoughts on the matter, [claire.speech(~Ooh!~ W-Well, I don't know if that's going to work, but I can't think of anything better right now...)]
+			С этой идеей в голове ты рассказываешь Клэр о своем плане. Издав томный, похотливый вздох, она высказывает свое мнение: [claire.speech(~О-о!~ Н-ну, не знаю, сработает ли это, но лучше пока ничего и не придумаешь...)]
 		#ELSE
-			With this idea in your head, you tell Claire what you're about to do. Letting out a little huff, she gives you her thoughts on the matter, [claire.speech(Well, I don't know if that's going to work, but I can't think of anything better...)]
+			С этой идеей в голове ты рассказываешь Клэр о своем плане. Издав короткий вздох, она высказывает свое мнение: [claire.speech(Ну, не знаю, сработает ли это, но лучше пока ничего не придумаешь...)]
 		#ENDIF
 	</p>
 	<p>
-		Confident that your plan is sure to succeed, you turn your attention back towards the little crystal globe in your [pc.hand]. Just like before, as it's come into contact with someone, the interior of the glass sphere is now filled with jumping arcs of arcane lightning. Concentrating on channelling all of your aura into this strange weapon, you instinctively feel as though the energy contained with is getting more and more unstable. Just as you sense that it can't take any more, you peek around the corner and roll the globe towards the group of Enforcers.
+		Уверенный в успехе своего плана, ты вновь переключаешь внимание на маленький хрустальный шар в своих [pc.hand]. Как и прежде, при контакте с кем-то внутри стеклянной сферы заплясали разряды арканальной молнии. Сосредоточившись на том, чтобы направить всю свою ауру в это странное оружие, ты инстинктивно чувствуешь, как заключенная в нем энергия становится всё более нестабильной. Как только ты ощущаешь, что предел близок, ты выглядываешь из-за угла и катишь шар в сторону группы Enforcer.
 	</p>
 	<p>
-		[claire.speech(Take cover!)] Claire hisses at you, pulling you back behind the boxes. As the worried cat-girl pulls you in tight against her massive breasts, a bright purple flash of arcane lightning temporarily illuminates your surroundings, letting you know that the arcane discharge was successful.
+		[claire.speech(В укрытие!)] — шипит тебе Клэр, увлекая за собой за ящики. Пока обеспокоенная кошкодевочка прижимает тебя к своей массивной груди, яркая фиолетовая вспышка арканальной молнии на мгновение освещает всё вокруг, давая понять, что магический разряд сработал.
 	</p>
 	<p>
-		[npc.speech(Fuck... W-What was that?!)] you hear one of the Enforcers shout, [npc.her] voice already taking on a sensual tone.
+		[npc.speech(Бля... Ч-что это было?!)] — слышишь ты крик одного из Enforcer, чей [npc.her] уже начинает звучать соблазнительно.
 	</p>
 	<p>
-		[npc2.speech(An arcane storm?)] another replies, [npc2.speech(How did it get in here? Fuck... I-I think it's getting to me...)]
+		[npc2.speech(Арканальный шторм?)] — отвечает другой, [npc2.speech(Как он здесь оказался? Бля... К-кажется, меня начинает накрывать...)]
 	</p>
 	<p>
-		[npc3.speech(Shut up and kiss me already!)] yet another calls out, followed by the muffled [npc3.moans] of [npc3.herHim] pulling one of [npc3.her] comrades into a passionate kiss.
+		[npc3.speech(Да заткнись ты и просто поцелуй меня!)] — выкрикивает еще один, после чего доносится приглушенный [npc3.moans] [npc3.herHim], притягивающей одного из своих [npc3.her] товарищей для страстного поцелуя.
 	</p>
 	<p>
-		[npc.speech(P-Pull yourself together,)] the first voice calls out again.
+		[npc.speech(В-возьми себя в руки,)] — снова доносится первый голос.
 	</p>
 	<p>
-		[npc4.speech(Come on, boss, you're so uptight all the time,)] the fourth Enforcer replies, [npc4.speech(You can afford to relax every now and again...)]
+		[npc4.speech(Да ладно тебе, босс, ты вечно такой натянутый как струна,)] — отвечает четвертый Enforcer, — [npc4.speech(Тебе не помешало бы хоть иногда расслабиться...)]
 	</p>
 	<p>
-		Peeking around the corner once again, you see that all four of the SWORD guards have started to passionately make out with one another. Abandoning their posts, they've split off into two pairs, and are far too busy kissing and groping one other to be paying attention to their surroundings. Taking this opportunity to make your move, you tell Claire to stay close, before starting to sneak over towards the warehouse doors. Thankfully, the Enforcers are so preoccupied with starting to fuck one another that they don't even glance your way, and not only are you able to approach the exit without issue, but you're also able to sneak across and pick up the lightning globe.
+		Снова заглянув за угол, ты видишь, что все четверо стражников SWORD вовсю страстно целуются. Бросив свои посты, они разделились на две пары и теперь слишком заняты поцелуями и ласками, чтобы обращать внимание на окружающих. Пользуясь случаем, ты велишь Клэр держаться поближе и начинаешь пробираться к дверям склада. К счастью, Enforcer настолько увлечены процессом траха друг друга, что даже не смотрят в твою сторону. Это позволяет тебе не только без проблем подойти к выходу, но и незаметно проскользнуть мимо, чтобы подобрать грозовой шар.
 	</p>
-	<p>
-		Eager to finally get out of this place, you quietly unlock the door, before pushing it open and making good your escape...
+	<p>		Сгорая от желания наконец выбраться отсюда, ты тихо отпираешь дверь, толкаешь её и совершаешь свой побег...
 	</p>
 	]]>
 	</htmlContent>
@@ -861,32 +857,31 @@
 	
 	<htmlContent tag="ENTRANCE_TELEPATHIC_TRICKERY"><![CDATA[
 	<p>
-		Realising that trying to fight your way past four heavily-armed and armoured SWORD Enforcers is not a very good idea, you try to think of another way to get past them and escape from the warehouse. After a moment of all sorts of ideas running through your head, you suddenly realise that you might be able to use your telepathic abilities in order to distract them. If you were to relay a message into the mind of the leader of these Enforcers, you might be able to trick them into abandoning their posts...
+		Понимая, что пытаться прорваться сквозь четырех тяжело вооруженных и закованных в броню Enforcer из SWORD — затея так себе, ты пытаешься придумать другой способ миновать их и сбежать со склада. После того как в голове проносится куча разных идей, тебя внезапно осенило: ты можешь использовать свои телепатические способности, чтобы отвлечь их. Если ты передашь сообщение прямо в разум лидера этих Enforcer, то сможешь обманом заставить их оставить свои посты...
 	</p>
 	<p>
 		#IF(claire.getLust()>75)
-			With this idea in your head, you tell Claire what you're about to do. Letting out a horny little huff, she gives you her thoughts on the matter, [claire.speech(~Ooh!~ W-Well, I don't know if that's going to work, but I can't think of anything better right now...)]
+			С этой идеей в голове ты рассказываешь Клэр о своем плане. Издав томный, похотливый вздох, она высказывает свое мнение: [claire.speech(~О-о!~ Н-ну, не знаю, сработает ли это, но лучше пока ничего и не придумаешь...)]
 		#ELSE
-			With this idea in your head, you tell Claire what you're about to do. Letting out a little huff, she gives you her thoughts on the matter, [claire.speech(Well, I don't know if that's going to work, but I can't think of anything better...)]
+			С этой идеей в голове ты рассказываешь Клэр о своем плане. Издав короткий вздох, она высказывает свое мнение: [claire.speech(Ну, не знаю, сработает ли это, но лучше пока ничего не придумаешь...)]
 		#ENDIF
 	</p>
 	<p>
-		Confident that your plan is sure to succeed, you peek around the corner of the crates, and, setting your sights on [npc.name], who's quite obviously the one in charge, you cast your telepathy spell and project your voice directly into [npc.her] mind, [pc.thought(~Mwhaha!~ Your other SWORD friends can't save you now! I was lucky to catch you alone!)]
+		Уверенный в успехе своего плана, ты выглядываешь из-за ящиков, целясь в [npc.name] — очевидного предводителя. Ты произносишь заклинание телепатии, проецируя свой голос прямо в разум [npc.her], [pc.thought(~Мва-ха-ха!~ Твоим друзьям из SWORD теперь тебя не спасти! Мне повезло застать тебя в одиночестве!)]
 	</p>
 	<p>
-		[npc.speech(What, who's there?)] [npc.name] calls out, unslinging [npc.her] [npc.mainWeapon] and pointing it down the corridor into the warehouse.
+		[npc.speech(Что, кто здесь?)] — выкрикивает [npc.name], сбрасывая с плеча [npc.her] [npc.mainWeapon] и направляя его вдоль коридора вглубь склада.
+	</p><p>
+		[npc2.speech(Что случилось?)] [npc2.name] спрашивает у своего командира [npc2.her], подражая движениям [npc.her] и выхватывая собственное оружие [npc2.her].
 	</p>
 	<p>
-		[npc2.speech(What's wrong?)] [npc2.name] asks [npc2.her] superior, mimicking [npc.her] movements and drawing [npc2.her] own weapon.
+		[npc.speech(Я только что услышал голос в голове; казалось, кто-то злорадствует над тем, что одолел одного из наших стражников!)] — объясняет [npc.name], после чего командует: [npc.speech(Живее, нужно идти на помощь! Запри ту дверь, и пошли!)]
 	</p>
 	<p>
-		[npc.speech(I just heard a voice in my head; it sounded as though someone was gloating over having defeated one of our other guards!)] [npc.name] explains, before ordering, [npc.speech(Come on, we need to go and help! Lock that door and then let's go!)]
+		Повинуясь приказу [npc.namePos], [npc3.name] бросается вперед, чтобы запереть главную дверь склада, а затем спешит вслед за тремя товарищами [npc3.her] вглубь помещения. Ты и Клэр плотно прижимаешься друг к другу в укрытии, пока мимо проносятся Enforcer, и лишь когда они скрываются в недрах склада, вы синхронно выдыхаете с облегчением. Понимая, что пройдет всего пара минут, прежде чем Enforcer поймут, что их обманули, ты говоришь Клэр, что пора действовать, и вы оба бросаетесь к выходу.
 	</p>
 	<p>
-		Obeying [npc.namePos] command, [npc3.name] rushes forwards to lock the main door of the warehouse, before joining [npc3.her] three comrades in rushing off into the warehouse. You and Claire press tightly against one another in your hiding place as the Enforcers rush past you, before letting out a joint sigh of relief as they disappear off into the interior of the warehouse. Knowing that it'll only be a few minutes before the Enforcers realise that they've been tricked, you tell Claire that now's the time to make your move, before rushing over towards the exit.
-	</p>
-	<p>
-		Eager to finally get out of this place, you quickly unlock the door, before pushing it open and making good your escape...
+		Жаждая поскорее выбраться из этого места, ты быстро отпираешь дверь, а затем толкаешь её и совершаешь свой побег...
 	</p>
 	]]>
 	</htmlContent>
@@ -896,48 +891,48 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SENT_TO_STOCKS"><![CDATA[
 	<p>
-		After about a twenty-minute walk, during which time you've received all sorts of strange looks and comments from members of the public, you and the [npc.race] Enforcer finally reach your destination, which turns out to be none other than Slaver Alley.
+		Спустя примерно двадцать минут ходьбы, в течение которых на тебя сыпались самые разные странные взгляды и комментарии прохожих, ты и [npc.race] Enforcer наконец добираешься до места назначения, которое оказывается не чем иным, как Переулком Рабов.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_seanIntroduced))
-			 Leading you up to the public stocks which are prominently positioned just a short way in from the entrance, your captor calls out to [sean.name], who, as ever, is standing guard in this area, [npc.speech(Hey, Constable, I've a soon-to-be slave here. You got room for [pc.herHim] for the next twenty-four hours or so?)]
+			Подводя тебя к общественным колодкам, которые стоят на самом видном месте сразу за входом, твой похититель окликает [sean.name], который, как обычно, стоит на страже в этой зоне: [npc.speech(Эй, констебль! У меня тут почти готовая рабыня. Найдется место для [pc.herHim] часов на двадцать четыре?)]
 		#ELSE
-			 Leading you up to the public stocks which are prominently positioned just a short way in from the entrance, your captor calls out to the Enforcer assigned to guard duty here, [npc.speech(Hey, Constable, I've a soon-to-be slave here. You got room for [pc.herHim] for the next twenty-four hours or so?)]
+			Подводя тебя к общественным колодкам, которые стоят на самом видном месте сразу за входом, твой похититель окликает дежурного Enforcer: [npc.speech(Эй, констебль! У меня тут почти готовая рабыня. Найдется место для [pc.herHim] часов на двадцать четыре?)]
 		#ENDIF
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_seanIntroduced))
 		<p>
-			[sean.speech([pc.Name]?! What have you gotten yourself into?)] [sean.name] exclaims as he sees that it's you.
+			[sean.speech([pc.Name]?! Во что же ты вляпалась?)] — восклицает [sean.name], узнав тебя.
 		</p>
 		<p>
-			Before any answer can be given, the [npc.race] snaps, [npc.speech(I hope you aren't on friendly terms with this criminal, Constable! If you are, I'll have to report it!)]
+			Прежде чем ты успеваешь ответить, [npc.race] резко бросает: [npc.speech(Надеюсь, вы не в дружеских отношениях с этой преступницей, констебль! Если это так, мне придется доложить об этом!)]
 		</p>
 		<p>
-			[sean.speech(Hey, there's no need for that!)] [sean.name] replies, before stepping forwards and starting to lead you over to a nearby set of stocks, [sean.speech(Come on, let me help you lock [pc.herHim] into this one over here.)]
+			[sean.speech(Эй, ну зачем же так резко!)] — отвечает [sean.name], после чего делает шаг вперед и ведет тебя к стоящим неподалеку колодкам. [sean.speech(Давай, помогу тебе приковать [pc.herHim] вот к этим.)]
 		</p>
 		<p>
-			Clearly having no choice but to cooperate with the SWORD Enforcer, [sean.name] helps [npc.name] strip you naked, before pushing your head and [pc.arms] through the stocks' open holes. Closing the wooden device, he locks it shut with a big iron padlock, trapping you in place. Walking off back to his station, he calls out, [sean.speech(There you go, [npc.sheIs] all yours. Have fun...)]
+			Очевидно, не имея иного выбора, кроме как сотрудничать с Enforcer из SWORD, [sean.name] помогает [npc.name] раздеть тебя догола, а затем просовывает твою голову и [pc.arms] сквозь отверстия колодок. Захлопнув деревянное устройство, он запирает его на массивный железный навесной замок, намертво фиксируя тебя на месте. Уходя обратно к своему посту, он бросает напоследок: [sean.speech(Ну вот и всё, [npc.sheIs] полностью в твоем распоряжении. Развлекайся...)]
 		</p>
 	#ELSE
 		<p>
-			[sean.speech(Sure, let me help you lock [pc.herHim] into this one,)] the Enforcer replies, before stepping forwards and leading you over to a nearby set of stocks, where both he and [npc.name] set about stripping you naked. Pushing your head and [pc.arms] through its open holes, the Enforcer then closes the wooden device, before locking it shut with a big iron padlock, trapping you in place. Walking off back to his station, he calls out, [sean.speech(There you go, [npc.sheIs] all yours. Have fun.)]
+			[sean.speech(Конечно, дай-ка я помогу тебе запереть [pc.herHim] в этих,)] отвечает Enforcer, прежде чем шагнуть вперед и подвести тебя к стоящим неподалеку колодкам, где он и [npc.name] принимаются раздевать тебя догола. Просунув твою голову и [pc.arms] сквозь открытые отверстия, Enforcer закрывает деревянное устройство и запирает его на большой железный замок, удерживая тебя на месте. Уходя обратно к своему посту, он выкрикивает: [sean.speech(Ну вот и всё, [npc.sheIs] полностью в твоем распоряжении. Развлекайся.)]
 		</p>
 	#ENDIF
 	<p>
-		[npc.speech(Oh, I intend to,)] [npc.name] replies, before leaning down to growl in your ear, [npc.speech(Time for me to get some payback!)]
+		[npc.speech(О, я так и намерен,)] отвечает [npc.name], после чего наклоняется, чтобы прорычать тебе на ухо: [npc.speech(Пришло время мне взять свое!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_STOCKS_ENFORCER_SEX"><![CDATA[
 	<p>
-		[npc.speech(You see, this is why nobody fucks with SWORD; <i>we're</i> the ones who always end up doing the fucking!)] [npc.name] laughs, reaching down to grope your body as [npc.she] continues, [npc.speech(Once I've had my fun with you, I'll have you marked as being fully available for public use. Welcome to your new life, bitch.)]
+		[npc.speech(Видишь, вот почему с SWORD лучше не связываться; <i>мы</i> — те, кто в итоге всегда трахает!)] смеется [npc.name], наклоняясь, чтобы лапать твое тело, пока [npc.she] продолжает: [npc.speech(Как только я вдоволь тобой наслажусь, я помечу тебя как полностью доступную для общественного пользования. Добро пожаловать в твою новую жизнь, сучка.)]
 	</p>
 	<p>
 		#IF(npc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			With that, [npc.name] steps around behind you, reaching down to give your [pc.ass+] a rough squeeze before taunting,
+			С этими словами [npc.name] обходит тебя сзади, протягивает руку, чтобы грубо сжать твою [pc.ass+], и насмешливо произносит:
 		#ELSE
-			With that, [npc.name] steps up in front of you, bringing [npc.her] groin right up to your [pc.face] as [npc.she] taunts,
+			С этими словами [npc.name] выступает вперед, прижимая [npc.her] пах почти вплотную к твоим [pc.face], пока [npc.she] насмехается,
 		#ENDIF
-		 [npc.speech(Time to show everyone what a worthless slut you are!)]
+		 [npc.speech(Пора показать всем, какая ты никчемная шлюха!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -947,24 +942,24 @@
 	
 	<htmlContent tag="AFTER_STOCKS_ENFORCER_SEX"><![CDATA[
 	<p>
-		Letting out a deeply-satisfied growl, the [npc.race] steps back, before getting [npc.her] uniform in order again. As [npc.she] does so, you hear several members of the crowd speculating on whether you're going to be marked for public use or not.
+		Издавая глубоко удовлетворенный рык, [npc.race] отступает назад, прежде чем снова привести [npc.her] форму в порядок. Пока [npc.she] это делает, ты слышишь, как несколько человек в толпе гадают, пометят ли тебя для общественного пользования или нет.
 	</p>
 	<p>
 		After [npc.sheHas] sorted [npc.her] uniform out, the [npc.race] lets an evil grin settle on [npc.her] face, and in a voice loud enough for the crowd to hear, [npc.she] says, [npc.speech(That was a good fuck, bitch. I'll be back tomorrow to get you registered as a slave. Until then, I'll leave you marked as being fully available for public use, just like I promised.)]
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_seanIntroduced))
 		<p>
-			With one last evil laugh, [npc.she] walks over to [sean.name], and after exchanging a few brief words with him, heads off back to her post at the SWORD warehouse. As [npc.she] departs, [sean.name] walks up to you, before making some marks on your set of stocks with a white chalk. Letting out a sigh, he says, [sean.speech(I don't know exactly what it is you've done, but if I don't do as I'm told and mark you up as being free for public use, then I'll end up in the stocks as well. Sorry about this...)]
+			Издав последний злобный смешок, [npc.she] подходит к [sean.name], обменивается с ним парой коротких фраз и направляется обратно на свой пост на складе SWORD. Когда [npc.she] уходит, [sean.name] подходит к тебе и делает несколько пометок на твоих колодках белым мелом. Тяжело вздохнув, он говорит: [sean.speech(Не знаю точно, что ты натворила, но если я не сделаю то, что мне велели, и не помечу тебя как доступную для всех, то сам окажусь в этих колодках. Прости за это...)]
 		</p>
 		<p>
-			With that, [sean.name] heads off back to his post, and just a few moments later, the first members of the public wanting to use you step forwards...
+			С этими словами [sean.name] возвращается на свой пост, и всего через несколько мгновений вперед выходят первые желающие воспользоваться тобой...
 		</p>
 	#ELSE
 		<p>
-			With one last evil laugh, [npc.she] walks over to the Enforcer who locked you into the stocks, and after exchanging a few brief words with him, heads off back to her post at the SWORD warehouse. As [npc.she] departs, the Enforcer on duty walks up to you, before making some marks on your set of stocks with a white chalk. Turning towards the crowd, he says, [sean.speech(Right, [pc.sheIs] all yours.)]
+			Издав напоследок злобный смешок, [npc.she] подходит к Enforcer'у, который заковал тебя в колодки, обменивается с ним парой коротких фраз и направляется обратно на свой пост на складе SWORD. Пока [npc.she] уходит, дежурный Enforcer подходит к тебе и делает несколько пометок на твоих колодках белым мелом. Повернувшись к толпе, он говорит: [sean.speech(Ладно, [pc.sheIs] полностью в вашем распоряжении.)]
 		</p>
 		<p>
-			As the Enforcer heads off back to his post, the first members of the public wanting to use you step forwards...
+			Как только Enforcer возвращается на свой пост, первые из желающих тобой воспользоваться люди делают шаг вперед...
 		</p>
 	#ENDIF
 	]]>
@@ -975,32 +970,32 @@
 	
 	<htmlContent tag="STOCKS_RANDOMS"><![CDATA[
 	<p>
-		You look up to see two figures before you; [npc.name(a)] and [npc2.name(a)]. Obviously knowing one another quite well, [npc.name(the)] turns towards [npc.her] friend and, with a big grin on [npc.her] face, asks, [npc.speech(You want to use [pc.her] mouth then?)]
+		Ты поднимаешь взгляд и видишь перед собой две фигуры: [npc.name(a)] и [npc2.name(a)]. Очевидно, они очень хорошо знакомы друг с другом; [npc.name(the)] поворачивается к подруге [npc.her] и с широкой ухмылкой на лице [npc.her] спрашивает: [npc.speech(Хочешь тогда заняться [pc.her] ртом?)]
 	</p>
 	<p>
-		[npc2.speech(Yeah, you can fuck [pc.herHim], I'll use [pc.her] mouth,)] [npc2.name] replies, grinning down at you as [npc2.she] steps up in front of you.
+		[npc2.speech(Да, ты можешь трахать [pc.herHim], а я займусь [pc.her] ртом,)] — отвечает [npc2.name], ухмыляясь тебе сверху вниз, пока [npc2.she] подходит к тебе вплотную.
 	</p>
 	<p>
-		[npc.speech(I bet I can last longer than you can,)] [npc.name] teases [npc.her] partner, stepping around behind you before reaching down to grope your [pc.ass+].
+		[npc.speech(Спорим, я продержусь дольше тебя,)] — дразнит [npc.name] партнера [npc.her], обходя тебя сзади и наклоняясь, чтобы бесцеремонно схватить твою [pc.ass+].
 	</p>
 	<p>
-		[npc2.speech(Yeah, sure,)] [npc2.name] replies, and with no regard as to what you think or want, the two of them prepare to start fucking you...
+		[npc2.speech(Ага, конечно,)] — отвечает [npc2.name], и, совершенно не заботясь о том, что ты думаешь или чего хочешь, они вдвоем готовятся начать тебя трахать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_STOCKS_RANDOM_SEX"><![CDATA[
 	<p>
-		[npc2.speech(Be a good [pc.girl] and get that tongue of yours working,)] [npc2.name] says, grinning down at you, [npc2.speech(The last slave who gave me oral was really shit at it, so I'm hoping you'll do better.)]
+		[npc2.speech(Будь хорошей [pc.girl], работай языком,)] — говорит [npc2.name], скалясь на тебя, [npc2.speech(Последняя рабыня, которая делала мне минет, была просто никудышной, так что надеюсь, у тебя получится лучше.)]
 	</p>
 	<p>
-		[npc.speech(You're too fussy,)] [npc.name] replies from somewhere behind you, before reaching down to give your [pc.ass+] another squeeze, followed by a light slap. [npc.speech(You know you can't expect much from the trash locked up for public use.)]
+		[npc.speech(Ты слишком привередливая,)] [npc.name] отзывается откуда-то из-за спины, прежде чем наклониться и снова сжать твою [pc.ass+], а затем слегка шлепнуть. [npc.speech(Сама понимаешь, многого не жди от мусора, запертого для общественного пользования.)]
 	</p>
 	<p>
-		[npc2.speech(I guess,)] [npc2.name] replies, before looking down at you again and asking, [npc2.speech(but you'll at least try to satisfy me, won't you?)]
+		[npc2.speech(Наверное,)] отвечает [npc2.name], снова глядя на тебя сверху вниз и спрашивая: [npc2.speech(но ты ведь хотя бы попытаешься меня удовлетворить, а?)]
 	</p>
 	<p>
-		Not bothering to wait for an answer, the pair move forwards and prepare to start fucking you...
+		Не дожидаясь ответа, пара движется вперед, готовясь приняться за то, чтобы трахнуть тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -1010,13 +1005,13 @@
 	
 	<htmlContent tag="AFTER_STOCKS_RANDOM_SEX"><![CDATA[
 	<p>
-		Having had their fun with you, [npc.name] and [npc2.name] put their clothes back on, and without even a backwards glance, they walk off together, speculating on the sorts of slaves that'll be available for them to fuck tomorrow.
+		Насладившись тобой, [npc.name] и [npc2.name] натягивают одежду и, даже не оглядываясь, уходят вместе, рассуждая о том, какие рабыни достанутся им для траха завтра.
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_seanIntroduced))
-			Just as you're wondering what will happen next, another pair step up before you, and, to your amazement, you look up to see that it's none other than Claire and [sean.name]. With a deep sigh, your busty cat-girl friend places her hands on her hips and states, [claire.speech(Yes, that's [pc.herHim]. Please release [pc.herHim] at once.)]
+			Как раз в тот момент, когда ты гадаешь, что будет дальше, перед тобой предстает еще одна пара, и, к твоему изумлению, ты видишь, что это не кто иная, как Клэр и [sean.name]. Тяжело вздохнув, твоя пышногрудая подруга-кошка упирает руки в бока и заявляет: [claire.speech(Да, это [pc.herHim]. Пожалуйста, немедленно отпустите [pc.herHim].)]
 		#ELSE
-			Just as you're wondering what will happen next, another pair step up before you, and, to your amazement, you look up to see that it's none other than Claire and the Enforcer overseer. With a deep sigh, your busty cat-girl friend places her hands on her hips and states, [claire.speech(Yes, that's [pc.herHim]. Please release [pc.herHim] at once.)]
+			Как раз в тот момент, когда ты гадаешь, что будет дальше, перед тобой предстает еще одна пара, и, к твоему изумлению, ты видишь, что это не кто иная, как Клэр и надзиратель Enforcer. Тяжело вздохнув, твоя пышногрудая подруга-кошка упирает руки в бока и заявляет: [claire.speech(Да, это [pc.herHim]. Пожалуйста, немедленно отпустите [pc.herHim].)]
 		#ENDIF
 	</p>
 	]]>
@@ -1028,35 +1023,35 @@
 	<htmlContent tag="STOCKS_SET_FREE"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_seanIntroduced))
 		<p>
-			Doing as he's told, [sean.name] wipes the chalk markings off your stocks, before unlocking and removing the heavy padlock. Pulling up the wooden device, he frees your head and [pc.hands], before turning to Claire and saying, [sean.speech(Right, there you go. As I said, it was SWORD who told me to do it. I'm not exactly going to say no to them.)]
+			Исполняя приказ, [sean.name] стирает мелом отметины с твоих колодок, после чего отпирает и снимает тяжелый навесной замок. Подняв деревянное устройство, он освобождает твою голову и [pc.hands], а затем поворачивается к Клэр и говорит: [sean.speech(Ну вот, готово. Как я уже сказал, это SWORD велели мне это сделать. Я не настолько глуп, чтобы им отказывать.)]
 		</p>
 		<p>
-			[claire.speech(Yes, yes, I know,)] the cat-girl impatiently says, before moving forwards and helping you to your [pc.feet]. As [sean.name] walks off back to his post, Claire asks, [claire.speech(Are you ok? I'm sorry about how long it took for me to get here; I had to get your release papers signed by my boss.)] 
+			[claire.speech(Да-да, знаю,)] — нетерпеливо бросает кошкодевочка, прежде чем подойти и помочь тебе подняться на твои [pc.feet]. Пока [sean.name] уходит обратно на свой пост, Клэр спрашивает: [claire.speech(Ты в порядке? Прости, что так долго; мне нужно было заставить босса подписать твои бумаги на освобождение.)] 
 		</p>
 	#ELSE
 		<p>
-			Doing as he's told, the Enforcer wipes the chalk markings off your stocks, before unlocking and removing the heavy padlock. Pulling up the wooden device, he frees your head and [pc.hands], before turning to Claire and saying, [genericMale.speech(Right, there you go. As I said, it was SWORD who told me to do it. I'm not exactly going to say no to them.)]
+			Исполняя приказ, Enforcer стирает мелом отметины с твоих колодок, после чего отпирает и снимает тяжелый навесной замок. Подняв деревянное устройство, он освобождает твою голову и [pc.hands], а затем поворачивается к Клэр и говорит: [genericMale.speech(Ну вот, готово. Как я уже сказал, это SWORD велели мне это сделать. Я не настолько глуп, чтобы им отказывать.)]
 		</p>
 		<p>
-			[claire.speech(Yes, yes, I know,)] the cat-girl impatiently says, before moving forwards and helping you to your [pc.feet]. As the Enforcer overseer walks off, Claire asks, [claire.speech(Are you ok? I'm sorry about how long it took for me to get here; I had to get your release papers signed by my boss.)] 
+			[claire.speech(Да-да, знаю,)] — нетерпеливо бросает кошкодевочка, прежде чем подойти и помочь тебе подняться на твои [pc.feet]. Пока надзиратель Enforcer уходит, Клэр спрашивает: [claire.speech(Ты в порядке? Прости, что так долго; мне нужно было заставить босса подписать твои бумаги на освобождение.)] 
 		</p>
 
 	#ENDIF
 	<p>
 		#IF(pc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
-			After telling Claire that you actually quite enjoyed the experience, you thank her for giving you enough time to get a good fuck, before asking how she managed to escape.
+			Признавшись Клэр, что тебе на самом деле даже понравился этот опыт, ты благодаришь её за то, что она дала тебе достаточно времени на качественный трах, а затем спрашиваешь, как ей удалось сбежать.
 		#ELSE
-			You tell Claire that despite your harrowing experience, you think that after getting cleaned up and having some rest you'll be able to recover. Thanking her for rescuing you, you then ask how she managed to escape.
+			Ты говоришь Клэр, что, несмотря на пережитый ужас, после того как ты отмоешься и немного отдохнешь, ты сможешь прийти в себя. Поблагодарив её за спасение, ты спрашиваешь, как ей удалось сбежать.
 		#ENDIF
 	</p>
 	<p>
-		[claire.speech(Well, after you left, the guards at the entrance ran off to go and check on the others back in the warehouse,)] Claire explains, [claire.speech(so I was able to hide behind some crates and then sneak out after they'd gone.)]
+		[claire.speech(Ну, когда ты ушел, стражники у входа бросились проверять остальных на складе,)] — объясняет Клэр, — [claire.speech(так что мне удалось спрятаться за ящиками, а потом незаметно ускользнуть, когда они ушли.)]
 	</p>
 	<p>
-		Spending the next few minutes fussing over you and making sure that you're going to be alright, Claire eventually lets out a little sigh, and, placing her hands on her hips, says, [claire.speech(I hate to leave you like this, but I really need to get back and report to my boss that everything's ok. Don't worry, I'm not giving him <i>all</i> the details of what happened in the warehouse. If he found out about you knowing teleport, we'd both be locked up here...)]
+		Проведя следующие несколько минут, воркуя над тобой и убеждаясь, что с тобой всё будет в порядке, Клэр в конце концов тихо вздыхает и, уперев руки в бока, произносит: [claire.speech(Терпеть не могу оставлять тебя в таком состоянии, но мне действительно нужно вернуться и доложить боссу, что всё в норме. Не переживай, я не выложу ему <i>все</i> подробности того, что случилось на складе. Если он узнает, что ты владеешь телепортацией, нас обоих запрут здесь...)]
 	</p>
 	<p>
-		With that, the cat-girl gives you one last smile, before turning and dashing off to get back to work. Stepping away from the stocks, you wonder what to do now...
+		С этими словами кошкодевочка одаривает тебя последней улыбкой, после чего разворачивается и убегает по делам. Оказавшись на свободе от колодок, ты раздумываешь, что же делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -1066,13 +1061,13 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SENT_TO_CELLS"><![CDATA[
 	<p>
-		Just five minutes after leaving the warehouse, you and the [npc.race] Enforcer finally reach your destination, which, as you suspected, turns out to be the cells in the Enforcer Headquarters. Leading you into a small office situated at the end of the cells' corridor, your captor calls out to the Enforcer assigned to guard duty here, [npc.speech(Hey, Constable, I've got a prisoner here. You got room for [pc.herHim] for the next twenty-four hours or so?)]
+		Всего через пять минут после выхода со склада ты и [npc.race] Enforcer наконец достигаете цели, которая, как ты и подозревал, оказывается камерами в штабе Enforcer. Заводя тебя в небольшой кабинет в конце коридора с камерами, твой похититель окликает дежурного Enforcer: [npc.speech(Эй, констебль! У меня тут пленник. Найдется место для [pc.herHim] часов на двадцать четыре?)]
 	</p>
 	<p>
-		[genericMale.speech(Sure, let me help you lock [pc.herHim] up,)] the Enforcer replies, before leading you over to an unoccupied cell. Pushing you inside, he then shuts and locks the iron-barred door behind you, before turning to the [npc.race] and saying, [genericMale.speech(There you go, [pc.she]'ll be safe and sound in there until you come back to process [pc.herHim].)]
+		[genericMale.speech(Конечно, давай помогу тебе запереть [pc.herHim],)] — отвечает Enforcer, ведя тебя к свободной камере. Затолкнув тебя внутрь, он закрывает и запирает железную дверь, после чего поворачивается к [npc.race] и говорит: [genericMale.speech(Вот и всё, [pc.she] будет в полной безопасности, пока ты не вернешься, чтобы разобраться с [pc.herHim].)]
 	</p>
 	<p>
-		[npc.speech(Right, my Inspector should call in tomorrow to sort [pc.herHim] out,)] [npc.name] replies, before turning and exiting via the way the two of you arrived, leaving you alone in your cell.
+		[npc.speech(Хорошо, мой Инспектор должен зайти завтра, чтобы разобраться с [pc.herHim],)] — отвечает [npc.name], после чего разворачивается и выходит тем же путем, которым вы пришли, оставляя тебя в камере в одиночестве.
 	</p>
 	]]>
 	</htmlContent>
@@ -1082,10 +1077,10 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_CELLS_WAITING"><![CDATA[
 	<p>
-		Once the guard has returned to his office, you attempt to teleport out of your prison, but, just as you expected, there must be another teleport inhibition device in the Enforcer Headquarters, as your spell once again doesn't work. Turning back to look at your cell, you take note of the fact that the walls, floor, and ceiling are all made of solid concrete, and with just a simple concrete platform to serve as a bed, there's nothing to do in here except for waiting to be rescued.
+		Как только стражник возвращается в свой кабинет, ты пытаешься телепортироваться из заточения, но, как ты и ожидал, в штабе Enforcer наверняка есть еще одно устройство, подавляющее телепортацию, — твое Заклинание снова не срабатывает. Оглядев камеру, ты замечаешь, что стены, пол и потолок сделаны из сплошного бетона, а единственное, что здесь есть — это простая бетонная платформа вместо кровати. Тебе остается только ждать спасения.
 	</p>
 	<p>
-		Thankfully, after a tedious couple of hours waiting in your cell, you hear Claire's distinctive voice echoing down from further up the corridor, [claire.speech(Yes, I know it was SWORD that wanted [pc.herHim] locked up. Nobody's blaming you, let's just get [pc.herHim] released as soon as possible, ok?)] 
+		К счастью, после нескольких утомительных часов ожидания в камере, ты слышишь доносящийся из глубины коридора характерный голос Клэр: [claire.speech(Да, я знаю, что именно SWORD хотела запереть [pc.herHim]. Никто тебя не винит, давай просто освободим [pc.herHim] как можно скорее, ладно?)] 
 	</p>
 	]]>
 	</htmlContent>
@@ -1095,19 +1090,19 @@
 	
 	<htmlContent tag="CELLS_SET_FREE"><![CDATA[
 	<p>
-		After just a moment more, Claire and the Enforcer guard appear outside your cell door, and after getting him to unlock it, Claire beckons you to follow her out, asking, [claire.speech(Are you ok? I'm sorry about how long it took for me to get here; I had to get your release papers signed by my boss.)] 
+		Спустя мгновение у дверей твоей камеры появляются Клэр и стражник Enforcer. Заставив его отпереть замок, Клэр манит тебя за собой и спрашивает: [claire.speech(Ты в порядке? Прости, что так долго возилась; мне нужно было заставить босса подписать твои бумаги на освобождение.)] 
 	</p>
 	<p>
-		After telling your saviour that you're ok, you ask her how she managed to escape from the warehouse.
+		Уверив свою спасительницу, что с тобой всё хорошо, ты спрашиваешь её, как ей удалось сбежать со склада.
 	</p>
 	<p>
-		[claire.speech(Well, after you left, those four guards at the entrance ran off into the warehouse to check on their comrades,)] Claire explains as she leads you out of the Enforcer Headquarters, [claire.speech(so I was able to hide behind some crates and then sneak out after they'd gone.)]
+		[claire.speech(Ну, когда ты ушел, те четверо стражников у входа бросились внутрь склада проверить своих товарищей,)] — объясняет Клэр, выводя тебя из штаба Enforcer, — [claire.speech(так что мне удалось спрятаться за ящиками, а когда они ушли, я незаметно ускользнула.)]
 	</p>
 	<p>
-		After just a couple of minutes, you're outside and breathing fresh air once again, and after you've thanked her for rescuing you, Claire lets out a little sigh and turns towards you. Placing her hands on her hips, she says, [claire.speech(I hate to leave you like this, but I really need to get back and report to my boss that everything's ok. Don't worry, I'm not giving him <i>all</i> the details of what happened in the warehouse. If he found out about you knowing teleport, we'd both be locked up in the cells here...)]
+		Всего через пару минут ты снова на свежем воздухе. После того как ты благодаришь её за спасение, Клэр тихо вздыхает и поворачивается к тебе. Уперев руки в бока, она говорит: [claire.speech(Ненавижу оставлять тебя вот так, но мне действительно нужно вернуться и доложить боссу, что всё в порядке. Не волнуйся, я не выложу ему <i>все</i> подробности того, что случилось на складе. Если он узнает, что ты владеешь телепортацией, нас обоих запрут в этих камерах...)]
 	</p>
 	<p>
-		With that, the cat-girl gives you one last smile, before turning and dashing off to get back to work. Having regained your freedom, you wonder what to do now...
+		С этими словами кошкодевочка одаривает тебя последней улыбкой, разворачивается и спешит обратно к работе. Обретя свободу, ты начинаешь раздумывать, что же делать теперь...
 	</p>
 	]]>
 	</htmlContent>

@@ -5,45 +5,45 @@
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
 			#IF(game.getDialogueFlags().hasFlag(FLAG_bimboEncountered))
-				Due to the ongoing arcane storm, [bimboHarpy.namePos] nest is completely deserted. Her entire flock has retreated into the safety of the upper-floor of the building below, leaving you with no choice but to return at another time if you wanted to speak to her.
+				Из-за бушующего шторма Арканы гнездо [bimboHarpy.namePos] совершенно опустело. Вся её стая укрылась на верхнем этаже здания этажом ниже, так что, если ты хочешь поговорить с ней, тебе остается только вернуться в другое время.
 			#ELSE
-				Due to the ongoing arcane storm, this nest is completely deserted. The entire flock has retreated into the safety of the upper-floor of the building below, leaving you with no choice but to return at another time if you wanted to speak to the matriarch of this particular nest.
+				Из-за бушующего шторма Арканы это гнездо совершенно опустело. Вся стая укрылась на верхнем этаже здания этажом ниже, так что, если ты хочешь поговорить с матриархом этого гнезда, тебе остается только вернуться в другое время.
 			#ENDIF
 		</p>
 	#ELSEIF(!game.isExtendedWorkTime())
 		<p>
 			#IF(game.getDialogueFlags().hasFlag(FLAG_bimboEncountered))
-				Due to the current hour, [bimboHarpy.namePos] nest is completed deserted; both she and her flock have retired to the comfort of the buildings below in order to get a good night's rest. With the entrances to their night-time residence being securely locked, you're left with no choice but to return at another time if you wanted to speak to her.
+				В этот час гнездо [bimboHarpy.namePos] совершенно опустело; и она, и её стая ушли отдыхать в уютные здания внизу, чтобы хорошенько выспаться. Входы в их ночное жилище надежно заперты, так что, если ты хочешь поговорить с ней, тебе остается только вернуться в другое время.
 			#ELSE
-				Due to the current hour, this nest is completed deserted; both the matriarch and her flock have retired to the comfort of the buildings below in order to get a good night's rest. With the entrances to their night-time residence being securely locked, you're left with no choice but to return at another time if you wanted to speak to her.
+				В этот час это гнездо совершенно опустело; и матриарх, и её стая ушли отдыхать в уютные здания внизу, чтобы хорошенько выспаться. Входы в их ночное жилище надежно заперты, так что, если ты хочешь поговорить с ней, тебе остается только вернуться в другое время.
 			#ENDIF
 		</p>
 	#ELSE
 		#IF(game.getDialogueFlags().hasFlag(FLAG_bimboEncountered))
-			<p>
-				You find yourself standing on the outskirts of [bimboHarpy.namePos] nest; one of the largest and most populous of all the nests in Dominion. Huge, multi-level platforms extend across the roofs of several buildings, with colourful canvas awnings erected to shield the flock from the elements.
+				<p>
+				Ты стоишь на окраине гнезда [bimboHarpy.namePos] — одного из самых больших и многолюдных гнезд во всем Dominion. Огромные многоуровневые платформы раскинулись по крышам нескольких зданий, а над ними натянуты разноцветные брезентовые навесы, защищающие стаю от непогоды.
 				#IF(!game.isDayTime())
-					 A series of bright, arcane-powered lights illuminate the entire area, and from what you can see, the harpies here are just as active at night as they are during daylight hours.
+					 Ряд ярких огней, питаемых Арканой, освещает всю округу, и, судя по всему, местные гарпии ночью так же активны, как и при свете дня.
 				#ENDIF
 			</p>
 			<p>
-				Whereas most nests contain a variety of differently-coloured harpies, the overwhelming majority of [bimboHarpy.namePos] flock have, in an attempt to copy their matriarch, had their feathers dyed bleach-blonde. Looking closer, you see that their proportions are also similar to [bimboHarpy.namePos]. From those that you've seen in other nests, you know that the average breast size for a harpy is about a B-cup, but the ones in this particular nest seem to all be at least a D-cup or bigger. Their hips and asses are also far larger than the average, leading you to the obvious conclusion that this particular nest is devoted to imitating their leader.
+				Если в большинстве гнезд обитают гарпии самых разных расцветок, то подавляющее большинство особей из стаи [bimboHarpy.namePos], в попытке подражать своей матриарху, выбелили свои перья до платинового блонда. Присмотревшись, ты замечаешь, что их пропорции тоже очень похожи на [bimboHarpy.namePos]. Глядя на тех, кого ты видел в других гнездах, ты знаешь, что средний размер груди у гарпий — примерно «B», но у обитательниц этого конкретного гнезда у всех минимум «D» или даже больше. Их бедра и задницы тоже куда шире средних, что наводит на очевидный вывод: это гнездо посвящено подражанию их предводительнице.
 			</p>
 			<p>
-				Up on one of the highest platforms, you see a large gathering of harpies surrounding [bimboHarpy.name]. It seems as though the residents of this particular nest aren't too bothered about outsiders, and if you had any business with her, it would be quite easy to approach her platform.
+				На одной из самых высоких платформ ты видишь большую группу гарпий, окруживших [bimboHarpy.name]. Похоже, обитательницы этого гнезда не слишком беспокоятся о чужаках, так что, если у тебя есть к ней дело, подобраться к её платформе будет довольно легко.
 			</p>
 		#ELSE
 			<p>
-				You find yourself standing on the outskirts of one of the largest harpy nests in Dominion. Huge, multi-level platforms extend across the roofs of several buildings, with colourful canvas awnings erected to shield the flock from the elements.
+				Ты стоишь на окраине одного из крупнейших гнезд гарпий в Dominion. Огромные многоуровневые платформы раскинулись по крышам нескольких зданий, а над стаей натянуты разноцветные брезентовые навесы, защищающие от непогоды.
 				#IF(!game.isDayTime())
-					 A series of bright, arcane-powered lights illuminate the entire area, and from what you can see, the harpies here are just as active at night as they are during daylight hours.
+					 Ряд ярких огней, питаемых Арканой, освещает всю округу, и, судя по всему, местные гарпии ночью так же активны, как и при свете дня.
 				#ENDIF
 			</p>
 			<p>
-				Whereas most nests contain a variety of differently-coloured harpies, the overwhelming majority of this particular flock have bleach-blonde feathers. Looking closer, you see that their proportions are rather unusual as well. From those that you've seen in other nests, you know that the average breast size for a harpy is about a B-cup, but the ones in this particular nest seem to all be at least a D-cup or bigger. Their hips and asses are also far larger than the average, leading you to the obvious conclusion that this particular nest prizes large proportions.
+				В то время как в большинстве гнезд обитают гарпии самых разных расцветок, подавляющее большинство особей в этой стае обладают обесцвеченными, почти платиновыми перьями. Присмотревшись, ты замечаешь, что их пропорции тоже весьма необычны. Глядя на тех гарпий, которых ты встречал в других гнездах, ты знаешь, что средний размер груди у них — примерно «B», но все обитательницы этого гнезда обладают как минимум «D» или даже больше. Их бедра и задницы тоже куда шире средних, что наводит на очевидный вывод: в этом гнезде превыше всего ценятся пышные формы.
 			</p>
 			<p>
-				Up on one of the highest platforms, you see a large gathering of harpies surrounding what must be this nest's matriarch. It seems as though the residents of this particular nest aren't too bothered about outsiders, and if you had any business with her, it would be quite easy to approach the matriarch's platform.
+				Там, наверху, на одной из самых высоких платформ, ты видишь скопление гарпий, окруживших ту, что, должно быть, является матриархом этого гнезда. Похоже, местных жительниц не особо заботят чужаки, и если у тебя есть дело к ней, подойти к платформе матриарха будет совсем несложно.
 			</p>
 		#ENDIF
 	#ENDIF
@@ -54,94 +54,94 @@
 	#IF(flags.hasFlag(FLAG_bimboEncountered))
 		#IF(flags.hasFlag(FLAG_bimboPacified))
 			<p>
-				Deciding that you should go and pay [bimboHarpy.name] another visit, you set off across the nest. Most of the bimbo harpies recognise you as [bimboHarpy.namePos] [pc.mistress], and submissively bow their heads or drop to their knees as you pass. Reaching the staircase that leads to the upper platform, you quickly scale the stairs, and as you reach the top, you're greeted by a familiar sight.
+				Решив, что стоит нанести [bimboHarpy.name] еще один визит, ты отправляешься в путь через все гнездо. Большинство гарпий-бимбо узнают в тебе [bimboHarpy.namePos] [pc.mistress] и покорно склоняют головы или падают на колени, когда ты проходишь мимо. Добравшись до лестницы, ведущей к верхней платформе, ты быстро взбираешься наверх, и у самой вершины тебя встречает знакомая картина.
 			</p>
 			<p>
-				[bimboHarpy.Name] is lying down on a sunbed, surrounded by her inner-circle of harpy bimbos. [bimboHarpyCompanion.Name] is obediently grooming her matriarch's beautiful bleach-blonde feathers, giggling and whispering with her mistress as she works.
-				#IF(bimboHarpyCompanion.isVisiblyPregnant())
+				[bimboHarpy.Name] полулежит на шезлонге в окружении своего ближайшего круга гарпий-бимбо. [bimboHarpyCompanion.Name] послушно чистит прекрасные платиновые перья своей матриархи, хихикая и перешептываясь с хозяйкой во время работы.
+							#IF(bimboHarpyCompanion.isVisiblyPregnant())
 					#IF(!bimboHarpyCompanion.isCharacterReactedToPregnancy(pc))
-						 As you approach, you notice that she's got a swollen, [style.colourSex(pregnant belly)], and as she sees you, she nods to confirm that you're the one who knocked her up, before crying out, [bimboHarpyCompanion.speechNoEffects(Mistress! Like, [pc.name] is back!)]
+						 Когда ты приближаешься, ты замечаешь, что у неё заметно раздулся [style.colourSex(беременный живот)]. Завидев тебя, она кивает, подтверждая, что именно ты её оплодотворил, и вскрикивает: [bimboHarpyCompanion.speechNoEffects(Госпожа! Типа, [pc.name] вернулась!)]
 					#ELSE
-						 As you approach, you see that she's still got a swollen, [style.colourSex(pregnant belly)], and as she sees you, she cries out, [bimboHarpyCompanion.speechNoEffects(Mistress! Like, [pc.name] is back!)]
+						 Когда ты приближаешься, ты видишь, что у неё всё ещё заметно раздулся [style.colourSex(беременный живот)], и, завидев тебя, она вскрикивает: [bimboHarpyCompanion.speechNoEffects(Госпожа! Типа, [pc.name] вернулась!)]
 					#ENDIF
 				#ELSE
-					 As you approach, she suddenly notices you and cries out, [bimboHarpyCompanion.speechNoEffects(Mistress! Like, [pc.name] is back!)]
+					 При приближении она внезапно замечает тебя и вскрикивает: [bimboHarpyCompanion.speechNoEffects(Госпожа! Типа, [pc.name] вернулась!)]
 				#ENDIF
 			</p>
 			#IF(bimboHarpy.isVisiblyPregnant())
 				<p>
 					#IF(!bimboHarpy.isCharacterReactedToPregnancy(pc))
-						[bimboHarpy.Name] instantly jumps up off the sunbed, and as she rushes forwards, you see that she's sporting a [style.colourSex(pregnant belly)]. Coming to a halt before you, she bites her lip, pushes out her chest, and teases, [bimboHarpy.speechNoEffects([pc.Mistress], look! You, like, totally got me pregnant!)]
+						[bimboHarpy.Name] мгновенно вскакивает с шезлонга, и пока она несется к тебе, ты видишь её [style.colourSex(беременный живот)]. Остановившись перед тобой, она прикусывает губу, выпячивает грудь и кокетливо говорит: [bimboHarpy.speechNoEffects([pc.Mistress], глянь! Ты, типа, реально заставил меня забеременеть!)]
 					#ELSE
-						[bimboHarpy.Name] instantly jumps up off the sunbed, and as she rushes forwards, you see that she's still sporting a [style.colourSex(pregnant belly)]. Coming to a halt before you, she bites her lip, pushes out her chest, and teases, [bimboHarpy.speechNoEffects([pc.Mistress], look! I'm still pregnant from when you, like, got me knocked up and stuff!)]
+						[bimboHarpy.Name] мгновенно вскакивает с шезлонга, и пока она несется к тебе, ты видишь, что у неё всё ещё заметно раздулся [style.colourSex(беременный живот)]. Остановившись перед тобой, она прикусывает губу, выпячивает грудь и кокетливо говорит: [bimboHarpy.speechNoEffects([pc.Mistress], глянь! Я всё ещё беременна с тех пор, как ты, типа, засадил в меня и всё такое!)]
 					#ENDIF
 				</p>
 				<p>
-					Before you can react to this, the bimbo harpy quickly changes the subject and happily squeals, [bimboHarpy.speechNoEffects(Me and my girls have all been, like, super good and stuff! We're totally, like, chilled out to the max, right girls?!)]
+					Прежде чем ты успеваешь на это отреагировать, гарпия-бимбо быстро меняет тему и радостно визжит: [bimboHarpy.speechNoEffects(Мы с девчонками были, типа, ну очень послушными! Мы вообще, типа, на чилле, да, девчонки?!)]
 				</p>
 			#ELSE
 				<p>
-					[bimboHarpy.Name] instantly jumps up off the sunbed, and, rushing forwards, she throws herself to her knees at your [pc.feet]. Looking up with her big [bimboHarpy.eyeColour] eyes, she pushes out her chest and bites her lip.
+					[bimboHarpy.Name] мгновенно вскакивает с шезлонга и, бросившись вперед, падает на колени у твоих [pc.feet]. Поднимая на тебя свои огромные [bimboHarpy.eyeColour] глаза, она выпячивает грудь и закусывает губу.
 				</p>
 				<p>
-					[bimboHarpy.speechNoEffects(Ah! [pc.Mistress]! I've been, like, super good and stuff!)] she happily squeals, [bimboHarpy.speechNoEffects(We've all been, like, super chilled out and stuff, right girls?!)]
+				[bimboHarpy.speechNoEffects(Ах! [pc.Mistress]! Я была, ну, типа, очень послушной и всё такое!)] — радостно визжит она, [bimboHarpy.speechNoEffects(Мы все были, типа, такие расслабленные и всё такое, да, девчонки?!)]
 				</p>
 			#ENDIF
 			<p>
-				A chorus of eager voices cry out in agreement, and you can't help but smile down at [bimboHarpy.name] as she shuffles a little closer to you.
+				Хор восторженных голосов выкрикивает согласие, и ты невольно улыбаешься, глядя на [bimboHarpy.name], когда она подползает к тебе чуть ближе.
 			</p>
 			<p>
-				[bimboHarpy.speechNoEffects(Like, erm, I wanna, like, show my girls how good I am!)] she moans, barely able to contain the excitement in her voice. [bimboHarpy.speechNoEffects(I mean, like, only if you want to and stuff!)]
+				[bimboHarpy.speechNoEffects(Типа, эмм, я хочу, ну, показать своим девчонкам, какая я хорошая!)] — стонет она, едва сдерживая возбуждение в голосе. [bimboHarpy.speechNoEffects(В смысле, типа, только если ты сам хочешь и всё такое!)]
 			</p>
 			<p>
-				One of her feathered hands sinks down between her legs, and she leans back on her knees, presenting her panties to you as she starts rubbing at the fabric. Several members of her inner-circle start mimicking her behaviour, and, shuffling ever closer, [bimboHarpy.name] moans out loud, [bimboHarpy.speechNoEffects(Ah! Please! Fuck me!)]
+				Одна из её пернатых рук опускается между ног, и она откидывается на колени, подставляя тебе свои трусики и начиная тереться о ткань. Несколько её подружек начинают подражать ей, и, подползая всё ближе, [bimboHarpy.name] громко стонет: [bimboHarpy.speechNoEffects(Ах! Пожалуйста! Трахни меня!)]
 			</p>
 		#ELSE
 			<p>
-				Deciding that you should go and pay [bimboHarpy.name] another visit, you set off across the nest. A couple of the bimbo harpies that you pass recognise you from before, and start whispering to one another as you pass. Reaching the staircase that leads to the upper platform, you quickly scale the stairs, and as you reach the top, you're greeted by a familiar sight.
+				Решив, что тебе стоит нанести [bimboHarpy.name] еще один визит, ты отправляешься в путь по гнезду. Пару проходящих мимо гарпий-бимбо узнают тебя, и они начинают перешептываться, когда ты проходишь мимо. Дойдя до лестницы, ведущей на верхнюю платформу, ты быстро взлетаешь по ступеням, и наверху тебя встречает знакомая картина.
 			</p>
 			<p>
-				[bimboHarpy.Name] is lying down on a sunbed, surrounded by her inner-circle of harpy bimbos. [bimboHarpyCompanion.Name] is obediently grooming her matriarch's beautiful bleach-blonde feathers, giggling and whispering with her mistress as she works. As you approach, she suddenly notices you, and cries out, [bimboHarpyCompanion.speechNoEffects(Mistress! Like, that [pc.race] is back!)]
+				[bimboHarpy.Name] лежит на шезлонге в окружении своей свиты из гарпий-бимбо. [bimboHarpyCompanion.Name] послушно чистит прекрасные платиновые перья своей матриархи, хихикая и перешептываясь с хозяйкой во время работы. Когда ты приближаешься, она внезапно замечает тебя и вскрикивает: [bimboHarpyCompanion.speechNoEffects(Госпожа! Типа, этот [pc.race] вернулся!)]
 			</p>
 			<p>
 				#IF(pc.getFemininityValue()>=FEMININITY_FEMININE_STRONG.getMinimumFemininity())
-					Letting out an annoyed sigh, [bimboHarpy.name] props herself up on the sunbed, and, raising her aviators to look you up-and-down, she makes a dismissive gesture. [bimboHarpy.speechNoEffects(Eugh! Like, what are <i>you</i> doin' here again? Why don't you, like go get your own flock or something?! You're, like, being super rude and stuff comin' here and flaunting yourself in front of my girls!)]
+					Раздраженно вздохнув, [bimboHarpy.name] приподнимается на шезлонге и, поправив авиаторы, чтобы оглядеть тебя с ног до головы, пренебрежительно машет рукой. [bimboHarpy.speechNoEffects(Фу! Типа, че <i>ты</i> опять тут забыл? Почему бы тебе, типа, не найти свою собственную стаю или типа того?! Ты, типа, ведешь себя супер-грубо, приходя сюда и выставляя себя напоказ перед моими девочками!)]
 				#ELSE
-					Letting out an annoyed sigh, [bimboHarpy.name] props herself up on the sunbed, and, raising her aviators to look you up-and-down, she makes a dismissive gesture. [bimboHarpy.speechNoEffects(Eugh! Like, what are <i>you</i> doin' here again? Y'know, you're like, super annoying and stuff!)]
+					Раздраженно вздохнув, [bimboHarpy.name] приподнимается на шезлонге и, поправив авиаторы, чтобы оглядеть тебя с ног до головы, пренебрежительно машет рукой. [bimboHarpy.speechNoEffects(Фу! Типа, че <i>ты</i> опять тут забыл? Знаешь, ты, типа, супер-бесячий и всё такое!)]
 				#ENDIF
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			This nest looks like the home of one of the matriarchs you agreed to try and calm down. Deciding that you should do as the Enforcer sergeant asked, you set off across the nest towards the staircase leading to the upper platform.
+			Это гнездо похоже на жилище одной из матриархов, которых ты согласился попытаться успокоить. Решив поступить так, как просил сержант Enforcer, ты отправляешься через всё гнездо к лестнице, ведущей на верхнюю платформу.
 		</p>
 		<p>
-			As you walk through the nest, you take a closer look at this peculiar, bleach-blonde flock. Just as you saw from the outskirts, most of these harpies have larger-than-average breasts, hips, and asses, but it's the snippets of conversation that you overhear that reveal their true nature,<br/>
-			[style.speechFeminine(...yeah, and, like, she was soooo not pretty...)]<br/>
-			[style.speechFeminineStrong(...uh-huh, and, like, her feathers were like, totally blech!...)]<br/>
-			[style.speechFeminine(...and he was, like, 'I'll do whatever you say!', and I was like, 'Uhh, duh!'...)]
+			Проходя через гнездо, ты внимательнее присматриваешься к этой странной, обесцвеченной блондинкам стае. Как ты и заметил еще на окраине, у большинства этих гарпий грудь, бедра и задницы крупнее, чем в среднем, но их истинную натуру выдают именно обрывки разговоров, которые ты подслушиваешь.<br/>
+			[style.speechFeminine(...ну, типа, она была ну оооочень некрасивая...)]<br/>
+			[style.speechFeminineStrong(...ага, и, типа, её перья были просто фу, ну реально!..)]<br/>
+			[style.speechFeminine(...и он такой: «Я сделаю всё, что ты скажешь!», а я такая: «Ну, это же очевидно!»...)]
 		</p>
 		<p>
-			Combined with their large assets and choice of feather colour, you're left with no doubt as to what's going on here. Every single one of this nest's occupants is a bimbo. Before you know it, you've reached the staircase that leads to the upper platform, and, taking one look back at the crowd of bimbos, you set off up the stairs, and quickly reach the top.
+			В сочетании с их выдающимися формами и выбором цвета перьев, у тебя не остается сомнений в том, что здесь происходит. Каждая обитательница этого гнезда — настоящая бимбо. Не успеваешь ты оглянуться, как доходишь до лестницы, ведущей на верхнюю платформу, и, бросив последний взгляд на толпу пустышек, начинаешь подниматься и быстро достигаешь вершины.
 		</p>
 		<p>
-			You'd already seen a picture of [bimboHarpy.name] in the Enforcer's papers, but even if you hadn't, it's clearly obvious who the matriarch is. With large, perfectly shaped breasts, the tanned body of a super-model, and one of the most gorgeous faces you've ever seen, [bimboHarpy.name] is the centre of attention. Her inner-circle of bimbo harpies are gathered around her, vying for their leader's attention as they giggle and agree with every word she speaks. One harpy in particular seems to be the closest to her, and it's this particular bimbo who's the first one to notice your approach.
+			Ты уже видел изображение [bimboHarpy.name] в бумагах Enforcer, но даже если бы и не видел, было бы предельно ясно, кто здесь матриарх. С пышной, идеально очерченной грудью, загорелым телом супермодели и одним из самых великолепных лиц, что тебе доводилось видеть, [bimboHarpy.name] приковывает к себе все взгляды. Её свита из гарпий-бимбо собралась вокруг неё, соревнуясь за внимание предводительницы; они хихикают и поддакивают каждому её слову. Одна гарпия кажется особенно близкой к ней, и именно эта блондинка первой замечает твоё приближение.
 		</p>
 		<p>
-			[bimboHarpyCompanion.speechNoEffects([bimboHarpy.Name]! There's, like, some [pc.race] over there!)]
+			[bimboHarpyCompanion.speechNoEffects([bimboHarpy.Name]! Там, типа, какая-то [pc.race]!)]
 		</p>
 		<p>
-			Instantly, all eyes are on you, and [bimboHarpy.Name] stand up from the sunbed upon which she was lying. Stepping forwards, she rests one of her feathered hands on her hips, striking a pose as she speaks,
+			В мгновение ока все взгляды устремляются на тебя, и [bimboHarpy.Name] поднимается со своего шезлонга. Сделав шаг вперёд, она упирает одну из своих пернатых рук в бок, принимая эффектную позу, и произносит:
 			#IF(pc.getFemininityValue()>=FEMININITY_FEMININE_STRONG.getMinimumFemininity())
-				 [bimboHarpy.speechNoEffects(Like, who do you think you are?! I hope you're not, like, thinkin' of tryin' to steal girls from my flock! You, like, might have the looks, but they aren't gonna listen to some stupid slut like you! What do you, like, even want? Coming up here uninvited is, like, super rude y'know?!)]
+				 [bimboHarpy.speechNoEffects(Слышь, ты вообще кто такая?! Надеюсь, ты, типа, не вздумала возомнить, что сможешь увести девчонок из моей стаи! Ну, типа, внешность у тебя есть, но они не станут слушать какую-то тупую шлюху вроде тебя! Чего тебе вообще надо? Явиться сюда без приглашения — это, типа, супер грубо, ясно?!)]
 			#ELSE
-				 [bimboHarpy.speechNoEffects(Like, who do you think you are?! Coming up here uninvited is, like, super rude y'know?!)]
+				 [bimboHarpy.speechNoEffects(Слышь, ты вообще кто такая?! Явиться сюда без приглашения — это, типа, супер грубо, ясно?!)]
 			#ENDIF
 		</p>
 	#ENDIF
 	#IF(!flags.hasFlag(FLAG_bimboPacified) && game.isBadEndsEnabled() && pc.isAbleToHaveRaceTransformed())
 		<p style='text-align:center;'><i>
-			[style.italicsBadEnd(You get the feeling that you'd be in serious trouble if you were to lose a fight against these harpies...)]
+			[style.italicsBadEnd(У тебя возникает стойкое ощущение, что если ты проиграешь в схватке с этими гарпиями, то у тебя будут серьёзные неприятности...)]
 		</i></p>
 	#ENDIF
 	]]>
@@ -151,10 +151,10 @@
 	
     <htmlContent tag="BIMBO_LEAVE"><![CDATA[
     <p>
-        Deciding that now isn't the best time to be doing this, you turn around and head back down the stairs. You hear [bimboHarpy.name] complaining to her harpies as you leave, [bimboHarpy.speechNoEffects(Eugh! Like, what was all that about?!)]
+        Решив, что сейчас не самое подходящее время для этого, ты разворачиваешься и направляешься вниз по лестнице. Уходя, ты слышишь, как [bimboHarpy.name] ворчит своим гарпиям: [bimboHarpy.speechNoEffects(Фу! Ну и что это вообще было?!)]
     </p>
     <p>
-        Ignoring her words, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest.
+        Игнорируя её слова, ты продолжаешь спускаться по ступеням и переходишь через главную платформу, быстро оказываясь на окраине гнезда.
     </p>
 	]]>
     </htmlContent>
@@ -163,53 +163,53 @@
 	
     <htmlContent tag="PACIFIED_BIMBO_LEAVE"><![CDATA[
     <p>
-        Deciding that now isn't the best time to be doing this, you turn around and head back down the stairs. You hear [harpyBimbo.name] moaning to her harpies as you leave, [harpyBimbo.speechNoEffects(Awww! Like, I just wanna get fucked in front of you all!)]
+        Решив, что сейчас не самое подходящее время для этого, ты разворачиваешься и направляешься вниз по лестнице. Уходя, ты слышишь, как [harpyBimbo.name] стонет своим гарпиям: [harpyBimbo.speechNoEffects(Оооо! Ну типа, я просто хочу, чтобы меня трахнули прямо на ваших глазах!)]
     </p>
     <p>
-        Ignoring her words, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest.
+        Игнорируя её слова, ты продолжаешь спускаться по ступеням и переходишь через главную платформу, быстро оказываясь на окраине гнезда.
     </p>
 	]]>
     </htmlContent>
 	
     <htmlContent tag="PACIFIED_BIMBO_SEX_START"><![CDATA[
     <p>
-        Eager to put [harpyBimbo.name] in her place in front of her inner-circle, you reach down and grab her by her wings. Pulling her to her feet, you [pc.step] forwards and plant a deep kiss on her [harpyBimbo.lips+], drawing a series of excited giggles from the surrounding bimbo harpies in the process.
+        Желая поставить [harpyBimbo.name] на место на глазах у её приближенных, ты наклоняешься и хватаешь её за крылья. Поднимая её на ноги, ты [pc.step] вперед и глубоко целуешь её в [harpyBimbo.lips+], вызывая при этом череду восторженных смешков у окружающих бимби-гарпий.
     </p>
     <p>
-        [harpyBimbo.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you as she passionately returns your kiss...
+        [harpyBimbo.Name] отвечает на твой властный жест, обвивая крыльями твою спину и с наслаждением прижимаясь к тебе всем телом, страстно отвечая на поцелуй...
     </p>
 	]]>
     </htmlContent>
 	
     <htmlContent tag="BIMBO_SEX_START_ORAL"><![CDATA[
     <p>
-        Eager to put [harpyBimbo.name] and [harpyBimboCompanion.name] in their place in front of their nest's inner-circle, you reach down and grab the bimbo matriarch's wings. Pulling her to her feet, you [pc.step] forwards, before planting a deep kiss on her [harpyBimbo.lips+] and drawing a series of excited giggles from the surrounding bimbo harpies.
+        Жаждая поставить [harpyBimbo.name] и [harpyBimboCompanion.name] на место перед внутренним кругом их гнезда, ты наклоняешься и хватаешь матку-бимбо за крылья. Подняв её на ноги, ты [pc.step] вперёд и глубоко целуешь её в [harpyBimbo.lips+], вызывая волну возбуждённого хихиканья у окружающих гарпий-бимбо.
     </p>
 	#IF(!harpyBimboCompanion.isAttractedTo(pc))
 		<p>
-			[harpyBimbo.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you, and passionately returning your kiss. Letting out a disapproving groan, [harpyBimboCompanion.name] sneers, [harpyBimboCompanion.speechNoEffects(Can't you, like, just leave [harpyBimbo.name] alone? I'm, like, so not into watching this!)]
+			[harpyBimbo.Name] отвечает на твой доминантный жест, обвивая крыльями твою спину и с нажимом прижимаясь к тебе, страстно отвечая на поцелуй. Издав неодобрительный стон, [harpyBimboCompanion.name] фыркает: [harpyBimboCompanion.speechNoEffects(Может, ты, типа, просто оставишь [harpyBimbo.name] в покое? Я, типа, вообще не в восторге на это смотреть!)]
 		</p>
 		<p>
-			Breaking off your kiss with [harpyBimbo.Name], you tell [harpyBimboCompanion.name] that you have no intention of letting her simply stand back and watch. Grabbing the matriarch's subordinate, you pull her into your embrace and give her a taste of your [pc.tongue+]. As the shocked harpy lets out a muffled cry of protest into your mouth, more excited giggles break out amongst the surrounding bimbo harpies.
+			Прервав поцелуй с [harpyBimbo.Name], ты говоришь [harpyBimboCompanion.name], что не намерен позволять ей просто стоять в сторонке и наблюдать. Схватив подчиненную матки, ты притягиваешь её к себе и даёшь ей почувствовать вкус своего [pc.tongue+]. Пока шокированная гарпия издаёт приглушённый протестующий крик тебе в рот, среди окружающих гарпий-бимбо вспыхивает ещё более громкое и возбуждённое хихиканье.
 		</p>
 		<p>
-			Wanting the matriarch's and her subordinate's lips to be employed elsewhere, you break off your kiss, before taking hold of both of the harpies' shoulders and pushing them to their knees before you. Realising what it is you want, [harpyBimbo.Name] eagerly shuffles forwards towards your groin, pulling [harpyBimboCompanion.name] along beside her as she does so. Gazing up into your eyes, she moans, [harpyBimbo.speechNoEffects(We're, like, the best in the whole nests at, like, using our mouths and stuff. Ain't that right, [harpyBimboCompanion.name]?)]
+			Желая, чтобы губы матриарха и её подчиненной нашли себе другое применение, ты прерываешь поцелуй, после чего берешь обеих гарпий за плечи и заставляешь их опуститься перед тобой на колени. Осознав твои намерения, [harpyBimbo.Name] с нетерпением подается вперед к твоему паху, увлекая за собой [harpyBimboCompanion.name]. Глядя тебе прямо в глаза, она стонет: [harpyBimbo.speechNoEffects(Мы, типа, самые лучшие во всем гнезде в этом деле... ну, в плане, как это... ртом пользоваться. Правда же, [harpyBimboCompanion.name]?)]
 		</p>
 		<p>
-			[harpyBimboCompanion.speechNoEffects(You're, like, really going to make me do this? Eugh... I'm <i>so</i> not happy about this!)] [harpyBimboCompanion.name] groans as her matriarch prepares to perform oral on you...
+			[harpyBimboCompanion.speechNoEffects(Ты, типа, реально заставляешь меня это сделать? Фу... я <i>совсем</i> не в восторге!)] — стонет [harpyBimboCompanion.name], пока её матриарх готовится заняться с тобой оральным сексом...
 		</p>
 	#ELSE
 		<p>
-			[harpyBimbo.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you, and passionately returning your kiss. Letting out a hungry moan, [harpyBimboCompanion.name] eagerly asks, [harpyBimboCompanion.speechNoEffects(You're not, like, just going to leave me out of this, right?)]
+			[harpyBimbo.Name] отвечает на твой властный жест, обвивая крыльями твою спину, прижимаясь к тебе всем телом и страстно отвечая на поцелуй. Издав голодный стон, [harpyBimboCompanion.name] с нетерпением спрашивает: [harpyBimboCompanion.speechNoEffects(Ты же, типа, не собираешься меня одну здесь оставлять, а?)]
 		</p>
 		<p>
-			With [harpyBimbo.name] continuing to desperately kiss you, you motion for [harpyBimboCompanion.name] to step forwards and join in. As she happily skips forwards, you pull back from [harpyBimbo.namePos] lips, before swiftly grabbing [harpyBimbo.namePos] head and giving her a taste of your [pc.tongue+]. As the lustful harpy leans heavily into you, more excited giggles break out amongst the surrounding bimbo harpies.
+			Пока [harpyBimbo.name] продолжает отчаянно целовать тебя, ты жестом приказываешь [harpyBimboCompanion.name] подойти и присоединиться. Она радостно подпрыгивает вперед, а ты отстраняешься от губ [harpyBimbo.namePos], чтобы резко схватить [harpyBimbo.namePos] за голову и дать ей попробовать твой [pc.tongue+]. Когда похотливая гарпия всем весом наваливается на тебя, среди окружающих гарпий-бимбо раздается восторженный хихиканье.
 		</p>
 		<p>
-			Wanting the matriarch's and her subordinate's lips to be employed elsewhere, you break off your kiss, before taking hold of both of the harpies' shoulders and pushing them to their knees before you. Realising what it is you want, they both eagerly shuffle forwards towards your groin. Looking up at you, [harpyBimbo.name] hungrily moans, [harpyBimbo.speechNoEffects(We're, like, the best in the whole nests at, like, using our mouths and stuff. Ain't that right, [harpyBimboCompanion.name]?)]
+			Желая, чтобы губы матриарха и её подчиненной нашли себе другое применение, ты прерываешь поцелуй, после чего берешь обеих гарпий за плечи и заставляешь их опуститься перед тобой на колени. Поняв твои намерения, они обе с жадностью подаются вперед к твоему паху. Глядя на тебя снизу вверх, [harpyBimbo.name] голодно стонет: [harpyBimbo.speechNoEffects(Мы, типа, лучшие во всем гнезде в этом... ну, в том, как ртом пользоваться и всё такое. Правда же, [harpyBimboCompanion.name]?)]
 		</p>
 		<p>
-			[harpyBimboCompanion.speechNoEffects(That's, like, super true! Let us take care of you...)] [harpyBimboCompanion.name] replies, and you can't help but grin as she and her matriarch eagerly prepare to perform oral on you...
+			[harpyBimboCompanion.speechNoEffects(Это, типа, чистая правда! Давай мы о тебе позаботимся...)] — отвечает [harpyBimboCompanion.name], и ты невольно ухмыляешься, видя, как она и её матриарх с нетерпением готовятся отсосать тебе...
 		</p>
 	#ENDIF
 	]]>
@@ -217,21 +217,21 @@
 
     <htmlContent tag="BIMBO_SEX_START_MISSIONARY"><![CDATA[
     <p>
-        Eager to put [harpyBimbo.name] and [harpyBimboCompanion.name] in their place in front of their nest's inner-circle, you grab hold of both of them and push them down onto their backs before you. As you drop down between their legs, [harpyBimbo.name] passionately moans, [harpyBimbo.speechNoEffects(Come on, like, give us both a real good fuck! We're, like, super into this stuff, aren't we, [harpyBimboCompanion.name]?)]
+        Желая поставить [harpyBimbo.name] и [harpyBimboCompanion.name] на место перед внутренним кругом их гнезда, ты хватаешь обеих и швыряешь их на спину перед собой. Когда ты опускаешься между их ног, [harpyBimbo.name] страстно стонет: [harpyBimbo.speechNoEffects(Давай же, типа, хорошенько нас обоих оттрахай! Мы же, типа, просто тащимся от такого, да, [harpyBimboCompanion.name]?)]
     </p>
 	#IF(!harpyBimboCompanion.isAttractedTo(pc))
 		<p>
-			Letting out a disgusted groan, the matriarch's subordinate looks straight up into your eyes and cries out, [harpyBimboCompanion.speechNoEffects(You're, like, really going to make me do this? Eugh... I'm <i>so</i> not happy about this!)]
+			Издавая брезгливый стон, подчиненная матриарха смотрит прямо тебе в глаза и восклицает: [harpyBimboCompanion.speechNoEffects(Ты, типа, реально заставляешь меня это делать? Фу... Я <i>совсем</i> не в восторге!)]
 		</p>
 		<p>
-			Ignoring her words, you lustfully gaze down at [harpyBimboCompanion.name] and her matriarch as you prepare to fuck them side-by-side...
+			Игнорируя её слова, ты с похотью смотришь на [harpyBimboCompanion.name] и её матриарха, готовясь трахнуть их обеих одновременно...
 		</p>
 	#ELSE
 		<p>
-			Letting out a hungry moan, the matriarch's subordinate looks straight up into your eyes and cries out, [harpyBimboCompanion.speechNoEffects(Yes! Like, I love getting fucked beside [harpyBimbo.name]! Come on and, like, get started and stuff!)]
+			Издавая голодный стон, подчиненная матриарха смотрит прямо тебе в глаза и выкрикивает: [harpyBimboCompanion.speechNoEffects(Да! Типа, обожаю, когда меня трахают рядом с [harpyBimbo.name]! Давай же, типа, начинай уже и всё такое!)]
 		</p>
 		<p>
-			Pleased to hear that she's more than happy to be involved in this threesome, you lustfully gaze down at [harpyBimboCompanion.name] and her matriarch as you prepare to fuck them side-by-side...
+			Обрадованный тем, что она не прочь поучаствовать в этом тройничке, ты с похотью смотришь на [harpyBimboCompanion.name] и её матриарха, готовясь трахать их бок о бок...
 		</p>
 	#ENDIF
 	]]>
@@ -240,38 +240,38 @@
     <htmlContent tag="BIMBO_AFTER_SEX"><![CDATA[
 	#IF(sex.isSatisfiedFromOrgasms(harpyBimbo, true))
 		<p>
-			As you [pc.step] back from [harpyBimbo.name], she sinks to the floor, totally worn out from her
+			Когда ты [pc.step] назад от [harpyBimbo.name], она оседает на пол, совершенно измотанная своими
 			#IF(sex.getNumberOfOrgasms(harpyBimbo)>1)
-				 orgasms.
+				оргазмами.
 			#ELSE
-				 orgasm.
+				оргазмом.
 			#ENDIF
-			 Biting her lip and flashing you a dirty look, she teases, [harpyBimbo.speechNoEffects(You, like, made me cum so much! You're, like, real good at fuckin' harpies...)]
+			Прикусив губу и бросив на тебя порочный взгляд, она кокетничает: [harpyBimbo.speechNoEffects(Ты, типа, так меня завел! Ты, типа, реально круто трахаешь гарпий...)]
 		</p>
 	#ELSE
 		<p>
-			As you [pc.step] back from [harpyBimbo.name], she sinks to the floor, letting out a desperate whine as she realises that you've finished with her. Her feathered hands dart down between her legs, and she frantically starts masturbating as she seeks to finish what you started.
+			Когда ты [pc.step] назад от [harpyBimbo.name], она оседает на пол, издавая отчаянный скулеж, осознав, что ты с ней закончил. Её пернатые ручонки ныряют между ног, и она лихорадочно начинает мастурбировать, пытаясь довести до конца то, что ты начал.
 		</p>
 	#ENDIF
 	#IF(sex.getAllParticipants(false).contains(harpyBimboCompanion))
 		#IF(sex.isSatisfiedFromOrgasms(harpyBimboCompanion, true))
 			<p>
-				Letting out a deeply satisfied sigh, [harpyBimboCompanion.name] looks to be completely exhausted from the
+				Издавая глубокий удовлетворенный вздох, [harpyBimboCompanion.name] выглядит совершенно изнуренной от
 				#IF(sex.getNumberOfOrgasms(harpyBimboCompanion)>1)
-					 orgasms
+					оргазмов
 				#ELSE
-					 orgasm
+					оргазма
 				#ENDIF
-				 you gave her. Panting and looking up into your eyes, she moans, [harpyBimboCompanion.speechNoEffects(That was, like... Wow...)]
+				 ты подарил ей. Тяжело дыша и заглядывая тебе в глаза, она стонет: [harpyBimboCompanion.speechNoEffects(Это было, типа... Вау...)]
 			</p>
 		#ELSE
 			<p>
-				Not being satisfied from this sexual experience, [harpyBimboCompanion.name] looks over at her matriarch, and as she watches [harpyBimbo.namePos] [harpyBimbo.breasts+] rise and fall, she starts shamelessly masturbating right there in front of the rest of the surrounding harpies.
+				Не удовлетворившись этим сексуальным опытом, [harpyBimboCompanion.name] переводит взгляд на свою матриарха, и, наблюдая за тем, как [harpyBimbo.namePos] [harpyBimbo.breasts+] вздымается и опускается, она начинает бесстыдно мастурбировать прямо на глазах у остальных гарпий.
 			</p>
 		#ENDIF
 	#ENDIF
 	<p>
-		[harpyBimbo.NamePos] inner-circle of harpies, having watched the whole thing, kneel down in submission as you finish with their matriarch. Excitedly chattering amongst themselves, they talk about your performance and wonder aloud how long it will be before you're back for more...
+		[harpyBimbo.NamePos] и её ближайший круг гарпий, наблюдавшие за всем этим, преклоняют колени в знак подчинения, когда ты заканчиваешь с их матриархом. Возбужденно щебеча, они обсуждают твой успех и гадают, как скоро ты вернешься за добавкой...
 	</p>
 	]]>
     </htmlContent>
@@ -279,11 +279,11 @@
     <htmlContent tag="BIMBO_LEAVE_AFTER_SEX"><![CDATA[
 	#IF(sex.getAllParticipants(false).contains(harpyBimboCompanion))
 		<p>
-			Having shown these harpies their place, you set off down the staircase, and after walking back across the lower platform, you quickly find yourself on the outskirts of [harpyBimbo.namePos] nest once again.
+			Показав этим гарпиям их место, ты спускаешься по лестнице, и, пройдя обратно через нижнюю платформу, ты быстро оказываешься на окраине гнезда [harpyBimbo.namePos].
 		</p>
 	#ELSE
 		<p>
-			Having shown [harpyBimbo.name] her place, you set off down the staircase, and after walking back across the lower platform, you quickly find yourself on the outskirts of [harpyBimbo.namePos] nest once again.
+			Показав [harpyBimbo.name] её место, ты спускаешься по лестнице, и, пройдя обратно через нижнюю платформу, ты быстро оказываешься на окраине гнезда [harpyBimbo.namePos].
 		</p>
 	#ENDIF
     ]]>
@@ -294,63 +294,63 @@
 	
     <htmlContent tag="COMBAT_LOST"><![CDATA[
 	<p>
-		You fall to the floor, totally beaten. As you collapse, [bimboHarpyCompanion.name] jumps down on top of you, pinning you to the floor as she calls out to her matriarch, [bimboHarpyCompanion.speechNoEffects([bimboHarpy.Name]! Like, I did it! I got [pc.herHim]!)]
+		Ты валишься на пол, совершенно измотанный. Пока ты оседаешь, [bimboHarpyCompanion.name] прыгает сверху на тебя, прижимая к полу и выкрикивая своей матриарху: [bimboHarpyCompanion.speechNoEffects([bimboHarpy.Name]! Типа, у меня получилось! Я взяла [pc.herHim]!)]
 	</p>
 	<p>
-		[bimboHarpy.speechNoEffects(Good girl, [bimboHarpyCompanion.name]!)] you hear her respond. [bimboHarpy.speechNoEffects(Like, help her out, girls! It's time to teach this little [pc.race] a lesson!)]
+		[bimboHarpy.speechNoEffects(Хорошая девочка, [bimboHarpyCompanion.name]!)] — слышишь ты её ответ. [bimboHarpy.speechNoEffects(Типа, помогите ей, девчонки! Пора проучить эту малявку [pc.race]!)]
 	</p>
 	<p>
-		As [bimboHarpyCompanion.name] continues holding you down, the rest of [bimboHarpy.NamePos] inner-circle moves in. Several of them help to pin your [pc.arms] and [pc.legs] to the floor, giggling all the while.
+		Пока [bimboHarpyCompanion.name] продолжает придавливать тебя, остальная свита [bimboHarpy.NamePos] смыкается вокруг. Несколько гарпий помогают прижать твои [pc.arms] и [pc.legs] к полу, не переставая хихикать.
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_MATRIARCH"><![CDATA[
 	<p>
-		You fall to the floor, totally beaten. As you collapse, [bimboHarpy.name] orders her flock to hold you still, and, quickly jumping down on top of you, you're quickly pinned to the floor by several bimbo harpies.
+		Ты валишься на пол, совершенно избитый. Пока ты пытаешься прийти в себя, [bimboHarpy.name] приказывает своей стае держать тебя неподвижно, и, ловко спрыгнув сверху, она вместе с несколькими гарпиями-бимбо быстро прижимает тебя к земле.
 	</p>
 	<p>
-		[bimboHarpy.speechNoEffects(Like, [bimboHarpyCompanion.name], are you ok?!)] you hear [bimboHarpy.name] softly calling out to her friend. [bimboHarpy.speechNoEffects(Come on, it's time to teach this little [pc.race] a lesson!)]
+		[bimboHarpy.speechNoEffects(Типа, [bimboHarpyCompanion.name], ты как?!)] — слышишь ты, как [bimboHarpy.name] тихонько окликает подругу. [bimboHarpy.speechNoEffects(Да ладно, пора проучить эту малявку [pc.race]!)]
 	</p>
 	<p>
-		As the members of [bimboHarpy.namePos] inner-circle continue to hold you down, you hear the bimbo matriarch and her companion walking towards you. The bimbo harpies start giggling as you try to wriggle free, but you're too weak from the fight to offer any real resistance.
+		Пока свита [bimboHarpy.namePos] продолжает удерживать тебя, ты слышишь, как к тебе направляются матка-бимбо и её подруга. Гарпии начинают хихикать, когда ты пытаешься вырваться, но после боя ты слишком слаб, чтобы оказать хоть какое-то реальное сопротивление.
 	</p>
 	<p>
-		[bimboHarpy.speechNoEffects(Time for some revenge [bimboHarpyCompanion.name]! We're gonna, like, have to punish this one!)] [bimboHarpy.name] shouts out, and, as her companion moves to help the other bimbos hold you down, she laughs, [bimboHarpy.speechNoEffects(Time for some fun!)]
+		[bimboHarpy.speechNoEffects(Пора отомстить, [bimboHarpyCompanion.name]! Нам типа нужно её наказать!)] — выкрикивает [bimboHarpy.name], и, пока её подруга помогает остальным бимбо удерживать тебя, она смеётся: [bimboHarpy.speechNoEffects(Время повеселиться!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_END"><![CDATA[
 	<p>
-		[bimboHarpy.speechNoEffects(Y'know, I think I understand why, like, you're so angry and rude and stuff!)] [bimboHarpy.name] giggles, stepping forwards to tower over you. [bimboHarpy.speechNoEffects(You're just, like, frustrated and jealous of how super hot all my girls are!)]
+		[bimboHarpy.speechNoEffects(Знаешь, мне кажется, я понимаю, почему ты такая злая и грубая и всё такое!)] [bimboHarpy.name] хихикает, делая шаг вперед, чтобы возвыситься над тобой. [bimboHarpy.speechNoEffects(Ты просто, типа, расстроена и ревнуешь к тому, какие мои девчонки супергорячие!)]
 	</p>
 	<p>
-		[pc.speechNoEffects(Let me go!)] you shout, struggling against the bimbo harpies. You're too weak to shake them off, however, and they easily continue to pin you to the floor, holding you quite still as [bimboHarpy.name] stoops down next to your face.
+		[pc.speechNoEffects(Отпусти меня!)] — кричишь ты, пытаясь вырваться из рук гарпий-бимбо. Однако ты слишком слаба, чтобы стряхнуть их, и они с легкостью продолжают прижимать тебя к полу, удерживая почти неподвижно, пока [bimboHarpy.name] склоняется к самому твоему лицу.
 	</p>
 	#IF(game.isBadEndsEnabled())
 		<p>
-			[bimboHarpy.speechNoEffects(Don't worry, babe, you're gonna love being one of my girls!)] she laughs, before turning to address her subordinate and commanding, [bimboHarpy.speechNoEffects(Strip her, [bimboHarpyCompanion.name], then, like, hold [pc.her] mouth open! I'm gonna feed her, like, so many of our special lollipops!)]
+			[bimboHarpy.speechNoEffects(Не волнуйся, крошка, тебе понравится быть одной из моих девчонок!)] — смеется она, прежде чем повернуться к своей подчиненной и скомандовать: [bimboHarpy.speechNoEffects(Раздень её, [bimboHarpyCompanion.name], а потом, типа, держи [pc.her] рот открытым! Я собираюсь накормить её, типа, кучей наших особенных леденцов!)]
 		</p>
 		<p>
-			With the group of bimbo harpies continuing to overpower you, [bimboHarpyCompanion.name] sets about stripping you of all your clothing, laughing at your fruitless attempt to pull free. Out of the corner of your eye, you see [bimboHarpy.name] stepping forwards with several pink-and-white swirly lollipops clutched in her bird-like hands. A moment later, and you find your mouth being forced open by [bimboHarpyCompanion.name], while her matriarch leans in and forcefully shoves the sweets into your mouth.
+			Пока группа гарпий-бимбо продолжает подавлять тебя силой, [bimboHarpyCompanion.name] принимается срывать с тебя всю одежду, посмеиваясь над твоими тщетными попытками вырваться. Краем глаза ты видишь, как [bimboHarpy.name] делает шаг вперед, сжимая в своих птичьих лапках несколько розово-белых спиралевидных леденцов. Мгновение спустя [bimboHarpyCompanion.name] силой разжимает тебе рот, а матка наклоняется и решительно запихивает сладости тебе в рот.
 		</p>
 		<p>
-			[bimboHarpy.speechNoEffects(Suck on these, babe!)] [bimboHarpy.name] laughs, [bimboHarpy.speechNoEffects(You're, like, gonna become one of my bimbo harpy sluts!)]
+			[bimboHarpy.speechNoEffects(Соси их, крошка!)] — смеется [bimboHarpy.name], [bimboHarpy.speechNoEffects(Ты, типа, станешь одной из моих шлюх-гарпий-бимбо!)]
 		</p>
 	#ELSEIF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
 		<p>
-			[bimboHarpy.speechNoEffects(Like, <i>you're</i> the one who needs to calm down now!)] she laughs, [bimboHarpy.speechNoEffects(Hold [pc.her] mouth open [bimboHarpyCompanion.name]! I think this little troublemaker needs one of our special lollipops!)]
+			[bimboHarpy.speechNoEffects(Типа, <i>ты</i> тот, кому сейчас нужно успокоиться!)] — смеется она, [bimboHarpy.speechNoEffects(Раскрой [pc.her] рот, [bimboHarpyCompanion.name]! Кажется, этой маленькой проказнице нужна одна из наших особенных леденцов!)]
 		</p>
 		<p>
-			Quickly grabbing your [pc.face+], [bimboHarpyCompanion.name] tries to pull your mouth open, laughing at your fruitless attempt to shake your head free. Out of the corner of your eye, you see [bimboHarpy.name] pull out a pink-and-white swirly lollipop, and, leaning in, she forcefully tries to shove it into your mouth.
+			Быстро схватив тебя за [pc.face+], [bimboHarpyCompanion.name] пытается разжать тебе рот, посмеиваясь над твоими тщетными попытками освободить голову от её рук. Краем глаза ты видишь, как [bimboHarpy.name] достает розово-белый вихревой леденец, и, наклонившись, она с силой пытается запихнуть его тебе в рот.
 		</p>
 		<p>
-			[bimboHarpy.speechNoEffects(This is gonna, like, totally chill you out!)]
+			[bimboHarpy.speechNoEffects(Это, типа, реально тебя расслабит!)]
 		</p>
 	#ELSE
 		<p>
-			[bimboHarpy.speechNoEffects(Like, <i>you're</i> the one who needs to calm down now!)] she laughs, before letting out a frustrated sigh as she sees that your mouth is inaccessible. Pouting at you, she whines, [bimboHarpy.speechNoEffects(That's, like, totally not fair! I wanted to turn you into one of us bimbo harpies, but, like, you can't suck on our special lollipops while your mouth's like that! Eugh! I guess I'll just have you thrown out of here instead!)]
+			[bimboHarpy.speechNoEffects(Типа, <i>ты</i> тот, кому сейчас нужно успокоиться!)] — смеется она, а затем разочарованно вздыхает, видя, что до твоего рта не добраться. Надув губы, она капризно заныла: [bimboHarpy.speechNoEffects(Это, типа, вообще нечестно! Я хотела превратить тебя в одну из нас, бимбо-гарпий, но, типа, ты не сможешь сосать наши особенные леденцы, пока твой рот вот так! Фу! Тогда, наверное, тебя просто вышвырнут отсюда!)]
 		</p>
 	#ENDIF
     ]]>
@@ -358,71 +358,71 @@
 	
     <htmlContent tag="COMBAT_LOST_MOUTH_BLOCKED"><![CDATA[
 	<p>
-		[harpyBimbo.speechNoEffects(So, [harpyBimboCompanion.name], like what are you waiting for?!)] [harpyBimbo.name] exclaims, before dismissively gesturing towards you and demanding, [harpyBimbo.speechNoEffects(Throw [pc.herHim] out of my nest! I, like, totally don't want to see [pc.herHim] again!)]
+		[harpyBimbo.speechNoEffects(Ну, [harpyBimboCompanion.name], чего ты ждешь?!)] — восклицает [harpyBimbo.name], после чего пренебрежительно указывает на тебя и требует: [harpyBimbo.speechNoEffects(Вышвырните [pc.herHim] из моего гнезда! Я, типа, вообще не хочу больше видеть [pc.herHim]!)]
 	</p>
 	<p>
-		Hurrying to carry out their matriarch's order, [harpyBimboCompanion.name] and several other harpies pull you to your [pc.feet], before roughly marching you out of their nest and physically throwing you down onto a nearby walkway. Not wanting to stick around and give them a chance to abuse you further, you leave the harpies' mocking laughter behind and hurry away from [bimboHarpy.namePos] nest...
+		Спеша исполнить приказ своей матриархини, [harpyBimboCompanion.name] и еще несколько гарпий тащат тебя к твоему [pc.feet], а затем грубо вышвыривают из своего гнезда, буквально сбрасывая тебя на ближайшую дорожку. Не желая задерживаться и давать им шанс изводить тебя дальше, ты оставляешь позади насмешливый хохот гарпий и поспешно уходишь прочь от гнезда [bimboHarpy.namePos]...
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_NO_TF"><![CDATA[
 	<p>
-		With a determined yank, you finally manage to pull one of your [pc.arms] free from the harpy's clutches. Before they're able to restrain you again, you grab the lollipop out of [bimboHarpy.namePos] feathered hand, before smashing it on the floor beneath you.
+		Решительным рывком тебе наконец удается вырвать одну из своих [pc.arms] из когтей гарпии. Прежде чем они успевают снова тебя скрутить, ты выхватываешь леденец из пернатой лапы [bimboHarpy.namePos] и с силой разбиваешь его о пол под ногами.
 	</p>
 	<p>
-		[bimboHarpy.speechNoEffects(Aaah! You stupid whore!)] [bimboHarpy.name] screams, jumping to her feet and towering over you. [bimboHarpy.speechNoEffects(You're gonna, like, pay for wasting that! You're gonna, like, do <i>exactly</i> what we say, or else you're gonna be our little pet forever!)]
+		[bimboHarpy.speechNoEffects(Ааах! Ты, тупая шлюха!)] — вопит [bimboHarpy.name], вскакивая на ноги и возвышаясь над тобой. [bimboHarpy.speechNoEffects(Ты, типа, заплатишь за то, что всё испортил! Ты будешь, типа, делать <i>точно</i> всё, что мы скажем, иначе так и останешься нашим маленьким питомцем навсегда!)]
 	</p>
 	<p>
-		After flapping her wings and jumping around in anger for a little while, [bimboHarpy.name] storms off to elsewhere in the nest. Only a few moments later, she returns and kneels down beside you, setting a makeup bag down next to your face before letting out a giggle. [bimboHarpy.speechNoEffects(So, like, first, how about us girls give you a makeover?!)]
+		Похлопав крыльями и немного попрыгав в ярости, [bimboHarpy.name] уносится куда-то вглубь гнезда. Спустя всего несколько мгновений она возвращается и опускается на колени рядом с тобой, ставя косметичку прямо перед твоим лицом и хихикая. [bimboHarpy.speechNoEffects(Ну так, типа, как насчет того, чтобы наши девчонки устроили тебе макияж?!)]
 	</p>
 	<p>
-		Any protests or objections that leave your mouth are drowned out by a chorus of laughter, and as one, the group of bimbo harpies descend upon you...
+		Любые протесты или возражения, срывающиеся с твоих губ, тонут в хоре смеха, и вся группа гарпий-бимбо дружно набрасывается на тебя...
 	</p>
 	<p>
-		For the next few hours, you're the centre of the harpies' attention. Applying heavy layers of makeup, dressing you up in frilly clothes, and parading you around in front of one another are amongst the least humiliating things you suffer. Eventually, however, [bimboHarpy.name] loses interest, and one-by-one, the rest of the harpies move onto other things.
+		В течение следующих нескольких часов ты находишься в центре внимания гарпий. Нанесение толстых слоев макияжа, облачение в рюшевое тряпье и демонстрация тебя друг другу — это лишь малая часть тех унижений, через которые тебе приходится пройти. В конце концов, [bimboHarpy.name] теряет интерес, и гарпии одна за другой переключаются на другие занятия.
 	</p>
 	<p>
-		As the last bimbo declares that she's bored of playing with you, the matriarch walks over to you. [bimboHarpy.speechNoEffects(I hope you, like, learned your lesson! Now get out of my nest!)]
+		Как только последняя бимби объявляет, что ей надоело с тобой возиться, к тебе подходит матриарх. [bimboHarpy.speechNoEffects(Надеюсь, ты, типа, усвоила урок! А теперь брысь из моего гнезда!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_TF_START"><![CDATA[
 	<p>
-		Obediently doing as you're told, you open your mouth and let the lollipop slide past your [pc.lips+]. An intense, sweet flavour hits your tongue, and you find that it's quite unlike anything you've ever tasted before. Before you know what you're doing, you're wrapping your [pc.lips] around the delicious candy, letting out little whining noises as you find yourself unable to stop sucking and licking it...
+		Послушно выполняя приказ, ты открываешь рот и позволяешь леденцу скользнуть мимо своего [pc.lips+]. На язык обрушивается интенсивный сладкий вкус, совершенно не похожий ни на что из того, что ты пробовала раньше. Прежде чем ты успеваешь опомниться, ты уже обвиваешь вкусную конфету своим [pc.lips], издавая тихие скулящие звуки, не в силах перестать сосать и облизывать её...
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_TF_END"><![CDATA[
 	<p>
-		As the lollipop's transformative effects come to an end, the harpies' grip on your [pc.arms] and [pc.legs] loosens. Blinking slowly a few times, you let out an exhausted little moan. [pc.speechNoEffects(Like, I feel all bubbly inside! That was, like, super intense!)]
+		Когда трансформирующее действие леденца подходит к концу, хватка гарпий на твоих [pc.arms] и [pc.legs] ослабевает. Медленно моргая, ты издаешь усталый, тихий стон. [pc.speechNoEffects(Типа, внутри всё так и бурлит! Это было, типа, просто супер-интенсивно!)]
 	</p>
 	<p>
-		The flock of bimbo harpies bursts out into laughter, and the ones who were holding you down finally release you before backing off. Scrambling to your knees, you find yourself looking up at [bimboHarpy.Name] as she continues towering over you.
+		Стая гарпий-бимби взрывается смехом, а те, кто удерживал тебя, наконец отпускают тебя и отступают. Поспешно опустившись на колени, ты обнаруживаешь, что смотришь снизу вверх на [bimboHarpy.Name], которая всё еще возвышается над тобой.
 	</p>
 	<p>
-		[harpyBimbo.speechNoEffects(Lookin' good! Now, before you get out of my nest, you're gonna tell me how sorry you are!)]
+		[harpyBimbo.speechNoEffects(Выглядишь супер! Ну а теперь, прежде чем ты выберешься из моего гнезда, ты расскажешь мне, как сильно ты каешься!)]
 	</p>
 	<p>
-		With the effects of the lollipop still lingering in your mind, you find yourself blurting out, [pc.speechNoEffects(Like, I'm so super sorry for causing you so much trouble and stuff! Please, [harpyBimbo.name], forgive me!)]
+		Пока эффект от леденца всё еще туманит твой разум, ты ловишь себя на том, что выпаливаешь: [pc.speechNoEffects(Типа, мне ну ооочень-очень жаль, что я доставила столько хлопот и всё такое! Пожалуйста, [harpyBimbo.name], прости меня!)]
 	</p>
 	<p>
-		[harpyBimbo.Name] grins down at you, and, to the background noise of dozens of bimbo harpies laughing at you, she shouts, [harpyBimbo.speechNoEffects(That's better! Now, like, I can't have you leaving lookin' so, like, plain! Us girls need to give you a makeover!)]
+		[harpyBimbo.Name] ухмыляется, глядя на тебя сверху вниз, и под фоновый хохот десятков гарпий-бимбо выкрикивает: [harpyBimbo.speechNoEffects(Так-то лучше! Теперь, типа, нельзя отпускать тебя такой... ну, обычной! Нам, девчонкам, нужно устроить тебе макияж и преображение!)]
 	</p>
 	<p>
-		For the next few hours, you're the centre of the harpies' attention. Applying heavy layers of makeup, dressing you up in frilly clothes, and parading you around in front of one another are amongst the least humiliating things you suffer. Eventually, however, [bimboHarpy.name] loses interest, and one-by-one, the rest of the harpies move onto other things.
+		В течение следующих нескольких часов ты находишься в центре внимания гарпий. Нанесение толстых слоев макияжа, облачение в рюшевое тряпье и демонстрация тебя друг другу — это лишь малая часть тех унижений, через которые тебе приходится пройти. В конце концов, [bimboHarpy.name] теряет интерес, и гарпии одна за другой переключаются на другие занятия.
 	</p>
 	<p>
-		As the last bimbo declares that she's bored of playing with you, the matriarch walks over to you. [bimboHarpy.speechNoEffects(I hope you, like, learned your lesson! Now get out of my nest!)]
+		Как только последняя бимби объявляет, что ей надоело с тобой возиться, к тебе подходит матриарх. [bimboHarpy.speechNoEffects(Надеюсь, ты, типа, усвоила урок! А теперь брысь из моего гнезда!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_THROWN_OUT"><![CDATA[
 	<p>
-		Finally given an opportunity to escape, you do as [bimboHarpy.name] commands. Running down the staircase, you leave the harpies' mocking laughter behind, and, dashing across the lower platform, you quickly find yourself back on the outskirts of [bimboHarpy.namePos] nest...
+		Наконец получив шанс на побег, ты беспрекословно выполняешь приказ [bimboHarpy.name]. Сбегая по лестнице, ты оставляешь позади насмешливый хохот гарпий и, промчавшись через нижнюю платформу, быстро оказываешься на окраине гнезда [bimboHarpy.namePos]...
 	</p>
     ]]>
     </htmlContent>
@@ -431,65 +431,65 @@
 	
     <htmlContent tag="COMBAT_LOST_BAD_END_TF_START"><![CDATA[
 	<p>
-		Completely overpowered by the bimbo harpies and totally at their mercy, you can't do anything but obey [bimboHarpy.namePos] command. With the matriarch still forcefully shoving several of the large, pink-and-white lollipops into your mouth, you reluctantly start to suck on them. An intense, sweet flavour hits your tongue, and you find that it's quite unlike anything you've ever tasted before. Before you know what you're doing, you're eagerly wrapping your [pc.lips] around the delicious candies, letting out little whining noises as you find yourself unable to stop sucking and licking them.
+		Полностью подавленный гарпиями-бимбо и находясь в их полной власти, ты не можешь ничего не делать, кроме как подчиняться приказу [bimboHarpy.namePos]. Пока матриарх всё еще силой запихивает тебе в рот огромные розово-белые леденцы, ты неохотно начинаешь их сосать. На язык обрушивается интенсивный сладкий вкус, совершенно не похожий ни на что из того, что ты пробовал раньше. Прежде чем ты успеваешь опомниться, ты уже жадно обхватываешь своими [pc.lips] эти вкусняшки, издавая тихие скулящие звуки и не в силах перестать сосать и облизывать их.
 	</p>
 	<p>
-		[bimboHarpy.speechNoEffects(That's it, babe, they taste, like, sooo good, don't they?)] she teases, [bimboHarpy.speechNoEffects(Now turn into a sexy, bimbo harpy for me!)]
+		[bimboHarpy.speechNoEffects(Ну вот, детка, они же, типа, ну ооочень вкусные, правда?)] — дразнит она, — [bimboHarpy.speechNoEffects(А теперь превращайся в сексуальную гарпию-бимбо для меня!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_BAD_END_TF_END"><![CDATA[
 	<p>
-		As the lollipop's transformative effects come to an end, the harpies' grip on your [pc.arms] and [pc.legs] loosens. Blinking slowly a few times, you let out an exhausted little moan and whine, [pc.speechNoEffects(Like, I feel all bubbly inside! That was, like, super intense!)]
+		Когда действие леденцов подходит к концу, хватка гарпий на твоих [pc.arms] и [pc.legs] ослабевает. Медленно моргая, ты издаешь усталый, жалобный стон: [pc.speechNoEffects(Типа, внутри всё так и бурлит! Это было, типа, просто супер-интенсивно!)]
 	</p>
 	<p>
-		The flock of bimbo harpies bursts out into laughter, and the ones who were holding you down finally release you before backing off. Scrambling to your knees, you find yourself looking up at [bimboHarpy.Name] as she continues towering over you.
+		Стая гарпий-бимби взрывается смехом, а те, кто удерживал тебя, наконец отпускают тебя и отступают. Поспешно опустившись на колени, ты обнаруживаешь, что смотришь снизу вверх на [bimboHarpy.Name], которая всё еще возвышается над тобой.
 	</p>
 	<p>
-		[harpyBimbo.speechNoEffects(Lookin' good, babe! Now, like, say sorry for being so super rude to me!)] she demands.
+		[harpyBimbo.speechNoEffects(Выглядишь классно, детка! А теперь, типа, извинись за то, что была такой супер-грубой со мной!)] — требует она.
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_BAD_END_APLOGISE"><![CDATA[
 	<p>
-		With the effects of the lollipops still lingering in your mind, you find yourself blurting out, [pc.speechNoEffects(Like, I'm so super sorry for causing you so much trouble and stuff! Please, [harpyBimbo.name], forgive me!)]
+		Пока эффект от леденцов всё еще туманит твой разум, ты ловишь себя на том, что выпаливаешь: [pc.speechNoEffects(Типа, мне ну ооочень жаль, что я доставила тебе столько хлопот и всё такое! Пожалуйста, [harpyBimbo.name], прости меня!)]
 	</p>
 	<p>
-		[harpyBimbo.Name] grins down at you, and to the background noise of dozens of bimbo harpies laughing at you, she shouts, [harpyBimbo.speechNoEffects(That's better! Now, like, I need to put you in your place! You're just one of my sexy little bimbo harpies, understand? Now, like, tell me who your matriarch is!)]
+		[harpyBimbo.Name] ухмыляется, глядя на тебя сверху вниз, и под фоновый хохот десятков гарпий-бимбо выкрикивает: [harpyBimbo.speechNoEffects(Так-то лучше! А теперь, типа, мне нужно поставить тебя на место! Ты всего лишь одна из моих сексуальных маленьких гарпий-бимбо, понимаешь? А теперь, типа, скажи мне, кто твоя матриарх!)]
 	</p>
 	<p>
-		An effect of eating so many lollipops at once seems to be that you've now got a heavy fog in your mind, and so you struggle to understand what [harpyBimbo.name] is saying. Thankfully, [harpyBimboCompanion.name] comes to your rescue, as she impatiently hisses, [harpyBimboCompanion.speechNoEffects(It's, like, [harpyBimbo.name]! Tell her that she's totally your matriarch and you're hers to do with as she pleases!)]
+		Похоже, из-за того, что ты сожрал столько леденцов разом, в твоей голове поселился густой туман, и ты с трудом понимаешь, что говорит [harpyBimbo.name]. К счастью, [harpyBimboCompanion.name] приходит тебе на помощь, нетерпеливо шипя: [harpyBimboCompanion.speechNoEffects(Это, типа, [harpyBimbo.name]! Скажи ей, что она твоя полная матриарх, и ты принадлежишь ей, чтобы она делала с тобой всё, что захочет!)]
 	</p>
 	<p>
-		Repeating what you've just been told, you absent-mindedly squeeze your [pc.breasts+] as you declare, [pc.speechNoEffects(You're my matriarch, [harpyBimbo.name]! I'll, like, totally do anything you tell me to!)]
+		Повторяя то, что тебе только что сказали, ты рассеянно сжимаешь свой [pc.breasts+] и заявляешь: [pc.speechNoEffects(Ты моя матриарх, [harpyBimbo.name]! Я, типа, реально сделаю всё, что ты скажешь!)]
 	</p>
 	#IF(pc.hasVagina())
 		<p>
-			[harpyBimbo.speechNoEffects(Stacy! Like, get over here, you dumb slut!)] your matriarch suddenly shouts, before pointing at the ground and commanding you, [harpyBimbo.speechNoEffects(Lie down on your back, babe! You need to learn, like, how good your matriarch's pussy tastes!)]
+			[harpyBimbo.speechNoEffects(Стейси! Типа, а ну иди сюда, тупая шлюха!)] — внезапно выкрикивает твоя матриарх, после чего указывает на землю и приказывает тебе: [harpyBimbo.speechNoEffects(Ложись на спину, крошка! Тебе нужно, типа, узнать, насколько вкусная киска у твоей матриарха!)]
 		</p>
 		<p>
-			Before you can obey, a busty harpy, who you assume to be Stacy, responds to [harpyBimbo.namePos] call by stepping forwards and asking, [harpyBimboMale.speechNoEffects(Heya, [harpyBimbo.name], like, what'd ya need me for?)]
+			Прежде чем ты успеваешь подчиниться, пышногрудая гарпия, которой, как ты полагаешь, является Стейси, откликается на зов [harpyBimbo.namePos], делая шаг вперед и спрашивая: [harpyBimboMale.speechNoEffects(Хей, [harpyBimbo.name], типа, что тебе от меня надо?)]
 		</p>
 		<p>
-			Looking over at Stacy, you see that she's wearing nothing but a light blue bikini. As she looks down at your exposed body, a huge bulge starts to press out from beneath the fabric of her bikini bottoms, which causes [harpyBimbo.name] to tut and say, [harpyBimbo.speechNoEffects(Ew! Your cock's, like, sooo too big! There's, like, no way I'm letting it near me, but this slut needs to know her place, so you can, like, stick it in her pussy and show her that she's at the bottom of the pecking order around here.)]
+			Посмотрев на Стейси, ты видишь, что на ней надето лишь светло-голубое бикини. Когда она опускает взгляд на твое обнаженное тело, огромный бугор начинает проступать сквозь ткань её плавок, отчего [harpyBimbo.name] цокает языком и говорит: [harpyBimbo.speechNoEffects(Фу! Твой член, типа, ну о-о-очень большой! Я, типа, ни за что не подпущу его к себе, но этой шлюхе пора знать своё место, так что ты можешь, типа, вставить его ей в киску и показать, что она здесь на самом дне пищевой цепочки.)]
 		</p>
 		<p>
-			Shifting aside her bikini, Stacy reveals her cock, which at [harpyBimboMale.penisLengthValue] long would be considered large for anyone, but for a harpy it's absolutely colossal. A chorus of disgusted exclamations and mocking giggles breaks out amongst the surrounding harpies at the sight of Stacy's massive cock. Seemingly used to this sort of reaction, the well-endowed harpy places one hand on her wide hips and retorts, [harpyBimboMale.speechNoEffects(You can all, like, so totally fuck off! You all know you love it!)] 
+			Сдвинув в сторону свой бикини, Стейси демонстрирует свой член, который при [harpyBimboMale.penisLengthValue] длине считался бы внушительным для любого, но для гарпии он просто колоссален. При виде массивного достоинства Стейси среди окружающих гарпий раздается хор брезгливых восклицаний и издевательского хихиканья. Похоже, привыкшая к подобной реакции, щедро одаренная гарпия кладет одну руку на свои широкие бедра и огрызается: [harpyBimboMale.speechNoEffects(Да вы все, типа, просто отвалите! Сами же знаете, что вам это дико нравится!)] 
 		</p>
 		<p>
-			Wanting to get started, your matriarch points to the ground once again and commands you, [harpyBimbo.speechNoEffects(Get down already! I'm, like, gonna sit on your face while Stacy here breaks your pussy!)]
+			Желая поскорее приступить к делу, твоя матриарх снова указывает на землю и командует тебе: [harpyBimbo.speechNoEffects(А ну, живо вниз! Я, типа, сяду тебе на лицо, пока эта Стейси будет разрывать твою киску!)]
 		</p>
 	#ELSE
 		<p>
-			[harpyBimbo.speechNoEffects(That's right, babe, and don't you forget it!)] your matriarch sneers, before pointing at the ground and commanding you, [harpyBimbo.speechNoEffects(Now, like, lie down on your back! You need to, like, learn what your role is in my nest!)]
+			[harpyBimbo.speechNoEffects(Вот именно, детка, и не вздумай забыть об этом!)] — фыркает твоя матриарх, прежде чем указать на землю и приказать тебе: [harpyBimbo.speechNoEffects(А теперь, типа, ложись на спину! Тебе нужно, типа, выучить свое место в моем гнезде!)]
 		</p>
 		<p>
-			[harpyBimboCompanion.speechNoEffects(I could totally go with riding her cock,)] [harpyBimboCompanion.name] drawls, before asking, [harpyBimboCompanion.speechNoEffects([harpyBimbo.Name], can I be, like, the one to use her first?)]
+			[harpyBimboCompanion.speechNoEffects(Я бы точно не отказалась оседлать её член,)] — лениво протягивает [harpyBimboCompanion.name], после чего спрашивает: [harpyBimboCompanion.speechNoEffects([harpyBimbo.Name], можно мне, типа, первой её использовать?)]
 		</p>
 		<p>
-			[harpyBimbo.speechNoEffects(Well, duh!)] [harpyBimbo.name] exclaims, [harpyBimbo.speechNoEffects(That's what I was planning, like, this entire time! Now get down, slut, and let [harpyBimboCompanion.name] ride your cock!)]
+			[harpyBimbo.speechNoEffects(Ну еще бы!)] — восклицает [harpyBimbo.name], добавляя: [harpyBimbo.speechNoEffects(Это именно то, что я, типа, планировала всё это время! А теперь падай вниз, шлюшка, и дай [harpyBimboCompanion.name] оседлать твой член!)]
 		</p>
 	#ENDIF
     ]]>
@@ -497,26 +497,26 @@
 	
     <htmlContent tag="BAD_END_SEX_VAGINA_START"><![CDATA[
 	<p>
-		Not wanting to displease your matriarch, you do as you're told and quickly lie down before her. Wasting no time, [harpyBimbo.name] steps over the top of you, and after shifting aside her v-string panties, she drops down and firmly plants her [harpyBimbo.pussy+] over your [pc.lips+]. Letting out a little giggle, she moans, [harpyBimbo.speechNoEffects(Like, come on, babe! Get that tongue of yours in deep!)]
+		Не желая расстраивать свою матриарха, ты послушно ложишься перед ней. Не теряя ни секунды, [harpyBimbo.name] перешагивает через тебя, отодвигает свои стринги и нависает сверху, плотно прижимая свой [harpyBimbo.pussy+] к твоей [pc.lips+]. С легким хихиканьем она стонет: [harpyBimbo.speechNoEffects(Ну же, детка! Засунь свой язычок поглубже!)]
 	</p>
 	<p>
-		As you dart out your tongue and start to eagerly eat out your matriarch, you suddenly feel your legs being impatiently pushes apart. A moment later, and you feel the unmistakable touch of [harpyBimboMale.namePos] [harpyBimboMale.cock+] as she rubs it up and down over your [pc.labia+]. With a firm grip on your legs, the well-endowed harpy thrusts forwards, sinking her [harpyBimboMale.cock+] into your pussy and causing you to let out a muffled moan into [harpyBimbo.namePos] cunt. Pushing forwards until she's balls-deep inside of you, [harpyBimboMale.name] moans, [harpyBimboMale.speechNoEffects(~Mmm!~ Like, this bitch's pussy feels good! ~Aah!~ I could, like, totally fuck her all day!)]
+		Как только ты высовываешь язык и начинаешь жадно ласкать плоть своей матриарха, ты внезапно чувствуешь, как твои ноги нетерпеливо раздвигают. Мгновение спустя ты ощущаешь безошибочное прикосновение [harpyBimboMale.namePos] [harpyBimboMale.cock+], когда она начинает тереться им вверх и вниз по твоей [pc.labia+]. Крепко сжав твои бедра, статная гарпия подается вперед, вонзая свой [harpyBimboMale.cock+] в твою киску, отчего ты издаешь приглушенный стон прямо в [harpyBimbo.namePos] щель. Проталкиваясь вперед, пока не входит в тебя по самые яйца, [harpyBimboMale.name] стонет: [harpyBimboMale.speechNoEffects(~Ммм!~ Блин, киска этой сучки просто охрененная! ~Аах!~ Я бы, типа, могла трахать её весь день!)]
 	</p>
 	<p>
-		Completely at the mercy of these harpies, you continue to eat out [harpyBimbo.name] while [harpyBimboMale.name] thrusts her fat cock in and out of your [pc.pussy+]...
+		Находясь в полной власти этих гарпий, ты продолжаешь вылизывать [harpyBimbo.name], пока [harpyBimboMale.name] вгоняет свой толстый член в твою [pc.pussy+] и вынимает его обратно...
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="BAD_END_SEX_PENIS_START"><![CDATA[
 	<p>
-		Not wanting to displease your matriarch, you do as you're told and quickly lie down before her. Wasting no time, [harpyBimbo.name] steps over the top of you, and after shifting aside her v-string panties, she drops down and firmly plants her [harpyBimbo.pussy+] over your [pc.lips+]. Letting out a little giggle, she moans, [harpyBimbo.speechNoEffects(Like, come on, babe! Get that tongue of yours in deep!)]
+		Не желая расстраивать свою матриарха, ты послушно ложишься перед ней. Не теряя ни секунды, [harpyBimbo.name] перешагивает через тебя, отодвигает свои стринги и нависает сверху, плотно прижимая свой [harpyBimbo.pussy+] к твоей [pc.lips+]. С легким хихиканьем она стонет: [harpyBimbo.speechNoEffects(Ну же, детка! Засунь свой язычок поглубже!)]
 	</p>
 	<p>
-		As you dart out your tongue and start to eagerly eat out your matriarch, you suddenly feel a feathered finger tease over your [pc.cock+]. As your shaft rises to attention, it's suddenly grabbed by who you assume to be [harpyBimboCompanion.name], before being teased up and down against her [harpyBimboCompanion.labia+]. A moment later, and the harpy drops down, forcing your [pc.cock+] into her [harpyBimboCompanion.pussy+]. Letting out a whorish moan, she pants, [harpyBimboCompanion.speech(~Aah!~ Oh yeah, like, your cock feels super good!)]
+		Когда ты высовываешь язык и с жадностью начинаешь ласкать свою матриарха, ты внезапно чувствуешь, как пернатый палец дразнит твой [pc.cock+]. Твой член тут же встает колом, и его внезапно хватает та, за кого ты принимаешь [harpyBimboCompanion.name], после чего она начинает водить им вверх и вниз по своей [harpyBimboCompanion.labia+]. Мгновение спустя гарпия опускается на тебя, с силой втискивая твой [pc.cock+] в свою [harpyBimboCompanion.pussy+]. Издавая похотливый стон, она тяжело дышит: [harpyBimboCompanion.speech(~Аах!~ О да, типа, твой член чертовски хорош!)]
 	</p>
 	<p>
-		Completely at the mercy of these harpies, you continue to eat out [harpyBimbo.name] while [harpyBimboCompanion.name] bounces up and down on your [pc.cock+]...
+		Находясь в полной власти этих гарпий, ты продолжаешь сосать [harpyBimbo.name], пока [harpyBimboCompanion.name] скачет вверх-вниз на твоем [pc.cock+]...
 	</p>
     ]]>
     </htmlContent>
@@ -524,17 +524,17 @@
     <htmlContent tag="BAD_END_AFTER_SEX"><![CDATA[
 	#IF(pc.hasVagina())
 		<p>
-			Having had enough, your matriarch slides off of you, leaving your face thoroughly soaked in saliva and girlcum. [harpyBimboMale.Name] is far from done, however, and while your matriarch struts off to another part of the nest, she keeps on thrusting her fat cock in and out of your well-fucked pussy. Able to look down into your eyes for the first time, [harpyBimboMale.name] teases, [harpyBimboMale.speechNoEffects(~Mmm!~ You like my cock, bitch?)]
+		Насладившись сполна, твоя матриарха соскальзывает с тебя, оставляя твое лицо полностью залитым слюной и девичьим соком. Однако с [harpyBimboMale.Name] еще далеко не все закончено: пока матриарха вальяжно уходит в другую часть гнезда, она продолжает вбивать свой толстый член в твою изрядно оттраханную киску. Впервые заглянув тебе в глаза, [harpyBimboMale.name] дразнит: [harpyBimboMale.speechNoEffects(~Ммм!~ Тебе нравится мой член, сучка?)]
 		</p>
 		<p>
-			As you open your mouth to eagerly respond in the positive, you find it suddenly being filled by yet another pink-and-white swirly lollipop. Having returned from wherever she went, you look up to see your matriarch leering over you with at least a dozen more of the transformative candies clutched in her wings. Suppressing a sinister giggle, she states, [harpyBimbo.speechNoEffects(I was told that, like, the effects of these can wear off after a bit, y'know? But if someone eats at least, like, ten or whatever, then the effects are permanent! You're gonna love being permanently turned into another of my bimbo babes!)]
+			Стоит тебе лишь приоткрыть рот, чтобы с энтузиазмом ответить «да», как его внезапно заполняет очередная розовая леденцовая спиралька. Твоя матриарх, вернувшаяся, откуда ушла, возвышается над тобой с лукавой ухмылкой, сжимая в крыльях еще добрую дюжину этих преображающих конфет. Подавляя зловещий смешок, она произносит: [harpyBimbo.speechNoEffects(Мне говорили, что эффект от них, типа, может со временем пройти, понимаешь? Но если съесть штук десять или типа того, то всё становится навсегда! Тебе чертовски понравится навсегда превратиться в одну из моих куколок-бимбо!)]
 		</p>
 	#ELSE
 		<p>
-			Having had enough, your matriarch slides off of you, leaving your face thoroughly soaked in saliva and girlcum. [harpyBimboCompanion.Name] is far from done, however, and while your matriarch struts off to another part of the nest, she keeps on bouncing up and down, forcing your [pc.cock+] in and out of her well-fucked pussy. Able to look down into your eyes for the first time, [harpyBimboCompanion.name] teases, [harpyBimboCompanion.speechNoEffects(~Mmm!~ You like my pussy, babe?)]
+			Насытившись, матриарх сползает с тебя, оставляя твоё лицо насквозь пропитанным слюной и девичьим соком. [harpyBimboCompanion.Name], однако, еще далеко не закончила, и пока матриарх вальяжно удаляется в другую часть гнезда, она продолжает ритмично подпрыгивать, заставляя твой [pc.cock+] входить и выходить из её отъевшейся киски. Впервые заглянув тебе в глаза, [harpyBimboCompanion.name] дразнит: [harpyBimboCompanion.speechNoEffects(~Ммм!~ Тебе нравится моя киска, крошка?)]
 		</p>
 		<p>
-			As you open your mouth to eagerly respond in the positive, you find it suddenly being filled by yet another pink-and-white swirly lollipop. Having returned from wherever she went, you look up to see your matriarch leering over you with at least a dozen more of the transformative candies clutched in her wings. Suppressing a sinister giggle, she states, [harpyBimbo.speechNoEffects(I was told that, like, the effects of these can wear off after a bit, y'know? But if someone eats at least, like, ten or whatever, then the effects are permanent! You're gonna love being permanently turned into another of my bimbo babes!)]
+			Стоит тебе лишь приоткрыть рот, чтобы с энтузиазмом ответить «да», как его внезапно заполняет очередная розовая леденцовая спиралька. Твоя матриарх, вернувшаяся, откуда ушла, возвышается над тобой с лукавой ухмылкой, сжимая в крыльях еще добрую дюжину этих преображающих конфет. Подавляя зловещий смешок, она произносит: [harpyBimbo.speechNoEffects(Мне говорили, что эффект от них, типа, может со временем пройти, понимаешь? Но если съесть штук десять или типа того, то всё становится навсегда! Тебе чертовски понравится навсегда превратиться в одну из моих куколок-бимбо!)]
 		</p>
 	#ENDIF
     ]]>
@@ -543,42 +543,42 @@
     <htmlContent tag="BAD_END_FINAL"><![CDATA[
 	#IF(pc.hasVagina())
 		<p>
-			Absent-mindedly agreeing with what your matriarch says, you slowly but surely make your way through all of the lollipops she's brought for you, all the while being fucked by [harpyBimboMale.name]...
+			Рассеянно соглашаясь со всем, что говорит твоя матриарх, ты медленно, но верно уплетаешь все леденцы, которые она тебе принесла, и всё это время [harpyBimboMale.name] вовсю трахает тебя...
 		</p>
 		<p style='text-align:center;'>
 			...
 		</p>
 		<p>
-			Months later, and you find yourself in what has by now become a very familiar situation. [harpyBimboMale.Name] has you pinned down in the mating press position as her massive cock thrusts in and out of your wet pussy. Letting out a lewd moan, you squeal, [pc.speechNoEffects(~Mmm!~ Yeah, babe, give it to me! ~Ooh!~ Fuck my little pussy good and hard!)]
+			Прошли месяцы, и ты ловишь себя на том, что оказалась в уже очень знакомой ситуации. [harpyBimboMale.Name] прижала тебя к земле в позе спаривания, и её массивный член то входит, то выходит из твоей мокрой киски. Издавая похотливый стон, ты визжишь: [pc.speechNoEffects(~Ммм!~ Да, детка, давай! ~Ох!~ Трахни мою маленькую киску хорошенько и жестко!~)]
 		</p>
 		<p>
-			More than happy to oblige, [harpyBimboMale.name] thrusts her fat cock deep into your cunt, before pumping your womb full of her hot, thick cum. Leaning down to press her big lips against yours, she thrusts her tongue into your mouth as your quivering pussy eagerly drains her balls. Satisfied for now, she then stands up, leaving you to be seized by yet another of the nest's male harpies.
+			С радостью исполняя твою просьбу, [harpyBimboMale.name] глубоко вгоняет свой толстый член в твою щель, а затем наполняет твою матку своей горячей густой спермой. Наклонившись, чтобы прижаться своими полными губами к твоим, она просовывает язык тебе в рот, пока твоя дрожащая киска жадно высасывает её яйца. Насытившись, она встает, оставляя тебя на растерзание очередному самцу-гарпии из гнезда.
 		</p>
 		<p>
-			Having been well and truly established as a harpy at the bottom of the nest's hierarchy, you're expected to service any male who wants you, which is a job that you very quickly grew to love. Spreading your legs for your next partner, you let out another excited, giggly moan as she thrusts her cock into your cum-stuffed cunt...
+			Поскольку ты окончательно закрепилась в самом низу иерархии гнезда как гарпия, от тебя ожидают обслуживания любого самца, который тебя захочет — и эта работа очень быстро стала твоей любимой. Широко раздвигая ноги для следующего партнера, ты издаешь очередной возбужденный, хихикающий стон, когда она вгоняет свой член в твою набитую спермой киску...
 		</p>
 	#ELSE
 		<p>
-			Absent-mindedly agreeing with what your matriarch says, you slowly but surely make your way through all of the lollipops she's brought for you, all the while being ridden by [harpyBimboCompanion.name]...
+			Рассеянно соглашаясь со всем, что говорит твоя матриарх, ты медленно, но верно уплетаешь все леденцы, которые она тебе принесла, пока [harpyBimboCompanion.name] скачет на тебе...
 		</p>
 		<p style='text-align:center;'>
 			...
 		</p>
 		<p>
-			Months later, and you find yourself in what has by now become a very familiar situation. [harpyBimboCompanion.Name] is once again bouncing up and down on your cock, letting out whorish moans as your shaft is forced deep inside her wet pussy. Letting out a lewd moan, you squeal, [pc.speechNoEffects(~Mmm!~ Yeah, babe, keep going! ~Ooh!~ Ride my cock!)]
+			Прошли месяцы, и ты ловишь себя на том, что ситуация стала для тебя до боли знакомой. [harpyBimboCompanion.Name] снова скачет на твоем члене, издавая похотливые стоны, пока твой ствол с силой входит глубоко в ее мокрую киску. Издав непристойный стон, ты взвизгиваешь: [pc.speechNoEffects(~Ммм!~ Да, детка, продолжай! ~Ооо!~ Скачи на моем члене!~)]
 		</p>
 		<p>
-			More than happy to oblige, [harpyBimboCompanion.name] bounces up and down several more times, before dropping down and hilting your cock inside of her just in time for you to start pumping her womb full of your hot, thick cum. Leaning down to press her big lips against yours, she thrusts her tongue into your mouth as her quivering pussy eagerly drains your balls. Satisfied for now, she then stands up, leaving you to be mounted by yet another of the nest's female harpies.
+			С радостью исполняя твое желание, [harpyBimboCompanion.name] делает еще несколько прыжков, а затем резко опускается, насаживаясь на твой член как раз в тот момент, когда ты начинаешь заливать ее утробу своей горячей, густой спермой. Наклонившись, чтобы прижаться своими пухлыми губами к твоим, она просовывает язык тебе в рот, пока ее дрожащая киска жадно высасывает твое семя из яичек. Насытившись, она встает, оставляя тебя для очередной гарпии из гнезда, которая спешит оседлать тебя.
 		</p>
 		<p>
-			Having been well and truly established as a harpy at the bottom of the nest's hierarchy, you're expected to please any female who wants you, which is a job that you very quickly grew to love. Presenting your cock to your next partner, you let out another excited, giggly moan as she drops down and eagerly pushes it into her hot, wet cunt...
+			Поскольку ты окончательно закрепился в иерархии гнезда как гарпия, от тебя ожидают удовлетворения любой самки, которая тебя захочет — и эта работа очень быстро стала твоей любимой. Предлагая свой член следующей партнерше, ты издаешь очередной возбужденный, хихикающий стон, когда она опускается и жадно насаживается на него своей горячей, мокрой щелью...
 		</p>
 	#ENDIF
 	<p style='text-align:center;'>
 		...
 	</p>
 	<p><i>
-		With your mind having been permanently changed by consuming so many of the transformative lollipops, you never once think of trying to escape from [harpyBimbo.namePos] nest. Even if you did somehow become aware of what had happened, you enjoy your new life far too much to ever want to give it up...
+		Твой разум безвозвратно изменился после поглощения стольких трансформирующих леденцов, что ты ни разу не задумываешься о побеге из гнезда [harpyBimbo.namePos]. Даже если бы ты каким-то образом осознал, что произошло, ты слишком наслаждаешься своей новой жизнью, чтобы когда-либо захотеть от нее отказаться...
 	</i></p>
     ]]>
     </htmlContent>

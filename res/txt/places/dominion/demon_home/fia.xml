@@ -3,24 +3,24 @@
 
 	<htmlContent tag="START"><![CDATA[
 	<p>
-		Knowing that Fia is going to be in one of the many bars near here, you start to walk up and down the street, peering through windows as you search for her. After just a few minutes, you see the reporter in an upmarket cocktail bar with a drink in her hand. Entering the establishment, you [pc.walk] over to the bar and say hello to your friend.
+		Зная, что Фия наверняка будет в одном из многочисленных баров неподалеку, ты начинаешь мерить шагами улицу, заглядывая в окна в поисках её образа. Спустя всего пару минут ты замечаешь репортершу в элитном коктейльном баре — она сидит с бокалом в руке. Войдя в заведение, ты [pc.walk] к барной стойке и приветствуешь подругу.
 	</p>
 	<p>
-		[fia.speech([pc.Name]!)] she happily greets you with a big smile on her face. Gesturing for you to sit down, she calls out to the donkey-boy barman, [fia.speech(Hey, Frank! Put another whiskey on my tab, would you?)]
+		[fia.speech([pc.Name]!)] — она радостно приветствует тебя с широкой улыбкой на лице. Жестом приглашая тебя присесть, она окликает бармена-ослика: [fia.speech(Эй, Фрэнк! Запиши еще одну порцию виски на мой счет, а?)]
 	</p>
 	<p>
-		As you sit down next to Fia, a glass of whiskey is placed down on the bartop in front of you. Thanking her for the drink, you ask her how she's been.
+		Когда ты садишься рядом с Фией, перед тобой на стойке ставят стакан виски. Поблагодарив её за угощение, ты спрашиваешь, как у неё дела.
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_inky_obtained))
 		<p>
-			[fia.speech(I'm doing great, thanks,)] she happily replies. Taking a sip of her own whiskey, she asks, [fia.speech(So, what's up?)]
+		[fia.speech(У меня всё отлично, спасибо,)] — весело отвечает она. Сделав глоток своего виски, она спрашивает: [fia.speech(Ну, рассказывай, что нового?)]
 		</p>
 	#ELSE
 		<p>
-			[fia.speech(Well, I've been kind of scared of Sae as I thought she'd try to get revenge on me. I've been hiding from her by staying with some family, which was fun,)] she replies, before revealing, [fia.speech(Thankfully my editor went and spoke to Sae on my behalf, and apparently she isn't at all interested in getting revenge on me, so I've moved back to my apartment. My editor's the best ever. Oh! That reminds me! She made something for you!)]
+		[fia.speech(Ну, честно говоря, я немного побаивалась Саэ — думала, она захочет отомстить. Поэтому я пряталась у родственников, и это было довольно весело,)] — отвечает она, а затем добавляет: [fia.speech(К счастью, мой редактор сходила поговорить с Саэ за меня, и, судя по всему, та вовсе не горит желанием мстить, так что я уже вернулась в свою квартиру. Мой редактор — просто лучшая! О! Кстати! Она кое-что приготовила для тебя!)]
 		</p>
 		<p>
-			You're surprised to hear that Fia's editor has sent you a gift, and watch with curiosity as Fia reaches into her hoodie's pocket and pulls out a small object. As she presents it to you, you see that the gift is a fancy-looking fountain pen.
+		Ты удивлен, услышав, что редактор Фии прислала тебе подарок, и с любопытством наблюдаешь, как Фия лезет в карман своего худи и достает небольшой предмет. Когда она протягивает его тебе, ты видишь, что подарок — это изящная перьевая ручка.
 		</p>
 	#ENDIF
 	]]>
@@ -28,105 +28,104 @@
 
 	<htmlContent tag="LEAVE"><![CDATA[
 	<p>
-		Feeling like you've spent enough time with Fia, you tell her that it was nice seeing her again, but you've got places to be.
+	Почувствовав, что вы провели с Фией достаточно времени, ты говоришь ей, что был рад снова ее увидеть, но тебе пора идти по делам.
 	</p>
 	<p>
-		[fia.speech(It was great seeing you too, [pc.name],)] she replies with a smile on her face. Finishing off the last of her drink, she says, [fia.speech(I'd better get going now too. I've got some leads to follow up on.)]
+	[fia.speech(Мне тоже было очень приятно тебя увидеть, [pc.name],)] — отвечает она с улыбкой на лице. Допив остатки напитка, она добавляет: [fia.speech(Пожалуй, мне тоже пора. У меня есть пара зацепок, которые нужно проверить.)]
 	</p>
 	<p>
-		The two of you exit the bar together, and after saying a final goodbye, you set off in different directions. Wandering down the street past Lovienne's Luxuries, you wonder what to do now...
+	Вы вдвоем выходите из бара, и после финального прощания расходитесь в разные стороны. Блуждая по улице мимо лавки «Роскошь Ловьенн», ты раздумываешь, чем бы заняться теперь...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TALK_SMALL_TALK"><![CDATA[
 	<p>
-		Wanting to take this opportunity to just relax for a while and make some small talk, you tell Fia that you approve of her hangout spot.
+	Желая воспользоваться возможностью просто расслабиться и немного поболтать, ты говоришь Фии, что тебе нравится ее любимое место.
 	</p>
 	<p>
-		[fia.speech(Yeah, the bars around here are great,)] she replies, [fia.speech(I've got loads of contacts in Demon Home, so hanging out in these places is as much work as it is pleasure.)]
+	[fia.speech(Да, бары здесь отличные,)] — отвечает она, — [fia.speech(У меня куча контактов в Demon Home, так что тусовки в таких местах — это в равной степени и работа, и удовольствие.)]
 	</p>
 	<p>
-		From there, the two of you talk about Demon Home and Dominion in general, before sharing some experiences you've recently had in the city. The time flies by as you talk, and before you know it you've spent almost half an hour chatting with one another.
+	Затем вы вдвоем обсуждаете Demon Home и Dominion в целом, а после делитесь недавними впечатлениями от жизни в городе. Время летит незаметно, и не успеваешь ты оглянуться, как вы болтаете уже почти полчаса.
 	</p>
 	<p>
-		Although not much of substance was said by either of you, you feel like the two of you have got to know each other a little better. As Fia pauses to take a sip of her drink, you wonder what to say next...
+		Хотя вы оба сказали не так уж много, у тебя возникает чувство, что вы стали понимать друг друга чуть лучше. Пока Фия делает глоток своего напитка, ты гадаешь, что сказать дальше...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TALK_BACKGROUND"><![CDATA[
 	<p>
-		Curious to hear more about Fia's background, you ask her how she came to be a reporter.
+		Заинтересованный узнать побольше о прошлом Фии, ты спрашиваешь её, как она стала репортером.
 	</p>
 	<p>
-		[fia.speech(Well, my first job was as a barmaid in one of the bars on the other side of Demon Home,)] she reveals, [fia.speech(I loved getting stories out of the customers, and after a while I decided to write a book about all the fun things I'd heard. Well, it turns out that nobody wants to publish demons' spicy secrets and risk pissing off an important succubus, so that went nowhere. After getting rejected by every publisher in the Realm, I decided to try my luck at the offices of The Octogram Herald.)]
+		[fia.speech(Ну, моей первой работой была должность официантки в одном из баров на другой стороне Demon Home,)] — признается она, — [fia.speech(Мне очень нравилось вытягивать истории из посетителей, и спустя какое-то время я решила написать книгу обо всех тех забавных вещах, что услышала. Но оказалось, что никто не хочет издавать пикантные секреты демонов, рискуя разозлить какую-нибудь важную суккуб, так что дело заглохло. Получив отказы от всех издательств в Королевстве, я решила попытать удачу в офисах The Octogram Herald.)]
 	</p>
 	<p>
-		Recognising that name as that of the only newspaper in Dominion, you can guess the rest of Fia's story, and ask her if that's when she was hired as a journalist.
+		Узнав в этом названии единственную газету в Dominion, ты можешь догадаться о продолжении истории Фии, и спрашиваешь её, не тогда ли её наняли журналистом.
 	</p>
 	<p>
-		[fia.speech(That's right,)] she replies, [fia.speech(They were so impressed with all the gossip and contacts I'd gathered that I was offered a job as a permanent reporter on the affairs of Demon Home. And I've been working there ever since!)]
+		[fia.speech(Именно так,)] — отвечает она, — [fia.speech(Они были так впечатлены всеми сплетнями и контактами, которые я собрала, что мне предложили постоянную должность репортера, освещающего дела Demon Home. И с тех пор я работаю там!)]
 	</p>
 	<p>
-		With Fia's history now revealed, you wonder what to ask her about next...
+		Теперь, когда история Фии раскрыта, ты раздумываешь, о чем спросить её дальше...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TALK_NEWSPAPER"><![CDATA[
 	<p>
-		From what you've gathered during your time in Dominion, the newspaper which Fia works for is the only official source of news for the city. Wanting to find out more about what it's like to work for such a company, you ask the reporter what she can tell you about it.
+		Судя по тому, что ты успел узнать за время пребывания в Dominion, газета, в которой работает Фия, — единственный официальный источник новостей в городе. Желая разузнать побольше о том, каково это — работать в такой компании, ты спрашиваешь репортерку, что она может об этом рассказать.
 	</p>
 	<p>
-		[fia.speech(Well, everyone's heard of The Octogram Herald, of course, but I guess not many people know what it's really like,)] she muses, before revealing, [fia.speech(I'm an investigate reporter who specialises in Demon Home, but there are loads of different departments, and our editor oversees all of them. She's super nice and works non-stop, and even though she's one of the highest-ranking lilin in all the Realm, she really cares about us and takes the time to get to know us all. Anyway, it's thanks to her high status that we're able to publish negative stories about demons.)]
+		[fia.speech(Ну, о «Вестнике Октограммы», конечно, слышали все, но, полагаю, мало кто знает, как всё устроено на самом деле,)] — размышляет она, прежде чем признаться: [fia.speech(Я репортер-расследователь, специализируюсь на Demon Home, но у нас куча разных отделов, и за всеми ними следит наш редактор. Она невероятно милая и работает без остановки; и хотя она одна из самых высокопоставленных лилин во всем Королевстве, она действительно заботится о нас и находит время, чтобы узнать каждого поближе. В общем, именно благодаря её высокому статусу мы можем публиковать разоблачения о демонах.)]
+	</p>
+	<p>		Ты удивляешься, услышав, что официальный источник новостей Королевства печатает статьи, выставляющие демонов в дурном свете, и выражаешь это Фии.
 	</p>
 	<p>
-		You're surprised to hear that the Realm's official news source is printing stories that show demons in a bad light, and express this to Fia.
-	</p>
-	<p>
-		[fia.speech(Well, it's really only lilin and Lilith herself who are off-limits,)] she says,
+		[fia.speech(Ну, под запретом только лилин и сама Lilith,)] — говорит она,
 		#IF(pc.getRace()==RACE_DEMON)
-			 [fia.speech(You're a demon, so you know how it is. You get access to better jobs and everyone respects you a lot more than other races, but that doesn't make you immune to criticism. So long as we take care not to print anything that might be construed as sedition, we can expose demons' crimes and unfair dealings. In fact, sometimes my editor specifically asks me to dig up a story about a certain demon.)]
+			 [fia.speech(Ты ведь демон, так что сам понимаешь, как это бывает. Тебе доступны лучшие работы, и тебя уважают куда больше, чем другие расы, но это не делает тебя неуязвимым для критики. Пока мы стараемся не печатать ничего, что можно было бы принять за мятеж, мы можем вскрывать преступления и несправедливые сделки демонов. На самом деле, иногда редактор специально просит меня раскопать историю о каком-нибудь конкретном демоне.)]
 		#ELSE
-			 [fia.speech(Sure, demons get access to better jobs and everyone respects them a lot more, but that doesn't make them immune to criticism. So long as we take care not to print anything that might be construed as sedition, we can expose demons' crimes and unfair dealings. In fact, sometimes my editor specifically asks me to dig up a story about a certain demon.)]
+			 [fia.speech(Конечно, демонам достаются должности получше, да и уважают их куда больше, но это не значит, что они неуязвимы для критики. Пока мы следим за тем, чтобы не напечатать ничего, что можно было бы принять за мятеж, мы вполне можем разоблачать преступления и махинации демонов. На самом деле, иногда мой редактор специально просит меня раскопать историю о каком-нибудь конкретном демоне.)]
 		#ENDIF
 	</p>
 	<p>
-		It sounds like the lilin editor of The Octogram Herald is using the newspaper to influence demon politics. Wondering if there's anything else you can find out about it, you ask Fia what other kind of stories they work on.
+	Похоже, редактор-лилин из «Вестника Октограммы» использует газету, чтобы влиять на политику демонов. Задавшись вопросом, удастся ли тебе разузнать о чем-то еще, ты спрашиваешь Фию, о чем еще они пишут.
 	</p>
 	<p>
-		[fia.speech(Just the usual sort of stuff,)] she replies. After taking a sip of her drink, she finishes by saying, [fia.speech(I don't really get involved with any of the other departments, so I can't tell you much.)]
+	[fia.speech(Да так, обычные вещи,)] — отвечает она. Отхлебнув из бокала, она добавляет: [fia.speech(Я особо не лезу в работу других отделов, так что многого не скажу.)]
 	</p>
 	<p>
-		It seems like Fia doesn't really have much else to say about her newspaper...
+	Похоже, Фие больше нечего сказать о своей газете...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TALK_STORIES"><![CDATA[
 	<p>
-		After finishing the story about Saellatrix and her sex doll factory, you wonder if Fia's already working on something else, and so you ask her what she's investigating at the moment.
+	Дочитав историю о Саэллатрикс и её фабрике секс-кукол, ты задаешься вопросом, не работает ли Фия уже над чем-то новым, и спрашиваешь её, какое расследование она ведет в данный момент.
 	</p>
 	<p>
-		[fia.speech(I've got a few leads on some scandals involving demons, but nothing even close to what Sae was up to,)] she reveals, before suddenly asking, [fia.speech(Hey, have you ever been down to Submission?)]
+	[fia.speech(У меня есть пара зацепок насчет скандалов с участием демонов, но это и близко не стоит к тому, чем занималась Саэ,)] — признается она, а затем внезапно спрашивает: [fia.speech(Эй, а ты когда-нибудь бывал в Submission?)]
 	</p>
 	<p>
-		You tell Fia that you've been down to Submission multiple times, and have experienced enough dark, dangerous tunnels to last you a lifetime.
+	Ты говоришь Фие, что бывал в Submission не раз, и нахватался в этих темных и опасных туннелях опыта на целую жизнь.
 	</p>
 	<p>
-		[fia.speech(That's great!)] she happily exclaims, before explaining, [fia.speech(Look, I only work here in Demon Home, but my editor's asked everyone to try and get some stories on Submission. Apparently there's a growing interest in what's happening beneath our feet, but we haven't really got anything to report on from down there. If you've got some juicy stories to share, I can pay you five thousand flames for each of them. Or perhaps...)]
+		[fia.speech(Это здорово!)] — радостно восклицает она, а затем поясняет: [fia.speech(Слушай, я работаю только здесь, в Демоническом Доме, но мой редактор попросил всех постараться раздобыть какие-нибудь истории о Submission. Похоже, интерес к тому, что происходит у нас под ногами, растет, а нам особо нечего рассказать. Если у тебя есть сочные истории, я могу заплатить тебе по пять тысяч огней за каждую. Или, может быть...)]
 	</p>
 	<p>
-		Fia's words trail off, and she flashes you a rather seductive smile. Playfully teasing one of her fingers through her [fia.hairColour] hair, she gives you a smouldering look and lewdly suggests,
+		Слова Фии затихают, и она одаривает тебя довольно соблазнительной улыбкой. Игриво пропуская один из пальцев сквозь свои [fia.hairColour] волосы, она бросает на тебя томный взгляд и похотливо предлагает:
 		#IF(fia.getTotalTimesHadSex(pc)>0)
-			 [fia.speech(Perhaps instead of money you'd like to fuck me like you did back in Sae's factory... I can't stop thinking about that, you know...)]
+			 [fia.speech(Может, вместо денег ты бы предпочел трахнуть меня, как это было на заводе у Сае... Знаешь, я никак не могу выбросить это из головы...)]
 		#ELSE
-			 [fia.speech(Perhaps instead of money you'd like to fuck me...)]
+			 [fia.speech(Может, вместо денег ты бы предпочел трахнуть меня...)]
 		#ENDIF
 	</p>
 	<p>
-		Picking up her glass, Fia takes a sip of her drink and gives you a big smile as she waits to hear what you'll say next...
+		Подняв бокал, Фия делает глоток и широко улыбается тебе, ожидая, что ты ответишь...
 	</p>
 	]]>
 	</htmlContent>
@@ -134,24 +133,24 @@
 	<htmlContent tag="WHISKEY_SIP"><![CDATA[
 	<p>
 		[style.random(
-		Taking this opportunity to relax and have a drink, you take a sip of your whiskey while Fia makes some small talk about how her day's been.
+		Воспользовавшись возможностью расслабиться и выпить, ты отхлебываешь виски, пока Фия ведет светскую беседу о том, как прошел ее день.
 		|
-		Turning your attention to the drink that's in front of you, you take a sip of whiskey while Fia tells you about what she's been up to today.
+		Переключив внимание на стоящий перед тобой напиток, ты делаешь глоток виски, пока Фия рассказывает тебе о своих сегодняшних делах.
 		|
-		Picking up your glass of whiskey, you take a sip and relax as Fia idly talks about some of the things she's been up to today.
+		Подняв стакан с виски, ты делаешь глоток и расслабляешься, пока Фия лениво болтает о том, чем занималась сегодня.
 		)]
 	</p>
 	<p style='text-align:center;'><i>
 		#IF(flags.getSavedLong('fia_whiskey_sips')==1)
-			Your glass is still mostly full...
+			Твой бокал всё еще почти полон...
 		#ELSEIF(flags.getSavedLong('fia_whiskey_sips')==2)
-			You've still got a lot of whiskey left in your glass...
+			В твоем стакане всё еще много виски...
 		#ELSEIF(flags.getSavedLong('fia_whiskey_sips')==3)
-			Your glass is less than half-full now...
+			Твой бокал уже почти пуст...
 		#ELSEIF(flags.getSavedLong('fia_whiskey_sips')==4)
-			You've only got a little whiskey left in your glass...
+			В твоем бокале осталось совсем немного виски...
 		#ELSE
-			[style.colourMinorBad(Your glass is now empty...)]
+			[style.colourMinorBad(Твой бокал теперь пуст...)]
 		#ENDIF
 	</i></p>
 	]]>
@@ -159,18 +158,18 @@
 	
 	<htmlContent tag="WHISKEY_ORDER"><![CDATA[
 	<p>
-		As your whiskey has run out, you get the attention of the donkey-boy barman and order another drink. As Fia paid for your first drink, you offer to return the favour and buy a drink for her, but she lifts up her half-full glass and smiles to indicate that she doesn't need another one.
+		Поскольку виски закончился, ты привлекаешь внимание бармена — ослиного мальчика — и заказываешь еще одну порцию. Так как Фия заплатила за твой первый напиток, ты предлагаешь отплатить ей тем же и купить ей выпивку, но она приподнимает свой наполовину полный бокал и улыбается, давая понять, что ей больше не нужно.
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_fia_bar_alcohol_refused))
 		<p>
-			A moment later, the barman is placing another glass of whiskey down in front of you. With your head starting to spin from the alcohol in your system, it takes you three attempts to slide the glass closer to you. Watching your uncoordinated movements, the barman lets out the briefest of grunts, before shaking his head and saying in a firm tone, [style.speechMasculineHeavy(I can see that you've had enough, so this is your last drink for tonight.)]
+			Мгновение спустя бармен ставит перед тобой еще один бокал виски. Голова уже начинает кружиться от Алкоголя, и тебе требуется три попытки, чтобы просто подтянуть бокал поближе к себе. Наблюдая за твоими неуклюжими движениями, бармен издает короткое ворчание, качает головой и твердым тоном произносит: [style.speechMasculineHeavy(Вижу, ты уже хватит, так что это твой последний напиток на сегодня.)]
 		</p>
 		<p>
-			With that, the donkey-boy turns away and slowly walks down to another part of the bar, leaving you and Fia to continue your conversation in peace.
+			С этими словами ослиный мальчик отворачивается и медленно уходит в другую часть бара, оставляя тебя и Фию спокойно продолжать разговор.
 		</p>
 	#ELSE
 		<p>
-			A moment later, the barman is placing another glass of whiskey down in front of you. With the briefest of nods, he turns away and slowly walks down to another part of the bar, leaving you and Fia to continue your conversation in peace.
+			Мгновение спустя бармен ставит перед тобой еще один бокал виски. Коротко кивнув, он отворачивается и медленно уходит в другую часть бара, оставляя тебя и Фию спокойно продолжать разговор.
 		</p>
 	#ENDIF
 	]]>
@@ -178,43 +177,43 @@
 
 	<htmlContent tag="STORY_SLIME_QUEEN"><![CDATA[
 	<p>
-		Deciding to tell Fia one of your stories from Submission, you ask her if she's heard of the slime queen, Catherine, before.
+		Решив рассказать Фии одну из историй из Submission, ты спрашиваешь ее, слышала ли она когда-нибудь о королеве слаймов, Кэтрин.
 	</p>
 	<p>
-		[fia.speech(Oh, right, I heard from an Enforcer that she was behind the increase in slimes, but apparently she's been stopped,)] she says, before asking, [fia.speech(Did you have something to do with that?)]
+		[fia.speech(Ах да, я слышала от одного Enforcer, что за нашествием слаймов стояла она, но её вроде как уже остановили,)] — говорит она, а затем спрашивает: [fia.speech(Ты имеешь к этому какое-то отношение?)]
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_slimeQueenHelped))
-			Deciding to leave out the part where you chose to assist Catherine instead of putting an end to her activities, you tell Fia the same account which you gave to Claire. 
+			Решив умолчать о том, что вместо того чтобы покончить с её деятельностью, ты предпочел помочь Кэтрин, ты рассказываешь Фии ту же историю, что и Клэр.
 		#ELSE
-			Teling Fia that you were the one responsible for putting an end to Catherine's activities, you give her your account of what happened.
+			Признавшись Фие, что именно ты положил конец планам Кэтрин, ты излагаешь ей свою версию событий.
 		#ENDIF
-		 After discovering that the slime queen was responsible for the aggressive slimes in the tunnels of Submission, you tracker her down to a tower on an island deep within the Bat Caverns. After encountering a pair of slime twins, and then a guard who wielded a fearsome zweihander, you encountered the huge, pink slime queen herself. After defeating her, you returned her crown to Claire as proof of your deed, and with that Catherine's plan to flood Submission with slimes was ended.
+			Обнаружив, что за агрессивными слаймами в туннелях Submission стоит королева слаймов, ты выслеживаешь её в башне на острове в глубине Пещер Летучих Мышей. Столкнувшись с парой близнецов-слаймов, а затем с охранником с грозным цвайхендером, ты наконец встречаешь саму огромную розовую королеву слаймов. Победив её, ты возвращаешь её корону Клэр в качестве доказательства своего подвига, и тем самым план Кэтрин по наводнению Submission слаймами оказывается сорван.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="STORY_VENGAR"><![CDATA[
 	<p>
-		Wanting to tell Fia a story about Submission, you ask her if she's heard about Vengar's gang before.
+		Желая рассказать Фии историю о Submission, ты спрашиваешь её, слышала ли она раньше о банде Венгара.
 	</p>
 	<p>
-		[fia.speech(The rat-boy, right?)] she asks. As you give Fia a nod, she recalls, [fia.speech(His gang was raided by SWORD, wasn't it? I'm pretty sure that one of the other departments ran a story on that, but the Enforcers wouldn't share many details... You know something more about it?)]
+		[fia.speech(Тот пацан-крыса, да?)] — спрашивает она. Когда ты киваешь, она вспоминает: [fia.speech(Её банду накрыл SWORD, кажется? Я почти уверена, что об этом писали в другом отделе, но Enforcers не стали раскрывать подробностей... Ты знаешь что-то большее?)]
 	</p>
 	<p>
-		Telling Fia that you were the one responsible for bringing Vengar down, you wait while she fishes her notepad and pen out of her hoodie's pocket before launching into your story. Beginning with your encounter with Roxy in Axel's gambling den, you describe how you set off to the Rat Warrens to put an end to Vengar's extortion of Axel's business.
+		Рассказав Фии, что именно ты приложил руку к падению Венгара, ты ждешь, пока она выуживает блокнот и ручку из кармана своего худи, а затем начинаешь свой рассказ. Начав с вашей встречи с Рокси в игорном притоне Акселя, ты описываешь, как отправился в Крысиные Лабиринты, чтобы положить конец вымогательству Венгара в бизнесе Акселя.
 		#IF(pc.hasQuestInLine(QUEST_LINE_SIDE_VENGAR, QUEST_VENGAR_TWO_ENFORCERS))
-			 Recounting how you used a resonance stone to call for the SWORD Enforcers, you finish your tale by saying that you were assisted by two rat-girls named Shadow and Silence.
+			Пересказав, как ты использовал резонансный камень, чтобы призвать Enforcer из SWORD, ты завершаешь свой рассказ словами о том, что тебе помогали две крысинодевочки по имени Тень и Тишина.
 		#ELSEIF(pc.hasQuestInLine(QUEST_LINE_SIDE_VENGAR, QUEST_VENGAR_TWO_COOPERATION))
-			 Recounting how you decided to cooperate with Vengar, you say that 
+			Пересказав, как ты решил сотрудничать с Венгаром, ты говоришь, что 
 			#IF(flags.hasFlag(FLAG_axelSissified))
-				 Axel ended up being feminised before
+				Аксель в итоге подвергся феминизации перед тем, как
 			#ELSE
-				 you and Axel confronted the rat-boy, before
+				ты и Аксель столкнулись с крысопарнем, прежде чем
 			#ENDIF
-			 SWORD Enforcers launched their raid, and during the chaos you were assisted by two rat-girls named Shadow and Silence.
+				Enforcer из SWORD начали свой рейд, и в этом хаосе тебе помогали две крысинодевочки по имени Тень и Тишина.
 		#ELSE
-			 Recounting how you had to use violence to bring an end to Vengar's reign, you recount how you fought his bodyguards, Shadow and Silence, who later turned out to be working with the SWORD Enforcers.
+			Пересказав, как тебе пришлось прибегнуть к насилию, чтобы положить конец правлению Венгара, ты вспоминаешь, как сражался с его телохранителями, Тенью и Тишиной, которые позже оказались на стороне Enforcer из SWORD.
 		#ENDIF
 	</p>
 	]]>
@@ -222,48 +221,48 @@
 
 	<htmlContent tag="STORY_HLF_BASE"><![CDATA[
 	<p>
-		Thinking that Fia might be interested in hearing about that artificial cave you discovered in the Bat Caverns, you ask her if she's ever heard of crazy people living down there.
+		Подумав, что Фие может быть интересно услышать об той искусственной пещере, которую ты обнаружил в Пещерах Летучих Мышей, ты спрашиваешь её, слышала ли она когда-нибудь о безумцах, живущих там внизу.
 	</p>
 	<p>
-		[fia.speech(Crazy people down in the Bat Caverns?)] she wonders out loud, before humming and saying, [fia.speech(Well, there are those bat-morphs who just love talking, and I've heard that there are some weird glowing slimes down there. Why? What did you find?)]
+		[fia.speech(Безумцы в Пещерах Летучих Мышей?)] — задумчиво произносит она вслух, а затем, напевая, добавляет: [fia.speech(Ну, там есть летучие мыши-морфы, которые просто обожают болтать, и я слышала, что там обитают странные светящиеся слаймы. А что? Что ты там нашел?)]
 	</p>
 	<p>
-		You recount how you discovered the lever which granted access to a hidden cave deep within the Bat Caverns, and describe how the derelict interior was on the verge of collapsing. You cautiously travelled through this subterranean lair and discovered a crazy, partially-transformed human who attacked you on sight. The journal which you found after that described a rebellion starting in 1988, and after three years of fighting against the Enforcers, the writer said that a supposed angel named Astrea caused their group to fracture and split apart.
+		Ты пересказываешь историю о том, как обнаружил рычаг, открывший доступ к потайной пещере в глубинах Летучих пещер, и описываешь, что её полуразрушенные своды были на грани обрушения. Ты осторожно пробирался по этому подземному логову и наткнулся на безумного, частично трансформировавшегося человека, который напал на тебя при первой же возможности. Журнал, найденный тобой после этого, повествовал о восстании, начавшемся в 1988 году; в нём говорилось, что после трёх лет борьбы против Enforcer некая ангельская особа по имени Астрея заставила их группу расколоться и разделиться.
 	</p>
 	<p>
-		[fia.speech(That must have been from the Fifth Human Rebellion!)] Fia exclaims, [fia.speech(There was still a rebel down there?! It was all way before my time, but in our offices we've got front pages from those times framed and hanging on the walls.)]
+		[fia.speech(Это, должно быть, было из Пятого восстания людей!)] — восклицает Фия, — [fia.speech(Там всё ещё жил повстанец?! Это было задолго до моего времени, но у нас в офисах даже висят в рамках передовицы газет тех лет.)]
 	</p>
 	<p>
-		With your story not yet finished, you tell Fia that had a narrow escape as you exited the cave, for it completely collapsed right behind you.
+		Не договаривая историю, ты сообщаешь Фие, что едва не погиб, когда выходил из пещеры, потому что она полностью обрушилась прямо у тебя за спиной.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="STORY_GENERIC"><![CDATA[
 	<p>
-		You don't have any more interesting stories about Submission, but you want to help Fia out, and so you tell her about some of your recent adventures and ask if they're of any use to her.
+		Других интересных историй о Submission у тебя нет, но ты хочешь помочь Фие, поэтому рассказываешь ей о своих недавних приключениях и спрашиваешь, пригодятся ли они ей.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="INKY"><![CDATA[
 	<p>
-		Taking the pen from her, you turn it over in your [pc.hands] and take a closer look at it. The quality is immediately apparent, and you get the feeling that it's a very expensive item of stationary. As you start to thank Fia, you suddenly detect a tiny tremor of arcane power, and so after expressing your gratitude, you make the comment that there's something more to this pen than meets the eye. 
+		Забрав у неё ручку, ты вертишь её в [pc.hands], разглядывая поближе. Качество предмета сразу бросается в глаза, и у тебя возникает чувство, что это очень дорогая канцелярия. Когда ты собираешься поблагодарить Фию, ты внезапно ощущаешь крошечный трепет арканы, поэтому, выразив признательность, ты замечаешь, что в этой ручке скрыто нечто большее, чем кажется на первый взгляд.
 	</p>
 	<p>
-		[fia.speech(That's right! I was wondering if you could tell, but I guess nothing gets past you, huh?)] she laughs, before revealing, [fia.speech(I don't think I've told you before, but my editor's a lilin; she's a daughter of the elder lilins Lovienne and Lirecea. So, as you'd guess, she's pretty amazing at harnessing the arcane. After I told her about what we went through in the sex doll factory, she made a dozen of those pens and gave them to all of us investigative reporters. If we get in trouble, we can use the pen's enchantment to help us out!)]
+		[fia.speech(Именно! Я гадала, заметишь ли ты, но, похоже, от тебя ничего не скроешь, а?)] — она смеется, прежде чем признаться: [fia.speech(Не думаю, что говорила тебе об этом раньше, но моя редакторша — лилин; она дочь старших лилин, Ловьенны и Лиреции. Так что, как ты понимаешь, она чертовски хороша в управлении Арканой. После того как я рассказала ей о наших приключениях на фабрике секс-кукол, она сделала дюжину таких ручек и раздала их всем нам, репортерам-расследователям. Если мы попадем в переделку, мы сможем использовать чары ручки, чтобы выбраться!)]
 	</p>
 	<p>
-		Pulling off the cap, you take a closer look at the nib and then within the cap itself. Although you can still faintly detect an arcane presence within the pen, there's nothing about it to suggest that it'd be of any use in a fight.
+		Сняв колпачок, ты внимательнее осматриваешь перо, а затем заглядываешь внутрь самого колпачка. Хотя в ручке всё еще едва уловимо ощущается присутствие Арканы, в ней нет ничего такого, что указывало бы на её полезность в бою.
 	</p>
 	<p>
-		[fia.speech(I'll tell you how to use it, but don't activate it in here, ok?)] Fia says, [fia.speech(So, all you need to do is twist the cap three times and then pull it off. When that happens, an arcane entity gets summoned which will distract anyone who's harassing or attacking you. As you'd expect from a daughter of Lirecea, who from what I hear spends all of her time in the form of an octopus-girl, the arcane entity looks like a little octopus. She named them all 'Inky', and they're kind of lewd, but I guess that's what's to be expected from a lilin, right?)]
+		[fia.speech(Я расскажу, как ей пользоваться, но только не активируй её здесь, ладно?)] — говорит Фия, — [fia.speech(В общем, тебе нужно просто трижды повернуть колпачок, а затем снять его. В этот момент призывается арканная сущность, которая отвлечет любого, кто будет тебя донимать или атаковать. Как и следовало ожидать от дочери Лиреции, которая, по слухам, проводит всё время в облике девочки-осьминога, арканная сущность выглядит как маленький осьминог. Она назвала их всех «Чернильками», и они довольно похотливые, но, полагаю, от лилин другого и не ждешь, верно?)]
 	</p>
 	<p>
-		Telling Fia to pass your thanks along to her editor, you put the pen somewhere safe and make a mental note to take a closer look at it later.
+		Попросив Фию передать благодарность её редакторше, ты убираешь ручку в надежное место и мысленно даешь себе слово изучить её получше позже.
 	</p>
 	<p>
-		[fia.speech(So, what's up?)] she happily asks as she takes a sip of her drink.
+		[fia.speech(Ну, как оно?)] — весело спрашивает она, отхлебывая из своего бокала.
 	</p>
 	]]>
 	</htmlContent>
@@ -271,17 +270,17 @@
 	<htmlContent tag="STORY_END"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_fia_stories_complete))
 		<p>
-			[fia.speech(Well, there's no doubt that you have a lot of interesting stories,)] Fia says, but then with a shake of her head she sighs, [fia.speech(I'm sorry, but they're not enough for me to write an article on. I can't offer you the five thousand flames for this, but I wouldn't want you to leave empty-handed...)]
+			[fia.speech(Что ж, сомнений нет, историй у тебя полно,] — говорит Фия, но затем качает головой и вздыхает: [fia.speech(Прости, но для целой статьи их маловато. Я не смогу предложить тебе за это пять тысяч огней, но не хочу, чтобы ты уходил с пустыми руками...)]
 		</p>
 		<p>
-			Fia's slender fingers are suddenly tracing over your hips, and with a little giggle she teases, [fia.speech(How about the two of us have some fun together? This place has a couple of rooms to rent for customers who need some privacy...)]
+			Тонкие пальцы Фии внезапно скользят по твоим бедрам, и с легким смешком она дразнит тебя: [fia.speech(Как насчет того, чтобы нам вдвоем немного развлечься? Здесь есть пара комнат, которые можно снять, если клиентам нужно уединение...)]
 		</p>
 	#ELSE
 		<p>
-			[fia.speech(This is gold! It's exactly the sort of story which I was looking for,)] Fia happily exclaims as she finishes jotting down all the details in her notebook. Suddenly giving you a sly look, she teases, [fia.speech(So, do you want the five thousand flames? Or is it me that you want instead? This place has a couple of rooms to rent for customers who need some privacy...)]
+			[fia.speech(Это просто золото! Именно такую историю я и искала,] — радостно восклицает Фия, заканчивая записывать все детали в свой блокнот. Внезапно бросив на тебя лукавый взгляд, она дразнит: [fia.speech(Ну так что, хочешь пять тысяч огней? Или вместо них хочешь меня? Здесь есть пара комнат, которые можно снять, если клиентам нужно уединение...)]
 		</p>
 		<p>
-			Fia's slender fingers are suddenly tracing over your hips, and with a little giggle she playfully bites her lip and waits to hear what reward you'll choose...
+			Тонкие пальцы Фии внезапно скользят по твоим бедрам, и с легким смешком она игриво прикусывает губу, ожидая, какую награду ты выберешь...
 		</p>
 	#ENDIF
 	]]>
@@ -289,94 +288,94 @@
 	
 	<htmlContent tag="STORY_SEX_DECLINED"><![CDATA[
 	<p>
-		You don't really want to have sex with Fia, and so turn her down by saying that you've got somewhere else to be tonight. Playfully pouting at you, she whines, [fia.speech(Aww... Well, maybe next time then?)]
+		Секс с Фией тебя не особо прельщает, поэтому ты отказываешь ей, говоря, что сегодня вечером тебе нужно быть в другом месте. Игриво надув губки, она капризно тянет: [fia.speech(О-оу... Ну, тогда, может, в следующий раз?)]
 	</p>
 	<p>
-		Giving her a non-committal response, you stand up and say that it was nice seeing her again.
+		Ответив ей неопределенно, ты встаешь и говоришь, что был рад снова ее увидеть.
 	</p>
 	<p>
-		[fia.speech(It was great seeing you too, [pc.name],)] she replies with a smile on her face. Finishing off the last of her drink, she says, [fia.speech(I guess I should get going now too. I've got some leads to follow up on.)]
+		[fia.speech(Мне тоже было очень приятно тебя видеть, [pc.name],)] — отвечает она с улыбкой на лице. Допив остатки напитка, она произносит: [fia.speech(Думаю, мне тоже пора идти. У меня есть пара зацепок, которые нужно проверить.)]
 	</p>
 	<p>
-		The two of you exit the bar together, and after saying a final goodbye, you set off in different directions. Wandering down the street past Lovienne's Luxuries, you wonder what to do now...
+	Вы вдвоем выходите из бара, и после финального прощания расходитесь в разные стороны. Блуждая по улице мимо лавки «Роскошь Ловьенн», ты раздумываешь, чем бы заняться теперь...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="STORY_REWARD_FLAMES"><![CDATA[
 	<p>
-		Finding the five thousand flames to be the more attractive reward, you tell Fia that you'd like the money. Smirking as she places the coins down on the bar in front of you, she teases, [fia.speech(Well, maybe next time you'll choose me?)]
+		Поскольку пять тысяч огней кажутся тебе более заманчивой наградой, ты говоришь Фии, что выбираешь деньги. Она ухмыляется, выкладывая монеты на бар перед тобой, и дразнит: [fia.speech(Ну, может, в следующий раз ты выберешь меня?)]
 	</p>
 	<p>
-		Giving her a non-committal response, you pocket the money and ask her what she's planning to do for the rest of the evening.
+		Ответив ей неопределенно, ты убираешь деньги в карман и спрашиваешь, чем она планирует заняться в остаток вечера.
 	</p>
 	<p>
-		Finishing off the last of her drink, she says, [fia.speech(Well, I've got some leads to follow up on, and I should go and get this story of yours written up, so I'd better be going.)]
+		Допив последний глоток, она говорит: [fia.speech(Ну, мне нужно проверить кое-какие зацепки, да и твою историю пора записать, так что мне пора закругляться.)]
 	</p>
 	<p>
-		With your companion leaving, you decide to head out as well, and so the two of you exit the bar together. After saying goodbye, you each set off in different directions. Wandering down the street past Lovienne's Luxuries, you wonder what to do now...
+		Когда твоя спутница уходит, ты решаешь тоже отправиться восвояси, и вы вместе выходите из бара. Попрощавшись, вы расходитесь в разные стороны. Блуждая по улице мимо лавки «Роскошь Ловиенн», ты раздумываешь, чем бы заняться теперь...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SEX_OPTIONS"><![CDATA[
 	<p>
-		Knowing exactly which reward you'd prefer, you tell Fia that you can't resist her sexy body. Finishing off her drink, she jumps to her feet and grabs your [pc.arm(true)] before giggling, [fia.speech(I was hoping you'd choose me! Come on, [pc.name]!)] 
+		Точно зная, какую награду ты предпочтешь, ты говоришь Фие, что не можешь устоять перед её сексуальным телом. Допив напиток, она вскакивает на ноги и, хихикая, хватает тебя за [pc.arm(true)]: [fia.speech(А я надеялась, что ты выберешь меня! Ну же, [pc.name]!)] 
 	</p>
 	<p>
-		Telling the barman to put the room's rent on her tab, Fia leads you through a door and up a flight of stairs. Pushing open another door, she pulls you into an average-sized bedroom that's light on furnishings but clean and tidy. The king-sized bed has red sheets and heart-shaped pillows, and there's a bowl of condoms on the bedside table.
+		Приказав бармену записать плату за комнату на её счёт, Фия ведёт тебя через дверь и вверх по лестнице. Толкнув следующую дверь, она затаскивает тебя в спальню средних размеров — обставлена она скромно, но здесь чисто и опрятно. Огромная кровать застелена красными простынями с подушками в форме сердечек, а на прикроватной тумбочке стоит вазочка с презервативами.
 	</p>
 	<p>
-		Locking the door behind you, Fia kicks off her boots and skips forwards to excitedly jump onto the bed. Turning to face you with a huge smile on her face, she says, [fia.speech(You can fuck me however you like, but my pussy is off-limits! I'm saving my virginity, and all this immediately ends if you even try to touch it!)]
+		Заперев дверь за вашей спиной, Фия скидывает сапоги и, радостно подпрыгивая, запрыгивает на кровать. Повернувшись к тебе с широкой улыбкой, она говорит: [fia.speech(Можешь трахать меня как угодно, но моя киска — под запретом! Я берегу девственность, и всё это сразу закончится, если ты хотя бы попытаешься её коснуться!)]
 	</p>
 	<p>
-		With that rule having been clearly expressed, Fia pulls off her hoodie and tank top, leaving her wearing just her sports bra, daisy dukes, and socks. Continuing to smile, she waits to see what you'll do with her...
+		Чётко обозначив правила, Фия стягивает худи и майку, оставаясь в одном спортивном лифчике, коротких джинсовых шортах и носках. Не переставая улыбаться, она ждёт, что ты с ней сделаешь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SEX_OPTIONS_TAKE_CONDOMS"><![CDATA[
 	<p>
-		Wanting to be prepared for what's about to happen, you quickly grab a few condoms from one of the bowls beside the bed...
+		Желая подготовиться к тому, что вот-вот произойдёт, ты быстро хватаешь несколько презервативов из одной из вазочек у кровати...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="FIA_SEX_START"><![CDATA[
 	<p>
-		Eager to get things started, you join Fia on the bed and dominantly pull her into you as she giggles and plants a kiss on your [pc.lips+]. After lustfully grinding her body against your for a moment, she lies back on the bed and giggles, [fia.speech(Fuck me, [pc.name]!)]
+		Сгорая от нетерпения, ты забираешься на кровать к Фие и властно притягиваешь её к себе; она хихикает и запечатлевает поцелуй на твоём [pc.lips+]. Немного похотливо потеревшись своим телом о твоё, она откидывается на подушки и смеётся: [fia.speech(Трахни меня, [pc.name]!)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="FIA_SEX_START_INTERCRURAL"><![CDATA[
 	<p>
-		The fact that she doesn't want her pussy penetrated just makes Fia's virgin cunt even more enticing, and so you tell her that you want to fuck her tight, wet twat more than anything else.
+		Тот факт, что она не хочет проникновения в киску, делает её девственную щель ещё более манящей, поэтому ты говоришь ей, что больше всего на свете хочешь трахать её узкую и влажную дырочку.
 	</p>
 	<p>
-		[fia.speech(Absolutely not,)] she firmly replies, before flashing you a smirk and saying, [fia.speech(But if you're so desperate to fuck me... Get your cock out.)]
+		[fia.speech(Вовсе нет,)] — твердо отвечает она, а затем одаривает тебя ухмылкой и добавляет: [fia.speech(Но если ты так отчаянно хочешь меня трахнуть... Доставай свой член.)]
 	</p>
 	<p>
-		Hoping that she's going to let you take her virginity, you quickly present Fia with your erect cock as she pulls off her daisy dukes and boyshorts and throws them over to one side of the room. Pushing herself up onto all fours, she wiggles her ass at you and giggles, [fia.speech(You're not going to fuck me, but I'll let you pretend. Bring that cock over here.)]
+		Надеясь, что она позволит тебе лишить её девственности, ты поспешно демонстрируешь Фии свой эрегированный член, пока она стягивает свои джинсовые шорты и трусики, отбрасывая их в сторону. Встав на четвереньки, она игриво виляет перед тобой задом и хихикает: [fia.speech(Ты не будешь меня трахать, но я позволю тебе притвориться. Тащи свой член сюда.)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Swiftly mounting Fia,
+			Быстро оседлав Фию,
 		#ELSE
-			Swiftly dropping down behind Fia,
+			Быстро насадившись на Фию сзади,
 		#ENDIF
-		 you line your cock up to her virgin cunt, but before you can even think of penetrating her, she reaches back with one hand and firmly grabs your rock-hard shaft. With your dick now completely under her control, Fia playfully slides the [pc.cockHead+] of your cock up and down over her [fia.labia+], moaning as she does so, [fia.speech(You want my hot little pussy? Your cock feels good rubbing against my virgin cunt? Sorry, [pc.name]... You can't have it! But here's the next best thing...)]
+		 ты пристраиваешь свой член к её девственной щели, но прежде чем ты успеваешь даже подумать о проникновении, она тянется назад и крепко обхватывает твой твердый как камень ствол. Теперь, когда твой член полностью в её власти, Фия игриво водит [pc.cockHead+] твоего члена вверх и вниз по своей [fia.labia+], стоная от удовольствия: [fia.speech(Хочешь мою горячую киску? Тебе нравится, как твой член трется о мою девственную щель? Прости, [pc.name]... Тебе её не получить! Но вот кое-что получше...)]
 	</p>
 	<p>
-		Moving her knees together so that they're touching, Fia's thighs are squished up against each other, and she moves your cock down to the crevice that's formed and loosens her grip. Turned on and desperate to sink your cock into her, you immediately thrust forwards, and as your [pc.cock+] pushes in-between Fia's soft thighs, you feel her wet pussy kissing the top of your shaft. Trusting you not to penetrate her pussy, Fia lets go of your cock, and as you continue fucking her thighs, she lewdly moans,
+	Сводя колени вместе, Фия плотно прижимает бедра друг к другу и ослабляет хватку, направляя твой член в образовавшуюся щель. Возбужденный и жаждущий войти в неё, ты тут же подаешься вперед, и когда твой [pc.cock+] проскальзывает между мягких бедер Фии, ты чувствуешь, как её влажная киска ласкает головку твоего члена. Доверяя тебе и надеясь, что ты не полезешь ей в щель, Фия отпускает твой член, и пока ты продолжаешь трахать её бедра, она похотливо стонет:
 		#IF(game.isAnalContentEnabled())
-			 [fia.speech(~Mmm!~ If this isn't enough for you, then just stick it in my ass!)]
+			 [fia.speech(~Ммм!~ Если тебе этого мало, то просто засунь его мне в зад!)]
 		#ELSE
-			 [fia.speech(~Mmm!~ If this isn't enough for you, then you can always just fuck my throat!)]
+			 [fia.speech(~Ммм!~ Если тебе этого мало, то можешь всегда просто оттрахать мне горло!)]
 		#ENDIF
 	</p>
 	<p>
-		Keeping Fia's offer in mind, you decide to continue fucking her thighs for the time being...
+	Помня о предложении Фии, ты решаешь пока что продолжить трахать её бедра...
 	</p>
 	]]>
 	</htmlContent>
@@ -384,29 +383,29 @@
 	<htmlContent tag="AFTER_SEX"><![CDATA[
 	<p>
 		#IF(fia.isSatisfiedFromLastSex())
-			[fia.speech(Fuck, that was amazing,)] Fia sighs as she collapses back onto the bed, panting for breath.
+			[fia.speech(Бля, это было потрясающе,)] — вздыхает Фия, откидываясь на кровать и тяжело дыша.
 		#ELSE
-			[fia.speech(You could have at least tried to satisfy me, [pc.name],)] Fia complains as you bring an end to the sex.
+			[fia.speech(Ты мог бы хотя бы попытаться удовлетворить меня, [pc.name],)] — ворчит Фия, когда ты заканчиваешь секс.
 		#ENDIF
 	</p>
 	<p>
-		After taking a couple of minutes to recover, the two of you get your things back in order, and as you look at the mess the two of you have made of the bed, Fia says, [fia.speech(The cleanup cost is included in what I paid to rent this room, so just leave it.)]
+	Придя в себя через пару минут, вы оба приводите вещи в порядок, и когда ты смотришь на беспорядок, который вы устроили на кровати, Фия говорит: [fia.speech(Уборка уже включена в стоимость аренды комнаты, так что просто оставь всё как есть.)]
 	</p>
 	<p>
-		After pulling on her boots and hoodie, your companion is once again fully dressed, and happily skips over to the door. As you join her, she unlocks it and leads you back down to the bar.
+	Надев сапоги и худи, твоя спутница снова полностью одета и счастливо подпрыгивает к двери. Когда ты догоняешь её, она отпирает замок и ведет тебя обратно к бару.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_END"><![CDATA[
 	<p>
-		Having had a lot of fun with her, you tell Fia that it was great seeing her again, and you hope to catch her here again some other time.
+		Насладившись отличным времяпрепровождением, ты говоришь Фии, что был рад снова её увидеть, и надеешься заглянуть к ней здесь в другой раз.
 	</p>
 	<p>
-		[fia.speech(It was great seeing you too, [pc.name],)] she replies with a smile on her face. Accompanying you as you head over to the door, she says, [fia.speech(I've got some leads to follow up on tonight... My work never ends!)]
+		[fia.speech(Мне тоже было очень приятно тебя видеть, [pc.name],)] — отвечает она с улыбкой на лице. Сопровождая тебя до самой двери, она добавляет: [fia.speech(Сегодня вечером мне нужно кое-какие зацепки проверить... Моей работе конца и края нет!)]
 	</p>
 	<p>
-		The two of you exit the bar together, and after saying a final goodbye, you set off in different directions. Wandering down the street past Lovienne's Luxuries, you wonder what to do now...
+	Вы вдвоем выходите из бара, и после финального прощания расходитесь в разные стороны. Блуждая по улице мимо лавки «Роскошь Ловьенн», ты раздумываешь, чем бы заняться теперь...
 	</p>
 	]]>
 	</htmlContent>

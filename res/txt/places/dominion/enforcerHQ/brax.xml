@@ -5,20 +5,20 @@
 
 	<htmlContent tag="INTERIOR_BRAX"><![CDATA[
 	<p>
-		You soon find the door that you're looking for, marked with the words 'Inspector [brax.nameFull]'. Wondering what sort of person this '[brax.name]' might be, you reach up and knock on the door. Almost instantly, a low, gruff voice barks out in response, [brax.speech(Enter!)]
+		Вскоре ты находишь нужную дверь с надписью «Инспектор [brax.nameFull]». Задаваясь вопросом, что это за личность такая — «[brax.name]», ты протягиваешь руку и стучишь. Почти мгновенно раздается низкий, хриплый голос: [brax.speech(Войди!)]
 	</p>
 	<p>
-		Pushing open the door, you step forwards into [brax.namePos] office. As you take a quick glance around, you notice that there are numerous posters of scantily-clad girls plastered all over the walls, which gives this room a rather unexpectedly-unprofessional feel to it. Apart from this oddity, the only other features of any interest are the normal collection of filing cabinets and bookshelves standing against the walls, a large mahogany desk on the other side of the room, and the imposing figure who's sitting behind it.
+		Толкнув дверь, ты входишь в кабинет [brax.namePos]. Окинув комнату быстрым взглядом, ты замечаешь, что все стены обклеены плакатами с полуобнаженными девушками, из-за чего обстановка кажется на редкость несерьезной и непрофессиональной. Помимо этой странности, единственными примечательными деталями здесь являются обычные шкафы для документов и книжные полки вдоль стен, массивный стол из красного дерева на другом конце комнаты и внушительная фигура, сидящая за ним.
 	</p>
 	<p>
-		As the door starts to swing shut behind you, the person behind the desk, who you assume to be [brax.name], stands up. He's a greater wolf-morph, and is covered from head to toe in [brax.skinColour] fur. His face is formed into an anthropomorphic wolf-like muzzle, and his pair of eyes are a wild, vivid shade of [brax.eyeColour]. As would be expected, he's wearing an Enforcer's uniform, consisting of a blue shirt, black slacks, and a black tie. Behind him, hanging up on the wall, is his jacket, cap and dress belt.
+		Когда дверь за твоей спиной начинает закрываться, человек за столом — который, как ты понимаешь, и есть [brax.name] — встает. Он — высший волк-морф, покрытый с головы до ног [brax.skinColour] шерстью. Его лицо представляет собой антропоморфную волчью морду, а глаза светятся диким, ярким оттенком [brax.eyeColour]. Как и ожидалось, на нем форма Enforcer: синяя рубашка, черные брюки и черный галстук. Позади него на стене висят его куртка, фуражка и парадный пояс.
 	</p>
 	<p>
-		Staring right at you, [brax.name] angrily slams his fist on the desk. You see his huge muscles bulge underneath his Enforcer's shirt as he growls at you, [brax.speech(I told that stupid slut to stop handing out passes! Who the hell are you?!)]
+		Глядя прямо на тебя, [brax.name] яростно хлопает кулаком по столу. Ты видишь, как под рубашкой Enforcer перекатываются его огромные мышцы, пока он рычит на тебя: [brax.speech(Я велел этой тупой шлюхе перестать раздавать пропуска! Ты еще кто такая, черт возьми?!)]
 	</p>
 	#IF(pc.getRace()==RACE_WOLF_MORPH && pc.isFeminine())
 		<p>
-			As he finishes barking out his question, you see his hungry eyes drop down to roam over your wolf-like body, and you wonder if he has a weakness for wolf-girls. Wanting to test your theory, you turn back to face the door, pushing it firmly shut while not-so-subtly sticking out your ass towards [brax.name]. Turning back to face him, your suspicions are proven to be correct as you see his eyes fogged over with lust...
+			Как только он выкрикивает свой вопрос, ты замечаешь, как его голодные глаза опускаются, скользя по твоему волчьему телу, и ты задаешься вопросом: а нет ли у него слабости к волчицам? Желая проверить свою теорию, ты поворачиваешься спиной к нему и плотно закрываешь дверь, недвусмысленно выпячивая задницу в сторону [brax.name]. Когда ты снова поворачиваешься к нему лицом, твои подозрения подтверждаются — ты видишь, что его взгляд затуманился от похоти...
 		</p>
 	#ENDIF
 	]]>
@@ -29,17 +29,17 @@
 	<htmlContent tag="INTERIOR_BRAX_REPEAT"><![CDATA[
 	#IF(!pc.isQuestProgressGreaterThan(QUEST_LINE_MAIN, QUEST_MAIN_1_C_WOLFS_DEN))
 		<p>
-			As he sees that it's you who's entering his office once again, [brax.namePos] jaw drops and he exclaims, [brax.speech(What the hell are you doing back here?! Did that braindead bimbo give you <i>another</i> pass?!)]
+			Увидев, что в его кабинет снова входишь ты, [brax.namePos] роняет челюсть и восклицает: [brax.speech(Какого черта ты опять здесь забыла?! Неужели эта безмозглая дура дала тебе <i>еще один</i> пропуск?!)]
 		</p>
 		<p>
-			As you enter his office, ready for another fight, [brax.name] stands up, and you see the familiar sight of arcane fire being summoned around his right hand, while with the other he grabs his pistol.
+			Когда ты входишь в его кабинет, готовая к очередной стычке, [brax.name] встает, и ты видишь знакомую картину: вокруг его правой руки закручивается аркана-пламя, а другой рукой он хватает пистолет.
 		</p>
 		<p>
-			[brax.speech(I guess you've just got a craving for wolf dick!)] [brax.name] laughs, and you realise that if you lose again, you're going to be getting another taste of his cock...
+			[brax.speech(Похоже, тебе просто не терпится попробовать волчий член!)] [brax.name] хохочет, и ты понимаешь: если проиграешь снова, тебе придется еще раз вкусить его cock...
 		</p>
 	#ELSE
 		<p>
-			The door to the office which used to be [brax.namePos] is securely shut and locked. There's really nothing more for you to do here except turn around and leave...
+			Дверь в кабинет, где только что был [brax.namePos], плотно закрыта и заперта. Тебе здесь больше делать нечего — остается только развернуться и уйти...
 		</p>
 	#ENDIF
 	]]>
@@ -49,13 +49,13 @@
 
 	<htmlContent tag="INTERIOR_BRAX_TRUTH"><![CDATA[
 	<p>
-		You decide that it's probably for the best if you just tell the truth, [pc.speech(I'm here to find out what's happened to my friend, Arthur. His apartment was empty, and your name was on the arrest warrant stamped to his door.)]
+		Ты решаешь, что будет лучше просто сказать правду: [pc.speech(Я здесь, чтобы узнать, что случилось с моим другом, Arthur. Его квартира оказалась пустой, а на дверь был приклеен ордер на арест, где значится ваше имя.)]
 	</p>
 	<p>
-		As you mention Arthur's name, [brax.name] lets out a dismissive grunt, and as you finish speaking, he huffs, [brax.speech(As if I'd tell you that! You come barging into my office, then expect me to hand out classified information?! I think you need to be the first test subject for a special punishment I've recently thought of!)]
+		Стоит тебе произнести имя Arthur, как [brax.name] пренебрежительно хмыкает, а когда ты заканчиваешь фразу, он фыркает: [brax.speech(Как будто я стану тебе всё выкладывать! Врываешься в мой кабинет и ждешь, что я тут же раздам тебе секретную информацию?! Думаю, тебе стоит стать первым подопытным для одного особого наказания, которое я тут недавно придумал!)]
 	</p>
 	<p>
-		As [brax.name] finishes speaking, you see a burst of arcane fire suddenly materialise around his right hand, while with his other, he reaches down to grab the pistol at his waist. From the angry expression on his face, it's not too hard to figure out that he intends to fight you. This all seems incredibly unreasonable, and you think that he was just looking for any excuse to try this 'punishment' out on someone...
+		Когда [brax.name] замолкает, ты видишь, как вокруг его правой руки внезапно вспыхивает сгусток арканального огня, а другой рукой он тянется к пистолету на поясе. Судя по яростному выражению его лица, не составит труда понять, что он намерен с тобой сразиться. Всё это кажется невероятно несправедливым, и тебе кажется, что он просто искал любой повод опробовать это свое «наказание» на ком-нибудь...
 	</p>
 	]]>
 	</htmlContent>
@@ -64,13 +64,13 @@
 
 	<htmlContent tag="INTERIOR_BRAX_LIE"><![CDATA[
 	<p>
-		As you take a closer look at [brax.namePos] office, you notice that the scantily-clad models in every single poster are wolf-girls. Shifting your gaze to look past [brax.namePos] desk for a moment, your eyes are drawn to a glass display cabinet sitting just behind him, and you see that it's full of small, half-naked wolf-girl figurines. From your observations of [brax.namePos] office, it's safe to assume that he has a thing for females of the same race as him.
+		Присмотревшись к кабинету [brax.namePos], ты замечаешь, что на каждом плакате красуются полураздетые модели — и все они волчицы. На мгновение переводя взгляд за стол [brax.namePos], ты замечаешь стеклянную витрину прямо за его спиной; она доверху набита маленькими полуголыми фигурками волчиц. Судя по тому, что ты видишь в кабинете [brax.namePos], можно смело предположить, что он неравнодушен к самкам своей расы.
 	</p>
 	<p>
-		Deciding to take a bold course of action, you use your deduction as inspiration to make up a story right there on the spot, [pc.speech(Well, after I informed the cat-girl at the front desk that I'm the owner of the establishment 'The She-Wolf's Den', she said that you'd probably want to talk to me in person.)]
+		Решив действовать смело, ты используешь свою дедукцию как вдохновение, чтобы прямо на ходу сочинить историю: [pc.speech(Ну, когда я сообщил кошкодевушке на стойке регистрации, что я владелец заведения «Логово Волчицы», она сказала, что вы, скорее всего, захотите поговорить со мной лично.)]
 	</p>
 	<p>
-		Just as you're kicking yourself for thinking up such a ridiculous name, you notice [brax.namePos] snarl fading away, and you struggle to keep your composure as he impatiently blurts out, [brax.speech(Wait, what's all this about a she-wolf's den?)]
+		Только ты успеваешь проклясть себя за такое нелепое название, как замечаешь, что рычание [brax.namePos] затихает, и изо всех сил стараешься сохранить самообладание, пока он нетерпеливо выпаливает: [brax.speech(Погоди, что еще за логово волчицы?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -79,19 +79,19 @@
 
 	<htmlContent tag="INTERIOR_BRAX_LIE_IDIOT_BRAX"><![CDATA[
 	<p>
-		Almost feeling sorry for [brax.name], you decide to tell him that he's a gullible idiot, [pc.speech(I can't believe you actually fell for that! Do you really have the rank of Inspector? That's just sad...)]
+		Почти испытывая жалость к [brax.name], ты решаешь сказать ему, что он — доверчивый идиот: [pc.speech(Поверить не могу, что ты реально на это купился! Ты что, правда инспектор? Это просто жалко...)]
 	</p>
 	<p>
-		As he hears that he's been fooled, [brax.namePos] wolf-like face turns up into a snarl, and he slams his fist on the desk, shouting, [brax.speech(I-I knew you were lying all along! I don't even like wolf-girls! You'd better tell me what the hell you're here for, <i>right now</i>!)]
+		Услышав, что его обвели вокруг пальца, [brax.namePos] скалится своим волчьим лицом и с грохотом бьет кулаком по столу, выкрикивая: [brax.speech(Я... я так и знал, что ты врешь! Да мне вообще не нравятся волчьи девки! А ну живо говори, какого черта ты здесь забыл, <i>прямо сейчас</i>!)]
 	</p>
 	<p>
-		Despite the farcical nature of [brax.namePos] stuttering denial of his all-too-apparent weakness, you quickly realise from the angry expression on his face that he means business, and explain, [pc.speech(Well, if you want the truth, I'm here to find out what you've done with my friend, Arthur. I found his apartment empty, and your name was on the arrest warrant stamped to his door.)]
+		Несмотря на фарс, который представляет собой заикающееся отрицание очевидной слабости [brax.namePos], по его разъяренному лицу ты быстро понимаешь, что он настроен серьезно, и объясняешь: [pc.speech(Ну, если хочешь правды, то я здесь, чтобы узнать, что вы сделали с моим другом, Arthur. Его квартира оказалась пуста, а на двери висел ордер на арест, где стояло ваше имя.)]
 	</p>
 	<p>
-		[brax.NamePos] snarling face relaxes a little, turning into a mocking sneer as he replies, [brax.speech(As if I'd tell you that! You come barging into my office, try to make a fool of me, then expect me to hand out classified information?! I think you need to be the first test subject for a special punishment I've recently thought of!)]
+		[brax.NamePos] слегка смягчает свое рычащее лицо, и оно превращается в насмешливую ухмылку, когда он отвечает: [brax.speech(Как будто я тебе такое выложу! Врываешься в мой кабинет, пытаешься выставить меня дураком, а потом ждешь, что я раздам тебе секретную информацию?! Думаю, тебе стоит стать первым подопытным для одного особенного наказания, которое я тут недавно придумал!)]
 	</p>
 	<p>
-		As [brax.name] finishes speaking, you see a burst of arcane fire suddenly materialise around his right hand, while with his other, he reaches down to grab the pistol at his waist. From the angry, although somewhat flustered, expression on his face, it's not too hard to figure out that he intends to fight you. Resorting to violence like this seems more than a little unreasonable, and you think that he was just looking for any excuse to try this 'punishment' out on someone...
+		Когда [brax.name] заканчивает говорить, ты видишь, как вокруг его правой руки внезапно вспыхивает аркана-пламя, а другой рукой он тянется к пистолету на поясе. Глядя на его разгневанное, хоть и слегка взволнованное лицо, нетрудно понять, что он намерен сражаться. Подобное прибегание к насилию кажется более чем необоснованным, и тебе кажется, что он просто искал любой повод опробовать это «наказание» на ком-нибудь...
 	</p>
 	]]>
 	</htmlContent>
@@ -100,31 +100,31 @@
 
 	<htmlContent tag="INTERIOR_BRAX_LIE_BLUFFING"><![CDATA[
 	<p>
-		Wondering just how gullible [brax.name] really is, you continue bluffing, [pc.speech(I'm not surprised that you haven't heard about it; membership of my club is by recommendation only. I'm sure you understand, but I wouldn't want any old member of the public being allowed to enjoy the company of the most beautiful wolf-girls in all of Dominion.)]
+		Интересуясь тем, насколько же на самом деле доверчив [brax.name], ты продолжаешь блефовать: [pc.speech(Неудивительно, что ты о нем не слышал; в мой клуб принимают только по рекомендации. Уверен, ты понимаешь, но я бы не хотел, чтобы любой встречный мог наслаждаться компанией самых прекрасных волчиц во всем Dominion.)]
 	</p>
 	<p>
-		You struggle not to laugh as you see [brax.namePos] eyes glazing over with lust. [brax.speech(The most beautiful wolf-girls? So... what do they do in your club?)]
+		Ты изо всех сил стараешься не рассмеяться, видя, как взгляд [brax.namePos] затуманивается от похоти. [brax.speech(Самые прекрасные волчицы? И... чем же они занимаются в твоем клубе?)]
 	</p>
 	<p>
-		[pc.speech(Absolutely <i>anything</i> that's asked of them,)] you reply, and as you see that [brax.name] is by now totally taken in by your ruse, you decide to move onto business, [pc.speech(You know, I'm sure I could rely on an Inspector like you to really appreciate the girls at my club, and I'd love to offer you a recommendation to join, but I have a slight problem that needs solving first...)]
+		[pc.speech(Безусловно, <i>всё что угодно</i>, о чем попросят,)] — отвечаешь ты. Видя, что [brax.name] уже окончательно поверил в твою уловку, ты решаешь перейти к делу: [pc.speech(Знаете, я уверен, что на такого инспектора, как вы, можно положиться в плане оценки девиц в моем клубе. Я бы с радостью предложил вам рекомендацию, чтобы вы к нам присоединились, но есть одна небольшая проблема, которую нужно решить в первую очередь...)]
 	</p>
 	<p>
-		[brax.speech(Anything!)] [brax.name] eagerly blurts out.
+		[brax.speech(Всё что угодно!)] — с энтузиазмом выпаливает [brax.name].
 	</p>
 	<p>
-		[pc.speech(Excellent!)] you reply, [pc.speech(You see, an acquaintance of mine, going by the name of Arthur, owes me a good deal of money. When I paid him a visit, however, I found his apartment empty, and your name was on an arrest warrant fixed to his door. Could you tell me what happened to him?)]
+		[pc.speech(Превосходно!)] — отвечаешь ты. [pc.speech(Видите ли, мой знакомый по имени Arthur задолжал мне приличную сумму. Когда я навестил его, то обнаружил, что квартира пуста, а на его двери висел ордер на арест, где значилось ваше имя. Не могли бы вы рассказать, что с ним случилось?)]
 	</p>
 	<p>
-		[brax.Name] fidgets uncomfortably as you reveal the reason for your visit. [brax.speech(Ah... Well, you see, he's kind of a special case... I really shouldn't divulge information relating to-)]
+		[brax.Name] неловко ерзает, когда ты раскрываешь истинную причину своего визита. [brax.speech(А... Ну, понимаете, он своего рода особый случай... Мне, в общем-то, не стоит разглашать информацию, касающуюся...)]
 	</p>
 	<p>
-		[pc.speech(That's a real shame. You know, many of our patrons like to take two or three girls at once...)]
+		[pc.speech(Какая жалость. Знаете, многие наши завсегдатаи любят брать сразу двух или трех девушек...)]
 	</p>
 	<p>
-		[brax.speech(Damn it!)] [brax.name] exclaims, interrupting your sentence. Grabbing a piece of paper out from a pile of freshly-signed documents, he thrusts it into your hands and says, [brax.speech(Don't tell anyone I gave you this! Now, where's this establishment of yours?!)]
+		[brax.speech(Черт возьми!)] — восклицает [brax.name], перебивая тебя на полуслове. Выхватив листок из стопки свежеподписанных документов, он сует его тебе в руки и говорит: [brax.speech(Только никому не говори, что это я тебе дал! Ну так где это ваше заведение?!)]
 	</p>
 	<p>
-		Wanting to trick him one last time, you give [brax.name] a series of instructions which will end up with him returning right back here at Enforcer HQ. Just as you thought, he's so completely blinded by his lust for wolf-girls that he doesn't realise you're sending him in a huge circuit of the city. As he leaps up and runs for the door, you wonder if you should tell him what a gullible idiot he is...
+		Желая обмануть его в последний раз, ты даешь [brax.name] ряд инструкций, которые в итоге приведут его прямиком обратно сюда, в штаб Enforcer. Как ты и думала, он настолько ослеплен своей похотью к волчицам, что даже не замечает, что ты заставляешь его наматывать огромный круг по всему городу. Когда он вскакивает и бежит к двери, ты задаешься вопросом: стоит ли говорить ему, какой же он доверчивый идиот...
 	</p>
 	]]>
 	</htmlContent>
@@ -133,24 +133,24 @@
 
 	<htmlContent tag="INTERIOR_BRAX_LIE_BLUFFING_SUCCESS"><![CDATA[
 	<p>
-		You barely have time to say goodbye to your gullible friend before he bounds out of the door, muttering about how he won't need 'that slut on the front desk' any more.
+		Ты едва успеваешь попрощаться со своим наивным другом, как он вылетает за дверь, бормоча под нос, что «та шлюха на ресепшене» ему больше не понадобится.
 	</p>
 	<p>
-		You finally have a moment to read over the piece of paper [brax.name] gave to you, and as you do so, you can't help but let out an annoyed sigh. It looks like Arthur is going to be one difficult person to track down, as the paper says:
+		Наконец у тебя появляется минутка, чтобы изучить листок бумаги, который тебе вручил [brax.name], и в процессе ты невольно издаешь раздраженный вздох. Похоже, Arthur окажется тем еще крепким орешком, ведь в бумаге сказано:
 	</p>
-	<h6 style='text-align:center;'>Dominion Enforcer Department</h6>
-	<h5 style='text-align:center;'>RECORD OF SLAVE TRANSFER</h5>
+	<h6 style='text-align:center;'>Департамент Enforcer Dominion</h6>
+	<h5 style='text-align:center;'>АКТ О ПЕРЕДАЧЕ РАБА</h5>
 	<p style='text-align:center;'>
-		According to the laws of Dominion, the person of <i>[arthur.fullName]</i>, having being found guilty of <i>treason</i>, has been enslaved. Following standard procedure, ownership has been transferred to a registered slave trader chosen by random lottery.
+		Согласно законам Dominion, особа <i>[arthur.fullName]</i>, признанная виновной в <i>измене</i>, была обращена в рабство. Согласно стандартной процедуре, право собственности было передано зарегистрированному работорговцу, выбранному путем случайной лотереи.
 		<br/><br/>
-		Officer in charge of transferring slave ownership: <i>[brax.fullName]</i>
+		Офицер, ответственный за передачу прав собственности: <i>[brax.fullName]</i>
 		<br/><br/>
-		Slave trader taking ownership: <i>[scarlett.fullName]</i>
+		Работорговец, принимающий собственность: <i>[scarlett.fullName]</i>
 		<br/><br/>
-		Contact address: <i>Scarlett's shop, Slaver Alley</i>
+		Контактный адрес: <i>Лавка Scarlett, Переулок Рабов</i>
 	</p>
 	<p>
-		After reading it over a second time, you realise that you're going to have to make your way to Slaver Alley and see if you can find some way to buy Arthur. Taking one last look around [brax.namePos] office, you notice that there's two neatly-folded Enforcer's uniforms lying on top of a cabinet. To punish [brax.name] a little more for falling for such an obvious trick, <b>you could take a spare uniform and add it to your inventory</b>.
+		Перечитав это во второй раз, ты понимаешь, что тебе придется отправиться в Переулок Рабов и попытаться найти способ выкупить Arthur. В последний раз оглядев кабинет [brax.namePos], ты замечаешь две аккуратно сложенные формы Enforcer, лежащие на шкафу. Чтобы еще немного проучить [brax.name] за то, что он попался на столь очевидную уловку, <b>ты можешь взять запасную форму и добавить её в свой инвентарь</b>.
 	</p>
 	]]>
 	</htmlContent>
@@ -159,24 +159,24 @@
 
 	<htmlContent tag="INTERIOR_BRAX_LIE_BLUFFING_IDIOT_BRAX"><![CDATA[
 	<p>
-		Almost feeling sorry for [brax.name], you decide to tell him that he's a gullible idiot, [pc.speech(Do you really believe that there's a place called 'The She-wolf's Den'? You do realise that I made all that up, right? I mean, no one can be <i>that</i> much of a gullible idiot!)]
+		Почти испытывая жалость к [brax.name], ты решаешь сказать ему, что он — доверчивый идиот: [pc.speech(Ты и правда веришь, что существует место под названием «Логово Волчицы»? Ты же понимаешь, что я всё это выдумала? Ну серьезно, никто не может быть настолько <i>доверчивым</i> идиотом!)]
 	</p>
 	<p>
-		With his hand on the door-handle, [brax.name] stops, and with an unsure stammer, turns back to you, [brax.speech(W-What do you mean? I-I knew you were lying all along! I don't even like wolf-girls!)]
+		Положив руку на дверную ручку, [brax.name] замирает и, неуверенно заикаясь, оборачивается к тебе: [brax.speech(Ч-что ты имеешь в виду? Я... я с самого начала знал, что ты лжешь! Мне даже не нравятся волчицы!)]
 	</p>
 	<p>
-		You can't help but laugh at [brax.namePos] stuttering denial of his all-too-apparent weakness,
+		Ты не можешь сдержать смех, глядя на то, как [brax.namePos] заикается, отрицая свою слишком очевидную слабость.
 		#IF(pc.getRace()==RACE_WOLF_MORPH && pc.isFeminine())
-			 [pc.speech(Oh, please! I see the way you keep glancing at my body! You couldn't make it any more obvious if you painted a big sign on your head reading '[brax.name] is a bitch for wolf-girls'!)]
+			 [pc.speech(Ой, да брось! Я же вижу, как ты постоянно пялишься на моё тело! Ты бы не сделал это еще очевиднее, если бы повесил себе на голову огромную табличку: «[brax.name] — сучка по волчицам»!)]
 		#ELSE
-			 [pc.speech(Oh, please! You couldn't make it any more obvious if you painted a big sign on your head reading '[brax.name] is a bitch for wolf-girls'!)]
+			 [pc.speech(Ой, да брось! Ты бы не сделал это еще очевиднее, если бы повесил себе на голову огромную табличку: «[brax.name] — сучка по волчицам»!)]
 		#ENDIF
 	</p>
 	<p>
-		[brax.namePos] face turns back up into the same snarl that you saw when you first entered his office. [brax.speech(S-Shut up! You want to see how much I like wolf-girls?! Fine! I think you need to be the first test subject for a special punishment I've recently thought of!)]
+		Лицо [brax.namePos] снова искажается в той же гримасе злобы, которую ты видела, когда только вошла в его кабинет. [brax.speech(З-заткнись! Хочешь увидеть, как сильно мне нравятся волчицы?! Ладно! Думаю, ты станешь первым подопытным для одного особенного наказания, которое я недавно придумал!)]
 	</p>
 	<p>
-		As [brax.name] finishes speaking, you see a burst of arcane fire suddenly materialise around his right hand, while with his other, he reaches down to grab the pistol at his waist. From the angry, although somewhat flustered, expression on his face, it's not too hard to figure out that he intends to fight you. Resorting to violence like this seems more than a little unreasonable, and you think that he was just looking for any excuse to try this 'punishment' out on someone...
+		Когда [brax.name] заканчивает говорить, ты видишь, как вокруг его правой руки внезапно вспыхивает аркана-пламя, а другой рукой он тянется к пистолету на поясе. Глядя на его разгневанное, хоть и слегка взволнованное лицо, нетрудно понять, что он намерен сражаться. Подобное прибегание к насилию кажется более чем необоснованным, и тебе кажется, что он просто искал любой повод опробовать это «наказание» на ком-нибудь...
 	</p>
 	]]>
 	</htmlContent>
@@ -185,19 +185,19 @@
 
 	<htmlContent tag="INTERIOR_BRAX_GETTING_TEASED"><![CDATA[
 	<p>
-		Realising that you can use your body to get what you want, you slowly walk over to [brax.namePos] desk, suggestively swaying your [pc.hipSize] hips with each step. Just as you'd hoped, [brax.name] can't take his eyes off of you, and he slowly sits back down, his thoughts lost in a pink haze of arousal as he watches your provocative movements.
+		Понимая, что можешь использовать свое тело, чтобы получить желаемое, ты медленно подходишь к столу [brax.namePos], соблазнительно покачивая [pc.hipSize] бедрами при каждом шаге. Как ты и надеялась, [brax.name] не может оторвать от тебя глаз; он медленно садится обратно, погружаясь в розовую дымку возбуждения и наблюдая за твоими провокационными движениями.
 	</p>
 	<p>
-		[pc.speech(You know, it's not often that I get to meet such handsome wolf-boys...)] you sigh, leaning forwards over [brax.namePos] desk as you bat your eyelids at him.
+		[pc.speech(Знаешь, нечасто мне выпадает шанс встретить таких красавцев-волков...)] — вздыхаешь ты, наклоняясь над столом [brax.namePos] и игриво хлопая ресницами.
 	</p>
 	<p>
-		Despite it being completely obvious what you're trying to do, [brax.namePos] weakness for wolf-girls has left him completely unable to act in a rational manner. As he hears you calling him handsome, a stupid grin crosses his face, and you smile back as you realise that he's now totally under your spell.
+		Несмотря на то, что твои намерения очевидны, слабость [brax.namePos] к волчицам лишает его всякой способности мыслить рационально. Когда он слышит, что ты называешь его красавцем, на его лице расплывается глупая ухмылка, и ты улыбаешься в ответ, понимая, что теперь он полностью под твоим заклинанием.
 	</p>
 	<p>
-		[pc.speech(You know, [brax.name],)] you tease, reaching forwards to playfully straighten his tie, [pc.speech(I was hoping you could help me. My friend, Arthur, seems to have been arrested, and it was your name on the arrest warrant. Could you tell me what happened to him? Pretty please?)]
+		[pc.speech(Знаешь, [brax.name],)] — дразнишь ты, подаваясь вперед, чтобы игриво поправить ему галстук, — [pc.speech(Я надеялась, что ты сможешь мне помочь. Кажется, моего друга, Arthur, арестовали, и в ордере стояло твое имя. Не мог бы ты рассказать, что с ним случилось? Ну пожалуйста?)]
 	</p>
 	<p>
-		In a hypnotised trance, [brax.name] leans down and produces a piece of paper, before pushing it into your hands. [brax.speech(Just for you, but don't tell anyone I gave you this!)]
+		Впав в гипнотический транс, [brax.name] наклоняется и достает листок бумаги, вкладывая его тебе в руки. [brax.speech(Только для тебя, но никому не говори, что это от меня!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -206,28 +206,28 @@
 
 	<htmlContent tag="INTERIOR_BRAX_GETTING_TEASED_UH_OH"><![CDATA[
 	<p>
-		Looking down, you read over the piece of paper [brax.name] gave to you, and as you do so, you can't help but let out an annoyed sigh. It looks like Arthur is going to be one difficult person to track down, as the paper says:
+		Посмотрев вниз, ты читаешь записку, которую тебе дала [brax.name], и невольно раздраженно вздыхаешь. Похоже, Arthur окажется тем еще крепким орешком, ведь в бумаге сказано:
 	</p>
 	<p>
-	<h6 style='text-align:center;'>Dominion Enforcer Department</h6>
-	<h5 style='text-align:center;'>RECORD OF SLAVE TRANSFER</h5>
+	<h6 style='text-align:center;'>Департамент Enforcer Dominion</h6>
+	<h5 style='text-align:center;'>АКТ О ПЕРЕДАЧЕ РАБА</h5>
 	<p style='text-align:center;'>
-		According to the laws of Dominion, the person of <i>[arthur.fullName]</i>, having being found guilty of <i>treason</i>, has been enslaved. Following standard procedure, ownership has been transferred to a registered slave trader chosen by random lottery.
+		Согласно законам Dominion, особа <i>[arthur.fullName]</i>, признанная виновной в <i>измене</i>, была обращена в рабство. Согласно стандартной процедуре, право собственности перешло к зарегистрированному работорговцу, выбранному путем случайной лотереи.
 		<br/><br/>
-		Officer in charge of transferring slave ownership: <i>[brax.fullName]</i>
+		Офицер, ответственный за передачу прав собственности: <i>[brax.fullName]</i>
 		<br/><br/>
-		Slave trader taking ownership: <i>[scarlett.fullName]</i>
+		Работорговец, принимающий собственность: <i>[scarlett.fullName]</i>
 		<br/><br/>
-		Contact address: <i>Scarlett's shop, Slaver Alley</i>
+		Контактный адрес: <i>Лавка Scarlett, Переулок Рабов</i>
 	</p>
 	<p>
-		To [brax.namePos] lust-filled mind, your sigh of annoyance sounds just like a lewd moan, and before you can react, he stands up and steps forwards, before reaching up to grab your head and pull you into a sudden, rough kiss. After a moment of frantically forcing his tongue down your throat, he releases you, and you step back, panting for breath. Being caught off-guard, you're unable to think of a response to the wolf-boy's confident move, and you simply stare at him with eyes wide open as he says, [brax.speech(Don't come in here acting the tease and expect to get away with it!)]
+		Для [brax.namePos] охваченного Похотью разума твой раздраженный вздох звучит как похотливый стон. Прежде чем ты успеваешь среагировать, он вскакивает, делает шаг вперед, хватает тебя за голову и вовлекает в резкий, грубый поцелуй. Спустя мгновение, лихорадочно втискивая свой язык тебе в глотку, он отпускает тебя, и ты отступаешь назад, тяжело дыша. Застигнутая врасплох, ты не можешь подобрать слов в ответ на столь самоуверенный выпад волка, лишь во все глаза смотришь на него, пока он не произносит: [brax.speech(Не смей заходить сюда, дразня меня, и надейся, что тебе это сойдет с рук!)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Stepping forwards, he grabs you by the waist and dominantly pulls you in tight against his wide, muscular chest. You instantly feel his massive erection pressing against your foreleg, and you gulp as he growls, [brax.speech(I haven't fucked a wolf-taur in a good long while! I hope you like it rough!)]
+			Сделав шаг вперед, он хватает тебя за талию и властно прижимает к своей широкой мускулистой груди. Ты мгновенно чувствуешь, как его массивный эрегированный член упирается тебе в переднюю ногу, и ты сглатываешь, когда он рычит: [brax.speech(Я уже целую вечность не трахал волчью тавру! Надеюсь, ты любишь пожестче!)]
 		#ELSE
-			Stepping forwards, he grabs you by the hips and dominantly pulls you in tight against his wide, muscular chest. You instantly feel his massive erection pressing against your leg, and you gulp as he growls, [brax.speech(I haven't fucked a wolf-girl as pretty as you in a good long while! I hope you like it rough!)]
+			Сделав шаг вперед, он хватает тебя за бедра и властно прижимает к своей широкой мускулистой груди. Ты мгновенно чувствуешь, как его массивный эрегированный член упирается тебе в ногу, и ты сглатываешь, когда он рычит: [brax.speech(Я уже целую вечность не трахал такую красавицу, как ты! Надеюсь, ты любишь пожестче!)]
 		#ENDIF
 	</p>
 	]]>
@@ -236,29 +236,29 @@
 	<htmlContent tag="INTERIOR_BRAX_GETTING_TEASED_UH_OH_GET_FUCKED"><![CDATA[
 	#IF(pc.isTaur())
 		<p>
-			With [brax.namePos] strong, confident grip still on your hips, you suddenly realise that you're happily leaning in against his masculine chest. With a little whimper, you gaze into his hungry, wolf-like eyes, and, taking your submissive noise as a sign that you want to be kissed, he presses his wolf-like muzzle against your [pc.lips] and forces his tongue into your mouth.
+			Пока [brax.namePos] крепко и уверенно сжимает твои бедра, ты вдруг осознаешь, что с наслаждением прижимаешься к его мужественной груди. Издав тихий всхлип, ты заглядываешь в его голодные, волчьи глаза, и он, принимая твой покорный стон за знак желания, прижимается своей звериной мордой к твоей [pc.lips] и силой вталкивает язык тебе в рот.
 		</p>
 		<p>
-			As you passionately kiss the dominant wolf-boy, you feel his hands reach up to grope and squeeze your [pc.breasts]. Moaning happily into his mouth, you push out your chest, encouraging him to continue playing with your [pc.breastSize] [pc.breasts] as you close your eyes and enjoy the safe, warm feeling of his embrace.
+			Пока ты страстно целуешь доминантного волка, ты чувствуешь, как его руки поднимаются выше, чтобы жадно сжимать и ласкать твою [pc.breasts]. Счастливо простоная ему в рот, ты выпячиваешь грудь, подзадоривая его продолжать играть с твоей [pc.breastSize] [pc.breasts], и закрываешь глаза, наслаждаясь теплом и безопасностью его объятий.
 		</p>
 		<p>
-			[brax.name] is the first to make the next move, and he suddenly pulls his head back to break off the kiss before leaning down to growl into your ear, [brax.speech(Good bitch, now get down on the floor and present that feral ass to me!)]
+			[brax.name] первым делает следующий шаг: он внезапно отстраняется, разрывая поцелуй, а затем наклоняется к самому твоему уху и рычит: [brax.speech(Хорошая сучка, а теперь опускайся на пол и подставь мне свою дикую задницу!)]
 		</p>
 		<p>
-			By now desperate to have sex with the dominant wolf-boy, you obediently do as you're told, and drop down onto your animalistic [pc.legRace]'s body, presenting your feral ass and genitals to him...
+			Охваченная отчаянным желанием заняться сексом с этим доминантным волком, ты послушно выполняешь приказ и опускаешься на его звериное [pc.legRace] тело, подставляя ему свою дикую задницу и половые органы...
 		</p>
 	#ELSE
 		<p>
-			[brax.namePos] strong, confident grip on your hips quickly moves down and around to your [pc.assSize] ass, and as he gives it a forceful squeeze, you suddenly realise that you're happily leaning in against his masculine chest. With a little whimper, you gaze into his hungry, wolf-like eyes, and, taking your submissive noise as a sign that you want to be kissed, he presses his wolf-like muzzle against your [pc.lips] and forces his tongue into your mouth.
+			[brax.namePos] крепко и уверенно сжимает твои бедра, а затем его ладони быстро скользят вниз, обхватывая твою [pc.assSize] задницу. Когда он с силой сжимает её, ты внезапно осознаешь, что с удовольствием прижимаешься к его мужественной груди. Издав тихий скулеж, ты заглядываешь в его голодные, волчьи глаза, и, приняв твой покорный звук за желание поцелуев, он прижимается своей волчьей мордой к твоим [pc.lips] и втискивает язык тебе в рот.
 		</p>
 		<p>
-			As you passionately kiss the dominant wolf-boy, you feel his hands continue to grope and squeeze your rear end. Moaning happily into his mouth, you grind yourself against his muscular body, pressing your [pc.breastSize] breasts firmly against his torso as you close your eyes and enjoy the safe, warm feeling of his embrace.
+			Пока ты страстно целуешь доминантного волка, ты чувствуешь, как его руки продолжают ласкать и сжимать твой зад. Счастливо стоная ему в рот, ты прижимаешься всем телом к его мускулистому торсу, плотно вдавливая свои [pc.breastSize] груди в его грудь, и закрываешь глаза, наслаждаясь безопасным и теплым чувством его объятий.
 		</p>
 		<p>
-			[brax.name] is the first to make the next move, and he suddenly pulls his head back to break off the kiss before leaning down to growl into your ear, [brax.speech(Good bitch, now get down on all fours and present yourself!)]
+			[brax.name] первым делает следующий шаг: он внезапно отстраняется, разрывая поцелуй, а затем наклоняется, чтобы прорычать тебе прямо в ухо: [brax.speech(Хорошая сучка, а теперь вставай на четвереньки и представься мне!)]
 		</p>
 		<p>
-			By now desperate to have sex with the dominant wolf-boy, you obediently do as you're told, and drop down onto your hands and knees as you present yourself to him...
+			К этому моменту ты уже отчаянно жаждешь секса с этим доминантным волком, поэтому послушно выполняешь приказ и опускаешься на четвереньки, подставляясь ему...
 		</p>
 	#ENDIF
 	]]>
@@ -266,31 +266,31 @@
 	
 	<htmlContent tag="INTERIOR_BRAX_GETTING_TEASED_UH_OH_TAKE_CONTROL"><![CDATA[
 	<p>
-		You feel a devious smile spread across your face as [brax.name] mentions it might get rough, and, leaning into him, you growl into his ear, [pc.speech(Yes, [brax.name], I <i>do</i> like it rough!)]
+		Ты чувствуешь, как на твоем лице расплывается лукавая улыбка, когда [brax.name] упоминает, что всё может стать грубым. Прильнув к нему, ты рычишь ему в самое ухо: [pc.speech(Да, [brax.name], мне <i>очень</i> нравится, когда грубо!)]
+		</p>
+	<p>
+		[brax.name] издает удивленный возглас, когда ты наклоняешься и крепко сжимаешь его пах одной рукой. Прижимаясь своими губами к его губам, чтобы он не издал больше ни звука, ты просовываешь язык ему в рот, сжимая его восхитительно крупный член, пока он корчится и тает под твоими прикосновениями.
 	</p>
 	<p>
-		[brax.name] lets out a surprised cry as you reach down and firmly grab his groin with one hand. Pressing your lips against his to prevent him from making any more noise, you thrust your tongue into his mouth, squeezing down on his satisfyingly-large package as he squirms and melts under your touch.
+		Прервав поцелуй, но не выпуская его пах из рук, ты снова рычишь: [pc.speech(Итак, главный вопрос: тебе нравится, когда грубо, <i>ты</i>?)]
 	</p>
 	<p>
-		Breaking off the kiss, but making sure not to let go of his crotch, you growl again, [pc.speech(So, the real question is, do <i>you</i> like it rough?)]
+		[brax.speech(П-погоди, я...)]
 	</p>
 	<p>
-		[brax.speech(W-Wait I-)]
+		[pc.speech(Неправильный ответ!)] — восклицаешь ты, прерывая его ответ и сильно сжимая пульсирующий член [brax.namePos].
 	</p>
 	<p>
-		[pc.speech(Wrong answer!)] you cry, giving [brax.namePos] throbbing cock a hard squeeze as you interrupt his response.
+		[brax.speech(Аах! Да! Да, мне нравится, когда грубо!)]
 	</p>
 	<p>
-		[brax.speech(Aah! Yes! Yes, I like it rough!)]
+		[pc.speech(Ммм, вот так,)] — вздыхаешь ты, ослабляя хватку и проводя пальцами вверх и вниз по быстро твердеющему бугру [brax.namePos]. Прикусив губу, когда ты в полной мере ощущаешь впечатляющую длину его пульсирующего члена, ты дразнишь: [pc.speech(Ну и кто же станет послушной маленькой сучкой для своей альфы-волчицы?)]
 	</p>
 	<p>
-		[pc.speech(Mmm, that's right,)] you sigh, softening your grip before running your fingers up and down over [brax.namePos] rapidly-hardening bulge. Biting your lip as you get a good feel of the impressive length of his throbbing cock, you tease, [pc.speech(So, who's going to be a good little bitch for their alpha she-wolf?)]
+		[brax.speech(Я... это я...)] — стонет [brax.name], признавая поражение.
 	</p>
 	<p>
-		[brax.speech(I-I am...)] [brax.name] groans, admitting defeat.
-	</p>
-	<p>
-		[pc.speech(That's right! You're going to love being my good little beta,)] you squeal, happy now that you've asserted your dominance over the handsome wolf-boy.
+		[pc.speech(Вот именно! Тебе понравится быть моим послушным маленьким бетой,)] — визжишь ты, радуясь тому, что утвердила свое господство над этим красавчиком-волком.
 	</p>
 	]]>
 	</htmlContent>
@@ -299,16 +299,16 @@
 
 	<htmlContent tag="INTERIOR_BRAX_GETTING_TEASED_ESCAPE"><![CDATA[
 	<p>
-		[pc.speech(Oh, would you look at the time! I really need to be going now,)] you exclaim, disentangling yourself from [brax.namePos] clutches. [pc.speech(I'll come back later, and we can have some fun then, ok?)]
+		[pc.speech(Ой, посмотри на время! Мне действительно пора идти,)] — восклицаешь ты, высвобождаясь из объятий [brax.namePos]. [pc.speech(Я вернусь позже, и тогда мы сможем повеселиться, ладно?)]
 	</p>
 	<p>
-		Letting out a disappointed grunt, [brax.name] reluctantly steps back, seemingly placated for now by your promise of a future rendezvous. Narrowing his eyes, he growls, [brax.speech(You'd better be back soon!)]
+		Издавая разочарованный рык, [brax.name] неохотно отступает, вроде бы успокоенный твоим обещанием встретиться снова. Прищурившись, он рычит: [brax.speech(Лучше возвращайся поскорее!)]
 	</p>
 	<p>
-		Making more vague promises, you step back out into the corridor, breathing a sigh of relief as you pull the door firmly shut behind you. Turning to leave by the same route as which you arrived, you quickly set off towards the exit.
+		Давая еще несколько туманных обещаний, ты выходишь обратно в коридор и с облегчением вздыхаешь, плотно закрывая за собой дверь. Развернувшись, чтобы уйти тем же путем, которым пришла, ты быстро направляешься к выходу.
 	</p>
 	<p>
-		As you pass an empty office, you look in and notice that there are two neatly-folded Enforcer's uniforms lying on top of a cabinet. Deciding that you need a little compensation after being forcefully kissed by [brax.name], <b>you take one of the spare uniforms and add it to your inventory on your way out</b>.
+		Проходя мимо пустого кабинета, ты заглядываешь внутрь и замечаешь на шкафу две аккуратно сложенные формы Enforcer. Решив, что тебе нужна небольшая компенсация после насильственного поцелуя от [brax.name], <b>ты берешь одну из запасных форм и добавляешь её в свой инвентарь по пути к выходу</b>.
 	</p>
 	]]>
 	</htmlContent>
@@ -317,104 +317,104 @@
 
 	<htmlContent tag="AFTER_COMBAT_VICTORY"><![CDATA[
 	<p>
-		Brax takes one last half-hearted swing at you, which you easily sidestep. Stumbling past you, he ends up collapsing against his desk, completely and utterly defeated.
+		Brax наносит последний вялый удар, от которого ты легко уклоняешься. Спотыкаясь, он заваливается на свой стол, полностью и окончательно побежденный.
 	</p>
 	<p>
-		Walking over to his submissive form, you can't help but smirk as you hear him surrender, [brax.speech(P-Please... No more...)]
+		Подходя к его покорной фигуре, ты невольно ухмыляешься, слыша его капитуляцию: [brax.speech(П-пожалуйста... Еще нет...)]
 	</p>
 	<p>
-		Grinning down at the broken wolf-boy, you demand to know what's happened to Arthur. Turning to one side, Brax pulls a piece of the paper out from a pile of freshly-signed documents and hands it over to you. Reading over it, you can't help but let out an annoyed sigh. It looks like Arthur is going to be one difficult person to track down, as the paper says:
+		Усмехаясь над сломленным волком, ты требуешь рассказать, что случилось с Arthur. Повернувшись в сторону, Brax вытягивает листок бумаги из стопки свежеподписанных документов и протягивает его тебе. Прочитав содержимое, ты невольно раздраженно вздыхаешь. Похоже, Arthur окажется тем еще крепким орешком, ведь в бумаге сказано:
 	</p>
 	<p>
-	<h6 style='text-align:center;'>Dominion Enforcer Department</h6>
-	<h5 style='text-align:center;'>RECORD OF SLAVE TRANSFER</h5>
+	<h6 style='text-align:center;'>Департамент Enforcer Dominion</h6>
+	<h5 style='text-align:center;'>АКТ О ПЕРЕДАЧЕ РАБА</h5>
 	<p style='text-align:center;'>
-		According to the laws of Dominion, the person of <i>[arthur.fullName]</i>, having being found guilty of <i>treason</i>, has been enslaved. Following standard procedure, ownership has been transferred to a registered slave trader chosen by random lottery.
+		Согласно законам Dominion, особа <i>[arthur.fullName]</i>, признанная виновной в <i>измене</i>, была обращена в рабство. Согласно стандартной процедуре, право собственности перешло к зарегистрированному работорговцу, выбранному путем случайной лотереи.
 		<br/><br/>
-		Officer in charge of transferring slave ownership: <i>[brax.fullName]</i>
+		Офицер, ответственный за передачу прав собственности: <i>[brax.fullName]</i>
 		<br/><br/>
-		Slave trader taking ownership: <i>[scarlett.fullName]</i>
+		Работорговец, принимающий собственность: <i>[scarlett.fullName]</i>
 		<br/><br/>
-		Contact address: <i>Scarlett's shop, Slaver Alley</i>
+		Контактный адрес: <i>Лавка Scarlett, Переулок Рабов</i>
 	</p>
 	<p>
-		As you read it over a second time, you let out another annoyed tutting sound, realising that you're going to have to make your way to Slaver Alley and see if you can find some way to buy Arthur's freedom from this 'Scarlett' person.
+		Перечитывая это во второй раз, ты снова раздраженно цокаешь языком, осознавая, что тебе придется отправиться в Переулок Рабов и попытаться найти способ выкупить Артура у этой некой «Scarlett».
 	</p>
 	<p>
-		A little groan brings your attention back to Brax, and as you look down at him, you see a lustful glimmer in his eyes. Surprisingly, it doesn't seem as though anyone outside the office has heard your fight, and you wonder if you should take advantage of this wolf-boy's weakened state...
+		Тихий стон возвращает твое внимание к Brax, и, взглянув на него, ты замечаешь в его глазах блеск похоти. Удивительно, но, кажется, никто за пределами кабинета не слышал вашей перепалки, и ты задумываешься, не стоит ли воспользоваться ослабленным состоянием этого волкомальчика...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_DOMINATE"><![CDATA[
 	<p>
-		You feel a devious smile spread across your face as you walk over to Brax. Leaning into him, you growl down into his ear, [pc.speech(I hope you like it rough!)]
+		Ты чувствуешь, как на твоем лице расплывается лукавая ухмылка, когда ты подходишь к Brax. Наклонившись к нему, ты рычишь прямо ему в ухо: [pc.speech(Надеюсь, тебе нравится погорячее!)]
 	</p>
 	<p>
-		Brax lets out a surprised cry as you reach down and firmly grab his groin with one hand. Pressing your lips against his to prevent him from making any more noise, you thrust your tongue into his mouth, squeezing down on his satisfyingly large package as he squirms and melts under your touch.
+		Brax издает удивленный вскрик, когда ты протягиваешь руку и крепко сжимаешь его пах. Прижимаясь своими губами к его губам, чтобы он не издал больше ни звука, ты врываешься языком в его рот и сжимаешь его восхитительно крупный член, пока он извивается и тает под твоими прикосновениями.
 	</p>
 	<p>
-		Breaking off the kiss, but making sure not to let go of his crotch, you growl down to him again, [pc.speech(So, you ready to be my little bitch?)]
+		Прервав поцелуй, но не выпуская его пах из рук, ты снова рычишь ему: [pc.speech(Ну что, готов стать моей маленькой сучкой?)]
 	</p>
 	<p>
-		[brax.speech(W-Wait I-)]
+		[brax.speech(П-погоди, я...)]
 	</p>
 	<p>
-		[pc.speech(Wrong answer!)] you cry, giving Brax's throbbing cock a hard squeeze as you interrupt his response.
+		[pc.speech(Неправильный ответ!)] — восклицаешь ты, прерывая его попытку ответить и с силой сжимая пульсирующий член Brax.
 	</p>
 	<p>
-		[brax.speech(Aah! Yes! Yes, I like it rough!)]
+		[brax.speech(Аах! Да! Да, мне нравится, когда грубо!)]
 	</p>
 	<p>
-		[pc.speech(Mmm, that's right,)] you sigh, softening your grip before running your fingers up and down Brax's shorts, biting your lip as you get a good feel of the impressive length of his throbbing cock, [pc.speech(and who's going to be a good little bitch for their new alpha?)]
+		[pc.speech(Ммм, вот так,)] — вздыхаешь ты, ослабляя хватку, а затем проводишь пальцами вверх и вниз по шортам Brax, прикусывая губу и ощущая всю внушительную длину его пульсирующего члена, [pc.speech(и кто же будет послушной маленькой сучкой для своего нового альфы?)]
 	</p>
 	<p>
-		[brax.speech(I-I am...)] Brax groans, admitting defeat.
+		[brax.speech(Я... я...)] — стонет Brax, признавая поражение.
 	</p>
 	<p>
-		[pc.speech(Good little beta!)] you cry, happy now that you've asserted your dominance over the handsome wolf-boy.
+		[pc.speech(Хорошая маленькая бета!)] — восклицаешь ты, радуясь тому, что сумела утвердить свое превосходство над этим красавчиком-волком.
 	</p>
 	<p>
-		With a forceful push, you shove Brax down onto his knees before you. His meek, submissive look couldn't be further from the aggressive snarl that he greeted you with when you entered his office, and you grin down at him as you prepare to make him your bitch.
+		Резким движением ты заставляешь Brax опуститься перед тобой на колени. Его покорный, смиренный вид — полная противоположность тому агрессивному рычанию, с которым он встретил тебя в кабинете; ты довольно ухмыляешься, глядя на него сверху вниз и готовясь сделать его своей сучкой.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SUBMIT"><![CDATA[
 	<p>
-		You reach down and run your fingertips over Brax's crotch, biting your lip and letting out a soft squeal as you feel that he's already hard. Encouraged by your touch, Brax leans forwards, and you happily accept his tongue into your mouth as he pulls you down into a kiss.
+		Ты тянешься вниз и проводишь кончиками пальцев по паху Brax, прикусывая губу и издавая тихий вскрик, когда чувствуешь, что он уже тверд. Подстрекаемый твоими ласками, Brax подается вперед, и ты с удовольствием принимаешь его язык в своем рту, когда он притягивает тебя к себе для поцелуя.
 	</p>
 	<p>
-		Your submissive nature starts to take over, and after gently breaking off the kiss, you whisper down to Brax, [pc.speech(I bet you're pretty angry at being beaten like that, huh?)]
+		Твоя покорная натура начинает брать верх, и, мягко прервав поцелуй, ты шепчешь Brax на ушко: [pc.speech(Бьюсь об заклад, ты ужасно злишься из-за того, что тебя так уделали, а?)]
 	</p>
 	<p>
-		As Brax grunts in agreement, you continue teasing him, [pc.speech(I wonder what you'd like to do to me to get your revenge... Perhaps you'd grab me with those big, strong hands...)]
+		Пока Brax согласно ворчит, ты продолжаешь дразнить его: [pc.speech(Интересно, что бы ты хотел сделать со мной, чтобы отомстить... Может, ты схватишь меня своими большими сильными руками...)]
 	</p>
 	<p>
-		You reach down, and, taking Brax's wolf-like hands in yours, guide them up to your waist. As he starts to get the idea, you feel him roughly grab your [pc.hipSize] hips, causing you to let out a lewd little cry.
+		Ты тянешься вниз и, взяв волчьи лапы Brax в свои, направляешь их к своей талии. Как только до него доходит суть, ты чувствуешь, как он грубо хватает тебя за [pc.hipSize] бёдра, заставляя издать похотливый вскрик.
 	</p>
 	<p>
-		[pc.speech(And then, pull me in against you as you ruthlessly tongue-fuck my mou- ~hrmp!~)]
+		[pc.speech(А потом притяни меня к себе и безжалостно трахай моим ртом своим языком... ~хм!~)]
 	</p>
 	<p>
-		Brax does exactly what you suggest, and eagerly jerks you forwards, slamming his lips against yours as he starts passionately kissing you. He stands up, reaching down to grope and squeeze your [pc.assSize] ass as you grind yourself against him.
+		Brax делает именно то, что ты предлагаешь: он жадно тянет тебя на себя, впиваясь в твои губы страстными поцелуями. Он выпрямляется, опуская руки, чтобы нагло сжимать и тискать твою [pc.assSize] задницу, пока ты прижимаешься к нему всем телом.
 	</p>
 	<p>
-		[pc.speech(Then mayb-)] you try to continue, after breaking of the kiss, but Brax reaches up and presses his hand down firmly over your mouth.
+		[pc.speech(Тогда, может быть...)] — пытаешься ты продолжить, прервав поцелуй, но Brax резко прижимает ладонь к твоему рту.
 	</p>
 	<p>
-		[brax.speech(Then maybe you shut up, get down on all fours, and present yourself like the submissive little slut you clearly are!)]
+		[brax.speech(А может, тебе стоит заткнуться, встать на четвереньки и подставить себя, как настоящей покорной сучке!)]
 	</p>
 	<p>
-		You obediently do as Brax commands and drop down on all fours right there in the middle of his office.
+		Ты послушно выполняешь приказ Brax и опускаешься на четвереньки прямо посреди его кабинета.
 		#IF(pc.getTailType().getRace()==RACE_WOLF_MORPH)
-			 You can't help but shake your ass at the dominant wolf-boy, and you playfully flick your wolf-like tail back and forth, making pitiful little whining noises as you eagerly plead for Brax's thick cock.
+			 Ты не можешь удержаться и начинаешь вилять задницей перед доминантным волком, игриво помахивая своим волчьим хвостом и жалобно поскуливая, с жадностью умоляя Brax о его толстом члене.
 		#ELSE
-			 You can't help but shake your ass at the dominant wolf-boy, and you turn your head and make a show of biting your lip, making pitiful little whining noises as you eagerly plead for Brax's thick cock.
+			 Ты не можешь удержаться и начинаешь вилять задницей перед доминантным волком; ты поворачиваешь голову и демонстративно прикусываешь губу, жалобно поскуливая и с жадностью умоляя Brax о его толстом члене.
 		#ENDIF
 	</p>
 	<p>
-		Brax stands behind you, grinning, and you know that it's only going to be a matter of seconds before he fills you with his alpha cock.
+		Brax стоит позади тебя с ухмылкой, и ты понимаешь, что пройдут считанные секунды, прежде чем он наполнит тебя своим альфа-членом.
 	</p>
 	]]>
 	</htmlContent>
@@ -423,10 +423,10 @@
 
 	<htmlContent tag="AFTER_COMBAT_VICTORY_NO_SEX"><![CDATA[
 	<p>
-		You really don't feel like having sex with the guy who just tried to beat you up. Instead, you push Brax back into his chair, tutting in disapproval as he lets out a desperate whine.
+		Тебе совсем не хочется заниматься сексом с парнем, который только что пытался тебя избить. Вместо этого ты с неодобрительным цоканьем вжимаешь Brax обратно в кресло, пока тот издает отчаянный скулящий звук.
 	</p>
 	<p>
-		Taking one last look around Brax's office, you notice that there are two neatly-folded Enforcer's uniforms lying on top of a cabinet. In order to punish Brax a little more for trying to beat you up, <b>you could take one of the uniforms and add it to your inventory</b>.
+		В последний раз оглядывая кабинет Brax, ты замечаешь две аккуратно сложенные формы Enforcer, лежащие на шкафу. Чтобы еще немного проучить Brax за попытку избить тебя, <b>ты можешь взять одну из форм и добавить её в свой инвентарь</b>.
 	</p>
 	]]>
 	</htmlContent>
@@ -436,52 +436,52 @@
 	<htmlContent tag="AFTER_COMBAT_DEFEAT"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_braxTransformedPlayer))
 		<p>
-			You can't carry on fighting any longer, and you feel your [pc.legs] giving out beneath you as you collapse to the ground, defeated. As Brax lets out a deep laugh, you find yourself looking down at the floor, trying to avoid his powerful gaze.
+			Ты больше не можешь сражаться, и чувствуешь, как твои [pc.legs] подкашиваются, когда ты, побежденная, валишься на пол. Пока Brax заливается глубоким смехом, ты утыкаешься взглядом в пол, стараясь избежать его властного взора.
 		</p>
 		<p>
-			[brax.speech(Hah! Looks like you're still just a submissive little bitch! Didn't you learn anything from last time?!)] he growls, stepping forwards and grabbing you by the neck, [brax.speech(Now let's get you another drink!)]
+			[brax.speech(Ха! Похоже, ты всё такая же покорная сучка! Неужели прошлый раз тебя ничему не научил?!)] — рычит он, делая шаг вперед и хватая тебя за шею, — [brax.speech(А теперь — еще по одной!)]
 		</p>
 		<p>
-			You cry out as Brax roughly drags you across the room to his desk. Fishing about in one of the drawers, he quickly finds what he's looking for, and with a light clink of glass, places a very familiar-looking bottle on the desk in front of you.
+			Ты вскрикиваешь, когда Brax грубо тащит тебя через всю комнату к своему столу. Копаясь в одном из ящиков, он быстро находит то, что искал, и с легким звоном стекла ставит перед тобой очень знакомую бутылочку.
 		</p>
 		<p>
-			[brax.speech(I was so pleased with the last one, I got a few more of these potions made!)] Brax says, pulling out the glass stopper before roughly shoving the bottle's neck down your throat, [brax.speech(That's right, be a good [pc.girl] and drink it all down again...)]
+			[brax.speech(Мне так понравилось прошлое зелье, что я заказал еще несколько таких!)] — говорит Brax, выдергивая стеклянную пробку и грубо засовывая горлышко бутылки тебе в глотку, — [brax.speech(Вот так, будь хорошей [pc.girl] и выпей всё до дна...)]
 		</p>
 		<p>
-			With the bottle's transformative liquid already pouring out into your mouth, you find yourself having to make the decision of whether to spit it out, or do as the dominant wolf-boy says and swallow it all down...
+			Преображающая жидкость из бутылки уже льется тебе в рот, и тебе приходится решать: выплюнуть её или же сделать так, как велит доминантный волк-мальчишка, и проглотить всё до последней капли...
 		</p>
 		
 	#ELSEIF(brax.getFoughtPlayerCount()>1)
 		<p>
-			You can't carry on fighting any longer, and you feel your [pc.legs] giving out beneath you as you collapse to the ground, defeated. As Brax lets out a deep laugh, you find yourself looking down at the floor, trying to avoid his powerful gaze.
+			Ты больше не можешь сражаться, и чувствуешь, как твои [pc.legs] подкашиваются, когда ты, побежденная, валишься на пол. Пока Brax заливается глубоким смехом, ты утыкаешься взглядом в пол, стараясь избежать его властного взора.
 		</p>
 		<p>
-			[brax.speech(Hah! What a submissive little bitch! I was kinda hoping that you'd put up a better fight than that, but, whatever,)] he growls, stepping forwards and grabbing you by the neck, [brax.speech(Now this time, you're gonna drink down my potion like a good little bitch, aren't you?!)]
+			[brax.speech(Ха! Какая же ты покорная сучка! Я-то надеялся, что ты будешь сопротивляться получше, но, впрочем, неважно,)] — рычит он, шагая вперед и хватая тебя за шею, — [brax.speech(А теперь ты выпьешь моё зелье, как послушная маленькая сучка, а?!)]
 		</p>
 		<p>
-			You cry out as Brax roughly drags you across the room to his desk. Fishing about in one of the drawers, he quickly finds one of his transformative potions, and with a light clink of glass, places yet another very delicate-looking bottle on the desk in front of you.
+			Ты вскрикиваешь, когда Brax грубо тащит тебя через всю комнату к своему столу. Порывшись в одном из ящиков, он быстро находит одно из своих преображающих зелий и с легким звоном стекла ставит перед тобой еще одну, на вид очень хрупкую бутылочку.
 		</p>
 		<p>
-			[brax.speech(That ungrateful slut on the front desk still doesn't want to be a wolf-girl...)] Brax says, pulling out the glass stopper before roughly shoving the bottle's neck down your throat, [brax.speech(So this one's all for you! Drink it down bitch!!)]
+			[brax.speech(Та неблагодарная шлюха на ресепшене всё еще не хочет становиться волчицей...)] — говорит Brax, выдергивая стеклянную пробку и грубо засовывая горлышко бутылки тебе в глотку, — [brax.speech(Так что эта — вся твоя! Пей, сучка!!)]
 		</p>
 		<p>
-			With the bottle's transformative liquid already pouring out into your mouth, you find yourself having to make the decision of whether to spit it out, or do as the dominant wolf-boy says and swallow it all down...
+			Преображающая жидкость из бутылки уже льется тебе в рот, и тебе приходится решать: выплюнуть её или же сделать так, как велит доминантный волк-мальчишка, и проглотить всё до последней капли...
 		</p>
 	#ELSE
 		<p>
-			You can't carry on fighting any longer, and you feel your [pc.legs] giving out beneath you as you collapse to the ground, defeated. As Brax lets out a deep laugh, you find yourself looking down at the floor, trying to avoid his powerful gaze.
+			Ты больше не можешь сражаться, и чувствуешь, как твои [pc.legs] подкашиваются, когда ты, побежденная, валишься на пол. Пока Brax заливается глубоким смехом, ты утыкаешься взглядом в пол, стараясь избежать его властного взора.
 		</p>
 		<p>
-			[brax.speech(Hah! What a submissive little bitch! I was kinda hoping that you'd put up a better fight than that, but, whatever,)] he growls, stepping forwards and grabbing you by the neck, [brax.speech(Now let's talk more about that little punishment I mentioned.)]
+			[brax.speech(Ха! Какая послушная сучка! Я-то надеялся, что ты будешь сопротивляться получше, но, впрочем, неважно,)] — рычит он, делая шаг вперед и хватая тебя за шею, — [brax.speech(А теперь давай подробнее обсудим то наказание, о котором я упоминал.)]
 		</p>
 		<p>
-			You cry out as Brax roughly drags you across the room to his desk. Fishing about in one of the drawers, he quickly finds what he's looking for, and, with a light clink of glass, places a very delicate-looking bottle on the desk in front of you.
+			Ты вскрикиваешь, когда Brax грубо тащит тебя через всю комнату к своему столу. Копаясь в одном из ящиков, он быстро находит то, что искал, и с легким звоном стекла ставит перед тобой очень изящный на вид флакон.
 		</p>
 		<p>
-			[brax.speech(I got this made up for that useless bimbo you saw on the front desk, but the ungrateful slut said she didn't want to be a wolf-girl...)] Brax says, pulling out the glass stopper before roughly shoving the bottle's neck down your throat, [brax.speech(That's right, drink it all down... Oh fuck, this is gonna be good!)]
+			[brax.speech(Я заказал это специально для той бесполезной дуры, которую ты видела на ресепшене, но неблагодарная шлюха заявила, что не хочет быть девчонкой-волчицей...)] — говорит Brax, вынимая стеклянную пробку и грубо засовывая горлышко флакона тебе в рот, — [brax.speech(Вот так, пей всё до капли... Ох, блядь, это будет чертовски круто!)]
 		</p>
 		<p>
-			With the bottle's transformative liquid already pouring out into your mouth, you find yourself having to make the decision of whether to spit it out, or do as the dominant wolf-boy says and swallow it all down...
+			Преображающая жидкость из бутылки уже льется тебе в рот, и тебе приходится решать: выплюнуть её или же сделать так, как велит доминантный волк-мальчишка, и проглотить всё до последней капли...
 		</p>
 	#ENDIF
 	]]>
@@ -490,25 +490,25 @@
 	<!-- AFTER_DEFEAT_TRANSFORMATION_REFUSED -->
 
 	<htmlContent tag="AFTER_DEFEAT_TRANSFORMATION_REFUSED"><![CDATA[
-	<p>
-		You have no desire to be transformed into a wolf-girl, so, yanking your head away from Brax, you quickly spit out the fluid that's in your mouth. As the pink liquid splatters onto the floor, the aggressive wolf-boy lets out a furious growl, [brax.speech(You stupid bitch! You'll pay for that!)]
-	</p>
-	<p>
-		Angrily tossing the now-empty bottle to the floor, Brax grabs your [pc.arms] and pulls you into him, [brax.speech(You're fucked now, bitch!)]
-	</p>
+		<p>
+		У тебя нет ни малейшего желания превращаться в волчицу, поэтому, резко отворачивая голову от Brax, ты выплевываешь жидкость изо рта. Когда розовая субстанция разлетается по полу, агрессивный волк издает яростный рык: [brax.speech(Тупая сучка! Ты за это заплатишь!)]
+		</p>
+		<p>
+		Разозлившись, Brax швыряет пустой флакон на пол, хватает тебя за [pc.arms] и притягивает к себе, [brax.speech(Ну всё, тебе пиздец, сучка!)]
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_DEFEAT_TRANSFORMATION_REFUSED_DOMINATED"><![CDATA[
 	<p>
 		#IF(pc.isTaur())
-			Brax grabs hold of your feral [pc.legRace]'s body, and with a forceful shove, pushes you down to the ground. As you crash down onto your knees, the wolf-boy steps around behind you, before delivering a sharp slap to your animalistic rear-end. You make a pitiful little whining noise as his wolf-like paw strikes you, and, looking back over your shoulder, you see that you're perfectly presented for Brax to start fucking you.
+			Brax хватает твою дикую [pc.legRace] за тело и сильным толчком вжимает тебя в землю. Пока ты рушишься на колени, волк-мальчишка обходит тебя сзади и отвешивает звонкую пощечину твоему звериному заду. Ты издаешь жалкий скулящий звук, когда его волчья лапа бьет тебя, и, оглянувшись через плечо, понимаешь, что ты идеально подставлена для того, чтобы Brax начал тебя трахать.
 		#ELSE
-			Brax spins you around, and with a forceful shove, pushes you down to the ground. You land on all-fours, with your ass raised up towards the dominant wolf-boy. Hearing him let out a deep growl, you make a pitiful little whining noise in response as you realise that you're perfectly presented for Brax to start fucking you, doggy-style.
+			Brax разворачивает тебя и сильным толчком швыряет на землю. Ты приземляешься на четвереньки, задрав задницу перед доминантным волком. Услышав его глубокое рычание, ты в ответ издаешь жалобный скулящий звук, осознавая, что ты идеально подставлена для того, чтобы Brax начал трахать тебя в позе собаки.
 		#ENDIF
 	</p>
 	<p>
-		As you feel your conqueror's hands reaching down to grip your hips, you know that it's only going to be a matter of seconds before he fills you with his alpha cock...
+	Когда ты чувствуешь, как руки твоего завоевателя сжимают твои бедра, ты понимаешь: лишь считанные секунды отделяют тебя от того момента, когда он наполнит тебя своим альфа-хреном...
 	</p>
 	]]>
 	</htmlContent>
@@ -517,63 +517,63 @@
 
 	<htmlContent tag="AFTER_DEFEAT_TRANSFORMATION"><![CDATA[
 	<p>
-		The liquid's transformative force is enough to knock to your knees, and you collapse to the floor, panting, as you feel your body start to change. You can't stand the powerful rush of transformations that suddenly wash through your body, and you find yourself collapsing to the floor as you pass out...
+	Преображающая сила жидкости заставляет тебя упасть на колени, и ты валишься на пол, тяжело дыша и чувствуя, как твое тело начинает меняться. Ты не можешь вынести мощного прилива трансформаций, внезапно захлестнувшего тебя, и теряешь сознание, рухнув на пол...
 	</p>
 	<p>
 		...
 	</p>
 	<p>
-		[brax.speech(Hrmph! She never said anything about them losing consciousness! Hey! Wake up!)]
+	[brax.speech(Хмф! Она же ничего не говорила, что они теряют сознание! Эй! Проснись!)]
 	</p>
 	<p>
-		With Brax's worried voice sounding in your ears, you slowly start to come back to your senses. Blinking your eyes open, you see a look of relief wash over the wolf-like face that's hovering over you. Pushing yourself up on your elbows, you find yourself quickly recovering, and as Brax helps you to stand up on unfamiliar, shaking legs, the feeling of exhaustion is quickly replaced with an intense, burning lust.
+		Под обеспокоенный голос Brax, звучащий в твоих ушах, ты медленно начинаешь приходить в себя. Распахнув глаза, ты видишь, как на волчьем лице, склонившемся над тобой, проступает облегчение. Приподнявшись на локтях, ты замечаешь, что силы быстро возвращаются, и пока Brax помогает тебе встать на непривычные, дрожащие ноги, чувство изнеможения стремительно сменяется жгучей, всепоглощающей похотью.
 	</p>
 	<p>
-		Without thinking, you grab Brax's head and pull him into a manic, desperate kiss, grinding yourself against him as he tries to reel back in shock. After a moment, you feel the wolf-boy start to return the kiss, and you let out a happy giggle as you start making out with the very guy who's just forced you to transform...
+		Не раздумывая, ты хватаешь Brax за голову и впиваешься в него в безумном, отчаянном поцелуе, прижимаясь к нему всем телом, пока он в шоке пытается отстраниться. Спустя мгновение ты чувствуешь, как волк-мальчик начинает отвечать на поцелуй, и ты издаешь радостный смешок, понимая, что целуешься с тем самым парнем, который только что заставил тебя трансформироваться...
 	</p>
 	<p>
-		As that thought crosses your mind, your eyes open wide, and you get your lust under control for a moment as you step back, looking down at your body to see what's changed. You hear Brax let out a laugh as he notices that you're trying to find out what he's done to you, and, with a powerful grip, he grabs your shoulders and spins you around to face a mirror hanging on one wall.
+		Как только эта мысль проносится в голове, твои глаза широко распахиваются, и на мгновение тебе удается обуздать похоть; ты отступаешь назад, разглядывая свое тело, чтобы понять, что же изменилось. Ты слышишь смех Brax — он заметил, что ты пытаешься выяснить, что он с тобой сделал. Крепко схватив тебя за плечи, он разворачивает тебя лицом к висящему на стене зеркалу.
 	</p>
 	#IF(properties.getForcedTFPreference() == FURRY_PREF_HUMAN)
 		<p>
-			As you see your new reflection, you let out a little gasp. Brax has transformed you into his perfect vision of a woman, and your [pc.eyes+] open wide in shock as you feel the weight of your [pc.breastSize], [pc.cupSize]-cup tits that are now sitting on your chest. As Brax steps up behind you, you feel his shaggy fur brushing up against your vulnerable, feminine body.
+		Увидев свое новое отражение, ты невольно ахаешь. Brax превратил тебя в свой идеал женщины, и твои [pc.eyes+] широко раскрываются от шока, когда ты ощущаешь тяжесть своей [pc.cupSize]-го размера [pc.breastSize], теперь покоящихся на твоей груди. Когда Brax подходит к тебе со спины, ты чувствуешь, как его густая шерсть щекочет твое уязвимое, женственное тело.
 		</p>
 	#ELSEIF(properties.getForcedTFPreference() == FURRY_PREF_MINIMUM)
 		<p>
-			As you see your new reflection, you let out a little gasp. Brax has transformed you into his perfect vision of a partial wolf-girl, and your yellow, predatory eyes open wide in shock as you feel the weight of your huge, E-cup tits that are now sitting on your chest. Up on top of your head, white, wolf-like fur is covering your new pair of upright ears, while just above your [pc.ass+], a long, shaggy wolf's tail drops down to almost brush the floor.
+			Увидев свое новое отражение, ты невольно ахаешь. Brax превратил тебя в свой идеал — полуволчицу. Твои желтые хищные глаза широко распахиваются от шока, когда ты ощущаешь тяжесть своей огромной груди размера E, покоящейся на твоей груди. На макушке белый волчий мех покрывает твою новую пару стоячих ушей, а чуть выше [pc.ass+] вниз свисает длинный лохматый волчий хвост, почти касающийся пола.
 		</p>
 	#ELSEIF(properties.getForcedTFPreference() == FURRY_PREF_REDUCED)
 		<p>
-			As you see your new reflection, you let out a little gasp. Brax has transformed you into his perfect vision of a lesser wolf-girl, and your yellow, predatory eyes open wide in shock as you feel the weight of your [pc.breastRows] [pc.breastSize], [pc.cupSize]-cup tits. White fur covers your wolf-like arms and legs, and you notice that your face and the skin covering your torso are the only parts of your body that haven't transformed into anthropomorphic wolf-like counterparts. Up on top of your head, the same white, wolf-like fur is covering your new pair of upright ears, while just above your [pc.ass+], a long, shaggy wolf's tail drops down to almost brush the floor.
+			Увидев свое новое отражение, ты невольно ахаешь. Brax превратил тебя в свой идеал — низшую волчицу, и твои желтые хищные глаза широко распахиваются от шока, когда ты ощущаешь вес своих [pc.breastRows] [pc.breastSize], [pc.cupSize]-го размера титов. Белый мех покрывает твои волчьи руки и ноги, и ты замечаешь, что лицо и кожа на торсе — единственные части твоего тела, которые не превратились в антропоморфные волчьи аналоги. На макушке белый волчий мех покрывает твою новую пару стоячих ушей, а чуть выше [pc.ass+] вниз свисает длинный лохматый волчий хвост, почти касающийся пола.
 		</p>
 	#ELSE
 		<p>
-			As you see your new reflection, you let out a little gasp. Brax has transformed you into his perfect vision of a greater wolf-girl, and your yellow, predatory eyes open wide in shock as you feel the weight of your [pc.breastRows] [pc.breastSize], [pc.cupSize]-cup tits. Your hands, feet and face have all transformed into anthropomorphic wolf-like counterparts, and are covered in the same bright white fur as your new upright, wolf-like ears and long, shaggy tail.
+		Глядя на свое новое отражение, ты невольно ахаешь. Brax превратил тебя в свой идеал — величественную волчицу; твои желтые хищные глаза широко распахиваются от шока, когда ты ощущаешь тяжесть своих [pc.breastRows] [pc.breastSize], [pc.cupSize]-го размера сисек. Твои руки, ноги и лицо превратились в антропоморфные волчьи лапы и мордочку, покрытые тем же ярко-белым мехом, что и твои новые стоячие волчьи ушки и длинный лохматый хвост.
 		</p>
 	#ENDIF
 	<p>
-		You see Brax's hand reaching around in the mirror, and with a pathetic little yelp, you quiver as he roughly grabs your crotch, [brax.speech(This little cunt belongs to me, understood?)]
-	</p>
+		В зеркале ты видишь руку Brax: издав жалкий скулеж, ты вздрагиваешь, когда он грубо хватает тебя за промежность, [brax.speech(Эта маленькая киска принадлежит мне, поняла?)]
+		</p>
 	<p>
-		The final effect of the transformation makes itself known, and as Brax roughly gropes your body, something unlocks in your mind, and you find yourself wanting nothing more than to be dominated by your new master. You lean back into the masculine wolf-morph, feeling his hot breath on your neck as you let out a soft moan. Reaching down, you eagerly guide his paw-like hands over your new breasts, letting out little squeals of joy as he sinks his greedy fingers into your pillowy mounds of flesh.
-	</p>
+		Наступает финальный эффект трансформации, и пока Brax бесцеремонно лапает твое тело, в твоем сознании что-то щелкает: ты понимаешь, что не хочешь ничего, кроме как подчиняться своему новому господину. Ты откидываешься назад, на мускулистого волка-морфа, чувствуя его горячее дыхание на своей шее и издавая тихий стон. Потянувшись вниз, ты жадно направляешь его лапы к своей новой груди, заливаясь восторженными вскриками, когда он впивается своими алчными пальцами в твои мягкие мясные холмики.
+		</p>
 	<p>
-		You see Brax's reflection smiling greedily back at you, and he issues you a command as he steps back and starts to undress, [brax.speech(Get down and present yourself like the bitch you are.)]
-	</p>
+		В зеркале ты видишь жадную ухмылку Brax. Он делает шаг назад и начинает раздеваться, отдавая тебе приказ: [brax.speech(Встань на колени и покажи себя, как подобает сучке.)]
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_DEFEAT_TRANSFORMATION_OBEY"><![CDATA[
 	<p>
-		You obediently do as Brax commands and drop down on all fours right there in the middle of his office.
+		Ты послушно выполняешь приказ Brax и опускаешься на четвереньки прямо посреди его кабинета.
 		#IF(pc.getTailType().getRace()==RACE_WOLF_MORPH)
-			 You can't help but shake your ass at the dominant wolf-boy, and you playfully flick your wolf-like tail back and forth, making pitiful little whining noises as you eagerly plead for Brax's thick cock.
+			 Ты не можешь удержаться и начинаешь вилять задницей перед доминантным волком, игриво помахивая своим волчьим хвостом и жалобно поскуливая, с жадностью умоляя Brax о его толстом члене.
 		#ELSE
-			 You can't help but shake your ass at the dominant wolf-boy, and you turn your head and make a show of biting your lip, making pitiful little whining noises as you eagerly plead for Brax's thick cock.
+			 Ты не можешь удержаться и начинаешь вилять задницей перед доминантным волком; ты поворачиваешь голову и демонстративно прикусываешь губу, жалобно поскуливая и с жадностью умоляя Brax о его толстом члене.
 		#ENDIF
 	</p>
 	<p>
-		Brax stands behind you, grinning, and you know that it's only going to be a matter of seconds before he fills you with his alpha cock.
+		Brax стоит позади тебя с ухмылкой, и ты понимаешь, что пройдут считанные секунды, прежде чем он наполнит тебя своим альфа-членом.
 	</p>
 	]]>
 	</htmlContent>
@@ -582,27 +582,27 @@
 
 	<htmlContent tag="AFTER_SUBMISSIVE_SEX"><![CDATA[
 	<p>
-		[brax.speech(You're a pretty good fuck, slut!)] Brax grunts, releasing his grip on your hips as you collapse to the floor, totally worn out from his dominant treatment of you.
-	</p>
+		[brax.speech(А ты неплоха в постели, шлюшка!)] — хрипит Brax, выпуская твои бедра, когда ты валишься на пол, совершенно измотанная его властным напором.
+		</p>
 	<p>
-		With a satisfied sigh, you feel your eyelids closing, and the last thing you hear before passing out is Brax laughing down at the mess he's made of you.
+	С удовлетворенным вздохом ты чувствуешь, как веки тяжелеют, и последнее, что ты слышишь перед тем, как провалиться в забытье — это смех Brax, смотрящего сверху вниз на то, во что он тебя превратил.
 	</p>
 	<p>
 		...
 	</p>
 	<p>
-		With a soft moan, you slowly open your eyes, the memory of Brax's rough fucking filling your groggy mind. After a few moments, your head starts to clear, and you see that you've been unceremoniously dumped out the back of the Enforcer HQ.
+	С тихим стоном ты медленно открываешь глаза, а в твоей затуманенной голове всплывают воспоминания о грубом трахе Brax. Спустя мгновение голова проясняется, и ты понимаешь, что тебя бесцеремонно вышвырнули из заднего выхода штаба Enforcer.
 	</p>
 	#IF(pc.isQuestProgressGreaterThan(QUEST_LINE_MAIN, QUEST_MAIN_1_C_WOLFS_DEN))
 		<p>
-			Although you've been thrown out without so much as a goodbye, you feel a big smile spreading across your face. You found out where Arthur is, and what's more, you got to have a good fuck with that hunk of a wolf-boy.
+		Хотя тебя выставили вон даже без прощального слова, ты чувствуешь, как на лице расплывается широкая улыбка. Ты узнала, где Arthur, а что еще важнее — тебе удалось знатно трахнуться с этим волком-качком.
 		</p>
 		<p>
-			As you walk out from behind the Enforcer HQ, you see that an open crate, full of spare uniforms, is sitting outside a side door. The crate is too big to fit through the doorway, and the person in charge of bringing them inside isn't anywhere to be seen. Deciding that you want a little memento of your time with Brax, <b>you pick a spare uniform to add it to your inventory</b> as you continue on your way.
+		Выходя из-за здания штаба Enforcer, ты замечаешь у боковой двери открытый ящик, полный запасной формы. Ящик слишком велик, чтобы пролезть в дверной проем, а человека, который должен был занести его внутрь, нигде не видно. Решив, что тебе пригодится небольшая память о времени с Brax, <b>ты берешь запасную форму, добавляя её в свой инвентарь</b>, и продолжаешь свой путь.
 		</p>
 	#ELSE
 		<p>
-			Although you've been fucked and thrown out without so much as a goodbye, you consider that things could always be worse. Setting off, you try to look on the bright side. After all, at least you weren't enslaved or anything crazy like that...
+		Пусть тебя оттрахали и вышвырнули без единого слова прощания, ты рассуждаешь, что всё могло быть и хуже. Отправляясь в путь, ты стараешься искать во всем плюсы. В конце концов, тебя хотя бы не поработили или не случилось чего-то совсем безумного...
 		</p>
 	#ENDIF
 	]]>
@@ -612,11 +612,10 @@
 
 	<htmlContent tag="AFTER_DOMINANT_SEX"><![CDATA[
 	<p>
-		Brax is completely exhausted, and collapses harmlessly to the floor as he passes out. Letting out a triumphant laugh, you look down at your latest sexual conquest, smirking in satisfaction as you see the happy smile covering his unconscious face.
-	</p>
-	<p>
-		Taking one last look around Brax's office, you notice that there's a neatly-folded spare uniform lying on top of a cabinet. Thinking of how you could have a little memento of your time with Brax, <b>you think to take a spare uniform</b> before heading back outside.
-	</p>
+	Brax совершенно измотан и, теряя сознание, без сил валится на пол. Издав торжествующий смешок, ты смотришь на свое очередное сексуальное завоевание, довольно ухмыляясь при виде счастливой улыбки на его бессознательном лице.
+	</p><p>
+В последний раз оглядев кабинет Brax, ты замечаешь на шкафу аккуратно сложенную запасную форму. Решив, что это станет отличным сувениром на память о времени, проведённом с Brax, <b>ты решаешь прихватить запасную форму</b>, прежде чем вернуться наружу.
+</p>
 	]]>
 	</htmlContent>
 	

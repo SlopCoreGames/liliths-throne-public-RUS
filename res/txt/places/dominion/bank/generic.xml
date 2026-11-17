@@ -3,51 +3,51 @@
 
 	<htmlContent tag="EXTERIOR"><![CDATA[
 	<p>
-		Positioned at the end of a short road, which branches off from Dominion's main boulevard, stands a huge building. Constructed in a classical architectural style, with a row of massive stone columns holding up its grand façade, this building is identified by the words 'Bank of Dominion', which have been carved into its stone frieze.
+		В конце короткой дороги, ответвляющейся от главного бульвара Dominion, возвышается огромное здание. Построенное в классическом архитектурном стиле, с рядом массивных каменных колонн, поддерживающих величественный фасад, оно узнается по высеченным на каменном фризе словам «Банк Dominion».
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			 Each strike of arcane lightning casts the white stone of this imposing building into an extraordinary shade of pink. Due to the expected presence of demonic Enforcers in this area, you're at no risk of being assaulted during this storm.
+			Каждый удар арканной молнии окрашивает белый камень этого внушительного здания в необычный розовый оттенок. Благодаря ожидаемому присутствию демонических Enforcer в этом районе, во время шторма тебе не грозит нападение.
 		#ELSEIF(game.isDayTime())
-			 The white stone of this imposing building almost glows in the light of day, making its sheer size seem even more impressive.
+			Белый камень этого внушительного здания почти светится при дневном свете, отчего его исполинские размеры кажутся еще более впечатляющими.
 		#ELSE
-			 The white stone of this imposing building is illuminated by a large number of arcane lights, making its sheer size seem even more impressive in the dark.
+			Белый камень этого внушительного здания освещен множеством арканных огней, благодаря чему в темноте его колоссальные масштабы кажутся еще более грандиозными.
 		#ENDIF
 	</p>
 	<p>
-		As you approach this building, you see brass plaques have been fitted to the wall on either side of the huge wooden doors which serve as the bank's main entrance. Reading the inscriptions upon these plaques, you discover that as this is the only legal bank within Dominion, it operates twenty-four hours a day, seven days of the week. As such it is currently [style.colourGood(open)], and so you could head inside if you wanted to...
+		Когда ты приближаешься к зданию, ты замечаешь на стене по обе стороны от огромных деревянных дверей, служащих главным входом в банк, латунные таблички. Читая надписи на них, ты узнаешь, что, поскольку это единственный легальный банк в Dominion, он работает двадцать четыре часа в сутки, семь дней в неделю. Таким образом, сейчас он [style.colourGood(открыт)], и ты можешь войти внутрь, если пожелаешь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTER"><![CDATA[
 	<p>
-		You decide to enter the bank, and so after [pc.walking] up to the large wooden doors which serve as the main entrance, you push one open and [pc.step] inside...
+		Ты решаешь войти в банк, и после [pc.walking] к огромным деревянным дверям главного входа, ты толкаешь одну из них и [pc.step] внутрь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FOYER"><![CDATA[
 	<p>
-		The bank's cavernous main foyer is every bit as large and impressive as its entrance hall. A vaulted stone ceiling towers above your head, while underfoot polished marble stretches out before you. Arcane chandeliers hang down from above, flooding the interior with cool, bright light.
+		Главный вестибюль банка такой же огромный и впечатляющий, как и входной зал. Над головой возвышается сводчатый каменный потолок, а под ногами расстилается полированный мрамор. Сверху свисают люстры Arcane, заливая помещение прохладным ярким светом.
 	</p>
 	<p>
-		Looking around, you see clients of all races queuing up before counters, walking about, or waiting upon the provided seating. There are also a few of the bank's clerks walking to and fro here, and you notice that every one of them without exception is a demon. There are also a couple of security guards keeping watch over this area, and you can't help but notice that they're not only equipped with the expected batons and tasers, but are also carrying pepperball rifles.
+		Оглядевшись, ты видишь клиентов самых разных рас: кто-то стоит в очереди у стоек, кто-то расхаживает по залу, а кто-то ждет на посадочных местах. Здесь также снуют банковские клерки, и ты замечаешь, что без исключения каждый из них — демон. Несколько охранников патрулируют территорию, и ты невольно обращаешь внимание на то, что они вооружены не только привычными дубинками и электрошокерами, но и винтовками, стреляющими перцовыми шариками.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="EXIT"><![CDATA[
 	<p>
-		The entrance hall to the bank is every bit as large and impressive as you'd expect from the building's outward appearance. A vaulted stone ceiling towers above your head, while underfoot polished marble stretches out before you. Arcane chandeliers hang down from above, flooding the interior with cool, bright light. 
+		Входной зал банка такой же огромный и впечатляющий, каким он и кажется снаружи. Над головой возвышается сводчатый каменный потолок, а под ногами расстилается полированный мрамор. Сверху свисают люстры Arcane, заливая помещение прохладным ярким светом.
 	</p>
 	<p>
-		Before you lies the cavernous space of the bank's main foyer, in which clients of all races can be seen queuing up before counters, walking about, or waiting upon the provided seating. The large, wooden doors behind you will take you back out into Dominion, should you wish to leave...
+		Перед тобой раскинулся просторный главный вестибюль банка, где клиенты самых разных рас стоят в очередях у стоек, расхаживают или ждут на удобных местах. Массивные деревянные двери позади тебя выведут тебя обратно в Dominion, если ты решишь уйти...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT_LEAVE"><![CDATA[
 	<p>
-		Having concluded your business with the bank, you push open one of the large wooden doors and [pc.step] back out into Dominion...
+		Завершив свои дела в банке, ты толкаешь одну из больших деревянных дверей и [pc.step] возвращаешься в Dominion...
 	</p>
 	]]>
 	</htmlContent>
@@ -56,13 +56,13 @@
 	
 	<htmlContent tag="COUNTER"><![CDATA[
 	<p>
-		Approaching the far side of the bank's cavernous foyer, you find yourself standing near a long line of counters, each of which is staffed by a demonic bank clerk. As with the main foyer, heavily armed security guards are never too far away, and are keeping a close watch over everyone in the area.
+		Подойдя к дальней стороне просторного фойе банка, ты оказываешься перед длинной очередью из банковских стоек, за каждой из которых сидит демон-клерк. Как и в главном фойе, поблизости всегда находятся тяжело вооруженные охранники, которые пристально следят за каждым в этом зале.
 	</p>
 	<p>
 		#IF(pc.hasItemType(ITEM_innoxia_quest_bank_card))
-			Having already obtained a platinum account, there's little for you to discuss with the clerks behind the counters. Instead, if you have business here, all you need to do is head on over to the VIP deposit boxes and manage your funds and stored items directly there.
+			Поскольку у тебя уже есть платиновый счет, обсуждать с клерками особо нечего. Вместо этого, если у тебя есть здесь дела, тебе нужно просто направиться к VIP-сейфам, чтобы управлять своими средствами и хранящимися там вещами напрямую.
 		#ELSE
-			As you have yet to open an account with this bank, you suppose that the only thing to do here would be to approach one of the counters and inquire as to the procedure for becoming a client.
+			Так как ты еще не открыл счет в этом банке, ты полагаешь, что единственное, что можно сделать — это подойти к одной из стоек и узнать о процедуре регистрации клиента.
 		#ENDIF
 	</p>
 	]]>
@@ -70,51 +70,51 @@
 	
 	<htmlContent tag="COUNTER_OPEN_ACCOUNT"><![CDATA[
 	<p>
-		Deciding that you'd like to open an account with this bank, you [pc.step] up to one of the available counters and inform the clerk of your decision.
+		Решив открыть счет в этом банке, ты [pc.step] к одной из свободных стоек и сообщаешь клерку о своем намерении.
 	</p>
 	<p>
-		[style.speechFeminineHeavy(Oh, a new customer? Excellent!)] the succubus happily declares. Producing a form from under the counter, she places it down before you and explains the process, [style.speechFeminineHeavy(If you could start by giving me your name and address, we'll then check your criminal record and employment status. Most of our clients are given a bronze account, but if you have a particularly important profession, then you might qualify for silver.)]
+		[style.speechFeminineHeavy(О, новый клиент? Великолепно!)] — радостно объявляет суккуб. Достав из-под стойки бланк, она кладет его перед тобой и объясняет процесс: [style.speechFeminineHeavy(Для начала назовите ваше имя и адрес, а затем мы проверим вашу судимость и статус занятости. Большинству наших клиентов открывают бронзовый счет, но если у вас особенно важная профессия, вы можете претендовать на серебряный.)]
 	</p>
 	<p>
-		After giving the clerk your name, you proceed to give her the address of Lilaya's mansion as your own. As she writes this down on the form, you see a concerned look flash over the succubus's face. Turning her head, she raises her arm and makes a beckoning gesture. As you turn to see who it is she's calling over, you see a pair of the heavily armed security guards striding towards you.
+		Назвав клерку своё имя, ты указываешь адрес особняка Lilaya в качестве своего собственного. Пока она вписывает это в бланк, ты замечаешь, как на лице суккуба промелькнуло беспокойство. Повернув голову, она поднимает руку и делает манящий жест. Когда ты оборачиваешься, чтобы посмотреть, кого она зовет, ты видишь пару тяжело вооруженных охранников, решительно шагающих к тебе.
 	</p>
 	<p>
-		[style.speechFeminineHeavy(As I'm sure you're aware, it is an offence to give false information,)] the clerk states in an icy tone. As the security guards come to a halt on either side of you, she continues, [style.speechFeminineHeavy(I am of course not suggesting that you have committed such an offence, but the fact that you've provided your address as that of a recognised daughter of Lyssieth does raise a red flag. I'm going to have to ask you to remain here until I can verify whether or not the information you've provided is accurate.)]
+		[style.speechFeminineHeavy(Как ты, должно быть, знаешь, предоставление ложных сведений считается правонарушением,)] — ледяным тоном произносит клерк. Когда охранники замирают по обе стороны от тебя, она продолжает: [style.speechFeminineHeavy(Разумеется, я не утверждаю, что ты уже совершила проступок, но тот факт, что ты указала своим адресом резиденцию признанной дочери Lyssieth, вызывает подозрения. Тебе придется остаться здесь, пока я не удостоверюсь, насколько верна предоставленная тобой информация.)]
 	</p>
 	<p>
-		With that, the clerk motions towards a bench that's situated a short distance to your right. Even if you could beat the two security guards who are now standing beside you, there are at least a dozen more scattered throughout the bank, and who knows how many more could potentially arrive as backup. It seems like your only option is to do as the clerk asks and wait here while she verifies your address...
+		С этими словами клерк указывает на скамью, расположенную чуть правее тебя. Даже если бы ты смогла одолеть двух охранников, стоящих рядом, по всему банку разбросано еще как минимум дюжина бойцов, и кто знает, сколько подкрепления может прибыть в любой момент. Похоже, твой единственный вариант — поступить так, как просит клерк, и ждать здесь, пока она проверяет твой адрес...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COUNTER_OPEN_ACCOUNT_WAIT"><![CDATA[
 	<p>
-		Escorted over to the nearby bench by the two security guards, you sit down and watch as the clerk hurries over to the bank's entrance and leaves the building. Knowing that Lilaya's mansion is roughly a fifteen minute walk away, you relax and settle in for the wait.
+		Двое охранников провожают тебя к ближайшей скамье. Ты садишься и наблюдаешь, как к входу в банк спешит клерк, а затем и вовсе выходит из здания. Зная, что особняк Лилай находится примерно в пятнадцати минутах ходьбы, ты расслабляешься и готовишься к ожиданию.
 	</p>
 	<p>
-		Just over thirty minutes later, the clerk reappears. Allowing the entrance's large wooden door to swing shut behind her, she rushes through the foyer and comes to a sliding halt before you. Bowing her head, she profusely apologises, [style.speechFeminineHeavy(On behalf of the Bank of Dominion, please let me offer you our most sincere apologies. I had the pleasure of meeting with your aunt, who confirmed everything. Please understand that I was only following procedure, and never meant to call your word into question. Please be assured that we'll be granting you our highest level of account, as befits your station as a direct relative of an elder lilin.)]
+		Спустя чуть больше тридцати минут клерк появляется снова. Позволив тяжелой деревянной двери входа захлопнуться за собой, она стремительно пересекает вестибюль и замирает перед тобой. Склонив голову, она причитает, принося бесконечные извинения: [style.speechFeminineHeavy(От имени Банка Dominion примите наши самые искренние извинения. Мне посчастливилось встретиться с вашей тетей, и она подтвердила всё необходимое. Пожалуйста, поймите, что я лишь следовала процедуре и вовсе не хотела ставить ваше слово под сомнение. Будьте уверены, что мы предоставим вам высший уровень обслуживания, подобающий вашему статусу прямого родственника старейшей лилин.)]
 	</p>
 	<p>
-		Upon hearing this, you realise that you have nothing further to gain by demanding more of this clerk, and so after saying that you accept the bank's apology, you allow her to lead you back to the counter. As the two security guards wander off to return to their stations, the clerk simply strikes a line through almost every remaining section of the form, explaining as she goes, [style.speechFeminineHeavy(As I just mentioned, due to your lineage you've qualified for a platinum account. You'll have access to the VIP deposit boxes, and so won't need to go through the hassle of dealing with a clerk any time you want to deposit or withdraw your money. You'll also get our highest annual percentage rate of interest at twelve percent, which will be placed into your deposit box every day at midnight.)]
+		Услышав это, ты понимаешь, что требовать от этой клерка чего-то еще нет никакого смысла. Приняв извинения банка, ты позволяешь ей проводить тебя обратно к стойке. Пока двое охранников расходятся по своим постам, клерк просто зачеркивает почти все оставшиеся пункты в бланке, попутно объясняя: [style.speechFeminineHeavy(Как я уже упомянула, благодаря вашему происхождению вы прошли по критериям для платинового счета. Вам будут доступны VIP-сейфы, так что вам не придется возиться с клерком каждый раз, когда вы захотите положить деньги на счет или снять их. Также вы будете получать нашу самую высокую годовую процентную ставку — двенадцать процентов, которые будут зачисляться в ваш сейф ежедневно в полночь.)]
 	</p>
 	<p>
-		Unlocking a safe beneath the counter, the clerk produces a small, plastic card. After writing the name of Lilaya's mother, Lyssieth, onto a dotted line which asks for the bearer's lilin lineage, she strikes a line through the expiry date, explaining, [style.speechFeminineHeavy(Platinum cards no longer expire; we stopped requiring renewals after several of Lunette's daughters registered a rather forceful complaint...)]
+		Открыв сейф под стойкой, клерк достает небольшую пластиковую карту. Вписав имя матери Lilaya, Lyssieth, на пунктирную линию, где нужно указать лилинское происхождение владельца, она зачеркивает дату истечения срока действия, поясняя: [style.speechFeminineHeavy(Платиновые карты больше не имеют срока годности; мы перестали требовать их продления после того, как несколько дочерей Lunette выразили довольно решительную жалобу...)]
 	</p>
 	<p>
-		Producing a glowing purple stamp from out of the unlocked safe, the clerk asks you to place its pentagram mark onto the card three times. After doing so, you return the stamp to the clerk as she explains, [style.speechFeminineHeavy(Show this card to the clerk at the door to the VIP area, and you'll be given access to the deposit boxes. Any items which you place into the box will be automatically teleported to any of our other branches when your card's presence is detected there. We have branches in Elis, Thinis, Itza'aak, and Lyonesse. Your flames, as well as any interest earned, can also be deposited or retrieved from any branch. Thank you for opening an account with us today, #IF(pc.hasSurname())[pc.miss] [pc.surname]#ELSE[pc.sir]#ENDIF.)]
+		Достав из открытого сейфа светящийся фиолетовый штамп, клерк просит тебя трижды приложить его печать в форме пентаграммы к карте. Сделав это, ты возвращаешь штамп клерку, пока она объясняет: [style.speechFeminineHeavy(Покажите эту карту клерку у входа в VIP-зону, и вам предоставят доступ к депозитным ячейкам. Любые предметы, которые вы положите в ячейку, будут автоматически телепортированы в любое из наших других отделений, как только там обнаружат вашу карту. Наши филиалы расположены в Элисе, Тинисе, Ицааке и Лионессе. Ваши огни, а также начисленные проценты, также можно вносить или снимать в любом отделении. Благодарим вас за открытие счета у нас сегодня, #IF(pc.hasSurname())[pc.miss] [pc.surname]#ELSE[pc.sir]#ENDIF.)]
 	</p>
 	<p>
-		With that, the clerk hands you your card, apologising once again for making you wait as she does so.
+		С этими словами клерк протягивает тебе карту, еще раз извиняясь за ожидание.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COUNTER_OPEN_ACCOUNT_END"><![CDATA[
 	<p>
-		Thanking the clerk, you take the platinum account card and [pc.step] away from the counter. Looking down at the small, rectangular piece of plastic, you see that the three pentagram-shaped stamps which you placed upon it have started to glow. This behaviour is explained by the small print on the front of the card, which states that the three arcane stamps glow when the card is in possession of its rightful owner. A warning beneath this text instructs citizens to immediately notify the nearest security guard if the stamps are not glowing.
+		Поблагодарив клерка, ты берешь платиновую карту счета и [pc.step] отходишь от стойки. Взглянув на небольшой прямоугольный кусок пластика, ты замечаешь, что три оттиска в форме пентаграмм, которые ты поставил, начали светиться. Это объясняется мелким шрифтом на лицевой стороне карты: три аркана-штампа светятся, когда карта находится в руках законного владельца. Предупреждение под текстом велит гражданам немедленно уведомлять ближайшего охранника, если штампы не светятся.
 	</p>
 	<p>
-		Carefully putting the card away, you look around the cavernous foyer and wonder where to go to next. A door on one side of the vast room is signposted as leading to the VIP deposit boxes, and as your card now grants you access to that area, perhaps you should head over there to find out how it all works...
+	Аккуратно убрав карту, ты оглядываешь просторный вестибюль, раздумывая, куда отправиться дальше. На одной из стен огромного зала висит указатель, ведущий к VIP-сейфам. Поскольку твоя карта теперь дает тебе доступ в эту зону, возможно, стоит направиться туда, чтобы разузнать, как всё устроено...
 	</p>
 	]]>
 	</htmlContent>
@@ -124,26 +124,26 @@
 	<htmlContent tag="VIP_DOOR"><![CDATA[
 	#IF(pc.getLastCell().getPlace().getPlaceType()==PLACE_TYPE_innoxia_dominion_bank_foyer)
 		<p>
-			The door before you is quite clearly signposted as leading to 'VIP deposit boxes'. A succubi clerk is standing beside this door, and as she sees you approach she smiles and asks, [style.speechFeminineHeavy(Please may I see your platinum account card, [pc.miss]?)]
+		На двери перед тобой отчетливо видна табличка: «VIP-сейфы». Возле входа стоит сотрудница — суккуб. Заметив твое приближение, она улыбается и спрашивает: [style.speechFeminineHeavy(Позвольте взглянуть на вашу платиновую карту, [pc.miss]?)]
 		</p>
 		#IF(pc.hasItemType(ITEM_innoxia_quest_bank_card))
 			<p>
-				Producing your platinum account card, you show it to the clerk, who upon seeing the glowing stamps on its front, immediately stands aside and gestures towards the door, saying, [style.speechFeminineHeavy(The presence of your card will automatically unlock the door. If you require any assistance, please don't hesitate to contact one of my colleagues who you'll find nearby.)]
+			Достав платиновую карту, ты показываешь её служанке. Увидев на лицевой стороне сияющие печати, она тут же отступает в сторону и жестом указывает на дверь, произнося: [style.speechFeminineHeavy(Ваша карта разблокирует дверь автоматически. Если вам понадобится помощь, не стесняйтесь обращаться к моим коллегам, которые находятся неподалеку.)]
 			</p>
 			<p>
-				Thanking the clerk, you prepare to pass through the door and enter the VIP area beyond...
+			Поблагодарив служанку, ты готовишься войти в дверь и переступить порог VIP-зоны...
 			</p>
 		#ELSE
 			<p>
-				As you tell the succubus that you don't have a 'platinum account card', she frowns and states in a firm voice, [style.speechFeminineHeavy(I'm sorry, [pc.miss], but only platinum account holders are granted access to the deposit boxes. Please step back.)]
+			Когда ты говоришь суккубу, что у тебя нет «платиновой карты», она хмурится и твердым голосом заявляет: [style.speechFeminineHeavy(Простите, [pc.miss], но доступ к сейфам имеют только владельцы платиновых счетов. Пожалуйста, отойдите назад.)]
 			</p>
 			<p>
-				There doesn't seem to be any chance of persuading this succubus to let you through, and as there are dozens of security guards nearby, using force is completely out of the question. It looks like you have no choice but to [pc.step] back into the foyer...
+			Похоже, убедить эту суккубку пропустить тебя не удастся, а поскольку поблизости дежурят десятки охранников, применять силу совершенно бессмысленно. Похоже, у тебя нет иного выбора, кроме как [pc.step] назад в фойе...
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Having concluded your business with your deposit box, you pass through the door to head back out into the foyer. As you pass her, the demonic clerk bows a little and says, [style.speechFeminineHeavy(Thank you for visiting us today, [pc.miss].)]
+		Закончив дела со своим сейфом, ты проходишь через дверь, чтобы вернуться в фойе. Когда ты проходишь мимо неё, демоническая клерк слегка кланяется и говорит: [style.speechFeminineHeavy(Благодарим вас за визит, [pc.miss].)]
 		</p>
 	#ENDIF
 	]]>
@@ -151,36 +151,34 @@
 	
 	<htmlContent tag="VIP_DOOR_STEP_BACK"><![CDATA[
 	<p>
-		With little option other that to do as the clerk says, you [pc.step] back and return to the bank's foyer...
+		Почти не имея иного выбора, кроме как поступить по совету клерка, ты [pc.step] назад и возвращаешься в фойе банка...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="DEPOSIT_BOX"><![CDATA[
 	<p>
-		Although large, the circular room you find yourself standing in is a lot smaller than the bank's foyer. With polished marble flooring underfoot, and sculptures and paintings lining the walls, it's no less grand that the other areas of the bank. As you [pc.walk] forwards, you see that a pair of clerks, both succubi, are standing behind a long marble desk in the middle of the room.
+		Хотя эта круглая комната и просторна, она куда меньше банковского фойе. Благодаря полированному мраморному полу, а также скульптурам и картинам вдоль стен, она ничуть не уступает в величии остальным залам банка. Когда ты [pc.walk] вперед, ты видишь пару клерков — обе суккубы стоят за длинным мраморным столом посреди комнаты.
 	</p>
 	<p>
-		[style.speechFeminineHeavy(Please let us know if you require any assistance, [pc.sir],)] they say in unison as you approach. Clearly having been made aware of who you are via some kind of detection spell placed upon your platinum account card, they direct you towards one of several alcoves set into the room's curving wall.
-	</p>
-	<p>
-		[pc.Stepping] into the alcove, you pull shut a curtain behind you, before turning your attention to the large deposit boxes lining the wall before you. Detecting your card, one of them swings open for you, granting you access to your private stash of items and flames. An arcane enchantment projects a series of purple letters into the air above your deposit box, which lets you know that you have
-		#IF(game.getDialogueFlags().getSavedLong('bank_interest')<=0)
+		[style.speechFeminineHeavy(Пожалуйста, дайте нам знать, если вам понадобится помощь, [pc.sir],)] — хором произносят они, когда ты приближаешься. Очевидно, узнав, кто ты, благодаря какому-то обнаруживающему заклинанию на твоей платиновой карте, они направляют тебя к одной из нескольких ниш, встроенных в изогнутую стену комнаты.
+	</p><p>
+[pc.Stepping] заходя в нишу, ты задергиваешь за собой занавеску и переводишь взгляд на ряды больших депозитных ящиков, выстроенных вдоль стены перед тобой. Один из них, распознав твою карту, распахивается, открывая доступ к твоему личному тайнику с предметами и @@H*@@. Аркана-чары проецируют в воздух над твоим ящиком ряд фиолетовых букв, сообщая тебе, что у тебя есть		#IF(game.getDialogueFlags().getSavedLong('bank_interest')<=0)
 			 [style.moneyFormatUncoloured(0, b)]
 		#ELSE
 			 [style.moneyFormat([#game.getDialogueFlags().getSavedLong('bank_interest')], b)]
 		#ENDIF
-		 in interest to collect.
+		 процентов прибыли.
 	</p>
 	<p style='text-align:center'>
-		[style.italicsMinorGood(Any items or flames stored in this area can be accessed at any of the bank's branches.)]
+		[style.italicsMinorGood(Любые предметы или огни, хранящиеся здесь, можно забрать в любом отделении банка.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DEPOSIT_BOX_INTEREST_COLLECTED"><![CDATA[
 	<p>
-		Deciding that now is as good a time as any to collect your interest, you retrieve your flames and wonder whether to add them to your deposit box, or to hold on to them for now...
+		Решив, что сейчас самый подходящий момент, чтобы забрать проценты, ты достаешь свои огни и раздумываешь: стоит ли положить их обратно в депозит или пока придержать при себе...
 	</p>
 	]]>
 	</htmlContent>

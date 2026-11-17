@@ -5,7 +5,7 @@
 	
 	<htmlContent tag="HALLWAY"><![CDATA[
 	<p>
-		White walls and beige carpets. Despite the fact that Felicia has lived here for long enough to have gotten to know Arthur quite well, her apartment looks like she's only just moved in to it. Your immediate surroundings are void of decoration or furniture of any kind. The only things that stick out are the lights and the open-plan views of the apartment's dining and living rooms.
+		Белые стены и бежевые ковры. Несмотря на то, что Фелиция живет здесь достаточно долго, чтобы успеть хорошо узнать Arthur, её квартира выглядит так, будто она только что въехала. В твоем непосредственном окружении нет ни украшений, ни какой-либо мебели. Единственное, что бросается в глаза, — это освещение и открытая планировка, объединяющая столовую и гостиную.
 	</p>
 	]]>
 	</htmlContent>
@@ -15,10 +15,10 @@
 	
 	<htmlContent tag="ENTRYWAY"><![CDATA[
 	<p>
-		The entryway of [felicia.namePos] apartment is as empty as the rest of it, with the only item of note being the brown doormat beneath your [pc.feet]. With plain, white walls and a complete lack of decoration, there's almost nothing in this area that would be capable of holding your attention for more than a brief moment. The only things of interest are the heavy wooden door that leads out into the apartment building's corridor, and, to your right, an internal door which has been left open, granting you an unobstructed view into what very well might be the least interesting coat closet ever created. 
+		Прихожая [felicia.namePos] квартиры так же пуста, как и всё остальное; единственная заметная вещь — коричневый коврик под твоими [pc.feet]. Из-за простых белых стен и полного отсутствия декора здесь почти нет ничего, что могло бы удержать твое внимание дольше мимолетного взгляда. Единственное, что представляет интерес, — это тяжелая деревянная дверь, ведущая в коридор дома, и дверь справа, которая оставлена открытой, открывая вид на, пожалуй, самый скучный гардероб в мире.
 	</p>
 	<p>
-		Your only real options in this area are to turn around and head back into Felicia's apartment, or to call out goodbye and use the door to make your exit...
+		Твои единственные варианты здесь — развернуться и вернуться в квартиру Фелиции или крикнуть «прощай» и выйти через дверь...
 	</p>
 	]]>
 	</htmlContent>
@@ -28,7 +28,7 @@
 	
 	<htmlContent tag="FELICIA_BEDROOM"><![CDATA[
 	<p>
-		The door to Felicia's bedroom is closed, and with the dog-girl watching you out of the corner of her eye, you realise that it would be a terrible idea to try and take a look inside. Turning away from the door, you wonder what to do next...
+		Дверь в спальню Фелиции закрыта, и, когда собачья девчонка наблюдает за тобой краем глаза, ты понимаешь, что заглядывать внутрь было бы ужасной идеей. Отворачиваясь от двери, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -38,10 +38,10 @@
 	
 	<htmlContent tag="BATHROOM"><![CDATA[
 	<p>
-		The door to the apartment's bathroom is closed, and as you take a look at it, Felicia calls out, [felicia.speech(If you need to use the toilet, go ahead.)]
+		Дверь в ванную комнату закрыта, и пока ты на неё смотришь, Фелиция окликает тебя: [felicia.speech(Если тебе нужно в туалет, проходи.)]
 	</p>
 	<p>
-		From the sharp tone in her voice, you realise that she's just saying that to be polite, and would prefer you to not make use of her bathroom. Not wanting to annoy her, you tell her that you don't need the loo right now and turn away from the bathroom door...
+		По резкому тону её голоса ты понимаешь, что она говорит это лишь из вежливости и на самом деле предпочла бы, чтобы ты не пользовался её ванной. Не желая её раздражать, ты отвечаешь, что сейчас в туалет тебе не нужно, и отворачиваешься от двери...
 	</p>
 	]]>
 	</htmlContent>
@@ -51,10 +51,10 @@
 	
 	<htmlContent tag="KITCHEN"><![CDATA[
 	<p>
-		As is the case throughout most of Felicia's open-plan apartment, there's no wall separating this area from her dining area or living room, giving the kitchen a pleasant, open feel to it. Beneath your [pc.feet], the usual beige carpet has been replaced with light brown, laminated wooden flooring.
+		Как и в большей части квартиры Фелиции с её открытой планировкой, здесь нет стен, отделяющих эту зону от столовой или гостиной, что придаёт кухне приятное ощущение простора. Под твоими [pc.feet] привычный бежевый ковёр сменился светло-коричневым ламинатом.
 	</p>
 	<p>
-		The left wall is lined with marble-topped counters, and in the middle of them, a sink is positioned in front of a window that overlooks the streets of Demon Home below. At the border between the kitchen and living room there's a white, arcane-powered fridge, and sitting atop it, you see what must be the only colourful item in the entire apartment; a bright pink stuffed teddy bear. Beside it is the stove and a small, additional section of workspace, but apart from that, the kitchen is as barren as the rest of the apartment.
+		Левая стена уставлена столешницами с мраморной отделкой, а в центре них, прямо перед окном, выходящим на улицы Демоньего Дома, расположена раковина. На границе между кухней и гостиной стоит белый холодильник на Аркане, а на нём ты замечаешь, должно быть, единственный яркий предмет во всей квартире — ярко-розового плюшевого мишку. Рядом находятся плита и небольшой дополнительный участок рабочей поверхности, но в остальном кухня так же пуста, как и вся остальная квартира.
 	</p>
 	]]>
 	</htmlContent>
@@ -64,13 +64,13 @@
 	
 	<htmlContent tag="DINING_AREA"><![CDATA[
 	<p>
-		In the middle of the room is a single, light brown table that looks to be just barely large enough to seat two people. You're unable to test this hypothesis out, however, as there's only one chair present, which is of the same drab brown shade as the table.
+		Посреди комнаты стоит одинокий светло-коричневый стол, который кажется едва достаточно большим для двоих. Однако проверить эту гипотезу не удаётся, так как в комнате всего один стул, покрашенный в тот же скучный коричневый цвет, что и стол.
 	</p>
 	<p>
-		Looking around, you see that this dining room is just as devoid of decoration as the rest of the apartment, and there's nothing on the table, not even a salt shaker. Instead of the beige carpet found throughout the main section of the apartment, the dining room shares the same light brown wooden floor as the kitchen; its shade almost perfectly matches that of the 'dining set'.
+		Оглядевшись, ты замечаешь, что эта столовая так же лишена всякого декора, как и остальная часть квартиры. На столе нет ровным счетом ничего, даже солонки. Вместо бежевого ковра, который лежит во всей основной части квартиры, здесь, как и на кухне, светло-коричневый деревянный пол; его оттенок почти идеально совпадает с цветом «обеденного гарнитура».
 	</p>
 	<p>
-		As is the case throughout most of Felicia's apartment, there's no separating wall around this dining room, granting you an unobstructed view of the kitchen and hallway.
+		Как и в большинстве комнат в квартире Фелиции, здесь нет разделительных стен, так что перед тобой открывается беспрепятственный вид на кухню и коридор.
 	</p>
 	]]>
 	</htmlContent>
@@ -80,10 +80,10 @@
 	
 	<htmlContent tag="LIVING_AREA"><![CDATA[
 	<p>
-		The living room is home to most of the apartment's furniture, which consists of a dark green sofa, a light brown coffee table, and a bookcase filled to the brim with an assortment of books. Next to the bookcase is a window, which opens to a view of the streets of Demon Home. There's no wall on two sides of this room, allowing you to look into the kitchen and hallway, while on the third side there's a firmly-closed door which leads into Felicia's bedroom.
+		В гостиной сосредоточена большая часть мебели: темно-зеленый диван, светло-коричневый журнальный столик и книжный шкаф, доверху набитый самыми разными книгами. Рядом со шкафом расположено окно, из которого открывается вид на улицы Демоньего Дома. Две стороны комнаты не имеют стен, позволяя заглянуть на кухню и в коридор, а с третьей стороны находится плотно закрытая дверь, ведущая в спальню Фелиции.
 	</p>
 	<p>
-		Felicia is sitting on the sofa, and although she occasionally glances up to see if you're still around, the vast majority of her attention is focused on the book that's in her paw-like hands.
+		Фелиция сидит на диване, и хотя она время от времени поднимает взгляд, проверяя, не ушел ли ты, почти все ее внимание поглощено книгой, которую она держит своими лапоподобными руками.
 	</p>
 	]]>
 	</htmlContent>
@@ -93,24 +93,24 @@
 	
 	<htmlContent tag="FELICIA_GREETINGS"><![CDATA[
 	<p>
-		Taking Felicia up on her invitation, you [pc.step] forwards and enter what looks to be an almost completely empty apartment. Thanks to its open-plan design, you're able to look into the dining room off to your left, which only has a table and a single chair in it, the kitchen behind that, which looks to be equipped with just the basic fridge and stove, and the living room directly in front of you, which is where Felicia starts to lead you.
+		Приняв приглашение Фелиции, ты [pc.step] проходишь вперед и оказываешься в почти пустой квартире. Благодаря открытой планировке, ты сразу видишь столовую слева, где стоят лишь стол и единственный стул; за ней — кухню, обставленную лишь самым необходимым: холодильником и плитой; а прямо перед тобой — гостиную, куда Фелиция и ведет тебя.
 	</p>
 	#IF(game.isHourBetween(6, 9))
 		<p>
-			[felicia.speech(Come on, [pc.name],)] she excitedly says as she leads you forwards, [felicia.speech(You can take a seat there; I'll just quickly finish drying off and then I'll be right with you!)]
+		[felicia.speech(Давай, [pc.name],)] — восторженно говорит она, увлекая тебя за собой, — [felicia.speech(Можешь присесть вон там; я сейчас быстро вытрусь и сразу к тебе!)]
 		</p>
 		<p>
-			[pc.Stepping] forwards into the living room, you see that the only items of furniture which are present are a dark green sofa, a light brown coffee table, and bookcase that's stacked full of an assortment of books. Felicia darts off into her bedroom, closing the door behind her, leaving you to take a seat on the sofa and discover that it's comfier than it looks.
+		Когда [pc.Stepping] заходишь в гостиную, ты замечаешь, что из мебели здесь только темно-зеленый диван, светло-коричневый журнальный столик и книжный шкаф, забитый всякой всячиной. Фелиция пулей уносится в спальню и закрывает за собой дверь, оставляя тебя одного. Ты устраиваешься на диване и обнаруживаешь, что он куда удобнее, чем кажется на первый взгляд.
 		</p>
 		<p>
-			After just a couple of minutes, the dog-girl emerges wearing an oversized brown sweater which obscures both her [felicia.cupSize]-cup breasts and bare, furry thighs. Sitting down beside you, Felicia tucks her legs up on the sofa, and with her tail starting to thud against the cushions behind her, she asks, [felicia.speech(So, what did you want to talk about?)]
+		Спустя всего пару минут из комнаты выходит девчонка-собака в безразмерном коричневом свитере, который скрывает и её [felicia.cupSize]-грудь, и голые пушистые бедра. Фелиция садится рядом с тобой, поджав ноги на диване, и, пока её хвост мерно постукивает по подушкам позади неё, спрашивает: [felicia.speech(Ну, о чем ты хотел поговорить?)]
 		</p>
 	#ELSE
 		<p>
-			[felicia.speech(Come on, [pc.name],)] she excitedly says as she leads you forwards, [felicia.speech(Let's sit down!)]
+		[felicia.speech(Давай, [pc.name],)] — восторженно говорит она, увлекая тебя за собой, — [felicia.speech(Давай присядем!)]
 		</p>
 		<p>
-			[pc.Stepping] forwards into the living room, you see that the only items of furniture which are present are a dark green sofa, a light brown coffee table, and bookcase that's stacked full of an assortment of books. At Felicia's insistence, you take a seat on the sofa and discover that it's comfier than it looks. Sitting down beside you, the dog-girl tucks her legs up on the sofa, and with her tail starting to thud against the cushions behind her, she asks, [felicia.speech(So, what did you want to talk about?)]
+		Проходя вглубь гостиной, [pc.Stepping] замечаешь, что из мебели здесь только темно-зеленый диван, светло-коричневый журнальный столик и книжный шкаф, забитый всякой всячиной. По настоянию Фелиции ты садишься на диван и обнаруживаешь, что он куда удобнее, чем кажется на первый взгляд. Усевшись рядом с тобой, девчонка-собака поджимает под себя ноги, и, когда её хвост начинает мерно постукивать по подушкам позади неё, она спрашивает: [felicia.speech(Ну, о чем ты хотел поговорить?)]
 		</p>
 	#ENDIF
 	]]>
@@ -121,20 +121,20 @@
 	
 	<htmlContent tag="FELICIA_GREETINGS_APPROACH"><![CDATA[
 	<p>
-		The white, fluffy form of Felicia is sitting on the dark green sofa in front of you. A book sits in her hand, stealing most of her focus, but as she glances up, she notices that you've approached her and asks, [felicia.speech(Oh, still here, [pc.name]? Well, if you want to talk some more then let me know what's on your mind!)]
+		Перед тобой на темно-зеленом диване сидит белоснежная пушистая Фелиция. В руках у неё книга, поглотившая всё её внимание, но, подняв взгляд, она замечает твое приближение и спрашивает: [felicia.speech(О, ты всё еще здесь, [pc.name]? Ну, если хочешь еще поболтать, то просто скажи, что у тебя на уме!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FELICIA_GOODBYE"><![CDATA[
 	<p>
-		Feeling like you've spent enough time in Felicia's company, you stand up from the sofa and tell her that you need to get going.
+		Чувствуя, что ты и так провел с Фелицией достаточно времени, ты встаешь с дивана и говоришь ей, что пора идти.
 	</p>
 	<p>
-		[felicia.speech(Ah, alright. I'm around in the mornings until about three in the afternoon, so if you ever need me, come back between those times,)] she states, before leaning over towards the bookshelf and picking out a book seemingly at random. Before she opens it, she flashes you a small smile, then begins to read.
+		[felicia.speech(А, ну ладно. Утром я обычно здесь до трех часов дня, так что если я тебе понадоблюсь, приходи в это время,)] — произносит она, после чего наклоняется к книжному шкафу и выбирает какую-то книгу, кажется, совершенно наугад. Прежде чем открыть её, она одаривает тебя мимолетной улыбкой и принимается за чтение.
 	</p>
 	<p>
-		[pc.Stepping] away from the sofa, you wonder whether to head straight to the apartment's exit, or instead take some time to have a quick look around the place...
+		Отойдя от дивана, [pc.Stepping] раздумываешь: отправиться ли сразу к выходу из квартиры или всё же потратить немного времени, чтобы осмотреться...
 	</p>
 	]]>
 	</htmlContent>
@@ -144,24 +144,24 @@
 	
 	<htmlContent tag="ARTHUR_WHEREABOUTS"><![CDATA[
 	<p>
-		Taking Felicia up on her invitation, you [pc.step] forwards and enter what looks to be an almost completely empty apartment. Thanks to its open-plan design, you're able to look into the dining room off to your left, which only has a table and a single chair in it, the kitchen behind that, which looks to be equipped with just the basic fridge and stove, and the living room directly in front of you, which is where Felicia starts to lead you.
+		Приняв приглашение Фелиции, ты [pc.step] проходишь вперед и оказываешься в почти пустой квартире. Благодаря открытой планировке, ты сразу видишь столовую слева, где стоят лишь стол и единственный стул; за ней — кухню, обставленную лишь самым необходимым: холодильником и плитой; а прямо перед тобой — гостиную, куда Фелиция и ведет тебя.
 	</p>
 	#IF(game.isHourBetween(6, 9))
 		<p>
-			[felicia.speech(Come on, [pc.name],)] she excitedly says as she leads you forwards, [felicia.speech(You can take a seat there; I'll just quickly finish drying off and then I'll be right with you!)]
+		[felicia.speech(Давай, [pc.name],)] — восторженно говорит она, увлекая тебя за собой, — [felicia.speech(Можешь присесть вон там; я сейчас быстро вытрусь и сразу к тебе!)]
 		</p>
 		<p>
-			[pc.Stepping] forwards into the living room, you see that the only items of furniture which are present are a dark green sofa, a light brown coffee table, and bookcase that's stacked full of an assortment of books. Felicia darts off into her bedroom, closing the door behind her, leaving you to take a seat on the sofa and discover that it's comfier than it looks.
+		Когда [pc.Stepping] заходишь в гостиную, ты замечаешь, что из мебели здесь только темно-зеленый диван, светло-коричневый журнальный столик и книжный шкаф, забитый всякой всячиной. Фелиция пулей уносится в спальню и закрывает за собой дверь, оставляя тебя одного. Ты устраиваешься на диване и обнаруживаешь, что он куда удобнее, чем кажется на первый взгляд.
 		</p>
 		<p>
-			After just a couple of minutes, the dog-girl emerges wearing an oversized brown sweater which obscures both her [felicia.cupSize]-cup breasts and bare, furry thighs. Sitting down beside you, Felicia tucks her legs up on the sofa, and with her tail starting to thud against the cushions behind her, she asks, [felicia.speech(So, have you found Arthur yet?)]
+			Спустя всего пару минут появляется девчонка-собака в безразмерном коричневом свитере, который скрывает её [felicia.cupSize]-грудь и голые пушистые бёдра. Устроившись рядом с тобой, Фелиция подтягивает ноги на диване, и, пока её хвост начинает глухо стучать по подушкам позади неё, она спрашивает: [felicia.speech(Ну что, ты уже нашёл Артура?)]
 		</p>
 	#ELSE
 		<p>
-			[felicia.speech(Come on, [pc.name],)] she excitedly says as she leads you forwards, [felicia.speech(Let's sit down!)]
+		[felicia.speech(Давай, [pc.name],)] — восторженно говорит она, увлекая тебя за собой, — [felicia.speech(Давай присядем!)]
 		</p>
 		<p>
-			[pc.Stepping] forwards into the living room, you see that the only items of furniture which are present are a dark green sofa, a light brown coffee table, and bookcase that's stacked full of an assortment of books. At Felicia's insistence, you take a seat on the sofa and discover that it's comfier than it looks. Sitting down beside you, the dog-girl tucks her legs up on the sofa, and with her tail starting to thud against the cushions behind her, she asks, [felicia.speech(So, have you found Arthur yet?)]
+			[pc.Stepping], проходя в гостиную, ты видишь, что из мебели здесь только темно-зелёный диван, светло-коричневый журнальный столик и книжный шкаф, забитый всякой всячиной. По настоянию Фелиции ты садишься на диван и обнаруживаешь, что он куда удобнее, чем кажется. Устроившись рядом с тобой, девчонка-собака подтягивает ноги на диване, и, пока её хвост начинает глухо стучать по подушкам позади неё, она спрашивает: [felicia.speech(Ну что, ты уже нашёл Артура?)]
 		</p>
 	#ENDIF
 	]]>
@@ -172,10 +172,10 @@
 	
 	<htmlContent tag="ARTHUR_WHEREABOUTS_NO"><![CDATA[
 	<p>
-		As you tell Felicia that you haven't managed to find Arthur yet, you can visibly see her energy seep from her body, and both her tail and ears droop down and lie flat. She takes a few seconds to recollect herself before softly speaking, [felicia.speech(You'll find him eventually, don't worry...)]
+		Когда ты говоришь Фелиции, что Артура найти пока не удалось, ты буквально видишь, как её Энергия покидает тело, а хвост и уши понуро опускаются. Ей требуется несколько секунд, чтобы прийти в себя, прежде чем она мягко произносит: [felicia.speech(Ты обязательно его найдёшь, не переживай...)]
 	</p>
 	<p>
-		Figuring that you should clear the sadness from the air, you decide to move straight on to asking her some questions...
+		Понимая, что нужно развеять повисшую в воздухе грусть, ты решаешь сразу перейти к расспросам...
 	</p>
 	]]>
 	</htmlContent>
@@ -185,16 +185,16 @@
 	
 	<htmlContent tag="ARTHUR_WHEREABOUTS_YES"><![CDATA[
 	<p>
-		As you tell Felicia that you've managed to find Arthur, her body visibly lights up with excitement, and her tail starts wagging with an incredible strength and speed. Without warning, dog-girl suddenly pounces on you, and after wrapping her furry arms around your body, she hugs you to near death. With how soft her fur rubbing over your body, she exclaims, [felicia.speech(I can't thank you enough! You're the best person ever!)]
+		Когда ты говоришь Felicia, что тебе удалось найти Arthur, она буквально расцветает от восторга, а её хвост начинает вилять с невероятной силой и скоростью. Без предупреждения девчонка-пес внезапно набрасывается на тебя и, обхватив твоё тело своими пушистыми ручонками, обнимает так крепко, что едва не душит. Пока её мягкий мех трется о твою кожу, она восклицает: [felicia.speech(Как же я тебя благодарю! Ты самый лучший человек на свете!)]
 	</p>
 	<p>
-		There's a few more seconds of hugging before she finally releases you, allowing you to breathe again. Calming herself down, she returns to sitting beside you and asks, [felicia.speech(Is he okay? Where is he? Will he be moving back in soon?)]
+		Вы обнимаетесь еще несколько секунд, прежде чем она наконец отпускает тебя, позволяя снова вздохнуть. Успокоившись, она садится рядом и спрашивает: [felicia.speech(С ним всё в порядке? Где он? Он скоро вернется жить сюда?)]
 	</p>
 	<p>
-		Reassuring Felicia by telling her that Arthur is doing well, you explain that he's going to be staying in Lilaya's mansion for the foreseeable future. Seeing the worried look in her eyes, you quickly tell the dog-girl that Rose will be sure to let her in to visit Arthur at any time, and you happily give her Lilaya's address.
+		Успокоив Felicia словами о том, что с Arthur всё хорошо, ты объясняешь, что в обозримом будущем он будет жить в особняке Lilaya. Заметив тревогу в её глазах, ты поспешно добавляешь, что Rose обязательно впустит её навестить его в любое время, и с радостью даешь ей адрес Lilaya.
 	</p>
 	<p>
-		[felicia.speech(Aww... I really wanted him back here, but I guess this'll do,)] she replies with a little pout. Taking a second to collect herself, her happy demeanour returns and she states, [felicia.speech(Well, as long as I'm always welcome there then it'll be fine. So, did you want to talk about something, [pc.name]?)]
+		[felicia.speech(О-о-о... Я так хотела, чтобы он вернулся сюда, но, наверное, и так сойдет,)] — отвечает она, слегка надув губки. Сделав паузу, чтобы прийти в себя, она снова становится жизнерадостной и произносит: [felicia.speech(Ну, раз мне там всегда рады, то всё будет отлично. Так о чем ты хотел поговорить, [pc.name]?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -204,7 +204,7 @@
 	
 	<htmlContent tag="TALK_MENU"><![CDATA[
 	<p>
-		The comfy sofa, and almost sucks you in as you lean back and wonder what to ask Felicia about next. Sensing that you're wanting to change the topic of conversation, the dog-girl tilts her head to one side and asks, [felicia.speech(Is there something else you wanted to talk about?)]
+		Уютный диван словно затягивает тебя, когда ты откидываешься на спинку, раздумывая, о чем еще спросить Фелицию. Почувствовав, что ты хочешь сменить тему, девочка-собака склоняет голову набок и спрашивает: [felicia.speech(Ты хочешь поговорить о чем-то еще?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -214,7 +214,7 @@
 	
 	<htmlContent tag="TALK_MENU_ARTHUR"><![CDATA[
 	<p>
-		Wanting to find out what Felicia knows about Arthur, you ask the white fluff ball if she's willing to talk about her ex-neighbour for a moment. Perking up slightly as she hears you mention Arthur by name, the white ball of fluff excitedly asks, [felicia.speech(Ah, what do you want to know?)]
+		Желая разузнать, что Фелиции известно об Arthur, ты спрашиваешь этот белый пушистый комок, готова ли она ненадолго обсудить своего бывшего соседа. Услышав имя Arthur, она слегка оживляется и с энтузиазмом спрашивает: [felicia.speech(А, что именно ты хочешь узнать?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -224,10 +224,10 @@
 	
 	<htmlContent tag="TALK_MENU_ABOUT_HER"><![CDATA[
 	<p>
-		Wanting to get to know her a little better, you ask Felicia if you can ask her some personal questions. The white fluff ball's ear pops up as she hears this, and her tail starts slowly swishing to thud into the cushions behind her. 
+		Желая узнать её получше, ты спрашиваешь Фелицию, можно ли задать ей несколько личных вопросов. Услышав это, белое пушистое создание приподнимает ушко, а её хвост начинает медленно вилять, глухо постукивая по подушкам позади неё.
 	</p>
 	<p>
-		[felicia.speech(Y-You want to talk about me?)] she asks, looking a bit flustered. Shuffling around a little in trepidation, she continues, [felicia.speech(There's not much to know, but if you want to ask, then go ahead.)]
+		[felicia.speech(Т-ты хочешь поговорить обо мне?)] — спрашивает она, выглядя слегка смущенной. Немного заерзав от волнения, она продолжает: [felicia.speech(Обо мне не так много чего можно рассказать, но если хочешь спросить — валяй.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -237,10 +237,10 @@
 	
 	<htmlContent tag="TALK_ARTHUR_PERSONALITY"><![CDATA[
 	<p>
-		You decide to ask Felicia about her perception of Arthur's personality, and so phrase your question to that effect.
+		Ты решаешь спросить Фелицию о том, какой она видит личность Arthur, и формулируешь вопрос соответствующим образом.
 	</p>
 	<p>
-		With her ears perking up, Felicia takes a few seconds to think, before answering, [felicia.speech(The first time you meet him you'd think he was a timid man, but ask him anything about what he's working on and you see just how full of life he is. Well, if you can stay awake during it, that is... Oh, and he gets so red when I ask what he wants for dinner. I wouldn't ask so much if he could actually cook.)]
+		Услышав это, Фелиция на мгновение замирает, обдумывая ответ, а затем произносит: [felicia.speech(При первой встрече он кажется робким, но стоит спросить его о работе, как сразу видно, сколько в нем жизни. Ну, если, конечно, ты не уснешь в процессе... О, а еще он так краснеет, когда я спрашиваю, что он хочет на ужин. Я бы и сама чаще спрашивала, если бы он умел готовить.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -250,10 +250,10 @@
 	
 	<htmlContent tag="TALK_ARTHUR_HOBBIES"><![CDATA[
 	<p>
-		You wonder what a man of science would do during his pastime: Read? Cool sparkly science stuff? People watching from out of his window? With these questions in mind, you ask Felicia if she's ever seen him do anything besides work on his experiments.
+		Ты гадаешь, чем занимается человек науки в свободное время: читает? Изучает какие-нибудь блестящие научные штуковины? Или просто наблюдает за людьми из окна? С этими мыслями ты спрашиваешь Фелицию, видела ли она его когда-нибудь за чем-то, кроме работы над экспериментами.
 	</p>
 	<p>
-		[felicia.speech(Yeah, I've seen him read a few times,)] she answers, [felicia.speech(Often science papers... Actually, always science papers. I don't think I've seen him read anything else.)]
+		[felicia.speech(Да, я пару раз видела, как он читает,)] — отвечает она, — [felicia.speech(Обычно научные статьи... Вообще, всегда научные статьи. Кажется, я больше ничего не видела в его руках.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -263,13 +263,13 @@
 	
 	<htmlContent tag="TALK_ABOUT_HER_NAME"><![CDATA[
 	<p>
-		Wanting to talk about her unusually-long surname, you ask Felicia to repeat to you what her full name is. Her cheeks slightly flush red from embarrassment as she hears you say this, and with her tail starting to swish, she states, [felicia.speech(It's Felicia Delilah-Hope Renmorre...)]
+		Заинтересовавшись её необычайно длинной фамилией, ты просишь Фелицию повторить её полное имя. Её щеки слегка розовеют от смущения, а хвост начинает нетерпеливо подергиваться, когда она произносит: [felicia.speech(Фелиция Делайла-Хоуп Ренморр...)]
 	</p>
 	<p>
-		With her name now being the focus of the conversation, you ask Felicia how she came to have such a peculiar surname. Shuffling about a little on the sofa, she says, [felicia.speech(Well, like I told you before, it's a family tradition. We take both of our grandmothers' names as our middle name...)]
+		Теперь, когда разговор зашел о её имени, ты спрашиваешь Фелицию, откуда у неё такая причудливая фамилия. Поерзав на диване, она говорит: [felicia.speech(Ну, как я уже говорила, это семейная традиция. Мы берем имена обеих наших бабушек в качестве своего второго имени...)]
 	</p>
 	<p>
-		Seeing that she's getting a little timid about sharing any further details, you decide to give Felicia a compliment to help relax the mood. Telling her that her name is very pretty, you can't help but smile as the dog-girl's tail powerfully wags against the cushions behind her, and she blushes even more and says, [felicia.speech(Thanks, [pc.name]...)]
+		Заметив, что она начинает немного стесняться, ты решаешь сделать Фелиции комплимент, чтобы разрядить обстановку. Сказав ей, что у неё очень красивое имя, ты невольно улыбаешься: хвост девчонки-собаки с силой молотит по подушкам позади неё, а сама она краснеет ещё сильнее и произносит: [felicia.speech(Спасибо, [pc.name]...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -279,16 +279,16 @@
 	
 	<htmlContent tag="TALK_ABOUT_HER_PLACE"><![CDATA[
 	<p>
-		Wanting to find out why Felicia's apartment is so empty, you ask her in the most tactful manner you can manage why she hasn't put up any decorations or got any furniture.
+		Желая понять, почему квартира Фелиции такая пустая, ты стараешься максимально тактично спросить её о том, почему она до сих пор не развесила никаких украшений и не обставила комнату мебелью.
 	</p>
 	<p>
-		The ball of white fluff looks oblivious for a moment, before narrowing her eyes in confusion and returning your question with one of her own, [felicia.speech(I've got all I need, why should I get anything more?)]
+		Этот комок белого пуха на мгновение замирает, словно не понимая вопроса, а затем недоуменно прищуривается и задаёт встречный вопрос: [felicia.speech(У меня есть всё необходимое, зачем мне что-то ещё?)]
 	</p>
 	<p>
-		Responding by suggesting that decorations would give the place its own personality, you ask Felicia if she's ever considered redecorating.
+		Предложив, что декор помог бы придать месту индивидуальность, ты спрашиваешь Фелицию, не думала ли она когда-нибудь о перестановке или украшении квартиры.
 	</p>
 	<p>
-		[felicia.speech(No, not really... I'm not interested in all that I guess,)] she bluntly responds.
+		[felicia.speech(Нет, не особо... Наверное, мне всё это не особо интересно,)] — прямо отвечает она.
 	</p>
 	]]>
 	</htmlContent>
@@ -298,13 +298,13 @@
 	
 	<htmlContent tag="TALK_ABOUT_HER_FUR"><![CDATA[
 	<p>
-		Gazing in wonder at how silky and fluffy her luxuriant fur is, you ask Felicia how she manages to get it into such a perfect state.
+		Восхищённо разглядывая, насколько шелковистой и пушистой является её роскошная шерсть, ты спрашиваешь Фелицию, как ей удаётся поддерживать её в таком идеальном состоянии.
 	</p>
 	<p>
-		The dog-girl's tail swishes from side to side as you ask this question, and with a smile on her face revealing that she's taken your question as a compliment, she responds, [felicia.speech(Lots. Of. Conditioner.)]
+		На твой вопрос хвост девчонки-собаки начинает вилять из стороны в сторону, и, расплывшись в улыбке (очевидно, она приняла твой вопрос за комплимент), она отвечает: [felicia.speech(Кучей. Кондиционера.)]
 	</p>
 	<p>
-		Something tells you that's not the whole truth, but Felicia doesn't seem to want to reveal her secrets to you.
+		Что-то подсказывает тебе, что это далеко не вся правда, но Фелиция, похоже, не спешит раскрывать тебе свои секреты.
 	</p>
 	]]>
 	</htmlContent>
@@ -314,10 +314,10 @@
 	
 	<htmlContent tag="TALK_ABOUT_HER_FAVORITE_STORE"><![CDATA[
 	<p>
-		Wanting to ask her about the sorts of things which she gets up to in the day, you ask Felicia if there are any interesting stores nearby which she frequents.
+		Желая узнать, чем она занимается в течение дня, ты спрашиваешь Фелицию, нет ли поблизости каких-нибудь интересных магазинов, в которые она заглядывает.
 	</p>
 	<p>
-		The ball of white fluff takes a moment to think before stating, [felicia.speech(There aren't any here in Demon Home which I'm fond of, but over in the Shopping Arcade there's a place called Nyan's Clothing Emporium. I don't care much about the clothes, I just think cats are cute, and the owner is the sweetest person you'll ever meet.)]
+		Белый пушистый комочек на мгновение задумывается, прежде чем ответить: [felicia.speech(Здесь, в Демоньем Доме, нет ничего, что бы мне по-настоящему нравилось, но в Торговых рядах есть местечко под названием «Магазин одежды Nyan». Меня не так уж сильно интересует сама одежда, просто кошки — это мило, а хозяйка — самый милый человек, которого ты когда-либо встречал.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -327,22 +327,22 @@
 	
 	<htmlContent tag="TALK_PET"><![CDATA[
 	<p>
-		The fluffiness of her hair, how it sways in the wind, you can't help but ask to touch it. Shuffling closer towards her, you move your [pc.hand] close to Felicia's head and ask if you can pet her.
+		Её волосы такие пушистые, и ты не можешь удержаться от желания прикоснуться к ним, наблюдая, как они колышутся на ветру. Подойдя к ней поближе, ты подносишь свою [pc.hand] к голове Фелиции и спрашиваешь, можно ли её погладить.
 	</p>
 	<p>
-		Felicia's ears perk up as she looks up at your [pc.hand]. Realising that you're serious about your request, she blushes slightly and responds, [felicia.speech(S-Sure...)]
+		Уши Фелиции приподнимаются, когда она смотрит на твою [pc.hand]. Поняв, что ты настроен серьезно, она слегка краснеет и отвечает: [felicia.speech(К-конечно...)]
 	</p>
 	<p>
-		With her permission, your [pc.hand] plops on to her head. Her soft fur feels even fluffier than it looks. As you rub her luxurious coat, the sound of her tail thudding into the sofa's cushions can be heard. The fluffiness is so powerful you almost lose yourself in the head pats, all the while Felicia blushing and becoming even more embarrassed about what's happening. It seems petting is her weakness.
+		С её позволения, твоя [pc.hand] опускается ей на голову. Её мягкая шерстка на ощупь кажется еще более пушистой, чем выглядит. Пока ты поглаживаешь её роскошную шубку, слышно, как её хвост глухо стучит по подушкам дивана. Эта мягкость настолько затягивает, что ты почти теряешь счет времени, поглаживая её по голове, а Фелиция тем временем краснеет всё сильнее, смущаясь происходящему. Похоже, поглаживания — её слабость.
 	</p>
 	<p>
-		A wicked smile forming, you decide to give her a little scratch behind the ears. Felicia's ears perk up to what was thought impossible, her tail moving fast enough to become a blur. Within a minute, she's putty in your ear scratching [pc.hand], clearly trying to hold her composure. Finally, her strength breaks and she lets out the slightest, [felicia.speech(Awoo...)]
+		С ехидной ухмылкой ты решаешь немного почесать её за ушком. Уши Фелиции встают торчком — казалось бы, немыслимо! — а хвост начинает так бешено вилять, что превращается в сплошное размытое пятно. Меньше чем через минуту она уже тает под твоими [pc.hand], отчаянно пытаясь сохранить самообладание. Наконец, её воля ломается, и она издает едва слышное, [felicia.speech(Аууу...)]
 	</p>
 	<p>
-		Immediately after letting out this small awoo, Felicia looks down and covers her mouth with her paw-like hands in embarrassment. With your [pc.hand] starting to cramp, and the dog-girl at the point of breaking, you decide that you've petted her enough for now. Felicia, still blushing, gives a small whimper as you take your [pc.hand] away, before taking a deep breath to regain herself. Meekly, she asks, [felicia.speech(W-What did you want to talk about now?)]
+		Сразу после этого короткого «аууу» Фелиция опускает взгляд и смущенно прикрывает рот ладонями, похожими на лапки. Твои [pc.hand] уже начинают сводить судорогой, а собачья девчонка вот-вот окончательно потеряет контроль, так что ты решаешь, что на сегодня поглаживаний хватит. Всё еще красная как рак, Фелиция тихонько скулит, когда ты убираешь свои [pc.hand], а затем делает глубокий вдох, чтобы прийти в себя. Покорно она спрашивает: [felicia.speech(О-о чем ты хотел поговорить на этот раз?)]
 	</p>
 	<p>
-		<b>You've reached the end of Felicia's content (for now)...</b>
+		<b>Пока что это всё, что есть в контенте Фелиции...</b>
 	</p>
 	]]>
 	</htmlContent>
@@ -352,10 +352,10 @@
 	
 	<htmlContent tag="TALK_LEWD"><![CDATA[
 	<p>
-		The way she acts about Arthur, anyone would be curious as to what their real relationship is. With this thought in mind, you ask Felicia if she has a crush on him.
+		Глядя на то, как она ведет себя рядом с Arthur, любой бы задался вопросом, что же между ними на самом деле. С этой мыслью ты спрашиваешь Фелицию, не влюблена ли она в него.
 	</p>
 	<p>
-		[felicia.speech(No,)] she says flatly, the cute, innocent look in her puppy eyes immediately vanishing. With a steely tone in her voice, she flatly continues, [felicia.speech(He was a friend when I didn't have any. Nothing more.)]
+		[felicia.speech(Нет,)] — сухо отвечает она, и милый, невинный взгляд её щенячьих глаз мгновенно исчезает. Стальным тоном она продолжает: [felicia.speech(Он был другом, когда у меня никого не было. И не более того.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -365,10 +365,10 @@
 	
 	<htmlContent tag="TALK_LEWD_CONTINUE"><![CDATA[
 	<p>
-		Wanting to find out more about this dog-girl's sex life, you ask her if she has a crush on anyone else.
+		Желая разузнать побольше о сексуальной жизни этой собачьей девчонки, ты спрашиваешь, нет ли у неё кого-нибудь еще на примете.
 	</p>
 	<p>
-		Narrowing her eyes, Felicia shoots you a furious gaze for a moment, before taking a calming breath and simply replying, [felicia.speech(No.)]
+		Прищурившись, Фелиция на мгновение бросает на тебя яростный взгляд, но затем делает успокаивающий вдох и просто отвечает: [felicia.speech(Нет.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -378,13 +378,13 @@
 	
 	<htmlContent tag="TALK_LEWD_PUSH"><![CDATA[
 	<p>
-		You can't believe how innocent she is, and to not even have a crush, she must be so pent up. You press on with your line of questioning and ask her what she'd think if someone had a crush on her, hoping to get some reaction. 
+		Ты не можешь поверить, насколько она невинна; если у неё даже нет влюбленностей, то она, должно быть, дико зажата. Ты продолжаешь расспросы и, надеясь вызвать хоть какую-то реакцию, спрашиваешь, что бы она подумала, если бы кто-то в неё влюбился.
 	</p>
 	<p>
-		[felicia.speech(I'm fine, please stop,)] she snaps.
+		[felicia.speech(Со мной всё в порядке, пожалуйста, хватит,)] — резко обрывает она.
 	</p>
 	<p>
-		From her sharp tone and the furious glare in her eyes, you feel like it would probably be best to stop pushing her, or else [style.italicsBad(something bad will likely happen)]...
+		Судя по её резкому тону и яростному блеску в глазах, ты чувствуешь, что лучше бы не давить на неё дальше, иначе [style.italicsBad(скорее всего, случится что-то плохое)]...
 	</p>
 	]]>
 	</htmlContent>
@@ -394,13 +394,13 @@
 	
 	<htmlContent tag="TALK_LEWD_DIG_DEEP"><![CDATA[
 	<p>
-		Unable to get your horniness under control, you move closer to Felicia and start to make a move on her. An angry scowl suddenly breaks out across her face, and she sternly demands, [felicia.speech(Leave. Now!)]
+		Не в силах совладать со своим возбуждением, ты придвигаешься ближе к Фелиции и начинаешь действовать. На её лице внезапно проступает гневная гримаса, и она сурово требует: [felicia.speech(Уходи. Сейчас же!)]
 	</p>
 	<p>
-		Realising that you must have struck a nerve, you start to backtrack, but it's too late. Cutting you off as you start to speak, Felicia barks, [felicia.speech(Leave, before I force you out!)] 
+		Понимая, что ты явно задел её за живое, ты пытаешься дать задний ход, но уже слишком поздно. Не давая тебе вставить ни слова, Фелиция рявкает: [felicia.speech(Уходи, пока я не выставила тебя силой!)]
 	</p>
 	<p>
-		Taken aback, and embarrassed for letting the horny get to you, you stand up and head over to the door. Stomping along after you, the dog-girl slams the door shut after you the moment you [pc.step] out into the corridor. Not wanting to anger her any more, you quickly leave the apartment building...
+		Сбитый с толку и смущенный тем, что поддался похоти, ты встаешь и направляешься к двери. Топая вслед за тобой, девчонка-пес захлопывает дверь ровно в тот момент, когда ты [pc.step] в коридор. Не желая злить её еще сильнее, ты поспешно покидаешь здание квартиры...
 	</p>
 	]]>
 	</htmlContent>

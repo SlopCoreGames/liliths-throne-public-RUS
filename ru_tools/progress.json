@@ -42,7 +42,20 @@
     "res/txt/characters/submission/batCavernSlime.xml",
     "res/txt/characters/submission/claire.xml",
     "res/txt/characters/submission/lyssieth.xml",
-    "res/txt/characters/submission/roxy.xml"
+    "res/txt/characters/submission/roxy.xml",
+    "res/txt/places/dominion/angelixx_apartment/generic.xml",
+    "res/txt/places/dominion/arthursApartment/apartment.xml",
+    "res/txt/places/dominion/bank/generic.xml",
+    "res/txt/places/dominion/cityHall/demographics.xml",
+    "res/txt/places/dominion/cityHall/generic.xml",
+    "res/txt/places/dominion/cityHall/property.xml",
+    "res/txt/places/dominion/demon_home/fia.xml",
+    "res/txt/places/dominion/dominionPlaces.xml",
+    "res/txt/places/dominion/enforcerHQ/brax.xml",
+    "res/txt/places/dominion/enforcerHQ/generic.xml",
+    "res/txt/places/dominion/enforcerWarehouse/generic.xml",
+    "res/txt/places/dominion/feliciaApartment/apartment.xml",
+    "res/txt/places/dominion/harpyNests/bimbo.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
