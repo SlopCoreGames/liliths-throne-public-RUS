@@ -28,8 +28,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(CONFIDENT)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already confident, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot more confident)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже уверенный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(чувствуя себя гораздо более уверенным)]!")
 						+ "</p>");
 		}
 		@Override
@@ -37,13 +37,13 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(CONFIDENT)
-								?"[style.colourDisabled([npc.Name] already lacks confidence, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(feeling a lot less confident)]!")
+								?"[style.colourDisabled([npc.Name] уже не уверенный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(чувствуя себя гораздо менее уверенным)]!")
 						+ "</p>");
 		}
 	},
 	
-	SHY(false, PersonalityCategory.CORE, "shy", "[npc.NameIsFull] incredibly shy around other people, and [npc.verb(prefer)] to avoid conversation wherever possible.", "", PresetColour.BASE_YELLOW_LIGHT) {
+	SHY(false, PersonalityCategory.CORE, "shy", "[npc.NameIsFull] невероятно застенчивый с другими людьми, и [npc.verb(prefer)] избегать разговоров, где это возможно.", "", PresetColour.BASE_YELLOW_LIGHT) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(CONFIDENT);
@@ -53,7 +53,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(SHY)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already shy, so nothing happens...)]"
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже застенчивый, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot shyer)]!")
 						+ "</p>");
 		}
@@ -128,8 +128,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(NAIVE)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already naive, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot more naive)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже наивный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(чувствуя себя гораздо более наивным)]!")
 						+ "</p>");
 		}
 		@Override
@@ -137,13 +137,13 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(NAIVE)
-								?"[style.colourDisabled([npc.Name] already isn't naive, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] naivety)]!")
+								?"[style.colourDisabled([npc.Name] @@T1@@ уже циничный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(теряя [npc.her] наивность)]!")
 						+ "</p>");
 		}
 	},
 	
-	CYNICAL(false, PersonalityCategory.CORE, "cynical", "[npc.NameIsFull] particularly distrustful of the intentions and motivations of other people.", "", PresetColour.BASE_RED_DARK) {
+	CYNICAL(false, PersonalityCategory.CORE, "cynical", "[npc.NameIsFull] особенно недоверчивый к намерениям и мотивациям других людей.", "", PresetColour.BASE_RED_DARK) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(NAIVE);
@@ -153,8 +153,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(CYNICAL)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already cynical, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot more cynical)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже циничный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(чувствуя себя гораздо более циничным)]!")
 						+ "</p>");
 		}
 		@Override
@@ -162,7 +162,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(CYNICAL)
-								?"[style.colourDisabled([npc.Name] already isn't cynical, so nothing happens...)]"
+								?"[style.colourDisabled([npc.Name] уже не циничный, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] cynicism)]!")
 						+ "</p>");
 		}
@@ -170,7 +170,7 @@ public enum PersonalityTrait {
 	
 	// Combat traits:
 	
-	BRAVE(false, PersonalityCategory.COMBAT, "brave", "[npc.Name] always [npc.verb(act)] in a courageous manner, and [npc.is] not one to shy away from a fight.", "", PresetColour.BASE_ORANGE) {
+	BRAVE(false, PersonalityCategory.COMBAT, "brave", "[npc.Name] всегда [npc.verb(act)] мужественно, и [npc.is] не боится драки.", "", PresetColour.BASE_ORANGE) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(COWARDLY);
@@ -180,7 +180,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(BRAVE)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already brave, so nothing happens...)]"
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже храбрый, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot braver)]!")
 						+ "</p>");
 		}
@@ -189,13 +189,13 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(BRAVE)
-								?"[style.colourDisabled([npc.Name] already isn't brave, so nothing happens...)]"
+								?"[style.colourDisabled([npc.Name] уже не храбрый, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] bravery)]!")
 						+ "</p>");
 		}
 	},
 	
-	COWARDLY(false, PersonalityCategory.COMBAT, "cowardly", "[npc.Name] [npc.verb(get)] scared very easily, and will prefer to run away from conflicts rather than try to resolve them directly.", "", PresetColour.BASE_RED_LIGHT) {
+	COWARDLY(false, PersonalityCategory.COMBAT, "cowardly", "[npc.Name] [npc.verb(get)] испугается очень легко, и предпочтет убегать от конфликтов, а не пытаться разрешить их напрямую.", "", PresetColour.BASE_RED_LIGHT) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(BRAVE);
@@ -205,8 +205,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(COWARDLY)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already cowardly, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot more cowardly)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже трусливый, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(чувствуя себя намного более трусливым)]!")
 						+ "</p>");
 		}
 		@Override
@@ -214,8 +214,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(COWARDLY)
-								?"[style.colourDisabled([npc.Name] already isn't cowardly, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] cowardice)]!")
+								?"[style.colourDisabled([npc.Name] @@T1@@ уже трусливый, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(теряя [npc.her] трусость)]!")
 						+ "</p>");
 		}
 	},
@@ -225,7 +225,7 @@ public enum PersonalityTrait {
 	LEWD(false,
 			PersonalityCategory.SEX,
 			"lewd",
-			"[npc.NameHasFull] an extensive knowledge of all things sexual, and [npc.is] always eager to talk about lewd things.",
+			"[npc.NameHasFull] обширное знание обо всем, что связано с сексом, и [npc.is] всегда готов поговорить о непристойных вещах.",
 			"", PresetColour.BASE_PINK) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
@@ -236,8 +236,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(LEWD)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already lewd, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot lewder)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже непристойный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(чувствуя себя намного более непристойным)]!")
 						+ "</p>");
 		}
 		@Override
@@ -245,8 +245,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(LEWD)
-								?"[style.colourDisabled([npc.Name] already isn't lewd, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] lewdity)]!")
+								?"[style.colourDisabled([npc.Name] уже не непристойный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(теряя [npc.her] непристойность)]!")
 						+ "</p>");
 		}
 	},
@@ -254,7 +254,7 @@ public enum PersonalityTrait {
 	INNOCENT(false,
 			PersonalityCategory.SEX,
 			"innocent",
-			"[npc.Name] always [npc.verb(act)] embarrassed and innocent when talking about (or performing) sexual acts.",
+			"[npc.Name] всегда [npc.verb(act)] смущен и невинный, когда говорит о (или выполняет) сексуальные акты.",
 			"", PresetColour.BASE_BLUE_LIGHT) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
@@ -265,8 +265,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(INNOCENT)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already innocent, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot more innocent)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже не невинный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(чувствуя себя намного более невинным)]!")
 						+ "</p>");
 		}
 		@Override
@@ -274,8 +274,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(INNOCENT)
-								?"[style.colourDisabled([npc.Name] already isn't innocent, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] innocence)]!")
+								?"[style.colourDisabled([npc.Name] уже не невинный, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(теряя [npc.her] невинность)]!")
 						+ "</p>");
 		}
 	},
@@ -283,7 +283,7 @@ public enum PersonalityTrait {
 	PRUDE(false,
 			PersonalityCategory.SEX,
 			"prude",
-			"[npc.Name] [npc.do] not like talking about sexual matters, and [npc.verb(refuse)] to even acknowledge that [npc.she] [npc.verb(know)] anything about such things.",
+			"[npc.Name] [npc.do] не любит говорить о сексуальных вопросах, и [npc.verb(отказаться)] даже признать, что [npc.she] [npc.verb(знать)] что-либо об таких вещах.",
 			"", PresetColour.BASE_BLUE_STEEL) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
@@ -294,8 +294,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(INNOCENT)
-								?"[style.colourDisabled([npc.Name] [npc.isFull] already prude, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(feeling a lot more prude)]!")
+								?"[style.colourDisabled([npc.Name] [npc.isFull] уже пуританка, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(найти)] [npc.herself] [style.colourMinorGood(чувствуя себя намного более пуританкой)]!")
 						+ "</p>");
 		}
 		@Override
@@ -303,7 +303,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(INNOCENT)
-								?"[style.colourDisabled([npc.Name] already isn't prude, so nothing happens...)]"
+								?"[style.colourDisabled([npc.Name] уже не пуританка, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(losing [npc.her] prudish mannerisms)]!")
 						+ "</p>");
 		}
@@ -314,8 +314,8 @@ public enum PersonalityTrait {
 	LISP(false,
 			PersonalityCategory.SPEECH,
 			"lisp",
-			"[npc.Name] [npc.verb(speak)] with a lisp, pronouncing 's' and 'z' as 'th'.",
-			"[style.italicsBad(All of [npc.namePos] in-game speech will be affected by this lisp!)]", PresetColour.BASE_PURPLE_LIGHT) {
+			"[npc.Name] [npc.verb(говорить)] с картавостью, произнося 'с' и 'з' как 'th'.",
+			"[style.italicsBad(Все речи [npc.namePos] в игре будут затронуты этой картавостью!)]", PresetColour.BASE_PURPLE_LIGHT) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(MUTE);
@@ -325,8 +325,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(LISP)
-								?"[style.colourDisabled([npc.Name] already [npc.verb(speak)] with a lisp, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(speaking with a lisp)]!")
+								?"[style.colourDisabled([npc.Name] уже [npc.verb(speak)] с картавостью, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(говорит с картавостью)]!")
 						+ "</p>");
 		}
 		@Override
@@ -334,8 +334,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(LISP)
-								?"[style.colourDisabled([npc.Name] already [npc.do]n't speak with a lisp, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(able to speak without a lisp)]!")
+								?"[style.colourDisabled([npc.Name] уже [npc.do]н'т говорить с картавостью, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(умеет говорить без картавости)]!")
 						+ "</p>");
 		}
 	},
@@ -343,8 +343,8 @@ public enum PersonalityTrait {
 	STUTTER(false,
 			PersonalityCategory.SPEECH,
 			"stutter",
-			"[npc.NameHasFull] a habit of stuttering and stumbling over [npc.her] words as [npc.she] [npc.verb(speak)].",
-			"[style.italicsBad(All of [npc.namePos] in-game speech will be affected by this stutter!)]", PresetColour.BASE_PINK_SALMON) {
+			"[npc.NameHasFull] привычка заикаться и спотыкаться на [npc.her] словах, как [npc.she] [npc.verb(speak)].",
+			"[style.italicsBad(Все [npc.namePos] внутриигровые диалоги будут подвержены этому заиканию!)]", PresetColour.BASE_PINK_SALMON) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(MUTE);
@@ -354,8 +354,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(STUTTER)
-								?"[style.colourDisabled([npc.Name] already [npc.verb(speak)] with a stutter, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(speaking with a stutter)]!")
+								?"[style.colourDisabled([npc.Name] уже [npc.verb(speak)] с заиканием, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(говорит с заиканием)]!")
 						+ "</p>");
 		}
 		@Override
@@ -363,8 +363,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(STUTTER)
-								?"[style.colourDisabled([npc.Name] already [npc.do]n't speak with a stutter, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(able to speak without a stutter)]!")
+								?"[style.colourDisabled([npc.Name] уже [npc.do]н'т говорить с запиной, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(может говорить без запинки)]!")
 						+ "</p>");
 		}
 	},
@@ -372,8 +372,8 @@ public enum PersonalityTrait {
 	MUTE(true,
 			PersonalityCategory.SPEECH,
 			"mute",
-			"[npc.NameIsFull] a mute, and while [npc.she] can make some lewd noises when in the grips of passion, [npc.sheIsFull] otherwise completely unable to speak.",
-			"[style.italicsBad(All of [npc.namePos] in-game speech will be removed!)]", PresetColour.BASE_CRIMSON) {
+			"[npc.NameIsFull] немой, и хотя [npc.she] может издавать некоторые непристойные звуки, когда находится в плену страсти, [npc.sheIsFull] в остальном полностью не может говорить.",
+			"[style.italicsBad(Все [npc.namePos] игровые диалоги будут удалены!)]", PresetColour.BASE_CRIMSON) {
 		@Override
 		public List<PersonalityTrait> getMutuallyExclusiveSettings() {
 			return Util.newArrayListOfValues(LISP, STUTTER, SLOVENLY);
@@ -383,8 +383,8 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (target.hasPersonalityTrait(STUTTER)
-								?"[style.colourDisabled([npc.NameIsFull] already mute, so nothing happens...)]"
-								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(unable to talk)]!")
+								?"[style.colourDisabled([npc.NameIsFull] уже немой, так что ничего не происходит...)]"
+								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(не может говорить)]!")
 						+ "</p>");
 		}
 		@Override
@@ -392,7 +392,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(STUTTER)
-								?"[style.colourDisabled([npc.NameIsFull] already able to speak, so nothing happens...)]"
+								?"[style.colourDisabled([npc.NameIsFull] уже может говорить, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorGood(able to talk)]!")
 						+ "</p>");
 		}
@@ -460,13 +460,13 @@ public enum PersonalityTrait {
 			if(gameplayInformation!=null && !gameplayInformation.isEmpty()) {
 				sb.append("<br/>"+UtilText.parse(character, gameplayInformation));
 			} else {
-				sb.append("<br/>[style.italicsDisabled(No current in-game effects...)]");
+				sb.append("<br/>[style.italicsDisabled(Нет текущих игровых эффектов...)]");
 			}
 		}
 		
 		if(withMutuallyExclusiveInformation) {
 			if(!this.getMutuallyExclusiveSettings().isEmpty()) {
-				sb.append("<br/>[style.colourBad(Mutually exclusive)] with ");
+				sb.append("<br/>[style.colourBad(Взаимоисключающие)] с ");
 				List<String> names = new ArrayList<>();
 				for(PersonalityTrait trait : this.getMutuallyExclusiveSettings()) {
 					names.add("<span style='color:"+trait.getColour().toWebHexString()+";'>"+trait.getName()+"</span>");

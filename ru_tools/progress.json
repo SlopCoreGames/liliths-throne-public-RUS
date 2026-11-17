@@ -11,6 +11,9 @@
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
-    "src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java"
+    "src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java",
+    "src/com/lilithsthrone/game/dialogue/story/CharacterCreation.java",
+    "src/com/lilithsthrone/game/character/persona/PersonalityTrait.java",
+    "src/com/lilithsthrone/game/dialogue/story/LyssiethReveal.java"
   ]
 }
