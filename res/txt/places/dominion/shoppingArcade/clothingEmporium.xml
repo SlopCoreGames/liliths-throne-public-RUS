@@ -5,21 +5,21 @@
 
 	<htmlContent tag="NYAN_EXTERIOR"><![CDATA[
 	<p>
-		Most of the clothing stores in the shopping arcade are small, one-story affairs, with a limited selection of goods on offer. The establishment before you appears to be the exception to this rule, and takes the form of a huge, two-story clothing department bearing the sign 'Nyan's Clothing Emporium'.
+		Большинство магазинов одежды в торговой аркаде — это маленькие одноэтажные лавочки с весьма скромным ассортиментом. Однако заведение перед тобой кажется исключением из этого правила: это огромный двухэтажный универмаг с вывеской «Магазин одежды Nyan".
 	</p>
 	#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<20)
 		<p>
-			Due to the fact that the main doors are propped wide open, as well as there being a constant stream of shoppers entering and exiting the establishment, it's quite clear that this Clothing Emporium is [style.colourGood(open)]. A list of opening times etched into the glass beside the entrance reveals that the [style.colourMinorGood(opening hours are [unit.time(9)]-[unit.time(20)])].
+		Поскольку главные двери широко распахнуты, а покупатели то и дело входят и выходят, совершенно очевидно, что этот магазин [style.colourGood(открыт)]. На стекле рядом со входом выгравирован график работы, согласно которому [style.colourMinorGood(часы работы: [unit.time(9)]-[unit.time(20)])].
 		</p>
 		<p>
-			You wonder if you should head inside, or perhaps come back at another time...
+			Ты раздумываешь, стоит ли заходить внутрь или лучше вернуться в другой раз...
 		</p>
 	#ELSE
 		<p>
-			Due to the fact that the main doors are firmly shut, as well as there being no lights on inside the establishment, it's quite clear that this Clothing Emporium is currently [style.colourBad(closed)]. A list of opening times etched into the glass beside the entrance reveals that the [style.colourMinorBad(opening hours are [unit.time(9)]-[unit.time(20)])].
+			Поскольку главные двери плотно закрыты, а внутри не горит свет, совершенно очевидно, что этот магазин сейчас [style.colourBad(закрыт)]. На стекле рядом со входом выгравирован график работы, согласно которому [style.colourMinorBad(часы работы: [unit.time(9)]-[unit.time(20)])].
 		</p>
 		<p>
-			If you wanted to do some shopping here, or meet Nyan, you'll have to come back at a later time...
+			Если ты хочешь здесь пошопиться или встретиться с Nyan, тебе придётся вернуться позже...
 		</p>
 	#ENDIF
 	]]>
@@ -30,22 +30,22 @@
 	
 	<htmlContent tag="SHOP_CLOTHING"><![CDATA[
 	<p>
-		As the pair of front doors are propped wide open, you're able to swiftly [pc.step] inside and enter the large, modern-looking clothing store. After [pc.walking] around most of the ground floor, and then travelling upstairs to see what's on offer up there, you're able to conclude not only that this must be the largest shop in the arcade, but that it must also be the busiest. Thick crowds of shoppers block many of the aisles that you'd like to [pc.walk] down, and every member of staff that you see is busily occupied with other customers.
+		Пара парадных дверей широко распахнута, так что ты можешь быстро [pc.step] внутрь этого огромного, современного на вид магазина одежды. Обойдя [pc.walking] почти весь первый этаж, а затем поднявшись наверх, чтобы посмотреть, что там предлагают, ты понимаешь: это не только самый большой магазин в торговой аркаде, но и самый людный. Плотные толпы покупателей преграждают путь во многих проходах, по которым тебе хотелось бы [pc.walk], а каждый из встреченных тобой сотрудников по уши занят другими клиентами.
 	</p>
 	<p>
-		Deciding that it's going to be more trouble than it's worth to try and find something worth buying in here, you turn around and start to head for the exit. Just as you start to move, however, you hear a nervous, high-pitched voice quietly calling out from down the aisle to your right-hand side, [nyan.speechNoEffects(E-Excuse me? Erm... C-Can I help you?)]
+		Решив, что попытки найти здесь что-то стоящее принесут больше хлопот, чем пользы, ты разворачиваешься и направляешься к выходу. Но едва ты делаешь первый шаг, как слышишь нервный, высокий голосок, тихо зовущий тебя из прохода справа: [nyan.speechNoEffects(И-извините? Э-эм... М-могу я вам чем-нибудь помочь?)]
 	</p>
 	<p>
-		Turning in the direction that this timid voice came from, you find yourself facing a lesser cat-girl. As you look into her bright blue eyes, her pale cheeks instantly turn a deep shade of red, and she glances down at the floor and starts shuffling her feet as she explains, [nyan.speechNoEffects(I-I saw that none of my staff are free... U-Usually I don't... I-I mean, I'm not really g-good at helping customers, b-but I thought maybe I should try today. Oh, erm, I-I'm Nyan, the m-manager and owner... I probably should have said that first... W-Welcome to my c-clothing emporium...)]
+		Повернувшись на звук этого робкого голоса, ты видишь перед собой невысокую кошкодевочку. Когда ты заглядываешь в её ярко-голубые глаза, её бледные щеки мгновенно заливаются густым румянцем; она опускает взгляд в пол и начинает переминаться с ноги на ногу, объясняя: [nyan.speechNoEffects(Я... я заметила, что все мои сотрудники заняты... О-обычно я не... В-в смысле, у меня не очень п-получается помогать покупателям, н-но я подумала, что сегодня стоит п-попробовать. Ох, э-эм, я Nyan, м-менеджер и владелица... Наверное, мне следовало сказать это сперва... Д-добро пожаловать в мой м-магазин одежды...)]
 	</p>
 	<p>
-		If it wasn't for the fact that she's smartly dressed, with a little name tag pinned to her blouse reading 'Nyan, Store Manager', you're not sure that you would have believed this nervous, stuttering cat-girl to be the store's owner. In an attempt to put her at ease, you ignore the fact that Nyan is visibly trembling and happily explain to her that you were looking for some new clothing, but that due to the crowds, you've been unable to get a good look at what her store has to offer.
+		Если бы не её опрятный вид и маленькая именная карточка, приколотая к блузке с надписью «Nyan, управляющая магазином», ты бы вряд ли поверил, что эта нервная, заикающаяся кошкодевочка — хозяйка заведения. Пытаясь её успокоить, ты старательно игнорируешь тот факт, что Nyan заметно дрожит, и с улыбкой объясняешь ей, что пришел присмотреть себе новую одежду, но из-за толпы никак не удавалось толком рассмотреть ассортимент.
 	</p>
 	<p>
-		[nyan.speechNoEffects(O-Oh, yes, it is r-rather busy today... S-Sorry! Um, well, e-everything we have on display can also b-be found back in our stockroom. I-I don't think it would be a problem for you to... That is... I-I mean... F-Follow me and I'll show you what we've got!)]
+		[nyan.speechNoEffects(О-ох, да, сегодня д-действительно много народу... П-простите! Эм, ну, в-всё, что выставлено в зале, есть и в нашем с-складе. Я д-думаю, вы могли бы... То есть... Я и-имела в виду... И-идите за мной, и я всё вам покажу!)]
 	</p>
 	<p>
-		In what appears to be an almost desperate attempt to escape further conversation, Nyan hurries past you and half-walks, half-runs towards a nearby door which bears a sign reading 'Staff Only'. Doing as she instructed, you follow her through the door into her store's stockroom.
+		В почти отчаянной попытке избежать дальнейшего разговора, Nyan спешно проходит мимо тебя и то ли полушагом, то ли полубегом направляется к ближайшей двери с табличкой «Только для персонала». Как она и велела, ты следуешь за ней в подсобное помещение магазина.
 	</p>
 	]]>
 	</htmlContent>
@@ -55,13 +55,13 @@
 	
 	<htmlContent tag="SHOP_CLOTHING_STOCK_ROOM"><![CDATA[
 	<p>
-		The stockroom of Nyan's Clothing Emporium looks pretty much exactly as you'd expected it be. Ceiling-height shelving units are stocked full of clothes, shoes, and accessories of all different sorts, and there's a distinctive 'new clothing' smell lingering in the air.
+		Склад «Магазина одежды Nyan» выглядит именно так, как ты и ожидал. Стеллажи до самого потолка забиты одеждой, обувью и самыми разными аксессуарами, а в воздухе витает тот самый характерный запах новой одежды.
 	</p>
 	<p>
-		Nyan's heels clatter across the laminate flooring as she hurries to retrieve a notepad that she uses to track what's currently in stock. Rushing back over to you, she fumbles with the little pad and almost drops it on the floor. [nyan.speechNoEffects(A-Ah! S-Sorry, I don't usually interact with customers, s-so sorry if I'm a little unprofessional... A-Anyway, let me know what you'd like t-to see, and I'll show y-you what I've got in stock!)]
+		Каблуки Nyan громко цокают по ламинату, пока она спешит за блокнотом, в котором отмечает наличие товара. Подбежав к тебе, она судорожно возится с маленькой тетрадкой и чуть не роняет её на пол. [nyan.speechNoEffects(А-ах! П-прости! Я обычно не общаюсь с покупателями, т-так что извини, если веду себя немного непрофессионально... В-в любом случае, скажи, что ты х-хотел бы посмотреть, и я п-покажу, что у меня есть в наличии!)]
 	</p>
 	<p>
-		You start to thank the nervous cat-girl, but she suddenly squeaks out and cuts you off, [nyan.speechNoEffects(O-Oh! A-and I forgot! I-I was going to do a t-trial of offering to buy old clothes from customers, s-so if you wanted to, I-I could buy some old clothing from you...	 O-Oh, I interrupted you... S-Sorry...)]
+		Ты только собираешься поблагодарить нервную кошкодевочку, как она вдруг пискнула и перебила тебя: [nyan.speechNoEffects(О-ой! И я з-забыла! Я х-хотела попробовать выкупать старую одежду у покупателей, т-так что, если хочешь, я м-могла бы купить у тебя какие-нибудь старые вещи... О-ой, я тебя прервала... П-прости...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -71,159 +71,159 @@
 	
 	<htmlContent tag="SHOP_CLOTHING_REPEAT_NO_NYAN"><![CDATA[
 	<p>
-		Stepping through the open pair of wide, glass doors, you find 'Nyan's Clothing Emporium' to be just as busy as ever. Crowds of shoppers block almost every aisle, and every single member of staff who you see is already occupied with other customers. 
+		Переступив порог широких стеклянных дверей, ты видишь, что в «Магазине одежды Nyan» по-прежнему полно народу. Толпы покупателей забивают почти все проходы, а каждый сотрудник, которого ты видишь, уже занят другими клиентами.
 	</p>
 	<p>
-		As it's currently the weekend, you know that your girlfriend is not coming into work today, and so you head straight over to the stockroom. Having been given both Nyan's key and permission to do so, you could always unlock the door and head inside in order to see what items she's marked as being for sale...
+		Так как сейчас выходной, ты знаешь, что твоя девушка сегодня не на работе, поэтому ты направляешься прямиком к складу. Имея на руках ключ от Nyan и её разрешение, ты всегда можешь отпереть дверь и зайти внутрь, чтобы посмотреть, какие вещи она отметила для продажи...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_HIDING_NEXT_DAY"><![CDATA[
 	<p>
-		Stepping through the open pair of wide, glass doors, you find 'Nyan's Clothing Emporium' to be just as busy as ever. Crowds of shoppers block almost every aisle, and every single member of staff who you see is already occupied with other customers.
+		Переступая через распахнутые широкие стеклянные двери, ты видишь, что в «Магазине одежды Nyan» по-прежнему полно народу. Толпы покупателей загромождают почти все проходы, а каждый сотрудник, которого ты встречаешь, уже занят другими клиентами.
 	</p>
 	<p>
-		Hoping that you'll be able to find Nyan here today, you start to scan around for any sign of the nervous cat-girl. After just a minute of searching, you suddenly hear a familiar squeak coming from behind you, [nyan.speechNoEffects([pc.Name]? S-Sorry that I-I ran off before...)]
+		Надеясь, что сегодня тебе удастся найти здесь Nyan, ты начинаешь оглядываться в поисках хоть какого-то признака присутствия этой нервной кошкодевочки. Спустя всего минуту поисков ты внезапно слышишь за спиной знакомый писк: [nyan.speechNoEffects([pc.Name]? П-прости, что я... я так сбежала...)]
 	</p>
 	<p>
-		You turn around to see Nyan sheepishly looking down at her feet as she shuffles them about on the shop's laminate flooring. Wringing her hands together, she interrupts your greeting by hastily blurting out, [nyan.speechNoEffects(I-I received the enchanted c-clothing shipment from Kay this morning, t-thanks to you! And... Erm... Also...)]
+		Ты оборачиваешься и видишь Nyan: она застенчиво смотрит себе под ноги, переминаясь с ноги на ногу на ламинате магазина. Сжимая и разжимая руки, она прерывает твое приветствие, поспешно выпаливая: [nyan.speechNoEffects(Я... я получила партию зачарованной о-одежды от Kay сегодня утром, б-благодаря тебе! И... Эм... А еще...)]
 	</p>
 	<p>
-		The cat-girl's pale cheeks start to flush red as her voice trails off, but before you're able to ask what's wrong, she looks up and desperately exclaims, [nyan.speechNoEffects(P-Please, I want to t-tell you something! F-Follow me!)]
+		Бледные щеки кошкодевочки начинают заливаться румянцем, и её голос затихает, но прежде чем ты успеваешь спросить, что не так, она вскидывает на тебя взгляд и отчаянно восклицает: [nyan.speechNoEffects(П-пожалуйста, я х-хочу тебе кое-что сказать! И-иди за мной!)]
 	</p>
 	<p>
-		Turning around on the spot, the cat-girl starts to rush over to the same storeroom which she's shown you into before. Curious to hear what it is she's got to tell you, and eager to see what sort of enchanted clothing she might have for sale, you decide to do as Nyan asks and follow her into the storeroom...
+		Развернувшись на месте, кошкодевочка поспешно направляется к той самой кладовой, которую уже показывала тебе раньше. Заинтригованный тем, что она хочет поведать, и желая поскорее взглянуть на зачарованную одежду, выставленную на продажу, ты решаешь последовать совету Nyan и идешь за ней в подсобку...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_HIDING"><![CDATA[
 	<p>
-		Stepping through the open pair of wide, glass doors, you find 'Nyan's Clothing Emporium' to be just as busy as ever. Crowds of shoppers block almost every aisle, and every single member of staff who you see is already occupied with other customers. 
+		Переступив порог широких стеклянных дверей, ты видишь, что в «Магазине одежды Nyan» по-прежнему полно народу. Толпы покупателей забивают почти все проходы, а каждый сотрудник, которого ты видишь, уже занят другими клиентами.
 	</p>
 	<p>
-		After taking a short while to search for her, you're disappointed to discover that there's absolutely no sign of Nyan. Heading over to the stockroom which she'd shown you into before, you find that not only is the door securely locked, but the store's nervous owner is still nowhere to be seen.
+		Потратив некоторое время на поиски, ты с разочарованием понимаешь, что Nyan нигде не видно. Ты направляешься к складу, который она показывала тебе раньше, и обнаруживаешь, что дверь не только плотно заперта, но и нервная хозяйка лавки до сих пор куда-то исчезла.
 	</p>
 	<p>
-		Recalling how embarrassed she was the last time you saw her, you realise that Nyan must have either run off home or gone into hiding somewhere in her store. With no hope of meeting her again today, nor getting any shopping done, there's nothing more for you to do but leave and return to try and find her tomorrow...
+		Вспоминая, как она смущалась при вашей последней встрече, ты понимаешь, что Nyan либо убежала домой, либо спряталась где-то в своей лавке. Не надеясь встретить её сегодня и не сумев ничего купить, тебе остаётся только уйти и вернуться завтра, чтобы попытаться найти её снова...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_GREETING_REPEAT"><![CDATA[
 	<p>
-		Stepping through the open pair of wide, glass doors, you find 'Nyan's Clothing Emporium' to be just as busy as ever. Crowds of shoppers block almost every aisle, and every single member of staff who you see is already occupied with other customers.
+		Переступая через распахнутые широкие стеклянные двери, ты видишь, что в «Магазине одежды Nyan» по-прежнему полно народу. Толпы покупателей загромождают почти все проходы, а каждый сотрудник, которого ты встречаешь, уже занят другими клиентами.
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_nyanmumInterviewPassed))
 		<p>
-			Scanning around for any sign of your girlfriend, you suddenly hear a familiar voice call out from behind you, [nyan.speechNoEffects([pc.Name]!)]
+			Оглядываясь в поисках своей девушки, ты вдруг слышишь за спиной знакомый голос: [nyan.speechNoEffects([pc.Name]!)]
 		</p>
 		<p>
-			You turn around to see Nyan happily smiling at you, and after you've returned her greeting, she coyly teases,
+			Ты оборачиваешься и видишь счастливо улыбающуюся Nyan. Когда ты отвечаешь ей на приветствие, она кокетливо поддразнивает тебя:
 			#IF(!game.getDialogueFlags().hasFlag(FLAG_nyanmumDateCompleted))
-				 [nyan.speechNoEffects(So, have you got plans for this weekend? My mum seems pretty excited about the prospect of it...)]
+				 [nyan.speechNoEffects(Ну что, у тебя есть планы на эти выходные? Моя мама, кажется, в предвкушении...)]
 			#ELSEIF(game.getDialogueFlags().hasFlag(FLAG_nyanmumGirlfriend))
-				 [nyan.speechNoEffects(So, have you got plans for this weekend? Mum and I would really like to go on another date with you...)]
+				 [nyan.speechNoEffects(Ну что, у тебя есть планы на эти выходные? Мы с мамой очень хотели бы снова сходить с тобой на свидание...)]
 			#ELSE
-				 [nyan.speechNoEffects(So, have you got plans for this weekend? I'd really like to go on another date with you...)]
+				 [nyan.speechNoEffects(Ну что, у тебя есть планы на эти выходные? Я бы очень хотела снова сходить с тобой на свидание...)]
 			#ENDIF
 		</p>
 		<p>
-			After telling her that she'll have to wait and see, Nyan grins and playfully swishes her tail around behind her. There's no doubt that she's significantly more confident than when you first met her, and you notice that the cat-girl's stutter has completely vanished as she points behind her and says, [nyan.speechNoEffects(Come on, I can show you the stockroom again if you'd like! Follow me!)]
+			Сказав ей, что ей придется подождать и увидеть всё самой, Nyan довольно ухмыляется и игриво виляет хвостом. Нет сомнений, что она стала куда увереннее, чем при вашей первой встрече; ты замечаешь, что заикание кошкодевочки полностью исчезло, когда она указывает на дверь позади себя и говорит: [nyan.speechNoEffects(Да ладно тебе, я могу снова показать тебе склад, если хочешь! Иди за мной!)]
 		</p>
 	#ELSEIF(game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
 		#IF(game.getDialogueFlags().hasFlag(FLAG_nyanApologised))
 			<p>
-				Scanning around for any sign of your girlfriend, you suddenly hear a familiar voice call out from behind you, [nyan.speechNoEffects([pc.Name]!)]
+				Оглядываясь в поисках своей девушки, ты вдруг слышишь позади знакомый голос: [nyan.speechNoEffects([pc.Name]!)]
 			</p>
 			<p>
-				You turn around to see Nyan happily smiling at you, but after you've returned her greeting, her smile disappears and she awkwardly mutters, [nyan.speechNoEffects(Sorry about my m-mum... She gets r-really over-protective of me...)]
+				Ты оборачиваешься и видишь счастливо улыбающуюся Nyan, но стоит тебе ответить ей на приветствие, как её улыбка исчезает, и она неловко бормочет: [nyan.speechNoEffects(Прости за мою м-маму... Она о-очень сильно меня опекает...)]
 			</p>
 			<p>
-				After telling her that there's no need to apologise, you're relieved to see the smile return to Nyan's face. Although she seems a lot more confident than when you first met, you notice that the cat-girl's stutter hasn't entirely vanished as she points behind her and says, [nyan.speechNoEffects(Come on, I-I can show you the stockroom again if you'd like! F-Follow me!)]
+				Сказав ей, что извиняться не стоит, ты с облегчением видишь, как на лицо Nyan возвращается улыбка. Хотя она кажется гораздо увереннее, чем при первой встрече, ты замечаешь, что заикание кошкодевочки не исчезло до конца, когда она указывает на дверь позади себя и говорит: [nyan.speechNoEffects(Да ладно тебе, я-я могу снова показать тебе склад, если хочешь! И-иди за мной!)]
 			</p>
 		#ELSE
 			<p>
-				Scanning around for any sign of your girlfriend, you suddenly hear a familiar voice call out from behind you, [nyan.speechNoEffects([pc.Name]!)]
+				Оглядываясь в поисках своей девушки, ты вдруг слышишь позади знакомый голос: [nyan.speechNoEffects([pc.Name]!)]
 			</p>
 			<p>
-				You turn around to see Nyan happily smiling at you, and after you've returned her greeting, she exclaims, [nyan.speechNoEffects(Come on, I-I can show you the stockroom again if you'd like! F-Follow me!)]
+				Ты оборачиваешься и видишь счастливо улыбающуюся Nyan, и после того как ты отвечаешь ей на приветствие, она восклицает: [nyan.speechNoEffects(Да ладно тебе, я-я могу снова показать тебе склад, если хочешь! И-иди за мной!)]
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Scanning around for any sign of the store's nervous owner, you suddenly hear a familiar squeak coming from behind you, [nyan.speechNoEffects(A-Ah! H-Hello again!)]
+			Оглядываясь по сторонам в поисках взволнованной хозяйки лавки, ты вдруг слышишь за спиной знакомый писк: [nyan.speechNoEffects(А-а! С-снова привет!)]
 		</p>
 		<p>
-			You turn around to see Nyan looking down at her feet as she shuffles them about on the shop's laminate flooring. [pc.speech(Hi, Nyan, how are y-)]
+			Ты оборачиваешься и видишь Nyan: она смотрит себе под ноги, неловко переминаясь с ноги на ногу на ламинате магазина. [pc.speech(Привет, Nyan, как ты...)]
 		</p>
 		<p>
-			[nyan.speechNoEffects(I-I'm fine! T-Thanks for asking,)] Nyan bursts out, interrupting you in her haste to answer. Pointing behind her, she continues, [nyan.speechNoEffects(I-I can show you the stockroom again if y-you'd like! F-Follow me!)]
+			[nyan.speechNoEffects(В-всё хорошо! С-спасибо, что спросил,)] — выпаливает Nyan, торопливо перебивая тебя. Указав себе за спину, она продолжает: [nyan.speechNoEffects(Я... я могу снова показать тебе склад, если х-хочешь! И-иди за мной!)]
 		</p>
 	#ENDIF
 	<p>
-		Doing as she says, you follow Nyan into her store's stockroom once again. As the door swings shut, you wonder what to take a look at this time...
+		Повинуясь её словам, ты снова следуешь за Nyan на склад магазина. Когда дверь за вами закрывается, ты гадаешь, на что же взглянуть на этот раз...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_GREETING_REPEAT_PREGNANT"><![CDATA[
 	<p>
-		Entering the store, you're surprised to find that Nyan is nowhere in sight. Pushing through the throngs of people, you manage to catch one of the employees not busy with a customer, and upon asking after Nyan, you're pointed in the direction of the stock room.
+		Зайдя в магазин, ты с удивлением обнаруживаешь, что Nyan нигде не видно. Пробираясь сквозь толпу людей, тебе удается поймать одного из сотрудников, не занятого покупателем, и когда ты спрашиваешь о Nyan, тебе указывают направление к складу.
 	</p>
 	<p>
-		Entering the familiar room, you discover that Nyan is indeed in here, murmuring to herself behind a stack of boxed clothing. Wringing her hands and staring at her feet, something has quite clearly got her more worked up than usual, and you notice that she jumps a little as she sees you approach.
+		Войдя в знакомую комнату, ты обнаруживаешь, что Nyan действительно здесь: она что-то бормочет себе под нос за стопкой коробок с одеждой. Она заламывает руки и уставилась в пол — очевидно, что сейчас она взволнована сильнее обычного, и ты замечаешь, как она слегка вздрагивает, заметив твое приближение.
 	</p>
 	<p>
-		[pc.speech(What's wrong, Nyan?)] you ask, concerned by how she appears to have lost all of her confidence.
+		[pc.speech(Что случилось, Nyan?)] — спрашиваешь ты, обеспокоенный тем, как она внезапно утратила всю свою уверенность.
 	</p>
 	<p>
-		[nyan.speechNoEffects(O-Oh... well um...)] she says haltingly. [nyan.speechNoEffects(Do y-you remember when w-we... you know...)] She blushes fiercely and says in a very quiet voice, [nyan.speechNoEffects(Had s-sex...?)]
+		[nyan.speechNoEffects(О-ох... ну... эм...)] — прерывисто произносит она. [nyan.speechNoEffects(Т-ты помнишь, как м-мы... ну, ты понимаешь...)] Она густо краснеет и шепчет совсем тихо: [nyan.speechNoEffects(Занимались с-сексом...?)]
 	</p>
 	<p>
-		You smile at the memory and nod. Nyan smiles nervously back, before continuing, [nyan.speechNoEffects(W-Well my tummy felt a little funny a-after so I took a t-test and... a-and...)] She closes her eyes and takes a deep breath, bunching up the bottom of her skirt as if gathering her courage before blurting out, [nyan.speechNoEffects(I'm pregnant with your baby!)]
+		Ты улыбаешься этому воспоминанию и киваешь. Nyan нервно улыбается в ответ, а затем продолжает: [nyan.speechNoEffects(Н-ну, после этого в животе было как-то с-странно, так что я сделала т-тест и... и...)] Она закрывает глаза и делает глубокий вдох, комкая подол своей юбки, словно собираясь с духом, прежде чем выпалить: [nyan.speechNoEffects(Я беременна от тебя!)]
 	</p>
 	<p>
-		After her outburst, she just stands there; eyes scrunched closed, trembling hands clenching her skirt, she seems to be waiting for an admonishment. Stepping forwards, you sweep her into your arms, wishing that you'd been able to record the surprised squeak that bursts out of her mouth. She blinks in surprise as you hold her close, before pulling back a little and staring at you with open-mouthed shock. [nyan.speechNoEffects(W-W-What? You're not a-angry?)]
+		После своего эмоционального порыва она просто замирает; глаза зажмурены, дрожащие руки вцепились в юбку — кажется, она ждет выговора. Сделав шаг вперед, ты подхватываешь её на руки, жалея лишь о том, что не смог запечатлеть тот удивленный писк, что вырвался у неё из уст. Она удивленно хлопает ресницами, пока ты прижимаешь её к себе, а затем слегка отстраняется и смотрит на тебя, разинув рот от шока. [nyan.speechNoEffects(Ч-ч-что? Ты не з-злишься?)]
 	</p>
 	<p>
-		You hold her at arm's length for a moment, smiling as you shake your head. [pc.speech(Why would I be angry? This is great news!)]
+		Ты на мгновение держишь её на расстоянии вытянутой руки, улыбаясь и качая головой. [pc.speech(С чего бы мне злиться? Это же отличная новость!)]
 	</p>
 	<p>
-		A visible tension seems to melt from her entire being as the nervous cat-girl cutely smiles back and snuggles into your [pc.arms]. The confidence which she'd gained over the course of your relationship soon returns, and she asks, [nyan.speechNoEffects(Will you come by and visit from time to time?)]
+		Заметное напряжение, казалось, покидает всё её существо: нервная кошкодевочка мило улыбается в ответ и прижимается к твоему [pc.arms]. Уверенность, которую она обрела за время ваших отношений, вскоре возвращается, и она спрашивает: [nyan.speechNoEffects(Ты будешь заходить к нам время от времени?)]
 	</p>
 	<p>
-		You instantly agree, and can't help but grin as you notice that she's looking happier than you've ever seen her before. Still nestled against your chest, Nyan asks, [nyan.speechNoEffects(Did you need something while we're in here?)]
+		Ты мгновенно соглашаешься и невольно расплываешься в улыбке, замечая, что она выглядит счастливее, чем когда-либо прежде. Все еще прижимаясь к твоей груди, Nyan спрашивает: [nyan.speechNoEffects(Тебе нужно что-нибудь купить, пока мы здесь?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_HIDING_LEAVE"><![CDATA[
 	<p>
-		With the nervous cat-girl nowhere to be seen, you [pc.walk] over to the store's
+		Поскольку нервничающей кошкодевочки нигде не видно, ты [pc.walk] к выходу из
 		#IF(!game.isHourBetween(9, 20))
-			 exit and
+			 магазина и
 		#ELSE
-			 exit, and after having to push your way through a crowd of customers who're loitering around the large glass doors, you
+			 выходишь. Протиснувшись сквозь толпу покупателей, толпящихся у больших стеклянных дверей, ты
 		#ENDIF
-		 head back out into the shopping arcade. Hopefully you'll be able to meet Nyan if you return here tomorrow...
+		 возвращаешься обратно в торговую галерею. Надеешься, что сможешь встретить Nyan, если вернешься сюда завтра...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SHOP_CLOTHING_REPEAT_GIRLFRIEND"><![CDATA[
 	<p>
-		Having changed your mind about Nyan's earlier proposition, you tell her that you've been thinking about her offer of becoming her [pc.girlfriend]. As you reveal that you'd love to start a relationship with her, the cute cat-girl lets out an excited squeak, and after grabbing the book which she showed to you earlier, she holds it up to cover her blushing cheeks and declares, [nyan.speechNoEffects(T-This is just like i-in my books! N-Now we have to g-get to know one another b-before we can... I-I mean... D-Do the thing together...)]
+		Передумав насчет недавнего предложения Nyan, ты говоришь ей, что раздумывал над ее предложением стать ее [pc.girlfriend]. Когда ты признаешься, что хотел бы начать с ней отношения, милая кошкодевочка издает восторженный писк; схватив ту самую книгу, которую она показывала тебе раньше, она прижимает ее к своим раскрасневшимся щекам и заявляет: [nyan.speechNoEffects(Э-это прямо как в м-моих книжках! Т-теперь нам нужно п-познакомиться п-перед тем, как мы сможем... Я-я имею в виду... С-сделать ЭТО вместе...)]
 	</p>
 	<p>
-		From the influence of her romance novels, Nyan clearly has some pre-defined notions about what being your girlfriend is going to entail. Not wanting to do anything which would bring your relationship to an end before it's even begun, you decide to play along with the nervous cat-girl and take things at a pace which she's comfortable with.
+		Под влиянием своих любовных романов Nyan явно сформировала определенные представления о том, что значит быть твоей девушкой. Не желая совершить что-то, что положит конец вашим отношениям еще до их начала, ты решаешь подыграть нервной кошкодевочке и двигаться в том темпе, который будет ей комфортен.
 	</p>
 	<p>
-		[nyan.speechNoEffects(S-So... N-Now we...)] Nyan stutters, pausing for a moment before looking at you with her big blue eyes and suggesting, [nyan.speechNoEffects(We c-could talk for a w-while... I-I am your girlfriend now, after all, s-so you should g-get to know me a little better...)]
+		[nyan.speechNoEffects(Т-так... Т-теперь мы...)] Nyan заикается, на мгновение замирая, а затем смотрит на тебя своими огромными голубыми глазами и предлагает: [nyan.speechNoEffects(Мы м-могли бы поболтать ч-чуток... В-ведь теперь я твоя девушка, т-так что тебе с-стоит узнать меня получше...)]
 	</p>
 	<p>
-		With your nervous girlfriend still clutching her book up to her face and timidly shuffling her feet, you realise that any attempt to do more than talk to her will surely result in her suffering from a panic attack. Giving her your most disarming look, you wonder what to ask of Nyan...
+		Твоя нервничающая девушка всё ещё прижимает книгу к лицу и робко переминается с ноги на ногу, и ты понимаешь, что любая попытка сделать что-то большее, чем просто разговор, наверняка вызовет у неё паническую атаку. Одарив её самым обезоруживающим взглядом, ты гадаешь, о чём же попросить Nyan...
 	</p>
 	]]>
 	</htmlContent>
@@ -231,50 +231,51 @@
 	<htmlContent tag="NYAN_EXIT"><![CDATA[
 	#IF(!game.getCharactersPresent().contains(nyan))
 		<p>
-			Deciding that it's time to leave, you make your way back out through the store to the exit.
+		
+Решив, что пора уходить, ты направляешься через весь магазин к выходу.
 			#IF(!game.isHourBetween(9, 20))
-				 Heading back out into the Arcade, you wonder what to do next...
+				 Выходя обратно в Торговую Аркаду, ты раздумываешь, чем заняться дальше...
 			#ELSE
-				 Having to push your way through a crowd of customers that's loitering around the glass doors, you head back out into the Arcade and wonder what to do next...
+				 Пробираясь сквозь толпу покупателей, толпящихся у стеклянных дверей, ты выходишь обратно в Торговую Аркаду и гадаешь, что делать дальше...
 			#ENDIF
 		</p>
 	#ELSEIF(game.getDialogueFlags().hasFlag(FLAG_nyanmumInterviewPassed))
 		<p>
-			Thanking Nyan for her time, you explain to her that you need to get going now. Putting her little notepad away, she cheekily plants a quick kiss on your cheek, before exclaiming, [nyan.speechNoEffects(Thanks for dropping by, [pc.name]! I'll see you again this weekend, right?)]
+			Поблагодарив Nyan за уделенное время, ты объясняешь ей, что тебе пора идти. Убрав свой блокнотик, она озорно быстро целует тебя в щеку и восклицает: [nyan.speechNoEffects(Спасибо, что заглянул, [pc.name]! Увидимся на этих выходных, правда?)]
 		</p>
 		<p>
-			Telling your girlfriend that you'll do your best to make time for another date with her, you give her a quick kiss goodbye and exit the stockroom. Making your way to the store's
+			Обещаешь своей девушке, что постараешься найти время для следующего свидания, быстро целуешь её на прощание и выходишь из подсобки. Направляясь к
 			#IF(!game.isHourBetween(9, 20))
-				 exit, you head back out into the Arcade and wonder what to do next...
+				 выходу, ты возвращаешься в Торговую Аркаду и раздумываешь, чем заняться дальше...
 			#ELSE
-				 exit, you have to push your way through a crowd of customers that's loitering around the glass doors, before finally heading back out into the Arcade and wondering what to do next...
+				 выходишь наружу, проталкиваясь сквозь толпу покупателей, столпившихся у стеклянных дверей, и наконец возвращаешься в Торговую аркаду, раздумывая, чем заняться дальше...
 			#ENDIF
 		</p>
 	#ELSEIF(game.getDialogueFlags().hasFlag(FLAG_nyanRestaurantDateCompleted))
 		<p>
-			Thanking Nyan for her time, you explain to her that you need to get going now. Putting her little notepad away, she exclaims, [nyan.speechNoEffects(Thanks for d-dropping by, [pc.name]! I'll see you again this w-weekend, right?)]
+			Поблагодарив Nyan за уделенное время, ты объясняешь ей, что тебе пора идти. Убирая свой блокнотик, она восклицает: [nyan.speechNoEffects(С-спасибо, что заглянул, [pc.name]! Увидимся на э-этот выходных, верно?)]
 		</p>
 		<p>
-			Telling your girlfriend that you'll do your best to make time for another date with her, you give her a quick kiss goodbye and exit the stockroom. Making your way to the store's
+			Обещаешь своей девушке, что постараешься найти время для следующего свидания, быстро целуешь её на прощание и выходишь из подсобки. Направляясь к
 			#IF(!game.isHourBetween(9, 20))
-				 exit, you head back out into the Arcade and wonder what to do next...
+				 выходу, ты возвращаешься в Торговую Аркаду и раздумываешь, чем заняться дальше...
 			#ELSE
-				 exit, you have to push your way through a crowd of customers that's loitering around the glass doors, before finally heading back out into the Arcade and wondering what to do next...
+				 выходишь наружу, проталкиваясь сквозь толпу покупателей, столпившихся у стеклянных дверей, и наконец возвращаешься в Торговую аркаду, раздумывая, чем заняться дальше...
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			Thanking Nyan for her time, you explain to her that you need to get going now. Hurrying to put her little notepad away, she stutters, [nyan.speechNoEffects(W-well, thanks for choosing to s-shop here! If you ever want t-to come back, just find me and I-I'll show you what's in stock back here!)]
+			Поблагодарив Nyan за уделенное время, ты объясняешь ей, что тебе пора идти. Поспешно убирая свой блокнотик, она заикается: [nyan.speechNoEffects(Ч-что ж, спасибо, что выбрал наш м-магазин! Если захочешь в-вернуться, просто найди меня, и я п-покажу тебе, что у нас есть на складе!)]
 		</p>
 		<p>
-			Before you can respond, Nyan turns around and runs off deeper into the stockroom. You're pretty sure that there aren't any other exits in that direction, and that she was just unable to continue the conversation any longer.
+			Прежде чем ты успеваешь ответить, Nyan разворачивается и убегает вглубь склада. Ты почти уверен, что в той стороне нет других выходов, и она просто не смогла больше продолжать разговор.
 		</p>
 		<p>
-			[pc.Stepping] out of the stockroom, you make your way through the store to the exit.
+			[pc.Stepping] из склада, ты идешь через весь магазин к выходу.
 			#IF(!game.isHourBetween(9, 20))
-				 Heading back out into the Arcade, you wonder what to do next...
+				 Выходя обратно в Торговую Аркаду, ты раздумываешь, чем заняться дальше...
 			#ELSE
-				 Having to push your way through a crowd of customers that's loitering around the glass doors, you head back out into the Arcade and wonder what to do next...
+				 Пробираясь сквозь толпу покупателей, толпящихся у стеклянных дверей, ты выходишь обратно в Торговую Аркаду и гадаешь, что делать дальше...
 			#ENDIF
 		</p>
 	#ENDIF
@@ -286,34 +287,33 @@
 	
 	<htmlContent tag="SHOP_ENCHANTED_CLOTHING"><![CDATA[
 	<p>
-		As you look around Nyan's stockroom, you can't help but notice the fact that all of her wares are very <i>ordinary</i>. You'd expected to have seen at least one or two items of enchanted clothing in a store as large as this, but there's no sign of anything out of the ordinary on any of the shelves. Turning to face the nervous cat-girl who's been hovering at your side, you tell her what's on your mind and ask her if she's got any enchanted clothing hidden away somewhere nearby.
+		Оглядывая склад Nyan, ты невольно замечаешь, что все её товары до боли <i>обычны</i>. В таком огромном магазине ты ожидал увидеть хотя бы пару вещей с зачарованием, но на полках нет ни намека на что-то необычное. Повернувшись к нервной кошкодевочке, которая всё это время крутилась рядом, ты делишься своими мыслями и спрашиваешь, нет ли у неё где-нибудь припрятанной зачарованной одежды.
 	</p>
 	<p>
-		[nyan.speechNoEffects(O-Oh... W-Well, erm, you see, I-I used to, but then Kay s-stopped sending the usual shipments, a-and when I went over t-to his warehouse to try and contact him, the receptionist t-told me that 'someone l-like me' would be in danger i-if I tried to see him!)] Nyan blurts out, tripping over her words in her haste to offer you this patchy explanation. Nervously wringing her delicate, paw-like hands together, she makes a series of quick bows and blurts out an apology, [nyan.speechNoEffects(I-I'm really sorry, b-but that's why I don't have any enchanted clothing to sell to you!)]
+		[nyan.speechNoEffects(О-о... Н-ну, видите ли, р-раньше была, но потом Кей п-перестал присылать привычные партии, а к-когда я пошла к нему н-на склад, чтобы попытаться связаться, регистратор с-сказала, что «кто-то п-подобный мне» будет в опасности, ес-если попытается его увидеть!)] — выпаливает Nyan, запинаясь от спешки, с которой пытается оправдаться. Нервно заламывая свои изящные лапки, она семенит в нескольких быстрых поклонах и выпаливает извинение: [nyan.speechNoEffects(М-мне правда очень жаль, н-но именно поэтому у меня нет для вас зачарованной одежды!)]
+	</p>
+	<p>		Понимая, что история Nyan звучит лишь наполовину, и гадая, что это за персонаж такой — Кей, ты ободряюще улыбаешься кошкодевочке и просишь её рассказать всё как есть. В конце концов, это может оказаться проблемой, которую ты вполне способен для неё решить.
 	</p>
 	<p>
-		With Nyan's story seemingly only half-told, and wondering who this 'Kay' character could be, you give the cat-girl a reassuring smile and ask her if she could tell you the whole story. After all, this could turn out to be a problem which you're able to solve for her.
+		Твой запрос на подробности, кажется, оказался для Nyan слишком тяжелым бременем. Прижав лапки к тяжело вздымающейся груди, она зажмуривается и пытается сосредоточиться на том, чтобы унять прерывистое дыхание. Не желая утомлять хрупкую кошкодевочку, ты хранишь молчание, ожидая, когда она придет в состояние, в котором ей будет комфортно отвечать. Пока ты стоишь в тишине, ты невольно задумываешься о том, какое это чудо — что при всей её крайней нервозности Nyan каким-то образом сумела подняться до положения владелицы собственного магазина.
 	</p>
 	<p>
-		Your request for more information seems a little too much for Nyan to handle, and, reaching up to place her paw-like hands on her heaving chest, she scrunches her eyes closed and tries to focus on getting her rapid breathing under control. Not wanting to exasperate the delicate cat-girl, you keep quiet and wait for her to get into a state in which she'd be comfortable responding. As you stand there in silence, you take a moment to think about how miraculous it is, considering her extreme nervousness, for Nyan to have somehow risen to the position of owning her own store.
+		Прежде чем ты успеваешь развить эту мысль, дыхание кошкодевочки выравнивается. Открыв глаза, она улыбается тебе и умудряется говорить без единого заикания: [nyan.speechNoEffects(Прости за это... Иногда меня накрывает, но у меня есть дыхательное упражнение, которое помогает избежать панической атаки... Так что сейчас я должна быть в порядке...)]
 	</p>
 	<p>
-		Before you're able to give that curiosity much more thought, the cat-girl's breathing slows down to a steady rate. Opening her eyes, she smiles at you and manages to talk without stuttering even once, [nyan.speechNoEffects(Sorry about that... I can get a little overwhelmed sometimes, but I have that breathing exercise I can do to avoid having a panic attack... I should be ok for a little while now...)]
+		Выразив облегчение тем, что ей стало лучше, ты снова спрашиваешь Nyan, может ли она рассказать подробнее о проблемах с поставками зачатой одежды и о том, кто такой Kay.
 	</p>
 	<p>
-		Expressing your relief that she's feeling better, you once again ask Nyan if she can tell you more about the issue with her supply of enchanted clothing, and who Kay is.
+		[nyan.speechNoEffects(Конечно,)] — отвечает она, — [nyan.speechNoEffects(Kay — это оптовый поставщик, у которого я всегда закупала зачатую одежду. Он был так добр и услужлив с самого первого дня нашего знакомства, и с самого начала у нас сложились дружеские деловые отношения. Так было до тех пор, пока несколько недель назад...)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(Of course,)] she replies, [nyan.speechNoEffects(Kay is the wholesale supplier I've always used as my source of enchanted clothing. He's been so helpful and kind ever since I was first put in touch with him, and right from the start we've had a friendly business relationship. That was, until a few weeks ago...)]
+		Nyan издает страдальческий вздох; ты видишь, что самообладание, которого она пыталась достичь с помощью дыхательных упражнений, стремительно тает. Нервно теребя пальцами края одежды, она объясняет: [nyan.speechNoEffects(Я п-пыталась изо всех сил, н-но просто не могу понять, п-почему он вдруг перестал п-присылать привычные партии товара. Е-его бизнес всё еще работает, но он п-проигнорировал к-каждое мое письмо. К-как я уже говорила, в конце концов мне с-собралось с духом пойти и п-попытаться увидеть его л-лично, но когда я пришла, р-ресепшионистница так н-недоуменно на меня взглянула и п-попросила уйти! Д-должно быть, я что-то сделала не так! Я... я в-вообще не помню, чтобы говорила или д-делала что-то не то!)]
 	</p>
 	<p>
-		Nyan lets out a distressed sigh, and you can tell that the composure she gained from performing her breathing exercises is quickly starting to waver. Nervously fidgeting, she explains, [nyan.speechNoEffects(I've tried as hard as I can, b-but I just can't think of any reason why he'd suddenly stop s-sending the usual shipments. H-His business is s-still operating, but he's ignored e-every letter I've sent him. A-As I mentioned before, I eventually m-managed to summon the c-courage to go and try to see him i-in person, but when I got there, t-the receptionist gave me this w-worried look and t-told me to leave! I-It must have been something I did! I-I don't... I-I can't remember saying or d-doing anything wrong!)]
+		Чувствуя, что Nyan снова на грани панической атаки, ты решаешь, что лучше сменить тему. Успокоив дрожащую кошкодевочку заверениями в том, что она точно не могла совершить никакой ошибки, ты спрашиваешь, можешь ли ты вернуться к осмотру товаров, хранящихся здесь на складе.
 	</p>
 	<p>
-		Sensing that Nyan is once again on the verge of a panic attack, you decide that it would be best to drop the subject. After reassuring the trembling cat-girl that you're certain she couldn't have done anything wrong, you ask her if you can return to browsing the wares she has stored back here.
-	</p>
-	<p>
-		Nyan lets out a relieved sigh and casts her eyes down at her clipboard, clearly grateful for the fact that you're not continuing your line of questioning. As the two of you continue on your way through the storeroom, you wonder whether you should offer to go and see this 'Kay' character on Nyan's behalf and see if you can solve whatever issue is causing him to ignore the nervous cat-girl...
+		Nyan облегченно вздыхает и опускает взгляд в свой планшет, явно благодарная за то, что ты не продолжаешь расспросы. Пока вы вдвоем пробираетесь сквозь завалы на складе, ты задумываешься: не стоит ли предложить пойти и навестить этого некоего «Кея» вместо Nyan, чтобы попытаться выяснить, в чем причина того, что он игнорирует эту нервную кошку...
 	</p>
 	]]>
 	</htmlContent>
@@ -323,28 +323,28 @@
 	
 	<htmlContent tag="SHOP_OFFER_HELP"><![CDATA[
 	<p>
-		Deciding that it'd be best to get Nyan into a more relaxed state before bringing up the subject of her enchanted clothing supplier again, you walk around the storeroom for a little while, asking innocuous questions about the sorts of clothing on each shelf. Just as you'd hoped, the subject is one that she's very comfortable talking about, and after a little while her stuttering becomes less frequent and she begins to offer some clothing-related trivia of her own volition.
+		Решив, что лучше сначала привести Nyan в более расслабленное состояние, прежде чем снова заводить разговор о её поставщике зачарованной одежды, ты некоторое время бродишь по складу, задавая безобидные вопросы о том, что лежит на каждой полке. Как ты и надеялся, эта тема ей очень близка, и спустя какое-то время она начинает заикаться всё реже, сама делясь любопытными фактами об одежде.
 	</p>
 	<p>
-		Eventually you decide that the time is right, and turn towards the nervous cat-girl with a disarming smile on your face. In as delicate a manner as you can, you tell her that you'd like to help her with her supply problem, and offer to go and speak to Kay on her behalf.
+		В конце концов ты решаешь, что момент настал, и поворачиваешься к нервничающей кошкодевочке с обезоруживающей улыбкой. Насколько это возможно деликатно, ты говоришь ей, что хочешь помочь с её проблемами с поставками, и предлагаешь сходить и поговорить с Kay от её имени.
 	</p>
 	<p>
-		[nyan.speechNoEffects(Really? Y-You'd do that for me?)] Nyan replies in an excited tone, before shyly shuffling her feet and offering, [nyan.speechNoEffects(I-I'll give you a reward if you manage to g-get Kay to resume the usual shipments I-I've been receiving from him. I-I could give you f-five thousand flames, a-and a lifetime discount in my store!)]
+		[nyan.speechNoEffects(Правда? Т-ты сделаешь это для меня?)] — восторженно отвечает Nyan, после чего застенчиво переминается с ноги на ногу и предлагает: [nyan.speechNoEffects(Я... я дам тебе награду, если тебе удастся уб-убедить Kay возобновить привычные поставки, к-которые он мне делает. Я м-могу дать тебе пять тысяч огней и п-пожизненную скидку в моём магазине!)]
 	</p>
 	<p>
-		Thanking Nyan for her generous offer, you ask her where you could find Kay.
+		Поблагодарив Nyan за столь щедрое предложение, ты спрашиваешь, где можно найти Kay.
 	</p>
 	<p>
-		[nyan.speechNoEffects(H-He's got his business in the warehouse district,)] she replies, [nyan.speechNoEffects(I-It's over in the north-west of the c-city. There s-should be a big sign on the f-front of his warehouse r-reading 'Kay's Textiles'. I-It should be open from s-six in the morning t-to ten at night...)]
+		[nyan.speechNoEffects(Его лавка в складском районе,)] — отвечает она, — [nyan.speechNoEffects(Это на с-северо-западе города. На п-передней части его склада д-должна быть большая вывеска «Текстиль Kay». Он д-должен быть открыт с шести утра до десяти вечера...)]
 	</p>
 	<p>
-		Thanking Nyan for the information, you assure her that you'll head over to 'Kay's Textiles' as soon as you're able, and that you're sure you'll be able to return to her with good news before long.
+		Поблагодарив Nyan за информацию, ты заверяешь её, что заглянешь в «Текстиль у Кэй», как только сможешь, и что наверняка скоро вернёшься к ней с хорошими новостями.
 	</p>
 	<p>
-		[nyan.speechNoEffects(Y-You're... I-I mean...)] Nyan mumbles, blushing as she looks down at the floor and starts to shuffle her feet. Taking a deep breath, she somehow manages to summon the courage to look up into your eyes, and while still blushing, she blurts out, [nyan.speechNoEffects(T-Thank you, [pc.name]! Y-You're so... k-kind...)]
+		[nyan.speechNoEffects(В-Вы... Я-я имела в виду...)] — бормочет Nyan, краснея и глядя в пол, переминаясь с ноги на ногу. Сделав глубокий вдох, она каким-то чудом находит в себе смелость поднять на тебя взгляд и, всё ещё заливаясь краской, выпаливает: [nyan.speechNoEffects(С-Спасибо вам, [pc.name]! В-Вы такой... д-добрый...)]
 	</p>
 	<p>
-		With her expression of gratitude conveyed, the nervous cat-girl looks back down at her clipboard and prepares to continue showing you around the stockroom...
+		Выразив свою благодарность, нервная кошкодевочка снова утыкается в свой планшет, готовясь продолжить экскурсию по складу...
 	</p>
 	]]>
 	</htmlContent>
@@ -354,38 +354,37 @@
 	
 	<htmlContent tag="SHOP_REPORT_BACK"><![CDATA[
 	<p>
-		Deciding that now's as good a time as any to report your success in having freed Kay from Wolfgang and Karl, you turn to Nyan and explain what happened, minus the details which you think might be too much for her to handle.
+		Решив, что сейчас самый подходящий момент, чтобы сообщить об успехе — о том, что ты освободил Кэй от Вольфганга и Карла, — ты поворачиваешься к Nyan и объясняешь случившееся, опуская детали, которые, как тебе кажется, могут оказаться для неё слишком тяжелыми.
 	</p>
 	<p>
-		Upon hearing your report of the situation, an excited little squeak bursts out from between Nyan's lips, causing her to instinctively clasp her paw-like hands over her mouth. Taking a little breath, she then stutters, [nyan.speechNoEffects(S-So Kay w-wasn't ignoring me? H-He'd been bullied by t-two mean bounty hunters? T-Thank you s-so much for saving him, [pc.name]!)]
+		Услышав твой рассказ, Nyan невольно издаёт восторженный писк и инстинктивно прижимает лапки к губам. Переведя дух, она заикается: [nyan.speechNoEffects(Т-так Кэй не и-игнорировал меня? Его т-терроризировали д-два злых охотника за головами? С-спасибо вам огромное за то, что спасли его, [pc.name]!)]
 	</p>
 	<p>
-		You smile at Nyan's genuine reaction to the news, which unintentionally makes matters worse for the nervous cat-girl. As she sees your happy expression, Nyan's cheeks turn a deep shade of scarlet, and she averts her eyes as she stutters, [nyan.speechNoEffects(I-I need to... T-That is... I-I mean, I-I, erm, well, t-there was the reward I p-promised! H-Hold on one minute please!)]
+		Ты улыбаешься искренней реакции Nyan на новости, что невольно делает положение нервной кошкодевочки еще более неловким. Заметив твою счастливую улыбку, Nyan заливается густой краской, отводит взгляд и начинает заикаться: [nyan.speechNoEffects(М-мне нужно... Э-это... В-в смысле, я... э-эм, ну, в-ведь была награда, к-которую я п-обещала! П-подожди минутку, пожалуйста!)]
+	</p>
+	<p>		Без всякого предупреждения Nyan внезапно убегает, оставляя тебя одного в подсобке. Зная, что она вернется, как только успокоится, ты позволяешь себе немного расслабиться и размышляешь о поведении этой хрупкой кошкодевочки. Кажется, сегодня она нервничает сильнее обычного, и ты задаешься вопросом, не сможешь ли ты помочь ей побороть тревожность. Возможно, когда со всеми этими делами будет покончено, тебе удастся узнать её получше.
 	</p>
 	<p>
-		Without any further warning, Nyan suddenly runs off, leaving you all alone in the stockroom. Knowing that she'll be back once she's calmed down, you take a moment in which to relax and think about the delicate cat-girl's behaviour. She seems to be more nervous than ever today, and you wonder if there's any way you could help her overcome her anxiety. Perhaps once all this business is taken care of, you could try to get to know her a little better.
+		Твои раздумья прерывает внезапное возвращение Nyan. Прежде чем ты успеваешь что-то сказать, она подлетает к тебе и сует тебе в [pc.hands] маленький мешочек с деньгами. Серия суетливых, робких поклонов — и вот она уже пищит: [nyan.speechNoEffects(П-пожалуйста, возьми это! И я д-дам тебе еще д-двадцать пять процентов с-скидки! С-спасибо тебе за всю твою п-помощь!)]
 	</p>
 	<p>
-		Any further thoughts on the matter are interrupted as Nyan suddenly returns, and before you're able to say anything, she rushes up to you and thrusts a little bag of cash into your [pc.hands]. Performing a series of flustered little bows, she squeaks, [nyan.speechNoEffects(P-Please take this! I-I'll give you a t-twenty-five percent d-discount as well! T-Thank you for all of y-your help!)]
+		Видя, что Nyan вот-вот впадет в панику, ты мягко благодаришь её за щедрую награду и говоришь, что был очень рад ей помочь.
 	</p>
 	<p>
-		Seeing that Nyan is on the brink of having a panic attack, you gently thank her for her generous reward, before telling her that you're very happy to have been able to help her out.
+		[nyan.speechNoEffects(Я... я п-правда очень ценю всё, что ты д-делаешь, [pc.name],)] — заикается Nyan, нервно заламывая свои кошачьи ручки. Внезапно покраснев и уставившись в пол, она неожиданно выдает: [nyan.speechNoEffects(У м-меня нет н-ни [pc.girlfriend], н-ни чего подобного...)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(I-I really a-appreciate all you've done, [pc.name],)] Nyan stammers while nervously wringing her cat-like hands together. Suddenly blushing and looking down at the floor, she unexpectedly reveals, [nyan.speechNoEffects(I-I don't have a-a [pc.girlfriend] o-or anything...)]
+		Это признание звучит совершенно внезапно, и пока ты собираешься ответить, Nyan вдруг осознает, что только что ляпнула, и издает очередной тонкий писк: [nyan.speechNoEffects(Ой! Я... я имела в виду, нет, я х-хотела сказать, что у м-меня нет к-кого, к о-кому можно было б-бы обратиться за п-помощью! Я не имела в виду, то есть, я н-не просила т-тебя, н-не то чтобы я б-бы не хотела, н-но... ~Аах!~)]
 	</p>
 	<p>
-		This revelation comes out of nowhere, and as you prepare to respond, Nyan suddenly realises what she's just said and lets out another little squeak, [nyan.speechNoEffects(Eep! I-I mean, no, I-I meant that I-I don't have a-anyone I could have a-asked for help! I-I didn't mean, that is, I-I wasn't asking y-you, n-not that I w-wouldn't, b-but... ~Aah!~)]
-	</p>
-	<p>
-		Unable to deal with the situation, Nyan turns and sprints off. As she turns the corner at the end of the storeroom, you get one last glimpse of her scarlet-coloured cheeks before she disappears from sight. Considering the state that she's in, you doubt that she'll be back any time soon. It would probably be best to come back a little later, once Nyan's had some time to cool-off...
+		Не в силах справиться с ситуацией, Nyan разворачивается и убегает со всех ног. Когда она сворачивает за угол в конце склада, ты успеваешь в последний раз увидеть её пунцовые щеки, прежде чем она скрывается из виду. Судя по её состоянию, сомневаешься, что она скоро вернется. Пожалуй, лучше прийти чуть позже, когда Nyan даст себе время остыть...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_EXIT_EMBARRASSED"><![CDATA[
 	<p>
-		Having been abandoned by the panic-stricken cat-girl, you walk out of Nyan's stockroom and head towards the exit. After pushing your way through a crowd of customers who're loitering around the large glass doors, you head back out into the shopping arcade.
+		Оставленный охваченной паникой кошкодевочкой, ты выходишь из склада Nyan и направляешься к выходу. Протиснувшись сквозь толпу покупателей, толпящихся у больших стеклянных дверей, ты снова выходишь в торговую галерею.
 	</p>
 	]]>
 	</htmlContent>
@@ -395,46 +394,45 @@
 	
 	<htmlContent tag="NYAN_HIDING_END"><![CDATA[
 	<p>
-		Following in Nyan's hurried footsteps, you soon find yourself once again standing in her shop's storeroom. Turning to face you, the nervous cat-girl fidgets about for a moment, and before you're able to break the silence, she blurts out, [nyan.speechNoEffects(W-When I said before about not h-having a [pc.girlfriend]... I-I was meaning that it was j-just like in my books, when a #IF(pc.isFeminine())b-beautiful#ELSEh-handsome#ENDIF stranger comes to the aid of the p-protagonist...)]
+		Следуя за торопливыми шагами Nyan, ты вскоре снова оказываешься в кладовой её лавки. Повернувшись к тебе, нервная кошкодевочка мгновение переминается с ноги на ногу, и прежде чем ты успеваешь нарушить тишину, она выпаливает: [nyan.speechNoEffects(К-когда я говорила раньше про т-то, что у меня н-нет [pc.girlfriend]... Я... я имела в виду, что это п-просто как в моих книжках, когда) #IF(pc.isFeminine())b-beautiful#ELSEh-handsome#ENDIF stranger comes to the aid of the p-protagonist...)]
 	</p>
 	<p>
-		Furiously blushing, Nyan steps over to a nearby shelf, before picking up a book and thrusting it towards you. As the cat-girl presents you with this evidence of what she meant, you're able to see that the book looks to be some sort of romance novel, and coincidentally enough, there's a swooning cat-girl on the front cover being held in the arms of [pc.a_feminine] [pc.race]. Pulling the book back and using it to cover her blushing face, Nyan peeks over the top and stutters, [nyan.speechNoEffects(S-See? W-What you did for m-me was just like what happens i-in here... A-And after that, w-well, t-the two characters start d-dating...)]
+		Густо покраснев, Nyan подходит к ближайшей полке, берет книгу и почти тычет ею тебе в лицо. Глядя на это доказательство её слов, ты замечаешь, что книга похожа на какой-то любовный роман, и — какое совпадение! — на обложке изображена падающая в обморок кошкодевочка, которую держат на руках [pc.a_feminine] [pc.race]. Отдернув книгу и прикрыв ею свое пылающее лицо, Nyan выглядывает из-за неё и заикается: [nyan.speechNoEffects(В-видишь? Т-то, что ты сделал д-для меня, было точь-в-точь как здесь... А п-потом, н-ну... д-два героя начинают с-свидания...)]
 	</p>
 	<p>
-		In an extraordinary display of courage for someone as nervous as Nyan, she hides her face completely behind the book and asks, [nyan.speechNoEffects(I-If you'd like... I-I could be your... I-I mean... D-Do you want me t-to be your g-girlfriend?)]
+		Проявляя невероятную для такой робкой особы, как Nyan, храбрость, она полностью прячется за книгой и спрашивает: [nyan.speechNoEffects(Е-если хочешь... Я... я могла бы стать твоей... В-в смысле... Т-ты хочешь, ч-чтобы я была т-твоей д-девушкой?)]
 	</p>
 	<p>
-		Daring to peek over the top of her book, Nyan shuffles her feet and waits for your answer...
+		Осмелившись выглянуть из-за края книги, Nyan переминается с ноги на ногу, ожидая твоего ответа...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_HIDING_END_GIRLFRIEND"><![CDATA[
 	<p>
-		More than happy to accept Nyan's proposition, you tell her that you'd love to be her [pc.girlfriend]. Before you can make a move on the cute cat-girl, however, she lets out an excited squeak and declares, [nyan.speechNoEffects(T-This is just like i-in my books! N-Now we have to g-get to know one another b-before we can... I-I mean... D-Do the thing together...)]
+		С радостью принимая предложение Nyan, ты говоришь ей, что с удовольствием станешь её [pc.girlfriend]. Однако прежде чем ты успеваешь сделать шаг навстречу милой кошкодевочке, она издает восторженный писк и заявляет: [nyan.speechNoEffects(Э-это прямо как в моих книжках! Т-теперь нам нужно п-познакомиться поближе п-прежде чем мы сможем... Я-я имею в виду... С-сделать ЭТО вместе...)]
 	</p>
 	<p>
-		From the influence of her romance novels, Nyan clearly has some pre-defined notions about what being your girlfriend is going to entail. Not wanting to do anything which would bring your relationship to an end before it's even begun, you decide to play along with the nervous cat-girl and take things at a pace which she's comfortable with.
+		Под влиянием своих любовных романов Nyan явно сформировала определенные представления о том, что значит быть твоей девушкой. Не желая совершить что-то, что положит конец вашим отношениям еще до их начала, ты решаешь подыграть нервной кошкодевочке и двигаться в том темпе, который будет ей комфортен.
 	</p>
 	<p>
-		[nyan.speechNoEffects(S-So... I-I could show you the enchanted clothing that I r-received from Kay, or...)] Nyan stutters, pausing for a moment before looking at you with her big blue eyes and suggesting, [nyan.speechNoEffects(Or we c-could talk for a w-while... I-I am your girlfriend now, after all, s-so you should g-get to know me a little better...)]
+		[nyan.speechNoEffects(Т-так... Я м-могла бы показать тебе зачарованную одежду, которую п-получила от Kay, или...)] — заикаясь, произносит Nyan, на мгновение замирая, а затем смотрит на тебя своими огромными голубыми глазами и предлагает: [nyan.speechNoEffects(Или мы м-могли бы п-поболтать... В-ведь теперь я твоя девушка, т-так что тебе сл-следует узнать меня получше...)]
 	</p>
 	<p>
-		With your nervous girlfriend still clutching her book up to her face and timidly shuffling her feet, you realise that any attempt to do more than talk to her will surely result in her suffering from a panic attack. Giving her your most disarming look, you wonder what to ask of Nyan...
+		Твоя нервничающая девушка всё ещё прижимает книгу к лицу и робко переминается с ноги на ногу, и ты понимаешь, что любая попытка сделать что-то большее, чем просто разговор, наверняка вызовет у неё паническую атаку. Одарив её самым обезоруживающим взглядом, ты гадаешь, о чём же попросить Nyan...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NYAN_HIDING_END_DECLINE"><![CDATA[
 	<p>
-		Unwilling to get romantically involved with this nervous cat-girl, but also not wanting to undo all of your hard work in getting access to a supply of enchanted clothing, you gently let Nyan down by telling her that you can't commit to having a relationship at the moment. Somewhat surprisingly, she takes this rejection far better than you could have hoped, as she simply lets out a wistful sigh and mutters, [nyan.speechNoEffects(W-Well, this sometimes happens i-in my books too...)]
+		Не желая вступать в романтические отношения с этой нервной кошкодевочкой, но и не желая перечеркивать все свои труды по получению доступа к запасам зачарованной одежды, ты мягко даешь Nyan понять, что пока не готов к серьезным отношениям. К твоему удивлению, она принимает отказ гораздо лучше, чем ты мог надеяться: она лишь издает тоскливый вздох и бормочет: [nyan.speechNoEffects(Ч-что ж, в моих книжках такое т-тоже иногда случается...)]
 	</p>
 	<p>
-		Placing her romance novel down on the shelf, she turns back to face you and offers, [nyan.speechNoEffects(Y-You can change y-your mind at any time. I-I'm not planning on asking a-anyone else to be my [pc.girlfriend]... A-Anyway, did you w-want me to show you the enchanted clothing that I r-received from Kay?)]
-	</p>
-	<p>
-		Happy to see that she's not overly upset at your refusal to become her [pc.girlfriend], you give the nervous cat-girl your most disarming look and wonder what to ask of her...
-	</p>
+		Отложив свой любовный роман на полку, она поворачивается к тебе и предлагает: [nyan.speechNoEffects(Т-ты можешь передумать в люб-любую минуту. Я н-не планирую звать к себе в [pc.girlfriend] к-кого-то другого... В-в любом случае, ты х-хотел, чтобы я показала тебе зачарованную одежду, которую п-получила от Kay?)]
+	</p><p>
+Радуясь тому, что она не слишком расстроена твоим отказом стать её [pc.girlfriend], ты одариваешь нервную кошкодевочку самым обезоруживающим взглядом и гадаешь, о чём бы её попросить...
+</p>
 	]]>
 	</htmlContent>
 	

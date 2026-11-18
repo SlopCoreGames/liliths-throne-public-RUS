@@ -6,49 +6,49 @@
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			The fear of falling prey to the ongoing arcane storm's effects has caused the vast majority of Dominion's residents to take shelter. As a result, the streets that you find yourself walking down are all eerily quiet, with only the occasional demon to be seen wandering about.
+			Страх стать жертвой бушующего шторма Аркана заставил подавляющее большинство жителей Dominion искать укрытия. В результате улицы, по которым ты идешь, пугающе пусты, и лишь изредка можно встретить бродячего демона.
 		</p>
 		#IF(game.isExtendedWorkTime())
 			<p>
-				Travelling further up the road, you notice that there are curious amount of demons walking around in this area, and, what's more, you notice that most of them are carrying shopping bags of some sort or another. The cause of this unusual gathering is soon made apparent, as up ahead you see a huge shopping centre, with yet more demons loitering around the ornate entranceway.
+			Пройдя чуть дальше по дороге, ты замечаешь, что в этой области бродит подозрительно много демонов, причем большинство из них несут в руках какие-то торговые пакеты. Причина этого необычного скопления вскоре становится очевидной: впереди виднеется огромный торговый центр, у богато украшенного входа которого толпятся еще больше демонов.
 			</p>
 			<p>
-				As you approach, you take a good look at the massive building, noting that its style is very reminiscent of that of a grand Victorian shopping arcade. From what you can see through the entrance's glass doors, it looks as though the shops inside are all still [style.colourGood(open)] for business, despite the storm currently raging overhead. Sure enough, taking a look over to one side of the entrance, you notice a sign proclaiming that [style.colourMinorGood(most shops within the arcade are open from [units.time(6)]-[units.time(22)])].
+			Приблизившись, ты внимательно осматриваешь массивное здание, отмечая, что его стиль очень напоминает величественную викторианскую торговую галерею. Судя по тому, что видно сквозь стеклянные двери входа, магазины внутри всё еще [style.colourGood(открыты)] для посетителей, несмотря на бушующую наверху бурю. И действительно, взглянув на одну из сторон входа, ты замечаешь вывеску, гласящую, что [style.colourMinorGood(большинство магазинов в галерее открыты с [units.time(6)] до [units.time(22)])].
 			</p>
 			<p>
-				You wonder if you should take this opportunity to go and do some shopping...
+			Ты задумываешься, не воспользоваться ли этой возможностью и не заняться ли покупками...
 			</p>
 		#ELSE
 			<p>
-				Travelling further up the road, you notice that there are several signs advertising the presence of 'Dominion's Largest Shopping Arcade'. Just as these signs promised, you soon catch sight of a huge shopping centre, and after just a few moments more, you find yourself standing outside the ornate entranceway.
+				Продвигаясь дальше по дороге, ты замечаешь несколько вывесок, рекламирующих «Крупнейшую торговую аркаду Dominion». Как и обещали знаки, вскоре перед тобой вырастает огромный торговый центр, и спустя всего пару мгновений ты уже стоишь перед его богато украшенным входом.
 			</p>
 			<p>
-				Taking a good look at the massive building, you note that its style is very reminiscent of that of a grand Victorian shopping arcade. From what you can see through the entrance's glass doors, it looks as though the shops inside are currently [style.colourBad(closed)]. Sure enough, taking a look over to one side of the entrance, you notice a sign proclaiming that [style.colourMinorBad(most shops within the arcade are open from [units.time(6)]-[units.time(22)])].
+				Внимательно осмотрев массивное здание, ты замечаешь, что его стиль очень напоминает величественные викторианские торговые галереи. Судя по тому, что видно сквозь стеклянные двери входа, магазины внутри сейчас [style.colourBad(закрыты)]. И действительно, взглянув на одну из сторон входа, ты замечаешь табличку, гласящую, что [style.colourMinorBad(большинство магазинов в аркаде открыты с [units.time(6)] до [units.time(22)])].
 			</p>
 			<p>
-				Despite the fact that the shops within are closed, the doors leading into the arcade itself are not locked, and you wonder if you should go inside to take a look around...
+				Несмотря на то, что магазины внутри закрыты, двери, ведущие в саму аркаду, не заперты, и ты раздумываешь, стоит ли зайти внутрь и осмотреться...
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(game.isExtendedWorkTime())
 			<p>
-				The streets in this part of Dominion seem to be busier than usual, and you notice that many of the people surrounding you are holding shopping bags of all shapes and sizes. The cause of this unusual increase in traffic is soon made apparent, as up ahead you see a huge shopping centre, with yet more people loitering around the ornate entranceway.
+				Улицы в этой части Dominion кажутся более оживленными, чем обычно, и ты замечаешь, что многие люди вокруг тебя несут пакеты с покупками самых разных форм и размеров. Причина этого необычного скопления народа вскоре становится очевидной: впереди ты видишь огромный торговый центр, у богато украшенного входа которого толпятся люди.
 			</p>
 			<p>
-				As you approach, you take a good look at the massive building, noting that its style is very reminiscent of that of a grand Victorian shopping arcade. From what you can see through the entrance's glass doors, it looks as though the shops inside are all [style.colourGood(open)] for business. Sure enough, taking a look over to one side of the entrance, you notice a sign proclaiming that [style.colourMinorGood(most shops within the arcade are open from [units.time(6)]-[units.time(22)])].
+			Приближаясь, ты внимательно осматриваешь массивное здание, замечая, что его стиль очень напоминает величественную викторианскую торговую галерею. Судя по тому, что видно сквозь стеклянные двери входа, все магазины внутри [style.colourGood(открыты)] для посетителей. И действительно, взглянув в сторону от входа, ты замечаешь вывеску, гласящую, что [style.colourMinorGood(большинство лавок в галерее открыты с [units.time(6)] до [units.time(22)])].
 			</p>
 			<p>
-				You wonder if you should take this opportunity to go and do some shopping...
+			Ты задумываешься, не воспользоваться ли этой возможностью и не заняться ли покупками...
 			</p>
 		#ELSE
 			<p>
-				Travelling further up the road, you notice that there are several signs advertising the presence of 'Dominion's Largest Shopping Arcade'. Just as these signs promised, you soon catch sight of a huge shopping centre, and after just a few moments more, you find yourself standing outside the ornate entranceway.
+				Продвигаясь дальше по дороге, ты замечаешь несколько вывесок, рекламирующих «Крупнейшую торговую аркаду Dominion». Как и обещали знаки, вскоре перед тобой вырастает огромный торговый центр, и спустя всего пару мгновений ты уже стоишь перед его богато украшенным входом.
 			</p>
 			<p>
-				Taking a good look at the massive building, you note that its style is very reminiscent of that of a grand Victorian shopping arcade. From what you can see through the entrance's glass doors, it looks as though the shops inside are currently [style.colourBad(closed)]. Sure enough, taking a look over to one side of the entrance, you notice a sign proclaiming that [style.colourMinorBad(most shops within the arcade are open from [units.time(6)]-[units.time(22)])].
+				Внимательно осмотрев массивное здание, ты замечаешь, что его стиль очень напоминает величественные викторианские торговые галереи. Судя по тому, что видно сквозь стеклянные двери входа, магазины внутри сейчас [style.colourBad(закрыты)]. И действительно, взглянув на одну из сторон входа, ты замечаешь табличку, гласящую, что [style.colourMinorBad(большинство магазинов в аркаде открыты с [units.time(6)] до [units.time(22)])].
 			</p>
 			<p>
-				Despite the fact that the shops within are closed, the doors leading into the arcade itself are not locked, and you wonder if you should go inside to take a look around...
+				Несмотря на то, что магазины внутри закрыты, двери, ведущие в саму аркаду, не заперты, и ты раздумываешь, стоит ли зайти внутрь и осмотреться...
 			</p>
 		#ENDIF
 	#ENDIF
@@ -60,17 +60,19 @@
 	
 	<htmlContent tag="ENTRY"><![CDATA[
 	<p>
-		You find yourself standing in the entrance to the shopping arcade. A wide, marble-floored walkway stretches out before you, and on either side, huge glass windows proudly display a wide variety of different goods for sale. Looking up to the two-story-high ceiling, you see that the entire arcade is enclosed by a long, glass archway, offering protection not only from the wind and rain, but also shielding anyone below from the effects of an arcane storm.
+		Ты стоишь у входа в торговую галерею. Перед тобой простирается широкий проход с мраморным полом, а по обе стороны огромные стеклянные витрины с гордостью выставляют на показ разнообразие товаров. Подняв взгляд к потолку высотой в два этажа, ты видишь, что вся галерея накрыта длинной стеклянной аркой, которая защищает не только от ветра и дождя, но и оберегает всех внутри от воздействия аркана-шторма.
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			Busy crowds of shoppers jostle amongst each other as they travel between the many shops found within the arcade. Their chatter reverberates off the windows and walls on either side to create a loud, energetic atmosphere all around you.
+		
+Занятые покупатели толкаются друг с другом, перемещаясь между многочисленными лавками галереи. Их гомон отражается от окон и стен по обе стороны, создавая вокруг тебя шумную и энергичную атмосферу.
 		#ELSE
-			As all of the shops found within the arcade are currently closed, the entire place is almost completely deserted. The only person other than yourself in this area is a wolf-boy security guard, who keeps a close watch on anyone entering or leaving the arcade.
+		
+Поскольку все магазины в галерее сейчас закрыты, здесь почти совершенно пусто. Единственный человек в округе, помимо тебя, — это волк-мальчик, охранник, который пристально следит за каждым, кто входит в галерею или выходит из неё.
 		#ENDIF
 	</p>
 	<p>
-		There are several touristy-looking information boards placed nearby, and, after consulting one, you feel confident that you could easily find your way to any of the more interesting stores.
+		Повсюду расставлены информационные стенды для туристов. Изучив один из них, ты с уверенностью понимаешь, что без труда найдешь дорогу к любому из самых интересных магазинов.
 	</p>
 	]]>
 	</htmlContent>
@@ -80,13 +82,13 @@
 	
 	<htmlContent tag="ARCADE"><![CDATA[
 	<p>
-		You walk down the wide, marble-floored walkway which loops around and through the shopping arcade. On either side of you, huge glass windows proudly display a wide variety of different goods for sale. Glancing up at the two-story-high ceiling, you see that the entire arcade is enclosed by a long, glass archway, offering protection not only from the wind and rain, but also shielding anyone below from the effects of an arcane storm.
+		Ты идешь по широкому проходу с мраморным полом, который петляет по всей торговой аркаде. По обе стороны от тебя в огромных витринах красуется бесконечное разнообразие товаров. Подняв взгляд к двухэтажному потолку, ты замечаешь, что вся аркада накрыта длинным стеклянным сводом. Он защищает не только от ветра и дождя, но и оберегает всех внутри от последствий арканального шторма.
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			Busy throngs of the arcade's patrons jostle to and fro, and you often find yourself having to push your way through idling crowds that inexplicably gather right in the middle of your path. Their chatter reverberates off the windows and walls on either side of you to create a loud, energetic atmosphere all the way through the arcade.
+			По торговой аркаде снуют толпы покупателей, и тебе то и дело приходится проталкиваться сквозь праздные группы людей, которые необъяснимым образом застывают прямо посреди твоего пути. Их гомон отражается от окон и стен, создавая шумную и энергичную атмосферу, пронизывающую всё пространство аркады.
 		#ELSE
-			As all of the shops in the arcade are currently closed, the entire place is almost completely deserted. The only other people that you see are the occasional patrolling security guard or curious citizen taking a leisurely stroll through the area.
+			Поскольку сейчас все магазины закрыты, здесь почти безлюдно. Единственные, кого ты видишь — это редкие патрулирующие охранники или любопытные горожане, неспешно прогуливающиеся по округе.
 		#ENDIF
 	</p>
 	]]>
@@ -95,23 +97,23 @@
 	<htmlContent tag="ARCADE_WES_REMINDER"><![CDATA[
 	<p><i>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_wesQuestMet))
-			While this is the place where you can meet Wes, you've already refused to help him today, and so you'll be unable to see him again until tomorrow at the earliest...
+			Хотя именно здесь можно встретить Веса, сегодня ты уже отказалась ему помогать, так что увидеть его снова получится не раньше чем завтра...
 		#ELSEIF(game.getHourOfDay()==13)
-			This is both the time and place in which to
+			Это самое подходящее время и место, чтобы
 			#IF(game.getDialogueFlags().hasFlag(FLAG_wesQuestRefused))
-				 [style.colourMinorGood(meet Wes)],
+				 [style.colourMinorGood(встретить Веса)],
 			#ELSE
-				 [style.colourMinorGood(meet the mysterious Enforcer)],
+				 [style.colourMinorGood(встретить таинственного Enforcer)],
 			#ENDIF
-			 so if you were to look around for him for a while, you'd likely be able to get in contact with him...
+			 так что, если ты поискать его какое-то время, то, скорее всего, сможешь выйти на связь...
 		#ELSE
-			While this is the place where 
+			Хотя именно здесь 
 			#IF(game.getDialogueFlags().hasFlag(FLAG_wesQuestRefused))
-				 Wes
+				 Уэс
 			#ELSE
-				 the mysterious Enforcer
+				 таинственный Enforcer
 			#ENDIF
-			 told you to meet him, he said that he'd only be here between the hours of [style.colourMinorBad([units.time(13)] and [units.time(14)])], so you'll have to come back then... 
+				 просил тебя встретиться, он сказал, что будет здесь только между [style.colourMinorBad([units.time(13)] и [units.time(14)])], так что тебе придётся вернуться в это время... 
 		#ENDIF
 	</i></p>
 	]]>
@@ -122,9 +124,9 @@
 	<htmlContent tag="GENERIC_SHOP"><![CDATA[
 	<p>
 		#IF(game.isExtendedWorkTime())
-			Most of the shops in the arcade, like the one you find yourself entering, are relatively uninteresting, and you can't imagine yourself ever having a use for any of the mundane items that are for sale. Despite an enthusiastic attempt from one of the shop's attendants to get you to buy [util.random(an egg-whisk|a wooden spoon|a mop and bucket|a bedside lamp|a set of silver cutlery|an ironing board|a little heart-shaped plushie|a cheese-board|a little book of cheat-codes for some obscene text-based RPG|a fruit bowl)], you leave the premises empty-handed, wondering why you even bothered to take a look inside...
+			Большинство лавок в торговой аркаде, вроде той, в которую ты сейчас входишь, довольно скучные, и ты с трудом можешь представить, чтобы тебе когда-либо пригодились эти заурядные вещицы. Несмотря на настойчивые попытки одного из продавцов всучить тебе [util.random(венчик для взбивания яиц|деревянную ложку|швабру с ведром|прикроватную лампу|набор серебряных столовых приборов|гладильную доску|маленькую плюшевую игрушку в форме сердечка|доску для сыра|маленькую книжку с чит-кодами для какой-нибудь непристойной текстовой RPG|фруктовницу)], ты покидаешь магазин с пустыми руками, гадая, зачем ты вообще решил заглянуть внутрь...
 		#ELSE
-			Most of the shops in the arcade, like the one you find yourself standing before, are relatively uninteresting, and you can't imagine yourself ever having a use for any of the mundane items that are for sale. After spending a moment taking a look through the large windows, you step away from the shuttered premises, thinking to yourself that there'd be no point in returning during opening hours...
+			Большинство лавок в торговой аркаде, вроде той, перед которой ты сейчас стоишь, довольно скучные, и ты с трудом можешь представить, чтобы тебе когда-либо пригодились эти заурядные вещицы. Посмотрев какое-то время в большие витрины, ты отходишь от закрытого заведения, думая про себя, что нет никакого смысла возвращаться сюда в часы работы...
 		#ENDIF
 	</p>
 	]]>
@@ -135,22 +137,22 @@
 	
 	<htmlContent tag="RESTAURANT"><![CDATA[
 	<p>
-		Tucked away in one corner of the Shopping Arcade, the restaurant 'The Oaken Glade' proudly displays its name in flowing gold lettering above its front door. The establishment's large windows allow you to look in on an incredible scene; the vast interior has been manipulated by some form of arcane-powered illusion, making it appear as though the restaurant is a portal directly into the middle of a summer-time forest clearing.
+	Запрятанный в одном из уголков Торгового ряда, ресторан «Дубрава» гордо красуется своим названием, выведенным изящными золотыми буквами над входной дверью. Через огромные окна заведения можно увидеть невероятное зрелище: обширное внутреннее пространство преображено с помощью какой-то иллюзии, подпитываемой Арканой, из-за чего кажется, будто ресторан — это портал прямиком в самую гущу летней лесной поляны.
 		#IF(game.isDayTime())
-			 Bright sunlight shines down through the leaves of the huge oak trees which border this clearing, covering the tables and chairs in a soft, dappled-green glow.
+			 Яркий солнечный свет пробивается сквозь листву огромных дубов, окружающих поляну, заливая столы и стулья мягким, пятнистым зелёным сиянием.
 		#ELSEIF(game.getCurrentDayPeriod()==DAY_PERIOD_NIGHT)
-			 Glowing lanterns have been hung from the branches of the huge oak trees which border this clearing, casting the tables and chairs in a soft, orange glow.
+			 На ветвях исполинских дубов, обрамляющих поляну, развешаны светящиеся фонари, окутывающие столы и стулья мягким оранжевым светом.
 		#ENDIF
 	</p>
 	<p>
-		The scene is so fascinating that it's able to draw in a continuous stream of passersby. Walking up to the menu displayed next to the entrance, these potential customers are almost all immediately turned away by what they see. Moving up to take a look yourself, you see the reason for their swift departure; the cheapest item on the menu is a three-course meal that's priced at almost one-thousand flames. The wine menu is even more outrageously expensive, and you imagine that it would be all too easy for a couple to generate an evening's bill of close to ten thousand flames.
+	Зрелище настолько завораживающее, что оно притягивает непрерывный поток прохожих. Однако, когда потенциальные клиенты подходят к меню у входа, почти все они тут же разворачиваются и уходят. Подойдя поближе, чтобы взглянуть самому, ты понимаешь причину их стремительного бегства: самое дешевое блюдо в меню — полноценный обед из трех блюд, цена которого составляет почти тысячу огней. Винная карта еще более возмутительно дорога, и ты представляешь, как паре будет нетрудно выставить счет почти в десять тысяч огней за один вечер.
 	</p>
 	<p>
-		The glass of the window beside the front door has been elaborately etched with decorative, flowing patterns, and in the middle of this, there's some writing which declares this restaurant to be
+	Стекло окна рядом с входной дверью украшено искусной гравировкой в виде извилистых узоров, а в самом центре красуется надпись, гласящая, что этот ресторан — 
 		#IF(game.getHourOfDay()>=18 && game.getHourOfDay()<23)
-			 [style.colourMinorGood('Open every evening, [unit.time(18)]-[unit.time(23)]. <b>Reservations only.</b>')], meaning that it is currently [style.colourGood(open)].
+			 [style.colourMinorGood('Открыто каждый вечер, с [unit.time(18)] до [unit.time(23)]. <b>Только по записи.</b>')], а значит, сейчас оно [style.colourGood(открыто)].
 		#ELSE
-			 [style.colourMinorBad('Open every evening, [unit.time(18)]-[unit.time(23)]. <b>Reservations only.</b>')], meaning that it is currently [style.colourBad(closed)].
+			 [style.colourMinorBad('Открыто каждый вечер, с [unit.time(18)] до [unit.time(23)]. <b>Только по записи.</b>')], а значит, сейчас оно [style.colourBad(закрыто)].
 		#ENDIF
 	</p>
 	]]>
@@ -161,13 +163,13 @@
 	
 	<htmlContent tag="ANTIQUES"><![CDATA[
 	<p>
-		While most of the shops in the arcade have at least three large windows in which to display their goods, the store that you find yourself standing in front of has just the one, making it the smallest shop in all of the arcade. Looking through this solitary sheet of glass, you see that the store's gloomy interior is filled with all sorts of old furniture and miscellaneous items. This odd-looking arrangement is explained by an amphora-shaped sign hanging above the shop's entrance, which bears the words 'Antiques & Collectables'.
+	В то время как у большинства лавок в торговой аркаде есть как минимум три больших витрины, у магазина, перед которым ты стоишь, всего одна, что делает его самым крошечным во всей аркаде. Глядя сквозь это единственное стекло, ты видишь, что мрачный интерьер заполнено всевозможной старой мебелью и всякой всячиной. Столь странное расположение вещей объясняется вывеской в форме амфоры, висящей над входом, на которой красуются слова «Антиквариат и коллекционные вещи».
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			A small sign hanging in the door's glass window declares this antiques shop to be [style.colourMinorGood('Open every day, [unit.time(6)]-[unit.time(22)]')], meaning that the store is currently [style.colourGood(open)].
+			Маленькая табличка на стеклянной двери гласит, что этот антикварный магазин [style.colourMinorGood('открыт каждый день, с [unit.time(6)] до [unit.time(22)]')], а значит, сейчас он [style.colourGood(открыт)].
 		#ELSE
-			A small sign hanging in the door's glass window declares this antiques shop to be [style.colourMinorBad('Open every day, [unit.time(6)]-[unit.time(22)]')], meaning that the store is currently [style.colourBad(closed)].
+			Маленькая табличка на стеклянной двери гласит, что этот антикварный магазин [style.colourMinorBad('открыт каждый день, с [unit.time(6)] до [unit.time(22)]')], а значит, сейчас он [style.colourBad(закрыт)].
 		#ENDIF
 	</p>
 	]]>
@@ -178,57 +180,57 @@
 	
 	<htmlContent tag="ANTIQUES_INTERIOR"><![CDATA[
 	<p>
-		A small bell positioned above the door rings out to announce your entrance as you step inside the antiques shop. Finding that the interior isn't quite as dimly lit as it appeared to be when looking in from the outside, you're able to see that what the store lacks in width, it more than makes up for in depth, with the back wall being a considerable distance from where you're currently standing.
+		Стоит тебе переступить порог антикварной лавки, как над дверью раздается звон маленького колокольчика. Оказавшись внутри, ты замечаешь, что помещение не такое мрачное, каким казалось снаружи. И хотя лавка довольно узкая, она уходит глубоко вглубь — задняя стена находится на приличном расстоянии от того места, где ты стоишь.
 	</p>
 	<p>
-		As you join several other customers in ambling throughout the store, you end up passing an eclectic mix of creaky old furniture, obsolete arcane instruments, and all manner of outdated miscellaneous items. While they may be of some interest to dedicated collectors, these curious artefacts really are of no use to you.
+		Неспешно прогуливаясь по магазину вместе с другими покупателями, ты проходишь мимо пестрой смеси скрипучей старой мебели, устаревших аркана-инструментов и всякого прочего антиквариата. Возможно, эти диковинные артефакты и представляют интерес для заядлых коллекционеров, но тебе они совершенно не нужны.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT"><![CDATA[
 	<p>
-		You aren't here to shop for antiques, however, and as you walk down the narrow aisles formed between piles of old furniture, you look out for any possible sign of Scarlett's presence. Although your search for the elusive harpy proves to be fruitless, you're not out of options just yet, as you could always go and ask the employee behind the store's counter about her...
+		Впрочем, ты пришел сюда не за антиквариатом. Пробираясь сквозь узкие проходы между грудами старой мебели, ты высматриваешь хоть какой-то признак присутствия Scarlett. И хотя поиски неуловимой гарпии пока не приносят плодов, у тебя еще не закончились варианты: ты всегда можешь подойти к продавцу за прилавком и расспросить о ней...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_END"><![CDATA[
 	<p>
-		With nothing in here warranting your attention, there's little to do except turn around and leave via the same way you came...
+		Поскольку здесь нет ничего, что могло бы привлечь твое внимание, остается лишь развернуться и выйти тем же путем, которым ты вошел...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT_START"><![CDATA[
 	<p>
-		As there's no obvious sign of Scarlett anywhere in the store, you head over to the cat-girl employee standing behind the counter and ask her if she knows anything about the harpy you're looking for. As you mention your quarry's name, the cat-girl nervously glances over towards a nearby door marked as 'staff only', before revealing, [style.speechFeminine(Yes, she's a slave here, although she's not been allowed out of the storage room since she attacked that one customer...)]
+		Поскольку Scarlett нигде не видно, ты подходишь к сотруднице-кошкодевке, стоящей за прилавком, и спрашиваешь, не знает ли она чего-нибудь о гарпии, которую ты ищешь. Как только ты произносишь имя своей цели, кошкодевка нервно косится на ближайшую дверь с надписью «только для персонала», а затем признается: [style.speechFeminine(Да, она здесь рабыня, хотя ей не выпускают из кладовой с тех самых пор, как она напала на того покупателя...)]
 	</p>
 	<p>
-		Relieved to discover that the harpy is close at hand, you ask the cat-girl if you could speak to Scarlett's owner. Happily nodding her head, she says, [style.speechFeminine(If you're here to do something about her, I'm sure the boss would want to talk to you. He's back there in the storage room at the moment; I think he's trying to train Scarlett to not be so rude to customers...)]
+		С облегчением узнав, что гарпия где-то рядом, ты спрашиваешь кошкоделку, можно ли поговорить с хозяйном Scarlett. Она радостно кивает и говорит: [style.speechFeminine(Если ты здесь, чтобы что-то с ней сделать, уверена, босс захочет с тобой пообщаться. Он сейчас там, в кладовой; кажется, он пытается приучить Scarlett не быть такой грубой с покупателями...)]
 	</p>
 	<p>
-		Asking you to wait for just a moment, the cat-girl quickly steps over to the door, before pushing it ajar and poking her head into the room beyond, calling, [style.speechFeminine(Laurence! There's someone here who wants to talk to you about Scarlett!)]
+		Попросив тебя подождать всего мгновение, кошкодевка быстро подходит к двери, приоткрывает её и просовывает голову в комнату, выкрикивая: [style.speechFeminine(Лоренс! Тут кто-то хочет поговорить с тобой о Scarlett!)]
 	</p>
 	<p>
-		A flustered-sounding voice calls back, [style.speechMasculine(Thank goodness! The owner of that slave shop must have changed their mind about giving me a refund! Send them in!)] 
+		В ответ доносится взволнованный голос: [style.speechMasculine(Слава богу! Должно быть, владелец этой лавки рабов передумал возвращать мне деньги! Впускай их!)] 
 	</p>
 	<p>
-		Holding the door open, the cat-girl waves you on through, waiting until you've [pc.stepped] forwards into the storage room before quickly returning to her place behind the counter. As the door swings shut behind you, the room's two occupants turn to face you.
+		Придерживая дверь, кошкодевочка жестом приглашает тебя войти, ожидая, пока ты [pc.stepped] пройдешь в кладовую, после чего быстро возвращается на свое место за прилавком. Как только дверь за тобой закрывается, оба обитателя комнаты поворачиваются к тебе лицом.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT_TRANSFORMED"><![CDATA[
 	<p>
-		You immediately recognise the figure furthest away from the door as being the harpy you're looking for. Although you'd transformed her before selling her, Scarlett has somehow managed to get her feathered hands on some transformation potions of her own, as she now looks exactly like she did the first time you met her. As the raven-harpy catches sight of you, she narrows her [scarlett.eyeColour] eyes and sneers, [scarlett.speech(Well, if it isn't the cunt who sold me! You've come back to beg for my forgiveness, have you, you fucking [pc.bitch]?)]
+		Ты сразу узнаешь фигуру в глубине комнаты — это та самая гарпия, которую ты ищешь. Хотя ты и превращал её перед продажей, Scarlett каким-то образом умудрилась раздобыть собственные зелья трансформации, ведь теперь она выглядит точь-в-точь так же, как при вашей первой встрече. Заметив тебя, воронья гарпия прищуривает свои [scarlett.eyeColour] глаза и скалится: [scarlett.speech(Ну надо же, неужели это та самая сука, что меня продала! Пришел всё-таки вымаливать прощение, а, гребаный [pc.bitch]?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT"><![CDATA[
 	<p>
-		You immediately recognise the figure furthest away from the door as being the exact raven-harpy you're looking for. As Scarlett catches sight of you, she narrows her [scarlett.eyeColour] eyes and sneers, [scarlett.speech(Well, if it isn't the cunt who sold me! You've come back to beg for my forgiveness, have you, you fucking [pc.bitch]?)]
+		Ты сразу узнаешь фигуру в глубине комнаты — это та самая воронья гарпия, которую ты ищешь. Заметив тебя, Scarlett прищуривает свои [scarlett.eyeColour] глаза и скалится: [scarlett.speech(Ну надо же, неужели это та самая сука, что меня продала! Пришел всё-таки вымаливать прощение, а, гребаный [pc.bitch]?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -236,11 +238,11 @@
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT_END"><![CDATA[
 	<p>
 		#IF(scarlett.getObedienceValue()>25)
-			Displaying no sign of her former obedience, Scarlett has clearly reverted to her old ways, and snarls menacingly at you as you turn to face her new owner, who takes the form of an extremely weary-looking squirrel-boy.
+			Не проявляя ни малейших признаков былой покорности, Scarlett явно вернулась к своим старым привычкам; она угрожающе рычит на тебя, пока ты поворачиваешься к её новому владельцу, который выглядит как крайне изнуренный бельчонок.
 		#ELSE
-			As insolent as ever, Scarlett snarls menacingly at you as you turn to face her new owner, who takes the form of an extremely weary-looking squirrel-boy.
+			Столь же дерзкая, как и прежде, Scarlett угрожающе рычит на тебя, пока ты поворачиваешься к её новому владельцу, который выглядит как крайне изнуренный бельчонок.
 		#ENDIF
-		 Realising from Scarlett's outburst that you might not be the person he was expecting, Laurence sighs, [style.speechMasculine(Please tell me that you're here from that blasted shop, and that you're going to give me a refund! This slave isn't at all what she was advertised as!)]
+		Поняв по вспышке Scarlett, что ты, возможно, не тот, кого он ожидал, Laurence вздыхает: [style.speechMasculine(Только скажи мне, что ты из того проклятого магазина и собираешься вернуть мне деньги! Эта рабыня совсем не такая, как было заявлено!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -250,22 +252,22 @@
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT_EXPLAIN"><![CDATA[
 	<p>
-		Ignoring Scarlett's sneers, you explain to her owner that while you're not here to offer him a refund, you <i>are</i> interested in buying her freedom. As you reveal this fact, the insolent harpy steps in front of the squirrel-boy, cutting him off as she rudely asks, [scarlett.speech(Why the fuck would you want to do that?! Is this some kind of fucking trick?!)]
+		Игнорируя усмешки Scarlett, ты объясняешь её хозяину, что хоть ты и не собираешься возвращать ему деньги, ты <i>заинтересован</i> в выкупе её свободы. Как только ты озвучиваешь этот факт, наглая гарпия шагает вперед, заслоняя собой мальчишку-белку, и грубо перебивает его: [scarlett.speech(Какого хера ты вообще хочешь это сделать?! Это что, какая-то ебаная уловка?!)]
 	</p>
 	<p>
-		[style.speechMasculine(Scarlett, please, could you just-)] Laurence starts to say, but the harpy simply turns around and shoots him a withering look, which turns out to be enough to immediately silence him.
+		[style.speechMasculine(Scarlett, пожалуйста, ты могла бы просто...)] — начинает было Laurence, но гарпия просто разворачивается и бросает на него испепеляющий взгляд, которого оказывается достаточно, чтобы мгновенно заставить его замолчать.
 	</p>
 	<p>
-		Realising that you're not going to get anywhere with Scarlett acting in this manner, you tell her that the reason you're here to free her is so that Helena can employ her as her personal assistant. Upon hearing her old matriarch's name, the harpy lets out a defeated sigh and collapses down into a nearby chair, much to the dismay of Laurence, who objects, [style.speechMasculine(Scarlett! Please, don't sit on that! It's a one of a kind, and was made specially for Lyssieth herself!)]
+		Понимая, что с такой манерой поведения Scarlett далеко не уедешь, ты говоришь ей, что пришел освободить её для того, чтобы Helena могла нанять её в качестве своей личной помощницы. Услышав имя своей старой матриарха, гарпия издает обреченный вздох и плюхается в ближайшее кресло, к великому ужасу Laurence, который протестует: [style.speechMasculine(Scarlett! Пожалуйста, не садись на него! Оно уникально и было сделано специально для самой Lyssieth!)]
 	</p>
 	<p>
-		[scarlett.speech(Like I give a fuck,)] Scarlett replies, [scarlett.speech(Just get on with selling me already so I can get out of here.)]
+		[scarlett.speech(Да насрать мне,)] — отвечает Scarlett, — [scarlett.speech(Просто заканчивай со мной продавать, чтобы я уже свалила отсюда.)]
 	</p>
 	<p>
-		Wringing his hands, the distraught squirrel-boy turns back towards you and complains, [style.speechMasculine(Look what I've been having to put up with; she's been an absolute nightmare! That salesman told me that she was well trained and always eager to work! I'm never buying any slaves ever again!)]
+		Заламывая руки, обезумевший бельчонок-мальчик оборачивается к тебе и жалуется: [style.speechMasculine(Ты только посмотри, через что мне приходится терпеть; она просто сущий кошмар! Продавец клялся, что она хорошо обучена и всегда готова к работе! Больше я рабов вообще покупать не стану!)]
 	</p>
 	<p>
-		Pointing out to him that you'll be doing him a favour by taking Scarlett off his hands, you ask Laurence how much he's going to be asking for her. Letting out a weary sigh, he reveals, [style.speechMasculine(I paid twenty thousand for her, but I'm so desperate to get rid of her that I'll let you have her for just half that. Ten thousand, and she's all yours...)]
+		Указывая на то, что ты оказываешь ему услугу, забирая Scarlett, ты спрашиваешь Лоуренса, сколько он за неё хочет. Тяжело вздохнув, он признается: [style.speechMasculine(Я отдал за неё двадцать тысяч, но мне так хочется избавиться от неё, что отдам тебе всего за половину. Десять тысяч, и она твоя...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -275,16 +277,16 @@
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT_PURCHASED"><![CDATA[
 	<p>
-		Deciding that you want to get this over and done with as quickly as possible, you produce the ten thousand flames which Laurence is asking for. Upon receiving Scarlett's ownership documentation in return, you make the necessary corrections to the information in order to declare her a free citizen once more. Handing these papers over to the harpy herself, you tell her that while she's now free, her matriarch is expecting to see her back in Slaver Alley right away.
+		Решив покончить с этим как можно быстрее, ты достаешь десять тысяч огней, которые просит Лоуренс. Получив взамен документы на владение Scarlett, ты вносишь необходимые правки, чтобы снова объявить её свободной гражданкой. Вручая бумаги самой гарпии, ты говоришь ей, что хоть она теперь и свободна, её матриарх ждет её обратно в Переулке Рабов прямо сейчас.
 	</p>
 	<p>
-		[scarlett.speech(Yeah, yeah, I know what I'm supposed to be doing,)] she insolently replies as she pushes past you and swiftly exits the store.
+		[scarlett.speech(Да-да, знаю я, что должна делать,)] — дерзко отвечает она, протискиваясь мимо тебя и стремительно выходя из лавки.
 	</p>
 	<p>
-		[style.speechMasculine(Thank goodness,)] Laurence sighs, [style.speechMasculine(I never have to see her again...)]
+		[style.speechMasculine(Слава богу,)] — вздыхает Лоуренс, — [style.speechMasculine(мне больше никогда не придется её видеть...)]
 	</p>
 	<p>
-		Saying farewell to the unfortunate squirrel-boy, you follow in Scarlett's footsteps, and after quickly exiting the store room, you continue on back out into the Shopping Arcade. Looking around, you see no sign of the rude harpy, and assume that she must have immediately flown off back to Helena's shop. Thinking that it would be best to return there yourself as quickly as possible, you set off on your way once again...
+		Попрощавшись с несчастным белкой-мальчишкой, ты следуешь за Scarlett. Быстро выйдя из кладовой, ты снова оказываешься в Торговой аркадеде. Оглядевшись, ты не замечаешь следов грубой гарпии и предполагаешь, что она тут же улетела обратно в лавку к Helena. Решив, что тебе тоже стоит поскорее туда вернуться, ты снова отправляешься в путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -294,31 +296,31 @@
 	
 	<htmlContent tag="ANTIQUES_INTERIOR_SCARLETT_HAGGLE"><![CDATA[
 	<p>
-		Thinking that ten thousand flames is a high price to be paying for a slave as poorly-trained as Scarlett, you tell Laurence that he's going to have to offer you a more reasonable deal if he wants you to take the harpy off his hands. As the two of you start haggling over her value, Scarlett loudly complains, [scarlett.speech(Can you two hurry the fuck up? I want to get out of this dump as quickly as possible.)]
+		Подумав, что десять тысяч огней — слишком высокая цена за такую плохо обученную рабыню, как Scarlett, ты говоришь Laurence, что ему придется предложить более разумную сделку, если он хочет избавиться от этой гарпии твоими руками. Пока вы вдвоем начинаете торговаться о её стоимости, Scarlett громко возмущается: [scarlett.speech(Вы двое, можете уже, блядь, поскорее? Я хочу поскорее выбраться из этой дыры.)]
 	</p>
 	<p>
-		Turning to face his slave, no doubt with the intention of asking her to be quiet, the squirrel-boy instead lets out a distressed cry as he sees that Scarlett has put her bird-like feet up on the antique coffee table sitting in front of her. Clearly not at all bothered by her owner's reaction, Scarlett sinks down into the chair, and as she does so, her talons make a loud scratching noise as they run over the table's wooden surface.
+		Повернувшись к своей рабыне — без сомнения, с намерением велеть ей замолчать, — белка-мальчишка вместо этого издает отчаянный крик, заметив, что Scarlett закинула свои птичьи лапы на антикварный кофейный столик перед ней. Явно не заботясь о реакции хозяина, Scarlett откидывается в кресле, и при этом её когти с громким скрежетом проходят по деревянной поверхности стола.
 	</p>
 	<p>
-		[style.speechMasculine(No!)] Laurence shouts, [style.speechMasculine(Stop it! You're destroying it!)]
+		[style.speechMasculine(Нет!)] — кричит Laurence, — [style.speechMasculine(Прекрати! Ты же всё испортишь!)]
 	</p>
 	<p>
-		[scarlett.speech(Shut the fuck up, I'm trying to relax here,)] Scarlett replies, sneering at her owner as she purposefully digs her talons into the table's surface.
+		[scarlett.speech(Да заткнись ты уже, я пытаюсь расслабиться,)] — огрызается Scarlett, презрительно глядя на хозяина и намеренно вонзая когти в поверхность стола.
 	</p>
 	<p>
-		Clearly not being strong-willed enough to deal with this type of behaviour, the squirrel-boy turns towards you and pleads, [style.speechMasculine(Please, just take her away! I don't even want any flames! Just get her out of here!)]
+		Очевидно, что ему не хватает воли, чтобы совладать с таким поведением, поэтому мальчишка-белка поворачивается к тебе и умоляюще произносит: [style.speechMasculine(Пожалуйста, просто забери её! Мне даже огни не нужны! Просто унеси её отсюда!)]
 	</p>
 	<p>
-		Agreeing to take Scarlett off of his hands, you wait as Laurence frantically retrieves Scarlett's ownership documentation and signs her over to you. After making the necessary corrections to the information in order to declare her a free citizen once more, you hand these papers over to the harpy herself, telling her that while she's now free, her matriarch is expecting to see her back in Slaver Alley right away.
+		Согласившись забрать Scarlett, ты ждешь, пока Лоуренс в панике разыскивает документы на её владение и подписывает их на тебя. Внеся необходимые правки, чтобы снова объявить её свободной гражданиной, ты вручаешь бумаги самой гарпии, объясняя, что хоть она теперь и на свободе, её матриарх ждет её возвращения в Рабскую Аллею незамедлительно.
 	</p>
 	<p>
-		[scarlett.speech(Yeah, yeah, I know what I'm supposed to be doing,)] she insolently replies as she pushes past you and swiftly exits the store.
+		[scarlett.speech(Да-да, знаю я, что должна делать,)] — дерзко отвечает она, протискиваясь мимо тебя и стремительно выходя из лавки.
 	</p>
 	<p>
-		[style.speechMasculine(Thank goodness,)] Laurence sighs, [style.speechMasculine(I never have to see her again...)]
+		[style.speechMasculine(Слава богу,)] — вздыхает Лоуренс, — [style.speechMasculine(мне больше никогда не придется её видеть...)]
 	</p>
 	<p>
-		Saying farewell to the unfortunate squirrel-boy, you follow in Scarlett's footsteps, and after quickly exiting the store room, you continue on back out into the Shopping Arcade. Looking around, you see no sign of the rude harpy, and assume that she must have immediately flown off back to Helena's shop. Thinking that it would be best to return there yourself as quickly as possible, you set off on your way once again...
+		Попрощавшись с несчастным белкой-мальчишкой, ты следуешь за Scarlett. Быстро выйдя из кладовой, ты снова оказываешься в Торговой аркадеде. Оглядевшись, ты не замечаешь следов грубой гарпии и предполагаешь, что она тут же улетела обратно в лавку к Helena. Решив, что тебе тоже стоит поскорее туда вернуться, ты снова отправляешься в путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -328,13 +330,13 @@
 	
 	<htmlContent tag="TOILETS"><![CDATA[
 	<p>
-		Conveniently located near to the entrance of the Arcade, these public toilets appear to be very regularly maintained, as they are nothing short of being spotlessly clean. They're also of a higher quality than a regular public restroom, as the walls, floor, and sinks are all made out of what appears to be marble. The dozen-or-so stalls are expertly crafted out of varnished, wooden panelling, while the excellent ventilation ensures that the air is always fresh and odour-free.
+		Эти общественные туалеты, удачно расположенные рядом со входом в Аркаду, содержатся в идеальном порядке и выглядят безупречно чистыми. Они заметно качественнее обычных уборных: стены, пол и раковины здесь словно из мрамора. Около дюжины кабинок искусно сделаны из лакированных деревянных панелей, а отличная вентиляция гарантирует, что воздух здесь всегда свежий и без всяких запахов.
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			Due to the current time, these toilets are completely deserted. As you walk past the open stalls, you see that the wall separating the two at the far end has had a glory hole cut into it. While a piece of cardboard has been taped over this hole, there's really nothing that would be stopping someone from peeling this barrier off and making use of it...
+			Из-за времени суток в туалете совершенно пусто. Проходя мимо открытых кабинок, ты замечаешь, что в стене, разделяющей две последние кабинки в конце ряда, прорезано «глот-холл». Хотя отверстие прикрыто куском картона, на самом деле ничто не мешает кому-то сорвать эту преграду и воспользоваться им...
 		#ELSE
-			A few of the stalls are currently occupied, while a couple of members of the public are making use of the sinks before heading back out into the Arcade to continue their shopping. As you walk past these people, you see that the wall separating two of the stalls has had a glory hole cut into it. While a piece of cardboard has been taped over this hole, there's really nothing that would be stopping someone from peeling this barrier off and making use of it...
+			Несколько кабинок сейчас заняты, а пара прохожих умывается у раковин, прежде чем вернуться в торговую аркаду, чтобы продолжить покупки. Проходя мимо них, ты замечаешь, что в стене, разделяющей две кабинки, прорезано «глот-холл». Хотя отверстие прикрыто куском картона, на самом деле ничто не мешает кому-то сорвать эту преграду и воспользоваться им...
 		#ENDIF
 	</p>
 	]]>
@@ -345,7 +347,7 @@
 	
 	<htmlContent tag="TOILETS_USE"><![CDATA[
 	<p>
-		Stepping into one of the empty stalls, you turn and lock the door behind you, before making use of the toilet. After you've finished, you flush the toilet before making your way over to one of the sinks and washing your [pc.hands]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Зайдя в одну из пустых кабинок, ты поворачиваешься и запираешь дверь, после чего справляешь нужду. Закончив, ты смываешь воду, подходишь к одной из раковин и моешь свои [pc.hands]. Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, оглядывая комнату и раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -355,7 +357,7 @@
 	
 	<htmlContent tag="TOILETS_WASH"><![CDATA[
 	<p>
-		Feeling like you could do with having a quick clean, you step over to the sinks and thoroughly wash your [pc.hands], before splashing some water on your [pc.face]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Чувствуя, что тебе не помешало бы освежиться, ты подходишь к раковинам и тщательно моешь свои [pc.hands], а затем плещешь немного воды в лицо ([pc.face]). Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, оглядывая комнату и раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -365,35 +367,35 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM"><![CDATA[
 	<p>
-		Deciding that it would be fun to get serviced at the glory hole, you peel off the cardboard that's covering it up, before
+		Решив, что будет весело получить удовольствие через это отверстие, ты отрываешь приклеенный картон, после чего
 		#IF(pc.hasCompanions())
-			 telling [com.name] to wait outside and then locking the stall's door behind you.
+			 просишь [com.name] подождать снаружи и запираешь дверь кабинки за собой.
 		#ELSE
-			  locking the stall's door behind you.
+			  запираешь дверь кабинки за собой.
 		#ENDIF
 		#IF(game.isExtendedWorkTime())
-			 With the room being as relatively busy as it is, you know that you won't have to wait long before a stranger turns up who'll choose to service you through the glory hole...
+			Поскольку в помещении довольно много народу, ты понимаешь, что тебе не придется долго ждать незнакомца, который решит обслужить тебя через это отверстие...
 		#ELSE
-			 With the room being completely deserted, you have little choice but to patiently wait and hope that a stranger turns up who'll choose to service you through the glory hole...
+			Поскольку в помещении совершенно пусто, тебе остается лишь терпеливо ждать и надеяться, что явится случайный прохожий, готовый обслужить тебя через это отверстие...
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			Twenty
+			Двадцать
 		#ELSE
-			Five
+			Пять
 		#ENDIF
-		 minutes later, you finally hear someone enter the stall on the other side. With the open glory hole obviously having been the reason they chose to enter this stall, the stranger chooses to immediately kneel down
+		 минут спустя ты наконец слышишь, как кто-то входит в кабинку с другой стороны. Очевидно, что открытое отверстие и стало причиной, по которой незнакомец выбрал именно эту кабинку, и он тут же опускается на колени
 		#IF(npc.isMute())
-			 and push [npc.her] open mouth up to the hole. With an impatient tap on the wall to let you know that [npc.sheIs] there, the stranger prepares to orally service you.
+			 и прижимает [npc.her] к отверстию. Нетерпеливо постучав по стене, чтобы дать тебе понять, что [npc.sheIs] здесь, незнакомец готовится заняться с тобой оральным сексом.
 		#ELSE
-			 and call out through the hole,
+			 и окликает тебя через отверстие,
 			#IF(pc.hasPenis())
-				 [npc.speech(Come on then! Put your cock through here and I'll give it a good suck!)]
+				 [npc.speech(Давай же! Просунь свой член сюда, и я его хорошенько отсосу!)]
 			#ELSEIF(pc.hasVagina())
-				 [npc.speech(Come on then! Push your pussy up against the hole and I'll eat you out!)]
+				 [npc.speech(Ну же! Прижми свою киску к дырке, и я тебя вылижу!)]
 			#ELSE
-				 [npc.speech(Come on then! Give me something to suck already!)]
+				 [npc.speech(Давай же! Дай мне уже что-нибудь пососать!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -402,29 +404,29 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_LEAVE"><![CDATA[
 	<p>
-		Having second thoughts about receiving oral from some random stranger, you back away from the hole and wait for them to give up and leave...
+	Засомневавшись, стоит ли принимать оральный секс от случайного незнакомца, ты отходишь от дырки и ждешь, когда они сдадутся и уйдут...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_START"><![CDATA[
 	<p>
-		Having already waited long enough, you quickly step up to the glory hole,
+	Подождав достаточно долго, ты решительно подходишь к «дырке славы»,
 		#IF(pc.hasPenis())
-			 preparing to have your [pc.cock+] sucked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет сосать твой [pc.cock+].
 		#ELSEIF(pc.hasVagina())
-			 preparing to have your [pc.pussy+] licked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет лизать твой [pc.pussy+].
 		#ELSE
-			 preparing to have your genderless mound licked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет лизать твою бесполую плоть.
 		#ENDIF
 	</p>
 	<p>
-		As [npc.she] sees the approach of your groin, [npc.name] lets out [npc.a_moan+], before shuffling closer to the wall and firmly pressing [npc.her] open mouth up against the hole. 
+	Когда [npc.she] видит приближение твоего паха, [npc.name] издает [npc.a_moan+], после чего прижимается ближе к стене и плотно прижимает [npc.her] открытый рот к дырке.
 		#IF(!npc.isMute())
-			 Letting out [npc.a_moan+], [npc.she] impatiently encourages you to get started, [game.random(
-			[npc.speech(Oh yeah, come on! Let this whore show you what [npc.sheIs] capable of!)]
-			|[npc.speech(~Mmm!~ Oh yeah! Let's get started!)]
-			|[npc.speech(Oh yeah, babe! I'll show you how much of a slut I am!)])]
+			Издавая [npc.a_moan+], [npc.she] нетерпеливо подгоняет тебя, [game.random(
+			[npc.speech(О да, давай! Позволь этой шлюхе показать тебе, на что способна [npc.sheIs]!)]
+			|[npc.speech(~Ммм!~ О да! Давай начнем!)]
+			|[npc.speech(О да, детка! Я покажу тебе, какая я сучка!)])]
 		#ENDIF
 	</p>
 	]]>
@@ -435,10 +437,10 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_POST_SEX"><![CDATA[
 	<p>
-		You step back from the glory hole, grinning as you hear [npc.name] let out a happy little [npc.moan]. As you get your things in order, you see a flash of movement through the hole, before the creak of the adjoining stall's door announces the horny slut's exit.
+		Ты отступаешь от «дыры славы», ухмыляясь при звуке довольного [npc.moan], который издает [npc.name]. Пока ты приводишь вещи в порядок, сквозь отверстие мелькает какое-то движение, а затем скрип двери соседней кабинки возвещает об уходе похотливой шлюхи.
 	</p>
 	<p>
-		Just a moment later, you reach down to unlock the door of your own stall, and as you open it and step back out into the toilets, you see that [npc.name] has already left. With absolutely no idea as to who just orally serviced you, you wonder what to do next...
+		Спустя мгновение ты тянешься к замку своей кабинки, и когда ты открываешь дверь и выходишь обратно в туалет, то видишь, что [npc.name] уже ушла. Совершенно не понимая, кто только что отсосал тебе, ты гадаешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -448,48 +450,48 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB"><![CDATA[
 	<p>
-		Feeling horny and eager to pleasure some stranger's cock, you peel off the tape that's covering up the glory hole, before
+		Чувствуя возбуждение и жажду доставить удовольствие чьему-то чужому члену, ты отклеиваешь скотч, закрывающий «дыру славы», после чего
 		#IF(pc.hasCompanions())
-			 telling [com.name] to wait outside and then locking the stall's door behind you.
+			 просишь [com.name] подождать снаружи и запираешь дверь кабинки за собой.
 		#ELSE
-			  locking the stall's door behind you.
+			  запираешь дверь кабинки за собой.
 		#ENDIF
 		#IF(game.isExtendedWorkTime())
-			 With the room being as relatively busy as it is, you know that you won't have to wait long before a stranger turns up who'll want you to orally service them...
+			 В зале довольно людно, так что ты понимаешь: долго ждать не придется — скоро обязательно объявится незнакомец, которому захочется, чтобы ты отсосала ему...
 		#ELSE
-			 With the room being completely deserted, you have little choice but to patiently wait and hope that a stranger turns up who'll want you to orally service them...
+			 В зале совершенно пусто, так что тебе остается лишь терпеливо ждать и надеяться, что вот-вот появится незнакомец, желающий получить от тебя оральный сервис...
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			Twenty
+			Двадцать
 		#ELSE
-			Five
+			Пять
 		#ENDIF
-		 minutes later, and you finally hear someone enter the stall on the other side. With the open glory hole obviously having been the reason they chose to enter this stall, the stranger immediately steps up to it and starts shifting their clothing out of the way. Just a moment later, and their [npc.cockDescriptive(true)] is being pushed through the hole. Before you can make a move, [npc.name]
+			 ...спустя несколько минут ты наконец слышишь, как в кабинку напротив кто-то входит. Очевидно, открытое «славное отверстие» и стало причиной их выбора, ведь незнакомец тут же подходит к нему и начинает расстегивать одежду. Мгновение спустя в отверстие просовывается [npc.cockDescriptive(true)]. Прежде чем ты успеваешь что-то предпринять, [npc.name]
 		#IF(npc.isMute())
-			 impatiently taps the wall, encouraging you to get started on sucking [npc.her] cock...
+			 нетерпеливо постукивает по стене, призывая тебя приняться за сосание [npc.her] члена...
 		#ELSE
 			#IF(npc.isSelfish())
 				#IF(npc.isFeminine())
-					 barks out a sharp command,
+					 резко командует,
 				#ELSE
-					 lets out a deep growl,
+					 издает низкое рычание,
 				#ENDIF
-				 [game.random(
-				[npc.speech(Come on, slut, get to work!)]
-				|[npc.speech(Start sucking, slut!)]
-				|[npc.speech(Come on, you dirty slut, get started already!)])]
+					 [game.random(
+				[npc.speech(Давай, шлюха, за работу!)]
+				|[npc.speech(Начни сосать, шлюха!)]
+				|[npc.speech(Ну же, грязная шлюха, давай уже начинай!)] )]
 			#ELSE
 				#IF(npc.isFeminine())
-					 sensually [npc.moansVerb],
+					 чувственно [npc.moansVerb],
 				#ELSE
-					 lets out a deep grunt,
+					 издает глубокий стон,
 				#ENDIF
 				 [game.random(
-				[npc.speech(Come on then, show me what you can do!)]
-				|[npc.speech(Get your lips wrapped around my cock!)]
-				|[npc.speech(Come on, get started already!)])]
+				[npc.speech(Ну же, покажи, на что ты способна!)]
+				|[npc.speech(Окутай мой член своими губами!)]
+				|[npc.speech(Давай, начинай уже!!)])]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -498,22 +500,22 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB_LEAVE"><![CDATA[
 	<p>
-		Having second thoughts about servicing some random stranger's cock, you back away from the hole and wait for them to give up and leave...
+	Засомневавшись, стоит ли обслуживать член какого-то случайного незнакомца, ты отстраняешься от отверстия и ждешь, когда он сдастся и уйдет...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB_START"><![CDATA[
 	<p>
-		Having already waited long enough, you quickly kneel down in front of the glory hole,
+	Подождав достаточно долго, ты быстро опускаешься на колени перед отверстием,
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			 before opening your mouth and leaning in towards [npc.namePos] [npc.cock+].
+			 открываешь рот и подаешься вперед к [npc.namePos] [npc.cock+].
 		#ELSE
-			 but as your mouth is blocked, all you can prepare to do is give [npc.name] a handjob.
+			 но так как твой рот чем-то занят, тебе остается только ласкать [npc.name] рукой.
 		#ENDIF
 	</p>
 	<p>
-		Hearing you drop down in front of [npc.herHim], [npc.name] lets out an eager [npc.moan], and as [npc.her] cock starts to stiffen, [npc.she] impatiently bucks [npc.her] [npc.hips] up against the wall.
+	Услышав, как ты опускаешься перед [npc.herHim], [npc.name] издает нетерпеливый [npc.moan], и когда член [npc.her] начинает твердеть, [npc.she] нетерпеливо прижимает [npc.her] [npc.hips] к стене.
 	</p>
 	]]>
 	</htmlContent>
@@ -523,10 +525,10 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB_POST_SEX"><![CDATA[
 	<p>
-		You step back from the glory hole, grinning to yourself as you hear [npc.name] letting out a satisfied [npc.moan]. As you get your things in order, you see a flash of movement through the hole, before the creak of the adjoining stall's door announces the stranger's exit.
+	Ты отступаешь от отверстия, довольно ухмыляясь, когда слышишь удовлетворенный [npc.moan] от [npc.name]. Пока ты приводишь себя в порядок, ты замечаешь какое-то движение в дыре, а затем скрип двери соседней кабинки возвещает об уходе незнакомца.
 	</p>
 	<p>
-		Just a moment later, you reach down to unlock the door of your own stall, and as you open it and step back out into the toilets, you see that [npc.name] has already left. With absolutely no idea as to whose cock you just serviced, you wonder what to do next...
+	Мгновение спустя ты тянешься к замку своей кабинки, и когда ты открываешь дверь и выходишь обратно в туалет, то видишь, что [npc.name] уже ушел. Совершенно не понимая, чей же член ты только что обслужила, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
