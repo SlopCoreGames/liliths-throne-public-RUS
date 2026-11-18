@@ -5,22 +5,21 @@
 	
 	<htmlContent tag="DATE_START"><![CDATA[
 	<p>
-		Having been eagerly anticipating your date with Nyan all day, you swiftly make your way to the address which she wrote down for you. The street on which she lives turns out to be far more upmarket than you expected, with each of the regency-styled residences which you pass being immaculately clean and well presented. Much to your surprise, there's even a demon Enforcer patrolling up and down the road, who keeps an eye on you as you approach Nyan's apartment building.
+		Весь день ты с нетерпением предвкушаешь свидание с Nyan и поспешно направляешься по адресу, который она тебе записала. Улица, на которой она живет, оказывается куда элитнее, чем ты ожидал: каждый из проходящих мимо домов в стиле регентства выглядит безупречно чисто и ухоженно. К твоему удивлению, по дороге даже патрулирует демон Enforcer, который пристально следит за тобой, пока ты приближаешься к дому Nyan.
 	</p>
 	<p>
-		Walking up the steps to the front door, you see yet another sign of this area's affluence, as there's an arcane intercom system securely bolted to the wall. Looking over the half a dozen name plates, you see one which is labelled as 'Nyan [nyan.surname]', and you waste no time in pressing the little button beside it. After a loud buzz and a momentary pause, you hear the voice of your girlfriend call out over the intercom, [nyan.speechNoEffects(H-Hello? This is Ms. [nyan.surname], w-who is it?)]
+		Поднимаясь по ступеням к входной двери, ты замечаешь еще один признак богатства этого района — к стене наглухо прикручена магическая система домофона. Пробежав глазами по полудюжине именных табличек, ты находишь ту, на которой написано «Nyan [nyan.surname]», и без промедления жмешь на маленькую кнопку рядом. После громкого гудка и короткой паузы из динамика раздается голос твоей девушки: [nyan.speechNoEffects(П-привет? Это госпожа [nyan.surname], к-кто там?)]
 	</p>
 	<p>
-		After quickly telling her that it's you, Nyan lets out an excited squeak and quickly replies, [nyan.speechNoEffects([pc.Name]! C-Come on in! I'm on the third floor, p-please come on up!)]
+		Быстро сказав ей, что это ты, Nyan издает восторженный писк и поспешно отвечает: [nyan.speechNoEffects([pc.Name]! В-входи скорее! Я на третьем этаже, п-пожалуйста, поднимайся!)]
 	</p>
 	<p>
-		Hearing a loud clicking noise from behind the front door, you experimentally push on it and discover that it's been unlocked. Doing as your girlfriend says, you cross the smartly-kept foyer and proceed up several flights of stairs to the third floor. As you reach your destination, you see that the cute cat-girl already has her apartment door open, and with a happy smile on her face, she exclaims, [nyan.speechNoEffects(I-It's good to see you, [pc.name]! W-What did you come here for?)]
+		Услышав громкий щелчок за входной дверью, ты осторожно толкаешь её и обнаруживаешь, что она не заперта. Следуя совету своей девушки, ты проходишь через аккуратное фойе и поднимаешься на третий этаж. Дойдя до места, ты видишь, что дверь в квартиру милой кошкодевочки уже открыта, и с радостной улыбкой она восклицает: [nyan.speechNoEffects(Р-рада тебя видеть, [pc.name]! Ч-что ты здесь делаешь?)]
+	</p><p>
+		[pc.Stepping] дойдя до места, где тебя ждёт твоя девушка, ты говоришь ей, что пришёл забрать её на вечернее свидание. Услышав это, ярко-голубые глаза Nyan вспыхивают, она радостно хлопает в ладоши и восклицает: [nyan.speechNoEffects(О! О, как чудесно! В-входи, [pc.name], можешь подождать у меня в гостиной, пока я г-готовлюсь!)]
 	</p>
 	<p>
-		[pc.Stepping] up to where your girlfriend is waiting, you tell her that you're here to collect her for your evening's date. As she hears you say this, Nyan's bright blue eyes light up, and she excitedly claps her hands together and exclaims, [nyan.speechNoEffects(Oh! Oh, how wonderful! C-Come on in, [pc.name], you can wait in my lounge while I g-get ready!)]
-	</p>
-	<p>
-		Stepping back into her apartment, your girlfriend holds the door open and beckons you inside...
+		Твоя девушка заходит в квартиру, придерживая дверь и маня тебя за собой...
 	</p>
 	]]>
 	</htmlContent>
@@ -28,21 +27,20 @@
 	
 	<!-- DATE_START_LOUNGE -->
 	
-	<htmlContent tag="DATE_START_LOUNGE"><![CDATA[
-	<p>
-		[pc.Stepping] forwards, you enter the entrance hall to Nyan's apartment and let the cat-girl shut the door behind you. Happily skipping forwards, she calls out behind her, [nyan.speechNoEffects(Come on, the lounge is this way!)]
+	<htmlContent tag="DATE_START_LOUNGE"><![CDATA[<p>
+		[pc.Stepping] ты проходишь в прихожую квартиры Nyan и позволяешь кошкодевочке закрыть за вами дверь. Весело подпрыгивая на ходу, она окликает тебя из глубины квартиры: [nyan.speechNoEffects(Давай скорее, гостиная в той стороне!)]
 	</p>
 	<p>
-		Following in your happy girlfriend's footsteps, you move forwards and take a right-hand turn, before [pc.walking] straight ahead down the carpeted hallway and entering her modestly-sized lounge. On one side of the room there are a couple of bookcases stacked full of books, while a coffee table and several plush sofas are arranged to be the room's focal point. A couple of windows are positioned on the far side of the room, and as Nyan leads you over to the nearest sofa, you see that they look down onto the courtyard behind the apartment building.
+		Следуя за своей счастливой девушкой, ты идешь вперед и сворачиваешь направо, а затем [pc.walking] по ковровому коридору в ее уютную, но не слишком большую гостиную. У одной стены стоят книжные шкафы, забитые до отказа, а в центре комнаты, словно главный элемент интерьера, расположились журнальный столик и несколько мягких диванов. На противоположной стороне комнаты находятся окна, и когда Nyan подводит тебя к ближайшему дивану, ты замечаешь, что из них открывается вид на внутренний дворик за домом.
 	</p>
 	<p>
-		Moving the sofa's stack of colourful cushions aside in order to make a comfortable spot for you to sit down, your girlfriend practically skips in excitement as she retreats to the door and calls out, [nyan.speechNoEffects(I'm going to get changed! I-I won't be long, please make yourself comfortable!)]
+		Отодвинув стопку ярких подушек на диване, чтобы освободить тебе удобное место, твоя девушка практически подпрыгивает от восторга. Она почти бегом направляется к двери и выкрикивает: [nyan.speechNoEffects(Я пойду переоденусь! Я... я быстро, только устраивайся поудобнее!)]
 	</p>
 	<p>
-		With that, she darts out of the room, leaving you to do as she suggested and sit down on the comfortable sofa. Taking a cursory look around from your seated position, you notice that there are a couple of paintings on the wall which both depict idyllic countryside scenes. While there are several fashion and cookery magazines on the coffee table, you don't particularly feel like reading at the moment, and so soon find yourself standing up and walking around the room. Wandering past the bookcases, you see that almost every single one of the books on the shelves is some kind of romance novel.
+		С этими словами она вылетает из комнаты, оставляя тебя делать то, что она предложила — устраиваться на мягком диване. Бегло оглядевшись, ты замечаешь на стене пару картин с изображением идиллических сельских пейзажей. На журнальном столике разбросаны модные и кулинарные журналы, но читать тебе сейчас совсем не хочется, поэтому ты вскоре встаешь и начинаешь бродить по комнате. Проходя мимо книжных шкафов, ты замечаешь, что почти каждая книга на полках — это какой-то любовный роман.
 	</p>
 	<p>
-		[pc.Walking] over to the windows, you spend the next few minutes watching a centauress unloading a cart she'd been pulling. By the time she's finished stacking her crates up against one wall of the courtyard, you suddenly hear Nyan's footsteps approaching from down the hallway...
+		[pc.Walking] подойдя к окну, ты проводишь следующие несколько минут, наблюдая за кентаврией, которая разгружает телегу. К тому времени, как она заканчивает складывать ящики у стены внутреннего дворика, ты внезапно слышишь приближающиеся шаги Nyan в конце коридора...
 	</p>
 	]]>
 	</htmlContent>
@@ -52,22 +50,22 @@
 	
 	<htmlContent tag="DATE_START_LOUNGE_NYAN_DRESS"><![CDATA[
 	<p>
-		You turn to face the door just in time to see Nyan stepping back into the room. Instead of her usual skirt and blouse, she's now wearing [nyan.a_slotClothing(TORSO_UNDER, true)], with a colour-coordinated bow on her headband. For the first time, you see your girlfriend wearing a noticeable amount of makeup, and you can't help but instantly think how her red lipstick, black eye-liner, and light blue eye-shadow makes her look more attractive and alluring than ever before.
+		Ты оборачиваешься к двери как раз вовремя, чтобы увидеть, как Nyan входит в комнату. Вместо привычной юбки и блузки на ней теперь [nyan.a_slotClothing(TORSO_UNDER, true)], а на ободке красуется бант в тон наряду. Впервые ты видишь свою девушку с заметным макияжем, и невольно думаешь о том, насколько соблазнительной и притягательной она стала благодаря красной помаде, черной подводке и светло-голубым теням.
 	</p>
 	<p>
-		[pc.Stepping] over to where she's waiting, you compliment Nyan on how beautiful she looks, which causes her cheeks to turn a bright shade of red. Coyly shuffling her feet, she glances at you with her big, blue eyes and asks, [nyan.speechNoEffects(A-Are you ready to go?)]
+		[pc.Stepping] подойдя к ней, ты делаешь Nyan комплимент, говоря, как она прекрасна, отчего её щеки заливаются ярким румянцем. Застенчиво переминаясь с ноги на ногу, она смотрит на тебя своими огромными голубыми глазами и спрашивает: [nyan.speechNoEffects(Т-ты готов идти?)]
 	</p>
 	<p>
-		Replying in the affirmative, you accompany the blushing cat-girl back into the hallway, where she pulls on
+		Подтвердив согласием, ты сопровождаешь раскрасневшуюся кошкодевочку обратно в коридор, где она накидывает
 		#IF(game.getSeason()==SEASON_SUMMER)
-			 a stylish, tan-coloured coat and a pair of dark brown chelsea boots, before grabbing hold of a cute, frog-styled umbrella.
+			 стильное бежевое пальто и темно-коричневые ботинки челси, после чего берет милый зонтик в виде лягушки.
 		#ELSE
-			 a stylish, tan-coloured coat, a black scarf, and a pair of dark brown thigh-high boots, before finally grabbing a cute, frog-styled umbrella.
+			 стильное бежевое пальто, черный шарф и темно-коричневые сапоги выше колен, после чего наконец хватает милый зонтик в виде лягушки.
 		#ENDIF
-		 Flashing you a happy smile, she holds up the green umbrella and declares, [nyan.speechNoEffects(T-The weather seems to change at a moment's notice, so I a-always take this with me!)]
+		Она счастливо улыбается тебе, поднимает зеленый зонт и заявляет: [nyan.speechNoEffects(Погода, кажется, меняется в любую секунду, поэтому я в-всегда беру его с собой!)]
 	</p>
 	<p>
-		Telling Nyan what a good idea that is, you join her in exiting her apartment, before accompanying her down the stairs and towards the apartment building's front door...
+		Сказав Nyan, какая это отличная идея, ты выходишь из её квартиры вместе с ней, а затем сопровождаешь её вниз по лестнице к входной двери дома...
 	</p>
 	]]>
 	</htmlContent>
@@ -78,75 +76,75 @@
 	<htmlContent tag="DATE_RESTAURANT_1_ARRIVED"><![CDATA[
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			As you approach the exit, a bright pink light suddenly flashes through the windows, causing Nyan to let out a little eek and whine, [nyan.speechNoEffects(Oh no... There's an a-arcane storm! P-Perhaps if we wait for the thunder to pass, then run for the Arcade, w-we could make it?)]
+		Когда вы приближаетесь к выходу, в окнах внезапно вспыхивает ярко-розовый свет, заставляя Nyan вскрикнуть и жалобно заскулить: [nyan.speechNoEffects(О нет... Это а-арканный шторм! М-может быть, если мы подождем, пока пройдет гром, а потом побежим к Аркаде, мы у-успеем?)]
 		</p>
 		<p>
-			Asking Nyan if she's sure that she wants to risk it, and receiving a rapid nod of her head in response, you wait for the next clap of thunder to pass before opening the door and hurrying down the steps with your girlfriend at your side. Clutching her little umbrella in her delicate hands, the cat-girl surprisingly proves to be an extremely capable runner. Her unexpected sprint proves to be very fortuitous, for the two of you manage to reach the doors of the Shopping Arcade without being subjected to a clap of arousing thunder.
+			Спросив Nyan, уверена ли она, что хочет рискнуть, и получив в ответ стремительный кивок, ты ждешь, пока стихнет очередной раскат грома, после чего распахиваешь дверь и спешишь вниз по ступеням, ведя свою девушку за собой. Несмотря на то, что она сжимает свой маленький зонтик в изящных ладонях, эта кошкодевочка на удивление оказывается очень быстрой бегуньей. Ее неожиданный спринт оказывается крайне удачным: вам обоим удается добраться до дверей Торгового Аркада, не попав под очередной удар возбуждающего грома.
 		</p>
 		<p>
-			Rushing through the entrance and shutting the doors after you, Nyan heavily pants, [nyan.speechNoEffects(Phew... We made it... I can't... believe that worked...)]
+			Влетев внутрь и захлопнув за собой двери, Nyan тяжело дышит: [nyan.speechNoEffects(Фух... Мы успели... Не верится, что это сработало...)]
 		</p>
 		<p>
-			After giving your girlfriend some time in which to catch her breath, you accompany her down the wide, marble walkways of the Arcade, and soon arrive at your destination of the restaurant, 'The Oaken Glade'. Holding open the front door and allowing Nyan to step inside, you follow her through and are immediately met by a smartly-dressed otter-boy, who is quite clearly the establishment's maître d'. Looking over at Nyan, he gives her a big, familiar smile, before slightly bowing his head and offering his enthusiastic greetings, [style.speechMasculine(Good evening, good evening! We have not seen you nor your mother for some time, Ms. [nyan.surname], but as ever, you are most welcome here. If you and your partner for this evening would care to follow me, I will show you to your seats. After all, we always have a table for you!)]
+		Дав своей девушке немного перевести дух, ты сопровождаешь её по широким мраморным дорожкам Аркады, и вскоре вы прибываете в ресторан «Дубрава». Придерживая входную дверь и пропуская Nyan внутрь, ты заходишь следом и тут же встречаешь элегантно одетого мальчика-выдры, который явно является метрдотелем заведения. Посмотрев на Nyan, он расплывается в широкой, приветливой улыбке, слегка склоняет голову и с энтузиазмом приветствует вас: [style.speechMasculine(Добрый вечер, добрый вечер! Мы давно не видели ни вас, ни вашу матушку, госпожа [nyan.surname], но вам здесь всегда рады. Если вы и ваш спутник сегодня пожелаете проследовать за мной, я провожу вас к столику. В конце концов, для вас у нас всегда найдется место!)]
 		</p>
 	#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN || game.getCurrentWeather()==WEATHER_SNOW)
 		<p>
-			As you approach the exit, you see through the windows that it's currently
+			Когда ты приближаешься к выходу, то видишь через окна, что на улице сейчас
 			#IF(game.getCurrentWeather()==WEATHER_RAIN)
-				 raining outside.
+				идет дождь.
 			#ELSE
-				 snowing outside.
+				идет снег.
 			#ENDIF
-			 With her cute frog-umbrella coming to the rescue, Nyan steps outside and pops it open, before shyly stuttering, [nyan.speechNoEffects(T-This is big enough for both of us... S-So we can w-walk close together and share it...)]
+			Достав свой милый зонтик в виде лягушки, Nyan выходит на улицу и раскрывает его, а затем застенчиво заикаясь, произносит: [nyan.speechNoEffects(Э-этот зонтик достаточно большой для нас двоих... Т-так что мы сможем и-идти рядом и делиться им...)]
 		</p>
 		<p>
-			Thanking your girlfriend for her kindness, you do as she suggests and share the umbrella with her. Clearly being very happy at getting to share this moment with you, Nyan blushes and leans into you as you travel down the street. Unfortunately for her, however, this time together under her umbrella doesn't last long, as it only takes you five minutes to arrive at the doors of the Shopping Arcade.
+			Поблагодарив свою девушку за доброту, ты следуешь её предложению и встаешь под зонт рядом с ней. Nyan явно счастлива разделить этот момент с тобой: она краснеет и прижимается к тебе, пока вы идете по улице. К сожалению для неё, это время под зонтом оказывается недолгим — вам требуется всего пять минут, чтобы добраться до дверей Торгового пассажа.
 		</p>
 	#ELSE
 		<p>
-			As you approach the exit, you see through the windows that the weather outside isn't going to prove to be an issue. After holding open the door for your girlfriend, you accompany her down the steps and then proceed on your way down the street. Clearly being very excited about going out on a date with you, Nyan walks right by your side for the whole five minutes that it takes to get to the Shopping Arcade.
+			Когда вы приближаетесь к выходу, ты видишь через окна, что погода снаружи не станет проблемой. Придержав дверь для своей девушки, ты сопровождаешь её вниз по ступеням, и вы продолжаете путь по улице. Nyan явно в восторге от свидания с тобой: она идет вплотную к тебе все те пять минут, что вам требуется, чтобы дойти до Торгового пассажа.
 		</p>
 	#ENDIF
 	#IF(game.getCurrentWeather()!=WEATHER_MAGIC_STORM)
 		<p>
-			Heading inside, you accompany your girlfriend down the wide, marble walkways of the Arcade, and soon arrive at your destination of the restaurant, 'The Oaken Glade'. Holding open the front door and allowing Nyan to step inside, you follow her through and are immediately met by a smartly-dressed otter-boy, who is quite clearly the establishment's maître d'. Looking over at Nyan, he gives her a big, familiar smile, before slightly bowing his head and offering his enthusiastic greetings, [style.speechMasculine(Good evening, good evening! We have not seen you nor your mother for some time, Ms. [nyan.surname], but as ever, you are most welcome here. If you and your partner for this evening would care to follow me, I will show you to your seats. After all, we always have a table for you!)]
+			Направляясь внутрь, ты сопровождаешь свою девушку по широким мраморным дорожкам Аркады, и вскоре вы прибываете в ресторан «Дубрава». Придерживая входную дверь и пропуская Nyan внутрь, ты следуешь за ней и тут же встречаешь элегантно одетого мальчика-выдру, который явно является метрдотелем заведения. Посмотрев на Nyan, он расплывается в широкой, знакомой улыбке, после чего слегка склоняет голову и с энтузиазмом приветствует вас: [style.speechMasculine(Добрый вечер, добрый вечер! Мы давно не видели ни вас, ни вашу матушку, госпожа [nyan.surname], но вам здесь всегда рады. Если вы с вашим спутником пожелаете проследовать за мной, я провожу вас к столику. В конце концов, для вас у нас всегда найдется место!)]
 		</p>
 	#ENDIF
 	<p>
-		As you follow the waiter to the far side of the restaurant, you see that all of the tables are occupied either by couples or small groups of friends, despite the place always looking empty from the outside. Realising that this aspect of the restaurant's illusion must have been designed to grant diners some privacy, you continue on to the other side of what appears in all respects to be a tranquil forest clearing, where you and Nyan are presented with a quiet corner table for two.
+		Пока ты идешь за официантом в дальнюю часть ресторана, ты замечаешь, что все столики заняты либо парами, либо небольшими компаниями друзей, хотя снаружи заведение всегда кажется пустым. Понимая, что эта особенность ресторанной иллюзии была создана для обеспечения приватности гостей, ты проходишь на другую сторону того, что во всех отношениях кажется безмятежной лесной поляной, где вам с Nyan предлагают уютный столик на двоих в тихом уголке.
 	</p>
 	<p>
-		Taking your girlfriend's coat and umbrella, the waiter seats you both at the table and gives you each a menu, before handing you the wine list and telling you to please take your time in ordering. Looking across the table and giving you her most alluring look, Nyan bites her lip and asks, [nyan.speechNoEffects(C-Could we order some white wine, please? I don't mind what bottle, s-so could you please choose for me?)]
+		Взяв пальто и зонтик твоей девушки, официант усаживает вас за стол и раздает меню, после чего протягивает тебе винную карту и просит не торопиться с заказом. Посмотрев на тебя своим самым соблазнительным взглядом, Nyan прикусывает губу и спрашивает: [nyan.speechNoEffects(М-можно нам заказать белого вина, пожалуйста? М-мне не важно, какая будет бутылка, т-так что выбери, пожалуйста, за меня?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_2_VULPINE"><![CDATA[
 	<p>
-		Looking down the list, you see that the vintages on offer are of a far higher quality than in an average restaurant, and their steep prices reflect this. As even the cheapest bottle, at [#SPECIAL_PARSE_1] flames, is better than anything which you'd be able to order elsewhere, you decide to go with that one, and tell the waiter that you'd like to order a bottle of [#SPECIAL_PARSE_0].
+		Изучая список, ты замечаешь, что предлагаемые сорта по качеству куда выше, чем в обычном ресторане, и их заоблачные цены это подтверждают. Поскольку даже самая дешевая бутылка за [#SPECIAL_PARSE_1] огней лучше всего, что можно найти в других местах, ты решаешь остановиться на ней и говоришь официанту, что хочешь заказать бутылку [#SPECIAL_PARSE_0].
 	</p>
 	<p>
-		From the smile on her face, you can tell that Nyan is pleased with your choice of wine, and as she hands her wine list back to the waiter, she happily sighs, [nyan.speechNoEffects(Thanks, [pc.name], I-I've had that wine before, and I really like it...)]
+		По её улыбке видно, что Nyan довольна твоим выбором вина. Возвращая винную карту официанту, она счастливо вздыхает: [nyan.speechNoEffects(Спасибо, [pc.name], я... я уже пробовала это вино, и оно мне очень нравится...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_2_ALICORN"><![CDATA[
 	<p>
-		Looking down the list, you see that the vintages on offer are of a far higher quality than in an average restaurant, and their steep prices reflect this. Although not prepared to splash out on the most expensive of the bottles on offer, you do decide to go for something a couple of notches above the cheapest, and so at [#SPECIAL_PARSE_1] flames, you tell the waiter that you'd like to order the bottle of [#SPECIAL_PARSE_0].
+		Изучая список, ты замечаешь, что предлагаемые сорта по качеству куда выше, чем в обычном ресторане, и их заоблачные цены это подтверждают. И хотя ты не готов разоряться на самые дорогие позиции, ты решаешь выбрать что-то на пару ступеней выше самого дешевого варианта, и за [#SPECIAL_PARSE_1] огней говоришь официанту, что хочешь заказать бутылку [#SPECIAL_PARSE_0].
 	</p>
 	<p>
-		From the big smile on her face, you can tell that Nyan is very pleased with your choice of wine, and as she hands her wine list back to the waiter, she happily exclaims, [nyan.speechNoEffects(Thank you, [pc.name]! I-I've had that wine once before, and I really loved it...)]
+		По её широкой улыбке видно, что Nyan очень довольна твоим выбором вина. Возвращая винную карту официанту, она радостно восклицает: [nyan.speechNoEffects(Спасибо, [pc.name]! Я... я уже пробовала это вино однажды, и оно было просто великолепным...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_2_YOUKO"><![CDATA[
 	<p>
-		Looking down the list, you see that the vintages on offer are of a far higher quality than in an average restaurant, and their steep prices reflect this. Deciding that Nyan deserves the very best, you decide to order the most expensive item on the list, and so at [#SPECIAL_PARSE_1] flames, you tell the waiter that you'd like to order the bottle of [#SPECIAL_PARSE_0].
+		Пробежав глазами по списку, ты замечаешь, что предлагаемые винтажи по качеству куда выше, чем в обычном ресторане, и их заоблачные цены это подтверждают. Решив, что Nyan заслуживает самого лучшего, ты заказываешь самое дорогое вино в списке, и за [#SPECIAL_PARSE_1] Огней ты говоришь официанту, что хотите заказать бутылку [#SPECIAL_PARSE_0].
 	</p>
 	<p>
-		From the ecstatic smile on her face, you can tell that Nyan is delighted with your choice of wine, and as she hands her wine list back to the waiter, she happily squeals, [nyan.speechNoEffects(Thank you so much, [pc.name]! I-I've never had that wine before, but I've heard that it's the very best...)]
+		По её восторженной улыбке видно, что Nyan в полном delight от твоего выбора вина. Возвращая винную карту официанту, она радостно визжит: [nyan.speechNoEffects(Огромное спасибо, [pc.name]! Я... я никогда раньше не пробовала это вино, но слышала, что оно самое лучшее...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -156,28 +154,28 @@
 	
 	<htmlContent tag="DATE_RESTAURANT_2_WINE_ORDER"><![CDATA[
 	<p>
-		Having taken your order, the waiter asks if you'll be sharing the bottle, or if you'll be having something else to drink tonight...
+		Приняв заказ, официант спрашивает, будете ли вы делить бутылку на двоих или закажете что-нибудь еще к ужину...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_3_SHARE"><![CDATA[
 	<p>
-		After you've confirmed that you'll be sharing the bottle with Nyan, the waiter leaves your two wine glasses on the table, before swiftly departing and then returning with your chosen vintage. You motion for Nyan to be the one to taste it, and after she's done so and given her enthusiastic approval, the waiter pours you each out a glass. Placing the bottle in an arcane-powered cooler, he leaves it on the table, before saying that he'll return shortly to take your food orders and  then swiftly departing once again.
+		После того как ты подтвердил, что вы разделите бутылку с Nyan, официант оставляет на столе два бокала, после чего быстро уходит и вскоре возвращается с выбранным вами винтажем. Ты жестом предлагаешь Nyan попробовать его первой; она делает глоток и с энтузиазмом одобряет выбор, после чего официант разливает вино по бокалам. Поставив бутылку в охлаждающую установку на базе Арканы, он оставляет её на столе, обещает скоро вернуться, чтобы принять заказ на еду, и снова стремительно удаляется.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_3_WATER"><![CDATA[
 	<p>
-		Not wanting to have any alcohol tonight, you tell the waiter that you'd like to order a bottle of water. Nodding his head, he swiftly departs and then returns with your chosen beverages. After giving you a glass and placing your bottled water down on the table, the waiter has Nyan taste the wine you've ordered. Receiving her enthusiastic approval, he then pours her out a glass, before placing the bottle in an arcane-powered cooler and leaving it on the table. Saying that he'll return shortly to take your food orders, he swiftly departs once again, leaving the two of you alone.
+		Не желая пить алкоголь сегодня вечером, ты говоришь официанту, что хочешь заказать бутылку воды. Кивнув, он быстро уходит и возвращается с выбранными напитками. Подав тебе стакан и поставив бутылку воды на стол, официант предлагает Nyan попробовать заказанное вами вино. Получив её восторженное одобрение, он наливает ей бокал, после чего ставит бутылку в охлаждающую установку на базе арканы и оставляет её на столе. Сказав, что скоро вернется, чтобы принять заказ на еду, он снова стремительно удаляется, оставляя вас двоих наедине.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_3_BEER"><![CDATA[
 	<p>
-		Wanting to drink something other than wine, you tell the waiter that you'd like to order a bottle of beer. Nodding his head, he swiftly departs and then returns with your chosen beverages. After expertly pouring out your beer and placing the glass down before you, the waiter has Nyan taste the wine you've ordered. Receiving her enthusiastic approval, he then pours her out a glass, before placing the bottle in an arcane-powered cooler and leaving it on the table. Saying that he'll return shortly to take your food orders, he swiftly departs once again, leaving the two of you alone.
+		Захотев выпить чего-нибудь помимо вина, ты говоришь официанту, что хочешь заказать бутылку пива. Он кивает и быстро уходит, а затем возвращается с выбранными напитками. Искусно разлив пиво и поставив перед тобой бокал, официант предлагает Nyan попробовать заказанное тобой вино. Получив её восторженное одобрение, он наливает ей бокал, после чего ставит бутылку в охлаждающую установку на базе Арканы и оставляет её на столе. Сказав, что скоро вернется, чтобы принять заказ на еду, он снова стремительно исчезает, оставляя вас двоих наедине.
 	</p>
 	]]>
 	</htmlContent>
@@ -187,39 +185,39 @@
 	
 	<htmlContent tag="DATE_RESTAURANT_3_PLAYER_DRINK"><![CDATA[
 	<p>
-		Finally having some time in which to talk with one another, you and Nyan start discussing the food that's on the menu. Visibly relaxing and letting out a happy sigh, Nyan reveals, [nyan.speechNoEffects(You know, I heard that t-the head chef here has actually cooked for Lilith herself. The quality of the f-food here is meant to be unmatched in all of Dominion... A-At least, that's what my mum told me...)]
+		Наконец-то у вас появилось время поговорить друг с другом, и вы с Nyan начинаете обсуждать блюда в меню. Заметно расслабившись, Nyan издает счастливый вздох и признается: [nyan.speechNoEffects(Знаешь, я слышала, что шеф-повар здесь лично готовил для самой Lilith. Говорят, что качество еды здесь не имеет равных во всем Dominion... П-по крайней мере, так мне мама рассказывала...)]
 	</p>
 	<p>
-		Looking over the menu, you see that there isn't a very big selection on offer, but if what Nyan has just said is true, you can be sure that you'll like anything which you decide to order. Asking Nyan what she's thinking of having, you're a little taken aback by the speed of her response, as she happily exclaims, [nyan.speechNoEffects(I'm ordering the tsipoura! I-It's the name for oven-baked, gilt-head bream, and it's my a-absolute favourite food ever! I'm so happy that they're serving this...)]
+		Изучая меню, ты замечаешь, что выбор не так уж велик, но если слова Nyan — правда, то можно не сомневаться: любое выбранное блюдо будет великолепным. Когда ты спрашиваешь Nyan, что она хочет заказать, ты немного поражаешься скорости её ответа: она радостно восклицает: [nyan.speechNoEffects(Я возьму ципуру! Э-это такое запеченное в печи дорадо, это моё с-самое любимое блюдо на свете! Я так счастлива, что здесь его подают...)]
 	</p>
 	<p>
-		After you've spend a moment in which to decide, you tell Nyan what you're going to order, to which she coyly bites her lip and asks, [nyan.speechNoEffects(Is it ok if I o-order a starter as well? Y-You'll order one too, won't you, [pc.name]?)]
+		Немного подумав, ты говоришь Nyan, что собираешься заказать, на что она кокетливо прикусывает губу и спрашивает: [nyan.speechNoEffects(А можно я т-тоже закажу закуску? Т-ты ведь тоже закажешь, [pc.name]?)]
 	</p>
 	<p>
-		Not wanting your girlfriend to feel awkward at being the only one to order a starter, and being unable to say no to her cute smile, you agree to her demands and ask her what you think you should go for. Happily expressing her opinion on the different starters that are on offer, your girlfriend helps you to decide on what to get. As soon as you've both decided, the waiter swiftly returns and prepares to take your order...
+		Не желая, чтобы твоя девушка чувствовала себя неловко, будучи единственной, кто заказывает закуску, и не в силах отказать её милой улыбке, ты соглашаешься на её условия и спрашиваешь, что, по её мнению, стоит выбрать. С радостью высказывая своё мнение о различных закусках, представленных в меню, твоя девушка помогает тебе определиться. Как только вы оба принимаете решение, официант стремительно возвращается, готовый записать ваш заказ...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_4_ORDER"><![CDATA[
 	<p>
-		After first letting Nyan order her starter and tsipoura, you tell the waiter what you'd like for your starter and main course. After you're both done, the waiter takes your menus, before swiftly heading off to the kitchen and leaving the two of you alone again.
+		Сначала дав Nyan заказать закуску и ципуру, ты говоришь официанту, что хочешь на закуску и на основное блюдо. Когда вы заканчиваете, официант забирает меню и быстро уходит на кухню, оставляя вас двоих наедине.
 	</p>
 	<p>
-		[nyan.speechNoEffects(This place is amazing, i-isn't it?)] Nyan wistfully sighs. Looking around, you can't help but agree with your girlfriend's sentiment. From a visual perspective, the illusion of being in the middle of a forest clearing is absolutely flawless, and what's more, there's some kind of arcane enchantment that's making the very air you breathe feel as fresh as if you were actually out in the middle of the countryside.
+		[nyan.speechNoEffects(Это место потрясающее, н-не так ли?)] Nyan мечтательно вздыхает. Оглядываясь вокруг, ты невольно соглашаешься с чувствами своей девушки. С визуальной точки зрения иллюзия пребывания посреди лесной поляны абсолютно безупречна, и, более того, здесь действует какое-то аркана-зачарование, благодаря которому сам воздух кажется таким же свежим, будто вы действительно находитесь где-то в сельской местности.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_4_ORDER_CANDLE"><![CDATA[
 	<p>
-		After first letting Nyan order her starter and tsipoura, you tell the waiter what you'd like for your starter and main course. After you're both done, the waiter takes your menus, but before you allow him to leave, you ask if it would be possible to have a candle lit on your table. Giving you a friendly smile, he agrees to fulfil your request, and within moments there's a lit candle on your table, helping to add to the romantic atmosphere.
+		Позволив Nyan заказать закуску и ципуру, ты говоришь официанту, что хочешь на закуску и на основное блюдо. Когда вы оба заканчиваете, официант забирает меню, но прежде чем он уйдет, ты спрашиваешь, можно ли поставить на ваш стол свечу. Дружелюбно улыбнувшись, он соглашается, и спустя мгновение на столе появляется зажженная свеча, добавляющая романтики в атмосферу.
 	</p>
 	<p>
-		[nyan.speechNoEffects(That's perfect... Tonight is t-turning out just like I'd hoped it would...)] Nyan happily sighs, before glancing at your surroundings and observing, [nyan.speechNoEffects(This place is amazing...)]
+		[nyan.speechNoEffects(Это просто идеально... Сегодняшний вечер получается именно таким, как я и надеялась...)] Nyan счастливо вздыхает, а затем оглядывается по сторонам и замечает: [nyan.speechNoEffects(Это место просто потрясающее...)]
 	</p>
 	<p>
-		Looking around, you can't help but agree with your girlfriend's sentiment. From a visual perspective, the illusion of being in the middle of a forest clearing is absolutely flawless, and what's more, there's some kind of arcane enchantment that's making the very air you breathe feel as fresh as if you were actually out in the middle of the countryside.
+		Оглядевшись, ты невольно соглашаешься с чувствами своей девушки. С визуальной точки зрения иллюзия пребывания посреди лесной поляны абсолютно безупречна, и более того, какое-то аркана-зачарование делает сам воздух таким свежим, будто вы и впрямь находитесь где-то в сельской местности.
 	</p>
 	]]>
 	</htmlContent>
@@ -228,32 +226,31 @@
 	<!-- DATE_RESTAURANT_4_STARTERS -->
 	
 	<htmlContent tag="DATE_RESTAURANT_4_STARTERS"><![CDATA[
-	<p>
-		For the next ten minutes, the two of you talk about the restaurant's unique setting, as well as the previous times Nyan has been here. Your conversation doesn't manage to advance very far, however, as the waiter soon arrives at your table to deliver your starters. After checking to make sure that no more drinks are required, the waiter again swiftly departs, leaving Nyan to very quickly turn the topic of conversation to how delicious her food is.
+	<p>		Следующие десять минут вы вдвоем обсуждаете уникальную обстановку ресторана, а также то, как Nyan бывала здесь раньше. Однако вашей беседе не удается продвинуться далеко, так как вскоре к вашему столу подходит официант, чтобы подать закуски. Убедившись, что напитки вам больше не нужны, официант снова стремительно удаляется, оставляя Nyan, которая тут же переводит тему разговора на то, насколько вкусная у неё еда.
 	</p>
 	<p>
-		While there's much to say about the exceptional quality of each of your starters, the topic eventually starts to dry up, leaving you to decide what to talk about next...
+		Хотя о великолепном качестве каждой из ваших закусок можно говорить бесконечно, тема постепенно иссякает, и тебе приходится решать, о чем поговорить дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_5_TALK"><![CDATA[
 	<p>
-		Deciding that it would be nice for Nyan to simply relax and talk about herself, you ask her how her day has been. Happily engaging you in conversation, the cute cat-girl tells you all about what she's been doing since waking up this morning. As it plays such a large role in her life, the conversation soon naturally advances to the topic of Nyan's work and how her business is going.
+		Решив, что было бы здорово дать Nyan просто расслабиться и поговорить о себе, ты спрашиваешь, как прошел ее день. С радостью подхватив разговор, милая кошкодевочка во всех подробностях рассказывает, чем занималась с самого утра. Поскольку это занимает огромную часть ее жизни, беседа естественным образом перетекает на тему работы Nyan и того, как идут ее дела.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_5_COMPLIMENT"><![CDATA[
 	<p>
-		Deciding that it would be nice for Nyan to feel good about herself, you offer her a flattering compliment on her good looks, which causes her to blush and shyly smile at you. Clearly being extremely happy with how this evening is going, the cute cat-girl tells you how much fun she's having, which then leads into a conversation about how her day has been. As it plays such a large role in her life, the topic then soon advances to be about Nyan's work and how her business is going.
+		Решив поднять Nyan настроение, ты делаешь ей комплимент по поводу ее красоты, отчего она заливается румянцем и застенчиво улыбается тебе. Очевидно, что милая кошкодевочка в полном восторге от того, как проходит вечер, и она признается, как ей весело, что плавно переходит к рассказу о том, как прошел ее день. А так как работа занимает в ее жизни важное место, разговор вскоре сворачивает на тему бизнеса Nyan и успехов в ее делах.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_5_DIRTY"><![CDATA[
 	<p>
-		Deciding that you want Nyan to know just how much she turns you on, you make several dirty suggestions about what you'd like to do with her later, making it quite clear that you're wanting to get into her panties tonight. Furiously blushing, the embarrassed cat-girl frowns at you and firmly asks you to not say such outrageous things again. Not wanting to ruin this evening, you decide to switch to engaging your girlfriend in small talk, and you soon manage to get Nyan talking about work and how her business is going.
+		Решив дать Nyan понять, насколько сильно она тебя возбуждает, ты набрасываешь несколько грязных идей о том, что хочешь сделать с ней позже, давая предельно ясно понять: сегодня ночью ты намерен залезть к ней в трусики. Густо покраснев, смущенная кошкодевочка хмурится на тебя и твердо просит больше не говорить таких дерзких вещей. Не желая портить вечер, ты решаешь переключиться на светскую беседу, и вскоре тебе удается разговорить Nyan: она начинает рассказывать о работе и о том, как идут дела в её бизнесе.
 	</p>
 	]]>
 	</htmlContent>
@@ -263,40 +260,40 @@
 	
 	<htmlContent tag="DATE_RESTAURANT_5_MAIN_MEAL"><![CDATA[
 	<p>
-		By this time the two of you have finished your starters, and after the waiter has come to take your empty plates away, Nyan continues on the topic of her business, and reveals, [nyan.speechNoEffects(Y-You know, my store was actually one of my mum's businesses, and she gave it to me to t-try and help me build my confidence... I've been trying r-really hard to overcome my anxiety since then, as I really want to make her happy.)]
+		К этому времени вы уже закончили с закусками, и после того как официант уносит пустые тарелки, Nyan продолжает тему своего бизнеса и признается: [nyan.speechNoEffects(З-знаешь, мой магазин на самом деле был маминым делом, и она отдала его мне, чтобы я п-попробовала... чтобы помочь мне стать увереннее в себе... С тех пор я п-правда очень стараюсь побороть свою тревожность, потому что очень хочу сделать её счастливой.)]
+	</p>
+	<p>	
+		Счастливо улыбаясь, Nyan смотрит на тебя своими огромными голубыми глазами, полными любви, и признается в том, что ты уже начал замечать: [nyan.speechNoEffects(С тех пор как я встретила тебя, я... я стала чувствовать себя гораздо увереннее. И я уже не так сильно заикаюсь, как раньше...)]
 	</p>
 	<p>
-		Happily smiling at you, Nyan gazes lovingly at you with her big, blue eyes and reveals what you've already started to notice, [nyan.speechNoEffects(Since meeting you, I-I've starting to feel a lot more confident about things. I don't get so caught up on m-my words like I used to either...)]
+		Говоря своей девушке, что ты рад слышать, как она справляется со своей тревожностью и неуверенностью, ты добавляешь, что её мать наверняка будет гордиться её стараниями. Всё ещё улыбаясь, Nyan нервно потирает ладони и отвечает: [nyan.speechNoEffects(Я очень на это надеюсь... Моя мама — супер-успешная б-бизнесвумен, и поэтому я боюсь, что никогда не оправдаю е-её ожиданий... Она уже больше года путешествует по всему Королевству, занимаясь д-делами, и мне н-не терпится увидеть её снова. Она такая потрясающая, я правда хочу быть похожей на неё, н-но мне так трудно находиться среди людей...)]
 	</p>
 	<p>
-		Telling your girlfriend that you're happy to hear that she's really starting to overcome her anxiety and confidence issues, you say that her mother is sure to be proud of her efforts. Still smiling, Nyan nervously rubs her hands together and responds by saying, [nyan.speechNoEffects(I really hope so... My mum's a super successful b-businesswoman, and so I worry that I'll never live up to h-her expectations... She's been travelling all over the Realm d-doing business for over a year now, and I-I can't wait to see her again. She's so amazing, I really want to be like her, b-but I find it difficult to be around people...)]
+		Пока вы продолжаете разговор, ты замечаешь, как трудно заставить Nyan говорить о чём-либо, кроме матери; у тебя быстро складывается четкое впечатление, что твоя девушка практически боготворит свою маму. В конце концов, восторженные речи кошкодевушки прерываются не твоими усилиями, а подачей основных блюд.
 	</p>
 	<p>
-		As you continue your conversation with Nyan, you find it extremely difficult to get her to talk about anything but her mother, and you very quickly get the clear impression that your girlfriend practically worships her mum. Eventually, however, the cat-girl's praise of her mother is brought to an end not by your efforts, but by the arrival of your main meals.
-	</p>
-	<p>
-		After the waiter has delivered your food and swiftly departed, both you and Nyan start to eat, giving you a brief moment in which to think of what to say next in order to steer the topic away from her mother...
+		После того как официант приносит еду и быстро удаляется, вы с Nyan приступаете к трапезе, и у тебя появляется короткая минутка, чтобы обдумать, что сказать дальше, чтобы увести тему разговора от её матери...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_6_TALK"><![CDATA[
 	<p>
-		It being the most obvious thing to talk about, you ask Nyan if she's enjoying her food, to which you receive an extremely enthusiastic, [nyan.speechNoEffects(Yes, it's s-so amazing! Tsipoura is my favourite food ever!)]
+		Поскольку это самая очевидная тема, ты спрашиваешь Nyan, нравится ли ей еда, на что получаешь невероятно восторженный ответ: [nyan.speechNoEffects(Да, это п-просто потрясающе! Ципура — моя самая любимая еда на свете!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_6_FLIRT"><![CDATA[
 	<p>
-		Wanting to have some fun with Nyan, you start gently flirting with her and complimenting her appearance, which causes her to furiously blush and let out an excited giggle. She really seems to really be having fun with you, and even manages to summon the courage to flirt back with you a little.
+		Желая немного развлечься с Nyan, ты начинаешь мягко флиртовать с ней и делать комплименты её внешности, отчего она заливается густым румянцем и издаёт восторженный смешок. Похоже, ей действительно очень весело с тобой, и она даже находит в себе смелость немного пофлиртовать в ответ.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_6_FOOTSIE"><![CDATA[
 	<p>
-		Eager to have some physical contact with your girlfriend, you slide your [pc.foot] up her leg and tell her that you can't wait to fuck her. Furiously blushing at your bold move, the embarrassed cat-girl swats your [pc.leg] away and stutters, [nyan.speechNoEffects(P-Please, [pc.name], d-don't do such outrageous t-things here!)]
+		Жаждая физического контакта со своей девушкой, ты ведешь свою [pc.foot] вверх по её ноге и шепчешь, что уже не можешь дождаться, когда трахнешь её. Густо покраснев от твоего дерзкого жеста, смущенная кошкодевочка отмахивается от твоей [pc.leg] и заикается: [nyan.speechNoEffects(П-пожалуйста, [pc.name], н-не делай таких возмутительных в-вещей прямо здесь!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -306,39 +303,39 @@
 	
 	<htmlContent tag="DATE_RESTAURANT_6_DESSERT"><![CDATA[
 	<p>
-		Having successfully steered Nyan away from talking about her mother, you allow the topic of conversation to turn towards you. While you don't want to cause Nyan any distress by telling her all of the details, you do reveal that Lilaya is your [lilaya.relation(pc)], and that you're helping her to conduct arcane research.
+		Успешно уведя Nyan от разговоров о её матери, ты позволяешь теме беседы переключиться на себя. И хотя ты не хочешь расстраивать Nyan, выкладывая все подробности, ты всё же признаёшь, что Lilaya — твоя [lilaya.relation(pc)], и что ты помогаешь ей проводить исследования аркана.
 	</p>
 	<p>
-		[nyan.speechNoEffects(L-Lilaya? As in, Lyssieth's daughter?)] Nyan asks, and after you've replied in the affirmative, she gasps, [nyan.speechNoEffects(Wow... So you're related to an elder lilin? M-My mother has met with Lyssieth quite a lot to do business, and so I've heard a l-lot about her and Lilaya...)]
+	[nyan.speechNoEffects(Л-Лилайя? Та самая, дочь Lyssieth?)] — спрашивает Nyan, и после твоего утвердительного ответа она ахает: [nyan.speechNoEffects(Ого... Значит, ты родственник старшей лилин? М-моя мама часто встречалась с Lyssieth по делам, так что я м-много слышала о ней и о Лилайе...)]
 	</p>
 	<p>
-		After finishing your meals, the two of you continue to discuss your [lilaya.relation(pc)] for a short while, and you discover that by accompanying her mother on one of her business trips, Nyan has actually met Lilaya once before. As you remark upon the fact that it's a small world, the waiter suddenly returns to take your plates away. After quickly carrying out his task, he asks if you or Nyan would like to see the dessert menu. Upon hearing this, your girlfriend puts on one of the cutest looks you've ever seen, and you find yourself unable to resist giving her what she wants...
+		Закончив трапезу, вы еще какое-то время обсуждаете ваши [lilaya.relation(pc)], и ты обнаруживаешь, что, сопровождая маму в одной из деловых поездок, Nyan на самом деле уже встречала Lilaya раньше. Пока ты замечаешь, какой же тесный мир, официант внезапно возвращается, чтобы забрать тарелки. Быстро справившись с задачей, он спрашивает, не желаете ли ты или Nyan взглянуть на меню десертов. Услышав это, твоя девушка принимает один из самых милых видов, которые ты когда-либо видел, и ты понимаешь, что не можешь устоять перед её желанием...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_7_INDIVIDUAL"><![CDATA[
 	<p>
-		Seeing the excited look on Nyan's face, and not wanting to let her down, you tell the waiter that you would like to order some dessert. After retrieving and presenting you with the menu, the waiter steps back, giving the two of you some time in which to decide. Quickly settling on what it is that you'll order, you ask your girlfriend what she'd like, to which she replies, [nyan.speechNoEffects(Oh, erm, I'd like ice cream...)] 
+		Видя восторженный взгляд Nyan и не желая её разочаровывать, ты говоришь официанту, что вы хотели бы заказать десерт. Принеся меню, официант отступает, давая вам время определиться. Быстро решив, что именно вы закажете, ты спрашиваешь свою девушку, чего бы ей хотелось, на что она отвечает: [nyan.speechNoEffects(Ой, эм, я бы хотела мороженое...)] 
 	</p>
 	<p>
-		Relaying your orders to the waiter, you once again engage Nyan in small talk, and from her relaxed, happy demeanour, you can tell that she's completely at ease while in your presence. Despite being in a public place, she's so relaxed that her stutter has almost completely disappeared, and after your desserts have arrived, she barely takes her eyes away from you as she tucks into her ice cream. Humming in delight, she sighs, [nyan.speechNoEffects(I haven't had this much fun in a long time... Thanks, [pc.name]...)]
+		Передав заказ официанту, ты снова заводишь с Nyan непринужденную беседу, и по её расслабленному, счастливому виду понимаешь, что рядом с тобой ей совершенно комфортно. Несмотря на то, что вы находитесь в общественном месте, она настолько расслаблена, что её заикание почти полностью исчезло, а когда десерты приносят, она почти не сводит с тебя глаз, уплетая своё мороженое. Напевая от удовольствия, она вздыхает: [nyan.speechNoEffects(Давно я так весело не проводила время... Спасибо, [pc.name]...)]
 	</p>
 	<p>
-		Smiling and telling her that it's your pleasure, you see that your girlfriend is beginning to gaze at you in a deeply affectionate manner. Seizing this opportunity, you finish your dessert and start to flirt with her, and from her eager responses and happy little giggles, you can soon tell that she's going to want more than just kiss tonight.
+		yлыбясь и отвечая, что тебе это только в радость, ты замечаешь, что твоя девушка начинает смотреть на тебя с глубокой привязанностью. Пользуясь моментом, ты доедаешь десерт и начинаешь с ней флиртовать; по её жадным откликам и радостному хихиканью ты вскоре понимаешь, что сегодня ей захочется гораздо большего, чем просто поцелуй.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DATE_RESTAURANT_7_SHARE"><![CDATA[
 	<p>
-		Seeing the excited look on Nyan's face, and not wanting to let her down, you tell the waiter that you would like to order some dessert. After retrieving and presenting you with the menu, the waiter steps back, giving the two of you some time in which to decide. Thinking that it would be a nice experience, you ask your girlfriend if she'd like to share a dessert with you, to which she happily replies, [nyan.speechNoEffects(Oh, yes! Could we please share some ice cream?)] 
+		Видя восторженный взгляд Nyan и не желая её разочаровывать, ты говоришь официанту, что вы хотели бы заказать десерт. Принеся меню, официант отступает, давая вам время определиться. Решив, что это будет приятным опытом, ты спрашиваешь девушку, не хочет ли она разделить с тобой десерт, на что она радостно отвечает: [nyan.speechNoEffects(О, да! А можно нам взять мороженое на двоих?)]
 	</p>
 	<p>
-		Relaying Nyan's choice to the waiter, you once again engage her in small talk, and from her relaxed, happy demeanour, you can tell that she's completely at ease while in your presence. Despite being in a public place, she's so relaxed that her stutter has almost completely disappeared, and after your ice cream has arrived, she barely takes her eyes away from you as she joins you in tucking into the frozen dessert. Humming in delight, she sighs, [nyan.speechNoEffects(I haven't had this much fun in a long time... This is just like in my books... Thanks, [pc.name]...)]
+		Передав заказ Nyan официанту, ты снова заводишь с ней непринужденную беседу. По её расслабленному и счастливому виду понимаешь, что рядом с тобой она чувствует себя совершенно уютно. Несмотря на то, что вы в общественном месте, она настолько расслаблена, что её заикание почти полностью исчезло. Когда приносят мороженое, она почти не сводит с тебя глаз, уплетая холодное лакомство. Напевая от удовольствия, она вздыхает: [nyan.speechNoEffects(Давно я так не веселилась... Это прямо как в моих книжках... Спасибо, [pc.name]...)]
 	</p>
 	<p>
-		Smiling and telling her that it's your pleasure, you see that your girlfriend is beginning to gaze at you in a deeply affectionate manner. Seizing this opportunity, you finish your dessert and start to flirt with her, and from her eager responses and happy little giggles, you can soon tell that she's going to want more than just kiss tonight.
+		yлыбясь и отвечая, что тебе это только в радость, ты замечаешь, что твоя девушка начинает смотреть на тебя с глубокой привязанностью. Пользуясь моментом, ты доедаешь десерт и начинаешь с ней флиртовать; по её жадным откликам и радостному хихиканью ты вскоре понимаешь, что сегодня ей захочется гораздо большего, чем просто поцелуй.
 	</p>
 	]]>
 	</htmlContent>
@@ -348,7 +345,7 @@
 	
 	<htmlContent tag="DATE_7_END"><![CDATA[
 	<p>
-		With your desserts finished, and with both of you being ready to leave, you call over the waiter and ask for the bill. Swiftly doing as you ask, he presents you with tonight's cost, and you see that you're being charged an eye-watering [#SPECIAL_PARSE_0] flames...
+		Десерты съедены, и вы оба уже готовы уходить. Ты подзываешь официанта и просишь счет. Он быстро исполняет просьбу и приносит сумму за сегодняшний вечер, и ты видишь, что с тебя дерут просто безумные [#SPECIAL_PARSE_0] огней...
 	</p>
 	]]>
 	</htmlContent>
@@ -358,42 +355,42 @@
 	
 	<htmlContent tag="DATE_END_RETURN"><![CDATA[
 	<p>
-		After you've quickly settled the bill, the waiter retrieves Nyan's coat and umbrella, before seeing the two of you to the door and thanking you for your business. As you [pc.step] out into the Shopping Arcade, Nyan performs an uncharacteristic move, and boldly initiates physical contact by taking hold of your [pc.arm(true)] and leaning into your body. Letting out a happy little giggle, she exclaims, [nyan.speechNoEffects(That was so fun, [pc.name]! Thank you so much!)]
+		Быстро расплатившись по счету, вы дожидаетесь, пока официант принесет пальто и зонт Nyan, после чего он провожает вас до двери, благодаря за визит. Когда вы [pc.step] в Торговую Аркаду, Nyan совершает несвойственный ей поступок: она смело инициирует физический контакт, беря тебя за [pc.arm(true)] и прижимаясь к твоему телу. Издав радостный смешок, она восклицает: [nyan.speechNoEffects(Это было так весело, [pc.name]! Спасибо тебе огромное!)]
 	</p>
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			Returning your girlfriend's sentiments, you accompany her to the exit of the Shopping Arcade, where you see through the glass doors that there's an ongoing arcane storm. Letting out a little eek, Nyan huddles up to you and whines, [nyan.speechNoEffects(Oh no... Perhaps if we hurry, it won't affect me too much...)]
+			Отвечая на чувства своей девушки, ты провожаешь её к выходу из Торговой Аркады, где сквозь стеклянные двери видишь бушующий шторм арканы. Издав короткий вскрик, Nyan прижимается к тебе и капризно стонет: [nyan.speechNoEffects(О нет... Может, если мы поторопимся, он не слишком сильно меня заденет...)]
 		</p>
 		<p>
-			Doing as the cat-girl suggests, the two of you wait for the next clap of thunder to pass before hurrying outside and down the street towards her apartment. By a stroke of particularly good fortune, you manage to avoid both strikes of thunder and horny citizens during your dash towards Nyan's home. As you reach the steps of her apartment building, however, the storm above makes up for its unusual silence by unleashing one of the most powerful claps of arcane thunder you've ever heard.
+			Следуя совету кошкодевочки, вы вдвоем ждете, пока стихнет очередной раскат грома, а затем спешите на улицу и бежите по дороге к её квартире. По невероятному везению, во время вашего забега к дому Nyan вам удается избежать и ударов молнии, и встреч с похотливыми горожанами. Однако, когда вы добираетесь до ступеней её дома, шторм наверху компенсирует свое необычное затишье одним из самых мощных раскатов арканического грома, что вы когда-либо слышали.
 		</p>
 		<p>
-			Despite pulling her through the entrance and slamming the door shut behind you, you're not able to save Nyan from the arousing effects of the storm, and before you know what's happening, the cat-girl is frantically pressing her [nyan.lips+] against your mouth and lustfully grinding herself against your body. Protected from any further claps of thunder, Nyan soon starts to come back to her senses, and with a little eek, she breaks off the kiss and exclaims, [nyan.speechNoEffects(I'm sorry, [pc.name]! I-I couldn't stop myself!)]
+			Несмотря на то, что ты затаскиваешь её внутрь и захлопываешь за вами дверь, тебе не удается спасти Nyan от возбуждающего воздействия шторма. Прежде чем ты успеваешь что-то осознать, кошкодевочка неистово прижимает свои [nyan.lips+] к твоим губам, с похотью вжимаясь всем телом в тебя. Защищенная от новых раскатов грома, Nyan вскоре начинает приходить в себя и с коротким писком прерывает поцелуй, восклицая: [nyan.speechNoEffects(Прости, [pc.name]! Я... я не смогла сдержаться!)]
 		</p>
 		<p>
-			Telling her that there's nothing to be sorry about, you reassuringly stroke Nyan's arm, which has the desired effect of calming her down. Making your way up the flights of stairs to the third floor, the two of you soon arrive at the door to your girlfriend's apartment, where she turns to face you and nervously shuffles her feet, before looking at you with her big, blue eyes and saying, [nyan.speechNoEffects(P-Please, I'd like you to come in for a while...)]
+		Сказав ей, что ей совершенно не за что извиняться, ты ободряюще гладишь Nyan по руке, и это помогает ей успокоиться. Поднимаясь по лестнице на третий этаж, вы вскоре подходите к двери квартиры твоей девушки. Она поворачивается к тебе, нервно переминаясь с ноги на ногу, а затем смотрит на тебя своими огромными голубыми глазами и произносит: [nyan.speechNoEffects(П-пожалуйста, заходи ко мне ненадолго...)]
 		</p>
 	#ELSE
 		#IF(game.getCurrentWeather()==WEATHER_RAIN || game.getCurrentWeather()==WEATHER_SNOW)
 			<p>
-				Returning your girlfriend's sentiments, you accompany her to the exit of the Shopping Arcade, where you see through the glass doors that it's currently
+				Отвечая на чувства своей девушки, ты провожаешь её до выхода из торгового пассажа, где сквозь стеклянные двери видишь, что на улице сейчас
 				#IF(game.getCurrentWeather()==WEATHER_RAIN)
-					 raining outside.
+					идет дождь.
 				#ELSE
-					 snowing outside.
+					идет снег.
 				#ENDIF
-				 Letting out an embarrassed little whine, Nyan pops open her cute frog-umbrella and offers, [nyan.speechNoEffects(This is big enough for both of us... So we can walk close together and share it...)]
+				Издав смущенный тихий писк, Nyan раскрывает свой милый зонтик в виде лягушки и предлагает: [nyan.speechNoEffects(Он достаточно большой для нас двоих... Так что мы сможем идти вплотную друг к другу и укрыться под ним вместе...)]
 			</p>
 			<p>
-				Thanking your girlfriend for her kindness, you do as she suggests and share the umbrella with her. Talking with your blushing girlfriend about this evening's meal, you head down the street in the direction of her apartment.
+				Поблагодарив девушку за доброту, ты делаешь так, как она предложила, и встаешь под её зонт. Обсуждая с раскрасневшейся подругой сегодняшний ужин, вы направляетесь по улице к её дому.
 			</p>
 		#ELSE
 			<p>
-				Returning your girlfriend's sentiments, you accompany her to the exit of the Shopping Arcade, where you see that the lack of precipitation renders Nyan's umbrella unnecessary. Talking with your girlfriend about this evening's meal, you head down the street in the direction of her apartment.
+				Отвечая на чувства своей девушки, ты провожаешь её до выхода из торгового пассажа, где замечаешь, что из-за отсутствия осадков зонтик Nyan вовсе не нужен. Обсуждая с девушкой сегодняшний ужин, вы направляетесь по улице к её дому.
 			</p>
 		#ENDIF
 		<p>
-			After five minutes, you arrive at the entrance to Nyan's apartment building, and after [pc.walking] up the steps, you push open the front door and accompany your girlfriend into the lobby. Making your way up the flights of stairs to the third floor, the two of you soon arrive at the door to Nyan's apartment, where she turns to face you and nervously shuffles her feet, before looking at you with her big, blue eyes and saying, [nyan.speechNoEffects(P-Please, I'd like you to come in for a while...)]
+		Спустя пять минут вы подходите к подъезду дома, где Nyan живет. [pc.walking] поднявшись по ступеням, ты толкаешь входную дверь и заходишь вместе с девушкой в вестибюль. Поднимаясь по лестнице на третий этаж, вы вскоре оказываетесь у двери квартиры Nyan; она поворачивается к тебе, нервно переминаясь с ноги на ногу, а затем смотрит на тебя своими огромными голубыми глазами и произносит: [nyan.speechNoEffects(П-пожалуйста, заходи ко мне ненадолго...)]
 		</p>
 	#ENDIF
 	]]>
@@ -404,16 +401,16 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT"><![CDATA[
 	<p>
-		Happily accepting Nyan's invitation to come inside, you follow her into her apartment's hallway. Pulling off her shoes and hanging up her coat, the cute cat-girl turns towards you and breathlessly pants, [nyan.speechNoEffects([pc.Name]... I really had a great time tonight... Perhaps we could...)]
+		С радостью принимая приглашение Nyan, ты проходишь вслед за ней в прихожую её квартиры. Сняв туфли и повесив пальто, милая кошкодевочка поворачивается к тебе, часто и прерывисто дыша: [nyan.speechNoEffects([pc.Name]... Мне сегодня было так хорошо... Может быть, мы могли бы...)]
 	</p>
 	<p>
-		Letting her sentence trail off, your girlfriend reveals just how horny she is by leaning forwards and desperately pressing her [nyan.lips+] against your mouth. With Nyan's hot body pressing against yours, and with the delicate scent of her perfume in the air, you find yourself getting just as turned on as she is, and without wasting even a second, you take hold of her and start passionately returning her kiss.
+		Оставив фразу незавершенной, твоя девушка демонстрирует, насколько она возбуждена: она подается вперед и отчаянно прижимается своими [nyan.lips+] к твоим губам. От горячего тела Nyan, прижатого к твоему, и тонкого аромата её духов ты сам заводишься не меньше неё. Не теряя ни секунды, ты обхватываешь её и начинаешь страстно отвечать на поцелуй.
 	</p>
 	<p>
-		After several moments spent entwined in one another's embrace, Nyan momentarily pulls back, before letting out an erotic little moan and suggesting, [nyan.speechNoEffects(Let's go to the lounge...)]
+		Проведя несколько мгновений в тесных объятиях, Nyan на миг отстраняется, после чего издает эротичный стон и предлагает: [nyan.speechNoEffects(Пойдем в гостиную...)]
 	</p>
 	<p>
-		With her arms still wrapped around your back, Nyan continues kissing and grinding up against you as she shuffles along towards her lounge. Knocking the door open with her butt, she giggles and moans, [nyan.speechNoEffects(~Mmm!~ Yes, [pc.name]! ~Mmm!~ Come on...)]
+		Всё еще обхватив тебя руками за спину, Nyan продолжает целоваться и тереться о тебя бедрами, пока вы движетесь в сторону её гостиной. Толкнув дверь задом, она хихикает и стонет: [nyan.speechNoEffects(~Ммм!~ Да, [pc.name]! ~Ммм!~ Давай же...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -423,25 +420,24 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_LOUNGE"><![CDATA[
 	<p>
-		Still passionately kissing one another, you and Nyan enter her lounge, but as you do so, you have a sudden moment of clarity in which you realise that all of the lights in her apartment are already turned on. At that same moment, you notice out of the corner of your eye that there's an unfamiliar figure leaning back on the sofa furthest from the door. Before you have a chance to react, this stranger calls out in a mature, feminine voice, [nyanmum.speech(Well, well, well. I didn't know you had a thing for [pc.racePlural]...)]
+		Всё еще страстно целуясь, вы с Nyan входите в гостиную, но в этот момент тебя внезапно пронзает ясность мысли: во всей квартире уже горит свет. В ту же секунду боковым зрением ты замечаешь незнакомую фигуру, вальяжно расположившуюся на диване в самом дальнем углу комнаты. Прежде чем ты успеваешь среагировать, незнакомка окликает вас зрелым женским голосом: [nyanmum.speech(Ну надо же. Не знала, что тебя так тянет к [pc.racePlural]...)]
+	</p><p>
+Прервав поцелуй, ты и Nyan резко оборачиваетесь на голос. Как и твоя девушка, незнакомка, откинувшаяся на спинку дивана, кажется какой-то низшей кошкодевочкой, хотя, в отличие от угольно-чёрной Nyan, мех на её кошачьих частях тела имеет ровный песочный оттенок. На вид ей около сорока пяти, но в её хищных жёлтых глазах горит искра юношеской энергии, и когда она переводит взгляд на твою девушку, её полные губы расплываются в широкой улыбке. Когда она разводит руки, маня Nyan к себе для объятий, ты замечаешь, что она куда мускулистее твоей подруги, и понимаешь, что перед тобой кугуар-морф. Нетерпеливо фыркнув, она восклицает: [nyanmum.speech(Давай же, Nyan, мамочка хочет обнимашек!)]
+</p>
+	<p>
+		Оцепенение от неожиданного появления матери в квартире сменяется радостным криком: услышав эти слова, Nyan выходит из оцепенения и послушно бросается вперед, запрыгивая матери на руки. Пока две кошкодевочки крепко обнимают друг друга, ты по-настоящему замечаешь, насколько они разные. Если Nyan застенчива и скромна, то её мать буквально излучает уверенность, что подчеркивается её стильной волнистой прической и модным нарядом. Её облегающее платье на молнии и ботфорты на платформе глубокого королевского пурпурного цвета отлично сочетаются с бежевым кардиганом и бело-золотыми часами. Очевидно, она обожает этот металл: её кольцо с драгоценным камнем, жемчужные серьги, ожерелье и даже заколки в волосах — всё из золота.
 	</p>
 	<p>
-		Immediately breaking off from your kiss, both you and Nyan quickly turn to face the source of this voice. Just like your girlfriend, the stranger leaning back on the sofa appears to be some kind of lesser cat-girl, although unlike Nyan's black colouration, the fur covering her cat-like parts is a uniform shade of tan. Although she looks to be in her mid-forties, there's a bright spark of youthful energy in this woman's predatory, yellow eyes, and as she looks across to your girlfriend, her full lips turn up into a big smile. As she spreads her arms and beckons Nyan forwards for a hug, you notice that she's significantly more muscular than your girlfriend, leading you to realise that she's a cougar-morph. Letting out an impatient huff, she calls out, [nyanmum.speech(Come on, Nyan, mummy wants a hug!)]
+		Усадив дочь к себе на колени, она властно начинает поглаживать её по голове. Глядя тебе прямо в глаза, она произносит холодным, угрожающим тоном: [nyanmum.speech(Ты сейчас же расскажешь мне, кто ты такой и зачем пытаешься воспользоваться моей драгоценной дочкой.)]
 	</p>
 	<p>
-		Having been immobilised at the shock of finding her mother in her apartment, these words snap Nyan out of her daze, and with a happy cry, she obediently rushes forwards and launches herself into the arms of her mother. As the two cat-girls tightly embrace one another, you're able to really see just how different the two of them are. While Nyan is shy and unassuming, her mother seems absolutely brimming with confidence, which is reflected by her stylish, wavy hair and fashionable clothing. Both her frontal-zip bodycon dress and platform boots are a deep shade of royal purple, which is nicely complimented by her tan cardigan and white-and-gold watch. Clearly having a fondness for this metal, her gemstone ring, peal earrings, gemstone necklace, and even the bobby pins in her hair are all gold.
+		[nyan.speechNoEffects(Мам, нет, всё совсем не так, [pc.sheIs] моё-...)] — пытается объясниться Nyan, но мать быстро прижимает палец к её губам, прерывая её.
 	</p>
 	<p>
-		Pulling her daughter down into her lap, she reaches up and starts dominantly stroking her head. Staring directly into your eyes, she states in a cold, menacing tone, [nyanmum.speech(You're going to tell me exactly who you are and why you're trying to take advantage of my precious daughter.)]
+		Не сводя с твоего лица хищного взгляда, мать Nyan рычит: [nyanmum.speech(Ну же, объясняйся.)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(Mum, no, it's not like that, [pc.sheIs] my-)] Nyan tries to explain, but she's cut off as her mother quickly moves her hand down to press her finger over her lips.
-	</p>
-	<p>
-		Without taking her predatory gaze off of your face, Nyan's mother growls, [nyanmum.speech(Go on, explain yourself.)]
-	</p>
-	<p>
-		With Nyan being firmly held in her over-protective mother's strong embrace, you realise that you've only really got two options available to you. You could tell Nyan's mother to mind her own business, although considering how much her daughter loves her, you know that this would carry a serious risk of putting an end to your relationship. The other option is to simply introduce yourself to Nyan's mother and explain that the two of you are dating. As you don't want this to be the end of your relationship with Nyan, you decide to go with the second option...
+		Пока Nyan крепко зажата в сильных объятиях своей чрезмерно опекающей матери, ты понимаешь, что у тебя есть всего два варианта. Ты мог бы сказать матери Nyan, чтобы она не лезла не в своё дело, но, учитывая, как сильно её дочь её любит, ты понимаешь, что это грозит серьезным риском для ваших отношений. Второй вариант — просто представиться матери Nyan и объяснить, что вы встречаетесь. Поскольку ты не хочешь, чтобы это стало концом ваших отношений с Nyan, ты решаешь выбрать второй путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -451,50 +447,50 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_1_SUPPORT"><![CDATA[
 	<p>
-		Introducing yourself to Nyan's mother, you make up for the fact that Nyan is unable to talk by briefly explaining that the two of you have been in a relationship for some time, and that you'd been out on a date to 'The Oaken Glade' together this evening. As you talk, the severe look on the cougar-girl's face barely changes, and after hearing what it is you've got to say for yourself, she lets out a brief, low growl and replies, [nyanmum.speech(So, you dare to claim that you're dating my precious Nyan? You don't really care about her at all, do you? I think you've overstayed your welcome. Go on, get out of here. I'll be taking care of Nyan from-)]
+		Представляясь матери Nyan, ты компенсируешь её молчаливость тем, что вкратце объясняешь: вы уже какое-то время вместе и сегодня вечером ходили на свидание в «Дубраву». Пока ты говоришь, суровое выражение лица девушки-кугуар почти не меняется, а выслушав твои оправдания, она издает короткий низкий рык и отвечает: [nyanmum.speech(Значит, ты смеешь утверждать, что встречаешься с моей драгоценной Nyan? Тебе ведь на неё плевать, не так ли? По-моему, ты уже засиделся. А ну, проваливай! С этой минуты о Nyan буду заботиться —)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(Mum, no!)] Nyan desperately cries out as she pulls her face away from her mother's hand. Still sitting on her lap, she puts on the most pleading expression she can muster and begs, [nyan.speechNoEffects(Please let [pc.name] stay! [pc.SheIs] not trying to take advantage of me, I promise!)]
+		[nyan.speechNoEffects(Мам, нет!)] — отчаянно вскрикивает Nyan, отрываясь от материнской руки. Всё ещё сидя у неё на коленях, она делает самое умоляющее лицо, на которое только способна, и молит: [nyan.speechNoEffects(Пожалуйста, позволь [pc.name] остаться! [pc.SheIs] не пытается мной воспользоваться, честное слово!)]
 	</p>
 	<p>
-		Letting out a deep, angry growl, Nyan's over-protective mother glares at her daughter for a moment, before violently clenching and then slowly relaxing her fist. With another deep growl, she snaps her fingers and points to the sofa opposite to the one she's sitting on, ordering, [nyanmum.speech(I'll be the judge of your character, so sit down! I've interviewed thousands of applicants in my time, from lowly general managers all the way up to CEOs for Realm-wide business conglomerates. I'll find out who you really are, '[pc.name]'.)]
+		Издавая глубокое, яростное рычание, чрезмерно опекающая Nyan мать на мгновение сверлит взглядом дочь, а затем с силой сжимает и медленно разжимает кулак. Снова глухо рыкнув, она щелкает пальцами и указывает на диван напротив того, на котором сидит сама, приказывая: [nyanmum.speech(Я сама буду судьей твоего характера, так что садись! За свою жизнь я провела тысячи собеседований — от рядовых менеджеров до генеральных директоров огромных бизнес-конгломератов. Я быстро выясню, кто ты на самом деле, '[pc.name]'.)]
 	</p>
 	<p>
-		Realising that confrontation with Nyan's mother will surely put an end to your relationship, you swallow your pride and do as you're told. Sitting down on the sofa, you look across to see that Nyan is so embarrassed by what's happening that she's burying her head in her mother's shoulder. Still stroking her daughter's head, Nyan's mother sharply states, [nyanmum.speech(First of all, you are to call me Ms. [nyanmum.surname]. Is that understood?)]
+		Понимая, что открытое противостояние матери Nyan наверняка положит конец вашим отношениям, ты проглатываешь гордость и делаешь, как велено. Сев на диван, ты замечаешь, что Nyan так смущена происходящим, что буквально прячет голову на плече матери. Продолжая поглаживать дочь по голове, мать Nyan резко заявляет: [nyanmum.speech(Во-первых, ты должен называть меня госпожа [nyanmum.surname]. Это понятно?)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(C-Call her [nyanmum.name]!)] Nyan blurts out, before hiding her face in her mother's shoulder once again.
+		[nyan.speechNoEffects(Н-называй её [nyanmum.name]!)] — выпаливает Nyan, прежде чем снова спрятать лицо на плече матери.
 	</p>
 	<p>
-		Just like her daughter, [nyanmum.name] reacts to embarrassment by blushing, and you see her rosy skin turning a shade darker as she admonishes her daughter, [nyanmum.speech(Nyan! I see that you've become extremely cheeky in my absence! But fine... If that's really what you'd like, I'll allow your so-called [pc.girlfriend] here to call me [nyanmum.name]...)]
+		Как и её дочь, [nyanmum.name] реагирует на смущение румянцем, и ты видишь, как её розовая кожа становится еще темнее, пока она отчитывает дочь: [nyanmum.speech(Nyan! Вижу, в моё отсутствие ты стала совсем наглой! Но ладно... Если ты действительно этого хочешь, я позволю твоему так называемому [pc.girlfriend] называть меня [nyanmum.name]...)]
 	</p>
 	<p>
-		Obviously having a soft-spot for her daughter, [nyanmum.name] once again hardens her stare and growls, [nyanmum.speech(I'll soon find out if you're a good match for my daughter or not! As you'll no doubt agree, my sweet Nyan deserves nothing but the very best. As one of the most successful businesswomen in all of the Realm, I'm worth more than you can even possibly imagine. I regularly meet with the elder lilin, own billions of flames worth of property, and fuck absolutely whoever I want. I can give Nyan anything she desires, so how are you expecting to compete with that? Go on, tell me how you intend to support my daughter!)]
+		Очевидно, что к дочери она питает особую слабость, поэтому [nyanmum.name] вновь сужает взгляд и рычит: [nyanmum.speech(Скоро я узнаю, подходите ли вы моей дочери друг другу! И ты, без сомнения, согласишься, что моя милая Nyan заслуживает только самого лучшего. Как одна из самых успешных бизнесвумен во всем Королевстве, я стою больше, чем ты можешь себе представить. Я регулярно встречаюсь со старейшими лилин, владею недвижимостью на миллиарды Огней и трахаю абсолютно любого, кого пожелаю. Я могу дать Nyan всё, что она захочет, так как же ты собираешься с этим конкурировать? Ну же, скажи мне, как ты намерен обеспечивать мою дочь!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_WEALTH"><![CDATA[
 	<p>
-		Having a considerable amount of wealth yourself, you tell [nyanmum.name] that you're casually carrying around over a million flames, and that you'll never have any issue with giving Nyan whatever she wants. The cougar-girl's eyebrows raise a little as you say this, and she growls, [nyanmum.speech(Very well... You've got the wealth, but do you have the sorts of friends who can help you out if things go bad? Go on, tell me who you'd turn to if you lost everything.)]
+		Обладая немалым состоянием и сам, ты говоришь [nyanmum.name], что у тебя в кармане налегке лежит больше миллиона Огней, и у тебя никогда не возникнет проблем с тем, чтобы дать Nyan всё, что она пожелает. Брови этой «когуар-девушки» слегка приподнимаются от твоих слов, и она рычит: [nyanmum.speech(Что ж... Деньги у тебя есть, но есть ли у тебя друзья, которые помогут, если всё пойдет прахом? Ну же, скажи, к кому бы ты обратился, если бы потерял всё.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_SLAVES"><![CDATA[
 	<p>
-		Deciding to reveal that the two cat-girls aren't the only ones here who can manage large businesses, you tell [nyanmum.name] that not only do you have a slaver license, but you also own a large number of slaves, and so with the income that they generate, you'd have no trouble supporting Nyan. The cougar-girl's eyebrows raise a little as you say this, and she growls, [nyanmum.speech(Very well... You've got the income, but do you have the sorts of friends who can help you out if things go bad? Go on, tell me who you'd turn to if you lost everything.)]
+		Решив показать, что эти две кошкодевочки — не единственные здесь, кто способен управлять крупным бизнесом, ты сообщаешь [nyanmum.name], что у тебя есть не только лицензия работорговца, но и огромное количество рабов, так что на доходы от них ты без труда сможешь содержать Nyan. Брови кошкодевочки-кугуар слегка приподнимаются, и она рычит: [nyanmum.speech(Что ж... Деньги у тебя есть, но найдутся ли среди твоих друзей те, кто выручит тебя, если всё пойдет прахом? Ну же, скажи, к кому бы ты обратилась, если бы потеряла всё.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_DEMON"><![CDATA[
 	<p>
-		Seeing that [nyanmum.name] is the sort of shallow person who's impressed by wealth and prestige, you decide to fall back on the names of both your demonic [lilaya.relation(pc)] and mother. As you tell the cougar-girl that Lilaya is your [lilaya.relation(pc)], you see her eyes widen in surprise, and as you then reveal that you're a direct daughter of
+		Видя, что [nyanmum.name] — человек довольно поверхностный и впечатляется лишь богатством и престижем, ты решаешь сослаться на имена своей демонической [lilaya.relation(pc)] и матери. Когда ты говоришь кошкодевочке, что Lilaya — твоя [lilaya.relation(pc)], ты замечаешь, как её глаза расширяются от удивления, а когда ты раскрываешь, что ты — прямая дочь
 		#IF(flags.hasFlag(FLAG_innoxia_child_of_lyssieth))
-			 Lyssieth herself, she momentarily loses her composure and asks in awe, [nyanmum.speech(Wait... <i>You're</i> the one who Lyssieth transformed into her new [pc.daughter]?! Hmm... Well, with family like that, I guess you'll be able to provide for Nyan...)]
+			 самой Lyssieth, она на мгновение теряет самообладание и благоговейно спрашивает: [nyanmum.speech(Погоди... <i>Ты</i> та самая, которую Lyssieth превратила в свою новую [pc.daughter]?! Хм... Что ж, с такой семейкой ты точно сможешь обеспечить Nyan...)]
 		#ELSE
- 			 [#pc.getLilinMother().getName()] herself, she momentarily loses her composure and asks in awe, [nyanmum.speech(Wait... <i>You're</i> one of [#pc.getLilinMother().getName()]'s children?! Hmm... Well, with family like that, I guess you'll be able to provide for Nyan...)]
+ 			 самой [#pc.getLilinMother().getName()], она на мгновение теряет самообладание и благоговейно спрашивает: [nyanmum.speech(Погоди... <i>Ты</i> один из детей [#pc.getLilinMother().getName()]?! Хм... Что ж, с такой семейкой ты точно сможешь обеспечить Nyan...)]
  		#ENDIF
 	</p>
 	]]>
@@ -503,9 +499,9 @@
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_OCCUPATION"><![CDATA[
 	<p>
 		#IF(pc.getOccupation()==OCCUPATION_ARISTOCRAT)
-			Knowing that [nyanmum.name] is sure to respect your aristocratic lineage, you tell her that you're a member of a highly prestigious noble family, and so no matter what happens, your wealth and status will always be more than enough to support Nyan. The cougar-girl's eyes light up a little as you say this, but not yet convinced by your words, she muses, [nyanmum.speech(Is that so... Tell me, which aristocratic family do you belong to? How do you manage to trace your lineage to Lilith?)]
+			Зная, что [nyanmum.name] наверняка оценит твое аристократическое происхождение, ты говоришь ей, что принадлежишь к весьма престижному благородному роду, и поэтому, что бы ни случилось, твоего богатства и статуса всегда будет более чем достаточно, чтобы содержать Nyan. Глаза женщины-кошки при этих словах слегка загораются, но, всё еще не до конца поверив тебе, она задумчиво произносит: [nyanmum.speech(Вот как... Ну и из какой же аристократической семьи ты родом? И как тебе удалось проследить свою родословную до самой Lilith?)]
 		#ELSE
-			Knowing that [nyanmum.name] is sure to respect professional qualifications, you tell her that you're an accomplished [pc.job], and so no matter what happens, you'll always be able to find work and support Nyan. The cougar-girl's eyes narrow a little as you say this, and she growls, [nyanmum.speech(Very well... You might be able to provide for my daughter, but do you have the sorts of friends who can help you out if things go bad? Go on, tell me who you'd turn to if you lost everything.)]
+			Зная, что [nyanmum.name] наверняка уважает профессиональную квалификацию, ты говоришь ей, что ты — состоявшийся [pc.job], и поэтому, что бы ни случилось, ты всегда сможешь найти работу и обеспечивать Nyan. Глаза женщины-кошки слегка сужаются, и она рычит: [nyanmum.speech(Очень хорошо... Возможно, ты и сможешь содержать мою дочь, но есть ли у тебя друзья, которые выручат тебя, если дела пойдут прахом? Ну же, скажи, к кому бы ты обратился, если бы потерял всё.)]
 		#ENDIF
 	</p>
 	]]>
@@ -513,7 +509,7 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_DO_BEST"><![CDATA[
 	<p>
-		Unable to give [nyanmum.name] any concrete evidence for being able to support Nyan, you reassure her that you'll always do your best and manage to work something out. Scowling at you in disapproval, she bluntly asks, [nyanmum.speech(Do you really expect me to accept that pathetic nonsense? Seeing as you've got nothing going for you, there's no way I'm going to let you continue to date my daughter! Unless you're from an exceptionally wealthy family, you can just leave right now!)]
+		Не имея возможности предоставить [nyanmum.name] никаких конкретных доказательств своей состоятельности, ты заверяешь её, что всегда будешь стараться изо всех сил и что-нибудь придумаешь. Недовольно хмурясь, она резко спрашивает: [nyanmum.speech(Ты и правда ждешь, что я приму эту жалкую чушь за чистую монету? Раз уж у тебя за душой ничего нет, я ни за что не позволю тебе и дальше встречаться с моей дочерью! Если только ты не из невероятно богатой семьи, можешь прямо сейчас убираться вон!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -521,9 +517,9 @@
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_LILAYA_REVEAL"><![CDATA[
 	<p>
 		#IF(pc.getOccupation()==OCCUPATION_ARISTOCRAT)
-			Realising that [nyanmum.name] won't be impressed by the name of your noble line from your old reality, you decide to fall back on the name of your demonic [lilaya.relation(pc)]. As you tell Nyan's mother that Lilaya is your [lilaya.relation(pc)], you see her eyes widen in surprise, and with a detectable hint of awe in her voice, she asks, [nyanmum.speech(You're that closely related to Lyssieth, and so Lilith herself?! Wait... <i>You're</i> the [pc.race] who moved in with Lilaya?! Hmm... I guess that'll do...)]
+			Понимая, что [nyanmum.name] вряд ли впечатлит название твоего благородного рода из прошлой реальности, ты решаешь прикрыться именем своей демонической [lilaya.relation(pc)]. Когда ты говоришь матери Nyan, что Lilaya — твоя [lilaya.relation(pc)], ты видишь, как её глаза расширяются от удивления, и с явным оттенком благоговения в голосе она спрашивает: [nyanmum.speech(Ты настолько близок с Lyssieth, и даже с самой Lilith?! Погоди... <i>Ты</i> тот самый [pc.race], что переехал к Lilaya?! Хм... Ну, сойдет...)]
 		#ELSE
-			Seeing that [nyanmum.name] is the sort of shallow person who's impressed by wealth and prestige, you decide to fall back on the name of your demonic [lilaya.relation(pc)]. As you tell Nyan's mother that you're very close to Lilaya, and that she'd surely help you out if you were in a rough spot, you see her eyes widen in surprise, and with a detectable hint of awe in her voice, she asks, [nyanmum.speech(You're that closely related to Lyssieth?! Wait... <i>You're</i> the [pc.race] who moved in with Lilaya?! Hmm... I guess that'll do...)]
+			Видя, что [nyanmum.name] — человек довольно поверхностный и впечатляется лишь богатством и престижем, ты решаешь сослаться на имя своей демонической [lilaya.relation(pc)]. Когда ты говоришь матери Nyan, что очень близок с Lilaya и что она наверняка выручит тебя в трудную минуту, ты видишь, как её глаза расширяются от удивления, и с явным оттенком благоговения в голосе она спрашивает: [nyanmum.speech(Ты настолько близок с Lyssieth?! Погоди... <i>Ты</i> тот самый [pc.race], что переехал к Lilaya?! Хм... Ну, сойдет...)]
 		#ENDIF
 	</p>
 	]]>
@@ -534,20 +530,20 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_FOOD"><![CDATA[
 	<p>
-		With her daughter still on her lap, [nyanmum.name] suspiciously looks you up and down, before revealing, [nyanmum.speech(That was just a little warmup question; your real interview starts now. If you get even one of my questions wrong, you're out of here!)]
+		Всё еще держа дочь на коленях, [nyanmum.name] подозрительно осматривает тебя с ног до головы, прежде чем заявить: [nyanmum.speech(Это был лишь небольшой разогрев; твое настоящее собеседование начинается прямо сейчас. Если ошибешься хоть в одном моем вопросе — вылетишь отсюда!)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(But mum, I don't want-)] Nyan starts to object, but [nyanmum.name] loudly shushes her. From her mother's overprotective attitude, you start to see how your girlfriend came to be so nervous around strangers, and after being silenced, she meekly sits on [nyanmum.namePos] lap and waits to be told what to do next.
+		[nyan.speechNoEffects(Но мам, я не хочу...)] Nyan пытается возразить, но [nyanmum.name] громко шикает на неё. Глядя на чрезмерную опеку её матери, ты начинаешь понимать, почему твоя девушка так нервничает перед незнакомцами. После того как её заставили замолчать, она покорно усаживается на [nyanmum.namePos] и ждёт, когда ей скажут, что делать дальше.
 	</p>
 	<p>
-		[nyanmum.speech(This is all to keep you safe, my sweet little Nyan,)] she explains, before looking over at you and continuing, [nyanmum.speech(Seeing as Nyan seems to be so fond of you, I'll go easy with this first question. As you've just been out for a meal with her, you should have just discovered the answer to this. What is Nyan's favourite food?)]
+		[nyanmum.speech(Всё это лишь для твоей безопасности, моя сладкая Nyan,] — объясняет она, прежде чем перевести взгляд на тебя и продолжить: [nyanmum.speech(Раз уж Nyan, кажется, так сильно к тебе привязалась, я буду снисходительна к первому вопросу. Раз вы только что вместе ужинали, ты должен был уже узнать ответ. Какое любимое блюдо у Nyan?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_2_FOOD_FAIL"><![CDATA[
 	<p>
-		Having forgotten what your girlfriend ordered earlier this evening, you make a guess and tell [nyanmum.name] that Nyan's favourite food is [#SPECIAL_PARSE_0].
+		Забыв, что именно заказывала твоя девушка сегодня вечером, ты делаешь предположение и говоришь [nyanmum.name], что любимая еда Nyan — это [#SPECIAL_PARSE_0].
 	</p>
 	]]>
 	</htmlContent>
@@ -557,20 +553,20 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_3_HISTORY"><![CDATA[
 	<p>
-		Having only just seen her eating it earlier this evening, you confidently tell [nyanmum.name] that Nyan's favourite food is the fish dish, 'tsipoura'. Nyan lets out a happy giggle as you say this, to which her mother growls, [nyanmum.speech(That was just the easy question, so don't get too cocky!)]
+		Поскольку ты только что видел, как она ела это сегодня вечером, ты уверенно отвечаешь [nyanmum.name], что любимое блюдо Nyan — рыбное блюдо «ципура». При этих словах Nyan радостно хихикает, на что её мать ворчит: [nyanmum.speech(Это был всего лишь лёгкий вопрос, так что не слишком заноси голову!)]
 	</p>
 	<p>
-		Almost as if to show off that she's the one in control of her daughter, [nyanmum.name] reaches down and takes hold of Nyan's legs, before pulling her up so that she's fully kneeling on her lap. Gently stroking the soft black fur which covers her daughter's slender legs, she smirks at you and growls, [nyanmum.speech(Seeing as you're supposedly dating my daughter, you should already know that the two of us lived together for several years. Not in this tiny apartment of course; Nyan sometimes gets these silly ideas in her head, and after I gave her that clothing store, she insisted on living somewhere she'd earned for herself... Anyway, when we used to live together, Nyan insisted on taking over some of the maids' duties, and so what did she used to do for me every morning?)]
+		Словно желая продемонстрировать, что именно она полностью контролирует свою дочь, [nyanmum.name] наклоняется, берет Nyan за ноги и подтягивает её к себе, заставляя полностью опуститься на колени к матери. Нежно поглаживая мягкий черный мех на стройных ножках дочери, она ухмыляется тебе и рычит: [nyanmum.speech(Раз уж ты вроде как встречаешься с моей дочкой, ты должен уже знать, что мы жили вместе несколько лет. Конечно, не в этой крошечной квартирке; у Nyan иногда бывают дурацкие идеи, и после того как я подарила ей тот магазин одежды, она настояла на том, чтобы жить там, где сама заработает... В общем, когда мы жили вместе, Nyan упорно пыталась взять на себя часть обязанностей горничной. И знаешь, что она делала для меня каждое утро?)]
 	</p>
 	<p>
-		From the triumphant smirk on her face, [nyanmum.name] clearly doesn't expect you to know this, and despite having just pulled her daughter fully onto her lap, she seems ready to spring up and throw you out of the apartment...
+		Судя по торжествующей ухмылке на её лице, [nyanmum.name] явно не ожидает, что ты это знаешь. И хотя она только что усадила дочь к себе на колени, кажется, она готова в любой момент вскочить и вышвырнуть тебя из квартиры...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_3_HISTORY_FAIL"><![CDATA[
 	<p>
-		Unable to recall what Nyan told you about her earlier life with [nyanmum.name], you make a guess and say that she used to [#SPECIAL_PARSE_0] every morning.
+		Не в силах вспомнить, что именно Nyan рассказывала тебе о её жизни с [nyanmum.name], ты пытаешься угадать и говоришь, что каждое утро она [#SPECIAL_PARSE_0].
 	</p>
 	]]>
 	</htmlContent>
@@ -580,17 +576,17 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_4_STORE"><![CDATA[
 	<p>
-		Remembering that Nyan told you her hobbies were following fashion and bakery, you once again confidently reply that she used to bake pastries for [nyanmum.name] every morning. Upon hearing your correct reply, Nyan lifts her face out of her mother's shoulder and flashes you a warm smile. Glaring at you with her predatory yellow eyes, a look of mild annoyance settles on [nyanmum.namePos] face, and she reluctantly admits, [nyanmum.speech(Fine, you got that one right too...)]
+		Вспомнив, что Nyan называла своими хобби моду и выпечку, ты снова уверенно отвечаешь, что раньше она каждое утро пекла сладости для [nyanmum.name]. Услышав правильный ответ, Nyan отрывается от плеча матери и одаривает тебя теплой улыбкой. [nyanmum.namePos] сверлит тебя взглядом своих хищных желтых глаз, на ее лице проступает легкое раздражение, и она неохотно признает: [nyanmum.speech(Ладно, этот вопрос ты тоже угадал...)]
 	</p>
 	<p>
-		Starting to take you seriously, [nyanmum.name] gently moves Nyan off of her lap so that she's sitting right beside her. Still tenderly stroking her daughter's leg, she leans forwards just a little and growls, [nyanmum.speech(If you're really interested in my daughter, you would have talked all about the clothing store which I gave her to manage. Tell me what it was called before my sweet little Nyan took it over!)]
+		Начав воспринимать тебя всерьез, [nyanmum.name] осторожно пересаживает Nyan со своих колен так, чтобы та сидела прямо рядом с ней. Все еще нежно поглаживая ногу дочери, она слегка подается вперед и рычит: [nyanmum.speech(Если ты действительно заинтересован в моей дочери, ты должен был все время твердить о магазине одежды, которым я отдала ей управлять. Скажи мне, как он назывался до того, как моя милая Nyan его прибрала к рукам!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_4_STORE_FAIL"><![CDATA[
 	<p>
-		Unable to recall what Nyan told you about her store's history, you make a guess and say that it was called '[#SPECIAL_PARSE_0]' before Nyan took it over.
+		Не сумев вспомнить, что именно Nyan рассказывала тебе об истории магазина, ты пытаешься угадать и говоришь, что до прихода Nyan он назывался '[#SPECIAL_PARSE_0]'.
 	</p>
 	]]>
 	</htmlContent>
@@ -600,20 +596,20 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_5_FLOWER"><![CDATA[
 	<p>
-		Remembering when you and Nyan discussed the history of her store, you tell [nyanmum.name] that it was called 'Golden Threads' before Nyan took it over. Excitedly clapping her hands together, Nyan turns to her mother and says, [nyan.speechNoEffects(See, mum? [pc.Name] cares about me, and remembers all that w-we've talked about!)]
+		Вспомнив ваш разговор с Nyan об истории ее магазина, ты говоришь [nyanmum.name], что до того, как Nyan взяла его под свое крыло, он назывался «Золотые нити». Возбужденно хлопнув в ладоши, Nyan поворачивается к матери и восклицает: [nyan.speechNoEffects(Видала, мам? [pc.Name] заботится обо мне и помнит всё, о чем мы г-говорили!)]
 	</p>
 	<p>
-		Taking her hand off her daughter's leg, [nyanmum.name] reaches up to give her head a little pat, before ever so slightly softening her glare and saying, [nyanmum.speech(We'll see about that... I still have a couple more questions to ask of [pc.name]...)]
+		Убрав руку с ноги дочери, [nyanmum.name] ласково поглаживает её по голове, после чего её взгляд слегка смягчается, и она произносит: [nyanmum.speech(Посмотрим... У меня ещё осталось пара вопросов к [pc.name]...)]
 	</p>
 	<p>
-		By now really taking you seriously, [nyanmum.name] runs one of her cat-like hands through her wavy brown hair, before leaning forwards and snapping, [nyanmum.speech(Tell me what Nyan's favourite flowers are.)] 
+		Настрой серьезный, [nyanmum.name] проводит одной своей кошачьей ладонью по волнистым каштановым волосам, после чего подаётся вперёд и резко спрашивает: [nyanmum.speech(Скажи мне, какие любимые цветы у Nyan?)] 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_5_FLOWER_FAIL"><![CDATA[
 	<p>
-		Unable to recall what Nyan's favourite flower was, you make a guess and say that [#SPECIAL_PARSE_0] are her favourite.
+		Не в силах вспомнить, какие цветы любит Nyan, ты пытаешься угадать и говоришь, что её любимые — [#SPECIAL_PARSE_0].
 	</p>
 	]]>
 	</htmlContent>
@@ -623,23 +619,23 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_6_BOOK"><![CDATA[
 	<p>
-		You confidently reply that Nyan's favourite flowers are daisies, and that they were her favourite sight when visiting the countryside. For the first time since meeting her, you see [nyanmum.name] flash you a slight smile, and she ponders out loud, [nyanmum.speech(Maybe you really do care for Nyan...)]
+		Ты уверенно отвечаешь, что любимые цветы Nyan — маргаритки, и что они были её любимым зрелищем во время поездок в деревню. Впервые с момента знакомства ты видишь, как на лице [nyanmum.name] промелькнула слабая улыбка, и она задумчиво произносит: [nyanmum.speech(Может, ты и вправду заботишься о Nyan...)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(I told you, mum!)] Nyan exclaims, before taking hold of her mother's hand and pleading, [nyan.speechNoEffects(C-Can you please stop this now?)]
+		[nyan.speechNoEffects(Ну я же говорила, мам!)] — восклицает Nyan, после чего хватает мать за руку и умоляюще просит: [nyan.speechNoEffects(М-можешь ты уже это прекратить?)]
 	</p>
 	<p>
-		Hardening her expression, [nyanmum.name] replies, [nyanmum.speech(I have one last question to ask, and anyone who's seriously interested in you would know the answer to it.)]
+		Снова посерьёзнев, [nyanmum.name] отвечает: [nyanmum.speech(У меня остался последний вопрос, и любой, кому ты действительно небезразлична, должен знать на него ответ.)]
 	</p>
 	<p>
-		Before revealing her final question, however, [nyanmum.name] has one last trick up her sleeve, or, more accurately, up her skirt. Sitting upright, she spreads her legs a little, and thanks to the fact that her bodycon dress has a relatively short skirt, she ends up brazenly flashing you her underwear. Clearly well aware of what she's doing, she slides her left leg further to one side, making it impossible not to notice the fact that her dark purple thong is completely crotchless. Shamelessly flashing you her naked pussy, she spreads her legs even wider, and with her large, dark labia fully on display, she deviously smirks at you and asks, [nyanmum.speech(What's the matter? I hope you're not getting distracted by anything. Now tell me the name of Nyan's favourite book.)]
+		Однако, прежде чем задать свой последний вопрос, у [nyanmum.name] припасен последний козырь — или, точнее говоря, под юбкой. Выпрямившись, она слегка разводит колени, и благодаря тому, что её облегающее платье довольно короткое, она бесстыдно демонстрирует тебе своё бельё. Прекрасно понимая, что делает, она отводит левую ногу ещё сильнее в сторону, так что невозможно не заметить: её тёмно-фиолетовые трусики-стринги совершенно открыты в паху. Бесстыдно выставляя напоказ свою голую киску, она разводит ноги ещё шире, и, когда её крупные тёмные половые губы оказываются полностью на виду, она лукаво ухмыляется тебе и спрашивает: [nyanmum.speech(Что такое? Надеюсь, тебя ничего не отвлекает? А теперь скажи мне название любимой книги Nyan.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_6_BOOK_FAIL"><![CDATA[
 	<p>
-		Distracted by [nyanmum.namePos] lewd display, you fail to recall what Nyan's favourite book was called. Stumbling around for a title, you make a wild guess and say that it's '[#SPECIAL_PARSE_0]'.
+		Отвлечённый похотливым видом [nyanmum.namePos], ты никак не можешь вспомнить, как называлась любимая книга Nyan. Тщетно пытаясь угадать название, ты делаешь смелую попытку и произносишь: «[#SPECIAL_PARSE_0]».
 	</p>
 	]]>
 	</htmlContent>
@@ -649,13 +645,13 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_FAIL"><![CDATA[
 	<p>
-		The instant she hears your incorrect answer, [nyanmum.namePos] fists violently clench shut, and through clenched teeth she snaps, [nyanmum.speech(I knew you didn't care about my Nyan! Go on, get out of here!)]
+		Как только она слышит твой неверный ответ, кулаки [nyanmum.namePos] с силой сжимаются, и сквозь стиснутые зубы она рявкает: [nyanmum.speech(Я так и знала, что тебе плевать на мою Nyan! А ну, брысь отсюда!)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(Mum, wait...)] Nyan weakly protests, but you can tell from the tone of her voice that she's also upset at you for not knowing the answer to her mother's question.
+		[nyan.speechNoEffects(Мам, подожди...)] — слабо протестует Nyan, но по её голосу ты понимаешь, что она тоже расстроена тем, что ты не смог ответить на вопрос её матери.
 	</p>
 	<p>
-		Holding onto her daughter as though she's no more than a toy, [nyanmum.name] stands up and snaps her fingers at the door. Impatiently tapping her foot on the floor, she growls, [nyanmum.speech(Get moving!)]
+		Прижимая к себе дочь, словно ту самую игрушку, [nyanmum.name] встает и щелкает пальцами, указывая на дверь. Нетерпеливо постукивая ножкой по полу, она рычит: [nyanmum.speech(Живее!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -665,16 +661,16 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_FAIL_LEAVE"><![CDATA[
 	<p>
-		Realising that a refusal to leave would undoubtedly ruin any chance at redeeming yourself at a later date, you do what [nyanmum.name] says and head for the exit. Following you to the front door, [nyanmum.name] growls to her daughter, [nyanmum.speech(Go on, Nyan, say goodbye! Just as I thought, your so-called '[pc.girlfriend]' was only interested in getting between your legs!)]
+		Понимая, что отказ уйти безвозвратно лишит тебя шанса на искупление в будущем, ты слушаешься [nyanmum.name] и направляешься к выходу. Провожая тебя до самой двери, [nyanmum.name] ворчит своей дочери: [nyanmum.speech(Ну же, Nyan, попрощайся! Как я и думала, твой хваленый '[pc.girlfriend]' интересовался только тем, чтобы залезть тебе между ног!)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(Mum!)] Nyan cries out, and in her embarrassment at her mother's behaviour, she covers her face with her hands and stutters, [nyan.speechNoEffects(S-Sorry, [pc.name]... G-Goodbye, I'll s-see you at the store s-soon, right?)]
+		[nyan.speechNoEffects(Мам!)] — вскрикивает Nyan, и от смущения из-за поведения матери она закрывает лицо руками и заикается: [nyan.speechNoEffects(П-прости, [pc.name]... П-прощай, мы ведь скоро увидят-имся в магазине, да?)]
 	</p>
 	<p>
-		Interrupting your answer, Nyan's mother violently yanks open the front door, before once again demanding that you immediately leave. Letting out a sigh, you [pc.step] out into the corridor, flinching a little as the door slams shut behind you.
+		Прерывая твой ответ, мать Nyan с силой распахивает входную дверь и снова требует, чтобы ты немедленно убирался. Со вздохом ты [pc.step] в коридор, слегка вздрагивая от того, как за твоей спиной с грохотом захлопывается дверь.
 	</p>
 	<p>
-		Heading back down the stairs, you soon find yourself back out in the streets of Dominion, wondering what to do next...
+		Спускаясь по лестнице, ты вскоре оказываешься на улицах Dominion, гадая, что же делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -684,25 +680,25 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_INTERVIEW_PASS"><![CDATA[
 	<p>
-		Managing to avoid being distracted by [nyanmum.namePos] lewd display, you correctly respond by saying that Nyan's favourite book is called 'One Day in June'. Still keeping her legs spread, she leans back on the sofa and sighs, [nyanmum.speech(Fine... I suppose you really do care about Nyan...)]
+		Умудрившись не отвлекаться на похотливое зрелище, которое устроила [nyanmum.namePos], ты верно отвечаешь, что любимая книга Nyan называется «Один день в июне». Все еще держа ноги широко разведенными, она откидывается на спинку дивана и вздыхает: [nyanmum.speech(Ладно... Полагаю, тебе и правда не плевать на Nyan...)]
 	</p>
 	<p>
-		[nyan.speechNoEffects(You're finished, mum?)] Nyan asks, seemingly completely oblivious as to what her mother is currently doing.
+		[nyan.speechNoEffects(Мам, ты закончила?)] — спрашивает Nyan, кажется, совершенно не замечая того, чем сейчас занята её мать.
 	</p>
 	<p>
-		Flashing you a devious smirk, [nyanmum.name] snaps her legs shut, before reaching over to pat her daughter on the head. Letting out a big yawn and stretching her muscular arms up above her head, she reveals, [nyanmum.speech(Yes, I've finished with my questioning. I've had a busy day, so I'm going to bed now. Oh, by the way, I'm going to be staying here with you for the foreseeable future. I've appointed subordinates to handle all of my businesses, and I need to take a long break. Your quaint little apartment and company is exactly what I need.)]
+		Лукаво ухмыльнувшись, [nyanmum.name] сводит колени, после чего тянется, чтобы погладить дочь по голове. Громко зевнув и потянувшись мускулистыми руками вверх, она произносит: [nyanmum.speech(Да, с допросом я закончила. День был насыщенным, так что я ложусь спать. Ах да, кстати, в обозримом будущем я буду жить здесь, с вами. Я назначила подчиненных управлять всеми делами, и мне нужен долгий отдых. Твоя уютная каморка и компания — это именно то, что мне сейчас нужно.)]
 	</p>
 	<p>
-		Not giving her daughter any question in the matter, [nyanmum.name] stands up and gives you one last warning, [nyanmum.speech(If you do anything to upset my sweet little Nyan, I'll make you pay.)]
+		Не терпя возражений от дочери, [nyanmum.name] встает и напоследок предостерегает тебя: [nyanmum.speech(Если ты сделаешь хоть что-то, что расстроит мою сладкую малышку Nyan, ты за это поплатишься.)]
 	</p>
 	<p>
-		After demanding a goodnight hug and kiss from her daughter, [nyanmum.name] strides over to the door, calling behind her as she goes, [nyanmum.speech(I'll be using the spare room. Good night!)]
+		Потребовав от дочери объятий и поцелуй на ночь, [nyanmum.name] направляется к двери, бросая через плечо: [nyanmum.speech(Я займу гостевую комнату. Спокойной ночи!)]
 	</p>
 	<p>
-		Stopping in the doorway, [nyanmum.name] swishes her tail to one side, before turning and flashing you another devious grin. Narrowing her yellow, cat-like eyes, she asks, [nyanmum.speech(Oh, [pc.name], please try not to make my daughter moan too loudly tonight; I really could do with my beauty sleep.)]
+		Остановившись в дверях, [nyanmum.name] отводит хвост в сторону, затем оборачивается и снова одаривает тебя лукавой ухмылкой. Прищурив свои желтые кошачьи глаза, она спрашивает: [nyanmum.speech(О, [pc.name], пожалуйста, постарайся, чтобы моя дочь не стонала слишком громко этой ночью; мне бы очень не помешал сон для красоты.)]
 	</p>
 	<p>
-		With that, Nyan's mother disappears around the corner, leaving her furiously-blushing daughter to collapse down on the sofa and cover her face with her hands. Peeking between her fingers, she groans, [nyan.speechNoEffects(I'm so, so sorry about that... Mum can get quite intense, and I n-never expected her to be here...)]
+		С этими словами мать Nyan скрывается за углом, оставляя свою пылающую от смущения дочь. Девушка буквально валится на диван и закрывает лицо руками. Подглядывая сквозь пальцы, она стонет: [nyan.speechNoEffects(Мне так, так неловко... Мама бывает очень напористой, и я н-никогда не ожидала, что она придет...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -712,31 +708,31 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM"><![CDATA[
 	<p>
-		Moving over to sit down next to your still-blushing girlfriend, you give her a reassuring hug and tell her that there's no reason for her to apologise. Leaning into you, Nyan takes her hands away from her face and sighs, [nyan.speechNoEffects(T-Thanks, [pc.name]... Apart from what just happened, t-this evening was one of the best times in my entire life...)]
+		Подвинувшись поближе к своей всё еще краснеющей девушке, ты ободряюще обнимаешь её и говоришь, что ей совершенно не за что извиняться. Прижавшись к тебе, Nyan убирает руки от лица и вздыхает: [nyan.speechNoEffects(С-спасибо, [pc.name]... Если не считать того, что сейчас случилось, э-этот вечер был одним из лучших в моей жизни...)]
 	</p>
 	<p>
-		Turning her head to look up at you, Nyan lets out a soft moan, and you realise that despite the sudden encounter with her mother, she's still very aroused. Giving her what she wants, you lean down and press your [pc.lips] against Nyan's mouth, which causes her to throw her arms around your back and very quickly continue from where you left off. Turning to one side, she practically slides into your lap in her eagerness to kiss you, and in between her muffled moans she pants, [nyan.speechNoEffects(~Mmm!~ Yes... ~Aah!~ We could... ~Mmm!~ My bedroom...)]
+		Nyan поворачивает голову, чтобы посмотреть на тебя, и издает тихий стон; ты понимаешь, что, несмотря на внезапное появление её матери, она всё еще очень возбуждена. Давая ей то, чего она хочет, ты наклоняешься и прижимаешь свои [pc.lips] к губам Nyan. Она тут же обхватывает тебя руками за спину, и вы стремительно продолжаете с того места, где прервались. В своем нетерпении она практически забирается к тебе на колени, и сквозь приглушенные стоны и прерывистое дыхание шепчет: [nyan.speechNoEffects(~Ммм!~ Да... ~Аах!~ Мы могли бы... ~Ммм!~ В моей спальне...)]
 	</p>
 	<p>
-		Upon uttering those words, your horny girlfriend takes hold of your [pc.hand], before standing up and weakly trying to pull you to your feet. Playing along with her, you get up off the sofa and allow the cute cat-girl to lead you over to the door. After briefly stopping to peek around the corner and make sure that her mother has retired to the spare room, Nyan continues pulling you down the hallway to her room. Despite her caution, as you arrive at the door to Nyan's room, the opposite door suddenly swings inwards, revealing [nyanmum.name] wearing nothing but a loose dressing gown.
+		С этими словами твоя разгоряченная девушка хватает тебя за [pc.hand], после чего встает и, слегка пошатываясь, пытается поднять тебя на ноги. Подыгрывая ей, ты поднимаешься с дивана, позволяя милой кошкодевочке вести тебя к двери. Недолго задержавшись, чтобы выглянуть из-за угла и убедиться, что её мать уже ушла в гостевую комнату, Nyan продолжает тянуть тебя по коридору к себе. Несмотря на её осторожность, когда вы подходите к двери её комнаты, противоположная дверь внезапно распахивается, являя твоему взору [nyanmum.name], на которой нет ничего, кроме распахнутого халата.
 	</p>
 	<p>
-		[nyanmum.speech(Oh, sweetie, I forgot to ask, but could you make me those pastries of yours tomorrow?)] she nonchalantly asks, seemingly not at all bothered by the fact that her loose dressing gown is leaving her naked pussy and most of her [nyanmum.cupSize]-cup breasts completely exposed.
+		[nyanmum.speech(Ой, милый, я совсем забыла спросить, не мог бы ты приготовить для меня те свои пирожные завтра?)] — небрежно спрашивает она, кажется, совершенно не беспокоясь о том, что её свободный халат полностью обнажает её голодную киску и большую часть её груди с [nyanmum.cupSize]-м размером.
 	</p>
 	<p>
-		[nyan.speechNoEffects(Mum!)] Nyan squeals, [nyan.speechNoEffects(S-Stop trying to embarrass me! F-Find your own [pc.girlfriend]!)]
+		[nyan.speechNoEffects(Мам!)] — визжит Nyan, [nyan.speechNoEffects(П-перестань меня смущать! Н-най себе другого [pc.girlfriend]!)]
 	</p>
 	<p>
-		[nyanmum.speech(I'll take that as a yes,)] [nyanmum.name] replies, and as Nyan frantically pulls you into her room, she gives you a subtle wink and blows you a kiss.
+		[nyanmum.speech(Считаю, что это «да»,)] — отвечает [nyanmum.name], и пока Nyan лихорадочно затаскивает тебя в свою комнату, она незаметно подмигивает тебе и посылает воздушный поцелуй.
 	</p>
 	<p>
-		Slamming the door shut behind the two of you, Nyan lets out an uncharacteristic, frustrated cry, [nyan.speechNoEffects(~Argh!~ She's so meddlesome!)]
+		С грохотом захлопнув за вами дверь, Nyan издает несвойственный ей разочарованный возглас: [nyan.speechNoEffects(~Арх!~ Она такая навязчивая!~)]
 	</p>
 	<p>
-		[nyanmum.speech(<i>~I heard that,~</i>)] [nyanmum.namePos] voice calls out from the other side of the door.
+		[nyanmum.speech(<i>~Я всё слышу, ~</i>)] — доносится голос [nyanmum.namePos] из-за двери.
 	</p>
 	<p>
-		Thanks to her mother's interference, Nyan is quite clearly almost as frustrated as she is horny. Overcome by her emotions, she practically throws herself at you once again, panting, [nyan.speechNoEffects(Come on, [pc.name], just kiss me!)]
+		Из-за вмешательства матери Nyan явно разозлена почти так же сильно, как и возбуждена. Охваченная эмоциями, она практически снова бросается на тебя, тяжело дыша: [nyan.speechNoEffects(Ну же, [pc.name], просто поцелуй меня!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -746,65 +742,65 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_KISS"><![CDATA[
 	<p>
-		More than happy to give your horny girlfriend what she wants, you take hold of Nyan's hips and pull her up against your body. As you press your [pc.lips+] against hers, she throws her arms around your back and starts desperately grinding up against you. After a minute of passionately kissing one another, Nyan pulls back and breathlessly pants, [nyan.speechNoEffects(I want to... I mean... L-Let me get out of this dress...)]
+		С радостью исполняя желание своей разгоряченной девушки, ты берешь Nyan за бедра и притягиваешь её вплотную к себе. Когда ты прижимаешь свой [pc.lips+] к её, она обхватывает тебя руками за спину и начинает отчаянно тереться о тебя всем телом. После минуты страстных поцелуев Nyan отстраняется и, задыхаясь, произносит: [nyan.speechNoEffects(Я хочу... то есть... Д-давай я сниму это платье...)]
 	</p>
 	<p>
-		Stepping back, the blushing cat-girl clumsily starts to take off her dress, and while your attention is almost completely occupied by the sight of your cute girlfriend disrobing, you are able to take a moment in which to finally have a look at your surroundings. Glancing around, you take note of the fact that each of the four walls of Nyan's bedroom are painted in different shades of soft, pastel pinks and yellows. To your left, several large, white bookcases hold a staggering amount of romance novels, while over to your right a collection of plush animal toys are arranged on top of a long chest of drawers. Tying the whole room together, the duvet cover on Nyan's double bed is patterned in pink and white, and at the head, there are at least half a dozen cushions, each in a soft shade of pink, yellow, and blue.
+		Отступив на шаг, раскрасневшаяся кошкодевочка неуклюже начинает снимать платье. Пока твоё внимание почти полностью поглощено зрелищем раздевающейся милашки, тебе удается на мгновение оглядеться. Окинув взглядом комнату, ты замечаешь, что все четыре стены в спальне Nyan выкрашены в разные оттенки нежно-розового и желтого цветов. Слева стоят несколько больших белых книжных шкафов, забитых невероятным количеством любовных романов, а справа на длинном комоде выставлена коллекция мягких игрушек. Завершает уют комнаты покрывало на двуспальной кровати Nyan в розово-белую полоску, а в изголовье разбросано не менее полудюжины подушек нежных розовых, желтых и голубых оттенков.
 	</p>
 	<p>
-		Shrugging off her dress and letting it fall to the plush, cream-coloured carpet beneath her feet, Nyan reveals that she's wearing [nyan.a_slotClothing(GROIN, true)] and [nyan.a_slotClothing(CHEST, true)]. Furiously blushing as she stands there in her lingerie, Nyan mumbles, [nyan.speechNoEffects(I-I've never done this before... I don't want to g-go any further than, erm, y-you know... O-Oral stuff...)]
+		Сбросив платье и позволив ему упасть на мягкий кремовый ковер у ног, Nyan предстает перед тобой в [nyan.a_slotClothing(GROIN, true)] и [nyan.a_slotClothing(CHEST, true)]. Густо покраснев от смущения, Nyan стоит перед тобой в одном белье и бормочет: [nyan.speechNoEffects(Я... я никогда раньше этого не делала... Не хочу заходить слишком д-далеко, ну, в смысле... Оральный секс...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_KISS_CUNNILINGUS"><![CDATA[
 	<p>
-		Not wanting to rush things with your inexperienced girlfriend, you ask her if she's sure that she'd be comfortable with receiving oral from you. Despite the fact that she's still blushing from the anticipation of what's to come, Nyan smiles at you and enthusiastically confirms, [nyan.speechNoEffects(Yes! I-I mean, I've wanted this since reading about it in one of my books...)]
+		Не желая торопить события со своей неопытной девушкой, ты спрашиваешь, уверена ли она, что ей будет комфортно принять от тебя оральный секс. Несмотря на то, что она всё еще краснеет в предвкушении грядущего, Nyan улыбается тебе и с энтузиазмом подтверждает: [nyan.speechNoEffects(Да! В-в смысле, я так хотела этого с тех пор, как прочитала об этом в одной из своих книжек...)]
 	</p>
 	<p>
-		Despite her clear desire to receive oral from you, Nyan doesn't seem to know what to do next, and so you take the initiative by [pc.stepping] up to her and gently starting to pull down her thong. As you slide her underwear down her furry legs, Nyan's cat-like tail starts to excitedly swish around behind her, and she instinctively moves one of her hands down to cover her pussy. Making cute little panting noises, she hops out of her underwear as you tug them off of her feet, before moving back and sitting down on the edge of her bed. With her hand still down between her legs, she pants, [nyan.speechNoEffects(O-Ok... I think I'm ready...)]
+		Несмотря на явное желание получить от тебя оральный секс, Nyan, кажется, не знает, что делать дальше, поэтому ты берешь инициативу на себя: [pc.stepping] к ней и осторожно начинаешь стягивать её трусики. Пока ты спускаешь белье по её пушистым ножкам, кошачий хвост Nyan начинает возбужденно вилять позади неё, а сама она инстинктивно прикрывает ладонью свою киску. Издавая милые звуки прерывистого дыхания, она выскакивает из трусиков, когда ты стягиваешь их с её ног, после чего отступает и садится на край кровати. Всё еще придерживая рукой место между ног, она тяжело дышит: [nyan.speechNoEffects(Х-хорошо... Кажется, я готова...)]
 	</p>
 	<p>
-		Dropping down in front of your girlfriend, you gently push her legs apart. With a little moan, Nyan lifts her hand, revealing
+		Опустившись перед своей девушкой, ты осторожно разводишь её ноги в стороны. С тихим стоном Nyan поднимает руку, открывая тебе
 		#IF(game.isPubicHairEnabled())
-			 the fact that her cute, tight pussy is surrounded by a black, furry bush of pubic hair. 
+			 то, что ее милая, плотная киска окружена черной, пушистой растительностью лобка.
 		#ELSE
-			 her cute, tight pussy to you.
+			 свою милую, узкую киску.
 		#ENDIF
-		 Panting from excitement, she asks, [nyan.speechNoEffects(So what now?)]
+		 Тяжело дыша от возбуждения, она спрашивает: [nyan.speechNoEffects(Ну и что теперь?)]
 	</p>
 	<p>
-		Answering with action instead of words, you lean forwards and plant a big, wet kiss on Nyan's tiny labia, causing her to let out a shocked moan and instinctively grab the back of your head. Liking the cute sounds which you're able to elicit from your shy girlfriend, you start passionately kissing her pussy, before sliding your [pc.tongue+] into her wet cunt and starting to greedily eat her out.
+		Вместо слов ты отвечаешь действием: наклоняешься вперед и оставляешь долгий, влажный поцелуй на крошечных половых губах Nyan. Она издает шокированный стон и инстинктивно обхватывает затылок твоими руками. Наслаждаясь милыми звуками, которые удается выжать из твоей застенчивой девушки, ты начинаешь страстно ласкать её киску губами, а затем вставляешь свой [pc.tongue+] в её мокрую щель и начинаешь жадно вылизывать её.
 	</p>
 	<p>
-		[nyan.speechNoEffects(~Aah!~ [pc.Name]! ~Ooh!~ More! Yes, like that! ~Aah!~)] she squeals as she discovers that receiving oral is every bit as good as she imagined it to be...
+		[nyan.speechNoEffects(~Аах!~ [pc.Name]! ~Ооо!~ Еще! Да, вот так! ~Ааах!~)] — визжит она, обнаружив, что оральный секс — это именно то, о чем она мечтала...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_KISS_FINGERING"><![CDATA[
 	<p>
-		Not wanting to rush things with your inexperienced girlfriend, you tell her that oral can wait for another time. [pc.Stepping] up to her, you once again take hold of Nyan's [nyan.hips+] and pull her into a deeply passionate kiss. As the cat-girl's arms wrap around your back, you gently lead her over to her bed, before momentarily breaking off your kiss and pulling her down onto the mattress beside you.
+		Не желая торопить события со своей неопытной подругой, ты говоришь ей, что оральный секс может подождать. Оставив [pc.Stepping] на её усмотрение, ты снова берешь Nyan за её [nyan.hips+] и вовлекаешь в глубокий, страстный поцелуй. Пока руки кошкодевочки обвивают твою спину, ты мягко ведешь её к кровати, а затем ненадолго прерываешь поцелуй и укладываешь её на матрас рядом с собой.
 	</p>
 	<p>
-		[nyan.speechNoEffects([pc.Name]...)] Nyan gently moans your name as she stares longingly into your eyes. Leaning forwards, she continues where you just left off, and after pressing her [nyan.lips+] against yours, she starts desperately grinding her body against you.
+		[nyan.speechNoEffects([pc.Name]...)] — Nyan тихо стонет твоё имя, томно глядя тебе в глаза. Наклонившись вперед, она продолжает с того места, где ты остановился, и, прижавшись своей [nyan.lips+] к твоей, начинает отчаянно тереться телом о тебя.
 	</p>
 	<p>
-		As she clearly isn't going to be satisfied just from a kiss, you slowly slide your [pc.hand] down between her legs and start stroking her pussy through her thong. Encouraged by the bucking of her hips, you slide her underwear to one side,
+		Поскольку одного поцелуя ей явно будет мало, ты медленно просовываешь свой [pc.hand] между её ног и начинаешь ласкать её киску сквозь стринги. Видя, как она подаётся навстречу, ты сдвигаешь её бельё набок,
 		#IF(game.isPubicHairEnabled())
-			 and as you move your [pc.fingers] down to stroke her cute, tight pussy, you discover that she's got a furry bush of pubic hair growing between her legs. 
+			 и когда ты опускаешь свой [pc.fingers] вниз, чтобы погладить её милую, тугую киску, ты обнаруживаешь, что между её ногами растёт пушистый куст лобковых волос. 
 		#ELSE
-			 before moving your [pc.fingers] down to stroke her cute, tight pussy.
+			 прежде чем опустить свой [pc.fingers] вниз, чтобы погладить её милую, тугую киску.
 		#ENDIF
 	</p>
 	<p>
-		Briefly breaking off from your kiss, the horny cat-girl moans, [nyan.speechNoEffects(~Aah!~ Yes, keep on going... ~Ooh!~ Right there...)]
+		Кратко прервав поцелуй, возбуждённая кошка-девушка стонет, [nyan.speechNoEffects(~Ах!~ Да, продолжай... ~Ох!~ Вот так! ~Ах!~)]
 	</p>
 	<p>
-		Doing as she asks, you continue sliding your [pc.fingers+] up and down over Nyan's pussy, and by teasing her sensitive clit, you get your shy girlfriend to let out a series of cute moans. Once again encouraged by her reaction, you gently push your [pc.fingers] into Nyan's pussy, before starting to eagerly finger her.
+		Соблюдая её просьбу, ты продолжаешь скользить своим [pc.fingers+] вверх и вниз по киске Нян, и, дразня её чувствительную клитор, ты заставляешь свою застенчивую подругу выпустить серию милых стонов. Опять же, ободренный её реакцией, ты нежно вставляешь свой [pc.fingers] в киску Нян, прежде чем начать жадно трахать её. 
 	</p>
 	<p>
-		[nyan.speechNoEffects(~Aah!~ [pc.Name]! ~Ooh!~ More! Yes, like that! ~Aah!~)] she squeals, before once again starting to passionately kiss you...
+		[nyan.speechNoEffects(~Ах!~ [pc.Name]! ~Ох!~ Больше! Да, так! ~Ах!~)] она визжит, прежде чем снова начать страстно целоваться с тобой...
 	</p>
 	]]>
 	</htmlContent>
@@ -814,143 +810,143 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX"><![CDATA[
 	<p>
-		Collapsing back on her bed, Nyan breathlessly pants, [nyan.speech(That... was amazing...)]
+		Рухнув на кровать, Nyan тяжело и прерывисто дышит: [nyan.speech(Это... было потрясающе...)]
 	</p>
 	<p>
 		#IF(sex.getSexTypeCount(pc, nyan, sex.newSexType(PENETRATION_TONGUE, ORIFICE_VAGINA))>0)
-			Planting one last kiss on your girlfriend's sopping-wet pussy, and causing her to let out another cute moan in the process, you join her on the bed and tell her that it was a lot of fun for you, too. Gazing lovingly into your eyes, Nyan pants, [nyan.speech(We <i>have</i> to do this again some time... That was so good...)]
+			В последний раз прильнув губами к насквозь промокшей киске своей девушки и заставив её издать ещё один милый стон, ты ложишься рядом и говоришь, что тебе тоже очень понравилось. Любовно глядя тебе в глаза, Nyan тяжело дышит: [nyan.speech(Нам <i>нужно</i> повторить это как-нибудь... Это было так хорошо...)]
 		#ELSE
-			Giving your girlfriend's sopping-wet pussy one final stroke, and causing her to let out another cute moan in the process, you tell her that it was a lot of fun for you, too. Gazing lovingly into your eyes, Nyan pants, [nyan.speech(We <i>have</i> to do this again some time... That was so good...)]
+			В последний раз лаская насквозь промокшую киску своей девушки и заставив её издать ещё один милый стон, ты говоришь ей, что тебе тоже очень понравилось. Любовно глядя тебе в глаза, Nyan тяжело дышит: [nyan.speech(Нам <i>нужно</i> повторить это как-нибудь... Это было так хорошо...)]
 		#ENDIF
 	</p>
 	<p>
-		Watching Nyan's [nyan.breastSize] breasts heave up and down in exertion, you wonder whether to suggest something else for her to try, or instead stop here and rest...
+		Глядя на то, как вздымается от усталости [nyan.breastSize] грудь Nyan, ты раздумываешь: предложить ли ей попробовать что-то ещё или же остановиться здесь и отдохнуть...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_SIXTY_NINE_BLOWJOB"><![CDATA[
 	<p>
-		Thinking that it would be fun for Nyan to experience what it's like to perform oral, you suggest that the two of you could sixty-nine on her bed. Blushing at the suggestion, she lets out an excited giggle and replies, [nyan.speech(That sounds fun!)]
+		Подумав, что Nyan было бы весело попробовать оральный секс, ты предлагаешь вам заняться шестьдесят девятым в её кровати. Покраснев от такого предложения, она издаёт восторженный смешок и отвечает: [nyan.speech(Звучит весело!)]
 	</p>
 	<p>
-		As she pushes herself up into a sitting position and sees you exposing your cock to her, the realisation of what she's about to do suddenly dawns on your shy girlfriend, and she mutters, [nyan.speech(I-I've never... You know, sucked someone's... I mean...)]
+		Когда она приподнимается, чтобы сесть, и видит твой стояк, до твоей застенчивой девушки внезапно доходит, что ей предстоит сделать, и она бормочет: [nyan.speech(Я... я никогда раньше... Ну, знаешь, не сосала... В смысле...)]
 	</p>
 	<p>
-		Reassuring her that her lack of experience isn't an issue, and thinking that she'd feel more comfortable being the one on top, you lie back on the bed and tell Nyan to present you with her pussy. Doing as she's told, the cute cat-girl kneels down over your face, before suddenly dropping down and smothering your mouth with her [nyan.pussy+]. Unable to give her any further instructions, you reach up and take hold of Nyan's [nyan.assSize] ass, before starting to enthusiastically eat her out.
+		Успокоив её и заверив, что отсутствие опыта — не проблема, и решив, что ей будет комфортнее, если она будет сверху, ты откидываешься на кровать и просишь Nyan показать тебе свою киску. Послушная милая кошкодевочка опускается на колени над твоим лицом, а затем внезапно насаживается на тебя, накрывая твой рот своей [nyan.pussy+]. Не в силах дать ей дальнейшие указания, ты тянешься вверх и сжимаешь [nyan.assSize] её задницы, после чего с энтузиазмом принимаешься её вылизывать.
 	</p>
 	<p>
-		[nyan.speech(~Aah!~ Yes, that's good!)] Nyan moans, before remembering what she's meant to be doing. Leaning forwards, she lowers her face towards your groin, and you soon feel her hot breath on your cock as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+		[nyan.speech(~Аах!~ Да, вот так хорошо!)] — стонет Nyan, прежде чем вспомнить, что она должна делать. Наклонившись вперед, она подносит лицо к твоему паху, и вскоре ты чувствуешь её горячее дыхание на своём члене, пока она задумчиво произносит: [nyan.speech(Так мне просто... В смысле, вот так надо делать?)]
 	</p>
 	<p>
-		You suddenly feel Nyan's [nyan.lips+] pressing against the [pc.cockHead+] of your cock, and after she's delivered a quick kiss, you hear her letting out a cute little moan, [nyan.speech(~Mmm!~ That wasn't too bad... Now If I just...)] 
+		Внезапно ты чувствуешь, как [nyan.lips+] Nyan прижимается к [pc.cockHead+] твоего члена, и после быстрого поцелуя слышишь её милый стон: [nyan.speech(~Ммм!~ А это было не так уж плохо... Теперь, если я просто...)] 
 	</p>
 	<p>
-		With her pussy still grinding down against your mouth, you're unable to offer Nyan any words of advice or encouragement. Trying to find the best way in which to proceed, she plants a slow series of kisses up the length of your [pc.cock+], before starting to clumsily lick and nuzzle into it. Building up her confidence, she finally decides to take your [pc.cock+] into her mouth, and after letting out a determined little moan, she opens wide and wraps her [nyan.lips+] around your throbbing shaft.
+		Пока её киска всё ещё прижимается к твоему рту, ты не в силах дать Nyan никаких советов или слов поддержки. Пытаясь найти лучший способ продолжить, она осыпает твой [pc.cock+] серией медленных поцелуев, прежде чем начать неумело лизать и ласкать его носом. Набравшись уверенности, она наконец решается взять твой [pc.cock+] в рот, и, издав решительный тихий стон, широко открывает рот и обхватывает своими [nyan.lips+] твой пульсирующий член.
 	</p>
 	<p>
-		Gargling and spluttering, Nyan discovers that it's harder to suck cock than she expected, and almost as quickly as she started, she lifts herself up and allows your [pc.cock+] to slide out of her mouth. Thankfully, however, the cat-girl's move turns out to be just so that she can undo her bra, and after taking it off, she once again drops down and takes your [pc.cock+] into her mouth. Now able to grind her naked [nyan.breasts] down against you, as well as tease her [nyan.nipples+], Nyan starts making muffled, gargled moans as she does her best to give you head...
+		Булькая и захлебываясь, Nyan обнаруживает, что сосать член куда сложнее, чем она ожидала, и почти так же быстро, как начала, она приподнимается, позволяя твоему [pc.cock+] выскользнуть изо рта. К счастью, маневр кошкодевочки оказывается лишь предлогом, чтобы расстегнуть лифчик, и, сняв его, она снова опускается на тебя, заглатывая твой [pc.cock+]. Теперь, когда она может тереться о тебя своей голой [nyan.breasts] и дразнить свою [nyan.nipples+], Nyan начинает издавать приглушенные, булькающие стоны, изо всех сил стараясь доставить тебе удовольствие минетом...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_SIXTY_NINE_CUNNILINGUS"><![CDATA[
 	<p>
-		Thinking that it would be fun for Nyan to experience what it's like to perform oral, you suggest that the two of you could sixty-nine on her bed. Blushing at the suggestion, she lets out an excited giggle and replies, [nyan.speech(That sounds fun!)]
+		Подумав, что Nyan было бы весело попробовать оральный секс, ты предлагаешь вам заняться шестьдесят девятым в её кровати. Покраснев от такого предложения, она издаёт восторженный смешок и отвечает: [nyan.speech(Звучит весело!)]
 	</p>
 	<p>
-		As she pushes herself up into a sitting position and sees you exposing your pussy to her, the realisation of what she's about to do suddenly dawns on your shy girlfriend, and she mutters, [nyan.speech(I-I've never... You know... I mean...)]
+		Когда она приподнимается, чтобы сесть, и видит, что ты подставил ей свою киску, до твоей застенчивой девушки внезапно доходит, что именно ей предстоит сделать, и она бормочет: [nyan.speech(Я... я никогда... Ну, ты понимаешь... В смысле...)]
 	</p>
 	<p>
-		Reassuring her that her lack of experience isn't an issue, and thinking that she'd feel more comfortable being the one on top, you lie back on the bed and tell Nyan to present you with her pussy. Doing as she's told, the cute cat-girl kneels down over your face, before suddenly dropping down and smothering your mouth with her [nyan.pussy+]. Unable to give her any further instructions, you reach up and take hold of Nyan's [nyan.assSize] ass, before starting to enthusiastically eat her out.
+		Успокоив её и заверив, что отсутствие опыта — не проблема, и решив, что ей будет комфортнее, если она будет сверху, ты откидываешься на кровать и просишь Nyan показать тебе свою киску. Послушная милая кошкодевочка опускается на колени над твоим лицом, а затем внезапно насаживается на тебя, накрывая твой рот своей [nyan.pussy+]. Не в силах дать ей дальнейшие указания, ты тянешься вверх и сжимаешь [nyan.assSize] её задницы, после чего с энтузиазмом принимаешься её вылизывать.
 	</p>
 	<p>
-		[nyan.speech(~Aah!~ Yes, that's good!)] Nyan moans, before remembering what she's meant to be doing. Leaning forwards, she lowers her face towards your groin, and you soon feel her hot breath on your pussy as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+		[nyan.speech(~Аах!~ Да, вот так хорошо!)] — стонет Nyan, прежде чем вспомнить, что она должна делать. Подавшись вперед, она приближает свое лицо к твоему паху, и вскоре ты чувствуешь ее горячее дыхание на своей киске, пока она задумчиво произносит: [nyan.speech(Так мне просто... В смысле, вот так надо?)]
 	</p>
 	<p>
-		You suddenly feel Nyan's [nyan.lips+] pressing against your [pc.labia+], and after she's delivered a quick kiss, you hear her letting out a cute little moan, [nyan.speech(~Mmm!~ That wasn't too bad... Now If I just...)] 
+		Ты внезапно чувствуешь, как [nyan.lips+] Nyan прижимается к твоей [pc.labia+], и после быстрого поцелуя слышишь ее милый тихий стон: [nyan.speech(~Ммм!~ А это было неплохо... Теперь, если я просто...)] 
 	</p>
 	<p>
-		With her pussy still grinding down against your mouth, you're unable to offer Nyan any words of advice or encouragement. Trying to find the best way in which to proceed, she plants a slow series of kisses on your [pc.labia+], before starting to clumsily lick and nuzzle into your [pc.clit+]. Building up her confidence, she straightens up and takes off her bra, and after letting out a determined little moan, she leans back down and passionately presses her lips against your [pc.labia]. Taking hold of your [pc.legs+], she slides her tongue into your pussy and begins enthusiastically eating you out...
+		Пока ее киска все еще вжимается в твои губы, ты не можешь дать Nyan ни совета, ни подбадривания. Пытаясь найти лучший способ продолжить, она осыпает твою [pc.labia+] серией медленных поцелуев, после чего начинает неумело лизать и прижиматься носом к твоей [pc.clit+]. Набираясь уверенности, она выпрямляется и снимает лифчик, а затем, издав решительный стон, снова наклоняется и страстно прижимается губами к твоей [pc.labia]. Обхватив твою [pc.legs+], она просовывает язык в твою киску и с энтузиазмом принимается тебя ласкать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_BLOWJOB"><![CDATA[
 	<p>
-		Thinking that it would be fun for Nyan to experience what it's like to perform oral, you ask her if she'd like to try sucking your cock. Blushing at the suggestion, your still-horny girlfriend lets out an excited giggle and replies, [nyan.speech(That sounds fun!)]
+		Подумав, что Nyan будет весело попробовать оральный секс, ты спрашиваешь, не хочет ли она пососать твой член. Покраснев от такого предложения, твоя все еще возбужденная девушка издает радостный смешок и отвечает: [nyan.speech(Звучит весело!)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			As you stand up and expose your cock to her,
+			Когда ты встаешь и подставляешь ей свой член,
 		#ELSE
-			As you sit down on the edge of the bed and expose your cock to her,
+			Когда ты садишься на край кровати и подставляешь ей свой член,
 		#ENDIF
-		 the realisation of what she's about to do suddenly dawns on the shy cat-girl, and she mutters, [nyan.speech(I-I've never... You know, sucked someone's... I mean...)]
+		До застенчивой кошкодевочки внезапно доходит, что именно она собирается сделать, и она бормочет: [nyan.speech(Я... я никогда раньше... Ну, знаешь, чтобы сосала кому-то... В смысле...)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Reassuring her that her lack of experience isn't an issue, you let Nyan go at her own pace, and patiently wait as she kneels down beneath your feral [pc.legRace]'s body. After reaching up to experimentally touch your [pc.cock+], she leans forwards, and you feel her hot breath on your cock as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+			Успокоив её и заверив, что отсутствие опыта — вовсе не проблема, ты позволяешь Nyan действовать в её собственном темпе и терпеливо ждёшь, пока она опускается на колени перед телом твоего дикого [pc.legRace]. Проверив на ощупь твой [pc.cock+], она подаётся вперёд, и ты чувствуешь её горячее дыхание на своём члене, пока она задумчиво произносит: [nyan.speech(Значит, мне просто... В смысле, вот так надо делать?)]
 		#ELSE
-			Reassuring her that her lack of experience isn't an issue, you let Nyan go at her own pace, and patiently wait as she kneels down before you. After experimentally touching your [pc.cock+], she lowers her face towards your groin, and you feel her hot breath on your cock as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+			Успокоив её и заверив, что отсутствие опыта — вовсе не проблема, ты позволяешь Nyan действовать в её собственном темпе и терпеливо ждёшь, пока она опускается перед тобой на колени. Осторожно коснувшись твоего [pc.cock+], она подносит своё лицо к твоему паху, и ты чувствуешь её горячее дыхание на своём члене, пока она задумчиво произносит: [nyan.speech(Значит, мне просто... В смысле, вот так надо делать?)]
 		#ENDIF
 	</p>
 	<p>
-		Letting out a high-pitched moan, Nyan presses her [nyan.lips+] against the [pc.cockHead+] of your cock, and after she's delivered a quick kiss, she pulls back and declares, [nyan.speech(That wasn't too bad... Now If I just...)] 
+			Издавая высокий стон, Нян прижимает свой [nyan.lips+] к [pc.cockHead+] вашего члена, и после того, как она целует его, она отступает и заявляет, [nyan.speech(Это было не так уж плохо... Теперь, если я просто...)] 
 	</p>
 	<p>
-		Giving her some encouraging words, you watch as Nyan plants a slow series of kisses up the length of your [pc.cock+], before starting to clumsily lick and nuzzle into it. Building up her confidence, she finally decides to take your [pc.cock+] into her mouth, and after letting out a determined little moan, she opens wide and wraps her [nyan.lips+] around your throbbing shaft.
+		Подбодрив её парой слов, ты наблюдаешь, как Nyan медленно покрывает поцелуями твой [pc.cock+], прежде чем начать неумело лизать и прижиматься к нему носом. Набравшись уверенности, она наконец решается взять твой [pc.cock+] в рот, и, издав решительный тихий стон, широко открывает рот и обхватывает своей [nyan.lips+] твой пульсирующий ствол.
 	</p>
 	<p>
-		Gargling and spluttering, Nyan discovers that it's harder to suck cock than she expected, and almost as quickly as she started, she pulls back and allows your [pc.cock+] to slide out of her mouth. Thankfully, however, the cat-girl's move turns out to be just so that she can undo her bra, and after taking it off, she shyly shows off her [nyan.breastSize] breasts, before quickly leaning in and taking your [pc.cock+] into her mouth. Placing her hands on your [pc.legs+], Nyan starts making muffled, gargled moans as she does her best to give you head...
+		Похлебывая и захлебываясь, Nyan понимает, что сосать член куда сложнее, чем она ожидала. Почти так же быстро, как и начала, она отстраняется, позволяя твоему [pc.cock+] выскользнуть изо рта. К счастью, этот маневр кошкодевочки был нужен лишь для того, чтобы расстегнуть лифчик; сняв его, она застенчиво демонстрирует свою [nyan.breastSize] грудь, а затем быстро подается вперед и берет твой [pc.cock+] в рот. Положив ладони на твои [pc.legs+], Nyan начинает издавать приглушенные, булькающие стоны, изо всех сил стараясь доставить тебе удовольствие минетчиком...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_CUNNILINGUS"><![CDATA[
 	<p>
-		Thinking that it would be fun for Nyan to experience what it's like to perform oral, you ask her if she'd like to return the favour. Blushing at the suggestion, your still-horny girlfriend lets out an excited giggle and replies, [nyan.speech(That sounds fun!)]
+		Подумав, что Nyan будет весело попробовать оральный секс, ты спрашиваешь, не хочет ли она ответить тебе взаимностью. Покраснев от такого предложения, твоя все еще возбужденная девушка издает радостный смешок и отвечает: [nyan.speech(Звучит весело!)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			As you stand up and expose your pussy to her,
+			Когда ты встаешь и подставляешь ей свою киску,
 		#ELSE
-			As you sit down on the edge of the bed and expose your pussy to her,
+			Когда ты садишься на край кровати и подставляешь ей свою киску,
 		#ENDIF
-		 the realisation of what she's about to do suddenly dawns on the shy cat-girl, and she mutters, [nyan.speech(I-I've never... You know... I mean...)]
+			до застенчивой кошкодевочки внезапно доходит, что именно она собирается сделать, и она бормочет: [nyan.speech(Я... я никогда... Ну, ты понимаешь... В смысле...)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Reassuring her that her lack of experience isn't an issue, you let Nyan go at her own pace, and patiently wait as she kneels down behind your feral [pc.legRace]'s body. After reaching up to experimentally touch your [pc.pussy+], she leans forwards, and you feel her hot breath on your rear end as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
-		#ELSE
-			Reassuring her that her lack of experience isn't an issue, you let Nyan go at her own pace, and patiently wait as she kneels down before you. After experimentally touching your [pc.pussy+], she lowers her face towards your groin, and you feel her hot breath between your legs as she muses aloud, [nyan.speech(So should I just... I mean, do I do it like this?)]
+			Уверяя ее, что отсутствие опыта — не проблема, ты позволяешь Nyan действовать в ее собственном темпе и терпеливо ждешь, пока она опустится на колени позади твоего дикого [pc.legRace]. Осторожно коснувшись твоей [pc.pussy+], она наклоняется вперед, и ты чувствуешь ее горячее дыхание на своей заднице, пока она размышляет вслух: [nyan.speech(Так мне просто... В смысле, вот так делать?)]
+			#ELSE
+			Успокоив её тем, что отсутствие опыта — вовсе не проблема, ты позволяешь Nyan двигаться в её собственном темпе и терпеливо ждёшь, пока она опускается перед тобой на колени. Проверив на ощупь твой [pc.pussy+], она приближает своё лицо к твоему паху, и ты чувствуешь её горячее дыхание между ног, пока она задумчиво произносит: [nyan.speech(Значит, мне просто... В смысле, вот так надо?)]
 		#ENDIF
 	</p>
 	<p>
-		Letting out a high-pitched moan, Nyan presses her [nyan.lips+] against your [pc.labia+], and after she's delivered a quick kiss, she pulls back and declares, [nyan.speech(That wasn't too bad... Now If I just...)] 
+	Издавая высокий стон, Nyan прижимается своими [nyan.lips+] к твоему [pc.labia+], а после быстрого поцелуя отстраняется и заявляет: [nyan.speech(Было не так уж плохо... Теперь, если я просто...)] 
 	</p>
 	<p>
-		Giving her some encouraging words, you watch as Nyan plants a slow series of kisses on your [pc.labia+], before starting to clumsily lick and nuzzle into your [pc.clit+]. Building up her confidence, she suddenly pulls back in order to take off her bra, and after shyly showing off her [nyan.breastSize] breasts, she leans back down and passionately presses her lips against your [pc.labia]. Taking hold of your [pc.legs+], she slides her tongue into your pussy and begins enthusiastically eating you out...
+	Подбадривая её словами, ты наблюдаешь, как Nyan осыпает твой [pc.labia+] чередой медленных поцелуев, прежде чем начать неумело лизать и прижиматься носом к твоему [pc.clit+]. Набираясь уверенности, она внезапно отстраняется, чтобы снять лифчик, и, застенчиво демонстрируя свою [nyan.breastSize] грудь, снова склоняется к тебе, страстно прижимаясь губами к твоему [pc.labia]. Обхватив твой [pc.legs+], она просовывает язык в твою киску и с энтузиазмом принимается тебя отсасывать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_SLEEP_START"><![CDATA[
 	<p>
-		Feeling as though both you and Nyan could do with some rest, you ask if she's satisfied from receiving her first orgasm from you. Still panting as she catches her breath, Nyan's cheeks flush red as you ask this, and with a cute little smile on her face, she giggles and replies, [nyan.speech(Yes! That was really fun... I think I need to have a quick shower before bed, though. D-Do you want to have a wash too? You are going to sleep here, aren't you?)]
+	Чувствуя, что и ты, и Nyan нуждаетесь в отдыхе, ты спрашиваешь, довольна ли она своим первым оргазмом, полученным от тебя. Nyan всё ещё тяжело дышит, пытаясь перевести дух, и при твоём вопросе её щеки заливаются румянцем; с милой улыбкой на лице она хихикает и отвечает: [nyan.speech(Да! Это было очень весело... Хотя, думаю, мне нужно быстро принять душ перед сном. Т-ты тоже хочешь помыться? Ты ведь будешь спать здесь, правда?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_FACE_SITTING"><![CDATA[
 	<p>
-		Sensing that Nyan would like to go again, you suggest that she sit on your face so that you can eat her out for a second time. Blushing at the suggestion, she lets out an excited giggle and replies, [nyan.speech(That sounds fun!)]
+		Чувствуя, что Nyan хочет продолжения, ты предлагаешь ей сесть тебе на лицо, чтобы ты мог отсосать ей во второй раз. Покраснев от такого предложения, она издает восторженный смешок и отвечает: [nyan.speech(Звучит весело!)]
 	</p>
 	<p>
-		As you lie back on her bed, the realisation of what she's about to do suddenly dawns on your shy girlfriend, and she mutters, [nyan.speech(I've never... I mean, I've read about this, but...)]
+		Когда ты откидываешься на её кровати, до твоей застенчивой девушки внезапно доходит, что именно она собирается сделать, и она бормочет: [nyan.speech(Я никогда... то есть, я читала об этом, но...)]
 	</p>
 	<p>
-		Reassuring her that her lack of experience isn't an issue, you tell Nyan to kneel down over your face. Following your instructions, the cute cat-girl drops down into position, before suddenly letting her legs give way and smothering your mouth with her [nyan.pussy+]. Finding yourself in the perfect position, you reach up and take hold of Nyan's [nyan.assSize] ass as you start to enthusiastically eat her out. Happily grinding her [nyan.pussy+] down over your face, your girlfriend starts letting out a series of lewd moans as you orally service her...
+		Уверяя её, что отсутствие опыта — вовсе не проблема, ты просишь Nyan опуститься на колени над твоим лицом. Следуя твоим указаниям, милая кошкодевочка принимает нужную позу, но вдруг поддается, и её [nyan.pussy+] накрывает твой рот. Оказавшись в идеальном положении, ты тянешься вверх и сжимаешь [nyan.assSize] задницу Nyan, начиная с энтузиазмом ласкать её языком. Счастливо прижимая свою [nyan.pussy+] к твоему лицу, твоя девушка начинает издавать серию похотливых стонов, пока ты доставляешь ей оральное удовольствие...
 	</p>
 	]]>
 	</htmlContent>
@@ -960,20 +956,20 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SECOND_SEX"><![CDATA[
 	<p>
-		Once again, Nyan collapses back on her bed, panting, [nyan.speech(Wow... That was... Wow...)]
+		В очередной раз Nyan падает на кровать, тяжело дыша: [nyan.speech(Вау... Это было... Вау...)]
 	</p>
 	<p>
-		Leaning down to plant a quick kiss on your girlfriend's lips, you can't help but smile as she blushes and sighs, [nyan.speech(I never knew it could feel so good...)]
+		Наклонившись, чтобы быстро поцеловать свою девушку в губы, ты невольно улыбаешься, когда она краснеет и вздыхает: [nyan.speech(Я и не знала, что это может быть так приятно...)]
 	</p>
 	<p>
-		With the cute cat-girl clearly at the point of complete exhaustion, you realise that there's little hope of taking her for round three. Giving her a moment in which to recover, you wonder if she's going to ask you to spend the night with her...
+		Видя, что милая кошкодевочка явно на грани полного изнеможения, ты понимаешь, что надежды на третий раунд почти нет. Дав ей немного времени на восстановление, ты гадаешь: не попросит ли она тебя остаться с ней на всю ночь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SECOND_SEX_SLEEP_START"><![CDATA[
 	<p>
-		Feeling as though both you and Nyan could do with some rest, you ask if she's satisfied from the multiple orgasms you've just given her. Still panting as she catches her breath, Nyan's cheeks flush red as you ask this, and with a cute little smile on her face, she giggles and replies, [nyan.speech(Yes! That was really fun... I think I need to have a quick shower before bed, though. D-Do you want to have a wash too? You are going to sleep here, aren't you?)]
+		Чувствуя, что и ты, и Nyan явно нуждаетесь в отдыхе, ты спрашиваешь, достаточно ли ей тех многочисленных оргазмов, что ты ей подарил. Nyan всё ещё тяжело дышит, пытаясь восстановить дыхание, и при твоих словах её щеки заливаются румянцем; с милой улыбкой на лице она хихикает и отвечает: [nyan.speech(Да! Это было очень весело... Хотя, думаю, мне нужно быстро принять душ перед сном. Т-ты тоже хочешь помыться? Ты ведь останешься здесь спать, правда?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -983,19 +979,19 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_POST_SEX_SLEEP"><![CDATA[
 	<p>
-		The pleading look on your girlfriend's face is too much for you to say no to, and so you agree to both have a wash and sleep over here with her. Accompanying Nyan into her ensuite, the two of you share a very hasty shower, before quickly drying off and returning to her bed. Pulling on a pair of panties and an oversized T-shirt, Nyan excitedly jumps under the covers, before asking you to turn off the lights and join her.
+		Умоляющий взгляд твоей девушки слишком соблазнителен, чтобы ты мог отказать, поэтому ты соглашаешься и помыться вместе, и остаться у неё на ночь. Проследуя за Nyan в её ванную, вы принимаете очень быстрый душ, после чего наспех вытираетесь и возвращаетесь в постель. Натянув трусики и безразмерную футболку, Nyan с восторгом запрыгивает под одеяло и просит тебя выключить свет и присоединиться к ней.
 	</p>
 	<p>
-		Doing as she asks, you soon find yourself under the covers with your girlfriend, and as she snuggles up to you and falls asleep, she sighs, [nyan.speech(Thanks, [pc.name]... I love you...)] 
+		Исполнив её просьбу, ты вскоре оказываешься под одеялом рядом с любимой. Когда она прижимается к тебе и засыпает, она тихо шепчет: [nyan.speech(Спасибо, [pc.name]... Я люблю тебя...)] 
 	</p>
 	<p>
-		Hugging the cute cat-girl close to your body, you return her sentiments and join her in falling asleep...
+		Прижав милую кошкодевочку к себе, ты отвечаешь ей взаимностью и засыпаешь вместе с ней...
 	</p>
 	<p>
 		...
 	</p>
 	<p>
-		The next thing you know, you're waking up in Nyan's bed the next morning, and as you roll over, you discover that your girlfriend is nowhere to be seen. Sitting up and yawning, you realise that there's a smell of freshly-baked goods in the air, which tells you exactly where Nyan must be...
+		Не успеешь оглянуться, как наступает следующее утро, и ты просыпаешься в постели Nyan. Перевернувшись на бок, ты обнаруживаешь, что твоей девушки нигде нет. Сев в кровати и сладко зевнув, ты улавливаешь в воздухе аромат свежей выпечки, который точно подсказывает, где сейчас Nyan...
 	</p>
 	]]>
 	</htmlContent>
@@ -1005,20 +1001,19 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_MORNING"><![CDATA[
 	<p>
-		After quickly using the ensuite bathroom to freshen up, you head to the apartment's kitchen. Being of an open-plan design, you're able to see that both Nyan and [nyanmum.name] are in the kitchen right from the moment you enter the dining room. 
-		As you [pc.walk] over to say good morning, you see that both of the cat-girls have got their backs to you; Nyan is standing in front of the sink, while [nyanmum.name] is sitting on one of three high stools which are positioned on the dining-room side of the kitchen's worktop. 
+		Быстро освежившись в ванной, ты направляешься на кухню. Благодаря открытой планировке квартиры, ты видишь Nyan и [nyanmum.name] на кухне сразу же, как только заходишь в столовую. 
+		Когда ты [pc.walk] к ним, чтобы поздороваться, ты замечаешь, что обе кошкодевочки стоят к тебе спиной: Nyan стоит у раковины, а [nyanmum.name] сидит на одном из трёх высоких табуретов, расположенных со стороны столовой. 
 	</p>
 	<p>
-		Instead of her usual blouse and miniskirt combo, you see that Nyan is wearing [nyan.a_slotClothing(TORSO_UNDER, true)], and over the top of that, she's wearing [nyan.a_slotClothing(TORSO_OVER, true)]. As you approach, you see that she's just finished drying up, and as she turns and sees you, she throws you a happy smile and exclaims, [nyan.speech([pc.Name]! I was just about to come and wake you! Look, I made pastries!)]
+		Вместо привычного сочетания блузки и мини-юбки на Nyan надет [nyan.a_slotClothing(TORSO_UNDER, true)], а поверх него — [nyan.a_slotClothing(TORSO_OVER, true)]. Приблизившись, ты видишь, что она только что закончила вытирать посуду; обернувшись и увидев тебя, она радостно улыбается и восклицает: [nyan.speech([pc.Name]! Я как раз собиралась пойти разбудить тебя! Смотри, я приготовила выпечку!)]
+	</p>
+	<p>		Услышав приветствие дочери, [nyanmum.name] оборачивается и одаривает тебя удивительно соблазнительной улыбкой. Вместо платья, которое было на ней вчера, сейчас на ней [nyanmum.a_slotClothing(TORSO_UNDER, true)] и [nyanmum.a_slotClothing(LEG, true)], которые вместе отлично подчеркивают её мускулистые руки и ноги. Похлопав по табурету рядом с собой, она заявляет: [nyanmum.speech(Ты сядешь здесь, рядом со мной, [pc.name].)]
 	</p>
 	<p>
-		Alerted to your presence by her daughter's greeting, [nyanmum.name] turns around and flashes you a surprisingly-seductive smile. Instead of the dress which she was wearing last night, she's now clothed in [nyanmum.a_slotClothing(TORSO_UNDER, true)] and [nyanmum.a_slotClothing(LEG, true)], which together show off a good deal of her muscular arms and legs. Patting the stool next to her, she declares, [nyanmum.speech(You'll sit here by me, [pc.name].)]
+		Подозрительно хмурясь на мать, Nyan берет тарелку с выпечкой с другого конца кухни и ставит её на столешницу перед барными стульями. Хотя она явно недовольна тем, как мать рассадила гостей, Nyan не успевает возразить, как [nyanmum.name] поддразнивает её: [nyanmum.speech(Вы двое вчера прямо не разлей вода были, а? Клянусь, я же просила тебя не стонать слишком громко, милая, но когда я уже ложилась в постель, всё, что я слышала, это: <i>«~Ах!~ Да! Продолжай, [pc.name]!»</i>)]
 	</p>
 	<p>
-		Frowning at her mother in a suspicious manner, Nyan picks up the plate of pastries from the other side of the kitchen and places them on the counter in front of the stools. Although she's clearly not happy about her mother's seating arrangements, Nyan doesn't manage to make an objection before [nyanmum.name] teases, [nyanmum.speech(You two were really going at it last night, weren't you? I could have sworn that I asked you not to moan too loudly, sweetie, but as I got into bed, all I could hear was <i>'~Aah!~ Yes! Keep going, [pc.name]!'</i>)]
-	</p>
-	<p>
-		Furiously blushing as her mother mimics her voice, Nyan storms around to the other side of the counter and sits down on the stool furthest from [nyanmum.name]. With just the one stool now left vacant in between mother and daughter, you sit down and finally take the opportunity to say good morning to the two of them.
+		Яростно краснея от того, что мать пародирует её голос, Nyan обходит столешницу и усаживается на стул подальше от [nyanmum.name]. Теперь между матерью и дочерью остался лишь один свободный стул, и ты садишься, наконец-то используя возможность поздороваться с обеими.
 	</p>
 	]]>
 	</htmlContent>
@@ -1028,50 +1023,50 @@
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_MORNING_END"><![CDATA[
 	<p>
-		As the three of you start to eat the delicious pastries which Nyan has freshly baked, you quickly find yourself being the target of both Nyan's and [nyanmum.namePos] affections. Sliding her hand up your [pc.leg(true)], Nyan's mother teases, [nyanmum.speech(So, what were you doing to my daughter to make her moan like that?)]
+		Пока вы втроем едите вкуснейшую выпечку, которую только что испекла Nyan, ты внезапно оказываешься в центре внимания и со стороны Nyan, и со стороны [nyanmum.namePos]. Проводя рукой по твоему [pc.leg(true)], мать Nyan дразнит: [nyanmum.speech(Ну и что же ты делал с моей дочкой, раз она так стонала?)]
 	</p>
 	<p>
-		[nyan.speech(Mum! Stop it!)] Nyan objects, before swatting her mother's hand away from you and pouting at her.
+		[nyan.speech(Мам! Прекрати!)] — протестует Nyan, сбивая руку матери со своего тела и обиженно дуя губы.
 	</p>
 	<p>
-		[nyanmum.speech(I'm just making conversation, dear,)] [nyanmum.name] replies with a laugh, [nyanmum.speech(In any case, you certainly seem to have gained a lot of confidence. It's like you're a brand new person; the old Nyan would never have invited her [pc.girlfriend] into her room, nor cum for them like you did last night!)]
+		[nyanmum.speech(Я просто поддерживаю разговор, дорогуша,)] [nyanmum.name] отвечает со смехом, [nyanmum.speech(В любом случае, ты явно стал куда увереннее в себе. Словно совсем другой человек; прежняя Nyan никогда бы не пригласила [pc.girlfriend] к себе в комнату и не кончила бы ради неё так, как ты вчера ночью!)]
 	</p>
 	<p>
-		[nyan.speech(Mum! Why do you have to talk about sex all the time?!)] Nyan huffs. As she crosses her arms and pouts once again, you find yourself silently agreeing with the first part of what [nyanmum.name] has just said. Nyan hasn't stuttered once so far, and while you assume that's mainly due to the fact that she's at her most comfortable within her own home, her increased confidence is definitely noticeable.
+		[nyan.speech(Мам! Ну почему ты вечно говоришь о сексе?!)] фыркает Nyan. Когда она снова скрещивает руки на груди и дует губы, ты ловишь себя на том, что молча согласен с первой частью слов [nyanmum.name]. Nyan до сих пор ни разу не запнулась, и хотя ты полагаешь, что это в основном потому, что дома она чувствует себя максимально расслабленно, её возросшая уверенность определённо бросается в глаза.
 	</p>
 	<p>
-		By this time there's only one pastry left on the plate before you, and before you or Nyan can make a move, [nyanmum.name] reaches over and picks it up. With a devious smirk on her face, she makes sure that Nyan sees her placing her hand on your [pc.leg(true)] once again, and teases, [nyanmum.speech(You don't mind if we share this, do you, sweetie? Mummy's got a bit of a sweet tooth, and she hasn't been satisfied for quite some time...)]
+		К этому моменту на тарелке перед вами осталась всего одна выпечка, и прежде чем ты или Nyan успеваете что-то предпринять, [nyanmum.name] тянется вперёд и забирает её. С лукавой ухмылкой на лице она делает всё, чтобы Nyan заметила, как она снова кладет руку тебе на [pc.leg(true)], и дразнит: [nyanmum.speech(Ты ведь не против, если мы разделим её, милый? У мамочки тяга к сладенькому, а она уже довольно давно не получала своего...)]
 	</p>
 	<p>
 		Clearly understanding her mother's double entendre, Nyan blushes and exclaims, [nyan.speech(You always treat your partners like this! Have you tried asking [pc.name] what <i>[pc.she]</i> wants?! What if [pc.she] only wants to be <i>my</i> [pc.girlfriend], not yours?!)]
 	</p>
 	<p>
-		[nyanmum.speech(Oh, sweetie!)] [nyanmum.name] laughs, clearly having tricked Nyan into saying exactly what she wanted. Placing the pastry back down on the plate, she teases, [nyanmum.speech(I was only talking about sharing your next date with me. I'd like to get to know [pc.name] a little better, after all. Sharing [pc.herHim] between us, though? That's an interesting idea of yours, Nyan...)]
+		[nyanmum.speech(Ох, милая!)] [nyanmum.name] смеется — очевидно, она заманила Nyan в ловушку, заставив сказать именно то, что ей было нужно. Поставив пирожное обратно на тарелку, она дразнит: [nyanmum.speech(Я всего лишь говорила о том, чтобы ты разделила свое следующее свидание со мной. В конце концов, мне бы хотелось получше узнать [pc.name]. Но делить [pc.herHim] на двоих? А у тебя интересные идеи, Nyan...)]
 	</p>
 	<p>
-		With her cheeks turning bright scarlet, your girlfriend stutters for the first time this morning, [nyan.speech(I-I didn't mean that! Y-You were implying that... I mean, that's w-what you were really thinking, wasn't it?!)]
+		С ярко-алым румянцем на щеках твоя девушка впервые за это утро начинает заикаться: [nyan.speech(Я... я не это имела в виду! Т-ты намекала на то, что... то есть, ты ведь именно это и думала, да?!)]
 	</p>
 	<p>
-		[nyanmum.speech(I'm sorry, sweetie, you know I was only teasing,)] [nyanmum.name] apologises, sensing that she might have gone a little too far. Standing up and stepping over to give her daughter a big hug, she reminds her, [nyanmum.speech(Anyway, you promised that you'd spend the day with me today, remember?)]
+		[nyanmum.speech(Прости, милая, ты же знаешь, я просто дразнюсь,)] [nyanmum.name] извиняется, чувствуя, что, возможно, зашла слишком далеко. Встав и подойдя к дочери, чтобы крепко её обнять, она напоминает: [nyanmum.speech(В любом случае, ты же обещала, что проведешь сегодняшний день со мной, помнишь?)]
 	</p>
 	<p>
-		Letting out a deep sigh, Nyan returns her mother's hug for a moment, before stepping back and addressing you, [nyan.speech(Sorry about asking you to leave so soon, [pc.name], but I <i>did</i> promise mum that we'd spend the entire day together...)]
+		Тяжело вздохнув, Nyan на мгновение обнимает мать в ответ, а затем отстраняется и обращается к тебе: [nyan.speech(Прости, что попросила тебя уйти так рано, [pc.name], но я <i>обещала</i> маме, что мы проведем весь день вместе...)]
 	</p>
 	<p>
-		Telling your girlfriend that you understand, you say goodbye to [nyanmum.name], before allowing Nyan to accompany you to the door. Thanking her for the pastries, as well as for the wonderful night you had together, you open the front door and prepare to leave. Shyly smiling at you, Nyan replies, [nyan.speech(Sorry for my mum's behaviour, and thanks for last night, I really had so much fun with you... We can do this again, right? Although I guess next time my mum's going to tag along...)]
+		Сказав своей девушке, что ты всё понимаешь, ты прощаешься с [nyanmum.name], позволяя Nyan проводить тебя до двери. Поблагодарив её за выпечку и за чудесную ночь, проведённую вместе, ты открываешь входную дверь, готовясь уходить. Застенчиво улыбаясь тебе, Nyan отвечает: [nyan.speech(Прости за поведение моей мамы, и спасибо за прошлую ночь, мне было так весело с тобой... Мы ведь сможем повторить, да? Хотя, думаю, в следующий раз моя мама тоже пристроится к нам...)]
 	</p>
 	<p>
-		Telling Nyan that you'd love to do this again, and that it'll be no problem having her mum come along for the next date, you prepare to say goodbye...
+		Сказав Nyan, что ты с радостью повторишь это свидание и что её маме не составит труда составить вам компанию в следующий раз, ты готовишься попрощаться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POST_DATE_APARTMENT_BEDROOM_MORNING_END_LEAVE"><![CDATA[
 	<p>
-		Taking a gentle hold of your girlfriend, you lean in and kiss her goodbye. After happily returning your kiss, Nyan tells you once again how much fun she had last night, before saying, [nyan.speech(Oh, by the way, it'd be risky with my mum around for you to visit me here. She can get a bit, well, forceful with people, and I don't think I can stop her...)]
+		Нежно обняв свою девушку, ты наклоняешься и целуешь её на прощание. Счастливо ответив на поцелуй, Nyan снова говорит тебе, как весело ей было прошлой ночью, а затем добавляет: [nyan.speech(О, кстати, если рядом будет моя мама, тебе может быть рискованно приходить ко мне сюда. Она бывает немного, ну... напористой с людьми, и я не думаю, что смогу её остановить...)]
 	</p>
 	<p>
-		Reassuring Nyan that you'll only come to see her at her store or to pick her up for your next date, you exit her apartment, and after saying one last goodbye, you head down the stairs and return to the apartment's foyer. Letting out a contented sigh, you head out of the front door and find yourself back in the streets of Dominion, wondering what to do next...
+		Успокоив Nyan тем, что ты будешь приходить к ней только в магазин или забирать её для следующего свидания, ты выходишь из её квартиры. Сказав последнее «прощай», ты спускаешься по лестнице и возвращаешься в вестибюль дома. С довольным вздохом ты выходишь за входную дверь и оказываешься на улицах Dominion, раздумывая, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>

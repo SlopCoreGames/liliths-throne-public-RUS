@@ -3,51 +3,51 @@
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_START"><![CDATA[
 	<p>
-		As you enter yet another of Dominion's many parks, you see a curious scene unfolding before you. Several centaur-pulled carts are lined up nearby, and the naked, muscular centaurs who are responsible for hauling them are busily unloading what look to be at least a hundred saplings. A team of fox, dog, and squirrel-morphs are getting to work planting these trees, while a smartly-dressed [natalya.race] is impatiently trotting up and down the path a short distance away. Noticing that the centaurs have heavy metal collars clasped around their necks, you realise that they're slaves, and that the [natalya.race] must be their overseer.
+		Когда ты входишь в очередной из многочисленных парков Dominion, перед твоими глазами разворачивается любопытная сцена. Неподалеку выстроилась вереница телег, запряженных кентаврами, а обнаженные мускулистые кентавры, ответственные за их перевозку, вовсю разгружают не менее сотни саженцев. Команда морфов-лис, собак и белок принимается за посадку деревьев, в то время как элегантно одетая [natalya.race] нетерпеливо расхаживает взад-вперед по тропинке неподалеку. Заметив на шеях кентавров тяжелые металлические ошейники, ты понимаешь, что они — рабы, а [natalya.race], должно быть, их надсмотрщица.
 	</p>
 	<p>
-		As she trots over to stand beside one of the carts, you're able to see that while the slaves under her command are almost
+		Когда она подходит, чтобы встать рядом с одной из телег, ты замечаешь, что хотя рабы под её началом почти
 		#IF(game.isMetricSizes())
-			 two and a half metres
+			 два с половиной метра
 		#ELSE
-			 eight feet
+			 восемь футов
 		#ENDIF
-		 tall, the lithe, lilac-skinned demon is barely pushing past
+		 ростом, гибкая лилокожея демоница едва достигает
 		#IF(game.isMetricSizes())
-			 a hundred and seventy centimetres from head to hoof.
+			 ста семидесяти сантиметров от макушки до копыт.
 		#ELSE
-			 five and a half feet from head to hoof.
+			 пяти с половиной футов от макушки до копыт.
 		#ENDIF
-		 In another contrast to her naked slaves, this [natalya.race] is dressed to impress, as on the upper, humanoid part of her body, a very smart feminine blazer and shirt are restraining her round, [natalya.cupSize]-cup breasts, while a large, black skirt conceals whatever genitalia she might have at the rear of her feral horse's body. Her silken, black hair is tied up into a smart bun, which is being held in place by a pair of royal-purple hair sticks. Perched on the bridge of her cute feminine nose, she's wearing a pair of black, thick-rimmed glasses, and as she realises that it's going to take a while for the carts to be fully unloaded, she rolls her grey-green eyes and audibly tuts, [natalya.speech(You boys sure are taking your time with this...)]
+		 В отличие от её нагих рабов, эта [natalya.race] одета с иголочки: верхняя, человеческая часть её тела облачена в элегантный женский блейзер и блузку, которые с трудом сдерживают её округлую грудь [natalya.cupSize]-го размера, в то время как длинная чёрная юбка скрывает всё, что может быть у неё между задних частей лошадиного тела. Её шелковистые чёрные волосы собраны в аккуратный пучок и закреплены парой шпилек королевского пурпурного цвета. На переносице её милого женственного носа красуются чёрные очки в толстой оправе. Осознав, что полная разгрузка телег займёт немало времени, она закатывает свои серо-зелёные глаза и громко цокает языком: [natalya.speech(Ну вы, мальчики, и волыняете...)]
 	</p>
 	<p>
-		Having not seen you, and with both her slaves and the team of planters not paying her any attention, the [natalya.race] suddenly moves around so that her rear end is pressed up against the corner of the cart behind her. Thinking that nobody is looking, the pretty [natalya.race] starts biting her lip and audibly panting in excitement. Staring longingly at the centaurs' huge, sheathed cocks and massive, dangling balls, she begins to lewdly grind her skirt-covered asshole up and down against the cart...
+		Не замечая тебя, а поскольку ни рабы, ни команда садовников не обращают на неё внимания, [natalya.race] внезапно разворачивается так, что её зад прижимается к углу стоящей позади телеги. Полагая, что никто не смотрит, симпатичная [natalya.race] начинает покусывать губу и громко, возбуждённо дышать. Томно глядя на огромные, скрытые в препуциях члены и массивные, свисающие яйца кентавров, она начинает похотливо тереться своей прикрытой юбкой задницей вверх-вниз о край телеги...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_FILLY_START"><![CDATA[
 	<p>
-		As you enter yet another of Dominion's many parks, you see a curious scene unfolding before you. Several centaur-pulled carts are lined up nearby, and the naked, muscular centaurs who are responsible for hauling them are busily unloading what look to be at least a hundred saplings. A team of fox, dog, and squirrel-morphs are getting to work planting these trees, while the familiar, smartly-dressed figure of Mistress Natalya is pacing back and forth nearby. She notices you in the same moment that you see her, and so immediately trots over to you.
+		Когда ты входишь в очередной из многочисленных парков Dominion, перед твоими глазами разворачивается любопытная сцена. Неподалеку выстроилась вереница повозок, запряженных кентаврами, а обнаженные мускулистые кентавры, ответственные за их перевозку, вовсю разгружают не менее сотни саженцев. Команда морфов-лис, собак и белок принимается за посадку деревьев, а неподалеку расхаживает знакомая, элегантно одетая фигура госпожи Натальи. Она замечает тебя в тот же миг, когда ты видишь её, и тут же бодрым шагом направляется к тебе.
 	</p>
 	<p>
 		#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-			[natalya.speech(Good [style.mule], I see that you're wearing your collar,)] she remarks, before snapping,
+			[natalya.speech(Хорошая [style.mule], я вижу, ты в ошейнике,)] — замечает она, прежде чем прикрикнуть,
 		#ELSE
-			[natalya.speech(Bad [style.mule], I see that you're not wearing your collar,)] she growls, before snapping,
+			[natalya.speech(Плохая [style.mule], я вижу, что ты без ошейника,)] — рычит она, прежде чем прикрикнуть,
 		#ENDIF
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			 [natalya.speech(Your timing is excellent. I was just thinking how good it'd be to have some dirty [style.mule] slut give me a good rimjob. Follow me, [style.mule].)]
+			 [natalya.speech(Ты очень вовремя. Я как раз думала о том, как было бы здорово, если бы какая-нибудь грязная [style.mule] шлюшка хорошенько отлизала мне анус. Иди за мной, [style.mule].)]
 		#ELSE
-			 [natalya.speech(Your timing is excellent, although it's a shame that your mouth appears to be inaccessible. I was just thinking how good it'd be to have some dirty [style.mule] slut give me a good rimjob, but a handjob will have to do. Follow me, [style.mule].)]
+			 [natalya.speech(Ты очень вовремя, хотя и жаль, что твой рот кажется недоступным. Я как раз думала о том, как было бы здорово, если бы какая-нибудь грязная [style.mule] шлюшка хорошенько отлизала мне анус, но придется обойтись ручной работой. Иди за мной, [style.mule].)]
 		#ENDIF
 	</p>
 	<p>
-		Obediently following your Mistress behind a cluster of nearby bushes, you find that your position conceals the two of you from the rest of the park, offering you complete privacy. Wasting no time, the [natalya.race] hikes up her skirt, presenting you with both her puffy, ebony-skinned asshole and huge, rapidly-hardening horse-cock.
+		Послушно следуя за своей госпожой за ближайшие кусты, ты обнаруживаешь, что это место скрывает вас обоих от остального парка, обеспечивая полную приватность. Не теряя времени, [natalya.race] задирает юбку, являя тебе свой пухлый, иссиня-черный анус и огромный, стремительно твердеющий лошадиный член.
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			 Bucking her hips back towards you, she impatiently snaps, [natalya.speech(You know the drill, [style.mule]. Kiss my ass and then get your tongue in there!)]
+			 Подавшись тазом назад к тебе, она нетерпеливо рявкает: [natalya.speech(Ты знаешь правила, [style.mule]. Поцелуй мою задницу, а потом суй туда язык!)]
 		#ELSE
-			 Bucking her hips back towards you, she impatiently snaps, [natalya.speech(You know the drill, [style.mule]. Your mouth may be covered, but I'll accept you burying your face in my ass instead of a kiss. After that, drop down and start stroking my cock!)]
+			 Подавшись тазом назад к тебе, она нетерпеливо рявкает: [natalya.speech(Ты знаешь правила, [style.mule]. Твой рот может быть занят, но я согласна, если ты вместо поцелуя уткнешься лицом в мою задницу. А после этого — опускайся ниже и начинай ласкать мой член!)]
 		#ENDIF
 	</p>
 	]]>
@@ -55,122 +55,121 @@
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_START_FILLY_ANILINGUS"><![CDATA[
 	<p>
-		Performing the customary display of submission, you obediently lean in to plant a big, wet kiss on Natalya's puffy asshole. Knowing how quickly she can get annoyed, you don't waste any time and quickly move on to passionately licking and making out with her musky doughnut.
+		Совершая привычный акт подчинения, ты послушно наклоняешься, чтобы оставить большой влажный поцелуй на припухлом анусе Натальи. Зная, как быстро она может разгневаться, ты не теряешь ни секунды и сразу переходишь к страстному вылизыванию её мускусного колечка.
 	</p>
 	<p>
-		[natalya.speech(Yes, [style.mule]! ~Mmm!~ That's it!)] she moans as your [pc.lips] press lewdly against her rear entrance. Darting out your [pc.tongue+], you start eagerly giving your Mistress a rimjob, causing her to let out a series of lewd, high-pitched moans...
+		[natalya.speech(Да, [style.mule]! ~Ммм!~ Вот так!)] — стонет она, когда твои [pc.lips] похотливо прижимаются к её заднему входу. Высунув свой [pc.tongue+], ты с жадностью начинаешь делать Госпоже римjob, заставляя её издавать серию похотливых, высоких стонов...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_START_FILLY_HANDJOB"><![CDATA[
 	<p>
-		Although not able to kiss it as per the customary display of submission, you obediently lean in to press your face against Natalya's puffy asshole. Knowing how quickly she can get annoyed, you don't waste any time and quickly move on to drop down beside her. Reaching up to take hold of her thick, throbbing horse-cock, you wrap your [pc.fingers] around her huge, hot shaft and give it a loving stroke. As a thick, musky spurt of precum oozes out of the flared head of her horse-like cock, she calls out, [natalya.speechNoEffects(~Ooh!~ Yes! Keep stroking it like that, [style.mule]! ~Mmm!~)]
+		Хотя ты не можешь поцеловать его, как того требует обычный ритуал подчинения, ты послушно прижимаешься лицом к припухлому анусу Натальи. Зная, как быстро она может разгневаться, ты не теряешь времени и быстро опускаешься рядом с ней. Протянув руку, чтобы обхватить её толстый, пульсирующий конский член, ты обвиваешь свой [pc.fingers] вокруг его огромного горячего ствола и ласково проводишь по нему рукой. Когда из расширенной головки её лошачьего члена вырывается густая мускусная струйка предэякулята, она вскрикивает: [natalya.speechNoEffects(~Ох!~ Да! Продолжай ласкать его вот так, [style.mule]! ~Ммм!~)]
 	</p>
 	<p>
-		Once again doing as you're told, you use your [pc.hands] to enthusiastically stroke your Mistress's cock. Running your touch down to the leaky head, you allow the slimy precum to drool out all over your [pc.fingers], before massaging it down the length of her throbbing shaft.
-	</p>
-	<p>
-		[natalya.speechNoEffects(~Aah!~ Fuck! That's a good [style.mule]! ~Ooh!~ Keep going!)] Natalya moans as you settle into a steady rhythm of rubbing your [pc.hands] up and down the length of her musky precum-coated cock...
+		Снова послушно выполняя приказ, ты с энтузиазмом ласкаешь [pc.hands] своей Госпожи. Проводя рукой по влажной головке, ты позволяешь склизкой предэякуляту сочиться прямо на твой [pc.fingers], а затем втираешь её по всей длине её пульсирующего члена.
+	</p><p>
+		[natalya.speechNoEffects(~Аах!~ Блядь! Вот это отличный [style.mule]! ~Ооох!~ Не останавливайся!)] Наталья стонет, пока ты входишь в ровный ритм, поглаживая свой [pc.hands] вверх и вниз по всей длине её покрытого мускусным предэякулятом члена...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_START_END_EARLY"><![CDATA[
 	<p>
-		You really don't want to see any more of this lewd [natalya.race]'s grinding, and so after turning away from the whole commotion, you set off into the park and continue on your way...
+		Тебе до смерти хочется прекратить созерцание этой похотливой [natalya.race], терзающей себя, поэтому, отвернувшись от всего этого действа, ты отправляешься вглубь парка, продолжая свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_CAUGHT"><![CDATA[
 	<p>
-		Wanting to see what happens next, you watch the demonic centauress as she grinds her butt against the cart. Within moments she's letting out quiet moans, before moving on to start groping her [natalya.cupSize]-cup breasts.
+		Желая увидеть, что будет дальше, ты наблюдаешь за демонической кентаврицей, пока она вжимается задницей в телегу. Спустя мгновение она начинает тихо стонать, а затем переходит к тому, чтобы приняться жадно мять свои груди в чашечках [natalya.cupSize].
 	</p>
 	<p>
-		As she bites her lip to suppress another horny moan, she just so happens to finally turn to look your way. As she sees that you've been watching her this whole time, she immediately drops her hands back to her sides and takes a flustered step away from the cart.
+		Прикусив губу, чтобы подавить очередной возбужденный стон, она внезапно поворачивается в твою сторону. Заметив, что ты всё это время подглядывал за ней, она тут же опускает руки и в замешательстве отступает от телеги.
 	</p>
 	<p>
-		[natalya.speech(What do you think you're doing?)] she angrily snaps at you. Trotting right up to where you're standing, she tries the turn the situation around by declaring, [natalya.speech(You dirty pervert! How dare you stare at me like that! You owe me an apology, and I'll have it from you right this instant!)]
+		[natalya.speech(Ты что, творишь?!)] — сердито рявкает она на тебя. Подходя вплотную к тому месту, где ты стоишь, она пытается перехватить инициативу, заявляя: [natalya.speech(Грязный извращенец! Как ты смеешь так на меня пялиться! Ты просто обязан извиниться, и немедленно!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_CAUGHT_END_EARLY"><![CDATA[
 	<p>
-		Telling the [natalya.race] that she shouldn't act so lewd in a public place if she doesn't want to be watched, you turn away from her and [pc.walk] away. Ignoring the demon's flustered, angry response, you set off into the park and continue on your way...
+		Говоря [natalya.race], что ей не стоит так распускаться на людях, если она не хочет, чтобы за ней подглядывали, ты отворачиваешься и [pc.walk] прочь. Игнорируя смущенный и злой ответ демона, ты углубляешься в парк и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_APOLOGY"><![CDATA[
 	<p>
-		Being a little caught off-guard by the [natalya.race]'s aggressive behaviour, you decide to just do as she says. Apologising for watching her grind her ass up against the cart, you try to put her at ease by pointing out that nobody else saw her doing it.
+		Немного застигнутый врасплох агрессивным поведением [natalya.race], ты решаешь просто сделать так, как она говорит. Извинившись за то, что засмотрелся на то, как она теснит задницей телегу, ты пытаешься ее успокоить, замечая, что больше никто этого не видел.
 	</p>
 	<p>
-		[natalya.speech(So that's what you were interested in, were you?)] she retorts. Flashing you a disgusted look, she pointedly asks, [natalya.speech(I bet you were imagining what my asshole looks like, weren't you? Admit it.)]
+		[natalya.speech(Так вот чем ты интересовался, да?)] — огрызается она. Бросив на тебя брезгливый взгляд, она едко спрашивает: [natalya.speech(Бьюсь об заклад, ты представлял, как выглядит моя дырочка, верно? Признайся!)]
 	</p>
 	<p>
-		Seeing that she could potentially be backed up by half a dozen muscular centaurs, you decide that annoying this [natalya.race] would be a bad idea, and so simply go along with what she's saying. Admitting that you were imagining how her asshole looks, you apologise to her once again.
+		Понимая, что за ней может стоять целая дюжина мускулистых кентавров, ты решаешь, что злить эту [natalya.race] — плохая затея, и просто соглашаешься с ней. Признав, что действительно представлял её анус, ты снова извиняешься перед ней.
 	</p>
 	<p>
-		[natalya.speech(I knew it,)] she triumphantly declares. Much to your surprise, the disgusted sneer on her face quickly transforms into a devious grin, and after quickly licking her lips she orders, [natalya.speech(Follow me, pervert. I'll have you submit to me and show you your true place, and then you can give me a proper apology...)]
+		[natalya.speech(Так и знала,)] — торжествующе заявляет она. К твоему удивлению, брезгливая гримаса на её лице быстро сменяется лукавой ухмылкой, и, быстро облизав губы, она приказывает: [natalya.speech(Следуй за мной, извращенец. Я заставлю тебя подчиниться и покажу твое истинное место, а потом ты принесешь мне достойные извинения...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_APOLOGY_END_EARLY"><![CDATA[
 	<p>
-		Feeling like this is getting out of hand, you tell the [natalya.race] that you need to be going, before turning away from her and [pc.walking] away. Ignoring the demon's flustered, angry response, you set off into the park and continue on your way...
+		Чувствуя, что ситуация выходит из-под контроля, ты говоришь [natalya.race], что тебе пора идти, после чего отворачиваешься от неё и [pc.walking] прочь. Игнорируя смущённую и разгневанную реакцию демона, ты отправляешься вглубь парка, продолжая свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_BUSHES"><![CDATA[
 	<p>
-		Deciding to obey, you tell the [natalya.race] that you'll do what she wants. After flashing you a smirk, she reaches into the nearby cart and produces a large carrier bag, before trotting off and leading you over to some nearby bushes. Following her around to the other side of the foliage, you find that your position conceals the two of you from the rest of the park, offering you complete privacy.
+		Решив подчиниться, ты говоришь [natalya.race], что сделаешь всё, как она хочет. Услышав это, она лишь самодовольно ухмыляется, достаёт из ближайшей тележки большой пакет, а затем семенит вперёд, увлекая тебя за собой к кустам. Проследив за ней, ты обнаруживаешь, что густая листва скрывает вас от остального парка, даря вам полную приватность.
 	</p>
 	<p>
-		[natalya.speech(This is what you wanted to see then?)] the [natalya.race] says, before reaching back and hiking up her skirt. As you're positioned behind her, you get an unobstructed line of sight to her now-exposed rear end, and by swishing her tail to one side, she grants you a view of her puffy, feral horse-anus. Instead of the pussy that you were expecting beneath this, however, she has a pair of huge, dangling balls and a massive, bestial horse-cock that's beginning to push out of its sheath. Matching the shade of the horse-like hair which covers her feral lower body, her animalistic genitalia are mostly dark black in colour, although there is a small amount of pale lilac mottling on her shaft. Bucking her hips a couple of times, the demon relaxes and contracts her ebony-skinned doughnut as she throws the carry bag to your feet and teases, [natalya.speech(Open it and take out what's inside.)]
+		[natalya.speech(Значит, это то, что ты хотел увидеть?)] — говорит [natalya.race], прежде чем завести руку за спину и задрать юбку. Поскольку ты стоишь позади неё, перед тобой открывается беспрепятственный вид на её обнажённую задницу, а отбросив хвост в сторону, она даёт тебе рассмотреть своё припухлое, звериное лошадиное анус. Однако вместо киски, которую ты ожидал увидеть под юбкой, там обнаруживаются огромные свисающие яйца и массивный, звериный лошадиный член, который уже начинает высовываться из препуция. По цвету его животные гениталии почти совпадают с конским волосом, покрывающим её дикое тело, — они почти иссиня-чёрные, лишь на стволе виднеются небольшие светло-лиловые пятна. Пару раз дёрнув бёдрами, демон расслабляется, и её угольно-чёрное кольцо ануса то сжимается, то разжимается; она бросает сумку к твоим ногам и дразнит: [natalya.speech(Открой её и достань то, что внутри.)]
 	</p>
 	<p>
-		Doing as you're told once again, you open the bag to see that it contains a gigantic, [style.size(56)] ribbed dildo. Stomping her rear hoofs down against the grass, she pushes her hips back and demands, [natalya.speech(Submit to me, slut. Submit to me and call me 'Mistress Natalya', and then I'll allow you to shove my toy into my ass. After that, I think I'll empty my balls onto your face.)]
+		Снова подчиняясь приказу, ты открываешь сумку и видишь в ней гигантский, [style.size(56)] ребристый дилдо. Громко топая задними копытами по траве, она подаётся бёдрами назад и требует: [natalya.speech(Преклонись предо мной, сучка. Признай власть и зови меня «Госпожа Наталья», и тогда я позволю тебе вставить мою игрушку мне в задницу. А после этого, думаю, я опустошу свои яйца прямо тебе на лицо.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_BUSHES_END_EARLY"><![CDATA[
 	<p>
-		Although you were happy to go along with things up until this point, Natalya's final order is too much for you. Saying that you're not into that kind of thing, you quickly [pc.step] back around to the other side of the bushes and [pc.walk] away. Ignoring the demon's flustered, angry response, you set off into the park and continue on your way...
+		Хотя до этого момента ты с радостью потакал её желаниям, последний приказ Натальи оказывается для тебя чересчур. Заявив, что ты не по такой части, ты быстро [pc.step] перебегаешь на другую сторону кустов и [pc.walk] прочь. Игнорируя растерянный и разгневанный ответ демона, ты направляешься вглубь парка, продолжая свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_BUSHES_SUBMIT"><![CDATA[
 	<p>
-		Doing as you're told, you completely submit to the [natalya.race] and call her 'Mistress Natalya'. After briefly smirking at your surrender, she impatiently snaps, [natalya.speech(Go on then, bitch, shove that toy into my ass! Oh, and don't you <i>dare</i> touch my asshole! That's reserved for my fully trained [style.mules], and while I'm confident that I'll have you join their ranks some day, you're not there yet.)]
+		Повинуясь приказу, ты полностью подчиняешься [natalya.race] и называешь её «Госпожа Наталья». Слегка ухмыльнувшись в ответ на твою покорность, она нетерпеливо рявкает: [natalya.speech(Ну же, сучка, засунь эту игрушку мне в зад! О, и только не <i>смей</i> трогать моё анусное отверстие! Оно зарезервировано для моих полностью обученных [style.mules], и хотя я уверена, что когда-нибудь ты встанешь в их ряды, пока ты ещё к этому не готова.)]
 	</p>
 	<p>
-		With that, Natalya lifts her hips and relaxes her puffy, ebony-skinned asshole, presenting herself fully to you so that you can do as she says. As you lift the gigantic dildo up to her rear entrance, you suddenly notice the true, demonic nature of her asshole, for although it looks like a regular horse anus at first glance, you now see that its surface is beginning to glisten with clear, slimy lubricant.
+		С этими словами Наталья приподнимает бёдра и расслабляет свой пухлый анус с иссиня-чёрной кожей, полностью открываясь тебе, чтобы ты мог исполнить её приказ. Когда ты подносишь гигантский дилдо к её заднему входу, ты внезапно замечаешь истинную демоническую природу её ануса: хотя на первый взгляд он и кажется обычным, теперь ты видишь, что его поверхность начинает блестеть от прозрачной скользкой смазки.
 	</p>
 	<p>
-		Pushing the tip of the dildo into her demonic hole, you manage to draw a lewd, high-pitched moan from between Natalya's lips. Panting and sighing, the [natalya.race] looks back over her shoulder and bites her lip as you force the first of the dildo's three bulbous ribs past the puffy rim of her asshole and into her slimy rear entrance. At this moment, the dildo reveals itself to be enchanted and starts vigorously vibrating, causing Natalya to let out another shuddering moan. Unable to cope with the pleasure, she impatiently pushes her hips back, forcing you to obscenely stretch out the lithe [natalya.race]'s puffy asshole as you shove the remaining two ribs of the dildo inside of her.
+		Когда ты вгоняешь кончик дилдо в её демоническую дырочку, тебе удается вырвать из уст Натальи похотливый, высокий стон. Тяжело дыша и вздыхая, [natalya.race] оглядывается через плечо и прикусывает губу, пока ты проталкиваешь первое из трех утолщений дилдо сквозь припухший край её ануса в её скользкое заднее отверстие. В этот момент оказывается, что дилдо зачарован: он начинает неистово вибрировать, заставляя Наталью издать еще один дрожащий стон. Не в силах совладать с удовольствием, она нетерпеливо подается бедрами назад, заставляя тебя бесстыдно растягивать припухлый анус гибкой [natalya.race], пока ты заталкиваешь в неё оставшиеся два утолщения.
 	</p>
 	<p>
-		By now, a thick stream of precum is drooling out of her massive, fully-erect horse-cock. Moaning in delight as her vibrating toy stimulated the insides of her asshole, she demands, [natalya.speech(Get down and stroke my cock, slut! ~Mmm!~ Fuck! I'm going to give you a facial you'll never forget!)]
+		К этому моменту густая струйка предэякулята уже стекает с её массивного, полностью эрегированного лошадиного члена. Стоная от восторга, пока вибрирующая игрушка стимулирует внутренности её ануса, она требует: [natalya.speech(Спустись на колени и ласкай мой член, сучка! ~Ммм!~ Блять! Я устрою тебе такой минет, который ты никогда не забудешь!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_BUSHES_SUBMIT_START_SEX"><![CDATA[
 	<p>
-		As Natalya's throbbing cock continues to leak musky precum all over the floor, you obediently drop down beside her and reach up to take hold of her thick, throbbing horse-cock. Wrapping your [pc.fingers] around her huge, hot shaft, you give it a loving stroke, and can't help but gasp in surprise as it instantly jumps up in excitement. In a further display of exhilaration, Natalya starts rapidly pawing at the ground with one of her front hoofs, and as a thick, musky spurt of precum oozes out of the flared head of her horse-like cock, she calls out, [natalya.speechNoEffects(~Ooh!~ Yes! Keep stroking it like that, slut! ~Mmm!~ You're forbidden from using anything but your hands! ~Aah!~ I'll train you into a good, obedient [style.mule]!)]
+		Пока пульсирующий член Натальи продолжает источать мускусную предэякуляцию прямо на пол, ты послушно опускаешься рядом с ней и протягиваешь руки, чтобы обхватить её толстый, пульсирующий конский член. Окутав её огромный горячий ствол своей [pc.fingers], ты ласково проводишь по нему рукой и невольно ахаешь от неожиданности, когда он мгновенно вздрагивает от возбуждения. В порыве восторга Наталья начинает быстро подбивать землю одной из передних копыт; и когда из расширенной головки её лошадиного члена вырывается густая мускусная струя смазки, она восклицает: [natalya.speechNoEffects(~Ооо!~ Да! Продолжай ласкать его вот так, сучка! ~Ммм!~ Тебе запрещено использовать что-либо, кроме рук! ~Ааах!~ Я выдрессирую из тебя хорошую, послушную [style.mule]!)]
 	</p>
 	<p>
-		Once again doing as you're told, you use your [pc.hands] to enthusiastically stroke your Mistress's cock. Running your touch down to the leaky head, you allow the slimy precum to drool out all over your [pc.fingers], before massaging it down the length of her throbbing shaft.
+		Снова послушно выполняя приказ, ты с энтузиазмом ласкаешь [pc.hands] своей Госпожи. Проводя рукой по влажной головке, ты позволяешь склизкой предэякуляту сочиться прямо на твой [pc.fingers], а затем втираешь её по всей длине её пульсирующего члена.
 	</p>
 	<p>
-		[natalya.speechNoEffects(~Aah!~ Fuck! You'll make a good [style.mule]! ~Ooh!~ Keep going!)] Natalya moans as you settle into a steady rhythm of rubbing your [pc.hands] up and down the length of her musky precum-coated cock...
+		[natalya.speechNoEffects(~Ааах!~ Блядь! Из тебя выйдет отличная [style.mule]! ~Ооо!~ Не останавливайся!)] — стонет Наталья, пока ты ловишь steady ритм, поглаживая своей [pc.hands] вдоль всего её покрытого мускусной смазкой члена...
 	</p>
 	]]>
 	</htmlContent>
@@ -178,95 +177,95 @@
 	<htmlContent tag="NATALYA_ENCOUNTER_BUSHES_SUBMIT_POST_SEX"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_playerReceivedNatalyaFacial))
 		<p>
-			Now that Natalya has had her fun, she smirks down at you and arrogantly remarks, [natalya.speech(With a little more training, you'll make a fine [style.mule]. Now, remove my dildo for me; I want to hurry back and check on my boys.)]
+			Насладившись, Наталья самодовольно ухмыляется тебе сверху вниз и высокомерно замечает: [natalya.speech(При должном обучении из тебя выйдет прекрасная [style.mule]. А теперь вытащи мой дилдо; хочу поскорее вернуться и проверить моих мальчиков.)]
 		</p>
 		<p>
-			Turning her feral horse-like body around, Natalya flicks her tail to one side and presents you with her puffy, horse-like asshole. The massive ribbed dildo is still buried deep inside of it, and as you move forwards, you hear that it's still incessantly buzzing away as it vibrates inside of your Mistress's butt. As you reach forwards and take hold of the base, Natalya lets out a deep moan and commands, [natalya.speech(Pull it out slowly, slut! ~Ooh!~ And remember that you're forbidden from touching my ass! ~Mmm!~ That will be a reward later on in your training!)]
+			Развернувшись всем своим диким, похожим на лошадиный телом, Наталья отбрасывает хвост в сторону и подставляет тебе свою припухлую, лошадиную задницу. Массивный ребристый дилдо всё еще глубоко торчит внутри, и когда ты подаешься вперед, ты слышишь его непрестанное жужжание — он неистово вибрирует в заднице твоей Госпожи. Когда ты тянешься вперед и берешься за основание, Наталья издает глубокий стон и приказывает: [natalya.speech(Вытаскивай его медленно, сучка! ~Ох!~ И помни, что тебе запрещено трогать мою задницу! ~Ммм!~ Это станет наградой позже, во время твоего обучения!)]
 		</p>
 		<p>
-			Eager to obey Natalya's order, you set to work on slowly pulling the huge dildo out of her ass. Her puffy rear entrance lewdly spreads out around each of the three thick ridges as you gently slide the massive toy out of her, causing a series of deeply erotic moans to drift out of her mouth. As the dildo finally slips free, you can't help but let out a hungry [pc.moan] of your own as you find yourself staring at your Mistress's puffy, glistening asshole.
+			Стремясь повиноваться приказу Натальи, ты принимаешься медленно вытягивать огромный дилдо из её задницы. Её припухлое анальное отверстие похотливо растягивается вокруг каждого из трех толстых ребер, пока ты осторожно выводишь массивную игрушку наружу, заставляя её издавать череду глубоких эротичных стонов. Когда дилдо наконец освобождается, ты невольно издаешь свой собственный голодный [pc.moan], завороженно глядя на припухлую, блестящую задницу своей Госпожи.
 		</p>
 	#ELSE
 		<p>
-			Although Natalya has had her fun, she is quite clearly displeased with your refusal to receive her facial, and arrogantly remarks, [natalya.speech(I'll work on your disobedience later, bitch. For now, just remove my dildo for me; I want to hurry back and check on my boys.)]
+			Хотя Наталья и развлеклась, она явно недовольна тем, что ты отказалась принять её минет, и высокомерно замечает: [natalya.speech(С твоим непослушанием я разберусь позже, сучка. А пока просто вытащи мой дилдо; я хочу поскорее вернуться и проверить своих мальчиков.)]
 		</p>
 		<p>
-			Turning her feral horse-like body around, Natalya flicks her tail to one side and presents you with her puffy, horse-like asshole. The massive ribbed dildo is still buried deep inside of it, and as you move forwards, you hear that it's still incessantly buzzing away as it vibrates inside of your Mistress's butt. As you reach forwards and take hold of the base, Natalya lets out a deep moan and commands, [natalya.speech(Pull it out slowly, slut! ~Ooh!~ And remember that you're forbidden from touching my ass! ~Mmm!~ Bad [pc.girls] like you aren't deserving of it!)]
+			Развернувшись всем своим диким, лошадиным телом, Наталья отбрасывает хвост в сторону и подставляет тебе свою пухлую, похожую на лошадиную дырочку. Массивный ребристый дилдо всё еще глубоко запрятан внутри, и когда ты делаешь шаг вперед, ты слышишь его непрестанное жужжание — он неистово вибрирует в заднице твоей Госпожи. Когда ты тянешься вперед и берешься за основание, Наталья издает глубокий стон и приказывает: [natalya.speech(Вытаскивай его медленно, сучка! ~Ох!~ И помни, что тебе запрещено трогать мою задницу! ~Ммм!~ Такая плохая [pc.girls], как ты, этого не заслуживает!)]
 		</p>
 		<p>
-			Not wanting to annoy Natalya any more than you've already done so, you set to work on slowly pulling the huge dildo out of her ass. Her puffy rear entrance lewdly spreads out around each of the three thick ridges as you gently slide the massive toy out of her, causing a series of deeply erotic moans to drift out of her mouth. As the dildo finally slips free, you can't help but let out a hungry [pc.moan] of your own as you find yourself staring at your Mistress's puffy, glistening asshole.
+			Не желая раздражать Наталью еще сильнее, ты принимаешься медленно вытягивать огромный дилдо из её задницы. Её пухлое отверстие похотливо растягивается вокруг каждого из трех толстых ребер, пока ты осторожно выводишь массивную игрушку наружу, заставляя её извергать череду глубоких эротичных стонов. Когда дилдо наконец выскальзывает, ты невольно издаешь собственный голодный [pc.moan], завороженно глядя на пухлую, блестящую дырочку своей Госпожи.
 		</p>
 	#ENDIF
 	<p>
-		Before you're tempted to touch it, Natalya quickly pulls her skirt back down to conceal her lower body, depriving you of the erotic sight of both her slutty asshole and massive horse-like cock. Grabbing the dildo from out of your [pc.hands], she returns it to the carrier bag and trots off, calling over her shoulder as she goes, [natalya.speech(Come on, bitch! Follow your Mistress!)]
-	</p>
+		Прежде чем у тебя появляется соблазн прикоснуться к ней, Наталья быстро одергивает юбку, скрывая нижнюю часть тела и лишая тебя эротического зрелища её похотливой задницы и массивного лошадиного члена. Выхватив дилдо из твоих [pc.hands], она убирает его обратно в сумку и уходит галопом, бросая через плечо: [natalya.speech(Живее, сучка! Следуй за своей Госпожой!)]
+		</p>
 	<p>
-		There's little else for you to do except obey Natalya's command and follow her back to where you first saw her...
+	Тебе остается лишь одно — повиноваться приказу Натальи и следовать за ней туда, где ты впервые ее увидел...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_BUSHES_SUBMIT_POST_SEX_END"><![CDATA[
 	<p>
-		As you trail along in your Mistress's wake, she purposefully swishes her tail back in your direction, wafting the heady, potent musk still being given off by her cock back in your direction. For the first time since meeting her, she turns to give you the briefest glimpse of a genuine smile, before trotting along and leading you back over to the carts.
+	Пока ты плетешься следом за своей Госпожой, она нарочно взмахивает хвостом в твою сторону, обдавая тебя дурманящим, густым мускусом, который все еще исходит от ее члена. Впервые с момента знакомства она оборачивается, чтобы одарить тебя мимолетной, искренней улыбкой, после чего бодрым шагом ведет тебя обратно к повозкам.
 	</p>
 	<p>
-		As you head back to where you first saw your new Mistress, you see that Natalya's centaur slaves are obediently standing in front of the now-empty carts, stoically staring straight ahead as they await their owner's return. Quickly trotting over to them, your Mistress sets about strapping each of them into their harnesses. Exactly like she was doing to you just moments ago, Natalya makes a show of flicking her horse-like tail in their direction, and as one of the centaurs breathes in her musky scent, he starts restlessly pawing the ground. Putting an immediate stop to this excitable behaviour by flashing him a furious glare, the small [natalya.race] tightly buckles up his harness before turning back to address you, [natalya.speech([style.Mule]! My boys and I shall be on our way now, but before we go, I have something for you.)]
+	Когда ты возвращаешься к месту первой встречи со своей новой Госпожой, ты видишь, что рабы-кентавры Натальи послушно стоят перед теперь уже пустыми повозками, стоически глядя прямо перед собой в ожидании возвращения хозяйки. Быстро подбежав к ним, Госпожа принимается затягивать на каждом из них упряжь. Точно так же, как она делала это с тобой всего мгновение назад, Наталья демонстративно взмахивает своим лошадиным хвостом в их сторону, и как только один из кентавров вдыхает ее мускусный аромат, он начинает беспокойно рыть землю копытом. Мгновенно пресекая это возбужденное поведение яростным взглядом, маленькая [natalya.race] туго затягивает его упряжь, после чего поворачивается к тебе: [natalya.speech([style.Mule]! Мы с моими мальчиками отправляемся в путь, но прежде чем мы уйдем, у меня есть кое-что для тебя.)]
 	</p>
 	<p>
-		Reaching into one of her blazer's pockets, she produces a business card and carelessly tosses it for you to catch as she declares, [natalya.speech(The address at which you may find me is printed on that business card; I expect to see you there at some point in the future so that I may train you into one of my obedient [style.mules]. Do not disappoint me, bitch.)]
+		Засунув руку в карман своего блейзера, она достает визитку и небрежно бросает ее тебе, чтобы ты поймал, и заявляет: [natalya.speech(Адрес, по которому меня можно найти, напечатан на этой визитке; я ожидаю увидеть тебя там в будущем, чтобы превратить в одну из моих послушных [style.mules]. Не разочаруй меня, сучка.)]
 	</p>
 	<p>
-		With that, the haughty [natalya.race] trots off to the cart at the front of the queue, making a point of going the long way around so as to walk in front of each of her centaurs and flick her tail in their direction one last time. As she passes, you hear her tease under her breath, [natalya.speech(One of you will be getting some of this later...)]
+		С этими словами высокомерная [natalya.race] trots к повозке в начале очереди, намеренно выбирая длинный путь, чтобы пройти перед каждым из своих кентавров и напоследок вильнуть хвостом в их сторону. Проходя мимо, ты слышишь, как она поддразнивает тебя вполголоса: [natalya.speech(Кому-то из вас достанется кусочек этого позже...)]
 	</p>
 	<p>
-		Gracefully leaping into the back of the wagon, Natalya calls out for her slaves to get moving, and with a rumble of wheels and creak of leather, they turn around and speed off out of the park. Looking down at the business card in your [pc.hand], you read that their company, 'Dominion Express', is located in Dominion's Warehouse District, so if you wanted to seek out Natalya and continue your training under her, that's where you'd need to head...
+		Грациозно запрыгнув в кузов повозки, Наталья приказывает своим рабыням шевелиться, и под грохот колес и скрип кожи они разворачиваются и стремительно уносятся прочь из парка. Глядя на визитку в своей [pc.hand], ты читаешь, что их компания «Dominion Express» находится в складском районе Dominion; так что, если ты хочешь разыскать Наталью и продолжить обучение под её началом, тебе нужно направляться именно туда...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_END_PARK"><![CDATA[
 	<p>
-		With the recent memory of your time with your new Mistress at the forefront of your mind, you set off into the park and continue on your way...
+		С ярким воспоминанием о встрече с новой Госпожой в голове, ты отправляешься вглубь парка и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_FILLY_SEX_ANAL"><![CDATA[
 	<p>
-		Having had her fun, Natalya orders, [natalya.speech(Kiss my ass one last time, then we're done here, [style.mule].)]
+		Насладившись игрой, Наталья приказывает: [natalya.speech(Поцелуй мою задницу в последний раз, и на этом всё, [style.mule].)]
 	</p>
 	<p>
-		Doing as you're told, you plant one last, passionate kiss on your Mistress's musky, ebony-skinned doughnut, before [pc.stepping] back and allowing her to pull her skirt back down. Snapping her fingers, she commands, [natalya.speech(Follow me, [style.mule]. Let's see if my boys have finished their work.)]
+		Повинуясь приказу, ты оставляешь последний страстный поцелуй на мускусной, эбеновой плоти её дырочки, после чего [pc.stepping] назад, позволяя ей одернуть юбку. Щелкнув пальцами, она командует: [natalya.speech(Следуй за мной, [style.mule]. Посмотрим, закончили ли мои мальчики свою работу.)]
 	</p>
 	<p>
-		Once more obediently doing as you're told, you fall in behind your Mistress as she returns to the spot where you first saw her.
+		Снова послушно выполняя приказ, ты плетешься следом за Госпожой, пока она возвращается к тому самому месту, где ты впервые её увидел.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_FILLY_SEX_HANDJOB"><![CDATA[
 	<p>
-		Having had her fun, Natalya throws a wet wipe down to you and orders, [natalya.speech(Clean my cock, then we're done here, [style.mule].)]
+		Насладившись, Наталия бросает тебе влажную салфетку и приказывает: [natalya.speech(Вытри мой член, и на этом закончим, [style.mule].)]
 	</p>
 	<p>
-		Doing as you're told, you tear open the packet and pull out the wet wipe, before dutifully managing to clean most, but not all, of the slimy, musky cum from off of her thick, softening shaft. Once done, you stand up and [pc.step] back, allowing her to pull her skirt back down. Snapping her fingers, she commands, [natalya.speech(Follow me, [style.mule]. Let's see if my boys have finished their work.)]
+		Повинуясь приказу, ты разрываешь упаковку и достаешь салфетку, после чего старательно вытираешь почти всю скользкую, мускусную сперму с её толстого, постепенно обмякающего члена. Закончив, ты встаешь и [pc.step] назад, позволяя ей одернуть юбку. Щелкнув пальцами, она командует: [natalya.speech(Следуй за мной, [style.mule]. Посмотрим, закончили ли мои мальчики свою работу.)]
 	</p>
 	<p>
-		Once more obediently doing as you're told, you fall in behind your Mistress as she returns to the spot where you first saw her.
+		Снова послушно выполняя приказ, ты плетешься следом за Госпожой, пока она возвращается к тому самому месту, где ты впервые её увидел.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="NATALYA_ENCOUNTER_FILLY_END"><![CDATA[
 	<p>
-		As you trail along in your Mistress's wake, she purposefully swishes her tail back in your direction, wafting the heady, potent musk still being given off by her cock back in your direction. As you head back to where you first saw your Mistress, you see that Natalya's centaur slaves are obediently standing in front of the now-empty carts, stoically staring straight ahead as they await their owner's return. Quickly trotting over to them, your Mistress sets about strapping each of them into their harnesses. Exactly like she was doing to you just moments ago, Natalya makes a show of flicking her horse-like tail in their direction, and as one of the centaurs breathes in her musky scent, he starts restlessly pawing the ground. Putting an immediate stop to this excitable behaviour by flashing him a furious glare, the small [natalya.race] tightly buckles up his harness before turning back to address you, [natalya.speech([style.Mule]! My boys and I shall be on our way now, but we expect to see you again soon. I'm sure some of my boys would love to have you service them.)]
+		Пока ты плетешься следом за своей Госпожой, она нарочно взмахивает хвостом в твою сторону, обдавая тебя дурманящим, густым мускусом, который все еще исходит от ее члена. Когда вы возвращаетесь к тому месту, где ты впервые увидел Госпожу, ты замечаешь, что рабы-кентавры Натальи послушно стоят перед теперь уже пустыми повозками, стоически глядя прямо перед собой в ожидании возвращения хозяйки. Быстро подбежав к ним, Госпожа принимается затягивать на каждом из них упряжь. Точно так же, как она делала это с тобой всего мгновение назад, Наталья демонстративно хлещет их лошадиным хвостом, и когда один из кентавров вдыхает ее мускусный аромат, он начинает беспокойно копаться копытом в земле. Мгновенно пресекая это возбужденное поведение яростным взглядом, миниатюрная [natalya.race] туго затягивает его ремни, после чего поворачивается к тебе: [natalya.speech([style.Mule]! Мы с моими мальчиками отправляемся в путь, но ждем новой встречи совсем скоро. Уверена, парочка моих парней с удовольствием бы позволила тебе прислуживать им.)]
 	</p>
 	<p>
-		With that, the haughty [natalya.race] trots off to the cart at the front of the queue, making a point of going the long way around so as to walk in front of each of her centaurs and flick her tail in their direction one last time. As she passes, you hear her tease under her breath, [natalya.speech(One of you will be getting some of this later...)]
+		С этими словами высокомерная [natalya.race] trots к повозке в начале очереди, намеренно выбирая длинный путь, чтобы пройти перед каждым из своих кентавров и напоследок вильнуть хвостом в их сторону. Проходя мимо, ты слышишь, как она поддразнивает тебя вполголоса: [natalya.speech(Кому-то из вас достанется кусочек этого позже...)]
 	</p>
 	<p>
-		Gracefully leaping into the back of the wagon, Natalya calls out for her slaves to get moving, and with a rumble of wheels and creak of leather, they turn around and speed off out of the park. With your Mistress having departed, there's little else for you to do except continue on your way through the park...
+		Грациозно запрыгнув в кузов повозки, Наталья приказывает рабам трогаться, и под грохот колес и скрип кожи они разворачиваются и стремительно уносятся прочь из парка. Поскольку твоя Госпожа уехала, тебе остается лишь продолжать свой путь по парку...
 	</p>
 	]]>
 	</htmlContent>

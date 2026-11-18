@@ -2,48 +2,48 @@
 <dialogue>
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	<p>
-		Although prostitutes and brothels can be found all throughout Dominion, the area that you find yourself in is dedicated entirely to the sex industry.
-		 Every building that you pass seems to be a brothel; their large glass windows, illuminated with red lights, being used to display men and women of all races, who dance and wink at passersby in an attempt to lure them into their establishment.
-		 Neon lights, which you suspect to be arcane-enchanted, shine out in many different colours all around you, either bearing the name of the brothel that they're affixed to, or displaying some kind of generic slogan.
-	</p>
+		Хотя проститутки и бордели встречаются по всему Dominion, район, в котором ты оказался, целиком и полностью посвящен секс-индустрии.
+		Каждое здание, мимо которого ты проходишь, кажется борделем; их огромные стеклянные витрины, подсвеченные красным светом, служат для демонстрации мужчин и женщин всех рас, которые танцуют и подмигивают прохожим, пытаясь заманить их в свои заведения.
+		Неоновые огни, которые, как ты подозреваешь, зачарованы Арканой, сияют вокруг тебя самыми разными цветами, либо неся на себе название борделя, к которому они прикреплены, либо отображая какой-нибудь распиаренный слоган.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OUTSIDE_NO_STORM"><![CDATA[
 	<p>
-		The city's prostitutes aren't limited to the confines of these brothels, and as you walk through the area, you pass countless scantily clad girls, who wink at you and call out their prices for oral, anal, and vaginal sex.
-		 Just like all of the other streets in Dominion, this one is very busy, and, looking around, you see numerous members of the surrounding crowds heading into one brothel or another, or handing over money to one of the street prostitutes before ducking off with them down a nearby alleyway.
-	</p>
+		Городские проститутки не ограничиваются стенами этих борделей, и пока ты идешь по району, мимо тебя проходят бесчисленные полуголые девицы, которые подмигивают тебе и выкрикивают цены на оральный, анальный и вагинальный секс.
+		Как и все остальные улицы Dominion, эта очень оживленная: оглядевшись, ты видишь множество людей из толпы, направляющихся в тот или иной бордель, или передающих деньги уличным проституткам, прежде чем скрыться с ними в ближайшем переулке.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OUTSIDE_STORM"><![CDATA[
 	<p>
-		Due to the ongoing arcane storm, there are no prostitutes out on the street, and, much like the rest of Dominion, the entire area is completely deserted.
-	</p>
+		Из-за непрекращающегося арканного шторма на улицах нет проституток, и, как и во всем остальном Dominion, этот район кажется совершенно пустынным.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OUTSIDE_FINAL"><![CDATA[
 	<p>
-		In the very centre of the red-light district, stands a building that's far larger than all the others.
-		 From the many red lights in the windows, as well as the pink neon sign above the doorway, reading 'Angel's Kiss', you can safely assume that it's a brothel.
-		 As you get closer, you see that there's an information board out in front of the entrance, which reads:
+		В самом центре квартала красных фонарей стоит здание, которое намного больше всех остальных.
+		По множеству красных огней в окнах и розовой неоновой вывеске над входом с надписью «Поцелуй ангела», можно без сомнений предположить, что это бордель.
+		Когда ты подходишь ближе, ты замечаешь перед входом информационную доску, на которой гласит:
 	</p>
 	<p style='text-align:center;'><i>
-		<b>Angel's Kiss</b><br/>
-		As the official Enforcer-sanctioned administration centre for the red-light district, we offer prostitution licenses. Please enquire within for full details!<br/>
+		<b>Поцелуй ангела</b><br/>
+		Как официальный административный центр квартала, санкционированный Enforcer, мы выдаем лицензии на проституцию. За подробностями обращайтесь внутри!<br/>
 	</i></p>
 	<p>
-		Beneath this, someone's added;
+		Ниже кто-то приписал от руки:
 	</p>
 	<p style='text-align:center;'><i>
-		Please remember that we're a brothel too! You don't need to be worried about the Enforcers; if anything, this is the safest brothel to use!<br/>
-		(Please, at least give us a try!)
+		Помните, что мы еще и бордель! Вам не стоит беспокоиться об Enforcer; если уж на то пошло, это самый безопасный бордель в округе!<br/>
+		(Пожалуйста, ну хотя бы попробуйте нас!)
 	</i></p>
 	<p>
-		As you finish reading the sign, you become aware of the fact that all of the people passing by are giving 'Angel's Kiss' a wide berth.
-		 It appears as though being designated as the 'Enforcer-sanctioned administration centre' is bad for business...
+		Закончив читать вывеску, ты замечаешь, что все проходящие мимо люди стараются обходить «Поцелуй ангела» по широкой дуге.
+		Похоже, статус «официального административного центра, санкционированного Enforcer» не слишком-то идет бизнесу...
 	</p>
 	]]>
 	</htmlContent>

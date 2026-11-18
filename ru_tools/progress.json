@@ -77,7 +77,16 @@
     "res/txt/places/dominion/lilayasHome/room_rose.xml",
     "res/txt/places/dominion/lilayasHome/spa.xml",
     "res/txt/places/dominion/lilithsTower/exterior.xml",
-    "res/txt/places/dominion/nightlife/lights_out.xml"
+    "res/txt/places/dominion/nightlife/lights_out.xml",
+    "res/txt/places/dominion/nightlife/theWateringHole.xml",
+    "res/txt/places/dominion/nyansApartment/core.xml",
+    "res/txt/places/dominion/nyansApartment/finalRepeatDate.xml",
+    "res/txt/places/dominion/nyansApartment/firstDate.xml",
+    "res/txt/places/dominion/nyansApartment/firstDoubleDate.xml",
+    "res/txt/places/dominion/nyansApartment/repeatDate.xml",
+    "res/txt/places/dominion/park/natalya_encounter.xml",
+    "res/txt/places/dominion/redLightDistrict/angelsKiss.xml",
+    "res/txt/places/dominion/redLightDistrict/redLightDistrict.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
