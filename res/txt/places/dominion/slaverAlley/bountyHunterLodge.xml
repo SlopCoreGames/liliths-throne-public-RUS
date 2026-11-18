@@ -5,10 +5,10 @@
 	
 	<htmlContent tag="EXTERIOR"><![CDATA[
 	<p>
-		On the opposite side of the street to the Slavery Administration building, there's a timber-framed tavern which bears the name 'The Rusty Collar'. An old sign, every bit as weathered as the old wooden door onto which it's nailed, declares this establishment to be open twenty-four hours a day, seven days of the week. A peeling poster stuck to the wall beside it proudly declares this tavern to be the best place in all of Dominion in which to find and hire experienced bounty hunters. Near to the bottom of the poster, there's an image of a mean-looking wolf-boy, and a speech bubble coming from his mouth reads: 'We'll return your runaway slaves within two days, or your money back!'
+		На противоположной стороне улицы от здания Администрации Рабства стоит таверна с деревянным каркасом под названием «Ржавый ошейник». Старая вывеска, такая же обветшалая, как и прибитая к ней старая деревянная дверь, гласит, что это заведение открыто двадцать четыре часа в сутки, семь дней в неделю. Приклеенный рядом со стеной облупившийся плакат с гордостью заявляет, что эта таверна — лучшее место во всем Dominion, где можно найти и нанять опытных охотников за головами. В нижней части плаката красуется изображение злобного волкомальчика, а из его рта выходит облачко с текстом: «Мы вернем ваших сбежавших рабов за два дня или деньги назад!»
 	</p>
 	<p>
-		Although the crooked old windows are barely translucent, they are letting out a decent amount of light, which, combined with the loud sounds of merriment coming from within, informs you that there are a multitude of people currently inside the tavern. If you wanted to, you could push open the front door and take a look inside...
+		Хотя кривые старые окна едва пропускают свет, из них льется достаточно яркое сияние, которое в сочетании с громким весельем, доносящимся изнутри, дает тебе понять, что в таверне сейчас полно народу. Если захочешь, ты можешь толкнуть входную дверь и заглянуть внутрь...
 	</p>
 	]]>
 	</htmlContent>
@@ -18,16 +18,16 @@
 	
 	<htmlContent tag="ENTRANCE_INITITAL"><![CDATA[
 	<p>
-		Deciding to take a look inside the tavern, you [pc.step] up to the front door and push it open, before heading inside and taking stock of your surroundings.
+		Решив заглянуть в таверну, ты [pc.step] к входной двери, толкаешь её и входишь внутрь, осматриваясь по сторонам.
 	</p>
 	<p>
-		The first thing which strikes you upon your entry is both the high level of background noise and the thick, smoky atmosphere. Despite the many arcane-enchanted candles which illuminate the interior, the high, timber-framed ceiling is practically hidden from view by the cloud of second-hand smoke.
+		Первое, что бросается тебе в глаза при входе, — это сильный гул голосов и густая, прокуренная атмосфера. Несмотря на множество зачарованных арканой свечей, освещающих интерьер, высокий деревянный потолок практически скрыт за облаком табачного дыма.
 	</p>
 	<p>
-		Looking straight ahead, you see that the majority of the ground floor is filled with dozens of tables, around which bounty hunters and all sorts of unsavoury-looking individuals are seated. Opposite the door through which you've just entered, a large, wooden bar runs along part of the far wall, and is currently surrounded by patrons either demanding or consuming alcoholic drinks of all sorts. Looking over to your left, you see that there's a large wooden bounty board fixed to the wall, onto which dozens of pieces of paper have been tacked.
+		Глядя прямо перед собой, ты видишь, что большая часть первого этажа заставлена десятками столов, за которыми сидят охотники за головами и всякого рода подозрительные личности. Напротив двери, через которую ты только что вошел, вдоль части дальней стены тянется большая деревянная барная стойка, вокруг которой сейчас толпятся посетители, требующие или поглощающие Алкоголь самых разных видов. Посмотрев налево, ты замечаешь на стене огромную деревянную доску объявлений, к которой приколочены десятки листков бумаги.
 	</p>
 	<p>
-		None of the tavern's many occupants seem to pay any attention to your arrival, and you wonder whether you should take a closer look around, or turn around and head back out into Slaver Alley...
+		Кажется, никто из многочисленных обитателей таверны не обращает внимания на твое появление, и ты раздумываешь, стоит ли осмотреться повнимательнее или же развернуться и снова выйти в Переулок Работорговцев...
 	</p>
 	]]>
 	</htmlContent>
@@ -36,15 +36,14 @@
 	<!-- ENTRANCE -->
 	
 	<htmlContent tag="ENTRANCE"><![CDATA[
-	<p>
-		Finding yourself back at the entrance to the tavern, you wonder whether you should take your leave and head back out into Slaver Alley...
+	<p>		Оказавшись снова у входа в таверну, ты гадаешь, не пора ли тебе уходить и возвращаться в Переулок Работорговцев...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_LEAVE"><![CDATA[
 	<p>
-		Deciding that you've had enough of the tavern's noise and smoky atmosphere, you exit in the same way you entered, and soon find yourself standing back outside in Slaver Alley... 
+		Решив, что с тебя хватит таверночного шума и задымленной атмосферы, ты выходишь тем же путем, каким вошел, и вскоре снова оказываешься на улице, в Переулке Работорговцев... 
 	</p>
 	]]>
 	</htmlContent>
@@ -54,19 +53,18 @@
 	
 	<htmlContent tag="FLOOR"><![CDATA[
 	<p>
-		Crossing the tavern's main floor, you have to weave your way around dozens of tables, most of which have rough-looking bounty hunters and other such unsavoury individuals seated around them.
+		Пересекая главный зал таверны, тебе приходится лавировать между десятками столов, за большинством из которых сидят грубые охотники за головами и прочие сомнительные личности.
 		#IF(pc.getRace()==RACE_DEMON)
-			 The ones who see that you're a demon obligingly scoot their chairs forwards to give you room to pass, while those who shout curses before then taking a look at you are soon uttering apologies and offering you their seat.
-		#ELSE
-			 Growls and grumbles fill the air as you squeeze past the chairs and tables, with a couple of particularly rowdy individuals shouting curses as you pass.
+			Те, кто замечает, что ты — демон, услужливо отодвигают свои стулья, освобождая тебе проход, а те, кто сначала выкрикивает проклятия, а лишь потом разглядывает тебя, вскоре начинают извиняться и уступать свое место.		#ELSE
+			Воздух наполнен рычанием и ворчанием; ты протискиваешься между стульями и столами, а пара особенно буйных типов выкрикивает проклятия тебе вслед.
 		#ENDIF
 	</p>
 	<p>
-		Ignoring these characters, you do your best to endure the thick, smoky atmosphere and the booming, inebriated shouts and laughter coming from the tavern's patrons.
+		Не обращая внимания на этих типов, ты изо всех сил стараешься терпеть густую, прокуренную атмосферу и громогласные, пьяные выкрики и смех посетителей таверны.
 		#IF(game.getCharactersPresent().contains(wolfgang))
-			 Continuing on your way to the other side of the room, you notice the familiar figures of the two dobermann-boys who were terrorising [kay.namePos] business. Sitting at one of the nearby tables, [wolfgang.name] and [karl.name] haven't noticed your presence, and you wonder whether you should leave them be or go and say hello...
+			Продолжая путь к другой стороне зала, ты замечаешь знакомые фигуры двух доберман-мальчишек, которые терроризировали бизнес [kay.namePos]. Сидя за одним из ближайших столиков, [wolfgang.name] и [karl.name] еще не заметили твоего присутствия, и ты гадаешь, стоит ли оставить их в покое или подойти и поздороваться...
 		#ELSE
-			 As you don't have any business with any of the people in this area, there's not much else to do but continue on your way to the other side of the room...
+			Поскольку у тебя нет никаких дел ни с кем из присутствующих здесь, остается только продолжать путь к другой стороне зала...
 		#ENDIF
 	</p>
 	]]>
@@ -78,29 +76,29 @@
 	<htmlContent tag="DOBERMANNS"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_dobermannDefeatSeduced))
 		<p>
-			Wanting to talk to [wolfgang.name] and [karl.name] again, you [pc.walk] over to the table at which they're sitting and say hello. Looking up from their mugs of beer, the dobermann-boy bounty hunters flash you a pair of lustful grins as they see that you've returned to them.
+			Желая снова поговорить с [wolfgang.name] и [karl.name], ты [pc.walk] к их столику и здороваешься. Оторвавшись от кружек с пивом, доберман-мальчишки-охотники одаривают тебя парой похотливых ухмылок, видя, что ты вернулась к ним.
 		</p>
 		<p>
-			[wolfgang.speech(Hungry for our fat dog-cocks again, are you?)] [wolfgang.name] grunts.
+			[wolfgang.speech(Опять соскучилась по нашим жирным собачьим членам?)] — ворчит [wolfgang.name].
 		</p>
 		<p>
-			[karl.speech(I've been dreaming about stuffing you full of cum since our last fuck!)] [karl.name] adds, before downing his beer and asking, [karl.speech(So, you gonna come up to our room, or what?)]
+			[karl.speech(Я всё мечтал о том, как набью тебя спермой после нашего последнего траха!)] — добавляет [karl.name], прежде чем осушить пиво и спросить: [karl.speech(Ну так что, завалишься к нам в комнату или как?)]
 		</p>
 		<p>
-			Leaning back in their chairs and expectantly gazing up at you, the two horny dobermann-boys await your reply...
+			Откинувшись на спинки стульев и выжидающе глядя на тебя, двое возбужденных доберман-мальчишек ждут твоего ответа...
 		</p>
 	#ELSE
 		<p>
-			Wanting to talk to [wolfgang.name] and [karl.name] again, you [pc.walk] over to the table at which they're sitting and say hello. Looking up from their mugs of beer, the dobermann-boy bounty hunters recognise you from before, and flash you a pair of angry scowls.
+			Желая снова поговорить с [wolfgang.name] и [karl.name], ты [pc.walk] к их столу и приветствуешь их. Оторвавшись от кружек с пивом, охотники за головами — парни-доберманы — узнают тебя и одаривают парой сердитых взглядов.
 		</p>
 		<p>
-			[wolfgang.speech(What the fuck do you want?)] [wolfgang.name] grunts.
+			[wolfgang.speech(Какого хера тебе надо?)] — ворчит [wolfgang.name].
 		</p>
 		<p>
-			[karl.speech(If you're not here to offer us anything, then we're not interested,)] [karl.name] adds, before downing his beer and demanding, [karl.speech(Come on then, tell us what you want!)]
+			[karl.speech(Если ты здесь не для того, чтобы что-то нам предложить, то нам это не интересно,)] — добавляет [karl.name], после чего осушает кружку и требует: [karl.speech(Ну же, говори, чего хочешь!)]
 		</p>
 		<p>
-			With the two angry dobermann-boys clearly not being interested in engaging in you in conversation, you wonder what to do now...
+			Поскольку эти двое злых доберманов явно не настроены на светскую беседу, ты гадаешь, что же делать дальше...
 		</p>
 	#ENDIF
 	]]>
@@ -108,71 +106,71 @@
 	
 	<htmlContent tag="DOBERMANNS_SEDUCE"><![CDATA[
 	<p>
-		Deciding that it'd be a lot of fun to seduce and fuck this hot pair of bounty hunters, you put on your most alluring look and lean down over their table.
+		Решив, что соблазнить и оттрахать эту горячую парочку охотников будет сплошным удовольствием, ты принимаешь самый соблазнительный вид и склоняешься над их столом.
 		#IF(pc.hasAnyEnforcerStatusEffect())
-			 Noticing their glances at your uniform, you reassure the two dobermann-boys that you're off-duty for the rest of today, before suggestively teasing them by saying that Enforcers like to let themselves go just as much as anybody else.
+			 Заметив их взгляды на свою форму, ты успокаиваешь доберманов, заверив, что сегодня ты уже не на службе, а затем начинаешь игриво дразнить их, намекая, что Enforcer любят расслабиться и пуститься во все тяжкие не меньше остальных.
 		#ELSEIF(pc.getRace()==RACE_DEMON)
-			 Reassuring the two dobermann-boys that you're not going to make use of your demonic status to get them in trouble, you suggestively tease them by saying how your demonic body is always horny and hungry for a good fuck.
+			 Успокаивая доберманов и заверяя, что не станешь использовать свой демонический статус, чтобы впутать их в неприятности, ты начинаешь двусмысленно дразнить их, рассказывая, что твоё демоническое тело всегда жаждет качественного секса.
 		#ELSE
-			 Reassuring the two dobermann-boys that you've finished your business with Kay and have nothing to say about that subject, you start to suggestively tease and flirt with them.
+			 Успокаивая доберманов и заверяя, что ты уже закончила дела с Kay и тебе нечего добавить по этому поводу, ты начинаешь игриво дразнить их и флиртовать.
 		#ENDIF
-		 After suspiciously looking you up and down for a moment, Wolfgang lets out a deep grunt and motions for you to come and sit down next to him. Pleased to discover that even these brutes quickly let their guard down at the slightest suggestion of getting laid, you happily sit down in Wolfgang's lap, causing him to let out another deep, amused grunt and declare, [wolfgang.speech(Fuck! You're eager, aren't you?)]
+		 Вольфганг подозрительно осматривает тебя с ног до головы, после чего издает глубокий хриплый звук и жестом приглашает присесть рядом с ним. Обрадованная тем, что даже эти грубияны быстро теряют бдительность при малейшем намеке на секс, ты с радостью усаживаешься к нему на колени, заставляя его снова издать довольный утробный звук и заявить: [wolfgang.speech(Бля! Ну ты и жадная, а?)]
 	</p>
 	<p>
-		Leaning into Wolfgang's large, muscular torso, you respond by saying how any [pc.girl] would be just as eager as you are, were they in your position. Playfully biting your [pc.lip], you continue to flirt with them by saying how everyone romanticises bounty hunters, and then suggesting that the two of them must never struggle to find a willing partner to fuck.
+		Прижимаясь к крупному мускулистому торсу Вольфганга, ты отвечаешь, что любая [pc.girl] была бы так же нетерпелива, как и ты, окажись она на твоем месте. Игриво прикусывая свою [pc.lip], ты продолжаешь флиртовать, говоря, что все романтизируют охотников за головами, и тут же намекаешь, что им двоим явно никогда не приходится искать желающую трахнуться партнершу.
 	</p>
 	<p>
-		[karl.speech(Yeah, that part's true enough,)] Karl grunts.
+		[karl.speech(Да уж, тут не поспоришь,)] — хрипит Карл.
 	</p>
 	<p>
-		[wolfgang.speech(So, you were wondering what it's like to get fucked by two fat dog-cocks, were you?)] Wolfgang asks, before slipping his paw-like hand down
+		[wolfgang.speech(Так ты, значит, гадала, каково это — когда тебя трахают два жирных собачьих хера?)] — спрашивает Вольфганг, прежде чем скользнуть своей лапистой рукой
 		#IF(pc.hasLegs())
-			 between your legs
+			 между твоих ног
 		#ELSE
-			 to your groin
+			 к самому паху
 		#ENDIF
-		 and giving you a good grope. Smirking as you let out an erotic gasp, he suggests to his companion, [wolfgang.speech(How about we get this eager slut upstairs and give [pc.herHim] a good, hard fuck?)]
+		 и хорошенько тебя прощупать. Усмехаясь при твоем эротичном вздохе, он предлагает своему напарнику: [wolfgang.speech(Как насчет того, чтобы затащить эту жадную шлюху наверх и хорошенько, жестко оттрахать [pc.herHim]?)]
 	</p>
 	<p>
-		[karl.speech(Sounds good to me,)] Karl replies, before standing up and moving over to dominantly give your [pc.breasts+] a rough squeeze.
+		[karl.speech(А мне нравится,)] — отвечает Карл, после чего встает и подходит к тебе, чтобы властно и грубо сжать твою [pc.breasts+].
 	</p>
 	<p>
-		Feeling just as turned-on as these two dobermann-boys clearly are, you tell them that you don't want to wait a moment longer. Encouraged by your enthusiasm, the two dobermann-boys stand up and lead you over to the staircase on the other side of the tavern. Reaching down to roughly grope your [pc.ass+], [wolfgang.name] reveals, [wolfgang.speech(We're renting a room up here. Come on, slut, it's the perfect place for you to get fucked.)]
+		Видя, что ты возбуждена не меньше этих двух доберманов, ты заявляешь, что больше не в силах ждать ни секунды. Воодушевленные твоим энтузиазмом, парни встают и ведут тебя к лестнице в другом конце таверны. Грубо схватив тебя за [pc.ass+], [wolfgang.name] объявляет: [wolfgang.speech(Мы сняли комнату наверху. Пошли, шлюха, это идеальное место, чтобы тебя оттрахали.)]
 	</p>
 	<p>
-		Letting out an eager [pc.moan], you allow the dobermann-boys to accompany you up the stairs and down the corridor to their room. Being led inside, you see that the interior is just what anybody would expect. Apart from a couple of beds and chests of drawers, there's nothing else in here that draws your attention, and so as the door swings shut behind you, you turn back to face [wolfgang.name] and [karl.name] and wonder how to take things from here...
+		Издавая нетерпеливый [pc.moan], ты позволяешь доберманам проводить тебя вверх по лестнице и по коридору к их комнате. Когда тебя заводят внутрь, ты понимаешь, что обстановка здесь именно такая, какую и ожидаешь увидеть. Кроме пары кроватей и комодов, здесь нет ничего примечательного, и когда дверь за тобой закрывается, ты поворачиваешься к [wolfgang.name] и [karl.name], гадая, как всё будет развиваться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_SEDUCE_REPEAT"><![CDATA[
 	<p>
-		Happily sitting down in Wolfgang's lap, you lean into his large, muscular torso and tell both him and [karl.name] that you were hoping to have some fun with them again. Letting out a deep, amused grunt, [karl.name] declares from the other side of the table, [karl.speech(You're such a horny slut!)]
+		С радостью усаживаясь на колени к Вольфгангу, ты прижимаешься к его крупному мускулистому торсу и говоришь и ему, и [karl.name], что надеялась снова с ними развлечься. Издав глубокий, усмешливый рык, [karl.name] заявляет с другого конца стола: [karl.speech(Ну ты и похотливая шлюха!)]
 	</p>
 	<p>
-		[wolfgang.speech(Hungry for another taste of our fat dog-cocks, are you?)] Wolfgang asks, before slipping his paw-like hand down
+		[wolfgang.speech(Захотела еще раз попробовать наши жирные собачьи хребты?)] — спрашивает Вольфганг, прежде чем опустить свою лапу-руку
 		#IF(pc.hasLegs())
-			 between your legs
+			 между твоих ног
 		#ELSE
-			 to your groin
+			 к самому паху
 		#ENDIF
-		 and giving you a good grope. Smirking as you let out an erotic gasp, he declares to his companion, [wolfgang.speech(Let's get this slut upstairs and give [pc.herHim] another good, hard fuck!)]
+		 и хорошенько тебя прощупать. Усмехаясь при твоем эротичном вздохе, он бросает своему напарнику: [wolfgang.speech(Давай затащим эту шлюху наверх и хорошенько оттрахаем [pc.herHim] еще раз!)]
 	</p>
 	<p>
-		[karl.speech(Sounds good to me,)] [karl.name] replies, before standing up and moving over to dominantly give your [pc.breasts+] a rough squeeze.
+		[karl.speech(Меня это устраивает,)] [karl.name] отвечает, после чего встает и властно, грубо сжимая твою [pc.breasts+].
 	</p>
 	<p>
-		Feeling just as turned-on as these two dobermann-boys clearly are, you tell them that you don't want to wait a moment longer. Encouraged by your enthusiasm, the two dobermann-boys stand up and lead you over to the staircase on the other side of the tavern. Reaching down to roughly grope your [pc.ass+], [wolfgang.name] grunts, [wolfgang.speech(Come on, slut, let's get you up to the room we're renting. It's the perfect place for you to get fucked!)]
+		Чувствуя такое же возбуждение, как и эти двое доберманов, ты говоришь им, что не хочешь ждать ни секунды лишней. Воодушевленные твоим энтузиазмом, оба добермана встают и ведут тебя к лестнице на другой стороне таверны. Грубо схватив твою [pc.ass+], [wolfgang.name] рычит: [wolfgang.speech(Пошли, сучка, поднимемся в наш номер. Это идеальное место, чтобы тебя оттрахали!)]
 	</p>
 	<p>
-		Letting out an eager [pc.moan], you allow the dobermann-boys to accompany you up the stairs and down the corridor to their room. Being led inside, you see that the interior is just what anybody would expect. Apart from a couple of beds and chests of drawers, there's nothing else in here that draws your attention, and so as the door swings shut behind you, you turn back to face [wolfgang.name] and [karl.name] and wonder how to take things from here...
+		Издавая нетерпеливый [pc.moan], ты позволяешь доберманам проводить тебя вверх по лестнице и по коридору к их комнате. Когда тебя заводят внутрь, ты понимаешь, что обстановка здесь именно такая, какую и ожидаешь увидеть. Кроме пары кроватей и комодов, здесь нет ничего примечательного, и когда дверь за тобой закрывается, ты поворачиваешься к [wolfgang.name] и [karl.name], гадая, как всё будет развиваться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_LEAVE"><![CDATA[
 	<p>
-		Telling the bounty hunters that you've changed your mind and have other business to attend to, you [pc.step] back and move away from their table...
+		Говоря охотникам за головами, что ты передумала и у тебя есть другие дела, ты [pc.step] отходишь от их стола...
 	</p>
 	]]>
 	</htmlContent>
@@ -182,90 +180,90 @@
 	
 	<htmlContent tag="DOBERMANNS_UPSTAIRS_FUCK_THEM"><![CDATA[
 	<p>
-		Despite the nature of your teasing, you don't want to submit to these two dobermann-boys, and so you switch to a more confident, dominant tone and tell them to get down on all fours and present themselves to you.
+		Несмотря на характер твоего кокетства, ты не хочешь подчиняться этим двум доберманам, поэтому переходишь на более уверенный, доминирующий тон и приказываешь им встать на четвереньки и преподнести себя тебе.
 	</p>
 	<p>
-		Both Wolfgang and Karl let out a menacing growl as you say this, but despite their reaction, their horniness gets the better of them and they reluctantly do as you say. Dropping down onto all fours, the two dobermann-boys shuffle around to present their asses towards you.
+		И Вольфганг, и Карл издают угрожающее рычание на твои слова, но, несмотря на реакцию, похоть берет над ними верх, и они неохотно повинуются. Встав на четвереньки, оба добермана перебираются поближе, подставляя тебе свои задницы.
 	</p>
 	<p>
-		Dropping down onto your knees behind them, you reach forwards and give each of their behinds a dominant grope, grinning to yourself as they respond by letting out desperate grunts. Shuffling forwards, you can't help but let out an excited [pc.moan] as you prepare to fuck these bounty hunters...
+		Опустившись перед ними на колени, ты подаешься вперед и властно сжимаешь их задницы, довольно ухмыляясь, когда они в ответ издают отчаянные стоны. Пробираясь вперед, ты не можешь сдержать возбужденного [pc.moan], готовясь трахнуть этих охотников за головами...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_SEX_OFFER_ORAL"><![CDATA[
 	<p>
-		Deciding that you'd enjoy using your mouth, you inform the dobermann-boys that you were really hoping to get a good taste of their cocks. This desire of yours proves to be warmly received by the two bounty hunters, who, after getting you to drop down onto your knees, both pull out their huge, throbbing dog-cocks and sit down of the edge of the bed in front of you.
+		Решив, что тебе будет в удовольствие использовать рот, ты сообщаешь этим доберманам, что очень надеешься на вкус их членов. Твое желание находит теплый прием у обоих охотников: заставив тебя опуститься на колени, они оба достают свои огромные, пульсирующие собачьи члены и усаживаются на край кровати прямо перед тобой.
 	</p>
 	<p>
-		[wolfgang.speech(Got a taste for dog-cum, have you, slut?)] Wolfgang asks, before suddenly grabbing the back of your head and pulling you down into his groin. Opening wide, you take his scarlet-skinned cock into your mouth, and with a muffled, spluttering [pc.moan], you start passionately kissing and sucking on his hot shaft. Grunting in pleasure, the dobermann-boy growls, [wolfgang.speech(Don't forget about Karl! Get started on giving him a handjob, bitch!)]
+		[wolfgang.speech(Захотела попробовать собачьей спермы, сучка?)] — спрашивает Вольфганг, прежде чем внезапно схватить тебя за затылок и притянуть к своему паху. Широко раскрыв рот, ты берешь его алый член в рот и с приглушенным, булькающим [pc.moan] начинаешь страстно посасывать его горячий ствол. Издавая довольное ворчание, доберман рычит: [wolfgang.speech(Про Карла не забывай! Живо лапай его, сучка!)]
 	</p>
 	<p>
-		Doing as you're told, you reach over and start jerking off Karl's huge, knotted dog-cock. Having got exactly what you wanted, you focus on getting these two dobermann-boys to cum for you...
+		Повинуясь приказу, ты тянешься к Карлу и начинаешь дрочить на его огромный, узловатый собачий член. Получив именно то, чего хотела, ты сосредотачиваешься на том, чтобы заставить этих двух доберманов кончить для тебя...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_SEX_OFFER_SPITROAST"><![CDATA[
 	<p>
-		Deciding that you'd enjoy being penetrated at both ends, you inform the dobermann-boys that you were really hoping to get spit-roasted by them. This desire of yours proves to be warmly received by the two bounty hunters, who quickly push you down onto all fours and pull out their huge, throbbing dog-cocks. Wolfgang then immediately steps around to drop down onto his knees behind you, while Karl similarly sinks down onto the ground in front of your face.
+		Решив, что тебе понравится, когда тебя будут трахать с двух сторон сразу, ты сообщаешь парням-доберманам, что очень надеешься на «сэндвич» из них двоих. Твое желание находит горячий отклик у охотников за головами: они тут же швыряют тебя на четвереньки и вытаскивают свои огромные, пульсирующие собачьи члены. Вольфганг тут же обходит тебя, чтобы опуститься на колени сзади, а Карл точно так же приседает перед твоим лицом.
 	</p>
 	<p>
-		[wolfgang.speech(Want a good double-stuffing of dog-cum, do you, slut?)] Wolfgang asks, before quickly gaining access to your
+		[wolfgang.speech(Хочешь, чтобы тебя хорошенько набили собачьей спермой, шлюшка?)] — спрашивает Вольфганг, прежде чем быстро добраться до твоей
 		#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			 [pc.pussy+] and impatiently spreading your [pc.labia+] with both hands. Grunting in approval at what he sees, the dominant dobermann-boy wastes no further time and immediately thrusts forwards, slamming his hot dog-cock deep into your [pc.pussy+].
+			 [pc.pussy+] и нетерпеливо раздвигая твои [pc.labia+] обеими руками. Издав одобрительный рык от увиденного, доминантный доберман не теряет ни секунды и тут же делает резкий толчок, с силой вбивая свой горячий собачий член глубоко в твою [pc.pussy+].
 		#ELSE
-			 [pc.asshole+] and impatiently spreading your [pc.assSize] ass cheeks with both hands. Grunting in approval at what he sees, the dominant dobermann-boy wastes no further time and immediately thrusts forwards, slamming his hot dog-cock deep into your [pc.asshole+].
+			 [pc.asshole+] и нетерпеливо раздвигая твои ягодицы [pc.assSize] обеими руками. Издав одобрительный рык от увиденного, доминантный доберман не теряет ни секунды и тут же делает резкий толчок, с силой вбивая свой горячий собачий член глубоко в твою [pc.asshole+].
 		#ENDIF
 	</p>
 	<p>
-		The sensation of suddenly being penetrated in such a forceful manner causes you to let out [pc.a_moan+], and as you do so, Karl takes full advantage of your open mouth by shuffling forwards and shoving his own huge dog-cock past your [pc.lips+]. Taking his scarlet-skinned cock into your mouth, you continue to let out a series of muffled, spluttering [pc.moans] as you start passionately kissing and sucking on his hot shaft. Grunting in pleasure, he growls, [karl.speech(That's right, take it deep!)]
+		От внезапного и столь мощного проникновения ты невольно издаешь [pc.a_moan+], и в этот момент Карл, пользуясь твоим открытым ртом, подается вперед и проталкивает свой огромный собачий член глубоко тебе в [pc.lips+]. Обхватив губами его алый член, ты продолжаешь издавать приглушенные, булькающие [pc.moans], страстно целуя и посасывая его горячую плоть. Удовольствие заставляет его кряхтеть, и он рычит: [karl.speech(Вот так, заглатывай поглубже!)]
 	</p>
 	<p>
-		Having got exactly what you wanted, you focus on the pleasure of being spit-roasted by these two dobermann-boys, eagerly anticipating the part where they fill each of your ends with their hot dog-cum...
+		Получив именно то, чего ты хотела, ты сосредотачиваешься на наслаждении от того, что эти двое доберманов разрывают тебя с двух сторон, с нетерпением ожидая момента, когда они заполнят оба твоих отверстия своей горячей собачьей спермой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_SEX_OFFER_RIDE"><![CDATA[
 	<p>
-		Deciding that you'd enjoy getting stuffed with their cocks, you inform the dobermann-boys that you were really hoping to ride them. This desire of yours proves to be warmly received by the two bounty hunters, who quickly pull out their huge, throbbing dog-cocks. Wolfgang then immediately lies down on his bed, pulling you down on top of him into the cowgirl position, while Karl sinks down behind you.
+		Решив, что тебе бы очень понравилось, когда в тебя втиснут их члены, ты сообщаешь доберманам, что на самом деле надеялась оседлать их. Твое желание находит теплый отклик у охотников за головами, которые тут же вытаскивают свои огромные, пульсирующие собачьи члены. Вольфганг тут же ложится на кровать, увлекая тебя за собой в позу наездницы, в то время как Карл опускается сзади.
 	</p>
 	<p>
-		[wolfgang.speech(Want a good double-stuffing of dog-cum, do you, slut?)] Wolfgang asks, before quickly gaining access to your
+		[wolfgang.speech(Хочешь, чтобы тебя хорошенько набили собачьей спермой, шлюшка?)] — спрашивает Вольфганг, прежде чем быстро добраться до твоей
 		#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			 [pc.pussy+] and impatiently spreading your [pc.labia+] with both hands. Grunting in approval at what he sees, the dominant dobermann-boy wastes no further time, and after grabbing hold of your [pc.hips+], forcefully pulls you down and sinks his hot dog-cock deep into your [pc.pussy+].
-		#ELSE
-			 [pc.asshole+] and impatiently spreading your [pc.assSize] ass cheeks with both hands. Grunting in approval, the dominant dobermann-boy wastes no further time, and after grabbing hold of your [pc.hips+], forcefully pulls you down and sinks his hot dog-cock deep into your [pc.asshole+].
+			 [pc.pussy+] и нетерпеливо раздвигая свои [pc.labia+] обеими руками. Издав одобрительный рык от увиденного, доминантный доберман не теряет ни секунды: схватив тебя за [pc.hips+], он с силой тянет тебя вниз и глубоко вбивает свой горячий собачий член в твою [pc.pussy+].
+			#ELSE
+			 [pc.asshole+] и нетерпеливо раздвигаешь обеими руками свои [pc.assSize] ягодицы. Удовлетворенно рыча, доминантный мальчик-доберман не теряет ни секунды: схватив тебя за [pc.hips+], он с силой тянет тебя вниз и глубоко вгоняет свой горячий член-сосиску в твою [pc.asshole+].
 		#ENDIF
 	</p>
 	<p>
 		#IF(!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			Not wanting to miss out on the fun, Karl shuffles up close behind you, and after giving your [pc.ass+] a good grope, he pushes his cock up against Wolfgang's, and on his companion's next thrust, forces his cock into your asshole. The sensation of having your back-door stuffed full of two huge dog-cocks causes you to let out [pc.a_moan+], which is met by a synchronised pair of deep, amused grunts from the two dobermann-boys. Leaning into your back, Karl dominantly growls, [karl.speech(That's right, bitch, keep moaning like a whore!)]
+			Не желая пропускать веселье, Карл подбирается вплотную к тебе сзади; хорошенько ощупав твою [pc.ass+], он прижимает свой член к члену Вольфганга и при следующем толчке товарища силой втискивает свой член в твою задницу. От ощущения, что твой зад забит двумя огромными собачьими членами, ты издаешь [pc.a_moan+], на что оба мальчика-добермана синхронно отвечают глубоким, довольным рычанием. Прижавшись к твоей спине, Карл властно рычит: [karl.speech(Вот так, сучка, скули как последняя шлюха!)]
 		#ELSEIF(!pc.isAbleToAccessCoverableArea(CA_ANUS, true))
-			Not wanting to miss out on the fun, Karl shuffles up close behind you, and after giving your [pc.ass+] a good grope, he pushes his cock up against Wolfgang's, and on his companion's next thrust, forces his cock into your [pc.pussy+]. The sensation of having your cunt stuffed full of two huge dog-cocks causes you to let out [pc.a_moan+], which is met by a synchronised pair of deep, amused grunts from the two dobermann-boys. Leaning into your back, Karl dominantly growls, [karl.speech(That's right, bitch, keep moaning like a whore!)]
+			Не желая пропускать веселье, Карл подбирается вплотную к тебе сзади; хорошенько ощупав твою [pc.ass+], он прижимает свой член к члену Вольфганга и при следующем толчке товарища силой втискивает свой член в твою [pc.pussy+]. От ощущения, что твоя киска забита двумя огромными собачьими членами, ты издаешь [pc.a_moan+], на что оба мальчика-добермана синхронно отвечают глубоким, довольным рычанием. Прижавшись к твоей спине, Карл властно рычит: [karl.speech(Вот так, сучка, скули как последняя шлюха!)]
 		#ELSE
-			Not wanting to miss out on the fun, Karl shuffles up close behind you, and after giving your [pc.ass+] a good grope, he pushes the [karl.cockHead+] of his cock up against your [pc.asshole+]. On his companion's next thrust, he suddenly forces his cock into your asshole, causing you to let out [pc.a_moan+]. Leaning into your back, Karl dominantly growls, [karl.speech(That's right, bitch, keep moaning like a whore!)]
+			Не желая упускать веселье, Карл подбирается к тебе почти вплотную, и, хорошенько ощупав твою [pc.ass+], он прижимает [karl.cockHead+] своего члена к твоей [pc.asshole+]. После очередного толчка его напарника он внезапно вгоняет свой член тебе в анус, заставляя тебя издать [pc.a_moan+]. Прижимаясь к твоей спине, Карл доминантно рычит: [karl.speech(Вот так, сучка, скули как последняя шлюха!)]
 		#ENDIF
 	</p>
 	<p>
-		Having got exactly what you wanted, you focus on the pleasure of taking both of the two dobermann-boys' cocks at once, eagerly anticipating the part where they fill you with their hot dog-cum...
+	Получив именно то, чего ты хотела, ты сосредотачиваешься на удовольствии от одновременного принятия членов обоих доберман-мальчиков, с нетерпением предвкушая момент, когда они наполнят тебя своим горячим собачьим спермо...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_SEX_OFFER_NIPPLES"><![CDATA[
 	<p>
-		Deciding that you'd like to give the dobermann-boys something a little different, you tell them that you were really hoping to have them fuck your nipples. Glancing at one another for a moment, Wolfgang muses, [wolfgang.speech(I've never fucked someone's nipples before... Sure, why not?)]
+	Решив, что доберман-мальчикам стоит предложить что-то новенькое, ты говоришь им, что очень надеешься, если они оттрахают твои соски. Переглянувшись на мгновение, Вольфганг задумчиво произносит: [wolfgang.speech(Ни разу не трахал чьи-то соски... Что ж, почему бы и нет?)]
 	</p>
 	<p>
-		Excited to be given the chance to show off what you can do, you quickly slide off the sofa and drop down onto your knees. Pulling out their huge, throbbing dog-cocks, the two dobermann-boys stand up in front of you and hungrily stare at your chest as you expose your [pc.nipples+] and lift your [pc.breasts+] towards them.
+	Воодушевленная возможностью показать, на что ты способна, ты быстро соскальзываешь с дивана и опускаешься на колени. Вытащив свои огромные, пульсирующие собачьи члены, оба доберман-мальчика встают перед тобой и жадно уставляются на твою грудь, пока ты обнажаешь свои [pc.nipples+] и приподнимаешь [pc.breasts+] навстречу им.
 	</p>
 	<p>
-		[wolfgang.speech(Want to get your tits stuffed full of dog-cum then, slut?)] Wolfgang asks, before suddenly grabbing your left breast with both hands and pulling it up towards his groin. Thrusting out your chest, you can't help but let out an excited [pc.moan] as the [wolfgang.cockHead+] of his scarlet-skinned cock teases over your [pc.nipple+]. Grunting in amusement at the noise you've just made, Wolfgang suddenly thrusts forwards, slamming his [wolfgang.cock+] deep into your [pc.breast+(true)].
+		[wolfgang.speech(Значит, хочешь, чтобы твои сиськи набились собачьей спермой, сучка?)] — спрашивает Вольфганг, прежде чем внезапно обхватить твою левую грудь обеими руками и притянуть её к своему паху. Выпятив грудь вперед, ты невольно издаешь возбужденный [pc.moan], когда [wolfgang.cockHead+] его алого члена дразнит твои [pc.nipple+]. Усмехнувшись от твоего звука, Вольфганг резко подается вперед, с силой вгоняя свой [wolfgang.cock+] глубоко в твой [pc.breast+(true)].
 	</p>
 	<p>
-		Following his companion's lead, Karl grabs your right breast, and after taking a moment to experimentally push his paw-like fingers into your fuckable nipple, he lines his cock up to it and thrusts forwards. [pc.Moaning] in delight as the two dobermann-boys fuck your tits, you once again push out your chest and try to focus on getting them to cum for you...
+		Последовав примеру своего товарища, Карл хватает твою правую грудь; после короткой паузы, когда он экспериментально вжимает свои похожие на лапы пальцы в твой сосок, он прицеливается и делает резкий толчок. Ты в восторге [pc.Moaning] от того, как двое доберманов трахают твои титьки, и снова выпячиваешь грудь, пытаясь сосредоточиться на том, чтобы заставить их кончить...
 	</p>
 	]]>
 	</htmlContent>
@@ -276,31 +274,31 @@
 	<htmlContent tag="DOBERMANNS_AFTER_SEX"><![CDATA[
 	#IF(sex.isDom(pc))
 		<p>
-			Having had your fun, you disentangle yourself from your two partners and [pc.step] back, allowing [wolfgang.name] and [karl.name] to crawl away and collapse onto their respective beds. Grinning at the dobermann-boys, you get your things in order and thank them for the good time.
+			Насладившись, ты высвобождаешься из объятий своих партнеров и [pc.step] назад, позволяя [wolfgang.name] и [karl.name] отползти и рухнуть на свои кровати. Улыбаясь доберманам, ты собираешь свои вещи и благодаришь их за приятное время.
 		</p>
 		<p>
-			Each letting out a deep groan, the bounty hunters lie back and catch their breath. As you turn around and head towards the door, you hear [wolfgang.name] pant to [karl.name], [wolfgang.speech(I need a little while to rest after that...)]
+			Издавая глубокие стоны, охотники за головами откидываются назад, переводя дух. Когда ты разворачиваешься и направляешься к двери, ты слышишь, как [wolfgang.name] тяжело дышит, а [karl.name] произносит: [wolfgang.speech(Мне нужно немного передохнуть после такого...)]
 		</p>
 	#ELSE
 		<p>
-			Having had his fun, [wolfgang.name] steps back and lights up a cigarette, before grunting, [wolfgang.speech(You're a good fuck, slut!)]
+			Насладившись, [wolfgang.name] отстраняется и закуривает сигарету, после чего ворчит: [wolfgang.speech(А ты хорошая трахалка, сучка!)]
 		</p>
 		<p>
-			[karl.name] likewise steps away from you, and after grabbing a bottle of Canine Crush from under his bed, he takes a big swig of it and then exclaims, [karl.speech(Damn, that was great!)]
+			[karl.name] тоже отходит от тебя, достает из-под кровати бутылку «Собачьего удушья», делает из нее огромный глоток и восклицает: [karl.speech(Черт, это было великолепно!)]
 		</p>
 		<p>
-			After flashing the dobermann-boys a smile and expressing your own satisfaction in how things turned out, you tell them that you'd better be on your way. Satisfied from the good, hard fuck you've just given them, they sit down on their respective beds, and as you head towards the door, [wolfgang.name] pant to [karl.name], [wolfgang.speech(I need a little while to rest after that...)]
+		Одарив доберманов улыбкой и выразив собственное удовлетворение тем, как всё сложилось, ты говоришь им, что тебе пора идти. Довольные тем жестким и качественным трахом, который ты им только что устроила, они рассаживаются по своим кроватям, а когда ты направляешься к двери, [wolfgang.name] тяжело дышат, обращаясь к [karl.name]: [wolfgang.speech(Мне нужно немного передохнуть после такого...)]
 		</p>
 	#ENDIF
 	<p>
-		Exiting their room, you let out one last satisfied sigh before heading down the corridor towards the stairs...
+		Выходя из их комнаты, ты издаешь последний удовлетворенный вздох и направляешься по коридору к лестнице...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOBERMANNS_AFTER_SEX_DOWNSTAIRS"><![CDATA[
 	<p>
-		You head back down the narrow staircase to the tavern's ground floor, before wondering what to do next...
+		Ты спускаешься по узкой лестнице на первый этаж таверны, гадая, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -310,11 +308,11 @@
 	
 	<htmlContent tag="SEATING"><![CDATA[
 	<p>
-		Around the edge of the tavern there are several recessed seating areas, all of which are currently occupied by groups of rough-looking bounty hunters.
+	По краям таверны расположены несколько ниш для отдыха, и все они сейчас заняты группами грубых на вид охотников за головами.
 		#IF(game.getCharactersPresent().contains(silence))
-			 In this particular area, however, you see that one of the recessed seating areas is occupied by the lone, familiar figure of Silence, the albino rat-girl whom you first met serving as one of Vengar's bodyguards. There's no sign of her companion, Shadow, although you're certain that she must be lurking somewhere nearby. You could always head over and say something to the mute rat-girl, or instead simply turn around and head back into the main section of the tavern...
+			Однако в этой части зала ты замечаешь, что одна из ниш занята одинокой, до боли знакомой фигурой — Сайленс, той самой девочкой-крысой альбиноской, которую ты впервые встретила в качестве телохранительницы Венгара. Ее спутника, Шэдоу, нигде не видно, хотя ты уверена, что он наверняка притаился где-то неподалеку. Ты можешь подойти и что-нибудь сказать немой крысе, либо просто развернуться и вернуться в основную часть таверны...
 		#ELSE
-			 As you don't have any business with any of them, there's not much else you can do here but turn around and head back into the main section of the tavern...
+			 Поскольку у тебя нет с ними никаких дел, тебе остается лишь развернуться и отправиться обратно в основной зал таверны...
 		#ENDIF
 	</p>
 	]]>
@@ -325,17 +323,17 @@
 	
 	<htmlContent tag="STAIRS"><![CDATA[
 	<p>
-		At the back of the tavern, a narrow, twisting staircase leads up to the first floor. A wooden sign reading 'Rooms for hire. Ask at bar.' has been fixed to the wall beside this staircase. Unfortunately for anyone looking for accommodation to rent, a paper note has been nailed to the bottom of this sign, which declares there to be 'No vacancies.'
+		В глубине таверны узкая извилистая лестница ведет на второй этаж. На стене рядом с лестницей висит деревянная табличка с надписью: «Комнаты в аренду. Спрашивать у бармена». К сожалению для тех, кто ищет ночлег, под табличкой прибита бумажка, гласящая: «Свободных мест нет».
 	</p>
 	<p>
-		Although you have no business up there, there's nothing to stop you from heading up the stairs and having a look around the first floor of the tavern...
+		Хотя у тебя там нет никаких дел, ничто не мешает тебе подняться по лестнице и осмотреть второй этаж таверны...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STAIRS_UPSTAIRS"><![CDATA[
 	<p>
-		Deciding that you want to take a look at the tavern's first floor, you travel up the narrow staircase and prepare to explore...
+		Решив взглянуть на второй этаж таверны, ты поднимаешься по узкой лестнице и готовишься к исследованию...
 	</p>
 	]]>
 	</htmlContent>
@@ -345,10 +343,10 @@
 	
 	<htmlContent tag="BOUNTY_BOARD"><![CDATA[
 	<p>
-		Positioned near to the tavern's entrance, a large wooden bounty board has been fixed to the wall, onto which dozens of pieces of paper have been tacked. Standing before this board, you see that most of the bounties have had the seals of one or more groups of bounty hunters imprinted onto them, signalling that there are already people out hunting for the requested fugitive.
+		Неподалеку от входа в таверну на стене закреплено большое деревянное доску объявлений, к которой приколочены десятки листков бумаги. Стоя перед доской, ты замечаешь, что на большинстве объявлений стоят печати одной или нескольких групп охотников за головами — это знак того, что за искомыми беглецами уже кто-то охотится.
 	</p>
 	<p>
-		Looking over the entire board, you see that there are some bounties which haven't yet been claimed. A promising poster fixed to the wall beside this bounty board declares that anyone is able to register as an official bounty hunter at the bar, and you wonder whether that sort of work is something you'd be interested in... 
+		Осмотрев всю доску, ты видишь, что некоторые награды еще не были востребованы. Рядом с доской висит многообещающий плакат, гласящий, что любой желающий может зарегистрироваться в качестве официального охотника за головами у бармена, и ты задумываешься, не интересна ли тебе подобная работа... 
 	</p>
 	]]>
 	</htmlContent>
@@ -358,60 +356,60 @@
 	
 	<htmlContent tag="BAR"><![CDATA[
 	<p>
-		The tavern's focal point takes the form of a long, wooden bar, behind which several barmaids and barmen are fulfilling the never-ending orders from the many patrons desperate for another drink. From their slurred, drunken speech and seemingly-unquenchable thirst, you can safely assume that most of the bounty hunters here end up spending a significant portion of their income on alcohol.
+		Центром таверны служит длинная деревянная барная стойка, за которой несколько барменш и барменов разрываются между бесконечными заказами многочисленных посетителей, жаждущих новой порции выпивки. Судя по их заплетающимся языкам и, кажется, ненасытной жажде, можно смело предположить, что большинство охотников за головами тратят значительную часть своего дохода на Алкоголь.
 	</p>
 	<p>
 		#IF(pc.getRace()==RACE_DEMON)
-			Noticing that you're a demon, the crowd parts to let you [pc.step] up to the bar.
+			Заметив, что ты демон, толпа расступается, позволяя тебе [pc.step] к барной стойке.
 		#ELSE
-			Although it's not easy, you manage to push your way through the crowd and [pc.step] up to the bar.
+			Пусть это и непросто, тебе удается пробраться сквозь толпу и [pc.step] к стойке.
 		#ENDIF
-		 While the menu hung up on the wall lists several different types of alcoholic beverage, the only item of food on offer is a bag of bar nuts. As you wonder whether to order something or not, you can't help but notice the fact that there's a rusty old slave collar hung up on the wall behind the bar, which you assume must be the tavern's namesake.
+			Хотя в меню, висящем на стене, указано несколько видов алкогольных напитков, из еды здесь предлагают лишь мешочек жареных орешков. Пока ты раздумываешь, стоит ли что-то заказывать, ты невольно замечаешь на стене за барной стойкой старый ржавый рабский ошейник — судя по всему, именно в честь него и названа таверна.
 	</p>
 	<p>
-		Noticing you standing there, a rabbit-boy barman steps forwards and asks, [style.speechMasculine(So, what can I get for you?)]
+		Заметив тебя, к стойке выходит бармен — кролик-мальчик — и спрашивает: [style.speechMasculine(Итак, что тебе налить?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_NUTS"><![CDATA[
 	<p>
-		Placing an order for one bag of bar nuts, you hand over the [#SPECIAL_PARSE_0] flames asked of you, before receiving the small bag of [#SPECIAL_PARSE_1]. Opening the pack, you quickly munch down the contents, before wondering whether or not to order a drink to help wash them down...
+		Заказав мешочек орешков, ты отдаешь запрошенные [#SPECIAL_PARSE_0] Огни, после чего получаешь небольшой пакет [#SPECIAL_PARSE_1]. Вскрыв упаковку, ты быстро расправляешься с содержимым и начинаешь гадать, не заказать ли чего-нибудь выпить, чтобы запить их...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_BEER"><![CDATA[
 	<p>
-		Placing an order for a bottle of beer, you hand over the [#SPECIAL_PARSE_0] flames asked of you, before receiving the bottle of [#SPECIAL_PARSE_1]. After the barman's popped off the cap and placed it down on the bar, you quickly lift the bottle to your waiting [pc.lips], before tilting your head back and drinking all of its delicious contents...
+		Заказывая бутылку пива, ты отдаешь [#SPECIAL_PARSE_0] огней, как и просили, и получаешь бутылку [#SPECIAL_PARSE_1]. Как только бармен откупоривает её и ставит на стойку, ты быстро подносишь бутылку к своим жаждущим [pc.lips], а затем запрокидываешь голову, осушая её до дна и наслаждаясь каждым глотком...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_CIDER"><![CDATA[
 	<p>
-		Placing an order for a bottle of cider, you hand over the [#SPECIAL_PARSE_0] flames asked of you, before receiving the bottle of [#SPECIAL_PARSE_1]. After the barman's popped off the cap and placed it down on the bar, you quickly lift the bottle to your waiting [pc.lips], before tilting your head back and drinking all of its delicious contents...
+		Заказывая бутылку сидра, ты отдаешь [#SPECIAL_PARSE_0] огней, как и просили, и получаешь бутылку [#SPECIAL_PARSE_1]. Как только бармен откупоривает её и ставит на стойку, ты быстро подносишь бутылку к своим жаждущим [pc.lips], а затем запрокидываешь голову, осушая её до дна и наслаждаясь каждым глотком...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_VODKA"><![CDATA[
 	<p>
-		Placing an order for a glass of vodka, you hand over the [#SPECIAL_PARSE_0] flames asked of you. After the barman's placed a glass down on the bar and filled it with [#SPECIAL_PARSE_1], you quickly lift your drink to your waiting [pc.lips], before tilting your head back and downing it in one large gulp...
+		Заказывая стопку водки, ты отдаешь [#SPECIAL_PARSE_0] огней, как и просили. Как только бармен ставит перед тобой стакан и наполняет его [#SPECIAL_PARSE_1], ты быстро подносишь напиток к своим жаждущим [pc.lips], а затем запрокидываешь голову и осушаешь его одним мощным глотком...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_WHISKEY"><![CDATA[
 	<p>
-		Placing an order for a glass of whiskey, you hand over the [#SPECIAL_PARSE_0] flames asked of you. After the barman's placed a glass down on the bar and filled it with [#SPECIAL_PARSE_1], you quickly lift your drink to your waiting [pc.lips], before tilting your head back and downing it in one large gulp...
+		Заказывая стакан виски, ты отдаешь [#SPECIAL_PARSE_0] огней, как и просили. Как только бармен ставит перед тобой стакан и наполняет его [#SPECIAL_PARSE_1], ты быстро подносишь напиток к своим жаждущим [pc.lips], а затем запрокидываешь голову и осушаешь его одним мощным глотком...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_RUM"><![CDATA[
 	<p>
-		Placing an order for a glass of rum, you hand over the [#SPECIAL_PARSE_0] flames asked of you. After the barman's placed a glass down on the bar and filled it with [#SPECIAL_PARSE_1], you quickly lift your drink to your waiting [pc.lips], before tilting your head back and downing it in one large gulp...
+		Заказывая стакан рома, ты протягиваешь запрошенные [#SPECIAL_PARSE_0] огни. Когда бармен ставит перед тобой стакан и наполняет его [#SPECIAL_PARSE_1], ты быстро поднимаешь напиток к своей ожидающей [pc.lips], а затем запрокидываешь голову и осушаешь его одним огромным глотком...
 	</p>
 	]]>
 	</htmlContent>
@@ -421,7 +419,7 @@
 	
 	<htmlContent tag="UPSTAIRS_CORRIDOR"><![CDATA[
 	<p>
-		Old, wooden floorboards creak underfoot as you [pc.walk] down the narrow, twisting corridor which links the rooms of the tavern's first floor. Although there are numerous arcane candles attached to the walls, their flickering light does little to illuminate the dark, wooden wall panels, giving this passageway a gloomy, creepy atmosphere.
+		Старые деревянные половицы скрипят под ногами, пока ты [pc.walk] по узкому извилистому коридору, соединяющему комнаты на втором этаже таверны. Хотя на стенах закреплено множество арканных свечей, их мерцающий свет едва освещает темные деревянные панели, придавая проходу мрачную и жутковатую атмосферу.
 	</p>
 	]]>
 	</htmlContent>
@@ -431,14 +429,14 @@
 	
 	<htmlContent tag="UPSTAIRS_STAIRS"><![CDATA[
 	<p>
-		Finding yourself at the top of the narrow, twisting staircase, you wonder whether you should make use of it and travel back down to the ground floor, or instead set out to explore the tavern's first floor...
+		Оказавшись наверху узкой винтовой лестницы, ты раздумываешь: стоит ли спуститься обратно на первый этаж или же отправиться исследовать второй этаж таверны...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="UPSTAIRS_STAIRS_DOWNSTAIRS"><![CDATA[
 	<p>
-		Wanting to head back down to the tavern's ground floor, you descend the narrow staircase...
+		Желая вернуться на первый этаж таверны, ты спускаешься по узкой лестнице...
 	</p>
 	]]>
 	</htmlContent>
@@ -448,7 +446,7 @@
 	
 	<htmlContent tag="UPSTAIRS_ROOM"><![CDATA[
 	<p>
-		The wooden door before you, like all of the others up here on the tavern's first floor, has sign on it which declares the room to be occupied. With no reason to disturb the occupants, there's nothing for you to do here except turn around and head back down the corridor...
+		На деревянной двери перед тобой, как и на всех остальных здесь, на втором этаже, висит табличка, гласящая, что комната занята. Не видя причин беспокоить обитателей, тебе остается лишь развернуться и направиться обратно по коридору...
 	</p>
 	]]>
 	</htmlContent>
@@ -458,19 +456,19 @@
 	
 	<htmlContent tag="UPSTAIRS_ROOM_ANGELIXX"><![CDATA[
 	<p>
-		The wooden door before you, like all of the others up here on the tavern's first floor, has sign on it which declares the room to be occupied. At this bottom of this sign, the name 'Angelixx' has been written in pink marker pen, and around it the succubus has drawn a series of hearts and kisses.
+		На деревянной двери перед тобой, как и на всех остальных здесь, на втором этаже, висит табличка, гласящая, что комната занята. В самом низу этой таблички розовым маркером выведено имя «Angelixx», а вокруг него суккуб нарисовала целую серию сердечек и поцелуев.
 	</p>
 	<p>
 		#IF(game.getCharactersPresent().contains(angelixx))
-			At this time of day, Angelixx should be in her room, so if you wanted to talk to her, all you'd need to do is knock on her door...
+			В это время суток Анжеликса должна быть у себя в комнате, так что если ты хочешь поговорить с ней, тебе нужно лишь постучать в её дверь...
 		#ELSE
-			At this time, Angelixx and her sons are out somewhere in Dominion, either partying or hunting for people to turn into new dolls. As such, if you wanted to talk to her, you'll have to come back here at another time...
+			В это время Анжеликса и её сыновья где-то бродит по Dominion — либо тусуются, либо охотятся на людей, чтобы превратить их в новых кукол. Так что, если ты хочешь поговорить с ней, придётся вернуться в другое время...
 		#ENDIF
 	</p>
 	#IF(!game.getCharactersPresent().contains(angelixx))
-		<p style='text-align:center;'>
-			[style.italicsMinorBad(Angelixx is present here between [units.time(16)]-[units.time(8)])]
-		</p>
+			<p style='text-align:center;'>
+			[style.italicsMinorBad(Анжеликса находится здесь между [units.time(16)] и [units.time(8)])]
+			</p>
 	#ENDIF
 	]]>
 	</htmlContent>
@@ -480,19 +478,19 @@
 	
 	<htmlContent tag="UPSTAIRS_ROOM_SLEIP_NIR"><![CDATA[
 	<p>
-		The wooden door before you, like all of the others up here on the tavern's first floor, has sign on it which declares the room to be occupied. At this bottom of this sign, the initials 'S & N', which you know refers to 'Sleip & Nir', have been printed in black marker pen, and beneath this the words 'Fuck off' have been scrawled.
+		Деревянная дверь перед тобой, как и все остальные здесь, на первом этаже таверны, снабжена табличкой, гласящей, что комната занята. В самом низу этой таблички чёрным маркером выведены инициалы «S & N», которые, как ты знаешь, означают «Слейп и Нир», а под ними размашисто нацарапано: «Отъебитесь».
 	</p>
 	<p>
 		#IF(game.getCharactersPresent().contains(sleip))
-			At this time of day, the nightmares should be in their room, so if you wanted to talk to them, all you'd need to do is knock on their door...
+			В это время суток кошмары должны быть у себя в комнате, так что если ты хочешь поговорить с ними, тебе нужно лишь постучать в их дверь...
 		#ELSE
-			At this time, the nightmares and their mother are out somewhere in Dominion, either partying or hunting for people to turn into new dolls. As such, if you wanted to talk to them, you'll have to come back here at another time...
+			В это время кошмары и их мать где-то бродит по Dominion — либо тусуются, либо охотятся на людей, чтобы превратить их в новых кукол. Так что, если ты хочешь поговорить с ними, придётся вернуться в другое время...
 		#ENDIF
 	</p>
 	#IF(!game.getCharactersPresent().contains(sleip))
-		<p style='text-align:center;'>
-			[style.italicsMinorBad(Sleip and Nir are present here between [units.time(16)]-[units.time(8)])]
-		</p>
+			<p style='text-align:center;'>
+			[style.italicsMinorBad(Слейп и Нир находятся здесь между [units.time(16)] и [units.time(8)])]
+			</p>
 	#ENDIF
 	]]>
 	</htmlContent>

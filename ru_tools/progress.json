@@ -94,7 +94,13 @@
     "res/txt/places/dominion/shoppingArcade/arcaneArts.xml",
     "res/txt/places/dominion/shoppingArcade/clothingEmporium.xml",
     "res/txt/places/dominion/shoppingArcade/dreamLover.xml",
-    "res/txt/places/dominion/shoppingArcade/generic.xml"
+    "res/txt/places/dominion/shoppingArcade/generic.xml",
+    "res/txt/places/dominion/shoppingArcade/pixsPlayground.xml",
+    "res/txt/places/dominion/shoppingArcade/ralphsSnacks.xml",
+    "res/txt/places/dominion/shoppingArcade/succubisSecrets.xml",
+    "res/txt/places/dominion/slaverAlley/bountyHunterLodge.xml",
+    "res/txt/places/dominion/slaverAlley/genericDialogue.xml",
+    "res/txt/places/dominion/slaverAlley/helenaRomance.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

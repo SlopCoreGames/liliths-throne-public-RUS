@@ -5,13 +5,13 @@
 
 	<htmlContent tag="EXTERIOR"><![CDATA[
 	<p>
-		While there are a few restaurants and other sit-down eateries scattered throughout the Shopping Arcade, there is a conspicuous lack of places which offer food to take out. The sole exception to this is the store in front of you, which, from the outside, is reminiscent of an old-fashioned sweet shop, with large glass windows displaying all manner of exotic-looking food and drink.
+		Хотя по всей Торговой аркаде и разбросано несколько ресторанов и других заведений с полноценной посадкой, здесь явно не хватает мест, где можно взять еду навынос. Единственное исключение — лавка прямо перед тобой. Снаружи она напоминает старинную кондитерскую с огромными витринами, за которыми выставлено всевозможной экзотической еды и напитков.
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
-			 The words 'Ralph's Snacks' are painted in cursive gold lettering above the entrance, while a little sign hanging in the door's window informs you that the [style.colourMinorGood(opening hours are between [unit.time(6)] and [unit.time(22)])]. As the store is currently [style.colourGood(open)], you could step inside and take a look around if you wanted to...
+			Над входом золотыми буквами, выведенными курсивом, красуется надпись «Ralph's Snacks», а на маленькой табличке в оконной раме указано, что [style.colourMinorGood(часы работы: с [unit.time(6)] до [unit.time(22)])]. Поскольку магазин сейчас [style.colourGood(открыт)], ты можешь зайти внутрь и осмотреться, если захочешь...
 		#ELSE
-			 The words 'Ralph's Snacks' are painted in cursive gold lettering above the entrance, while a little sign hanging in the door's window informs you that the [style.colourMinorBad(opening hours are between [unit.time(6)] and [unit.time(22)])]. As the store is currently [style.colourBad(closed)], you'll have to come back later if you wanted to take a look inside...
+			Над входом золотыми буквами, выведенными курсивом, красуется надпись «Ralph's Snacks», а на маленькой табличке в оконной раме указано, что [style.colourMinorBad(часы работы: с [unit.time(6)] до [unit.time(22)])]. Поскольку магазин сейчас [style.colourBad(закрыт)], тебе придется вернуться позже, если захочешь заглянуть внутрь...
 		#ENDIF
 	</p>
 	]]>
@@ -23,54 +23,54 @@
 	<htmlContent tag="CANDI_LIPSTICK"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_ralphAskedAboutHundredKisses))
 		<p>
-			Wanting to finally get your [pc.hands] on the lipstick set Candi is looking for, you ask Ralph if he still has 'A Hundred Kisses' for sale. Much to your relief, he replies, [ralph.speech(Yeah, I've still got it locked up safely behind the counter. If you want it, it's going to be the same deal as before; [#SPECIAL_PARSE_1] flames.)]
+			Желая наконец-то потратить свои [pc.hands] на набор помады, который ищет Кэнди, ты спрашиваешь Ральфа, остались ли у него в продаже «Сто поцелуев». К твоему облегчению, он отвечает: [ralph.speech(Ага, всё еще храню под замком за прилавком. Если хочешь взять, цена такая же, как в прошлый раз; [#SPECIAL_PARSE_1] огней.)]
 		</p>
 		<p>
-			As you think about whether it would be a good idea to spend so much money on lipstick or not, Ralph continues,
+			Пока ты раздумываешь, стоит ли тратить столько денег на помаду, Ральф продолжает:
 			#IF(game.getSecondsPassed()-game.getDialogueFlags().ralphSexTimer<60*60*22)
-				 [ralph.speech(I can't afford to take any more time out today, so I can't offer you any alternative to the price in flames. Maybe tomorrow I'll give you the chance to have me try and knock you up again.)]
+				 [ralph.speech(Сегодня я не могу позволить себе тратить больше времени, так что альтернативы цене в огнях нет. Может, завтра я дам тебе шанс, и я попробую зачать тебя снова.)]
 			#ELSEIF(pc.isPregnant())
-				 [ralph.speech(There's no other deal I can offer you, seeing as you're already pregnant.)]
+				 [ralph.speech(Других сделок я предложить не могу, раз уж ты и так уже беременна.)]
 			#ELSEIF(pc.hasIncubationLitter(ORIFICE_VAGINA))
-				 [ralph.speech(There's no other deal I can offer you, seeing as you're already stuffed full of eggs.)]
+				 [ralph.speech(Других сделок я предложить не могу, раз уж ты и так уже набита яйцами под завязку.)]
 			#ELSEIF(!pc.hasVagina())
-				 [ralph.speech(Seeing as you haven't got a pussy, there's no other deal I can offer you.)]
+				 [ralph.speech(Раз уж у тебя нет киски, то и других сделок я предложить не могу.)]
 			#ELSEIF(!pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-				 [ralph.speech(Seeing as I can't get access to your pussy, there's no other deal I can offer you.)]
+				 [ralph.speech(Раз уж у меня нет доступа к твоей киске, то и других сделок я предложить не могу.)]
 			#ELSE
-				 [ralph.speech(Of course, if you want to have a go at my alternative deal, there's always that option available to you. All you need to do is lie down on my desk and let me put a kid or two in your belly. Of course, I'll have to test after I'm done that I've got you pregnant, but if I have, I'll give you the lipsticks for free...)]
+				 [ralph.speech(Конечно, если хочешь попробовать мою альтернативную сделку, такой вариант всегда остается. Тебе нужно лишь лечь на мой стол и позволить мне засадить в твой живот ребенка или парочку. Разумеется, после этого мне придется проверить, залетела ли ты, но если получится, то помады достанутся тебе бесплатно...)]
 			#ENDIF
 		</p>
 		<p>
-			With the horse-boy waiting to hear what your decision will be, you wonder whether you should buy the lipsticks or not...
+			Пока этот конь-мальчишка ждет твоего решения, ты раздумываешь, стоит ли покупать помады...
 		</p>
 	#ELSE
 		<p>
-			Knowing that this is the final hurdle before being able to get [brax.name] as your very own slave, you tell Ralph that you've heard he has the lipstick set, 'A Hundred Kisses', for sale, and that you were interested in purchasing it from him.
+			Понимая, что это последнее препятствие перед тем, как [brax.name] станет твоей собственной рабыней, ты говоришь Ralph, что слышала, будто у него на продажу есть набор помад «Сотня поцелуев», и что ты заинтересована в покупке.
 		</p>
 		<p>
-			[ralph.speech(Hah, is that so?)] Ralph laughs, leaning heavily down against the counter-top and grinning at you as he replies, [ralph.speech(I only ever told one person that I had that for sale, just one, and I've already had over ten people asking to buy it! The price turned out to be a little too steep for each of them, however, so it's still in my possession... How does fifty-thousand flames sound to you?)]
+			[ralph.speech(Ха, вот как?)] Ralph смеется, тяжело навалившись на прилавок, и ухмыляется тебе в ответ: [ralph.speech(Я сказал лишь одному человеку, что это есть у меня в продаже, всего одному, а ко мне уже подошли больше десяти покупателей! Впрочем, цена оказалась для каждого из них слишком кусачей, так что товар всё еще у меня... Как тебе пятьдесят тысяч огней?)]
 		</p>
 		<p>
-			As exclusive as it might be, fifty-thousand flames for a set of lipsticks is nothing less than outrageous. Without expressing too much shock, you ask Ralph if he's willing to drop the price at all, to which he replies,
+			Каким бы эксклюзивным ни был этот набор помад, пятьдесят тысяч огней — это не что иное, как грабёж. Не выказывая слишком сильного шока, ты спрашиваешь Ralph, готов ли он хоть немного сбить цену, на что он отвечает:
 			#IF(game.getDialogueFlags().ralphDiscount>0)
-				 [ralph.speech(After what you did for me before, of course! I'll give you the same [#SPECIAL_PARSE_0]-percent discount as I do on everything else in my shop. That'd make it [#SPECIAL_PARSE_1] flames, just for you!)]
+				 [ralph.speech(После того, что ты сделала для меня раньше — конечно! Я сделаю тебе такую же [#SPECIAL_PARSE_0]-процентную скидку, как и на всё остальное в моей лавке. Это будет стоить [#SPECIAL_PARSE_1] огней, специально для тебя!)]
 			#ELSE
-				 [ralph.speech(Sorry, but unless you're willing to do something for a special discount, then that's a no. Fifty-thousand flames is my final price.)]
+				 [ralph.speech(Прости, но если ты не готова на что-то эдакое ради скидки, то ответ — нет. Пятьдесят тысяч огней — моя окончательная цена.)]
 			#ENDIF
 		</p>
 		<p>
-			Just as you're wondering whether it would be worth paying that much for what is, ultimately, gaining [brax.name] as a slave, Ralph says,
+			Как раз в тот момент, когда ты раздумываешь, стоит ли платить столько за то, чтобы в итоге заполучить [brax.name] в рабство, Ralph говорит:
 			#IF(pc.isPregnant())
-				 [ralph.speech(You know, if you weren't pregnant, I could have offered you a special deal, but seeing as you've already got a bun in the oven, there's nothing else I can do for you.)]
+				 [ralph.speech(Знаешь, если бы ты не была беременна, я мог бы предложить тебе особые условия, но раз уж у тебя там «булочка в печи», больше мне делать нечего.)]
 			#ELSEIF(pc.hasIncubationLitter(ORIFICE_VAGINA))
-				 [ralph.speech(You know, if your womb wasn't stuffed full of eggs, I could have offered you a special deal, but seeing as you're 'unavailable', there's nothing else I can do for you.)]
+				 [ralph.speech(Знаешь, если бы твоя утроба не была забита яйцеклетками, я мог бы предложить тебе особые условия, но раз уж ты «занята», больше мне делать нечего.)]
 			#ELSEIF(!pc.hasVagina())
-				 [ralph.speech(You know, if you had a pussy, I could have offered you a special deal, but seeing as you're lacking the necessary parts, there's nothing else I can do for you.)]
+				 [ralph.speech(Знаешь, будь у тебя киска, я бы предложил тебе особую сделку, но раз уж тебе не хватает нужных запчастей, больше мне делать тебе нечего.)]
 			#ELSEIF(!pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-				 [ralph.speech(You know, if your pussy wasn't locked up like that, I could have offered you a special deal, but seeing as you're 'unavailable', there's nothing else I can do for you.)]
+				 [ralph.speech(Знаешь, если бы твоя киска не была так надежно заперта, я бы предложил тебе особую сделку, но раз ты «занята», больше мне делать тебе нечего.)]
 			#ELSE
-				 [ralph.speech(Of course, if you're looking for an alternative deal, there's always another option available to you... All you'd need to do is lie down on my desk here#IF(pc.hasLegs()), spread your legs,#ENDIF and let me put a kid or two in your belly. Of course, I'll have to test after I'm done that I've got you pregnant, but if I have, I'll give you the lipsticks for free...)]
+				 [ralph.speech(Конечно, если ты ищешь альтернативное предложение, у тебя всегда есть другой вариант... Нужно лишь лечь вот здесь, на мой стол,#IF(pc.hasLegs()), spread your legs,#ENDIF and let me put a kid or two in your belly. Of course, I'll have to test after I'm done that I've got you pregnant, but if I have, I'll give you the lipsticks for free...)]
 			#ENDIF
 		</p>
 	#ENDIF
@@ -79,38 +79,38 @@
 
 	<htmlContent tag="CANDI_LIPSTICK_PURCHASE_DECLINE"><![CDATA[
 	<p>
-		Telling Ralph that you're not going to buy the lipsticks right now, you step away from him and return to browsing the shelves...
+		Сказав Ralph, что покупать помаду прямо сейчас ты не собираешься, ты отходишь от него и возвращаешься к осмотру полок...
 	</p>
 	<p>
-		Most of the goods aren't anything special, and are just the typical sorts of food and drink that you could pick up anywhere. What sets this shop apart, however, is a special display of arcane-imbued consumables. The prices aren't listed, and instead, a little label reads 'Please ask Ralph for assistance with these items'.
+		Большинство товаров — обычное барахло, типичная еда и выпивка, которую можно найти где угодно. Однако особенностью этой лавки является витрина со специальными расходниками, пропитанными энергией Арканы. Цены не указаны, вместо них красуется маленькая табличка: «Пожалуйста, обращайтесь к Ralph за помощью в выборе этих товаров».
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CANDI_LIPSTICK_START_BREEDING"><![CDATA[
 	<p>
-		Liking the sound of Ralph's alternative deal, you playfully bite your lip and seductively declare your willingness to let him try and impregnate you. With a hungry grin quickly settling on his horse-like face, the shopkeeper steps around from the other side of his counter, before quickly moving over to lock the front door. Drawing the blinds so that no members of the public can see in, he then moves back over to stand before you.
+		Тебе приглянулось альтернативное предложение Ralph, и ты игриво прикусываешь губу, соблазнительно заявляя о своей готовности позволить ему попытаться оплодотворить тебя. На его лошадиной морде тут же расплывается голодная ухмылка; лавочник обходит прилавок и быстро идет к входной двери, чтобы запереть её. Задернув шторы, чтобы случайные прохожие ничего не увидели, он возвращается и встает прямо перед тобой.
 	</p>
 	<p>
-		[ralph.speech(I wouldn't offer this to just anyone, you know,)] the horse-boy says, reaching out to run his hands over your [pc.hips+], before sliding them around to grab your [pc.ass+] and then dominantly pulling you in against his muscular chest. [ralph.speech(So, are you ready for me to make you a mommy?)]
+		[ralph.speech(Я бы не предложил такое кому попало, знаешь ли,)] — говорит конь-мальчик, протягивая руки, чтобы провести ими по твоей [pc.hips+], а затем обхватывая твои [pc.ass+] и властно притягивая тебя к своей мускулистой груди. [ralph.speech(Ну что, ты готова к тому, что я сделаю из тебя мамочку?)]
 	</p>
 	<p>
-		As you open your mouth to say yes, the horse boy leans forwards and presses his lips against yours. Immediately thrusting his tongue into your mouth, he starts greedily groping and squeezing your [pc.ass+], before moving up to fondle your [pc.breasts+]. The two of you continue kissing one another like this for just a few moments, before Ralph suddenly pulls back and growls into your ear, [ralph.speech(Enough of the foreplay, it's time to breed you!)]
+		Стоит тебе открыть рот, чтобы сказать «да», как конь-мальчик подается вперед и прижимается своими губами к твоим. Тут же вонзая язык тебе в рот, он начинает жадно ощупывать и сжимать твою [pc.ass+], после чего переходит к ласкам твоей [pc.breasts+]. Вы продолжаете целоваться так еще несколько мгновений, прежде чем Ralph внезапно отстраняется и рычит тебе в ухо: [ralph.speech(Хватит прелюдий, пора тебя осеменить!)]
 	</p>
 	<p>
-		Grabbing hold of your [pc.hips+] once more, the horny horse-boy manhandles you over to the shop's counter, before
+		Снова хватая тебя за [pc.hips+], похотливый конь-мальчик бесцеремонно тащит тебя к прилавку лавки, после чего
 		#IF(pc.isTaur())
-			 getting you to step up onto it with the front legs of your feral [pc.legRace]'s body, and then to lie down on its surface, thereby presenting your rear-facing genitals to him.
+			 заставляет тебя взобраться на него передними ногами твоего дикого [pc.legRace], а затем лечь на поверхность, подставляя ему свои гениталии задом к нему.
 		#ELSE
-			 pushing you down, face-first, over the surface.
+			 вдавливает тебя лицом вниз на поверхность.
 		#ENDIF
-		 Looking back over your shoulder, you see Ralph quickly unzipping his trousers, before fishing out his massive, rapidly-hardening horse-cock. Seeming to then remember something important, he grabs a couple of '[#ITEM_innoxia_pills_fertility.getNamePlural(false)]' from out of a nearby drawer, before swallowing one himself and then getting you to take the other. Telling you that you're sure to get pregnant now, he moves on to quickly gain access to your [pc.pussy+], and you suddenly find yourself letting out a gasp as you feel his wide, flared head impatiently prodding forwards between your [pc.labia+].
+		 Оглянувшись через плечо, ты видишь, как Ralph быстро расстегивает ширинку и выуживает свой массивный, стремительно твердеющий конский член. Словно вспомнив о чем-то важном, он достает из ближайшего ящика пару '[#ITEM_innoxia_pills_fertility.getNamePlural(false)]', проглатывает одну сам, а вторую сует тебе. Уверяя, что теперь ты точно забеременеешь, он поспешно пробирается к твоей [pc.pussy+], и ты внезапно ахаешь, чувствуя, как его широкая, раздутая головка нетерпеливо упирается между твоих [pc.labia+].
 	</p>
 	<p>
-		Somehow managing to keep his lust under control for a few moments more, Ralph teases you with the promise of penetration, [ralph.speech(You want me to make you the mother of my children, don't you? Go on, beg for my cock! Beg for me to breed you!)]
+		Каким-то образом умудряясь еще несколько мгновений сдерживать свою Похоть, Ralph дразнит тебя обещанием проникновения: [ralph.speech(Ты ведь хочешь, чтобы я сделал тебя матерью моих детей, а? Ну же, умоляй о моем члене! Умоляй меня осеменить тебя!)]
 	</p>
 	<p>
-		By this point you're getting desperate for Ralph to start fucking you, and you eagerly cry out for him to breed you. Half-way through your submissive request, he suddenly obliges, and, thrusting forwards, he rams his hot, fat horse-cock deep into your hungry pussy. Arching your back#IF(pc.hasLegs()) and spreading your [pc.legs]#ENDIF, you let out a wild [pc.moan] as you feel Ralph take hold of your [pc.hips+] and start to pump into and out of your [pc.pussy+]...
+		К этому моменту ты уже в отчаянии ждешь, когда Ralph начнет трахать тебя, и с жадностью выкрикиваешь просьбу осеменить тебя. Не успеваешь ты договорить свою покорную мольбу, как он внезапно исполняет ее, резко подаваясь вперед и вонзая свой горячий, толстый конский член глубоко в твою голодную киску. Выгибая спину,#IF(pc.hasLegs()) and spreading your [pc.legs]#ENDIF, you let out a wild [pc.moan] as you feel Ralph take hold of your [pc.hips+] and start to pump into and out of your [pc.pussy+]...
 	</p>
 	]]>
 	</htmlContent>
@@ -120,13 +120,13 @@
 
 	<htmlContent tag="CANDI_LIPSTICK_PURCHASE"><![CDATA[
 	<p>
-		Deciding that [#SPECIAL_PARSE_1] flames is an acceptable price to pay in order to gain [brax.name] as your slave, you tell Ralph that you'd like to buy the lipstick set, 'A Hundred Kisses'. As he hears this, the horse-boy's face lights up, and with a voice full of surprised delight, he asks, [ralph.speech(Would you like it delivered to a particular address, or do you want to take it with you?)]
+		Решив, что [#SPECIAL_PARSE_1] @@T1@@ — приемлемая цена за то, чтобы сделать [brax.name] своей рабыней, ты говоришь Ralph, что хочешь купить набор помады «Сто поцелуев». Услышав это, лицо жеребца озаряется, и голосом, полным удивленного восторга, он спрашивает: [ralph.speech(Тебе доставить его по какому-то адресу или возьмешь с собой?)]
 	</p>
 	<p>
-		Thinking that it would be faster to take it back to Candi yourself, you decline the offer of having it delivered. Retrieving it from a locked cupboard nearby, Ralph places 'A Hundred Kisses' down on the counter before you. Although the box appears to be simple enough in design, it is flawless in construction, and is made from a combination of dark leather and rich mahogany. Opening the hinged lid, Ralph shows you that all one hundred of the individual lipsticks are contained within, and, happy with the product, you hand over the [#SPECIAL_PARSE_1] flames in exchange for it.
+		Решив, что будет быстрее отнести всё это Канди самой, ты отказываешься от доставки. Достав коробку из запертого шкафчика неподалеку, Ralph выкладывает «Сотню поцелуев» на прилавок перед тобой. Хотя дизайн коробки кажется довольно простым, исполнение безупречно: она сделана из сочетания темной кожи и богатого красного дерева. Открыв крышку, Ralph показывает тебе, что внутри находятся все сто отдельных помад, и, довольная покупкой, ты отдаешь [#SPECIAL_PARSE_1] огней в обмен на неё.
 	</p>
 	<p>
-		Thanking you for your custom, Ralph then asks if there's anything else he can help you with today...
+		Поблагодарив тебя за покупку, Ralph спрашивает, может ли он помочь тебе чем-нибудь еще сегодня...
 	</p>
 	]]>
 	</htmlContent>
@@ -136,7 +136,7 @@
 	
 	<htmlContent tag="AFTER_BREEDING"><![CDATA[
 	<p>
-		Having pumped his seed directly into your womb, and therefore having gotten what he wanted, Ralph steps back, letting out a satisfied growl as he looks down at your creampied-pussy. As you push yourself up off the counter and back onto your [pc.feet], the horse-boy grabs a nearby arcane pregnancy tester, before stepping forwards and saying, [ralph.speech(Let's find out if you're a mommy! Remember, you only get the lipsticks if I've knocked you up...)]
+		Выплеснув свое семя прямо тебе в утробу и получив всё, что хотел, Ralph отстраняется, довольно рыча и глядя на твою залитую спермой киску. Пока ты поднимаешься с прилавка и садишься обратно на свою [pc.feet], конь-мальчик хватает стоящий рядом арканный тест на беременность, делает шаг вперед и говорит: [ralph.speech(Давай узнаем, станешь ли ты мамочкой! Помни, помады ты получишь только если я тебя оплодотворил...)]
 	</p>
 	[#SPECIAL_PARSE_0]
 	]]>
@@ -144,33 +144,33 @@
 	
 	<htmlContent tag="AFTER_BREEDING_SUCCESS"><![CDATA[
 	<p>
-		With the pregnancy test showing a positive result, Ralph reaches forwards to run his hand over your stomach, smiling in delight as he exclaims, [ralph.speech(You're going to make an excellent mother! I knew my virile seed would have no trouble in getting you knocked up!)]
+		Когда тест на беременность показывает положительный результат, Ralph тянется вперед, чтобы провести рукой по твоему животу, и с восторженной улыбкой восклицает: [ralph.speech(Из тебя выйдет отличная мать! Я знал, что мое сильное семя без труда заставит тебя забеременеть!)]
 	</p>
 	<p>
-		Letting Ralph have his fun for a moment, you soon remind him of his end of the bargain, and that he now owes you the lipstick set, 'A Hundred Kisses'. Obviously valuing his success at having bred you far more than the monetary value of the lipstick set, the impregnation-obsessed horse-boy doesn't seem at all upset to be handing over the valuable item to you for free, and happily retrieves it from a locked cupboard nearby. Although the box appears to be simple enough in design, it is flawless in construction, and is made from a combination of dark leather and rich mahogany. Opening the hinged lid, Ralph shows you that all one hundred of the individual lipsticks are contained within, and, happy with the product, you take it and prepare to continue on your way.
+		Позволив Ralph немного развлечься, ты вскоре напоминаешь ему об условиях сделки: теперь он должен тебе набор помад «Сто поцелуев». Одержимый идеей оплодотворения конь-мальчик явно ценит свой успех в том, что он заставил тебя забеременеть, куда выше денежной стоимости набора, поэтому он ничуть не расстроен, отдавая тебе ценный товар на халяву, и с радостью достает его из запертого шкафчика неподалеку. Хотя коробочка выглядит довольно просто, сделана она безупречно — из сочетания темной кожи и богатого красного дерева. Открыв крышку, Ralph показывает тебе, что внутри лежат все сто отдельных помад, и, оставшись довольной покупкой, ты забираешь её и готовишься продолжить свой путь.
 	</p>
 	<p>
-		Remarking one last time about how your womb has been claimed by his strong seed, Ralph moves across the store to unlock the front door, before returning to his counter and asking if there's anything else he can help you with today...
+		В последний раз отметив, что твоё чрево уже помечено его сильным семенем, Ralph переходит через лавку, чтобы отпереть входную дверь, а затем возвращается к прилавку и спрашивает, может ли он еще чем-нибудь помочь тебе сегодня...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_BREEDING_FAILURE"><![CDATA[
 	<p>
-		With the pregnancy test showing a negative result, Ralph lets out a sigh and exclaims, [ralph.speech(I can't believe I didn't get you pregnant from that! Well, there's always tomorrow, if you want to come back and try again then...)]
+		Когда тест на беременность показывает отрицательный результат, Ralph тяжело вздыхает и восклицает: [ralph.speech(Поверить не могу, что от этого ты не забеременела! Ну, завтра всегда можно попробовать снова, если захочешь вернуться...)]
 	</p>
 	<p>
-		Having failed to impregnate you, Ralph moves across the store to unlock the front door, before returning to his counter and asking if there's anything else he can help you with today...
+		Потерпев неудачу в попытке оплодотворить тебя, Ralph переходит через лавку, чтобы отпереть входную дверь, а затем возвращается к прилавку и спрашивает, может ли он еще чем-нибудь помочь тебе сегодня...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="AFTER_BREEDING_INTERIOR"><![CDATA[
 	<p>
-		Stepping away from Ralph, you return to browsing the shelves of his shop...
+		Отойдя от Ralph, ты возвращаешься к осмотру полок в его лавке...
 	</p>
 	<p>
-		Most of the goods aren't anything special, and are just the typical sorts of food and drink that you could pick up anywhere. What sets this shop apart, however, is a special display of arcane-imbued consumables. The prices aren't listed, and instead, a little label reads 'Please ask Ralph for assistance with these items'.
+		Большинство товаров — обычное барахло, типичная еда и выпивка, которую можно найти где угодно. Однако особенностью этой лавки является витрина со специальными расходниками, пропитанными энергией Арканы. Цены не указаны, вместо них красуется маленькая табличка: «Пожалуйста, обращайтесь к Ralph за помощью в выборе этих товаров».
 	</p>
 	]]>
 	</htmlContent>
