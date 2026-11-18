@@ -95,7 +95,7 @@ public class OptionsDialogue {
 			}
 			
 			sb.append("<p>Эта игра - это текстовая эротическая RPG, и содержит много графического сексуального содержания. Вы должны согласиться с отговоркой игры, прежде чем играть в эту игру!</p>")
-					.append("<p>@@H1@@Пожалуйста, используйте либо мой блог, либо github, чтобы получить последнюю официальную версию Трон Лилит!@@H2@@@@H3@@")
+					.append("<p>Вы можете посетить мой блог (<a href='https://lilithsthrone.blogspot.co.uk'>https://lilithsthrone.blogspot.co.uk</a>), чтобы следить за ходом разработки (нажмите кнопку «Блог» ниже).</p>")
 					//.append(" [style.italicsMinorBad(<b>Note:</b> Intrusive age verification is being rolled out on blogspot, so I will likely create a new blog soon.)]</p>")
 					.append("<p style='text-align:center'><b>Пожалуйста, используйте мой блог или github, чтобы получить последнюю официальную версию Трон Лилит!</b></p>")
 					.append("<p style='text-align:center'><i>Скопируйте содержимое вашей папки 'data', чтобы использовать ваши старые сохранения в этой версии!</i></p>");
@@ -130,8 +130,8 @@ public class OptionsDialogue {
 				 if(confirmNewGame || !Main.game.isStarted()) {
 					return new ResponseEffectsOnly(
 							(!Main.game.isStarted()
-									?"New Game"
-									:"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Confirm</b>"),
+									?"Новая игра"
+									:"<b style='color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";'>Подтвердить</b>"),
 							"Начать новую игру."
 								+(Main.game.isStarted()
 									?"<br/><br/>[style.italicsMinorBad(Не забудьте сначала сохранить свою игру!)]</b>"
@@ -665,7 +665,7 @@ public class OptionsDialogue {
 			} else if (index == 2) {
 
 				if (Main.getProperties().hasValue(PropertyValue.lightTheme)) {
-					return new Response("Темная тема", "Переключить тему на темную.@@H0@@@@H1@@@@H2@@Это еще не закончено...@@H3@@.", OPTIONS){
+					return new Response("Темная тема", "Переключить тему на темную.", OPTIONS){
 						@Override
 						public void effects() {
 							Main.mainController.switchTheme();
@@ -1167,7 +1167,7 @@ public class OptionsDialogue {
 	}
 	
 	
-	public static final DialogueNode PATCH_NOTES = new DialogueNode("@@H0@@Patch Notes", "Patch notes", true) {
+	public static final DialogueNode PATCH_NOTES = new DialogueNode("Заметки о патчах", "Заметки о патчах", true) {
 		
 		@Override
 		public String getContent(){
@@ -1177,7 +1177,7 @@ public class OptionsDialogue {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if (index == 0) {
-				return new Response("@@H0@@Назад", "@@H0@@", MENU);
+				return new Response("Назад", "Вернуться в главное меню.", MENU);
 				
 			}else {
 				return null;

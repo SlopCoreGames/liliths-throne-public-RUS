@@ -252,6 +252,8 @@ def unmask_text(text: str, masks: dict) -> str:
 def validate_masks(translated: str, masks: dict) -> bool:
     if "Контекст:" in translated or "Context:" in translated:
         return False
+    if any(tok not in masks for tok in re.findall(r"@@[HT]\d+@@", translated)):
+        return False
     return all(key in translated for key in masks)
 
 

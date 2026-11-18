@@ -1920,7 +1920,7 @@ public class MainController implements Initializable {
 			String id = "option_" + i;
 			if (((EventTarget) document.getElementById(id)) != null) {
 				SetContentEventListener el = new SetContentEventListener().setIndex(i);
-				((EventTarget) document.getElementById(id)).addEventListener("click", el, false);
+				addEventListener(document, id, "click", el, false);
 				
 				addEventListener(document, id, "mousemove", responseTooltipListener, false);
 				addEventListener(document, id, "mouseleave", hideTooltipListener, false);
@@ -1939,7 +1939,7 @@ public class MainController implements Initializable {
 	private static void setResponseTabListeners(int responsePageCounter) {
 		String id = "tab_" + responsePageCounter;
 
-		((EventTarget) document.getElementById(id)).addEventListener("click", e -> {
+		addEventListener(document, id, "click", e -> {
 				Main.game.setResponseTab(responsePageCounter);
 				Main.game.updateResponses();
 			}, false);
