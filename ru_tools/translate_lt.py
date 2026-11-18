@@ -195,16 +195,30 @@ def record_energy_sample(dt_sec: float, temp_c: float, gpu_w: float):
     _SESSION_ENERGY["peak_w"] = max(_SESSION_ENERGY["peak_w"], gpu_w)
 
 
-def adaptive_thermal_guard(max_temp: float = 88.0, resume_temp: float = 76.0):
+def is_daytime_work_window() -> bool:
+    """Return True during 09:00-18:00 MSK (system local time) to keep PC responsive."""
+    h = time.localtime().tm_hour
+    return 9 <= h < 18
+
+
+def adaptive_thermal_guard(max_temp: float | None = None, resume_temp: float | None = None):
+    daytime = is_daytime_work_window()
+    if max_temp is None:
+        max_temp = 82.0 if daytime else 88.0
+    if resume_temp is None:
+        resume_temp = 70.0 if daytime else 76.0
     t, _w = get_gpu_telemetry()
     if t >= max_temp:
         hs, core, vram = get_nvapi_hotspot_temp()
-        print(f"  [THERMAL GUARD] HotSpot/Max {t:.1f}C (Core {core:.1f}C, VRAM {vram:.1f}C) >= {max_temp}C, cooling down to <= {resume_temp}C...", flush=True)
+        mode = "DAY" if daytime else "NIGHT"
+        print(f"  [THERMAL GUARD {mode}] HotSpot/Max {t:.1f}C (Core {core:.1f}C, VRAM {vram:.1f}C) >= {max_temp}C, cooling down to <= {resume_temp}C...", flush=True)
         while t > resume_temp:
             time.sleep(10)
             t, _w = get_gpu_telemetry()
             hs, core, vram = get_nvapi_hotspot_temp()
-            print(f"  [THERMAL GUARD] HotSpot/Max now {t:.1f}C (Core {core:.1f}C, VRAM {vram:.1f}C)", flush=True)
+            print(f"  [THERMAL GUARD {mode}] HotSpot/Max now {t:.1f}C (Core {core:.1f}C, VRAM {vram:.1f}C)", flush=True)
+    elif daytime:
+        time.sleep(2.5)
     elif t >= 80.0:
         time.sleep(0.6)
     else:
@@ -274,7 +288,7 @@ def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_toke
         headers={"Content-Type": "application/json"},
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=240) as r:
+    with urllib.request.urlopen(req, timeout=600) as r:
         data = json.loads(r.read().decode("utf-8"))
 
     dt = time.monotonic() - t0
