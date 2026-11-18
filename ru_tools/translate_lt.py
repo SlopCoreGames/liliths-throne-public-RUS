@@ -95,6 +95,77 @@ def save_energy_stats(stats: dict):
         json.dump(stats, f, ensure_ascii=False, indent=2)
 
 
+_NVAPI_INIT = False
+_NVAPI_GPU = None
+_NVAPI_GET_SENSORS = None
+
+
+def _init_nvapi_sensors():
+    global _NVAPI_INIT, _NVAPI_GPU, _NVAPI_GET_SENSORS
+    if _NVAPI_INIT:
+        return _NVAPI_GET_SENSORS is not None and _NVAPI_GPU is not None
+    _NVAPI_INIT = True
+    try:
+        import ctypes
+        nv = ctypes.WinDLL(r"C:\Windows\System32\nvapi64.dll")
+        nv.nvapi_QueryInterface.restype = ctypes.c_void_p
+        nv.nvapi_QueryInterface.argtypes = [ctypes.c_uint32]
+
+        def get_fn(fid, restype, argtypes):
+            addr = nv.nvapi_QueryInterface(fid)
+            return ctypes.CFUNCTYPE(restype, *argtypes)(addr) if addr else None
+
+        init_fn = get_fn(0x0150E828, ctypes.c_int, [])
+        enum_fn = get_fn(
+            0xE5AC921F,
+            ctypes.c_int,
+            [ctypes.POINTER(ctypes.c_void_p * 64), ctypes.POINTER(ctypes.c_uint32)],
+        )
+        sens_fn = get_fn(0x65FE3AAD, ctypes.c_int, [ctypes.c_void_p, ctypes.c_void_p])
+        if not (init_fn and enum_fn and sens_fn) or init_fn() != 0:
+            return False
+        gpus = (ctypes.c_void_p * 64)()
+        cnt = ctypes.c_uint32(0)
+        if enum_fn(ctypes.byref(gpus), ctypes.byref(cnt)) != 0 or cnt.value == 0:
+            return False
+        _NVAPI_GPU = gpus[0]
+        _NVAPI_GET_SENSORS = sens_fn
+        return True
+    except Exception:
+        return False
+
+
+def get_nvapi_hotspot_temp() -> tuple[float, float, float]:
+    """Return (max_hotspot_c, core_c, vram_c) via NVAPI thermal sensors (mask 0x3FF)."""
+    if not _init_nvapi_sensors():
+        return 0.0, 0.0, 0.0
+    try:
+        import ctypes
+
+        class NV_GPU_THERMAL_SENSORS_V2(ctypes.Structure):
+            _fields_ = [
+                ("version", ctypes.c_uint32),
+                ("mask", ctypes.c_uint32),
+                ("reserved", ctypes.c_uint32 * 8),
+                ("temperatures", ctypes.c_int32 * 32),
+            ]
+
+        s = NV_GPU_THERMAL_SENSORS_V2()
+        s.version = ctypes.sizeof(s) | (2 << 16)
+        s.mask = 0x3FF
+        if _NVAPI_GET_SENSORS(_NVAPI_GPU, ctypes.byref(s)) != 0:
+            return 0.0, 0.0, 0.0
+        temps = [t / 256.0 for t in s.temperatures[:10] if 0 < t < 50000]
+        if not temps:
+            return 0.0, 0.0, 0.0
+        core_c = s.temperatures[0] / 256.0
+        hotspot_c = max(temps)
+        vram_c = s.temperatures[4] / 256.0
+        return hotspot_c, core_c, vram_c
+    except Exception:
+        return 0.0, 0.0, 0.0
+
+
 def get_gpu_telemetry() -> tuple[float, float]:
     try:
         out = subprocess.check_output(
@@ -103,7 +174,9 @@ def get_gpu_telemetry() -> tuple[float, float]:
             text=True,
         ).strip()
         parts = [p.strip() for p in out.splitlines()[0].split(",")]
-        return float(parts[0]), float(parts[1])
+        core_c, gpu_w = float(parts[0]), float(parts[1])
+        hotspot_c, _nv_core, _vram = get_nvapi_hotspot_temp()
+        return max(core_c, hotspot_c), gpu_w
     except Exception:
         return 0.0, 0.0
 
@@ -122,15 +195,17 @@ def record_energy_sample(dt_sec: float, temp_c: float, gpu_w: float):
     _SESSION_ENERGY["peak_w"] = max(_SESSION_ENERGY["peak_w"], gpu_w)
 
 
-def adaptive_thermal_guard(max_temp: float = 75.0, resume_temp: float = 67.0):
+def adaptive_thermal_guard(max_temp: float = 88.0, resume_temp: float = 76.0):
     t, _w = get_gpu_telemetry()
     if t >= max_temp:
-        print(f"  [THERMAL GUARD] GPU {t:.1f}C >= {max_temp}C, cooling down to <= {resume_temp}C...", flush=True)
+        hs, core, vram = get_nvapi_hotspot_temp()
+        print(f"  [THERMAL GUARD] HotSpot/Max {t:.1f}C (Core {core:.1f}C, VRAM {vram:.1f}C) >= {max_temp}C, cooling down to <= {resume_temp}C...", flush=True)
         while t > resume_temp:
             time.sleep(10)
             t, _w = get_gpu_telemetry()
-            print(f"  [THERMAL GUARD] GPU now {t:.1f}C", flush=True)
-    elif t >= 68.0:
+            hs, core, vram = get_nvapi_hotspot_temp()
+            print(f"  [THERMAL GUARD] HotSpot/Max now {t:.1f}C (Core {core:.1f}C, VRAM {vram:.1f}C)", flush=True)
+    elif t >= 80.0:
         time.sleep(0.6)
     else:
         time.sleep(0.15)

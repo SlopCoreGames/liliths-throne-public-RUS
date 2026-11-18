@@ -5,261 +5,260 @@
 
 	<htmlContent tag="MISSION_START"><![CDATA[
 	<p>
-		[pc.Stepping] out of the room, you and Ghost follow Hammer as he unlocks a door on your right and leads you into another corridor. A second door is unlocked, and then the three of you are standing outside in a narrow alley behind the Enforcer station.
+		[pc.Stepping] Выйдя из комнаты, ты и Ghost следуешь за Hammer: он отпирает дверь справа от тебя и ведет вас по очередному коридору. Вторая дверь тоже оказывается незапертой, и вот вы уже стоите в узком переулке позади станции Enforcer.
 	</p>
 	<p>
-		[hammer.speech(It's quicker to get to the hideout this way,)] Hammer states as he removes a padlock from a barbed-wire gate at the end of the alley. Locking it behind you, he adds, [hammer.speech(We won't be seen by as many of the gang's lookouts by going this way as well.)]
+		[hammer.speech(Так до убежища добраться быстрее,)] — заявляет Hammer, снимая навесной замок с калитки из колючей проволоки в конце переулка. Заперев её за вами, он добавляет: [hammer.speech(Так мы еще и не попадемся на глаза стольким дозорным банды.)]
 	</p>
 	<p>
-		Although the alleyways which you subsequently find yourself travelling through appear to be deserted at first glance, you soon spot a couple of shady-looking figures keeping watch from the shadows. Holding Hammer's hand and leaning into him to make it appear as though the two of them are a couple, Ghost lets out a surprisingly youthful giggle and teases her partner, [ghost.speech(Looking forward to having some fun tonight?)]
+		Хотя переулки, по которым вы идете, на первый взгляд кажутся пустынными, вскоре ты замечаешь парочку подозрительных личностей, следящих за вами из теней. Держа Hammer за руку и прижимаясь к нему, чтобы со стороны вы казались парой, Ghost издает удивительно юный смешок и дразнит своего партнера: [ghost.speech(Ждешь, что сегодня ночью будет весело?)]
 	</p>
 	<p>
-		Hammer pulls his cap down further over his eyes and lets out a deep grunt. The lookouts seem to have been fooled by the show Ghost has put on, for the three of you arrive at the Enforcer's hideout without causing any alarm to be raised.
+		Hammer сильнее натягивает кепку на глаза и издает глубокий хмык. Похоже, дозорные повелись на игру Ghost, ведь вы втроем добираетесь до убежища Enforcer, не подняв лишнего шума.
 	</p>
 	<p>
-		Their hideout takes the form of a derelict building, and the Enforcers have led you to a rotten, graffiti-covered door situated to its rear. Following the two of them inside, you see that the staircase has collapsed and several large holes have been smashed in the walls. Revealing why this building was chosen as their hideout, Ghost states, [ghost.speech(The gang's HQ is across the street from this building. We've been observing them from here for a few weeks now; take a look through that hole over there. Oh, and stay away from the windows.)]
+		Их убежище представляет собой заброшенное здание, и Enforcers привели тебя к гнилой, исписанной граффити двери с тыльной стороны. Пройдя за ними внутрь, ты видишь, что лестница обрушилась, а в стенах зияют несколько огромных дыр. Объясняя, почему это здание выбрали в качестве логова, Гост произносит: [ghost.speech(Штаб банды находится прямо через дорогу от этого здания. Мы наблюдаем за ними отсюда уже несколько недель; глянь вон в ту дыру. О, и держись подальше от окон.)]
 	</p>
 	<p>
-		Peeking through the hole which Ghost has pointed out, you find yourself looking out onto an unusually wide alleyway. Directly opposite from where you're positioned, you can quite clearly see the entire frontage of an old, abandoned bakery. A couple of tall, muscular figures are lighting up a couple of cigarettes outside the entrance. At first you assume that they're horse-boys, but as the orange glow from their lighter catches in their red and orange eyes, you realise that they're half-horse, half-demon nightmares. As they talk, one of them pumps his hips and makes some kind of joke, to which the other laughs and gives his companion a high-five. With their cigarettes still lit, they open the bakery's front door and disappear into the building.
+		Заглянув в дыру, на которую указал Гост, ты обнаруживаешь вид на необычайно широкий переулок. Прямо напротив тебя отчетливо виден фасад старой заброшенной пекарни. У входа пара высоких мускулистых фигур прикуривают сигареты. Сначала ты принимаешь их за лошадиных парней, но когда оранжевый огонек зажигалки отражается в их красно-оранжевых глазах, ты понимаешь, что это кошмарные полудемоны-полулошади. Пока они болтают, один из них игриво двигает бедрами, отпуская какую-то шутку, на что другой смеется и дает товарищу «пять». Не выключив сигарет, они открывают парадную дверь пекарни и скрываются внутри здания.
 	</p>
 	<p>
-		Hammer nods as you report what you've just seen, before saying, [hammer.speech(It's too early for Angelixx to show up yet; she usually doesn't make an appearance until around midnight. Those nightmares always arrive an hour or two before she does, though, so perhaps she'll be early tonight. We'd better get geared up right away.)]
+		Hammer кивает, слушая твой отчет, а затем произносит: [hammer.speech(Для Анжеликсы еще слишком рано; обычно она появляется ближе к полуночи. Но эти кошмары всегда приходят за час или два до нее, так что, возможно, сегодня она будет пораньше. Нам лучше поскорее снарядиться.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_GEARED_UP"><![CDATA[
 	<p>
-		Pulling up a couple of loose floorboards in one corner of the room, Hammer lifts out a couple of large, black duffel bags. He and Ghost then quickly strip out of their civilian clothing, before pulling Enforcer gear out of the bags and putting it on.
+		Подняв пару расшатанных половиц в углу комнаты, Hammer достает две большие черные спортивные сумки. Затем он и Ghost быстро скидывают гражданскую одежду, достают из сумок снаряжение Enforcer и облачаются в него.
 	</p>
 	<p>
-		[ghost.speech(I'd rather be wearing trainers than these,)] Ghost complains as she pulls on a pair of sturdy-looking boots. As she does up the laces, she adds, [ghost.speech(They make my heels ache and it's hard for me to move silently in them...)]
+		[ghost.speech(Я бы предпочла кроссовки вместо этих,)] — ворчит Ghost, натягивая пару крепких на вид сапог. Затягивая шнурки, она добавляет: [ghost.speech(От них пятки ноют, и в них так трудно двигаться бесшумно...)]
 	</p>
 	<p>
-		[hammer.speech(I don't recall you complaining about them when they saved your feet from those caltrops a couple of months back,)] Hammer grunts as he pulls on a heavy plate carrier and sets about doing up the straps.
+		[hammer.speech(Не припомню, чтобы ты жаловалась на них, когда они спасли твои ноги от тех шипов пару месяцев назад,)] — хмыкает Hammer, натягивая тяжелый бронежилет и принимаясь застегивать ремни.
 	</p>
 	<p>
-		A couple of minutes later and the two Enforcers are fully kitted out in military-style gear. Ghost's setup look to be a little lighter than Hammer's, but they're both wearing boots, trousers, battle belts, and plate carriers. Fixing a dagger to one side of her belt, Ghost attaches a holster to the other, before sliding an old, worn-looking revolver into it. Hammer's choice of weaponry is a little less subtle, as he lifts a huge, 4-gauge shotgun from out of the space beneath the floorboards.
+		Спустя пару минут оба Enforcer уже полностью экипированы в военном стиле. Снаряжение Ghost кажется чуть более легким, чем у Hammer, но на обоих надеты ботинки, брюки, тактические пояса и бронежилеты. Закрепив кинжал с одной стороны пояса, Ghost пристегивает кобуру с другой и вкладывает в неё старый, потертый револьвер. Выбор оружия Hammer куда менее изящный: он достает огромное 4-е калиброванное ружье из пространства под половицами.
 	</p>
 	<p>
-		[hammer.speech(Now we wait for the succubus to show up,)] Hammer states, before sitting on an upturned metal bucket and saying to you, [hammer.speech(Got any questions while we wait?)]
+		[hammer.speech(Теперь ждем, когда суккуб явится,)] — заявляет Hammer, прежде чем усесться на перевернутое металлическое ведро и спросить тебя: [hammer.speech(Есть вопросы, пока ждем?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_TALK_WEAPONS"><![CDATA[
 	<p>
-		Looking at the shotgun that Hammer has leant up against the wall beside him, you ask him if that's his normal choice of weapon.
+		Глядя на ружье, которое Hammer прислонил к стене рядом с собой, ты спрашиваешь его, является ли оно его привычным выбором оружия.
 	</p>
 	<p>
-		[hammer.speech(Only on ops like this, where we can't risk being recognised,)] Hammer replies, [hammer.speech(This thing's a bit of relic; they were phased out of Enforcer service in the late eighties. They fire tear gas grenades, which are good enough, but the modern pepper grenade launcher is far more effective. See this marking on the side?)]
+		[hammer.speech(Только на таких операциях, где нельзя рисковать тем, что нас узнают,)] — отвечает Hammer. — [hammer.speech(Эта штука — настоящий реликт; их сняли с вооружения Enforcer еще в конце восьмидесятых. Они стреляют гранатами со слезоточивым газом, что вполне сойдет, но современные гранатометы с перцовым газом куда эффективнее. Видишь эту маркировку сбоку?)]
 	</p>
 	#IF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_gbshotgun, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbsmg, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pboltrifle, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbrevolver, true))
 		<p>
 			#IF(pc.hasWeaponTypeEquipped(WEAPON_dsg_hlf_weap_gbshotgun))
-				Showing Hammer your own shotgun, which is exactly the same as his, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
-			#ELSEIF(pc.hasWeaponTypeEquipped(WEAPON_dsg_hlf_weap_pbsmg))
-				Showing Hammer your pepperball submachine gun, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
+				Показав Hammer свое ружье, которое в точности совпадает с его собственным, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хрюканье, волк-мальчишка спрашивает: [hammer.speech(Тебе никогда не было интересно, что значит этот символ?)]
+				#ELSEIF(pc.hasWeaponTypeEquipped(WEAPON_dsg_hlf_weap_pbsmg))
+				Показывая Hammer свой перцовый пистолет-пулемёт, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хмыканье, волк-мальчишка спрашивает: [hammer.speech(Ты когда-нибудь задумывалась, что значит этот символ?)]
 			#ELSEIF(pc.hasWeaponTypeEquipped(WEAPON_dsg_hlf_weap_pboltrifle))
-				Showing Hammer your pepperball bolt-action rifle, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
+				Показывая Hammer свою перцовую винтовку с продольно-скользящим затвором, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хмыканье, волк-мальчишка спрашивает: [hammer.speech(Ты когда-нибудь задумывалась, что значит этот символ?)]
 			#ELSEIF(pc.hasWeaponTypeEquipped(WEAPON_dsg_hlf_weap_pbrevolver))
-				Showing Hammer your pepperball revolver, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
+				Показывая Hammer свой перцовый револьвер, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хмыканье, волк-мальчишка спрашивает: [hammer.speech(Ты когда-нибудь задумывалась, что значит этот символ?)]
 			#ELSEIF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_gbshotgun, false))
-				Showing Hammer your own shotgun, which is exactly the same as his, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
-			#ELSEIF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbsmg, false))
-				Showing Hammer your pepperball submachine gun, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
+				Показав Hammer свое ружье, которое в точности совпадает с его собственным, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хрюканье, волк-мальчишка спрашивает: [hammer.speech(Тебе никогда не было интересно, что значит этот символ?)]
+				#ELSEIF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbsmg, false))
+				Показывая Hammer свой перцовый пистолет-пулемёт, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хмыканье, волк-мальчишка спрашивает: [hammer.speech(Ты когда-нибудь задумывалась, что значит этот символ?)]
 			#ELSEIF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_pboltrifle, false))
-				Showing Hammer your pepperball bolt-action rifle, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
+				Показывая Hammer свою перцовую винтовку с продольно-скользящим затвором, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хмыканье, волк-мальчишка спрашивает: [hammer.speech(Ты когда-нибудь задумывалась, что значит этот символ?)]
 			#ELSEIF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbrevolver, false))
-				Showing Hammer your pepperball revolver, you compare the markings and see that they're identical. Letting out an amused grunt, the wolf-boy asks, [hammer.speech(You ever wonder what that symbol means?)]
+				Показывая Hammer свой перцовый револьвер, ты сравниваешь маркировки и видишь, что они идентичны. Издав усмешливое хмыканье, волк-мальчишка спрашивает: [hammer.speech(Ты когда-нибудь задумывалась, что значит этот символ?)]
 			#ENDIF
 		</p>
 		<p>
-			Taking a closer look at both your and Hammer's weapons, you see that they each bear an Enforcer's five-pointed star symbol, both of which have been scratched out. A new marking has been carved into each weapon, which both look like a striking arrow within a circle.
+			Присмотревшись повнимательнее к твоему оружию и оружию Hammer, ты замечаешь, что на каждом из них красуется пятиконечная звезда Enforcer, но обе они грубо зацарапаны. Вместо них на каждом оружии вырезана новая метка — она выглядит как броская стрела внутри круга.
 		</p>
 	#ELSE
 		<p>
-			You take a closer look at the side of the shotgun as Hammer holds it towards you. The Enforcer's five-pointed star symbol has been scratched out, and beside it a striking arrow within a circle has been carved into the metal.
+			Ты внимательнее осматриваешь бок дробовика, пока Хаммер держит его перед тобой. Пятиконечная звезда — символ Enforcer — была грубо соскоблена, а рядом с ней в металле вырезан бросающийся в глаза символ: стрела внутри круга.
 		</p>
 	#ENDIF
 	<p>
-		[hammer.speech(That's one of the symbols the HLF used,)] the wolf-boy reveals, [hammer.speech(The 'Human Liberation Front' got their hands on a lot of Enforcer gear back in the Fifth Human Rebellion. This one was used against us until the owner's jaw felt my fist. It went 'missing' from the evidence room many years ago, so it can't be traced back to us.)]
+		[hammer.speech(Это один из символов, которые использовала HLF,)] — признается волк-мальчишка, — [hammer.speech(Во время Пятого восстания людей «Фронт освобождения человечества» разжился кучей снаряжения Enforcer. Этим ружьем пользовались против нас, пока челюсть владельца не встретилась с моим кулаком. Много лет назад оно «исчезло» из комнаты вещдоков, так что по нему нас не вычислят.)]
 	</p>
 	<p>
-		[ghost.speech(I prefer a more subtle approach,)] Ghost says as she unsheathes her dagger and shows off its wicked, poison-enchanted ethereal blade. Patting the revolver at her hip, she adds, [ghost.speech(When I can't get up close and personal, this does the trick. Like Hammer's shotgun, this was in the hands of the HLF; I picked it up off a particularly stubborn human on Green Grass Hill...)]
+		[ghost.speech(А я предпочитаю действовать тоньше,)] — говорит Призрак, обнажая кинжал и демонстрируя его зловещее, пропитанное ядом эфирное лезвие. Похлопав по револьверу на бедре, она добавляет: [ghost.speech(Когда не получается подобраться вплотную, эта штука выручает. Как и дробовик Хаммера, это оружие когда-то было в руках HLF; я подобрала его у одного особенно упрямого человека на холме Грин-Грасс...)]
 	</p>
 	<p>
-		[hammer.speech(We never recovered even half of the weapons that the HLF had,)] Hammer says,
+		[hammer.speech(Нам так и не удалось вернуть даже половину оружия, которое было у HLF,)] — говорит Хаммер,
 		#IF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_gbshotgun, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbsmg, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pboltrifle, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbrevolver, true))
-			 [hammer.speech(So I'm not particularly surprised to see that you've got one. There are thousands of these things in the hands of gangs all across the realm, so us using them tonight won't identify us as Enforcers. Oh, and don't worry about us confiscating that from you; I'm just glad to see that it's being used on the side of good. Better that than rotting in some evidence locker for decades...)]
+			 [hammer.speech(Так что меня не особо удивляет, что оно есть у тебя. По всему королевству банды держат тысячи таких штук, так что если мы возьмем их сегодня ночью, нас не сразу примут за Enforcer. О, и не бойся, что мы его у тебя конфискуем; я просто рад видеть, что оно служит на стороне добра. Это лучше, чем десятилетиями гнить в какой-нибудь камере хранения...)]
 		#ELSE
-			 [hammer.speech(Thousands are thought to be in the hands of gangs all across the realm, so us using them tonight won't identify us as Enforcers.)]
+			 [hammer.speech(Говорят, тысячи таких по всему королевству разбрелись по бандам, так что если мы воспользуемся ими сегодня, нас не сразу примут за Enforcer.)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.hasWeaponType(WEAPON_dsg_hlf_weap_gbshotgun, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbsmg, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pboltrifle, true) || pc.hasWeaponType(WEAPON_dsg_hlf_weap_pbrevolver, true))
-			You point out that while your weapons might not identify you as Enforcers, both Hammer and Ghost are wearing what's clearly Enforcer gear. Surely that'll be enough to identify them to the gang members.
+			Ты замечаешь, что пусть твое оружие и не выдает в тебе Enforcer, но и Hammer, и Ghost явно одеты в их снаряжение. Очевидно, что этого будет достаточно, чтобы члены банды их узнали.
 		#ELSE
-			You point out that their weapons might not, but they're wearing what's clearly Enforcer gear. Surely that'll be enough to identify them to the gang members.
+			Ты указываешь на то, что их оружие, может, и не выдает их, но на них явно надето снаряжение Enforcer. Очевидно, что этого будет достаточно, чтобы члены банды их узнали.
 		#ENDIF
 	</p>
 	<p>
-		[ghost.speech(All the serious gangs are wearing SWORD gear,)] Ghost replies with a weary smirk on her face. [ghost.speech(Too many Enforcer quartermasters over the years have become very wealthy while marking down an abnormally high amount of equipment as being 'destroyed in the line of duty'. The gang we're going to be dealing with tonight will think that we're a serious rival operation from Dominion.)]
+		[ghost.speech(Все серьезные банды носят снаряжение SWORD,)] отвечает Ghost с усталой ухмылкой на лице. [ghost.speech(За эти годы слишком много интендантов Enforcer сказочно разбогатели, списывая аномально большое количество экипировки как «уничтоженную при исполнении». Банда, с которой мы имеем дело сегодня, решит, что мы — серьезная конкурирующая группировка из Dominion.)]
 	</p>
 	#IF(pc.hasQuestInLine(QUEST_LINE_SIDE_WES, QUEST_WES_3_WES))
 		<p>
-			[hammer.speech(I heard some fox in 1st Battalion put a stop to that in Dominion. Was a local boy from around here too. Good on him,)] Hammer says. Recognising the fact that he's talking about Wes, you tell the Enforcers that you helped the fox-boy he's talking about. Hammer gives an approving nod in response, before grunting, [hammer.speech(Good to hear that there's still at least one guy who's doing something about the corruption in Dominion.)]
+			[hammer.speech(Слышал, какой-то лис из первого батальона приструнил их в Dominion. Тоже был местным парень. Молодец,)] — говорит Hammer. Поняв, что он говорит о Весе, ты сообщаешь Enforcer, что помогала тому самому «лису». Hammer в ответ одобрительно кивает, а затем хмыкает: [hammer.speech(Приятно знать, что в Dominion всё еще есть хоть один человек, который борется с Порочностью.)]
 		</p>
 	#ENDIF
 	<p>
-		Thinking that it must be challenging to come up against gangs who have the same kit as them, you ask the Enforcers if the proliferation of SWORD equipment to gangs makes their job a lot harder.
+		Подумав, что противостоять бандам, у которых снаряжение ничем не хуже их собственного, должно быть непросто, ты спрашиваешь Enforcers, не усложняет ли распространение экипировки SWORD среди банд их работу.
 	</p>
 	<p>
-		[hammer.speech(Hardware is one thing, training and experience are another,)] Hammer replies, [hammer.speech(Besides, the vast majority of gangs are motivated by money, which doesn't make them fight as hard as you might think.)]
+		[hammer.speech(Снаряжение — это одно, а тренировки и опыт — совсем другое,)] — отвечает Hammer, — [hammer.speech(К тому же, большинство банд движимо лишь жаждой наживы, так что они сражаются не так яростно, как можно было бы ожидать.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_TALK_GANG"><![CDATA[
 	<p>
-		Thinking that it would be best to know what you're likely to come up against once inside, you ask the Enforcers what to expect from the gang in terms of combat capabilities.
+		Решив, что лучше заранее знать, с чем тебе придется столкнуться внутри, ты спрашиваешь Enforcers, чего ожидать от банды в плане боевых способностей.
 	</p>
 	<p>
-		[ghost.speech(They're just a bunch of amateurs,)] Ghost dismissively states, [ghost.speech(The only ones who might be more than that are those two nightmare you saw earlier, as well as Angelixx herself.)]
+		[ghost.speech(Да они просто кучка дилетантов,)] — пренебрежительно заявляет Ghost, — [ghost.speech(Единственные, кто может представлять серьезную угрозу, — это те два кошмара, которых ты видела раньше, да сама Angelixx.)]
 	</p>
 	<p>
-		[hammer.speech(The succubus is meant to be a coward, though,)] Hammer says, [hammer.speech(and those two bodyguards of hers aren't anything to be concerned about.)]
+		[hammer.speech(Хотя эта суккуб, говорят, та еще трусиха,)] — говорит Hammer, — [hammer.speech(да и её двое телохранителей — не такая уж большая проблема.)]
 	</p>
 	<p>
-		[ghost.speech(True, there shouldn't be any difficulty,)] Ghost says, before turning to smile at you and say, [ghost.speech(Remember, you're not here to fight, you're here to get Lovienne off our backs if we're recognised. Leave the violence to us.)]
+		[ghost.speech(Верно, трудностей быть не должно,)] — говорит Ghost, после чего поворачивается к тебе с улыбкой и добавляет: [ghost.speech(Помни, ты здесь не для того, чтобы сражаться. Твоя задача — увести Lovienne подальше от нас, если нас узнают. А насилие оставь нам.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_TALK_SUCCUBUS"><![CDATA[
 	<p>
-		Wanting to know how they plan on dealing with Angelixx, you ask the two Enforcers what their plan is for when you encounter the succubus.
+		Желая узнать, как они планируют разобраться с Angelixx, ты спрашиваешь двух Enforcers, каков их план на случай встречи с суккубом.
 	</p>
 	<p>
-		[hammer.speech(I'll shoot her,)] Hammer grunts, giving his mean-looking shotgun a pat as he does so. [hammer.speech(If that isn't enough, then I'll show her some SWORD close combat techniques.)]
+		[hammer.speech(Я в неё выстрелю,)] — ворчит Hammer, похлопывая по своему грозному дробовику. [hammer.speech(А если и этого будет мало, тогда покажу ей пару приёмов ближнего боя SWORD.)]
 	</p>
 	<p>
-		[ghost.speech(Leave the close combat to me,)] Ghost says with a sly smile on her face, before replying to your initial question, [ghost.speech(Angelixx won't be an issue; even if she turns out to not be a complete coward, we've taken down hundreds of demons before. She won't be an issue.)]
+		[ghost.speech(Ближний бой оставь мне,)] — говорит Ghost с хитрой ухмылкой на лице, а затем отвечает на твой вопрос: [ghost.speech(Angelixx не станет проблемой; даже если она окажется не полной трусихой, мы и не таких сотни демонов валили. Она нам не помеха.)]
 	</p>
-	<p>
-		[hammer.speech(Just don't let her talk too much,)] Hammer grunts, [hammer.speech(If she can't fight, she's bound to have some tricks up her sleeve. I'd wager that she's using telepathy or some other kind of arcane spell to control her gang. Don't let her get into your head.)]
+	<p>		[hammer.speech(Только не давай ей слишком много болтать,)] — хмыкает Hammer. [hammer.speech(Если она не умеет драться, значит, у неё припрятаны какие-то козыри в рукаве. Готов поспорить, она использует телепатию или какое-нибудь другое заклинание Арканы, чтобы управлять своей бандой. Главное — не давай ей залезть тебе в голову.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_TALK_BACKUP"><![CDATA[
 	<p>
-		Wondering if the three of you are going to be enough to handle an entire gang, you ask Hammer and Ghost if they're going to call for the other SWORD Enforcers as soon as they start the operation.
+		Задаваясь вопросом, хватит ли вас троих, чтобы справиться со всей бандой, ты спрашиваешь Hammer и Ghost, позовут ли они остальных Enforcer из SWORD, как только начнется операция.
 	</p>
 	<p>
-		[hammer.speech(I'll call for them if they're needed, not before,)] Hammer replies, [hammer.speech(The two of us will be more than enough to deal with a bunch of amateurs.)]
+		[hammer.speech(Позову, если понадобится, но не раньше,)] — отвечает Hammer. [hammer.speech(Нас двоих с головой хватит, чтобы размазать кучку дилетантов.)]
 	</p>
 	<p>
-		[ghost.speech(It's probably for the best that the gang's increased vigilance forced us into leaving most of the squad behind,)] Ghost adds, [ghost.speech(If we were to start the op with everyone present then Angelixx might get spooked and teleport away before we get a chance to deal with her.)]
+		[ghost.speech(Наверное, даже к лучшему, что из-за возросшей бдительности банды нам пришлось оставить большую часть отряда позади,)] — добавляет Ghost. [ghost.speech(Если бы мы начали операцию всем составом, Angelixx могла бы струхнуть и телепортироваться прочь прежде, чем мы успеем с ней разобраться.)]
 	</p>
 	<p>
-		[hammer.speech(Good point,)] Hammer grunts, before holding up a small, dark-purple orb for you to see and explaining, [hammer.speech(If the gang turns out to be more competent than we're expecting then I'll activate this resonance stone. Its counterpart is back at the Enforcer station, and if it's activated then the rest of the squad will be here within a couple of minutes.)]
+		[hammer.speech(Справедливо,)] — ворчит Hammer, после чего поднимает перед твоими глазами небольшой темно-пурпурный шар и объясняет: [hammer.speech(Если банда окажется куда способнее, чем мы ожидаем, я активирую этот резонансный камень. Его пара находится на станции Enforcer, и если его задействовать, остальная часть отряда будет здесь через пару минут.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_TALK_HISTORY"><![CDATA[
 	<p>
-		Curious to find out what it's like to be a member of SWORD, you ask Hammer and Ghost what sort of duties they're expected to perform.
+		Тебе любопытно узнать, каково это — быть членом SWORD, поэтому ты спрашиваешь Hammer и Ghost, какие обязанности обычно ложатся на их плечи.
 	</p>
 	<p>
-		[hammer.speech(The small-time criminals are for the Patrol officers, which leaves all the big boys and girls for us in SWORD to deal with,)] Hammer says, [hammer.speech(We go after organised crime, serious gangs, and criminals who are simply too dangerous or strong for the Patrol guys and gals to deal with.)]
+		[hammer.speech(Мелкая шпана — это забота патрульных, так что все крупные шишки достаются нам в SWORD,)] — говорит Hammer, — [hammer.speech(Мы охотимся на организованную преступность, серьезные банды и преступников, которые слишком опасны или сильны для обычных патрульных.)]
 	</p>
 	<p>
-		[ghost.speech(We're not just the muscle; we do a lot of the investigative work as well,)] Ghost adds, [ghost.speech(Of course, ORICL often has targets which we need to deal with, but most of the time we're gathering our own intelligence to act upon.)]
+		[ghost.speech(Мы не просто грубая сила; мы также ведем много следственной работы,)] — добавляет Ghost, — [ghost.speech(Конечно, ORICL часто дает нам цели, с которыми нужно разобраться, но чаще всего мы сами собираем разведданные, чтобы начать действовать.)]
 	</p>
 	<p>
-		Wondering how often they go out on missions like this one, you ask the two Enforcers if they're behind a desk more often than not.
+		Задавшись вопросом, как часто они отправляются на подобные миссии, ты спрашиваешь двух Enforcer, не приходится ли им чаще сидеть за столом, чем в поле.
 	</p>
 	<p>
-		[ghost.speech(Well, we do carry out a lot of ops, but most of our time is in the office or out on the streets gathering intel or pursuing different leads,)] Ghost replies, [ghost.speech(Our unit leans more into carrying out ops like this one, although I guess tonight's a special one; we normally number at least eight and use modern SWORD gear. Other units are more focused on solving serious crime, and others are bit too close to ORICL for comfort...)]
+		[ghost.speech(Ну, мы проводим немало операций, но большую часть времени проводим в офисе или на улицах, собирая разведданные или выслеживая зацепки,)] — отвечает Призрак, — [ghost.speech(Наше подразделение больше специализируется на таких операциях, хотя, полагаю, сегодня особенный случай; обычно нас как минимум восемь, и мы используем современное снаряжение SWORD. Другие отряды больше сосредоточены на раскрытии тяжких преступлений, а другие... слишком уж близки к ORICL, что не всегда внушает доверие...)]
 	</p>
 	<p>
-		[hammer.speech(Snatching people off the streets for saying something bad about Lilith isn't what I signed up for,)] Hammer grunts, [hammer.speech(ORICL should do their own dirty work...)]
+		[hammer.speech(Похищать людей прямо с улиц за то, что они плохо отзываются о Lilith — не то, на что я подписывался,)] — ворчит Молот, — [hammer.speech(ORICL должны сами выполнять всю эту грязную работу...)]
 	</p>
 	<p>
-		[ghost.speech(Our unit's all on the same page on that one,)] Ghost says, before taking another look through the hole in the wall and sighing, [ghost.speech(No sign of Angelixx yet...)]
+		[ghost.speech(В этом вопросе мы все на одной волне,)] — говорит Призрак, после чего снова заглядывает в дыру в стене и вздыхает: — [ghost.speech(Анжеликсы пока не видно...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_WAIT"><![CDATA[
 	<p>
-		You get as comfortable as the derelict building will allow and wait for the operation to start. Hammer and Ghost take turns at the hole in the wall, keeping watch for any sign of the succubus, Angelixx. Although the three of you make some occassional small talk, nothing much is said for the rest of the evening.
+		Ты устраиваешься поудобнее, насколько это позволяет заброшенное здание, и ждешь начала операции. Молот и Призрак по очереди заглядывают в дыру в стене, высматривая признаки появления суккуба, Анжеликсы. Хотя вы втроем изредка перекидываетесь парой фраз, до конца вечера вы почти не разговариваете.
 	</p>
 	<p>
-		[hammer.speech(It's almost midnight,)] Hammer eventually grunts after taking a look at his watch. Tutting to himself, he grumbles, [hammer.speech(Angelixx is normally here by now... Maybe she called off the meeting tonight?)]
+		[hammer.speech(Уже почти полночь,)] — наконец бурчит Молот, взглянув на свои часы. Цокая языком, он ворчит: — [hammer.speech(Анжеликса обычно уже давно здесь... Может, она отменила встречу на сегодня?)]
 	</p>
 	<p>
-		[ghost.speech(No, the usual number of gang members have shown up,)] Ghost says from her position at the hole in the wall, before suddenly hissing, [ghost.speech(Shit! She's already inside! I just saw her through the bedroom window!)]
+		[ghost.speech(Нет, обычное число членов банды еще не подоспело,)] — доносится голос Призрака из дыры в стене, после чего она внезапно шипит: [ghost.speech(Дерьмо! Она уже внутри! Я только что видела её в окне спальни!)]
 	</p>
 	<p>
-		[hammer.speech(Fuck, she must have gone in through the back,)] Hammer grunts as he leaps to his feet, [hammer.speech(Every other time she's used the front door. Of course she'd choose this night to change her habits...)]
+		[hammer.speech(Блядь, она, должно быть, зашла через заднюю дверь,)] — ворчит Молот, вскакивая на ноги, [hammer.speech(Каждый раз она пользовалась парадным входом. Конечно же, она решила сменить привычки именно этой ночью...)]
 	</p>
 	<p>
-		Pulling on their balaclavas and strapping their ballistic helmets into place, Ghost and Hammer quickly check their weapons and turn to face you.
+		Натянув балаклавы и затянув ремешки шлемов, Призрак и Молот быстро проверяют оружие и поворачиваются к тебе.
 	</p>
 	<p>
-		[hammer.speech(I'm going in through the front, Ghost'll take the back. Which one of us do you want to stick with?)] Hammer asks as he picks up a sledgehammer which had been resting against the wall.
+		[hammer.speech(Я пойду через парадный, Призрак возьмет заднюю. С кем из нас хочешь пойти?)] — спрашивает Молот, подхватывая лежащую у стены кувалду.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_HAMMER"><![CDATA[
 	<p>
-		Thinking that it would be safer to be with the large wolf-boy and his fearsome-looking shotgun, you tell Hammer that you'll go with him. Giving you a brief nod, he opens the door and rushes across the street, while Ghost slips off down an alleyway to the side of the bakery.
+		Подумав, что безопаснее будет держаться рядом с крупным волком и его устрашающим дробовиком, ты говоришь Молоту, что пойдешь с ним. Коротко кивнув тебе, он распахивает дверь и перебегает улицу, в то время как Призрак ускользает в переулок сбоку от пекарни.
 	</p>
 	<p>
-		[hammer.speech(Stand back,)] the wolf-boy grunts as the two of you come to a halt beside the bakery's front door. Giving the wolf-boy some space, you watch as he lifts his sledgehammer and swings it at a point just beside the door's handle. The heavy mass of metal turns a huge chunk of weathered wood into a shower of splinters. The force of the blow completely shatters the lock and slams the door wide open in the process.
+		[hammer.speech(Отойди назад,)] — хрипит волк, когда вы вдвоем замираете у входной двери пекарни. Оставив ему немного пространства, ты наблюдаешь, как он заносит кувалду и наносит удар чуть сбоку от дверной ручки. Тяжелый кусок металла превращает огромный пласт обветренного дерева в облако щепок. Сила удара полностью разносит замок, и дверь с грохотом распахивается настежь.
 	</p>
 	<p>
-		Having served its purpose, the wolf-boy tosses his sledgehammer aside and lifts up his shotgun. Giving you the briefest of nods, he rushes into the building...
+		Исполнив свою задачу, волк-мальчишка отбрасывает кувалду в сторону и вскидывает дробовик. Коротко кивнув тебе, он бросается внутрь здания...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_START_GHOST"><![CDATA[
 	<p>
-		Thinking that it would be better to rely on Ghost and her combination of wicked-looking dagger and revolver, you tell the otter-girl that you'll go with her. Giving you a brief nod, Hammer opens the door and rushes across the street to the bakery's front door, while Ghost motions for you to follow her and slips off down an alleyway to one side of the building.
+		Решив, что лучше положиться на Призрака с её опасным дуэтом из кинжала и револьвера, ты говоришь девочке-выдре, что пойдешь с ней. Коротко кивнув тебе, Хаммер распахивает дверь и перебегает через улицу к главному входу в пекарню, в то время как Призрак жестом велит тебе следовать за ней и скрывается в переулке сбоку от здания.
 	</p>
 	<p>
-		[ghost.speech(Stay quiet,)] the otter-girl whispers as you catch up with her. Doing your best to move stealthily, you follow Ghost as she sneaks through the shadows and around the corner to the rear of the bakery. Just as with the front of the building, the gang has neglected to post a sentry, and so Ghost is able to get to the back door without issue. Producing a lockpick, she has the door open in seconds, and uses a hand signal to gesture for you to follow her inside.
+		[ghost.speech(Тише,)] — шепчет девочка-выдра, когда ты нагоняешь её. Стараясь двигаться максимально бесшумно, ты следуешь за Призраком, пока она крадется сквозь тени и огибает угол, выходя к задней части пекарни. Как и у главного входа, банда забыла выставить часового, так что Призрак без труда добирается до задней двери. Достав отмычку, она в считанные секунды вскрывает замок и жестом приглашает тебя войти следом.
 	</p>
 	<p>
-		Sliding her dagger out of its sheath, the otter-girl silently slips into the shadowy interior...
+		Вынимая кинжал из ножен, девочка-выдра бесшумно скользит в сумрачный интерьер...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_COMBAT_WON"><![CDATA[
 	<p>
-		The gang members collapse to the floor, utterly defeated.
+		Члены банды рушатся на пол, потерпевшие полное поражение.
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
-			 Quickly stepping forwards, Hammer kicks their weapons away, and with another couple of kicks he makes sure that they're not getting up any time soon. Turning to look at you, he grunts, [hammer.speech(They'd do the same to us. Come on, we need to keep moving.)]
+			 Быстро шагнув вперед, Хаммер отшвыривает их оружие пинками, а затем еще парой ударов добивает их, чтобы они не вздумали скоро подняться. Повернувшись к тебе, он ворчит: [hammer.speech(Они бы поступили с нами так же. Пошли, нельзя здесь задерживаться.)]
 		#ELSE
-			 Quickly darting forwards, Ghost kicks their weapons away, and with a couple of swift stabs with her arcane dagger she makes sure that they're well and truly drained of energy. Turning to look at you, she smirks and says, [ghost.speech(It's better than they deserve. Come on, we need to keep moving.)]
+			 Быстро метнувшись вперед, Призрак отшвыривает их оружие, а затем парой стремительных ударов своего аркана-кинжала добивает их, окончательно высасывая всю энергию. Повернувшись к тебе, она ухмыляется и говорит: [ghost.speech(Они заслужили большего. Пошли, нам нельзя задерживаться.)]
 		#ENDIF
 	</p>
 	<p>
-		Knowing that you need to find and beat Angelixx as quickly as possible, you do as
+		Понимая, что тебе нужно найти и одолеть Анжеликс как можно скорее, ты слушаешь
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
-			 Hammer says and follow him
+			 Хаммера и идешь за ним,
 			#IF(flags.hasFlag(FLAG_innoxia_ghost_following))
-				 and Ghost
+				 а также за
 			#ENDIF
-			 further into the building...
+			 Призраком вглубь здания...
 		#ELSE
-			 Ghost says and follow her further into the building...
+			 слушаешь Призрак и идешь за ней дальше вглубь здания...
 		#ENDIF
 	</p>
 	]]>
@@ -267,28 +266,28 @@
 	
 	<htmlContent tag="MISSION_COMBAT_LOST"><![CDATA[
 	<p>
-		You can't bring yourself to fight any more and back away from the conflict.
+		Ты не находишь в себе сил продолжать бой и отступаешь от конфликта.
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
-			 Thankfully, Hammer is more than enough to defeat the gang members, and after a couple of rounds from his shotgun his opponents have collapsed to the floor.
+			 К счастью, сил Хаммера вполне хватает, чтобы расправиться с бандитами: после пары выстрелов из его дробовика противники оседают на пол.
 		#ELSE
-			 Thankfully, Ghost is more than enough to defeat the gang members, and after a couple of rounds from her revolver her opponents have collapsed to the floor.
+			 К счастью, сил Призрак вполне хватает, чтобы расправиться с бандитами: после пары выстрелов из её револьвера противники оседают на пол.
 		#ENDIF
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
-			 Quickly stepping forwards, the wolf-boy kicks their weapons away, and with another couple of kicks he makes sure that they're not getting up any time soon. Turning to look at you, he grunts, [hammer.speech(They'd do the same to us. Come on, we need to keep moving.)]
+			 Быстро шагнув вперед, волк-мальчик отшвыривает их оружие, а затем парой мощных пинков добивает их, чтобы они не вздумали скоро подняться. Повернувшись к тебе, он ворчит: [hammer.speech(Они бы поступили с нами так же. Пошли, нам нужно двигаться дальше.)]
 		#ELSE
-			 Quickly darting forwards, the otter-girl kicks their weapons away, and with a couple of swift stabs with her arcane dagger she makes sure that they're well and truly drained of energy. Turning to look at you, she smirks and says, [ghost.speech(It's better than they deserve. Come on, we need to keep moving.)]
+			 Быстро метнувшись вперед, девочка-выдра отшвыривает их оружие и парой стремительных ударов своего аркана-кинжала добивает врагов, окончательно выкачивая из них всю энергию. Повернувшись к тебе, она ухмыляется и говорит: [ghost.speech(Они получили больше, чем заслуживали. Пошли, нам нельзя задерживаться.)]
 		#ENDIF
 	</p>
 	<p>
-		Knowing that you need to find and beat Angelixx as quickly as possible, you do as
+		Понимая, что тебе нужно найти и одолеть Анжеликс как можно скорее, ты слушаешь
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
-			 Hammer says and follow him
+			 Хаммера и идешь за ним,
 			#IF(flags.hasFlag(FLAG_innoxia_ghost_following))
-				 and Ghost
+				 а также за
 			#ENDIF
-			 further into the building...
+			 Призраком вглубь здания...
 		#ELSE
-			 Ghost says and follow her further into the building...
+			 слушаешь Призрак и идешь за ней дальше вглубь здания...
 		#ENDIF
 	</p>
 	]]>
@@ -301,10 +300,10 @@
 
 	<htmlContent tag="EXTERIOR"><![CDATA[
 	<p>
-		Turning a corner in the alleyways, you find yourself standing before the abandoned bakery which served as the headquarters for Angelixx's gang. The front door, having been destroyed by Hammer at the start of their raid, has been replaced by several sheets of plywood held together by rusty nails and old planks of wood. Although someone has taken the trouble to put up this makeshift barrier, the building looks to be completely deserted.
+		Свернув за угол в переулках, ты оказываешься перед заброшенной пекарней, которая служила штабом банды Анжеликс. Входная дверь, разнесенная Молотом в начале налета, теперь заменена листами фанеры, скрепленными ржавыми гвоздями и старыми досками. И хотя кто-то не поленился соорудить этот импровизированный барьер, здание выглядит совершенно пустым.
 	</p>
 	<p>
-		Knowing that it would be far more trouble than it's worth to try and gain entry to the abandoned bakery, you [pc.walk] past the building and continue on your way through the alleyways of Elis...
+		Понимая, что попытка пробраться в заброшенную пекарню принесет куда больше хлопот, чем пользы, ты [pc.walk] здание и продолжаешь свой путь по переулкам Элиса...
 	</p>
 	]]>
 	</htmlContent>
@@ -315,29 +314,29 @@
 	<htmlContent tag="BACK_DOOR"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_innoxia_sword_mission_back_door) && !flags.hasFlag(FLAG_innoxia_hammer_following))
 		<p>
-			Following Ghost into the building, you find yourself entering a small, dimly-lit pantry. The food and drink which were once stored in here are long gone, and in their place old, empty cans and ruined bags of flour are strewn across the shelves. What grabs your attention the most, however, is a massive, hulking alligator-boy. Thankfully his back is towards you, and so he hasn't seen you or Ghost.
+			Следуя за Призраком в здание, ты попадаешь в маленькую, тускло освещенную кладовую. Еда и напитки, что когда-то здесь хранились, давно исчезли, а на полках вместо них валяются пустые жестянки и рваные мешки из-под муки. Однако больше всего твое внимание привлекает массивный, громоздкий аллигатор-парень. К счастью, он стоит к тебе спиной, так что он еще не заметил ни тебя, ни Призрака.
 		</p>
 		<p>
-			[ghost.speech(Stay here,)] the small otter-girl whispers in your ear. Deciding to do as she says, you remain stationary and watch as the comparatively tiny Enforcer sneaks up on the gang member. With a nimble leap that you didn't think possible for a woman of her age, Ghost jumps up onto the guard's back, hooking her left arm around his neck and slamming his lower jaw upwards so as to prevent him from crying out. With the poison-bladed dagger in her right paw, she repeatedly drives it deep into her target, first into his throat, and then into his chest. The sudden, overwhelming violence of Ghost's attack completely overwhelms the massive alligator-boy, and he crumples to the ground with a heavy thud. Luckily for him, Ghost's blade is arcane in nature, and so you see that he's still breathing, although imagine that he isn't likely to regain consciousness any time soon after being struck so many times.
+			[ghost.speech(Оставайся здесь,)] — шепчет тебе на ухо маленькая девочка-выдра. Решив послушаться, ты замираешь и наблюдаешь, как крошечная Enforcer подкрадывается к члену банды. Ловким прыжком, который, казалось, не под силу женщине её возраста, Призрак запрыгивает на спину охраннику, обхватывает его шею левой рукой и с силой бьёт его снизу вверх под челюсть, чтобы тот не успел вскрикнуть. Сжимая в правой лапе кинжал с отравленным лезвием, она раз за разом вонзает его глубоко в цель: сначала в горло, а затем в грудь. Внезапная, сокрушительная ярость атаки Призрака полностью обескураживает массивного аллигатора, и тот с тяжелым глухим звуком валится на пол. К счастью для него, клинок Призрака обладает свойствами Арканы, так что ты видишь, что он всё еще дышит, хотя вряд ли он скоро придет в сознание после такого количества ударов.
 		</p>
 		<p>
-			Nimbly jumping off the gang member's back as he falls to the floor, Ghost motions for you to catch up as she slips into the kitchen...
+			Ловко спрыгнув со спины падающего на пол бандита, Призрак жестом приглашает тебя поспешить за ней и скрывается на кухне...
 		</p>
 	#ELSE
 		<p>
-			You find yourself standing in the small, dimly-lit pantry that's situated behind the bakery's kitchen. The food and drink which were once stored in here are long gone, and in their place old, empty cans and ruined bags of flour are strewn across the shelves. The back door which
+			Ты стоишь в маленькой, тускло освещенной кладовой, расположенной за кухней пекарни. Еда и напитки, что когда-то здесь хранились, давно исчезли, а на их месте на полках разбросаны старые пустые консервные банки и порванные мешки из-под муки. Здесь же находится задняя дверь, через которую
 			#IF(flags.hasFlag(FLAG_innoxia_sword_mission_chose_hammer))
-				 Ghost
+				 Призрак
 			#ELSE
-				 you and Ghost
+				 ты и Призрак
 			#ENDIF
-			 used to enter the bakery is found here.
+			 раньше входили в пекарню.
 		</p>
 		<p>
-			Slumped down on the floor on one side of the room is a huge, muscular alligator-boy. Having been on the receiving end of Ghost's dagger, he's not likely to be getting up any time soon.
+			В одном углу комнаты, понурившись, на полу сидит огромный мускулистый аллигатор-мальчик. После удара кинжалом Призрака он вряд ли скоро сможет подняться.
 		</p>
 		<p>
-			[ghost.speech(Come on, we need to go the other way,)] Ghost hisses, before turning to return to the kitchen...
+			[ghost.speech(Живее, нам нужно идти в другую сторону,)] — шипит Призрак, прежде чем развернуться и отправиться обратно на кухню...
 		</p>
 	#ENDIF
 	]]>
@@ -346,47 +345,47 @@
 	<htmlContent tag="KITCHEN"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_innoxia_sword_mission_kitchen) && !flags.hasFlag(FLAG_innoxia_hammer_following))
 		<p>
-			Following Ghost into the kitchen, you see more signs that this bakery has been out of commission for some time. The large ovens which must have once baked hundreds of loaves of bread a day are covered with cobwebs and a thick layer of dust. All of the metal bread racks and other pieces of kitchen furniture have been piled up in the middle of the long room, effectively creating an impassable barrier that splits the area in two.
+			Следуя за Призраком на кухню, ты замечаешь еще больше признаков того, что эта пекарня заброшена уже давно. Огромные печи, в которых когда-то пекли сотни буханок хлеба в день, покрыты паутиной и толстым слоем пыли. Все металлические стеллажи и кухонная мебель свалены в кучу посреди длинного помещения, образуя непреодолимый барьер, разделяющий комнату надвое.
 		</p>
 		<p>
-			What draws your attention the most, however, is the pair of gang members who are standing a short way in front of you. This encounter isn't going to be as straightforward as the last one, for both of them have seen you and Ghost enter the kitchen.
+			Однако больше всего твое внимание привлекает пара бандитов, стоящих чуть впереди тебя. Эта стычка не будет такой же простой, как предыдущая, ведь оба они видели, как ты и Призрак вошли на кухню.
 		</p>
 		<p>
-			[gangMember1.speech(Where did you come from?!)] the [gangMember1.raceFull(true)] demands.
+			[gangMember1.speech(Вы откуда здесь взялись?!)] — требует [gangMember1.raceFull(true)].
 		</p>
 		<p>
-			[gangMember2.speech(What did you do to Jaws? You're going to fucking pay!)] the [gangMember2.raceFull(true)] standing next to [gangMember1.herHim] shouts.
+			[gangMember2.speech(Что вы сделали с Челюстью? Вы, блядь, за это заплатите!)] — кричит [gangMember2.raceFull(true)], стоящий рядом с [gangMember1.herHim].
 		</p>
 		<p>
-			[ghost.speech(Leave this to me,)] Ghost says to you, [ghost.speech(they won't take me long...)]
+			[ghost.speech(Оставь это мне,)] — говорит тебе Призрак, [ghost.speech(они не займут у меня много времени...)]
 		</p>
 	#ELSEIF(flags.hasFlag(FLAG_innoxia_hammer_following) && !flags.hasFlag(FLAG_innoxia_ghost_following))
 		<p>
-			Following Hammer through the door, you find yourself entering the bakery's kitchen, where you see more signs that this business has been out of commission for some time. The large ovens which must have once baked hundreds of loaves of bread a day are covered with cobwebs and a thick layer of dust. All of the metal bread racks and other pieces of kitchen furniture have been removed, leaving this area looking very empty.
+			Следуя за Хаммером в дверной проем, ты оказываешься на кухне пекарни. Здесь повсюду видны следы того, что это заведение давно заброшено. Огромные печи, в которых когда-то выпекали сотни буханок хлеба в день, покрыты паутиной и толстым слоем пыли. Все металлические стеллажи и прочая кухонная мебель были вывезены, из-за чего помещение кажется совсем пустым.
 		</p>
 		<p>
-			As you look around the room, you see the familiar figure of Ghost standing beside one of the ovens. A couple of gang members are collapsed down, unconscious, at her feet, and as she turns to face you she reveals, [ghost.speech(I didn't expect you here yet. I've only just finished with these two.)]
+			Оглядываясь по сторонам, ты замечаешь знакомый силуэт Призрака, стоящей у одной из печей. У её ног, без сознания, растянулись двое бандитов. Когда она поворачивается к тебе, то произносит: [ghost.speech(Не ожидала тебя так рано. Только-только закончила с этими двоими.)]
 		</p>
 		<p>
-			[hammer.speech(You used to be a lot quicker,)] Hammer grunts as he quickly steps over to his partner.
+			[hammer.speech(Раньше ты была куда шустрее,)] — ворчит Хаммер, быстро шагая к своей напарнице.
 		</p>
 		<p>
-			[ghost.speech(Being quick isn't always a good thing,)] Ghost replies, and you can tell that she's smirking beneath her balaclava. She lowers her voice as Hammer approaches her, but not enough to prevent you from overhearing her tease, [ghost.speech(My place later, just like old times.)]
+			[ghost.speech(Быть шустрой — не всегда к лучшему,)] — отвечает Призрак, и ты почти чувствуешь её ухмылку под балаклавой. Когда Хаммер подходит ближе, она понижает голос, но не настолько, чтобы ты не услышал её поддразнивание: [ghost.speech(Позже заглянешь ко мне, как в старые добрые времена.)]
 		</p>
 		<p>
-			Letting out a deep, rumbling growl, Hammer motions for you to follow as he moves in front of Ghost to take the lead...
+			Издавая низкий, рокочущий рык, Хаммер жестом велит тебе следовать за ним и, обойдя Призрака, идет впереди, прокладывая путь...
 		</p>
 	#ELSE
 		<p>
-			You find yourself moving through the bakery's kitchen, where you see more signs that this business has been out of commission for some time. The large ovens which must have once baked hundreds of loaves of bread a day are covered with cobwebs and a thick layer of dust.
-			#IF(flags.hasFlag(FLAG_innoxia_sword_mission_chose_hammer))
-				 All of the metal bread racks and other pieces of kitchen furniture have been removed, leaving this area looking very empty.
+			Ты идешь по кухне пекарни, где видишь еще больше признаков того, что это место давно не функционирует. Огромные печи, в которых когда-то выпекали сотни буханок хлеба в день, покрыты паутиной и толстым слоем пыли.
+		<p>			#IF(flags.hasFlag(FLAG_innoxia_sword_mission_chose_hammer))
+				 Все металлические стеллажи для хлеба и прочая кухонная мебель были вынесены, из-за чего помещение кажется совсем пустым.
 			#ELSE
-				 All of the metal bread racks and other pieces of kitchen furniture have been piled up in the middle of the long room, effectively creating an impassable barrier that splits the area in two.
+				 Все металлические стеллажи для хлеба и прочая кухонная мебель свалены в кучу посреди длинного зала, образуя непреодолимый барьер, который делит помещение на две части.
 			#ENDIF
 		</p>
 		<p>
-			[ghost.speech(Come on, let's keep moving,)] Ghost hisses to you while nimbly moving forwards...
+			[ghost.speech(Давай, не отставай,)] — шипит тебе Призрак, ловко продвигаясь вперед...
 		</p>
 	#ENDIF
 	]]>
@@ -394,29 +393,29 @@
 	
 	<htmlContent tag="KITCHEN_NO_FIGHT"><![CDATA[
 	<p>
-		Deciding to do as Ghost says, you move back to give her some space as she prepares to fight the two gang members.
+		Решив поступить так, как говорит Призрак, ты отступаешь, чтобы дать ей немного пространства, пока она готовится к бою с двумя бандитами.
 	</p>
 	<p>
-		[gangMember1.speech(Hah! You think you can beat us alone? You're so small an imp coul-)] the [gangMember1.name] starts to taunt, but [gangMember1.sheIs] silenced by three shots fired in quick succession from Ghost's revolver. The gelatin capsules burst in contact with [gangMember1.her] aura, splattering [gangMember1.herHim] with burning, stinging oil.
+		[gangMember1.speech(Ха! Думаешь, сможешь одолеть нас в одиночку? Ты такая крошечная, что любой бес мог бы...)] — начинает насмехаться [gangMember1.name], но [gangMember1.sheIs] замолкает под тремя быстрыми выстрелами из револьвера Призрака. Желатиновые капсулы лопаются при контакте с Аурой [gangMember1.her], забрызгивая [gangMember1.herHim] обжигающим, жгучим маслом.
 	</p>
 	<p>
-		[gangMember2.Name] manages to leap to one side and narrowly dodge two of the next three shots which Ghost fires at [gangMember2.herHim]. Although the single shot which connects with [gangMember2.her] aura isn't enough to down [gangMember2.herHim], Ghost rushes forwards with unexpected speed and plunges her dagger into [gangMember2.her] side. Nimbly darting between the two gang members, the small otter-girl stabs each of them dozens of times, before rolling to one side and raising her revolver to shoot them again.
+		[gangMember2.Name] успевает отпрыгнуть в сторону, едва уклоняясь от двух из трех следующих выстрелов, которыми Призрак целит в [gangMember2.herHim]. Хотя одного попадания в Ауру [gangMember2.her] недостаточно, чтобы свалить [gangMember2.herHim], Призрак с неожиданной скоростью бросается вперед и вонзает свой кинжал в бок [gangMember2.her]. Ловко лавируя между двумя бандитами, маленькая девочка-выдра наносит каждому из них десятки ударов, после чего перекатывается в сторону и вскидывает револьвер, чтобы выстрелить снова.
 	</p>
 	<p>
-		No more shots ring out, however, as Ghost's two opponents collapse to the ground and lose consciousness. After checking her firearm and dagger to make sure that they've suffered no damage during the fight, the otter-girl smiles at you and, careful to avoid using Hammer's name, says, [ghost.speech(Let's get moving; we'll link up with our partner and finish clearing this level.)]
+		Выстрелы стихают: оба противника Гост повержены и теряют сознание. Проверив свое огнестрельное оружие и кинжал на предмет повреждений после схватки, девочка-выдра улыбается тебе и, стараясь не называть имени Хаммер, произносит: [ghost.speech(Пора двигаться; встретимся с нашей напарницей и зачистим этот уровень до конца.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BARRICADE"><![CDATA[
 	<p>
-		Dozens of bread racks and other pieces of kitchen furniture have been wheeled to this location and jammed on top of one another to create an impassable barricade.
+		Десятки хлебных стеллажей и другой кухонной мебели были сдвинуты сюда и навалены друг на друга, образуя непроходимую баррикаду.
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
-			[hammer.speech(I could tear this down, but it would take too much time,)] Hammer growls, [hammer.speech(Let's find another way around.)]
+			[hammer.speech(Я могла бы разнести это в щепки, но это займет слишком много времени,)] — рычит Хаммер, — [hammer.speech(Давай поищем другой путь.)]
 		#ELSE
-			[ghost.speech(We could tear this down, but it would take too much time,)] Ghost muses out loud, before turning to face you and saying, [ghost.speech(Let's find another way around.)]
+			[ghost.speech(Мы могли бы разобрать это, но это займет слишком много времени,)] — задумчиво произносит Гост, после чего поворачивается к тебе и говорит: [ghost.speech(Давай поищем другой путь.)]
 		#ENDIF
 	</p>
 	]]>
@@ -424,15 +423,15 @@
 	
 	<htmlContent tag="DOOR"><![CDATA[
 	<p>
-		The wide, double-hinged door before you separates the bakery's kitchens and its shop floor.
+		Широкая двустворчатая дверь перед тобой отделяет кухонную зону пекарни от торгового зала.
 		#IF(flags.hasFlag(FLAG_innoxia_hammer_following))
 			#IF(flags.hasFlag(FLAG_innoxia_ghost_following))
-				 Hammer and Ghost quickly stack up next to this door without saying a word, before preparing to push it open and clear whatever might be waiting on the other side...
+				Хаммер и Гост, не говоря ни слова, быстро пристраиваются рядом с этой дверью, готовясь толкнуть её и расправиться с тем, что может ждать по ту сторону...
 			#ELSE
-				 Hammer quickly moves up next to this door without saying a word, before preparing to push it open and clear whatever might be waiting on the other side...
+				Хаммер, не говоря ни слова, быстро подходит к этой двери, готовясь толкнуть её и расправиться с тем, что может ждать по ту сторону...
 			#ENDIF
 		#ELSE
-			 Ghost quickly moves up next to this door without saying a word, before preparing to push it open and clear whatever might be waiting on the other side...
+				Гост, не говоря ни слова, быстро подходит к этой двери, готовясь толкнуть её и расправиться с тем, что может ждать по ту сторону...
 		#ENDIF
 	</p>
 	]]>
@@ -441,45 +440,50 @@
 	<htmlContent tag="SHOP_FLOOR"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_innoxia_sword_mission_shop_floor) && !flags.hasFlag(FLAG_innoxia_ghost_following))
 		<p>
-			Following Hammer into the building, you find yourself [pc.stepping] into the area which once served as the bakery's shop floor. The shelving units, tables, and chairs which were left here when the bakery was abandoned have either been pushed up against the far wall or used to smash the glass counter to pieces, leaving all of the floor area in this room clear of furniture.
+		
+		Следуя за Хаммером в здание, ты оказываешься [pc.stepping] в помещении, где когда-то располагался торговый зал пекарни. Стеллажи, столы и стулья, оставленные здесь после того, как пекарню забросили, либо прижаты к дальней стене, либо использованы, чтобы разнести стеклянную витрину в щепки, так что пол в этой комнате теперь практически пуст.
 		</p>
 		<p>
-			Four startled-looking gang members are standing a short distance away, and upon catching sight of you and Hammer, they pull out their weapons and get ready for a fight. The nearest one, a rough-looking cat-boy, spits on the floor and confidently strides towards you, growling as he does so, [style.speechMasculine(You don't know who you're fucking with. You're gonna pay for thi-)]
+		
+		В нескольких шагах от тебя стоят четверо ошарашенных членов банды, но, завидев тебя и Хаммера, они выхватывают оружие, готовясь к драке. Ближайший из них, грубоватый парень-кот, сплевывает на пол и уверенно шагает к тебе, рыча на ходу: [style.speechMasculine(Ты даже не представляешь, с кем связался, сука! Ты за это заплатишь...)]
 		</p>
 		<p>
-			His speech is quickly and brutally interrupted as Hammer darts forwards with surprising speed and uses the butt of his shotgun to deliver a crushing blow to the side of the cat-boy's head. The gang member instantly crumples to the floor in an unconscious daze. Upon seeing his comrade being dealt with in such a swift and violent manner, one of the remaining three gang members turns and runs away.
+		
+		Его речь прерывается быстро и жестоко: Хаммер с поразительной скоростью бросается вперед и со всей дури бьет кобурой дробовика кота в висок. Бандит тут же мешком валится на пол, теряя сознание. Увидев, как стремительно и яростно расправились с его товарищем, один из оставшихся троих бандитов разворачивается и бросается наутек.
 		</p>
 		<p>
-			The other two, [gangMember1.a_raceFull(true)] and [gangMember2.a_raceFull(true)] stand their ground, with the first one shouting in anger, [gangMember1.speech(You'll fucking pay for that!)] 
+		
+		Двое других, [gangMember1.a_raceFull(true)] и [gangMember2.a_raceFull(true)], не отступают, при этом первый в ярости выкрикивает: [gangMember1.speech(Ты, блядь, за это ответишь!)] 
 		</p>
 		<p>
-			A fight seems inevitable, and so you need to decide whether to assist Hammer or stand back and watch...
+		
+		Драка кажется неизбежной, так что тебе нужно решить: помочь Хаммеру или стоять в стороне и наблюдать...
 		</p>
 	#ELSEIF(!flags.hasFlag(FLAG_innoxia_hammer_following))
 		#IF(game.getCharactersPresent().contains(hammer))
 			<p>
-				Moving quickly forwards, you and Ghost approach the one-eyed wolf-boy. Stepping over the two bodies at his feet, he grunts, [hammer.speech(Took your time. You used to be quicker.)]
+				Быстро шагая вперед, ты и Призрак приближаешься к одноглазому волку-мальчишке. Перешагнув через два трупа у его ног, он ворчит: [hammer.speech(Долго же вы шли. Раньше ты был порезвее.)]
 			</p>
 			<p>
-				[ghost.speech(Being quick isn't always a good thing,)] Ghost replies, and you can tell that she's smirking beneath her balaclava. She lowers her voice as she steps past Hammer, but not enough to prevent you from overhearing her tease, [ghost.speech(My place later, just like old times.)]
+				[ghost.speech(Быть быстрым — не всегда к лучшему,)] — отвечает Призрак, и ты почти чувствуешь её ухмылку под балаклавой. Проходя мимо Хаммера, она понижает голос, но недостаточно тихо, чтобы ты не услышал её поддёвку: [ghost.speech(Зайдёшь ко мне позже, как в старые добрые времена.)]
 			</p>
 			<p>
-				Letting out a deep, rumbling growl, Hammer motions for you to follow as he moves in front of Ghost to take the lead...
+				Издав глубокий, утробный рык, Хаммер жестом велит тебе следовать за ним и обходит Призрака, чтобы идти впереди...
 			</p>
 		#ELSE
 			<p>
-				Following Ghost, you find yourself moving through the area which once served as the bakery's shop floor. The shelving units, tables, and chairs which were left here when the bakery was abandoned have either been pushed up against the far wall or used to smash the glass counter to pieces, leaving all of the floor area in this room clear of furniture.
+				Следуя за Призраком, ты оказываешься в помещении, которое когда-то служило торговым залом пекарни. Стеллажи, столы и стулья, оставшиеся здесь после того, как пекарню забросили, либо сдвинуты к дальней стене, либо использованы, чтобы разнести стеклянную витрину в щепки, так что пол в этой комнате теперь практически пуст.
 			</p>
 			<p>
-				On the far side of this area, you see the familiar, grey-furred form of Hammer. Standing over the bodies of a couple of gang members, he motions for the two of you to hurry to his location.
+				На другом конце зала ты видишь знакомый силуэт Хаммера с его серой шерстью. Стоя над телами пары бандитов, он жестом подзывает вас, призывая поторапливаться.
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			You once again find yourself moving through the area which once served as the bakery's shop floor. The shelving units, tables, and chairs which were left here when the bakery was abandoned have either been pushed up against the far wall or used to smash the glass counter to pieces, leaving all of the floor area in this room clear of furniture.
+			Ты снова оказываешься в помещении, которое когда-то служило торговым залом пекарни. Стеллажи, столы и стулья, оставшиеся здесь после того, как пекарню забросили, либо сдвинуты к дальней стене, либо использованы, чтобы разнести стеклянную витрину в щепки, так что пол в этой комнате теперь практически пуст.
 		</p>
 		<p>
-			A couple of defeated gang members are sprawled out, unconscious, on the floor of this area. Letting out a deep grunt, Hammer says, [hammer.speech(We need to keep moving...)]
+		На полу этой зоны растянулись несколько поверженных членов банды, пребывающих в беспамятстве. Тяжело кряхтя, Хаммер произносит: [hammer.speech(Нам нужно двигаться дальше...)]
 		</p>
 	#ENDIF
 	]]>
@@ -487,34 +491,34 @@
 	
 	<htmlContent tag="SHOP_FLOOR_NO_FIGHT"><![CDATA[
 	<p>
-		The Enforcers told you that they weren't expecting you to fight, and so you decide to sit this one out. [pc.Stepping] back, you watch as Hammer deals with these gang members.
-	</p>
+		Enforcers сказали, что не ожидали от тебя боя, поэтому ты решаешь в этот раз переждать. Сидя [pc.Stepping] позади, ты наблюдаешь, как Хаммер расправляется с бандитами.
+		</p>
 	<p>
-		Raising his shotgun, the wolf-boy fires off a round which hits [gangMember1.name] squarely in the chest. A cloud of choking tear gas instantly bursts forth from the projectile, engulfing both of his opponents. [gangMember2.Name] tries to rush through the poison cloud, but a powerful kick from the one-eyed wolf-boy sends [gangMember2.herHim] sprawling back into the noxious fumes.
-	</p>
+		Подняв дробовик, волк-мальчишка делает выстрел, и снаряд попадает [gangMember1.name] прямо в грудь. Из снаряда мгновенно вырывается облако удушливого слезоточивого газа, окутывающее обоих противников. [gangMember2.Name] пытается прорваться сквозь ядовитое облако, но мощный пинок от одноглазого волка отбрасывает [gangMember2.herHim] обратно в едкие испарения.
+		</p>
 	<p>
-		[hammer.speech(I only fired one, so it'll clear in a moment,)] Hammer grunts at you while the two gang members fall to the floor in a fit of choking coughs and gasps. Within a few more seconds, the two of them have passed out, and after waiting for the fumes to fade away Hammer steps forwards and kicks their weapons to one side of the room.
-	</p>
+		[hammer.speech(Я выстрелил всего раз, так что скоро всё рассеется,)] — ворчит на тебя Хаммер, пока двое бандитов валятся на пол в приступах удушливого кашля и хрипов. Спустя несколько секунд оба теряют сознание, и, дождавшись, пока дым развеется, Хаммер делает шаг вперед и отшвыривает их оружие в угол комнаты.
+		</p>
 	<p>
-		[hammer.speech(Let's keep moving,)] the wolf-boy grunts at you.
-	</p>
+		[hammer.speech(Пошли, не задерживаемся,)] — бурчит тебе волк-мальчишка.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_innoxia_sword_mission_exit) && !flags.hasFlag(FLAG_innoxia_ghost_following))
-		<p>
-			[pc.Stepping] over the remains of the bakery's front door, you follow Hammer into the building. The area immediately beyond the front entrance is enclosed by an internal wall to form a small antechamber, preventing you from seeing into the majority of the building's interior. Although you can't see them, you can hear several voices shouting out in alarm from somewhere beyond the archway that's immediately in front of you.
+<p>
+			[pc.Stepping] перешагнув через обломки входной двери пекарни, ты следуешь за Хаммером внутрь здания. Сразу за входом пространство ограничено внутренней стеной, образующей небольшую прихожую, из-за чего большую часть интерьера здания сразу не разглядеть. И хотя ты их не видишь, из-за арки прямо перед тобой доносятся чьи-то встревоженные выкрики.
 		</p>
 		<p>
-			[hammer.speech(Stick with me!)] Hammer growls as he rushes into what appears to be the bakery's shop floor...
+			[hammer.speech(Держись рядом!)] — рычит Хаммер, врываясь в помещение, которое кажется торговым залом пекарни...
 		</p>
 	#ELSE
 		<p>
-			You find yourself standing before the bakery's front entrance. This area is enclosed by an internal wall to form a small antechamber, preventing you from seeing into the majority of the building's interior. The front door has been well and truly destroyed by Hammer during his ingress, allowing you to see out into the alleyway beyond.
+			Ты стоишь перед входом в пекарню. Это место отделено внутренней стеной, образующей небольшую прихожую, которая мешает обзору основной части здания. Входная дверь была окончательно разнесена в щепки Хаммером во время его прорыва, так что ты можешь видеть узкий переулок снаружи.
 		</p>
 		<p>
-			[hammer.speech(Come on, we don't have time for this!)] Hammer growls, motioning for you to return the way you came.
+			[hammer.speech(Живее, у нас нет на это времени!)] — ворчит Хаммер, жестом приказывая тебе вернуться тем же путем, которым ты пришла.
 		</p>
 	#ENDIF
 	]]>
@@ -522,29 +526,29 @@
 	
 	<htmlContent tag="STAIRS"><![CDATA[
 	<p>
-		Before you stands a winding staircase that leads up to the next floor of the building. Taking a look back the way you came, Ghost states, [ghost.speech(We've covered all of this floor. The kidnapped refugees must be upstairs with Angelixx.)]
+		Перед тобой вьется винтовая лестница, ведущая на следующий этаж. Оглянувшись назад, Призрак произносит: [ghost.speech(Мы осмотрели весь этот этаж. Похищенные беженцы должны быть наверху, вместе с Анжеликс.)]
 	</p>
 	<p>
-		[hammer.speech(If they're still here, that is,)] Hammer growls in a frustrated tone, [hammer.speech(I'm starting to think that they might already have been teleported out of here...)]
+		[hammer.speech(Если они еще здесь, конечно,)] — раздраженно рычит Хаммер, [hammer.speech(Я начинаю думать, что их уже могли телепортировать отсюда...)]
 	</p>
 	<p>
-		[ghost.speech(Let's hope that's not the case,)] Ghost replies, [ghost.speech(If they're still here then they'll have to be upstairs. Along with that bitch of a succubus...)]
+		[ghost.speech(Будем надеяться, что нет,)] — отвечает Призрак, — [ghost.speech(Если они всё ещё здесь, то им точно на втором этаже. Вместе с этой сукой-суккубом...)]
 	</p>
 	<p>
-		Hammer grunts in agreement, before motioning for you to follow him up the stairs...
+		Хаммер согласно хмыкает и жестом предлагает тебе следовать за ним вверх по лестнице...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STAIRS_UP"><![CDATA[
 	<p>
-		The three of you head up the stairs, and after sweeping around a 180-degree turn, you make it to the next floor without incident. At the top of the stairs you see a short corridor, dimly lit by flickering arcane lights, which leads to a half-open door. Although the centre of the corridor looks to be well-trodden, the edges of the carpet are caked in dust, letting you know that nobody's bothered cleaning this place for some time.
+		Вы втроём поднимаетесь по лестнице, и, совершив разворот на 180 градусов, без происшествий выбираетесь на следующий этаж. Вверху лестницы перед вами открывается короткий коридор, тускло освещённый мерцающими огнями Арканы; он ведёт к полуоткрытой двери. Хотя по центру коридора явно часто ходят, края ковра покрыты толстым слоем пыли — это верный знак того, что здесь давно никто не прибирался.
 	</p>
 	<p>
-		[hammer.speech(Our priority is to find Angelixx. Defeating her will cause the rest of the gang to scatter,)] Hammer growls as he sees the door ahead of you.
+		[hammer.speech(Наша главная цель — найти Анжеликсу. Если мы одолеем её, остальная шайка разбежится,)] — рычит Хаммер, заметив дверь впереди.
 	</p>
 	<p>
-		[ghost.speech(We should also check to see if we can find the kidnapped refugees,)] Ghost adds, before decisively saying, [ghost.speech(Let's get this over with.)]
+		[ghost.speech(Нам также стоит проверить, удалось ли найти похищенных беженцев,)] — добавляет Призрак, после чего решительно бросает: [ghost.speech(Давайте покончим с этим.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -554,20 +558,20 @@
 	
 	<htmlContent tag="STAIRS_TOP"><![CDATA[
 	<p>
-		You find yourself once again at the top of the stairs. From here a short corridor, dimly lit by flickering arcane lights, leads to a half-open door. Although the centre of the corridor looks to be well-trodden, the edges of the carpet are caked in dust, letting you know that nobody's bothered cleaning this place for some time.
+		Ты снова оказываешься на вершине лестницы. Отсюда короткий коридор, тускло освещённый мерцающими огнями Арканы, ведёт к полуоткрытой двери. Хотя по центру коридора явно часто ходят, края ковра покрыты толстым слоем пыли — это верный знак того, что здесь давно никто не прибирался.
 	</p>
 	<p>
-		[hammer.speech(There's nothing down there,)] Hammer growls, [hammer.speech(We need to find Angelixx as quickly as possible.)]
+		[hammer.speech(Там пусто,)] — ворчит Хаммер, — [hammer.speech(Нам нужно найти Анжеликссу как можно скорее.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		Flickering arcane lights dimly illuminate your way as you move forwards with Hammer and Ghost down the corridor. Although the centre of this passageway looks to be well-trodden, the edges of the carpet are caked in dust, letting you know that nobody's bothered cleaning this place for some time.
+		Мерцающие огни арканы тускло освещают твой путь, пока ты идешь вперед вместе с Хаммером и Гост по коридору. Хотя кажется, что по центру этого прохода часто ходят, края ковра покрыты толстым слоем пыли — это верный знак того, что здесь давно никто не убирался.
 	</p>
 	<p>
-		Knowing that Angelixx must be up here somewhere, Hammer and Ghost prepare to clear any rooms which you come across...
+		Зная, что Анжеликс должна быть где-то здесь наверху, Хаммер и Гост готовятся зачищать каждую комнату, которая вам встретится...
 	</p>
 	]]>
 	</htmlContent>
@@ -575,37 +579,37 @@
 	<htmlContent tag="STORAGE"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_innoxia_sword_mission_storage))
 		<p>
-			As you approach the half-open door which sits at the end of the corridor, Hammer and Ghost rush forwards to stack up on one side of it. Motioning for you to stay back, the otter-girl hisses, [ghost.speech(You don't need to fight. Leave this to us.)]
+		Когда ты приближаешься к полуоткрытой двери в конце коридора, Хаммер и Гост бросаются вперед, чтобы занять позицию с одной стороны. Подавая тебе знак держаться позади, девочка-выдра шипит: [ghost.speech(Тебе не обязательно сражаться. Оставь это нам.)]
 		</p>
 		<p>
-			Making a hand signal to his partner, Hammer steps forwards and kicks the door wide open. Rushing inside with their weapons drawn, he and Ghost prepare to deal with any gang members who might be within. Seeing no harm in following the two of them into the room, you [pc.step] through the open doorway and take a quick look around.
+		Подав знак напарнице, Хаммер делает шаг вперед и с силой распахивает дверь ногой. Ворвавшись внутрь с обнаженным оружием, он и Гост готовятся разобраться с любыми членами банды, которые могут оказаться внутри. Не видя ничего плохого в том, чтобы последовать за ними, ты [pc.step] в открытый дверной проем и быстро осматриваешься.
 		</p>
 		<p>
-			This room, which once might have been a bedroom, has been converted into a storage space for the gang. Numerous crates, boxes, and barrels have been stacked up in here, and from the few containers which have been left open you're able to see that their contents range from wrapped food and bottles of drink to bags of clothing and other personal belongings which have no doubt been stolen. In the middle of the room, looking to have been dividing a pile of flames between themselves, are [gangMember1.a_raceFull(true)], [gangMember2.a_raceFull(true)], and [gangMember3.a_raceFull(true)].
+			Эта комната, когда-то бывшая спальней, теперь превращена в склад банды. Повсюду навалены ящики, коробки и бочки; в нескольких открытых контейнерах виднеется всё что угодно: от упакованной еды и бутылок с выпивкой до мешков с одеждой и прочими личными вещами, которые, без сомнения, были украдены. Посреди комнаты [gangMember1.a_raceFull(true)], [gangMember2.a_raceFull(true)] и [gangMember3.a_raceFull(true)] делят между собой кучу @@T2@@.
 		</p>
 		<p>
-			[gangMember1.speech(What was all that noise downstairs? We could hear-)] the [gangMember1.race] starts to shout as the door swings open, before realising that [gangMember1.she] and [gangMember1.her] companions are under attack.
+			[gangMember1.speech(Что это за шум был внизу? Мы слышали...)] — [gangMember1.race] начинает кричать, когда дверь распахивается, но тут же понимает, что [gangMember1.she] и [gangMember1.her] находятся под атакой.
 		</p>
 		<p>
-			Without a word, Hammer lifts his shotgun and aims it at the three gang members, while Ghost points her revolver at them and prepares to fire. You have a split second in which to decide whether to help the Enforcers or to stand back and watch...
+			Не говоря ни слова, Hammer вскидывает дробовик и целится в троих бандитов, а Ghost направляет на них револьвер, готовясь к выстрелу. У тебя есть доля секунды, чтобы решить: помочь Enforcer или стоять в стороне и наблюдать...
 		</p>
 	#ELSE
 		<p>
-			This room, which once might have been a bedroom, has been converted into a storage space for the gang. Numerous crates, boxes, and barrels have been stacked up in here, and from the few containers which have been left open you're able to see that their contents range from wrapped food and bottles of drink to bags of clothing and other personal belongings which have no doubt been stolen. The trio of gang members who you found in here are collapsed down on the floor, unconscious.
+			Эта комната, когда-то бывшая спальней, теперь служит складом для банды. Повсюду навалены ящики, коробки и бочки; в нескольких открытых контейнерах виднеется всё подряд: от завернутой еды и бутылок с выпивкой до мешков с одеждой и прочими личными вещами, которые, без сомнения, были украдены. Троица бандитов, которую ты здесь обнаружил, без сознания валяется на полу.
 		</p>
 		#IF(flags.hasFlag(FLAG_innoxia_sword_mission_searched_storage))
 			<p>
-				You've already taken the flames which the gang members were in the process of diving between themselves, and so there's nothing else to do in here.
+				Ты уже забрал все Огни, которые банда делила между собой, так что здесь больше делать нечего.
 			</p>
 			<p>
-				[hammer.speech(Let's get out of here,)] Hammer grunts, [hammer.speech(We need to find Angelixx.)]
+				[hammer.speech(Пора убираться отсюда,)] — кряхтит Хаммер, — [hammer.speech(Нам нужно найти Анжеликса.)]
 			</p>
 		#ELSE
 			<p>
-				[ghost.speech(There's no time to search this place,)] Ghost hisses, before pointing at the pile of flames that the gang members were in the process of diving between themselves. Looking at you, she says, [ghost.speech(Might as well take the cash; it'd be a shame to leave it here for them to recover.)]
+				[ghost.speech(Нет времени обыскивать это место,)] — шипит Призрак, указывая на кучу Огней, которые банда делила между собой. Посмотрев на тебя, она добавляет: [ghost.speech(Забирай наличку; будет обидно оставить её здесь, когда они придут в себя.)]
 			</p>
 			<p>
-				[hammer.speech(Be quick,)] Hammer grunts, [hammer.speech(We need to find Angelixx.)]
+				[hammer.speech(Живее,)] — ворчит Хаммер, — [hammer.speech(Нам нужно найти Анжеликса.)]
 			</p>
 		#ENDIF
 	#ENDIF
@@ -614,67 +618,67 @@
 	
 	<htmlContent tag="STORAGE_NO_FIGHT"><![CDATA[
 	<p>
-		Deciding to leave the fighting to the professionals, you stop in the doorway and watch them get to work. The first to strike is Hammer, and with a loud bang and a brief flash from the end of his shotgun, he fires a tear gas canister right into the chest of [gangMember1.name]. The canister explodes into a small cloud of poisonous fumes, which causes all three of the gang members to cough and splutter as they attempt to rush forwards and attack.
+		Решив оставить битву профессионалам, ты замираешь в дверном проеме и наблюдаешь за их работой. Первым в бой вступает Хаммер: с громким хлопком и короткой вспышкой на конце его дробовика, он выпускает баллончик со слезоточивым газом прямо в грудь [gangMember1.name]. Баллончик взрывается облаком ядовитых паров, заставляя всех троих бандитов кашлять и давиться, пока те пытаются рвануться вперед в атаку.
 	</p>
 	<p>
-		Using the brief moment of chaos to line up her targets, Ghost empties the cylinder of her revolver in the space of just a few seconds, hitting each of the gang members twice. The gelatin capsules which her arcane firearm produces burst in contact with her targets' auras, splattering each of them with burning, stinging oil.
+		Пользуясь моментом хаоса, чтобы прицелиться, Призрак за считанные секунды опустошает барабан своего револьвера, попадая по каждому из бандитов дважды. Желатиновые капсулы, которые производит её арканное оружие, лопаются при контакте с аурами целей, забрызгивая каждого из них жгучим, щиплющим маслом.
 	</p>
 	<p>
-		The combination of choking tear gas and stinging pepperball oil halts the gang members in their tracks. Reduced to stumbling, coughing wrecks, the gang members are no match for Ghost's dagger. Darting between the three of them with impressive speed, the small otter-girl stabs each of her targets multiple times, sending them crashing to the floor in an unconscious daze.
+		Сочетание удушливого газа и едкого перцового масла заставляет бандитов замереть на месте. Превратившись в беспомощных, кашляющих и спотыкающихся калек, они не могут противостоять кинжалу Призрака. Стремительно лавируя между ними, маленькая девочка-выдра наносит каждому по несколько ударов, отчего те в беспамятстве рушатся на пол.
 	</p>
 	<p>
-		[hammer.speech(Good work,)] Hammer grunts.
+		[hammer.speech(Хорошая работа,)] — хрипит Хаммер.
 	</p>
 	<p>
-		[ghost.speech(Let's save it for after we've defeated Angelixx,)] the otter-girl replies in a cheeky, jovial tone, before pointing at the pile of flames that the gang members were in the process of diving between themselves. Looking at you, she says, [ghost.speech(Might as well take the cash; it'd be a shame to leave it here for them to recover.)]
+		[ghost.speech(Давай прибережем это на потом, когда разделаемся с Анжеликсом,)] — задорно и весело отвечает девочка-выдра, указывая на кучу огней, между которыми вовсю носились члены банды. Посмотрев на тебя, она добавляет: [ghost.speech(Может, заберем наличку? Будет обидно оставить её здесь, чтобы они потом всё подняли.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STORAGE_SEARCH"><![CDATA[
 	<p>
-		Doing as Ghost suggests, you [pc.step] over to the crate which the gang members were using as a makeshift table. On its lid are three unequal piles of coins, which you merge into one larger stack before sliding the whole lot into your inventory.
+		Последовав совету Призрака, ты [pc.step] к ящику, который бандиты использовали вместо стола. На его крышке лежат три кучки монет разного размера; ты сгребаешь их в одну общую стопку и отправляешь всё добро в свой инвентарь.
 	</p>
 	<p>
-		[hammer.speech(Now let's get moving,)] Hammer says, before motioning towards the door and grunting, [hammer.speech(Angelixx is somewhere up here...)]
+		[hammer.speech(А теперь шевелимся,)] — говорит Молот, указывая на дверь и ворчливо добавляя: [hammer.speech(Анжеликс где-то здесь, наверху...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BATHROOM"><![CDATA[
 	<p>
-		Silently pushing open the door before you, Ghost reveals that the room beyond is a decently-sized bathroom. The walls are absolutely covered in graffiti, while the grimy floor tiles are smashed and cracked in several places. From the stains and debris which fill it, the bath looks like it hasn't been used or cleaned in at least a decade. While the toilet and wash hand basin do look to be kept in working order, they're not in much better shape than the bath.
+		Призрак бесшумно толкает перед тобой дверь, открывая вид на довольно просторную ванную комнату. Стены сплошь покрыты граффити, а грязная напольная плитка местами разбита и потрескалась. Судя по пятнам и мусору, ванна не видела ни воды, ни чистки как минимум лет десять. Хотя унитаз и раковина вроде бы и находятся в рабочем состоянии, выглядят они ненамного лучше самой ванны.
 	</p>
 	#IF(!flags.hasFlag(FLAG_innoxia_sword_mission_bathroom))
 		#IF(game.isNonConEnabled())
 			<p>
-				On the far side of the room, [victim.a_raceFull(true)] is being pressed back against the wall by [gangMember1.a_raceFull(true)], who's slamming his fat donkey-cock deep into the woman's cum-stuffed cunt. Sturdy-looking chains connected to the ceiling and floor have been attached to the woman's wrist and ankle restraints, while a ball-gag has been fitted into her mouth to prevent her from making too much noise. From the anguished look in her eyes and the distressed, muffled noises she's making, it's immediately obvious that the woman is one of the kidnapped refugees, and that the donkey-boy is a gang member who's taking advantage of her while he's got the chance.
+				В дальнем конце комнаты [gangMember1.a_raceFull(true)] прижимает [victim.a_raceFull(true)] к стене, с силой вколачивая свой толстый ослиный член в её набитую спермой киску. Крепкие цепи, тянущиеся от потолка и пола, прикованы к её запястьям и лодыжкам, а в рот вставлен кляп-шарик, чтобы она не слишком сильно шумела. Судя по мучительному взгляду её глаз и приглушённым стонам отчаяния, сразу становится ясно: эта женщина — одна из похищенных беженцев, а этот ослиный парень — член банды, который пользуется случаем, пока есть возможность.
 			</p>
 			<p>
-				[gangMember1.speech(Angelixx is waiting for you... You're the last to go,)] the donkey-boy grunts as he slams his fat cock balls-deep in the woman's pussy. Holding her hips, his balls tense up and he groans as he orgasms, [gangMember1.speech(~Mmm!~ You're not as tight as Angelixx, but you can still milk me dry, you slut!)]
+				[gangMember1.speech(Анжеликса уже ждёт тебя... Ты последний,)] — хрипит ослиный парень, забивая свой толстый член в её щели по самые яйца. Он крепко держит её за бёдра; его яички напрягаются, и он стонет, достигая оргазма: [gangMember1.speech(~Ммм!~ Ты не такая тугая, как Анжеликса, но всё равно можешь выдоить меня досуха, сучка!)]
 			</p>
 			<p>
-				With a furious, icy glare in her [ghost.eyeColour] eyes, Ghost motions for you and Hammer to remain where you are, before darting forwards to save the woman...
+				Ледяным, яростным взглядом своих [ghost.eyeColour] глаз Призрак жестом велит тебе и Хаммер оставаться на местах, после чего бросается вперёд, чтобы спасти женщину...
 			</p>
 		#ELSE
 			<p>
-				On the far side of the room, [gangMember1.a_raceFull(true)] is standing with his back to you, his fat donkey-cock in one hand as he makes use of the toilet. Talking to himself, you overhear him say, [gangMember1.speech(Angelixx should be finished with teleporting the last of them by now... Maybe she'll let me fuck her tight cunt again before she goes...)]
+				В дальнем конце комнаты [gangMember1.a_raceFull(true)] стоит к тебе спиной, сжимая в руке свой толстый ослиный член и справляя нужду над туалетом. Разговаривая сам с собой, он доносит до твоего слуха: [gangMember1.speech(Анжеликса уже должна закончить с телепортацией последних из них... Может, она позволит мне ещё раз трахнуть её узкую киску, прежде чем уйдёт...)]
 			</p>
 			<p>
-				With a dangerous-looking gleam in her [ghost.eyeColour] eyes, Ghost motions for you and Hammer to remain where you are, before darting forwards to take out this oblivious gang member...
+			С опасным блеском в [ghost.eyeColour] глазах Призрак жестом велит тебе и Хаммер оставаться на месте, после чего бросается вперед, чтобы прикончить этого ничего не подозревающего бандита...
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Slumped down on one side of the bathroom, the donkey-boy is still well and truly out of it.
+			Осел-мальчишка, сползший на одну сторону уборной, всё еще крепко спит.
 			#IF(game.isNonConEnabled())
-				 Flashing him a furious glare, Ghost spits, [ghost.speech(Scum like him deserve far worse...)]
+				Одарив его яростным взглядом, Призрак сплевывает: [ghost.speech(Такой подонок заслуживает куда большего...)]
 			#ELSE
-				 Flashing him a cold glare, Ghost mutters, [ghost.speech(Lucky for you we didn't bring any enslavement collars...)]
+				Одарив его холодным взглядом, Призрак бормочет: [ghost.speech(Тебе повезло, что мы не взяли с собой ошейники для рабов...)]
 			#ENDIF
 		</p>
 		<p>
-			[hammer.speech(There's nothing more in here,)] Hammer says, before turning to leave and motioning for you and Ghost to follow...
+			[hammer.speech(Здесь больше ничего нет,)] — говорит Хаммер, после чего разворачивается, чтобы уйти, и жестом приглашает тебя и Призрака следовать за ним...
 		</p>
 	#ENDIF
 	]]>
@@ -683,20 +687,20 @@
 	<htmlContent tag="BATHROOM_WAIT"><![CDATA[
 	#IF(game.isNonConEnabled())
 		<p>
-			Before you know it, Ghost has already silently crossed the bathroom, and as the donkey-boy fills his unwilling partner's womb with his cum, the otter-girl draws her dagger and lunges at his back. A startled gasp and a brief yelp later, and Ghost's target has been knocked unconscious by a dozen or so stabs from her arcane blade.
+			Не успеваешь ты оглянуться, как Призрак уже бесшумно пересекает уборную. Пока осел-мальчишка наполняет чрево своей невольной партнерши спермой, девочка-выдра выхватывает кинжал и бросается ему в спину. Спустя испуганный вздох и короткий вскрик, цель Призрака оказывается без сознания после дюжины ударов её аркана-клинком.
 		</p>
 		<p>
-			As the donkey-boy hits the floor, Hammer rushes forwards to help the woman. Making sure that the gang member is definitely unconscious, Ghost joins her parter in assisting the captive...
+			Когда осел-мальчишка валится на пол, Хаммер бросается вперед, чтобы помочь женщине. Убедившись, что бандит точно без сознания, Призрак присоединяется к напарнику, чтобы помочь пленнице...
 		</p>
 	#ELSE
 		<p>
-			Before you know it, Ghost has already silently crossed the bathroom, and as the donkey-boy finishes urinating, the otter-girl draws her dagger and lunges at his back. A startled gasp and a brief yelp later, and Ghost's target has been knocked unconscious by a dozen or so stabs from her arcane blade.
+			Не успеваешь ты оглянуться, как Призрак уже бесшумно пересекает уборную. Как только осел-мальчишка заканчивает справлять нужду, девочка-выдра выхватывает кинжал и бросается ему в спину. Спустя испуганный вздох и короткий вскрик, цель Призрака оказывается без сознания после дюжины ударов её аркана-клинком.
 		</p>
 		<p>
-			[ghost.speech(That's one more scum dealt with,)] the otter-girl says, before quickly moving back over to where you and Hammer are still standing by the door. 
+			[ghost.speech(Еще одна мразь разделана,)] — говорит девочка-выдра, прежде чем быстро вернуться к тебе и Хаммеру, которые всё еще стоят у двери. 
 		</p>
 		<p>
-			[hammer.speech(There's nothing more in here,)] Hammer says, before turning to leave and motioning for you and Ghost to follow...
+			[hammer.speech(Здесь больше ничего нет,)] — говорит Хаммер, после чего разворачивается, чтобы уйти, и жестом приглашает тебя и Призрака следовать за ним...
 		</p>
 	#ENDIF
 	]]>
@@ -704,178 +708,178 @@
 	
 	<htmlContent tag="BATHROOM_CAPTIVE"><![CDATA[
 	<p>
-		Removing the ball gag from the woman's mouth, Hammer tosses it into the bath, before starting to unfasten the restraints from around her wrists. Letting out a weary sob, the woman says in a hoarse voice, [victim.speech(Thank you... They... The others... The others were being teleported somewhere... You have to help them too...)]
+	Вытащив кляп изо рта женщины, Хаммер швыряет его в ванну и принимается расстегивать путы на её запястьях. Издав усталый всхлип, женщина произносит охрипшим голосом: [victim.speech(Спасибо... Они... Остальные... Остальных телепортировали куда-то... Ты должен помочь и им тоже...)]
 	</p>
 	<p>
-		From what the donkey-boy said when you first entered the bathroom, it sounded like the others have already gone, but none of you say this to the woman. Quickly unfastening the woman's ankle restraints, Ghost stands up and asks, [ghost.speech(Can you walk? We need to find Angelixx and take her out. We don't have time to help.)]
+	Судя по тому, что сказал мальчишка-осёл, когда вы только вошли в ванную, остальные уже ушли, но никто из вас не говорит ей об этом. Быстро расстегнув оковы на её лодыжках, Призрак встает и спрашивает: [ghost.speech(Ты можешь идти? Нам нужно найти Анжеликс и вытащить её. У нас нет времени помогать всем подряд.)]
 	</p>
 	<p>
-		[victim.speech(I can walk...)] the woman pants as she unclasps the choker from around her neck. Tossing it to the floor, she mutters as she leaves the room, [victim.speech(My place isn't far from here... I'll make it...)]
+	[victim.speech(Я могу идти...)] — тяжело дыша, отвечает женщина, расстегивая чокер на шее. Бросая его на пол, она бормочет, покидая комнату: [victim.speech(Мой дом недалеко отсюда... Я доберусь...)]
 	</p>
 	<p>
-		[hammer.speech(I wish we could do more to help her, but taking out Angelixx is the priority,)] Hammer grunts, before motioning for you and Ghost to follow him out of the room...
+	[hammer.speech(Жаль, что мы не можем помочь ей больше, но сейчас главное — вытащить Анжеликс,)] — ворчит Хаммер, подавая знак тебе и Призраку следовать за ним из комнаты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEDROOM"><![CDATA[
 	<p>
-		The door and walls before you have been covered in graffiti, with most of it alluding to the fact that the room beyond is where the 'slaves' are kept. Nodding to each other, Hammer and Ghost stack up beside this door, before motioning for you to follow but to keep your distance. Using hand signals, they count down from three, before Hammer kicks the door open and the two Enforcers rush inside.
+		Двери и стены перед тобой покрыты граффити, большинство из которых намекают на то, что за этой дверью держат «рабов». Переглянувшись, Hammer и Ghost замирают у входа, а затем жестом приглашают тебя следовать за ними, но просят держаться на расстоянии. С помощью ручных сигналов они отсчитывают три, после чего Hammer выбивает дверь ногой, и оба Enforcer стремительно врываются внутрь.
 	</p>
 	<p>
-		Following Hammer and Ghost through the doorway, you find yourself entering a surprisingly large room. In fact, as you glance around to take in your surrounds, you see that one wall of the original room has been knocked down to merge it with another. Hanging from the ceiling via metal rings in over a dozen places, you see sturdy chains linked to heavy metal slave collars. Not one of these collars are in use, revealing that you're too late to save the kidnapped refugees who were being kept here.
+		Следуя за Hammer и Ghost в дверной проем, ты оказываешься в удивительно просторном помещении. Более того, оглядевшись, ты замечаешь, что одна из стен оригинальной комнаты была снесена, чтобы объединить её с соседней. С потолка в более чем дюжине мест свисают прочные цепи, прикрепленные к тяжелым металлическим ошейникам для рабов. Ни один из этих ошейников не надет на человека, а значит, ты опоздал, чтобы успеть сохранить похищенных беженцев, которых здесь держали.
 	</p>
 	<p>
-		Illuminated by the dim arcane lights which hang down from the high ceiling, you see that there's only one other person in here, and she's standing over on the far side of the room. No more than [angelixx.heightValue] in height, making her slightly smaller than Ghost, and with a slender build to match her diminutive stature, the succubus Angelixx doesn't look like much of a threat. Unlike most succubi, her light skin tone is the same as that of a human, while her chest is almost completely flat. A pair of tiny, white feathered wings grow out of her back, and if it wasn't for the tiny, white horns growing out of her forehead, you might at first glance be forgiven for mistaking her for an angel.
+		В тусклом свете аркановых ламп, свисающих с высокого потолка, ты замечаешь, что здесь есть лишь еще один человек, и она стоит в дальнем конце комнаты. При росте не более [angelixx.heightValue], она чуть ниже Госта, а из-за хрупкого телосложения суккуб Анжеликкс не кажется серьезной угрозой. В отличие от большинства суккубов, её светлая кожа почти не отличается от человеческой, а грудь почти плоская. За спиной у неё пара крошечных белых пернатых крыльев, и если бы не маленькие белые рожки на лбу, на первый взгляд её можно было бы принять за ангела.
 	</p>
 	<p>
-		As the succubus turns to face you, you're able to see that she's taken on the appearance of a youthful eighteen year old. Her beautiful face, small size, and outfit choice of an oversized hoodie, leg warmers, and skater shoes gives her a very innocent look. Her blonde, twin-tailed hair swings around as her head turns, while her bright blue eyes quickly flick between Hammer, Ghost, and yourself. Just as you'd been warned, the succubus instantly tries to manipulate the three of you by crying out, [angelixx.speech(Thank goodness you're here! Please, I need your help!)] 
+		Когда суккуб поворачивается к тебе, ты видишь, что она приняла облик юной восемнадцатилетней девушки. Её прекрасное личико, миниатюрность и наряд из безразмерного худи, гетр и кед скейтера придают ей очень невинный вид. Светлые волосы, собранные в два хвоста, качнулись, когда она повернула голову, а её ярко-голубые глаза быстро забегали между Хаммером, Гостом и тобой. Как тебя и предупреждали, суккуб тут же пытается манипулировать вами троими, вскрикивая: [angelixx.speech(Слава богу, вы здесь! Пожалуйста, мне нужна ваша помощь!)] 
 	</p>
 	<p>
-		Although her acting is impeccable, and a normal, unprepared individual would more than likely be persuaded to stop in their tracks, the two Enforcers she's facing are seasoned professionals. Instantly firing off all four rounds from his shotgun in quick succession, Hammer envelops the succubus in a cloud of arcane tear gas. Before the choking poison can do its work, however, it's swept aside by a powerful blast of air as Angelixx casts
+		Хотя её игра безупречна и обычный неподготовленный человек, скорее всего, замер бы на месте, перед ней стоят двое Enforcer — закалённые профессионалы. Хаммер мгновенно выпускает все четыре патрона из своего дробовика, окутывая суккуба облаком аркана-слезоточивого газа. Однако прежде чем удушающий яд успевает подействовать, его сметает мощный порыв воздуха, когда Анжеликса накладывает
 		#IF(pc.hasSpell(SPELL_PROTECTIVE_GUSTS, true))
-			 the spell which you recognise as 'Protective Gusts' upon herself.
+			 заклинание, которое ты узнаёшь как «Защитные порывы».
 		#ELSE
-			 a protective wind spell upon herself.
+			 защитное заклинание ветра на себя.
 		#ENDIF
-		 With Hammer's attack having been nullified, Ghost follows up with six shots from her revolver. Showing herself to be a master of defensive spells, Angelixx transforms her shield into
+		 Поскольку атака Хаммера была нейтрализована, Гост наносит ответный удар, выпуская шесть пуль из своего револьвера. Проявив себя как мастер защитных заклинаний, Анжеликса превращает свой щит в
 		#IF(pc.hasSpell(SPELL_CLOAK_OF_FLAMES, true))
-			 'Cloak of Flames',
+			 «Плащ Огней»,
 		#ELSE
-			 a fiery barrier,
+			 огненный барьер,
 		#ENDIF
-		 causing the pepperball capsules to harmlessly burn away upon contact.
+		 заставляющий капсулы с перцовыми шариками безвредно сгорать при контакте.
 	</p>
 	<p>
-		Keeping up the act, the succubus desperately cries out, [angelixx.speech(You've made a mistake! I'm not Angelixx! I'm her twin, I came here to rescue the kidnapped refugees, but I was too late, just like you are! I can tell you where they're being taken, just please stop shooting me!)]
+		Продолжая свою игру, суккуб отчаянно кричит: [angelixx.speech(Вы совершили ошибку! Я не Анжеликса! Я её сестра-близнец, я пришла сюда спасти похищенных беженцев, но опоздала, так же как и вы! Я могу сказать, куда их уводят, только, пожалуйста, перестаньте в меня стрелять!)]
 	</p>
 	<p>
-		The desperate tone in the succubus's voice is extremely convincing, and for a moment you wonder if she's telling the truth. Hammer seems to be wondering the same thing, for he lowers his shotgun and barks, [hammer.speech(Tell us then! Where are they being taken?)]
+		Отчаянный тон в голосе суккуба звучит крайне убедительно, и на мгновение ты задаёшься вопросом, не говорит ли она правду. Хаммер, кажется, думает о том же самом: он опускает дробовик и рявкает: [hammer.speech(Тогда говори! Куда их уводят?)]
 	</p>
 	<p>
-		From your position behind them, you see that the wolf-boy's response is just a ruse to buy time, as Ghost turns to one side to unsheathe her dagger in such a way that the succubus can't see. Hammer, too, turns to one side and uses his position to covertly reach down into one of his pockets.
+		Находясь позади них, ты замечаешь, что ответ волчонка — лишь уловка, чтобы выиграть время: Гост незаметно поворачивается в сторону, чтобы обнажить кинжал так, чтобы суккуб этого не увидела. Хаммер тоже разворачивается боком, пользуясь своим положением, чтобы скрытно залезть в один из карманов.
 	</p>
 	<p>
-		[angelixx.speech(I'll tell you all I know, please, just listen to me for a moment,)] the succubus pleads, doing all she can to look totally harmless and innocent...
+		[angelixx.speech(Я расскажу вам всё, что знаю, пожалуйста, просто выслушайте меня минутку,)] — умоляет суккуб, изо всех сил стараясь выглядеть совершенно безобидной и невинной...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEDROOM_ANGELIXX_ESCAPE"><![CDATA[
 	<p>
-		[angelixx.speech(Angelixx has taken them all to the underwater city of Lyonesse as gifts for Lirecea,)] the succubus claims, [angelixx.speech(I've got proof in the other room, please just trust me.)]
+		[angelixx.speech(Анжеликса забрала их всех в подводный город Лионесс в качестве подарков для Лиреи,)] — утверждает суккуб, — [angelixx.speech(В другой комнате у меня есть доказательства, пожалуйста, просто поверьте мне.)]
 	</p>
 	<p>
-		[ghost.speech(The problem with lying, Angelixx, is that you don't know if the other person already knows the truth,)] Ghost says in an icy tone, [ghost.speech(We know you've been taking them to Dominion. You think you can operate in our territory and get away with it? You're finished.)]
+		[ghost.speech(Проблема лжи, Анжеликса, в том, что ты не знаешь, знает ли другой человек правду,)] — произносит Гост ледяным тоном, — [ghost.speech(Мы знаем, что ты возишь их в Dominion. Думала, сможешь проворачивать дела на нашей территории и выйти сухой из воды? Тебе конец.)]
 	</p>
 	<p>
-		For the first time since entering the room, a look of genuine distress crosses Angelixx's face, before she drops the innocent act and scowls at Ghost in a bitter tone, [angelixx.speech(You don't know who you're fucking with! Mother's promised to recognise me, and once I'm a recognised daughter I'll hunt you down! I'll make you wish you'd never come here!)]
+		Впервые с момента входа в комнату на лице Анжеликсской проступает выражение искреннего отчаяния, но затем она отбрасывает маску невинности и с горечью скалится на Гост: [angelixx.speech(Да вы хоть знаете, с кем связались, блядь?! Матушка обещала признать меня, и как только я стану законной дочерью, я выслежу вас! Вы будете молить о том, чтобы никогда сюда не приходить!)]
 	</p>
 	<p>
-		With the succubus's attention now on his partner, Hammer pulls a concealed taser out of one of his bulky pockets. With the otter-girl gripping her dagger behind her back, the two Enforcers exchange a subtle hand signal, and you realise that they're about to rush Angelixx.
+		Пока суккуб отвлеклась на своего напарника, Hammer достает из одного из своих объемных карманов спрятанный тазер. Видя, что девчонка-выдра сжимает кинжал за спиной, оба Enforcer обмениваются едва заметным жестом, и ты понимаешь: они вот-вот бросятся на Angelixx.
 	</p>
 	<p>
-		[sleip.speech(You picked the wrong gang to fuck with!)] a masculine voice suddenly growls from the doorway behind you.
+		[sleip.speech(Вы выбрали не ту банду, чтобы с ней связываться!)] — внезапно из дверного проема за твоей спиной доносится мужской рык.
 	</p>
 	<p>
-		Turning around, you see that the two nightmares who were standing outside the bakery when you first arrived have finally shown up. Dropping his taser back into his pocket, Hammer swings his shotgun around to point at these new arrivals. Sensing her moment in which to escape, Angelixx starts casting her teleport spell, desperately calling out as she does so, [angelixx.speech(You'll get a special reward for this, boys! I'll come and find you later!)]
+		Обернувшись, ты видишь, что те двое кошмаров, что стояли у пекарни, когда ты только пришел, наконец-то явились. Убрав тазер обратно в карман, Hammer вскидывает дробовик, целясь в новоприбывших. Почуяв момент для побега, Angelixx начинает творить заклинание телепортации, отчаянно выкрикивая на ходу: [angelixx.speech(За это вы получите особую награду, мальчики! Я найду вас позже!)]
 	</p>
 	<p>
-		Not wanting her to escape so easily, Ghost rushes at Angelixx with a burst of speed that you'd never expect from someone of her age. Letting out a frightened little scream, Angelixx only just manages to teleport away in time, leaving Ghost's dagger to slice through thin air.
+		Ghost, не желая так легко ее отпускать, бросается на Angelixx с такой скоростью, которой никак не ожидаешь от человека ее возраста. Издав испуганный тонкий вскрик, Angelixx едва успевает телепортироваться, и кинжал Ghost лишь рассекает пустоту.
 	</p>
 	<p>
-		With the succubus having escaped, it looks like you'll now have to deal with these nightmares...
+		Суккуб ускользнула, а значит, теперь тебе придется иметь дело с этими кошмарами...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEDROOM_COMBAT_WON"><![CDATA[
 	<p>
-		Having proven themselves to be no match for you, Hammer, and Ghost, the nightmares slump to the floor in a daze.
+		Поняв, что им не сравниться с тобой, Hammer и Ghost, кошмары в оцепенении оседают на пол.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEDROOM_COMBAT_LOST"><![CDATA[
 	<p>
-		Not wanting to fight any longer, you back away from the nightmares, leaving Hammer and Ghost to take them alone. Thankfully, the Enforcers prove to be more than a match for them, and just a moment later the two nightmares are slumping to the floor in a daze.
+		Не желая больше сражаться, ты отступаешь от кошмаров, оставляя Hammer и Ghost разбираться с ними в одиночку. К счастью, Enforcer оказываются им не ровней, и всего мгновение спустя оба кошмара в оцепенении оседают на пол.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEDROOM_COMBAT_NO_FIGHT"><![CDATA[
 	<p>
-		You don't like the thought of having to fight these huge, demonic horse-morphs, and so you back away from them, leaving Hammer and Ghost to take them down. Thankfully, the Enforcers prove to be more than a match for them, and after taking a couple of tear gas canisters and half a dozen pepperball canisters, the two nightmares slump to the floor in a daze.
+		Тебе не по душе мысль о сражении с этими огромными демоническими конь-морфами, поэтому ты отходишь назад, позволяя Hammer и Ghost расправиться с ними. К счастью, Enforcer оказываются им не ровней, и после пары гранат со слезоточивым газом и полудюжины перцовых шариков оба кошмара в оцепенении оседают на пол.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEDROOM_COMBAT_END"><![CDATA[
 	<p>
-		[hammer.speech(I can't believe that bitch managed to escape,)] Hammer angrily growls, before kicking at one of the empty collars lying on the floor and adding, [hammer.speech(We didn't even get here in time to save the kidnapped refugees...)]
+		[hammer.speech(Поверить не могу, что этой суке удалось сбежать,)] — сердито рычит Hammer, пиная один из пустых ошейников, лежащих на полу, и добавляет: [hammer.speech(Мы даже не успели вовремя, чтобы спасти похищенных беженцев...)]
 	</p>
 	<p>
-		[ghost.speech(She won't be back here any time soon, so we achieved our main goal of clearing her gang out of Elis,)] Ghost says to put a positive spin on things. Sheathing her dagger, she steps over to an old table on one side of the room, before picking up what looks to be a flowery notebook and saying, [ghost.speech(Looks like Angelixx forgot her diary. Perhaps we'll get something useful out of this...)]
+		[ghost.speech(Она здесь скоро не объявится, так что наша главная цель — вышвырнуть её банду из Elis — достигнута,)] — говорит Ghost, пытаясь найти во всем плюсы. Убрав кинжал в ножны, она подходит к старому столу в углу комнаты и, подхватив что-то похожее на блокнот в цветочек, произносит: [ghost.speech(Похоже, Angelixx забыла свой дневник. Возможно, из этого выйдет что-то полезное...)]
 	</p>
 	<p>
-		[hammer.speech(Fuck, looks like we made too much of a commotion,)] Hammer grunts as he looks out of the room's single window and down into the alleyway. Moving over to see what he's looking at, you count no less than half a dozen Enforcers preparing to enter the bakery. Speaking out loud for your benefit, the wolf-boy says, [hammer.speech(The Patrol crew are good guys and gals, but if they recognise us then everyone in Elis will know by morning. We haven't been recognised so far, and I'd prefer to keep it that way.)]
+		[hammer.speech(Блядь, похоже, мы подняли слишком много шума,)] — ворчит Hammer, глядя в единственное окно комнаты на переулок внизу. Когда ты подходишь ближе, чтобы увидеть, на что он смотрит, ты замечаешь не меньше полудюжины Enforcer, готовящихся войти в пекарню. Говоря вслух, чтобы ты не упустил ни слова, волк-мальчишка добавляет: [hammer.speech(Патрульные — ребята славные, но если они нас узнают, то к утру об этом будет знать весь Элис. Пока нас не раскусили, и я бы хотел оставить всё как есть.)]
 	</p>
 	<p>
-		[ghost.speech(So how are we going to get out of here without being found?)] Ghost asks. You can tell from the tone of her voice that she's teasing Hammer, and knows that he's got a plan for your escape.
+		[ghost.speech(И как же мы собираемся выбираться отсюда, чтобы нас не нашли?)] — спрашивает Ghost. По её тону понятно, что она поддразнивает Hammer, зная, что у него уже есть план вашего побега.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_END"><![CDATA[
 	<p>
-		[hammer.speech(The adjoining building is also abandoned, and the back door leads into the perfect alleyway for us to use as an escape route,)] Hammer explains, [hammer.speech(We just need a way of getting into it...)]
+		[hammer.speech(Соседнее здание тоже заброшено, а задняя дверь ведет прямиком в идеальный переулок, который послужит нам путем отхода,)] — объясняет Hammer, — [hammer.speech(Нам просто нужно как-то туда попасть...)]
 	</p>
 	<p>
-		Reaching down into another of the bulky pockets in his trousers, he produces what looks very much like an explosive charge. Placing this device on one of the walls, he grabs hold of you and Ghost and firmly pulls the two of you out into the corridor. A moment later, a flash of orange light and a deafening roar bursts out from the bedroom, causing the whole building to shake while dust and pieces of plasterboard fall from the ceiling.
+		Засунув руку в очередной объемный карман своих штанов, он достает нечто, очень похожее на взрывчатку. Закрепив устройство на одной из стен, он хватает тебя и Ghost и крепко вытягивает вас обоих в коридор. Мгновение спустя из спальни вырывается вспышка оранжевого света и оглушительный рев; всё здание содрогается, а с потолка сыплется пыль и куски гипсокартона.
 	</p>
 	<p>
-		[style.speechMasculineHeavy(That came from upstairs!)] you hear the voice of one of the Patrol Enforcers shouting from somewhere downstairs. Realising the need for speed, the three of you quickly rush back into the bedroom, where a centaur-sized hole has been blown clean through the wall.
+		[style.speechMasculineHeavy(Это донеслось сверху!)] — слышишь ты голос одного из патрульных Enforcer, кричащего откуда-то сверху. Понимая, что медлить нельзя, вы втроем быстро бросаетесь обратно в спальню, где в стене зияет дыра размером с кентавра.
 	</p>
 	<p>
-		Hurrying through the hole that Hammer's device has created, you and Ghost follow the wolf-boy as he confidently leads you down a flight of stairs and into an alleyway. A few minutes of navigating through the narrow, twisting passages of northern Elis, and you soon find yourself passing through the same gate that Hammer unlocked on your way to the bakery.
+		Спешно пробираясь через пролом, оставленный устройством Хаммера, ты и Призрак следуешь за волком-мальчишкой, который уверенно ведет вас вниз по лестнице, прямо в переулок. Спустя несколько минут блужданий по узким, извилистым улочкам северного Элиса, вы обнаруживаете, что проходите через те же ворота, которые Хаммер отпер по пути к пекарне.
 	</p>
 	<p>
-		With the Enforcer station now in sight in the distance, Ghost turns to you and says, [ghost.speech(It's time for us to part ways. We didn't get recognised, so I guess we didn't need you after all, [pc.name].)]
+		Когда станция Enforcer показалась вдали, Призрак поворачивается к тебе и говорит: [ghost.speech(Нам пора расходиться. Нас не узнали, так что, полагаю, ты нам всё-таки не особо и пригодилась, [pc.name].)]
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_sword_mission_fought))
-			[hammer.speech(Thanks for the backup in there, [pc.name]. You didn't have to fight, you know, but we appreciate it,)]
+			[hammer.speech(Спасибо за подмогу там, [pc.name]. Тебе и драться-то не обязательно было, но мы ценим помощь,)]
 		#ELSE
-			[hammer.speech(Thanks for agreeing to come along with us, [pc.name],)]
+			[hammer.speech(Спасибо, что согласилась пойти с нами, [pc.name],)]
 		#ENDIF
-		 Hammer says, before grunting, [hammer.speech(Next it's our turn to help you. We'll get to work on preparing a defence plan for Elis first thing tomorrow.)]
+		 Хаммер говорит это, а затем, кряхтя, добавляет: [hammer.speech(Теперь наша очередь помогать тебе. Завтра же первым делом займемся подготовкой плана обороны Элиса.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MISSION_END_CONTINUE"><![CDATA[
 	<p>
-		With the operation now at an end, you say goodbye to Hammer and Ghost.
+		Операция завершена, и ты прощаешься с Хаммером и Призраком.
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_sword_mission_fought) && ghost.getAffection(pc)>=20)
 		#IF(flags.hasFlag(FLAG_innoxia_sword_mission_chose_hammer))
 			<p>
-				[hammer.speech(You know, you would have made a good Enforcer,)] Hammer says, [hammer.speech(I'd have liked to have had you around during the Fifth Human Rebellion... I'll have something for you when you next drop in at the station.)]
+				[hammer.speech(Знаешь, из тебя вышел бы отличный Enforcer,)] — говорит Хаммер, — [hammer.speech(Я бы хотел, чтобы ты была рядом во время Пятого восстания людей... Приберегу для тебя кое-что, когда в следующий раз заглянешь на станцию.)]
 			</p>
 		#ELSE
 			<p>
-				[ghost.speech(You know, I think you'd have made a half-decent Enforcer,)] Ghost says in a serious tone, [ghost.speech(We could have used you during the Fifth Human Rebellion... Tell you what, I'll have something for you when you next drop in at the station.)]
+				[ghost.speech(Знаешь, мне кажется, из тебя вышел бы неплохой Enforcer,)] — серьезным тоном говорит Призрак, — [ghost.speech(Ты бы пригодился нам во время Пятого восстания людей... Давай так: когда в следующий раз заглянешь на станцию, я кое-что для тебя припасю.)]
 			</p>
 		#ENDIF
 	#ENDIF
 	<p>
-		Turning to her partner, the small otter-girl teases, [ghost.speech(So, my place?)]
+		Повернувшись к своему напарнику, маленькая девочка-выдра дразнит: [ghost.speech(Так что, у меня?)]
 	</p>
 	<p>
-		[hammer.speech(Just don't keep me up all night,)] the wolf-boy grunts.
+		[hammer.speech(Только не заставляй меня не спать всю ночь,)] — ворчит волк-мальчишка.
 	</p>
 	<p>
-		With that, the two of them say goodbye to you and slip off into the darkness. Although they're not going to be awake at this time, you now need to head back to the town hall and tell Minotallys and Arion that you've managed to get the help of the SWORD Enforcers. Wondering what to do with the rest of the night, you set off into the streets of Elis...
+		С этими словами они прощаются с тобой и скрываются во тьме. Хотя в такое время им уже не до сна, теперь тебе нужно вернуться в ратушу и сообщить Миноталлису и Ариону, что тебе удалось заручиться поддержкой Enforcer из SWORD. Раздумывая, чем заняться в оставшуюся часть ночи, ты отправляешься на улицы Элиса...
 	</p>
 	]]>
 	</htmlContent>
