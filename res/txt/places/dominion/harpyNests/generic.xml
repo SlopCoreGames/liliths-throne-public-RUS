@@ -5,23 +5,23 @@
 	
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	<p>
-		An arrow-shaped sign sits in the middle of the street, and as you approach, you see that it's sporting the words <i>'Harpy Nests'</i>. Looking to the side of the road in the direction that the arrow is pointing, you find yourself looking up at one of the tallest buildings in Dominion.
+		Посреди улицы стоит указатель в форме стрелы, и по мере приближения ты замечаешь на нем надпись <i>«Гнезда гарпий»</i>. Посмотрев в сторону, куда указывает стрела, ты обнаруживаешь перед собой одно из самых высоких зданий в Dominion.
 	</p>
 	<p>
-		At eight stories in height, it's not exactly a sky-scraper, but with most of Dominion's buildings typically only being four or five stories tall at most, this structure is large enough to clearly stand out as a building of some importance. Despite its unusual height, the only other feature setting it apart from all the other buildings in this area is the pair of huge glass doors set into its frontage.
+		Восьмиэтажное, оно не назовешь небоскребом, но поскольку большинство зданий в Dominion обычно не превышают четырех-пяти этажей, это строение достаточно велико, чтобы явно выделяться как нечто важное. Несмотря на необычную высоту, единственная черта, отличающая его от всех остальных построек в этом районе, — пара огромных стеклянных дверей на фасаде.
 	</p>
 	<p>
-		Looking through the doors, you see a brightly-lit, extravagantly-decorated lobby. Rows of elevators are set into either side of the room, and you notice that there are an unusual amount of harpies loitering around on the many comfortable-looking sofas that litter the area.
+		Заглянув в двери, ты видишь ярко освещенное, роскошно украшенное лобби. По обе стороны зала тянутся ряды лифтов, и ты замечаешь необычайно много гарпий, бездельничающих на многочисленных уютных диванах, разбросанных по залу.
 	</p>
 	<p>
 		#IF(pc.isAbleToFly())
 			#IF(pc.hasCompanions() && !pc.isPartyAbleToFly())
-				It's obvious from even a cursory glance that this building is the entrance to the rooftop Harpy Nests, and you wonder if you and [com.name] should step inside and make use of one of the elevators.
+				Даже беглый взгляд позволяет понять, что это здание — вход к небесным Гнездам гарпий, и ты гадаешь, стоит ли тебе и [com.name] зайти внутрь и воспользоваться одним из лифтов.
 			#ELSE
-				It's obvious from even a cursory glance that this building is the entrance to the rooftop Harpy Nests, but seeing as you're able to fly, you don't really have much use for the elevators inside.
+				Даже беглый взгляд позволяет понять, что это здание — вход к небесным Гнездам гарпий, но раз уж ты умеешь летать, лифты внутри тебе особо и не понадобятся.
 			#ENDIF
 		#ELSE 
-			It's obvious from even a cursory glance that this building is the entrance to the rooftop Harpy Nests, and you wonder if you should step inside and make use of one of the elevators.
+				Даже беглый взгляд позволяет понять, что это здание — вход к небесным Гнездам гарпий, и ты гадаешь, стоит ли тебе зайти внутрь и воспользоваться одним из лифтов.
 		#ENDIF
 	</p>
 	]]>
@@ -31,23 +31,23 @@
 	#IF(pc.isPartyAbleToFly())
 		<p>
 			#IF(pc.hasCompanions())
-				Telling [com.name] to follow along, you #IF(!pc.isAbleToFlyFromExtraParts())spread your wings and #ENDIFdash into a forwards sprint, and with a little jump#IF(!pc.isAbleToFlyFromExtraParts()) and a few powerful flaps,#ENDIF you take off into the air. Quickly gaining altitude, you circle back towards the tall building, looking for an easy spot to land. Thankfully, the structure's steepled roof has had a flat platform built over the top of it, and#IF(!pc.isAbleToFlyFromExtraParts()) with another flap of your wings,#ENDIF you and your [com.companion] swoop down to land on top of it.
+				Велев [com.name] следовать за тобой, ты #IF(!pc.isAbleToFlyFromExtraParts())spread your wings and #ENDIFdash into a forwards sprint, and with a little jump#IF(!pc.isAbleToFlyFromExtraParts()) and a few powerful flaps,#ENDIF you take off into the air. Quickly gaining altitude, you circle back towards the tall building, looking for an easy spot to land. Thankfully, the structure's steepled roof has had a flat platform built over the top of it, and#IF(!pc.isAbleToFlyFromExtraParts()) with another flap of your wings,#ENDIF you and your [com.companion] swoop down to land on top of it.
 			#ELSE
 				#IF(!pc.isAbleToFlyFromExtraParts())Spreading your wings, you#ELSEYou#ENDIF dash into a forwards sprint, and with a little jump#IF(!pc.isAbleToFlyFromExtraParts()) and a powerful flap#ENDIF, you take off into the air. Quickly gaining altitude, you circle back towards the tall building, looking for an easy spot to land. Thankfully, the structure's steepled roof has had a flat platform built over the top of it, and#IF(!pc.isAbleToFlyFromExtraParts()) with another flap of your wings,#ENDIF you gracefully swoop down to land on top of it.
 			#ENDIF
 		</p>
 		<p>
-			Looking around, you see that the only exit from the platform is a ramp that leads straight down into the building's top floor, and a sign above the opening reads <i>'Harpy entrance'</i>. Walking down the ramp, you push open a little door and step inside.
+			Оглядевшись, ты замечаешь, что единственный выход с платформы — это пандус, ведущий прямиком на верхний этаж здания. Над проемом висит вывеска <i>«Вход для гарпий»</i>. Спускаясь по пандусу, ты толкаешь небольшую дверь и входишь внутрь.
 		</p>
 	#ELSE
 		<p>
-			Pushing open one of the large glass doors, you step forwards into the lobby. Although there's a front desk, it's currently surrounded by a group of bickering harpies, and from what snippets of conversation you can catch, it sounds like they're arguing with the receptionist, and each other, over what colour of feather is the most attractive.
+			Распахнув одну из больших стеклянных дверей, ты шагаешь в вестибюль. Здесь есть стойка регистрации, но сейчас она окружена группой спорящих гарпий. Из обрывков их разговоров кажется, что они препираются с регистратором и друг с другом, выясняя, какой цвет перьев самый привлекательный.
 		</p>
 		<p>
-			Looking around, you don't see any other members of the building's staff, and so assuming that they're available for anyone to use, you head over to one of the elevators and step inside. Pressing the button on the control panel marked 'up', the automatic doors slide shut, and with a hum of arcane energy, the lift lurches into motion.
+			Оглядевшись, ты не видишь больше ни одного сотрудника здания, поэтому, решив, что лифты в свободном доступе, ты направляешься к одному из них и заходишь внутрь. Стоит тебе нажать на кнопку «вверх» на панели управления, как автоматические двери плавно закрываются, и под гул арканной энергии лифт резко трогается с места.
 		</p>
 		<p>
-			After quickly transporting you up to the top of the building, the elevator's doors ping open, allowing you to [pc.step] out into the building's top floor.
+			Быстро доставив тебя на крышу здания, двери лифта с мелодичным звоном разъезжаются, позволяя тебе [pc.step] на верхний этаж.
 		</p>
 	#ENDIF
 	]]>
@@ -58,15 +58,15 @@
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST"><![CDATA[
 	<p>
-		You find yourself standing in yet another large, open-plan lobby, but this one has quite a different atmosphere than the one on the ground floor. Everywhere you look, uniformed Enforcers are standing guard, carefully tracking each passer-by with a suspicious gaze. A large desk, manned by yet more Enforcers, sits between you and the door marked <i>'Harpy Nests Entrance'</i>.
+		Ты оказываешься в еще одном огромном открытом вестибюле, но здесь царит совсем иная атмосфера, чем на первом этаже. Куда ни глянь — повсюду стоят на страже облаченные в форму Enforcer, подозрительными взглядами отслеживающие каждого прохожего. Между тобой и дверью с надписью <i>«Вход в Гнезда Гарпий»</i> стоит большой стол, за которым дежурят еще несколько Enforcer.
 	</p>
 	#IF(!game.getDialogueFlags().hasFlag(FLAG_hasHarpyNestAccess))
 		<p>
-			Although none of them are really paying you any attention at the moment, it looks like you're going to have to talk to one of these Enforcers if you want to get past that desk and out into the Harpy Nests.
+			Хотя сейчас на тебя никто особо не обращает внимания, похоже, тебе придётся заговорить с одной из этих Enforcer, если ты хочешь миновать стойку и выбраться в Гнезда гарпий.
 		</p>
 	#ELSE
 		<p>
-			As you've already spoken to one of the Enforcers and secured a pass, you're free to come and go from the Harpy Nests as you please.
+			Поскольку ты уже поговорила с одной из Enforcer и получила пропуск, теперь ты вольна приходить в Гнезда гарпий и уходить из них, когда пожелаешь.
 		</p>
 	#ENDIF
 	]]>
@@ -77,45 +77,49 @@
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST_ASK_FOR_ACCESS"><![CDATA[
 	<p>
-		As you approach the desk, a wolf-girl Enforcer catches your eye and calls out, [style.speechFeminine(Hey you, yeah <i>you</i>, come here!)]
+		Когда ты приближаешься к стойке, взгляд тебя ловит волчица-Enforcer и выкрикивает: [style.speechFeminine(Эй ты, да, <i>ты</i>, иди сюда!)]
 	</p>
 	#IF(pc.getQuest(QUEST_LINE_MAIN)==QUEST_MAIN_1_E_REPORT_TO_HELENA)
 		<p>
-			You do as the wolf-girl asks and walk over to where she's sitting behind the desk. Flashing you a suspicious glance, she says that if you're planning on entering the Harpy Nests, you'll have to tell her what your business here is. Not seeing any reason to lie, you inform the Enforcer that you're here to find a harpy matriarch called 'Helena'.
+			Ты делаешь, как просит волчица, и подходишь к ней, сидящей за стойкой. Бросив на тебя подозрительный взгляд, она заявляет, что если ты планируешь войти в Гнезда гарпий, то должна объяснить, зачем ты здесь. Не видя причин лгать, ты сообщаешь Enforcer, что пришла разыскать матриарха гарпий по имени Helena.
+		</p>
+	<p>
+			При упоминании этого имени на лице волчицы промелькнуло удивление, и она предостерегает: [style.speechFeminine(Эй, если ты не знакома с ней раньше, то слушай внимательно. Ты наверняка видела Helena в модных журналах, верно? Так вот, она совсем не такая, какой её малюют; скажешь ей одно неверное слово, и она превращается из обожаемой знаменитости в психованную сучку быстрее, чем ты успеешь извиниться. Так что следи за языком, ясно?)]
 		</p>
 		<p>
-			A look of surprise crosses the wolf-girl's face as you mention that name, and she warns, [style.speechFeminine(Hey, if you haven't met her before, then listen up. You've no doubt seen Helena in fashion magazines before, right? Well, she's nothing like they make her out to be; you say one wrong word to her, and she goes from beloved celebrity to psycho bitch before you get the chance to apologise. You watch what you say to her, ok?)]
+			Поблагодарив волчицу за предупреждение, ты отходишь от её стола, готовясь отправиться в путь, но прежде чем ты уйдёшь, ей нужно сказать ещё кое-что: [style.speechFeminine(Погоди, задержись на мгновение. Не знаю, в курсе ли ты последних событий, но мне лучше просветить тебя, прежде чем ты отправишься в путь. В общем, какая-то идиотка-собачница решила заявить Helena, что та не такая уж красавица, как другая матриарх, которую она видела. Ну, после того как Helena заставила всю свою стаю оттрахать эту сучку до полусмерти, она решила лично проверить, насколько хороша та другая матриарх. Одно потянуло за другое, и минут через двадцать у нас чуть не начался полномасштабный бунт.)]
 		</p>
 		<p>
-			Thanking the wolf-girl for the warning, you step away from her desk and prepare to be on your way, but before you leave, she has a few last things to say, [style.speechFeminine(Wait, hold on a moment. I don't know if you know what happened here recently, but I'd better inform you of the facts before you go out there. Basically, some idiot dog-girl decided to say to Helena that she wasn't as pretty as another matriarch she'd seen. Well, after Helena got her flock to fuck that dog-girl into a broken mess, she decided to go and see how pretty this other matriarch was. One thing led to another, and within about twenty minutes we almost had a full-blown riot on our hands.)]
+			Волчица откидывается на спинку стула и, продолжая рассказ, выразительно обводит рукой комнату: [style.speechFeminine(Чтобы взять всё под контроль, нам пришлось напрячься почти всем составом. В Гнёздах всё ещё царит напряжённая обстановка, так что постарайся не сделать ничего, что могло бы оскорбить матриархов, ладно? Эти гарпии могут казаться слабыми, но если их разозлить — это не шутки, так что не забывай следить за манерами!)]
 		</p>
 		<p>
-			The wolf-girl leans back in her chair, before gesturing to the room for emphasis as she continues, [style.speechFeminine(It took near enough every single one of us here to get things back under control. Tensions are still running high in the Nests, so make sure you don't do anything to offend any of the matriarchs, ok? These harpies may look weak, but they're no joke if you piss them off, so remember to mind your manners out there!)]
+		
+Она наклоняется, чтобы поднять что-то из-под стола, а выпрямившись, протягивает тебе небольшую книжицу. Когда ты берешь её, то видишь на обложке надпись: «Всё о гарпиях». Снова откинувшись на спинку стула, услужливая Enforcer вздыхает: [style.speechFeminine(Ради собственного же блага, тебе стоит почитать о повадках гарпий, если планируешь путешествовать по гнездам. О, и пожалуйста, постарайся там не наделать глупостей!)]
 		</p>
 		<p>
-			She bends down to retrieve something from under her desk, and after straightening back up, she holds out a little booklet towards you. Reaching out to take it, you look down to see the words 'All about Harpies' on the front cover. Leaning back in her chair once again, the helpful Enforcer sighs, [style.speechFeminine(For your own sake, you should read up on harpy behaviour if you're planning on travelling through the nests. Oh, and please do try to be careful out there!)]
-		</p>
-		<p>
-			After you've thanked the wolf-girl once again for her warning, she gives you a pass to show to any other Enforcers who try to stop you from going out into the nests. Finally being given the go-ahead to continue on your way, you step away from the desk and prepare to track down this 'Helena' character...
+		
+Ещё раз поблагодарив волчицу за предупреждение, ты получаешь пропуск, который можно предъявить любому другому Enforcer, попытавшемуся преградить тебе путь в гнезда. Наконец получив добро идти дальше, ты отходишь от стола и готовишься выследить некую Helena...
 		</p>
 	#ELSE
 		<p>
-			You do as the wolf-girl asks and walk over to where she's sitting behind the desk. Flashing you a suspicious glance, she says that if you're planning on entering the Harpy Nests, you'll have to tell her what your business here is. Not having any particular reason to be up here, you inform the Enforcer that you simply wanted to take a look around.
+		
+Ты делаешь так, как просит волчица, и подходишь к её рабочему месту за столом. Бросив на тебя подозрительный взгляд, она заявляет, что если ты собираешься войти в Гнезда Гарпий, то должен объяснить, какое у тебя здесь дело. Не имея какой-то особой цели, ты сообщаешь Enforcer, что просто хочешь осмотреться.
 		</p>
 		<p>
-			Letting out an exasperated groan, the wolf-girl narrows her eyes and asks, [style.speechFeminine(So you fancy yourself some kind of tourist, huh? Do you know <i>anything</i> about what it's like out there?)]
+		
+Раздраженно простонав, волчица прищуривается и спрашивает: [style.speechFeminine(Значит, возомнил себя туристом, да? Ты хоть <i>что-нибудь</i> смыслишь в том, каково там на самом деле?)]
 		</p>
 		<p>
-			Not having been in the Harpy Nests before, you find yourself replying in the negative. Rolling her eyes and letting out yet another annoyed groan, the wolf-girl explains, [style.speechFeminine(Well, it's my job to make sure nobody goes out there unprepared, so listen up! I don't know if you know what happened here recently, but some idiot dog-girl decided to say to one flock's matriarch that she wasn't as pretty as another matriarch she'd seen. Well, after Helena got her flock to fuck that dog-girl into a broken mess, she decided to go and see how pretty this other matriarch was. One thing led to another, and within about twenty minutes we almost had a full-blown riot on our hands.)]
+			Поскольку ты раньше никогда не бывал в Гнездах гарпий, ты отвечаешь отрицательно. Закатив глаза и издав очередной раздраженный стон, волчица объясняет: [style.speechFeminine(Ну, моя работа — следить, чтобы никто не совался туда неподготовленным, так что слушай внимательно! Не знаю, слышал ли ты о недавних событиях, но какая-то идиотка-собачница решила заявить матриарху одного стада, что та не так хороша собой, как другая матриарх, которую она видела. В общем, после того как Helena заставила всё своё стадо оттрахать эту сучку до полусмерти, та решила проверить, насколько хороша собой вторая матриарх. Одно потянуло за другое, и минут через двадцать у нас чуть не начался полномасштабный бунт.)]
 		</p>
 		<p>
-			The wolf-girl leans back in her chair, before gesturing to the room for emphasis as she continues, [style.speechFeminine(It took near enough every single one of us here to get things back under control. Tensions are still running high in the Nests, so make sure you don't do anything to offend any of the matriarchs, ok? These harpies may look weak, but they're no joke if you piss them off, so remember to mind your manners out there!)]
+			Волчица откидывается на спинку стула и, продолжая рассказ, выразительно обводит рукой комнату: [style.speechFeminine(Чтобы взять всё под контроль, нам пришлось напрячься почти всем составом. В Гнёздах всё ещё царит напряжённая обстановка, так что постарайся не сделать ничего, что могло бы оскорбить матриархов, ладно? Эти гарпии могут казаться слабыми, но если их разозлить — это не шутки, так что не забывай следить за манерами!)]
 		</p>
 		<p>
-			She bends down to retrieve something from under her desk, and after straightening back up, she holds out a little booklet towards you. Reaching out to take it, you look down to see the words 'All about Harpies' on the front cover. Leaning back in her chair once again, the Enforcer sighs, [style.speechFeminine(For your own sake, you should read up on harpy behaviour if you're planning on travelling through the nests. Oh, and please do try to be careful out there!)]
+			Она наклоняется, чтобы достать что-то из-под стола, а выпрямившись, протягивает тебе небольшую книжицу. Когда ты берешь её, то видишь на обложке надпись: «Всё о гарпиях». Снова откинувшись на спинку стула, Enforcer вздыхает: [style.speechFeminine(Ради собственного же блага, тебе стоит изучить повадки гарпий, если планируешь путешествовать по гнездам. О, и пожалуйста, постарайся там не вляпаться в неприятности!)]
 		</p>
 		<p>
-			After you've thanked the wolf-girl for her warning, she gives you a pass to show to any other Enforcers who try to stop you from going out into the nests. Finally being given the go-ahead to continue on your way, you step away from the desk and prepare to explore the Harpy Nests...
+			Поблагодарив волчицу за предупреждение, ты получаешь пропуск, который можно предъявить любому другому Enforcer, попытавшемуся преградить тебе путь в гнезда. Наконец получив разрешение идти дальше, ты отходишь от стола и готовишься исследовать Гнезда гарпий...
 		</p>
 	#ENDIF
 	]]>
@@ -126,54 +130,54 @@
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS"><![CDATA[
 	<p>
-		Curious to find out more about the recent unrest in the harpy nests, you quickly scan the room for the most senior-looking Enforcer. A tall, muscular horse-boy, with chevrons on his uniform marking him as a sergeant, fits the bill, and you start to walk over towards him. He's currently giving orders to a pair of cat-girls, and you hang around for a moment, waiting for him to finish his business.
+		Желая разузнать побольше о недавних беспорядках в гнездах гарпий, ты быстро оглядываешь комнату в поисках самого старшего по виду Enforcer. Высокий мускулистый коновод в форме с шевронами, обозначающими звание сержанта, подходит под это описание, и ты направляешься к нему. Сейчас он раздает приказы паре кошкодевочек, так что ты замираешь на мгновение, ожидая, пока он закончит свои дела.
 	</p>
 	<p>
-		[style.speechMasculineStrong(Alright, report back here as soon as you get that warrant,)] you hear him say, [style.speechMasculineStrong(These harpies are getting out of control... Oh, and Alice, before you go, if I hear just <i>one more</i> rumour about you shirking your duties to go visit your boyfriend, I'll fuck you myself! Now get out of my sight!)]
+		[style.speechMasculineStrong(Ладно, докладывай сюда, как только получишь ордер,)] — слышишь ты его голос, — [style.speechMasculineStrong(Эти гарпии совсем отбились от рук... О, и Алиса, прежде чем уйдешь: если я услышу еще хоть <i>одну</i> сплетню о том, что ты халтуришь ради свиданий со своим парнем, я сам тебя оттрахаю! А теперь брысь с глаз моих!)]
 	</p>
 	<p>
-		[style.speechFeminine(Yes, sir!)] the cat-girls call out in unison, before running off.
+		[style.speechFeminine(Есть, сэр!)] — в унисон выкрикивают кошкодевочки и убегают.
 	</p>
 	<p>
-		Seeing your opportunity to find out more about what's going on in the Harpy Nests, you walk up to the muscular horse-boy. Noticing your approach, he grunts, [style.speechMasculineStrong(What is it now? If one of those harpy bitches out there did something, I don't have the time to help you. You should have known the risks before going out there!)]
+		Видя возможность разузнать о происходящем в Гнездах Гарпий, ты подходишь к мускулистому коноводу. Заметив тебя, он ворчит: [style.speechMasculineStrong(Ну чего еще? Если одна из этих сук-гарпий там снаружи что-то натворила, у меня нет времени тебе помогать. Нужно было знать, на что идешь, прежде чем соваться туда!)]
 	</p>
 	<p>
-		Telling the horse-boy that you couldn't help but overhear how much trouble he and the rest of the Enforcers are having with these harpies, you ask if there's anything you can do to help.
+		Сказав коноводу, что ты невольно подслушала, сколько хлопот доставляют ему и остальным Enforcer эти гарпии, ты спрашиваешь, не можешь ли ты чем-нибудь помочь.
 	</p>
 	<p>
-		[style.speechMasculineStrong(Hah!)] the horse-boy laughs, [style.speechMasculineStrong(Do you really think that you can do what I can't?!)]
+		[style.speechMasculineStrong(Ха!)] — хохочет коновод, — [style.speechMasculineStrong(Ты серьезно думаешь, что сможешь сделать то, что не под силу мне?!)]
 	</p>
 	<p>
-		Choosing not to answer his question, you wait for the horse-boy to continue talking, and after a moment of trying to stare you down, he throws his arms up in the air and exclaims, [style.speechMasculineStrong(Fine! I can't believe it's come to this, but I've run out of ideas. Follow me.)]
+		Не желая отвечать на его вопрос, ты ждешь, пока коньконог продолжит говорить. Спустя мгновение попыток прожечь тебя взглядом, он вскидывает руки и восклицает: [style.speechMasculineStrong(Ладно! Поверить не могу, что всё до этого дошло, но у меня кончились идеи. Иди за мной.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT"><![CDATA[
 	<p>
-		Stepping over to push open a nearby door, the horse-boy beckons for you to follow him inside. Doing so, you find yourself entering a small office, and as you close the door behind you, the horse-boy steps around to the other side of a solid wooden desk, before sinking down into his chair. Leafing through the pile of papers in front of him, he pulls out three separate sheets, before handing them over to you. Leafing through them, you see that there's a portrait of an exceptionally beautiful harpy on each one, and as you take a closer look, the Enforcer explains, [style.speechMasculineStrong(So, as everyone's aware, the Harpy Nests are exceptionally dangerous right now. The more prominent of the matriarchs have been at each other's throats ever since that business with the dog-girl.)]
+		Подойдя к ближайшей двери, коньконог толкает её и манит тебя за собой. Ты входишь в небольшой кабинет, и как только дверь за тобой закрывается, парень обходит массивный деревянный стол и тяжело опускается в кресло. Перебирая стопку бумаг перед собой, он вытягивает три отдельных листа и протягивает их тебе. Просматривая их, ты замечаешь, что на каждом изображен портрет необычайно прекрасной гарпии. Когда ты присматриваешься, Enforcer поясняет: [style.speechMasculineStrong(Как все знают, сейчас в Гнездах гарпий чертовски опасно. Самые влиятельные матриархи грызутся между собой с тех самых пор, как случилась та история с девчонкой-собакой.)]
 	</p>
 	<p>
-		Clenching his fists and gritting his teeth for a moment, he angrily admits, [style.speechMasculineStrong(We managed to come to an agreement with Helena, who, if you didn't know, is the most important and powerful of all the Nests' matriarchs. Those other three you're looking at, however, are refusing to cooperate.)]
+		Сжав кулаки и на мгновение стиснув зубы, он с раздражением признает: [style.speechMasculineStrong(Нам удалось договориться с Helena — а она, если ты не в курсе, самая важная и могущественная из всех матриархов Гнезд. Однако те трое, на которых ты смотришь, на сотрудничество пока не идут.)]
 	</p>
 	<p>
-		You flick between the papers as he continues, [style.speechMasculineStrong(That one with the blonde feathers is [bimboHarpy.name], the mean-looking one is [dominantHarpy.name], and the other one is called [nymphoHarpy.name]. They outright refuse to get along with one another, and their ongoing feud is causing the Nests to descend into absolute anarchy. Every day we get a half-dozen new reports of harpies attacking travellers in broad daylight! No matter how many patrols we send out, nothing changes. As much as I hate to admit it, it's the matriarchs who are the ones responsible for keeping law and order up here.)]
+		Ты быстро перелистываешь бумаги, пока он продолжает: [style.speechMasculineStrong(Та, что с блондинистыми перьями — это [bimboHarpy.name], та, что выглядит злее всех — [dominantHarpy.name], а вторую зовут [nymphoHarpy.name]. Они наотрез отказываются ладить друг с другом, и их вечная вражда погружает Гнезда в абсолютную анархию. Каждый божий день к нам приходят десятки отчетов о том, что гарпии нападают на путешественников средь бела дня! Сколько бы патрулей мы ни посылали, ничего не меняется. Как бы мне ни было неприятно это признавать, именно матриархи — те, кто поддерживает здесь закон и порядок.)]
 	</p>
 	<p>
-		Having got an idea of what the situation is, you ask the Enforcer why he hasn't sent his subordinates to get these matriarchs under control.
+		Поняв суть проблемы, ты спрашиваешь Enforcer, почему он до сих пор не отправил своих подчиненных, чтобы те взяли этих матриархов под контроль.
 	</p>
 	<p>
-		[style.speechMasculineStrong(If I tried sending patrols in to do that, it'd be seen as an insult to all the harpy flocks. Helena would certainly get involved again, which is the last thing we need right now. I hate asking for help like this, but if by some miracle you're able to subdue those three,)] he points to the papers in your hand again, [style.speechMasculineStrong(I could offer a five thousand flame reward.)]
+		[style.speechMasculineStrong(Если я попробую отправить туда патрули, это сочтут за оскорбление всех стай гарпий. Helena наверняка снова влезет в это дело, а это последнее, что нам сейчас нужно. Ненавижу просить о помощи вот так, но если каким-то чудом тебе удастся усмирить этих троих,)] — он снова указывает на бумаги в твоих руках, [style.speechMasculineStrong(я готов предложить награду в пять тысяч огней.)]
 	</p>
 	<p>
-		Telling the horse-boy that you'll get it done, you turn to take your leave. Ignoring his dismissive grunt as he sinks down into his chair, you exit the sergeant's office and [pc.step] back out into the Enforcer Post...
+		Обещав этому коню-мальчишке, что всё будет сделано, ты разворачиваешься, чтобы уйти. Игнорируя его пренебрежительное хмыканье, когда он опускается в кресло, ты выходишь из кабинета сержанта и [pc.step] возвращаешься на пост Enforcer...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST_ASK_ABOUT_RIOTS_NEXT_LEAVE"><![CDATA[
 	<p>
-		[pc.Stepping] out of the sergeant's office, you once again find yourself standing in the Enforcer Post...
+		[pc.Stepping] выйдя из кабинета сержанта, ты снова оказываешься на посту Enforcer...
 	</p>
 	]]>
 	</htmlContent>
@@ -182,25 +186,25 @@
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST_COMPLETED_PACIFICATION"><![CDATA[
 	<p>
-		You walk over towards the office where you first accepted the horse-boy Enforcer's request to pacify the Harpy Nests. As you approach, the door opens, and a vaguely familiar, exhausted-looking cat-girl steps out. She shuffles off in the direction of the elevators, and before the door swings shut, you step forwards into the office.
+		Ты направляешься к кабинету, где впервые принял предложение жеребца-Enforcer усмирить Гнезда Гарпий. Когда ты подходишь ближе, дверь открывается, и наружу выходит смутно знакомая, изможденная кошкодевочка. Она шаркаящей походкой идет в сторону лифтов, и прежде чем дверь захлопывается, ты успеваешь нырнуть в кабинет.
 	</p>
 	<p>
-		[style.speechMasculineStrong(Hah! Hungry for more, Alice? Oh! It's you!)] the horse-boy calls out, tucking in his shirt as he sits down in his chair. Smirking at you, he grunts, [style.speechMasculineStrong(I heard what you've been up to out there!)]
+		[style.speechMasculineStrong(Ха! Все еще голодна, Алиса? О! Это ты!)] — выкрикивает жеребец, заправляя рубашку и усаживаясь в кресло. Ухмыляясь тебе, он хмыкает: [style.speechMasculineStrong(Слышал, что ты там наворотила!)]
 	</p>
 	<p>
-		Ignoring the smell of sex that's saturating the room, you tell him that you've successfully convinced all three of the troublesome matriarchs to calm down. As you finish saying this, the horse-boy slaps his leg and laughs, [style.speechMasculineStrong(Hah! I don't know how you managed to pull it off, but we've received messages from each one of those matriarchs, not only saying that they'll stop causing a problem, but also apologising for the trouble they've caused us!)]
+		Игнорируя пропитавший комнату запах секса, ты говоришь ему, что тебе удалось убедить всех трех строптивых матриархов успокоиться. Как только ты заканчиваешь фразу, жеребец хлопает себя по бедру и смеется: [style.speechMasculineStrong(Ха! Не знаю, как тебе это удалось, но мы получили послания от каждой из этих матриархов! Они не только обещали перестать доставлять проблем, но еще и извинились за все беспокойства!)]
 	</p>
 	<p>
-		The muscular horse-boy produces a little brass key from out of one of his pockets, and after bending down to unlock a heavy iron safe that's sitting beneath his desk, he retrieves a bag of flames. Setting it down in front of him, he grins and exclaims, [style.speechMasculineStrong(I still can't believe that you actually managed to do it! As promised, here's your five thousand flame reward!)]
+		Мускулистый жеребец достает из кармана маленький латунный ключ, наклоняется, чтобы отпереть тяжелый железный сейф под столом, и выуживает мешочек с Огнями. Поставив его перед собой, он расплывается в улыбке и восклицает: [style.speechMasculineStrong(До сих пор не верится, что ты реально это сделала! Как и обещал, вот твоя награда — пять тысяч Огней!)]
 	</p>
 	<p>
-		Stepping forwards, you take the offered bag of money, before thanking the Enforcer sergeant. He seems to be in very high spirits, and lets out another happy exclamation as he leans back in his chair, [style.speechMasculineStrong(Hah! We're going to start regular patrols of the walkways to make sure another incident like this doesn't happen again. Thanks to your efforts, the Harpy Nests will once again be safe for anyone to travel through!)]
+		Сделав шаг вперед, ты берешь предложенный мешочек с деньгами и благодаришь сержанта Enforcer. Тот явно в отличном расположении духа; он издает очередной радостный возглас и откидывается на спинку стула, [style.speechMasculineStrong(Ха! Мы введем регулярное патрулирование переходов, чтобы подобные инциденты больше не повторялись. Благодаря твоим усилиям, в Гнездах гарпий снова будет безопасно путешествовать!)]
 	</p>
 	<p>
-		Having received your reward, you say farewell to the happy horse-boy, and after walking out of his office, you once again find yourself standing in the Enforcer Post...
+		Получив награду, ты прощаешься с довольным мальчиком-конем и, выйдя из его кабинета, снова оказываешься на посту Enforcer...
 	</p>
 	<p style='text-align:center;'>
-		[style.italicsExcellent(The Harpy Nests are now safe to travel through!)]
+		[style.italicsExcellent(В Гнездах гарпий теперь безопасно путешествовать!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -209,23 +213,22 @@
 	<!-- ENTRANCE_ENFORCER_POST_CANDIS_LOLLIPOPS -->
 	
 	<htmlContent tag="ENTRANCE_ENFORCER_POST_CANDIS_LOLLIPOPS"><![CDATA[
-	<p>
-		Wanting to retrieve these 'contraband lollipops' and return to Candi as quickly as possible, you walk up to the nearest Enforcer, who takes the form of a particularly bored-looking dog-boy. As he looks up to see who it is who's approaching him, you tell him that you're here to collect the lollipops and return them to the Enforcer headquarters.
+	<p>		Желая поскорее забрать эти «контрабандные леденцы» и вернуться к Кэнди, ты подходишь к ближайшему Enforcer, который выглядит как крайне скучающий мальчик-пес. Когда он поднимает взгляд, чтобы посмотреть, кто к нему приближается, ты говоришь, что пришел за леденцами, чтобы доставить их в штаб Enforcer.
 	</p>
 	<p>
-		[genericMale.speech(You mean that contraband box sitting out back?)] he asks, [genericMale.speech(On whose authority are you taking it?)]
+		[genericMale.speech(Ты про тот ящик с контрабандой, что стоит сзади?)] — спрашивает он, — [genericMale.speech(На чьих ты полномочиях его забираешь?)]
 	</p>
 	<p>
-		Remembering the secret password that Candi gave you, you tell the dog-boy that it's a 'priority thunder' order, and that any unnecessary delay will see both of you getting into serious trouble.
+		Вспомнив секретное слово, данное тебе Кэнди, ты говоришь мальчику-псу, что это заказ «приоритетный гром», и что любая ненужная задержка обернется серьезными неприятностями для вас обоих.
 	</p>
 	<p>
-		[genericMale.speech(Hey, shit, you should have said so sooner,)] the dog-boy says, clearly shaken by your casual use of this password, [genericMale.speech(Wait here just one minute, I'll go fetch that box right away.)]
+		[genericMale.speech(Твою мать, надо было сразу сказать,)] — говорит пес, явно потрясенный тем, как непринужденно ты произносишь этот пароль. — [genericMale.speech(Подожди здесь минутку, я сейчас же принесу этот ящик.)]
 	</p>
 	<p>
-		With that, he quickly rushes off into a back room, and, sure enough, after less than a minute he returns, box-in-hand. Passing it over to you, he warns, [genericMale.speech(Just don't go opening this box and letting anyone eat any of these. Some crazy harpy bitch had them made to take out a rival flock. Apparently, they contain some sort of high-powered permanent aphrodisiac, and you can't get any relief from it just by masturbating, either. Nasty stuff.)]
+		С этими словами он быстро убегает в подсобку и, как и ожидалось, возвращается меньше чем через минуту с ящиком в руках. Передавая его тебе, он предостерегает: [genericMale.speech(Только не вздумай открывать его и давать кому-нибудь это съесть. Какая-то безумная сука-гарпия заказала их, чтобы вытравить соперничающую стаю. Говорят, там какой-то мощнейший постоянный афродизиак, и от него не избавиться даже мастурбацией. Мерзкая дрянь.)]
 	</p>
 	<p>
-		Thanking him for the warning, you take the box and turn to continue on your way. As you wonder whether you should head straight back to deliver this to Candi or not, the dog-boy steps up behind you and says one final thing, [genericMale.speech(Oh, and I guess you already know, but the priority codes are being changed again at midnight. Stay safe out there.)]
+		Поблагодарив его за предупреждение, ты берешь ящик и разворачиваешься, чтобы идти дальше. Пока ты раздумываешь, стоит ли сразу нести его Кэнди или нет, пес подходит к тебе со спины и добавляет напоследок: [genericMale.speech(О, и, полагаю, ты уже в курсе, но в полночь приоритетные коды снова сменят. Так что береги себя.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -235,56 +238,56 @@
 	
 	<htmlContent tag="WALKWAY"><![CDATA[
 	<p>
-		You find yourself walking down a winding, narrow walkway; part of an interconnected system of pathways, stairs, and ladders that have been built into the rooftops of Dominion. Being able to fly, the harpies that live up here have no use for them, and there aren't many people willing to risk a harpy's wrath just for the sake of taking a stroll through the nests. As a result, these links between the sprawling network of harpy nests are completely deserted.
+		Ты идешь по извилистой узкой дорожке — части запутанной системы троп, лестниц и переходов, встроенных прямо в крыши Dominion. Гарпии, живущие здесь, умеют летать, поэтому такие пути им ни к чему, а мало кто захочет рисковать гневом гарпий ради простой прогулки по их гнездовьям. В результате эти связки между разросшейся сетью гнезд совершенно безлюдны.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WALKWAY_CORE"><![CDATA[
 	<p>
-		Although these walkways don't lead directly through any nests, you're still able to observe them as you pass. Each nest takes the form of a series of platforms, built on top of, and into, the roofs and upper floors of Dominion's residences. While most are confined to a single building, you see that a few span multiple houses, and have several tiers of platforms built on top of one another; evidence that the matriarch of that particular nest is extremely important.
+		Хотя эти дорожки не ведут прямиком сквозь гнезда, ты всё равно можешь наблюдать за ними на ходу. Каждое гнездо представляет собой систему платформ, возведенных поверх крыш и верхних этажей жилых домов Dominion, а зачастую и вживленных в них. Большинство гнезд ограничено одним зданием, но некоторые раскинулись на несколько домов, имея несколько ярусов платформ, нагроможденных друг на друга; это верный признак того, что матриарх этого гнезда обладает исключительным влиянием.
 	</p>
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			Due to the ongoing arcane storm, each flock has taken shelter in the building below their nest. The only movement to be seen in the deserted nests takes the form of canvas coverings, erected to protect the harpies from the elements, billowing in the wind. Peering over the side of the railing, you see that the streets below are similarly abandoned, with only the occasional demon to be seen wandering through the area.
+			Из-за непрекращающегося арканного шторма каждая стая укрылась в зданиях под своими гнездами. В опустевших гнездах заметно лишь колыхание брезентовых навесов, возведенных для защиты гарпий от стихии, — они лишь мерно развеваются на ветру. Заглянув за перила, ты видишь, что улицы внизу так же безлюдны, и лишь изредка по округе бродит какой-нибудь демон.
 		</p>
 		<p>
 			#IF(!game.getNonCompanionCharactersPresent().isEmpty() && npc.isRelatedTo(pc))
-				Despite the potential for a lust-crazed to swoop down and attack you, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is your [npc.relation(pc)], [npc.name]...
+				Несмотря на риск внезапного нападения со стороны обезумевшей от похоти гарпии, здесь ты чувствуешь себя довольно [style.colourGood(безопасно)], ведь единственный, кого ты можешь здесь встретить — это твой [npc.relation(pc)], [npc.name]...
 			#ELSEIF(!game.getNonCompanionCharactersPresent().isEmpty() && !npc.getAffectionLevel(pc).isLessThan(AFFECTION_POSITIVE_ONE_FRIENDLY))
-				Despite the potential for a lust-crazed harpy to swoop down and attack you, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is on friendly terms with you...
+				Несмотря на риск внезапного нападения со стороны обезумевшей от похоти гарпии, здесь ты чувствуешь себя довольно [style.colourGood(безопасно)], ведь единственный, кого ты можешь здесь встретить — это [npc.name], с которым у тебя дружеские отношения...
 			#ELSE
-				While the arcane storm raging overhead has sent most harpies into hiding, there's a chance that you'll run into one which is being affected by its lust-inducing effects, making the Nests a [style.colourBad(dangerous)] place to be travelling through for as long as it lasts...
+				Пока над головой бушует шторм Арканы, заставивший большинство гарпий спрятаться, есть шанс наткнуться на ту, на которую наложили свои чары эффекты Похоти. Пока это не закончится, Гнёзда будут [style.colourBad(опасным)] местом для путешествий...
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
 			#IF(game.getCurrentWeather()==WEATHER_RAIN)
-				Due to the ongoing rain, each flock has taken shelter in the building below their nest, or beneath the canvas coverings that have been erected to protect the harpies from the elements. The matriarch of each nest is clearly visible, even from a great distance, as they're always surrounded by other harpies eager to gain the favour of their leader. Peering over the side of the railing, you see that the people walking down the streets below are similarly huddling beneath any shelter they can find, desperate to get out of the rain.
+				Из-за непрекращающегося дождя каждая стая укрылась в зданиях под своими гнёздами или под брезентовыми навесами, возведёнными для защиты гарпий от стихии. Матриарха каждого гнезда видно даже издалека, ведь она всегда окружена другими гарпиями, жаждущими расположения своей предводительницы. Заглянув за перила, ты видишь, что люди, идущие по улицам внизу, точно так же жмутся под любыми укрытиями, лишь бы спастись от дождя.
 			#ELSEIF(game.isDayTime())
-				The members of each flock are sprawled out over their nest's platforms. Most are simply lounging about beneath canvas coverings, but there are plenty to be seen sunbathing or talking in little groups. The matriarch of each nest is clearly visible, even from a great distance, as they're always surrounded by other harpies eager to gain the favour of their leader. Peering over the side of the railing, you see the people walking down the streets below, oblivious to what's going on high above them.
+				Члены каждой стаи расположились на платформах своих гнёзд. Большинство просто бездельничает под брезентовыми навесами, но многих можно увидеть загорающими или болтающими небольшими группами. Матриарха каждого гнезда видно даже издалека, ведь она всегда окружена другими гарпиями, жаждущими расположения своей предводительницы. Заглянув за перила, ты видишь людей, идущих по улицам внизу; они и не подозревают о том, что происходит высоко над ними.
 			#ELSE
-				The members of each flock are sprawled out over their nest's platforms. Even at night, there are still plenty of harpies to be seen lounging about or talking in little groups, their brightly-coloured feathers illuminated by a series of bright lights that cover the rooftops. The matriarch of each nest is clearly visible, even from a great distance, as they're always surrounded by other harpies eager to gain the favour of their leader. Peering over the side of the railing, you see the people walking down the streets below, oblivious to what's going on high above them.
+				Члены каждой стаи расположились на платформах своих гнезд. Даже ночью повсюду можно увидеть гарпий: они бездельничают или болтают небольшими группами, а их ярко окрашенные перья подсвечены множеством огней, расставленных на крышах. Матриархов каждого гнезда видно даже издалека — они всегда окружены другими гарпиями, жаждущими расположения своей предводительницы. Заглянув за перила, ты видишь людей, идущих по улицам внизу; они и не подозревают о том, что происходит высоко над ними.
 			#ENDIF
 		</p>
 		<p>
 			#IF(!game.getNonCompanionCharactersPresent().isEmpty())
 				#IF(npc.isRelatedTo(pc))
-					Despite the potential for a harpy to swoop down and attack you, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is your [npc.relation(pc)], [npc.name]...
+					Несмотря на то, что гарпия может в любой момент спикировать и напасть на тебя, в этой области ты чувствуешь себя довольно [style.colourGood(безопасно)], ведь единственный человек, которого ты здесь можешь встретить, — это твоя [npc.relation(pc)], [npc.name]...
 				#ELSEIF(!npc.getAffectionLevel(pc).isLessThan(AFFECTION_POSITIVE_ONE_FRIENDLY))
-					Despite the potential for a harpy to swoop down and attack you, you feel quite [style.colourGood(safe)] in this area, as the only person you're likely to encounter is [npc.name], who is on friendly terms with you...
+					Несмотря на то, что гарпия может в любой момент спикировать и напасть на тебя, в этой области ты чувствуешь себя довольно [style.colourGood(безопасно)], ведь единственный человек, которого ты здесь можешь встретить, — это [npc.name], с которым у тебя дружеские отношения...
 				#ELSE
 					#IF(pc.isQuestCompleted(QUEST_LINE_SIDE_HARPY_PACIFICATION))
-						You sometimes see an Enforcer patrolling a walkway off in the distance, reminding you that it's now [style.colourGood(safe)] for people to be travelling throughout the Harpy Nests. You know that [npc.name(a)] hangs out in this area, and so if you wanted to you could search for [npc.herHim] and confront you again...
+					Ты иногда видишь вдали патрулирующего по дорожкам Enforcer, что служит напоминанием: теперь по Гнездам Гарпий [style.colourGood(безопасно)] путешествовать. Ты знаешь, что [npc.name(a)] часто бывает в этих краях, так что, если захочешь, ты сможешь разыскать [npc.herHim] и снова бросить ей вызов...
 					#ELSE
-						As you continue travelling down the [style.colourBad(dangerous)] walkways, you can't help but shake the feeling that you're being watched. You know that [npc.name(a)] hangs out in this area, and so if you were to look for trouble, [npc.she] would undoubtedly decide to confront you again...
+						По мере того как ты продолжаешь путь по [style.colourBad(dangerous)] узким дорожкам, тебя не покидает ощущение, что за тобой наблюдают. Ты знаешь, что [npc.name(a)] часто крутится в этих краях, и если ты решишь нажить себе проблем, [npc.she] без раздумий явится, чтобы снова бросить тебе вызов...
 					#ENDIF
 				#ENDIF
 			#ELSE
 				#IF(pc.isQuestCompleted(QUEST_LINE_SIDE_HARPY_PACIFICATION))
-					You sometimes see an Enforcer patrolling a walkway off in the distance, reminding you that it's now [style.colourGood(safe)] for people to be travelling throughout the Harpy Nests. Although there's no risk of being attacked, harpies are still quite touchy by nature, and you imagine that it wouldn't be too hard to cause a confrontation if you were to go looking for trouble...
+					Иногда вдалеке на дорожках можно заметить патрулирующего Enforcer, что служит напоминанием: теперь путешествовать по Гнездам Гарпий [style.colourGood(safe)]. И хотя риска подвергнуться нападению нет, гарпии по своей природе всё ещё довольно своенравны, и ты понимаешь, что не составит труда спровоцировать конфликт, если ты сама начнешь искать неприятностей...
 				#ELSE
-					As you continue travelling down the [style.colourBad(dangerous)] walkways, you can't help but shake the feeling that you're being watched. An occasional flash of colour out of the corner of your [pc.eye(true)] confirms your suspicions, but each time you turn to face your elusive stalker, they quickly fly off back to their nest. It's probably only a matter of time before one of them decides to openly confront you...
+					По мере того как ты продолжаешь путь по [style.colourBad(dangerous)] узким дорожкам, тебя не покидает ощущение, что за тобой наблюдают. Случайная вспышка цвета краем твоего [pc.eye(true)] лишь подтверждает твои подозрения, но каждый раз, когда ты оборачиваешься, чтобы встретиться лицом к лицу со своим неуловимым преследователем, он быстро улетает обратно в гнездо. Вероятно, это лишь вопрос времени, когда одна из них решит открыто пойти с тобой на конфликт...
 				#ENDIF
 			#ENDIF
 		</p>
@@ -297,7 +300,7 @@
 	
 	<htmlContent tag="WALKWAY_BRIDGE"><![CDATA[
 	<p>
-		You find yourself walking over a narrow wooden bridge; part of an interconnected system of pathways, stairs, and ladders that have been built into the rooftops of Dominion. Being able to fly, the harpies that live up here have no use for them, and there aren't many people willing to risk a harpy's wrath just for the sake of taking a stroll through the nests. As a result, these links between the sprawling network of harpy nests are completely deserted.
+		Ты идешь по узкому деревянному мостику — части разветвленной системы троп, лестниц и приставных лестниц, встроенных в крыши Dominion. Живущие здесь гарпии, обладающие способностью к полету, в них не нуждаются, а мало кто готов рисковать гневом гарпий ради простой прогулки по их гнездам. В результате эти переходы между разросшейся сетью гнезд совершенно пусты.
 	</p>
 	]]>
 	</htmlContent>

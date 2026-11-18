@@ -5,45 +5,45 @@
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
 			#IF(game.getDialogueFlags().hasFlag(FLAG_dominantEncountered))
-				Due to the ongoing arcane storm, [harpyDominant.namePos] nest is completely deserted. Her entire flock has retreated into the safety of the upper-floor of the building below, leaving you with no choice but to return at another time if you wanted to speak to her.
+				Из-за непрекращающегося шторма Арканы, гнездо [harpyDominant.namePos] совершенно опустело. Вся её стая укрылась на верхнем этаже здания ниже, так что, если ты хочешь поговорить с ней, тебе остается только вернуться в другое время.
 			#ELSE
-				Due to the ongoing arcane storm, this nest is completely deserted. The entire flock has retreated into the safety of the upper-floor of the building below, leaving you with no choice but to return at another time if you wanted to speak to the matriarch of this particular nest.
+				Из-за бушующего шторма Арканы это гнездо совершенно опустело. Вся стая укрылась на верхнем этаже здания этажом ниже, так что, если ты хочешь поговорить с матриархом этого гнезда, тебе остается только вернуться в другое время.
 			#ENDIF
 		</p>
 	#ELSEIF(!game.isExtendedWorkTime())
 		<p>
 			#IF(game.getDialogueFlags().hasFlag(FLAG_dominantEncountered))
-				Due to the current hour, [dominantHarpy.namePos] nest is completed deserted; both she and her flock have retired to the comfort of the buildings below in order to get a good night's rest. With the entrances to their night-time residence being securely locked, you're left with no choice but to return at another time if you wanted to speak to her.
+				Из-за позднего часа гнездо [dominantHarpy.namePos] совершенно опустело; и она, и её стая удалились в уютные здания внизу, чтобы как следует выспаться. Входы в их ночное пристанище надежно заперты, так что, если ты хочешь поговорить с ней, тебе остается только вернуться в другое время.
 			#ELSE
-				Due to the current hour, this nest is completed deserted; both the matriarch and her flock have retired to the comfort of the buildings below in order to get a good night's rest. With the entrances to their night-time residence being securely locked, you're left with no choice but to return at another time if you wanted to speak to her.
+				В этот час это гнездо совершенно опустело; и матриарх, и её стая ушли отдыхать в уютные здания внизу, чтобы хорошенько выспаться. Входы в их ночное жилище надежно заперты, так что, если ты хочешь поговорить с ней, тебе остается только вернуться в другое время.
 			#ENDIF
 		</p>
 	#ELSE
 		#IF(game.getDialogueFlags().hasFlag(FLAG_dominantEncountered))
 			<p>
-				You find yourself standing on the outskirts of [harpyDominant.namePos] nest; one of the largest and most populous of all the nests in Dominion. A single, gigantic platform spans the roof-tops of several buildings, with little raised podiums scattered about its surface.
+				Ты стоишь на окраине гнезда [harpyDominant.namePos] — одного из самых больших и населенных гнезд во всем Dominion. Огромная платформа накрывает крыши нескольких зданий, а по всей её поверхности разбросаны небольшие возвышенные подиумы.
 				#IF(!game.isDayTime())
-					 A series of bright, arcane-powered lights illuminate the entire area, and from what you can see, the harpies here are just as active at night as they are during daylight hours.
+					 Ряд ярких огней, питаемых Арканой, освещает всю округу, и, судя по всему, местные гарпии ночью так же активны, как и при свете дня.
 				#ENDIF
 			</p>
 			<p>
-				Looking closer at the nest's peculiar podiums, you see that there's a red-and-black feathered harpy perched on top of each one. Around the base of each one of these podiums, a crowd of harpies can be seen huddling together, and upon further inspection you notice that they're all bowing down in submission. Curiously, although you can see harpies of almost every colour, the only ones with red or black feathers seem to be those who are sitting on top of those podiums, leading you to believe that those particular colours designate the important members of this particular flock.
+				Присмотревшись к причудливым подиумам гнезда, ты замечаешь, что на каждом из них восседает гарпия в красно-черных перьях. У подножия каждого подиума толпится стая гарпий, и при ближайшем рассмотрении ты понимаешь, что все они склоняются в знак подчинения. Любопытно, что, хотя вокруг можно увидеть гарпий почти любого цвета, только те, что сидят на подиумах, имеют красно-черное оперение. Это наводит на мысль, что именно эти цвета обозначают важных членов данной стаи.
 			</p>
 			<p>
-				At the very centre of the platform, you see a podium that's higher than all the rest, and, lounging about on top of it, you see the familiar shape of [harpyDominant.name]. The group surrounding her is unlike all the others, as it's made up solely of the same red-and-black feathered harpies that you can see on top of the other podiums. Despite their somewhat aggressive appearance, the harpies of this flock don't seem to be too bothered by your presence, allowing you to approach [harpyDominant.name] if you had any business with her.
+				В самом центре платформы ты видишь подиум, возвышающийся над всеми остальными, а на его вершине, вальяжно развалившись, ты узнаешь знакомый силуэт [harpyDominant.name]. Окружающая её группа отличается от всех остальных: она состоит исключительно из тех же красно-черных пернатых гарпий, которых можно увидеть на других подиумах. Несмотря на их довольно агрессивный вид, гарпии этого стада, кажется, не слишком обеспокоены твоим присутствием, позволяя тебе приблизиться к [harpyDominant.name], если у тебя есть к ней дело.
 			</p>
 		#ELSE
 			<p>
-				You find yourself standing on the outskirts of one of the largest and most populous of all the nests in Dominion. A single, gigantic platform spans the roof-tops of several buildings, with little raised podiums scattered about its surface.
+				Ты стоишь на окраине одного из самых больших и густонаселенных гнезд в Dominion. Огромная платформа накрывает собой крыши нескольких зданий, а по всей её поверхности разбросаны небольшие возвышающиеся подиумы.
 				#IF(!game.isDayTime())
-					 A series of bright, arcane-powered lights illuminate the entire area, and from what you can see, the harpies here are just as active at night as they are during daylight hours.
+					 Ряд ярких огней, питаемых Арканой, освещает всю округу, и, судя по всему, местные гарпии ночью так же активны, как и при свете дня.
 				#ENDIF
 			</p>
 			<p>
-				Looking closer at the nest's peculiar podiums, you see that there's a red-and-black feathered harpy perched on top of each one. Around the base of each one of these podiums, a crowd of harpies can be seen huddling together, and upon further inspection you notice that they're all bowing down in submission. Curiously, although you can see harpies of almost every colour, the only ones with red or black feathers seem to be those who are sitting on top of those podiums, leading you to believe that those particular colours designate the important members of this particular flock.
+				Присмотревшись к причудливым подиумам гнезда, ты замечаешь, что на каждом из них восседает гарпия в красно-черных перьях. У подножия каждого подиума толпится стая гарпий, и при ближайшем рассмотрении ты понимаешь, что все они склоняются в знак подчинения. Любопытно, что, хотя вокруг можно увидеть гарпий почти любого цвета, только те, что сидят на подиумах, имеют красно-черное оперение. Это наводит на мысль, что именно эти цвета обозначают важных членов данной стаи.
 			</p>
 			<p>
-				At the very centre of the platform, you see a podium that's higher than all the rest, and, lounging about on top of it, you see what must be this nest's matriarch. The group surrounding her is unlike all the others, as it's made up solely of the same red-and-black feathered harpies that you can see on top of the other podiums. Despite their somewhat aggressive appearance, the harpies of this flock don't seem to be too bothered by your presence, allowing you to approach their matriarch if you had any business with her.
+				В самом центре платформы ты видишь подиум, возвышающийся над всеми остальными, а на его вершине, вальяжно развалившись, ты видишь ту, что наверняка является матриархом этого гнезда. Окружающая её группа отличается от всех остальных: она состоит исключительно из тех же красно-черных пернатых гарпий, которых можно увидеть на других подиумах. Несмотря на их довольно агрессивный вид, гарпии этого стада, кажется, не слишком обеспокоены твоим присутствием, позволяя тебе приблизиться к их матриарху, если у тебя есть к ней дело.
 			</p>
 		#ENDIF
 	#ENDIF
@@ -54,117 +54,120 @@
 	#IF(flags.hasFlag(FLAG_dominantEncountered))
 		#IF(flags.hasFlag(FLAG_dominantPacified))
 			<p>
-				Deciding to pay [harpyDominant.Name] another visit, you set off towards the centre podium. As you make your way towards the dominant matriarch, you get a good look at the harpies that make up her flock. Just as you've seen before, there's a red-and-black-feathered harpy sitting on top of each of the small podiums that are scattered about the area.
+				Решив нанести [harpyDominant.Name] еще один визит, ты направляешься к центральному подиуму. Пробираясь к главной матриаршей, ты во всех подробностях разглядываешь гарпий, составляющих её стаю. Как и прежде, на каждом из разбросанных по округе малых подиумов восседает гарпия в красно-черных перьях.
 			</p>
 			<p>
-				The groups that are huddled around each one of these podiums are, unlike their apparent leaders, made up of all sorts of differently coloured harpies. Most of them are on their knees, preening each other's feathers, or talking in hushed tones to one another. Those that aren't on their knees are found at the very base of these podiums, and as you pass, you get yet another look at these unfortunate few.
+				Группы, сгрудившиеся вокруг этих подиумов, в отличие от их очевидных предводительниц, состоят из гарпий самых разных расцветок. Большинство из них стоят на коленях, чистя друг другу перья или перешептываясь. Те же, кто не на коленях, находятся у самого подножия подиумов, и, проходя мимо, ты снова бросаешь взгляд на этих несчастных.
 			</p>
 			<p>
-				Obviously having displeased their leader in some way, these harpies have been stripped naked and locked into wooden stocks. Some of the flock are taking full advantage of their compromised position, and as you pass each podium, you see all manner of public humiliation taking place. From light spanking and tickling, all the way up to rough group sex, these harpies are being used and abused by rest of their flock.
+				Очевидно, чем-то разгневав свою предводительницу, эти гарпии были раздеты догола и закованы в деревянные колодки. Некоторые из стаи вовсю пользуются их беспомощным положением, и, проходя мимо каждого подиума, ты видишь самые разные сцены публичного унижения. От легких шлепков и щекотки до грубого группового секса — остальные гарпии вовсю используют и истязают этих пленниц.
 			</p>
 			<p>
-				You don't have much time to dwell on any thoughts about this, however, as before you know it, you've reached the centre of the platform. Although larger and made up solely of the red-and-black 'leader' harpies, the group surrounding [harpyDominant.NamePos] podium is similar to all those that you've previously passed. Most are on their knees, talking to one another, but there are several others, not all of them red-and-black, who are locked up in this podium's stocks.
+				Впрочем, времени на раздумья особо нет — не успеваешь ты опомниться, как уже оказываешься в центре платформы. Группа, окружившая подиум [harpyDominant.NamePos], напоминает те, что ты встречал раньше, хотя эта куда больше и состоит исключительно из красно-черных «лидерских» гарпий. Большинство из них стоят на коленях, переговариваясь друг с другом, но есть и другие — не все они красно-черные — те, кто зажат в колодки перед подиумом.
 			</p>
 			<p>
-				As you approach [harpyDominant.Name], your eyes are drawn to the latest of [harpyDominantCompanion.namePos] victims in the stocks in front of you. She's moaning and squealing out loud; the cause of her erotic noises taking the form of a very feminine-looking harpy thrusting away at her exposed rear end. Coming to a halt in front of the podium, you hear [harpyDominantCompanion.name] growling out, [harpyDominantCompanion.speech(Fucking slut! That's right! Moan for me, whore!)]
+				Когда ты приближаешься к [harpyDominant.Name], твой взгляд приковывает очередная жертва [harpyDominantCompanion.namePos], зажатая в колодки прямо перед тобой. Она громко стонет и визжит; причиной этих эротичных звуков служит весьма женственная гарпия, вовсю вколачивающаяся в её обнаженный зад. Остановившись перед подиумом, ты слышишь рычание [harpyDominantCompanion.name]: [harpyDominantCompanion.speech(Гребаная шлюха! Вот так! Стони для меня, сучка!)]
 			</p>
 			<p>
-				Just as you're about to say something, [harpyDominant.Name], only just noticing your presence, calls out, [harpyDominant.speech([pc.Mistress]! You're back!)]
+				Стоит тебе только собраться с духом, чтобы что-то сказать, как [harpyDominant.Name], едва заметив твое присутствие, выкрикивает: [harpyDominant.speech([pc.Mistress]! Ты вернулась!)]
 			</p>
 			#IF(harpyDominant.isVisiblyPregnant())
 				<p>
 					#IF(!harpyDominant.isCharacterReactedToPregnancy(pc))
-						As she jumps down off of her podium, you see that [harpyDominant.name] is sporting a [style.colourSex(pregnant belly)], and as she gestures towards it, she reveals, [harpyDominant.speech(You got me pregnant, [pc.mistress]...)]
-					#ELSE
-						Jumping down off of her podium, [harpyDominant.name] gestures towards her [style.colourSex(pregnant belly)] and states, [harpyDominant.speech(I'm still pregnant from when you knocked me up, [pc.mistress]...)]
+						Когда она спрыгивает с подиума, ты замечаешь, что у [harpyDominant.name] [style.colourSex(беременный живот)]. Указывая на него, она признается: [harpyDominant.speech(Ты залетел в меня, [pc.mistress]...)]
+						#ELSE
+						Спрыгнув со своего пьедестала, [harpyDominant.name] указывает на свой [style.colourSex(беременный живот)] и заявляет: [harpyDominant.speech(Я всё ещё беременна после того, как ты меня оплодотворил, [pc.mistress]...)]
 					#ENDIF
 				</p>
 				<p>
-					Noticing what's going on, [harpyDominantCompanion.name] lets out a little squeak, and after quickly pulling out of her fuck-toy, jumps down onto her knees beside her matriarch. Not giving you a moment in which to comment on her pregnancy, [harpyDominant.Name] bows her head and asks, [harpyDominant.speech(What can I do for you [pc.mistress]?)]
+					Заметив, что происходит, [harpyDominantCompanion.name] издает короткий писк и, быстро вытащив из себя свою секс-игрушку, падает на колени рядом со своей матриархом. Не давая тебе и секунды, чтобы прокомментировать её беременность, [harpyDominant.Name] склоняет голову и спрашивает: [harpyDominant.speech(Что я могу сделать для тебя, [pc.mistress]?)]
 				</p>
 			#ELSE
 				<p>
-					Jumping down off of her podium, [harpyDominant.name] falls to her knees before you. Noticing what's going on, [harpyDominantCompanion.name] lets out a little squeak, and after quickly pulling out of her fuck-toy, jumps down onto her knees beside her matriarch. Shuffling forwards, [harpyDominant.Name] bows her head, before asking, [harpyDominant.speech(What can I do for you [pc.mistress]?)]
+					Спрыгнув со своего пьедестала, [harpyDominant.name] падает перед тобой на колени. Заметив, что происходит, [harpyDominantCompanion.name] издает короткий писк и, быстро вытащив из себя свою секс-игрушку, падает на колени рядом со своей матриархом. Пошатываясь, [harpyDominant.Name] подается вперед, склоняет голову и спрашивает: [harpyDominant.speech(Что я могу сделать для тебя, [pc.mistress]?)]
 				</p>
 			#ENDIF
 		#ELSE
 			<p>
-				Deciding to pay [harpyDominant.Name] another visit, you set off towards the centre podium. As you make your way towards the dominant matriarch, you get a good look at the harpies that make up her flock. Just as you've seen before, there's a red-and-black-feathered harpy sitting on top of each of the small podiums that are scattered about the area.
+				Решив нанести [harpyDominant.Name] еще один визит, ты направляешься к центральному подиуму. Пробираясь к главной матриаршей, ты во всех подробностях разглядываешь гарпий, составляющих её стаю. Как и прежде, на каждом из разбросанных по округе малых подиумов восседает гарпия в красно-черных перьях.
 			</p>
 			<p>
-				The groups that are huddled around each one of these podiums are, unlike their apparent leaders, made up of all sorts of differently coloured harpies. Most of them are on their knees, preening each other's feathers, or talking in hushed tones to one another. Those that aren't on their knees are found at the very base of these podiums, and as you pass, you get yet another look at these unfortunate few.
+				Группы, сгрудившиеся вокруг этих подиумов, в отличие от их очевидных предводительниц, состоят из гарпий самых разных расцветок. Большинство из них стоят на коленях, чистя друг другу перья или перешептываясь. Те же, кто не на коленях, находятся у самого подножия подиумов, и, проходя мимо, ты снова бросаешь взгляд на этих несчастных.
 			</p>
 			<p>
-				Obviously having displeased their leader in some way, these harpies have been stripped naked and locked into wooden stocks. Some of the flock are taking full advantage of their compromised position, and as you pass each podium, you see all manner of public humiliation taking place. From light spanking and tickling, all the way up to rough group sex, these harpies are being used and abused by rest of their flock.
+				Очевидно, чем-то разгневав свою предводительницу, эти гарпии были раздеты догола и закованы в деревянные колодки. Некоторые из стаи вовсю пользуются их беспомощным положением, и, проходя мимо каждого подиума, ты видишь самые разные сцены публичного унижения. От легких шлепков и щекотки до грубого группового секса — остальные гарпии вовсю используют и истязают этих пленниц.
 			</p>
 			<p>
-				You don't have much time to dwell on any thoughts about this, however, as before you know it, you've reached the centre of the platform. Although larger and made up solely of the red-and-black 'leader' harpies, the group surrounding [harpyDominant.NamePos] podium is similar to all those that you've previously passed. Most are on their knees, talking to one another, but there are several others, not all of them red-and-black, who are locked up in this podium's stocks.
+				Впрочем, времени на раздумья особо нет — не успеваешь ты опомниться, как уже оказываешься в центре платформы. Группа, окружившая подиум [harpyDominant.NamePos], напоминает те, что ты встречал раньше, хотя эта куда больше и состоит исключительно из красно-черных «лидерских» гарпий. Большинство из них стоят на коленях, переговариваясь друг с другом, но есть и другие — не все они красно-черные — те, кто зажат в колодки перед подиумом.
 			</p>
 			<p>
-				As you approach [harpyDominant.Name], your eyes are drawn to the latest of [harpyDominantCompanion.namePos] victims in the stocks in front of you. She's moaning and squealing out loud; the cause of her erotic noises taking the form of a very feminine-looking harpy thrusting away at her exposed rear end. Coming to a halt in front of the podium, you hear [harpyDominantCompanion.name] growling out, [harpyDominantCompanion.speech(Fucking slut! That's right! Moan for me, whore!)]
+				Когда ты приближаешься к [harpyDominant.Name], твой взгляд приковывает очередная жертва [harpyDominantCompanion.namePos], зажатая в колодки прямо перед тобой. Она громко стонет и визжит; причиной этих эротичных звуков служит весьма женственная гарпия, вовсю вколачивающаяся в её обнаженный зад. Остановившись перед подиумом, ты слышишь рычание [harpyDominantCompanion.name]: [harpyDominantCompanion.speech(Гребаная шлюха! Вот так! Стони для меня, сучка!)]
 			</p>
 			<p>
-				Just as you're about to say something, [harpyDominant.Name], up until now having ignored your presence, calls out,
+				Как раз в тот момент, когда ты собираешься что-то сказать, [harpyDominant.Name], которая до этого игнорировала твое присутствие, выкрикивает:
 				#IF(pc.getFemininityValue()>FEMININITY_FEMININE_STRONG.getMinimumFemininity())
-					 [harpyDominant.speech([harpyDominantCompanion.Name]! That hungry slut is back for more of our attention!)]
+					 [harpyDominant.speech([harpyDominantCompanion.Name]! Эта голодная шлюха вернулась, чтобы снова привлечь наше внимание!)]
 				#ELSE
-					 [harpyDominant.speech([harpyDominantCompanion.Name]! That bitch is back for more of our attention!)]
+					 [harpyDominant.speech([harpyDominantCompanion.Name]! Эта сучка вернулась, чтобы снова привлечь наше внимание!)]
 				#ENDIF
 			</p>
 			<p>
-				[harpyDominantCompanion.speech(Yes, [harpyDominant.name]!)] the harpy calls out, before growling at her victim. [harpyDominantCompanion.speech(Once I'm done with this, I'm using your ass next!)]
+				[harpyDominantCompanion.speech(Да, [harpyDominant.name]!)] — выкрикивает гарпия, прежде чем зарычать на свою жертву. [harpyDominantCompanion.speech(Как только я закончу с этим, твоя задница будет следующей!)]
 			</p>
 			<p>
-				Standing up on top of her podium, [harpyDominant.name] growls down at you, 
+			Встав на свой подиум, [harpyDominant.name] рычит, глядя на тебя сверху вниз,
 				#IF(pc.getFemininityValue()>FEMININITY_FEMININE_STRONG.getMinimumFemininity())
-					 [harpyDominant.speech(So?! What do you want, whore?!)]
+					 [harpyDominant.speech(Ну?! Чего тебе, шлюха?!)]
 				#ELSE
-					 [harpyDominant.speech(So?! What do you want, bitch?!)]
+					 [harpyDominant.speech(Ну?! Чего тебе, сучка?!)]
 				#ENDIF
 			</p>
 		#ENDIF
 	#ELSE
 		 <p>
-			Recognising this as one of the nests that you agreed to pacify, you start walking towards the centre podium. As you make your way towards the matriarch, you get a good look at the harpies that reside in this particular nest. Just as you saw from the outskirts, there's a red-feathered harpy sitting on top of each of the small podiums that are scattered about the area. Each one has a plume of jet-black feathers on top of their heads, and the skin that covers their human parts is invariably a light olive colour.
+			Узнав одно из гнезд, которые ты согласился усмирить, ты направляешься к центральному подиуму. Пробираясь к матриарху, ты во всех подробностях разглядываешь гарпий, обитающих в этом гнезде. Как и на окраинах, на каждом из разбросанных по округе малых подиумов восседает гарпия с красными перьями. На головах у каждой — хохолок из иссиня-черных перьев, а кожа, покрывающая их человеческие части, неизменно имеет светло-оливковый оттенок.
 		</p>
 		<p>
-			The groups that are huddled around each one of these podiums are, unlike their apparent leaders, made up of all sorts of differently coloured harpies. Most of them are on their knees, preening each other's feathers, or talking in hushed tones to one another. Those that aren't on their knees are found at the very base of these podiums, and as you get closer, you find yourself staring, wide-eyed, at these unfortunate few.
+			Группы, сгрудившиеся вокруг каждого из этих подиумов, в отличие от их очевидных предводительниц, состоят из гарпий самых разных расцветок. Большинство из них стоят на коленях, чистя друг другу перья или переговариваясь вполголоса. Те же, кто не стоит на коленях, находятся у самого подножия подиумов, и по мере приближения ты ловишь себя на том, что широко раскрытыми глазами во все глаза пялишься на этих несчастных.
 		</p>
 		<p>
-			Obviously having displeased their leader in some way, these harpies have been stripped naked and locked into wooden stocks. Some of the flock are taking full advantage of their compromised position, and as you pass each podium, you see all manner of public humiliation taking place. From light spanking and tickling, all the way up to rough group sex, these harpies are being used and abused by rest of their flock.
+			Очевидно, каким-то образом разгневав свою предводительницу, эти гарпии были раздеты догола и закованы в деревянные колодки. Некоторые из стаи вовсю пользуются их беспомощным положением, и, проходя мимо каждого помоста, ты видишь самые разные сцены публичного унижения. От легких шлепков и щекотки до грубого группового секса — остальные гарпии вовсю используют и эксплуатируют своих сородичек.
 		</p>
 		<p>
-			You don't have much time to dwell on any thoughts about this, however, as before you know it, you've reached the centre of the platform. Although larger and made up solely of the red-and-black 'leader' harpies, the group surrounding the matriarch's podium is similar to all those that you've previously passed. Most are on their knees, talking to one another, but there are several others, not all of them red-and-black, who are locked up in this podium's stocks.
+		
+		Однако у тебя не так много времени на раздумья, ведь не успеваешь ты оглянуться, как оказываешься в центре платформы. Группа, окружившая помост матриарха, похожа на те, что ты видел раньше, хотя она и больше, и состоит исключительно из красно-черных «главенствующих» гарпий. Большинство из них стоят на коленях, переговариваясь друг с другом, но есть и другие — не все красно-черные — запертые в колодках этого помоста.
 		</p>
 		<p>
-			As you approach the matriarch, your eyes are drawn to a particular pink-feathered harpy in the stocks in front of you. She's moaning and squealing out loud; the cause of her erotic noises taking the form of a very feminine-looking harpy thrusting away at her exposed rear end. Coming to a halt in front of the podium, you hear the dominant harpy growling out, [harpyDominantCompanion.speech(That's right, bitch! I knew you'd end up loving it eventually!)]
+		
+		Когда ты приближаешься к матриарху, твой взгляд приковывает одна особенная розовоперсая гарпия в колодках прямо перед тобой. Она громко стонет и визжит; причиной этих эротических звуков служит весьма женственная на вид гарпия, ритмично вколачивающаяся в её обнаженный зад. Остановившись перед помостом, ты слышишь, как доминантная гарпия рычит: [harpyDominantCompanion.speech(Вот так, сучка! Я знала, что в конце концов тебе это понравится!)]
 		</p>
 		<p>
-			Just as you're about to say something, the matriarch, up until now having ignored your presence, calls out,
+		
+		Как раз в тот момент, когда ты собираешься что-то сказать, матриарх, до этого момента игнорировавшая твое присутствие, выкрикивает:
 			#IF(pc.getFemininityValue()>FEMININITY_FEMININE_STRONG.getMinimumFemininity())
-				 [harpyDominant.speech([harpyDominantCompanion.Name]! You can finish with your fuck-toy later! There's another hungry slut right here that needs our attention!)]
+				 [harpyDominant.speech([harpyDominantCompanion.Name]! Закончишь со своей шлюшкой позже! Тут есть еще одна голодная сучка, которой нужно наше внимание!)]
 			#ELSE
-				 [harpyDominant.speech([harpyDominantCompanion.Name]! You can finish with your fuck-toy later! There's some bitch here that needs our attention!)]
+				 [harpyDominant.speech([harpyDominantCompanion.Name]! Закончишь со своей игрушкой позже! Тут есть одна сучка, которой нужно наше внимание!)]
 			#ENDIF
 		</p>
 		<p>
-			[harpyDominantCompanion.speech(Yes, [harpyDominant.name]!)] the harpy calls out, before growling at her victim. [harpyDominantCompanion.speech(Don't think this is over whore! I'm gonna use your ass next time!)]
+			[harpyDominantCompanion.speech(Да, [harpyDominant.name]!)] — выкрикивает гарпия, прежде чем зарычать на свою жертву. [harpyDominantCompanion.speech(Не думай, что это конец, шлюха! В следующий раз я возьму твою задницу!)]
 		</p>
 		<p>
-			As the matriarch, [harpyDominant.Name], stands up on top of her podium, you finally get a good look at her. Just like the other harpy leaders that you've seen, the feathers covering [harpyDominant.NamePos] wings and tail-feathers are bright red, and instead of hair, she's got a long plume of jet-black feathers on top of her head. Her face, one the most beautiful that you've ever seen, is covered in flawless, olive skin, just like the rest of her human body parts. She has average-sized breasts for a harpy, being B-cups, which are covered by her silky black plunge dress.
+			Когда матриарх, [harpyDominant.Name], поднимается на свой подиум, ты наконец-то можешь рассмотреть её как следует. Как и у остальных предводительниц гарпий, которых ты видел, перья, покрывающие крылья и хвост [harpyDominant.NamePos], ярко-красные, а вместо волос на макушке у неё длинный хохолок из иссиня-черных перьев. Её лицо — одно из самых прекрасных, что ты когда-либо видел, — обладает безупречной оливковой кожей, как и все остальные её человеческие части тела. У неё средняя для гарпии грудь — размера B, прикрытая шелковым черным платьем с глубоким декольте.
 		</p>
 		<p>
-			As you're taking in her gorgeous appearance, she growls down at you, 
+			Пока ты любуешься её великолепной внешностью, она рычит на тебя сверху вниз, 
 			#IF(pc.getFemininityValue()>FEMININITY_FEMININE_STRONG.getMinimumFemininity())
-				 [harpyDominant.speech(So?! What do you want, whore?!)]
+				 [harpyDominant.speech(Ну?! Чего тебе, шлюха?!)]
 			#ELSE
-				 [harpyDominant.speech(So?! What do you want, bitch?!)]
+				 [harpyDominant.speech(Ну?! Чего тебе, сучка?!)]
 			#ENDIF
 		</p>
 	#ENDIF
 	#IF(!flags.hasFlag(FLAG_dominantPacified) && game.isBadEndsEnabled() && pc.isAbleToHaveRaceTransformed())
 		<p style='text-align:center;'><i>
-			[style.italicsBadEnd(You get the feeling that you'd be in serious trouble if you were to lose a fight against these harpies...)]
+			[style.italicsBadEnd(У тебя возникает стойкое ощущение, что если ты проиграешь в схватке с этими гарпиями, то у тебя будут серьёзные неприятности...)]
 		</i></p>
 	#ENDIF
 	]]>
@@ -174,10 +177,10 @@
 	
     <htmlContent tag="DOMINANT_LEAVE"><![CDATA[
     <p>
-        Deciding that now isn't the best time to be confronting [harpyDominant.name], you turn around and hurry away from the podium. You hear [harpyDominant.name] growling to [harpyDominantCompanion.name] as you leave, [harpyDominant.speechNoEffects(What the fuck was that all about?! Whatever! [harpyDominantCompanion.Name], you can carry on playing with your fuck-toy now...)]
+        Решив, что сейчас не лучшее время для противостояния с [harpyDominant.name], ты разворачиваешься и поспешно уходишь от подиума. Уходя, ты слышишь, как [harpyDominant.name] ворчит на [harpyDominantCompanion.name]: [harpyDominant.speechNoEffects(Что это, блять, сейчас было?! Да и хрен с ним! [harpyDominantCompanion.Name], можешь продолжать играть со своей секс-игрушкой...)]
     </p>
     <p>
-        Ignoring her words, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest.
+        Игнорируя её слова, ты продолжаешь спускаться по ступеням и переходишь через главную платформу, быстро оказываясь на окраине гнезда.
     </p>
 	]]>
     </htmlContent>
@@ -186,63 +189,63 @@
 	
     <htmlContent tag="PACIFIED_DOMINANT_LEAVE"><![CDATA[
     <p>
-        Deciding that you don't want to talk to [harpyDominant.name] right now, you turn around and take your leave. You hear [harpyDominant.name] sighing to [harpyDominantCompanion.name] as you walk away, [harpyDominant.speechNoEffects(Aww! I was hoping for some fun...)]
+        Решив, что говорить с [harpyDominant.name] прямо сейчас тебе не хочется, ты разворачиваешься и уходишь. Уходя, ты слышишь разочарованный вздох [harpyDominant.name], обращенный к [harpyDominantCompanion.name]: [harpyDominant.speechNoEffects(О-о-о! А я надеялась на веселье...)]
     </p>
     <p>
-        Ignoring her words, you continue down the steps and back across the main platform, quickly finding yourself back on the outskirts of the nest.
+        Игнорируя её слова, ты продолжаешь спускаться по ступеням и переходишь через главную платформу, быстро оказываясь на окраине гнезда.
     </p>
 	]]>
     </htmlContent>
 	
     <htmlContent tag="PACIFIED_DOMINANT_SEX_START"><![CDATA[
     <p>
-        Eager to put [harpyDominant.name] in her place in front of her inner-circle, you reach down and grab her by her wings. Pulling her to her feet, you [pc.step] forwards, before planting a deep kiss on her [harpyDominant.lips+].
+        Жаждая поставить [harpyDominant.name] на место на глазах у её ближайшего окружения, ты наклоняешься и хватаешь её за крылья. Подняв её на ноги, ты [pc.step] вперёд и запечатлеваешь глубокий поцелуй на её [harpyDominant.lips+].
     </p>
     <p>
-        [harpyDominant.Name] responds to your dominant move by letting out a submissive little whine, and, wrapping her wings around your back, she passionately starts returning your kiss...
+        [harpyDominant.Name] отвечает на твой властный жест тихим покорным стоном и, обвив своими крыльями твою спину, страстно начинает отвечать на поцелуй...
     </p>
 	]]>
     </htmlContent>
 	
     <htmlContent tag="PACIFIED_DOMINANT_SEX_START_AS_SUB"><![CDATA[
     <p>
-        Although you've asserted your superiority over [harpyDominant.name], you find yourself wanting nothing more than to submit to her. Revealing your desire to the harpy matriarch, you ask her to dominate you and put you in your place.
+        Хотя ты и утвердил своё превосходство над [harpyDominant.name], ты ловишь себя на мысли, что не хочешь ничего, кроме как подчиниться ей. Обнажив своё желание перед матерью гарпий, ты просишь её доминировать над тобой и поставить тебя на место.
     </p>
     <p>
-        A wicked smirk flashes across [harpyDominant.namePos] face as she hears this, and after swiftly stepping forwards and wrapping her wings around your back, she roughly pulls you into a deep, passionate kiss...
+        Услышав это, [harpyDominant.namePos] хитро и дерзко ухмыляется; она стремительно делает шаг вперед, обвивает своими крыльями твою спину и грубо втягивает тебя в глубокий, страстный поцелуй...
     </p>
 	]]>
     </htmlContent>
 	
     <htmlContent tag="DOMINANT_SEX_START_ORAL"><![CDATA[
     <p>
-        Eager to put [harpyDominant.name] and [harpyDominantCompanion.name] in their place in front of their nest's inner-circle, you reach down and grab the dominant matriarch's wings. Pulling her to her feet, you [pc.step] forwards and plant a deep kiss on her [harpyDominant.lips+], drawing a series of lustful moans from the surrounding harpies as you do so.
+        Жаждая поставить [harpyDominant.name] и [harpyDominantCompanion.name] на место перед внутренним кругом гнезда, ты хватаешь доминантную матриарха за крылья. Подняв её на ноги, ты [pc.step] вперед и жадно целуешь её в [harpyDominant.lips+], вызывая череду похотливых стонов у окружающих гарпий.
     </p>
 	#IF(!harpyDominantCompanion.isAttractedTo(pc))
 		<p>
-			[harpyDominant.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you, and passionately returning your kiss. Letting out an angry tut, [harpyDominantCompanion.name] sneers, [harpyDominantCompanion.speech(I can't believe [harpyDominant.name] is submitting to you... There's no way I'd let you kiss me like that...)]
+			[harpyDominant.Name] отвечает на твой властный жест, обвивая твои плечи крыльями и плотно прижимаясь к тебе всем телом, страстно отвечая на поцелуй. Раздраженно цокнув языком, [harpyDominantCompanion.name] презрительно цедит: [harpyDominantCompanion.speech(Поверить не могу, что [harpyDominant.name] так перед тобой пресмыкается... Я бы ни за что не позволила тебе так меня целовать...)]
 		</p>
 		<p>
-			Breaking off your kiss with [harpyDominant.Name], you tell [harpyDominantCompanion.name] that as you're in charge of this next, she doesn't have any say in the matter. Grabbing the matriarch's subordinate, you pull her into your embrace and give her a taste of your [pc.tongue+]. As the shocked harpy lets out a muffled cry of protest into your mouth, nervous laughter breaks out amongst the surrounding harpies.
+			Оторвавшись от поцелуя с [harpyDominant.Name], ты заявляешь [harpyDominantCompanion.name], что раз уж в этот раз здесь главный ты, то её мнение никого не волнует. Схватив подчиненную матриарха, ты притягиваешь её к себе и даешь ей вкусить твою [pc.tongue+]. Пока шокированная гарпия издает приглушенный протестующий крик тебе в губы, среди окружающих гарпий проносится нервный смешок.
 		</p>
 		<p>
-			Wanting the matriarch's and her subordinate's lips to be employed elsewhere, you break off your kiss, before taking hold of both of the harpies' shoulders and pushing them to their knees before you. Realising what it is you want, [harpyDominant.Name] eagerly shuffles forwards towards your groin, pulling [harpyDominantCompanion.name] along beside her as she does so. Gazing up into your eyes, she moans, [harpyDominant.speech(Don't worry about [harpyDominantCompanion.name]. She'll do what I tell her to.)]
+			Желая, чтобы губы матриарха и её подчиненной нашли себе другое применение, ты прерываешь поцелуй, после чего берешь обеих гарпий за плечи и заставляешь их опуститься перед тобой на колени. Поняв твои намерения, [harpyDominant.Name] с нетерпением подается вперед к твоему паху, увлекая за собой [harpyDominantCompanion.name]. Глядя тебе прямо в глаза, она стонет: [harpyDominant.speech(Не беспокойся о [harpyDominantCompanion.name]. Она сделает всё, что я ей прикажу.)]
 		</p>
 		<p>
-			[harpyDominantCompanion.speech(Eugh... Yes, I'll do what you say, Mistress...)] [harpyDominantCompanion.name] groans as her matriarch forces her to join in with performing oral on you...
+			[harpyDominantCompanion.speech(Ох... Да, я сделаю всё, как ты скажешь, Госпожа...)] — стонет [harpyDominantCompanion.name], когда матриарх заставляет её присоединиться к оральному сексу с тобой...
 		</p>
 	#ELSE
 		<p>
-			[harpyDominant.Name] responds to your dominant move by wrapping her wings around your back, grinding herself up against you as she passionately returns your kiss. Letting out a hungry moan, [harpyDominantCompanion.name] eagerly asks, [harpyDominantCompanion.speech(You're not going to leave me to stand back and watch, are you?)]
+			[harpyDominant.Name] отвечает на твой властный жест, обвивая крыльями твою спину и жадно прижимаясь к тебе всем телом, страстно отвечая на поцелуй. Издав голодный стон, [harpyDominantCompanion.name] с нетерпением спрашивает: [harpyDominantCompanion.speech(Ты ведь не оставишь меня просто стоять и смотреть, правда?)]
 		</p>
 		<p>
-			With [harpyDominant.name] continuing to desperately kiss you, you motion for [harpyDominantCompanion.name] to step forwards and join in. As she happily strides forwards, you pull back from [harpyDominant.namePos] lips, before swiftly grabbing [harpyDominant.namePos] head and giving her a taste of your [pc.tongue+]. As the lustful harpy leans heavily into you, subdued chatter breaks out amongst the surrounding dominant harpies.
+			Пока [harpyDominant.name] продолжает отчаянно целовать тебя, ты жестом приказываешь [harpyDominantCompanion.name] подойти и присоединиться. Пока она радостно шагает к тебе, ты отрываешься от губ [harpyDominant.namePos], а затем резко хватаешь [harpyDominant.namePos] за голову, давая ей вкусить твой [pc.tongue+]. Пока похотливая гарпия всем телом наваливается на тебя, среди окружающих доминантных гарпий проносится приглушенный шепот.
 		</p>
 		<p>
-			Wanting the matriarch's and her subordinate's lips to be employed elsewhere, you break off your kiss, before taking hold of both of the harpies' shoulders and pushing them to their knees before you. Realising what it is you want, they both eagerly shuffle forwards towards your groin. Looking up at you, [harpyDominant.name] hungrily moans, [harpyDominant.speech(We'll take good care of you... Isn't that right, [harpyDominantCompanion.name]?)]
+			Желая, чтобы губы матриарха и её подчиненной нашли себе другое применение, ты прерываешь поцелуй, после чего хватаешь обеих гарпий за плечи и заставляешь их опуститься перед тобой на колени. Осознав твои намерения, они обе с нетерпением подаются вперед к твоему паху. Поднимая на тебя взгляд, [harpyDominant.name] голодно стонет: [harpyDominant.speech(Мы позаботимся о тебе... Ведь так, [harpyDominantCompanion.name]?)]
 		</p>
 		<p>
-			[harpyDominantCompanion.speech(Yes, Mistress...)] [harpyDominantCompanion.name] replies, and you can't help but grin as she and her matriarch eagerly prepare to perform oral on you...
+			[harpyDominantCompanion.speech(Да, Госпожа...)] — отвечает [harpyDominantCompanion.name], и ты невольно ухмыляешься, видя, как она и её матриарх с жадностью готовятся отсосать тебе...
 		</p>
 	#ENDIF
 	]]>
@@ -250,21 +253,21 @@
 
     <htmlContent tag="DOMINANT_SEX_START_DOGGY"><![CDATA[
     <p>
-        Eager to put [harpyDominant.name] and [harpyDominantCompanion.name] in their place in front of their nest's inner-circle, you grab hold of both of them and push them down onto their hands and knees before you. As you drop down behind them, [harpyDominant.name] passionately moans, [harpyDominant.speech(Come on, give the two of us a real good fuck! Use me and [harpyDominantCompanion.name] as much as you want!)]
+        Стремясь поставить [harpyDominant.name] и [harpyDominantCompanion.name] на место перед внутренним кругом их гнезда, ты хватаешь обеих и ставишь их перед собой на четвереньки. Когда ты опускаешься позади них, [harpyDominant.name] страстно стонет: [harpyDominant.speech(Давай, трахни нас обеих как следует! Используй меня и [harpyDominantCompanion.name] сколько пожелаешь!)]
     </p>
 	#IF(!harpyDominantCompanion.isAttractedTo(pc))
 		<p>
-			Letting out a disgusted groan, the matriarch's subordinate looks back over her shoulder and grunts in disapproval, [harpyDominantCompanion.speech(Eugh... I'm only doing this because I have no other choice!)]
+			Издавая брезгливый стон, подчиненная матриарха оглядывается через плечо и ворчит в знак неодобрения: [harpyDominantCompanion.speech(Фу... Я делаю это только потому, что у меня нет другого выбора!)]
 		</p>
 		<p>
-			Ignoring her words, you lustfully gaze down at [harpyDominantCompanion.name] and her matriarch as you prepare to fuck them side-by-side...
+			Игнорируя её слова, ты с похотью смотришь на [harpyDominantCompanion.name] и её матриарха, готовясь трахнуть их обеих одновременно...
 		</p>
 	#ELSE
 		<p>
-			Letting out a hungry moan, the matriarch's subordinate looks back over her shoulder and cries out, [harpyDominantCompanion.speech(Yes! Please, fuck me!)]
+			Издавая голодный стон, подчиненная матриарха оглядывается через плечо и вскрикивает: [harpyDominantCompanion.speech(Да! Пожалуйста, трахни меня!)]
 		</p>
 		<p>
-			Pleased to hear that she's more than happy to be involved in this threesome, you lustfully gaze down at [harpyDominantCompanion.name] and her matriarch as you prepare to fuck them side-by-side...
+			Слыша, что она более чем рада участвовать в этом тройничке, ты с похотью смотришь вниз на [harpyDominantCompanion.name] и её матриарха, готовясь трахать их бок о бок...
 		</p>
 	#ENDIF
 	]]>
@@ -273,38 +276,38 @@
     <htmlContent tag="DOMINANT_AFTER_SEX"><![CDATA[
 	#IF(sex.isSatisfiedFromOrgasms(harpyDominant, true))
 		<p>
-			As you [pc.step] back from [harpyDominant.name], she sinks to the floor, totally worn out from her
+			Когда ты [pc.step] [harpyDominant.name], она опускается на пол, совершенно измотанная...
 			#IF(sex.getNumberOfOrgasms(harpyDominant)>1)
-				 orgasms.
+				оргазмами.
 			#ELSE
-				 orgasm.
+				оргазмом.
 			#ENDIF
-			 Biting her lip and flashing you a dirty look, she teases, [harpyDominant.speech(I could get used to this, you know...)]
+			 Прикусывая губу и бросая на тебя порочный взгляд, она дразнит: [harpyDominant.speech(Знаешь, к такому можно быстро привыкнуть...)]
 		</p>
 	#ELSE
 		<p>
-			As you [pc.step] back from [harpyDominant.name], she sinks to the floor, letting out a desperate whine as she realises that you've finished with her. Her feathered hands dart down between her legs, and she frantically starts masturbating as she seeks to finish what you started.
+			Когда ты [pc.step] [harpyDominant.name], она опускается на пол, издавая отчаянный скулеж, осознав, что ты с ней закончил. Её пернатые руки ныряют между ног, и она начинает неистово мастурбировать, стремясь закончить то, что ты начал.
 		</p>
 	#ENDIF
 	#IF(sex.getAllParticipants(false).contains(harpyDominantCompanion))
 		#IF(sex.isSatisfiedFromOrgasms(harpyDominantCompanion, true))
 			<p>
-				Letting out a deeply satisfied sigh, [harpyDominantCompanion.name] looks to be completely exhausted from the
+				Издавая глубокий удовлетворенный вздох, [harpyDominantCompanion.name] выглядит совершенно изнуренной от того,
 				#IF(sex.getNumberOfOrgasms(harpyDominantCompanion)>1)
-					 orgasms
+					оргазмов
 				#ELSE
-					 orgasm
+					оргазма
 				#ENDIF
-				 you gave her. Panting and looking up into your eyes, she moans, [harpyDominantCompanion.speech(That was... Wow...)]
+				 что ты ей дал. Тяжело дыша и глядя тебе прямо в глаза, она стонет: [harpyDominantCompanion.speech(Это было... Вау...)]
 			</p>
 		#ELSE
 			<p>
-				Not being satisfied from this sexual experience, [harpyDominantCompanion.name] looks over at her matriarch, and as she watches [harpyDominant.namePos] [harpyDominant.breasts+] rise and fall, she starts shamelessly masturbating right there in front of the rest of the surrounding harpies.
+				Не получив удовлетворения от этой сексуальной близости, [harpyDominantCompanion.name] смотрит на свою матриарха, и наблюдая, как [harpyDominant.namePos] [harpyDominant.breasts+] вздымается и опускается, она начинает бесстыдно мастурбировать прямо на глазах у остальных гарпий.
 			</p>
 		#ENDIF
 	#ENDIF
 	<p>
-		[harpyDominant.NamePos] inner-circle of harpies, having watched the whole thing, kneel down in submission as you finish with their matriarch. Excitedly chattering amongst themselves, they talk about your performance and wonder aloud how long it will be before you're back for more...
+		[harpyDominant.NamePos] ближний круг гарпий, наблюдавший за всем этим, преклоняет колени в знак покорности, пока ты заканчиваешь с их матриархом. Возбужденно щебеча между собой, они обсуждают твое мастерство и гадают, как скоро ты вернешься за добавкой...
 	</p>
 	]]>
     </htmlContent>
@@ -312,11 +315,11 @@
     <htmlContent tag="DOMINANT_LEAVE_AFTER_SEX"><![CDATA[
 	#IF(sex.getAllParticipants(false).contains(harpyDominantCompanion))
 		<p>
-			Having shown these harpies their place, you set off down the staircase, and after walking back across the lower platform, you quickly find yourself on the outskirts of [harpyDominant.namePos] nest once again.
+		Показав этим гарпиям их место, ты спускаешься по лестнице, и, пройдя обратно через нижнюю платформу, ты быстро оказываешься на окраине гнезда [harpyDominant.namePos].
 		</p>
 	#ELSE
 		<p>
-			Having shown [harpyDominant.name] her place, you set off down the staircase, and after walking back across the lower platform, you quickly find yourself on the outskirts of [harpyDominant.namePos] nest once again.
+		Показав [harpyDominant.name] её место, ты спускаешься по лестнице, и, пройдя обратно через нижнюю платформу, ты быстро оказываешься на окраине гнезда [harpyDominant.namePos].
 		</p>
 	#ENDIF
     ]]>
@@ -327,118 +330,117 @@
 	
     <htmlContent tag="COMBAT_LOST"><![CDATA[
 	<p>
-		You fall to the floor, totally beaten. As you collapse, [harpyDominantCompanion.name] jumps down on top of you, pinning you to the floor as she calls out to her matriarch, [harpyDominantCompanion.speechNoEffects([harpyDominant.Name]! The stupid bitch is ready for [pc.her] punishment now!)]
+		Ты валишься на пол, совершенно измотанная. Пока ты содрогаешься от бессилия, [harpyDominantCompanion.name] прыгает сверху, прижимая тебя к земле и выкрикивая своей матриарху: [harpyDominantCompanion.speechNoEffects([harpyDominant.Name]! Эта тупая сучка готова к [pc.her] наказанию!)]
 	</p>
 	<p>
-		[harpyDominant.speech(Good girl, [harpyDominantCompanion.name]!)] you hear her respond. [harpyDominant.speech(I think it's time to teach this insolent little [pc.race] a lesson!)]
+		[harpyDominant.speech(Хорошая девочка, [harpyDominantCompanion.name]!)] — слышишь ты её ответ. [harpyDominant.speech(Думаю, пришло время преподать урок этой дерзкой маленькой [pc.race]!)]
 	</p>
 	<p>
-		As [harpyDominantCompanion.name] continues holding you down, [harpyDominant.name] calls out for the rest of the surrounding harpies to help. Rushing to obey their mistress, several of the red-and-black harpies dash forwards and help to pin your [pc.arms] and [pc.legs] to the floor.
+		Пока [harpyDominantCompanion.name] продолжает удерживать тебя, [harpyDominant.name] подзывает остальных гарпий на помощь. Поспешив исполнить волю госпожи, несколько красно-черных гарпий бросаются вперед и помогают прижать твои [pc.arms] и [pc.legs] к полу.
 	</p>
 	<p>
-		[harpyDominant.speech(That's right, hold [pc.herHim] still!)] [harpyDominant.name] calls out, stepping down from her podium before strutting over to you. [harpyDominant.speech(Fucking bitch! I know just what you need! Coming into <i>my</i> nest, then trying to act all tough?! You just want to be one of my bitches, don't you?!)]
+		[harpyDominant.speech(Вот так, не смей дергаться, [pc.herHim]!)] [harpyDominant.name] выкрикивает это, спускаясь со своего пьедестала, и вальяжно направляется к тебе. [harpyDominant.speech(Чертова сучка! Я точно знаю, чего ты хочешь! Забрела в <i>моё</i> гнездо и еще строишь из себя крутую?! Да ты просто хочешь стать одной из моих сучек, а?!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_MATRIARCH"><![CDATA[
 	<p>
-		You fall to the floor, totally beaten. As you collapse, [dominantHarpy.name] orders her flock to hold you still, and, rushing to obey their matriarch, you're quickly pinned to the floor.
+		Ты валишься на пол, совершенно избитая и обессиленная. Пока ты оседаешь, [dominantHarpy.name] приказывает своей стае держать тебя неподвижно, и, спеша повиноваться своей матриархше, они быстро прижимают тебя к земле.
 	</p>
 	<p>
-		[dominantHarpy.speech([dominantHarpyCompanion.name], get up!)] you hear [dominantHarpy.name] shouting to her companion. [dominantHarpy.speech(It's time to teach this insolent [pc.race] a lesson!)]
+		[dominantHarpy.speech([dominantHarpyCompanion.name], подъем!)] — слышишь ты крик [dominantHarpy.name], обращающейся к своей спутнице. [dominantHarpy.speech(Пора проучить эту наглую [pc.race]!)]
 	</p>
 	<p>
-		As the members of [dominantHarpy.namePos] inner-circle continue to hold you down, you hear the dominant matriarch and her companion walking towards you. The harpies start laughing as you try to wriggle free, but you're too weak from the fight to offer any real resistance.
+		Пока приближенные [dominantHarpy.namePos] продолжают удерживать тебя на земле, ты слышишь, как доминантная матриархша и её спутница приближаются к тебе. Гарпии начинают хохотать, пока ты пытаешься вырваться, но после драки ты слишком слаба, чтобы оказать хоть какое-то реальное сопротивление.
 	</p>
 	<p>
-		[dominantHarpy.speech(Time for some revenge, [dominantHarpyCompanion.name]!)] [dominantHarpy.name] shouts out, and as her companion moves to help the other harpies hold you down, she laughs, [harpyDominant.speech(You dumb cunt! I know just what you need! Coming into <i>my</i> nest, then trying to act all tough?! You just want to be one of my bitches, don't you?!)]
+		[dominantHarpy.speech(Пришло время для мести, [dominantHarpyCompanion.name]!)] — выкрикивает [dominantHarpy.name], и пока её спутница помогает остальным гарпиям удерживать тебя, она заливается смехом: [harpyDominant.speech(Тупая пизда! Я точно знаю, чего ты хочешь! Забрела в <i>моё</i> гнездо и еще строишь из себя крутую?! Да ты просто хочешь стать одной из моих сучек, а?!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_END"><![CDATA[
 	<p>
-		[pc.speechNoEffects(Let me go!)] you shout, struggling against the harpies holding you down. You're too weak to shake them off, however, and they easily continue to pin you to the floor, holding you quite still as [harpyDominant.name] sneers down at you.
+		[pc.speechNoEffects(Отпустите меня!)] — кричишь ты, пытаясь вырваться из хватки гарпий, прижимающих тебя к земле. Однако ты слишком слаба, чтобы сбросить их, и они с легкостью продолжают удерживать тебя на полу, не давая шелохнуться, пока [harpyDominant.name] насмешливо смотрит на тебя сверху вниз.
 	</p>
 	#IF(game.isBadEndsEnabled())
 		<p>
-			[harpyDominant.speech([dominantHarpyCompanion.Name], strip this bitch!)] she commands her subordinate, and as she watches you helplessly trying to resist as her harpies strip you out of all your clothing, she teases, [harpyDominant.speech(You're so feisty! I can already see that you're going to turn out to be one of my most interesting pets!)]
+			[harpyDominant.speech([dominantHarpyCompanion.Name], раздеть эту сучку!)] — командует она своей подчиненной. Наблюдая за твоими беспомощными попытками сопротивляться, пока гарпии сдирают с тебя одежду, она дразнит: [harpyDominant.speech(Какая бойкая! Уже вижу, что ты станешь одной из моих самых интересных домашних зверушек!)]
 		</p>
 		<p>
-			Now completely naked, you're once again forced down onto your back, before [dominantHarpyCompanion.name] sits on your chest. As the sadistic harpy laughs at your fruitless attempts to pull free, her matriarch brings a dark red perfume bottle up to your face. Grinning evilly, she leans in to you, and as she prepares to spray the bottle's contents onto your helpless body, she teases, [harpyDominant.speech(Breathe in deeply! In just a moment you'll be nothing more than one of my angry little bitches!)]
+			Теперь, когда ты полностью обнажена, тебя снова заставляют лечь на спину, после чего [dominantHarpyCompanion.name] усаживается тебе на грудь. Пока садистичная гарпия смеется над твоими тщетными попытками вырваться, её матриарх подносит к твоему лицу флакон с темно-красными духами. Злобно ухмыляясь, она наклоняется к тебе и, готовясь распылить содержимое на твое беспомощное тело, дразнит: [harpyDominant.speech(Дыши глубже! Еще мгновение — и ты превратишься в одну из моих маленьких злых сучонок!)]
 		</p>
 	#ELSE
 		<p>
-			[harpyDominant.speech(That's the spirit!)] she laughs. [harpyDominant.speech(You're so feisty! It's better to channel all that pent up energy elsewhere though. Don't worry, <i>this</i> will help you with that!)]
-		</p>
-		<p>
-			As [dominantHarpyCompanion.name] sits on your chest, laughing at your fruitless attempts to pull free, [harpyDominant.name] brings a dark red perfume bottle up to your face. Grinning evilly, she leans in to you, ready to spray the bottle's contents onto your helpless body...
-		</p>
+			[harpyDominant.speech(Вот это настрой!)] — смеется она. [harpyDominant.speech(Какая ты бойкая! Впрочем, лучше направить всю эту накопившуюся энергию в другое русло. Не волнуйся, <i>эта</i> поможет тебе с этим!)]
+		</p><p>
+Пока [dominantHarpyCompanion.name] сидит на твоей груди, посмеиваясь над твоими тщетными попытками вырваться, [harpyDominant.name] подносит к твоему лицу флакон с темно-красными духами. Злорадно ухмыляясь, она наклоняется к тебе, готовая обдать твоё беспомощное тело содержимым флакона...
+</p>
 	#ENDIF
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_NO_TF"><![CDATA[
 	<p>
-		Unwilling to be transformed into one of [harpyDominant.namePos] harpies, you furiously yank your arm free of their grip. In the seconds you have before you're restrained again, you reach up to grab the bottle of perfume from [harpyDominant.namePos] feathered had, before hurling it across the nest to smash into pieces against the hard wooden floor.
+		Не желая превращаться в одну из гарпий [harpyDominant.namePos], ты яростно вырываешь руку из их хватки. В те несколько секунд, что у тебя есть до того, как тебя снова скрутят, ты тянешься к пернатой руке [harpyDominant.namePos], чтобы выхватить флакон духов, а затем швыряешь его через все гнездо, чтобы тот разлетелся вдребезги о твердый деревянный пол.
 	</p>
 	<p>
-		[harpyDominant.speech(You fucking bitch!)] [harpyDominant.name] screams, grabbing your chin and squeezing cruelly down as she scowls at you. [harpyDominant.speech(You're going to fucking pay for that! [harpyDominantCompanion.Name]! This bitch wants my full attention! How about you help [pc.herHim] entertain me?!)]
+		[harpyDominant.speech(Ах ты сучья дрянь!)] — вопит [harpyDominant.name], хватая тебя за подбородок и жестоко сдавливая его, свирепо глядя на тебя. [harpyDominant.speech(Ты за это, блядь, заплатишь! [harpyDominantCompanion.Name]! Эта сучка хочет всё моё внимание?! Как насчет того, чтобы помочь [pc.herHim] развлечь меня?!)]
 	</p>
 	<p>
-		Any protests or objections that you might have are muffled as [harpyDominantCompanion.namePos] feathered hand clamps down over your mouth. Leaning down to stare into your eyes, she chuckles, [harpyDominantCompanion.speech(Let's put on a show!)]
+		Любые твои протесты или возражения заглушаются, когда пернатая лапа [harpyDominantCompanion.namePos] плотно прижимается к твоему рту. Наклонившись, чтобы заглянуть тебе в глаза, она посмеивается: [harpyDominantCompanion.speech(Давай устроим шоу!)]
 	</p>
 	<p>
-		For the next few hours, you're forced to act as [harpyDominantCompanion.namePos] play-thing. Tying you up in bondage, publicly spanking you in front of [harpyDominant.name], and being walked around the nest on a leash are amongst the least humiliating things you suffer. Thankfully, the harpies don't show any interest in forcing you to perform any penetrative sexual acts, and they eventually all lose interest.
+		В течение следующих нескольких часов ты вынуждена быть живой игрушкой для [harpyDominantCompanion.namePos]. Связывание, публичная порка на глазах у [harpyDominant.name] и прогулки по гнезду на поводке — это лишь малая часть тех унижений, через которые тебе приходится проходить. К счастью, гарпии не проявляют особого интереса к тому, чтобы заставить тебя к чему-то прикоснуться, и в конце концов все они теряют к тебе интерес.
 	</p>
 	<p>
-		As [harpyDominantCompanion.name] declares that she's bored of playing with you, [harpyDominant.name] finally sets you free. [harpyDominant.speech(Alright bitch! I think you've had enough! Now get the fuck out of my nest!)]
+		Когда [harpyDominantCompanion.name] объявляет, что ей надоело с тобой возиться, [harpyDominant.name] наконец дарует тебе свободу. [harpyDominant.speech(Ладно, сучка! Думаю, с тебя хватит! А теперь вали нахер из моего гнезда!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_TF_START"><![CDATA[
 	<p>
-		You stay still, allowing [harpyDominant.name] to spray the bottle's contents onto your face and neck as she taunts you, [harpyDominant.speech(You want to act like an angry, bitchy little harpy? You'd better have the body to match it!)]
+		Ты замираешь, позволяя [harpyDominant.name] распылять содержимое флакона тебе на лицо и шею, пока она насмехается над тобой: [harpyDominant.speech(Хочешь вести себя как злая, стервозная маленькая гарпия? Тогда тебе лучше иметь тело, которое ей соответствует!)]
 	</p>
 	<p>
-		You try to make a response, but as you open your mouth, the choking perfume enters your airways, leaving you coughing and spluttering on the floor. Before you know what you're doing, you're breathing in deeply, letting out little whining noises as you find yourself desperate to inhale as much of the sweet-smelling perfume as you possibly can...
+		Ты пытаешься что-то ответить, но стоит тебе открыть рот, как удушающий аромат проникает в легкие, заставляя тебя кашлять и хрипеть на полу. Прежде чем ты успеваешь опомниться, ты уже жадно вдыхаешь, издавая тихие скулящие звуки — ты отчаянно хочешь вдохнуть как можно больше этого сладкого парфюма...
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_TF_END"><![CDATA[
 	<p>
-		As the perfume's transformative effects come to an end, the harpies' grip on your [pc.arms] and [pc.legs] loosens. Blinking slowly a few times, you let out an exhausted moan, [pc.speech(~Ahh!~ You bitch...)]
+		Когда трансформирующее действие духов подходит к концу, хватка гарпий на твоем [pc.arms] и [pc.legs] ослабевает. Медленно моргая, ты издаешь изнуренный стон: [pc.speech(~Ах!~ Ах ты сука...~)]
 	</p>
 	<p>
-		The flock of harpies bursts out into laughter, and the ones who were holding you down finally release you before backing off. Scrambling to your knees, you find yourself looking up at [harpyDominant.Name] as she continues towering over you.
+		Стая гарпий взрывается хохотом, и те, кто удерживал тебя, наконец отпускают, отступая назад. Поспешно вскочив на колени, ты обнаруживаешь, что смотришь снизу вверх на [harpyDominant.Name], которая всё так же возвышается над тобой.
 	</p>
 	<p>
-		[harpyDominant.speech(Good little harpy! Now, after you apologise, you can fuck off and make your own flock!)]
+		[harpyDominant.speech(Хорошая маленькая гарпия! А теперь, когда извинишься, можешь сваливать и собирать свою собственную стаю!)]
 	</p>
 	<p>
-		With the effects of the perfume still lingering in your mind, you find yourself blurting out, [pc.speech(I'm not apologising to you! Fucking bitch, I'm out of here!)]
+		Пока действие духов всё ещё туманит твой разум, ты ловишь себя на том, что выпаливаешь: [pc.speech(Я тебе не извиняюсь! Сука ебаная, я ухожу!)]
 	</p>
 	<p>
-		[harpyDominant.Name] grins down at you, and, to the background noise of dozens of harpies' laughter, she shouts, [harpyDominant.speech([harpyDominantCompanion.Name]! This bitch wants my full attention! How about you help [pc.herHim] entertain me?!)]
+		[harpyDominant.Name] ухмыляется тебе сверху вниз и под фоновый шум смеха десятков гарпий выкрикивает: [harpyDominant.speech([harpyDominantCompanion.Name]! Эта сучка хочет всё моё внимание! Как насчёт того, чтобы помочь [pc.herHim] развлечь меня?!)]
 	</p>
 	<p>
-		Any protests or objections that you might have are muffled as [harpyDominantCompanion.namePos] feathered hand clamps down over your mouth. Leaning down to stare into your eyes, she chuckles, [harpyDominantCompanion.speech(Let's put on a show!)]
+		Любые твои протесты или возражения заглушаются, когда пернатая лапа [harpyDominantCompanion.namePos] плотно прижимается к твоему рту. Наклонившись, чтобы заглянуть тебе в глаза, она посмеивается: [harpyDominantCompanion.speech(Давай устроим шоу!)]
 	</p>
 	<p>
-		For the next few hours, you're forced to act as [harpyDominantCompanion.namePos] play-thing. Tying you up in bondage, publicly spanking you in front of [harpyDominant.name], and being walked around the nest on a leash are amongst the least humiliating things you suffer. Thankfully, the harpies don't show any interest in forcing you to perform any penetrative sexual acts, and they eventually all lose interest.
+		В течение следующих нескольких часов ты вынуждена быть живой игрушкой для [harpyDominantCompanion.namePos]. Связывание, публичная порка на глазах у [harpyDominant.name] и прогулки по гнезду на поводке — это лишь малая часть тех унижений, через которые тебе приходится проходить. К счастью, гарпии не проявляют особого интереса к тому, чтобы заставить тебя к чему-то прикоснуться, и в конце концов все они теряют к тебе интерес.
 	</p>
 	<p>
-		As [harpyDominantCompanion.name] declares that she's bored of playing with you, [harpyDominant.name] finally sets you free. [harpyDominant.speech(Alright, bitch! I think you've had enough! Now get the fuck out of my nest!)]
+		Когда [harpyDominantCompanion.name] заявляет, что ей надоело с тобой возиться, [harpyDominant.name] наконец освобождает тебя. [harpyDominant.speech(Ладно, сучка! Думаю, с тебя хватит! А теперь съебись нахер из моего гнезда!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_THROWN_OUT"><![CDATA[
 	<p>
-		Finally given an opportunity to leave, you do as [harpyDominant.name] commands. Running away from the harpies' mocking laughter, you dash across the platform, and before you know it, you find yourself back on the outskirts of the nest...
+		Наконец получив возможность уйти, ты беспрекословно подчиняешься приказу [harpyDominant.name]. Убегая от насмешливого хохота гарпий, ты несёшься через платформу и не успеваешь оглянуться, как оказываешься на окраине гнезда...
 	</p>
     ]]>
     </htmlContent>
@@ -447,71 +449,71 @@
 	
     <htmlContent tag="COMBAT_LOST_BAD_END_TF_START"><![CDATA[
 	<p>
-		Completely overpowered by the aggressive harpies and totally at their mercy, you can't do anything but obey [dominantHarpy.namePos] command. As she starts liberally spraying you with the sweet-smelling perfume, you're unable to prevent the choking vapour from entering your airways, leaving you coughing and spluttering on the floor. Before you know what you're doing, you're breathing in deeply, letting out little whining noises as you find yourself desperate to inhale as much of the sweet-smelling perfume as you possibly can.
+		Полностью подавленная агрессивными гарпиями и оказавшаяся в их полной власти, ты не можешь ничего не делать, кроме как подчиняться приказам [dominantHarpy.namePos]. Когда она начинает щедро окроплять тебя сладким парфюмом, ты не в силах помешать удушливым парам проникнуть в твои легкие, отчего ты кашляешь и брызжешь слюной на полу. Но не успеваешь ты опомниться, как уже жадно вдыхаешь, издавая тихие скулящие звуки — ты отчаянно хочешь вдохнуть как можно больше этого сладкого аромата.
 	</p>
 	<p>
-		[dominantHarpy.speechNoEffects(That's right, you pathetic bitch, breathe it all in!)] she mocks, [dominantHarpy.speechNoEffects(Now turn into an angry little harpy bitch for me!)]
+		[dominantHarpy.speechNoEffects(Вот так, жалкая сучка, вдыхай всё до капли!)] — насмехается она, — [dominantHarpy.speechNoEffects(А теперь превратись в мою маленькую злющую гарпию-сучку!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_BAD_END_TF_END"><![CDATA[
 	<p>
-		As the perfume's transformative effects come to an end, the harpies' grip on your [pc.arms] and [pc.legs] loosens. Blinking slowly a few times, you let out an exhausted moan, [pc.speech(~Ahh!~ You bitch...)]
+		Когда трансформирующее действие духов подходит к концу, хватка гарпий на твоем [pc.arms] и [pc.legs] ослабевает. Медленно моргая, ты издаешь изнуренный стон: [pc.speech(~Ах!~ Ах ты сука...~)]
 	</p>
 	<p>
-		The flock of harpies bursts out into laughter, and the ones who were holding you down finally release you before backing off. Scrambling to your knees, you find yourself looking up at [harpyDominant.Name] as she continues towering over you. With an evil smirk on her face, she demands, [harpyDominant.speech(Apologise to me, you worthless slut! Grovel before me and tell me that you'll serve me!)]
+		Стая гарпий взрывается смехом, и те, кто удерживал тебя, наконец отпускают тебя, отступая назад. Поспешно опустившись на колени, ты обнаруживаешь, что смотришь снизу вверх на [harpyDominant.Name], которая всё так же возвышается над тобой. С ехидной ухмылкой на лице она требует: [harpyDominant.speech(Извинись передо мной, никчемная шлюха! Преклонись и скажи, что будешь мне служить!)]
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="COMBAT_LOST_BAD_END_RETORT"><![CDATA[
 	<p>
-		With the effects of the perfume still lingering in your mind, you find yourself furiously shouting out, [pc.speech(Fuck you, bitch! I'm not saying sorry!)]
+		Пока действие парфюма всё еще туманит твой разум, ты обнаруживаешь, что яростно выкрикиваешь: [pc.speech(Да пошла ты, сука! Я не буду извиняться!)]
 	</p>
 	<p>
-		Clearly having expected this, [harpyDominant.name] continues evilly grinning down at you, and to the background noise of dozens of dominant harpies hurling insults at you, she shouts, [harpyDominant.speech(So, it would seem that I need to put you in your place! You're just one of my worthless harpy bitches now, understand? I'm your matriarch, and I'll do whatever I want with you!)]
+		Очевидно, предвкушая это, [harpyDominant.name] продолжает злобно ухмыляться, глядя на тебя сверху вниз. Под фоновый шум десятков доминантных гарпий, осыпающих тебя оскорблениями, она выкрикивает: [harpyDominant.speech(Итак, похоже, мне пора расставить всё по своим местам! Теперь ты всего лишь одна из моих никчемных сук-гарпий, понимаешь? Я твоя матриарх, и буду делать с тобой всё, что пожелаю!)]
 	</p>
 	<p>
-		Before you can respond to this, the matriarch snaps her fingers and orders her subordinates, [harpyDominant.speech(Restrain this bitch! I know just how to train her!)]
+		Прежде чем ты успеваешь ответить, матриарх щелкает пальцами и отдает приказ своим подчиненным: [harpyDominant.speech(Скрутите эту сучку! Я знаю, как её дрессировать!)]
 	</p>
 	#IF(pc.hasVagina())
 		<p>
-			Once again, you find yourself being overpowered by [harpyDominant.namePos] harpies, and as they roughly restrain you, the sadistic matriarch sneers, [harpyDominant.speech(Some time in the stocks will make it clear to you what your place is... [harpyDominantCompanion.Name]! Break this bitch!)]
+			В очередной раз ты чувствуешь, как [harpyDominant.namePos] гарпий одолевают тебя. Пока они грубо удерживают тебя, садистичная матриарх усмехается: [harpyDominant.speech(Некоторое время в колодах быстро объяснит тебе, каково твоё место... [harpyDominantCompanion.Name]! Сломай эту сучку!)]
 		</p>
 		<p>
-			Although you struggle against them, the harpies manage to manhandle you over to a nearby set of stocks, and after a brief scuffle, you find your [pc.arms] and head securely locked into the wooden device. From the big grin on her face, you can see that [harpyDominantCompanion.name] is delighted to be carrying out her matriarch's orders, and with a skip in her step she swiftly moves around behind you.
+			Хотя ты и пытаешься вырваться, гарпиям удается бесцеремонно потащить тебя к стоящим неподалеку колодам. После короткой возни ты обнаруживаешь, что твои [pc.arms] и голова намертво зажаты в деревянном устройстве. По широкой ухмылке на лице [harpyDominantCompanion.name] видно, что она в восторге от возможности исполнить приказ матриарха, и она, пританцовывая, быстро обходит тебя сзади.
 		</p>
 		<p>
-			[harpyDominantCompanion.speech(Please do try to resist for as long as you can. It's no fun otherwise!)] [harpyDominantCompanion.name] laughs, before swinging her hand down as hard as she can to forcefully slap your exposed ass. Moaning in delight in response to the alarmed cry which involuntarily bursts out from between your [pc.lips], [harpyDominantCompanion.name] wastes no time in lifting her hand and slapping your ass once again. Repeating this movement over and over again, [harpyDominantCompanion.name] soon reduces you to a squirming, crying mess.
+			[harpyDominantCompanion.speech(Пожалуйста, постарайся сопротивляться как можно дольше. Иначе будет совсем не весело!)] [harpyDominantCompanion.name] смеется, а затем со всей силы опускает руку, отвешивая звонкую пощечину по твоей обнаженной заднице. С восторженным стоном она реагирует на испуганный вскрик, непроизвольно вырвавшийся из твоих [pc.lips], и [harpyDominantCompanion.name] не теряет ни секунды, чтобы снова шлепнуть тебя по ягодицам. Повторяя это движение снова и снова, [harpyDominantCompanion.name] вскоре превращает тебя в извивающееся, рыдающее нечто.
 		</p>
 		<p>
-			[pc.speech(No more! Please!)] you desperately cry out, unable to endure any more of this ruthless punishment.
+			[pc.speech(Хватит! Пожалуйста!)] — отчаянно кричишь ты, не в силах больше терпеть это беспощадное наказание.
 		</p>
 		<p>
-			[harpyDominantCompanion.speech(Had enough already?)] [harpyDominantCompanion.name] whines in disappointment, before eagerly moaning, [harpyDominantCompanion.speech(It's time to start your training then! You're going to be my bitch!)]
+			[harpyDominantCompanion.speech(Уже хватит?)] — разочарованно капризничает [harpyDominantCompanion.name], а затем с предвкушением стонет: [harpyDominantCompanion.speech(Значит, пора начинать твое обучение! Ты будешь моей сучкой!)]
 		</p>
 		<p>
-			After a brief moment as she displaces her clothing, [harpyDominantCompanion.name] steps up right behind you, and you can't help but let out a shocked gasp as you feel the head of her cock sliding up and down over your [pc.labia+]...
+			Спустя мгновение, пока она поправляет одежду, [harpyDominantCompanion.name] подходит к тебе вплотную со спины, и ты невольно ахаешь от шока, чувствуя, как головка её члена скользит вверх и вниз по твоим [pc.labia+]...
 		</p>
 	#ELSE
+<p>
+Ты снова оказываешься во власти [harpyDominant.namePos] гарпий. Пока они грубо удерживают тебя, садистичная матриарх презрительно усмехается: [harpyDominant.speech(Твой новый наряд быстро объяснит тебе, кто здесь главный... [harpyDominantCompanion.Name]! Оденьте эту сучку!)]
+</p>
 		<p>
-			Once again, you find yourself being overpowered by [harpyDominant.namePos] harpies, and as they roughly restrain you, the sadistic matriarch sneers, [harpyDominant.speech(Giving you your new uniform should show you what your place is... [harpyDominantCompanion.Name]! Dress this bitch!)]
+			Пусть ты и отчаянно сопротивляешься, гарпии оказываются слишком сильны. После короткой потасовки ты остаешься с туго засунутым в рот шариком-кляпом, ошейником на шее и в облегающем наряде из темно-фиолетового латекса, который плотно обхватывает твои ноги, живот и руки. Хотя твои [pc.breasts+] выставлены напоказ, соски прикрыты крестами из пластыря; стоит тебе потянуться к ним, как [harpyDominantCompanion.name] внезапно дает тебе звонкую пощечину и шипит: [harpyDominantCompanion.speech(Не смей шевелиться без приказа, сучка! А теперь встань на колени перед своей матриархом!)]
 		</p>
 		<p>
-			Although you struggle against them, the harpies prove to be too strong for you, and so after a brief scuffle, you're left with a ballgag firmly fitted into your mouth, a choker fastened around your neck, and a set of revealing, dark purple latex clothing snugly hugging your legs, stomach, and arms. Although your [pc.breasts+] are fully on display, a pair of tape crosses have been stuck over your nipples, and as you reach up to touch them, [harpyDominantCompanion.name] suddenly slaps you and hisses, [harpyDominantCompanion.speech(You're not to move unless ordered to, bitch! Now kneel down before your matriarch!)]
+			Не оставляя тебе выбора, [harpyDominantCompanion.name] силой толкает тебя на колени перед [harpyDominant.name], которая издает жестокий, насмешливый смех и заявляет: [harpyDominant.speech(Так-то лучше! Теперь ты понимаешь свое место, шлюха? На твоем ошейнике написано «послушная игрушка», и именно ей ты и будешь, <i>, иначе</i>!)]
 		</p>
 		<p>
-			Not giving you any choice in the matter, [harpyDominantCompanion.name] forcefully pushes you down before [harpyDominant.name], who lets out a cruel, mocking laugh and declares, [harpyDominant.speech(That's better! Do you understand your place now, slut? That tag on your choker says 'obedient toy', and that's exactly what you'll be, <i>or else</i>!)]
+			С этими последними угрожающими словами матриарх наклоняется и отвешивает тебе звонкую пощечину. Из-за кляпа во рту ты не можешь ответить, и тебе остается лишь преклонить колени и ждать, что же эти гарпии с тобой сделают. Впрочем, ждать долго не приходится: выпрямившись, [harpyDominant.name] выкрикивает: [harpyDominant.speech(Приведите сюда эту шлюху, [harpyDominantVictim.name]! Пора ее наказать!)]
 		</p>
 		<p>
-			With those final, threatening words, the matriarch stoops down to deliver a stinging slap across your face. Unable to respond due to the ballgag in your mouth, you have no other option but to kneel before her and wait to see what it is these harpies will do with you. You're not waiting for long, however, as after straightening up, [harpyDominant.name] calls out, [harpyDominant.speech(Bring that slut, [harpyDominantVictim.name], here! It's time for her punishment!)]
+			Спустя несколько мгновений в зал заводят самку гарпии. С повязкой на глазах и полностью скованная в бондажном снаряжении, она вынуждена ползти на четвереньках. Когда она замирает перед [harpyDominant.name], ты замечаешь, что её грудь и лобок обнажены точно так же, как и твои. Слегка ухмыльнувшись этой несчастной гарпии, матриарх переводит взгляд на тебя и заявляет: [harpyDominant.speech(Эта никчемная сучка наказана за то, что принесла мне не тот напиток, который я просила. Чтобы напомнить ей, какая она тупая пизда, её публично оттрахает такая же никчемная шлюха. Так что давай, сучка, оседлай её! Смотри, шлюха уже вся мокрая и готова!)]
 		</p>
 		<p>
-			A few moments later, a female harpy is led into the area. Blindfolded and bound from head-to-toe in bondage gear, she's forced to crawl forwards on all fours, and as she comes to a halt before [harpyDominant.name], you see that her breasts and groin are exposed in much the same way that yours are. After briefly smirking down at this unfortunate harpy, the matriarch looks over to you and states, [harpyDominant.speech(This worthless bitch is being punished for bringing me the wrong drink that I'd asked for. To remind her of what a dumb cunt she is, she's going to be publicly fucked by an equally-worthless slut. So go on, bitch, mount her! Look, the slut's already wet and ready for it!)]
-		</p>
-		<p>
-			Looking over at [harpyDominantVictim.name], you see that her pussy is indeed already wet, and as she lifts her hips so as to present herself, you realise that you've got very little choice but to do as you're told...
+			Посмотрев на [harpyDominantVictim.name], ты видишь, что её киска и вправду уже влажная, а когда она приподнимает бёдра, подставляясь тебе, ты понимаешь, что у тебя почти нет выбора — приходится делать то, что велят...
 		</p>
 	#ENDIF
     ]]>
@@ -519,29 +521,29 @@
 	
     <htmlContent tag="BAD_END_SEX_VAGINA_START"><![CDATA[
 	<p>
-		Locked in the stocks and unable to do resist, you're powerless to prevent [harpyDominantCompanion.name] from continuing to tease her cock up and down over your [pc.labia+]. Grabbing your [pc.hips+], she teases, [harpyDominantCompanion.speech(Come on, bitch, beg for it! Or would you like to go back to the spanking?)]
+		Зажатый в колодках и неспособный сопротивляться, ты бессилен помешать [harpyDominantCompanion.name], которая продолжает дразняще водить своим членом вверх и вниз по твоему [pc.labia+]. Схватив твой [pc.hips+], она подначивает: [harpyDominantCompanion.speech(Ну же, сучка, умоляй! Или ты хочешь вернуться к порке?)]
 	</p>
 	<p>
-		With your sore ass proving to be a potent reminder of the pain you were just forced to endure, you find yourself opting for the easier choice, and find yourself moaning, [pc.speech(Please, fuck me! No more spankings!)]
+		Твоя садёная задница служит мощным напоминанием о боли, которую тебе только что пришлось вытерпеть, поэтому ты выбираешь путь наименьшего сопротивления и невольно стонешь: [pc.speech(Пожалуйста, трахни меня! Только не порка!)]
 	</p>
 	<p>
-		[harpyDominantCompanion.speech(Good bitch!)] [harpyDominantCompanion.name] triumphantly moans, before thrusting forwards and roughly ramming her [harpyDominantCompanion.cock+] deep into your [pc.pussy+]. Letting out a series of dominant groans, she proceeds to rhythmically fuck you in front of all the other harpies...
+		[harpyDominantCompanion.speech(Хорошая сучка!)] [harpyDominantCompanion.name] торжествующе стонет, прежде чем резко податься вперед и грубо вогнать свою [harpyDominantCompanion.cock+] глубоко в твою [pc.pussy+]. Издавая серию властных стонов, она начинает ритмично трахать тебя на глазах у всех остальных гарпий...
 	</p>
     ]]>
     </htmlContent>
 	
     <htmlContent tag="BAD_END_SEX_PENIS_START"><![CDATA[
 	<p>
-		Before you can make a move, [harpyDominantCompanion.name] aggressively hisses down at you, [harpyDominantCompanion.speech(Either fuck her, or else I'll spend the rest of today making you wish you'd never even heard of harpies!)]
+		Прежде чем ты успеваешь хоть что-то предпринять, [harpyDominantCompanion.name] агрессивно шипит на тебя: [harpyDominantCompanion.speech(Либо трахай её, либо остаток дня я сделаю так, что ты пожалеешь, будто вообще когда-либо слышал о гарпиях!)]
 	</p>
 	<p>
-		With a choice between fucking [harpyDominantVictim.name] or being forced to endure some kind of brutal punishment, you decide to go with the easier of the two options. Shuffling forwards, you clamber up over [harpyDominantVictim.namePos] back, and once you've mounted her, you feel your rapidly-hardening cock prod at her [harpyDominantVictim.labia+].
+		Выбирая между тем, чтобы трахать [harpyDominantVictim.name], или необходимостью терпеть жестокое наказание, ты решаешь выбрать вариант попроще. Переставляя ноги, ты карабкаешься по [harpyDominantVictim.namePos] на спину, и как только ты оседлываешь её, чувствуешь, как твой стремительно твердеющий член упирается в её [harpyDominantVictim.labia+].
 	</p>
 	<p>
-		[harpyDominant.speech(You can put your tongue to work while my pet fucks you,)] [harpyDominant.name] suddenly states, and after quickly exposing her pussy, she roughly pulls [harpyDominantVictim.namePos] face into her groin. Forcing her victim to eat her out, the sadistic matriarch growls down at you, [harpyDominant.speech(What are you waiting for, bitch? Fuck her worthless cunt!)]
+		[harpyDominant.speech(Можешь заняться её языком, пока моя питушка трахает тебя,)] — внезапно заявляет [harpyDominant.name], и, быстро обнажив свою киску, она грубо притягивает [harpyDominantVictim.namePos] лицо к своему паху. Заставляя жертву вылизывать себя, садистичная матриарх рычит на тебя: [harpyDominant.speech(Чего ты ждешь, сучка? Трахни её никчемную щель!)]
 	</p>
 	<p>
-		The matriarch's order, combined with the feeling of [harpyDominantVictim.namePos] wet pussy rubbing against your cock, is too much for you to refuse, and so with a buck of your hips, you thrust your [pc.cock+] into [harpyDominantVictim.namePos] cunt and start fucking her while she eats out [harpyDominant.name]...
+		Приказ матриарха в сочетании с ощущением того, как [harpyDominantVictim.namePos] трет свою влажную киску о твой член, становится слишком соблазнительным, чтобы от него отказываться. Мощным толчком бедер ты вгоняешь свой [pc.cock+] в [harpyDominantVictim.namePos] щель и начинаешь трахать её, пока она ласкает языком твой [harpyDominant.name]...
 	</p>
     ]]>
     </htmlContent>
@@ -549,35 +551,39 @@
     <htmlContent tag="BAD_END_AFTER_SEX"><![CDATA[
 	#IF(pc.hasVagina())
 		<p>
-			Having had her fun, [harpyDominantCompanion.name] pulls her softening cock out of your well-fucked pussy, and after giving your ass one final, stinging slap, she struts off to another part of the nest. A moment later another male harpy approaches you, and without even saying a word, steps around behind you and impatiently shoves her cock into your pussy. As your new partner starts groaning and frantically thrusting her cock in and out of your quivering cunt, [harpyDominantCompanion.name] returns with a very familiar-looking bottle of perfume in her hands.
+		
+		Насладившись, [harpyDominantCompanion.name] вынимает свой обмякший член из твоей изрядно оттраханной киски и, отвесив твоему заду последний звонкий шлепок, вальяжно удаляется в другую часть гнезда. Мгновение спустя к тебе подходит другой самец-гарпия и, не говоря ни слова, обходит тебя сзади и нетерпеливо втискивает свой член в твою киску. Пока твой новый партнер стонет и неистово вгоняет свой член в твою дрожащую щель, [harpyDominantCompanion.name] возвращается с очень знакомым флаконом духов в руках.
 		</p>
 		<p>
-			[harpyDominant.speech(The mind-altering effects of this perfume can wear off after a while, but I've been reliably informed that prolonged exposure to it will make the changes permanent,)] [harpyDominant.name] sneers as she steps up beside [harpyDominantCompanion.name]. Giving her subordinate a nod, she commands, [harpyDominant.speech(Keep on spraying her until she sees herself as nothing more than another one of my bitches.)]
+			[harpyDominant.speech(Действие этих духов может со временем ослабнуть, но мне надежно сообщили, что при длительном воздействии изменения станут необратимыми,)] — усмехается [harpyDominant.name], подходя к [harpyDominantCompanion.name]. Кивнув своей подчиненной, она командует: [harpyDominant.speech(Брызгай на неё, пока она не начнет видеть в себе лишь одну из моих сучек.)]
 		</p>
 		<p>
-			Letting out a cruel laugh, [harpyDominant.name] then struts off, leaving [harpyDominantCompanion.name] to carry out her orders. As your pussy continues to stretch and spasm around the cock that's hammering in and out of it, the matriarch's subordinate delights in repeatedly spraying the perfume bottle's contents directly into your face. With each inhalation, you find yourself getting angrier and angrier, while at the same time coming to think of [harpyDominant.name], [harpyDominantCompanion.name], and all of the other harpies as your superiors.
+		
+		[harpyDominant.name] издает жестокий смешок и вальяжно уходит, оставляя [harpyDominantCompanion.name] выполнять ее приказы. Пока твоя киска продолжает растягиваться и спазмировать вокруг члена, что то и дело вколачивается в нее, подчиненная матриарха с наслаждением раз за разом распыляет содержимое флакона духов прямо тебе в лицо. С каждым вдохом ты чувствуешь, как гнев нарастает, но в то же время ты невольно начинаешь воспринимать [harpyDominant.name], [harpyDominantCompanion.name] и всех остальных гарпий как своих господ.
 		</p>
 		<p>
-			Several bottles of perfume, and multiple sexual partners later, and [harpyDominantCompanion.name] finally releases you from the stocks. Although you want to slap her and scream obscenities directly in her face, you don't dare to displease a harpy who's of a higher social standing than you are. Looking to one side, you see your matriarch, [harpyDominant.name], looking at you with an expression of arrogant amusement on her face. Snapping her fingers, she points to the floor and commands, [harpyDominantCompanion.speech(Kneel down before me, bitch, and tell me who's your matriarch.)]
+		
+		Спустя несколько флаконов духов и множество сексуальных партнеров, [harpyDominantCompanion.name] наконец освобождает тебя от колодок. Хотя тебе так и хочется влепить ей пощечину и наорать всякой похабщины прямо в лицо, ты не смеешь злить гарпию, стоящую выше тебя по социальной лестнице. Посмотрев в сторону, ты видишь свою матриарха, [harpyDominant.name]: на ее лице застыло выражение высокомерного веселья. Щелкнув пальцами, она указывает на пол и командует: [harpyDominantCompanion.speech(Преклони колени передо мной, сучка, и скажи, кто твоя матриарх.)]
 		</p>
 	#ELSE
 		<p>
-			Having had her fun, [harpyDominant.name] kicks [harpyDominantVictim.name] away from her, before looking at you and commanding, [harpyDominant.speech(Get off her, bitch! Your work is done!)]
+		
+		Насладившись, [harpyDominant.name] отпихивает [harpyDominantVictim.name], после чего переводит взгляд на тебя и приказывает: [harpyDominant.speech( Слезай с нее, сучка! Твоя работа окончена!)]
 		</p>
 		<p>
-			Sliding your cock out of [harpyDominantVictim.namePos] quivering pussy, you decide that the only option for you right now is to play the obedient pet, and so dutifully kneel down and await further orders. You don't have to wait long for your next command, as the matriarch snaps her fingers and exclaims, [harpyDominant.speech(Lie on your back, bitch! [harpyDominantVictim.Name], if you can swallow five of her loads, then your punishment is over.)]
+			Вынимая свой член из дрожащей киски [harpyDominantVictim.namePos], ты решаешь, что единственный вариант для тебя сейчас — это прикинуться послушным питомцем, и послушно опускаешься на колени в ожидании дальнейших приказов. Ждать долго не приходится: матриарх щелкает пальцами и восклицает: [harpyDominant.speech(Ложись на спину, сучка! [harpyDominantVictim.Name], если сможешь проглотить пять её порций, тогда твоё наказание будет окончено.)]
 		</p>
 		<p>
-			As you do as you're told and lie on your back, [harpyDominantVictim.name] frantically pounces on you, and within a moment, she's got your cock in her mouth. Doing her best to give you the best blowjob she can, [harpyDominantVictim.name] keeps you pinned to the floor and as you see [harpyDominantCompanion.name] approaching with a very familiar-looking bottle of perfume in her hands.
+			Когда ты послушно ложишься на спину, [harpyDominantVictim.name] неистово набрасывается на тебя, и мгновение спустя твой член уже у неё во рту. Стараясь выдать тебе лучший минет, на который она способна, [harpyDominantVictim.name] прижимает тебя к полу, а ты замечаешь приближающуюся [harpyDominantCompanion.name] с очень знакомым флаконом духов в руках.
 		</p>
 		<p>
-			[harpyDominant.speech(The mind-altering effects of this perfume can wear off after a while, but I've been reliably informed that prolonged exposure to it will make the changes permanent,)] [harpyDominant.name] sneers as she steps up beside [harpyDominantCompanion.name]. Giving her subordinate a nod, she commands, [harpyDominant.speech(Keep on spraying her until she sees herself as nothing more than another one of my bitches.)]
+			[harpyDominant.speech(Действие этих духов может со временем ослабнуть, но мне надежно сообщили, что при длительном воздействии изменения станут необратимыми,)] — усмехается [harpyDominant.name], подходя к [harpyDominantCompanion.name]. Кивнув своей подчиненной, она командует: [harpyDominant.speech(Брызгай на неё, пока она не начнет видеть в себе лишь одну из моих сучек.)]
 		</p>
 		<p>
-			Letting out a cruel laugh, [harpyDominant.name] then struts off, leaving [harpyDominantCompanion.name] to carry out her orders. As [harpyDominantVictim.namePos] lips slide up and down around your cock, the matriarch's subordinate delights in repeatedly spraying the perfume bottle's contents directly into your face. With each inhalation, you find yourself getting angrier and angrier, while at the same time coming to think of [harpyDominant.name], [harpyDominantCompanion.name], and all of the other harpies as your superiors.
+			Издав жестокий смешок, [harpyDominant.name] вальяжно уходит, оставляя [harpyDominantCompanion.name] исполнять её приказы. Пока губы [harpyDominantVictim.namePos] скользят вверх и вниз по твоему члену, подчиненная матриарха с наслаждением раз за разом брызгает содержимым флакона прямо тебе в лицо. С каждым вдохом ты чувствуешь, как гнев нарастает, но в то же время ты всё больше начинаешь воспринимать [harpyDominant.name], [harpyDominantCompanion.name] и всех остальных гарпий как своих господ.
 		</p>
 		<p>
-			Several bottles of perfume, and multiple orgasms later, and [harpyDominantVictim.name] is finally pulled off of you by [harpyDominantCompanion.name]. Although you want to slap her and scream obscenities directly in her face, you don't dare to displease a harpy who's of a higher social standing than you are. Looking to one side, you see your matriarch, [harpyDominant.name], looking at you with an expression of arrogant amusement on her face. Snapping her fingers, she points to the floor and commands, [harpyDominantCompanion.speech(Kneel down before me, bitch, and tell me who's your matriarch.)]
+			Несколько флаконов духов и множество оргазмов спустя, [harpyDominantCompanion.name] наконец отрывает от тебя [harpyDominantVictim.name]. Хотя тебе так и хочется влепить ей пощечину и накричать всякой гадости прямо в лицо, ты не смеешь перечить гарпии, стоящей выше тебя по социальной лестнице. Посмотрев в сторону, ты видишь свою матриарха, [harpyDominant.name]: на её лице застыло выражение высокомерного веселья. Щелкнув пальцами, она указывает на пол и командует: [harpyDominantCompanion.speech(Преклони колени предо мной, сучка, и скажи, кто твоя матриарх.)]
 		</p>
 	#ENDIF
     ]]>
@@ -585,40 +591,41 @@
 	
     <htmlContent tag="BAD_END_FINAL"><![CDATA[
 	<p>
-		Obediently kneeling down before her, you declare, [pc.speech(You're my matriarch, [harpyDominant.name]... I'll do whatever you command...)]
+		Покорно опустившись перед ней на колени, ты заявляешь: [pc.speech(Вы моя матриарх, [harpyDominant.name]... Я сделаю всё, что прикажете...)]
 	</p>
 	<p style='text-align:center;'>
 		...
 	</p>
 	#IF(pc.hasVagina())
 		<p>
-			Months later, [harpyDominantCompanion.name] is pinning you to the floor as she thrusts her cock in and out of your pussy. Well and truly established as a harpy at the bottom of the nest's female hierarchy, you're often used like this, and more often than not it's [harpyDominantCompanion.name] who's the one to be enjoying your cunt. Soon enough, she's letting out a series of desperate moans, and then a moment later you feel her hot cum filling your pussy.
+			Спустя месяцы, [harpyDominantCompanion.name] прижимает тебя к полу, вколачивая свой член в твою киску. Ты окончательно закрепилась в самом низу женской иерархии гнезда, и тебя часто используют вот так, причем чаще всего именно [harpyDominantCompanion.name] наслаждается твоей щелью. Вскоре она издает серию отчаянных стонов, а мгновение спустя ты чувствуешь, как её горячая сперма наполняет твою киску.
 		</p>
 		<p>
 			#IF(game.isAnalContentEnabled())
-				[harpyDominantCompanion.speech(Next time I'm using your ass, bitch!)]
+				[harpyDominantCompanion.speech(В следующий раз я возьму твою задницу, сучка!)]
 			#ELSE
-				[harpyDominantCompanion.speech(Next time I'm using your mouth, bitch!)]
+				[harpyDominantCompanion.speech(В следующий раз я возьму твой рот, сучка!)]
 			#ENDIF
-			 the harpy sneers, before slapping you across the face and strutting off to another part of the nest.
+			 гарпия усмехается, прежде чем влепить тебе пощечину и вальяжно удалиться в другую часть гнезда.
 		</p>
 		<p>
-			As you watch [harpyDominantCompanion.name] depart, you furiously summon a nearby male harpy to your side; she's one of a few who are actually beneath you in the flock's pecking order. Taking out your frustrations on her, you sadistically slap her ass before forcing her to clean your pussy, muttering under your breath that one day you'll be above [harpyDominantCompanion.name], and then she'll pay...
+			Наблюдая за тем, как уходит [harpyDominantCompanion.name], ты в ярости призываешь к себе ближайшую гарпию-самку; она одна из немногих, кто действительно стоит ниже тебя в стайной иерархии. Вымещая на ней свое разочарование, ты садистически шлепаешь её по заднице, а затем заставляешь вылизывать твою киску, бормоча под нос, что однажды ты возвысишься над [harpyDominantCompanion.name], и тогда она заплатит...
 		</p>
 	#ELSE
 		<p>
-			Months later, [harpyDominant.name] is once again using you to punish a disobedient harpy. Well and truly established as a harpy at the bottom of the nest's male hierarchy, you're exclusively used by [harpyDominant.name] to punish those who have displeased her, a job which you've grown to love.
+		
+Спустя месяцы [harpyDominant.name] снова использует тебя, чтобы наказать непослушную гарпию. Окончательно закрепившись в самом низу мужской иерархии гнезда, ты становишься личной инструментом [harpyDominant.name] для наказания тех, кто ей перечит — и эта работа тебе по душе.
 		</p>
 		<p>
-			You mount the disobedient harpy and pin her to the floor, before roughly forcing your cock into her wet pussy and energetically pounding her cunt. Soon enough, you're finishing inside of her, and after giving her ass a rough slap, you're recalled to your matriarch's side, ready to do it all again to the next harpy unfortunate enough to displease [harpyDominant.name]...
+			Ты оседлываешь непослушную гарпию и прижимаешь её к полу, после чего грубо вгоняешь свой член в её мокрую киску и начинаешь энергично вколачивать его в её щель. Вскоре ты кончаешь ей внутрь, и, отвесив ей звонкий шлепок по заднице, отправляешься обратно к своей матриарху, готовая повторить всё это с очередной гарпией, которой не повезло разозлить [harpyDominant.name]...
 		</p>
 	#ENDIF
 	<p style='text-align:center;'>
 		...
 	</p>
 	<p><i>
-		With your mind having been permanently changed by being subjected to such a huge quantity of transformative perfume, you never once think of trying to escape from [harpyDominant.namePos] nest. Even if you did somehow become aware of what had happened, you're far too angry to listen to reason, and can't see yourself as anything more than one of [harpyDominant.namePos] bitches...
-	</i></p>
+		Твой разум безвозвратно изменился под воздействием огромного количества трансформирующего парфюма, поэтому ты ни разу не задумываешься о побеге из гнезда [harpyDominant.namePos]. Даже если бы ты каким-то образом осознала случившееся, ты слишком разгневана, чтобы слушать доводы разума, и не видишь себя кем-то большим, чем одна из сук [harpyDominant.namePos]...
+		</i></p>
     ]]>
     </htmlContent>
 	

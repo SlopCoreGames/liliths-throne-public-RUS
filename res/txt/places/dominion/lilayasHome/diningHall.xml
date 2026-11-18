@@ -5,100 +5,98 @@
 	
 	<htmlContent tag="ROOM_DINING_HALL_ORDER_MEAL"><![CDATA[
 	<p>
-		Feeling a little hungry, you decide to make use of this dining hall and get something to eat.
+		Почувствовав легкий голод, ты решаешь воспользоваться обеденным залом и перекусить.
 		#IF(pc.isTaur())
-			 Having had taur-compatible chairs placed around the long, wooden table in the centre of the room, you [pc.step] over to one of them and sit down.
+			 Вокруг длинного деревянного стола в центре комнаты расставлены стулья, подходящие для тауров. Ты [pc.step] к одному из них и садишься.
 		#ELSE
-			 [pc.Stepping] around to the head of the long, wooden table in the centre of the room, you allow [npc.name] to dutifully pull the chair out for you, before taking a seat.
+			 [pc.Stepping] к главе длинного деревянного стола в центре комнаты; ты позволяешь [npc.name] послушно отодвинуть для тебя стул, прежде чем занять свое место.
 		#ENDIF
 	</p>
 	<p>
-		Knowing that there are enough ingredients in the kitchen for your slaves to make anything you desire, you wonder what to order... 
+		Зная, что на кухне достаточно ингредиентов, чтобы твои рабы приготовили всё, что пожелаешь, ты раздумываешь, что бы такое заказать... 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL"><![CDATA[
 	<p>
-		Calling [npc.name] over to your side, you tell [npc.herHim] that [npc.she]'ll be acting as your
+		Призвав [npc.name] к себе, ты сообщаешь [npc.herHim], что [npc.she] будет твоей
 		#IF(npc.isFeminine())
-			 waitress,
+			 официанткой,
 		#ELSE
-			 waiter,
+			 официантом,
 		#ENDIF
-		before informing [npc.herHim] of what you want to eat.
+		прежде чем продиктовать [npc.herHim], что именно ты хочешь съесть.
 		#IF(npc.getObedienceBasic()==OBEDIENCE_BASIC_DISOBEDIENT && npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-			 Although [npc.she] insolently tells you how much [npc.she] hates doing this sort of work, [npc.she] has no choice but to take your order. Scowling at you as [npc.she] departs, #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF hurries off to the kitchen to relay your choice to the chef.
+			 Хотя [npc.she] дерзко заявляет, как сильно [npc.she] ненавидит подобную работу, у [npc.she] нет иного выбора, кроме как принять твой заказ. Сквозь зубы глядя на тебя, пока [npc.she] уходит, #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF hurries off to the kitchen to relay your choice to the chef.
 		#ELSE
-			 After taking your order, #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF hurries off to the kitchen to relay your choice to the chef.
+			 Приняв твой заказ, #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF hurries off to the kitchen to relay your choice to the chef.
 		#ENDIF
 	</p>
 	<p>
-		Although your meal is freshly prepared for you, the top-of-the-range arcane ovens which are installed in the kitchen allow your selected dish to be ready within ten minutes. Bringing you your food on a silver platter, [npc.name] places it before you, and then after pouring you a drink [npc.she] [npc.steps] back and waits while you tuck in.
+		Хотя твою еду готовят специально для тебя, благодаря первоклассным арканальным печам, установленным на кухне, выбранное блюдо оказывается готовым всего через десять минут. Подавая еду на серебряном подносе, [npc.name] ставит её перед тобой, а затем, налив тебе напиток, [npc.she] [npc.steps] обратно и замирает в ожидании, пока ты уплетаешь трапезу.
 	</p>
 	<p>
-		Soon enough you've finished every last bite, and as [npc.name] clears the dishes away, you wonder whether to order some 'dessert' from [npc.herHim]...
+		Вскоре ты доедаешь всё до последней крошки, и пока [npc.name] убирает посуду, ты задумываешься, не заказать ли тебе «десерт» у [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL_DESSERT_COCK"><![CDATA[
 	<p>
-		Starting to feel a different sort of hunger, you reach across to give [npc.namePos] groin a grope as [npc.she] leans forwards to pick up your plate. Smirking as you feel [npc.her] shaft twitch in response to your touch, you tell #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] cock into a dessert for you to enjoy.
+		Почувствовав иной вид голода, ты тянешься, чтобы ощупать пах [npc.namePos], пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехаясь от того, что чувствуешь, как член [npc.her] дергается в ответ на твои прикосновения, ты говоришь: #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] cock into a dessert for you to enjoy.
 	</p>
 	<p>
-		Doing as [npc.sheIs] told, [npc.name] picks up your plate and hurries away to the kitchen. A short while later [npc.she] returns, and you lick your [pc.lips] in anticipation as you see that [npc.her] cock is covered in whipped cream, [style.random(chocolate|caramel|strawberry)] sauce, and [style.random(sprinkles|has a cherry perched on top)].
+		Сделав всё, как велела [npc.sheIs], [npc.name] забирает твою тарелку и спешит на кухню. Спустя короткое время [npc.she] возвращается, и ты предвкушающе облизываешь свои [pc.lips], видя, что член [npc.her] покрыт взбитыми сливками, [style.random(шоколадным|карамельным|клубничным)] соусом и [style.random(посыпкой|с вишенкой сверху)].
 	</p>
 	<p>
 		#IF(npc.isTaur())
-			[npc.Stepping] over to stand beside you, [npc.name] lifts [npc.her] hind leg so as to present you with [npc.her] cream-covered cock.
-		#ELSE
-			Sitting down on the table before you, [npc.name] spreads [npc.her] [npc.legs+] and presents you with [npc.her] cream-covered cock.
-		#ENDIF
-		 Unable to resist, you slowly lick the sweet, sugary coating off of [npc.her] hard shaft. Soon enough, you're wrapping your [pc.lips+] around [npc.her] [npc.cock+] and [pc.moaning] in delight as you give [npc.herHim] a blowjob...
+[npc.Stepping] подходит к тебе и встаёт рядом, [npc.name] поднимает [npc.her] заднюю ногу, демонстрируя тебе свой покрытый [npc.her] кремом член.		#ELSE
+Усевшись перед тобой за стол, [npc.name] расстилает [npc.her] [npc.legs+] и подносит тебе [npc.her] покрытый сливками член.		#ENDIF
+		Не в силах устоять, ты медленно слизываешь сладкую сахарную глазурь с твердого [npc.her] члена. Вскоре ты уже с наслаждением обхватываешь [pc.lips+] своими [npc.her] [npc.cock+] и [pc.moaning], делая [npc.herHim] минет...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL_DESSERT_PUSSY"><![CDATA[
 	<p>
-		Starting to feel a different sort of hunger, you reach across to give [npc.namePos] groin a grope as [npc.she] leans forwards to pick up your plate. Smirking as [npc.she] lets out a surprised gasp, you tell #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] pussy into a dessert for you to enjoy.
+		Почувствовав иной вид голода, ты тянешься вперед, чтобы ощупать пах [npc.namePos], пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехнувшись, когда [npc.she] издает удивленный вздох, ты говоришь: #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] pussy into a dessert for you to enjoy.
 	</p>
 	<p>
-		Doing as [npc.sheIs] told, [npc.name] picks up your plate and hurries away to the kitchen. A short while later [npc.she] returns, and you lick your [pc.lips] in anticipation as you see that [npc.her] [npc.pussy] is covered in whipped cream, [style.random(chocolate|caramel|strawberry)] sauce, and [style.random(sprinkles|has a cherry perched on top)].
+		Сделав так, как велела [npc.sheIs], [npc.name] забирает твою тарелку и спешит на кухню. Спустя короткое время [npc.she] возвращается, и ты предвкушающе облизываешь свои [pc.lips], видя, что [npc.her] [npc.pussy] покрыта взбитыми сливками, [style.random(шоколадным|карамельным|клубничным)] соусом и [style.random(посыпкой|вишенкой сверху)].
 	</p>
 	<p>
 		#IF(npc.isTaur())
-			[npc.Stepping] over to stand in front of you, [npc.name] turns around and backs up so as to present you with [npc.her] cream-covered cunt.
+			[npc.Stepping] подходит к тебе, [npc.name] поворачивается спиной и отступает, подставляя тебе свою покрытую сливками [npc.her] киску.
 		#ELSE
-			Sitting down on the table before you, [npc.name] spreads [npc.her] [npc.legs+] and presents you with [npc.her] cream-covered cunt.
+			Усевшись перед тобой на стол, [npc.name] раздвигает свои [npc.her] [npc.legs+], демонстрируя тебе свою покрытую сливками [npc.her] киску.
 		#ENDIF
-		 Unable to resist, you slowly lick the sweet, sugary coating off of [npc.her] [npc.labia+]. Soon enough, you're pressing your [pc.lips+] against [npc.her] [npc.pussy+] and [pc.moaning] in delight as you eat [npc.herHim] out...
+		Не в силах устоять, ты медленно слизываешь сладкую сахарную глазурь с [npc.her] [npc.labia+]. Вскоре ты уже с наслаждением прижимаешь свои [pc.lips+] к [npc.her] [npc.pussy+] и [pc.moaning], лаская языком [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL_DESSERT_ASS"><![CDATA[
 	<p>
-		Starting to feel a different sort of hunger, you reach across to give [npc.namePos] ass a slap as [npc.she] leans forwards to pick up your plate. Smirking as [npc.she] lets out a surprised gasp, you tell #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] butt into a dessert for you to enjoy.
+		Почувствовав иной вид голода, ты тянешься вперед, чтобы шлепнуть [npc.namePos] по заднице, пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехнувшись, когда [npc.she] издает удивленный вздох, ты говоришь: #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] butt into a dessert for you to enjoy.
 	</p>
 	<p>
-		Doing as [npc.sheIs] told, [npc.name] picks up your plate and hurries away to the kitchen. A short while later [npc.she] returns, and you lick your [pc.lips] in anticipation as you see that [npc.her] rear end is covered in whipped cream, [style.random(chocolate|caramel|strawberry)] sauce, and [style.random(sprinkles|has a cherry perched on top)].
+		Сделав всё, как велела [npc.sheIs], [npc.name] забирает твою тарелку и спешит на кухню. Спустя короткое время [npc.she] возвращается, и ты предвкушающе облизываешь свои [pc.lips], видя, что задница [npc.her] покрыта взбитыми сливками, [style.random(шоколадным|карамельным|клубничным)] соусом и [style.random(посыпкой|с вишенкой сверху)].
 	</p>
 	<p>
 		#IF(npc.isTaur())
-			[npc.Stepping] over to stand in front of you, [npc.name] turns around and backs up so as to present you with [npc.her] cream-covered ass.
+			[npc.Stepping] подходит к тебе, [npc.name] поворачивается спиной и отступает, подставляя тебе свою покрытую сливками [npc.her].
 		#ELSE
-			Lying down face-first on the table before you, [npc.name] lifts [npc.her] [npc.hips+] and presents you with [npc.her] cream-covered ass.
+			Лежа лицом вниз на столе прямо перед тобой, [npc.name] приподнимает [npc.her] [npc.hips+], демонстрируя тебе свою покрытую сливками [npc.her].
 		#ENDIF
-		 Unable to resist, you slowly lick the sweet, sugary coating off of [npc.her] [npc.ass+]. Soon enough, you're pressing your [pc.lips+] against [npc.her] [npc.asshole+] and [pc.moaning] in delight as you perform anilingus on [npc.herHim]...
+			Не в силах устоять, ты медленно слизываешь сладкую сахарную глазурь с [npc.her] [npc.ass+]. Вскоре ты уже в восторге прижимаешься своими [pc.lips+] к [npc.her] [npc.asshole+] и [pc.moaning], лаская языком анус [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_DINING_HALL_AFTER_SEX"><![CDATA[
 	<p>
-		Having enjoyed your dessert, you stand up and get your things back in order. As [npc.name] returns to [npc.her] place at the edge of the room, you look around and wonder what to do next...
+		Насладившись десертом, ты встаешь и приводишь свои вещи в порядок. Пока [npc.name] возвращается на свое [npc.her] место в углу комнаты, ты оглядываешься по сторонам, раздумывая, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>

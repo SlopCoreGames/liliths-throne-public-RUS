@@ -5,14 +5,14 @@
 	
 	<htmlContent tag="HOTEL_TRAVEL_TO_NEST"><![CDATA[
 	<p>
-		Now that you're aware of the fact that there's an elevator linking 'The Golden Feather' hotel to Helena's nest up above, you head inside and make your way across the opulent foyer to where the lift is located. The harpy who's standing on duty beside the elevator doors looks you over as you approach, and after you've told her that you're an intimate acquaintance of Helena's, she respectfully curtsies and says, [style.speechFeminine(Please, [pc.sir], allow me to call the elevator for you.)]
+		Теперь, когда ты знаешь, что отель «Золотое перо» соединен лифтом с гнездом Helena наверху, ты заходишь внутрь и идешь через роскошное фойе к лифту. Гарпия, дежурящая у дверей лифта, окидывает тебя взглядом, когда ты приближаешься, но после того, как ты говоришь ей, что являешься близким знакомым Helena, она почтительно кланяется и произносит: [style.speechFeminine(Позвольте, [pc.sir], я вызову для вас лифт.)]
 	</p>
 	<p>
-		Doing as the harpy says, you watch as she presses the button to call for the lift, before stepping aside and curtsying towards you once again. A few moments and a lot of mechanical whirring later, the doors automatically slide open with a ping, allowing you to step inside the elevator and press the button marked for the roof. After a short ride up,
+		Послушавшись гарпию, ты наблюдаешь, как она нажимает кнопку, после чего снова отступает в сторону и кланяется тебе. Спустя несколько мгновений и после долгого механического жужжания двери с мелодичным звоном разъезжаются, позволяя тебе войти в лифт и нажать кнопку верхнего этажа. После короткой поездки вверх,
 		#IF(pc.hasCompanions())
-			 you and [com.name] soon find yourselves [pc.stepping] out into Helena's nest once again...
+			 ты и [com.name] вскоре оказываетесь [pc.stepping] в гнезде Helena...
 		#ELSE
-			 you [pc.step] soon find yourself [pc.stepping] out into Helena's nest once again...
+			 ты, [pc.step], вскоре оказываешься [pc.stepping] в гнезде Helena...
 		#ENDIF
 	</p>
 	]]>
@@ -23,17 +23,17 @@
 	
 	<htmlContent tag="HOTEL_TRAVEL_TO_DOMINION"><![CDATA[
 	<p>
-		Now that you're aware of the fact that there's an elevator linking Helena's nest to 'The Golden Feather' hotel below, you head over to the small building in which it's located, before pushing open the door and [pc.stepping] inside. The harpy who's on duty behind the nearby desk looks you over as you enter, and after you've informed her that you're an intimate acquaintance of Helena's, she gestures towards the elevator doors on the other side of the room and says, [style.speechFeminine(Please, [pc.sir], go right ahead.)]
+		Теперь, зная, что лифт связывает гнездо Helena с отелем «Золотое перо» внизу, ты направляешься к небольшому зданию, где он расположен, толкаешь дверь и [pc.stepping] внутрь. Гарпия, дежурящая за стойкой, осматривает тебя при входе, но когда ты сообщаешь ей, что ты близкий знакомый Helena, она указывает на двери лифта в другом конце зала и говорит: [style.speechFeminine(Пожалуйста, [pc.sir], проходите.)]
 	</p>
 	<p>
-		Doing as the harpy says, you [pc.step] over to the doors and press the button to call for the lift. A few moments and a lot of mechanical whirring later, the doors automatically slide open with a ping, allowing you to step inside the elevator and press the button marked for the ground floor.
+		Сделав всё, как велела гарпия, ты [pc.step] к дверям и нажимаешь на кнопку вызова лифта. Спустя несколько мгновений и после долгого механического жужжания двери с мелодичным звоном разъезжаются, позволяя тебе войти в кабину и нажать кнопку первого этажа.
 	</p>
 	<p>
-		After a short ride down and a brief journey across the hotel's opulent foyer,
+		Спустившись вниз и пересекши роскошное фойе отеля,
 		#IF(pc.hasCompanions())
-			 you and [com.name] [pc.step] out through the grand entrance to once again find yourselves in the streets of Dominion...
+			 ты и [com.name] [pc.step] выходишь через парадный вход, чтобы вновь оказаться на улицах Dominion...
 		#ELSE
-			 you [pc.step] out through the grand entrance to once again find yourself in the streets of Dominion...
+			 ты [pc.step] выходишь через парадный вход, чтобы вновь оказаться на улицах Dominion...
 		#ENDIF
 	</p>
 	]]>

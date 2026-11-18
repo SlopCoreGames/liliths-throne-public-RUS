@@ -5,43 +5,43 @@
 
 	<htmlContent tag="ROOM_ARTHUR_INSTALLATION"><![CDATA[
 	<p>
-		Sensing that Lilaya's temper is about to flare up again, you quickly head over to the door which leads into the adjacent storeroom. Sure enough, by the time you've made your way across the lab, you hear Lilaya's voice raise into shouts and screams again. Finding yourself glad to not be in Arthur's position right now, you open the door and [pc.step] into the room beyond, where you find Rose waiting for you.
+		Чувствуя, что Lilaya вот-вот снова взорвется от гнева, ты поспешно направляешься к двери, ведущей в соседнюю кладовую. И действительно, пока ты пересекаешь лабораторию, ты снова слышишь, как голос Lilaya переходит на крики и вопли. Радуясь, что сейчас ты не на месте Arthur, ты открываешь дверь и [pc.step] в комнату, где тебя уже ждет Rose.
 	</p>
 	<p>
-		[rose.speech(Good [style.morning], [pc.name],)] the cat-girl maid says as she performs a curtsy. Gesturing to the stacks of cardboard boxes which fill this storeroom, she continue, [rose.speech(With your help, I should be able to get all of this cleared in no time. There's another storeroom a short distance down the hallway. We can move these boxes to there. Please grab one and follow me.)] 
+		[rose.speech(Добрый [style.morning], [pc.name],)] — говорит кошкодевочка-горничная, отвешивая реверанс. Указывая на горы картонных коробок, заполнивших кладовую, она продолжает: [rose.speech(С твоей помощью я смогу быстро всё это разобрать. Чуть дальше по коридору есть еще одна кладовая. Мы можем перенести коробки туда. Пожалуйста, возьми одну и иди за мной.)] 
 	</p>
 	<p>
-		Doing as she says, you grab a box and follow Rose as she proceeds to lead you through another door and out into the ground floor's circular hallway. A short way down this hallway, you find yourself being led into a storage cupboard, in which Rose instructs you to place your box in the far corner. Over the next half an hour the two of you repeat this process several dozen more times, until finally only a bed, a couple of wardrobes, and the equipment that Arthur will need to carry out his experiments is left in the now-spacious storeroom. 
+		Сделав, как она просит, ты берешь коробку и следуешь за Rose; она ведет тебя через другую дверь в круглый коридор первого этажа. Пройдя немного по коридору, вы заходите в небольшой шкаф для хранения, где Rose велит тебе поставить коробку в дальний угол. В течение следующего получаса вы повторяете этот процесс еще несколько десятков раз, пока, наконец, в просторной теперь кладовой не остаются лишь кровать, пара гардеробов и оборудование, которое понадобится Arthur для его экспериментов.
 	</p>
 	<p>
-		[rose.speech(All that's left is for me to quickly dust this room,)] Rose says as your task comes to an end.
+		[rose.speech(Осталось только быстро протереть здесь пыль,)] — говорит Rose, когда ваша работа подходит к концу.
 	</p>
 	<p>
-		Leaving the cat-girl maid to her duty, you return to the lab to tell Arthur that his room is ready. Catching him on the receiving end of yet another of Lilaya's lectures, you have to wait until your demonic [lilaya.relation(pc)] is finished before giving him the good news. Placing her hands on her hips as she hears that Arthur's room is ready, Lilaya tuts, [lilaya.speech(It really is a great inconvenience to have to let you stay here, Arthur. Then again, I suppose that we can't afford for you to go missing again until we've found a way to help [pc.name]. Just try not to make too much noise in there while I'm working.)]
+		Оставив кошкодевушку-горничную при исполнении обязанностей, ты возвращаешься в лабораторию, чтобы сообщить Arthur, что его комната готова. Застав его слушающим очередную лекцию Lilaya, тебе приходится ждать, пока твоя демоническая [lilaya.relation(pc)] закончит говорить, прежде чем преподнести добрую весть. Услышав, что комната Arthur готова, Lilaya упирает руки в бока и цокает языком: [lilaya.speech(Это действительно создает массу неудобств — тебе приходится оставаться здесь, Arthur. С другой стороны, полагаю, мы не можем позволить тебе снова пропасть, пока не найдем способ помочь [pc.name]. Только постарайся не слишком шуметь там, пока я работаю.)]
 	</p>
 	<p>
-		With that, Lilaya dismisses the two of you with a wave of her hand, and so Arthur, with a very relieved look on his face, hurries to follow you into his newly-prepared room. As you enter, you see that Rose has already finished dusting, and after curtsying towards you, she addresses Arthur, [rose.speech(Your room is ready, sir. If there's anything you need, please use the bell-pull to call for me.)]
+		С этими словами Lilaya взмахом руки отпускает вас обоих, и Arthur с явным облегчением на лице спешит следовать за тобой в свою новую комнату. Войдя внутрь, ты замечаешь, что Rose уже закончила вытирать пыль; отвесив тебе реверанс, она обращается к Arthur: [rose.speech(Ваша комната готова, господин. Если вам что-нибудь понадобится, пожалуйста, дерните за колокольчик, чтобы позвать меня.)]
 	</p>
 	<p>
-		With that, Rose exits the room, leaving you alone with Arthur. He lets out a deep sigh as he walks over to sit on his new bed, before looking up at you and smiling. [arthur.speech(I don't think I've said it properly yet, so thank you [pc.name], for rescuing me.)]
+		После этого Rose выходит из комнаты, оставляя тебя наедине с Arthur. Он тяжело вздыхает, подходит к своей новой кровати и садится, а затем поднимает на тебя взгляд и улыбается. [arthur.speech(Кажется, я еще не говорил этого как следует, так что спасибо тебе, [pc.name], за то, что спасла меня.)]
 	</p>
 	<p>
-		[pc.speech(You're welcome,)] you reply. [pc.speech(So do you think you can figure out how I was transported into your world? Lilaya told me that you're the best arcane researcher out there...)]
+		[pc.speech(Не за что,)] — отвечаешь ты. [pc.speech(Так ты думаешь, что сможешь понять, как меня перенесло в твой мир? Lilaya говорила, что ты лучший исследователь Арканы из всех известных...)]
 	</p>
 	<p>
-		[arthur.speech(Lilaya said that, huh?)] Arthur says, leaning back and smiling. [arthur.speech(Well, I do have a certain theory, but when I told Lilaya about it, she wasn't too convinced. Considering my position, I don't really have a choice but to perform the experiments and research that she asks for, but I'm absolutely convinced that they'll get us no closer to unravelling your mystery. What I'd really like to do is get to talk to someone about my theory...)]
+		[arthur.speech(Значит, Lilaya так сказала, да?)] — говорит Arthur, откидываясь на спинку кресла с улыбкой. [arthur.speech(Ну, у меня есть одна теория, но когда я поделился ею с Lilaya, она не слишком в неё поверила. Учитывая моё положение, у меня нет иного выбора, кроме как проводить эксперименты и исследования, о которых она просит, но я абсолютно убежден, что они лишь отдаляют нас от разгадки твоей тайны. На самом деле мне бы очень хотелось обсудить свою теорию с кем-нибудь...)]
 	</p>
 	<p>
-		[pc.speech(You could talk to me about it,)] you offer.
+		[pc.speech(Ты можешь обсудить её со мной,)] — предлагаешь ты.
 	</p>
 	<p>
-		[arthur.speech(Ah, well, thank you, but I wouldn't want to worry you, in case I turn out to be wrong,)] Arthur stammers, before quickly continuing, [arthur.speech(What I really meant is that I'd like to talk to someone who would be able to confirm or deny my theory absolutely. Someone with more understanding of the arcane than anyone you'd ever find wandering around in Dominion. Someone like a Lilin. But not just any Lilin; it needs to be one of the seven elders.)]
+		[arthur.speech(Ах, ну, спасибо, но я не хотел бы тебя беспокоить на случай, если окажусь неправ,)] — запинаясь, произносит Arthur, но тут же продолжает: [arthur.speech(Я имел в виду, что хотел бы поговорить с кем-то, кто сможет окончательно подтвердить или опровергнуть мою теорию. С кем-то, кто понимает в Аркане куда больше, чем любой встречный в Dominion. С кем-то вроде лилин. Но не просто какой-нибудь лилин; это должна быть одна из семи старейшин.)]
 	</p>
 	<p>
-		[pc.speech(An elder Lilin? Lilaya's mother wouldn't happen to be one of those, would she?)] you offer, remembering that Rose once told you that Lilaya's mother was the Lilin Lyssieth.
+		[pc.speech(Старейшина лилин? Мать Lilaya случайно не одна из них?)] — спрашиваешь ты, вспоминая, как Rose когда-то говорила, что матерью Lilaya является лилин Lyssieth.
 	</p>
 	<p>
-		[arthur.speech(Not only is she an elder Lilin, but she's the very one who told me such a thing existed in the first place! It'd be near-impossible to get any other Lilin to talk with me, but I know Lyssieth will...)] Arthur explains, before suddenly blurting out, [arthur.speech(B-But please, <i>please</i> don't tell Lilaya that I'm looking to speak with her mother...)]
+		[arthur.speech(Она не просто старшая лилин, она та самая, кто вообще рассказал мне о существовании такого! Другую лилин почти невозможно заставить со мной заговорить, но я знаю, что Lyssieth...)] — объясняет Arthur, прежде чем внезапно выпалить: [arthur.speech(Н-но, пожалуйста, <i>пожалуйста</i>, не говори Lilaya, что я хочу поговорить с её матерью...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -51,40 +51,40 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_INSTALLATION_AGREE_TO_CONVINCE_LYSSIETH"><![CDATA[
 	<p> 
-		[pc.speech(Ok, I'll find Lyssieth and see if I can convince her to meet with you,)] you say, [pc.speech(but if I'm to keep this from Lilaya, I'll need to know why.)] 
+		[pc.speech(Ладно, я найду Lyssieth и попробую убедить её встретиться с тобой,] — говоришь ты, — [pc.speech(но если мне нужно держать это в секрете от Lilaya, то мне нужно знать почему.)] 
 	</p> 
 	<p>
-		Arthur smiles happily as he hears that you're willing to help, but as you demand an explanation, he lets out a heavy sigh, [arthur.speech(That's fair enough, I suppose. I'd have to explain the whole situation to you anyway, as it's the reason why Lyssieth isn't exactly easy to get hold of these days.)] 
+		Arthur счастливо улыбается, услышав, что ты готов помочь, но когда ты требуешь объяснений, он тяжело вздыхает: [arthur.speech(Справедливо, пожалуй. Мне всё равно пришлось бы объяснить тебе всю ситуацию, ведь именно из-за неё Lyssieth в наши дни не так-то просто поймать.)] 
 	</p> 
 	<p>
-		[pc.speech(Is this related to Lilaya's accusations which I witnessed earlier?)] 
+		[pc.speech(Это как-то связано с обвинениями Lilaya, свидетелем которых я стал ранее?)] 
 	</p> 
 	<p> 
-		[arthur.speech(Yes... You see, as I'm sure you already know, Lilaya and I used to work here together. After a time, we started dating, but it didn't last long...)] 
+		[arthur.speech(Да... Видишь ли, как ты наверняка уже знаешь, мы с Lilaya раньше работали здесь вместе. Спустя какое-то время мы начали встречаться, но это длилось недолго...)] 
 	</p> 
 	<p>
-		Arthur seems quite reluctant to continue, but after a moment of silence, he continues, [arthur.speech(At the time, Lyssieth used to visit very regularly, and would always make a fuss over Lilaya. Well, the last time Lyssieth visited, Lilaya was out on a rare errand, and, left alone with her in the lab... well... i-it's hard saying no to a Lilin... and after she told me she had a thing for humans...)] 
+		Arthur явно не решается продолжать, но после недолгого молчания всё же произносит: [arthur.speech(В то время Lyssieth заходила к нам очень часто и всегда вовсю опекала Lilaya. Ну, и когда Lyssieth пришла в последний раз, Lilaya как раз ушла по редкому делу, и, оставшись с ней наедине в лаборатории... ну... п-против лилин трудно устоять... а уж когда она призналась, что ей нравятся люди...)] 
 	</p> 
 	<p>
-		[pc.speech(Ah,)] you sigh, seeing where this is going. 
+		[pc.speech(Ах,)] — вздыхаешь ты, понимая, к чему всё клонит. 
 	</p> 
 	<p>
-		[arthur.speech(Mmm... Needless to say, Lilaya returned and caught us in the act,)] Arthur continues, casting his eyes to the floor, [arthur.speech(and you can imagine the rest... She still hasn't forgiven either of us for that. I mean, polyamory isn't exactly uncommon - hell, Lilaya herself was still sleeping with Rose at the time - but seeing as it was with her mother, as well as the fact that we'd done it behind her back...)] 
+		[arthur.speech(Ммм... Излишне говорить, что Lilaya вернулась и застала нас за делом,)] — продолжает Arthur, опуская взгляд в пол, [arthur.speech(а остальное ты можешь себе представить... Она до сих пор не простила ни одному из нас. В смысле, полиамория — дело не такое уж редкое — черт возьми, сама Lilaya в то время еще спала с Rose, — но учитывая, что это было с её матерью, да еще и за её спиной...)] 
 	</p> 
 	<p>
-		Arthur falls into silence for a moment again, before shaking his head and looking up at you. [arthur.speech(Anyway, that's the whole reason for Lilaya living alone like this. You see, Lyssieth only has a few recognised children, and amongst them, Lilaya was clearly her favourite. When Lilaya told her mother that she never wanted to see her again, Lyssieth really took it hard. Although she'd been appointed by Lilith to govern the undercity of Submission, she'd never really taken her duties seriously before, but after all this, she retreated to her official residence down there. I don't think she's been seen up here in Dominion since...)] 
+		Arthur на мгновение снова замолкает, затем качает головой и смотрит на тебя. [arthur.speech(В общем, именно поэтому Lilaya теперь живет одна. Видишь ли, у Lyssieth всего несколько признанных детей, и Lilaya явно была её любимицей. Когда Lilaya сказала матери, что больше никогда не хочет её видеть, Lyssieth это действительно тяжело пережила. Хотя Lilith и назначила её править нижним городом в Submission, раньше она никогда не относилась к своим обязанностям серьезно, но после всего этого она ушла в свою официальную резиденцию там, внизу. Не думаю, что её видели здесь, в Dominion, с тех самых пор...)] 
 	</p> 
 	<p>
-		[pc.speech(So you want me to go down into Submission, find Lyssieth, and convince her to come and meet with you, all behind Lilaya's back? I can't betray her trust like that...)] 
+		[pc.speech(То есть ты хочешь, чтобы я спустилась в Submission, нашла Lyssieth и убедила её прийти на встречу с тобой, и всё это за спиной у Lilaya? Я не могу так предать её доверие...)] 
 	</p> 
 	<p>
-		[arthur.speech(This is all to find out the truth behind why you appeared in this world,)] Arthur tries to remind you, but, upon seeing the serious expression on your face, he concedes, [arthur.speech(Bloody hell... Fine, I'll admit that I'm more than a little interested in it as well. Don't worry about going behind her back; I'll tell Lilaya about all of this. I'll need a little time to build up to it, however, so until then please don't mention anything about this to her.)] 
+		[arthur.speech(Все это лишь для того, чтобы выяснить правду о том, почему ты появилась в этом мире,)] Arthur пытается напомнить тебе об этом, но, увидев серьезное выражение твоего лица, уступает: [arthur.speech(Черт возьми... Ладно, признаю, мне это тоже чертовски интересно. Не переживай, что действуешь за ее спиной; я сам все расскажу Lilaya. Правда, мне понадобится немного времени, чтобы подготовить почву, так что пока, пожалуйста, не упоминай ей об этом.)] 
 	</p> 
 	<p>
-		[pc.speech(Ok, but I won't bring Lyssieth here until you've told Lilaya,)] you firmly state. 
+		[pc.speech(Хорошо, но я не приведу Lyssieth сюда, пока ты не поговоришь с Lilaya,)] твердо заявляешь ты. 
 	</p> 
 	<p>
-		[arthur.speech(Don't worry, by the time you've found and convinced her, I'll have let Lilaya know. Well, with that settled, I should get on with these experiments Lilaya's assigned to me. If there's ever anything you need, please don't hesitate to drop by and let me know; my door's always open to the person who saved me!)] 
+		[arthur.speech(Не волнуйся, к тому времени, как ты найдешь и убедишь ее, я уже успею сообщить Lilaya. Что ж, раз с этим покончено, мне пора возвращаться к экспериментам, которые поручила мне Lilaya. Если тебе что-нибудь понадобится, не стесняйся, заходи и говори; мои двери всегда открыты для человека, который меня спас!)] 
 	 </p> 
 	]]>
 	</htmlContent>
@@ -94,10 +94,10 @@
 	
 	<htmlContent tag="ROOM_ARTHUR"><![CDATA[
 	<p> 
-		You find yourself standing in Arthur's Room, which, due to the occupant's need to carry out any experiments assigned to him, looks like a miniature version of Lilaya's lab. The walls are lined with cluttered tables, stacked bookcases, and cupboards full of all manner of scientific-looking apparatus. A solitary bed is positioned in one corner, but aside from that, there's no other indication that this room doubles as Arthur's sleeping quarters. 
+		Ты стоишь в комнате Arthur, которая из-за необходимости проводить назначенные ему эксперименты напоминает миниатюрную версию лаборатории Lilaya. Стены заставлены заваленными вещами столами, книжными шкафами и шкафчиками, набитыми всевозможными научными приборами. В углу стоит одинокая кровать, но помимо нее, в комнате нет никаких других признаков того, что здесь еще и спят. 
 	</p> 
 	<p> 
-		Busily performing one of the experiments that Lilaya has assigned to him, Arthur looks to be hard at work, although you don't think he'd mind if you asked him a few questions... 
+		Arthur увлеченно проводит один из экспериментов, порученных ему Lilaya; кажется, он по уши в работе, хотя ты думаешь, что он не прочь, если ты задашь ему пару вопросов... 
 	</p> 
 	]]>
 	</htmlContent>
@@ -107,19 +107,19 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_LYSSIETH"><![CDATA[
 	<p> 
-		Wanting to know a little more about Lilaya's mother, you approach Arthur and get his attention, before asking him what he can tell you about Lyssieth.
+		Желая узнать побольше о матери Lilaya, ты подходишь к Arthur и привлекаешь его внимание, прежде чем спросить, что он может поведать тебе о Lyssieth.
 	</p> 
 	<p> 
-		Arthur smiles a little at the question and recalls, [arthur.speech(In a lot of ways, she was exactly what you'd expect one of Lilith's daughters to be; confident, controlling, and immensely powerful. My first impression of her was one of incredible haughtiness and arrogance, but as I watched her interactions with Lilaya, I saw that she had a softer, more loving side...)] 
+		Arthur слегка улыбается на твой вопрос и вспоминает: [arthur.speech(Во многих отношениях она была именно такой, какой и ожидаешь увидеть дочь Lilith: уверенная в себе, властная и невероятно могущественная. Моим первым впечатлением от неё была невероятная спесь и высокомерие, но наблюдая за её общением с Lilaya, я заметил, что у неё есть и более мягкая, любящая сторона...)] 
 	</p> 
 	<p> 
-		Arthur seems to get a little caught-up in his thoughts for a moment, before shaking his head and looking up at you. [arthur.speech(Of course, as you'd expect from a Lilin, she's practically dripping with sex appeal. She also has a thing for humans, which explains why most of her daughters are half-demons; if a Lilin's partner isn't corrupted into a demon before having sex, then their offspring end up like Lilaya. Not that that's a bad thing, of course, but society does typically treat human half-demons as being the lowest of all the demonic subspecies. That is of course, unless they've been recognised by their mother, like Lilaya has been.)] 
+		Arthur на мгновение погружается в свои мысли, но затем встряхивает головой и смотрит на тебя. [arthur.speech(Конечно, как и подобает лилин, она буквально источает сексуальность. А еще она питает слабость к людям, что объясняет, почему большинство её дочерей — полудемоны; если партнера лилин не превратить в демона до секса, то их потомство получается таким, как Lilaya. Не то чтобы это было плохо, конечно, но в обществе к полудемонам-людям обычно относятся как к низшей из всех демонических подрасов. Если только их не признала мать, как в случае с Lilaya.)] 
 	</p> 
 	<p> 
-		Arthur turns to one side to check on his experiment, making a satisfied humming noise before facing you once more and continuing, [arthur.speech(Sorry about that. Anyway, you should know that Lyssieth's love of humans even extends to the appearance she likes to take on the most. The Lilin can transform themselves into any race imaginable, you see, and Lyssieth likes to stay in the form of a human. She'd change her style almost every day, but no matter what appearance she took on, she'd always be so beautiful...)] 
+		Arthur поворачивается в сторону, чтобы проверить свой эксперимент, издавая удовлетворенный гул, а затем снова поворачивается к тебе и продолжает: [arthur.speech(Прости за это. В любом случае, тебе стоит знать, что любовь Lyssieth к людям проявляется даже в облике, который она предпочитает принимать чаще всего. Видишь ли, лилин могут превращаться в любую вообразимую расу, но Lyssieth нравится оставаться в человеческом обличье. Она меняла свой стиль почти каждый день, но каким бы обликом она ни предстала, она всегда была невероятно прекрасна...)] 
 	</p> 
 	<p> 
-		Again, Arthur seems to lose himself in his thoughts, and, having heard enough, you decide to take a step back and let him resume his experiments. 
+		Arthur снова, кажется, погружается в свои мысли, и, наслушавшись достаточно, ты решаешь сделать шаг назад и дать ему вернуться к экспериментам. 
 	</p> 
 	]]>
 	</htmlContent>
@@ -129,13 +129,13 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_LILAYA"><![CDATA[
 	<p>
-		You find yourself curious to know what Arthur's memories of Lilaya are like, so, stepping forwards, you ask, [pc.speech(I hope you don't mind me asking, but what was Lilaya like when you two were dating?)]
+		Тебе становится любопытно узнать, какими были воспоминания Arthur о Lilaya, поэтому, сделав шаг вперед, ты спрашиваешь: [pc.speech(Надеюсь, ты не против, если я спрошу, какой была Lilaya, когда вы двое встречались?)]
 	</p>
 	<p>
-		[arthur.speech(Loving, but very controlling,)] Arthur replies with a sad smile. [arthur.speech(While she'd often spend entire evenings alone with Rose, she all but banned me from spending any time with anyone else. Not that I really had other people that I wanted to see, but it still felt a little stifling. I'm not trying to make excuses for what I did, but maybe that's partly why I... erm, you know... with Lyssieth... Anyway, returning to your question, Lilaya was much as she still is now; kind and friendly with people she knows, but nervous and confrontational around strangers. Like others with demonic blood, she's naturally gifted with the arcane, and also has quite a high sex drive...)]
+		[arthur.speech(Loving, but very controlling,)] Arthur отвечает с грустной улыбкой. [arthur.speech(Хотя она часто проводила целые вечера наедине с Rose, меня она почти полностью лишила возможности проводить время с кем-либо еще. Не то чтобы у меня был кто-то другой, с кем мне действительно хотелось бы видеться, но всё равно это казалось удушающим. Не пытаюсь оправдать свои поступки, но, возможно, именно поэтому я... э-э, ну, ты понимаешь... с Lyssieth... В любом случае, возвращаясь к твоему вопросу: Lilaya была такой же, как и сейчас; добрая и дружелюбная с теми, кого знает, но нервная и склонная к конфликтам с незнакомцами. Как и другие обладатели демонической крови, она от природы одарена в аркане, а еще у неё довольно высокое либидо...)]
 	</p>
 	<p>
-		Arthur blushes and clears his throat, before turning back to his experiments and stating, [arthur.speech(I need to get on with this now!)]
+		Arthur краснеет и откашливается, после чего возвращается к своим экспериментам, бросая: [arthur.speech(Так, мне пора за дело!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -145,27 +145,28 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_HYPNO_WATCH_START"><![CDATA[
 	<p>
-		The sight of the numerous arcane instruments and beakers of bubbling, brightly-coloured liquid that are scattered over every surface fills you with curiosity, and you can't help but ask,
+	
+	Вид многочисленных арканных инструментов и колб с бурлящей, ярко окрашенной жидкостью, разбросанных по каждой поверхности, пробуждает в тебе любопытство, и ты не можешь удержаться от вопроса:
 		#IF(pc.getName(false).equals("Eru") && pc.getSurname().equals("Chitanda"))
-			 [pc.speech(What sort of experiments are you working on? Watashi ki ni narimasu!)]
+			 [pc.speech(Над какими экспериментами ты работаешь? Watashi ki ni narimasu!)]
 		#ELSE
-			 [pc.speech(What sort of experiments are you working on?)]
+			 [pc.speech(Над какими экспериментами ты работаешь?)]
 		#ENDIF
 	</p>
 	<p>
-		[arthur.speech(Nothing too interesting, really; Lilaya's tasked me to repeat one of her experiments that's related to detecting inter-dimensional particles. I've already told her that it doesn't hold up in theory, let alone practice, but she doesn't listen,)] Arthur sighs, before a mischievous look flashes across his face. [arthur.speech(You know... there is <i>something</i> a little more interesting that I could do. You see, back when I was working for Zaranix, one of his ideas was to get me to find an arcane method of changing a person's sexual orientation. At first I thought it might prove impossible, like all his other ideas, but after doing a little research into it, I think I might actually have found a way to enchant a certain item that could do the trick. I'd never have use for such an instrument myself, you understand, but in the name of scientific curiosity, I'd very much like to test my theory.)]
+		[arthur.speech(На самом деле, ничего особенного; Lilaya поручила мне повторить один из её экспериментов по обнаружению межпространственных частиц. Я уже говорил ей, что это не работает ни в теории, ни на практике, но она не слушает,)] Arthur вздыхает, а затем на его лице промелькивает озорной взгляд. [arthur.speech(Знаешь... есть <i>кое</i> кое-что поинтереснее, чем я мог бы заняться. Видишь ли, когда я работал на Zaranix, одна из его идей заключалась в том, чтобы я нашел арканальный способ изменения сексуальной ориентации человека. Сначала я думал, что это невозможно, как и все остальные его идеи, но немного изучив вопрос, кажется, я действительно нашел способ зачаровать один предмет, который может сработать. Мне бы самому такой инструмент вряд ли пригодился, понимаешь, но ради научного любопытства мне бы очень хотелось проверить свою теорию.)]
 	</p>
 	<p>
-		Seeing where this conversation is headed, you muse, [pc.speech(Why do I get the feeling you're about to ask me to do something?)]
+		Понимая, к чему клонит этот разговор, ты задумчиво произносишь: [pc.speech(Почему у меня такое чувство, будто ты сейчас попросишь меня кое о чем сделать?)]
 	</p>
 	<p>
-		[arthur.speech(Well, it's only a small errand. I just need a package collected from Vicky over at Arcane Arts. I would ask Lilaya to send Rose, but I can't afford the hour's worth of lecturing I receive every time I talk to her...)]
+		[arthur.speech(Ну, это всего лишь небольшое поручение. Мне нужно забрать посылку у Vicky в Arcane Arts. Я бы попросил Lilaya отправить Rose, но не готов терпеть часовую лекцию, которую получаю каждый раз, когда заговариваю с ней...)]
 	</p>
 	<p>
-		[pc.speech(Well, if it's just picking up a package, I could do that the next time I'm over in the Shopping Arcade,)] you offer.
+		[pc.speech(Ну, если нужно просто забрать посылку, я мог бы сделать это в следующий раз, когда буду в Торговых рядах,)] предлагаешь ты.
 	</p>
 	<p>
-		[arthur.speech(Excellent!)] Arthur exclaims, [arthur.speech(Thank you so much, [pc.name]! Now, I really should get on with this pointless experiment, or else Lilaya will have yet more ammunition to use against me...)]
+		[arthur.speech(Превосходно!)] — восклицает Arthur. — [arthur.speech(Огромное спасибо, [pc.name]! Теперь мне действительно пора заняться этим бессмысленным экспериментом, иначе у Lilaya будет еще больше поводов подколоть меня...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -175,46 +176,46 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_HYPNO_WATCH_DELIVERY"><![CDATA[
 	<p>
-		Presenting the package to Arthur, you ask the question at the forefront of your mind, [pc.speech(Here's the package from Arcane Arts. I couldn't help but wonder, though, what's inside?)]
+		Вручая посылку Arthur, ты задаешь вопрос, который не дает тебе покоя: [pc.speech(Вот посылка из Arcane. Но мне стало любопытно, что же внутри?)]
 	</p>
 	<p>
-		[arthur.speech(Ah! Thank you, [pc.name]! I hope you didn't have any trouble with Vicky; she can be a little overwhelming sometimes,)] Arthur says, taking the package from you and ringing the bell-pull in the corner of his room. [arthur.speech(As to what's inside, I'll show you right now!)]
+		[arthur.speech(О! Спасибо, [pc.name]! Надеюсь, у тебя не возникло проблем с Vicky; она бывает слегка напористой,)] — говорит Arthur, забирая у тебя сверток и дергая за шнур колокольчика в углу комнаты. — [arthur.speech(Что касается содержимого — сейчас всё увидишь!)]
 	</p>
 	<p>
-		Tearing off the tape that's holding the box together, Arthur quickly opens it up and reaches inside. Stepping closer to get a better look, you see him pull out a silver pocket-watch, with a long chain attached to the top. The hour and minute hands don't look as though they're moving, and the time that's shown is stuck at four minutes past ten.
+		Сорвав скотч, удерживающий коробку, Arthur быстро открывает её и запускает руку внутрь. Ты подходишь ближе, чтобы рассмотреть получше, и видишь, как он достает серебряные карманные часы на длинной цепочке. Стрелки часов и минут, кажется, замерли, а время застыло на десяти минутах пятого.
 	</p>
 	<p>
-		[pc.speech(A broken pocket watch?)] You ask, a little unimpressed.
+		[pc.speech(Сломанные карманные часы?)] — спрашиваешь ты с легким разочарованием.
 	</p>
 	<p>
-		Before Arthur can answer, there's a knock at the door, before Rose steps inside the room. [rose.speech(You called, sir?)]
+		Прежде чем Arthur успевает ответить, в дверь стучат, и в комнату входит Rose. [rose.speech(Вы звали, господин?)]
 	</p>
 	<p>
-		[arthur.speech(Ah, yes, Rose! Could you please ask Lilaya to come up here? I need her help with a special experiment,)] Arthur asks, and Rose obediently steps back and hurries off to fetch her mistress.
+		[arthur.speech(Ах, да, Rose! Не могла бы ты попросить Lilaya подняться сюда? Мне нужна её помощь в одном особом эксперименте,)] — просит Arthur, и Rose послушно отступает, спеша привести свою госпожу.
 	</p>
 	<p>
-		Arthur hurriedly grabs several pages of notes, before placing them beside the watch on the table in front of you. Before he has any time to explain what his plan is, the door suddenly bursts open, and a very angry-looking Lilaya strides into the room. [lilaya.speech(What is it now Arthur?! Oh, [pc.name], you're here too!)]
+		Arthur торопливо хватает несколько страниц записей и кладет их рядом с часами на столе перед тобой. Прежде чем он успевает объяснить свой план, дверь внезапно распахивается, и в комнату стремительно входит очень разгневанная Lilaya. [lilaya.speech(Ну что еще, Arthur?! О, [pc.name], ты тоже здесь!)]
 	</p>
 	<p>
-		[arthur.speech(Well, Lilaya, you know I told you about that research I did into changing a person's sexual orientation? Well, I-)]
+		[arthur.speech(Ну, Lilaya, ты же помнишь, я рассказывал тебе о своем исследовании по изменению сексуальной ориентации человека? Так вот, я...)]
 	</p>
 	<p>
-		[lilaya.speech(Yes, I remember,)] Lilaya interrupts, [lilaya.speech(and do you remember <i>me</i> telling <i>you</i> about how I thought it was irresponsible to want to go around changing people's nature like that?!)]
+		[lilaya.speech(Да, помню,)] — перебивает Lilaya, — [lilaya.speech(и помнишь ли ты, как <i>мне</i> говорилось, что <i>тебе</i> казалось безответственным хотеть вот так менять человеческую природу?!)]
 	</p>
 	<p>
-		[arthur.speech(I don't intend to use it, Lilaya!)] Arthur objects, [arthur.speech(It's only for research purposes! If I could harness the arcane, I'd do it all myself... Please, all I need you to do is follow these instructions and enchant this watch.)]
+		[arthur.speech(Я не собираюсь использовать это, Lilaya!)] — возражает Arthur, — [arthur.speech(Это только для исследовательских целей! Если бы я мог обуздать Аркану, я бы сделал всё сам... Пожалуйста, всё, что тебе нужно — это следовать этим инструкциям и зачаровать эти часы.)]
 	</p>
 	<p>
-		[lilaya.speech(Eugh, fine... But you're writing up a full report on this, on top of the work I've already assigned to you,)] Lilaya sighs, before stepping over to the desk and starting to follow Arthur's instructions.
+		[lilaya.speech(Фу, ладно... Но помимо той работы, что я тебе уже дала, ты напишешь по этому поводу полный отчет,)] — вздыхает Lilaya, прежде чем подойти к столу и начать выполнять инструкции Arthur.
 	</p>
 	<p>
-		After a few minutes, and several flashes of arcane energy, Lilaya's work is done, and you step forwards to see that the watch has undergone a drastic change. Now, instead of looking like a regular time-piece, the face of the watch is a swirling vortex of purple energy. Before you can take a closer look, Lilaya picks the watch up by the chain, and turns to Arthur. [lilaya.speech(So how does this thing work?)]
+		Спустя несколько минут и несколько вспышек арканической энергии работа Lilaya завершена. Ты делаешь шаг вперед и видишь, что часы претерпели радикальные изменения. Теперь вместо обычного циферблата перед тобой — бурлящий вихрь пурпурной энергии. Прежде чем ты успеваешь присмотреться повнимательнее, Lilaya подхватывает часы за цепочку и поворачивается к Arthur. [lilaya.speech(Ну и как эта штука работает?)]
 	</p>
 	<p>
-		[arthur.speech(C-Careful, Lilaya!)] Arthur exclaims, averting his eyes from the watch. [arthur.speech(You just have to swing it back and forth in front of someone, and they should undergo a hypnotic-type effect, which, if my calculations are correct, will change their orientation. Oh, you should be able to channel arcane essences into it to change the desired orientation as well. We really need a test subject for this...)]
+		[arthur.speech(О-осторожнее, Lilaya!)] — восклицает Arthur, отводя взгляд от часов. [arthur.speech(Нужно просто качать ими перед кем-нибудь взад-вперед, и тогда на человека подействует своего рода гипнотический эффект, который, если мои расчеты верны, изменит его ориентацию. О, еще ты сможешь направлять в них арканические эссенции, чтобы менять желаемую ориентацию. Нам очень нужен испытуемый...)]
 	</p>
 	<p>
-		[lilaya.speech(Well, whatever the result is, we can always undo it, right? I want to be the one who uses it, as I'll be able to sense if anything starts to go wrong, and you can't be the test subject, Arthur, as you'll need to be the one to fix any unexpected effects...)] Lilaya muses, before both she and Arthur turn towards you. [lilaya.speech([pc.Name]! You're ok letting us test this on you, aren't you? I promise that I won't apply the full effect, so there's really nothing to worry about!)]
+		[lilaya.speech(Ну, каким бы ни был результат, мы всегда сможем всё вернуть назад, верно? Я хочу сама им пользоваться, так как смогу почувствовать, если что-то пойдет не так. А ты не можешь быть испытуемым, Arthur, ведь тебе придется исправлять любые неожиданные эффекты...)] — размышляет Lilaya, после чего и она, и Arthur поворачиваются к тебе. [lilaya.speech([pc.Name]! Ты ведь не против, если мы протестируем это на тебе? Обещаю, что не буду использовать эффект на полную мощь, так что бояться нечего!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -224,77 +225,77 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_HYPNO_WATCH_OFFER_SELF"><![CDATA[
 	<p>
-		Reassured by the fact Lilaya and Arthur are both highly-competent arcane researchers, you step forwards. [pc.speech(Ok, ok... But this had better not be permanent. Seeing as I'm [pc.orientation], you'll probably need to set the watch to something other than that...)]
+		Успокоенный тем фактом, что и Lilaya, и Arthur — высококлассные исследователи Арканы, ты делаешь шаг вперед. [pc.speech(Ладно, ладно... Но надеюсь, это не навсегда. Раз уж я [pc.orientation], вам, вероятно, придется перевести часы на что-то другое...)]
 	</p>
 	<p>
-		[arthur.speech(Don't worry, this process is completely reversible,)] Arthur says, before turning to Lilaya and ordering,
+		[arthur.speech(Не волнуйся, этот процесс полностью обратим,)] — говорит Arthur, после чего поворачивается к Lilaya и отдает приказ:
 	#IF(pc.getSexualOrientation()!=ORIENTATION_AMBIPHILIC)
-			 [arthur.speech(Ok, Lilaya, enchant the watch to try and change [pc.name] into being ambiphilic.)]
+			 [arthur.speech(Хорошо, Lilaya, заколдуй часы, чтобы попытаться превратить [pc.name] в амбифила.)]
 		</p>
 		<p>
-			Holding the watch by the chain in one hand, Lilaya reaches up with her other, and, with a little flash of lilac, enchants the watch as Arthur instructs. The swirling purple face slowly shifts into a light purple, and, instructed by Arthur to keep focused on the watch, you fix your gaze on the mesmerising surface as Lilaya starts slowly swaying it back and forth. You feel your head rocking from side to side in time with each swing, and, starting to feel quite light-headed, you begin to find it very hard to remember what it is you're doing...
+			Держа часы за цепочку в одной руке, Lilaya тянется к ним другой и с легкой сиреневой вспышкой накладывает чары, как велел Arthur. Вихри на фиолетовом циферблате медленно сменяются светло-сиреневым цветом, и, следуя указанию Arthur не отводить глаз, ты завороженно смотришь на гипнотическую поверхность, пока Lilaya начинает медленно раскачивать часы из стороны в сторону. Ты чувствуешь, как твоя голова качается в такт каждому движению, и, ощущая легкое головокружение, начинаешь с трудом вспоминать, чем вообще занимаешься...
 		</p>
 		<i><p>
-			[lilaya.speech(Perhaps we can leave the experiment for later,)] Lilaya moans, placing the watch to one side, before stepping forwards and planting a wet kiss on your lips.
+			[lilaya.speech(Может, оставим эксперимент на потом,)] — стонет Lilaya, откладывая часы в сторону, после чего делает шаг вперед и оставляет влажный поцелуй на твоих губах.
 		</p>
 		<p>
-			[arthur.speech(We could all use a break,)] Arthur joins in, stepping around to take a firm hold of your waist.
+			[arthur.speech(Нам всем не помешал бы перерыв,)] — подхватывает Arthur, обходя вас и крепко обхватывая твою талию.
 		</p>
 		<p>
-			[pc.speech(Mmm, yes...)] you moan, feeling a jolt of excitement as Arthur's hands run down to your groin. Leaning back into him, you pull your [lilaya.relation(pc)] forwards, passionately thrusting your tongue into her mouth as you reach down to help guide Arthur's fingers down to your groin...
+			[pc.speech(Ммм, да...)] — стонешь ты, ощущая прилив возбуждения, когда руки Arthur скользят вниз к твоему паху. Откидываясь на него, ты притягиваешь свою [lilaya.relation(pc)] к себе, страстно проникая языком в её рот и одновременно помогая Arthur направлять его пальцы к своему паху...
 		</p>
 		<p>
-			[lilaya.speech(Wake up...)] Lilaya sighs...
+			[lilaya.speech(Проснись...)] — вздыхает Lilaya...
 		</p></i>
 	#ELSEIF(pc.isFeminine())
-			 [arthur.speech(Ok, Lilaya, enchant the watch to try and change [pc.name] into being androphilic.)]
+			 [arthur.speech(Хорошо, Lilaya, заколдуй часы, чтобы попытаться превратить [pc.name] в андрофила.)]
 		</p>
 		<p>
-			Holding the watch by the chain in one hand, Lilaya reaches up with her other, and, with a little flash of turquoise, enchants the watch as Arthur instructs. The swirling purple face slowly shifts into a deep shade of blue, and, instructed by Arthur to keep focused on the watch, you fix your gaze on the mesmerising surface as Lilaya starts slowly swaying it back and forth. You feel your head rocking from side to side in time with each swing, and, starting to feel quite light-headed, you begin to find it very hard to remember what it is you're doing...
+			Держа часы за цепочку в одной руке, Lilaya поднимает другую и с легкой бирюзовой вспышкой накладывает чары на часы, как и велел Arthur. Вихри на фиолетовом циферблате медленно сменяются глубоким синим цветом, и, следуя указанию Arthur не отводить взгляда, ты завороженно смотришь на гипнотическую поверхность, пока Lilaya начинает медленно раскачивать их из стороны в сторону. Ты чувствуешь, как твоя голова качается в такт каждому движению, и, ощущая легкое головокружение, начинаешь с трудом вспоминать, чем вообще занимаешься...
 		</p>
 		<i><p>
-			[arthur.speech(Perhaps we can leave the experiment for later,)] Arthur states, getting Lilaya to put the watch to one side, before leading her out of the room.
+			[arthur.speech(Возможно, оставим эксперимент на потом,)] — заявляет Arthur, заставляя Lilaya отложить часы в сторону, после чего выводит её из комнаты.
 		</p>
 		<p>
-			[pc.speech(What's wrong? Is it not work- ~Aah!~)] you start to question, but Arthur confidently steps around behind you and takes a firm hold of your waist.
+			[pc.speech(Что не так? Неужели не получ~ Аах!~)] — начинаешь ты расспрашивать, но Arthur уверенно обходит тебя сзади и крепко обхватывает твою талию.
 		</p>
 		<p>
-			[arthur.speech(I could see that look in your eyes...)] he says, and a jolt of excitement suddenly runs through you as you feel Arthur's hands run down to your groin.
+			[arthur.speech(Я видел этот взгляд в твоих глазах...)] — говорит он, и тебя внезапно прошибает дрожь возбуждения, когда ты чувствуешь, как руки Arthur скользят вниз к твоему паху.
 		</p>
 		<p>
-			[pc.speech(Mmm... Yes...)] you moan, turning your head and pressing your lips against Arthur's. Leaning back into him, you passionately thrust your tongue into his mouth as you reach down to help guide his fingers down to your groin...
+			[pc.speech(Ммм... Да...)] — стонешь ты, поворачивая голову и прижимаясь губами к губам Arthur. Откидываясь на него, ты страстно проникаешь языком в его рот, одновременно опуская руку вниз, чтобы помочь направить его пальцы к своей промежности...
 		</p>
 		<p>
-			[lilaya.speech(Wake up, [pc.name]...)] you hear Lilaya call from the other side of the door...
+			[lilaya.speech(Просыпайся, [pc.name]...)] — слышишь ты голос Lilaya из-за двери...
 		</p></i>
 	#ELSE
-			 [arthur.speech(Ok, Lilaya, enchant the watch to try and change [pc.name] into being gynephilic.)]
+			 [arthur.speech(Хорошо, Lilaya, заколдуй часы, чтобы попытаться превратить [pc.name] в гинефила.)]
 		</p>
 		<p>
-			Holding the watch by the chain in one hand, Lilaya reaches up with her other, and, with a little flash of scarlet, enchants the watch as Arthur instructs. The swirling purple face slowly shifts into a deep shade of pink, and, instructed by Arthur to keep focused on the watch, you fix your gaze on the mesmerising surface as Lilaya starts slowly swaying it back and forth. You feel your head rocking from side to side in time with each swing, and, starting to feel quite light-headed, you begin to find it very hard to remember what it is you're doing...
+			Держа часы за цепочку в одной руке, Lilaya поднимает другую и с легкой алой вспышкой накладывает чары на часы, как и велел Arthur. Вихри на фиолетовом циферблате медленно сменяются глубоким розовым оттенком, и, следуя указанию Arthur не отводить взгляд, ты завороженно смотришь на гипнотическую поверхность, пока Lilaya начинает медленно раскачивать их из стороны в сторону. Ты чувствуешь, как твоя голова качается в такт каждому движению, и, ощущая легкое головокружение, понимаешь, что тебе становится всё труднее вспомнить, чем ты вообще занимаешься...
 		</p>
 		<i><p>
-			[lilaya.speech(Honestly, Arthur, we should leave this experiment for later,)] Lilaya states, putting the watch to one side, before leading Arthur out of the room.
+			[lilaya.speech(Честное слово, Arthur, нам стоит оставить этот эксперимент на потом,)] — произносит Lilaya, откладывая часы в сторону и уводя Arthur из комнаты.
 		</p>
 		<p>
-			[pc.speech(What's wrong? Is it not work- ~Aah!~)] you start to question, but Lilaya suddenly steps around behind you, and with a little giggle, reaches forwards to wrap her arms around you.
+			[pc.speech(Что не так? Неужели не получ~ Аах!~)] — начинаешь ты расспрашивать, но Lilaya внезапно обходит тебя сзади и с легким смешком обхватывает тебя руками.
 		</p>
 		<p>
-			[lilaya.speech(I could see that look in your eyes...)] she says, and a jolt of excitement suddenly runs through you as you feel your [lilaya.relation(pc)]'s hands run down to your groin.
+			[lilaya.speech(Я видела этот взгляд в твоих глазах...)] — говорит она, и тебя внезапно прошибает дрожь возбуждения, когда ты чувствуешь, как руки твоей [lilaya.relation(pc)] скользят вниз, к твоему паху.
 		</p>
 		<p>
-			[pc.speech(Mmm... Yes...)] you moan, turning your head and pressing your lips against Lilaya's. Leaning back into her, you passionately thrust your tongue into her mouth as you reach down to help guide her fingers down to your groin...
+			[pc.speech(Ммм... Да...)] — стонешь ты, поворачивая голову и прижимаясь губами к губам Lilaya. Откидываясь на неё, ты страстно проникаешь языком в её рот, одновременно опуская руку, чтобы помочь ей направить пальцы к своему паху...
 		</p>
 		<p>
-			[lilaya.speech(Wake up, [pc.name]...)] Lilaya sighs...
+			[lilaya.speech(Проснись, [pc.name]...)] — вздыхает Lilaya...
 		</p></i>
 	#ENDIF
 	<p>
 		...
 	</p>
-	<p>
-		[lilaya.speech([pc.Name]! Wake up!)]
-	</p>
+		<p>
+		[lilaya.speech([pc.Name]! Проснись!)]
+		</p>
 	]]>
 	</htmlContent>
 	
@@ -302,41 +303,41 @@
 	<!-- ROOM_ARTHUR_HYPNO_WATCH_OFFER_SELF_WAKE_UP -->
 	
 	<htmlContent tag="ROOM_ARTHUR_HYPNO_WATCH_OFFER_SELF_WAKE_UP"><![CDATA[
+		<p>
+		[lilaya.speech([pc.Name]? Проснись!)] — зовёт Lilaya, и после короткого моргания ты внезапно вырываешься из этого похожего на сон транса. Ты стоишь ровно там же, где и в начале эксперимента, но Lilaya с легким беспокойством на лице отложила часы в сторону и теперь держит тебя за плечи.
+		</p>
+		<p>
+		[pc.speech(Ч-что это было?!)] — спрашиваешь ты, пытаясь прогнать только что увиденное видение из головы. [pc.speech(Это было так реально! Мы были... ну...)]
+		</p>
+		<p>
+		[lilaya.speech(Слава богу, ты в порядке,)] — говорит Lilaya, отпуская тебя и отступая на шаг. [lilaya.speech(Я остановила тест до того, как смена ориентации стала необратимой, а главное — до того, как всплеск развращающей энергии Арканы просочился в твой разум.)]
+		</p>
+		<p>
+		[pc.speech(Погоди... Что?! Никто об этом не упоминал!)]
+		</p>
 	<p>
-		[lilaya.speech([pc.Name]? Wake up!)] Lilaya calls, and, with a blink, you suddenly snap out of the dream-like trance. You're standing just where you were when the experiment started, but Lilaya, now with a mildly-concerned expression on her face, has placed the watch to one side, and is holding you by the shoulders.
+		[arthur.speech(Прости, [pc.name], я и не знал, что это может вызвать такой побочный эффект,)] — говорит Arthur, делая шаг вперед. [arthur.speech(Хорошо, что тест проводила именно Lilaya...)]
 	</p>
 	<p>
-		[pc.speech(W-What was that?!)] you ask, trying to shake the vision you just had from your head. [pc.speech(It was so real! We were... well...)]
+		[lilaya.speech(Ну, по крайней мере, с тобой всё в порядке, [pc.name],)] — с облегчением вздыхает Lilaya, [lilaya.speech(Видишь ли, как только ты погрузился в этот странный транс, я почувствовала, как вперед хлынула волна развращающей энергии. Если бы я не остановила тест, не только твоя сексуальная ориентация изменилась бы навсегда, но и то видение, что ты созерцал, несомненно, разыгралось бы до конца, попутно развращая твой разум.)]
 	</p>
 	<p>
-		[lilaya.speech(Good, you're ok,)] Lilaya says, releasing you and stepping back. [lilaya.speech(I stopped the test before the change in orientation became permanent, and, more importantly, before a surge of corruptive arcane energy seeped into your mind.)]
+		[pc.speech(Спасибо, Lilaya,)] — говоришь ты, делая шаг вперед, чтобы нежно обнять свою [lilaya.relation(pc)], [pc.speech(ты снова спасла меня, да?)]
 	</p>
 	<p>
-		[pc.speech(Wait... What?! Nobody mentioned anything about that!)]
+		[lilaya.speech(Д-да, ну... н-не за что,)] — заикается она, явно смущенная тем, что её обнимают на глазах у Arthur. Спустя мгновение она отстраняется и, наклонившись, чтобы поднять часы, проводит рукой над их циферблатом. Вихрь затихает, и часы снова выглядят как обычный аксессуар; довольная результатом, Lilaya протягивает их тебе. [lilaya.speech(Я сняла чары, так что теперь нет страха, что кто-то еще случайно попадет под их действие. Думаю, тебе стоит оставить их себе. В конце концов, теперь, когда ты знаешь, каково это — оказаться на месте жертвы, я уверена, ты будешь относиться к их силе с большим уважением.)]
 	</p>
 	<p>
-		[arthur.speech(I'm sorry, [pc.name], I didn't know that could be a side-effect,)] Arthur says, stepping forwards. [arthur.speech(It's a good job Lilaya was the one to carry out the test...)]
+		Ты забираешь часы у Lilaya, кивая в ответ на её слова и заверяя её: [pc.speech(Я буду бережно с ними обращаться.)]
 	</p>
 	<p>
-		[lilaya.speech(Well, at least you've come to no harm, [pc.name],)] Lilaya sighs in relief, [lilaya.speech(You see, just as you appeared to enter that strange trance, I felt a wave of corruptive energy surging forwards. If I hadn't stopped the test, not only would your sexual orientation have been permanently changed, but whatever vision you were witnessing would have undoubtedly played out in full; corrupting your mind in the process.)]
+		Повернувшись к Arthur, Lilaya принимает суровый вид: [lilaya.speech(Жду полный отчет у себя на столе завтра к этому же времени. И ни минутой позже!)]
 	</p>
 	<p>
-		[pc.speech(Thank you, Lilaya,)] you say, stepping forwards to give your [lilaya.relation(pc)] a loving hug, [pc.speech(you saved me again, huh?)]
+		С этими словами Lilaya стремительно выходит из комнаты, оставляя тебя наедине с Arthur, который бросает на тебя взгляд с весьма побежденным выражением лица. [arthur.speech(Ну, это <i>хотя и</i> работает... Прости за всё это, [pc.name]. О, и не говори Lilaya, но, думаю, у тебя не возникнет проблем с тем, чтобы зачаровать эти часы на изменение манеры речи людей. Пожалуй, мне пора приниматься за отчет...)]
 	</p>
 	<p>
-		[lilaya.speech(Y-Yes, well, y-you're welcome,)] she stammers, clearly a little embarrassed to be hugged in front of Arthur. After a moment, she breaks off the hug, and, turning to pick up the watch, waves her hand over the face. The swirling vortex fades away, leaving the watch looking just like any other, and, satisfied with the result, Lilaya hands it to you. [lilaya.speech(I've removed the enchantment, so there's no fear of accidentally subjecting anyone else to those effects. I think you should keep hold of this. After all, now that you know what it feels like to be on the receiving end, I'm sure you have a greater respect for its power.)]
-	</p>
-	<p>
-		You take the watch from Lilaya, nodding at her words before assuring her, [pc.speech(I'll take good care of it.)]
-	</p>
-	<p>
-		Turning to Arthur, Lilaya puts on a stern voice, [lilaya.speech(I expect a full report on my desk by this time tomorrow. And not a minute later!)]
-	</p>
-	<p>
-		With that, Lilaya strides out of the room, leaving you alone with Arthur, who proceeds to glance over at you with a rather defeated-looking expression on his face. [arthur.speech(Well, it <i>does</i> work, at least... Sorry about all that, [pc.name]. Oh, and don't tell Lilaya, but I believe you should also have no trouble enchanting that watch to alter people's speech characteristics. I really should get on with this report now...)]
-	</p>
-	<p>
-		With the hypnotic, orientation-changing watch now in your possession, you leave Arthur to get on with his work and step out of his room...
+		Теперь, когда гипнотические, меняющие восприятие часы у тебя, ты оставляешь Arthur за работой и выходишь из его комнаты...
 	</p>
 	]]>
 	</htmlContent>
@@ -346,30 +347,30 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_HYPNO_WATCH_OFFER_REFUSED"><![CDATA[
 	<p>
-		Despite the fact that Lilaya and Arthur are both highly-competent arcane researchers, you really don't feel comfortable having them use you as a test subject.
+		Несмотря на то, что и Lilaya, и Arthur — высококлассные исследователи Арканы, тебе не слишком уютно от мысли, что они используют тебя в качестве подопытного.
 		#IF(pc.isConfident())
-			 Crossing your [pc.arms] and giving the pair a disapproving look, you scold them, [pc.speech(You shouldn't be testing potentially-dangerous items directly on people! What's wrong with you?!)]
+			Скрестив [pc.arms] и бросив на парочку неодобрительный взгляд, ты отчитываешь их: [pc.speech(Нельзя же тестировать потенциально опасные вещи прямо на людях! Вы что, с ума сошли?!)]
 		#ELSE
-			 Stepping back and holding up your [pc.hands] to stop the pair from advancing upon you, you say, [pc.speech(I don't want some potentially-dangerous item being tested on me!)]
+			Отступив назад и выставив [pc.hands], чтобы помешать им подойти ближе, ты говоришь: [pc.speech(Я не хочу, чтобы на мне испытывали всякую потенциально опасную дрянь!)]
 		#ENDIF
 	</p>
 	<p>
-		[lilaya.speech(Tsk! Fine! We'll just have Rose help us,)] Lilaya tuts. With her previous misgivings about the hypno-watch seemingly forgotten in her excitement at getting to test out a new arcane device, she strides over to the bell-pull in one corner of Arthur's room and gives it a tug.
+		[lilaya.speech(Тц! Ладно! Тогда пусть Rose нам поможет,)] фыркает Lilaya. Все её прежние опасения насчет гипно-часов, кажется, забыты в предвкушении теста нового устройства Арканы; она решительно шагает к колокольчику в углу комнаты Arthur и дергает за веревочку.
 	</p>
 	<p>
-		Just moments later, Rose enters the room, and after performing a polite curtsy, the cat-girl maid asks, [rose.speech(How may I help?)]
+		Спустя всего мгновение в комнату входит Rose. Вежливо присев в реверансе, кошкодевочка-горничная спрашивает: [rose.speech(Чем я могу помочь?)]
 	</p>
 	<p>
-		After Lilaya has briefly explained the situation to her, Rose obediently agrees to let her Mistress use her as a test subject. Although she lowers her voice to a quiet whisper, you're able to just about overhear the dominant cat-girl as she leans in over Lilaya's neck and purrs, [rose.speech(You'll be getting some extra punishment for this tonight...)]
+		После того как Lilaya вкратце объясняет ей ситуацию, Rose послушно соглашается стать подопытной для своей госпожи. И хотя она переходит на едва слышный шепот, ты почти улавливаешь, как доминантная кошкодевочка, наклонившись к шее Lilaya, мурлычет: [rose.speech(Сегодня за это ты получишь дополнительное наказание...)]
 	</p>
 	<p>
-		Completely oblivious as to what's being said by Rose, Arthur steps towards your demonic [lilaya.relation(pc)] and bombastically declares, [arthur.speech(Don't worry, this process should be completely reversible! You just need to enchant the watch to try and change Rose into being... erm... androphilic, I guess?)]
+		Совершенно не замечая того, что шепчет Rose, Arthur делает шаг к твоей демонической [lilaya.relation(pc)] и пафосно заявляет: [arthur.speech(Не волнуйся, этот процесс должен быть полностью обратимым! Тебе просто нужно зачаровать часы так, чтобы они попытались превратить Rose в... э-э... андрофилку, что ли?)]
 	</p>
 	<p>
-		Throwing Arthur an unamused glare, Rose patiently waits as Lilaya moves her hand over the watch and channels her arcane energy into it. The swirling purple face slowly shifts into a deep shade of blue, and after the enchantment is complete, Lilaya has her maid gaze at the mesmerising surface as she starts slowly swaying it back and forth in front of her cat-like eyes. You watch in fascination as Rose's head starts involuntarily rocking from side to side in time with each swing, before her eyes suddenly droop down and she collapses to the floor with a soft thud.
+		Бросив на Arthur недовольный взгляд, Rose терпеливо ждет, пока Lilaya водит рукой над часами, направляя в них свою арканную энергию. Вихри на фиолетовом циферблате медленно сменяются глубоким синим цветом, и когда чары завершаются, Lilaya заставляет свою горничную завороженно смотреть на мерцающую поверхность, медленно раскачивая часы перед её кошачьими глазами. Ты с замиранием сердца наблюдаешь, как голова Rose непроизвольно начинает покачиваться из стороны в сторону в такт каждому движению, а затем её веки внезапно тяжелеют, и она с мягким глухим звуком оседает на пол.
 	</p>
 	<p>
-		[lilaya.speech(Rose?!)] Lilaya cries, tossing the hypno-watch into Arthur's hands as she ducks down to shake the cat-girl's shoulders. Looking back at you with a fearful expression on her face, your [lilaya.relation(pc)] pleads, [lilaya.speech([pc.Name]! Help me!)]
+		[lilaya.speech(Rose?!)] — вскрикивает Lilaya, бросая гипнотические часы в руки Arthur и наклоняясь, чтобы потрясти кошкодевочку за плечи. Взглянув на тебя с испугом во взгляде, твоя [lilaya.relation(pc)] умоляет: [lilaya.speech([pc.Name]! Помоги мне!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -380,46 +381,46 @@
 	<htmlContent tag="ROOM_ARTHUR_HYPNO_WATCH_OFFER_REFUSED_WAKE_ROSE"><![CDATA[
 	<p>
 		#IF(pc.isConfident() || pc.isBrave() || pc.isKind())
-			You were already rushing forwards to help Rose the moment you saw her starting to look faint, and so just a second after Lilaya has shouted out for your help, you're already kneeling down to assist.
+			Ты уже рванулся вперед, чтобы помочь Rose, как только заметил, что она начала терять сознание, поэтому спустя всего секунду после крика Lilaya ты уже стоишь перед ней на коленях, готовый прийти на помощь.
 		#ELSE
-			Spurred into action by Lilaya's desperate cry, you rush over and kneel down beside her.
+			Подгоняемый отчаянным криком Lilaya, ты бросаешься к ней и опускаешься на колени рядом.
 		#ENDIF
-		 Quickly checking to make sure that the cat-girl is still breathing, you start to move her delicate body into the recovery position, but as you do so, she suddenly lets out a soft sigh and begins to regain consciousness.
+			Быстро проверив, дышит ли еще кошкодевочка, ты начинаешь переворачивать её хрупкое тело в устойчивое боковое положение, но в этот момент она внезапно издает тихий вздох и начинает приходить в себя.
 	</p>
 	<p>
-		[lilaya.speech(Rose?! Are you ok?!)] Lilaya worriedly asks as she sees Rose's eyes blinking open.
-		#IF(!pc.isFeminine())
-			 Joining your [lilaya.relation(pc)] in looking down at the cat-girl, you're alarmed to see her gaze instantly locking onto your body, and from the desperate, hungry gleam in her [rose.eyes+], it almost looks as though she's about to pounce on you.
+		[lilaya.speech(Rose?! Ты в порядке?!)] — обеспокоенно спрашивает Lilaya, видя, как Rose начинает хлопать ресницами.
+	<p>		#IF(!pc.isFeminine())
+			 Вместе со своей [lilaya.relation(pc)], глядя на кошкодевочку сверху вниз, ты с тревогой замечаешь, как её взгляд мгновенно приковывается к твоему телу. Судя по отчаянному, голодному блеску в её [rose.eyes+], кажется, она вот-вот на тебя набросится.
 		#ELSE
-			 Joining your [lilaya.relation(pc)] in looking down at the cat-girl, you're alarmed to see her gaze instantly locking onto Arthur's body, and from the desperate, hungry gleam in her [rose.eyes+], it almost looks as though she's about to pounce on him.
+			 Вместе со своей [lilaya.relation(pc)], глядя на кошкодевочку сверху вниз, ты с тревогой замечаешь, как её взгляд мгновенно приковывается к телу Arthur. Судя по отчаянному, голодному блеску в её [rose.eyes+], кажется, она вот-вот на него набросится.
 		#ENDIF
 	</p>
 	<p>
-		Before she's able to take such a drastic action, however, the cat-girl closes her eyes and gives her head a little shake, and when she opens them again, you see that she's back to looking her normal self. Gazing lovingly up into Lilaya's eyes, she softly sighs, [rose.speech(I... I'm ok...)]
+	Однако, прежде чем она успевает совершить столь решительное действие, кошкодевочка закрывает глаза и слегка трясет головой. Когда она открывает их снова, ты видишь, что к ней вернулся привычный вид. Любовно глядя в глаза Lilaya, она тихо вздыхает: [rose.speech(Я... я в порядке...)]
 	</p>
 	<p>
-		[lilaya.speech(I'm so relieved!)] Lilaya cries out, before pulling Rose into a big hug and tightly squeezing her up against her body. After a moment of this, your passionate [lilaya.relation(pc)] helps Rose to her feet, before explaining, [lilaya.speech(I was able to stop the test before your change in orientation became permanent, and, more importantly, before a surge of corruptive arcane energy seeped into your mind.)]
+	[lilaya.speech(Какое облегчение!)] — восклицает Lilaya, прежде чем крепко прижать Rose к себе в объятиях. Спустя мгновение твоя страстная [lilaya.relation(pc)] помогает Rose подняться на ноги, после чего Lilaya объясняет: [lilaya.speech(Мне удалось остановить тест до того, как твоя смена ориентации стала необратимой, а главное — до того, как поток развращающей энергии Аркана просочился в твой разум.)]
 	</p>
 	<p>
-		[arthur.speech(Oh my! I didn't know that could be a side-effect,)] Arthur says, scratching his head as he steps forwards. [arthur.speech(It's a good job you were the one to carry out the test, Lilaya. I wouldn't have been able to sense something like that...)]
+	[arthur.speech(Ого! Не знал, что это может быть побочным эффектом,)] — говорит Arthur, почесывая затылок и делая шаг вперед. [arthur.speech(Хорошо, что тест проводила именно ты, Lilaya. Я бы и не заметил ничего подобного...)]
 	</p>
 	<p>
-		[lilaya.speech(If this had done any permanent damage to my dear Rose, you'd have been in serious trouble!)] Lilaya shouts, turning her worry into fury as she angrily scowls at Arthur, [lilaya.speech(You absolutely cannot be trusted with something like this!)]
+		[lilaya.speech(Если бы это нанесло моей дорогой Роуз хоть какой-то непоправимый вред, у тебя были бы серьезные неприятности!)] — кричит Lilaya, превращая свое беспокойство в ярость и гневно смотря на Arthur, [lilaya.speech(Тебе абсолютно нельзя доверять такие вещи!)]
 	</p>
 	<p>
-		Snatching the watch from out of Arthur's grasp, she waves her hand over the face and takes a few seconds to channel her energy into removing the orientation-changing enchantment. The watch face's swirling vortex fades away, leaving it looking like a regular old broken pocket watch, and, satisfied with the result, Lilaya hands it to you, saying, [lilaya.speech(I've removed the enchantment, so there's no fear of accidentally subjecting anyone else to those effects. Now that you've seen how dangerous this can be, I'm sure you have a great respect for its power, so you can hold on to it and keep it safe.)]
+		Выхватив часы из рук Arthur, она проводит рукой над циферблатом, тратя несколько секунд на то, чтобы направить свою Энергию на снятие чар, меняющих ориентацию. Вихрь на циферблате исчезает, и часы начинают выглядеть как обычные старые сломанные карманные часы. Довольная результатом, Lilaya протягивает их тебе, говоря: [lilaya.speech(Я сняла чары, так что теперь нет страха, что кто-то еще случайно попадет под их действие. Теперь, когда ты увидел, насколько это может быть опасно, я уверена, что ты с большим уважением отнесешься к их силе, так что можешь забрать их и хранить в сохранности.)]
 	</p>
 	<p>
-		You take the watch from Lilaya, nodding at her words before assuring her, [pc.speech(I'll take good care of it.)]
+		Ты забираешь часы у Lilaya, кивая в ответ на её слова и заверяя её: [pc.speech(Я буду бережно с ними обращаться.)]
 	</p>
 	<p>
-		Turning to Arthur, Lilaya angrily scowls at him once more, [lilaya.speech(I expect a full report on my desk by this time tomorrow! If it's one minute late, then I'll confiscate the rest of your research!)]
+		Повернувшись к Arthur, Lilaya снова гневно смотрит на него: [lilaya.speech(Жду полный отчет у себя на столе завтра к этому же времени! Если опоздаешь хоть на минуту, я конфискую все остальные твои исследования!)]
 	</p>
 	<p>
-		With that, Lilaya grabs Rose by the arm and strides out of the room, leaving you alone with Arthur. Glancing at you with a rather defeated-looking expression on his face, he wearily sighs, [arthur.speech(Well, it <i>does</i> work, at least... Sorry about all that, [pc.name]. Oh, and don't tell Lilaya, but I believe you should also have no trouble enchanting that watch to alter people's speech characteristics. I really should get on with this report now...)]
+		С этими словами Lilaya хватает Rose за руку и стремительно выходит из комнаты, оставляя тебя наедине с Arthur. Бросив на тебя довольно подавленный взгляд, он устало вздыхает: [arthur.speech(Ну, это <i>все-таки</i> работает, по крайней мере... Прости за весь этот беспорядок, [pc.name]. О, и не говори Lilaya, но, думаю, у тебя не возникнет проблем с тем, чтобы наложить на эти часы чары, меняющие манеру речи. Пожалуй, мне пора заняться отчетом...)]
 	</p>
 	<p>
-		With the hypnotic, orientation-changing watch now in your possession, you leave Arthur to get on with his work and step out of his room...
+		Теперь, когда гипнотические, меняющие восприятие часы у тебя, ты оставляешь Arthur за работой и выходишь из его комнаты...
 	</p>
 	]]>
 	</htmlContent>
@@ -430,29 +431,29 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_START"><![CDATA[
 	<p>
-		Thinking that Arthur is the right person to ask about the matter, you show him your arcane lightning globe, and explain to him how you found it in the Enforcer warehouse. His eyes light up as you place the arcane artefact on his desk, and he rudely interrupts the end of your tale to exclaim, [arthur.speech(Bloody hell! This looks to be some kind of container for arcane lightning! No, wait, it's not actually <i>creating</i> the lightning, is it?! You say those pig-headed Enforcers were holding on to this?)]
+		Понимая, что Arthur — именно тот, у кого стоит спросить об этом деле, ты показываешь ему свой шар с арканной молнией и рассказываешь, как нашла его на складе Enforcer. Когда ты кладешь арканный артефакт на его стол, его глаза загораются, и он грубо перебивает тебя на полуслове, восклицая: [arthur.speech(Черт возьми! Похоже, это какой-то контейнер для арканной молнии! Нет, погоди, он ведь на самом деле не <i>создает</i> молнию?! Ты хочешь сказать, что эти упрямые Enforcer держали это у себя?!)]
 	</p>
 	<p>
-		Responding in the affirmative, you finish your tale of how you discovered it, before asking Arthur if he knows of any way to more reliably harness its power.
+		Подтвердив его догадку, ты заканчиваешь свой рассказ о находке, а затем спрашиваешь Arthur, знает ли он способ более надежно обуздать силу этого предмета.
 	</p>
 	<p>
-		[arthur.speech(Hmm, yes, well, that is the question, isn't it?)] he muses as he experimentally prods the globe's smooth glass surface. Smiling in delight as the arcane object lights up in response to his touch, Arthur grabs a nearby piece of paper and starts furiously scribbling down notes. Suddenly seeming to remember that you're still here, he clears his throat and offers, [arthur.speech(I'm certain that given enough time and arcane essences, I'd be able to extract the secrets of this object's power. Of course, performing such a procedure will certainly cause irreversible damage to it, but just think of the secrets we could discover! Why, I'll bet that I could formulate a spell nobody's ever seen before!)]
+		[arthur.speech(Хм, да, ну, в этом-то и вопрос, не так ли?)] — размышляет он, экспериментально прощупывая гладкую стеклянную поверхность шара. С восхищенной улыбкой наблюдая, как арканный объект вспыхивает в ответ на его прикосновение, Arthur хватает лежащий рядом листок бумаги и начинает яростно набрасывать заметки. Внезапно вспомнив, что ты всё еще здесь, он откашливается и предлагает: [arthur.speech(Я уверен, что если потратить достаточно времени и арканных эссенций, я смогу вытянуть секреты силы этого предмета. Конечно, такая процедура наверняка нанесет ему необратимый ущерб, но только представь, какие тайны мы сможем раскрыть! Да я готов поспорить, что смогу сформулировать заклинание, которого еще никто и в глаза не видел!)]
 	</p>
 	<p>
-		Asking Arthur what exactly he's asking for, you wait as he silently thinks for a few moments, before declaring, [arthur.speech(I'll need five hundred arcane essences. Also, the globe itself is almost certainly going to be destroyed in the process. Oh, and it's going to take me a couple of weeks to finish my research. I should be able to convince Lilaya to give me that long...)]
+		Спросив Arthur, чего именно он хочет, ты ждешь, пока он несколько мгновений молча обдумывает ответ, прежде чем заявить: [arthur.speech(Мне понадобится пятьсот арканных эссенций. Кроме того, сам шар почти наверняка будет уничтожен в процессе. О, и мне потребуется пара недель, чтобы закончить исследование. Думаю, я смогу убедить Lilaya дать мне столько времени...)]
 	</p>
 	<p>
-		With it now being your turn to think for a moment, you need to decide whether or not to agree to Arthur's proposal. You'll have to let him extract five hundred essences from your aura, and also agree to let him destroy the globe in the process of unlocking its secrets. In return, you'll gain a spell that you won't be able to find anywhere else...
+		Теперь настала твоя очередь подумать: стоит ли соглашаться на предложение Arthur. Тебе придется позволить ему извлечь пятьсот эссенций из твоей Ауры, а также согласиться на то, что в процессе раскрытия тайн шар будет разрушен. Взамен ты получишь Заклинание, которое не сможешь найти больше нигде...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_START_LEAVE"><![CDATA[
 	<p>
-		Not wanting to agree to Arthur's proposal right now, you tell him that the secrets of the arcane globe will have to remain a mystery for at least a while longer. Letting out a frustrated sigh, Arthur throws his hands up in the air and laments, [arthur.speech(But just think of the arcane research we could discover! Speaking of which, I have some very important matters to attend to, so if you'll excuse me...)]
+		Не желая соглашаться на предложение Arthur прямо сейчас, ты говоришь ему, что тайны арканного шара должны еще какое-то время оставаться загадкой. Издав разочарованный вздох, Arthur вскидывает руки вверх и сетует: [arthur.speech(Но только представь, какие арканные исследования мы могли бы провести! Кстати говоря, у меня есть несколько очень важных дел, так что если позволишь...)]
 	</p>
 	<p>
-		Giving him some space, you pick up the arcane lightning globe and exit Arthur's room. [pc.Stepping] back out into the corridor, you wonder what to do next...
+		Дав ему немного пространства, ты берешь арканный шар с молниями и выходишь из комнаты Arthur. [pc.Stepping] выйдя обратно в коридор, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -461,20 +462,20 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_PAYMENT"><![CDATA[
 	<p>
-		Deciding that the loss of the arcane lightning globe is worth it in return for a unique spell, you give it to Arthur and tell him that you're happy to let him run his destructive experiments on it. Letting out a delighted, and slightly manic, laugh in response, Arthur asks, [arthur.speech(And do you have five hundred essences in that remarkable aura of yours?)]
+		Решив, что потеря арканного грозового шара стоит получения уникального заклинания, ты отдаешь его Arthur и говоришь, что с радостью позволишь ему проводить над ним свои разрушительные эксперименты. Издав восторженный и слегка маниакальный смешок, Arthur спрашивает: [arthur.speech(А найдется ли в твоей удивительной ауре пятьсот эссенций?)]
 	</p>
 	<p>
-		Replying in the affirmative, you give Arthur permission to use one of the many arcane contraptions in his room to extract these essences. As he activates a curious, vacuum-like instrument and begins the process of extracting your essences, he muses, [arthur.speech(I wonder who made this lightning globe... You know, there's an arcane university in the city of Thinis. If I were a betting man, I'd wager that it was created by one of the professors there. After that, it's easy to imagine how the Enforcers would have confiscated it, believing it to be a dangerous weapon. They've always been like that, interfering with our research...)]
+		Подтвердив его слова, ты разрешаешь Arthur использовать одну из многочисленных арканных приблуд в его комнате, чтобы извлечь эти эссенции. Пока он активирует любопытный вакуумный инструмент и начинает процесс извлечения твоих эссенций, он размышляет: [arthur.speech(Интересно, кто создал этот грозовой шар... Знаешь, в городе Тинис есть арканный университет. Будь я азартным человеком, я бы поспорил, что его создал один из местных профессоров. А дальше легко представить, как Enforcer конфисковали бы его, приняв за опасное оружие. Они всегда такие — вечно лезут в наши исследования...)]
 	</p>
 	<p>
-		At that moment, the essence extraction device lets out a high-pitched whistle. With his thoughts interrupted, Arthur turns off the instrument and claps his hands, before declaring, [arthur.speech(Right! Now I'll need about two weeks to really investigate this thoroughly. Come and see me again then, and if all's gone according to plan then I should have a spell waiting for you!)]
+		В этот момент устройство для извлечения эссенций издает пронзительный свист. Прерванный на полуслове, Arthur выключает прибор и хлопает в ладоши, после чего заявляет: [arthur.speech(Так! Теперь мне понадобится около двух недель, чтобы изучить всё как следует. Приходи ко мне снова, и если всё пойдет по плану, тебя будет ждать готовое заклинание!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_PAYMENT_LEAVE"><![CDATA[
 	<p>
-		As he's very obviously impatient to be getting started on the research, you say goodbye to Arthur and head out of his room. [pc.Stepping] back out into the corridor, you wonder what to do next...
+		Поскольку он явно горит желанием поскорее приступить к исследованиям, ты прощаешься с Arthur и выходишь из его комнаты. [pc.Stepping] Выйдя обратно в коридор, ты задумываешься, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -483,36 +484,36 @@
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_END"><![CDATA[
 	<p>
-		With two weeks having passed since you gave him your arcane lightning globe, you ask Arthur if he's finished his research. With a big grin on his face, he quickly replies, [arthur.speech(I certainly have! Oh, and it turned out far better than I could ever have hoped for! I've already shared my results with Lilaya, and she was so impressed that she said she'd consider forgiving me within the next decade!)]
+		Прошло две недели с тех пор, как ты отдала ему свой арканный грозовой шар, и ты спрашиваешь Arthur, закончил ли он свои изыскания. С широкой ухмылкой на лице он быстро отвечает: [arthur.speech(Еще как закончил! О, и всё вышло куда лучше, чем я мог надеяться! Я уже поделился результатами с Lilaya, и она была настолько впечатлена, что пообещала подумать о прощении в течение ближайшего десятилетия!)]
 	</p>
 	<p>
-		Walking over to a bookcase on the far side of his room, Arthur grabs a stack of what must be hundreds of papers, before pulling open a nearby drawer and grabbing a small object from out of it. Striding back over to you, he places the papers down on a nearby table and explains, [arthur.speech(It turns out that the globe's power originated from a sort of teleportation spell which was infused into its core. At a rate of many thousands of times per second, the globe was repeatedly and randomly teleporting a small amount of ordinary air particles through the stratosphere. By a series of incredibly complex arcane mechanisms, the teleportation spell's arcane power was then being infused into the resulting build-up of static electricity. As a result, it created arcane lightning!)]
+		Подойдя к книжному шкафу в дальнем конце комнаты, Arthur хватает стопку, в которой, должно быть, сотни листков, после чего выдвигает ближайший ящик и достает оттуда небольшой предмет. Шагая обратно к тебе, он кладет бумаги на ближайший стол и объясняет: [arthur.speech(Оказывается, сила шара исходила от своего рода заклинания телепортации, вживленного в его ядро. Со скоростью в тысячи раз в секунду шар многократно и хаотично телепортировал небольшое количество обычных частиц воздуха через стратосферу. Благодаря серии невероятно сложных арканных механизмов, магическая мощь заклинания телепортации вливалась в возникающий статический заряд. В результате рождалась арканная молния!)]
 	</p>
 	<p>
-		Wanting to know how to harness this power, you ask Arthur if he was able to make a spell from this discovered behaviour. With a big smile on his face, he leafs through the papers and pulls out a dozen of them, before placing them down in front of you and revealing, [arthur.speech(I not only managed to create the chain lightning spell which I was expecting, but I also managed to refine the equations for summoning arcane lightning into another, more powerful spell! This 'superbolt' spell is far more powerful than chain lightning, although it can only be concentrated into a single point... Anyway, all of the details that you need to learn these spells are written down right here. It's a good job that you've got such a remarkable aura; it would likely take a normal person many weeks or even months to learn these spells, but for you it should take no more than an hour or so.)]
+		Желая узнать, как обуздать эту мощь, ты спрашиваешь Arthur, удалось ли ему создать заклинание на основе этого феномена. С широкой улыбкой на лице он перелистывает бумаги и вытаскивает целую пачку листов, после чего раскладывает их перед тобой и объявляет: [arthur.speech(Мне удалось не только создать заклинание цепной молнии, на которое я рассчитывал, но и уточнить уравнения для призыва арканной молнии, превратив их в другое, куда более мощное заклинание! Это заклинание «суперболта» гораздо сильнее цепной молнии, хотя его энергию можно сконцентрировать лишь в одной точке... В любом случае, все подробности, необходимые для изучения этих заклинаний, записаны прямо здесь. Тебе повезло, что у тебя такая выдающаяся Аура; обычному человеку потребовались бы недели или даже месяцы, чтобы освоить их, но у тебя это должно занять не больше часа.)]
 	</p>
 	<p>
-		With that, Arthur returns to the other side of the room, giving you some time and space in which to read through the papers and learn these two spells...
+		С этими словами Arthur возвращается на другую сторону комнаты, давая тебе время и пространство, чтобы изучить бумаги и выучить эти два заклинания...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_END_FINAL"><![CDATA[
 	<p>
-		Just as Arthur predicted, it takes you less than an hour to read through and fully understand the papers' contents. Thanks to your exceptional arcane aura, you're able to intuitively comprehend what would doubtless prove to be an impenetrable wall of technical information to a normal person. Learning how to cast what Arthur's named 'chain lightning' and 'lightning superbolt', you quickly test these spells out by casting a weakened version of them in mid-air.
+		Как и предсказывал Arthur, тебе требуется меньше часа, чтобы прочитать и полностью осознать содержимое бумаг. Благодаря твоей исключительной арканной ауре ты интуитивно понимаешь то, что для обычного человека, без сомнения, стало бы непреодолимой стеной технических данных. Освоив то, что Arthur назвал «цепной молнией» и «молниеносным суперболтом», ты быстро проверяешь их в деле, выпуская ослабленные версии заклинаний прямо в воздухе.
 	</p>
 	<p>
-		[arthur.speech(All done then?)] Arthur asks as he sees that you've just cast each of the two spells. As you reply in the affirmative, he finally reveals what he'd taken out of the drawer earlier, and places the small object down on the table beside his research papers. Looking down at it, you see that this object is a metal ring, and in place of a gemstone it has what appears to be a miniaturised duplicate of the arcane lightning globe. Nodding his head as you look at it, Arthur gloats, [arthur.speech(I really am quite brilliant, aren't I? I was able to save the core essence of the globe, and implanted it inside that tiny crystal ball. Although the spells which it was once capable of were stripped away as a result of my research, it should be every bit as effective as it once was when being used in a regular manner.)]
+		[arthur.speech(Значит, всё готово?)] — спрашивает Arthur, видя, что ты только что сотворила оба заклинания. Когда ты подтверждаешь это, он наконец достает то, что вытащил из ящика ранее, и кладет небольшой предмет на стол рядом со своими исследовательскими бумагами. Вглядевшись в него, ты понимаешь, что это металлическое кольцо, на месте камня в котором находится нечто, напоминающее миниатюрную копию арканального шара молний. Заметив твой взгляд, Arthur довольно кивает: [arthur.speech(А я чертовски гениален, не так ли? Мне удалось сохранить ядро эссенции шара и поместить его внутрь этого крошечного хрустального шарика. И хотя из-за моих исследований заклинания, которыми он когда-то обладал, были утрачены, он должен быть столь же эффективен, как и прежде, если использовать его по назначению.)]
 	</p>
 	<p>
-		Beckoning for you to take it, Arthur pushes his glasses up onto the bridge of his nose and concludes, [arthur.speech(Thanks to my experiments, I've got enough raw data to keep me occupied for at least the next year. I'm not going to be able to produce any more practical applications from it, like those two spells, but it should make for some fine research publications once I'm done. Thank you for allowing me to experiment on that globe, [pc.name]. Now if you'll excuse me, I have to get back to work...)] 
+		Приглашая тебя взять его, Arthur поправляет очки на переносице и заключает: [arthur.speech(Благодаря моим экспериментам у меня теперь достаточно необработанных данных, чтобы занять себя как минимум на следующий год. Мне не удастся создать на их основе новые практические применения, вроде тех двух заклинаний, но когда я закончу, это станет отличным материалом для научных публикаций. Спасибо, что позволила мне поэкспериментировать с тем шаром, [pc.name]. А теперь прошу меня извинить, мне пора возвращаться к работе...)] 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_ARTHUR_ARCANE_LIGHTNING_END_FINAL_LEAVE"><![CDATA[
 	<p>
-		Thanking Arthur for the spells and for the arcane lightning ring, you say goodbye to him and head out of his room. [pc.Stepping] back out into the corridor, you wonder what to do next...
+		Поблагодарив Arthur за заклинания и арканальное кольцо молний, ты прощаешься с ним и выходишь из его комнаты. Выйдя [pc.Stepping] обратно в коридор, ты задумываешься о том, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>

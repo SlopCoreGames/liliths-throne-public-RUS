@@ -3,7 +3,7 @@
 
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	<p>
-		Set back from one of the main streets, and with Dominion's canal running close behind it, there's an expansive lumber yard, with a couple of large warehouses sitting in the middle of it. An impressive wrought-iron sign over the entrance to this area declares it be 'Argus's DIY Depot', while smaller, wooden signs attached to the supporting posts reveal that the warehouses are open from 
+		Расположенный в стороне от главных улиц, этот район примыкает к каналу Dominion. Здесь раскинулся огромный лесопильный двор, в центре которого стоят два больших склада. Над входом в эту зону красуется внушительная кованая вывеска «Магазин товаров для дома „Аргус“», а на деревянных табличках, прикрепленных к опорным столбам, указано, что склады открыты с 
 		#IF(game.isExtendedWorkTime())
 			 [style.colourMinorGood([units.time(6)]-[units.time(22)])].
 		#ELSE
@@ -11,21 +11,21 @@
 		#ENDIF
 	</p>
 	<p>
-		Looking across at the warehouses, you see that one is quite clearly signposted as being open to the general public, while the other is apparently just for supplying small businesses. Huge posters advertising cans of paint, ceramic tiles, tools, timber, and all manner of miscellaneous building supplies have been plastered all over the walls of these warehouses, letting passersby know the sort of things which can be purchased here.
+		Глядя на склады, ты замечаешь, что на одном из них висит четкая табличка, сообщающая об открытости для широкой публики, в то время как другой, судя по всему, служит лишь для снабжения малого бизнеса. Стены складов обклеены огромными плакатами с рекламой банок с краской, керамической плитки, инструментов, древесины и прочих строительных материалов, давая прохожим понять, что здесь можно купить.
 	</p>
 	<p>
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			As there's an arcane storm raging overhead, your surroundings are almost completely deserted, with only the occasional demon to be seen walking down the nearby street.
+			Поскольку над головой бушует арканный шторм, вокруг почти пусто — лишь изредка по близлежащей улице можно заметить какого-нибудь демона.
 			#IF(game.isExtendedWorkTime())
-				 As the warehouses are [style.colourGood(currently open)], you wonder how many people are inside due to legitimate business, and how many are just making use of the building to take shelter from the storm. If you wanted to, you could always head inside the one signposted as being open to the public and do some shopping for DIY or building supplies.
+				 Поскольку склады [style.colourGood(сейчас открыты)], ты гадаешь, сколько людей внутри по делу, а сколько просто укрылись от шторма. Если захочешь, ты всегда можешь зайти в тот склад, что открыт для всех, и закупиться всякой всячиной для дома или стройматериалами.
 			#ELSE
-				 Unfortunately, due to the time of day, the warehouses are [style.colourBad(currently closed)], so if you wanted to do any shopping for DIY or building supplies, you'll have to return at a more sociable hour.
+				К сожалению, из-за времени суток склады [style.colourBad(сейчас закрыты)], так что если ты хочешь закупиться стройматериалами или инструментами для дома, придется вернуться в более людное время.
 			#ENDIF
 		#ELSE
 			#IF(game.isExtendedWorkTime())
-				As the warehouses are [style.colourGood(currently open)], you could always head inside the one signposted as being open to the public and do some shopping for DIY or building supplies.
+				Поскольку склады [style.colourGood(сейчас открыты)], ты можешь зайти в тот, что открыт для посетителей, и закупиться всякими стройматериалами или инструментами для дома.
 			#ELSE
-				Unfortunately, due to the time of day, the warehouses are [style.colourBad(currently closed)], so if you wanted to do any shopping for DIY or building supplies, you'll have to return at a more sociable hour.
+				К сожалению, из-за времени суток склады [style.colourBad(сейчас закрыты)], так что если ты хочешь закупиться стройматериалами или инструментами для дома, придется вернуться в более людное время.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -37,10 +37,10 @@
 	
 	<htmlContent tag="ENTRANCE"><![CDATA[
 	<p>
-		The first thing anyone notices upon entering this warehouse is the large, colourful sign hanging from its high ceiling, which bears the exclamation, '<i>Welcome to Argus's DIY Depot!</i>'
+		Первое, что бросается в глаза при входе в этот склад, — это огромная яркая вывеска, свисающая с высокого потолка, на которой красуется восклицание: '<i>Добро пожаловать в хозяйственный магазин Аргуса!</i>'
 	</p>
 	<p>
-		In stark contrast to this cheery message, the rest of the scene which greets new customers is a distinctly boring one, consisting of a series of a dozen or so checkouts, several rows of trolleys, and a rather uninspired collection of ordinary garden plants. Taking a brief look around, you notice that less than half of these checkouts are currently staffed, which is causing a small queue of customers to build up at each one. In addition to the employees working behind these tills, there's a solitary security guard standing watch near the front doors, who seems to be doing little else but casting suspicious glances at everyone who walks past him.
+		В резком контрасте с этим бодрым приветствием, остальная обстановка, встречающая покупателей, выглядит на редкость скучно: около дюжины касс, несколько рядов тележек и довольно унылая коллекция обычных садовых растений. Осмотревшись, ты замечаешь, что за кассами работает меньше половины сотрудников, из-за чего у каждой из них начинает скапливаться небольшая очередь. Помимо кассиров, у входных дверей стоит одинокий охранник, который, кажется, не делает ничего другого, кроме как бросает подозрительные взгляды на каждого проходящего мимо.
 	</p>
 	]]>
 	</htmlContent>
@@ -50,24 +50,24 @@
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		The interior of 'Argus's DIY Depot' is just as dull to the casual shopper as one would expect. Drab, grey concrete flooring perfectly matches the monotone steel roof high up ahead, while the goods stacked up on the tall shelves would be best described as being distinctly unremarkable. From boxes of screws to flooring tiles, arcane light bulbs to stacks of wooden planks, there really isn't anything here that threatens to hold your interest for more than a fraction of a second.
+		Интерьер «Магазина товаров для дома Аргуса» такой же скучный, каким его и ожидаешь увидеть. Серая бетонная плита на полу идеально гармонирует с монотонной стальной крышей высоко над головой, а товары, громоздящиеся на высоких стеллажах, можно описать одним словом — заурядные. От коробок с саморезами до напольной плитки, от аркана-лампочек до штабелей деревянных досок — здесь нет ничего такого, что могло бы удержать твой интерес дольше доли секунды.
 	</p>
 	<p>
-		As you continue forwards, your progress is regularly impeded by groups of slow-moving shoppers, and occasionally also by the odd shopping trolley inconsiderately positioned so as to be blocking half of the aisle. All of this, combined with the unbearably repetitive background music being piped through the store's loudspeakers, makes you think that prolonged exposure to this environment would surely be enough to drive anybody completely insane.
+		По мере того как ты идешь вперед, твой путь то и дело преграждают группы медлительных покупателей, а иногда и чья-то неосторожно брошенная тележка, перегородившая половину прохода. Все это, в сочетании с невыносимо однообразной фоновой музыкой, доносящейся из магазинных динамиков, наводит на мысль, что долгое пребывание в такой обстановке наверняка сведет любого с ума.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_PAINT_OPTIONS"><![CDATA[
 	<p>
-		Informative signs are helpfully positioned throughout the warehouse, and after consulting the nearest one, you discover that the 'Premium-grade Supplies' are kept near the front entrance. This would undoubtedly be the place to go if you were intending to buy the 'Purple-star' paint which Helena specified. Then again, if you wanted to save some money, and are prepared to run the risk of annoying Helena, you could head over to the sides of the warehouse, where the 'Standard-grade Supplies' are marked as being kept...
+		По всему складу развешаны информационные таблички, и, изучив ближайшую, ты узнаешь, что «Товары премиум-класса» находятся рядом с главным входом. Это определенно то место, куда стоит направиться, если ты намерен купить краску «Пурпурная звезда», которую указала Helena. С другой стороны, если ты хочешь сэкономить и готов рискнуть тем, что разозлишь Helena, можно пройти к боковым сторонам склада, где, согласно указателям, расположены «Товары стандартного класса»...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_PAINT_PURCHASED"><![CDATA[
 	<p>
-		<i>As you've already purchased a can of golden paint, you should return to Helena and deliver it to her as soon as possible.</i>
+		<i>Раз уж ты купил банку золотой краски, тебе стоит поскорее вернуться к Helena и отдать её ей.</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -77,13 +77,13 @@
 	
 	<htmlContent tag="SHELVING_PREMIUM"><![CDATA[
 	<p>
-		Tall shelving units have been lined up to form a solid wall in front of you, and you see that each one of them is stocked full of almost every type of building supply imaginable. While the products on display don't look particularly special, their prices are listed as being anything up to ten times what they ordinarily should be. The reason for these astronomical costs seems to be that these shelves are labelled as containing 'Premium-grade supplies'. 
+		Перед тобой выстроились высокие стеллажи, образуя сплошную стену, заставленную почти всеми мыслимыми видами строительных материалов. Хотя товары на витринах не выглядят чем-то особенным, цены на них указаны в десять раз выше обычных. Похоже, причина такой астрономической стоимости в том, что на полках красуются ярлыки «Расходные материалы премиум-класса». 
 	</p>
 	<p>
 		#IF(pc.hasTraitActivated(PERK_OBSERVANT))
-			Taking a quick look around, you see that while there are quite a few customers browsing these shelves, not a single one looks like they know what they're doing. Perhaps there's a reason why these supplies don't seem to be attracting the attention of the more experienced shoppers... 
+			Осмотревшись по сторонам, ты замечаешь, что у полок стоит немало покупателей, но ни один из них не выглядит так, будто он понимает, что делает. Возможно, именно поэтому эти товары не привлекают внимания более опытных покупателей... 
 		#ELSE
-			Taking a quick look around, you see that there are quite a few customers browsing these shelves. If popularity is any measure, then perhaps these supplies are worth their steep price after all...
+			Осмотревшись по сторонам, ты видишь, что у полок стоит немало покупателей. Если судить по популярности, то, возможно, эти товары всё же стоят своих заоблачных цен...
 		#ENDIF
 	</p>
 	]]>
@@ -91,14 +91,14 @@
 	
 	<htmlContent tag="SHELVING_PREMIUM_PRICE"><![CDATA[
 	<p>
-		A few of the shelves in this area are stocked with nothing but 'Purple-star' branded cans of paint. Heading over to the section which has been set aside for metallic colours, you quickly locate the can of golden paint [style.colourGood(which Helena requested)]. Just as it was in the brochure, it's marked up as costing [style.colourGold([#SPECIAL_PARSE_0] flames)], which is significantly more expensive than the 'Bronze-star' brand...
+		Некоторые полки в этой зоне заставлены исключительно банками краски под брендом «Purple-star». Подойдя к секции с металлическими цветами, ты быстро находишь ту самую банку золотой краски [style.colourGood(которую просила Helena)]. Как и в рекламном буклете, цена на неё составляет [style.colourGold([#SPECIAL_PARSE_0] Огней)], что значительно дороже бренда «Bronze-star»...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SHELVING_PAINT_PURCHASED"><![CDATA[
 	<p>
-		<i>As you've already purchased a can of golden paint for Helena, there's nothing more for you to do here...</i>
+		<i>Раз уж ты уже купил банку золотой краски для Helena, здесь тебе больше делать нечего...</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -108,13 +108,14 @@
 	
 	<htmlContent tag="SHELVING_STANDARD"><![CDATA[
 	<p>
-		Each side of the warehouse is lined with a series of tall shelves, and as you stand before them, you see that they're stocked full of all manner of miscellaneous building supplies. While the prices displayed next to each item seem to be very reasonable, there are several small signs reminding you that these 'Standard-grade supplies' are not the finest quality goods which are on offer, and that if you want the very best, you should head back to browse over the 'Premium-grade supplies' located near to the entrance.
+		Вдоль каждой стены склада тянутся ряды высоких стеллажей, заставленных всевозможными строительными материалами. Хотя цены рядом с каждым товаром кажутся весьма разумными, повсюду виднеются небольшие таблички, напоминающие, что эти «товары стандартного качества» — далеко не лучшее, что здесь можно найти. Если же тебе нужно самое лучшее, стоит вернуться назад и заглянуть в отдел «товаров премиум-класса» у самого входа.
 	</p>
 	<p>
 		#IF(pc.hasTraitActivated(PERK_OBSERVANT))
-			Taking a quick look around, you see that not only are there lots of people browsing the goods in this section, but there are also several of them who look to be experienced shoppers. Perhaps there's a reason why these people are over here instead of at the more expensive 'Premium-grade supplies' section... 
+			Осмотревшись, ты замечаешь, что в этом отделе не только полно покупателей, но среди них есть и те, кто выглядит как опытные завсегдатаи. Возможно, есть причина, по которой эти люди выбирают именно это место, а не дорогой отдел «премиум-класса»... 
 		#ELSE
-			Taking a quick look around, you see that there are a lot of customers browsing these shelves. It seems as though most people either don't care about getting the 'Premium-grade supplies', or simply can't afford them...
+		
+Осмотревшись, ты видишь, что у этих полок толпится много покупателей. Похоже, большинству либо плевать на «товары премиум-класса», либо они им просто не по карману...
 		#ENDIF
 	</p>
 	]]>
@@ -122,7 +123,7 @@
 	
 	<htmlContent tag="SHELVING_STANDARD_PRICE"><![CDATA[
 	<p>
-		A few of the shelves in this area are stocked with nothing but 'Bronze-star' branded cans of paint. Heading over to the section which has been set aside for metallic colours, you quickly locate a can of golden paint. Just as it was in the brochure, it's marked up as costing [style.colourBronze([#SPECIAL_PARSE_0] flames)], which, while being significantly cheaper than the 'Purple-star' brand, is also [style.colourBad(not the one which Helena requested)]...
+		Некоторые полки здесь заставлены исключительно банками с краской марки «Бронзовая звезда». Подойдя к отделу с металлическими цветами, ты быстро находишь банку золотой краски. Как и было обещано в брошюре, цена составляет [style.colourBronze([#SPECIAL_PARSE_0] Огней)], что, хоть и значительно дешевле бренда «Пурпурная звезда», всё же [style.colourBad(не то, что просила Helena)]...
 	</p>
 	]]>
 	</htmlContent>
@@ -133,21 +134,21 @@
 	<htmlContent tag="PAINT_PURCHASED"><![CDATA[
 	#IF(pc.getRace().equals(RACE_DEMON))
 		<p>
-			Picking up the can of golden paint, you quickly make your way over to the checkouts, before joining on at the end of the shortest queue. As the customers notice your approach, and see that you're [pc.a_race], they quickly move aside to let you move to the front. The employee behind the till immediately stops serving the customer she was dealing with, and offers, [style.speechFeminine(Good [style.afternoon], [pc.maam], please let me take that for you.)]
+		Взяв банку золотой краски, ты быстро направляешься к кассам и встаёшь в конец самой короткой очереди. Когда покупатели замечают твой подход и видят, что ты [pc.a_race], они тут же расступаются, давая тебе пройти вперёд. Кассирша мгновенно прерывает обслуживание текущего клиента и предлагает: [style.speechFeminine(Добрый день, [style.afternoon], [pc.maam], позвольте мне принять у вас покупку.)]
 		</p>
 		<p>
-			Doing as the helpful cashier says, you hand the can of paint over to her, along with the [#SPECIAL_PARSE_0] flames required to purchase it. Once the transaction is complete, you head over towards the warehouse's exit, ignoring the apologetic remarks of several customers who hurry to move out of your way.
+		Послушавшись любезной кассирши, ты протягиваешь ей банку краски вместе с [#SPECIAL_PARSE_0] Огнями, необходимыми для оплаты. Как только сделка завершена, ты направляешься к выходу со склада, игнорируя извиняющиеся реплики нескольких покупателей, которые спешат поскорее уступить тебе дорогу.
 		</p>
 	#ELSE
 		<p>
-			Picking up the can of golden paint, you quickly make your way over to the checkouts, before joining on at the end of the shortest queue. After what seems to take an eternity, you finally reach the front of the line, whereupon the employee behind the till drones in a monotonous tone, [style.speechFeminine(Good [style.afternoon], [pc.maam], please let me take that for you.)]
+			Схватив банку золотой краски, ты быстро направляешься к кассам и встаешь в конец самой короткой очереди. После того что кажется вечностью, ты наконец подходишь к кассе, где сотрудница за прилавком монотонным голосом произносит: [style.speechFeminine(Хороший [style.afternoon], [pc.maam], позвольте мне взять это для вас.)]
 		</p>
 		<p>
-			Doing as the bored cashier says, you hand the can of paint over to her, along with the [#SPECIAL_PARSE_0] flames required to purchase it. Once the transaction is complete, you head over towards the warehouse's exit, ignoring the suspicious glare which the security guard throws your way.
+			Как и велела скучающая кассирша, ты протягиваешь ей банку краски вместе с необходимым количеством [#SPECIAL_PARSE_0] огней. Как только транзакция завершена, ты направляешься к выходу со склада, игнорируя подозрительный взгляд, который бросает на тебя охранник.
 		</p>
 	#ENDIF
 	<p>
-		With the double doors right ahead of you, you wonder whether you should head back out into the streets of Dominion right away, or head back into the store and look around a little more before leaving...
+		Двойные двери прямо перед тобой. Ты раздумываешь, стоит ли сразу выйти на улицы Dominion или же вернуться в магазин и осмотреться еще немного, прежде чем уйти...
 	</p>
 	]]>
 	</htmlContent>
@@ -157,10 +158,10 @@
 	
 	<htmlContent tag="BUILDING_SUPPLIES"><![CDATA[
 	<p>
-		The shelves near the back of the warehouse seem to have been set aside for stockpiling all sorts of building materials. Timber planks, ceramic tiles, metal piping, and all other sorts of miscellaneous supplies can be found here.
+		Полки в глубине склада, кажется, предназначены для хранения всевозможных строительных материалов. Здесь можно найти деревянные доски, керамическую плитку, металлические трубы и прочие всякие мелочи.
 	</p>
 	<p>
-		Looking around, you see that there aren't many people looking around in this section. Most shoppers apparently seem to be more interested in the goods on offer in other parts of the warehouse.
+		Оглядевшись, ты замечаешь, что в этом отделе не так уж много людей. Похоже, большинство покупателей больше интересуются товарами в других частях склада.
 	</p>
 	]]>
 	</htmlContent>
@@ -170,10 +171,10 @@
 	
 	<htmlContent tag="OFFICE"><![CDATA[
 	<p>
-		Although its frosted glass windows run along the entire front length of the warehouse, the manager's office seems to have only the one entrance, which takes the form of the wooden door that you're currently standing in front of. Etched onto a polished brass plate that's fixed to the wall beside this door, you read the words: <i>'Argus's Office: No admittance to the public'</i>
+		Хотя матовые окна тянутся вдоль всей передней части склада, у кабинета менеджера, кажется, есть всего один вход — деревянная дверь, перед которой ты сейчас стоишь. На полированной латунной табличке, закрепленной на стене рядом с дверью, ты читаешь: <i>«Кабинет Аргуса: посторонним вход воспрещен»</i>
 	</p>
 	<p>
-		As you have no business with Argus, you don't see any reason to knock on the door of his office, and so there's nothing for you to do except turn around and head back into the warehouse.
+		Поскольку у тебя нет дел к Аргусу, нет смысла стучать в его дверь, так что тебе остается только развернуться и вернуться обратно в складское помещение.
 	</p>
 	]]>
 	</htmlContent>
@@ -183,16 +184,16 @@
 	
 	<htmlContent tag="TOILETS"><![CDATA[
 	<p>
-		While quite basic, the toilets provided for the store's customers are well maintained, and are far cleaner than you'd expect of an average public restroom. You count just four stalls in here, but this limited number doesn't seem to be an issue,
+		Туалеты для покупателей магазина хоть и довольно простые, но содержатся в чистоте и выглядят куда опрятнее, чем можно было ожидать от обычного общественного санузла. Здесь всего четыре кабинки, но это небольшое количество, кажется, не проблема,
 		#IF(pc.hasCompanions())
-			 as other than you and [com.name],
+			 так как, помимо тебя и [com.name],
 		#ELSE
-			 as other than yourself,
+			 так как, кроме тебя,
 		#ENDIF
-		 there isn't a single person in here. Directly opposite the stalls, there are a series of mirrors and sinks, one of which has been marked as out of order.
+		 здесь нет ни души. Прямо напротив кабинок расположены ряд зеркал и раковин, одна из которых помечена как неисправная.
 	</p>
 	<p>
-		As you walk past the open stalls, you see that the wall separating the two at the far end has had a glory hole cut into it. While it's been taped over on one side, there's really nothing that would be stopping someone from simply peeling this barrier off and making use of it...
+		Проходя мимо открытых кабинок, ты замечаешь, что в стене, разделяющей две крайние, прорезано отверстие для сладострастных утех. Хотя с одной стороны оно заклеено скотчем, на самом деле нет ничего, что помешало бы кому-то просто сорвать эту преграду и воспользоваться им...
 	</p>
 	]]>
 	</htmlContent>
@@ -202,7 +203,7 @@
 	
 	<htmlContent tag="TOILETS_USE"><![CDATA[
 	<p>
-		Stepping into one of the empty stalls, you turn and lock the door behind you, before making use of the toilet. After you've finished, you flush the toilet before making your way over to one of the sinks and washing your [pc.hands]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Зайдя в одну из пустых кабинок, ты поворачиваешься и запираешь дверь, после чего справляешь нужду. Закончив, ты смываешь воду, подходишь к одной из раковин и моешь свои [pc.hands]. Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, оглядывая комнату и раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -212,7 +213,7 @@
 	
 	<htmlContent tag="TOILETS_WASH"><![CDATA[
 	<p>
-		Feeling like you could do with having a quick clean, you step over to the sinks and thoroughly wash your [pc.hands], before splashing some water on your [pc.face]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Чувствуя, что тебе не помешало бы освежиться, ты подходишь к раковинам и тщательно моешь свои [pc.hands], а затем плещешь немного воды в лицо ([pc.face]). Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, оглядывая комнату и раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -222,26 +223,26 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM"><![CDATA[
 	<p>
-		Deciding that it would be fun to get serviced at the glory hole, you peel off the tape that's covering it up, before
+		Решив, что будет весело получить удовольствие через «дыру славы», ты отклеиваешь закрывающий её скотч, после чего
 		#IF(pc.hasCompanions())
-			 telling [com.name] to wait outside and then locking the stall's door behind you.
+			 просишь [com.name] подождать снаружи и запираешь дверь кабинки за собой.
 		#ELSE
-			  locking the stall's door behind you.
+			  запираешь дверь кабинки за собой.
 		#ENDIF
-		 With the restroom still completely deserted, you have little choice but to patiently wait for a stranger to turn up and choose to service you through the glory hole...
+		 Поскольку в уборной по-прежнему никого нет, тебе остается лишь терпеливо ждать, когда появится незнакомец, который захочет обслужить тебя через дыру...
 	</p>
 	<p>
-		Five minutes later, you finally hear someone enter the stall on the other side. With the open glory hole obviously having been the reason they chose to enter this stall, the stranger chooses to immediately kneel down
+		Пять минут спустя ты наконец слышишь, как кто-то заходит в кабинку по ту сторону. Очевидно, открытая дыра стала причиной, по которой незнакомец выбрал именно это место, и он тут же опускается на колени,
 		#IF(npc.isMute())
-			 and push [npc.her] open mouth up to the hole. With an impatient tap on the wall to let you know that [npc.sheIs] there, the stranger prepares to orally service you.
+			 и прижимает [npc.her] к отверстию. Нетерпеливо постучав по стене, чтобы дать тебе понять, что [npc.sheIs] здесь, незнакомец готовится заняться с тобой оральным сексом.
 		#ELSE
-			 and call out through the hole,
+			 и окликает тебя через отверстие,
 			#IF(pc.hasPenis())
-				 [npc.speech(Come on then! Put your cock through here and I'll give it a good suck!)]
+				 [npc.speech(Давай же! Просунь свой член сюда, и я его хорошенько отсосу!)]
 			#ELSEIF(pc.hasVagina())
-				 [npc.speech(Come on then! Push your pussy up against the hole and I'll eat you out!)]
+				 [npc.speech(Ну же! Прижми свою киску к дырке, и я тебя вылижу!)]
 			#ELSE
-				 [npc.speech(Come on then! Give me something to suck already!)]
+				 [npc.speech(Давай же! Дай мне уже что-нибудь пососать!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -250,29 +251,29 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_LEAVE"><![CDATA[
 	<p>
-		Having second thoughts about receiving oral from some random stranger, you back away from the hole and wait for them to give up and leave...
+	Засомневавшись, стоит ли принимать оральный секс от случайного незнакомца, ты отходишь от дырки и ждешь, когда они сдадутся и уйдут...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_START"><![CDATA[
 	<p>
-		Having already waited long enough, you quickly step up to the glory hole,
+	Подождав достаточно долго, ты решительно подходишь к «дырке славы»,
 		#IF(pc.hasPenis())
-			 preparing to have your [pc.cock+] sucked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет сосать твой [pc.cock+].
 		#ELSEIF(pc.hasVagina())
-			 preparing to have your [pc.pussy+] licked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет лизать твой [pc.pussy+].
 		#ELSE
-			 preparing to have your genderless mound licked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет лизать твою бесполую плоть.
 		#ENDIF
 	</p>
 	<p>
-		As [npc.she] sees the approach of your groin, [npc.name] lets out [npc.a_moan+], before shuffling closer to the wall and firmly pressing [npc.her] open mouth up against the hole. 
+	Когда [npc.she] видит приближение твоего паха, [npc.name] издает [npc.a_moan+], после чего прижимается ближе к стене и плотно прижимает [npc.her] открытый рот к дырке.
 		#IF(!npc.isMute())
-			 Letting out [npc.a_moan+], [npc.she] impatiently encourages you to get started, [game.random(
-			[npc.speech(Oh yeah, come on! Let this whore show you what [npc.sheIs] capable of!)]
-			|[npc.speech(~Mmm!~ Oh yeah! Let's get started!)]
-			|[npc.speech(Oh yeah, babe! I'll show you how much of a slut I am!)])]
+			Издавая [npc.a_moan+], [npc.she] нетерпеливо подгоняет тебя, [game.random(
+			[npc.speech(О да, давай! Позволь этой шлюхе показать тебе, на что способна [npc.sheIs]!)]
+			|[npc.speech(~Ммм!~ О да! Давай начнем!)]
+			|[npc.speech(О да, детка! Я покажу тебе, какая я сучка!)])]
 		#ENDIF
 	</p>
 	]]>
@@ -283,10 +284,10 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_POST_SEX"><![CDATA[
 	<p>
-		You step back from the glory hole, grinning as you hear [npc.name] let out a happy little [npc.moan]. As you get your things in order, you see a flash of movement through the hole, before the creak of the adjoining stall's door announces the horny slut's exit.
+		Ты отступаешь от «дыры славы», ухмыляясь при звуке довольного [npc.moan], который издает [npc.name]. Пока ты приводишь вещи в порядок, сквозь отверстие мелькает какое-то движение, а затем скрип двери соседней кабинки возвещает об уходе похотливой шлюхи.
 	</p>
 	<p>
-		Just a moment later, you reach down to unlock the door of your own stall, and as you open it and step back out into the toilets, you see that [npc.name] has already left. With absolutely no idea as to who just orally serviced you, you wonder what to do next...
+		Спустя мгновение ты тянешься к замку своей кабинки, и когда ты открываешь дверь и выходишь обратно в туалет, то видишь, что [npc.name] уже ушла. Совершенно не понимая, кто только что отсосал тебе, ты гадаешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -296,39 +297,39 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB"><![CDATA[
 	<p>
-		Feeling horny and eager to pleasure some stranger's cock, you peel off the tape that's covering up the glory hole, before
+		Чувствуя возбуждение и жажду доставить удовольствие чьему-то чужому члену, ты отклеиваешь скотч, закрывающий «дыру славы», после чего
 		#IF(pc.hasCompanions())
-			 telling [com.name] to wait outside and then locking the stall's door behind you.
+			 просишь [com.name] подождать снаружи и запираешь дверь кабинки за собой.
 		#ELSE
-			  locking the stall's door behind you.
+			  запираешь дверь кабинки за собой.
 		#ENDIF
-		 With the restroom still completely deserted, you have little choice but to patiently wait for a stranger to turn up and have you service them...
+		 Поскольку в уборной по-прежнему никого нет, тебе остается лишь терпеливо ждать, когда появится незнакомец, которому ты сможешь обслужить...
 	</p>
 	<p>
-		Five minutes later, and you finally hear someone enter the stall on the other side. With the open glory hole obviously having been the reason they chose to enter this stall, the stranger immediately steps up to it and starts shifting their clothing out of the way. Just a moment later, and their [npc.cockDescriptive(true)] is being pushed through the hole. Before you can make a move, [npc.name]
+		Пять минут спустя ты наконец слышишь, как кто-то входит в кабинку по ту сторону. Очевидно, что открытая «дыра славы» стала причиной, по которой незнакомец выбрал именно это место: он тут же подходит к ней и начинает сдвигать одежду. Мгновение спустя его [npc.cockDescriptive(true)] просовывается сквозь отверстие. Прежде чем ты успеваешь что-то предпринять, [npc.name]
 		#IF(npc.isMute())
-			 impatiently taps the wall, encouraging you to get started on sucking [npc.her] cock...
+			 нетерпеливо постукивает по стене, призывая тебя приняться за сосание [npc.her] члена...
 		#ELSE
 			#IF(npc.isSelfish())
 				#IF(npc.isFeminine())
-					 barks out a sharp command,
+					 резко командует,
 				#ELSE
-					 lets out a deep growl,
+					 издает низкое рычание,
 				#ENDIF
-				 [game.random(
-				[npc.speech(Come on, slut, get to work!)]
-				|[npc.speech(Start sucking, slut!)]
-				|[npc.speech(Come on, you dirty slut, get started already!)])]
+					 [game.random(
+				[npc.speech(Давай, шлюха, за работу!)]
+				|[npc.speech(Начни сосать, шлюха!)]
+				|[npc.speech(Ну же, грязная шлюха, давай уже начинай!)] )]
 			#ELSE
 				#IF(npc.isFeminine())
-					 sensually [npc.moansVerb],
+					 чувственно [npc.moansVerb],
 				#ELSE
-					 lets out a deep grunt,
+					 издает глубокий стон,
 				#ENDIF
 				 [game.random(
-				[npc.speech(Come on then, show me what you can do!)]
-				|[npc.speech(Get your lips wrapped around my cock!)]
-				|[npc.speech(Come on, get started already!)])]
+				[npc.speech(Ну же, покажи, на что ты способна!)]
+				|[npc.speech(Окутай мой член своими губами!)]
+				|[npc.speech(Давай, начинай уже!!)])]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -337,22 +338,22 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB_LEAVE"><![CDATA[
 	<p>
-		Having second thoughts about servicing some random stranger's cock, you back away from the hole and wait for them to give up and leave...
+	Засомневавшись, стоит ли обслуживать член какого-то случайного незнакомца, ты отстраняешься от отверстия и ждешь, когда он сдастся и уйдет...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB_START"><![CDATA[
 	<p>
-		Having already waited long enough, you quickly kneel down in front of the glory hole,
+	Подождав достаточно долго, ты быстро опускаешься на колени перед отверстием,
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			 before opening your mouth and leaning in towards [npc.namePos] [npc.cock+].
+			 открываешь рот и подаешься вперед к [npc.namePos] [npc.cock+].
 		#ELSE
-			 but as your mouth is blocked, all you can prepare to do is give [npc.name] a handjob.
+			 но так как твой рот чем-то занят, тебе остается только ласкать [npc.name] рукой.
 		#ENDIF
 	</p>
 	<p>
-		Hearing you drop down in front of [npc.herHim], [npc.name] lets out an eager [npc.moan], and as [npc.her] cock starts to stiffen, [npc.she] impatiently bucks [npc.her] [npc.hips] up against the wall.
+	Услышав, как ты опускаешься перед [npc.herHim], [npc.name] издает нетерпеливый [npc.moan], и когда член [npc.her] начинает твердеть, [npc.she] нетерпеливо прижимает [npc.her] [npc.hips] к стене.
 	</p>
 	]]>
 	</htmlContent>
@@ -362,10 +363,10 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_SUB_POST_SEX"><![CDATA[
 	<p>
-		You step back from the glory hole, grinning to yourself as you hear [npc.name] letting out a satisfied [npc.moan]. As you get your things in order, you see a flash of movement through the hole, before the creak of the adjoining stall's door announces the stranger's exit.
+	Ты отступаешь от отверстия, довольно ухмыляясь, когда слышишь удовлетворенный [npc.moan] от [npc.name]. Пока ты приводишь себя в порядок, ты замечаешь какое-то движение в дыре, а затем скрип двери соседней кабинки возвещает об уходе незнакомца.
 	</p>
 	<p>
-		Just a moment later, you reach down to unlock the door of your own stall, and as you open it and step back out into the toilets, you see that [npc.name] has already left. With absolutely no idea as to whose cock you just serviced, you wonder what to do next...
+	Мгновение спустя ты тянешься к замку своей кабинки, и когда ты открываешь дверь и выходишь обратно в туалет, то видишь, что [npc.name] уже ушел. Совершенно не понимая, чей же член ты только что обслужила, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>

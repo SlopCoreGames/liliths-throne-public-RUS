@@ -55,7 +55,20 @@
     "res/txt/places/dominion/enforcerHQ/generic.xml",
     "res/txt/places/dominion/enforcerWarehouse/generic.xml",
     "res/txt/places/dominion/feliciaApartment/apartment.xml",
-    "res/txt/places/dominion/harpyNests/bimbo.xml"
+    "res/txt/places/dominion/harpyNests/bimbo.xml",
+    "res/txt/places/dominion/harpyNests/dominant.xml",
+    "res/txt/places/dominion/harpyNests/generic.xml",
+    "res/txt/places/dominion/harpyNests/helena.xml",
+    "res/txt/places/dominion/harpyNests/nympho.xml",
+    "res/txt/places/dominion/helenaHotel/apartment.xml",
+    "res/txt/places/dominion/helenaHotel/hotel.xml",
+    "res/txt/places/dominion/helenaHotel/hotelDate.xml",
+    "res/txt/places/dominion/homeImprovements/generic.xml",
+    "res/txt/places/dominion/lilayasHome/arthursRoom.xml",
+    "res/txt/places/dominion/lilayasHome/diningHall.xml",
+    "res/txt/places/dominion/lilayasHome/doll_quest.xml",
+    "res/txt/places/dominion/lilayasHome/dressingRoom.xml",
+    "res/txt/places/dominion/lilayasHome/generic.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

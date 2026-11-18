@@ -5,98 +5,98 @@
 	
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	<p>
-		Positioned near the very centre of Dominion, Lilaya's home would be more aptly described as a palace, rather than a town-house. While the surrounding buildings are of an impressive size, you reckon that you could fit at least two or three of them into the plot which your [lilaya.relation(pc)]'s dwelling occupies.
+		Дом Lilaya, расположенный в самом центре Dominion, уместнее назвать дворцом, а не просто городским особняком. Хотя окружающие здания впечатляют своими размерами, ты понимаешь, что на участке, где живет твоя [lilaya.relation(pc)], можно было бы разместить как минимум два или три таких дома.
 	</p>
 	<p>
-		With your demonic [lilaya.relation(pc)] happily treating you as one of her blood-relatives, you've been given full permission to come and go from here as you please. If you wanted to enter the house right now, all you'd need to do is knock on the front door, and you can be sure that Lilaya's cat-girl maid, Rose, will respond in mere moments.
+		Поскольку твоя демоническая [lilaya.relation(pc)] относится к тебе как к родному человеку, тебе позволено приходить и уходить отсюда, когда пожелаешь. Если ты захочешь войти прямо сейчас, достаточно просто постучать в парадную дверь, и ты можешь быть уверен, что кошкодевочка-горничная Lilaya, Rose, откликнется в считанные мгновения.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OUTSIDE_DADDY_PACKAGE"><![CDATA[
 	<p>
-		You knock on the front door, and after only a brief moment, it swings open.
+		Ты стучишь в парадную дверь, и спустя всего мгновение она распахивается.
 	</p>
 	<p>
-		[rose.speech(Welcome back, [pc.name],)] Rose says, curtsying to you as she steps back in order to grant you access to Lilaya's house, [rose.speech(While you were out, a package arrived for you.)]
+	[rose.speech(С возвращением, [pc.name],)] — говорит Rose, приседая в реверансе и отступая в сторону, чтобы пропустить тебя в дом Lilaya, — [rose.speech(Пока тебя не было, тебе пришла посылка.)]
 	</p>
 	<p>
-		As you forwards into the impressive entrance hall, the cat-girl maid retrieves a small box, wrapped in brown packaging paper, from off of the top of a nearby table. Smiling at you one last time, Rose hands the package to you, before excusing herself and quickly hurrying off
+	Когда ты проходишь в величественный вестибюль, кошкодевочка-горничная достает с ближайшего столика небольшую коробку, обернутую в коричневую упаковочную бумагу. В последний раз улыбнувшись тебе, Rose передает тебе посылку, после чего извиняется и быстро убегает
 		#IF(game.isExtendedWorkTime())
-			 in the direction of your [lilaya.relation(pc)]'s laboratory.
+			 в сторону лаборатории твоей [lilaya.relation(pc)].
 		#ELSE
-			 upstairs to go back to sleep.
+			 наверх, чтобы снова лечь спать.
 		#ENDIF
 	</p>
 	<p>
-		Opening the package, you discover that it contains a spell book and several scrolls, along with a small note which reads;
+	Вскрыв посылку, ты обнаруживаешь, что внутри лежит книга заклинаний и несколько свитков, а также небольшая записка, гласящая:
 	</p>
 	<p style='text-align:center;'><i>
-		Hi [pc.name],<br/>
-		Here are the scrolls and spell book which I promised to send to you. Hope this letter finds you well, and look forwards to seeing you again soon!<br/>
-		Love,<br/>
+		Привет, [pc.name],<br/>
+		Вот свитки и книга заклинаний, которые я обещала тебе прислать. Надеюсь, у тебя всё хорошо, и с нетерпением жду нашей скорой встречи!<br/>
+		С любовью,<br/>
 		[daddy.Dad]
 	</i></p>
 	<p>
-		Smiling to yourself as you finish reading the note, you put the contents of the package into your inventory, before discarding the now-empty box and packaging into a nearby waste-paper bin.
+		Улыбаясь про себя после прочтения записки, ты убираешь содержимое посылки в свой инвентарь, а затем выбрасываешь пустую коробку и упаковку в ближайшую корзину для бумаг.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OUTSIDE_DADDY_PACKAGE_SECURITY"><![CDATA[
 	<p>
-		You knock on the front door, and after only a brief moment, it swings open to reveal the familiar figure of your slave, [npc.name].
+		Ты стучишь в парадную дверь, и спустя мгновение она распахивается, являя твоему взору знакомый силуэт твоей рабыни, [npc.name].
 	</p>
 	<p>
 		#IF(npc.isMute())
-			As [npc.sheIs] mute, the [npc.race] simply nods and 
+			Пока [npc.sheIs] молчит, [npc.race] просто кивает и 
 			#IF(npc.isFeminine())
-				 curtsies
+				 делает реверанс
 			#ELSE
-				 bows
+				 кланяется
 			#ENDIF
-			 to you as [npc.she] [npc.steps] back in order to grant you access to Lilaya's house.
+			 тебе, когда [npc.she] [npc.steps] в ответ, чтобы впустить тебя в дом Lilaya.
 		#ELSE
-			[npc.speech(Welcome back, [pc.name],)] the [npc.race] says,
+			[npc.speech(С возвращением, [pc.name],)] говорит [npc.race],
 			#IF(npc.isFeminine())
-				 curtsying
+				 отвешивая реверанс
 			#ELSE
-				 bowing
+				 кланяясь
 			#ENDIF
-			  to you as [npc.she] [npc.steps] back in order to grant you access to Lilaya's house. [npc.speech(While you were out, a package arrived for you.)]
+			  [npc.she] [npc.steps] тебе, отступая, чтобы дать тебе войти в дом Lilaya. [npc.speech(Пока тебя не было, пришла посылка.)]
 		#ENDIF
 	</p>
 	<p>
-		As you forwards into the impressive entrance hall, the security guard retrieves a small box, wrapped in brown packaging paper, from off of the top of a nearby table. Handing you this package, the [npc.race] moves back into position beside the front door.
+	Когда ты проходишь в величественный вестибюль, охранник берет с ближайшего стола небольшую коробочку, завернутую в коричневую упаковочную бумагу. Вручив тебе посылку, [npc.race] возвращается на свое место у входной двери.
 	</p>
 	<p>
-		Opening the package, you discover that it contains a spell book and several scrolls, along with a small note which reads;
+	Вскрыв посылку, ты обнаруживаешь, что внутри лежит книга заклинаний и несколько свитков, а также небольшая записка, гласящая:
 	</p>
 	<p style='text-align:center;'><i>
-		Hi [pc.name],<br/>
-		Here are the scrolls and spell book which I promised to send to you. Hope this letter finds you well, and look forwards to seeing you again soon!<br/>
-		Love,<br/>
+		Привет, [pc.name],<br/>
+		Вот свитки и книга заклинаний, которые я обещала тебе прислать. Надеюсь, у тебя всё хорошо, и с нетерпением жду нашей скорой встречи!<br/>
+		С любовью,<br/>
 		[daddy.Dad]
 	</i></p>
 	<p>
-		Smiling to yourself as you finish reading the note, you put the contents of the package into your inventory, before discarding the now-empty box and packaging into a nearby waste-paper bin. Looking ahead, you wonder whether to proceed into Lilaya's home, or to say something else to [npc.name] first...
+	Улыбаясь про себя после прочтения записки, ты кладешь содержимое посылки в свой Инвентарь, а пустую коробку и обертки выбрасываешь в стоящую рядом корзину для бумаг. Глядя вперед, ты раздумываешь: войти ли в дом Lilaya прямо сейчас или сначала что-нибудь сказать [npc.name]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OUTSIDE_KNOCK_ON_DOOR"><![CDATA[
 	<p>
-		You knock on the front door, and after only a brief moment, it swings open.
+		Ты стучишь в парадную дверь, и спустя всего мгновение она распахивается.
 	</p>
 	<p>
-		[rose.speech(Welcome back, [pc.name],)] Rose says, curtsying to you as she steps back in order to grant you access to Lilaya's house.
+	[rose.speech(С возвращением, [pc.name],)] — говорит Rose, приседая в реверансе и отступая, чтобы дать тебе войти в дом Lilaya.
 	</p>
 	<p>
-		Moving forwards into the impressive entrance hall, you greet the cat-girl maid as she closes the door behind you. Turning to smile at you one last time, Rose then excuses herself, before quickly hurrying off 
+	Проходя в величественный вестибюль, ты приветствуешь кошкодевочку-горничную, пока она закрывает за тобой дверь. В последний раз улыбнувшись тебе, Rose извиняется и поспешно убегает.
 		#IF(game.isExtendedWorkTime())
-			 in the direction of your [lilaya.relation(pc)]'s laboratory.
+			 в сторону лаборатории твоей [lilaya.relation(pc)].
 		#ELSE
-			 upstairs to go back to sleep.
+			 наверх, чтобы снова лечь спать.
 		#ENDIF
 	</p>
 	]]>
@@ -104,27 +104,27 @@
 	
 	<htmlContent tag="OUTSIDE_KNOCK_ON_DOOR_SECURITY"><![CDATA[
 	<p>
-		You knock on the front door, and after only a brief moment, it swings open to reveal the familiar figure of your slave, [npc.name].
+		Ты стучишь в парадную дверь, и спустя мгновение она распахивается, являя твоему взору знакомый силуэт твоей рабыни, [npc.name].
 	</p>
 	<p>
 		#IF(npc.isMute())
-			As [npc.sheIs] mute, the [npc.race] simply nods and 
+			Пока [npc.sheIs] молчит, [npc.race] просто кивает и 
 			#IF(npc.isFeminine())
-				 curtsies
+				 делает реверанс
 			#ELSE
-				 bows
+				 кланяется
 			#ENDIF
-			 to you as [npc.she] [npc.steps] back in order to grant you access to Lilaya's house.
+			 тебе, когда [npc.she] [npc.steps] в ответ, чтобы впустить тебя в дом Lilaya.
 		#ELSE
-			[npc.speech(Welcome back, [pc.name],)] the [npc.race] says,
+			[npc.speech(С возвращением, [pc.name],)] говорит [npc.race],
 			#IF(npc.isFeminine())
-				 curtsying
+				 отвешивая реверанс
 			#ELSE
-				 bowing
+				 кланяясь
 			#ENDIF
-			  to you as [npc.she] [npc.steps] back in order to grant you access to Lilaya's house.
+			  [npc.she] [npc.steps] тебе, чтобы дать тебе войти в дом Lilaya.
 		#ENDIF
-		 Moving forwards into the impressive entrance hall, you greet the security guard as [npc.she] closes the door behind you.
+		Проходя в величественный вестибюль, ты приветствуешь охранника, пока [npc.she] закрывает за тобой дверь.
 	</p>
 	]]>
 	</htmlContent>
@@ -134,13 +134,13 @@
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		Immaculately-clean red carpet runs down the centre of the wide corridor which you're currently [pc.walking] down, while the walls are decorated in a pale, light-blue wallpaper that sports a series of delicate white floral patterns. Fine landscape paintings and portraits of beautiful demons are hung up on the walls at regular intervals, while all manner of antique curiosities are perched upon the many wooden cabinets which line the sides of these hallways.
+		По центру широкого коридора, по которому ты сейчас [pc.walking], тянется безупречно чистый красный ковер. Стены украшены светло-голубыми обоями с изящным белым цветочным узором. Через равные промежутки на стенах развешаны тонкие пейзажи и портреты прекрасных демонов, а на многочисленных деревянных шкафах вдоль стен расставлено всякое антикварное барахло.
 	</p>
 	<p>
 		#IF(game.isDayTime())
-			Large glass windows flood the corridor with an impressive amount of natural daylight, and you notice that Rose seems to be taking care to leave some of them open every now and again, making sure that the air in the house always feels fresh.
+			Огромные стеклянные окна заливают коридор впечатляющим количеством дневного света, и ты замечаешь, что Роуз, кажется, старается время от времени оставлять некоторые из них открытыми, чтобы воздух в доме всегда оставался свежим.
 		#ELSE
-			As it's currently night time, heavy fabric curtains have been drawn over the corridor's large glass windows, leaving the area to be illuminated by the many arcane-powered wall-lights.
+			Поскольку сейчас ночь, тяжелые тканевые шторы задернуты на больших стеклянных окнах коридора, и пространство освещается лишь многочисленными настенными светильниками, работающими на аркане.
 		#ENDIF
 	</p>
 	]]>
@@ -151,99 +151,99 @@
 	
 	<htmlContent tag="ROSE_TALK_LILAYA"><![CDATA[
 	<p>
-		[pc.speech(What can you tell me about Lilaya?)] you ask, wanting to know more about Rose's mistress.
+		[pc.speech(Что ты можешь рассказать мне о Lilaya?)] — спрашиваешь ты, желая узнать побольше о госпоже Роуз.
 	</p>
 	<p>
-		[rose.speech(Well, I can tell you what's publicly known, but as you must understand, I cannot reveal any personal information,)] Rose replies, [rose.speech(My mistress is the recognised daughter of the elder lilin Lyssieth, and as such is at the very top of Dominion's social hierarchy. Despite being invited to nearly every single prestigious social gathering in the city, she prefers to keep herself busy with her arcane experiments and research. This house in which she lives was once owned by her mother, but was given to her as a place in which she could continue with her work without being disturbed.)]
+		[rose.speech(Что ж, я могу поведать тебе то, что известно всем, но, как ты понимаешь, личную информацию раскрывать нельзя,)] — отвечает Rose, — [rose.speech(Моя госпожа — признанная дочь старшей лилин Lyssieth, а значит, она находится на самой вершине социальной иерархии Dominion. Несмотря на то, что её приглашают почти на каждое престижное светское мероприятие в городе, она предпочитает заниматься своими аркана исследованиями и экспериментами. Этот дом когда-то принадлежал её матери, но та подарила его ей, чтобы она могла продолжать свою работу, не отвлекаясь на посторонних.)]
 	</p>
 	<p>
-		Having given you a brief overview of what's publicly known about her mistress, Rose smiles in a somewhat-dutiful manner, before asking, [rose.speech(Is there anything else I can help you with, [pc.sir]?)]
+		Кратко обрисовав то, что известно о её госпоже, Rose с подобающим долгу смирением улыбается и спрашивает: [rose.speech(Могу ли я ещё чем-то помочь тебе, [pc.sir]?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROSE_TALK_SLAVE"><![CDATA[
 	<p>
-		Not really sure about the best way to approach the subject, you decide to just ask your question outright and hope that it doesn't cause Rose any offence, [pc.speech(If you don't mind me asking, how did you end up as a slave?)]
+		Не совсем понимая, как лучше подступиться к этой теме, ты решаешь спросить прямо, надеясь, что это не обидит Rose: [pc.speech(Если ты не против, как ты стала рабыней?)]
 	</p>
 	<p>
-		Rose smiles to put you at ease, obviously sensing that you're a bit hesitant to broach the subject. [rose.speech(Well, like a lot of other slaves, I sold myself into slavery, under a contract stipulating that I am non-transferable. In other words, that I am only ever to be owned by Lilaya.)]
+		Rose улыбается, стараясь тебя успокоить — она явно чувствует твою нерешительность перед этим вопросом. [rose.speech(Ну, как и многие другие рабы, я продала себя в рабство по контракту, согласно которому меня нельзя передавать другим. Иными словами, владеть мной может только Lilaya.)]
 	</p>
 	<p>
-		You can't help but feel shocked as you hear that Rose willingly became a slave, but before you can ask why, she seems to sense your incoming question and continues, [rose.speech(When you sell yourself as a slave, all your debts and crimes are forgiven, so many people choose a life of slavery in order to escape their past. I suppose I'm somewhat of an unusual case, though, because I didn't have anything to run away from. You see, I was originally hired through an agency to serve as one of Lilaya's personal maids, and while working for her, we grew very close...)]
+		Ты невольно испытываешь шок, услышав, что Роза добровольно стала рабыней, но прежде чем ты успеваешь спросить «почему», она словно чувствует твой вопрос и продолжает: [rose.speech(Когда продаешь себя в рабство, все твои долги и грехи прощаются, поэтому многие выбирают жизнь рабыни, чтобы сбежать от своего прошлого. Полагаю, я — случай довольно необычный, ведь мне не от чего было бежать. Видишь ли, изначально меня наняло агентство, чтобы я служила одной из личных горничных Lilaya, и пока мы работали вместе, мы очень сблизились...)]
 	</p>
 	<p>
-		Rose suddenly blushes, and you notice that her tail has wrapped itself tightly around her leg. She's obviously thinking back to when she first met Lilaya, and after taking a moment to move past her recollection of the past, she continues, [rose.speech(Lyssieth didn't approve of how much time we were spending together, and when Lilaya and I were discovered kissing one another, her mother didn't take it well... I was soon informed that I was to be fired, and instructed never to speak to Lilaya again. As you might understand, Lilaya and I were distraught. At my suggestion, we agreed that the only way Lyssieth would tolerate my continued presence would be if I were to become Lilaya's slave. True enough, her mother accepted my new place as her daughter's property, and from that point on we took extra care not to be discovered in one another's embrace...)]
+		Роза внезапно краснеет, и ты замечаешь, что её хвост плотно обвил её ногу. Очевидно, она погрузилась в воспоминания о первой встрече с Lilaya, и, спустя мгновение, придя в себя, продолжает: [rose.speech(Lyssieth не одобряла то, сколько времени мы проводили вместе, а когда Lilaya и меня застукали за поцелуем, её мать восприняла это не слишком хорошо... Вскоре мне объявили, что меня увольняют, и велели больше никогда не заговаривать с Lilaya. Как ты понимаешь, мы обе были в отчаянии. По моему предложению, мы решили, что единственный способ заставить Lyssieth смириться с моим присутствием — это если я стану рабыней Lilaya. И действительно, её мать приняла мой новый статус собственности своей дочери, и с того момента мы стали еще осторожнее, чтобы нас не застали в объятиях друг друга...)]
 	</p>
 	<p>
-		From the moment you saw them interacting with each other, you knew Lilaya and Rose were close, but even so, the revelation that Rose sacrificed her freedom so that they could be together takes you by surprise. As Rose starts blushing, you realise that they must deeply care for one another, and you feel a little bit awkward at having Rose tell you about this intimate part of their relationship.
+		С того самого момента, как ты увидел их общение, ты понял, что Lilaya и Rose близки, но даже так, откровение о том, что Rose пожертвовала своей свободой ради их союза, застает тебя врасплох. Когда Rose начинает краснеть, ты осознаешь, насколько глубоки их чувства, и чувствуешь легкую неловкость от того, что Rose решилась поведать тебе столь интимную подробность их отношений.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROSE_TALK_WORLD"><![CDATA[
 	<p>
-		Wondering if Rose is able to give you any interesting information about Dominion, you ask, [pc.speech(What can you tell me about this world?)]
+		Задавшись вопросом, сможет ли Rose поведать тебе что-нибудь интересное о Dominion, ты спрашиваешь: [pc.speech(Что ты можешь рассказать мне об этом мире?)]
 	</p>
 	<p>
-		[rose.speech(Really, [pc.sir], I'm happy to help in any way I can, but you'd be better off consulting the books in Mistress's library if you're looking for that sort of information,)] Rose replies, [rose.speech(If you want some basic knowledge, however, then I can tell you that this world is ruled by Lilith, who's the most powerful demon to ever have existed. She lives here in Dominion, in that huge tower that can be seen from miles around. Although she personally rules over this city, she allows her daughters, the elder lilin, to control other parts of her domain. Surrounding Dominion, there's plenty of farmland and woodland, which collectively is called the 'Foloi Fields', and is ruled by Lunette. Other than that, I know that there's a jungle to the north, ruled by Lyxias; a desert to the south, ruled by Lisophia; and the Endless Sea to the East, ruled by Lirecea.)]
+		[rose.speech(На самом деле, [pc.sir], я буду рада помочь чем смогу, но если тебе нужна подобная информация, лучше заглянуть в книги в библиотеке Госпожи,)] — отвечает Rose, — [rose.speech(Впрочем, если тебе нужны базовые знания, то я могу сказать, что этим миром правит Lilith — самый могущественный демон из когда-либо живших. Она обитает здесь, в Dominion, в той огромной башне, которую видно за многие мили. И хотя она лично правит этим городом, она позволяет своим дочерям, старшим лилин, управлять другими частями своих владений. Вокруг Dominion раскинулись бескрайние пашни и леса, которые в совокупности называются «Поля Фолой» и управляются Lunette. Кроме того, я знаю, что на севере лежат джунгли под властью Lyxias, на юге — пустыня под властью Lisophia, а на востоке простирается Бескрайнее море, которым правит Lirecea.)]
 	</p>
 	<p>
-		It seems as though every elder lilin's name begins with an 'L', and you wonder how Rose is able to remember them all. Even though the maid's information was quite limited, you're still grateful that she's told you a little more about how this world works. It doesn't look like she's finished just yet, however, and takes a little breath before continuing, [rose.speech(If you're looking for more information about the culture and ways of Dominion, then I suppose I can give you a few pointers as well. The most common races that you'll see walking the streets are demons, cat, dog, and horse-morphs. Although there are countless other races that inhabit this world, they mostly tend to stay in their home regions, so you'll see plenty of cattle-morphs and rabbit-morphs out in the fields, but almost none in the jungle or desert.)]
+		Кажется, будто имя каждой старейшей лилин начинается на букву «Л», и ты гадаешь, как Роуз удается запомнить их всех. Хотя информация от горничной была довольно скудной, ты все равно благодарен ей за то, что она приоткрыла завесу тайны над тем, как устроен этот мир. Впрочем, она, похоже, еще не закончила; Роуз делает небольшую паузу, прежде чем продолжить: [rose.speech(Если ты ищешь больше сведений о культуре и обычаях Dominion, то, полагаю, я могу дать тебе несколько советов. Самые распространенные расы, которых ты встретишь на улицах — это демоны, кошачьи, собачьи и конь-морфы. Хотя этот мир населяют бесчисленные другие расы, они в основном держатся своих родных регионов, так что в полях ты увидишь полно коровьих и кроличьих морфов, но почти никого из них в джунглях или пустынях.)]
 	</p>
 	<p>
-		Coming to the end, Rose finishes by saying, [rose.speech(The number of humans in our world seems to decrease every year. In order to escape the discrimination and prejudice against humans, they're more and more often choosing to transform themselves. Oh, speaking of which, don't drink any unmarked bottles of liquid, as while they're a little expensive, transformative potions are readily available for anyone to purchase, and they'll alter your body in a flash.)]
+		Завершая свой рассказ, Роуз добавляет: [rose.speech(Число людей в нашем мире, кажется, уменьшается с каждым годом. Чтобы избежать дискриминации и предрассудков, они всё чаще выбирают путь трансформации. О, кстати говоря, не пей из бутылок без опознавательных знаков: хотя трансформирующие зелья и стоят недешево, их может купить любой желающий, и они изменят твое тело в мгновение ока.)]
 	</p>
 	<p>
-		With that last warning, Rose looks like she's finished, and you wonder if you should ask her anything else, or leave her to carry on with her dusting.
+		После этого последнего предостережения Роуз, кажется, закончила, и ты раздумываешь, стоит ли спросить её о чем-то еще или оставить её заниматься протиранием пыли.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROSE_TALK_DUTIES"><![CDATA[
 	<p>
-		Being curious about the sort of work Rose is expected to carry out, you ask her, [pc.speech(So, what sort of things do you have to do for Lilaya?)]
+		Заинтересовавшись тем, какую именно работу должна выполнять Роуз, ты спрашиваешь её: [pc.speech(Так чем именно ты занимаешься у Lilaya?)]
 	</p>
 	<p>
-		Rose's cheeks suddenly flush red, and although you asked your question in innocence, you realise that Rose's thoughts have instantly turned to some of her more intimate duties. [rose.speech(E-Erm, well, y-you know, demons get pretty horny, and Lilaya's no different. I attend to all of m-mistress's needs...)] she stammers, before starting to regain her composure. [rose.speech(B-But other than that, I spend most of my time cleaning and cooking. You've got no idea how much dusting this place requires!)]
+		Щёки Роуз внезапно вспыхивают румянцем, и хотя ты задал вопрос совершенно невинно, понимаешь, что мысли Роуз мгновенно унеслись к её более интимным обязанностям. [rose.speech(Э-э-эм, ну, знаешь, демоны бывают весьма... возбудимыми, и Lilaya не исключение. Я удовлетворяю все по-с-с... потребности госпожи...)] — заикается она, прежде чем начать приходить в себя. [rose.speech(Н-но помимо этого, большую часть времени я трачу на уборку и готовку. Ты даже не представляешь, сколько здесь приходится вытирать от пыли!)]
 	</p>
 	<p>
-		As she says this, you suddenly become aware that she's holding a little feather duster, of the same 'French-maid' style as the rest of her uniform. Looking at the little instrument, you find your gaze being curiously drawn to Rose's delicate hands.
+		Пока она это говорит, ты вдруг замечаешь, что в руках у неё маленькая метелка для пыли, выполненная в том же стиле «французской горничной», что и остальная её форма. Глядя на этот инструмент, ты ловишь себя на том, что твой взгляд любопытно скользит по изящным рукам Роуз.
 	</p>
 	<p>
-		Sensing what you're looking at, Rose suddenly blushes, and blurts out, [rose.speech(I use a duster like this so I don't have to get my hands dirty! You know, I take really good care of them, but Lilaya never seems to notice...)]
+		Почувствовав, куда ты смотришь, Роуз внезапно краснеет и выпаливает: [rose.speech(Я использую такую метелку, чтобы не пачкать руки! Знаешь, я очень за ними ухаживаю, но Lilaya, кажется, никогда этого не замечает...)]
 	</p>
 	<p>
-		You don't quite know what's come over you, but you're finding it hard to think of anything other than Rose's perfect, feminine hands. As you watch, she places her duster down on a little table next to you, and, with a little step forwards, she starts to gently rub her hands together, sliding her slender, feminine fingers over each other and making little moaning noises. With a gulp, you suddenly realise that she's displaying them for your benefit, and as she looks up into your eyes, she makes a pleading little whine.
+		Ты и сам не понимаешь, что с тобой происходит, но тебе всё труднее думать о чём-либо, кроме совершенных женских рук Роуз. Наблюдая за ней, ты видишь, как она ставит метелку на столик рядом с тобой и, сделав шаг вперед, начинает нежно растирать ладони, скользя тонкими женскими пальцами друг по другу и издавая тихие стоны. Сглотнув, ты внезапно осознаёшь, что она выставляет их напоказ специально для тебя, и, взглянув тебе в глаза, издаёт жалобный, просящий скулёж.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROSE_TALK_MOTHERS_MILK"><![CDATA[
 	<p>
-		Wanting to help Lilaya to get her pregnancy over with as soon as possible, you produce a bottle of 'Mother's milk' from your inventory, before handing it over to Rose with the words, [pc.speech(Could you please give this to Lilaya? As you no doubt know, I got her pregnant, and I'd like to help her get it over with as soon as possible.)]
+		Желая помочь Lilaya поскорее избавиться от беременности, ты достаёшь из своего инвентаря бутылочку «Материнского молока» и протягиваешь её Роуз со словами: [pc.speech(Не могла бы ты отдать это Lilaya? Как ты, без сомнения, знаешь, я её оплодотворил, и я бы хотел помочь ей поскорее с этим покончить.)]
 	</p>
 	<p>
-		[rose.speech(Of course, [pc.sir],)] the maid dutifully replies, taking the bottle from you. [rose.speech(I know that mistress isn't opposed to drinking these, so I shall deliver it to her as soon as we're finished. I can assure you that she'll consume it straight away. If you had any more of these, it would be a good idea to wait for a couple of hours before handing them over to me, as I believe that the enchantment needs some time in which to work before any subsequent effects can be applied.)]
+		[rose.speech(Конечно, [pc.sir],)] — послушно отвечает горничная, забирая у тебя бутылочку. [rose.speech(Я знаю, что госпожа не против выпить такое, так что я доставлю это ей, как только мы закончим. Могу тебя заверить, что она выпьёт всё залпом. Если у тебя есть ещё такие, было бы неплохо подождать пару часов, прежде чем отдавать их мне, так как, как мне кажется, чарам нужно время, чтобы подействовать, прежде чем можно будет применять следующие.)]
 	</p>
 	<p>
-		Thanking Rose for doing as you've asked, as well as for the information, you wonder what you should do next...
+		Поблагодарив Роуз за исполнение просьбы и за ценную информацию, ты задумываешься о том, что же делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROSE_TALK_OFFER_ROSE"><![CDATA[
 	<p>
-		Feeling that it would be fitting to offer this cat-girl maid her namesake as a gift, you hold out the red rose which you've been carrying with you towards her, and say, [pc.speech(This is for you, Rose, as thanks for all of your hard work.)]
+		Почувствовав, что будет уместно подарить этой кошкодевочке-горничной цветок с её именем, ты протягиваешь ей красную розу, которую носил с собой, и говоришь: [pc.speech(Это тебе, Роза, в благодарность за всю твою тяжелую работу.)]
 	</p>
 	<p>
-		As she sees what it is you're giving to her, Rose's cheeks flush to almost the same deep scarlet as the delicate flower's petals, and as she takes the gift from you, she shyly smiles and shuffles her feet. [rose.speech([pc.Name]... That's so thoughtful of you! Thank you so much!)]
+		Увидев твой подарок, Роза заливается румянцем, цвет которого почти совпадает с глубоким алым цветом лепестков нежного цветка. Забирая подарок, она застенчиво улыбается и переминается с ноги на ногу. [rose.speech([pc.Name]... Как это мило с твоей стороны! Спасибо тебе огромное!)]
 	</p>
 	<p>
-		As you watch her take the rose from you, you suddenly notice how delicate and perfectly-formed Rose's hands are. Even after all of the cleaning and manual labour she does as part of her duties around the house, she's somehow managed to keep her hands perfectly spotless, with nails that are manicured to a perfect finish.
+		Наблюдая за тем, как она берет розу, ты внезапно замечаешь, насколько изящны и совершенны руки Розы. Несмотря на всю уборку и физический труд, который она выполняет по дому, ей каким-то образом удается держать руки безупречно чистыми, а ногти — идеально ухоженными.
 	</p>
 	<p>
-		[pc.thought(Wow... Her hands are flawless!)]
+		[pc.thought(Ого... Её руки просто безупречны!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -253,16 +253,16 @@
 	
 	<htmlContent tag="ROSE_HANDS"><![CDATA[
 	<p>
-		As Rose places the gifted rose into a nearby vase, you find yourself unable to look at anything but her hands... her amazing hands...
+		Пока Роза ставит подаренную розу в вазу, ты ловишь себя на том, что не можешь отвести взгляда от её рук... её потрясающих рук...
 	</p>
 	<p>
-		[pc.thought(Holy shit... Look at those hands!)]
+		[pc.thought(Твою мать... Только посмотри на эти руки!)]
 	</p>
 	<p>
-		With her cat-like tail swishing excitedly behind her, Rose sees what it is that's caught your attention, and holds up her perfect, angelic hands for you to admire. Her soft, pale skin almost seems to glow as she steps up in front of you, and you subconsciously start reaching out towards her delicate fingers. Her nails are painted a soft shade of pink, and as your fingertips touch with hers, you feel her soft warmth radiating into your [pc.armSkin].
+		Восторженно виляя своим кошачьим хвостом, Роуз замечает, что именно привлекло твое внимание, и грациозно поднимает свои идеальные, ангельские ручки, предлагая тебе ими полюбоваться. Ее нежная, бледная кожа словно светится, когда она делает шаг к тебе, и ты подсознательно тянешься к ее изящным пальцам. Ее ногти накрашены нежно-розовым лаком, и когда твои кончики пальцев касаются ее кожи, ты чувствуешь, как ее мягкое тепло разливается по твоей [pc.armSkin].
 	</p>
 	<p>
-		The moment you make physical contact, Rose lets out a desperate moan, and as her cheeks somehow manage to flush an ever deeper shade of crimson, she sighs, [rose.speech(~Aah!~ Yes! Lilaya never appreciates how much effort I put into keeping my hands so nice and soft! ~Yes!~ Take me! Take me now!)]
+		В тот самый миг, когда происходит физический контакт, Роуз издает отчаянный стон; ее щеки заливает еще более густой пунцовый румянец, и она вздыхает: [rose.speech(~Ах!~ Да! ~Да!~ Lilaya совсем не ценит, сколько сил я трачу на то, чтобы мои ручки были такими нежными и мягкими! Возьми меня! Возьми меня прямо сейчас!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -272,14 +272,14 @@
 	
 	<htmlContent tag="GARDEN"><![CDATA[
 	<p>
-		The garden courtyard consists of a series of wide, perfectly trimmed grass pathways, each one lined with beds of brightly-coloured flowers. Although Rose is now the one responsible for maintaining it, you guess that Lilaya must have hired a professional company in order to have had this area landscaped so perfectly.
+		Садовый дворик представляет собой сеть широких, идеально подстриженных травяных дорожек, каждая из которых обрамлена клумбами с яркими цветами. Хотя теперь за садом ухаживает Роуз, ты догадываешься, что Lilaya наверняка нанимала профессиональную компанию, чтобы ландшафт выглядел настолько безупречно.
 	</p>
 	<p>
-		Clearly being fond of her maid's namesake, you see that several magnificent rose bushes have been planted throughout the garden.
+		Очевидно, питая особую симпатию к тезке своей горничной, она разсадила по всему саду несколько великолепных кустов роз.
 		#IF(flags.hasFlag(FLAG_lilayaGardenPickRose))
-			 As you've already picked one of the beautiful flowers today, you probably shouldn't take any more until tomorrow...
+			 Раз уж ты сегодня уже сорвал один прекрасный цветок, то, пожалуй, не стоит брать больше до завтра...
 		#ELSE
-			 You're sure that Lilaya wouldn't mind if you took one of the beautiful flowers...
+			 Ты уверен, что Lilaya не будет против, если ты сорвешь еще один чудесный цветок...
 		#ENDIF
 	</p>
 	]]>
@@ -287,7 +287,7 @@
 	
 	<htmlContent tag="GARDEN_PICK ROSE"><![CDATA[
 	<p>
-		[pc.Stepping] over to one of the magnificent rose bushes which are found throughout Lilaya's courtyard garden, you select a particularly beautiful flower and cut it from the plant. After taking a moment to smell its delicate perfume, you place the rose in your inventory and wonder where to go next...
+		[pc.Stepping] к одному из великолепных розовых кустов, разбросанных по всему саду во дворе Lilaya, ты выбираешь особенно красивый цветок и срезаешь его. Насладившись мгновением, вдыхая его нежный аромат, ты кладешь розу в свой инвентарь и раздумываешь, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -297,11 +297,11 @@
 	
 	<htmlContent tag="FOUNTAIN"><![CDATA[
 	<p>
-		In the very centre of the garden courtyard, a huge, ornate water fountain happily bubbles away with a mind of its own. The structure is made up of a collection of intricate statues; each one of a beautiful woman in some manner of indecent pose.
+		В самом центре садового дворика весело бурлит огромный, богато украшенный фонтан, словно живущий своей собственной жизнью. Конструкция состоит из множества замысловатых статуй; каждая изображает прекрасную женщину в какой-нибудь непристойной позе.
 	</p>
 	#IF(flags.hasFlag(FLAG_acexp_dungeon_garden_access_found))
 		<p>
-			Knowing that the nearby button that's disguised as part of the fountain's decorative stonework will grant you access to Lilaya's dungeon, you wonder whether to press it and head down into the subterranean gloom, or instead continue on your way elsewhere...
+			Зная, что спрятанная среди декоративной каменной кладки фонтана кнопка откроет тебе путь в подземелье Lilaya, ты раздумываешь: нажать ли её и спуститься в подземный мрак или же продолжить свой путь куда-нибудь еще...
 		</p>
 	#ENDIF
 	]]>
@@ -309,7 +309,7 @@
 	
     <htmlContent tag="DUNGEON_OPENS_FOUNTAIN"><![CDATA[
    	<p>
-        Deciding that you'd like to head down into Lilaya's dungeon, you [pc.step] forwards and press the button that's been disguised as part of the fountain's stonework. A rumbling sound of grinding stone immediately breaks out to your side, and you turn to watch as a nearby slab slides open to reveal the secret, spiral staircase which leads down into the darkness of Lilaya's dungeon. As you begin to move forwards, the wall-mounted arcane torches burst into flame, casting staircase in a dancing, flickering light.
+        Решив, что хочешь спуститься в подземелье Lilaya, ты [pc.step] вперед и нажимаешь на кнопку, замаскированную под часть каменного узора фонтана. Сбоку тут же раздается грохот скрежещущего камня, и ты оборачиваешься, наблюдая, как ближайшая плита отъезжает в сторону, открывая секретную винтовую лестницу, ведущую в темноту подземелий Lilaya. Как только ты делаешь первые шаги, закрепленные на стенах арканные факелы вспыхивают огнем, заливая лестницу пляшущим, мерцающим светом.
 	</p>
 	]]>
     </htmlContent>
@@ -319,14 +319,14 @@
 	
 	<htmlContent tag="ENTRANCE_HALL"><![CDATA[
 	<p>
-		Lilaya's house is by far the most impressive building you've ever been in. The entrance hall that you find yourself standing in is, on its own, far larger than your old flat, and is extravagantly decorated in a style befitting a royal palace. Fine paintings and marble busts line the walls, and a huge crystal chandelier hangs from the double-height ceiling, casting its warm light over a grand, red-carpeted staircase that leads to the upper floor.
+		Дом Lilaya — самое впечатляющее здание из всех, в которых тебе когда-либо доводилось бывать. Вестибюль, в котором ты стоишь, сам по себе гораздо больше твоей старой квартиры и роскошно украшен в стиле, подобающем королевскому дворцу. Стены увешаны изысканными картинами и мраморными бюстами, а с высокого потолка свисает огромная хрустальная люстра, отбрасывающая теплый свет на величественную лестницу с красной ковровой дорожкой, ведущую на верхний этаж.
 	</p>
 	<p>
-		From previous explorations, you know that the rest of the house is furnished in much the same manner. You tried to count all the rooms once but gave up after reaching well over one hundred. Despite its grand appearance and impressive size, the only member of staff you've ever seen is Lilaya's slave; the cat-girl maid called Rose. Lilaya herself spends almost every waking moment working in her lab, resulting in the house being eerily quiet for most of the time.
+		Из прошлых прогулок ты знаешь, что остальная часть дома обставлена примерно так же. Однажды ты даже пытался сосчитать все комнаты, но сдался, когда число перевалило за сотню. Несмотря на грандиозный вид и внушительные размеры, единственный слуга, которого ты когда-либо видел — это рабыня Lilaya, кошкодевочка-горничная по имени Rose. Сама Lilaya проводит почти всё время бодрствования в своей лаборатории, из-за чего в доме большую часть времени царит жутковатая тишина.
 	</p>
 	#IF(pc.getQuest(QUEST_LINE_SIDE_DOLL_FACTORY)==QUEST_DOLL_FACTORY_6)
 		<p style='text-align:center;'>
-			[style.italicsMinorBad(There's no message for you from Fiammetta yet. You're sure to hear from her soon, however...)]
+			[style.italicsMinorBad(От Fiammetta пока нет вестей. Но ты уверен, что скоро она даст о себе знать...)]
 		</p>
 	#ENDIF
 	]]>
@@ -337,13 +337,13 @@
 	
 	<htmlContent tag="STAIRCASE_UP"><![CDATA[
 	<p>
-		The grand, red-carpeted staircase is one of the first things you see when entering Lilaya's home. Half-way up the shallow steps, there's a secondary landing area, which is home to a couple of antique-looking cabinets and well looked after house plants. Branching off from the sides of this landing, two slightly-narrower staircases wrap around and lead up to the floor above.
+		Величественная лестница с красной ковровой дорожкой — первое, что бросается в глаза при входе в дом Lilaya. На полпути к верхним ступеням расположена промежуточная площадка, где стоят пара антикварных шкафов и ухоженные комнатные растения. От этой площадки в стороны уходят две лестницы чуть уже основной, которые огибают здание и ведут на верхний этаж.
 	</p>
 	<p>
-		A huge portrait of two women hangs on the wall of the landing area, overlooking the entire entrance hall. You immediately recognise the half-demon sitting in the chair as Lilaya, and you can only assume that the gorgeous figure standing behind her is her Lilin mother, Lyssieth. Although Lilin can change their appearance at will, Lyssieth has chosen to appear as a beautiful half-demon in her mid-forties, and you wonder if she did this to make Lilaya feel more comfortable, or whether that's simply the form she prefers to take.
+		На стене площадки перед лестницей висит огромный портрет двух женщин, возвышающийся над всем вестибюлем. Ты сразу узнаёшь полудемона, сидящую в кресле, — это Lilaya, и можешь лишь предположить, что великолепная фигура позади неё — её мать, лилин Lyssieth. Хотя лилин могут менять облик по своему желанию, Lyssieth предпочла предстать в образе прекрасной полудемоницы лет сорока пяти, и ты гадаешь: сделала она это, чтобы Lilaya чувствовала себя уютнее, или это просто её любимый облик.
 	</p>
 	<p>
-		Remarking one last time upon how beautiful the mother-daughter pair are, you continue on your way...
+		В последний раз восхитившись красотой этой матери и дочери, ты продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -353,7 +353,7 @@
 	
 	<htmlContent tag="STAIRCASE_UP_SECONDARY"><![CDATA[
 	<p>
-		In this particular section of the corridor, there's a large recess set into the wall which is home to a series of carpeted stairs. While not as grand as the one positioned in front of the mansion's main entrance, this wide, sweeping staircase is nevertheless far more impressive than any you'd find in a regular house, and you wonder whether you should make use of it to travel up to the first floor...
+		В этой части коридора в стене есть глубокая ниша, в которой расположена широкая лестница с ковровым покрытием. Пусть она и не так величественна, как та, что находится перед главным входом в особняк, эта широкая, плавная лестница всё равно впечатляет куда больше любой лестницы в обычном доме, и ты раздумываешь, не стоит ли воспользоваться ею, чтобы подняться на второй этаж...
 	</p>
 	]]>
 	</htmlContent>
@@ -363,10 +363,10 @@
 	
 	<htmlContent tag="STAIRCASE_DOWN"><![CDATA[
 	<p>
-		Standing at the top of the grand, red-carpeted staircase, you find yourself looking down at the huge portrait of Lilaya and her mother. Although you didn't notice it from the ground floor, you seem to detect a hint of annoyance in Lyssieth's eyes, giving you the impression that she's trying her best to hide her resentment towards either the artist, or someone who must have been close by.
+		Стоя на вершине величественной лестницы с красной ковровой дорожкой, ты смотришь вниз на огромный портрет Lilaya и её матери. Хотя снизу ты этого не заметил, теперь тебе кажется, что в глазах Lyssieth читается тень раздражения — создаётся впечатление, будто она изо всех сил пытается скрыть своё недовольство либо художником, либо кем-то, кто в тот момент находился рядом.
 	</p>
 	<p>
-		Wondering if you'll ever get to ask Lilaya, or perhaps even Lyssieth herself, about the circumstances under which this portrait was painted, you look away and continue on your way...
+		Задаваясь вопросом, удастся ли тебе когда-нибудь спросить Lilaya или даже саму Lyssieth об обстоятельствах, при которых был написан этот портрет, ты отводишь взгляд и идешь дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -376,7 +376,7 @@
 	
 	<htmlContent tag="STAIRCASE_DOWN_SECONDARY"><![CDATA[
 	<p>
-		In this particular section of the corridor, there's a large recess set into the wall which is home to a series of carpeted stairs. While not as grand as the one positioned in front of the mansion's main entrance, this wide, sweeping staircase is nevertheless far more impressive than any you'd find in a regular house, and you wonder whether you should make use of it to travel down to the ground floor...
+		В этой части коридора в стене есть глубокая ниша, в которой расположена широкая лестница с ковровым покрытием. И хотя она не так величественна, как лестница перед главным входом в особняк, эта широкая, плавная лестница всё же впечатляет куда больше, чем любая в обычном доме, и ты раздумываешь, не воспользоваться ли ей, чтобы спуститься на первый этаж...
 	</p>
 	]]>
 	</htmlContent>
