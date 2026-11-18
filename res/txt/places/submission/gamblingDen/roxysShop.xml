@@ -5,10 +5,10 @@
 	
 	<htmlContent tag="TRADER_EXTERIOR"><![CDATA[
 	<p>
-		Adjoining the main atrium of the Gambling Den, you spot an open-fronted shop, with the sign 'Roxy's Fun Box' fixed to the wall above the opening. From your exterior vantage point, you can see that the interior is filled with rows of shelves, holding all manner of different goods, but despite quite obviously being open for business, the shop floor looks to be completely deserted.
+		Смежно с главным атриумом Игорного дома ты замечаешь лавку с открытым фасадом, над входом в которую на стене висит вывеска «Веселая коробочка Рокси». Снаружи видно, что внутри рядами стоят стеллажи с всевозможными товарами, но, несмотря на то что магазин явно открыт, внутри кажется совершенно пусто...
 	</p>
 	<p>
-		You could [pc.step] inside and take a look around, or instead head back into the Gambling Den...
+		Ты можешь [pc.step] внутрь, чтобы осмотреться, или же отправиться обратно в Игорный дом...
 	</p>
 	]]>
 	</htmlContent>
@@ -18,216 +18,214 @@
 	
 	<htmlContent tag="TRADER_VENGAR_INTRO_START"><![CDATA[
 	<p>
-		Once again deciding to enter Roxy's store, you scan the interior for any sign of the crass owner or her latest rat-boy acquisition. Before you see them, however, you're alerted to their presence by the unmistakable sound of Roxy's grating laughter coming from the other side of the shop. Approaching the source of the noise, you suddenly see the rat-girl stand up from behind her counter, puffing away on a cigarette. Grinning down at who you assume must be Vengar, she teases, [roxy.speech(That's right, keep on lickin' yer lips! Ya ain't gonna be gettin' any more o' me cunt juices until yer willin' ta do exactly what I say! I'll make ya regret ever fuckin' those sluts!)]
+		Снова решив зайти в лавку Рокси, ты оглядываешь помещение в поисках бесстыжей хозяйки или её последнего приобретения — мальчишки-крысы. Но прежде чем ты их видишь, о чьем присутствии тебя оповещает безошибочно узнаваемый скрежещущий смех Рокси, доносящийся с другого конца магазина. Подойдя к источнику шума, ты внезапно видишь, как девчонка-крыса поднимается из-за прилавка, затягиваясь сигаретой. Усмехаясь тому, кто, как ты полагаешь, является Венгаром, она дразнит его: [roxy.speech(Именно так, облизывайся дальше! Больше ни капли моих соков ты не получишь, пока не будешь делать ровно то, что я скажу! Я заставлю тебя пожалеть о том, что ты трахал тех шлюх!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_VENGAR_INTRO_ADDICTED"><![CDATA[
 	<p>
-		Suddenly noticing your approach out of the corner of her eye, Roxy turns towards you with an angry snarl on her face. Upon recognising you, however, her scowl shifts into a devious grin. Leaning heavily on the counter-top, she takes a deep drag of her cigarette and teases, [roxy.speech(If yer back ta get another taste o' me cunt, ya know ya gotta pay a thousand flames. Me little slave 'ere 'as already got me cunt all wet an' drippin' from excitement. Ya ain't gonna resist gettin' a taste o' me flowin' juices now, are ya?)]
+		Внезапно заметив тебя боковым зрением, Рокси оборачивается с яростным оскалом на лице. Однако, узнав тебя, она сменяет хмурый взгляд на лукавую ухмылку. Опершись на прилавок, она делает глубокую затяжку сигаретой и дразнит: [roxy.speech(Если ты вернулся, чтобы снова приложиться к моей щелке, то знай — за это придется отвалить косарь огней. Мой тут маленький раб уже успел намочить мне всё там от возбуждения. Ты ведь не устоишь перед тем, чтобы попробовать мои соки на вкус, а?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_VENGAR_INTRO_BEATEN_ADDICTION"><![CDATA[
 	<p>
-		Suddenly noticing your approach out of the corner of her eye, Roxy turns towards you with an angry snarl on her face. Upon recognising you, however, her scowl shifts into a devious grin. Leaning heavily on the counter-top, she takes a deep drag of her cigarette and teases, [roxy.speech(If yer back ta get another taste o' me cunt, ya know ya gotta pay a thousand flames! Ya ain't gonna resist gettin' a taste o' me flowin' juices now, are ya?)]
+		Внезапно заметив тебя боковым зрением, Рокси оборачивается с яростным оскалом на лице. Однако, узнав тебя, она сменяет хмурый взгляд на лукавую ухмылку. Опершись на прилавок, она делает глубокую затяжку сигаретой и дразнит: [roxy.speech(Если ты вернулся, чтобы снова приложиться к моей щелке, то знай — за это придется отвалить косарь огней! Ты ведь не устоишь перед тем, чтобы попробовать мои соки на вкус, а?)]
 	</p>
 	<p>
-		Having rid yourself of your addiction to Roxy's girlcum, you tell the rat-girl that you have absolutely no interest in paying any money to eat her out. Raising one eyebrow, the foul-mouthed rat-girl jeers, [roxy.speech(Oh, you's fuckin' gone an' cured yeself, 'ave ya? Well, 'ow about I offer ya the chance to earn an item by eatin' me out again? Come on, ya know yer cravin' a taste o' me wet little cunt again, ain't ya?! Me little slave 'ere sure seems ta love it! Heh-heh-heh!)]
+		Избавившись от зависимости к девичьим сокам Рокси, ты заявляешь крысодевочке, что у тебя нет ни малейшего желания платить деньги за то, чтобы лизать её. Вскинув бровь, сквернословящая крыса насмешливо цедит: [roxy.speech(О, так ты, блядь, исцелился, значит? Ну, как насчет того, чтобы я дала тебе шанс заработать предмет, если ты снова поласкаешь мою щелку? Да брось, ты же сам жаждешь вкусить мои соки, а?! Мой маленький раб, по ходу, просто в восторге! Хе-хе-хе!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_VENGAR_INTRO_NOT_ADDICTED"><![CDATA[
 	<p>
-		Suddenly noticing your approach out of the corner of her eye, Roxy turns towards you with an angry snarl on her face. Upon recognising you, however, her scowl shifts into a devious grin. Leaning heavily on the counter-top, she takes a deep drag of her cigarette and teases, [roxy.speech(If yer here lookin' fer some hot little rat pussy ta get a taste of, me little slave 'ere 'as already got me cunt all wet an' drippin' from excitement. Ya ain't gonna resist gettin' a taste o' me flowin' juices now, are ya? Remember, ya get a free item from me shop as an extra reward!)]
+		Внезапно заметив твоё приближение краем глаза, Рокси оборачивается к тебе с яростным оскалом на лице. Однако, узнав тебя, её хмурый взгляд сменяется лукавой ухмылкой. Опершись на прилавок, она делает глубокую затяжку сигаретой и дразнит: [roxy.speech(Коль ты пришёл сюда поискать горячую крысиную киску, чтобы приобщиться, то знай — моя маленькая рабыня уже намочила свою щелку от одного предвкушения. Ты ведь не устоишь перед тем, чтобы не попробовать мои соки на вкус, а? И помни, в качестве бонуса ты получишь бесплатную вещь из моего магазина!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_VENGAR_INTRO_END"><![CDATA[
 	<p>
-		Before you can reply, Roxy's 'little slave' stands up from behind the counter, and is, of course, the familiar figure of Vengar. Steadying himself against the counter with one hand, he doesn't notice who you are at first as he angrily addresses Roxy, [vengar.speech(I ain't ya slave, bitch! You ain't gonna get away with thi-)] 
+		Прежде чем ты успеваешь ответить, «маленькая рабыня» Рокси поднимается из-за прилавка, и это, конечно же, знакомый тебе Венгар. Одной рукой опираясь на стойку, он поначалу не замечает тебя и сердито обращается к Рокси: [vengar.speech(Я тебе не раб, сучка! Тебе это с рук не сойдет, ты...)] 
 	</p>
 	<p>
-		[roxy.speech(You want me ta fuckin' gag ya?!)] Roxy screeches, before turning to slap Vengar across the face. Before he can react, she grabs the ring on the front of the rat-boy's slave collar and yanks downwards, forcing him to his knees. Glaring down at her insolent ex-boyfriend, she continues, [roxy.speech(That fuckin' lizard said I can do whatever I want with ya, includin' transformin' ya, so if ya don't wanna be turned into a sissy rat-slut, ya betta never even <i>think</i> about talkin' back ta me! Ain't that right, [pc.name]?)]
+		[roxy.speech(Хочешь, чтобы я тебе рот заткнула?!)] — визжит Рокси, прежде чем отвесить Венгару звонкую пощечину. Не давая ему опомниться, она хватает кольцо на ошейнике крысопарня и резко дергает вниз, заставляя его упасть на колени. Глядя сверху вниз на своего дерзкого бывшего, она продолжает: [roxy.speech(Эта гребаная ящерица сказала, что я могу делать с тобой всё, что захочу, даже превратить тебя во что угодно. Так что, если не хочешь стать сопливой крысиной шлюшкой, лучше даже не <i>думай</i> о том, чтобы вякать мне в ответ! Верно, [pc.name]?)]
 	</p>
 	<p>
-		Having been present at the moment when Axel gave Roxy permission to transform Vengar, you confirm that what she's saying is the truth. Recognising your voice, Vengar peers over the top of the counter, before exclaiming, [vengar.speechNoEffects(You?! Dis is all your faul-)] 
+		Поскольку ты присутствовал при том моменте, когда Аксель разрешил Рокси превратить Венгара, ты подтверждаешь, что её слова — чистая правда. Узнав твой голос, Венгар выглядывает из-за прилавка и восклицает: [vengar.speechNoEffects(Ты?! Это всё твоя ви-)] 
 	</p>
 	<p>
-		Having a habit of interrupting people, Roxy once again cuts Vengar off by roughly shoving him to the ground. Raising her paw, she steps on his face, snarling, [roxy.speech(Shut yer fuckin' mouth! Yer ain't gonna speak ta me customers without me express permission, ya understand, slave?!)]
+		Обладая привычкой перебивать людей, Рокси снова обрывает Венгара, грубо толкнув его на пол. Подняв лапу, она наступает ему на лицо и рычит: [roxy.speech(Заткни свою сраную пасть! Ты не смеешь базарить с моими клиентами без моего дозволения, уяснил, раб?!)]
 	</p>
 	<p>
-		After hearing a muffled groan of agreement, the rat-girl turns back towards you, cigarette still in mouth, and asks, [roxy.speech(So, wot ya wantin' this time?)]
+		Услышав приглушённый стон согласия, крысодевочка поворачивается к тебе с сигаретой во рту и спрашивает: [roxy.speech(Ну, и чё тебе на этот раз надо?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 
 	<htmlContent tag="TRADER"><![CDATA[
-	<p>
-		Wanting to investigate further, you [pc.step] forwards into the empty store, before starting to look around for any sign of the owner, 'Roxy'. The first thing that strikes you as you enter is the fact that the interior smells strongly of cigarette smoke; a clear indication that the currently-absent owner must be a very heavy smoker indeed. Although there's a counter prominently running along half the length of the far wall, you can't see anyone standing behind it, and, recalling Axel's warning that you should watch yourself around Roxy, you carefully start walking up and down the aisles, on the lookout for any sign of trouble.
+	<p>		Желая разузнать побольше, ты [pc.step] проходишь вглубь пустого магазина, начиная оглядываться в поисках хозяйки, «Рокси». Первое, что бросается в глаза при входе — сильный запах табачного дыма; явный признак того, что отсутствующая хозяйка — заядлая курильщица. Хотя вдоль половины дальней стены тянется длинный прилавок, за ним никого не видно. Вспоминая предупреждение Акселя о том, что с Рокси стоит держать ухо востро, ты осторожно начинаешь пробираться между рядами, высматривая малейшие признаки опасности.
 	</p>
 	<p>
-		As you're taking a look at some of the goods on offer, you suddenly hear movement coming from behind the shop's counter, and, turning to face it, you see a rather scruffy-looking rat-girl standing up, before yawning and stretching her arms up above her head. The very next thing she does after waking from her nap is grab a cigarette from under the counter, before putting it in her mouth and inhaling a lungful of smoke.
+		Пока ты рассматриваешь товар, за прилавком внезапно слышится какое-то движение. Обернувшись, ты видишь неопрятную крысодевочку: она лениво поднимается, зевая и потягиваясь всем телом. Сразу после пробуждения она выуживает из-под прилавка сигарету, сует её в рот и жадно затягивается дымом.
+	</p>
+	<p>		Пользуясь моментом, чтобы получше рассмотреть крысодевочку, ты первым делом замечаешь на одной стороне её лица шрамы, похожие на следы от когтей. Чёрная повязка скрывает то, что старая рана сделала с её глазом, придавая ей довольно зловещий вид. Второе, что бросается в глаза этой коричневошерстной крысе — это обилие золотых украшений: кажется, в каждом её пирсинге красуется какой-нибудь безвкусный побрякушка.
 	</p>
 	<p>
-		Using this opportunity to take a good look at the rat-girl, the first thing you notice about her is the series of claw-shaped scars running down over one side of her face. A black eye patch conceals whatever damage this old wound has done to her eye, which gives her a rather ominous appearance. The second thing you notice about this brown-furred rat-girl is the fact that she's wearing an abundance of gold jewellery, with every possible piercing that you can imagine being home to some form of gaudy ornament or another.
+		Заметив тебя своим здоровым глазом, крысодевочка кривит губы в усмешке и выдаёт одно из самых матерных приветствий, что тебе доводилось слышать: [roxy.speech(Хех, наконец-то хоть кто-то, блядь, припёрся купить моё дерьмо. Надеюсь, ты именно за этим и пришёл. Последний мудак тут просто стоял и тупил, как полный дебил, пока я не начала на него орать, чтобы он, блядь, свалил. Ты вроде не похож на полного еблана, так что надеюсь, ты что-нибудь купишь, а не будешь тратить моё гребаное время.)]
 	</p>
 	<p>
-		As she catches sight of you with her good eye, the rat-girl sneers, before unleashing one of the most profane greetings you've ever heard, [roxy.speech(Heh, someone's finally fuckin' come to buy some o' my shit. Well, that'd fuckin' better be what yer here for. The last cunt that came in here just fuckin' stood around like some gormless twat, an' I had to fuckin' scream at 'im to get 'im to fuck off. You don't look like a complete fuckin' idiot, so I'm hopin' yer gonna buy somethin', an' not waste my fuckin' time.)]
+		На этом моменте сквернословная девчонка-крыса ухмыляется тебе, прежде чем снова глубоко затянуться сигаретой. Выпустив густое облако белого дыма, она разражается хриплым, режущим слух смехом. Упершись обеими руками в прилавок, она подается вперед и, не вынимая сигареты изо рта, продолжает: [roxy.speech(Звать меня Рокси. И если тебя не устраивают мои цены или то, что у меня тут продается, — держи это при себе, уяснил?)]
 	</p>
 	<p>
-		At this point, the foul-mouthed rat-girl smirks at you, before inhaling deeply on her cigarette once again. Blowing out a huge cloud of white smoke, she lets a cackling, grating laughter burst out from between her lips. Placing both of her hands on the counter in front of her, she leans forwards and, cigarette hanging from her mouth, continues, [roxy.speech(The name's Roxy. You got a problem with any o' my prices, or what I've got fer sale, you fuckin' keep it to yerself, ya got me?)]
+		[pc.speech(Понятно...)] — говоришь ты, слегка опешив от того, насколько Рокси груба. [pc.speech(Я [pc.name].)]
 	</p>
 	<p>
-		[pc.speech(Right...)] you say, taken a little off-guard by just how crass Roxy is. [pc.speech(I'm [pc.name].)]
+		[roxy.speech(Хех. Ты не похожа на тех обычных сучек, что сюда забредают. Сразу видно, что в тебе есть что-то особенное,)] Рокси ухмыляется, а затем манит тебя поближе рукой. Решив пока что последовать её примеру, ты подходишь к прилавку, позволяя ей продолжить: [roxy.speech(Я не предлагаю такое каждой встречной шлюхе, но для тебя у меня есть реально охеренная сделка. Не буду вываливать на тебя всю историю целиком, потому что на всю эту херню у меня нет времени, но пару лет назад я шаталась по той дыре, которую называют Dominion, и наткнулась на одного чертовски охеренного жеребца, который держал там лавку. Так вот, он показал мне свой член — просто огромный, блять! — и сказал, что отдаст мне товар по дешевке, если я отсосу ему прямо там и сейчас. Ну, я просто не могла сказать «нет»!)] Рокси снова заливается смехом; этот резкий, режущий слух хохот заставляет тебя вздрогнуть. Затянувшись сигаретой, Рокси небрежно выпускает дым тебе в лицо и продолжает свой рассказ: [roxy.speech(Короче, я продолжала заваливаться к нему, чтобы сосать его гребаный гигантский член и скупать его товар по отличной цене. В общем, суть этой истории в том, что это натолкнуло меня на одну идейку, понимаешь?)]
 	</p>
 	<p>
-		[roxy.speech(Heh. You ain't like most of the cunts that wander in 'ere. I can tell there's somethin' real special about yer,)] Roxy grins, before beckoning you closer with one hand. Deciding to follow along for now, you step towards the counter, allowing her to continue, [roxy.speech(I don't offer this to any ol' cunt what wanders in here, but I got a real fuckin' special deal fer you. Not gonna give yer the whole story, cos I ain't got time fer that shit, but a couple o' years ago I used to wander 'round that shithole they call Dominion, an' I came across this real fuckin' hung horse-boy runnin' a shop up there. Well, he showed me his cock, fuckin' huge it was, an' said he'd sell me his stuff real cheap if I'd blow 'im right then and there. Well, there ain't no way I was sayin' no to that!)] Roxy bursts out laughing yet again; the sudden, grating noise causes you to flinch. Inhaling on her cigarette, Roxy carelessly blows the smoke all over you as she continues with her story, [roxy.speech(So anyways, I'd keep on goin' back to suck his fuckin' huge cock and get a real good price on the shit he was sellin'. Anyways, the whole point o' this story is that it gave me an idea, y'see?)]
+		Рокси делает паузу, и, надеясь, что она наконец перейдет к делу, ты спрашиваешь: [pc.speech(Что за идея?)]
 	</p>
 	<p>
-		Roxy pauses for a moment, and, hoping that she's finally getting to the point, you ask, [pc.speech(What idea was that?)]
+		[roxy.speech(Эй! Не смей, блять, перебивать!)] — отчитывает она тебя, прежде чем снова разразиться своим резким, грубым смехом. Не успеваешь ты среагировать на её дерзкий ответ, как она продолжает: [roxy.speech(Теперь, когда у меня есть своя лавочка и всё такое, я подумывала сделать так же, как тот сраный жеребёнок, только ещё круче! Вместо того чтобы просто давать тебе какую-то паршивую скидку, если захочешь прийти и вылизать мою пизду до самого оргазма, я подарю тебе, блять, любой товар из моего магазина бесплатно!)]
 	</p>
 	<p>
-		[roxy.speech(Ay! Don't fuckin' interrupt!)] she berates you, before once again bursting out in her abrasive laughter. Before you can react to her rude reply, she continues, [roxy.speech(Now that I've got my own shop and shit, I was thinkin' I'd do the same as that fuckin' horse-boy, but make it even better! Instead of just givin' yer some kinda shitty discount, if yer wanna come lick my cunt 'til I cum, I'll give yer a fuckin' free item from my shop!)]
+		[pc.speech(Какой именно товар?)] — спрашиваешь ты, тут же жалея о своём вопросе, так как он заставляет Рокси снова разразиться этим её бесячим, раздражающим смехом.
 	</p>
 	<p>
-		[pc.speech(What kind of free item?)] you ask, immediately regretting asking your question, as it causes Roxy to let out yet another of her infuriatingly annoying laughs.
+		[roxy.speech(У меня тут есть пара кубиков. Ты подходишь сюда, позволяешь мне прижать мою чертовски сладкую пизду к твоему лицу, а я кидаю их, чтобы определить случайный товар из моего магазина. Ну, что скажешь?)]
 	</p>
 	<p>
-		[roxy.speech(I got a couple o' dice here. Yer come down here and let me plant my fuckin' sweet cunt on yer face, and I'll roll these to decide on a random fuckin' item from my shop. Whattya say?)]
-	</p>
-	<p>
-		Before you can answer, Roxy steps back from the counter, pulling up the skirt of her dress with one hand to reveal the fact that she's not wearing any underwear. As you look down at the sudden movement, she reaches down with her free hand to spread her exposed pussy, blowing out yet another cloud of smoke as she teases you, [roxy.speech(Come on, I can tell yer want a taste o' my fuckin' cunt! All yer gotta do is get yer fuckin' tongue buried in here an' get me ta cum. Easiest item you'll ever earn!)]
+		Прежде чем ты успеваешь ответить, Рокси отступает от прилавка, одной рукой задирая подол платья и демонстрируя, что на ней нет никакого белья. Пока ты смотришь на это внезапное движение, она свободной рукой раздвигает свою обнажённую киску, выпуская очередное облако дыма и дразня тебя: [roxy.speech(Да ладно тебе, я же вижу, как ты хочешь попробовать мою пизду на вкус! Всё, что тебе нужно — это засунуть свой сраный язык поглубже и довести меня до кончáки. Самый лёгкий способ получить приз в твоей жизни!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_REPEAT"><![CDATA[
 	<p>
-		As you step foot inside Roxy's store once again, you see the one-eyed rat-girl leaning on the counter over on the far side of the room, puffing away on a cigarette. Just a moment later, she sees you entering her shop, and calls out, [roxy.speech(Hey [pc.name]! Yer back to buy some o' this shit I got on offer?)]
+		Когда ты снова переступаешь порог лавки Рокси, ты видишь одноглазую крысодевочку: она прислонилась к прилавку в дальнем конце комнаты, пуская дым сигареты. Спустя мгновение она замечает твое появление и окликает тебя: [roxy.speech(Эй, [pc.name]! Снова пришел за каким-нибудь дерьмом из моего ассортимента?)]
 	</p>
 	<p>
-		[pc.speech(Hi, Roxy,)] you reply, [pc.speech(I just wanted to see what you've got in stock.)]
+		[pc.speech(Привет, Рокси,)] отвечаешь ты, [pc.speech(Просто хотел посмотреть, что у тебя есть в наличии.)]
 	</p>
 	<p>
-		[roxy.speech(Well, seein' as it's you, I don't mind yer takin' a look around fer a bit. Oh, and remember, if yer want a free item, my special offer's still on!)] Roxy says, before bursting out in her abrasive laughter. [roxy.speech(All yer gotta do is come lie behind my counter fer an hour, so I can plant my sweet fuckin' cunt on yer face!)]
+		[roxy.speech(Ну, раз уж это ты, то можешь поглазеть тут разок-другой. О, и помни: если хочешь халявный товар, моё спецпредложение всё ещё в силе!)] — говорит Рокси, прежде чем разразиться своим резким хохотом. [roxy.speech(Тебе всего лишь нужно лечь за мой прилавок на часок, чтобы я могла припечатать свою сладкую ебучую киску тебе прямо на лицо!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_REPEAT_ADDICT"><![CDATA[
 	<p>
-		As you step foot inside Roxy's store once again, you see the one-eyed rat-girl leaning on the counter over on the far side of the room, puffing away on a cigarette. Just a moment later, she sees you entering her shop, and calls out, [roxy.speech(Hey, [pc.name]! Yer got a craving fer my fuckin' cunt, haven't yer?)]
+		Когда ты снова переступаешь порог лавки Рокси, ты видишь одноглазую крысодевочку: она прислонилась к прилавку в дальнем конце комнаты, пуская дым сигареты. Спустя мгновение она замечает твое появление и окликает тебя: [roxy.speech(Эй, [pc.name]! Скучаешь по моей ебучей киске, а?)]
 	</p>
 	<p>
-		[pc.speech(Hi, Roxy,)] you reply, trying not to reveal the fact that you're desperate for another taste of her pussy.
+		[pc.speech(Привет, Рокси,)] отвечаешь ты, стараясь не выдать того, как сильно тебе хочется снова попробовать её щелочку на вкус.
 	</p>
 	<p>
-		[roxy.speech(Heh! Don't yer try an' hide it!)] Roxy exclaims, before bursting out in her abrasive laughter. [roxy.speech(I can tell yer want nothin' more than for me to plant my sweet fuckin' cunt on yer face! Yer just desperate fer another taste o' my wet twat, ain't yer?)]
+		[roxy.speech(Хе! Да не пытайся ты это скрывать!)] — восклицает Рокси, прежде чем разразиться своим резким хохотом. [roxy.speech(Я же вижу, что тебе больше всего на свете хочется, чтобы я припечатала свою сладкую ебучую киску тебе на лицо! Ты просто изголодался по вкусу моей мокрой щели, а?)]
 	</p>
 	<p>
-		[pc.speech(Yes...)] you admit, your craving for Roxy's girlcum getting the better of you.
+		[pc.speech(Да...)] ты признаешь, что жажда роксиной девичьей смазки берет над тобой верх.
 	</p>
 	<p>
-		[roxy.speech(Heh! Just as I fuckin' planned!)] Roxy suddenly laughs, making you flinch. [roxy.speech(It's gonna cost yer a thousand flames to get another taste o' my sweet fuckin' nectar. I gotta make the cost o' that item I gave yer back!)]
+		[roxy.speech(Хе! Прямо как я и планировала!)] Рокси внезапно заливается смехом, заставляя тебя вздрогнуть. [roxy.speech(С тебя тысяча огней, чтобы еще разок приложиться к моему сладкому гребаному нектару. Мне же надо вернуть стоимость той штуковины, что я тебе дала!)]
 	</p>
 	<p>
-		You can't help but let out a desperate whine as you imagine yourself getting another taste of Roxy's girlcum. Perhaps it would be worth handing over a thousand flames to get your fix...
+		Ты невольно издаешь отчаянный стон, представляя, как снова пробуешь роксину девичью смазку. Возможно, стоит отдать тысячу огней, чтобы утолить эту жажду...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRADER_REPEAT_BEATEN_ADDICTION"><![CDATA[
 	<p>
-		As you step foot inside Roxy's store once again, you see the one-eyed rat-girl leaning on the counter over on the far side of the room, puffing away on a cigarette. She sees you enter her shop, and calls out, [roxy.speech(Hey, [pc.name]! Yer got a craving fer gettin' addicted to my fuckin' cunt again, eh?)]
+		Когда ты снова переступаешь порог лавки Рокси, ты видишь одноглазую крысодевочку: она прислонилась к прилавку в дальнем конце комнаты, затягиваясь сигаретой. Заметив твое появление, она выкрикивает: [roxy.speech(Эй, [pc.name]! Опять тянет подсесть на мою гребаную киску, а?)]
 	</p>
 	<p>
-		[pc.speech(Hi, Roxy,)] you reply, ignoring her question.
+		[pc.speech(Привет, Рокси,)] отвечаешь ты, игнорируя её вопрос.
 	</p>
 	<p>
-		[roxy.speech(Heh! Don't try to hide it!)] Roxy exclaims, before bursting out in her abrasive laughter. [roxy.speech(I can tell yer want nothin' more than for me to plant my sweet fuckin' cunt on yer face! Yer just desperate fer another taste o' my wet twat, ain't yer?)]
+		[roxy.speech(Хе! Не пытайся скрываться!)] восклицает Рокси, прежде чем разразиться своим резким смехом. [roxy.speech(Я же вижу, что ты хочешь только одного — чтобы я размазала свою сладкую гребаную киску тебе по лицу! Ты просто изголодался по моей мокрой щелке, так ведь?)]
 	</p>
 	<p>
-		[pc.speech(No, I'm not,)] you reply, having rid yourself of your addiction to Roxy's girlcum.
+		[pc.speech(Нет, вовсе нет,)] отвечаешь ты, избавившись от своей зависимости к роксиной девичьей смазке.
 	</p>
 	<p>
-		[roxy.speech(Heh! Yer can't hold out for long!)] Roxy suddenly laughs, making you flinch. [roxy.speech(I'll give yer another free item if yer agree to come get another taste o' my sweet fuckin' nectar. Come on, we both know yer love it!)]
+		[roxy.speech(Хе! Долго ты не продержишься!)] Рокси внезапно смеется, заставляя тебя вздрогнуть. [roxy.speech(Я дам тебе еще один бесплатный предмет, если ты согласишься еще разок приложиться к моему сладкому гребаному нектару. Да ладно, мы оба знаем, что ты это обожаешь!)]
 	</p>
 	<p>
-		You can't help but let out a sigh as you remember the last time you serviced Roxy's pussy. Despite ridding yourself of the addiction that followed, you still find a small part of yourself wanting to do it all again...
+		Ты невольно вздыхаешь, вспоминая, как в последний раз ласкал киску Рокси. И хотя ты сумел избавиться от последовавшей за этим зависимости, какая-то часть тебя всё ещё жаждет повторения...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROXY_SEX_START_ADDICT"><![CDATA[
 	<p>
-		Desperate for another taste of Roxy's girlcum, you place a thousand flames on the counter in front of her, before pleading, [pc.speech(Please! I need another taste! Please, let me lick your pussy!)]
+		Охваченный жаждой новой порции девичьей смазки Рокси, ты кладешь на прилавок перед ней тысячу огней, а затем умоляюще произносишь: [pc.speech(Пожалуйста! Мне нужно еще хоть разок! Пожалуйста, дай мне облизать твою киску!)]
 	</p>
 	<p>
-		[roxy.speech(Heh! I can't believe this fuckin' plan of mine actually worked!)] Roxy exclaims, letting out another of her abrasive laughs as she scoops up your money. Stepping to one side, she then lifts up the hinged part of the counter, before grinning at you. [roxy.speech(Come on then! Get back here and fuckin' lie down already!)]
+		[roxy.speech(Хе! Поверить не могу, что этот чертов план сработал!)] — восклицает Рокси, издавая очередной резкий смешок и загребая твои деньги. Отступив в сторону, она поднимает откидную часть прилавка и скалится тебе в лицо. [roxy.speech(Ну же! Живо за прилавок и ложись уже, черт возьми!)]
 	</p>
 	<p>
-		You eagerly do as the rat-girl says, and hurry forwards behind the counter. As you pass by her, she lets out a big puff of cigarette smoke, before reaching down and giving your [pc.ass+] a sharp slap. Letting out another grating laugh, she lets the counter-top slam shut behind you and says, [roxy.speech(Yer just fuckin' desperate fer another taste o' my cunt, ain't yer? Now hurry up and get down already. I'm eager ta get this started!)]
+		Ты послушно, как крысиная девка и велела, спешишь за прилавок. Когда ты проходишь мимо, она выпускает густое облако сигаретного дыма, а затем наклоняется и отвешивает твоему [pc.ass+] звонкую пощечину. Снова заливаясь хриплым смехом, она хлопает крышкой прилавка за твоей спиной и говорит: [roxy.speech(Ты просто чертовски изголодался по моей киске, а? Ну, шевелись и ложись уже. Сама не прочь поскорее начать!)]
 	</p>
 	<p>
-		Once again doing as Roxy says, you quickly lie down on your back behind the counter. Looking up, you see Roxy hike up her skirt, before stepping over your face and sinking down onto her knees. With her [roxy.pussy+] now hovering just above your face, Roxy looks down into your eyes and sneers, [roxy.speech(You'd better make this fuckin' good, y'hear? Get that fuckin' tongue of yours nice 'n deep! Yer did a good job at servicing my cunt the last time, so you'd better put the same fuckin' amount of effort into it now!)] 
+		Снова повинуясь словам Рокси, ты быстро ложишься на спину за прилавком. Подняв взгляд, ты видишь, как Рокси задирает юбку, перешагивает через твоё лицо и опускается на колени. Её [roxy.pussy+] теперь зависает прямо над твоим лицом; Рокси смотрит тебе в глаза и усмехается: [roxy.speech(Лучше сделай это чертовски хорошо, слышишь? Засунь свой гребаный язык поглубже! В прошлый раз ты отлично обслуживал мою киску, так что сейчас постарайся так же, блядь!)] 
 	</p>
 	<p>
-		Before you can say anything in response, the one-eyed rat-girl lets her legs give out from under her, planting her dripping-wet cunt down firmly onto your face with an audible squelch. Thanks to the fact that her pussy is already soaking wet, her girlcum immediately starts drooling out all over your mouth, and, desperately eager to get started with eating her out, you part your [pc.lips] and greedily drive your [pc.tongue+] up between her [roxy.labia+]. Roxy's juices soon start flowing into your open mouth, and as you set about kissing and licking the rat-girl's [roxy.pussy], you find yourself frantically swallowing them down.
+		Прежде чем ты успеваешь что-то ответить, одноглазая девчонка-крыса подкашивает ноги и с отчетливым влажным хлюпаньем плотно прижимает свою сочащуюся киску к твоему лицу. Поскольку её щелка уже насквозь мокрая, её смазка тут же начинает стекать тебе прямо в рот, и, отчаянно желая поскорее начать её вылизывать, ты раздвигаешь свои [pc.lips] и жадно просовываешь [pc.tongue+] между её [roxy.labia+]. Вскоре соки Рокси начинают литься тебе в открытый рот, и, пока ты увлеченно целуешь и лижешь [roxy.pussy] крысиной девки, ты обнаруживаешь, что лихорадочно заглатываешь их.
 	</p>
 	<p>
-		[roxy.speechNoEffects(Heh! Yer real and truly addicted to me sweet cunt, ain't yer?)] Roxy asks, [roxy.speech(That bitch up in Dominion sure knew 'er stuff; yer gonna be cunt-lickin' slave fer as long as I want yer!)]
+		[roxy.speechNoEffects(Хе! Ты и впрямь по-настоящему зависим от моей сладкой киски, а?)] — спрашивает Рокси, а затем добавляет: [roxy.speech(Та сучка из Dominion точно знала свое дело; ты будешь моим рабом-сосальщиком столько, сколько я захочу!)]
 	</p>
 	<p>
-		You can't help but let out a desperate, muffled moan into Roxy's [roxy.pussy] as she taunts you. The addictive nature of her girlcum is already having a profound effect on your mind, and you can't help but continue hungrily licking and kissing her pussy as you seek to satisfy yourself.
+		Ты невольно издаешь отчаянный, приглушенный стон в [roxy.pussy] Рокси, пока она дразнит тебя. Ее вызывающая девичья смазка уже оказывает глубокое влияние на твой разум, и ты не можешь перестать жадно лизать и целовать ее киску, пытаясь утолить свой голод.
 	</p>
 	<p>
-		[roxy.speech(Yer gonna do a real good job o' gettin' me ta cum at this rate! Keep on gettin' that tongue o' yers in deep, yeah, like that!)] Roxy commands, and, absolutely desperate to swallow down more of her addictive girlcum, you set about doing just that...
+		[roxy.speech(С такими темпами ты чертовски постараешься довести меня до оргазма! Так и продолжай, суй свой язык поглубже, да, вот так!)] — командует Рокси, и ты, охваченный отчаянным желанием проглотить еще больше ее вызывающей смазки, принимаешься за дело...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROXY_SEX_START"><![CDATA[
 	<p>
-		[pc.speech(Ok, I'll accept your deal in exchange for a free item,)] you say.
+		[pc.speech(Ладно, я принимаю твою сделку в обмен на бесплатную вещь,)] — говоришь ты.
 	</p>
 	<p>
-		[roxy.speech(Heh! I fuckin' knew yer wouldn't be able to resist my cunt!)] Roxy exclaims, letting out another of her abrasive laughs as she steps to one side and lifts up the hinged part of the counter. [roxy.speech(Come on then! Get back here and fuckin' lie down already!)]
+		[roxy.speech(Хе! А я, блядь, знала, что ты не устоишь перед моей киской!)] — восклицает Рокси, издавая очередной хриплый смешок, после чего отходит в сторону и поднимает откидную часть прилавка. [roxy.speech(Ну же! Живо иди сюда и ложись уже, черт возьми!)]
 	</p>
 	<p>
-		You do as the rat-girl says, and step forwards behind the counter. As you pass by her, she lets out a big puff of cigarette smoke, before reaching down and giving your [pc.ass+] a firm squeeze. Letting out another grating laugh, she lets the counter-top slam shut behind you and says, [roxy.speech(Oh yeah, that's a sweet fuckin' ass yer got there! Now get down.)]
+		Ты слушаешься крысодевочку и шагаешь за прилавок. Когда ты проходишь мимо, она выпускает густое облако сигаретного дыма, а затем наклоняется и крепко сжимает твою [pc.ass+]. Снова залившись резким смехом, она позволяет столешнице с грохотом захлопнуться за твоей спиной и говорит: [roxy.speech(О да, какая же у тебя охренительная задница! А теперь ложись.)]
 	</p>
 	<p>
-		Once again doing as Roxy says, you lie down on your back behind the counter. Looking up, you see Roxy hike up her skirt, before stepping over your face and sinking down onto her knees. With her [roxy.pussy+] now hovering just above your face, Roxy looks down into your eyes and sneers, [roxy.speech(You'd better make this fuckin' good, y'hear? Get that fuckin' tongue of yours nice 'n deep! I ain't had my cunt serviced fer a fuckin' while now, so you'd better put some fuckin' effort into it!)] 
+		Снова подчиняясь воле Рокси, ты ложишься на спину за прилавком. Подняв взгляд, ты видишь, как Рокси задирает юбку, перешагивает через твое лицо и опускается на колени. Теперь её [roxy.pussy+] зависла прямо над твоим лицом; Рокси смотрит тебе в глаза и презрительно усмехается: [roxy.speech(Сделай это чертовски хорошо, усек? Запихивай свой гребаный язык поглубже! Моей киске уже целую вечность не занимались, так что постарайся, блять, как следует!)] 
 	</p>
 	<p>
-		Before you can say anything in response, the one-eyed rat-girl lets her legs give out from under her, planting her dripping-wet cunt down firmly onto your face with an audible squelch. Thanks to the fact that her pussy is already soaking wet, her girlcum immediately starts drooling out all over your mouth, and, eager to get started with eating her out, you part your [pc.lips] and drive your [pc.tongue+] up between her [roxy.labia+]. Roxy's juices soon start flowing into your open mouth, and as you set about kissing and licking the rat-girl's [roxy.pussy], you find yourself swallowing them down.
+		Не успеваешь ты что-то ответить, как эта одноглазая крысодевка подкашивает ноги и с отчетливым влажным хлюпаньем впечатывает свою сочащуюся киску прямо тебе в лицо. Поскольку её щелка уже насквозь мокрая, её смазка тут же начинает стекать тебе прямо в рот. Жаждая поскорее приступить к ласкам, ты раздвигаешь свои [pc.lips] и просовываешь [pc.tongue+] между её [roxy.labia+]. Соки Рокси вскоре начинают литься тебе в открытый рот, и, принявшись облизывать и целовать [roxy.pussy] крысодевки, ты ловишь себя на том, что жадно заглатываешь их.
 	</p>
 	<p>
-		As you gulp down her girlcum, you suddenly start to feel a strange, overwhelming desire to taste more and more of Roxy's [roxy.pussy]. Desperately craning your neck up in order to force your [pc.lips] against the rat-girl's dripping [roxy.pussy], you start frantically kissing, sucking, and licking every part of her delicious [roxy.pussy] that's in range of your mouth. As you do this, you suddenly become aware of the fact that the rat-girl is laughing up above you, [roxy.speechNoEffects(Heh-heh-heh! That's it! Fuckin' drink it down! ~Mmm!~ Yes!)]
+		Когда ты заглатываешь её девичью сперму, тебя внезапно охватывает странное, непреодолимое желание пробовать её [roxy.pussy] всё больше и больше. Отчаянно вытягивая шею, чтобы прижать свой [pc.lips] к сочащейся [roxy.pussy] крысодевки, ты начинаешь неистово целовать, сосать и слизывать каждую частичку её восхитительной [roxy.pussy], до которой может дотянуться твой рот. И в этот момент ты вдруг осознаёшь, что крысодевка над тобой смеётся: [roxy.speechNoEffects(Хе-хе-хе! Вот так! Пей, сука, пей! ~Ммм!~ Да!)]
 	</p>
 	<p>
-		Eager to do as she says, you gulp down Roxy's juices, before thrusting your tongue up into her [roxy.pussy+]. As her slimy girlcum slides down your throat, you suddenly find yourself with a desperate craving for even more, and, reaching up to grab her thighs, you pull the rat-girl's cunt down onto your face. As you start to hungrily lick up as much of her girlcum as you possibly can, she continues to laugh, [roxy.speechNoEffects(Heh! That's right, lick it all up! Tastes good, don't it?)]
+		Стремясь исполнить её приказ, ты жадно глотаешь соки Рокси, а затем вонзаешь язык в её [roxy.pussy+]. Пока её скользкая девичья сперма стекает по твоему горлу, тебя внезапно накрывает дикая жажда ещё большего; ты хватаешься за её бёдра и притягиваешь киску крысодевки прямо к своему лицу. Пока ты голодно слизываешь столько её соков, сколько только можешь, она продолжает смеяться: [roxy.speechNoEffects(Хе! Вот так, слизывай всё до капли! Вкусно, а?)]
 	</p>
 	<p>
-		[pc.speechNoEffects(~Mmm!~ ~Mmmm!~)] you reply, your words muffled into the rat-girl's [roxy.pussy+].
+		[pc.speechNoEffects(~Ммм!~ ~Мммм!~)] — отвечаешь ты, и твои слова звучат глухо, утопая в [roxy.pussy+] крысодевки.
 	</p>
 	<p>
-		[roxy.speechNoEffects(Heh! Probably a bit late now, but I should let yer know somethin'. I went and bought one o' those special potions from some bitch up in Dominion. 'Makes yer girlcum real fuckin' addictive,' she said, 'Just get some cunt to eat yer out, and they'll be beggin' to be yer permanent pussy licker,' she said. From the way yer actin', it's lookin' like she was tellin' the truth!)]
+		[roxy.speechNoEffects(Хе! Наверное, уже поздновато, но я должна тебе кое-что сказать. Я тут купила одно из тех особенных зелий у одной сучки в Dominion. «Оно делает твою девичью сперму чертовски аддиктивной», — сказала она, — «Просто дай какой-нибудь киске облизать тебя, и она будет умолять стать твоей постоянной лизальщицей». Судя по тому, как ты себя ведёшь, она не пиздела!)]
 	</p>
 	<p>
-		You can't help but let out a desperate, muffled moan into Roxy's [roxy.pussy] as she reveals this. The addictive nature of her girlcum is already having a profound effect on your mind, and even as she reveals the fact that you've been tricked into drinking her addictive juices, you can't help but continue hungrily licking and kissing her pussy.
+		Ты невольно издаешь отчаянный, приглушенный стон в [roxy.pussy] Рокси, когда она открывает тебе правду. Аддиктивный эффект её девичьей смазки уже глубоко проникает в твой разум, и даже узнав, что тебя обманом заставили выпить её дурманящие соки, ты не можешь перестать жадно лизать и целовать её киску.
 	</p>
 	<p>
-		[roxy.speechNoEffects(Fuckin' looks like you're well an' truly addicted to my cunt now, ain't yer?)] Roxy laughs, [roxy.speech(Yer gonna do a real good job o' gettin' me ta cum at this rate! Keep on gettin' that tongue o' yers in deep, yeah, like that!)]
+		[roxy.speechNoEffects(Похоже, ты и впрямь подсел на мою киску, а?)] Рокси смеется, [roxy.speech(С таким настроем ты точно заставишь меня кончить! Так и продолжай, суй язык поглубже, да, вот так!)]
 	</p>
 	<p>
-		Absolutely desperate to swallow down more of her addictive girlcum, you set about doing as the rat-girl commands...
+		Охваченный безумным желанием проглотить еще больше её дурманящей смазки, ты принимаешься исполнять приказы крысодевочки...
 	</p>
 	]]>
 	</htmlContent>
@@ -237,30 +235,30 @@
 	
 	<htmlContent tag="FIREBOMBS"><![CDATA[
 	<p>
-		You think back to the arcane firebombs you got from the mysterious cave.
+		Ты вспоминаешь об арканных огненных бомбах, которые достал в той таинственной пещере.
 		#IF(flags.hasFlag(FLAG_axelExplainedVengar))
-			 Surely Roxy still has some connections from her time with Vengar's gang? You bring out a firebomb and set it down on the counter.
+			 Наверняка у Рокси остались связи со времен её пребывания в банде Венгара? Ты достаешь огненную бомбу и кладешь её на прилавок.
 		#ELSE
-			 Surely Roxy is the sort of rat who'd have some shady connections? You bring out a firebomb and set it down on the counter.
+			 Рокси наверняка из тех крыс, у которых есть мутные связи? Ты достаешь огненную бомбу и кладешь её на прилавок.
 		#ENDIF
 	</p>
 	<p>
-		[roxy.speech(What's that yer got there?)] Roxy asks, raising an eyebrow, [roxy.speech(The newest thing y'been jammin' up yer arse?)]
+		[roxy.speech(А это еще что такое?)] — спрашивает Рокси, вскинув бровь, — [roxy.speech(Очередная хрень, которую ты запихиваешь себе в задницу?)]
 	</p>
 	<p>
-		Rolling your eyes as Roxy chuckles at her own crude joke, you explain what the firebomb is and what it does. [roxy.speech(Yer mean it breaks when y'use et? 'urts resale value. I'll take it off yer 'ands fer twenty an' not a fuckin' flame more.)]
+		Закатив глаза на её грубую шутку, ты объясняешь, что это за огненная бомба и как она работает. [roxy.speech(То есть она взрывается при использовании? Снижает цену перепродажи. Заберу её у тебя за двадцать кредитов, и ни единым огнем больше.)]
 	</p>
 	<p>
-		[pc.speech(I'm not interested in just pawning it off to you,)] you reply, [pc.speech(I don't have a way to get more of these. I was wondering if you know anyone who does.)]
+		[pc.speech(Я не собираюсь просто сбывать их тебе,)] отвечаешь ты, [pc.speech(У меня нет возможности доставать их в таких количествах. Я подумал, может, ты знаешь кого-нибудь, у кого они есть.)]
 	</p>
 	<p>
-		Roxy frowns slightly at your question. [roxy.speech(I might. I might not. Tha' fuck do I get out ta' this?)]
+		Рокси слегка хмурится от твоего вопроса. [roxy.speech(Может, знаю. А может, и нет. Какого хера мне за это будет?)]
 	</p>
 	<p>
-		[pc.speech(Nobody up in Dominion is going to carry something like this. Think about it, exclusive goods mean more business.)]
+		[pc.speech(В Dominion никто не станет таскать подобное. Подумай сама: эксклюзивный товар — это больше прибыли.)]
 	</p>
 	<p>
-		You tense up as Roxy grabs the firebomb and holds it perilously close to her lit cigarette while examining it. After a brief pause, she puts it under the counter. [roxy.speech(Yeah, alright, y'made yer fuckin' point. Gimme, say, two days an' I'll set somethin' up. Now, y'gonna buy anythin' or are yer gonna stand there gawpin'?)]
+		Ты напрягаешься, когда Рокси берет огненную бомбу и, рассматривая её, подносит опасно близко к горящей сигарете. После короткой паузы она убирает её под прилавок. [roxy.speech(Ладно, черт с тобой, ты меня убедил. Дай мне дня два, и я что-нибудь устрою. Ну так что, будешь что-то покупать или так и будешь стоять и пялиться?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -270,10 +268,10 @@
 	
 	<htmlContent tag="FIREBOMBS_COMPLETE"><![CDATA[
 	<p>
-		Roxy gestures at a wooden crate full of familiar rag-stuffed glass bottles on a nearby shelf when you ask her about the firebomb you gave her. [roxy.speech(Y'blind? They's right there behind yer. Jus' came in, perfect copies o' the one yer gave me. Don't ask where I got 'em; all ya needs ta know is dat I's gonna be havin' ten o' dem fer sale every day.)]
+		Когда ты спрашиваешь про огненную бомбу, Рокси указывает на деревянный ящик с привычными стеклянными бутылками, набитыми тряпьем, стоящий на ближайшей полке. [roxy.speech(Ты что, ослеп? Они прямо у тебя за спиной. Только что завезли, точь-в-точь как та, что ты мне дал. И не спрашивай, откуда они; просто знай, что теперь у меня будет по десять штук на продажу каждый божий день.)]
 	</p>
 	<p>
-		Pausing to take a deep drag on her cigarette, she rudely blows smoke all over you as she cackles, [roxy.speech(Now, y'gonna buy 'em or wot?)]
+		Сделав глубокую затяжку, она грубо выпускает дым тебе прямо в лицо и заливается смехом: [roxy.speech(Ну так что, берешь или как?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -283,16 +281,16 @@
 	
 	<htmlContent tag="FIREBOMBS_FAILED"><![CDATA[
 	<p>
-		Roxy is likely the only person who's going to be able to help you to get your [pc.hands] on more of those arcane firebombs. Surely she still has some connections from her time with Vengar's gang? You ask the rat-girl if she's got any contacts who could make weapons of questionable legality. Leaning back in her chair and grinning at you, she replies, [roxy.speech(Maybe I 'as, maybe I don't. Wot ya tryin' ta get yer grubby little mits on?)]
+		Скорее всего, Рокси — единственный человек, способный помочь тебе раздобыть еще парочку [pc.hands] из этих арканных огненных бомб. Наверняка у нее остались связи со времен ее службы в банде Венгара? Ты спрашиваешь крысодевочку, нет ли у нее знакомых, способных смастерить оружие сомнительной законности. Откинувшись на спинку стула и ухмыляясь тебе, она отвечает: [roxy.speech(Может и есть, а может и нет. Чего это ты так жаждешь засунуть свои грязные лапки?)]
 	</p>
 	<p>
-		As you explain to Roxy the nature of the firebombs which you're no longer in possession of, you watch in dismay as the rat-girl's expression turns to one of confusion and annoyance. Despite giving her a clear description of the firebombs' properties, she shakes her head and snarls, [roxy.speech(Don't ya be wastin' me time with that shit. I ain't gonna bother me friends by askin' 'em ta fill a bottle with some kind o' burnin' stuff. An' besides, ain't nobody gonna buy weapons wot breaks when ya use 'em! Don't fuckin' ask me fer such stupid shit again.)]
+		Пока ты объясняешь Рокси, что случилось с твоими огненными бомбами, ты с досадой наблюдаешь, как на лице крысодевочки сменяется недоумение на раздражение. Несмотря на твое четкое описание свойств бомб, она качает головой и рычит: [roxy.speech(Не трать мое время на эту херню. Не стану я беспокоить друзей, прося их набить бутылку какой-то там горящей дрянью. И вообще, кто станет покупать оружие, которое разлетается в щепки при первом же использовании?! Не спрашивай меня больше о такой тупой херне.)]
 	</p>
 	<p>
-		Taking a deep drag on her cigarette to help her calm down, the obnoxious rat-girl blows smoke all over you and sneers, [roxy.speech(Now, ya gonna buy sumthin', or fuck off?)]
+		Сделав глубокую затяжку, чтобы успокоиться, наглая крысодевочка выпускает дым прямо тебе в лицо и скалится: [roxy.speech(Ну так что, будешь что-то покупать или съебаться?)]
 	</p>
 	<p>
-		With your hopes of ever getting more firebombs dashed by Roxy's rude response, you wonder what to do now...
+		Надежды на то, что ты когда-нибудь раздобудешь еще огненных бомб, разбиваются о грубость Рокси. Ты гадаешь, что же делать теперь...
 	</p>
 	]]>
 	</htmlContent>
@@ -302,13 +300,13 @@
 	
 	<htmlContent tag="TRADER_REPLY_NO"><![CDATA[
 	<p>
-		You really aren't interested in letting this obnoxious rat-girl sit on your face for an hour, and, taking a step away from the counter, you tell her as much, [pc.speech(I only came in to take a look at what you had for sale. I'm not interested in your deal.)]
+		Тебе совсем не хочется, чтобы эта назойливая крысиная девка целый час сидела у тебя на лице. Сделав шаг от прилавка, ты прямо говоришь ей об этом: [pc.speech(Я зашел просто посмотреть, что у тебя тут продается. Твоя сделка меня не особо прельщает.)]
 	</p>
 	<p>
-		[roxy.speech(Alright, alright, no need to be such a fuckin' cunt about it,)] Roxy huffs, lowering her skirt and leaning down on the counter once more. Taking a deep drag of her cigarette, she blows the smoke out in your general direction, grinning mischievously at you as she says, [roxy.speech(Yer still ain't as bad as most o' the stupid twats that wander in 'ere, so if yer ever change yer mind, just let me know, ok? Remember, yer get a free fuckin' item outta it!)]
+		[roxy.speech(Ладно, ладно, не обязательно быть такой сукой,)] — фыркает Рокси, одергивая юбку и снова нависая над прилавком. Глубоко затянувшись сигаретой, она выпускает дым в твою сторону, лукаво ухмыляясь: [roxy.speech(Ты всё равно не такой уж и тупой, как большинство дебилов, что сюда забредают. Так что, если передумаешь — только свистни, ладно? Помни, за это ты получишь гребаный бесплатный товар!)]
 	</p>
 	<p>
-		[pc.speech(Ok, I'll keep that in mind,)] you say, before moving off to look around the store.
+		[pc.speech(Ладно, буду иметь в виду,)] — отвечаешь ты, прежде чем отправиться осматривать лавку.
 	</p>
 	]]>
 	</htmlContent>
@@ -318,44 +316,44 @@
 	
 	<htmlContent tag="AFTER_ROXY_SEX"><![CDATA[
 	<p>
-		As Roxy starts to stand up, you desperately sit up to try and get one last lick of her pussy. Looking down to see you doing this, the rat-girl lets out another of her annoying laughs, before stepping to one side and denying you a final taste of her juices. [roxy.speech(Come on now! That's fuckin' enough! Get back to the other side o' the counter!)]
+		Когда Рокси начинает подниматься, ты отчаянно подаешься вперед, пытаясь напоследок лизнуть её киску. Заметив твои старания, крысиная девка издает очередной раздражающий смешок, отступает в сторону и лишает тебя последней возможности насладиться её соками. [roxy.speech(Да ну тебя! Хватит уже! А ну марш на другую сторону прилавка!)]
 	</p>
 	<p>
-		You reluctantly do as Roxy says, and, lifting up the counter top, you step back around to the other side. Ashamed at having been tricked into getting addicted to Roxy's girlcum, you start to take your leave, but the rat-girl calls out to stop you, [roxy.speech(Ay! Not so fuckin' fast! Yer want yer free item, don't ya?)]
+		Ты неохотно подчиняешься Рокси и, приподняв столешницу, перелезаешь на другую сторону. Чувствуя стыд от того, что так легко подсел на её девчачью смазку, ты собираешься уходить, но крысиная девка окликает тебя: [roxy.speech(Эй! Не так быстро! Ты же хочешь свой бесплатный подарок, а?)]
 	</p>
 	<p>
-		[pc.speech(Oh, yeah...)] you reply, turning back and stepping towards the counter.
+		[pc.speech(О, да...)] — отвечаешь ты, оборачиваясь и шагая к прилавку.
 	</p>
 	<p>
-		[roxy.speech(Don't yer worry! I'll be gettin' the value o' this back soon enough!)] Roxy laughs, [roxy.speech(Yer gonna come crawlin' back fer another taste o' my cunt before long, and it's gonna cost yer next time!)]
+		[roxy.speech(Не парься! Я скоро отбиваю стоимость этой штуки!)] — Рокси смеется, — [roxy.speech(Ты еще приползешь ко мне за добавкой, захотев еще разок лизнуть моей киски, и в следующий раз это тебе влетит в копеечку!)]
 	</p>
 	<p>
-		With that, Roxy leans down to fetch a couple of dice from beneath the counter, before grinning at you. [roxy.speech(Right. I'm gonna roll these, and the item yer gonna get is based on the total value, yer get me? Two or three, yer get a vanilla water, then four or five, it's one o' those fruit boxes the bat-morphs fuckin' love. Then, if yer lucky enough to get over that, it's a mother's milk for six an' seven, a bottle o' rum for eight or nine, a fuckin' burger for ten or eleven, and, if yer really, <i>really</i> fuckin' lucky, yer get a bottle o' angel's tears for a twelve.)]
+		С этими словами Рокси наклоняется, чтобы достать пару костей из-под прилавка, а затем расплывается в ухмылке, глядя на тебя. [roxy.speech(Так. Сейчас я их брошу, и вещь, которую ты получишь, будет зависеть от суммы очков, сечешь? Выпадет два или три — получишь обычную водичку, четыре или пять — одну из тех коробочек с фруктами, от которых летучие мыши-морфы просто в восторге. Если же повезет еще больше, то на шесть и семь будет материнское молоко, на восемь или девять — бутылка рома, на десять или одиннадцать — гребаный бургер, а если ты <i>реально</i> чертовски везучий, то на двенадцать получишь бутылочку ангельских слез.)]
 	</p>
 	<p>
-		[pc.speech(Alright,)] you say, [pc.speech(let's see then.)]
+		[pc.speech(Ладно,)] — говоришь ты, — [pc.speech(посмотрим.)]
 	</p>
 	<p>
-		[roxy.speech(Fuckin' calm down! I'm gettin' to it!)] Roxy laughs, grabbing the dice and preparing to roll...
+		[roxy.speech(Да не суетись ты! Сейчас всё будет!)] — хохочет Рокси, хватая кости и готовясь к броску...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROXY_SEX_DICE_ROLL"><![CDATA[
 	<p>
-		Roxy rolls the dice onto the counter, and you both watch as they quickly come clattering to a halt. You can't help but get the feeling that there's something a little unnatural in the way that they tumble across the counter-top, but, not being certain about it, you decide not to say anything.
+		Рокси бросает кости на прилавок, и вы оба замираете, наблюдая, как они с грохотом затихают. Тебя не покидает ощущение, что в том, как они перекатываются по поверхности, есть что-то сверхъестественное, но, не будучи уверенным до конца, ты решаешь промолчать.
 	</p>
 	<p>
-		The first dice stops on a <b>[#SPECIAL_PARSE_0]</b>, and the second dice stops on a <b>[#SPECIAL_PARSE_1]</b>, giving a total value of <b>[#SPECIAL_PARSE_2]</b>.
+		Первый кубик выпадает на <b>[#SPECIAL_PARSE_0]</b>, а второй — на <b>[#SPECIAL_PARSE_1]</b>, что в сумме дает <b>[#SPECIAL_PARSE_2]</b>.
 	</p>
 	<p>
-		[roxy.speech(Well, would yer fuckin' look at that!)] Roxy exclaims, looking down at the result of her roll. [roxy.speech(That fuckin' gets yer [#SPECIAL_PARSE_3]!)]
+		[roxy.speech(Ну надо же, гляньте-ка на это!)] — восклицает Рокси, глядя на результат броска. [roxy.speech(Вот это, блядь, [#SPECIAL_PARSE_3]!)]
 	</p>
 	<p>
-		As the obnoxious rat-girl throws the promised item to you, another of her abrasive, cackling laughs bursts out from her mouth, [roxy.speech(Heh-heh-heh! I'll be makin' the value o' that back soon enough! Yer gonna get some real fuckin' nice cravings fer my cunt before long, and when yer do, yer gonna come crawlin' back here beggin' fer another taste o' my fuckin' sweet nectar. I think a thousand flames is a fair price, so make sure yer bring yer cash with yer when the cravings kick in! Heh!)]
+		Когда назойливая девчонка-крыса швыряет тебе обещанную вещь, она разражается очередным резким, заливистым смехом: [roxy.speech(Хе-хе-хе! Я скоро отыграю стоимость этой хреновины! Скоро у тебя будет такая дикая, блядь, тяга к моей щелке, что ты приползешь сюда на коленях, умоляя о еще одной порции моего сладкого нектара. Думаю, тысяча огней — честная цена, так что не забудь прихватить бабло, когда тебя начнет штырить! Хе!)]
 	</p>
 	<p>
-		Taking the [#SPECIAL_PARSE_4] that Roxy just gave to you, you turn around and prepare to take your leave...
+		Забрав [#SPECIAL_PARSE_4], который тебе только что дала Рокси, ты разворачиваешься, готовясь уйти...
 	</p>
 	]]>
 	</htmlContent>
@@ -365,10 +363,10 @@
 	
 	<htmlContent tag="AFTER_ROXY_SEX_ADDICT"><![CDATA[
 	<p>
-		As Roxy starts to stand up, you desperately sit up to try and get one last lick of her pussy. Looking down to see you doing this, the rat-girl lets out another of her annoying laughs, before stepping to one side and denying you a final taste of her juices. [roxy.speech(Come on now! That's fuckin' enough! Get back to the other side o' the counter!)]
+		Когда Рокси начинает подниматься, ты отчаянно подаешься вперед, пытаясь напоследок лизнуть её киску. Заметив твои старания, крысиная девка издает очередной раздражающий смешок, отступает в сторону и лишает тебя последней возможности насладиться её соками. [roxy.speech(Да ну тебя! Хватит уже! А ну марш на другую сторону прилавка!)]
 	</p>
 	<p>
-		You reluctantly do as Roxy says, and, lifting up the counter top, you step back around to the other side. Having got your fix of Roxy's addictive girlcum, you turn to take your leave, and as you head off, the rat-girl calls out to you, [roxy.speech(Make sure to bring more o' yer cash when yer get more cravings fer my sweet fuckin' cunt!)]
+		Ты неохотно делаешь, как говорит Рокси, и, приподняв столешницу, перешагиваешь на другую сторону. Насладившись своей порцией вызывающей привыкание девичьей смазки, ты разворачиваешься, чтобы уйти, и вслед тебе кричит девчонка-крыса: [roxy.speech(И не забудь прихватить побольше налички, когда тебя снова потянет на мою сладкую, блядь, щелку!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -378,30 +376,29 @@
 	
 	<htmlContent tag="VENGAR"><![CDATA[
 	<p>
-		Wanting to spend some time interacting with Vengar, you ask Roxy if she'll let you talk to [vengar.herHim]. Letting out an abrasive cackle, the rat-girl takes a drag on her cigarette and sneers, [roxy.speech(You's wantin' ta fuck [vengar.her] ass? Heh! If that's wot ya afta, you's betta be prepared ta pay!)]
-	</p>
-	<p>
-		Looking down at the floor behind her desk, Roxy kicks out with one of her legs, causing Vengar to reveal [vengar.her] presence by letting out a loud yelp. Moving aside so as to give her slave the room in which to stand up, Roxy snaps, [roxy.speech(Get on yer fuckin' feet! [pc.Name] 'ere is thinkin' about fuckin' yer ass!)]
-	</p>
+		Желая провести время с Венгар, ты спрашиваешь Рокси, позволит ли она тебе поговорить с [vengar.herHim]. Издав резкий хохот, крысиная девчонка затягивается сигаретой и скалится: [roxy.speech(Хочешь оттрахать задницу [vengar.her]? Хе! Если тебе это надо, лучше готовь кошелек!)]
+	</p><p>
+Посмотрев на пол за своим столом, Рокси пинает ногой, заставляя Венгара выдать своё [vengar.her] присутствие громким вскриком. Отодвинувшись, чтобы дать рабыне место, чтобы та могла встать, Рокси рявкает: [roxy.speech(А ну вставай, блядь! [pc.Name] уже вовсю мечтает оттрахать твою задницу!)]
+</p>
 	#IF(vengar.isFeminine())
 		<p>
-			[vengar.speech(Yes, Roxy...)] Vengar meekly replies, and after standing up and throwing a quick glance your way, she casts her eyes to the floor and blushes as she reveals her naked body to you.
+			[vengar.speech(Да, Рокси...)] — кротко отвечает Венгар. Встав и бросив на тебя быстрый взгляд, она опускает глаза в пол, заливаясь румянцем и обнажая перед тобой свое нагое тело.
 		</p>
 		<p>
-			Cackling in delight at her slave's submission, the rat-girl reaches down and gropes Vengar's ass, before turning towards you and asking, [roxy.speech(So, ya gonna pay me fifteen-'undred flames ta fuck her, or perhaps ya looking ta get fucked, huh? If dat's the case, I'll unlock 'er cage an' let 'er hump ya fer a thousand flames!)]
+			Восторгаясь покорностью своей рабыни, крысиная девчонка довольно хохочет, наклоняется и бесцеремонно сжимает задницу Венгар, после чего поворачивается к тебе с вопросом: [roxy.speech(Ну так что, отвалишь мне полторы тысячи огней, чтобы трахнуть её, или, может, сам хочешь, чтобы тебя оттрахали, а? Если так, я открою её клетку, и она насадится на тебя за тысячу огней!)]
 		</p>
 		<p>
-			Looking over at Vengar, you wonder if you should pay to have sex with her, or instead decide to do something else...
+			Глядя на Венгар, ты раздумываешь, стоит ли платить за секс с ней или же решиться на что-то другое...
 		</p>
 	#ELSE
 		<p>
-			[vengar.speech(Ya dumb bitch! You's gonna pay fer this some day!)] Vengar shouts as he stands up and growls at his one-time girlfriend.
+			[vengar.speech(Тупая сука! Ты за это еще поплатишься!)] — кричит Венгар, вскакивая на ноги и рыча на свою бывшую девушку.
 		</p>
 		<p>
-			Not brooking any insubordination, the rat-girl delivers a sharp slap across Vengar's face, before turning towards you and asking, [roxy.speech(So, ya gonna pay me fifteen-'undred flames ta fuck him, or perhaps ya looking ta get fucked, huh? If dat's the case, I's only gonna ask ya fer a thousand flames!)]
+			Не терпя никакого неповиновения, крысиная девка отвешивает Венгару звонкую пощечину, после чего поворачивается к тебе и спрашивает: [roxy.speech(Ну чё, заплатишь мне пятнадцать сотен огней, чтоб трахнуть его, или, может, сама хочешь, чтоб тебя поимели, а? Если так, то с тебя всего лишь тысяча огней!)]
 		</p>
 		<p>
-			Looking over at Vengar, you wonder if you should pay to have sex with him, or instead decide to do something else...
+			Глядя на Венгара, ты раздумываешь, стоит ли платить за секс с ним или же решишь заняться чем-то другим...
 		</p>
 	#ENDIF
 	]]>
@@ -410,17 +407,19 @@
 	<htmlContent tag="VENGAR_SEX_DOM"><![CDATA[
 	#IF(vengar.isFeminine())
 		<p>
-			Handing over the one thousand, five-hundred flames which Roxy is asking for, you tell her that you want to dominantly fuck Vengar. Letting out yet another of her intensely-annoying cackles, the rat-girl takes a deep drag on her cigarette and declares, [roxy.speech(You's can fuck 'er all ya want! 'Er toys ain't locked, so you's can take off 'er cage an' buttplug if ya like! 'Ave fun!)]
+			Отдавая запрошенные Рокси полторы тысячи огней, ты говоришь ей, что хочешь доминантно трахнуть Венгара. Издав очередной душераздирающе-бесячий смешок, крысиная девка затягивается сигаретой и заявляет: [roxy.speech(Трахни его сколько влезет! Игрушки его не заперты, так что можешь снять с него клетку и анальную пробку, если хочешь! Веселись!)]
 		</p>
 		<p>
-			Still laughing to herself, the rat-girl pushes Vengar over to the far end of the counter, before returning to her usual spot and sitting down to watch the two of you go at it...
+			Всё ещё посмеиваясь про себя, крысиная девка сталкивает Венгара в дальний конец прилавка, после чего возвращается на своё привычное место и усаживается, чтобы понаблюдать за тем, как вы двое вовсю трахаетесь...
 		</p>
 	#ELSE
+
 		<p>
-			Handing over the one thousand, five-hundred flames which Roxy is asking for, you tell her that you want to dominantly fuck Vengar. Letting out yet another of her intensely-annoying cackles, the rat-girl takes a deep drag on her cigarette and declares, [roxy.speech(You's can fuck 'im all ya want! Don't pay no attention if he starts complainin' about it; 'e's just a slave an' ain't nobody gonna give a shit if ya abuse 'im! Heh! 'Ave fun!)]
+			Отдавая запрошенные Рокси полторы тысячи огней, ты говоришь ей, что хочешь доминантно трахнуть Венгара. Издав очередной душераздирающе-бесячий смешок, крысиная девка затягивается сигаретой и заявляет: [roxy.speech(Трахни его сколько влезет! И не слушай, если он начнёт ныть; он всего лишь раб, и всем плевать, если ты будешь его юзать! Хе! Веселись!)]
 		</p>
 		<p>
-			Still laughing to herself, the rat-girl pushes Vengar over to the far end of the counter, before returning to her usual spot and sitting down to watch the two of you go at it. Moving over to the rat-boy, you ignore the angry snarl on his face and prepare to give him a good fucking...
+			Все еще посмеиваясь про себя, крысиная девка подталкивает Венгар к дальнему краю прилавка, после чего возвращается на свое привычное место и усаживается, чтобы понаблюдать за тем, как вы двое трахаетесь.
+		Перебираясь к крысиному парню, ты игнорируешь злобное рычание на его морде и готовишься получить от него хорошую, сочную...
 		</p>
 	#ENDIF
 	]]>
@@ -429,17 +428,18 @@
 	<htmlContent tag="VENGAR_SEX_SUB"><![CDATA[
 	#IF(vengar.isFeminine())
 		<p>
-			Handing over the one thousand flames which Roxy is asking for, you tell her that you want Vengar to dominantly fuck you. Letting out yet another of her intensely-annoying cackles, the rat-girl takes a deep drag on her cigarette and declares, [roxy.speech(You's can get fucked by 'er all ya want! Lemme take 'er cage off so's she can stick 'er tiny little cok in ya! Heh! 'Ave fun!)]
+			Отдавая тысячу огней, которые просит Рокси, ты говоришь ей, что хочешь, чтобы Венгар доминировал над тобой во время секса. Издав очередной душераздирающе раздражающий хохот, крысиная девка затягивается сигаретой и заявляет: [roxy.speech(Можешь трахаться с ним сколько влезет! Дай-ка я сниму с него клетку, чтоб он мог вставить свой крошечный член в тебя! Хе! Развлекайтесь!)]
 		</p>
 		<p>
-			Still laughing to herself, the rat-girl takes off Vengar's chastity cage, before pushing her over to the far end of the counter. Returning to her usual spot, she sits down to watch her slave dominantly fuck you...
+			Все еще посмеиваясь про себя, крысиная девка снимает с Венгар целоватьную клетку, а затем подталкивает её к дальнему краю прилавка. Вернувшись на свое привычное место, она усаживается, чтобы посмотреть, как её раб будет доминирующе трахать тебя...
 		</p>
 	#ELSE
 		<p>
-			Handing over the one thousand flames which Roxy is asking for, you tell her that you want Vengar to dominantly fuck you. Letting out yet another of her intensely-annoying cackles, the rat-girl takes a deep drag on her cigarette and declares, [roxy.speech(You's can get fucked by him all ya want! He's gonna love the chance ta stick 'is dick in someone! Heh! 'Ave fun!)]
+			Отдавая тысячу огней, которые просит Рокси, ты говоришь ей, что хочешь, чтобы Венгар доминировал над тобой во время секса. Издав очередной душераздирающе раздражающий хохот, крысиная девка затягивается сигаретой и заявляет: [roxy.speech(Можешь трахаться с ним сколько влезет! Ему точно понравится шанс вставить свой член в кого-нибудь! Хе! Развлекайтесь!)]
 		</p>
 		<p>
-			Still laughing to herself, the rat-girl pushes Vengar over to the far end of the counter, before returning to her usual spot and sitting down to watch the two of you go at it. Moving over to the rat-boy, you ignore the angry snarl on his face and prepare to receive a good fucking from him...
+		Все еще посмеиваясь про себя, девчонка-крыса подталкивает Венгара к дальнему краю прилавка, после чего возвращается на свое привычное место и усаживается, чтобы понаблюдать за тем, как вы двое трахаетесь...
+		Подходя к крысопарню, ты игнорируешь злобное рычание на его лице и готовишься получить от него хорошую порцию ебли...
 		</p>
 	#ENDIF
 	]]>
@@ -450,26 +450,26 @@
 	
 	<htmlContent tag="AFTER_VENGAR_SEX_AS_DOM"><![CDATA[
 	<p>
-		Having had your fun, you [pc.step] away from Vengar and tell Roxy that you've finished with [vengar.herHim]. Snapping her fingers and pointing to the floor beside her, she shouts at her slave, [roxy.speech(Get back down 'ere so I can get me cunt on yer face!)]
+	Насладившись, ты [pc.step] от Венгара и говоришь Рокси, что с [vengar.herHim] покончено. Щелкнув пальцами и указав на пол рядом с собой, она кричит своей рабыне: [roxy.speech(А ну быстро сюда, чтоб я могла пристроить свою щелку тебе прямо на морду!)]
 	</p>
 	<p>
-		Doing as [vengar.sheIs] told, the [vengar.race] steps over to [vengar.her] owner and lies down beside her. Sitting down and planting her drooling cunt on Vengar's face, Roxy lets out a deeply-satisfied sigh and states, [roxy.speech(If ya ever want ta fuck [vengar.herHim] again, just pay up an' I'll give ya anotha go with [vengar.herHim]!)]
+	Сделав так, как велела [vengar.sheIs], [vengar.race] подходит к своей [vengar.her] и ложится рядом с ней. Усевшись и пристроив свою текущую щелку прямо на лицо Венгару, Рокси глубоко и удовлетворенно вздыхает и заявляет: [roxy.speech(Если захочешь еще раз трахнуть [vengar.herHim], просто плати, и я дам тебе еще разок с [vengar.herHim]!)]
 	</p>
 	<p>
-		After quickly getting your things back in order, you wonder what to do next...
+	Быстро приведя свои вещи в порядок, ты задумываешься, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_VENGAR_SEX_AS_SUB"><![CDATA[
 	<p>
-		Having had your fun, you [pc.step] away from Vengar and tell Roxy that you've had enough of being fucked by [vengar.herHim]. Snapping her fingers and pointing to the floor beside her, she shouts at her slave, [roxy.speech(Get back down 'ere so I can get me cunt on yer face!)]
+	Насладившись, ты [pc.step] от Венгара и говоришь Рокси, что с тебя хватит ебли в [vengar.herHim]. Щелкнув пальцами и указав на пол рядом с собой, она кричит своей рабыне: [roxy.speech(А ну быстро сюда, чтоб я могла пристроить свою щелку тебе прямо на морду!)]
 	</p>
 	<p>
-		Doing as [vengar.sheIs] told, the [vengar.race] steps over to [vengar.her] owner and lies down beside her. Sitting down and planting her drooling cunt on Vengar's face, Roxy lets out a deeply-satisfied sigh and states, [roxy.speech(If ya ever want ta get fucked by [vengar.herHim] again, just pay up an' I'll give ya anotha go with [vengar.herHim]!)]
+		Послушная словам [vengar.sheIs], [vengar.race] подходит к своей хозяйке [vengar.her] и ложится рядом. Усевшись и пристроив свою текущую киску прямо на лицо Венгара, Рокси издает глубокий, удовлетворенный вздох и заявляет: [roxy.speech(Если захочешь, чтоб тебя снова оттрахала [vengar.herHim], просто плати, и я устрою тебе еще один заход с [vengar.herHim]!)]
 	</p>
 	<p>
-		After quickly getting your things back in order, you wonder what to do next...
+	Быстро приведя свои вещи в порядок, ты задумываешься, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -479,32 +479,31 @@
 	
 	<htmlContent tag="VENGAR_SISSIFY"><![CDATA[
 	<p>
-		Thinking that Vengar could do with some changes to make him more receptive to being a submissive slave, you suggest to Roxy that she have him turned into a sissy slut. Chuckling in glee at your suggestion, the rat-girl points out a flaw in your plan, [roxy.speech(That's all well an' good, but I ain't got no transformative potions! I'd love fer me slave ta be a subby sissy slut, but I ain't gonna pay fer that ta be done ta him!)]
+		Подумав, что Венгару не помешало бы немного измениться, чтобы стать более покорным рабом, ты предлагаешь Рокси превратить его в сисси-шлюшку. Весело посмеиваясь над твоим предложением, крысиная девчонка указывает на изъян в твоем плане: [roxy.speech(Это всё здорово, но у меня нет никаких трансформирующих зелий! Я бы с радостью сделала своего раба покорной сисси-шлюшкой, но платить за это из своего кармана не собираюсь!)]
 	</p>
 	<p>
-		Explaining to Roxy that if she was willing to donate an item of food, you could enchant both it and your [#ITEM_FETISH_UNREFINED.getName(false)] in order to make a couple of potions to turn Vengar into a submissive sissy. Hearing what it is you're saying, the rat-boy stands up from behind the counter and shouts, [vengar.speechNoEffects(Fuck you! I ain't bein' turned inta no sissy!)]
+		Ты объясняешь Рокси, что если она готова пожертвовать какой-нибудь едой, ты сможешь зачаровать и её, и свой [#ITEM_FETISH_UNREFINED.getName(false)], чтобы сварить пару зелий и превратить Венгара в покорную сисси. Услышав твои слова, крысиный парень вскакивает из-за прилавка и орет: [vengar.speechNoEffects(Да пошел ты! Не дам я превратить себя в какую-то там сисси!)]
 	</p>
 	<p>
-		Sharply slapping the rat-boy across the face, Roxy snaps, [roxy.speech(If ya ain't wantin' this, I could always arrange fer ya ta be locked up in public use stocks fer the rest o' yer miserable life! Wot's it gonna be, slave?! Ya gonna be a good girl, or ya want ta be turned inta a public cum-dump?!)]
+		Резко влепив крысиному пацану пощечину, Рокси рявкает: [roxy.speech(Если тебе это не нравится, я всегда могу устроить так, что тебя запрут в позорном столбе для общественного пользования до конца твоей жалкой жизни! Ну, что выберешь, раб?! Будешь послушной девочкой или захочешь стать общественной спермобаккой?!)]
 	</p>
 	<p>
-		Knowing that he doesn't have any choice but to submit to Roxy's wishes, Vengar sinks back down onto the floor with a defeated sigh. Tossing a burger at you, the foul-mouthed rat-girl snaps, [roxy.speech(Fuckin' get on with it then! I's lookin' forward ta seein' the sort of sissy slut you's gonna turn 'im inta!)]
+		Понимая, что у него нет иного выбора, кроме как подчиниться желаниям Рокси, Венгар с побежденным вздохом опускается на пол. Бросив в тебя бургер, сквернословящая девчонка-крыса рявкает: [roxy.speech(Давай уже, шевелись! Мне не терпится глянуть, в какого сопливого шлюша ты его превратишь!)]
 	</p>
-	<p>
-		Quickly setting about enchanting both the burger and your [#ITEM_FETISH_UNREFINED.getName(false)], you've soon crafted two transformative potions. Grabbing both of them, Roxy force-feeds her slave the concoction which you've created, before stepping back and watching as he begins to transform...
+	<p>		Быстро заколдовав и бургер, и твой [#ITEM_FETISH_UNREFINED.getName(false)], ты создаешь два трансформирующих зелья. Схватив оба, Рокси силой впихивает твой состав в глотку своему рабу, после чего отступает назад, наблюдая за тем, как он начинает меняться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGAR_SISSIFY_END"><![CDATA[
 	<p>
-		Cackling in glee at Vengar's new form, Roxy grabs a chastity cage and a buttplug from beneath her counter, and after locking Vengar's small cock up, she shoves the sex toy into her ass. Letting out a shocked gasp as she feels the metallic object enter her, Vengar whines, [vengar.speech(Is dat really necessary?)]
+		Ликующе хохоча над новым обликом Венгара, Рокси выуживает из-под прилавка девайс целомудрия и анальную пробку. Заперев крошечный член Венгара в клетку, она с силой вставляет секс-игрушку себе в задницу. Издав шокированный вздох от ощущения холодного металла внутри, Венгар скулит: [vengar.speech(Это правда необходимо?)]
 	</p>
 	<p>
-		[roxy.speech(Course it is, ya sissy slut!)] Roxy teases as she gives her slave's feminine ass a good grope. After applying the finishing touch by using a dye brush to recolour Vengar's slave collar from black to light pink, Roxy turns towards you and snickers, [roxy.speech(Good job with creatin' those potions! Me slave's lookin' real good now! So, you's wantin' ta pay ta get a fuck with 'er?)]
+		[roxy.speech(Конечно необходимо, ты, сопливая шлюшка!)] — дразнит Рокси, хорошенько сжимая женственную задницу своего раба. Наведя последние штрихи и перекрасив кисточкой ошейник Венгара из черного в нежно-розовый, Рокси поворачивается к тебе и хихикает: [roxy.speech(Хорошо ты сварила эти зелья! Мой раб теперь выглядит просто охрененно! Ну что, хочешь заплатить, чтобы трахнуть её?)]
 	</p>
 	<p>
-		Looking over at the feminine form of Vengar, you wonder whether you should pay to have sex with her, or do something else...
+		Глядя на женственную фигуру Венгара, ты раздумываешь, стоит ли заплатить за секс с ней или заняться чем-то другим...
 	</p>
 	]]>
 	</htmlContent>

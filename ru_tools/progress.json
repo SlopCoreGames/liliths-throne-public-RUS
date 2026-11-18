@@ -144,7 +144,20 @@
     "res/txt/places/shinrin_highlands/hideout.xml",
     "res/txt/places/shinrin_highlands/shiranuisTrap.xml",
     "res/txt/places/submission/batCaverns.xml",
-    "res/txt/places/submission/fortressAlpha.xml"
+    "res/txt/places/submission/fortressAlpha.xml",
+    "res/txt/places/submission/fortressAlphaCompanions.xml",
+    "res/txt/places/submission/fortressDemon.xml",
+    "res/txt/places/submission/fortressFemales.xml",
+    "res/txt/places/submission/fortressFemalesCompanions.xml",
+    "res/txt/places/submission/fortressImpGuards.xml",
+    "res/txt/places/submission/fortressImpGuardsCompanions.xml",
+    "res/txt/places/submission/fortressMales.xml",
+    "res/txt/places/submission/fortressMalesCompanions.xml",
+    "res/txt/places/submission/gamblingDen/main.xml",
+    "res/txt/places/submission/gamblingDen/pregnancyRoulette.xml",
+    "res/txt/places/submission/gamblingDen/roxysShop.xml",
+    "res/txt/places/submission/impCitadel.xml",
+    "res/txt/places/submission/impCitadelCompanions.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

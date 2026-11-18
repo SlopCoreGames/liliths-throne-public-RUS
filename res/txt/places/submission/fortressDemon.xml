@@ -3,56 +3,56 @@
 	
 	<htmlContent tag="ENTER_FORTRESS"><![CDATA[
 	<p>
-		Entering the fortress
+		Вход в крепость
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE"><![CDATA[
 	<p>
-		Gateway
+		Ворота
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LEAVE_FORTRESS"><![CDATA[
 	<p>
-		Leaving the fortress
+		Выход из крепости
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COURTYARD"><![CDATA[
 	<p>
-		Empty squalid courtyard
+		Пустой грязный двор
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WELL"><![CDATA[
 	<p>
-		Well
+		Колодец
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP"><![CDATA[
 	<p>
-		Keep
+		Цитадель
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CELLS"><![CDATA[
 	<p>
-		Cells building
+		Здание камер
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TREASURY"><![CDATA[
 	<p>
-		Small treasury building
+		Небольшая сокровищница
 	</p>
 	]]>
 	</htmlContent>

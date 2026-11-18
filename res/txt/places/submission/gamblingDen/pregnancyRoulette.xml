@@ -3,95 +3,95 @@
 
 	<htmlContent tag="PREGNANCY_ROULETTE"><![CDATA[
 	<p>
-		At the far end of the atrium, a long wooden counter has been set into the wall. A sign hanging above this opening reads 'Epona's Pregnancy Roulette', and, standing behind the desk, you see a brown-haired horse girl. As you approach, the horse-girl catches your eye, and, beckoning you over, she calls out, [epona.speech(Hey there! You got a moment?)]
+		В дальнем конце атриума в стену встроена длинная деревянная стойка. Над проемом висит вывеска «Рулетка беременности Эпоны», а за стойкой ты видишь каштановую лошадиную девушку. Когда ты приближаешься, она ловит твой взгляд и, заманивая тебя к себе, окликает: [epona.speech(Эй, привет! Есть минутка?)]
 	</p>
 	<p>
-		Deciding to see what it is this she wants, you walk up to the counter, and as you come to a halt before her, the horse-girl beams at you in delight. [epona.speech(Hello there! I haven't seen you around here before. Are you interested in pregnancy at all? Y'know, getting knocked up, knocking some fertile sluts up, all that good stuff?)]
+		Решив узнать, что ей нужно, ты подходишь к стойке, и, когда ты останавливаешься перед ней, лошадиная дева сияет от восторга. [epona.speech(Привет-привет! Раньше тебя здесь не видела. Тебя вообще интересует беременность? Ну, знаешь, зачать самому или оплодотворить парочку фертильных шлюх — всё в таком духе?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_NO_FETISH"><![CDATA[
 	<p>
-		[pc.speech(Maybe. What's this about?)] you ask.
+		[pc.speech(Может быть. А что это за штука?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[epona.speech(Well, to keep it brief, the name's Epona, and I'm the one in charge of our special game, 'Pregnancy Roulette'!)] Epona happily explains. [epona.speech(Basically, if you pay the buy-in of ten thousand flames, you can join five other breeders in trying to knock a volunteer up, or, if you'd rather be the one to get preggers, you can put in the same buy-in and guess which of the six studs is gonna be the father of your kids!)]
+		[epona.speech(Ну, если вкратце, меня зовут Эпона, и я заведую нашей особенной игрой — «Рулеткой беременности»!)] — радостно объясняет Эпона. [epona.speech(В общем, если ты заплатишь взнос в десять тысяч огней, то сможешь вместе с пятью другими заводчиками попытаться зачать ребенка от добровольницы. Или же, если хочешь сама забеременеть, ты можешь внести ту же сумму и угадать, какой из шести жеребцов станет отцом твоих детей!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_PREGNANCY_FETISH"><![CDATA[
 	<p>
-		You feel your heart start to race at the mention of getting bred, and, unable to contain your enthusiasm, you blurt out, [pc.speech(Yes! You mean this is a game about getting knocked up?! Can I have a go?)]
+		При упоминании осеменения твое сердце начинает бешено колотиться, и, не в силах сдержать энтузиазм, ты выпаливаешь: [pc.speech(Да! То есть это игра про то, как залетают?! Можно мне попробовать?)]
 	</p>
 	<p>
-		[epona.speech(Haha! You got a thing for being a Mommy, huh? Well, to keep it brief, the name's Epona, and I'm the one in charge of our special game, 'Pregnancy Roulette'!)] Epona happily explains. [epona.speech(Basically, if you pay the buy-in of ten thousand flames, you can join five other breeders in trying to knock a volunteer up, or, if you'd rather be the one to get preggers, you can put in the same buy-in and guess which of the six studs is gonna be the father of your kids! I'm guessing you're going to be more interested in that second option.)]
+		[epona.speech(Ха-ха! Значит, тебе по душе роль мамочки, а? Ну, если вкратце, меня зовут Эпона, и я тут за главную в нашей особенной игре — «Беременной рулетке»!)] — весело объясняет Эпона. [epona.speech(В общем, если внесешь ставку в десять тысяч огней, то сможешь вместе с пятью другими заводчиками попытаться оплодотворить добровольницу. А если хочешь сама забеременеть, то платишь столько же и угадываешь, какой из шести жеребцов станет отцом твоих детей! Помяни мое слово, тебя, скорее всего, заинтересует именно второй вариант.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_IMPREGNATION_FETISH"><![CDATA[
 	<p>
-		You feel your heart start to race at the mention of impregnation, and, unable to contain your enthusiasm, you blurt out, [pc.speech(Yes! You mean this is a game about knocking people up?! Can I have a go?)]
+		При упоминании о зачатии твое сердце начинает бешено колотиться, и, не в силах сдержать восторг, ты выпаливаешь: [pc.speech(Да! То есть это игра, где нужно всех оплодотворять?! Можно мне тоже попробовать?)]
 	</p>
 	<p>
-		[epona.speech(Haha! You got a thing for making Mommys, huh? Well, to keep it brief, the name's Epona, and I'm the one in charge of our special game, 'Pregnancy Roulette'!)] Epona happily explains, [epona.speech(Basically, if you pay the buy-in of ten thousand flames, you can join five other breeders in trying to knock a volunteer up, or, if you'd rather be the one to get preggers, you can put in the same buy-in and guess which of the six studs is gonna be the father of your kids! I'm guessing you're going to be more interested in that first option.)]
+		[epona.speech(Ха-ха! Значит, тебе по душе роль мамочки, а? Ну, если вкратце, меня зовут Эпона, и я тут за главную в нашей особенной игре — «Беременной рулетке»!)] — весело объясняет Эпона, [epona.speech(В общем, если внесешь ставку в десять тысяч огней, то сможешь вместе с пятью другими заводчиками попытаться оплодотворить добровольницу. А если хочешь сама забеременеть, то платишь столько же и угадываешь, какой из шести жеребцов станет отцом твоих детей! Помяни мое слово, тебя, скорее всего, заинтересует именно первый вариант.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BOTH_FETISH"><![CDATA[
 	<p>
-		You feel your heart start to race at the mention of breeding, and, unable to contain your enthusiasm, you blurt out, [pc.speech(Yes! You mean this is a game all about breeding?! Can I have a go?)]
+		При упоминании о разведении скота твое сердце начинает бешено колотиться, и, не в силах сдержать восторг, ты выпаливаешь: [pc.speech(Да! То есть это игра, целиком посвященная разведению?! Можно мне тоже попробовать?)]
 	</p>
 	<p>
-		[epona.speech(Haha! You got a thing for pregnancies, huh? Well, to keep it brief, the name's Epona, and I'm the one in charge of our special game, 'Pregnancy Roulette'!)] Epona happily explains. [epona.speech(Basically, if you pay the buy-in of ten thousand flames, you can join five other breeders in trying to knock a volunteer up, or, if you'd rather be the one to get preggers, you can put in the same buy-in and guess which of the six studs is gonna be the father of your kids!)]
+		[epona.speech(Ха-ха! Вижу, тебя тянет к беременностям, а? Ну, если вкратце, меня зовут Эпона, и я тут за главную в нашей особенной игре — «Беременная рулетка»!)] — радостно объясняет Эпона. [epona.speech(Суть такова: если ты внесешь ставку в десять тысяч огней, то сможешь вместе с пятью другими заводчиками попытаться зачать ребенка в добровольце. А если хочешь сама забеременеть, то платишь столько же и угадываешь, какой из шести жеребцов станет отцом твоих детей!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_END"><![CDATA[
 	<p>
-		[pc.speech(Ten thousand flames? That's a lot more expensive than the other games in here,)] you observe.
+		[pc.speech(Десять тысяч огней? Это куда дороже, чем остальные игры здесь,)] — замечаешь ты.
 	</p>
 	<p>
-		[epona.speech(Yeah, well, this is kind of the premium game here in the Gambling Den. But with a big buy-in comes the chance of a big reward! If you get a girl pregnant, you win double your money back! Oh, and if you're the one getting knocked up, and you guess the father correctly, you win fifty thousand flames! Just let me know if you're interested, or want me to go over the rules with you.)]
+		[epona.speech(Ну да, это своего рода элитная игра в нашем Игорном притоне. Но чем выше ставка, тем больше шанс на крупный куш! Если ты залетишь девчонку, то получишь двойную выплату! О, и если ты сама забеременеешь и угадаешь отца, то выиграешь пятьдесят тысяч огней! Просто скажи, если тебе интересно или если хочешь, чтобы я еще раз объяснила правила.)]
 	</p>
 	<p>
-		[pc.speech(Ok, thanks, Epona,)] you reply.
+		[pc.speech(Ладно, спасибо, Эпона,)] — отвечаешь ты.
 	</p>
 	<p>
-		[epona.speech(Oh, and I almost forgot!)] Epona exclaims, [epona.speech(I've got a little customer loyalty thing going. Basically, each time you have a go at my game, I'll give you a stamp. Collect six stamps, and you can take me for a ride!)]
+		[epona.speech(О, чуть не забыла!)] — восклицает Эпона, [epona.speech(У меня тут есть небольшая программа лояльности. В общем, каждый раз, когда ты играешь в мою игру, я ставлю тебе штамп. Соберешь шесть штампов — и сможешь оседлать меня!)]
 	</p>
 	<p>
-		With that, Epona steps back from the counter, before laughing and pulling her skirt up to flash her black panties at you. Looking down at the sudden movement, you see the unmistakable bulge of a huge horse-cock between her legs.
+		С этими словами Эпона отступает от стойки, после чего заливисто смеется и задирает юбку, демонстрируя тебе свои черные трусики. Посмотрев вниз на это внезапное движение, ты видишь между её ног отчетливый бугор огромного лошадиного члена.
 	</p>
 	<p>
-		[epona.speech(Haha!)] Epona laughs, [epona.speech(I've got the full package down here, so you get to choose whether you're the one riding me, or I'm the one riding you!)]
+		[epona.speech(Ха-ха!)] Эпона смеется, [epona.speech(Тут у меня целый комплект, так что тебе решать: либо ты оседлаешь меня, либо я оседлаю тебя!)]
 	</p>
 	<p>
-		With that, Epona lets her skirt fall back down to cover her panties, and steps forwards to lean on the counter. [epona.speech(So, just let me know if you want to play!)]
+		С этими словами Эпона позволяет юбке снова сползти, прикрывая трусики, и делает шаг вперед, опираясь на стойку. [epona.speech(Так что просто дай знать, если захочешь сыграть!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_REPEAT"><![CDATA[
 	<p>
-		At the far end of the atrium, a long wooden counter has been set into the wall. A sign hanging above this opening reads 'Epona's Pregnancy Roulette', and, standing behind the desk, you see the sign's namesake waiting for another game to start. As you walk towards the counter, Epona notices you and calls out, [epona.speech(Heya, [pc.name]!)]
+		В дальнем конце атриума в стену встроена длинная деревянная стойка. Над проемом висит вывеска «Беременная рулетка Эпоны», а за прилавком ты видишь ту самую обладательницу имени, ожидающую начала новой игры. Когда ты подходишь к стойке, Эпона замечает тебя и окликает: [epona.speech(Эй, [pc.name]!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_EPONA_IMPREGNATED"><![CDATA[
 	<p>
-		At the far end of the atrium, a long wooden counter has been set into the wall. A sign hanging above this opening reads 'Epona's Pregnancy Roulette', and, standing behind the desk, you see the sign's namesake waiting for another game to start. As you walk towards the counter, Epona notices you and calls out, [epona.speech(Ah, [pc.name]! Look! Look!)]
+		В дальнем конце атриума в стену встроена длинная деревянная стойка. Над проемом висит вывеска «Беременная рулетка Эпоны», а за прилавком ты видишь ту самую обладательницу имени, ожидающую начала новой игры. Когда ты подходишь к стойке, Эпона замечает тебя и восклицает: [epona.speech(А, [pc.name]! Смотри! Смотри!)]
 	</p>
 	<p>
-		As you walk up to the counter to find out what it is Epona wants you to see, the horse-girl steps back and points down at her stomach. Looking down at the horse-girl's tummy, you see that she's sporting a round, pregnant bump. She lets out a little laugh as she sees you looking down at her stomach, and starts stroking her belly as she happily sighs, [epona.speech(Look what you did... Isn't it fantastic? I'm going to be a Mommy...)]
+		Пока ты подходишь к стойке, чтобы понять, на что именно хочет показать тебе кобылка, она отступает на шаг и указывает на свой живот. Взглянув на её живот, ты видишь, что он заметно округлился от беременности. Заметив твой взгляд, она тихонько смеется и начинает ласково поглаживать свой пузико, довольно вздыхая: [epona.speech(Посмотри, что ты наделал... Разве это не чудесно? Я стану мамочкой...)]
 	</p>
 	<p>
-		You can't help but smile as you see how pleased Epona is, and spend the next few minutes leaning over the counter to stroke her tummy while listening to her tale of how happy she was when she found out she'd been impregnated by you. Soon enough, however, Epona reminds you that she's still at work, and, as you step back from the counter, she sighs once more, [epona.speech(So, just let me know if you want to play a game of Pregnancy Roulette. I bet you want to share your potent seed with all the girls...)]
+		Ты невольно улыбаешься, видя, как Эпона довольна собой. Следующие несколько минут ты проводишь, склонившись над стойкой и поглаживая её животик, пока она увлеченно рассказывает, как была счастлива, узнав, что ты её оплодотворил. Впрочем, вскоре Эпона напоминает, что она всё ещё на работе, и когда ты отстраняешься от стойки, она снова вздыхает: [epona.speech(Так что просто дай знать, если захочешь сыграть в «Рулетку беременности». Бьюсь об заклад, тебе не терпится раздать своё мощное семя всем девчонкам...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -100,428 +100,423 @@
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_GREETING_UTIL_END"><![CDATA[
 	<p>
-		Having now been introduced to Epona, you wonder if you should take up her offer of paying to join a game of pregnancy roulette, or instead do something else...
+		Теперь, когда ты познакомился с Эпоной, ты раздумываешь, стоит ли принять её предложение и заплатить за участие в игре в рулетку беременности, или же заняться чем-то другим...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_GREETING_UTIL_PREG_END"><![CDATA[
 	<p>
-		Having seen that Epona is pregnant with your child, you now wonder if you should take up her offer of paying to join a game of pregnancy roulette, or instead do something else...
+		Увидев, что Эпона беременна твоим ребёнком, ты теперь раздумываешь, стоит ли принять её предложение и заплатить за участие в игре в рулетку беременности, или же заняться чем-то другим...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EPONA_START_SEX_AS_SUB"><![CDATA[
 	<p>
-		[pc.speech(I think it's time I cash those stamps in,)] you say, grinning at Epona.
+		[pc.speech(Думаю, пришло время обналичить эти штампы,)] — говоришь ты, ухмыляясь Эпоне.
 	</p>
 	<p>
-		[epona.speech(Yes! I thought you'd never ask!)] the horse-girl eagerly replies, before stepping to one side and lifting up the counter-top. [epona.speech(Come around here, we can do this in the back room. Oh, and are you wanting to ride me, or shall I take charge?)]
+		[epona.speech(Да! Я думала, ты никогда не спросишь!)] — с нетерпением отвечает коняжка, прежде чем отойти в сторону и приподнять столешницу стойки. [epona.speech(Подходи сюда, можем сыграть в подсобке. О, и как ты хочешь: будешь скакать на мне или мне взять всё в свои руки?)]
 	</p>
 	<p>
-		[pc.speech(I'm going to be the one in charge,)] you reply, stepping around behind the counter before moving up next to Epona and giving her [epona.ass+] a firm squeeze.
+		[pc.speech(Вести буду я,)] — отвечаешь ты, обходя стойку, подходишь к Эпоне и крепко сжимаешь её [epona.ass+].
 	</p>
 	<p>
-		[epona.speech(~Mmm!~ Excellent! Right this way!)] the horse-girl squeals, placing a 'Be back soon' sign on the counter, before quickly leading you towards a door marked 'Staff Room'. Hurriedly opening it and stepping inside, Epona pulls you after her, and you suddenly find yourself standing in a rather plain-looking staff room, furnished with a couple of leather sofas and a low table.
+		[epona.speech(~Ммм!~ Отлично! Сюда, за мной!)] — визжит коняшка, вешая на стойку табличку «Скоро вернусь», и быстро ведет тебя к двери с надписью «Подсобка». Поспешно открыв её и шагнув внутрь, Эпона затягивает тебя за собой, и ты внезапно оказываешься в довольно скромной комнате для персонала, обставленной парой кожаных диванов и низким столиком.
 	</p>
 	<p>
-		Turning to face you, Epona leans in and kisses you hotly on the lips, before pulling back and moaning, [epona.speech(~Mmm!~ Yes! Now come fuck me!)]
+		Развернувшись к тебе, Эпона наклоняется и жадно целует тебя в губы, после чего отстраняется с придыханием: [epona.speech(~Ммм!~ Да! А теперь иди и трахни меня!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EPONA_START_SEX_AS_DOM"><![CDATA[
 	<p>
-		[pc.speech(I was wondering if I could get those stamps traded in,)] you say, smiling at Epona.
+		[pc.speech(Я тут подумал, может, можно обменять эти марки,)] — говоришь ты, улыбаясь Эпоне.
 	</p>
 	<p>
-		[epona.speech(Yes! I thought you'd never ask!)] the horse-girl eagerly replies, before stepping to one side and lifting up the counter-top. [epona.speech(Come around here, we can do this in the back room. Oh, and are you wanting to ride me, or shall I take charge?)]
+		[epona.speech(Да! Я думала, ты никогда не спросишь!)] — с нетерпением отвечает коняжка, прежде чем отойти в сторону и приподнять столешницу стойки. [epona.speech(Подходи сюда, можем сыграть в подсобке. О, и как ты хочешь: будешь скакать на мне или мне взять всё в свои руки?)]
 	</p>
 	<p>
-		[pc.speech(If it's ok with you, could you take charge?)] you ask, stepping around behind the counter before moving up next to Epona.
+		[pc.speech(Если ты не против, может, возьмешь всё на себя?)] — спрашиваешь ты, обходя стойку и подходя к Эпоне вплотную.
 	</p>
 	<p>
-		[epona.speech(Of course! Don't you worry, I'll take you for a real good ride! Right this way!)] the horse-girl says, placing a 'Be back soon' sign on the counter, before quickly leading you towards a door marked 'Staff Room'. Hurriedly opening it and stepping inside, Epona dominantly pulls you after her, and you suddenly find yourself standing in a rather plain-looking staff room, furnished with a couple of leather sofas and a low table.
+		[epona.speech(Конечно! Не переживай, я устрою тебе отличную скачку! Сюда, за мной!)] — говорит коняшка, вешая на стойку табличку «Скоро вернусь», и быстро ведет тебя к двери с надписью «Подсобка». Поспешно открыв её и шагнув внутрь, Эпона властно тянет тебя за собой, и ты внезапно оказываешься в довольно скромной комнате для персонала, обставленной парой кожаных диванов и низким столиком.
 	</p>
 	<p>
-		Turning to face you, Epona leans in and kisses you hotly on the lips, before pulling back and moaning, [epona.speech(~Mmm!~ Yes! I hope you're ready for a good, hard fucking!)]
+		Развернувшись к тебе, Эпона наклоняется и жадно целует тебя в губы, после чего отстраняется с придыханием: [epona.speech(~Ммм!~ Да! Надеюсь, ты готов к хорошему, жесткому траху!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EPONA_POST_SEX"><![CDATA[
 	<p>
-		[epona.speech(Fuck... That was great...)] Epona sighs, stepping back from you and starting to clean herself up as she gets ready to return to work.
+		[epona.speech(Бля... Это было круто...)] Эпона вздыхает, отстраняясь от тебя и начиная приводить себя в порядок, готовясь вернуться к работе.
 	</p>
 	<p>
-		[pc.speech(Yeah, that was great,)] you reply, following Epona's lead as you start to get your things in order.
+		[pc.speech(Да, было супер,)] отвечаешь ты, следуя примеру Эпоны и начиная собирать свои вещи.
 	</p>
 	<p>
-		[epona.speech(Well, back to work for me. Remember, if you get another six stamps, we can do this again,)] Epona says, winking at you as she holds the door open.
+		[epona.speech(Ну, а мне пора за работу. Помни: соберешь еще шесть штампов — и мы сможем повторить,)] говорит Эпона, подмигивая тебе и придерживая дверь.
 	</p>
 	<p>
-		Stepping through the open doorway, you quickly move back out into the gambling hall proper, before turning around to face Epona behind the counter. The horse-girl throws you a knowing smile, before leaning forwards and sighing, [epona.speech(If you've still got some energy left, just let me know if you want to do a game of pregnancy roulette.)]
+		Переступив порог, ты быстро выходишь обратно в игровой зал, а затем оборачиваешься к Эпоне, стоящей за стойкой. Девушка-лошадь понимающе улыбается тебе, после чего наклоняется вперед и вздыхает: [epona.speech(Если у тебя еще осталась Энергия, просто дай знать, если захочешь сыграть в рулетку беременности.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EPONA_POST_SEX_NO_ORGASM"><![CDATA[
 	<p>
-		[epona.speech(Aww... You didn't even satisfy me...)] Epona sighs, stepping back from you and starting to clean herself up as she gets ready to return to work.
+		[epona.speech(Ох... Ты меня даже не удовлетворил...)] Эпона вздыхает, отстраняясь от тебя и начиная приводить себя в порядок, готовясь вернуться к работе.
 	</p>
 	<p>
-		[pc.speech(Maybe next time,)] you reply, following Epona's lead as you start to get your things in order.
+		[pc.speech(Может, в следующий раз,)] отвечаешь ты, следуя примеру Эпоны и начиная собирать свои вещи.
 	</p>
 	<p>
-		[epona.speech(Well, back to work for me. Remember, if you get another six stamps, we can do this again,)] Epona says, winking at you as she holds the door open.
+		[epona.speech(Ну, а мне пора за работу. Помни: соберешь еще шесть штампов — и мы сможем повторить,)] говорит Эпона, подмигивая тебе и придерживая дверь.
 	</p>
 	<p>
-		Stepping through the open doorway, you quickly move back out into the gambling hall proper, before turning around to face Epona behind the counter. The horse-girl throws you a knowing smile, before leaning forwards and sighing, [epona.speech(If you've still got some energy left, just let me know if you want to do a game of pregnancy roulette.)]
+		Переступив порог, ты быстро выходишь обратно в игровой зал, а затем оборачиваешься к Эпоне, стоящей за стойкой. Девушка-лошадь понимающе улыбается тебе, после чего наклоняется вперед и вздыхает: [epona.speech(Если у тебя еще осталась Энергия, просто дай знать, если захочешь сыграть в рулетку беременности.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_RULES"><![CDATA[
 	<p>
-		Wanting some clarification on how pregnancy roulette works, you ask, [pc.speech(What are the rules for this game of yours?)]
+		Желая прояснить, как работает эта рулетка беременности, ты спрашиваешь: [pc.speech(Каковы правила вашей игры?)]
 	</p>
 	<p>
-		[epona.speech(Well, it's pretty simple, really!)] Epona happily responds. [epona.speech(If you're looking to be one of the breeders, you first need to place a buy-in of ten thousand flames. After that, you join five others in trying to knock a volunteer up. I roll a dice to see in what order the breeders go, and then once you've all pumped the lucky girl full of cum, I run a pregnancy tester over her belly, and whoever's the father wins twenty thousand flames!)]
+		[epona.speech(Ну, на самом деле всё довольно просто!)] — радостно отвечает Эпона. [epona.speech(Если ты хочешь стать одним из производителей, тебе сначала нужно внести ставку в десять тысяч огней. После этого ты вместе с пятью другими пытаешься оплодотворить добровольницу. Я бросаю кости, чтобы определить очередность, а когда вы все набьете её живот спермой, я провожу тест на беременность по её животу, и тот, кто окажется отцом, выигрывает двадцать тысяч огней!)]
 	</p>
 	<p>
-		[pc.speech(I see,)] you reply.
+		[pc.speech(Понятно,)] — отвечаешь ты.
 	</p>
 	<p>
-		[epona.speech(If, however, you're looking to be the one being bred, then, just like the breeders, you first need to give me ten thousand flames. After that, you have to guess which of the six studs is going to knock you up! Once they've all pumped your pussy full of cum, I use a pregnancy tester to see who's the father of your kids, and if you correctly guessed who it'd be, you win fifty thousand flames!)]
+		[epona.speech(Если же ты хочешь сама стать той, кого будут осеменять, то, как и производителям, тебе сначала нужно отдать мне десять тысяч огней. После этого тебе нужно угадать, какой из шести жеребцов тебя оплодотворит! Когда они все набьют твою киску спермой, я использую тест на беременность, чтобы узнать, кто отец твоих деток, и если ты угадаешь, то выиграешь пятьдесят тысяч огней!)]
 	</p>
 	<p>
-		[pc.speech(Ok, that seems simple enough,)] you say. [pc.speech(What if the volunteer doesn't get pregnant?)]
+		[pc.speech(Ладно, звучит довольно просто,)] — говоришь ты. [pc.speech(А что, если добровольница не забеременеет?)]
 	</p>
 	<p>
-		[epona.speech(Well, in that case, everyone loses their bets,)] Epona replies. [epona.speech(I give the volunteer a [#ITEM_innoxia_pills_fertility.getName(false)] before we start though, so that shouldn't happen!)]
+		[epona.speech(Ну, в таком случае все проигрывают свои ставки,)] — отвечает Эпона. [epona.speech(Правда, перед началом я даю добровольнице [#ITEM_innoxia_pills_fertility.getName(false)], так что такого быть не должно!)]
 	</p>
 	<p>
-		[pc.speech(Alright, thanks for explaining it to me.)]
+		[pc.speech(Хорошо, спасибо за объяснение.)]
 	</p>
 	<p>
-		[epona.speech(You're welcome! Let me know if you want to play,)] Epona says, leaning down on the counter in front of her.
+		[epona.speech(Всегда пожалуйста! Дай знать, если захочешь поиграть,)] — говорит Эпона, наклоняясь к тебе через стойку.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_PRE_SELECTION_FUTA"><![CDATA[
 	<p>
-		[pc.speech(Epona?)] you ask, getting the horse-girl's attention before continuing, [pc.speech(I'd like to play a game of pregnancy roulette, as the one being bred.)]
+		[pc.speech(Эпона?)] — окликаешь ты полудевушку-полулошадь, а затем продолжаешь: [pc.speech(Я бы хотел сыграть в «рулетку беременности» в роли того, кого будут осеменять.)]
 	</p>
 	<p>
-		You place the ten thousand flames on the counter before you, and, after Epona has counted it all out, she looks up at you and grins. [epona.speech(This is gonna be so much fun! Now, we like to split up the breeders into groups of males and futas, so who do you want to be making you a Mommy?)]
+		Ты выкладываешь десять тысяч огней на стойку перед собой, и, пересчитав всё до последнего, Эпона поднимает на тебя взгляд и расплывается в ухмылке. [epona.speech(Это будет чертовски весело! Слушай, мы обычно делим производителей на группы из мужчин и фута, так что кто именно будет делать из тебя мамочку?)]
 	</p>
 	<p>
-		[pc.speech(The futas,)] you reply.
+		[pc.speech(Футы,)] — отвечаешь ты.
 	</p>
 	<p>
-		[epona.speech(Great!)] Epona happily exclaims, stamping your loyalty card before rushing out from behind her counter. [epona.speech(Right this way!)]
+		[epona.speech(Отлично!)] — радостно восклицает Эпона, штампуя твою карту лояльности, и тут же выскакивает из-за стойки. [epona.speech(Сюда, за мной!)]
+	</p><p>
+Следуя за Эпоной, ты быстро доходишь до комнаты для фута-разведения. Интерьер этой комнаты скрыт от посторонних глаз темно-розовой ширмой, на которой красуется стилизованный белый силуэт фута-девушки лошади с массивным эрекцией. Когда Эпона ведет тебя в обход ширмы, она замечает: [epona.speech(Спорим, тебе не терпится стать] #IF(pc.hasLegs())spreading your legs for#ELSEgetting fucked by#ENDIF a bunch of horny futas!)]
 	</p>
 	<p>
-		Trailing in Epona's footsteps, you're quickly led over to the futa breeding room. The interior of this room is concealed from public view by means of a dark pink canvas privacy screen, which bears a stylised white silhouette of a horse-girl futa sporting a massive erection. As Epona leads you around this screen, she comments, [epona.speech(I bet you can't wait to be #IF(pc.hasLegs())spreading your legs for#ELSEgetting fucked by#ENDIF a bunch of horny futas!)]
+		Следуя за возбужденной коняшкой, ты сворачиваешь за край занавеса и оказываешься в небольшой комнате с деревянным полом. Единственная мебель здесь — пара элегантных деревянных столов и мягких диванов, придвинутых к левой и правой стенам. В дальнем конце комнаты ты видишь большое зеркало и одинокую дверь, а чуть левее них, примерно на уровне талии, в стене виднеется круглое отверстие [unit.lSizes].
 	</p>
 	<p>
-		Following the excited horse-girl around the side of the canvas screen, you find yourself stepping into a small, wooden-floored room. The only furnishings in this area are a couple of elegant wooden tables and padded sofas, which have been pushed up against the left and right-hand walls. Set into the far side of the room, you see a large mirror and solitary door, and a few [unit.lSizes] to the left of those, at about waist-height, there's a round opening in the wall.
+		Эпона ведет тебя к этой двери и, открыв её, жестом приглашает войти. В узком коридорчике за дверью ты понимаешь, что зеркало, мимо которого ты только что прошел, — одностороннее: через него можно подглядывать за тем, что происходит в основном зале. Прямо перед тобой, перед круглым отверстием, ведущим в комнату для фута-разведения, стоит длинная мягкая скамья. Совершенно очевидно, что тебе придется лечь на неё так, чтобы твоя нижняя половина была открыта для разводчиков.
 	</p>
 	<p>
-		Epona leads you over to this door, and upon opening it, ushers you inside. Within the small corridor beyond, you discover that the mirror you just passed is one-way, allowing you to look back out into the main room. Up ahead, placed in front of the round opening that links this area to the futa breeding room, is a long, padded bench. It's quite obvious that you're going to be expected to lie on this, allowing your bottom half to be exposed to the breeding room.
+		[epona.speech(Точно! Так что просто подожди здесь, а я схожу и приведу фута,] — объясняет Эпона. [epona.speech(Мы стараемся держать разводчиков отдельно от добровольцев, понимаешь? А то раньше бывали случаи, когда они слишком заводились и пытались заставить добровольца выбрать именно их,)] [epona.speech(Я мигом!)]
 	</p>
 	<p>
-		[epona.speech(Right! So, you just wait here, and I'll go fetch the futas. We like to keep the breeders separated from the volunteer, you see, as we've had issues in the past where the breeders would get a little over-excited and try to force the volunteer to pick them as their guess,)] Epona explains. [epona.speech(I'll be right back!)]
-	</p>
-	<p>
-		Epona quickly rushes off, leaving you to wait in the partitioned corridor...
+		Эпона быстро убегает, оставляя тебя ждать в отделенном перегородкой коридоре...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_SELECTION_FUTA"><![CDATA[
 	<p>
-		After only a few minutes, you look through the one-way mirror to see Epona entering the room once more. Trailing in her wake, you see six futas, all of them already stripped naked. Trotting alongside each one of these breeders is a rather excited-looking horse-girl. As this large group finishes entering the room, the horse-girls dutifully drop to their knees beside their partner, and, with a combination of licks and strokes, quickly get their chosen breeder's cock to full hardness.
+		Спустя всего несколько минут ты заглядываешь в одностороннее зеркало и видишь, как Эпона снова входит в комнату. Следом за ней заходят шесть фута, и все они уже нагишом. Рядом с каждым из этих заводчиков семенит довольно возбужденная лошадка. Как только эта большая группа оказывается в комнате, лошадки послушно опускаются на колени рядом со своими партнерами и смесью облизываний и ласк быстро доводят выбранных ими заводчиков до полной твердости.
 	</p>
 	<p>
-		While these horse-girls are getting the breeders warmed up, Epona opens the door beside you and steps forwards into the small room. [epona.speech(Heya! Look at all those cocks lined up just for you! So, which one do you think's gonna be the one to knock you up? Remember, after you've chosen, I'll roll dice to see in what order they get to use your pussy. Oh, and I almost forgot! You need to take a [#ITEM_innoxia_pills_fertility.getName(false)]!)]
+		Пока лошадки разогревают заводчиков, Эпона открывает дверь рядом с тобой и шагает в маленькую комнату. [epona.speech(Хей! Посмотри, сколько членов выстроилось специально для тебя! Ну, как думаешь, кто из них окажется тем самым, кто тебя оплодотворит? Помни, когда ты выберешь, я брошу кубики, чтобы узнать, в каком порядке они будут использовать твою киску. О, и чуть не забыла! Тебе нужно принять [#ITEM_innoxia_pills_fertility.getName(false)]!)]
 	</p>
 	<p>
-		Epona hands you a little purple pill, which you quickly swallow. You then turn to look over the six futas before you, and after Epona's pointed out each one and told you her name, you decide upon the futa that you think will be the father of your kids...
+		Эпона протягивает тебе маленькую фиолетовую таблетку, которую ты быстро проглатываешь. Затем ты поворачиваешься, чтобы рассмотреть шестерых фута перед собой, и после того как Эпона указала на каждого и назвала их имена, ты выбираешь ту футу, которая, по твоему мнению, станет отцом твоих детей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_PRE_SELECTION"><![CDATA[
 	<p>
-		[pc.speech(Epona?)] you ask, getting the horse-girl's attention before continuing, [pc.speech(I'd like to play a game of pregnancy roulette, as the one being bred.)]
+		[pc.speech(Эпона?)] — окликаешь ты полудевушку-полулошадь, а затем продолжаешь: [pc.speech(Я бы хотел сыграть в «рулетку беременности» в роли того, кого будут осеменять.)]
 	</p>
 	<p>
-		You place the ten thousand flames on the counter before you, and, after Epona has counted it all out, she looks up at you and grins. [epona.speech(This is gonna be so much fun! Now, we like to split up the breeders into groups of males and futas, so who do you want to be making you a Mommy?)]
+		Ты выкладываешь десять тысяч огней на стойку перед собой, и, пересчитав всё до последнего, Эпона поднимает на тебя взгляд и расплывается в ухмылке. [epona.speech(Это будет чертовски весело! Слушай, мы обычно делим производителей на группы из мужчин и фута, так что кто именно будет делать из тебя мамочку?)]
 	</p>
 	<p>
-		[pc.speech(The males,)] you reply.
+		[pc.speech(Мужчин,)] — отвечаешь ты.
 	</p>
 	<p>
-		[epona.speech(Great!)] Epona happily exclaims, stamping your loyalty card before rushing out from behind her counter. [epona.speech(Right this way!)]
+		[epona.speech(Отлично!)] — радостно восклицает Эпона, штампуя твою карту лояльности, и тут же выскакивает из-за стойки. [epona.speech(Сюда, за мной!)]
 	</p>
 	<p>
-		Trailing in Epona's footsteps, you're quickly led over to the male breeding room. The interior of this room is concealed from public view by means of a dark blue canvas privacy screen, which bears a stylised black silhouette of a horse-boy sporting a massive erection. As Epona leads you around this screen, she comments, [epona.speech(I bet you can't wait to be #IF(pc.hasLegs())spreading your legs for#ELSEgetting fucked by#ENDIF a bunch of horny guys!)]
+		Следуя за Эпоной, ты быстро доходишь до комнаты для разведения самцов. Интерьер этой комнаты скрыт от посторонних глаз темно-синей ширмой, на которой изображен стилизованный черный силуэт жеребца-мальчика с массивным эрекцией. Пока Эпона ведет тебя за ширму, она замечает: [epona.speech(Спорим, ты уже весь изнываешь от желания быть #IF(pc.hasLegs())spreading your legs for#ELSEgetting fucked by#ENDIF a bunch of horny guys!)]
+	</p><p>
+Следуя за возбужденной коняжкой, ты сворачиваешь за край брезентового занавеса и оказываешься в небольшой комнате с деревянным полом. Из мебели здесь лишь пара простых деревянных столов и скамей, придвинутых к левой и правой стенам. В дальнем конце комнаты ты видишь большое зеркало и одинокую дверь, а чуть левее них, на уровне талии, в стене виднеется круглое отверстие для [unit.lSizes].
+</p><p>
+Эпона ведёт тебя к этой двери и, открыв её, приглашает войти. В узком коридорчике за дверью ты замечаешь, что зеркало, мимо которого ты только что прошла, — одностороннее: через него можно смотреть обратно, в главный зал. Прямо перед тобой, перед круглым проёмом, соединяющим это помещение с мужским залом для размножения, стоит длинная мягкая скамья. Совершенно очевидно, что тебе придётся лечь на неё так, чтобы твоя нижняя половина оказалась открыта для тех, кто находится в зале.
+</p>
+	<p>
+		[epona.speech(Верно! Так что просто подожди здесь, а я схожу за парнями. Понимаешь, мы привыкли держать заводчиков отдельно от добровольцев, а то раньше бывали случаи, когда заводчики слишком заводились и пытались заставить добровольца выбрать именно их,)] — объясняет Эпона. [epona.speech(Я мигом!)]
 	</p>
 	<p>
-		Following the excited horse-girl around the side of the canvas screen, you find yourself stepping into a small, wooden-floored room. The only furnishings in this area are a couple of basic wooden tables and benches, which have been pushed up against the left and right-hand walls. Set into the far side of the room, you see a large mirror and solitary door, and a few [unit.lSizes] to the left of those, at about waist-height, there's a round opening in the wall.
-	</p>
-	<p>
-		Epona leads you over to this door, and upon opening it, ushers you inside. Within the small corridor beyond, you discover that the mirror you just passed is one-way, allowing you to look back out into the main room. Up ahead, placed in front of the round opening that links this area to the male breeding room, is a long, padded bench. It's quite obvious that you're going to be expected to lie on this, allowing your bottom half to be exposed to the breeding room.
-	</p>
-	<p>
-		[epona.speech(Right! So, you just wait here, and I'll go fetch the guys. We like to keep the breeders separated from the volunteer, you see, as we've had issues in the past where the breeders would get a little over-excited and try to force the volunteer to pick them as their guess,)] Epona explains. [epona.speech(I'll be right back!)]
-	</p>
-	<p>
-		Epona quickly rushes off, leaving you to wait in the partitioned corridor...
+		Эпона быстро убегает, оставляя тебя ждать в отделенном перегородкой коридоре...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_SELECTION"><![CDATA[
 	<p>
-		After only a few minutes, you look through the one-way mirror to see Epona entering the room once more. Trailing in her wake, you see six guys, all of them already stripped naked. Trotting alongside each one of these breeders is a rather excited-looking horse-girl. As this large group finishes entering the room, the horse-girls dutifully drop to their knees beside their partner, and, with a combination of licks and strokes, quickly get their chosen breeder's cock to full hardness.
+		Спустя всего пару минут ты смотришь сквозь одностороннее зеркало и видишь, как Эпона снова входит в комнату. Следом за ней заходят шестеро парней, и все они уже полностью обнажены. Рядом с каждым из этих заводчиков семенит довольно возбужденная на вид лошадка-девушка. Как только эта шумная компания заканчивает входить, лошадки послушно опускаются на колени рядом со своими партнерами и смесью облизываний и ласк быстро доводят член выбранного ими заводчика до полной твердости.
 	</p>
 	<p>
-		While these horse-girls are getting the breeders warmed up, Epona opens the door beside you and steps forwards into the small room. [epona.speech(Heya! Look at all those cocks lined up just for you! So, which one do you think's gonna be the one to knock you up? Remember, after you've chosen, I'll roll dice to see in what order they get to use your pussy. Oh, and I almost forgot! You need to take a [#ITEM_innoxia_pills_fertility.getName(false)]!)]
+		Пока лошадки разогревают заводчиков, Эпона открывает дверь рядом с тобой и шагает в маленькую комнату. [epona.speech(Хей! Посмотри, сколько членов выстроилось специально для тебя! Ну, как думаешь, кто из них окажется тем самым, кто тебя оплодотворит? Помни, когда ты выберешь, я брошу кубики, чтобы узнать, в каком порядке они будут использовать твою киску. О, и чуть не забыла! Тебе нужно принять [#ITEM_innoxia_pills_fertility.getName(false)]!)]
 	</p>
 	<p>
-		Epona hands you a little purple pill, which you quickly swallow. You then turn to look over the six guys before you, and after Epona's pointed out each one and told you his name, you decide upon the guy that you think will be the father of your kids...
+		Эпона протягивает тебе маленькую фиолетовую таблетку, которую ты быстро проглатываешь. Затем ты поворачиваешься, чтобы осмотреть шестерых парней перед собой, и после того как Эпона указала на каждого и назвала его имя, ты решаешь, кто из них, по твоему мнению, станет отцом твоих детей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_START"><![CDATA[
 	<p>
-		[pc.speech(I think [npc.name]'s going to get me pregnant,)] you say, pointing to the [npc.race] which you think has the most impressive-looking cock.
+		[pc.speech(Думаю, [npc.name] меня оплодотворит,)] — говоришь ты, указывая на [npc.race], чей член кажется тебе самым впечатляющим.
 	</p>
 	<p>
-		[epona.speech(Great! I'll just note that down,)] Epona replies, producing a notepad and pen, before jotting taking down your selection. [epona.speech(Now, let's get you into position.)]
+		[epona.speech(Отлично! Сейчас всё запишу,)] — отвечает Эпона, доставая блокнот и ручку, и быстро записывает твой выбор. [epona.speech(А теперь давай устроим тебя в нужное положение.)]
 	</p>
 	<p>
-		Epona leads you over to the padded bench, before turning around. [epona.speech(Right, so you just slide your [pc.legs] through there, and wait for me to go give the signal to start! It's up to you whether you want to be on your front or back.)]
+		Эпона подводит тебя к мягкой скамье, а затем оборачивается. [epona.speech(Итак, ты просто просовываешь свой [pc.legs] вот туда и ждешь, пока я дам сигнал к началу! Выбирай сама: лечь на живот или на спину.)]
 	</p>
 	<p>
-		Stepping towards the bench, you prepare to slide your lower half out into the breeder's room, but first, you need to decide whether to lie on your stomach or back...
-	</p>
-	]]>
-	</htmlContent>
-	
-	<htmlContent tag="ROULETTE_STARTING"><![CDATA[
-	<p>
-		[npc.Name] steps up behind you, before hungrily grabbing your [pc.ass+]. [npc.speech(I'm gonna pump you full of kids!)]
+		Шагнув к скамье, ты готовишься высунуть нижнюю половину тела в комнату для размножения, но сначала нужно решить — лечь на живот или на спину...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROULETTE_STARTING"><![CDATA[
 	<p>
-		[npc.Name] rubs [npc.her] fingers up and down over your [pc.pussy+], before [npc.moaning], [npc.speech(You're gonna be stuffed full of my cum in a moment, [pc.girl]!)]
+		[npc.Name] подходит сзади и жадно хватает тебя за [pc.ass+]. [npc.speech(Я набью тебя детьми под завязку!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROULETTE_STARTING"><![CDATA[
 	<p>
-		[npc.Name] steps forwards, sliding a finger up into your [pc.pussy+] as [npc.she] [npc.moansVerb], [npc.speech(Mmm, yeah, this is a nice cunt you've got!)]
+		[npc.Name] водит пальцами [npc.her] вверх и вниз по твоей [pc.pussy+], а затем [npc.moaning], [npc.speech(Еще мгновение, и ты будешь набита моей спермой до краев, [pc.girl]!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROULETTE_STARTING"><![CDATA[
 	<p>
-		[npc.Name] steps up behind you, before lining [npc.her] [npc.cock+] up to your [pc.pussy+]. [npc.speech(You're gonna love carrying my kids.)]
+		[npc.Name] подается вперед, просовывая палец в твою [pc.pussy+], пока [npc.she] [npc.moansVerb], [npc.speech(Ммм, да, какая же у тебя классная киска!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROULETTE_STARTING"><![CDATA[
 	<p>
-		[npc.Name] steps up behind you, before delivering a sharp slap to your [pc.ass+]. [npc.speech(I'm gonna fill you up real good!)]
+		[npc.Name] подходит сзади и приставляет [npc.her] [npc.cock+] к твоей [pc.pussy+]. [npc.speech(Тебе понравится вынашивать моих детей.)]
+	</p>
+	]]>
+	</htmlContent>
+	
+	<htmlContent tag="ROULETTE_STARTING"><![CDATA[
+	<p>
+		[npc.Name] подходит сзади и отвешивает звонкий шлепок по твоей [pc.ass+]. [npc.speech(Я тебя как следует заполню!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROULETTE_SEX"><![CDATA[
 	<p>
-		As [npc.name] steps back, [npc.she] lets out a low [npc.moan], [npc.speech(Your pussy's lookin' real good, stuffed full of my cum like that!)]
+		Когда [npc.name] отступает, [npc.she] издает низкий [npc.moan], [npc.speech(Твоя киска выглядит просто охрененно, когда она так набита моей спермой!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROULETTE_SEX"><![CDATA[
 	<p>
-		[npc.Name] steps back, letting out a low whistle as [npc.she] admires the creampie [npc.she]'s just given you.
+		[npc.Name] отходит назад, издавая низкий свист, пока [npc.she] любуется кремпай, который [npc.she] только что в тебя залил.
+	</p>
+	]]>
+	</htmlContent>
+	
+	<htmlContent tag="AFTER_ROULETTE_SEX"><![CDATA[<p>
+		[npc.name] отступает назад, смеясь, пока [npc.she] разглядывает твою залитую спермой киску, [npc.speech(Да там просто невозможно не забеременеть!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROULETTE_SEX"><![CDATA[
 	<p>
-		As [npc.name] steps back, laughing as [npc.she] looks down at your creampied pussy, [npc.speech(There's no way that's not gonna get you pregnant!)]
-	</p>
-	]]>
-	</htmlContent>
-	
-	<htmlContent tag="AFTER_ROULETTE_SEX"><![CDATA[
-	<p>
-		As [npc.name] steps back, [npc.she] gives your [pc.ass+] a squeeze. [npc.speech(You're gonna love being a Mommy!)]
+		Пока [npc.name] отступает, [npc.she] сжимает твою [pc.ass+]. [npc.speech(Тебе понравится быть мамочкой!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_FINISHED"><![CDATA[
 	<p>
-		As the last of the breeders steps away from your well-used pussy, Epona opens the door and steps forwards into the partitioned area. [epona.speech(Great job, [pc.name]! You're sure to be a Mommy now!)]
+		Когда последний из заводчиков отходит от твоей изрядно использованной киски, Эпона открывает дверь и входит в огороженную зону. [epona.speech(Отличная работа, [pc.name]! Теперь ты точно станешь мамочкой!)]
 	</p>
 	<p>
-		With the horse-girl's help, you wriggle back out of the opening, feeling the still-hot cum sliding out of your well-used pussy as you stand up on quivering [pc.legs]. Epona helpfully produces a tissue, and before you can say anything, leans down to help wipe the excess cum off your [pc.legs]. As she does this, she explains, [epona.speech(Right, so now I'll just run a pregnancy tester over your belly, and we can see which of the breeder's the father! Now, in the past, some of the breeders have lost their temper when they found out they didn't win, so, for your safety, we'll keep you back here until they're all gone.)]
+		С помощью лошадиной девушки ты выбираешься наружу, чувствуя, как всё ещё горячая сперма вытекает из твоей изрядно использованной киски, пока ты стоишь на дрожащих [pc.legs]. Эпона услужливо протягивает салфетку и, прежде чем ты успеваешь что-то сказать, наклоняется, чтобы помочь вытереть излишки спермы с твоей [pc.legs]. Делая это, она объясняет: [epona.speech(Так, теперь я просто проведу тестом на беременность по твоему животу, и мы узнаем, кто из заводчиков — отец! Знаешь, раньше некоторые из них теряли голову, когда узнавали, что не выиграли, так что ради твоей безопасности мы подержим тебя здесь, пока они все не уйдут.)]
 	</p>
 	<p>
-		[pc.speech(Ok,)] you respond, waiting for Epona to get on with the testing.
+		[pc.speech(Хорошо,)] — отвечаешь ты, ожидая, когда Эпона приступит к тесту.
 	</p>
 	<p>
-		You don't have to wait more than a moment, as Epona quickly finishes helping to get you cleaned up, before swiping a pregnancy tester over your stomach. The little device makes a beeping noise as it travels over your lower abdomen, and, with this confirmation that it's taken a reading, Epona holds the tester up so that you can read the results:
+		Тебе не приходится ждать долго: Эпона быстро заканчивает приводить тебя в порядок и проводит тестом по твоему животу. Маленькое устройство издает писк, перемещаясь по твоему низу живота, и, подтвердив считывание данных, Эпона поднимает тестер так, чтобы ты могла увидеть результат:
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_WINNER"><![CDATA[
 	<p>
-		[epona.speech(Congratulations! You guessed correctly!)] Epona happily exclaims, before leaning forwards and giving you a big hug.
+		[epona.speech(Поздравляю! Ты угадал!)] — радостно восклицает Эпона, после чего наклоняется вперед и крепко тебя обнимает.
 	</p>
 	<p>
-		[pc.speech(Thanks, Epona,)] you reply, smiling happily to yourself as you realise that you've just won a lot of money.
+		[pc.speech(Спасибо, Эпона,)] — отвечаешь ты, довольно улыбаясь про себя от осознания того, что только что сорвал огромный куш.
 	</p>
 	<p>
-		After a moment, the horse-girl releases you and steps back, before telling you what's going to happen next. [epona.speech(Right, I need to go let the breeders know who won. You stay here for a moment, and after they've gone, we'll go back to the main counter to get your winnings.)]
+		Спустя мгновение кобылочка отпускает тебя и отступает на шаг, чтобы объяснить, что будет дальше. [epona.speech(Так, мне нужно сходить и сообщить заводчикам, кто победил. Посиди здесь немного, а когда они уйдут, мы вернемся к главной стойке, чтобы забрать твой выигрыш.)]
 	</p>
 	<p>
-		You do as Epona asks, and wait in the little room until the horse-girl has shown all the breeders to the exit. After that, she comes to collect you, and the two of you head back over to the main counter. Unlocking a safe, Epona retrieves fifty thousand flames, before handing them over to you with a big grin on her face. [epona.speech(Congratulations once again, [pc.name]!)] 
+		Ты делаешь так, как просила Эпона, и ждешь в маленькой комнатке, пока кобылочка провожает всех заводчиков к выходу. Вскоре она возвращается за тобой, и вы вдвоем направляетесь обратно к главной стойке. Открыв сейф, Эпона достает пятьдесят тысяч огней и с широкой улыбкой протягивает их тебе. [epona.speech(Еще раз поздравляю, [pc.name]!)] 
 	</p>
 	<p>
-		Taking your winnings, you thank Epona once again, before stepping back and wondering what to do next. As you move off to continue on your travels, you wonder if you'll ever have to tell your kids how they were conceived...
+		Забрав выигрыш, ты снова благодаришь Эпону, после чего отступаешь, раздумывая, чем заняться дальше. Отправляясь в путь, ты невольно задаешься вопросом: придется ли тебе когда-нибудь рассказывать своим детям, каким именно образом они были зачаты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_LOSER"><![CDATA[
 	<p>
-		[epona.speech(Aww, I'm sorry! You didn't get it right this time,)] Epona says, before leaning forwards and giving you a big hug.
+		[epona.speech(Оу, прости! В этот раз ты не угадал,)] — говорит Эпона, прежде чем наклониться и крепко тебя обнять.
 	</p>
 	<p>
-		[pc.speech(I'm ok, Epona,)] you reply, enduring the horse-girl's consolatory hug.
+		[pc.speech(Все в порядке, Эпона,)] — отвечаешь ты, принимая утешительные объятия кобылочки.
 	</p>
 	<p>
-		After a moment, the horse-girl releases you and steps back, before telling you what's going to happen next. [epona.speech(Right, I need to go let the breeders know who won. You stay here for a moment, and after they've gone, we'll go back to the main counter.)]
+		Спустя мгновение кобылка отпускает тебя и отступает на шаг, прежде чем объяснить, что будет дальше. [epona.speech(Так, мне нужно сходить и сообщить заводчикам, кто победил. Ты подожди здесь немного, а когда они уйдут, мы вернемся к главной стойке.)]
 	</p>
 	<p>
-		You do as Epona asks, and wait in the little room until the horse-girl has shown all the breeders to the exit. After that, she comes to collect you, and the two of you head back over to the main counter. [epona.speech(I'm sorry again, [pc.name]. Please do come back and have another go some other time!)] 
+		Ты делаешь, как просит Эпона, и ждешь в каморке, пока кобылка проводит всех заводчиков к выходу. После этого она возвращается за тобой, и вы вдвоем направляетесь обратно к главной стойке. [epona.speech(Еще раз сочувствую, [pc.name]. Обязательно возвращайся и попробуй еще как-нибудь!)] 
 	</p>
 	<p>
-		You say goodbye to Epona, before stepping back and wondering what to do next. As you move off to continue on your travels, you wonder if you'll ever have to tell your kids how they were conceived...
+		Ты прощаешься с Эпоной, отступаешь назад и гадаешь, что делать дальше. Отправляясь в свой путь, ты невольно задумываешься: каково будет рассказать своим детям, как именно они были зачаты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_MOTHER_LOSER_NO_PREGNANCY"><![CDATA[
 	<p>
-		[epona.speech(Aww, I'm sorry! It looks like you're not having kids this time,)] Epona says, before leaning forwards and giving you a big hug.
+		[epona.speech(Оу, мне так жаль! Похоже, в этот раз детишек не будет,)] — говорит Эпона, наклоняясь вперед, чтобы крепко тебя обнять.
 	</p>
 	<p>
-		[pc.speech(I'm ok, Epona,)] you reply, enduring the horse-girl's consolatory hug.
+		[pc.speech(Все в порядке, Эпона,)] — отвечаешь ты, принимая утешительные объятия кобылочки.
 	</p>
 	<p>
-		After a moment, the horse-girl releases you and steps back, before telling you what's going to happen next. [epona.speech(Right, I need to go let the breeders know that they all lost. You stay here for a moment, and after they've gone, we'll go back to the main counter.)]
+		Спустя мгновение кобылка отпускает тебя и отступает на шаг, прежде чем объяснить, что будет дальше. [epona.speech(Так, мне нужно сходить и сообщить заводчикам, что они все проиграли. Ты подожди здесь немного, а когда они уйдут, мы вернемся к главной стойке.)]
 	</p>
 	<p>
-		You do as Epona asks, and wait in the little room until the horse-girl has shown all the breeders to the exit. After that, she comes to collect you, and the two of you head back over to the main counter. [epona.speech(I'm sorry again, [pc.name]. Please do come back and have another go some other time!)] 
+		Ты делаешь, как просит Эпона, и ждешь в каморке, пока кобылка проводит всех заводчиков к выходу. После этого она возвращается за тобой, и вы вдвоем направляетесь обратно к главной стойке. [epona.speech(Еще раз сочувствую, [pc.name]. Обязательно возвращайся и попробуй еще как-нибудь!)] 
 	</p>
 	<p>
-		You say goodbye to Epona, before stepping back and wondering what to do next...
+		Ты прощаешься с Эпоной и отступаешь на шаг, раздумывая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER"><![CDATA[
 	<p>
-		[pc.speech(Epona?)] you ask, getting the horse-girl's attention before continuing, [pc.speech(I'd like to play a game of pregnancy roulette, as one of the breeders.)]
+		[pc.speech(Эпона?)] — окликаешь ты полудевушку, привлекая её внимание, а затем продолжаешь: [pc.speech(Я бы хотел сыграть в «рулетку беременности» в качестве одного из заводчиков.)]
 	</p>
 	<p>
-		You place the ten thousand flames on the counter before you, and, after Epona has counted it all out, she looks up at you and grins. [epona.speech(This is gonna be so much fun! Now, we like to split up the breeders into groups based on femininity, so you're going to be joining five guys, ok?)]
+		Ты выкладываешь десять тысяч огней на прилавок перед собой. Когда Эпона пересчитывает их, она поднимает на тебя взгляд и расплывается в ухмылке. [epona.speech(Это будет чертовски весело! Слушай, мы обычно делим заводчиков на группы по уровню женственности, так что ты будешь в одной компании с пятью парнями, идет?)]
 	</p>
 	<p>
-		[pc.speech(Sure,)] you reply.
+		[pc.speech(Конечно,)] — отвечаешь ты.
 	</p>
 	<p>
-		[epona.speech(Great!)] Epona happily exclaims, stamping your loyalty card before rushing out from behind her counter. [epona.speech(Right this way! We've already got a volunteer and five other breeders ready, so there's no need to wait around.)]
+		[epona.speech(Отлично!)] — радостно восклицает Эпона, штампуя твою карту лояльности и выскакивая из-за прилавка. [epona.speech(Сюда, за мной! У нас уже есть один доброволец и еще пять готовых заводчиков, так что ждать не придется.)]
 	</p>
 	<p>
-		Trailing in Epona's footsteps, you're quickly led over to the male's breeding room. The interior of this room is concealed from public view by means of a dark blue canvas privacy screen, which bears a stylised black silhouette of a horse-boy sporting a massive erection. As Epona leads you around this screen, she comments, [epona.speech(I bet you can't wait to be pumping this slut full of cum!)]
+		Следуя за Эпоной, ты быстро доходишь до мужской комнаты для разведения. Интерьер комнаты скрыт от посторонних глаз темно-синей ширмой, на которой красуется стилизованный черный силуэт коня-мальчика с массивной эрекцией. Когда Эпона обводит тебя вокруг ширмы, она замечает: [epona.speech(Спорим, тебе уже не терпится залить эту сучку своим спермотоком!)]
+	</p><p>
+Следуя за возбужденной коняжкой, ты сворачиваешь за край брезентового занавеса и оказываешься в небольшой комнате с деревянным полом. Из мебели здесь лишь пара простых деревянных столов и скамей, придвинутых к левой и правой стенам. В дальнем конце комнаты ты видишь большое зеркало и одинокую дверь, а чуть левее них, на уровне талии, в стене виднеется круглое отверстие для [unit.lSizes].
+</p>
+	<p>
+		Остальные пять заводчиков уже на месте, и рядом с каждым из них на коленях стоит кобылка, лаская и вылизывая член своего партнера, чтобы те оставались твердыми и готовыми проникнуть в доброволицу в любую секунду. Как только ты входишь в комнату, одна из скучающих кобылок подходит к тебе, опускается на колени и быстро берет твой член в руки. Пока она наклоняется, чтобы медленно и влажно его облизать, Эпона счастливо оборачивается ко всем присутствующим: [epona.speech(Так! Я пойду спрошу у доброволицы, в кого из вас она хочет забеременеть. А вы пока подождите здесь.)]
 	</p>
 	<p>
-		Following the excited horse-girl around the side of the canvas screen, you find yourself stepping into a small, wooden-floored room. The only furnishings in this area are a couple of basic wooden tables and benches, which have been pushed up against the left and right-hand walls. Set into the far side of the room, you see a large mirror and solitary door, and a few [unit.lSizes] to the left of those, at about waist-height, there's a round opening in the wall.
+		Ты делаешь, как сказала Эпона, и терпеливо ждешь вместе с остальными заводчиками, пока кобылка открывает единственную дверь и проходит в соседнюю комнату. Спустя мгновение ты замечаешь движение в круглом проеме стены, как вдруг... #IF(npc.hasLegs())a pair of [npc.legs]#ELSEa [npc.legs+]#ENDIF and the lower abdomen of [npc.a_fullRace(true)] slide out into the room. The other breeders start to grow restless as they gaze upon the volunteer's [npc.pussy+], but before any of them can do anything to ruin the game, Epona steps back into the room.
 	</p>
 	<p>
-		The other five breeders are already present, and beside each of them, a horse-girl is down on her knees, stroking and licking her partner's cock in order to keep them hard and ready to penetrate the volunteer at a moment's notice. As you step into the room, an idling horse-girl walks up beside you, before dropping to her knees and quickly taking hold of your cock. As she leans in to give it a slow, wet lick, Epona happily turns around to address the room, [epona.speech(Right! I'll go and ask the volunteer who she thinks will be getting her pregnant. You all stay here for a moment.)]
-	</p>
-	<p>
-		You do as Epona says, and wait patiently with the other breeders as the horse-girl opens the solitary door and steps through into the room beyond. After just a moment, you see movement through the round opening in the wall, before suddenly #IF(npc.hasLegs())a pair of [npc.legs]#ELSEa [npc.legs+]#ENDIF and the lower abdomen of [npc.a_fullRace(true)] slide out into the room. The other breeders start to grow restless as they gaze upon the volunteer's [npc.pussy+], but before any of them can do anything to ruin the game, Epona steps back into the room.
-	</p>
-	<p>
-		[epona.speech(You all look like you're ready!)] the horse-girl exclaims. [epona.speech(Now, I'll roll a dice to see in what order you get to fuck [npc.name] here! [pc.Name], I'll start with you!)]
+		[epona.speech(Вы все выглядите готовыми!)] — восклицает кобылка. [epona.speech(А теперь я брошу кубик, чтобы определить, в каком порядке вы будете трахать [npc.name]! [pc.Name], ты первая!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_FUTA"><![CDATA[
 	<p>
-		[pc.speech(Epona?)] you ask, getting the horse-girl's attention before continuing, [pc.speech(I'd like to play a game of pregnancy roulette, as one of the breeders.)]
+		[pc.speech(Эпона?)] — окликаешь ты полудевушку, привлекая её внимание, а затем продолжаешь: [pc.speech(Я бы хотел сыграть в «рулетку беременности» в качестве одного из заводчиков.)]
 	</p>
 	<p>
-		You place the ten thousand flames on the counter before you, and, after Epona has counted it all out, she looks up at you and grins. [epona.speech(This is gonna be so much fun! Now, we like to split up the breeders into groups based on femininity, so you're going to be joining five futas, ok?)]
+		Ты кладешь десять тысяч огней на стойку перед собой, и после того как Эпона всё пересчитала, она поднимает на тебя взгляд и ухмыляется. [epona.speech(Это будет чертовски весело! Значит так, мы любим делить заводчиков на группы по уровню женственности, так что ты попадешь в группу к пяти фута, идет?)]
 	</p>
 	<p>
-		[pc.speech(Sure,)] you reply.
+		[pc.speech(Конечно,)] — отвечаешь ты.
 	</p>
 	<p>
-		[epona.speech(Great!)] Epona happily exclaims, stamping your loyalty card before rushing out from behind her counter. [epona.speech(Right this way! We've already got a volunteer and five other breeders ready, so there's no need to wait around.)]
+		[epona.speech(Отлично!)] — радостно восклицает Эпона, штампуя твою карту лояльности и выскакивая из-за прилавка. [epona.speech(Сюда, за мной! У нас уже есть один доброволец и еще пять готовых заводчиков, так что ждать не придется.)]
 	</p>
 	<p>
-		Trailing in Epona's footsteps, you're quickly led over to the futa breeding room. The interior of this room is concealed from public view by means of a dark pink canvas privacy screen, which bears a stylised white silhouette of a horse-girl futa sporting a massive erection. As Epona leads you around this screen, she comments, [epona.speech(I bet you can't wait to be pumping this slut full of cum!)]
+		Следуя за Эпоной, ты быстро доходишь до комнаты для разведения фута. Интерьер этой комнаты скрыт от посторонних глаз темно-розовой ширмой, на которой красуется стилизованный белый силуэт фута-девушки на лошади с массивным эрекцией. Пока Эпона ведет тебя за ширму, она замечает: [epona.speech(Бьюсь об заклад, тебе не терпится залить эту сучку своим спермосом!)]
 	</p>
 	<p>
-		Following the excited horse-girl around the side of the canvas screen, you find yourself stepping into a small, wooden-floored room. The only furnishings in this area are a couple of elegant wooden tables and padded sofas, which have been pushed up against the left and right-hand walls. Set into the far side of the room, you see a large mirror and solitary door, and a few [unit.lSizes] to the left of those, at about waist-height, there's a round opening in the wall.
+		Следуя за возбужденной коняшкой, ты сворачиваешь за край занавеса и оказываешься в небольшой комнате с деревянным полом. Единственная мебель здесь — пара элегантных деревянных столов и мягких диванов, придвинутых к левой и правой стенам. В дальнем конце комнаты ты видишь большое зеркало и одинокую дверь, а чуть левее них, примерно на уровне талии, в стене виднеется круглое отверстие [unit.lSizes].
 	</p>
 	<p>
-		The other five breeders are already present, and beside each of them, a horse-girl is down on her knees, stroking and licking her partner's cock in order to keep them hard and ready to penetrate the volunteer at a moment's notice. As you step into the room, an idling horse-girl walks up beside you, before dropping to her knees and quickly taking hold of your cock. As she leans in to give it a slow, wet lick, Epona happily turns around to address the room, [epona.speech(Right! I'll go and ask the volunteer who she thinks will be getting her pregnant. You all stay here for a moment.)]
+		Остальные пять заводчиков уже на месте, и рядом с каждым из них на коленях стоит кобылка, лаская и вылизывая член своего партнера, чтобы те оставались твердыми и готовыми проникнуть в доброволицу в любую секунду. Как только ты входишь в комнату, одна из скучающих кобылок подходит к тебе, опускается на колени и быстро берет твой член в руки. Пока она наклоняется, чтобы медленно и влажно его облизать, Эпона счастливо оборачивается ко всем присутствующим: [epona.speech(Так! Я пойду спрошу у доброволицы, в кого из вас она хочет забеременеть. А вы пока подождите здесь.)]
 	</p>
 	<p>
-		You do as Epona says, and wait patiently with the other breeders as the horse-girl opens the solitary door and steps through into the room beyond. After just a moment, you see movement through the round opening in the wall, before suddenly #IF(npc.hasLegs())a pair of [npc.legs]#ELSEa [npc.legs+]#ENDIF and the lower abdomen of [npc.a_fullRace(true)] slide out into the room. The other breeders start to grow restless as they gaze upon the volunteer's [npc.pussy+], but before any of them can do anything to ruin the game, Epona steps back into the room.
+		Ты делаешь, как сказала Эпона, и терпеливо ждешь вместе с остальными заводчиками, пока кобылка открывает единственную дверь и проходит в соседнюю комнату. Спустя мгновение ты замечаешь движение в круглом проеме стены, как вдруг... #IF(npc.hasLegs())a pair of [npc.legs]#ELSEa [npc.legs+]#ENDIF and the lower abdomen of [npc.a_fullRace(true)] slide out into the room. The other breeders start to grow restless as they gaze upon the volunteer's [npc.pussy+], but before any of them can do anything to ruin the game, Epona steps back into the room.
 	</p>
 	<p>
-		[epona.speech(You all look like you're ready!)] the horse-girl exclaims. [epona.speech(Now, I'll roll a dice to see in what order you get to fuck [npc.name] here! [pc.Name], I'll start with you!)]
+		[epona.speech(Вы все выглядите готовыми!)] — восклицает кобылка. [epona.speech(А теперь я брошу кубик, чтобы определить, в каком порядке вы будете трахать [npc.name]! [pc.Name], ты первая!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_FIRST"><![CDATA[
 	<p>
-		As you rolled a one, you're the first to step up to [npc.name]'s exposed body. Reaching down to take a hold of her [npc.hips], you line your [pc.cock+] up to her [npc.pussy+] and prepare to penetrate her...
+		Выпав единица, ты первым подходишь к обнаженному телу [npc.name]. Схватив её за [npc.hips], ты пристраиваешь свой [pc.cock+] к её [npc.pussy+] и готовишься войти в неё...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_MIDDLE"><![CDATA[
 	<p>
-		As you aren't the first to fuck [npc.name], you find yourself looking down at a fresh creampie dripping out of her exposed pussy as you step up to her. Reaching down to take a hold of her [npc.hips], you line your [pc.cock+] up to her well-used cunt and prepare to penetrate her...
+		Поскольку ты не первый, кто трахает [npc.name], подойдя к ней, ты видишь, как из её открытой киски стекает свежий кремпи. Схватив её за [npc.hips], ты пристраиваешь свой [pc.cock+] к её изрядно использованной щели и готовишься войти в неё...
 	</p>
 	]]>
 	</htmlContent>
@@ -529,65 +524,65 @@
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_POST_SEX"><![CDATA[
 	<p>
-		As all of you breeders have now finished, Epona steps forwards turns to address the room, [epona.speech(Great job everyone! Now I'll go and find out which of you is the father to this slut's kids! Please be patient, I'll be back in a moment.)]
+		Когда все заводчики закончили, Эпона выходит вперед и обращается к присутствующим: [epona.speech(Отличная работа, ребята! А теперь я пойду выясню, кто из вас станет отцом детей этой сучки! Пожалуйста, наберитесь терпения, я скоро вернусь!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_FINISHED"><![CDATA[
 	<p>
-		You and the rest of the breeders watch as the volunteer's #IF(npc.hasLegs())[npc.legs] slide#ELSE[npc.leg] slides#ENDIF back into the other room. You hear Epona talking with her for a moment, before the solitary door opens once more. The horse-girl steps back out into the room that you're in, holding up a pregnancy tester for you all to see:
+		Ты и остальные заводчики наблюдаете за тем, как доброволец... #IF(npc.hasLegs())[npc.legs] slide#ELSE[npc.leg] slides#ENDIF back into the other room. You hear Epona talking with her for a moment, before the solitary door opens once more. The horse-girl steps back out into the room that you're in, holding up a pregnancy tester for you all to see:
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_WINNER"><![CDATA[
 	<p>
-		[epona.speech(Congratulations! You got this slut knocked up!)] Epona happily says to you, before leaning forwards and giving you a big hug.
+		[epona.speech(Поздравляю! Тебе удалось оплодотворить эту сучку!)] — радостно восклицает Эпона, прежде чем наклониться и крепко тебя обнять.
 	</p>
 	<p>
-		[pc.speech(Thanks, Epona,)] you reply, smiling happily to yourself as you realise that you've just won a lot of money.
+		[pc.speech(Спасибо, Эпона,)] — отвечаешь ты, довольно улыбаясь про себя от осознания того, что только что сорвал огромный куш.
 	</p>
 	<p>
-		After a moment, the horse-girl releases you and steps back, before addressing the room, [epona.speech(Right, sorry everyone else. Better luck next time! Now, [pc.name], follow me to the counter so I can give you your winnings.)]
+		Спустя мгновение девочка-лошадь отпускает тебя и отступает на шаг, после чего обращается к присутствующим: [epona.speech(Так, остальным — сорри! В следующий раз повезет! А теперь, [pc.name], иди за мной к стойке, я выдам тебе выигрыш.)]
 	</p>
 	<p>
-		You do as Epona asks, and the two of you head back over to the main counter. Unlocking a safe, Epona retrieves twenty thousand flames, before handing them over to you with a big grin on her face. [epona.speech(Congratulations once again, [pc.name]!)] 
+		Ты делаешь, как просит Эпона, и вы вдвоем направляетесь к главной стойке. Открыв сейф, Эпона достает двадцать тысяч огней и с широкой ухмылкой протягивает их тебе. [epona.speech(Еще раз поздравляю, [pc.name]!)] 
 	</p>
 	<p>
-		Taking your winnings, you thank Epona once again, before stepping back and wondering what to do next. As you move off to continue on your travels, you wonder if you'll ever have to tell your kids how they were conceived...
+		Забрав выигрыш, ты снова благодаришь Эпону, после чего отступаешь, раздумывая, чем заняться дальше. Отправляясь в путь, ты невольно задаешься вопросом: придется ли тебе когда-нибудь рассказывать своим детям, каким именно образом они были зачаты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_LOSER"><![CDATA[
 	<p>
-		[epona.speech(Congratulations! You got this slut knocked up!)] Epona happily says to the winner, before leaning forwards and giving them a big hug.
+		[epona.speech(Поздравляю! Ты засадил эту сучку!)] — радостно восклицает Эпона победителю, после чего наклоняется вперед и крепко его обнимает.
 	</p>
 	<p>
-		You, along with all the other breeders, let out a defeated sigh as you realise that you've lost your ten thousand flame bet.
+		Ты, наравне со всеми остальными заводчиками, издаешь обреченный вздох, осознавая, что проиграл свою ставку в десять тысяч огней.
 	</p>
 	<p>
-		After a moment, the horse-girl releases the winner and steps back, before addressing the room, [epona.speech(Right, sorry everyone else. Better luck next time!)]
+		Спустя мгновение девочка-лошадь отпускает победителя и отступает на шаг, обращаясь к залу: [epona.speech(Так, остальным — сорри! В следующий раз повезет!)]
 	</p>
 	<p>
-		Having lost your bet, you find yourself wandering out into the gambling hall proper. You soon find yourself drifting back towards the pregnancy roulette counter, and, turning around to look back down the length of the gambling hall's atrium, you wonder where to go next...
+		Проиграв ставку, ты выходишь в основной зал казино. Вскоре ты ловишь себя на том, что снова невольно тянет тебя к стойке «беременной рулетки», и, обернувшись, чтобы окину взглядом атриум игорного зала, начинаешь раздумывать, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_ROULETTE_BREEDER_LOSER_NO_PREGNANCY"><![CDATA[
 	<p>
-		[epona.speech(Aww, I'm sorry! It looks like none of you are having kids this time,)] Epona says, placing her hands on her hips.
+		[epona.speech(Оу, мне так жаль! Похоже, в этот раз дети будут не у всех,)] — говорит Эпона, уперев руки в бока.
 	</p>
 	<p>
-		You, along with all the other breeders, let out a defeated sigh as you realise that you've lost your ten thousand flame bet.
+		Ты, наравне со всеми остальными заводчиками, издаешь обреченный вздох, осознавая, что проиграл свою ставку в десять тысяч огней.
 	</p>
 	<p>
-		After a moment, the horse-girl addresses the room, [epona.speech(Right, sorry everyone. Better luck next time!)]
+		Спустя мгновение дева-лошадь обращается к присутствующим: [epona.speech(Ой, простите всех! В следующий раз повезет больше!)]
 	</p>
 	<p>
-		Having lost your bet, you find yourself wandering out into the gambling hall proper. You soon find yourself drifting back towards the pregnancy roulette counter, and, turning around to look back down the length of the gambling hall's atrium, you wonder where to go next...
+		Проиграв ставку, ты выходишь в основной зал казино. Вскоре ты ловишь себя на том, что снова невольно тянет тебя к стойке «беременной рулетки», и, обернувшись, чтобы окину взглядом атриум игорного зала, начинаешь раздумывать, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -598,25 +593,25 @@
 	<htmlContent tag="MURK_REPEAT"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_murkMaster))
 		<p>
-			Knowing that your Master will want to see you again, you ask Epona if she'll let you into the back room to see Murk. Unaware of the sort of relationship you and the rat-boy have, she smiles and asks, [epona.speech(Still trying to reform him, huh? Well, I think that you're wasting your time, but you're more than welcome to try...)]
+			Зная, что Господин захочет увидеть тебя снова, ты спрашиваешь Эпону, пустит ли она тебя в заднюю комнату к Мёрку. Не подозревая о характере ваших отношений с этим крысоподобным мальчишкой, она улыбается и говорит: [epona.speech(Всё пытаешься его исправить, да? Ну, по-моему, ты просто тратишь время впустую, но, конечно, дерзай...)]
 		</p>
 		<p>
-			Moving over to one side, the horse-girl lifts up the counter-top and beckons you forwards. [pc.Stepping] around to the other side, you follow Epona as she once again leads you past the door to her office and over to the storage room in which your Master is being kept.
+			Подвинувшись в сторону, дева-лошадь приподнимает столешницу и манит тебя за собой. [pc.Stepping] обойдя стойку, ты следуешь за Эпоной; она снова ведет тебя мимо двери своего кабинета к кладовой, где заточен твой Господин.
 			#IF(pc.hasVagina())
-				 Already getting wet
+				 Уже течет
 			#ELSEIF(pc.hasPenis())
-				 Already getting hard
+				 Уже встает
 			#ELSE
-				 Already getting excited
+				 Уже возбуждается
 			#ENDIF
-			 at the thought of servicing your Master's fat cock, you quickly thank Epona and watch as she returns to stand behind the counter. Turning to face the door to the storage room, you prepare to enter and submit to your Master once again...
+			 от мысли о том, как будешь обслуживать толстый член своего Господина, ты поспешно благодаришь Эпону и наблюдаешь, как она возвращается за стойку. Повернувшись к двери кладовой, ты готовишься войти и вновь подчиниться своему Господину...
 		</p>
 	#ELSE
 		<p>
-			Wanting to pay [murk.name] another visit, you ask Epona if she'll let you into the back room to see the [murk.race]. Letting out a short sigh, the horse-girl smiles and asks, [epona.speech(Still trying to reform [murk.herHim], huh? Well, I think that you're wasting your time, but you're more than welcome to try...)]
+			Желая нанести [murk.name] еще один визит, ты спрашиваешь Эпону, пустит ли она тебя в заднюю комнату к [murk.race]. Коротко вздохнув, дева-лошадь улыбается и спрашивает: [epona.speech(Всё пытаешься исправить [murk.herHim], да? Ну, по-моему, ты просто тратишь время впустую, но, конечно, дерзай...)]
 		</p>
 		<p>
-			Moving over to one side, Epona lifts up the counter-top and beckons you forwards. [pc.Stepping] around to the other side, you follow the horse-girl as she once again leads you past the door to her office and over to the storage room in which Murk is being kept. After thanking Epona for letting you back here again, you watch as she returns to stand behind the counter, before turning to face the door to the storage room and preparing to enter once again...
+		Сместившись в сторону, Эпона приподнимает столешницу и манит тебя за собой. [pc.Stepping] обойдя стойку, ты следуешь за девочкой-кобылкой; она снова ведет тебя мимо двери своего кабинета к кладовой, где заперт Мёрк. Поблагодарив Эпону за то, что она снова впустила тебя сюда, ты наблюдаешь, как та возвращается за стойку, а затем поворачивается к двери кладовой, готовясь войти туда вновь...
 		</p>
 	#ENDIF
 	]]>
@@ -624,29 +619,29 @@
 	
 	<htmlContent tag="MURK"><![CDATA[
 	<p>
-		Knowing that Epona has been given the task of looking after Murk, you ask her where she's keeping him. Raising her eyebrows in surprise at your interest in the rat-boy, Epona places her hands on her hips and sighs, [epona.speech(I've got him locked up in the storage room behind me. I'm not particularly fond of slavery, but when I heard that he'd kidnapped some humans and turned them into his sex slaves... Slavery's too good for scum like him.)]
+	Зная, что на Эпону возложили задачу присматривать за Мёрком, ты спрашиваешь, где он находится. Удивленно вскинув брови от твоего интереса к крысопарню, Эпона упирает руки в бока и вздыхает: [epona.speech(Он заперт в кладовой прямо за мной. Не то чтобы я обожала рабство, но когда до меня дошли слухи, что он похищал людей и превращал их в своих сексуальных рабынь... Для такой дряни рабство — это слишком большая честь.)]
 	</p>
 	<p>
-		Having confirmed that the rat-boy is close by, you ask Epona if she'd let you see him. Frowning at you, she asks, [epona.speech(You actually want to see that piece of trash?! Well, seeing as you're the one to thank for putting an end to his abuse of those poor girls, I suppose I can trust you...)]
+	Убедившись, что крысопарень где-то рядом, ты спрашиваешь Эпону, позволит ли она тебе его увидеть. Нахмурившись, она спрашивает: [epona.speech(Ты и правда хочешь взглянуть на этот кусок мусора?! Ну, раз уж именно тебе стоит сказать «спасибо» за то, что ты покончил с его издевательствами над теми бедными девчонками, полагаю, я могу тебе доверять...)]
 	</p>
 	<p>
-		Moving over to one side, the horse-girl lifts up the counter-top and beckons you forwards. [pc.Stepping] around to the other side, you follow Epona as she leads you past the door to her office and over to a second door marked as 'Staff Only'. Turning towards you, she says, [epona.speech(He's chained up in here, and I only allow him out to help with cleaning the breeding stalls. I assume that you're here to try and scold him for his abhorrent behaviour, but I'm warning you now that he doesn't listen to anyone.)]
+		Сместившись в сторону, кентавридка приподнимает столешницу и манит тебя за собой. [pc.Stepping] Обойдя прилавок, ты следуешь за Эпоной: она ведет тебя мимо двери своего кабинета к другой двери с табличкой «Только для персонала». Повернувшись к тебе, она произносит: [epona.speech(Он прикован здесь внутри, и я выпускаю его только для того, чтобы помогал чистить стойла для разведения. Полагаю, ты здесь, чтобы отчитать его за его отвратительное поведение, но предупреждаю сразу — он никого не слушает.)]
 	</p>
 	<p>
-		With that, Epona turns around and starts to walk back over to her counter, but after taking a couple of steps, she suddenly remembers something and turns back to reveal, [epona.speech(There's a feminising potion on the top shelf in there... I had it created a long time ago as part of a trial for pregnancy roulette, but I never used it. I can't bring myself to force something like that on someone else, even someone as despicable as Murk, but if you wanted to use it on him, then feel free. It has some pretty potent mind-altering effects, so it should mellow him out...)]
+		С этими словами Эпона разворачивается и направляется обратно к прилавку, но, сделав пару шагов, она внезапно что-то вспоминает и оборачивается: [epona.speech(Там, на верхней полке... есть феминизирующее зелье. Я заказала его давным-давно для испытаний «рулетки беременности», но так и не использовала. У меня не хватает духу навязывать такое кому-то другому, даже такому мерзавцу, как Мёрк, но если захочешь применить его на нем — воля твоя. У него довольно сильный эффект, меняющий сознание, так что это должно его немного смягчить...)]
 	</p>
 	<p>
-		Letting out a deep sigh, the horse-girl flashes you one last smile, before turning around one more and walking off back to her counter. Left alone facing the door to the storage room in which Murk is being kept, you wonder whether you should enter or instead turn around and leave...
+		Тяжело вздохнув, кентавридка одаривает тебя последней улыбкой, разворачивается и уходит обратно к прилавку. Оставшись один перед дверью кладовой, где заперт Мёрк, ты раздумываешь: стоит ли войти или лучше развернуться и уйти...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MURK_BACK"><![CDATA[
 	<p>
-		Having second thoughts about it, you decide that you don't want to pay Murk a visit after all. Turning away from the door to the storage room, you return to Epona and tell her that you've changed your mind.
+		Передумав, ты решаешь, что всё-таки не хочешь навещать Мёрка. Отворачиваясь от двери в кладовую, ты возвращаешься к Эпоне и говоришь ей, что твоё мнение изменилось.
 	</p>
 	<p>
-		[epona.speech(I don't blame you, that piece of work isn't worth anybody's time,)] she says as she lifts up the counter-top. [pc.Stepping] past her to return to the other side of the counter, you turn to face the smiling horse-girl as she continues, [epona.speech(So, what can I do for you, [pc.name]?)]
+		[epona.speech(Я тебя не виню, этот тип не стоит ничьей траты времени,)] — говорит она, приподнимая столешницу. [pc.Stepping] неё, чтобы вернуться на другую сторону стойки, ты поворачиваешься к улыбающейся кобылке, а она продолжает: [epona.speech(Итак, что я могу сделать для тебя, [pc.name]?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -656,7 +651,7 @@
 	
 	<htmlContent tag="MURK_ALONE"><![CDATA[
 	<p>
-		Pushing open the door, you [pc.step] into the storage room and quickly scan your surroundings. The dimensions of the room are very small, and it's made even smaller by the fact that there are shelving units pushed back against all three sides of the walls in front of you. A single arcane-powered lightbulb hangs from the drab grey ceiling, which illuminates the form of the chubby [murk.race] who's slouched down on a pile of shabby old cushions in front of you.
+		Толкнув дверь, ты [pc.step] в кладовую и быстро осматриваешься. Комната совсем крошечная, а ещё теснее кажется из-за стеллажей, придвинутых вплотную к трём стенам перед тобой. С тусклого серого потолка свисает единственная лампочка на аркане, освещая фигуру пухлого [murk.race], который развалился на куче потрёпанных старых подушек прямо перед тобой.
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_murkMaster) || game.getDialogueFlags().hasFlag(FLAG_eponaMurkSubmitted))
 		#IF(game.getDialogueFlags().hasFlag(FLAG_eponaMurkSeen))
@@ -664,82 +659,82 @@
 				#IF(pc.isVisiblyPregnant())
 					#IF(!pc.isCharacterReactedToPregnancy(murk))
 						#IF(pc.getPregnantLitter().isFatherId(murk.getId()))
-							A wicked grin instantly crosses your Master's face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your swollen belly and sneers, [murk.speech(I got ya knocked up, eh, slut? Heh! Shoulda known that all that stinkin' cum I stuffed inta yer womb would get ya pregnant! Anyway, get down an' give me fat cock a
+							Едва увидев, что ты снова пришла к нему, твой Хозяин расплывается в злобной ухмылке. Громко рыгнув, он смотрит на твой раздутый живот и скалится: [murk.speech(Опа, залёгшая, а? Хех! Надо было знать, что всё то вонючее семя, что я впихнул тебе в утробу, сделает тебя беременной! Короче, а ну, подкати и чмокни мой жирный член
 							#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-								 kiss,
+								 поцелуем,
 							#ELSE
-								 stroke,
+								 лаской,
 							#ENDIF
-							 bitch!)]
+								 сучка!)]
 						#ELSE
-							A wicked grin instantly crosses your Master's face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your swollen belly and sneers, [murk.speech(Someone's gone an' got ya knocked up, eh, slut? Heh! Anyway, get down an' give me fat cock a
+							На лице твоего Господина тут же расплывается порочная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он смотрит на твой раздувшийся живот и скалится: [murk.speech(Кто-то у нас забеременел, а, шлюха? Хех! Короче, а ну-ка, дай моему толстому херу
 							#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-								 kiss,
+								 поцелуем,
 							#ELSE
-								 stroke,
+								 лаской,
 							#ENDIF
-							 bitch!)]
+								 сучка!)]
 						#ENDIF
 					#ELSE
 						#IF(pc.getPregnantLitter().isFatherId(murk.getId()))
-							A wicked grin instantly crosses your Master's face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your still-swollen belly and sneers, [murk.speech(You's still carryin' our kids around? Hurry the fuck up an' get 'em birthed, so I can 'ave a go at breedin' yer ugly cunt again! Anyway, get down an' give me fat cock a
+							На лице твоего Господина тут же расплывается порочная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он смотрит на твой всё еще раздутый живот и скалится: [murk.speech(Всё еще таскаешь наших деток внутри? Давай, рожай их быстрее, черт возьми, чтобы я снова мог развлечься, трахая твою уродливую щель! Короче, а ну-ка, дай моему толстому херу
 							#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-								 kiss,
+								 поцелуем,
 							#ELSE
-								 stroke,
+								 лаской,
 							#ENDIF
-							 bitch!)]
+								 сучка!)]
 						#ELSE
-							A wicked grin instantly crosses your Master's face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your still-swollen belly and sneers, [murk.speech(You's still pregnant? Hurry the fuck up an' get 'em birthed, so I can 'ave a go at breedin' yer ugly cunt! Anyway, get down an' give me fat cock a
+							На лице твоего Господина тут же расплывается порочная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он смотрит на твой всё еще раздутый живот и скалится: [murk.speech(Всё еще беременна? Давай, рожай их быстрее, черт возьми, чтобы я снова мог развлечься, трахая твою уродливую щель! Короче, а ну-ка, дай моему толстому херу
 							#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-								 kiss,
+								 поцелуем,
 							#ELSE
-								 stroke,
+								 лаской,
 							#ENDIF
-							 bitch!)]
+								 сучка!)]
 						#ENDIF
 					#ENDIF
 				#ELSE
-					A wicked grin instantly crosses your Master's face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he snaps his fingers and points down at his exposed groin, sneering,
+					На лице твоего Господина тут же расплывается порочная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он щелкает пальцами и, скалясь, указывает на свою обнаженную пах:
 					#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-						 [murk.speech(Get down an' give me fat cock a kiss, slut!)]
+						 [murk.speech(А ну, поцелуй мой толстый хер, шлюха!)]
 					#ELSE
-						 [murk.speech(Get down an' give me fat cock a stroke, slut!)]
+						 [murk.speech(А ну, погладь мой толстый хер, шлюха!)]
 					#ENDIF
 				#ENDIF
 			</p>
 			<p>
 				#IF(game.getDialogueFlags().hasFlag(FLAG_eponaMurkSubmitted))
-					You can't help but let out a hungry whine as you look down at the rat-boy's fat, sheathed cock, and you wonder whether you should do as he commands, or tell him that things have gone too far...
+					Ты невольно издаешь голодный скулеж, глядя на толстый, скрытый в препуции член крысопарня, и гадаешь: стоит ли тебе подчиниться его приказу или сказать, что всё это уже зашло слишком далеко...
 				#ELSE
-					Your previous conditioning to obey your Master instantly takes over, and without thinking, you move forwards to obey...
+					Твоя прежняя привычка повиноваться Господину мгновенно берет верх, и ты, не раздумывая, делаешь шаг вперед, чтобы исполнить волю...
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
-				A wicked grin instantly crosses your Master's face as he sees that you've come to pay him a visit, and after letting out a loud belch, he spreads his legs and presents you with his exposed groin, sneering, [murk.speech(I's 'appy ta see yer 'ere, slut! Me fat balls ain't been emptied since them Enforcer cunts nabbed me an' 'ad me locked up in 'ere! There ain't no 'ope o' me ever gettin' out o' this place, but at least I's got a faithful slut 'o I can stick me fat cock inside of!)]
+				На лице твоего Господина тут же расплывается порочная ухмылка, когда он видит, что ты пришла навестить его. Громко рыгнув, он раздвигает ноги, подставляя тебе свою обнаженную пахлую зону, и с усмешкой выдает: [murk.speech(Рад тебя видеть, шлюшка! Мои жирные яйца не разряжались с тех самых пор, как эти суки Enforcer сцапали меня и заперли здесь! Похоже, мне отсюда уже не выбраться, но зато у меня есть верная шлюшка, в которую можно засадить свой жирный член!)]
 			</p>
 			<p>
-				Your previous conditioning to please your Master instantly takes over, and without thinking, you move forwards and ask, [pc.speech(What can I do for you, Master?)]
+				Твоя прежняя привычка угождать Господину мгновенно берет верх, и ты, не раздумывая, делаешь шаг вперед и спрашиваешь: [pc.speech(Что я могу сделать для вас, Господин?)]
 			</p>
 			<p>
 				#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-					[murk.speech(Get down on yer knees an' give me stinkin' cock a nice big kiss!)] your Master commands, before reaching up to scratch his chubby belly and sneer, [murk.speech(I'll 'ave ya make love ta me cock an' then give ya a real 'ard poundin'!)]
+					[murk.speech(А ну, встань на колени и хорошенько поцелуй мой вонючий член!)] — командует твой Господин, после чего тянется почесать свой пухлый живот и скалится: [murk.speech(Сначала ты трахнешь мой член, а потом я устрою тебе настоящую жесткую долбежку!)]
 				#ELSE
-					[murk.speech(Get down on yer knees an' give me stinkin' cock sum attention!)] your Master commands, before reaching up to scratch his chubby belly and sneer, [murk.speech(I'll 'ave ya jerk me off an' spurt me cum all over ya face! Heh!)]
+					[murk.speech(А ну, встань на колени и удели внимание моему вонючему члену!)] — командует твой Господин, после чего тянется почесать свой пухлый живот и скалится: [murk.speech(Сначала ты отсосешь мне, а потом я залью всё твое лицо своей кончой! Хе-хе!)]
 				#ENDIF
 			</p>
 			#IF(pc.isVisiblyPregnant())
 				<p>
 					#IF(pc.getPregnantLitter().isFatherId(murk.getId()))
-						Looking down at your swollen belly as though noticing it for the first time, the chubby rat-boy sneers, [murk.speech(I got ya knocked up, eh, slut? Heh! Shoulda known that all that stinkin' cum I stuffed inta yer womb would get ya pregnant! Anyways, 'urry up an get ta servicin' me cock!)]
+						Глядя на твой раздувшийся живот так, словно замечает его впервые, пухлый крысопацан скалится: [murk.speech(Я тебя обрюхатил, а, шлюха? Хе! Надо было знать, что всё то вонючее семя, которым я забил твою утробу, сделает своё дело! Короче, шевелись и иди обслужи мой член!)]
 					#ELSE
-						Looking down at your swollen belly as though noticing it for the first time, the chubby rat-boy sneers, [murk.speech(Someone's gone an' got ya knocked up, eh, slut? Heh! Anyways, 'urry up an get ta servicin' me cock!)]
+						Глядя на твой раздувшийся живот так, словно замечает его впервые, пухлый крысопацан скалится: [murk.speech(Кто-то тебя обрюхатил, а, шлюха? Хе! Короче, шевелись и иди обслужи мой член!)]
 					#ENDIF
 				</p>
 			#ENDIF
 			<p>
-				Eager to please your Master, you move forwards to obey...
+				Стремясь угодить своему Господину, ты подаешься вперед, чтобы подчиниться...
 			</p>
 		#ENDIF
 	#ELSE
@@ -749,99 +744,98 @@
 					#IF(pc.isVisiblyPregnant())
 						#IF(!pc.isCharacterReactedToPregnancy(murk))
 							#IF(pc.getPregnantLitter().isFatherId(murk.getId()))
-								A hungry grin instantly crosses [murk.namePos] face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your swollen belly and sneers, [murk.speech(I got ya knocked up, eh, slut? Heh! Shoulda known that all that stinkin' cum I stuffed inta yer womb would get ya pregnant! Anyway, get down an' give me fat cock a
+								Голодная ухмылка мгновенно расплывается по лицу [murk.namePos], когда он видит, что ты снова пришла навестить его; громко рыгнув, он смотрит на твой раздувшийся живот и скалится: [murk.speech(Я тебя обрюхатил, а, шлюха? Хе! Надо было знать, что всё то вонючее семя, которым я забил твою утробу, сделает своё дело! Короче, вставай на колени и дай моему толстому члену
 								#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-									 kiss,
+									 поцеловать,
 								#ELSE
-									 stroke,
+									 отсосать,
 								#ENDIF
-								 bitch!)]
+									 сучка!)]
 							#ELSE
-								A hungry grin instantly crosses [murk.namePos] face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your swollen belly and sneers, [murk.speech(Someone's gone an' got ya knocked up, eh, slut? Heh! Anyway, get down an' give me fat cock a
+								Голодная ухмылка мгновенно расплывается по лицу [murk.namePos], когда он видит, что ты снова пришла навестить его; громко рыгнув, он смотрит на твой раздувшийся живот и скалится: [murk.speech(Кто-то тебя обрюхатил, а, шлюха? Хе! Короче, вставай на колени и дай моему толстому члену
 								#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-									 kiss,
+									 поцеловать,
 								#ELSE
-									 stroke,
+									 отсосать,
 								#ENDIF
-								 bitch!)]
+									 сучка!)]
 							#ENDIF
 						#ELSE
 							#IF(pc.getPregnantLitter().isFatherId(murk.getId()))
-								A hungry grin instantly crosses [murk.namePos] face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your still-swollen belly and sneers, [murk.speech(You's still carryin' our kids around? Hurry the fuck up an' get 'em birthed, so I can 'ave a go at breedin' yer ugly cunt again! Anyway, get down an' give me fat cock a
-								#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-									 kiss,
+								На лице [murk.namePos] мгновенно расплывается голодная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он опускает взгляд на твой всё ещё раздутый живот и скалится: [murk.speech(Всё ещё таскаешь наших отродьев в себе? Давай, рожай уже, блядь, чтобы я снова мог трахнуть твою уродливую щель! Короче, садись на мой жирный хер и
+)								#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
+									 поцеловать,
 								#ELSE
-									 stroke,
+									 отсосать,
 								#ENDIF
-								 bitch!)]
+									 сучка!)]
 							#ELSE
-								A hungry grin instantly crosses [murk.namePos] face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he looks down at your still-swollen belly and sneers, [murk.speech(You's still pregnant? Hurry the fuck up an' get 'em birthed, so I can 'ave a go at breedin' yer ugly cunt! Anyway, get down an' give me fat cock a
-								#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-									 kiss,
+								На лице [murk.namePos] мгновенно расплывается голодная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он опускает взгляд на твой всё ещё раздутый живот и скалится: [murk.speech(Всё ещё беременна? Давай, рожай уже, блядь, чтобы я снова мог трахнуть твою уродливую щель! Короче, садись на мой жирный хер и
+)								#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
+									 поцеловать,
 								#ELSE
-									 stroke,
+									 отсосать,
 								#ENDIF
-								 bitch!)]
+									 сучка!)]
 							#ENDIF
 						#ENDIF
 					#ELSE
-						A hungry grin instantly crosses [murk.namePos] face as he sees that you've come to pay him a visit again, and after letting out a loud belch, he snaps his fingers and points down at his exposed groin, sneering,
-						#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-							 [murk.speech(Come an' give me fat cock a kiss, slut! I's knowin' ya wantin' it really!)]
+								На лице [murk.namePos] мгновенно расплывается голодная ухмылка, когда он видит, что ты снова пришла навестить его. Громко рыгнув, он щелкает пальцами и, презрительно скалясь, указывает на свою обнаженную пах:						#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
+								 [murk.speech(А ну, чмокни мой жирный хер, шлюха! Я же знаю, что ты сама его хочешь!)]
 						#ELSE
-							 [murk.speech(Come an' give me fat cock a stroke, slut! I's knowin' ya wantin' it really!)]
+								 [murk.speech(А ну, погладь мой жирный хер, шлюха! Я же знаю, что ты сама его хочешь!)]
 						#ENDIF
 					#ENDIF
 				</p>
 				<p>
-					Frowning down at the crass rat-boy, you wonder what to do about his uncouth behaviour...
+					Смотря на этого грубого крысопарня, ты недоумеваешь, что делать с его беспардонным поведением...
 				</p>
 			#ELSE
 				<p>
 					#IF(game.getDialogueFlags().hasFlag(FLAG_murkCaptiveBlowjob))
-						A wicked grin instantly crosses Murk's face as he sees that it's you who's come to pay him a visit, and after letting out a loud belch, he spreads his legs and presents you with his exposed groin, sneering,
+							На лице Мёрка мгновенно расплывается порочная ухмылка, когда он видит, что пришла именно ты. Громко рыгнув, он широко раздвигает ноги, демонстрируя тебе свой обнаженный пах, и скалится:
 						#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-							 [murk.speech(I's 'appy ta see yer 'ere, slut! Me fat balls ain't been emptied since them Enforcer cunts nabbed me an' 'ad me locked up in 'ere! You's may 'ave escaped from yer milkin' stall, but yer 'ungry fer anotha taste o' me stinkin' cock, ain't ya?! Come on, get down an' give it a kiss, slut!)]
+							 [murk.speech(Рад тебя видеть, шлюшка! Мои жирные яйца не разряжались с тех самых пор, как эти сучьи дети из Enforcer сцапали меня и заперли здесь! Может, ты и сбежала со своего стойла для дойки, но ты же изголодалась по вкусу моего вонючего члена, а?! Ну же, опускайся на колени и чмокни его, шлюшка!)]
 						#ELSE
-							 [murk.speech(I's 'appy ta see yer 'ere, slut! Me fat balls ain't been emptied since them Enforcer cunts nabbed me an' 'ad me locked up in 'ere! You's may 'ave escaped from yer milkin' stall, but yer 'ungry fer anotha taste o' me stinkin' cum, ain't ya?! Come on, get down an' give it a stroke, slut!)]
+							 [murk.speech(Рад тебя видеть, шлюшка! Мои жирные яйца не разряжались с тех самых пор, как эти сучьи дети из Enforcer сцапали меня и заперли здесь! Может, ты и сбежала со своего стойла для дойки, но ты же изголодалась по глотку моей вонючей спермы, а?! Ну же, опускайся и погладь его, шлюшка!)]
 						#ENDIF
 					#ELSE
-						A look of surprise crosses Murk's face as he sees that someone other than Epona has come to pay him a visit, but after letting out a loud belch, he flashes you an arrogant smirk and spreads his legs to present you with his exposed groin. Looking down, you see that although Murk's cock is currently sheathed, it's quite clearly absolutely massive, and you can't help but imagine how disproportionately huge it must look to his relatively short stature when fully erect. Seeing what it is you're glancing at, the rat-boy spits on the floor and sneers,
+							На лице Мёрка промелькнуло удивление — он не ожидал, что к нему заглянет кто-то, кроме Эпоны, но, громко рыгнув, он самодовольно ухмыляется и раздвигает ноги, выставляя напоказ свою пахту. Посмотрев вниз, ты видишь, что хотя член Мёрка сейчас и спрятан в складках, он чертовски массивный; ты невольно представляешь, насколько непропорционально огромным он будет выглядеть при полном возбуждении при его невысоком росте. Заметив твой взгляд, крысопацан сплевывает на пол и скалится:
 						#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-							 [murk.speech(I's can tell that ya wantin' a taste o' it! Come on, get down an' give me fat cock a kiss, slut!)]
+							 [murk.speech(Вижу, ты хочешь его попробовать! Ну же, опускайся и чмокни мой жирный член, шлюшка!)]
 						#ELSE
-							 [murk.speech(I's can tell that ya wantin' a feel o' it! Come on, get down an' give me fat cock a stroke, slut!)]
+							 [murk.speech(Вижу, ты хочешь его пощупать! Ну же, опускайся и погладь мой жирный член, шлюшка!)]
 						#ENDIF
 					#ENDIF
 				</p>
 				<p>
-					Frowning down at the crass rat-boy, you wonder what to do about his uncouth behaviour...
+					Смотря на этого грубого крысопарня, ты недоумеваешь, что делать с его беспардонным поведением...
 				</p>
 			#ENDIF
 		#ELSE
 			#IF(murk.isVisiblyPregnant())
 				#IF(!murk.isCharacterReactedToPregnancy(pc))
 					<p>
-						A devious grin instantly crosses [murk.namePos] face as she sees that you've come to pay her a visit again, and after letting out a loud belch, she rubs her chubby hands over her [style.colourSex(pregnant belly)] and sneers, [murk.speech(Look at wot you's done an gone ta me! You's got me knocked up! Heh-heh-heh!)]
+						На лице [murk.namePos] тут же расплывается коварная ухмылка, когда она видит, что ты снова пришел навестить её. Громко рыгнув, она потирает свои пухлые ручонки по [style.colourSex(беременному животу)] и скалится: [murk.speech(Глянь, чё ты со мной сотворил! Ты меня обрюхатил! Хе-хе-хе!)]
 					</p>
 					<p>
-						Slipping her chubby fingers down towards her groin, the chubby rat-girl spreads her legs and starts touching herself, sneering, [murk.speech(Me cunt's still 'ungry ta be filled with cock, so come on, do me already! I's all wet an' eager ta get ya inside o' me!)]
+						Пропуская пухлые пальцы вниз к паху, толстая крысица раздвигает ноги и начинает ласкать себя, презрительно цедя: [murk.speech(Моя киска всё ещё голодна до твоего члена, так что давай, трахни меня уже! Я вся мокрая и так и жду, когда ты в меня вставишь!)]
 					</p>
 				#ELSE
 					<p>
-						A devious grin instantly crosses [murk.namePos] face as she sees that you've come to pay her a visit again, and after letting out a loud belch, she rubs her chubby hands over her [style.colourSex(pregnant belly)] and sneers, [murk.speech(I's still all nice an' swollen with our kids! Heh-heh-heh!)]
+						На лице [murk.namePos] тут же расплывается коварная ухмылка, когда она видит, что ты снова пришел навестить её. Громко рыгнув, она потирает свои пухлые ручонки по [style.colourSex(беременному животу)] и скалится: [murk.speech(Я всё ещё такая вся припухшая от наших деток! Хе-хе-хе!)]
 					</p>
 					<p>
-						Slipping her chubby fingers down towards her groin, the chubby rat-girl spreads her legs and starts touching herself, sneering, [murk.speech(Me cunt's still 'ungry ta be filled with cock, so come on, do me already! I's all wet an' eager ta get ya inside o' me!)]
+						Пропуская пухлые пальцы вниз к паху, толстая крысица раздвигает ноги и начинает ласкать себя, презрительно цедя: [murk.speech(Моя киска всё ещё голодна до твоего члена, так что давай, трахни меня уже! Я вся мокрая и так и жду, когда ты в меня вставишь!)]
 					</p>
 				#ENDIF
 			#ELSE
 				<p>
-					A hungry grin instantly crosses [murk.namePos] face as she sees that you've come to pay her a visit again, and after letting out a loud belch, she spreads her legs and starts rubbing her chubby fingers over her exposed pussy, sneering, [murk.speech(You's 'ere ta give me cunt a good fuckin' ain't ya?! Come on, I's all wet an' eager ta get ya inside o' me! Heh!)]
+					На лице [murk.namePos] мгновенно расплывается голодная ухмылка, когда она видит, что ты снова пришел навестить её. Громко рыгнув, она раздвигает ноги и начинает водить пухлыми пальцами по своей обнаженной киске, насмешливо выдавая: [murk.speech(Ты пришел хорошенько оттрахать мою щелку, а?! Давай же, я уже вся мокрая и жажду, чтоб ты вошел в меня! Хе!)]
 				</p>
 			#ENDIF
 			<p>
-				Looking down at the horny rat-girl, you wonder whether you should do as she asks and fuck her, or do something else instead...
+				Глядя на похотливую крысодевочку, ты раздумываешь, стоит ли ей подчиниться и трахнуть её, или же сделать что-то другое...
 			</p>
 		#ENDIF
 	#ENDIF
@@ -851,11 +845,11 @@
 	<htmlContent tag="MURK_SEX_DOM"><![CDATA[
 	#IF(murk.isFeminine())
 		<p>
-			[pc.Stepping] forwards, you dominantly push [murk.name] down onto the cushions she's been using as a makeshift chair, before moving up between her legs and preparing to fuck her. Clearly getting excited at the prospect of having her hungry pussy used, [murk.name] squeals, [murk.speech(Oh yeah! ~Mmm!~ Come on, fuck me juicy cunt!)]
+			[pc.Stepping] подается вперед, и ты властно прижимаешь [murk.name] к подушкам, которые она использует вместо стула, после чего устраиваешься между её ног, готовясь к совокуплению. Явно возбужденная перспективой того, что её голодную киску будут трахать, [murk.name] визжит: [murk.speech(О да! ~Ммм!~ Давай же, трахай мою сочную щелку!)]
 		</p>
 	#ELSE
 		<p>
-			Not having any time for Murk's attempts at asserting his dominance, you simply [pc.step] forwards and forcefully push him down onto the cushions he's been using as a makeshift chair. Quickly moving up between his legs and preparing to fuck him, you can't help but smirk as he grunts, [murk.speech(Hey! W-What ya doin'?! I should be da one in charge!)]
+			Не желая тратить время на попытки Мёрка утвердить свое превосходство, ты просто [pc.step] вперед и силой прижимаешь его к подушкам, которые он использует вместо стула. Быстро устраиваясь между его ног и готовясь его оттрахать, ты невольно ухмыляешься, когда он кряхтит: [murk.speech(Эй! Ч-что ты творишь?! Вообще-то тут главным должен быть я!)]
 		</p>
 	#ENDIF
 	]]>
@@ -863,88 +857,88 @@
 	
 	<htmlContent tag="MURK_SEX_SUB_VAGINA"><![CDATA[
 	<p>
-		Finding yourself madly turned on at the thought of being dominated by this chubby rat-boy, you let out a horny whine and tell him that you want him to fuck you. Letting out a rumbling chuckle as he hears what it is you're saying, Murk teases,
+		Понимая, что мысль о том, что этот пухлый крысопацан будет доминировать над тобой, приводит тебя в дикое возбуждение, ты издаешь похотливый стон и говоришь, что хочешь, чтобы он тебя трахнул. Услышав твои слова, Мёрк издает утробный смешок и дразнит тебя,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_murkCaptiveBlowjob))
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it were when I was fuckin' yer face an' trainin' ya ta be one o' me milkers? Heh-heh-heh! Go on then, slut, get down on yer knees and give me fat cock a big, lovin' kiss, an' I'll consider fuckin' ya!)]
+			 [murk.speech(Чего? Всё не можешь выкинуть из головы, как сладко было, когда я трахал твою мордашку и дрессировал тебя, чтобы ты стала одной из моих молочниц? Хе-хе-хе! Ну же, шлюшка, падай на колени и одари мой толстый член жирным, нежным поцелуем, и тогда я, может, подумаю о том, чтобы трахнуть тебя!)]
 		#ELSE
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it'd feel ta 'ave me fat cock stuffed deep inta yer cunt? Heh-heh-heh! Go on then, slut, get down on yer knees and give me fat dick a big, lovin' kiss, an' I'll consider fuckin' ya!)]
+			 [murk.speech(Чего? Всё не можешь выкинуть из головы, как охренительно будет, когда мой толстый член залезет глубоко в твою киску? Хе-хе-хе! Ну же, шлюшка, падай на колени и одари мой толстый член жирным, нежным поцелуем, и тогда я, может, подумаю о том, чтобы трахнуть тебя!)]
 		#ENDIF
 	</p>
 	<p>
-		Doing as you're told, you drop down onto the floor in front of Murk, before leaning in and planting a big, wet kiss on his sheathed cock. Quickly pushing out and rising to full erection in response to your oral attention, Murk's huge, fat cock starts leaking a steady stream of musky precum, and you can't help but lick it up as he grunts, [murk.speech(That's it, slut! Now call me yer Masta an' give me cock one last kiss, then I'll shove it in yer cunt an' give ya a real good ruttin'!)]
+		Повинуясь приказу, ты опускаешься на пол перед Мёрком, после чего наклоняешься и оставляешь долгий, влажный поцелуй на его припухшем члене. Мгновенно реагируя на твои ласки, член Мёрка вырывается наружу и встает в полную эрекцию; из его головки начинает течь густая струйка мускусистой предэякулята, и ты не можешь удержаться, чтобы не слизывать её, пока он хрипло рычит: [murk.speech(Вот так, шлюшка! А теперь назови меня своим Господином и поцелуй мой член напоследок, тогда я всажу его в твою киску и устрою тебе настоящую трахнющую скачку!)]
 	</p>
 	<p>
-		[pc.speech(Yes, Master,)] you submissively reply, before planting one last big, wet kiss on the head of your Master's cock.
+		[pc.speech(Да, Господин,)] — покорно отвечаешь ты, прежде чем оставить последний долгий, влажный поцелуй на головке члена своего Господина.
 	</p>
 	<p>
-		Letting out an amused grunt, the chubby rat-boy stands up, before waddling around behind you and unceremoniously clambering up onto your back. Without any further foreplay, he suddenly thrusts forwards and slams his massive cock into your pussy, before starting to ruthlessly pound you on the floor of the storage room...
+		Усмехнувшись, пухлый крысоподобный парень поднимается, обходит тебя сзади и бесцеремонно забирается на спину. Без всяких прелюдий он резко подается вперед и с размаху вбивает свой массивный член в твою киску, после чего начинает беспощадно долбить тебя прямо на полу кладовой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MURK_SEX_SUB_ANUS"><![CDATA[
 	<p>
-		Finding yourself madly turned on at the thought of being dominated by this chubby rat-boy, you let out a horny whine and tell him that you want him to fuck you. Letting out a rumbling chuckle as he hears what it is you're saying, Murk teases,
+		Понимая, что мысль о том, что этот пухлый крысопацан будет доминировать над тобой, приводит тебя в дикое возбуждение, ты издаешь похотливый стон и говоришь, что хочешь, чтобы он тебя трахнул. Услышав твои слова, Мёрк издает утробный смешок и дразнит тебя,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_murkCaptiveBlowjob))
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it were when I was fuckin' yer face an' trainin' ya ta be one o' me milkers? Heh-heh-heh! Go on then, slut, get down on yer knees and give me fat cock a big, lovin' kiss, an' I'll consider fuckin' ya!)]
+			 [murk.speech(Чего? Всё не можешь выкинуть из головы, как сладко было, когда я трахал твою мордашку и дрессировал тебя, чтобы ты стала одной из моих молочниц? Хе-хе-хе! Ну же, шлюшка, падай на колени и одари мой толстый член жирным, нежным поцелуем, и тогда я, может, подумаю о том, чтобы трахнуть тебя!)]
 		#ELSE
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it'd feel ta 'ave me fat cock stuffed deep inta yer ass? Heh-heh-heh! Go on then, slut, get down on yer knees and give me fat dick a big, lovin' kiss, an' I'll consider fuckin' ya!)]
+			 [murk.speech(Че? Не можешь перестать думать о том, как охеренно будет, если я засуну свой толстый член глубоко тебе в задницу? Хе-хе-хе! Ну давай же, шлюшка, вставай на колени и сладко поцелуй мой жирный член, а там я, может, и подумаю о том, чтобы трахнуть тебя!)]
 		#ENDIF
 	</p>
 	<p>
-		Doing as you're told, you drop down onto the floor in front of Murk, before leaning in and planting a big, wet kiss on his sheathed cock. Quickly pushing out and rising to full erection in response to your oral attention, Murk's huge, fat cock starts leaking a steady stream of musky precum, and you can't help but lick it up as he grunts, [murk.speech(That's it, slut! Now call me yer Masta an' give me cock one last kiss, then I'll shove it in yer ass an' give ya a real good ruttin'!)]
+		Повинуясь приказу, ты опускаешься на пол перед Мёрком, а затем наклоняешься и оставляешь долгий, влажный поцелуй на его головке. Мгновенно откликаясь на твои ласки, его огромный, толстый член наливается кровью и встает во всю мощь, а из него начинает сочиться густая струйка мускусистой предэякулята. Ты не можешь удержаться и слизываешь её, пока он довольно рычит: [murk.speech(Вот так, шлюшка! А теперь назови меня своим Хозяином и напоследок поцелуй мой член, тогда я запихаю его тебе в задницу и устрою тебе настоящую жесткую трахню!)]
 	</p>
 	<p>
-		[pc.speech(Yes, Master,)] you submissively reply, before planting one last big, wet kiss on the head of your Master's cock.
+		[pc.speech(Да, Господин,)] — покорно отвечаешь ты, прежде чем оставить последний долгий, влажный поцелуй на головке члена своего Господина.
 	</p>
 	<p>
-		Letting out an amused grunt, the chubby rat-boy stands up, before waddling around behind you and unceremoniously clambering up onto your back. Without any further foreplay, he suddenly thrusts forwards and slams his massive cock into your [pc.asshole+], before starting to ruthlessly pound you on the floor of the storage room...
+		Усмехнувшись, пухлый крысоподобный парень поднимается, обходит тебя и бесцеремонно забирается на спину. Без всяких прелюдий он резко подается вперед и с силой вбивает свой массивный член в твою [pc.asshole+], после чего начинает беспощадно долбить тебя прямо на полу кладовой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MURK_SEX_SUB_ORAL"><![CDATA[
 	<p>
-		Finding yourself madly turned on at the thought of being dominated by this chubby rat-boy, you let out a horny whine and tell him that you want him to fuck you. Letting out a rumbling chuckle as he hears what it is you're saying, Murk teases,
+		Понимая, что мысль о том, что этот пухлый крысопацан будет доминировать над тобой, приводит тебя в дикое возбуждение, ты издаешь похотливый стон и говоришь, что хочешь, чтобы он тебя трахнул. Услышав твои слова, Мёрк издает утробный смешок и дразнит тебя,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_murkCaptiveBlowjob))
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it were when I was fuckin' yer face an' trainin' ya ta be one o' me milkers? Heh-heh-heh! Go on then, slut, get down on yer knees and give me fat cock a big, lovin' kiss, an' I'll consider fuckin' yer face!)]
+			 [murk.speech(Че? Не можешь перестать думать о том, как охеренно было, когда я трахал твое ебало и дрессировал тебя, чтобы ты стала одной из моих молочниц? Хе-хе-хе! Ну давай же, шлюшка, вставай на колени и сладко поцелуй мой жирный член, а там я, может, и подумаю о том, чтобы оттрахать твое ебало!)]
 		#ELSE
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it'd feel ta 'ave me fat cock stuffed deep down yer throat? Heh-heh-heh! Go on then, slut, get down on yer knees and give me fat dick a big, lovin' kiss, an' I'll consider fuckin' yer face!)]
+			 [murk.speech(Чё? Не можешь перестать думать о том, как охеренно будет, если я засуну свой жирный член тебе глубоко в глотку? Хе-хе-хе! Ну давай же, шлюшка, падай на колени и хорошенько чмокни мой толстый хер, а я, может, и подумаю о том, чтобы оттрахать тебе рот!)]
 		#ENDIF
 	</p>
 	<p>
-		Doing as you're told, you drop down onto the floor in front of Murk, before leaning in and planting a big, wet kiss on his sheathed cock. Quickly pushing out and rising to full erection in response to your oral attention, Murk's huge, fat cock starts leaking a steady stream of musky precum, and you can't help but lick it up as he grunts, [murk.speech(That's it, slut! Now call me yer Masta an' give me cock one last kiss, then I'll shove it down yer throat an' give yer face a real good ruttin'!)]
+		Повинуясь приказу, ты опускаешься на пол перед Мёрком, а затем наклоняешься и оставляешь долгий, влажный поцелуй на его закрытом члене. Мгновенно реагируя на ласку, Мёрк выталкивает свой орган, и тот встаёт во всю мощь; из его огромного жирного члена начинает течь непрерывная струйка мускусистой предэякулята, и ты не можешь удержаться, чтобы не слизывать её, пока он хрипло рычит: [murk.speech(Вот так, шлюшка! А теперь назови меня своим Хозяином и в последний раз чмокни мой член, тогда я запихаю его тебе в глотку и устрою твоему лицу настоящий развратный раттинг!)]
 	</p>
 	<p>
-		[pc.speech(Yes, Master,)] you submissively reply, before planting one last big, wet kiss on the head of your Master's cock.
+		[pc.speech(Да, Господин,)] — покорно отвечаешь ты, прежде чем оставить последний долгий, влажный поцелуй на головке члена своего Господина.
 	</p>
 	<p>
-		Letting out an amused grunt, the chubby rat-boy grabs the back of your head, before slamming your face down into his groin. Not caring at all about the gargled splutters which you start to make as you suddenly find your throat filled with rat-cock, your Master sets about roughly fucking your face...
+		Издав довольное ворчание, пухлый крысопацан хватает тебя за затылок и с силой вжимает лицом в свою пах. Совершенно не заботясь о том, как ты начинаешь захлёбываться и булькать, когда твою глотку внезапно заполняет крысиный член, твой Хозяин принимается грубо трахать тебе рот...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MURK_SEX_SUB_HANDJOB"><![CDATA[
 	<p>
-		Finding yourself madly turned on at the thought of being dominated by this chubby rat-boy, you let out a horny whine and tell him that you want him to fuck you. Letting out a rumbling chuckle as he hears what it is you're saying, Murk teases,
+		Понимая, что мысль о том, что этот пухлый крысопацан будет доминировать над тобой, приводит тебя в дикое возбуждение, ты издаешь похотливый стон и говоришь, что хочешь, чтобы он тебя трахнул. Услышав твои слова, Мёрк издает утробный смешок и дразнит тебя,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_murkCaptiveBlowjob))
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good it were when I was fuckin' yer face an' trainin' ya ta be one o' me milkers? Heh-heh-heh! Well, slut, seein' as yer 'oles ain't available fer me ta fuck, you's gonna 'ave ta settle fer jerkin' me off! Get down an' start strokin' me cock!)]
+			 [murk.speech(Чё? Не можешь перестать думать о том, как сладко было, когда я трахал тебе рот и дрессировал тебя, чтобы ты стала одной из моих молочных козочек? Хе-хе-хе! Ну что, шлюшка, раз твои дырочки сейчас заняты, придётся тебе довольствоваться тем, что будешь дрочить мне! Падай на колени и начинай ласкать мой член!)]
 		#ELSE
-			 [murk.speech(Wot? Ya can't stop thinkin' about 'ow good me fat cock would feel stuffed deep inta one o' yer 'oles? Heh-heh-heh! Well, seein' as yer 'oles ain't available fer me ta fuck, you's gonna 'ave ta settle fer jerkin' me off! Get down an' start strokin' me cock!)]
+			 [murk.speech(Че? Не можешь перестать думать о том, как охеренно мой жирный член будет забит глубоко в одну из твоих дырок? Хе-хе-хе! Ну, раз твои дырки пока не в моем распоряжении, придется тебе обойтись тем, что ты его отсосешь! А ну, опускайся на колени и начинай ласкать мой член!)]
 		#ENDIF
 	</p>
 	<p>
-		Doing as you're told, you drop down onto the floor in front of Murk, before leaning in and starting to stroke his sheathed cock. Quickly pushing out and rising to full erection in response to your attention, Murk's huge, fat cock starts leaking a steady stream of musky precum, and you can't help but use it as extra lubrication as he grunts, [murk.speech(That's it, slut! Keep on goin'!)]
+	Выполняя приказ, ты опускаешься на пол перед Мёрком, наклоняешься к нему и начинаешь ласкать его спрятанный в складках плоть. В ответ на твои ласки он быстро выталкивает член, и тот встает во всю мощь; огромный, толстый агрегат Мёрка начинает источать непрерывную струю мускусистой предэякулята, и ты не можешь удержаться, чтобы не использовать её как дополнительную смазку, пока он хрипит: [murk.speech(Вот так, сучка! Продолжай!)]
 	</p>
 	<p>
-		Doing as you're told, you continue stroking Murk's cock, eager to bring him to an orgasm and drain the cum from his huge balls...
+	Выполняя приказ, ты продолжаешь ласкать член Мёрка, стремясь довести его до оргазма и выжать всё семя из его огромных яиц...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MURK_ALONE_LEAVE"><![CDATA[
 	<p>
-		Deciding that you don't want anything more to do with [murk.name] for the time being, you turn around and swiftly exit the room. Shutting the door behind you, you make your way back over to Epona, and after telling her that everything went ok, you [pc.step] back around to the other side of her counter and head off into the Gambling Den, wondering what to do next...
+	Решив, что на данный момент ты не хочешь иметь ничего общего с [murk.name], ты разворачиваешься и быстро выходишь из комнаты. Закрыв за собой дверь, ты направляешься обратно к Эпоне, и, сообщив ей, что всё прошло нормально, ты [pc.step] обходишь стойку с другой стороны и уходишь в Игорный притон, раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -956,13 +950,13 @@
 	<p>
 		Wanting [murk.name] to fully understand why what [murk.she] did was wrong, you spend a good amount of time lecturing [murk.herHim] on the harm [murk.she] caused to innocent people during [murk.her] time as one of Vengar's gang members.
 		#IF(murk.isFeminine())
-			 Having become far more submissive since being feminised, she gives you her full attention, and after you've asked her several times about whether she regrets what she's done, you're left with the impression that she's legitimately sorry for her past behaviour.
+			 С тех пор как она подверглась феминизации, она стала куда покорнее. Она уделяет тебе всё своё внимание, и после того как ты несколько раз спросил её, жалеет ли она о содеянном, у тебя остается впечатление, что она искренне раскаивается в своём прошлом поведении.
 		#ELSE
-			 Scowling and grunting at you, Murk shows no sign of being sorry for what he's done, and although you ask him several times to apologise, he outright refuses to do as you say.
+			 Мурк лишь хмурится и ворчит на тебя, ни капли не раскаиваясь в своих поступках; и хотя ты несколько раз просишь его извиниться, он наотрез отказывается подчиняться твоим приказам.
 		#ENDIF
 	</p>
 	<p>
-		After half an hour of lecturing [murk.herHim], you eventually feel as though you've had enough, and after telling the [murk.race] one last time to think about what [murk.sheHas] done, you [pc.step] back and wonder what to do next...
+		После получаса нотаций [murk.herHim] ты наконец чувствуешь, что с тебя хватит. В последний раз велев [murk.race] хорошенько обдумать то, что [murk.sheHas] натворила, ты [pc.step] назад и гадаешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -972,30 +966,30 @@
 	
 	<htmlContent tag="MURK_SPANKING"><![CDATA[
 	<p>
-		Wanting to teach [murk.name] a lesson for all of the bad things [murk.sheHas] done in the past, you grab hold of [murk.her] by the arm and forcefully push [murk.herHim] down over the pile of cushions [murk.sheHas] been using as a chair. Caught off-guard, the [murk.race] 
+		Желая проучить [murk.name] за всё то зло, что [murk.sheHas] совершала в прошлом, ты хватаешь [murk.her] за руку и с силой толкаешь [murk.herHim] на кучу подушек, которые [murk.sheHas] использовала вместо стула. Застигнутая врасплох, [murk.race] 
 		#IF(murk.isFeminine())
-			 lets out a surprisingly erotic moan and squeals, [murk.speech(~Ooh!~ You's gonna punish me?! Come on then, gimme a good spankin'!)]
+			 издает удивительно эротичный стон и визжит: [murk.speech(~Ооо!~ Ты решил меня наказать?! Ну давай же, отшлепай меня как следует!)]
 		#ELSE
-			 lets out a startled grunt and shouts, [murk.speech(Get yer filthy 'ands off o' me! You's can't treat me like dis!)]
+			 издает испуганный хрип и кричит: [murk.speech(Убери свои грязные лапы! Нельзя со мной так обращаться!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(murk.isFeminine())
-			Ignoring [murk.namePos] horny response, you bend her over the cushions and start delivering a series of sharp slaps to her exposed ass. Lifting her tail and squealing in a mixture of pain and pleasure, the [murk.race] quite clearly loves this sort of humiliation, and you can't help but notice how her [murk.pussy+] is soon dripping wet from excitement.
+			 Игнорируя похотливую реакцию [murk.namePos], ты нагибаешь её над подушками и начинаешь отвешивать серию звонких шлепков по её обнаженной заднице. Приподнимая хвост и визжа от смеси боли и удовольствия, [murk.race] явно наслаждается подобным унижением, и ты невольно замечаешь, как её [murk.pussy+] быстро намокает от возбуждения.
 		#ELSE
-			Ignoring [murk.namePos] insolent response, you bend him over the cushions and start delivering a series of sharp slaps to his exposed ass. Squirming and struggling against you, the [murk.race] lets out an angry cry each time you slap his butt, but despite his resistance, you're easily able to hold him in place and finish administering his punishment.
+			Игнорируя [murk.namePos] дерзкий ответ, ты нагибаешь его над подушками и начинаешь отвешивать серию звонких шлепков по его обнаженной заднице. Извиваясь и пытаясь вырваться, [murk.race] вскрикивает от ярости при каждом твоем ударе, но, несмотря на его сопротивление, тебе легко удается удержать его на месте и довести наказание до конца.
 		#ENDIF
 	</p>
 	<p>
-		Only once her ass has been thoroughly spanked do you [pc.step] back and bring an end to [murk.namePos] beating, which causes
+		Лишь когда её задница будет хорошенько отшлепана, ты [pc.step] отходишь назад, прекращая [murk.namePos], что заставляет
 		#IF(murk.isFeminine())
-			 her to look back at you and breathlessly pant, [murk.speech(Yeah... I's been a bad girl... Now gimme a good, 'ard fuckin'!)]
+			 её оглянуться на тебя и задыхаясь прохрипеть: [murk.speech(Да... я была плохой девочкой... А теперь дай мне хорошенько, жестко оттрахать!)]
 		#ELSE
-			 him to look back at you and furiously scowl, [murk.speech(Ya fuckin' bitch! Don't ya ever do that ta me again!)]
+			 его оглянуться на тебя и яростно свирепо зыркнуть: [murk.speech(Ах ты сука! Только попробуй еще раз так со мной сделать!)]
 		#ENDIF
 	</p>
 	<p>
-		Looking down at the [murk.race], you wonder what to do with [murk.herHim] next...
+		Глядя на [murk.race], ты раздумываешь, что делать с [murk.herHim] дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -1005,39 +999,39 @@
 	
 	<htmlContent tag="AFTER_MURK_SEX_AS_DOM"><![CDATA[
 	<p>
-		Having had your fun with [murk.name], you [pc.step] back and allow [murk.herHim] to collapse to the floor in front of you. As [murk.she] sinks down onto the tatty old cushions which serve as [murk.her] chair, the [murk.race] pants,
+		Насладившись [murk.name], ты [pc.step] назад, позволяя [murk.herHim] рухнуть на пол перед тобой. Пока [murk.she] оседает на потрепанные старые подушки, служащие ей [murk.her], [murk.race] тяжело дышит,
 		#IF(murk.isFeminine())
-			 [murk.speech(That were real good... Come back an' fuck me again soon...)]
+			 [murk.speech(Это было охрененно... Приходи и трахни меня снова поскорее...)]
 		#ELSE
-			 [murk.speech(Ya bitch... I's supposed ta... be da one in charge...)]
+			 [murk.speech(Сука... Вообще-то... это я должен был... здесь главным быть...)]
 		#ENDIF
 	</p>
 	<p>
-		After quickly getting your things back in order, you look down to see that [murk.name] is still heavily panting and completely worn-out from the sex. Realising that you're not going to be able to get anything out of [murk.herHim] until later, you decide to leave and come back at another time...
+		Быстро приведя свои вещи в порядок, ты смотришь вниз и видишь, что [murk.name] всё еще тяжело дышит и совершенно измотана после секса. Понимая, что из [murk.herHim] тебе вряд ли удастся чего-то добиться до поры до времени, ты решаешь уйти и вернуться позже...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_MURK_SEX_AS_SUB"><![CDATA[
 	<p>
-		Having had his fun with you, your Master steps back and lets out a triumphant grunt, [murk.speech(You's ain't nothin' but me cock-sleeve! Tell me that ya love me stinkin' cock, ya dumb bitch!)]
+		Насладившись тобой, твой Хозяин отстраняется и издает торжествующий хрип: [murk.speech(Ты всего лишь чехол для моего члена! Скажи, что любишь мой вонючий член, тупая сучка!)]
 	</p>
 	<p>
-		Sinking down onto the floor and panting form exertion, you do as the chubby [murk.race] says and sigh, [pc.speech(Yes, Master... I love your big, fat cock...)]
+		Оседая на пол и тяжело дыша от усталости, ты делаешь так, как велит пухлый [murk.race], и вздыхаешь: [pc.speech(Да, Хозяин... Я люблю твой большой, жирный член...)]
 	</p>
 	#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
 		<p>
-			Chuckling in delight at your display of submission, your Master steps up in front of you and pushes his musky cock into your face. Grabbing the back of your head and pulling your mouth down into his groin, he grunts, [murk.speech(That's me good slut! Now give me fat cock a big kiss, then fuck off an' leave me alone; I's wantin' ta get some rest before that horse bitch makes me do some work.)]
+			Весело посмеиваясь над твоим смирением, твой Хозяин подходит к тебе вплотную и сует свой мускусный член тебе в лицо. Схватив тебя за затылок и прижимая рот к своему паху, он хрипит: [murk.speech(Вот это моя хорошая шлюшка! А теперь чмокни мой жирный член, а потом вали отсюда и оставь меня в покое; хочу прикорнуть, пока та кобылья сука не заставила меня вкалывать.)]
 		</p>
 		<p>
-			Eagerly doing as you're told, you plant a big, wet kiss on the head of your Master's fat cock. Letting out an amused grunt, the [murk.name] then collapses down onto his pile of tatty old cushions, before pointing at the door and telling you to leave... 
+			С готовностью выполняя приказ, ты оставляешь большой влажный поцелуй на головке жирного члена своего Хозяина. Издав довольный хрип, [murk.name] плюхается на свою кучу старых облезлых подушек, а затем указывает на дверь, веля тебе убираться... 
 		</p>
 	#ELSE
 		<p>
-			Chuckling in delight at your display of submission, your Master waddles around behind you and delivers a stingingly-sharp slap to your ass. Taking a moment to grope you and rub his chubby fingers over your groin, he grunts, [murk.speech(That's me good slut! Now thank me fer lettin' ya 'ave sum fun with me cock, then fuck off an' leave me alone; I's wantin' ta get some rest before that horse bitch makes me do some work.)]
+			Весело посмеиваясь над твоим смирением, твой Хозяин обходит тебя сзади и отвешивает звонкую, болезненную пощечину по заднице. На мгновение задержавшись, чтобы ощупать тебя и потереть пухлыми пальцами твой пах, он хрипит: [murk.speech(Вот это моя хорошая шлюшка! А теперь поблагодари меня за то, что позволил тебе поразвлечься с моим членом, а потом вали отсюда и оставь меня в покое; хочу прикорнуть, пока та кобылья сука не заставила меня вкалывать.)]
 		</p>
 		<p>
-			Eagerly doing as you're told, you submissively thank your Master for letting you pleasure his fat cock. Letting out an amused grunt, the [murk.name] then collapses down onto his pile of tatty old cushions, before pointing at the door and telling you to leave... 
+		Запоем исполняя каждое его повеление, ты покорно благодаришь своего Хозяина за то, что он позволил тебе ласкать его жирный член. Издав довольное хрюканье, [murk.name] рушится на свою кучу поношенных подушек, а затем указывает на дверь, веля тебе убираться...
 		</p>
 	#ENDIF
 	]]>
@@ -1045,14 +1039,14 @@
 	
 	<htmlContent tag="AFTER_MURK_SEX_DOM_LEAVE"><![CDATA[
 	<p>
-		Turning around and leaving the exhausted [murk.race] panting on the floor, you swiftly exit the room. Shutting the door behind you, you make your way back over to Epona, and after telling her that everything went ok, you [pc.step] back around to the other side of her counter and head off into the Gambling Den, wondering what to do next...
+	Развернувшись и оставив изнуренного, тяжело дышащего на полу [murk.race], ты быстро выходишь из комнаты. Закрыв за собой дверь, ты направляешься обратно к Эпоне и, сообщив ей, что всё прошло успешно, ты [pc.step] обходишь её прилавок и уходишь в Игорный притон, раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_MURK_SEX_SUB_LEAVE"><![CDATA[
 	<p>
-		Not wanting to annoy your Master by loitering around, you do as he commands and swiftly exit the room. Shutting the door behind you, you make your way back over to Epona, and after telling her that everything went ok, you [pc.step] back around to the other side of her counter and head off into the Gambling Den, wondering what to do next...
+	Не желая раздражать Хозяина своим бездельем, ты беспрекословно выполняешь его приказ и быстро выходишь из комнаты. Закрыв за собой дверь, ты направляешься обратно к Эпоне и, сообщив ей, что всё прошло успешно, ты [pc.step] обходишь её прилавок и уходишь в Игорный притон, раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -1062,20 +1056,20 @@
 	
 	<htmlContent tag="MURK_FEMINISE"><![CDATA[
 	<p>
-		Deciding to make use of the feminising potion which Epona told you about, you start to look over the top shelves which line the room. Ignoring Murk's rude questioning about what you're doing, you soon find a dusty old bottle of bright pink liquid hidden behind a stack of papers. Retrieving this potion, you advance towards the crass rat-boy with the intent of forcing him to drink it.
+	Решив воспользоваться феминизирующим зельем, о котором рассказывала Эпона, ты начинаешь осматривать верхние полки, расставленные вдоль стен. Игнорируя грубые расспросы Мёрка о том, что ты там высматриваешь, ты вскоре находишь за стопкой бумаг пыльную старую бутылочку с ярко-розовой жидкостью. Схватив это зелье, ты направляешься к наглому крысопацану с намерением заставить его выпить его.
 	</p>
 	<p>
-		[murk.speech('Ey! Wot's that fuckin' bottle ya got! Get it away from me, ya fuckin' bitch! Fuck off!)] he curses, kicking out at you with his short, chubby legs as you bend down and take the stopper out of the bottle. Wrestling with him for a moment, you easily overpower the chubby rat-boy, and before you have a chance to think twice about your chosen course of action, you're forcing the bottle's neck into Murk's mouth and forcing him to drink down the transformative potion. Despite his efforts to spit out the bright pink liquid, he ends up swallowing a good amount of it, and once the bottle's been completely emptied, you step back and look down at Murk as he starts to transform...
+		[murk.speech('Эй! Это еще что за гребаная бутылка! Убери ее от меня, сучка! Отвали!)] — ругается он, пиная тебя своими короткими пухлыми ножками, пока ты наклоняешься, чтобы вытащить пробку. Поборившись с ним мгновение, ты легко одолеваешь пухлого крысоподобного мальчишку, и прежде чем ты успеваешь дважды обдумать свои действия, ты уже запихиваешь горлышко бутылки в рот Мёрку, заставляя его выпить трансформирующее зелье. Несмотря на все попытки выплюнуть ярко-розовую жидкость, он в итоге проглатывает добрую часть, и как только бутылка оказывается пуста, ты отступаешь на шаг и смотришь сверху вниз на Мёрка, который начинает меняться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MURK_FEMINISE_END"><![CDATA[
 	<p>
-		[murk.speech(I's feelin' funny... 'An horny...)] the newly-transformed Murk pants as she lies back on her cushions. While still just as short and chubby as she was a few minutes ago, the rat-girl before you is now unmistakably feminine, and in place of a huge cock, she has a wet pussy. Reaching up to grope her [murk.breastSize] breasts, she looks up at you and submissively whines, [murk.speech(I ain't feelin' like I used to... Please, I... I's wantin' ya ta fuck me! Come on, please!)]
+		[murk.speech(Ой, как-то странно всё... И как-то... хочется...)] — тяжело дышит новообращенная Мёрк, откидываясь на подушки. Хотя она всё так же коротка и пухла, как и несколько минут назад, крысодевочка перед тобой теперь неоспоримо женственна, а на месте огромного хера у неё теперь влажная киска. Протягивая руки, чтобы ощупать свою [murk.breastSize] грудь, она смотрит на тебя и покорно скулит: [murk.speech(Я уже не та, что прежде... Пожалуйста, я... я хочу, чтобы ты трахнул меня! Ну же, пожалуйста!)]
 	</p>
 	<p>
-		The potion has quite clearly altered Murk's mind, and as you grin down at her, you wonder whether you should give her what she wants...
+		Зелье явно изменило разум Мёрка, и, ухмыляясь, глядя на неё сверху вниз, ты задаешься вопросом: стоит ли дать ей то, чего она так жаждет...
 	</p>
 	]]>
 	</htmlContent>
@@ -1086,25 +1080,25 @@
 	<htmlContent tag="MURK_SUBMIT_ACCEPT"><![CDATA[
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_murkMaster) || game.getDialogueFlags().hasFlag(FLAG_eponaMurkSubmitted))
-			Unable to resist your Master's demand, you obediently drop down onto your knees before him and shuffle forwards towards his groin. Letting out a deep grunt as he sees that you're obeying him, the chubby rat-boy sneers,
+			Не в силах противиться требованию своего Господина, ты послушно опускаешься перед ним на колени и подползаешь ближе к его паху. Издав глубокий хрип при виде того, что ты повинуешься, пухлый крысомальчишка скалится,
 		#ELSE
-			Unable to resist Murk's demand, you obediently drop down onto your knees before him and shuffle forwards towards his groin. Letting out a surprised grunt as he sees that you're actually doing what he says, the chubby rat-boy sneers,
+			Не в силах противиться требованию Мёрка, ты послушно опускаешься перед ним на колени и подползаешь ближе к его паху. Услышав твой удивленный хрип, когда он понимает, что ты и впрямь слушаешься, пухлый крысоподобный мальчишка ухмыляется:
 		#ENDIF
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			 [murk.speech(Come on, slut, give me fat cock a nice big kiss! Heh-heh-heh!)]
+			 [murk.speech(Давай, шлюшка, чмокни мой толстый член хорошенько! Хе-хе-хе!)]
 		#ELSE
-			 [murk.speech(Come on, slut, give me fat cock sum attention! Heh-heh-heh!)]
+			 [murk.speech(Давай, шлюшка, удели внимание моему толстому члену! Хе-хе-хе!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-			Doing as you're told, you lean forwards and plant a big, wet kiss on Murk's sheathed cock. The musky smell of his groin overwhelms your senses as his fat shaft quickly rises into a full erection, and you can't help but let out a hungry whine as you eagerly lap up the salty precum which starts to ooze from the tip.
+			Повинуясь приказу, ты наклоняешься вперед и оставляешь большой влажный поцелуй на спрятанном в складках плоти члене Мёрка. Мускусный запах его паха дурманит голову, пока его толстый ствол быстро наливается кровью и встает в полную эрекцию; ты невольно издаешь голодный скулящий звук, жадно слизывая соленую предсеменную жидкость, что начинает сочиться с кончика.
 		#ELSE
-			Doing as you're told, you lean forwards and start to lovingly stroke Murk's sheathed cock. The musky smell of his groin overwhelms your senses as his fat shaft quickly rises into a full erection, and you can't help but let out a hungry whine as you eagerly smear his salty precum over your [pc.fingers+].
+			Повинуясь приказу, ты наклоняешься вперед и начинаешь ласково поглаживать спрятанный в складках плоти член Мёрка. Мускусный запах его паха дурманит голову, пока его толстый ствол быстро наливается кровью и встает в полную эрекцию; ты невольно издаешь голодный скулящий звук, с жадностью размазывая его соленую предсеменную жидкость по своей [pc.fingers+].
 		#ENDIF
 	</p>
 	<p>
-		Letting out yet another deep grunt, Murk scratches his chubby belly and sneers, [murk.speech(That's it, slut! You's me good submissive bitch, ain't ya? Now ta use ya ta 'elp me empty me balls! Heh-heh-heh!)]
+		Издав еще один глубокий хрип, Мёрк чешет свой пухлый живот и скалится: [murk.speech(Вот так, шлюшка! Ты ведь моя хорошая покорная сучка, а? А теперь используй свой ротик, чтобы помочь мне опустошить яйца! Хе-хе-хе!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -1114,10 +1108,10 @@
 	
 	<htmlContent tag="MURK_SUBMIT_REFUSE"><![CDATA[
 	<p>
-		Not wanting to make a habit of submitting to this foul rat-boy, you refuse to do as Murk commands and tell him that he'd better watch his tone of voice. Grunting in annoyance as he sees that you're no longer willing to submit to him, the chubby rat-boy sneers, [murk.speech(You's an insolent bitch, ain't ya?! Fuck off if ya ain't 'ere ta service me cock!)]
+		Не желая привыкать к подчинению этому мерзкому крысопаху, ты отказываешься выполнять приказы Мёрка и заявляешь, что ему стоит следить за своим тоном. Раздраженно хмыкнув при виде того, что ты больше не готова покорно ему подчиняться, пухлый крысопах скалится: [murk.speech(А ты, значит, дерзкая сучка, а?! Проваливай нахер, если пришла сюда не для того, чтобы обслуживать мой член!)]
 	</p>
 	<p>
-		Glaring down at him, you wonder what to do with Murk now...
+		Сверля его взглядом, ты гадаешь, что теперь делать с Мёрком...
 	</p>
 	]]>
 	</htmlContent>

@@ -5,226 +5,219 @@
 	
 	<htmlContent tag="ENTRANCE_PACIFIED"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and gaze lustfully at your body as the leader calls out, [npc.speechNoEffects(Ya can come an' go as yer please, but I can tell yer hungry for imp #IFnpc.hasPenis()#THENcock#ELSEpussy#ENDIF, so why don'cha get down on yer knees and put that mouth o' yours to use?)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и по мере приближения ты невольно задаешься вопросом, позволят ли их хлипкие конструкции вообще закрыться. Два альфа-беса, стоящие на страже, замечают твое приближение и с похотливым вожделением оглядывают твое тело, пока предводитель выкрикивает: [npc.speechNoEffects(Можешь приходить и уходить когда вздумается, но я вижу, что ты изголодалась по бесам, #IFnpc.hasPenis()#THENcock#ELSEpussy#ENDIF, so why don'cha get down on yer knees and put that mouth o' yours to use?)]
 	</p>
 	<p>
-		The other alpha-imp giggles as [npc2.her] superior says this, and, thrusting [npc2.her] hips in your direction, [npc2.she] adds, [npc2.speechNoEffects(Yeah, come on, slut! #IF(npc2.hasPenis())Suck my fuckin' cock already!#ELSEGet yer tongue in my fuckin' cunt already!#ENDIF)]
+		Второй альфа-бес хихикает, слушая слова [npc2.her] старшего, и, виляя [npc2.her] бедрами в твою сторону, [npc2.she] добавляет: [npc2.speechNoEffects(Ага, давай, шлюшка!) #IF(npc2.hasPenis())Suck my fuckin' cock already!#ELSEGet yer tongue in my fuckin' cunt already!#ENDIF)]
 	</p>
 	<p>
-		Ignoring the imps' taunts, you hold your head up high as they reluctantly step aside to let you pass. Your way now unobstructed, you move to continue onwards, trying your best to filter out the imps' lewd taunts as you move past them...
+		Игнорируя насмешки бесов, ты высоко держишь голову, пока они неохотно расступаются, пропуская тебя. Теперь путь свободен, и ты движешься дальше, стараясь не обращать внимания на похотливые выкрики бесов, когда проходишь мимо...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_PACIFIED_DEMON"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and shuffle around nervously as the leader calls out, [npc.speechNoEffects(Oh, 'ey, it's the #IF(pc.isFeminine())succubus#ELSEincubus#ENDIF again... Y-Yer can come an' go as yer please, ok? J-Just don' cause any trouble... Please...)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и по мере приближения ты невольно задаешься вопросом, позволят ли их хлипкие конструкции вообще закрыться. Два альфа-беса, стоящие на страже, замечают твое приближение и начинают нервно переминаться с ноги на ногу, когда предводитель выкрикивает: [npc.speechNoEffects(О, гляньте-ка, это же #IF(pc.isFeminine())succubus#ELSEincubus#ENDIF again... Y-Yer can come an' go as yer please, ok? J-Just don' cause any trouble... Please...)]
 	</p>
 	<p>
-		The other alpha-imp hastily steps behind [npc2.her] superior, using [npc.herHim] as a shield as [npc2.she] adds, [npc2.speechNoEffects(W-We're just followin' orders, we didn't mean ta get in yer way!)]
+		Второй альфа-бес поспешно прячется за спину [npc2.her] старшего, используя [npc.herHim] как щит, пока [npc2.she] добавляет: [npc2.speechNoEffects(М-мы просто выполняем приказы, мы не хотели вставать у тебя на пути!)]
 	</p>
 	<p>
-		Ignoring the imps' cowardly words, you hold your head up high as they hurriedly move aside to let you pass. Your way now unobstructed, you move to continue onwards, trying your best to filter out the imps' pathetic apologies as you stride past them...
+		Игнорируя трусливые слова бесов, ты высоко держишь голову, пока они поспешно расступаются, давая тебе пройти. Теперь путь свободен, и ты двинешься дальше, стараясь не обращать внимания на их жалкие извинения, пока перешагиваешь через них...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_PACIFIED_BY_SEX"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and gaze lustfully at your body as the leader calls out, [npc.speechNoEffects(Ya can come an' go as yer please, but I can tell yer still hungry for imp #IFnpc.hasPenis()#THENcock#ELSEpussy#ENDIF, so why don'cha get down on yer knees and put that mouth o' yours to use again?)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и когда ты приближаешься, невольно задумываешься, позволят ли их хлипкие конструкции вообще закрыться. Двое альфа-бесов, стоящих на часах, замечают твое приближение и с похотью разглядывают твое тело, пока вожак выкрикивает: [npc.speechNoEffects(Можешь приходить и уходить когда вздумается, но я вижу, что ты всё еще голодна до бесов, #IFnpc.hasPenis()#THENcock#ELSEpussy#ENDIF, so why don'cha get down on yer knees and put that mouth o' yours to use again?)]
 	</p>
 	<p>
-		The other alpha-imp giggles as [npc2.her] superior says this, and, thrusting [npc2.her] hips in your direction, [npc2.she] adds, [npc2.speechNoEffects(Yeah, come on, slut! #IFnpc2.hasPenis()#THENSuck my fuckin' cock already!#ELSEGet yer tongue in my fuckin' cunt already!#ENDIF We all know yer desperate for it!)]
+		Второй альфа-бес хихикает, слушая слова [npc2.her] старшего, и, виляя [npc2.her] бедрами в твою сторону, [npc2.she] добавляет: [npc2.speechNoEffects(Ага, давай, шлюшка!) #IFnpc2.hasPenis()#THENSuck my fuckin' cock already!#ELSEGet yer tongue in my fuckin' cunt already!#ENDIF We all know yer desperate for it!)]
 	</p>
 	<p>
-		Ignoring the imps' taunts, you hold your head up high as they reluctantly step aside to let you pass. Your way now unobstructed, you move to continue onwards, trying your best to filter out the imps' lewd taunts as you move past them...
+		Игнорируя насмешки бесов, ты высоко держишь голову, пока они неохотно расступаются, пропуская тебя. Теперь путь свободен, и ты движешься дальше, стараясь не обращать внимания на похотливые выкрики бесов, когда проходишь мимо...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_PACIFIED_BY_SEX_DEMON"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and gaze lustfully at your body as the leader calls out, [npc.speechNoEffects(Ya can come an' go as yer please, #IF(pc.isFeminine())succubus#ELSEincubus#ENDIF. Yer still 'ungry fer imp #IFnpc.hasPenis()#THENcock#ELSEpussy#ENDIF? I bet'cha are! Go on, get down on yer knees and put that mouth o' yours to use again!)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и когда ты приближаешься, невольно задумываешься, позволят ли их хлипкие конструкции вообще закрыться. Двое альфа-бесов, стоящих на часах, замечают твое приближение и с похотью разглядывают твое тело, пока вожак выкрикивает: [npc.speechNoEffects(Можешь приходить и уходить когда вздумается, #IF(pc.isFeminine())succubus#ELSEincubus#ENDIF. Yer still 'ungry fer imp #IFnpc.hasPenis()#THENcock#ELSEpussy#ENDIF? I bet'cha are! Go on, get down on yer knees and put that mouth o' yours to use again!)]
 	</p>
 	<p>
-		The other alpha-imp giggles as [npc2.her] superior says this, and, thrusting [npc2.her] hips in your direction, [npc2.she] adds, [npc2.speechNoEffects([pc.A_race] that goes down on imps, and not the other way round! Heh, so come on, demon. #IFnpc2.hasPenis()#THENSuck my fuckin' cock already!#ELSEGet yer tongue in my fuckin' cunt already!#ENDIF We all know yer desperate for it!)]
+		Другой альфа-бес хихикает, когда [npc2.her] говорит это, и, толкая [npc2.her] бедрами в твою сторону, [npc2.she] добавляет: [npc2.speechNoEffects([pc.A_race] это бесы должны ласкать тебя, а не наоборот! Хех, так что давай, демон. #IFnpc2.hasPenis()#THENSuck my fuckin' cock already!#ELSEGet yer tongue in my fuckin' cunt already!#ENDIF We all know yer desperate for it!)]
 	</p>
 	<p>
-		Ignoring the imps' taunts, you remark upon how quickly they lost their respect towards you as they reluctantly step aside to let you pass. Your way now unobstructed, you move to continue onwards, trying your best to filter out the imps' lewd taunts as you move past them...
+		Игнорируя насмешки бесов, ты замечаешь, как быстро они потеряли к тебе уважение, неохотно расступаясь, чтобы дать тебе пройти. Теперь путь свободен, и ты двинешься дальше, стараясь не слушать их похотливые подколки, пока проходишь мимо...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_DESERTED"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The pair of alpha-imp guards who once stood here have long since run away, leaving the entrance to the fortress completely undefended.
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и по мере приближения ты невольно задаешься вопросом: а закроются ли они вообще с такой паршивой кладкой? Пара альфа-бесов, что охраняли здесь пост, давно сбежала, оставив вход в крепость совершенно беззащитным.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_DESERTED_GUARD_RETURN_WARNING"><![CDATA[
 	<p>
-		[style.italicsBad(If you choose to leave the fortress now, you can be sure that there will be new guards at the gate when you return!)]
+		[style.italicsBad(Если ты решишь покинуть крепость прямо сейчас, будь уверен: когда ты вернешься, у ворот уже будут новые стражники!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_DEMON"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and shuffle around nervously as the leader calls out, [npc.speechNoEffects('Ey! You! S-Stop right there! Y-You ain't comin' close to our base and gettin' away with it!)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и по мере приближения ты невольно задаешься вопросом: а закроются ли они вообще с такой паршивой кладкой? Двое альфа-бесов, стоящих на карауле, замечают твое приближение и начинают нервно переминаться с ноги на ногу, пока их предводитель выкрикивает: [npc.speechNoEffects('Эй! Ты! С-стой на месте! Т-тебе не видать нашего лагеря, если так просто к нему подберешься!)]
 	</p>
 	<p>
-		Although you can tell that these imps are ready for a fight, they seem quite scared of you. To confirm what you suspected, the second imp turns to [npc2.her] leader and hisses, [npc2.speechNoEffects(H-Hol' on! [pc.SheIs] [pc.a_race]! W-We can't be fighin' a demon! [pc.She]'ll beat us easy!)]
+		Хотя ты и видишь, что эти бесы готовы к драке, они выглядят чертовски напуганными. Чтобы подтвердить твои подозрения, второй бес поворачивается к [npc2.her] лидеру и шипит: [npc2.speechNoEffects(П-погоди-ка! [pc.SheIs] [pc.a_race]! Н-нам не сцежиться с демоном! [pc.She] нас мигом размажет!)]
 	</p>
 	<p>
-		[npc.speechNoEffects(An' we'll get beaten' fer sure if tha boss finds out we didn't do as we're told, ya idiot!)] the leader snaps back, before turning towards you again. [npc.speechNoEffects(S-So ya gonna surrender nice an' easy, right?! D-Don't want us beatin' you down, do ya?!)]
+		[npc.speechNoEffects(И нам точно прилетит, если босс узнает, что мы не сделали, как велели, придурок!)] — огрызается вожак, прежде чем снова повернуться к тебе. [npc.speechNoEffects(Т-так ты сдашься по-хорошему, да?! Н-не хочешь же ты, чтобы мы тебя отделали?!)]
 	</p>
 	<p>
-		The imps are quite clearly terrified of standing against a demon, and you imagine that it wouldn't take much to intimidate them into surrendering to you. Then again, you could always just give them the fight they expect...
+		Бесы явно в ужасе от мысли противостоять демону, и ты понимаешь, что запугать их и заставить сдаться не составит труда. С другой стороны, ты всегда можешь дать им ту битву, на которую они рассчитывают...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_ELEMENTAL"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and shuffle around nervously as the leader calls out, [npc2.speechNoEffects('Ey! You two! S-Stop right there! Y-You ain't comin' close to our base and gettin' away with it!)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и по мере приближения ты невольно задаешься вопросом: а смогут ли они вообще закрыться при такой халтурной постройке? Двое альфа-бесов, стоящих на страже, замечают твое приближение и нервно переминаются с ноги на ногу, когда их предводитель выкрикивает: [npc2.speechNoEffects(Эй! Вы двое! С-стойте на месте! В-вам так просто не подойти к нашей базе и уйти живыми!)]
 	</p>
 	<p>
-		Although you can tell that these imps are ready for a fight, they seem quite scared of your elemental, [npc.name]. To confirm what you suspected, the second imp turns to [npc3.her] leader and hisses, [npc3.speech(H-Hol' on! [pc.SheHas] got one o' them arcane thingies! W-We can't be fighin' that!)]
+		Хотя ты и видишь, что эти бесы готовы к драке, они явно напуганы твоим элементалем, [npc.name]. Чтобы подтвердить твои догадки, второй бес поворачивается к лидеру [npc3.her] и шипит: [npc3.speech(П-погоди! У [pc.SheHas] есть одна из этих аркана-штук! Н-нам не сладить с такой штуковиной!)]
 	</p>
 	<p>
-		[npc.speechNoEffects(An' we'll get beaten' fer sure if tha boss finds out we didn't do as we're told, ya idiot!)] the leader snaps back, before turning towards you again. [npc.speechNoEffects(S-So ya gonna surrender nice an' easy, right?! D-Don't want us beatin' you two down, do ya?!)]
+		[npc.speechNoEffects(И нас точно прибьют, если босс узнает, что мы не сделали, как велели, идиот!)] — огрызается лидер, прежде чем снова повернуться к тебе. [npc.speechNoEffects(Т-так ты сдашься по-хорошему, да?! Н-не хочешь же ты, чтобы мы тебя отделали?!)]
 	</p>
 	<p>
-		The imps are quite clearly terrified of your summoned elemental, and you imagine that it wouldn't take much to intimidate them into surrendering to you. Then again, you could always just give them the fight they expect...
+		Бесы явно в ужасе от твоего призванного элементаля, и ты понимаешь, что запугать их и заставить сдаться не составит труда. С другой стороны, ты всегда можешь дать им ту битву, на которую они рассчитывают...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE"><![CDATA[
 	<p>
-		The crude wooden gates of the makeshift fortress are wide open, and as you draw near, you find yourself wondering if their shoddy construction would even allow them to be closed. The two alpha-imps on guard duty notice your approach, and, letting out a menacing snarl, the leader calls out, [npc.speechNoEffects('Old it right there, ya scum! You ain't comin' close to our base and gettin' away with it!)]
+		Грубые деревянные ворота импровизированной крепости широко распахнуты, и по мере приближения ты невольно задаешься вопросом: а смогут ли они вообще закрыться при такой паршивой конструкции? Двое альфа-бесов, стоящих на часах, замечают твое приближение, и предводитель, издав угрожающее рычание, выкрикивает: [npc.speechNoEffects('А ну стоять, отброс! Просто так ты к нашей базе не подберешься и не уйдешь живым!)]
 	</p>
 	<p>
-		The other alpha-imp spits on the ground as [npc2.her] superior says this, and, thrusting [npc2.her] hips in your direction, [npc2.she] adds,
+		Второй альфа-бес сплевывает на землю на слова [npc2.her] своего командира и, дерзко выпячивая [npc2.her] бедра в твою сторону, [npc2.she] добавляет:
 		#IF(game.isNonConEnabled())
-			 [npc2.speechNoEffects(Yeah, once we've got yer down, you're gonna be gettin' a taste o' my fuckin' #IF(npc2.hasPenis())cock#ELSEpussy#ENDIF!)]
+			 [npc2.speechNoEffects(Ага, как только мы тебя приложим, ты сразу прочувствуешь вкус моей гребаной #IF(npc2.hasPenis())cock#ELSEpussy#ENDIF!)]
 		#ELSE
-			 [npc2.speechNoEffects(Yeah, we're gonna give yer a right proper beatin'!)]
+			 [npc2.speechNoEffects(Ага, мы устроим тебе знатную взбучку!)]
 		#ENDIF
 	</p>
 	<p>
-		Ignoring the imps' threats, you ready yourself for the fight you were expecting. There are only two of them, so surely this won't be too hard...
+		Игнорируя угрозы бесов, ты готовишься к драке, которую и так ожидал. Их всего двое, так что, наверняка, это не составит большого труда...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LEAVE_FORTRESS"><![CDATA[
 	<p>
-		Having concluded the business you had here, you find yourself stepping out of the fortress's open gateway. Without a backwards glance, you head down the slight incline before you, ready to continue onwards into Submission's tunnels once again.
+		Закончив здесь свои дела, ты выходишь через открытые ворота крепости. Не оглядываясь, ты направляешься вниз по небольшому склону, готовый вновь продолжить свой путь в туннелях Submission.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_GIVE_ORAL"><![CDATA[
 	<p>
-		Wanting to resolve this situation without resorting to violence, you hold up your [pc.hands] to show that you mean no harm, before smirking at the imps and asking, [pc.speech(Is there no way I can get in to speak to your boss? Surely there's <i>something</i> I could do to get on your good side...)]
+		Желая разрешить ситуацию без драки, ты поднимаешь свои [pc.hands], показывая, что не замышляешь ничего дурного, а затем, ухмыляясь бесам, спрашиваешь: [pc.speech(Неужели нет способа войти и поговорить с вашим боссом? Наверняка есть <i>что-то</i>, что я могу сделать, чтобы вы меня зауважали...)]
 	</p>
 	<p>
-		The imps lower their weapons, and, [npc.her] snarl turning into a wicked grin, the leader responds, [npc.speechNoEffects(What yer willin' ta do ta get in 'ere? Eh?)] 
+		Бесы опускают оружие, и, [npc.her] оскалившись в предвкушающей ухмылке, предводитель отвечает: [npc.speechNoEffects(Ну и на что ты готова пойти, чтоб попасть внутрь? А?)] 
 	</p>
 	<p>
-		Licking your [pc.lips+], you step forwards and sink down onto your knees before the two guards. Winking at the leader, you put on your most seductive voice as you make your offer, [pc.speech(How about you let me use my mouth on the two of you?)]
+		Облизывая свои [pc.lips+], ты делаешь шаг вперед и опускаешься на колени перед двумя стражниками. Подмигнув предводителю, ты заводишь свой самый соблазнительный голос, делая предложение: [pc.speech(Как насчет того, чтобы позволить мне поласкать вас обоих ртом?)]
 	</p>
 	<p>
-		[npc.speechNoEffects(Hungry fer imp #IF(npc.hasPenis())cock#ELSEpussy#ENDIF, huh, slut?)] the leader sneers, before stepping forwards and grabbing your chin. Pushing [npc.her] thumb into your mouth, [npc.she] giggles as you obediently suck on it and bat your eyelids at [npc.herHim].
+		[npc.speechNoEffects(Голодная до бесов, #IF(npc.hasPenis())cock#ELSEpussy#ENDIF, huh, slut?)] the leader sneers, before stepping forwards and grabbing your chin. Pushing [npc.her] thumb into your mouth, [npc.she] giggles as you obediently suck on it and bat your eyelids at [npc.herHim].
 		#IF(game.isNonConEnabled())
-			 [npc.speechNoEffects(If only everyone were this eager!)]
+			 [npc.speechNoEffects(Если бы все были такими нетерпеливыми!)]
 		#ELSE
-			 [npc.speechNoEffects(Nice 'an eager, ain't yer?)]
+			 [npc.speechNoEffects(Милая и жадная, а?)]
 		#ENDIF
 	</p>
 	<p>
-		Withdrawing [npc.her] thumb from your mouth, the leader steps to one side, leaving enough room for [npc.her] partner to get in on the action. Immediately moving forwards into the vacant space, [npc2.name] giggles, [npc2.speechNoEffects(Yer gonna be a good [pc.girl] an' #IF(npc2.hasPenis())swallow all me yummy cum#ELSEget that tongue in deep#ENDIF, ain't yer?)]
+		Вытащив [npc.her] большой палец изо рта, предводитель отступает в сторону, освобождая место, чтобы [npc.her] партнер тоже мог поучаствовать. Тут же ныряя в образовавшееся пространство, [npc2.name] хихикает: [npc2.speechNoEffects(Будешь послушной [pc.girl], а...)]
+ #IF(npc2.hasPenis())swallow all me yummy cum#ELSEget that tongue in deep#ENDIF, ain't yer?)]
 	</p>
 	<p>
-		Answering in the affirmative, you prepare to earn your entry into the fortress...
+		Подтверждая его слова, ты готовишься заслужить право войти в крепость...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_GIVE_ORAL_PACIFIED"><![CDATA[
 	<p>
-		Finding yourself unable to resist the opportunity to #IFnpc.hasPenis()#THENsuck imp cock#ELSEget a taste of imp pussy#ENDIF, you lick your [pc.lips+], before stepping forwards and sinking down onto your knees before the two guards. Winking at the leader, you put on your most seductive voice as you admit, [pc.speech(Yes... I can't stop thinking about your #IFnpc.hasPenis()#THENhard cocks#ELSEwet pussies#ENDIF... Please, I want to #IFnpc.hasPenis()#THENtaste your cum#ELSEeat you out#ENDIF again...)]
+		Не в силах устоять перед возможностью #IFnpc.hasPenis()#THENsuck imp cock#ELSEget a taste of imp pussy#ENDIF, you lick your [pc.lips+], before stepping forwards and sinking down onto your knees before the two guards. Winking at the leader, you put on your most seductive voice as you admit, [pc.speech(Yes... I can't stop thinking about your #IFnpc.hasPenis()#THENhard cocks#ELSEwet pussies#ENDIF... Please, I want to #IFnpc.hasPenis()#THENtaste your cum#ELSEeat you out#ENDIF again...)]
 	</p>
 	<p>
-		[npc.speechNoEffects(I knew yer were desperate fer it, ya filthy slut!)] the leader sneers, before stepping forwards and grabbing your chin. Pushing [npc.her] thumb into your mouth, [npc.she] giggles as you obediently suck on it and bat your eyelids at [npc.herHim].
+		[npc.speechNoEffects(Так и знала, что ты по этому сохнешь, грязная шлюха!)] — усмехается предводитель, прежде чем сделать шаг вперед и схватить тебя за подбородок. Засовывая [npc.her] большой палец тебе в рот, [npc.she] хихикает, пока ты послушно посасываешь его, кокетливо хлопая ресницами на [npc.herHim].
 		#IF(game.isNonConEnabled())
-			 [npc.speechNoEffects(If only everyone were this eager!)]
+			 [npc.speechNoEffects(Если бы все были такими нетерпеливыми!)]
 		#ELSE
-			 [npc.speechNoEffects(Nice 'an eager, ain't yer?)]
+			 [npc.speechNoEffects(Милая и жадная, а?)]
 		#ENDIF
 	</p>
 	<p>
-		Withdrawing [npc.her] thumb from your mouth, the leader steps to one side, leaving enough room for [npc.her] partner to get in on the action. Immediately moving forwards into the vacant space, [npc2.name] giggles, [npc2.speechNoEffects(Don' worry, whore, yer gonna be getting that imp #IF(npc2.hasPenis())cum#ELSEpussy#ENDIF yer cravin' soon enough!)]
-	</p>
-	<p>
-		Letting out a desperate whine, you prepare to service the two imps before you...
-	</p>
+		Вытащив [npc.her] из твоего рта, вожак отступает в сторону, освобождая место, чтобы [npc.her] партнер тоже мог вклиниться в процесс. Тут же бросаясь на освободившееся место, [npc2.name] хихикает, [npc2.speechNoEffects(Да не бойся ты, шлюха, ты еще получишь этого беса #IF(npc2.hasPenis())cum#ELSEpussy#ENDIF yer cravin' soon enough!)]
+	</p><p>
+Издавая отчаянный скулёж, ты готовишься обслужить двух бесов перед собой...
+</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ENTRANCE_ELEMENTAL_INTIMIDATE"><![CDATA[
+	<htmlContent tag="ENTRANCE_ELEMENTAL_INTIMIDATE"><![CDATA[<p>
+		[pc.speech([npc.Name],)] ты спрашиваешь: [pc.speech(Сколько времени тебе понадобится, чтобы убрать этих вредителей с моего пути?)]
+	</p><p>
+Твой элементаль, чувствуя твои мысли, мгновенно понимает, что ты пытаешься запугать бесов, и ухмыляется, когда [npc.she] отвечает [npc.her] собственным вопросом: [npc.speech(Просто смести их с пути или связать и подготовить к порабощению?)]
+</p><p>
+[pc.speech(Ну, хоть бесы и годятся разве что для самой грязной и унизительной работы, лишние рабы мне никогда не помешают...)] — размышляешь ты вслух.
+</p><p>
+		[npc.speech(В таком случае, пожалуйста, отойди в сторону, [pc.master]. Я разберусь не дольше чем за тридцать секунд.)]
+	</p><p>
+Пока вы вдвоём ведете этот разговор, ты замечаешь, что бесы-стражники пугаются всё сильнее. Когда твой элементаль делает шаг вперед, они издают синхронный вопль и, спотыкаясь на ходу, бросаются расступаться. Выронив [npc2.her], предводитель взмолился: [npc2.speechNoEffects(П-пожалуйста, пощадите нас! К-клянемся, из нас выйдут ужасные рабы! В-вы сможете приходить и уходить когда захотите, т-только не калечьте нас!)]
+</p>
 	<p>
-		[pc.speech([npc.Name],)] you ask, [pc.speech(How long would it take for you to clear these pests out of my way?)]
+		[pc.speech(Хм, пожалуй, сегодня я в милостивом настроении,)] — заявляешь ты, прежде чем повернуться к [npc.name]. [pc.speech(Идем, эти двое не стоят твоего времени.)]
 	</p>
 	<p>
-		In-tune with your thoughts, your elemental instantly picks up on the fact that you're trying to intimidate the imps, and smirks as [npc.she] responds with [npc.her] own question, [npc.speech(To simply sweep them aside, or to have them bound and ready for enslavement?)]
-	</p>
-	<p>
-		[pc.speech(Well, although imps are really only suited for the most menial and degrading of jobs, I could always use more slaves...)] you ponder out loud.
-	</p>
-	<p>
-		[npc.speech(In that case, please stand aside, [pc.master]. I'll be no more than thirty seconds.)]
-	</p>
-	<p>
-		As the two of you hold this conversation, you notice that the imp guards are getting more and more visibly terrified. As your elemental steps forwards, they let out a synchronised scream, and, stumbling over their own feet, they rush to stand aside. Dropping [npc2.her] weapon, the leader pleads, [npc2.speechNoEffects(P-Please, spare us! W-We'd make terrible slaves, honest! Y-You can come an' go as yer please, j-just don't hurt us!)]
-	</p>
-	<p>
-		[pc.speech(Hmm, I suppose I am feeling merciful today,)] you state, before turning towards [npc.name]. [pc.speech(Come along, these ones aren't worth your time.)]
-	</p>
-	<p>
-		Ignoring the imps' cowardly words, you hold your head up high as they abandon the duty that was given to them. Your way now unobstructed, you move forwards through the gates, trying your best to filter out the imps' pathetic apologies as you stride past them...
+		Игнорируя трусливые слова бесов, ты высоко поднимаешь голову, пока они бросают исполнение своего долга. Теперь, когда путь свободен, ты уверенно шагаешь сквозь ворота, стараясь не слушать их жалкие извинения...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_ELEMENTAL_SUMMON"><![CDATA[
-	<p>
-		Thinking that these imps look particularly cowardly, you think that simply summoning your elemental would be enough to intimidate them. Grinning down at the leader, you declare, [pc.speech(You really think you stand a chance against me?! Perhaps if you can defeat my elemental, you'll have earned the right to challenge me!)]
+	<p>		Видя, насколько трусливо выглядят эти бесы, ты решаешь, что простого призыва элементаля будет достаточно, чтобы их запугать. Усмехаясь предводителю, ты объявляешь: [pc.speech(Ты правда думаешь, что у тебя есть шанс против меня?! Возможно, если ты одолеешь моего элементаля, то заслужишь право бросить вызов мне!)]
 	</p>
 	<p>
-		The colour instantly drains from [npc2.namePos] cheeks, and [npc2.she] hisses to [npc2.her] superior, [npc2.speechNoEffects('Ey! A-An elemental?! Ain't that one o' those arcane thingies?! W-We can't fight that!)]
+		Кровь мгновенно отхлынула от щек [npc2.namePos], а [npc2.she] шипит на [npc2.her]: [npc2.speechNoEffects('Эй! Э-элементаль?! Это что, одна из тех арканных штуковиц?! Н-нам с такой не совладать!)]
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ENTRANCE_ELEMENTAL_SUMMON_END"><![CDATA[
+	<htmlContent tag="ENTRANCE_ELEMENTAL_SUMMON_END"><![CDATA[<p>
+Когда твой элементаль делает шаг вперёд, оба беса синхронно взвизгивают и, спотыкаясь на ходу, бросаются в стороны, чтобы освободить путь. Бросая [npc2.her], вожак умоляет: [npc2.speechNoEffects(П-пожалуйста, пощади нас! М-мы не хотим проблем с этой... арканной штуковиной! П-просто, пожалуйста, не калечь нас!)]
+</p>
 	<p>
-		As your elemental steps forwards, the two imps let out a synchronised scream, and, stumbling over their own feet, rush to stand aside. Dropping [npc2.her] weapon, the leader pleads, [npc2.speechNoEffects(P-Please, spare us! W-We don't want no trouble with one o' those arcane thingies! J-Just, please don't hurt us!)]
+		[pc.speech(Хм, пожалуй, сегодня я в милостивом настроении,)] — заявляешь ты, прежде чем повернуться к [npc.name]. [pc.speech(Идем, эти двое не стоят твоего времени.)]
 	</p>
 	<p>
-		[pc.speech(Hmm, I suppose I am feeling merciful today,)] you state, before turning towards [npc.name]. [pc.speech(Come along, these ones aren't worth your time.)]
-	</p>
-	<p>
-		Ignoring the imps' cowardly words, you hold your head up high as they abandon the duty that was given to them. Your way now unobstructed, you move forwards through the gates, trying your best to filter out the imps' pathetic apologies as you stride past them...
+		Игнорируя трусливые слова бесов, ты высоко поднимаешь голову, пока они бросают исполнение своего долга. Теперь, когда путь свободен, ты уверенно шагаешь сквозь ворота, стараясь не слушать их жалкие извинения...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_ELEMENTAL_CONTINUE"><![CDATA[
 	<p>
-		[pc.Walking] forwards past the cowering imps, you tell [el.name] to keep a look out for any sign of danger as you enter the fortress and take a look around...
+		[pc.Walking] обходит сжимающихся от страха бесов, а ты велишь [el.name] приглядывать, не грозит ли опасность, пока ты входишь в крепость и осматриваешься...
 	</p>
 	]]>
 	</htmlContent>
@@ -235,24 +228,25 @@
 	
 	<htmlContent tag="GUARDS_AFTER_ORAL_FOR_ENTRY"><![CDATA[
 	<p>
-		Stepping away from you, the two imps slip their tattered clothing back on, with the leader sneering as [npc.she] does so, [npc.speechNoEffects(What a horny slut fer imp #IF(npc.hasPenis())cock#ELSEpussy#ENDIF! Heh, the way ya were moanin' fer it! We won't be fergettin' that fer a long time!)]
+		Отстранившись от тебя, двое бесов натягивают свое рваное тряпье; предводитель при этом презрительно ухмыляется, глядя на [npc.she], [npc.speechNoEffects(Ну и похотливая же шлюха, чисто под беса)],
+ #IF(npc.hasPenis())cock#ELSEpussy#ENDIF! Heh, the way ya were moanin' fer it! We won't be fergettin' that fer a long time!)]
 	</p>
 	<p>
-		As you start to stand up, [npc2.name] suddenly grabs your shoulders and pushes you back down onto your knees. [npc2.speechNoEffects('Ang on, yer missed some! Clean it off proper, slut!)]
+		Стоит тебе начать подниматься, как [npc2.name] внезапно хватает тебя за плечи и толкает обратно на колени. [npc2.speechNoEffects('А ну стоять, ты еще не всё вылизала! Вылизывай как следует, шлюха!)]
 	</p>
 	<p>
 		#IFnpc2.hasPenis()
 		#THEN
-			Looking down, you see [npc2.herHim] holding [npc2.her] skirt up and presenting [npc2.her] cock to you. Sure enough, there's a dribble of cum running down the underside of [npc2.her] shaft, and you obediently duck your head down and lick it off. With a satisfied moan, the imp finally steps back and drops [npc2.her] skirt, allowing you to push yourself to your feet and get your things in order.
+			Посмотрев вниз, ты видишь, как [npc2.herHim] приподнимает юбку [npc2.her], подставляя тебе [npc2.her] член. И действительно, по нижней стороне ствола [npc2.her] стекает капля спермы; ты послушно склоняешь голову и слизываешь её. С удовлетворенным стоном бес наконец отступает и опускает юбку [npc2.her], позволяя тебе подняться на ноги и привести себя в порядок.
 		#ELSE
-			Looking down, you see [npc2.herHim] holding [npc2.her] skirt up and presenting [npc2.her] wet cunt to you. Sure enough, there's a dribble of girlcum running down the inside of [npc2.her] thigh, and you obediently duck your head down and lick it off. With a satisfied moan, the imp finally steps back and drops [npc2.her] skirt, allowing you to push yourself to your feet and get your things in order.
+			Посмотрев вниз, ты видишь, как [npc2.herHim] приподнимает юбку [npc2.her], подставляя тебе влажную киску [npc2.her]. И действительно, по внутренней стороне бедра [npc2.her] стекает капля девичьей смазки; ты послушно склоняешь голову и слизываешь её. С удовлетворенным стоном бес наконец отступает и опускает юбку [npc2.her], позволяя тебе подняться на ноги и привести себя в порядок.
 		#ENDIF
 	</p>
 	<p>
-		[npc.speechNoEffects(Ya can come an' go as yer please now, slut,)] the leader declares, [npc.speechNoEffects(But when yer get 'ungry fer another taste o' imp #IF(npc.hasPenis())cock#ELSEpussy#ENDIF, yer just come back an' get down on yer knees, yer understand?)]
+		[npc.speechNoEffects(Теперь можешь ходить куда хочешь, шлюха,)] — заявляет предводитель, — [npc.speechNoEffects(Но когда снова захочешь отведать бесины...)] #IF(npc.hasPenis())cock#ELSEpussy#ENDIF, yer just come back an' get down on yer knees, yer understand?)]
 	</p>
 	<p>
-		Replying in the affirmative, you smile at the imps as they stand aside, letting you pass into the fortress without a fight...
+		Подтверждая их догадку, ты улыбаешься бесам, пока те расступаются, пропуская тебя в крепость без всякой драки...
 	</p>
 	]]>
 	</htmlContent>
@@ -264,30 +258,30 @@
 	<htmlContent tag="ENTRANCE_DEMONIC_COMMAND"><![CDATA[
 	#IF(pc.getRace()!=RACE_DEMON)
 		<p>
-			Knowing exactly how to get these imps to back down, you quickly transform to take on your true, demonic appearance. As the imps' defiant expressions quickly shift into ones of terror, you use an icy, threatening tone to ask, [pc.speech(You <i>dare</i> speak to a demon in such a way? It's almost as though you <i>want</i> to spend the rest of your existence as the lowest of my slaves.)]
+			Точно зная, как заставить этих бесов отступить, ты стремительно принимаешь свой истинный демонический облик. Когда дерзкие морды бесов мгновенно сменяются гримасами ужаса, ты ледяным, угрожающим тоном вопрошаешь: [pc.speech(Ты <i>смеешь</i> так разговаривать с демоном? Такое чувство, будто ты <i>хочешь</i> провести остаток своего существования в качестве низшего из моих рабов.)]
 		</p>
 		<p>
-			[npc.speechNoEffects(N-No! W-Wait, we didn't know you was a demon! W-We were just doin' as we were told!)] the leader stutters, stumbling backwards and lowering [npc.her] weapon. [npc.speechNoEffects(T-There's no need fer ya ta be doin' that...)]
+			[npc.speechNoEffects(Н-нет! П-погоди, мы не знали, что ты демон! М-мы просто делали, как нам велели!)] — заикаясь, произносит вожак, спотыкаясь назад и опуская [npc.her] оружие. [npc.speechNoEffects(Н-не надо так...)]
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(You <i>dare</i> speak to a demon in such a way?)] you ask, taking on an icy, threatening tone. [pc.speech(It's almost as though you <i>want</i> to spend the rest of your existence as the lowest of my slaves.)]
+			[pc.speech(Ты <i>смеешь</i> так разговаривать с демоном?)] — спрашиваешь ты ледяным, угрожающим тоном. [pc.speech(Такое чувство, будто ты <i>хочешь</i> провести остаток своего существования в качестве низшего из моих рабов.)]
 		</p>
 		<p>
-			[npc.speechNoEffects(N-No! W-Wait, we were just doin' as we were told!)] the leader stutters, stumbling backwards and lowering [npc.her] weapon. [npc.speechNoEffects(T-There's no need fer ya ta be doin' that...)]
+			[npc.speechNoEffects(Н-нет! П-погоди, мы просто делали, как нам велели!)] — заикаясь, произносит вожак, спотыкаясь назад и опуская [npc.her] оружие. [npc.speechNoEffects(Н-не надо так...)]
 		</p>
 	#ENDIF
 	<p>
-		[npc2.Her] spirit instantly broken, [npc2.name] joins [npc2.her] superior in apologising as [npc2.she] hurriedly stands aside, [npc2.speechNoEffects(That's right! W-We'd never normally be so rude! I-It's just that our boss told us ta say all that stuff!)]
+		Дух [npc2.Her] мгновенно сломлен, и [npc2.name] присоединяется к [npc2.her] своему предводителю в извинениях, пока [npc2.she] поспешно отступает в сторону, [npc2.speechNoEffects(Точно! О-обычно мы не такие грубые! П-просто наш босс велел нам всё это выдать!)]
 	</p>
 	<p>
-		[pc.speech(Move!)] you command, glaring down at the leader.
+		[pc.speech(Дорогу!)] — командуешь ты, свирепо глядя на предводителя.
 	</p>
 	<p>
-		[npc.speechNoEffects(S-Sorry!)] [npc.She] instantly cries, tripping over [npc.her] own feet as [npc.she] hurries to get out of your way. [npc.speechNoEffects(Y-You can come an' go as yer please, of course! S-Sorry fer the trouble!)]
+		[npc.speechNoEffects(П-простите!)] [npc.She] мгновенно вскрикивает, спотыкаясь о [npc.her] собственные ноги, пока [npc.she] спешит поскорее убраться с твоей дороги. [npc.speechNoEffects(В-вы можете приходить и уходить, куда вам угодно! П-простите за беспокойство!)]
 	</p>
 	<p>
-		Ignoring the imps' cowardly words, you hold your head up high as they abandon the duty that was given to them. Your way now unobstructed, you move forwards through the gates, trying your best to filter out the imps' pathetic apologies as you stride past them...
+		Игнорируя трусливые слова бесов, ты высоко поднимаешь голову, пока они бросают исполнение своего долга. Теперь, когда путь свободен, ты уверенно шагаешь сквозь ворота, стараясь не слушать их жалкие извинения...
 	</p>
 	]]>
 	</htmlContent>
@@ -298,88 +292,87 @@
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_VICTORY_ALL_ENSLAVED"><![CDATA[
 	<p>
-		Having enslaved the imp guards, there's nothing left for you to do except continue on your way into the fortress...
+		Поработив стражу из бесов, тебе не остается ничего другого, кроме как продолжить свой путь вглубь крепости...
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="GUARDS_AFTER_COMBAT_VICTORY"><![CDATA[
+	<htmlContent tag="GUARDS_AFTER_COMBAT_VICTORY"><![CDATA[<p>
+	Оба стражника мешком оседают на пол, их оружие выпадает из рук и с безобидным звоном рассыпается по камням под ногами. Главарь, тяжело и прерывисто [npc.she] хватая ртом воздух, задирает на тебя глаза и умоляюще произносит: [npc.speechNoEffects(Н-не надо... Т-ты нас уделал...)]
+</p>
 	<p>
-		The two guards slump to the floor, their weapons falling from their hands to clatter harmlessly against the rocks underfoot. Looking up at you as [npc.she] gasps for breath, the leader pleads, [npc.speechNoEffects(N-No more... Y-Ya got us...)]
+		Глядя на поверженных существ перед собой, ты раздумываешь, стоит ли ими воспользоваться или просто двинуться дальше в крепость...
 	</p>
 	<p>
-		Looking down at the defeated figures before you, you wonder if you should take advantage of them, or simply continue on into the fortress...
-	</p>
-	<p>
-		[style.italicsBad(If you choose to leave the guards behind, you can be sure that they'll have run off into Submission by the time you return!)]
+		[style.italicsBad(Если ты решишь оставить стражу позади, будь уверен — к твоему возвращению они уже вовсю разбегутся по Submission!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_VICTORY_SCARE_OFF"><![CDATA[
 	<p>
-		Not wanting anything more to do with these imps, you growl down to them, [pc.speech(Go on, get out of here, before I change my mind.)]
+		Не желая иметь больше ничего общего с этими бесами, ты рычишь им: [pc.speech(А ну, брысь отсюда, пока я не передумала.)]
 	</p>
 	<p>
-		Taking one glance at each other, the imps do their best to get to their feet, before staggering off into the tunnels of Submission as fast as they can...
+		Переглянувшись, бесы изо всех сил стараются подняться на ноги, после чего как можно быстрее ковыляют прочь, скрываясь в туннелях Submission...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_COMBAT_VICTORY_SEX"><![CDATA[
 	<p>
-		Wanting to have some fun with these once-insolent imps, you reach down and start moving them into position. The leader lets out an erotic moan as [npc.she] feels your hands on [npc.her] body, and sighs, [npc.speechNoEffects(Mmm, yeah! Come on, babe, yer wanna give us a good fuck, right?)]
+		Желая немного развлечься с этими когда-то дерзкими бесами, ты наклоняешься и начинаешь расставлять их в нужные позиции. Предводительница издает эротичный стон, когда [npc.she] чувствует твои руки на [npc.her] теле, и вздыхает: [npc.speechNoEffects(Ммм, да! Давай, детка, ты ведь хочешь хорошенько нас оттрахать, а?)]
 	</p>
 	<p>
-		[npc2.speechNoEffects(Oh yeah, it's been fuckin' ages since I had a real good fuck!)] [npc2.Name] moans, happily pushing [npc2.herself] up beside her leader as the two of them prepare to have sex with you...
+		[npc2.speechNoEffects(О да, черт возьми, сто лет уже так сладко не трахалась!)] [npc2.Name] стонет, с радостью подталкивая [npc2.herself] к своей предводительнице, пока они обе готовятся заняться с тобой сексом...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_COMBAT_VICTORY_SEX_GENTLE"><![CDATA[
 	<p>
-		Wanting to have some fun with these once-insolent imps, you reach down and start gently moving them into position. The leader lets out an erotic moan as [npc.she] feels your soft touch on [npc.her] body, and sighs, [npc.speechNoEffects(Mmm, yeah! Come on, babe, yer wanna give us a good fuck, right?)]
+		Желая немного развлечься с этими когда-то дерзкими бесами, ты наклоняешься и начинаешь осторожно расставлять их в нужные позиции. Предводительница издает эротичный стон, когда [npc.she] чувствует твои мягкие прикосновения к [npc.her] телу, и вздыхает: [npc.speechNoEffects(Ммм, да! Давай, детка, ты ведь хочешь хорошенько нас оттрахать, а?)]
 	</p>
 	<p>
-		[npc2.speechNoEffects(Oh yeah, it's been fuckin' ages since I had a real good fuck!)] [npc2.Name] moans, happily pushing [npc2.herself] up beside her leader as the two of them prepare to have sex with you...
+		[npc2.speechNoEffects(О да, черт возьми, сто лет уже так сладко не трахалась!)] [npc2.Name] стонет, с радостью подталкивая [npc2.herself] к своей предводительнице, пока они обе готовятся заняться с тобой сексом...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_COMBAT_VICTORY_SEX_ROUGH"><![CDATA[
 	<p>
-		Wanting to have some fun with these once-insolent imps, you reach down and start roughly shoving them into position. The leader lets out an erotic moan as [npc.she] feels your harsh touch on [npc.her] body, and sighs, [npc.speechNoEffects(Mmm, yeah! Come on, babe, yer wanna give us a good, hard fuck, right?)]
+		Желая немного развлечься с этими когда-то дерзкими бесами, ты наклоняешься и начинаешь грубо расталкивать их, принимая нужные позы. Предводительница издает эротичный стон, когда [npc.she] чувствует твои жесткие прикосновения к [npc.her] телу, и вздыхает: [npc.speechNoEffects(Ммм, да! Давай, детка, ты ведь хочешь хорошенько и жестко нас оттрахать, а?)]
 	</p>
 	<p>
-		[npc2.speechNoEffects(Oh yeah, it's been fuckin' ages since I had a real rough poundin'!)] [npc2.Name] moans, happily pushing [npc2.herself] up beside her leader as the two of them prepare to get dominated by you...
+		[npc2.speechNoEffects(О да, черт возьми, сто лет не было такой знатной ебли!)] [npc2.Name] стонет, радостно подталкивая [npc2.herself] к своей предводительнице, пока они обе готовятся к тому, чтобы ты их оттрахал...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_COMBAT_VICTORY_SEX_SUBMIT"><![CDATA[
 	<p>
-		Seeing the two imps pathetically sprawled out on the floor before you makes you feel immensely guilty about what you've just done. Dropping down onto your knees beside them, you ask, [pc.speech(Are you ok? I didn't mean to... I think I went a little too far...)]
+		Вид двух бесов, жалко развалившихся на полу перед тобой, вызывает у тебя жгучее чувство вины за содеянное. Опустившись перед ними на колени, ты спрашиваешь: [pc.speech(Вы в порядке? Я не хотел... Кажется, я немного переборщил...)]
 	</p>
 	<p>
-		[npc.speechNoEffects(Eh?!)] the imp leader exclaims, caught off-guard by your sudden change in attitude. [npc.speechNoEffects(What yer sayin'?)]
+		[npc.speechNoEffects(Че?!)] восклицает предводительница бесов, застигнутая врасплох твоей внезапной переменой в настроении. [npc.speechNoEffects(Ты о чем это сейчас?)]
 	</p>
 	<p>
-		Sensing your weakness, [npc2.name] pushes [npc2.herself] up onto [npc2.her] feet, before stepping forwards and glaring at you. [npc2.speechNoEffects(Damn right ya went too far! So, ya gonna say sorry, or what?)]
+		Почуяв твою слабость, [npc2.name] подталкивает [npc2.herself] на [npc2.her] ноги, после чего делает шаг вперед и свирепо на тебя смотрит. [npc2.speechNoEffects(Чертовски верно, переборщил! Ну так что, извиняться будешь или как?)]
 	</p>
 	<p>
-		[pc.speech(Ah, yes, sorry!)] you cry out. [pc.speech(What can I do to make it up to y-)]
+		[pc.speech(Ах, да, прости!)] восклицаешь ты. [pc.speech(Что я могу сделать, чтобы загладить вин-)]
 	</p>
 	<p>
-		Your question is cut short as the imp leader, who by now has stood up and stepped towards you, reaches forwards and grabs you by the chin. [npc.speechNoEffects(Yer gonna #IF(npc.hasPenis())take our cocks#ELSEeat us out#ENDIF, like a good subby slut, ain't yer?)]
+		Твой вопрос обрывается, когда предводительница бесов, уже вставшая и подошедшая к тебе, протягивает руку и хватает тебя за подбородок. [npc.speechNoEffects(Ты будешь #IF(npc.hasPenis())take our cocks#ELSEeat us out#ENDIF, like a good subby slut, ain't yer?)]
 	</p>
 	<p>
-		[pc.speech(Ooh, yesh, I can do that,)] you slur as the imp leader reaches up to squeeze your [pc.lips+] together.
+		[pc.speech(О-о, да, это я могу,)] бормочешь ты, когда предводительница бесов тянется к тебе, чтобы сжать твои [pc.lips+] вместе.
 	</p>
 	<p>
-		[npc2.speechNoEffects(Gonna #IF(npc2.hasPenis())pump you full o' cum#ELSEgive yer a taste o' my cunt#ENDIF fer what yer did ta us!)] [npc2.Name] jeers, moving around behind you and grabbing your [pc.hips+].
+		[npc2.speechNoEffects(Будешь)] #IF(npc2.hasPenis())pump you full o' cum#ELSEgive yer a taste o' my cunt#ENDIF fer what yer did ta us!)] [npc2.Name] jeers, moving around behind you and grabbing your [pc.hips+].
 	</p>
 	<p>
-		Your submissive nature immediately takes over, and you find yourself making erotic [pc.moans] as you happily allow the imps to move you into position. Grinning at the guards that just a moment ago were at your mercy, you prepare for them to get their revenge by fucking you...
+		Твоя покорная натура берет верх, и ты невольно издаешь эротичные [pc.moans], счастливо позволяя бесам усадить тебя в нужное положение. Ухмыляясь стражникам, которые еще мгновение назад были в твоей власти, ты готовишься к их мести — к тому, что они трахнут тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -390,71 +383,71 @@
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_DEFEAT_THROWN_OUT"><![CDATA[
 	<p>
-		With the last of your strength depleted, you slump to the floor with a defeated sigh. Before you've even managed to take a breath, you feel them reach down and grab you under your [pc.arms]. As they start dragging you down the incline towards Submission's tunnels, the two imps start speaking to one another.
+		Когда последние силы покидают тебя, ты с побежденным вздохом оседаешь на пол. Не успеваешь ты даже перевести дух, как чувствуешь, что они наклоняются и хватают тебя под [pc.arms]. Пока они тащат тебя под уклон в сторону туннелей Submission, два беса начинают переговариваться между собой.
 	</p>
 	<p>
-		[npc2.speechNoEffects(Why we can't we 'ave any fun?)] [npc2.Name] asks [npc2.her] superior.
+		[npc2.speechNoEffects(Ну почему нам вечно не везет повеселиться?)] [npc2.Name] спрашивает [npc2.her].
 	</p>
 	<p>
-		[npc.speechNoEffects('Cause if the boss catches us fuckin' instead of guardin', we'll be the ones who get fucked!)] the leader snaps in response. [npc.speechNoEffects(We'll just dump [pc.herHim] down 'ere. Our roamin' gangs can have some fun when they catch [pc.herHim].)]
+		[npc.speechNoEffects(Потому что если босс застукает нас за трахом вместо караула, то именно нас будут иметь!)] — огрызается предводитель в ответ. [npc.speechNoEffects(Просто сбросим [pc.herHim] здесь. Наши бродячие банды поразвлекутся, когда поймают [pc.herHim].)]
 	</p>
 	<p>
-		Before you know it, you've been dragged far away from the fortress's gatehouse, and are being unceremoniously hurled to the floor. Threatening you never to return, the imps then return to their guard duty, leaving you alone to catch your breath...
+		Не успеваешь ты опомниться, как тебя уже уволокли далеко от ворот крепости и бесцеремонно швырнули на пол. Пообещав, что ты сюда больше не вернешься, бесы возвращаются к своей службе, оставляя тебя в одиночестве переводить дух...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_DEFEAT"><![CDATA[
 	<p>
-		With the last of your strength depleted, you slump to the floor with a defeated sigh. Before you've even managed to take a breath, you feel them reach down and start to grope and fondle your vulnerable body. As they start molesting you, the two imps start speaking to one another.
+		Когда последние силы покидают тебя, ты с побежденным вздохом оседаешь на пол. Не успеваешь ты даже перевести дух, как чувствуешь, что они наклоняются и начинают лапать и тискать твое уязвимое тело. Пока они вовсю домогаются тебя, два беса начинают переговариваться между собой.
 	</p>
 	<p>
-		[npc.speech(I wonder if [pc.sheIs] gonna turn out ta be another slut fer our #IF(npc.hasPenis())cocks#ELSEcunts#ENDIF?)] the imp leader asks [npc.her] subordinate.
+		[npc.speech(Интересно, не окажется ли [pc.sheIs] очередной шлюхой для наших #IF(npc.hasPenis())cocks#ELSEcunts#ENDIF?)] the imp leader asks [npc.her] subordinate.
 	</p>
 	<p>
-		[npc2.speechNoEffects(Don't matter either way, I'm just dyin' ta #IF(npc2.hasPenis())nut inside [pc.herHim]#ELSEget [pc.her] tongue in my pussy#ENDIF!)] [npc2.Name] replies. [npc2.speechNoEffects(Anyway, they always get into it once they get a taste o' my #IF(npc2.hasPenis())cock#ELSEjuicy snatch#ENDIF! Just like that last slut we caught. She was soon beggin' fer #IF(npc2.hasPenis())my cum#ELSEme ta sit on 'er face#ENDIF!)]
+		[npc2.speechNoEffects(Да какая разница, я просто сгораю от желания #IF(npc2.hasPenis())nut inside [pc.herHim]#ELSEget [pc.her] tongue in my pussy#ENDIF!)] [npc2.Name] replies. [npc2.speechNoEffects(Anyway, they always get into it once they get a taste o' my #IF(npc2.hasPenis())cock#ELSEjuicy snatch#ENDIF! Just like that last slut we caught. She was soon beggin' fer #IF(npc2.hasPenis())my cum#ELSEme ta sit on 'er face#ENDIF!)]
 	</p>
 	<p>
-		Before you know it, the two imps have pushed you into position, and are getting ready to use your body...
+		Не успеваешь опомниться, как два беса заталкивают тебя в нужное положение и готовятся использовать твое тело...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_DEFEAT_SEX"><![CDATA[
 	<p>
-		Happy enough to let the imps have their fun, you [pc.moan], [pc.speech(Mmm, yes... I'll be good for you...)]
+		С радостью позволяя бесам повеселиться, ты [pc.moan], [pc.speech(Ммм, да... я буду послушной для вас...)]
 	</p>
 	<p>
-		[npc.speechNoEffects(Heh! So [pc.she] <i>is</i> a slut fer imp #IF(npc.hasPenis())cocks#ELSEcunts#ENDIF!)] the imp leader sneers, drawing a wicked giggle from [npc.her] subordinate.
+		[npc.speechNoEffects(Хе! Значит, [pc.she] <i>есть</i> шлюшка, любящая бесов, #IF(npc.hasPenis())cocks#ELSEcunts#ENDIF!)] the imp leader sneers, drawing a wicked giggle from [npc.her] subordinate.
 	</p>
 	<p>
-		[npc2.speechNoEffects(Gonna give ya a real good fuckin', whore!)] [npc2.Name] says, groping your body as both [npc2.she] and [npc2.her] superior prepare to get started...
+		[npc2.speechNoEffects(Сейчас мы тебя как следует оттрахаем, шлюха!)] [npc2.Name] говорит, ощупывая твое тело, пока оба господина, [npc2.she] и [npc2.her], готовятся приступить...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_DEFEAT_SEX_EAGER"><![CDATA[
 	<p>
-		Feeling incredibly aroused at the prospect of being used by your conquerors, you [pc.moan], [pc.speech(Oh, yes! Come on, fuck me! Give me that imp #IF(npc.hasPenis())cock#ELSEpussy#ENDIF!)]
+		Чувствуя невероятное возбуждение от мысли о том, что тебя будут использовать твои завоеватели, ты [pc.moan], [pc.speech(О, да! Давай же, трахни меня! Дай мне этого бесовского #IF(npc.hasPenis())cock#ELSEpussy#ENDIF!)]
 	</p>
 	<p>
-		[npc.speechNoEffects(Heh! So [pc.she] <i>is</i> a slut fer imp #IF(npc.hasPenis())cocks#ELSEcunts#ENDIF! An' a really horny one at that!)] the imp leader sneers, drawing a wicked giggle from [npc.her] subordinate.
+		[npc.speechNoEffects(Хе! Значит, [pc.she] <i>есть</i> шлюшка, любящая бесов, #IF(npc.hasPenis())cocks#ELSEcunts#ENDIF! An' a really horny one at that!)] the imp leader sneers, drawing a wicked giggle from [npc.her] subordinate.
 	</p>
 	<p>
-		[npc2.speechNoEffects(Gonna give ya a real good fuckin', whore! Moan fer me, ya slut!)] [npc2.Name] says, groping your body as both [npc2.she] and [npc2.her] superior prepare to get started...
+		[npc2.speechNoEffects(Сейчас мы тебя как следует оттрахаем, шлюха! Стони для меня, сучка!)] [npc2.Name] говорит, ощупывая твое тело, пока оба господина, [npc2.she] и [npc2.her], готовятся приступить...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GUARDS_AFTER_COMBAT_DEFEAT_SEX_RESIST"><![CDATA[
 	<p>
-		Disgusted by the thought of these imps taking advantage of you, you scream, [pc.speech(No! Get away from me! Stop!)]
+		Испытывая отвращение от мысли, что эти бесы пользуются тобой, ты кричишь: [pc.speech(Нет! Уйдите от меня! Прекратите!)]
 	</p>
 	<p>
-		[npc.speechNoEffects(Heh! So [pc.sheIs] one o' those playin' hard-ta-get, huh?!)] the imp leader sneers, drawing a wicked giggle from [npc.her] subordinate. [npc.speechNoEffects(Yer gonna change yer tune once yer had a taste o' imp #IF(npc.hasPenis())cock#ELSEpussy#ENDIF!)]
+		[npc.speechNoEffects(Хе! Значит, [pc.sheIs] из этих, что строят из себя недотрог, а?!)] — усмехается предводитель бесов, вызывая злобный смешок у [npc.her] своего подчиненного. [npc.speechNoEffects(Твой тон сменится, как только ты попробуешь на вкус бесовский #IF(npc.hasPenis())cock#ELSEpussy#ENDIF!)]
 	</p>
 	<p>
-		[npc2.speechNoEffects(Gonna give ya a real good fuckin'! I wanna hear yer moanin' for #IF(npc2.hasPenis())my cum#ELSEmy cunt#ENDIF before the end!)] [npc2.Name] says, groping your body as both [npc2.she] and [npc2.her] superior prepare to get started...
+		[npc2.speechNoEffects(Сейчас мы тебя так оттрахаем! Хочу слышать, как ты стонешь от...)] #IF(npc2.hasPenis())my cum#ELSEmy cunt#ENDIF before the end!)] [npc2.Name] says, groping your body as both [npc2.she] and [npc2.her] superior prepare to get started...
 	</p>
 	]]>
 	</htmlContent>
@@ -465,13 +458,13 @@
 	
 	<htmlContent tag="GUARDS_AFTER_SEX_VICTORY"><![CDATA[
 	<p>
-		Having had your fun, you pull away from the imps, whose fatigue from the previous fight finally catches up with them. Slumping to the floor, the guards pant and sigh as they try to catch their breath.
+		Насладившись, ты отстраняешься от бесов, которых наконец настигает усталость после предыдущей схватки. Повалившись на пол, стражники тяжело дышат и вздыхают, пытаясь перевести дух.
 	</p>
 	<p>
-		Getting your things in order, you wonder if you should help yourself to their belongings before they run off...
+		Приводя вещи в порядок, ты раздумываешь, не стоит ли прихватить их пожитки, пока они не свалили...
 	</p>
 	<p>
-		[style.italicsBad(You can be sure that the imps will have run off into Submission by the time you return!)]
+		[style.italicsBad(Можешь быть уверен: к твоему возвращению бесы уже давно сбегут в Submission!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -482,16 +475,16 @@
 	
 	<htmlContent tag="AFTER_DEFEAT_SEX"><![CDATA[
 	<p>
-		Having had their fun, the imps allow you slump to the floor with an exhausted sigh. Before you've even managed to catch your breath, you feel them reach down and grab you under your [pc.arms]. As they start dragging you down the incline towards Submission's tunnels, the two imps start speaking to one another.
+		Насладившись, бесы с изнуренным вздохом позволяют тебе рухнуть на пол. Не успеваешь ты даже перевести дух, как чувствуешь, что они хватают тебя под [pc.arms]. Пока они тащат тебя под уклон к туннелям Submission, двое бесов начинают переговариваться между собой.
 	</p>
 	<p>
-		[npc2.speechNoEffects(This 'un was a good fuck,)] [npc2.name] says to [npc2.her] superior.
+		[npc2.speechNoEffects(Эта была охренительная траха!)] — говорит [npc2.name] своему [npc2.her] начальнику.
 	</p>
 	<p>
-		[npc.speechNoEffects(Eh, [pc.sheIs] ok I guess. Got a decent future as some imp's cum-dump, I'd wager,)] the leader says dismissively in response. [npc.speechNoEffects(We'll just throw [pc.herHim] down 'ere. Our roamin' gangs can 'ave a turn when they catch [pc.herHim].)]
+		[npc.speechNoEffects(Эх, [pc.sheIs] сойдет, пожалуй. Бьюсь об заклад, у неё неплохое будущее в роли чьей-нибудь спермоприемницы,)] — пренебрежительно отвечает предводитель. [npc.speechNoEffects(Просто бросим [pc.herHim] здесь. Наши бродячие банды смогут по очереди, когда поймают [pc.herHim].)]
 	</p>
 	<p>
-		Before you know it, you've been dragged far away from the fortress's gatehouse, and are being unceremoniously hurled to the floor. Threatening you never to return, the imps then return to their guard duty, leaving you alone to catch your breath...
+		Не успеваешь ты опомниться, как тебя уже уволокли далеко от ворот крепости и бесцеремонно швырнули на пол. Пообещав, что ты сюда больше не вернешься, бесы возвращаются к своей службе, оставляя тебя в одиночестве переводить дух...
 	</p>
 	]]>
 	</htmlContent>
