@@ -113,7 +113,11 @@
     "res/txt/places/dominion/zaranixHome/groundFloorRepeat.xml",
     "res/txt/places/fields/centaur_transport.xml",
     "res/txt/places/fields/dairyFarm.xml",
-    "res/txt/places/fields/elis/abandoned_bakery.xml"
+    "res/txt/places/fields/elis/abandoned_bakery.xml",
+    "res/txt/places/fields/elis/amazon_camp.xml",
+    "res/txt/places/fields/elis/bank.xml",
+    "res/txt/places/fields/elis/centaur_transport.xml",
+    "res/txt/places/fields/elis/enforcer_station.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

@@ -5,10 +5,10 @@
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		You find yourself [pc.walking] down the corridor which leads from the reception area into the rest of the Enforcer station. Worn, greyish-blue carpet covers the floor, while up above bright fluorescent-style arcane lights illuminate the dark wooden beams which hold up the ceiling. The entire area has that faint, musty smell which is often found in old, public buildings like this one.
+		Ты оказываешься [pc.walking] в коридоре, ведущем из зоны приема вглубь станции Enforcer. Пол застелен потертым серовато-голубым ковролином, а сверху яркие аркана-лампы в стиле люминесцентных светильников освещают темные деревянные балки, поддерживающие потолок. Во всем помещении стоит тот едва уловимый затхлый запах, который часто встречается в старых общественных зданиях вроде этого.
 	</p>
 	<p>
-		The odd Enforcer passes you as you travel down this corridor. Busy with their duties, they don't stop to ask what you're doing back here, and instead hurry past you with either the briefest of nods or no acknowledgement at all.
+		Пока ты идешь по этому коридору, мимо тебя проходят странные Enforcer. Поглощенные своими обязанностями, они не останавливаются, чтобы спросить, что ты здесь забыл, а лишь спешно проносятся мимо, едва заметно кивнув или вовсе не удостоив тебя взглядом.
 	</p>
 	]]>
 	</htmlContent>
@@ -18,54 +18,54 @@
 	
 	<htmlContent tag="EXIT"><![CDATA[
 	<p>
-		You're currently standing in a modestly-sized reception area. Just like its exterior suggested, the inside of this building looks to be quite old, with dark wooden beams visible both overhead and set into the walls. Allowing your gaze to wander over the worn, drab-green carpet, you see that a long, free-standing desk has been positioned on the far side of this room. Behind this desk is standing
+		Сейчас ты стоишь в зоне приема среднего размера. Как и предсказывал внешний вид, внутри здание кажется довольно старым: сверху и в стенах видны темные деревянные балки. Твой взгляд скользит по потертому тускло-зеленому ковролину, и ты замечаешь длинный отдельно стоящий стол в дальнем конце комнаты. За этим столом стоит
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
-			 the familiar horse-girl, Sterope.
+			 знакомая лошадиная девочка, Стеропа.
 		#ELSE
-			 a lesser horse-girl.
+			 низшая лошадиная девочка.
 		#ENDIF
-		 About half a dozen cushioned chairs are lined up along the sides of this area, and although they look to be quite shabby and well used, they're all currently unoccupied.
+		 Вдоль стен расставлено около полудюжины мягких кресел; хоть они и выглядят довольно потрепанными и видавшими виды, сейчас все они свободны.
 	</p>
 	<p>
-		From here, you could proceed forwards to greet
+		Отсюда ты можешь пройти вперед, чтобы поприветствовать
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
-			 Sterope,
+			 Стеропу,
 		#ELSE
-			 the horse-girl Enforcer,
+			 лошадиную девочку Enforcer,
 		#ENDIF
-		 or instead turn around and exit the building via the same way you entered it...
+		 или же развернуться и выйти из здания тем же путем, которым вошел...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT_INITIAL_ENTRY"><![CDATA[
 	<p>
-		Deciding to enter the Enforcer station, you [pc.walk] down the wide path which runs through the knot garden and approach the entrance. The wooden doors have been propped open, allowing you to pass by a couple of friendly-looking Enforcers and enter the building without stopping.
+		Решив войти в станцию Enforcer, ты [pc.walk] по широкой тропинке, проходящей через регулярный сад, и приближаешься к входу. Деревянные двери приоткрыты, что позволяет тебе миновать пару дружелюбных на вид Enforcer и войти в здание, не останавливаясь.
 	</p>
 	<p>
-		Taking a look around as you [pc.step] inside, you see that you're standing in a modestly-sized reception area. Just like its exterior suggested, the inside of this building looks to be quite old, with dark wooden beams visible both overhead and set into the walls. Allowing your gaze to wander over the worn, drab-green carpet, you see that a long, free-standing desk has been positioned on the far side of this room. Behind this desk is standing
+		Оглядываясь по сторонам, когда ты [pc.step] внутрь, ты понимаешь, что стоишь в зоне ресепшена умеренного размера. Как и снаружи, здание выглядит довольно старым: сверху и в стенах видны темные деревянные балки. Твой взгляд скользит по потертому ковру тускло-зеленого цвета, и ты замечаешь длинный отдельно стоящий стол в дальнем конце комнаты. За этим столом стоит
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
-			 the familiar horse-girl, Sterope.
+			 знакомая лошадиная девочка, Стеропа.
 		#ELSE
-			 a lesser horse-girl.
+			 низшая лошадиная девочка.
 		#ENDIF
-		 About half a dozen cushioned chairs are lined up along the sides of this area, and although they look to be quite shabby and well used, they're all currently unoccupied.
+		 Вдоль стен расставлено около полудюжины мягких кресел; хоть они и выглядят довольно потрепанными и видавшими виды, сейчас все они свободны.
 	</p>
 	<p>
-		From here, you could proceed forwards to greet
+		Отсюда ты можешь пройти вперед, чтобы поприветствовать
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
-			 Sterope,
+			 Стеропу,
 		#ELSE
-			 the horse-girl Enforcer,
+			 лошадиную девочку Enforcer,
 		#ENDIF
-		 or instead turn around and exit the building via the same way you entered it...
+		 или же развернуться и выйти из здания тем же путем, которым вошел...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="EXIT_LEAVE"><![CDATA[
 	<p>
-		Having concluded your business within the Enforcer station, you exit via the main entrance. After passing through the propped-open doors, you pass through the knot garden and quickly return to the street beyond.
+		Завершив свои дела на станции Enforcer, ты выходишь через главный вход. Пройдя сквозь приоткрытые двери, ты пересекаешь регулярный сад и быстро возвращаешься на улицу.
 	</p>
 	]]>
 	</htmlContent>
@@ -76,59 +76,59 @@
 	<htmlContent tag="RECEPTION"><![CDATA[
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
-			Crossing through the reception area, you approach the desk and say hello to Sterope.
+			Пересекая зону ресепшена, ты подходишь к столу и приветствуешь Стеропу.
 		#ELSE
-			Crossing through the reception area, you approach the desk and introduce yourself to the receptionist.
+			Пересекая зону ресепшена, ты подходишь к столу и представляешься сотруднице на ресепшене.
 		#ENDIF
 		#IF(flags.hasFlag(FLAG_innoxia_sterope_fully_furry))
-			 Having convinced her to remain as a greater horse-girl, you see that Sterope is in the form of a fully anthropomorphised horse. Both the hair covering her body as well as the mane-like hair which is tied up into a bun is dark brown in colour, while her eyes are the same shade of green that they were when she was mostly human. Her Enforcer uniform is in immaculate condition, and as you finish your greeting, she brushes a speck of dust from her sleeve and fixes you with her stern gaze.
+			 Убедив её остаться в облике высшей лошадиной девы, ты видишь, что Стеропа приняла облик полностью антропоморфной лошади. Волосы, покрывающие её тело, и грива, собранная в пучок, тёмно-коричневого цвета, а её глаза сохранили тот же оттенок зелени, что и когда она была почти человеком. Её униформа Enforcer в безупречном состоянии; закончив приветствие, она смахивает пылинку с рукава и впивается в тебя суровым взглядом.
 		#ELSE
-			 From her dark brown, horse-like ears and tail, it's quite obvious that
+			 По её тёмно-коричневым лошадиным ушам и хвосту совершенно очевидно, что
 			#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
-				 Sterope
+				 Стеропа
 			#ELSE
-				 this receptionist
+				 эта регистраторша
 			#ENDIF
-			 is a horse-girl, but apart from these animal features she's otherwise human in appearance. Her skin is olive in colour, while her dark brown hair is tied up into a bun. Her Enforcer uniform is in immaculate condition, and as you finish your greeting, she brushes a speck of dust from her sleeve and sternly gazes at you with her green eyes.
+			 — лошадиная дева, но, помимо этих звериных черт, внешне она почти человек. У неё оливковая кожа, а тёмно-коричневые волосы собраны в пучок. Её униформа Enforcer в безупречном состоянии; закончив приветствие, она смахивает пылинку с рукава и строго смотрит на тебя своими зелёными глазами.
 		#ENDIF
 	</p>
 	#IF(pc.hasAnyEnforcerStatusEffect())
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
 			<p>
-				[sterope.speech([pc.Name],)] the cold-mannered horse-girl greets you by simply stating your name. Suspiciously looking at your Enforcer uniform, she asks, [sterope.speech(Are you <i>really</i> an Enforcer?)]
+				[sterope.speech([pc.Name],)] холодно deвающая лошадиная дева приветствует тебя, просто называя твоё имя. Подозрительно оглядев твою форму Enforcer, она спрашивает: [sterope.speech(Ты <i>действительно</i> Enforcer?)]
 			</p>
 			<p>
-				You assure Sterope that you are, but that you're on a secret assignment from Dominion and so can't say too much to her. Before you can say anything else, Sterope
+				Ты заверяешь Стеропу, что так оно и есть, но ты на секретном задании от Dominion, поэтому не можешь рассказать ей слишком много. Прежде чем ты успеваешь добавить что-то ещё, Стеропа
 				#IF(flags.hasFlag(FLAG_innoxia_sterope_met_in_tavern))
-					 flashes you an icy look and hisses under her breath, [sterope.speech(Don't you <i>dare</i> mention anything about my private life while I'm on duty.)]
+					 бросает на тебя ледяной взгляд и шипит сквозь зубы: [sterope.speech(Только <i>смей</i> заикнуться о моей личной жизни, пока я на службе.)]
 				#ELSE
-					 gives you a slightly disdainful look, before asking, [sterope.speech(So, what is it that I can help you with?)]
+					 одаривает тебя слегка презрительным взглядом, прежде чем спросить: [sterope.speech(Итак, чем я могу тебе помочь?)]
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
-				[sterope.speech([pc.Name], is it?)] she replies in a flat tone. Her professional attitude borders on being cold and aloof, and after suspiciously looking at your Enforcer uniform, she taps the nameplate on her chest and reveals, [sterope.speech(I'm Constable Hippos, but as you're an Enforcer as well, I can be 'Sterope' to you... You <i>are</i> an Enforcer, aren't you?)]
+				[sterope.speech([pc.Name], значит?)] — отвечает она ровным тоном. Её профессионализм граничит с холодностью и отстранённостью. Подозрительно осмотрев твою форму Enforcer, она постукивает по именной табличке на груди и сообщает: [sterope.speech(Я констебль Hippos, но раз уж ты тоже Enforcer, можешь звать меня просто «Sterope»... Ты ведь <i>являешься</i> Enforcer, верно?)]
 			</p>
 			<p>
-				You assure Sterope that you are, but that you're on a secret assignment from Dominion and so can't say too much to her. Before you can say anything else, Sterope gives you a slightly disdainful look, before asking, [sterope.speech(So, what is it that I can help you with?)]
+				Ты заверяешь Sterope, что это так, но добавляешь, что находишься на секретном задании от Dominion и не можешь раскрывать слишком много подробностей. Прежде чем ты успеваешь сказать что-то ещё, Sterope одаривает тебя слегка презрительным взглядом и спрашивает: [sterope.speech(Итак, чем я могу тебе помочь?)]
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(flags.hasFlag(FLAG_innoxia_elis_enforcers_sterope_met))
 			<p>
-				[sterope.speech([pc.Name],)] the cold-mannered horse-girl greets you by simply stating your name. Before you can say anything else, she
+				[sterope.speech([pc.Name],)] — холодно приветствует тебя лошадиная дева, просто называя твоё имя. Прежде чем ты успеваешь что-то ответить, она
 				#IF(flags.hasFlag(FLAG_innoxia_sterope_met_in_tavern))
-					 flashes you an icy look and hisses under her breath, [sterope.speech(Don't you <i>dare</i> mention anything about my private life while I'm on duty.)]
+					 бросает на тебя ледяной взгляд и шипит сквозь зубы: [sterope.speech(Только <i>смей</i> заикнуться о моей личной жизни, пока я на службе.)]
 				#ELSE
-					 gives you a slightly disdainful look, before asking, [sterope.speech(Do you have a crime to report? Or is there something else you're hoping that I can help you with?)]
+					 одаривает тебя слегка презрительным взглядом и спрашивает: [sterope.speech(Хочешь сообщить о преступлении? Или тебя интересует что-то другое?)]
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
-				[sterope.speech([pc.Name], is it?)] she replies in a flat tone. Her professional attitude borders on being cold and aloof, and with a slightly disdainful look on her face, she taps the nameplate on her chest and reveals, [sterope.speech(I'm Constable Hippos, but to build trust with members of the public we've all been instructed to use our first names, so that's 'Sterope' to you. Do you have a crime to report? Or is there something else you're hoping that I can help you with?)]
+				[sterope.speech([pc.Name], так ведь?)] — отвечает она бесстрастным тоном. Её профессионализм граничит с холодной отстранённостью, и с лёгким оттенком пренебрежения на лице она постукивает по именной табличке на груди, открывая: [sterope.speech(Я констебль Гиппос, но чтобы вызывать доверие у горожан, нас всех проинструктировали называть друг друга по именам, так что для тебя я просто «Стеропе». У тебя есть преступление, о котором стоит сообщить? Или ты надеешься, что я помогу тебе с чем-то другим?)]
 			</p>
 			<p>
-				Impatiently tapping her fingernails on the desk a couple of times, Sterope waits to hear what it is that you're here for...
+				Нетерпеливо постучав ногтями по столу пару раз, Стеропе ждёт, когда ты скажешь, зачем пришёл...
 			</p>
 		#ENDIF
 	#ENDIF
@@ -137,61 +137,61 @@
 
 	<htmlContent tag="RECEPTION_STEP_BACK"><![CDATA[
 	<p>
-		Not having anything else to discuss with Sterope, you tell her that you've got to be going and [pc.step] away from her desk. Giving you the briefest of nods, the stern horse-girl simply says, [sterope.speech(Stay out of trouble.)]
+		Понимая, что обсуждать с Стеропе больше нечего, ты говоришь ей, что пора идти, и [pc.step] от её стола. Едва заметно кивнув, суровая лошадиноголовая девушка просто бросает: [sterope.speech(Не навлекай на себя неприятностей.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RECEPTION_TALK_WORK"><![CDATA[
 	<p>
-		Wanting to know more about what sort of work the Enforcers do here in Elis, you ask Sterope if there's much crime to be dealt with. 
+		Желая узнать побольше о том, чем именно занимаются Enforcer здесь, в Элисе, ты спрашиваешь Стеропе, много ли здесь преступности.
 	</p>
 	<p>
-		[sterope.speech(There's some crime, yes,)] she replies. Letting out an impatient sigh as she realises that you were hoping for more information than that, she continues in a flat tone, [sterope.speech(It used to be very peaceful here in Elis, but with the influx of refugees from the Foloi Fields, there's been an increase in criminal activity. We can easily manage it during daylight hours, but we don't have the manpower to keep the alleyways safe after dark, so don't go wandering through the northern part of town at night.)]
+		[sterope.speech(Преступность есть, да,)] — отвечает она. Издав нетерпеливый вздох, когда она понимает, что ты ждал более подробного ответа, она продолжает ровным голосом: [sterope.speech(Раньше в Элисе было очень спокойно, но с наплывом беженцев с полей Фолой уровень преступности вырос. Днём мы легко со всем справляемся, но у нас не хватает людей, чтобы патрулировать переулки после наступления темноты, так что не вздумай бродить по северной части города по ночам.)]
 	</p>
 	<p>
-		Thanking her for the information, you wonder what to ask of Sterope next...
+	Поблагодарив её за информацию, ты задумываешься о том, что спросить у Стеропы дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RECEPTION_TALK_CAREER"><![CDATA[
 	<p>
-		Wanting to know more about Sterope's background, you ask her what led to her becoming an Enforcer.
+	Желая узнать побольше о прошлом Стеропы, ты спрашиваешь её, что привело её к службе в Enforcer.
 	</p>
 	<p>
-		[sterope.speech(I don't see how that's any of your business,)] Sterope coldly replies, before sighing, [sterope.speech(You're lucky that the higher-ups have ordered us to be friendly with members of the public.)]
+	[sterope.speech(Не вижу, чтобы это тебя касалось,)] — холодно отвечает Стеропа, после чего вздыхает: [sterope.speech(Тебе повезло, что начальство велело нам быть дружелюбными с простыми горожанами.)]
 	</p>
 	<p>
-		If this is her being friendly, you can't help but wonder what Sterope would normally be like as she prepares to reveal her past to you.
+	Если это она проявляет дружелюбие, то невольно задаешься вопросом, какой Стеропа бывает обычно, пока она готовится поведать тебе о своём прошлом.
 	</p>
 	<p>
-		[sterope.speech(If you must know, I joined the Enforcers when I was just nineteen, and I've been stationed here in Elis for almost my entire career,)] she says, before going on to state, [sterope.speech(I've been offered a promotion several times, but I've no interest in going through officer school, and I like my job here. I think that's all you need to know.)]
+	[sterope.speech(Если тебе так уж необходимо знать, я вступила в ряды Enforcer, когда мне было всего девятнадцать, и почти всю свою карьеру провела здесь, в Элисе,)] — говорит она, а затем добавляет: [sterope.speech(Мне несколько раз предлагали повышение, но у меня нет желания проходить офицерскую школу, да и работа здесь мне нравится. Думаю, этого тебе достаточно.)]
 	</p>
 	<p>
-		Feeling like trying to push her to reveal any further information would be futile, you wonder what to ask Sterope next...
+	Чувствуя, что попытки вытянуть из неё больше информации будут тщетными, ты раздумываешь, о чём спросить Стеропу дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RECEPTION_TALK_LUNETTE"><![CDATA[
 	<p>
-		Curious to hear what an Enforcer has to say about Lunette, you ask Sterope what she thinks of the elder lilin and the chaos she's caused in the Foloi Fields.
+	Любопытствуя, что Enforcer думает о Лунетт, ты спрашиваешь Стеропу её мнение о старшей лилин и хаосе, который та устроила на полях Фолой.
 	</p>
 	<p>
-		[sterope.speech(It's Lunette's daughters who are causing the problem, not her,)] Sterope tactfully responds, [sterope.speech(It's certainly not for me to question a daughter of Lilith herself.)]
+	[sterope.speech(Проблемы создают дочери Лунетт, а не она сама,)] — тактично отвечает Стеропа, [sterope.speech(Мне точно не стоит ставить под сомнение саму дочь лилин.)]
 	</p>
 	<p>
-		Just as you think that Sterope has finished her response, she continues, [sterope.speech(Besides, it's really not so bad for those out in the Fields. There are far worse fates than being taken by a succutaur and turned into her submissive, worthless cock-sleeve...)]
+		Только ты успеваешь подумать, что Стеропа закончила свой ответ, как она продолжает: [sterope.speech(К тому же, для тех, кто живет в Полях, всё не так уж и плохо. Есть судьбы и похуже, чем попасть к суккубу и превратиться в её покорную, никчемную залупу...)]
 	</p>
 	<p>
-		Suddenly catching herself and realising what it is she's saying, Sterope clears her throat and says, [sterope.speech(Anyway, nevermind about that...)]
+		Внезапно осознав, что именно она сейчас ляпнула, Стеропа откашливается и говорит: [sterope.speech(Впрочем, забудь об этом...)]
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_sterope_unlocked))
-			Before you can tease her about what she's just said, Sterope flashes you a stern look and hisses, [sterope.speech(Don't say a word... Remember, I'm in 'The Centaur's Sword' every evening after nine...)]
+			Прежде чем ты успеваешь подразнить её за сказанное, Стеропа бросает на тебя суровый взгляд и шипит: [sterope.speech(Ни слова... Помни, я бываю в «Мече Кентавра» каждый вечер после девяти...)]
 		#ELSE
-			It seems as though the horse-girl has inadvertently revealed a secret desire of hers. Perhaps you could push her a little further and get her to admit this desire to you?
+			Похоже, эта кобылка невольно выдала свое тайное желание. Может, стоит поднажать и заставить её признаться?
 		#ENDIF
 	</p>
 	]]>
@@ -199,51 +199,51 @@
 	
 	<htmlContent tag="RECEPTION_TALK_SWORD"><![CDATA[
 	<p>
-		Wanting to know more about the group of SWORD Enforcers who are stationed here, you ask Sterope what she knows about them.
+		Желая узнать побольше о группе Enforcer из SWORD, дислоцированных здесь, ты спрашиваешь Стеропу, что ей о них известно.
 	</p>
 	<p>
-		[sterope.speech(It's not my place to share rumours with members of the public,)] the horse-girl bluntly responds, before impatiently drumming her fingers on the desk and asking, [sterope.speech(Anything else?)]
+		[sterope.speech(Не мое дело — разносить слухи среди простых смертных,)] — резко отвечает кобылка, после чего нетерпеливо барабанит пальцами по столу и спрашивает: [sterope.speech(Что-то еще?)]
 	</p>
 	<p>
-		Not satisfied with her answer, you remind Sterope that you're working on behalf of Minotallys herself, and that the lilin would be disappointed to find out that one of her town's Enforcers had been uncooperative.
+		Недовольный её ответом, ты напоминаешь Стеропе, что действуешь от имени самой Миноталлис, и что лилин будет разочарована, узнав, что одна из её Enforcer в городе оказалась такой неразговорчивой.
 	</p>
 	<p>
-		[sterope.speech(Lilin and mayor she may be, but we Enforcers are not under her command, so take your threats elsewhere,)] Sterope angrily snaps, before rolling her eyes and sighing, [sterope.speech(I suppose there's no need to make this into an issue. You want to know about those SWORD guys? Well, they don't mix with the rest of us, so I don't know much. They were assigned to Elis about five years ago, and the rumour was that they caused a fuss in Dominion and got on the wrong side of an elder lilin.)]
+		[sterope.speech(Пусть она и мэр лилин, но мы, Enforcer, ей не подчиняемся, так что прибереги свои угрозы для кого-нибудь другого,)] — сердито огрызается Стеропа, после чего закатывает глаза и вздыхает: [sterope.speech(Полагаю, нет смысла раздувать из этого проблему. Хочешь знать об этих парнях из SWORD? Ну, они не особо смешиваются с остальными, так что я многого не знаю. Их прислали в Elis около пяти лет назад; ходили слухи, что они навели шороху в Dominion и перешли дорогу одной старшей лилин.)]
 	</p>
 	<p>
-		Wanting to know more, you press Sterope for more information. Shrugging her shoulders and crossing her arms, the horse-girl reluctantly reveals, [sterope.speech(I don't know if any of this is true, but there was talk that a recognised daughter of the elder lilin Lasielle had been given a high-ranking position in the Enforcers, and that a year or so after her appointment a SWORD group arrested her. Apparently Lasielle was furious and wanted to disband SWORD entirely. All that happened in the end, however, was that the Enforcers who were involved were transferred here.)]
+		Желая узнать больше, ты расспрашиваешь Стеропу. Пожав плечами и скрестив руки на груди, кобылица неохотно признается: [sterope.speech(Не знаю, правда ли это, но поговаривали, что признанная дочь старшей лилин Ласиэль получила высокий пост в Enforcer, а спустя год или около того группа SWORD арестовала её. Говорят, Ласиэль была в ярости и хотела вовсе распустить SWORD. В итоге всё закончилось лишь тем, что причастных к этому Enforcer перевели сюда.)]
 	</p>
 	<p>
-		Before you can ask Sterope if she knows anything else, she shakes her head and says, [sterope.speech(That's all I know. If you want to know more, just ask them yourself.)]
+		Прежде чем ты успеваешь спросить Стеропу, знает ли она что-нибудь ещё, она качает головой и говорит: [sterope.speech(Это всё, что мне известно. Если хочешь знать больше — спроси их сама.)]
 	</p>
 	<p>
-		Thanking the horse-girl for the information, you wonder what to do next...
+		Поблагодарив кобылицу за информацию, ты задумываешься, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RECEPTION_FLIRT"><![CDATA[
 	<p>
-		Seizing upon what Sterope has just said, you tease the horse-girl by asking her if she thinks about succutaurs turning people into submissive, worthless cock-sleeves often. Although she blushes a little as you say this, Sterope maintains her composure and looks down her nose at you as she prepares her response.
+		Воспользовавшись словами Стеропы, ты поддразниваешь коняшку, спрашивая, не часто ли она думает о суккубах, превращающих людей в покорные, никчемные чехлы для члена. Хотя при этих словах она слегка краснеет, Стеропа сохраняет самообладание и смотрит на тебя свысока, готовясь ответить.
 	</p>
 	<p>
-		[sterope.speech(I'm on duty at the moment, so this sort of conversation is entirely unacceptable,)] she coolly states, before glancing around to make sure that no other Enforcers are nearby. Satisfied that nobody's going to overhear her, she says under her breath, [sterope.speech(If you like that sort of thing, I'm in 'The Centaur's Sword' every evening. Look for me after nine.)]
+		[sterope.speech(Сейчас я на службе, так что подобные разговоры совершенно неуместны,)] — холодно заявляет она, прежде чем оглядеться, проверяя, нет ли поблизости других Enforcer. Убедившись, что её никто не подслушает, она шепчет себе под нос: [sterope.speech(Если тебе такое нравится, я бываю в «Мече Кентавра» каждый вечер. Ищи меня после девяти.)]
 	</p>
 	<p>
-		Before you can ask her any more about this, the Enforcer clears her throat and asks in a stern tone, [sterope.speech(Is there anything else I can help you with?)]
+		Прежде чем ты успеваешь расспросить её подробнее, Enforcer откашливается и суровым тоном спрашивает: [sterope.speech(Могу ли я помочь тебе чем-то ещё?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RECEPTION_SWORD"><![CDATA[
 	<p>
-		Wanting to meet with the SWORD Enforcers who are stationed here as soon as possible, you tell Sterope that you've been sent by Minotallys herself to make contact with them. The horse-girl flashes you a suspicious look, before flatly stating, [sterope.speech(I find that hard to believe. I'll need some proof.)]
+		Желая как можно скорее встретиться с Enforcer из SWORD, дислоцированными здесь, ты говоришь Стеропе, что тебя прислала сама Миноталлис для установления контакта. Коняшка бросает на тебя подозрительный взгляд, а затем сухо произносит: [sterope.speech(Мне в это верится с трудом. Мне понадобятся доказательства.)]
 	</p>
 	<p>
-		Taking out your town hall access card, you show it to the distrustful Enforcer, who snatches it from your [pc.hand(true)] and closely inspects it. Letting out an annoyed hum, she hands it back to you, before saying, [sterope.speech(Fine, you can head on through. They're in the room at the far end of the corridor, but don't expect a warm welcome.)]
+		Достав свою карту доступа к ратуше, ты показываешь её недоверчивой Enforcer, которая выхватывает её из твоей [pc.hand(true)] и внимательно осматривает. Раздраженно хмыкнув, она возвращает её тебе и говорит: [sterope.speech(Ладно, можешь проходить. Они в комнате в самом конце коридора, но не жди теплого приема.)]
 	</p>
 	<p>
-		With that, Sterope motions for you to head on past her desk and through the door behind her. Before you proceed, however, you could always take a moment to ask her what she could tell you about these SWORD Enforcers...
+		С этими словами Стеропа жестом приглашает тебя пройти мимо её стола и войти в дверь за её спиной. Однако, прежде чем идти дальше, ты всегда можешь спросить её, что ей известно об этих Enforcer из SWORD...
 	</p>
 	]]>
 	</htmlContent>
@@ -253,17 +253,17 @@
 
 	<htmlContent tag="LOCKED_DOOR"><![CDATA[
 	<p>
-		This door is marked as leading to the Enforcer station's cells and offices, although a quick test of the handle reveals it to be locked. An arcane card-reading device is attached to the wall to one side of it, letting you know that you'd need an access card to gain entry.
+		На этой двери есть надпись, что она ведёт к камерам и кабинетам станции Enforcer, но короткая проверка ручки показывает, что она заперта. Сбоку на стене закреплено аркана-устройство для считывания карт, намекающее на то, что для входа тебе понадобится карта доступа.
 	</p>
 	<p>
-		Unable to proceed through this door, all you can do is turn around and head back into the corridor...
+		Не имея возможности пройти через эту дверь, тебе остаётся лишь развернуться и вернуться в коридор...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="LOCKED_DOOR_STEP_BACK"><![CDATA[
 	<p>
-		You [pc.step] back into the corridor and wonder which way to go now...
+		Ты [pc.step] в коридор и гадаешь, куда теперь идти...
 	</p>
 	]]>
 	</htmlContent>
@@ -273,7 +273,7 @@
 
 	<htmlContent tag="CELLS"><![CDATA[
 	<p>
-		TODO Four cells are where the town's criminals are held while awaiting trial...
+		TODO В четырёх камерах содержатся городские преступники в ожидании суда...
 	</p>
 	]]>
 	</htmlContent>
@@ -283,7 +283,7 @@
 
 	<htmlContent tag="OFFICE"><![CDATA[
 	<p>
-		TODO In this office Enforcers fill out paperwork and plan their patrols...
+		TODO В этом кабинете Enforcer заполняют бумаги и планируют свои патрули...
 	</p>
 	]]>
 	</htmlContent>
@@ -294,103 +294,103 @@
 	<htmlContent tag="SWORD"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_innoxia_elis_sword_met))
 		<p>
-			The door at the end of the corridor is fitted with an opaque glass window, and etched into this glass are the words 'SWORD 3rd Battalion, 1st Company - Company Headquarters'. An old, seriously-dented ballistic helmet is being used to prop this door ajar, although all that can be seen through the narrow opening is a section of beige wall. Several deep voices can be heard within, which occasionally turn into brief, booming laughs.
+			Дверь в конце коридора оснащена непрозрачным стеклянным окном, на котором выгравированы слова: «SWORD, 3-й батальон, 1-я рота — Штаб роты». Чтобы дверь не закрывалась плотно, её подпирают старым, сильно помятым баллистическим шлемом, хотя через узкую щель видна лишь часть бежевой стены. Изнутри доносятся несколько низких голосов, которые время от времени взрываются коротким громогласным смехом.
 		</p>
 		<p>
-			Giving the door a brief knock, you push it open and [pc.step] into the room beyond. The voices are instantly silenced as you make your entrance, and the eyes of half a dozen veteran SWORD Enforcers are fixed onto you. A couple of these Enforcers are sitting behind desks on the far side of the room, but the rest are lounging about on sofas that have been arranged into a rectangular area to the left of where you're standing. While each of these Enforcers are of a different race, and a few of them are female, they all appear to be at least in their late fifties. Although you've seen SWORD Enforcers on duty in Elis's town hall, you don't recognise any of the ones before you, and you realise that those guards must be separate to this group.
+			Коротко постучав в дверь, ты толкаешь её и [pc.step] в комнату. Стоит тебе войти, как голоса мгновенно стихают, и на тебя устремляются взгляды доброго десятка опытных Enforcer из SWORD. Пара из них сидит за столами в дальнем конце комнаты, остальные развалились на диванах, расставленных прямоугольником слева от тебя. Хотя все эти Enforcer принадлежат к разным расам, а некоторые из них — женщины, на вид всем не меньше пятидесяти с лишним лет. И хотя ты уже видел Enforcer на службе в ратуше Элиса, здесь ты не узнаёшь ни одного из присутствующих — значит, эта группа состоит из совсем других стражей.
 		</p>
 		<p>
-			One of the Enforcers who's sitting behind a desk is a large, grey-furred wolf-boy with a furry beard and a black patch over one eye. Despite appearing to be in his late sixties, he looks to be very physically fit, and from his confident posture and position in the room he seems to be the leader of this group. As you start to introduce yourself, he grunts and says in a deep, gravelly voice, [hammer.speech(We know who you are, [pc.name]. You think someone as dangerous as you enters our town without us noticing? State your business quickly; we don't have time for small talk.)]
+			Один из Enforcer, сидящий за столом, — крупный серошёрстный волк-мальчик с густой бородой и чёрной повязкой на одном глазу. Несмотря на то, что ему на вид под семьдесят, он выглядит весьма крепким, а по его уверенной позе и положению в комнате кажется, что именно он здесь главный. Когда ты начинаешь представляться, он хмыкает и произносит глубоким, хриплым голосом: [hammer.speech(Мы знаем, кто ты, [pc.name]. Думаешь, кто-то настолько опасный, как ты, может войти в наш город незамеченным? Говори быстрее, зачем пришёл; у нас нет времени на пустую болтовню.)]
 		</p>
 		#IF(pc.hasAnyEnforcerStatusEffect())
 			<p>
-				Before you can start to say anything, a mean-looking tiger-girl takes one look at your uniform and growls from her position on one of the sofas, [style.speechFeminineStrong(You're not convincing anyone in this room that you're an Enforcer, so don't even try.)]
+				Прежде чем ты успеваешь открыть рот, какая-то злобная девчонка-тигрица бросает взгляд на твою форму и рычит, не вставая со своего дивана: [style.speechFeminineStrong(Ты никого в этой комнате не убедишь, что ты Enforcer, так что даже не пытайся.)]
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Pushing open the door marked 'SWORD 3rd Battalion, 1st Company - Company Headquarters' at the far end of the corridor, you [pc.step] around the old, seriously-dented ballistic helmet which was being used to prop the door ajar and enter the room beyond. The voices of the Enforcers, which were audible from out in the corridor, are instantly silenced as you make your entrance. As they see that it's you, however, they turn back to their conversations and leave you to Hammer and Ghost. 
+			Толкнув дверь с надписью «3-й батальон МЕЧА, 1-я рота — Штаб роты» в дальнем конце коридора, ты [pc.step] старый, изрядно помятый баллистический шлем, которым подпирали дверь, и входишь внутрь. Голоса Enforcer, которые были слышны еще в коридоре, мгновенно стихают, стоит тебе появиться. Однако, узнав тебя, они возвращаются к своим разговорам, оставляя тебя наедине с Hammer и Ghost.
 		</p>
 		#IF(pc.getQuest(QUEST_LINE_MAIN)==QUEST_MAIN_3_G_SWORD_SCAPEGOAT)
 			#IF(game.getDayOfWeek()==DOW_TUESDAY && game.isHourBetween(17, 24))
 				<p>
-					The small otter-girl turns on her sofa to face you and say, [ghost.speech(The succubus and her gang are going to be holding their weekly meeting in a few hours. You're ready to go, right?)]
+					Маленькая девчонка-выдра поворачивается к тебе на диване и говорит: [ghost.speech(Суккуб и её шайка соберутся на своё еженедельное собрание через несколько часов. Ты ведь готов?)]
 				</p>
 				<p>
-					[hammer.speech(Refugees are still going missing. We can't afford to wait another week,)] Hammer grunts while cracking his knuckles, [hammer.speech(We need to take that bitch out tonight.)]
+					[hammer.speech(Беженцы всё ещё пропадают. Мы не можем позволить себе ждать ещё неделю,)] — ворчит Hammer, разминая костяшки пальцев, — [hammer.speech(Нам нужно выследить эту сучку уже сегодня ночью.)]
 				</p>
 				<p>
-					Although you're not obliged to go with them this evening, it seems like it would be a good idea to get this operation done sooner rather than later...
+					Хотя ты и не обязан идти с ними сегодня вечером, кажется, будет разумно завершить эту операцию как можно скорее...
 				</p>
 			#ELSE
 				<p>
-					The small otter-girl turns on her sofa to face you and say,
+					Маленькая девчонка-выдра поворачивается к тебе на диване и говорит:
 					#IF(game.getDayOfWeek()==DOW_MONDAY)
-						 [ghost.speech(The succubus and her gang are going to be holding their weekly meeting tomorrow evening. You'll be ready for that, right?)]
+						 [ghost.speech(Суккуб и её шайка соберутся на своё еженедельное собрание завтра вечером. Ты ведь будешь готов?)]
 					#ELSE
-						 [ghost.speech(The succubus and her gang are going to be holding their weekly meeting on Tuesday evening. You'll be ready for that, right?)]
+						 [ghost.speech(Суккуб и её банда собираются провести своё еженедельное собрание во вторник вечером. Ты ведь будешь готов?)]
 					#ENDIF
 				</p>
 				<p>
-					[hammer.speech([pc.She]'ll be ready,)] Hammer grunts, before looking at you from behind his desk and saying, [hammer.speech(We've got other ops to plan, so we'll see you on Tuesday evening.)]
+					[hammer.speech([pc.She] будет готов,)] — хмыкает Hammer, а затем смотрит на тебя из-за своего стола и добавляет: [hammer.speech(Нам нужно спланировать другие операции, так что увидимся во вторник вечером.)]
 				</p>
 				<p>
-					It seems like you'll have to earn the Enforcers' trust before they'll be comfortable with you being here...
+					Похоже, тебе придётся заслужить доверие Enforcer, прежде чем они привыкнут к твоему присутствию...
 				</p>
 			#ENDIF
 		#ELSE
 			#IF(flags.hasFlag(FLAG_innoxia_sword_mission_react_needed))
 				<p>
-					[hammer.speech(Good work on that op,)] the wolf-boy grunts from behind his desk.
+					[hammer.speech(Хорошая работа в той операции,)] — ворчит волк-мальчик из-за своего стола.
 				</p>
 				<p>
-					[ghost.speech(Yeah, sorry we had to plan to use you as a scapegoat, but at least it didn't come to that, right?)] Ghost says with a smile from her place on one of the sofas.
+					[ghost.speech(Да, прости, что нам пришлось планировать использование тебя как козла отпущения, но в итоге всё обошлось, верно?)] — с улыбкой говорит Ghost, сидя на одном из диванов.
 				</p>
 				#IF(flags.hasFlag(FLAG_innoxia_sword_mission_reward))
 					#IF(flags.hasFlag(FLAG_innoxia_sword_mission_chose_hammer))
 						<p>
-							[hammer.speech(You didn't have to risk yourself to help us fight those gang members,)] Hammer sternly says, before placing a sheathed dagger down on his desk and grunting, [hammer.speech(I don't like being in someone's debt, so take this and then we're even.)]
+							[hammer.speech(Тебе не обязательно было так рисковать собой, чтобы помочь нам разобраться с теми бандитами,)] — строго говорит Hammer, прежде чем положить на стол кинжал в ножнах и хмыкнуть: [hammer.speech(Не люблю быть должным, так что забирай это, и мы в расчёте.)]
 						</p>
 						<p>
-							[ghost.speech(When's the last time you actually used that thing?)] Ghost playfully asks the wolf-boy as she sees what it is he's offering you.
+							[ghost.speech(Когда ты в последний раз реально пользовался этой штукой?)] — игриво спрашивает Ghost у волка-мальчика, разглядывая то, что он тебе предлагает.
 						</p>
 						<p>
-							[hammer.speech(Knives aren't my style; I leave that work to you,)] Hammer replies, before beckoning for you to take the dagger and barking, [hammer.speech(Come on, I don't have all day.)]
+							[hammer.speech(Ножи — это не мой стиль; оставляю эту работу тебе,)] — отвечает Hammer, после чего жестом приглашает тебя забрать кинжал и рявкает: [hammer.speech(Давай же, у меня не весь день впереди.)]
 						</p>
 						<p>
-							Despite his stern attitude, you get the feeling that the wolf-boy genuinely likes you. This feeling is reinforced as you approach his desk and see that the dagger he's giving you looks to be quite a special one...
+							Несмотря на его суровый вид, у тебя возникает чувство, что волк-мальчишка тебе искренне симпатизирует. Это ощущение только усиливается, когда ты подходишь к его столу и видишь, что кинжал, который он тебе дарит, кажется весьма особенным...
 						</p>
 					#ELSE
 						<p>
-							Before you can reply, the otter-girl holds a sheathed dagger towards you and says, [ghost.speech(We didn't expect you to put yourself at risk and fight alongside us. I get the feeling that you're going to get yourself into a lot more fights in the future, so perhaps you'd like this?)]
+							Прежде чем ты успеваешь ответить, девочка-выдра протягивает тебе кинжал в ножнах и говорит: [ghost.speech(Мы не ожидали, что ты рискнешь собой и сразишься вместе с нами. У меня такое чувство, что в будущем тебе еще придется не раз ввязаться в драку, так что, может, возьмешь это?)]
 						</p>
 						<p>
-							[hammer.speech(You're giving away your dagger?)] Hammer asks in surprise as he sees what it is the otter-girl's offering you.
+							[hammer.speech(Ты что, отдаешь свой кинжал?)] — удивленно спрашивает Хаммер, видя, что именно предлагает тебе девочка-выдра.
 						</p>
 						<p>
-							[ghost.speech(I have like ten of these,)] Ghost replies, before chuckling at the look of surprise on Hammer's face and teasing, [ghost.speech(So I can still surprise you even after all these years.)]
+							[ghost.speech(У меня их штук десять,)] — отвечает Призрак, а затем, посмеиваясь над удивленным лицом Хаммера, поддразнивает: [ghost.speech(Значит, я все еще могу тебя удивить даже спустя столько лет.)]
 						</p>
 						<p>
-							The wolf-boy simply grunts and crosses his arms in response. You understand his surprise as you approach Ghost and see that the dagger she's giving you looks to be quite a special one...
+							Волк-мальчишка лишь хмыкает в ответ и скрещивает руки на груди. Ты понимаешь его изумление, когда подходишь к Призраку и видишь, что кинжал, который она тебе дарит, кажется весьма особенным...
 						</p>
 					#ENDIF
 				#ELSE
 					<p>
-						[hammer.speech(Before you ask, we're working on the plan to defend Elis,)] Hammer grunts, motioning towards a large map of the town and the surrounding area that's pinned to one wall. Although there are an impressive number of lines, unit markers, and technical symbols drawn over it, there doesn't quite seem to be enough to defend the entire town. Noticing your questioning look, the wolf-boy simply grunts, [hammer.speech(We'll get it sorted.)]
+						[hammer.speech(Прежде чем ты спросишь, мы уже работаем над планом обороны Элиса,)] — ворчит Hammer, указывая на большую карту города и окрестностей, приколотую к стене. Хотя на ней начертано впечатляющее количество линий, обозначений подразделений и технических символов, кажется, что этого всё равно недостаточно, чтобы защитить весь город. Заметив твой вопросительный взгляд, волк-мальчик просто хмыкает: [hammer.speech(Разберемся.)]
 					</p>
 					<p>
-						Now that the SWORD Enforcers seem to trust you, you wonder if you can ask them a few questions...
+						Теперь, когда Enforcer из SWORD, похоже, доверяют тебе, ты гадаешь, не расспросить ли их о чём-нибудь...
 					</p>
 				#ENDIF
 			#ELSE
 				<p>
-					[ghost.speech(Hi, [pc.name],)] the otter-girl cheerfully calls out from her place on one of the sofas.
+					[ghost.speech(Привет, [pc.name],)] — весело окликает тебя девочка-выдра, сидя на одном из диванов.
 				</p>
 				<p>
-					[hammer.speech(Before you ask, we're working on the plan to defend Elis,)] Hammer grunts, motioning towards a large map of the town and the surrounding area that's pinned to one wall. Although there are an impressive number of lines, unit markers, and technical symbols drawn over it, there doesn't quite seem to be enough to defend the entire town. Noticing your questioning look, the wolf-boy simply grunts, [hammer.speech(We'll get it sorted.)]
+					[hammer.speech(Прежде чем ты спросишь, мы уже работаем над планом обороны Элиса,)] — ворчит Hammer, указывая на большую карту города и окрестностей, приколотую к стене. Хотя на ней начертано впечатляющее количество линий, обозначений подразделений и технических символов, кажется, что этого всё равно недостаточно, чтобы защитить весь город. Заметив твой вопросительный взгляд, волк-мальчик просто хмыкает: [hammer.speech(Разберемся.)]
 				</p>
 				<p>
-					Now that the SWORD Enforcers seem to trust you, you wonder if you can ask them a few questions...
+					Теперь, когда Enforcer из SWORD, похоже, доверяют тебе, ты гадаешь, не расспросить ли их о чём-нибудь...
 				</p>
 			#ENDIF
 		#ENDIF
@@ -400,255 +400,254 @@
 
 	<htmlContent tag="SWORD_DAGGER_HAMMER"><![CDATA[
 	<p>
-		[pc.Stepping] up to Hammer's desk, you take the offered dagger from him. Unclasping the sheath's restraining strap, you slide the weapon free to get a good look at it. It's quite simple in design, having a plain foil grip and a tapered, double-edged blade. Like almost all weapons in the realm, the blade isn't made from metal, but is instead formed from arcane energy. Its sharp point makes it clear that it was made for thrusting and stabbing attacks.
+		[pc.Stepping] Подойдя к столу Хаммера, ты берешь предложенный им кинжал. Расстегнув ремешок на ножнах, ты вынимаешь оружие, чтобы рассмотреть его получше. Дизайн довольно простой: лаконичная рукоять и сужающееся обоюдоострое лезвие. Как и почти всё оружие в этом мире, клинок сделан не из металла, а сформирован из арканной энергии. Острая заточка ясно дает понять, что он предназначен для колющих и режущих ударов.
 	</p>
 	<p>
-		[hammer.speech(We were issued those back when SWORD was first formed,)] Hammer reveals, [hammer.speech(They still use the same design today, but that one's a first pattern example. They only issued them from 1976 to '77.)]
+		[hammer.speech(Их выдали нам еще тогда, когда SWORD только сформировалась,)] — признается Хаммер, — [hammer.speech(Дизайн до сих пор такой же, но этот экземпляр — образец самого первого паттерна. Их выдавали всего с семьдесят шестого по семьдесят седьмой год.)]
 	</p>
 	<p>
-		[ghost.speech(You sure you want to be giving it away?)] Ghost asks from the other side of the room, [ghost.speech(Haven't you got some memories attached to that thing?)]
+		[ghost.speech(Ты уверен, что хочешь им расстаться?)] — спрашивает Призрак с другого конца комнаты, — [ghost.speech(Разве у тебя не осталось с этой штукой каких-то воспоминаний?)]
 	</p>
 	<p>
-		[hammer.speech(Only bad ones,)] Hammer grunts, before giving you a brief nod and saying, [hammer.speech(I haven't unsheathed it for over a decade. At least with you it might see some use.)]
+		[hammer.speech(Только плохих,)] — ворчит Хаммер, после чего коротко кивает тебе и добавляет: [hammer.speech(Я не вынимал его из ножен больше десяти лет. С тобой он, по крайней мере, может пригодиться в деле.)]
 	</p>
 	<p>
-		[ghost.speech(Oh, and before you ask, we're working on the plan to defend Elis,)] Ghost says, motioning towards a large map of the town and the surrounding area that's pinned to one wall. Although there are an impressive number of lines, unit markers, and technical symbols drawn over it, there doesn't quite seem to be enough to defend the entire town. Noticing your questioning look, the otter-girl sighs, [ghost.speech(We'll get it sorted. I hope...)]
+		[ghost.speech(О, и прежде чем ты спросишь: мы работаем над планом обороны Элиса,)] — говорит Призрак, указывая на большую карту города и окрестностей, приколотую к стене. Хотя на ней начертано впечатляющее количество линий, маркеров подразделений и технических символов, кажется, что этого маловато, чтобы защитить весь город. Заметив твой вопросительный взгляд, девочка-выдра вздыхает: [ghost.speech(Мы со всем разберемся. Надеюсь...)]
 	</p>
 	<p>
-		Now that the SWORD Enforcers seem to trust you, you wonder if you can ask them a few questions...
+		Поскольку Enforcer из SWORD, кажется, начинают тебе доверять, ты задаешься вопросом: а не расспросить ли их о чем-нибудь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_DAGGER_GHOST"><![CDATA[
 	<p>
-		[pc.Stepping] over to Ghost, you take the offered dagger from her. Unclasping the sheath's restraining strap, you slide the weapon free to get a good look at it. It's quite simple in design, having a plain foil grip and a tapered, double-edged blade. Like almost all weapons in the realm, the blade isn't made from metal, but is instead formed from arcane energy. Its sharp point makes it clear that it was made for thrusting and stabbing attacks.
+		[pc.Stepping] к Ghost, ты берешь предложенный ею кинжал. Расстегнув ремешок на ножнах, ты вынимаешь оружие, чтобы рассмотреть его получше. Дизайн довольно простой: лаконичная рукоять и сужающееся обоюдоострое лезвие. Как и почти всё оружие в этом мире, клинок сделан не из металла, а сформирован из арканной энергии. Острое острие ясно дает понять, что он создан для колющих и режущих ударов.
 	</p>
 	<p>
-		[ghost.speech(We were issued these back when SWORD was first formed,)] Ghost reveals, [ghost.speech(They still use the same design today, but this one's a first pattern example. They only issued them from 1976 to '77. The newer ones are fine, but I've always preferred the weighting and feel of these old ones.)]
+		[ghost.speech(Нам выдали их еще тогда, когда SWORD только сформировалась,)] — признается Ghost, — [ghost.speech(Дизайн до сих пор такой же, но этот экземпляр — образец первого паттерна. Их выдавали всего с 76-го по 77-й год. Новые тоже хороши, но мне всегда больше нравился вес и баланс этих старых.)]
 	</p>
 	<p>
-		[hammer.speech(A firearm's the better choice,)] Hammer grunts from the other side of the room, [hammer.speech(Knife fights are far too risky.)]
+		[hammer.speech(Огнестрел — куда лучший выбор,)] — ворчит Hammer с другого конца комнаты, — [hammer.speech(Бои на ножах слишком рискованны.)]
 	</p>
 	<p>
-		[ghost.speech(It's only risky if the target sees you before they feel the blade,)] Ghost coldly replies, before giving you a brief nod and saying, [ghost.speech(I prefer to run my blades with a poison enchantment, but you do you. Thanks again for backing us up on that op.)]
+		[ghost.speech(Рискованно только в том случае, если цель увидит тебя раньше, чем почувствует лезвие,)] — холодно отвечает Ghost, после чего коротко кивает тебе и добавляет: [ghost.speech(Я предпочитаю накладывать на клинки ядовитое зачарование, но дело твое. И еще раз спасибо, что прикрыла нас в той операции.)]
 	</p>
 	<p>
-		[hammer.speech(Before you ask, we're working on the plan to defend Elis,)] Hammer grunts, motioning towards a large map of the town and the surrounding area that's pinned to one wall. Although there are an impressive number of lines, unit markers, and technical symbols drawn over it, there doesn't quite seem to be enough to defend the entire town. Noticing your questioning look, the wolf-boy simply grunts, [hammer.speech(We'll get it sorted.)]
+		[hammer.speech(Прежде чем ты спросишь, мы уже работаем над планом обороны Элиса,)] Hammer кряхтит, указывая на большую карту города и окрестностей, приколотую к стене. Хотя на ней начертано впечатляющее количество линий, обозначений подразделений и технических символов, кажется, что этого всё равно недостаточно, чтобы защитить весь город. Заметив твой вопросительный взгляд, волк-мальчишка просто ворчит: [hammer.speech(Разберемся.)]
 	</p>
 	<p>
-		Now that the SWORD Enforcers seem to trust you, you wonder if you can ask them a few questions...
+		Поскольку Enforcer из SWORD, кажется, начинают тебе доверять, ты задаешься вопросом: а не расспросить ли их о чем-нибудь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_INITIAL"><![CDATA[
 	<p>
-		Deciding that it would be best to do as the wolf-boy says, you explain the situation to all of the assembled SWORD Enforcers. After telling them what happened in Themiscyra, you say that the defeat of Lunexis will bring the wrath of Lunette herself down on Elis. As a result, Minotallys has asked you to come here and ask for these Enforcers' help in preparing a plan to defend the town.
+		Решив, что лучше поступить так, как сказал волк-мальчишка, ты объясняешь ситуацию всем собравшимся Enforcer из SWORD. Рассказав им о том, что произошло в Фемискире, ты добавляешь, что поражение Лунексиса обрушит гнев самой Лунетты на Элис. В результате Миноталлис просит тебя прийти сюда и призвать этих Enforcer помочь в подготовке плана обороны города.
 	</p>
 	<p>
-		[ghost.speech(So the lilin comes crawling to us for help, but she can't even be bothered to meet us in person,)] a feminine voice speaks out from the sofas. Hidden up until now behind the huge, muscular bull-boy she's sitting next to, a small otter-girl leans forwards and flashes you a grin. Like the wolf-boy, she looks to be in her late sixties, and again like her comrade she bears a visible scar. Her entire left arm, right up to the point where it meets the short sleeve of her shirt, is covered in horrific burn scars. Standing up, and allowing you to see that she's no more than [ghost.heightValue] tall in the process, she says in an accusatory tone, [ghost.speech(You've been living with one of Lyssieth's recognised daughters in Dominion, and now that you've arrived here in our town you've brought the other one with you. You've clearly been sent here on her orders, and now you come here and ask us to fight Lunette? It sounds to me like you want to use us as pawns in some plot of Lyssieth's.)]
+		[ghost.speech(Значит, лилин приползла к нам за помощью, но ей даже лень явиться лично,)] — раздается женский голос со стороны диванов. Скрытая до этого момента за массивным, мускулистым быкоподобным парнем, сидящим рядом, маленькая девочка-выдра подается вперед и расплывается в ухмылке. Как и волк-парень, она выглядит лет на шестьдесят, и, как и её товарищ, она носит на себе заметный шрам. Вся её левая рука, вплоть до самого края короткого рукава рубашки, покрыта ужасающими ожогами. Вставая и позволяя тебе увидеть, что её рост не превышает [ghost.heightValue], она произносит обвиняющим тоном: [ghost.speech(Ты жил с одной из признанных дочерей Lyssieth в Dominion, а теперь, придя в наш город, ты притащил с собой и другую. Очевидно, что тебя прислали по её указке, и теперь ты явился сюда, чтобы просить нас сражаться с Lunette? Как по мне, так ты просто хочешь использовать нас как пешек в какой-то интриге Lyssieth.)]
 	</p>
 	<p>
-		Clearly having been expecting you, this otter-girl throws a folder down onto the coffee table nearest to you, and out spill dozens of papers
+		Очевидно, ожидая тебя, эта девочка-выдра швыряет папку на кофейный столик рядом с тобой, и из неё высыпаются десятки бумаг
 		#IF(game.isSillyMode())
-			 and lurid pictures
+			 и вызывающих картинок,
 		#ENDIF
-		 detailing your exploits in Dominion, Submission, and now Elis. On the front of this folder are printed the words 'ORICL: Top Secret', letting you know that these Enforcers clearly have some important contacts back in Dominion, as well as that your exploits haven't gone unnoticed.
+			 подробно описывающих твои подвиги в Dominion, Submission, а теперь и в Elis. На обложке папки красуется надпись «ORICL: Совершенно секретно», дающая понять, что у этих Enforcer явно есть важные связи в Dominion, а твои приключения не остались незамеченными.
 	</p>
 	<p>
-		[hammer.speech(You only have to take one look at the Foloi Fields to know that Lunette needs to be stopped,)] the wolf-boy growls, [hammer.speech(but by doing your bidding it seems to me like we'll just be swapping one elder lilin for another. Why should we trust you?)]
+		[hammer.speech(Достаточно одного взгляда на поля Фолой, чтобы понять: Лунетт нужно остановить),] — рычит волк-мальчишка, — [hammer.speech(но, судя по всему, исполняя твои прихоти, мы просто сменяем одну старейшую лилин на другую. С чего нам тебе верить?)]
 	</p>
 	<p>
-		It seems like these Enforcers don't trust any of the elder lilin. As they know about your connection to Lyssieth, it looks like you'll need to do some convincing to get them on your side...
+		Похоже, эти Enforcer не доверяют ни одной из старейших лилин. Зная о твоей связи с Lyssieth, тебе явно придется приложить немало усилий, чтобы перетянуть их на свою сторону...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_CONVINCE_TRUTH"><![CDATA[
 	<p>
-		Considering how experienced and distrustful these Enforcers seem, you decide that telling them the truth is the best course of action. Although they seem to dislike the elder lilin, you aren't sure of their opinion of Lilith, and so you have to hope that they'll be sympathetic to your cause as you tell them that your plan is to defeat each of the elder lilin and then overthrow Lilith herself.
+		Учитывая, насколько опытными и недоверчивыми кажутся эти Enforcer, ты решаешь, что лучше всего будет сказать им правду. Хотя они явно недолюбливают старейших лилин, ты не уверен в их отношении к Lilith, поэтому остается лишь надеяться, что они проникнутся твоей идеей, когда ты признаешься: твой план — победить каждую из старейших лилин, а затем свергнуть саму Lilith.
 	</p>
 	<p>
-		[hammer.speech(So you decided to waltz on in and admit to a group of SWORD Enforcers that you're plotting an act of high treason?)] the wolf-boy asks, and for the first time since entering this room his stoic expression is broken by a toothy grin. Leaning back in his chair, he states, [hammer.speech(We've got all we need to arrest you right now and have you enslaved for life.)]
+		[hammer.speech(То есть ты решила просто войти сюда и заявить группе Enforcer из SWORD, что замышляешь государственную измену?)] — спрашивает волк-мальчишка, и впервые с момента твоего появления в комнате его стоическое выражение лица сменяется зубастой ухмылкой. Откинувшись на спинку стула, он добавляет: [hammer.speech(У нас есть всё необходимое, чтобы арестовать тебя прямо сейчас и отправить в пожизненное рабство.)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_CONVINCE_LIE"><![CDATA[
 	<p>
-		Although you need to trust these Enforcers to an extent, you don't think that it's wise to admit to them that you're planning on eventually overthrowing Lilith herself. As a result, you simply tell them that you've been sent here by Lyssieth to help deal with Lunette, and that the elder lilin needs to be defeated to bring an end to her reign of terror over the Foloi Fields.
+		Хотя тебе и приходится в какой-то степени доверять этим Enforcer, ты не считаешь разумным признаваться им, что в конечном итоге планируешь свергнуть саму Lilith. Поэтому ты просто говоришь им, что Lyssieth прислала тебя, чтобы помочь разобраться с Lunette, и что старшую лилин нужно победить, чтобы положить конец её правлению террором над Полями Фолой.
 	</p>
 	<p>
-		[hammer.speech(You're aware that plotting against an elder lilin is an act of high treason?)] the wolf-boy asks, and for the first time since entering this room his stoic expression is broken by a toothy grin. Leaning back in his chair, he states, [hammer.speech(We've got all we need to arrest you right now and have you enslaved for life.)]
+		[hammer.speech(Ты ведь понимаешь, что заговор против старшей лилин — это акт высшей измены?)] — спрашивает волк-мальчик, и впервые с момента твоего появления в комнате его стоическое выражение лица сменяется зубастой ухмылкой. Откинувшись на спинку стула, он добавляет: [hammer.speech(У нас есть всё необходимое, чтобы арестовать тебя прямо сейчас и отправить в пожизненное рабство.)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_CONVINCE_END"><![CDATA[
 	<p>
-		As all of the Enforcers remain stationary as the wolf-boy says this, you point out that they aren't making a move to arrest you.
+		Пока все Enforcer остаются неподвижными после слов волка-мальчика, ты замечаешь, что они, кажется, и не собираются тебя арестовывать.
 	</p>
 	<p>
-		[hammer.speech(We're not interested in enforcing Lilith's laws any more,)] the wolf-boy growls, his grin vanishing as quickly as it appeared, [hammer.speech(We do what we can to help the ordinary citizens of the realm. We'll help you, but not for Lyssieth or Minotallys or any other lilin. We'll do it to help bring an end to the suffering that the folk of the Fields have endured for years.)]
+		[hammer.speech(Нам больше не интересно следить за законами Lilith,)] — рычит волк-мальчик, и его ухмылка исчезает так же быстро, как и появилась. [hammer.speech(Мы делаем всё возможное, чтобы помочь обычным жителям королевства. Мы поможем тебе, но не ради Lyssieth, не ради Minotallys или любой другой лилин. Мы сделаем это, чтобы положить конец страданиям, которые народ Полей терпел годами.)]
 	</p>
 	<p>
-		The other Enforcers nod as the wolf-boy says this. The otter-girl, who seems to have a far friendlier attitude than the wolf-boy, begins the introductions by saying, [ghost.speech(We don't use our real names here, so you can just call me 'Ghost'. The big scary wolf-boy over there's called 'Hammer'.)]
+		Остальные Enforcer согласно кивают на слова волчонка. Девушка-выдра, которая кажется куда дружелюбнее своего сородича, начинает знакомство: [ghost.speech(Здесь мы не используем настоящие имена, так что можешь звать меня просто «Призрак». А вон тот большой и страшный волк — «Молот».)]
 	</p>
 	<p>
-		The other Enforcers offer their own callsigns, and after they've finished Hammer says, [hammer.speech(Before we help you, we need you to help us.)]
+		Остальные Enforcer тоже называют свои позывные, и когда они заканчивают, Молот произносит: [hammer.speech(Прежде чем мы поможем тебе, тебе нужно помочь нам.)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_HELP"><![CDATA[
 	<p>
-		Everything about these Enforcers suggests that they're very experienced and extremely dangerous. As such, it seems odd that they'd need your help with something, and so you ask them what it is that you can offer them.
+		Всё в этих Enforcer говорит о том, что они очень опытны и крайне опасны. Поэтому кажется странным, что им может понадобиться твоя помощь, и ты спрашиваешь, что именно ты можешь им предложить.
 	</p>
 	<p>
-		[ghost.speech(As you've already defeated one daughter of an elder lilin, we were hoping that you could help us deal with another one,)] Ghost says, before quietly stepping forwards to push the door closed behind you. After retrieving the folder which contains details of your exploits, she returns to sit on the sofa and reveals, [ghost.speech(We've got an op planned to take down a succubus, but if we're recognised while doing it then that'll be the end for us. Her mother, who's the elder lilin Lovienne, will undoubtedly find out if her daughter is attacked, and if it's known that we were behind it then we'd be one order away from being kicked out of SWORD, or maybe even being enslaved. As such, we need some insurance against her mother's wrath.)]
+		[ghost.speech(Раз уж ты уже одолел одну из дочерей старшей лилин, мы надеялись, что ты поможешь нам разобраться с другой,)] — говорит Призрак, прежде чем тихо сделать шаг вперед и прикрыть за тобой дверь. Взяв папку с описанием твоих подвигов, она возвращается на диван и признается: [ghost.speech(Мы планируем операцию по устранению суккуба, но если нас узнают во время дела — нам конец. Её мать, старшая лилин Ловиенна, несомненно узнает об нападении на дочь. И если станет известно, что за этим стояли мы, нас либо вышвырнут из SWORD, либо вовсе обратят в рабство. Так что нам нужна страховка от гнева её матери.)]
 	</p>
 	<p>
-		[hammer.speech(We know that you're somehow related to Lyssieth, and as you've just got away with defeating Lunexis then you'll be able to deal with any fallout from our op should we be recognised,)] Hammer gruffly states, [hammer.speech(We don't need you to fight, but we want you to tag along and get any heat off of us if we're recognised.)]
+		[hammer.speech(Мы знаем, что ты как-то связан с Lyssieth, а раз уж тебе удалось одолеть Lunexis, то и с последствиями нашей операции справишься, если нас узнают,)] — хрипло заявляет Hammer, — [hammer.speech(Нам не нужно, чтобы ты сражался, мы хотим, чтобы ты просто шел рядом и отвлекал внимание на себя, если нас заметят.)]
 	</p>
 	<p>
-		You're not sure that you like the sound of being used like this, but it might be best to get the full details of this mission before agreeing or refusing to go along with it...
+		Тебе не очень нравится идея, что тебя хотят использовать вот так, но, пожалуй, стоит разузнать все подробности этой миссии, прежде чем соглашаться или отказываться...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION"><![CDATA[
-	<p>
-		Wanting to know exactly what this operation is all about, you ask the Enforcers for some more details.
+	<p>	
+		Желая точно узнать, что это за операция, ты просишь Enforcer рассказать подробнее.
 	</p>
 	<p>
-		[hammer.speech(We first discovered the disappearance of refugees a few months ago, but it's likely that it's been going on a lot longer than that,)] Hammer says. Producing a map from out of his drawer, the wolf-boy stands up and walks over to the sofas, before spreading it out over the coffee table and stepping back to give you a clear view. The map appears to show the northern alleyways of Elis, and in about two dozen places red circles have been drawn onto it. [hammer.speech(The ones who are being kidnapped are carefully selected. They never have friends or family who'd report their disappearance, and if it wasn't for the surveillance we were conducting on an unrelated gang, we'd never have discovered it.)]
+		[hammer.speech(Впервые мы заметили исчезновение беженцев несколько месяцев назад, но, скорее всего, это продолжается гораздо дольше,)] — говорит Hammer. Достав из ящика карту, волк-мальчик встает, подходит к диванам, расстилает её на кофейном столике и отступает, чтобы тебе было всё хорошо видно. На карте, судя по всему, изображены северные переулки Elis, и примерно в двух десятках мест нанесены красные круги. [hammer.speech(Тех, кого похищают, выбирают очень тщательно. У них никогда нет друзей или родственников, которые могли бы заявить об их исчезновении, и если бы не слежка за одной бандой, к которой это не имеет отношения, мы бы никогда об этом не узнали.)]
 	</p>
 	<p>
-		[ghost.speech(After we witnessed one attempted kidnapping, we interrogated the culprits and found out that they're working for a succubus,)] Ghost adds, [ghost.speech(They were far more loyal to their leader than we expected, but after some persuasion I found out that she's a daughter of Lovienne called 'Angelixx'. Thankfully she isn't recognised yet, but our contacts in Dominion found out that she's one of her mother's favourites, and a recognition ceremony is planned for her. Apparently, Lovienne seems to like the fact that her daughter is kidnapping refugees in Elis...)]
+		[ghost.speech(После того как мы стали свидетелями попытки похищения, мы допросили виновных и выяснили, что они работают на суккуба,)] добавляет Ghost, [ghost.speech(Они оказались куда преданнее своему лидеру, чем мы ожидали, но после определенных уговоров я узнала, что её зовут «Angelixx», и она дочь Lovienne. К счастью, её еще не узнали, но наши контакты в Dominion выяснили, что она одна из любимиц своей матери, и для неё уже запланирована церемония признания. Судя по всему, Lovienne нравится тот факт, что её дочь похищает беженцев в Elis...)]
 	</p>
 	<p>
-		[hammer.speech(We're going to attack their headquarters and put and end to it,)] Hammer states, [hammer.speech(Any questions?)]
+		[hammer.speech(Мы собираемся атаковать их штаб-квартиру и положить этому конец,)] заявляет Hammer, [hammer.speech(Есть вопросы?)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION_DETAILS_REFUGEES"><![CDATA[
-	<p>
-		Wanting to know what's happening to the refugees who are being kidnapped, you ask the Enforcers if they've discovered what's being done with them.
+	<p>		Желая узнать судьбу похищенных беженцев, ты спрашиваешь Enforcer, выяснили ли они, что с ними делают.
 	</p>
 	<p>
-		[ghost.speech(They're being illegally enslaved and teleported to Dominion by the succubus,)] Ghost coldly replies, the icy tone in her voice making it clear that she's angry about it, [ghost.speech(Illegal enslavement is a serious crime, and there are dozens of systems and regulations in place to detect if a slave isn't legal. The Slavery Administration would go ballistic if they got even the slightest inkling of illegal enslavement, and Dominion Enforcers would immediately be dispatched here to put an end to it. Nothing's happened though, suggesting that these slaves are all going to a private buyer who knows but doesn't care about their origin.)]
+		[ghost.speech(Суккуб незаконно обращает их в рабство и телепортирует в Dominion,)] холодно отвечает Ghost; ледяной тон в её голосе ясно дает понять, что она в ярости, [ghost.speech(Незаконное рабство — это серьезное преступление, и существует десятки систем и правил, позволяющих выявить нелегального раба. Администрация Рабства придет в бешенство, если получит хотя бы малейший намек на незаконную торговлей, а Enforcer из Dominion немедленно отправятся сюда, чтобы покончить с этим. Но пока ничего не происходит, а это значит, что всех этих рабов отправляют частному покупателю, который в курсе дела, но ему плевать на их происхождение.)]
 	</p>
 	<p>
-		One of the other Enforcers, a fox-boy who'd introduced himself as 'Dancer', adds in a rough voice, [style.speechMasculineStrong(It must be for something important, as her mother clearly knows what's going on, and an elder lilin wouldn't risk being tied to illegal enslavement unless it was seriously worth it. If it was found out that an elder lilin was involved in illegal enslavement then it'd be a major scandal, and even the papers wouldn't be able to hide the truth forever. If people thought that they could be enslaved at any time for no reason then there'd definitely be unrest, if not full-blown riots.)]
+		Один из других Enforcer, лис-мальчишка, представившийся как «Танцор», добавляет грубым голосом: [style.speechMasculineStrong(Это должно быть по какому-то важному поводу, раз уж её мать явно в курсе происходящего. Старшая лилин не стала бы рисковать, ввязываясь в незаконное рабство, если только оно не сулит огромную выгоду. Если выяснится, что к нелегальному похищению причастна старшая лилин, это станет грандиозным скандалом, и даже газеты не смогут вечно скрывать правду. Если люди поймут, что их могут поработить в любой момент без всякой причины, это неизбежно приведет к беспорядкам, если не к полномасштабным бунтам.)]
 	</p>
 	<p>
-		[hammer.speech(Dominion is well outside of our operational area, so all we can do to stop it is disrupt their operation here in Elis,)] Hammer grunts in frustration, [hammer.speech(We don't know exactly what the kidnapped refugees are being used for, but they're never seen again.)]
+		[hammer.speech(Dominion находится далеко за пределами нашей зоны ответственности, так что всё, что мы можем сделать, чтобы остановить это — сорвать их операцию здесь, в Elis,)] — ворчит Hammer от досады, — [hammer.speech(Мы не знаем точно, для чего используют похищенных беженцев, но их больше никогда не видят.)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION_DETAILS_PLAN"><![CDATA[
 	<p>
-		Not knowing what their plan is, nor exactly how they want you to help, you ask the Enforcers for more details of their operation.
+		Не зная ни их плана, ни того, какая именно помощь им нужна, ты просишь Enforcer рассказать подробнее об их операции.
 	</p>
 	<p>
-		[ghost.speech(The gang's headquarters is in an abandoned bakery in the alleyways a short distance to the north-west of here. Every Tuesday night they meet with the succubus to have the week's kidnapped refugees teleported to Dominion, so we're going to hit them then,)] Ghost says, [ghost.speech(We can't raid them as Enforcers or else that'll bring the wrath of Lovienne down on us. Instead, we'll hit them like a rival gang would. No insignias, no arrests, and with our faces covered. We'll hit them hard and fast and tell them to clear out of our territory.)]
+		[ghost.speech(Штаб-квартира банды находится в заброшенной пекарне в переулках чуть северо-западнее отсюда. Каждый вторник вечером они встречаются с суккубом, чтобы телепортировать похищенных за неделю беженцев в Dominion, так что мы нанесем удар именно тогда,)] — говорит Ghost, — [ghost.speech(Мы не можем нагрянуть к ним как Enforcer, иначе на нас обрушится гнев Lovienne. Вместо этого мы ударим по ним, как это сделала бы вражеская банда. Никаких знаков отличия, никаких арестов, и лица должны быть закрыты. Мы ударим быстро и жестко, а потом прикажем им убираться с нашей территории.)]
 	</p>
 	<p>
-		[hammer.speech(As for Angelixx, we'll rough her up a bit and tell her never to show her face in Elis again,)] Hammer says, [hammer.speech(We'll try to find out what's happening to the refugees from her as well, but we're not likely to have the time to conduct a full interrogation.)]
+		[hammer.speech(Что касается Angelixx, мы ее немного взбодрим и скажем, чтобы больше никогда не показывалась в Elis,)] — говорит Hammer, — [hammer.speech(Мы также попытаемся выпытать у нее, что происходит с беженцами, но вряд ли у нас будет время на полноценный допрос.)]
 	</p>
 	<p>
-		[ghost.speech(If we're somehow recognised during it all, then you're going to use your influence with Lyssieth to get Lovienne off our back,)] Ghost says to you with a smile on her face, [ghost.speech(It most likely won't come to that, but we need you as insurance just in case. We want you there on the op with us so that you can't back out of the agreement later; you'll be seen to be with us, so your fate will be tied to ours. Not that we don't trust you, of course...)]
+		[ghost.speech(Если нас каким-то образом узнают, ты используешь свое влияние на Lyssieth, чтобы Lovienne от нас отстала,)] — говорит тебе Ghost с улыбкой на лице, — [ghost.speech(Скорее всего, до этого не дойдет, но ты нужна нам как страховка на всякий случай. Мы хотим, чтобы ты была с нами на операции, тогда ты не сможешь позже пойти на попятную; все увидят, что ты была с нами, так что твоя судьба будет неразрывно связана с нашей. Не то чтобы мы тебе не доверяли, конечно...)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION_DETAILS_SUCCUBUS"><![CDATA[
 	<p>
-		Wanting to know more about Angelixx, the succubus who's the gang's leader, you ask the Enforcers if there's anything else they can tell you about her.
+		Желая узнать побольше об Angelixx, суккубе, которая возглавляет банду, ты спрашиваешь Enforcer, могут ли они рассказать о ней что-нибудь еще.
 	</p>
 	<p>
-		[hammer.speech(We've seen her entering and leaving the gang's headquarters several times,)] Hammer states, [hammer.speech(She takes the form of a small, young succubus, but how old she really is we don't know. She seems to make an effort to look and act innocent, likely as a way to influence people and gain loyalty from her followers.)]
+		[hammer.speech(Мы видели, как она несколько раз заходила в штаб банды и выходила оттуда,)] — заявляет Hammer, — [hammer.speech(Она принимает облик маленькой молодой суккуба, но сколько ей на самом деле — мы не знаем. Похоже, она изо всех сил старается выглядеть и вести себя невинно, скорее всего, чтобы манипулировать людьми и завоевывать преданность своих последователей.)]
 	</p>
 	<p>
-		[ghost.speech(We don't know much about her combat abilities, but one of our contacts in Dominion told us that she's a complete coward, so once we've beaten her she'll run off back to Dominion with her tail between her legs,)] Ghost says.
+		[ghost.speech(Мы мало что знаем о её боевых способностях, но один из наших контактов в Dominion сказал, что она полная трусиха. Так что, как только мы её побьём, она сбежит обратно в Dominion, поджав хвост,)] — говорит Ghost.
 	</p>
 	<p>
-		[style.speechMasculineStrong(I know how scum like her operate,)] a huge, muscular horse-boy with the callsign 'mountain' says in a booming voice, [style.speechMasculineStrong(Instead of fighting, she likely tries to turn her opponents against one another, or she'll just keep talking and delaying until she can spring a trap on them. Don't believe anything the bitch says, and attack her as soon as you see her.)]
+		[style.speechMasculineStrong(Я знаю, как действует такая мразь,)] — громовым голосом произносит огромный мускулистый жеребец с позывным «Гора», — [style.speechMasculineStrong(Вместо того чтобы сражаться, она, скорее всего, попытается стравливать противников друг с другом или будет бесконечно болтать и тянуть время, пока не подкараулит их в ловушке. Не верь ни единому слову этой суки и атакуй её, как только увидишь.)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION_END"><![CDATA[
 	<p>
-		Needing these Enforcers to help with the defence of Elis, you tell them that you'll do as they ask. You say that you'll come along on their op and do all you can to get Lyssieth to pardon them if they're discovered.
+		Понимая, что эти Enforcer пригодятся для защиты Elis, ты обещаешь им сделать всё, о чём они просят. Ты говоришь, что отправишься с ними на операцию и сделаешь всё возможное, чтобы Lyssieth помиловала их, если их раскроют.
 	</p>
 	#IF(game.getDayOfWeek()==DOW_TUESDAY && game.isHourBetween(17, 24))
 		<p>
-			[ghost.speech(The succubus and her gang are going to be holding their weekly meeting in a few hours. You're ready to go now, right?)] Ghost asks.
+			[ghost.speech(Суккуб и её банда соберутся на своё еженедельное собрание через несколько часов. Ты ведь готов выдвигаться?)] — спрашивает Ghost.
 		</p>
 		<p>
-			[hammer.speech(We can't afford to wait another week,)] Hammer grunts while cracking his knuckles, [hammer.speech(We need to take that bitch out tonight.)]
+			[hammer.speech(Мы не можем позволить себе ждать ещё неделю,)] — ворчит Hammer, разминая костяшки пальцев, — [hammer.speech(Нам нужно прихлопнуть эту суку сегодня ночью.)]
 		</p>
 		<p>
-			Although you're not obliged to go with them this evening, it seems like it would be a good idea to get this operation done sooner rather than later...
+			Хотя ты и не обязана идти с ними этим вечером, кажется, будет разумно завершить эту операцию как можно скорее...
 		</p>
 	#ELSE
 		#IF(game.getDayOfWeek()==DOW_TUESDAY)
 			<p>
-				[ghost.speech(The succubus and her gang are going to be holding their weekly meeting tonight, so we'll see you in a few hours, right?)] Ghost asks.
+				[ghost.speech(Сегодня вечером суккуб и её банда проводят своё еженедельное собрание, так что увидимся через пару часов, ладно?)] — спрашивает Ghost.
 			</p>
 			<p>
-				[hammer.speech(We can't afford to wait another week,)] Hammer grunts while cracking his knuckles, [hammer.speech(We need to take that bitch out tonight.)]
+				[hammer.speech(Мы не можем ждать ещё неделю,)] — ворчит Hammer, разминая костяшки пальцев, [hammer.speech(Нам нужно прикончить эту сучку сегодня же.)]
 			</p>
 		#ELSE
 			<p>
-				[ghost.speech(We'll see you on Tuesday then. Come here after five in the evening and we'll be ready,)] Ghost says.
+				[ghost.speech(Значит, увидимся во вторник. Приходи после пяти вечера, и мы будем готовы,)] — говорит Ghost.
 			</p>
 			<p>
-				[hammer.speech(Don't forget about it,)] Hammer grunts while cracking his knuckles, [hammer.speech(We need to take that bitch out as soon as possible. Oh, and I shouldn't have to say this, but don't tell anyone about this op. We need to maintain secrecy.)]
+				[hammer.speech(Не забудь об этом,)] — ворчит Hammer, разминая костяшки пальцев, [hammer.speech(Нам нужно разделаться с этой сучкой как можно скорее. О, и мне не стоит этого говорить, но не болтай об этой операции никому. Нужно соблюдать секретность.)]
 			</p>
 		#ENDIF
 		<p>
-			Stepping past you, Ghost opens the door and cheerfully says, [ghost.speech(We'll see you soon, [pc.name].)]
+			Проходя мимо тебя, Ghost открывает дверь и весело говорит: [ghost.speech(Скоро увидимся, [pc.name].)]
 		</p>
 	#ENDIF
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION_END_LEAVE"><![CDATA[
-	<p>
-		Saying goodbye, you head out through the door and return to the corridor. The door swings shut behind you, before knocking into the battered helmet that's serving as a door stop. Taking a quick look around, you prepare to continue on your way...
-	</p>
+		<p>
+		Попрощавшись, ты выходишь за дверь и возвращаешься в коридор. Дверь за тобой захлопывается, задев помятый шлем, служащий дверным упором. Быстро оглядевшись, ты готовишься продолжить свой путь...
+		</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="SWORD_MISSION_START"><![CDATA[
+		<p>
+		Желая завершить операцию как можно скорее, ты говоришь Enforcers, что готова выдвигаться.
+		</p>
 	<p>
-		Wanting to get this operation done as soon as possible, you tell the Enforcers that you're ready to go.
+		[style.speechFeminine(Последние пару дней банда подозрительно бдительна,)] — говорит симпатичная рысь с одного из диванов. С разочарованным вздохом она продолжает: [style.speechFeminine(Прошлой ночью у них было вдвое больше дозорных, и сегодня их наверняка будет еще больше.)]
 	</p>
 	<p>
-		[style.speechFeminine(The gang's been unusually vigilant over the past couple of days,)] a pretty lynx-girl says from her spot on one of the sofas. Letting out a frustrated sigh, she continues, [style.speechFeminine(They had double the lookouts last night, and they'll almost certainly have more tonight.)]
+		[hammer.speech(Знаю, знаю...)] — тяжело вздыхает Hammer. Сжав кулак, он ворчит: [hammer.speech(Отменять операцию нельзя. Если бы банда знала о нашем приходе, они бы уже бросили штаб. Их повышенная бдительность — наверняка совпадение.)]
 	</p>
 	<p>
-		[hammer.speech(I know, I know...)] Hammer says with a deep sigh. Clenching his fist, he grunts, [hammer.speech(We can't call off the op. If the gang knew we were coming they'd have abandoned their HQ. Their increased awareness must be a coincidence.)]
+		[ghost.speech(Согласен, но они нас точно заметят и могут сорвать встречу,)] — говорит Ghost, а затем предлагает: [ghost.speech(Если двое из нас пойдут в гражданском, то мы, скорее всего, пройдем мимо, не привлекая внимания. В убежище хватит снаряжения, чтобы мы могли переодеться уже на месте.)]
 	</p>
 	<p>
-		[ghost.speech(I agree, but they'll definitely see us coming and might call off the meeting,)] Ghost says, before suggesting, [ghost.speech(If just two of us go in civvy clothes then we can probably walk on past without alerting them. We've got enough gear in the hideout for two of us to get changed once there.)]
+		[hammer.speech(Рискованно,)] — ворчит Hammer, [hammer.speech(но эти беженцы нуждаются в нас. Мы с тобой пойдем, Ghost. Остальные — снаряжайтесь и ждите здесь. Возьмем с собой резонансный камень и активируем его, если понадобится подмога.)]
 	</p>
 	<p>
-		[hammer.speech(That's risky,)] Hammer grunts, [hammer.speech(but those refugees need us. You and I will go, Ghost. Everyone else, get geared up and wait here. We'll take a resonance stone and activate it if we need backup.)]
+		Enforcers встают и направляются к двери в дальнем конце комнаты — ты полагаешь, что она ведет в помещение, где хранится их снаряжение. Ghost на мгновение задерживается, подходит к тебе и объясняет: [ghost.speech(Мы с Hammer переоденемся в уличную одежду и двинемся к убежищу, где ты ждешь. Не волнуйся, нас двоих вполне хватит, чтобы разобраться с мелкими бандитами.)]
 	</p>
 	<p>
-		The Enforcers all stand up and head off to a door on the far side of the room, which you assume leads into the room in which their equipment is stored. Remaining behind for a moment, Ghost steps over to you and explains, [ghost.speech(Hammer and I will get changed into street clothing and then head on over to a hideout we've got with you. Don't worry, the two of us will be more than enough to deal with some petty gang members.)]
+		С этими словами маленькая девочка-выдра следует за своими товарищами в соседнюю комнату, оставляя тебя ждать, пока они переодеваются. Спустя несколько минут выходит Hammer в трикотажном джемпере и кепке, натянутой так, чтобы скрыть повязку на глазу. Следом за ним идет Ghost, переодевшаяся в платье с длинными рукавами, чтобы спрятать ожоги. Остальные Enforcer не возвращаются, и ты предполагаешь, что им требуется больше времени, чтобы облачиться в полное снаряжение.
 	</p>
 	<p>
-		With that, the small otter-girl follows her comrades into the other room, leaving you to wait while they all get changed. A few minutes later, Hammer comes out wearing a ribbed jumper and a cap pulled down to conceal his eye patch. Behind him walks Ghost, who's changed into a long-sleeved dress so that her burns are hidden. The other Enforcers don't reappear, and you assume that it's taking them a while longer to put on all of their Enforcer gear.
-	</p>
-	<p>
-		[hammer.speech(Tag along, [pc.name],)] Hammer grunts as he strides past you out of the room. Flashing you a smile, Ghost gestures for you to go first...
+		[hammer.speech(Держись рядом, [pc.name],)] — хмыкает Hammer, решительно шагая мимо тебя из комнаты. Ghost ослепительно улыбается тебе и жестом предлагает идти первым...
 	</p>
 	]]>
 	</htmlContent>
@@ -657,239 +656,238 @@
 	
 	<htmlContent tag="SWORD_TALK_ELIS"><![CDATA[
 	<p>
-		Wanting to hear from them directly what the reason is for their posting to Elis, you ask the Enforcers why they're here instead of in Dominion or elsewhere in the realm.
+		Желая услышать от них лично, какова причина их назначения в Elis, ты спрашиваешь Enforcer, почему они здесь, а не в Dominion или где-то еще в королевстве.
 	</p>
 	<p>
-		[ghost.speech(We trust you enough to talk openly about this,)] Ghost says, before revealing, [ghost.speech(We were loyal to Lilith and served with distinction for years, and we were rewarded for that loyalty by having a clueless daughter of Lasielle assigned as our superior. She got the appointment simply by being an elder lilin's recognised daughter, and her incompetence was directly to blame for several botched operations. To make matters worse, she started selling off our weapons to gangs to make a few extra flames, making our job considerably harder and more dangerous. Our superiors said they couldn't act against a recognised daughter, so we arrested her ourselves.)]
+		[ghost.speech(Мы доверяем тебе достаточно, чтобы говорить об этом открыто,)] — произносит Ghost, прежде чем признаться: [ghost.speech(Мы были верны Lilith и годами несли отличительную службу, а наградой за нашу преданность стало назначение нашей начальницей бестолковой дочурки Lasielle. Она получила этот пост лишь потому, что была признанной дочерью старшей лилин, и именно её некомпетентность стала причиной нескольких проваленных операций. Что еще хуже, она начала распродавать наше оружие бандам, чтобы срубить лишних Огней, из-за чего наша работа стала куда сложнее и опаснее. Наши командиры твердили, что не могут пойти против признанной дочери, так что нам пришлось арестовать её самим.)]
 	</p>
 	<p>
-		[hammer.speech(For all of our loyalty and a life of sacrifice for Lilith and the realm, we were stripped of our ranks and threatened with slavery. In the end, however, we were instead assigned here to Elis and told to serve out the rest of our days where we couldn't cause any more trouble,)] Hammer growls with a scowl on his face as he reveals the reason for their presence here in Elis. In a bitter tone, he adds, [hammer.speech(Every last lilin, including Lilith herself, are only interested in their own petty games of politics and power. We don't owe Lilith our loyalty and have no interest in enforcing her laws. We do what's right to help the common folk, that's it.)]
+		[hammer.speech(За всю нашу преданность и жизнь, отданную в жертву Lilith и королевству, нас лишили званий и пригрозили рабством. Но в итоге нас сослали сюда, в Elis, велев доживать свои дни там, где мы не сможем больше доставлять проблем,)] — рычит Hammer, скорчив злую гримасу и объясняя причину их пребывания здесь, в Elis. Горьким тоном он добавляет: [hammer.speech(Каждая чертова лилин, включая саму Lilith, печется лишь о своих мелких политических играх и власти. Мы не обязаны Lilith верностью и не горячим желанием насаждать её законы. Мы просто делаем то, что правильно, чтобы помочь простому народу, вот и всё.)]
 	</p>
 	<p>
-		[ghost.speech(Such talk would get us arrested and enslaved,)] Ghost muses out loud, before looking at you with a smirk on her face. [ghost.speech(You won't go around telling anyone about this, [pc.name].)]
+		[ghost.speech(За такие разговоры нас бы тут же арестовали и пустили в рабство,)] — задумчиво произносит Ghost, после чего смотрит на тебя с ухмылкой. [ghost.speech(Ты ведь не станешь разбалтывать об этом кому попало, [pc.name].)]
 	</p>
 	<p>
-		You can't quite tell from the tone in Ghost's voice if that's a threat or a request. With no intention of betraying their trust regardless, you think it best not to ask for clarification and instead wonder what to do next...
+		По интонации Ghost трудно понять, была ли это угроза или просьба. Впрочем, не собираясь предавать их доверие, ты решаешь не уточнять, а вместо этого задумываешься о том, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_TALK_HISTORY"><![CDATA[
 	<p>
-		Wanting to know about their history and how they all ended up being in the same SWORD unit, you ask the assembled Enforcers to tell you about their careers. A few of them say things to the effect of telling you to mind your own business, while the others simply sit in silence and don't say anything.
+		Желая узнать об их прошлом и о том, как они все оказались в одном подразделении SWORD, ты просишь собравшихся Enforcer рассказать о своей службе. Некоторые из них бросают что-то вроде «не суй нос не в свое дело», в то время как остальные просто сидят в молчании, не проронив ни слова.
 	</p>
 	<p>
-		[ghost.speech(Well, I at least don't mind talking about it,)] Ghost says with a smile on her face, [ghost.speech(and if I'm telling my story, then I'd be telling Hammer's as well. Go on, Hammer, tell [pc.name] how we started.)]
+		[ghost.speech(Ну, я-то, по крайней мере, не против об этом поговорить,)] — с улыбкой на лице говорит Призрак, — [ghost.speech(и если уж я рассказываю свою историю, то и историю Хаммера тоже. Давай, Хаммер, расскажи [pc.name], с чего всё начиналось.)]
 	</p>
 	<p>
-		[hammer.speech(I don't suppose there's much point in arguing,)] Hammer sighs at Ghost, before looking over at you and revealing, [hammer.speech(The two of us enlisted together back in the summer of 1974. We were young, motivated, and damn good at our job, which is how we ended up as Patrol weapons specialists just two years later. We were part of the group which helped to put an end to the Grand Bank Heists, and as such were some of the first to be inducted into the newly-formed SWORD.)]
+		[hammer.speech(Не думаю, что спорить есть какой-то смысл,)] — Хаммер вздыхает, глядя на Призрака, а затем переводит взгляд на тебя и продолжает: [hammer.speech(Мы записались в армию вместе летом семьдесят четвертого. Были молодыми, заряженными и чертовски хорошими в своем деле, поэтому всего через два года стали специалистами по патрульному вооружению. Мы входили в группу, которая помогла покончить с Великими ограблениями банков, и благодаря этому одними из первых были приняты в новообразованный SWORD.)]
 	</p>
 	<p>
-		[ghost.speech(Things were looking good for a while back then,)] Ghost reminisces with a smile. A dark look then quickly falls over her face and she says in a flat tone, [ghost.speech(Then the ambushes started... A couple of years later and the Fifth Human Rebellion broke out, and Hammer and I were there together through the whole thing.)]
+		[ghost.speech(Какое-то время всё шло просто отлично,)] — с улыбкой вспоминает Призрак. Но затем на её лицо быстро ложится мрачная тень, и она произносит ровным тоном: [ghost.speech(А потом начались засады... Спустя пару лет вспыхнуло Пятое восстание людей, и мы с Хаммером прошли через всё это вместе.)]
 	</p>
 	<p>
-		[style.speechMasculineStrong(Don't forget about me now,)] the fox-boy with the call-sign 'Dancer' says.
+		[style.speechMasculineStrong(Ты там про меня не забудь,)] — говорит лис-мальчишка с позывным «Танцор».
 	</p>
 	<p>
-		[hammer.speech(Nor 'Feather',)] Hammer grunts with a nod towards the mean-looking tiger-girl who's sitting beside Dancer.
+		[hammer.speech(И про «Перо» тоже,)] — хмыкает Хаммер, кивнув в сторону суровой девушки-тигрицы, сидящей рядом с Танцором.
 	</p>
 	<p>
-		[ghost.speech(I know, I know. That's when we started to form this unit after all,)] Ghost says with a gentle laugh, [ghost.speech(After the rebellion, the four of us were stationed in Dominion, where we set about recruiting other veterans into our team. Ever since then we've all been working together.)]
+		[ghost.speech(Знаю, знаю. В конце концов, именно тогда мы и начали формировать это подразделение,)] — с мягким смешком говорит Ghost, — [ghost.speech(После восстания нас было четверо, и нас разместили в Dominion, где мы принялись вербовать в нашу команду других ветеранов. С тех самых пор мы работаем вместе.)]
 	</p>
 	<p>
-		[hammer.speech(We make a good team,)] Hammer states, to which the other Enforcers nod.
+		[hammer.speech(Мы отличная команда,)] — утверждает Hammer, и остальные Enforcer согласно кивают.
 	</p>
 	<p>
-		With your question answered, you wonder whether to ask anything else...
+		Получив ответ на свой вопрос, ты задумываешься, стоит ли спрашивать о чем-то еще...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_TALK_ORICL"><![CDATA[
 	<p>
-		Having seen the words 'ORICL: Top Secret' on the front of the folder which Ghost showed you when you first met her, you ask the assembled Enforcers what they can tell you about that organisation.
+		Вспомнив надпись «ORICL: Совершенно секретно» на папке, которую Ghost показала тебе при первой встрече, ты спрашиваешь собравшихся Enforcer, что они могут рассказать об этой организации.
 	</p>
 	<p>
-		[ghost.speech('The Office of Realm Intelligence, Counter-espionage, and Logistics',)] Ghost says when you mention the acronym 'ORICL', before going on, [ghost.speech(They're at the top of the pecking-order; if they give an order, it's for the Patrol and SWORD branches to carry it out without question. They only accept demons into their ranks, and like to think of themselves as the brains of the Enforcers.)]
+		[ghost.speech('Управление межмировой разведки, контрразведки и логистики',)] — поясняет Ghost, когда ты упоминаешь аббревиатуру «ORICL», а затем продолжает: [ghost.speech(Они на самой вершине пищевой цепочки; если они отдают приказ, ветви Патруля и SWORD должны исполнять его беспрекословно. В их ряды принимают только демонов, и они любят воображать себя мозговым центром Enforcer.)]
 	</p>
 	<p>
-		[hammer.speech(They're corrupt, scheming scum,)] Hammer grunts from behind his desk, [hammer.speech(Their red and yellow Directorates like to think they're better at our job than we are. As for blue, they can get fucked.)]
+		[hammer.speech(Коррумпированная, интриганская мразь,)] — ворчит Hammer из-за своего стола, — [hammer.speech(Их красные и желтые Директораты возомнили, что справляются с нашей работой лучше нас. Что до синих — да пошли они нахер.)]
 	</p>
 	<p>
-		The rest of the room seems to be in agreement with this last statement, for the other SWORD Enforcers either nod or say something to the effect of ORICL's blue Directorate being the worst.
+		Кажется, остальные в комнате согласны с этим последним утверждением, так как другие Enforcer из SWORD либо кивают, либо говорят что-то в духе того, что синий Директорат ORICL — самый отстойный.
 	</p>
 	<p>
-		[ghost.speech(They have five Directorates, of which-)] Ghost starts to explain for your benefit, but is swiftly interrupted by Hammer.
+		[ghost.speech(У них пять Директоратов, из которых-)] Ghost начинает объяснять для твоего понимания, но Hammer быстро её перебивает.
 	</p>
 	<p>
-		[hammer.speech(Seven. They have seven,)] the wolf-boy corrects his colleague, [hammer.speech(I've seen the records. There were files on 'Indigo' and 'Violet'.)]
+		[hammer.speech(Семь. У них семь,)] поправляет коллегу волк-мальчик, [hammer.speech(Я видел записи. Там были файлы по «Индиго» и «Фиолетовому».)]
 	</p>
 	<p>
-		[ghost.speech(Right, well even if those two do exist, we only have to deal with the other five, thank goodness,)] Ghost replies, before continuing where she left off, [ghost.speech(Directorate red does the investigate work, while yellow is their tactical group. Both of them tread on toes all the time, or at least they did while we were still in Dominion. As for Directorate blue, they're the answer to 'Who watches the watchmen?', but they do a terrible job of combating corruption.)]
+		[ghost.speech(Точно, ну, даже если эти два существуют, нам приходится иметь дело только с остальными пятью, слава богу,)] отвечает Ghost, прежде чем продолжить с того места, где остановилась, [ghost.speech(Красный Директорат занимается расследованиями, а Желтый — это их тактическая группа. Они вечно лезут не в своё дело, или, по крайней мере, так было, пока мы ещё были в Dominion. Что касается Синего Директората, то они — ответ на вопрос «Кто сторожит сторожей?», но с борьбой с Порочностью они справляются из рук вон плохо.)]
 	</p>
 	<p>
-		With the red, yellow, and blue Directorates having been explained, you ask Ghost what the remaining two are.
+		Когда красный, желтый и синий Директораты были объяснены, ты спрашиваешь Ghost, что представляют собой остальные два.
 	</p>
 	<p>
-		[ghost.speech(Directorate green are the ones who show up in the middle of the night to snatch some poor bastard who was heard saying bad things about Lilith,)] the otter-girl replies, [ghost.speech(They make sure that the population stays loyal by removing any dissenters. Thankfully they rarely give orders to SWORD, so we don't have to deal with them. The last one's Orange, but although they're seen around the Block - that's what we call the Enforcer HQ in Dominion - they never speak to anyone outside of their unit.)]
+		[ghost.speech(Зеленый Директорат — это те самые ребята, что являются посреди ночи, чтобы уволочь какого-нибудь бедолагу, который посмел сказать плохое о Lilith,)] отвечает девочка-выдра, [ghost.speech(Они следят за тем, чтобы население оставалось верным, устраняя любых инакомыслящих. К счастью, они редко отдают приказы SWORD, так что нам не приходится с ними связываться. Последний — Оранжевый, и хотя их часто видят в Блоке — так мы называли штаб Enforcer в Dominion — они никогда не разговаривают ни с кем за пределами своего подразделения.)]
 	</p>
 	<p>
-		[hammer.speech(Arrogant pricks, the lot of them,)] Hammer grunts, before adding, [hammer.speech(They're always heavily geared up and teleport themselves to their operations, but I've never heard of them operating in Dominion or anywhere else in the realm. They're sometimes carrying weapons which we don't have access to as well. I just know that they're involved with Indigo and Violet...)]
+		[hammer.speech(Заносчивые придурки, все до одного,)] — ворчит Hammer, а затем добавляет: [hammer.speech(Они вечно в тяжелой экипировке и телепортируются прямо к месту операции, но я никогда не слышал, чтобы они действовали в Dominion или где-то еще в королевстве. Иногда у них бывает оружие, к которому у нас нет доступа. Я просто знаю, что они связаны с Indigo и Violet...)]
 	</p>
 	<p>
-		From what he's saying, it sounds like these branches of ORICL are operating out in the rest of the world, likely in support of Lilith's attempts to control the countries not affected by her reality-changing spell. Although you trust them, you don't think that it's wise to share this information with the assembled Enforcers, and so with your initial question answered you wonder what to ask of them next...
+		Судя по его словам, эти подразделения ORICL действуют в остальном мире, вероятно, поддерживая попытки Lilith взять под контроль страны, не затронутые её заклинанием, меняющим реальность. Хотя ты им доверяешь, ты не считаешь разумным делиться этой информацией со собравшимися Enforcer, и, получив ответ на свой первый вопрос, ты раздумываешь, о чем спросить их дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_TALK_HUMAN_REBELLION"><![CDATA[
 	<p>
-		Wanting to hear more about the 'Fifth Human Rebellion', you ask the Enforcers what it was like.
+		Желая разузнать побольше о «Пятом восстании людей», ты спрашиваешь Enforcer, каково это было.
 	</p>
 	<p>
-		[hammer.speech(Well, I guess thanks to Ghost you've already heard how we started,)] Hammer says, [hammer.speech(We'd helped to put an end to the Grand Bank Heists of '76, and were some of the first to be recruited into the newly-formed SWORD. Things were going well, then in '82 the ambushes started...)]
+		[hammer.speech(Ну, полагаю, благодаря Ghost ты уже знаешь, с чего всё началось,)] — говорит Hammer, — [hammer.speech(Мы помогли положить конец Великим ограблениям банков в 76-м и одними из первых были наняты в новообразованную SWORD. Всё шло хорошо, пока в 82-м не начались засады...)]
 	</p>
 	<p>
-		[ghost.speech(ORICL struggled to find out who was behind them, and for years we were on the back foot, not knowing much about who the enemy were or why they were attacking Enforcer patrols,)] Ghost adds, [ghost.speech(The few we captured were quickly taken away by ORICL before we could seriously question them, and whatever information they revealed during interrogation didn't make it back to us.)]
+		[ghost.speech(ORICL изо всех сил пытались выяснить, кто стоит за ними, и годами мы были в обороне, почти ничего не зная о том, кто наш враг и почему они нападают на патрули Enforcer,)] — добавляет Ghost, — [ghost.speech(Тех немногих, кого мы захватывали, ORICL уводили прежде, чем мы успевали их как следует допросить, а любая информация, полученная при допросе, до нас просто не доходила.)]
 	</p>
 	<p>
-		[hammer.speech(ORICL knew exactly what was happening, they just weren't telling us,)] Hammer snaps, before leaning back against the wall and crossing his arms. His cynicism causes Ghost to let out a sigh, to which the wolf-boy grumbles, [hammer.speech(I'll get proof one day. I <i>know</i> that they betrayed us...)]
+		[hammer.speech(ORICL прекрасно знали, что происходит, они просто не хотели нам говорить,)] — огрызается Hammer, после чего прислоняется к стене и скрещивает руки на груди. От его цинизма Ghost тяжело вздыхает, на что волк-мальчик ворчит: [hammer.speech(Однажды я добуду доказательства. Я <i>знаю</i>, что они нас предали...)]
 	</p>
 	<p>
-		[ghost.speech(They might have betrayed us, or maybe they were just incompetent. It doesn't matter now and it didn't back then,)] Ghost calmly replies with a soft smile on her face. This proves to be just the right attitude to get Hammer to relax, as he uncrosses his arms and looks a little sheepish as Ghost addresses you and continues the tale, [ghost.speech(We decided over the first weekend of August, 1988, to hand in our resignations together. We'd had enough of being sitting ducks for the group which had started calling themselves the 'Human Liberation Front'.)]
+		[ghost.speech(Может, они и предали нас, а может, просто были некомпетентны. Сейчас это уже не важно, как и тогда,)] — спокойно отвечает Ghost с мягкой улыбкой на лице. Такой настрой помогает Hammer расслабиться; он разжимает руки и выглядит немного смущенным, когда Ghost обращается к тебе и продолжает рассказ: [ghost.speech(В первые выходные августа 1988 года мы решили подать заявления об увольнении вместе. С нас хватило роли легкой добычи для группировки, которая начала называть себя «Фронтом освобождения человечества».)]
 	</p>
 	<p>
-		[style.speechMasculineHeavy(I'd signed up a week earlier, not knowing how bad the ambushes were,)] a huge, muscular bull-boy, who you recall having introduced himself as 'Boomerang', says from his position on one of the sofas. Shaking his head, he mutters, [style.speechMasculineHeavy(That's what you get for trusting the papers to tell the truth...)]
+		[style.speechMasculineHeavy(Я записался на неделю раньше, и понятия не имел, насколько жестокими окажутся засады,)] — произносит огромный, мускулистый быкоподобный парень, которого ты помнишь под именем 'Бумеранг', сидя на одном из диванов. Покачав головой, он бормочет: [style.speechMasculineHeavy(Вот что бывает, когда веришь, что газеты говорят правду...)]
 	</p>
 	<p>
-		[hammer.speech(While Boomerang was being put through his first week at the Enforcer Academy, Ghost and I were quitting. We went to our station in the very early hours of Monday morning, hoping that our superior would still be up so that we could get her to sign the paperwork,)] Hammer says, before letting out a humourless laugh and revealing, [hammer.speech(The HLF chose that morning to start their rebellion. Every Enforcer station across the realm was hit at the same time. Most were seized, some managed to hold, and the rest were firebombed to deny their use to us. Our station was one of the latter, and we barely made it out alive...)]
+		[hammer.speech(Пока Бумеранг проходил свою первую неделю в Академии Enforcer, мы с Гостом решили уволиться. Мы пришли на станцию ранним утром в понедельник, надеясь, что начальница еще не спит и сможет подписать бумаги,)] — говорит Hammer, после чего издает безрадостный смешок и признается: [hammer.speech(Именно в то утро HLF решили начать свое восстание. Все станции Enforcer по всему королевству подверглись нападению одновременно. Большинство захватили, некоторые сумели удержать позиции, а остальные просто разбомбили, чтобы они не достались нам. Наша станция попала в число последних, и мы едва выбрались оттуда живыми...)]
 	</p>
 	<p>
-		Ghost absent-mindedly rubs her scarred arm as Hammer says this. Letting out a sigh, she recalls, [ghost.speech(Of course, now that a full-blown rebellion was underway there was no chance of us resigning. We managed to link up with what was left of our company and together with other survivors we retreated and regrouped near to the Shinrin Highlands. Thankfully, the youko hadn't taken a side, and they left us alone as we used the HLF's own tactics against them. Outnumbered, we had to rely on ambushes and hit-and-run attacks to get whatever small victories we could.)]
+		При словах Хаммера Гост рассеянно потирает шрам на руке. Со вздохом она вспоминает: [ghost.speech(Конечно, когда разгорелось полномасштабное восстание, шансов уволиться у нас почти не осталось. Нам удалось соединиться с остатками нашей роты, и вместе с другими выжившими мы отступили и перегруппировались неподалеку от высокогорья Синрин. К счастью, ёко не стали принимать чью-то сторону и оставили нас в покое, пока мы использовали тактику самой HLF против них самих. Из-за численного превосходства врага нам приходилось полагаться на засады и тактику «ударил-отступил», чтобы одерживать хоть какие-то маленькие победы.)]
 	</p>
 	<p>
-		[hammer.speech(It soon turned into a complete mess,)] Hammer says, [hammer.speech(The Patrol Enforcers who'd remained loyal managed to secure boroughs in Dominion, Itza'aak, and Thinis, but the cities remained split and in a state of conflict throughout the entire rebellion. The first year was by far the worst, especially our time in the jungles around Itza'aak...)]
+		[hammer.speech(Вскоре всё превратилось в сущий хаос,)] — говорит Хаммер, — [hammer.speech(Верные патрульные Enforcer сумели удержать районы в Dominion, Itza'aak и Thinis, но города оставались расколотыми и пребывали в состоянии конфликта на протяжении всего восстания. Первый год был самым тяжелым, особенно то время, что мы провели в джунглях вокруг Itza'aak...)]
 	</p>
 	<p>
-		[ghost.speech(We were there throughout it all, and finally, after four years, the rebellion came to an end in 1992,)] Ghost says. Clearly not wanting to relive any more of these memories, she brings the tale to an end by saying, [ghost.speech(By the time it was over, Hammer and I, as well as Dancer and Feather, had been promoted and had a lot of responsibility for those under our command. We couldn't abandon them, so gave up on our idea of resigning.)]
+		[ghost.speech(Мы были в гуще событий всё это время, и, наконец, спустя четыре года, в 1992 году, восстание подошло к концу,)] — говорит Гост. Очевидно не желая больше ворошить эти воспоминания, она завершает свой рассказ словами: [ghost.speech(К тому моменту, когда всё закончилось, мы с Хаммером, а также Танцовщица и Перо, уже получили повышение и несли большую ответственность за тех, кто был под нашим началом. Мы не могли их бросить, так что от идеи увольнения пришлось отказаться.)]
 	</p>
 	<p>
-		[style.speechFeminineStrong(The jungles weren't so bad,)] the mean-looking tiger-girl called 'Feather' says in a deep, growling tone, [style.speechFeminineStrong(It was far worse for the HLF scum we were hunting.)]
+		[style.speechFeminineStrong(Джунгли были не такими уж и плохими,)] — говорит злобная на вид тигрица по имени Feather низким, рычащим голосом, — [style.speechFeminineStrong(Для отбросов из HLF, на которых мы охотились, всё было куда хуже.)]
 	</p>
 	<p>
-		Hammer, Ghost, and the fox-boy called 'Dancer' all exchange glances, but what they're thinking about is impossible to determine. Deciding not to pry any further, you wonder what to ask next...
+		Hammer, Ghost и лисёнок по имени Dancer обмениваются взглядами, но понять, о чём они думают, невозможно. Решив не лезть в душу, ты гадаешь, о чём спросить дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_TALK_HLF"><![CDATA[
 	<p>
-		Curious to hear more about the people these Enforcers were fighting during the Fifth Human Rebellion, you ask them who the 'Human Liberation Front' were.
+		Тебе любопытно узнать побольше о тех, с кем сражались эти Enforcer во время Пятого восстания людей, и ты спрашиваешь, что же собой представлял «Фронт освобождения людей».
 	</p>
 	<p>
-		[hammer.speech(You'd think they were just humans, given what they called themselves,)] Hammer replies, [hammer.speech(but they consisted of every race you could think of. Anyone opposed to Lilith's rule, as well as opportunistic criminals, joined the HLF in the hopes that they could overthrow the lilin and create a new system of governance.)]
+		[hammer.speech(Судя по названию, можно подумать, что они были просто людьми,)] — отвечает Hammer, — [hammer.speech(но среди них были представители всех возможных рас. Любой, кто выступал против власти Lilith, а также всякие предприимчивые преступники, вступали в HLF в надежде свергнуть лилин и создать новую систему правления.)]
 	</p>
 	<p>
-		[ghost.speech(The core of the HLF, what we ended up labelling as the 'regulars', were the real threat, especially during that first year,)] Ghost adds, [ghost.speech(They were the die-hard revolutionaries, utterly committed to the cause, well trained, and completely fearless. The vast majority of them were humans, equipped with stolen Enforcer weapons and having their own uniforms, logistics networks, and command structures. Thankfully there weren't too many of them.)]
+		[ghost.speech(Ядро HLF — те, кого мы в итоге прозвали «регулярами», — представляло собой реальную угрозу, особенно в первый год,)] — добавляет Ghost, — [ghost.speech(Это были закоренелые революционеры, преданные своему делу до мозга костей, хорошо обученные и совершенно бесстрашные. Подавляющее большинство из них были людьми, вооружёнными украденным оружием Enforcer, со своей формой, логистикой и командной структурой. К счастью, их не было слишком много.)]
 	</p>
 	<p>
-		[hammer.speech(Then they had the irregulars,)] Hammer grunts, [hammer.speech(Committed to the cause, although varying in competence, they were the ones who stuck to guerilla warfare. Blending in with the civilian population before performing hit and run attacks, they left the serious offensive operations to the regulars.)]
+		[hammer.speech(А еще были иррегулярные части,)] хмыкает Hammer, [hammer.speech(Преданные делу, хоть и разной степени компетентности, именно они придерживались тактики партизанской войны. Смешиваясь с гражданским населением перед нанесением внезапных ударов, они оставляли серьезные наступательные операции регулярным войскам.)]
 	</p>
 	<p>
-		[style.speechMasculineStrong(Then there was the usual rabble of malcontents, looters, and small-time criminals who joined in to make the most of the chaos,)] Dancer, the fox-boy, says, [style.speechMasculineStrong(The Patrol was more than enough to deal with them most of the time, leaving us with the serious HLF soldiers.)]
+		[style.speechMasculineStrong(А еще была обычная толпа недовольных, мародеров и мелких преступников, которые примкнули к ним, чтобы нажиться на хаосе,)] говорит Dancer, лис-мальчишка, [style.speechMasculineStrong(Патруля в большинстве случаев хватало, чтобы с ними разобраться, так что нам оставались только серьезные солдаты HLF.)]
 	</p>
 	<p>
-		[ghost.speech(In the end, with their regulars having been whittled down to a fraction of their original strength, the HLF succumbed to infighting and fell apart from within,)] Ghost reveals, [ghost.speech(We know that we didn't manage to get all of them in the end, so there's a good chance that there's some veterans hiding out there somewhere.)]
+		[ghost.speech(В итоге, когда их регулярные части были вырезаны до крошечной доли от первоначальной численности, HLF пали жертвой междоусобиц и развалились изнутри,)] признается Ghost, [ghost.speech(Мы знаем, что в конечном счете не удалось выловить всех, так что велика вероятность, что где-то там все еще прячутся ветераны.)]
 	</p>
 	#IF(pc.isQuestCompleted(QUEST_LINE_SIDE_REBEL_BASE))
 		<p>
-			Remembering the crazed HLF survivor you encountered in Submission, you tell the Enforcers that you encountered one of the veterans which Ghost is talking about.
+			Вспомнив безумного выжившего HLF, которого ты встретил в Submission, ты говоришь Enforcer, что наткнулся на одного из тех ветеранов, о которых упоминал Ghost.
 		</p>
 		<p>
-			[hammer.speech(There's bound to be dozens more like that,)] hammer grunts, [hammer.speech(It'd take far too many resources to root them all out, and they can't cause any serious damage any more.)]
+			[hammer.speech(Таких наверняка еще десятки,)] ворчит hammer, [hammer.speech(На то, чтобы вытравить их всех, уйдет слишком много ресурсов, да и серьезного ущерба они уже не нанесут.)]
 		</p>
 	#ENDIF
 	<p>
-		With this conversation seemingly now at an end, you wonder what to ask about next...
+		Похоже, разговор подходит к концу, и ты гадаешь, о чем спросить дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_ANGELIXX_DIARY"><![CDATA[
 	<p>
-		Remembering that Ghost picked up Angelixx's diary at the end of the operation you accompanied her and Hammer on, you ask the otter-girl if it revealed what was happening to the kidnapped refugees.
+		Вспомнив, что в конце операции, в которой ты участвовал вместе с Призраком и Молотом, тот самый Призрак подобрала дневник Анжеликсы, ты спрашиваешь девочку-выдру, удалось ли узнать из него, что происходит с похищенными беженцами.
 	</p>
 	<p>
-		[ghost.speech(She's a nasty piece of work,)] Ghost says of the succubus as she walks over to a nearby filing cabinet and produces the diary from within. Holding up the little pink book, she reveals, [ghost.speech(Remember how she tried to act all sweet and innocent when we met her? She's really a massive slut, and treats people like dirt.)]
+		[ghost.speech(Та еще дрянь,)] — говорит Призрак о суккубе, подходя к ближайшему картотечному шкафу и доставая оттуда дневник. Подняв маленькую розовую книжку, она добавляет: [ghost.speech(Помнишь, как она пыталась строить из себя милую и невинную при нашей первой встрече? На самом деле она та еще шлюха, которая со всеми обращается как с мусором.)]
 	</p>
 	<p>
-		[hammer.speech(There's nothing in there to tell us what's happening to the refugees,)] Hammer grunts, [hammer.speech(but there is an entry which mentions that Angelixx was teleporting them to her sister's shop in Dominion's Demon Home district.)]
+		[hammer.speech(Там нет ничего, что прямо сказало бы нам, что сталось с беженцами,)] — ворчит Молот, — [hammer.speech(но есть запись о том, что Анжеликса телепортировала их в лавку своей сестры в районе Демонического Дома в Dominion.)]
 	</p>
 	<p>
-		[ghost.speech(That'd be 'Lovienne's Luxuries', which is run by Saellatrix; unlike Angelixx, she's a recognised daughter of Lovienne,)] Ghost says, before regretfully sighing, [ghost.speech(Dominion's outside of our jurisdiction, and if we're caught investigating a recognised daughter of an elder lilin then it'd certainly be the end for us. We've stopped Angelixx's operations here in Elis, and that's all we can do.)]
+		[ghost.speech(Это «Роскошь Ловьенны», которой заправляет Саэллатрикс; в отличие от Анжеликсы, она официально признанная дочь Ловьенны,)] — говорит Призрак, после чего с сожалением вздыхает: [ghost.speech(Dominion находится вне нашей юрисдикции, и если нас поймают за расследованием дел признанной дочери старшей лилин, нам точно придет конец. Мы остановили дела Анжеликсы здесь, в Элисе, и это всё, что мы можем сделать.)]
 	</p>
 	<p>
-		[hammer.speech(Perhaps you can do something about it,)] Hammer says to you, before motioning for Ghost to give you the diary. [hammer.speech(We're not asking you to go after Angelixx or confront her sister, but with this diary as proof of Angelixx's deeds, the opportunity's there.)]
+		[hammer.speech(Возможно, ты сможешь что-то с этим сделать,)] — говорит Молот, обращаясь к тебе, и жестом просит Призрака передать тебе дневник. [hammer.speech(Мы не просим тебя охотиться за Анжеликссой или вступать в конфликт с её сестрой, но раз у тебя на руках этот дневник как доказательство её проделок, шанс есть.)]
 	</p>
 	<p>
-		Holding out the diary towards you, the otter-girl says, [ghost.speech(Be careful if you do decide to take this further. Angelixx is a coward and not much of a physical threat, but she's got others who do the fighting for her. She's also a manipulative bitch; don't trust anything she says. As for Saellatrix, you don't get to be recognised by an elder lilin without being extremely dangerous and utterly ruthless, so I'd avoid any kind of conflict with her if possible.)]
+		Протягивая тебе дневник, девочка-выдра говорит: [ghost.speech(Будь осторожен, если решишь зайти слишком далеко. Анжеликса — трусиха и не представляет большой физической угрозы, но у неё есть те, кто сражается вместо неё. К тому же она та ещё манипулятивная сука; не верь ни единому её слову. Что касается Саэллатрикс, то тебя не признает старшая лилин, если ты не чертовски опасен и беспощаден, так что, если возможно, избегай с ней конфликтов.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_ANGELIXX_DIARY_TAKE"><![CDATA[
 	<p>
-		As there's no obligation being placed on you to pursue Angelixx and investigate her sister's store, you decide that there's no harm in taking the diary. Putting the small, pink notebook in your inventory, you tell the Enforcers that you'll look into it if you get the chance.
+		Поскольку тебя никто не обязывает преследовать Анжеликссу и расследовать дело с лавкой её сестры, ты решаешь, что забрать дневник — не такая уж плохая идея. Положив маленькую розовую тетрадь в Инвентарь, ты говоришь Enforcer, что при первой же возможности разузнаешь об этом.
 	</p>
 	<p>
-		[ghost.speech(We won't be there to back you up this time, so don't take any risks,)] Ghost says with a smile.
+		[ghost.speech(В этот раз мы не сможем подстраховать тебя, так что не рискуй попусту,)] — с улыбкой произносит Ghost.
 	</p>
 	<p>
-		[hammer.speech([pc.Name] can handle [pc.herself] just fine,)] Hammer grunts, before looking at you and saying, [hammer.speech(If you take Angelixx down, make sure to come back and tell us about it. I'd like to know if the bitch got what was coming to her.)]
+		[hammer.speech([pc.Name] вполне справится с [pc.herself],)] — ворчит Hammer, после чего смотрит на тебя и добавляет: [hammer.speech(Если свалишь Анжеликссу, обязательно вернись и расскажи нам. Хочется знать, получила ли эта сука по заслугам.)]
 	</p>
 	<p>
-		[ghost.speech(You may have visited it already, but I'd start by taking a look around 'Lovienne's Luxuries' if I were you,)] Ghost suggests, [ghost.speech(We know that the refugees were teleported there, so it's likely that they're either being kept there and used as slave labour or sold off from that location. Either way, there's bound to be signs of them there if you look hard enough.)]
+		[ghost.speech(Возможно, ты там уже был, но на твоём месте я бы начал с осмотра «Роскоши Ловьенн»,)] — предлагает Ghost, [ghost.speech(Мы знаем, что беженцев телепортировали именно туда, так что, скорее всего, их либо держат там как рабов, либо распродают оттуда. В любом случае, если хорошенько поискать, там наверняка останутся следы.)]
 	</p>
 	<p>
-		[hammer.speech(Don't bother with the Enforcers in Dominion,)] Hammer warns, [hammer.speech(They won't lift a finger to go after a daughter of an elder lilin unless you've got substantial, concrete evidence of illegal enslavement; that diary won't be enough for them. Worse, they might even report you to Lovienne directly, then it'd all be over for you.)]
+		[hammer.speech(Не трать время на Enforcer в Dominion,)] — предостерегает Hammer, — [hammer.speech(Они и пальцем не пошевелят, чтобы взяться за дочь старейшей лилин, если у тебя нет веских, неопровержимых доказательств незаконного рабства; одного этого дневника им будет мало. Хуже того, они могут доложить о тебе напрямую Lovienne, и тогда тебе точно конец.)]
 	</p>
 	<p>
-		Thanking the Enforcers for the advice, you wonder what to do next...
+		Поблагодарив Enforcer за совет, ты задумываешься, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SWORD_TALK_ANGELIXX_QUEST_COMPLETE"><![CDATA[
 	<p>
-		Wanting to let these Enforcers know what came of your investigation into Angelixx's diary, you ask them if they've got a minute to hear about what you've been up to.
+		Желая рассказать этим Enforcer, чем закончилось твое расследование с дневником Angelixx, ты спрашиваешь, найдется ли у них минутка послушать о твоих успехах.
 	</p>
 	<p>
-		[ghost.speech(You really went after that bitch?)] Ghost asks.
+		[ghost.speech(Ты и правда взялась за эту сучку?)] — спрашивает Ghost.
 	</p>
 	<p>
-		[hammer.speech(I hope she got what she deserved,)] Hammer grunts, [hammer.speech(Tell us what you found, [pc.name].)]
+		[hammer.speech(Надеюсь, она получила по заслугам,)] — ворчит Hammer, — [hammer.speech(Рассказывай, что ты нашла, [pc.name].)]
 	</p>
 	<p>
-		Starting from when you took Angelixx's diary to Saellatrix and confronted her with it, you recount how you met Fiammetta and together the two of you explored the factory beneath Lovienne's Luxuries. Although they don't interrupt your tale, the Enforcers' expressions get darker and angrier as they hear about how the kidnapped refugees were being permanently transformed into sex dolls. You finish your story by saying that the crimes of Saellatrix, Angelixx, and her sons were exposed in an article published in The Octogram Herald, and although Angelixx, Sleip, and Nir have suffered terrible punishments, Saellatrix pretty much got away with everything.
+		Начиная с того момента, как ты принесла дневник Angelixx к Saellatrix и предъявила ей его, ты пересказываешь, как встретила Fiammetta и как вы вдвоем исследовали фабрику под Lovienne's Luxuries. Хотя они не перебивают твой рассказ, лица Enforcer становятся всё мрачнее и злее, когда они слышат о том, как похищенных беженцев навсегда превращают в секс-кукол. Ты заканчиваешь свой рассказ словами о том, что преступления Saellatrix, Angelixx и её сыновей были разоблачены в статье в The Octogram Herald, и хотя Angelixx, Sleip и Nir понесли ужасную кару, Saellatrix почти всё сошла с рук.
 	</p>
 	<p>
-		[hammer.speech(Of course the recognised daughter of Lovienne didn't get punished,)] Hammer furiously growls as you finish your tale. Clenching his fist, he slams it on the table next to him, and with his wolf-like face turning up into a toothy snarl, he snaps, [hammer.speech(I'm going to Dominion tonight! I'll make her pay for what's she done!)]
+		[hammer.speech(Конечно, признанная дочь Ловиенны не понесла наказания,)] — яростно рычит Hammer, когда ты заканчиваешь свой рассказ. Сжав кулак, он с силой хлопает им по столу, и его волчье лицо искажается в оскале, когда он выплевывает: [hammer.speech(Сегодня же я отправляюсь в Dominion! Я заставлю её заплатить за всё, что она натворила!)]
 	</p>
 	<p>
-		[ghost.speech(You're not going anywhere!)] Ghost firmly states. Although she's much smaller and far less physically intimidating than Hammer, the wolf-boy instantly stops snarling as the otter-girl rebukes him. With her hands on her hips, she says, [ghost.speech(You've got Elis to protect, you big idiot! You know that you don't stand a chance against a demon of Saellatrix's power, so all you'd do is throw yourself away when this town needs you the most. Get a grip!)]
+		[ghost.speech(Ты никуда не пойдешь!)] — твердо заявляет Ghost. Хотя она намного меньше и выглядит куда менее внушительно, чем Hammer, волк-мальчишка мгновенно перестает рычать, когда девочка-выдра отчитывает его. Уперев руки в бока, она говорит: [ghost.speech(Тебе нужно защищать Elis, ты, большой идиот! Ты же знаешь, что у тебя нет ни единого шанса против демона такой силы, как у Saellatrix. Ты просто погубишь себя в самый неподходящий момент, когда город будет нуждаться в тебе больше всего. Возьми себя в руки!)]
 	</p>
 	<p>
-		The rest of the Enforcers bear silent witness to Hammer's apology as he mumbles, [hammer.speech(You're right, Ghost, as always... It's just the injustice of it all that sickens me...)]
+		Остальные Enforcer молча наблюдают за тем, как Hammer, бормоча, извиняется: [hammer.speech(Ты права, Ghost, как и всегда... Просто эта несправедливость просто тошнит меня...)]
 	</p>
 	<p>
-		[ghost.speech(We all feel the same way,)] the otter-girl says, [ghost.speech(One day things will change. The best we can do is to try to help those who need us here in Elis.)]
+		[ghost.speech(Мы все чувствуем то же самое,)] — говорит девочка-выдра, — [ghost.speech(Настанет день, и всё изменится. Лучшее, что мы можем сделать — это пытаться помочь тем, кто нуждается в нас здесь, в Elis.)]
 	</p>
 	<p>
-		Turning to face you, she continues, [ghost.speech(You did all you could, [pc.name]. It's sad that it was too late for those who were already transformed, but at least there'll be no more victims. Thanks for letting us know about it, and at least Angelixx and those terrible sons of hers got what was coming to them.)]
-	</p>
-	<p>
-		Giving the otter-girl a brief nod, you wonder what to do now...
-	</p>
+		Повернувшись к тебе, она продолжает: [ghost.speech(Ты сделал всё, что было в твоих силах, [pc.name]. Грустно, что для тех, кто уже успел трансформироваться, было слишком поздно, но, по крайней мере, новых жертв не будет. Спасибо, что рассказала нам об этом. По крайней мере, Angelixx и её ужасные сыновья получили по заслугам.)]
+	</p><p>
+Кратко кивнув девочке-выдре, ты задумываешься о том, что делать дальше...
+</p>
 	]]>
 	</htmlContent>
 	
