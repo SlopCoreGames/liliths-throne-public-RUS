@@ -157,7 +157,15 @@
     "res/txt/places/submission/gamblingDen/pregnancyRoulette.xml",
     "res/txt/places/submission/gamblingDen/roxysShop.xml",
     "res/txt/places/submission/impCitadel.xml",
-    "res/txt/places/submission/impCitadelCompanions.xml"
+    "res/txt/places/submission/impCitadelCompanions.xml",
+    "res/txt/places/submission/lyssiethsPalace.xml",
+    "res/txt/places/submission/ratWarrens/captive.xml",
+    "res/txt/places/submission/ratWarrens/core.xml",
+    "res/txt/places/submission/ratWarrens/dicePoker.xml",
+    "res/txt/places/submission/ratWarrens/vengarCaptive.xml",
+    "res/txt/places/submission/rebelBase.xml",
+    "res/txt/places/submission/slimeQueensLair.xml",
+    "res/txt/places/submission/submissionPlaces.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

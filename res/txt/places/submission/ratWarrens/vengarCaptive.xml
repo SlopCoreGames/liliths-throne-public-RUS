@@ -5,7 +5,7 @@
 	
 	<htmlContent tag="APPLY_FETISH_SUBMISSIVE"><![CDATA[
 	<p>
-		Shadow tells you that you're going to love being a submissive bitch from now on.
+		Шэдоу говорит, что отныне тебе безумно понравится быть покорной сучкой.
 	</p>
 	]]>
 	</htmlContent>
@@ -13,9 +13,9 @@
 	<htmlContent tag="APPLY_FETISH_TRANSFORMATION"><![CDATA[
 	<p>
 		#IF(!pc.isAbleToHaveRaceTransformed())
-			Shadow teases you about how you're going to beg her to be allowed to self-transform into a slutty cock-sleeve after this.
+			Шэдоу дразнит тебя, предвкушая, как после всего этого ты будешь умолять её позволить тебе самой превратиться в шлюшку-приемницу для членов.
 		#ELSE
-			Shadow teases you about how you're going to love being transformed into a rat-girl slut after this.
+			Шэдоу дразнит тебя, предвкушая, как после всего этого тебе понравится превратиться в крысиную девку-шлюху.
 		#ENDIF
 	</p>
 	]]>
@@ -23,35 +23,35 @@
 	
 	<htmlContent tag="APPLY_FETISH_BEHAVIOUR_EXTRAS"><![CDATA[
 	<p>
-		Shadow tells you that you're going to love exposing your slutty cunt and getting it pumped full of rat cum.
+		Шэдоу говорит, что тебе понравится выставлять напоказ свою шлюшью киску и получать в неё горы крысиной спермы.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="APPLY_FETISH_HOLES"><![CDATA[
 	<p>
-		The black-furred rat-girl teases you about how you're going to love having all your holes used.
+		Черношерстная крысиная девка дразнит тебя, обещая, что тебе понравится, когда будут использовать все твои дырочки.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="APPLY_FETISH_SERVICING_HOLES"><![CDATA[
 	<p>
-		Shadow laughs as she says that you're going to be permanently desperate to service all the gang's cocks and pussies.
+		Шэдоу смеется, заявляя, что ты навсегда станешь одержима желанием обслуживать все члены и киски этой банды.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="APPLY_FETISH_FINISHED_NO_EFFECT"><![CDATA[
 	<p>
-		Shadow laughs as she realises that you're suffering no effects due to already having all the fetishes she wanted to inflict upon you. Tells you that the real transformations are coming next.
+		Шэдоу смеется, осознав, что ты не чувствуешь никаких эффектов, потому что у тебя уже есть все фетиши, которые она хотела на тебя навязать. Она говорит, что настоящие трансформации только начинаются.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="APPLY_FETISH_FINISHED"><![CDATA[
 	<p>
-		Shadow laughs as she informs you that you're nothing but her plaything now. Tells you that the real transformations are coming next.
+		Шэдоу смеется, сообщая тебе, что теперь ты всего лишь её игрушка. Она говорит, что настоящие трансформации только начинаются.
 	</p>
 	]]>
 	</htmlContent>
@@ -61,30 +61,30 @@
 	
 	<htmlContent tag="FINAL_COMBAT_DEFEAT_STRIPPED"><![CDATA[
 	<p>
-		Vengar orders rats to strip you (and companion). Silence removes seals if any are present. Shadow clasps collar around your neck. You get groped a lot during it.
+		Венгар приказывает крысам раздеть тебя (и спутника). Сайленс снимает печати, если они есть. Шэдоу застегивает ошейник на твоей шее. Пока это происходит, тебя вовсю лапают.
 	</p>
 	<p>
-		Vengar tells Silence to get the potions she was working on.
+		Венгар велит Сайленс принести зелья, над которыми та работала.
 	</p>
 	<p>
-		Silence hurries off to obey while Shadow (egged on by rats) sadistically pins you to the floor (if you defeated her in combat, she takes some revenge now). After a minute of this, Silence returns and frowns at Shadow, who releases her grip a little. She hands the bottle(s) over to Shadow (and Vengar) who proceed to force you (and your companion) to drink them.
+		Тишина поспешно удаляется, чтобы исполнить приказ, пока Тень (подстрекаемая крысами) садистски прижимает тебя к полу (если ты одолел её в бою, сейчас она мстит). Спустя минуту Тишина возвращается и хмурится на Тень, из-за чего та слегка ослабляет хватку. Она передает бутылки Тени (и Венгару), которые начинают заставлять тебя (и твоего спутника) выпить их.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FINAL_COMBAT_DEFEAT_FETISH_APPLICATION"><![CDATA[
 	<p>
-		Cackling in delight, Shadow releases her hold on your nose and mouth, before roughly grabbing you by the chin and leaning down to stare into your eyes. With an evil grin plastered across her face, she teases, [shadow.speech(Yer gonna get hit by some real nice mental changes now! Gotta turn yer into a droolin' subby slut wot's gonna spread yer legs whenever yer get told yer gonna get fucked by one o' us rats!)]
+		Рассмеявшись от восторга, Тень отпускает твой нос и рот, после чего грубо хватает тебя за подбородок и наклоняется, чтобы заглянуть в глаза. С ехидной ухмылкой на лице она дразнит: [shadow.speech(Сейчас тебя ждут ну очень приятные ментальные изменения! Превратим тебя в пускающую слюни покорную шлюшку, которая будет раздвигать ноги каждый раз, когда ей скажут, что её сейчас оттрахает одна из наших крыс!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FINAL_COMBAT_DEFEAT_FETISH_APPLICATION_END"><![CDATA[
 	<p>
-		If companion dialogue, you look over and see companion has had same treatment.
+		Если есть диалог со спутником, ты оглядываешься и видишь, что с ним обошлись точно так же.
 	</p>
 	<p>
-		If can self-TF, Shadow unclasps your collar and says it's time for you to make some changes to yourself. If not, she gets given another potion by Silence, and orders you to open wide.
+		Если доступна само-ТФ, Тень расстегивает твой ошейник и говорит, что пришло время тебе самой внести в себя изменения. Если нет, Тишина вручает ей еще одно зелье, и она приказывает тебе широко раскрыть рот.
 	</p>
 	]]>
 	</htmlContent>
@@ -94,43 +94,41 @@
 	
 	<htmlContent tag="TF_SELF_TF"><![CDATA[
 	<p>
-		[shadow.Name] sits back heavily on your stomach, causing you to sharply exhale. Letting out a wicked cackle at your reaction to her sadistic move, she then proceeds to stand up, before snarling down at you, [shadow.speechNoEffects(Listen close, yer filthy slut, and make sure yer get this right; I ain't repeatin' meself! Yer gonna use yer powers ta transform yerself inta the <i>exact</i> form I specify, got it?!)]
+		[shadow.Name] тяжело опускается тебе на живот, заставляя тебя резко выдохнуть. Издав злобный смешок от твоей реакции на её садистский выпад, она встает и рычит тебе в лицо: [shadow.speechNoEffects(Слушай внимательно, грязная шлюха, и не вздумай ошибиться; повторять не стану! Ты используешь свои силы, чтобы превратить себя в <i>точную</i> форму, которую я укажу, поняла?!)]
 	</p>
 	<p>
-		Nodding your head, you look up into the pitch-black rat-girl's bright green eyes and prepare to do as she says. Seeing your sign of subordination, she leans down to unfasten your collar, allowing you to use your self-transformative powers as she prepares to start giving you instructions...
+		Кивнув, ты заглядываешь в ярко-зеленые глаза угольно-черной крысодевки и готовишься беспрекословно ей подчиняться. Заметив твой знак покорности, она наклоняется, чтобы расстегнуть твой ошейник, давая тебе возможность использовать свои силы самотрансформации, пока она готовит первые инструкции...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TF_SWALLOW"><![CDATA[
 	<p>
-		Finding yourself desperately turned on by being treated in such a dominant manner by the pitch-black rat-girl sitting on top of you, you find yourself unwilling to do anything but obey each and every command she gives you. Upon being told to open wide, you immediately open your mouth, allowing Shadow to push the neck of this next bottle past your waiting lips. Desperate to be transformed, you can't help but let out a series of pathetic mewling noises as you crane your neck and eagerly gulp down the sweet liquid that begins to flow into your mouth.
+		Понимая, что тебя до безумия возбуждает такое доминирующее отношение со стороны сидящей на тебе угольно-черной крысодевки, ты ловишь себя на мысли, что не хочешь делать ничего, кроме как исполнять каждую её команду. Когда она велит тебе широко раскрыть рот, ты тут же повинуешься, позволяя Теневой просунуть горлышко очередной бутылки к твоим ожидающим губам. Жаждущий трансформации, ты невольно издаешь серию жалких мяукающих звуков, вытягивая шею и жадно глотая сладкую жидкость, что начинает течь тебе в рот.
+	</p>
+	<p>		Спустя всего пару мгновений бутылка оказывается пуста, и Тень небрежно швыряет стеклянный сосуд в сторону; ты слышишь, как он с грохотом разбивается о ближайшую стену, и она даже не смотрит на него. Отпустив тебя, она выпрямляется, издает злобный смешок и дразнит: [shadow.speechNoEffects(Надеюся, ты уже прощаешься со своим нынешним телом; как только эта жижа подействует, от тебя не останется ничего, кроме похотливой маленькой крысо-шлюхи, которой день за днем будут забивать грязную киску крысиными хребтами!)]
 	</p>
 	<p>
-		After just a couple of moments, you've completely emptied the bottle, and Shadow carelessly hurls the glass container to one side, showing no care at all as you hear it smash against a nearby wall. Releasing you from her pin, she stands up, before letting out an evil cackle and teasing, [shadow.speechNoEffects(I 'ope ya sayin' yer last goodbyes ta yer current body; once this potion 'as done its work, yer gonna be nothin' more than an 'orny little rat-slut who gets 'er filthy pussy filled with rat cock day afta day!)]
-	</p>
-	<p>
-		To the laughter and jeers of the surrounding rats, you feel your body start to get hot and itchy all over, and can't help but let out a horny moan as you anticipate transforming into your new form. Squatting down beside you, Shadow grins and licks her lips, before preparing to start commenting on your physical changes...
+		Под смех и издевательский писк окружающих крыс, ты чувствуешь, как всё тело начинает гореть и чесаться. Ты невольно издаешь похотливый стон, предвкушая превращение в свою новую форму. Присев рядом с тобой, Шэдоу ухмыляется и облизывает губы, готовясь комментировать твои физические изменения...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TF_COMPANION_SELF_TF"><![CDATA[
 	<p>
-		Looking over at your companion, you see that Vengar has made [npc.herHim] go through very much the same process as you. Using [npc.her] self-transformative powers, [npc.sheHas] morphed [npc.herself] to become very feminine, and is now about the same height as you with a bust size to match.
+		Посмотрев на своего спутника, ты видишь, что Венгар заставил [npc.herHim] пройти через тот же процесс, что и ты. Используя [npc.her] способности к самотрансформации, [npc.sheHas] превратил(а) [npc.herself] в очень женственную особу, которая теперь почти одного роста с тобой и обладает соответствующим бюстом.
 	</p>
 	<p>
-		Stooping down and greedily running his hands down over [npc.her] body, Vengar grins and teases, [vengar.speech(Now yer lookin' just 'ow I like my girls! Yer tight, drippin' pussy is gonna feel real good grippin' down around my fat cock!)]
+		Наклонившись и жадно проводя руками по телу [npc.her], Венгар ухмыляется и дразнит: [vengar.speech(А теперь ты выглядишь в точности так, как любят мои девки! Твоя узкая, сочащаяся киска будет охренительно сжимать мой толстый член!)]
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="TF_COMPANION_SWALLOW"><![CDATA[
+	<htmlContent tag="TF_COMPANION_SWALLOW"><![CDATA[<p>
+Взглянув на свою спутницу, ты замечаешь, что Венгар заставил [npc.herHim] пройти через тот же процесс, что и тебя. Выпив зелье с почти таким же заклинанием, [npc.sheHas] превратилась в невысокую, пышногрудую девку-крысу; она краснеет и тяжело дышит от возбуждения, глядя снизу вверх в голодные глаза Венгара, пока [npc.she] ловит каждый его взгляд.
+</p>
 	<p>
-		Looking over at your companion, you see that Vengar has made [npc.herHim] go through very much the same process as you. Having drunk a potion with a very similar enchantment to yours, [npc.sheHas] morphed into a short, busty rat-girl, and is blushing and panting from excitement as [npc.she] looks up into Vengar's hungry eyes.
-	</p>
-	<p>
-		Stooping down and greedily running his hands down over [npc.her] body, Vengar grins and teases, [vengar.speech(Now yer lookin' just 'ow I like my girls! Yer tight, drippin' pussy is gonna feel real good grippin' down around my fat cock!)]
+		Наклонившись и жадно проводя руками по телу [npc.her], Венгар ухмыляется и дразнит: [vengar.speech(А теперь ты выглядишь в точности так, как любят мои девки! Твоя узкая, сочащаяся киска будет охренительно сжимать мой толстый член!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -140,41 +138,41 @@
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_BOTH"><![CDATA[
 	<p>
-		Shadow makes you get down on all fours and lift your ass up towards the hall. Grabbing your new tail, she hikes your ass up higher and slaps your pussy, before starting to rub your clit. You feel yourself getting wet as the rats jeer and comment on your exposed cunt.
+		Тень заставляет тебя встать на четвереньки и задрать задницу к залу. Схватив твой новый хвост, она еще выше задирает твою пятую точку и шлепает по киске, после чего начинает тереть твой клитор. Ты чувствуешь, как становишься влажной, пока крысы улюлюкают и комментируют твою обнаженную щель.
 	</p>
 	<p>
-		Letting you go, she does the same to your companion if applicable, before asking which one of you now wants to get fucked by Vengar first. She says the two of you can eat her and Silence out while Vengar fucks whoever is going first.
+		Отпустив тебя, она делает то же самое с твоей спутницей (если она есть), а затем спрашивает, кто из вас двоих первой хочет, чтобы её оттрахал Венгар. Она говорит, что вы обе можете ласкать её и Сайленс, пока Венгар трахает ту, что пойдет первой.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_SOLO"><![CDATA[
 	<p>
-		Shadow makes you get down on all fours and lift your ass up towards the hall. Grabbing your new tail, she hikes your ass up higher and slaps your pussy, before starting to rub your clit. You feel yourself getting wet as the rats jeer and comment on your exposed cunt.
+		Тень заставляет тебя встать на четвереньки и задрать задницу к залу. Схватив твой новый хвост, она еще выше задирает твою пятую точку и шлепает по киске, после чего начинает тереть твой клитор. Ты чувствуешь, как становишься влажной, пока крысы улюлюкают и комментируют твою обнаженную щель.
 	</p>
 	<p>
-		Letting you go, she says she's turned herself on by doing this. Tells you to present yourself to Vengar.
+		Отпустив тебя, она признается, что сама завелась от этого зрелища. Затем она велит тебе представиться Венгару.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK"><![CDATA[
 	<p>
-		You present yourself to Vengar, who starts fucking you. Silence and Shadow grab nearby rat-boys and start riding them.
+		Ты подставляешься под Венгара, и он начинает тебя трахать. Сайленс и Тень хватают ближайших крысопарней и принимаются скакать на них.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_FIRST"><![CDATA[
 	<p>
-		eager to be fucked, you present yourself to Vengar, who slides into your wet pussy and starts fucking you. Shadow forces you to start eating her out, while Silence does the same to your companion.
+		Жаждущая секса, ты подставляешься под Венгара, который входит в твою влажную киску и начинает тебя трахать. Тень заставляет тебя ласкать её членом, в то время как Сайленс делает то же самое с твоей спутницей.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_SECOND"><![CDATA[
 	<p>
-		You let [npc.name] present [npc.herself] to Vengar first, who quickly slides into [npc.her] wet pussy and starts fucking [npc.herHim]. Shadow forces [npc.herHim] to start eating her out, while Silence does the same to your you.
+		Ты позволяешь [npc.name] первой представить [npc.herself] Венгару, который быстро входит в мокрую киску [npc.her] и начинает трахать [npc.herHim]. Тень заставляет [npc.herHim] ласкать её членом, а Сайленс делает то же самое с тобой.
 	</p>
 	]]>
 	</htmlContent>
@@ -184,28 +182,27 @@
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_DOUBLE_PLAYER_NEXT"><![CDATA[
 	<p>
-		Vengar slides out of [npc.name] and moves over behind you. Silence and Shadow grab nearby rat-boys and start riding them. Vengar tells your companion to get cleaned up by you.
+		Венгар выскальзывает из [npc.name] и перемещается тебе за спину. Сайленс и Шэдоу хватают пробегающих мимо крысопарней и принимаются их трахать. Венгар велит твоему спутнику, чтобы ты его вылизала.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_DOUBLE_COMPANION_NEXT"><![CDATA[
 	<p>
-		Vengar slides out of you and moves over behind [npc.name]. Silence and Shadow grab nearby rat-boys and start riding them. Vengar tells you to get cleaned up by your companion.
+		Венгар выскальзывает из тебя и перемещается за спину [npc.name]. Сайленс и Шэдоу хватают пробегающих мимо крысопарней и принимаются их трахать. Венгар велит тебе, чтобы твой спутник тебя вылизал.
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_DOUBLE_PLAYER_START"><![CDATA[
-	<p>
-		Vengar starts fucking you. [npc.Name] pushes [npc.her] creampied pussy into your face, forcing you to eat the cum out of it.
-	</p>
+	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_DOUBLE_PLAYER_START"><![CDATA[<p>
+Венгар начинает трахать тебя. [npc.Name] прижимает [npc.her] залитую спермой киску к твоему лицу, заставляя тебя слизывать её.
+</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_DOUBLE_COMPANION_START"><![CDATA[
 	<p>
-		Vengar starts fucking [npc.name]. You push your creampied pussy into [npc.her] face, forcing [npc.herHim] to eat the cum out of it.
+		Венгар начинает трахать [npc.name]. Ты прижимаешь свою забитую спермой киску к лицу [npc.her], заставляя [npc.herHim] слизывать из неё сок.
 	</p>
 	]]>
 	</htmlContent>
@@ -215,10 +212,10 @@
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX"><![CDATA[
 	<p>
-		You (and companion, if applicable) are well and truly fucked. Rats in hall are fucking one another.
+		Ты (и спутник, если он есть) окончательно и бесповоротно оттраханы. Крысы в коридоре вовсю трахают друг друга.
 	</p>
 	<p>
-		Vengar says that he enjoyed breaking you in, but it would be selfish to keep you all for himself. Tells Silence to get her equipment to get you (and companion) marked up.
+		Венгар говорит, что ему понравилось тебя приручать, но было бы эгоистично оставлять тебя только себе. Он велит Сайленс принести снаряжение, чтобы оставить на тебе (и на спутнике) метки.
 	</p>
 	]]>
 	</htmlContent>
@@ -228,21 +225,21 @@
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_TATTOOED"><![CDATA[
 	<p>
-		Silence soon returns, holding a small black box. Vengar gets you (and companion) to lie on your backs and spread your legs.
+		Вскоре возвращается Сайленс с маленькой чёрной коробочкой. Венгар велит тебе (и спутнику) лечь на спину и широко раздвинуть ноги.
 	</p>
 	<p>
-		Silence gets a small brush out of the box. You can tell that it has a powerful arcane enchantment. Vengar says you're going to be tattooed so that everyone knows your pussy is a free hole. asks you if you have any preference as to what it says.
+		Сайленс достаёт из коробочки маленькую кисточку. Сразу видно, что она наделена мощным арканным зачарованием. Венгар говорит, что тебя сейчас будут татуировать, чтобы все знали: твоя киска — это дырка нарасхват. Он спрашивает, есть ли у тебя предпочтения по поводу надписи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_TATTOOED_STAY_QUIET"><![CDATA[
 	<p>
-		You stay quiet, but Shadow appears over Silence's shoulder and whispers something into her ear. Smiling, she starts painting on your groin, and you look down to see the words '[#SPECIAL_PARSE_0]' permanently inked just above your recently-fucked cunt.
+		Ты хранишь молчание, но Тень внезапно вырастает за спиной Безмолвной и шепчет ей что-то на ухо. Улыбнувшись, она начинает рисовать на твоей паху; ты опускаешь взгляд и видишь слова '[#SPECIAL_PARSE_0]', навечно вбитые татуировкой прямо над твоей недавно оттраханной киской.
 	</p>
 	#IF(pc.hasCompanions())
 		<p>
-			Again following Shadow's instructions, Silence moves over and paints on your companion's groin, and you look over to see the words '[#SPECIAL_PARSE_1]' on [npc.her] crotch.
+			Снова следуя указаниям Тени, Безмолвная перебирается к твоему спутнику и рисует на его паху; ты смотришь на него и видишь слова '[#SPECIAL_PARSE_1]' на [npc.her] промежности.
 		</p>
 	#ENDIF
 	]]>
@@ -250,11 +247,11 @@
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_TATTOOED_CHOOSE_TATTOO"><![CDATA[
 	<p>
-		Caught up in the moment, and feeling extremely turned on by what's happening to you, you beg for Silence to mark you as '[#SPECIAL_PARSE_0]'. Smiling, she starts painting on your groin, and you look down to see the words you requested permanently inked just above your recently-fucked cunt.
+		Поддавшись моменту и чувствуя дикое возбуждение от происходящего, ты умоляешь Безмолвную пометить тебя как '[#SPECIAL_PARSE_0]'. Она улыбается и начинает рисовать на твоей паху; ты смотришь вниз и видишь заветные слова, навечно вбитые татуировкой прямо над твоей недавно оттраханной киской.
 	</p>
 	#IF(pc.hasCompanions())
 		<p>
-			Shadow appears over Silence's shoulder and whispers something into her ear. Following the instructions she just received, Silence moves over and paints on your companion's groin, and you look over to see the words '[#SPECIAL_PARSE_1]' on [npc.her] crotch.
+			Тень вырастает за спиной Безмолвной и шепчет ей что-то на ухо. Последовав полученным указаниям, Безмолвная перебирается к твоему спутнику и рисует на его паху; ты смотришь на него и видишь слова '[#SPECIAL_PARSE_1]' на [npc.her] промежности.
 		</p>
 	#ENDIF
 	]]>
@@ -265,7 +262,7 @@
 	
 	<htmlContent tag="START_VENGAR_PUBLIC_FUCK_AFTER_SEX_TATTOOED_END"><![CDATA[
 	<p>
-		Having been marked, and with the slave collar heavy around your neck, the rats step back and leave you to wander freely about the hall...
+		Получив метку, а рабский ошейник тяжелым грузом давит на шею, ты видишь, как крысы отступают, позволяя тебе свободно бродить по залу...
 	</p>
 	]]>
 	</htmlContent>
@@ -275,10 +272,10 @@
 	
 	<htmlContent tag="VENGARS_HALL"><![CDATA[
 	<p>
-		There are many rats in the hall, eating, drinking, or just hanging out. Vengar is on his throne, but sometimes walks around or heads over to talk to a rat.
+		В зале полно крыс: кто-то ест, кто-то пьет, а кто-то просто бездельничает. Венгар восседает на своем троне, но время от времени он встает, чтобы прогуляться или перекинуться словом с какой-нибудь крысой.
 	</p>
 	<p>
-		Silence and Shadow are never too far away. Sometimes one or the other is either riding a rat's cock or getting someone to eat them out.
+		Безмолвная и Тень всегда где-то рядом. Время от времени то одна, то другая либо скачет на крысином члене, либо заставляет кого-то сосать им по губам.
 	</p>
 	]]>
 	</htmlContent>
@@ -288,10 +285,10 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SERVE"><![CDATA[
 	<p>
-		You decide to start serving food and drink to the rats around the hall. While there's no kitchen area, there are several open fires scattered around the hall, with meat cooking over them, and bottles of alcohol stacked up in one corner.
+		Ты решаешь начать разносить еду и выпивку крысам по всему залу. Кухни здесь нет, но повсюду разведены костры, на которых жарится мясо, а в одном из углов громоздятся бутылки с алкоголем.
 	</p>
 	<p>
-		Grabbing a tray, a bottle of rum, and some glasses, you approach the first table. The rats are thrilled that they're being waited on, and start ordering things from you...
+		Схватив поднос, бутылку рома и несколько стаканов, ты подходишь к первому столу. Крысы в восторге от того, что их начали обслуживать, и приняваются заказывать угощения...
 	</p>
 	]]>
 	</htmlContent>
@@ -301,10 +298,10 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_FLIRT"><![CDATA[
 	<p>
-		You head over to a nearby table where [npc.a_race] is sitting by [npc.herself]. Asking [npc.her] if [npc.she] wants some company, you start flirting with [npc.herHim].
+		Ты направляешься к ближайшему столу, за которым сидят [npc.a_race] и [npc.herself]. Спросив у [npc.her], не хочет ли [npc.she] составить им компанию, ты начинаешь флиртовать с [npc.herHim].
 	</p>
 	<p>
-		[npc.She] gets you to sit in [npc.her] lap, and [npc.she] starts groping you.
+		[npc.She] усаживает тебя к себе на колени [npc.her], а [npc.she] начинает бесстыдно лапать тебя.
 	</p>
 	]]>
 	</htmlContent>
@@ -314,14 +311,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_VENGAR_FUCK"><![CDATA[
 	<p>
-		You approach Vengar. He grins as he reads your tattoo, and says to get down and get his cock out.
+		Ты подходишь к Венгару. Он ухмыляется, разглядывая твою татуировку, и велит тебе опуститься на колени и вытащить его член.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_VENGAR_KNEEL"><![CDATA[
 	<p>
-		You approach Vengar. He says he's not in the mood to fuck right now, so you can show your subservience by kneeling beside him.
+		Ты подходишь к Венгару. Он говорит, что сейчас не в настроении трахаться, поэтому ты можешь продемонстрировать свою покорность, опустившись перед ним на колени.
 	</p>
 	]]>
 	</htmlContent>
@@ -331,17 +328,17 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_VENGAR_HANDJOB"><![CDATA[
 	<p>
-		You kneel before Vengar and get his cock out. He tells you to give him a handjob.
+		Ты встаешь на колени перед Венгаром и достаешь его член. Он велит тебе поработать ему рукой.
 	</p>
 	<p>
-		You obediently stroke his cock for a short while. Eventually, he tells you to stand up and sit in his lap; he's feeling like cumming in your pussy.
+		Ты послушно ласкаешь его член какое-то время. В конце концов он велит тебе встать и сесть к нему на колени; ему хочется кончить тебе в киску.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_VENGAR_SITTING_SEX"><![CDATA[
 	<p>
-		You do as you're told and sit in Vengar's lap, guiding his cock into your wet cunt as you do so.
+		Ты делаешь всё, как велено, и садишься на колени к Венгару, направляя его член в свою влажную щелку.
 	</p>
 	]]>
 	</htmlContent>
@@ -351,7 +348,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_VENGAR_FUCK_AFTER_SEX"><![CDATA[
 	<p>
-		Having had his fun, Vengar dismisses you.
+		Насладившись, Венгар отпускает тебя.
 	</p>
 	]]>
 	</htmlContent>
@@ -361,7 +358,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_VENGAR_KNEEL"><![CDATA[
 	<p>
-		In a display of submission, you kneel down beside Vengar. After fifteen minutes of this, he tells you to get down on all fours so that he can use you as a footrest.
+		Демонстрируя покорность, ты опускаешься на колени рядом с Венгаром. Спустя пятнадцать минут такого стояния он велит тебе встать на четвереньки, чтобы он мог использовать тебя в качестве подставки для ног.
 	</p>
 	]]>
 	</htmlContent>
@@ -371,7 +368,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_VENGAR_FOOTREST"><![CDATA[
 	<p>
-		Dropping down on all fours, you allow Vengar to put his feet up on your back. You're made to stay like this for half an hour, before Vengar grows weary of your presence and tells you to go back down into the hall.
+		Опустившись на четвереньки, ты позволяешь Венгару поставить ноги тебе на спину. Тебя заставляют оставаться в таком положении полчаса, пока Венгару не надоедает твое присутствие и он не велит тебе вернуться обратно в зал.
 	</p>
 	]]>
 	</htmlContent>
@@ -381,14 +378,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SHADOW_DISMISSED"><![CDATA[
 	<p>
-		You approach Shadow. She tells you that she doesn't have any more time for you today, and to get lost.
+		Ты подходишь к Шэдоу. Она говорит, что сегодня у неё нет на тебя времени, и велит тебе проваливать.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SHADOW"><![CDATA[
 	<p>
-		You approach Shadow. She tells you that she doesn't take kindly to being bothered. Pushes you over a nearby table. Orders you to raise your ass and prepare for a spanking.
+		Ты подходишь к Шэдоу. Она сообщает, что не любит, когда её беспокоят, и толкает тебя на ближайший стол. Она приказывает тебе задрать задницу и приготовиться к порке.
 	</p>
 	]]>
 	</htmlContent>
@@ -398,17 +395,17 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SHADOW_SPANKING"><![CDATA[
 	<p>
-		Shadow spanks you, while intermittently rubbing your pussy. Soon your cheeks are red and your pussy is dripping from excitement.
+		Шэдоу шлепает тебя по ягодицам, время от времени лаская твою киску. Вскоре твои щеки становятся красными, а киска начинает течь от возбуждения.
 	</p>
 	<p>
-		Kneeling down behind you, Shadow spreads your labia, before giving your cunt a long, wet lick. Tells you to hold still.
+		Опустившись на колени позади тебя, Шэдоу разводит твои половые губы и проводит по твоей щелке долгим, влажным языком. Она велит тебе не шевелиться.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SHADOW_SPANKING_START_SEX"><![CDATA[
 	<p>
-		Shadow buries her face between your legs, licking and kissing your dripping cunt.
+		Шэдоу утыкается лицом между твоих ног, вылизывая и целуя твою сочащуюся смазкой киску.
 	</p>
 	]]>
 	</htmlContent>
@@ -418,7 +415,7 @@
 	
 	<htmlContent tag="AFTER_SHADOW_ORAL"><![CDATA[
 	<p>
-		Shadow has finished. Tells you to hurry off and bother someone else.
+		Шэдоу закончила. Она велит тебе поскорее убираться и поискать себе кого-нибудь другого для докучливых просьб.
 	</p>
 	]]>
 	</htmlContent>
@@ -428,21 +425,21 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SILENCE_DISMISSED"><![CDATA[
 	<p>
-		You approach Silence. She shakes her head and makes a shooing motion with her hands. Maybe she'll want some attention tomorrow instead...
+		Ты подходишь к Сайленс. Она качает головой и делает отмахивающий жест руками. Может быть, завтра она захочет твоего внимания...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SILENCE"><![CDATA[
 	<p>
-		You approach Silence. She steps back against a nearby wall and slides her underwear off. Lifting her skirt, she beckons you to come and eat her out.
+		Ты подходишь к Сайленс. Она отступает к ближайшей стене и стягивает нижнее белье. Приподняв юбку, она манит тебя подойти и отсосать ей (или вылизать её).
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_SILENCE_START_SEX"><![CDATA[
 	<p>
-		kneeling down before Silence, you press your lips to her pussy and start eating her out.
+		Опустившись на колени перед Безмолвием, ты прижимаешься губами к её киске и начинаешь её жадно вылизывать.
 	</p>
 	]]>
 	</htmlContent>
@@ -452,7 +449,7 @@
 	
 	<htmlContent tag="AFTER_SILENCE_ORAL"><![CDATA[
 	<p>
-		Silence has finished with you, and motions for you to return to the hall.
+		Безмолвие закончила с тобой и жестом велит тебе возвращаться в зал.
 	</p>
 	]]>
 	</htmlContent>
@@ -462,70 +459,70 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START"><![CDATA[
 	<p>
-		Deciding that you want to find [npc.name] and see what [npc.sheIs] doing, you set off looking for [npc.herHim].
+		Решив, что хочешь найти [npc.name] и посмотреть, чем занята [npc.sheIs], ты отправляешься на поиски [npc.herHim].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_FLIRTING"><![CDATA[
 	<p>
-		You soon find [npc.herHim] flirting with [npc2.name(a)].
+		Вскоре ты находишь [npc.herHim], которая кокетничает с [npc2.name(a)].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_FUCKING_PENIS"><![CDATA[
 	<p>
-		You soon find [npc.herHim] pressed up against the wall being fucked by [npc2.name(a)].
+		Вскоре ты находишь [npc.herHim], прижатую к стене, которую трахает [npc2.name(a)].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_FUCKING_VAGINA"><![CDATA[
 	<p>
-		You soon find [npc.herHim] kneeling down before [npc2.name(a)], eating [npc2.herHim] out.
+		Вскоре ты находишь [npc.herHim] на коленях перед [npc2.name(a)], вылизывающую [npc2.herHim].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_GROUP_SEX"><![CDATA[
 	<p>
-		You soon find [npc.herHim] getting fucked by a group of rats.
+		Вскоре ты находишь [npc.herHim], которую трахает целая стая крыс.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_SERVING"><![CDATA[
 	<p>
-		You soon find [npc.herHim] serving food and drink to the tables.
+		Вскоре ты находишь [npc.herHim], разносящую еду и напитки по столам.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_SHADOW"><![CDATA[
 	<p>
-		You soon find [npc.herHim] bent over a table, getting spanked by Shadow.
+		Вскоре ты находишь [npc.herHim], склонившуюся над столом, пока Тень отвешивает ей шлепки.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_SILENCE"><![CDATA[
 	<p>
-		You soon find [npc.herHim] watching Silence as she rides a rat-boy's cock.
+		Вскоре ты находишь [npc.herHim], которая наблюдает за тем, как Безмолвие скачет на члене крысопарня.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_SILENCE"><![CDATA[
 	<p>
-		You soon find [npc.herHim] bent over a table, getting spanked by Shadow.
+		Вскоре ты находишь [npc.herHim], склонившуюся над столом, пока Тень отвешивает ей шлепки.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_START_VENGAR"><![CDATA[
 	<p>
-		You soon find [npc.herHim] kneeling down beside Vengar.
+	Вскоре ты обнаруживаешь, что [npc.herHim] стоит на коленях рядом с Венгаром.
 	</p>
 	]]>
 	</htmlContent>
@@ -535,14 +532,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FLIRTING"><![CDATA[
 	<p>
-		You join [npc.name] in flirting with [npc2.name].
+	Ты присоединяешься к [npc.name], чтобы пофлиртовать с [npc2.name].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FLIRTING_ORAL"><![CDATA[
 	<p>
-		You and [npc.name] drop down onto your knees before [npc2.name] in order to perform oral on [npc2.herHim]...
+	Ты и [npc.name] опускаетесь на колени перед [npc2.name], чтобы отсосать [npc2.herHim]...
 	</p>
 	]]>
 	</htmlContent>
@@ -552,7 +549,7 @@
 	
 	<htmlContent tag="AFTER_COMPANION_FLIRTING_ORAL"><![CDATA[
 	<p>
-		You and [npc.name] are finished performing oral on [npc2.name]. [npc2.She] tells the two of you to go bother someone else now.
+	Вы с [npc.name] закончили ласкать [npc2.name] ртом. [npc2.She] велит вам двоим идти и не мешать, заняв кого-нибудь другого.
 	</p>
 	]]>
 	</htmlContent>
@@ -562,7 +559,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FLIRTING_FINISH"><![CDATA[
 	<p>
-		You and [npc.name] just flirt with [npc2.name] for a while and let [npc2.herHim] grope the two of you. [npc2.She] eventually tells you to go bother someone else now.
+	Вы с [npc.name] просто какое-то время флиртуете с [npc2.name], позволяя [npc2.herHim] лапать вас обоих. В конце концов [npc2.She] велит вам идти и не мешать.
 	</p>
 	]]>
 	</htmlContent>
@@ -572,35 +569,34 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FUCKING_PENIS"><![CDATA[
 	<p>
-		Your companion moans as [npc2.name] starts cumming inside [npc.her] pussy. You wonder if you should leave, or perhaps wait around and hope to receive the same treatment once [npc2.name] has finished with [npc.herHim].
+	Твой спутник стонет, когда [npc2.name] начинает кончать в киску [npc.her]. Ты гадаешь, стоит ли тебе уйти или, может, подождать и надеяться на такую же участь, когда [npc2.name] закончит с [npc.herHim].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FUCKING_VAGINA"><![CDATA[
 	<p>
-		Your companion moans as [npc2.name] pulls [npc.her] face into [npc2.her] pussy. You wonder if you should leave, or perhaps join in...
+	Твой спутник стонет, когда [npc2.name] прижимает лицо [npc.her] к киске [npc2.her]. Ты думаешь, стоит ли тебе уйти или, может, присоединиться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FUCKING_GET_FUCKED"><![CDATA[
 	<p>
-		You hang around and wait for [npc2.name] to pull out of [npc.name]. Seeing you hovering nearby, [npc2.name] gets you to lie down, before positioning [npc2.herself] between your legs and starting to fuck you. [npc.Name] sits on your face, getting you to eat the cum out of [npc.her] pussy.
+	Ты не уходишь и ждешь, когда [npc2.name] выйдет из [npc.name]. Заметив, что ты крутишься рядом, [npc2.name] заставляет тебя лечь, после чего устраивает [npc2.herself] между твоих ног и начинает трахать тебя. [npc.Name] садится тебе на лицо, заставляя слизывать сперму из киски [npc.her].
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FUCKING_PERFORM_CUNNILINGUS"><![CDATA[
-	<p>
-		Wanting to get in on the action, you kneel down beside [npc.name]. [npc2.Name] pushes you down onto your back, before sitting on your face. Commands [npc.name] to start eating you out.
-	</p>
+	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FUCKING_PERFORM_CUNNILINGUS"><![CDATA[<p>
+Желая вклиниться в процесс, ты опускаешься на колени рядом с [npc.name]. [npc2.Name] придавливает тебя спиной к земле, а затем усаживается тебе на лицо, приказывая [npc.name] начать отыгрываться на тебе.
+</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_FUCKING_PERFORM_ANILINGUS"><![CDATA[
 	<p>
-		Wanting to get in on the action, you kneel down behind [npc.name] and start performing anilingus on [npc2.herHim] while your companion eats [npc2.herHim] out.
+		Желая влиться в веселье, ты опускаешься на колени позади [npc.name] и начинаешь лизать анус [npc2.herHim], пока твой спутник ласкает языком [npc2.herHim].
 	</p>
 	]]>
 	</htmlContent>
@@ -610,7 +606,7 @@
 	
 	<htmlContent tag="AFTER_COMPANION_FUCKING"><![CDATA[
 	<p>
-		[npc2.Name] is finished with you and [npc.name], and tells you to return to your duties in the hall.
+		[npc2.Name] заканчивает с тобой и [npc.name] и велит тебе вернуться к своим обязанностям в зале.
 	</p>
 	]]>
 	</htmlContent>
@@ -620,14 +616,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_GROUP_SEX"><![CDATA[
 	<p>
-		You approach [npc.name], who is cowgirl-riding [npc2.name], while [npc3.name] fucks [npc.herHim] from behind. Another couple of rats are standing to either side, receiving oral from your companion.
+		Ты подходишь к [npc.name], которая скачет верхом на [npc2.name], пока [npc3.name] трахает [npc.herHim] сзади. По обе стороны стоят еще пара крыс, которых твой спутник вовсю ласкает ртом.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_GROUP_SEX_JOIN"><![CDATA[
 	<p>
-		Wanting to join in, you ask [npc.name] if you can lend [npc.herHim] a hand. The rats push you down onto your back beside [npc.herHim], before spreading your legs and fucking you alongside your companion. The other two rats side down on your faces, forcing you to perform oral on them. 
+		Желая присоединиться, ты спрашиваешь [npc.name], не помочь ли тебе с [npc.herHim]. Крысы валят тебя на спину рядом с [npc.herHim], раздвигают твои ноги и начинают трахать тебя вместе с твоим спутником. Две другие крысы нависают над вашими лицами, заставляя вас сосать их члены.
 	</p>
 	]]>
 	</htmlContent>
@@ -637,7 +633,7 @@
 	
 	<htmlContent tag="AFTER_COMPANION_GROUP_SEX"><![CDATA[
 	<p>
-		The rats are finished with you and [npc.name]. You're both told to get back to your other duties.
+		Крысы заканчивают с тобой и [npc.name]. Вам обоим велят возвращаться к остальным делам.
 	</p>
 	]]>
 	</htmlContent>
@@ -647,7 +643,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SERVING"><![CDATA[
 	<p>
-		You help [npc.name] to serve food and drink to the rats in the hall for the next few hours.
+		Следующие несколько часов ты помогаешь [npc.name] разносить еду и выпивку крысам в зале.
 	</p>
 	]]>
 	</htmlContent>
@@ -657,7 +653,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SHADOW"><![CDATA[
 	<p>
-		You tell Shadow to stop spanking [npc.name] so hard. Ruthlessly pushing you down over the table next to her, Shadow says that you're going to get it now too.
+		Ты просишь Тень перестать так сильно шлепать [npc.name]. Безжалостно прижимая тебя лицом к столу рядом с ней, Тень заявляет, что теперь твоя очередь получать по первое число.
 	</p>
 	]]>
 	</htmlContent>
@@ -667,14 +663,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SHADOW_SPANKED"><![CDATA[
 	<p>
-		Shadow starts spanking you and [npc.name], while intermittently stroking your pussies and dirty-talking to you. Eventually, she says that she already tasted [npc.name] moments before you arrived, and now you can be her dessert.
+		Тень начинает шлепать тебя и [npc.name], время от времени лаская ваши киски и отпуская грязные словечки. В конце концов она говорит, что только что пробовала на вкус [npc.name], а теперь ты можешь стать её десертом.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SHADOW_SPANKED_START_SEX"><![CDATA[
 	<p>
-		Shadow kneels down behind you and starts eating you out. She fingers [npc.name] at the same time.
+		Тень опускается на колени позади тебя и начинает жадно лизать твою киску, одновременно лаская [npc.name] пальцами.
 	</p>
 	]]>
 	</htmlContent>
@@ -684,7 +680,7 @@
 	
 	<htmlContent tag="AFTER_SHADOW_COMPANION_ORAL"><![CDATA[
 	<p>
-		Shadow finishes with you and [npc.name], giving each of you one final lick before telling you to get back to your duties.
+		Тень заканчивает с тобой и [npc.name], облизывая каждую из вас напоследок, после чего велит вам возвращаться к своим обязанностям.
 	</p>
 	]]>
 	</htmlContent>
@@ -694,21 +690,21 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SILENCE"><![CDATA[
 	<p>
-		You join [npc.name] in watching Silence, who soon forced the rat-boy to cum inside of her. Stepping away, she notices the two of you, and points at her cum-filled pussy...
+		Ты пристраиваешься рядом с [npc.name], чтобы понаблюдать за Сайленс, которая вскоре заставляет крысопарня кончить ей внутрь. Отстранившись, она замечает вас двоих и указывает на свою залитую спермой киску...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SILENCE_PLAYER_CLEANS"><![CDATA[
 	<p>
-		You drop down in front of Silence and start eating her out as [npc.name] watches...
+		Ты опускаешься перед Сайленс и начинаешь ласкать её губами, пока [npc.name] наблюдает за тобой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_SILENCE_COMPANION_CLEANS"><![CDATA[
 	<p>
-		You watch as [npc.name] drops down in front of Silence and starts eating her out...
+		Ты наблюдаешь, как [npc.name] опускается перед Сайленс и начинает её отсасывать...
 	</p>
 	]]>
 	</htmlContent>
@@ -718,7 +714,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR"><![CDATA[
 	<p>
-		You approach Vengar, who forces you to kneel down beside [npc.name] and act as his footrest...
+		Ты подходишь к Венгару, который заставляет тебя опуститься на колени рядом с [npc.name], чтобы служить ему подставкой для ног...
 	</p>
 	]]>
 	</htmlContent>
@@ -728,7 +724,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR_FOOTREST"><![CDATA[
 	<p>
-		You and [npc.name] act as footrests for Vengar, facing the hall so that you can see the rats' sneers. Eventually, Vengar puts his feet down and wonders out loud which of you he should fuck. Tells you both to present your pussies to him, so that he can choose...
+		Ты и [npc.name] служите подставками для ног Венгара, стоя лицом к залу, чтобы вы могли видеть презрительные ухмылки крыс. В конце концов Венгар опускает ноги и вслух размышляет, какую из вас ему трахнуть. Он велит вам обеим выставить свои киски напоказ, чтобы он мог выбрать...
 	</p>
 	]]>
 	</htmlContent>
@@ -738,17 +734,17 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR_FOOTREST_PRESENT"><![CDATA[
 	<p>
-		You do your best to present your pussy to Vengar, and are rewarded when he tells you that you're his choice. Shouts out to another rat to fuck your companion so that [npc.she] doesn't miss out on the fun.
+		Ты изо всех сил стараешься выставить свою киску перед Венгаром, и получаешь награду — он объявляет, что выбрал именно тебя. Он выкрикивает другому крысу приказ трахнуть твою спутницу, чтобы [npc.she] тоже не осталась без веселья.
 	</p>
 	<p>
-		Teases your pussy with his cock, and tells you to admit that you're nothing but his cock-sleeve.
+		Он дразнит твою киску своим членом и велит тебе признать, что ты всего лишь его кожаная грелка для члена.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR_FOOTREST_PRESENT_START"><![CDATA[
 	<p>
-		You tell Vengar that you're his cock-sleeve, and he penetrates you. Beside you, the other rat starts fucking your companion...
+		Ты говоришь Венгару, что ты его грелка для члена, и он входит в тебя. Рядом с тобой другой крыс начинает трахать твою спутницу...
 	</p>
 	]]>
 	</htmlContent>
@@ -758,17 +754,17 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR_FOOTREST_HOLD_BACK"><![CDATA[
 	<p>
-		You hold back, and Vengar says that [npc.name] is his choice. Shouts out to another rat to fuck you so that you doesn't miss out on the fun.
+		Ты сдерживаешься, и тогда Венгар объявляет, что его выбор — [npc.name]. Он кричит другому крысу, чтобы тот трахнул тебя, дабы ты тоже не пропустила веселье.
 	</p>
 	<p>
-		The rat teases your pussy with his cock, and tells you to admit that you're nothing but a public cum-dump.
+		Крыс дразнит твою киску своим членом и велит признать, что ты всего лишь общественная спермоприемница.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR_FOOTREST_HOLD_BACK_START"><![CDATA[
 	<p>
-		You tell the rat that you're a public cum-dump, and he penetrates you. Beside you, Vengar starts fucking your companion...
+		Ты признаешь, что ты общественная спермоприемница, и он входит в тебя. Рядом с тобой Венгар начинает трахать твою спутницу...
 	</p>
 	]]>
 	</htmlContent>
@@ -778,7 +774,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_CHOOSE_COMPANION_VENGAR_AFTER_SEX"><![CDATA[
 	<p>
-		Having had their fun, Vengar and [npc2.name] have finished with you and [npc.name]. You're told to get on with other duties in the hall.
+		Насладившись, Венгар и [npc2.name] заканчивают с тобой и [npc.name]. Тебе велят возвращаться к другим обязанностям в зале.
 	</p>
 	]]>
 	</htmlContent>
@@ -788,14 +784,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_DELIVERY_PLAYER"><![CDATA[
 	<p>
-		Being ready to give birth, Shadow and Silence approach you, with the former telling you that Silence will use her arcane abilities to deliver your offspring. Silence very gently strokes your pregnant bump, before smiling kindly at you.
+		Готовые к родам, Шэдоу и Сайленс подходят к тебе; первая говорит, что Сайленс использует свои способности Арканы, чтобы принять твоё потомство. Сайленс очень нежно гладит твой беременный живот, а затем ласково тебе улыбается.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_DELIVERY_COMPANION"><![CDATA[
 	<p>
-		Being ready to give birth, you see Shadow and Silence approach your companion, with the former telling [npc.herHim] that Silence will use her arcane abilities to deliver [npc.her] offspring. Silence very gently strokes [npc.namePos] pregnant bump, before leading [npc.herHim] into the privacy of the private bed-chambers.
+		Видя, что они готовы к родам, ты замечаешь, как Шэдоу и Сайленс подходят к твоей спутнице; первая говорит [npc.herHim], что Сайленс использует свои способности Арканы, чтобы принять потомство [npc.her]. Сайленс очень нежно гладит беременный живот [npc.namePos], после чего уводит [npc.herHim] в уединение частных спален.
 	</p>
 	]]>
 	</htmlContent>
@@ -805,14 +801,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_DELIVERY_BIRTHING_EGGS"><![CDATA[
 	<p>
-		Silence helps you to deliver your eggs. You get a powerful instinct to protect the eggs, and drive off Shadow and Silence. 
+		Сайленс помогает тебе отложить яйца. Тебя охватывает мощный инстинкт защитить их, и ты прогоняешь Шэдоу и Сайленс.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_DELIVERY_BIRTHING"><![CDATA[
 	<p>
-		Silence helps you to deliver. You pass out and awaken some time later. Shadow tells you that she escorted your offspring up to Dominion, and that their fate is now in their hands.
+		Сайленс помогает тебе рожать. Ты теряешь сознание и очнувшись спустя некоторое время, слышишь от Шэдоу, что она проводила твоё потомство в Dominion и теперь их судьба в их руках.
 	</p>
 	]]>
 	</htmlContent>
@@ -822,10 +818,10 @@
 	
 	<htmlContent tag="VENGARS_HALL_DELIVERY_BIRTHING_EGG_PROTECTION"><![CDATA[
 	<p>
-		You spend the next twelve hours protecting your eggs, until eventually they start to hatch and you pass out from exhaustion.
+		Следующие двенадцать часов ты проводишь, охраняя свои яйца, пока в конце концов они не начинают вылупляться, и ты не теряешь сознание от изнеможения.
 	</p>
 	<p>
-		You awaken some time later. Shadow tells you that she escorted your offspring up to Dominion, and that their fate is now in their hands. Having already rested, you're ready to continue with your duties in the hall...
+		Ты просыпаешься спустя некоторое время. Тень говорит тебе, что она проводила твоё потомство в Dominion, и теперь их судьба в их собственных руках. Отдохнув, ты готов продолжить свои обязанности в зале...
 	</p>
 	]]>
 	</htmlContent>
@@ -835,7 +831,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_DELIVERY_BIRTHING_FINISHED"><![CDATA[
 	<p>
-		You spend some time resting, and then the next morning, you're ready to continue with your duties in the hall...
+		Ты проводишь некоторое время, отдыхая, а на следующее утро готов продолжить свои обязанности в зале...
 	</p>
 	]]>
 	</htmlContent>
@@ -845,7 +841,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM"><![CDATA[
 	<p>
-		The private bedchambers consist of two large rooms; one in which Vengar has his bedroom, and one in which Silence and Shadow sleep.
+		Личные покои состоят из двух больших комнат: в одной находится спальня Венгара, а в другой спят Сайленс и Тень.
 	</p>
 	]]>
 	</htmlContent>
@@ -855,7 +851,7 @@
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		You move towards the hall's exit, but one of the numerous rats standing guard makes you turn around and head back into the hall.
+		Ты направляешься к выходу из зала, но один из многочисленных крыс-стражников заставляет тебя развернуться и вернуться обратно в зал...
 	</p>
 	]]>
 	</htmlContent>
@@ -865,7 +861,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_NIGHT_TIME"><![CDATA[
 	<p>
-		It's getting late, and Shadow finds you to escort you into the private bedchambers...
+		Становится поздно, и Тень находит тебя, чтобы проводить в личные покои...
 	</p>
 	]]>
 	</htmlContent>
@@ -875,15 +871,15 @@
 	
 	<htmlContent tag="VENGARS_HALL_NIGHT_TIME_ESCORTED_SEX"><![CDATA[
 	<p>
-		You go with Shadow as she leads you into the private bedchambers. Shows you to Vengar's bedroom, then leaves to go to her own shared bedroom with Silence.
+		Ты идёшь за Тенью, и она ведёт тебя в личные покои. Она показывает тебе спальню Венгара, а затем уходит в свою общую спальню с Сайленс.
 	</p>
 	#IF(pc.hasCompanions())
 		<p>
-			Vengar and [npc.name] are already in his bedroom. Vengar asks which of you he'll fuck tonight...
+			Венгар и [npc.name] уже в его спальне. Венгар спрашивает, кого из вас он будет трахать сегодня ночью...
 		</p>
 	#ELSE
 		<p>
-			Vengar is already in his bedroom. He tells you to present yourself to be fucked...
+			Венгар уже в своей спальне. Он велит тебе предстать перед ним, чтобы он тебя оттрахал...
 		</p>
 	#ENDIF
 	]]>
@@ -891,15 +887,15 @@
 	
 	<htmlContent tag="VENGARS_HALL_NIGHT_TIME_ESCORTED"><![CDATA[
 	<p>
-		You go with Shadow as she leads you into the private bedchambers. Shows you to Vengar's bedroom, then leaves to go to her own shared bedroom with Silence.
+		Ты идёшь за Тенью, и она ведёт тебя в личные покои. Она показывает тебе спальню Венгара, а затем уходит в свою общую спальню с Сайленс.
 	</p>
 	#IF(pc.hasCompanions())
 		<p>
-			Vengar and [npc.name] are already in his bedroom. Vengar is too tired to fuck you or [npc.name] tonight...
+			Венгар и [npc.name] уже в его спальне. Венгар слишком устал, чтобы трахать тебя или [npc.name] сегодня ночью...
 		</p>
 	#ELSE
 		<p>
-			Vengar is already in his bedroom. Vengar is too tired to fuck you tonight...
+		Венгар уже в своей спальне. Он слишком устал, чтобы трахать тебя сегодня...
 		</p>
 	#ENDIF
 	]]>
@@ -910,7 +906,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_SERVE"><![CDATA[
 	<p>
-		Some rats recruit you into serving food and drink for them. Others join in, piling on the orders...
+		Некоторые крысы нанимают тебя подавать им еду и выпивку. Другие подхватывают эстафету, заваливая тебя заказами...
 	</p>
 	]]>
 	</htmlContent>
@@ -920,7 +916,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_SERVING"><![CDATA[
 	<p>
-		You have to continue serving rats for several hours, but eventually they're finished with you.
+		Тебе приходится обслуживать крыс еще несколько часов, но в конце концов они наконец заканчивают с тобой.
 	</p>
 	]]>
 	</htmlContent>
@@ -930,31 +926,31 @@
 	
 	<htmlContent tag="VENGARS_HALL_GROPED"><![CDATA[
 	<p>
-		[npc.Name(A)] grabs you as you pass [npc.her] table and starts groping and feeling you up...
+		[npc.Name(A)] хватает тебя, когда ты проходишь мимо [npc.her] стола, и начинает бесстыдно лапать и ощупывать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_GROPED_GROUP_START_SEX"><![CDATA[
 	<p>
-		Sitting on the table, you spread your legs and entice the rats to fuck you...
+		Усевшись на стол, ты раздвигаешь ноги, соблазняя крыс трахнуть тебя...
 	</p>
 	<p>
-		The rats move you into position, with one of them lying down and getting you to sit down into the cowgirl position, riding [npc.her] cock. If anal is enabled, another penetrates your ass. If not, the others surround you and prepare to receive oral...
+		Крысы усаживают тебя в нужное положение: один из них ложится, заставляя тебя сесть сверху в позе наездницы, оседлав [npc.her] член. Если включен анальный секс, другой проникает тебе в задницу. Если нет, остальные окружают тебя, готовясь к оральному...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_GROPED_START_ORAL"><![CDATA[
 	<p>
-		You drop down onto your knees and start performing oral on [npc.herHim]...
+		Ты опускаешься на колени и начинаешь отсасывать [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_GROPED_START_SEX"><![CDATA[
 	<p>
-		Sitting on the table, you spread your legs and entice [npc.name] to fuck you. Pushing you back, [npc.she] does just that, and thrusts [npc.cock+] into your slutty cunt.
+		Усевшись на стол, ты раздвигаешь ноги, соблазняя [npc.name] трахнуть тебя. Прижимая тебя к столу, [npc.she] делает именно это, вонзая [npc.cock+] в твою шлюшью щелку.
 	</p>
 	]]>
 	</htmlContent>
@@ -964,14 +960,14 @@
 	
 	<htmlContent tag="AFTER_GROPED_ORAL"><![CDATA[
 	<p>
-		[npc.Name] says that you know how to use your mouth, before telling you to go and bother someone else...
+		[npc.Name] говорит, что ты умеешь пользоваться ртом, после чего велит тебе идти и не докучать ему...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_GROPED_SEX"><![CDATA[
 	<p>
-		[npc.Name] says that you're a good fuck, before telling you to go and bother someone else...
+		[npc.Name] говорит, что ты отличная трахалка, после чего велит тебе идти и не докучать ему...
 	</p>
 	]]>
 	</htmlContent>
@@ -981,14 +977,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_GROPED_GROUP_FINISH"><![CDATA[
 	<p>
-		You let the rats grope and feel you up for some time, before they've finally had enough and dismiss you...
+	Ты позволяешь крысам ощупывать и ласкать тебя какое-то время, пока им наконец не надоедает и они не отпускают тебя...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_GROPED_FINISH"><![CDATA[
 	<p>
-		You let [npc.name] grope and feel you up for some time, before [npc.sheHas] finally had enough and dismisses you...
+	Ты позволяешь [npc.name] ощупывать и ласкать тебя какое-то время, пока [npc.sheHas] наконец не насытится и не отпустит тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -998,7 +994,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_VENGAR_FUCK"><![CDATA[
 	<p>
-		Vengar calls you over to him, and, not having much choice but to obey, you step up to where he's sitting on his throne. He tells you that he's been watching you for some time, and wants you to get his cock out and get him hard, ready to fuck you...
+	Венгар зовет тебя к себе, и, не имея иного выбора, кроме как подчиниться, ты подходишь к его трону. Он говорит, что наблюдает за тобой уже какое-то время, и хочет, чтобы ты достала его член и довела его до возбуждения, чтобы он был готов трахать тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -1008,28 +1004,28 @@
 	
 	<htmlContent tag="VENGARS_HALL_RAT_FUCK_PENIS"><![CDATA[
 	<p>
-		[npc.Name(A)] grabs you and pushes you over a nearby table, saying [npc.sheIs] going to fuck you...
+	[npc.Name(A)] хватает тебя и толкает на ближайший стол, заявляя, что [npc.sheIs] собирается трахать тебя...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_RAT_FUCK_VAGINA"><![CDATA[
 	<p>
-		[npc.Name(A)] grabs you and pulls you over to one side of the hall, before leaning back against the wall and telling you that you're going to service [npc.her] pussy...
+	[npc.Name(A)] хватает тебя и оттаскивает в сторону от зала, после чего прислоняется к стене и говорит, что ты будешь обслуживать киску [npc.her]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_RAT_FUCK_FUCKED"><![CDATA[
 	<p>
-		If rat has anal fetish, they fuck your ass. If not, they fuck your pussy.
+	Если у крысы анальный фетиш, она трахает тебя в зад. Если нет — в киску.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_RAT_FUCK_CUNNILINGUS"><![CDATA[
 	<p>
-		You are forced to start performing cunnilingus on [npc.name]... 
+	Тебя заставляют начать куннилингус для [npc.name]... 
 	</p>
 	]]>
 	</htmlContent>
@@ -1039,7 +1035,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_RAT_FUCK_AFTER_SEX"><![CDATA[
 	<p>
-		[npc.Name] is finished with you, saying you were a good fuck, before dismissing you...
+	[npc.Name] заканчивает с тобой, бросая, что ты была отличной трахой, после чего отпускает тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -1049,14 +1045,14 @@
 	
 	<htmlContent tag="VENGARS_HALL_GROUP_SEX"><![CDATA[
 	<p>
-		A group of rats surrounds you, before telling you that you're going to be their toy for a while...
+	Группа крыс окружает тебя, заявляя, что какое-то время ты будешь их игрушкой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_HALL_GROUP_SEX_START"><![CDATA[
 	<p>
-		The rats move you into position, with one of them lying down and getting you to sit down into the cowgirl position, riding [npc.her] cock. If anal is enabled, another penetrates your ass. If not, the others surround you and prepare to receive oral...
+		Крысы усаживают тебя в нужное положение: один из них ложится, заставляя тебя сесть сверху в позе наездницы, оседлав [npc.her] член. Если включен анальный секс, другой проникает тебе в задницу. Если нет, остальные окружают тебя, готовясь к оральному...
 	</p>
 	]]>
 	</htmlContent>
@@ -1066,7 +1062,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_AFTER_GROUP_SEX"><![CDATA[
 	<p>
-		The rats finish with you, leaving you panting on the floor. After some time, you recover and set out into the hall once more...
+	Крысы заканчивают с тобой, оставляя тебя тяжело дышать на полу. Спустя некоторое время ты приходишь в себя и снова отправляешься в зал...
 	</p>
 	]]>
 	</htmlContent>
@@ -1076,7 +1072,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN"><![CDATA[
 	<p>
-		Shadow appears behind you, saying that she finally found you. She says that seeing as you're in here, you may as well get to cleaning the place.
+		Позади тебя появляется Шэдоу и говорит, что наконец-то нашла тебя. Она заявляет, что раз уж ты здесь, то тебе стоит заняться уборкой.
 	</p>
 	]]>
 	</htmlContent>
@@ -1086,48 +1082,48 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_SHADOW_ORAL"><![CDATA[
 	<p>
-		You set about cleaning the room. Shadow leaves you to it. After an hour, you're almost done. Kneeling down on all fours to sweep out under a cabinet, when suddenly someone grabs you from behind.
+		Ты принимаешься за уборку. Шэдоу оставляет тебя одну. Спустя час работа почти закончена. Ты встаешь на четвереньки, чтобы подмести под шкафом, как вдруг кто-то хватает тебя сзади.
 	</p>
 	<p>
-		Looking back, you see Shadow sliding down onto her knees behind you. She says your pussy looked so tasty. Tells you to raise your ass so that she can get a taste of you.
+		Оглянувшись, ты видишь, как Шэдоу опускается перед тобой на колени. Она говорит, что твоя киска выглядит чертовски аппетитно, и велит тебе поднять зад, чтобы она могла тебя попробовать на вкус.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_SHADOW_ORAL_START"><![CDATA[
 	<p>
-		You raise your ass and Shadow starts eating you out.
+		Ты поднимаешь зад, и Шэдоу начинает жадно лакать твою киску.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_SHADOW"><![CDATA[
 	<p>
-		You set about cleaning the room. Shadow leaves you to it. After an hour, you're done. Shadow reappears and tells you to get back out into the main hall.
+		Ты принимаешься за уборку. Шэдоу оставляет тебя одну. Спустя час ты заканчиваешь. Снова появляется Шэдоу и велит тебе возвращаться в главный зал.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_SILENCE_ORAL"><![CDATA[
 	<p>
-		You set about cleaning the room. Shadow leaves you to it. After an hour, you're done. After kneeling down on all fours to sweep out under a cabinet, you stand up and turn around to see Silence masturbating and staring at you.
+		Ты принимаешься за уборку. Шэдоу оставляет тебя одну. Спустя час ты заканчиваешь. Встав на четвереньки, чтобы подмести под шкафом, ты выпрямляешься и оборачиваешься, обнаруживая Сайленс: она мастурбирует, не сводя с тебя глаз.
 	</p>
 	<p>
-		She spreads her labia and bites her lip, motioning for you to come forwards and orally service her...
+		Она раздвигает губки и прикусывает губу, маня тебя подойти и отсосать ей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_SILENCE_ORAL_START"><![CDATA[
 	<p>
-		You kneel before Silence and start eating her out.
+		Ты опускаешься на колени перед Сайленс и начинаешь жадно лакать её.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_SILENCE"><![CDATA[
 	<p>
-		You set about cleaning the room. Shadow leaves you to it. After an hour, you're done. Silence appears and points for you to go back out into the main hall.
+		Ты принимаешься за уборку. Шэдоу оставляет тебя одну. Спустя час ты заканчиваешь. Появляется Сайленс и указывает тебе путь обратно в главный зал.
 	</p>
 	]]>
 	</htmlContent>
@@ -1137,7 +1133,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_IGNORE_SILENCE"><![CDATA[
 	<p>
-		You ignore Silence, and step past her out into the main hall. Despite her desire to have you eat her out, the albino rat-girl allows you to leave...
+		Ты игнорируешь Сайленс и проходишь мимо неё в главный зал. Несмотря на её желание, чтобы ты отсосал ей, альбиноска-крыса позволяет тебе уйти...
 	</p>
 	]]>
 	</htmlContent>
@@ -1147,7 +1143,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_IGNORE_SHADOW"><![CDATA[
 	<p>
-		Instead of doing as you're told, you stand up and try to leave. Angry at disobeying her, Shadow grabs you and pushes you over the cabinet you were just cleaning, before delivering a stinging slap to your ass.
+		Вместо того чтобы беспрекословно подчиняться, ты встаешь и пытаешься уйти. Разгневанная твоим непослушанием, Тень хватает тебя и опрокидывает через шкаф, который ты только что чистила, после чего отвешивает звонкую пощечину по твоей заднице.
 	</p>
 	]]>
 	</htmlContent>
@@ -1157,14 +1153,14 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_IGNORE_SHADOW_FACE_SITTING"><![CDATA[
 	<p>
-		Shadow spanks you for some time, while occasionally fingering your dripping pussy. Eventually, she pushes you to the floor, before sitting on your face and demanding you to put all your effort into eating her out.
+		Тень какое-то время шлепает тебя, время от времени запуская пальцы в твою сочащуюся киску. В конце концов она толкает тебя на пол, усаживается сверху лицом к лицу и требует, чтобы ты выложилась на полную, лаская её языком.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_CLEAN_FINISH_IGNORE_SHADOW_FACE_SITTING_START"><![CDATA[
 	<p>
-		With little choice but to do as Shadow demands, you start eating her out...
+		Поскольку выбора у тебя почти нет, и приходится делать то, что велит Тень, ты начинаешь её отсасывать...
 	</p>
 	]]>
 	</htmlContent>
@@ -1174,21 +1170,21 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_AFTER_SHADOW_PERFORMING_ORAL"><![CDATA[
 	<p>
-		Having had enough of eating you out, Shadow tells you to get back into the main hall.
+		Насладившись твоим языком, Тень велит тебе возвращаться в главный зал.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_AFTER_SHADOW_RECEIVING_ORAL"><![CDATA[
 	<p>
-		Having had enough of riding your tongue, Shadow tells you to get back into the main hall.
+		Насладившись тем, как ты ласкаешь её языком, Тень велит тебе возвращаться в главный зал.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_AFTER_SILENCE_ORAL"><![CDATA[
 	<p>
-		Having had enough of being eaten out, Shadow steps back and points for you to get back into the main hall.
+		Насладившись твоим оральным сексом, Тень отстраняется и указывает тебе на дверь, веля возвращаться в главный зал.
 	</p>
 	]]>
 	</htmlContent>
@@ -1199,14 +1195,14 @@
 	<htmlContent tag="VENGARS_BEDROOM_SHADOW_SILENCE"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			As you're wandering about the bed-chambers, wondering what to do, Silence and Shadow enter, leading [npc.name] along with them. Upon seeing you, Shadow's eyes light up, and she moves over to rub up against you.
+			Пока ты бродишь по спальням, не зная, чем заняться, входят Безмолвие и Тень, ведя за собой [npc.name]. Увидев тебя, глаза Тени загораются, и она подходит ближе, чтобы прижаться к тебе всем телом.
 		</p>
 		<p>
-			Tells you that you're going to join in with their game. Asks you if you want to eat out Silence, or let her eat you out...
+			Она сообщает, что ты тоже поучаствуешь в их игре. И спрашивает, хочешь ли ты отсосать у Безмолвие или позволишь ей отсосать у тебя...
 		</p>
 	#ELSE
 		<p>
-			As you're wandering about the bed-chambers, wondering what to do, Silence and Shadow find you. Shadow tells you that the two of them were looking to have some fun together, but now that you're here, you can join in. Tells you to lie down and spread your legs.
+			Пока ты бродишь по спальням, не зная, чем заняться, тебя находят Безмолвие и Тень. Тень говорит, что они как раз собирались развлечься вдвоем, но раз уж ты здесь, то можешь к ним присоединиться. Она велит тебе лечь и раздвинуть ноги.
 		</p>
 	#ENDIF
 	]]>
@@ -1214,21 +1210,21 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_SHADOW_SILENCE_FOURSOME_SHADOW_START"><![CDATA[
 	<p>
-		You tell Shadow that you want her to eat you out. Stand against the wall beside Silence as Shadow starts performing cunnilingus on you. [npc.Name] does the same to Silence.
+		Ты говоришь Шэдоу, что хочешь, чтобы она отсосала тебе киску. Ты прижимаешься к стене рядом с Сайленс, пока Шэдоу начинает ласкать тебя языком. [npc.Name] делает то же самое с Сайленс.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_SHADOW_SILENCE_FOURSOME_SILENCE_START"><![CDATA[
 	<p>
-		You tell Shadow that you want to eat Silence out. Your companion stands against the wall beside Silence as Shadow starts performing cunnilingus on [npc.herHim]. You do the same to Silence.
+		Ты говоришь Шэдоу, что хочешь отсосать Сайленс. Твой спутник стоит у стены рядом с Сайленс, пока Шэдоу начинает ласкать [npc.herHim] языком. Ты делаешь то же самое с Сайленс.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_SHADOW_SILENCE_SOLO_START"><![CDATA[
 	<p>
-		You do as Shadow commands, and as you lie down, Silence sits on your face. Shadow kneels down as you spread your legs and starts performing oral on you.
+		Ты повинуешься приказу Шэдоу, и когда ты ложишься, Сайленс усаживается тебе на лицо. Шэдоу опускается на колени, пока ты раздвигаешь ноги, и начинает сосать твой член.
 	</p>
 	]]>
 	</htmlContent>
@@ -1239,11 +1235,11 @@
 	<htmlContent tag="VENGARS_BEDROOM_SHADOW_SILENCE_AFTER_SEX"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			Shadow and Silence have finished with you and [npc.name], and you're told to return to the main hall.
+			Шэдоу и Сайленс закончили с тобой и [npc.name], и тебе велят вернуться в главный зал.
 		</p>
 	#ELSE
 		<p>
-			Shadow and Silence have finished with you, and you're told to return to the main hall.
+			Шэдоу и Сайленс закончили с тобой, и тебе велят вернуться в главный зал.
 		</p>
 	#ENDIF
 	]]>
@@ -1254,7 +1250,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_BARRED"><![CDATA[
 	<p>
-		Shadow finds you loitering in the bed-chambers and orders you back out into the main hall...
+		Шэдоу застает тебя бездельничающим в спальнях и приказывает возвращаться в главный зал...
 	</p>
 	]]>
 	</htmlContent>
@@ -1265,11 +1261,11 @@
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_SEX"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			As it's getting late, Vengar and [npc.name] join you in the bed-chambers. Vengar asks which of you he'll fuck tonight...
+			Становится поздно, и Венгар с [npc.name] присоединяются к тебе в спальнях. Венгар спрашивает, кого из вас он будет трахать сегодня ночью...
 		</p>
 	#ELSE
 		<p>
-			As it's getting late, Vengar joins you in the bed-chambers. Vengar tells you to present yourself to be fucked...
+			Становится поздно, и Венгар присоединяется к тебе в спальнях. Он велит тебе приготовиться к траху...
 		</p>
 	#ENDIF
 	]]>
@@ -1278,11 +1274,11 @@
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			As it's getting late, Vengar and [npc.name] join you in the bed-chambers. He's tired and not interested in sex...
+			Становится поздно, и Венгар с [npc.name] присоединяются к тебе в спальнях. Он устал и не настроен на секс...
 		</p>
 	#ELSE
 		<p>
-			As it's getting late, Vengar joins you in the bed-chambers. He's tired and not interested in sex...
+			Становится поздно, и Венгар присоединяется к тебе в спальнях. Он устал и не настроен на секс...
 		</p>
 	#ENDIF
 	]]>
@@ -1290,14 +1286,14 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_SEX_START"><![CDATA[
 	<p>
-		You get down on all fours and present yourself to Vengar. He wastes no time in penetrating you and starts fucking you...
+		Ты встаешь на четвереньки и подставляешься под Венгара. Он не теряет ни секунды, входит в тебя и начинает жадно трахать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_SEX_COMPANION_START"><![CDATA[
 	<p>
-		You let [npc.name] be the one to get down on all fours and present [npc.herself] to Vengar. He wastes no time in penetrating your companion and starts fucking [npc.herHim]...
+		Ты позволяешь [npc.name] встать на четвереньки и подставить [npc.herself] Венгару. Он не теряет ни секунды, входит в твою спутницу и начинает трахать [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
@@ -1308,11 +1304,12 @@
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_AFTER_SEX"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			Vengar is finished and tells you and [npc.name] to sleep.
+		
+			Венгар заканчивает и велит тебе и [npc.name] ложиться спать.
 		</p>
 	#ELSE
 		<p>
-			Vengar is finished and tells you to sleep.
+			Венгар заканчивает и велит тебе ложиться спать.
 		</p>
 	#ENDIF
 	]]>
@@ -1323,7 +1320,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_SLEEP"><![CDATA[
 	<p>
-		You awake the next morning to find Shadow looming over you. She tells you to get into the main hall.
+		На следующее утро ты просыпаешься и видишь нависшую над тобой Тень. Она велит тебе идти в главный зал.
 	</p>
 	]]>
 	</htmlContent>
@@ -1333,7 +1330,7 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_PRETEND"><![CDATA[
 	<p>
-		You pretend to be asleep, and wait until Vengar is deeply asleep before deciding upon whether to make a move or not...
+		Ты притворяешься спящей и ждешь, пока Венгар крепко уснет, чтобы решить, стоит ли предпринимать какие-то действия...
 	</p>
 	]]>
 	</htmlContent>
@@ -1343,17 +1340,17 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_PRETEND_ESCAPE"><![CDATA[
 	<p>
-		You sneak out of bed and prepare to escape. Knowing that your belongings are stored in the other room, you sneak into there and search for them.
+		Ты тихонько выбираешься из постели и готовишься к побегу. Зная, что твои вещи лежат в другой комнате, ты прокрадываешься туда и начинаешь их искать.
 	</p>
 	<p>
-		Despite being quiet, you suddenly hear movement behind you, and you turn around to see Silence staring down at you. Instead of raising the alarm, however, she simply lifts up her skirt and motions for you to eat her out...
+		Несмотря на твою осторожность, ты внезапно слышишь движение позади. Обернувшись, ты видишь Силенс, пристально смотрящую на тебя сверху вниз. Однако вместо того, чтобы поднять тревогу, она просто приподнимает юбку и манит тебя отсосать ей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_PRETEND_ESCAPE_SILENCE_ORAL_START"><![CDATA[
 	<p>
-		Deciding that it would be a good idea to do as the albino rat-girl wants, you shuffle forwards and start eating her out.
+		Решив, что будет разумно исполнить желание альбиноски, ты подползаешь ближе и начинаешь ласкать её языком...
 	</p>
 	]]>
 	</htmlContent>
@@ -1363,10 +1360,10 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_PRETEND_ESCAPE_AFTER_ORAL"><![CDATA[
 	<p>
-		You finish with Silence, and she pats you on the head, before pointing behind you. You turn around to see Shadow looking down at you.
+		Закончив с Силенс, ты чувствуешь, как она ласково гладит тебя по голове, а затем указывает тебе за спину. Ты оборачиваешься и видишь Тень, смотрящую на тебя сверху вниз.
 	</p>
 	<p>
-		With a grin on her face, she reveals that she and Silence were playing along and helping to keep you captive only as part of a larger scheme. Everything is in place now, and your escape attempt has coincided with her decision to make her move. Tells you that your equipment is no longer stored in her, and to follow her.
+		С широкой усмешкой на лице она признается, что они с Безмолвной лишь притворялись, помогая удерживать тебя в плену ради своего масштабного плана. Теперь всё готово, и твоя попытка побега совпала с её решением действовать. Она сообщает, что твоё снаряжение больше не внутри неё, и велит тебе следовать за ней.
 	</p>
 	]]>
 	</htmlContent>
@@ -1376,10 +1373,9 @@
 	
 	<htmlContent tag="VENGARS_BEDROOM_NIGHT_TIME_PRETEND_ESCAPE_PUSH_PAST"><![CDATA[
 	<p>
-		You push past Silence, and she grabs you by the wrist, before pointing behind you. You turn around to see Shadow staring into your eyes.
+		Ты проталкиваешься мимо Безмолвной, но та хватает тебя за запястье и указывает куда-то за спину. Обернувшись, ты видишь, что Тень пристально смотрит тебе прямо в глаза.
 	</p>
-	<p>
-		Letting out a sigh, she reveals that she and Silence were playing along and helping to keep you captive only as part of a larger scheme. Everything is in place now, and your escape attempt has coincided with her decision to make her move. Tells you that your equipment is no longer stored in her, and to follow her.
+	<p>		Тяжело вздохнув, она признается, что они с Безмолвной лишь разыгрывали спектакль, помогая удерживать тебя в плену ради своего масштабного плана. Теперь всё готово, и твоя попытка побега совпала с её решением действовать. Она сообщает, что твоё снаряжение больше не внутри неё, и велит тебе следовать за ней.
 	</p>
 	]]>
 	</htmlContent>
@@ -1389,10 +1385,10 @@
 	
 	<htmlContent tag="ESCAPING"><![CDATA[
 	<p>
-		Shadow leads you (and companion) out of the hall and to a hidden storage room further down the tunnel, where your equipment is being stored. Unclasping your collar, she discards it before letting you get your old gear back.
+		Тень ведет тебя (и спутника) из зала в скрытую кладовую дальше по туннелю, где хранится твоё снаряжение. Расстегнув твой ошейник, она отбрасывает его в сторону, позволяя тебе забрать свои старые вещи.
 	</p>
 	<p>
-		Once you're fully equipped again, she tells you that your only hope of getting out of this place is to follow her.
+		Как только ты снова полностью экипирован, она говорит, что твой единственный шанс выбраться отсюда — идти за ней.
 	</p>
 	]]>
 	</htmlContent>
