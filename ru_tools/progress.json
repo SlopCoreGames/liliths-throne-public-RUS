@@ -109,7 +109,10 @@
     "res/txt/places/dominion/warehouseDistrict/warehouses.xml",
     "res/txt/places/dominion/zaranixHome/firstFloor.xml",
     "res/txt/places/dominion/zaranixHome/firstFloorRepeat.xml",
-    "res/txt/places/dominion/zaranixHome/groundFloor.xml"
+    "res/txt/places/dominion/zaranixHome/groundFloor.xml",
+    "res/txt/places/dominion/zaranixHome/groundFloorRepeat.xml",
+    "res/txt/places/fields/centaur_transport.xml",
+    "res/txt/places/fields/dairyFarm.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
