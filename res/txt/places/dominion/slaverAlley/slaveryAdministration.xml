@@ -3,17 +3,17 @@
 
 	<htmlContent tag="SLAVERY_ADMINISTRATION_EXTERIOR"><![CDATA[
 	<p>
-		A large metal sign, bearing the words 'Slavery Administration', is prominently displayed above the entrance to the building before you. Its clean, white-washed walls and heavy oak doors set this particular establishment apart from the rest of the stores in Slaver Alley.
+		Перед тобой возвышается вход в здание, над которым гордо красуется большая металлическая вывеска с надписью «Администрация работорговли». Чистые, побеленные стены и тяжелые дубовые двери выделяют это заведение на фоне остальных лавок в Переулке Рабов.
 	</p>
 	<p>
-		Noticing a little information board attached to one side of the entrance, you walk up and read what it says. From what you can gather, it appears as though this is an official government building, in which all matters relating to the ownership of slaves, licenses, and businesses dealing in slave-trading are handled. A little piece of paper has been stuck to the bottom of the board, which reads; <i>'Slaver licenses are not being issued!'</i>
+		Заметив у входа небольшую информационную доску, ты подходишь ближе, чтобы прочитать текст. Судя по всему, это официальное правительственное здание, где решаются все вопросы, касающиеся владения рабами, выдачи лицензий и работы предприятий, занимающихся работорговлей. К нижней части доски приколот клочок бумаги, на котором гласит: <i>«Выдача лицензий работорговцам приостановлена!»</i>
 	</p>
 	<p>
-		To one side of this information board, a dozen posters have been plastered over the side of the building. You could take a closer look at these posters,
+		Сбоку от информационной доски на стену здания наклеено около дюжины плакатов. Ты можешь присмотреться к ним поближе,
 		#IF(pc.isHasSlaverLicense())
-			 or, as you're in possession of a slaver license, you could enter the Slavery Administration building and make use of its services.
+			 или, поскольку у тебя есть лицензия работорговца, ты можешь войти в здание Администрации и воспользоваться его услугами.
 		#ELSE
-			 or, even though it's doubtful that you'd be able to make use of any of its services, you could enter the Slavery Administration building.
+			 или, хотя маловероятно, что тебе удастся воспользоваться какими-либо услугами, ты можешь просто войти в здание Администрации.
 		#ENDIF
 	</p>
 	]]>
@@ -21,21 +21,21 @@
 	
 	<htmlContent tag="SLAVERY_ADMINISTRATION_POSTERS"><![CDATA[
 	<p>
-		Deciding to take a closer look at the posters which are plastered over the wall of the Slavery Administration building, you [pc.step] over to stand in front of them. It immediately becomes apparent why these posters have been allowed to remain on the side of a government building, for all except one of them are declarations of victory for the state.
+		Решив получше рассмотреть плакаты, обклеившие стену здания Администрации, ты [pc.step] к ним. Сразу становится понятно, почему их позволили оставить на стене правительственного здания: все они, кроме одного, являются торжественными декларациями побед государства.
 	</p>
 	<p>
-		As you cast your gaze over the posters, you find yourself looking at mug shots of dangerous-looking criminals. Their crimes are listed below their portraits, and range from theft and public disorder to #IF(game.isNonConEnabled())rape#ELSEassault#ENDIF and treason. The punishment for every one of these individuals is listed as lifetime enslavement, and as the capitalised words 'JUSTICE SERVED' have been stamped in purple letters over each one, you realise that these criminals have all been caught and enslaved.
+		Рассматривая плакаты, ты замечаешь на них фотографии опасных преступников. Под их портретами перечислены преступления — от краж и нарушения общественного порядка до #IF(game.isNonConEnabled())rape#ELSEassault#ENDIF and treason. The punishment for every one of these individuals is listed as lifetime enslavement, and as the capitalised words 'JUSTICE SERVED' have been stamped in purple letters over each one, you realise that these criminals have all been caught and enslaved.
 	</p>
 	<p>
-		The only poster which isn't of this format is one that displays an idyllic scene of a happy family living in the countryside. The writing beneath promises a better life for anyone willing to leave Dominion and take the voyage over the 'Endless Sea' to the land beyond.
+		Единственный плакат, отличающийся от остальных, изображает идиллическую сцену: счастливую семью, живущую в сельской местности. Текст под ним обещает лучшую жизнь любому, кто решится покинуть Dominion и отправиться через «Бескрайнее море» в далекие земли.
 		#IF(game.isPlotDiscovered())
-			 Knowing that this land must be mainland Europe, you can't help but doubt that the emigrating citizens of Dominion will have a life there similar to the one shown on the poster.
+			Понимая, что эти земли — наверняка материковая Европа, ты невольно сомневаешься, что жизнь эмигрантов из Dominion будет похожа на ту, что показана на плакате.
 		#ELSE
-			 Taking another look at the scene displayed upon the poster, you can't help but wonder what this promised land is like in reality.
+			 Еще раз взглянув на сцену, изображенную на постере, ты невольно задаешься вопросом: какова эта обещанная земля на самом деле?
 		#ENDIF
 	</p>
 	<p>
-		Having seen all there is, you [pc.step] away from the posters and wonder what to do next...
+		Увидев всё, что было нужно, ты [pc.step] от плакатов и раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -43,148 +43,148 @@
 	<htmlContent tag="SLAVERY_ADMINISTRATION"><![CDATA[
 	#IF(pc.isHasSlaverLicense())
 		<p>
-			The heavy oak doors of the 'Slavery Administration' building are wide open, and, stepping through the inviting entranceway, you find yourself standing in a cavernous entrance hall. Rows of marble pillars line the edges of the room, with little wooden benches interspersed between them. Two doors are set into the wall opposite you, with signs labelling them as 'Holding pens' and 'Offices'. The only other piece of furniture to be seen is a long, black-marble desk, behind which the black-haired cat-boy, [finch.name], is grinning at you with mischievous eyes.
+			Тяжелые дубовые двери здания «Администрации рабства» широко распахнуты. Переступив через манящий порог, ты оказываешься в огромном вестибюле. Вдоль стен тянутся ряды мраморных колонн, между которыми расставлены небольшие деревянные скамьи. В стене напротив тебя виднеются две двери с табличками «Загоны» и «Кабинеты». Единственная другая мебель здесь — длинный стол из черного мрамора, за которым, лукаво поглядывая на тебя, ухмыляется черноволосый кошачий мальчик [finch.name].
 		</p>
 		<p>
-			[finch.speech(Ah, if it isn't my <i>favourite</i> customer, [pc.name]!)] he shouts, beckoning you over to the desk. [finch.speech(What can I help you with today?)]
+			[finch.speech(А, неужели это не мой <i>любимый</i> клиент, [pc.name]!)] — выкрикивает он, подзывая тебя к столу. [finch.speech(Чем могу помочь тебе сегодня?)]
 		</p>
 		<p>
-			Walking forwards, you return [finch.namePos] greeting, [pc.speech(Hi, [finch.name].)]
+			Сделав шаг вперед, ты отвечаешь на приветствие [finch.namePos]: [pc.speech(Привет, [finch.name].)]
 		</p>
 		<p>
-			[finch.speech(As an owner of a slaver license, I'm pleased to offer you my services,)] he says, standing up to reveal his tiny feline cock. [finch.speech(I've got several slave collars for sale, each of which have all the required paperwork already completed.)]
+			[finch.speech(Как обладатель лицензии работорговца, я рад предложить тебе свои услуги,)] — говорит он, поднимаясь и демонстрируя свой крошечный кошачий член. [finch.speech(У меня есть несколько ошейников на продажу, и на каждый уже оформлены все необходимые документы.)]
 		</p>
 		<p>
-			As you come to a halt in front of the black marble desk, [finch.name] grins expectantly at you, [finch.speech(Or, if you'd like, we can discuss the management and handling of your property. Remember, any new slaves you capture will be delivered here first. All the costs of collection and transport are covered in the cost of each slave collar, so just let me know if you want to have your slaves moved elsewhere.)]
+			Когда ты останавливаешься перед столом из черного мрамора, [finch.name] предвкушающе ухмыляется тебе: [finch.speech(Или, если хочешь, мы можем обсудить управление и содержание твоей собственности. Помни, все новые рабы, которых ты поймаешь, сначала будут доставлены сюда. Все расходы на сбор и транспортировку уже включены в стоимость каждого ошейника, так что просто дай мне знать, если захочешь перевезти своих рабов в другое место.)]
 		</p>
 		<p>
-			Thanking [finch.name], you wonder what you do next...
+			Поблагодарив [finch.name], ты задумываешься, что делать дальше...
 		</p>
 	#ELSEIF(!game.getDialogueFlags().hasFlag(FLAG_finchIntroduced))
 		<p>
-			The heavy oak doors of the 'Slavery Administration' building are wide open, and, stepping through the inviting entranceway, you find yourself standing in a large, cavernous entrance hall. Rows of marble pillars line the edges of the room, with little wooden benches interspersed between them. Two doors are set into the wall opposite you, with signs labelling them as 'Holding pens' and 'Offices'. The only other piece of furniture to be seen is a long, black-marble desk, behind which a black-haired cat-boy is grinning at you with mischievous eyes.
+			Тяжелые дубовые двери здания «Администрации работорговли» широко распахнуты, и, переступив через манящий порог, ты оказываешься в огромном, похожем на пещеру вестибюле. Вдоль стен тянутся ряды мраморных колонн, между которыми расставлены небольшие деревянные скамьи. В стене напротив тебя виднеются две двери с табличками «Загоны» и «Кабинеты». Единственная другая мебель в зале — длинный стол из черного мрамора, за которым тебе лукаво улыбается черноволосый кот-мальчик.
 		</p>
 		<p>
-			[finch.speech(Welcome!)] he shouts, beckoning you over to the desk. [finch.speech(Can I help you with anything?)]
+			[finch.speech(Добро пожаловать!)] — выкрикивает он, подзывая тебя к столу. [finch.speech(Могу я чем-нибудь помочь?)]
 		</p>
 		<p>
-			Walking forwards, you return the cat-boy's greeting, [pc.speech(Hello, I was just looking around.)]
+			Шагая вперед, ты отвечаешь на приветствие кота: [pc.speech(Привет, я просто осматриваюсь.)]
 		</p>
 		<p>
-			[finch.speech(I'm afraid that there's not really much to see here. All the <i>fun</i> happens in the holding cells, and they're off-limits. Unless you've got a slaver license, there's really not much I can offer you, except for a good day!)] he says, standing up and bowing a little. [finch.speech(Oh, where are my manners?! I'm [finch.name], the manager of the Slavery Administration. I keep petitioning my superiors to have the name changed to something a little more <i>exciting</i>, but they're quite set in their ways.)]
+			[finch.speech(Боюсь, здесь особо не на что смотреть. Вся <i>движуха</i> происходит в камерах содержания, а туда вход воспрещен. Если у тебя нет лицензии работорговца, я вряд ли смогу предложить тебе что-то, кроме пожелания хорошего дня!)] — говорит он, поднимаясь и слегка кланяясь. [finch.speech(Ох, где же мои манеры?! Я [finch.name], управляющий Администрацией Рабства. Я всё пытаюсь убедить начальство переименовать это место во что-нибудь более <i>захватывающее</i>, но они люди консервативные.)]
 		</p>
 		<p>
-			[pc.speech(I'm [pc.name],)] you answer, returning the cat-boy's disarming smile. As [finch.name] continues grinning at you, your eyes are drawn down to his groin, where you see that his choice of crotchless chaps and briefs have left his tiny cat-like cock completely exposed.
+			[pc.speech(Я [pc.name],)] — отвечаешь ты, отвечая на обезоруживающую улыбку кошкомальчика. Пока [finch.name] продолжает ухмыляться тебе, твой взгляд невольно опускается к его паху, где ты замечаешь, что выбранные им шаровары и белье без промежности оставляют его крошечный кошачий член совершенно открытым.
 		</p>
 		<p>
-			Noticing your downwards glance, [finch.name] lets out a little laugh, and you can't help but notice that there's a slightly unsettling edge to his voice, [finch.speech(I like having easy access! You never know when a disobedient slave needs to be put in their place...)]
+			Заметив твой взгляд, направленный вниз, [finch.name] издает короткий смешок, и ты не можешь не почувствовать в его голосе легкую, тревожную нотку: [finch.speech(Мне нравится иметь быстрый доступ! Никогда не знаешь, когда непослушному рабу придет время показать свое место...)]
 		</p>
 		<p>
-			Due to your lack of a slaver license, [finch.name] is unable to offer you any services. As he sits back down, concealing his exposed groin behind the desk once more, you wonder if you should ask him about how to obtain one.
+			Из-за отсутствия лицензии работорговца [finch.name] не может предложить тебе никаких услуг. Когда он снова садится, вновь скрывая свой обнаженный пах за столом, ты задумываешься, не стоит ли спросить его о том, как её получить.
 		</p>
 	#ELSE
 		<p>
-			The heavy oak doors of the 'Slavery Administration' building are wide open, and, stepping through the inviting entranceway, you find yourself standing in a large, cavernous entrance hall. Rows of marble pillars line the edges of the room, with little wooden benches interspersed between them. Two doors are set into the wall opposite you, with signs labelling them as 'Holding pens' and 'Offices'. The only other piece of furniture to be seen is a long, black-marble desk, behind which the black-haired cat-boy, [finch.name], is grinning at you with mischievous eyes.
+			Тяжелые дубовые двери здания «Администрации работорговли» широко распахнуты, и, переступив через манящий порог, ты оказываешься в огромном, похожем на пещеру вестибюле. Вдоль стен тянутся ряды мраморных колонн, между которыми расставлены небольшие деревянные скамьи. На стене напротив тебя виднеются две двери с табличками «Загоны» и «Кабинеты». Единственная другая мебель здесь — длинный стол из черного мрамора, за которым, озорно поглядывая на тебя, ухмыляется черноволосый кошкомальчик [finch.name].
 		</p>
 		<p>
-			[finch.speech(Hello again!)] he shouts, beckoning you over to the desk. [finch.speech(Can I help you with anything?)]
+			[finch.speech(Снова привет!)] — кричит он, маня тебя к столу. [finch.speech(Могу я чем-нибудь помочь?)]
 		</p>
 		<p>
-			Walking forwards, you return [finch.namePos] greeting, [pc.speech(Hello, I was just looking around.)]
+			Сделав шаг вперед, ты отвечаешь на приветствие [finch.namePos]: [pc.speech(Привет, я просто осматриваюсь.)]
 		</p>
 		<p>
-			[finch.speech(I'm afraid that there's not really much to see here. All the <i>fun</i> happens in the holding cells, and they're off-limits. Unless you've got a slaver license, there's really not much I can offer you, except for a good day!)] he says, standing up to reveal his tiny feline cock.
+			[finch.speech(Боюсь, здесь особо не на что смотреть. Вся <i>движуха</i> происходит в загонах, а туда вход воспрещен. Если у тебя нет лицензии работорговца, я мало что могу тебе предложить, кроме хорошего настроения!)] — говорит он, поднимаясь на ноги и демонстрируя свой крошечный кошачий член.
 		</p>
 		<p>
-			Due to your lack of a slaver license, [finch.name] is unable to offer you any services. Throwing a grin your way, he sits back down, concealing his exposed groin behind the desk once more.
+			Из-за отсутствия лицензии работорговца [finch.name] не может предложить тебе никаких услуг. Расплывшись в улыбке, он снова садится, пряча обнаженное пах за столом.
 		</p>
 	#ENDIF
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLAVERY_ADMINISTRATION_ASK_ABOUT_SLAVER_LICENSE"><![CDATA[
+		<p>
+		Подходя к столу [finch.namePos], ты спрашиваешь: [pc.speech(Как получить лицензию работорговца? Нужно заполнить какую-то форму?)]
+		</p>
 	<p>
-		Walking up to [finch.namePos] desk, you ask, [pc.speech(How do I get a slaver license? Is there some kind of form I need to fill out?)]
+		[finch.Name] откидывается на спинку кресла, ухмыляясь тебе. [finch.speech(Да, нужно заполнить форму, <i>и</i> оплатить взнос в пять тысяч огней, но лицензии работорговцев раздают не абы кому. Если хочешь подать заявку, придется встать в очередь. В последний раз, когда я проверял, ожидание для новых заявителей составляло чуть больше четырех лет...)]
 	</p>
 	<p>
-		[finch.Name] leans back in his chair, grinning up at you. [finch.speech(Yeah, there's a form to fill out, <i>and</i> a fee of five-thousand flames to pay, but slaver licenses aren't handed out to just anyone. If you're looking to apply for one, you're going to have to join the waiting list. Last time I looked, I think the estimated wait time for new applicants is just over four years...)]
+		[pc.speech(Четыре года?!)] — недоверчиво восклицаешь ты. [pc.speech(Неужели нет другого способа получить её?)]
 	</p>
 	<p>
-		[pc.speech(Four years?!)] you exclaim in disbelief. [pc.speech(Is there no other way to get one?)]
+		[finch.speech(Ну, если только ты не сможешь раздобыть рекомендательное письмо от кого-то, у кого уже есть лицензия работорговца, то нет, другого пути нет. А если бы она у тебя была, ты бы не спрашивал, верно?)]
 	</p>
 	<p>
-		[finch.speech(Well, unless you can get a letter of recommendation from someone who's already got a slaver license, then no, there's no other way. And if you had that, you wouldn't be asking, would you?)]
-	</p>
-	<p>
-		[finch.Name] grins up at you, and you can't help but notice the slightly threatening look in his [finch.eyeColour] cat-like eyes. You thank him for the information and step away from the desk, determined to go and ask for a letter of recommendation from Lilaya, the one person you know that can help you out.
+		[finch.Name] ухмыляется тебе, и ты невольно замечаешь слегка угрожающий блеск в его [finch.eyeColour] кошачьих глазах. Поблагодарив его за информацию, ты отходишь от стола, решив отправиться за рекомендательным письмом к Lilaya — единственному человеку, который, как ты надеешься, сможет тебе помочь.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLAVERY_ADMINISTRATION_SLAVER_LICENSE_OBTAINED"><![CDATA[
 	<p>
-		Walking up to [finch.namePos] desk, you place the letter of recommendation down in front of him. [pc.speech(I got a letter of recommendation from my aunt, so can I get that license now?)]
+		Подойдя к столу [finch.namePos], ты кладешь перед ним рекомендательное письмо. [pc.speech(Я раздобыл рекомендацию от своей тети, так что теперь я могу получить лицензию?)]
 	</p>
 	<p>
-		[finch.speech(Hah! It's not quite as easy as that, this just means that you're on the priority list, not that-)] [finch.name] starts explaining, but as he reads the signature at the bottom of your letter, he stops talking.
+		[finch.speech(Ха! Всё не так просто, это лишь означает, что ты в списке приоритетных, а не то, что—)] [finch.name] начинает объяснять, но, прочитав подпись внизу твоего письма, он внезапно замолкает.
 	</p>
 	<p>
-		[pc.speech(Is something wrong?)] you ask, noticing that all the colour has drained from his face.
+		[pc.speech(Что-то не так?)] — спрашиваешь ты, заметив, как он внезапно побледнел.
 	</p>
 	<p>
-		[finch.speech(Your aunt is <i>Lilaya</i>?)] he asks, putting the letter to one side. [finch.speech(Why didn't you say so earlier?! If you've got the five-thousand flame fee, I'll process your license right now!)]
+		[finch.speech(Твоя тетя — <i>Lilaya</i>?)] — спрашивает он, откладывая письмо в сторону. [finch.speech(Почему ты не сказал раньше?! Если у тебя есть пять тысяч огней на оплату сбора, я оформлю твою лицензию прямо сейчас!)]
 	</p>
 	<p>
-		[pc.speech(Oh, great!)] you cheerily reply, handing over the money. [pc.speech(You know Lilaya then?)]
+		[pc.speech(О, отлично!)] — бодро отвечаешь ты, протягивая деньги. [pc.speech(Значит, ты знаешь Lilaya?)]
 	</p>
 	<p>
-		[finch.Name] pulls out a large stack of forms from under his desk, and as he starts filling them out, he replies, [finch.speech(Of course! Anyone in any sort of business which deals with demons should know of all the elder lilin's recognised children. Lilaya is an especially notable individual, as she's one of only two half-demons to ever have been recognised by her elder lilin mother. Anyway, it's going to take me about fifteen minutes to fill out these forms, so you can wait on one of the benches if you'd like.)]
+		[finch.Name] достает из-под стола толстую стопку бланков и, начав их заполнять, отвечает: [finch.speech(Разумеется! Любой, кто ведет дела с демонами, должен знать всех признанных детей старших лилин. Lilaya — личность особенно примечательная, ведь она одна из всего двух полудемонов, которых когда-либо признала их мать — старшая лилин. В общем, мне понадобится минут пятнадцать, чтобы заполнить эти бумаги, так что можешь подождать на одной из скамеек, если хочешь.)]
 	</p>
 	<p>
-		Thankful for Finch's knowledge of, and apparent respect for, your demonic aunt, you walk over to one of the wooden benches at the edge of the room and take a seat. True to his word, [finch.name] takes just under fifteen minutes to work his way through the pile of forms, and once he's finished, he calls you back over to his desk.
+		Поблагодарив Финча за осведомленность и явное уважение к твоей тете-демону, ты подходишь к одной из деревянных скамеек у края комнаты и садишься. Как он и обещал, [finch.name] требуется чуть меньше пятнадцати минут, чтобы расправиться с горой бланков, и, закончив, он зовет тебя к своему столу.
 	</p>
 	<p>
-		[finch.speech(Right, I just need your name and signature here, here, and here,)] he says, pointing to three different places on the forms. [finch.speech(Once you're done, I'll talk you through the rules and regulations.)]
+		[finch.speech(Так, теперь мне нужны твои имя и подпись здесь, здесь и здесь,)] — говорит он, указывая на три разных места в документах. [finch.speech(Как только закончишь, я введу тебя в курс правил и положений.)]
 	</p>
 	<p>
-		Quickly skimming over the forms to make sure that you're not signing your life away by mistake, you then sign in the places that [finch.name] points to. Once you're done, the cat-boy files the papers away beneath his desk, before producing a little checklist, titled <i>'Slavery rules & regulations'</i>.
+		Быстро пробежав глазами по бланкам, чтобы убедиться, что ты случайно не подписываешь себе смертный приговор, ты ставишь подписи там, куда указывает [finch.name]. Закончив, кошкомальчик убирает бумаги под стол и достает небольшой список под названием <i>«Правила и регламент рабства»</i>.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLAVERY_ADMINISTRATION_SLAVER_LICENSE_OBTAINED_RULES"><![CDATA[
 	<p>
-		[finch.speech(So, before you run off and try to enslave the first person you meet, you need to be aware of the basics,)] [finch.name] states, pointing down at the checklist in front of him. [finch.speech(First of all, slaves are meant to wear a piece of enchanted clothing in order to clearly designate them as someone else's property. Slave collars are most regularly used for this purpose, and can only be purchased from here, at the Slavery Administration building. Although some slave owners allow their slaves to work without wearing a piece of enslavement clothing, we strongly advise against this. Runaway slaves who don't have their collars on are almost impossible to track down without great expense, so if you decide to take theirs off, don't come crying to me when they run away!)]
+		[finch.speech(Итак, прежде чем ты умчишься пытаться поработить первого встречного, тебе стоит усвоить основы),] [finch.name] произносит, указывая на лежащий перед ним список. [finch.speech(Во-первых, рабы должны носить зачарованную одежду, чтобы их было четко видно как чью-то собственность. Чаще всего для этого используются рабские ошейники, и купить их можно только здесь, в здании Администрации рабства. Хотя некоторые хозяева позволяют своим рабам работать без специальной одежды, мы настоятельно не рекомендуем так делать. Беглых рабов без ошейников почти невозможно выследить без огромных затрат, так что если решишь их снять — не приходи потом ко мне плакаться, когда они сбегут!)]
 	</p>
 	<p>
-		[pc.speech(Understood,)] you reply, nodding for Finch to continue.
+		[pc.speech(Понятно,)] — отвечаешь ты, кивнув Финчу, чтобы тот продолжал.
 	</p>
 	<p>
-		[finch.speech(Now, you won't need to worry about this if you're only planning on buying and selling slaves, but if you're hoping to enslave people, then there are some <i>strict</i> limitations. You can only enslave two sorts of people; those who are willing, and those who have been marked for enslavement by Enforcers. Slave collars have a special enchantment in them that detects if the wearer falls into either one of those categories, so don't try and run around making just anyone into your slave!)] 
+		[finch.speech(Ну, если ты планируешь только покупать и продавать рабов, то об этом можно не беспокоиться. Но если ты надеешься сам обращать людей в рабство, то тут есть некоторые <i>строгие</i> ограничения. Ты можешь поработить лишь два типа людей: тех, кто согласен добровольно, и тех, кто был помечен для рабства самими Enforcer. В рабские ошейники вплетено особое заклинание, которое определяет, подходит ли носитель под одну из этих категорий, так что не вздумай бегать повсюду и превращать в рабов кого попало!)] 
 	</p>
 	<p>
-		[pc.speech(That makes sense,)] you reply.
+		[pc.speech(Логично,)] отвечаешь ты.
 	</p>
 	<p>
-		[finch.speech(Good. Now, assuming you're interested in enslaving people, the last thing you need to be aware of is what happens once you make your slave-to-be wear the enslavement clothing. As soon as you fit whatever clothing it may be into place, the collar's special enchantment will activate,)] [finch.name] says, grinning, [finch.speech(and if they're a suitable enslavement target, they'll be teleported right into the holding cells in this very building! Now, normally teleportation spells are limited to only the most powerful of arcane users, so you might be shocked the first time you see it!)]
+		[finch.speech(Хорошо. Теперь, если ты всё же намерен обращать людей в рабство, последнее, что тебе нужно знать — это то, что происходит, когда твой будущий раб надевает рабскую одежду. Как только ты наденешь на него любой предмет одежды, сработает особое заклинание ошейника,)] [finch.name] говорит с ухмылкой, [finch.speech(и если человек подходит под условия, его тут же телепортирует прямиком в камеры содержания в этом самом здании! Обычно заклинания телепортации подвластны лишь самым могущественным мастерам арканы, так что в первый раз ты можешь быть просто шокирован!)]
 	</p>
 	<p>
-		[pc.speech(So I have to come here and pick up everyone I enslave?)] you ask.
+		[pc.speech(Значит, мне придется приходить сюда и забирать каждого, кого я порабощу?)] спрашиваешь ты.
 	</p>
 	<p>
-		[finch.speech(That's right, but I'm sure someone as important as you can simply send a messenger to come and collect them from the comfort of your own home. Although this system is a little inconvenient for all involved, we had to implement it a few years ago to counteract some nasty illegal enslavement practices. With this new system, we're making sure that all new slaves go through the proper channels.)]
+		[finch.speech(Все верно, но я уверен, что такой важной персоне, как вы, достаточно просто отправить гонца, чтобы тот забрал бумаги прямо к вам домой. Хотя эта система немного неудобна для всех сторон, нам пришлось внедрить ее несколько лет назад, чтобы противостоять грязным методам незаконного порабощения. Благодаря этой системе мы гарантируем, что все новые рабы проходят через официальные каналы.)]
 	</p>
 	<p>
-		[finch.Name] picks up the last piece of paper you signed and holds it out for you to take. [finch.speech(That's all there really is to it. With this license, you're able to buy and sell slaves in any manner you like. The only restriction is on enslavement, which, as I said, can only be done to those who are willing, or those who are wanted by the Enforcers. Oh, and on that last note, there's usually no point in trying to enslave any demons you run into, as Enforcers only sign off on an enslavement order for the most troublesome and destitute demons in the city. Any demon with even a shred of respectability could, for all any Enforcer knows, be a lilin's favoured son or daughter, and before they know it, they'd be the one ending up in my cells instead of the demon!)]
+		[finch.Name] подбирает последний лист бумаги, который ты подписал, и протягивает его тебе. [finch.speech(Вот, собственно, и всё. С этой лицензией ты сможешь покупать и продавать рабов любым удобным способом. Единственное ограничение касается самого процесса порабощения: как я уже сказал, это можно делать только с теми, кто на это согласен, или с теми, кто разыскивается Enforcer. Ах да, и еще один момент: обычно нет никакого смысла пытаться поработить встреченных тобой демонов, так как Enforcer одобряют приказы на порабощение только самых проблемных и нищих демонов в городе. Любой демон, обладающий хоть каплей респектабельности, может оказаться, как выяснится позже, любимым сыном или дочерью какой-нибудь лилин, и не успеешь ты оглянуться, как вместо демона в моих камерах окажешься ты сам!)]
 	</p>
 	<p>
-		[pc.speech(I see,)] you say, wondering if any demons prowling the alleyways of Dominion have been marked for enslavement.
+		[pc.speech(Понятно,)] — говоришь ты, гадая, не отмечен ли кто-нибудь из демонов, рыскающих по переулкам Dominion, для порабощения.
 	</p>
 	<p>
-		[finch.speech(Normally, non-demons wouldn't even be permitted to own demonic slaves, but as you're related to Lilaya herself, I've gone ahead and marked your license as the extended coverage type, meaning that you'll get no trouble from any Enforcers if you do end up owning some demon slaves,)] Finch states, giving you a friendly wink before leaning back and crossing his arms. [finch.speech(One last thing; if you get soft and want to set your slave free, you're going to need a 'Freedom Certification' to do so. That's basically an official document that allows you to declare one of your slaves as being freed. Now, they don't come cheap, as we can't have criminals coming along to easily buy their convicted friends out of their punishment. If you can cough up enough flames, then you can buy them from me.)]
+		[finch.speech(Обычно не-демонам даже не разрешают владеть демоническими рабами, но так как ты родственник самой Lilaya, я пошел навстречу и отметил твою лицензию как расширенную. Это значит, что у тебя не будет проблем с Enforcer, если ты решишь завести себе демонов в рабство,)] — заявляет Finch, дружелюбно подмигивая тебе, после чего откидывается назад и скрещивает руки на груди. [finch.speech(И последнее: если ты размякнешь и захочешь освободить своего раба, тебе понадобится «Сертификат Свободы». По сути, это официальный документ, позволяющий объявить раба свободным. Они недешевы, ведь нельзя позволить преступникам просто так выкупать своих подельников из наказания. Если сможешь отвалить достаточно огней, то купишь их у меня.)]
 	</p>
 	<p>
-		Thanking him for explaining things to you, you put your new slaver license safely away, but before you're able to turn and leave, the cat-boy has some final words, [finch.speech(Now that you've got that license, I can sell you some slave collars if you'd like. I've also got a few more fun things in stock...)]
+		Поблагодарив его за разъяснения, ты бережно убираешь свою новую лиценку работорговца, но прежде чем ты успеваешь развернуться и уйти, кошкомальчик добавляет напоследок: [finch.speech(Раз уж лицензия у тебя на руках, я могу продать тебе ошейники для рабов, если хочешь. А еще у меня на складе есть пара других всяких забавных штук...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -194,39 +194,39 @@
 	
 	<htmlContent tag="SLAVE_FREEDOM_TALK"><![CDATA[
 	<p>
-		Wanting to know what sort of process you'd have to go through to set a slave free, you ask Finch if you're able to simply let your slaves go if you don't want them anymore.
+		Желая узнать, через какие процедуры придется пройти, чтобы освободить раба, ты спрашиваешь Finch, можно ли просто отпустить рабов, если они тебе больше не нужны.
 	</p>
 	<p>
-		[finch.speech(That's not how it works,)] the cat-boy replies, [finch.speech(If you let your slave go, they're still registered with us as being a slave, so if an Enforcer patrol bumps into them, they're going to have a collar clasped around their neck and returned to you, along with a bill for their time and effort. Anyway, unless you've managed to convince someone to enter into a willing slave contract, your slaves are going to be criminals or other scum. You really want to set people like that free?)]
+		[finch.speech(Всё работает совсем не так,)] — отвечает кот-мальчишка. [finch.speech(Если ты просто отпустишь раба, он всё равно будет числиться у нас как раб. Так что, если на него наткнётся патруль Enforcer, ему наденут ошейник и вернут тебе — вместе со счётом за их время и усилия. В общем, если только тебе не удалось уговорить кого-то добровольно подписать контракт, твои рабы — это либо преступники, либо прочий сброд. Ты правда хочешь выпускать на волю таких людей?)]
 	</p>
 	<p>
-		Finch lets out a disapproving grunt as you reply by saying that it's a possibility, but despite his reaction, he tells you what you want to know, [finch.speech(Getting a slave freed requires you to go through the courts and get a Freedom Certification issued to the slave in question. Unless your slave's an important demon, that process is going to take at least a year to get through, and at the end of it you're more likely than not to have your request for your slave's freedom rejected. The state can't afford to be letting criminals back onto the streets all the time, can it? What would happen to society if that were to happen...)]
+		Финч неодобрительно хмыкает на твой ответ о том, что такой вариант возможен, но, несмотря на свою реакцию, всё же выдаёт нужную тебе информацию: [finch.speech(Чтобы освободить раба, нужно пройти через суды и получить Сертификат Свободы на имя этого бедолаги. Если твой раб — не какой-нибудь важный демон, этот процесс затянется минимум на год, и в итоге твою просьбу, скорее всего, отклонят. Государство не может позволить себе постоянно выпускать преступников на улицы, верно? Что станет с обществом, если это начнёт происходить...)]
 	</p>
 	<p>
-		While he's been explaining this to you, Finch has been repeatedly glancing over at a nearby dog-boy who's been loitering within earshot of your conversation. As this stranger turns around and leaves, Finch's final sentence trails off, and he lowers his voice and hisses, [finch.speech(You want to free your slaves? I can get all the paperwork done right here from behind my desk, <i>and</i> register everything as being one-hundred percent official and legit. Of course, skipping over the whole judicial process isn't exactly legal, but if you rat me out then you'll be even more screwed than I will be; you'll have Lilaya's mother, an elder lilin, pissed at you for bringing shame to her family...)]
+		Пока он объясняет тебе это, Финч то и дело поглядывает на стоящего неподалеку мальчишку-собаку, который словно специально замер рядом, чтобы подслушать ваш разговор. Когда незнакомец разворачивается и уходит, последняя фраза Финча затихает; он понижает голос и шипит: [finch.speech(Хочешь освободить своих рабов? Я могу оформить все бумаги прямо здесь, за своим столом, <i>и</i> зарегистрировать всё так, будто это стопроцентно официально и законно. Конечно, пропустить весь судебный процесс — не совсем легально, но если ты меня сдашь, то окажешься в еще более дерьмовом положении, чем я; на тебя будет злиться мать Лилай, старейшая лилин, за то, что ты опозорил её семью...)]
 	</p>
 	<p>
-		Realising that this is the only realistic way in which you'll be able to set any of your slaves free, you ask Finch how much it'll cost you.
+		Понимая, что это единственный реальный способ освободить хоть кого-то из своих рабов, ты спрашиваешь Финча, во сколько тебе это обойдется.
 	</p>
 	<p>
-		[finch.speech(You're a sharp one,)] Finch replies with a big grin on his face. Still keeping his voice down to barely louder than a whisper, he reveals, [finch.speech(I've got to grease some palms every time I do this, so these Freedom Certifications aren't going to come cheap. It's going to be at least [#SPECIAL_PARSE_0] flames, and that's not even including my cut. I'm not running a charity here, so you can add about fifty percent on top of that.)]
+		[finch.speech(А ты сообразительная,)] — отвечает Финч с широкой ухмылкой. Все еще понижая голос почти до шепота, он признается: [finch.speech(Каждый раз, когда я проворачиваю такое, мне приходится смазывать чьи-то ладони маслом, так что эти Свидетельства о Свободе не будут стоить дешево. Это обойдется минимум в [#SPECIAL_PARSE_0] Огней, и это еще без учета моей доли. Я тут не благотворительностью занимаюсь, так что прибавь к этой сумме еще процентов пятьдесят.)]
 	</p>
 	<p>
-		At that moment, Finch's eyes flick over to track another stranger who's just entered the building, and he raises his voice to a normal volume to say, [finch.speech(Yeah, so anyway, just let me know if you want to buy anything. Is there anything else I can do for you?)]
+		В этот момент взгляд Финча перескакивает на очередного незнакомца, только что вошедшего в здание, и он повышает голос до обычного уровня, произнося: [finch.speech(Да так, в общем, просто дай знать, если захочешь что-нибудь купить. Могу я еще чем-нибудь помочь?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLAVE_FREEDOM_TALK_END"><![CDATA[
 	<p>
-		Knowing that you can now purchase Freedom Certifications from Finch, you wonder what to do next...
+		Теперь, когда у Финча можно купить Свидетельства о свободе, ты задумываешься, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLAVE_FREEDOM_TALK_END_START_ACCOMMODATION_QUEST"><![CDATA[
 	<p>
-		Knowing that you can now purchase Freedom Certifications from Finch, you wonder whether you'd be able to convince any slaves to stay with you as your guest after freeing them. Of course, that would require Lilaya's permission to house guests in her mansion, so you make a mental note to bring that up with her before wondering what to do next...
+		Теперь, когда у Финча можно купить Свидетельства о свободе, ты гадаешь, получится ли у тебя убедить каких-нибудь рабов остаться у тебя в качестве гостей после освобождения. Разумеется, для этого потребуется разрешение Lilaya принимать гостей в своем особняке, так что ты берешь на заметку обсудить это с ней, прежде чем решать, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>

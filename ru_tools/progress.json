@@ -100,7 +100,16 @@
     "res/txt/places/dominion/shoppingArcade/succubisSecrets.xml",
     "res/txt/places/dominion/slaverAlley/bountyHunterLodge.xml",
     "res/txt/places/dominion/slaverAlley/genericDialogue.xml",
-    "res/txt/places/dominion/slaverAlley/helenaRomance.xml"
+    "res/txt/places/dominion/slaverAlley/helenaRomance.xml",
+    "res/txt/places/dominion/slaverAlley/helenasBoutique.xml",
+    "res/txt/places/dominion/slaverAlley/scarlettsShop.xml",
+    "res/txt/places/dominion/slaverAlley/slaveryAdministration.xml",
+    "res/txt/places/dominion/warehouseDistrict/dominionExpress.xml",
+    "res/txt/places/dominion/warehouseDistrict/kaysTextiles.xml",
+    "res/txt/places/dominion/warehouseDistrict/warehouses.xml",
+    "res/txt/places/dominion/zaranixHome/firstFloor.xml",
+    "res/txt/places/dominion/zaranixHome/firstFloorRepeat.xml",
+    "res/txt/places/dominion/zaranixHome/groundFloor.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

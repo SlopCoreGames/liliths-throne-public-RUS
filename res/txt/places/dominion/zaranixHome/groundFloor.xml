@@ -3,24 +3,24 @@
 
 	<htmlContent tag="OUTSIDE"><![CDATA[
 	<p>
-		Keen to put an end to your lengthy pursuit of Arthur, you once again find yourself travelling through the district of Dominion known as 'Demon Home'. Following the directions that you received from Scarlett, you soon locate Zaranix's house, which lies only a couple of streets away from your elusive quarry's apartment building. With a wry grin, you take a moment to reflect on the fact that Arthur was right under your nose this whole time, before focusing your attention on the building in front of you.
+		Желая покончить с этой затянувшейся погоней за Arthur, ты снова оказываешься в районе Dominion, известном как «Демоний». Следуя указаниям, полученным от Scarlett, ты вскоре находишь дом Zaranix, который расположен всего в паре улиц от квартиры твоей неуловимой цели. С кривой ухмылкой ты на мгновение задумываешься о том, что Arthur всё это время был у тебя под самым носом, а затем переключаешь внимание на здание перед собой.
 	</p>
 	<p>
-		Much like all the other buildings in this area of the city, Zaranix's home takes the form of a grand, regency-style town-house. Unlike the majority of the other buildings, however, his home has what appears to be a modestly sized private garden adjoining the property to the right-hand side. A cast-iron fence, standing at around [units.size(250)], separates the garden from the street in which you're standing, but despite its height, you're sure that you could climb over it if you wanted to try and sneak inside.
+		Как и все остальные здания в этой части города, дом Zaranix представляет собой величественный особняк в стиле регентства. Однако, в отличие от большинства соседних построек, к его дому справа примыкает, кажется, скромный частный сад. Чугунная ограда высотой около [units.size(250)] отделяет сад от улицы, на которой ты стоишь, но, несмотря на её высоту, ты уверен, что сможешь перелезть через неё, если захочешь пробраться внутрь тайком.
 	</p>
 	<p>
 		#IF(game.isExtendedWorkTime())
 			#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=1)
-				Then again, you could always just knock on the door yet again. Perhaps the fiery-haired maid will be less angry this time?
+				Впрочем, ты всегда можешь просто снова постучать в дверь. Может, на этот раз огненноволосая горничная будет менее сердитой?
 			#ELSE
-				Then again, you could always just knock on the door like a regular visitor. Perhaps you could convince whoever answers to let you see Arthur?
+				Впрочем, ты всегда можешь просто постучать в дверь, как обычный посетитель. Возможно, тебе удастся убедить того, кто откроет, позволить тебе увидеть Arthur?
 			#ENDIF
 		#ELSE
-			Due to the unsociable hour, you're certain that the house will be securely locked, and that nobody will come to answer the door if you were to knock it
-			#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE) >= 35)
-				, but you could always kick it down. Then again, it might be best to return at a more reasonable time, such as between [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
+				Из-за столь неурочного часа ты почти уверен, что дом будет надежно заперт и никто не придет открывать, если ты постучишь.
+				#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE) >= 35)
+				, но ты всегда можешь просто выбить дверь. Хотя, возможно, стоит вернуться в более разумное время, например, между [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
 			#ELSE
-				. It might be best to return at a more reasonable time, such as between [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
+				. Возможно, лучше вернуться в более разумное время, например, между [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
 			#ENDIF
 		#ENDIF
 	</p>
@@ -29,15 +29,15 @@
 
 	<htmlContent tag="OUTSIDE_REPEAT"><![CDATA[
 	<p>
-		Once more you find yourself standing outside Zaranix's home. Much like all the other buildings in this area of the city, the incubus's residence takes the form of a grand, regency-style town-house. Unlike the majority of the surrounding buildings, however, there's a modestly sized private garden adjoined to the right-hand side of the property. A tall, cast-iron fence separates this garden from the street in which you're standing, but despite its height, you're sure that you could climb over it if you wanted to try and sneak inside.
+		Ты снова стоишь перед домом Зараникса. Как и большинство зданий в этом районе города, резиденция инкуба представляет собой величественный особняк в стиле регентства. Однако, в отличие от большинства соседних построек, к правой стороне поместья примыкает скромный частный сад. Высокий кованый забор отделяет сад от улицы, на которой ты стоишь, но, несмотря на его высоту, ты уверен, что сможешь перелезть через него, если захочешь пробраться внутрь тайком.
 	</p>
 		#IF(!game.isExtendedWorkTime())
 			<p>
-				Due to the unsociable hour, you're certain that the house will be securely locked, and that nobody will come to answer the door if you were to knock it
+				Из-за столь неурочного часа ты почти уверен, что дом надежно заперт и никто не выйдет на стук, если ты решишь постучать
 				#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE) >= 35 && !game.getDialogueFlags().hasFlag(FLAG_zaranixKickedDownDoor))
-					, but you could always kick it down. Then again, it might be best to return at a more reasonable time, such as between [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
+					, но ты всегда можешь просто выбить дверь. Хотя, возможно, стоит вернуться в более разумное время, например, между [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
 				#ELSE
-					. It might be best to return at a more reasonable time, such as between [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
+					. Возможно, лучше вернуться в более разумное время, например, между [style.colourMinorBad([units.time(6)] and [units.time(22)])]...
 				#ENDIF
 			</p>
 		#ENDIF
@@ -47,7 +47,7 @@
 	<htmlContent tag="OUTSIDE_REPEAT_HOSTILE_MAIDS"><![CDATA[
 	#IF(game.isExtendedWorkTime())
 		<p>
-			As Zaranix's demonic maids are sure to recognise you on sight, you decide that knocking on the door would be an extremely bad idea. You'll have to either sneak in through the garden, or try to kick in the door and storm the place before the maids can call for help.
+		Поскольку демонические служанки Зараникса наверняка узнают тебя с первого взгляда, ты решаешь, что стучать в дверь — крайне плохая идея. Тебе придется либо проскользнуть внутрь через сад, либо попытаться выбить дверь и ворваться в дом до того, как служанки успеют позвать на помощь.
 		</p>
 	#ENDIF
 	]]>
@@ -57,9 +57,9 @@
 	#IF(game.isExtendedWorkTime())
 		<p>
 			#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=1)
-				Then again, you could always just knock on the door yet again. Perhaps the fiery-haired maid will be less angry this time?
+				Впрочем, ты всегда можешь просто снова постучать в дверь. Может, на этот раз огненноволосая горничная будет менее сердитой?
 			#ELSE
-				Then again, you could always just knock on the door like a regular visitor. Perhaps you could convince whoever answers to let you see Arthur?
+				Впрочем, ты всегда можешь просто постучать в дверь, как обычный посетитель. Возможно, тебе удастся убедить того, кто откроет, позволить тебе увидеть Arthur?
 			#ENDIF
 		</p>
 	#ENDIF
@@ -68,16 +68,17 @@
 	
 	<htmlContent tag="KNOCK_ON_DOOR"><![CDATA[
 	<p>
-		You decide that the most appropriate course of action is to simply knock on the door and ask to see Arthur. Stepping forwards, you take hold of the ornate brass door knocker and deliver a sharp rap to alert those inside of your presence.
+		Ты решаешь, что самый подходящий вариант — просто постучать в дверь и попросить встречи с Arthur. Сделав шаг вперед, ты берешься за изысканный латунный молоток и резко стучишь, чтобы оповестить присутствующих внутри о своем визите.
 	</p>
 	<p>
-		After just a few moments, you hear the sound of a lock being slid back, before the heavy oak door swings inwards to reveal one of the most striking succubi you've ever seen. Her gorgeous face and perfectly proportioned body are covered in pitch-black ebony skin, but it's not her voluptuous figure which your eyes are drawn to. Styled into loose waves, and giving off a luminescent, yellowy-orange glow, it's her extraordinary amber hair, which reaches down to just above her ass, that you find yourself gazing at. As her eyes fixate themselves onto yours, you see that her irises are the exact same glowing-amber shade as her hair, giving this demon a truly remarkable appearance.
+	
+Спустя всего несколько мгновений ты слышишь звук отодвигаемого засова, а затем тяжелая дубовая дверь распахивается, являя твоему взору одну из самых эффектных суккубов, что ты когда-либо видел. Ее великолепное лицо и идеально пропорциональное тело покрыты иссиня-черной кожей, но взгляд твой приковывает вовсе не ее пышная фигура. Твой взор замирает на ее необыкновенных янтарных волосах, уложенных мягкими волнами, которые излучают люминесцентное желто-оранжевое сияние и спускаются почти до самых ягодиц. Когда она устремляет на тебя взгляд, ты замечаешь, что ее радужка имеет точно такой же светящийся янтарный оттенок, как и волосы, что придает этой демонице поистине незабываемый облик.
 	</p>
 	<p>
-		Despite the fact that her maid's dress quite clearly identifies her as a servant in this household, her attitude is not at all one of subservience, and as she crosses her arms and leans against the door frame, she makes a disapproving clicking noise with her tongue, [amber.speech(Who are <i>you</i> supposed to be? We're not expecting any visitors, and you're wasting my valuable time, so this had better be good!)]
+		Хотя её платье горничной явно выдает в ней служанку этого дома, в её манерах нет ни капли покорности. Скрестив руки на груди и прислонившись к дверному косяку, она выразительно цокает языком: [amber.speech(И кто <i>ты</i> вообще такой? Мы не ждем гостей, а ты тратишь моё драгоценное время, так что лучше сразу говори по делу!)]
 	</p>
 	<p>
-		You're pretty sure that servants aren't ordinarily supposed to greet visitors like that, but this particular maid doesn't exactly seem to be ordinary. As her tail swishes from side to side with impatience, she narrows her piercing, luminescent-amber eyes and glares at you in an intimidating manner.
+		Ты почти уверен, что служанки обычно не приветствуют посетителей подобным образом, но эта горничная явно не из обычных. Нетерпеливо взмахнув хвостом из стороны в сторону, она прищуривает свои пронзительные, светящиеся янтарным светом глаза и угрожающе на тебя смотрит.
 	</p>
 	]]>
 	</htmlContent>
@@ -85,68 +86,68 @@
 	<htmlContent tag="KNOCK_ON_DOOR_REPEAT"><![CDATA[
 	#IF(flags.getSavedLong('amber_door_knock_repeat_count')==1)
 		<p>
-			You decide to try knocking on the door again in the hopes that a more reasonable maid will answer this time. With that in mind, you step forwards and take hold of the ornate brass door knocker, before delivering a sharp rap to alert those inside of your presence.
+			Ты решаешь постучать в дверь еще раз, надеясь, что на этот раз тебе ответит кто-то более разумный. С этой мыслью ты делаешь шаг вперед, берешься за изысканный латунный молоток и резко стучишь, чтобы заявить о своем присутствии.
 		</p>
 		<p>
-			After just a few moments, you hear the familiar sound of a lock being slid back, before the heavy oak door swings inwards once again. There, standing in the opening, is the same fiery-haired, demonic maid that greeted you last time.
+			Спустя всего несколько мгновений ты слышишь знакомый звук отодвигаемого засова, и тяжелая дубовая дверь снова распахивается. В проеме стоит всё та же огненноволосая демоница-горничная, что и в прошлый раз.
 		</p>
 		<p>
-			[amber.speech(It's <i>you</i> again?! Don't you know when to take a hint? Fuck off already!)] she shouts, before stepping back and grabbing the edge of the door, ready to slam it in your face.
+			[amber.speech(Опять <i>ты</i>?! Неужели не понимаешь намеков? Отъебись уже наконец!)] — выкрикивает она, отступая назад и хватаясь за край двери, готовая захлопнуть её прямо перед твоим носом.
 		</p>
 	#ELSEIF(flags.getSavedLong('amber_door_knock_repeat_count')==2)
 		<p>
-			Despite knowing that the one to answer is likely to be the same fiery-haired maid who you've already had the displeasure of encountering, you [pc.step] up to the door and give the ornate brass knocker a few sharp raps. Sure enough, after a few moments the heavy oak door swings open to reveal the ebony-skinned maid you expected.
+			Хотя ты и понимаешь, что тебе, скорее всего, ответит всё та же огненноволосая служанка, встреча с которой уже доставила тебе немало хлопот, ты [pc.step] к двери и несколько раз резко стучишь по изысканному латунному молотку. И действительно, спустя мгновение тяжелая дубовая дверь распахивается, являя твоему взору ожидаемую темнокожую горничную.
 		</p>
 		<p>
-			[amber.speech(<i>Again?!</i>)] she furiously shouts. Stepping back and grabbing the edge of the door, she prepares to slam it in your face as she roars, [amber.speech(Fuck off!)]
+			[amber.speech(<i>Опять?!</i>)] — яростно выкрикивает она. Отступив назад и вцепившись в край двери, она готовится захлопнуть её прямо перед твоим носом, взревев: [amber.speech(Да пошел ты!)]
 		</p>
 	#ELSEIF(flags.getSavedLong('amber_door_knock_repeat_count')==3)
 		<p>
-			Although the previous three times you knocked on the door to Zaranix's home ended in the same disastrous way, you have a good feeling about this one. [pc.Stepping] forwards once again, you use the door's ornate brass knocker to deliver several sharp knocks.
+			Пусть предыдущие три попытки постучать в дом Зараникса закончились так же плачевно, в этот раз у тебя хорошее предчувствие. Ты снова [pc.Stepping] вперед и несколько раз резко ударяешь по изысканному латунному молотку на двери.
 		</p>
 		<p>
-			Several moments later, you hear the very familiar sound of a lock being slid back, before the heavy oak door swings inwards once again. There, standing in the opening, is the same fiery-haired, ebony-skinned maid who greeted you last time. Her demonic face contorts into an incendiary scowl, and before you can say anything, she rages, [amber.speech(What the <i>fuck</i> is your problem?! How many fucking times are you going to do this?! For the last time; <i><b>fuck off</b></i>!)]
+			Спустя несколько мгновений ты слышишь до боли знакомый звук отодвигаемого засова, и тяжелая дубовая дверь снова распахивается. В проеме стоит всё та же огненноволосая темнокожая служанка, что и в прошлый раз. Её демоническое лицо искажается в яростной гримасе, и прежде чем ты успеваешь что-то сказать, она взрывается криком: [amber.speech(Да в чем <i>блять</i> твоя проблема?! Сколько, сука, раз ты собираешься это делать?! В последний раз: <i><b>вали нахер</b></i>!)]
 		</p>
 		<p>
-			With that, she once again steps back and grabs the edge of the door as she prepares to slam it in your face...
+			С этими словами она снова отступает и хватается за край двери, готовясь захлопнуть её прямо перед твоим носом...
 		</p>
 	#ELSEIF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
 		<p>
-			Telling yourself that fifth time's the charm, you once again find yourself [pc.stepping] up to the door of Zaranix's home and using the ornate brass knocker to deliver several loud, sharp raps. Clearly having been expecting you this time, the door immediately swings open to reveal the by-now very familiar figure of the amber-haired, demonic maid.
+			Уверяя себя в пятый раз, что пятая попытка — счастливая, ты снова оказываешься [pc.stepping] у дверей дома Zaranix и громко, резко стучишь в изысканный латунный молоток. Похоже, на этот раз тебя действительно ждали: дверь тут же распахивается, и перед тобой предстает уже до боли знакомая фигура янтарноволосой демоницы-горничной.
 		</p>
 		<p>
-			[amber.speech(Your incessant knocking has drawn the attention of Zaranix,)] she spits through clenched teeth. Although her more subdued tone makes a pleasant change from her previous, fiery screams, you can tell that she's still absolutely livid as she snaps, [amber.speech(I've been ordered to offer you an audience with him. If you know what's good for you, though, you'll drop down on your knees and beg for it.)]
+			[amber.speech(Твой непрекращающийся стук привлек внимание Zaranix,)] — шипит она сквозь стиснутые зубы. Хотя её более сдержанный тон приятно контрастирует с прежними яростными криками, ты понимаешь, что она всё еще в бешенстве, когда она резко бросает: [amber.speech(Мне приказано предоставить тебе аудиенцию у него. Но если тебе дорога жизнь, лучше сразу пади на колени и умоляй о ней.)]
 		</p>
 		<p>
-			With that, she steps back a little and gestures inside, inviting you into the house...
+		С этими словами она слегка отступает и жестом приглашает тебя войти в дом...
 		</p>
 	#ENDIF
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KNOCK_ON_DOOR_SLAMMED_IN_FACE"><![CDATA[
-	<p>
-		You step back just in time to avoid the door slamming into your face. With such a rude and unwelcoming maid in charge of receiving visitors, you're sure that you'll have to think of another way to get into Zaranix's home and find Arthur.
-	</p>
+		<p>
+		Ты успеваешь отпрянуть в самый последний момент, чтобы дверь не врезалась тебе прямо в лицо. С такой грубой и неприветливой горничной, принимающей гостей, ты понимаешь, что тебе придется придумать другой способ проникнуть в дом Zaranix и найти Arthur.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KNOCK_ON_DOOR_WRONG_HOUSE"><![CDATA[
-	<p>
-		Deciding that it would be best not to reveal your intentions to someone such as this, you tell the rude succubus that you must have got the wrong house. With just an angry click of her tongue as a response, the demon slams the door shut on you. With such a rude and unwelcoming maid in charge of receiving visitors, you're sure that you'll have to think of another way to get into Zaranix's home and find Arthur.
-	</p>
+		<p>
+		Решив, что лучше не раскрывать свои намерения кому-то вроде неё, ты говоришь этой наглой суккубе, что, должно быть, ошибся дверью. В ответ демон лишь гневно цокает языком и захлопывает перед тобой дверь. С такой грубой и неприветливой горничной, принимающей гостей, ты понимаешь, что тебе придется придумать другой способ проникнуть в дом Zaranix и найти Arthur.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR"><![CDATA[
 	<p>
-		[pc.speech(I'm here to see Zaranix; he's got a slave by the name of Arthur who I need to talk to,)] you explain, noting how the maid's expression turns from one of annoyance to mild curiosity.
+		[pc.speech(Я здесь, чтобы увидеть Зараникса; у него есть раб по имени Arthur, с которым мне нужно поговорить,)] — объясняешь ты, замечая, как выражение лица горничной сменяется с раздражения на легкое любопытство.
 	</p>
 	<p>
-		[amber.speech(My master doesn't receive uninvited guests, so you're not only wasting my time, you're wasting your own as well.)]
+		[amber.speech(Мой господин не принимает незваных гостей, так что ты не только тратишь мое время, но и свое собственное.)]
 	</p>
 	<p>
-		With that, the maid steps back and grabs the edge of the door, ready to slam it in your face.
+		С этими словами горничная отступает и хватается за край двери, готовая захлопнуть её прямо перед твоим носом.
 	</p>
 	]]>
 	</htmlContent>
@@ -156,27 +157,27 @@
 	
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG"><![CDATA[
 	<p>
-		Doing the first thing that comes to your mind, you drop down onto your knees and look up at the inhospitable maid. The amber glow of her hair and eyes seems to grow even fiercer as her face contorts into one of rage, but before she can open her mouth, you blurt out an apology, [pc.speech(I'm sorry for wasting your time! Please, <i>please</i> can I see Arthur? I've been searching for him for forever! Please!)]
+		Действуя по первому наитию, ты падаешь на колени и смотришь снизу вверх на недружелюбную горничную. Янтарное сияние её волос и глаз, кажется, становится еще яростнее, когда её лицо искажается от гнева, но прежде чем она успевает открыть рот, ты выпаливаешь извинение: [pc.speech(Прости, что трачу твое время! Пожалуйста, <i>пожалуйста</i>, можно мне увидеть Arthur? Я ищу его целую вечность! Пожалуйста!)]
 	</p>
 	<p>
-		[amber.speech(How pathetic,)] the maid sneers down at you, her voice sharp enough to cause you to let out a pleading little whimper, [amber.speech(begging like a dog just to see a slave.)]
+		[amber.speech(Как жалко,)] — усмехается горничная, глядя на тебя сверху вниз; её голос звучит настолько резко, что ты невольно издаешь жалобный скулёж. [amber.speech(Умоляешь, словно собачонка, лишь бы увидеть раба.)]
 	</p>
 	<p>
-		The demon's voice takes on a different tone as she steps forwards, [amber.speech(I <i>do</i> deserve to have a little fun though. I'll let you see my master, who'll then decide if you can meet with Arthur or not, but you'll have to show me that you're prepared to be on your best behaviour.
+		Голос демона меняется, когда она делает шаг вперед: [amber.speech(Хотя я <i>действительно</i> заслужила немного развлечься. Я позволю тебе увидеть моего господина, а он уже решит, сможешь ли ты встретиться с Arthur или нет, но тебе придется доказать мне, что ты готов вести себя прилежно.
 		#IF(pc.isTaur())
-			 Lie down
+			 Ляг на живот
 		#ELSE
-			 Get down on all fours
+			 Встань на четвереньки
 		#ENDIF
 		#IF(game.isFootContentEnabled())
-			 and lick my shoes like the dog you are!
+			 и вылизывай мои туфли, как покорная собака!
 		#ELSE
-			 before me and tell me that you're going to be a good doggy!
+			 передо мной и скажи, что будешь хорошей собачкой!
 		#ENDIF
 		)]
 	</p>
 	<p>
-		Still looking up at the sadistic maid, you see a wicked snarl break out across her face. She snaps her fingers at you and points to her feet, clearly serious about the demand that she's making. It's not too late to stand up and take your leave, but if you wanted to see Arthur without resorting to a more clandestine or violent approach, it looks like you'll have to do as the succubus asks.
+		Все еще глядя на садистку-горничную, ты замечаешь, как на ее лице расплывается злобная ухмылка. Она щелкает пальцами, указывая на свои ноги, — она явно настроена серьезно. Еще не поздно встать и уйти, но если ты хочешь увидеть Arthur, не прибегая к тайным или насильственным методам, похоже, придется подчиниться суккубу.
 	</p>
 	]]>
 	</htmlContent>
@@ -184,9 +185,9 @@
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG_REFUSE"><![CDATA[
 	<p>
 		#IF(game.isFootContentEnabled())
-			The thought of licking someone else's shoes is too much for you. Standing up, you see the maid's expression turn into one of furious disgust, and you're only just able to step back in time to avoid the door slamming into your face. With such a rude and unwelcoming maid in charge of receiving visitors, you're sure that you'll have to think of another way to get into Zaranix's home and find Arthur.
+			Мысль о том, чтобы лизать чьи-то туфли, оказывается для тебя невыносимой. Ты встаешь, и ты видишь, как лицо горничной искажается от яростного отвращения; тебе едва удается отпрянуть в последний момент, чтобы дверь не захлопнулась прямо перед твоим носом. С такой грубой и неприветливой хозяйкой приема, ты понимаешь, что придется искать другой способ проникнуть в дом Zaranix и найти Arthur.
 		#ELSE
-			The thought of submitting to this dominant succubus and acting like a dog is too much for you. Standing up, you see the maid's expression turn into one of furious disgust, and you're only just able to step back in time to avoid the door slamming into your face. With such a rude and unwelcoming maid in charge of receiving visitors, you're sure that you'll have to think of another way to get into Zaranix's home and find Arthur.
+			Мысль о том, чтобы покориться этой властной суккубе и вести себя как собачонка, слишком тяжела для тебя. Ты встаешь, и ты видишь, как лицо горничной искажается от яростного отвращения; тебе едва удается отпрянуть в последний момент, чтобы дверь не захлопнулась прямо перед твоим носом. С такой грубой и неприветливой хозяйкой приема, ты понимаешь, что придется искать другой способ проникнуть в дом Zaranix и найти Arthur.
 		#ENDIF
 	</p>
 	]]>
@@ -197,34 +198,34 @@
 	
 	<htmlContent tag="OUTSIDE_KNOCK_ON_DOOR_ASK_FOR_ARTHUR_GOOD_DOGGY"><![CDATA[
 	<p>
-		Not seeing any alternative, you do as this dominant maid demands and
+		Не видя иного выхода, ты подчиняешься требованию властной горничной и
 		#IF(pc.isTaur())
-			 lie down on your lower [pc.legRace]'s body
+			 ложишься на нижнюю часть тела [pc.legRace]
 		#ELSE
-			 drop down onto all fours
+			 опускаешься на четвереньки
 		#ENDIF
-		, before calling out, [pc.speech(I'm a good doggy...)]
+		, после чего восклицаешь: [pc.speech(Я хорошая собачка...)]
 	</p>
 	<p>
-		[amber.speech(Is that all you've got?!)] the succubus angrily shouts, [amber.speech(You're to repeat after me; 'I'm a good doggy, Mistress Amber!', and put some damn effort into it!)]
+		[amber.speech(И это всё, на что ты способен?!)] — гневно выкрикивает суккуб, — [amber.speech(Повторяй за мной: «Я хорошая собачка, госпожа Амбер!», и вкладывай в это хоть каплю старания, черт возьми!)]
 	</p>
 	<p>
-		You let out a humiliated whimper as Mistress Amber scolds you in full view of the public street behind you, before enthusiastically calling out, [pc.speech(I'm a good doggy, Mistress Amber!)]
+		Ты издаешь униженный скулящий звук, пока госпожа Амбер отчитывает тебя на глазах у всех прохожих на улице, а затем с энтузиазмом выкрикивает: [pc.speech(Я хорошая собачка, госпожа Амбер!)]
 	</p>
 	<p>
-		[amber.speech(Ha-ha-ha! How pathetic!)] Mistress Amber laughs, before commanding, [amber.speech(Stay there, bitch. I'll be back shortly. Oh, and don't even <i>think</i> about standing up, or else the deal's off!)]
+		[amber.speech(Ха-ха-ха! Какая жалкость!)] — смеется госпожа Амбер, а затем приказывает: [amber.speech(Лежи здесь, сучка. Я скоро вернусь. О, и даже не <i>думай</i> вставать, иначе сделка отменяется!)]
 	</p>
 	<p>
-		With that, the fiery-haired succubus steps back and slams the door in your face, leaving you down on the doorstep of Zaranix's home.
+		С этими словами огненноволосая суккуб отступает и хлопает дверью прямо перед твоим носом, оставляя тебя на пороге дома Зараникса.
 		#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-			 Despite the ongoing arcane-storm, it appears as though your display has attracted the attention of a group of passing succubi, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you. Looking to the floor as you do your best to ignore their words, you remind yourself that you're doing all of this in order to finally get hold of Arthur.
+			Несмотря на бушующий аркана-шторм, кажется, твое представление привлекло внимание группы проходящих мимо суккубов, и, когда тебя оставляют на пороге, за спиной раздается какофония хихиканья и насмешливых комментариев. Глядя в пол и изо всех сил стараясь игнорировать их слова, ты напоминаешь себе, что делаешь всё это лишь ради того, чтобы наконец заполучить Артура.
 		#ELSE
-			It appears as though your display has attracted the attention of several passersby, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you. Looking to the floor as you do your best to ignore their words, you remind yourself that you're doing all of this in order to finally get hold of Arthur.
+			Кажется, твое представление привлекло внимание нескольких прохожих, и, когда тебя оставляют на пороге, за спиной раздается какофония хихиканья и насмешливых комментариев. Глядя в пол и изо всех сил стараясь игнорировать их слова, ты напоминаешь себе, что делаешь всё это лишь ради того, чтобы наконец заполучить Артура.
 		#ENDIF
-		 Thankfully, you're not subjected to this humiliation for long, as after just a few moments the door swings open again; the sight of Mistress Amber quickly dispelling your tormentors.
+		К счастью, это унижение длится недолго: спустя всего несколько мгновений дверь снова распахивается, и ты видишь, как госпожа Эмбер быстро расправляется с твоими мучителями.
 	</p>
 	<p>
-		[amber.speech(Heel,)] Amber commands, snapping her fingers and pointing to the floor. Having already come this far, you obey the succubus and crawl forwards to her side. Reaching over the top of you, Amber then grabs the edge of the door and slams it shut behind you.
+		[amber.speech(К ногам,)] — командует Эмбер, щелкая пальцами и указывая на пол. Пройдя уже такой путь, ты повинуешься суккубу и ползешь к её ногам. Перекинув ногу через тебя, Эмбер хватает край двери и с грохотом захлопывает её за твоей спиной.
 	</p>
 	]]>
 	</htmlContent>
@@ -234,169 +235,169 @@
 	
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG_RELUCTANT_LICK"><![CDATA[
 	<p>
-		Not seeing any alternative, you hesitantly
+		Не видя иного выхода, ты нерешительно
 		#IF(pc.isTaur())
-			 lie down on your lower [pc.legRace]'s body
+			 ложишься на нижнюю часть тела [pc.legRace]
 		#ELSE
-			 drop down onto all fours
+			 опускаешься на четвереньки
 		#ENDIF
-		 as the maid commands. Sensing your reluctance, the succubus growls down to you, [amber.speech(Come on, bitch, I haven't got all day!)]
+		 как велит горничная. Почувствовав твое сопротивление, суккуб рычит на тебя: [amber.speech(Живее, сучка, у меня нет на тебя весь день!)]
 	</p>
 	<p>
-		Still feeling uneasy about what it is you're expected to do, you falter a little as you slowly drop your face down towards her feet.
+		Всё еще не понимая до конца, что именно от тебя требуется, ты слегка медлишь, медленно опуская лицо к её ступням.
 	</p>
 	<p>
-		[amber.speech(What are you doing?!)] the succubus angrily shouts, [amber.speech(You're to answer, 'Yes, Mistress Amber!', and immediately obey my commands! Now let's try it again shall we?! 'Come on, bitch, I haven't got all day!')]
+		[amber.speech(Ты что творишь?!)] — гневно выкрикивает суккуб, — [amber.speech(Ты должна отвечать: «Да, госпожа Эмбер!» и немедленно исполнять мои приказы! А теперь давай попробуем еще раз, ладно?! «Живее, сучка, у меня нет на тебя весь день!»)]
 	</p>
 	<p>
-		You let out a humiliated whimper as you do as you're told, and answer Amber in the proper manner, [pc.speech(Yes, Mistress Amber!)]
+		Ты издаешь униженный скулеж, повинуясь приказу, и отвечаешь Эмбер подобающим образом: [pc.speech(Да, госпожа Эмбер!)]
 	</p>
 	<p>
-		An evil, mocking laugh drifts down to you, and while still in full sight of the street, you drop your mouth down to Amber's feet. The black high heels that she's wearing are in keeping with the rest of her maid's uniform, with a little lacy white bow adorning each one. Deciding to choose her right foot, you bring your [pc.lips+] down to the black leather, breathing in the faint, warm scent of sweat as your nose draws near to her white cotton stockings.
+		До тебя доносится злой, насмешливый смех. Все еще находясь на виду у всей улицы, ты склоняешься ртом к ногам Эмбер. Черные туфли на высокой шпильке идеально дополняют ее униформу горничной, и каждую украшает маленький белый кружевной бантик. Решив выбрать ее правую ногу, ты прижимаешь свой [pc.lips+] к черной коже, вдыхая слабый, теплый запах пота, когда твой нос оказывается совсем рядом с ее белыми хлопковыми чулками.
 	</p>
 	<p>
-		[amber.speech(Lick it, bitch,)] Amber snarls, eager to see you humiliate yourself, [amber.speech(or would you rather not see your little friend after all?)]
+		[amber.speech(Лизни, сучка,)] — рычит Эмбер, жаждая увидеть твое унижение, — [amber.speech(или ты все же не хочешь увидеть своего маленького друга?)]
+	</p>
+	<p>	
+		Решив, что лучше сделать это быстро и покончить с этим, ты прижимаешь свой [pc.lips] к носку туфли Эмбер, а затем подаешься вперед, проводя [pc.tongue+] вверх по ее женственной обуви. Горький, терпкий вкус кожи, грязи и крема для обуви переполняет твои вкусовые рецепторы; ты изо всех сил стараешься не закашляться, отстраняясь и вытирая язык о плечо, пытаясь избавиться от этого ужасного привкуса во рту.
 	</p>
 	<p>
-		Deciding that it's best to do this quickly and get it over with, you press your [pc.lips] down against the tip of Amber's shoe, before pushing forwards and dragging your [pc.tongue+] up and over her feminine footwear. The bitter, tangy taste of leather, dirt, and shoe polish overwhelms your taste buds, and you struggle to stop yourself from gagging as you draw back, wiping your tongue on your shoulder as you try to remove the horrible taste from your mouth.
+		[amber.speech(Ха-ха-ха! Какая жалкость!)] — смеется Эмбер, поднимая ногу и используя твою руку, чтобы вытереть слюну с туфли. — [amber.speech(Так и оставайся там, сучка, я скоро вернусь. О, и даже не <i>думай</i> вставать, иначе сделка отменяется!)]
 	</p>
 	<p>
-		[amber.speech(Hahaha! How pathetic!)] Amber laughs, lifting her foot and using your arm to wipe the saliva clean from her shoe. [amber.speech(Stay there, bitch, I'll be back shortly. Oh, and don't even <i>think</i> about standing up, or else the deal's off!)]
-	</p>
-	<p>
-		With that, Amber steps back and slams the door in your face, leaving you down on the doorstep of Zaranix's home.
-		#IF game.getCurrentWeather()==WEATHER_MAGIC_STORM
+		С этими словами Эмбер отступает и хлопает дверью прямо перед твоим носом, оставляя тебя на пороге дома Зараникса.
+	@@H1@@		#IF game.getCurrentWeather()==WEATHER_MAGIC_STORM
 		#THEN
-			 Despite the ongoing arcane-storm, it appears as though your display has attracted the attention of a group of passing succubi, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you. Looking to the floor as you do your best to ignore their words, you remind yourself that you're doing all of this in order to finally get hold of Arthur.
+			 Несмотря на бушующий аркана-шторм, кажется, твой вид привлек внимание группы проходящих мимо суккубов. Оказавшись запертой на пороге, ты слышишь за спиной какофонию хихиканья и насмешливых комментариев. Стараясь не смотреть им в глаза и уставившись в пол, ты напоминаешь себе, что всё это нужно лишь ради того, чтобы наконец заполучить Arthur.
 		#ELSE
-			It appears as though your display has attracted the attention of several passersby, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you. Looking to the floor as you do your best to ignore their words, you remind yourself that you're doing all of this in order to finally get hold of Arthur.
+			Кажется, твое представление привлекло внимание нескольких прохожих, и, когда тебя оставляют на пороге, за спиной раздается какофония хихиканья и насмешливых комментариев. Глядя в пол и изо всех сил стараясь игнорировать их слова, ты напоминаешь себе, что делаешь всё это лишь ради того, чтобы наконец заполучить Артура.
 		#ENDIF
-		 Thankfully, you're not subjected to this humiliation for long, as after just a few moments the door swings open again; the sight of the fiery-haired succubus quickly dispelling your tormentors.
+		 К счастью, унижение длится недолго: спустя всего несколько мгновений дверь снова распахивается, и вид огненноволосой суккуба быстро заставляет твоих мучительниц притихнуть.
 	</p>
 	<p>
-		[amber.speech(Heel,)] Amber commands, snapping her fingers and pointing to the floor.
+		[amber.speech(Ко мне, на колени!)] — командует Amber, щелкая пальцами и указывая на пол.
 	</p>
 	<p>
-		Having already come this far, you obey the succubus and
+		Проделав такой долгий путь, ты повинуешься суккубу и
 		#IF(pc.isTaur())
-			 move
+			 медленно
 		#ELSE
-			 crawl
+			 ползешь
 		#ENDIF
-		 forwards to her side. Reaching over the top of you, Amber then grabs the edge of the door and slams it shut behind you.
+	 к ней на бок. Перекинув руку через тебя, Amber хватает край двери и с грохотом захлопывает её за твоей спиной.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG_EAGER_LICK"><![CDATA[
 	<p>
-		Eager to show your submission to the dominant maid, you immediately
+		Стремясь продемонстрировать свою покорность властной горничной, ты немедленно
 		#IF(pc.isTaur())
-			 lie down on your lower [pc.legRace]'s body
+			 ложишься на нижнюю часть тела [pc.legRace]
 		#ELSE
-			 drop down onto all fours
+			 опускаешься на четвереньки
 		#ENDIF
-		 as she commands. Pleased with your quick response, the succubus encourages you to continue, [amber.speech(What an obedient bitch! Come on now, get started! I haven't got all day!)]
+		 делаешь то, что она велела. Довольная твоей быстротой, суккуб подгоняет тебя: [amber.speech(Какая послушная сучка! Ну же, начинай! У меня не весь день впереди!)]
 	</p>
 	<p>
-		[pc.speech(Yes!)] you eagerly respond, moving your face down towards her feet.
+		[pc.speech(Да!)] — с энтузиазмом отзываешься ты, приближая свое лицо к её ступням.
 	</p>
 	<p>
-		[amber.speech(That's 'Yes, Mistress Amber' to you!)] the succubus angrily shouts. [amber.speech(Don't you <i>dare</i> talk to me as though you're my equal! Let's try it again shall we?!)]
+		[amber.speech(Правильно говорить: «Да, госпожа Амбер!»)] — сердито выкрикивает суккуб. [amber.speech(Не смей, <i>слышишь, не смей</i> говорить со мной так, будто мы равны! Давай попробуем еще раз, идет?!)]
 	</p>
 	<p>
-		You let out a humiliated whimper as you do as you're told, and answer Amber in the proper manner, [pc.speech(Yes, Mistress Amber!)]
+		Ты издаешь униженный скулеж, повинуясь приказу, и отвечаешь Эмбер подобающим образом: [pc.speech(Да, госпожа Эмбер!)]
 	</p>
 	<p>
-		An evil, mocking laugh drifts down to you, and, still in full sight of the street behind you, you drop your mouth down to Amber's feet. The black high heels that she's wearing are in keeping with the rest of her maid's uniform, with a little lacy white bow adorning each one. Deciding to start with her right foot, you bring your [pc.lips+] down to the black leather, letting out a little moan in anticipation as you breathe in the warm, faintly sweaty scent of her white cotton stockings.
+		До тебя доносится злой, насмешливый смех, и, всё еще находясь на виду у улицы позади тебя, ты склоняешься ртом к ногам Амбер. Черные туфли на высоких каблуках, которые на ней надеты, идеально дополняют её униформу горничной, а каждый каблук украшен маленьким белым кружевным бантиком. Решив начать с её правой ноги, ты прижимаешься своим [pc.lips+] к черной коже, издавая предвкушающий стон и вдыхая теплый, слегка потноватый аромат её белых хлопковых чулок.
 	</p>
 	<p>
-		[amber.speech(You're enjoying this, aren't you, bitch?)] Amber mocks, clearly amused by the fact that you're so eager to humiliate yourself.
+		[amber.speech(Тебе это нравится, а, сучка?)] — издевается Амбер, явно забавляясь тем, как жадно ты готова унижаться.
 	</p>
 	<p>
-		[pc.speech(Yes, Mistress Amber!)] you enthusiastically reply, before pressing your [pc.lips] down against the tip of her shoe. Pushing forwards, you eagerly drag your [pc.tongue+] up and over her feminine footwear, relishing the bitter, tangy taste of leather, dirt, and shoe polish that immediately strikes your taste buds. Pulling back, you start once more from the tip of Amber's shoe, licking up and down as you seek to clean every [unit.size] of the delicious black leather.
+		[pc.speech(Да, госпожа Амбер!)] — с энтузиазмом отвечаешь ты, прежде чем прижаться своим [pc.lips] к носку её туфли. Подавшись вперед, ты жадно проводишь своим [pc.tongue+] по её женственной обуви, наслаждаясь горьким, терпким вкусом кожи, грязи и крема для обуви, который тут же бьет по твоим вкусовым рецепторам. Отстранившись, ты снова начинаешь с самого кончика туфли Амбер, вылизывая её вверх и вниз, стремясь очистить каждый [unit.size] этой восхитительной черной кожи.
 	</p>
 	<p>
-		[amber.speech(Hahaha! How pathetic!)] Amber laughs, tilting her foot to one side to present the un-licked areas of her shoe to your eager [pc.tongue]. [amber.speech(That's right, bitch, keep on going!!)]
+		[amber.speech(Ха-ха-ха! Какая жалкость!)] — смеется Амбер, наклоняя стопу в сторону, чтобы подставить невылизанные участки туфли под твой жадный [pc.tongue]. [amber.speech(Вот так, сучка, продолжай!!)]
 	</p>
 	<p>
-		You continue licking and kissing Amber's shoe, the sadistic succubus encouraging you to keep on going until it's spotlessly clean. Pulling her foot back, she then pushes her left shoe towards your face, and you submissively set about licking that one clean as well.
+		Ты продолжаешь вылизывать и целовать туфлю Эмбер; эта садистичная суккуб подгоняет тебя, требуя, чтобы она стала безупречно чистой. Отстранив одну ногу, она подталкивает к твоему лицу свой левый туфель, и ты покорно принимаешься вылизывать и его.
 	</p>
 	<p>
-		After a short while, you've polished both of Amber's heels to a shiny finish, and she lets out a spiteful, derisive laugh, [amber.speech(Hahaha! I can't believe how pathetic you are! Stay there, bitch, I'll be back shortly. Oh, and don't even <i>think</i> about standing up, or else the deal's off!)]
+		Спустя короткое время ты начищаешь оба каблука Эмбер до зеркального блеска, и она издает злобный, насмешливый смешок: [amber.speech(Ха-ха-ха! Поверить не могу, насколько ты жалок! Оставайся там, сучка, скоро вернусь. О, и даже не <i>думай</i> вставать, иначе сделка отменяется!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG_WAITING"><![CDATA[
 	<p>
-		You remain still as Amber steps back and slams the door in your face, leaving you down on the doorstep of Zaranix's home.
+		Ты замираешь, пока Эмбер отступает назад и с грохотом захлопывает дверь прямо перед твоим носом, оставляя тебя на пороге дома Зараникса.
 		#IF game.getCurrentWeather()==WEATHER_MAGIC_STORM
 		#THEN
-			 Despite the ongoing arcane-storm, it appears as though your display has attracted the attention of a group of passing succubi, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you.
+			 Несмотря на бушующий аркана-шторм, кажется, твое представление привлекло внимание группы проходящих мимо суккубов, и когда тебя оставляют на пороге, за твоей спиной раздается какофония хихиканья и издевательских комментариев.
 		#ELSE
-			 It appears as though your display has attracted the attention of several passersby, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you.
+			 Кажется, твое представление привлекло внимание нескольких прохожих, и когда тебя оставляют на пороге, за твоей спиной раздается какофония хихиканья и издевательских комментариев.
 		#ENDIF
-		 You're not subjected to their humiliating words for long, however, as after just a few moments the door swings open again; the sight of the fiery-haired succubus quickly dispelling your tormentors.
+		 Однако унижения не длятся долго: спустя всего несколько мгновений дверь снова распахивается, и вид огненноволосой суккуба быстро разгоняет твоих мучителей.
 	</p>
 	<p>
-		[amber.speech(Heel,)] Amber commands, snapping her fingers and pointing to her side.
+		[amber.speech(Ко мне,)] — командует Эмбер, щелкая пальцами и указывая на свое место рядом.
 	</p>
 	<p>
-		You immediately
+		Ты немедленно
 		#IF(pc.isTaur())
-			 move
+			 медленно
 		#ELSE
-			 crawl
+			 ползешь
 		#ENDIF
-		 forwards into the house, allowing Amber to shut the door behind you.
+		 залетаешь в дом, позволяя Эмбер закрыть за тобой дверь.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KNOCK_ON_DOOR_ASK_FOR_ARTHUR_BEG_EAGER_LICK_SOLES"><![CDATA[
 	<p>
-		You can't help but feel like you haven't done a good enough job, and before Amber can step back, you drop your head to the ground and try to lick at the sides of her shoe's soles. [pc.speech(Please, Mistress Amber! I haven't finished!)]
+		Тебя не покидает чувство, что ты справилась недостаточно хорошо, и прежде чем Эмбер успевает отступить, ты роняешь голову к полу и пытаешься слизывать грязь с подошв её туфель. [pc.speech(Пожалуйста, госпожа Эмбер! Я ещё не закончила!)]
 	</p>
 	<p>
-		The sadistic maid lets out another mocking laugh, and, lifting her foot up, pushes the filthy sole of her heel into your face. [amber.speech(Stupid bitch! You'd better make this quick!)]
+		Садистичная горничная издаёт очередной насмешливый смешок и, подняв ногу, вжимает грязную подошву своего каблука тебе в лицо. [amber.speech(Тупая сучка! Лучше делай это побыстрее!)]
 	</p>
 	<p>
-		With the angry succubus ramming her heel down against your [pc.lips], you once more obediently do as she commands. Trying your best to do the job quickly, you eagerly lick and kiss the undersides of Amber's shoes. The salty, grimy taste of dirt fills your mouth as you submissively clean the heel's soles, moaning in delight as their owner continues to sneer and call you degrading names.
+		Пока разгневанная суккуб с силой вдавливает каблук в твой [pc.lips], ты вновь послушно исполняешь её приказ. Стараясь закончить работу как можно скорее, ты жадно лижешь и целуешь подошвы туфель Эмбер. Солёный, грязный вкус земли наполняет твой рот, пока ты покорно вылизываешь каблуки, стоная от восторга, в то время как их хозяйка продолжает скалиться и осыпать тебя унизительными прозвищами.
 	</p>
 	<p>
-		After you've finished with the first shoe, Amber quickly switches you to the next. Pushing the dirty underside of her other heel into your face, she snarls, [amber.speech(Pathetic bitch! Come on, you can do better than that!)]
+		Как только ты заканчиваешь с первой туфлей, Эмбер тут же переключает тебя на другую. Втискивая грязную подошву своей второй туфли тебе в лицо, она рычит: [amber.speech(Жалкая сучка! Ну же, ты можешь лучше!)]
 	</p>
 	<p>
-		[pc.speech(Yes, Mistress Amber!)] you reply, letting out whimpering little moans as you obediently lick all the dirt from the soles of her shoes.
+		[pc.speech(Да, госпожа Эмбер!)] — отвечаешь ты, издавая тонкие скулящие стоны, пока послушно слизываешь всю грязь с подошв её туфель.
 	</p>
 	<p>
-		Once she's satisfied that you've done enough, Amber lifts her foot a little higher, before forcing the heel into your mouth. After obediently sucking it clean, you lick your lips as Amber pulls back, before forcing you to perform the same treatment on the heel of her other shoe.
+		Удовлетворившись твоей работой, Эмбер приподнимает ногу чуть выше, а затем силой впихивает каблук тебе в рот. Покорно вылизав его дочиста, ты облизываешь губы, когда Эмбер отстраняется, чтобы заставить тебя проделать то же самое с каблуком её другой туфли.
 	</p>
 	<p>
-		Finally, you're done, and as Amber steps back, you feel thoroughly pleased with your work. Both of her shoes are now spotlessly clean, but despite the amount of effort that you put in, the tone of Amber's voice remains as cold as ice as she speaks down to you, [amber.speech(Stay there, bitch!)]
+		Наконец-то всё кончено. Когда Эмбер отступает, ты чувствуешь полное удовлетворение от проделанной работы. Обе её туфли теперь безупречно чистые, но, несмотря на все твои старания, голос Эмбер остаётся холодным как лёд, когда она высокомерно бросает тебе: [amber.speech(Так и стой здесь, сучка!)]
 	</p>
 	<p>
-		With that, she steps back and slams the door in your face, leaving you down on the doorstep of Zaranix's home.
+		С этими словами она отступает и с грохотом захлопывает дверь прямо перед твоим носом, оставляя тебя стоять на пороге дома Зараникса.
 		#IF game.getCurrentWeather()==WEATHER_MAGIC_STORM
 		#THEN
-			 Despite the ongoing arcane-storm, it appears as though your display has attracted the attention of a group of passing succubi, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you.
+			 Несмотря на бушующий аркана-шторм, кажется, твое представление привлекло внимание группы проходящих мимо суккубов, и когда тебя оставляют на пороге, за твоей спиной раздается какофония хихиканья и издевательских комментариев.
 		#ELSE
-			 It appears as though your display has attracted the attention of several passersby, and as you find yourself shut out on the doorstep, a cacophony of giggles and mocking comments bursts out behind you.
+			 Кажется, твое представление привлекло внимание нескольких прохожих, и когда тебя оставляют на пороге, за твоей спиной раздается какофония хихиканья и издевательских комментариев.
 		#ENDIF
-		 You're not subjected to their humiliating words for long, however, as after just a few moments the door swings open again; the sight of the fiery-haired succubus quickly dispelling your tormentors.
+		 Однако унижения не длятся долго: спустя всего несколько мгновений дверь снова распахивается, и вид огненноволосой суккуба быстро разгоняет твоих мучителей.
 	</p>
 	<p>
-		[amber.speech(Heel,)] Amber commands, snapping her fingers and pointing to her side.
+		[amber.speech(Ко мне,)] — командует Эмбер, щелкая пальцами и указывая на свое место рядом.
 	</p>
 	<p>
-		You immediately
+		Ты немедленно
 		#IF(pc.isTaur())
-			 move
+			 медленно
 		#ELSE
-			 crawl
+			 ползешь
 		#ENDIF
-		 forwards into the house, allowing Amber to shut the door behind you.
+		 залетаешь в дом, позволяя Эмбер закрыть за тобой дверь.
 	</p>
 	]]>
 	</htmlContent>
@@ -404,83 +405,83 @@
 	<htmlContent tag="MEETING_ZARANIX"><![CDATA[
 	#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
 		<p>
-			With your persistence having paid off, you [pc.step] bast the growling maid and enter Zaranix's home. Furiously slamming and locking the door behind you, the demonic, ebony-skinned maid strides forwards to stand in front of you, and with the glow of her amber hair seeming to increase in intensity, she reveals, [amber.speech(My name is Amber, but that's <i>Mistress</i> Amber to you, you worm! If I had my way, I'd be putting you in your place right about now!)]
+			Твоё упорство окупилось, и ты [pc.step] обходишь рычащую горничную, входя в дом Зараникса. Яростно захлопнув и заперев за собой дверь, демоническая горничная с иссиня-чёрной кожей решительно шагает к тебе. Сияние её янтарных волос, кажется, становится ещё ярче, когда она заявляет: [amber.speech(Меня зовут Эмбер, но для тебя я — <i>Госпожа</i> Эмбер, червь! Будь моя воля, я бы уже поставила тебя на место!)]
 		</p>
 		<p>
-			Pointing out to Amber that she isn't going to have it her way, you ask her to show you to where Zaranix is. With a look of pure hatred on her face, she turns her back on you and strides off down the corridor, leaving you to follow in her wake.
+			Указав Эмбер на то, что всё будет не совсем так, как ей хочется, ты просишь её проводить тебя к Зараникса. С выражением чистой ненависти на лице она поворачивается к тебе спиной и уходит по коридору, оставляя тебя следовать за ней.
 		</p>
 		<p>
-			The wide corridor which you find yourself travelling down is lined by an immaculate red carpet, and as you follow the amber-haired maid, you glance around at your surroundings. The house appears to be quite similar to Lilaya's; the opulent décor of gold-framed paintings, marble busts, and crystal chandeliers is obviously a trend amongst the wealthy demon elite. Although it's quite clear that Zaranix is very well-off, his house is nevertheless a little less grand than Lilaya's, and you once again find yourself marvelling at how fortunate you are to have an aunt like her.
+			Широкий коридор, по которому ты идешь, устлан безупречным красным ковром. Следуя за янтарноволосой горничной, ты оглядываешься по сторонам. Дом кажется очень похожим на дом Lilaya: роскошный декор из картин в золоченых рамах, мраморных бюстов и хрустальных люстр явно является трендом среди богатой элиты демонов. Хотя очевидно, что Zaranix очень состоятелен, его дом все же чуть менее величественен, чем у Lilaya, и ты снова ловишь себя на мысли, как же тебе повезло иметь такую тетушку.
 		</p>
 		<p>
-			You're suddenly snapped out of your musings by the sound of a high-pitched voice calling out, [katherine.speech(Mistress Amber, Zaranix sent me to make sure that you'd received the expected guest.)]
+			Твои раздумья внезапно прерывает звонкий голос: [katherine.speech(Госпожа Амбер, Zaranix послал меня убедиться, что вы получили ожидаемого гостя.)]
 		</p>
 		<p>
-			Looking across towards the origin of this voice, you see yet another succubus maid; this one with black hair and ivory skin, and wearing a pink maid's uniform. She submissively bows to Amber, but this gesture isn't enough to avoid attracting the ire of the ebony-skinned maid.
+			Обернувшись на звук, ты видишь еще одну суккуба-горничную; на этот раз с черными волосами и алебастровой кожей, в розовой униформе. Она покорно кланяется Амбер, но этого жеста оказывается недостаточно, чтобы избежать гнева темнокожей горничной.
 		</p>
 		<p>
-			[amber.speech(What does it look like I'm doing, Katherine?!)] Amber snaps, [amber.speech(Go and help Kelly clean the kitchen. Once I've finished with this bitch, I'll be coming to inspect you and your sister's work, and if I find so much as a single speck of dust in there, you'll both be spending a night in the kennels. <i>Understood?</i>)]
+			[amber.speech(А как тебе кажется, чем я занимаюсь, Катрин?!)] — огрызается Амбер, [amber.speech(Иди и помогай Келли убирать кухню. Как только я закончу с этой сукой, я приду проверить вашу с сестрой работу, и если найду там хоть одну пылинку, обе проведете ночь в собачьих конурах. <i>Поняла?</i>)]
 		</p>
 		<p>
-			[katherine.speech(Yes, Mistress Amber! Sorry, Mistress Amber!)] the maid exclaims, before hurrying off in what you assume to be the direction of the kitchen.
+			[katherine.speech(Да, госпожа Амбер! Простите, госпожа Амбер!)] — восклицает горничная, прежде чем поспешно удалиться в направлении, которое, как ты полагаешь, ведет к кухне.
 		</p>
 		<p>
-			After that brief encounter, you follow Amber a little further down the corridor, before turning off and being led through a heavy oaken door into a grand drawing room. Several sofas and chairs are tastefully arranged around a low table in the centre of the room, while numerous bookcases and cabinets line the floral-wallpapered walls. Looking around, you don't see any sign of Zaranix, which is also clearly something Amber notices, for she lets out a frustrated sigh and turns to address you.
+			После этой короткой встречи ты следуешь за Амбер чуть дальше по коридору, после чего сворачиваешь и проходишь сквозь тяжелую дубовую дверь в величественную гостиную. Несколько диванов и кресел со вкусом расставлены вокруг низкого столика в центре комнаты, а стены, оклеенные цветочными обоями, уставлены многочисленными книжными шкафами и буфетами. Оглядевшись, ты не замечаешь признаков присутствия Zaranix, что явно бросается в глаза и Амбер — она разочарованно вздыхает и поворачивается к тебе.
 		</p>
 		<p>
-			[amber.speech(It appears as though Zaranix hasn't arrived yet,)] she fumes, before snapping her fingers at the floor beside the central coffee table and demanding, [amber.speech(You shall sit on the floor like the bitch you are while we wait for him.)]
+			[amber.speech(Похоже, Zaranix еще не прибыл,)] — фыркает она, после чего щелкает пальцами, указывая на пол рядом с центральным кофейным столиком, и властно приказывает: [amber.speech(Будешь сидеть на полу, как сучка, пока мы его ждем.)]
 		</p>
 	#ELSE
 		<p>
 			#IF(pc.hasCompanions())
-					Wasting no time, Amber clicks her fingers once more, pointing down at her side as she motions for you to follow her like a dog. Looking across to your companion, she then snarls, [amber.speech(You stay here, bitch. If you cause any trouble, I'll be sure to make you pay.)]
-				</p>
-				<p>
-					Eager to get this whole business with Arthur settled once and for all, you tell [com.name] to do as Amber says, before obediently moving forwards alongside the succubus maid. Giving you one last disgusted glance, Amber sets off into the house, with you pathetically
+					Не теряя времени, Амбер снова щелкает пальцами, указывая на место рядом с собой и жестом приказывая тебе следовать за ней, словно собаке. Переведя взгляд на твою спутницу, она рычит: [amber.speech(А ты оставайся здесь, сучка. Если начнешь капризничать, я заставлю тебя заплатить.)]
+					</p>
+					<p>
+					Стремясь поскорее уладить все дела с Arthur раз и навсегда, ты велено [com.name] делать всё, что говорит Амбер, после чего послушно двигаешься вперед вслед за суккубом-горничной. Бросив на тебя последний брезгливый взгляд, Амбер направляется вглубь дома, а ты жалко
 					#IF(pc.isTaur())
-						 moving
+						 идешь
 					#ELSE
-						 crawling
+						 ползешь
 					#ENDIF
-					 along beside her.
+					 следом за ней.
 			#ELSE
-				Wasting no time, Amber clicks her fingers once more, pointing down at her side as she motions for you to follow her like a dog. Eager to get this whole business with Arthur settled once and for all, you obediently do as you're instructed, and
+				Не теряя времени, Amber снова щелкает пальцами, указывая на себя и жестом приказывая тебе следовать за ней, словно верному псу. Жаждая поскорее уладить все дела с Arthur, ты послушно выполняешь приказ и
 				#IF(pc.isTaur())
-					 walk
+					идешь
 				#ELSE
-					 crawl
+					ползешь
 				#ENDIF
-				 alongside the succubus maid as she sets off into the house.
+				рядом с суккубом-горничной, когда она направляется вглубь дома.
 			#ENDIF
 		</p>
 		<p>
 			#IF(pc.isTaur())
-				The wide corridor which you find yourself travelling down is lined by an immaculate red carpet, and as you submissively walk along beside Amber, you glance around at your surroundings.
+				Широкий коридор, по которому ты движешься, устлан безупречным красным ковром. Покорно следуя за Amber, ты оглядываешься по сторонам.
 			#ELSE
-				Your hands and knees are thankfully cushioned by the immaculate red carpet that lines the wide corridor you find yourself travelling down, and as you shuffle along beside Amber, you glance around at your surroundings.
+				Твои ладони и колени, к счастью, смягчает безупречный красный ковер, покрывающий широкий коридор; пока ты семенишь рядом с Amber, ты оглядываешь окружающую обстановку.
 			#ENDIF
-			 The house appears to be quite similar to Lilaya's; the opulent décor of gold-framed paintings, marble busts, and crystal chandeliers is obviously a trend amongst the wealthy demon elite. Although it's quite clear that Zaranix is very well-off, his house is nevertheless a little less grand than Lilaya's, and you once again find yourself marvelling at how fortunate you are to have an aunt like her.
+			Дом кажется очень похожим на дом Lilaya; роскошный декор из картин в золоченых рамах, мраморных бюстов и хрустальных люстр явно является трендом среди богатой демонической элиты. Хотя очевидно, что Zaranix очень состоятелен, его дом все же чуть менее величественен, чем у Lilaya, и ты снова ловишь себя на мысли, как же тебе повезло иметь такую тетушку.
 		</p>
 		<p>
-			You're suddenly snapped out of your musings by the sound of a high-pitched giggle. Looking across towards the origin of the sound, you see yet another succubus maid; this one with black hair and ivory skin, and wearing a pink maid's uniform. She covers her mouth with one hand to stifle her laughter, but too late to avoid attracting the ire of Amber.
+			Твои раздумья внезапно прерывает звонкий смешок. Посмотрев на источник звука, ты видишь еще одну суккуба-горничную; на этот раз с черными волосами и кожей цвета слоновой кости, в розовой форме горничной. Она прикрывает рот рукой, пытаясь сдержать смех, но делает это слишком поздно, чтобы избежать гнева Amber.
 		</p>
 		<p>
-			[amber.speech(Be silent, Katherine!)] Amber snaps, reprimanding the subordinate maid for her outburst, [amber.speech(If you have time to fritter away by giggling at this pathetic bitch, then you surely have time to go and help Kelly clean the kitchen. Once I've finished with bitch here, I'll be coming to inspect you and your sister's work, and if I find so much as a single speck of dust in there, you'll both be spending a night in the kennels. <i>Understood?</i>)]
+			[amber.speech(Помолчи, Кэтрин!)] — резко обрывает Амбер подчиненную горничную, отчитывая ту за выпад. — [amber.speech(Если у тебя есть время хихикать над этой жалкой сучкой, значит, времени хватит и на то, чтобы помочь Келли убраться на кухне. Как только я закончу с этой дрянью, я приду проверить вашу с сестрой работу, и если найду хоть малейшую пылинку, обе проведете ночь в собачьих конурах. <i>Ясно?</i>)]
 		</p>
 		<p>
-			[katherine.speech(Yes, Mistress Amber! Sorry, Mistress Amber!)] the maid exclaims, before hurrying off in what you assume to be the direction of the kitchen.
+			[katherine.speech(Да, госпожа Амбер! Простите, госпожа Амбер!)] — восклицает горничная, прежде чем поспешно удалиться в направлении, которое, как ты полагаешь, ведет к кухне.
 		</p>
 		<p>
-			After that brief encounter, you follow Amber a little further down the corridor, before turning off and being led through a heavy oaken door into a grand drawing room. Several sofas and chairs are tastefully arranged around a low table in the centre of the room, while numerous bookcases and cabinets line the floral-wallpapered walls. The high ceiling is home to yet another extravagant chandelier, and you suddenly feel very small as you
+			После этой короткой стычки ты следуешь за Амбер чуть дальше по коридору, а затем сворачиваешь и проходишь сквозь тяжелую дубовую дверь в величественную гостиную. Вокруг низкого столика в центре комнаты изысканно расставлены диваны и кресла, а стены, оклеенные цветочными обоями, уставлены многочисленными книжными шкафами и буфетами. Под высоким потолком висит еще одна роскошная люстра, и ты внезапно чувствуешь себя совсем крошечной, когда
 			#IF(pc.isTaur())
-				 walk along beside
+				 идешь рядом с
 			#ELSE
-				 crawl along beside
+				 ползешь рядом с
 			#ENDIF
-			 the succubus maid.
+			 горничной-суккубом.
 		</p>
 		<p>
-			[amber.speech(Sit,)] Amber commands, snapping her fingers at the floor beside the central coffee table.
+			[amber.speech(Садись,)] — командует Амбер, щелкая пальцами, указывая на пол рядом с кофейным столиком.
 		</p>
 	#ENDIF
 	]]>
@@ -489,30 +490,30 @@
 	<htmlContent tag="MEETING_ZARANIX_SIT_FLOOR"><![CDATA[
 	#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
 		<p>
-			Deciding that you'll try to get on the maid's good side, you quickly respond, [pc.speech(Yes, Mistress Amber!)]
+			Решив попытаться задобрить горничную, ты быстро отвечаешь: [pc.speech(Да, госпожа Амбер!)]
 		</p>
 		<p>
-			Quickly [pc.stepping] over to the spot that the succubus is pointing at, you obediently sit on the floor. With a satisfied smirk on her face, Amber walks over to wait beside the door through which you entered, before turning to look at you and sneer, [amber.speech(I knew you'd turn out to be a good, submissive bitch. Now stay.)]
+			Ты быстро [pc.stepping] перебираешься на место, на которое указывает суккуб, и послушно садишься на пол. С довольной ухмылкой на лице Эмбер подходит к двери, через которую ты вошел, чтобы подождать там, а затем поворачивается к тебе и презрительно цедит: [amber.speech(Я знала, что ты окажешься послушной сучкой. А теперь сиди.)]
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(Yes, Mistress Amber!)] you say, before quickly shuffling over to the spot that the succubus is pointing at. Obediently sitting on the floor, you submissively wait for her next command.
+			[pc.speech(Да, госпожа Эмбер!)] — отвечаешь ты и поспешно перебираешься на место, на которое указывает суккуб. Послушно усевшись на пол, ты смиренно ждешь ее следующей команды.
 		</p>
 		<p>
-			[amber.speech(Good bitch,)] Amber says, walking over to the door through which you entered. [amber.speech(Now stay.)]
+			[amber.speech(Хорошая сучка,)] — говорит Эмбер, направляясь к двери, через которую ты вошел. [amber.speech(А теперь сиди.)]
 		</p>
 	#ENDIF
 	<p>
-		Doing as you're told, your remain in place, the two of you waiting in silence as you anticipate the arrival of Zaranix. Afforded a moment in which to take a closer look at Amber, you glance over in her direction. Her luminescent hair and eyes are quite obviously the features from which she gets her name, and combined with her almost pitch-black ebony skin, you find yourself comparing her appearance to that of a volcano; an image all the more appropriate considering her fiery personality.
+		Выполняя приказ, ты остаешься на месте; вы вдвоем молча ждете прибытия Зараникс. Получив мгновение, чтобы рассмотреть Эмбер поближе, ты бросаешь на нее взгляд. Ее светящиеся волосы и глаза — явно те самые черты, которыми она обязана своим именем, и в сочетании с почти иссиня-черной кожей она напоминает тебе вулкан; образ, ставший еще более уместным, учитывая ее огненный нрав.
 	</p>
 	<p>
-		Obviously hearing her master's approach, she suddenly leans forwards and opens the door. As the maid steps aside, the figure of Zaranix strides forwards into the room. Standing at well over [units.size(183)], well dressed in a grey shirt and smart trousers, and with a broad chest and purple-skinned, muscular body, the incubus cuts an impressive figure. He strides over towards the sofa opposite to where you're sitting, and, clearly having missed you at first, he does a double-take as he catches sight of you.
+		Очевидно услышав приближение хозяина, она внезапно подается вперед и распахивает дверь. Пока горничная отступает в сторону, в комнату решительным шагом входит Зараникс. Высокий, значительно выше [units.size(183)], одетый в серую рубашку и элегантные брюки, с широкой грудью и мускулистым телом фиолетового цвета — этот инкуб производит впечатляющее впечатление. Он направляется к дивану напротив тебя и, поначалу тебя не заметив, замирает и переводит взгляд, когда наконец видит тебя.
 	</p>
 	<p>
-		[zaranix.speech(Hah!)] he cries, not at all in a mean-spirited manner, but in one more of mild surprise. [zaranix.speech(I'll wager this is Amber's doing! Well, if you're comfortable down there, no need to move!)]
+		[zaranix.speech(Ха!)] — восклицает он, и в его голосе слышится не злоба, а скорее легкое удивление. [zaranix.speech(Бьюсь об заклад, это проделки Амбер! Ну, если тебе удобно там сидеть, то не вставай!)]
 	</p>
 	<p>
-		The huge incubus bounds over to the sofa and collapses down onto it, before throwing you such a disarmingly friendly smile that you suddenly find yourself a little flustered. You were half-expecting Amber's master to be just as harsh as she is, but, much to your surprise, Zaranix seems to be the complete opposite, and cheerily booms, [zaranix.speech(Anyone who manages to get past my little inferno over there is worth every moment of my time! Now, what can I do for you, [pc.miss]...?)]
+		Огромный инкуб подлетает к дивану и тяжело опускается на него, одарив тебя такой обезоруживающе дружелюбной улыбкой, что ты внезапно начинаешь немного смущаться. Ты подсознательно ожидала, что хозяин Амбер окажется такой же суровой, как она сама, но, к твоему удивлению, Зараникс кажется полной противоположностью. Он весело гремит: [zaranix.speech(Тот, кто сумел пробраться сквозь моё маленькое пекло, стоит каждой минуты моего времени! Ну, чем я могу быть полезен тебе, [pc.miss]...?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -520,195 +521,195 @@
 	<htmlContent tag="MEETING_ZARANIX_SIT_SOFA"><![CDATA[
 	#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
 		<p>
-			Telling the fiery-haired maid that you have no intention of sitting on the floor, you [pc.walk] over to one of the sofas and take a seat.
+		
+		Сказав огненноволосой горничной, что не намерена сидеть на полу, ты [pc.walk] к одному из диванов и садишься.
 		</p>
 		<p>
-			[amber.speech(Why, you <i>insolent bitch</i>,)] Amber shouts, her luminous eyes positively burning with rage as she furiously storms towards you and growls, [amber.speech(how <i>dare</i> yo-)]
+			[amber.speech(Ах ты, <i>дерзкая сучка</i>,)] — кричит Амбер, её светящиеся глаза буквально пылают от ярости, пока она стремительно несется к тебе, рыча: [amber.speech(как ты посмел<i>...</i>)]
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(I'd rather sit down if I'm going to meet Zaranix,)] you say, quickly standing up and disobediently taking a seat on one of the sofas.
+			[pc.speech(Если мне всё равно встречаться с Зараниксом, я лучше присяду,)] — говоришь ты, быстро поднимаясь и непокорно усаживаясь на один из диванов.
 		</p>
 		<p>
-			[amber.speech(Why, you <i>insolent bitch</i>,)] Amber shouts, her luminous eyes positively burning with rage as she furiously storms towards you and growls, [amber.speech(how <i>dare</i> yo-)]
+			[amber.speech(Ах ты, <i>дерзкая сучка</i>,)] — кричит Амбер, её светящиеся глаза буквально пылают от ярости, пока она стремительно несется к тебе, рыча: [amber.speech(как ты посмел<i>...</i>)]
 		</p>
 	#ENDIF
 	<p>
-		She suddenly cuts her sentence off and freezes mid-stride. Her luminescent hair and eyes still burning with the same fury as that of her volcanic personality, Amber throws one last scowl your way before turning around and rushing over to the door through which you entered.
+		Она внезапно обрывает фразу на полуслове и замирает на полушаге. Её люминесцентные волосы и глаза всё ещё горят той же яростью, что и её взрывной нрав; Амбер бросает на тебя последний свирепый взгляд, после чего разворачивается и бросается к двери, через которую ты вошёл.
 	</p>
 	<p>
-		Obviously having heard her master's approach, she leans forwards and opens the door just in time to allow the figure of Zaranix to stride forwards into the room. Standing at well over [units.size(183)], well dressed in a grey shirt and smart trousers, and with a broad chest and purple-skinned, muscular body, the incubus cuts an impressive figure. He strides over towards the sofa opposite to the one upon which you're sitting, and as he approaches, he looks over in your direction.
+		Очевидно, услышав приближение хозяина, она наклоняется вперед и распахивает дверь как раз в тот момент, когда в комнату входит Зараникс. Высокий, значительно выше [units.size(183)], он выглядит внушительно: в серой рубашке и элегантных брюках, с широкой грудью и мускулистым телом с фиолетовой кожей. Инкуб уверенно шагает к дивану напротив того, на котором сидишь ты, и по мере приближения бросает на тебя взгляд.
 	</p>
 	<p>
-		[zaranix.speech(Greetings!)] he cries in a booming voice. [zaranix.speech(I hope Amber hasn't been too much trouble for you!)]
+		[zaranix.speech(Приветствую!)] — громогласно восклицает он. [zaranix.speech(Надеюсь, Амбер не слишком сильно доставила тебе хлопот!)]
 	</p>
 	<p>
-		The huge incubus bounds over towards you, throwing you such a disarmingly friendly smile that you suddenly find yourself a little flustered. You were half-expecting Amber's master to be just as harsh as she is, but, much to your surprise, Zaranix seems to be the complete opposite, and cheerily booms,
+		Огромный инкуб прыжками направляется к тебе, одаривая такой обезоруживающе дружелюбной улыбкой, что ты внезапно начинаешь слегка смущаться. Ты подсознательно ожидала, что хозяин Эмбер будет таким же суровым, как и она, но, к твоему удивлению, Зараникс оказывается полной противоположностью и весело гремит:
 		#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
-			 [zaranix.speech(You've been so persistent with your knocking that I found myself curious to discover what it is that you want! Now, what can Zaranix do for you, [pc.miss]...?)]
+			 [zaranix.speech(Ты так настойчиво стучала, что мне стало любопытно узнать, чего же ты хочешь! Ну, и чем Зараникс может быть тебе полезен, [pc.miss]...?)]
 		#ELSE
-			 [zaranix.speech(Anyone who manages to get past my little inferno over there is worth every moment of my time! Now, what can Zaranix do for you, [pc.miss]...?)]
+			 [zaranix.speech(Тот, кто сумел пробраться сквозь моё маленькое пекло, достоин каждой секунды моего времени! Ну, и чем Зараникс может быть тебе полезен, [pc.miss]...?)]
 		#ENDIF
 	</p>
 	<p>
-		Zaranix steps back and collapses down onto the sofa behind him, eagerly awaiting your response.
+		Зараникс отступает и плюхается на диван позади себя, с нетерпением ожидая твоего ответа.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_ZARANIX_HOLD_BACK"><![CDATA[
 	<p>
-		[pc.speech([pc.Name],)] you reply, seeing no harm in giving Zaranix your first name, even though you're not planning on telling him everything.
+		[pc.speech([pc.Name],)] — отвечаешь ты, не видя ничего плохого в том, чтобы назвать Зараниксу своё имя, хотя и не планируешь выкладывать ему всё.
 	</p>
 	<p>
-		[zaranix.speech(Pleased to make your acquaintance, [pc.name],)] the incubus says, leaning back on the sofa.
+		[zaranix.speech(Рад знакомству, [pc.name],)] — говорит инкуб, откидываясь на спинку дивана.
 	</p>
 	<p>
-		[pc.speech(The reason I'm here is to find Arthur, who I believe is a slave of yours. My aunt really needs to see him again in order to carry out some important research,)] you explain, careful to leave out the part about you coming from another dimension, [pc.speech(so if I could buy him from you, both my aunt and I would be extremely grateful.)]
+		[pc.speech(Я здесь, чтобы найти Arthur, который, как я полагаю, является твоим рабом. Моей тете очень нужно увидеть его снова, чтобы провести важное исследование,)] — объясняешь ты, стараясь не упоминать о том, что прибыла из другого измерения, [pc.speech(так что, если бы я могла выкупить его у тебя, и тетя, и я были бы безмерно благодарны.)]
 	</p>
 	<p>
-		Zaranix smiles, but you can tell from the look in his eyes what his words will be before he even says them. [zaranix.speech(I'm afraid Arthur isn't for sale. He's crucial to my own research you see. In fact, that's the whole reason I had him ensl- *Ahem* I mean, that's the whole reason I bought him in the first place. After all, his expertise in the field of arcane research is unrivalled, and I'm sure that you'll be the first of many that I have to turn down like this. So, I'm afraid my answer is no. I'm sorry to disappoint you and your aunt, but unless there's anything else, Amber will show you out now.)]
+		Зараник улыбается, но по его взгляду ты понимаешь, что он скажет, еще до того, как он откроет рот. [zaranix.speech(Боюсь, Артур не продается. Понимаешь, он крайне важен для моих собственных исследований. Собственно, именно поэтому я его и порабощ... *кхм* — то есть, именно поэтому я его и купил в первую очередь. В конце концов, его опыт в области аркана-исследований не имеет равных, и я уверен, что ты будешь далеко не первой, кому мне придется так отказать. Так что, боюсь, мой ответ — нет. Мне жаль разочаровывать тебя и твою тетю, но если тебе больше ничего не нужно, Эмбер проводит тебя к выходу.)]
 	</p>
 	<p>
-		[pc.speech(Would you at least be willing to talk to my aunt Lilaya about this?)] you ask, desperate for this not to be the end of your quest.
+		[pc.speech(Вы хотя бы согласны поговорить об этом с моей тетей Лилайя?)] — спрашиваешь ты, отчаянно надеясь, что это не конец твоего квеста.
 	</p>
 	<p>
-		Zaranix had started to stand up, but as you ask that question, he immediately sits back down, and you see a flash of concern pass over his handsome face. [zaranix.speech(She's called Lilaya? It's a dangerous game, naming yourself after a Lilin's favourite child like that. You should advise your aunt to change it, before it brings down Lyssieth's wrath.)]
+		Зараник уже начал подниматься, но услышав твой вопрос, он тут же садится обратно, и ты видишь, как по его красивому лицу пробегает тень беспокойства. [zaranix.speech(Ее зовут Лилайя? Это опасная игра — называть себя в честь любимого дитя лилин. Тебе стоит посоветовать тете сменить имя, пока это не навлекало на нее гнев Lyssieth.)]
 	</p>
 	<p>
-		[pc.speech(Erm, that <i>is</i> my aunt,)] you explain, [pc.speech(She used to work with Arthur, and now she needs his help again. I've been trying to track him down for her for quite a while now...)]
+		[pc.speech(Эм, это <i>и есть</i> моя тетя,)] — объясняешь ты, [pc.speech(Раньше она работала с Артуром, и теперь ей снова нужна его помощь. Я уже довольно долго пытаюсь выследить его для нее...)]
 	</p>
 	<p>
-		[zaranix.speech(Hah!)] Zaranix laughs again, but you notice that his cry sounds rather more deflated than before. [zaranix.speech(So your aunt's Lilaya herself, huh? I suppose <i>you're</i> the [pc.race] who's living with her? Yes, I've heard all about you. I may not get out much, but I still keep my ear close to the grapevine.)]
+		[zaranix.speech(Ха!)] Zaranix снова смеется, но ты замечаешь, что его смех звучит куда менее уверенно, чем прежде. [zaranix.speech(Значит, сама Lilaya, твоя тетя, да? Полагаю, <i>ты</i> тот самый [pc.race], кто живет с ней? Да, о тебе уже все слышали. Пусть я и не часто выбираюсь в свет, но уши у меня на макушке.)]
 	</p>
 	<p>
-		With a deep sigh, Zaranix stands up and calls out to Amber, [zaranix.speech(Bring Arthur down here would you, Amber?)]
+		Тяжело вздохнув, Zaranix встает и окликает Amber: [zaranix.speech(Эмбер, спусти Arthur сюда, а?)]
 	</p>
 	<p>
-		The succubus quickly makes her exit, leaving you alone with the imposing incubus as he starts pacing back and forth. [zaranix.speech(Today's your lucky day, I suppose,)] he says, [zaranix.speech(You'll be getting what you're after. I may have wealth and a modicum of power in this city, but having never been recognised by my Lilin mother, I'd be a fool to stand against the wishes of a demon who has. And it's not just any demon! Hah! Lyssieth's precious little half-demon herself!)]
+		Суккуб быстро исчезает, оставляя тебя наедине с внушительным инкубом, который начинает мерить комнату шагами взад-вперед. [zaranix.speech(Полагаю, сегодня твой счастливый день,)] говорит он, [zaranix.speech(Ты получишь то, за чем пришла. У меня может быть богатство и доля власти в этом городе, но раз меня так и не признала моя мать-лилин, было бы глупо идти против воли демона, которую признали. И это не просто какой-то демон! Ха! Сама драгоценная полукровка Lyssieth!)]
 	</p>
 	<p>
-		Clearly a little annoyed by this sudden turn of events, Zaranix can't help but ramble on as you both wait for Arthur to arrive. Thankfully, you don't have to listen to too much of the incubus' disgruntled monologue, as after just a couple of minutes, there's a short knock, before the door swings open.
+		Очевидно, раздосадованный таким внезапным поворотом событий, Zaranix не может удержаться от болтовни, пока вы оба ждете прихода Arthur. К счастью, тебе не приходится долго слушать недовольный монолог инкуба: всего через пару минут раздается короткий стук, и дверь распахивается.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_ZARANIX_EXPLAIN_EVERYTHING"><![CDATA[
 	<p>
-		[pc.speech([pc.fullName],)] you quickly introduce yourself.
+		[pc.speech([pc.fullName],)] ты быстро представляешься.
 	</p>
 	<p>
-		[zaranix.speech(Pleased to make your acquaintance,)] the incubus says, leaning back on the sofa as he awaits your reason for visiting.
+		[zaranix.speech(Рад знакомству,)] произносит инкуб, откидываясь на спинку дивана в ожидании, когда ты объяснишь причину своего визита.
 	</p>
 	<p>
-		[pc.speech(It's a bit of a long story, but I'm here to find Arthur, who I believe is a slave of yours. It might be a little hard to believe, but I'm not actually from this world...)]
+		[pc.speech(История довольно длинная, но я здесь, чтобы найти Arthur. Полагаю, он твой раб. Может, в это и трудно поверить, но на самом деле я не из этого мира...)]
 	</p>
 	<p>
-		You go on to explain everything that's happened to you up until this point, noticing that Zaranix's cheery expression fades away more and more each time you mention anything to do with Lilaya. After a short while you come to the end of your tale, and after telling the incubus how you managed to find out where Arthur was from Scarlett, you bring your story to an end, [pc.speech(And so if I could buy Arthur from you, both my aunt and I would be extremely grateful. Without him, we're not going to be able to find out a way for me to get back to my world.)]
+		Ты продолжаешь рассказывать всё, что с тобой случилось, и замечаешь, как жизнерадостное выражение лица Zaranix всё больше угасает каждый раз, когда ты упоминаешь Lilaya. Спустя некоторое время ты подходишь к финалу своего повествования, и, рассказав инкубу, как ты узнала, где находится Arthur, благодаря Scarlett, ты заканчиваешь свой рассказ: [pc.speech(Так что, если бы я могла выкупить Arthur у тебя, и моя тетя, и я были бы безмерно благодарны. Без него мы не сможем найти способ вернуть меня в мой мир.)]
+	</p><p>
+		[zaranix.speech(Ха!)] Zaranix снова смеётся, но ты замечаешь, что его смех звучит куда менее уверенно, чем в первый раз. [zaranix.speech(Значит, <i>ты</i> тот самый [pc.race], кто поселился с Lilaya? Да, я знаю, кто ты. Пусть я и редко выбираюсь в свет, но всё же держу ухо востро. Твоя история чертовски любопытна, но верить в неё или нет — не так уж важно.)]
 	</p>
 	<p>
-		[zaranix.speech(Hah!)] Zaranix laughs again, but you notice that his cry sounds rather more deflated than the first time you heard it. [zaranix.speech(So <i>you're</i> the [pc.race] who's moved in with Lilaya? Yes, I know who you are. I may not get out much, but I still keep my ear close to the grapevine. Your story is fascinating, but whether I chose to believe it or not makes no difference.)]
+		Тяжело вздохнув, Zaranix встает и окликает Amber: [zaranix.speech(Эмбер, спусти Arthur сюда, а?)]
 	</p>
 	<p>
-		With a deep sigh, Zaranix stands up and calls out to Amber, [zaranix.speech(Bring Arthur down here would you, Amber?)]
+		Суккуб поспешно уходит, оставляя тебя наедине с внушительным инкубом. Он начинает мерить комнату шагами и произносит: [zaranix.speech(Полагаю, сегодня твой счастливый день,)] [zaranix.speech(Ты получишь то, за чем пришла. Возможно, в этом городе у меня есть богатство и толика власти, но, так и не получив признания от своей матери-лилин, было бы глупо идти против воли демона, которая его получила. И это не просто какой-то демон! Ха! Сама драгоценная полукровка Lyssieth!)]
 	</p>
 	<p>
-		The succubus quickly makes her exit, leaving you alone with the imposing incubus as he starts pacing back and forth, [zaranix.speech(Today's your lucky day, I suppose,)] he says. [zaranix.speech(You'll be getting what you're after. I may have wealth and a modicum of power in this city, but having never been recognised by my Lilin mother, I'd be a fool to stand against the wishes of a demon who has. And it's not just any demon! Hah! Lyssieth's precious little half-demon herself!)]
-	</p>
-	<p>
-		Clearly a little annoyed by this sudden turn of events, Zaranix can't help but ramble on as you both wait for Arthur to arrive. Thankfully, you don't have to listen to too much of the incubus' disgruntled monologue, as after just a couple of minutes, there's a short knock, before the door swings open.
+		Очевидно, раздосадованный таким внезапным поворотом событий, Zaranix не может удержаться от болтовни, пока вы оба ждете прихода Arthur. К счастью, тебе не приходится долго слушать недовольный монолог инкуба: всего через пару минут раздается короткий стук, и дверь распахивается.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_ZARANIX_ARTHUR"><![CDATA[
 	<p>
-		[arthur.speech(Alright, alright! Bloody hell, Amber, would it kill for you to learn some manners?)] the distinctive voice of Arthur, very familiar to you after having met him numerous times at Lily's museum, precedes his entrance into the room.
+		[arthur.speech(Ладно, ладно! Черт возьми, Эмбер, неужели так трудно научиться манерам?)] — характерный голос Arthur, до боли знакомый тебе после множества встреч в музее Lily, предваряет его появление в комнате.
 	</p>
 	<p>
-		As you look over to the door, you can't help but let out a gasp. This world's version of Arthur looks <i>exactly</i> the same as the one you used to know. His lanky, pale-skinned body, his bright blue eyes, and his mop of messy, dark-brown hair are all exactly as you remember them. In fact, the only difference between this Arthur and the one from your world appears to be in his choice of clothing. Instead of his usual tweed suit, this Arthur is wearing a lab coat and a pair of safety goggles, revealing the fact that, just like Lilaya, he's not a historian in this world, but an arcane researcher.
+		Когда ты переводишь взгляд на дверь, у тебя невольно перехватывает дыхание. Местный Arthur выглядит <i>точно</i> так же, как тот, которого ты знала раньше. Его худощавое бледное тело, ярко-голубые глаза и копна растрепанных темно-каштановых волос — всё именно такое, каким ты его помнишь. На самом деле, единственное отличие этого Arthur от твоего — это его одежда. Вместо привычного твидового костюма на нем надет лабораторный халат и защитные очки, что выдает в нем — как и в Lilaya — не историка, а исследователя Арканы.
 	</p>
 	<p>
-		[arthur.speech(Well, here I am, summoned at your convenience! And, I might add, not at all to mine! How am I ever going to prove to you that demonic transformation potions are impossible to make if I'm going to be interrupted on a whim?!)] Arthur exclaims, very much in tone that would never suggest he was Zaranix's slave.
+		[arthur.speech(Ну вот, я здесь, призван по твоему первому зову! И, смею добавить, вовсе не по моему желанию! Как мне вообще доказать тебе, что зелья демонической трансформации невозможно создать, если меня будут прерывать на каждом шагу?!)] — восклицает Arthur, причем тоном, который никак не намекает на то, что он раб Zaranix.
 	</p>
 	<p>
-		[zaranix.speech(You won't need to trouble yourself with proving that to me anymore,)] Zaranix replies, [zaranix.speech(If truth be told, you'd already convinced me that it wasn't going to happen after your first day here. It's a moot point now anyway. Apparently, Lilaya wants you back. So go on, you're free. Oh, and you have [pc.name] here to thank for tracking you down.)]
+		[zaranix.speech(Тебе больше не придется утруждать себя доказательствами,)] — отвечает Zaranix, — [zaranix.speech(Если честно, ты убедил меня в этом еще в первый же день здесь. Впрочем, теперь это уже не имеет значения. Похоже, Lilaya хочет, чтобы ты вернулся. Так что иди, ты свободен. О, и скажи [pc.name] спасибо за то, что она тебя выследила.)]
 	</p>
 	<p>
-		[arthur.speech(Bloody hell! And here I was, all ready to resign myself to a life of misery and servitude. But if it's <i>Lilaya</i> who's after me, then maybe the life of a slave doesn't sound so bad after all...)] Arthur looks across at you and smiles. [arthur.speech(If she doesn't blast me to pieces the moment she sees me, then I'll owe you my thanks for my freedom. I suppose I'll see you over at her place; I wouldn't want to overstay my welcome here, so I'd best be on my way! Thank you Zaranix for a delightful stay, and, my dear Amber, do try to allow yourself to smile now and again!)]
+		[arthur.speech(Черт возьми! А я-то уже был готов смириться с жизнью, полной страданий и рабства. Но если за мной пришла <i>Lilaya</i>, то, может, жизнь раба звучит не так уж и плохо...)] — Arthur смотрит на тебя и улыбается. — [arthur.speech(Если она не разнесет меня в щепки в ту же секунду, как увидит, то я буду обязан тебе за свою свободу. Думаю, увидимся у нее; не хочу засиживаться здесь лишнего, так что мне пора! Спасибо, Zaranix, за чудесное пребывание, а ты, дорогая Amber, постарайся хоть иногда улыбаться!)]
 	</p>
 	<p>
-		With that, Arthur turns about and practically skips away through the door, promising the momentarily flustered Amber that he'll show himself out as he makes his exit.
+		С этими словами Arthur разворачивается и практически вприпрыжку уходит через дверь, обещая слегка смущенной Amber, что он сам выйдет, когда будет уходить.
 	</p>
 	<p>
-		[amber.speech(That insolent-)] Amber starts, but is quickly cut off by her master.
+		[amber.speech(Этот наглец...)] — начинает Amber, но её быстро прерывает господин.
 	</p>
 	<p>
-		[zaranix.speech(Let him go, Amber, it's not worth getting caught up in the affairs of Lyssieth's favourite child.)]
+		[zaranix.speech(Отпусти его, Amber, не стоит ввязываться в дела любимчика Lyssieth.)]
 	</p>
 	<p>
-		[amber.speech(Yes, master,)] Amber replies, before turning her attention towards you, [amber.speech(but <i>this one</i> should at least show [pc.her] gratitude.)]
+		[amber.speech(Да, господин,)] — отвечает Amber, после чего переводит взгляд на тебя: [amber.speech(но <i>этот</i> должен хотя бы проявить [pc.her] благодарность.)]
 	</p>
 	<p>
-		[zaranix.speech(Well, I can't really demand anything of someone so close to a demon as important as Lilaya, but I <i>did</i> go through a lot of trouble to get hold of Arthur...)] Zaranix smiles, before sitting back down on the sofa and suggestively spreading his legs.
+		[zaranix.speech(Что ж, я не могу требовать слишком многого от того, кто так близок к столь важному демону, как Lilaya, но мне <i>пришлось</i> изрядно постараться, чтобы заполучить Arthur...)] — Zaranix улыбается, после чего снова садится на диван, многозначительно разводя ноги.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_ZARANIX_ARTHUR_REFUSE_SEX"><![CDATA[
 	<p>
-		You're not really too keen on performing any sexual acts with Zaranix or Amber, and so you quickly stand up, before stepping over towards the door and saying, [pc.speech(Thank you for being so understanding, but I really do need to get going now...)]
+		Ты не особо горишь желанием заниматься сексом с Zaranix или Amber, поэтому быстро встаёшь, направляешься к двери и говоришь: [pc.speech(Спасибо за понимание, но мне действительно пора идти...)]
 	</p>
 	<p>
-		[zaranix.speech(Hrmph... Very well. Amber, please show [pc.name] out,)] Zaranix responds. [zaranix.speech(Perhaps we'll meet again some time.)]
+		[zaranix.speech(Хм... Что ж, пусть будет так. Amber, проводи [pc.name] гостя,)] — отвечает Zaranix. [zaranix.speech(Возможно, мы ещё встретимся.)]
 	</p>
 	#IF(flags.hasFlag(FLAG_amberSatOnFloor) || flags.getSavedLong('amber_door_knock_repeat_count')<4)
 		<p>
 			#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
-				Amber opens the door and steps out of the room, beckoning for you to follow her. As soon as you step back outside into the corridor, she closes the door behind you, before snapping her fingers and pointing to the floor. [amber.speech(You've already demonstrated to me that you're a bitch, so I expect you to act like one. Now heel.)]
+				Amber открывает дверь и выходит из комнаты, жестом приглашая тебя следовать за ней. Как только ты оказываешься в коридоре, она закрывает за тобой дверь, щелкает пальцами и указывает на пол. [amber.speech(Ты уже доказал мне, что ты сучка, так что веди себя соответственно. А теперь — ко мне!)]
 			#ELSE
-				Amber opens the door and steps out of the room, beckoning for you to follow her. As soon as you step back outside into the corridor, she closes the door behind you, before snapping her fingers and pointing to the floor. [amber.speech(You'll leave the same way you entered, bitch. Now heel.)]
+				Эмбер открывает дверь и выходит из комнаты, маня тебя за собой. Как только ты оказываешься в коридоре, она закрывает за тобой дверь, после чего щелкает пальцами и указывает на пол. [amber.speech(Выйдешь так же, как вошла, сучка. А теперь — ко мне!)]
 			#ENDIF
 		</p>
 		<p>
 			#IF(pc.isTaur())
-				Eager to get this business finished without causing a scene, you do as the fiery maid commands, and obediently move forwards to stand next to her. Amber lets out a derisive laugh, before setting off down the hallway. Submissively following her, you soon find yourself back at the front door, which Amber opens before you.
+				Стремясь поскорее закончить с этим делом и не поднимая шума, ты послушно выполняешь приказ огненной горничной и делаешь шаг вперед, вставая рядом с ней. Эмбер издает насмешливый смешок и направляется по коридору. Покорно следуя за ней, ты вскоре оказываешься у входной двери, которую Эмбер открывает перед тобой.
 			#ELSE
-				Eager to get this business finished without causing a scene, you do as the fiery maid commands, and obediently drop down onto all fours next to her. Amber lets out a derisive laugh, before setting off down the hallway. Crawling alongside her, you soon find yourself back at the front door, which Amber opens before you.
+				Стремясь поскорее закончить с этим делом и не поднимая шума, ты послушно выполняешь приказ огненной горничной и опускаешься на четвереньки рядом с ней. Эмбер издает насмешливый смешок и направляется по коридору. Ползя вслед за ней, ты вскоре оказываешься у входной двери, которую Эмбер открывает перед тобой.
 			#ENDIF
 		</p>
 		<p>
-			[amber.speech(Good bitch, you were pretty fun,)] she says, her voice softening for the first time since you met her.
+			[amber.speech(Хорошая сучка, с тобой было довольно весело,)] — говорит она, и её голос впервые с момента вашей встречи звучит мягче.
 			#IF(pc.isTaur())
-				 As you head back out into the street, Amber leans forwards to deliver a surprisingly playful slap to your rear end, and with a little laugh, she slams the door shut behind you.
+				 Когда вы выходите на улицу, Эмбер наклоняется и отвешивает тебе на удивление игривую пощечину по заднице, после чего с легким смешком захлопывает за вами дверь.
 			#ELSE
-				 As you crawl back out into the street, Amber leans down to deliver a surprisingly playful slap to your rear end, and with a little laugh, she slams the door shut behind you.
+				 Когда ты выбираешься на улицу на четвереньках, Эмбер наклоняется и отвешивает тебе на удивление игривую пощечину по заднице, после чего с легким смешком захлопывает за тобой дверь.
 			#ENDIF
 		</p>
 		<p>
 			#IF(pc.isTaur())
-				Ignoring the amused looks of a couple of passersby, you set off on your way, letting out a deep sigh of relief now that you've finally got all this business with Arthur resolved.
+				Игнорируя забавные взгляды пары прохожих, ты отправляешься в путь, издавая глубокий вздох облегчения — ведь все эти дела с Arthur наконец-то улажены.
 			#ELSE
-				Standing up, you ignore the amused looks of several passersby as you brush yourself down and continue on your way, letting out a deep sigh of relief now that you've finally got all this business with Arthur resolved.
+				Вставая, ты игнорируешь ухмыляющиеся взгляды нескольких прохожих, отряхиваешься и продолжаешь путь, издавая глубокий вздох облегчения теперь, когда все эти дела с Arthur наконец-то разрешены.
 			#ENDIF
 		</p>
 	#ELSE
+				<p>
+			Эмбер открывает дверь и выходит из комнаты, маня тебя за собой. Как только ты снова оказываешься в коридоре, она закрывает за тобой дверь и стремительно идет вперед, бросая через плечо: [amber.speech(Живее, сучка. Хочу, чтобы ты поскорее отсюда свалила.)]
+			</p>
 		<p>
-			Amber opens the door and steps out of the room, beckoning for you to follow her. As soon as you step back outside into the corridor, she closes the door behind you, before striding off down the corridor and calling out behind her, [amber.speech(Hurry up, bitch. I want you out of here as quickly as possible.)]
+			Понимая, что она жаждет покончить с этим не меньше твоего, ты следуешь за огненной служанкой по коридору. Спустя мгновение ты снова оказываешься у входной двери, которую Эмбер открывает перед тобой.
 		</p>
 		<p>
-			Finding yourself as eager as she is to get this business finished, you follow the fiery maid down the corridor. After just a moment, you find yourself back at the front door, which Amber opens before you.
-		</p>
-		<p>
-			[amber.speech(If you ever decide that you'd like to be a good bitch, then you know where to find me,)] she says, her voice softening for the first time since you met her.
+			[amber.speech(Если когда-нибудь решишь стать послушной сучкой, то знаешь, где меня искать,)] — говорит она, и её голос впервые с момента знакомства звучит мягче.
 			#IF(pc.isTaur())
-				 As you head back out into the street, Amber leans forwards to deliver a surprisingly playful slap to your rear end, and with one final growl, she slams the door shut behind you.
+				Когда ты выходишь на улицу, Эмбер наклоняется вперед и отвешивает тебе на удивление игривую пощечину по заднице, а затем с последним рыком захлопывает за тобой дверь.
 			#ELSE
-				 As you crawl back out into the street, Amber leans down to deliver a surprisingly playful slap to your rear end, and with one final growl, she slams the door shut behind you.
+				 Когда ты выбираешься на улицу на четвереньках, Эмбер наклоняется, чтобы отвесить тебе на удивление игривую пощечину по заднице, и с последним рыком захлопывает за тобой дверь.
 			#ENDIF
 		</p>
 		<p>
-			Ignoring the amused looks of a couple of passersby, you set off on your way, letting out a deep sigh of relief now that you've finally got all this business with Arthur resolved.
+		Игнорируя забавные взгляды пары прохожих, ты отправляешься в путь, издавая глубокий вздох облегчения — наконец-то все эти дела с Arthur разрешены.
 		</p>
 	#ENDIF
 	]]>
@@ -716,38 +717,39 @@
 	
 	<htmlContent tag="MEETING_ZARANIX_ARTHUR_THANK_ZARANIX"><![CDATA[
 	<p>
-		You weren't really expecting it to be so easy to convince Zaranix to part with Arthur, and, feeling more than a little grateful for how reasonable he's been, you decide that you'd better repay him. Looking down at his crotch and biting your [pc.lip], you let out a pleading little whine, [pc.speech(I'd like to show you my thanks...)]
+		Ты не ожидал(а), что убедить Zaranix расстаться с Arthur будет так просто, и, чувствуя огромную благодарность за его понимание, решаешь, что тебе стоит отплатить ему.
+		 Посмотрев ему в пах и прикусив [pc.lip], ты издаешь жалобный тихий стон: [pc.speech(Я бы хотела отблагодарить тебя...)]
 	</p>
 	<p>
-		Zaranix spreads his legs a little wider, grinning at you as he calls out, [zaranix.speech(Amber, why don't you show your new bitch how to thank me in the proper manner!)]
+	Зараник слегка раздвигает ноги и, ухмыляясь тебе, выкрикивает: [zaranix.speech(Янтарь, почему бы тебе не показать своей новой сучке, как правильно меня благодарить!)]
 	</p>
 	<p>
-		[amber.speech(Yes, master,)] you hear Amber reply from behind you, and before you can say or do anything else, the firm grip of the succubus' hand closes around the back of your neck. With a determined push, Amber forces you down onto your hands and knees, and, not loosening her grip on you for a moment, starts to drag you towards Zaranix.
+	[amber.speech(Да, господин,)] — слышишь ты ответ Амбер за спиной, и прежде чем ты успеваешь что-то сказать или сделать, крепкая рука суккуба смыкается на твоей шее сзади. Решительным толчком Амбер заставляет тебя опуститься на четвереньки и, ни на мгновение не ослабляя хватки, начинает тащить тебя к Заранику.
 	</p>
 	<p>
-		You obediently crawl alongside Amber as she leads you between Zaranix's legs, and with one last push, forces your head down into his crotch. Letting go of you, Amber then reaches down to her master's groin, before unfastening his trousers and shifting aside his black briefs. You can't help but let out a little whine as you suddenly find your face just [unit.sizes] away from Zaranix's huge, purple demon-cock.
+	Ты послушно ползешь вслед за Амбер, пока она ведет тебя между ног Зараника, и последним толчком вжимает твою голову ему в пах. Отпустив тебя, Амбер тянется к паху своего господина, расстегивает его брюки и сдвигает черные трусы. Ты невольно издаешь тихий скулеж, когда внезапно обнаруживаешь, что твое лицо находится всего в [unit.sizes] от огромного фиолетового демонического члена Зараника.
 	</p>
 	<p>
-		[amber.speech(Open wide, bitch,)] Amber commands, stroking her master's ribbed, tentacle-lined cock to attention, before kneeling down behind you and holding you in place. Left with little option but to do as you're told, you prepare to show Zaranix how thankful you are...
+	[amber.speech(Раскрой рот пошире, сучка,)] — командует Амбер, поглаживая ребристый, покрытый щупальцами член своего господина, чтобы привести его в полную готовность, а затем опускается на колени позади тебя, удерживая на месте. Не имея иного выбора, кроме как подчиниться, ты готовишься показать Заранику, как ты ему благодарна...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_ZARANIX_ARTHUR_THANK_ZARANIX_START_SEX"><![CDATA[
 	<p>
-		[amber.speech(So what are you waiting for, bitch?)] Amber snarls in your ear, [amber.speech(Open your fucking mouth!)]
+	[amber.speech(Ну и чего ты ждешь, сучка?)] — рычит Амбер тебе в ухо, [amber.speech(Раскрой свою гребаную пасть!)]
 	</p>
 	<p>
-		Doing as you're told, you open wide, and the moment the fiery-haired succubus sees that you're obeying her command, she pushes your head down, forcing the head of [zaranix.namePos] cock into your mouth. She doesn't stop there, however, and continues exerting a steady pressure on the back of your head, causing the thick purple cock to be rammed deep down your throat. 
+		Повинуясь приказу, ты широко раскрываешь рот, и как только огненноволосая суккуб видит твою покорность, она с силой прижимает твою голову, втискивая головку [zaranix.namePos] члена тебе в рот. Но на этом она не останавливается: она продолжает уверенно давить на затылок, заставляя толстый фиолетовый член вбиваться глубоко тебе в глотку. 
 	</p>
 	<p>
-		[amber.speech(That's right, you worthless bitch,)] the sadistic maid sneers, [amber.speech(take that cock all the way to the base!)]
+		[amber.speech(Вот так, ничтожная сучка),] — усмехается садистичная горничная, — [amber.speech(глотай его до самого основания!)]
 	</p>
 	<p>
-		Regardless of whether or not you wanted to, this is exactly what happens next. With one last rough push, Amber slams your head down into [zaranix.namePos] crotch, and with your throat now completely full of [zaranix.his] thick demonic cock, you find your lips pressing tightly against the incubus's groin. As you let out a gurgled choking noise, Amber finally lets go, allowing you to raise your head until only the [zaranix.cockHead+] of [zaranix.namePos] saliva-coated cock remains in your mouth.
+		Хочешь ты того или нет, но дальше происходит именно это. Последним грубым толчком Amber вжимает твою голову в пах [zaranix.namePos], и теперь, когда твоё горло полностью забито толстым демоническим членом [zaranix.his], твои губы плотно прижимаются к паху инкуба. Когда ты издаешь булькающий хрип, Amber наконец отпускает тебя, позволяя поднять голову так, что во рту остается лишь [zaranix.cockHead+] покрытого слюной [zaranix.namePos] члена.
 	</p>
 	<p>
-		[amber.speech(Not bad, whore,)] Amber snarls, [amber.speech(now let's see you repeat that a few more times...)]
+		[amber.speech(Неплохо, шлюха),] — рычит Amber, — [amber.speech(а теперь посмотрим, сможешь ли ты повторить это еще несколько раз...)]
 	</p>
 	]]>
 	</htmlContent>
@@ -755,154 +757,157 @@
 	
 	<htmlContent tag="MEETING_ZARANIX_ARTHUR_THANK_AMBER"><![CDATA[
 	<p>
-		Although Zaranix was ultimately the one responsible for freeing Arthur, you feel like you owe his maid, Amber, a debt of gratitude for allowing you to meet with him in the first place. Turning your head to look up at the fiery-haired succubus, you thank her, [pc.speech(Thank you for letting me see Zaranix, Mistress Amber!)]
+		Хотя в конечном счете именно Zaranix помог освободить Arthur, ты чувствуешь, что обязан его горничной, Amber, благодарностью за то, что она позволила тебе встретиться с ним. Повернув голову к огненноволосой суккубу, ты благодаришь её: [pc.speech(Спасибо, что позволили мне увидеть Zaranix, госпожа Amber!)]
 	</p>
 	<p>
-		[amber.speech(How <i>dare</i> you!)] Amber shouts, her eyes and hair seeming to glow ever brighter as she gets angrier, [amber.speech(Turn around <i>this instant</i> and thank my master instead!)]
+		[amber.speech(Как <i>ты смеешь</i>!)] — кричит Амбер, и её глаза и волосы, кажется, сияют всё ярче по мере того, как она злится. [amber.speech(А ну<i>немедленно повернись</i> и поблагодари моего господина вместо этого!)]
 	</p>
 	<p>
-		Before you have a chance to react, Zaranix lets out a laugh, [zaranix.speech(Hah! If you want to thank Amber, then that's fine with me, but I doubt she'll be content with just your words!)]
+		Прежде чем ты успеваешь среагировать, Зараникс издает смешок: [zaranix.speech(Ха! Если хочешь поблагодарить Амбер — дело твоё, но сомневаюсь, что она удовлетворится одними лишь словами!)]
 	</p>
 	<p>
-		[amber.speech(Master, may I punish this insolent bitch?)] Amber asks, glaring down at you as she speaks.
+		[amber.speech(Господин, позволите мне наказать эту дерзкую сучку?)] — спрашивает Амбер, свирепо глядя на тебя сверху вниз.
 	</p>
 	<p>
-		[zaranix.speech(See what I mean?)] Zaranix says to you, before leaning back on the sofa and addressing Amber, [zaranix.speech(You have my permission, my little inferno.)]
+		[zaranix.speech(Видишь, о чём я говорил?)] — говорит тебе Зараникс, после чего откидывается на спинку дивана и обращается к Амбер: [zaranix.speech(Получай разрешение, моё маленькое пламя.)]
 	</p>
 	<p>
-		[amber.speech(<i>Present yourself,</i>)] Amber growls, her voice as cold as ice.
+		[amber.speech(<i>Предстань предо мной,</i>)] — рычит Амбер, и её голос становится холодным как лёд.
 	</p>
 	<p>
-		[pc.speech(Yes, Mistress Amber!)] you cry,
+		[pc.speech(Да, госпожа Амбер!)] — восклицаешь ты,
 		#IF(pc.isTaur())
-			 turning around to present your rear end to her before lying down on your feral [pc.legRace]'s body.
+		
+ поворачиваясь задом к ней, прежде чем лечь на тело своей дикой [pc.legRace].
 		#ELSE
-			 dropping down onto all fours and shuffling about to present your rear end to her.
+		
+ опускаясь на четвереньки и ерзая, чтобы подставить ей свою задницу.
 		#ENDIF
-		Glancing back over your shoulder, you see Amber pull off her maid dress, revealing her underwear to consist of a red, cupless bra, a tight black underbust corset, and a red, crotchless thong.
+		
+ Оглянувшись через плечо, ты видишь, как Амбер срывает с себя платье горничной, под которым оказывается красное бра без чашечек, тугой чёрный корсет под грудью и красные стринги с открытой промежностью.
 	</p>
 	<p>
-		As your [pc.eyes] wander down to her groin, you let out a little gasp. Quickly standing to attention as she steps towards you, Amber's huge, ebony, demonic cock is already dripping precum, and as she sees you looking back at her, the succubus growls, [amber.speech(Face-forwards, bitch! And lift that ass! I'll teach you what happens to insolent sluts!)]
+		Когда твой [pc.eyes] спускается к её паху, ты невольно ахаешь. Стоит ей сделать шаг к тебе, как её огромный, иссиня-чёрный демонический член мгновенно встаёт в полный рост, уже сочась предэякулятом. Заметив твой взгляд, суккуб рычит: [amber.speech(Лицом к нам, сучка! И зад задрав! Я научу тебя, что бывает с дерзкими шлюхами!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_THANKING_ZARANIX"><![CDATA[
 	<p>
-		Amber pulls you back from Zaranix's lap, grinning down at you. [amber.speech(Good bitch.)]
+		Эмбер оттаскивает тебя от колен Зараникс, ухмыляясь сверху вниз. [amber.speech(Хорошая сучка.)]
 	</p>
 	<p>
-		[zaranix.speech(Well, I can't say that I'm too happy at having lost Arthur, but that performance certainly makes me feel a little better about it. Amber, please show [pc.name] out now,)] Zaranix says, before looking down at you. [zaranix.speech(Perhaps we'll meet again some time.)]
+		[zaranix.speech(Что ж, не скажу, что я слишком счастлива из-за потери Артура, но это представление определенно заставляет меня чувствовать себя немного лучше. Эмбер, пожалуйста, выпроводи [pc.name],)] — говорит Зараникс, прежде чем посмотреть на тебя сверху вниз. [zaranix.speech(Возможно, мы еще встретимся.)]
 	</p>
 	<p>
 		#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
-			With that, Amber snaps her fingers and points to her side once more. [amber.speech(Now that you've shown me what a submissive bitch you are, you're going to act like one. Now heel.)]
+			С этими словами Эмбер щелкает пальцами и снова указывает на себя. [amber.speech(Раз уж ты показала мне, какая ты покорная сучка, теперь будешь вести себя соответственно. А теперь — ко мне!)]
 		#ELSE
-			With that, Amber snaps her fingers and points to her side once more. [amber.speech(You'll leave the same way you entered, bitch. Now heel.)]
+			С этими словами Эмбер щелкает пальцами и снова указывает на себя. [amber.speech(Уйдешь так же, как и вошла, сучка. А теперь — ко мне!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Eager to get this business finished without causing a scene, you do as the fiery maid commands, and obediently move forwards to stand next to her. Amber lets out a derisive laugh, before setting off down the hallway. Submissively following her, you soon find yourself back at the front door, which Amber opens before you.
+			Стремясь поскорее закончить всё это дело и не устраивать сцену, ты послушно выполняешь приказ огненной девицы и смиренно шагаешь к ней. Эмбер издает насмешливый смешок и направляется по коридору. Покорно следуя за ней, ты вскоре оказываешься у входной двери, которую Эмбер распахивает перед тобой.
 		#ELSE
-			Eager to get this business finished without causing a scene, you do as the fiery maid commands, and obediently drop down onto all fours next to her. Amber lets out a derisive laugh, before setting off down the hallway. Crawling alongside her, you soon find yourself back at the front door, which Amber opens before you.
+			Стремясь поскорее покончить с этим делом и не поднимая лишнего шума, ты послушно выполняешь приказы огненной девицы и встаешь на четвереньки рядом с ней. Амбер издает насмешливый смешок и направляется по коридору. Ползя следом за ней, ты вскоре оказываешься у входной двери, которую Амбер открывает перед тобой.
 		#ENDIF
 	</p>
 	<p>
-		[amber.speech(Good bitch, you were pretty fun,)] she says, her voice softening for the first time since you met her.
+		[amber.speech(Хорошая сучка, с тобой было довольно весело,)] — говорит она, и её голос впервые с момента вашего знакомства звучит мягче.
 		#IF(pc.isTaur())
-			 As you head back out into the street, Amber leans forwards to deliver a surprisingly playful slap to your rear end, and with a little laugh, she slams the door shut behind you.
+			 Когда вы выходите на улицу, Амбер наклоняется вперед и отвешивает тебе на удивление игривую пощечину по заднице, после чего с коротким смешком захлопывает за тобой дверь.
 		#ELSE
-			 As you crawl back out into the street, Amber leans down to deliver a surprisingly playful slap to your rear end, and with a little laugh, she slams the door shut behind you.
+			 Пока ты выбираешься на улицу на четвереньках, Амбер наклоняется и отвешивает тебе на удивление игривую пощечину по заднице, после чего с коротким смешком захлопывает за тобой дверь.
 		#ENDIF
 	</p>
 	<p>
-		Standing up, you ignore the amused looks of several passersby as you brush yourself down and continue on your way, letting out a deep sigh of relief now that you've finally got all this business with Arthur resolved.
+		Поднявшись на ноги, ты игнорируешь забавные взгляды прохожих, отряхиваешься и продолжаешь свой путь, издавая глубокий вздох облегчения — наконец-то все эти дела с Arthur разрешены.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_THANKING_AMBER"><![CDATA[
 	<p>
-		Amber pulls back from you, letting out a little laugh, as she delivers one last slap to your exposed ass. [amber.speech(Good bitch, you were a pretty good fuck!)]
+		Амбер отстраняется от тебя с легким смешком, отвешивая напоследок звонкую пощечину по твоей обнаженной заднице. [amber.speech(Хорошая сучка, ты была отличной трахой!)]
 	</p>
 	<p>
-		[zaranix.speech(Good job, Amber,)] Zaranix calls out from his place on the sofa. [zaranix.speech(Now why don't you show our guest out, then perhaps I'll take you for a ride.)]
+		[zaranix.speech(Отличная работа, Амбер,)] — окликает тебя Zaranix, не вставая с дивана. [zaranix.speech(А теперь проводи нашу гостью, и, возможно, я устрою тебе скачку.)]
 	</p>
 	<p>
 		#IF(flags.getSavedLong('amber_door_knock_repeat_count')>=4)
-			[amber.speech(~Mmm~ Yes, Master!)] Amber replies, standing up and snapping her fingers to her side once again. [amber.speech(Now that you've shown me what a submissive bitch you are, you're going to act like one. Now heel.)]
+			[amber.speech(~Ммм~ Да, Хозяин!)] — отвечает Amber, вставая и снова щелкая пальцами по бокам. [amber.speech(Раз уж ты показала мне, какая ты покорная сучка, теперь ты будешь вести себя соответственно. А теперь — ко мне!)]
 		#ELSE
-			[amber.speech(~Mmm~ Yes, Master!)] Amber replies, standing up and snapping her fingers to her side once again. [amber.speech(You'll leave the same way you entered, bitch. Now heel.)]
+			[amber.speech(~Ммм~ Да, Хозяин!)] — отвечает Amber, вставая и снова щелкая пальцами по бокам. [amber.speech(Ты уйдешь так же, как и вошла, сучка. А теперь — ко мне!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Eager to get this business finished without causing a scene, you do as the fiery maid commands, and obediently move forwards to stand next to her. Amber lets out a derisive laugh, before setting off down the hallway. Submissively following her, you soon find yourself back at the front door, which Amber opens before you.
+			Стремясь поскорее закончить всё это дело и не устраивать сцену, ты послушно выполняешь приказ огненной девицы и смиренно шагаешь к ней. Эмбер издает насмешливый смешок и направляется по коридору. Покорно следуя за ней, ты вскоре оказываешься у входной двери, которую Эмбер распахивает перед тобой.
 		#ELSE
-			Eager to get this business finished without causing a scene, you do as the fiery maid commands, and obediently drop down onto all fours next to her. Amber lets out a derisive laugh, before setting off down the hallway. Crawling alongside her, you soon find yourself back at the front door, which Amber opens before you.
+			Стремясь поскорее покончить с этим делом и не поднимая лишнего шума, ты послушно выполняешь приказы огненной девицы и встаешь на четвереньки рядом с ней. Амбер издает насмешливый смешок и направляется по коридору. Ползя следом за ней, ты вскоре оказываешься у входной двери, которую Амбер открывает перед тобой.
 		#ENDIF
 	</p>
 	<p>
-		[amber.speech(Good bitch, you were pretty fun,)] she says, her voice softening for the first time since you met her.
+		[amber.speech(Хорошая сучка, с тобой было довольно весело,)] — говорит она, и её голос впервые с момента вашего знакомства звучит мягче.
 		#IF(pc.isTaur())
-			 As you head back out into the street, Amber leans forwards to deliver a surprisingly playful slap to your rear end, and with a little laugh, she slams the door shut behind you.
+			 Когда вы выходите на улицу, Амбер наклоняется вперед и отвешивает тебе на удивление игривую пощечину по заднице, после чего с коротким смешком захлопывает за тобой дверь.
 		#ELSE
-			 As you crawl back out into the street, Amber leans down to deliver a surprisingly playful slap to your rear end, and with a little laugh, she slams the door shut behind you.
+			 Пока ты выбираешься на улицу на четвереньках, Амбер наклоняется и отвешивает тебе на удивление игривую пощечину по заднице, после чего с коротким смешком захлопывает за тобой дверь.
 		#ENDIF
 	</p>
 	<p>
-		Standing up, you ignore the amused looks of several passersby as you brush yourself down and continue on your way, letting out a deep sigh of relief now that you've finally got all this business with Arthur resolved.
+		Поднявшись на ноги, ты игнорируешь забавные взгляды прохожих, отряхиваешься и продолжаешь свой путь, издавая глубокий вздох облегчения — наконец-то все эти дела с Arthur разрешены.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_KICK_DOWN_DOOR"><![CDATA[
 	<p>
-		Glancing around to make sure there aren't any Enforcers nearby, you walk up to the front door of Zaranix's home.
-		 Paying no heed to the fact that it looks to be made of sturdy, solid oak, you lift your [pc.leg] up, and deliver a powerful kick just to one side of the handle.
-		 A loud, splintering crash accompanies your blow, and the door swings wide open before you.
+		Оглядевшись по сторонам, чтобы убедиться, что поблизости нет никаких Enforcer, ты подходишь к входной двери дома Zaranix.
+		Не обращая внимания на то, что дверь кажется сделанной из крепкого, цельного дуба, ты поднимаешь свой [pc.leg] и наносишь мощный удар чуть в сторону от ручки.
+		 Громкий треск ломающегося дерева сопровождает твой удар, и дверь распахивается перед тобой.
+		</p>
+	<p>
+		Быстро шагнув внутрь, ты закрываешь за собой дверь, стараясь не привлекать внимания прохожих.
+		 Ты оказываешься в большом вестибюле, похожем на тот, что в доме Lilaya, но чуть меньшего размера.
+		 С высокого потолка свисает хрустальная люстра, а чуть впереди тебя широкая лестница ведет на верхний этаж.
+		 По обе стороны от нее тянутся два коридора, ведущие в другие части дома, и именно из одного из них доносятся крики.
+		</p>
+	<p>
+		[katherine.speech(Госпожа Amber! У двери был сильный шум!)]
 	</p>
 	<p>
-		Quickly stepping inside, you shut the door behind you, keen to avoid the attention of any passersby.
-		 You find yourself in a large entrance hall, similar to the one in Lilaya's home, but on a slightly smaller scale.
-		 A crystal chandelier hangs from the high ceiling, and a little way in front of you, a wide staircase leads to the upper floor.
-		 To either side of that, a pair of corridors lead off to other parts of the house, and it's from one of those that you hear shouting.
-	</p>
-	<p>
-		[katherine.speech(Mistress Amber! There was a loud noise at the door!)]
-	</p>
-	<p>
-		[amber.speech(Be quiet, Katherine! Get on with your work, I'll deal with this!)]
+		[amber.speech(Тише, Katherine! Занимайся своей работой, я сама во всем разберусь!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_KICK_DOWN_DOOR_MAIDS_MET"><![CDATA[
 	<p>
-		Before you have the chance to take any action, the fiery-haired succubus maid who answered the door to you enters the hall.
-		 As her glowing-amber eyes fixate themselves onto yours, 'Mistress Amber' screams,
-		 [amber.speech(You picked the wrong house to try and rob, bitch!)]
+		Прежде чем ты успеваешь предпринять хоть какое-то действие, в зал влетает огненно-рыжая суккуб-горничная, которая открыла тебе дверь.
+		 Когда её светящиеся янтарные глаза впиваются в твои, «Миледи Амбер» визжит:
+		 [amber.speech(Ты выбрала не тот дом для ограбления, сучка!)]
 	</p>
 	<p>
-		Not even giving you a chance to offer an explanation, the maid launches herself at you in a blind fury!
+		Не давая тебе ни единого шанса оправдаться, горничная бросается на тебя в слепой ярости!
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_KICK_DOWN_DOOR_MAIDS_NOT_MET"><![CDATA[
 	<p>
-		Before you have the chance to take any action, one of the most striking succubi you've ever seen, who you assume to be 'Mistress Amber', enters the hall.
-		 Her gorgeous face and perfectly proportioned body are covered in pitch-black ebony skin, but it's not her voluptuous figure which your eyes are drawn to.
-		 Styled into loose waves, and giving off a luminescent, yellowy-orange glow, it's her extraordinary amber hair, which reaches down to just above her ass, that you find yourself gazing at.
-		 As her eyes fixate themselves onto yours, you see that her irises are the exact same glowing-amber shade as her hair, giving this demon a truly remarkable appearance.
+		Прежде чем ты успеваешь предпринять хоть какое-то действие, в зал входит одна из самых эффектных суккубов, которых ты когда-либо видел — судя по всему, это «Миледи Амбер».
+		 Её великолепное лицо и идеально пропорциональное тело покрыты иссиня-черной кожей, но взгляд твой приковывает вовсе не её пышная фигура.
+		 Твои глаза завороженно следят за её необычайными янтарными волосами, уложенными мягкими волнами, которые излучают люминесцентное желто-оранжевое сияние и спускаются почти до самых ягодиц.
+		 Когда её взгляд встречается с твоим, ты замечаешь, что её радужка имеет точно такой же светящийся янтарный оттенок, как и волосы, что делает облик этого демона поистине незабываемым.
 	</p>
 	<p>
-		Despite the fact that her maid's dress quite clearly identifies her as a servant in this household, her attitude is not at all one of subservience, and as she sees you standing inside her master's home, she screams,
-		 [amber.speech(You picked the wrong house to try and rob, bitch!)]
+		Несмотря на то, что её платье горничной явно указывает на статус служанки в этом доме, в её поведении нет ни капли смирения. Завидев тебя в доме своего господина, она кричит:
+		 [amber.speech(Ты выбрала не тот дом для ограбления, сучка!)]
 	</p>
 	<p>
-		Not even giving you a chance to offer an explanation, the maid launches herself at you in a blind fury!
+		Не давая тебе ни единого шанса оправдаться, горничная бросается на тебя в слепой ярости!
 	</p>
 	]]>
 	</htmlContent>
@@ -913,139 +918,139 @@
 	
 	<htmlContent tag="ENTRANCE"><![CDATA[
 	<p>
-		The entrance hall to Zaranix's home, while nothing compared to that of Lilaya's, is nonetheless very impressive.
-		 A huge crystal chandelier casts its bright, arcane-powered light over the entire area, and fine paintings in golden frames hang on each of the surrounding walls.
+		Вестибюль дома Зараникса, хоть он и не идет ни в какое сравнение с домом Lilaya, все же впечатляет. 
+		 Огромная хрустальная люстра заливает все пространство ярким светом, подпитываемым Арканой, а на стенах висят изысканные картины в золоченых рамах.
 	</p>
 	<p>
-		The main door to Zaranix's home is made from thick, sturdy oak, and there's nothing stopping you from opening it and taking your leave.
-		 <b>It looks like the door will be locked behind you if you do this, so be prepared to gain entry all over again if you choose to leave now!</b>
+		Главная дверь дома Зараникса сделана из толстого, прочного дуба, и ничто не мешает тебе открыть её и уйти.
+		 <b>Похоже, если ты выйдешь, дверь за тобой закроется на замок, так что будь готов войти снова, если решишь уйти прямо сейчас!</b>
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_AMBER_PRESENT"><![CDATA[
 	<p><i>
-		Amber is slumped down against one wall, and you see her hand furiously pumping away between her legs.
-		 Her intense lust doesn't look to be in any danger of dying down, and you wonder if you should have a little more fun with her while you have the chance...
+		Эмбер привалилась к стене, и ты видишь, как её рука неистово работает между её ног.
+		 Её бурная Похоть, кажется, вовсе не собирается утихать, и ты задумываешься, не стоит ли тебе немного развлечься с ней, пока есть возможность...
 	</i></p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_AMBER_SEX"><![CDATA[
 	<p>
-		It doesn't look like any of the other maids of the household will interrupt you, so you decide to take this opportunity to have a little fun with Amber.
-		 Stepping over to where she's sunk down against the wall, you reach forwards and take hold of her arm, before pulling her to her feet.
-		 Denied the freedom to get herself off, Amber pitifully looks up into your eyes, and instead of fury, you see them filled with burning lust.
+		Похоже, другие горничные не помешают, поэтому ты решаешь воспользоваться случаем и немного развлечься с Эмбер.
+		 Шагнув к ней, ты берешь её за руку и помогаешь подняться с пола.
+		 Лишившись возможности довести себя до оргазма, Эмбер жалобно смотрит тебе в глаза, но вместо ярости ты видишь в них лишь пылающую Похоть.
 	</p>
 	<p>
-		She pushes herself off from the wall, wrapping her arms around your back and desperately pressing her [amber.lips+] against yours.
-		 You reciprocate the gesture, and after spending a few moments of sliding your tongues into one another's mouths, you pull back, grinning...
+		Она отталкивается от стены, обвивает руками твою спину и отчаянно прижимается своей [amber.lips+] к твоей.
+		 Ты отвечаешь ей тем же, и после нескольких мгновений, когда ваши языки переплетаются в глубоком поцелуе, ты отстраняешься с ухмылкой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENTRANCE_AMBER_SEX_SUBMIT"><![CDATA[
 	<p>
-		Despite her current state, you find yourself incredibly turned on by Amber's dominant, fiery personality.
-		 Not willing to take the dominant role, but with a deep desire to have sex with the now-very-horny succubus, you walk up to where she's collapsed against the wall, and sigh,
-		 [pc.speech(Mistress Amber... Erm... If you're feeling a little horny, perhaps you could use me? I mean, I-)]
+		Несмотря на её нынешнее состояние, ты чувствуешь невероятное возбуждение от доминантного, пылкого характера Эмбер.
+		 Не желая брать на себя ведущую роль, но испытывая глубокое желание заняться сексом с этой охваченной похотью суккубом, ты подходишь к ней — она так и осела у стены — и вздыхаешь:
+		 [pc.speech(Госпожа Эмбер... Эм... Если вы чувствуете небольшое возбуждение, может, вы могли бы использовать меня? То есть, я...)]
 	</p>
 	<p>
-		Despite the fact that you're a stranger in her master's house, Amber looks up at you with an intense, burning passion in her eyes.
-		 Sliding her hand out from under her dress, she jumps to her feet, interrupting your sentence as she grabs your head and pulls you into a desperate kiss.
+		Несмотря на то, что ты здесь чужак в доме её хозяина, Эмбер смотрит на тебя с неистовой, обжигающей страстью в глазах.
+		 Высунув руку из-под платья, она вскакивает на ноги, прерывая твою фразу: она хватает тебя за голову и притягивает к себе для отчаянного поцелуя.
 	</p>
 	<p>
-		You reciprocate the gesture, but only spend a few moments sliding your tongues into one another's mouths before Amber pulls back, moaning,
-		 [amber.speech(Good bitch! Fuck... I'm so fucking horny! I <i>need</i> you!)]
+		Ты отвечаешь на жест, но вы едва успеваете переплести языки, как Эмбер отстраняется с приглушенным стоном:
+		 [amber.speech(Хорошая сучка! Блядь... как же меня штырит! Ты мне <i>нужна</i>!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STAIRS"><![CDATA[
 	<p>
-		Before you, a wide, red-carpeted staircase leads up to the first floor of Zaranix's house.
-		 On either side, a corridor leads to other parts of the house, and behind you, the entrance hall offers an opportunity to make your exit.
+		Перед тобой — широкая лестница с красной ковровой дорожкой, ведущая на второй этаж дома Зараникса.
+		 По обе стороны от неё коридоры ведут в другие части дома, а позади тебя находится вестибюль, через который можно выйти наружу.
 	</p>
 	<p>
-		Much like the rest of the house, the walls surrounding you are home to several fine paintings.
-		 Well-crafted cabinets, cushioned chairs, and little wooden tables are strategically dotted about here and there, but not so much so as to make the area seem cluttered.
+		Как и во всем остальном доме, стены вокруг украшены изысканными картинами.
+		 Мастерски сделанные шкафы, мягкие кресла и маленькие деревянные столики расставлены здесь и там, но так, чтобы не создавать ощущения захламленности.
 	</p>
 	<p>
-		You could use the stairs here to gain access to the first floor, which is where you're sure to find Zaranix.
+		Ты можешь подняться по лестнице на второй этаж — ты почти уверен, что именно там сейчас находится Зараникс.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STAIRS_KATHERINE_NOT_SUBDUED"><![CDATA[
 	<p>
-		[style.italicsBad(You can hear the faint sound of humming coming from down the corridor to your right, and you realise that one of Zaranix's maids must be busy cleaning down there!
-		 If you wanted to avoid confrontation, it would be best not to head over there.)]
+		[style.italicsBad(Из коридора справа доносится тихое напевание, и ты понимаешь: одна из служанок Зараникса наверняка занята уборкой!
+		 Если хочешь избежать лишних глаз, лучше туда не соваться.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		You find yourself comparing the corridors of Zaranix's home to those of Lilaya's. While they're just as well-furnished as those of your aunt's house, being home to numerous fine paintings, cushioned chairs, and well-crafted cabinets, they're not quite as wide nor high. Where once you might have been deeply impressed by the extravagant luxury of this incubus's mansion, you now find yourself thinking that it's not quite as grand as the one you live in.
+		Ты невольно сравниваешь коридоры дома Зараникса с коридорами у Lilaya. И хотя здесь, как и в доме твоей тетушки, всё обставлено с толком — повсюду изысканные картины, мягкие кресла и искусно сделанные шкафы, — коридоры здесь не такие широкие и высокие. Если раньше тебя могла впечатлить экстравагантная роскошь особняка этого инкуба, то теперь ты ловишь себя на мысли, что его величие не идет ни в какое сравнение с твоим родным домом.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_KATHERINE_NOT_SUBDUED"><![CDATA[
 	<p>
-		[style.italicsBad(You can hear the faint sound of humming coming from further down the corridor, and you realise that one of Zaranix's maids must be busy cleaning down there!
-		 If you wanted to avoid confrontation, it would be best not to head over there.)]
+		[style.italicsBad(Где-то в глубине коридора слышится тихое напевание, и ты понимаешь: одна из служанок Зараникса наверняка занята уборкой!
+		 Если хочешь избежать лишних глаз, лучше туда не соваться.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GARDEN_ENTRY"><![CDATA[
 	<p>
-		A gravel path snakes through the entirety of Zaranix's garden, but, finding that the stones crunch loudly underfoot, you opt to walk on the small grass verge instead so as to remain as quiet as possible.
-		 To either side of the path, numerous flowerbeds and small glass structures are home to an incredible variety of plant-life, much of which is quite clearly alien to your old world.
+		Гравийная дорожка змеится через весь сад Зараникса, но, заметив, что камни громко хрустят под ногами, ты решаешь идти по узкой полоске травы, чтобы оставаться как можно тише.
+		 По обе стороны дорожки раскинулись многочисленные клумбы и небольшие стеклянные оранжереи, в которых растет невероятное разнообразие растений, многие из которых явно чужеродны твоему прежнему миру.
 	</p>
 	<p>
-		Although small enough not to pose a threat, you see several, tentacle-like varieties squirming and twisting about with a mind of their own; the brightly coloured flower in the centre of each one looking unmistakably like a vagina.
-		 Inspecting yet more of the flora as you move along, you notice that some of these tentacled plants have penis-like endings,
-			 and you spend a moment reflecting on the fact that even the plant-life in this world is sexual in nature.
-		 From the variety of herbs, plants, and flowers, and the evidence of careful cultivation techniques, it appears as though this garden is less for show, and more for the practical purpose of gathering arcane ingredients.
-	</p>
+		Хотя они достаточно малы, чтобы не представлять угрозы, ты видишь множество похожих на щупальца растений, которые извиваются и корчатся сами по себе; при этом ярко окрашенный цветок в центре каждого из них безошибочно напоминает вагину.
+		 Изучая флору по мере своего продвижения, ты замечаешь, что у некоторых из этих щупальцевидных растений на концах есть наросты, похожие на пенисы,
+			 и на мгновение задумываешься о том, что даже растительный мир в этом мире носит сексуальный характер.
+		 Судя по разнообразию трав, растений и цветов, а также по следам тщательного ухода, этот сад служит не столько для красоты, сколько для практического сбора ингредиентов Арканы.
+		</p>
 	<p>
-		Looking over towards the side of Zaranix's house, you see a couple of glass doors connecting a pair of rooms to the garden in which you find yourself standing.
-		 You could either make your way over to them and use them to gain entry to the house, or climb back over the fence and return to the street behind you.
-	</p>
+		Посмотрев в сторону дома Зараникс, ты видишь пару стеклянных дверей, соединяющих две комнаты с садом, в котором ты стоишь.
+		 Ты можешь либо направиться к ним, чтобы войти в дом, либо перелезть обратно через забор и вернуться на улицу позади тебя.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GARDEN"><![CDATA[
 	<p>
-		A gravel path snakes through the entirety of Zaranix's garden, but, finding that the stones crunch loudly underfoot, you opt to walk on the small grass verge instead so as to remain as quiet as possible.
-		 To either side of the path, numerous flowerbeds and small glass structures are home to an incredible variety of plant-life, much of which is quite clearly alien to your old world.
+		Гравийная дорожка змеится через весь сад Зараникса, но, заметив, что камни громко хрустят под ногами, ты решаешь идти по узкой полоске травы, чтобы оставаться как можно тише.
+		 По обе стороны дорожки раскинулись многочисленные клумбы и небольшие стеклянные оранжереи, в которых растет невероятное разнообразие растений, многие из которых явно чужеродны твоему прежнему миру.
 	</p>
 	<p>
-		Although small enough not to pose a threat, you see several, tentacle-like varieties squirming and twisting about with a mind of their own; the brightly coloured flower in the centre of each one looking unmistakably like a vagina.
-		 Inspecting yet more of the flora as you move along, you notice that some of these tentacled plants have penis-like endings,
-			 and you spend a moment reflecting on the fact that even the plant-life in this world is sexual in nature.
-		 From the variety of herbs, plants, and flowers, and the evidence of careful cultivation techniques, it appears as though this garden is less for show, and more for the practical purpose of gathering arcane ingredients.
-	</p>
+		Хотя они достаточно малы, чтобы не представлять угрозы, ты видишь множество похожих на щупальца растений, которые извиваются и корчатся сами по себе; при этом ярко окрашенный цветок в центре каждого из них безошибочно напоминает вагину.
+		 Изучая флору по мере своего продвижения, ты замечаешь, что у некоторых из этих щупальцевидных растений на концах есть наросты, похожие на пенисы,
+			 и на мгновение задумываешься о том, что даже растительный мир в этом мире носит сексуальный характер.
+		 Судя по разнообразию трав, растений и цветов, а также по следам тщательного ухода, этот сад служит не столько для красоты, сколько для практического сбора ингредиентов Арканы.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GARDEN_ROOM"><![CDATA[
 	<p>
-		Connected to the garden by means of a pair of sliding glass doors, the room you find yourself standing in appears to be some sort of utility room.
-		 A row of cupboards and cabinets line one of the walls, while a long counter-top runs the length of the opposite one.
+		Комната, в которой ты стоишь, кажется каким-то хозяйственным помещением, соединенным с садом парой раздвижных стеклянных дверей.
+		 Одна из стен уставлена рядом шкафов и тумб, а вдоль противоположной тянется длинная столешница.
 	</p>
 	<p>
-		A wooden door, opposite to the glass ones that provide access to the garden, connects this room to the rest of the house, and you wonder if you should proceed into the main building itself, or go back out into the garden.
+		Деревянная дверь, расположенная напротив стеклянных дверей, ведущих в сад, соединяет эту комнату с остальной частью дома. Ты раздумываешь, стоит ли тебе войти в основное здание или лучше вернуться обратно в сад.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GARDEN_ROOM_KATHERINE_NOT_SUBDUED"><![CDATA[
 	<p>
-		[style.italicsBad(You can hear the faint sound of humming coming from the other side of the wooden door, and you realise that one of Zaranix's maids must be out there cleaning the corridor!
-		 If you wanted to avoid confrontation, it would be best to head back out into the garden and look for another way in.)]
+		[style.italicsBad(Из-за деревянной двери доносится тихое напевание, и ты понимаешь, что там, в коридоре, наверняка находится одна из служанок Зараникс, занимаясь уборкой!
+		 Если ты хочешь избежать столкновения, лучше будет вернуться в сад и поискать другой путь внутрь.)]
 	</p>
 	
 	]]>
@@ -1053,232 +1058,232 @@
 	
 	<htmlContent tag="CORRIDOR_MAID_KATHERINE_SUBDUED"><![CDATA[
 	<p>
-		The ivory-skinned succubus, Katherine, is slumped down against the wall.
-		 Her pink maid's dress is hiked up around her waist, and she lets out moan after lewd moan as with one hand she fingers herself, while the other strokes up and down the length of her throbbing cock.
+		Суккуб с кожей цвета слоновой кости, Кэтрин, прислонилась спиной к стене.
+		 Её розовое платье горничной задрано до самой талии; она издает стон за стоном, одной рукой лаская себя внизу, а другой — вовсю поглаживая свой пульсирующий член.
 	</p>
 	<p>
-		It doesn't look like there are any other maids around to interrupt, so you could go ahead and have a little fun with her...
+		Похоже, поблизости нет других служанок, которые могли бы прервать вас, так что ты вполне можешь подойти и немного развлечься с ней...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_MAID_KATHERINE_ENCOUNTER_FOUGHT_AMBER"><![CDATA[
 	<p>
-		As you walk down the corridor, an ivory-skinned succubus, wearing a light pink maid's uniform, suddenly stands up from behind a cabinet. She doesn't notice you at first, and continues to swipe her little feather-duster over the top of the wooden furniture, happily humming away as she works.
+		Когда ты идешь по коридору, из-за шкафа внезапно поднимается суккуб с кожей цвета слоновой кости, одетая в светло-розовую форму горничной. Сначала она тебя не замечает и продолжает весело напевать под нос, вовсю орудуя маленькой метелкой из перьев по деревянной мебели.
 	</p>
 	<p>
-		Before you have a chance to take any action, however, she realises that there's someone behind her, and mistaking you for her colleague she starts to say, [katherine.speech(Oh, Amber, what was that at the front door? It sounded like someone was breaking-)]
+	Однако прежде чем ты успеваешь что-либо предпринять, она замечает, что за спиной кто-то есть, и, приняв тебя за свою коллегу, начинает восклицать: [katherine.speech(О, Эмбер, что это было у входной двери? Будто кто-то выламывается!)]
 	</p>
 	<p>
-		The maid's eyes narrow down as she sees that you're an unexpected stranger, and she correctly surmises, [katherine.speech(You're the one who's responsible for that crashing noise! I don't know what you've done to Amber, but I'll stop you!)]
+	Глаза горничной сужаются, когда она понимает, что перед ней нежданный незнакомец, и она делает верное предположение: [katherine.speech(Так это ты устроил этот грохот! Не знаю, что ты сделал с Эмбер, но я тебя остановлю!)]
 	</p>
 	<p>
-		Without giving you any opportunity to talk yourself out of this conflict, the maid suddenly launches herself at you, seemingly very eager to show you what she does to intruders in her master's house.
+	Не давая тебе ни единого шанса оправдаться, горничная внезапно бросается на тебя, явно желая продемонстрировать, что она делает с незваными гостями в доме своего хозяина.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_MAID_KATHERINE_ENCOUNTER"><![CDATA[
 	<p>
-		As you walk down the corridor, an ivory-skinned succubus, wearing a light pink maid's uniform, suddenly stands up from behind a cabinet.
-		 She doesn't notice you at first, and continues to swipe her little feather-duster over the top of the wooden furniture, happily humming away as she works.
+		Когда ты идешь по коридору, из-за шкафа внезапно встает суккуб со светлой кожей, одетая в нежно-розовую форму горничной.
+		Сначала она тебя не замечает и продолжает водить маленькой метелкой по деревянной мебели, довольно напевая себе под нос во время работы.
 	</p>
 	<p>
-		Before you have a chance to take any action, however, she looks up and catches sight of you.
-		 [katherine.speech(Ah! Sorry, [pc.maam]! I didn't know we were expecting guests! My name is Katherine, at your service!)]
+	Однако прежде чем ты успеваешь что-либо предпринять, она поднимает взгляд и замечает тебя.
+		 [katherine.speech(А! Простите, [pc.maam]! Я и не знала, что у нас гости! Меня зовут Кэтрин, к вашим услугам!)]
 	</p>
 	<p>
-		The maid curtsies as she says this, but as she stands up, the initial surprise of finding you wandering the corridors of her master's home wears off, and her eyes narrow down as she looks you up and down.
-		 [katherine.speech(Wait a moment... I would have been told if guests were expected...)]
+	Произнося это, горничная делает реверанс, но когда она выпрямляется, первоначальное удивление от твоего появления в коридорах дома хозяина проходит, и она прищуривается, оглядывая тебя с ног до головы.
+		 [katherine.speech(Погодите-ка... Меня бы предупредили, если бы ждали гостей...)]
 	</p>
 	<p>
-		The realisation that you're an intruder suddenly dawns on her, and she gasps,
-		 [katherine.speech(Eek! That must mean you're a thief! Thief! Thief!)]
+	До неё внезапно доходит, что ты — незваный гость, и она ахает:
+		 [katherine.speech(Ой! Значит, ты вор! Вор! Вор!)]
 	</p>
 	<p>
-		Although she cries out in alarm, her shouts seem to be more of an accusation than a call for help, and she suddenly launches herself at you, all too eager to show you what she does to uninvited guests in her master's house.
+		Хотя она и вскрикивает от тревоги, её крики больше похожи на обвинение, чем на призыв о помощи, и она внезапно бросается на тебя, слишком уж стремясь показать, что она делает с незваными гостями в доме своего господина.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_MAID_KATHERINE_ENCOUNTER_REPEAT"><![CDATA[
 	<p>
-		As you walk down the corridor, an ivory-skinned succubus, wearing a light pink maid's uniform, suddenly stands up from behind a cabinet.
-		 You instantly recognise her as Katherine, and, once again, she doesn't notice you at first, and continues to swipe her little feather-duster over the top of the wooden furniture, happily humming away as she works.
-	</p>
+		Пока ты идешь по коридору, из-за шкафа внезапно поднимается суккуб со светлой кожей, одетая в светло-розовую форму горничной.
+		Ты мгновенно узнаешь в ней Кэтрин. Она, как и прежде, поначалу тебя не замечает и продолжает увлеченно водить маленькой метелкой по деревянной мебели, довольно напевая себе под нос.
+		</p>
 	<p>
-		Before you have a chance to take any action, she looks up and catches sight of you.
-		 [katherine.speech(It's you again! How do you keep on getting in here?! You'll pay for this, you thief! Thief! Thief!)]
-	</p>
+		Прежде чем ты успеваешь что-то предпринять, она поднимает взгляд и замечает тебя.
+		 [katherine.speech(Опять ты! Как тебе только удается сюда пробираться?! Ты за это заплатишь, ворюга! Вор! Вор!)]
+		</p>
 	<p>
-		Although she cries out in alarm, her shouts seem to be more of an accusation than a call for help, and she suddenly launches herself at you, all too eager to show you what she does to uninvited guests in her master's house.
+		Хотя она и вскрикивает от тревоги, её крики больше похожи на обвинение, чем на призыв о помощи, и она внезапно бросается на тебя, слишком уж стремясь показать, что она делает с незваными гостями в доме своего господина.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_MAID_KATHERINE_SEX"><![CDATA[
 	<p>
-		It doesn't look like any of the other maids of the household will interrupt you, so you decide to take this opportunity to have a little fun with Katherine.
-		 Stepping over to where she's sunk down against the wall, you reach forwards and take hold of her arm, before pulling her to her feet.
-		 Denied the freedom to get herself off, the horny maid looks up into your eyes, and you see them filled with a desperate, burning lust.
-	</p>
+		Похоже, другие горничные в доме тебя не прервут, так что ты решаешь воспользоваться случаем и немного развлечься с Кэтрин.
+		Подойдя к ней, когда та прислонилась к стене, ты протягиваешь руку, берешь ее за предплечье и рывком поднимаешь на ноги.
+		Лишенная возможности спокойно закончить свои дела, похотливая горничная заглядывает тебе в глаза, и ты видишь в них отчаянную, пылающую Похоть.
+		</p>
 	<p>
-		She pushes herself off from the wall, wrapping her arms around your back and desperately pressing her [katherine.lips+] against yours.
-		 You reciprocate the gesture, and after spending a few moments of sliding your tongues into one another's mouths, you pull back, grinning...
-	</p>
+		Она отталкивается от стены, обвивает руками твою спину и отчаянно прижимается своей [katherine.lips+] к твоей.
+		Ты отвечаешь ей тем же, и после нескольких мгновений, проведенных в переплетении языков, ты отстраняешься с довольной ухмылкой...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CORRIDOR_MAID_KATHERINE_SEX_SUBMIT"><![CDATA[
 	<p>
-		Not willing to take the dominant role, but with a deep desire to have sex with the now-very-horny succubus, you walk up to where Katherine's collapsed against the wall, and sigh,
-		 [pc.speech(Katherine... Erm... If you're feeling a little horny, perhaps you could use me? I mean, I-)]
+		Не стремясь брать на себя доминирующую роль, но испытывая глубокое желание заняться сексом с этой охваченной похотью суккубом, ты подходишь к места, где привалилась к стене, и вздыхаешь:
+		 [pc.speech(Катрин... Эм... Если ты чувствуешь небольшое возбуждение, может, воспользуешься мной? То есть, я-)]
 	</p>
 	<p>
-		Despite the fact that you're a stranger in her master's house, Katherine looks up at you with an intense, burning passion in her eyes.
-		 Sliding her hand out from under her dress, she jumps to her feet, interrupting your sentence as she grabs your head and pulls you into a desperate kiss.
+		Несмотря на то, что ты чужак в доме её госпожи, Катрин смотрит на тебя с неистовой, пылающей страстью в глазах.
+		 Высунув руку из-под платья, она вскакивает на ноги, прерывая твою фразу: она хватает тебя за голову и притягивает к себе для отчаянного поцелуя.
 	</p>
 	<p>
-		You reciprocate the gesture, but only spend a few moments sliding your tongues into one another's mouths before Katherine pulls back, moaning,
-		 [katherine.speech(Oh yes! Fuck... I'm so fucking horny! I <i>need</i> you!)]
+		Ты отвечаешь на жест, но вы лишь несколько мгновений ласкаете друг друга языками, прежде чем Катрин отстраняется с стоном:
+		 [katherine.speech(О да! Блядь... Как же меня штырит! Ты мне <i>нужен</i>!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM"><![CDATA[
 	<p>
-		The door to this room is locked, and there's no sound of anyone within. Knowing that it's sure to just be a dull and uninteresting dead-end, you decide against trying to force the door open, and turn around to continue on your exploration of Zaranix's home.
+		Дверь в эту комнату заперта, и внутри не слышно ни звука. Понимая, что это наверняка лишь скучный и бесперспективный тупик, ты решаешь не пытаться выломать дверь и разворачиваешься, чтобы продолжить изучение дома Зараникс.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_EMPTY"><![CDATA[
 	<p>
-		You find yourself standing in Zaranix's grand drawing room. Several sofas and chairs are tastefully arranged around a low table in the centre of the room, while numerous bookcases and cabinets line the floral-wallpapered walls. The high ceiling is home to an exceptionally extravagant chandelier, while the floor underfoot is covered in thick, cream-coloured carpet.
+		Ты оказываешься в величественной гостиной Зараникс. Несколько диванов и кресел со вкусом расставлены вокруг низкого столика в центре комнаты, а стены, оклеенные цветочными обоями, уставлены многочисленными книжными шкафами и буфетами. На высоком потолке висит исключительно роскошная люстра, а пол под ногами устлан густым ковром кремового цвета.
 	</p>
 	<p>
-		There doesn't appear to be anyone here right now, so you should probably continue on your way...
+		Кажется, сейчас здесь никого нет, так что тебе, пожалуй, стоит идти дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_SUBDUED"><![CDATA[
 	<p>
-		You find yourself standing in Zaranix's grand drawing room.
-		 Several sofas and chairs are tastefully arranged around a low table in the centre of the room, while numerous bookcases and cabinets line the floral-wallpapered walls.
-		 The high ceiling is home to an exceptionally extravagant chandelier, while the floor underfoot is covered in thick, cream-coloured carpet.
-	</p>
+		Ты стоишь в величественной гостиной Зараникса.
+		Несколько диванов и кресел со вкусом расставлены вокруг низкого столика в центре комнаты, а стены, оклеенные цветочными обоями, уставлены многочисленными книжными шкафами и буфетами.
+		Под высоким потолком висит исключительно роскошная люстра, а пол под ногами устлан густым ковром кремового цвета.
+		</p>
 	<p>
 		<i>
-		Amber is slumped down against one wall, and you see her hand furiously pumping away between her legs.
-		 Her intense lust doesn't look to be in any danger of dying down, and you wonder if you should have a little more fun with her while you have the chance...
+		Эмбер прислонилась спиной к стене, и ты видишь, как её рука неистово работает между её ног.
+		Её бурная похоть, кажется, и не думает утихать, и ты гадаешь, не стоит ли тебе немного развлечься с ней, пока есть такая возможность...
 		</i>
-	</p>
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_PRESENT_ALREADY_MET"><![CDATA[
 	<p>
-		Carefully opening a heavy oaken door, you find yourself stepping into a grand drawing room.
-		 Several sofas and chairs are tastefully arranged around a low table in the centre of the room, while numerous bookcases and cabinets line the floral-wallpapered walls.
-		 The high ceiling is home to an exceptionally extravagant chandelier, while the floor underfoot is covered in thick, cream-coloured carpet.
-	</p>
+		Осторожно открыв тяжелую дубовую дверь, ты входишь в величественную гостиную.
+		Несколько диванов и кресел со вкусом расставлены вокруг низкого столика в центре комнаты, а стены, оклеенные цветочными обоями, уставлены многочисленными книжными шкафами и буфетами.
+		Под высоким потолком висит исключительно роскошная люстра, а пол под ногами устлан густым ковром кремового цвета.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_PRESENT_ALREADY_MET_KNOWS_NAME"><![CDATA[
 	<p>
-		The features of this room aren't quite the focus of your attention, however, as near the right-hand wall you see the back of Amber, the succubus maid who you've fought here before.
-		 She appears to be busily dusting and polishing several ornamental objects in a display cabinet, and hasn't noticed your entry.
-		 It might be wise to carefully continue on your way, but if you really wanted to, you could approach the maid and get her notice you...
-	</p>
+		Однако внимание твоё сосредоточено не на интерьере: у правой стены ты видишь спину Эмбер, суккуба-горничной, с которой ты уже сражался здесь раньше.
+		Она увлеченно протирает пыль и полирует украшения в витрине, не замечая твоего появления.
+		Возможно, разумнее будет осторожно продолжить свой путь, но если очень захочется, ты можешь подойти к горничной и привлечь её внимание...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_PRESENT_ALREADY_MET_DOES_NOT_KNOW_NAME"><![CDATA[
 	<p>
-		The features of this room aren't quite the focus of your attention, however, as near the right-hand wall you see the back of the same amber-haired succubus who answered the front door.
-		 She appears to be busily dusting and polishing several ornamental objects in a display cabinet, and hasn't noticed your entry.
-		 It might be wise to carefully continue on your way, but if you really wanted to, you could approach the maid and get her notice you...
+		Однако черты этой комнаты не так важны для твоего внимания, ведь у правой стены ты видишь спину той самой янтарноволосой суккубши, что открыла тебе дверь.
+		Она увлеченно протирает пыль и полирует украшения в витрине, явно не заметив твоего появления.
+		Было бы разумно осторожно продолжить свой путь, но если очень захочется, ты можешь подойти к горничной и заставить её обратить на тебя внимание...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_PRESENT"><![CDATA[
 	<p>
-		Carefully opening a heavy oaken door, you find yourself stepping into a grand drawing room.
-		 Several sofas and chairs are tastefully arranged around a low table in the centre of the room, while numerous bookcases and cabinets line the floral-wallpapered walls.
-		 The high ceiling is home to an exceptionally extravagant chandelier, while the floor underfoot is covered in thick, cream-coloured carpet.
+		Осторожно открыв тяжелую дубовую дверь, ты входишь в величественную гостиную.
+		Несколько диванов и кресел со вкусом расставлены вокруг низкого столика в центре комнаты, а стены, оклеенные цветочными обоями, уставлены многочисленными книжными шкафами и буфетами.
+		Под высоким потолком висит исключительно роскошная люстра, а пол под ногами устлан густым ковром кремового цвета.
+		</p>
+	<p>
+		Однако черты этой комнаты не так важны для твоего внимания, ведь у правой стены ты видишь спину суккуба-горничной.
+		 Её иссиня-черная кожа идеально сочетается с черным цветом её униформы, а на голове у неё — самые потрясающие волосы, что ты когда-либо видел.
+		Янтарные локоны, спадающие мягкими волнами чуть выше её задницы, излучают яркое сияние.
 	</p>
 	<p>
-		The features of this room aren't quite the focus of your attention, however, as near the right-hand wall you see the back of a succubus maid.
-		 Her dark ebony skin matches the black of her maid's uniform, and atop her head, she has the most amazing hair you've ever seen.
-		 Reaching down to just above her ass, and styled into loose waves, the maid's amber-coloured hair gives off a bright glow.
-	</p>
-	<p>
-		She appears to be busily dusting and polishing several ornamental objects in a display cabinet, and hasn't noticed your entry.
-		 It might be wise to carefully continue on your way, but if you really wanted to, you could approach the maid and get her notice you...
+		Она увлеченно протирает пыль и полирует украшения в витрине, явно не заметив твоего появления.
+		 Было бы разумно осторожно продолжить свой путь, но если очень захочется, ты можешь подойти к горничной и заставить её обратить на тебя внимание...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_SEX"><![CDATA[
 	<p>
-		It doesn't look like any of the other maids of the household will interrupt you, so you decide to take this opportunity to have a little fun with Amber.
-		 Stepping over to where she's sunk down against the wall, you reach forwards and take hold of her arm, before pulling her to her feet.
-		 Denied the freedom to get herself off, Amber pitifully looks up into your eyes, and instead of fury, you see them filled with burning lust.
+		Похоже, другие горничные не помешают, поэтому ты решаешь воспользоваться случаем и немного развлечься с Эмбер.
+		 Шагнув к ней, ты берешь её за руку и помогаешь подняться с пола.
+		 Лишившись возможности довести себя до оргазма, Эмбер жалобно смотрит тебе в глаза, но вместо ярости ты видишь в них лишь пылающую Похоть.
 	</p>
 	<p>
-		She pushes herself off from the wall, wrapping her arms around your back and desperately pressing her [amber.lips+] against yours.
-		 You reciprocate the gesture, and after spending a few moments of sliding your tongues into one another's mouths, you pull back, grinning...
+		Она отталкивается от стены, обвивает руками твою спину и отчаянно прижимается своей [amber.lips+] к твоей.
+		 Ты отвечаешь ей тем же, и после нескольких мгновений, когда ваши языки переплетаются в глубоком поцелуе, ты отстраняешься с ухмылкой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_SEX_SUBMIT"><![CDATA[
 	<p>
-		Despite her current state, you find yourself incredibly turned on by Amber's dominant, fiery personality.
-		 Not willing to take the dominant role, but with a deep desire to have sex with the now-very-horny succubus, you walk up to where she's collapsed against the wall, and sigh,
-		 [pc.speech(Mistress Amber... Erm... If you're feeling a little horny, perhaps you could use me? I mean, I-)]
+		Несмотря на её нынешнее состояние, ты чувствуешь невероятное возбуждение от доминантного, пылкого характера Эмбер.
+		 Не желая брать на себя ведущую роль, но испытывая глубокое желание заняться сексом с этой охваченной похотью суккубом, ты подходишь к ней — она так и осела у стены — и вздыхаешь:
+		 [pc.speech(Госпожа Эмбер... Эм... Если вы чувствуете небольшое возбуждение, может, вы могли бы использовать меня? То есть, я...)]
 	</p>
 	<p>
-		Despite the fact that you're a stranger in her master's house, Amber looks up at you with an intense, burning passion in her eyes.
-		 Sliding her hand out from under her dress, she jumps to her feet, interrupting your sentence as she grabs your head and pulls you into a desperate kiss.
+		Несмотря на то, что ты здесь чужак в доме её хозяина, Эмбер смотрит на тебя с неистовой, обжигающей страстью в глазах.
+		 Высунув руку из-под платья, она вскакивает на ноги, прерывая твою фразу: она хватает тебя за голову и притягивает к себе для отчаянного поцелуя.
 	</p>
 	<p>
-		You reciprocate the gesture, but only spend a few moments sliding your tongues into one another's mouths before Amber pulls back, moaning,
-		 [amber.speech(Good bitch! Fuck... I'm so fucking horny! I <i>need</i> you!)]
+		Ты отвечаешь на жест, но вы едва успеваете переплести языки, как Эмбер отстраняется с приглушенным стоном:
+		 [amber.speech(Хорошая сучка! Блядь... как же меня штырит! Ты мне <i>нужна</i>!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_GREETING"><![CDATA[
 	<p>
-		Deciding that you'd like to say hello to the succubus, you begin to walk towards her.
-		 As you draw near, she turns her head to one side, obviously having heard your approach as she calls out,
-		 [amber.speech(If I have to tell you or your sister to announce your presence with 'Excuse me, Mistress Amber' <i>one</i> more time, I swear I'll-)]
+		Решив, что хочешь поздороваться с суккубом, ты направляешься к ней.
+		 Когда ты подходишь ближе, она поворачивает голову набок, явно услышав твои шаги, и восклицает:
+		 [amber.speech(Если мне придется еще раз сказать тебе или твоей сестре, чтобы вы объявляли о своем присутствии фразой «Прошу прощения, госпожа Амбер» <i>one</i>, клянусь, я...)]
 	</p>
 	<p>
-		Having mistaken you for one of the other household maids, Amber turns around to face you.
-		 As she sees who you really are, her sentence is suddenly cut off, and an angry scowl covers her face.
-		 Her eyes, glowing amber just like her hair, lock onto yours, and she shouts, 
+		Приняв тебя за одну из других служанок, Эмбер оборачивается к тебе.
+		Но как только она понимает, кто ты на самом деле, её фраза обрывается, а лицо искажается от гнева.
+		 Её глаза, сияющие янтарём, точь-в-точь как её волосы, впиваются в твои, и она выкрикивает: 
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_GREETING_ALREADY_FOUGHT"><![CDATA[
-		[amber.speech(You again?! How the fuck did you get in here?! You're in big trouble now!)]
+		[amber.speech(Ты опять?! Какого хера ты здесь забыл?! Ну, теперь тебе точно несдобровать!)]
 	</p>
 	<p>
-		Not even giving you a chance to answer her questions, Amber launches herself at you in a blind fury!
+		Не давая тебе и шанса ответить, Эмбер в слепой ярости бросается на тебя!
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LOUNGE_AMBER_GREETING_NEVER_FOUGHT"><![CDATA[
-		[amber.speech(Who the fuck are you?! How the fuck did you get in here?! Whoever you are, you're in big trouble now!)]
+		[amber.speech(Да кто ты, блять, такой?! Какого хера ты сюда пролез?! Кем бы ты ни был, тебе теперь пиздец!)]
 	</p>
 	<p>
-		Not even giving you a chance to answer her questions, Amber launches herself at you in a blind fury!
+		Не давая тебе и шанса ответить, Эмбер в слепой ярости бросается на тебя!
 	</p>
 	]]>
 	</htmlContent>

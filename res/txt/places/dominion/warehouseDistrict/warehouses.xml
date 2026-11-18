@@ -5,31 +5,30 @@
 	
 	<htmlContent tag="WAREHOUSE_DISTRICT"><![CDATA[
 	<p>
-		While there are countless industrial buildings scattered all throughout Dominion, there's no higher concentration of them than in the place you currently find yourself travelling through. The official name for this area is proudly displayed in several places as being simply 'Dominion's Warehouse District', which, while being somewhat generic, very accurately describes it.
+		Хотя по всему Dominion разбросано бесчисленное множество промышленных зданий, нигде их нет так много, как в месте, через которое ты сейчас пробираешься. Официальное название этого района гордо красуется на нескольких указателях — просто «Складской район Dominion». И хотя звучит это довольно обыденно, название чертовски точно описывает суть этого места.
 	</p>
 	<p>
-		Most of the buildings you see around you are constructed of either red brick or corrugated iron, and almost without exception they have numerous centaur-drawn carts parked outside of them.
+		Большинство зданий вокруг тебя сложены либо из красного кирпича, либо из гофрированного железа, и почти у каждого под окнами припарковано множество телег, запряженных кентаврами.
 		#IF(game.isExtendedWorkTime())
 			#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-				 Thanks to its strategic position right next to Dominion's canal and near to one of the main boulevards, this area is typically heaving with industrial traffic, but due to the ongoing arcane storm, all activity has come to a halt, leaving the entire area completely deserted.
+				 Благодаря своему стратегическому расположению прямо у канала Dominion и рядом с одним из главных бульваров, этот район обычно кишит промышленным транспортом, но из-за затянувшейся бури Арканы вся деятельность замерла, оставив округу совершенно безлюдной.
 			#ELSE
-				 Thanks to its strategic position right next to Dominion's canal and near to one of the main boulevards, this area is absolutely heaving with industrial traffic, and you often have to step aside to let goods-filled carts rumble past.
+				 Благодаря своему стратегическому расположению прямо у канала Dominion и рядом с одним из главных бульваров, этот район просто кипит промышленным трафиком, и тебе часто приходится отходить в сторону, чтобы дать прогрохотать мимо груженым телегам.
 			#ENDIF
 		#ELSE
 			#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
-				 Thanks to its strategic position right next to Dominion's canal and near to one of the main boulevards, this area is typically heaving with industrial traffic, but due to the ongoing arcane storm, all activity has come to a halt, leaving the entire area completely deserted.
+				 Благодаря своему стратегическому расположению прямо у канала Dominion и рядом с одним из главных бульваров, этот район обычно кишит промышленным транспортом, но из-за затянувшейся бури Арканы вся деятельность замерла, оставив округу совершенно безлюдной.
 			#ELSE
-				 Thanks to its strategic position right next to Dominion's canal and near to one of the main boulevards, a large quantity of industrial traffic is still moving through here, even despite the time of day.
+				 Благодаря своему стратегическому расположению прямо у канала Dominion и рядом с одним из главных бульваров, здесь всё еще движется огромное количество промышленного транспорта, даже несмотря на время суток.
 			#ENDIF
 		#ENDIF
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="WAREHOUSE_DISTRICT_NO_BUSINESS"><![CDATA[
-	<p>
-		Although there are plenty of businesses established in this area, they're of the kind which only provide services to other large companies. With nothing being on offer to passing members of the public, and without having a specific reason to be here, there's not much for you to do except continue on your way elsewhere...
-	</p>
+	<htmlContent tag="WAREHOUSE_DISTRICT_NO_BUSINESS"><![CDATA[<p>
+		Хотя в этом районе и полно предприятий, они из тех, что обслуживают лишь другие крупные компании. Обычным прохожим здесь ловить нечего, да и особой причины задерживаться нет, так что тебе остаётся лишь [style.bold(продолжить)] свой путь куда-нибудь ещё...
+</p>
 	]]>
 	</htmlContent>
 	

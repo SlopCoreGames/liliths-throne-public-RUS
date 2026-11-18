@@ -1,11 +1,11 @@
 {
-  "total_active_seconds": 21208.33,
-  "gpu_wh": 1356.5125,
-  "gpu_kwh": 1.356513,
-  "estimated_system_wh": 2110.5282,
-  "estimated_system_kwh": 2.110528,
+  "total_active_seconds": 23963.52,
+  "gpu_wh": 1533.2013,
+  "gpu_kwh": 1.533201,
+  "estimated_system_wh": 2385.2348,
+  "estimated_system_kwh": 2.385235,
   "peak_gpu_temp_c": 78.12,
   "peak_gpu_watts": 302.075,
-  "total_llm_requests": 4252,
+  "total_llm_requests": 4777,
   "note": "gpu_wh measured via nvidia-smi power.draw; estimated_system_wh adds ~85W CPU/RAM/board and ~12% PSU loss."
 }

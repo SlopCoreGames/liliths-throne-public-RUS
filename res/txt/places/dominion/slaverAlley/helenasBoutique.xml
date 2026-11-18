@@ -5,120 +5,120 @@
 	
 	<htmlContent tag="ROMANCE_SHOP_CORE"><![CDATA[
 	<p>
-		Once again, you find yourself pushing open the door to Helena's Boutique and stepping inside. Taking a quick look around, you see that most of the designer sofas which are scattered around the main shop floor are currently occupied by clients discussing business with Helena's harpy assistants.
+		И вот ты снова толкаешь дверь бутика Helena и переступаешь порог. Окинув быстрым взглядом зал, ты замечаешь, что большинство дизайнерских диванов, расставленных по магазину, заняты клиентами, которые обсуждают дела с помощницами-гарпиями Helena.
 	</p>
 	<p>
 		#IF(helena.isSlutty())
 			#IF(!game.getDialogueFlags().hasFlag(FLAG_helenaSlutSeen))
-					Before you're able to advance further into the store, the beautiful harpy matriarch herself quickly strides forwards to greet you. As she approaches, you find yourself almost not believing what you're seeing, as instead of her usual elegant white plunge dress,
+					Прежде чем тебе удается пройти вглубь магазина, навстречу тебе стремительно выходит сама прекрасная матрона-гарпия. Когда она приближается, ты почти не веришь своим глазам: вместо своего привычного элегантного белого платья с глубоким декольте,
 					#IF(helena.isVisiblyPregnant())
-						 Helena is now wearing an incredibly slutty outfit, and what's more, she's also very clearly pregnant.
+						 Helena теперь одета в невероятно пошлый наряд, и, что еще важнее, она явно очень сильно беременна.
 					#ELSE
-						 Helena is now wearing an incredibly slutty outfit.
+						 Helena теперь одета в невероятно пошлый наряд.
 					#ENDIF
-					 Both her talons and the nails on the end of her feathered fingers are painted bright pink, which matches the colour of the glossy lipstick she's wearing. Her previously-unblemished white head feathers have been dyed with bleach-blonde highlights, and you notice too that she's taken to wearing thick black eyeliner and a noticeable amount of dark purple eye shadow.
+						 И её когти, и ногти на концах пернатых пальцев накрашены ярко-розовым цветом, под стать её глянцевой помаде. Её прежде безупречные белые перья на голове теперь украшены осветленными блондинистыми прядями, а еще ты замечаешь, что она стала пользоваться густой черной подводкой и довольно обильным количеством темно-фиолетовых теней для глаз.
 				</p>
 				<p>
-					Her big nipples are quite clearly visible as they push out against the tight white fabric of the tube top that's covering her large breasts, while her white micro skirt is so short that she shamelessly flashes her lacy black thong to anyone who peers down below her waistline. Instead of her usual fashionable dangle earrings, she's now wearing an assortment of trashy gold jewellery, which takes the form of hoop earrings, a nose ring, and a navel barbell. Around her neck, she's wearing a tight black velvet choker, and as she comes to a halt in front of you, she peers over the top of her gold aviator sunglasses
+					ее большие соски отчетливо проступают сквозь тугую белую ткань топа-бюстье, облегающего ее пышную грудь, а ее белая микро-юбка настолько коротка, что она бесстыдно демонстрирует свои черные кружевные трусики любому, кто заглянет ей ниже талии. Вместо привычных модных серег она теперь щеголяет в куче дешевых золотых побрякушек: серьгах-кольцах, кольце в носу и пирсинге в пупке. На шее у нее плотный черный бархатный чокер, и, остановившись прямо перед тобой, она смотрит на тебя поверх своих золотых очков-авиаторов.
 			#ELSE
 				#IF(helena.isVisiblyPregnant())
-					Before you're able to advance further into the store, the beautiful harpy matriarch herself elegantly strides forwards to greet you. Her regal posturing is somewhat at odds with the slutty micro skirt and tube top combo that she's taken a habit of wearing, but it's not her choice of outfit that draws your attention the most, for as she comes to a halt in front of you, you find yourself staring at her clearly-pregnant belly. Flashing you a smile as she sees what it is you're staring at, Helena peers over the top of her gold aviator sunglasses
+					Прежде чем ты успеваешь пройти вглубь лавки, навстречу тебе элегантно выходит сама прекрасная матрона-гарпия. Её царственная осанка немного диссонирует с вызывающим нарядом из микро-юбки и топа-бэндю, который она привыкла носить, но внимание привлекает вовсе не её одежда: когда она останавливается прямо перед тобой, ты ловишь себя на том, что во все глаза пялишься на её явно округлившийся живот. Заметив твой взгляд, Helena лучезарно улыбается и смотрит на тебя поверх своих золотых авиаторов.
 				#ELSE
-					Before you're able to advance further into the store, the beautiful harpy matriarch herself elegantly strides forwards to greet you. Her regal posturing is somewhat at odds with the slutty micro skirt and tube top combo that she's taken a habit of wearing, and as she comes to a halt in front of you, she peers over the top of her gold aviator sunglasses
+					Прежде чем ты успеваешь пройти вглубь лавки, навстречу тебе элегантно выходит сама прекрасная матрона-гарпия. Её царственная осанка немного диссонирует с вызывающим нарядом из микро-юбки и топа-бэндю, который она привыкла носить, и когда она останавливается перед тобой, она смотрит на тебя поверх своих золотых авиаторов.
 				#ENDIF
 			#ENDIF
 			#IF(helena.isVisiblyPregnant())
 				#IF(!helena.isCharacterReactedToPregnancy(pc))
 					#IF(helena.getPregnantLitter().isFatherId(pc.getId()))
-						 and seductively teases, [helena.speech(You know, [pc.name], by giving me that lovely big creampie, you've ended up fertilising my eggs...)]
+						 и соблазнительно дразнит: [helena.speech(Знаешь, [pc.name], подарив мне такой чудесный, сочный кримпэй, ты фактически оплодотворил мои яйца...)]
 					#ELSE
-						 and playfully teases, [helena.speech(Thanks to you, [pc.name], my dear Scarlett's managed to fertilise my eggs...)]
+						 и игриво дразнит: [helena.speech(Благодаря тебе, [pc.name], моя дорогая Scarlett умудрилась оплодотворить мои яйца...)]
 					#ENDIF
 				#ELSE
 					#IF(helena.getPregnantLitter().isFatherId(pc.getId()))
-						 and seductively teases, [helena.speech(Yes, [pc.name], I'm still carrying around the eggs you've fertilised...)]
+						 и соблазнительно дразнит: [helena.speech(Да, [pc.name], я всё еще ношу в себе те самые яйца, что ты оплодотворил...)]
 					#ELSE
-						 and playfully teases, [helena.speech(Yes, [pc.name], I'm still carrying around the eggs which my dear Scarlett's fertilised...)]
+						 и игриво дразнит: [helena.speech(Да, [pc.name], я всё еще ношу в себе те самые яйца, что оплодотворила моя дорогая Scarlett...)]
 					#ENDIF
 				#ENDIF
 				</p>
-				<p>
-					Stepping forwards, the horny harpy grabs your [pc.hands] and guides them down to rub her clearly-swollen belly. Caught a little off-guard by Helena's audacious move, you're not able to offer much of a response before she seductively licks her lips and leans forwards to tease,
+					<p>
+					Сделав шаг вперед, похотливая гарпия хватает твои [pc.hands] и направляет их вниз, чтобы ты погладил её заметно раздувшийся живот. Слегка опешив от такой дерзости со стороны Helena, ты не успеваешь толком среагировать, как она соблазнительно облизывает губы и подается вперед, чтобы подразнить тебя,
 			#ELSE
 				#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-					 and seductively teases,
+					 и соблазнительно дразнит,
 				#ELSE
-					 and seductively teases,
+					 и соблазнительно дразнит,
 				#ENDIF
 			#ENDIF
 			#IF(game.getDayOfWeek()==DOW_FRIDAY)
 				#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-					 [helena.speech(That little romp in the back room wasn't nearly enough to satisfy me. I'm expecting you to take me out on a date tonight, and then we can go back to my place for a good hard fuck in my room...)]
+					 [helena.speech(Той короткой шалости в подсобке было маловато, чтобы меня удовлетворить. Я жду, что сегодня вечером ты пригласишь меня на свидание, а потом мы завалимся ко мне домой, чтобы хорошенько и жестко трахнуться в моей спальне...)]
 				#ELSE
-					 [helena.speech(I'm expecting you to take me out on a date tonight, [pc.name], and then we can go back to my place for a good hard fuck in my room...)]
+					 [helena.speech(Я жду, что сегодня вечером ты пригласишь меня на свидание, [pc.name], а потом мы завалимся ко мне домой, чтобы хорошенько и жестко трахнуться в моей спальне...)]
 				#ENDIF
 			#ELSE
 				#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-					 [helena.speech(You know, if you were to visit my nest this evening, I'm sure I could be persuaded to give you a very personal tour of my bedroom again...)]
+					 [helena.speech(Знаешь, если ты заглянешь ко мне в гнездо этим вечером, я уверена, что меня можно будет уговорить снова устроить тебе очень личную экскурсию по моей спальне...)]
 				#ELSE
-					 [helena.speech(If you'd like, I could give you a very personal tour of the back room...)]
+					 [helena.speech(Если хочешь, я могла бы устроить тебе очень личную экскурсию в заднюю комнату...)]
 				#ENDIF
 			#ENDIF
 		#ELSE
 			#IF(game.getDayOfWeek()==DOW_FRIDAY)
-				Before you're able to advance further into the store, the beautiful harpy matriarch herself quickly strides forwards to greet you. After flashing you a delightful smile, she softly says, [helena.speech(Welcome back, [pc.name]. Just so you know, I am expecting you to take me out on a date this evening. Now, with that out of the way, what brings you here today?)]
+					Прежде чем ты успеваешь пройти вглубь лавки, навстречу тебе стремительно выходит сама прекрасная матрона-гарпия. Одарив тебя очаровательной улыбкой, она мягко произносит: [helena.speech(С возвращением, [pc.name]. Просто чтобы ты знал: сегодня вечером ты должен пригласить меня на свидание. Ну а теперь, раз с этим покончено, что привело тебя сюда сегодня?)]
 			#ELSE
 				#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopTalkedTo))
-					Before you're able to advance further into the store, the beautiful harpy matriarch herself quickly strides forwards to greet you. After flashing you a delightful smile, she softly says, [helena.speech(Welcome back, [pc.name]. Unfortunately, I have no more time today in which to participate in idle conversation with you, but if you're here on matters of business, then of course I would be delighted to help you.)]
+					Прежде чем ты успеваешь пройти вглубь лавки, навстречу тебе стремительно выходит сама прекрасная матрона-гарпия. Одарив тебя очаровательной улыбкой, она мягко произносит: [helena.speech(С возвращением, [pc.name]. К сожалению, сегодня у меня нет времени на пустую болтовню, но если ты здесь по делу, то я, конечно же, с радостью тебе помогу.)]
 				#ELSE
-					Before you're able to advance further into the store, the beautiful harpy matriarch herself quickly strides forwards to greet you. After flashing you a delightful smile, she softly says, [helena.speech(Welcome back, [pc.name]. What brings you here today?)]
+					Прежде чем ты успеваешь пройти вглубь лавки, навстречу тебе стремительно выходит сама прекрасная матрона-гарпия. Одарив тебя очаровательной улыбкой, она мягко произносит: [helena.speech(С возвращением, [pc.name]. Что привело тебя сюда сегодня?)]
 				#ENDIF
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
 		#IF(scarlett.isVisiblyPregnant())
-			Before you're able to reply, the familiar figure of Scarlett, wearing her light pink dress and black choker, suddenly appears from the back room. Catching sight of you and Helena, she walks over to where you're standing, and as she approaches, you can't help but glance down at her swollen, pregnant belly.
+			Прежде чем ты успеваешь ответить, из подсобки внезапно появляется знакомая фигура Scarlett в светло-розовом платье и черном чокере. Заметив тебя и Helena, она подходит к вам, и пока она идет, ты невольно бросаешь взгляд на её раздувшийся, беременный живот.
 			#IF(helena.isVisiblyPregnant())
-				 Coming to a halt beside her matriarch in such a position that both of their pregnant bellies are side-by-side, the raven-harpy absently-mindedly strokes one of her wing-like arms over her rounded tummy
+				 Остановившись рядом со своей матриархом так, что их беременные животы оказались бок о бок, ворона-гарпия рассеянно поглаживает один из своих крылоподобных рук по округлому пузу,
 			#ELSE
-				 Coming to a halt beside her matriarch, the raven-harpy absently-mindedly strokes one of her wing-like arms over her rounded tummy
+				 Остановившись рядом со своей матриархом, ворона-гарпия рассеянно поглаживает один из своих крылоподобных рук по округлому пузу,
 			#ENDIF
 			#IF(!scarlett.isCharacterReactedToPregnancy(pc))
 				#IF(scarlett.getPregnantLitter().isFatherId(pc.getId()))
 					#IF(scarlett.isLikesPlayer())
-						 and sheepishly reveals, [scarlett.speech(Look what you did, [pc.name]... You got me pregnant...)]
+						 и застенчиво признается: [scarlett.speech(Посмотри, что ты наделал, [pc.name]... Ты сделал меня беременной...)]
 					#ELSE
-						 and snaps, [scarlett.speech(Look what you fucking did, [pc.name]! You got me pregnant! Do you know how fucking annoying this is?!)]
+						 и огрызается: [scarlett.speech(Посмотри, что ты, блядь, натворил, [pc.name]! Ты сделал меня беременной! Ты хоть представляешь, как это, сука, бесит?!)]
 					#ENDIF
 				#ELSE
 					#IF(scarlett.isLikesPlayer())
-						 and sheepishly reveals, [scarlett.speech(One of my harpy friends got me pregnant...)]
+						 и застенчиво признается: [scarlett.speech(Одна из моих подруг-гарпий сделала меня беременной...)]
 					#ELSE
-						 and snaps, [scarlett.speech(Not that it's any of your business, but just to let you know, it was one of my harpy friends who got me pregnant...)]
+						 и огрызается: [scarlett.speech(Не то чтобы тебя это касалось, но просто чтобы ты знал — меня сделала беременной одна из моих подруг-гарпий...)]
 					#ENDIF
 				#ENDIF
 			#ELSE
 				#IF(scarlett.getPregnantLitter().isFatherId(pc.getId()))
 					#IF(scarlett.isLikesPlayer())
-						 and sheepishly greets you by saying, [scarlett.speech(Hey, [pc.name], I'm still pregnant with our kids...)]
+						 и застенчиво приветствует тебя, говоря: [scarlett.speech(Эй, [pc.name], я всё еще ношу наших детей...)]
 					#ELSE
-						 and snaps, [scarlett.speech(Yes, [pc.name], before you ask, I'm still pregnant with our kids, and it's fucking annoying!)]
+						 и огрызается: [scarlett.speech(Да, [pc.name], прежде чем ты спросишь — я всё еще беременна нашими детьми, и это, блядь, дико раздражает!)]
 					#ENDIF
 				#ELSE
 					#IF(scarlett.isLikesPlayer())
-						 and sheepishly greets you by stating the obvious, [scarlett.speech(Hey, [pc.name]... I'm still pregnant, if you were wondering...)]
+						 и застенчиво приветствует тебя, констатируя очевидное: [scarlett.speech(Эй, [pc.name]... Если тебе интересно, я всё еще беременна...)]
 					#ELSE
-						 and snaps, [scarlett.speech(Not that it's any of your business, but yes, I'm still pregnant!)]
+						 и резко бросает: [scarlett.speech(Не то чтобы тебя это касалось, но да, я всё ещё беременна!)]
 					#ENDIF
 				#ENDIF
 			#ENDIF
 		#ELSE
-			Before you're able to reply, the familiar figure of Scarlett, wearing her light pink dress and black choker, suddenly appears from the back room. Catching sight of you and Helena, she walks over to where you're standing, and after quickly approaching and coming to a halt beside her matriarch, she
+			Прежде чем ты успеваешь ответить, из подсобки внезапно появляется знакомая фигура Scarlett в светло-розовом платье и чёрном чокере. Заметив тебя и Helena, она направляется к вам, и, быстро подойдя и остановившись рядом со своей матриархом, она
 			#IF(scarlett.isLikesPlayer())
-				 greets you by asking, [scarlett.speech(Hey, [pc.name], is there anything I can do to help?)]
+				приветствует тебя вопросом: [scarlett.speech(Эй, [pc.name], я могу чем-нибудь помочь?)]
 			#ELSE
-				 snaps, [scarlett.speech(You're back, huh?!)]
+				фыркает: [scarlett.speech(Ты вернулся, а?!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -129,17 +129,17 @@
 	<p>
 		#IF(helena.isSlutty())
 			#IF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(So, [pc.name], are you here to take me out on a date? Or perhaps before we get to that, you'd like to spend some time in the back room with me?)]
+				Велев Scarlett отойти, Helena снова поддразнивает тебя: [helena.speech(Ну что, [pc.name], ты пришёл пригласить меня на свидание? Или, может, прежде чем мы перейдём к этому, ты хочешь провести немного времени со мной в подсобке?)]
 			#ELSE
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(So, [pc.name], are you here to take me out on a date?)]
+				Велев Scarlett отойти, Helena снова поддразнивает тебя: [helena.speech(Ну что, [pc.name], ты пришёл пригласить меня на свидание?)]
 			#ENDIF
 		#ELSE
 			#IF(scarlett.isLikesPlayer())
-				Letting another gentle smile settle on her beautiful face, Helena gently asks again,
+				На её прекрасном лице снова играет нежная улыбка, и Helena мягко переспрашивает,
 			#ELSE
-				[helena.speech(Scarlett! Behave yourself!)] Helena icily warns her companion, before letting another gentle smile settle on her beautiful face and asking,
+				[helena.speech(Scarlett! Веди себя прилично!)] — ледяным тоном предостерегает её спутницу Helena, после чего на её прекрасном лице снова расцветает нежная улыбка, и она спрашивает,
 			#ENDIF
-			 [helena.speech(So, [pc.name], are you here to take me out on a date?)]
+			 [helena.speech(Ну так что, [pc.name], ты пришёл пригласить меня на свидание?)]
 		#ENDIF
 	</p>
 	]]>
@@ -149,19 +149,19 @@
 	<p>
 		#IF(helena.isSlutty())
 			#IF(game.getDialogueFlags().hasFlag(FLAG_helenaScarlettThreesome) && !game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Brushing one of her flawless wings up against Scarlett's body, Helena once again teases, [helena.speech(Just to remind you, [pc.name], it will be another [#SPECIAL_PARSE_0] days until your slave is ready for collection, which will be on [#SPECIAL_PARSE_1]. Perhaps you're not here about that though? Maybe you're here to spend some time in the back room with the two of us, hmm?)]
+				Легко проводя одним из своих безупречных крыльев по телу Scarlett, Helena снова начинает дразнить: [helena.speech(Просто напомню тебе, [pc.name], пройдет еще [#SPECIAL_PARSE_0] дней, прежде чем твоя рабыня будет готова к выдаче, а именно [#SPECIAL_PARSE_1]. Хотя, возможно, ты пришел сюда не только ради этого? Может, ты хочешь провести время в задней комнате с нами обеими, мм?)]
 			#ELSEIF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(Just to remind you, [pc.name], it will be another [#SPECIAL_PARSE_0] days until your slave is ready for collection, which will be on [#SPECIAL_PARSE_1]. Perhaps you're not here about that though? Maybe you're here to spend some time in the back room with me, hmm?)]
+				Велев Scarlett отступить, Helena снова начинает дразнить: [helena.speech(Просто напомню тебе, [pc.name], пройдет еще [#SPECIAL_PARSE_0] дней, прежде чем твоя рабыня будет готова к выдаче, а именно [#SPECIAL_PARSE_1]. Хотя, возможно, ты пришел сюда не только ради этого? Может, ты хочешь провести время в задней комнате со мной, мм?)]
 			#ELSE
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(Just to remind you, [pc.name], it will be another [#SPECIAL_PARSE_0] days until your slave is ready for collection, which will be on [#SPECIAL_PARSE_1]. So, what can I do for you?)]
+				Велев Scarlett отступить, Helena снова начинает дразнить: [helena.speech(Просто напомню тебе, [pc.name], пройдет еще [#SPECIAL_PARSE_0] дней, прежде чем твоя рабыня будет готова к выдаче, а именно [#SPECIAL_PARSE_1]. Итак, что я могу сделать для тебя?)]
 			#ENDIF
 		#ELSE
 			#IF(scarlett.isLikesPlayer())
-				Letting another gentle smile settle on her beautiful face, Helena gently states,
+				На ее прекрасном лице снова играет нежная улыбка, и Helena мягко произносит:
 			#ELSE
-				[helena.speech(Scarlett! Behave yourself!)] Helena icily warns her companion, before letting another gentle smile settle on her beautiful face and stating,
+				[helena.speech(Scarlett! Веди себя прилично!)] — ледяным тоном предостерегает Helena свою спутницу, после чего на ее прекрасном лице снова появляется нежная улыбка, и она говорит:
 			#ENDIF
-			 [helena.speech(Just to remind you, [pc.name], it will be another [#SPECIAL_PARSE_0] days until your slave is ready for collection, which will be on [#SPECIAL_PARSE_1]. So, what can I do for you?)]
+			 [helena.speech(Просто напомню тебе, [pc.name], пройдет еще [#SPECIAL_PARSE_0] дней, прежде чем твоя рабыня будет готова к выдаче, а именно [#SPECIAL_PARSE_1]. Итак, что я могу сделать для тебя?)]
 		#ENDIF
 	</p>
 	]]>
@@ -171,19 +171,19 @@
 	<p>
 		#IF(helena.isSlutty())
 			#IF(game.getDialogueFlags().hasFlag(FLAG_helenaScarlettThreesome) && !game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Brushing one of her flawless wings up against Scarlett's body, Helena once again teases, [helena.speech(So, [pc.name], are you here to collect your slave? Or perhaps you'd like to spend some time in the back room with the two of us?)]
+				Прижимая одно из своих безупречных крыльев к телу Scarlett, Helena снова начинает дразнить: [helena.speech(Итак, [pc.name], ты пришла забрать свою рабыню? Или, может, не хочешь провести немного времени в задней комнате вдвоем с нами?)]
 			#ELSEIF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(So, [pc.name], are you here to collect your slave? Or perhaps you'd like to spend some time in the back room with me?)]
+				Велев Scarlett отступить, Helena снова начинает дразнить: [helena.speech(Итак, [pc.name], ты пришла забрать свою рабыню? Или, может, не хочешь провести немного времени в задней комнате со мной?)]
 			#ELSE
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(So, [pc.name], are you here to collect your slave?)]
+				Велев Scarlett отступить, Helena снова начинает дразнить: [helena.speech(Итак, [pc.name], ты пришла забрать свою рабыню?)]
 			#ENDIF
 		#ELSE
 			#IF(scarlett.isLikesPlayer())
-				Letting another gentle smile settle on her beautiful face, Helena gently asks again,
+				На её прекрасном лице снова играет нежная улыбка, и Helena мягко переспрашивает,
 			#ELSE
-				[helena.speech(Scarlett! Behave yourself!)] Helena icily warns her companion, before letting another gentle smile settle on her beautiful face and asking,
+				[helena.speech(Scarlett! Веди себя прилично!)] — ледяным тоном предостерегает её спутницу Helena, после чего на её прекрасном лице снова расцветает нежная улыбка, и она спрашивает,
 			#ENDIF
-			 [helena.speech(So, [pc.name], are you here to collect your slave?)]
+			 [helena.speech(Итак, [pc.name], ты пришла забрать свою рабыню?)]
 		#ENDIF
 	</p>
 	]]>
@@ -193,19 +193,19 @@
 	<p>
 		#IF(helena.isSlutty())
 			#IF(game.getDialogueFlags().hasFlag(FLAG_helenaScarlettThreesome) && !game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Brushing one of her flawless wings up against Scarlett's body, Helena once again teases, [helena.speech(So, [pc.name], is it business that you're here for? Or perhaps you'd like to spend some time in the back room with the two of us?)]
+				Прижимая одно из своих безупречных крыльев к телу Scarlett, Helena снова начинает дразнить: [helena.speech(Итак, [pc.name], ты здесь по делам? Или, может, не хочешь провести немного времени в задней комнате вдвоем с нами?)]
 			#ELSEIF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(So, [pc.name], is it business that you're here for? Or perhaps you'd like to spend some time in the back room with me?)]
+				Велев Scarlett отступить, Helena снова начинает дразнить: [helena.speech(Итак, [pc.name], ты здесь по делам? Или, может, не хочешь провести немного времени в задней комнате со мной?)]
 			#ELSE
-				Telling Scarlett to step back, Helena once again teases, [helena.speech(So, [pc.name], what business is it you wish to discuss?)]
+				Велев Scarlett отступить, Helena снова начинает дразнить: [helena.speech(Итак, [pc.name], какими делами ты желаешь заняться?)]
 			#ENDIF
 		#ELSE
 			#IF(scarlett.isLikesPlayer())
-				Letting another gentle smile settle on her beautiful face, Helena gently asks again,
+				На её прекрасном лице снова играет нежная улыбка, и Helena мягко переспрашивает,
 			#ELSE
-				[helena.speech(Scarlett! Behave yourself!)] Helena icily warns her companion, before letting another gentle smile settle on her beautiful face and asking,
+				[helena.speech(Scarlett! Веди себя прилично!)] — ледяным тоном предостерегает её спутницу Helena, после чего на её прекрасном лице снова расцветает нежная улыбка, и она спрашивает,
 			#ENDIF
-			 [helena.speech(So, [pc.name], what can we do for you?)]
+			 [helena.speech(Итак, [pc.name], чем мы можем тебе помочь?)]
 		#ENDIF
 	</p>
 	]]>
@@ -216,31 +216,31 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_START"><![CDATA[
 	<p>
-		After informing Helena that you're interested in ordering a custom slave, she turns to Scarlett and commands, [helena.speech(Run along and fetch the customisation forms from behind the counter.)]
+		После того как ты сообщаешь Helena, что заинтересована в заказе рабыни по индивидуальному проекту, она поворачивается к Scarlett и командует: [helena.speech(Ступай и принеси бланки для индивидуального заказа из-за прилавка.)]
 	</p>
 	<p>
-		As the raven-harpy hurries off to carry out her matriarch's order, Helena guides you over to a couple of nearby empty sofas.
+		Пока воронья гарпия спешит исполнить приказ своей матриарха, Helena подводит тебя к паре свободных диванов неподалеку.
 		#IF(helena.hasFetish(FETISH_DOMINANT))
-			 Sitting down on the one opposite to you, she flashes you a devious grin as she spreads her legs and gives you a clear view of the lacy black thong that she's wearing beneath her microskirt. Biting her lip, she teases, [helena.speech(Maybe after we're done with business, I'll take you into the back room and give you a taste of my dirty little pussy...)]
+			Сев на диван напротив тебя, она одаривает тебя лукавой ухмылкой и широко разводит ноги, открывая тебе вид на кружевные черные трусики, надетые под её микроюбку. Прикусив губу, она дразнит: [helena.speech(Может, когда мы закончим с делами, я затащу тебя в подсобку и дам тебе попробовать мою грязную киску на вкус...)]
 		#ELSEIF(helena.hasFetish(FETISH_SUBMISSIVE))
-			 Sitting down on the one opposite to you, she submissively bats her eyelids as she spreads her legs and gives you a clear view of the lacy black thong that she's wearing beneath her microskirt. Biting her lip, she teases, [helena.speech(Maybe after we're done with business, you could take me into the back room and fuck my dirty little pussy...)]
+			Сев на диван напротив тебя, она покорно хлопает ресницами и широко разводит ноги, открывая тебе вид на кружевные черные трусики, надетые под её микроюбку. Прикусив губу, она дразнит: [helena.speech(Может, когда мы закончим с делами, ты затащишь меня в подсобку и оттрахаешь мою грязную киску...)]
 		#ELSE
-			 Sitting down on the one opposite to you, she throws you a subtle smile and gently says, [helena.speech(I am more than happy to personally assist you with your slave customisation, [pc.name].)]
+			Сев на диван напротив тебя, она едва заметно улыбается и мягко произносит: [helena.speech(Я буду счастлива лично помочь тебе с выбором параметров раба, [pc.name].)]
 		#ENDIF
 	</p>
 	<p>
-		Before you can reply, Scarlett returns and places two stacks of forms down on the coffee table in front of you, before saying, [scarlett.speech(I didn't know which template you wanted, so I got both the male and female ones.)]
+		Прежде чем ты успеваешь ответить, возвращается Scarlett и кладет на кофейный столик перед тобой две стопки бланков, после чего говорит: [scarlett.speech(Я не знала, какой шаблон тебе нужен, поэтому взяла и мужской, и женский.)]
 	</p>
 	<p>
-		[helena.speech(Thank you, Scarlett,)]
+		[helena.speech(Спасибо, Scarlett,)]
 		#IF(helena.hasFetish(FETISH_DOMINANT) || helena.hasFetish(FETISH_SUBMISSIVE))
-			 Helena replies, crossing her legs and blocking off your view of her slutty underwear. Gesturing towards the shop's counter, she continues, [helena.speech(Please wait for me over there.)]
+			Helena отвечает, закидывая ногу на ногу и закрывая вид на свое развратное белье. Указывая на прилавок магазина, она продолжает: [helena.speech(Пожалуйста, подожди меня там.)]
 		#ELSE
-			 Helena replies, before gesturing towards the shop's counter and continuing, [helena.speech(Please wait for me over there.)]
+			 Helena отвечает, после чего указывает на прилавок магазина и продолжает: [helena.speech(Пожалуйста, подожди меня там.)]
 		#ENDIF
 	</p>
 	<p>
-		As the raven-harpy walks off, Helena turns back towards and you and explains the process ahead, [helena.speech(First of all, we'll start with either a female or male template, and then customise them from there. Your available options are not limited by your template choice; you could always customise the female template into a male slave, and vice versa, but that would just be an unnecessary waste of time. Anyway, let's begin!)]
+		Когда воронья гарпия уходит, Helena поворачивается к тебе и объясняет суть процесса: [helena.speech(Для начала мы выберем либо женский, либо мужской шаблон, а затем начнем его настраивать. Твои доступные настройки не ограничены выбранным шаблоном; ты всегда можешь превратить женский шаблон в мужского раба и наоборот, но это будет лишь пустой тратой времени. В любом случае, давай начнем!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -250,20 +250,20 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_DECLINED"><![CDATA[
 	<p>
-		Having changed your mind about all of this, you thank Helena for her help, but say that you don't want to order a custom slave after all.
+		Передумав насчет всего этого, ты благодаришь Helena за помощь, но говоришь, что в итоге не хочешь заказывать раба по индивидуальному проекту.
 	</p>
 	<p>
-		Standing up from her sofa and calling over Scarlett to take the forms away,
+		Встав с дивана и окликнув Scarlett, чтобы та убрала формы,
 		#IF(helena.hasFetish(FETISH_DOMINANT))
-			 the slutty matriarch steps close to lewdly whisper in your [pc.ear], [helena.speech(How about I take you into the back room and give you a good, hard fuck?)]
+			 похотливая матрона подходит ближе, чтобы сладко прошептать тебе на [pc.ear]: [helena.speech(Как насчет того, чтобы я отвела тебя в заднюю комнату и хорошенько, жестко тебя оттрахала?)]
 		#ELSEIF(helena.hasFetish(FETISH_SUBMISSIVE))
-			 the slutty matriarch steps close to lewdly whisper in your [pc.ear], [helena.speech(How about you take me into the back room and give me a good, hard fuck?)]
+			 похотливая матрона подходит ближе, чтобы сладко прошептать тебе на [pc.ear]: [helena.speech(Как насчет того, чтобы ты отвел меня в заднюю комнату и хорошенько, жестко меня оттрахал?)]
 		#ELSE
-			 the regal matriarch lets out a small sigh and says, [helena.speech(That's no problem, [pc.name]. Is there anything else I can do for you today?)]
+			 величественная матрона издает легкий вздох и говорит: [helena.speech(Без проблем, [pc.name]. Могу ли я сделать для тебя что-нибудь еще сегодня?)]
 		#ENDIF
 	</p>
 	<p>
-		With Helena waiting to hear your reply, you wonder what to do next...
+		Пока Helena ждет твоего ответа, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -273,11 +273,11 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_PERSONALITY"><![CDATA[
 	<p>
-		One of the forms is in a slightly different format to all of the rest, and as you take a look at it, Helena helpfully reveals, [helena.speech(We'll source a slave of whatever age you desire and start from there. Scarlett's sister is responsible for all of the other customisation options on this page. She'll put your slave through five days of intensive personality training to shape them into whatever you want them to be.)]
+		Одна из форм немного отличается от остальных, и пока ты её изучаешь, Helena услужливо поясняет: [helena.speech(Мы подберем рабыню любого желаемого возраста, а дальше решим. За все остальные настройки на этой странице отвечает сестра Scarlett. Она подвергнет твою рабыню пятидневному интенсивному тренингу личности, чтобы вылепить из неё именно то, что ты пожелаешь.)]
 	</p>
 	#IF(helena.isSlutty())
 		<p>
-			Looking down at the bottom of the form, the slutty matriarch licks her lips and adds, [helena.speech(We can make them love whatever dirty fetishes you want...)]
+			Посмотрев на нижнюю часть бланка, похотливая матрона облизывает губы и добавляет: [helena.speech(Мы можем заставить её обожать любые твои грязные фетиши...)]
 		</p>
 	#ENDIF
 	]]>
@@ -289,9 +289,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_CORE"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Body Type', and as you start reading through it, Helena bites her lip and teases, [helena.speech(Show me what sort of body you'd like your slave to have...)]
+			Бланк перед тобой называется «Трансформация: Тип тела», и пока ты начинаешь его читать, Helena прикусывает губу и дразнит тебя: [helena.speech(Покажи мне, какое тело ты хочешь видеть у своей рабыни...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Body Type', and as you start reading through it, Helena helpfully adds, [helena.speech(You can specify whatever type of body you'd like for your slave.)]
+			Бланк перед тобой называется «Трансформация: Тип тела», и пока ты начинаешь его читать, Helena услужливо добавляет: [helena.speech(Ты можешь указать любой тип телосложения, который пожелаешь для своей рабыни.)]
 		#ENDIF
 	</p>
 	]]>
@@ -302,7 +302,7 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_EYES"><![CDATA[
 	<p>
-		The form in front of you is titled 'Transformation: Eyes', and as you start reading through it, Helena says, [helena.speech(You can choose whatever colour combinations you'd like.)]
+		Бланк перед тобой называется «Трансформация: Глаза», и пока ты начинаешь его читать, Helena говорит: [helena.speech(Ты можешь выбрать любые цветовые сочетания.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -313,9 +313,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_HAIR"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Hair', and as you start reading through it, Helena lewdly adds, [helena.speech(You could give your slave long hair and pigtails, so that you've got something to hold onto while they're performing oral on you...)]
+			Бланк перед тобой называется «Трансформация: Волосы», и пока ты начинаешь его читать, Helena похотливо добавляет: [helena.speech(Ты мог бы сделать ей длинные волосы и хвостики, чтобы тебе было за что ухватиться, пока она будет делать тебе минет...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Hair', and as you start reading through it, Helena says, [helena.speech(Please take your time in choosing the length, colour, and style of your slave's hair.)]
+			Перед тобой бланк под названием «Трансформация: Волосы», и пока ты изучаешь его, Helena произносит: [helena.speech(Пожалуйста, не торопись, выбирая длину, цвет и прическу для своей рабыни.)]
 		#ENDIF
 	</p>
 	]]>
@@ -327,9 +327,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_HEAD"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Head & Face', and as you start reading through it, Helena lewdly adds, [helena.speech(With all these mouth and tongue options, I bet you could make a slave that's great at performing oral...)]
+			Перед тобой бланк под названием «Трансформация: Голова и лицо», и пока ты изучаешь его, Helena с похотливой ухмылкой добавляет: [helena.speech(С таким выбором ртов и языков, бьюсь об заклад, ты сможешь создать рабыню, которая чертовски хороша в оральном...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Head & Face', and as you start reading through it, Helena says, [helena.speech(There really are quite a lot of options on this form. Please do take your time; there's no rush.)]
+			Перед тобой бланк под названием «Трансформация: Голова и лицо», и пока ты изучаешь его, Helena говорит: [helena.speech(В этом бланке действительно очень много вариантов. Пожалуйста, не спеши; мы никуда не торопимся.)]
 		#ENDIF
 	</p>
 	]]>
@@ -341,14 +341,14 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_ASS"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Ass & Hips', and as you start reading through it, Helena flashes you a cheeky grin and reveals,
+			Перед тобой бланк под названием «Трансформация: Попа и бедра», и пока ты изучаешь его, Helena игриво скалится и выдает:
 			#IF(game.isAnalContentEnabled())
-				 [helena.speech(You know, a lot of clients give their slaves at least some natural anal lubrication. Makes it easier to fuck their ass, I guess...)]
+				 [helena.speech(Знаешь, многие клиенты обеспечивают своим рабыням хотя бы естественную смазку для ануса. Думаю, так их задницу будет проще трахать...)]
 			#ELSE
-				 [helena.speech(You know, it's easy to tell which clients are planning on breeding their slaves, as they give them really wide hips...)]
+				 [helena.speech(Знаешь, очень легко понять, какие клиенты планируют осеменять своих рабынь — они выбирают им очень широкие бедра...)]
 			#ENDIF
 		#ELSE
-			The form in front of you is titled 'Transformation: Ass & Hips', and as you start reading through it, Helena says, [helena.speech(Please, don't hold back from any of the more extreme options on my account...)]
+			Перед тобой бланк под названием «Трансформация: Попа и бедра», и пока ты изучаешь его, Helena говорит: [helena.speech(Пожалуйста, не стесняйся выбирать самые экстремальные варианты только ради меня...)]
 		#ENDIF
 	</p>
 	]]>
@@ -360,9 +360,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_BREASTS"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Breasts', and as you start reading through it, Helena giggles and says, [helena.speech(Remember, if you want to fuck their boobs, make sure you increase their capacity!)]
+			Перед тобой бланк под названием «Трансформация: Грудь», и пока ты изучаешь его, Helena хихикает и говорит: [helena.speech(Помни: если хочешь трахать их сиськи, не забудь увеличить их объем!)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Breasts', and as you start reading through it, Helena reveals, [helena.speech(Quite a few of our clients ask for their slaves to be heavily lactating. Apparently, the milking industry is most lucrative...)]
+			Перед тобой анкета под названием «Трансформация: Грудь», и пока ты вчитываешься в неё, Helena признается: [helena.speech(Многие наши клиентки просят, чтобы их рабыни обильно лактировали. Видимо, молочная индустрия приносит самую большую прибыль...)]
 		#ENDIF
 	</p>
 	]]>
@@ -374,9 +374,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_VAGINA"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Vagina', and as you start reading through it, Helena's eyes light up and she speculates, [helena.speech(Are you going to give them a hot little vice-like pussy? Or perhaps a loose, dripping-wet one with big fat labia? So many possibilities...)]
+			Перед тобой анкета под названием «Трансформация: Вагина», и пока ты вчитываешься в неё, глаза Helena загораются, и она мечтательно произносит: [helena.speech(Ты хочешь сделать им горячую киску, сжимающую как тиски? Или, может, расслабленную, сочащуюся влагой, с большими жирными половыми губами? Столько возможностей...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Vagina', and as you start reading through it, Helena says, [helena.speech(You can specify whatever kind of genitalia you desire...)]
+			Перед тобой анкета под названием «Трансформация: Вагина», и пока ты вчитываешься в неё, Helena говорит: [helena.speech(Ты можешь указать любые параметры гениталий, какие пожелаешь...)]
 		#ENDIF
 	</p>
 	]]>
@@ -388,9 +388,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_PENIS"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Penis', and as you start reading through it, Helena hungrily asks, [helena.speech(Are you going to give them a big, fat cock? If you do, then consider giving them a nice big pair of cum-filled balls...)]
+			Перед тобой анкета под названием «Трансформация: Пенис», и пока ты вчитываешься в неё, Helena с голодным блеском в глазах спрашивает: [helena.speech(Ты собираешься дать им огромный, толстый член? Если да, то не забудь добавить им пару отличных, набитых спермой яиц...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Penis', and as you start reading through it, Helena says, [helena.speech(Please take your time in designing whatever sort of genitalia you'd like your slave to have...)]
+			Перед тобой анкета под названием «Трансформация: Пенис», и пока ты вчитываешься в неё, Helena говорит: [helena.speech(Пожалуйста, не торопись, когда будешь проектировать те гениталии, которыми ты хочешь наделить свою рабыню...)]
 		#ENDIF
 	</p>
 	]]>
@@ -402,9 +402,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_SPINNERET"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Spinneret', and as you start reading through it, Helena's flashes you a dirty grin and teases, [helena.speech(I've heard that some spider-girls prefer to have their spinneret used even more than their pussy...)]
+			Перед тобой анкета под названием «Трансформация: Паучье брюшко», и пока ты вчитываешься в неё, Helena одаривает тебя грязной ухмылкой и дразнит: [helena.speech(Я слышала, что некоторые паучихи предпочитают, чтобы их паучье брюшко использовали даже чаще, чем их киску...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Spinneret', and as you start reading through it, Helena says, [helena.speech(We'll have your slave's spinneret altered to fit whatever form you desire...)]
+			Перед тобой бланк под названием «Трансформация: Паутинка», и пока ты вчитываешься в него, Helena произносит: [helena.speech(Мы изменим паутинку твоей рабыни так, как ты пожелаешь...)]
 		#ENDIF
 	</p>
 	]]>
@@ -416,9 +416,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_BREASTS_CROTCH"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Transformation: Crotch-boobs/Udders', and as you start reading through it, Helena grins and says, [helena.speech(You know, if you choose five pairs of boobs, five pairs of crotch-boobs, and four nipples per breast, you can give your slave forty nipples...)]
+			Перед тобой бланк под названием «Трансформация: Лобковые молочные железы/Вымя», и пока ты вчитываешься в него, Helena ухмыляется и говорит: [helena.speech(Знаешь, если ты выберешь пять пар груди, пять пар лобковых молочных желез и по четыре соска на каждую, то у твоей рабыни будет целых сорок сосков...)]
 		#ELSE
-			The form in front of you is titled 'Transformation: Crotch-boobs/Udders', and as you start reading through it, Helena says, [helena.speech(Most of these options are identical to those found on the main 'Transformation: Breasts' form.)]
+			Перед тобой бланк под названием «Трансформация: Лобковые молочные железы/Вымя», и пока ты вчитываешься в него, Helena говорит: [helena.speech(Большинство этих вариантов идентичны тем, что указаны в основном бланке «Трансформация: Грудь».)]
 		#ENDIF
 	</p>
 	]]>
@@ -430,9 +430,9 @@
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_MAKEUP"><![CDATA[
 	<p>
 		#IF(helena.isSlutty())
-			The form in front of you is titled 'Miscellaneous: Cosmetics', and as you start reading through it, Helena excitedly asks, [helena.speech(Are you going to doll your slave up to look like some cheap whore? That'd be hot...)]
+			Перед тобой бланк под названием «Разное: Косметика», и пока ты вчитываешься в него, Helena с азартом спрашивает: [helena.speech(Ты собираешься накрасовать свою рабыню, чтобы она выглядела как дешевая шлюшка? Это было бы горячо...)]
 		#ELSE
-			The form in front of you is titled 'Miscellaneous: Cosmetics', and as you start reading through it, Helena says, [helena.speech(We can apply whatever sort of makeup you'd like.)]
+			Перед тобой бланк под названием «Разное: Косметика», и пока ты вчитываешься в него, Helena говорит: [helena.speech(Мы можем нанести любой макияж, какой пожелаешь.)]
 		#ENDIF
 	</p>
 	]]>
@@ -443,7 +443,7 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_BODY_PIERCINGS"><![CDATA[
 	<p>
-		The form in front of you is titled 'Miscellaneous: Piercings', and as you start reading through it, Helena says, [helena.speech(Mark down all the parts of your slave that you want us to pierce for you.)]
+		Перед тобой бланк под названием «Разное: Пирсинг», и пока ты вчитываешься в него, Helena говорит: [helena.speech(Отметь все части тела твоей рабыни, которые ты хочешь, чтобы мы прокололи.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -453,55 +453,55 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_FINISH"><![CDATA[
 	<p>
-		Having finished customising your slave, you stack the forms back up on top of one another and hand them over to Helena. Smiling as she takes them from you, she slightly nods her head and says,
+		Закончив настройку своей рабыни, ты складываешь бланки стопкой и передаешь их Helena. Она с улыбкой принимает их из твоих рук, слегка кивает и говорит:
 		#IF(helena.isSlutty())
-		 [helena.speech(Thank you, [pc.name]. I shall now quickly calculate the cost of your slave. In the meantime, please decide upon whether you want your slave delivered as a virgin, or whether they should get a good fucking before delivery. These choices are free of charge.)]
+		 [helena.speech(Благодарю тебя, [pc.name]. Сейчас я быстро подсчитаю стоимость твоего раба. А пока, пожалуйста, реши, хочешь ли ты получить раба девственником или же он должен хорошенько трахнуться перед доставкой. Эти услуги предоставляются бесплатно.)]
 		#ELSE
-		 [helena.speech(Thank you, [pc.name]. I shall now quickly calculate the cost of your slave. In the meantime, please decide upon whether you want your slave delivered as a virgin, or whether they should be broken in before delivery. These choices are free of charge.)]
+		 [helena.speech(Благодарю тебя, [pc.name]. Сейчас я быстро подсчитаю стоимость твоего раба. А пока, пожалуйста, реши, хочешь ли ты получить раба девственником или же его стоит хорошенько размять перед доставкой. Эти услуги предоставляются бесплатно.)]
 		#ENDIF
 	</p>
 	<p>
-		Handing you a small form titled 'Sex Experience Preferences', Helena leaves you to look over it as she tallies up the cost of the slave you've ordered. Before you've had time to read over it, however, the harpy matriarch quietly clears her throat to get your attention and reveals, [helena.speech(The cost for this slave will be [#SPECIAL_PARSE_0] flames. We also offer a 'Slime special' option, where your slave will be transformed into a slime after undergoing all other transformations.)]
+		Вручив тебе небольшую форму под названием «Предпочтения по сексуальному опыту», Helena оставляет тебя изучать её, пока сама подсчитывает стоимость заказанного тобой раба. Однако, прежде чем ты успеваешь её прочитать, матрона-гарпия тихо откашливается, привлекая твоё внимание, и объявляет: [helena.speech(Стоимость этого раба составит [#SPECIAL_PARSE_0] Огней. Также у нас есть вариант «Специальное предложение Slime», при котором твой раб превратится в слайма после прохождения всех остальных трансформаций.)]
 	</p>
 	<p>
-		[pc.speech(How much is that?)] you ask.
+		[pc.speech(Сколько это стоит?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[helena.speech(The slime transformation is an extra five thousand flames,)] Helena replies, [helena.speech(Oh, and before you ask, there have already been several suggestions for us to transform slaves into a slime, get them to self-transform, and then transform them back into a solid form in order to save costs on transformation potions. The issue with doing that is that the slave might end up not fully accepting their new form. By transforming them over the course of a week, combined with their intensive training, we can guarantee that your slave will be happy with the form you've specified for them.)]
+		[helena.speech(Превращение в слайма стоит дополнительные пять тысяч кредитов,)] — отвечает Helena. [helena.speech(О, и прежде чем ты спросишь: нам уже не раз предлагали превращать рабов в слаймов, заставлять их трансформироваться самостоятельно, а затем возвращать им твердую форму, чтобы сэкономить на зельях трансформации. Проблема в том, что в таком случае раб может не до конца принять свою новую форму. Но если мы будем трансформировать их в течение недели, сочетая это с интенсивными тренировками, мы гарантируем, что твой раб будет в восторге от выбранного тобой облика.)]
 	</p>
 	<p>
-		Seeing that you've not filled in the sexual experience form yet, she sits back a little and says, [helena.speech(Please let me know when you've finished with that, or if there's anything you'd like to go back and change.)]
+		Заметив, что ты еще не заполнил анкету сексуального опыта, она слегка откидывается назад и говорит: [helena.speech(Дай мне знать, когда закончишь, или если захочешь вернуться и что-то изменить.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_ORDER"><![CDATA[
 	<p>
-		Telling Helena that you've finished filling out the sexual experience form, you hand both it and the [#SPECIAL_PARSE_0] flames over to her. Smiling happily as she receives the payment from you, the beautiful matriarch says, [helena.speech(It will take a full week to train and transform your slave, so you'll be able to return here and collect them next [#SPECIAL_PARSE_1] at the earliest. As we have such a high demand for our custom slave service, you won't be able to order another slave until this one has been delivered.)]
+		Сказав Helena, что ты закончил заполнять анкету сексуального опыта, ты протягиваешь ей саму анкету и [#SPECIAL_PARSE_0] кредитов. Счастливо улыбаясь, принимая оплату, прекрасная матриарх произносит: [helena.speech(На обучение и трансформацию твоего раба уйдет целая неделя, так что забрать его можно будет не раньше, чем через [#SPECIAL_PARSE_1]. Поскольку спрос на наших кастомных рабов так высок, ты не сможешь заказать следующего, пока не получишь этого.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_ORDER_SLIME"><![CDATA[
 	<p>
-		Telling Helena that you've finished filling out the sexual experience form, and that you'd like to order the 'slime special', you hand both the piece of paper and the [#SPECIAL_PARSE_0] flames over to her. Smiling happily as she receives the payment from you, the beautiful matriarch says, [helena.speech(It will take a full week to train and transform your slave, so you'll be able to return here and collect them next [#SPECIAL_PARSE_1] at the earliest. As we have such a high demand for our custom slave service, you won't be able to order another slave until this one has been delivered.)]
+		Сообщив Helena, что ты закончил заполнять анкету сексуального опыта и хочешь заказать «слайм-специал», ты протягиваешь ей листок бумаги и [#SPECIAL_PARSE_0] огней. Счастливо улыбаясь, получая оплату, прекрасная матриарх говорит: [helena.speech(На то, чтобы обучить и трансформировать твоего раба, уйдет целая неделя, так что вернуться за ним можно будет не раньше, чем через [#SPECIAL_PARSE_1]. Поскольку спрос на наших заказных рабов так высок, ты не сможешь заказать нового, пока не получишь этого.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_ORDER_END"><![CDATA[
 	<p>
-		Seeing that you and Helena have concluded your business, Scarlett walks over from where she was waiting and impudently asks, [scarlett.speech(So, you two are done? Helena, I'm hungry. I'm going to go and get something to eat, ok?)]
+		Видя, что твои дела с Helena завершены, Scarlett подходит от места, где она ждала, и бесстыдно спрашивает: [scarlett.speech(Ну что, вы двое закончили? Helena, я проголодалась. Пойду поищу что-нибудь перекусить, ладно?)]
 	</p>
 	<p>
 		#IF(helena.isSlutty() && !game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-			Spreading her legs to give you an unobstructed view of her lacy black thong, Helena bites her lips and says, [helena.speech(You know, I'm hungry too... How about you come into the back room with me, [pc.name], so you can help me satisfy this craving I've got...)]
+			Широко разведя ноги, чтобы открыть тебе беспрепятственный вид на свои кружевные черные трусики, Helena прикусывает губу и произносит: [helena.speech(Знаешь, я тоже проголодалась... Как насчет того, чтобы зайти со мной в подсобку, [pc.name], и помочь мне утолить этот голод...)]
 		#ELSE
-			Letting out an exasperated sigh, Helena turns to the raven-harpy and says, [helena.speech(You can take a break later. For now, [pc.name] might have something more to discuss...)]
+			Тяжело вздохнув, Helena поворачивается к вороне-гарпии и говорит: [helena.speech(Отдохнешь позже. А сейчас у [pc.name] могут быть дела поважнее...)]
 		#ENDIF
 	</p>
 	<p>
-		As the two harpies turn to look expectantly at you, you wonder what to do next...
+		Пока обе гарпии с ожиданием смотрят на тебя, ты гадаешь, что же делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -511,33 +511,32 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_DELIVERY"><![CDATA[
 	<p>
-		After you've told Helena that you'd like to take delivery of [npc.name], the regal matriarch turns to Scarlett and orders, [helena.speech(Scarlett, please fetch [pc.namePos] slave and bring [npc.herHim] out here.)]
+		После того как ты говоришь Helena, что хочешь забрать [npc.name], величественная матриарх поворачивается к Scarlett и приказывает: [helena.speech(Scarlett, пожалуйста, приведи [pc.namePos] рабыню и выведи [npc.herHim] сюда.)]
 	</p>
 	<p>
-		Doing as she's told, Scarlet hurries off into the back room, and just moments later returns with the [npc.fullRace(true)] trailing along behind her. As you look at your new slave, who's wearing nothing but a steel slave collar, you see that [npc.sheIs] exactly as you ordered, and as [npc.she] comes to a halt in front of you, [npc.she]
+		Повинуясь приказу, Scarlett спешит в подсобное помещение, и всего мгновение спустя возвращается, ведя за собой [npc.fullRace(true)]. Глядя на свою новую рабыню, на которой нет ничего, кроме стального ошейника, ты видишь, что [npc.sheIs] именно так, как ты и заказывал, и когда [npc.she] замирает перед тобой, [npc.she]
 		#IF(npc.getObedienceBasic()==OBEDIENCE_BASIC_DISOBEDIENT)
 			#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-				 scowls at you and disobediently mutters, [npc.speech(Eugh... So I'm going to be owned by <i>you</i>?)]
+				 сердито смотрит на тебя и непокорно бормочет: [npc.speech(Фу... Значит, теперь мной будет владеть <i>ты</i>?)]
 			#ELSEIF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_NEUTRAL)
-				 sighs and disobediently comments, [npc.speech(So, I guess I'm going to be owned by you now, huh?)]
+				 вздыхает и непокорно замечает: [npc.speech(Значит, теперь я в твоей собственности, да?)]
 			#ELSE
-				 smiles and disobediently exclaims, [npc.speech(Is this really it at last? I get to be owned by you?)]
+				 улыбается и непокорно восклицает: [npc.speech(Неужели это свершилось? Ты наконец-то станешь моим хозяином?)]
 			#ENDIF
 		#ELSEIF(npc.getObedienceBasic()==OBEDIENCE_BASIC_NEUTRAL)
 			#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-				 sighs and mutters, [npc.speech(Am I to your satisfaction?)]
+				 вздыхает и бормочет: [npc.speech(Я тебя устраиваю?)]
 			#ELSEIF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_NEUTRAL)
-				 asks, [npc.speech(Am I to your satisfaction?)]
+				 спрашивает: [npc.speech(Я тебя устраиваю?)]
 			#ELSE
-				 smiles and asks, [npc.speech(Am I to your satisfaction?)]
+				 улыбается и спрашивает: [npc.speech(Я тебя устраиваю?)]
 			#ENDIF
 		#ELSE
 			#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-				 obediently bows [npc.her] head, completely concealing [npc.her] dislike of you as [npc.she] asks, [npc.speech(Am I to your satisfaction, [pc.name]?)]
-			#ELSEIF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_NEUTRAL)
-				 obediently bows [npc.her] head, before asking, [npc.speech(Am I to your satisfaction, [pc.name]?)]
+покорно склоняет [npc.her] голову, полностью скрывая [npc.her] неприязнь к тебе, пока [npc.she] спрашивает: [npc.speech(Я тебя устраиваю, [pc.name]?)]			#ELSEIF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_NEUTRAL)
+				 послушно склоняет [npc.her] голову, прежде чем спросить: [npc.speech(Я вас устраиваю, [pc.name]?)]
 			#ELSE
-				 obediently bows [npc.her] head, completely concealing [npc.her] affection towards you as [npc.she] asks, [npc.speech(Am I to your satisfaction, [pc.name]?)]
+				покорно склоняет [npc.her] голову, полностью скрывая свою [npc.her] к тебе, когда [npc.she] спрашивает: [npc.speech(Я вас устраиваю, [pc.name]?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -546,10 +545,10 @@
 	
 	<htmlContent tag="HELENAS_SHOP_CUSTOM_SLAVE_DELIVERY_END"><![CDATA[
 	<p>
-		After you've replied in the positive, Helena motions for Scarlett to take [npc.name] away, before turning to you and explaining, [helena.speech(As per regulation, [npc.name] will be processed and held at the Slavery Administration building. You can collect [npc.herHim] from there at any time.)]
+		Получив утвердительный ответ, Helena жестом велит Scarlett увести [npc.name], после чего поворачивается к тебе и объясняет: [helena.speech(Согласно правилам, [npc.name] будет оформлен и доставлен в здание Администрации Рабства. Вы сможете забрать [npc.herHim] оттуда в любое удобное время.)]
 	</p>
 	<p>
-		Obviously not wanting to be bothered with the task Helena had in mind for her, you see Scarlett hand your slave over to another of the harpies who work here. As they turn and lead your slave out of the shop, Scarlett quickly returns to hover nearby and join her matriarch in waiting to see if there's anything else you wanted of them...
+		Очевидно, не желая возиться с заданием, которое Helena приготовила для неё, ты видишь, как Scarlett передает твою рабыню другой гарпии, работающей здесь. Пока они разворачиваются и уводят твою рабыню из лавки, Scarlett быстро возвращается и зависает неподалеку, пристроившись рядом со своей матриархом в ожидании — вдруг тебе нужно что-то еще...
 	</p>
 	]]>
 	</htmlContent>
@@ -559,65 +558,65 @@
 	
 	<htmlContent tag="HELENAS_SHOP_TALK"><![CDATA[
 	<p>
-		Wanting to spend some time talking with Helena, you ask her how her day's been so far. Clearly happy to be using your question as an excuse to take a break from work, the beautiful harpy flashes you a smile as she launches into describing today's customers and events.
+		Желая немного поболтать с Helena, ты спрашиваешь её, как проходит день. Красавица-гарпия, явно рада возможности использовать твой вопрос как повод отвлечься от работы, расплывается в улыбке и начинает во всех красках описывать сегодняшних покупателей и события.
 	</p>
 	#IF(helena.isSlutty())
 		<p>
 			#IF(helena.isVisiblyPregnant())
-				After a short while of talking about business, she starts making several graphic comments about how she keeps on thinking back to the evening in which
+				Вскоре после разговоров о делах она начинает отпускать весьма откровенные комментарии о том, что всё время прокручивает в голове тот вечер, когда
 				#IF(helena.getPregnantLitter().isFatherId(pc.getId()))
-					 you impregnated her. Stepping forwards, she grabs your [pc.hands] and makes you stroke her pregnant belly as she teases,
+					ты оплодотворил её. Сделав шаг вперед, она хватает тебя за [pc.hands] и заставляет гладить её беременный живот, дразня:
 					#IF(helena.hasFetish(FETISH_DOMINANT))
-						 [helena.speech(Once I've laid these eggs, maybe I'll ride your cock and get you to knock me up all over again...)]
+					 [helena.speech(Как только я отложу эти яйца, может, мне стоит оседлать твой член, чтобы ты снова меня оплодотворил...)]
 					#ELSE
-						 [helena.speech(Once I've laid these eggs, maybe you'll want to hump me and knock me up all over again...)]
+						 [helena.speech(Как только я отложу эти яйца, может, ты захочешь оттрахать меня и снова оплодотворить...)]
 					#ENDIF
 				#ELSE
-					 Scarlett impregnated her. Stepping forwards, she grabs your [pc.hands] and makes you stroke her pregnant belly as she teases,
+					 Scarlett оплодотворила её. Сделав шаг вперёд, она хватает тебя за [pc.hands] и заставляет гладить её беременный живот, дразня тебя:
 					#IF(helena.hasFetish(FETISH_DOMINANT))
-						 [helena.speech(Once I've laid these eggs, maybe I'll get Scarlett to hump me and knock me up all over again...)]
+						 [helena.speech(Как только я отложу эти яйца, может, я заставлю Scarlett оттрахать меня и снова оплодотворить...)]
 					#ELSE
-						 [helena.speech(Once I've laid these eggs, I wonder if Scarlett will want to hump me and knock me up all over again...)]
+						 [helena.speech(Интересно, захочет ли Scarlett оттрахать меня и снова оплодотворить, когда я отложу эти яйца...)]
 					#ENDIF
 				#ENDIF
 			#ELSE
-				After a short while of talking about business, 
+					После недолгого разговора о делах, 
 				#IF(helena.hasFetish(FETISH_DOMINANT))
-					 she dominantly steps forwards and starts making several graphic comments about how she keeps on getting wet at the thought of 
+					 она властно делает шаг вперёд и начинает отпускать непристойные комментарии о том, как она течёт при одной мысли о том, как 
 				#ELSE
-					 she steps forwards and starts making several graphic comments about how she keeps on getting wet at the thought of 
+					 она делает шаг вперёд и начинает отпускать непристойные комментарии о том, как она течёт при одной мысли о том, как 
 				#ENDIF
 				#IF(helena.hasFetish(FETISH_ANAL_RECEIVING))
 					#IF(!helena.isVaginaVirgin())
-						 her horny little pussy and ass being filled with your cock.
+						 её похотливая киска и задница наполняются твоим членом.
 					#ELSE
-						 her slutty ass being filled with your cock.
+						 её шлюшью задницу наполняет твой член.
 					#ENDIF
 					#IF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-						 Biting her lip, she lowers her voice and coyly asks, [helena.speech(How about the two of step into the back room? I could do with some oral right about now...)]
+						 Прикусив губу, она понижает голос и кокетливо спрашивает: [helena.speech(Как насчёт того, чтобы нам двоим зайти в подсобку? Мне бы сейчас не помешал минет...)]
 					#ELSE
-						 Biting her lip, she lowers her voice and coyly remarks, [helena.speech(I'm looking forward to our next date together. I wonder if you're going to want to fuck my butt or my tight, wet cunt?)]
+						 Прикусив губу, она понижает голос и кокетливо замечает: [helena.speech(Я с нетерпением жду нашего следующего свидания. Интересно, захочешь ли ты трахать мой зад или мою узкую, мокрую киску?)]
 					#ENDIF
 				#ELSE
-					 her horny little pussy being filled with your cock.
+					 её возбужденная малявка-киска наполняется твоим членом.
 					#IF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-						 Biting her lip, she lowers her voice and coyly asks, [helena.speech(How about the two of step into the back room? I could do with some oral right about now...)]
+						 Прикусив губу, она понижает голос и кокетливо спрашивает: [helena.speech(Как насчёт того, чтобы нам двоим зайти в подсобку? Мне бы сейчас не помешал минет...)]
 					#ELSE
-						 Biting her lip, she lowers her voice and coyly remarks, [helena.speech(I'm looking forward to our next date together. I can't wait to feel you using my tight, wet cunt again...)]
+						 Прикусив губу, она понижает голос и кокетливо замечает: [helena.speech(Я с нетерпением жду нашего следующего свидания. Не могу дождаться, когда снова почувствую, как ты входишь в мою узкую, мокрую киску...)]
 					#ENDIF
 				#ENDIF
 			#ENDIF
 		</p>
 		<p>
 			#IF(!game.getDialogueFlags().hasFlag(FLAG_helenaShopFucked))
-				After a few more minutes of teasing and making all sorts of lewd remarks, the regal matriarch pointedly asks, [helena.speech(So, [pc.name], do you want me to give you a very <i>personal</i> tour of the back room, or should I get back to work?)]
+				После нескольких минут дразнилок и всяческих похотливых замечаний, величественная матриарх многозначительно спрашивает: [helena.speech(Итак, [pc.name], хочешь, чтобы я устроила тебе очень <i>личную</i> экскурсию в заднюю комнату, или мне стоит вернуться к работе?)]
 			#ELSE
-				After a few more minutes of teasing and making all sorts of lewd remarks, the regal matriarch spots one of her harpy workers beckoning for her attention, and so steps back and declares, [helena.speech(I'd love to continue talking with you, [pc.name], but I need to get back on with work now.)]
+				После нескольких минут дразнилок и всяческих похотливых замечаний, величественная матриарх замечает одну из своих гарпий-работниц, манящую её вниманием, и, отступив на шаг, заявляет: [helena.speech(Я бы с удовольствием продолжила разговор с тобой, [pc.name], но сейчас мне нужно вернуться к делам.)]
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			After ten or so minutes of this sort of conversation, the regal matriarch spots one of her harpy workers beckoning for her attention, and so steps back and declares, [helena.speech(I'd love to continue talking with you, [pc.name], but I need to get back on with work now.)]
+			После примерно десяти минут подобного разговора величественная матриарх замечает одну из своих гарпий-работниц, манящую её вниманием, и, отступив на шаг, заявляет: [helena.speech(Я бы с удовольствием продолжила разговор с тобой, [pc.name], но сейчас мне нужно вернуться к делам.)]
 		</p>
 	#ENDIF
 	]]>
@@ -628,32 +627,32 @@
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM"><![CDATA[
 	<p>
-		Deciding to give the horny harpy matriarch what she wants, you tell Helena that you'd like to spend some time with her in the back room. As she hears what it is you're saying, the beautiful harpy's eyes light up, and with a sly wink and lick of her lips she seductively replies,
+		Решив дать похотливой матриарху-гарпии то, чего она хочет, ты говоришь Helena, что хотел бы провести с ней время в задней комнате. Услышав твои слова, глаза прекрасной гарпии загораются, и, лукаво подмигнув и облизав губы, она соблазнительно отвечает:
 		#IF(pc.hasCompanions())
-			 [helena.speech(Why, I'd love to give you a tour of the back room, [pc.name], but your friend will have to wait out here. Please follow me...)]
+			 [helena.speech(О, я бы с удовольствием показала тебе заднюю комнату, [pc.name], но твоему другу придется подождать здесь снаружи. Пожалуйста, иди за мной...)]
 		#ELSE
-			 [helena.speech(Why, I'd love to give you a tour of the back room, [pc.name]. Please follow me...)]
+			 [helena.speech(О, я бы с удовольствием показала тебе заднюю комнату, [pc.name]. Пожалуйста, иди за мной...)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.hasCompanions())
-			Telling [com.name] to wait here for your return, you follow Helena over to the door on the far side of the room. Flashing you a smile, the beautiful harpy opens it and ushers you forwards before promptly following you inside and locking the door behind her.
+			Велев [com.name] подождать твоего возвращения, ты следуешь за Helena к двери в дальнем конце комнаты. Ослепительно улыбнувшись, прекрасная гарпия открывает её и жестом приглашает тебя войти, после чего тут же следует за тобой и запирает дверь за спиной.
 		#ELSE
-			Quickly leading you over to the door on the far side of the room, Helena opens it and ushers you forwards, before promptly following you inside and locking the door behind her.
+			Быстро подведя тебя к двери в дальнем конце комнаты, Helena открывает её и приглашает тебя войти, после чего тут же следует за тобой и запирает дверь за спиной.
 		#ENDIF
-		 While the staff room you're now standing in appears to be unoccupied, there are some sounds of movement coming from behind the room dividers, letting you know that there are several slaves chained up in the storage area awaiting collection.
+		 Хотя комната для персонала, в которой ты сейчас стоишь, кажется пустой, за перегородками слышны звуки движения — это значит, что в кладовой на цепях томится несколько рабов, ожидающих отправки.
 	</p>
 	<p>
-		Seemingly not at all bothered by the fact that these slaves are able to overhear the two of you, Helena steps forwards and lifts her micro skirt, before hooking her feathered thumbs into the band of her lacy black thong and sliding it down the length of her flawless bird-like legs.
+		Похоже, тот факт, что рабы могут подслушивать вас, ничуть не беспокоит её. Helena делает шаг вперед и приподнимает свою микро-юбку, после чего цепляет пернатыми большими пальцами край кружевных черных трусиков и плавно стягивает их по своим безупречным птичьим ногам.
 		#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-			 With her cloaca now fully on display, the slutty harpy uses her fingers to spread it and present her pussy to you, before
+			 Теперь, когда её клоака полностью выставлена напоказ, похотливая гарпия раздвигает её пальцами, демонстрируя тебе свою киску, прежде чем
 		#ELSE
-			 With her groin now fully on display, the slutty harpy uses her fingers to spread her pussy and present it to you, before
+			 Теперь, когда её пах полностью выставлен напоказ, похотливая гарпия раздвигает пальцами свою киску, демонстрируя её тебе, прежде чем
 		#ENDIF
 		#IF(helena.hasFetish(FETISH_DOMINANT))
-			 dominantly teasing, [helena.speech(How should I use you today, I wonder?)]
+			 властно дразня, [helena.speech(Интересно, как же мне тебя сегодня использовать?)]
 		#ELSE
-			 submissively teasing, [helena.speech(How would you like to use me, [pc.name]?)]
+			 покорно дразня, [helena.speech(Как бы ты хотел использовать меня, [pc.name]?)]
 		#ENDIF
 	</p>
 	]]>
@@ -662,10 +661,10 @@
 	<!-- Cunnilingus -->
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_PERFORM_CUNNILINGUS"><![CDATA[
 	<p>
-		Wanting to perform oral on Helena, you drop down onto your knees in front of her, before leaning forwards to plant a kiss on her exposed pussy. Letting out a playful giggle, the beautiful harpy takes a step to one side, before leaning back against the wall that's now behind her. Presenting her pussy to you once again, she teases, [helena.speechNoEffects(Come on then! Get a taste of my horny little pussy!)]
+		Желая сделать Хелене минет, ты опускаешься на колени перед ней, а затем подаешься вперед, чтобы запечатлеть поцелуй на её обнаженной киске. Игридно хихикнув, прекрасная гарпия отступает в сторону, а затем прислоняется спиной к стене, оказавшейся позади неё. Снова подставляя тебе свою киску, она дразнит: [helena.speechNoEffects(Ну же! Попробуй на вкус мою разгоряченную киску!)]
 	</p>
 	<p>
-		Doing as you're told, you eagerly shuffle forwards and press your [pc.lips+] against Helena's hungry pussy. Overcome with lust, the horny harpy drops her flawless white wings down to push your head further forwards between her legs. As you push your tongue in between her [helena.labia+], Helena squeals, [helena.speechNoEffects(~Ooh!~ Yes! Keep going, [pc.name]! ~Mmm!~ Yes, just like that!)]
+		Повинуясь приказу, ты с нетерпением подаешься вперед и прижимаешься своим [pc.lips+] к жадной киске Хелены. Охваченная похотью, возбужденная гарпия опускает свои безупречные белые крылья, чтобы протолкнуть твою голову глубже между её ног. Когда ты просовываешь язык между её [helena.labia+], Хелена взвизгивает: [helena.speechNoEffects(~О-о!~ Да! Продолжай, [pc.name]! ~Ммм!~ Да, именно так!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -674,43 +673,43 @@
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_PERFORM_ANILINGUS"><![CDATA[
 	#IF(!helena.getFetishDesire(FETISH_ANAL_RECEIVING).isPositive())
 		<p>
-			Wanting to perform a different type of oral on Helena, you suggest
+			Желая попробовать другой вид орального секса с Хеленой, ты предлагаешь
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 that you could probe your tongue a little lower down within her cloaca and perform anilingus on her.
+				 что мог бы просунуть язык чуть ниже, в её клоаку, и заняться анилингусом.
 			#ELSE
-				 that she could present her ass to you so that you can perform anilingus on her.
+				 чтобы она подставила тебе свою задницу для анилингуса.
 			#ENDIF		
-			 Although by now accustomed to doing lewd things you, the regal harpy is still visibly shocked by your suggestion, and hesitantly asks, [helena.speechNoEffects(You mean... You want to lick my asshole?!)]
+			 Хотя она уже привыкла к твоим похотливым забавам, величественная гарпия всё еще заметно шокирована твоим предложением и нерешительно спрашивает: [helena.speechNoEffects(Ты имеешь в виду... Ты хочешь лизать мой анус?!)]
 		</p>
 		<p>
-			Confirming that that's what you want, you can't help but smile as Helena blushes and turns around, before stepping over to lean against a nearby wall and pushing her [helena.assSize] ass out towards you. Looking back over her shoulder, she lifts her beautiful white tail feathers to present you with
+			Убедившись, что это именно то, чего ты хочешь, ты невольно улыбаешься: Helena краснеет и разворачивается, после чего подходит к стене и, облокотившись на неё, выставляет свою [helena.assSize] задницу тебе навстречу. Оглянувшись через плечо, она приподнимает свои прекрасные белоснежные перья хвоста, чтобы продемонстрировать тебе
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 the cloaca between her legs, and as you drop down behind her and press your [pc.lips+] against the lower part of her bird-like slit, she stammers, [helena.speechNoEffects(T-This had better feel good!)]
+				 клоаку между ног; когда ты опускаешься позади неё и прижимаешь свой [pc.lips+] к нижней части её птичьей щели, она заикается: [helena.speechNoEffects(Т-только пусть это будет приятно!)]
 			#ELSE
-				 her butt, and as you drop down behind her and press your [pc.lips+] against her virgin asshole, she stammers, [helena.speechNoEffects(T-This had better feel good!)]
+				 её задницу, и когда ты опускаешься позади неё и прижимаешь свой [pc.lips+] к её девственному анусу, она заикается: [helena.speechNoEffects(Т-только пусть это будет приятно!)]
 			#ENDIF
 		</p>
 		<p>
-			Wanting to make sure that Helena's first anal experience is a good one, you make sure to spend some time lovingly kissing and licking her rear entrance. Sure enough, after just a few minutes of this, the beautiful harpy's nervous sighs have turned into heavy moans, and she eagerly pushes her saliva-coated asshole out against your face as she breathlessly pants, [helena.speechNoEffects(~Ooh!~ Go on, [pc.name]! Eat my ass!)]
+			Желая сделать так, чтобы первый анальный опыт Helena был незабываемым, ты уделяешь время тому, чтобы нежно целовать и вылизывать её задний проход. И действительно, спустя всего несколько минут её нервные вздохи сменяются тяжелыми стонами, и она, прерывисто дыша, жадно подставляет свой покрытый слюной анус прямо к твоему лицу: [helena.speechNoEffects(~Ох!~ Давай, [pc.name]! Соси мой зад!)]
 		</p>
 		<p>
-			More than happy to do as she asks, you tightly press your [pc.lips] over Helena's asshole and start passionately making out with her virgin hole. From the lewd moans and desperate panting noises drifting down from above, you can tell that she's going to be eager to do a lot more anal play with you in the future...
+			С радостью выполняя её просьбу, ты плотно прижимаешься своим [pc.lips] к анусу Helena и начинаешь страстно ласкать её девственную дырочку языком. Судя по похотливым стонам и отчаянному сопению, доносящимся сверху, можно понять, что в будущем она будет только рада еще более долгим анальным играм с тобой...
 		</p>
 	#ELSE
 		<p>
-			Wanting to get a taste of Helena's ass, you suggest that you could perform anilingus on her again. Hearing what it is you want, the regal harpy bites her lips and playfully teases, [helena.speechNoEffects(Oh, my pussy isn't good enough for you, is it? You want to stick your tongue up my ass instead?)]
+			Желая попробовать на вкус задницу Helena, ты предлагаешь снова заняться анилингусом. Услышав твои желания, величественная гарпия закусывает губу и игриво дразнит тебя: [helena.speechNoEffects(О, неужели моей киски тебе недостаточно? Хочешь вместо этого засунуть язык мне в задницу?)]
 		</p>
 		<p>
-			Confirming that that's what you want, you can't help but smile as Helena giggles and turns around, before stepping over to lean against a nearby wall and pushing her [helena.assSize] ass out towards you. Looking back over her shoulder, she lifts her beautiful white tail feathers to present you with
+			Подтвердив свои намерения, ты невольно улыбаешься, пока Helena хихикает и разворачивается. Она подходит к стене, облокачивается на неё и выставляет свою [helena.assSize] задницу тебе навстречу. Оглянувшись через плечо, она приподнимает свои прекрасные белые перья хвоста, чтобы явить тебе
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 the cloaca between her legs, and as you drop down behind her and press your [pc.lips+] against the lower part of her bird-like slit, she moans,
+				 клоаку между ног, и когда ты опускаешься позади неё и прижимаешься своим [pc.lips+] к нижней части её птичьей щели, она стонет,
 			#ELSE
-				 her butt, and as you drop down behind her and press your [pc.lips+] against her exposed asshole, she moans,
+				 её задницу, и когда ты опускаешься позади неё и прижимаешься своим [pc.lips+] к её обнаженному анусу, она стонет,
 			#ENDIF
-			 [helena.speechNoEffects(~Mmm!~ That's it! ~Ooh!~ Eat my ass!)]
+				 [helena.speechNoEffects(~Ммм!~ Вот так! ~Ооо!~ Лижи мою задницу!)]
 		</p>
 		<p>
-			More than happy to do as she asks, you tightly press your [pc.lips] over Helena's asshole and start passionately licking and kissing her rear entrance. From the lewd moans and desperate panting noises which start drifting down from above, you can tell that she's as happy as ever to receive this kind of oral attention from you...
+			С радостью исполняя её просьбу, ты плотно прижимаешься своим [pc.lips] к анусу Helena и начинаешь страстно вылизывать и целовать её заднее отверстие. По похотливым стонам и отчаянному сопению, доносящемуся сверху, ты понимаешь, что она просто счастлива получать от тебя такое оральное ласкание...
 		</p>
 	#ENDIF
 	]]>
@@ -719,44 +718,44 @@
 	<!-- Blowjob -->
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_RECEIVE_BLOWJOB_FIRST_TIME"><![CDATA[
 	<p>
-		Thinking that you should give Helena her first experience of what it's like to suck cock, you tell her that you want her to drop to her knees and give you a blowjob. Although she's eager to engage in other lewd acts, the thought of having a cock in her mouth causes the harpy matriarch to nervously ask, [helena.speechNoEffects(Y-You really want me to... Suck your cock?)]
+		Решив, что пора дать Helena её первый опыт сосания члена, ты говоришь ей, что хочешь, чтобы она опустилась на колени и отсосала тебе. Хотя она жаждет других развратных забав, мысль о члене во рту заставляет матрону гарпий нервно спросить: [helena.speechNoEffects(Т-ты правда хочешь, чтобы я... отсосала тебе?)]
 	</p>
 	<p>
-		After replying in the affirmative, you give the hesitant harpy a helping hand by pushing her down onto her knees in front of you.
+		Получив утвердительный ответ, ты помогаешь нерешительной гарпии, подталкивая её на колени перед собой.
 		#IF(pc.isTaur())
-			 Reassuring her that she'll be able to handle your feral [pc.cockRace] cock, you step forwards so that Helena is kneeling beneath your lower [pc.legRace] body.
+			 Уверяя её, что она легко справится с твоим диким [pc.cockRace] членом, ты делаешь шаг вперед, так что Helena оказывается на коленях перед твоим низом [pc.legRace].
 		#ELSE
-			 Reassuring her that she'll be fine, you lean back against a nearby wall and present Helena with your [pc.cockSize] cock.
+			 Успокаивая её, ты прислоняешься спиной к ближайшей стене и подставляешь Helena свой [pc.cockSize] член.
 		#ENDIF
-		 Letting out a nervous sigh, she shuffles forwards until her mouth is hovering right in front of your rapidly-hardening shaft, before stuttering, [helena.speechNoEffects(G-Give me a moment...)]
+			 Нервно вздохнув, она подается вперед, пока её рот не замирает прямо перед твоим стремительно твердеющим членом, после чего она заикается: [helena.speechNoEffects(Д-дай мне секунду...)]
 	</p>
 	<p>
-		Letting her do this at her own pace, you wait while Helena hesitantly leans forwards to plant a gentle kiss on the tip of your cock. Encouraged by the appreciative [pc.moan] that you let out, the harpy matriarch shuffles a little closer, before sticking out her tongue and giving your [pc.cockGirth] shaft a long, wet lick. Clearly enraptured by this new experience, Helena quickly steps up the pace, and after giving your cock another few licks, she presses her [helena.lipSize], juicy lips against the [pc.cockHead+] of your cock and gives it another wet kiss. As you start to let out [pc.a_moan+], the horny harpy giggles in excitement, before opening wide and taking you into her mouth.
+		Позволив ей действовать в её собственном темпе, ты ждёшь, пока Helena нерешительно подаётся вперёд, чтобы запечатлеть нежный поцелуй на кончике твоего члена. Воодушевлённая твоим одобрительным [pc.moan], матрона гарпий пододвигается чуть ближе, после чего высовывает язык и проводит долгим, влажным языком по твоему [pc.cockGirth] стволу. Очевидно, будучи в полном восторге от этого нового опыта, Helena быстро ускоряется, и, ещё несколько раз лизнув твой член, прижимает свои [helena.lipSize] сочные губы к [pc.cockHead+] твоего члена и снова влажно целует его. Когда ты начинаешь издавать [pc.a_moan+], похотливая гарпия возбуждённо хихикает, а затем широко открывает рот и заглатывает тебя целиком.
 	</p>
 	<p>
-		From the hungry, squelching moans which she starts making as she takes your throbbing shaft down her throat, you can tell that Helena's very much enjoying the experience of sucking cock...
+		По голодным, чавкающим стонам, которые она начинает издавать, когда заглатывает твой пульсирующий член глубоко в горло, ты понимаешь, что Helena очень даже наслаждается процессом отсасывания...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_RECEIVE_BLOWJOB_EXPERIENCED"><![CDATA[
 	<p>
-		Thinking that it would be good to get Helena to suck your cock again, you tell her that you want her to drop to her knees and give you a blowjob. Flashing you a cheeky smile as you say this, the lewd harpy matriarch blows you a wet kiss and teases, [helena.speechNoEffects(You want these lips wrapped around your cock again, hmm?)]
+		Подумав, что было бы неплохо заставить Helena снова отсосать тебе, ты говоришь ей, что хочешь, чтобы она опустилась на колени и сделала тебе минет. Одарив тебя дерзкой улыбкой на этих словах, похотливая матрона гарпий посылает тебе воздушный поцелуй и дразнит: [helena.speechNoEffects(Хочешь, чтобы эти губки снова обхватили твой член, мм?)]
 	</p>
 	<p>
-		After you've replied in the affirmative, Helena quickly drops down onto her knees in front of you,
+		Получив утвердительный ответ, Helena быстро опускается перед тобой на колени,
 		#IF(pc.isTaur())
-			 before impatiently shuffling forwards beneath your lower [pc.legRace] body.
+			 прежде нетерпеливо пододвигаясь вперёд под твоим нижним [pc.legRace] телом.
 		#ELSE
-			 and as you lean back against a nearby wall and present her with your [pc.cockSize] cock, she lets out a hungry moan and impatiently shuffles forwards.
+			 и когда ты откидываешься на ближайшую стену, подставляя ей свой [pc.cockSize] член, она издаёт голодный стон и нетерпеливо пододвигается ближе.
 		#ENDIF
-		 With her mouth now hovering right in front of your rapidly-hardening shaft, she licks her lips and exclaims, [helena.speechNoEffects(~Mmm!~ That's right, get nice and hard for me!)]
+		 Теперь, когда её рот замер прямо перед твоим стремительно твердеющим членом, она облизывает губы и восклицает: [helena.speechNoEffects(~Ммм!~ Вот так, становись совсем твердым для меня!)]
 	</p>
 	<p>
-		Only having to wait another couple of seconds until you're completely erect, Helena lets out a hungry moan as she leans forwards to plant a big wet kiss on the tip of your cock. Encouraged by the appreciative [pc.moan] that you let out, the harpy matriarch slides her tongue out to give your [pc.cockGirth] shaft a series of long, wet licks. Not able to hold back any longer, she giggles in excitement, before opening wide and greedily taking your hot cock into her mouth.
+		Подождав всего пару секунд, пока ты не встанешь в полную силу, Helena издает голодный стон и подается вперед, чтобы запечатлеть долгий влажный поцелуй на самой головке твоего члена. Воодушевленная твоим довольным [pc.moan], матка гарпий высовывает язык и проводит серией долгих, мокрых мазков по твоему [pc.cockGirth] стволу. Больше не в силах сдерживаться, она возбужденно хихикает, а затем широко открывает рот и жадно заглатывает твой горячий член.
 	</p>
 	<p>
-		From the hungry, squelching moans which she starts making as she takes your throbbing shaft down her throat, you can tell that Helena's very much enjoying the opportunity to suck your cock again...
+		По голодным, хлюпающим стонам, которые она издает, когда заглатывает твой пульсирующий член глубоко в глотку, ты понимаешь, что Helena в полном восторге от возможности снова отсосать тебе...
 	</p>
 	]]>
 	</htmlContent>
@@ -764,44 +763,44 @@
 	<!-- Cunnilingus (Helena performing) -->
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_RECEIVE_CUNNILINGUS_FIRST_TIME"><![CDATA[
 	<p>
-		Thinking that you should give Helena her first experience of what it's like to perform cunnilingus, you tell her that you want her to drop to her knees and eat you out. Although she's eager to engage in other lewd acts, the thought of performing oral causes the harpy matriarch to nervously ask, [helena.speechNoEffects(Y-You really want me to do that?)]
+		Решив, что пора дать Helena её первый опыт куннилингуса, ты говоришь ей, чтобы она опустилась на колени и отлизала тебя. Хотя она жаждет других развратных ласк, мысль о минете заставляет матку гарпий нервно спросить: [helena.speechNoEffects(Т-ты правда хочешь, чтобы я это сделала?)]
 	</p>
 	<p>
-		After replying in the affirmative, you give the hesitant harpy a helping hand by pushing her down onto her knees in front of you.
+		Получив утвердительный ответ, ты помогаешь нерешительной гарпии, подталкивая её на колени перед собой.
 		#IF(pc.isTaur())
-			 Reassuring her that she'll be able to handle your feral [pc.pussyRace] pussy, you turn around and step back so that Helena is kneeling behind your lower [pc.legRace] body.
+			 Уверяя её, что она справится с твоей дикой [pc.pussyRace] киской, ты разворачиваешься и отступаешь назад, так чтобы Helena оказалась на коленях позади твоей нижней части [pc.legRace] тела.
 		#ELSE
-			 Reassuring her that she'll be fine, you lean back against a nearby wall and present Helena with your [pc.pussy+].
+			 Успокоив её, ты прислоняешься спиной к ближайшей стене и подставляешь Helena свою [pc.pussy+].
 		#ENDIF
-		 Letting out a nervous sigh, she shuffles forwards until her mouth is hovering right in front of your hot cunt, before stuttering, [helena.speechNoEffects(G-Give me a moment...)]
+		Нервно вздохнув, она подается вперед, пока ее рот не замирает прямо перед твоей горячей киской, после чего она заикается: [helena.speechNoEffects(Д-дай мне минутку...)]
 	</p>
 	<p>
-		Letting her do this at her own pace, you wait while Helena hesitantly leans forwards to plant a gentle kiss on your [pc.labia+]. Encouraged by the appreciative [pc.moan] that you let out, the harpy matriarch shuffles a little closer, before sticking out her tongue and giving your [pc.clit+] a short, wet lick. Discovering that she likes this new experience, Helena quickly steps up the pace, and after giving your clit another few licks, she presses her [helena.lipSize], juicy lips against your feminine sex and starts passionately kissing your [pc.labia+]. As you let out [pc.a_moan+], the horny harpy greedily pushes her tongue into your [pc.pussy+] and starts enthusiastically eating you out.
+		Позволяя ей действовать в ее собственном темпе, ты ждешь, пока Helena нерешительно наклоняется вперед, чтобы запечатлеть нежный поцелуй на твоей [pc.labia+]. Воодушевленная твоим благодарным [pc.moan], матрона гарпий пододвигается чуть ближе, после чего высовывает язык и делает короткий влажный лизь по твоей [pc.clit+]. Поняв, что ей нравится этот новый опыт, Helena быстро ускоряется, и, еще несколько раз лизнув твой клитор, прижимает свои [helena.lipSize] сочные губы к твоей женской щелочке и начинает страстно целовать твою [pc.labia+]. Когда ты издаешь [pc.a_moan+], похотливая гарпия жадно просовывает язык в твою [pc.pussy+] и с энтузиазмом принимается тебя ласкать...
 	</p>
 	<p>
-		From the hungry, wet moans which she immediately starts making, you can tell that Helena's very much enjoying the experience of performing oral on you...
+		По голодным, влажным стонам, которые она тут же начинает издавать, ты понимаешь, что Helena очень даже наслаждается процессом куннилингуса...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_RECEIVE_CUNNILINGUS_EXPERIENCED"><![CDATA[
 	<p>
-		Thinking that it would be good to get Helena to perform cunnilingus on you again, you tell her that you want her to drop to her knees and eat you out. Flashing you a cheeky smile as you say this, the lewd harpy matriarch blows you a wet kiss and teases, [helena.speechNoEffects(You want to feel my tongue thrusting deep into your pussy again, hmm?)]
+		Подумав, что было бы неплохо снова заставить Helena заняться куннилингусом, ты говоришь ей, что хочешь, чтобы она опустилась на колени и отсосала тебе киску. Одарив тебя дерзкой улыбкой на этих словах, похотливая матрона гарпий посылает тебе влажный воздушный поцелуй и дразнит: [helena.speechNoEffects(Ты хочешь снова почувствовать, как мой язык проникает глубоко в твою киску, ммм?)]
 	</p>
 	<p>
-		After you've quickly replied in the affirmative, Helena drops down onto her knees in front of you,
+		После того как ты быстро ответила утвердительно, Helena опускается перед тобой на колени,
 		#IF(pc.isTaur())
-			 before impatiently shuffling around behind your lower [pc.legRace] body.
+			 нетерпеливо ерзая позади твоего нижнего [pc.legRace].
 		#ELSE
-			 and as you lean back against a nearby wall and present her with your [pc.pussy+], she lets out a hungry moan and impatiently shuffles forwards.
+			 и когда ты откидываешься на ближайшую стену, подставляя ей свою [pc.pussy+], она издает голодный стон и нетерпеливо подается вперед.
 		#ENDIF
-		 With her mouth now hovering right in front of your hot cunt, she licks her lips and exclaims, [helena.speechNoEffects(~Mmm!~ That's right, let me get a taste of your pussy!)]
+		 Теперь, когда ее рот завис прямо перед твоей горячей киской, она облизывает губы и восклицает: [helena.speechNoEffects(~Ммм!~ Вот так, дай-ка мне попробовать твою киску!)]
 	</p>
 	<p>
-		Clearly eager to get started, Helena lets out a hungry moan as she leans forwards to plant a big wet kiss on your [pc.labia+]. Encouraged by the appreciative [pc.moan] that you let out, the harpy matriarch sticks out her tongue and gives your [pc.clit+] a series of short, wet licks. Not able to hold back any longer, she presses her [helena.lipSize], juicy lips against your feminine sex, and after taking a few moments to passionately kiss your [pc.labia+], she greedily pushes her tongue into your [pc.pussy+] and starts enthusiastically eating you out.
+		Очевидно жаждущая начать, Helena издает голодный стон и наклоняется вперед, чтобы запечатлеть долгий влажный поцелуй на твоей [pc.labia+]. Воодушевленная твоим довольным [pc.moan], матрона гарпий высовывает язык и осыпает твою [pc.clit+] серией коротких влажных лизков. Больше не в силах сдерживаться, она прижимается своими [helena.lipSize] сочными губами к твоей женской щелочке, и, страстно поцеловав твою [pc.labia+], жадно просовывает язык в твою [pc.pussy+] и с энтузиазмом принимается тебя вылизывать.
 	</p>
 	<p>
-		From the hungry, wet moans which she immediately starts making, you can tell that Helena's very much enjoying the opportunity to eat you out again...
+		По ее мгновенным голодным и влажным стонам можно понять, что Helena в полном восторге от возможности снова тебя вылизать...
 	</p>
 	]]>
 	</htmlContent>
@@ -809,154 +808,154 @@
 	<!-- Sex -->
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_RIDDEN"><![CDATA[
 	<p>
-		Wanting to make the most of this opportunity, you tell Helena that you want to fuck her again. Hearing what it is you're saying, the dominant harpy grins at you as she runs her feathered fingers down over her pussy, before lewdly teasing, [helena.speechNoEffects(You want to pound my [helena.pussyCapacity], wet pussy again, hmm?)]
+		Желая использовать этот шанс по максимуму, ты говоришь Helena, что хочешь снова ее трахнуть. Услышав твои слова, доминантная гарпия ухмыляется тебе, проводя пернатыми пальцами по своей киске, а затем похотливо дразнит: [helena.speechNoEffects(Хочешь снова оттрахать мою [helena.pussyCapacity], мою мокрую киску, ммм?)]
 	</p>
 	<p>
-		After you've quickly replied in the affirmative, Helena smirks at you and sharply orders, [helena.speechNoEffects(In that case, get down on your back and present me with your cock. I'm going to be the one on top.)]
+		Стоит тебе быстро согласиться, как Helena ухмыляется и резко приказывает: [helena.speechNoEffects(В таком случае, ложись на спину и выстави мне свой член. Сверху буду я.)]
 	</p>
 	#IF(pc.isTaur())
 		<p>
-			As you have the lower body of [pc.a_legRace], lying down and rolling over onto your back is a somewhat awkward manoeuvre, but with the promise of getting to sink your [pc.cock+] into Helena's royal pussy, you're more than happy to put up with the minor discomfort. Checking to make sure that you aren't going to crash into a table or some other piece of furniture, you kneel down onto all fours, before rolling over and presenting Helena with both your vulnerable underbelly and rapidly-hardening cock.
+		Поскольку твоя нижняя часть тела — это [pc.a_legRace], лечь и перевернуться на спину — маневр довольно неуклюжий, но в предвкушении того, что ты сможешь вонзить свой [pc.cock+] в королевскую киску Helena, ты с радостью терпишь этот легкий дискомфорт. Убедившись, что ты не врежешься в стол или другую мебель, ты встаешь на четвереньки, а затем переворачиваешься, подставляя Helena свой уязвимый живот и быстро твердеющий член.
 		</p>
 		<p>
-			Licking her lips in anticipation of what's to come, the harpy matriarch grabs hold of your rear legs, before stepping forwards and sinking down to perch on your stomach. Lifting her hips, she lets out an eager moan as she starts rubbing her wet pussy up and down the length of your hard shaft. Displaying the dominant streak which you awoke inside of her, she lets out a little laugh as she commands, [helena.speechNoEffects(Go on, [pc.name], beg for my pussy!)]
+		Облизывая губы в предвкушении грядущего, матка гарпий хватает тебя за задние лапы, делает шаг вперед и опускается, усаживаясь тебе на живот. Приподняв бедра, она издает жадный стон и начинает тереться своей влажной киской о твой твердый ствол. Демонстрируя ту самую тягу к доминированию, которую ты пробудил в ней, она тихо смеется и командует: [helena.speechNoEffects(Ну же, [pc.name], умоляй о моей киске!)]
 		</p>
 	#ELSE
 		<p>
-			Deciding that it's best to do as you're asked, you lie down on a nearby rug, presenting Helena with your rapidly-hardening cock. Licking her lips in anticipation of what's to come, the harpy matriarch steps forwards and sinks down to perch on your stomach. Lifting her hips, she lets out an eager moan as she moves back and starts rubbing her wet pussy up and down the length of your hard shaft. Displaying the dominant streak which you awoke inside of her, she lets out a little laugh as she commands, [helena.speechNoEffects(Go on, [pc.name], beg for my pussy!)]
+			Решив, что лучше сделать так, как тебя просят, ты ложишься на лежащий рядом ковер, выставляя перед Helena свой стремительно твердеющий член. Предвкушая грядущее, матрона гарпий облизывает губы, делает шаг вперед и опускается тебе на живот. Приподняв бедра, она издает жадный стон и, двигаясь @@H*@@, начинает тереться своей влажной киской по всей длине твоего твердого ствола. Проявляя ту самую властность, которую ты пробудил в ней, она издает короткий смешок и командует: [helena.speechNoEffects(Давай же, [pc.name], умоляй о моей киске!)]
 		</p>
 	#ENDIF
 	<p>
-		Feeling extremely turned on and desperate to feel your cock slip inside Helena's hot cunt, you obediently [pc.moan], [pc.speech(Please, Helena! I want your pussy! Fuck me already!)]
+		Чувствуя дикое возбуждение и отчаянное желание ощутить, как твой член входит в горячую щель Helena, ты послушно [pc.moan]: [pc.speech(Пожалуйста, Helena! Я хочу твою киску! Трахни меня уже!)]
 	</p>
 	<p>
-		Satisfied by your response, the regal harpy slides her hips forwards, before reaching down to position the [pc.cockHead+] of your cock up against her [helena.labia+]. Flashing you one last cheeky grin, she sinks down, spearing her [helena.pussy+] on your [pc.cock+] and causing you to let out [pc.a_moan+]. Joining her own horny [helena.moans] with yours, Helena starts dominantly sliding up and down on your cock, giving you exactly what it is you wanted...
+		Удовлетворенная твоим ответом, величественная гарпия подается бедрами вперед, а затем наклоняется, чтобы прижать [pc.cockHead+] твоего члена к своей [helena.labia+]. Одарив тебя последней лукавой ухмылкой, она опускается, насаживая свою [helena.pussy+] на твой [pc.cock+], отчего ты издаешь [pc.a_moan+]. Соединив свою похотливую [helena.moans] с твоей, Helena начинает властно двигаться вверх и вниз на твоем члене, давая тебе именно то, чего ты так жаждал...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_RIDDEN_ANAL"><![CDATA[
 	<p>
-		Wanting to make the most of this opportunity, you tell Helena that you want to fuck her ass again. Hearing what it is you're saying, the dominant harpy grins at you and teases, [helena.speechNoEffects(You mean you're not interested in my hot little pussy, hmm?)]
+		Желая использовать этот шанс по максимуму, ты говоришь Helena, что хочешь снова трахнуть её в зад. Услышав твои слова, доминантная гарпия ухмыляется и дразнит тебя: [helena.speechNoEffects(Ты хочешь сказать, что тебе не интересна моя горячая маленькая киска, мм?)]
 	</p>
 	<p>
-		Before you can reply, Helena smirks at you and sharply orders, [helena.speechNoEffects(If it's my ass you want, then you're to get down on your back and present me with your cock. I'm going to be the one on top.)]
+		Не успеваешь ты ответить, как Helena самодовольно ухмыляется и резко приказывает: [helena.speechNoEffects(Если тебе нужна моя задница, то ложись на спину и выставляй свой член. Сверху буду я.)]
 	</p>
 	#IF(pc.isTaur())
 		<p>
-			As you have the lower body of [pc.a_legRace], lying down and rolling over onto your back is a somewhat awkward manoeuvre, but with the promise of getting to sink your [pc.cock+] into Helena's royal butt, you're more than happy to put up with the minor discomfort. Checking to make sure that you aren't going to crash into a table or some other piece of furniture, you kneel down onto all fours, before rolling over and presenting Helena with both your vulnerable underbelly and rapidly-hardening cock.
+		Поскольку нижняя часть твоего тела принадлежит к [pc.a_legRace], лечь и перевернуться на спину — маневр довольно неуклюжий, но в предвкушении того, что ты сможешь вонзить свой [pc.cock+] в королевскую задницу Helena, ты с радостью терпишь этот легкий дискомфорт. Убедившись, что не врежешься в стол или другую мебель, ты встаешь на четвереньки, а затем переворачиваешься на спину, подставляя Helena свой уязвимый живот и стремительно твердеющий член.
 		</p>
 		<p>
-			Instead of positioning herself over your groin, however, the dominant harpy moves forwards to stand over your head, before sinking down onto her knees and planting her
+			Однако вместо того, чтобы устроиться над твоим пахом, доминантная гарпия проходит вперед и встает над твоей головой, прежде чем опуститься на колени и плотно прижаться своей
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 cloaca
+				 клоаку
 			#ELSE
 				 [helena.ass+]
 			#ENDIF
-			 firmly down over your face. Letting out a soft moan, she orders, [helena.speechNoEffects(Go on, [pc.name]! Eat my ass like you did before!)]
+			 прямо к твоему лицу. Издав тихий стон, она приказывает: [helena.speechNoEffects(Давай, [pc.name]! Лижи мою задницу, как и раньше!)]
 		</p>
 	#ELSE
 		<p>
-			Deciding that it's best to do as you're asked, you lie down on a nearby rug, presenting Helena with your rapidly-hardening cock. Instead of positioning herself over your groin, however, the dominant harpy moves forwards to stand over your head, before sinking down onto her knees and planting her
+			Решив, что лучше всего сделать, как просят, ты ложишься на ближайший ковер, подставляя Helena свой стремительно твердеющий член. Однако вместо того, чтобы устроиться над твоим пахом, доминантная гарпия проходит вперед и встает над твоей головой, прежде чем опуститься на колени и плотно прижаться своей
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 cloaca
+				 клоаку
 			#ELSE
 				 [helena.ass+]
 			#ENDIF
-			 firmly down over your face. Letting out a soft moan, she orders, [helena.speechNoEffects(Go on, [pc.name]! Eat my ass!)]
+			 прямо к твоему лицу. Издав тихий стон, она приказывает: [helena.speechNoEffects(Давай, [pc.name]! Лижи мою задницу!)]
 		</p>
 	#ENDIF
 	<p>
-		With little choice but to do as you're told, you start eagerly kissing and licking Helena's asshole, causing her to let out a series of deep, passionate moans. Once her rear entrance is nicely lubricated by your saliva, she stands up, leaving you gasping for air as she moves down to straddle your stomach. After taking a moment to slide her
+		Почти не имея выбора, кроме как подчиниться, ты с жадностью начинаешь покрывать поцелуями и языком анус Helena, заставляя её издавать глубокие, страстные стоны. Когда её заднее отверстие оказывается хорошо смазано твоей слюной, она встает, оставляя тебя жадно хватать ртом воздух, и опускается, чтобы сесть верхом на твой живот. Потратив мгновение, чтобы проскользнуть своей
 		#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-			 slimy cloaca
+			 склизкой клоакой
 		#ELSE
-			 slimy asshole 
+			 склизким анусом 
 		#ENDIF
-		 up and down over your hard shaft, the regal harpy reaches down to position the [pc.cockHead+] of your cock up against her rear entrance. Flashing you one last cheeky grin, she sinks down, spearing her [helena.asshole+] on your [pc.cock+] and causing you to let out [pc.a_moan+]. Joining her own horny [helena.moans] with yours, Helena starts dominantly sliding up and down on your cock, giving you exactly what it is you wanted...
+	
+вверх и вниз по твоему твердому члену, величественная гарпия наклоняется, чтобы прижать [pc.cockHead+] твоего члена к своему заднему входу. Одарив тебя последней дерзкой ухмылкой, она опускается, насаживая свою [helena.asshole+] на твой [pc.cock+], отчего ты невольно издаешь [pc.a_moan+]. Соединяя свою возбужденную [helena.moans] с твоей, Helena начинает властно двигаться на твоем члене вверх и вниз, даря тебе именно то, чего ты так жаждал...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_FUCK_HER"><![CDATA[
 	<p>
-		Wanting to make the most of this opportunity, you [pc.step] forwards and tell Helena that you're going to fuck her again. Hearing what it is you're saying, the submissive harpy bites her lip and steps over to a nearby table,
+		Желая извлечь из этой возможности максимум, ты [pc.step] вперед и говоришь Helena, что собираешься трахнуть её снова. Услышав твои слова, покорная гарпия прикусывает губу и подходит к ближайшему столу,
 		#IF(helena.isVisiblyPregnant())
-			 before lying back on it and presenting you with her pussy. Rubbing her beautiful wings over her swollen, pregnant belly, she spreads her bird-like legs and teases,
+			 прежде чем лечь на него, подставляя тебе свою киску. Поглаживая свои прекрасные крылья по раздутому, беременному животу, она разводит свои птичьи ножки и дразнит,
 		#ELSE
-			 before bending forwards over it and presenting you with her pussy. Looking back over her shoulder, she teases,
+			 прежде чем наклониться над ним и подставить тебе свою киску. Оглядываясь через плечо, она дразнит,
 		#ENDIF
-		 [helena.speechNoEffects(Come on then, [pc.name], pound my [helena.pussyCapacity], wet pussy!)]
+		 [helena.speechNoEffects(Ну же, [pc.name], вколачивай в мою [helena.pussyCapacity], мокрую киску!)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			More than happy to do as she asks, you rear up on the hind legs and swiftly move forwards to mount her. With your lower [pc.a_legRace]'s body now positioned over the top of the horny harpy, you buck your hips forwards until you feel the [pc.cockHead+] of your cock pushing against her
+			С радостью исполняя её просьбу, ты встаешь на задние лапы и стремительно подаешься вперед, чтобы оседлать её. Теперь твоё тело, расположенное над возбужденной гарпией, [pc.a_legRace], ты резко толкаешь бедрами вперед, пока не чувствуешь [pc.cockHead+] своего члена, упирающегося в её
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 cloaca. Encouraged by the feel of Helena's soft, delicate wings guiding your throbbing shaft to prod at her [helena.labia+], you buck forwards, sinking your hard cock into her [helena.pussy+] and causing her to let out a desperate moan,
-			#ELSE
-				 [helena.labia+]. Not wanting to wait another moment, you immediately buck forwards, sinking your hard cock into her [helena.pussy+] and causing her to let out a desperate moan,
+cloaca. Поддавшись ощущению, когда мягкие, нежные крылья Helena направляют твой пульсирующий член, заставляя тебя тыкаться в её [helena.labia+], ты резко подаёшься вперёд, вонзая свой твёрдый член в её [helena.pussy+] и заставляя её издать отчаянный стон,			#ELSE
+				 [helena.labia+]. Не желая ждать ни мгновения, ты тут же резко подаешься вперед, вонзая свой твердый член в её [helena.pussy+] и заставляя её издать отчаянный стон,
 			#ENDIF
 		#ELSE
-			More than happy to do as she asks, you [pc.step] forwards and press the [pc.cockHead+] of your cock against her
+			С радостью исполняя её просьбу, ты [pc.step] вперед и прижимаешь [pc.cockHead+] своего члена к её
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 cloaca.
+				 клоаке.
 			#ELSE
 				 [helena.labia+].
 			#ENDIF
-			 Not wanting to wait another moment, you immediately buck forwards, sinking your hard cock into her [helena.pussy+] and causing her to let out a desperate moan,
+			 Не желая ждать ни мгновения, ты тут же резко подаешься вперед, вонзая свой твердый член в её [helena.pussy+] и заставляя её издать отчаянный стон,
 		#ENDIF
-		 [helena.speechNoEffects(~Ooh!~ Yes! Fuck me!)]
+		 [helena.speechNoEffects(~Ох!~ Да! Трахни меня!)]
 	</p>
 	<p>
-		Doing as the regal harpy says, you pull back and thrust forwards again, filling her [helena.pussy+] with your [pc.cock+] and letting out [pc.a_moan+]. Continuing to move your hips back and forth, you settle into a steady rhythm as you fuck Helena over the table... 
+		Повинуясь приказам величественной гарпии, ты отстраняешься и снова резко толкаешься вперед, наполняя её [helena.pussy+] своим [pc.cock+] и издавая [pc.a_moan+]. Продолжая двигать бедрами вперед-назад, ты ловишь steady ритм, трахая Helena прямо на столе... 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_FUCK_HER_ANAL"><![CDATA[
 	<p>
-		Wanting to make the most of this opportunity, you [pc.step] forwards and tell Helena that you're going to fuck her ass again. Hearing what it is you're saying, the submissive harpy bites her lip and steps over to a nearby table,
+		Желая использовать эту возможность по максимуму, ты [pc.step] вперед и говоришь Helena, что собираешься снова трахнуть её в задницу. Услышав твои слова, покорная гарпия прикусывает губу и подходит к ближайшему столу,
 		#IF(helena.isVisiblyPregnant())
-			 before lying back on it and presenting you with her
+			 прежде чем откинуться на него и подставить тебе свою
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 cloaca.
+				 клоаке.
 			#ELSE
-				 ass.
+				 задницу.
 			#ENDIF
-			 Rubbing her beautiful wings over her swollen, pregnant belly, she spreads her bird-like legs and teases,
+			 Поглаживая свои прекрасные крылья по раздутому, беременному животу, она разводит свои птичьи ножки и дразнит тебя,
 		#ELSE
-			 before bending forwards over it and presenting you with her
+			 прежде чем наклониться над ним, подставляя тебе свою
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 cloaca.
+				 клоаке.
 			#ELSE
-				 ass.
+				 задницу.
 			#ENDIF
-			 Looking back over her shoulder, she teases,
+			 Оглядываясь через плечо, она дразнит,
 		#ENDIF
-		 [helena.speechNoEffects(Come on, [pc.name]! Eat my ass and get me all nice and wet!)]
+	 [helena.speechNoEffects(Ну же, [pc.name]! Полизай мою задницу, чтобы я хорошенько промокла!)]
 	</p>
 	<p>
-		More than happy to do as she asks, you kneel down and start eagerly kissing and licking Helena's asshole, causing her to let out a series of deep, passionate moans. Once her rear entrance is nicely lubricated by your saliva,
+		С радостью исполняя её просьбу, ты опускаешься на колени и начинаешь жадно целовать и лизать анус Helena, заставляя её издавать серию глубоких, страстных стонов. Как только её задний проход оказывается приятно смазан слюной,
 		#IF(pc.isTaur())
-			 you rear up on the hind legs and swiftly move forwards to mount her. With your lower [pc.a_legRace]'s body now positioned over the top of the horny harpy, you buck your hips forwards until you feel the [pc.cockHead+] of your cock pushing against her
+			 ты встаешь на задние лапы и стремительно подаешься вперед, чтобы оседлать её. Теперь, когда тело твоего нижнего [pc.a_legRace] расположено прямо над возбужденной гарпией, ты толчками подаешь бедра вперед, пока не чувствуешь, как [pc.cockHead+] твоего члена упирается в её
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 slimy cloaca. Encouraged by the feel of Helena's soft, delicate wings guiding your throbbing shaft to prod at her asshole, you buck forwards, sinking your hard cock into her rear entrance and causing her to let out a desperate moan,
+				 склизкую клоаку. Воодушевленный ощущением мягких, нежных крыльев Helena, которые направляют твой пульсирующий член, ты резко подаешься вперед, погружая свой твердый член в её задний проход и заставляя её издать отчаянный стон,
 			#ELSE
-				 slimy rear entrance. Not wanting to wait another moment, you immediately buck forwards, sinking your hard cock into her asshole and causing her to let out a desperate moan,
+				 склизкое заднее отверстие. Не желая ждать ни секунды, ты тут же резко подаешься вперед, вонзая свой твердый член в ее анус, отчего она издает отчаянный стон,
 			#ENDIF
 		#ELSE
-			 you stand up, move forwards and press the [pc.cockHead+] of your cock against her
+			 ты встаешь, делаешь шаг вперед и прижимаешь [pc.cockHead+] своего члена к ее
 			#IF(helena.getGenitalArrangement()==GENITALS_CLOACA)
-				 slimy cloaca.
+				 склизкой клоаке.
 			#ELSE
-				 slimy rear entrance.
+				 склизкое заднее отверстие.
 			#ENDIF
-			 Not wanting to wait another moment, you immediately buck forwards, sinking your hard cock into her asshole and causing her to let out a desperate moan,
+			 Не желая ждать ни секунды, ты тут же резко подаешься вперед, вонзая свой твердый член в ее анус, отчего она издает отчаянный стон,
 		#ENDIF
-		 [helena.speechNoEffects(~Ooh!~ Yes! Fuck me!)]
+		 [helena.speechNoEffects(~Ох!~ Да! Трахни меня!)]
 	</p>
 	<p>
-		Doing as the regal harpy says, you pull back and thrust forwards again, filling her wet asshole with your [pc.cock+] and letting out [pc.a_moan+]. Continuing to move your hips back and forth, you settle into a steady rhythm as you fuck Helena over the table... 
+		Повинуясь словам величественной гарпии, ты отстраняешься и снова мощно входишь в нее, наполняя ее мокрый анус своим [pc.cock+] и издавая [pc.a_moan+]. Продолжая двигать бедрами вперед-назад, ты ловишь steady ритм, трахая Helena прямо на столе... 
 	</p>
 	]]>
 	</htmlContent>
@@ -966,18 +965,18 @@
 	
 	<htmlContent tag="HELENAS_SHOP_BACK_ROOM_AFTER_SEX"><![CDATA[
 	<p>
-		With a deep, contented moan, Helena stands up and moves over to retrieve her discarded thong, before pulling it back on and playfully teasing, [helena.speech(~Mmm!~ You sure know how to satisfy me, [pc.name]...)]
+		С глубоким, удовлетворенным стоном Helena встает и подходит, чтобы поднять свои брошенные трусики, после чего натягивает их обратно и игриво кокетничает: [helena.speech(~Ммм!~ Ты определенно знаешь, как доставить мне удовольствие, [pc.name]...)]
 	</p>
 	<p>
-		Getting your own things in order, you join the regal harpy as she steps over to unlock the door to the back room. Turning to plant one last wet kiss on your cheek, she bats her long eyelashes at you and says,
+		Приведя свои вещи в порядок, ты следуешь за величественной гарпией, пока она подходит к двери, чтобы отпереть заднюю комнату. Повернувшись, чтобы запечатлеть на твоей щеке последний влажный поцелуй, она игриво хлопает ресницами и говорит:
 		#IF(game.getDayOfWeek()==DOW_FRIDAY)
-			 [helena.speech(I won't be able to take any more time off work until later this evening, when I'm expecting you to come and collect me so that we can go on a date together...)]
+			 [helena.speech(Больше отлучиться с работы сегодня не получится, так что жду тебя вечером — придешь за мной, и мы отправимся на свидание...)]
 		#ELSE
-			 [helena.speech(I won't be able to take any more time off work today, but if you come up to my nest this evening, we could always have some more fun in my bedroom...)]
+			 [helena.speech(Сегодня больше отлучиться с работы не выйдет, но если ты заглянешь ко мне в гнездо этим вечером, мы всегда можем еще немного повеселиться в моей спальне...)]
 		#ENDIF
 	</p>
 	<p>
-		Not giving you any time in which to reply, the beautiful harpy opens the door and swiftly strides back out into the shop. Following in her wake, you see Scarlett step forwards to once again stand by her matriarch's side, and you wonder what you should do now...
+		Не давая тебе времени на ответ, прекрасная гарпия распахивает дверь и стремительно выходит обратно в лавку. Следуя за ней, ты видишь, как Scarlett делает шаг вперед, чтобы снова встать подле своей матриарха, и ты гадаешь, что же тебе делать теперь...
 	</p>
 	]]>
 	</htmlContent>
@@ -987,57 +986,57 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT"><![CDATA[
 	<p>
-		Wanting to spend some time with Scarlett, you ask Helena if the raven-harpy could be given a short break from work.
+		Желая провести немного времени со Scarlett, ты спрашиваешь у Helena, можно ли дать этой вороньей гарпии небольшой перерыв в работе.
 		#IF(helena.isSlutty())
-			 Pouting at you in response, the beautiful harpy matriarch whines, [helena.speech(Fine, but you'd better give me some extra attention later...)]
+			 В ответ прекрасная гарпия-матриарх лишь надувает губы и капризно ворчит: [helena.speech(Ладно, но тогда тебе придется уделить мне побольше внимания позже...)]
 		#ELSE
-			 Letting out a short sigh, the beautiful harpy matriarch agrees by saying, [helena.speech(I suppose that would be acceptable, but please don't keep her from her work for too long.)]
+			 Тяжело вздохнув, прекрасная гарпия-матриарх соглашается: [helena.speech(Полагаю, это допустимо, но, пожалуйста, не задерживай её на работе слишком долго.)]
 		#ENDIF
 	</p>
 	<p>
-		As Helena walks off to leave the two of you alone together, Scarlett
+		Когда Helena уходит, оставляя вас двоих наедине, Scarlett
 		#IF(scarlett.isLikesPlayer())
-			 flashes you a rare smile and asks,
+			 одаривает тебя редкой улыбкой и спрашивает:
 			#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettCounterOral))
 				#IF(scarlett.hasPenis())
-					 [scarlett.speech(So, what did you want, [pc.name]? I don't have time for you to suck my cock under the counter again...)]
+					 [scarlett.speech(Ну, чего ты хотел, [pc.name]? У меня нет времени на то, чтобы ты снова сосал мой член под прилавком...)]
 				#ELSE
-					 [scarlett.speech(So, what did you want, [pc.name]? I don't have time for you to eat me out under the counter again...)]
+					 [scarlett.speech(Ну, чего ты хотел, [pc.name]? У меня нет времени на то, чтобы ты снова лизал меня под прилавком...)]
 				#ENDIF
 			#ELSE
 				#IF(scarlett.hasPenis())
-					 [scarlett.speech(So, what did you want, [pc.name]?
+					 [scarlett.speech(Ну, чего ты хотел, [pc.name]?
 					#IF(scarlett.isAttractedTo(pc))
-						 You know, I haven't had my cock sucked all day; how about you help me change that?
+					 Знаешь, мне весь день никто не сосал; как насчет того, чтобы помочь мне это исправить?)
 					#ENDIF
 					)]
 				#ELSE
-					 [scarlett.speech(So, what did you want, [pc.name]?
+					 [scarlett.speech(Ну, чего ты хотел, [pc.name]?
 					#IF(scarlett.isAttractedTo(pc))
-						 You know, I haven't been eaten out yet today; how about you help me change that?
+						 Знаешь, мне сегодня еще никто не отсосал; как насчет того, чтобы ты исправил это?
 					#ENDIF
 					)]
 				#ENDIF
 			#ENDIF
 		#ELSE
-			 scowls at you and rudely asks,
+			 хмурится на тебя и грубо спрашивает,
 			#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettCounterOral))
 				#IF(scarlett.hasPenis())
-					 [scarlett.speech(What the fuck do you want now, [pc.name]? I don't have time to fuck your face under the counter again.)]
+					 [scarlett.speech(Какого хера тебе опять нужно, [pc.name]? У меня нет времени снова трахать твое ебало под прилавком.)]
 				#ELSE
-					 [scarlett.speech(What the fuck do you want now, [pc.name]? I don't have time for you to lick my cunt again.)]
+					 [scarlett.speech(Какого хера тебе опять нужно, [pc.name]? У меня нет времени на то, чтобы ты снова лизал мою киску.)]
 				#ENDIF
 			#ELSE
 				#IF(scarlett.hasPenis())
-					 [scarlett.speech(What the fuck do you want now, [pc.name]?
+					 [scarlett.speech(Какого хера тебе опять нужно, [pc.name]?
 					#IF(scarlett.isAttractedTo(pc))
-						 If you're not here to suck my cock, then you can fuck off.
+						 Если ты здесь не для того, чтобы сосать мой член, то можешь съебаться.)]
 					#ENDIF
 					)]
 				#ELSE
-					 [scarlett.speech(What the fuck do you want now, [pc.name]?
+					 [scarlett.speech(Какого хера тебе опять нужно, [pc.name]?
 					#IF(scarlett.isAttractedTo(pc))
-						 If you're not here to lick my cunt, then you can fuck off.
+						 Если ты здесь не для того, чтобы лизать мою киску, то можешь съебаться.)]
 					#ENDIF
 					)]
 				#ENDIF
@@ -1050,21 +1049,21 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_END"><![CDATA[
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettTalkedTo))
-			Not having anything more to discuss with Scarlett, you tell her that you'd better let her get back on with work.
+			Поняв, что обсуждать с Scarlett больше нечего, ты говоришь ей, что ей лучше вернуться к работе.
 			#IF(scarlett.isLikesPlayer())
-				 Failing to hide the disappointment in her voice, she replies, [scarlett.speech(Oh, ok... I'll call Helena back over.)]
+				 Не в силах скрыть разочарование в голосе, она отвечает: [scarlett.speech(О, ладно... Тогда я позову Helena.)]
 			#ELSE
-				 Failing to hide the relief in her voice, she replies, [scarlett.speech(Fucking finally... I'll call Helena back over.)]
+				 Не в силах скрыть облегчение в голосе, она отвечает: [scarlett.speech(Черт возьми, наконец-то... Позову-ка я к нам Helena.)]
 			#ENDIF
 		#ELSE
-			Not having anything more to discuss with Scarlett, 
+			Поскольку обсуждать с Scarlett больше нечего, 
 		#ENDIF
 	</p>
 	<p>
-		Waving one of her black feathered wings, Scarlett shouts out to Helena that you've finished talking with her. The beautiful matriarch quickly strides over to where you're standing, before scolding her subordinate, [helena.speech(Scarlett! I've told you this a hundred times; don't shout like that in front of the customers!)]
+		Взмахнув одним из своих черных пернатых крыльев, Scarlett выкрикивает Helena, что ты закончил разговор. Прекрасная матриарх стремительно подходит к тебе, а затем отчитывает свою подчиненную: [helena.speech(Scarlett! Я говорила тебе это сотню раз: не ори так при клиентах!)]
 	</p>
 	<p>
-		Shuffling about on her bird-like talons, the raven-harpy mutters an apology to Helena. Letting out a short sigh, the matriarch turns towards you and sweetly asks, [helena.speech(Is there anything else I can help you with today, [pc.name]?)]
+		Переминаясь на своих птичьих когтях, воронья гарпия бормочет извинения перед Helena. С коротким вздохом матриарх поворачивается к тебе и сладко спрашивает: [helena.speech(Могу ли я еще чем-нибудь помочь вам сегодня, [pc.name]?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -1074,30 +1073,30 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_TALK"><![CDATA[
 	<p>
-		Taking advantage of the fact that the two of you now have some time alone together, you try to engage Scarlett in conversation by asking her how her day is going.
+		Пользуясь тем, что теперь вы остались наедине, ты пытаешься завязать с Scarlett разговор, спрашивая, как проходит её день.
 		#IF(scarlett.isLikesPlayer())
-			 Blushing a little as she hears that you're interested in finding out how she is, the raven-harpy hesitantly replies, [scarlett.speech(Oh, well, you know, I guess it's just the same as ever...)]
+			 Слегка покраснев от того, что ты интересуешься её делами, воронья гарпия нерешительно отвечает: [scarlett.speech(О, ну, знаешь... Наверное, всё как обычно...)]
 		#ELSE
-			 Rolling her eyes as she hears your question, the rude harpy snaps, [scarlett.speech(Why the fuck do you care? It's not like you actually give a shit.)]
+			 Закатив глаза на твой вопрос, грубая гарпия огрызается: [scarlett.speech(Какого хера тебе-то какое дело? Ты же всё равно на это насрать можешь.)]
 		#ENDIF
 	</p>
 	<p>
-		Not satisfied with Scarlett's answer, you press her on the point and again ask her how her day has been so far. Convinced by your persistent questioning that you must actually care about her, the raven-harpy
+		Не удовлетворенный ответом Scarlett, ты настаиваешь на своем и снова спрашиваешь, как прошел её день. Убежденная твоим упорством в том, что тебе действительно не всё равно, воронья гарпия
 		#IF(scarlett.isLikesPlayer())
-			 continues to blush as she says, [scarlett.speech(If you really want to know, then I guess I can tell you about my day.)]
+			 продолжает краснеть и произносит: [scarlett.speech(Если тебе правда интересно, то, пожалуй, я расскажу тебе о своём дне.)]
 		#ELSE
-			 lets out an annoyed sigh and says, [scarlett.speech(Fine, if it's what it's going to take to get you to fuck off, then I'll tell you about my day.)]
+			 раздражённо вздыхает и говорит: [scarlett.speech(Ладно, если это единственный способ заставить тебя отъебаться, то я расскажу тебе о своём дне.)]
 		#ENDIF
 	</p>
 	<p>
-		Leaning back against the nearby counter, Scarlett starts to recount everything that's happened to her today. To start with, she explains how she had to wake up early so as to be ready to assist her matriarch with anything she might require of her. After that, she moves on to tell you how that after eating breakfast, she accompanied Helena to work, and from then on she's had a mostly uneventful day.
+		Опершись спиной о ближайшую стойку, Scarlett начинает пересказывать всё, что случилось с ней сегодня. Для начала она объясняет, что ей пришлось проснуться пораньше, чтобы быть готовой помочь своей матриарху во всём, что той может понадобиться. После этого она рассказывает, что после завтрака она сопровождала Helena на работу, и с тех пор её день прошёл довольно спокойно.
 	</p>
 	<p>
-		Although at first she was hesitant to recount all of this to you, by the time she's finished speaking, Scarlett looks and sounds as though she's a lot happier. Letting a brief smile flash across her face,
+		Хотя поначалу она не решалась всё это рассказывать, к концу своего монолога Scarlett выглядит и звучит гораздо счастливее. На её лице промелькнула мимолётная улыбка,
 		#IF(scarlett.isLikesPlayer())
-			 she crosses her wing-like arms and sighs, [scarlett.speech(So, is there anything else you wanted?)]
+			 она скрещивает свои крылоподобные руки на груди и вздыхает: [scarlett.speech(Ну что, ты ещё что-нибудь хотел?)]
 		#ELSE
-			 she crosses her wing-like arms and sighs, [scarlett.speech(Now that that's fucking over, is there anything else you wanted?)]
+			 она скрещивает свои крылоподобные руки на груди и вздыхает: [scarlett.speech(Раз уж с этим дерьмом покончено, ты ещё что-нибудь хотел?)]
 		#ENDIF
 	</p>
 	]]>
@@ -1108,55 +1107,55 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_COUNTER_ORAL"><![CDATA[
 	<p>
-		Wanting to take up Scarlett's offer of performing oral on her, you tell the raven-harpy that you'd be willing to
+		Желая принять предложение Scarlett отсосать ей, ты говоришь вороньей гарпии, что готов
 		#IF(scarlett.hasPenis())
-			 suck her cock.
+			 отсосать ей член.
 		#ELSE
-			 eat her out.
+			 отлизать ей.
 		#ENDIF
-		 Flashing you a devious grin as she hears what it is you're saying, Scarlett briefly glances around to make sure that nobody's paying the two of you any attention, before grabbing you by the [pc.hand] and quickly leading you over behind the shop's counter. Once again checking to make sure that you're not being watched by anyone, Scarlett roughly pushes you down so that you can't be seen by anyone but her.
+		Услышав твои слова, Scarlett одаривает тебя лукавой ухмылкой и быстро оглядывается по сторонам, проверяя, не привлекает ли ваш разговор лишнего внимания. Затем она хватает тебя за [pc.hand] и стремительно уводит за прилавок. Снова убедившись, что за вами никто не наблюдает, Scarlett грубо толкает тебя вниз, чтобы тебя видела только она.
 		#IF(pc.isTaur())
-			 Since you have the lower body of [pc.a_legRace], you find the space under the shop's counter to be a very tight squeeze, but with a little shuffling about, you manage to get into a somewhat comfortable position. 
+			Поскольку у тебя нижняя часть тела [pc.a_legRace], под прилавком оказывается очень тесно, но, немного поерзав, тебе удается устроиться более-менее удобно. 
 		#ELSEIF(pc.getHeightValue()>=200)
-			 Since you're quite tall, you find the space under the shop's counter to be a very tight squeeze, but with a little shuffling about, you manage to get into a somewhat comfortable position. 
+			Из-за твоего высокого роста под прилавком оказывается очень тесно, но, немного поерзав, тебе удается устроиться более-менее удобно. 
 		#ENDIF
 	</p>
 	<p>
-		Grinning down at you, Scarlett lifts the bottom of her dress to reveal that she's wearing a pair of black boyshorts. Stepping a little closer, she hisses, [scarlett.speechNoEffects(What are you waiting for? Pull them down for me!)]
+	Усмехаясь, Scarlett приподнимает подол своего платья, демонстрируя черные боксеры. Сделав шаг ближе, она шипит: [scarlett.speechNoEffects(Чего ты ждешь? Спускай их для меня!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_COUNTER_ORAL_START"><![CDATA[
 	<p>
-		Doing as you're told, you pull down Scarlett's underwear to reveal
+	Повинуясь приказу, ты стягиваешь нижнее белье Scarlett, обнажая
 		#IF(scarlett.getGenitalArrangement()==GENITALS_CLOACA)
-			 her bird-like cloaca.
+			 её птичью клоаку.
 			#IF(scarlett.hasPenis())
-				 Her rapidly-hardening cock is already pushing out from between her folds, and as she bucks her hips forwards to push the [scarlett.cockHead+] against your [pc.lips+], she again hisses,
+				 Её стремительно твердеющий член уже наполовину вылез из складок, и когда она подается бедрами вперед, прижимая свой [scarlett.cockHead+] к твоему [pc.lips+], она снова шипит:
 			#ELSE
-				 Reaching down with one of her black-feathered wings, she spreads her folds to present you with her [scarlett.pussy+]. Bucking her hips forwards, she again hisses,
+				 Просунув одно из своих черных крыльев, она раздвигает складки, подставляя тебе свою [scarlett.pussy+]. Мощно толкнув бедрами вперед, она снова шипит:
 			#ENDIF 
 		#ELSE
 			#IF(scarlett.hasPenis())
-				 her rapidly-hardening cock. Bucking her hips forwards to push the [scarlett.cockHead+] against your [pc.lips+], she again hisses,
+				 её стремительно твердеющий член. Выгибая бедра вперед, чтобы прижаться [scarlett.cockHead+] к твоему [pc.lips+], она снова шипит:
 			#ELSE
-				 her [scarlett.pussy+]. Bucking her hips forwards, she again hisses,
+				 её [scarlett.pussy+]. Выгибая бедра вперед, она снова шипит:
 			#ENDIF
 		#ENDIF
-		 [scarlett.speechNoEffects(Come on! Get started already!)]
+		 [scarlett.speechNoEffects(Давай же! Живее начинай!)]
 	</p>
 	<p>
-		Once again doing as you're told, you lean forwards
+		Снова послушно выполняя приказ, ты наклоняешься вперед,
 		#IF(scarlett.hasPenis())
-			 and open your mouth to deliver a long, wet lick up the length of Scarlett's [scarlett.cock+]. Lapping up the salty bead of precum that's leaking out of the tip of her [scarlett.cock+], you part your [pc.lips+] and take her fully into your mouth. As you start giving her a blowjob, you hear her warning,
+			 и открываешь рот, чтобы провести длинным влажным языком по всей длине [scarlett.cock+] Scarlett. Облизывая соленую каплю предэякулята, сочащуюся с кончика её [scarlett.cock+], ты раздвигаешь свои [pc.lips+] и полностью берешь её в рот. Как только ты начинаешь отсасывать ей, ты слышишь её предостережение:
 		#ELSE
-			 and open your mouth to deliver a long, wet lick up the length of Scarlett's [scarlett.labia+]. Planting a series of wet kisses on her feminine sex, you bury your face between her legs and slide your tongue into her hot, wet cunt. As you start enthusiastically eating her out, you hear her warning,
+			 и открываешь рот, чтобы провести длинным влажным языком по всей длине [scarlett.labia+] Scarlett. Осыпая её женское лоно серией влажных поцелуев, ты утыкаешься лицом между её ног и просовываешь язык в её горячую, влажную киску. Как только ты с энтузиазмом начинаешь её ласкать языком, ты слышишь её предостережение:
 		#ENDIF
-		 [scarlett.speechNoEffects(Stay quiet under there! We can't let anyone find out what's going on, or else we'll both be in for it!)]
+		 [scarlett.speechNoEffects(Тише там! Нельзя, чтобы кто-то узнал, что здесь происходит, иначе нам обоим несдобровать!)]
 	</p>
 	<p>
-		Knowing that what Scarlett is saying is important, you realise that you'd better nor risk making any noise while doing this, or else both you and Scarlett will end up suffering Helena's wrath...
+		Понимая, что слова Scarlett важны, ты осознаешь, что лучше не рисковать и не шуметь, иначе и тебе, и Scarlett придется познать гнев Helena...
 	</p>
 	]]>
 	</htmlContent>
@@ -1166,13 +1165,13 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_AFTER_COUNTER_ORAL"><![CDATA[
 	<p>
-		Satisfied with your performance, Scarlett steps back, before pulling up her boyshorts and flattening down her skirt. Realising that the danger of being discovered still isn't past, you wait under the counter until the raven-harpy hisses, [scarlett.speech(Nobody's looking, get up!)]
+		Довольная твоим старанием, Scarlett отступает, после чего натягивает свои боксеры и разглаживает юбку. Понимая, что опасность быть обнаруженными всё еще велика, ты ждешь под прилавком, пока воронья гарпия не прошипит: [scarlett.speech(Никто не смотрит, вылезай!)]
 	</p>
 	<p>
-		Shuffling forwards and rising to your [pc.feet], you manage to quickly [pc.step] around to the other side of the counter before anyone notices what's going on. Before you and Scarlett can exchange any more words with one another, Helena suddenly catches sight of you, and swiftly glides over from the other side of the store to greet you, [helena.speech(Hello again, [pc.name]. My dear Scarlett here informed me earlier that you'd left the store, but I see that you've now returned. Is there anything that I can help you with?)]
+		Шаркая вперед и поднимаясь во весь свой [pc.feet], ты умудряешься быстро [pc.step] на другую сторону прилавка, прежде чем кто-то заметит, что происходит. Прежде чем вы со Scarlett успеваете обменяться еще хоть парой слов, Helena внезапно замечает тебя и стремительно скользит через весь магазин, чтобы поприветствовать тебя: [helena.speech(Снова здравствуйте, [pc.name]. Моя дорогая Scarlett сообщила мне ранее, что ты уже ушел, но вижу, ты вернулся. Могу я чем-нибудь тебе помочь?)]
 	</p>
 	<p>
-		Moving around to stand just behind her matriarch, Scarlett flashes you a cheeky grin as she joins Helena in waiting to hear what it is you're after next... 
+		Обойдя прилавок, чтобы встать прямо за спиной своей матриарха, Scarlett бросает на тебя дерзкую ухмылку, присоединяясь к Helena в ожидании того, чего же ты захочешь теперь... 
 	</p>
 	]]>
 	</htmlContent>
@@ -1183,28 +1182,28 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettCafeRevealed))
 		<p>
-			Wanting to spend more than just a few minutes talking with Scarlett, you ask her if she'd like to spend her lunch break with you again.
+			Желая провести с Scarlett не всего лишь пару минут, ты спрашиваешь ее, не хочет ли она снова провести свой обеденный перерыв с тобой.
 			#IF(scarlett.isLikesPlayer())
-				 Blushing a little as she hears your suggestion, the raven-harpy replies, [scarlett.speech(I was thinking of going back to the cafe we went to last time, so I guess you could tag along if you want...)]
+				 Слегка покраснев от твоего предложения, воронья гарпия отвечает: [scarlett.speech(Я думала сходить в то же кафе, где мы были в прошлый раз, так что... можешь пойти со мной, если хочешь...)]
 			#ELSE
-				 Letting a look of absolute disgust quickly settle on her face, the rude harpy sneers, [scarlett.speech(Pay for my lunch again, cunt, and I'll consider letting you tag along.)]
+				 На ее лице мгновенно застывает выражение абсолютного отвращения, и грубая гарпия цедит сквозь зубы: [scarlett.speech(Снова заплатишь за мой обед, сучонок, и тогда я, может быть, позволю тебе пойти со мной.)]
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			Wanting to spend more than just a few minutes talking with Scarlett, you ask her if she'd like to spend her lunch break with you.
+			Желая провести с Scarlett не всего лишь пару минут, ты спрашиваешь ее, не хочет ли она провести свой обеденный перерыв с тобой.
 			#IF(scarlett.isLikesPlayer())
-				 Blushing a little as she hears your suggestion, the raven-harpy replies, [scarlett.speech(I usually go and eat at a nearby cafe, so I guess you could tag along if you want...)]
+				 Слегка покраснев от твоего предложения, воронья гарпия отвечает: [scarlett.speech(Обычно я хожу обедать в кафе неподалеку, так что... можешь пойти со мной, если хочешь...)]
 			#ELSE
-				 Letting a look of absolute disgust quickly settle on her face, the rude harpy sneers, [scarlett.speech(You think I'd willingly spend my free time with a cunt like you? Perhaps if you pay for my lunch, I'll consider it.)]
+				 На лице грубой гарпии быстро проступает выражение абсолютного отвращения, и она презрительно скалится: [scarlett.speech(Думаешь, я добровольно стану тратить свое свободное время с такой сучкой, как ты? Может, если угостишь меня обедом, я еще подумаю.)]
 			#ENDIF
 		</p>
 	#ENDIF
 	<p>
 		#IF(scarlett.isLikesPlayer())
-			Telling Scarlett that you'd love to accompany her to the cafe, you patiently wait as she darts off to get Helena's permission to take her lunch break. Quickly securing her matriarch's blessing, the raven-harpy returns to you and excitedly says, [scarlett.speech(Ok, I've got an hour for lunch, so let's go!)]
+			Сказав Scarlett, что ты с удовольствием составишь ей компанию в кафе, ты терпеливо ждешь, пока она срывается с места, чтобы получить разрешение у Helena на обеденный перерыв. Быстро заручившись благословением своей матриарха, воронья гарпия возвращается к тебе и восторженно восклицает: [scarlett.speech(Окей, у меня есть час на обед, так что пошли!)]
 		#ELSE
-			Crossing her black wing-like arms, Scarlett continues to sneer at you as she waits to hear what it is you'll say in response to her demand. If you want to accompany her on her lunch break, then it looks like you'll have to pay up...
+			Скрестив свои черные крылоподобные руки на груди, Scarlett продолжает насмешливо смотреть на тебя, ожидая ответа на свою дерзкую просьбу. Если ты хочешь составить ей компанию во время обеда, похоже, придется раскошелиться...
 		#ENDIF
 	</p>
 	]]>
@@ -1212,10 +1211,10 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_PAY"><![CDATA[
 	<p>
-		Deciding that it's an acceptable price to pay in exchange for having lunch with Scarlett, you hold out a hundred and fifty flames to the raven-harpy. Rudely snatching them out of your [pc.hand], she sneers, [scarlett.speech(That's a good bitch. Now stay here while I go tell Helena where we're going.)]
+		Решив, что это приемлемая цена за обед в компании Scarlett, ты протягиваешь вороньей гарпии сто пятьдесят огней. Грубо выхватив их из твоих [pc.hand], она скалится: [scarlett.speech(Хорошая сучка. Теперь жди здесь, пока я пойду и скажу Helena, куда мы направляемся.)]
 	</p>
 	<p>
-		Doing as you're asked, you patiently wait as the raven-harpy darts off to get Helena's permission to take her lunch break. Quickly securing her matriarch's blessing, Scarlett returns to you and snaps, [scarlett.speech(Ok, I've got an hour for lunch. Come on, bitch, you can tag along.)]
+		Как и было сказано, ты терпеливо ждешь, пока воронья гарпия срывается с места, чтобы получить разрешение у Helena на обеденный перерыв. Быстро заручившись благословением своей матриарха, Scarlett возвращается к тебе и бросает: [scarlett.speech(Окей, у меня есть час на обед. Пошли, сучка, можешь поплестись за мной.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -1223,45 +1222,45 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_CORE"><![CDATA[
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettCafeRevealed))
-			Letting Scarlett lead the way, you accompany her out of Helena's Boutique and down the busy street to the same cafe which the two of you visited last time.
+			Позволив Scarlett вести за собой, ты выходишь из бутика Helena и направляешься по оживленной улице к тому самому кафе, в котором вы были в прошлый раз.
 		#ELSE
-			Letting Scarlett lead the way, you accompany her out of Helena's Boutique and down the busy street to a nearby cafe.
+			Позволив Scarlett вести за собой, ты выходишь из бутика Helena на оживленную улицу и направляешься к ближайшему кафе.
 		#ENDIF
 		#IF(pc.hasCompanions())
-			 Before reaching the entrance, you let Scarlett get a little way ahead of you, before turning to [com.name] and telling [com.herHim] that [com.she]'d better wait outside. Happy enough to be avoiding the prospect of having Scarlett relentlessly insult [com.herHim], your companion readily agrees, and as the raven-harpy pushes open the cafe's front door, [com.she] hangs back and waits outside.
+			Прежде чем достичь входа, ты позволяешь Scarlett немного уйти вперед, после чего поворачиваешься к [com.name] и говоришь [com.herHim], что [com.she] лучше подождать снаружи. Будучи вполне довольным тем, что можно избежать бесконечных оскорблений в адрес [com.herHim] со стороны Scarlett, твой спутник охотно соглашается, и пока ворона-гарпия толкает входную дверь кафе, [com.she] остается позади и ждет на улице.
 		#ELSE
-			 Eager to arrive at her destination, Scarlett doesn't even attempt to strike up a conversation with you, and rudely shoves her way past anyone who dares get in her way as she single-mindedly strides forwards and pushes open the cafe's front door.
+			Стремясь поскорее добраться до места, Scarlett даже не пытается завязать с тобой разговор; она грубо расталкивает всех, кто смеет встать у неё на пути, целеустремленно шагая вперед и распахивая двери кафе.
 		#ENDIF
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettCafeRevealed))
 		<p>
-			Following Scarlett's lead, you enter the busy cafe and join her in sitting down at one of the few empty tables. Having noticed your arrival, the same energetic rabbit-girl waitress from before bounces forwards and asks if she can take your orders. Returning her greeting with the usual angry scowl, Scarlett snaps, [scarlett.speech(Fucking hell, Beth, we've only just sat down!)]
+			Следуя за Scarlett, ты входишь в шумное кафе и садишься за один из немногих свободных столиков. Заметив ваше появление, та же энергичная крольчиха-официантка, что и раньше, подпрыгивает к вам и спрашивает, готовы ли вы сделать заказ. Отвечая на приветствие привычной сердитой гримасой, Scarlett огрызается: [scarlett.speech(Твою мать, Бет, мы же только сели!)]
 		</p>
 		<p>
-			Placing her hands on her hips, the rabbit-girl pouts at Scarlett and whines,
+			Уперев руки в бока, крольчиха дует губы на Scarlett и начинает ныть:
 			#IF(scarlett.hasPenis())
-				 [style.speechFeminine(Stop being so mean, Scarlett! If you keep on acting like this to me, I'll stop letting you hump my ass after work!)]
+				 [style.speechFeminine(Хватит быть такой врединой, Scarlett! Если ты и дальше будешь так со мной обращаться, я перестану давать тебе трахать свою задницу после работы!)]
 			#ELSE
-				 [style.speechFeminine(Stop being so mean, Scarlett! If you keep on acting like this to me, I'll stop going down on you after work!)]
+				 [style.speechFeminine(Хватит быть такой врединой, Scarlett! Если ты и дальше будешь так со мной обращаться, я перестану делать тебе минет после работы!)]
 			#ENDIF
 		</p>
 		<p>
-			[scarlett.speech(As if you'd ever say no to me!)] your companion sneers, before throwing a glance over at you and saying, [scarlett.speech(I'm going to get the sandwiches again. What are you ordering, [pc.name]?)]
+			[scarlett.speech(Как будто ты когда-нибудь мог мне отказать!)] — фыркает твоя спутница, а затем бросает на тебя взгляд и спрашивает: [scarlett.speech(Я снова пойду за сэндвичами. Что будешь заказывать, [pc.name]?)]
 		</p>
 	#ELSE
 		<p>
-			Following Scarlett's lead, you enter the busy cafe and join her in sitting down at one of the few empty tables. Having noticed your arrival, an energetic rabbit-girl waitress bounces forwards and asks if she can take your orders. Flashing her an angry scowl, Scarlett snaps, [scarlett.speech(Give me a fucking minute, Beth, I've only just sat down.)]
+			Следуя за Scarlett, ты входишь в шумное кафе и садишься за один из немногих свободных столиков. Заметив ваше появление, энергичная официантка-крольчиха подпрыгивает к вам и спрашивает, готовы ли вы сделать заказ. Одарив её сердитым взглядом, Scarlett огрызается: [scarlett.speech(Дай мне, блядь, минуту, Beth, я только что села.)]
 		</p>
 		<p>
-			Clearly being on familiar terms with one another, the rabbit-girl places her hands on her hips and pouts at Scarlett, before whining,
+			Очевидно, что они давно знакомы: крольчиха упирает руки в бока и дуется на Scarlett, после чего начинает ныть:
 			#IF(scarlett.hasPenis())
-				 [style.speechFeminine(You're always so mean to me, Scarlett! How many times does a girl have to let you hump their ass before you start acting nicely to them?)]
+				 [style.speechFeminine(Ты вечно такая вредная, Scarlett! Сколько раз девчонка должна позволить тебе оттрахать свою задницу, прежде чем ты начнешь вести себя с ними мило?)]
 			#ELSE
-				 [style.speechFeminine(You're always so mean to me, Scarlett! How many times does a girl have to go down on you before you start acting nicely to them?)]
+				 [style.speechFeminine(Ты вечно такая вредная, Scarlett! Сколько раз девчонка должна отсосать тебе, прежде чем ты начнешь вести себя с ними мило?)]
 			#ENDIF
 		</p>
 		<p>
-			[scarlett.speech(Eugh! You're so annoying! I guess I'll just have the usual sandwich selection,)] your companion snaps, before throwing a glance over at you and asking, [scarlett.speech(What are you getting, [pc.name]?)]
+			[scarlett.speech(Фу! Какая же ты заноза! Ладно, возьму свой обычный набор сэндвичей,)] — бросает твоя спутница, а затем переводит взгляд на тебя и спрашивает: [scarlett.speech(А ты что возьмешь, [pc.name]?)]
 		</p>
 	#ENDIF
 	]]>
@@ -1272,10 +1271,10 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_REFUSE_TO_PAY"><![CDATA[
 	<p>
-		Unwilling to hand over any money to the rude harpy, you tell Scarlett that you're not going to pay for her lunch. With an angry scowl on her face, she responds to your refusal by cursing at you, [scarlett.speech(Fucking cunt! Don't fucking ask me about lunch again unless you're willing to pay!)]
+		Не желая отдавать ни гроша этой грубой гарпии, ты заявляешь Scarlett, что не собираешься платить за её обед. С яростной гримасой на лице она отвечает на твой отказ потоком ругательств: [scarlett.speech(Ебаная сука! Больше даже не смей спрашивать меня об обеде, если не готов платить!)]
 	</p>
 	<p>
-		With the rude harpy continuing to scowl and sneer at you, you wonder what you should say to her next...
+		Пока грубая гарпия продолжает сверлить тебя злобными взглядами и скалиться, ты раздумываешь, что ей ответить...
 	</p>
 	]]>
 	</htmlContent>
@@ -1285,81 +1284,81 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_ARRIVE_EATING_LUNCH"><![CDATA[
 	<p>
-		With not much on the menu that grabs your interest, you decide to play it safe and order the same sandwich selection which Scarlett has gone for. After telling the waitress what you've chosen and handing over the one hundred and fifty flames she asks for, you and Scarlett are left alone while she hurries off to fetch your food.
+		В меню не нашлось ничего, что по-настоящему тебя заинтересовало, поэтому ты решаешь не рисковать и заказываешь тот же набор сэндвичей, что и Scarlett. Сказав официантке свой выбор и отдав запрошенные сто пятьдесят огней, ты остаешься наедине со Scarlett, пока она спешит за вашей едой.
 	#IF(scarlett.isLikesPlayer())
-			 Clearly liking you more than most other people she knows, Scarlett flashes you a slight smile, before slouching down in the chair opposite to yours and asking, [scarlett.speech(So, [pc.name], why did you want to spend lunch with me?)]
+			 Очевидно, ты нравишься ей больше, чем большинство знакомых ей людей, потому что Scarlett слегка улыбается тебе, прежде чем плюхнуться в кресло напротив и спросить: [scarlett.speech(Ну так что, [pc.name], зачем тебе вообще захотелось пообедать со мной?)]
 		</p>
 		<p>
-			Knowing that she's still likely to lose her temper if you don't handle this correctly, you tell Scarlett that you simply wanted to spend some time with her in order to get to know her better. Upon hearing this, the rude harpy's cheeks flush red, and after crossing her wing-like arms, she huffs, [scarlett.speech(Well, I don't mind that, I guess...)] 
+			Понимая, что она наверняка выйдет из себя, если ты не подберешь правильные слова, ты говоришь Scarlett, что просто хотел провести с ней время, чтобы узнать её получше. Услышав это, грубая гарпия заливается краской, скрещивает свои крылатые руки на груди и фыркает: [scarlett.speech(Ну... это мне вроде как не мешает...)] 
 		</p>
 	#ELSE
-			 Despite the fact that you've paid for her lunch, Scarlett still doesn't show any sign of liking you, and as you wait for the waitress to return, she slouches down in the chair opposite to yours and asks,
+			 Несмотря на то, что ты оплатил ей обед, Scarlett всё ещё не подаёт виду, что ты ей симпатичен. Пока вы ждёте официантку, она вальяжно разваливается в кресле напротив и спрашивает:
 			#IF(scarlett.hasPenis())
-				 [scarlett.speech(So go on then, cunt, tell me why the fuck you wanted to ruin my lunch break. Were you hoping to suck my cock or something?)]
+				 [scarlett.speech(Ну давай же, сучка, выкладывай, какого хера ты решил испортить мне обеденный перерыв? Надеялась мой член отсосать или типа того?)]
 			#ELSE
-				 [scarlett.speech(So go on then, bitch, tell me why the fuck you wanted to ruin my lunch break. Were you hoping to get a taste of my cunt or something?)]
+				 [scarlett.speech(Ну давай же, сучка, выкладывай, какого хера ты решил испортить мне обеденный перерыв? Надеялась вкусить мою киску или типа того?)]
 			#ENDIF
 		</p>
 		<p>
-			Knowing that she's likely to lose her temper if you don't handle this correctly, you tell Scarlett that you simply wanted to spend some time with her in order to get to know her better. Upon hearing this, the rude harpy's cheeks flush red, and after crossing her wing-like arms, she huffs, [scarlett.speech(I don't even fucking care... Just don't do anything to piss me off!)] 
+			Понимая, что она, скорее всего, выйдет из себя, если ты не разберешься с этим правильно, ты говоришь Scarlett, что просто хотел провести с ней немного времени, чтобы узнать её получше. Услышав это, грубая гарпия заливается краской, и, скрестив свои крылоподобные руки на груди, она фыркает: [scarlett.speech(Да мне вообще поебать... Просто не делай ничего, что может меня взбесить!)] 
 		</p>
 	#ENDIF
 	<p>
-		At that moment, the rabbit-girl waitress bounces back over to your table, and after placing the sandwiches down in front of the two of you, she cheerily asks, [style.speechFeminine(Is there anything else I can get you?)]
+		В этот момент к вашему столику подпрыгивает официантка — девочка-кролик, и, поставив перед вами сэндвичи, весело спрашивает: [style.speechFeminine(Желаете заказать что-нибудь еще?)]
 	</p>
 	<p>
-		[scarlett.speech(No, Beth, just fucking leave us alone already!)] Scarlett rudely replies, causing the rabbit-girl to playfully pout at her before turning around and skipping off. Turning her attention to the collection of sandwiches in front of her, Scarlett starts greedily wolfing them down. Following her lead, you get tucked into your own plate of food, and spend the next several minutes working your way through the impressive selection of sandwiches.
+		[scarlett.speech(Нет, Бет, просто съебись уже с глаз наших!)] — грубо отвечает Scarlett, заставляя девочку-кролика игриво надуть губки, прежде чем та разворачивается и упрыгивает прочь. Переключив внимание на гору сэндвичей перед собой, Scarlett начинает жадно их поглощать. Следуя её примеру, ты тоже принимаешься за свою порцию еды, и следующие несколько минут уходят на то, чтобы расправиться с этим впечатляющим ассортиментом сэндвичей.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_ARRIVE_NO_LUNCH"><![CDATA[
 	<p>
-		With not much on the menu that grabs your interest, you decide not to order anything. After telling the waitress that it's just Scarlett who's ordering food, the two of you are left alone while she hurries off to fetch your companion's food.
+		В меню не нашлось ничего, что могло бы тебя заинтересовать, поэтому ты решаешь ничего не заказывать. Сказав официантке, что еду заказывает только Scarlett, вы остаетесь вдвоем, пока та спешит принести заказ для твоей спутницы.
 	#IF(scarlett.isLikesPlayer())
-			 Clearly liking you more than most other people she knows, Scarlett flashes you a slight smile, before slouching down in the chair opposite to yours and asking, [scarlett.speech(So, [pc.name], why did you want to spend lunch with me?)]
+			 Очевидно, ты нравишься ей больше, чем большинство знакомых ей людей, потому что Scarlett слегка улыбается тебе, прежде чем плюхнуться в кресло напротив и спросить: [scarlett.speech(Ну так что, [pc.name], зачем тебе вообще захотелось пообедать со мной?)]
 		</p>
 		<p>
-			Knowing that she's still likely to lose her temper if you don't handle this correctly, you tell Scarlett that you simply wanted to spend some time with her in order to get to know her better. Upon hearing this, the rude harpy's cheeks flush red, and after crossing her wing-like arms, she huffs, [scarlett.speech(Well, I don't mind that, I guess...)] 
+			Понимая, что она наверняка выйдет из себя, если ты не подберешь правильные слова, ты говоришь Scarlett, что просто хотел провести с ней время, чтобы узнать её получше. Услышав это, грубая гарпия заливается краской, скрещивает свои крылатые руки на груди и фыркает: [scarlett.speech(Ну... это мне вроде как не мешает...)] 
 		</p>
 	#ELSE
-			 Despite the fact that you've paid for her lunch, Scarlett still doesn't show any sign of liking you, and as you wait for the waitress to return, she slouches down in the chair opposite to yours and asks,
+			 Несмотря на то, что ты оплатил ей обед, Scarlett всё ещё не подаёт виду, что ты ей симпатичен. Пока вы ждёте официантку, она вальяжно разваливается в кресле напротив и спрашивает:
 			#IF(scarlett.hasPenis())
-				 [scarlett.speech(So go on then, cunt, tell me why the fuck you wanted to ruin my lunch break. Were you hoping to suck my cock or something?)]
+				 [scarlett.speech(Ну давай же, сучка, выкладывай, какого хера ты решил испортить мне обеденный перерыв? Надеялась мой член отсосать или типа того?)]
 			#ELSE
-				 [scarlett.speech(So go on then, bitch, tell me why the fuck you wanted to ruin my lunch break. Were you hoping to get a taste of my cunt or something?)]
+				 [scarlett.speech(Ну давай же, сучка, выкладывай, какого хера ты решил испортить мне обеденный перерыв? Надеялась вкусить мою киску или типа того?)]
 			#ENDIF
 		</p>
 		<p>
-			Knowing that she's likely to lose her temper if you don't handle this correctly, you tell Scarlett that you simply wanted to spend some time with her in order to get to know her better. Upon hearing this, the rude harpy's cheeks flush red, and after crossing her wing-like arms, she huffs, [scarlett.speech(I don't even fucking care... Just don't do anything to piss me off!)] 
+			Понимая, что она, скорее всего, выйдет из себя, если ты не разберешься с этим правильно, ты говоришь Scarlett, что просто хотел провести с ней немного времени, чтобы узнать её получше. Услышав это, грубая гарпия заливается краской, и, скрестив свои крылоподобные руки на груди, она фыркает: [scarlett.speech(Да мне вообще поебать... Просто не делай ничего, что может меня взбесить!)] 
 		</p>
 	#ENDIF
 	<p>
-		At that moment, the rabbit-girl waitress bounces back over to your table, and after placing the sandwiches down in front of Scarlett, she cheerily asks, [style.speechFeminine(Is there anything else I can get you?)]
+		В этот момент к вашему столику подпрыгивает официантка — девочка-кролик. Поставив сэндвичи перед Scarlett, она весело спрашивает: [style.speechFeminine(Желаете заказать что-нибудь еще?)]
 	</p>
 	<p>
-		[scarlett.speech(No, Beth, just fucking leave us alone already!)] Scarlett rudely replies, causing the rabbit-girl to playfully pout at her before turning around and skipping off. Turning her attention to the collection of sandwiches in front of her, Scarlett starts greedily wolfing them down, leaving you to spend the next several minutes with little to do other than watch the hungry harpy work her way through her lunch.
+		[scarlett.speech(Нет, Бет, просто отъебись от нас уже!)] — грубо отвечает Scarlett, заставляя девочку-кролика игриво надуть губки, прежде чем та развернется и упрыгает прочь. Переключив внимание на гору сэндвичей перед собой, Scarlett начинает жадно их поглощать, оставляя тебе следующие несколько минут, в которые тебе остается лишь наблюдать за тем, как голодная гарпия расправляется со своим обедом.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMATION_DISCUSSION"><![CDATA[
 	<p>
-		Soon enough, Scarlett's completely cleared her plate, and after leaning back in her chair and letting out a huge burp, she comments, [scarlett.speech(You know, [pc.name], I actually wanted to ask your opinion on something...)]
+		Вскоре Scarlett полностью опустошает тарелку, и, откинувшись на спинку стула и издав громкий рык, она произносит: [scarlett.speech(Знаешь, [pc.name], я вообще-то хотела узнать твое мнение об одной вещи...)]
 	</p>
 	<p>
-		Wondering what that could be, you watch as the raven-harpy produces a small bottle of what looks like a transformative potion, and after she's placed it down on the table in front of her, you listen attentively as she explains,
+		Задаваясь вопросом, что же это может быть, ты наблюдаешь, как воронья гарпия достает маленький флакон, похожий на зелье трансформации. Поставив его на стол перед собой, она начинает внимательно объяснять,
 		#IF(scarlett.hasPenis())
-			 [scarlett.speech(Helena gave this to me for 'being a good girl', and said that it'd make my cock bigger. Pretty much all female harpies prefer their partners' cocks to be as small and feminine as possible, but seeing as all the nest knows that I'm Helena's personal assistant, they won't care if I'm bigger than they normally like. After all, they'll be closer to Helena by association if they get fucked by me, so it's not like having a bigger cock will make me unfuckable. I guess having a bigger cock would be nice, but I'm still not sure whether I should drink this or not...)]
+			 [scarlett.speech(Helena дала это мне за то, что я была «хорошей девочкой», и сказала, что это увеличит мой член. Почти все самки гарпий предпочитают, чтобы члены их партнеров были как можно меньше и женственнее, но раз уж всё гнездо знает, что я личная помощница Helena, им будет плевать, если он окажется больше, чем они привыкли. В конце концов, если они перетрахаются со мной, то станут ближе к Helena благодаря этой связи, так что наличие крупного члена не сделает меня «непригодной для секса». Наверное, иметь член побольше было бы неплохо, но я всё еще не уверена, стоит ли мне это пить...)]
 		#ELSE
-			 [scarlett.speech(Helena gave this to me for 'being a good girl', and said that it'd make me even more feminine, as well as make my tits grow bigger. It's actually really annoying to have big tits when you're trying to fly around and show off to the other harpies, but seeing as all the nest knows that I'm Helena's personal assistant, there's no real need for me to perform any aerobatics. After all, I already have over a dozen harpies willing to do literally anything I ask them just so that they'll be closer to Helena by association. I guess being more attractive would be nice, but I'm still not sure whether I should drink this or not...)]
+			 [scarlett.speech(Helena дала это мне за то, что я была «хорошей девочкой», и сказала, что это сделает меня еще более женственной, а мои сиськи — больше. Вообще-то, иметь огромную грудь довольно мешает, когда пытаешься летать и красоваться перед другими гарпиями, но раз уж всё гнездо знает, что я личная помощница Helena, мне и не нужно заниматься акробатикой в воздухе. В конце концов, у меня уже есть больше дюжины гарпий, готовых на всё, лишь бы быть ближе к Helena через меня. Наверное, стать привлекательнее было бы здорово, но я всё еще не уверена, стоит ли мне это пить...)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(scarlett.isLikesPlayer())
-			As she trails off and falls silent, you realise that Scarlett is wanting to hear your input on this manner. As you consider whether or not to encourage her to drink the potion, she blushes a little and asks, [scarlett.speech(So, what do you think?)]
+			Когда она замолкает, ты понимаешь, что Scarlett хочет услышать твое мнение на этот счет. Пока ты раздумываешь, стоит ли подталкивать её выпить зелье, она слегка краснеет и спрашивает: [scarlett.speech(Ну, что ты думаешь?)]
 		#ELSE
-			As she trails off and falls silent, you realise that Scarlett is wanting to hear your input on this manner. As you consider whether or not to encourage her to drink the potion, she lets out a frustrated sigh and asks, [scarlett.speech(Come on, what do you think?)]
+			Когда её голос затихает, ты понимаешь, что Scarlett хочет услышать твоё мнение на этот счёт. Пока ты раздумываешь, стоит ли подталкивать её к зелью, она разочарованно вздыхает и спрашивает: [scarlett.speech(Ну же, ты что думаешь?)]
 		#ENDIF
 	</p>
 	]]>
@@ -1367,64 +1366,64 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMATION_DISCUSSION_REPEAT"><![CDATA[
 	<p>
-		Soon enough, Scarlett's completely cleared her plate, and after leaning back in her chair and letting out a huge burp, she comments, [scarlett.speech(You know, [pc.name], I've still got that potion Helena gave to me...)]
+		Вскоре Scarlett полностью опустошает свою тарелку, а затем, откинувшись на спинку стула и издав громкую отрыжку, замечает: [scarlett.speech(Знаешь, [pc.name], у меня всё ещё осталось то зелье, которое дала мне Helena...)]
 	</p>
 	<p>
-		Before you can offer a reply, the harpy produces the same small bottle of transformative potion that she showed you before, and after she's placed it down on the table in front of her, she asks,
+		Прежде чем ты успеваешь ответить, гарпия достаёт тот самый маленький флакон с трансформирующим зельем, который показывала тебе раньше, и, поставив его на стол перед собой, спрашивает:
 		#IF(scarlett.hasPenis())
-			 [scarlett.speech(Do you think I should drink it now? Having a bigger cock wouldn't be so bad...)]
+			 [scarlett.speech(Как думаешь, стоит ли мне выпить его прямо сейчас? Небольшой прибавок к члену лишней не будет...)]
 		#ELSE
-			 [scarlett.speech(Do you think I should drink it now? Having bigger boobs wouldn't be so bad...)]
+			 [scarlett.speech(Как думаешь, стоит ли мне выпить его прямо сейчас? Побольше сиськи — это было бы неплохо...)]
 		#ENDIF
 	</p>
 	<p>
-		As she trails off and falls silent, you realise that you've got another chance in which to encourage her to transform herself. Then again, if you're still of the same mind as last time, you could always tell her not to go ahead with drinking it...
+		Когда она замолкает, ты понимаешь, что у тебя есть ещё один шанс убедить её преобразиться. С другой стороны, если ты всё ещё придерживаешься прежнего мнения, ты всегда можешь отговорить её от этого шага...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMATION_APPLIED"><![CDATA[
 	<p>
-		Soon enough, Scarlett's completely cleared her plate, and after leaning back in her chair and letting out a huge burp, she flashes you a cheeky grin and comments,
+		Вскоре Scarlett полностью опустошает свою тарелку, а затем, откинувшись на спинку стула и издав громкую отрыжку, игриво ухмыляется тебе и говорит:
 		#IF(scarlett.hasPenis())
-			 [scarlett.speech(You know, [pc.name], ever since you convinced me to take that potion, my big cock's always desperate for attention. How about you take responsibility for getting me to transform myself and give me a quick handjob?)]
+			 [scarlett.speech(Знаешь, [pc.name], с тех пор как ты убедил меня принять то зелье, мой огромный член вечно требует внимания. Как насчёт того, чтобы взять на себя ответственность за мою трансформацию и немного развлечь меня ручкой?)]
 		#ELSE
-			 [scarlett.speech(You know, [pc.name], ever since you convinced me to take that potion, my horny little cunt's always wet and hungry for attention. How about you take responsibility for getting me to transform myself and give me a quick fingering?)]
+			 [scarlett.speech(Знаешь, [pc.name], с тех самых пор, как ты убедил меня выпить то зелье, моя похотливая киска вечно мокрая и жаждет внимания. Как насчет того, чтобы взять на себя ответственность за мои превращения и хорошенько меня потыкать пальцами?)]
 		#ENDIF
 	</p>
 	<p>
-		Pushing her chair back a little, Scarlett spreads her legs and gestures for you to come and sit down beside her. As there's a large cloth draped over the table, you're sure that nobody would be able to see you
+		Слегка отодвинув стул, Scarlett раздвигает ноги и жестом приглашает тебя присесть рядом. Поскольку стол накрыт большой скатертью, ты уверен, что никто не сможет вас увидеть.
 		#IF(scarlett.hasPenis())
-			 jerking the horny harpy off
+			 лаская возбужденную гарпию
 		#ELSE
-			 fingering the horny harpy
+			 потыкая пальцами в возбужденную гарпию
 		#ENDIF
-		, but if you'd rather not risk it, you could always just say no...
+		, но если не хочешь рисковать, всегда можно просто сказать «нет»...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_NO_TRANSFORMATION"><![CDATA[
 	<p>
-		Not wanting Scarlett to be transformed, you tell her that she shouldn't drink the potion, as she might not be happy with what happens to her. Letting out an annoyed huff and rolling her eyes, the harpy nevertheless listens to what you have to say, and after putting the potion away, she mutters, [scarlett.speech(I'll hold on to it in case I decide to drink it at another time...)]
+		Не желая, чтобы Scarlett превратилась, ты говоришь ей, что лучше не пить зелье, ведь результат может ей не понравиться. Раздраженно фыркнув и закатив глаза, гарпия всё же прислушивается к твоим словам, а убрав зелье, бормочет: [scarlett.speech(Ладно, приберегу его на случай, если захочу выпить в другой раз...)]
 	</p>
 	<p>
-		With still plenty of time left until her lunch break is over, Scarlett sinks down in her chair and lets out a relaxed sigh.
+		До конца её обеденного перерыва еще полно времени, так что Scarlett откидывается на спинку стула и расслабленно вздыхает.
 		#IF(scarlett.isLikesPlayer())
-			 Taking this opportunity to get to know her a little better, you strike up a conversation with the raven-harpy, and much to your delight, she readily starts talking with you about the recent mundane events both in her life and in Dominion as whole.
+			 Пользуясь случаем, чтобы узнать её получше, ты заводишь разговор с вороньей гарпией, и, к твоему delight, она охотно начинает рассказывать тебе о последних повседневных событиях как в её жизни, так и в Dominion в целом.
 		#ELSE
-			 Taking this opportunity to get to know her a little better, you strike up a conversation with the raven-harpy, and much to your delight, she actually proves willing to talk with you about the recent mundane events both in her life and in Dominion as whole.
+			 Пользуясь случаем, чтобы узнать её получше, ты заводишь разговор с вороньей гарпией, и, к твоему огромному удовольствию, она оказывается вполне готовой обсудить с тобой недавние повседневные события — как в её жизни, так и в Dominion в целом.
 		#ENDIF
 	</p>
 	<p>
-		After a good while spent talking with one another in this manner, Scarlett suddenly pushes her chair back and stands up. With a huge stretch of her black-feathered wing-like arms, she declares, [scarlett.speech(It's time for me to get back to work. Helena'll be pissed off if I'm late...)]
+		Проболтав так довольно долго, Scarlett внезапно отодвигает стул и встает. Широко потянувшись своими крылатыми руками в черных перьях, она объявляет: [scarlett.speech(Пора возвращаться к работе. Helena будет в ярости, если я опоздаю...)]
 	</p>
 	<p>
-		Following Scarlett's lead, you stand up and follow her out of the cafe.
+		Следуя примеру Scarlett, ты встаешь и выходишь из кафе вслед за ней.
 		#IF(pc.hasCompanions())
-			 Meeting up with [com.name] again, the three of you set off on your way back to Helena's Boutique...
+			 Снова встретившись с [com.name], вы втроем отправляетесь в путь обратно к Helena's Boutique...
 		#ELSE
-			 [pc.Stepping] back out into the streets of Slaver Alley, the two of you set off on your way back to Helena's Boutique...
+			 [pc.Stepping] снова выходит на улицы Slaver Alley, и вы вдвоем отправляетесь в путь обратно к Helena's Boutique...
 		#ENDIF
 	</p>
 	]]>
@@ -1433,11 +1432,11 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMED"><![CDATA[
 	<p>
 		#IF(scarlett.hasPenis())
-			Thinking that it would be good for Scarlett to have a larger cock, you tell her that she should drink the transformation potion.
+			 Подумав, что Scarlett было бы неплохо иметь член побольше, ты говоришь ей, что ей стоит выпить зелье трансформации.
 		#ELSE
-			Thinking that it would be good for Scarlett to have larger breasts and more feminine features, you tell her that she should drink the transformation potion.
+			 Подумав, что Scarlett было бы неплохо иметь грудь побольше и более женственные черты, ты говоришь ей, что ей стоит выпить зелье трансформации.
 		#ENDIF
-		 Not needing any more convincing than that, the raven-harpy pulls out the bottle's stopper, and after throwing one last glance your way to make sure that you're not tricking her, she brings the vessel up to her waiting lips and quickly downs all of the liquid contained within.
+		 Вороньей гарпии не нужно больше никаких уговоров: она вытаскивает пробку из бутылки и, бросив на тебя последний взгляд, чтобы убедиться, что ты её не обманываешь, подносит сосуд к губам и залпом выпивает всё содержимое.
 	</p>
 	]]>
 	</htmlContent>
@@ -1445,14 +1444,14 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMED_EXTRA"><![CDATA[
 	<p>
 		#IF(scarlett.hasPenis())
-			Thinking that it would be good for Scarlett to have a much larger cock, you tell her that you could spend some of your arcane essences to boost the effects of her transformative potion.
+			Подумав, что Скарлетт не помешал бы куда более внушительный член, ты говоришь ей, что мог бы потратить немного своей арканы, чтобы усилить эффект её трансформирующего зелья.
 		#ELSE
-			Thinking that it would be good for Scarlett to have much larger breasts and far more feminine features, you tell her that you could spend some of your arcane essences to boost the effects of her transformative potion.
+			Подумав, что Скарлетт пошли бы на пользу куда более пышные груди и куда более женственные черты, ты говоришь ей, что мог бы потратить немного своей арканы, чтобы усилить эффект её трансформирующего зелья.
 		#ENDIF
-		 Throwing you a sly smirk, the raven-harpy slides the potion across the table, before saying, [scarlett.speech(Go on then, make it more powerful!)]
+		 Хитро ухмыльнувшись, воронья гарпия пододвигает зелье по столу и произносит: [scarlett.speech(Ну же, сделай его мощнее!)]
 	</p>
 	<p>
-		By channelling ten of your arcane essences into the potion, you're able to boost the potency of its transformative effects. Satisfied with the result of your enchantment, you pass the bottle back to Scarlett, who immediately pulls out the stopper and brings the vessel up to her waiting lips. Flashing you one last smirk, she quickly downs all of the liquid contained within, before slamming the now-empty bottle back down onto the table and letting out a small burp.
+		Направив десять единиц своей арканы в зелье, ты усиливаешь мощь его трансформирующего эффекта. Довольный результатом своего чародейства, ты возвращаешь флакон Скарлетт, которая тут же вытаскивает пробку и подносит сосуд к своим ожидающим губам. Бросив на тебя последнюю лукавую ухмылку, она залпом выпивает всё содержимое, после чего с грохотом ставит пустую бутылку на стол и издает короткий смешок-рыгание.
 	</p>
 	]]>
 	</htmlContent>
@@ -1460,22 +1459,22 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMED_CORE"><![CDATA[
 	<p>
 		#IF(scarlett.hasPenis())
-			[scarlett.speech(~Ooh!~ I feel hot...)] Scarlett half-pants, half-moans, before pushing back on her chair a little and looking down between her legs. Showing no shame, she lifts up the skirt of her dress and pulls her boyshorts to one side, which results in her rapidly-hardening cock to being completely exposed to you. Letting out a devious chuckle, the raven-harpy runs her feathered fingers up and down over the length of her erect shaft, and as she does so, you see it growing in both length and girth. Within moments, it's expanded from being both slender and [style.sizes(8)] in length to being [scarlett.a_cockGirth] and [scarlett.cockLengthValue]. With a delighted grin on her face, the raven-harpy looks up at you and moans, [scarlett.speech(Come and take responsibility for what you've made me do! I want you jerking my big cock off until I cum all over your [pc.hands]!)]
+			[scarlett.speech(~Ох!~ Какая жара...)] Scarlett то полувздыхает, то полустонет, прежде чем слегка откинуться на спинку стула и заглянуть между своих ног. Не выказывая ни капли стыда, она приподнимает подол платья и сдвигает трусики-боксеры набок, в результате чего её стремительно твердеющий член оказывается полностью открыт твоему взору. Издав лукавый смешок, черноволосая гарпия проводит пернатыми пальцами вверх и вниз по всей длине своего эрегированного ствола, и пока она это делает, ты видишь, как он растет и в длину, и в обхвате. Считанные мгновения — и он превращается из стройного и [style.sizes(8)] длинного в [scarlett.a_cockGirth] и [scarlett.cockLengthValue]. С восторженной улыбкой на лице черноволосая гарпия смотрит на тебя и стонет: [scarlett.speech(Иди и возьми на себя ответственность за то, что ты со мной сделал! Я хочу, чтобы ты дрочил мой огромный член, пока я не кончу прямо на твой [pc.hands]!)]
 		#ELSE
-				[scarlett.speech(~Ooh!~ I feel hot...)] Scarlett half-pants, half-moans, before lifting her feathered hands up to her chest and shamelessly groping her small, B-cup breasts. As she feels herself up, you can't help but stare as you see her tits quickly expand and grow into what must be [scarlett.cupSize]-cups. While not large by Dominion standards, they certainly are for a harpy, and Scarlett can't help but coo in delight as she realises that she's now one of the bustiest harpies in all of Helena's flock. While making these happy little noises, her face softens and subtly shifts into being a distinctly more beautiful version of how she looked just a few moments ago.
+				[scarlett.speech(~Ох!~ Какая жара...)] Scarlett то полувздыхает, то полустонет, прежде чем поднести свои пернатые руки к груди и бесстыдно приняться ощупывать свои небольшие груди размера B. Пока она ласкает себя, ты не можешь не пялиться, видя, как её сиськи быстро раздуваются и превращаются в нечто, напоминающее [scarlett.cupSize]-й размер. Пусть по меркам Dominion они и не велики, для гарпии они определенно огромны, и Scarlett не может сдержать нежного воркования от восторга, осознав, что теперь она одна из самых пышногрудых гарпий во всей стае Helena. Издавая эти радостные звуки, она смягчается, и её лицо неуловимо преображается, становясь заметно прекраснее, чем всего несколько мгновений назад.
 			</p>
 			<p>
-				As these changes come to an end, Scarlett suddenly gasps and drops one of her feathered hands down between her bird-like legs. Biting her lip and shuffling about on her chair, she whines, [scarlett.speech(Fuck! I'm so wet down here! Come and take responsibility for what you've made me do! I want you fingering my hot little cunt until I'm squirting all over your [pc.hands]!)]
+			Когда эти изменения подходят к концу, Scarlett внезапно ахает и опускает одну из своих пернатых рук между птичьих ног. Прикусив губу и ерзая на стуле, она скулит: [scarlett.speech(Блядь! Как же я там вся промокла! Иди и возьми на себя ответственность за то, что ты со мной сделал! Я хочу, чтобы ты ласкал мою горячую киску пальцами, пока я не забрызгаю всё твоё [pc.hands]!)]
 		#ENDIF
 	</p>
 	<p>
-		Pulling her chair forwards again, Scarlett spreads her legs and gestures for you to come and sit down beside her. As there's a large cloth draped over the table, you're sure that nobody would be able to see you
+		Снова пододвинув стул вперед, Scarlett раздвигает ноги и жестом приглашает тебя присесть рядом. Поскольку стол накрыт большой скатертью, ты уверен, что никто не сможет вас увидеть.
 		#IF(scarlett.hasPenis())
-			 jerking the horny harpy off
+			 лаская возбужденную гарпию
 		#ELSE
-			 fingering the horny harpy
+			 потыкая пальцами в возбужденную гарпию
 		#ENDIF
-		, but if you'd rather not risk it, you could always just say no...
+		, но если не хочешь рисковать, всегда можно просто сказать «нет»...
 	</p>
 	]]>
 	</htmlContent>
@@ -1486,28 +1485,28 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_EATING_TRANSFORMED_NO_SEX"><![CDATA[
 	<p>
-		Not wanting to
+		Не желая
 		#IF(scarlett.hasPenis())
-			 give Scarlett a handjob
+			делать Scarlett ручной дрочкой
 		#ELSE
-			 finger Scarlett
+			 ласкали Scarlett пальцами
 		#ENDIF
-		 in such a public setting, you tell her that she'll have to make do with masturbating if she's really that horny. Letting out an annoyed huff, the raven-harpy
+		 в таком людном месте, ты говоришь ей, что если она действительно так хочет, ей придется обойтись мастурбацией. Раздраженно фыркнув, воронья гарпия
 		#IF(scarlett.isLikesPlayer())
-			 whines, [scarlett.speech(Fine... I'll just do it myself later...)]
+			 скулит: [scarlett.speech(Ладно... тогда я сама сделаю это позже...)]
 		#ELSE
-			 snaps, [scarlett.speech(It's not like I actually expected a fucking cunt like you to help me out. I'll just do it myself later...)]
+			 огрызается: [scarlett.speech(Не то чтобы я реально ожидала, что такая ебаная сучка, как ты, решит мне помочь. Сама справлюсь позже...)]
 		#ENDIF
 	</p>
 	<p>
-		Before you have a chance to respond, Scarlett suddenly pushes her chair back and stands up. With a huge stretch of her black-feathered wing-like arms, she declares, [scarlett.speech(It's time for me to get back to work. Helena'll be pissed off if I'm late...)]
+		Прежде чем ты успеваешь ответить, Scarlett внезапно отодвигает стул и встает. Широко потянувшись своими черными крылатыми руками, она заявляет: [scarlett.speech(Пора возвращаться к работе. Helena будет в ярости, если я опоздаю...)]
 	</p>
 	<p>
-		Following Scarlett's lead, you stand up and follow her out of the cafe.
+		Следуя примеру Scarlett, ты встаешь и выходишь из кафе вслед за ней.
 		#IF(pc.hasCompanions())
-			 Meeting up with [com.name] again, the three of you set off on your way back to Helena's Boutique...
+			 Снова встретившись с [com.name], вы втроем отправляетесь в путь обратно к Helena's Boutique...
 		#ELSE
-			 [pc.Stepping] back out into the streets of Slaver Alley, the two of you set off on your way back to Helena's Boutique...
+			 [pc.Stepping] снова выходит на улицы Slaver Alley, и вы вдвоем отправляетесь в путь обратно к Helena's Boutique...
 		#ENDIF
 	</p>
 	]]>
@@ -1515,14 +1514,14 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_MASTURBATION_START"><![CDATA[
 	<p>
-		Not wanting to disappoint your feathered friend, you move around to the other side of the table and sit down next to her, before sliding one of your [pc.hands] down under the table to stroke her smooth, bird-like leg. Shuffling a little closer to you, Scarlett reaches down to grab your [pc.hand], before impatiently guiding up between her legs and hissing, [scarlett.speechNoEffects(Come on, get to work!)]
+		Не желая разочаровывать свою пернатую подругу, ты обходишь стол и садишься рядом с ней, прежде чем скользнуть своим [pc.hands] под стол, чтобы погладить её гладкую, птичью ногу. Слегка придвинувшись к тебе, Scarlett тянется вниз, чтобы схватить твой [pc.hand], а затем нетерпеливо направляет его себе между ног и шипит: [scarlett.speechNoEffects(Давай, за дело!)]
 	</p>
 	<p>
-		Doing as you're told,
+		Повинуясь её приказу,
 		#IF(scarlett.hasPenis())
-			 you wrap your [pc.fingers+] around the raven-harpy's erect cock and start jerking her off under the table. Letting out a quiet sigh, Scarlett leans back in her chair and grins as you continue to give her a handjob...
+			 ты обхватываешь свой [pc.fingers+] вокруг эрегированного члена вороной гарпии и начинаешь ласкать её под столом. Тихо вздохнув, Scarlett откидывается на спинку стула и ухмыляется, пока ты продолжаешь делать ей ручной минет...
 		#ELSE
-			 you slide your [pc.fingers+] up and down over the raven-harpy's [scarlett.labia+], before pushing them into her wet pussy and starting to finger her under the table. Letting out a quiet sigh, Scarlett leans back in her chair and grins as you continue to stimulate her horny cunt...
+			 ты водишь своим [pc.fingers+] вверх и вниз по [scarlett.labia+] вороной гарпии, прежде чем втиснуть пальцы в её мокрую киску и начать ласкать её под столом. Тихо вздохнув, Scarlett откидывается на спинку стула и ухмыляется, пока ты продолжаешь стимулировать её возбужденную щелку...
 		#ENDIF
 	</p>
 	]]>
@@ -1534,18 +1533,18 @@
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_AFTER_SEX"><![CDATA[
 	<p>
 		#IF(scarlett.hasPenis())
-			Having had enough of the handjob you've been giving her, Scarlett pushes your [pc.hand] away from her softening cock
+			 Насладившись ручным минетом, Scarlett отстраняет твой [pc.hand] от своего обмякающего члена,
 		#ELSE
-			Having had enough of being fingered, Scarlett pushes your [pc.hand] away from her sopping-wet pussy
+			 Насладившись пальцами, Scarlett отстраняет твой [pc.hand] от своей насквозь промокшей киски
 		#ENDIF
-		 and declares, [scarlett.speech(Good job, [pc.name], that was fun... Now it's time for me to get back to work. Helena'll be pissed off if I'm late...)]
+		 и заявляет: [scarlett.speech(Хорошая работа, [pc.name], было весело... А теперь мне пора возвращаться к работе. Helena разозлится, если я опоздаю...)]
 	</p>
 	<p>
-		Before you have a chance to do anything, Scarlett pulls her boyshorts and dress back into their proper position, before pushing her chair back and standing up. With a huge stretch of her black-feathered wing-like arms, she turns around and sets off towards the cafe's exit. Following her lead, you stand up and follow Scarlett out of the cafe.
+		Прежде чем ты успеваешь что-то предпринять, Scarlett поправляет свои трусики и платье, затем отодвигает стул и встает. С мощным взмахом своих крылатых рук, покрытых черными перьями, она разворачивается и направляется к выходу из кафе. Следуя её примеру, ты тоже встаешь и выходишь вслед за Scarlett.
 		#IF(pc.hasCompanions())
-			 Meeting up with [com.name] again, the three of you set off on your way back to Helena's Boutique...
+			 Снова встретившись с [com.name], вы втроем отправляетесь в путь обратно к Helena's Boutique...
 		#ELSE
-			 [pc.Stepping] back out into the streets of Slaver Alley, the two of you set off on your way back to Helena's Boutique...
+			 [pc.Stepping] снова выходит на улицы Slaver Alley, и вы вдвоем отправляетесь в путь обратно к Helena's Boutique...
 		#ENDIF
 	</p>
 	]]>
@@ -1556,26 +1555,26 @@
 	
 	<htmlContent tag="HELENAS_SHOP_SCARLETT_CAFE_RETURNED"><![CDATA[
 	<p>
-		After just a few more minutes, you and Scarlett find yourselves once again stepping inside Helena's Boutique. Almost immediately, the beautiful harpy matriarch notices your return and sweeps across the shop floor to softly greet you, [helena.speech(Hello again, [pc.name]. I trust that you and my dear Scarlett had a pleasant time together?)]
+		Спустя всего несколько минут ты и Scarlett снова переступаете порог бутика Helena. Почти сразу прекрасная гарпия-матриарх замечает ваше возвращение и плавно скользит через весь зал, чтобы мягко поприветствовать тебя: [helena.speech(Снова здравствуйте, [pc.name]. Надеюсь, вы с моей дорогой Scarlett чудесно провели время вместе?)]
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettExtraTransformationApplied) && scarlett.hasVagina() && !game.getDialogueFlags().hasFlag(FLAG_helenaShopScarlettExtraTransformationHelenaReacted))
 		<p>
-			After you've answered in the affirmative, Helena flashes you a smile and turns towards the raven-harpy standing beside you. Obviously having noticed her subordinate's beautiful face and large bust, she says, [helena.speech(Good, I see that you've taken the transformation potion which I gave you. I was concerned that people might think you not attractive enough to be so close to me, but now that I've had you improved, that will no longer be an issue.)]
+		Когда ты отвечаешь утвердительно, Helena одаривает тебя улыбкой и поворачивается к стоящей рядом с тобой вороньей гарпии. Очевидно заметив красоту лица и пышную грудь своей подчиненной, она говорит: [helena.speech(Прекрасно. Вижу, ты выпила зелье трансформации, которое я тебе дала. Я переживала, что люди могут решить, будто ты недостаточно привлекательна, чтобы быть так близко ко мне, но теперь, когда я тебя «улучшила», эта проблема решена.)]
 		</p>
 		<p>
-			Awkwardly shuffling around on her talons, Scarlett mutters, [scarlett.speech(Thank you, Helena...)]
+		Неловко переминаясь на когтях, Scarlett бормочет: [scarlett.speech(Спасибо, Helena...)]
 		</p>
 	#ELSE
 		<p>
-			After you've answered in the affirmative, Helena flashes you a smile and turns towards the raven-harpy standing beside you. Narrowing her eyes a little, she says, [helena.speech(I hope that you treated [pc.name] with respect, my dear.)]
+		Когда ты отвечаешь утвердительно, Helena одаривает тебя улыбкой и поворачивается к стоящей рядом с тобой вороньей гарпии. Слегка прищурившись, она произносит: [helena.speech(Надеюсь, ты относился к [pc.name] с уважением, мой дорогой.)]
 		</p>
 		<p>
-			Awkwardly shuffling around on her talons, Scarlett mutters, [scarlett.speech(Yes, Helena...)]
+		Неловко переступая когтями, Scarlett бормочет: [scarlett.speech(Да, Helena...)]
 		</p>
 	#ENDIF
 	<p>
-		Turning back to face you, the beautiful harpy matriarch asks, [helena.speech(So, [pc.name], is there anything I can help you with?)]
-	</p>
+		Развернувшись к тебе лицом, прекрасная матрона-гарпия спрашивает: [helena.speech(Итак, [pc.name], могу я чем-нибудь тебе помочь?)]
+		</p>
 	]]>
 	</htmlContent>
 	
