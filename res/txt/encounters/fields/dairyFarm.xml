@@ -3,13 +3,14 @@
 
 	<htmlContent tag="DISCOVERED"><![CDATA[
 	<p style='text-align:center;'>
-		[style.BoldGood(New Location Discovered:)] [style.boldYellowLight(Evelyx's Dairy)]
-	</p>	]]>
+		[style.BoldGood(Новая локация:)][style.boldYellowLight( Молочная ферма Эвеликс)]
+	</p>
+	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DISCOVERED_END"><![CDATA[
 	<p style='text-align:center;'>
-		[style.italicsMinorGood(You make a note on your map of your current location, allowing you to return here at any time.)]
+		[style.italicsMinorGood(Ты отмечаешь это место на карте, теперь ты можешь вернуться сюда в любое время.)]
 	</p>
 	]]>
 	</htmlContent>

@@ -6,19 +6,19 @@
 	<htmlContent tag="START"><![CDATA[
 	<p>
 		#IF(pc.getLocationPlace().getPlaceType()==PLACE_TYPE_WORLD_MAP_GRASSLANDS)
-			While most of your surroundings consist of open, natural meadows, it's impossible to keep your distance from the many hills, ponds, and valleys which are scattered throughout this grassland wilderness.​ These terrain features are almost always home to a significant amount of long grasses, scattered shrubs, and dense, bramble-packed thickets, which provide excellent spots from which a malicious foe might spring an ambush.
+			Хотя большая часть окрестностей представляет собой открытые природные луга, невозможно долго не натыкаться на многочисленные холмы, пруды и долины, разбросанные по этой дикой степной местности.​ Эти элементы ландшафта почти всегда покрыты высокой травой, редкими кустарниками и густыми, заросшими ежевикой зарослями, которые служат отличным укрытием для коварного врага, готового устроить засаду.
 		#ELSE
-			Although for the most part the landscape beside the road you're [pc.walking] down consists of wide open fields, you can never go far without passing some kind of small copse or thicket.​ These small clusters of trees are invariably home to many types of densely-packed shrubs and bushes, which provide excellent concealment for any potential foe that might be waiting to spring an ambush.
+			Хотя по большей части пейзаж вдоль дороги, по которой ты [pc.walking], состоит из широких открытых полей, ты не сможешь пройти и пары шагов, не встретив какую-нибудь небольшую рощу или чащу.​ Эти небольшие скопления деревьев неизменно служат домом для множества видов густых кустов и кустарников, обеспечивая превосходную маскировку любому потенциальному противнику, который может поджидать тебя в засаде.
 		#ENDIF
 	</p>
 	<p>
-		Just as you feared, as you're cautiously passing a small, isolated patch of woodland, [attacker.a_fullRace(true)] suddenly trots out from behind a particularly large bush and blocks your path. Looking you up and down with an arrogant smirk on her face, she hefts her [attacker.mainWeapon] and sneers, [attacker.speech(A filthy trespasser? How vile... You <i>do</i> realise that this is the territory of the 'Hundred Paces', don't you? Oh, how I'm going to enjoy making you squeal...)]
+		Как ты и опасался, когда ты осторожно пробираешься через небольшой уединенный лесной массив, [attacker.a_fullRace(true)] внезапно вылетает из-за особенно крупного куста и преграждает тебе путь. Окинув тебя высокомерным взглядом с самодовольной ухмылкой, она вскидывает свою [attacker.mainWeapon] и фыркает: [attacker.speech(Грязный нарушитель? Какая мерзость... Ты ведь <i>понимаешь</i>, что это территория «Ста Сотни», не так ли? О, как же я буду наслаждаться твоими визгами...)]
 	</p>
 	<p>
-		With her [attacker.hairColour] hair blowing in the breeze, this [attacker.race] narrows her [attacker.eyeColour] eyes and excitedly paws at this ground with one of her horse-like hoofs. As you look over her [attacker.skinColour] skin and [attacker.legColour] horse-hair, this demonic centauress, who stands at [attacker.heightValue], trots around in a small circle, showing off her toned body in the process. Taking a quick step forwards, the raider's smirk shifts into a malicious grin as she issues an ultimatum, [attacker.speech(You've got two choices, you dirty little thing... You can either pay the toll for travelling through my land, or submit to me and attempt to sate my lust with your body!)]
+		Её [attacker.hairColour] волосы развеваются на ветру, эта [attacker.race] прищуривает свои [attacker.eyeColour] глаза и возбужденно перебирает копытом землю. Пока ты разглядываешь её [attacker.skinColour] кожу и [attacker.legColour] конскую шерсть, эта демоническая кентаврисса ростом в [attacker.heightValue] обходит тебя по кругу, демонстрируя свое подтянутое тело. Сделав быстрый шаг вперед, налетчица сменяет ухмылку на злобную гримасу и выносит ультиматум: [attacker.speech(У тебя есть два пути, грязная ты крошка... Либо ты платишь пошлину за проход через мои земли, либо покоряешься мне и пытаешься утолить мою похоть своим телом!)]
 	</p>
 	<p>
-		As the [attacker.race] trots back a few paces and readies her ranged weapon, you realise that you're going to have to either do as says or defeat her in combat before you can continue on your way...
+		Когда [attacker.race] отступает на несколько шагов назад, готовясь к стрельбе, ты понимаешь, что тебе придется либо подчиниться её условиям, либо одолеть её в бою, прежде чем ты сможешь продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -29,15 +29,15 @@
 	<htmlContent tag="PAYMENT"><![CDATA[
 	<p>
 		#IF(pc.isCowardly())
-			Well and truly terrified at the prospect of this intimidating [attacker.race] choosing to attack, you hastily grab [#SPECIAL_PARSE_0] flames and offer them to her. Pleading for her not to be violent, you flinch and cry out as she uses her weapon to fire a bolt of arcane energy right past your head. Trotting forwards to snatch the money from your trembling [pc.hands], she laughs, [attacker.speech(How disgustingly pathetic... You're lucky that I'm in a hurry today, or else I would have taken the time to punish you for your cowardice...)]
+			По-настоящему напуганный перспективой атаки этой внушительной [attacker.race], ты поспешно хватаешь [#SPECIAL_PARSE_0] огни и предлагаешь их ей. Умоляя её не проявлять жестокости, ты вздрагиваешь и вскрикиваешь, когда она выпускает из своего оружия заряд арканной энергии прямо мимо твоей головы. Подбежав, чтобы выхватить деньги из твоих дрожащих [pc.hands], она смеётся: [attacker.speech(Как отвратительно жалко... Тебе повезло, что я сегодня спешу, иначе я бы нашла время наказать тебя за твою трусость...)]
 		#ELSEIF(pc.isBrave())
-			Unafraid of this [attacker.race] or whatever violence she might choose to unleash, you tell her that you're in too much of a hurry to give her the beating she deserves. Grabbing [#SPECIAL_PARSE_0] flames, you ignore the look of absolute revulsion upon the raider's face and offer them to her. Avoiding a bolt of arcane energy that she fires past your head, you tell the [attacker.race] not to do anything she'll regret as you let her trot forwards to snatch the money from your [pc.hands]. Incensed by your refusal to completely submit to her, she furiously stomps her hoofs on the ground and spits, [attacker.speech(How <i>dare</i> you speak to me in such a manner... You're lucky that I'm in a hurry today, or else I would have taken the time to punish you for your insolence!)]
+			Не боясь этой [attacker.race] или какой бы ярости она ни решила обрушить на тебя, ты заявляешь, что слишком спешишь, чтобы давать ей заслуженную взбучку. Хватая [#SPECIAL_PARSE_0] огни, ты игнорируешь выражение абсолютного отвращения на лице налетчицы и предлагаешь их ей. Уклоняясь от заряда арканной энергии, выпущенного мимо твоей головы, ты советуешь [attacker.race] не делать ничего, о чём она потом пожалеет, и позволяешь ей подбежать, чтобы выхватить деньги из твоих [pc.hands]. Разъяренная тем, что ты не желаешь полностью ей подчиниться, она яростно топает копытами и сплевывает: [attacker.speech(Как ты, <i>смеешь</i> так со мной разговаривать... Тебе повезло, что я сегодня спешу, иначе я бы нашла время наказать тебя за твою дерзость!)]
 		#ELSE
-			Not wanting to engage this [attacker.race] in combat, you tell her that you'll pay the toll if it means that you can avoid a fight. Grabbing [#SPECIAL_PARSE_0] flames, you offer them to the raider and calmly let her snatch the money from your [pc.hands]. Seemingly incensed by your decision to pay her off, she furiously stomps her hoofs on the ground and spits, [attacker.speech(You're lucky that I'm in a hurry today... Ordinarily I would have taken the time to give you a good beating!)]
+			Не желая вступать в бой с этой [attacker.race], ты говоришь ей, что готов заплатить пошлину, лишь бы избежать драки. Схватив [#SPECIAL_PARSE_0] огней, ты предлагаешь их налетчице и спокойно позволяешь ей вырвать деньги из твоих [pc.hands]. Похоже, твое решение откупиться приводит её в ярость: она злобно топает копытами и сплевывает: [attacker.speech(Тебе повезло, что я сегодня спешу... В обычный день я бы не поленилась хорошенько тебя отлупить!)]
 		#ENDIF
 	</p>
 	<p>
-		With that, the [attacker.race] turns around on the spot and gallops off, sending clods of mud flying through the air behind her as she swiftly crosses a nearby field and disappears behind a hill. Happy with your decision to hand over [#SPECIAL_PARSE_0] flames in order to avoid fighting such a malevolent character, you look around to make sure that there's no other immediate danger and then prepare to continue on your way...
+		С этими словами [attacker.race] разворачивается на месте и уносится галопом, разбрасывая комья грязи, пока она стремительно пересекает поле и скрывается за холмом. Довольный тем, что отдал [#SPECIAL_PARSE_0] огней, лишь бы не связываться с такой злобной особой, ты оглядываешься по сторонам, проверяя, нет ли поблизости других опасностей, и готовишься продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -48,147 +48,147 @@
 	<htmlContent tag="SUBMIT"><![CDATA[
 	<p>
 		#IF(pc.hasFetish(FETISH_SUBMISSIVE))
-			Starting to feel turned on at the prospect of surrendering to this dominant [attacker.race], you drop down onto the ground before her and tell her that you submit to her.
+			Почувствовав возбуждение от мысли о капитуляции перед этой доминантной [attacker.race], ты опускаешься перед ней на колени и объявляешь, что признаешь её власть.
 		#ELSE
-			Not wanting to hand over any of your money, and equally unwilling to fight this dominant [attacker.race], you drop down onto the ground before her and tell her that you submit to her.
+			Не желая отдавать ни гроша, но и не стремясь сражаться с этой доминантной [attacker.race], ты опускаешься перед ней на колени и объявляешь, что признаешь её власть.
 		#ENDIF
-		 The raider lets out a wicked laugh as she looks down at you, and, after stepping forwards, she lifts one of her hoofs and uses it to kick you down onto your back. With a disparaging smile on her face, she sneers, [attacker.speech(You worthless [pc.insult]... You're almost not even worth my time... Then again, it is rather fun to utterly dominate pathetic worms like yourself...)]
+		 Налетчица издает злобный смех, глядя на тебя сверху вниз, а затем, сделав шаг вперед, она поднимает копыто и с силой пинает тебя, опрокидывая на спину. С презрительной улыбкой на лице она цедит сквозь зубы: [attacker.speech(Ты, ничтожный [pc.insult]... Ты почти не стоишь моего времени... Хотя, с другой стороны, доминировать над такими жалкими червями, как ты, довольно забавно...)]
 	</p>
 	<p>
-		As you look up at this sadistic centauress, she once again kicks out with her hoof and sends you sprawling back onto the ground before her. Letting out another cruel cackle, she looks down at you with an evil glint in her eye and demands, [attacker.speech(Come on then, [pc.insult]! Show me how you submit to your betters. I'm going to enjoy playing with you...)]
+		Пока ты смотришь на эту садистку-кентавру, она снова бьет копытом, заставляя тебя повалиться на землю прямо перед ней. Снова разразившись жестоким хохотом, она смотрит на тебя со зловещим блеском в глазах и требует: [attacker.speech(Ну же, [pc.insult]! Покажи мне, как ты преклоняешься перед превосходящей тебя особой. Мне будет очень весело поиграть с тобой...)]
 	</p>
 	<p>
-		Given a moment in which to make a move, you quickly have to decide how best to submit to this demonic centauress...
+		У тебя есть мгновение, чтобы предпринять действие, и тебе нужно быстро решить, как лучше всего подчиниться этой демонической кентаврисске...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SUBMIT_GENERIC"><![CDATA[
 	<p>
-		Not wanting to do anything to offend her, you decide to simply drop your head down before this [attacker.race] and submissively grovel on the floor before her. Sharply exhaling, the raider violently stomps her hoof on the ground in front of your face, sending dirt flying in all directions as she sneers, [attacker.speech(What a disappointment... You're so frightened of me that you can't do anything but bow and hope for mercy?!)]
+		Не желая ее чем-то оскорбить, ты решаешь просто склонить голову перед этой [attacker.race] и покорно зарыться носом в землю, ползая перед ней на коленях. Резко выдохнув, налетчица с силой топает копытом прямо перед твоим лицом, разбрасывая грязь во все стороны, и насмешливо произносит: [attacker.speech(Какое разочарование... Ты так напуган, что можешь только кланяться и надеяться на милость?!)]
 	</p>
 	<p>
-		Before you can reply, the [attacker.race] once again uses one of her strong forelegs to violently kick you back onto the ground. Reaching down, she roughly grabs hold of you, before pulling you to your [pc.feet] and delivering a swift slap across your face. Laughing as she makes you flinch, the sadistic [attacker.race] gives you no time in which to make a move before grabbing your cheeks and squeezing them together. Licking her lips, she narrows her eyes and snarls, [attacker.speech(You worthless worm... I'll show you your true place!)]
+		Прежде чем ты успеваешь ответить, [attacker.race] снова наносит мощный удар передней ногой, с силой впечатывая тебя в землю. Наклонившись, она грубо хватает тебя, притягивает к своему [pc.feet] и отвешивает звонкую пощечину. Смеясь над тем, как ты вздрагиваешь, садистка [attacker.race] не дает тебе опомниться и, прежде чем ты успеваешь пошевелиться, хватает тебя за щеки и сжимает их. Облизнув губы, она прищуривается и рычит: [attacker.speech(Ничтожный червь... Я покажу тебе твое истинное место!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SUBMIT_PUSSY"><![CDATA[
 	<p>
-		Knowing that you only have a moment in which to please her, you quickly expose your [pc.pussy+] and drop down onto all fours. Presenting the dominant centauress with your rear end, you look back over your shoulder and tell her that your [pc.pussy+] is free for her to use in any way she sees fit.
+		Понимая, что у тебя есть лишь мгновение, чтобы угодить ей, ты быстро подставляешь свою [pc.pussy+] и встаешь на четвереньки. Предъявляя доминантной кентаврихе свой зад, ты оглядываешься через плечо и говоришь, что твой [pc.pussy+] в ее полном распоряжении.
 	</p>
 	<p>
-		[attacker.speech(Raise your ass then, you filthy whore!)] the [attacker.race] demands, and as you obediently do so, she steps forwards over the top of you and mounts you.
+		[attacker.speech(А ну, задрай задницу, грязная шлюха!)] — требует [attacker.race], и когда ты послушно повинуешься, она шагает вперед, нависая над тобой и усаживаясь сверху.
 		#IF(attacker.hasPenis())
-			 Immediately, you feel the flat, flared head of her [attacker.penisSize], horse-like cock prodding at your [pc.labia+].
+			Тут же ты чувствуешь плоскую, расширенную головку ее [attacker.penisSize], лошадиного члена, которая упирается в твою [pc.labia+].
 		#ELSE
-			 Using her self-transformative powers, she takes a moment in which to grow a demonic penis, and then immediately starts prodding the flat, flared head of her [attacker.penisSize], horse-like cock against your [pc.labia+].
+			Используя свои способности к трансформации, она на мгновение отращивает демонический пенис, а затем тут же начинает тыкать плоской, расширенной головкой своего [attacker.penisSize], лошадиного члена, в твою [pc.labia+].
 		#ENDIF
-		 Grunting in amusement, the raider wastes no time in any kind of foreplay, and quickly steps forwards, forcing her [attacker.cock+] into your [pc.pussy+].
+		 Усмехаясь, налетчица не тратит время на прелюдии и быстро подается вперед, втискивая свой [attacker.cock+] в твой [pc.pussy+].
 	</p>
 	<p>
-		[attacker.speech(That's it... ~Mmm!~ Yes, you're going to... ~Ooh!~ Take it all!)] the sadistic [attacker.race] moans. Continuing to step forwards, she forcefully rams [style.size] after [style.size] into your [pc.pussy+], stuffing as much of her [attacker.penisGirth] cock inside of you as she possibly can. Pulling back, she starts violently rutting your [pc.pussy+], leaving you with no choice but to hold yourself steady and endure this brutal fucking until the [attacker.race] decides that she's had enough...
+		[attacker.speech(Вот так... ~Ммм!~ Да, ты сейчас... ~Ох!~ Примешь всё до капли!)] — стонет садистка [attacker.race]. Продолжая двигаться вперед, она с силой вбивает [style.size] за [style.size] в твой [pc.pussy+], стараясь запихнуть в тебя как можно больше своего [attacker.penisGirth] члена. Отстранившись, она начинает яростно трахать твой [pc.pussy+], не оставляя тебе выбора, кроме как удерживаться на месте и терпеть этот жестокий еб***, пока [attacker.race] не решит, что с нее хватит...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SUBMIT_KISS_COCK"><![CDATA[
 	<p>
-		Knowing that you only have a moment in which to please her, you quickly crawl beneath this dominant centauress's body and position yourself so that your head is beneath her horse-like groin. Calling out, you ask her for permission to kiss her cock.
+		Понимая, что у тебя есть лишь мгновение, чтобы доставить ей удовольствие, ты быстро забираешься под тело этой доминантной кентавры и устраиваешься так, чтобы твоя голова оказалась прямо под её лошачьим пахом. Возглас, ты просишь у неё разрешения поцеловать её член.
 	</p>
 	<p>
 		#IF(attacker.hasPenis())
-			[attacker.speech(Get on with it then, you worthless worm!)] the raider snaps. As her [attacker.penisSize], horse-like cock pushes out of its sheath and stands to attention, she paws at the ground and spits, [attacker.speech(Get those whorish lips of yours to work!)]
+			[attacker.speech(Давай же, ничтожный червь!)] — огрызается налетчица. Когда её [attacker.penisSize], похожий на лошадиный член, вырывается из препуция и встает в полный рост, она бьет копытом по земле и сплевывает: [attacker.speech(Заставь свои блудливые губки работать!)]
 		#ELSE
-			[attacker.speech(Does it look like I have a cock, you stupid fucking slut?)] the raider snaps. Despite saying this, however, you look on as the [attacker.race] quickly uses her self-transformative powers to grow a demonic penis. Watching the [attacker.penisSize], horse-like cock take shape before your [pc.eyes], you stay still and wait for the demonic centauress to give you permission to kiss it. Impatiently pawing at the ground, she spits, [attacker.speech(Get on with it, you worthless worm! Get those whorish lips of yours to work!)]
+			[attacker.speech(Ты что, думаешь, у меня есть член, тупая гребаная шлюха?)] — огрызается налетчица. Однако, несмотря на эти слова, ты наблюдаешь, как [attacker.race] стремительно использует свои силы самотрансформации, чтобы вырастить демонический пенис. Глядя на то, как перед твоими [pc.eyes] обретает форму лошадиный [attacker.penisSize], ты замираешь в ожидании, пока демоническая кентаврица позволит тебе его поцеловать. Нетерпеливо постукивая копытом по земле, она сплевывает: [attacker.speech(Давай же, ничтожный червь! Заставь свои блудливые губки работать!)]
 		#ENDIF
 	</p>
 	<p>
-		Quickly moving to do as she commands, you open your mouth and plant a big, wet kiss on the flat, flared head of the [attacker.race]'s cock. Encouraged by the deep, growling moan which the raider lets out, you part your [pc.lips+] and take the head of her [attacker.penisGirth] shaft into your mouth. As soon as you do this, the sadistic centauress steps forwards, forcing her throbbing dick deep down your throat and snarling, [attacker.speech(That's it! ~Mmm!~ Take it deep, you filthy slut!)]
+		Поспешив исполнить её приказ, ты открываешь рот и накрываешь широкую, плоскую головку [attacker.race] долгим, влажным поцелуем. Воодушевленный глубоким, утробным стоном налетчицы, ты размыкаешь свои [pc.lips+] и берешь головку её [attacker.penisGirth] в рот. Как только ты это делаешь, садистичная кентаврица подается вперед, заталкивая свой пульсирующий член глубоко тебе в глотку и рыча: [attacker.speech(Вот так! ~Ммм!~ Глотай глубже, грязная шлюха!)]
 	</p>
 	<p>
-		Continuing to step forwards, the sadistic [attacker.race] forcefully rams [style.size] after [style.size] down your throat, stuffing as much of her [attacker.penisGirth] cock inside of you as she possibly can. Pulling back, she starts violently fucking your face, leaving you with no choice but to hold yourself steady and endure this brutal fucking until the [attacker.race] decides that she's had enough...
+		Продолжая наступать, садистичная [attacker.race] с силой вбивает [style.size] вслед за [style.size] в твою глотку, стараясь запихнуть в тебя как можно больше своего [attacker.penisGirth] члена. Отстранившись, она начинает яростно трахать твоё лицо, не оставляя тебе выбора, кроме как удерживать равновесие и терпеть этот жестокий секс, пока [attacker.race] не решит, что с неё хватит...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SUBMIT_KISS_PUSSY"><![CDATA[
 	<p>
-		Knowing that you only have a moment in which to please her, you quickly crawl around behind this dominant centauress's body and position yourself so that your head is close to her horse-like groin. Calling out, you ask her for permission to kiss her pussy.
+		Понимая, что у тебя есть лишь мгновение, чтобы доставить ей удовольствие, ты быстро перебираешься за спину этой доминантной кентавриссы и устраиваешься так, чтобы твоя голова оказалась рядом с её лошадиным пахом. Громко спросив, ты просишь разрешения поцеловать её киску.
 	</p>
 	<p>
 		#IF(attacker.hasVagina())
-			[attacker.speech(Get on with it then, you worthless worm!)] the raider snaps. As you lean forwards to plant a big, wet kiss on her [attacker.labia+], she paws at the ground and spits, [attacker.speech(Get that tongue of yours to work!)]
+			[attacker.speech(Давай же, ничтожный червь!)] — огрызается налетчица. Когда ты наклоняешься вперед, чтобы запечатлеть долгий, влажный поцелуй на её [attacker.labia+], она бьет копытом по земле и сплевывает: [attacker.speech(Заставь свой язык работать!)]
 		#ELSE
-			[attacker.speech(Does it look like I have a cunt, you stupid fucking slut?)] the raider snaps. Despite saying this, however, you look on as the [attacker.race] quickly uses her self-transformative powers to grow a demonic vagina. Watching the horse-like pussy take shape before your [pc.eyes], you stay still and wait for the demonic centauress to give you permission to kiss it. Impatiently pawing at the ground, she spits, [attacker.speech(Get on with it, you worthless worm! Get that tongue of yours to work!)]
+			[attacker.speech(Ты думаешь, у меня там пизда, тупая ебаная шлюха?)] — огрызается налетчица. Несмотря на эти слова, ты наблюдаешь, как [attacker.race] стремительно использует свои способности к трансформации, чтобы отрастить демоническую киску. Глядя, как перед твоим [pc.eyes] обретает форму лошадиная пизда, ты замираешь в ожидании, пока демоническая кентаврица позволит тебе её поцеловать. Нетерпеливо перебирая копытами по земле, она сплевывает: [attacker.speech(Живее, ничтожный червь! Заставь свой язык работать!)]
 		#ENDIF
 	</p>
 	<p>
-		Quickly moving to do as she commands, you open your mouth and press your [pc.lips+] against the [attacker.race]'s pussy. Darting out your [pc.tongue+], you lick her puffy, horse-like cunt as you greedily start eating her out. Despite your best efforts, however, the sadistic centauress doesn't seem to be getting what she wants from you, and snarls, [attacker.speech(You can do better than that, slut! I'll teach you how to properly service a horse cunt!)]
+		Поспешно исполняя её приказ, ты открываешь рот и прижимаешься своим [pc.lips+] к киске [attacker.race]. Высунув [pc.tongue+], ты начинаешь жадно лизать её припухшую лошадиную щель, слизывая соки. Однако, несмотря на все твои старания, садистичная кентаврица, кажется, не получает желаемого, и рычит: [attacker.speech(Ты можешь лучше, шлюха! Я научу тебя, как правильно обслуживать лошадиную киску!)]
 	</p>
 	<p>
-		With that, the centauress takes a sudden step back, slamming her cunt against your face and sending you sprawling out on your back behind her. Giving you no time in which to stand up, the [attacker.race] continues to move backwards, before dropping her hind legs and forcefully planting her huge, heavy horse's body onto your face. Completely smothering your mouth with her animalistic cunt, the raider lets out a sadistic laugh and snarls, [attacker.speech(Get to it, you worthless whore! Eat me out like your life depends on it!)]
+	С этими словами кентаврица резко отступает, с силой прижимая свою киску к твоему лицу и швыряя тебя на спину позади себя. Не давая тебе времени подняться, [attacker.race] продолжает пятиться, а затем опускает задние ноги, с силой наваливаясь своим огромным, тяжелым лошадиным телом прямо тебе на лицо. Полностью забивая твой рот своей животной пиздой, налетчица издает садистский смех и рычит: [attacker.speech(За дело, никчемная шлюха! Соси меня так, будто от этого зависит твоя жизнь!)]
 	</p>
 	<p>
-		Left with no other option but to do as the sadistic [attacker.race] says, you do your best to lick, kiss, and suck on the horse-like pussy that's completely smothering your mouth. Completely at the mercy of this dominant centauress, you realise that you're going to have to continue eating her out until she decides that she's had enough...
+		Не имея иного выбора, кроме как подчиниться садистке [attacker.race], ты изо всех сил стараешься лизать, целовать и сосать её лошачью киску, которая полностью заполняет твой рот. Находясь во власти этой доминантной кентавры, ты понимаешь, что тебе придётся продолжать вылизывать её до тех пор, пока она сама не решит, что насытилась...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SUBMIT_ASSHOLE"><![CDATA[
 	<p>
-		Knowing that you only have a moment in which to please her, you quickly expose your [pc.asshole+] and drop down onto all fours. Presenting the dominant centauress with your rear end, you look back over your shoulder and tell her that your [pc.asshole+] is free for her to use in any way she sees fit.
+		Понимая, что у тебя есть лишь мгновение, чтобы доставить ей удовольствие, ты быстро обнажаешь свою [pc.asshole+] и встаёшь на четвереньки. Предъявив доминантной кентавре свой зад, ты оглядываешься через плечо и говоришь ей, что твоя [pc.asshole+] в её полном распоряжении, и она может использовать её так, как пожелает.
 	</p>
 	<p>
-		[attacker.speech(Raise your hips, you filthy slut!)] the [attacker.race] demands, and as you obediently do so, she steps forwards over the top of you and mounts you.
+		[attacker.speech(Подними бёдра, грязная сучка!)] — требует [attacker.race], и когда ты послушно повинуешься, она шагает вперёд, нависая над тобой, и оседлывает тебя.
 		#IF(attacker.hasPenis())
-			 Immediately, you feel the flat, flared head of her [attacker.penisSize], horse-like cock prodding at your [pc.asshole+].
+			 Мгновенно ты чувствуешь плоскую, расширяющуюся головку её [attacker.penisSize], лошачьего члена, которая упирается в твою [pc.asshole+].
 		#ELSE
-			 Using her self-transformative powers, she takes a moment in which to grow a demonic penis, and then immediately starts prodding the flat, flared head of her [attacker.penisSize], horse-like cock against your [pc.asshole+].
+			 Используя свои способности к трансформации, она на мгновение отращивает демонический пенис, а затем сразу же начинает втирать плоскую, расширяющуюся головку своего лошачьего [attacker.penisSize] в твою [pc.asshole+].
 		#ENDIF
-		 Grunting in amusement, the raider wastes no time in any kind of foreplay, and quickly steps forwards, forcing her [attacker.cock+] into your [pc.asshole+].
+		Усмехаясь, налетчица не тратит время на прелюдии и быстро делает шаг вперед, втискивая свою [attacker.cock+] в твою [pc.asshole+].
 	</p>
 	<p>
-		[attacker.speech(That's it... ~Mmm!~ Yes, you're going to... ~Ooh!~ Take it all!)] the sadistic [attacker.race] moans. Continuing to step forwards, she forcefully rams [style.size] after [style.size] into your [pc.asshole+], stuffing as much of her [attacker.penisGirth] cock inside of you as she possibly can. Pulling back, she starts violently rutting your [pc.ass+], leaving you with no choice but to hold yourself steady and endure this brutal fucking until the [attacker.race] decides that she's had enough...
+		[attacker.speech(Вот так... ~Ммм!~ Да, ты сейчас... ~Ох!~ Забирай всё!)] — стонет садистичная [attacker.race]. Продолжая наступать, она с силой вбивает [style.size] вслед за [style.size] в твою [pc.asshole+], стараясь запихнуть в тебя как можно больше своего [attacker.penisGirth] члена. Отстранившись, она начинает яростно трахать твою [pc.ass+], не оставляя тебе выбора, кроме как держаться изо всех сил и терпеть этот жестокий ебняк, пока [attacker.race] не решит, что с неё хватит...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SUBMIT_KISS_ASSHOLE"><![CDATA[
 	<p>
-		Knowing that you only have a moment in which to please her, you quickly crawl around behind this dominant centauress's body and position yourself so that your head is close to her horse-like asshole. Calling out, you ask her for permission to kiss her puffy doughnut.
+		Понимая, что у тебя есть лишь мгновение, чтобы доставить ей удовольствие, ты быстро перебираешься за спину этой доминантной кентавры и устраиваешься так, чтобы твоя голова оказалась совсем рядом с её лошадиным анусом. Громко спросив, ты просишь разрешения поцеловать её пухлый «пончик».
 	</p>
 	<p>
-		[attacker.speech(Get on with it then, you worthless worm!)] the raider snaps. As you lean forwards to plant a big, wet kiss on her [attacker.asshole+], she paws at the ground and spits, [attacker.speech(Get that tongue of yours to work!)]
+		[attacker.speech(Давай уже, ничтожный червь!)] — огрызается налетчица. Когда ты наклоняешься вперед, чтобы запечатлеть сочный, влажный поцелуй на её [attacker.asshole+], она скребет копытами по земле и сплевывает: [attacker.speech(Заставь свой язык работать!)]
 	</p>
 	<p>
-		Quickly moving to do as she commands, you open your mouth and press your [pc.lips+] against the [attacker.race]'s asshole. Darting out your [pc.tongue+], you lick her puffy, horse-like butt as you greedily start performing anilingus.
+		Быстро подчиняясь её приказу, ты открываешь рот и прижимаешься своим [pc.lips+] к анусу [attacker.race]. Высунув [pc.tongue+], ты начинаешь жадно лизать её пухлую лошадиную задницу, увлеченно занимаясь анилингусом.
 		#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-			 Thanks to your training as one of Natalya's [style.mules], your skills seem to please the sadistic centauress, who moans, [attacker.speech(Fuck... ~Mmm!~ You're good at this, slut! Oh yeah... Give it to me!)]
+			 Благодаря твоей подготовке в качестве одной из [style.mules] Натальи, твои навыки, кажется, приводят в восторг садистичную кентавру, которая стонет: [attacker.speech(Бля... ~Ммм!~ А ты хороша в этом, сучка! О да... Давай, вылизывай меня!)]
 		#ELSE
-			 Despite your best efforts, however, the sadistic centauress doesn't seem to be getting what she wants from you, and snarls, [attacker.speech(You can do better than that, slut! I'll teach you how to properly service a horse's ass!)]
+			 Однако, несмотря на все твои старания, садистичная кентаврица, кажется, всё ещё не получает желаемого, и она рычит: [attacker.speech(Ты можешь лучше, шлюха! Я научу тебя, как правильно обслуживать лошадиную задницу!)]
 		#ENDIF
 	</p>
 	<p>
-		With that, the centauress takes a sudden step back, slamming her asshole against your face and sending you sprawling out on your back behind her. Giving you no time in which to stand up, the [attacker.race] continues to move backwards, before dropping her hind legs and forcefully planting her huge, heavy horse's body onto your face.
+		С этими словами кентаврица резко отступает, с силой вжимая свою дырку тебе в лицо и швыряя тебя на спину позади себя. Не давая тебе и секунды, чтобы подняться, [attacker.race] продолжает двигаться назад, а затем опускает задние ноги и с силой наваливается своим огромным, тяжелым лошадиным телом прямо тебе на лицо.
 		#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-			 Completely smothering your mouth with her animalistic asshole, the raider lets out a sadistic laugh and snarls, [attacker.speech(I can tell that you've been trained to service horse ass! ~Mmm!~ Come on, lick my butt and show me what you've got!)]
+			 Полностью забивая тебе рот своей звериной задницей, налетчица издает садистский смешок и рычит: [attacker.speech(Сразу видно, тебя дрессировали обслуживать лошадиную жопу! ~Ммм!~ Ну же, лижи мой зад и покажи, на что ты способен!)]
 		#ELSE
-			 Completely smothering your mouth with her animalistic asshole, the raider lets out a sadistic laugh and snarls, [attacker.speech(Get to it, you worthless whore! Lick my ass like your life depends on it!)]
+			 Полностью забивая тебе рот своей звериной задницей, налетчица издает садистский смешок и рычит: [attacker.speech(Живее, никчемная шлюха! Лижи мою задницу так, будто от этого зависит твоя жизнь!)]
 		#ENDIF
 	</p>
 	<p>
-		Left with no other option but to do as the sadistic [attacker.race] says, you do your best to lick, kiss, and suck on the horse-like asshole that's completely smothering your mouth. Completely at the mercy of this dominant centauress, you realise that you're going to have to continue performing anilingus on her until she decides that she's had enough...
+		Не имея иного выбора, кроме как подчиниться приказам садистичной [attacker.race], ты изо всех сил стараешься лизать, целовать и сосать ту лошадиную дырку, что полностью забила тебе рот. Находясь в полной власти этой доминантной кентаврии, ты понимаешь, что тебе придется продолжать анилингус до тех пор, пока она не решит, что с неё хватит...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_SUB"><![CDATA[
 	<p>
-		Finally reaching the point of satisfaction, the [attacker.race] lets out a deep sigh and takes a step back, putting an end to the ruthless fucking. Despite her energetic performance, she still has the energy to kick you down onto the ground and laugh, [attacker.speech(That wasn't half bad, slut! I'll give you permission to think about today when you touch yourself at night!)]
+		Наконец достигнув пика удовлетворения, [attacker.race] издает глубокий вздох и делает шаг назад, завершая это беспощадное трахание. Несмотря на свое энергичное выступление, у нее все еще хватает сил, чтобы сбить тебя с ног и рассмеяться: [attacker.speech(А ведь неплохо, сучка! Разрешаю тебе вспоминать об этом сегодня, когда будешь ласкать себя ночью!)]
 	</p>
 	<p>
-		Flashing you one last manic grin, the sadistic centauress turns around on the spot and gallops off, sending clods of mud flying through the air behind her as she swiftly crosses a nearby field and disappears behind a hill. Picking yourself up, you get your things back in order and prepare to continue on your way...
+		Одарив тебя последней безумной ухмылкой, садистичная кентавриха разворачивается на месте и уносится галопом, разбрасывая комья грязи за собой, пока она стремительно пересекает поле и скрывается за холмом. Поднявшись на ноги, ты приводишь вещи в порядок и готовишься продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -214,63 +214,63 @@
 	
 	<htmlContent tag="COMBAT_WON"><![CDATA[
 	<p>
-		The [attacker.race] staggers back, and although she tries to continue fighting, her legs give way from under her, causing her to collapse to the ground in utter defeat. [pc.Stepping] forwards, you approach the demonic centauress, who looks up and breathlessly snarls, [attacker.speech(You... You [pc.insult]... You'll pay for this...)]
+		[attacker.race] пошатывается, и хотя она пытается продолжать бой, ноги подводят ее, заставляя рухнуть на землю в полном поражении. Сделав [pc.Stepping] вперед, ты приближаешься к демонической кентаврихе, которая смотрит на тебя снизу вверх и задыхаясь рычит: [attacker.speech(Ты... Ты, [pc.insult]... Ты еще заплатишь за это...)]
 	</p>
 	<p>
-		Despite her words, you sense that there's no real resistance left in this raider. Sure enough, after letting out a deep sigh, she bites her lip and moans, [attacker.speech(What are you waiting for, you dumb [pc.insult]? Come fuck me already!)] 
+		Несмотря на её слова, ты чувствуешь, что у этой налетчицы почти не осталось сил сопротивляться. И действительно, глубоко вздохнув, она прикусывает губу и стонет: [attacker.speech(Чего ты ждешь, тупая [pc.insult]? Да трахни ты меня уже!)] 
 	</p>
 	<p>
-		With what little strength she has left, the [attacker.race] stands up, and on trembling legs she moves around to present you with her
+		На последних остатках сил [attacker.race] поднимается и на дрожащих ногах разворачивается, чтобы представить тебе свой
 		#IF(attacker.hasPenis())
 			#IF(attacker.hasVagina())
-				 rapidly-hardening, horse-like cock and similarly animalistic pussy.
+				 быстро твердеющий лошадиный член и столь же животную киску.
 			#ELSE
-				 rapidly-hardening, horse-like cock.
+				 быстро твердеющий лошадиный член.
 			#ENDIF
 		#ELSE
-			 puffy, horse-like pussy.
+			 пухлая, лошадиная киска.
 		#ENDIF
-		 As she repeats her demand for you to fuck her, you wonder what to do about this demonic centauress...
+		 Пока она в который раз требует, чтобы ты её оттрахал, ты гадаешь, что же делать с этой демонической кентавршей...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_END"><![CDATA[
 	<p>
-		Having no desire to have sex with this angry, dominant [attacker.race], you turn around and [pc.walk] off. Letting out a frustrated moan as she sees that you're leaving, the raider calls out after you, [attacker.speech(My sisters will exact my revenge upon you! ~Mmm!~ You... You [pc.insult]!)]
+		Не желая трахаться с этой разъяренной и властной [attacker.race], ты разворачиваешься и [pc.walk] прочь. Издав разочарованный стон при виде того, что ты уходишь, налетчица кричит тебе вслед: [attacker.speech(Мои сестры отомстят за меня! ~Ммм!~ Ты... Ах ты [pc.insult]!)]
 	</p>
 	<p>
-		Ignoring her words, you leave the horny [attacker.race] behind and continue on your way...
+		Игнорируя её слова, ты оставляешь похотливую [attacker.race] позади и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SEX"><![CDATA[
 	<p>
-		Seeing no reason not to give the horny [attacker.race] what she wants, you [pc.step] up to her and tell her that you'll give her the fucking she's after. Letting out a deep, passionate moan as she hears you say this, the raider pants, [attacker.speech(Yes... Come on, give it to me...)]
+		Не видя причин отказывать похотливой [attacker.race] в ее желаниях, ты [pc.step] к ней и говоришь, что дашь ей тот самый ебаный секс, которого она так жаждет. Издав глубокий, страстный стон, налетчица тяжело дышит, услышав твои слова: [attacker.speech(Да... Давай же, дай мне это...)]
 	</p>
 	<p>
-		Running your [pc.hands] over her sexy, muscular body, you wonder how best to have sex with this [attacker.race]...
+		Проводя своей [pc.hands] по её сексуальному, мускулистому телу, ты гадаешь, как лучше всего переспать с этой [attacker.race]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SEX_GENTLE"><![CDATA[
 	<p>
-		Seeing no reason not to give the horny [attacker.race] what she wants, you [pc.step] up to her and gently tell her that you'll give her what she's after. Letting out a deep, passionate moan as she hears you say this, the raider pants, [attacker.speech(Yes... Come on, give it to me...)]
+		Не видя причин отказывать похотливой [attacker.race] в ее желаниях, ты [pc.step] к ней и мягко говоришь, что дашь ей то, чего она так хочет. Издав глубокий, страстный стон, налетчица тяжело дышит, услышав твои слова: [attacker.speech(Да... Давай же, дай мне это...)]
 	</p>
 	<p>
-		Softly running your [pc.hands] over her sexy, muscular body, you wonder how best to have sex with this [attacker.race]...
+		Мягко проводя своей [pc.hands] по её сексуальному, мускулистому телу, ты гадаешь, как лучше всего переспать с этой [attacker.race]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SEX_ROUGH"><![CDATA[
 	<p>
-		Seeing no reason not to give the horny [attacker.race] what she wants, you [pc.step] up to her and tell her that you'll give her the rough, hard fucking she's after. Letting out a deep, passionate moan as she hears you say this, the raider pants, [attacker.speech(Yes... Come on, give it to me...)]
+		Не видя причин отказывать похотливой [attacker.race] в ее желаниях, ты [pc.step] к ней и говоришь, что дашь ей тот жесткий, грубый трах, которого она так жаждет. Издав глубокий, страстный стон, налетчица тяжело дышит, услышав твои слова: [attacker.speech(Да... Давай же, дай мне это...)]
 	</p>
 	<p>
-		Running your [pc.hands] over her sexy, muscular body, you give her rump a sharp slap and wonder how best to fuck this [attacker.race]...
+		Проводя своим [pc.hands] по её сексуальному мускулистому телу, ты звонко шлепаешь её по заднице и гадаешь, как же лучше оттрахать эту [attacker.race]...
 	</p>
 	]]>
 	</htmlContent>
@@ -278,59 +278,59 @@
 	<htmlContent tag="COMBAT_WON_SUBMIT"><![CDATA[
 	<p>
 		#IF(pc.hasFetish(FETISH_SUBMISSIVE))
-			Starting to feel turned on at the prospect of surrendering to this dominant [attacker.race], you drop down onto the ground before her and tell her that you submit to her.
+			Почувствовав возбуждение от мысли о капитуляции перед этой доминантной [attacker.race], ты опускаешься перед ней на колени и объявляешь, что признаешь её власть.
 		#ELSE
-			Despite besting her in combat, you decide that it would best for you to surrender to this dominant [attacker.race], you drop down onto the ground before her and tell her that you submit to her.
+			Несмотря на победу в бою, ты решаешь, что будет лучше сдаться этой властной [attacker.race]; ты опускаешься перед ней на колени и объявляешь о своей покорности.
 		#ENDIF
-			Caught off guard by your unexpected move, the raider pants, [attacker.speech(What... You're doing what?! You... You pathetic [pc.insult]!)]
+			Застигнутая врасплох твоим неожиданным маневром, налетчица тяжело дышит: [attacker.speech(Что... Ты что творишь?! Ты... Ты жалкий [pc.insult]!)]
 	</p>
 	<p>
-		Energised by the prospect of being able to dominate you, the [attacker.race] lets out an angry huff, before quickly stepping forwards and lifting one of her huge hoofs. Kicking you down onto the floor, the raider's face turns up into a furious snarl, and she shouts, [attacker.speech(I can't believe anyone would be so pathetic as to submit to the person they've defeated! You worthless [pc.insult]! I'm going to take great pleasure in dominating you!)]
+		Возбужденная перспективой подчинить тебя, [attacker.race] гневно фыркает, после чего делает стремительный шаг вперед и заносит одну из своих огромных копыт. Сбив тебя с ног мощным ударом, налетчица скалится в яростной гримасе и выкрикивает: [attacker.speech(Поверить не могу, что кто-то может быть настолько жалким, чтобы сдаться тому, кого сам же и победил! Ты, никчемный [pc.insult]! Я получу истинное наслаждение, доминируя над тобой!)]
 	</p>
 	<p>
-		As you look up at this sadistic centauress, she once again kicks out with her hoof and sends you sprawling back onto the ground before her. Letting out a deep, mocking laugh, she looks down at you with a crazed grin on her face and demands, [attacker.speech(Come on then, [pc.insult]! Show me how you submit to your betters!)]
+		Когда ты поднимаешь взгляд на эту садистичную кентавриху, она снова бьет тебя копытом, отбрасывая назад на землю. Издав глубокий издевательский смех, она смотрит на тебя с безумной ухмылкой и требует: [attacker.speech(Ну же, [pc.insult]! Покажи мне, как ты преклоняешься перед теми, кто выше тебя!)]
 	</p>
 	<p>
-		Given a moment in which to make a move, you quickly have to decide how best to submit to this demonic centauress...
+		У тебя есть мгновение, чтобы предпринять действие, и тебе нужно быстро решить, как лучше всего подчиниться этой демонической кентаврисске...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_DOM"><![CDATA[
 	<p>
-		Feeling satisfied from your dominant sex with the [attacker.race], you [pc.step] away from her and start to get your things back in order.
+		Чувствуя удовлетворение после доминирующего секса с [attacker.race], ты [pc.step] от неё и начинаешь приводить свои вещи в порядок.
 		#IF(attacker.isSatisfiedFromLastSex())
-			 Feeling just as happy as you are, the raider lets out a deep sigh and moans, [attacker.speech(That wasn't half bad... You're lucky that you managed to please me, [pc.insult].)]
+			 Разделяя твою радость, налетчица глубоко вздыхает и стонет: [attacker.speech(А ведь было неплохо... Тебе повезло, что ты сумел доставить мне удовольствие, [pc.insult].)]
 		#ELSE
-			 Not feeling as happy as you are, the raider lets out a frustrated sigh and moans, [attacker.speech(You could have at least tried to satisfy me... You [pc.insult]...)]
+			 Не разделяя твоего восторга, налетчица разочарованно вздыхает и стонет: [attacker.speech(Ты мог бы хотя бы попытаться удовлетворить меня... Ах ты, [pc.insult]...)]
 		#ENDIF
 	</p>
 	<p>
-		Ignoring the [attacker.race]'s rude words, you brush yourself off and wonder what to do next. You could always help yourself to any items or cash that the raider is carrying, or instead simply set off and continue on your way... 
+		Игнорируя грубость [attacker.race], ты отряхиваешься и раздумываешь, что делать дальше. Ты всегда можешь обчистить налетчицу, забрав её вещи или деньги, либо просто отправиться дальше своим путем... 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_DOM_END"><![CDATA[
 	<p>
-		Leaving the demonic centauress behind, you once again continue on your way...
+		Оставив демоническую кентавриху позади, ты снова продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_TALK"><![CDATA[
 	<p>
-		Wanting to know if there are any of the [attacker.race]'s comrades roaming in the nearby area, you ask her where her camp is and how many other demonic centauresses are out looking for innocent victims to attack. Defiantly spitting on the ground, the raider snarls, [attacker.speech(I'm not telling you anything, [pc.insult]! Either fuck me or fuck off.)]
+		Желая узнать, рыщут ли поблизости соратницы [attacker.race], ты спрашиваешь её, где находится их лагерь и сколько еще демонических кентаврисс ищут невинных жертв для нападения. Выплюнув с вызовом слюну на землю, налетчица рычит: [attacker.speech(Я тебе ничего не скажу, [pc.insult]! Либо трахай меня, либо вали отсюда.)]
 	</p>
 	<p>
 		#IF(pc.hasFetish(FETISH_SADIST))
-			Slapping the [attacker.race] across the face, you repeat your question, but once again the [attacker.race] refuses to play along and snaps, [attacker.speech(Hit me all you like, I'm not telling you anything!)]
+			Дав[attacker.race] звонкую пощечину, ты повторяешь свой вопрос, но [attacker.race] снова отказывается идти на контакт и огрызается: [attacker.speech(Бей сколько влезет, но я тебе ничего не скажу!)]
 		#ELSE
-			Trying a different approach, you promise the [attacker.race] a reward if [attacker.she] tells you what you want to know, but once again [attacker.she] refuses to play along and snaps, [attacker.speech(Your tricks won't work on me, I'm not telling you anything!)]
+			Попробовав другой подход, ты обещаешь [attacker.race] награду, если [attacker.she] выложит всё, что тебе нужно, но [attacker.she] вновь упрямится и рявкает: [attacker.speech(Твои уловки на меня не подействуют, я ничего тебе не скажу!)]
 		#ENDIF
 	</p>
 	<p>
-		As you're clearly not going to be able to find out anything from this uncooperative raider, you give up on your line of questioning and wonder what to do with her...
+		Поскольку из этой упрямой налетчицы явно ничего не вытянуть, ты завязываешь с расспросами и гадаешь, что же делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -340,11 +340,11 @@
 	
 	<htmlContent tag="COMBAT_LOST"><![CDATA[
 	<p>
-		Unable to continue fighting any longer, you collapse to the ground, defeated. Immediately capitalising upon your sign of weakness, the [attacker.race] gallops forwards and roughly grabs hold of you.
+	Не в силах больше сражаться, ты обессиленно валишься на землю. Тут же, пользуясь твоей слабостью, [attacker.race] несется вперед и грубо хватает тебя.
 		#IF(game.isNonConEnabled())
-			 With a sadistic grin on her face, she snarls, [attacker.speech(You're mine now, [pc.insult]! I'm going to make you pay for daring to fight back!)]
+			С садистской ухмылкой на лице она рычит: [attacker.speech(Теперь ты моя, [pc.insult]! Ты заставишь меня заплатить за то, что посмела дать отпор!)]
 		#ELSE
-			 With a sadistic grin on her face, she snarls, [attacker.speech(You're mine now, [pc.insult]! Ready for a good fuck?!)]
+			С садистской ухмылкой на лице она рычит: [attacker.speech(Теперь ты моя, [pc.insult]! Готова к хорошему траху?!)]
 		#ENDIF
 	</p>
 	]]>
@@ -352,34 +352,33 @@
 	
 	<htmlContent tag="COMBAT_LOST_FUCKED"><![CDATA[
 	<p>
-		Before you can reply, the [attacker.race] lets out a wicked laugh and delivers a swift slap across your face. Laughing as she makes you flinch, the sadistic [attacker.race] gives you no time in which to make a move before grabbing your cheeks and squeezing them together. Licking her lips, she narrows her eyes and snarls, [attacker.speech(You worthless worm... I'll show you your true place!)]
+		Прежде чем ты успеваешь ответить, [attacker.race] издает злобный смешок и отвешивает тебе звонкую пощечину. Смеясь над тем, как ты вздрагиваешь, садистичная [attacker.race] не дает тебе опомниться и тут же хватает тебя за щеки, сжимая их. Облизнув губы, она прищуривается и рычит: [attacker.speech(Ничтожный червь... Я покажу тебе твое истинное место!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_FUCKED_RESIST"><![CDATA[
 	<p>
-		Realising that the [attacker.race] is seriously about to rape you, you try to ward her off by shouting and pleading for her to leave you alone. Letting out an evil cackle as she sees that you're not submitting to her, she steps forwards and delivers a swift smack to the back of your head. Grinning in delight as she makes you flinch, the sadistic [attacker.race] gives you no time in which to make a move before grabbing your face and squeezing your cheeks. Licking her lips, she fixes her wild, crazed gaze upon you and snarls, [attacker.speech(You worthless cunt! You can squirm and scream all you like; it's not going to stop me from showing you your true place!)]
+		Осознав, что [attacker.race] всерьез намерена изнасиловать тебя, ты пытаешься отбиться, крича и умоляя её оставить тебя в покое. Издав злобный смешок при виде того, что ты не желаешь ей подчиняться, она делает шаг вперед и отвешивает тебе звонкий подзатыльник. Наслаждаясь твоей реакцией, садистичная [attacker.race] не дает тебе опомниться и, прежде чем ты успеваешь что-то предпринять, хватает тебя за лицо, сильно сжимая щеки. Облизнув губы, она устремляет на тебя свой дикий, безумный взгляд и рычит: [attacker.speech(Ничтожная сучка! Можешь извиваться и орать сколько угодно — это не помешает мне показать тебе твое истинное место!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_CONTINUE"><![CDATA[
 	<p>
-		Although you've been defeated, you're not willing to submit to this sadistic [attacker.race]. As you tell her that you refuse to have sex with her, the raider lets out an angry shout, before kicking you down and snarling, [attacker.speech(You dumb [pc.insult]! You're lucky that you're not worth my time!)]
+		Пусть ты и потерпел поражение, ты всё еще не готов подчиниться этой садистичной [attacker.race]. Когда ты заявляешь, что отказываешься спать с ней, налетчица гневно вскрикивает, пинает тебя на землю и рычит: [attacker.speech(Тупая [pc.insult]! Тебе повезло, что ты не стоишь моего времени!)]
 	</p>
 	<p>
-		With that, the [attacker.race] turns around on the spot and gallops off, sending clods of mud flying through the air behind her as she swiftly crosses a nearby field and disappears behind a hill. brushing yourself down, you look around to make sure that there's no other immediate danger and then prepare to continue on your way...
+		С этими словами [attacker.race] разворачивается на месте и уносится галопом, разбрасывая комья грязи во все стороны, пока она стремительно пересекает ближайшее поле и скрывается за холмом. Отряхнувшись, ты оглядываешься по сторонам, чтобы убедиться, что поблизости нет других опасностей, и готовишься продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_FUCKED_WILLING"><![CDATA[
-	<p>
-		Deciding that it would be best to submit to the raider and let her do what she wants with you, you tell her that you're willing to have sex with her.
+	<p>		Решив, что лучше всего будет покориться налетчице и позволить ей делать с тобой всё, что вздумается, ты говоришь ей, что готов заняться с ней сексом.
 	</p>
 	<p>
-		As she hears your submissive response, the [attacker.race] lets out a wicked laugh and delivers a swift slap across your face. Laughing as she makes you flinch, the sadistic [attacker.race] gives you no time in which to make a move before grabbing your cheeks and squeezing them together. Licking her lips, she narrows her eyes and snarls, [attacker.speech(You worthless worm... I'll show you your true place!)]
+		Услышав твой покорный ответ, [attacker.race] издает злобный смешок и отвешивает тебе звонкую пощечину. Смеясь над тем, как ты вздрагиваешь, садистичная [attacker.race] не дает тебе опомниться и тут же хватает тебя за щеки, сжимая их. Облизнув губы, она прищуривается и рычит: [attacker.speech(Ничтожный червь... Я покажу тебе твое истинное место!)]
 	</p>
 	]]>
 	</htmlContent>

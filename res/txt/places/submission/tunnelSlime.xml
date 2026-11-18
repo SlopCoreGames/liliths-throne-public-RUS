@@ -3,7 +3,7 @@
 
 	<htmlContent tag="ATTACK_INTRO"><![CDATA[
 	<p>
-		As you travel down the gloomy, twisting tunnels of Submission, the sounds of dripping water and slowly creaking pipes echo off the stone walls to either side of you. Due to this continuous background noise, the quiet splashing of a slime's footsteps as [npc.she] sneaks up on you are all but completely concealed. It isn't until the slime is within [unit.lSizes(1000)] that you suddenly become aware of [npc.herHis] presence, and you quickly spin around to find yourself looking at [npc.a_fullRace(true)]!
+		Пока ты пробираешься сквозь мрачные, извилистые туннели Submission, звуки капающей воды и медленного скрипа труб эхом отдаются от каменных стен по обе стороны от тебя. Из-за этого постоянного фонового шума тихое шлепанье шагов слайма, когда [npc.she] подкрадывается к тебе, остается почти незамеченным. Лишь когда слайм оказывается на расстоянии [unit.lSizes(1000)], ты внезапно ощущаешь присутствие [npc.herHis] и резко оборачиваешься, обнаруживая перед собой [npc.a_fullRace(true)]!
 	</p>
 	]]>
 	</htmlContent>
@@ -15,35 +15,35 @@
 		 [npc.speech(Mmm! You're lookin' good!)]
 	</p>
 	<p>
-		[npc.Name] suddenly stops, before placing [npc.her] hands on [npc.her] [npc.hips+]. Despite [npc.her] suspicious behaviour, it doesn't look like [npc.she] wants to attack you, and as [npc.she] speaks once more, this is revealed to be the case. [npc.speech(Don't worry, I'm not looking for a fight or anything! I'm just out here on the Queen's orders. Gotta transform as many travellers as I can into slimes and all that!)]
+		[npc.Name] внезапно останавливается, после чего кладет [npc.her] руки на [npc.her] [npc.hips+]. Несмотря на подозрительное поведение [npc.her], не похоже, что [npc.she] хочет напасть на тебя, и когда [npc.she] заговаривает снова, это подтверждается. [npc.speech(Не бойся, я не ищу драки или чего-то такого! Я здесь просто по приказу Королевы. Нужно превратить как можно больше путешественников в слаймов и всё в таком духе!)]
 	</p>
 	<p>
-		You let out a sigh, allowing yourself to relax a little as you realise that you aren't going to be forced into a fight.
+		Ты облегченно вздыхаешь и немного расслабляешься, понимая, что драки можно избежать.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRANSFORMER_PLAYER_SLIME_OFFER_SEX"><![CDATA[
 	<p>
-		[npc.speech(So, you wanna have sex, or what?)]
-		 [npc.Name] suddenly asks.
-		 [npc.speech(I usually only fuck people right after I've turned them into slimes, but it's been hours since the last one, and I'm kind of horny.)]
-	</p>
+		[npc.speech(Ну так что, хочешь трахнуться или как?)]
+		 внезапно спрашивает [npc.Name].
+		 [npc.speech(Обычно я ебу людей сразу после того, как превращаю их в слаймов, но с последнего прошло уже несколько часов, и я что-то разгорячилась.)]
+		</p>
 	<p>
-		You wonder if you should accept [npc.name]'s invitation, or decline and continue on your way...
-	</p>
+		Ты раздумываешь, стоит ли принять предложение [npc.name], или отказаться и продолжить свой путь...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRANSFORMER_PLAYER_SLIME_NO_SEX"><![CDATA[
 	<p>
-		[npc.speech(Well, you stay safe out there,)]
-		 [npc.Name] says, before turning to leave.
-		 [npc.speech(I've gotta find more people to turn into slimes. The Queen said we're supposed to do at least five a day, and I'm only on three so far!)]
-	</p>
+		[npc.speech(Ну, береги себя там,)]
+		 говорит [npc.Name], прежде чем развернуться и уйти.
+		 [npc.speech(Мне нужно найти еще людей, чтобы превратить их в слаймов. Королева сказала, что мы должны делать как минимум пятерых в день, а у меня пока только трое!)]
+		</p>
 	<p>
-		You wonder if you should try to put a stop to [npc.name]'s plans, or take your leave and continue on your way...
-	</p>
+		Ты раздумываешь, стоит ли попытаться помешать планам [npc.name], или же отправиться дальше своим путем...
+		</p>
 	]]>
 	</htmlContent>
 	
@@ -54,45 +54,45 @@
 		 [npc.speech(Mmm! You're gonna make a great slime, I can tell already!)]
 	</p>
 	<p>
-		[npc.Name] suddenly stops, before placing [npc.her] hands on [npc.her] [npc.hips+] and grinning evilly at you. [npc.speech(Now, I'm not interested in your money, or anything you have to say! The Queen's ordered me to transform at least five people into slimes every day, and you're lucky number four!)]
-	</p>
+		[npc.Name] внезапно останавливается, кладет [npc.her] руки на [npc.her] [npc.hips+] и злобно ухмыляется тебе. [npc.speech(Слушай, меня не интересуют твои деньги или всё, что ты там можешь сказать! Королева приказала мне превращать как минимум пятерых человек в слаймов каждый день, и ты — мое счастливое число четыре!)]
+		</p>
 	<p>
-		[pc.speech(What kind of Queen is ordering people to be transformed into slimes?)]
-		 you ask, stepping back and preparing yourself for a fight.
-	</p>
+		[pc.speech(Что это за Королева такая, которая приказывает превращать людей в слаймов?)]
+		 спрашиваешь ты, отступая назад и готовясь к бою.
+		</p>
 	<p>
-		[npc.speech(Well, duh! The Slime Queen of course! Perhaps once I've turned you into a new subject of hers, you'll get to meet her some day!)]
-		 [npc.Name] grins.
-	</p>
+		[npc.speech(Ну еще бы! Конечно же, Королева Slime! Может, когда я превращу тебя в её нового подданного, ты когда-нибудь с ней встретишься!)]
+		 [npc.Name] ухмыляется.
+		</p>
 	<p>
-		[pc.speech(So she's the one behind all these slime transformations?)]
-		 you ask, remembering what Claire told you about the increase in slime transformations, and about the one-thousand flame reward for any information about it. 
-	</p>
+		[pc.speech(Значит, именно она стоит за всеми этими превращениями в слаймов?)]
+		 спрашиваешь ты, вспоминая слова Клэр об участившихся превращениях и о награде в тысячу Огней за любую информацию об этом.
+		</p>
 	<p>
-		[npc.speech(Well, that's pretty obvious, isn't it? But if you think I'm going to tell you any more about her, then you're as stupid as you look!)]
-		 [npc.Name] sneers, before holding up a small canister of glowing pink fluid and offering you an ultimatum.
-		 [npc.speech(Now, we can do this the easy way, or the hard way!)]
-	</p>
+		[npc.speech(Ну, это же очевидно, разве нет? Но если ты думаешь, что я выложу тебе о ней побольше, то ты такой же тупица, каким кажешься на вид!)]
+		 [npc.Name] скалится, после чего поднимает небольшой флакон с сияющей розовой жидкостью и ставит тебе ультиматум.
+		 [npc.speech(Теперь мы можем сделать это по-хорошему или по-плохому!)]
+		</p>
 	<p>
-		You instinctively crouch down a little as you prepare to defend yourself. Then again, you could always do things the 'easy way', and willingly let [npc.name] transform you into a slime...
-	</p>
+		Ты инстинктивно слегка приседаешь, готовясь к защите. С другой стороны, ты всегда можешь выбрать «хороший путь» и добровольно позволить [npc.name] превратить тебя в слайма...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_TRANSFORMER"><![CDATA[
 	<p>
-		[npc.speech(Haha! Did I make you jump?)]
-		 [npc.She] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Mmm! You're gonna make a great slime, I can tell already!)]
-	</p>
+		[npc.speech(Ха-ха! Я что, заставила тебя подпрыгнуть?)]
+		 [npc.She] смеется, продолжая наступать на тебя. [npc.Her] тело [npc.skinColour] слегка вздрагивает и идет рябью от [npc.her] радостного возбуждения, а [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Ммм! Из тебя выйдет отличный слайм, я уже это вижу!)]
+		</p>
 	<p>
-		[npc.Name] suddenly stops, before placing [npc.her] hands on [npc.her] [npc.hips+] and grinning evilly at you. [npc.speech(Now, I'm not interested in your money, or anything you have to say! I'm just here to carry out the Queen's orders! That being, to turn you into a cute little slime!)]
-		 [npc.Name] sneers, before holding up a small canister of glowing pink fluid and offering you an ultimatum.
-		 [npc.speech(Now, we can do this the easy way, or the hard way!)]
-	</p>
+		[npc.Name] внезапно замирает, прежде чем положить [npc.her] руки на [npc.her] [npc.hips+] и злобно ухмыльнуться тебе. [npc.speech(Знаешь, меня не интересуют твои деньги или всё то, что ты хочешь сказать! Я здесь лишь для того, чтобы исполнить приказ Королевы! А именно — превратить тебя в милого маленького слайма!)]
+		 [npc.Name] насмешливо фыркает, после чего поднимает небольшой флакон с сияющей розовой жидкостью и предлагает тебе ультиматум.
+		 [npc.speech(Итак, мы можем сделать это по-хорошему или по-плохому!)]
+		</p>
 	<p>
-		You instinctively crouch down a little as you prepare to defend yourself. Then again, you could always do things the 'easy way', and willing let [npc.name] transform you into a slime...
-	</p>
+		Ты инстинктивно слегка приседаешь, готовясь к защите. С другой стороны, ты всегда можешь выбрать «лёгкий путь» и добровольно позволить [npc.name] превратить тебя в слайма...
+		</p>
 	]]>
 	</htmlContent>
 	
@@ -103,76 +103,75 @@
 		 [npc.speech(Mmm! Yeah, you look like you've got some cash!)]
 	</p>
 	<p>
-		[pc.speech(What do you want?)]
-		 you ask in a stern tone, instinctively crouching down a little as you prepare to defend yourself.
-	</p>
+		[pc.speech(Чего ты хочешь?)]
+		 спрашиваешь ты суровым тоном, инстинктивно слегка приседая в ожидании нападения.
+		</p>
 	<p>
-		[npc.speech(Your money, duh. Have you never been mugged before? Now hand it over. There's no need for this to turn ugly.)]
-		 [npc.Name] grins, obviously willing to fight you to get what [npc.she] wants...
-	</p>
+		[npc.speech(Твои деньги, тупица. Тебя что, никогда раньше не грабили? А теперь отдавай. Не стоит доводить дело до драки.)]
+		 [npc.Name] ухмыляется, явно готовая сражаться за то, чего хочет [npc.she]...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_TRANSFORMER_PLAYER_SLIME_TURN_DOWN_SEX"><![CDATA[
 	<p>
-		You don't really want to have sex with [npc.name] right now, and tell [npc.herHim] as such.
-		 [pc.speech(I'm not interested. I need to get going now, goodbye.)]
-	</p>
+		Тебе не очень хочется заниматься сексом с [npc.name] прямо сейчас, и ты говоришь об этом [npc.herHim].
+		 [pc.speech(Мне не интересно. Мне пора идти, прощай.)]
+		</p>
 	<p>
-		[npc.speech(Well, whatever,)]
-		 [npc.Name] says, before turning and making [npc.her] exit. Having dealt with [npc.name], you similarly turn around and continue on your way.
+		[npc.speech(Ну, как знаешь,)]
+		 — бросает [npc.Name], прежде чем развернуться и направиться к [npc.her]. Разобравшись с [npc.name], ты тоже разворачиваешься и продолжаешь свой путь.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_TRANSFORMER_PLAYER_SLIME_LEAVE"><![CDATA[
 	<p>
-		You don't really want to fight [npc.name], so simply say goodbye, before turning around and continuing on your way.
+		Тебе не особо хочется сражаться с [npc.name], поэтому ты просто прощаешься, разворачиваешься и идешь дальше.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLIME_SEX_AS_DOM"><![CDATA[
 	<p>
-		Not being able to resist [npc.name]'s offer of sex, you step forwards and pull [npc.herHim] into a firm embrace.
-		 Pressing your [pc.lips] against [npc.hers], you slide your [pc.tongue] into [npc.her] mouth as you start dominantly kissing [npc.herHim].
+		Не в силах устоять перед предложением [npc.name] заняться сексом, ты делаешь шаг вперед и крепко прижимаешь [npc.herHim] к себе.
+		 Прижимая свою [pc.lips] к [npc.hers], ты вставляешь свой [pc.tongue] в [npc.her] рот, властно целуя [npc.herHim].
 	</p>
 	<p>
-		[npc.Name] lets out a submissive little [npc.moan] in response, and, leaning in to you, [npc.she] eagerly returns your kiss. After a moment of this, you break it off, and, leaning back a little, you grin at [npc.name] as you [pc.moan], [pc.speech(Time for some fun!)]
+		В ответ [npc.Name] издает покорный тихий [npc.moan] и, подавшись к тебе, [npc.she] с жадностью отвечает на поцелуй. Спустя мгновение ты прерываешь его, слегка отстраняешься и, широко улыбаясь [npc.name], [pc.moan], [pc.speech(Пора повеселиться!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLIME_SEX_AS_SUB"><![CDATA[
 	<p>
-		Not being able to resist [npc.name]'s offer of sex, you shuffle your feet and reply in the affirmative.
-		 Immediately, [npc.name] bounds forwards, before pulling you into a firm embrace.
-		 Leaning forwards, [npc.she] presses [npc.her] [npc.lips] against yours, before sliding [npc.her] [npc.tongue] into your mouth as [npc.she] starts dominantly kissing you.
+		Не в силах устоять перед предложением [npc.name] заняться сексом, ты переминаешься с ноги на ногу и соглашаешься.
+		 Тотчас [npc.name] бросается вперед и крепко обнимает тебя.
+		 Наклонившись, [npc.she] прижимает свою [npc.her] [npc.lips] к твоей, а затем вставляет [npc.her] [npc.tongue] тебе в рот, пока [npc.she] начинает властно тебя целовать.
 	</p>
 	<p>
-		You can't help but let out a submissive little [pc.moan] in response, and, leaning in to [npc.name], you eagerly return [npc.her] kiss. After a moment of this, [npc.she] breaks it off, and, leaning back a little, [npc.she] grins at you as [npc.she] [npc.moans], [npc.speech(Time for some fun!)]
+		Ты невольно издаешь покорный тихий [pc.moan] в ответ и, подавшись к [npc.name], с жадностью отвечаешь на [npc.her] поцелуй. Спустя мгновение [npc.she] прерывает его, слегка отстраняется, и [npc.she] ухмыляется тебе, пока [npc.she] [npc.moans], [npc.speech(Пора повеселиться!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFER_BODY"><![CDATA[
 	<p>
-		Wanting to avoid a fight, and unwilling to hand over any of your money, you decide to do the only other thing you can think of.
-		 Putting on your most seductive tone, you step towards [npc.name] and make your offer. 
-		 [pc.speech(There's no need to fight. If you're looking for a bit of fun, you can use me however you'd like...)]
+		Желая избежать драки и не желая расставаться с деньгами, ты решаешь сделать единственное, что приходит на ум.
+		Приняв самый соблазнительный вид, ты делаешь шаг к [npc.name] и озвучиваешь свое предложение.
+		 [pc.speech(Драться вовсе не обязательно. Если хочешь немного развлечься, можешь использовать меня как пожелаешь...)]
 	</p>
 	<p>
-		[npc.speech(Oh really?)]
-		 [npc.name] replies, the note of arousal in [npc.her] voice impossible to miss.
-		 You remain in place, putting on your most seductive look and trying to make yourself as small as possible as you attempt to entice [npc.name] into using you for some sexual relief.
+		[npc.speech(О, неужели?)]
+		 Отвечает [npc.name], и нотки возбуждения в [npc.her] [npc.name] невозможно не заметить.
+		 Ты замираешь на месте, принимая самый соблазнительный вид и стараясь казаться как можно меньше, пытаясь завлечь [npc.name] использовать тебя для сексуальной разрядки.
 	</p>
 	<p>
-		Much to your delight, your would-be attacker quickly steps forwards, before grabbing you by the [pc.arms] and pulling you into a tight embrace.
-		 Pressing [npc.her] [npc.lips] against yours, [npc.she] thrusts [npc.her] [npc.tongue] into your mouth, aggressively kissing you for a moment before pulling back, growling,
-		 [npc.speech(You're going to be a good [pc.girl] now, aren't you bitch?)]
-	</p>
-	<p>
-		Whimpering in the affirmative, you surrender yourself to [npc.name]'s dominant touch, allowing [npc.herHim] to have [npc.her] fun with you...
+		К твоему восторгу, потенциальный противник делает шаг вперед, хватает тебя за [pc.arms] и притягивает к себе в крепких объятиях.
+		 Прижимая [npc.her] [npc.lips] к тебе, [npc.she] втискивает [npc.her] [npc.tongue] тебе в рот, агрессивно целуя на мгновение, а затем отстраняется с рычанием:
+		 [npc.speech(Теперь ты будешь послушной [pc.girl], верно, сучка?)]
+	</p><p>
+		Всхлипывая в знак согласия, ты полностью отдаёшься властным прикосновениям [npc.name], позволяя [npc.herHim] вдоволь развлечься с [npc.her]...
 	</p>
 	]]>
 	</htmlContent>
@@ -181,33 +180,33 @@
 	
 	<htmlContent tag="ATTACK_REPEAT_TRANSFORMER_PLAYER_SLIME"><![CDATA[
 	<p>
-		[npc.speech(Haha! Did I make you jump?)]
-		 [npc.She] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Fancy seeing you here again!)]
+		[npc.speech(Ха-ха! Заставил тебя подпрыгнуть?)]
+		 [npc.She] смеется, продолжая наступать на тебя. Тело [npc.Her] [npc.skinColour] слегка вздрагивает от [npc.her] радостного порыва, а [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Какая встреча! Снова ты!)]
 	</p>
 	<p>
-		[npc.Name] suddenly stops, before placing [npc.her] hands on [npc.her] [npc.hips+]. Despite [npc.her] suspicious behaviour, it doesn't look like [npc.she] wants to attack you, and as [npc.she] speaks once more, this is revealed to be the case. [npc.speech(Don't worry, I'm still not looking for a fight or anything! I'm just out here on the Queen's orders. Gotta transform as many travellers as I can into slimes and all that!)]
+		[npc.Name] внезапно замирает, прежде чем положить [npc.her] руки на [npc.her] [npc.hips+]. Несмотря на [npc.her] подозрительное поведение, не похоже, что [npc.she] хочет напасть на тебя, и когда [npc.she] заговаривает снова, это подтверждается. [npc.speech(Не бойся, я всё ещё не ищу драки! Просто выполняю приказы Королевы. Нужно превратить как можно больше путешественников в слаймов и всё такое!)]
 	</p>
 	<p>
-		You let out a sigh, allowing yourself to relax a little as you realise that you aren't going to be forced into a fight.
+		Ты облегченно вздыхаешь и немного расслабляешься, понимая, что драки можно избежать.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_REPEAT_TRANSFORMER"><![CDATA[
 	<p>
-		[npc.speech(Haha! Did I make you jump?)]
-		 [npc.She] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Fancy seeing you here again!)]
+		[npc.speech(Ха-ха! Заставил тебя подпрыгнуть?)]
+		 [npc.She] смеется, продолжая наступать на тебя. Тело [npc.Her] [npc.skinColour] слегка вздрагивает от [npc.her] радостного порыва, а [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Какая встреча! Снова ты!)]
 	</p>
 	<p>
-		[npc.Name] suddenly stops, before placing [npc.her] hands on [npc.her] [npc.hips+] and grinning evilly at you. [npc.speech(Just like last time, I'm not interested in your money, or anything you have to say! I'm just here to carry out the Queen's orders! That being, to turn you into a cute little slime!)]
-		 [npc.Name] sneers, before holding up a small canister of glowing pink fluid and offering you an ultimatum.
-		 [npc.speech(Now, we can do this the easy way, or the hard way!)]
+		[npc.Name] внезапно замирает, прежде чем положить [npc.her] руки на [npc.her] [npc.hips+] и злобно ухмыльнуться тебе. [npc.speech(Как и в прошлый раз, меня не интересуют твои деньги или всё, что ты можешь сказать! Я здесь, чтобы исполнить приказ Королевы! А именно — превратить тебя в милого маленького слайма!)]
+		 [npc.Name] насмешливо фыркает, прежде чем поднять небольшой флакон с сияющей розовой жидкостью и предложить тебе ультиматум.
+		 [npc.speech(Теперь мы можем сделать это по-хорошему или по-плохому!)]
 	</p>
 	<p>
-		You instinctively crouch down a little as you prepare to defend yourself. Then again, you could always do things the 'easy way', and willing let [npc.name] transform you into a slime...
-	</p>
+		Ты инстинктивно слегка приседаешь, готовясь к защите. С другой стороны, ты всегда можешь выбрать «лёгкий путь» и добровольно позволить [npc.name] превратить тебя в слайма...
+		</p>
 	]]>
 	</htmlContent>
 	
@@ -215,61 +214,60 @@
 	<p>
 		#IF npc.isVisiblyPregnant()
 		#THEN
-			[npc.speech(Haha! It's you again! Look, I'm still carrying our kids around!)]
+			[npc.speech(Ха-ха! Снова ты! Смотри, я всё ещё ношу наших деток с собой!)]
 		#ELSE
-			[npc.speech(Haha! It's you again!)]
+			[npc.speech(Ха-ха! Снова ты!)]
 		#ENDIF
 		 The familiar [npc.race] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
 		 [npc.speech(So, you gonna hand over your cash, or what?)]
 	</p>
 	<p>
-		You instinctively crouch down a little as you prepare to defend yourself.
-		 Just like last time, [npc.name] is obviously willing to fight you, and you wonder what you should do next...
+		Ты инстинктивно слегка приседаешь, готовясь к защите.
+		 Как и в прошлый раз, [npc.name] явно готова сражаться с тобой, и ты гадаешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_PREGNANCY_REVEAL_TRANSFORMER_PLAYER_SLIME"><![CDATA[
 	<p>
-		[npc.speech(Haha! It's you again! Look here, you've gone and got me knocked up!)]
-		 The familiar [npc.race] laughs, rubbing the noticeably swollen bump in [npc.her] belly. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Don't worry, I'm still not looking for a fight or anything! I'm just out here on the Queen's orders. Gotta transform as many travellers as I can into slimes and all that!)]
+		[npc.speech(Ха-ха! Снова ты! Гляди-ка, ты меня всё-таки обрюхатил!)]
+		 Знакомый [npc.race] смеётся, поглаживая заметно раздувшийся живот в [npc.her]. Тело [npc.Her], состоящее из [npc.skinColour], слегка вздрагивает и колышется от [npc.her] радостного порыва, а [npc.she] прикусывает [npc.her] губу, пристально разглядывая тебя [npc.she].
+		 [npc.speech(Не бойся, я всё ещё не ищу драки! Я здесь просто по приказу Королевы. Нужно превратить как можно больше путешественников в слаймов и всё такое!)]
 	</p>
 	<p>
-		You let out a sigh, allowing yourself to relax a little as you realise that you aren't going to be forced into a fight.
+		Ты облегченно вздыхаешь и немного расслабляешься, понимая, что драки можно избежать.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ATTACK_PREGNANCY_REVEAL_TRANSFORMER"><![CDATA[
 	<p>
-		[npc.speech(Haha! It's you again! Look here, you've gone and got me knocked up!)]
-		 The familiar [npc.race] laughs, rubbing the noticeably swollen bump in [npc.her] belly. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Just like last time, I'm not interested in your money, or anything you have to say! I'm just here to carry out the Queen's orders! That being, to turn you into a cute little slime! Now, we can do this the easy way, or the hard way!)]
+		[npc.speech(Ха-ха! Снова ты! Гляди-ка, ты меня всё-таки обрюхатил!)]
+		 Знакомый [npc.race] смеётся, поглаживая заметно раздувшийся живот в [npc.her]. Тело [npc.Her], состоящее из [npc.skinColour], слегка вздрагивает и колышется от [npc.her] радостного порыва, а [npc.she] прикусывает [npc.her] губу, пристально разглядывая тебя [npc.she].
+		 [npc.speech(Как и в прошлый раз, меня не интересуют твои деньги или твои оправдания! Я здесь, чтобы исполнить волю Королевы! А именно — превратить тебя в милого маленького слайма! Ну что, пойдём по лёгкому пути или по сложному?)]
 	</p>
 	<p>
-		You instinctively crouch down a little as you prepare to defend yourself. Then again, you could always do things the 'easy way', and willing let [npc.name] transform you into a slime...
-	</p>
+		Ты инстинктивно слегка приседаешь, готовясь к защите. С другой стороны, ты всегда можешь выбрать «лёгкий путь» и добровольно позволить [npc.name] превратить тебя в слайма...
+		</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="ATTACK_PREGNANCY_REVEAL"><![CDATA[
-	<p>
-		[npc.speech(Haha! It's you again! Look here, you've gone and got me knocked up!)]
-		 The familiar [npc.race] laughs, rubbing the noticeably swollen bump in [npc.her] belly. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(So, you gonna take responsibility, or what? Come on, I need the extra cash for our kid's clothes and stuff, so hand it over!)]
+	<htmlContent tag="ATTACK_PREGNANCY_REVEAL"><![CDATA[<p>
+		[npc.speech(Ха-ха! Опять ты! Гляди-ка, ты меня всё-таки обрюхатил!)]
+		 Знакомая [npc.race] смеётся, поглаживая заметно раздувшийся живот в [npc.her]. Тело [npc.Her] [npc.skinColour] слегка вздрагивает и колышется от [npc.her] радостного порыва, а [npc.she] прикусывает [npc.her] губу, оценивающе разглядывая тебя [npc.she].
+		 [npc.speech(Ну так что, собираешься брать на себя ответственность? Давай же, мне нужны лишние деньги на шмотки и прочее для нашего малыша, так что не жадничай, выкладывай!)]
 	</p>
 	<p>
-		You instinctively crouch down a little as you prepare to defend yourself.
-		 Just like last time, [npc.name] is obviously willing to fight you, and you wonder what you should do next...
+		Ты инстинктивно слегка приседаешь, готовясь к защите.
+		 Как и в прошлый раз, [npc.name] явно готова сражаться с тобой, и ты гадаешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SLIME_SEX_AS_DOM"><![CDATA[
 	<p>
-		As you step back from [npc.name], [npc.she] sinks to the floor, letting out a deeply satisfied sigh as [npc.she] [npc.moans],
-		 [npc.speech(Mmm... That was good...)]
+		Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая глубокий удовлетворенный вздох, пока [npc.she] [npc.moans],
+		 [npc.speech(Ммм... Это было хорошо...)]
 	</p>
 	<p>
 		Grinning at the happy little [npc.moaning] noises [npc.name] continues to make, you quickly get your things in order, before moving off and continuing on your way...
@@ -279,33 +277,33 @@
 	
 	<htmlContent tag="AFTER_SLIME_SEX_AS_DOM_NO_ORGASM"><![CDATA[
 	<p>
-		As you step back from [npc.name], [npc.she] sinks to the floor, letting out a frustrated sigh as [npc.she] [npc.moans],
-		 [npc.speech(Ahh... That wasn't enough! I need more!)]
+		Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая разочарованный вздох, пока [npc.she] [npc.moans],
+		 [npc.speech(Ахх... Это было мало! Мне нужно больше!)]
 	</p>
 	<p>
-		As [npc.name] reaches down between [npc.her] legs to start frantically masturbating, you quickly get your things in order, before moving off and continuing on your way...
+		Пока [npc.name] тянется рукой между ног [npc.her], чтобы начать неистово мастурбировать, ты быстро приводишь свои вещи в порядок, после чего отправляешься дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SLIME_SEX_AS_SUB"><![CDATA[
 	<p>
-		[npc.Name] steps back, letting out a deeply satisfied sigh as [npc.she] [npc.moans],
-		 [npc.speech(Mmm... That was good... See you around!)]
+		[npc.Name] отступает назад, издавая глубокий удовлетворенный вздох, пока [npc.she] [npc.moans],
+		 [npc.speech(Ммм... Это было хорошо... Еще увидимся!)]
 	</p>
 	<p>
-		With that, [npc.she] turns around and quickly moves off down the tunnel, leaving you to get your things in order, before setting off and continuing on your way...
+		С этими словами [npc.she] разворачивается и быстро уходит вглубь туннеля, оставляя тебя собирать свои вещи, чтобы ты мог отправиться дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SLIME_SEX_AS_SUB_NO_ORGASM"><![CDATA[
 	<p>
-		[npc.Name] steps back, letting out a frustrated sigh as [npc.she] [npc.moans],
-		 [npc.speech(Ahh... I didn't even orgasm once!)]
+		[npc.Name] отступает на шаг, разочарованно вздыхая, пока [npc.she] [npc.moans],
+		 [npc.speech(Ах... я ведь даже ни разу не кончила!)]
 	</p>
 	<p>
-		With that, [npc.she] turns around and quickly moves off down the tunnel, leaving you to get your things in order, before setting off and continuing on your way...
+		С этими словами [npc.she] разворачивается и быстро уходит вглубь туннеля, оставляя тебя собирать свои вещи, чтобы ты мог отправиться дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
@@ -313,98 +311,97 @@
 	
 	<htmlContent tag="TRANSFORMED"><![CDATA[
 	<p>
-		[pc.speech(Ok, I'll become a slime...)] you say, eyeing the canister of pink liquid in [npc.name]'s hand.
+		[pc.speech(Ладно, я стану слаймом...)] — говоришь ты, глядя на баночку с розовой жидкостью в руке [npc.name].
+	</p><p>
+		Усмехаясь, [npc.name] делает шаг вперёд и хватает тебя за [pc.arm]. Прижимаясь к тебе, [npc.she] подносит своё [npc.her] лицо почти вплотную к твоему [unit.sizes] и скалится:
+		 [npc.speech(Тогда тебе лучше выпить всё это залпом и не поднимать лишнего шума, уяснил?)]
 	</p>
 	<p>
-		Grinning, [npc.name] steps forwards, before reaching out to grab your [pc.arm]. Sliding up against you, [npc.she] brings [npc.her] face to within [unit.sizes] of yours, and sneers,
-		 [npc.speech(Then you'd better drink all of this down without kicking up a fuss, understood?)]
+		Когда хватка [npc.name] на твоей [pc.arm] усиливается, ты отвечаешь:
+		 [pc.speech(Поняла. Я выпью...)]
 	</p>
 	<p>
-		As [npc.name]'s grip on your [pc.arm] tightens, you reply,
-		 [pc.speech(I understand. I'll drink it...)]
+		[npc.speech(Молодец, [pc.girl]!)]
+		 восклицает [npc.Name], отпуская твою [pc.arm], чтобы открутить крышку стеклянной баночки. Прежде чем ты успеваешь о чем-то пожалеть, [npc.she] внезапно тянется вверх и хватает тебя за подбородок, сжимая щеки, чтобы заставить открыть рот. Не желая сопротивляться, ты делаешь всё, как того ждет [npc.name], и послушно размыкаешь [pc.lips+]. Мгновенно [npc.name] подносит баночку к твоим [pc.face+] и, наклонив её, вливает светящуюся розовую жижу тебе в рот.
 	</p>
 	<p>
-		[npc.speech(Good [pc.girl]!)]
-		 [npc.Name] cries, letting go of your [pc.arm] in order to unscrew the top of the glass canister. Before you can have any second thoughts, [npc.she] suddenly reaches up and grabs your chin, before squeezing your cheeks in order to get you to open your mouth. Not wanting to resist, you do as [npc.name] expects, and obediently part your [pc.lips+]. Instantly, [npc.name] brings the canister to your [pc.face+], and, tilting it up, forces the glowing pink liquid into your mouth.
+		Сладкий, приторный вкус густой розовой жидкости мгновенно ошеломляет твои чувства, и, подавляя инстинктивное желание выплюнуть её, ты начинаешь жадно глотать склизкую жижу. [npc.Name] довольно ухмыляется, наблюдая, как [npc.she] заставляет тебя выпить всё содержимое баночки, после чего швыряет пустой стеклянный сосуд в ближайшую стену, чтобы тот разбился вдребезги.
 	</p>
 	<p>
-		The sweet, sickly flavour of the thick pink liquid immediately overwhelms your senses, and, ignoring the instinct to spit it out, you start frantically gulping down the slimy goo. [npc.Name] grins in delight as [npc.she] forces you to drink the entire canister, before tossing the now-empty glass container to smash against a nearby wall.
-	</p>
-	<p>
-		[npc.speech(Oh, yes! I never get tired of seeing what's next! Please do try to enjoy this. I know I will!)]
-		 [npc.Name] laughs, stepping back and staring at you with a wicked smirk on [npc.her] face.
-		 As [npc.she] prepares to watch you transform, you see [npc.herHim] slip a hand down between [npc.her] [npc.legs], and you let out a startled cry as you realise that [npc.she]'s going to masturbate to the sight of you turning into a slime...
+		[npc.speech(О, да! Мне никогда не надоедает смотреть, что будет дальше! Пожалуйста, постарайся получить от этого удовольствие. А я точно получу!)]
+		 [npc.Name] смеется, отступая назад и глядя на тебя со злобной ухмылкой на [npc.her] лице.
+		 Пока [npc.she] готовится наблюдать за твоим превращением, ты замечаешь, как [npc.herHim] запускает руку между [npc.her] [npc.legs], и невольно вскрикиваешь, осознав, что [npc.she] собирается мастурбировать, глядя на то, как ты превращаешься в слайма...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRANSFORMED_SLIME_OFFER_SEX"><![CDATA[
 	<p>
-		You're suddenly reminded of the fact that [npc.name] has been watching this whole process, as [npc.she] steps forwards and [npc.moans],
-		 [npc.speech(Fuck, that's so hot! Watching you turn into a cute slime has got me sooo horny. Now, you wanna fuck, or what?)]
+		Ты внезапно вспоминаешь о том, что [npc.name] всё это время наблюдала за процессом, когда [npc.she] делает шаг вперед и [npc.moans],
+		 [npc.speech(Бля, как же это горячо! Смотреть, как ты превращаешься в милого слайма — это так возбуждает. Ну что, хочешь трахнуться или как?)]
 	</p>
 	<p>
-		You wonder if you should accept [npc.name]'s invitation, or decline and continue on your way...
-	</p>
+		Ты раздумываешь, стоит ли принять предложение [npc.name], или отказаться и продолжить свой путь...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRANSFORMED_SLIME_NO_SEX"><![CDATA[
 	<p>
-		You're suddenly reminded of the fact that [npc.name] has been watching this whole process, as [npc.she] steps forwards and laughs,
-		 [npc.speech(Oh, that was great! Well, I've gotta find more people to turn into slimes. The Queen said we're supposed to do at least five a day, and you were only number four!)]
+		Ты внезапно вспоминаешь о том, что [npc.name] всё это время наблюдала за процессом, когда [npc.she] делает шаг вперед и смеется,
+		 [npc.speech(О, это было великолепно! Что ж, мне нужно найти еще людей, чтобы превратить их в слаймов. Королева сказала, что мы должны делать как минимум пятерых в день, а ты был всего лишь четвертым!)]
 	</p>
 	<p>
-		As [npc.name] turns around and disappears off into Submission's tunnels, you prepare to continue on your way...
+		Когда [npc.name] разворачивается и исчезает в туннелях Submission, ты готовишься продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RESIST_TRANSFORMED"><![CDATA[
 	<p>
-		You definitely aren't interested in being transformed into a slime, and, with your final burst of energy, jump forwards and knock the canister of pink goo from [npc.name]'s hand. The glass container falls to the floor, where it smashes into pieces, spraying the pink liquid all over the surrounding area.
+		Превращение в слайма тебя явно не прельщает, и, собрав последние остатки энергии, ты прыгаешь вперед и выбиваешь баночку с розовой жижей из рук [npc.name]. Стеклянный сосуд падает на пол и разлетается вдребезги, разбрызгивая розовую жидкость по всей округе.
 	</p>
 	<p>
-		[npc.speech(Fuck!)] [npc.Name] screams, slamming you to the floor as [npc.she] jumps on top of you. [npc.speech(Do you know how angry the Queen's going to be when I report this to her?!)]
+		[npc.speech(Блядь!)] [npc.Name] визжит, впечатывая тебя в пол, пока [npc.she] запрыгивает сверху. [npc.speech(Ты хоть понимаешь, в какую ярость придет Королева, когда я ей всё доложу?!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RESIST_TRANSFORMED_RAPE"><![CDATA[
 	<p>
-		You can't help but smirk as you realise that you've ruined [npc.name]'s plans. Seeing the smile on your face makes [npc.herHim] even angrier, and a manic, evil snarl flashes across [npc.her] face as [npc.she] leans down on top of you. [npc.speech(Let's see if you're still smiling after I'm done with you, hmm?! I'm going to fuck you so hard, the entire of Submission's gonna hear your screams!)]
+		Ты невольно ухмыляешься, осознавая, что разрушил планы [npc.name]. Твоя улыбка злит [npc.herHim] ещё сильнее, и на лице [npc.her] промелькнул безумный, злой оскал, когда [npc.she] нависает над тобой. [npc.speech(Посмотрим, будешь ли ты так же улыбаться, когда я с тобой закончу, а?! Я оттрахаю тебя так сильно, что весь Submission услышит твои вопли!)]
 	</p>
 	<p>
-		With that, [npc.name] suddenly presses [npc.her] [npc.lips] down against yours, thrusting [npc.her] [npc.tongue] into your mouth as [npc.she] forces [npc.herself] on you...
+		С этими словами [npc.name] внезапно прижимает [npc.her] [npc.lips] к тебе, вгоняя [npc.her] [npc.tongue] тебе в рот, пока [npc.she] наваливается на тебя с [npc.herself]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RESIST_TRANSFORMED_NO_RAPE"><![CDATA[
 	<p>
-		You can't help but smirk as you realise that you've ruined [npc.name]'s plans. Seeing the smile on your face makes [npc.herHim] even angrier, and with a final rough shove, [npc.she] pushes you down and shouts, [npc.speech(I'm gonna go get another one of those canisters, and next time you'll drink it!)]
+		Ты невольно ухмыляешься, осознавая, что разрушил планы [npc.name]. Твоя улыбка злит [npc.herHim] ещё сильнее, и, сделав последний грубый толчок, [npc.she] сбивает тебя с ног и кричит: [npc.speech(Пойду достану ещё один такой баллон, и в следующий раз пить будешь ты!)]
 	</p>
 	<p>
-		With that, [npc.name] suddenly stand up and runs off, leaving you to brush yourself down and continue on your way...
+		С этими словами [npc.name] внезапно вскакивает и убегает, оставляя тебя отряхиваться и продолжать путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFER_MONEY"><![CDATA[
 	<p>
-		Wanting to avoid a fight if at all possible, you take a step backwards, fumbling about to grab a handful of flames to offer to [npc.name].
-		 [pc.speech(I don't want to fight! Please, just take this and leave!)]
+		Желая избежать драки, если это возможно, ты делаешь шаг назад, нащупывая горсть огней, чтобы предложить их [npc.name].
+		 [pc.speech(Я не хочу драться! Пожалуйста, просто возьми это и уходи!)]
 	</p>
 	<p>
-		[npc.speech(Sure thing, it's a lot easier for me if I don't have to pummel you into the ground first!)]
-		 [npc.Name] replies, [npc.her] desire to rob you of your money obviously being the motivating factor behind [npc.her] assault.
+		[npc.speech(Без проблем! Мне ведь куда проще, если не придется сначала втаптывать тебя в землю!)]
+		 [npc.Name] отвечает тебе; очевидно, что [npc.her] желанием обобрать тебя до нитки движет [npc.her] во время [npc.her] нападения.
 	</p>
 	<p>
-		Stepping forwards, [npc.she] snatches the flames out of your [pc.hand], letting out a mocking laugh as [npc.she] commands,
-		 [npc.speech(Hah! Now get out of my sight!)]
+		Сделав шаг вперед, [npc.she] выхватывает огни из твоих [pc.hand], насмешливо хохоча, пока [npc.she] командует:
+		 [npc.speech(Ха! А теперь проваливай с глаз моих!)]
 	</p>
 	<p>
-		Reluctant to do anything other than what [npc.she] suggests, you hurry on your way, thankful that you had enough money to avoid a fight.
+		Не желая делать что-либо, кроме того, что предлагает [npc.she], ты поспешно направляешься дальше, радуясь, что у тебя хватило денег, чтобы избежать драки.
 	</p>
 	]]>
 	</htmlContent>
@@ -414,32 +411,32 @@
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_ENEMY_WANTS_SEX"><![CDATA[
 	<p>
-		[npc.Name] staggers back, bracing [npc.herself] against a nearby wall as [npc.she] pants, [npc.speech(Ok... Enough... You win!)]
+		[npc.Name] отшатывается, прижимая [npc.herself] к ближайшей стене, пока [npc.she] тяжело дышит: [npc.speech(Ладно... Хватит... Ты победил!)]
 	</p>
 	<p>
-		You can't help but grin as you hear those words, and, stepping forwards, you place your [pc.hands] on your [pc.hips] and smirk at the defeated [npc.race]. [pc.speech(Maybe this experience will teach you a lesson!)]
+		Ты невольно ухмыляешься, услышав эти слова. Сделав шаг вперед, ты кладешь свою [pc.hands] на свою [pc.hips] и самодовольно смотришь на побежденную [npc.race]. [pc.speech(Может, этот опыт преподаст тебе урок!)]
 	</p>
 	<p>
-		[npc.speech(Yeah... Sure...)]  [npc.Name] continues to pant, looking up at you with lust in [npc.her] [npc.eyes]. [npc.speech(Please, just come on and fuck me already! Aah... I'm so fucking horny!)]
+		[npc.speech(Да... Конечно...)] [npc.Name] продолжает тяжело дышать, глядя на тебя с Похотью в [npc.her] [npc.eyes]. [npc.speech(Пожалуйста, просто подойди и трахни меня уже! Аах... Как же меня, блядь, штырит!)]
 	</p>
 	<p>
-		You wonder if you should do as [npc.she] asks, or simply turn around and take your leave...
+		Ты раздумываешь, стоит ли сделать так, как просит [npc.she], или просто развернуться и уйти...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY"><![CDATA[
 	<p>
-		[npc.Name] staggers back, bracing [npc.herself] against a nearby wall as [npc.she] pants, [npc.speech(Ok... Enough... You win!)]
+		[npc.Name] отшатывается, прижимая [npc.herself] к ближайшей стене, пока [npc.she] тяжело дышит: [npc.speech(Ладно... Хватит... Ты победил!)]
 	</p>
 	<p>
-		You can't help but grin as you hear those words, and, stepping forwards, you place your [pc.hands] on your [pc.hips] and smirk at the defeated [npc.race]. [pc.speech(Maybe this experience will teach you a lesson!)]
+		Ты невольно ухмыляешься, услышав эти слова. Сделав шаг вперед, ты кладешь свою [pc.hands] на свою [pc.hips] и самодовольно смотришь на побежденную [npc.race]. [pc.speech(Может, этот опыт преподаст тебе урок!)]
 	</p>
 	<p>
-		[npc.speech(Yes, I've learned my lesson!)] [npc.Name] exclaims, looking up at you with fear in [npc.her] [npc.eyes]. [npc.speech(Please, just let me go! I don't want any trouble!)]
+		[npc.speech(Да, я усвоила урок!)] [npc.Name] восклицает, испуганно глядя на тебя [npc.her] [npc.eyes]. [npc.speech(Пожалуйста, просто отпусти меня! Я не хочу неприятностей!)]
 	</p>
 	<p>
-		You wonder if you should do as [npc.she] asks, and simply turn around and take your leave. Then again, you could take advantage of [npc.her] defeated state to have some fun...
+		Ты раздумываешь, стоит ли поступить так, как просит [npc.she], — просто развернуться и уйти. Но с другой стороны, ты мог бы воспользоваться побежденным состоянием [npc.her], чтобы немного развлечься...
 	</p>
 	]]>
 	</htmlContent>
@@ -450,98 +447,95 @@
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX"><![CDATA[
 	<p>
-		Deciding to give [npc.name] what it is [npc.she] so desperately craves, you step up to [npc.herHim], before reaching down to take hold of [npc.her] [npc.arm] and pulling [npc.herHim] to [npc.her] [npc.feet]. The moment [npc.she] finds [npc.herself] standing, [npc.name] leans in against you, [npc.moaning], [npc.speech(~Mmm!~ Yes! Take me! Take me now!)]
+		Решив дать [npc.name] то, чего [npc.she] так отчаянно жаждет, ты подходишь к [npc.herHim], затем наклоняешься, чтобы схватить [npc.her] [npc.arm], и тянешь [npc.herHim] к [npc.her] [npc.feet]. Как только [npc.she] чувствует, что [npc.herself] стоит, [npc.name] прижимается к тебе, [npc.moaning], [npc.speech(~Ммм!~ Да! Возьми меня! Возьми меня прямо сейчас!)]
 	</p>
 	<p>
-		Without any further warning, [npc.she] suddenly presses [npc.her] [npc.lips] against yours, and, eager to return [npc.her] display of affection, you pull [npc.herHim] into your embrace, passionately returning [npc.her] kiss.
+		Без лишних предупреждений [npc.she] внезапно прижимает свои [npc.her] [npc.lips] к твоим, и, желая ответить на проявление [npc.her] привязанности, ты заключаешь [npc.herHim] в объятия, страстно отвечая на [npc.her] поцелуй.
 	</p>
 	<p>
-		After a moment, you push [npc.name] away a little, grinning as you see [npc.her] lust-filled gaze roam up and down your body. Preparing to make your next move, you take a firm grip on [npc.her] [npc.hips+], before [pc.moaning], [pc.speech(This is going to be good...)]
+		Спустя мгновение ты слегка отстраняешь [npc.name], ухмыляясь при виде того, как полный похоти взгляд [npc.her] скользит по твоему телу. Готовясь к следующему шагу, ты крепко сжимаешь [npc.her] [npc.hips+], прежде чем [pc.moaning], [pc.speech(Сейчас будет очень хорошо...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_RAPE"><![CDATA[
 	<p>
-		Reaching down, you grab [npc.namePos] [npc.arm], and, pulling [npc.herHim] to [npc.her] feet, you start grinding yourself up against [npc.herHim]. Seeing the lustful look in your [pc.eyes], [npc.she] lets out a little [npc.sob], desperately trying to struggle out of your grip as you hold [npc.herHim] firmly in your embrace...
+		Потянувшись вниз, ты хватаешь [npc.namePos] [npc.arm] и, притягивая [npc.herHim] к [npc.her] ногам, начинаешь тереться о [npc.herHim]. Заметив похотливый взгляд в твоих [pc.eyes], [npc.she] издает тихий [npc.sob], отчаянно пытаясь вырваться из твоих рук, пока ты крепко держишь [npc.herHim] в своих объятиях...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX_GENTLE"><![CDATA[
 	<p>
-		Deciding to give [npc.name] what it is [npc.she] so desperately craves, you step up to [npc.herHim], before reaching down to take hold of [npc.her] [npc.hand]. WIth a disarming smile, you help to pull [npc.herHim] to [npc.her] [npc.feet], and the moment [npc.she] finds [npc.herself] standing, [npc.name] leans in against you, [npc.moaning], [npc.speech(~Mmm!~ Yes! Take me! Take me now!)]
+		Решив дать [npc.name] то, чего [npc.she] так отчаянно жаждет, ты подходишь к [npc.herHim], прежде чем наклониться и схватить [npc.her] [npc.hand]. С обезоруживающей улыбкой ты помогаешь притянуть [npc.herHim] к [npc.her] [npc.feet], и в тот момент, когда [npc.she] встает на [npc.herself], [npc.name] прижимается к тебе, [npc.moaning], [npc.speech(~Ммм!~ Да! Возьми меня! Возьми меня прямо сейчас!)]
 	</p>
 	<p>
-		Without any further warning, [npc.she] suddenly presses [npc.her] [npc.lips] against yours, and, happy to return [npc.her] display of affection, you gently pull [npc.herHim] into your embrace, before starting to return [npc.her] passionate kiss.
+		Без всякого предупреждения [npc.she] внезапно прижимает [npc.her] [npc.lips] к твоим, и, радуясь возможности ответить на [npc.her] проявление привязанности, ты нежно притягиваешь [npc.herHim] к себе, прежде чем начать отвечать на [npc.her] страстный поцелуй.
 	</p>
 	<p>
-		After a moment, you pull back from [npc.name], grinning as you see [npc.her] lust-filled gaze roam up and down your body. Preparing to make your next move, you place your [pc.hands] [npc.her] [npc.hips+], before softly [pc.moaning], [pc.speech(I'll take good care of you...)]
+		Спустя мгновение ты отстраняешься от [npc.name], ухмыляясь при виде того, как полный похоти взгляд [npc.her] скользит по твоему телу. Готовясь к следующему шагу, ты кладешь свою [pc.hands] [npc.her] на [npc.hips+], прежде чем мягко [pc.moaning], [pc.speech(Я позабочусь о тебе...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_RAPE_GENTLE"><![CDATA[
 	<p>
-		Reaching down, you take hold of [npc.namePos] [npc.arm], and, pulling [npc.herHim] to [npc.her] feet, you start pressing yourself up against [npc.herHim]. Seeing the lustful look in your [pc.eyes], [npc.she] lets out a little [npc.sob], desperately trying to struggle out of your grip as you hold [npc.herHim] in your embrace...
+		Протянув руку вниз, ты хватаешь [npc.namePos] [npc.arm] и, приподнимая [npc.herHim] за [npc.her] ног, начинаешь прижиматься к [npc.herHim]. Видя похотливый взгляд в твоих [pc.eyes], [npc.she] издает легкий [npc.sob], отчаянно пытаясь вырваться из твоей хватки, пока ты удерживаешь [npc.herHim] в своих объятиях...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX_ROUGH"><![CDATA[
 	<p>
-		Deciding to give [npc.name] what it is [npc.she] so desperately craves, you step up to [npc.herHim], before reaching down to grab hold of [npc.her] [npc.arm] and yank [npc.herHim] to [npc.her] [npc.feet]. The moment [npc.she] finds [npc.herself] standing, [npc.name] leans in against you, [npc.moaning], [npc.speech(~Mmm!~ Yes! Take me! Take me now!)]
+		Решив дать [npc.name] то, чего [npc.she] так отчаянно жаждет, ты подходишь к [npc.herHim], затем наклоняешься, чтобы ухватиться за [npc.her] [npc.arm], и резко дергаешь [npc.herHim] к [npc.her] [npc.feet]. Как только [npc.she] чувствует, что [npc.herself] стоит, [npc.name] прижимается к тебе, [npc.moaning], [npc.speech(~Ммм!~ Да! Возьми меня! Возьми меня прямо сейчас!)]
 	</p>
 	<p>
-		Without any further warning, [npc.she] tries to press [npc.her] [npc.lips] against yours, but, seeing it coming, and wanting to leave no doubt in [npc.namePos] mind as to who's in charge, you quickly reach up and grab hold of [npc.her] neck, smirking in response to the sound of [npc.her] startled cry.
+		Без всякого предупреждения [npc.she] пытается прижать [npc.her] [npc.lips] к тебе, но, предвидя это и желая не оставить у [npc.namePos] сомнений в том, кто здесь главный, ты быстро вскидываешь руку и обхватываешь [npc.her] за шею, ухмыляясь в ответ на испуганный вскрик [npc.her].
 	</p>
 	<p>
-		[pc.speech(Don't you <i>dare</i> try to do anything without my permission, bitch!)] you snarl, using your commanding grip to tilt [npc.namePos] head to one side, before leaning in to give [npc.herHim] a forceful kiss. Roughly thrusting your [pc.tongue+] into [npc.her] mouth, you use your free [pc.hand] to reach around and give [npc.her] [npc.ass+] a dominant squeeze.
+		[pc.speech(Только не <i>смей</i> делать что-то без моего разрешения, сучка!)] — рычишь ты, властным захватом поворачивая голову [npc.namePos] набок, прежде чем наклониться и одарить [npc.herHim] напористым поцелуем. Грубо втиснув свой [pc.tongue+] в рот [npc.her], ты свободной [pc.hand] обхватываешь [npc.her] и властно сжимаешь [npc.ass+].
 	</p>
 	<p>
-		After a moment, you push [npc.name] away, grinning as you see [npc.her] lust-filled gaze roam up and down your body. Preparing to make your next move, you take a dominant grip on [npc.her] [npc.hips+], before growling, [pc.speech(Good bitch. Now submit to your conqueror!)]
+		Спустя мгновение ты отталкиваешь [npc.name], ухмыляясь при виде того, как полный похоти взгляд [npc.her] скользит вверх и вниз по твоему телу. Готовясь к следующему шагу, ты властно сжимаешь [npc.her] [npc.hips+], а затем рычишь: [pc.speech(Хорошая сучка. А теперь покорись своему завоевателю!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_RAPE_ROUGH"><![CDATA[
 	<p>
-		Reaching down, you grab [npc.namePos] [npc.arm], and, roughly yanking [npc.herHim] to [npc.her] feet, you start forcefully grinding yourself up against [npc.herHim]. Seeing the lustful look in your [pc.eyes], [npc.she] lets out a little [npc.sob], desperately trying to struggle out of your grip as you firmly hold [npc.herHim] in your embrace...
+		Потянувшись вниз, ты хватаешь [npc.namePos] за [npc.arm] и, грубо дернув [npc.herHim] за [npc.her], начинаешь с силой тереться о [npc.herHim]. Заметив похотливый блеск в [pc.eyes], [npc.she] издает тихий [npc.sob], отчаянно пытаясь вырваться из твоих рук, пока ты крепко сжимаешь [npc.herHim] в своих объятиях...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_SEX_SUBMIT"><![CDATA[
 	<p>
-		You really aren't sure what to do next, and start to feel pretty uncomfortable with the fact that you just beat up this poor [npc.race]. Leaning down, you do the first thing that comes into your mind, and start apologising, [pc.speech(Sorry... I was just trying to defend myself, you know... Erm... Is there anything I can do to make it up to you?)]
+		Ты толком не знаешь, что делать дальше, и начинаешь чувствовать себя довольно неуютно из-за того, что только что избила эту бедную [npc.race]. Наклонившись, ты делаешь первое, что приходит в голову, и начинаешь извиняться: [pc.speech(Прости... Я просто пыталась защититься, понимаешь... Эм... Может, я могу как-то загладить свою вину?)]
 	</p>
 	<p>
-		For a moment, a look of confusion crosses over [npc.namePos] face, but, as [npc.she] sees that you're genuinely troubled by what you've just done, an evil grin crosses [npc.her] face. [npc.She] stands up, and, grabbing you by the [pc.arm], roughly pulls you into [npc.her] as [npc.she] growls, [npc.speech(How about you start by apologising properly?!)]
-	</p>
-	<p>
-		[npc.NamePos] strong, dominant grip on your [pc.arm] causes you to let out a lewd little moan, and your submissive nature takes over as you do as [npc.she] asks. [pc.speech(I'm really sorry! Please forgive me! I'll do anything! Anything you ask! Just please, don't be mad!)]
-	</p>
-	<p>
-		[npc.Name] roughly yanks you forwards, and with a menacing growl, [npc.she] forces [npc.her] tongue into your mouth. You let out a muffled yelp as your opponent takes charge, but as you feel [npc.her] [npc.hands] reaching down to start roughly groping your ass, you realise that you couldn't be happier with how things have turned out...
+		На мгновение на лице [npc.namePos] отражается замешательство, но, когда [npc.she] видит, что ты искренне расстроена содеянным, на лице [npc.her] расплывается зловещая ухмылка. [npc.She] встает и, схватив тебя за [pc.arm], грубо притягивает к [npc.her], пока [npc.she] рычит: [npc.speech(Как насчет того, чтобы начать с нормальных извинений?!)]
+	</p><p>
+		[npc.NamePos] сильная, властная хватка на твоей [pc.arm] заставляет тебя издать похотливый стон, и твоя покорная натура берет верх, заставляя тебя делать всё, что просит [npc.she]. [pc.speech(Мне так жаль! Пожалуйста, прости меня! Я сделаю всё, что угодно! Всё, что попросишь! Только, пожалуйста, не сердись!)]
+	</p><p>
+		[npc.Name] грубо тянет тебя вперёд и с угрожающим рычанием [npc.she] впивается [npc.her] языком в твой рот. Ты издаёшь приглушённый вскрик, когда противник берёт инициативу в свои руки, но когда ты чувствуешь, как [npc.her] [npc.hands] тянется вниз, чтобы начать бесцеремонно ощупывать твою задницу, ты понимаешь, что не мог бы и мечтать о лучшем исходе событий...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_BANISH_NPC"><![CDATA[
 	<p>
-		Disgusted by the fact that this [npc.race] is assaulting innocent travellers, you step forwards, and, frowning down at [npc.herHim], you state, [pc.speech(I don't want to ever catch you doing this again. The next time I see you, I'll be with the Enforcers, and you can find out for yourself how they'll deal with you.)]
+		Испытывая отвращение от того, что эта [npc.race] нападает на невинных путников, ты делаешь шаг вперед и, хмуро глядя на [npc.herHim], заявляешь: [pc.speech(Не хочу больше видеть тебя за подобным. В следующий раз, когда мы встретимся, я буду с Enforcer, и ты на собственной шкуре узнаешь, как они с тобой справятся.)]
+	</p><p>
+		[npc.speech(П-погоди, м-мне просто нужны были деньги! Т-ты не можешь так...)] [npc.name] начинает заикаться, приходя в [npc.her] чувство реальности от угрозы вмешательства Enforcer.
 	</p>
 	<p>
-		[npc.speech(W-Wait, I-I just needed the money! Y-You can't do th-)] [npc.name] starts to stammer, brought to [npc.her] senses by the threat of the Enforcers getting involved.
+		Не желая слушать оправдания этой преступницы, ты перебиваешь [npc.herHim]: [pc.speech(Замолчи! Если нужны деньги — найди работу! Как ты смеешь оправдывать свои преступления! А теперь проваливай, пока я не позвала Enforcer прямо сейчас!)]
 	</p>
 	<p>
-		Not interested in listening to anything this criminal has to say, you cut [npc.herHim] off, [pc.speech(Be quiet! If you need money, go and get a job! How dare you try to justify your criminal activities! Now get out of here, before I decide to get the Enforcers right now!)]
+		Ты видишь, как на [npc.eyes] [npc.namePos] наворачиваются слезы, но, понимая, что [npc.sheIs] не в том положении, чтобы спорить, она тихо встает и убегает, даже не оглядываясь на тебя.
 	</p>
 	<p>
-		You see tears welling up in [npc.namePos] [npc.eyes], but, realising that [npc.sheIs] in no position to argue, quietly stands up and runs off, not even casting a backwards glance your way.
-	</p>
-	<p>
-		With the way [npc.she] reacted to the threat of the Enforcers, you can be sure that you won't see [npc.herHim] in this tunnel ever again. Feeling pleased with the way you dealt with that lowlife, you set off and continue on your way...
+		Судя по реакции [npc.she] на угрозу Enforcer, можно быть уверенной, что ты больше не встретишь [npc.herHim] в этом туннеле. Довольная тем, как ты разделалась с этой ничтожной девкой, ты отправляешься дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
@@ -553,44 +547,44 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT"><![CDATA[
 	<p>
-		You stagger back, bracing yourself against a nearby wall as you pant, [pc.speech(Ok... Enough... You win!)]
+		Ты пошатываешься назад, тяжело дыша и опираясь на ближайшую стену, [pc.speech(Ладно... Хватит... Ты победила!)]
 	</p>
 	<p>
 		[npc.Name] can't help but grin as [npc.she] hears those words, and, stepping forwards, [npc.she] places [npc.her] [npc.hands] on [npc.her] [npc.hips] and smirks at you. [npc.speech(Next time, don't bother trying to fight back! You'll only embarrass yourself even more!)]
 	</p>
 	<p>
-		[pc.speech(Sure...)]
-		 you pant, trying to recover enough energy to stand without assistance.
+		[pc.speech(Конечно...)]
+		 ты тяжело дышишь, пытаясь восстановить достаточно Энергии, чтобы встать без посторонней помощи.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_RAPE"><![CDATA[
 	<p>
-		[npc.speech(You know, that fight's got me all fired up...)] [npc.Name] grins, advancing on you with lust in [npc.her] [npc.eyes]. [npc.speech(And you look like you'll be a good fuck!)] 
+		[npc.speech(Знаешь, этот бой меня прямо раззадорил...)] [npc.Name] ухмыляется, наступая на тебя с Похотью в [npc.her] [npc.eyes]. [npc.speech(А ты выглядишь как отличная трахалка!)] 
 	</p>
 	<p>
-		Before you have a chance to respond, [npc.name] suddenly bounds forwards, before pulling you into a tight embrace. As you look at [npc.herHim], [npc.she] suddenly presses [npc.lips] against yours, thrusting [npc.her] [npc.tongue] into your mouth as [npc.she] forces [npc.herself] on you...
+		Прежде чем ты успеваешь ответить, [npc.name] внезапно бросается вперед и крепко прижимает тебя к себе. Когда ты смотришь на [npc.herHim], [npc.she] резко прижимает [npc.lips] к твоим, втискивая [npc.her] [npc.tongue] тебе в рот, пока [npc.she] навязывает тебе [npc.herself]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_NO_RAPE"><![CDATA[
 	<p>
-		[npc.speech(Now get out of my sight!)] [npc.Name] laughs, grabbing some of your money before pushing you away from [npc.herHim].
+		[npc.speech(А теперь проваливай с глаз моих!)] [npc.Name] смеется, забирая часть твоих денег и отталкивая тебя от [npc.herHim].
 	</p>
 	<p>
-		With barely enough energy to walk, let alone enough to try and forcibly get your money back, you stagger off down the tunnel, leaving [npc.name] behind...
+		Едва наскребши Энергии, чтобы просто идти, не говоря уже о попытке силой вернуть свои деньги, ты ковыляешь прочь по туннелю, оставляя [npc.name] позади...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_TRANSFORMER"><![CDATA[
 	<p>
-		[npc.speech(Now,)] [npc.name] says, in an evil tone, [npc.speech(it's time for me to carry out the Queen's orders! I'm sure you'll love being a slime!)]
+		[npc.speech(А теперь,)] — говорит [npc.name] зловещим тоном, — [npc.speech(пора исполнить приказы Королевы! Уверена, тебе понравится стать слаймом!)]
 	</p>
 	<p>
-		You look over at [npc.name] to see [npc.herHim] holding up a canister of glowing pink liquid, and it's obvious that [npc.she] intends to force you to drink it. You only have a moment in which to decide what to do, and could either rush [npc.name] in order to knock the glass canister from out of [npc.her] hands, or submit and allow yourself to be transformed into a slime...
+		Ты переводишь взгляд на [npc.name] и видишь, что [npc.herHim] держит канистру с сияющей розовой жидкостью; очевидно, что [npc.she] намеревается заставить тебя выпить её. У тебя есть лишь мгновение, чтобы решить: либо броситься на [npc.name], чтобы выбить стеклянную канистру из [npc.her] рук, либо подчиниться и позволить превратить себя в слайма...
 	</p>
 	]]>
 	</htmlContent>

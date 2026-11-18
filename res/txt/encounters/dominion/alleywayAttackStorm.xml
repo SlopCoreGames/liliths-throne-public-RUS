@@ -12,41 +12,41 @@
 	
 	#IF(pc.hasCompanions())
 		<p>
-			With [com.name] by your side, you find yourself [pc.walking] down yet another of Dominion's twisting alleyways, the eerie silence broken only by the occasional crash of arcane thunder high above you. There are many hiding places for a would-be attacker to conceal themselves in, and sure enough, as you pass a particularly dark doorway, a figure suddenly leaps out at you. Thankfully, as you were taking care to be alert, you quickly step backwards and manage to avoid a punch aimed at your stomach.
+			В сопровождении [com.name] ты пробираешься [pc.walking] по очередному из извилистых переулков Dominion, где жуткую тишину нарушает лишь редкий грохот арканического грома высоко в небе. Здесь полно укрытий, где может затаиться нападающий, и, как и следовало ожидать, когда ты проходишь мимо особенно темного дверного проема, оттуда внезапно выскакивает фигура. К счастью, ты был начеку, поэтому успеваешь быстро отступить назад и уклоняешься от удара в живот.
 		</p>
 		<p>
-			[com.speech(Hey!)] [com.name] calls out, stepping forwards to stand by your side and confront this unknown assailant.
+			[com.speech(Эй!)] — выкрикивает [com.name], делая шаг вперед, чтобы встать рядом с тобой и бросить вызов неизвестному нападавшему.
 		</p>
 		<p>
-			As the two of you get a better look at the mysterious figure, you see that [npc.sheIs] [npc.a_fullRace(true)]. Looking up at [npc.her] [npc.face+], you see a desperately hungry look in [npc.her] [npc.eyes], and you know that the arcane thunder has driven [npc.herHim] into a state of uncontrollable lust. [npc.She] looks determined to claim both you and [com.name] as [npc.her] prizes, and is ready to fight the two of you in order to claim your bodies.
+			Когда вы вдвоем присматриваетесь к таинственной фигуре, ты замечаешь, что [npc.sheIs] — это [npc.a_fullRace(true)]. Подняв взгляд на [npc.her] [npc.face+], ты видишь отчаянный голод в [npc.her] [npc.eyes] и понимаешь, что арканический гром вверг [npc.herHim] в состояние неудержимой похоти. [npc.She] явно намерен заполучить и тебя, и [com.name] в качестве своих [npc.her], и готов сразиться с вами обоими, чтобы завладеть вашими телами.
 		</p>
 		<p>
-			[npc.speech(Come on now, there's no need for any violence!)] [npc.she] teases, [npc.her] voice dripping with lustful desperation as [npc.she] takes a step forwards. [npc.speech(Just surrender! Come on! I <i>need</i> a good fuck right now!)]
+			[npc.speech(Да ладно тебе, зачем же сразу насилие!)] [npc.she] дразнит, [npc.her] голос так и сочится похотливым отчаянием, пока [npc.she] делает шаг вперед. [npc.speech(Просто сдавайся! Ну же! Мне прямо сейчас <i>нужен</i> отличный трах!)]
 		</p>
 		<p>
-			The arcane storm, combined with your powerful aura, has filled [npc.herHim] with a wild lust, and,
+			Арканный шторм в сочетании с твоей мощной аурой наполнил [npc.herHim] дикой похотью, и,
 			#IF(game.isNonConEnabled())
-				 knowing that defeat will result in the two of you being raped by this horny [npc.race], both you and [com.name] ready yourselves for a fight.
+				понимая, что поражение обернется для вас обоих изнасилованием этим похотливым [npc.race], и ты, и [com.name] готовитесь к бою.
 			#ELSE
-				 knowing that defeat will result in this horny [npc.race] wanting to have sex with the two of you, both you and [com.name] ready yourselves for a fight.
+				понимая, что в случае поражения этот похотливый [npc.race] захочет переспать с вами обоими, и ты, и [com.name] готовитесь к бою.
 			#ENDIF
 		</p>
 	#ELSE
+<p>
+Ты оказываешься [pc.walking] в очередном из извилистых переулков Dominion, где жуткую тишину нарушает лишь редкий грохот арканического грома где-то высоко в небе. Здесь полно укромных мест, где может затаиться нападающий, и, как и следовало ожидать, когда ты проходишь мимо особенно темного дверного проема, на тебя внезапно выскакивает фигура. К счастью, благодаря твоей бдительности, ты успеваешь быстро отступить назад и уклоняешься от удара кулаком, нацеленного тебе в живот.
+</p>
 		<p>
-			You find yourself [pc.walking] down yet another of Dominion's twisting alleyways, the eerie silence broken only by the occasional crash of arcane thunder high above you. There are many hiding places for a would-be attacker to conceal themselves in, and sure enough, as you pass a particularly dark doorway, a figure suddenly leaps out at you. Thankfully, as you were taking care to be alert, you quickly step backwards and manage to avoid a punch aimed at your stomach.
+			Развернувшись к нападавшему, ты видишь, как [npc.a_fullRace(true)] дьявольски ухмыляется тебе. В этом голодном взгляде [npc.her] [npc.eyes] невозможно ошибиться: ты понимаешь, что арканный гром довел [npc.herHim] до состояния неконтролируемой похоти. [npc.She] полна решимости заполучить тебя как [npc.her] трофей и готова сражаться, чтобы завладеть твоим телом.
 		</p>
 		<p>
-			Turning to face the assailant, you see [npc.a_fullRace(true)] grinning devilishly at you. There's no mistaking that hungry look in [npc.her] [npc.eyes], and you know that the arcane thunder has driven [npc.herHim] into a state of uncontrollable lust. [npc.She] looks determined to claim you as [npc.her] prize, and is ready to fight you in order to claim your body.
+			[npc.speech(Ой, ну зачем же так!)] [npc.she] дразнит тебя, и в [npc.her] голосе отчетливо слышно отчаяние, когда [npc.she] понимает, что ты готов сражаться с [npc.herHim]. [npc.speech(Просто сдавайся! Ну же! Мне <i>очень</i> нужно хорошенько трахнуться прямо сейчас!)]
 		</p>
 		<p>
-			[npc.speech(Aww, there's no need for that!)] [npc.she] teases, the desperation clearly audible in [npc.her] voice as [npc.she] sees that you're ready to fight [npc.herHim]. [npc.speech(Just give up! Come on! I <i>need</i> a good fuck right now!)]
-		</p>
-		<p>
-			The arcane storm, combined with your powerful aura, has filled [npc.herHim] with a wild lust, and you have a good idea of what [npc.she] wants to do with you.
+			Арканный шторм в сочетании с твоей мощной аурой наполнил [npc.herHim] дикой похотью, и ты прекрасно понимаешь, что именно [npc.she] хочет с тобой сделать.
 			#IF(game.isNonConEnabled())
-				 Knowing that defeat will result in being raped by this horny [npc.race], you ready yourself for a fight.
+				Понимая, что поражение обернется изнасилованием этим похотливым [npc.race], ты готовишься к бою.
 			#ELSE
-				 Knowing that defeat will result in this horny [npc.race] wanting to have sex with you, you ready yourself for a fight.
+				Понимая, что поражение приведет к тому, что этот похотливый [npc.race] захочет переспать с тобой, ты готовишься к бою.
 			#ENDIF
 		</p>
 	#ENDIF
@@ -54,54 +54,50 @@
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY_ATTACK_REPEAT"><![CDATA[
-	#VAR
-		var canal = npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING)
-				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL)
-				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL_END);
-		var companions = pc.hasCompanions();
-	#ENDVAR
 	
 	<p>
 		#IF(canal)
-			Knowing that [npc.name(a)] is prowling around this area, you make sure to stay on high alert as you wander down the track that runs alongside Dominion's canal. Just as you suspected, as you cautiously pass a collection of leafy bushes growing on one side of the path, a shadowy figure leaps out, blocking your path! You instantly recognise the [npc.fullRace(true)], and you jump back into a fighting stance as you expect this encounter to be much the same as the last one.
+
+			Зная, что [npc.name(a)] рыщет где-то поблизости, ты держишь ухо востро, блуждая по тропе вдоль канала Dominion. Твои подозрения подтверждаются: стоит тебе осторожно миновать густые кусты у обочины, как из тени выскакивает фигура, преграждая тебе путь! Ты мгновенно узнаешь в ней [npc.fullRace(true)] и тут же принимаешь боевую стойку, ожидая, что эта стычка будет точь-в-точь как предыдущая.
 		#ELSE
-			Knowing that [npc.name(a)] is prowling around this area, you make sure to stay on high alert, carefully checking each and every dark corner and recess as you walk through the twisting passages. Just as you suspected, as you cautiously pass an inset doorway, a shadowy figure leaps out, blocking your path! You instantly recognise the [npc.fullRace(true)], and you jump back into a fighting stance as you expect this encounter to be much the same as the last one.
+
+			Зная, что [npc.name(a)] рыщет где-то поблизости, ты держишь ухо востро, тщательно проверяя каждый темный угол и каждый закоулок в этих извилистых переулках. Твои подозрения подтверждаются: стоит тебе осторожно миновать дверной проем, как из тени выскакивает фигура, преграждая тебе путь! Ты мгновенно узнаешь в ней [npc.fullRace(true)] и тут же принимаешь боевую стойку, ожидая, что эта стычка будет точь-в-точь как предыдущая.
 		#ENDIF
 	</p>
 	#IF(npc.isVisiblyPregnant())
 		#IF(!npc.isCharacterReactedToPregnancy(pc))
 			#IF(npc.getPregnantLitter().isFatherId(pc.getId()))
 				<p>
-					As [npc.she] steps out from the shadows, however, you notice that there's definitely something different about [npc.herHim] this time. The consequence of ejaculating inside of [npc.herHim] is staring you right in the face, and you gulp as you see [npc.herHim] pointing down at [npc.her] [style.colourSex(pregnant belly)].
+					Однако, когда [npc.she] выходит из тени, ты замечаешь, что на этот раз с [npc.herHim] определенно что-то не так. Последствие того, что ты кончил внутрь [npc.herHim], буквально пялится тебе в лицо, и ты сглатываешь слюну, видя, как [npc.herHim] указывает на свой [npc.her] [style.colourSex(беременный живот)].
 				</p>
 				<p>
-					[npc.speech(That's right, you got me knocked up!)] [npc.name] exclaims, the desperate lust in [npc.her] voice clearly giving away the fact that [npc.sheIs] being affected by the ongoing arcane storm. [npc.speech(I'm so fucking horny! Just give up and let me fuck you!)]
+					[npc.speech(Всё верно, ты меня забеременел!)] [npc.name] восклицает, и отчаянная похоть в [npc.her] голосе явно выдает тот факт, что на [npc.sheIs] влияет бушующий арканный шторм. [npc.speech(Я так, блять, возбуждена! Просто сдавайся и дай мне тебя оттрахать!)]
 				</p>
 			#ELSEIF(companions && npc.getPregnantLitter().isFatherId(com))
 				<p>
-					As [npc.she] steps out from the shadows, however, you notice that there's definitely something different about [npc.herHim] this time. The consequence of [com.name] having ejaculating inside of [npc.herHim] is staring you both right in the face, and your [com.companion] gulps as [com.she] sees [npc.name] pointing down at [npc.her] [style.colourSex(pregnant belly)].
+					Когда [npc.she] выходит из тени, ты замечаешь, что на этот раз в [npc.herHim] определенно что-то изменилось. Последствие того, что [com.name] кончил внутрь [npc.herHim], буквально жжет глаза, и твой [com.companion] сглатывает, когда [com.she] видит, как [npc.name] указывает на [npc.her] [style.colourSex(беременный живот)].
 				</p>
 				<p>
-					[npc.speech(That's right, you got me knocked up, [com.name]!)] [npc.name] exclaims, the desperate lust in [npc.her] voice clearly giving away the fact that [npc.sheIs] being affected by the ongoing arcane storm. [npc.speech(I'm so fucking horny! Just give up and let me fuck you!)]
+					[npc.speech(Всё верно, ты меня забеременел, [com.name]!)] [npc.name] восклицает, и отчаянная похоть в [npc.her] голосе явно выдает тот факт, что на [npc.sheIs] влияет бушующий арканный шторм. [npc.speech(Я так, блять, возбуждена! Просто сдавайся и дай мне тебя оттрахать!)]
 				</p>
 			#ELSE
+<p>
+Однако, когда [npc.she] выходит из тени, ты замечаешь, что на этот раз [npc.herHim] определённо изменилась. Последствие того, что твой старый спутник кончил внутрь [npc.herHim], буквально смотрит вам обоим в глаза, и ты сглатываешь слюну, когда [npc.name] указывает на [style.colourSex(pregnant belly)][npc.her][/style.colourSex].
+</p>
 				<p>
-					As [npc.she] steps out from the shadows, however, you notice that there's definitely something different about [npc.herHim] this time. The consequence of your old companion having ejaculating inside of [npc.herHim] is staring the two of you right in the face, and you gulp as [npc.name] points down at [npc.her] [style.colourSex(pregnant belly)].
-				</p>
-				<p>
-					[npc.speech(That's right, [#npc.getPregnantLitter().getFatherName()] got me knocked up!)] [npc.name] exclaims, the desperate lust in [npc.her] voice clearly giving away the fact that [npc.sheIs] being affected by the ongoing arcane storm. [npc.speech(I'm so fucking horny! Just give up and let me fuck you!)]
+					[npc.speech(Именно так, [#npc.getPregnantLitter().getFatherName()] обрюхатил меня!)] [npc.name] восклицает, и отчаянная похоть в [npc.her] голосе явно выдает то, что на [npc.sheIs] действует текущий арканный шторм. [npc.speech(Меня так чертовски штырит! Просто сдавайся и дай мне трахнуть тебя!)]
 				</p>
 			#ENDIF
 		#ELSE
 			<p>
 				#IF(npc.getPregnantLitter().isFatherId(pc.getId()))
-					You see that [npc.sheIs] still sporting a round, [style.colourSex(pregnant belly)], and [npc.she] absent-mindedly #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb],
+					Ты видишь, что [npc.sheIs] всё ещё щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb],
 				#ELSEIF(companions && npc.getPregnantLitter().isFatherId(com.getId()))
-					You see that [npc.sheIs] still sporting a round, [style.colourSex(pregnant belly)], and [npc.she] absent-mindedly #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb],
+					Ты видишь, что [npc.sheIs] всё ещё щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb],
 				#ELSE
-					You see that [npc.sheIs] still sporting a round, [style.colourSex(pregnant belly)], and [npc.she] absent-mindedly #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb],
+					Ты видишь, что [npc.sheIs] всё ещё щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb],
 				#ENDIF
-				 [npc.speech(I'm so fucking horny! Just give up and let me fuck you!)]
+				 [npc.speech(Меня так чертовски штырит! Просто сдавайся и дай мне трахнуть тебя!)]
 			</p>
 		#ENDIF
 	#ENDIF
@@ -112,29 +108,29 @@
 					#IF(companions && com.isVisiblyPregnant())
 						#IF(pc.getPregnantLitter().isFatherId(npc.getId()))
 							#IF(com.getPregnantLitter().isFatherId(npc.getId()))
-								Glancing down at both your and [com.namePos] swollen bellies, the horny [npc.race] exclaims, [npc.speech(I got you two sluts knocked up?! Hah! Seeing as I've laid claim to your wombs already, you horny breeding sluts should just submit for another good fucking right now!)]
+								Взглянув на ваши с [com.namePos] раздутые животы, похотливая [npc.race] восклицает: [npc.speech(Я обрюхатила вас обеих, шлюхи?! Ха! Раз уж я уже застолбила ваши утробы, вам, похотливым сучкам для размножения, стоит просто сдаться, чтобы получить еще один отличный ебать прямо сейчас!)]
 							#ELSE
-								[npc.speech(Looks like I got you knocked up, whore!)] [npc.name] exclaims, looking down at your swollen belly, before glancing over at [com.name]. [npc.speech(And I see your friend's been #IF(com.hasLegs())spreading [com.her] legs#ELSEgetting creampied#ENDIF as well! Hah! What a pair of sluts! Now submit for a good fucking!)]
+								[npc.speech(Похоже, я тебя обрюхатил, шлюха!)] [npc.name] восклицает, глядя на твой раздутый живот, а затем переводя взгляд на [com.name]. [npc.speech(А еще я вижу, что твоя подружка... #IF(com.hasLegs())spreading [com.her] legs#ELSEgetting creampied#ENDIF as well! Hah! What a pair of sluts! Now submit for a good fucking!)]
 							#ENDIF
 						#ELSE
 							#IF(com.getPregnantLitter().isFatherId(npc.getId()))
-								[npc.speech(Well, well, well, looks like I got you knocked up, whore!)] [npc.name] exclaims, looking down at [com.namePos] swollen belly, before glancing over towards you. [npc.speech(And I see you've been #IF(pc.hasLegs())spreading your legs#ELSEgetting creampied#ENDIF as well! Hah! What a pair of sluts! Now submit for a good fucking!)]
+								[npc.speech(Ну надо же, похоже, я тебя обрюхатил, шлюха!)] [npc.name] восклицает, глядя на раздутый живот [com.namePos], прежде чем перевести взгляд на тебя. [npc.speech(И я вижу, что ты...) #IF(pc.hasLegs())spreading your legs#ELSEgetting creampied#ENDIF as well! Hah! What a pair of sluts! Now submit for a good fucking!)]
 							#ELSE
-								[npc.speech(Well, well, well, looks like you two sluts have got yourselves knocked up!)] [npc.name] exclaims, looking down at both your and [com.namePos] swollen bellies. [npc.speech(Seeing as you've clearly got a lot of experience at it, you whores should just submit for a good fucking right now!)]
+								[npc.speech(Ну надо же, надо же, надо же! Похоже, вы обе, сучки, умудрились забеременеть!)] [npc.name] восклицает, глядя на твои и [com.namePos] раздутые животы. [npc.speech(Раз уж у вас явно богатый опыт, вам, шлюхам, стоит просто подставиться под очередной знатный ебун!)]
 							#ENDIF
 						#ENDIF
 					#ELSE
 						#IF(pc.getPregnantLitter().isFatherId(npc.getId()))
-							[npc.speech(Well, well, well, looks like I got you knocked up, slut!)] [npc.name] exclaims, looking down at your swollen belly. [npc.speech(Seeing as you've been put in your place, you should just submit for another good fuck!)]
+							[npc.speech(Ну надо же, надо же, надо же! Похоже, я тебя всё-таки оплодотворил, сучка!)] [npc.name] восклицает, глядя на твой раздутый живот. [npc.speech(Раз уж тебя поставили на место, тебе стоит просто подставиться под еще один знатный ебун!)]
 						#ELSE
-							[npc.speech(Well, well, well, looks like someone got you knocked up, slut!)] [npc.name] exclaims, looking down at your swollen belly. [npc.speech(Been going around town submitting to anyone who wants to pump a load in you, I'll bet! Now it's time for you to spread them for me!)]
+							[npc.speech(Ну надо же, надо же, надо же! Похоже, кто-то тебя всё-таки оплодотворил, сучка!)] [npc.name] восклицает, глядя на твой раздутый живот. [npc.speech(Бьюсь об заклад, ты так и носишься по городу, подставляясь каждому, кто хочет влить в тебя порцию спермы! А теперь пришло время раздвинуть их для меня!)]
 						#ENDIF
 					#ENDIF
 				#ELSE
 					#IF(com.getPregnantLitter().isFatherId(npc.getId()))
-						[npc.speech(Well, well, well, looks like I got you knocked up, slut!)] [npc.name] sneers, looking down at [com.namePos] swollen belly. [npc.speech(L Seeing as you've been put in your place, you should just submit for another good fuck!)]
+							[npc.speech(Ну надо же, надо же, надо же! Похоже, я тебя всё-таки оплодотворил, сучка!)] [npc.name] скалится, глядя на раздутый живот [com.namePos]. [npc.speech(Раз уж тебя поставили на место, тебе стоит просто подставиться под еще один знатный ебун!)]
 					#ELSE
-						[npc.speech(Well, well, well, looks like someone got you knocked up, slut!)] [npc.name] sneers, looking down at [com.namePos] swollen belly. [npc.speech(Been going around town submitting to anyone who wants to pump a load in you, I'll bet! Now it's time for you to spread them for me!)]
+							[npc.speech(Ну надо же, надо же, надо же! Похоже, кто-то тебя всё-таки оплодотворил, сучка!)] [npc.name] скалится, глядя на раздутый живот [com.namePos]. [npc.speech(Бьюсь об заклад, ты так и носишься по городу, подставляясь каждому, кто хочет влить в тебя порцию спермы! А теперь пришло время раздвинуть их для меня!)]
 					#ENDIF
 				#ENDIF
 			#ELSE
@@ -142,18 +138,18 @@
 					#IF(companions && com.isVisiblyPregnant())
 						#IF(pc.getPregnantLitter().isFatherId(npc.getId()))
 							#IF(com.getPregnantLitter().isFatherId(npc.getId()))
-								[npc.speech(Hah!)] [npc.name] laughs, looking down at both your and [com.namePos] swollen bellies. [npc.speech(Looks like you two sluts are still carrying my kids around! As you're only good for being bred, you should both just submit for another good fuck right now!)]
+								[npc.speech(Ха!)] [npc.name] смеется, глядя на твои и [com.namePos] раздутые животы. [npc.speech(Похоже, вы, две шлюхи, всё еще таскаете в себе моих детей! Раз вы годны только для того, чтобы вас трахали, вам обеим стоит просто сдаться и получить еще один отличный ебать прямо сейчас!)]
 							#ELSE
-								[npc.speech(Hah!)] [npc.name] laughs, looking down at both your and [com.namePos] swollen bellies. [npc.speech(You sluts are still pregnant, huh? As you're only good for being bred, you should both just submit for another good fuck right now!)]
+								[npc.speech(Ха!)] [npc.name] смеется, глядя на твои и [com.namePos] раздутые животы. [npc.speech(Вы, шлюхи, всё еще беременны, а? Раз вы годны только для того, чтобы вас осеменяли, вам обеим стоит просто сдаться и получить еще один отличный ебать прямо сейчас!)]
 							#ENDIF
 						#ELSE
-							[npc.speech(Hah!)] [npc.name] laughs, looking down at both your and [com.namePos] swollen bellies. [npc.speech(You sluts are still pregnant, huh? As you're only good for being bred, you should both just submit for another good fuck right now!)]
+								[npc.speech(Ха!)] [npc.name] смеется, глядя на твои и [com.namePos] раздутые животы. [npc.speech(Вы, шлюхи, всё еще беременны, а? Раз вы годны только для того, чтобы вас осеменяли, вам обеим стоит просто сдаться и получить еще один отличный ебать прямо сейчас!)]
 						#ENDIF
 					#ELSE
-						[npc.speech(Hah!)] [npc.name] laughs, looking down at your swollen belly. [npc.speech(Looks like you're still pregnant, slut! Come on, seeing as you love getting fucked so much, just submit already!)]
+								[npc.speech(Ха!)] [npc.name] смеется, глядя на твой раздутый живот. [npc.speech(Похоже, ты всё еще беременна, шлюха! Давай же, раз уж ты так любишь, когда тебя трахают, просто сдавайся!)]
 					#ENDIF
 				#ELSE
-					[npc.speech(Hah!)] [npc.name] laughs, looking down at [com.namePos] swollen belly. [npc.speech(Looks like you're still pregnant, slut! Come on, seeing as you love getting fucked so much, just submit already!)]
+								[npc.speech(Ха!)] [npc.name] смеется, глядя на раздутый живот [com.namePos]. [npc.speech(Похоже, ты всё еще беременна, шлюха! Давай же, раз уж ты так любишь, когда тебя трахают, просто сдавайся!)]
 				#ENDIF
 			#ENDIF
 		</p>
@@ -161,18 +157,18 @@
 	#IF(!npc.isVisiblyPregnant() && !pc.isVisiblyPregnant() && (!companions || !com.isVisiblyPregnant()))
 		<p>
 			#IF(companions)
-				[npc.speech(You two again?!)] [npc.name] exclaims, the desperate lust in [npc.her] voice clearly giving away the fact that [npc.sheIs] being affected by the ongoing arcane storm. [npc.speech(I'm so fucking horny! Just give up and let me fuck you!)]
+				[npc.speech(Вы опять?!)] [npc.name] восклицает, и отчаянная похоть в [npc.her] голосе явно выдает тот факт, что [npc.sheIs] под воздействием бушующего шторма Арканы. [npc.speech(Меня так, блядь, штырит! Просто сдавайся и дай мне трахнуть тебя!)]
 			#ELSE
-				[npc.speech(You again?!)] [npc.name] exclaims, the desperate lust in [npc.her] voice clearly giving away the fact that [npc.sheIs] being affected by the ongoing arcane storm. [npc.speech(I'm so fucking horny! Just give up and let me fuck you!)]
+				[npc.speech(Ты опять?!)] [npc.name] восклицает, и отчаянная похоть в [npc.her] голосе явно выдает тот факт, что [npc.sheIs] под воздействием бушующего шторма Арканы. [npc.speech(Меня так, блядь, штырит! Просто сдавайся и дай мне трахнуть тебя!)]
 			#ENDIF
 		</p>
 	#ENDIF
-	<p>
-		The continuous rumbling of arcane thunder is clearly having a profound effect on this [npc.race], and from the desperate, hungry gleam in [npc.her] eyes, you're able to get a good idea of what [npc.she] wants to do with you.
+		<p>
+		Непрекращающийся грохот арканных молний явно оказывает глубокое влияние на этого [npc.race], и по отчаянному, голодному блеску в [npc.her] глазах ты прекрасно понимаешь, что именно [npc.she] хочет с тобой сделать.
 		#IF(game.isNonConEnabled())
-			 Knowing that defeat will result in being raped by [npc.herHim], you ready yourself for a fight.
+			Понимая, что поражение обернется изнасилованием со стороны [npc.herHim], ты готовишься к бою.
 		#ELSE
-			 Knowing that defeat will result in [npc.herHim] wanting to have sex with you, you ready yourself for a fight.
+			Понимая, что поражение приведет к тому, что [npc.herHim] захочет переспать с тобой, ты готовишься к бою.
 		#ENDIF
 	</p>
 	]]>
@@ -188,77 +184,77 @@
 	
 	#IF(canal)
 		<p>
-			Knowing that [npc.name] calls this area [npc.her] home, you make sure to stay on the lookout for [npc.herHim] as you wander down the track that runs alongside Dominion's canal. Just as you suspected, as you pass a collection of leafy bushes growing on one side of the path, a shadowy figure leaps out, blocking your path!
+			Зная, что [npc.name] считает это место своим [npc.her] домом, ты стараешься не терять бдительности и высматриваешь [npc.herHim], блуждая по тропе вдоль канала Dominion. Как ты и подозревал, когда ты проходишь мимо густых кустов, растущих по одну сторону пути, из тени выскакивает фигура, преграждая тебе дорогу!
 		</p>
 	#ELSE
 		<p>
-			Knowing that [npc.name(a)] is prowling around this area, you make sure to stay on high alert, carefully checking each and every dark corner and recess as you walk through the twisting passages. Just as you suspected, as you cautiously pass an inset doorway, a shadowy figure leaps out, blocking your path!
+			Зная, что [npc.name(a)] рыщет где-то поблизости, ты держишь ухо востро, тщательно проверяя каждый темный угол и нишу, пока идешь по извилистым переулкам. Как ты и подозревал, когда ты осторожно проходишь мимо углубленного дверного проема, из тени выскакивает фигура, преграждая тебе путь!
 		</p>
 	#ENDIF
 	<p>
-		You instantly recognise the [npc.fullRace(true)], and as [npc.she] sees that it's you, [npc.she] quickly takes a step back, before letting out a desperate, horny [npc.moan] and apologising, [npc.speech(~Aah!~ It's you, [pc.name]! This storm... Please, I <i>need</i> a good, hard fuck right now!)]
+		Ты мгновенно узнаёшь [npc.fullRace(true)], и когда [npc.she] видит, что это ты, [npc.she] быстро отступает на шаг, прежде чем издать отчаянный, похотливый [npc.moan] и извиниться, [npc.speech(~Ах!~ Это ты, [pc.name]! Эта буря... Пожалуйста, мне <i>нужен</i> хороший, жесткий трах прямо сейчас!)]
 	</p>
 	#IF(npc.isVisiblyPregnant())
 		#IF(!npc.isCharacterReactedToPregnancy(pc))
 				#IF(npc.getPregnantLitter().isFatherId(pc.getId()))
 					<p>
-						As you prepare to respond, you notice that there's something very different about [npc.name].
+						Пока ты готовишься ответить, ты замечаешь, что в [npc.name] появилось нечто очень непривычное.
 						#IF(npc.isTaur())
-							 As [npc.she] turns to one side, you look down to see the consequence of
+							 Когда [npc.she] поворачивается в сторону, ты опускаешь взгляд и видишь последствия
 						#ELSE
-							 [npc.SheIs] cradling [npc.her] stomach with both [npc.hands], and you look down to see the consequence of
+							 [npc.SheIs], прижимающей [npc.her] живот обеими [npc.hands], и ты опускаешь взгляд, чтобы увидеть последствия
 						#ENDIF
 						#IF(npc.isPregnancyFertilisationNormal())
-							 giving [npc.herHim] a creampie,
+							 того, что ты оставил [npc.herHim] с кремпи,
 						#ELSE
-							 having risky sex with [npc.herHim],
+							 рискованного секса с [npc.herHim],
 						#ENDIF
-						 for [npc.sheIs] quite clearly sporting a [style.colourSex(pregnant belly)].
+							 ведь [npc.sheIs] явно щеголяет [style.colourSex(беременным животом)].
 					</p>
 					<p>
-						[npc.speech(Yeah, it was you! You got me knocked up! You want to fuck me again, don't you?!)] she exclaims, the horny excitement in [npc.her] voice clearly giving away the fact that [npc.sheIs] being heavily affected by the ongoing arcane storm.
+						[npc.speech(Да, это был ты! Ты меня обрюхатил! Ты ведь хочешь трахнуть меня снова, а?!)] — восклицает она, и похотливое возбуждение в голосе [npc.her] явно выдает тот факт, что [npc.sheIs] сильно подвержена влиянию текущей арканной бури.
 					</p>
 				#ELSEIF(companions && npc.getPregnantLitter().isFatherId(com.getId()))
 					<p>
-						As you step forwards and start to say hello, you immediately notice that there's something very different about [npc.name].
+						Когда ты делаешь шаг вперед, собираясь поздороваться, ты тут же замечаешь, что в [npc.name] появилось нечто очень непривычное.
 						#IF(npc.isTaur())
-							 As [npc.she] turns to one side, you look down to see the consequence of
+							 Когда [npc.she] поворачивается в сторону, ты опускаешь взгляд и видишь последствия
 						#ELSE
-							 [npc.SheIs] cradling [npc.her] stomach with both [npc.hands], and you look down to see the consequence of
+							 [npc.SheIs], прижимающей [npc.her] живот обеими [npc.hands], и ты опускаешь взгляд, чтобы увидеть последствия
 						#ENDIF
 						#IF(npc.isPregnancyFertilisationNormal())
-							 [com.name] having given [npc.herHim] a creampie,
+							 [com.name] засадила [npc.herHim] кремпи,
 						#ELSE
-							 [com.name] having had risky sex with [npc.herHim],
+							 [com.name] после рискованного секса с [npc.herHim],
 						#ENDIF
-						 for [npc.sheIs] quite clearly sporting a [style.colourSex(pregnant belly)].
+							 ведь [npc.sheIs] явно щеголяет [style.colourSex(беременным животом)].
 					</p>
 					<p>
-						[npc.speech(Yeah, it was you, [com.name]! You got me knocked up! You want to fuck me again, don't you?!)] she exclaims, the horny excitement in [npc.her] voice clearly giving away the fact that [npc.sheIs] being heavily affected by the ongoing arcane storm.
+						[npc.speech(Да, это был ты, [com.name]! Ты меня обрюхатил! Хочешь трахнуть меня снова, а?!)] — восклицает она, и похотливое возбуждение в голосе [npc.her] явно выдает то, что на [npc.sheIs] сильно влияет текущий аркана-шторм.
 					</p>
 				#ELSE
 					<p>
-						As you step forwards and start to say hello, you immediately notice that there's something very different about [npc.name].
+						Когда ты делаешь шаг вперед, собираясь поздороваться, ты тут же замечаешь, что в [npc.name] появилось нечто очень непривычное.
 						#IF(npc.isTaur())
-							 As [npc.she] turns to one side, you look down to see the consequence of
+							 Когда [npc.she] поворачивается в сторону, ты опускаешь взгляд и видишь последствия
 						#ELSE
-							 [npc.SheIs] cradling [npc.her] stomach with both [npc.hands], and you look down to see the consequence of
+							 [npc.SheIs], прижимающей [npc.her] живот обеими [npc.hands], и ты опускаешь взгляд, чтобы увидеть последствия
 						#ENDIF
 						#IF(npc.isPregnancyFertilisationNormal())
-							 your previous companion having given [npc.herHim] a creampie,
+							 твой предыдущий спутник засадил [npc.herHim] кремпи,
 						#ELSE
-							 your previous companion having had risky sex with [npc.herHim],
+							 твой предыдущий спутник после рискованного секса с [npc.herHim],
 						#ENDIF
-						 for [npc.sheIs] quite clearly sporting a [style.colourSex(pregnant belly)].
+							 ведь [npc.sheIs] явно щеголяет [style.colourSex(беременным животом)].
 					</p>
 					<p>
-						[npc.speech(Yeah, before you ask, it was [#npc.getPregnantLitter().getFatherName()]! They got me knocked up! You want to fuck me like this, don't you!)] she exclaims, the horny excitement in [npc.her] voice clearly giving away the fact that [npc.sheIs] being heavily affected by the ongoing arcane storm.
+						[npc.speech(Да, прежде чем ты спросишь, это был [#npc.getPregnantLitter().getFatherName()]! Он меня обрюхатил! Ты ведь хочешь трахнуть меня вот так же!)] — восклицает она, и похотливое возбуждение в голосе [npc.her] явно выдает то, что на [npc.sheIs] сильно влияет текущий аркана-шторм.
 					</p>
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
-				As you step forwards and start to say hello, you see that [npc.name] still sporting a round, [style.colourSex(pregnant belly)], and [npc.she] absent-mindedly #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb], [npc.speech(That's right, I'm still pregnant! You want to fuck me like this, don't you?!)]
+				Когда ты делаешь шаг вперед, чтобы поздороваться, ты замечаешь, что [npc.name] всё еще щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] desperately [npc.moansVerb], [npc.speech(That's right, I'm still pregnant! You want to fuck me like this, don't you?!)]
 			</p>
 		#ENDIF
 	#ENDIF
@@ -269,29 +265,29 @@
 					#IF(pc.getPregnantLitter().isFatherId(npc.getId()))
 						#IF(com.getPregnantLitter().isFatherId(npc.getId()))
 							<p>
-								Gazing hungrily at you and [com.name] as you approach, [npc.name] suddenly notices that you're both sporting swollen bellies, and [npc.she] gasps in delight as [npc.she] looks back and forth between each of your pregnant bumps. [npc.speech(I got you both pregnant?! Fuck, that turns me on so much... I knew I'd get the two of you knocked up when I cummed in your hot little pussies! Now let's fuck again!)]
+								Голодно глядя на тебя и [com.name] при твоем приближении, [npc.name] внезапно замечает, что у вас обоих вздутые животы, и [npc.she] ахает от восторга, пока [npc.she] переводит взгляд с одного вашего беременного пузика на другое. [npc.speech(Я что, обеих вас забеременела?! Бля, как же это меня заводит... Я знала, что обрюхачу вас обеих, когда кончила в ваши горячие киски! А теперь давайте трахаться снова!)]
 							</p>
 						#ELSE
 							<p>
-								Gazing hungrily at you and [com.name] as you approach, [npc.name] suddenly notices that you're both sporting swollen bellies, and [npc.she] gasps in delight as [npc.she] looks back and forth between each of your pregnant bumps. [npc.speech(I got you pregnant, [pc.name]?! Fuck, that turns me on so much... And you're going to be a mother as well, [com.name]?! I knew I'd get you knocked up, [pc.name], right from the moment when I cummed in your hot little pussy! Now let's fuck again!)]
+								Когда ты и [com.name] приближаешься, [npc.name] жадно взирает на вас и внезапно замечает, что у обеих уже вздулись животы; [npc.she] восхищенно ахает, пока [npc.she] переводит взгляд с одного вашего беременного пуза на другое. [npc.speech(Я что, забеременел тебя, [pc.name]?! Блядь, как же это меня заводит... И ты тоже станешь матерью, [com.name]?! Я знал, что обрюхачу тебя, [pc.name], с того самого момента, как кончил в твою горячую киску! А теперь давай трахаться снова!)]
 							</p>
 						#ENDIF
 					#ELSEIF(com.getPregnantLitter().isFatherId(npc.getId()))
 						<p>
-							Gazing hungrily at you and [com.name] as you approach, [npc.name] suddenly notices that you're both sporting swollen bellies, and [npc.she] gasps in delight as [npc.she] looks back and forth between each of your pregnant bumps. [npc.speech(I got you pregnant, [com.name]?! Fuck, that turns me on so much... And you're going to be a mother as well, [pc.name]?! I knew I'd get you knocked up, [com.name], right from the moment when I cummed in your hot little pussy! Now let's fuck again!)]
+							Когда ты и [com.name] приближаешься, [npc.name] жадно взирает на вас и внезапно замечает, что у обеих уже вздулись животы; [npc.she] восхищенно ахает, пока [npc.she] переводит взгляд с одного вашего беременного пуза на другое. [npc.speech(Я что, забеременел тебя, [com.name]?! Блядь, как же это меня заводит... И ты тоже станешь матерью, [pc.name]?! Я знал, что обрюхачу тебя, [com.name], с того самого момента, как кончил в твою горячую киску! А теперь давай трахаться снова!)]
 						</p>
 					#ELSE
 						<p>
-							Gazing hungrily at you and [com.name] as you approach, [npc.name] suddenly notices that you're both sporting swollen bellies, and [npc.she] gasps as [npc.she] looks back and forth between each of your pregnant bumps. [npc.speech(Oh! You're both pregnant! Congratulations! Now let's fuck!)]
+							Когда ты и [com.name] приближаешься, [npc.name] жадно взирает на вас и внезапно замечает, что у обеих уже вздулись животы; [npc.she] ахает, пока [npc.she] переводит взгляд с одного вашего беременного пуза на другое. [npc.speech(О! Вы обе беременны! Поздравляю! А теперь — трахаемся!)]
 						</p>
 					#ENDIF
 				#ELSEIF(pc.getPregnantLitter().isFatherId(npc.getId()))
 					<p>
-						Gazing hungrily at you as you approach, [npc.name] suddenly notices that you're sporting a swollen belly, and [npc.she] gasps in delight as [npc.she] looks down at your pregnant bump. [npc.speech(I got you pregnant?! Fuck, that turns me on so much... I knew I'd get you knocked up when I cummed in your hot little pussy! Now let's fuck again!)]
+						Голодно глядя на тебя при приближении, [npc.name] внезапно замечает твой раздувшийся живот, и [npc.she] ахает от восторга, пока [npc.she] разглядывает твой беременный пузень. [npc.speech(Я что, засадил в тебя?! Бля, как же это заводит... Я знал, что ты залетишь, когда кончал в твою горячую киску! А теперь давай трахаться снова!)]
 					</p>
 				#ELSE
 					<p>
-						Gazing hungrily at you as you approach, [npc.name] suddenly notices that you're sporting a swollen belly, and [npc.she] gasps as [npc.she] looks down at your pregnant bump. [npc.speech(Oh! You're pregnant! Congratulations! Now let's fuck!)]
+						Голодно глядя на тебя при приближении, [npc.name] внезапно замечает твой раздувшийся живот, и [npc.she] ахает, пока [npc.she] разглядывает твой беременный пузень. [npc.speech(О! Ты беременна! Поздравляю! А теперь давай трахаться!)]
 					</p>
 				#ENDIF
 			#ELSEIF(com.getPregnantLitter().isFatherId(npc.getId()))
@@ -299,32 +295,32 @@
 					Gazing hungrily at you as you approach, [npc.name] suddenly notices that [com.namePos] sporting a swollen belly, and [npc.she] gasps in delight as [npc.she] looks down at [com.her] pregnant bump. [npc.speech(I got you pregnant?! Fuck, that turns me on so much... I knew I'd get you knocked up when I cummed in your hot little pussy! Now let's fuck again!)]
 				</p>
 			#ELSE
-				<p>
-					Gazing hungrily at you as you approach, [npc.name] suddenly notices that [com.namePos] sporting a swollen belly, and [npc.she] gasps as [npc.she] looks down at [com.her] pregnant bump. [npc.speech(Oh! You're pregnant! Congratulations! Now let's fuck!)]
-				</p>
+<p>
+Голодным взглядом провожая тебя по мере приближения, [npc.name] внезапно замечает, что [com.namePos] щеголяет раздутым животом, и [npc.she] ахает, когда [npc.she] смотрит на [com.her] беременный бугорок. [npc.speech(О! Ты беременна! Поздравляю! А теперь давай трахаться!)]
+</p>
 			#ENDIF
 		#ELSE
 			<p>
 				#IF(pc.isVisiblyPregnant())
 					#IF(companions && com.isVisiblyPregnant())
-						[npc.speech(You're both still pregnant, huh?!)] [npc.name] exclaims, before letting out a frantic [npc.moan] and begging, [npc.speech(Come on! Let's fuck!)]
-					#ELSE
-						[npc.speech(You're still pregnant, huh?!)] [npc.name] exclaims as [npc.she] looks down at your swollen belly, before letting out a frantic [npc.moan] and begging, [npc.speech(Come on! Let's fuck!)]
+						[npc.speech(Вы оба всё ещё беременны, а?!)] — восклицает [npc.name], прежде чем издать неистовый [npc.moan] и взмолиться: [npc.speech(Ну же! Давай трахаться!)]
+						#ELSE
+						[npc.speech(Ты всё ещё беременна, а?!)] [npc.name] восклицает, пока [npc.she] смотрит на твой раздувшийся живот, а затем издаёт неистовый [npc.moan] и умоляет: [npc.speech(Давай! Давай трахнемся!)]
 					#ENDIF
 				#ELSE
-					[npc.speech(You're still pregnant, huh?!)] [npc.name] exclaims as [npc.she] looks down at [com.namePos] swollen belly, before letting out a frantic [npc.moan] and begging, [npc.speech(Come on! Let's fuck!)]
+					[npc.speech(Ты всё ещё беременна, а?!)] [npc.name] восклицает, пока [npc.she] смотрит на [com.namePos] раздувшийся живот, а затем издаёт неистовый [npc.moan] и умоляет: [npc.speech(Давай! Давай трахнемся!)]
 				#ENDIF
 			</p>
 		#ENDIF
 	#ENDIF
 	<p>
-		Before you can react to [npc.namePos] arousal, [npc.she] darts forwards and wraps [npc.her] [npc.arms] around you, before leaning in to breathlessly pant,
+		Прежде чем ты успеваешь среагировать на [npc.namePos] возбуждение, [npc.she] бросается вперёд и обвивает тебя своими [npc.her] [npc.arms], после чего приникает к тебе, тяжело и прерывисто дыша,
 		#IF(npc.hasVagina())
-			 [npc.speech(Come on, [pc.name]! Fuck my hot little pussy! Fuck, I'm so wet for you!)]
+			 [npc.speech(Ну же, [pc.name]! Трахни мою горячую киску! Блядь, как же я тебя хочу, я вся промокла!)]
 		#ELSEIF(npc.hasPenis())
-			 [npc.speech(Come on, [pc.name]! Let me fuck you! Fuck, I'm getting so hard just at the sight of you!)]
+			 [npc.speech(Ну же, [pc.name]! Дай мне трахнуть тебя! Черт, я так возбуждаюсь от одного твоего вида!)]
 		#ELSE
-			 [npc.speech(Come on, [pc.name]! Let's fuck already! Fuck, I'm so turned on right now!)]
+			 [npc.speech(Ну же, [pc.name]! Давай уже трахнемся! Блядь, как же меня сейчас штырит!)]
 		#ENDIF
 	</p>
 	]]>
@@ -335,29 +331,29 @@
 	<htmlContent tag="ALLEY_ATTACK_OFFER_BODY"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			Wanting to avoid a fight, you decide to give [npc.name] what [npc.she] wants. Flashing a seductive smile [npc.her] way, you [pc.moan], [pc.speech(Come on then, I'm all yours!)]
+			Желая избежать драки, ты решаешь дать [npc.name] то, чего [npc.she] хочет. Одарив [npc.her] соблазнительной улыбкой, ты [pc.moan], [pc.speech(Ну давай же, я вся твоя!)]
 		</p>
 		<p>
-			[com.speech(Are you sure about this?)] [com.name] asks, stepping forwards in preparation to defend you from [npc.namePos] advances.
+			[com.speech(Ты уверена в этом?)] — спрашивает [com.name], делая шаг вперед, чтобы защитить тебя от нападок [npc.namePos].
 		</p>
 		<p>
-			[pc.speech(Don't worry, [com.name],)] you reply, reaching out to take hold of [com.her] [com.arm], before firmly pushing [com.herHim] to one side. [pc.speech(I've got this. You just keep a lookout for anyone else.)]
+			[pc.speech(Не волнуйся, [com.name],)] — отвечаешь ты, хватая [com.arm] за [com.her], а затем решительно отталкивая [com.herHim] в сторону. [pc.speech(Я справлюсь. А ты просто приглядывай, чтобы никто другой не подошел.)]
 		</p>
 		<p>
-			A delighted, lust-filled smile breaks out across [npc.namePos] face, and [npc.she] instantly rushes forwards, reaching up to grab you by the [pc.arms] before pulling you forwards into a tight embrace. Pressing [npc.her] [npc.lips] against yours, [npc.she] thrusts [npc.her] [npc.tongue] into your mouth, aggressively kissing you for a moment before pulling back, growling, [npc.speech(Oh yes... Fuck, I'm just so horny!)]
+			Лицо [npc.namePos] расплывается в восторженной, полной похоти улыбке, и [npc.she] мгновенно бросается вперёд, хватая тебя за [pc.arms] и притягивая к себе в крепкие объятия. Прижимая [npc.her] [npc.lips] к твоим, [npc.she] впихивает [npc.her] [npc.tongue] тебе в рот, агрессивно целуя на мгновение, а затем отстраняется с рычанием: [npc.speech(О да... Блядь, как же меня штырит!)]
 		</p>
 		<p>
-			Feeling very much the same way, you surrender yourself to [npc.namePos] dominant touch, allowing [npc.herHim] to use you for some sexual relief...
+			Чувствуя то же самое, ты полностью отдаешься доминантным прикосновениям [npc.namePos], позволяя [npc.herHim] использовать тебя для сексуальной разрядки...
 		</p>
 	#ELSE
 		<p>
-			Wanting to avoid a fight, you decide to give [npc.name] what [npc.she] wants. Flashing a seductive smile [npc.her] way, you [pc.moan], [pc.speech(Come on then, I'm all yours!)]
+			Желая избежать драки, ты решаешь дать [npc.name] то, чего [npc.she] хочет. Одарив [npc.her] соблазнительной улыбкой, ты [pc.moan], [pc.speech(Ну давай же, я вся твоя!)]
 		</p>
 		<p>
-			A delighted, lust-filled smile breaks out across [npc.namePos] face, and [npc.she] instantly rushes forwards, reaching up to grab you by the [pc.arms] before pulling you forwards into a tight embrace. Pressing [npc.her] [npc.lips] against yours, [npc.she] thrusts [npc.her] [npc.tongue] into your mouth, aggressively kissing you for a moment before pulling back, growling, [npc.speech(Oh yes... Fuck, I'm just so horny!)]
+			Лицо [npc.namePos] расплывается в восторженной, полной похоти улыбке, и [npc.she] мгновенно бросается вперёд, хватая тебя за [pc.arms] и притягивая к себе в крепкие объятия. Прижимая [npc.her] [npc.lips] к твоим, [npc.she] впихивает [npc.her] [npc.tongue] тебе в рот, агрессивно целуя на мгновение, а затем отстраняется с рычанием: [npc.speech(О да... Блядь, как же меня штырит!)]
 		</p>
 		<p>
-			Feeling very much the same way, you surrender yourself to [npc.namePos] dominant touch, allowing [npc.herHim] to use you for some sexual relief...
+			Чувствуя то же самое, ты полностью отдаешься доминантным прикосновениям [npc.namePos], позволяя [npc.herHim] использовать тебя для сексуальной разрядки...
 		</p>
 	#ENDIF
 	]]>
@@ -365,130 +361,129 @@
 	
 	<htmlContent tag="ALLEY_ATTACK_OFFER_THREESOME"><![CDATA[
 	<p>
-		Wanting to avoid a fight, you decide to give [npc.name] what [npc.she] wants, and offer, [pc.speech(If you're looking for a bit of fun, [com.name] and I are more than happy to play along...)]
+		Желая избежать драки, ты решаешь дать [npc.name] то, чего желает [npc.she], и предлагаешь: [pc.speech(Если ты ищешь немного веселья, то [com.name] и я будем только рады поиграть...)]
 	</p>
 	<p>
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			[com.speech(That's right,)] [com.name] teases, [com.speech(We can satisfy your desires...)]
+			[com.speech(Именно так,)] дразнит [com.name], [com.speech(Мы можем удовлетворить твои желания...)]
 		#ELSE
-			[com.speech([pc.Name]!)] [com.name] interjects, [com.speech(I-I really don't want to do this!)]
+			[com.speech([pc.Name]!)] вставляет [com.name], [com.speech(Я... я правда не хочу этого делать!)]
 		#ENDIF
 	</p>
 	<p>
-		[npc.speech(Yes! Let's get started and fuck already!)] [npc.name] desperately whines, before stepping forwards and placing [npc.a_hand] on each of your waists. With a hungry growl, [npc.she] dominantly pulls the two of you up against [npc.herHim], before leaning in to plant a passionate kiss on your [pc.lips+].
+		[npc.speech(Да! Давайте уже начнем и трахнем друг друга!)] — отчаянно скулит [npc.name], прежде чем сделать шаг вперед и положить [npc.a_hand] на каждый из твоих бедер. С голодным рыком [npc.she] властно прижимает вас обоих к [npc.herHim], а затем наклоняется, чтобы запечатлеть страстный поцелуй на твоих [pc.lips+].
 	</p>
 	<p>
-		As you press yourself up against [npc.name], [npc.she] suddenly breaks off the kiss, before turning to [com.name] and thrusting [npc.her] [npc.tongue+] down [com.her] throat.
+		Пока ты прижимаешься к [npc.name], [npc.she] внезапно прерывает поцелуй, поворачивается к [com.name] и проталкивает [npc.her] [npc.tongue+] глубоко в [com.her].
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			 Your [com.companion] lets out a delighted, muffled [com.moan] as [com.she] eagerly returns the kiss, [com.speech(~Mmm!~ Yes!)]
+			 Твоя [com.companion] издает восторженный, приглушенный [com.moan], пока [com.she] с жадностью отвечает на поцелуй, [com.speech(~Ммм!~ Да!)]
 		#ELSE
-			 Your [com.companion] lets out a flustered, muffled yelp, before pushing [npc.name] away from [com.herHim] and shouting, [com.speech(Get away from me!)]
+			 Твоя [com.companion] издает смущенный, приглушенный вскрик, прежде чем оттолкнуть [npc.name] от [com.herHim] и выкрикнуть: [com.speech(Уйди от меня!)]
 		#ENDIF
 	</p>
 	<p>
-		Before either of you can make another move, [npc.name] suddenly reaches up to grab you both by the shoulders, and with a determined push, forces the two of you down onto all fours. Dropping down behind you, [npc.she] growls, [npc.speech(You dirty sluts! I'll put the two of you in your place!)]
+		Прежде чем кто-то из вас успевает пошевелиться, [npc.name] внезапно хватает вас обоих за плечи и решительным толчком заставляет вас встать на четвереньки. Опустившись позади вас, [npc.she] рычит: [npc.speech(Грязные шлюхи! Я быстро поставлю вас на место!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY_ATTACK_OFFER_COMPANION"><![CDATA[
 	<p>
-		Wanting to avoid a fight, you decide to do the only other thing you can think of, and turn towards [com.name] to ask, [pc.speech(You'll take one for the team, won't you, [com.name]? I don't really want to get into a fight; all you need to do is let [npc.herHim] fuck you...)]
+		Желая избежать драки, ты решаешь сделать единственное, что приходит на ум, и поворачиваешься к [com.name] с вопросом: [pc.speech(Ты ведь возьмешь удар на себя, [com.name]? Мне совсем не хочется драться; тебе всего лишь нужно позволить [npc.herHim] трахнуть тебя...)]
 	</p>
 	<p>
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			[com.speech(Sure thing, [pc.name],)] [com.name] replies, [com.speech(If that's really what you want me to do...)]
+			[com.speech(Конечно, [pc.name],)] отвечает [com.name], [com.speech(Если ты действительно хочешь, чтобы я это сделала...)]
 		#ELSE
-			[com.speech([pc.Name]?! What the hell?!)] [com.name] replies in alarm, [com.speech(I really don't want to do that!)]
+			[com.speech([pc.Name]?! Какого черта?!)] в тревоге восклицает [com.name], [com.speech(Я правда не хочу этого делать!)]
 		#ENDIF
 	</p>
 	<p>
-		[npc.speech(Come on, let's fuck already! I <i>need</i> it!)] [npc.name] desperately whines as [npc.she] steps forwards and prepares to get what [npc.she] wants by use of force. 
+		[npc.speech(Да давайте уже трахаться! Мне это <i>очень</i> нужно!)] — отчаянно скулит [npc.name], пока [npc.she] делает шаг вперед, готовясь взять то, что хочет [npc.she], силой. 
 	</p>
 	<p>
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			[com.speech(There's no need for violence,)] [com.name] says, before turning to face [npc.name] and teasing, [com.speech(You can fuck me all you want!)]
+			[com.speech(Не нужно насилия,)] говорит [com.name], после чего поворачивается к [npc.name] и дразнит: [com.speech(Можешь трахать меня сколько угодно!)]
 		#ELSE
-			[pc.speech(There's no need for violence!)] you exclaim, before spinning [com.name] around and pushing [com.herHim] towards [npc.name]. [pc.speech(You can fuck [com.name] all you want!)]
+			[pc.speech(Не нужно насилия!)] — восклицаешь ты, прежде чем развернуть [com.name] и подтолкнуть [com.herHim] к [npc.name]. [pc.speech(Ты можешь трахать [com.name] сколько влезет!)]
 		#ENDIF
 	</p>
 	<p>
-		Before your [com.companion] can make a move, [npc.name] lets out a hungry [npc.moan] and quickly reaches up to grab [com.her] [com.arm+]. With a dominant pull, [npc.she] forces your [com.companion] into [npc.her] embrace, before planting a passionate kiss on [com.her] [com.lips+]. After a moment, [npc.she] breaks away, before growling, [npc.speech(You're going to be a good [com.girl] now, aren't you bitch? Your little friend over there can watch me fuck you senseless!)]
+		Прежде чем твоя [com.companion] успевает хоть что-то предпринять, [npc.name] издает голодный [npc.moan] и резко тянется вверх, чтобы схватить [com.her] [com.arm+]. Властным рывком [npc.she] вжимает твою [com.companion] в свои [npc.her] объятия, после чего осыпает страстными поцелуями твои [com.her] [com.lips+]. Спустя мгновение [npc.she] отстраняется и рычит: [npc.speech(Теперь ты будешь послушной [com.girl], а, сучка? Твой дружок вон там будет смотреть, как я трахаю тебя до беспамятства!)]
 	</p>
 	<p>
-		You let out a sigh of relief, happy that you had [com.name] to use as a bargaining chip. Leaning back against a nearby wall, you decide to keep a lookout for any other horny muggers while [npc.name] has [npc.her] fun with your [com.companion]...
+		Ты облегченно вздыхаешь, радуясь, что у тебя есть [com.name] в качестве разменной монеты. Прислонившись спиной к ближайшей стене, ты решаешь приглядывать, не идет ли еще какой-нибудь похотливый грабитель, пока [npc.name] наслаждается [npc.her] с твоей [com.companion]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY_ATTACK_PEACEFUL_SEX_AS_DOM"><![CDATA[
 	<p>
-		Deciding to take full advantage of [npc.namePos] storm-induced lust, you step forwards and take hold of [npc.her] [npc.hips], before teasing, [pc.speech(I'll give you what you want, [npc.name], but I'm going to be the one in charge...)]
+		Решив вовсю воспользоваться вызванной штормом похотью [npc.namePos], ты делаешь шаг вперед и берешь [npc.her] за [npc.hips], дразня: [pc.speech(Я дам тебе то, что ты хочешь, [npc.name], но главным здесь буду я...)]
 	</p>
 	<p>
-		Before [npc.she] can respond, you press your [pc.lips] against [npc.hers], before slipping your [pc.hands] around to grab [npc.her] [npc.ass+] and pull [npc.herHim] in against you. Just as you already knew, [npc.name] is desperate to have sex with you, and happily throws [npc.her] [npc.arms] around you, passionately returning your kiss as [npc.she] fully submits to you...
+		Прежде чем [npc.she] успевает среагировать, ты прижимаешь свои [pc.lips] к [npc.hers], а затем скользишь своей [pc.hands], чтобы обхватить [npc.her] [npc.ass+] и притянуть [npc.herHim] к себе. Как ты и подозревал, [npc.name] жаждет секса с тобой и с радостью бросает [npc.her] [npc.arms] вокруг тебя, страстно отвечая на твой поцелуй, пока [npc.she] полностью отдается тебе во власть...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY_ATTACK_PEACEFUL_SEX_AS_SUB"><![CDATA[
 	<p>
-		Deciding to take full advantage of [npc.namePos] storm-induced lust, you step forwards and take hold of [npc.her] [npc.hips], before teasing, [pc.speech(I'll give you what you want, [npc.name]. All you have to do is come and take it...)]
+		Решив вовсю воспользоваться вызванной штормом похотью [npc.namePos], ты делаешь шаг вперед и берешь [npc.her] за [npc.hips], дразня: [pc.speech(Я дам тебе то, что ты хочешь, [npc.name]. Тебе нужно лишь прийти и забрать это...)]
 	</p>
 	<p>
-		Needing no further encouragement, [npc.name] eagerly grabs hold of your [pc.hips], before leaning in and pressing [npc.her] [npc.lips+] against yours. As you lean in and return the sudden kiss, you feel [npc.her] grip slipping around to grab your [pc.ass+], and with a firm tug, [npc.name] pulls you in against [npc.herHim]. Happily throwing your [pc.arms] around [npc.herHim], you passionately return [npc.namePos] kiss as you fully submit to [npc.herHim]...
+		Больше не нуждаясь в словах, [npc.name] жадно хватает тебя за [pc.hips], а затем наклоняется и прижимает свои [npc.her] [npc.lips+] к твоим. Когда ты подаешься навстречу и отвечаешь на этот внезапный поцелуй, ты чувствуешь, как [npc.her] скользит рукой ниже, чтобы сжать твою [pc.ass+], и резким рывком [npc.name] притягивает тебя к [npc.herHim]. Счастливый, ты бросаешь свой [pc.arms] на [npc.herHim], страстно отвечая на [npc.namePos] поцелуй и полностью отдаваясь во власть [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY_ATTACK_PEACEFUL_OFFER_THREESOME"><![CDATA[
 	<p>
-		Wanting to offer [npc.name] something a little special, you flash [npc.herHim] a seductive smile, before making your proposition. [pc.speech(You know, [npc.name], both [com.name] and I would be more than happy to give you what you want...)]
+		Желая предложить [npc.name] нечто особенное, ты одариваешь [npc.herHim] соблазнительной улыбкой, прежде чем озвучить свое предложение. [pc.speech(Знаешь, [npc.name], и [com.name], и я будем не прочь дать тебе то, чего ты так хочешь...)]
 	</p>
 	<p>
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			[com.speech(That's right,)] [com.name] teases. [com.speech(We can satisfy your desires...)]
+			[com.speech(Именно так,)] дразнит [com.name]. [com.speech(Мы можем удовлетворить твои желания...)]
 		#ELSE
-			[com.speech([pc.Name]!)] [com.name] interjects. [com.speech(I really don't want to do this!)]
+			[com.speech([pc.Name]!)] — вставляет [com.name]. [com.speech(Я правда не хочу этого делать!)]
 		#ENDIF
 	</p>
 	<p>
-		[npc.speech(Mmm, you mean I get to enjoy the two of you at once? How could anyone say no to that?!)] [npc.name] eagerly replies, stepping forwards and placing [npc.a_hand] on each of your waists. With a hungry growl, [npc.she] dominantly pulls the two of you up against [npc.herHim], before leaning in to give you a passionate kiss. 
+		[npc.speech(Ммм, то есть я смогу насладиться вами обоими сразу? Как тут можно отказать?!)] [npc.name] с нетерпением отвечает, делая шаг вперед и кладя [npc.a_hand] на талии каждого из вас. С голодным рыком [npc.she] властно прижимает вас обоих к [npc.herHim], после чего наклоняется, чтобы одарить вас страстным поцелуем. 
 	</p>
 	<p>
-		As you press yourself up against [npc.name], [npc.she] suddenly breaks off the kiss, before turning to [com.name] and giving [com.herHim] a taste of [npc.her] [npc.lips].
+		Когда ты прижимаешься к [npc.name], [npc.she] внезапно прерывает поцелуй, после чего поворачивается к [com.name] и дает [com.herHim] попробовать на вкус [npc.her] [npc.lips].
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			[com.Name] lets out a delighted [com.moan], before eagerly returning the kiss and [com.moaning], [com.speech(~Mmm!~ Yes!)]
+			[com.Name] издает восторженный [com.moan], прежде чем с жадностью ответить на поцелуй и [com.moaning], [com.speech(~Ммм!~ Да!)]
 		#ELSE
-			[com.Name] lets out a flustered yelp, before pushing [npc.name] away from [com.herHim] and complaining, [com.speech(I-I don't know about this!)]
+			[com.Name] издает смущенный вскрик, прежде чем оттолкнуть [npc.name] от [com.herHim] и проворчать: [com.speech(Я... я даже не знаю, стоит ли в это ввязываться!)]
 		#ENDIF
 	</p>
 	<p>
-		Before either of you can make another move, [npc.name] suddenly reaches up to grab you both by the shoulders, and with a determined push, forces the two of you down onto all fours. Dropping down behind you, [npc.she] [npc.moansVerb], [npc.speech(You dirty sluts! I'll put the two of you in your place!)]
+		Прежде чем кто-то из вас успевает пошевелиться, [npc.name] внезапно хватает вас обоих за плечи и решительным толчком заставляет вас встать на четвереньки. Опустившись позади вас, [npc.she] [npc.moansVerb], [npc.speech(Грязные шлюхи! Я быстро поставлю вас обеих на место!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY_ATTACK_PEACEFUL_OFFER_COMPANION"><![CDATA[
 	<p>
-		Wanting to offer [npc.name] something special, you look over at [com.name] and ask, [pc.speech(You're up for having some fun, aren't you, [com.name]? I don't really want to have sex right now, but I can tell that [npc.name] really needs a good fuck. All you need to do is let [npc.herHim] fuck you...)]
+		Желая предложить [npc.name] что-то особенное, ты переводишь взгляд на [com.name] и спрашиваешь: [pc.speech(Ты ведь не против немного развлечься, [com.name]? Я сейчас не особо хочу секса, но вижу, что [npc.name] очень нужно хорошенько трахнуться. Тебе нужно лишь позволить [npc.herHim] оттрахать тебя...)]
 	</p>
 	<p>
 		#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())
-			[com.speech(Sure thing, [pc.name],)] [com.name] replies. [com.speech(If that's really what you want me to do...)]
+			[com.speech(Без проблем, [pc.name],)] — отвечает [com.name]. [com.speech(Если ты действительно хочешь, чтобы я это сделала...)]
 		#ELSE
-			[com.speech([pc.Name]! What the hell?!)] [com.name] replies in alarm. [com.speech(I really don't want to do that!)]
+			[com.speech([pc.Name]! Какого черта?!)] — в тревоге отвечает [com.name]. [com.speech(Я правда не хочу этого делать!)]
 		#ENDIF
 	</p>
 	<p>
-		Hearing what it is you're saying, [npc.name] steps away from you and throws [npc.her] [npc.arms+] around [com.name] instead, before desperately whining, [npc.speech(Come on, <i>please</i> let me fuck you!)]
+		Услышав твои слова, [npc.name] отстраняется от тебя и вместо этого начинает отчаянно тереться своими [npc.her] о твои [npc.arms+] [com.name], жалобно скуля: [npc.speech(Ну же, <i>пожалуйста</i>, дай мне трахнуть тебя!)]
 	</p>
 	<p>
-		Before your [com.companion] can reply, [npc.name] lets out a hungry [npc.moan], before suddenly planting a passionate kiss on [com.namePos] [com.lips+]. After a moment, [npc.she] breaks away, before breathlessly panting, [npc.speech(You're going to be a good [com.girl] now, aren't you, [com.name]?! [pc.Name] can watch me fuck you senseless!)]
-	</p>
-	<p>
-		You let out a content sigh, happy that you had [com.name] to offer to [npc.name]. Leaning back against a nearby wall, you decide to take it easy while [npc.name] has [npc.her] fun with your [com.companion]...
-	</p>
+		Прежде чем твоя [com.companion] успевает ответить, [npc.name] издает голодный [npc.moan] и внезапно впивается страстным поцелуем в [com.namePos] [com.lips+]. Спустя мгновение [npc.she] отстраняется и, тяжело дыша, произносит: [npc.speech(Теперь ты будешь послушной [com.girl], правда, [com.name]?! [pc.Name] сможет смотреть, как я трахаю тебя до беспамятства!)]
+	</p><p>
+Ты довольно вздыхаешь, радуясь, что тебе есть чем порадовать [npc.name], предлагая ей [com.name]. Откинувшись на ближайшую стену, ты решаешь расслабиться и просто получать удовольствие, пока [npc.name] вовсю развлекается с твоим [com.companion], используя [npc.her]...
+</p>
 	]]>
 	</htmlContent>
 	

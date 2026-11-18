@@ -5,32 +5,32 @@
 	
 	<htmlContent tag="ENCOUNTER_START"><![CDATA[
 	<p>
-		As you walk down yet another of Dominion's busy streets, you notice that this particular area is extravagantly decorated for Lilith's October celebrations. Banners and streamers, of orange, black, and purple, fly from every lamp post, and numerous posters praising Lilith's rule are plastered over every wall. There are a considerable number of succubi in this area wearing witch's costumes, and you see them approaching members of the public, before dragging them off down nearby alleyways.
+		Прогуливаясь по очередной оживленной улице Dominion, ты замечаешь, что этот район щедро украшен к октябрьским празднествам Lilith. С каждого фонарного столба развеваются оранжевые, черные и фиолетовые ленты и флаги, а каждая стена обклеена плакатами, восхваляющими правление Lilith. В этой части города полно суккубов в костюмах ведьм: ты видишь, как они подходят к прохожим, а затем утаскивают их в ближайшие переулки.
 	</p>
 	<p>
-		One of these witch-themed succubi suddenly rushes over towards you, gripping a witch's broomstick tightly in one hand and smiling in delight as she blocks your path and introduces herself, [npc.speech(Heya! I'm [npc.name], do you have a moment to talk?!)]
+		Одна из таких суккубов в образе ведьмы внезапно бросается к тебе. Крепко сжимая в руке метлу, она с восторженной улыбкой преграждает тебе путь и представляется: [npc.speech(Хей! Я [npc.name], найдется минутка поболтать?!)]
 	</p>
 	<p>
-		You open your mouth to answer, but before you're able to say anything, the excitable witch cuts you off, [npc.speech(Sure you do! Everyone has the time to talk about how great Lilith is, right?! I'm out here with my sisters to make sure that everyone is having fun in this special month of October! I'm a part of the Cult of Lilith, and I want <i>you</i> to come visit our chapel so that I can give you a special gift!)]
+		Ты открываешь рот, чтобы ответить, но прежде чем ты успеваешь произнести хоть слово, возбужденная ведьма перебивает тебя: [npc.speech(Конечно, найдется! У каждого найдется время, чтобы обсудить, как прекрасна Lilith, верно?! Мы с сестрами здесь для того, чтобы убедиться, что в этот особенный октябрь все веселятся! Я из Культа Lilith, и я хочу, чтобы <i>ты</i> заглянула в нашу часовню — я подарю тебе особенный презент!)]
 	</p>
 	<p>
-		The succubus reaches down to grab you by the [pc.arm], and starts trying to pull you off down a nearby alleyway. As her fingers press into your [pc.armSkin], you feel an overwhelming sense of power radiating from her arcane aura. This demon's power is sure to rival that of Lilaya's, and if she gets you alone down that alleyway, there's no telling what she might do.
+		Суккуб тянется к тебе, хватая за [pc.arm], и пытается утащить в ближайший переулок. Когда её пальцы впиваются в твою [pc.armSkin], ты ощущаешь исходящую от неё мощную арканную ауру. Сила этого демона определенно может соперничать с силой Lilaya, и если она затащит тебя в этот переулок и останется с тобой наедине, бог знает, что она может вытворить.
 	</p>
 	<p>
-		You could pull away and make an excuse to leave, or let her lead you to her chapel, where there's a promise of a 'gift'...
+		Ты можешь отстраниться и найти предлог, чтобы уйти, или позволить ей увести тебя в её часовню, где тебя ждёт обещание особого «дара»...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="ENCOUNTER_START_LEAVE"><![CDATA[
 	<p>
-		You pull your [pc.arm] away from [npc.name] and take a step back. [pc.speech(I don't have time right now.)]
+		Ты отстраняешь свою [pc.arm] от [npc.name] и делаешь шаг назад. [pc.speech(Сейчас у меня нет времени.)]
 	</p>
 	<p>
-		You see a brief flash of anger in [npc.namePos] [npc.eyes+], but it only lasts for a moment before the smile returns to her face. [npc.speech(Just remember to praise Lilith, or else we'll find out!)]
+		В глазах [npc.namePos] [npc.eyes+] промелькнула мимолётная вспышка гнева, но она тут же сменилась привычной улыбкой. [npc.speech(Только не забудь прославлять Lilith, иначе мы всё узнаем!)]
 	</p>
 	<p>
-		[npc.NamePos] words are followed by a little laugh, but despite her attempt to pass off her remark as a joke, you detect the distinct hint of malice in her tone. Not wanting to get caught up in conversation with this overbearing cultist, you turn around and carry on your way.
+		Слова [npc.NamePos] сопровождаются коротким смешком, но, несмотря на её попытку выдать реплику за шутку, ты улавливаешь в её тоне явный оттенок злобы. Не желая ввязываться в разговор с этой навязчивой культисткой, ты разворачиваешься и идёшь дальше.
 	</p>
 	]]>
 	</htmlContent>
@@ -40,59 +40,59 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL"><![CDATA[
 	<p>
-		[pc.speech(Sure, I've got time to come visit your chapel,)] you say, allowing the excitable cultist to pull you towards the foreboding alleyway.
+		[pc.speech(Конечно, у меня найдётся время заглянуть в твою часовню,)] — говоришь ты, позволяя возбуждённой культистке тащить тебя в сторону мрачного переулка.
 	</p>
 	<p>
-		[npc.speech(Excellent! I knew you weren't like all the others! This is going to be fun!)] [npc.name] replies, practically skipping in excitement as she leads the way.
+		[npc.speech(Превосходно! Я знала, что ты не такой, как остальные! Это будет весело!)] — отвечает [npc.name], практически подпрыгивая от восторга, пока ведет тебя за собой.
 	</p>
 	<p>
-		The hustle and bustle of the busy street is soon left behind as [npc.name] hurriedly pulls you down a couple of dark and dingy passageways. Thankfully, her chapel doesn't seem to be too far into the maze of alleyways, and after just a minute, you find yourself stepping out into a tidy little courtyard. A life-sized statue of a breathtakingly beautiful demon, who you assume to be Lilith, stands in the centre. Past this statue, you see your destination taking the form of a small, one-story building, with a pillared facade and red-tiled roof.
+		Шум и суета оживленной улицы вскоре остаются позади, когда [npc.name] торопливо затягивает тебя в пару темных и грязных переулков. К счастью, ее часовня, кажется, находится не так уж далеко в этом лабиринте подворотен, и всего через минуту ты выходишь в аккуратный маленький дворик. В центре стоит статуя в натуральную величину захватывающе прекрасного демона, которым, как ты предполагаешь, является Lilith. За статуей виднеется твоя цель — небольшое одноэтажное здание с колонным фасадом и крышей из красной черепицы.
 	</p>
 	<p>
-		It's towards this building that [npc.name] pulls you, and after quickly crossing the small courtyard, you find yourself stepping through the doorway. Just as the diminutive exterior suggested, the interior of the chapel consists of a single, long room. Rows of benches line either side of a central aisle, and at the far end, a dark-maroon cloth is draped over a waist-high altar. As [npc.name] leads you towards this altar, you see that the walls are covered in detailed murals, each one portraying a demon engaged in a different sex position.
+		Именно к этому зданию тянет тебя [npc.name], и, быстро пересекши небольшой дворик, ты переступаешь порог. Как и предсказывал скромный вид снаружи, интерьер часовни представляет собой одно длинное помещение. По обе стороны центрального прохода тянутся ряды скамей, а в дальнем конце на алтаре по пояс высотой наброшена темно-бордовая ткань. Когда [npc.name] ведет тебя к алтарю, ты замечаешь, что стены покрыты детальными фресками, на каждой из которых изображен демон в какой-нибудь позе для секса.
 	</p>
 	<p>
-		[npc.speech(We're here!)] [npc.name] exclaims, stopping before the altar and turning to face you. [npc.speech(You've been such a good [pc.girl]! I usually like to show people around a little first, but I just can't wait any longer! It's time for your gift!)]
+		[npc.speech(Мы пришли!)] — восклицает [npc.name], останавливаясь перед алтарем и поворачиваясь к тебе. [npc.speech(Ты был таким послушным [pc.girl]! Обычно мне нравится сначала немного провести экскурсию, но я просто не могу больше ждать! Пришло время для твоего подарка!)]
 	</p>
 	<p>
-		[npc.Name] lets out a mischievous giggle, before reaching down and pulling up the skirt of her witch's dress. Following the movement of her hands, you look down to see that her now-exposed underwear are completely crotchless, allowing her huge demonic cock to flop free between her legs. Her right hand reaches down beneath her monstrous shaft to stroke her dripping-wet pussy, and her giggle turns into a sensual moan as she bites her lip and looks up at you. [npc.speech(Be a good [pc.girl] now and get down on your knees! You can start with my pussy, and then finish with my cock! You'll be getting your gift straight down your throat soon enough! Oh! And don't even <i>think</i> of trying to back out now!)]
+		[npc.Name] озорно хихикает, а затем наклоняется и задирает подол своего ведьминского платья. Проследив за движением её рук, ты смотришь вниз и видишь, что её обнажившееся белье — совершенно безлазное, и её огромный демонический член свободно болтается между ног. Правой рукой она пробирается под свой чудовищный ствол, чтобы ласкать свою сочащуюся влагой киску, и её хихиканье переходит в чувственный стон, когда она прикусывает губу и смотрит на тебя снизу вверх. [npc.speech(А теперь будь хорошим [pc.girl] и опустись на колени! Можешь начать с моей киски, а закончить моим членом! Твой дар очень скоро окажется прямо у тебя в глотке! О! И даже не <i>думай</i> теперь дать задний ход!)]
 	</p>
 	<p>
-		You can tell from the threatening tone of her voice that she's definitely not going to take no for an answer. It looks like you'll either have to do as she commands, or try and fight her off...
+		По угрожающему тону её голоса ты понимаешь, что она точно не примет отказ. Похоже, тебе придется либо подчиниться её приказу, либо попытаться дать ей отпор...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="ENCOUNTER_CHAPEL_ORAL_SEX"><![CDATA[
 	<p>
-		You do as [npc.name] commands, and obediently drop to your knees in front of her. Looking down at your submissive form, the succubus cultist coos in delight, [npc.speech(Good [pc.girl]! You're eager for my gift, aren't you?!)]
+		Ты делаешь так, как велит [npc.name], и послушно опускаешься перед ней на колени. Глядя на твою покорную фигуру, культистка-суккуб довольно воркует: [npc.speech(Молодец, [pc.girl]! Ты ведь жаждешь моего дара, не так ли?!)]
 	</p>
 	#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
 		<p>
-			You look up to see her happy smile turn into a puzzled frown as she realises that you're not able to get access to your mouth. Reaching down to your sealed clothing, she focuses her arcane energy into removing the seal. [npc.speech(There you go! Now you can suck cock to your heart's content!)]
+			Ты поднимаешь взгляд и видишь, как её счастливая улыбка сменяется недоуменным хмурым выражением лица, когда она понимает, что у тебя нет доступа к собственному рту. Потянувшись к твоей запечатанной одежде, она направляет свою аркану энергию на то, чтобы снять печать. [npc.speech(Вот так! Теперь ты сможешь сосать член в свое удовольствие!)]
 		</p>
 	#ENDIF
 	<p>
-		Stepping forwards, [npc.name] strokes the top of your head, before gently pulling you towards her crotch...
+		Сделав шаг вперед, [npc.name] гладит тебя по макушке, а затем мягко тянет тебя к своей промежности...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="ENCOUNTER_CHAPEL_VAGINAL_SEX"><![CDATA[
 	<p>
-		You smirk at [npc.name], before batting your eyelids and putting on the most seductive voice you can muster, [pc.speech(Please [npc.name], could I get your gift elsewhere?)]
+		Ты ухмыляешься [npc.name], после чего игриво хлопаешь ресницами и заводишь самый соблазнительный голос, на который только способна: [pc.speech(Пожалуйста, [npc.name], можно я получу твой дар в другом месте?)]
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			You slowly turn around and present your rear-end to [npc.name], drawing [npc.her] eyes down to your [pc.pussy+]. 
+			Ты медленно поворачиваешься спиной к [npc.name], заставляя взгляд [npc.her] опуститься на твою [pc.pussy+].
 		#ELSE
-			You slowly trace your fingers over your pussy, drawing [npc.namePos] eyes down to your groin. 
+			Ты медленно ведешь пальцами по своей киске, приковывая взгляд [npc.namePos] к своей промежности.
 		#ENDIF
-		 She smiles as she realises what you're suggesting, and eagerly grabs your [pc.arm] once again, before pushing you down onto your back on top of the chapel's altar. [npc.speech(What better way to praise Lilith than by filling an eager slut's womb with my seed?! Your belly's going to be nice and swollen with my demonic brood soon enough!)]
+		Она улыбается, понимая твой намек, и с жадностью снова хватает твою [pc.arm], прежде чем повалить тебя на спину на алтарь часовни. [npc.speech(Какой способ прославить Lilith лучше, чем наполнить чрево жадной шлюхи своим семенем?! Твой живот скоро станет приятно раздутым от моего демонического потомства!)]
 	</p>
 	#IF(!pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
 		<p>
-			You look up to see her happy smile turn into a puzzled frown as she realises that she's not able to get access to your pussy. Reaching down to your seal clothing, she focuses her arcane energy into removing the seal. [npc.speech(There we go! Now it's time for your special gift!)]
+			Ты поднимаешь взгляд и видишь, как её счастливая улыбка сменяется недоуменным хмурым выражением лица, когда она понимает, что не может добраться до твоей киски. Потянувшись к твоей запечатанной одежде, она концентрирует свою арканную энергию, чтобы снять печать. [npc.speech(Вот так! А теперь пора получить твой особенный дар!)]
 		</p>
 	#ENDIF
 	]]>
@@ -100,14 +100,14 @@
 
 	<htmlContent tag="ENCOUNTER_CHAPEL_ANAL_SEX"><![CDATA[
 	<p>
-		You smirk at [npc.name], before stepping forwards and asking, [pc.speech(Please [npc.name], could I get your gift elsewhere?)]
+		Ты ухмыляешься [npc.name], после чего делаешь шаг вперед и спрашиваешь: [pc.speech(Пожалуйста, [npc.name], можно я получу твой дар в другом месте?)]
 	</p>
 	<p>
-		You slowly turn to one side, tracing your fingers over your ass in order to draw [npc.namePos] eyes down to your rear end. She smiles as she realises what you're suggesting, and eagerly grabs your [pc.arm] once again, before pushing you down onto your back on top of the chapel's altar. [npc.speech(What better way to praise Lilith than by filling some slut's ass with my seed?!)]
+		Ты медленно поворачиваешься на бок, проводя пальцами по своей заднице, чтобы привлечь [npc.namePos] взгляды к своему заду. Она улыбается, понимая твой намек, и с жадностью снова хватает твою [pc.arm], прежде чем толкнуть тебя спиной вниз на алтарь часовни. [npc.speech(Какой способ лучше прославить Lilith, чем наполнить задницу какой-нибудь шлюхи моим семенем?!)]
 	</p>
 	#IF(!pc.isAbleToAccessCoverableArea(CA_ANUS, true))
 		<p>
-			You look up to see her happy smile turn into a puzzled frown as she realises that she's not able to get access to your asshole. Reaching down to your sealed clothing, she focuses her arcane energy into removing the seal. [npc.speech(There we go! Now it's time for your special gift!)]
+			Ты поднимаешь взгляд и видишь, как её счастливая улыбка сменяется недоуменным хмурым выражением лица, когда она понимает, что не может добраться до твоего ануса. Потянувшись к твоей запечатанной одежде, она концентрирует свою арканную энергию, чтобы снять печать. [npc.speech(Вот так! А теперь пора получить твой особенный подарок!)]
 		</p>
 	#ENDIF
 	]]>
@@ -118,19 +118,19 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_REPEAT"><![CDATA[
 	<p>
-		Deciding to pay [npc.name] another visit, you set off down the dark passageway that leads to her chapel. The route is quite easy to remember, and after just a minute you find yourself stepping out into a very familiar courtyard. Once again you pass the life-sized statue of Lilith, and after approaching the small, one-story building, you push open the chapel's wooden door and step inside.
+		Решив нанести [npc.name] еще один визит, ты отправляешься по темному проходу, ведущему к её часовне. Маршрут довольно легко запомнить, и всего через минуту ты оказываешься в очень знакомом внутреннем дворике. Ты снова проходишь мимо статуи Lilith в натуральную величину и, подойдя к небольшому одноэтажному зданию, толкаешь деревянную дверь часовни и входишь внутрь.
 	</p>
 	<p>
-		The interior is just as you remember it, with rows of benches lining either side of a central aisle, and at the far end, a dark-maroon cloth is draped over a waist-high altar. The familiar figure of [npc.name] is standing beside the stone block, and as the door swings shut behind you, she turns to see who's entered her sanctum.
+		Внутри всё точно так же, как ты помнишь: ряды скамей по обе стороны центрального прохода, а в дальнем конце на алтаре по пояс высотой наброшена темно-бордовая ткань. Знакомая фигура [npc.name] стоит у каменного блока, и когда дверь за твоей спиной закрывается, она оборачивается, чтобы увидеть, кто вошел в её святилище.
 	</p>
 	<p>
-		[npc.speech(You're back!)] [npc.name] exclaims, smiling in delight. [npc.speech(What a good [pc.girl]! You've come back for another gift!)]
+		[npc.speech(Ты вернулся!)] — восклицает [npc.name], сияя от восторга. [npc.speech(Какая хорошая [pc.girl]! Ты пришел за еще одним подарком!)]
 	</p>
 	<p>
-		[npc.Name] lets out a mischievous giggle, before reaching down and pulling up the skirt of her witch's dress. Following the movement of her hands, you look down to see that her now-exposed underwear are completely crotchless, allowing her huge demonic cock to flop free between her legs. Her right hand reaches down beneath her monstrous shaft to stroke her dripping-wet pussy, and her giggle turns into a sensual moan as she bites her lip and looks up at you. [npc.speech(Now show me what a good [pc.girl] you are and get down on your knees! You can start with my pussy, and then finish with my cock! You'll be getting your gift straight down your throat soon enough! Oh! And don't even <i>think</i> of trying to back out now!)]
+		[npc.Name] озорно хихикает, прежде чем наклониться и задрать подол своего ведьминского платья. Следуя за движением её рук, ты опускаешь взгляд и видишь, что её обнажённое бельё оказалось совершенно безлазным, позволяя её огромному демоническому члену свободно болтаться между ног. Её правая рука ныряет под этот чудовищный ствол, чтобы ласкать свою сочащуюся влагой киску, и её смешок переходит в чувственный стон; она прикусывает губу и смотрит на тебя снизу вверх. [npc.speech(А теперь покажи, какой ты послушный [pc.girl], и опустись на колени! Можешь начать с моей киски, а закончить моим членом! Твой подарок очень скоро окажется прямо у тебя в глотке! О! И даже не <i>думай</i> теперь дать заднюю!)]
 	</p>
 	<p>
-		You can tell from the threatening tone of her voice that she's definitely not going to take no for an answer. It looks like you'll either have to do as she commands, or try and fight her off...
+		По угрожающему тону её голоса ты понимаешь, что она точно не примет отказ. Похоже, тебе придется либо подчиниться её приказу, либо попытаться дать ей отпор...
 	</p>
 	]]>
 	</htmlContent>
@@ -140,10 +140,10 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_LEAVING"><![CDATA[
 	<p>
-		Leaving [npc.name] panting and exhausted on the altar, you turn to make your exit. As you're walking towards the door, you notice that there's a spare Witch's outfit neatly folded on one of the empty benches. There's even a spare broomstick lying beside it, and you wonder if you should help yourself to these rare items as way of compensation for [npc.namePos] behaviour...
+		Оставив [npc.name] тяжело дышать и изнемогать на алтаре, ты разворачиваешься, чтобы уйти. Шагая к двери, ты замечаешь на одной из пустых скамей аккуратно сложенный запасной наряд ведьмы. Рядом даже лежит запасная метла, и ты задаешься вопросом: не стоит ли прибрать эти редкие вещи к рукам в качестве компенсации за поведение [npc.namePos]...
 	</p>
 	<p>
-		<i>Open your inventory to view the items.</i>
+		<i>Открой Инвентарь, чтобы посмотреть предметы.</i>
 	</p>
 	]]>
 	</htmlContent>
@@ -153,39 +153,39 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_COMBAT_VICTORY"><![CDATA[
 	<p>
-		[npc.Name] staggers back, gripping the edge of the altar with one hand as she pants from exertion. [npc.speech(I-Impossible! How could I be defeated?!)]
+		[npc.Name] отшатывается, хватаясь одной рукой за край алтаря и тяжело дыша от усталости. [npc.speech(Н-невероятно! Как меня могли победить?!)]
 	</p>
 	<p>
-		You step forwards, but before you can respond, [npc.name] lets out an incredibly lewd moan, [npc.speech(~Aah!~ You're so strong! Come and claim your reward!)]
+		Ты делаешь шаг вперед, но прежде чем ты успеваешь ответить, [npc.name] издает невероятно похотливый стон: [npc.speech(~Аах!~ Ты такой сильный! Иди и забери свою награду!)]
 	</p>
 	<p>
-		With that, the horny witch lies back on the altar, pulling up her dress to expose her hard demonic cock and dripping-wet pussy. She continues to moan and squirm as she presents herself, begging for you to come and use her body as you see fit.
+		С этими словами похотливая ведьма откидывается на алтаре, задирая платье, чтобы обнажить свой твердый демонический член и сочащуюся влагой киску. Она продолжает стонать и извиваться, подставляясь тебе и умоляя прийти и использовать её тело так, как тебе заблагорассудится.
 	</p>
 	<p>
-		You notice that in her haste to submit to you, she's dropped her broomstick on the floor, and you wonder if you should use this opportunity to give [npc.name] a taste of her own medicine...
+		Ты замечаешь, что в спешке подчиниться тебе она выронила свою метлу на пол, и задаешься вопросом: не стоит ли воспользоваться этой возможностью, чтобы преподать [npc.name] урок и дать ей почувствовать её же собственную силу...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="ENCOUNTER_CHAPEL_COMBAT_VICTORY_SEX"><![CDATA[
 	<p>
-		You decide against using her broomstick, and step forwards so that you're standing between [npc.namePos] legs. She lets out an excited moan as you run your [pc.hands] up the length of her soft thighs, and props herself up on her elbows as she bites her lip at you. [npc.speech(~Mmm!~ Yes! Use me however you want!)]
+		Ты решаешь не использовать метлу и делаешь шаг вперед, оказываясь прямо между ног [npc.namePos]. Она издает возбужденный стон, когда ты проводишь своим [pc.hands] вдоль её мягких бедер, и приподнимается на локтях, закусывая губу, глядя на тебя. [npc.speech(~Ммм!~ Да! Используй меня как хочешь!)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="ENCOUNTER_CHAPEL_COMBAT_VICTORY_BROOMSTICK_SEAL_SEX"><![CDATA[
 	<p>
-		As you pick up [npc.namePos] broomstick, you feel a powerful surge of arcane energy flowing into your body. Without even needing to be told, you instantly know exactly how to harness the spells within this powerful weapon. As you gain knowledge of the spell 'Witch's Seal', you realise that you have the opportunity to give [npc.name] a taste of her own medicine...
+		Когда ты берешь метлу [npc.namePos], ты чувствуешь мощный прилив арканной энергии, вливающейся в твое тело. Тебе даже не нужно объяснять — ты мгновенно понимаешь, как обуздать заклинания, заключенные в этом могущественном оружии. Постигнув заклинание «Печать ведьмы», ты осознаешь, что у тебя есть шанс преподать [npc.name] урок и дать ей почувствовать её же собственную силу...
 	</p>
 	<p>
-		Stepping towards the horny witch, you thrust out with the broomstick, channelling your energy into casting the powerful immobilising spell. A jolt of purple energy shoots out and strikes [npc.name], and as a ghostly purple pentagram flashes beneath her body, she suddenly stops moving.
+		Шагнув к похотливой ведьме, ты делаешь выпад метлой, направляя свою энергию на сотворение мощного парализующего заклинания. Разряд фиолетовой энергии вырывается и поражает [npc.name], и, когда под её телом вспыхивает призрачная фиолетовая пентаграмма, она внезапно замирает.
 	</p>
 	<p>
-		Dropping the broomstick to the floor, you step forwards between her legs and make sure that she's ok. Thankfully, as you take a closer look, you see that she's still breathing, and her eyes flick up to gaze into yours as you stand over her vulnerable form. The Witch's Seal appears to have completely immobilised her, but as you reach out and lift one of her legs, you discover that the spell still allows you to move her around.
+		Бросив метлу на пол, ты делаешь шаг вперед, вставая между её ног, чтобы убедиться, что с ней всё в порядке. К счастью, присмотревшись поближе, ты видишь, что она всё ещё дышит, а её глаза поднимаются и встречаются с твоими, пока ты возвышаешься над её беззащитным телом. Печать Ведьмы, похоже, полностью обездвижила её, но когда ты протягиваешь руку и приподнимаешь одну из её ног, выясняется, что заклинание всё же позволяет тебе перемещать её.
 	</p>
 	<p>
-		Grinning down at your new fuck-doll, you push her thighs apart to fully expose her groin, and prepare to have some fun...
+		Усмехаясь над своей новой куклой для траха, ты раздвигаешь её бёдра, полностью обнажая лобок, и готовишься повеселиться...
 	</p>
 	]]>
 	</htmlContent>
@@ -195,25 +195,25 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_COMBAT_LOSS"><![CDATA[
 	<p>
-		You stagger back against the altar, reaching one hand out to grip the hard edge as you pant from exertion. Although you gave it your best shot, you were no match for a succubus as powerful as this one, and as you use what little energy you have left to focus on keeping yourself standing, you hear the witch let out a mocking laugh.
+		Ты пошатываешься и прислоняешься спиной к алтарю, хватаясь рукой за твёрдый край и тяжело дыша от изнеможения. Хотя ты выложился на полную, тебе не сравниться с такой могущественной суккубом. И пока ты тратишь остатки своей Энергии лишь на то, чтобы просто не упасть, ты слышишь насмешливый смех ведьмы.
 	</p>
 	<p>
-		[npc.speech(Ha-ha-ha! Silly little [pc.race]!)] she sneers, stepping forwards and roughly grabbing your chin in one hand. [npc.speech(I think I'll have some fun with you!)]
+		[npc.speech(Ха-ха-ха! Глупый маленький [pc.race]!)] — фыркает она, делая шаг вперёд и грубо хватая тебя за подбородок одной рукой. [npc.speech(Думаю, с тобой я тоже немного развлекусь!)]
 	</p>
 	<p>
-		With that, she steps back, and you look up just in time to see her thrust her broomstick out towards you. A jolt of purple energy shoots out, striking you directly in the chest and causing you to fall back against the altar. You try to push yourself back up, but find that your body won't listen to your commands. You then try to let out a cry, only to find that it takes all of your energy just to utter a little whimper.
+		С этими словами она отступает, и ты успеваешь заметить, как она направляет на тебя свою метлу. Вспышка фиолетовой энергии вырывается из неё, ударяя тебе прямо в грудь и отбрасывая тебя назад, на алтарь. Ты пытаешься подняться, но обнаруживаешь, что тело больше не слушается твоих команд. Затем ты пытаешься вскрикнуть, но понимаешь, что даже на жалкий скулёж уходит вся твоя Энергия.
 	</p>
 	<p>
-		[npc.speech(How pathetic!)] [npc.name] mocks, reaching down to pull you up, before pushing you down onto the stone altar. [npc.speech(I wonder if you'll keep on mewling like that as I fuck you senseless! Try and struggle all you want, it's no use; this Witch's Seal I've cast upon you has turned you into my very own fuck-doll!)]
+		[npc.speech(Как жалко!)] — насмехается [npc.name], протягивая руку, чтобы поднять тебя, но тут же швыряет тебя обратно на каменный алтарь. [npc.speech(Интересно, будешь ли ты так же скулить, когда я оттрахаю тебя до беспамятства?! Попробуй, сопротивляйся сколько влезет, всё бесполезно; наложенная мною Печать Ведьмы превратила тебя в мою личную трах-куклу!)]
 	</p>
 	<p>
-		As she talks, the witch moves you around into position, and you find that you're totally powerless as she
+		Пока она говорит, ведьма устраивает тебя так, как ей нужно, и ты понимаешь, что совершенно беспомощен, когда она
 		#IF(pc.hasLegs())
-			 spreads your legs
+			разводит твои ноги,
 		#ELSE
-			 takes hold of your [pc.legs]
+			берет твой [pc.legs]
 		#ENDIF
-		 and steps forwards. [npc.speech(Now, let's have some fun!)]
+			и подается вперед. [npc.speech(А теперь — повеселимся!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -221,9 +221,9 @@
 	<htmlContent tag="ENCOUNTER_CHAPEL_COMBAT_LOSS_SEX"><![CDATA[
 	<p>
 		#IF(!pc.isAbleToAccessCoverableArea(CA_VAGINA, true) || !pc.isAbleToAccessCoverableArea(CA_ANUS, true))
-			You look up to see [npc.namePos] grin turn into a puzzled frown as she realises that she's not able to get access to your groin. Reaching down to your sealed clothing, she focuses her arcane energy into removing the seal. [npc.speech(There we go! Now let's both find out how much you love being my fuck-toy!)]
+			Ты поднимаешь взгляд и видишь, как ухмылка [npc.namePos] сменяется недоуменным хмурым выражением лица, когда она понимает, что не может добраться до твоего паха. Потянувшись к твоей запечатанной одежде, она направляет свою арканную энергию на то, чтобы снять печать. [npc.speech(Вот так! А теперь давай выясним, насколько сильно тебе нравится быть моей трах-игрушкой!)]
 		#ELSE
-			You look up to see a wild, hungry look in [npc.namePos] [npc.eyes+], and [npc.she] excitedly squeals, [npc.speech(Let's both find out how much you love being my fuck-toy!)]
+			Ты поднимаешь взгляд и видишь дикий, голодный блеск в [npc.namePos] [npc.eyes+], а [npc.she] возбужденно визжит: [npc.speech(Давай выясним, насколько сильно тебе нравится быть моей трах-игрушкой!)]
 		#ENDIF
 	</p>
 	]]>
@@ -234,13 +234,13 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_POST_ORAL_SEX"><![CDATA[
 	<p>
-		[npc.Name] steps back, grinning down at you as she sorts her clothing out. [npc.speech(I hope you enjoyed your gift just as much as I did in giving it to you! Now, I have some cult business to attend to, so run along!)]
+		[npc.Name] отступает, ухмыляясь тебе сверху вниз и поправляя свою одежду. [npc.speech(Надеюсь, тебе понравился твой подарок так же сильно, как и мне — дарить его! А теперь у меня есть дела культа, так что беги!)]
 	</p>
 	<p>
-		You move to do as [npc.name] says, and as soon as you've finished getting your things together, she grabs you by the arm and starts marching towards the door. You're a little taken aback at how quickly she wants to get rid of you, but before you can object, you're being pushed out of the door. [npc.speech(Come back some other time if you want another gift!)]
+		Ты поступаешь так, как велит [npc.name], и как только ты заканчиваешь собираться, она хватает тебя за руку и решительно направляется к двери. Тебя немного ошарашивает то, как быстро она хочет от тебя избавиться, но прежде чем ты успеваешь возразить, тебя уже выталкивают за дверь. [npc.speech(Заходи в другой раз, если захочешь еще один подарок!)]
 	</p>
 	<p>
-		With that, the wooden door to the chapel slams shut, leaving you to walk back out to the street with the taste of demonic cum still on your tongue...
+		С этим звуком деревянная дверь часовни с грохотом захлопывается, и ты выходишь обратно на улицу, ощущая на языке вкус демонической спермы...
 	</p>
 	]]>
 	</htmlContent>
@@ -250,13 +250,13 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_POST_VAGINAL_SEX"><![CDATA[
 	<p>
-		[npc.Name] steps back, grinning down at you as she sorts her clothing out. [npc.speech(I hope you enjoyed your gift just as much as I did in giving it to you! Now, I have some cult business to attend to, so run along!)]
+		[npc.Name] отступает, ухмыляясь тебе сверху вниз и поправляя свою одежду. [npc.speech(Надеюсь, тебе понравился твой подарок так же сильно, как и мне — дарить его! А теперь у меня есть дела культа, так что беги!)]
 	</p>
 	<p>
-		You move to do as [npc.name] says, and as soon as you've finished getting your things together, she grabs you by the arm and starts marching towards the door. You're a little taken aback at how quickly she wants to get rid of you, but before you can object, you're being pushed out of the door. [npc.speech(Come back some other time if you want another gift!)]
+		Ты поступаешь так, как велит [npc.name], и как только ты заканчиваешь собираться, она хватает тебя за руку и решительно направляется к двери. Тебя немного ошарашивает то, как быстро она хочет от тебя избавиться, но прежде чем ты успеваешь возразить, тебя уже выталкивают за дверь. [npc.speech(Заходи в другой раз, если захочешь еще один подарок!)]
 	</p>
 	<p>
-		With that, the wooden door to the chapel slams shut, leaving you to walk back out to the street with the wet feeling of demonic cum still oozing out of your [pc.pussy+]...
+		С этим звуком деревянная дверь часовни с грохотом захлопывается, и ты выходишь обратно на улицу, чувствуя, как влажная демоническая сперма всё еще вытекает из твоей [pc.pussy+]...
 	</p>
 	]]>
 	</htmlContent>
@@ -266,13 +266,13 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_POST_ANAL_SEX"><![CDATA[
 	<p>
-		[npc.Name] steps back, grinning down at you as she sorts her clothing out. [npc.speech(I hope you enjoyed your gift just as much as I did in giving it to you! Now, I have some cult business to attend to, so run along!)]
+		[npc.Name] отступает, ухмыляясь тебе сверху вниз и поправляя свою одежду. [npc.speech(Надеюсь, тебе понравился твой подарок так же сильно, как и мне — дарить его! А теперь у меня есть дела культа, так что беги!)]
 	</p>
 	<p>
-		You move to do as [npc.name] says, and as soon as you've finished getting your things together, she grabs you by the arm and starts marching towards the door. You're a little taken aback at how quickly she wants to get rid of you, but before you can object, you're being pushed out of the door. [npc.speech(Come back some other time if you want another gift!)]
+		Ты поступаешь так, как велит [npc.name], и как только ты заканчиваешь собираться, она хватает тебя за руку и решительно направляется к двери. Тебя немного ошарашивает то, как быстро она хочет от тебя избавиться, но прежде чем ты успеваешь возразить, тебя уже выталкивают за дверь. [npc.speech(Заходи в другой раз, если захочешь еще один подарок!)]
 	</p>
 	<p>
-		With that, the wooden door to the chapel slams shut, leaving you to walk back out to the street with the wet feeling of demonic cum still in your ass...
+		С этим звуком деревянная дверь часовни с грохотом захлопывается, и ты выходишь обратно на улицу, ощущая внутри влажное тепло демонической спермы...
 	</p>
 	]]>
 	</htmlContent>
@@ -282,22 +282,22 @@
 	
 	<htmlContent tag="ENCOUNTER_CHAPEL_POST_SUB_SEALED_SEX"><![CDATA[
 	<p>
-		[npc.Name] steps back, grinning down at you as she sorts her clothing out. [npc.speech(I hope you enjoyed your gift just as much as I did in giving it to you! Now, it may take a few more minutes for that spell to wear off. If only my assistant were here...)]
+		[npc.Name] отступает назад, ухмыляясь тебе сверху вниз и поправляя одежду. [npc.speech(Надеюсь, тебе понравился мой подарок так же сильно, как и мне процесс его дарения! Теперь может понадобиться еще несколько минут, чтобы это заклинание развеялось. Эх, если бы только моя помощница была здесь...)]
 	</p>
 	<p>
-		[femaleNPC.speech(Mistress, I'm back! Ooh! Who's this?)] a strange voice calls out from the doorway.
+		[femaleNPC.speech(Госпожа, я вернулась! Ооо! А это еще кто?)] — раздается странный голос из дверного проема.
 	</p>
 	<p>
-		[npc.speech(What took you so long?! You were meant to be back here half an hour ago!)] [npc.name] responds. [npc.speech(Well, nevermind! Just drag this [pc.race] out to a bench somewhere, I've finished with [pc.herHim].)]
+		[npc.speech(Ну и долго же ты возилась! Тебя должно было здесь быть еще полчаса назад!)] — отвечает [npc.name]. [npc.speech(Ну да ладно, неважно! Просто оттащи эту [pc.race] куда-нибудь на скамейку, я закончила с [pc.herHim].)]
 	</p>
 	<p>
-		[femaleNPC.speech(Yes, Mistress!)] the stranger calls out, and after just a few seconds, the black-furred face of a greater cat-girl hovers into view. [femaleNPC.speech(Aww! I missed out on all the fun!)]
+		[femaleNPC.speech(Слушаюсь, Госпожа!)] — отзывается незнакомка, и спустя всего пару секунд в поле твоего зрения появляется черноволосая мордашка крупной кошкодевочки. [femaleNPC.speech(Ооо! Я пропустила всё самое интересное!)]
 	</p>
 	<p>
-		After being shouted at once more by [npc.name], the cat-girl grabs you under the arms and drags you outside. She puffs and pants as she pulls you down the dark alleyways, but despite the sounds of exertion, it doesn't her take too long before she's brought you all the way back out to the street where you first met [npc.name]. Rather unceremoniously dumping you down onto an empty bench, the cat-girl takes one last look at you before rushing back off to the chapel.
+		Получив очередной выговор от [npc.name], кошкодевочка хватает тебя под мышки и тащит на улицу. Она тяжело дышит и пыхтит, волоча тебя по темным переулкам, но, несмотря на все усилия, она довольно быстро выводит тебя на ту самую улицу, где ты впервые встретил [npc.name]. Без лишних церемоний свалив тебя на пустую скамейку, кошкодевочка бросает на тебя последний взгляд и спешит обратно в часовню.
 	</p>
 	<p>
-		Thankfully, it only takes a couple of minutes before the spell finally wears off, and with the smell of demonic cum still in the air around you, you continue on your travels...
+		К счастью, проходит всего пара минут, прежде чем действие заклинания наконец ослабевает. И, пока в воздухе вокруг тебя всё еще витает запах демонической спермы, ты продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -308,9 +308,9 @@
 	<htmlContent tag="ENCOUNTER_CHAPEL_POST_DOM_SEX"><![CDATA[
 	<p>
 		#IF(npc.isSatisfiedFromLastSex())
-			You step back from the altar, grinning down at the witch as she lets out a deeply satisfied sigh. You quickly get your things in order, and before you turn to leave, the succubus calls out, [npc.speech(Come visit me again! Next time, I'll be the one using you!)]
+			Ты отходишь от алтаря, ухмыляясь ведьме, которая издает глубокий, удовлетворенный вздох. Ты быстро собираешь свои вещи, и прежде чем ты разворачиваешься, чтобы уйти, суккуб выкрикивает: [npc.speech(Приходи ко мне еще! В следующий раз уже я буду тебя использовать!)]
 		#ELSE
-			You step back from the altar, grinning down at the witch as she lets out a deeply frustrated moan. You quickly get your things in order, and before you turn to leave, the succubus calls out, [npc.speech(You didn't even let me get off! Next time, I'll be the one using you!)]
+			Ты отходишь от алтаря, ухмыляясь ведьме, которая издает глубокий, разочарованный стон. Ты быстро собираешь свои вещи, и прежде чем ты разворачиваешься, чтобы уйти, суккуб выкрикивает: [npc.speech(Ты даже не дал мне кончить! В следующий раз уже я буду тебя использовать!)]
 		#ENDIF
 	</p>
 	]]>
@@ -322,9 +322,9 @@
 	<htmlContent tag="ENCOUNTER_CHAPEL_POST_DOM_SEALED_SEX"><![CDATA[
 	<p>
 		#IF(npc.isSatisfiedFromLastSex())
-			You step back from the altar, grinning down at the witch as she lets out a deeply satisfied sigh. You quickly get your things in order, and before you turn to leave, the Witch's Seal starts to wear off, allowing [npc.name] to call out, [npc.speech(Come visit me again! Next time, I'll be the one using you!)]
+			Ты отходишь от алтаря, ухмыляясь ведьме, которая издает глубокий, удовлетворенный вздох. Ты быстро собираешь свои вещи, и прежде чем ты разворачиваешься, чтобы уйти, Печать Ведьмы начинает спадать, позволяя [npc.name] выкрикнуть: [npc.speech(Приходи ко мне еще! В следующий раз уже я буду тебя использовать!)]
 		#ELSE
-			You step back from the altar, grinning down at the witch as she lets out a deeply frustrated moan. You quickly get your things in order, and before you turn to leave, the Witch's Seal starts to wear off, allowing [npc.name] to call out, [npc.speech(You didn't even let me get off! Next time, I'll be the one using you!)]
+			Ты отходишь от алтаря, ухмыляясь ведьме, которая издает глубокий, разочарованный стон. Ты быстро собираешь свои вещи, и прежде чем ты разворачиваешься, чтобы уйти, Печать Ведьмы начинает спадать, позволяя [npc.name] выкрикнуть: [npc.speech(Ты даже не дал мне кончить! В следующий раз уже я буду тебя использовать!)]
 		#ENDIF
 	</p>
 	]]>

@@ -3,10 +3,10 @@
 
 	<htmlContent tag="ALLEY_FIND_PACKAGE"><![CDATA[
 	<p>
-		As you walk down yet another narrow passage, you notice a brown paper package lying innocently beside a metal bin. It looks as though it's still sealed, and even from a casual glance you can tell that it isn't any old rubbish. You can't see any signs of a trap, and the package looks to be completely abandoned, so you decide to take a closer look.
+		Когда ты идешь по очередному узкому проходу, то замечаешь на земле рядом с металлическим баком невинно лежащую сверток в коричневой бумаге. Кажется, он всё еще запечатан, и даже беглый взгляд позволяет понять, что это не просто какой-то мусор. Признаков ловушки не видно, а сам сверток выглядит совершенно заброшенным, так что ты решаешь присмотреться к нему повнимательнее.
 	</p>
 	<p>
-		You bend down to see that it's a square, medium-sized box, covered in brown packaging paper and sealed with sticky tape.  The label on the side has been smeared by some sort of liquid, leaving it totally illegible. A musky smell suddenly fills your nostrils, and you realise that the liquid is in fact sticky white cum. As you wonder what series of events led to this package being abandoned here, you notice that there's splatters of cum all over the floor and up part of the wall. There's no way to find out who the package was originally intended for, so, not wanting it to go to waste, you gingerly peel back the brown paper to reveal: 
+		Ты наклоняешься и видишь, что это квадратная коробка среднего размера, обернутая в коричневую упаковочную бумагу и заклеенная липким скотчем. Этикетка на боку размазана какой-то жидкостью, из-за чего текст стал совершенно нечитаемым. Внезапно в нос бьет мускусный запах, и ты понимаешь, что эта жидкость — на самом деле липкая белая сперма. Пока ты гадаешь, какая череда событий привела к тому, что этот сверток бросили здесь, ты замечаешь брызги кончи на полу и на части стены. Выяснить, кому предназначалась посылка, невозможно, поэтому, не желая, чтобы она пропала зря, ты осторожно разворачиваешь коричневую бумагу, чтобы увидеть:
 	</p>
 	<p style='text-align:center;'>
 		<b>[#SPECIAL_PARSE_0]</b>
@@ -16,10 +16,10 @@
 	
 	<htmlContent tag="CANAL_FIND_PACKAGE"><![CDATA[
 	<p>
-		As you continue [pc.walking] down the side of the canal, you suddenly spot a small, plastic-wrapped cardboard box floating in the water. Due to the fact that it hasn't sunk to the bottom of the canal, you realise that it must still be fully sealed, and even from a casual glance you can tell that it isn't any old rubbish. You can't see any signs of a trap, and as the package looks to be completely abandoned, you decide to fish it out of the water and take a closer look at it.
+		Когда ты продолжаешь [pc.walking] вдоль канала, то вдруг замечаешь в воде маленькую картонную коробку в пластиковой упаковке. Поскольку она не затонула на дно, ты понимаешь, что она всё еще герметично запечатана, и даже беглый взгляд позволяет понять, что это не обычный мусор. Признаков ловушки не видно, а раз коробка кажется совершенно заброшенной, ты решаешь выловить её из воды и рассмотреть поближе.
 	</p>
 	<p>
-		Pulling it up onto the shore, you bend down to see that while the plastic wrap has protected the package's contents from being water-damaged, the label fixed to the side has not been so lucky, and has been smeared to the point of being rendered totally illegible. With no sign of its owner, nor any clue as to who it was originally intended for, you decide that the best thing to do it to take it for yourself. Pulling off the plastic wrapper, you open the cardboard box to reveal: 
+		Вытащив находку на берег, ты наклоняешься и видишь, что хотя пищевая пленка и защитила содержимое от воды, наклейка сбоку ей такой удачи не улыбнулась — она размазалась настолько, что стать совершенно нечитаемой. Ни следов владельца, ни намека на то, кому это предназначалось, поэтому ты решаешь, что лучше всего будет забрать это себе. Срывая пленку, ты открываешь картонную коробку и видишь: 
 	</p>
 	<p style='text-align:center;'>
 		<b>[#SPECIAL_PARSE_0]</b>
@@ -29,13 +29,13 @@
 	
 	<htmlContent tag="HARPY_NESTS_FIND_ITEM"><![CDATA[
 	<p>
-		As you travel down the winding walkways, you suddenly catch sight of a flash of pink on the path ahead. Walking up to the splash of colour, you look down to see:
+		Пока ты идешь по извилистым дорожкам, впереди на тропе вдруг мелькает что-то розовое. Подойдя ближе к этому пятну цвета, ты смотришь вниз и видишь:
 	</p>
 	<p style='text-align:center;'>
 		<b>[#SPECIAL_PARSE_0]</b>
 	</p>
 	<p>
-		Either due to being dropped by a harpy flying overhead, or perhaps having rolled off the edge of the platform above you, the [#SPECIAL_PARSE_1] seems to be completely abandoned, with no clue as to who its original owner might be. You suppose that there'd be no harm in taking it for yourself...
+		То ли это выронила пролетавшая над головой гарпия, то ли предмет скатился с края платформы над тобой, но [#SPECIAL_PARSE_1] кажется совершенно заброшенным, и нет никаких зацепок, кто мог быть его владельцем. Ты полагаешь, что в том, чтобы забрать его себе, нет ничего плохого...
 	</p>
 	]]>
 	</htmlContent>
@@ -43,53 +43,56 @@
 	<htmlContent tag="DOMINION_STREET_FIND_HAPPINESS"><![CDATA[
 	#IF(game.getCurrentWeather()==WEATHER_MAGIC_STORM)
 		<p>
-			Making your way down the wide, deserted streets of Dominion, you make sure to keep a look-out for any sign of danger. The bright flash of purple-hued arcane lightning occasionally illuminates your surroundings, and it's just as one of these happens to strike that you spot something strange up ahead.
+			Пробираясь по широким пустынным улицам Dominion, ты стараешься не упускать из виду любую опасность. Яркие вспышки фиолетовых разрядов Арканы время от времени освещают всё вокруг, и как раз в момент очередного удара молнии ты замечаешь впереди что-то странное.
 		</p>
 		<p>
-			About [unit.lSizes(5000)] in front of you, standing alone in the middle of the road, is a small, silver-furred fox. It appears to have spotted you at the exact same moment that you saw it, and, raising its head, it turns to face in your direction.
+			Прямо перед тобой, посреди дороги, стоит маленькая лисица с серебристой шерстью. Кажется, она заметила тебя в тот самый миг, когда и ты увидел её; подняв голову, она поворачивается в твою сторону.
 		</p>
 		<p>
-			For a moment, the two of you remain motionless as you size one another up. It doesn't look as though the arcane storm is having any effect on the small animal, and, given the nature of this world, you can't help but wonder if it possesses some sort of heightened intellect, or arcane power.
+			На мгновение вы замираете, разглядывая друг друга. Похоже, аркана-шторм никак не влияет на это маленькое существо, и, учитывая природу этого мира, ты невольно задаешься вопросом: обладает ли она повышенным интеллектом или какой-то арканой силой?
 		</p>
 		<p>
-			You don't have much time to ponder this matter further, however, as the fox suddenly starts trotting towards you. It doesn't display any malice or hint of aggression in its stride, and, not one to be intimidated by such a small, cute creature, you stand your ground and wait for it to approach.
+		
+Впрочем, времени на раздумья почти не остается — лисица внезапно начинает семенить в твою сторону. В её походке нет ни капли злобы или агрессии, а поскольку тебя не так-то просто запугать столь милым созданием, ты не двигаешься с места, ожидая, пока она подойдет ближе.
 		</p>
 		<p>
-			As it gets closer, you see that its eyes are a marvellous shade of bright blue, and, kneeling down to encourage it to approach, you can't help but smile as it walks right up to you and nudges its head into your hands. Letting out a little laugh, you playfully stroke and scratch the silver fox's ears, before moving down to ruffle the soft fur around its neck. As you do so, you feel that there's a band of soft fabric around the animal's neck, and, tilting your head to take a closer look, you see that the fox is wearing a cute little collar. A round, metallic tag is attached to the front, and, tilting it to the light, you see that it reads:
+		
+Когда она подходит ближе, ты замечаешь, что её глаза имеют чудесный ярко-голубой оттенок. Ты опускаешься на колени, подманивая её, и невольно улыбаешься, когда лисица подходит вплотную и утыкается мордочкой в твои ладони. Тихо рассмеявшись, ты игриво поглаживаешь и чешешь серебристые ушки, а затем проводишь рукой по мягкой шерстке на её шее. В этот момент ты чувствуешь на шее животного полоску мягкой ткани; наклонив голову, чтобы рассмотреть получше, ты видишь, что на лисице надет милый ошейник. Спереди висит круглый металлический жетон, и, поднеся его к свету, ты читаешь на нем:
 		</p>
 		<p style='text-align:center'>
-			<i>Happiness;<br/>Please take good care of me!</i>
+			<i>Счастье;<br/>Пожалуйста, позаботься обо мне!</i>
 		</p>
 		<p>
-			After a little while of stroking and playing with the silver fox, you stand back up and get ready to carry on your way. Much to your surprise, Happiness instantly moves to follow you, and, as you continue walking down Dominion's empty streets, the fox shows no sign of leaving your side...
+			Немного погладив и поиграв с серебристой лисицей, ты выпрямляешься и готовишься продолжить свой путь. К твоему удивлению, Счастье тут же бросается следом, и пока ты идешь по пустынным улицам Dominion, лисица ни разу не подает виду, что собирается оставить тебя...
 		</p>
 		<p style='text-align:center'>
-			[style.italicsExcellent(You've found Happiness!)]
+			[style.italicsExcellent(Ты нашел Счастье!)]
 		</p>
 	#ELSE
 		<p>
-			Making your way down the bustling, ever-busy streets of Dominion, you make sure to keep a look-out for anything of interest that may cross your path. Weaving your way through the throngs of shoppers and passersby, you suddenly spot something strange through a gap in the crowds up ahead.
+			Пробираясь по шумным, вечно оживленным улицам Dominion, ты стараешься высматривать что-нибудь интересное на своем пути. Прокладывая путь сквозь толпы покупателей и прохожих, ты вдруг замечаешь в просвете между людьми впереди нечто странное.
 		</p>
 		<p>
-			About [unit.lSizes(5000)] in front of you, standing alone in the middle of the road, is a small, silver-furred fox. It appears to have spotted you at the exact same moment that you saw it, and, raising its head, it turns to face in your direction.
+			Прямо перед тобой, посреди дороги, стоит маленькая лисица с серебристой шерстью. Кажется, она заметила тебя в тот самый миг, когда и ты увидел её; подняв голову, она поворачивается в твою сторону.
 		</p>
 		<p>
-			For a moment, the two of you remain motionless as you size one another up. It doesn't look as though the small animal is in any way perturbed by the people hurrying all around it, and, given the nature of this world, you can't help but wonder if it possesses some sort of heightened intellect, or arcane power.
+			На мгновение вы оба замираете, разглядывая друг друга. Похоже, маленькое животное ничуть не беспокоит суета людей вокруг, и, учитывая природу этого мира, ты невольно задаешься вопросом: не обладает ли оно повышенным интеллектом или силой Арканы?
 		</p>
 		<p>
-			You don't have much time to ponder this matter, however, as the fox suddenly starts trotting towards you. It doesn't display any malice or hint of aggression in its stride, and, not one to be intimidated by such a small, cute creature, you stand your ground and wait for it to approach.
+			Впрочем, времени на раздумья почти нет — лисица вдруг начинает семенить прямо к тебе. В её походке нет ни капли злобы или агрессии, а поскольку тебя не так-то просто запугать столь милым существом, ты замираешь на месте и ждешь, пока она подойдет ближе.
 		</p>
 		<p>
-			As it gets closer, you see that its eyes are a marvellous shade of bright blue, and, kneeling down to encourage it to approach, you can't help but smile as it walks right up to you and nudges its head into your hands. Letting out a little laugh, you playfully stroke and scratch the silver fox's ears, before moving down to ruffle the soft fur around its neck. As you do so, you feel that there's a band of soft fabric around the animal's neck, and, tilting your head to take a closer look, you see that the fox is wearing a cute little collar. A round, metallic tag is attached to the front, and, tilting it to the light, you see that it reads:
+		
+Когда она подходит ближе, ты замечаешь, что её глаза имеют чудесный ярко-голубой оттенок. Ты опускаешься на колени, подманивая её, и невольно улыбаешься, когда лисица подходит вплотную и утыкается мордочкой в твои ладони. Тихо рассмеявшись, ты игриво поглаживаешь и чешешь серебристые ушки, а затем проводишь рукой по мягкой шерстке на её шее. В этот момент ты чувствуешь на шее животного полоску мягкой ткани; наклонив голову, чтобы рассмотреть получше, ты видишь, что на лисице надет милый ошейник. Спереди висит круглый металлический жетон, и, поднеся его к свету, ты читаешь на нем:
 		</p>
 		<p style='text-align:center'>
-			<i>Happiness;<br/>Please take good care of me!</i>
+			<i>Счастье;<br/>Пожалуйста, позаботься обо мне!</i>
 		</p>
 		<p>
-			After a little while of stroking and playing with the silver fox, you stand back up and get ready to carry on your way. Much to your surprise, Happiness instantly moves to follow you, and, as you continue walking down Dominion's bustling streets, the fox shows no sign of leaving your side...
+			Немного погладив и поиграв с серебристой лисицей, ты выпрямляешься и готовишься продолжить свой путь. К твоему удивлению, Счастье тут же устремляется за тобой, и, пока ты идешь по оживленным улицам Dominion, лисица и не думает покидать твою сторону...
 		</p>
 		<p style='text-align:center'>
-			[style.italicsExcellent(You've found Happiness!)]
+			[style.italicsExcellent(Ты нашел Счастье!)]
 		</p>
 	#ENDIF
 	]]>
@@ -97,51 +100,51 @@
 	
 	<htmlContent tag="DOMINION_STREET_PILL_HANDOUT_MOTHER"><![CDATA[
 	<p>
-		As you walk down Dominion's wide boulevard, an exceptionally happy-looking [#SPECIAL_PARSE_0] bounces up in front of you, blocking your way. After taking note of the fact that she looks to be having the time of her life, you observe that she has a large, rounded tummy, and is quite clearly heavily pregnant. Before you can ask her to move aside, she exclaims, in a voice just as bubbly and enthusiastic as you'd imagine, [genericFemale.speech(Isn't Mother's week just the most wonderful time of year?! I'm already expecting [#SPECIAL_PARSE_1]! I couldn't be happier!)]
+		Когда ты идешь по широкому бульвару Dominion, перед тобой, преграждая путь, выпрыгивает необычайно счастливая [#SPECIAL_PARSE_0]. Заметив, что она, похоже, наслаждается жизнью на полную катушку, ты замечаешь у нее большой округлый живот — она явно на позднем сроке беременности. Прежде чем ты успеваешь попросить ее отойти, она восклицает голосом, таким же звонким и восторженным, каким ты и представлял: [genericFemale.speech(Разве неделя Матери — это не самое чудесное время в году?! Я уже жду [#SPECIAL_PARSE_1]! Счастью моему нет предела!)]
 	</p>
 	<p>
-		With this unsolicited information now having been delivered to you, the [#SPECIAL_PARSE_0] reaches into the wicker basket which she's carrying, before grabbing a handful of little purple pills and forcefully thrusting them into your [pc.hands].
+		Выложив эту непрошеную информацию, [#SPECIAL_PARSE_0] лезет в свою плетеную корзинку, хватает горсть маленьких фиолетовых таблеток и с силой впихивает их тебе в [pc.hands].
 		#IF(pc.isFeminine())
 			#IF(pc.isVisiblyPregnant())
-			 [genericFemale.speech(Already got a bun or two in the oven, I see! Well, once you've got them popped out, you can use these pills to make sure that you'll quickly get knocked up again!)]
+			 [genericFemale.speech(Вижу, у тебя уже пара булочек в печке! Ну, как только они выскочат, можешь использовать эти таблетки, чтобы поскорее забеременеть снова!)]
 			#ELSE
-			 [genericFemale.speech(Here you go, hun! Pop one of these, and give one to the next stud who fucks you, and you're sure to become a mommy!)]
+			 [genericFemale.speech(Держи, дорогуша! Глотни одну, а следующему кобелю, что тебя оттрахает, дай еще одну — и ты точно станешь мамочкой!)]
 			#ENDIF
 		#ELSE
-			 [genericFemale.speech(Here you go, stud! Get your next fuck to swallow one of these, and you do the same, and you're sure to make her into a mommy!)]
+			 [genericFemale.speech(Вот, держи, самец! Заставь своего следующего трахальщика проглотить одну из этих, сделай то же самое, и ты точно сделаешь из неё мамочку!)]
 		#ENDIF
 	</p>
 	<p>
-		Before you can reply, the excitable [#SPECIAL_PARSE_0] suddenly catches sight of her next target, and as she darts away into the crowd, she calls out, [genericFemale.speech(There's no charge for the pills! Just make sure to use them!)]
+		Прежде чем ты успеваешь ответить, возбужденная [#SPECIAL_PARSE_0] внезапно замечает свою следующую цель и, нырнув в толпу, выкрикивает: [genericFemale.speech(За таблетки платить не нужно! Главное — не забывай их принимать!)]
 	</p>
 	<p>
-		With nothing to be done except pocketing the pills for another time, you continue on your way...
+		Поскольку остается только припрятать таблетки на потом, ты продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOMINION_STREET_PILL_HANDOUT_FATHER"><![CDATA[
 	<p>
-		As you walk down Dominion's wide boulevard, a tall, handsome [#SPECIAL_PARSE_0] suddenly steps up in front of you, blocking your way. Before you can ask him to step aside, he grins, and in a deep, booming voice, declares, [genericMale.speech(Father's week is the best time of year, isn't it?! I've already knocked up a dozen or so mothers-to-be!)]
+		Пока ты идешь по широкому бульвару Dominion, высокий красавец [#SPECIAL_PARSE_0] внезапно преграждает тебе путь. Прежде чем ты успеваешь попросить его отойти, он ухмыляется и густым, громовым голосом заявляет: [genericMale.speech(Неделя Отца — лучшее время года, а?! Я уже успел оплодотворить с десяток будущих мамочек!)]
 	</p>
 	<p>
-		With this unsolicited information now having been delivered to you, the [#SPECIAL_PARSE_0] reaches into the bum bag which he's got strapped around his waist, before grabbing a handful of little purple pills and forcefully thrusting them into your [pc.hands].
+		Выслушав эту ненужную информацию, [#SPECIAL_PARSE_0] лезет в поясную сумку, хватает горсть маленьких фиолетовых таблеток и с силой впихивает их тебе в [pc.hands].
 		#IF(pc.isFeminine())
 			#IF(pc.isCoverableAreaExposed(CA_PENIS) && pc.hasPenisIgnoreDildo())
-			 [genericMale.speech(Here you go, babe! I see you're packing, so just pop one of these before you give your next fuck a nice big creampie, and you're sure to become a father!)]
+			 [genericMale.speech(Вот, держи, крошка! Вижу, ты не промах, так что просто закинь одну из этих перед тем, как устроить своему следующему трахальщику сочный кулак спермой, и ты точно станешь отцом!)]
 			#ELSE
-			 [genericMale.speech(Here you go, babe! Just get your next fuck to pop one of these before he gives you a creampie, and you're sure to make him a father!
-				 I'd take the time to knock up you up myself, but I've got these pills to hand out!)]
+			 [genericMale.speech(Вот, держи, крошка! Просто заставь своего следующего трахальщика проглотить одну из этих перед тем, как он зальет тебе побольше спермы, и ты точно сделаешь из него папашу!
+				 Я бы и сам нашел время, чтобы оплодотворить тебя, но мне еще нужно раздать эти таблетки!)]
 			#ENDIF
 		#ELSE
-			 [genericMale.speech(Here you go, stud! Just pop one of these before you give your next fuck a nice big creampie, and you're sure to become a father!)]
+			 [genericMale.speech(Вот, держи, красавчик! Просто закинь одну перед тем, как устроить очередной мощный залив, и уж точно станешь папашей!)]
 		#ENDIF
 	</p>
 	<p>
-		Before you can reply, the boisterous [#SPECIAL_PARSE_0] suddenly catches sight of his next target, and as he strides away into the crowd, he calls out, [genericMale.speech(There's no charge for the pills! Just make sure to use them!)]
+		Прежде чем ты успеваешь ответить, шумный [#SPECIAL_PARSE_0] внезапно замечает свою следующую цель и, уходя в толпу размашистым шагом, выкрикивает: [genericMale.speech(Таблетки — бесплатно! Главное — не забывай их принимать!)]
 	</p>
 	<p>
-		With nothing to be done except pocketing the pills for another time, you continue on your way...
+		Поскольку остается только припрятать таблетки на потом, ты продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
