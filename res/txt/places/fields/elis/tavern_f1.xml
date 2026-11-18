@@ -5,37 +5,37 @@
 	
 	<htmlContent tag="CORRIDOR"><![CDATA[
 	<p>
-		The corridor which you find yourself travelling down connects all of the rooms of the tavern's first floor. Pictures similar to the ones found downstairs line the walls, and invariably portray some form of idyllic pastoral scene. The wall-mounted arcane lamps cast this area in a pale yellow glow, and you end up making the old, wooden floorboards creak as you [pc.walk] over them on your way forwards... 
+		Коридор, по которому ты идешь, соединяет все комнаты на первом этаже таверны. Стены украшены картинами, похожими на те, что висели внизу: на них неизменно изображены идиллические пасторальные пейзажи. Настенные арканные лампы заливают всё вокруг бледным желтоватым светом, и под твоими ногами то и дело скрипят старые деревянные половицы, когда ты [pc.walk] по ним вперед...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_GENERIC"><![CDATA[
 	<p>
-		The old wooden door before you leads into one of the many rooms which are rented out to lodgers, and is currently firmly shut. A sign slotted into a brass bracket displays the word 'Occupied', and you think you can hear the sounds of someone moving around within.
+		Старая деревянная дверь перед тобой ведет в одну из множества комнат, сдаваемых постояльцам; сейчас она плотно закрыта. В латунном держателе вставлена табличка с надписью «Занято», и тебе кажется, что изнутри доносятся звуки чьих-то шагов.
 	</p>
 	<p>
-		As you have no business with the room's occupant, there's little else for you to do except turn around and continue on your way down the corridor...
+		Поскольку у тебя нет дел с обитателем этой комнаты, тебе остается лишь развернуться и продолжить путь по коридору...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_MERAXIS"><![CDATA[
 	<p>
-		Even if you didn't already know that the door before you leads to Meraxis's room, you could very easily deduce it from the words on the metal sign that's been nailed into its surface.
+		Даже если бы ты не знал, что дверь перед тобой ведет в комнату Мераксиса, это можно было легко понять по словам на металлической табличке, прибитой к её поверхности.
 		#IF(pc.hasTraitActivated(PERK_CHUUNI))
-			 Smiling to yourself as you see her impressive title, you read:
+			 Улыбаясь про себя при виде её впечатляющего титула, ты читаешь:
 		#ELSE
-			 Letting out a despairing sigh as you see her ridiculous title, you read:
+			 Издавая отчаянный вздох при виде её нелепого титула, ты читаешь:
 		#ENDIF
-		 <i>'This is the lair of The Dark Siren! Only the brave or foolish dare to disturb my slumber! Mwhahaha!'</i>
+	 <i>«Это логово Темной Сирены! Только храбрецы или глупцы осмелятся потревожить мой сон! Мва-ха-ха!»</i>
 	</p>
 	<p>
-		Wondering whether she dictated the words of this sign to someone else, or actually wrote herself laughing at the bottom, you listen for any sound of movement coming from inside
+		Задаваясь вопросом, продиктовала ли она слова для этой таблички кому-то другому или же сама написала их, заливаясь смехом в самом низу, ты прислушиваешься, не доносится ли изнутри какой-нибудь звук.
 		#IF(game.getCharactersPresent().contains(meraxis))
-			 and hear the chuuni [meraxis.race] loudly snoring. As she previously told you not to disturb her sleep unless there's an emergency, you decide that it's best to turn around and head back the way you came...
+			 и слышишь, как громко храпит [meraxis.race]. Поскольку она уже говорила тебе не беспокоить её сон без крайней необходимости, ты решаешь, что лучше всего развернуться и вернуться тем же путем, которым пришел...
 		#ELSE
-			 but don't hear a thing. If you wanted to speak with Meraxis, it looks like you'll have to head back the way you came and search for her at her usual spot downstairs...
+			 но не слышишь ни звука. Похоже, если ты хочешь поговорить с Meraxis, придется вернуться назад и поискать её на её привычном месте внизу...
 		#ENDIF
 	</p>
 	]]>
@@ -45,80 +45,81 @@
 	
 	<htmlContent tag="ROOM_PLAYER"><![CDATA[
 	<p>
-		While not as large as the one back in Lilaya's mansion, your room here in The Red Dragon is nevertheless impressively spacious. Although it houses a double-size bed, a smart wardrobe and dresser, and a couple of comfortable chairs, there's plenty of space left over for you to [pc.walk] around in. Doing just that, you [pc.step] forwards over the dark wooden floorboards and onto the rug that's positioned at the end of your bed. Looking around at the cream-coloured walls and dark wooden beams that hold up the high ceiling, you find yourself thinking that although it's smaller than the one you've become accustomed to in Dominion, your room here has a very relaxing, cosy feel to it.
+		Хотя твоя комната здесь, в «Рыжем драконе», и не такая огромная, как в особняке Lilaya, она всё равно впечатляюще просторна. Несмотря на то, что в ней есть двуспальная кровать, умный Гардероб и комод, а также пара удобных кресел, здесь остается предостаточно места, чтобы [pc.walk].
+	Сделав именно это, ты [pc.step] вперед по темным деревянным половицам к ковру, лежащему у подножия твоей кровати. Оглядывая кремовые стены и темные деревянные балки, поддерживающие высокий потолок, ты ловишь себя на мысли, что, хотя комната и меньше той, к которой ты привык в Dominion, здесь царит очень расслабляющая и уютная атмосфера.
 	</p>
 	<p>
-		Heading over to the far side of the room, you're able to look out of the leaded, bay windows and see a good portion of the streets of Elis down below.
+		Пройдя в дальнюю часть комнаты, ты подходишь к свинцовым эркерным окнам, через которые можно рассмотреть добрую часть улиц Элиса внизу.
 		#IF(game.isDayTime())
-			 Thanks to the time of day, there are quite a lot of people out and about, and you spend a minute or two simply watching the residents of this town travelling about on their business.
+			 Благодаря времени суток, на улице довольно много людей, и ты проводишь пару минут, просто наблюдая за тем, как жители города спешат по своим делам.
 		#ELSE
-			 Thanks to the time of night, the arcane street lamps are all turned on and casting a pale yellow light over the quiet road.
+			 Благодаря позднему времени, все аркана-фонари зажжены, заливая тихую дорогу бледным желтым светом.
 		#ENDIF
 	</p>
 	<p>
-		Turning back to face your room, you look over at the door to your ensuite. Having been left open, you're able to look inside and see not only your porcelain bath and shower, but also your arcane-powered washing machine. The promotional sticker has been left on the side of this machine, and promises to remove all stains and have even the dirtiest items of clothing dry and ready to wear in under ten minutes.
+		Развернувшись к комнате, ты бросаешь взгляд на дверь в собственную ванную. Она осталась приоткрытой, так что ты видишь не только фарфоровую ванну и душ, но и стиральную машину на магической тяге. На боку машины красуется рекламная наклейка, обещающая вывести любые пятна и высушить даже самую грязную одежду всего за десять минут.
 	</p>
 	<p>
-		Letting out a relaxed sigh, you wonder whether to spend some time resting in here, or perhaps to make use of the washing facilities available to you...
+		Расслабленно вздохнув, ты раздумываешь: то ли провести здесь время, отдыхая, то ли воспользоваться стиральной машиной...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_PLAYER_REST"><![CDATA[
 	<p>
-		Feeling a little worn down and tired from all of your recent activities, you draw your curtains before collapsing down onto your bed and setting your phone's alarm. Closing your eyes, you then let out a deep sigh, and with the feeling of being safe and comfortable here in The Red Dragon, you soon drift off to sleep, thinking about all the things that have happened to you recently...
+		Чувствуя себя измотанной и уставшей после всех недавних событий, ты задергиваешь шторы, прежде чем рухнуть на кровать и завести будильник на телефоне. Закрыв глаза, ты глубоко вздыхаешь, и, ощущая себя в полной безопасности и комфорте здесь, в «Рыжем драконе», ты вскоре погружаешься в сон, прокручивая в голове всё то, что случилось с тобой за последнее время...
 	</p>
 	<p>
-		<i>Beep-beep... beep-beep... bee-</i>
+		<i>Бип-бип... бип-бип... би-</i>
 	</p>
 	<p>
-		Rolling over, you fumble for your phone, turning off the alarm before sinking back onto your bed with a sigh. As comfortable as you are, you decide that you'd better get out of bed, and so after a minute of lying beneath the covers, you do just that. Opening the curtains, you set about gathering your things, and then with one final stretch, you get ready to set out once more...
+		Перевернувшись на бок, ты нащупываешь телефон и выключаешь будильник, после чего со вздохом снова откидываешься на подушки. Несмотря на уют, ты понимаешь, что пора вставать, и после минуты ленивого ворочанья под одеялом всё же решаешься на это. Раздвинув шторы, ты начинаешь собирать вещи и, напоследок сладко потянувшись, готовишься к новому выходу в свет...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_PLAYER_FAST_TRAVEL_ENTRANCE"><![CDATA[
 	<p>
-		Wanting to head up to your room, you cross the tavern floor and make your way to the staircase at the rear of the building. Heading up to the first floor, you proceed directly to your room, and consequently soon find yourself [pc.stepping] into it...
+		Желая подняться в свою комнату, ты пересекаешь зал таверны и направляешься к лестнице в задней части здания. Поднявшись на первый этаж, ты идешь прямиком к своей комнате и вскоре оказываешься [pc.stepping] в ней...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_PLAYER_SHOWER_QUICK"><![CDATA[
 	<p>
-		Wanting to clean yourself, but not spend too much time doing so, you [pc.step] into your ensuite bathroom and decide upon taking a quick shower. Disrobing, you put your clothing into the arcane washing machine, before stepping over to your basic-yet-functional shower.
+		Желая привести себя в порядок, но не тратя на это слишком много времени, ты [pc.step] в свою личную ванную и решаешь быстро принять душ. Раздевшись, ты закидываешь одежду в арканную стиральную машину, после чего подходишь к своему простому, но вполне функциональному душу.
 	</p>
 	<p>
-		Turning on the tap, you let out a relaxed sigh as you feel the warm water flowing down over your naked body. Not wanting to spend too much time in the shower, you focus on quickly cleaning yourself.
+		Открыв кран, ты расслабленно вздыхаешь, чувствуя, как теплые струи воды стекают по твоему обнаженному телу. Не желая задерживаться в душе надолго, ты сосредоточенно и быстро смываешь с себя грязь.
 	</p>
 	<p>
-		After a short while spent cleaning your body under the flowing water, you feel as though you've spent enough time in the shower, and so turn off the tap and dry yourself with a fluffy towel. Retrieving your now-clean clothing from the arcane washing machine, you get dressed and [pc.step] back into your room...
+		Проведя некоторое время под струями воды, ты чувствуешь, что уже достаточно освежился, поэтому выключаешь кран и вытираешься пушистым полотенцем. Достав чистую одежду из арканной стиральной машины, ты одеваешься и [pc.step] обратно в свою комнату...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_PLAYER_SHOWER"><![CDATA[
 	<p>
-		Wanting to clean yourself, you [pc.step] into your ensuite bathroom and decide upon taking a shower. Disrobing, you put your clothing into the arcane washing machine, before stepping over to your basic-yet-functional shower.
+		Желая освежиться, ты [pc.step] в свою личную ванную и решаешь принять душ. Раздевшись, ты закидываешь одежду в арканную стиральную машину, после чего подходишь к своему простому, но вполне функциональному душу.
 	</p>
 	<p>
-		Turning on the tap, you let out a relaxed sigh as you feel the warm water flowing down over your naked body. Deciding that it wouldn't be so bad to take some time out in order to relax, you don't rush as you set about thoroughly cleaning yourself.
+		Открыв кран, ты расслабленно вздыхаешь, чувствуя, как теплые струи воды стекают по твоему обнаженному телу. Решив, что не будет лишним немного отдохнуть, ты не спешишь и тщательно отмываешься.
 	</p>
 	<p>
-		After a while spent cleaning your body under the flowing water, you feel as though you've spent enough time in the shower, and so turn off the tap and dry yourself with a fluffy towel. Retrieving your now-clean clothing from the arcane washing machine, you get dressed and [pc.step] back into your room...
+		Проведя некоторое время под струями воды, ты чувствуешь, что с душем уже хватит, поэтому закрываешь кран и вытираешься пушистым полотенцем. Достав чистую одежду из арканной стиральной машины, ты одеваешься и [pc.step] обратно в свою комнату...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_PLAYER_BATH"><![CDATA[
 	<p>
-		Wanting to spend some time relaxing and getting cleaned, you [pc.step] into your ensuite bathroom and decide upon taking a long bath. Disrobing, you put your clothing into the arcane washing machine, before stepping over to your basic-yet-functional bathtub.
+		Желая немного расслабиться и привести себя в порядок, ты [pc.step] в свою ванную комнату и решаешь принять долгую ванну. Раздевшись, ты закидываешь одежду в арканную стиральную машину, а затем подходишь к своей простой, но вполне функциональной ванне.
 	</p>
 	<p>
-		Turning on the taps and running yourself a bath, you slip down into the hot water and let out a contented sigh. Deciding that it wouldn't be so bad to take some time out in order to relax, you don't rush as you set about thoroughly cleaning yourself...
+		Открыв краны и набрав ванну, ты погружаешься в горячую воду и удовлетворенно вздыхаешь. Решив, что не помешает немного времени посвятить отдыху, ты не спешишь и начинаешь тщательно отмываться...
 	</p>
 	<p>
-		After a while spent cleaning your body and relaxing in the water, you feel as though you've spent enough time in the bath, and so after pulling the plug you [pc.step] out of the tub and dry yourself off with a fluffy towel. Retrieving your now-clean clothing from the arcane washing machine, you get dressed and [pc.step] back into your room...
+		Проведя какое-то время, отмываясь и расслабляясь в воде, ты понимаешь, что с ванной уже хватит, поэтому, вытащив пробку, ты [pc.step] из ванны и вытираешься пушистым полотенцем. Достав чистую одежду из арканной стиральной машины, ты одеваешься и [pc.step] обратно в свою комнату...
 	</p>
 	]]>
 	</htmlContent>
@@ -126,32 +127,31 @@
 	
 	<htmlContent tag="ROOM_OWNER"><![CDATA[
 	<p>
-		The wooden door before you is tightly shut, and hanging from a nail hammered into its surface, there's a sign which reads: 'Flash's Room. Do not disturb unless in case of emergency.'
+		Деревянная дверь перед тобой плотно закрыта, а на вбитом в неё гвозде висит табличка: «Комната Флэша. Не беспокоить, если нет чрезвычайной ситуации».
 	</p>
 	<p>
-		As there's no emergency,
+		Поскольку никакой чрезвычайной ситуации нет,
 		#IF(!game.getCharactersPresent().contains(flash))
-			 and as Flash is currently downstairs working at the bar,
+			 а Флэш сейчас внизу работает за барной стойкой,
 		#ENDIF
-		 there's nothing to be gained from knocking on the door. Instead, all that's left for you to do is turn around and continue on your way down the corridor...
+стучаться в дверь всё равно бесполезно. Остаётся только развернуться и [style.bold(продолжить)] свой путь по коридору...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROOM_SEX"><![CDATA[
 	<p>
-		You find yourself standing before the only door in the corridor that's not in its original state. Not only is it painted a light shade of pink, but someone, who you assume to be Jess, has used white paint to write in flowery, feminine handwriting on the surface: 'Jess's Room. Please do not disturb! See me downstairs if you want something! xxx'
+		Ты стоишь перед единственной дверью в коридоре, которая выглядит не так, как остальные. Она не только выкрашена в нежно-розовый цвет, но и кто-то (судя по всему, Джесс) вывел на ней белой краской изящным женским почерком: «Комната Джесс. Пожалуйста, не беспокоить! Если что-то нужно — заходите ко мне вниз! xxx»
 	</p>
 	<p>
 		#IF(game.getCharactersPresent().contains(jess))
-			Although the door seems to have been reseated so as to form a tight seal around its frame, you can still see some light escaping through its narrow keyhole, letting you know that Jess must be inside.
+			Хотя дверь, кажется, плотно прилегает к косяку, сквозь узкую замочную скважину всё же пробивается слабый свет, давая понять, что Джесс наверняка внутри.
 			#IF(game.getNonCompanionCharactersPresent().size()>1)
-				 The need for the door's tight seal is made clear as you spend a moment standing in front of it; Jess's high-pitched moaning and the creaking of her bed can be quite clearly be heard from through the keyhole, and if the door was as poorly-fitting as the others in the corridor, you imagine that none of the lodgers would be able to get any peace while Jess was working.
+				Пока ты стоишь перед дверью, становится ясно, почему она должна сидеть так плотно: сквозь замочную скважину отчетливо слышны высокие стоны Джесс и скрип её кровати. Если бы эта дверь прилегала так же неплотно, как остальные в коридоре, жильцы вряд ли смогли бы найти покой, пока Джесс «работает».
 			#ELSE
-				 Honouring her written request to not be disturbed, you [pc.step] away from Jess's door and prepare to continue on your way down the corridor...
-			#ENDIF
+Уважая её просьбу не беспокоить её, ты [pc.step] от двери Джесс и готовишься продолжить свой путь по коридору...			#ENDIF
 		#ELSE
-			Although the door seems to have been reseated so as to form a tight seal around its frame, you can still see that there's no light escaping through its narrow keyhole, letting you know that Jess isn't currently in her room. With nothing to be gained from standing here any longer, you quickly turn away from the door and prepare to continue on your way down the corridor...
+			Хотя кажется, что дверь плотно приглушили к косяку, сквозь узкую замочную скважину всё равно не пробивается ни лучика света — это верный знак того, что Джесс сейчас нет в своей комнате. Понимая, что стоять здесь дольше бессмысленно, ты быстро отворачиваешься от двери и готовишься продолжить путь по коридору...
 		#ENDIF
 	</p>
 	]]>
@@ -159,31 +159,30 @@
 	
 	<htmlContent tag="ROOM_SEX_PEEPING_JESS_FUCKED"><![CDATA[
 	<p>
-		Wanting to see what's happening inside Jess's room, you look around to make sure that nobody's watching before putting your [pc.eye(true)] to the keyhole and looking inside. Although you're only able to see a limited angle of the room, the double-bed on which the action is happening is directly in your field of vision, and you find yourself unable to look away as you watch
+		Желая узнать, что же происходит в комнате Джесс, ты оглядываешься по сторонам, чтобы убедиться, что никто не наблюдает, а затем прижимаешь свой [pc.eye(true)] к замочной скважине. И хотя тебе виден лишь ограниченный угол комнаты, двуспальная кровать, на которой разворачивается действие, находится прямо перед глазами, и ты ловишь себя на том, что не можешь оторвать взгляд, наблюдая за происходящим.
 		#IF(flags.hasFlag(FLAG_innoxia_elis_jess_introduced))
-			 Jess
+			Джесс
 		#ELSE
-			 a very pretty fox-girl, who you assume to be Jess,
+			очень симпатичная лисица, которая, как ты понимаешь, и есть Джесс,
 		#ENDIF
-		 submitting to [ncom.a_feminine] [ncom.race].
+		покорно принимает [ncom.a_feminine] [ncom.race].
 	</p>
 	<p>
 		#IF(ncom.getFetishDesire(FETISH_ANAL_GIVING).isPositive() || ncom.getFetishDesire(FETISH_DOMINANT).isPositive())
-			Jess is facing away from you as she kneels down on all fours on her bed, while the [ncom.race] has dropped down behind her. Thanks to their position, you can quite clearly see
+			Джесс стоит перед тобой спиной, стоя на четвереньках на своей кровати, в то время как [ncom.race] опустился позади неё. Благодаря такому положению ты можешь отчетливо видеть,
 		#ELSE
-			Jess is facing away from you as she lies back on her bed, while the [ncom.race] has dropped down between her legs. Thanks to their missionary position, you can quite clearly see
+			Джесс лежит на кровати спиной к тебе, а [ncom.race] расположился между её ног. Благодаря их позе миссионера ты можешь отчетливо видеть,
 		#ENDIF
 		#IF(ncom.getFetishDesire(FETISH_ANAL_GIVING).isPositive())
-			 that the [ncom.race] has [ncom.her] [ncom.cock+] hilted deep in Jess's ass. With [ncom.a_moan+], the [ncom.race] pulls back, before starting to repeatedly thrust [ncom.her] [ncom.cock+] in and out of Jess's [jess.asshole+].
+			что [ncom.race] [ncom.her] [ncom.cock+] глубоко вошел в задницу Джесс. С помощью [ncom.a_moan+], [ncom.race] оттягивается назад, а затем начинает ритмично вгонять и выгонять [ncom.her] [ncom.cock+] в [jess.asshole+] Джесс.
 		#ELSE
-			 that the [ncom.race] has [ncom.her] [ncom.cock+] hilted deep in Jess's wet pussy, which is leaking a slimy mixture of girlcum and precum all over her duvet. With [ncom.a_moan+], the [ncom.race] pulls back, before starting to repeatedly thrust [ncom.her] [ncom.cock+] in and out of Jess's [jess.pussy+].
-		#ENDIF
+[ncom.race] глубоко вошёл в мокрую киску Джесс, и [ncom.her] [ncom.cock+] застрял там по самую рукоять, пока её щелка сочится склизкой смесью девичьей смазки и предэякулята прямо на одеяло. С [ncom.a_moan+] [ncom.race] оттягивается назад, а затем начинает ритмично вгонять и выгонять [ncom.her] [ncom.cock+] в [jess.pussy+] Джесс.		#ENDIF
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_elis_jess_introduced))
-			As Jess continues to be fucked by her client on her bed, you wonder whether you should continue enjoying the show, or stop watching and leave them to it...
+			Пока клиент продолжает трахать Джесс прямо на её кровати, ты гадаешь: стоит ли тебе и дальше наслаждаться зрелищем, или лучше перестать смотреть и оставить их наедине...
 		#ELSE
-			As the fox-girl continues to be fucked by her partner on the bed, you wonder whether you should continue enjoying the show, or stop watching and leave them to it...
+			Пока партнер продолжает трахать лисичку на кровати, ты гадаешь: стоит ли тебе и дальше наслаждаться зрелищем, или лучше перестать смотреть и оставить их наедине...
 		#ENDIF
 	</p>
 	]]>
@@ -191,22 +190,22 @@
 	
 	<htmlContent tag="ROOM_SEX_PEEPING_JESS_SCISSOR"><![CDATA[
 	<p>
-		Wanting to see what's happening inside Jess's room, you look around to make sure that nobody's watching before putting your [pc.eye(true)] to the keyhole and looking inside. Although you're only able to see a limited angle of the room, the double-bed on which the action is happening is directly in your field of vision, and you find yourself unable to look away as you watch
+		Желая узнать, что же происходит в комнате Джесс, ты оглядываешься по сторонам, чтобы убедиться, что никто не наблюдает, а затем прижимаешь свой [pc.eye(true)] к замочной скважине. И хотя тебе виден лишь ограниченный угол комнаты, двуспальная кровать, на которой разворачивается действие, находится прямо перед глазами, и ты ловишь себя на том, что не можешь оторвать взгляд, наблюдая за происходящим.
 		#IF(flags.hasFlag(FLAG_innoxia_elis_jess_introduced))
-			 Jess
+			Джесс
 		#ELSE
-			 a very pretty fox-girl, who you assume to be Jess,
+			очень симпатичная лисица, которая, как ты понимаешь, и есть Джесс,
 		#ENDIF
-		 dominating [ncom.a_feminine] [ncom.race].
+		 доминируя над [ncom.a_feminine] [ncom.race].
 	</p>
 	<p>
-		The [ncom.race] is facing away from you as [ncom.she] lies back on the bed, while Jess has dropped down over the top of [ncom.herHim] so as to straddle [ncom.her] groin. Thanks to their scissoring position, you can quite clearly see that Jess is rubbing her clit up and down over the [ncom.race]'s [ncom.pussy+]. A slimy mixture of girlcum is drooling down all over Jess's duvet, and as you continue to watch, she lets out [jess.a_moan+] and starts to desperately grind her [jess.pussy+] up and down against the [ncom.race]'s clit.
+		[ncom.race] стоит к тебе спиной, пока [ncom.she] откидывается на кровать, а Джесс оседлала [ncom.herHim], расположившись прямо над [ncom.her] пахом. Благодаря их позе «ножницы», ты отчетливо видишь, как Джесс трется клитором о [ncom.race] [ncom.pussy+]. Сквозь одеяло просачивается липкая смесь из девичьей смазки, и пока ты продолжаешь наблюдать, она издает [jess.a_moan+] и начинает отчаянно тереться своей [jess.pussy+] о клитор [ncom.race].
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_elis_jess_introduced))
-			As Jess continues to dominate her client on her bed, you wonder whether you should continue enjoying the show, or stop watching and leave them to it...
+			Пока Джесс продолжает доминировать над своим клиентом на кровати, ты гадаешь: стоит ли тебе и дальше наслаждаться зрелищем, или лучше перестать смотреть и оставить их наедине...
 		#ELSE
-			As the fox-girl continues to dominate her partner on the bed, you wonder whether you should continue enjoying the show, or stop watching and leave them to it...
+			Пока лисичка продолжает доминировать над своим партнером на кровати, ты гадаешь: стоит ли тебе и дальше наслаждаться зрелищем, или лучше перестать смотреть и оставить их наедине...
 		#ENDIF
 	</p>
 	]]>
@@ -214,22 +213,22 @@
 	
 	<htmlContent tag="ROOM_SEX_PEEPING_JESS_FACE_SITTING"><![CDATA[
 	<p>
-		Wanting to see what's happening inside Jess's room, you look around to make sure that nobody's watching before putting your [pc.eye(true)] to the keyhole and looking inside. Although you're only able to see a limited angle of the room, the double-bed on which the action is happening is directly in your field of vision, and you find yourself unable to look away as you watch
+		Желая узнать, что же происходит в комнате Джесс, ты оглядываешься по сторонам, чтобы убедиться, что никто не наблюдает, а затем прижимаешь свой [pc.eye(true)] к замочной скважине. И хотя тебе виден лишь ограниченный угол комнаты, двуспальная кровать, на которой разворачивается действие, находится прямо перед глазами, и ты ловишь себя на том, что не можешь оторвать взгляд, наблюдая за происходящим.
 		#IF(flags.hasFlag(FLAG_innoxia_elis_jess_introduced))
-			 Jess
+			Джесс
 		#ELSE
-			 a very pretty fox-girl, who you assume to be Jess,
+			очень симпатичная лисица, которая, как ты понимаешь, и есть Джесс,
 		#ENDIF
-		 dominating [ncom.a_feminine] [ncom.race].
+		 доминируя над [ncom.a_feminine] [ncom.race].
 	</p>
 	<p>
-		The [ncom.race] is facing away from you as [ncom.she] lies back on the bed, while Jess has dropped down over the top of [ncom.herHim] so as to straddle [ncom.her] face. Thanks to their face-sitting position, you can quite clearly see that Jess is rubbing her [jess.pussy+] up and down over the [ncom.race]'s mouth. A slimy mixture of girlcum is drooling down all over this [ncom.race]'s face, and as you continue to watch, [ncom.she] lets out a muffled, [ncom.moan+] and starts to desperately perform cunnilingus on the dominant fox-girl.
+		[ncom.race] стоит к тебе спиной, пока [ncom.she] откинулась на кровать. Джесс же опустилась сверху на [ncom.herHim], усевшись прямо на [ncom.her]. Благодаря такой позе, ты отчетливо видишь, как Джесс с наслаждением трется своей [jess.pussy+] о [ncom.race]. Слизистая смесь из девичьей смазки стекает по всему лицу этого [ncom.race], и пока ты продолжаешь наблюдать, [ncom.she] издает приглушенный, [ncom.moan+] стон и начинает отчаянно ласкать языком доминирующую лисицу.
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_elis_jess_introduced))
-			As Jess continues to dominate her client on her bed, you wonder whether you should continue enjoying the show, or stop watching and leave them to it...
+			Пока Джесс продолжает доминировать над своим клиентом на кровати, ты гадаешь: стоит ли тебе и дальше наслаждаться зрелищем, или лучше перестать смотреть и оставить их наедине...
 		#ELSE
-			As the fox-girl continues to dominate her partner on the bed, you wonder whether you should continue enjoying the show, or stop watching and leave them to it...
+			Пока лисичка продолжает доминировать над своим партнером на кровати, ты гадаешь: стоит ли тебе и дальше наслаждаться зрелищем, или лучше перестать смотреть и оставить их наедине...
 		#ENDIF
 	</p>
 	]]>
@@ -237,24 +236,24 @@
 	
 	<htmlContent tag="ROOM_SEX_PEEPING_AFTER_SEX"><![CDATA[
 	<p>
-		Having had your fun, you take your [pc.eye(true)] away from the keyhole and [pc.step] back from the door. Not wanting to be caught and questioned about your voyeuristic activities, you [pc.walk] down the corridor and enter your room. Giving Jess and her partner some time in which to finish having sex, you relax for a short while, before wondering what to do next...
+		Насладившись зрелищем, ты отрываешь свой [pc.eye(true)] от замочной скважины и [pc.step] от двери. Не желая, чтобы тебя застукали и начали расспрашивать о твоем вуайеризме, ты [pc.walk] по коридору и заходишь в свою комнату. Дав Джесс и её партнерше немного времени, чтобы закончить секс, ты ненадолго расслабляешься, а затем задумываешься, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STAIRS"><![CDATA[
 	<p>
-		The staircase before you winds down in an anti-clockwise fashion to the ground floor. While it's quite wide, the steps are rather steep, which seems to be the reason why a sign identical to the one found at the base has been secured to the wall, reading: 'To avoid any further accidents, please don't run up or down the stairs!'
+		Лестница перед тобой спиралью уходит вниз, на первый этаж. Она довольно широкая, но ступени очень крутые — похоже, именно поэтому на стене висит табличка, точно такая же, как внизу: «Во избежание несчастных случаев, пожалуйста, не бегайте по лестнице!»
 	</p>
 	<p>
-		From here you could travel down to the tavern's ground floor, or instead head down the corridor which connects the rooms of this level to one another...
+		Отсюда ты можешь спуститься на первый этаж таверны или же пойти по коридору, соединяющему комнаты этого этажа между собой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STAIRS_DOWN"><![CDATA[
 	<p>
-		Deciding to head down to the ground floor, you descend the steep staircase and soon find yourself at the bottom...
+		Решив спуститься на первый этаж, ты начинаешь спускаться по крутой лестнице и вскоре оказываешься внизу...
 	</p>
 	]]>
 	</htmlContent>

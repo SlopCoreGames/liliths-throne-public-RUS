@@ -3,61 +3,61 @@
 
 	<htmlContent tag="SHINRIN_HIGHLANDS"><![CDATA[
 	<p>
-		Lying to the west of the Foloi Fields, the area known as the Shinrin Highlands is the home of the elusive youko. Many parts of this land are densely forested, with species of cypress, maple, cedar, pine, and cherry being the most common types of trees which you see. As if navigating around and through these forests wasn't challenging enough, the entire region consists of undulating terrain, which is sometimes punctuated by long, flat valleys.
+		Расположенное к западу от полей Фолой, это место, известное как высокогорье Синрин, служит домом для неуловимых ёко. Большая часть этих земель покрыта густыми лесами, где чаще всего встречаются кипарисы, клёны, кедры, сосны и сакуры. Как будто пробираться сквозь эти чащи было недостаточно сложно, так весь регион представляет собой холмистую местность, изрезанную длинными плоскими долинами.
 	</p>
 	<p>
-		Now and again, you manage to pick up a path, but these trails inevitably lead to dead-ends or simply disappear into the forest. Other than these tracks, you come across several other signs of habitation, the most common of which are rice fields surrounding the occasional Japanese-style farmhouse. Curiously enough, you never see anyone working in these fields or walking around near the farmhouses, and a chill sometimes runs down your spine as you look at these seemingly-deserted houses from afar.
+		Время от времени тебе удается наткнуться на тропу, но эти пути неизменно ведут в тупик или просто бесследно исчезают в лесной чаще. Помимо троп, ты встречаешь и другие признаки жизни, чаще всего — рисовые поля, окружающие редкие фермерские дома в японском стиле. Любопытно, что ты никогда не видишь никого, кто работал бы на этих полях или просто гулял рядом с домами, и порой по твоей спине пробегает холодок, когда ты издалека смотришь на эти кажущиеся безлюдными жилища.
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
 		<p>
-			The entire landscape is currently cloaked in a blanket of fresh, white snow,
+			Весь пейзаж сейчас укрыт одеялом свежего белого снега,
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 and large snowflakes are currently drifting down from the clouds up above.
+				 и крупные снежинки медленно опускаются из облаков в вышине.
 			#ELSE
-				 which crunches beneath your [pc.feet] as you [pc.walk] over hills and through silent woodland.
+				 который хрустит под твоими [pc.feet], пока ты [pc.walk] по холмам и сквозь безмолвную лесную глушь.
 			#ENDIF
 		</p>
 	#ENDIF
-	
+
 	<p style='text-align:center;'>
-		[style.italicsMinorBad(Youko encounters in the Shinrin Highlands will be added in the next update.)]
+		[style.italicsMinorBad(Встречи с ёко в высокогорье Синрин будут добавлены в следующем обновлении.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="RIVER"><![CDATA[
 	<p>
-		Originating somewhere deep within the western Mountains of the Moon, the river Hubur cuts its path eastwards, passing through the Shinrin Highlands, the Foloi Fields, and Dominion itself before flowing out to sea. Although there's a well-maintained road which runs alongside the river through the Foloi Fields, this path degrades into little more than a dirt track when it reaches the Shinrin Highlands.
+		Река Хубур берет свое начало где-то в глубине западных Лунных гор и прокладывает путь на восток, протекая через высокогорье Синрин, поля Фолой и само Dominion, прежде чем впасть в море. Хотя вдоль реки через поля Фолой тянется ухоженная дорога, здесь, в высокогорье Синрин, она превращается в едва заметную грунтовую тропу.
 		#IF(pc.hasStatusEffect(SE_AQUATIC_POSITIVE))
-			 This doesn't bother you much, as you prefer to shun the path and swim in the river instead.
+			 Тебя это не особо беспокоит, ведь ты предпочитаешь избегать дорог и вместо этого плавать в реке.
 		#ELSE
-			 It's down this poorly-maintained track which you currently find yourself travelling.
+			 Именно по этой разбитой тропе ты сейчас и идешь.
 		#ENDIF
 	</p>
 	<p>
-		The youko of the Shinrin Highlands are known to attack travellers and use illusion spells to mislead them, so you make sure to keep an eye out for any sign of suspicious activity as you continue on your way. As it stands, however, the river and the surrounding banks are completely deserted. None of the boats and barges which travel between Elis, Dominion, and Lyonesse venture this far up the river, and as such you find yourself completely alone.
+		Известно, что юко высокогорья Синрин любят нападать на путников, используя иллюзорные Заклинания, чтобы сбить их с толку, поэтому ты стараешься внимательно следить за любыми подозрительными признаками, продолжая свой путь. Однако на данный момент река и прибрежные земли совершенно пустынны. Ни лодки, ни баржи, курсирующие между Элисом, Dominion и Лионессом, не заходят так далеко вверх по течению, так что ты чувствуешь себя в полном одиночестве.
 	</p>
 	<p>
-		Constructed and maintained by the elusive youko, there are many wooden bridges which cross the river,
+		Построенные и поддерживаемые неуловимыми юко, через реку перекинуто множество деревянных мостов,
 		#IF(pc.hasStatusEffect(SE_AQUATIC_POSITIVE))
-			 but as you can simply swim across at any time you like, this doesn't really concern you.
+			 но, поскольку ты можешь в любой момент просто переплыть реку, тебя это почти не заботит,
 		#ELSE
-			 so you never have to go far in order to cross over it to the other bank.
+			 так что тебе никогда не приходится долго искать место, чтобы перебраться на другой берег.
 		#ENDIF
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
 		<p>
-			Thanks to the snow which
+			Благодаря снегу, который
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 has not only covered the land, but which is also currently falling in big flurries,
+				 не только укрыло землю, но и сейчас валит густыми хлопьями,
 			#ELSE
-				 has covered the land,
+				 укрыло землю,
 			#ENDIF
-			 the very edges of the river are currently frozen over in thick sheets of ice, although most of the centre is still running freely.
+			 самые края реки сейчас скованы толстым слоем льда, хотя основное русло все еще течет свободно.
 		</p>
 	#ENDIF
 	<p style='text-align:center;'>
-		[style.italicsMinorBad(Youko encounters in the Shinrin Highlands will be added in the next update.)]
+		[style.italicsMinorBad(Встречи с юко в высокогорье Синрин будут добавлены в следующем обновлении.)]
 	</p>
 	]]>
 	</htmlContent>

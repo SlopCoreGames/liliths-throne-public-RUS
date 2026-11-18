@@ -6,17 +6,17 @@
 	
 	<htmlContent tag="COURTYARD"><![CDATA[
 	<p>
-		Separating the gateway from the fortress's wooden keep, there's nothing but a deserted, squalid courtyard. Discarded bottles, assorted junk, and piles of miscellaneous refuse are scattered haphazardly across the area, giving this place a very run-down and ruinous look.
+		Между главными воротами и деревянным донжоном крепости раскинулся лишь заброшенный, грязный двор. Повсюду разбросаны пустые бутылки, всякий хлам и кучи мусора, из-за чего всё место выглядит крайне обветшалым и разоренным.
 	</p>
 	<p>
-		Over in one corner, there sits the main keep. While of better construction than the perimeter wall, it's nevertheless a very shabby structure. Made primarily out of crudely-formed wooden stakes, and covered with odd pieces of sheet metal and plywood boards, this solitary building is the only point of interest inside the fortress's walls. 
+		В одном из углов возвышается главный донжон. Хотя он построен добротнее, чем внешняя стена, всё равно выглядит весьма потрепанным. Это одинокое здание, сооруженное в основном из грубо обтесанных деревянных кольев и оббитое какими-то кусками листового металла и фанеры, — единственный объект, заслуживающий внимания внутри крепостных стен.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_FORTRESS_FLY_EXIT"><![CDATA[
 	<p>
-		While the perimeter wall's hazardous construction prohibits anyone from climbing over it, there's nothing stopping you from utilising your ability to fly in order to get to the other side. Breaking out into a short sprint, you quickly launch yourself into the air, before flying over the defensive barrier and swooping back down to land on the floor of the cavern beyond.
+		Хотя опасная конструкция внешней стены не позволяет никому перелезть через неё, ничто не мешает тебе воспользоваться способностью полета, чтобы оказаться на той стороне. Сделав короткий рывок, ты стремительно взмываешь в воздух, перелетаешь через оборонительный барьер и плавно опускаешься на пол пещеры по ту сторону.
 	</p>
 	]]>
 	</htmlContent>
@@ -27,27 +27,27 @@
 	
 	<htmlContent tag="KEEP"><![CDATA[
 	<p>
-		Despite the builders' liberal application of metal sheeting and wooden offcuts, there still exist many small gaps in the keep's walls. From these, slivers of light shine out to cast a pale golden glow on the floor and walls of the fortress's courtyard.
+		Несмотря на то, что строители щедро обшили стены листами металла и обрезками дерева, в них всё равно осталось множество мелких щелей. Сквозь них пробиваются лучи света, отбрасывая бледное золотистое сияние на пол и стены крепостного двора.
 	</p>
 	<p>
-		Illumination isn't the only thing that's escaping through the cracks in the walls, for as you approach the poorly-constructed wooden doors before you, cackling laughter and snippets of vulgar conversation can be heard coming from within the keep. Although three of these voices are higher-pitched and clearly belonging to imps, a fourth, [npc.feminine] voice sounds a little deeper, and a lot more ominous.
+		Свет — не единственное, что пробивается сквозь щели в стенах. Когда ты приближаешься к ветхим деревянным дверям, изнутри доносится заливистый хохот и обрывки вульгарных разговоров. Три из этих голосов — высокие и явно принадлежат бесам, но четвертый, [npc.feminine] голос, звучит чуть глубже и куда более зловеще.
 	</p>
 	<p>
-		If you were to enter this keep, the occupants would undoubtedly notice you almost immediately. You should be prepared for the worst, and expect to not only have to fight three imps, but also the leader of the gangs which roam the surrounding tunnels...
+		Если ты войдешь в эту крепость, обитатели, несомненно, заметят тебя почти сразу. Тебе стоит приготовиться к худшему: придется сразиться не только с тремя бесами, но и с предводительницей банд, рыщущих в окрестных туннелях...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_DEFEATED"><![CDATA[
 	<p>
-		Having defeated [impAlphaLeader.name], the [impAlphaLeader.race] who led the imp gangs roaming the surrounding tunnels, [impAlphaLeader.her] keep is now completely deserted. The front doors have been left wide-open, and, taking a cursory glance inside, you see that there's absolutely nothing within that would be of interest to you. There's nothing more to do here except turn around and go back the way you came...
+		После победы над [impAlphaLeader.name], [impAlphaLeader.race], возглавлявшей банды бесов в окрестных туннелях, [impAlphaLeader.her] крепость теперь совершенно пуста. Главные двери остались широко распахнутыми, и, бегло заглянув внутрь, ты понимаешь, что там нет абсолютно ничего интересного. Здесь больше нечего делать, кроме как развернуться и отправиться Назад...
 	</p>
 	<p>
 		#IF pc.isQuestProgressGreaterThan(QUEST_LINE_MAIN, QUEST_MAIN_2_B_SIRENS_CALL)
 		#THEN
-			[style.italicsMinorBad(You get the feeling that [impAlphaLeader.name] will return to reclaim [impAlphaLeader.her] fortress sooner or later!)]
+			[style.italicsMinorBad(У тебя такое чувство, что [impAlphaLeader.name] рано или поздно вернется, чтобы отвоевать [impAlphaLeader.her] крепость!)]
 		#ELSE
-			[style.italicsBad(You get the feeling that [impAlphaLeader.name] will not be back until you've dealt with the Dark Siren!)]
+			[style.italicsBad(У тебя такое чувство, что [impAlphaLeader.name] не вернется, пока ты не разберешься с Темной Сиреной!)]
 		#ENDIF
 	</p>
 	]]>
@@ -55,13 +55,13 @@
 	
 	<htmlContent tag="KEEP_PACIFIED"><![CDATA[
 	<p>
-		Despite the builders' liberal application of metal sheeting and wooden offcuts, there still exist many small gaps in the keep's walls. From these, slivers of light shine out to cast a pale golden glow on the floor and walls of the fortress's courtyard.
+		Несмотря на то, что строители щедро обшили стены листами металла и обрезками дерева, в них всё равно осталось множество мелких щелей. Сквозь них пробиваются лучи света, отбрасывая бледное золотистое сияние на пол и стены крепостного двора.
 	</p>
 	<p>
-		Illumination isn't the only thing that's escaping through the cracks in the walls, for as you approach the poorly-constructed wooden doors before you, cackling laughter and snippets of vulgar conversation can be heard coming from within the keep. You can hear the distinctive, ominous voice of [impAlphaLeader.name] as [impAlphaLeader.she] joins [impAlphaLeader.her] three alpha-imp guards in conversation.
+		Сквозь щели в стенах пробивается не только свет: когда ты приближаешься к ветхим деревянным дверям, доносившимся изнутри крепости, ты слышишь заливистый смех и обрывки вульгарных разговоров. Тебе доносится характерный, зловещий голос [impAlphaLeader.name] — кажется, [impAlphaLeader.she] присоединилась к [impAlphaLeader.her] и трем стражникам-альфа-бесам в беседе.
 	</p>
 	<p>
-		As [impAlphaLeader.name] no longer considers you a threat, you could enter the keep without risking a fight...
+		Поскольку [impAlphaLeader.name] больше не считает тебя угрозой, ты можешь войти в крепость, не рискуя ввязаться в драку...
 	</p>
 	]]>
 	</htmlContent>
@@ -72,145 +72,145 @@
 	
 	<htmlContent tag="KEEP_ENTRY"><![CDATA[
 	<p>
-		Pushing on the keep's crude wooden doors, you're pleased to discover that they're not locked, and, with a creak loud enough to make you flinch, they swing open before you. Stepping forwards into the building, you discover that the interior of the structure is just one big open hall. Numerous arcane-powered lanterns are fixed to the walls, which cast a light golden glow over the rickety wooden floor and the oddly-assorted tables and chairs that have been pushed up against the walls.
+		Толкнув грубые деревянные двери крепости, ты с радостью обнаруживаешь, что они не заперты, и они распахиваются перед тобой с таким громким скрипом, что ты невольно вздрагиваешь. Шагнув внутрь, ты видишь, что всё здание представляет собой один огромный открытый зал. На стенах закреплено множество фонарей, работающих на силе Арканы; они заливают золотистым светом шаткий деревянный пол и придвинутые к стенам столы и стулья, собранные в странном беспорядке.
 	</p>
 	<p>
-		Near the opposite end from where you entered, you spot the occupants of this fortress sitting around a wooden table. While the three feminine alpha-imps are much the same as the guards at the gate, their leader is a very pale-skinned succubus, who's dressed exclusively in black.
+		В дальнем конце зала, напротив входа, ты замечаешь обитателей этой крепости, сидящих за деревянным столом. Хотя три самки альфа-бесов очень похожи на стражников у ворот, их предводительница — суккуб с очень бледной кожей, одетая исключительно в чёрное.
 	</p>
 	<p>
-		Her shoulder-length hair, as black as the clothing which she's wearing, has been shaved into a sidecut, and as she turns to look at you, you see that she's wearing a heavy layer of black eyeliner and eyeshadow. The moment your eyes meet, her black lips turn up into a snarl, and she violently slams her fist onto the surface in front of her, before shouting, [npc.speech(Who the fuck are you?! You never heard to stay away from [npc.namePos] place, huh?!)]
+		Её волосы длиной до плеч, такие же черные, как и её одежда, подстрижены в стиле сайдкат. Когда она поворачивается к тебе, ты замечаешь густую подводку и тени для век угольно-черного цвета. Стоит вашим взглядам встретиться, как её черные губы кривятся в оскале, и она с силой хлопает кулаком по поверхности перед собой, выкрикивая: [npc.speech(Ты еще кто, блядь такая?! Тебе что, никогда не говорили держаться подальше от [npc.namePos]?!)]
 	</p>
 	<p>
-		[npc.Name] furiously hurls her chair back as she leaps to her feet, allowing you to see that she's wearing a pair of distressed jeans and knee-high gothic boots. These items of clothing are just as black as her leather jacket, which is unzipped to reveal a tight wrapping of black cloth around her modestly-sized C-cup breasts. She looks to have a silver piercing in almost every place imaginable, and, if it wasn't for her demonic tail and tribal-tattooed horns, she'd look just like a stereotypical angry goth girl. Not even giving you time to answer her previous question, she strides forwards, clenching a pair of brass knuckle-dusters in her fists and exclaiming, [npc.speech(You're just begging for a beating, aren't you, bitch?!)]
+		[npc.Name] яростно отшвыривает стул, вскакивая на ноги, и ты замечаешь на ней рваные джинсы и готические сапоги до колен. Эта одежда такая же черная, как и её кожаная куртка, расстегнутая, чтобы обнажить облегающую черную ткань, подчеркивающую её аккуратную грудь размера C. Кажется, у неё серебряный пирсинг почти везде, где только можно, и если бы не демонический хвост и рога в племенных татуировках, она выглядела бы как типичная злая готка. Не давая тебе времени ответить на её вопрос, она решительно шагает вперед, сжимая в кулаках кастеты, и восклицает: [npc.speech(Ты просто напрашиваешься на взбучку, сучка?!)]
 	</p>
 	<p>
-		The three alpha-imps rush to back their leader up, and you realise that you only have a moment in which to either defuse the situation, or ready yourself for a fight...
+		Трое альфа-бесов бросаются на подмогу своей предводительнице, и ты понимаешь, что у тебя есть лишь мгновение, чтобы либо разрядить обстановку, либо приготовиться к драке...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ENTRY_RETURN"><![CDATA[
 	<p>
-		Once again pushing on the keep's crude wooden doors, you discover that they're still not locked, and, with yet another loud creak, they swing open before you. The hall beyond appears much as it did the last time you were here, with the many wall-mounted arcane lanterns casting a soft golden glow over the rickety wooden floor and the numerous oddly-assorted tables and chairs that have been pushed up against the walls.
+		Снова толкнув грубые деревянные двери крепости, ты обнаруживаешь, что они всё ещё не заперты, и с очередным громким скрипом они распахиваются перед тобой. Зал выглядит почти так же, как и в прошлый раз: многочисленные настенные аркана-фонари отбрасывают мягкое золотистое сияние на шаткий деревянный пол и кучу разномастных столов и стульев, придвинутых к стенам.
 	</p>
 	<p>
-		Near the opposite end from where you entered, you spot the familiar occupants of this fortress sitting around the usual wooden table. [npc.Name] is the first to notice your arrival, and, furiously slamming [npc.her] fist on the surface before [npc.herHim], shouts, [npc.speech(Fuck! What the fuck are you doing here again?!)]
+		В дальнем конце зала, противоположном входу, ты замечаешь знакомых обитателей крепости, сидящих за привычным деревянным столом. [npc.Name] первой замечает твое появление и, яростно грохнув кулаком [npc.her] по столу перед [npc.herHim], выкрикивает: [npc.speech(Блядь! Какого хера ты опять здесь забыла?!)]
 	</p>
 	<p>
-		Furiously hurling [npc.her] chair back as [npc.she] leaps to her feet, [npc.she] then strides forwards, clenching her brass knuckle-dusters in [npc.her] fists as [npc.she] exclaims, [npc.speech(I'm gonna beat you to a pulp, you fucking bitch!)]
+		Яростно отшвырнув стул [npc.her], пока [npc.she] вскакивает на ноги, [npc.she] решительно шагает вперед, сжимая кастеты в [npc.her] кулаках, в то время как [npc.she] вопит: [npc.speech(Я из тебя всё дерьмо выбью, сука ебаная!)]
 	</p>
 	<p>
-		The three alpha-imps rush to back their leader up, and you realise that you only have a moment in which to either defuse the situation, or ready yourself for a fight...
+		Трое альфа-бесов бросаются на подмогу своей предводительнице, и ты понимаешь, что у тебя есть лишь мгновение, чтобы либо разрядить обстановку, либо приготовиться к драке...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ENTRY_PACIFIED"><![CDATA[
 	<p>
-		Once again pushing on the keep's crude wooden doors, you discover that they're still not locked, and, with yet another loud creak, they swing open before you. The hall beyond appears much as it did the last time you were here, with the many wall-mounted arcane lanterns casting a soft golden glow over the rickety wooden floor and the numerous oddly-assorted tables and chairs that have been pushed up against the walls.
+		Снова толкнув грубые деревянные двери крепости, ты обнаруживаешь, что они всё ещё не заперты, и с очередным громким скрипом они распахиваются перед тобой. Зал выглядит почти так же, как и в прошлый раз: многочисленные настенные аркана-фонари отбрасывают мягкое золотистое сияние на шаткий деревянный пол и кучу разномастных столов и стульев, придвинутых к стенам.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ENTRY_PACIFIED_DEMAND_ORAL"><![CDATA[
 	<p>
-		Near the opposite end from where you entered, you spot the familiar occupants of this fortress sitting around the usual wooden table. [npc.Name] is the first to notice your arrival, and, pushing [npc.her] chair back a little, [npc.she] parts [npc.her] legs and throws you a sinister grin. As [npc.her] imp guards turn to see what's caught their leader's attention, [npc.she] calls out, [npc.speech(Well, well, well, looks like this horny slut's got a craving for my cum! Get over here, bitch, and wrap those lips of yours around my cock!)]
+		Почти напротив входа ты замечаешь знакомых обитателей крепости, сидящих за привычным деревянным столом. [npc.Name] первым замечает твое появление и, слегка отодвинув стул [npc.her], [npc.she] раздвигает [npc.her] ноги и бросает на тебя зловещую ухмылку. Пока [npc.her] бесы-стражники оборачиваются, чтобы посмотреть, что привлекло внимание их предводителя, [npc.she] выкрикивает: [npc.speech(Ну надо же, надо же, надо же! Похоже, этой похотливой шлюхе приспичило сосать мою сперму! А ну иди сюда, сучка, и обхвати мой член своими губками!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ENTRY_PACIFIED_DEMAND_IMPS"><![CDATA[
 	<p>
-		Near the opposite end from where you entered, you spot the familiar occupants of this fortress sitting around the usual wooden table. [npc.Name] is the first to notice your arrival, and, pushing [npc.her] chair back a little, [npc.she] nods towards [npc.her] guards and throws you a sinister grin. As the alpha-imps turn to see what's caught their leader's attention, [npc.she] calls out, [npc.speech(Well, well, well, you've still got your mouth all sealed up, huh?! Seeing as you don't want a taste of my cock, I guess you're here for my girls! So go on then, bitch, get down on all fours like the dog you are! You'll be filled with imp cock soon enough!)]
+		Почти напротив входа ты замечаешь знакомых обитателей крепости, сидящих за привычным деревянным столом. [npc.Name] первым замечает твое появление и, слегка отодвинув стул [npc.her], [npc.she] кивает в сторону [npc.her] стражников и бросает на тебя зловещую ухмылку. Пока альфа-бесы оборачиваются, чтобы посмотреть, что привлекло внимание их предводителя, [npc.she] выкрикивает: [npc.speech(Ну надо же, надо же, надо же! Всё еще рот на замке, а?! Раз уж ты не хочешь попробовать мой член на вкус, значит, пришла за моими девками! Ну так давай же, сучка, вставай на четвереньки, как собака! Скоро тебя набьют бесиными хреновинами по самые гланды!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_PACIFIED_LEAVE"><![CDATA[
 	<p>
-		Not wanting to suck [npc.namePos] cock right now, you quickly blurt out, [pc.speech(Ah, sorry, [npc.name], I was just checking everything was ok. I've got to go now!)]
+		Не желая прямо сейчас сосать член [npc.namePos], ты быстро выпаливаешь: [pc.speech(А, прости, [npc.name], я просто проверяла, всё ли в порядке. Мне пора идти!)]
 	</p>
 	<p>
-		Ignoring the vulgar curses that are shouted at you in response, you quickly turn your back on [npc.name] and [npc.her] gang, and make haste as you exit the keep...
+		Игнорируя в ответ посыпавшиеся на тебя вульгарные ругательства, ты быстро поворачиваешься спиной к банде [npc.name] и [npc.her] и поспешно покидаешь цитадель...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX"><![CDATA[
 	<p>
-		Obediently doing as you're told, you hurry over to where [npc.name] is sitting, and drop down onto your knees before [npc.herHim]. Smirking down at you, the [npc.race] raises [npc.her] voice so that [npc.she] can be heard over the chorus of mocking laughter coming from [npc.her] imp guards, and commands, [npc.speech(What a loyal #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, beg.)]
+		Послушно выполняя приказ, ты спешишь туда, где сидит [npc.name], и падешь на колени перед [npc.herHim]. Усмехаясь, [npc.race] возвышается над тобой, и [npc.her] повышает свой голос так, чтобы [npc.she] было слышно сквозь хор издевательского смеха [npc.her] бесов-стражников, и командует: [npc.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, beg.)]
 	</p>
 	<p>
-		Wanting to please [npc.name], you once more do as you're commanded, and, raising your [pc.hands] in a begging motion, you look up at [npc.herHim] and whine, [pc.speech(Please, let me suck your cock!)]
+		Желая угодить [npc.name], ты снова повинуешься приказу и, задирая свой [pc.hands] в умоляющем жесте, смотришь на [npc.herHim] и скулишь: [pc.speech(Пожалуйста, дай мне отсосать твой член!)]
 	</p>
 	<p>
-		Reaching down to roughly grab the back of your head, the sadistic [npc.race] yanks forwards as [npc.she] stands up, pressing your [pc.face] firmly against the rapidly-hardening bulge in [npc.her] jeans as [npc.she] sneers, [npc.speech(I want you gagging on it, slut.)]
+		Грубо схватив тебя за затылок, садистка [npc.race] дергает тебя вперед, пока [npc.she] встает, плотно прижимая твой [pc.face] к быстро твердеющему бугру в джинсах [npc.her], в то время как [npc.she] скалится: [npc.speech(Хочу, чтобы ты давилась им, шлюха.)]
 	</p>
 	<p>
-		Making a muffled noise in the affirmative, you prepare to get to work on sucking [npc.namePos] cock...
+		Издавая приглушенный утвердительный звук, ты готовишься приняться за сосание члена [npc.namePos]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX_IMPS"><![CDATA[
 	<p>
-		Obediently doing as you're told, you hurry over to where [npc.name] and [npc.her] imps are sitting, before dropping down onto your hands and knees in front of them. Smirking down at you, the [npc.race] raises [npc.her] voice so that [npc.she] can be heard over the chorus of mocking laughter coming from [npc.her] imp guards, and commands, [npc.speech(What a loyal #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, present yourself for my girls.)]
+		Послушно выполняя приказ, ты спешишь к бесам [npc.name] и [npc.her], которые сидят там, и встаешь перед ними на четвереньки. Усмехаясь, [npc.race] возвышается над тобой, и [npc.her] повышает свой голос так, чтобы [npc.she] было слышно сквозь хор издевательского смеха [npc.her] бесов-стражников, и командует: [npc.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, present yourself for my girls.)]
 	</p>
 	<p>
-		Wanting to please [npc.name], you once more do as you're commanded, and, shuffling around to present your [pc.ass+] to the imps, you drop your shoulders and raise your [pc.hips+], before whining, [pc.speech(Please, fuck me!)]
+		Желая угодить [npc.name], ты снова повинуешься приказу и, перебирая ногами, чтобы подставить свой [pc.ass+] бесам, опускаешь плечи и поднимаешь [pc.hips+], прежде чем заскулить: [pc.speech(Пожалуйста, трахни меня!)]
 	</p>
 	<p>
-		Quickly moving forwards to surround you, the three alpha-imps start groping and squeezing your body, with the one at your rear end sneering, [npc2.speech(Mmm, yeah, you're gonna love my cock!)]
+		Три альфа-беса стремительно окружают тебя, начиная ощупывать и сжимать твоё тело; тот, что стоит сзади, ухмыляется: [npc2.speech(Ммм, да, тебе точно понравится мой член!)]
 	</p>
 	<p>
-		Making a submissive noise in agreement, you prepare to get fucked by [npc.namePos] guards...
+		Издавая покорный звук в знак согласия, ты готовишься к тому, что тебя оттрахают [npc.namePos] стражника...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ENTRY_OFFER_SEX"><![CDATA[
 	<p>
-		The sight of this furious [npc.race] and [npc.her] imp guards storming towards you is too much for you to handle, and you hold up your [pc.hands] as you cry out, [pc.speech(W-Wait! There's no need for violence!)]
+		Вид разъяренного [npc.race] и [npc.her] бесов-стражников, несущихся на тебя, становится невыносимым; ты вскидываешь свои [pc.hands] и вскрикиваешь: [pc.speech(П-подождите! Нет нужды в насилии!)]
 	</p>
 	<p>
-		[npc.NamePos] menacing snarl quickly shifts into a devious grin as [npc.she] realises that you're not willing to face [npc.herHim] in combat. Coming to a halt right in front of you, [npc.she] reaches out to grab your wrist, and, before you can react, [npc.she] yanks you forwards, pressing you tightly against [npc.herHim] as [npc.she] growls, [npc.speech(So how are you going to apologise for barging in here uninvited, you dumb bitch?!)]
+		Угрожающее рычание [npc.NamePos] быстро сменяется коварной ухмылкой, когда [npc.she] понимает, что ты не готова сражаться с [npc.herHim]. Резко остановившись прямо перед тобой, [npc.she] хватает тебя за запястье, и, прежде чем ты успеваешь среагировать, [npc.she] дергает тебя вперед, плотно прижимая к [npc.herHim], пока [npc.she] рычит: [npc.speech(И как же ты собираешься извиняться за то, что вломилась сюда без приглашения, тупая сучка?!)]
 	</p>
 	<p>
-		Being held so close to [npc.her] body, you're able to suddenly feel something hard pressing against your [pc.leg], and you glance down to see the distinctive bulge of a fat cock pressing out against the tight fabric of [npc.namePos] jeans. Gulping at the sight of it, you look back up into the [npc.race]'s [npc.eyeColour] eyes, before offering, [pc.speech(I-I could take care of that for you...)]
+		Из-за того, что тебя так крепко прижали к телу [npc.her], ты внезапно чувствуешь, как что-то твердое упирается тебе в [pc.leg]; ты опускаешь взгляд и видишь отчетливый бугор толстого члена, обтянутого тесной тканью [npc.namePos] джинсов. Сглотнув от увиденного, ты снова смотришь в [npc.eyeColour] глаза [npc.race] и робко предлагаешь: [pc.speech(Я... я могла бы позаботиться об этом для тебя...)]
 	</p>
 	<p>
-		[npc.speech(Now that's what I like to hear!)] [npc.Name] snaps, before roughly shoving you down onto your knees in front of [npc.herHim] and thrusting [npc.her] groin into your face. [npc.speech(Go on, get it out, slut!)]
+		[npc.speech(Вот это я люблю!)] [npc.Name] резко бросает, прежде чем грубо толкнуть тебя на колени перед [npc.herHim] и прижать [npc.her] пах к твоему лицу. [npc.speech(Давай, высасывай всё до капли, сучка!)]
 	</p>
 	<p>
-		Doing as you're told, you reach up and unbutton her jeans, before tugging them down to reveal a black thong barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Continuing with your task, you pull down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
+		Повинуясь приказу, ты тянешься вверх и расстегиваешь её джинсы, а затем стягиваешь их вниз, обнажая черные трусики, которые едва сдерживают массивный бугор [npc.her] эрекции. Твои глаза широко распахиваются, когда ты замечаешь, что прямо над пахом [npc.namePos] у [npc.sheHas] есть черная татуировка в стиле трайбл, дополненная надписью «Подавись им, сучка!», выведенной изящным курсивом. Продолжая свое дело, ты стягиваешь [npc.her] трусики, позволяя [npc.her] [npc.penisGirth], [npc.penisValue] члену, проколотому и украшенному серебряным кольцом, вырваться на свободу прямо перед твоим лицом.
 	</p>
 	<p>
-		[npc.speech(That isn't just for show, bitch,)] [npc.name] snarls, pointing to [npc.her] tattoo. [npc.speech(I want you <i>gagging</i> on it!)]
+		[npc.speech(Это не просто для красоты, сучка,)] [npc.name] рычит, указывая на татуировку [npc.her]. [npc.speech(Я хочу, чтобы ты <i>подавилась</i> им!)]
 	</p>
 	<p>
-		Pushing the tip of [npc.her] cock up against your lips, [npc.name] prepares for you to start giving [npc.herHim] a blowjob...  
+		Прижимая головку [npc.her] члена к твоим губам, [npc.name] готовится к тому, что ты начнешь делать [npc.herHim] минет...  
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ENTRY_OFFER_SEX_IMPS"><![CDATA[
 	<p>
-		The sight of this furious [npc.race] and [npc.her] imp guards storming towards you is too much for you to handle, and you hold up your [pc.hands] as you mumble through the clothing blocking your mouth, [pc.speech(W-Wait! There's no need for violence!)]
+		Вид этой разъяренной [npc.race] и [npc.her] бесов-стражников, несущихся на тебя, становится невыносимым; ты вскидываешь свои [pc.hands] и бормочешь сквозь ткань, забивающую рот: [pc.speech(П-подождите! Не нужно насилия!)]
 	</p>
 	<p>
-		[npc.NamePos] menacing snarl quickly shifts into a devious grin as [npc.she] realises that you're not willing to fight [npc.herHim]. Coming to a halt right in front of you, [npc.she] reaches out to grab your wrist, and, before you can react, [npc.she] yanks you forwards, pressing you tightly against [npc.herHim] as [npc.she] growls, [npc.speech(So how are you going to apologise for barging in here uninvited, you dumb bitch?!)]
+		[npc.NamePos] грозное рычание быстро сменяется коварной ухмылкой, когда [npc.she] понимает, что ты не собираешься сражаться с [npc.herHim]. Резко остановившись прямо перед тобой, [npc.she] хватает тебя за запястье и, прежде чем ты успеваешь среагировать, [npc.she] дергает тебя вперед, плотно прижимая к [npc.herHim], пока [npc.she] рычит: [npc.speech(Ну и как ты собираешься извиняться за то, что вломилась сюда без приглашения, тупая сучка?!)]
 	</p>
 	<p>
-		Being held so close to [npc.her] body, you're able to suddenly feel something hard pressing against your [pc.leg], and you glance down to see the distinctive bulge of a fat cock pressing out against the tight fabric of [npc.namePos] jeans. Gulping at the sight of it, you look back up into the [npc.race]'s [npc.eyeColour] eyes, before offering, [pc.speech(I-I could take care of that for you...)]
+		Из-за того, что тебя так крепко прижали к телу [npc.her], ты внезапно чувствуешь, как что-то твердое упирается тебе в [pc.leg]; ты опускаешь взгляд и видишь отчетливый бугор толстого члена, обтянутого тесной тканью [npc.namePos] джинсов. Сглотнув от увиденного, ты снова смотришь в [npc.eyeColour] глаза [npc.race] и робко предлагаешь: [pc.speech(Я... я могла бы позаботиться об этом для тебя...)]
 	</p>
 	<p>
-		[npc.speech(With your mouth all sealed up like that?!)] [npc.Name] snaps, before roughly shoving you down onto all fours in front of [npc.herHim]. [npc.speech(No, if I can't fuck someone's throat, then I'm not interested. My girls, on the other hand...)]
+		[npc.speech(С таким-то плотно сжатым ртом?!)] — огрызается [npc.Name], прежде чем грубо толкнуть тебя на четвереньки перед [npc.herHim]. [npc.speech(Нет, если я не могу оттрахать кому-нибудь глотку, то мне это и не интересно. А вот мои девки...)]
 	</p>
 	<p>
-		As [npc.she] says this, the three alpha-imps move forwards, quickly surrounding you as they start to grope and squeeze your body. [npc.Name] lets out a derisive laugh, before walking back over to [npc.her] chair and leaving you with the horny imps. As you let out [pc.a_moan], the one groping your groin giggles, [npc2.speech(Mmm, yeah, you're gonna love my cock!)]
+		Пока [npc.she] говорит это, три альфа-беса подаются вперед, быстро окружая тебя и начиная ощупывать и сжимать твое тело. [npc.Name] издает насмешливый смешок, после чего возвращается к [npc.her] chair, оставляя тебя на растерзание похотливым бесам. Когда ты издаешь [pc.a_moan], тот, что лапает твой пах, хихикает: [npc2.speech(Ммм, да, тебе точно понравится мой член!)]
 	</p>
 	<p>
-		Making a submissive noise in agreement, you prepare to get fucked by [npc.namePos] guards...
+		Издавая покорный звук в знак согласия, ты готовишься к тому, что тебя оттрахают [npc.namePos] стражника...
 	</p>
 	]]>
 	</htmlContent>
@@ -224,80 +224,79 @@
 	
 	<htmlContent tag="KEEP_ALPHA_BRAWLER"><![CDATA[
 	<p>
-		Feeling confident in your abilities at hand-to-hand combat, you raise one hand and motion for [npc.name] to approach. [pc.speech(Come on. Hit me, if you can.)]
+		Чувствуя уверенность в своих навыках рукопашного боя, ты поднимаешь руку и жестом подзываешь [npc.name] ближе. [pc.speech(Давай. Ударь меня, если сможешь.)]
 	</p>
 	<p>
-		[npc.NamePos] angry scowl transforms into a furious grimace as [npc.she] rushes forwards and swings at you with [npc.her] right fist. Seeing the attack coming, you take a short step back, causing the [npc.race]'s attack to sail harmlessly through the air. [pc.speech(You'll have to do better than that.)]
+		[npc.NamePos] сердитая гримаса превращается в яростный оскал, когда [npc.she] бросается вперед и замахивается на тебя [npc.her] правым кулаком. Видя приближающуюся атаку, ты делаешь короткий шаг назад, из-за чего удар [npc.race] рассекает воздух впустую. [pc.speech(Тебе придется постараться получше.)]
 	</p>
 	<p>
-		Your taunt is met by an enraged scream as [npc.name] launches [npc.herself] at you. Grinning as you once again easily side-step [npc.her] attack, you allow your opponent's forward momentum to carry [npc.herHim] past you. As this happens, you turn to the side and reach out to grab the cuff of [npc.her] leather jacket. With a firm downwards tug, you manage to half-pull it off of [npc.herHim].
+		Твоя насмешка вызывает яростный крик: [npc.name] бросается на тебя с [npc.herself]. Усмехаясь, ты снова легко уклоняешься от атаки [npc.her], позволяя инерции движения унести [npc.herHim] мимо тебя. В этот момент ты резко поворачиваешься в сторону и хватаешь [npc.her] за манжет кожаной куртки. Резким рывком вниз тебе удается наполовину стянуть её с [npc.herHim].
 	</p>
 	<p>
-		[npc.speech(Oh, you want me to be serious, do you?!)] [npc.name] snaps. [npc.speech(Stand back, girls, this one's all mine!)]
+		[npc.speech(О, так ты хочешь, чтобы я стала серьезной?!)] — огрызается [npc.name]. [npc.speech(Назад, девчонки, эта — целиком моя!)]
 	</p>
 	<p>
-		The three imps seem to be more than a little stunned by your moves, and, even if [npc.name] hadn't just forbidden them from joining the fight, you think that they wouldn't have dared get involved. Focusing your attention on the now-seething [npc.race] before you, you watch as [npc.she] pulls off [npc.her] jacket, revealing a black tribal tattoo inked across [npc.her] upper-back. Hurling [npc.her] discarded clothing to the other side of the hall, [npc.name] spits, [npc.speech(I'm gonna turn that pretty little mouth of yours into my cum-dump!)]
-	</p>
+		Три беса, кажется, изрядно ошарашены твоими маневрами; даже если бы [npc.name] только что не запретила им вступать в бой, ты думаешь, они бы и не посмели вмешаться. Сосредоточив внимание на разъяренной [npc.race] перед тобой, ты наблюдаешь, как [npc.she] срывает с [npc.her] куртку, обнажая черную племенную татуировку на верхней части спины [npc.her]. Отшвырнув брошенную одежду [npc.her] на другой конец зала, [npc.name] сплевывает: [npc.speech(Я превращу твой хорошенький ротик в свою спермоприемницу!)]
+	</p><p>
+На этот раз [npc.name] нападает на тебя чуть медленнее, чем прежде, но твои насмешки, похоже, сильно пошатнули эмоциональную стабильность [npc.her]. Как бы [npc.she] ни старался/старалась, [npc.she] никак не может совладать с [npc.her] яростью. Один яростный удар следует за другим, но все они пролетают мимо; и хотя опасные кастеты [npc.race] порой оказываются в дюйме от твоего лица, тебе удаётся уклоняться от каждой из [npc.her] поспешных атак.
+</p>
 	<p>
-		This time, [npc.name] comes at you a little slower than before, but your taunts seem to have had a big impact on [npc.her] emotional stability, and, try as [npc.she] might, [npc.she] can't seem to control [npc.her] anger. Punch after furious punch fail to land, and even though the [npc.race]'s dangerous-looking knuckle dusters sometimes come within an inch of hitting you, you're able to avoid each and every one of [npc.her] hasty attacks.
-	</p>
-	<p>
-		Before long, [npc.name] is panting and sweating from exertion, with each of [npc.her] strikes becoming easier and easier to dodge. Thinking the time's come to put an end to this, you quickly dart forwards,
+	Вскоре [npc.name] уже тяжело дышит и обливается потом от напряжения, ведь уклоняться от каждого из [npc.her] ударов становится всё проще и проще. Понимая, что пора заканчивать, ты стремительно бросаешься вперёд,
 		#IF npc.isVisiblyPregnant()
-		#THEN and, conscious of the fact that [npc.sheIs] pregnant, you twist [npc.her] [npc.arm] behind [npc.her] back, before carefully, but firmly, forcing [npc.herHim] to the ground.
+		#THEN и, осознавая, что [npc.sheIs] беременна, ты выворачиваешь [npc.her] [npc.arm] за [npc.her] спину, после чего осторожно, но решительно прижимая [npc.herHim] к земле.
 		#ELSE landing a solid punch to [npc.her] stomach, before tripping [npc.herHim] and hurling [npc.herHim] to the ground.
 		#ENDIF
 	</p>
 	<p>
-		[npc.speech(Stop!)] [npc.name] pants. [npc.speech(Please... N-No more...)]
+		[npc.speech(Стой!)] тяжело дышит [npc.name]. [npc.speech(Пожалуйста... П-пожалуйста, хватит...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ALPHA_BRAWLER_KEY"><![CDATA[
 	<p>
-		Seeing their leader being humiliated in such a fashion, the three alpha-imps had already edged closer and closer to the keep's exit, and as they witness your crushing move, they sprint out of the doors and disappear off into Submission. Being left alone with the defeated [npc.race], you ask [npc.herHim], [pc.speech(Why do you do this? Getting all those imps to attack people in Submission, I mean.)]
+	Видя, как их предводительницу так унижают, трое альфа-бесов уже подбирались всё ближе к выходу из крепости, но, став свидетелями твоего сокрушительного приема, они пускаются наутек через двери и исчезают в Submission. Оставшись наедине с поверженной [npc.race], ты спрашиваешь [npc.herHim]: [pc.speech(Зачем ты это делаешь? Ну, заставляешь всех этих бесов нападать на людей в Submission.)]
 	</p>
 	<p>
-		[npc.speech(She told us to...)] [npc.name] pants. [npc.speech(Our leader, the Dark Siren... She said we need to assert dominance... You've probably already seen it, seeing as you're here... That citadel in the middle of Submission's tunnels. That's where she is...)]
+		[npc.speech(Она велела нам...)] прерывисто отвечает [npc.name]. [npc.speech(Наша предводительница, Темная Сирена... Она сказала, что мы должны утвердить свое превосходство... Ты, должно быть, уже видел это, раз уж ты здесь... Та цитадель посреди туннелей Submission. Вот где она обитает...)]
 	</p>
 	<p>
-		[pc.speech(I see. So you're just following orders, huh?)] you ask, the tone of your voice making it clear that you don't approve of such an excuse.
+		[pc.speech(Понятно. Значит, ты просто выполняешь приказы, да?)] — спрашиваешь ты, и твой тон ясно дает понять, что такое оправдание тебя не устраивает.
 	</p>
 	<p>
-		[npc.speech(Yes... Just... Please, let me go... I-I can give you one of the keys needed to get inside that place in exchange,)] [npc.name] offers, reaching into a pocket of [npc.her] jeans and producing a slender silver key, no more than three inches in length. Giving it to you, [npc.name] continues, still panting, [npc.speech(You'll need keys from the other two gang leaders if you want to confront her... Now just... Please let me go!)]
+		[npc.speech(Да... Просто... Пожалуйста, отпусти меня... Я-я могу отдать тебе один из ключей, чтобы попасть внутрь, взамен,)] [npc.name] предлагает, запуская руку в карман своих [npc.her] джинсов и доставая тонкий серебряный ключ длиной не больше трех дюймов. Протягивая его тебе, [npc.name] продолжает, всё еще тяжело дыша: [npc.speech(Тебе понадобятся ключи от двух других главарей банд, если хочешь противостоять ей... А теперь просто... Пожалуйста, отпусти меня!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ALPHA_BRAWLER_DEFEATED"><![CDATA[
 	<p>
-		Seeing their leader being humiliated in such a fashion, the three alpha-imps had already edged closer and closer to the keep's exit, and as they witness your crushing move, they sprint out of the doors and disappear off into Submission. Being left alone with the defeated [npc.race], you ask [npc.herHim], [pc.speech(Why did you come back? I told you to stay away from here!)]
+		Видя, как их предводительницу так унижают, трое альфа-бесов уже подбирались всё ближе к выходу из цитадели, а увидев твой сокрушительный удар, они выбежали за двери и скрылись в Submission. Оставшись наедине с поверженной [npc.race], ты спрашиваешь [npc.herHim]: [pc.speech(Зачем ты вернулась? Я же велел тебе держаться отсюда подальше!)]
 	</p>
 	<p>
-		[npc.speech(The Dark Siren... )] [npc.name] pants. [npc.speech(She said I had to...)]
+		[npc.speech(Тёмная Сирена... )] тяжело дышит [npc.name]. [npc.speech(Она сказала, что я должна...)]
 	</p>
 	<p>
-		[pc.speech(Still blindly following her orders, huh?)] you ask, the tone of your voice making it clear that you don't approve of such an excuse.
+		[pc.speech(Всё так же слепо следуешь её приказам, да?)] — спрашиваешь ты, и твой тон ясно даёт понять, что такое оправдание тебя не устраивает.
 	</p>
 	<p>
-		[npc.speech(Yes... Just... Please, let me go...)] [npc.name] begs. [npc.speech(I won't cause any more trouble!)]
+		[npc.speech(Да... Просто... Пожалуйста, отпусти меня...)] — умоляет [npc.name]. [npc.speech(Я больше не доставлю проблем!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ALPHA_BRAWLER_DEFEATED_DS_DEALT_WITH"><![CDATA[
 	<p>
-		Seeing their leader being humiliated in such a fashion, the three alpha-imps had already edged closer and closer to the keep's exit, and as they witness your crushing move, they sprint out of the doors and disappear off into Submission. Being left alone with the defeated [npc.race], you ask [npc.herHim], [pc.speech(Why did you come back? I've already dealt with your leader, and I told you to stay away from here!)]
+		Видя, как их предводительницу унижают таким образом, трое альфа-бесов уже подбирались всё ближе к выходу из цитадели, а наблюдая за твоим сокрушительным приемом, они пустились наутек через двери и скрылись в Submission. Оставшись наедине с поверженной [npc.race], ты спрашиваешь [npc.herHim]: [pc.speech(Зачем ты вернулась? Я уже разделался с твоей предводительницей и велел вам держаться отсюда подальше!)]
 	</p>
 	<p>
-		[npc.speech(The Dark Siren will return... )] [npc.name] pants. [npc.speech(So I need to carry out her last orders...)]
+		[npc.speech(Темная Сирена еще вернется...)] — тяжело дыша, произносит [npc.name]. [npc.speech(Так что мне нужно исполнить ее последний приказ...)]
 	</p>
 	<p>
-		[pc.speech(You do realise that she's under lock and key in Lyssieth's palace, right?)] you ask.
+		[pc.speech(Ты же понимаешь, что она заперта в Lyssieth's palace, верно?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[npc.speech(That doesn't matter... She'll find a way to escape... Now please, let me go...)] [npc.name] begs. [npc.speech(I won't cause any more trouble!)]
+		[npc.speech(Это неважно... Она найдет способ сбежать... А теперь, пожалуйста, отпусти меня...)] — умоляет [npc.name]. [npc.speech(Я больше не доставлю хлопот!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -306,56 +305,52 @@
 	
 	<htmlContent tag="KEEP_ALPHA_BRAWLER_SEX"><![CDATA[
 	<p>
-		Deciding that [npc.name] needs to be taught a firm lesson before letting [npc.herHim] go, you reach down and firmly tug the cloth wrappings from around her chest. As the [npc.race]'s [npc.breastShape] [npc.cupSize]-cup breasts bounce free, [npc.she] lets out a startled wail, [npc.speech(Aaah! What are you doing?!)]
+		Решив, что перед тем как отпустить [npc.herHim], тебе стоит преподать [npc.name] хороший урок, ты наклоняешься и решительно срываешь тканевые обмотки с её груди. Когда [npc.race]'s [npc.breastShape] [npc.cupSize]-чашечные груди освобождаются и подпрыгивают, [npc.she] издает испуганный вскрик: [npc.speech(Ааах! Что ты делаешь?!)]
+	</p><p>
+Потянувшись вперёд, чтобы отчаянно собрать обрывки ткани, которые ты бросаешь перед [npc.herHim], [npc.name] подставляет [npc.herself] под твой следующий выпад: ты толкаешь [npc.herHim] вперёд, заставляя встать на четвереньки. Когда ты опускаешься на колени позади [npc.herHim], [npc.name] издаёт испуганный вскрик, переходящий в шокированный крик, когда ты хватаешь [npc.her] за джинсы и решительно стягиваешь их вниз, полностью обнажая пах [npc.her] вместе с [npc.her], сползающими следом.
+</p>
+	<p>
+		[npc.speech(Погоди! Стой!)] — взывает [npc.name], тщетно пытаясь дотянуться рукой назад, чтобы подтянуть [npc.her] джинсы. [npc.speech(Я... я ведь и не собиралась ничего с тобой делать!)]
 	</p>
 	<p>
-		Reaching forwards to desperately try and retrieve the wrappings you throw down before [npc.herHim], [npc.name] leaves [npc.herself] vulnerable to your next move, which is to push [npc.herHim] forwards onto all fours. As you kneel down behind [npc.herHim], [npc.name] lets out a frantic cry, which turns into a shocked scream as you grab hold of [npc.her] jeans and firmly tug them down, fully exposing [npc.her] groin as [npc.her] thong goes down with them.
+		[pc.speech(А тебе кажется, что мне не плевать?)] — бросаешь ты, подаваясь вперед, чтобы схватить [npc.her] за [npc.hips+] и с силой прижаться пахом к [npc.her] [npc.ass]. [pc.speech(Тебя нужно проучить, а это единственный язык, который понимают такие преступницы, как ты.)]
 	</p>
 	<p>
-		[npc.speech(Wait! Stop!)] [npc.name] cries, trying, in vain, to reach back and pull [npc.her] jeans up. [npc.speech(I-I wasn't really going to do anything to you!)]
-	</p>
-	<p>
-		[pc.speech(Does it look like I care?)] you say, reaching forwards to grab [npc.her] [npc.hips+] as you grind your crotch against [npc.her] [npc.ass]. [pc.speech(You need to be taught a lesson, and this is the only language criminals like you understand.)]
-	</p>
-	<p>
-		Ignoring [npc.namePos] cries and protestations, you prepare to have your fun with [npc.herHim]...
+		Игнорируя крики и протесты [npc.namePos], ты готовишься поразвлечься с [npc.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_ALPHA_BRAWLER_SCARED_OFF"><![CDATA[
 	<p>
-		Having dealt with [npc.name], and not wanting to go any further, you stand before [npc.herHim] and declare, [pc.speech(Go on then, get out of here! And don't come back!)]
+		Разобравшись с [npc.name] и не желая продолжать, ты встаешь перед [npc.herHim] и объявляешь: [pc.speech(А теперь — брысь отсюда! И чтобы духу твоего здесь больше не было!)]
 	</p>
 	<p>
-		[npc.speech(I-I won't!)] [npc.name] stutters as [npc.she] stands up. Not even giving you another backwards glance, [npc.she] then runs off down the length of the hallway, before dashing out through the open doors and disappearing off into Submission.
-	</p>
-	<p>
-		Letting out a sigh, you realise that [npc.name] left [npc.her] jacket behind. Despite your command, you get a strong feeling that [npc.she]'ll be back to fetch it the moment you leave, but, if you wanted to, you could always confiscate it as an added punishment. Other than that item of clothing, the keep has absolutely nothing of value in it, so, with nothing more to do, you prepare to move off and continue on your way...
-	</p>
+		[npc.speech(Я... я не вернусь!)] — заикается [npc.name], пока [npc.she] поднимается на ноги. Даже не оглядываясь на тебя, [npc.she] срывается с места и бежит по коридору, вылетает в открытые двери и скрывается в недрах Submission.
+	</p><p>
+Тяжело вздохнув, ты понимаешь, что [npc.name] оставила свою [npc.her] куртку. Несмотря на твой приказ, тебя не покидает стойкое ощущение, что [npc.she] вернется за ней в ту же секунду, как ты уйдешь, но, если захочешь, ты всегда можешь конфисковать её в качестве дополнительного наказания. Помимо этой вещи, в крепости нет абсолютно ничего ценного, так что, раз делать больше нечего, ты готовишься отправиться дальше в свой путь...
+</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_SEX_ALPHA_FORCED"><![CDATA[
 	<p>
-		[npc.Name] collapses to the floor, utterly exhausted. Standing up beside [npc.herHim], you grin down at the well-used [npc.race]. [pc.speech(Maybe now you'll think twice before ordering your gangs to attack people!)]
-	</p>
-	<p>
-		With a pathetic groan, [npc.name] pushes [npc.herself] up onto to [npc.her] knees. As you get your things in order, [npc.she] catches [npc.her] breath, before standing up and staggering towards the door.
-	</p>
+		[npc.Name] обессиленно падает на пол. Встав рядом с [npc.herHim], ты с ухмылкой смотришь на её изрядно потрёпанную [npc.race]. [pc.speech(Может, теперь ты дважды подумаешь, прежде чем приказывать своим бандам нападать на людей!)]
+	</p><p>
+	С жалким стоном [npc.name] подталкивает [npc.herself] на [npc.her] колени. Пока ты приводишь свои дела в порядок, [npc.she] пытается перевести [npc.her] дух, после чего встаёт и, пошатываясь, направляется к двери.
+</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_SEX_ALPHA_FORCED_SCARED_OFF"><![CDATA[
 	<p>
-		Having dealt with [npc.name], you call after [npc.herHim], [pc.speech(Go on then, get out of here! And don't come back!)]
+		Разобравшись с [npc.name], ты кричишь вслед [npc.herHim]: [pc.speech(Ну же, проваливай! И не возвращайся!)]
 	</p>
 	<p>
-		Not even giving you a backwards glance, [npc.she] slips through the open doors and disappears off into Submission.
-	</p>
-	<p>
-		Letting out a sigh, you realise that [npc.name] left [npc.her] jacket behind. Despite your command, you get a strong feeling that [npc.she]'ll be back to fetch it the moment you leave, but, if you wanted to, you could always confiscate it as an added punishment. Other than that item of clothing, the keep has absolutely nothing of value in it, so, with nothing more to do, you prepare to move off and continue on your way...
-	</p>
+		Даже не оглянувшись на тебя, [npc.she] проскальзывает сквозь открытые двери и исчезает в Submission.
+	</p><p>
+Тяжело вздохнув, ты понимаешь, что [npc.name] оставил(а) свою [npc.her] куртку. Несмотря на твой приказ, тебя не покидает стойкое ощущение, что [npc.she] вернется за ней в ту же секунду, как ты уйдешь, но, если захочешь, ты всегда можешь конфисковать её в качестве дополнительного наказания. Помимо этой вещи, в крепости нет абсолютно ничего ценного, так что, раз делать больше нечего, ты готовишься отправиться в путь...
+</p>
 	]]>
 	</htmlContent>
 	
@@ -370,13 +365,13 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE"><![CDATA[
 	<p>
-		[pc.speech(Wait, there's no need for violence,)] you say, holding up your [pc.hands]. [pc.speech(I just have some questions about the demon calling herself 'The Dark Siren'.)]
+		[pc.speech(Погоди, не нужно насилия,)] — говоришь ты, поднимая свои [pc.hands]. [pc.speech(У меня просто есть пара вопросов о демоне, которая называет себя «Темной Сиреной».)]
 	</p>
 	<p>
-		That name causes [npc.name] to halt in [npc.her] tracks, and [npc.she] narrows [npc.her] [npc.eyes] as [npc.she] asks, [npc.speech(Oh yeah, what do you want to know about our leader?)]
+		Это имя заставляет [npc.name] замереть на [npc.her], а [npc.she] прищуривает [npc.her] [npc.eyes], пока [npc.she] спрашивает: [npc.speech(А, ну да, и что именно ты хочешь узнать о нашей предводительнице?)]
 	</p>
 	<p>
-		[pc.speech(Well, I was hoping to get an opportunity to meet with her,)] you explain, [pc.speech(and was wondering if you could help me with that.)]
+		[pc.speech(Ну, я надеялся получить возможность встретиться с ней,)] — объясняешь ты, — [pc.speech(и гадал, не мог бы ты мне в этом помочь.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -386,55 +381,54 @@
 		A wicked grin crosses [npc.namePos] face as [npc.she] hears what it is you're after. With a playful tone in [npc.her] voice, [npc.she] offers [npc.her] terms, [npc.speech(Well, my cock hasn't been sucked in a good long while, so if you get down and show your submission by fixing that, then I'll give you my help in getting to meet with our boss.)]
 	</p>
 	<p>
-		Rubbing the bulge in [npc.her] jeans, [npc.she] continues, [npc.speech(Of course, you can say no, but then we'll just have to give you a beating for barging in here uninvited. So, either way, I'm going to be fucking your face soon enough, so you might as well get something out of it, right?)]
+		Потирая выпуклость в [npc.her] джинсах, [npc.she] продолжает: [npc.speech(Конечно, ты можешь отказаться, но тогда нам просто придется отлупить тебя за то, что вломился сюда без приглашения. Так что в любом случае скоро я буду трахать твое лицо, так что тебе лучше извлечь из этого хоть какую-то выгоду, верно?)]
 	</p>
 	<p>
-		The three alpha-imps laugh and sneer at you as their leader says this, and you wonder whether to do this the easy way, or the hard way...
+		Трое альфа-бесов смеются и насмехаются над тобой вслед за словами их предводителя, и ты гадаешь: пойти ли тебе по легкому пути или по сложному...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AUDIENCE_IMPS"><![CDATA[
 	<p>
-		A wicked grin crosses [npc.namePos] face as [npc.she] hears what it is you're after. With a playful tone in [npc.her] voice, [npc.she] offers [npc.her] terms, [npc.speech(Well, I'd have liked to have got you sucking my cock, but it looks like that's not going to be happening. Instead, how about you get down and show your submission by letting my girls here fuck you, and then I'll give you my help in getting to meet with our boss.)]
-	</p>
+		На лице [npc.namePos] расплывается порочная ухмылка, когда [npc.she] слышит, чего ты хочешь. Игривым тоном в [npc.her] голосе, [npc.she] предлагает [npc.her] условия: [npc.speech(Ну, я бы с удовольствием заставила тебя сосать мой член, но, похоже, этого не случится. Вместо этого, как насчет того, чтобы опуститься на колени и показать свою покорность, позволив моим девчонкам оттрахать тебя? А потом я помогу тебе встретиться с нашей боссом.)]
+	</p><p>
+Сжимая [npc.her] кулаки, [npc.she] продолжает: [npc.speech(Конечно, ты можешь сказать «нет», но тогда нам просто придётся хорошенько тебя отлупить за то, что вломился сюда без приглашения. Так что в любом случае тебя скоро поимеют, так что с таким же успехом можно извлечь из этого хоть какую-то выгоду, верно?)]
+</p>
 	<p>
-		Clenching [npc.her] fists, [npc.she] continues, [npc.speech(Of course, you can say no, but then we'll just have to give you a beating for barging in here uninvited. So, either way, you're going to be getting fucked soon enough, so you might as well get something out of it, right?)]
-	</p>
-	<p>
-		The three alpha-imps laugh and sneer at you as their leader says this, and you wonder whether to do this the easy way, or the hard way...
+		Трое альфа-бесов смеются и насмехаются над тобой вслед за словами их предводителя, и ты гадаешь: пойти ли тебе по легкому пути или по сложному...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AUDIENCE_SEX"><![CDATA[
 	<p>
-		Deciding to do as [npc.name] asks, you sigh, [pc.speech(Ok, I'll do it.)]
+		Решив поступить так, как просит [npc.name], ты вздыхаешь: [pc.speech(Ладно, я сделаю это.)]
 	</p>
 	<p>
-		[npc.speech(Now that's what I like to hear!)] [npc.Name] laughs, before stepping forwards and roughly shoving you down onto your knees in front of [npc.herHim]. Wasting no time, [npc.she] thrusts [npc.her] groin into your face as [npc.she] sneers, [npc.speech(Go on, get it out, slut!)]
+		[npc.speech(Вот это я люблю!)] [npc.Name] смеется, прежде чем сделать шаг вперед и грубо толкнуть тебя на колени перед [npc.herHim]. Не теряя времени, [npc.she] вжимает [npc.her] пах тебе в лицо, пока [npc.she] скалится: [npc.speech(Давай же, выплескивай всё, шлюха!)]
 	</p>
 	<p>
-		Doing as you're told, you reach up and unbutton her jeans, before tugging them down to reveal a black thong barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Continuing with your task, you pull down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
+		Повинуясь приказу, ты тянешься вверх и расстегиваешь её джинсы, а затем стягиваешь их вниз, обнажая черные трусики, которые едва сдерживают массивный бугор [npc.her] эрекции. Твои глаза широко распахиваются, когда ты замечаешь, что прямо над пахом [npc.namePos] у [npc.sheHas] есть черная татуировка в стиле трайбл, дополненная надписью «Подавись им, сучка!», выведенной изящным курсивом. Продолжая свое дело, ты стягиваешь [npc.her] трусики, позволяя [npc.her] [npc.penisGirth], [npc.penisValue] члену, проколотому и украшенному серебряным кольцом, вырваться на свободу прямо перед твоим лицом.
 	</p>
 	<p>
-		[npc.speech(That isn't just for show, bitch,)] [npc.name] snarls, pointing to [npc.her] tattoo. [npc.speech(I want you <i>gagging</i> on it!)]
+		[npc.speech(Это не просто для красоты, сучка,)] [npc.name] рычит, указывая на татуировку [npc.her]. [npc.speech(Я хочу, чтобы ты <i>подавилась</i> им!)]
 	</p>
 	<p>
-		Pushing the tip of [npc.her] cock up against your lips, [npc.name] prepares for you to start giving [npc.herHim] a blowjob...  
+		Прижимая головку [npc.her] члена к твоим губам, [npc.name] готовится к тому, что ты начнешь делать [npc.herHim] минет...  
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AUDIENCE_SEX_IMPS"><![CDATA[
 	<p>
-		Deciding to do as [npc.name] asks, you sigh, [pc.speech(Ok, I'll do it.)]
+		Решив поступить так, как просит [npc.name], ты вздыхаешь: [pc.speech(Ладно, я сделаю это.)]
 	</p>
 	<p>
-		No sooner than these words have left your mouth, the three alpha-imps quickly dash forwards. Two of them use their wings to fly up beside you, and, grabbing hold of your [pc.arms], they let themselves drop and use their body weight to tug you down onto all fours. Immediately surrounding you, they start to grope and squeeze your body as they move you into position. [npc.Name] lets out a derisive laugh, before walking back over to [npc.her] chair and leaving you with the horny imps. As you let out [pc.a_moan], the one groping your groin giggles, [npc2.speech(Mmm, yeah, you're gonna love my cock!)]
+		Не успевают эти слова сорваться с твоих губ, как три альфа-беса стремительно бросаются вперед. Двое из них взмывают на крыльях тебе под стать, вцепляются в твои [pc.arms] и, используя собственный вес, рывком сбивают тебя на четвереньки. Окружив тебя плотным кольцом, они начинают ощупывать и сжимать твое тело, усаживая тебя в нужное положение. [npc.Name] издает насмешливый смешок, после чего возвращается к креслу [npc.her], оставляя тебя на растерзание похотливым бесам. Когда ты издаешь [pc.a_moan], тот, что возится у твоего паха, хихикает: [npc2.speech(Ммм, да, тебе точно понравится мой член!)]
 	</p>
 	<p>
-		Making a submissive noise in agreement, you prepare to get fucked by [npc.namePos] guards...
+		Издавая покорный звук в знак согласия, ты готовишься к тому, что тебя оттрахают [npc.namePos] стражника...
 	</p>
 	]]>
 	</htmlContent>
@@ -445,13 +439,13 @@
 	
 	<htmlContent tag="KEEP_AFTER_SEX_AUDIENCE"><![CDATA[
 	<p>
-		[npc.speech(Good enough, I suppose,)] [npc.name] says, smirking down at you as you collapse to the floor. [npc.speech(A deal's a deal, and I'm sure our boss won't mind meeting someone as submissive as you.)]
+		[npc.speech(Пойдет, пожалуй,)] — произносит [npc.name], самодовольно глядя на тебя сверху вниз, пока ты оседаешь на пол. [npc.speech(Сделка есть сделка, и я уверен, наша хозяйка не будет против встретить такую покорную особу, как ты.)]
 	</p>
 	<p>
-		Pushing yourself back up onto your [pc.feet], you start to get your things in order as [npc.name] continues, [npc.speech(This key is one of three that you need in order to gain access to the stone citadel in the middle of Submission's tunnels. That's where 'The Dark Siren' rules from, if you hadn't already figured it out. The other keys you should be able to get from our other fortresses. Oh, and pay her the proper respect when you meet her. She's a recognised daughter of Lyssieth herself, and if you step out of line, she'll have you locked up and being fucked by her imps before you know what's happening.)]
+		Поднимаясь на свои [pc.feet], ты начинаешь приводить вещи в порядок, пока [npc.name] продолжает: [npc.speech(Этот ключ — один из трех необходимых, чтобы попасть в каменную цитадель в центре туннелей Submission. Именно там правит «Темная Сирена», если ты еще не догадалась. Остальные ключи можно раздобыть в наших других крепостях. Ах да, и проявляй к ней должное уважение при встрече. Она признанная дочь самой Lyssieth, и если ты оступишься, она запрёт тебя и заставит трахаться со своими бесами раньше, чем ты успеешь опомниться.)]
 	</p>
 	<p>
-		Having finally got your belongings sorted out, you look up to see [npc.name] holding out a slender silver key, which has to be no more than three inches in length.
+	Наконец разобравшись со своими вещами, ты поднимаешь взгляд и видишь, что [npc.name] протягивает тебе тонкий серебряный ключик длиной не больше трех дюймов.
 	</p>
 	]]>
 	</htmlContent>
@@ -462,10 +456,10 @@
 	
 	<htmlContent tag="KEEP_AFTER_SEX_AUDIENCE_KEY"><![CDATA[
 	<p>
-		Taking the key, you thank [npc.name] and turn to leave. As you're heading towards the doors, the [npc.race] calls after you, [npc.speech(Come back any time. My girls and I can always do with a bit of fun!)]
+	Взяв ключ, ты благодаришь [npc.name] и разворачиваешься, чтобы уйти. Когда ты направляешься к дверям, [npc.race] окликает тебя: [npc.speech(Заходи в любое время. Мне и моим девчонкам всегда не помешает немного веселья!)]
 	</p>
 	<p>
-		To the sounds of laughter and lewd taunts, you step out of the keep and into the courtyard beyond. Clutching the small key in your hand, you wonder where you should head to next...
+	Под звуки смеха и похотливых насмешек ты выходишь из цитадели во внутренний двор. Сжимая в руке маленький ключик, ты гадаешь, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -480,153 +474,153 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_VICTORY_KEY"><![CDATA[
 	<p>
-		You let out a relieved sigh as [npc.name] and [npc.her] guards slump down onto the floor before you, defeated. Stepping forwards, you look down at the [npc.race] and ask, [pc.speech(Why do you do this? Getting all those imps to attack people in Submission, I mean.)]
+	Ты облегченно вздыхаешь, когда поверженные стражники [npc.name] и [npc.her] тяжело опускаются на пол перед тобой. Сделав шаг вперед, ты смотришь на [npc.race] и спрашиваешь: [pc.speech(Зачем ты это делаешь? Ну, заставляешь всех этих бесов нападать на людей в Submission.)]
 	</p>
 	<p>
-		[npc.speech(She told us to...)] [npc.name] pants. [npc.speech(Our leader, the Dark Siren... She said we need to assert dominance... You've probably already seen it, seeing as you're here... That citadel in the middle of Submission's tunnels. That's where she is...)]
+		[npc.speech(Она велела нам...)] прерывисто отвечает [npc.name]. [npc.speech(Наша предводительница, Темная Сирена... Она сказала, что мы должны утвердить свое превосходство... Ты, должно быть, уже видел это, раз уж ты здесь... Та цитадель посреди туннелей Submission. Вот где она обитает...)]
 	</p>
 	<p>
-		[pc.speech(I see. So you're just following orders, huh?)] you ask, the tone of your voice making it clear that you don't approve of such an excuse.
+		[pc.speech(Понятно. Значит, ты просто выполняешь приказы, да?)] — спрашиваешь ты, и твой тон ясно дает понять, что такое оправдание тебя не устраивает.
 	</p>
 	<p>
-		[npc.speech(Yes... Just... Please, let me go... I-I can give you one of the keys needed to get inside that place in exchange,)] [npc.name] offers, reaching into a pocket of [npc.her] jeans and producing a slender silver key, no more than three inches in length. Giving it to you, [npc.name] continues, still panting, [npc.speech(You'll need keys from the other two gang leaders if you want to confront her... Now just... Please let me go!)]
+		[npc.speech(Да... Просто... Пожалуйста, отпусти меня... Я-я могу отдать тебе один из ключей, чтобы попасть внутрь, взамен,)] [npc.name] предлагает, запуская руку в карман своих [npc.her] джинсов и доставая тонкий серебряный ключ длиной не больше трех дюймов. Протягивая его тебе, [npc.name] продолжает, всё еще тяжело дыша: [npc.speech(Тебе понадобятся ключи от двух других главарей банд, если хочешь противостоять ей... А теперь просто... Пожалуйста, отпусти меня!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_VICTORY"><![CDATA[
 	<p>
-		You let out a relieved sigh as [npc.name] and [npc.her] guards slump down onto the floor before you, defeated. Stepping forwards, you look down at the [npc.race] and ask, [pc.speech(Why did you come back? I told you to stay away from here!)]
+	Ты облегченно вздыхаешь, когда поверженные стражники [npc.name] и [npc.her] тяжело опускаются на пол перед тобой. Сделав шаг вперед, ты смотришь на [npc.race] и спрашиваешь: [pc.speech(Зачем ты вернулась? Я же велел тебе держаться отсюда подальше!)]
 	</p>
 	<p>
-		[npc.speech(The Dark Siren... )] [npc.name] pants. [npc.speech(She said I had to...)]
+		[npc.speech(Тёмная Сирена... )] тяжело дышит [npc.name]. [npc.speech(Она сказала, что я должна...)]
 	</p>
 	<p>
-		[pc.speech(Still blindly following her orders, huh?)] you ask, the tone of your voice making it clear that you don't approve of such an excuse.
+		[pc.speech(Всё так же слепо следуешь её приказам, да?)] — спрашиваешь ты, и твой тон ясно даёт понять, что такое оправдание тебя не устраивает.
 	</p>
 	<p>
-		[npc.speech(Yes... Just... Please, let me go...)] [npc.name] begs. [npc.speech(I won't cause any more trouble!)]
+		[npc.speech(Да... Просто... Пожалуйста, отпусти меня...)] — умоляет [npc.name]. [npc.speech(Я больше не доставлю проблем!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_VICTORY_DS_DEFEATED"><![CDATA[
 	<p>
-		You let out a relieved sigh as [npc.name] and [npc.her] guards slump down onto the floor before you, defeated. Stepping forwards, you look down at the [npc.race] and ask, [pc.speech(Why did you come back? I told you to stay away from here!)]
+	Ты облегченно вздыхаешь, когда поверженные стражники [npc.name] и [npc.her] тяжело опускаются на пол перед тобой. Сделав шаг вперед, ты смотришь на [npc.race] и спрашиваешь: [pc.speech(Зачем ты вернулась? Я же велел тебе держаться отсюда подальше!)]
 	</p>
 	<p>
-		[npc.speech(The Dark Siren will return... )] [npc.name] pants. [npc.speech(So I need to carry out her last orders...)]
+		[npc.speech(Темная Сирена еще вернется...)] — тяжело дыша, произносит [npc.name]. [npc.speech(Так что мне нужно исполнить ее последний приказ...)]
 	</p>
 	<p>
-		[pc.speech(You do realise that she's under lock and key in Lyssieth's palace, right?)] you ask.
+		[pc.speech(Ты же понимаешь, что она заперта в Lyssieth's palace, верно?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[npc.speech(That doesn't matter... She'll find a way to escape... Now please, let me go...)] [npc.name] begs. [npc.speech(I won't cause any more trouble!)]
+		[npc.speech(Это неважно... Она найдет способ сбежать... А теперь, пожалуйста, отпусти меня...)] — умоляет [npc.name]. [npc.speech(Я больше не доставлю хлопот!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_VICTORY_SCARE_OFF"><![CDATA[
 	<p>
-		Having dealt with [npc.name], and not wanting to go any further, you stand before [npc.herHim] and [npc.her] imps and declare, [pc.speech(Go on then, get out of here, all of you! And don't come back!)]
+	Разобравшись с [npc.name] и не желая продолжать путь, ты встаешь перед бесами [npc.herHim] и [npc.her] и объявляешь: [pc.speech(А ну, живо, все вон отсюда! И чтобы больше не возвращались!)]
 	</p>
 	<p>
-		[npc.speech(W-We won't!)] [npc.name] stutters as [npc.she] stands up. Not even giving you another backwards glance, [npc.she] runs off down the length of the hallway, with [npc.her] imp guards close behind. Dashing out through the open doors, the gang disappear off into Submission, leaving you alone in the now-empty keep.
+		[npc.speech(Н-мы не будем!)] [npc.name] заикается, пока [npc.she] встает. Даже не оглядываясь на тебя, [npc.she] убегает по коридору, а следом за ней мчатся [npc.her] бесов-стражников. Выскочив в открытые двери, банда скрывается в Submission, оставляя тебя в одиночестве в опустевшем замке.
 	</p>
 	<p>
-		Looking around, you see that there's absolutely nothing of value in here, so, with nothing more to do, you prepare to move off and continue on your way...
+		Оглядевшись, ты понимаешь, что здесь нет абсолютно ничего ценного, так что, раз делать больше нечего, ты готовишься отправиться дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_COMBAT_VICTORY_SEX"><![CDATA[
 	<p>
-		Wanting to have a little fun with [npc.name] and [npc.her] imps before you let them go, you reach down and start moving them into position. As you do this, the [npc.race] lets out a surprisingly erotic moan, before thrusting [npc.her] [npc.hips] towards you. [npc.speech(Oh yeah, come on then, suck my cock!)]
+		Желая немного развлечься с бесами [npc.name] и [npc.her] перед тем, как отпустить их, ты наклоняешься и начинаешь приводить их в нужное положение. Пока ты это делаешь, [npc.race] издает удивительно эротичный стон, после чего подставляет тебе свои [npc.her] [npc.hips]. [npc.speech(О да, ну же, соси мой член!)]
 	</p>
 	<p>
-		[pc.speech(I'll do whatever I feel like,)] you respond, giving [npc.her] [npc.ass] a quick smack to remind [npc.herHim] who's in charge.
+		[pc.speech(Буду делать всё, что захочу,)] отвечаешь ты, отвешивая [npc.her] [npc.ass] звонкую пощечину, чтобы напомнить [npc.herHim], кто здесь главный.
 	</p>
 	<p>
-		Your disciplinary action causes [npc.name] to let out another delighted moan, and you grin as you realise that she's getting turned on by being used like this...
+		Твоя «дисциплинарная мера» заставляет [npc.name] снова издать восторженный стон, и ты ухмыляешься, понимая, что её возбуждает такое обращение...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_COMBAT_VICTORY_SEX_GENTLE"><![CDATA[
 	<p>
-		Wanting to have a little fun with [npc.name] and [npc.her] imps before you let them go, you reach down and start gently moving them into position. As you do this, the [npc.race] lets out a surprisingly erotic moan, before thrusting [npc.her] [npc.hips] towards you. [npc.speech(Oh yeah, come on then, suck my cock!)]
+		Желая немного развлечься с бесами [npc.name] и [npc.her] перед тем, как отпустить их, ты наклоняешься и начинаешь осторожно приводить их в нужное положение. Пока ты это делаешь, [npc.race] издает удивительно эротичный стон, после чего подставляет тебе свои [npc.her] [npc.hips]. [npc.speech(О да, ну же, соси мой член!)]
 	</p>
 	<p>
-		[pc.speech(I'll do as I please,)] you respond, giving [npc.her] [npc.ass] a soft smack to remind [npc.herHim] who's in charge.
+		[pc.speech(Буду делать всё, что захочу,)] — отвечаешь ты, давая [npc.her] [npc.ass] легкую пощечину, чтобы напомнить [npc.herHim], кто здесь главный.
 	</p>
 	<p>
-		Your disciplinary action causes [npc.name] to let out another delighted moan, and you grin as you realise that she's getting turned on by being used like this...
+		Твоя «дисциплинарная мера» заставляет [npc.name] снова издать восторженный стон, и ты ухмыляешься, понимая, что её возбуждает такое обращение...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_COMBAT_VICTORY_SEX_ROUGH"><![CDATA[
 	<p>
-		Wanting to have a little fun with [npc.name] and [npc.her] imps before you let them go, you reach down and start roughly forcing them into position. As you do this, the [npc.race] lets out a surprisingly erotic moan, before thrusting [npc.her] [npc.hips] towards you. [npc.speech(Oh yeah, come on then, suck my cock!)]
+		Захотев немного развлечься с бесами [npc.name] и [npc.her] перед тем, как отпустить их, ты наклоняешься и начинаешь грубо ставить их в нужную позу. В этот момент [npc.race] издает удивительно эротичный стон, а затем выпячивает [npc.her] [npc.hips] тебе навстречу. [npc.speech(О да, давай же, соси мой член!)]
 	</p>
 	<p>
-		[pc.speech(Don't you <i>dare</i> try and tell me what to do!)] you angrily respond, giving [npc.her] [npc.ass] a sharp slap to remind [npc.herHim] who's in charge.
+		[pc.speech(Не смей, <i>черт возьми,</i> указывать мне, что делать!)] — гневно отвечаешь ты, отвешивая [npc.her] [npc.ass] резкий шлепок, чтобы напомнить [npc.herHim], кто здесь главный.
 	</p>
 	<p>
-		Your disciplinary action causes [npc.name] to let out another delighted moan, and you grin as you realise that she's getting turned on by being used like this...
+		Твоя «дисциплинарная мера» заставляет [npc.name] снова издать восторженный стон, и ты ухмыляешься, понимая, что её возбуждает такое обращение...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_COMBAT_VICTORY_SEX_SUBMIT"><![CDATA[
 	<p>
-		Feeling sorry for [npc.name] and [npc.her] imps, you bend down next to [npc.herHim] and ask, [pc.speech(Are you ok? Sorry, I think I went a little too far...)]
+		Почувствовав жалость к бесам [npc.name] и [npc.her], ты наклоняешься к [npc.herHim] и спрашиваешь: [pc.speech(Ты в порядке? Прости, кажется, я немного перегнула палку...)]
 	</p>
 	<p>
-		[npc.NamePos] worried expression quickly shifts into a devious grin as [npc.she] realises that you're going to be easy to take advantage of. Grabbing hold of your wrists, [npc.she] snaps, [npc.speech(No, I'm not ok! Now help me up already!)]
+		Обеспокоенное выражение лица [npc.NamePos] быстро сменяется лукавой ухмылкой, когда [npc.she] понимает, что тобой будет легко воспользоваться. Схватив тебя за запястья, [npc.she] резко бросает: [npc.speech(Нет, я не в порядке! А теперь помоги мне подняться!)]
 	</p>
 	<p>
-		Submissively doing as you're told, you assist [npc.name] as [npc.she] pushes [npc.herself] to [npc.her] feet. Refusing to let go of your wrists, [npc.she] suddenly yanks you forwards, pressing you tightly against [npc.herHim] as [npc.she] growls, [npc.speech(So how are you going to apologise for what you did, you dumb bitch?!)]
+		Покорно выполняя приказ, ты помогаешь [npc.name], пока [npc.she] ставит [npc.herself] на [npc.her] ноги. Не выпуская твоих запястий, [npc.she] внезапно дергает тебя вперед, плотно прижимая к [npc.herHim], пока [npc.she] рычит: [npc.speech(Ну и как ты собираешься извиняться за то, что натворила, тупая сучка?!)]
 	</p>
 	<p>
-		Being held so close to [npc.her] body, you're able to suddenly feel something hard pressing against your [pc.leg], and you glance down to see the distinctive bulge of a fat cock pressing out against the tight fabric of [npc.namePos] jeans. Gulping at the sight of it, you look back up into the [npc.race]'s [npc.eyeColour] eyes, before offering, [pc.speech(I-I could take care of that for you...)]
+		Из-за того, что тебя так крепко прижали к телу [npc.her], ты внезапно чувствуешь, как что-то твердое упирается тебе в [pc.leg]; ты опускаешь взгляд и видишь отчетливый бугор толстого члена, обтянутого тесной тканью [npc.namePos] джинсов. Сглотнув от увиденного, ты снова смотришь в [npc.eyeColour] глаза [npc.race] и робко предлагаешь: [pc.speech(Я... я могла бы позаботиться об этом для тебя...)]
 	</p>
 	<p>
-		[npc.speech(Now that's what I like to hear!)] [npc.Name] snaps, before roughly shoving you down onto your knees in front of [npc.herHim] and thrusting [npc.her] groin into your face. [npc.speech(Go on, get it out, slut!)]
+		[npc.speech(Вот это я люблю!)] [npc.Name] резко бросает, прежде чем грубо толкнуть тебя на колени перед [npc.herHim] и прижать [npc.her] пах к твоему лицу. [npc.speech(Давай, высасывай всё до капли, сучка!)]
 	</p>
 	<p>
-		Doing as you're told, you reach up and unbutton her jeans, before tugging them down to reveal a black thong barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Continuing with your task, you pull down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
+		Повинуясь приказу, ты тянешься вверх и расстегиваешь её джинсы, а затем стягиваешь их вниз, обнажая черные трусики, которые едва сдерживают массивный бугор [npc.her] эрекции. Твои глаза широко распахиваются, когда ты замечаешь, что прямо над пахом [npc.namePos] у [npc.sheHas] есть черная татуировка в стиле трайбл, дополненная надписью «Подавись им, сучка!», выведенной изящным курсивом. Продолжая свое дело, ты стягиваешь [npc.her] трусики, позволяя [npc.her] [npc.penisGirth], [npc.penisValue] члену, проколотому и украшенному серебряным кольцом, вырваться на свободу прямо перед твоим лицом.
 	</p>
 	<p>
-		[npc.speech(That isn't just for show, bitch,)] [npc.name] snarls, pointing to [npc.her] tattoo. [npc.speech(I want you <i>gagging</i> on it!)]
+		[npc.speech(Это не просто для красоты, сучка,)] [npc.name] рычит, указывая на татуировку [npc.her]. [npc.speech(Я хочу, чтобы ты <i>подавилась</i> им!)]
 	</p>
 	<p>
-		Pushing the tip of [npc.her] cock up against your lips, [npc.name] prepares for you to start giving [npc.herHim] a blowjob...  
+		Прижимая головку [npc.her] члена к твоим губам, [npc.name] готовится к тому, что ты начнешь делать [npc.herHim] минет...  
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_COMBAT_VICTORY_SEX_SUBMIT_IMPS"><![CDATA[
 	<p>
-		Feeling sorry for [npc.name] and [npc.her] imps, you bend down next to [npc.herHim] and ask, [pc.speech(Are you ok? Sorry, I think I went a little too far...)]
+		Почувствовав жалость к бесам [npc.name] и [npc.her], ты наклоняешься к [npc.herHim] и спрашиваешь: [pc.speech(Ты в порядке? Прости, кажется, я немного перегнула палку...)]
 	</p>
 	<p>
-		[npc.NamePos] worried expression quickly shifts into a devious grin as [npc.she] realises that you're going to be easy to take advantage of. Grabbing hold of your wrists, [npc.she] snaps, [npc.speech(No, I'm not ok! Now help me up already!)]
+		Обеспокоенное выражение лица [npc.NamePos] быстро сменяется лукавой ухмылкой, когда [npc.she] понимает, что тобой будет легко воспользоваться. Схватив тебя за запястья, [npc.she] резко бросает: [npc.speech(Нет, я не в порядке! А теперь помоги мне подняться!)]
 	</p>
 	<p>
-		Submissively doing as you're told, you assist [npc.name] as [npc.she] pushes [npc.herself] to [npc.her] feet. Refusing to let go of your wrists, [npc.she] suddenly yanks you forwards, pressing you tightly against [npc.herHim] as [npc.she] growls, [npc.speech(So how are you going to apologise for what you did, you dumb bitch?!)]
+		Покорно выполняя приказ, ты помогаешь [npc.name], пока [npc.she] ставит [npc.herself] на [npc.her] ноги. Не выпуская твоих запястий, [npc.she] внезапно дергает тебя вперед, плотно прижимая к [npc.herHim], пока [npc.she] рычит: [npc.speech(Ну и как ты собираешься извиняться за то, что натворила, тупая сучка?!)]
 	</p>
 	<p>
-		Being held so close to [npc.her] body, you're able to suddenly feel something hard pressing against your [pc.leg], and you glance down to see the distinctive bulge of a fat cock pressing out against the tight fabric of [npc.namePos] jeans. Gulping at the sight of it, you look back up into the [npc.race]'s [npc.eyeColour] eyes, before offering, [pc.speech(I-I could take care of that for you...)]
+		Из-за того, что тебя так крепко прижали к телу [npc.her], ты внезапно чувствуешь, как что-то твердое упирается тебе в [pc.leg]; ты опускаешь взгляд и видишь отчетливый бугор толстого члена, обтянутого тесной тканью [npc.namePos] джинсов. Сглотнув от увиденного, ты снова смотришь в [npc.eyeColour] глаза [npc.race] и робко предлагаешь: [pc.speech(Я... я могла бы позаботиться об этом для тебя...)]
 	</p>
 	<p>
-		[npc.speech(With your mouth all sealed up like that?!)] [npc.Name] snaps, before roughly shoving you down onto all fours in front of [npc.herHim]. [npc.speech(No, if I can't fuck someone's throat, then I'm not interested. My girls, on the other hand...)]
+		[npc.speech(С таким-то плотно сжатым ртом?!)] — огрызается [npc.Name], прежде чем грубо толкнуть тебя на четвереньки перед [npc.herHim]. [npc.speech(Нет, если я не могу оттрахать кому-нибудь глотку, то мне это и не интересно. А вот мои девки...)]
 	</p>
 	<p>
-		As [npc.she] says this, the three alpha-imps move forwards, quickly surrounding you as they start to grope and squeeze your body. [npc.Name] lets out a derisive laugh, before walking back over to [npc.her] chair and leaving you with the horny imps. As you let out [pc.a_moan], the one groping your groin giggles, [npc2.speech(Mmm, yeah, you're gonna love my cock!)]
+		Пока [npc.she] говорит это, три альфа-беса подаются вперед, быстро окружая тебя и начиная ощупывать и сжимать твое тело. [npc.Name] издает насмешливый смешок, после чего возвращается к [npc.her] chair, оставляя тебя на растерзание похотливым бесам. Когда ты издаешь [pc.a_moan], тот, что лапает твой пах, хихикает: [npc2.speech(Ммм, да, тебе точно понравится мой член!)]
 	</p>
 	<p>
-		Making a submissive noise in agreement, you prepare to get fucked by [npc.namePos] guards...
+		Издавая покорный звук в знак согласия, ты готовишься к тому, что тебя оттрахают [npc.namePos] стражника...
 	</p>
 	]]>
 	</htmlContent>
@@ -639,33 +633,33 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_ORAL"><![CDATA[
 	<p>
-		A wicked grin crosses [npc.namePos] face as [npc.she] watches you fall to the floor, defeated. With an evil tone in [npc.her] voice, [npc.she] steps forwards and growls, [npc.speech(When's the last time you sucked demon cock, bitch?)]
+		На лице [npc.namePos] расплывается порочная ухмылка, пока [npc.she] наблюдает за тем, как ты, побежденная, падаешь на пол. Злобным тоном в голосе [npc.her], [npc.she] делает шаг вперед и рычит: [npc.speech(Когда ты в последний раз сосала демонский член, сучка?)]
 	</p>
 	<p>
-		Looking up and letting out an ambiguous groan, you see the [npc.race] rubbing a thick bulge in [npc.her] jeans. As your eyes open wide, [npc.she] snaps [npc.her] fingers and points to [npc.her] groin, [npc.speech(Get over here and take it out for me, you dumb slut.)]
+		Подняв взгляд и издав неопределенный стон, ты видишь, как [npc.race] потирает внушительный бугорок под [npc.her] джинсами. Когда твои глаза широко распахиваются, [npc.she] щелкает [npc.her] пальцами и указывает на [npc.her] пах: [npc.speech(А ну иди сюда и достань его для меня, тупая шлюха.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_IMPS"><![CDATA[
 	<p>
-		A wicked grin crosses [npc.namePos] face as [npc.she] watches you fall to the floor, defeated. With an evil tone in [npc.her] voice, [npc.she] steps forwards and growls, [npc.speech(Shame about your mouth being all sealed up like that. Looks like I'll just have to give you to my girls.)]
+		На лице [npc.namePos] расплывается порочная ухмылка, пока [npc.she] наблюдает за тем, как ты, побежденная, падаешь на пол. Злобным тоном в голосе [npc.her], [npc.she] делает шаг вперед и рычит: [npc.speech(Жаль, что твой рот так плотно запечатан. Похоже, придется отдать тебя моим девчонкам.)]
 	</p>
 	<p>
-		Looking up and letting out a groan, you see the three imps rushing forwards to take advantage of you...
+		Подняв взгляд и издав стон, ты видишь, как три беса бросаются вперед, чтобы воспользоваться тобой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX"><![CDATA[
 	<p>
-		Doing as you're told, you crawl forwards, before reaching up and unbuttoning [npc.namePos] jeans. Tugging them down, you reveal a black thong which is barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Continuing with your task, you pull down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
+		Повинуясь приказу, ты ползешь вперед, после чего тянешься вверх и расстегиваешь джинсы [npc.namePos]. Стягивая их вниз, ты обнаруживаешь черные трусики, которые едва сдерживают массивный бугорок эрекции [npc.her]. Твои глаза широко распахиваются, когда ты замечаешь, что прямо над пахом [npc.namePos] у [npc.sheHas] красуется черная племенная татуировка, дополненная надписью «Подавись им, сучка!», выведенной изящным курсивом. Продолжая свое дело, ты стягиваешь [npc.her] трусики, позволяя [npc.her] [npc.penisGirth], [npc.penisValue] члену, проколотому и украшенному серебряным кольцом, выпрыгнуть прямо перед тобой.
 	</p>
 	<p>
-		[npc.speech(That isn't just for show, bitch,)] [npc.name] snarls, pointing to [npc.her] tattoo. [npc.speech(I want you <i>gagging</i> on it!)]
+		[npc.speech(Это не просто для красоты, сучка,)] [npc.name] рычит, указывая на татуировку [npc.her]. [npc.speech(Я хочу, чтобы ты <i>подавилась</i> им!)]
 	</p>
 	<p>
-		Pushing the tip of [npc.her] cock up against your lips, [npc.name] prepares for you to start giving [npc.herHim] a blowjob...  
+		Прижимая головку [npc.her] члена к твоим губам, [npc.name] готовится к тому, что ты начнешь делать [npc.herHim] минет...  
 	</p>
 	]]>
 	</htmlContent>
@@ -675,65 +669,65 @@
 		Happily doing as you're told, you crawl forwards, before reaching up and quickly unbuttoning [npc.namePos] jeans. Tugging them down, you reveal a black thong which is barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Eagerly continuing with your task, you pull down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
 	</p>
 	<p>
-		[npc.speech(That isn't just for show, bitch,)] [npc.name] snarls, pointing to [npc.her] tattoo. [npc.speech(I want you <i>gagging</i> on it!)]
+		[npc.speech(Это не просто для красоты, сучка,)] [npc.name] рычит, указывая на татуировку [npc.her]. [npc.speech(Я хочу, чтобы ты <i>подавилась</i> им!)]
 	</p>
 	<p>
-		Letting out [pc.a_moan+], you lean forwards and give the tip of [npc.her] cock a hungry lick, desperate to start giving [npc.herHim] a blowjob...  
+		Издавая [pc.a_moan+], ты наклоняешься вперед и жадно слизываешь головку [npc.her] члена, отчаянно желая поскорее начать отсасывать [npc.herHim]...  
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_RESIST"><![CDATA[
 	<p>
-		Refusing to do as you're told, you turn and try to crawl towards the exit, but before you've even managed to place one [pc.hand] in front of the other, [npc.name] steps around in front of you and ruthlessly kicks you down onto your side. [npc.speech(Dumb bitch! You'll pay for disobeying me!)]
+		Отказываясь подчиняться, ты разворачиваешься и пытаешься ползти к выходу, но не успеваешь ты и поставить одну [pc.hand] перед другой, как [npc.name] обходит тебя спереди и безжалостно пинает на бок. [npc.speech(Тупая сучка! Ты еще поплатишься за непослушание!)]
 	</p>
 	<p>
-		Looking up at the cruel [npc.race], you see [npc.herHim] quickly unbuttoning [npc.her] jeans. Tugging them down, [npc.she] reveals a black thong which is barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Too exhausted to even manage to get to your feet, you're helpless to do anything but watch as [npc.name] pulls down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
+		Глядя снизу вверх на жестокого [npc.race], ты видишь, как [npc.herHim] быстро расстегивает [npc.her] джинсы. Сдергивая их вниз, [npc.she] обнажает черные стринги, которые едва сдерживают массивный бугор [npc.her] эрекции. Твои глаза расширяются, когда ты замечаешь, что прямо над пахом [npc.namePos] у [npc.sheHas] красуется черная татуировка в стиле трайбл, дополненная надписью «Подавись им, сучка!», выведенной изящным курсивом. Слишком измотанная, чтобы даже попытаться встать на ноги, ты не можешь ничего сделать, кроме как наблюдать, как [npc.name] стягивает [npc.her] стринги, позволяя [npc.her] [npc.penisGirth], [npc.penisValue] члену, проколотому и украшенному серебряным кольцом, вырваться на свободу прямо перед твоим лицом.
 	</p>
 	<p>
-		[npc.speech(That isn't just for show, bitch,)] [npc.name] snarls, pointing to [npc.her] tattoo. [npc.speech(You're going to be <i>gagging</i> on it!)]
+		[npc.speech(Это не просто для красоты, сучка,)] — рычит [npc.name], указывая на татуировку [npc.her]. [npc.speech(Ты будешь <i>давиться</i> им!)]
 	</p>
 	<p>
-		Letting out a frantic wail, you try once again to crawl away from [npc.name], but your efforts prove to be futile, as [npc.she] grabs hold of
+		Издавая отчаянный вопль, ты снова пытаешься уползти от [npc.name], но твои усилия тщетны, так как [npc.she] хватает тебя за
 		#IF pc.hasHorns()
-		#THEN your [pc.horns]
+		#THEN твои [pc.horns]
 		#ELSE
 			#IF pc.hasHair()
-			#THEN your [pc.hair(true)]
+			#THEN твои [pc.hair(true)]
 			#ELSE your head
 			#ENDIF
 		#ENDIF
-		 and forces your face into [npc.her] groin. Struggling and beating against the [npc.race]'s [npc.legs], you can do nothing but scream as [npc.she] slaps the head of [npc.her] [npc.cock+] against your [pc.face]. [npc.speech(Save your breath, bitch. You're going to need it!)]
+		 и силой прижимает твое лицо к паху [npc.her]. Тщетно борясь и колотя по [npc.legs] [npc.race], ты можешь только кричать, когда [npc.she] с силой впечатывает головку [npc.her] [npc.cock+] в твой [pc.face]. [npc.speech(Прибереги дыхание, сучка. Оно тебе еще пригодится!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_IMPS"><![CDATA[
 	<p>
-		The three alpha-imps move forwards, before quickly surrounding you and starting to grope and squeeze your body. [npc.Name] lets out a derisive laugh, before walking back over to [npc.her] chair and leaving you with the horny imps. As you let out [pc.a_moan], the one groping your groin giggles, [npc2.speech(Mmm, yeah, you're gonna love my cock!)]
+		Трое альфа-бесов шагают вперед, быстро окружают тебя и начинают ощупывать и сжимать твое тело. [npc.Name] издает насмешливый смешок, после чего возвращается к креслу [npc.her], оставляя тебя на растерзание похотливым бесам. Когда ты издаешь [pc.a_moan], тот, что ласкает твой пах, хихикает: [npc2.speech(Ммм, да, тебе чертовски понравится мой член!)]
 	</p>
 	<p>
-		Making a submissive noise in agreement, you prepare to get fucked by [npc.namePos] guards...
+		Издавая покорный звук в знак согласия, ты готовишься к тому, что тебя оттрахают [npc.namePos] стражника...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_IMPS_EAGER"><![CDATA[
 	<p>
-		The three alpha-imps move forwards, before quickly surrounding you and starting to grope and squeeze your body. [npc.Name] lets out a derisive laugh, before walking back over to [npc.her] chair and leaving you with the horny imps. As you let out [pc.a_moan+], the one groping your groin giggles, [npc2.speech(Mmm, yeah, you're gonna love my cock!)]
+		Трое альфа-бесов шагают вперед, быстро окружают тебя и начинают ощупывать и сжимать твое тело. [npc.Name] издает насмешливый смешок, после чего возвращается к креслу [npc.her], оставляя тебя на растерзание похотливым бесам. Когда ты издаешь [pc.a_moan+], тот, что ласкает твой пах, хихикает: [npc2.speech(Ммм, да, тебе чертовски понравится мой член!)]
 	</p>
 	<p>
-		Making a submissive noise in agreement, you eagerly prepare to get fucked by [npc.namePos] guards...
+		Издавая покорный звук в знак согласия, ты с предвкушением готовишься к тому, что тебя оттрахают стражники [npc.namePos]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_IMPS_RESIST"><![CDATA[
 	<p>
-		The three alpha-imps move forwards, before quickly surrounding you and starting to grope and squeeze your body. [npc.Name] lets out a derisive laugh, before walking back over to [npc.her] chair and leaving you with the horny imps. As you struggle and try to crawl away, the one groping your groin giggles, [npc2.speech(You're goin' nowhere! Don't worry though, bitch, you're gonna love my cock!)]
+		Трое альфа-бесов шагают вперед, быстро окружают тебя и начинают ощупывать и сжимать твое тело. [npc.Name] издает насмешливый смешок, после чего возвращается к креслу [npc.her], оставляя тебя на растерзание похотливым бесам. Пока ты извиваешься, пытаясь уползти, тот, что ласкает твой пах, хихикает: [npc2.speech(Никуда ты не денешься! Но не волнуйся, сучка, тебе чертовски понравится мой член!)]
 	</p>
 	<p>
-		Letting out a frantic scream, you do your best to resist as [npc.namePos] guards prepare to fuck you...
+		Издавая отчаянный крик, ты изо всех сил пытаешься сопротивляться, пока стражники [npc.namePos] готовятся трахнуть тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -745,13 +739,13 @@
 	
 	<htmlContent tag="KEEP_AFTER_SEX_PACIFIED"><![CDATA[
 	<p>
-		You collapse to the floor, and with a satisfied [pc.moan], you look up to see [npc.name] grinning down at you.
+		Ты валишься на пол, и, видя довольного [pc.moan], ты поднимаешь взгляд и видишь ухмыляющегося сверху вниз [npc.name].
 	</p>
 	<p>
-		[npc.speech(Not bad, slut,)] [npc.she] says. [npc.speech(You can come back any time, if this is what you're after! For now though, my girls and I have got things to discuss. I'm sure the guards at the gate have got some imp cock for you to suck, so go bother them.)]
+		[npc.speech(Неплохо, шлюха,)] — говорит [npc.she]. [npc.speech(Можешь заглядывать к нам в любое время, если тебе это по душе! Но пока что у нас с девчонками есть дела. Уверена, стражники у ворот с радостью подсунут тебе какой-нибудь бесчий член, чтобы ты его отсосала, так что иди, донимай их.)]
 	</p>
 	<p>
-		To the sound of [npc.namePos] impatient foot tapping on the uneven wooden floor, you set about getting your things in order. Once done, you let out one last submissive whine, before heading over to the keep's doors and preparing to take your leave...
+		Под нетерпеливое постукивание [npc.namePos] каблуками по неровному деревянному полу, ты приводишь свои вещи в порядок. Закончив, ты издаешь последний покорный скулеж и направляешься к дверям цитадели, готовясь уйти...
 	</p>
 	]]>
 	</htmlContent>
@@ -763,23 +757,23 @@
 	
 	<htmlContent tag="KEEP_AFTER_SEX_VICTORY"><![CDATA[
 	<p>
-		[npc.Name] and [npc.her] imps collapse to the floor, utterly exhausted. Quickly getting your things in order, you can't help but smile as you hear the [npc.race] panting, [npc.speech(Oh... Fuck...)]
+		[npc.Name] и [npc.her] бесов валятся на пол, совершенно измотанные. Быстро собирая вещи, ты невольно улыбаешься, слыша тяжелое [npc.race] дыхание и [npc.speech(Ох... Блять...)]
 	</p>	
 	<p>
-		Grinning down at the worn out gang, you wonder if you should tell them to get out of here right away, or perhaps you could first take this opportunity to confiscate their belongs...
+		Усмехаясь над измотанной шайкой, ты раздумываешь: стоит ли велеть им немедленно убираться отсюда или сначала воспользоваться случаем и конфисковать их пожитки...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_SEX_VICTORY_SCARE_OFF"><![CDATA[
 	<p>
-		[pc.speech(Get out of here, all of you! And don't come back!)] you order, smirking down at the gang.
+		[pc.speech(А ну пошли вон, все до одного! И чтобы ноги вашей здесь больше не было!)] — приказываешь ты, самодовольно глядя на банду сверху вниз.
 	</p>
 	<p>
-		[npc.speech(W-We won't!)] [npc.name] stutters as [npc.she] stands up. Not even giving you another backwards glance, [npc.she] runs off down the length of the hallway, with [npc.her] imp guards close behind. Dashing out through the open doors, the gang disappear off into Submission, leaving you alone in the now-empty keep.
+		[npc.speech(Н-мы не будем!)] [npc.name] заикается, пока [npc.she] встает. Даже не оглядываясь на тебя, [npc.she] убегает по коридору, а следом за ней мчатся [npc.her] бесов-стражников. Выскочив в открытые двери, банда скрывается в Submission, оставляя тебя в одиночестве в опустевшем замке.
 	</p>
 	<p>
-		Looking around, you see that there's absolutely nothing of value in here, so, with nothing more to do, you prepare to move off and continue on your way...
+		Оглядевшись, ты понимаешь, что здесь нет абсолютно ничего ценного, так что, раз делать больше нечего, ты готовишься отправиться дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
@@ -792,27 +786,27 @@
 	#IF impAlphaLeader.isAbleToEquipGag(pc)
 	#THEN
 	<p>
-		You collapse to the floor, and with an exhausted [pc.moan], you look up to see [npc.name] grinning down at you. [npc.speech(Not bad, slut,)] [npc.she] says, [npc.speech(but don't think I've forgotten about how all this started. You need to be given something to remind you that you're just a submissive, cock-sucking bitch, who shouldn't meddle in the affairs of [pc.her] betters.)]
+		Ты валишься на пол, и вместе с изнуренной [pc.moan] ты поднимаешь взгляд, видя ухмыляющуюся [npc.name]. [npc.speech(Неплохо, шлюха,)] — говорит [npc.she], [npc.speech(но не думай, что я забыла, с чего всё началось. Тебе нужно преподать урок, чтобы ты помнила: ты всего лишь покорная, сосущая члены сучка, которой не стоит совать нос в дела [pc.her] господ.)]
 	</p>
 	<p>
-		Looking up at the [npc.race], you see [npc.herHim] holding a small, white leather harness, with golden metalwork holding it together, and, most conspicuously of all, a golden ring fitted to the front. [npc.speech(Open wide, slut. You can pretend you're sucking my cock again, if it helps.)]
+		Глядя вверх на [npc.race], ты видишь, что [npc.herHim] держит в руках маленькую сбрую из белой кожи с золотой фурнитурой, и, что заметнее всего, с золотым кольцом спереди. [npc.speech(Раскрой рот пошире, шлюшка. Можешь притвориться, что снова сосёшь мой член, если тебе так легче.)]
 	</p>
 	<p>
-		With little option but to do as you're told, you obey [npc.namePos] command, who proceeds to immediately force the golden ring into your mouth. Roughly fastening the straps around the back of your head, the [npc.race] lets out an evil laugh as [npc.she] then steps back to admire [npc.her] handiwork. [npc.speech(So, how is it, my little cock-sucker? Can you feel the craving to have a big, juicy cock slide deep down your throat yet?)]
+		Поскольку выбора почти нет, ты повинуешься приказу [npc.namePos], которая тут же с силой впихивает золотое кольцо тебе в рот. Грубо затянув ремни на затылке, [npc.race] издаёт злобный смешок, пока [npc.she] отступает назад, чтобы полюбоваться работой [npc.her]. [npc.speech(Ну как, моя маленькая сосальщица? Уже чувствуешь, как во рту всё горит от желания проглотить огромный сочный член?)]
 	</p>
 	<p>
-		As [npc.name] says this, you can't help but salivate a little at the thought of getting down on your knees to submissively suck a thick, throbbing cock. You instinctively bob your head forwards as you imagine taking the hot shaft deep down your throat, before suddenly realising what you're doing and shaking your head clear of the intrusive thoughts. Wiping away the drool that's leaked out of your now permanently-open mouth, you look up at [npc.namePos] crotch and let out a pleading little whine.
+		Когда [npc.name] произносит это, ты невольно пускаешь слюну при мысли о том, как опустишься на колени, чтобы покорно сосать толстый, пульсирующий член. Ты инстинктивно подаёшься головой вперёд, представляя, как горячий ствол уходит глубоко в горло, но внезапно осознаёшь, что творишь, и трясёшь головой, прогоняя навязчивые мысли. Вытирая слюну, вытекшую из твоего теперь уже вечно открытого рта, ты смотришь на промежность [npc.namePos] и издаёшь жалобный скулёж.
 	</p>
 	<p>
-		[npc.speech(Hah! Hungry for another round already, you horny little cock-sucker?)] [npc.she] laughs, before dismissively shooing you away with one hand. [npc.speech(Come back another time, I've got things to do. Your little accessory there will make sure you stay as a submissive oral slut, so I'm sure it won't be too long before I see you again.)]
+		[npc.speech(Ха! Уже изголодался по новому раунду, ты, похотливая мелкая соска?)] [npc.she] смеется, а затем пренебрежительно отмахивается от тебя одной рукой. [npc.speech(Приходи в другой раз, у меня дела. Твой маленький аксессуар позаботится о том, чтобы ты оставалась покорной оральной шлюхой, так что уверен, что скоро увижу тебя снова.)]
 	</p>
 	#ELSE
 	<p>
-		You collapse to the floor, and with an exhausted [pc.moan], you look up to see [npc.name] grinning down at you. [npc.speech(Not bad, slut,)] [npc.she] says. [npc.speech(You'll be a first-class cock-sucker one day.)]
+		Ты валишься на пол, и, глядя на измотанную [pc.moan], ты видишь, как [npc.name] ухмыляется тебе сверху вниз. [npc.speech(Неплохо, шлюха,)] говорит [npc.she]. [npc.speech(Когда-нибудь из тебя выйдет первоклассная соска.)]
 	</p>
 	#ENDIF
 	<p>
-		To the sound of their cackling laughter, the imps then unceremoniously drag you out of the keep and through the fortress's front gate. Before you know it, you've been dragged far away from [npc.namePos] lair, and are being carelessly hurled to the floor. Threatening you never to return, the imps head back to their keep, leaving you alone to catch your breath...
+		Под заливистый хохот бесов тебя бесцеремонно вытаскивают из цитадели и протаскивают через главные ворота крепости. Не успеваешь ты опомниться, как тебя утаскивают далеко от логова [npc.namePos] и небрежно швыряют на пол. Погрозив, что тебе лучше никогда не возвращаться, бесы направляются обратно в свою цитадель, оставляя тебя в одиночестве переводить дух...
 	</p>
 	]]>
 	</htmlContent>
