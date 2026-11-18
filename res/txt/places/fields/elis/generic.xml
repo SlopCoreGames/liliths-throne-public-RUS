@@ -6,33 +6,33 @@
 	
 	<htmlContent tag="EXTERNAL_ROAD"><![CDATA[
 	<p>
-		Leading out from Elis via gatehouses in the Eastern and Western walls, the main road which you find yourself standing on is well maintained and
+	Главная дорога, ведущая из Элиса через ворота в восточной и западной стенах, на которой ты сейчас стоишь, содержится в отличном состоянии и
 		#IF(game.isDayTime())
-			 flanked
+			освещена
 		#ELSE
-			 illuminated
+			ряд
 		#ENDIF
-		 by a series of arcane-powered lampposts. Consisting of countless tightly-packed and perfectly-levelled cobblestones, the road's firm surface is ideal for both pedestrians and centaur or horse-drawn carts.
+			фонарями, работающими на аркане. Твердая поверхность дороги, состоящая из бесчисленных, плотно подогнанных друг к другу и идеально выровненных булыжников, идеально подходит как для пешеходов, так и для кентавров или конных повозок.
 		#IF(game.isDayTime())
-			 Of these, there are very few to be seen out here on the roads outside Elis, although you can see through the open gatehouse that the town itself is very busy.
+			На дорогах за пределами Элиса таких фонарей совсем немного, хотя через открытые ворота видно, что в самом городе жизнь бьет ключом.
 		#ELSE
-			 Due to the current hour, there are none of these to be seen out here on the roads outside Elis, although you can see through the open gatehouse that there are some people out and about within the town itself.
+			Из-за нынешнего часа на дорогах за пределами Элиса таких фонарей не видно, хотя через открытые ворота заметно, что в самом городе люди уже вовсю снуют туда-сюда.
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-			Although the surrounding trees and fields are covered in a thick blanket of snow, the road remains completely clear, thanks to what you assume to be some kind of spell.
+			Хотя окружающие деревья и поля укрыты плотным снежным одеялом, дорога остается совершенно чистой — судя по всему, благодаря какому-то заклинанию.
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 As the fluffy white flakes touch the cobblestone surface, you see them immediately melt and evaporate, confirming your suspicions that the arcane has been put to work on heating the road.
+				Как только пушистые белые хлопья касаются булыжной мостовой, они тут же тают и испаряются, подтверждая твои догадки о том, что аркана используется для обогрева дороги.
 			#ELSE
-				 Casually looking around, you see that there's absolutely no sign of ice or even a single flurry of snow on the cobblestone surface, all but confirming your suspicions that the arcane has been put to work on heating the road.
+				Небрежно оглядевшись, ты замечаешь, что на булыжниках нет ни намека на лед или даже единой снежинки, что практически подтверждает твои подозрения: аркана работает на обогрев дороги.
 			#ENDIF
 		#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-			Being completely exposed to the elements, you watch as the rain bounces off the cobblestone surface and runs down into the stone gutters which run parallel to the road's edges.
+			Находясь под открытым небом, ты наблюдаешь, как капли дождя отскакивают от булыжной мостовой и стекают в каменные сточные канавы, идущие вдоль краев дороги.
 		#ELSEIF(game.getCurrentWeather()==WEATHER_CLEAR)
-			With the clear skies overhead showing no sign of rain in the immediate future, you continue on your way down the cobblestone road.
+			Небо над головой чистое, и признаков дождя в ближайшее время не предвидится, так что ты продолжаешь свой путь по мощеной дороге.
 		#ELSE
-			With the clouded skies overhead hinting at the possibility of rain, you continue on your way down the cobblestone road.
+			Затянутое тучами небо намекает на возможный дождь, но ты продолжаешь свой путь по мощеной дороге.
 		#ENDIF
 	</p>
 	]]>
@@ -41,7 +41,7 @@
 	<htmlContent tag="LEAVE_ELIS"><![CDATA[
 	<p style='text-align:center;'>
 		<i>
-			From here you can leave Elis and head back out into the Foloi Fields.
+			Отсюда ты можешь покинуть Элис и вернуться на поля Фолой.
 		</i>
 	</p>
 	]]>
@@ -49,59 +49,59 @@
 	
 	<htmlContent tag="ENTER_ELIS"><![CDATA[
 	<p>
-		Starting off as no more than just a grey strip on the horizon, the silhouette of Elis gets larger and larger as you approach. Soon enough you're able to pick out the distinctive shape of towers embedded into the corners of the ramparts, as well as the roofs of the taller buildings within the town itself. The one which stands out the most, and the one which truly defines the town's silhouette, is the tall, highly-steepled roof of the town hall's tower.
+		Сначала Элис кажется лишь серой полоской на горизонте, но по мере приближения её силуэт становится всё отчетливее. Вскоре ты уже можешь различить характерные башни, вписанные в углы крепостных стен, и крыши высоких зданий внутри самого города. Но больше всего выделяется и определяет облик города высокая башня ратуши с её крутым шпилем.
 	</p>
 	<p>
-		As you get ever closer to Elis, you're able to pick out the crenellations of its walls, and can thankfully see that the gatehouse has its gates wide open.
+		По мере приближения к Элис тебе становятся видны зубцы городских стен, и, к счастью, ты замечаешь, что ворота надвратной башни распахнуты настежь.
 		#IF(game.isDayTime())
-			 While there aren't many people leaving or entering the town via the same cobblestone road which you find yourself on, you can see through the entrance that the interior of the town looks to be quite busy.
+			Хотя по этой мощеной дороге, на которой ты стоишь, входит и выходит не так много людей, сквозь ворота видно, что внутри город кажется довольно оживленным.
 		#ELSE
-			 Due to the current hour, there isn't a single person leaving or entering the town via the same cobblestone road which you find yourself on, although you can see through the entrance that the interior of the town looks to be not completely deserted.
+			 Из-за текущего часа по этой мощеной дороге почти никто не входит и не выходит из города, хотя сквозь ворота видно, что внутри он не совсем безлюден.
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_lunetteTerrorEnded))
-			Thanks to the close proximity of the town, the nearby fields are very well protected from raiders or bandits. Despite this, however, there doesn't appear to be a single residential building outside of the walls, giving the surrounding area a very rural feel to it.
+			Благодаря близости города, окрестные поля отлично защищены от налетчиков и бандитов. Однако, несмотря на это, за пределами городских стен не видно ни одного жилого дома, из-за чего вся местность кажется очень сельской.
 		#ELSE
-			Taking a look around at the nearby fields, you notice that they don't seem to have suffered the same sort of damage from Lunette's centaurs as those out in the Foloi Fields. Despite the apparent protection from raids, however, there doesn't appear to be a single residential building outside of the walls, giving these fields a very rural feel to them.
+			Оглядываясь по сторонам, ты замечаешь, что эти поля, похоже, не пострадали от кентавров Лунет так сильно, как поля Фолой. И хотя они явно защищены от набегов, за стенами города нет ни единого жилого строения, что придает этим местам очень сельский вид.
 		#ENDIF
 	</p>
 	<p>
-		Continuing on your way towards Elis, 
+		Продолжая свой путь к Элису, 
 		#IF(!game.isDayTime())
-			 you see
+			 ты видишь
 		#ELSE
-			 you're able to see from the light of the lampposts which flank the road
+			 благодаря свету фонарей, стоящих вдоль дороги, ты видишь
 		#ENDIF
-		 that there are a couple of Enforcers standing guard over to one side of the gatehouse. They don't seem to be paying much attention to who's coming and going from their town, and so it looks like you'll be able to continue on your way into Elis without any trouble.
+		 что с одной стороны от ворот стоят на страже пара Enforcer. Кажется, они не особо обращают внимание на тех, кто входит в город или выходит из него, так что, похоже, ты сможешь без проблем войти в Элис.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT_TO_WORLD_MAP"><![CDATA[
 	<p>
-		Deciding to leave Elis, you set off on your journey away from the town. After about half an hour of travelling, and with Elis being no more than a grey strip off in the distance, you find yourself back out in the Foloi Fields...
+		Решив покинуть Элис, ты отправляешься в путь прочь от города. Спустя полчаса пути, когда Элис превращается в едва заметную серую полоску на горизонте, ты понимаешь, что снова оказался на полях Фолой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ALLEY"><![CDATA[
 	<p>
-		The northern half of Elis is quite unlike the rest of the town, as it's home to an intricate, twisting network of narrow alleyways. Permanently cast in shade from the ramshackle buildings teetering precariously overhead, the poorly-maintained cobblestone path is littered with potholes and puddles.
+		Северная часть Элиса совсем не похожа на остальной город: здесь раскинулась запутанная сеть узких извилистых переулков. Постоянно погруженная в тень из-за ветхих зданий, опасно нависающих над головой, плохо ухоженная мощеная дорожка усыпана выбоинами и лужами.
 	</p>
 	#IF(game.isDayTime())
 		<p>
-			Despite their claustrophobic nature and the dilapidated state of the surrounding structures, these alleyways don't have the same dangerous feeling to them as those in Dominion, largely due to the fact that there's always at least a few harmless residents either loitering about or travelling past you. There are also numerous clotheslines linking the buildings above your head, and the bright colours of the clothing hung out to dry helps to lend a cheery atmosphere to what would otherwise be some very drab surroundings.
+			Несмотря на их клаустрофобную природу и ветхое состояние окружающих построек, эти переулки не кажутся такими же опасными, как в Dominion — во многом благодаря тому, что здесь всегда можно встретить парочку безобидных жителей, которые либо бездельничают, либо просто проходят мимо тебя. Над головой тянется множество бельевых веревок, соединяющих здания, а яркие цвета развешанной одежды придают бодрости этой обстановке, которая в ином случае была бы весьма унылой.
 		</p>
 		<p>
-			While you're confident that these alleyways are safe to be travelling through during daylight hours, you can't help but notice how they're home to the town's more disreputable elements. Thanks to the fact that there's a back-alley brothel or a sleazy gambling den never more than a few turns away, you find yourself often having to filter out the sounds of whorish moaning or drunken laughter. As you travel ever onwards, you find yourself spotting countless places from which an ambush could be sprung, and you realise that these alleyways must be a very dangerous place to be at night... 
+			Хотя ты уверен, что в светлое время суток по этим переулкам можно ходить спокойно, ты невольно замечаешь, что здесь обитает самая сомнительная часть городского населения. Поскольку подворотни с борделями или грязными игорными притонами находятся буквально за углом, тебе часто приходится отфильтровывать звуки похотливых стонов или пьяного хохота. Продвигаясь вперед, ты замечаешь бесчисленное множество мест, откуда может быть устроена засада, и понимаешь, что ночью эти переулки наверняка превращаются в крайне опасное место...
 		</p>
 	#ELSE
 		<p>
-			Although safe to travel through during daylight hours, these claustrophobic alleyways have a particularly dangerous feeling to them at night. The harmless residents who can be found loitering about while the sun's out have all disappeared into the surrounding dilapidated structures which they call home, leaving the area completely deserted.
+			Несмотря на относительную безопасность днем, эти тесные переулки ночью пропитаны особым чувством опасности. Безобидные жители, которые толпятся здесь при солнечном свете, исчезают в окружающих полуразрушенных зданиях, ставших им домом, оставляя район совершенно пустым.
 		</p>
 		<p>
-			Apart from the occasional sounds of whorish moaning or drunken laughter which burst out from an upper-floor window, there's absolutely no sign of life as you continue down the dark, twisting passageways. Feeling like you're being watched, you realise that it must only be a matter of time before you encounter one of the town's more disreputable elements...
+		Если не считать редких звуков блудницкого стона или пьяного хохота, доносящихся из окон верхних этажей, то, пока ты пробираешься по темным извилистым переулкам, признаков жизни почти нет. Чувствуя на себе чей-то взгляд, ты понимаешь: встреча с кем-то из самых сомнительных обитателей города — лишь вопрос времени...
 		</p>
 	#ENDIF
 	#IF(!game.getNonCompanionCharactersPresent().isEmpty())
@@ -114,32 +114,32 @@
 	
 	<htmlContent tag="CULT"><![CDATA[
 	<p>
-		Positioned on the western side of town, one otherwise-ordinary building stands out from those around it due to the copious amount of flags which hang from its windows. With each one bearing the black pentagram of Lilith, the fanatical loyalty of the building's occupants is apparent to anyone who so much as glances its way.
+		В западной части города одно, на первый взгляд, обычное здание выделяется на фоне остальных обилием флагов, свисающих из окон. На каждом из них красуется черная пентаграмма Lilith, и фанатичная преданность обитателей этого дома очевидна любому, кто хотя бы мельком бросит на него взгляд.
 	</p>
 	<p>
-		The reason for this unusual display isn't hard to figure out, for there's a large sign over the building's entrance which reads: 'Cult of Lilith; Elis Headquarters'. A pair of attractive succubi handing out promotional pamphlets are stationed to either side of the entrance, and as they see you looking in their general direction, one of them flashes you a disarming smile and beckons you forwards.
+		Причину такого необычного убранства несложно понять: над входом в здание висит большая вывеска: «Культ Lilith; штаб-квартира в Элисе». По обе стороны от входа стоят две привлекательные суккубы, раздающие рекламные листовки. Заметив, что ты смотришь в их сторону, одна из них ослепительно улыбается тебе и манит подойти поближе.
 	</p>
 	<p>
-		You're not sure if you want to get caught up in the cult's affairs at the moment, so you break eye contact with the succubus and prepare to continue on your way...
+		Ты не уверен, стоит ли тебе сейчас ввязываться в дела культа, поэтому отводишь взгляд от суккуба и готовишься продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ENFORCERS"><![CDATA[
 	<p>
-		While nowhere near as huge or imposing as its Dominion counterpart, the building which houses the Elis Enforcers is nevertheless a suitably large and official-looking one. Although it's of the same timber-framed style as most of the other structures in the town, the Enforcer station differs from those around it by nature of the fact that it sits back from the road, and is separated from where you're standing by an attractive knot garden. If it wasn't for the large sign declaring this to be the Enforcer's headquarters for the Elis region, as well as the Enforcers themselves occasionally coming and going from the main entrance, you could easily be mistaken for thinking that this building was simply a wealthy resident's manor.
+		Хотя это здание и не идет в сравнение с колоссальными и внушительными постройками Dominion, штаб-квартира Enforcer в Элисе выглядит достаточно внушительно и официально. Несмотря на то, что оно выполнено в том же фахверковом стиле, что и большинство других строений в городе, станция Enforcer отличается от окружающих домов тем, что она отстоит от дороги, а перед тобой раскинулся живописный узел садовых дорожек. Если бы не огромная вывеска, гласящая, что это штаб Enforcer в регионе Элис, и не сами Enforcer, время от времени входящие и выходящие через главный вход, ты бы легко мог принять это здание за поместье богатого горожанина.
 	</p>
 	<p>
 		#IF(!game.isLunetteDefeated())
-			With Lunette's destruction of the Fields causing serious issues both within and without the walls of Elis, the Enforcers which you see all seem to have a melancholy look about them.
+			Из-за того, что разрушение Полей Лунет вызвало серьезные проблемы как внутри, так и за стенами Элиса, все Enforcer, которых ты видишь, кажутся какими-то меланхоличными.
 		#ELSE
-			With Lunette having been defeated, and Elis now experiencing a level of peace and security which hasn't been felt for many years, all of the Enforcers you see have a relaxed, friendly look about them.
+			Поскольку Лунет повержена, и Элис наконец познал уровень спокойствия и безопасности, которого не было долгие годы, все Enforcer, которых ты видишь, выглядят расслабленными и дружелюбными.
 		#ENDIF
-		 A sign beside the main entrance to the station declares that non-emergency visiting hours for members of the public is between
+		Табличка у главного входа в станцию гласит, что часы приема посетителей в неэкстренных случаях — с
 		#IF(game.isHourBetween(8, 20))
-			 [style.colourMinorGood([units.time(8)]-[units.time(20)])], and as such it's currently [style.colourGood(open)], allowing you to head on in and take a look inside if you wanted to...
+			 [style.colourMinorGood([units.time(8)]-[units.time(20)])], и, следовательно, сейчас станция [style.colourGood(открыта)], так что ты можешь зайти внутрь и осмотреться, если захочешь...
 		#ELSE
-			 [style.colourMinorBad([units.time(8)]-[units.time(20)])], and as such it's currently [style.colourBad(closed)]. If you wanted to head inside, you'll have to come back later...
+			 [style.colourMinorBad([units.time(8)]-[units.time(20)])], и поэтому сейчас они [style.colourBad(закрыты)]. Если захочешь зайти внутрь, придется вернуться позже...
 		#ENDIF
 	</p>
 	]]>
@@ -147,51 +147,51 @@
 	
 	<htmlContent tag="FIELDS"><![CDATA[
 	<p>
-		Just like those out in the rest of the Foloi Fields, the fields surrounding Elis
+		Как и во всех остальных полях Фолои, поля вокруг Элиса
 		#IF(game.getSeason()==SEASON_WINTER)
-			 have been ploughed and slurried in preparation for the coming year.
+			 были вспаханы и разрыхлены в преддверии нового года.
 		#ELSE
-			 are primarily given over to the production of crops, which at this time of year include, among many others, things such as
+			 в основном отданы под выращивание сельскохозяйственных культур, к которым в это время года относятся, помимо прочего, такие продукты, как
 		#ENDIF
 		#IF(game.getSeason()==SEASON_SPRING)
-			 potatoes, rhubarb, and cauliflower. Although not as common as these crop fields, there's also a significant amount of land dedicated to fruit orchards, which at this time of year are filled with beautifully-blossoming trees.
+			 картофель, ревень и цветная капуста. Хотя они встречаются не так часто, как эти пашни, значительная часть земель отведена под фруктовые сады, которые в это время года полны прекрасно цветущих деревьев.
 		#ELSEIF(game.getSeason()==SEASON_SUMMER)
-			 corn, hops, and wheat. Although not as common as these crop fields, there's also a significant amount of land dedicated to fruit orchards, which at this time of year are filled with leafy green trees already showing signs of the fruit they'll bear come autumn.
+			 кукуруза, хмель и пшеница. Хотя они встречаются не так часто, как эти пашни, значительная часть земель отведена под фруктовые сады, которые в это время года покрыты густой зеленой листвой, на которой уже проглядывают плоды, созреющие к осени.
 		#ELSEIF(game.getSeason()==SEASON_AUTUMN)
-			 beetroot, artichoke, and pumpkins. Although not as common as these crop fields, there's also a significant amount of land dedicated to fruit orchards, which at this time of year are either heavily-laden with fruit, or have already been picked clean of their produce.
+			 свекла, артишоки и тыквы. Хотя они встречаются не так часто, как эти пашни, значительная часть земель отведена под фруктовые сады, которые в это время года либо ломятся от плодов, либо уже полностью очищены от урожая.
 		#ELSE
-			 Although not as common as these currently-barren crop fields, there's also a significant amount of land dedicated to fruit orchards, which at this time of year are filled with leafless trees.
+			 Хотя они встречаются не так часто, как эти нынешние бесплодные пашни, значительная часть земель отведена под фруктовые сады, которые в это время года стоят с голыми деревьями без листвы.
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_lunetteTerrorEnded))
-			Thanks to the close proximity of the town, these fields are very well protected from raiders or bandits. Despite this, however, there doesn't appear to be a single residential building outside of the walls, giving the surrounding area a very rural feel to it.
+			Благодаря близости города, эти поля отлично защищены от налетчиков и бандитов. Однако, несмотря на это, за пределами городских стен не видно ни одного жилого дома, из-за чего окрестности кажутся очень сельскими.
 		#ELSE
-			Thanks to the close proximity of the town, these fields haven't been subjected to the same sort of damage as those out in the rest of the Foloi Fields. Despite the apparent protection from Lunette's raiding, however, there doesn't appear to be a single residential building outside of the walls, giving the surrounding area a very rural feel to it.
+			Благодаря близости города, эти поля не пострадали так сильно, как остальные земли в полях Фолой. И хотя кажется, что набеги Лунетт их не коснулись, за пределами стен не видно ни одного жилого дома, что придает окрестностям сугубо сельский вид.
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-			The trees and fields around you are all covered in a thick blanket of snow,
+			Деревья и поля вокруг тебя укрыты плотным снежным одеялом,
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 and with fluffy white flakes continuing to drift down from the dark grey clouds overhead, it looks as though your surroundings are going to remain encased in ice for some time yet...
+				а пушистые белые хлопья продолжают падать с темно-серых облаков над головой, так что кажется, будто всё вокруг еще долго будет сковано льдом...
 			#ELSE
-				 although thankfully there are several animal tracks which you can use to efficiently travel through the icy landscape...
+				 хотя, к счастью, повсюду видны следы животных, по которым можно довольно быстро пробираться сквозь ледяной ландшафт...
 			#ENDIF
 		#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-			The rain splashes down all around you as you travel through the fields, forming puddles of wildly-varying sizes and sending the local wildlife ducking for cover...
+			Дождь хлещет со всех сторон, пока ты идешь по полям, образуя лужи самых разных размеров и заставляя местную дичь поспешно искать укрытие...
 		#ELSEIF(game.getCurrentWeather()==WEATHER_CLEAR)
-			With the clear skies overhead showing no sign of rain in the immediate future, you continue on your way through the fields...
+			Поскольку чистое небо над головой не сулит дождя в ближайшее время, ты продолжаешь свой путь по полям...
 		#ELSE
-			With the clouded skies overhead hinting at the possibility of rain, you continue on your way through the fields...
+			Поскольку затянутое тучами небо намекает на возможный дождь, ты продолжаешь свой путь по полям...
 		#ENDIF
 	</p>
 	#IF(pc.getNearestCellDistance(PLACE_TYPE_innoxia_fields_elis_town_wall)<3 || pc.getNearestCellDistance(PLACE_TYPE_innoxia_fields_elis_town_tower)<3)
 		<p>
 			#IF(pc.isAbleToFly())
-				The nearby stone walls of Elis form an impassable barrier to anyone who can't fly, preventing them from entering the town from this area. As you're capable of flight, however, you don't need to [pc.walk] to the nearest gatehouse and can instead simply fly up onto the wall if you wanted to gain access to Elis...
+				Высокие каменные стены Элиса служат непреодолимой преградой для любого, кто не умеет летать, не давая войти в город с этой стороны. Однако, поскольку ты способна к полету, тебе не нужно [pc.walk] к ближайшей сторожевой башне — ты можешь просто взлететь прямо на стену, если захочешь попасть в Элис...
 			#ELSE
-				The nearby stone walls of Elis form an impassable barrier, preventing you from entering the town from this area. You'll have to [pc.walk] to the nearest gatehouse if you wanted to gain access to Elis...
+				Высокие каменные стены Элиса служат непреодолимой преградой, не позволяя тебе войти в город с этой стороны. Тебе придется [pc.walk] к ближайшей сторожевой башне, если ты захочешь попасть в Элис...
 			#ENDIF
 		</p>
 	#ENDIF
@@ -200,27 +200,27 @@
 	
 	<htmlContent tag="FIELDS_FLY_TO_WALL"><![CDATA[
 	<p>
-		Wanting to head back into town, but not liking the idea of [pc.walking] all the way to the nearest gatehouse, you take a short run-up and launch yourself into the air, before flying up above the walls of Elis. Smoothly gliding down, you land on the wooden ramparts, before looking around and wondering where to go from here...
+		Желая вернуться в город, но не желая [pc.walking] до самой ближайшей сторожевой башни, ты делаешь короткий разбег и взмываешь в воздух, перелетая через стены Элиса. Плавно планируя вниз, ты приземляешься на деревянные парапеты, оглядываешься по сторонам и гадаешь, куда податься теперь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FIELDS_FLY_TO_TOWER"><![CDATA[
 	<p>
-		Wanting to head back into town, but not liking the idea of [pc.walking] all the way to the nearest gatehouse, you take a short run-up and launch yourself into the air, before flying up above the walls of Elis. Smoothly gliding down, you land beside the nearest of the crenellated towers, before looking around and wondering where to go from here...
+		Желая вернуться в город, но не желая [pc.walking] до самой ближайшей сторожевой башни, ты делаешь короткий разбег и взмываешь в воздух, перелетая через стены Элиса. Плавно планируя вниз, ты приземляешься рядом с ближайшей зубчатой башней, оглядываешься по сторонам и гадаешь, куда податься теперь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="GATEHOUSE"><![CDATA[
 	<p>
-		Consisting of a pair of crenellated towers flanking a pair of huge wooden gates, this gatehouse guards one of the two roads which grant access to the town of Elis. Standing guard to one side of the open gates, a pair of Enforcers are keeping a very casual watch over anyone who passes them by.
+		Эта сторожевая башня, состоящая из пары зубчатых башен по бокам от огромных деревянных ворот, охраняет одну из двух дорог, ведущих в город Элис. Стоя по одну сторону открытых ворот, пара Enforcer небрежно следят за каждым проходящим мимо...
 	</p>
 	<p>
 		#IF(pc.getLastPlaceType()==PLACE_TYPE_innoxia_fields_elis_town_wall)
-			As you're currently travelling along the wall's wooden ramparts, you have to pass through the gatehouse in order to continue on your way. Thankfully it's fully open to members of the public, and as you [pc.walk] through the stone structure, you see that there's another Enforcer guarding what appears to be a raised portcullis. Although this Enforcer offers you a polite greeting, they don't pay you much attention, allowing you to continue on your way without being stopped...
+			Пока ты идешь по деревянным парапетам стены, тебе нужно пройти через надвратную башню, чтобы продолжить свой путь. К счастью, она полностью открыта для простых горожан, и когда ты [pc.walk] сквозь каменное строение, ты замечаешь еще одного Enforcer, охраняющего нечто похожее на поднятую решетку. Хотя этот Enforcer и вежливо приветствует тебя, он не уделяет тебе особого внимания, позволяя беспрепятственно идти дальше...
 		#ELSE
-			As you travel past these Enforcers, you look up to see that there's a raised portcullis which can be dropped to provide additional strength and protection to the already-sturdy gates. With the Enforcers continuing to talk to one another and paying you very little attention, you're able to continue on your way without being stopped...
+			Проходя мимо этих Enforcer, ты поднимаешь взгляд и видишь поднятую герсу, которую можно опустить, чтобы усилить и защитить и без того прочные ворота. Поскольку Enforcer продолжают болтать друг с другом, почти не обращая на тебя внимания, ты можешь спокойно идти дальше, не встречая преград...
 		#ENDIF
 	</p>
 	]]>
@@ -228,49 +228,49 @@
 	
 	<htmlContent tag="LAKE"><![CDATA[
 	<p>
-		To the north-east of Elis, there lies a relatively large body of fresh water, and it's by the sandy shore of this lake which you currently find yourself standing.
+		К северо-востоку от Элиса раскинулся довольно большой водоем с пресной водой, и именно на его песчаном берегу ты сейчас стоишь.
 		#IF(game.getSeason()==SEASON_WINTER)
-			 Due to the ambient temperature at this time of year, the edges of the water have frozen solid, with the rest of the lake's bluish-grey surface looking particularly cold and uninviting. Despite this, however, as you look out across the water, you suddenly spot the distinctive shape of a shark-like fin circling around in the middle of the lake, before it quickly dips down out of sight.
+			Из-за температуры, характерной для этого времени года, края воды скованы льдом, а остальная сине-серая поверхность озера выглядит особенно холодной и неприветливой. Несмотря на это, когда ты всматриваешься в водную гладь, ты внезапно замечаешь характерный силуэт похожего на акулий плавник, который кружит посреди озера, а затем быстро уходит под воду.
 		#ELSE
-			 Looking out across the water's bluish-grey surface, you suddenly spot the distinctive shape of a shark-like fin circling around in the middle of the lake, before it quickly dips down out of sight.
+			 Вглядываясь в сине-серую гладь воды, ты внезапно замечаешь характерный силуэт похожего на акулий плавник, который кружит посреди озера, а затем быстро уходит под воду.
 		#ENDIF
 	</p>
 	<p>
-		Equally spaced around the shoreline, there are about a dozen or so wooden signposts, and with the nearest one being close to where you're standing, you're able to quickly walk over to it and read:
+		Вдоль береговой линии на равном расстоянии друг от друга расставлено около дюжины деревянных указателей. Ближайший из них находится совсем рядом с тобой, так что ты можешь быстро подойти и прочитать:
 	</p>
 	<p style='text-align:center;'>
 		<i>
-		<b>Attention!</b>
+		<b>Внимание!</b>
 		<br/>
-		The residents of this lake prefer not to be disturbed.<br/>
-		Please refrain from the following activities:
+		Обитатели этого озера не любят, когда их беспокоят.<br/>
+		Пожалуйста, воздержитесь от следующих занятий:
 		<br/>
-		- Swimming<br/>
-		- Stone skipping<br/>
-		- Littering<br/>
-		- Noisy gatherings<br/>
-		[style.italicsBrown(Annoy me and I'll eat ya!)]
+		- Купание<br/>
+		- Бросание камешков по воде<br/>
+		- Мусорение<br/>
+		- Шумные компании<br/>
+		[style.italicsBrown(Будешь бесить — сожру!)]
 		</i>
 	</p>
 	<p>
-		That last sentence appears to have been carved into the signpost some time after it was erected. Although you seriously doubt anyone runs the actual risk of being eaten as punishment for annoying the residents of this lake, you imagine that they wouldn't be too happy about being disturbed.
+		Похоже, последнюю фразу вырезали на столбе спустя какое-то время после его установки. Хотя ты сильно сомневаешься, что кого-то действительно могут съесть в наказание за то, что он донимает местных жителей, ты понимаешь, что они явно не будут рады беспокойству.
 	</p>
 	<p>
-		Deciding against doing anything more here, you turn away from the lake and prepare to continue on your way...
+		Решив больше здесь не задерживаться, ты отворачиваешься от озера и готовишься продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LAKE_DEEP"><![CDATA[
 	<p>
-		You shouldn't be able to get here yet!
+		Тебе еще не должно было сюда попасть!
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MARKET"><![CDATA[
 	<p>
-		Located at the intersection between the town's major roads, a huge public square has been constructed. Unlike the cobblestone of the streets, this square has been paved using large blocks of stone, the smooth surface of which is broken only by a series of shallow channels which lead into drains. At all four entrances to this square, large, touristy-looking signs offer information on the market's history to people who might be interested in it, as well as declaring in large, bold font that this area is 'The Farmer's Market; Open every day between
+		На пересечении главных дорог города раскинулась огромная общественная площадь. В отличие от мощеных улиц, эта площадь выложена крупными каменными блоками, гладкую поверхность которых прерывают лишь неглубокие желоба, ведущие к стокам. У всех четырех входов на площадь стоят большие, типично туристические указатели: они предлагают желающим ознакомиться с историей рынка, а также крупным жирным шрифтом гласят, что эта территория — «Фермерский рынок; открыт ежедневно с
 		#IF(game.getHourOfDay()>=8 && game.getHourOfDay()<=17)
 			[style.colourMinorGood([units.time(8)]-[units.time(18)])]'.
 		#ELSE
@@ -279,24 +279,24 @@
 	</p>
 	#IF(game.getHourOfDay()>=8 && game.getHourOfDay()<=17)
 		<p>
-			Sure enough, the market is currently open, and as you look down one of the busy avenues formed between countless brightly-coloured stalls, you see all manner of food, drink, and other items for sale. Unlike a regular farmer's market, the one here in Elis seems to have evolved into a type of low-key festival, complete with a band somewhere in the distance playing live music. Stopping for a moment, you wonder whether to head into the market and take a closer look around...
+			Как и ожидалось, рынок сейчас открыт. Вглядываясь в одну из оживленных улиц, образованных бесчисленными яркими прилавками, ты видишь всевозможную еду, напитки и прочие товары на продажу. В отличие от обычного фермерского рынка, местный рынок в Элисе превратился в своего рода неспешный фестиваль — где-то вдалеке даже играет живая музыка. Замерев на мгновение, ты раздумываешь, стоит ли зайти на рынок и осмотреться поближе...
 		</p>
 	#ELSE
 		<p>
 			#IF(game.getHourOfDay()==7)
-				Due to the early hour, the market's many stalls are still being set up, and as such they aren't ready to start trading just yet. If you wanted to buy something from the market, you'll have to come back in an hour or so. 
+				Из-за раннего часа многие торговые лавки еще только обустраиваются, так что к торговле они еще не готовы. Если ты хочешь что-то купить, придется вернуться примерно через час.
 			#ELSEIF(game.getHourOfDay()==18)
-				Due to the late hour, the market's many stalls are being packed up and wheeled away, with the vendors having ceased trading for the day. If you wanted to buy something from the market, you'll have to come back tomorrow.
+				Из-за позднего часа торговцы уже закончили дела и вовсю собирают свои лавки, чтобы увезти их. Если ты хочешь что-то купить, тебе стоит прийти завтра.
 			#ELSE
-				Due to the current hour, the market's many stalls have all been packed up and taken away,
+				Из-за текущего времени все торговые лавки уже разобраны и увезены,
 				#IF(game.getSeason()==SEASON_WINTER)
-					 and due to the cold temperatures at this time of year, the square isn't being used in any capacity whatsoever.
+					 а из-за холодов, характерных для этого времени года, площадь практически не используется.
 				#ELSEIF(game.getHourOfDay()<=23)
-					 leaving the square to be used by some of the surrounding restaurants as a convenient place in which to put out their tables and chairs for outdoor eating.
+					 из-за чего площадь облюбовали окрестные рестораны, выставляя на ней свои столики и стулья для уличных трапез.
 				#ELSE
-					 leaving the square completely deserted.
+					 оставляя площадь совершенно пустой.
 				#ENDIF
-				 If you wanted to buy something from the market, you'll have to come back some time after eight in the morning.
+				 Если ты хочешь что-то купить на рынке, тебе стоит вернуться после восьми утра.
 			#ENDIF
 		</p>
 	#ENDIF
@@ -305,105 +305,104 @@
 	
 	<htmlContent tag="MARKET_ENTER"><![CDATA[
 	<p>
-		Wanting to spend some time looking around and potentially doing some shopping, you [pc.step] forwards and enter the Farmer's Market...
+		Желая прогуляться и, возможно, закупиться чем-нибудь, ты [pc.step] вперед и входишь на Фермерский рынок...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MARKET_INFO"><![CDATA[
 	<p>
-		Heading over to the nearest entrance to the market, you approach the touristy-looking sign and spend a few minutes reading over the information it contains:
+		Направляясь к ближайшему входу на рынок, ты подходишь к похожему на туристический указателю и несколько минут изучаешь информацию на нем:
 	</p>
 	<hr/>
 	<i>
 		<p style='text-align:center; font-size:1.1em'>
-			<b>The Farmer's Market; Open every day</b>
-		</p>
-		<p>
-			<b>History</b>
+			<b>Фермерский рынок; открыт каждый день</b>
+		</p><p>
+			<b>История</b>
 			<br/>
-			Did you know that the town of Elis started right here where you're standing? That's right, before there was a town at all, Elis was no more than a tiny hamlet and a livestock market. Despite its position on the outskirts of the Foloi Fields, Elis rose to become the region's largest and most prosperous town, and it was all thanks to this very market!
+			А ты знал, что город Элис вырос именно здесь, где ты сейчас стоишь? Именно так: прежде чем стать городом, Элис был всего лишь крошечной деревушкой и рынком скота. Несмотря на своё положение на окраине полей Фолой, Элис превратился в крупнейший и самый процветающий город региона, и всё это благодаря этому самому рынку!
 			<br/><br/>
-			But how did that happen, you ask? Well, the answer's an easy one! The youko of the nearby Shinrin Highlands, who up until a hundred or so years ago had mostly kept to themselves, started using the market here at Elis as a way to obtain food and drink which they otherwise didn't have access to. With the youko's considerable arcane abilities sometimes being offered in exchange for goods, the tiny hamlet of Elis was able to embark on several ambitious construction projects, allowing it to quickly grow into a thriving village!
+			Но как же так вышло, спросишь ты? Что ж, ответ прост! Йоко из близлежащего высокогорья Синрин, которые ещё лет сто назад жили сами по себе, начали использовать местный рынок в Элисе, чтобы добывать еду и напитки, к которым иначе не имели доступа. Поскольку за товары порой предлагали немалые способности к Аркане, крошечная деревушка Элис смогла запустить несколько амбициозных строительных проектов, что позволило ей быстро превратиться в процветающее поселение!
 			<br/><br/>
-			And what next? I'm glad you asked! From there, the village continued to grow, with this very market continuing to be the focal point. Unfortunately, the village's new-found prosperity attracted the attention of bandits. Striking from out of the Foloi Forests, they brought Elis to the brink of utter ruin. It was only thanks to the help of a mysterious youko, who built the first walls of Elis, that everything you see around you was made possible!
+			А что было дальше? Рад, что ты спросил! С этого момента деревня продолжала расти, и этот самый рынок оставался её центром. К сожалению, новообретённое богатство привлекло внимание бандитов. Нападая из лесов Фолой, они поставили Элис на грань полного разорения. И только благодаря помощи таинственной йоко, воздвигшей первые стены Элиса, стало возможным всё то, что ты видишь вокруг!
 			<br/><br/>
-			Over time, the village of Elis grew into a town, although despite the size of our settlement, the threat of bandit raids has never gone away. Due to this, the walls had to be expanded to the north, and have since been filled with new buildings and fellow residents! And the market which started off as a field beside a tiny hamlet has expanded into the one before your eyes; the best market in all of Lilith's Realm!
+			Со временем деревня Элис разрослась в город, хотя, несмотря на размеры нашего поселения, угроза бандитских набегов никуда не исчезла. Из-за этого стены пришлось расширять на север, и с тех пор они застроились новыми зданиями и наполнились новыми жителями! А рынок, который начинался как поле рядом с крошечной деревушкой, разросся в тот, что предстал перед твоими глазами; лучший рынок во всем королевстве Lilith!
 		</p>
 		<br/>
 		<p>
-			<b>Today's Market</b>
+			<b>Сегодняшний рынок</b>
 			<br/>
-			The market as it exists today offers everything you could possibly ever need! From food and drink to entertainment (and maybe even love?), it's the best place for both shopping and relaxation.
+			На сегодняшнем рынке есть всё, что тебе может когда-либо понадобиться! От еды и напитков до развлечений (а может, даже любви?) — это лучшее место как для покупок, так и для отдыха.
 			<br/><br/>
-			The market is open every day, between [units.time(8)]-[units.time(18)]. Please note that a large part of the market is used as a traditional livestock market on Wednesdays and Saturdays.
+			Рынок открыт каждый день с [units.time(8)] до [units.time(18)]. Учти, что по средам и субботам большая часть рынка используется как традиционный скотный рынок.
 		</p>
 		<p style='text-align:center; font-size:0.75em'>
-			This information has been provided by the Elis tourism board. For complaints or queries, please inquire at the town hall.
+			Эта информация предоставлена туристическим советом Элиса. По всем вопросам или жалобам обращайтесь в ратушу.
 		</p>
 	</i>
 	<hr/>
 	<p>
-		Having read through all of the information the sign contains, you take a [pc.step] back and wonder what to do next...
+		Прочитав всю информацию на табличке, ты делаешь [pc.step] шаг назад и раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="POND"><![CDATA[
 	<p>
-		A short distance from the southern walls of Elis, a large pond can be found, and its in front of this pool of still water that you find yourself standing. Choked by algae and with thick bushes of tall reeds growing all around its perimeter, this body of water looks, and smells, more like a swamp than a pond. What little of the murky green water which you're able to see through the blanket of algae looks extremely uninviting, and you can't imagine that many creatures are able to survive in a place such as this.
+		Недалеко от южных стен Элиса раскинулся большой пруд, и именно перед этой гладью неподвижной воды ты стоишь сейчас. Заросший водорослями и окруженный густыми зарослями высокого камыша, этот водоем больше похож на болото, чем на пруд — как внешне, так и по запаху. Та малая часть мутной зеленой воды, что видна сквозь слой водорослей, выглядит крайне неприветливо; трудно представить, что в таком месте может выжить хоть какое-то живое существо.
 	</p>
 	<p>
-		Despite the absence of any sign of fauna, there are a few warning signs scattered about near to the pond's edges. Other than advising you not to swim in the water, these signs also warn of a 'pond monster' which has been known to attack people who linger beside the murky water for too long. Almost as if to prove to you that the sign's warning should be heeded, ripples suddenly start spreading over the pond's surface, the size of which look to be far too large to have been formed by a simple fish or frog.
+		Несмотря на полное отсутствие признаков фауны, у берегов пруда разбросано несколько предупреждающих знаков. Помимо совета не купаться в этой воде, они также предостерегают о «монстре пруда», который, по слухам, нападает на людей, слишком долго задерживающихся у мутной глади. Словно в подтверждение того, что к знакам стоит прислушаться, по поверхности пруда внезапно начинают расходиться круги, размер которых кажется слишком большим для обычной рыбы или лягушки.
 	</p>
 	<p>
-		Unless you want to run the risk of being attacked by the 'pond monster' which calls this fetid, swampy pond its home, you'd better leave...
+		Если только ты не хочешь рискнуть и стать жертвой «монстра пруда», обитающего в этом зловонном болоте, тебе лучше уходить...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SHOPS"><![CDATA[
 	<p>
-		Although Elis has most of its commercial needs met by its large farmer's market, there still exists a need for more permanent stores, and it's within the town's open-air shopping precinct that this need is met. A wide gap between the houses on the northern side of this street forms the entrance to this precinct, which is clearly signposted and named as 'Wall's End'.
+		Хотя большинство торговых нужд Элиса покрывается на большом фермерском рынке, потребность в постоянных лавках всё же сохраняется, и эта нужда удовлетворяется в торговом квартале под открытым небом. Широкий проход между домами на северной стороне этой улицы служит входом в этот район, который отчетливо обозначен вывеской под названием «Тупик Стены».
 	</p>
 	<p>
-		There's no form of barrier or other mechanism to restrict entry to this shopping precinct, and so if you wanted to you could head through its entrance and take a look around...
+		Никаких барьеров или иных механизмов, ограничивающих вход в этот торговый квартал, нет, так что, если захочешь, ты можешь пройти через вход и осмотреться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STREET"><![CDATA[
 	<p>
-		The cobblestone streets of Elis are flanked by timber-framed buildings, the vast majority of which are either two or three stories tall. The late-medieval aesthetic of this town is further enhanced by the old, ornate design of the arcane street lamps,
+		Мощеные улицы Элиса обрамлены фахверковыми зданиями, большинство из которых имеют два или три этажа. Эстетику позднего средневековья в этом городе дополняют старинные изысканные уличные фонари Арканы,
 		#IF(game.isDayTime())
-			 which once night falls will cast their surroundings in a pale yellow glow.
+			которые с наступлением ночи заливают всё вокруг бледным желтым светом.
 		#ELSE
-			 which are casting their surroundings in a pale yellow glow.
+			, которые заливают всё вокруг бледным желтоватым светом.
 		#ENDIF
-		 Most of the structures which you pass are residential in nature, although you are able to spot a few local businesses situated on the ground floor of the odd building.
+		 Большинство зданий, мимо которых ты проходишь, жилые, хотя на первых этажах некоторых причудливых построек можно заметить несколько местных лавок.
 	</p>
 	<p>
 		#IF(game.isDayTime())
-			Due to the current hour, there are a lot of people out and about, with those that you see walking the streets mostly taking the form of some kind of domestic animal-morph. Cows, sheep, dogs, and all other manner of morphs are able to be sighted.
+			Из-за текущего часа на улицах полно народу; те, кого ты видишь, в основном представляют собой различных звероморфов. Можно встретить коров, овец, собак и самых разных других оборотней.
 		#ELSE
-			Due to the current hour, there are far fewer people out and about, with those that you do see walking the streets mostly taking the form of a nocturnal animal-morph. Foxes, badgers, and even the occasional owl-harpy who's decided to walk instead of fly are just some of the morphs which you're able to see.
+			Из-за текущего часа людей на улицах гораздо меньше, и те, кого ты встречаешь, в основном являются ночными звероморфами. Лисы, барсуки и даже редкие сово-гарпии, решившие прогуляться пешком вместо того, чтобы лететь, — вот лишь некоторые из тех, кого ты можешь здесь увидеть.
 		#ENDIF
-		 Although this town is far smaller than Dominion, it's not so rural as to be home to the sort of behaviour where strangers say hello to one another, and so none of the people who you pass pay you any attention as they continue on their way to whatever destination awaits them.
+		 Хотя этот город намного меньше, чем Dominion, он не настолько деревенский, чтобы здесь незнакомцы здоровались друг с другом, так что проходящие мимо люди не обращают на тебя никакого внимания, продолжая свой путь к намеченным целям.
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-			Although the roofs and tops of the lamp posts are covered in a thick blanket of snow, the road remains completely clear, thanks to what you assume to be some kind of spell.
+			Хотя крыши и верхушки фонарных столбов покрыты толстым слоем снега, дорога остается совершенно чистой — судя по всему, благодаря какому-то заклинанию.
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 As the fluffy white flakes touch the cobblestone surface, you see them immediately melt and evaporate, confirming your suspicions that the arcane has been put to work on heating the road.
+				Как только пушистые белые хлопья касаются булыжной мостовой, они тут же тают и испаряются, подтверждая твои догадки о том, что аркана используется для обогрева дороги.
 			#ELSE
-				 Casually looking around, you see that there's absolutely no sign of ice or even a single flurry of snow on the cobblestone surface, all but confirming your suspicions that the arcane has been put to work on heating the road.
+				Небрежно оглядевшись, ты замечаешь, что на булыжниках нет ни намека на лед или даже единой снежинки, что практически подтверждает твои подозрения: аркана работает на обогрев дороги.
 			#ENDIF
 		#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-			Being completely exposed to the elements, you watch as the rain bounces off the roofs and tops of the lamp posts before running down into the stone gutters which run parallel to the road's edges.
+			Оказавшись под открытым небом, ты наблюдаешь, как дождь барабанит по крышам и фонарям, а затем стекает в каменные сточные канавы, идущие вдоль обочин дороги.
 		#ELSEIF(game.getCurrentWeather()==WEATHER_CLEAR)
-			With the clear skies overhead showing no sign of rain in the immediate future, you continue on your way down the cobblestone road.
+			Небо над головой чистое, и признаков дождя в ближайшее время не предвидится, так что ты продолжаешь свой путь по мощеной дороге.
 		#ELSE
-			With the clouded skies overhead hinting at the possibility of rain, you continue on your way down the cobblestone road.
+			Затянутое тучами небо намекает на возможный дождь, но ты продолжаешь свой путь по мощеной дороге.
 		#ENDIF
 	</p>
 	]]>
@@ -411,30 +410,30 @@
 	
 	<htmlContent tag="TAVERN"><![CDATA[
 	<p>
-		Likely due to the original owner's business acumen, 'The Red Dragon' tavern is one of the first buildings to be seen by people entering Elis via the eastern gate. Although it's of a similar timber-framed design to those around it, this two-story tavern is at least twice their length, and despite whatever age it might be, looks to be an impressive example of late medieval architecture. It's due to this size that the tavern has two entrances, both of which display the opening times as being twenty four hours a day, seven days of the week.
+		Вероятно, благодаря деловой хватке прежнего владельца, таверну «Красный дракон» можно увидеть одной из первых, когда входишь в Элис через восточные ворота. Хотя она построена в том же стиле фахверк, что и соседние здания, это двухэтажное заведение как минимум вдвое длиннее их, и, несмотря на свой возраст, выглядит впечатляющим образцом поздней средневековой архитектуры. Из-за своих размеров таверна имеет два входа, и на обоих указано, что она открыта двадцать четыре часа в сутки, семь дней в неделю.
 	</p>
 	<p>
-		The tavern's main sign hangs from a pole which juts out from the building's upper floor, and displays a stylised image of a huge red dragon giving a pile of golden treasure to a bewildered-looking sheep-boy. Beneath this, the words 'The Red Dragon' are painted in a dark burgundy hue. 
+		Главная вывеска таверны висит на шесте, выступающем из верхнего этажа; на ней изображен стилизованный огромный красный дракон, подносящий кучу золотых сокровищ ошеломленному пастушку. Под рисунком темно-бордовым цветом выведено название — «Красный дракон». 
 	</p>
 	<p>
-		Through the tavern's leaded windows, you can see that the
+		Сквозь свинцовые переплеты окон таверны видно, что
 		#IF(!game.isDayTime())
-			 well-lit
+			 ярко освещенный
 		#ENDIF
-		 interior is
+		 интерьер
 		#IF((game.getHourOfDay()>=15 && game.getHourOfDay()<=23))
-			 very busy, and the typical sounds of drunken revelry which spill out into the street inform you that the patrons are having a good time.
+			 очень оживлен, а типичные звуки пьяного веселья, выплескивающиеся на улицу, говорят о том, что посетители отлично проводят время.
 		#ELSE
-			 not particularly busy, although there are still several patrons sitting at some of the tables or leaning against the wooden bar.
+			 не особо многолюден, хотя за некоторыми столами все еще сидят люди, а кто-то прислонился к деревянной барной стойке.
 		#ENDIF
-		 If you wanted to, you could head inside and take a look around...
+		 Если захочешь, ты можешь зайти внутрь и осмотреться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TAVERN_ENTER"><![CDATA[
 	<p>
-		Deciding that you want to head inside the tavern, you approach the nearest of the two entrances and push open the door, before [pc.stepping] into 'The Red Dragon'...
+		Решив заглянуть в таверну, ты подходишь к ближайшему из двух входов и толкаешь дверь, прежде чем [pc.stepping] в «Красный дракон»...
 	</p>
 	]]>
 	</htmlContent>
@@ -442,23 +441,23 @@
 	<htmlContent tag="TAVERN_SEEDY"><![CDATA[
 	#IF(game.getHourOfDay()<5 || game.getHourOfDay()>=14)
 		<p>
-			An oddity in amongst the narrow alleyways of the northern half of Elis, the large, paved courtyard in front of you is filled with wooden picnic tables, at which a dozen or so locals are sitting and passing the hours by drinking and gambling with one another. The establishment responsible for their supply of alcohol is situated on the far side of the courtyard, and takes the form of a rather dilapidated, timber-framed structure. A weathered sign hanging precariously from a drooping metal pole displays an image of two crossed daggers, with the words 'The Crossed Blades' written in black, bold letting below.
+			Среди узких переулков северной части Элиса это место кажется странным исключением: перед тобой раскинулся просторный мощеный двор, уставленный деревянными столами для пикников. Повсюду сидят местные жители — человек дюжина или около того, — коротая время за выпивкой и азартными играми. Заведение, снабжающее их алкоголем, расположено на противоположной стороне двора и представляет собой довольно ветхое фахверковое строение. На покосившемся металлическом шесте опасно висит выцветшая вывеска с изображением двух скрещенных кинжалов, под которыми черным жирным шрифтом выведено название: «Скрещенные клинки».
 		</p>
 		<p>
-			While the patrons who're sitting out in the courtyard seem to be relatively well-behaved, there are some very rowdy sounds of laughter, cursing, and the occasional cheer coming from within the tavern itself. Although there are large, leaded windows on the ground floor, they're so grimy that
+			Хотя посетители во дворе ведут себя относительно прилично, из самой таверны доносятся шумные взрывы смеха, ругань и редкие победные возгласы. Несмотря на большие окна с переплетами на первом этаже, они настолько грязные, что
 			#IF(game.isDayTime())
-				 you can't see much of the interior through them, 
+				 сквозь них почти не разглядеть интерьер, 
 			#ELSE
-				 you can only barely tell that the lights are on inside,
+				 лишь смутно можно понять, что внутри горит свет,
 			#ENDIF
-			 and so if you wanted to find out what this tavern is like, you'll have to risk heading inside. As you approach the door, you see that there's an old, weathered sign which declares the tavern's opening hours to be from [style.colourMinorGood([units.time(14)]-[units.time(5)])].
+			 и поэтому, если ты хочешь узнать, что это за таверна, тебе придется рискнуть и зайти внутрь. Когда ты приближаешься к двери, ты замечаешь старую, потрепанную временем табличку, гласящую, что таверна открыта с [style.colourMinorGood([units.time(14)]-[units.time(5)])].
 		</p>
 	#ELSE
 		<p>
-			An oddity in amongst the narrow alleyways of the northern half of Elis, the large, paved courtyard in front of you is filled with wooden picnic tables, each one of which is vacant. The establishment to which this array of empty seating belongs is situated on the far side of the courtyard, and takes the form of a rather dilapidated, timber-framed structure. A weathered sign hanging precariously from a drooping metal pole displays an image of two crossed daggers, with the words 'The Crossed Blades' written in black, bold letting below.
+			Среди узких переулков северной части Элиса это место кажется странным исключением: перед тобой раскинулся большой мощеный внутренний дворик, уставленный пустыми деревянными столами для пикника. Заведение, к которому относятся эти ряды пустующих мест, расположено на противоположной стороне двора и представляет собой довольно ветхое фахверковое строение. На покосившемся металлическом шесте опасно болтается выцветшая вывеска с изображением двух скрещенных кинжалов, под которыми жирным черным шрифтом выведено название: «Скрещенные клинки».
 		</p>
 		<p>
-			Just like the empty courtyard before you suggests, the tavern itself seems to be closed, as there's no light nor sounds coming from within. Although there are large, leaded windows on the ground floor, they're so grimy that you can't see much of the interior through them, and so if you wanted to find out what this tavern is like, you'll have to come back again when it's open. Looking across to the tavern's front door, you see that there's an old, weathered sign which declares its opening hours to be from [style.colourMinorBad([units.time(14)]-[units.time(5)])].
+			Как и пустой двор перед тобой, сама таверна, похоже, закрыта — изнутри не доносится ни света, ни звуков. Хотя на первом этаже есть большие окна в свинцовых переплетах, они настолько грязные, что разглядеть интерьер почти невозможно; так что, если захочешь узнать, что это за место, придется вернуться, когда оно будет открыто. Глядя на входную дверь таверны, ты замечаешь старую потрепанную табличку, гласящую, что заведение работает с [style.colourMinorBad([units.time(14)]-[units.time(5)])].
 		</p>
 	#ENDIF
 	#IF(pc.isQuestCompleted(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS))
@@ -466,16 +465,16 @@
 			<i>
 			#IF(game.isHourBetween(6, 7))
 				#IF(flags.hasFlag(FLAG_innoxia_oglix_kheiron_spectated_today))
-					You've already seen what Kheiron and Golix get up to in the old stables today. If you wanted to watch them again, then you'll have to come back tomorrow between [units.time(6)]-[units.time(7)]...
+					Ты уже видел сегодня, чем занимаются Хейрон и Голикс в старых конюшнях. Если захочешь понаблюдать за ними снова, придется вернуться завтра между [units.time(6)] и [units.time(7)]...
 				#ELSE
-					Remembering what Oglix said, as it's currently between [units.time(6)]-[units.time(7)], you could sneak around behind the tavern to the old stables, where Kheiron and Golix should be having their meeting...
+					Вспомнив слова Огликса, понимаешь, что сейчас как раз время между [units.time(6)] и [units.time(7)]. Ты можешь прокрасться за таверну к старым конюшням, где Хейрон и Голикс должны проводить свою встречу...
 				#ENDIF
 			#ELSE
-				Remembering what Oglix said, if you were to come back here
+				Вспоминая слова Огликса, если ты вернешься сюда
 				#IF(game.getHourOfDay()>7)
-					 tomorrow
+					 завтра
 				#ENDIF
-				 between [units.time(6)]-[units.time(7)], you could sneak around behind the tavern to the old stables, where Kheiron and Golix will be having their meeting...
+				 между [units.time(6)] и [units.time(7)], ты сможешь прокрасться за таверну к старым конюшням, где Хейрон и Голикс будут проводить свою встречу...
 			#ENDIF
 			</i>
 		</p>
@@ -484,54 +483,54 @@
 	#IF(flags.hasFlag(FLAG_innoxia_yui_public_toy_unlocked))
 		<p>
 			#IF(flags.hasFlag(FLAG_innoxia_yui_public_toy_unavailable_today))
-				Although this is the place where Yui wants to meet you, you've already refused her offer today, so she won't show up again until next Friday...
+				Хотя именно здесь Юи хочет встретиться с тобой, ты уже отклонил её предложение сегодня, так что она не появится здесь снова до следующей пятницы...
 			#ELSE
-				This is the place where Yui wants to meet you
+				Это место, где Юи хочет встретиться с тобой
 				#IF(game.isHourBetween(20, 23))
-					 between [style.colourMinorGood([units.time(20)]-[units.time(23)])] on a
+					 между [style.colourMinorGood([units.time(20)]-[units.time(23)])] в
 				#ELSE
-					 between [style.colourMinorBad([units.time(20)]-[units.time(23)])] on a
+					 между [style.colourMinorBad([units.time(20)]-[units.time(23)])] в
 				#ENDIF
 				#IF(game.getDayOfWeek()==DOW_FRIDAY)
-					 [style.colourMinorGood(Friday)].
+					 [style.colourMinorGood(пятницу)].
 				#ELSE
-					 [style.colourMinorBad(Friday)].
+					 [style.colourMinorBad(пятницу)].
 				#ENDIF
 				#IF(game.isHourBetween(20, 23) && game.getDayOfWeek()==DOW_FRIDAY)
-					 As such, you could remain here and wait for her to appear and make contact with you.
+				Таким образом, ты можешь остаться здесь и ждать, когда она появится и выйдет с тобой на контакт.
 				#ELSE
-					 As such, you're not going to be able to meet with her at the moment, but if you were to return here at the appropriate time, you could make contact with her.
+					 Таким образом, сейчас встретиться с ней не получится, но если ты вернешься сюда в подходящее время, то сможешь её застать.
 				#ENDIF
 			#ENDIF
 		</p>
 		#IF(!flags.hasFlag(FLAG_innoxia_yui_public_toy_unavailable_today) && (!pc.hasFetish(FETISH_MASOCHIST) || pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0 || (!game.isAnalContentEnabled() && !pc.hasVagina()) || pc.getLegConfiguration()!=LEG_CONFIGURATION_BIPEDAL))
 			<p>
 				#IF(!pc.hasFetish(FETISH_MASOCHIST))
-					As you think about Yui's sadistic nature, you realise that whatever offer she's going to make is sure to involve putting you in a situation where you'll be abused. As [style.italicsBad(you're not a masochist)], you've got a bad feeling about this and [style.italicsBad(decide not to meet with Yui)]...
+					Размышляя о садистской натуре Юи, ты понимаешь: какое бы предложение она ни сделала, оно наверняка подразумевает, что тебя будут унижать и истязать. Поскольку [style.italicsBad(ты не мазохист)], у тебя нехорошее предчувствие, и ты [style.italicsBad(решаешь не встречаться с Юи)]...
 				#ELSE
-					Remembering Yui's conditions for your meeting, you realise that she's not going to show up.
+					Вспомнив условия встречи, которые выдвинула Юи, ты понимаешь, что она не явится.
 					#IF(pc.isAnyEquippedClothingSealed())
-						 You [style.colourBad(have)] sealed clothing equipped,
+					 На тебе [style.colourBad(надет)] герметичный костюм,
 					#ELSE
-						 You [style.colourGood(don't have)] sealed clothing equipped,
+					 На тебе [style.colourGood(нет)] герметичного костюма,
 					#ENDIF
 					#IF(pc.isHasAnyPregnancyEffects())
-						 you [style.colourBad(have)] a pregnancy-related status effect active,
+					 на тебе [style.colourBad(действует)] эффект беременности,
 					#ELSE
-						 you [style.colourGood(don't have)] a pregnancy-related status effect active,
+						 у тебя [style.colourGood(нет)] активных эффектов беременности,
 					#ENDIF
 					#IF(pc.getDirtySlots().size()>0)
-						 you [style.colourBad(have)] dirty inventory slots,
+						 у тебя [style.colourBad(есть)] грязные слоты в инвентаре,
 					#ELSE
-						 you [style.colourGood(don't have)] dirty inventory slots,
+						 у тебя [style.colourGood(нет)] грязных слотов в инвентаре,
 					#ENDIF
 					#IF(!game.isAnalContentEnabled() && !pc.hasVagina())
-						 you [style.colourGood(don't have)] a pussy,
+						 у тебя [style.colourGood(нет)] киски,
 					#ENDIF
 					#IF(pc.getLegConfiguration()!=LEG_CONFIGURATION_BIPEDAL)
-						 and you [style.colourBad(don't have)] a bipedal lower body...
+						 и у тебя [style.colourBad(нет)] двуногого низа тела...
 					#ELSE
-						 and you [style.colourGood(have)] a bipedal lower body...
+						 и у тебя [style.colourGood(есть)] двуногое тело...
 					#ENDIF
 				#ENDIF
 			</p>
@@ -542,16 +541,16 @@
 	
 	<htmlContent tag="TAVERN_TAUR"><![CDATA[
 	<p>
-		Positioned on the street corner directly adjacent to the Farmer's Market, 'The Centaur's Sword' tavern occupies one of the largest two-story buildings within Elis. Prominently displayed beside each of its two remarkably-wide entrances, information boards declare this tavern to have a 'taur-friendly interior design' and a bar that's able to 'accommodate more than a dozen centaurs'.
+		Расположенная на углу улицы, вплотную к фермерскому рынку, таверна «Меч кентавра» занимает одно из крупнейших двухэтажных зданий в Элисе. На информационных досках, заметно размещенных рядом с каждым из двух необычайно широких входов, красуются надписи о том, что в таверне представлен «интерьер, удобный для тавров», а бар способен «вместить более дюжины кентавров».
 	</p>
 	<p>
-		The tavern's sign hangs from a purpose-built post situated a few [style.lSizes] away from the building's corner, and displays an image of a naked, muscular centaur showing off his enormous erection. The words 'The Centaur's Sword' are written beneath this in flowing gold script, while an additional sign hanging beneath that reads '[style.colourMinorGood(Open 24/7)]'.
+	Вывеска таверны висит на специально сооруженном столбе в нескольких [style.lSizes] от угла здания; на ней изображен обнаженный мускулистый кентавр, хвастающийся своей огромной эрекцией. Под изображением изящным золотым шрифтом выведено название «Меч кентавра», а ниже висит дополнительная табличка: «[style.colourMinorGood(Открыто 24/7)]».
 	</p>
 	<p>
 		#IF((game.getHourOfDay()>=15 && game.getHourOfDay()<=23))
-			The sounds of laughter and the distinctive stomping of hoofs on wooden floorboards can quite clearly be heard from where you're standing, letting you know that the tavern's occupants are having a good time. Looking through the leaded windows, you see that there are a large number of taurs at the bar, and you wonder whether to head inside and take a look around...
+			С того места, где ты стоишь, отчетливо слышны смех и характерный топот копыт по деревянным половицам — верный признак того, что посетители таверны отлично проводят время. Глядя сквозь свинцовые переплеты окон, ты видишь, что у бара полно тавров, и невольно задумываешься, стоит ли зайти внутрь и осмотреться...
 		#ELSE
-			The odd sound of laughter or the distinctive stomping of hoofs on wooden floorboards can occasionally be heard from where you're standing, letting you know that there are at least a few people inside the tavern. Looking through the leaded windows, you confirm this by seeing that there are several taurs at the bar, and you wonder whether to head inside and take a look around...
+			С того места, где ты стоишь, время от времени доносятся странные звуки смеха или отчетливый топот копыт по деревянным половицам, давая понять, что внутри таверны есть хотя бы несколько человек. Вглядываясь в свинцовые переплеты окон, ты подтверждаешь свои догадки: у барной стойки сидят несколько тавров. Ты раздумываешь, стоит ли зайти внутрь и осмотреться...
 		#ENDIF
 	</p>
 	]]>
@@ -559,84 +558,84 @@
 	
 	<htmlContent tag="TAVERN_TAUR_ENTER"><![CDATA[
 	<p>
-		Deciding that you want to head inside the tavern, you approach the nearest of the two entrances and push open the door, before [pc.stepping] into 'The Centaur's Sword'...
+		Решив, что стоит зайти в таверну, ты подходишь к одному из двух входов и толкаешь дверь, чтобы [pc.stepping] в «Меч кентавра»...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOWER"><![CDATA[
 	<p>
-		Constructed out of the same large, stone blocks as the connecting walls, this square tower is three stories tall. A wide, spiral staircase links all three of its floors, as well as providing access to the flat wooden platform which serves as the roof. Unlike the town's walls, this tall vantage point is manned by a member of the town guard, who's able to look over the crenellated walls and survey the surrounding landscape for any sign of approaching bandits or raiders.
+		Эта квадратная башня высотой в три этажа возведена из тех же массивных каменных блоков, что и соединительные стены. Широкая винтовая лестница связывает все три этажа, а также служит выходом на плоскую деревянную платформу, которая служит крышей. В отличие от городских стен, на этой высокой наблюдательной вышке дежурит городской стражник, способный заглядывать за зубчатые стены и осматривать окрестности в поисках приближающихся бандитов или налетчиков.
 	</p>
 	#IF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_elis_town_tower_yui && flags.hasFlag(FLAG_innoxia_yui_dungeon_unlocked))
 		<p>
-			Access to this tower is completely unrestricted, and there seems to always be at least one member of the public who's decided to travel up to the top in order to enjoy the view or keep the guard company.
+			Доступ в эту башню совершенно свободный, и здесь всегда можно встретить хотя бы одного горожанина, который решил подняться на самый верх, чтобы насладиться видом или составить компанию стражнику.
 		</p>
 		<p>
 			#IF(flags.hasFlag(FLAG_innoxia_yui_dungeon_unavailable_today))
-				Although you know that that this is where Yui has her secret bondage basement, you've already refused her offer this evening, so she won't show up again until
+				Хотя ты знаешь, что именно здесь находится секретный подвал Юи для практик бондажа, ты уже отклонил её предложение этим вечером, так что она не появится снова до
 				#IF(game.getDayOfWeek()==DOW_MONDAY)
-					 Wednesday...
+					 среды...
 				#ELSE
-					 Monday...
+					 понедельника...
 				#ENDIF
 			#ELSE
 				#IF(flags.hasFlag(FLAG_innoxia_yui_dungeon_refused) || flags.hasFlag(FLAG_innoxia_yui_dungeon_completed_stage_1))
-					Knowing that this is where Yui has her secret bondage basement, you can expect to find her here
+				Зная, что именно здесь находится секретный подвал Юи для практик бондажа, ты можешь рассчитывать встретить её здесь
 				#ELSE
-					This is the tower which Yui told you about, and she said to expect to find her here
+					Это та самая башня, о которой рассказывала Юи; она говорила, что её можно встретить именно здесь
 				#ENDIF
 				#IF(game.isHourBetween(20, 23))
-					 between [style.colourMinorGood([units.time(20)]-[units.time(23)])] every
+					 между [style.colourMinorGood([units.time(20)]-[units.time(23)])] каждый
 				#ELSE
-					 between [style.colourMinorBad([units.time(20)]-[units.time(23)])] every
+					 между [style.colourMinorBad([units.time(20)]-[units.time(23)])] каждый
 				#ENDIF
 				#IF(game.getDayOfWeek()==DOW_MONDAY)
-					 [style.colourMinorGood(Monday)] and Wednesday.
+					 [style.colourMinorGood(понедельник)] и среду.
 				#ELSEIF(game.getDayOfWeek()==DOW_WEDNESDAY)
-					 Monday and [style.colourMinorGood(Wednesday)].
+					 понедельник и [style.colourMinorGood(среду)].
 				#ELSE
-					 [style.colourMinorBad(Monday and Wednesday)].
+					 [style.colourMinorBad(понедельник и среду)].
 				#ENDIF
 				#IF(game.isHourBetween(20, 23) && (game.getDayOfWeek()==DOW_MONDAY || game.getDayOfWeek()==DOW_WEDNESDAY))
-					 As such, you could remain here and wait for her to appear and make contact with you in order to 
+					 Так что ты можешь остаться здесь и ждать, когда она явится и выйдет с тобой на контакт, чтобы 
 				#ELSE
-					 As such, you're not going to be able to meet with her at the moment, but if you were to return here at the appropriate time, you could 
+					 Сейчас встретиться с ней не получится, но если ты вернёшься сюда в нужное время, ты сможешь 
 				#ENDIF
 				#IF(flags.hasFlag(FLAG_innoxia_yui_dungeon_refused) || flags.hasFlag(FLAG_innoxia_yui_dungeon_completed_stage_1))
-					 accept her offer again...
+					 снова принять её предложение...
 				#ELSE
-					 find out what her offer is...
+					 узнать, в чём заключается её предложение...
 				#ENDIF
 			#ENDIF
 		</p>
 		#IF(!flags.hasFlag(FLAG_innoxia_yui_dungeon_unavailable_today) && (!pc.hasFetish(FETISH_MASOCHIST) || pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0))
 			<p>
 				#IF(!pc.hasFetish(FETISH_MASOCHIST))
-					As you think about Yui's sadistic nature, you realise that whatever offer she's going to make is sure to involve putting you in a situation where you'll be abused. As [style.italicsBad(you're not a masochist)], you've got a bad feeling about this and [style.italicsBad(decide not to meet with Yui)]...
+					Размышляя о садистской натуре Юи, ты понимаешь: какое бы предложение она ни сделала, оно наверняка подразумевает, что тебя будут унижать и истязать. Поскольку [style.italicsBad(ты не мазохист)], у тебя нехорошее предчувствие, и ты [style.italicsBad(решаешь не встречаться с Юи)]...
 				#ELSE
-					Remembering Yui's conditions for your meeting, you realise that she's not going to show up.
+					Вспомнив условия встречи, которые выдвинула Юи, ты понимаешь, что она не явится.
 					#IF(pc.isAnyEquippedClothingSealed())
-						 You [style.colourBad(have)] sealed clothing equipped,
+					 На тебе [style.colourBad(надет)] герметичный костюм,
 					#ELSE
-						 You [style.colourGood(don't have)] sealed clothing equipped,
+					 На тебе [style.colourGood(нет)] герметичного костюма,
 					#ENDIF
 					#IF(pc.isHasAnyPregnancyEffects())
-						 you [style.colourBad(have)] a pregnancy-related status effect active,
+					 на тебе [style.colourBad(действует)] эффект беременности,
 					#ELSE
-						 you [style.colourGood(don't have)] a pregnancy-related status effect active,
+						 у тебя [style.colourGood(нет)] активных эффектов беременности,
 					#ENDIF
 					#IF(pc.getDirtySlots().size()>0)
-						 and you [style.colourBad(have)] dirty inventory slots...
+						 и у тебя [style.colourBad(есть)] грязные слоты в инвентаре...
 					#ELSE
-						 and you [style.colourGood(don't have)] dirty inventory slots...
+						 и у тебя [style.colourGood(нет)] грязных слотов в инвентаре...
 					#ENDIF
 				#ENDIF
 			</p>
 		#ENDIF
 	#ELSE
-		<p>
-			Access to this tower is completely unrestricted, and there seems to always be at least one member of the public who's decided to travel up to the top in order to enjoy the view or keep the guard company. With little to keep you here, you quickly find yourself leaving the tower behind as you continue on your way...
+			<p>
+			Доступ в эту башню совершенно свободный, и здесь, кажется, всегда найдется хоть один зевака, решивший подняться на самый верх, чтобы насладиться видом или составить компанию стражнику. Поскольку задерживаться здесь особо нечем, ты быстро покидаешь башню и продолжаешь свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -644,14 +643,14 @@
 	
 	<htmlContent tag="TOWER_FLY_TO_FIELDS"><![CDATA[
 	<p>
-		Deciding that you want to head down into the fields which surround Elis, you [pc.step] out onto the wall beside the tower, and after taking a short run-up, launch yourself into the air and gracefully fly down to the grass below. Smoothly landing on a flat, clear patch of land, you look around and wonder where to go from here...
+		Решив спуститься на поля, окружающие Элис, ты [pc.step] на стену рядом с башней, а затем, сделав короткий разбег, прыгаешь в воздух и грациозно летишь вниз, к траве. Мягко приземлившись на ровном участке земли, ты оглядываешься по сторонам, раздумывая, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOWN_HALL"><![CDATA[
 	<p>
-		Consisting of two long, timber-framed buildings joined in the middle by a five-story, steepled tower, the town hall is by far the largest structure in all of Elis. Serving as the centre of administration not only for the town itself but also a significant portion of the Foloi Fields, the town hall has very long opening hours, which are listed beside each of its many entrances as being
+		Ратуша представляет собой два длинных здания с деревянным каркасом, соединенных в центре пятиэтажной башней с остроконечным шпилем, и является самым крупным строением во всем Элисе. Служа административным центром не только самого города, но и значительной части полей Фолой, ратуша работает очень долго; часы приема указаны у каждого из множества входов и составляют
 		#IF((game.getHourOfDay()<7 || game.getHourOfDay()>21))
 			 [style.colourMinorBad([units.time(7)]-[units.time(21)])].
 		#ELSE
@@ -661,12 +660,12 @@
 	<p>
 		#IF((game.getHourOfDay()<7 || game.getHourOfDay()>21))
 			#IF(flags.hasFlag(FLAG_innoxia_elis_minotallys_introduced))
-				Due to the fact that it's currently closed to members of the public, all but one of the doors are firmly shut and locked, and only a couple of lights can be seen to still be on in some of the rooms on the upper floors. As you're in possession of an [style.colourGood(access pass)], however, these closing times don't affect you, and you could easily get past the Enforcer stationed beside the main entrance and enter the town hall if you so wished...
+				Поскольку сейчас здание закрыто для обычных посетителей, почти все двери плотно заперты на замок, и лишь в нескольких комнатах на верхних этажах еще теплится свет. Однако, так как у тебя есть [style.colourGood(пропуск)], время закрытия тебя не беспокоит: ты можешь без труда миновать Enforcer, стоящего у главного входа, и войти в ратушу, если пожелаешь...
 			#ELSE
-				Due to the fact that it's currently [style.colourBad(closed)] to members of the public, all but one of the doors are firmly shut and locked, and only a couple of lights can be seen to still be on in some of the rooms on the upper floors. An Enforcer is guarding the only door that's been left open, preventing you from entering the town hall at this time. If you wanted to go inside, you'll have to come back during opening hours...
+				Поскольку сейчас здание [style.colourBad(закрыто)] для обычных посетителей, почти все двери плотно заперты на замок, и лишь в нескольких комнатах на верхних этажах еще теплится свет. Enforcer охраняет единственную оставленную открытой дверь, не давая тебе войти в ратушу в данный момент. Если хочешь попасть внутрь, придется вернуться в часы приема...
 			#ENDIF
 		#ELSE
-			Due to the fact that it's currently [style.colourGood(open)] to members of the public, you can witness the odd person heading in or out of the building. If you wanted to, you could follow their example and make use of one of the door signposted as the public entrance to head inside...
+				Поскольку сейчас здание [style.colourGood(открыто)] для посетителей, можно заметить редких прохожих, входящих или выходящих из здания. Если захочешь, ты можешь последовать их примеру и войти внутрь через одну из дверей, помеченных как общественный вход...
 		#ENDIF
 	</p>
 	]]>
@@ -675,9 +674,9 @@
 	<htmlContent tag="TOWN_HALL_ENTER"><![CDATA[
 	<p>
 		#IF(game.getHourOfDay()>=7 && game.getHourOfDay()<21)
-			Heading over to the door marked as the public entrance, you push it open and [pc.step] into Elis's town hall...
+			Подойдя к двери с надписью «общественный вход», ты толкаешь её и [pc.step] в ратушу Элиса...
 		#ELSE
-			Heading over to the door marked as the public entrance, you show the Enforcer on duty your pass, before [pc.stepping] past them and entering Elis's town hall...
+			Подойдя к двери с надписью «общественный вход», ты показываешь дежурному Enforcer свой пропуск, после чего [pc.stepping] мимо него и входишь в ратушу Элиса...
 		#ENDIF
 	</p>
 	]]>
@@ -685,31 +684,32 @@
 	
 	<htmlContent tag="WALL"><![CDATA[
 	<p>
-		While they seem to be very strong and sturdy from the outside, the walls of Elis are not particularly impressive from up close. Although the stone blocks from which these walls are constructed are very large, there's only a single layer of them, with the stairs, ramparts, and supporting scaffolding being made out of thick beams of wood. Standing at a little over two-stories tall, they're large enough to stop any force short of a well-prepared army, and so even despite their relative weakness, these walls are able to completely protect the residents of Elis from bandits and Lunette's raiders.
+		Хотя со стороны стены Элиса кажутся очень мощными и прочными, вблизи они не производят особого впечатления. Несмотря на то, что каменные блоки, из которых они сложены, весьма велики, стена состоит всего из одного слоя, а лестницы, парапеты и опорные конструкции сделаны из толстых деревянных балок. Высотой чуть более двух этажей, они достаточно массивны, чтобы остановить любую силу, не являющуюся хорошо подготовленной армией, и поэтому, несмотря на свою относительную хрупкость, эти стены способны полностью защитить жителей Элиса от бандитов и налетчиков Лунетт.
 	</p>
 	<p>
-		Due to there being no imminent threat of attack, there are no guards or Enforcers manning the parapets, and with no signs prohibiting access to members of the public, you're able to freely head up and travel along the wide, wooden walkway. Although there's a road running parallel to the wall, it seems a lot more interesting to travel along this elevated platform, which seems to be the opinion of several other residents of Elis, who have similarly decided to take the high road.
+		Поскольку непосредственной угрозы нападения нет, на парапетах нет ни стражников, ни Enforcer, а знаков, запрещающих доступ горожанам, тоже не видно, так что ты можешь свободно подняться наверх и идти по широкой деревянной дорожке. Хотя вдоль стены проходит и обычная дорога, прогулка по этой возвышенной платформе кажется куда более интересной — и, похоже, это мнение разделяют и другие жители Элиса, которые тоже решили выбрать путь повыше.
 	</p>
 	<p>
-		Looking over the stone crenellations, 
+	
+		Заглянув за каменные зубцы, 
 		#IF(game.isDayTime())
-			 you're able to get a fine view of the surrounding fields and woodland.
+			 ты можешь насладиться прекрасным видом на окрестные поля и леса.
 		#ELSE
-			 you're able to get a view of the surrounding fields and woodland as they appear during the night.
+			 ты видишь окрестные поля и леса, окутанные ночной тишиной.
 		#ENDIF
 		#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-			 Everything apart from the lake and roads are covered in a thick blanket of snow,
+			 Всё, кроме озера и дорог, укрыто плотным слоем снега,
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 and as the fluffy white flakes continue to fall, you take a moment to look over the winter scene before continuing on your way...
+				 и пока продолжают падать пушистые белые хлопья, ты на мгновение замираешь, любуясь зимним пейзажем, прежде чем продолжить свой путь...
 			#ELSE
-				 and you take a moment to look over the winter scene before continuing on your way...
+				 и ты на мгновение замираешь, любуясь зимним пейзажем, прежде чем продолжить свой путь...
 			#ENDIF
 		#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-			 Despite the fact that it's currently raining, the vista is pleasant enough to draw you in for a few moments, and you pause to appreciate the view before continuing on your way...
+			 Несмотря на то что сейчас идет дождь, вид настолько приятен, что ты невольно задерживаешься на пару мгновений, чтобы насладиться им, прежде чем продолжить путь...
 		#ELSEIF(game.getCurrentWeather()==WEATHER_CLEAR)
-			 The vista is pleasant enough to draw you in for a few moments, and you pause to appreciate the view before continuing on your way...
+			 Вид настолько приятен, что ты невольно задерживаешься на пару мгновений, чтобы насладиться им, прежде чем продолжить свой путь...
 		#ELSE
-			 Despite the fact that the overcast skies are casting a deep shade over the surrounding landscape, the vista is pleasant enough to draw you in for a few moments, and you pause to appreciate the view before continuing on your way...
+			 Несмотря на то что хмурое небо бросает глубокую тень на окрестные земли, пейзаж настолько хорош, что ты замираешь на мгновение, чтобы полюбоваться им, прежде чем продолжить путь...
 		#ENDIF
 	</p>
 	]]>
@@ -717,75 +717,75 @@
 	
 	<htmlContent tag="WALL_FLY_TO_FIELDS"><![CDATA[
 	<p>
-		Deciding that you want to head down into the fields which surround Elis, you take a short run-up and launch yourself into the air, before gracefully flying down to the grass below. Smoothly landing on a flat, clear patch of land, you look around and wonder where to go from here...
+		Решив спуститься на поля, окружающие Элис, ты делаешь короткий разбег и взмываешь в воздух, после чего грациозно планируешь вниз, к траве. Мягко приземлившись на ровном участке земли, ты оглядываешься по сторонам, раздумывая, куда податься дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WOOD_HUT"><![CDATA[
 	<p>
-		Looking over to the edge of the nearby woodland, you see what must be the only residential structure to be found outside of the walls of Elis. Taking the form of a single-story log cabin, this modest dwelling looks to be occupied, as a lazy stream of thin white smoke rises from its single metal chimney.
+		Посмотрев в сторону опушки ближайшего леса, ты замечаешь нечто, что, должно быть, является единственным жилым строением за пределами стен Элиса. Это скромное одноэтажное бревенчатое жилище кажется обитаемым — из его единственной металлической трубы лениво вьется струйка тонкого белого дыма.
 	</p>
 	<p>
-		A short distance away from this cabin sits a very large, open-sided storage shed, which you can see is mostly filled with chopped logs. The only remaining space inside this shed is taken up by a section of tree trunk, which looks to be used as a chopping block due to the fact that a large wood-cutting axe has been sunk into it at a low angle. A sign nailed to the wall of this shed reads: 'Firewood for sale. Deliveries available. Please knock.'
+		Неподалеку от хижины стоит огромный открытый сарай, почти доверху забитый колотыми дровами. Единственное свободное место внутри занимает массивный обрубок ствола — судя по всему, это разделочный пень, в который под углом глубоко вонзен большой дровосек. На стене сарая прибита табличка: «Продажа дров. Возможна доставка. Пожалуйста, стучите».
 	</p>
 	<p>
-		Although you don't have much of a need for firewood, there's nothing stopping you from knocking on the log cabin's door and introducing yourself...
+		Хотя дрова тебе особо и не нужны, ничто не мешает тебе постучать в дверь хижины и представиться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="WOODS"><![CDATA[
 	<p>
-		The patches of woodland surrounding Elis are composed primarily of deciduous trees, although there are a few coniferous species scattered about here and there.
+		Лесные массивы, окружающие Элис, состоят в основном из лиственных деревьев, хотя здесь и там встречаются и хвойные породы.
 		#IF(game.isDayTime())
 			#IF(game.getSeason()==SEASON_SPRING)
-				 Thanks to the safety offered by the close proximity of Elis, you can take the time to truly appreciate the woodland's spring-time beauty. Small, leafy shoots are mixed in amongst the many trees' blossoms, and in the light of day, these woods have an almost enchanted feel to it. The tweeting of birds and gentle rustle of the wind in the branches is soothing to your [pc.ears], and you can't help but smile as you find yourself being put at ease by nature's calm ambience.
+				Благодаря безопасности, которую дает близость Элис, у тебя есть возможность по-настоящему насладиться весенней красотой этих мест. Среди цветущих деревьев пробиваются маленькие лиственные ростки, и при дневном свете этот лес кажется почти заколдованным. Щебет птиц и нежный шелест ветра в ветвях умиротворяют твой [pc.ears], и ты невольно улыбаешься, чувствуя, как спокойная атмосфера природы дарит тебе душевный покой.
 			#ELSEIF(game.getSeason()==SEASON_SUMMER)
-				 Thanks to the safety offered by the close proximity of Elis, you can take the time to truly appreciate the woodland's summer-time beauty. Large, semi-translucent leaves cast the light of day into a mottled green covering overhead, giving these woods an almost enchanted feel to it. The tweeting of birds and the soft whisper of wind in the branches is soothing to your [pc.ears], and you can't help but smile as you find yourself being put at ease by nature's calm ambience.
+				 Благодаря безопасности, которую дарит близость Элиса, у тебя есть время по-настоящему насладиться летней красотой лесов. Крупные, полупрозрачные листья пропускают дневной свет, создавая над головой пеструю зеленую завесу, отчего лес кажется почти заколдованным. Щебет птиц и мягкий шепот ветра в ветвях успокаивают твой [pc.ears], и ты невольно улыбаешься, чувствуя, как спокойствие природы дарит тебе умиротворение.
 			#ELSEIF(game.getSeason()==SEASON_AUTUMN)
-				 Thanks to the safety offered by the close proximity of Elis, you can take the time to truly appreciate the woodland's autumnal beauty. The canopy's countless leaves are casting the light of day into a mottled orange, brown, and red, and with the faint smell of mulch, as well as the slight chill in the air, you can definitely feel that winter is not too far away. The tweeting of birds and the gentle rustle of wind in the branches is soothing to your [pc.ears], and you can't help but smile as you find yourself being put at ease by nature's calm ambience.
+				 Благодаря безопасности, которую дарит близость Элиса, у тебя есть время по-настоящему насладиться осенней красотой лесов. Бесчисленные листья в кронах деревьев пропускают дневной свет, окрашивая всё вокруг в пестрые оранжевые, коричневые и красные тона; а едва уловимый запах прелой листвы и легкая прохлада в воздухе ясно дают понять, что зима уже не за горами. Щебет птиц и нежный шелест ветра в ветвях успокаивают твой [pc.ears], и ты невольно улыбаешься, чувствуя, как спокойствие природы дарит тебе умиротворение.
 			#ELSE
-				 Despite the safety offered by the close proximity of Elis, you can't help but feel a little uneasy as you travel through the dreary and lifeless wintertime woodland. With the trees having shed all of their leaves, the cool light of day shines down unobstructed onto the
+				 Несмотря на безопасность, которую дарит близость Элиса, ты не можешь избавиться от легкого чувства тревоги, пробираясь сквозь унылый и безжизненный зимний лес. Деревья сбросили листву, и холодный дневной свет беспрепятственно падает на
 				#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-					 snow-covered
+				 покрытую снегом
 				#ELSE
-					 muddy brown
+				 грязно-коричневую
 				#ENDIF
-				 floor of the forest, offering almost no warmth to take the chill out of the air. The occasional tweet of a non-migratory bird, or the sudden, rustling gust of wind in the barren branches keeps you on edge, and you find yourself ruing the inconsistency of nature's winter ambience.
+				 лесная подстилка, почти не дающая тепла, чтобы разогнать пробирающую до костей прохладу. Редкое чириканье оседлых птиц или внезапный шелестящий порыв ветра в голых ветвях заставляют тебя постоянно быть начеку, и ты невольно проклинаешь переменчивость зимней атмосферы в этих лесах.
 			#ENDIF
 		#ELSE
 			#IF(game.getSeason()!=SEASON_WINTER)
-				 Although pleasant enough during daylight hours, the woodland feels particularly ominous at night. The ground beneath your [pc.feet] has transformed into a mat of inky blackness, and with oddly-shaped shadows lurking behind every tree, it's hard to convince yourself that the proximity of Elis makes these woods safe to travel through. An odd owl's hoot or distant wolf's howl leaves you wondering if a wild animal is close by, and every time there's a gentle rustle of wind in the branches, you have to stop and listen to make sure that nothing's sneaking up on you.
+				 Хотя при дневном свете здесь довольно приятно, ночью лес кажется особенно зловещим. Земля под твоими [pc.feet] превратилась в сплошной ковер иссиня-черной тьмы, а из-за причудливых теней, таящихся за каждым деревом, трудно убедить себя, что близость Элис делает эти леса безопасными для прогулок. Странное уханье совы или далекий волчий вой заставляют гадать, не рыщет ли где-то поблизости дикий зверь, и каждый раз, когда в ветвях слышится легкий шелест ветра, тебе приходится замирать и прислушиваться, чтобы убедиться, что к тебе никто не подкрадывается.
 			#ELSE
-				 Although dreary and depressing enough in daylight hours at this time of year, the winter woodland feels particularly ominous at night. The ground beneath your [pc.feet] has transformed into a twisted mass of shadows, and with the inky-blackness behind each tree offering places from which to spring an ambush, it's hard to convince yourself that the proximity of Elis makes these woods safe to travel through. An odd owl's hoot or distant wolf's howl leaves you wondering if a wild animal is close by, and every time there's a sudden, rustling gust of wind in the branches, you have to stop and listen to make sure that nothing's sneaking up on you.
+				 Хотя в это время года лес и так выглядит мрачно и уныло при свете дня, ночью он кажется по-настоящему зловещим. Земля под твоими [pc.feet] превратилась в переплетение изломанных теней, а непроглядная чернота за каждым деревом так и манит устроить засаду, что трудно верить, будто близость Элис делает эти леса безопасными. Странное уханье совы или далекий волчий вой заставляют гадать, не рыщет ли где-то поблизости дикий зверь, и каждый раз, когда внезапный порыв ветра заставляет ветви зашуршать, тебе приходится останавливаться и прислушиваться, чтобы убедиться, что к тебе никто не подкрадывается.
 			#ENDIF
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-			Thanks to the snow which
+			Благодаря снегу, который
 			#IF(game.getCurrentWeather()==WEATHER_SNOW)
-				 has not only covered the land, but which is also currently falling in big flurries,
+				 не только укрыло землю, но и сейчас валит густыми хлопьями,
 			#ELSE
-				 has covered the land,
+				 укрыло землю,
 			#ENDIF
-			 the forest floor is transformed into a clean, white blanket, which crunches loudly
+			 лесную подстилку превратило в чистый белый ковер, который громко хрустит
 			#IF(pc.hasLegs())
-				 underfoot.
+				 под ногами.
 			#ELSE
-				 beneath your [pc.feet].
+				 под твоими [pc.feet].
 			#ENDIF
 		#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
 			#IF(game.getSeason()!=SEASON_WINTER)
-				The drops of rain falling on the canopy up above adds another layer of sound to the forest, and every now and again a leaf bends down to deposit a particularly large drop of accumulated water onto either the ground or your head.
+				Капли дождя, падающие на кроны деревьев, добавляют лесу еще один слой звуков, и время от времени лист прогибается, чтобы сбросить особенно крупную каплю накопившейся воды либо на землю, либо тебе на голову.
 			#ELSE
-				Thanks to the fact that the trees bear no leaves at this time of year, the rain freely falls through the forest's canopy, quickly saturating the ground beneath your [pc.feet] and adding another obstacle in the form of patches of thick, squelching mud.
+				Благодаря тому, что в это время года на деревьях нет листвы, дождь свободно просачивается сквозь лесной полог, быстро насыщая землю под твоими [pc.feet] и создавая новые препятствия в виде участков густой, чавкающей грязи.
 			#ENDIF
 		#ELSEIF(game.getCurrentWeather()==WEATHER_CLEAR)
-			With the clear skies above promising no chance of precipitation, you continue on your way through the woods...
+				Поскольку чистое небо над головой не сулит осадков, ты продолжаешь свой путь через лес...
 		#ELSE
-			With the cloudy skies above threatening to burst at any moment, you continue on your way through the woods...
+				Поскольку затянутое тучами небо грозит разразиться ливнем в любой момент, ты продолжаешь свой путь через лес...
 		#ENDIF
 	</p>
 	]]>

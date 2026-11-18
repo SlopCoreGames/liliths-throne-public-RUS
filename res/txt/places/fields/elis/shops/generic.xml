@@ -3,90 +3,89 @@
 
 	<htmlContent tag="EXIT"><![CDATA[
 	<p>
-		The link between this shopping precinct and the rest of Elis takes the form of a wide gap between a couple of residential buildings. A large sign proudly names this precinct as 'Wall's End', with an additional touristy-looking information board situated right in the middle of the path.
+		Связь между этим торговым кварталом и остальной частью Элиса представляет собой широкий проход между парой жилых домов. Большая вывеска с гордостью гласит, что этот район называется «Конец Стены», а прямо посреди пути стоит типичная туристическая информационная доска.
 	</p>
 	<p>
-		Large wooden plant boxes line the sides of this entranceway, and are filled with a dazzling array of brightly-coloured flowers.
+		Вдоль входа выстроены большие деревянные ящики, наполненные ослепительным разнообразием ярких цветов.
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17)
-			 With the information board quite clearly listing the standard opening times of the precinct's stores as [style.colourMinorGood([units.time(9)]-[units.time(17)])], it's no wonder that there are a considerable amount of people passing through this entrance.
+			На информационной доске четко указано стандартное время работы магазинов квартала: [style.colourMinorGood([units.time(9)]-[units.time(17)])], так что неудивительно, что через этот вход проходит немало людей.
 		#ELSE
-			 Despite the information board quite clearly listing the standard opening times of the precinct's stores as [style.colourMinorBad([units.time(9)]-[units.time(17)])], there's still the occasional person passing through this entrance.
+			Несмотря на то, что на информационной доске четко указано стандартное время работы магазинов квартала: [style.colourMinorBad([units.time(9)]-[units.time(17)])], через этот вход все же изредка кто-то проходит.
 		#ENDIF
 	</p>
 	<p>
-		From here you have the limited options of heading into Wall's End, exiting back out into Elis, or reading the information board...
+		Отсюда у тебя есть лишь несколько вариантов: отправиться в «Конец Стены», выйти обратно в Элис или изучить информационную доску...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT_INFO"><![CDATA[
 	<p>
-		Deciding to take a moment to read the touristy-looking information board, you [pc.walk] over to it and scan over the following:
+		Решив потратить немного времени на чтение этой туристической доски, ты [pc.walk] к ней и пробегаешь глазами следующее:
 	</p>
 	<hr/>
 	<i>
 		<p style='text-align:center; font-size:1.1em'>
-			<b>Wall's End</b>
+			<b>Конец Стены</b>
 			<br/>
-			Standard Opening Times: [units.time(9)]-[units.time(17)]
-		</p>
-		<p>
-			<b>History</b>
+			Стандартное время работы: [units.time(9)]-[units.time(17)]
+		</p><p>
+			<b>История</b>
 			<br/>
-			How did this shopping precinct come into being? Why is it called 'Wall's End'? And why is it needed when the farmer's market already exists? Woah, so many questions! Thankfully, all three can be answered by recounting a little of our wonderful town's history!
+			Как возник этот торговый квартал? Почему его называют «Конец Стены»? И зачем он нужен, если фермерский рынок и так существует? Ого, сколько вопросов! К счастью, на все три можно ответить, если немного поведать об истории нашего чудесного города!
 			<br/><br/>
-			As you might already know, in the past our town was just a village, although a village that was destined to grow into the best town in all of Lilith's Realm. Of course, as with any growing population, Elis soon had need of commercial premises which couldn't be accommodated by simple market stalls. As such, our wonderful mayor, Minotallys, decreed that a shopping precinct needed to be created.
+			Как ты, возможно, уже знаешь, когда-то наш город был всего лишь деревенькой, хотя и деревенькой, которой было суждено вырасти в лучший город во всем королевстве Lilith. Разумеется, как и при любом росте населения, Элису вскоре потребовались торговые площади, которые уже не могли вместить простые рыночные прилавки. И тогда наш замечательный мэр, Миноталлис, издал указ о создании торгового квартала.
 			<br/><br/>
-			This decision coincided with the most ambitious construction project Elis has ever seen. Known to the locals as 'the northern expansion', a portion of the defensive walls needed to be torn down and rebuilt so as to accommodate an entirely new district. Where you're standing right now is where that northern wall once stood, hence it was agreed that this shopping precinct should honour that history by being called 'Wall's End'!
+			Это решение совпало с самым амбициозным строительным проектом, который когда-либо видел Элис. Местные называют это «северным расширением»: часть оборонительных стен пришлось снести и перестроить, чтобы освободить место для совершенно нового района. Там, где ты стоишь прямо сейчас, когда-то возвышалась та самая северная стена, поэтому было решено почтить эту историю и назвать торговый квартал «Конец Стены»!
 			<br/><br/>
-			I hope that answers your questions, and now you can get to shopping! Make sure to spend lots of money to help keep our economy ticking!
+			Надеюсь, это ответило на твои вопросы, и теперь ты можешь приступить к покупкам! Не забывай тратить побольше денег, чтобы помогать нашей экономике процветать!
 		</p>
 		<br/>
 		<p>
-			<b>Businesses</b>
+			<b>Предприятия</b>
 			<br/>
-			Here at Wall's End we've got a convenience store, a place for clothes shopping, and even a massage parlour! Who needs to go to Dominion when you've got everything you could ever need right here?!
+			Здесь, в Уоллс-Энд, есть продуктовый магазин, магазин одежды и даже массажный салон! Зачем куда-то ехать в Dominion, когда всё необходимое есть прямо здесь?!
 			<br/><br/>
-			Most businesses are open six days a week, between [units.time(9)]-[units.time(17)]. The convenience store is open 24/7, however, so even if it's the middle of the night there's no reason for you not to come in and take a look around!
+			Большинство заведений работают шесть дней в неделю, с [units.time(9)] до [units.time(17)]. Однако продуктовый магазин открыт круглосуточно, так что, даже если на дворе глубокая ночь, тебе не составит труда зайти и присмотреться!
 		</p>
 		<p style='text-align:center; font-size:0.75em'>
-			This information has been provided by the Elis tourism board. For complaints or queries, please inquire at the town hall.
+			Эта информация предоставлена туристическим советом Элиса. По всем вопросам или жалобам обращайтесь в ратушу.
 		</p>
 	</i>
 	<hr/>
 	<p>
-		Having read through all of the information the sign contains, there's little else for you to do except [pc.step] back and decide where to go next...
+		Прочитав всю информацию на вывеске, тебе остается лишь [pc.step] назад, чтобы решить, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT_LEAVE"><![CDATA[
 	<p>
-		Having concluded your business at Wall's End, you head out of the exit and find yourself back in the streets of Elis once again... 
+		Закончив свои дела в Уоллс-Энд, ты выходишь наружу и снова оказываешься на улицах Элиса... 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FOUNTAIN"><![CDATA[
 	<p>
-		In the very middle of Wall's End, facing the entrance, there's a large statue of the town's mayor, Minotallys. Expertly carved from white marble, this depiction of the town's favourite minotauress is wearing nothing except the jewellery which adorns her horns, fingers, and tail.
+		В самом центре Уоллс-Энд, прямо напротив входа, стоит огромная статуя мэра города, Миноталлис. Эта искусно высеченная из белого мрамора фигура любимой минотаврицы города не прикрыта ничем, кроме украшений, которыми расшиты её рога, пальцы и хвост.
 	</p>
 	<p>
-		With a playful grin on her face, this marble mimicry of Minotallys is using one hand to cover her pussy, while her other arm is crossed over beneath her huge breasts. Dual streams of water are being expelled from her large, puffy nipples, which fall down into the pool beneath her with a gentle splashing sound.
+		С игривой ухмылкой на лице, эта мраморная копия Миноталлис одной рукой прикрывает свою киску, а другую руку скрестила под своей огромной грудью. Из её больших, набухших сосков бьют две струи воды, с мягким всплеском падая в бассейн у её ног.
 	</p>
 	<p>
-		A bronze plaque attached to the plinth upon which this statue stands reads: 'Funds for the creation and installation of this fountain were donated by the residents of Elis. Long may Minotallys guide us to prosperity!'
+		На бронзовой табличке, прикрепленной к постаменту статуи, гласит: «Средства на создание и установку этого фонтана были пожертвованы жителями Элиса. Да будет Миноталлис нашим проводником к процветанию во веки веков!»
 	</p>
 	<p>
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17)
 			#IF(game.getCurrentWeather()!=WEATHER_RAIN)
-				Other than a few people who have decided to make use of the raised edge of the pool to sit down and take a rest,
+				Помимо нескольких человек, решивших присесть на возвышенный край бассейна, чтобы передохнуть,
 			#ELSE
-				With most of the people in the precinct hurrying from one shop to another in order to avoid the rain,
+				Большинство обитателей квартала спешат от одной лавки к другой, стараясь укрыться от дождя,
 			#ENDIF
-			 nobody seems to be paying the fountain much attention, and with your interest similarly not being held for too long, you prepare to continue on your way...
+			 кажется, фонтан никого особо не занимает, и, поскольку твой интерес тоже быстро угасает, ты готовишься продолжить свой путь...
 		#ELSE
-			Out of the very few people who are in the precinct at this hour, none of them are paying the fountain much attention, and with your interest similarly not being held for too long, you prepare to continue on your way...
+			Среди немногих людей, что остались в квартале в этот час, никто не обращает особого внимания на фонтан, и, поскольку твой интерес тоже быстро угасает, ты готовишься продолжить свой путь...
 		#ENDIF
 	</p>
 	]]>
@@ -94,14 +93,14 @@
 	
 	<htmlContent tag="GENERIC_SHOP"><![CDATA[
 	<p>
-		For every one of the stores which are of interest to you, there are one or two that offer goods or services which are of no use to you whatsoever. Ranging from furniture stores to first-floor accountants offices, you pass by these businesses without giving them so much of a second glance.
+		На каждый магазин, представляющий для тебя интерес, приходится еще пара-тройка тех, чьи товары или услуги тебе совершенно ни к чему. От мебельных лавок до бухгалтерских контор на первом этаже — ты проходишь мимо этих заведений, даже не удостаивая их вторым взглядом.
 	</p>
 	<p>
-		It's in front of one of these generic shops which you currently find yourself standing.
+		Именно перед одной из таких заурядных лавок ты сейчас стоишь.
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17)
-			 Although its opening hours are clearly displayed in the window as [style.colourMinorGood([units.time(9)]-[units.time(17)])], the goods within are of no interest to you, and as such there's nothing for you to do here...
+			 Хотя часы работы здесь четко указаны на витрине как [style.colourMinorGood([units.time(9)]-[units.time(17)])], товары внутри тебя не интересуют, а значит, делать здесь тебе нечего...
 		#ELSE
-			 With its opening hours clearly displayed in the window as [style.colourMinorBad([units.time(9)]-[units.time(17)])], there's nothing for you to do here...
+			 Часы работы четко указаны на витрине как [style.colourMinorBad([units.time(9)]-[units.time(17)])], так что делать тебе здесь особо нечего...
 		#ENDIF
 	</p>
 	]]>
@@ -109,51 +108,51 @@
 	
 	<htmlContent tag="LAWN"><![CDATA[
 	<p>
-		A long, rectangular strip of grass sits in the middle of Wall's End,
+		Посреди Уоллс-Энда тянется длинная прямоугольная полоса газона,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-			 and despite the fact that the roofs and tops of the nearby lampposts are covered in snow, the lawn has somehow been kept clear, allowing you to admire its vivid green, perfectly-cut appearance.
+			 и хотя крыши домов и верхушки ближайших фонарей покрыты снегом, газон каким-то образом остается чистым, позволяя тебе любоваться его сочной зеленью и идеально подстриженным видом.
 		#ELSE
-			 and from its vivid green, perfectly-cut appearance, looks to be very well maintained.
+			 и судя по его ярко-зеленому, идеально подстриженному виду, за ним очень тщательно ухаживают.
 		#ENDIF
-		 Several small signs have been placed along the lawn's edge, but instead of ordering people to keep off, they instead declare that walking over or sitting upon the grass is encouraged.
+		Вдоль края газона расставлено несколько небольших табличек, но вместо того чтобы запрещать вход, они призывают людей ходить по траве или даже сидеть на ней.
 	</p>
 	<p>
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17)
 			#IF(game.getSeason()==SEASON_WINTER)
-				Despite the signs' message, there aren't many people willing to sit out in the cold, and other than the few people who are walking over it to reach the other side of the precinct, the lawn is completely deserted.
+				Несмотря на призывы на табличках, желающих сидеть на холоде немного, и, если не считать немногих прохожих, пересекающих газон, чтобы попасть на другую сторону торгового квартала, здесь совершенно пусто.
 			#ELSEIF(game.getCurrentWeather()==WEATHER_RAIN)
-				Despite the signs' message, there aren't many people willing to sit out in the rain, and other than the few people who are hurrying over it to reach the other side of the precinct, the lawn is completely deserted.
+				Несмотря на призывы на табличках, желающих сидеть под дождем немного, и, если не считать немногих спешащих людей, пересекающих газон, чтобы попасть на другую сторону торгового квартала, здесь совершенно пусто.
 			#ELSE
-				Perhaps due in part to the signs' message, there are quite a few people lounging around and even picnicking on the grass, and you have to adjust your path several times to avoid these groups.
+				Возможно, отчасти благодаря табличкам, здесь можно встретить немало людей, которые отдыхают или даже устраивают пикники прямо на траве, и тебе приходится несколько раз менять маршрут, чтобы обойти эти компании.
 			#ENDIF
 		#ELSE
-			Due to the fact that there are very few people in the precinct at this hour, the lawn is completely deserted.
+			Поскольку в этот час в квартале почти нет людей, газон кажется совершенно пустым.
 		#ENDIF
-		 Not having much to do here, you continue on your way across the lawn to the other side of the shopping precinct...
+		 Не особо понимая, чем тут заняться, ты продолжаешь свой путь через газон на другую сторону торгового квартала...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="STREET"><![CDATA[
 	<p>
-		Running around the shopping precinct in a circular fashion, this cobblestone street is very similar to the ones found throughout the rest of Elis. While the arcane street lamps are slightly different to the others in the town, they're still of an old, ornate design which adds to the surrounding timber-framed buildings' appearance to give this area a late-medieval aesthetic.
+		Эта мощеная улица, петляющая по торговому кварталу, очень напоминает остальные улицы Элиса. Хотя аркана-фонари здесь немного отличаются от городских, они всё так же выполнены в старинном изысканном стиле, что в сочетании с фахверковыми зданиями создает атмосферу позднего средневековья.
 	</p>
 	<p>
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17)
-			Thanks to the hour of day,
+			Благодаря времени суток,
 			#IF(game.getDayOfWeek()!=DOW_SUNDAY)
-				 all
+				 все
 			#ELSE
-				 some
+				 некоторые
 			#ENDIF
-			 of the shops here are currently open, and there are a great deal of people either walking around with shopping bags in their hands or
+				 из местных лавок сейчас открыты, и здесь полно народу: кто-то расхаживает с пакетами покупок, а кто-то
 			#IF(game.getCurrentWeather()==WEATHER_RAIN)
-				 standing beneath the shops' canvas awnings so as to be protected from the rain.
+					стоит под тканевыми навесами магазинов, укрываясь от дождя.
 			#ELSE
-				 sitting on one of the many wooden benches which line the sides of the street.
+					сидит на одной из многочисленных деревянных скамей вдоль обочин улицы.
 			#ENDIF
 		#ELSE
-			Due to the current hour, almost all of the shops here are currently closed, although there are still some people to be seen either out taking a walk around the precinct or heading to or from the convenience store.
+			Из-за текущего часа почти все лавки здесь закрыты, хотя всё еще можно встретить людей, которые либо просто гуляют по кварталу, либо направляются к минимаркету или от него.
 		#ENDIF
 	</p>
 	]]>
@@ -161,33 +160,33 @@
 	
 	<htmlContent tag="TOILETS"><![CDATA[
 	<p>
-		Wherever there's a concentration of members of the public, there exists the need for offering restroom facilities. Wall's End is no exception to this, and has met this need by converting the ground floor of one of the timber-framed buildings into public toilets.
+		Там, где собираются толпы людей, всегда нужны общественные туалеты. Уоллс-Энд не исключение: здесь потребность в них удовлетворили, переоборудовав первый этаж одного из фахверковых зданий под уборные.
 	</p>
 	<p>
-		A sign next to the entrance informs you that these facilities are open 24/7 and are cleaned at least once per hour, in addition to asking members of the public to please treat the toilets with respect. An additional sign has been attached beneath this one at what you assume to be a later date, and reminds the reader that the creation of glory holes in the stalls is considered to be vandalism, and is punishable by a fine of up to one hundred flames.
+		Табличка у входа гласит, что заведение работает круглосуточно, а уборка проводится не реже одного раза в час. Кроме того, посетителей просят относиться к туалетам с уважением. Чуть ниже висит еще одна табличка, судя по всему, добавленная позже: она напоминает, что выдалбливание «дырок славы» в кабинках считается вандализмом и карается штрафом до ста огней.
 	</p>
 	<p>
-		If you wanted to, you could head inside the public toilets and make use of them, or instead turn around and head back into Wall's End...
+		Если захочешь, ты можешь зайти в общественный туалет и воспользоваться им, либо развернуться и отправиться обратно в Уоллс-Энд...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_INTERIOR"><![CDATA[
 	<p>
-		Deciding that you want to make use of the public toilets, you head inside and take a look around. While the stalls and sinks are of the usual public restroom quality, everything looks to be very well maintained, with the entire interior being nothing short of spotlessly clean. The steady hum of arcane-powered ventilation shafts produces a slightly-unpleasant monotonous background noise, but it's a minor discomfort worth paying to ensure that the air is kept fresh and odour-free.
+		Решив воспользоваться общественным туалетом, ты заходишь внутрь и осматриваешься. Хотя кабинки и раковины обычного для таких мест качества, всё выглядит очень ухоженным, а внутри — просто стерильная чистота. Мерное гудение вентиляционных шахт, работающих на аркане, создает слегка неприятный монотонный фон, но это малая цена за свежий воздух без посторонних запахов.
 	</p>
 	<p>
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17)
-			A few of the stalls are currently occupied, while a couple of members of the public are making use of the sinks before heading back out into Wall's End to continue their shopping. As you walk past these people,
+			Несколько кабинок сейчас заняты, а пара прохожих умывается у раковин, прежде чем вернуться в Уоллс-Энд и продолжить покупки. Когда ты проходишь мимо них,
 		#ELSE
-			Due to the current time, these toilets are completely deserted. As you walk down the entire length of the restroom,
+			Из-за позднего часа в туалете совершенно пусто. Пока ты идешь вдоль всего помещения,
 		#ENDIF
 		#IF(!game.getDialogueFlags().hasFlag(FLAG_innoxia_elis_toilets_hole_ever_made))
-			 you notice that there's not a single glory hole between any of the stalls, and you wonder if the exterior sign's threat of a fine has put people off making one, or if the local population just aren't into that sort of thing...
+			 ты замечаешь, что между торговыми лавками нет ни единого «дырки для славы», и гадаешь: то ли угроза штрафа на вывеске отбивает у людей желание их делать, то ли местное население просто не фанатеет от подобных вещей...
 		#ELSEIF(game.getDialogueFlags().hasFlag(FLAG_innoxia_elis_toilets_hole_made))
-			 you see that the glory hole which you previously made hasn't yet been repaired, and you wonder if it's worth the risk of being discovered and fined to make use of it...
+			 ты видишь, что дырка, которую ты проделал ранее, еще не заделана, и раздумываешь, стоит ли риск быть обнаруженным и оштрафованным того, чтобы воспользоваться ею...
 		#ELSE
-			 you notice that the glory hole which you previously made has been flawlessly repaired, and you wonder if it's worth the risk of being discovered and fined to make another one...
+			 ты замечаешь, что дырка, которую ты проделал ранее, была безупречно заделана, и гадаешь, стоит ли риск быть обнаруженным и оштрафованным того, чтобы сделать новую...
 		#ENDIF
 	</p>
 	]]>
@@ -195,32 +194,31 @@
 	
 	<htmlContent tag="TOILETS_LEAVE"><![CDATA[
 	<p>
-		Having finished with the public restrooms, you head back out into the shopping precinct...
+		Закончив дела в общественном туалете, ты выходишь обратно в торговый квартал...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_USE"><![CDATA[
 	<p>
-		[pc.Stepping] into one of the empty stalls, you turn and lock the door behind you, before making use of the toilet. After you've finished, you flush the toilet before making your way over to one of the sinks and washing your [pc.hands]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		[pc.Stepping] в одну из пустых кабинок, ты поворачиваешься и запираешь за собой дверь, прежде чем справить нужду. Закончив, ты смываешь воду, подходишь к одной из раковин и моешь свои [pc.hands]. Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, после чего оборачиваешься, оглядывая комнату и раздумывая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_WASH"><![CDATA[
 	<p>
-		Feeling like you could do with having a quick clean, you step over to the sinks and thoroughly wash your [pc.hands], before splashing some water on your [pc.face]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Чувствуя, что тебе не помешало бы освежиться, ты подходишь к раковинам и тщательно моешь свои [pc.hands], а затем плещешь немного воды в лицо ([pc.face]). Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, оглядывая комнату и раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_MAKE_HOLE"><![CDATA[
 	<p>
-		Looking around to make sure that there's no member of the cleaning staff or an Enforcer in the restroom, you enter one of the stalls and take out your bladed weapon. Slicing it into the thin wooden wall of the stall, you swiftly slice it around in a small circle, before popping out the round piece of wood and admiring the glory hole you've just made.
-	</p>
-	<p>
-		Feeling turned on at the thought of being the one responsible for the lewd acts which will undoubtedly be performed in this stall's immediate future, you put away your blade and take a look through to the stall that's connected to this one. Nobody's in there right now, but it's only a matter of time before your act of vandalism is discovered, and you wonder whether it's time for you to leave or to risk the chance of being fined in order to dominantly use the glory hole or submissively service it...
-	</p>
+		Осмотревшись по сторонам, чтобы убедиться, что в туалете нет ни уборщиков, ни Enforcer, ты заходишь в одну из кабинок и достаешь свое клинковое оружие. Вонзив его в тонкую деревянную стенку кабинки, ты быстро делаешь круговой надрез, после чего вынимаешь круглый кусок дерева и любуешься только что сделанной дыркой для славы.
+	</p><p>
+Предвкушая, что именно ты станешь виновником тех похотливых дел, что непременно развернутся в этой лавке в самом ближайшем будущем, ты убираешь клинок и заглядываешь в соседний прилавок. Сейчас там никого нет, но твой акт вандализма обнаружат лишь вопрос времени. Ты гадаешь: стоит ли уже уходить или же рискнуть и нарваться на штраф, чтобы доминантно использовать это «грязное отверстие» или же покорно обслуживать его...
+</p>
 	]]>
 	</htmlContent>
 	

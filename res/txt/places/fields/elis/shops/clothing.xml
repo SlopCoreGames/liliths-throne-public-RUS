@@ -6,27 +6,27 @@
 	
 	<htmlContent tag="CLOTHING"><![CDATA[
 	<p>
-		The store in front of you bears what is undoubtedly the most colourful sign in all of Wall's End. Adorned with painted flowers of every type and colour imaginable, the words 'The Fashionable Moo' are displayed in a light pink script, with an additional subtext reading:
+		Магазин перед тобой украшен, без сомнения, самой яркой вывеской во всем Уоллс-Энде. Округленная росписью с цветами всех мыслимых видов и оттенков, надпись «Модная коровка» выведена нежно-розовым курсивом, а ниже красуется приписка:
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17 && game.getDayOfWeek()!=DOW_SUNDAY)
-			 'Open weekdays and Saturdays, [style.colourMinorGood([units.time(9)]-[units.time(17)])]'
+			 'Открыто по будням и субботам, [style.colourMinorGood([units.time(9)]-[units.time(17)])]'
 		#ELSE
-			 'Open weekdays and Saturdays, [style.colourMinorBad([units.time(9)]-[units.time(17)])]'
+			 'Открыто по будням и субботам, [style.colourMinorBad([units.time(9)]-[units.time(17)])]'
 		#ENDIF
 	</p>
 	<p>
 		#IF(game.getHourOfDay()>=9 && game.getHourOfDay()<17 && game.getDayOfWeek()!=DOW_SUNDAY)
-			Even if the displayed opening times weren't enough to inform you that this shop is currently [style.colourGood(open)], you can quite clearly see through the wide windows that all of the lights are on, allowing you to view the many items of clothing, shoes, and accessories which this store offers for sale.
+			Даже если бы расписания было недостаточно, чтобы понять, что магазин сейчас [style.colourGood(открыт)], сквозь широкие витрины отчетливо видно, что внутри горит свет, позволяя рассмотреть множество предметов одежды, обуви и аксессуаров, выставленных на продажу.
 			#IF(flags.hasFlag(FLAG_innoxia_elis_clothing_visited))
-				 Further inside, you see the voluminous form of Monica bouncing around as she excitedly helps some customers find the clothing they're after. It looks like she's just about finished serving them, and as she heads over to the checkout and starts packaging the customers' selected clothing, you wonder whether to head inside and say hello to the energetic cow-girl again...
+				 Пройдя чуть дальше, ты видишь пышные формы Моники: она так и прыгает вокруг, с энтузиазмом помогая покупателям найти то, что им нужно. Похоже, она почти закончила с ними, и пока она направляется к кассе, чтобы упаковать выбранные вещи, ты раздумываешь, не зайти ли внутрь и не поздороваться ли снова с этой энергичной коровкой...
 			#ELSE
-				 Further inside, you see the voluminous form of a short, busty cow-girl bouncing around as she excitedly helps some customers find the clothing they're after. It looks like she's just about finished serving them, and as she heads over to the checkout and starts packaging the customers' selected clothing, you wonder whether to head inside and say hello to who you assume must be the owner of this store...
+				 Пройдя чуть дальше, ты видишь пышные формы невысокой, грудастой коровки: она так и прыгает вокруг, с энтузиазмом помогая покупателям найти то, что им нужно. Похоже, она почти закончила с ними, и пока она направляется к кассе, чтобы упаковать выбранные вещи, ты раздумываешь, не зайти ли внутрь и не поздороваться ли с той, кто, как ты полагаешь, является хозяйкой этого заведения...
 			#ENDIF
 		#ELSE
-			Unfortunately, this shop is currently [style.colourBad(closed)], although you can see through the wide windows that some of the lights have been left on, allowing you to view the many items of clothing, shoes, and accessories which this store offers for sale.
+			К сожалению, этот магазин сейчас [style.colourBad(закрыт)], хотя сквозь широкие окна видно, что часть света оставлена включенной, позволяя тебе рассмотреть множество предметов одежды, обуви и аксессуаров, которые здесь продаются.
 			#IF(flags.hasFlag(FLAG_innoxia_elis_clothing_visited))
-				 Knowing that Monica has put a lot of effort into the window display, you spend a moment looking over the dressed-up mannequins, before [pc.stepping] back and preparing to continue on your way...
+				 Зная, что Моника приложила немало усилий к оформлению витрины, ты на мгновение задерживаешься, чтобы рассмотреть наряженных манекенов, прежде чем [pc.stepping] и отправиться дальше своим путем...
 			#ELSE
-				 It looks like the owner has put a considerable amount of effort into the window display, and so you spend a moment looking over the dressed-up mannequins, before [pc.stepping] back and preparing to continue on your way...
+				 Похоже, хозяйка потратила уйму сил на оформление витрины, поэтому ты на мгновение задерживаешься, чтобы рассмотреть наряженных манекенов, прежде чем [pc.stepping] и отправиться дальше своим путем...
 			#ENDIF
 		#ENDIF
 	</p>
@@ -36,42 +36,42 @@
 	<htmlContent tag="CLOTHING_ENTER"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_elis_clothing_visited))
 		<p>
-			Deciding to once again to enter Monica's store to see what she's got on offer, you push open the glass door and [pc.step] inside. A little bell rings out above your head as the door swings open, which causes the familiar cow-girl to look over in your direction. Having once again caught her just as she's finished serving a pair of customers, the slightly-chubby, incredibly-busty cow-girl flashes you a smile and calls out in a happy, friendly tone, [monica.speech(Hi, [pc.name]!)]
+			Решив снова заглянуть в магазин Моники, чтобы посмотреть, что у неё есть, ты толкаешь стеклянную дверь и [pc.step] внутрь. Когда дверь распахивается, над головой звонит колокольчик, заставляя знакомую корову обернуться в твою сторону. Снова застав её как раз в тот момент, когда она закончила обслуживать пару покупателей, слегка пухленькая и невероятно пышногрудая корова расплывается в улыбке и радостно, дружелюбно окликает тебя: [monica.speech(Привет, [pc.name]!)]
 		</p>
 		#IF(monica.isVisiblyPregnant() && monica.getPregnantLitter().isFather(pc))
 			<p>
 				#IF(!monica.isCharacterReactedToPregnancy(pc))
-					Returning Monica's greeting, you [pc.step] past the exiting customers and head on over to the cow-girl's counter. As you approach, you suddenly notice that the cow-girl's belly is visibly swollen, and as she sees what you're looking at, she brushes her hand through her hand and laughs, [monica.speech(Haha, yeah, you kind of got me pregnant... I haven't been sexually active with anyone else for a long time, so it had to have been you... I wonder if my boobs are going to get bigger from this?)]
+					Ответив на приветствие Моники, ты [pc.step] мимо выходящих покупателей и направляешься к прилавку девушки-коровушки. Когда ты подходишь ближе, то внезапно замечаешь, что её живот заметно округлился, а когда она видит твой взгляд, она проводит рукой по волосам и смеется: [monica.speech(Ха-ха, да, ты меня вроде как обрюхатил... Я уже давно ни с кем не трахалась, так что это точно должен быть ты... Интересно, грудь от этого станет больше?)]
 				#ELSE
-					Returning Monica's greeting, you [pc.step] past the exiting customers and head on over to the cow-girl's counter. As you approach, you see that the cow-girl's belly is still visibly swollen, and as she sees what you're looking at, she brushes her hand through her hand and laughs, [monica.speech(Haha, yeah, I'm still pregnant, thanks to you...)]
+					Ответив на приветствие Моники, ты [pc.step] мимо выходящих покупателей и направляешься к прилавку девушки-коровушки. Когда ты подходишь ближе, ты видишь, что её живот всё так же заметно округлился, а когда она замечает твой взгляд, она проводит рукой по волосам и смеется: [monica.speech(Ха-ха, да, я всё ещё беременна, благодаря тебе...)]
 				#ENDIF
 			</p>
 			<p>
-				At her encouragement, you [pc.step] forwards and stroke Monica's round belly, causing her to let out a happy little sigh and declare, [monica.speech(I don't need any help with anything, so don't worry about anything like that.
+				По её подначке ты [pc.step] вперед и ласкаешь округлый живот Моники, отчего та издает счастливый вздох и заявляет: [monica.speech(Мне не нужна помощь, так что не беспокойся о таких вещах.
 				#IF(flags.hasFlag(FLAG_innoxia_monica_milked))
-					 Unless... Well, I can't afford to close my store again today, but if you come back tomorrow then I could do with being milked, and then perhaps we could have some fun together again?
+					 Разве что... Ну, я не могу позволить себе снова закрыть лавку сегодня, но если ты придешь завтра, меня можно было бы подоить, а потом, может, мы снова немного развлечемся?
 				#ELSE
-					 Unless... If you've got a thing for pregnant girls, then I could do with being milked, and then perhaps we could have some fun together again?
+					 Разве что... Если у тебя есть слабость к беременным девчонкам, то меня можно было бы подоить, а потом, может, мы снова немного развлечемся?
 				#ENDIF
 				)]
 			</p>
 			<p>
-				As you give Monica's belly one last affection stroke, she gestures around her at the dozens of different types of clothing which fill her store and continues, [monica.speech(Of course, if you're here for business, then I can help you pick out an outfit!)] 
+				Последний раз лаская животик Моники, ты замечаешь, как она обводит взглядом десятки видов одежды, заполняющих её лавку, и продолжает: [monica.speech(Конечно, если ты здесь по делу, то я с радостью помогу тебе подобрать наряд!)] 
 			</p>
 		#ELSE
 			<p>
-				Returning Monica's greeting, you [pc.step] past the exiting customers and head on over to the cow-girl's counter. Gesturing around her at the dozens of different types of clothing which fill her store, she offers in a friendly, happy voice, [monica.speech(I'd be happy to help you pick out an outfit. Just let me know what you're looking for!)]
+				Ответив на приветствие Моники, ты [pc.step] мимо выходящих покупателей и направляешься к прилавку этой коровы-девушки. Обводя взглядом десятки видов одежды, заполняющих её магазин, она дружелюбно и радостно предлагает: [monica.speech(Я с удовольствием помогу тебе выбрать наряд. Просто скажи, что именно ты ищешь!)]
 			</p>
 		#ENDIF
 	#ELSE
-		<p>
-			Deciding to enter this clothing store to see what's on offer, you push open the glass door and [pc.step] inside. A little bell rings out above your head as the door swings open, which causes the store's solitary member of staff to look over in your direction. Having just finished serving a pair of customers, this slightly-chubby, incredibly-busty cow-girl flashes you a smile and calls out in a happy, friendly tone, [monica.speech(Hello, and welcome to 'The Fashionable Moo'!)]
+			<p>
+			Решив зайти в этот магазин одежды и посмотреть, что здесь предлагают, ты толкаешь стеклянную дверь и [pc.step] внутрь. Над головой звонко звенит колокольчик, заставляя единственную сотрудницу магазина обернуться в твою сторону. Только что закончив обслуживать пару покупателей, эта слегка пухленькая, невероятно пышногрудая корова-девушка расплывается в улыбке и радостно, дружелюбно восклицает: [monica.speech(Приветствую! Добро пожаловать в «Модную коровку»!)]
 		</p>
 		<p>
-			As the customers pass you by and exit the shop, you return the cow-girl's greeting, which leads into her skipping over towards you. Although mostly human, she has a pair of small, white horns, along with a black-and-white spotted tail and a similarly-coloured pair of cow-like ears, which is how you've identified her as being a cow-girl. She's wearing a yellow dress, yellow headband, and has a yellow ribbon tied around her tail. Bronze bangles adorn her wrists, which match the bronze ring worn on one of her fingers, as well as the sunflower earrings hanging from her cow-like ears.
+			Когда покупатели проходят мимо и покидают лавку, ты отвечаешь на приветствие ковбойши, и та, радостно подпрыгивая, направляется к тебе. Она почти человек, но у неё есть пара маленьких белых рожек, черно-белый пятнистый хвост и такие же ушки, что и позволяет тебе сразу опознать в ней ковбойшу. На ней желтое платье, желтая повязка на голове, а на хвосте завязан желтый бант. Ее запястья украшают бронзовые браслеты, которые сочетаются с бронзовым кольцом на одном из пальцев и серьгами в виде подсолнухов, свисающими из ее коровьих ушек.
 		</p>
 		<p>
-			This energetic cow-girl's massive, [monica.cupSize]-cup breasts bounce up and down as she skids to a halt in front of you, and after brushing one of her hands back through her black, white-highlighted hair, she flashes you a big smile and reveals, [monica.speech(I'm Monica, the owner of the store. Is there anything I can help you with today, [pc.mr]...?)]
+			Массивные груди этой энергичной ковбойши [monica.cupSize]-го размера подпрыгивают при каждом ее шаге, когда она резко останавливается перед тобой. Проведя рукой по своим черным волосам с белыми прядями, она расплывается в широкой улыбке и произносит: [monica.speech(Я Моника, хозяйка этого магазина. Могу я чем-нибудь помочь тебе сегодня, [pc.mr]...?)]
 		</p>
 	#ENDIF
 	]]>
@@ -79,74 +79,74 @@
 	
 	<htmlContent tag="CLOTHING_INTRO"><![CDATA[
 	<p>
-		Seeing no reason not to give the happy cow-girl your name, you introduce yourself to Monica and tell her that you were hoping to take a look around at what sort of clothing she has for sale here. Gesturing around her at the dozens of different types of clothing which fill her store, she replies in a friendly, happy voice, [monica.speech(I've got all the latest fashions from Dominion! I'd love to help you pick out an outfit, so just let me know what you're looking for!)]
-	</p>
+		Не видя причин скрывать свое имя от такой жизнерадостной ковбойши, ты представляешься Монике и говоришь, что хочешь осмотреться и посмотреть, какая одежда здесь продается. Обводя рукой десятки различных нарядов, заполняющих ее лавку, она отвечает дружелюбным и радостным голосом: [monica.speech(У меня есть все последние новинки моды из Dominion! Я с удовольствием помогу тебе подобрать наряд, так что просто скажи, что именно ты ищешь!)]
+		</p>
 	<p>
-		With Monica continuing to flash you a happy smile, you wonder whether to continue with your original plan and see what Monica has for sale, or to instead engage her in further conversation...
-	</p>
-	]]>
-	</htmlContent>
-	
-	<htmlContent tag="CLOTHING_TRANSACTION_START"><![CDATA[
-	<p>
-		[monica.speech(I get new stock in every day, so if you see something you really like, you can always come back tomorrow and buy more,)] Monica explains as you take a look at what she has for sale.
+		Моника продолжает ослепительно улыбаться тебе, и ты раздумываешь: стоит ли придерживаться первоначального плана и осмотреть товар, или же лучше завязать с ней разговор...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TRANSACTION_START"><![CDATA[
 	<p>
-		[monica.speech(I'm sure there's something here you like the look of, right?)] Monica asks as she trails along behind you.
+		[monica.speech(У меня каждый день завоз новинок, так что если приглянется что-то особенное, можешь заглянуть завтра и купить еще,)] — объясняет Моника, пока ты осматриваешь ассортимент.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TRANSACTION_START"><![CDATA[
 	<p>
-		[monica.speech(Let me know if you see something you like,)] Monica says as she skips up beside you.
+		[monica.speech(Уверена, здесь найдется что-нибудь по твоему вкусу, верно?)] — спрашивает Моника, следуя за тобой по пятам.
+	</p>
+	]]>
+	</htmlContent>
+	
+	<htmlContent tag="CLOTHING_TRANSACTION_START"><![CDATA[
+	<p>
+		[monica.speech(Дай знать, если увидишь что-нибудь симпатичное,)] — говорит Моника, подпрыгивая рядом с тобой.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_LEAVE"><![CDATA[
 	<p>
-		Having concluded your business here for now, you tell Monica that you've got to get going and say goodbye. Flashing another of her big, friendly smiles, she waves as you head towards the door and calls out, [monica.speech(Goodbye, [pc.name]! I hope to see you again soon!)]
+		Закончив свои дела, ты говоришь Монике, что пора идти, и прощаешься. Одарив тебя очередной своей широкой дружелюбной улыбкой, она машет тебе вслед, когда ты направляешься к выходу, и выкрикивает: [monica.speech(До встречи, [pc.name]! Надеюсь, скоро увидимся!)]
 	</p>
 	<p>
-		Waving behind you to the energetic cow-girl, you [pc.step] out of her store and wonder where to go next...
+		Помахав на прощание энергичной ковбойше, ты [pc.step] из её лавки и раздумываешь, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_SMALL"><![CDATA[
 	<p>
-		Wanting to spend some time talking with Monica, you engage her in conversation by asking her how her day's been so far today. More than happy to talk with you, the busty cow-girl answers your question in great detail, and before you know it, the two of you are making small talk about the weather, the clothing she's got for sale, and the recent happenings in Elis.
+		Желая провести время в беседе с Моникой, ты заводишь разговор, спрашивая, как прошел её день. С радостью поддерживая беседу, пышная ковбойша подробно отвечает на вопрос, и не успеваешь ты оглянуться, как вы уже болтаете о погоде, о её товарах и о последних новостях Элиса.
 	</p>
 	<p>
-		You and Monica spend the next fifteen minutes in this manner, and after finally exhausting the trivial topics of conversation, the cow-girl smiles and declares, [monica.speech(It's been fun talking with you, [pc.name]! Is there anything else I can do for you today?)]
+		Вы с Моникой проводите в таком режиме следующие пятнадцать минут, и, наконец исчерпав все пустяковые темы для разговора, коровка-девушка улыбается и заявляет: [monica.speech(Было очень приятно поболтать с тобой, [pc.name]! Может, я могу сделать для тебя что-нибудь еще сегодня?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_BUSINESS"><![CDATA[
 	<p>
-		Wanting to know more about 'The Fashionable Moo', you ask Monica how business has been lately. Flashing you another one of her happy smiles, she enthusiastically responds, [monica.speech(Everything's going great, thanks; I always get lots of customers every day! Although there are stalls in the market which sell clothing, I offer the biggest selection in Elis, and so I get a lot of people saying that they prefer shopping here to buy their outfits.)]
+		Желая узнать побольше о «Модном Му», ты спрашиваешь Монику, как идут дела в последнее время. Одарив тебя очередной счастливой улыбкой, она с энтузиазмом отвечает: [monica.speech(Все идет просто отлично, спасибо; у меня каждый день полно покупателей! Хотя на рынке есть и другие лавки с одеждой, у меня самый большой выбор в Элисе, поэтому многие говорят, что предпочитают покупать наряды именно здесь.)]
 	</p>
 	<p>
-		Congratulating the cow-girl on her success, you ask her if business has always been this good. Nodding her head, Monica explains, [monica.speech(Before I bought it and turned it into 'The Fashionable Moo', this place used to be a different clothing store, and so everyone in Elis already knew to come here for their clothing. Thanks to that, and the good reputation I've got from stocking a huge selection of clothing, I've always had lots of customers.)]
+		Поздравляя коровку с успехом, ты спрашиваешь, всегда ли дела шли так хорошо. Кивнув, Моника объясняет: [monica.speech(До того как я выкупила это место и превратила его в «Модный Му», здесь был другой магазин одежды, так что все в Элисе уже знали, куда идти за обновками. Благодаря этому и моей репутации благодаря огромному ассортименту, у меня всегда много покупателей.)]
 	</p>
 	<p>
-		After spending the next few minutes discussing the finer points about her business model, the topic of conversation draws to an end, leading Monica to smile and ask, [monica.speech(So, was there anything else you needed, [pc.name]?)]
+		Проведя еще несколько минут за обсуждением тонкостей её бизнес-модели, вы подходите к концу разговора, и Моника, улыбаясь, спрашивает: [monica.speech(Итак, тебе нужно было что-нибудь еще, [pc.name]?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_ELIS"><![CDATA[
 	<p>
-		Wanting to hear Monica's thoughts on Elis, you ask her what she thinks of living here in this town. After spending a moment to think of how to answer, she says, [monica.speech(Well, I used to live in a small village out in the Fields, so compared to that there's far more going on here, but it doesn't have the same kind of close-knit community that I was used to. Thanks to Lunette, there's been a huge influx of refugees into Elis over the past couple of years, and tensions between them and the original residents of Elis flare up now and again. Thanks to those troubles, it isn't as nice here as it used to be, but it's still great living here!)]
+		Желая узнать, что Моника думает об Элисе, ты спрашиваешь её о жизни в этом городе. Немного подумав над ответом, она произносит: [monica.speech(Ну, раньше я жила в маленькой деревушке на Полях, так что по сравнению с ней здесь жизнь кипит куда активнее, но нет того чувства сплоченности, к которому я привыкла. Благодаря Лунетт за последние пару лет в Элис хлынул поток беженцев, и время от времени между ними и коренными жителями вспыхивают конфликты. Из-за всех этих неурядиц здесь уже не так уютно, как раньше, но жить тут всё равно здорово!)]
 	</p>
 	<p>
-		After that, the cow-girl spends a few minutes describing the perks of living in Elis, and then after that she spends a while talking about some recent events that have been happening here. After ten minutes, your conversation draws to a close, and with a smile on her face, the busty cow-girl asks, [monica.speech(Is there anything else I could do for you today, [pc.name]?)]
+		После этого коровья девчонка несколько минут расписывает тебе все перки жизни в Элисе, а затем долго рассказывает о недавних событиях, происходящих в городе. Спустя десять минут ваш разговор подходит к концу, и с улыбкой на лице пышногрудая корова спрашивает: [monica.speech(Может, я могу сделать для тебя что-нибудь ещё сегодня, [pc.name]?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -154,43 +154,43 @@
 	<htmlContent tag="CLOTHING_TALK_HISTORY"><![CDATA[
 	#IF(pc.hasQuest(QUEST_LINE_ROMANCE_MONICA))
 		<p>
-			Wanting to talk to Monica about her past again, you ask her to remind you of how long she's been running this place, and what led to her wanting to own a clothing store.
+			Снова желая поговорить с Моникой о её прошлом, ты просишь её напомнить, как долго она уже управляет этим местом и что именно подтолкнуло её к желанию владеть магазином одежды.
 		</p>
 		<p>
-			[monica.speech(Well, it was about five years ago that I bought this place, and before that, I used to work as a dairy cow in a nice little barn out in the fields,)] she tells you once again. Before you can ask more about her work as a 'dairy cow', Monica squeezes her huge breasts and reveals with a hint of pride in her voice, [monica.speech(Along with a dozen other girls, my breasts were milked all day, and I was the most productive employee there! Thanks to that, I always got a big bonus at the end of each month, which is what helped me to save up and buy this place. It'd always been my dream to own a clothing store, and so when the farm's owners sold out to Evelyx, I quit and finally made my dream a reality!)]
+			[monica.speech(Ну, это было около пяти лет назад, когда я купила это место. А до этого я работала дойной коровой в одном милом маленьком сарае прямо посреди полей,)] — говорит она тебе снова. Прежде чем ты успеваешь расспросить её подробнее о работе «дойной коровой», Моника сжимает свою огромную грудь и с оттенком гордости в голосе произносит: [monica.speech(Вместе с дюжиной других девчонок, у меня доили грудь весь день, и я была самой продуктивной работницей! Благодаря этому в конце каждого месяца я всегда получала жирный бонус, что и помогло мне накопить денег и купить это место. Владеть магазином одежды всегда было моей мечтой, и когда владельцы фермы продали её Эвеликс, я уволилась и наконец воплотила свою мечту в реальность!)]
 		</p>
 		<p>
-			Commenting on the big career change from dairy cow to clothing store owner, you ask Monica how she managed to adjust to her new life. Flashing you a slightly-embarrassed smile, she says, [monica.speech(Well, like most ex-cows that I know of, I'd grown to love the feeling of being milked, so although I massively reduced my milk production via transformative potions, I still produce enough to fill a couple of bottles each night. That's really helped me to switch over to this more normal life.)]
+			Комментируя столь резкую смену карьеры — от дойной коровы до владелицы магазина одежды, ты спрашиваешь Монику, как ей удалось адаптироваться к новой жизни. Одарив тебя слегка смущенной улыбкой, она говорит: [monica.speech(Ну, как и большинство знакомых мне бывших коров, я привыкла к ощущению, когда меня доят. Так что, хоть я и сильно снизила выработку молока с помощью трансформирующих зелий, по ночам у меня всё равно хватает на пару бутылок. Это очень помогло мне перейти к этой, казалось бы, более нормальной жизни.)]
 		</p>
 		#IF(pc.isQuestCompleted(QUEST_LINE_ROMANCE_MONICA))
 			<p>
-				Continuing to grope her huge breasts, she bites her lip and steps a little closer to you, before teasing, [monica.speech(Thanks to you, my nightly milking is now every bit as pleasurable as it used to be. Thanks for getting my breast pump back for me, [pc.name], I'm really, really grateful...)]
+				Продолжая ласкать её огромную грудь, ты заставляешь её прикусить губу; она делает шаг ближе к тебе и дразнит: [monica.speech(Благодаря тебе моё ночное доение теперь приносит столько же удовольствия, сколько и раньше. Спасибо, что вернул мне мой молокоотсос, [pc.name], я тебе очень, очень благодарна...)]
 			</p>
 			<p>
-				From her behaviour, it's clear that Monica is attracted to you, and after giving you a coy look, she teases,
+			По её поведению ясно, что Моника к тебе неравнодушна. Бросив на тебя кокетливый взгляд, она дразнит тебя:
 				#IF(flags.hasFlag(FLAG_innoxia_monica_milked))
-					 [monica.speech(I'm still a bit worn out from earlier, but if you come back tomorrow, I'd like it if you could help to milk me again...)]
+					 [monica.speech(Я всё ещё немного вымотана после того, что было, но если ты придёшь завтра, я была бы не прочь, если бы ты снова помог мне подоить...)]
 				#ELSE
-					 [monica.speech(You know, I could always use some help being milked...)]
+					 [monica.speech(Знаешь, мне бы никогда не помешала помощь с дойкой...)]
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
-				Continuing to grope her huge breasts, she bites her lip and steps a little closer to you, before sighing, [monica.speech(Thanks for offering to get my breast pump back for me, [pc.name], I'm really, really grateful. Just be careful out there, ok?)]
+			Продолжая ощупывать её огромную грудь, она прикусывает губу и делает шаг ближе к тебе, после чего вздыхает: [monica.speech(Спасибо, что вызвался вернуть мой молокоотсос, [pc.name], я тебе очень, очень благодарна. Только будь там осторожнее, ладно?)]
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Curious about Monica's past and how she came to own this shop, you ask the cow-girl how long she's been running this place, and what led to her wanting to own a clothing store.
+			Заинтересовавшись прошлым Моники и тем, как она стала владелицей этого магазина, ты спрашиваешь корову-девушку, как долго она здесь заправляет и что привело её к желанию открыть магазин одежды.
 		</p>
 		<p>
-			[monica.speech(Well, it was about five years ago that I bought this place, and before that, I used to work as a dairy cow in a nice little barn out in the fields,)] she explains. Before you can ask what exactly she means by working as a 'dairy cow', Monica squeezes her huge breasts and reveals with a hint of pride in her voice, [monica.speech(Along with a dozen other girls, my breasts were milked all day, and I was the most productive employee there! Thanks to that, I always got a big bonus at the end of each month, which is what helped me to save up and buy this place. It'd always been my dream to own a clothing store, and so when the farm's owners sold out to some arrogant succubus, I quit and finally made my dream a reality!)]
+			[monica.speech(Ну, я купила это место около пяти лет назад, а до этого работала дойной коровой в одном уютном маленьком сарае в полях,)] — объясняет она. Прежде чем ты успеваешь спросить, что именно она имеет в виду под работой «дойной коровой», Моника сжимает свою огромную грудь и с оттенком гордости в голосе признаётся: [monica.speech(Вместе с дюжиной других девчонок меня доили весь день напролёт, и я была самой продуктивной работницей! Благодаря этому в конце каждого месяца я всегда получала огромный бонус, что и помогло мне накопить денег и купить это место. Владеть магазином одежды всегда было моей мечтой, и когда владельцы фермы продали её какой-то заносчивой суккубе, я уволилась и наконец воплотила свою мечту в реальность!)]
 		</p>
 		<p>
-			Commenting on the big career change from dairy cow to clothing store owner, you ask Monica how she managed to adjust to her new life. Flashing you a slightly-embarrassed smile, she says, [monica.speech(Well, like most ex-cows that I know of, I'd grown to love the feeling of being milked, so although I massively reduced my milk production via transformative potions, I still produce enough to fill a couple of bottles each night. That's really helped me to switch over to this more normal life, although my nightly milking is never the same as it used to be...)]
+			Подшучивая над её резкой сменой карьеры — от дойной коровы до владелицы магазина одежды, ты спрашиваешь Монику, как ей удалось приспособиться к новой жизни. Слегка смущенно улыбнувшись, она отвечает: [monica.speech(Ну, как и большинство знакомых мне бывших коров, я привыкла к ощущению, когда меня доят. Так что, хоть я и сильно снизила выработку молока с помощью трансформирующих зелий, его всё равно хватает, чтобы наполнить пару бутылок каждую ночь. Это очень помогло мне переключиться на более нормальную жизнь, хотя моё ночное доение уже совсем не такое, как раньше...)]
 		</p>
 		<p>
-			Reaching up to give her huge breasts one last grope, the busty cow-girl lets out a good-natured laugh and declares, [monica.speech(Anyway, I don't want to be boring you with that stuff! Is there anything else I can do for you today, [pc.name]?)]
+			В последний раз бесцеремонно сжав её огромную грудь, пышная коровка добродушно смеется и заявляет: [monica.speech(Впрочем, не хочу утомлять тебя этой чепухой! Может, тебе нужно что-нибудь еще, [pc.name]?)]
 		</p>
 	#ENDIF
 	]]>
@@ -198,173 +198,170 @@
 	
 	<htmlContent tag="CLOTHING_TALK_MILKING"><![CDATA[
 	<p>
-		Thinking that there's something more to what Monica mentioned about her 'nightly milking' not being the same as it used to be, you ask her what exactly she meant by that.
+		Подумав, что в словах Моники о том, будто её «ночное доение» стало другим, кроется какой-то подвох, ты спрашиваешь её, что именно она имеет в виду.
 	</p>
 	<p>
-		[monica.speech(Oh, well, it's just something silly, really,)] she replies, before sighing and continuing, [monica.speech(If you really want to know, then I guess I can tell you... Back when I worked at the farm, I had a custom breast pump made, which perfectly fits me. Of course, most of the day we'd be milked by the machines, but after that I could always wind down and get some real pleasure out of using my special pump to finish me off for the day. I've gone through at least a dozen 'Moo Milker' breast pumps since leaving the farm, but none of them have ever felt quite the same as my custom one did...)]
+		[monica.speech(Ой, да ладно, это просто какая-то глупость, правда,)] — отвечает она, прежде чем вздохнуть и продолжить: [monica.speech(Если тебе действительно интересно, то, пожалуй, я расскажу... Когда я еще работала на ферме, мне заказали специальный молокоотсос, который идеально мне подходит. Конечно, большую часть дня нас доили машины, но после этого я всегда могла расслабиться и получить настоящее удовольствие, используя свой особенный насос, чтобы закончить день на приятной ноте. С тех пор как я ушла с фермы, я перепробовала как минимум дюжину молокоотсосов «Moo Milker», но ни один из них не давал тех же ощущений, что мой старый заказной...)]
 	</p>
 	<p>
-		Assuming that she's left her custom pump at the farm, you ask Monica why she hasn't gone back to retrieve it. Shuffling around on the spot a little in a clear sign of unease, she explains, [monica.speech(I've heard some really bad things about the new management. I only met the succubus who took over the farm once, right after the deal had been done and I went to hand in my letter of resignation. Her attitude and reaction to me quitting was... well... not a very pleasant experience. I know for a fact that she'd never agree to give me my old pump back.)]
+		Предположив, что она оставила свой именной молокоотсос на ферме, ты спрашиваешь Монику, почему она не вернулась за ним. Немного переминаясь с ноги на ногу — явный признак беспокойства, — она объясняет: [monica.speech(Я слышала много плохого о новом руководстве. Я видела суккуба, которая заняла ферму, всего один раз, сразу после того, как сделка была заключена и я пришла подавать заявление об увольнении. Её отношение и реакция на мой уход были... ну... скажем так, не самым приятным опытом. Я точно знаю, что она ни за что не согласится отдать мне мой старый насос.)]
 	</p>
 	<p>
-		Letting out a regretful sigh, Monica concludes by saying, [monica.speech(I wish I'd have thought to take it with me when I quit, but what's done is done... Anyway, I don't want to burden you with these bad thoughts, so is there anything else you want from me today?)]  
+		Издав сожалеющий вздох, Моника заключает: [monica.speech(Жаль, что я не догадалась забрать его с собой, когда увольнялась, но что сделано, то сделано... В любом случае, не хочу грузить тебя этими мрачными мыслями, так что, может, ты хочешь купить у меня что-нибудь еще сегодня?)]  
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_BOOBIES"><![CDATA[
 	<p>
-		Every time Monica moves, her huge breasts jiggle and sway in a mesmerising manner, and before you know what you're doing, you're making a very forward comment on how large the cow-girl's breasts are.
+		Каждый раз, когда Моника двигается, её огромная грудь завораживающе колышется и вздрагивает, и не успеваешь ты опомниться, как уже отпускаешь весьма дерзкий комментарий о том, насколько велики сиськи этой коровы.
 	</p>
 	<p>
-		[monica.speech(Oh these?)] she replies, pushing out her chest and thrusting her massive breasts towards you, [monica.speech(My boobies? My massive fucking tiddies? My super stuffed-up milkies? My honker-donker doinky-boinkies? My fucking fabric-stretching, wind-flapping, gravity-welling sex mounds? Do you mean these super duper, ultra god damn motherfucking tits?)]
+		[monica.speech(О, эти?)] — отвечает она, выпячивая грудь и подаваясь массивными железяками прямо к тебе, — [monica.speech(Мои сиськи? Мои гребаные огромные титьки? Мои переполненные молоком буфера? Мои дурацкие колыхающиеся бурдюки? Мои чертовы, натягивающие ткань, хлопающие на ветру, подвластные гравитации сексуальные холмы? Ты про эти супер-пупер, ультра гребаные матерные сиськи?)]
 	</p>
 	<p>
-		After you've replied in the positive, Monica smiles and says, [monica.speech(Oh, well in that case thank you for the compliment, [pc.name]!)]
+		Когда ты отвечаешь утвердительно, Моника улыбается и говорит: [monica.speech(О, ну в таком случае спасибо за комплимент, [pc.name]!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_MILKING_HELP"><![CDATA[
 	<p>
-		Deciding to offer Monica your help, you tell her that you'd be willing to go and retrieve her unique breast pump from her old farm. The cow-girl's eyes open wide as she hears you say this, and she quickly asks with more than a hint of excitement in her voice, [monica.speech(You'd really do that for me?)]
-	</p>
-	<p>
-		After confirming that you're serious, you ask Monica where her old farm is located, and who the succubus is who you'll have to deal with.
-		#IF(game.getWorlds().get(WORLD_TYPE_WORLD_MAP).getCell(PLACE_TYPE_innoxia_fields_dairyFarm)==null)
-			 Beaming at you in delight, Monica tells you that the farm is some distance to the north-east of Elis, and after showing her your map, she marks where it is on it. Gazing into your eyes, she reveals, [monica.speech(The succubus who took the farm over is called 'Evelyx', and she renamed the place 'Evelyx's Dairy' when she took it over. From what I've heard, she had all of the old buildings demolished, and now it's just a few modern barns. Evelyx isn't the nicest person around, so please be careful when dealing with her...)]
+		Решив предложить Монике свою помощь, ты говоришь ей, что готов отправиться на её старую ферму, чтобы забрать её уникальный молокоотсос. Глаза девушки-коровы широко распахиваются, и она быстро спрашивает, не скрывая явного возбуждения в голосе: [monica.speech(Ты правда сделаешь это ради меня?)]
+	</p><p>
+		Подтвердив свои серьезные намерения, ты спрашиваешь Монику, где находится её старая ферма и что это за суккуб, с которым тебе придётся иметь дело.		#IF(game.getWorlds().get(WORLD_TYPE_WORLD_MAP).getCell(PLACE_TYPE_innoxia_fields_dairyFarm)==null)
+			 Сияя от восторга, Моника сообщает тебе, что ферма находится в некотором отдалении к северо-востоку от Элиса, и, когда ты показываешь ей свою карту, она отмечает на ней нужное место. Заглядывая тебе в глаза, она признается: [monica.speech(Суккуб, которая прибрала ферму к рукам, зовут Эвеликс, и, когда она вступила во владение, то переименовала место в «Молочную Эвеликс». Из того, что я слышала, она снесла все старые постройки, и теперь там лишь несколько современных амбаров. Эвеликс не самая приятная особа, так что, пожалуйста, будь осторожен в общении с ней...)]
 		#ELSE
-			 Beaming at you in delight, Monica tells you that the farm is some distance to the north-east of Elis, and, just as you'd started to suspect, she names it as 'Evelyx's Dairy'.
+			 Сияя от восторга, Моника сообщает тебе, что ферма находится в некотором отдалении к северо-востоку от Элиса, и, как ты и подозревал, она называет её «Молочной Эвеликс».
 			#IF(flags.hasFlag(FLAG_innoxia_evelyx_work_started))
-				 You tell the cow-girl that you're actually employed at Evelyx's farm, to which she replies in surprise,
+				 Ты говоришь коровий девушке, что на самом деле работаешь на ферме Эвеликс, на что она удивленно отвечает:
 			#ELSE
-				 You tell the cow-girl that you've actually visited Evelyx's farm before, to which she replies in surprise,
+				 Ты говоришь коровий девушке, что уже бывал на ферме Эвеликс раньше, на что она удивленно отвечает:
 			#ENDIF
-			 [monica.speech(Oh! Well, then you already know far more about the place than I do! I'm sure that you already know this, but please do be careful when dealing with Evelyx...)]
+			 [monica.speech(О! Ну, значит, ты уже знаешь об этом месте гораздо больше, чем я! Уверена, ты и сам это знаешь, но всё же, пожалуйста, будь осторожен с Эвеликс...)]
 		#ENDIF
 	</p>
 	<p>
-		Reassuring Monica that you'll be fine, you tell her that you'll return and let her know as soon as you've managed to secure her breast pump. Clapping her hands together in excitement, the happy cow-girl flashes you another big smile and offers you her thanks, before asking, [monica.speech(Did you want to take a look at the clothing I've got for sale before you go, [pc.name]?)]
+		Успокаивая Монику и заверяя её, что всё будет в порядке, ты говоришь, что вернешься и сообщишь ей, как только тебе удастся раздобыть её молокоотсос. В восторге всплеснув руками, счастливая коровья девушка одаривает тебя еще одной широкой улыбкой и благодарит, прежде чем спросить: [monica.speech(Может, хочешь взглянуть на одежду, что у меня есть на продажу, прежде чем уйдешь, [pc.name]?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_MILKING_COMPLETE"><![CDATA[
 	<p>
-		Wanting to give Monica the good news, you tell her that you've discussed the matter of her custom breast pump with Evelyx. The cow-girl's eyes open wide as you say this, and in an impatient tone she asks, [monica.speech(So?! Did you manage to get it from her?!)]
+		Желая порадовать Монику хорошей новостью, ты сообщаешь ей, что обсудил вопрос с её персональным молокоотсосом с Эвеликс. Глаза коровушки широко распахиваются, и нетерпеливым тоном она спрашивает: [monica.speech(Ну?! Тебе удалось раздобыть его у неё?!)]
 	</p>
 	<p>
-		As an answer to her question, you produce the breast pump which you retrieved from Evelyx's Dairy and hold it out towards the cow-girl. Seeing that you've succeeded in your quest, Monica happily jumps up and down on the spot, causing her massive breasts to bounce up and down in a hypnotic rhythm. Taking the breast pump from you, she flashes you an enormous smile and declares, [monica.speech(You're the best, [pc.name]! You have no idea how much this means to me! I can't believe you actually managed to get it from Evelyx. Here, let me give you a proper thank-you...)]
+		В качестве ответа на её вопрос ты достаёшь молокоотсос, который забрал с молочной фермы Эвеликс, и протягиваешь его коровушке. Видя, что твоя миссия увенчалась успехом, Моника радостно подпрыгивает на месте, отчего её огромная грудь начинает гипнотически колыхаться в такт её движениям. Забирая молокоотсос, она расплывается в широкой улыбке и заявляет: [monica.speech(Ты лучший, [pc.name]! Ты даже не представляешь, как много это для меня значит! Поверить не могу, что тебе и правда удалось вытянуть его у Эвеликс. Вот, позволь мне отблагодарить тебя как следует...)]
 	</p>
 	<p>
-		Before you can react, Monica leans forwards and happily plants a big, wet kiss directly on your [pc.lips+]. Although she quickly pulls back, the cow-girl remains standing right in front of you, and as you catch the floral scent of her perfume, she lowers her voice and suggests in a husky tone, [monica.speech(I'd love to repay you for your trouble, so you're more than welcome to see how my pump works first-hand if ever you're interested... Just say the word, and we can head on up to my room...)]
+		Прежде чем ты успеваешь среагировать, Моника подаётся вперёд и счастливо впивается в твои [pc.lips+] сочным, влажным поцелуем. Хотя она быстро отстраняется, коровушка так и остаётся стоять прямо перед тобой; уловив цветочный аромат её духов, ты слышишь, как она понижает голос и хрипло шепчет: [monica.speech(Я бы очень хотела отплатить тебе за старания, так что, если тебе интересно, ты вполне можешь увидеть, как работает мой молокоотсос, на собственном опыте... Только скажи слово, и мы можем подняться ко мне в комнату...)]
 	</p>
 	<p>
-		As she bites her lip and flashes you a seductive glance, you wonder whether to take the busty cow-girl up on her offer to help milk her huge breasts straight away, or to leave your reward for another time...
+		Она закусывает губу и бросает на тебя соблазнительный взгляд, а ты гадаешь: стоит ли прямо сейчас принять предложение пышногрудой коровушки помочь ей подоить её огромные сиськи, или же оставить награду на потом...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING"><![CDATA[
 	<p>
-		Unable to resist the temptation of Monica's massive mammaries, you tell her that you'd like to take her up on her offer of helping to milk her. An excited little moan escapes from between the cow-girl's lips as she hears you say this, and after flashing you a delighted smile, she hurries over to the door of her shop and securely locks it. After quickly hanging a small 'Be back soon' sign in the window, she skips back to where you're standing, before taking hold of your [pc.hand] and panting, [monica.speech(Come on then, [pc.name], let's go up to my room...)]
+		Не в силах устоять перед искушением, которое таят в себе необъятные молочные железы Моники, ты соглашаешься на её предложение помочь ей с дойкой. Услышав это, корова-девушка издает восторженный стон, одаривает тебя сияющей улыбкой и поспешно направляется к двери лавки, чтобы запереть её на замок. Быстро повесив в окно табличку «Скоро вернусь», она вприпрыжку возвращается к тебе, хватает тебя за [pc.hand] и, тяжело дыша, произносит: [monica.speech(Ну же, [pc.name], пошли ко мне в комнату...)]
 	</p>
 	<p>
-		Still holding firmly on to your [pc.hand], the enthusiastic cow-girl leads you into her store's back room and then up a narrow staircase to her apartment. Before you know it, you're being led into Monica's bedroom, and you watch as the cow-girl quickly strips out of her dress, before removing her bra and fully exposing her huge breasts. Your eyes are immediately drawn to her massive nipples, which you see are a darker shade than her body's light tone of skin would suggest. Sitting down on the edge of her bed, the cow-girl produces her custom breast pump from out of her bedside cabinet, before holding it out towards you and pleading, [monica.speech(Use this, and let's get started already; my breasts feel so full...)]
+		Крепко сжимая твой [pc.hand], полная энтузиазма корова-девушка ведет тебя в подсобку магазина, а затем по узкой лестнице в свою квартиру. Не успеваешь ты опомниться, как она заводит тебя в спальню; ты наблюдаешь, как она стремительно скидывает платье, а затем расстегивает лифчик, полностью обнажая свою огромную грудь. Твой взгляд тут же приковывают её массивные соски, оказавшиеся гораздо темнее, чем можно было ожидать от её светлой кожи. Присев на край кровати, корова-девушка достает из тумбочки свой именной молокоотсос, протягивает его тебе и умоляюще шепчет: [monica.speech(Возьми его, давай уже начнем; грудь так расперло...)]
 	</p>
 	<p>
-		Teasing her free hand over her massive breasts and big nipples, Monica lets out a desperate whine, and as you see a few beads of white milk start to seep out of her huge nipples, you wonder how best to proceed with the cow-girl's milking...
+		Поглаживая свободной рукой свои массивные груди и огромные соски, Моника издает отчаянный скулящий звук. Заметив, как на её сосках проступают капельки белого молока, ты начинаешь раздумывать, как же лучше всего приступить к дойке этой коровушки...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_PUMP"><![CDATA[
 	<p>
-		Deciding to stick with Monica's plan, you take the breast pump from her and sit down beside her. Placing the pump's suction cup over one of the cow-girl's massive nipples, you start to operate the device's lever, and thanks to its transparent plastic construction, you're able to see a steady stream of milk start to ooze out of Monica's teat as the pump's vacuum does its work. Placing her hands down on the bed behind her, the cow-girl pushes out her chest and lets out a deeply erotic moan, before panting, [monica.speech(~Ooh!~ Yes, that feels so good... ~Mmm!~ That's it, [pc.name]! Keep going...)]
+		Решив придерживаться плана Моники, ты берешь у нее молокоотсос и садишься рядом. Приложив чашу молокоотсоса к одному из массивных сосков коровы-девушки, ты начинаешь работать рычагом. Благодаря прозрачному пластику ты видишь, как под действием вакуума из соска Моники начинает сочиться ровная струя молока. Опершись руками о кровать позади себя, корова-девушка выпячивает грудь и издает глубокий эротичный стон, а затем, тяжело дыша, произносит: [monica.speech(~Ох!~ Да, это так приятно... ~Ммм!~ Вот так, [pc.name]! Продолжай...)]
 	</p>
 	<p>
-		The cow-girl's cheeks flush red as you do as she asks and continue operating the pump, and after biting her lip and flashing you a coy look, she starts letting out a stream of horny moans and sighs under her breath. After several minutes of this, she asks you to switch to her other breast, and as you follow Monica's instructions and start pumping away at her other teat, she starts rubbing her legs together and pants, [monica.speech(You're so good at this, [pc.name]... ~Mmm!~ Yes... Give it to me...)]
+		Щеки коровы-девушки заливаются румянцем, когда ты послушно продолжаешь работать молокоотсосом. Прикусив губу и бросив на тебя кокетливый взгляд, она начинает тихо и томно стонать и вздыхать. Спустя несколько минут она просит тебя перейти к другой груди. Следуя указаниям Моники, ты начинаешь качать молоко из другого соска, а она, потирая бедра друг о друга, тяжело дышит: [monica.speech(У тебя так здорово получается, [pc.name]... ~Ммм!~ Да... Давай же...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_MASSAGE"><![CDATA[
 	<p>
-		Wanting to do things a little differently, you tell Monica that it would be best for her to operate the pump while you massage her breasts. Flashing you a sly smile as she hears what it is you want to do, the cow-girl pushes out her chest and teases, [monica.speech(You want to get a good feel of my tits? Come on then...)]
+		Захотев немного изменить ход событий, ты говоришь Монике, что будет лучше, если она сама будет работать молокоотсосом, пока ты массируешь ее грудь. Услышав твои желания, корова-девушка хитро улыбается, выпячивает грудь и дразнит тебя: [monica.speech(Хочешь хорошенько пощупать мои сиськи? Ну же, давай...)]
 	</p>
 	<p>
-		With Monica agreeing to your suggestion, you move into position beside her, and as she places her pump's suction cup over one her massive nipples, you reach forwards and sink your [pc.fingers+] into her huge, pillowy mammaries. The cow-girl lets out a deeply erotic moan as you start to grope and massage her breasts, and as she operates her breast pump to extract the milk from her dark nipples, she pants, [monica.speech(~Ooh!~ Yes, that feels so good... ~Mmm!~ That's it, [pc.name]! Keep going...)]
+		Поскольку Моника согласилась с твоим предложением, ты встаешь рядом с ней. Когда она прикладывает присоску своего молокоотсоса к одному из своих огромных сосков, ты подаешься вперед и погружаешь свой [pc.fingers+] в её необъятную, мягкую грудь. Коровья девчонка издает глубокий эротичный стон, когда ты начинаешь ласкать и массировать её молочные железы; пока она работает молокоотсосом, выкачивая молоко из темных сосков, она тяжело дышит: [monica.speech(~Ох!~ Да, это так приятно... ~Ммм!~ Вот так, [pc.name]! Продолжай...)]
 	</p>
 	<p>
-		The cow-girl's cheeks flush red as you do as she asks and continue kneading and squeezing her huge breasts, and after biting her lip and flashing you a coy look, she starts letting out a stream of horny moans and sighs under her breath. After several minutes of this, she switches the pump to her other breast, and as you continue playing with her tits, she starts rubbing her legs together and pants, [monica.speech(You're so good at this, [pc.name]... ~Mmm!~ Yes... Give it to me...)]
+		Щеки коровьей девчонки заливаются румянцем, когда ты выполняешь её просьбу и продолжаешь разминать и сжимать её огромную грудь. Прикусив губу и бросив на тебя кокетливый взгляд, она начинает издавать поток похотливых стонов и вздохов. Спустя несколько минут она переключает молокоотсос на другую грудь, и пока ты продолжаешь играть с её сиськами, она начинает тереться ногами друг о друга и тяжело дышать: [monica.speech(У тебя так здорово получается, [pc.name]... ~Ммм!~ Да... Давай же...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_DRINK"><![CDATA[
 	<p>
-		Wanting to do more than simply operate Monica's breast pump, you tell her that it would be more effective for you to use your mouth and suckle on her breasts instead. The cow-girl's cheeks flush red as she hears you say this, but after flashing you a coy smile, she agrees to your plan by teasing, [monica.speech(You want me to breast-feed you? Well, if that's what you really want, [pc.name], then I'm happy to play along...)]
+		Желая сделать нечто большее, чем просто помогать Монике с молокоотсосом, ты говоришь ей, что будет эффективнее, если ты воспользуешься своим ртом и начнешь сосать её грудь. Щеки коровьей девчонки вспыхивают красным, когда она слышит твои слова, но, одарив тебя кокетливой улыбкой, она соглашается на твой план, дразня тебя: [monica.speech(Ты хочешь, чтобы я тебя выкормила? Ну, если ты этого действительно хочешь, [pc.name], то я с радостью подыграю тебе...)]
 	</p>
 	<p>
-		Pushing out her chest, Monica beckons you forwards, and as you move your face towards her massive breasts, she reaches forwards and pulls you into her huge, pillowy mammaries. After planting a series of kisses on her massive breasts, you quickly move over to one of her large, dark nipples, before parting your [pc.lips+] and taking it into your mouth. Using your [pc.tongue+] to playfully lick and tease her teat, you start to suck on Monica's nipple, and within a second, her warm, creamy milk starts to seep out into your mouth. The cow-girl lets out a deeply erotic moan as you start to suckle on her breast, and as she pulls your face into her chest, she pants, [monica.speech(~Ooh!~ Yes, that feels so good... ~Mmm!~ That's it, [pc.name]! Keep going...)]
+		Выпятив грудь вперед, Моника манит тебя за собой. Когда ты приближаешь лицо к её массивным полушариям, она подается навстречу и буквально втягивает тебя в свои огромные, мягкие, словно подушки, молочные железы. Осыпав её пышную грудь чередой поцелуев, ты быстро переходишь к одному из её крупных темных сосков, после чего размыкаешь свои [pc.lips+] и берешь его в рот. Игриво облизывая и дразня сосок своим [pc.tongue+], ты начинаешь сосать его, и уже через секунду её теплое, сливочное молоко начинает сочиться тебе в рот. Корова-девушка издает глубокий эротичный стон, когда ты припадаешь к её груди, и, прижимая твое лицо к своему телу, она тяжело дышит: [monica.speech(~Ох!~ Да, как же приятно... ~Ммм!~ Вот так, [pc.name]! Продолжай...)]
 	</p>
 	<p>
-		The cow-girl starts letting out a stream of horny moans and sighs under her breath as you continue to suck on her nipple and drink her milk. After several minutes, she gently pushes you back and asks you to switch to her other breast, and as you follow Monica's instructions and move over to start sucking on her other teat, she rubs her legs together and pants, [monica.speech(You're so good at this, [pc.name]... ~Mmm!~ Yes... Drink it all down, that's a good [pc.girl]...)]
+		Корова-девушка начинает тихонько стонать и вздыхать от возбуждения, пока ты продолжаешь сосать её сосок и пить молоко. Спустя несколько минут она мягко отстраняет тебя и просит перейти к другой груди. Когда ты послушно следуешь указаниям Моники и перебираешься к её второму соску, она плотнее сжимает бедра и прерывисто дышит: [monica.speech(У тебя так здорово получается, [pc.name]... ~Ммм!~ Да... Выпей всё до капли, ты такой хороший [pc.girl]...)]
 	</p>
 	<p>
-		After spending the next five or so minutes drinking Monica's milk, you start to feel quite full, and after pulling back from her huge breasts, you ask her how much more milking she needs. Letting out a playful laugh, she tells you that her tits are still well over half full, and so with there being simply too much milk to be drunk in a single session, you end up having to use the cow-girl's breast pump after all. Placing the pump's suction cup over one of Monica's massive nipples, you start to operate the device's lever, and thanks to its transparent plastic construction, you're able to see a steady stream of milk start to ooze out of the cow-girl's teat as the pump's vacuum does its work. Placing her hands down on the bed behind her, she pushes out her chest and lets out another deeply erotic moan, before panting, [monica.speech(~Mmm!~ Yes, that feels so good... ~Aah!~ Keep going, [pc.name]...)]
+		Проведя следующие минут пять, попивая молоко Моники, ты чувствуешь приятную сытость. Отстранившись от её огромной груди, ты спрашиваешь, сколько ей ещё нужно подоить. Игриво рассмеявшись, она отвечает, что её соски всё ещё полны более чем наполовину, и раз молока слишком много, чтобы выпить всё за один раз, тебе всё же приходится воспользоваться молокоотсосом этой коровы. Приложив присоску к одному из массивных сосков Моники, ты начинаешь двигать рычаг устройства. Благодаря прозрачному пластику ты видишь, как под воздействием вакуума из её соска начинает струиться ровная струйка молока. Опершись руками о кровать позади себя, она выпячивает грудь и издаёт очередной глубокий эротичный стон, после чего, тяжело дыша, произносит: [monica.speech(~Ммм!~ Да, это так приятно... ~Аах!~ Продолжай, [pc.name]...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_FINISHED"><![CDATA[
 	<p>
-		Soon enough, the bottle that's attached to the pump is completely full of milk, but instead of signalling the end of the milking session, Monica produces another empty bottle from out of her cabinet, and after swapping them over, she asks you to keep going. Twenty minutes, and a lot of horny moaning and panting later, and several bottles full of Monica's milk are sitting on the floor beside you. With her breasts now drained, the cow-girl lets out a deep, satisfied moan, before happily smiling at you and sighing, [monica.speech(That was amazing, thank you so much for helping me with this, [pc.name]...)]
+		Вскоре бутылочка, прикрепленная к молокоотсосу, наполняется до краёв, но вместо того чтобы закончить процесс, Моника достаёт из своего шкафчика ещё одну пустую бутылку. Сменив её, она просит тебя продолжать. Спустя двадцать минут, наполненных похотливыми стонами и прерывистым дыханием, на полу рядом с тобой уже стоят несколько бутылок, полных молока Моники. Когда её грудь наконец опустевает, корова издаёт глубокий, удовлетворенный стон, а затем счастливо улыбается тебе и вздыхает: [monica.speech(Это было потрясающе, спасибо тебе огромное за помощь, [pc.name]...)]
 	</p>
 	<p>
-		As she says your name, she spreads her legs a little, and as your attention is drawn down to her groin, you see that there's a wet patch in her lacy panties. Letting out a little high-pitched laugh as she sees you looking down between her legs, she teases, [monica.speech(You know, cows are conditioned to associate being milked with having sex... You've really got me turned on now, so how about it? Want to have some fun before I have to get back to work?)]
+		Произнося твое имя, она слегка разводит ноги, и когда твой взгляд опускается к её паху, ты замечаешь влажное пятно на её кружевных трусиках. Заметив твой взгляд между её ног, она издает короткий заливистый смешок и дразнит тебя: [monica.speech(Знаешь, коров приучают к тому, что дойка — это почти как секс... Ты меня сейчас по-настоящему завел, так что как насчет этого? Хочешь немного развлечься, прежде чем мне придется вернуться к работе?)]
 	</p>
 	<p>
-		Dropping one of her hands down to her groin, Monica slides her panties to one side, flashing you her dripping-wet pussy as she lets out an excited moan. Her [monica.labiaSize] labia are the same dark shade as her nipples, and as you watch the cow-girl slide her fingers over her eager cunt, you wonder whether you should take things further and have sex with her right here and now...
+		Опустив одну руку к паху, Моника сдвигает трусики набок, демонстрируя тебе свою сочащуюся влагой киску и издавая возбужденный стон. Её [monica.labiaSize] половые губы такого же темного оттенка, как и соски, и пока ты наблюдаешь, как эта коровка водит пальцами по своей жаждущей щелке, ты задаешься вопросом: не стоит ли пойти дальше и трахнуть её прямо здесь и сейчас...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_FINISHED_LEAVE"><![CDATA[
-	<p>
-		Although you enjoyed helping to milk Monica, you really don't feel like having sex with her, and so you tell the cow-girl that you've got to leave. She lets out a disappointed whine as she hears this, and after pouting at you, she sighs, [monica.speech(Fine... I'm going to need a few minutes to finish myself off here, so you can head downstairs and let yourself out. Thanks for helping me with my milking, [pc.name], and maybe next time you'll be up for a quick fuck?)]
+	<p>		Хотя тебе понравилось помогать Монике с дойкой, заниматься сексом с ней сейчас совсем не хочется, поэтому ты говоришь этой коровке, что тебе пора уходить. Услышав это, она разочарованно скулит, а затем, надув губы, вздыхает: [monica.speech(Ладно... Мне понадобится пара минут, чтобы закончить здесь самой, так что можешь спускаться вниз и выходить. Спасибо, что помог мне с дойкой, [pc.name], может, в следующий раз ты будешь не прочь быстрого траха?)]
 	</p>
 	<p>
-		Making a non-committal response, you say goodbye to Monica, before [pc.stepping] out of her room and leaving her to deal with her arousal by herself. Heading down the stairs, you pass through her store and show yourself out into Wall's End, before looking around the shopping precinct and wondering where to go next...
+		Ответив неопределенно, ты прощаешься с Моникой и [pc.stepping] из её комнаты, оставляя её наедине с её возбуждением. Спускаясь по лестнице, ты проходишь через её лавку и выходишь на улицы Уоллс-Энд, после чего оглядываешься по сторонам в торговом квартале, раздумывая, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_FINISHED_SEX_START"><![CDATA[
 	<p>
-		Not being able to resist that offer, you move up close to Monica and playfully tease her big nipples as you ask if she always gets turned on from being milked like this. Leaning into you, the horny cow-girl lets out an erotic moan and reveals in breathless sighs, [monica.speech(I don't normally get this bad... It must be because you're so good at milking...)]
+		Не в силах устоять перед этим предложением, ты подходишь ближе к Монике и игриво дразнишь её большие соски, спрашивая, всегда ли её так заводит процесс дойки. Прильнув к тебе, похотливая коровья девчонка издает эротичный стон и прерывистым вздохом признается: [monica.speech(Обычно у меня не так сильно... Должно быть, это потому, что ты так искусно доишь...)]
 	</p>
 	<p>
-		Leaning heavily into you, Monica plants a big, wet kiss on your [pc.lips], and before you know it, the two of you are passionately making out with one another. After a few moments of this, the cow-girl breaks off from your kiss, before lying back on her bed and spreading her legs, and as she presents you with her wet cunt, she desperately moans, [monica.speech(Come on, [pc.name], fuck me already!)]
+		Тяжело прижавшись к тебе, Моника оставляет долгий, влажный поцелуй на твоих [pc.lips], и не успеваешь ты опомниться, как вы уже страстно целуетесь. Спустя несколько мгновений коровья девчонка отрывается от твоих губ, откидывается на кровать и раздвигает ноги; демонстрируя тебе свою мокрую киску, она отчаянно стонет: [monica.speech(Ну же, [pc.name], трахни меня уже!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_MILKING_FINISHED_SEX_END"><![CDATA[
 	<p>
-		Collapsing back on her bed, Monica's huge breasts rise and fall in time with her heavy breathing as she pants,
+		Рухнув на кровать, Моника тяжело дышит, и её огромная грудь вздымается и опускается в такт её прерывистому дыханию:
 		#IF(monica.isSatisfiedFromLastSex())
-			 [monica.speech(Fuck... That was amazing... You're so good, [pc.name]...)]
+			 [monica.speech(Бля... Это было потрясающе... Ты такой умелый, [pc.name]...)]
 		#ELSE
-			 [monica.speech(Fuck... I'm still feeling so horny... You didn't exactly satisfy me there, [pc.name]...)]
+			 [monica.speech(Бля... Я всё ещё так хочу... Ты не совсем меня удовлетворил, [pc.name]...)]
 		#ENDIF
 	</p>
 	<p>
-		After spending a moment to get your breath back, you move to start getting your things back in order while the cow-girl quickly cleans herself up in her bathroom. Pulling on her underwear and dress, she flashes you a smile and says,
+		Немного переведя дух, ты принимаешься приводить вещи в порядок, пока коровка поспешно приводит себя в порядок в ванной. Натягивая белье и платье, она одаривает тебя улыбкой и говорит:
 		#IF(monica.isSatisfiedFromLastSex())
-			 [monica.speech(That was just what I needed. Thanks again, [pc.name]! Now let's head back downstairs.)]
+			 [monica.speech(Это было именно то, что мне нужно. Еще раз спасибо, [pc.name]! А теперь давай спускаться вниз.)]
 		#ELSE
-			 [monica.speech(I can always finish myself off later... Thanks again for the help with my milking, [pc.name]. Now let's head back downstairs.)]
+			 [monica.speech(Я всегда смогу закончить сама позже... Еще раз спасибо за помощь с дойкой, [pc.name]. А теперь давай спускаться вниз.)]
 		#ENDIF
 	</p>
 	]]>
@@ -372,48 +369,48 @@
 	
 	<htmlContent tag="CLOTHING_MILKING_FINISHED_SEX_END_LEAVE"><![CDATA[
 	<p>
-		As the two of you move to her bedroom door, the cow-girl stops and exclaims, [monica.speech(Oh! I need to put my milk in the fridge and get it dated! You go on ahead, [pc.name]. You can show yourself out, right?)]
+		Когда вы оба подходите к двери ее спальни, коровка внезапно останавливается и восклицает: [monica.speech(Ой! Мне нужно убрать молоко в холодильник и поставить дату! Иди вперед, [pc.name]. Ты ведь сможешь выйти сам, верно?)]
 	</p>
 	<p>
-		Responding in the affirmative, you say goodbye to Monica, before [pc.stepping] out of her room and leaving her to deal with her bottled milk. Heading down the stairs, you pass through her store and show yourself out into Wall's End, before looking around the shopping precinct and wondering where to go next...
+		Подтвердив согласием, ты прощаешься с Моникой и [pc.stepping] из ее комнаты, оставляя ее разбираться с молоком. Спускаясь по лестнице, ты проходишь через ее лавку и выходишь на улицы Уоллс-Энд, после чего оглядываешь торговый квартал, раздумывая, куда отправиться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_FABRIC"><![CDATA[
 	<p>
-		Taking a look around you, you suddenly remember your quest for fabric and ask Monica if she could sell you some fabric. The busty cow-girl makes a show of considering your question when you ask about it, and after placing a finger on her chin to make an exaggerated thinking expression, she playfully replies, [monica.speech(Hmm... Yes, I suppose I could order in some fabric for you. How come? Are you looking to get something custom made? Or are you looking to muscle in on my business?)]
+		Оглядевшись по сторонам, ты внезапно вспоминаешь о своей цели — найти ткань, и спрашиваешь Монику, не могла бы она продать тебе немного материала. Пышная коровка картинно задумывается над твоим вопросом, приложив палец к подбородку с преувеличенно серьезным видом, а затем игриво отвечает: [monica.speech(Хм... Ну, пожалуй, я могла бы заказать для тебя немного ткани. А зачем? Хочешь сшить что-то на заказ? Или решил составить мне конкуренцию в бизнесе?)]
 	</p>
 	<p>
-		You explain that you need the fabric to fix up a certain friend's stall, and since she brought it up, you actually are also looking to get something custom made. Monica's ears swivel forward as she hears this, and she excitedly asks, [monica.speech(Oh? Like what?)]
+		Ты объясняешь, что ткань нужна тебе, чтобы подлатать лавку одной подруги, и раз уж она об этом заговорила, ты на самом деле хочешь заказать что-нибудь особенное. Услышав это, Моника предвкушающе подается вперед и с азартом спрашивает: [monica.speech(О? И что же именно?)]
 	</p>
 	<p>
-		You mention that the same stall needs a new sign, but you're not really sure how to go about getting one printed. [monica.speech(Well, printing is one way to do it, or...)] she pauses for a moment before continuing with an up-seller's twinkle in her eye, [monica.speech(...an embroidery would be much more eye-catching, not to mention long-lasting. Maybe with metallic thread?)]
+		Ты упоминаешь, что той же лавке нужна новая вывеска, но ты не совсем понимаешь, как её напечатать. [monica.speech(Ну, печать — это один из вариантов, или...)] она делает паузу, а затем продолжает с азартным блеском в глазах, присущим умелым продавцам: [monica.speech(...вышивка будет куда заметнее, не говоря уже о долговечности. Может, с использованием металлизированной нити?)]
 	</p>
 	<p>
-		Well, you <i>do</i> want to make it a nice surprise for Eisek. When you assent to an embroidered sign, Monica fishes a small notepad from her considerable bust and begins writing down the description you give of what form it should take.
+		Что ж, ты <i>действительно</i> хочешь сделать Эйзеку приятный сюрприз. Когда ты соглашаешься на вышитую вывеску, Моника достает маленький блокнот из своего внушительного декольте и принимается записывать твои пожелания по поводу её внешнего вида.
 	</p>
 	<p>
-		[monica.speech(I'll need about three days to get this ready and it'll probably run you around two and a half thousand flames,)] she says as you finish your order, [monica.speech(Do feel free to stop by in the meantime.)]
+		[monica.speech(Мне понадобится около трех дней, чтобы всё подготовить, и это обойдется тебе примерно в две с половиной тысячи огней,)] — говорит она, когда ты заканчиваешь заказ, — [monica.speech(Так что заглядывай к нам почаще в это время!)]
 	</p>
 	<p>
-		With two items down, you look out the window at the smithy across the cobblestone path. You'll need some wooden poles to hold up the awning, preferably the sort that can be folded up. Maybe they can help?
+		Выбрав две вещи, ты смотришь в окно на кузницу через мощеную дорожку. Тебе понадобятся деревянные шесты, чтобы держать навес, желательно такие, которые можно складывать. Может, они смогут помочь?
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLOTHING_TALK_PICKUP_ORDER"><![CDATA[
 	<p>
-		Monica lights up when you mention the custom order you placed, and cheerfully says, [monica.speech(Oh yes, they just arrived this morning! I think you'll like them a lot!)]
+		При упоминании твоего спецзаказа Моника буквально расцветает и весело отвечает: [monica.speech(О да, они как раз прибыли сегодня утром! Думаю, они тебе очень понравятся!)]
 	</p>
 	<p>
-		The busty cow-girl places a bolt of green fabric and a folded piece of canvas next to each other on the counter. You carefully unfold the canvas to find an embroidered, stylised depiction of many different types of fruits and vegetables carried by an avalanche descending the side of a mountain, while in the corner letters sewn in metallic blue thread proclaim "ALPINE PRODUCE". Whatever your trepidations about how Eisek may react to this tapestry of a sign, the craftsmanship is beyond reproach.
+		Пышногрудая фермерша кладет на прилавок рулон зеленой ткани и сложенный кусок холста. Ты осторожно разворачиваешь холст и видишь вышитую стилизованную картину: лавина из самых разных фруктов и овощей несется по склону горы, а в углу буквы, вышитые синими металлизированными нитями, гласят: «АЛЬПИНСКИЕ ПРОДУКТЫ». Какими бы ни были твои опасения по поводу того, как Эйзек отреагирует на подобную вывеску-гобелен, мастерство исполнения просто безупречно.
 	</p>
 	<p>
-		You must have been staring for a while, since in the corner of your mind you hear Monica ask, [monica.speech(Well? Do you like it?)]
+		Должно быть, ты засмотрелся, потому что краем уха ты слышишь вопрос Моники: [monica.speech(Ну? Тебе нравится?)]
 	</p>
 	<p>
-		You answer affirmatively as you fold up the canvas and hand over the payment. With a teasing smile on her face, Monica giggles, [monica.speech(Your friend is very lucky you came to me. Now, is there anything else I can do for you?)]
+		Ты утвердительно киваешь, сворачиваешь холст и передаешь оплату. С лукавой улыбкой Моника хихикает: [monica.speech(Твоему другу очень повезло, что ты пришла именно ко мне. Ну а теперь, могу я сделать для тебя что-нибудь еще?)]
 	</p>
 	]]>
 	</htmlContent>

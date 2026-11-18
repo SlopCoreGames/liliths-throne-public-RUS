@@ -117,7 +117,18 @@
     "res/txt/places/fields/elis/amazon_camp.xml",
     "res/txt/places/fields/elis/bank.xml",
     "res/txt/places/fields/elis/centaur_transport.xml",
-    "res/txt/places/fields/elis/enforcer_station.xml"
+    "res/txt/places/fields/elis/enforcer_station.xml",
+    "res/dialogue/acexp/flags.xml",
+    "res/dialogue/dsg/flags.xml",
+    "res/dialogue/innoxia/flags.xml",
+    "res/dialogue/nnxx/flags.xml",
+    "res/txt/places/fields/elis/generic.xml",
+    "res/txt/places/fields/elis/market.xml",
+    "res/txt/places/fields/elis/shops/blacksmith.xml",
+    "res/txt/places/fields/elis/shops/clothing.xml",
+    "res/txt/places/fields/elis/shops/convenience.xml",
+    "res/txt/places/fields/elis/shops/generic.xml",
+    "res/txt/places/fields/elis/shops/spa.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",
