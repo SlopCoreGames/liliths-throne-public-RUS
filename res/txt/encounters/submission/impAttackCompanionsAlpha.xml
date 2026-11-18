@@ -3,39 +3,37 @@
 
 	<htmlContent tag="IMP_ATTACK"><![CDATA[
 	<p>
-		The tunnels of Submission have an ominous feel to them at the best of times, but as you and [npc.name] make your way down the dirty, deserted passageways, you're filled with a particular sense of dread, as though something terrible is about to happen.
+		Туннели Submission даже в лучшие времена навевают зловещее чувство, но пока ты и [npc.name] пробираетесь по грязным, пустынным переходам, тебя наполняет особое предчувствие беды, будто вот-вот должно случиться нечто ужасное.
 	</p>
 	<p>
-		At first, the sinister silence that permeates these gloomy catacombs is broken only by the rustling of litter that you and your partner disturb underfoot, but as you travel ever onwards, you start hearing faint sounds of movement coming from somewhere far behind you. Realising that you're being followed, and not wanting to be inadvertently shepherded into a trap that might be lying up ahead, you stand your ground and turn to face the direction of your pursuers.
+		Поначалу зловещую тишину, пропитавшую эти мрачные катакомбы, нарушает лишь шорох мусора, который вы с напарником поднимаете под ногами, но чем дальше вы идете, тем отчетливее слышишь слабые звуки чьих-то движений где-то далеко позади. Осознав, что за вами следят, и не желая нечаянно угодить в засаду, которая может подстерегать впереди, ты замираешь на месте и оборачиваешься навстречу преследователям.
 	</p>
 	<p>
-		[npc.speech(Imps...)] [npc.Name] whispers, and after just a moment, [npc.sheIs] proven right, as from around the far corner, there appear the forms of four imps. Two of these are larger than the others, and, although their wings look large enough to sustain flight, they're choosing to walk upon the ground, while the other two, smaller imps, are fluttering along in the air a short way behind.
+		[npc.speech(Imps...)] шепчет [npc.Name], и спустя мгновение [npc.sheIs] оказывается прав: из-за дальнего поворота появляются четыре беса. Двое из них крупнее остальных, и хотя их крылья кажутся достаточно большими для полета, они предпочитают идти по земле, в то время как двое других, бесов поменьше, порхают в воздухе чуть позади.
 	</p>
 	<p>
-		All four of the imps are dressed in skimpy rags, and, perhaps due to the fact that they appear more comfortable flying around than walking, you notice that the two smaller imps lack any form of footwear. What catches your attention the most, however, is that the two larger imps are armed. One of them is carrying a length of metal pipe and a crude wooden shield, while the other appears to be carrying an enchanted shortbow.
+		Все четверо бесов одеты в скудные лохмотья, и, возможно, из-за того, что им удобнее летать, чем ходить, ты замечаешь, что на двух мелких бесах совсем нет обуви. Однако больше всего твое внимание привлекает то, что двое крупных бесов вооружены. Один из них держит кусок металлической трубы и грубый деревянный щит, а другой, кажется, вооружен зачарованным коротким луком.
 	</p>
 	<p>
-		As they catch sight of the two of you, the alpha-imps stop in their tracks. The one on the
+		Заметив вас, альфа-бесы замирают. Тот, что
 		#IF(RND.nextInt(2)==0)
-			 left,
+			слева,
 		#ELSE
-			 right,
+			справа,
 		#ENDIF
-		 armed with the pipe and shield, appears to be the leader, and [npc2.she] steps forwards and sizes you and [npc.name] up, before declaring, [npc2.speech(Yer a pair of cheeky [pc.insultPlural], ain't yer?! Runnin' round in our territory, thinkin' ya ain't gonna get caught!)]
+		вооружен трубой и щитом, кажется предводителем; [npc2.she] делает шаг вперед, оценивающе оглядывая тебя и [npc.name], после чего заявляет: [npc2.speech(Ну и парочка наглых [pc.insultPlural], а?! Шныряете по нашей территории, думая, что вас не поймают!)]
 	</p>
 	<p>
-		The two smaller imps flutter forwards to back their leader up, and [npc4.name] sneers, [npc4.speech([pc.InsultPlural]! You're gonna be in for it now!)]
+		Два беса поменьше порхают вперед, чтобы поддержать своего вожака, и [npc4.name] скалится: [npc4.speech([pc.InsultPlural]! Ну всё, сейчас тебе прилетит!)]
 	</p>
 	<p>
-		Taking this opportunity to throw [npc5.her] own insult your way, [npc5.name] cruelly spits, [npc5.speech(That's right, [pc.insultPlural]! You two ready to be our fuck-toys?! I'm gonna love hearin' you both squeal!)]
-	</p>
-	<p>
-		It's quite clear that these imps are only interested in one thing, and as they start to advance, the second alpha-imp, who up until now had been quite content to simply sneer and scowl at the two of you, puts any doubts as to their intentions to rest, as [npc3.she] calls out, 
-		#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
+		Пользуясь случаем, чтобы швырнуть [npc5.her] ответное оскорбление, [npc5.name] жестоко сплевывает: [npc5.speech(Именно, [pc.insultPlural]! Вы двое готовы стать нашими шлюшками-игрушками?! Обожаю слушать, как вы обе будете визжать!)]
+	</p><p>
+Совершенно очевидно, что этих бесов интересует лишь одно. Когда они начинают наступать, второй альфа-бес, который до этого момента лишь довольно скалился и хмурился, глядя на вас двоих, окончательно развеивает все сомнения: [npc3.she] выкрикивает,		#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 		#THEN
-			[npc3.speech(The boss gave us some potions to use on cheeky little [pc.insultPlural] like you two! Gonna turn you both into our big-titty futa fuck-toys, so when we're usin' your cunts as our cock-sleeves, we can 'ave a laugh when we get you to cum all over the floor!)]
+			[npc3.speech(Босс дал нам зелья, чтобы использовать на таких дерзких [pc.insultPlural], как вы! Превратим вас обеих в наших огромногрудых фута-шлюшек, чтобы, когда мы будем использовать ваши киски как чехлы для наших членов, можно было посмеяться, когда вы начнете кончать прямо на пол!)]
 		#ELSE
-			[npc3.speech(The boss gave us some potions to use on cheeky little [pc.insultPlural] like you two! Gonna give you both a nice wet cunt to use as our cock-sleeves, an' a little cock so we can 'ave a laugh when we get you to cum all over the floor!)]
+			[npc3.speech(Босс дал нам зелья, чтобы использовать на таких дерзких [pc.insultPlural], как вы! Сделаем из вас обеих сочных мокрых сучек, чтобы использовать ваши киски как чехлы для наших членов, и прибавим вам по члену, чтобы поглумиться, когда вы будете кончать прямо на пол!)]
 		#ENDIF
 	</p>
 	]]>
@@ -43,37 +41,39 @@
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_BODY"><![CDATA[
 	<p>
-		Cowed by the imps' cruel insults and aggressive posturing, you decide that the best course of action would be to just give the gang what they want. Not wanting [npc.name] to have to endure this as well, you tell [npc.herHim] to step back, before holding up your [pc.hands] as you submit to the imps. [pc.speech(Please, there's no need for violence. You just want sex with me, right?)]
+		Подавленный жестокими оскорблениями и агрессивными позами бесов, ты решаешь, что лучший выход — просто дать этой банде то, чего они хотят. Не желая, чтобы [npc.name] тоже через это прошла, ты просишь [npc.herHim] отступить, а затем поднимаешь свои [pc.hands], покоряясь бесам. [pc.speech(Пожалуйста, не нужно насилия. Вам ведь просто нужен секс со мной, верно?)]
 	</p>
 	<p>
-		[npc2.speech(Good, ya know yer place, [pc.insult]!)] [npc2.name] snarls, before turning [npc2.her] head and harshly ordering [npc2.her] subordinates to subdue you, [npc2.speech(Get [pc.herHim] down, ya useless fucks!)]
+		[npc2.speech(Хорошо, знаешь своё место, [pc.insult]!)] — рычит [npc2.name], после чего поворачивает [npc2.her] голову и резко приказывает [npc2.her] подчиненных усмирить тебя: [npc2.speech(Свалите [pc.herHim] на землю, бесполезные ублюдки!)]
 	</p>
 	<p>
-		The two smaller imps immediately dart forwards, and, flying up to each side of you, they grab your [pc.arms], before folding their wings behind their backs and using their weight to pull you down onto your knees. As you hit the floor, you look up to see the two alpha-imps stepping forwards, grinning in delight as they see that you're not going to put up a fight.
+		Двое мелких бесов тут же бросаются вперед; взмыв по обе стороны от тебя, они хватают твои [pc.arms], прижимают крылья к спинам и всем своим весом заставляют тебя упасть на колени. Когда ты приземляешься на пол, то видишь, как вперед выходят два альфа-беса, довольно скалясь при виде того, что ты не собираешься сопротивляться.
 	</p>
 	<p>
-		[npc.speech([npc.PcName]... Are you sure about this?!)] [npc.Name] calls out from somewhere behind you, but you turn and reassure [npc.herHim] that this is the for the best, before focusing your attention on the imps.
+		[npc.speech([npc.PcName]... Ты уверена в этом?!)] — окликает тебя [npc.Name] откуда-то из-за спины, но ты оборачиваешься и заверяешь [npc.herHim], что так будет лучше, после чего вновь сосредотачиваешь внимание на бесах.
 	</p>
 	#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 	#THEN
 		<p>
-			[npc2.speech(Gimme the potion,)] [npc2.name] snaps at [npc2.her] partner. Quickly producing a bottle of strange liquid, [npc3.name] hands it over to her superior, who immediately pulls the stopper out and steps forwards, before grabbing your chin and squeezing your cheeks. 
+			[npc2.speech(Давай зелье,)] — огрызается [npc2.name] на напарницу [npc2.her]. Быстро достав бутылочку со странной жидкостью, [npc3.name] протягивает её своей предводительнице, которая тут же выдергивает пробку и делает шаг вперед, хватая тебя за подбородок и сжимая щеки.
 			#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 			#THEN
-				[npc2.speech(Open wide, [pc.insult]! This'll turn yer into a stacked futa, so we can watch yer cum all over the floor as we're poundin' yer cunt!)]
+				[npc2.speech(Раскрой рот шире, [pc.insult]! Это превратит тебя в сочную футу, и мы сможем смотреть, как ты кончаешь на весь пол, пока мы вколачиваемся в твою киску!)]
 			#ELSE
-				[npc2.speech(Open wide, [pc.insult]! This'll give yer a cunt an' cock, so we can watch yer cum all over the floor as we're fuckin' yer pussy!)]
+				[npc2.speech(Раскрой рот шире, [pc.insult]! С этим у тебя появятся и киска, и член, так что мы сможем смотреть, как ты кончаешь на весь пол, пока мы трахаем твою пизду!)]
 			#ENDIF
 		</p>
 		<p>
-			With no further warning, and not even giving you time to do as [npc2.she] commands, [npc2.name] shoves the bottle past your [pc.lips], and you feel the warm, sickly-sweet liquid entering your mouth...
+		
+		Без лишних предупреждений, даже не дав тебе времени выполнить приказы [npc2.she], [npc2.name] просовывает бутылку тебе в [pc.lips], и ты чувствуешь, как теплая, приторно-сладкая жидкость вливается тебе в рот...
 		</p>
 	#ELSE
 		<p>
 			[npc2.speech(This stupid [pc.insult]'s got [pc.her] mouth blocked! Fucking [pc.insult]!)] [npc2.name] spits in disgust. Turning to [npc2.her] subordinate, [npc2.she] snaps, [npc2.speech(Save that potion for the next one we catch! Let's just fuck whatever holes we can with this [pc.insult].)]
 		</p>
 		<p>
-			With no further warning, [npc2.name] reaches forwards and grabs the back of your head, before pushing you down onto all fours. [npc2.speech(Get down, [pc.insult]! Time to be a good fuck-toy for us!)]
+		
+		Без лишних слов, [npc2.name] подается вперед, хватает тебя за затылок и швыряет на четвереньки. [npc2.speech(На колени, [pc.insult]! Пора быть хорошей подстилкой для нас!)]
 		</p>
 	#ENDIF
 	]]>
@@ -81,56 +81,56 @@
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_COMPANION"><![CDATA[
 	<p>
-		Realising that these imps aren't going to be satisfied with anything other than sex, you turn towards your companion, [npc.name], and say, [pc.speech(You're going to have to give the imps what they want. We're not going to get out of this until they're satisfied, so just tell them they can fuck you, and try to have fun, ok?)]
+		Понимая, что этих бесов не удовлетвоит ничего, кроме секса, ты поворачиваешься к своему спутнику, [npc.name], и говоришь: [pc.speech(Тебе придется дать бесам то, что они хотят. Мы отсюда не выберемся, пока они не нажрутся, так что просто скажи им, что они могут тебя трахать, и постарайся получить удовольствие, ладно?)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
-		#THEN[npc.speech(Sure thing, [pc.name],)] [npc.name] replies. [npc.speech(If that's really what you want me to do...)]
+		#THEN[npc.speech(Конечно, [pc.name],)] [npc.name] отвечает. [npc.speech(Если ты действительно хочешь, чтобы я так поступил...)]
 		#ELSE[npc.speech([pc.Name]! W-What the hell?!)] [npc.name] replies in alarm. [npc.speech(I-I really don't want to do that!)]
 		#ENDIF
 	</p>
 	<p>
-		Having overheard your conversation, [npc2.name] steps forwards, before sneering, [npc2.speech(Hah! Well, we're not too demandin' or anything. So long as we can avoid a fight, just one cock-sleeve will do!)]
+		Подслушав ваш разговор, [npc2.name] делает шаг вперед и с усмешкой произносит: [npc2.speech(Ха! Ну, мы не такие уж и привередливые. Если удастся избежать драки, нам хватит и одной дырки для члена!)]
 	</p>
 	#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 	#THEN
 		<p>
-			[npc.Name] steps forwards, smiling at the imps as [npc.she] does as you've instructed. [npc.speech(All four of you want me at once, huh? Well, come on then...)]
+			[npc.Name] делает шаг вперед, улыбаясь бесам, пока [npc.she] выполняет твои указания. [npc.speech(Значит, вы все четверо хотите меня разом, а? Ну что ж, давайте...)]
 		</p>
 		<p>
-			[npc2.speech(So, this [npc.insult] knows [npc.her] place!)] [npc2.name] snarls, before turning [npc2.her] head and harshly ordering [npc2.her] subordinates to subdue [npc.name], [npc2.speech(Get [npc.herHim] down, ya useless fucks!)]
+			[npc2.speech(Так эта [npc.insult] знает свое [npc.her] место!)] [npc2.name] рычит, после чего поворачивает [npc2.her] голову и резко приказывает [npc2.her] подчиненным скрутить [npc.name], [npc2.speech(Прижмите [npc.herHim] к земле, бесполезные ублюдки!)]
 		</p>
 	#ELSE
 		<p>
-			[npc.Name] steps back, clearly nervous about what's about to happen. [npc.speech(A-All four of you? At once? I-I don't know...)]
+			[npc.Name] отступает назад, явно нервничая из-за того, что вот-вот произойдет. [npc.speech(В-все четверо? Сразу? Я... я даже не знаю...)]
 		</p>
 		<p>
-			[npc2.speech(So, this [npc.insult] still needs to be shown [npc.her] place, huh?!)] [npc2.name] snarls, before turning [npc2.her] head and harshly ordering [npc2.her] subordinates to subdue [npc.name], [npc2.speech(Get [npc.herHim] down, ya useless fucks, before [npc.she] tries to run!)]
+			[npc2.speech(Значит, этой [npc.insult] всё еще нужно показать [npc.her] место, а?!)] [npc2.name] рычит, после чего поворачивает [npc2.her] голову и резко приказывает [npc2.her] подчиненным скрутить [npc.name], [npc2.speech(Прижмите [npc.herHim] к земле, бесполезные ублюдки, пока [npc.she] не попыталась сбежать!)]
 		</p>
 	#ENDIF
 	<p>
-		The two smaller imps immediately dart forwards, and, flying up to each side of [npc.name], they grab [npc.her] [npc.arms], before folding their wings behind their backs and using their weight to pull [npc.herHim] down onto [npc.her] knees. As [npc.she] hits the floor, [npc.she] looks up to see the two alpha-imps stepping forwards, grinning in anticipation of what's about to happen.
+		Два беса поменьше тут же бросаются вперед и, подлетая к каждому боку [npc.name], хватают [npc.her] за [npc.arms], после чего прижимают крылья к спине и всем своим весом валят [npc.herHim] на [npc.her] колени. Когда [npc.she] падает на пол, [npc.she] поднимает взгляд и видит, как два альфа-беса шагают вперед, предвкушающе скалясь в ожидании грядущего.
 	</p>
 	#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 	#THEN
 		<p>
-			[npc2.speech(Gimme the potion,)] [npc2.name] snaps at [npc2.her] partner. Quickly producing a bottle of strange liquid, [npc3.name] hands it over to her superior, who immediately pulls the stopper out and steps forwards, before grabbing [npc.namePos] chin and squeezing [npc.her] cheeks. 
+			[npc2.speech(Давай зелье,)] [npc2.name] огрызается на [npc2.her] партнершу. Быстро достав бутылочку со странной жидкостью, [npc3.name] протягивает её своей предводительнице, которая тут же выдергивает пробку и делает шаг вперед, хватая [npc.namePos] за подбородок и сжимая [npc.her] щеки. 
 			#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 			#THEN
-				[npc2.speech(Open wide, [npc.insult]! This'll turn yer into a stacked futa, so we can watch yer cum all over the floor as we're poundin' yer cunt!)]
+				[npc2.speech(Раскрой рот, [npc.insult]! От этого ты станешь многослойной футой, и мы сможем смотреть, как ты кончаешь на весь пол, пока мы вколачиваемся в твою киску!)]
 			#ELSE
-				[npc2.speech(Open wide, [npc.insult]! This'll give yer a cunt an' cock, so we can watch yer cum all over the floor as we're fuckin' yer pussy!)]
+				[npc2.speech(Раскрой рот, [npc.insult]! От этого у тебя появятся и щелка, и член, так что мы сможем смотреть, как ты кончаешь на весь пол, пока мы трахаем твою киску!)]
 			#ENDIF
 		</p>
 		<p>
-			With no further warning, and not even giving [npc.name] time to do as [npc2.she] commands, [npc2.name] shoves the bottle past [npc.her] [npc.lips], and you watch as the liquid starts draining out into your companion's mouth...
+			Без лишних предупреждений, даже не дав [npc.name] времени сделать то, что велит [npc2.she], [npc2.name] запихивает бутылку в [npc.her] [npc.lips], и ты видишь, как жидкость начинает стекать в рот твоего спутника...
 		</p>
 	#ELSE
 		<p>
 			[npc2.speech(This stupid [npc.insult]'s got [npc.her] mouth blocked! Fucking [npc.insult]!)] [npc2.name] spits in disgust. Turning to [npc2.her] subordinate, [npc2.she] snaps, [npc2.speech(Save that potion for the next one we catch! Let's just fuck whatever holes we can with this [npc.insult].)]
 		</p>
 		<p>
-			With no further warning, [npc2.name] reaches forwards and grabs the back of [npc.namePos] head, before pushing [npc.herHim] down onto all fours. [npc2.speech(Get down, [npc.insult]! Time to be a good fuck-toy for us!)]
+			Без лишних предупреждений, [npc2.name] подается вперед, хватает [npc.namePos] за затылок и ставит [npc.herHim] на четвереньки. [npc2.speech(Вниз, [npc.insult]! Пора стать нашей послушной секс-игрушкой!)]
 		</p>
 	#ENDIF
 	]]>
@@ -138,26 +138,26 @@
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_COMPANION_ORDER_SPIT_COMPANION_SWALLOWS"><![CDATA[
 	<p>
-		Although happy enough to give [npc.her] body over to the imps, you don't want to see [npc.name] being transformed, so as [npc2.name] shoves the bottle into [npc.her] mouth, you call out, [pc.speech(Don't drink it, [npc.name]! Don't let them change you!)]
+		Хотя ты и не против отдать тело [npc.her] на растерзание бесам, тебе не хочется видеть, как [npc.name] превращается, поэтому, когда [npc2.name] запихивает бутылку в рот [npc.her], ты выкрикиваешь: [pc.speech(Не пей это, [npc.name]! Не дай им изменить тебя!)]
 	</p>
 	<p>
-		[npc2.speech(Shut your mouth, [pc.insult]!)] [npc2.Name] spits, before pinching [npc.namePos] nose and growling, [npc2.speech(Drink it, [npc.insult]!)]
+		[npc2.speech(Заткнись, [pc.insult]!)] [npc2.Name] сплевывает, после чего зажимает [npc.namePos] нос и рычит: [npc2.speech(Пей, [npc.insult]!)]
 	</p>
 	<p>
-		Much to your dismay, [npc.name] lets out a particularly lewd, muffled moan, before obediently gulping down all of the liquid that's poured out into [npc.her] mouth. Realising that [npc.her] fetish for being transformed has got the better of [npc.herHim], you let out a defeated sigh, and after [npc2.name] hurls the now-empty bottle to one side, you watch as [npc.namePos] body starts to transform...
+		К твоему глубочайшему разочарованию, [npc.name] издает особенно похотливый, приглушенный стон, прежде чем послушно проглотить всю жидкость, вылитую в [npc.her] рот. Осознав, что фетиш [npc.her] к превращениям взял верх над [npc.herHim], ты издаешь побежденный вздох, и после того, как [npc2.name] отшвыривает теперь уже пустую бутылку в сторону, ты наблюдаешь, как тело [npc.namePos] начинает трансформироваться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_COMPANION_ORDER_SPIT"><![CDATA[
 	<p>
-		Although happy enough to give [npc.her] body over to the imps, you don't want to see [npc.name] being transformed, so as [npc2.name] shoves the bottle into [npc.her] mouth, you call out, [pc.speech(Don't drink it, [npc.name]! Don't let them change you!)]
+		Хотя ты и не против отдать тело [npc.her] на растерзание бесам, тебе не хочется видеть, как [npc.name] превращается, поэтому, когда [npc2.name] запихивает бутылку в рот [npc.her], ты выкрикиваешь: [pc.speech(Не пей это, [npc.name]! Не дай им изменить тебя!)]
 	</p>
 	<p>
-		[npc2.speech(Shut your mouth, [pc.insult]!)] [npc2.Name] spits, before pinching [npc.namePos] nose and growling, [npc2.speech(Drink it, [npc.insult]!)]
+		[npc2.speech(Заткнись, [pc.insult]!)] [npc2.Name] сплевывает, после чего зажимает [npc.namePos] нос и рычит: [npc2.speech(Пей, [npc.insult]!)]
 	</p>
 	<p>
-		Much to your relief, [npc.name] shakes [npc.her] head free of [npc2.namePos] grip, before spitting the transformative liquid out all over the floor. [npc.Her] display of resistance is immediately met by a sharp slap to the face, accompanied by a loud screech as [npc2.name] hurls the now-empty bottle to one side. [npc2.speech(You fucking [npc.insult]! Fuck! Do you know how much trouble the boss goes through to get these potions for us?! Fucking stupid [npc.insult]!)]
+		К твоему облегчению, [npc.name] вырывает [npc.her] голову из хватки [npc2.namePos], после чего выплевывает трансформирующую жидкость прямо на пол. Сопротивление [npc.Her] тут же встречается резкой пощечиной, сопровождаемой громким визгом, когда [npc2.name] отшвыривает пустую бутылку в сторону. [npc2.speech(Ты, гребаная [npc.insult]! Твою мать! Ты хоть знаешь, каких трудов стоит боссу достать эти зелья для нас?! Чертова тупая [npc.insult]!)]
 	</p>
 	<p>
 		Knowing what the alternative was, [npc2.namePos] insults prove easy for [npc.name] to weather, and [npc.she] simply casts [npc.her] gaze to the floor as [npc.she] waits for [npc2.name] to calm down. As [npc.she] does this, however, you see [npc2.name] suddenly reach forwards, and, grabbing your companion by the back of the neck, [npc2.she] forces [npc.herHim] down onto all fours. [npc2.speech(Get down, [npc.insult]! If you can't do something so simple as drinking a potion, all you're good for is being a fuck-toy for us to use!)]
@@ -167,29 +167,29 @@
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_COMPANION_ORDER_SWALLOW"><![CDATA[
 	<p>
-		Now that you've given [npc.her] body over to the imps, you find yourself curious to see how [npc.name] will be transformed, so as [npc2.name] shoves the bottle into [npc.her] mouth, you call out, [pc.speech(Drink it all down, [npc.name]! Don't resist!)]
+		Теперь, когда ты отдала тело [npc.her] на растерзание бесам, тебе не терпится увидеть, во что превратится [npc.name]. Когда [npc2.name] запихивает бутылку прямо в рот [npc.her], ты выкрикиваешь: [pc.speech(Пей всё до капли, [npc.name]! Не сопротивляйся!)]
 	</p>
 	<p>
-		[npc2.speech(Listen to your [pc.insult] friend over there!)] [npc2.Name] spits, before pinching [npc.namePos] nose and growling, [npc2.speech(Go on, drink it, [npc.insult]!)]
+		[npc2.speech(Слушайся свою [pc.insult] подругу!)] — сплёвывает [npc2.Name], после чего зажимает [npc.namePos] нос и рычит: [npc2.speech(Давай же, пей, [npc.insult]!)]
 	</p>
 	<p>
-		Much to your delight, [npc.name] lets out a particularly lewd, muffled moan, before obediently gulping down all of the liquid that's poured out into [npc.her] mouth. Happy that [npc.she] did as you instructed, you let out a happy sigh, and after [npc2.name] hurls the now-empty bottle to one side, you watch as [npc.namePos] body starts to transform...
+		К твоему огромному удовольствию, [npc.name] издаёт особенно похотливый, приглушённый стон, прежде чем послушно проглотить всю жидкость, которую вливают в рот [npc.her]. Радуясь тому, что [npc.she] сделала всё, как ты велела, ты довольно вздыхаешь, а когда [npc2.name] отшвыривает пустую бутылку в сторону, ты заворожённо наблюдаешь, как тело [npc.namePos] начинает трансформироваться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_COMPANION_ORDER_SWALLOW_COMPANION_SPITS"><![CDATA[
 	<p>
-		Now that you've given [npc.her] body over to the imps, you find yourself curious to see how [npc.name] will be transformed, so as [npc2.name] shoves the bottle into [npc.her] mouth, you call out, [pc.speech(Drink it all down, [npc.name]! Don't resist!)]
+		Теперь, когда ты отдала тело [npc.her] на растерзание бесам, тебе не терпится увидеть, во что превратится [npc.name]. Когда [npc2.name] запихивает бутылку прямо в рот [npc.her], ты выкрикиваешь: [pc.speech(Пей всё до капли, [npc.name]! Не сопротивляйся!)]
 	</p>
 	<p>
-		[npc2.speech(Listen to your [pc.insult] friend over there!)] [npc2.Name] spits, before pinching [npc.namePos] nose and growling, [npc2.speech(Go on, drink it, [npc.insult]!)]
+		[npc2.speech(Слушайся свою [pc.insult] подругу!)] — сплёвывает [npc2.Name], после чего зажимает [npc.namePos] нос и рычит: [npc2.speech(Давай же, пей, [npc.insult]!)]
 	</p>
 	<p>
-		Much to your dismay, [npc.name] shakes [npc.her] head free of [npc2.namePos] grip, before spitting the transformative liquid out all over the floor. [npc.Her] display of resistance is immediately met by a sharp slap to the face, accompanied by a loud screech as [npc2.name] hurls the now-empty bottle to one side. [npc2.speech(You fucking [npc.insult]! Fuck! Do you know how much trouble the boss goes through to get these potions for us?! Fucking stupid [npc.insult]!)]
+		К твоему глубокому разочарованию, [npc.name] вырывает голову из хватки [npc2.namePos], отряхивая [npc.her], а затем выплевывает преобразующую жидкость прямо на пол. За этим проявлением сопротивления [npc.Her] немедленно следует резкий шлепок по лицу, сопровождаемый громким визгом, когда [npc2.name] отшвыривает теперь уже пустую бутылку в сторону. [npc2.speech(Чертова [npc.insult]! Блять! Ты хоть знаешь, каких трудов боссу стоит доставать нам эти зелья?! Тупая [npc.insult]!)]
 	</p>
 	<p>
-		Knowing what the alternative was, [npc2.namePos] insults prove easy for [npc.name] to weather, and [npc.she] simply casts [npc.her] gaze to the floor as [npc.she] waits for [npc2.name] to calm down. As [npc.she] does this, however, you see [npc2.name] suddenly reach forwards, and, grabbing your companion by the back of the neck, [npc2.she] forces [npc.herHim] down onto all fours. [npc2.speech(Get down, [npc.insult]! If you can't do something so simple as drinking a potion, all you're good for is being a fuck-toy for us to use!)]
+		Зная, что ждет в качестве альтернативы, [npc.name] легко переносит оскорбления [npc2.namePos], а [npc.she] просто утыкается взглядом [npc.her] в пол, пока [npc.she] ждет, когда [npc2.name] успокоится. Однако, пока [npc.she] это делает, ты видишь, как [npc2.name] внезапно подается вперед и, схватив твою спутницу за затылок, [npc2.she] заставляет [npc.herHim] встать на четвереньки. [npc2.speech(На колени, [npc.insult]! Если ты не способна на такое простое дело, как выпить зелье, то ты годишься только на то, чтобы быть нашей подстилкой для секса!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -198,47 +198,47 @@
 	#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 	#THEN
 		<p>
-			Finding [npc.herself] down on all fours, and at the mercy of the imps' carnal desires, [npc.name] seems willing enough to go along with whatever they have in store for [npc.herHim], and lets out an encouraging [npc.moan] as [npc.she] prepares to get fucked. Hearing the tell-tale sound of [npc.namePos] willingness to go along with all of this, [npc.name] sneers down at [npc.herHim], [npc2.speech(What a submissive whore you turned out to be! You're just a slut for imp cock, aren't you?)]
+			Увидев [npc.herself] на четвереньках, во власти плотских желаний бесов, [npc.name] кажется вполне готовой принять всё, что они уготовили для [npc.herHim], и издает ободряющий [npc.moan], пока [npc.she] готовится к траху. Услышав характерный звук готовности [npc.namePos] пойти на всё это, [npc.name] насмешливо смотрит на [npc.herHim], [npc2.speech(Какой же покорной шлюхой ты оказалась! Ты просто сучка, жаждущая бесовского члена, верно?)]
 		</p>
 		<p>
-			[npc.NamePos] rising arousal gets the better of [npc.herHim], and you can't help but raise your eyebrows as [npc.she] immediately calls out, [npc.speech(Yes! I'm a slut for imp cock!)]
+			Растущее [npc.NamePos] Возбуждение берет верх над [npc.herHim], и ты невольно приподнимаешь брови, когда [npc.she] тут же выкрикивает: [npc.speech(Да! Я просто шлюха, жаждущая бесовского члена!)]
 		</p>
 		<p>
-			As [npc.she] happily responds to [npc2.name], you see [npc4.name] move around and start to grope and squeeze [npc.namePos] ass. Letting out a greedy snarl, [npc4.name] calls out, [npc4.speech(I bet you've taken miles of dick already, haven't you, whore?! How many other imps has your friend let pound this sweet ass before us?! I bet you've lost count!)]
+			Пока [npc.she] счастливо откликается на [npc2.name], ты видишь, как [npc4.name] начинает ерзать, ощупывая и сжимая [npc.namePos] задницу. Издав жадное рычание, [npc4.name] выкрикивает: [npc4.speech(Бьюсь об заклад, ты уже впитала мили члена, а, шлюха?! Сколько еще бесов успела оттрахать эту сладкую попку до нас?! Спорим, ты уже сбилась со счета!)]
 		</p>
 		<p>
-			[npc3.speech(I want to hear this slut beg for imp cock!)] [npc3.Name] jeers, stepping up beside [npc.name] to smirk down at [npc.her] submissive form. [npc3.speech(Go on, do it! Beg for my cock!)]
+			[npc3.speech(Хочу услышать, как эта шлюха будет умолять о бесовском члене!)] — насмехается [npc3.Name], подходя к [npc.name] и с ухмылкой глядя сверху вниз на покорную фигуру [npc.her]. [npc3.speech(Давай, вперед! Умоляй о моем члене!)]
 		</p>
 		<p>
-			[npc.speech(Please, I want your cock! No, I <i>need</i> your cock! Fuck me! Please, fuck me already!)] [npc.Name] [npc.moansVerb], biting [npc.her] [npc.lip] as [npc.she] looks up at [npc3.name].
+			[npc.speech(Пожалуйста, я хочу твой член! Нет, мне <i>необходим</i> твой член! Трахни меня! Пожалуйста, трахни меня уже!)] — вопит [npc.Name], [npc.moansVerb], прикусывая [npc.her] [npc.lip], пока [npc.she] смотрит на [npc3.name].
 		</p>
 		<p>
-			[npc3.speech(What a slut!)] [npc3.Name] laughs, satisfied with [npc.namePos] enthusiastic answer. [npc3.speech(Don't worry, whore, you'll be getting that imp cock you crave so badly soon enough!)]
+			[npc3.speech(Ну и шлюха!)] — смеется [npc3.Name], довольный восторженным ответом [npc.namePos]. [npc3.speech(Не волнуйся, шлюха, ты скоро получишь тот бесовский член, которого так жаждешь!)]
 		</p>
 		<p>
-			[npc5.speech(I love it when they're as eager as this one!)] [npc5.Name] laughs as [npc5.she] steps around to one side of [npc.name], and your companion can't help but let out [npc.a_moan+] as the imps start moving into position, ready to give [npc.herHim] the cock that [npc.sheIs] so obviously craving...
+			[npc5.speech(Обожаю, когда они такие нетерпеливые!)] — хохочет [npc5.Name], пока [npc5.she] обходит [npc.name] сбоку, а твоя спутница не может сдержать [npc.a_moan+], когда бесы начинают занимать позиции, готовые дать [npc.herHim] тот член, которого [npc.sheIs] так явно жаждет...
 		</p>
 	#ELSE
 		<p>
-			Finding [npc.herself] down on all fours, and at the mercy of the imps' carnal desires, [npc.name] starts to panic, and tries to stand up as [npc.she] cries out, [npc.speech(Stop this! I don't want to do this!)]
+			Видя, что [npc.herself] стоит на четвереньках, полностью во власти плотских желаний бесов, [npc.name] начинает паниковать и пытается встать, в то время как [npc.she] вскрикивает: [npc.speech(Прекратите! Я не хочу этого!)]
 		</p>
 		<p>
-			Before [npc.sheIs] even able to push [npc.herself] up onto [npc.her] knees, however, [npc2.name] steps forwards and grabs the back of [npc.namePos] head, before roughly shoving [npc.herHim] back down into [npc.her] submissive position. [npc2.speech(Stupid slut! This is what you get for coming into our territory! Don't worry, we'll get you moaning for imp cock before we're done with you!)]
+			Однако, прежде чем [npc.sheIs] успевает поставить [npc.herself] на [npc.her] колени, [npc2.name] делает шаг вперед и хватает [npc.namePos] за затылок, после чего грубо вжимает [npc.herHim] обратно в покорную позу [npc.her]. [npc2.speech(Тупая шлюха! Это тебе за то, что забрела на нашу территорию! Не волнуйся, к тому времени, как мы закончим, ты будешь стонать от бесовского члена!)]
 		</p>
 		<p>
-			As [npc.name] starts to cry out and protest, you see [npc4.name] step around behind your companion, before starting to grope and squeeze [npc.her] ass. Before [npc.name] able to turn and tell [npc4.herHim] to stop, [npc4.name] calls out, [npc4.speech(I bet you've taken miles of dick already, haven't you, whore?! How many other imps has your friend let pound this sweet ass?! I bet you've lost count!)]
+			Пока [npc.name] кричит и протестует, ты видишь, как [npc4.name] обходит твою спутницу со спины и начинает бесцеремонно тискать и сжимать [npc.her] задницу. Прежде чем [npc.name] успевает обернуться и велеть [npc4.herHim] остановиться, [npc4.name] выкрикивает: [npc4.speech(Бьюсь об заклад, ты уже впитала мили члена, а, шлюха?! Сколько еще бесов твоя подружка позволяла трахать эту сладкую задницу?! Спорим, ты уже сбилась со счета?!)]
 		</p>
 		<p>
-			[npc3.speech(This dumb slut needs to be shown [npc.her] place!)] [npc3.Name] jeers, stepping up beside [npc2.name] to smirk down at [npc.name]. [npc3.speech(You'll love being an imp's cock-sleeve! We'll make sure of that!)]
+			[npc3.speech(Этой тупой шлюхе пора показать её место, [npc.her]!)] — насмехается [npc3.Name], подходя к [npc2.name] и самодовольно глядя на [npc.name] сверху вниз. [npc3.speech(Тебе понравится быть бесовской вагиной для члена! Мы об этом позаботимся!)]
 		</p>
 		<p>
-			[npc.speech(No! You can't do this!)] [npc.Name] cries out as [npc.she] struggles against the imps.
+			[npc.speech(Нет! Вы не можете этого сделать!)] — вскрикивает [npc.Name], пока [npc.she] отбивается от бесов.
 		</p>
 		<p>
-			[npc3.speech(You'll be begging for my cock soon enough, slut!)] [npc3.Name] snaps, clearly not having the patience for any more of [npc.her] protests.
+			[npc3.speech(Скоро ты сама будешь умолять о моем члене, шлюха!)] — огрызается [npc3.Name], явно теряя терпение от бесконечных протестов [npc.her].
 		</p>
 		<p>
-			[npc5.speech(It's fun getting to break in unwilling cunts like you!)] [npc5.Name] laughs as [npc5.she] steps around to one side of [npc.name], and your companion can't help but let out a frantic wail as the imps start moving into position, ready to start fucking [npc.herHim]...
+			[npc5.speech(Так весело ломать таких строптивых сучек, как вы!)] [npc5.Name] хохочет, пока [npc5.she] обходит [npc.name] сбоку, а твой спутник не может сдержать отчаянного воя, когда бесы начинают занимать позиции, готовые трахать [npc.herHim]...
 		</p>
 	#ENDIF
 	]]>
@@ -246,83 +246,83 @@
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME"><![CDATA[
 	<p>
-		Realising that these imps aren't going to be satisfied until they've sated their lust, you turn to your companion, [npc.name], and say, [pc.speech(I don't think fighting them is the best thing to do here... We should just let them have sex with us, it'll be easier this way.)]
+		Понимая, что эти бесы не успокоятся, пока не утолят свою Похоть, ты поворачиваешься к своему спутнику, [npc.name], и говоришь: [pc.speech(Не думаю, что сражаться с ними сейчас — лучшая идея... Нам стоит просто дать им перетрахать нас, так будет проще.)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
-		#THEN[npc.speech(Good idea, [pc.name],)] [npc.name] replies. [npc.speech(That'll be easier than having to fight them...)]
+		#THEN[npc.speech(Хорошая мысль, [pc.name],)] отвечает [npc.name]. [npc.speech(Так будет куда легче, чем вступать с ними в бой...)]
 		#ELSE[npc.speech([pc.Name]! W-What the hell?!)] [npc.name] replies in alarm. [npc.speech(I-I really don't want to do that!)]
 		#ENDIF
 	</p>
 	<p>
-		Having overheard your conversation, [npc2.name] steps forwards, before sneering, [npc2.speech(Hah! You cock-sleeves gonna submit for a good fuck without fightin', huh?)]
+		Подслушав ваш разговор, [npc2.name] делает шаг вперед и с усмешкой выдает: [npc2.speech(Ха! Значит, вы, куколды, решили просто сдаться, чтобы вас хорошенько оттрахали, а?)]
 	</p>
 	<p>
-		[pc.speech(That's right. There's no need for violence...)] You say, smiling at the imps as they hungrily look you and [npc.name] up and down.
+		[pc.speech(Именно. Нет нужды в насилии...)] — говоришь ты, улыбаясь бесам, которые с голодным блеском в глазах осматривают тебя и [npc.name] с ног до головы.
 	</p>
 	<p>
-		[npc2.speech(So what are you waitin' for?)] [npc2.Name] snaps at [npc2.her] subordinates. [npc2.speech(Get these [pc.insultPlural] down on their knees!)]
+		[npc2.speech(Ну, чего вы ждете?!)] — рявкает [npc2.Name] подчиненным [npc2.her]. [npc2.speech(Ставьте этих [pc.insultPlural] на колени!)]
 	</p>
 	<p>
-		The two smaller imps immediately dart forwards, before flying up beside you and [npc.name]. Reaching out to grab hold of your [pc.arm], [npc4.name] then folds [npc4.her] wings behind [npc4.her] back and uses [npc4.her] weight to pull you down onto your knees. Looking to your side, you see [npc5.name] doing the same to [npc.name]. As the two of you hit the floor, you look up to see the two alpha-imps stepping forwards, grinning in anticipation of what's about to happen.
+		Двое мелких бесов тут же бросаются вперед, а затем взмывают вверх, оказываясь рядом с тобой и [npc.name]. Потянувшись, чтобы схватить тебя за [pc.arm], [npc4.name] прижимает [npc4.her] крылья к [npc4.her] спине и, используя [npc4.her] вес, заставляет тебя упасть на колени. Посмотрев в сторону, ты видишь, как [npc5.name] делает то же самое с [npc.name]. Когда вы оба приземляетесь на пол, ты поднимаешь взгляд и видишь, как два альфа-беса шагают вперед, предвкушающе скалясь в ожидании того, что должно произойти.
 	</p>
 	#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 	#THEN
 		#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 		#THEN
 			<p>
-				[npc2.speech(Get them potions out!)] [npc2.Name] snaps at [npc2.her] partner. Quickly producing two bottles of strange liquid, [npc3.name] hands one over to her superior, who immediately pulls the stopper out and steps forwards, before grabbing your chin and squeezing your cheeks. As [npc2.she] does this, [npc3.name] does the same to [npc.name], and as the potions draw ever closer to your open mouths, [npc.name] snickers,
+				[npc2.speech(Тащите зелья!)] [npc2.Name] рявкает на напарницу [npc2.her]. Быстро достав две бутылочки со странной жидкостью, [npc3.name] протягивает одну своей предводительнице, которая тут же выдергивает пробку и делает шаг вперед, хватая тебя за подбородок и сжимая щеки. Пока [npc2.she] делает это с тобой, [npc3.name] делает то же самое с [npc.name], и когда зелья подносятся к вашим открытым ртам, [npc.name] хихикает,
 				#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 				#THEN
-					[npc2.speech(Open wide, [pc.insultPlural]! This'll turn yer both into stacked futas, so we can watch yer both cum all over the floor as we're poundin' yer cunts!)]
+					[npc2.speech(Рты шире, [pc.insultPlural]! Это превратит вас обоих в стопку фута, чтобы мы могли смотреть, как вы оба кончаете на пол, пока мы будем трахать ваши киски!)]
 				#ELSE
-					[npc2.speech(Open wide, [pc.insultPlural]! This'll give yer both cunts an' cocks, so we can watch the two of ya cum all over the floor as we're fuckin' yer pussies!)]
+					[npc2.speech(Рты шире, [pc.insultPlural]! Это даст вам обоим и киски, и члены, чтобы мы могли смотреть, как вы оба кончаете на пол, пока мы будем трахать ваши щелочки!)]
 				#ENDIF
 			</p>
 			<p>
-				With no further warning, and not even giving you time to do as [npc2.she] commands, [npc2.name] and [npc3.name] start force-feeding the potions to you and your companion, and your eyes open wide as you feel the warm, sickly-sweet liquid entering your mouth...
+				Без лишних предупреждений и даже не дав тебе времени выполнить приказ [npc2.she], [npc2.name] и [npc3.name] начинают насильно вливать зелье тебе и твоей спутнице; твои глаза широко распахиваются, когда ты чувствуешь, как теплая, приторно-сладкая жидкость входит в твой рот...
 			</p>
 		#ELSE
 			<p>
-				[npc3.speech(This stupid [npc.insult]'s got [npc.her] mouth blocked! Fucking [npc.insult]!)] [npc3.name] spits in disgust. Turning towards you and [npc2.name], [npc3.she] mutters, [npc3.speech(At least you're gonna get to transform that [pc.insult].)]
+				[npc3.speech(Эта тупая [npc.insult] зажала [npc.her] рот! Блядская [npc.insult]!)] [npc3.name] брезгливо плюет. Повернувшись к тебе и [npc2.name], [npc3.she] бормочет: [npc3.speech(По крайней мере, ты сможешь превратить эту [pc.insult] в нечто особенное.)]
 			</p>
 			<p>
-				[npc2.speech(Yeah, just save yer potion for the next cunt we find,)] [npc2.name] snaps.
+				[npc2.speech(Ага, просто прибереги свое зелье для следующей сучки, которую мы найдем,)] огрызается [npc2.name].
 				#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 				#THEN
-					[npc2.speech(Now open wide, [pc.insultPlural]! This'll turn yer into stacked futas, so we can watch ya cum all over the floor as we're poundin' yer cunt!)]
+					[npc2.speech(А теперь открывай рот шире, [pc.insultPlural]! Это превратит тебя в сочную футу, чтобы мы могли смотреть, как ты кончаешь на весь пол, пока мы трахаем твою киску!)]
 				#ELSE
-					[npc2.speech(Now open wide, [pc.insultPlural]! This'll give yer a cunt an' cock, so we can watch ya cum all over the floor as we're fuckin' yer pussy!)]
+					[npc2.speech(А теперь открывай рот шире, [pc.insultPlural]! Это даст твоей киске еще и член, чтобы мы могли смотреть, как ты кончаешь на весь пол, пока мы трахаем твою пизду!)]
 				#ENDIF
 			</p>
 			<p>
-				With no further warning, and not even giving you time to do as [npc2.she] commands, [npc2.name] shoves the bottle past your [pc.lips], and you feel the warm, sickly-sweet liquid entering your mouth...
+				Без лишних предупреждений, даже не дав тебе опомниться и сделать то, что велит [npc2.she], [npc2.name] запихивает бутылку тебе в [pc.lips], и ты чувствуешь, как теплая, приторно-сладкая жидкость вливается тебе в рот...
 			</p>
 		#ENDIF
 	#ELSE
 		#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 		#THEN
 			<p>
-				[npc2.speech(This stupid [pc.insult]'s got [pc.her] mouth blocked!)] [npc2.name] snarls at you, before turning towards [npc2.her] partner. [npc2.speech(Just use one o' our potions on that [npc.insult] you've got before you.)]
+				[npc2.speech(Эта тупая [pc.insult] зажала [pc.her] рот!)] [npc2.name] рычит на тебя, прежде чем повернуться к партнеру [npc2.her]. [npc2.speech(Просто используй одно из наших зелий на этой [npc.insult], что перед тобой.)]
 			</p>
 			<p>
-				Quickly producing a bottle of strange liquid, [npc3.name] does as [npc3.her] superior commands, and, pulling the stopper out, [npc3.she] steps forwards, before grabbing [npc.namePos] chin and squeezing [npc.her] cheeks. 
+				Быстро достав бутылку со странной жидкостью, [npc3.name] исполняет приказ своего командира [npc3.her]; вытащив пробку, [npc3.she] делает шаг вперед, хватает [npc.namePos] за подбородок и сжимает [npc.her] щеки.
 				#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 				#THEN
-					[npc3.speech(Open wide, [npc.insult]! This'll turn you into a stacked futa, so we can watch you cum all over the floor as we're pounding your cunt!)]
+					[npc3.speech(Открывай рот шире, [npc.insult]! Это превратит тебя в сочную футу, чтобы мы могли смотреть, как ты кончаешь на весь пол, пока мы трахаем твою киску!)]
 				#ELSE
-					[npc3.speech(Open wide, [npc.insult]! This'll give you a cunt and cock, so we can watch you cum all over the floor as we're fucking your pussy!)]
+					[npc3.speech(Раскрой рот, [npc.insult]! Сейчас у тебя появятся и киска, и член, и мы с удовольствием посмотрим, как ты кончаешь прямо на пол, пока мы трахаем твою пизду!)]
 				#ENDIF
 			</p>
 			<p>
-				With no further warning, and not even giving [npc.herHim] time to do as [npc3.she] commands, [npc3.name] shoves the bottle past [npc.namePos] [npc.lips], and you see [npc.her] [npc.eyes] open wide as transformative liquid enters [npc.her] mouth...
+				Без лишних предупреждений, даже не дав [npc.herHim] времени выполнить приказ [npc3.she], [npc3.name] запихивает бутылку в [npc.lips] [npc.namePos], и ты видишь, как [npc.her] [npc.eyes] широко раскрывает рот, когда преображающая жидкость вливается в [npc.her] рот...
 			</p>
 		#ELSE
 			<p>
-				[npc2.speech(These stupid [pc.insultPlural] 'ave got their mouths blocked! Fucking [pc.insultPlural]!)] [npc2.name] spits in disgust. Turning to [npc2.her] subordinate, [npc2.she] snaps, [npc2.speech(Save those potions for the next ones we catch! Let's just fuck whatever holes we can with these [pc.insultPlural].)]
+				[npc2.speech(Этим тупым [pc.insultPlural] забили рты! Черт бы побрал [pc.insultPlural]!)] [npc2.name] брезгливо сплевывает. Поворачиваясь к подчиненному [npc2.her], [npc2.she] рявкает: [npc2.speech(Приберегите эти зелья для следующих, кого поймаем! Давайте просто трахать все дырки, что сможем, этими [pc.insultPlural].)]
 			</p>
 			<p>
-				With no further warning, [npc2.name] reaches forwards and grabs the back of your head, before pushing you down onto all fours. [npc2.speech(Get down, [pc.insult]! Time to be a good fuck-toy for us!)]
+				Без лишних предупреждений, [npc2.name] подается вперед, хватает тебя за затылок и ставит на четвереньки. [npc2.speech(Вниз, [pc.insult]! Пора быть хорошей секс-игрушкой для нас!)]
 			</p>
 		#ENDIF
 	#ENDIF
@@ -331,95 +331,95 @@
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_COMPANION_SWALLOWS"><![CDATA[
 	<p>
-		With a loud gulp, [npc.name] swallows down all of the liquid that's in [npc.her] mouth. As [npc3.name] hurls the now-empty bottle to one side, your companion opens [npc.her] mouth to show that [npc.sheHas] swallowed every last drop.
+		С громким глотком [npc.name] проглатывает всю жидкость, что была во рту у [npc.her]. Пока [npc3.name] отшвыривает пустую бутылку в сторону, твой спутник открывает [npc.her] рот, показывая, что [npc.sheHas] выпил всё до последней капли.
 	</p>
 	<p>
-		[npc3.speech(What an obedient [npc.insult]!)] [npc3.Name] sneers. [npc3.speech(You like being an imp's plaything, don't you, [npc.insult]?)]
+		[npc3.speech(Какая послушная [npc.insult]!)] — усмехается [npc3.Name]. [npc3.speech(Тебе ведь нравится быть игрушкой для беса, а, [npc.insult]?)]
 	</p>
 	<p>
-		[npc.speech(Mmm... Yes...)] [npc.Name] responds, before suddenly letting out a gasp as [npc.she] feels [npc.her] body start to transform...
+		[npc.speech(Ммм... Да...)] — отвечает [npc.Name], прежде чем внезапно ахнуть, когда [npc.she] чувствует, как тело [npc.her] начинает трансформироваться...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_COMPANION_SPITS"><![CDATA[
 	<p>
-		With a firm shake of [npc.her] head, [npc.name] pulls [npc.her] mouth away from [npc3.namePos] bottle, before spitting the liquid that was in [npc.her] mouth all over the floor. [npc3.Name] lets out an angry screech in response to this act of resistance, before slapping your companion across the face. [npc3.speech(You stupid [npc.insult]! We don't get many of these potions, and you just wasted it!)]
+		Резким движением [npc.her] качает головой, и [npc.name] отрывает [npc.her] рот от [npc3.namePos] бутылки, после чего выплевывает жидкость изо рта [npc.her] прямо на пол. В ответ на такое сопротивление [npc3.Name] издает яростный визг и отвешивает твоей спутнице звонкую пощечину. [npc3.speech(Тупая [npc.insult]! Такие зелья редко достаются, а ты только что всё профукала!)]
 	</p>
 	<p>
-		Before [npc.name] can offer a response, [npc3.name] grabs [npc.herHim] by the back of the neck, before roughly forcing [npc.herHim] down onto all fours. [npc3.speech(Get down, [npc.insult]! You're gonna get a real rough fucking for that!)]
+		Прежде чем [npc.name] успевает что-то ответить, [npc3.name] хватает [npc.herHim] за загривок и грубо ставит [npc.herHim] на четвереньки. [npc3.speech(На колени, [npc.insult]! За это тебя сейчас так оттрахают, что мало не покажется!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_BOTH_SPIT"><![CDATA[
 	<p>
-		Neither you nor [npc.name] have any intention of swallowing the imps' transformative potion, and, almost simultaneously, you each jerk your heads back, before spitting the liquid out all over the floor. Your displays of resistance are immediately met by sharp slaps to the face, accompanied by furious screeching as [npc2.name] and [npc3.name] hurl their now-empty bottles to one side. [npc2.speech(You fucking [pc.insultPlural]! Fuck! Do you know how much trouble the boss goes through to get these potions for us?! Fucking stupid [pc.insultPlural]!)]
+		Ни ты, ни [npc.name] не собираетесь глотать это трансформирующее зелье бесов, и вы почти одновременно откидываете головы назад, выплевывая жидкость на пол. Ваше сопротивление тут же встречается резкими пощечинами и яростным визгом: [npc2.name] и [npc3.name] в гневе отшвыривают свои пустые бутылки в сторону. [npc2.speech(Чертова [pc.insultPlural]! Блять! Ты хоть знаешь, каких трудов стоит боссу добыча этих зелий для нас?! Тупая [pc.insultPlural]!)]
 	</p>
 	<p>
-		Knowing what the alternative was, [npc2.namePos] insults are easy for the two of you to weather, and you both cast your gazes to the floor as you wait for [npc2.herHim] to calm down. As you do this, however, the two alpha-imps suddenly reach forwards, and, grabbing you each by the back of the neck, they force the two of you down onto all fours. [npc2.speech(Get down, you [pc.insultPlural]! If you can't do something so simple as drinking a potion, all you're good for is being fuck-toys for us to use!)]
+		Зная, какая альтернатива вас ждет, вы с [npc2.namePos] легко терпите оскорбления; вы оба опускаете взгляды в пол, ожидая, пока [npc2.herHim] успокоится. Однако в этот момент оба альфа-беса внезапно подаются вперед и, схватив вас каждого за загривок, силой ставят вас обоих на четвереньки. [npc2.speech(А ну, на колени, [pc.insultPlural]! Если ты не способна на такую простую вещь, как выпить зелье, то всё, на что ты годна — это быть нашими шлюшками для развлечения!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_REFUSES_ORDER_TO_SPIT"><![CDATA[
 	<p>
-		Not wanting your companion to be transformed by these evil imps, you call out, [pc.speech(Don't drink it, [npc.name]!)]
+		Не желая, чтобы твою спутницу превратили эти злые бесы, ты выкрикиваешь: [pc.speech(Не пей его, [npc.name]!)]
 	</p>
 	<p>
-		Much to your dismay, your words seem to fall on deaf ears, and as you glance across at [npc.name], you see [npc.herHim] submissively looking up into [npc3.namePos] [npc3.eyes] as [npc.she] prepares to drink the transformative potion.
+		К твоему разочарованию, твои слова, кажется, пролетают мимо ушей; когда ты бросаешь взгляд на [npc.name], то видишь, как [npc.herHim] покорно смотрит снизу вверх на [npc3.namePos] [npc3.eyes], пока [npc.she] готовится выпить зелье трансформации.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_BOTH_SPIT_WITH_ORDER"><![CDATA[
 	<p>
-		Wanting neither you nor your companion to be transformed, you jerk your head back, spitting the liquid that was in your mouth all over the floor before shouting, [pc.speech(Don't drink it, [npc.name]!)]
+		Не желая, чтобы и ты, и твоя спутница подверглись превращению, ты резко откидываешь голову назад, выплевывая жидкость изо рта прямо на пол, и кричишь: [pc.speech(Не пей его, [npc.name]!)]
 	</p>
 	<p>
-		Much to your relief, [npc.name] seems willing to do as you say, and as you glance across at [npc.herHim], you see [npc.herHim] turn [npc.her] head to one side, before spitting [npc3.namePos] potion onto the floor.
+		К твоему облегчению, [npc.name], кажется, готова последовать твоему совету; когда ты смотришь на [npc.herHim], то видишь, как [npc.herHim] поворачивает [npc.her] голову набок, а затем выплевывает [npc3.namePos] зелье на пол.
 	</p>
 	<p>
-		Your displays of resistance are immediately met by sharp slaps to the face, accompanied by furious screeching as [npc2.name] and [npc3.name] hurl their now-empty bottles to one side. [npc2.speech(You fucking [pc.insultPlural]! Fuck! Do you know how much trouble the boss goes through to get these potions for us?! Fucking stupid [pc.insultPlural]!)]
+		Твоё сопротивление тут же натыкается на резкие пощёчины, сопровождаемые яростным визгом: [npc2.name] и [npc3.name] отшвыривают свои теперь уже пустые бутылки в сторону. [npc2.speech(Ты, гребаная [pc.insultPlural]! Твою мать! Ты хоть знаешь, каких трудов стоит боссу достать эти зелья для нас?! Тупая [pc.insultPlural]!)]
 	</p>
 	<p>
-		Knowing what the alternative was, [npc2.namePos] insults are easy for the two of you to weather, and you both cast your gazes to the floor as you wait for [npc2.herHim] to calm down. As you do this, however, the two alpha-imps suddenly reach forwards, and, grabbing you each by the back of the neck, they force the two of you down onto all fours. [npc.speech(Get down, you [pc.insultPlural]! If you can't do something so simple as drinking a potion, all you're good for is being fuck-toys for us to use!)]
+		Зная, что ждёт вас в качестве альтернативы, вы с напарницей легко выносите оскорбления [npc2.namePos], и вы обе опускаете взгляды в пол, ожидая, пока [npc2.herHim] успокоится. Однако в этот момент обе альфа-беса внезапно подаются вперёд и, схватив вас за затылки, силой ставят вас обеих на четвереньки. [npc.speech(Вниз, [pc.insultPlural]! Если ты не способна на такое простое дело, как выпить зелье, то всё, на что ты годна — это быть нашими секс-игрушками!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_OBEYS_ORDER_TO_SWALLOW"><![CDATA[
 	<p>
-		Wanting your companion to be transformed, you call out, [pc.speech(Drink it, [npc.name]!)]
+		Желая, чтобы твоя спутница превратилась, ты выкрикиваешь: [pc.speech(Пей, [npc.name]!)]
 	</p>
 	<p>
-		Much to your delight, [npc.name] does as you command, and as you glance across at [npc.herHim], you see [npc.herHim] submissively looking up into [npc3.namePos] [npc3.eyes] as [npc.she] prepares to drink the transformative potion.
+		К твоему огромному удовольствию, [npc.name] подчиняется твоему приказу, и, взглянув на [npc.herHim], ты видишь, как [npc.herHim] покорно смотрит снизу вверх в [npc3.namePos] [npc3.eyes], пока [npc.she] готовится выпить преображающее зелье.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_REFUSES_ORDER_TO_SWALLOW"><![CDATA[
 	<p>
-		Wanting your companion to be transformed, you call out, [pc.speech(Drink it, [npc.name]!)]
+		Желая, чтобы твоя спутница превратилась, ты выкрикиваешь: [pc.speech(Пей, [npc.name]!)]
 	</p>
 	<p>
-		Ignoring your command, [npc.name] firmly shakes [npc.her] head, before pulling away from [npc3.namePos] bottle and spitting the liquid all over the floor. [npc3.Name] lets out an angry screech in response to this act of resistance, before slapping your companion across the face. [npc3.speech(You stupid [npc.insult]! We don't get many of these potions, and you just wasted it!)]
+		Игнорируя твою команду, [npc.name] решительно качает [npc.her] головой, после чего отстраняется от [npc3.namePos] бутылки и выплевывает жидкость прямо на пол. В ответ на это неповиновение [npc3.Name] издает яростный визг и отвешивает твоей спутнице пощечину. [npc3.speech(Тупая [npc.insult]! Такие зелья достаются нам редко, а ты только что всё профукала!)]
 	</p>
 	<p>
-		Before [npc.name] can offer a response, [npc3.name] grabs [npc.herHim] by the back of the neck, before roughly forcing [npc.herHim] down onto all fours. [npc3.speech(Get down, [npc.insult]! You're gonna get a real rough fucking for that!)]
+		Прежде чем [npc.name] успевает что-то ответить, [npc3.name] хватает [npc.herHim] за загривок и грубо ставит [npc.herHim] на четвереньки. [npc3.speech(На колени, [npc.insult]! За это тебя сейчас так оттрахают, что мало не покажется!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="IMP_ATTACK_OFFER_THREESOME_SPIT_WITH_ORDER"><![CDATA[
 	<p>
-		Not wanting your companion to be transformed by these evil imps, you call out, [pc.speech(Don't drink it, [npc.name]!)]
+		Не желая, чтобы твою спутницу превратили эти злые бесы, ты выкрикиваешь: [pc.speech(Не пей его, [npc.name]!)]
 	</p>
 	<p>
-		Obeying your command, [npc.name] firmly shakes [npc.her] head, before pulling away from [npc3.namePos] bottle and spitting the liquid all over the floor. [npc3.Name] lets out an angry screech in response to this act of resistance, before slapping your companion across the face. [npc3.speech(You stupid [npc.insult]! We don't get many of these potions, and you just wasted it!)]
+		Повинуясь твоей команде, [npc.name] решительно качает [npc.her] головой, после чего отстраняется от [npc3.namePos] бутылки и выплевывает жидкость прямо на пол. В ответ на это неповиновение [npc3.Name] издает яростный визг и отвешивает твоей спутнице пощечину. [npc3.speech(Тупая [npc.insult]! Такие зелья достаются нам редко, а ты только что всё профукала!)]
 	</p>
 	<p>
-		Before [npc.name] can offer a response, [npc3.name] grabs [npc.herHim] by the back of the neck, before roughly forcing [npc.herHim] down onto all fours. [npc3.speech(Get down, [npc.insult]! You're gonna get a real rough fucking for that!)]
+		Прежде чем [npc.name] успевает что-то ответить, [npc3.name] хватает [npc.herHim] за загривок и грубо ставит [npc.herHim] на четвереньки. [npc3.speech(На колени, [npc.insult]! За это тебя сейчас так оттрахают, что мало не покажется!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -427,71 +427,71 @@
 	
 	<htmlContent tag="COMBAT_DEFEAT_TF"><![CDATA[
 	<p>
-		Unable to withstand another attack, both you and [npc.name] collapse to your knees. Desperately trying to catch your breath, you plead, [pc.speech(No more... Please...)]
+		Не в силах выдержать очередную атаку, и ты, и [npc.name] падаете на колени. Отчаянно пытаясь перевести дух, ты умоляешь: [pc.speech(Еще нет... Пожалуйста...)]
 	</p>
 	<p>
-		Not giving you a moment's respite, [npc2.name] snaps [npc2.her] fingers, before pointing at the two of you and ordering [npc.her] subordinates, [npc.speech(Restrain the [pc.insultPlural]! Go on, get them!)]
+		Не давая тебе ни секунды передышки, [npc2.name] щелкает [npc2.her] пальцами, после чего указывает на вас двоих и приказывает подчиненным [npc.her]: [npc.speech(Скрутите этих [pc.insultPlural]! Живо, вперед!)]
 	</p>
 	<p>
-		The two smaller imps immediately dart forwards, before flying up beside you and [npc.name]. Reaching out to grab hold of your [pc.arm], [npc4.name] then folds [npc4.her] wings behind [npc4.her] back and uses [npc4.her] weight to pull you down onto all fours. Looking to your side, you see [npc5.name] doing the same to [npc.name]. As the two of you hit the floor, you look up to see the two alpha-imps stepping forwards, grinning in anticipation of what's about to happen.
+		Двое мелких бесов тут же бросаются вперед, а затем взмывают вверх, оказываясь рядом с тобой и [npc.name]. Потянувшись, чтобы схватить тебя за [pc.arm], [npc4.name] прижимает [npc4.her] крылья к [npc4.her] спине и, используя [npc4.her] вес, заставляет тебя опуститься на четвереньки. Посмотрев в сторону, ты видишь, как [npc5.name] делает то же самое с [npc.name]. Как только вы оба приземляетесь на пол, ты поднимаешь взгляд и видишь, как два альфа-беса делают шаг вперед, предвкушающе скалясь в ожидании того, что сейчас начнется.
 	</p>
 	#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 	#THEN
 		#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 		#THEN
 			<p>
-				[npc2.speech(Get them potions out!)] [npc2.Name] snaps at [npc2.her] partner. Quickly producing two bottles of strange liquid, [npc3.name] hands one over to her superior, who immediately pulls the stopper out and steps forwards, before grabbing your chin and squeezing your cheeks. As [npc2.she] does this, [npc3.name] does the same to [npc.name], and as the potions draw ever closer to your open mouths, [npc.name] snickers,
+				[npc2.speech(Тащите зелья!)] [npc2.Name] рявкает на напарницу [npc2.her]. Быстро достав две бутылочки со странной жидкостью, [npc3.name] протягивает одну своей предводительнице, которая тут же выдергивает пробку и делает шаг вперед, хватая тебя за подбородок и сжимая щеки. Пока [npc2.she] делает это с тобой, [npc3.name] делает то же самое с [npc.name], и когда зелья подносятся к вашим открытым ртам, [npc.name] хихикает,
 				#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 				#THEN
-					[npc2.speech(Open wide, [pc.insultPlural]! This'll turn yer both into stacked futas, so we can watch yer both cum all over the floor as we're poundin' yer cunts!)]
+					[npc2.speech(Рты шире, [pc.insultPlural]! Это превратит вас обоих в стопку фута, чтобы мы могли смотреть, как вы оба кончаете на пол, пока мы будем трахать ваши киски!)]
 				#ELSE
-					[npc2.speech(Open wide, [pc.insultPlural]! This'll give yer both cunts an' cocks, so we can watch the two of ya cum all over the floor as we're fuckin' yer pussies!)]
+					[npc2.speech(Рты шире, [pc.insultPlural]! Это даст вам обоим и киски, и члены, чтобы мы могли смотреть, как вы оба кончаете на пол, пока мы будем трахать ваши щелочки!)]
 				#ENDIF
 			</p>
 			<p>
-				With no further warning, and not even giving you time to do as [npc2.she] commands, [npc2.name] and [npc3.name] start force-feeding the potions to you and your companion, and your eyes open wide as you feel the warm, sickly-sweet liquid entering your mouth...
+				Без лишних предупреждений и даже не дав тебе времени выполнить приказ [npc2.she], [npc2.name] и [npc3.name] начинают насильно вливать зелье тебе и твоей спутнице; твои глаза широко распахиваются, когда ты чувствуешь, как теплая, приторно-сладкая жидкость входит в твой рот...
 			</p>
 		#ELSE
 			<p>
-				[npc3.speech(This stupid [npc.insult]'s got [npc.her] mouth blocked! Fucking [npc.insult]!)] [npc3.name] spits in disgust. Turning towards you and [npc2.name], [npc3.she] mutters, [npc3.speech(At least you're gonna get to transform that [pc.insult].)]
+				[npc3.speech(Эта тупая [npc.insult] зажала [npc.her] рот! Блядская [npc.insult]!)] [npc3.name] брезгливо плюет. Повернувшись к тебе и [npc2.name], [npc3.she] бормочет: [npc3.speech(По крайней мере, ты сможешь превратить эту [pc.insult] в нечто особенное.)]
 			</p>
 			<p>
-				[npc2.speech(Yeah, just save yer potion for the next cunt we find,)] [npc2.name] snaps.
+				[npc2.speech(Ага, просто прибереги свое зелье для следующей сучки, которую мы найдем,)] огрызается [npc2.name].
 				#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 				#THEN
-					[npc2.speech(Now open wide, [pc.insultPlural]! This'll turn yer into stacked futas, so we can watch ya cum all over the floor as we're poundin' yer cunt!)]
+					[npc2.speech(А теперь открывай рот шире, [pc.insultPlural]! Это превратит тебя в сочную футу, чтобы мы могли смотреть, как ты кончаешь на весь пол, пока мы трахаем твою киску!)]
 				#ELSE
-					[npc2.speech(Now open wide, [pc.insultPlural]! This'll give yer a cunt an' cock, so we can watch ya cum all over the floor as we're fuckin' yer pussy!)]
+					[npc2.speech(А теперь открывай рот шире, [pc.insultPlural]! Это даст твоей киске еще и член, чтобы мы могли смотреть, как ты кончаешь на весь пол, пока мы трахаем твою пизду!)]
 				#ENDIF
 			</p>
 			<p>
-				With no further warning, and not even giving you time to do as [npc2.she] commands, [npc2.name] shoves the bottle past your [pc.lips], and you feel the warm, sickly-sweet liquid entering your mouth...
+				Без лишних предупреждений, даже не дав тебе опомниться и сделать то, что велит [npc2.she], [npc2.name] запихивает бутылку тебе в [pc.lips], и ты чувствуешь, как теплая, приторно-сладкая жидкость вливается тебе в рот...
 			</p>
 		#ENDIF
 	#ELSE
 		#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 		#THEN
 			<p>
-				[npc2.speech(This stupid [pc.insult]'s got [pc.her] mouth blocked!)] [npc2.name] snarls at you, before turning towards [npc2.her] partner. [npc2.speech(Just use one o' our potions on that [npc.insult] you've got before you.)]
+				[npc2.speech(Эта тупая [pc.insult] зажала [pc.her] рот!)] [npc2.name] рычит на тебя, прежде чем повернуться к партнеру [npc2.her]. [npc2.speech(Просто используй одно из наших зелий на этой [npc.insult], что перед тобой.)]
 			</p>
 			<p>
-				Quickly producing a bottle of strange liquid, [npc3.name] does as [npc3.her] superior commands, and, pulling the stopper out, [npc3.she] steps forwards, before grabbing [npc.namePos] chin and squeezing [npc.her] cheeks. 
+				Быстро достав бутылку со странной жидкостью, [npc3.name] исполняет приказ своего командира [npc3.her]; вытащив пробку, [npc3.she] делает шаг вперед, хватает [npc.namePos] за подбородок и сжимает [npc.her] щеки.
 				#IF properties.getForcedTFTendency()==FORCED_TF_FEMININE || properties.getForcedTFTendency()==FORCED_TF_FEMININE_HEAVY
 				#THEN
-					[npc3.speech(Open wide, [npc.insult]! This'll turn you into a stacked futa, so we can watch you cum all over the floor as we're pounding your cunt!)]
+					[npc3.speech(Открывай рот шире, [npc.insult]! Это превратит тебя в сочную футу, чтобы мы могли смотреть, как ты кончаешь на весь пол, пока мы трахаем твою киску!)]
 				#ELSE
-					[npc3.speech(Open wide, [npc.insult]! This'll give you a cunt and cock, so we can watch you cum all over the floor as we're fucking your pussy!)]
+					[npc3.speech(Раскрой рот, [npc.insult]! Сейчас у тебя появятся и киска, и член, и мы с удовольствием посмотрим, как ты кончаешь прямо на пол, пока мы трахаем твою пизду!)]
 				#ENDIF
 			</p>
 			<p>
-				With no further warning, and not even giving [npc.herHim] time to do as [npc3.she] commands, [npc3.name] shoves the bottle past [npc.namePos] [npc.lips], and you see [npc.her] [npc.eyes] open wide as transformative liquid enters [npc.her] mouth...
+				Без лишних предупреждений, даже не дав [npc.herHim] времени выполнить приказ [npc3.she], [npc3.name] запихивает бутылку в [npc.lips] [npc.namePos], и ты видишь, как [npc.her] [npc.eyes] широко раскрывает рот, когда преображающая жидкость вливается в [npc.her] рот...
 			</p>
 		#ELSE
 			<p>
-				[npc2.speech(These stupid [pc.insultPlural] 'ave got their mouths blocked! Fucking [pc.insultPlural]!)] [npc2.name] spits in disgust. Turning to [npc2.her] subordinate, [npc2.she] snaps, [npc2.speech(Save those potions for the next ones we catch! Let's just fuck whatever holes we can with these [pc.insultPlural].)]
+				[npc2.speech(Этим тупым [pc.insultPlural] забили рты! Черт бы побрал [pc.insultPlural]!)] [npc2.name] брезгливо сплевывает. Поворачиваясь к подчиненному [npc2.her], [npc2.she] рявкает: [npc2.speech(Приберегите эти зелья для следующих, кого поймаем! Давайте просто трахать все дырки, что сможем, этими [pc.insultPlural].)]
 			</p>
 			<p>
-				With no further warning, [npc2.name] reaches forwards and grabs your chin, before forcing you to look [npc2.herHim] in the eye as [npc2.she] snarls, [npc2.speech(Stupid [pc.insultPlural]! You're gonna love bein' our cock-sleeves!)]
+				Без лишних предупреждений [npc2.name] подается вперед и хватает тебя за подбородок, заставляя смотреть [npc2.herHim] прямо в глаза, пока [npc2.she] рычит: [npc2.speech(Тупая [pc.insultPlural]! Тебе чертовски понравится быть нашей чехлом для члена!)]
 			</p>
 		#ENDIF
 	#ENDIF
@@ -500,227 +500,226 @@
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SEX"><![CDATA[
 	<p>
-		Finding yourself down on all fours, and at the mercy of the imps' carnal desires, you decide that the best thing for you to do would be to simply go along with whatever they have in store for you. Sensing your willingness to go along with all of this, [npc2.name] sneers down at you, [npc2.speech(What a submissive whore you turned out to be! You're just a slut for imp cock, aren't you?)]
+		Оказавшись на четвереньках и попав во власть плотских желаний бесов, ты решаешь, что лучшее, что ты можешь сделать — это просто подчиниться всему, что они для тебя приготовили. Почувствовав твою готовность плыть по течению, [npc2.name] насмешливо смотрит на тебя сверху вниз: [npc2.speech(Какой же покорной шлюхой ты оказалась! Ты просто сучка, жаждущая бесовского члена, верно?)]
 	</p>
 	<p>
-		Not wanting to cause any trouble by arguing back, you mutter, [pc.speech(Y-Yes... That's right...)]
+		Не желая доставлять себе хлопот спорами, ты бормочешь: [pc.speech(Д-да... Всё верно...)]
 	</p>
 	<p>
-		As you agree with [npc2.name], you suddenly feel [npc4.name] start to grope and squeeze your ass, before [npc4.she] calls out to you and [npc.name], [npc4.speech(I bet you two have taken miles of dick already, haven't you, [pc.insultPlural]?! How many other imps have pounded your sweet asses before us?! I bet you've lost count!)]
+		Как только ты соглашаешься с [npc2.name], ты внезапно чувствуешь, как [npc4.name] начинает ощупывать и сжимать твою задницу, прежде чем [npc4.she] выкрикивает тебе и [npc.name]: [npc4.speech(Спорим, вы обе уже приняли в себя мили хрена, а, [pc.insultPlural]?! Сколько еще бесов трахали ваши сладкие задницы до нас?! Бьюсь об заклад, вы уже сбились со счета!)]
 	</p>
 	<p>
-		[npc3.speech(I want to hear these sluts beg for imp cock!)] [npc3.Name] jeers, stepping up beside [npc2.name] to smirk down at your submissive form. [npc3.speech(Go on, say it. Say you're a slut for imp cock!)]
+		[npc3.speech(Хочу слышать, как эти шлюхи будут умолять о бесовском члене!)] [npc3.Name] насмешливо произносит, шагая к [npc2.name] и с ухмылкой глядя на твою покорную фигуру. [npc3.speech(Ну же, скажи это. Скажи, что ты шлюха для бесовского члена!)]
 	</p>
 	<p>
-		[pc.speech(I'm a slut for imp cock...)] You offer, knowing that your words are about to be put to the test.
+		[pc.speech(Я шлюха для бесовского члена...)] — предлагаешь ты, понимая, что твои слова вот-вот подвергнут настоящему испытанию.
 	</p>
 	<p>
-		[npc3.speech(Louder! And beg for <i>my</i> cock, slut!)] [npc3.Name] snaps, clearly not satisfied with your half-hearted answer.
+		[npc3.speech(Громче! И умоляй о <i>моем</i> члене, шлюха!)] [npc3.Name] рявкает, явно не удовлетворенный твоим вялым ответом.
 	</p>
 	<p>
-		Knowing that you're at the mercy of these evil imps, you decide that it'd be best to do as you're told, and cry out, [pc.speech(I'm a slut for imp cock! Please, I want your cock inside of me! Please fuck me!)]
+		Понимая, что ты во власти этих злых бесов, ты решаешь, что лучше всего будет делать, как велят, и вскрикиваешь: [pc.speech(Я шлюха для бесовского члена! Пожалуйста, я хочу ваш член внутри себя! Пожалуйста, трахните меня!)]
 	</p>
 	<p>
-		[npc5.speech(That's what we like to hear!)] [npc5.Name] laughs from somewhere off to one side, and you can't help but let out a small [pc.moan] as the imps start moving into position, ready to do as you've just asked and start fucking you and [npc.name]...
+		[npc5.speech(Вот это мы любим!)] [npc5.Name] хохочет где-то сбоку, и ты невольно издаешь тихий [pc.moan], пока бесы занимают позиции, готовые исполнить твою просьбу и начать трахать тебя и [npc.name]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SEX_EAGER"><![CDATA[
 	<p>
-		Finding yourself down on all fours, and at the mercy of the imps' carnal desires, you feel yourself getting immensely turned-on, and can barely contain the [pc.moan+] that drifts out from between your [pc.lips]. Hearing the lewd noise that just came out of your mouth, [npc2.name] sneers down at you, [npc2.speech(What a dirty whore you turned out to be! You're just a filthy slut for imp cock, aren't you?)]
+		Оказавшись на четвереньках и во власти плотских желаний бесов, ты чувствуешь, как дико возбуждаешься, едва сдерживая [pc.moan+], вырывающийся из твоих [pc.lips]. Услышав этот похотливый звук, вырвавшийся из твоего рта, [npc2.name] презрительно смотрит на тебя сверху вниз: [npc2.speech(Ну и грязной же шлюхой ты оказалась! Ты просто похотливая сучка, жаждущая бесовского члена, верно?)]
 	</p>
 	<p>
-		Your arousal gets the better of you, and before you can think things through, you call out, [pc.speech(Yes! I'm a slut for imp cock!)]
+		Возбуждение берет верх, и прежде чем ты успеваешь что-то обдумать, ты выкрикиваешь: [pc.speech(Да! Я шлюха, жаждущая бесовского члена!)]
 	</p>
 	<p>
-		As you happily respond to [npc2.name], you suddenly feel [npc4.name] start to grope and squeeze your ass, before [npc4.she] calls out to you and [npc.name], [npc4.speech(I bet you two have taken miles of dick already, haven't you, [pc.insultPlural]?! How many other imps have pounded your sweet asses before us?! I bet you've lost count!)]
+		Пока ты с радостью отвечаешь [npc2.name], ты внезапно чувствуешь, как [npc4.name] начинает ощупывать и сжимать твою задницу, прежде чем [npc4.she] окликает тебя и [npc.name]: [npc4.speech(Бьюсь об заклад, вы обе уже наглотались членов на мили вперед, а, [pc.insultPlural]?! Сколько еще бесов вколачивали ваши сладкие задницы до нас?! Спорим, ты уже сбилась со счета!)]
 	</p>
 	<p>
-		[npc3.speech(I want to hear these sluts beg for imp cock!)] [npc3.Name] jeers, stepping up beside [npc2.name] to smirk down at your submissive form. [npc3.speech(Go on, do it! Beg for my cock!)]
+		[npc3.speech(Хочу послушать, как эти шлюхи будут умолять о бесовском члене!)] [npc3.Name] насмешливо произносит это, подходя к [npc2.name] и с ухмылкой глядя на твою покорную фигуру. [npc3.speech(Давай же, действуй! Умоляй о моем члене!)]
 	</p>
 	<p>
-		[pc.speech(Please, I want your cock! No, I <i>need</i> your cock! Fuck me! Please, fuck me already!)] You [pc.moan], biting your [pc.lip] as you look up at [npc3.name].
+		[pc.speech(Пожалуйста, я хочу твой член! Нет, мне <i>нужен</i> твой член! Трахни меня! Пожалуйста, трахни меня уже!)] Ты [pc.moan], прикусывая [pc.lip] и глядя снизу вверх на [npc3.name].
 	</p>
 	<p>
-		[npc3.speech(What a slut!)] [npc3.Name] laughs, satisfied with your enthusiastic answer. [npc3.speech(Don't worry, whore, you'll be getting that imp cock you crave so badly soon enough!)]
+		[npc3.speech(Ну и шлюха!)] [npc3.Name] смеется, довольный твоим восторженным ответом. [npc3.speech(Не волнуйся, шлюха, ты скоро получишь тот бесовский член, которого так жаждешь!)]
 	</p>
 	<p>
-		[npc5.speech(I love it when they're as eager as this one!)] [npc5.Name] laughs from somewhere off to one side, and you can't help but let out [pc.a_moan+] as the imps start moving into position, ready to give you and [npc.name] the cock that you're so obviously craving...
+		[npc5.speech(Обожаю, когда они такие нетерпеливые, как эта!)] [npc5.Name] смеется где-то сбоку, и ты невольно издаешь [pc.a_moan+], пока бесы начинают занимать позиции, готовые дать тебе и [npc.name] тот член, которого вы так явно жаждете...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_COMBAT_DEFEAT_SEX_RESIST"><![CDATA[
 	<p>
-		Finding yourself down on all fours, and at the mercy of the imps' carnal desires, you start to panic, and try to stand up again as you cry out, [pc.speech(Stop this! Leave me alone!)]
+		Оказавшись на четвереньках и во власти плотских желаний бесов, ты начинаешь паниковать и пытаешься снова встать, вскрикивая: [pc.speech(Прекратите! Оставьте меня в покое!)]
 	</p>
 	<p>
-		As you try to push yourself up onto your knees, however, [npc2.name] steps forwards and grabs the back of your head, before roughly shoving you back down into your submissive position. [npc2.speech(Stupid slut! This is what you get for coming into our territory! Don't worry, we'll get you moaning for imp cock before we're done with you!)]
+		Однако, когда ты пытаешься подняться на колени, [npc2.name] делает шаг вперед и хватает тебя за затылок, а затем грубо вжимает обратно в покорную позу. [npc2.speech(Тупая шлюха! Это тебе за то, что забрела на нашу территорию! Не бойся, мы заставим тебя стонать от бесовского члена прежде, чем закончим с тобой!)]
 	</p>
 	<p>
-		As you start to cry out and protest, you suddenly feel [npc4.namePos] [npc4.hands] groping and squeezing your ass. Before you're able to turn and tell [npc4.herHim] to stop, [npc4.she] calls out to you and [npc.name], [npc4.speech(I bet you two have taken miles of dick already, haven't you, [pc.insultPlural]?! How many other imps have pounded your sweet asses before us?! I bet you've lost count!)]
+		Как только ты начинаешь кричать и протестовать, ты внезапно чувствуешь, как [npc4.namePos] [npc4.hands] ощупывает и сжимает твою задницу. Прежде чем ты успеваешь обернуться и велеть [npc4.herHim] остановиться, [npc4.she] окликает тебя и [npc.name]: [npc4.speech(Бьюсь об заклад, вы вдвоем уже вдоволь наглотались членами, а, [pc.insultPlural]?! Сколько еще бесов успели оттрахать ваши сладкие задницы до нас?! Спорим, вы уже сбились со счета!)]
 	</p>
 	<p>
-		[npc3.speech(This dumb slut needs to be shown [pc.her] place!)] [npc3.Name] jeers, stepping up beside [npc2.name] to smirk down at your defeated form. [npc3.speech(You'll love being an imp's cock-sleeve! We'll make sure of that!)]
+		[npc3.speech(Этой тупой шлюхе пора показать [pc.her] ее место!)] — насмехается [npc3.Name], подходя к [npc2.name] и самодовольно глядя на твой поверженный вид. [npc3.speech(Тебе понравится быть бесовской вагиной для члена! Мы об этом позаботимся!)]
 	</p>
 	<p>
-		[pc.speech(No! You can't do this!)] You cry out as you struggle against the imps.
+		[pc.speech(Нет! Вы не можете этого сделать!)] — кричишь ты, отчаянно борясь с бесами.
 	</p>
 	<p>
-		[npc3.speech(You'll be begging for my cock soon enough, slut!)] [npc3.Name] snaps, clearly not having the patience for any more of your protests.
+		[npc3.speech(Скоро ты сама будешь умолять о моем члене, шлюха!)] — огрызается [npc3.Name], явно не имея терпения слушать твои протесты.
 	</p>
 	<p>
-		[npc5.speech(It's fun getting to break in unwilling cunts like you!)] [npc5.Name] laughs from somewhere off to one side, and you can't help but let out a frantic wail as the imps start moving into position, ready to start fucking you and [npc.name]...
+		[npc5.speech(Так весело приручать таких нехотящихся кисок, как ты!)] — хохочет [npc5.Name] где-то сбоку, и ты невольно издаешь отчаянный вопль, когда бесы начинают занимать позиции, готовясь трахать тебя и [npc.name]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_DEFEAT_TF_REFUSED"><![CDATA[
 	<p>
-		You have no intention of swallowing the imps' transformative potion, and, jerking your head back, you spit the liquid out all over the floor. Your resistance is immediately met by a sharp slap to the face, accompanied by a loud screech as [npc2.name] hurls the bottle to one side. [npc2.speech(You fucking [pc.insult]! Fuck! Do you know how much trouble the boss goes through to get these potions for us?! Fucking stupid [pc.insult]!)]
+		Ты вовсе не собираешься глотать трансформационное зелье бесов, и, резко откинув голову, выплевываешь жидкость прямо на пол. Твое сопротивление тут же встречается резкой пощечиной, сопровождаемой громким визгом, когда [npc2.name] отшвыривает бутылку в сторону. [npc2.speech(Чертова [pc.insult]! Твою мать! Ты хоть знаешь, каких трудов боссу стоит достать эти зелья для нас?! Тупая [pc.insult]!)]
 	</p>
 	<p>
-		[npc2.NamePos] insults are easy to weather, knowing what the alternative was, and you simply cast your gaze to the floor as you wait for [npc2.herHim] to calm down. As you do this, however, [npc2.she] suddenly reaches forwards, and, grabbing you by the back of the neck, forces you down onto all fours. [npc2.speech(Get down, [pc.insult]! If you can't do something so simple as drinking a potion, all you're good for is being a fuck-toy for us to use!)]
+		[npc2.NamePos] оскорбления переносятся легко, ведь ты знаешь, что было бы хуже, и ты просто опускаешь взгляд в пол, ожидая, пока [npc2.herHim] успокоится. Однако в этот момент [npc2.she] внезапно подается вперед и, схватив тебя за загривок, силой ставит на четвереньки. [npc2.speech(Вниз, [pc.insult]! Если ты не способна на такую простую вещь, как выпивание зелья, то всё, на что ты годна — это быть нашей шлюхой для секса!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_DEFEAT_TF_ACCEPTED"><![CDATA[
 	<p>
-		You gulp down the sweet, syrup-like liquid, before opening your mouth to show [npc.name] that you've done as [npc.she] commanded. Your display of submission is met by a devious grin that quickly settles on [npc.namePos] face, and [npc.she] carelessly hurls the now-empty bottle to one side as [npc.she] steps back and looks down at you. [npc.speech(Good slut. You're just a bitch for us imps to command, aren't you?)]
+		Ты жадно глотаешь сладкую, похожую на сироп жидкость, а затем широко открываешь рот, показывая [npc.name], что исполнила всё, как велел(а) [npc.she]. Твою покорность встречает коварная ухмылка, которая быстро расплывается на лице [npc.namePos], а [npc.she] небрежно отшвыривает пустую бутылку в сторону, пока [npc.she] отступает назад, глядя на тебя сверху вниз. [npc.speech(Хорошая шлюшка. Ты просто сучка, созданная для того, чтобы подчиняться нам, бесам, верно?)]
 	</p>
 	<p>
-		[pc.speech(Yes...)] You absent-mindedly reply, concentrating more on the strange feeling that's started to bubble up inside your body than whatever it is that the imp just asked of you. As you feel the curious sensation start to change into a steady warmth that permeates through your entire body, you realise that the potion's transformative effects are about to make themselves known... 
+		[pc.speech(Да...)] — рассеянно отвечаешь ты, концентрируясь скорее на странном ощущении, забурлившем внутри тела, чем на том, о чем тебя только что спросил бес. Когда любопытное чувство начинает перерастать в ровное тепло, пропитывающее всё твоё существо, ты понимаешь, что трансформирующее действие зелья вот-вот проявит себя... 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_DEFEAT_SEX"><![CDATA[
 	<p>
-		Having had their fun, the imps step back, allowing you to collapse down onto the floor as you pant from exertion.
+		Насладившись весельем, бесы отступают, позволяя тебе рухнуть на пол, тяжело дыша от изнеможения.
 		#IF (pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc2.getId()) || pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc3.getId()) || pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc4.getId()) || pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc5.getId()))
 		#THEN
 			#IF pc.isVisiblyPregnant()
 			#THEN
-				Suddenly, you feel [npc2.name] sliding [npc2.her] fingers into your freshly-creampied pussy, and you let out an exhausted moan as [npc2.she] snickers, [npc2.speech(Shame yer already knocked up, slut. We could have done with you pumpin' out some more imps to join our gang.)]
+				Внезапно ты чувствуешь, как [npc2.name] просовывает [npc2.her] пальцы в твою только что заправленную спермой киску, и издаешь изнуренный стон, пока [npc2.she] хихикает: [npc2.speech(Жаль, что ты уже залетела, шлюха. Нам бы пригодилось, если бы ты нарожала еще бесов для нашей банды.)]
 			#ELSE
-				Suddenly, you feel [npc2.name] sliding [npc2.her] fingers into your freshly-creampied pussy, and you let out an exhausted moan as [npc2.she] snickers, [npc2.speech(Wonderin' if we got you knocked up, huh, slut? Well, if you get pregnant from this, just send them imp kids of yours this way. We could always do with more gang members!)]
+				Внезапно ты чувствуешь, как [npc2.name] просовывает [npc2.her] пальцы в твою только что заправленную спермой киску, и издаешь изнуренный стон, пока [npc2.she] хихикает: [npc2.speech(Интересно, мы тебя оплодотворили, а, сучка? Ну, если забеременеешь от этого, просто присылай своих бесяток к нам. Нам лишние члены банды никогда не помешают!)]
 			#ENDIF
 			#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 			#THEN
 				</p>
 				<p>
-					Before you can respond, [npc2.name] steps forwards and shoves [npc2.her] cum-coated fingers into your mouth. [npc2.speech(Clean me off, bitch.)]
+					Прежде чем ты успеваешь ответить, [npc2.name] делает шаг вперед и засовывает тебе в рот испачканные в сперме [npc2.her] пальцы. [npc2.speech(Вылизывай меня, сука.)]
 				</p>
 				<p>
-					With little choice but to do as you're told, you lick the cum from [npc2.namePos] fingers
+					Не имея иного выбора, кроме как подчиниться, ты слизываешь сперму с [npc2.namePos] пальцев
 					#IF pc.isVisiblyPregnant()
 					#THEN.
 					#ELSE, and as you do so, you can't help but wonder if the imp's seed has gotten you pregnant.
 					#ENDIF
-					 Quickly being forced to swallow down the salty goo that's now in your mouth, you look up as [npc2.name] smirks down at you one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					 Поспешно заглатывая соленую жижу, что теперь наполняет твой рот, ты смотришь вверх, как [npc2.name] в последний раз ухмыляется тебе, прежде чем собрать свою [npc2.her] шайку и исчезнуть в темных туннелях Submission.
 				#ELSE
 				</p>
 				<p>
-					Before you can respond, [npc2.name] steps forwards and starts wiping [npc2.her] cum-coated fingers all over your face. [npc2.speech(Hold still, bitch. I don't want this on my hands.)]
+					Прежде чем ты успеваешь ответить, [npc2.name] делает шаг вперед и начинает размазывать свои испачканные в [npc2.her] сперме пальцы по твоему лицу. [npc2.speech(Не дергайся, сучка. Не хочу, чтобы это осталось на моих руках.)]
 				</p>
 				<p>
-					With little choice but to do as you're told, you hold still as [npc2.name] wipes [npc2.her] fingers on your face.
+					Почти не имея выбора, кроме как подчиниться, ты замираешь, пока [npc2.name] вытирает [npc2.her] пальцы о твое лицо.
 					#IF !pc.isVisiblyPregnant()
-					#THEN As you feel the slimy spunk being spread over your cheeks, you can't help but wonder if the imp's seed has gotten you pregnant. 
+					#THEN Когда ты чувствуешь, как склизкая сперма размазывается по твоим щекам, ты невольно задаешься вопросом: не забеременела ли ты от семени беса.
 					#ENDIF
-					 Once [npc2.name] is finished with you, you look up as [npc2.she] smirks down at you one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					 Как только [npc2.name] заканчивает с тобой, ты смотришь вверх, как [npc2.she] в последний раз ухмыляется тебе, прежде чем собрать свою [npc2.her] шайку и исчезнуть в темных туннелях Submission.
 			#ENDIF
 		#ELSE
-			 As [npc2.sheIs] now finished with you, [npc2.name] smirks down at your used form one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+				 Как только [npc2.sheIs] заканчивает с тобой, [npc2.name] в последний раз ухмыляется, глядя на твое изнуренное тело, прежде чем собрать свою [npc2.her] шайку и исчезнуть в темных туннелях Submission.
 		#ENDIF
 	</p>
 	<p>
-		[npc.speech(Are you ok, [npc.pcName]?)] [npc.Name] asks, stepping out from the shadows to return to your side once more.
+		[npc.speech(Ты в порядке, [npc.pcName]?)] спрашивает [npc.Name], выходя из тени, чтобы снова оказаться рядом с тобой.
 	</p>
 	<p>
-		[pc.speech(Yeah... Don't worry about me...)] You respond, before gathering your things and getting everything in order.
+		[pc.speech(Да... Не беспокойся обо мне...)] отвечаешь ты, прежде чем собрать свои вещи и привести всё в порядок.
 	</p>
 	<p>
-		You and [npc.name] then spend some time resting, waiting until you've fully recovered from the imp gang-bang before continuing on your way. As you set off, the two of you make sure to keep a very close watch for any more troublesome imps that might be lurking around the nearest corner...
+		Затем вы с [npc.name] проводите некоторое время, отдыхая и дожидаясь полного восстановления после группового секса с бесами, прежде чем продолжить путь. Когда вы отправляетесь в дорогу, вы оба внимательно следите, чтобы за ближайшим поворотом не затаились новые надоедливые бесы...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_DEFEAT_SEX_WITH_COMPANION"><![CDATA[
 	<p>
-		Having had their fun, the imps step back, allowing you and [npc.name] to collapse down onto the floor as the two of you pant from exertion.
+		Насладившись, бесы отступают, позволяя тебе и [npc.name] рухнуть на пол, тяжело дыша от изнеможения.
 		#IF (pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc2.getId()) || pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc3.getId()) || pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc4.getId()) || pc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc5.getId()))
 		#THEN
 			#IF (npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc2.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc3.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc4.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc5.getId()))
 			#THEN
-				 Suddenly, you feel [npc2.name] thrusting [npc2.her] fingers into your freshly-creampied pussy, and from [npc.namePos] sudden yelp, you realise that [npc2.name] has just done the same to [npc.herHim].
+				 Внезапно ты чувствуешь, как [npc2.name] засовывает [npc2.her] пальцы в твою только что заправленную спермой киску, а по внезапному вскрику [npc.namePos] понимаешь, что [npc2.name] только что сделала то же самое с [npc.herHim].
 				#IF npc.isVisiblyPregnant()
-				#THEN
+				#ПОТОМ
 					#IF pc.isVisiblyPregnant()
 					#THEN
-						 [npc2.speech(Shame you two sluts were already knocked up! We could 'ave done with you two pumping out more imps for our gang!)]
+						 [npc2.speech(Жаль, что вы, две шлюхи, уже беременны! Нам бы не помешало, чтобы вы обе нарожали еще бесов для нашей банды!)]
 					#ELSE
-						 Addressing [npc.name], [npc2.name] snarls, [npc2.speech(Shame you're already knocked up, [npc.insult], but your boss here's got an empty womb. Here's hopin' [pc.sheIs] gonna get knocked up from this!)]
+						 Обращаясь к [npc.name], [npc2.name] рычит: [npc2.speech(Жаль, что ты уже в положении, [npc.insult], но вот у твоей хозяйки чрево пустое. Будем надеяться, что [pc.sheIs] забеременеет от этого!)]
 					#ENDIF
 				#ELSE
 					#IF pc.isVisiblyPregnant()
 					#THEN
-						 Addressing you, [npc2.name] snarls,  [npc2.speech(Shame you're already knocked up, [pc.insult], but your friend here's got an empty womb. Here's hopin' [npc.sheIs] gonna get knocked up from this!)]
+						 Обращаясь к тебе, [npc2.name] рычит: [npc2.speech(Жаль, что ты уже беременна, [pc.insult], но вот у твоей подружки чрево пустое. Будем надеяться, что [npc.sheIs] забеременеет от этого!)]
 					#ELSE
-						 [npc2.speech(Here's hopin' you two sluts are gonna get knocked up from this! We can always do with more imps comin' to join our gang!)]
+						 [npc2.speech(Будем надеяться, что вы, две шлюхи, забеременеете от этого! Нам всегда не помешают новые бесы в нашей банде!)]
 					#ENDIF
 				#ENDIF
 				</p>
 				<p>
-					Before either of you can respond, [npc2.name] withdraws [npc2.her] fingers, which, much to the amusement of the other three imps, causes you and [npc.name] to let out synchronised [pc.moans]. As you turn your head to look back at [npc2.herHim], [npc2.name] quickly steps forwards,
+					Прежде чем кто-то из вас успевает ответить, [npc2.name] вынимает [npc2.her] пальцы, из-за чего ты и [npc.name] — к немалому удовольствию остальных трех бесов — синхронно издаете [pc.moans]. Когда ты поворачиваешь голову, чтобы оглянуться на [npc2.herHim], [npc2.name] быстро делает шаг вперед,
 					#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 					#THEN
 						#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 						#THEN
 							 before shoving [npc2.her] cum-coated fingers into your and [npc.namePos] mouths. [npc2.speech(Clean me off, [pc.insultPlural]!)]
 						#ELSE
-							 before shoving [npc2.her] cum-coated fingers into [npc.namePos] mouth, and starting to wipe [npc2.her] other hand over your face. [npc2.speech(Hold still, [pc.insultPlural]!)]
+							 прежде чем запихнуть [npc2.her] испачканные в сперме пальцы в рот [npc.namePos] и начать размазывать [npc2.her] другой рукой по твоему лицу. [npc2.speech(Не дергайся, [pc.insultPlural]!)]
 						#ENDIF
 					#ELSE
 						#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 						#THEN
-							 before shoving [npc2.her] cum-coated fingers into your mouth, and starting to wipe [npc2.her] other hand over [npc.namePos] face. [npc2.speech(Hold still, [pc.insultPlural]!)]
+							 прежде чем запихнуть [npc2.her] испачканные в сперме пальцы тебе в рот и начать размазывать [npc2.her] другой рукой по [npc.namePos] лицу. [npc2.speech(Не дергайся, [pc.insultPlural]!)]
 						#ELSE
-							 before starting to wipe [npc2.her] cum-coated fingers over your and [npc.namePos] faces. [npc2.speech(Hold still, [pc.insultPlural]!)]
+							 прежде чем начать размазывать [npc2.her] испачканные в сперме пальцы по твоему и [npc.namePos] лицам. [npc2.speech(Не дергайся, [pc.insultPlural]!)]
 						#ENDIF
 					#ENDIF
-				</p>
-				<p>
-					Not having any other option, you do as [npc2.name] says, and hold still until [npc2.sheHas] uses the two of you to clean [npc2.her] fingers. Once [npc2.sheHas] finished, you look up as [npc2.name] smirks down at you one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+				</p><p>
+					Не имея иного выбора, ты поступаешь так, как велит [npc2.name], и замираешь, пока [npc2.sheHas] использует вас двоих, чтобы вытереть [npc2.her] пальцы. Когда [npc2.sheHas] заканчивает, ты поднимаешь взгляд и видишь, как [npc2.name] в последний раз насмешливо смотрит на тебя сверху вниз, прежде чем собраться со своей бандой [npc2.her] и скрыться в темных туннелях Submission.
 				</p>
 			#ELSE
 				#IF pc.isVisiblyPregnant()
 				#THEN
-					Suddenly, you feel [npc2.name] sliding [npc2.her] fingers into your freshly-creampied pussy, and you let out an exhausted moan as [npc2.she] snickers, [npc2.speech(Shame yer already knocked up, slut. We could have done with you pumpin' out some more imps to join our gang.)]
+					Внезапно ты чувствуешь, как [npc2.name] засовывает [npc2.her] пальцы в твою только что залитую спермой киску, и издаешь изнуренный стон, пока [npc2.she] хихикает: [npc2.speech(Жаль, что ты уже залетела, шлюха. Нам бы пригодилось, если бы ты выдала еще парочку бесов для нашей банды.)]
 				#ELSE
-					Suddenly, you feel [npc2.name] sliding [npc2.her] fingers into your freshly-creampied pussy, and you let out an exhausted moan as [npc2.she] snickers, [npc2.speech(Wonderin' if we got you knocked up, huh, slut? Well, if you get pregnant from this, just send them imp kids of yours this way. We could always do with more gang members!)]
+					Внезапно ты чувствуешь, как [npc2.name] засовывает [npc2.her] пальцы в твою только что залитую спермой киску, и издаешь изнуренный стон, пока [npc2.she] хихикает: [npc2.speech(Интересно, мы тебя заделали, а, шлюха? Ну, если забеременеешь от этого, просто посылай своих бесячьих деток к нам. Нам всегда нужны новые члены банды!)]
 				#ENDIF
 				#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 				#THEN
 					</p>
 					<p>
-						Before you can respond, [npc2.name] steps forwards and shoves [npc2.her] cum-coated fingers into your mouth. [npc2.speech(Clean me off, bitch.)]
+						Не успеваешь ты опомниться, как [npc2.name] делает шаг вперед и сует [npc2.her] испачканные в сперме пальцы тебе в рот. [npc2.speech(Вылизывай меня, сучка.)]
 					</p>
 					#ELSE
 					</p>
 					<p>
-						Before you can respond, [npc2.name] steps forwards and starts wiping [npc2.her] cum-coated fingers all over your face. [npc2.speech(Hold still, bitch. I don't want this on my hands.)]
+						Не успеваешь ты опомниться, как [npc2.name] делает шаг вперед и начинает размазывать [npc2.her] испачканные в сперме пальцы по твоему лицу. [npc2.speech(Не дергайся, сучка. Не хочу, чтобы это осталось на моих руках.)]
 					</p>
 				#ENDIF
 				<p>
-					Not having any other option, you do as [npc2.name] says, and hold still until [npc2.sheHas] uses you to clean [npc2.her] fingers. Once [npc2.sheHas] finished, you look up as [npc2.name] smirks down at you one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					Не имея другого выбора, ты слушаешься [npc2.name] и замираешь, пока [npc2.sheHas] использует тебя, чтобы очистить [npc2.her] пальцы. Когда [npc2.sheHas] заканчивает, ты поднимаешь взгляд и видишь, как [npc2.name] в последний раз ухмыляется тебе сверху вниз, после чего собирает [npc2.her] банду и исчезает в темных туннелях Submission.
 				</p>
 			#ENDIF
 		#ELSE
 			#IF (npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc2.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc3.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc4.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc5.getId()))
-			#THEN
+			#ПОТОМ
 				#IF npc.isVisiblyPregnant()
 				#THEN
 					Suddenly, you see [npc2.name] step around behind your companion, before sliding [npc2.her] fingers into [npc.her] freshly-creampied pussy. [npc.Name] lets out an exhausted moan as [npc.she] feels the sudden penetration, and [npc2.name] leans forwards to snicker, [npc2.speech(Shame yer already knocked up, slut. We could have done with you pumpin' out some more imps to join our gang.)]
@@ -731,86 +730,85 @@
 				#THEN
 					</p>
 					<p>
-						Before [npc.name] can respond, [npc2.name] steps forwards, and you watch as [npc2.she] forcefully shoves [npc2.her] cum-coated fingers into your companion's mouth. [npc2.speech(Clean me off, bitch.)]
+						Прежде чем [npc.name] успевает среагировать, [npc2.name] делает шаг вперед, и ты видишь, как [npc2.she] с силой засовывает испачканные в [npc2.her] сперме пальцы в рот твоему спутнику. [npc2.speech(Вытри меня, сучка.)]
 					</p>
 					#ELSE
 					</p>
 					<p>
-						Before [npc.name] can respond, [npc2.name] steps forwards, and you watch as [npc2.she] starts wiping [npc2.her] cum-coated fingers all over your companion's face. [npc2.speech(Hold still, bitch. I don't want this on my hands.)]
+						Прежде чем [npc.name] успевает среагировать, [npc2.name] делает шаг вперед, и ты видишь, как [npc2.she] начинает размазывать испачканные в [npc2.her] сперме пальцы по всему лицу твоего спутника. [npc2.speech(Не дергайся, сучка. Не хочу пачкать руки.)]
 					</p>
 				#ENDIF
 				<p>
-					Not having any other option, [npc.name] does as [npc2.name] says, and holds still until [npc2.sheHas] uses [npc.herHim] to clean [npc2.her] fingers. Once [npc2.sheHas] finished, the two of you look up as [npc2.name] smirks down at you one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					Не имея другого выбора, [npc.name] делает то, что велел [npc2.name], и замирает, пока [npc2.sheHas] использует [npc.herHim], чтобы очистить [npc2.her] пальцы. Когда [npc2.sheHas] заканчивает, вы вдвоем поднимаете взгляд и видите, как [npc2.name] в последний раз ухмыляется вам сверху вниз, после чего собирает свою банду [npc2.her] и исчезает в темных туннелях Submission.
 				</p>
 			#ELSE
-			 As [npc2.sheIs] now finished with the two of you, [npc2.name] smirks down at your used forms one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+			 Когда [npc2.sheIs] заканчивает с вами обоими, [npc2.name] в последний раз насмешливо смотрит на ваши измученные тела, после чего собирает банду [npc2.her] и исчезает в темных туннелях Submission.
 			#ENDIF
 		#ENDIF
 	<p>
-		[npc.speech(Are you ok, [npc.pcName]?)] [npc.Name] asks, pushing [npc.herself] up onto [npc.her] knees.
+		[npc.speech(Ты в порядке, [npc.pcName]?)] — спрашивает [npc.Name], помогая [npc.herself] подняться на [npc.her] колени.
 	</p>
 	<p>
-		[pc.speech(Yeah... Don't worry about me...)] You respond as you follow suit, standing up on trembling [pc.legs].
+		[pc.speech(Да... Не беспокойся обо мне...)] — отвечаешь ты, стараясь последовать примеру и поднимаясь на дрожащих [pc.legs].
 	</p>
 	<p>
-		You and [npc.name] then spend some time gathering your things and catching your breath, waiting until you've both fully recovered from the imp gang-bang before continuing on your way. As you set off, the two of you make sure to keep a very close watch for any more troublesome imps that might be lurking around the nearest corner...
+		Затем вы с [npc.name] тратите некоторое время на то, чтобы собрать вещи и перевести дух, ожидая полного восстановления после группового секса с бесами, прежде чем продолжить путь. Когда вы отправляетесь в дорогу, вы оба стараетесь внимательно следить за любыми другими надоедливыми бесами, которые могут поджидать за ближайшим углом...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_WATCHING_COMPANION"><![CDATA[
 	<p>
-		Having had their fun, the imps step back, allowing [npc.name] to collapse down onto the floor as [npc.she] pants from exertion.
+		Насладившись, бесы отступают, позволяя [npc.name] рухнуть на пол, пока [npc.she] тяжело дышит от изнеможения.
 		#IF (npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc2.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc3.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc4.getId()) || npc.isCharactersCumInOrifice(ORIFICE_VAGINA, npc5.getId()))
 		#THEN
 			#IF npc.isVisiblyPregnant()
 			#THEN
-				Suddenly, you see [npc2.name] step around behind your companion, before sliding [npc2.her] fingers into [npc.her] freshly-creampied pussy. [npc.Name] lets out an exhausted moan as [npc.she] feels the sudden penetration, and [npc2.name] leans forwards to snicker, [npc2.speech(Shame yer already knocked up, slut. We could have done with you pumpin' out some more imps to join our gang.)]
+				Внезапно ты видишь, как [npc2.name] обходит твою спутницу со спины, а затем засовывает [npc2.her] пальцы в только что залитую спермой киску [npc.her]. [npc.Name] издает изнуренный стон, когда [npc.she] чувствует внезапное проникновение, а [npc2.name] наклоняется вперед, чтобы хихикнуть: [npc2.speech(Чего, уже забеременела, шлюха? Нам бы не помешало, если бы ты нарожала еще мелких бесов в нашу банду.)]
 			#ELSE
-				Suddenly, you see [npc2.name] step around behind your companion, before sliding [npc2.her] fingers into [npc.her] freshly-creampied pussy. [npc.Name] lets out an exhausted moan as [npc.she] feels the sudden penetration, and [npc2.name] leans forwards to snicker, [npc2.speech(Wonderin' if we got you knocked up, huh, slut? Well, if you get pregnant from this, just send them imp kids of yours this way. We could always do with more gang members!)]
+				Внезапно ты видишь, как [npc2.name] обходит твою спутницу со спины, а затем засовывает [npc2.her] пальцы в только что залитую спермой киску [npc.her]. [npc.Name] издает изнуренный стон, когда [npc.she] чувствует внезапное проникновение, а [npc2.name] наклоняется вперед, чтобы хихикнуть: [npc2.speech(Интересно, мы тебя оплодотворили, а, шлюха? Ну, если забеременеешь от этого, просто присылай своих бесячьих деток к нам. Нам всегда нужны новые члены банды!)]
 			#ENDIF
 			#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 			#THEN
 				</p>
 				<p>
-					Before [npc.name] can respond, [npc2.name] steps forwards, and you watch as [npc2.she] forcefully shoves [npc2.her] cum-coated fingers into your companion's mouth. [npc2.speech(Clean me off, bitch.)]
+					Прежде чем [npc.name] успевает ответить, [npc2.name] делает шаг вперед, и ты видишь, как [npc2.she] силой засовывает испачканные в сперме пальцы [npc2.her] в рот твоей спутницы. [npc2.speech(Вылизывай меня, сучка.)]
 				</p>
 				<p>
-					With little choice but to do as [npc.sheIs] told, [npc.name] licks the cum from [npc2.namePos] fingers
+					Почти не имея выбора, кроме как подчиниться приказу [npc.sheIs], [npc.name] слизывает сперму с пальцев [npc2.namePos]
 					#IF npc.isVisiblyPregnant()
-					#THEN.
+					#ЗАТЕМ.
 					#ELSE, and as [npc.she] do so, you glance down at the imp's seed oozing out of [npc.her] pussy, wondering if it's gotten [npc.herHim] pregnant.
 					#ENDIF
-					 Quickly being forced to swallow down the salty goo that's now in [npc.her] mouth, [npc.name] looks up as [npc2.name] smirks down at [npc.herHim] one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					Быстро заставив себя проглотить соленую жижу, заполнившую рот [npc.her], [npc.name] поднимает взгляд: [npc2.name] в последний раз ухмыляется, глядя на [npc.herHim], после чего собирает свою банду [npc2.her] и исчезает в темных туннелях Submission.
 				#ELSE
-				</p>
+				</p><p>
+Прежде чем [npc.name] успевает среагировать, [npc2.name] делает шаг вперёд, и ты видишь, как [npc2.she] начинает размазывать [npc2.her] пальцы, покрытые спермой, по всему лицу твоей спутницы. [npc2.speech(Не дергайся, сучка. Не хочу пачкать руки.)]
+</p>
 				<p>
-					Before [npc.name] can respond, [npc2.name] steps forwards, and you watch as [npc2.she] starts wiping [npc2.her] cum-coated fingers all over your companion's face. [npc2.speech(Hold still, bitch. I don't want this on my hands.)]
-				</p>
-				<p>
-					With little choice but to do as [npc.sheIs] told, [npc.name] holds still as [npc2.name] wipes [npc2.her] fingers on [npc.her] face.
+					Почти не имея выбора, кроме как подчиниться приказу [npc.sheIs], [npc.name] замирает, пока [npc2.name] вытирает пальцы [npc2.her] о лицо [npc.her].
 					#IF !npc.isVisiblyPregnant()
-					#THEN As the slimy spunk is being spread over [npc.her] cheeks, you glance down at the imp's seed oozing out of [npc.namePos] pussy, and you can't help but wonder if it's gotten [npc.herHim] pregnant.
+					#ЗАТЕМ Пока склизкая сперма размазывается по щекам [npc.her], ты бросаешь взгляд вниз, на сочащееся из киски [npc.namePos] семя беса, и невольно задаешься вопросом: не забеременела ли [npc.herHim]?
 					#ENDIF
-					 Once [npc.her] tormentor is finished, [npc.name] looks up as [npc2.name] smirks down at [npc.herHim] one last time, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					 Когда мучитель [npc.her] заканчивает дело, [npc.name] поднимает взгляд: [npc2.name] в последний раз ухмыляется, глядя на [npc.herHim], после чего собирает свою банду [npc2.her] и исчезает в темных туннелях Submission.
 			#ENDIF
 		#ELSE
-			 Realising that the imps are now finished with [npc.herHim], [npc.name] looks up at the smirking figure of [npc2.name], who then quickly turns away, before gathering [npc2.her] gang and disappearing off into the dark tunnels of Submission.
+					 Осознав, что бесы закончили с [npc.herHim], [npc.name] смотрит на ухмыляющуюся фигуру [npc2.name], которая тут же отворачивается, собирает банду [npc2.her] и исчезает в темных туннелях Submission.
 		#ENDIF
 	</p>
 	<p>
-		[pc.speech(Are you ok, [npc.name]?)] you ask, stepping out from the shadows to return to your companion's side once more.
+		[pc.speech(Ты в порядке, [npc.name]?)] — спрашиваешь ты, выходя из тени, чтобы снова оказаться рядом со своей спутницей.
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 		#THEN
-			[npc.speech(Yeah, it was actually kind of fun!)] [npc.She] happily responds.
+			[npc.speech(Да ладно, это было даже весело!)] [npc.She] радостно отвечает.
 		#ELSE
-			[npc.speech(I guess... I can't believe you made me do that though...)] [npc.Name] responds in a sombre tone.
+			[npc.speech(Наверное... Но до сих пор не верится, что ты заставил меня это сделать...)] [npc.Name] отвечает мрачным тоном.
 		#ENDIF
 	</p>
 	<p>
-		You and [npc.name] then spend some time resting, waiting until your companion has fully recovered from the imp gang-bang before continuing on your way. As you set off, the two of you make sure to keep a very close watch for any more troublesome imps that might be lurking around the nearest corner...
+		Затем ты и [npc.name] проводите какое-то время, отдыхая и дожидаясь, пока твоя спутница полностью придет в себя после группового секса с бесами, прежде чем продолжить путь. Когда вы отправляетесь в дорогу, вы оба стараетесь внимательно следить за каждым углом, чтобы не наткнуться на новых докучливых бесов, которые могут поджидать вас где-то рядом...
 	</p>
 	]]>
 	</htmlContent>

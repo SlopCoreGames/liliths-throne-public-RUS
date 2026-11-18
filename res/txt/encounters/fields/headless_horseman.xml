@@ -5,29 +5,29 @@
 	
 	<htmlContent tag="WARNING"><![CDATA[
 	<p>
-		As you continue to travel through the Foloi Fields, you suddenly spot a squat, wooden signpost sitting by the side of the road up ahead. Approaching this curiosity, you see that the board bears a warning, and you stop to read:
+		Пока ты продолжаешь свой путь через поля Фолой, впереди у дороги ты вдруг замечаешь приземистый деревянный указатель. Подойдя поближе к этой диковинке, ты видишь на доске предупреждение и останавливаешься, чтобы прочитать:
 	</p>
 	<p style='text-align:center;'>
 	<i>
-		[style.boldOrange(Beware the Headless Horseman!)]
-		<br/>A most foul criminal has once again been reported to be on the prowl! The 'headless horseman' is known to attack innocent citizens and demand that they give him head! Finding him an amusement, Lunette has granted him legal immunity, so all that you can do is try to avoid him!
-		<br/>What is known about this horseman:
-		<br/>- He only attacks at night
-		<br/>- He is only active during the month of October
-		<br/>- He is not interested in money
-		<br/>- He only attacks people whose mouths he can access
-		<br/>Stay safe and don't become his next victim!
+		[style.boldOrange(Остерегайтесь Безголового Всадника!)]
+		<br/>Снова сообщают о появлении крайне мерзкого преступника! Известно, что «Безголовый всадник» нападает на невинных горожан и требует, чтобы они отдали ему голову! Развлекая его, Лунетт даровала ему юридический иммунитет, так что всё, что тебе остается — это пытаться его избежать!
+		<br/>Что известно об этом всаднике:
+		<br/>- Он нападает только ночью
+		<br/>- Он активен только в октябре
+		<br/>- Деньги его не интересуют
+		<br/>- Он нападает только на тех, чей рот ему доступен
+		<br/>Будь осторожен и не стань его следующей жертвой!
 	</i>
 	</p>
 	<p>
-		Taking this warning seriously, you quickly glance around to make sure that this 'headless horseman' isn't lurking somewhere nearby. Thankfully, there's no sign of this menace, and so after again scanning over the facts about the criminal's modus operandi, you prepare to set off and continue on your way...
+		Серьезно отнесясь к предупреждению, ты быстро оглядываешься по сторонам, чтобы убедиться, что этот «безголовый всадник» не затаился где-то рядом. К счастью, признаков угрозы нет, и, еще раз пробежав глазами по фактам о методах работы преступника, ты готовишься отправиться дальше своим путем...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HORSEMAN_NO_ENCOUNTER_HINT"><![CDATA[
 	<p style='text-align:center;'>
-		[style.italicsMinorGood(You won't encounter the headless horseman again tonight!)]
+		[style.italicsMinorGood(Сегодня ночью ты больше не встретишь Безголового всадника!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -37,22 +37,22 @@
 	
 	<htmlContent tag="START"><![CDATA[
 	<p>
-		Although it's mostly wide-open fields which flank either side of the road you find yourself travelling down, now and again you pass by small thickets of densely-packed trees and bushes. At this time of night these tangled copses are absolutely pitch-black, but as you pass by a particularly overgrown patch of foliage, you suddenly spot a floating, yellow light deep within its depths. Just as you catch sight of it, this strange light starts to rapidly move towards you, and you quickly prepare yourself for the worst as it bursts out of the undergrowth and blocks the road ahead.
+		Хотя по обе стороны дороги, по которой ты путь держишь, тянутся в основном бескрайние поля, время от времени тебе попадаются небольшие заросли густых деревьев и кустарников. В такой поздний час эти переплетенные рощи погружены в кромешную тьму, но когда ты проходишь мимо особенно заросшего участка, то внезапно замечаешь в самой глубине чащи парящий желтый огонек. Стоит тебе только разглядеть его, как этот странный свет начинает стремительно приближаться к тебе, и ты успеваешь приготовиться к худшему — в этот миг он вырывается из подлеска и преграждает тебе путь.
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_fields_headless_horseman_encountered))
 		<p>
-			Finally getting a chance to see what exactly this strange light is, you find yourself once again being confronted by some kind of arcane illumination that's glowing out through a creepy face which has been carved into one side of a large pumpkin. Although it looked like it was floating when in the dark copse, you're now able to see that this Jack-o'-Lantern is being worn as a frightening headpiece by a tall figure whose body is otherwise completely concealed by a long, black cloak. Through the eye-slits which have been carved into the pumpkin, you see a pair of red, glowing eyes staring out at you, and before you're able to make a move, this familiar figure calls out in a deep, booming voice, [headHorse.speech(I have chosen you as my victim before! That's right, I am the headless horseman, and once again I demand that you give me head!)]
+		Наконец получив возможность рассмотреть, что же это за странный свет, ты вновь сталкиваешься с неким арканомным сиянием, пробивающимся сквозь жуткую рожу, вырезанную на боку огромной тыквы. Если в темной роще казалось, что она парит в воздухе, то теперь ты видишь, что этот Светильник Джека служит устрашающим головным убором для высокой фигуры, чье тело полностью скрыто длинным черным плащом. Сквозь прорези для глаз, вырезанные в тыкве, на тебя смотрят два красных светящихся глаза, и прежде чем ты успеваешь предпринять хоть какое-то движение, эта знакомая фигура выкрикивает глубоким, громоподобным голосом: [headHorse.speech(Я уже выбирал тебя своей жертвой! Именно так, я — Всадник без головы, и снова требую, чтобы ты отсосала мне!)]
 		</p>
 	#ELSE
-		<p>
-			Finally getting a chance to see what exactly this strange light is, you find your eyes opening wide as you see that it's some kind of arcane illumination that's glowing out through a creepy face which has been carved into one side of a large pumpkin. Although it looked like it was floating when in the dark copse, you're now able to see that this Jack-o'-Lantern is being worn as a frightening headpiece by a tall figure whose body is otherwise completely concealed by a long, black cloak. Through the eye-slits which have been carved into the pumpkin, you see a pair of red, glowing eyes staring out at you, and before you're able to make a move, this figure calls out in a deep, booming voice, [headHorse.speech(This night, you are to become my next victim! That's right, I am the headless horseman, and you shall give me head!)]
-		</p>
+<p>
+Наконец-то тебе выпадает шанс разузнать, что же это за странное сияние. Твои глаза широко распахиваются: ты видишь некое подобие арканы, пробивающейся сквозь жуткую рожу, вырезанную на огромной тыкве. В темной роще она казалась парящей в воздухе, но теперь ты понимаешь, что этот Джек-фонарь служит устрашающей головой высокому существу, чье тело полностью скрыто под длинным черным плащом. Сквозь прорези для глаз, вырезанные в тыкве, на тебя смотрят два красных светящихся глаза, и прежде чем ты успеваешь хоть как-то пошевелиться, фигура выкрикивает глубоким, громоподобным голосом: [headHorse.speech(Этой ночью ты станешь моей следующей жертвой! Именно так, я — всадник без головы, и ты отдашь мне свою голову!)]
+</p>
 	#ENDIF
 	<p>
-		With that, the headless horseman throws open his cloak, revealing to you the fact that he's not wearing any other item of clothing. As he exposes his naked body, you're able to see that this horseman is a greater horse-boy, and the horse-like hair covering his muscular body is completely pitch-black. Looking down, you see that even though it's currently sheathed, he's got a [headHorse.cockGirth], [headHorse.cockLengthValue] horse-cock and a [headHorse.ballsSize] pair of heavy balls between his legs, both of which are covered in ebony skin. In his hands, this horseman is holding a huge [headHorse.mainWeapon], and as he flashes his huge genitals at you, the horseman points this two-handed sword in your direction and hungrily growls, [headHorse.speech(I haven't had any head tonight, and so you're going to give me some! Surrender to me and let me fuck your face, or else I'll have to use force to get my way!)]
+		С этими словами безголовый всадник распахивает свой плащ, открывая тебе тот факт, что на нем нет больше никакой одежды. Когда он обнажает свое нагое тело, ты видишь, что этот всадник — настоящий элитный жеребец, а покрывающие его мускулистое тело лошадиные волосы абсолютно иссиня-черные. Посмотрев вниз, ты замечаешь, что, хоть он сейчас и в ножнах, между его ног скрываются [headHorse.cockGirth], [headHorse.cockLengthValue] лошадиный член и [headHorse.ballsSize] пара тяжелых яиц, и всё это покрыто угольно-черной кожей. В руках всадник держит огромный [headHorse.mainWeapon], и, демонстрируя тебе свои внушительные гениталии, он направляет этот двуручный меч в твою сторону и голодно рычит: [headHorse.speech(Сегодня я еще не получал минета, так что ты его мне дашь! Сдайся и позволь мне трахать твое лицо, иначе мне придется взять тебя силой!)]
 	</p>
 	<p>
-		Remembering the warning sign you saw regarding this headless horseman, you know that he's not going to be interested in taking your money. As such, it seems like your only options are to do as he says and give him some head, or prepare to defend yourself...
+		Вспомнив предупреждающий знак, который ты видела касательно этого безголового всадника, ты понимаешь, что деньги его вряд ли заинтересуют. Похоже, у тебя есть лишь два варианта: сделать то, что он требует, и отсосать ему, или приготовиться к обороне...
 	</p>
 	]]>
 	</htmlContent>
@@ -60,94 +60,94 @@
 	<htmlContent tag="GIVE_HEAD"><![CDATA[
 	<p>
 		#IF(pc.getAddiction(FLUID_TYPE_CUM_HORSE_MORPH)!=null)
-			Hopelessly addicted to horse-cum, you find yourself getting madly turned on and desperate to get a taste of the horseman's seed, and so without needing to be told again, you submissively drop down before him.
+			Безнадежно зависимая от лошадиной спермы, ты чувствуешь, как тебя безумно возбуждает и как сильно тебе хочется попробовать семя всадника, поэтому, не дожидаясь повторных просьб, ты покорно опускаешься перед ним на колени.
 		#ELSE
-			Not wanting to fight such a fearsome figure, you decide to do as the horseman demands, and so without needing to be told again, you submissively drop down before him.
+			Не желая сражаться с такой грозной фигурой, ты решаешь исполнить требование всадника, и, не дожидаясь повторных просьб, ты покорно опускаешься перед ним на колени.
 		#ENDIF
-		 Letting out a deep, approving grunt as he sees that you're willing to give him what he wants, the muscular horse-boy sticks the blade of his [headHorse.mainWeapon] into the ground, before stepping forwards and placing his large, strong hands on the top of your head. Before you can react or say anything in response to this dominant move, the horseman suddenly pulls you forwards and thrusts his groin into your face. Grinding his still-sheathed shaft all over your mouth, he forces you to breathe in the musky, masculine scent of his animalistic genitals as he grunts, [headHorse.speech(Get me hard with your tongue. And put some effort into it!)]
+		Издавая глубокий, одобряющий хрип при виде того, что ты готова дать ему всё, что он хочет, мускулистый кентавр вонзает лезвие своего [headHorse.mainWeapon] в землю, после чего делает шаг вперед и кладет свои огромные, сильные ладони тебе на макушку. Прежде чем ты успеваешь среагировать или что-то ответить на этот властный жест, всадник внезапно тянет тебя на себя и прижимается пахом к твоему лицу. Растирая свой еще не вышедший из ножен член прямо по твоему рту, он заставляет тебя вдыхать мускусный, мужской запах его звериных гениталий, утробно рыча: [headHorse.speech(Разбуди во мне стояк своим языком. И постарайся получше!)]
 	</p>
 	<p>
-		Once again doing as you're told, you dart out your [pc.tongue+] and start to eagerly lick the horse-boy's thick, ebony cock-sheath. Each time you slide your tongue over his salty genitals, the horseman's fat cock pushes out of its sheath a little more and starts to grow harder and larger. In just a moment, you find yourself happily kissing and licking the horseman's huge, erect horse-cock, and after letting out another of his deep, masculine grunts, he orders, [headHorse.speech(Get a taste of my precum, then open wide.)]
+		Снова беспрекословно подчиняясь, ты выстреливаешь своим [pc.tongue+] и начинаешь жадно вылизывать толстую, иссиня-черную кожную складку на члене кентавра. С каждым разом, когда твой язык скользит по его соленым гениталиям, жирный член всадника всё сильнее выпирает из чехла, становясь тверже и больше. Спустя мгновение ты уже вовсю целуешь и лижешь огромный, эрегированный конский член, и, издав очередной глубокий мужской рык, он приказывает: [headHorse.speech(Сначала слижи предэякулят, а потом широко открой рот.)]
 	</p>
 	<p>
-		Once more doing as you're told, you work your way up the length of the horseman's hot, veiny shaft, before pressing your [pc.lips+] against the flared head of his horse-like cock and eagerly lapping up the salty, slimy precum that's starting to ooze out from his urethra. After planting one last a passionate kiss on his animalistic dick, you open wide, and without waiting a single moment, the impatient horseman roughly thrusts forwards and forces the massive, flared head of his shaft into your mouth. Gripping your head tightly in both hands, the oral-obsessed horse-boy slams his hips forwards, forcing his huge cock as deep as possible down your throat. Only concerned with his own pleasure, he ignores your choking, gargling splutters, and after pulling back, he thrusts forwards once again and starts to relentlessly fuck your face, causing a stream of cummy saliva to begin to drool from the corners of your mouth...
+		В очередной раз послушно выполняя приказы, ты проводишь языком вдоль горячего, испещренного венами ствола всадника, прежде чем прижать свой [pc.lips+] к расширенной головке его лошачьего члена, жадно слизывая соленую, склизкую предэякуляцию, что начинает сочиться из его уретры. Оставив последний страстный поцелуй на его зверином достоинстве, ты широко открываешь рот, и не теряя ни секунды, нетерпеливый всадник грубо толкается вперед, вбивая массивную расширенную головку своего члена тебе в глотку. Крепко сжимая твою голову обеими руками, одержимый оральным сексом конь-мальчик с силой подается тазом вперед, заталкивая свой огромный член так глубоко в твое горло, насколько это возможно. Заботясь лишь о собственном удовольствии, он игнорирует твое давящее, булькающее хрипение, а затем, отстранившись, снова резко толкается и начинает безжалостно трахать твое лицо, отчего из уголков твоего рта начинает течь струйка слюны вперемешку со спермой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_SUB"><![CDATA[
 	<p>
-		Ramming his cock deep down your throat one last time, the horseman, having got the head he was seeking, pulls all the way back and slides his softening shaft out of your mouth. Grabbing his semi-flaccid cock with one hand, he slaps its cummy, saliva-coated length against your [pc.lips+], grunting in amused satisfaction, [headHorse.speech(You're addicted to horse cum now. So show me how much you need it. Lick me clean.)]
+		В последний раз вонзив свой член глубоко тебе в глотку, всадник, наконец достигнув желаемой цели, полностью отстраняется и вытягивает свой обмякающий ствол из твоего рта. Схватив свой полуобмякший член одной рукой, он с довольным хмыканьем шлепает его липкой от спермы и слюны длиной по твоему [pc.lips+], [headHorse.speech(Теперь ты зависишь от лошадиной спермы. Так покажи мне, как сильно она тебе нужна. Вылижи меня дочиста.)]
 	</p>
 	<p>
-		The desperate urge in your mind to get another taste of the horseman's seed lets you know that what he's saying is the truth, and before you can think twice about it, you're eagerly running your [pc.tongue+] all over the horseman's ebony shaft, swallowing down every last drop of slimy cum that you can find. Despite your oral attention, the horseman seems to have had enough for one night, and within a few moments, his huge shaft has once again softened and withdrawn into its sheath. Desperately sliding your tongue into the thick folds of skin which protect the horseman's cock, you find yourself letting out a series of pathetic, whining moans.
+		Отчаянное желание вновь ощутить вкус семени всадника подсказывает тебе, что его слова — чистая правда. Прежде чем ты успеваешь о чем-то подумать, ты уже жадно водишь своим [pc.tongue+] по эбеновому стволу всадника, заглатывая каждую каплю скользкой спермы, которую только можешь найти. Несмотря на твое оральное усердие, всаднику, кажется, на сегодня хватит, и спустя мгновение его огромный член снова размягчается и уходит в плоть. Отчаянно просовывая язык в толстые складки кожи, защищающие член всадника, ты невольно издаешь серию жалких, скулящих стонов.
 	</p>
 	<p>
-		[headHorse.speech(That's enough for tonight,)] the horse-boy booms, before pushing you away from his groin and taking a step back. Looking down at you through the eye slots of the Jack-o'-Lantern he's still wearing, the horseman grunts, [headHorse.speech(If I see you again, I'll be sure to offer you another load of my cum.)]
+		[headHorse.speech(На сегодня хватит,)] — гремит конь-мальчик, отталкивая тебя от своего паха и делая шаг назад. Глядя на тебя сквозь прорези в тыкве-фонаре, которую он всё еще носит, всадник хмыкает: [headHorse.speech(Если увижу тебя снова, обязательно предложу тебе еще порцию своей спермы.)]
 	</p>
 	<p>
-		Without so much as a farewell, the horseman turns about on the spot, and after retrieving his [headHorse.mainWeapon] from where he left it earlier, he runs off into the night, leaving you with little else to do except gather your thoughts and continue on your way...
+		Даже не попрощавшись, всадник разворачивается на месте, забирает свой [headHorse.mainWeapon] там, где оставил его ранее, и уносится в ночную тьму, оставляя тебе нечего делать, кроме как собраться с мыслями и продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON"><![CDATA[
 	<p>
-		Although his physical appearance would suggest that he'd be a strong opponent, the headless horseman was no match for you, and after half-heartedly swinging his [headHorse.mainWeapon] at you one last time, he sinks down onto one knee and pants, [headHorse.speech(Wait... No more... I am defeated...)]
+		Хотя его внешний вид и намекал на то, что он будет сильным противником, безголовый всадник не смог тебе противостоять. Слабо махнув в твою сторону своим [headHorse.mainWeapon] в последний раз, он опускается на одно колено и тяжело дышит: [headHorse.speech(Погоди... Еще нет... Я побежден...)]
 	</p>
 	<p>
 		#IF(headHorse.getClothingInSlot(IS_HEAD)!=null && headHorse.getClothingInSlot(IS_HEAD).getClothingType()==CT_innoxia_head_jack_o_lantern)
-			With the glowing Jack-o'-Lantern still securely in place on his head, your foe makes for a curious and frightening sight.
+			С пылающим фонарем-тыквой вместо головы твой враг выглядит одновременно и диковинно, и пугающе.
 		#ELSE
-			Although you've taken the glowing Jack-o'-Lantern off his head, your foe's glowing red eyes and pitch-black fur still gives him a fearsome look.
+			Хотя ты уже сняла светящуюся тыкву с его головы, горящие красные глаза и иссиня-черный мех всё равно придают твоему противнику грозный вид.
 		#ENDIF
-		 Despite his alarming appearance, however, he remains defeated and repeats his declaration of surrender, leaving you wondering what to do with him...
+		Несмотря на его пугающую внешность, он повержен и вновь заявляет о своей капитуляции, заставляя тебя гадать, что же с ним делать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_END"><![CDATA[
 	<p>
-		Deciding that you're finished with the headless horseman, you [pc.step] past him and leave him panting for breath as you continue on your way through the Foloi Fields...
+		Решив, что с безголовым всадником покончено, ты [pc.step] мимо него, оставляя его тяжело дышать позади, и продолжаешь свой путь через поля Фолой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SEX"><![CDATA[
 	<p>
-		Liking the look of the horseman's muscular, masculine body, as well as his huge, sheathed cock and heavy balls, you decide that you'd like to have some fun with him. [pc.Stepping] up to where he's still collapsed down on one knee, you tell the horseman that tonight's his lucky night, as you've decided to use him to satisfy your lust.
+		Тебе приглянулось мускулистое мужское тело всадника, а также его огромный, скрытый в препуции член и тяжелые яички, поэтому ты решаешь немного развлечься с ним. [pc.Stepping] к нему, пока он всё еще стоит на одном колене, и говоришь всаднику, что сегодня его счастливая ночь, ведь ты решила использовать его, чтобы утолить свою похоть.
 	</p>
 	<p>
-		[headHorse.speech(If that's the case, then use that mouth of yours to suck my cock,)] he audaciously grunts. Telling him that he's in no position to be making such demands, you order the horseman to stand. Doing as he's told, your defeated foe rises to his [headHorse.feet], enabling you to slide your [pc.fingers] over the thick sheath between his legs. Much to your delight, his cock quickly responds to your touch, and within a moment, his hot, thick horse-shaft is fully erect and standing to attention.
+		[headHorse.speech(Раз так, то используй свой рот, чтобы отсосать мой член,)] — дерзко хрипит он. Сказав ему, что он не в том положении, чтобы выдвигать подобные требования, ты приказываешь всаднику встать. Повинуясь приказу, твой поверженный враг поднимается на [headHorse.feet], что позволяет тебе скользнуть своей [pc.fingers] по толстой препуции между его ног. К твоему delight, его член быстро отзывается на твои прикосновения, и всего мгновение спустя его горячий, толстый конский ствол полностью эрегирован и стоит по стойке смирно.
 	</p>
 	<p>
-		[headHorse.speech(Just let me pump a load inside of you,)] he eagerly grunts in his deep, gruff voice. Deciding to make him wait and see what it is you're planning to do with him, you ignore the horseman's comment as you [pc.step] forwards and prepare to have your way with him...
+		[headHorse.speech(Просто дай мне кончить в тебя,)] — нетерпеливо хрипит он своим глубоким, грубым голосом. Решив заставить его подождать и посмотреть, что ты задумала, ты игнорируешь комментарий всадника, пока [pc.step] вперед, готовясь потешить свое желание...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SEX_GENTLE"><![CDATA[
 	<p>
-		Liking the look of the horseman's muscular, masculine body, as well as his huge, sheathed cock and heavy balls, you decide that you'd like to have some fun with him. [pc.Stepping] up to where he's still collapsed down on one knee, you tell the horseman that tonight's his lucky night, as you've decided to use him to satisfy your lust.
+		Тебе приглянулось мускулистое мужское тело всадника, а также его огромный, скрытый в препуции член и тяжелые яички, поэтому ты решаешь немного развлечься с ним. [pc.Stepping] к нему, пока он всё еще стоит на одном колене, и говоришь всаднику, что сегодня его счастливая ночь, ведь ты решила использовать его, чтобы утолить свою похоть.
 	</p>
 	<p>
-		[headHorse.speech(If that's the case, then use that mouth of yours to suck my cock,)] he audaciously grunts. Gently informing him that he's in no position to be making such demands, you ask the horseman to stand. Doing as he's told, your defeated foe rises to his [headHorse.feet], enabling you to softly tease your [pc.fingers] over the thick sheath between his legs. Much to your delight, his cock quickly responds to your touch, and within a moment, his hot, thick horse-shaft is fully erect and standing to attention.
+		[headHorse.speech(Раз так, то используй свой рот, чтобы сосать мой член,)] — дерзко ворчит он. Мягко давая ему понять, что он не в том положении, чтобы диктовать условия, ты просишь всадника встать. Повинуясь приказу, твой поверженный враг поднимается на [headHorse.feet], что позволяет тебе нежно ласкать свой [pc.fingers] поверх толстой препуциальной складки между его ног. К твоему delight, его член мгновенно отзывается на твои прикосновения, и всего через мгновение его горячий, толстый конский ствол полностью эрегирован и стоит торчком.
 	</p>
 	<p>
-		[headHorse.speech(Just let me pump a load inside of you,)] he eagerly grunts in his deep, gruff voice. Deciding to make him wait and see what it is you're planning to do with him, you ignore the horseman's comment as you [pc.step] forwards and prepare to have your way with him...
+		[headHorse.speech(Просто дай мне кончить в тебя,)] — нетерпеливо хрипит он своим глубоким, грубым голосом. Решив заставить его подождать и посмотреть, что ты задумала, ты игнорируешь комментарий всадника, пока [pc.step] вперед, готовясь потешить свое желание...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SEX_ROUGH"><![CDATA[
 	<p>
-		Liking the look of the horseman's muscular, masculine body, as well as his huge, sheathed cock and heavy balls, you decide that you'd like to have some fun with him. [pc.Stepping] up to where he's still collapsed down on one knee, you tell the horseman that tonight's his lucky night, as you've decided to use him to satisfy your lust.
+		Тебе приглянулось мускулистое мужское тело всадника, а также его огромный, скрытый в препуции член и тяжелые яички, поэтому ты решаешь немного развлечься с ним. [pc.Stepping] к нему, пока он всё еще стоит на одном колене, и говоришь всаднику, что сегодня его счастливая ночь, ведь ты решила использовать его, чтобы утолить свою похоть.
 	</p>
 	<p>
-		[headHorse.speech(If that's the case, then use that mouth of yours to suck my cock,)] he audaciously grunts. Roughly snapping back that he's in no position to be making such demands, you order the horseman to stand. Doing as he's told, your defeated foe rises to his [headHorse.feet], enabling you to forcefully rub your [pc.fingers] over the thick sheath between his legs. Much to your delight, his cock quickly responds to your touch, and within a moment, his hot, thick horse-shaft is fully erect and standing to attention.
+		[headHorse.speech(Раз так, тогда используй свой ротик, чтобы отсосать мой член,)] — дерзко хрипит он. Грубо возразив, что сейчас не время выдвигать такие требования, ты приказываешь всаднику встать. Повинуясь приказу, твой поверженный враг поднимается на [headHorse.feet], что позволяет тебе с силой тереться своим [pc.fingers] о толстую препуциальную складку между его ног. К твоему восторгу, его член быстро отзывается на твои ласки, и всего мгновение спустя его горячий, толстый конский ствол полностью эрегирован и стоит по стойке смирно.
 	</p>
 	<p>
-		[headHorse.speech(Just let me pump a load inside of you,)] he eagerly grunts in his deep, gruff voice. Deciding to make him wait and see what it is you're planning to do with him, you tell the horseman to shut up as you [pc.step] forwards and prepare to have your way with him...
+		[headHorse.speech(Просто дай мне кончить в тебя,)] — жадно хрипит он своим глубоким, грубым голосом. Решив заставить его подождать и посмотреть, что ты задумала, ты приказываешь всаднику заткнуться, пока сама [pc.step] вперед, готовясь пуститься с ним во все тяжкие...
 	</p>
 	]]>
 	</htmlContent>
@@ -155,93 +155,96 @@
 	<htmlContent tag="COMBAT_WON_GIVE_HEAD"><![CDATA[
 	<p>
 		#IF(pc.getAddiction(FLUID_TYPE_CUM_HORSE_MORPH)!=null)
-			Hopelessly addicted to horse-cum, you find yourself getting madly turned on and desperate to get a taste of the horseman's seed,
+			Безнадежно зависимая от лошадиной спермы, ты чувствуешь, как безумно возбуждаешься, отчаянно желая попробовать семя всадника,
 		#ELSE
-			Feeling sorry for the horseman, you decide that it would be best to give him what he wants,
+			Пожалев всадника, ты решаешь, что будет лучше всего дать ему то, чего он так хочет,
 		#ENDIF
-		 and so instead of using your victory to your advantage, you submissively drop down before him and tell him to do whatever he likes with you. Letting out a deep, surprised grunt as he sees that you're willing to give him what he wants, the muscular horse-boy rises to his [headHorse.feet], before stepping forwards and placing his large, strong hands on the top of your head. Seeing that you're serious about submitting to him, the horseman lets out another deep grunt, before pulling you forwards and thrusting his groin into your face. Grinding his still-sheathed shaft all over your mouth, he forces you to breathe in the musky, masculine scent of his animalistic genitals as he grunts, [headHorse.speech(Get me hard with your tongue. And put some effort into it!)]
+		И вместо того чтобы использовать свою победу, ты покорно падаешь перед ним на колени, позволяя ему делать с тобой всё, что угодно. Издав глубокий, удивленный хрип при виде твоей готовности отдать ему всё, что он хочет, мускулистый жеребец выпрямляется во весь свой [headHorse.feet], после чего делает шаг вперед и кладет свои огромные, сильные ладони тебе на макушку. Видя, что ты настроена серьезно, всадник снова глухо рычит, притягивает тебя к себе и с силой вжимает свой пах тебе в лицо. Растирая свой еще не вышедший из препуция член о твои губы, он заставляет тебя вдыхать мускусный, мужской запах его звериных гениталий, хрипло командуя: [headHorse.speech(Разбуди во мне возбуждение своим языком. И постарайся получше!)]
 	</p>
 	<p>
-		Doing as you're told, you dart out your [pc.tongue+] and start to eagerly lick the horse-boy's thick, ebony cock-sheath. Each time you slide your tongue over his salty genitals, the horseman's fat cock pushes out of its sheath a little more and starts to grow harder and larger. In just a moment, you find yourself happily kissing and licking the horseman's huge, erect horse-cock, and after letting out another of his deep, masculine grunts, he orders, [headHorse.speech(Get a taste of my precum, then open wide.)]
+		Повинуясь приказу, ты высовываешь свой [pc.tongue+] и начинаешь жадно вылизывать толстую, иссиня-черную кожную складку на члене жеребца. С каждым разом, когда твой язык скользит по его соленым гениталиям, толстый член всадника всё сильнее вырывается из препуция, становясь тверже и больше. Спустя мгновение ты уже вовсю целуешь и лижешь огромный, эрегированный конский член, и, издав очередной глубокий мужской рык, он приказывает: [headHorse.speech(Сначала попробуй мою предэякуляцию, а потом раскрой рот пошире.)]
 	</p>
 	<p>
-		Once more doing as you're told, you work your way up the length of the horseman's hot, veiny shaft, before pressing your [pc.lips+] against the flared head of his horse-like cock and eagerly lapping up the salty, slimy precum that's starting to ooze out from his urethra. After planting one last a passionate kiss on his animalistic dick, you open wide, and without waiting a single moment, the impatient horseman roughly thrusts forwards and forces the massive, flared head of his shaft into your mouth. Gripping your head tightly in both hands, the oral-obsessed horse-boy slams his hips forwards, forcing his huge cock as deep as possible down your throat. Only concerned with his own pleasure, he ignores your choking, gargling splutters, and after pulling back, he thrusts forwards once again and starts to relentlessly fuck your face, causing a stream of cummy saliva to begin to drool from the corners of your mouth...
+		В очередной раз послушно выполняя приказы, ты проводишь языком вдоль горячего, испещренного венами ствола всадника, прежде чем прижать свой [pc.lips+] к расширенной головке его лошачьего члена, жадно слизывая соленую, склизкую предэякуляцию, что начинает сочиться из его уретры. Оставив последний страстный поцелуй на его зверином достоинстве, ты широко открываешь рот, и не теряя ни секунды, нетерпеливый всадник грубо толкается вперед, вбивая массивную расширенную головку своего члена тебе в глотку. Крепко сжимая твою голову обеими руками, одержимый оральным сексом конь-мальчик с силой подается тазом вперед, заталкивая свой огромный член так глубоко в твое горло, насколько это возможно. Заботясь лишь о собственном удовольствии, он игнорирует твое давящее, булькающее хрипение, а затем, отстранившись, снова резко толкается и начинает безжалостно трахать твое лицо, отчего из уголков твоего рта начинает течь струйка слюны вперемешку со спермой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_DOM"><![CDATA[
 	<p>
-		Having had your fun with the [headHorse.name], you push him away from you, and with one last deep, masculine grunt, the horse-boy collapses to the floor in complete exhaustion. As he continues to heavily pant for breath, you quickly get your things back in order, before wondering whether to help yourself to any of his possessions, or to instead simply continue on your way and leave him behind...
+	
+	Насладившись [headHorse.name], ты отталкиваешь его от себя, и с последним глубоким мужским стоном конь-мальчик валится на пол в полном изнеможении. Пока он продолжает тяжело и часто дышать, ты быстро приводишь свои вещи в порядок, раздумывая, стоит ли прибрать к рукам что-нибудь из его имущества или же просто отправиться дальше, оставив его позади...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_DOM_END"><![CDATA[
 	<p>
-		Deciding that you're finished with the headless horseman, you [pc.step] past him and leave him panting for breath as you continue on your way through the Foloi Fields...
+		Решив, что с безголовым всадником покончено, ты [pc.step] мимо него, оставляя его тяжело дышать позади, и продолжаешь свой путь через поля Фолой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_TALK"><![CDATA[
 	<p>
-		Wanting to get some answers, you ask the headless horseman why he's attacking innocent travellers and demanding head from them. Although he lets out a deep grunt in annoyance at your decision to question him, the horse-boy nevertheless answers you in his booming voice, [headHorse.speech(Wel, my cock's not going to suck itself is it? I got bored of all the whores and easy sluts in the city, so I thought I'd look to get my cock sucked out here. It's a lot more fun doing it this way...)]
+	
+	Желая получить ответы, ты спрашиваешь безголового всадника, зачем он нападает на невинных путешественников и требует у них головы. Хотя он издает глубокий раздраженный стон от твоего решения допрашивать его, конь-мальчик всё же отвечает тебе своим громовым голосом: [headHorse.speech(Ну, мой член сам себя не отсосет, верно? Мне наскучили все эти шлюхи и доступные девки в городе, вот я и решил поискать, кому бы дать отсоса здесь. Так куда веселее...)]
 	</p>
 	<p>
-		Not content with the simplicity of his answer, you tell the horseman that he'd better tell you the truth, or else his nights of hunting for head will be well and truly over. Letting out a laugh, he asks, [headHorse.speech(What, is that not a good enough reason for you? I like fucking people's faces, that's all there is to it. Oh, and I've got Lunette's protection, so don't try to threaten me with the Enforcers or slavery or any of that shit. Now I've answered your questions, you'd better thank me. Get down and open that pretty little mouth of yours so that I can empty my fat balls deep down your throat.)]
+	
+	Недовольная простотой его ответа, ты говоришь всаднику, что ему лучше сказать правду, иначе его охота за «головами» будет окончательно и бесповоротно окончена. Рассмеявшись, он спрашивает: [headHorse.speech(Что, тебе этого мало? Мне просто нравится трахать людям лица, вот и всё. О, и у меня есть защита Лунетт, так что не пытайся угрожать мне Enforcer, рабством или всей этой херней. Раз уж я ответил на твои вопросы, тебе стоит меня поблагодарить. А теперь опускайся на колени и открой свой прелестный ротик, чтобы я мог засадить свои жирные яйца тебе глубоко в глотку.)]
 	</p>
 	<p>
-		Discovering that this horseman's motives are extremely one-dimensional, you realise that there's no point in asking him any further questions. Looking down at your defeated foe, you wonder what to do with him...
+		Поняв, что мотивы этого всадника крайне примитивны, ты осознаёшь, что нет никакого смысла задавать ему лишние вопросы. Глядя на поверженного врага, ты раздумываешь, что с ним делать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST"><![CDATA[
 	<p>
-		The headless horseman proves to be too formidable a foe for you to defeat, and after taking a [pc.step] backwards and collapsing down to the ground, you indicate to him that you surrender. Letting out a deep, booming laugh in response, he declares, [headHorse.speech(You were foolish to try and resist your fate!)]
+		Безголовый всадник оказывается слишком грозным противником. Отступив на [pc.step] и рухнув на землю, ты показываешь ему, что сдаёшься. В ответ он разражается глубоким, громовым смехом и заявляет: [headHorse.speech(Ты было глупо пытаться сопротивляться судьбе!)]
 	</p>
 	<p>
-		Having secured his victory over you, the muscular horse-boy sticks the blade of his [headHorse.mainWeapon] into the ground, before stepping forwards and placing his large, strong hands on the top of your head. Before you can react or say anything in response to this dominant move, the horseman suddenly pulls you forwards and thrusts his groin into your face. Grinding his still-sheathed shaft all over your mouth, he forces you to breathe in the musky, masculine scent of his animalistic genitals as he grunts, [headHorse.speech(Get me hard with your tongue. And put some effort into it!)]
+		Одержав над тобой победу, мускулистый конь-мальчик вонзает лезвие своего [headHorse.mainWeapon] в землю, после чего делает шаг вперёд и кладет свои большие, сильные ладони тебе на макушку. Прежде чем ты успеваешь среагировать или что-то сказать в ответ на этот властный жест, всадник внезапно тянет тебя на себя и прижимается пахом к твоему лицу. Втирая свой всё ещё не обтянутый плотью член в твой рот, он заставляет тебя вдыхать мускусный, мужской запах его животного естества, хрипло рыча: [headHorse.speech(Доведи меня до стояка своим языком. И постарайся получше!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_GIVE_HEAD"><![CDATA[
 	<p>
-		With the strong, muscular horse-boy overpowering you and grinding his musky genitals all over your face, you see no way out of your predicament except to do as you're told and lick the horse-boy's thick, ebony cock-sheath. Each time you slide your [pc.tongue+] over his salty genitals, the horseman's fat cock pushes out of its sheath a little more and starts to grow harder and larger. In just a moment, you find yourself kissing and licking the horseman's huge, erect horse-cock, and after letting out another of his deep, masculine grunts, he orders, [headHorse.speech(Get a taste of my precum, then open wide.)]
+		Когда сильный, мускулистый жеребец-мальчик одолевает тебя, втирая свои пахнущие мускусом гениталии тебе в лицо, ты не видишь иного выхода, кроме как подчиниться и начать вылизывать толстую, иссиня-черную кожную складку его конского члена. Каждый раз, когда ты проводишь своим [pc.tongue+] по его соленым яйцам, жирный член всадника всё сильнее вырывается из чехла, становясь тверже и больше. Спустя мгновение ты уже вовсю целуешь и лижешь огромный, эрегированный конский член, и, издав очередной глубокий мужской рык, он приказывает: [headHorse.speech(Сначала попробуй мою предэякуляцию, а потом открывай рот шире.)]
 	</p>
 	<p>
-		Seeing no other option but to do as you're told, you work your tongue up the length of the horseman's hot, veiny shaft, before pressing your [pc.lips+] against the flared head of his horse-like cock and eagerly lapping up the salty, slimy precum that's starting to ooze out from his urethra. After planting one last a passionate kiss on his animalistic dick, you open wide, and without waiting a single moment, the impatient horseman roughly thrusts forwards and forces the massive, flared head of his shaft into your mouth. Gripping your head tightly in both hands, the oral-obsessed horse-boy slams his hips forwards, forcing his huge cock as deep as possible down your throat. Only concerned with his own pleasure, he ignores your choking, gargling splutters, and after pulling back, he thrusts forwards once again and starts to relentlessly fuck your face, causing a stream of cummy saliva to begin to drool from the corners of your mouth...
+		Не видя иного выхода, кроме как подчиниться, ты проводишь языком по всей длине горячего, вздутого венами ствола всадника, а затем прижимаешься [pc.lips+] к расширенной головке его конского члена, жадно слизывая соленую, скользкую смазку, что начинает сочиться из уретры. Оставив последний страстный поцелуй на его зверином члене, ты широко открываешь рот, и не теряя ни секунды, нетерпеливый всадник грубо толкается вперед, втискивая массивную, расширенную головку тебе в рот. Крепко обхватив твою голову обеими руками, одержимый оральным сексом жеребец-мальчик резко подается тазом, заталкивая свой огромный член как можно глубже тебе в глотку. Заботясь лишь о собственном удовольствии, он игнорирует твое удушливое, булькающее хрипение, а отстранившись лишь на миг, снова резко влетает вперед и начинает безжалостно трахать твое лицо, отчего из уголков твоего рта начинает течь струйка слюны, смешанной с его соком...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_GIVE_HEAD_RESIST"><![CDATA[
 	<p>
-		Although the strong, muscular horse-boy is overpowering you and grinding his musky genitals all over your face, you refuse to do as he says and try to pull your face away from his thick, ebony cock-sheath. Despite your refusal to follow his orders, the stimulation from rubbing his sheathed cock against your mouth starts to get the horseman hard, and you watch in growing horror as his fat cock pushes out of its sheath and begins to get harder and larger. In just a moment, his huge, erect horse-cock is sliding up and down over your face, and after letting out another of his deep, masculine grunts, he impatiently booms, [headHorse.speech(Stop trying to resist! My cock's going down your throat one way or another!)]
+		Хотя сильный, мускулистый конь-мальчик подавляет тебя, втирая свои мускусные гениталии прямо в твое лицо, ты отказываешься подчиняться и пытаешься отстраниться от его толстой эбеновой кожной складки. Несмотря на твое неповиновение, трение его скрытого члена о твои губы начинает возбуждать всадника, и ты с растущим ужасом наблюдаешь, как его жирный член вырывается из чехла, становясь всё тверже и больше. Спустя мгновение его огромный, эрегированный лошадиный член уже скользит вверх и вниз по твоему лицу, и, издав очередной глубокий мужской стон, он нетерпеливо гремит: [headHorse.speech(Хватит сопротивляться! Мой член всё равно залезет тебе в глотку, так или иначе!)]
 	</p>
 	<p>
-		Ignoring the horseman's words, you continue to struggle against him, which succeeds in only annoying him further. Not willing to put up with your attitude, the muscular horse-boy grabs hold of you by the [pc.arm], and you find yourself unable to fight back as he half-leads, half-drags you over to a nearby fallen tree. Roughly throwing you down face-first over it, he quickly vaults the sturdy log and once again grabs hold of your face. With your new position severely limiting your ability to pull away, you're unable to prevent the horseman from pushing his huge, flared head up against your face. Musky precum oozes out of his urethra, quickly coating your [pc.lips+] and causing you to let out a protesting cry. Deeply grunting, the horseman booms, [headHorse.speech(Take it, bitch.)]
+		Игнорируя слова всадника, ты продолжаешь бороться, но это лишь сильнее раздражает его. Не желая мириться с твоим поведением, мускулистый конь-мальчик хватает тебя за [pc.arm], и ты понимаешь, что не в силах сопротивляться, пока он полуведет, полутащит тебя к поваленному неподалеку дереву. Грубо швырнув тебя лицом вниз на ствол, он ловко перепрыгивает через крепкое бревно и снова вцепляется тебе в лицо. Твое новое положение лишает тебя возможности отстраниться, и ты не можешь помешать всаднику прижать его огромную, расширенную головку к твоему лицу. Мускусная предэякулярия сочащаяся из уретры, быстро покрывает твой [pc.lips+], заставляя тебя издать протестующий крик. Глубоко рыча, всадник гремит: [headHorse.speech(Принимай, сучка.)]
 	</p>
 	<p>
-		Despite your best efforts to resist, the horseman eventually manages to force the head of his hot, musky cock past your [pc.lips+], and before you can try to pull away, he's violently thrusting forwards and slamming his thick, ebony shaft deep down your throat. Having finally got his way, the horse-boy keeps his massive shaft hilted as deep as physically possible down your throat, and ignoring your choking, gargling splutters, he gloats in his deep, rough voice, [headHorse.speech(You like that? ~Mmm!~ Keep resisting, bitch; your cries only make your throat tighter. ~Aah!~ I'll be emptying my balls in no time if you carry on like this!)]
+		Как бы ты ни старалась сопротивляться, в конце концов всаднику удается пропихнуть головку своего горячего, мускусного члена мимо твоих [pc.lips+], и прежде чем ты успеваешь отстраниться, он с силой всаживает свой толстый эбеновый ствол глубоко тебе в глотку. Добившись своего, конь-мальчик удерживает свой массивный член глубоко в твоем горле, насколько это физически возможно, и, игнорируя твои захлебывающиеся, булькающие всхлипы, он торжествует своим глубоким, хриплым голосом: [headHorse.speech(Нравится? ~Ммм!~ Сопротивляйся дальше, сучка; от твоих криков горло сжимается еще сильнее. ~Аах!~ Если будешь продолжать в том же духе, я мигом опустошу свои яйца!)]
 	</p>
 	<p>
-		Still gripping your head tightly in both hands, the oral-obsessed horse-boy pulls his hips back, and you feel the wide, flared head of his cock sliding up your throat as he starts to withdraw his cock from your mouth. Just as you think that he's going to completely withdraw his throbbing shaft and put an end to this, the horseman violently thrusts forwards once again, grunting in delight as he fills your throat and causes you to let out another choking splutter. Having got the head which he was so desperately craving, the horseman keeps you bent over the fallen tree as he starts to relentlessly fuck your face, causing a stream of cummy saliva to begin to drool from the corners of your mouth...
+		Все еще крепко сжимая твою голову обеими руками, одержимый оральным сексом конь-мальчик отводит бедра назад, и ты чувствуешь, как широкая, раздутая головка его члена скользит вверх по твоему горлу, когда он начинает выходить изо рта. Как раз в тот момент, когда ты думаешь, что он полностью вытащит свой пульсирующий ствол и положит этому конец, всадник снова яростно толкается вперед, довольно рыча от удовольствия, когда он заполняет твое горло, заставляя тебя снова захлебнуться. Добравшись до головки, которой он так жаждал, всадник заставляет тебя оставаться согнутой над поваленным деревом и начинает безжалостно трахать твое лицо, отчего из уголков твоего рта начинает течь струйка слюны вперемешку со спермой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_CONTINUE"><![CDATA[
 	<p>
-		Not at all willing to give this horseman the head which he's after, you pull away from his musky sheath is disgust and tell him that you'll never do as he asks. Letting out a deep, angry grunt, the horse-boy declares, [headHorse.speech(You're lucky that I've got no interest in forcing you to do it.)]
+		Совсем не желая отдавать этому всаднику голову, за которой он охотится, ты отстраняешься от его мускулистой щели с чувством отвращения и заявляешь, что никогда не сделаешь так, как он просит. Издав глубокий, сердитый рык, конь-мальчик объявляет: [headHorse.speech(Тебе повезло, что у меня нет желания принуждать тебя к этому.)]
 	</p>
 	<p>
-		Pushing you away from his groin, the horse-boy takes a step back before heading over to retrieve his [headHorse.mainWeapon]. Turning to look back at you through the eye slots of the Jack-o'-Lantern he's still wearing, the horseman grunts, [headHorse.speech(You'll have changed you mind for the next time, I'm sure of it. If I see you again, I'll be sure to offer you another load of my cum.)]
+		Оттолкнув тебя от своего паха, конь-мальчик делает шаг назад, а затем направляется за своей [headHorse.mainWeapon]. Обернувшись, чтобы взглянуть на тебя сквозь прорези для глаз в надетом на него Джек-о'-лантерне, всадник хмыкает: [headHorse.speech(В следующий раз ты еще передумаешь, я в этом уверен. Если увижу тебя снова, обязательно предложу тебе еще порцию моей спермы.)]
 	</p>
 	<p>
-		Without so much as a farewell, the horseman turns about on the spot and runs off into the night, leaving you with little else to do except gather your thoughts and continue on your way...
+		Даже не попрощавшись, всадник разворачивается на месте и убегает в ночь, не оставляя тебе иного выбора, кроме как собраться с мыслями и продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -251,91 +254,90 @@
 	
 	<htmlContent tag="FULLY_SUBMIT"><![CDATA[
 	<p>
-		Your addiction to horse-cum starts to weigh heavily on your mind, and before you know what you're doing, you catch yourself staring in desperate longing at the headless horseman's heavy balls and sheathed cock. Letting out a hungry whine, you decide that you're going to have to do whatever it takes to get your next fix of hot, musky horse-jizz, and so drop down before the horse-boy and declare your complete and utter submission to him and his fat, delicious cock. Although you can't see his face through the Jack-o'-Lantern he's wearing, you're sure that he must be smirking in satisfaction as he grunts, [headHorse.speech(That's what I like to hear.)]
+		Твоя зависимость от лошадиной спермы начинает давить на разум, и не успеваешь ты опомниться, как ловишь себя на том, что с отчаянной жаждой во взгляде пялишься на тяжелые яйца и спрятанный в складках член безголового всадника. Издав голодный скулеж, ты решаешь, что пойдешь на всё, чтобы получить свою следующую дозу горячей, мускусной лошадиной кончи, и опускаешься на колени перед конь-мальчиком, объявляя о своем полном и безоговорочном подчинении ему и его толстому, восхитительному члену. И хотя ты не видишь его лица из-за Джек-о'-лантерна, ты уверена, что он довольно ухмыляется, когда он рычит: [headHorse.speech(Вот это то, что мне нравится!)]
 	</p>
 	<p>
-		Stepping over to a nearby fallen tree, the horseman sits down on it and spreads his legs so as to present himself to you. Not needing to be told what to do, you quickly shuffle forwards and drop your head down to his groin, before starting to greedily lick and kiss his musky sheath. Letting out a series of deep, masculine grunts, the horseman orders in his booming voice, [headHorse.speech(Worship my balls, you slut.)]
+		Перешагнув через поваленное дерево неподалеку, всадник усаживается на него и широко раздвигает ноги, словно приглашая тебя к действию. Тебе не нужно объяснять, что делать: ты быстро подползаешь вперед и прижимаешься лицом к его паху, жадно облизывая и целуя его мускусную складку. Издавая серию глубоких мужских стонов, всадник громовым голосом приказывает: [headHorse.speech(Поклоняйся моим яйцам, сучка.)]
 	</p>
 	<p>
-		Doing as you're told, you drop your mouth down to the horseman's huge, heavy balls, before starting to passionately kiss and lick them. Thanks to your passionate oral attention, the horseman's fat, ebony cock quickly pushes out of its sheath and rises to full erection. As you continue to service his dangling, cum-stuffed balls, the horse-boy grunts, [headHorse.speech(That's enough! ~Mmm!~ Now choke yourself on my cock, slut!)]
+		Повинуясь приказу, ты припадаешь губами к огромным тяжелым яйцам всадника, страстно целуя и облизывая их. Благодаря твоему пылкому вниманию, жирный эбеновый член всадника быстро выскальзывает из складки и встает в полную эрекцию. Пока ты продолжаешь ласкать его набухшие, полные спермы яйца, жеребец хрипит: [headHorse.speech(Достаточно! ~Ммм!~ А теперь насади мой член себе на горло, сучка!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FULLY_SUBMIT_DEEPTHROAT"><![CDATA[
 	<p>
-		More than happy to do as you're told, you work your [pc.lips+] and tongue up the length of the horseman's hot, thick shaft, before greedily licking up the stream of salty, musky precum that's started to ooze out of his urethra. Once that's done, you open up wide and force the huge, flared head of his horse-like cock into your mouth. After sucking on the end of his delicious, musky dick for a brief moment, you drop your head down into the horse-boy's lap, forcing his fat, throbbing shaft deep down your throat. Grunting in satisfaction, the horseman places his hands on the back of your head and forces you down a little further, grunting, [headHorse.speech(That's it! ~Mmm!~ Take it deep, you slut!)]
+		С радостью выполняя приказ, ты проводишь [pc.lips+] и языком вдоль горячего толстого ствола всадника, жадно слизывая струйки соленой мускусной смазки, что начала сочиться из его уретры. Закончив с этим, ты широко открываешь рот и заглатываешь огромную расширенную головку его лошадиного члена. Немного пососав кончик его восхитительного мускусного члена, ты опускаешь голову в пах жеребца, заставляя его толстый пульсирующий ствол глубоко проникать тебе в глотку. Удовлетворенно рыча, всадник кладет руки тебе на затылок и с силой прижимает тебя ниже, хрипя: [headHorse.speech(Вот так! ~Ммм!~ Глотай его глубоко, сучка!)]
 	</p>
 	<p>
-		Using his grip on the back of your head to hold you in place, the horseman continues to grunt in satisfaction as you start to let out a series of choking, spluttering cries. Just as you start to feel like you can't take it any more, the horse-boy finally lifts your head up, allowing his massive, fat cock to almost completely slide out of your mouth, before pulling you down and slamming it deep down your throat again at the last moment. Eager to please the horseman and earn your delicious reward of thick, salty horse-jizz, you happily let him use your throat as his personal cock-sleeve. Within moments, you find yourself letting out a stream of gargled, erotic moans as you focus on doing your best to deepthroat him, while a stream of cummy saliva begins to drool from the corners of your mouth...
+		Вцепившись в твой затылок, чтобы удерживать на месте, всадник продолжает довольно хрюкать, пока ты издаешь серию удушливых, булькающих криков. Как раз в тот момент, когда тебе кажется, что сил терпеть больше нет, жеребец наконец приподнимает твою голову, позволяя своему массивному, толстому члену почти полностью выйти из твоего рта, но в последнюю секунду он снова резко вбивает его глубоко тебе в глотку. Жаждая угодить всаднику и получить свою восхитительную награду в виде густой, соленой лошадиной спермы, ты с радостью позволяешь ему использовать твое горло как персональную защелку. Спустя мгновение ты уже издаешь поток булькающих, эротичных стонов, изо всех сил стараясь заглатывать его как можно глубже, пока из уголков твоего рта начинает течь струйка слюны, смешанной со спермой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FULLY_SUBMIT_STANDING_FACE_FUCK"><![CDATA[
 	<p>
-		Deciding to push your luck a little, you ask the horseman if he could instead stand up and give you a good, hard face-fuck. Snorting in amusement at your submissive request, he grunts, [headHorse.speech(Fine. I'll give you what you want.)]
-	</p>
+		Решив немного испытать удачу, ты спрашиваешь всадника, не мог бы он вместо этого встать и хорошенько оттрахать тебе лицо. Фыркнув от смеха над твоей покорной просьбой, он хрюкает: [headHorse.speech(Ладно. Будет тебе всё, что хочешь.)]
+	</p><p>
+Поднявшись на свой [headHorse.feet], всадник хватает тебя за затылок и прижимает твоё лицо к самому основанию своего толстого, пахнущего мускусом члена. Тебе не нужно объяснять, что делать: ты жадно водишь [pc.lips+] и языком по всей длине горячего, массивного ствола, а затем голодно слизываешь струйку соленой, мускусной предэякулята, что начала сочиться из его уретры. Закончив с этим, ты широко раскрываешь рот и заглатываешь огромную, расширенную головку его лошадиного члена. Удовлетворенно хмыкнув, всадник кладет руки тебе на затылок и рычит: [headHorse.speech(Вот это по-нашему, сучка! ~Ммм!~ А теперь заглатывай поглубже!)]
+</p>
 	<p>
-		Rising to his [headHorse.feet], the horseman grabs the back of your head and pulls your face into the underside of his thick, musky cock. Not needing to be told what to do, you greedily work your [pc.lips+] and tongue up the length of the horseman's hot, thick shaft, before hungrily licking up the stream of salty, musky precum that's started to ooze out of his urethra. Once that's done, you open up wide and force the huge, flared head of his horse-like cock into your mouth. Grunting in satisfaction, the horseman places his hands on the back of your head, grunting, [headHorse.speech(That's what I like to see, slut! ~Mmm!~ Now take it deep!)]
-	</p>
-	<p>
-		Using his grip on the back of your head, the horseman pulls you forwards while simultaneously thrusting his hips into your face. As a result of this, his massive, throbbing cock is violently slammed as deep as physically possible down your throat, causing you to let out a series of choking, spluttering cries. After holding you in place for a moment and keeping his thick shaft hilted deep down your throat, the horseman pulls back, allowing his hot horse-cock to almost completely slide out of your mouth. As his wide, flared head slides all the way up into your mouth, the horse-boy again suddenly slams forwards, ramming his shaft deep down your throat. Eager to please the horseman and earn your delicious reward of thick, salty horse-jizz, you happily let him use your throat as his personal cock-sleeve. Within moments, you find yourself letting out a stream of gargled, erotic moans as he roughly fucks your face, while a stream of cummy saliva begins to drool from the corners of your mouth...
+		Сжимая затылок твоей головы, всадник тянет тебя на себя, одновременно с этим мощно вбивая бедра в твое лицо. В результате его массивный, пульсирующий член с силой залетает тебе в глотку так глубоко, насколько это физически возможно, заставляя тебя издавать серию удушливых, булькающих криков. Удерживая тебя на месте мгновение и оставляя свой толстый ствол глубоко в твоем горле, всадник отстраняется, позволяя своему горячему конскому члену почти полностью выскользнуть изо рта. Но как только его широкая, раздутая головка почти выходит, жеребец внезапно снова резко подается вперед, намертво вбивая член тебе в глотку. Жаждая угодить всаднику и получить свою восхитительную награду в виде густой, соленой конской спермы, ты с радостью позволяешь ему использовать твое горло как персональную вагину для члена. Спустя мгновение ты уже издаешь поток булькающих, эротичных стонов, пока он грубо трахает твое лицо, а из уголков твоего рта начинает течь струйка слюны, смешанной со спермой...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FULLY_SUBMIT_ANILINGUS"><![CDATA[
 	<p>
-		Deciding to push your luck and ask the horseman to try something different,
+		Решив испытать удачу и попросить всадника попробовать что-то новенькое,
 		#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-			 you show off your [style.mule] choker to him, before quickly explaining that you have experience with using your mouth to submissively service horse ass.
+			 ты демонстрируешь ему свой [style.mule] чокер, а затем быстро объясняешь, что у тебя есть опыт покорного обслуживания конских задниц ртом.
 		#ELSE
-			 you tell him that you'd like to use your mouth to submissively service his horse ass.
+			 ты говоришь ему, что хотела бы покорно обслужить его конскую задницу своим ртом.
 		#ENDIF
-		 Suggesting that you could give him a rimjob while jerking him off, you enthusiastically tell him how good it will feel to have you submit to him in such an absolute manner, and that you'll make sure he enjoys the feeling of your tongue working away at his asshole. Although he doesn't seem too enthusiastic about your suggestion at first, when you mention the submissive aspect of it, the horseman lets out an approving grunt. Holding his hand up to silence you, he agrees to your suggestion by declaring, [headHorse.speech(Completely dominating you by making you service my ass sounds good... Afterwards I'm still going to fuck your throat though.)]
+		Предложив ему сделать ему римджб, одновременно лаская его член, ты с энтузиазмом рассказываешь, как сладко ему будет почувствовать твою абсолютную покорность, и что ты сделаешь всё, чтобы он наслаждался тем, как твой язык работает над его анусом. Хотя поначалу он не кажется слишком воодушевленным твоим предложением, стоит тебе упомянуть аспект подчинения, как всадник издает одобряющий хрип. Подняв руку, чтобы заставить тебя замолчать, он соглашается на твои условия, заявляя: [headHorse.speech(Полностью подчинить тебя, заставив обслуживать мою задницу... звучит неплохо... Но после этого я всё равно буду трахать тебе горло.)]
 	</p>
 	<p>
-		Happy with his response, you ask the horseman to present his ass to you, and after standing up and turning around, he does so. Just as his anthropomorphic body would suggest, his asshole is horse-like in appearance, and is formed into a puffy, ebony ring. Eagerly shuffling forwards, you plant a big, wet kiss on the horse-boy's back door, before starting to greedily lick and nuzzle into it. Not forgetting the other half of your offer, you reach around and take hold of the horseman's fat, throbbing shaft, before starting to eagerly jerk him off.
+		Довольная его ответом, ты просишь всадника подставить тебе зад, и, поднявшись и развернувшись, он подчиняется. Как и подобает его антропоморфному телу, его анус выглядит по-лошадиному — он представляет собой пухлое эбеновое кольцо. Нетерпеливо подавшись вперед, ты оставляешь большой мокрый поцелуй на «задней двери» этого жеребца, а затем начинаешь жадно лизать и ласкать его языком. Не забывая про вторую часть своего обещания, ты обхватываешь рукой толстый, пульсирующий член всадника и начинаешь с энтузиазмом его дрочить.
 	</p>
 	<p>
-		[headHorse.speech(~Mmm!~ That's it, slut! Submit to me and service my ass!)] the horseman grunts. More than happy to do as he says, you play the perfect submissive and continue to passionately lick and kiss his puffy asshole. Continuing to slide your [pc.fingers+] up and down around his throbbing horse-cock, you start to let out a series of erotic, submissive whines as you wonder how long it will take you to make him cum from this... 
+		[headHorse.speech(~Ммм!~ Вот так, сучка! Покорись мне и обслужи мою задницу!~)] — хрипит всадник. С огромным удовольствием подчиняясь его воле, ты играешь роль идеальной рабыни, страстно вылизывая и облизывая его раздутый анус. Твой [pc.fingers+] продолжает скользить вверх и вниз вдоль его пульсирующего конского члена, и ты невольно начинаешь издавать эротичные, покорные стоны, гадая, как скоро ты заставишь его кончить от этого...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FULLY_SUBMIT_AFTER_SEX"><![CDATA[
 	<p>
-		Ramming his cock deep down your throat one last time, the horseman, having got the head he was seeking, pulls all the way back and slides his softening shaft out of your mouth. Grabbing his semi-flaccid cock with one hand, he slaps its cummy, saliva-coated length against your [pc.lips+], grunting in amused satisfaction, [headHorse.speech(Go on, you dirty little horse-cum addict. Show me how much you need this. Lick me clean.)]
+		В последний раз вонзив свой член глубоко тебе в глотку, всадник, наконец получив желаемое, вырывается и вытягивает обмякший ствол из твоего рта. Схватив свой полуобмякший член одной рукой, он с довольным хмыканьем шлепает его, покрытый спермой и слюной, по твоему [pc.lips+], [headHorse.speech(Давай же, ты, грязная маленькая наркоманка, зависимая от конского семени. Покажи мне, как сильно тебе это нужно. Вылижи меня дочиста.)]
 	</p>
 	<p>
-		The desperate urge in your mind to get another taste of the horseman's seed drives you to eagerly run your [pc.tongue+] all over the horseman's ebony shaft, swallowing down every last drop of slimy cum that you can find. Despite your oral attention, the horseman seems to have had enough for one night, and within a few moments, his huge shaft has once again softened and withdrawn into its sheath. Desperately sliding your tongue into the thick folds of skin which protect the horseman's cock, you find yourself letting out a series of pathetic, whining moans.
+		Отчаянное желание снова почувствовать вкус семени всадника заставляет тебя жадно водить [pc.tongue+] по его угольно-черному стволу, слизывая каждую каплю склизкой спермы, которую только сможешь найти. Несмотря на твое оральное усердие, всаднику, кажется, на сегодня хватит, и спустя всего несколько мгновений его огромный член снова размяк и втянулся в препуций. Ты отчаянно просовываешь язык в толстые складки кожи, защищающие член всадника, и ловишь себя на том, что издаешь череду жалких, скулящих стонов.
 	</p>
 	<p>
-		[headHorse.speech(That's enough for tonight,)] the horse-boy booms, before pushing you away from his groin and taking a step back. Looking down at you through the eye slots of the Jack-o'-Lantern he's still wearing, the horseman grunts, [headHorse.speech(If I see you again, I'll be sure to offer you another load of my cum.)]
+		[headHorse.speech(На сегодня хватит,)] — гремит конь-мальчик, отталкивая тебя от своего паха и делая шаг назад. Глядя на тебя сквозь прорези в тыкве-фонаре, которую он всё еще носит, всадник хмыкает: [headHorse.speech(Если увижу тебя снова, обязательно предложу тебе еще порцию своей спермы.)]
 	</p>
 	<p>
-		Without so much as a farewell, the horseman turns about on the spot, and after retrieving his [headHorse.mainWeapon] from where he left it earlier, he runs off into the night, leaving you with little else to do except gather your thoughts and continue on your way...
+		Даже не попрощавшись, всадник разворачивается на месте, забирает свой [headHorse.mainWeapon] там, где оставил его ранее, и уносится в ночную тьму, оставляя тебе нечего делать, кроме как собраться с мыслями и продолжить свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FULLY_SUBMIT_AFTER_SEX_ANILINGUS"><![CDATA[
 	<p>
-		Having orgasmed from the feeling of your tongue working away at his puffy asshole, the horseman lets out a deep grunt. After letting you kiss his ass one last time, he steps forwards and brings an end to the rimjob you were so enthusiastically giving him. Turning to face you, he declares in his deep, booming voice, [headHorse.speech(You're good at that, you dirty little slut.)]
+		Достигнув оргазма от ощущения твоего языка, ласкающего его раздутый анус, всадник издает глубокий стон. Позволив тебе напоследок поцеловать его задницу, он делает шаг вперед, завершая римж, который ты так увлеченно ему оказывала. Повернувшись к тебе лицом, он заявляет своим глубоким, громовым голосом: [headHorse.speech(А ты хороша в этом, грязная маленькая шлюшка.)]
 	</p>
 	<p>
-		Happy with his praise, you flash the horseman a sly look and blow him a little kiss. Grunting in amusement at your reaction, he states, [headHorse.speech(We're not finished yet. Open wide, slut. It's time to give you a good, hard face-fuck.)]
+		Обрадованная его похвалой, ты бросаешь на всадника лукавый взгляд и посылаешь ему воздушный поцелуй. Усмехнувшись твоему виду, он произносит: [headHorse.speech(Мы еще не закончили. Шире рот, шлюшка. Пришло время хорошенько оттрахать тебе лицо.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FULLY_SUBMIT_AFTER_SEX_ANILINGUS_FACE_FUCK"><![CDATA[
 	<p>
-		More than happy to have your throat fucked and stomach filled with delicious, musky horse-jizz, you shuffle forwards, allowing the horseman to grab the back of your head and pull your face into the underside of his thick, hard cock. Not needing to be told what to do, you greedily work your [pc.lips+] and tongue up the length of the horseman's hot, throbbing shaft, before hungrily licking up the stream of salty, musky cum that's still slowly oozing out of his urethra. Once that's done, you open up wide and force the huge, flared head of his horse-like cock into your mouth. Grunting in satisfaction, the horseman places his hands on the back of your head, grunting, [headHorse.speech(That's what I like to see, slut! ~Mmm!~ Now take it deep!)]
+		Более чем готовая к тому, чтобы твое горло трахали, а живот наполняли вкусной мускусной кончой, ты подаешься вперед, позволяя всаднику обхватить за затылок и прижать твое лицо к нижней части его толстого, твердого члена. Не дожидаясь указаний, ты жадно обводишь [pc.lips+] и языком всю длину горячего, пульсирующего ствола всадника, а затем голодно слизываешь струю солевой мускусной спермы, что всё еще медленно сочится из его уретры. Закончив с этим, ты широко раскрываешь рот и заглатываешь огромную, расширенную головку его лошадиного члена. Удовлетворенно рыкнув, всадник кладет руки тебе на затылок и ворчит: [headHorse.speech(Вот это то, что мне нравится, шлюшка! ~Ммм!~ А теперь заглатывай поглубже!)]
 	</p>
 	<p>
-		Using his grip on the back of your head, the horseman pulls you forwards while simultaneously thrusting his hips into your face. As a result of this, his massive, throbbing cock is violently slammed as deep as physically possible down your throat, causing you to let out a series of choking, spluttering cries. After holding you in place for a moment and keeping his thick shaft hilted deep down your throat, the horseman pulls back, allowing his hot horse-cock to almost completely slide out of your mouth. As his wide, flared head slides all the way up into your mouth, the horse-boy again suddenly slams forwards, ramming his shaft deep down your throat. Eager to please the horseman and earn your delicious reward of thick, salty horse-jizz, you happily let him use your throat as his personal cock-sleeve. Within moments, you find yourself letting out a stream of gargled, erotic moans as he roughly fucks your face, while a stream of cummy saliva begins to drool from the corners of your mouth...
+		Сжимая затылок твоей головы, всадник тянет тебя на себя, одновременно с этим мощно вбивая бедра в твое лицо. В результате его массивный, пульсирующий член с силой залетает тебе в глотку так глубоко, насколько это физически возможно, заставляя тебя издавать серию удушливых, булькающих криков. Удерживая тебя на месте мгновение и оставляя свой толстый ствол глубоко в твоем горле, всадник отстраняется, позволяя своему горячему конскому члену почти полностью выскользнуть изо рта. Но как только его широкая, раздутая головка почти выходит, жеребец внезапно снова резко подается вперед, намертво вбивая член тебе в глотку. Жаждая угодить всаднику и получить свою восхитительную награду в виде густой, соленой конской спермы, ты с радостью позволяешь ему использовать твое горло как персональную вагину для члена. Спустя мгновение ты уже издаешь поток булькающих, эротичных стонов, пока он грубо трахает твое лицо, а из уголков твоего рта начинает течь струйка слюны, смешанной со спермой...
 	</p>
 	]]>
 	</htmlContent>

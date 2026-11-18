@@ -5,34 +5,34 @@
 
 	<htmlContent tag="FIND_BERRIES"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_innoxia_elis_berries_encountered))
+<p>
+Пока [pc.walking] пробираешься сквозь лесную чащу, разглядывая местную флору, ты внезапно замечаешь еще один тот самый любопытный кустарник, который уже встречался тебе раньше. Это всего лишь небольшой кустик, и внимание привлекает вовсе не его крошечный размер и не довольно невзрачные овальные зеленые листья. Напротив, заставляет тебя наклониться и присмотреться к этому ботаническому экземпляру именно сияние и размер красных и пурпурных ягод, свисающих с него.
+</p>
 		<p>
-			While [pc.walking] through the woods and observing the local flora, you suddenly spot another one of those curious berry bushes which you've previously happened upon. Being no more than a small shrub, it's not the plant's diminutive size which draws your attention, nor its rather plain-looking oval green leaves. Instead, what leads you to stoop down and take a closer look at this botanical specimen is the luminosity and size of the red and purple berries which hang off of it.
-		</p>
-		<p>
-			As you take a closer look, you see that the red berries have grown into the shape of hearts, while the purple ones have taken the form of small stars. With the shape of the berries strongly hinting at the possibility of this plant not being a product of natural evolution, you assume that it must have been designed and grown for commercial use, although how it ended up growing here in the middle of these woods will likely forever remain a complete mystery.
+			Присмотревшись повнимательнее, ты замечаешь, что красные ягоды приобрели форму сердечек, а пурпурные — форму маленьких звездочек. Форма ягод явно намекает на то, что это растение не является продуктом естественной эволюции, поэтому ты предполагаешь, что оно было специально выведено для коммерческого использования. Впрочем, как оно оказалось здесь, посреди глухого леса, вероятно, навсегда останется загадкой.
 		</p>
 		<p>
 			#IF(game.getDialogueFlags().hasFlag(FLAG_innoxia_elis_berries_eaten))
-				Knowing from previous experience that these berries are not only edible, but extremely delicious, you begin to wonder whether you should take advantage of your discovery and help yourself to the plant's bounty. Reaching out to touch the closest of the red berries, you're once again amazed to see that it starts to glow a bright pink the closer you move it to its purple companions. While you know that eating either the red or purple berries should be safe, consuming both types at once is surely going to be a bad idea.
-			#ELSE
-				Although it'd typically be a terrible idea to taste wild, unidentified produce of any kind, the sweet, somehow-familiar smell which these berries are giving off gives you a strong feeling that they're edible. Reaching out to touch the closest of the red ones, you're amazed to see that it starts to glow a bright pink the closer you move it to its purple companions. While you're confident that eating either the red or purple berries should be safe, consuming both types at once is surely going to be a bad idea.
+				Помня из прошлого опыта, что эти ягоды не только съедобны, но и невероятно вкусны, ты начинаешь раздумывать, не стоит ли воспользоваться находкой и полакомиться дарами этого растения. Стоит тебе протянуть руку, чтобы коснуться ближайшей красной ягоды, как ты снова поражаешься: чем ближе ты подносишь её к пурпурным собратьям, тем ярче она начинает светиться розовым светом. И хотя ты понимаешь, что красные и пурпурные ягоды по отдельности безопасны, их одновременное поедание наверняка окажется плохой затеей.
+					#ELSE
+				Хотя пробовать на вкус диковинные, неизвестные плоды обычно — идея так себе, но сладкий, каким-то образом знакомый аромат этих ягод внушает тебе уверенность, что они съедобны. Когда ты протягиваешь руку к ближайшей красной ягоде, то с изумлением замечаешь: чем ближе ты подносишь её к фиолетовым собратьям, тем ярче она начинает светиться розовым. Ты почти уверена, что красные или фиолетовые ягоды по отдельности безопасны, но вот смешивать их — наверняка плохая затея.
 			#ENDIF
 		</p>
 		<p>
-			Toying with the berries for a moment longer, you wonder whether to eat them or simply leave them behind and continue on your way...
+			Поиграв с ягодами ещё немного, ты раздумываешь: съесть их или просто оставить здесь и продолжить свой путь...
 		</p>
 	#ELSE
 		<p>
-			While [pc.walking] through the woods and observing the local flora, you suddenly happen to spot a most unusual looking plant. Being no more than a small shrub, it's not the plant's diminutive size which draws your attention, nor its rather plain-looking oval green leaves. Instead, what leads you to stoop down and take a closer look at this botanical specimen is the luminosity and size of the red and purple berries which hang off of it.
+			Пока ты [pc.walking] по лесу, разглядывая местную флору, твой взгляд внезапно падает на весьма необычное растение. Это всего лишь небольшой кустарник, и внимание привлекает вовсе не его крошечный размер или невзрачные овальные зелёные листья. Напротив, заставляет тебя наклониться и присмотреться к этому ботаническому экземпляру именно сияние и размер висящих на нём красных и фиолетовых ягод.
 		</p>
 		<p>
-			As you take a closer look, you see that the red berries have grown into the shape of hearts, while the purple ones have taken the form of small stars. With the shape of the berries strongly hinting at the possibility of this plant not being a product of natural evolution, you assume that it must have been designed and grown for commercial use, although how it ended up growing here in the middle of these woods will likely forever remain a complete mystery.
+			Присмотревшись повнимательнее, ты замечаешь, что красные ягоды приобрели форму сердечек, а пурпурные — форму маленьких звездочек. Форма ягод явно намекает на то, что это растение не является продуктом естественной эволюции, поэтому ты предполагаешь, что оно было специально выведено для коммерческого использования. Впрочем, как оно оказалось здесь, посреди глухого леса, вероятно, навсегда останется загадкой.
 		</p>
 		<p>
-			Although it'd typically be a terrible idea to taste wild, unidentified produce of any kind, the sweet, somehow-familiar smell which these berries are giving off gives you a strong feeling that they're edible. Reaching out to touch the closest of the red ones, you're amazed to see that it starts to glow a bright pink the closer you move it to its purple companions. While you're confident that eating either the red or purple berries should be safe, consuming both types at once is surely going to be a bad idea.
+		Хотя пробовать на вкус любые дикие, неопознанные плоды обычно — затея паршивая, сладкий, каким-то образом знакомый аромат этих ягод внушает тебе твердую уверенность, что они съедобны. Когда ты протягиваешь руку к ближайшей красной ягоде, то с изумлением замечаешь, что та начинает ярко-розово светиться, стоит тебе поднести её поближе к фиолетовым собратьям. Ты почти уверена, что красные или фиолетовые ягоды по отдельности безопасны, но вот смешивать их — наверняка плохая идея.
 		</p>
 		<p>
-			Toying with the berries for a moment longer, you wonder whether to eat them or simply leave them behind and continue on your way...
+			Поиграв с ягодами ещё немного, ты раздумываешь: съесть их или просто оставить здесь и продолжить свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -40,26 +40,26 @@
 	
 	<htmlContent tag="BERRIES_IGNORE"><![CDATA[
 	<p>
-		Deciding that it's best not to eat berries from a random bush in the middle of the woods, you stand up and continue on your way...
+		Решив, что лучше не есть ягоды с какого-то случайного куста посреди леса, ты поднимаешься и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EAT_BERRIES_RED"><![CDATA[
 	<p>
-		Deciding to try your luck with the red berries, you pick one from the plant and experimentally break it open to give it a lick, noting that there are no seeds within as you do so. The flavour is similar to its smell; a sweet, vaguely strawberry-like taste, it compels you to pop the rest of the berry into your mouth and swallow it down. Immediately, you're overcome with an intense desire to eat the rest of the red berries, and within a couple of minutes you've done just that.
+		Решив испытать удачу с красными ягодами, ты срываешь одну с куста и, чтобы проверить, разламываешь её и слизываешь сок, замечая при этом, что внутри нет никаких семян. Вкус оказывается таким же, как и запах: сладкий, отдаленно напоминающий клубничный, он так и манит закинуть в рот остаток ягоды и проглотить его. Мгновенно тебя охватывает неистовое желание съесть все остальные красные ягоды, и всего через пару минут ты так и делаешь.
 	</p>
 	<p>
-		Left with a craving for more of these delicious fruits, you turn your attention towards the purple specimens, only to see that they're rapidly withering up and falling from the plant as inedible husks. Wondering if this behaviour is the reason why you've never seen this plant being cultivated before, you stand up and scan your surroundings for any more of them.
+		Оставшись с жаждой этих восхитительных плодов, ты переводишь взгляд на фиолетовые ягоды, но видишь, что они стремительно вянут и осыпаются с куста несъедобной шелухой. Гадая, не в этом ли причина того, что ты никогда раньше не видела это растение в культивации, ты поднимаешься и оглядываешься по сторонам в поисках новых кустов.
 	</p>
 	<p>
-		While your quick search unfortunately proves to be fruitless, your craving for more of the red berries is quickly replaced by a wonderful feeling of health and vigour spreading out from your body's core, which also washes away any negative thoughts you were having.
+		Твои быстрые поиски, к сожалению, оказываются бесплодными, но жажда красных ягод быстро сменяется чудесным чувством здоровья и бодрости, разливающимся по всему телу и смывающим все твои мрачные мысли.
 		#IF(pc.hasLegs())
-			 With a spring in your step,
+			 Легкой походкой,
 		#ELSE
-			 Smiling happily to yourself,
+			 Счастливо улыбаясь самой себе,
 		#ENDIF
-		 you set off on your way through the woods, making sure to keep a lookout for any more of those berry bushes as you go...
+		 ты отправляешься в путь через лес, стараясь поглядывать по сторонам в поисках новых кустов с ягодами...
 	</p>
 	[#SPECIAL_PARSE_0]
 	]]>
@@ -67,19 +67,19 @@
 	
 	<htmlContent tag="EAT_BERRIES_PURPLE"><![CDATA[
 	<p>
-		Deciding to try your luck with the purple berries, you pick one from the plant and experimentally break it open to give it a lick, noting that there are no seeds within as you do so. The flavour is similar to its smell; a sweet, vaguely raspberry-like taste, it compels you to pop the rest of the berry into your mouth and swallow it down. Immediately, you're overcome with an intense desire to eat the rest of the purple berries, and within a couple of minutes you've done just that.
+		Решив испытать удачу с фиолетовыми ягодами, ты срываешь одну с куста и, ради эксперимента, разламываешь её, чтобы лизнуть, замечая при этом, что внутри нет семян. Вкус оказывается таким же, как и запах: сладкий, отдаленно напоминающий малину, он заставляет тебя закинуть остаток ягоды в рот и проглотить. Мгновенно тебя охватывает неистовое желание съесть все остальные фиолетовые ягоды, и всего через пару минут ты так и делаешь.
 	</p>
 	<p>
-		Left with a craving for more of these delicious fruits, you turn your attention towards the red specimens, only to see that they're rapidly withering up and falling from the plant as inedible husks. Wondering if this behaviour is the reason why you've never seen this plant being cultivated before, you stand up and scan your surroundings for any more of them.
+		Оставшись с жаждой этих восхитительных плодов, ты переключаешь внимание на красные ягоды, но видишь, что они стремительно вянут и осыпаются с куста несъедобной шелухой. Задаваясь вопросом, не в этом ли причина того, что ты никогда раньше не видела, чтобы это растение выращивали, ты поднимаешься и оглядываешься по сторонам в поисках новых кустов.
 	</p>
 	<p>
-		While your quick search unfortunately proves to be fruitless, your craving for more of the purple berries is quickly replaced by a wonderful feeling of clear-mindedness, which also washes away any negative thoughts you were having.
+		Твои поспешные поиски, к сожалению, оказываются бесплодными, но жажда фиолетовых ягод быстро сменяется чудесным чувством ясности ума, которое смывает все твои негативные мысли.
 		#IF(pc.hasLegs())
-			 With a spring in your step,
+			 Легкой походкой,
 		#ELSE
-			 Smiling happily to yourself,
+			 Счастливо улыбаясь самой себе,
 		#ENDIF
-		 you set off on your way through the woods, making sure to keep a lookout for any more of those berry bushes as you go...
+		 ты отправляешься в путь через лес, стараясь поглядывать по сторонам в поисках новых кустов с ягодами...
 	</p>
 	[#SPECIAL_PARSE_0]
 	]]>
@@ -87,41 +87,42 @@
 	
 	<htmlContent tag="EAT_BERRIES_BOTH"><![CDATA[
 	<p>
-		Despite your instincts telling you that the behaviour of the berries to glow bright pink when in close proximity to one another is a bad sign, you decide to eat both the red and purple ones at the same time. Quickly picking a pair of them from the plant, you experimentally break them both open to give each one a lick, noting that there are no seeds within either of them as you do so. The flavour of the berries is similar to their smell; a sweet, vaguely strawberry-like taste for the red one, and hints of raspberry for its purple counterpart.
+		Несмотря на инстинкты, твердящие, что ярко-розовое свечение ягод при их близости друг к другу — дурной знак, ты решаешь съесть и красные, и фиолетовые одновременно. Быстро сорвав пару ягод с куста, ты экспериментально разламываешь их, чтобы лизнуть каждую, и замечаешь, что внутри нет семян. Вкус ягод напоминает их запах: красная — сладкая, с легким клубничным оттенком, а фиолетовая — с нотками малины.
 	</p>
 	<p>
-		As the tastes of the two berries combine on your tongue, you suddenly find your mouth filled with an intensely sweet cherry-like flavour. The result of combining the berries doesn't end there, as you're suddenly overcome with an intense desire to eat as many of them as possible, and after popping the ones in your [pc.hands] into your mouth, you spend the next couple of minutes ravenously devouring every last one of both the red and purple berries.
+		Как только вкусы двух ягод смешиваются на твоем языке, рот внезапно наполняется интенсивным, приторно-сладким вишневым вкусом. Но на этом эффект не заканчивается: тебя охватывает неистовое желание съесть как можно больше ягод, и, закинув те, что в твоей [pc.hands], в рот, ты следующие пару минут жадно пожираешь последнюю красную и фиолетовую ягоду.
 	</p>
 	<p>
-		What follows next is an intense, sudden spike of arousal, the strength of which causes you to let out [pc.a_moan+].
+	
+Вслед за этим наступает резкий, мощный всплеск возбуждения, от силы которого ты невольно издаешь [pc.a_moan+].
 		#IF(pc.hasPenis())
-			 Your [pc.cock+] immediately rises to attention,
+			 Твоя [pc.cock+] тут же встает колом,
 			#IF(pc.hasVagina())
-				 while beneath it
+				 а под ней
 				#IF(pc.getVaginaWetness().getArousalNeededToGetVaginaWet()>0)
-					 you feel your [pc.pussyWetness] [pc.pussy] starting to drip from excitement.
+					 ты чувствуешь, как твоя [pc.pussyWetness] [pc.pussy] начинает сочиться от возбуждения.
 				#ELSE
-					 you feel your [pc.girlcum+] start to stream out of your [pc.pussyWetness] [pc.pussy].
+					 ты чувствуешь, как твоя [pc.girlcum+] начинает сочиться из твоей [pc.pussyWetness] [pc.pussy].
 				#ENDIF
 			#ELSE
-				 and you're struck by the sudden urge to masturbate right here in the middle of the woods.
+				 и тебя внезапно охватывает непреодолимое желание заняться мастурбацией прямо здесь, посреди леса.
 			#ENDIF
 		#ELSEIF(pc.hasVagina())
 			#IF(pc.getVaginaWetness().getArousalNeededToGetVaginaWet()>0)
-				 Your [pc.pussyWetness] [pc.pussy] immediately starts to drip from excitement,
+				 Твоя [pc.pussyWetness] [pc.pussy] тут же начинает капать от возбуждения,
 			#ELSE
-				 You feel your [pc.girlcum+] immediately start to stream out of your [pc.pussyWetness] [pc.pussy],
+				 Ты чувствуешь, как твоя [pc.girlcum+] мгновенно начинает сочиться из твоей [pc.pussyWetness] [pc.pussy],
 			#ENDIF
-			 and you're struck by the sudden urge to masturbate right here in the middle of the woods.
+			 и тебя внезапно охватывает непреодолимое желание заняться мастурбацией прямо здесь, посреди леса.
 		#ELSE
-			 Despite lacking genitalia, you're immediately struck by the sudden urge to masturbate right here in the middle of the woods.
+			 Несмотря на отсутствие гениталий, тебя тут же пронзает внезапное желание заняться мастурбацией прямо здесь, посреди леса.
 		#ENDIF
 		#IF(pc.isTaur())
-			 Although unable to reach your genitals due to their distant location on your [pc.legRace]'s body, you feel as though you wouldn't need much stimulation to orgasm right now. As you start to decide how best to masturbate,
+			 Хотя из-за того, что твои гениталии расположены далеко на теле [pc.legRace], дотянуться до них непросто, ты чувствуешь, что тебе не потребуется много стимуляции, чтобы достичь оргазма прямо сейчас. Пока ты решаешь, как лучше всего заняться мастурбацией,
 		#ELSE
-			  As your [pc.hands] drop down towards your genitals,
+			  Пока твои [pc.hands] опускаются к гениталиям,
 		#ENDIF
-		 you're able to gain a moment of clarity, and use it to quickly decide whether or not to give in and pleasure yourself...
+		 тебе удается на мгновение прояснить мысли и быстро решить, стоит ли поддаться искушению и доставить себе удовольствие...
 	</p>
 	[#SPECIAL_PARSE_0]
 	[#SPECIAL_PARSE_1]
@@ -132,36 +133,36 @@
 	
 	<htmlContent tag="EAT_BERRIES_BOTH_CALM_DOWN"><![CDATA[
 	<p>
-		Not wanting to masturbate in the middle of the woods, you take control of your emotions and focus on calming down.
+		Не желая мастурбировать посреди леса, ты берешь свои эмоции под контроль и стараешься успокоиться.
 		#IF(pc.hasPenis())
-			 Although your throbbing erection
+			 Хотя твоя пульсирующая эрекция
 			#IF(pc.hasVagina())
-				 and wet pussy don't make it easy,
+				 и влажная киска не облегчают задачу,
 			#ELSE
-				 doesn't make it easy,
+				 не облегчают задачу,
 			#ENDIF
 		#ELSEIF(pc.hasVagina())
-			 Although your wet pussy doesn't make it easy,
+			 Хотя твоя влажная киска не облегчает задачу,
 		#ELSE
-			 Although it's not easy,
+			 Хотя это и непросто,
 		#ENDIF
-		 you're able to successfully subdue your near-overwhelming lust, and after what aspires to be almost ten minutes of steadily breathing and doing your best to not fantasise about
+		 тебе удается успешно обуздать почти захлестывающую тебя похоть, и после почти десяти минут размеренного дыхания и отчаянных попыток не фантазировать о том,
 		#IF(pc.getSexualOrientation().isAttractedToFeminine())
-			 the berry bush transforming into a sexy dryad,
+			 как куст ягод превращается в сексуальную дриаду,
 		#ELSE
-			 a hot satyr appearing from out of the bushes,
+			 или как из кустов появляется горячий сатир,
 		#ENDIF
-		 your intense arousal is firmly under control.
+		 твое сильное возбуждение оказывается под полным контролем.
 	</p>
 	<p>
-		Looking down at the cause of this unexpected near-sexual experience, you see that there are already tiny little red and purple berries starting to regrow on the bush. Not wanting to wait around for who-knows how many hours or days it will take for them to reach full maturity, there's little else for you to do here, and so you set off on your way through the woods once again...
+		Посмотрев на причину этого неожиданного, почти сексуального приключения, ты замечаешь, что на кусте уже начинают прорастать крошечные красные и фиолетовые ягоды. Не желая ждать неизвестно сколько часов или дней, пока они полностью созреют, ты понимаешь, что делать здесь больше нечего, и снова отправляешься в путь сквозь лес...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BERRIES_MASTURBATING_START"><![CDATA[
 	<p>
-		Deciding that it's best to address your overwhelming arousal in the most direct manner possible, you let out [pc.a_moan+] and prepare to start masturbating right here in the middle of the woods...
+		Решив, что лучше всего справиться с нахлынувшим возбуждением самым прямым способом, ты издаешь [pc.a_moan+] и готовишься начать мастурбировать прямо здесь, посреди леса...
 	</p>
 	]]>
 	</htmlContent>
@@ -169,38 +170,39 @@
 	<htmlContent tag="BERRIES_AFTER_MASTURBATING"><![CDATA[
 	#IF(sex.getNumberOfOrgasms(pc)>0)
 		<p>
-			Satisfied from
+			Получив удовлетворение от
 			#IF(sex.getNumberOfOrgasms(pc)>1)
-				 experiencing multiple orgasms,
+				 множественных оргазмов,
 			#ELSE
-				 bringing yourself to an orgasm,
+				 доведя себя до оргазма,
 			#ENDIF
-			 you let out a sigh and take a quick look around to make sure that nobody's snuck up on you while you were distracted.
+			 ты облегченно вздыхаешь и быстро оглядываешься по сторонам, чтобы убедиться, что, пока ты была увлечена процессом, к тебе никто не подкрался.
 			#IF(pc.hasFetish(FETISH_EXHIBITIONIST))
-				 Much to your disappointment, there's no sign of anyone having watched your lewd display,
+				 К твоему разочарованию, признаков того, что кто-то наблюдал за твоим развратным зрелищем, нет,
 			#ELSE
-				 Much to your relief, there's absolutely no sign of anyone in the woods around you,
+				 К твоему облегчению, вокруг в лесу совершенно никого не видно,
 			#ENDIF
-			 and so with little else to do here you prepare to move off and continue on your way.
+			 и, так как делать здесь больше нечего, ты готовишься отправиться дальше в свой путь.
 		</p>
 		<p>
-			Before you go, however, you take one last glance down at the berry bush which provided you with this unexpected source of pleasure. Much to your amazement, it seems to have somehow reacted to your orgasm, as in the place where each of the red and purple berries were hanging just a short time ago, a bulbous, brown seed pod has rapidly grown. Not looking in the least bit appetising, you decide to leave the plant's newly-acquired seeds behind; after all, if ever you had a need or desire to gather these seeds, you now know roughly where to find these berry bushes and how to entice them into producing seeds. 
+			Однако, прежде чем уйти, ты бросаешь последний взгляд на куст ягод, подаривший тебе это неожиданное удовольствие. К твоему изумлению, растение словно среагировало на твой оргазм: там, где еще совсем недавно висели красные и фиолетовые ягоды, стремительно вырос бугристый коричневый стручок с семенами. Выглядит это совсем не аппетитно, поэтому ты решаешь оставить новообретенные семена на кусте; в конце концов, если тебе когда-нибудь понадобится или захочется собрать их, теперь ты примерно знаешь, где искать такие кусты и как заставить их плодоносить.
 		</p>
 		<p>
-			With one final sigh, you leave the bush behind and continue on your way through the woods...
+		
+Тяжело вздохнув в последний раз, ты оставляешь куст позади и продолжаешь свой путь через лес...
 		</p>
 	#ELSE
 		<p>
-			Although not satisfied due to failing to experience even a single orgasm, you find yourself losing your will to masturbate, and so put an end to your lewd activities. After letting out a frustrated sigh, you take a quick look around to make sure that nobody's snuck up on you while you were distracted.
+			Хотя ты и не до конца удовлетворен, так и не испытав ни одного оргазма, желание продолжать мастурбацию постепенно исчезает, и ты решаешь закончить свои развратные занятия. Издав разочарованный вздох, ты быстро оглядываешься по сторонам, чтобы убедиться, что, пока ты был отвлечен, к тебе никто не подкрался.
 			#IF(pc.hasFetish(FETISH_EXHIBITIONIST))
-				 Much to your disappointment, there's no sign of anyone having watched your lewd display,
+				 К твоему разочарованию, признаков того, что кто-то наблюдал за твоим развратным зрелищем, нет,
 			#ELSE
-				 Much to your relief, there's absolutely no sign of anyone in the woods around you,
+				 К твоему облегчению, вокруг в лесу совершенно никого не видно,
 			#ENDIF
-			 and so with little else to do here you prepare to move off and continue on your way.
+			 и, так как делать здесь больше нечего, ты готовишься отправиться дальше в свой путь.
 		</p>
 		<p>
-			Before you go, however, you take one last glance down at the berry bush which provided you with this unexpected experience. Much to your amazement, you see that there are already tiny little red and purple berries starting to regrow on the plant's green stems. Not wanting to wait around for who-knows how many hours or days it will take for them to reach full maturity, you let out one final sigh and set off on your way through the woods once again...
+			Однако, прежде чем уйти, ты бросаешь последний взгляд на куст ягод, подаривший тебе этот неожиданный опыт. К твоему изумлению, ты замечаешь, что на зеленых стеблях растения уже начинают прорастать крошечные красные и фиолетовые ягоды. Не желая ждать неизвестно сколько часов или дней, пока они созреют, ты издаешь последний вздох и снова отправляешься в путь по лесу...
 		</p>
 	#ENDIF
 	]]>
@@ -211,44 +213,44 @@
 	
 	<htmlContent tag="FIND_CLEARING"><![CDATA[
 	<p>
-		Although the patches of woodland surrounding Elis aren't large by any stretch of the imagination, they're still big enough to conceal many interesting terrain features, such as small ponds, rocky depressions, and tranquil clearings. It's into one of these clearings which you find yourself inadvertently entering, and thanks to the
+		Хотя лесные массивы вокруг Элис нельзя назвать огромными, их всё же достаточно, чтобы скрывать множество интересных особенностей ландшафта: небольшие пруды, скалистые впадины и безмятежные поляны. Именно на одну из таких полян ты натыкаешься совершенно случайно, и благодаря
 		#IF(game.isDayTime())
-			 sunlight
+			 солнечному свету
 		#ELSE
-			 moonlight
+			 лунному свету
 		#ENDIF
-		 which is streaming down through the break in the canopy, you're able to immediately identify a couple of fallen trees which look suitable for you to use as a place to sit down and get some rest.
+		, пробивающемуся сквозь просветы в кронах деревьев, ты сразу замечаешь пару поваленных стволов, которые отлично подошли бы для того, чтобы присесть и немного отдохнуть.
 	</p>
 	<p>
 		#IF(game.getSeason()==SEASON_WINTER)
-			Although there isn't much foliage to be seen at this time of year, there are a few nearby coniferous trees which add a welcome splash of green to the otherwise monotone landscape.
+			Хотя в это время года зелени не так много, неподалеку виднеются несколько хвойных деревьев, которые вносят приятный цветовой акцент в этот монотонный пейзаж.
 			#IF(game.getDialogueFlags().hasFlag(FLAG_hasSnowedThisWinter) && game.getSeason()==SEASON_WINTER)
-				 Although the clearing's floor is covered in deep snow, there are several animal tracks which criss-cross the area, which would allow you to easily approach the fallen trees and take a break, if you should so desire...
+				Пусть дно поляны и покрыто глубоким снегом, здесь повсюду видны пересекающиеся следы животных, так что ты без труда сможешь подойти к поваленным деревьям и передохнуть, если пожелаешь...
 			#ELSE
-				 With winter's first snow not yet having fallen, the frozen ground is covered in browning grass, and as you take a moment to 
+				Первый зимний снег еще не выпал, и замерзшая земля покрыта пожухлой травой. Пока ты замираешь на мгновение, чтобы
 				#IF(game.isDayTime())
-					 listen to the occasional chirp of birdsong,
+					прислушаться к редким птичьим трелям,
 				#ELSE
-					 appreciate the quiet of the night,
+					насладиться ночной тишиной,
 				#ENDIF
-				 you wonder whether to stop here and take a short break...
+				ты раздумываешь, стоит ли остановиться здесь и устроить себе небольшой привал...
 			#ENDIF
 		#ELSEIF(game.getSeason()==SEASON_AUTUMN)
-			Due to the time of year, the leaves on the surrounding trees can be seen in all sorts of beautiful shades of red, orange, yellow, and green. The clearing's floor is painted in these same colours, and with a pleasant, moist scent of autumnal mulch in the air, you take a moment to
+			В это время года листва на окружающих деревьях переливается всеми оттенками красного, оранжевого, желтого и зеленого. Почва на поляне окрашена в те же цвета, и, вдыхая приятный влажный аромат осенней прели, ты решаешь на мгновение
 			#IF(game.isDayTime())
-				 listen to the birdsong
+				послушать пение птиц,
 			#ELSE
-				 appreciate the quiet of the night
+				насладиться ночной тишиной
 			#ENDIF
-			 and wonder whether to stop here and take a short break...
+			и раздумываешь, не остановиться ли здесь на короткий отдых...
 		#ELSE
-			Although a gentle breeze causes the surrounding trees to rhythmically sway to and fro, the wind's strength is depleted by the time it reaches the clearing's floor, allowing the wild grasses and flowers before you to remain all but motionless. These pretty flowers bestow a delicate floral scent to this area, and you can't help but stop and take a moment to appreciate both the scene before you and the
+			Хотя легкий ветерок заставляет окружающие деревья ритмично раскачиваться, к тому времени, как он достигает земли, его сила почти иссякает, позволяя диким травам и цветам перед тобой оставаться почти неподвижными. Эти прекрасные цветы наполняют округу нежным цветочным ароматом, и ты не можешь удержаться, чтобы не остановиться и не насладиться и открывшимся видом, и
 			#IF(game.isDayTime())
-				 harmonious sound of birdsong.
+				гармоничным пением птиц.
 			#ELSE
-				 quiet of the night.
+				ночной тишиной.
 			#ENDIF
-			 Letting out a satisfied sigh, you wonder whether to stop here and take a short break...
+			Издав удовлетворенный вздох, ты раздумываешь, не остановиться ли здесь на короткий отдых...
 		#ENDIF
 	</p>
 	]]>
@@ -256,14 +258,14 @@
 	
 	<htmlContent tag="CLEARING_RELAX"><![CDATA[
 	<p>
-		Deciding that you deserve a break, you head over to the fallen trees and find a comfortable spot upon which to sit. Letting your mind wander, you spend about half an hour relaxing in this tranquil clearing, after which you feel remarkably refreshed and well rested. Wondering if your rejuvenation is due to some sort of benevolent arcane spell, or if it's simply the calming nature of this clearing at work, you stand back up and set off on your way once again...
+		Решив, что ты заслужил отдых, ты направляешься к поваленным деревьям и находишь удобное место, чтобы присесть. Позволив своим мыслям блуждать, ты проводишь около получаса, расслабляясь на этой безмятежной поляне, после чего чувствуешь себя удивительно бодрым и отдохнувшим. Гадая, вызвано ли твое омоложение каким-то благотворным арканным заклинанием или же это просто целительная сила этой поляны, ты поднимаешься и снова отправляешься в путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CLEARING_LEAVE"><![CDATA[
 	<p>
-		You don't have time to relax in the clearing, and so quickly pass over to the other side and continue on your way...
+		У тебя нет времени отдыхать на поляне, поэтому ты быстро переходишь на другую сторону и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>

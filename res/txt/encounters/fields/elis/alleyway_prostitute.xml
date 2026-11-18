@@ -4,135 +4,135 @@
 	<htmlContent tag="START"><![CDATA[
 	#IF(npc.hasEncounteredBefore())
 		<p>
-			The dark, twisting alleyways of northern Elis are dangerous to be travelling through at night, and so you make sure to keep on high alert as you [pc.walk] down the narrow, cobblestone paths. Thanks to your caution, you manage to spot someone skulking about in a recessed alleyway up ahead, and, preparing for the worst, you ready yourself for a fight. As this shady character catches sight of you and [npc.steps] out from [npc.her] hiding place, however, you see that it's none other than [npc.name], the [npc.fullRace(true)] prostitute who you've encountered in this area before.
+			Темные, извилистые переулки северного Элиса опасны для ночных прогулок, поэтому ты стараешься не терять бдительности, [pc.walk] по узким мощеным дорожкам. Благодаря своей осторожности тебе удается заметить кого-то, крадущегося впереди в тени одного из проходов, и, готовясь к худшему, ты замираешь в ожидании схватки. Однако, когда эта подозрительная фигура замечает тебя и [npc.steps] из [npc.her] укрытия, ты понимаешь, что это не кто иной, как [npc.name], та самая [npc.fullRace(true)] проститутка, которую ты уже встречал в этих краях.
 		</p>
 		#IF(npc.isVisiblyPregnant() && npc.getPregnantLitter().isFatherId(pc.getId()))
 			#IF(!npc.isCharacterReactedToPregnancy(pc))
 				<p>
-					Instantly, your eyes are drawn down to [npc.her] clearly-visible [style.colourSex(pregnant belly)], and as [npc.name] looks across at you, [npc.she] lets out a little laugh and exclaims,
+					Твой взгляд мгновенно приковывает [npc.her] отчетливо видимый [style.colourSex(pregnant belly)], и когда [npc.name] смотрит на тебя, [npc.she] издает короткий смешок и восклицает:
 					[style.random(
-							[npc.speech(Yeah, that's right, hot stuff! I used one of those arcane pregnancy testers to check, and it was you who knocked me up!)] |
-							[npc.speech(Hey again, babe! Look what you did! I used one of those arcane pregnancy testers to check, and I'm definitely carrying your kids!)] |
-							[npc.speech(Hey again, good lookin'! Check it out! I used one of those arcane pregnancy testers to check; you managed to knock me up!)])]
+							[npc.speech(Да, всё так, горячий парень! Я воспользовалась одним из тех арканных тестов на беременность, и это ты меня оплодотворил!)] |
+							[npc.speech(О, снова привет, крошка! Глянь, что ты наделал! Я сделала арканный тест, и я точно тащу в себе твоих деток!)] |
+							[npc.speech(Снова привет, красавчик! Зацени! Я проверилась арканным тестом; тебе всё-таки удалось меня зачать!)])]
 				</p>
 				<p>
-					You [pc.step] up to [npc.name], allowing [npc.herHim] to take hold of your [pc.hands] and guide them down to stroke [npc.her] swollen bump. [npc.She] lets out another little laugh, before playfully biting [npc.her] [npc.lip] and teasing, [npc.speech(So, you got a thing for fucking pregnant [npc.girls]? Considering the situation, I'll even give you a discount of fifty percent...)]
+					Ты [pc.step] до [npc.name], позволяя [npc.herHim] обхватить твой [pc.hands] и медленно вести его вниз, лаская [npc.her] раздутый бугорок. [npc.She] издает еще один короткий смешок, а затем игриво прикусывает [npc.her] [npc.lip], дразня тебя: [npc.speech(Так что, тебе нравится трахать беременных [npc.girls]? Учитывая ситуацию, я даже сделаю тебе скидку в пятьдесят процентов...)]
 				</p>
 			#ELSE
 				<p>
-					Looking down, you see that [npc.sheIs] still sporting a rounded, [style.colourSex(pregnant belly)], and as [npc.name] notices what you're looking at, [npc.she] lets out a little laugh and exclaims,
+					Посмотрев вниз, ты видишь, что у [npc.sheIs] все еще заметен округлый [style.colourSex(беременный живот)], и когда [npc.name] замечает твой взгляд, [npc.she] тихо смеется и восклицает:
 					[style.random(
-							[npc.speech(That's right, hot stuff; I'm still waiting for our kids to pop out! Anyway, if you've got a thing for fucking pregnant [npc.girls], I'll give you a fifty percent discount...)] |
-							[npc.speech(Yeah, that's right, babe, I'm still carrying your kids around! Anyway, if you've got a thing for fucking pregnant [npc.girls], I'll give you a fifty percent discount...)] |
-							[npc.speech(Hey again, good lookin'! These kids of ours sure do take a while to grow! Anyway, if you've got a thing for fucking pregnant [npc.girls], I'll give you a fifty percent discount...)])]
+							[npc.speech(Все верно, горячий парень; я все еще жду, когда наши детки вылезут наружу! В общем, если тебе нравится трахать беременных [npc.girls], сделаю тебе скидку в пятьдесят процентов...)] |
+							[npc.speech(Да, именно так, крошка, я все еще таскаю в себе твоих детей! Короче, если тебе по душе трахать беременных [npc.girls], с тебя скидка в пятьдесят процентов...)] |
+							[npc.speech(О, снова привет, красавчик! Нашим деткам и правда нужно немало времени, чтобы вырасти! В общем, если тебе нравится трахать беременных [npc.girls], я сделаю тебе скидку в пятьдесят процентов...)])]
 				</p>
 			#ENDIF
 		#ELSE
 			<p>
-				Looking over at you, [npc.she] smiles and [npc.steps] forwards, blocking your way as [npc.she] exclaims,
-				[style.random(
-						[npc.speech(Hey again, hot stuff! You lookin' for a good time?)] |
-						[npc.speech(Hey again, babe! You want a good time?)] |
-						[npc.speech(Hey again, good lookin'! I can show you a real good time!)])]
+					Посмотрев на тебя, [npc.she] улыбается, а [npc.steps] делает шаг вперёд, преграждая тебе путь, пока [npc.she] восклицает:
+					[style.random(
+							[npc.speech(О, снова привет, горячий парень! Ищешь, как бы сладко провести время?)] |
+							[npc.speech(О, снова привет, крошка! Хочешь хорошенько развлечься?)] |
+							[npc.speech(О, снова привет, красавчик! Я могу устроить тебе незабываемый вечер!)]])]
 			</p>
-			<p>
-				Even if [npc.her] reaction hadn't given it away, [npc.her] slutty clothing and the heavy amount of makeup on [npc.her] face makes it quite obvious that [npc.name] is still working as a prostitute. As you're wondering how to react, the [npc.race] whines, [npc.speech(Come on! Only [#SPECIAL_PARSE_0] flames, and I'm all yours!)]
-			</p>
+				<p>
+				Даже если бы реакция [npc.her] не выдала ее, вызывающий наряд [npc.her] и густой слой макияжа на лице [npc.her] ясно дают понять, что [npc.name] все еще работает проституткой. Пока ты раздумываешь, как на это реагировать, [npc.race] капризно тянет: [npc.speech(Да ладно тебе! Всего [#SPECIAL_PARSE_0] Огней, и я вся твоя!)]
+				</p>
 		#ENDIF
 	#ELSE
 		<p>
-			The dark, twisting alleyways of northern Elis are dangerous to be travelling through at night, and so you make sure to keep on high alert as you [pc.walk] down the narrow, cobblestone paths. Thanks to your caution, you manage to spot someone skulking about in a recessed alleyway up ahead, and, preparing for the worst, you ready yourself for a fight. As this [npc.fullRace(true)] catches sight of you and [npc.steps] out from [npc.her] hiding place, however, you can immediately tell from [npc.her] body language that [npc.sheIs] not aggressive.
+			Темные, извилистые переулки северного Элиса опасны для путешествий в ночное время, поэтому ты стараешься сохранять бдительность, [pc.walk] по узким мощеным тропам. Благодаря своей осторожности тебе удается заметить кого-то, крадущегося в одном из углублений впереди, и, готовясь к худшему, ты замираешь в ожидании схватки. Однако, когда этот [npc.fullRace(true)] замечает тебя и [npc.steps] из [npc.her] укрытия, ты по [npc.her] языку тела сразу понимаешь, что [npc.sheIs] настроен(а) не агрессивно.
 		</p>
 		<p>
-			Looking over at you, this [npc.race] smiles and [npc.steps] forwards, blocking your way as [npc.she] exclaims,
+		
+			Посмотрев на тебя, эта [npc.race] улыбается и [npc.steps] вперед, преграждая тебе путь, пока [npc.she] восклицает:
 			[style.random(
-					[npc.speech(Hey, hot stuff, the name's [npc.name]! You lookin' for a good time?)] |
-					[npc.speech(Hey, babe, the name's [npc.name]! You want a good time?)] |
-					[npc.speech(Hey, good lookin', the name's [npc.name]! I can show you a real good time!)])]
+					[npc.speech(Эй, горячая штучка, меня зовут [npc.name]! Ищешь, как сладко провести время?)] |
+					[npc.speech(Эй, крошка, меня зовут [npc.name]! Хочешь хорошенько развлечься?)] |
+					[npc.speech(Эй, красавчик, меня зовут [npc.name]! Я устрою тебе незабываемую ночь!)])]
+		</p><p>
+			Даже если бы реакция [npc.her] не выдала её, по одной лишь вызывающей одежде [npc.her] и густому слою макияжа на [npc.her] лице становится очевидно, что [npc.name] — проститутка. И хотя здесь это не так распространено, как в Dominion, ты уже видел нескольких шлюх, предлагающих свои услуги на главных улицах Элиса, и гадаешь, почему именно эта девка прячется так далеко от безопасных районов. Ты предполагаешь, что [npc.she] наверняка навлекла на себя гнев закона, ведь нет другой причины работать в таком опасном и скудном на клиентов месте, как эти переулки.
 		</p>
 		<p>
-			Even if [npc.her] reaction hadn't given it away, [npc.her] slutty clothing and the heavy amount of makeup on [npc.her] face makes it quite obvious that [npc.name] is a prostitute. Although nowhere near as common as in Dominion, you've seen several hookers offering their services out in the main streets of Elis, and you wonder why this particular one would be hiding so far away from the safety of those areas. You assume that [npc.she] must have run afoul of the law, for there's no other reason to be working in a place as dangerous and client-starved as these alleyways.
-		</p>
-		<p>
-			As you're wondering how to react, the [npc.race] whines, [npc.speech(Come on! Only [#SPECIAL_PARSE_0] flames, and I'm all yours!)]
+		Пока ты раздумываешь, как поступить, [npc.race] скулит: [npc.speech(Да ладно тебе! Всего [#SPECIAL_PARSE_0] огней, и я вся твоя!)]
 		</p>
 	#ENDIF
 	]]></htmlContent>
 	
 	<htmlContent tag="ALLEY_PROSTITUTE_LEAVE"><![CDATA[
 	<p>
-		Telling [npc.name] in no uncertain terms that you're not interested in having sex with [npc.herHim], you quickly [pc.step] past [npc.herHim] and continue on your way.
+		В самым недвусмысленном виде заявив [npc.name], что секс с [npc.herHim] тебя не интересует, ты быстро [pc.step] мимо [npc.herHim] и идешь дальше.
 	</p>
 	<p>
-		As you [pc.walk] off, [npc.she] calls out after you, [npc.speech(Come back if you ever want the best fuck of your life! Oh, and tell your friends too!)]
+		Пока ты [pc.walk], [npc.she] выкрикивает тебе вслед: [npc.speech(Возвращайся, если когда-нибудь захочешь лучшего траха в своей жизни! О, и друзей своих зови тоже!)]
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="ALLEY_PROSTITUTE_DOM_SEX"><![CDATA[
 	<p>
-		Liking the sound of what [npc.name] is offering, you hand over [#SPECIAL_PARSE_0] flames to [npc.herHim], saying that you're going to enjoy dominantly fucking [npc.herHim].
+	Тебе нравится предложение [npc.name], и ты протягиваешь [npc.herHim] [#SPECIAL_PARSE_0] огней, заявляя, что собираешься доминировать и трахать [npc.herHim].
 	</p>
 	<p>
-		[npc.speech(That's what I like to hear,)] [npc.name] coyly teases, before [npc.stepping] back into the doorway behind [npc.herHim] and saying, [npc.speech(Come on in; I've got a bed we can use upstairs.)]
+	[npc.speech(Вот это я люблю,)] — кокетливо дразнит [npc.name], прежде чем [npc.stepping] затаскивает тебя в дверной проем за [npc.herHim] и говорит: [npc.speech(Заходи; наверху есть кровать, которой мы можем воспользоваться.)]
 	</p>
 	<p>
-		Waiting for this [npc.race] prostitute to unlock and open the door, you follow [npc.herHim] into a dimly-lit hallway, up a creaky old staircase, and into a small, sparsely-furnished room. Taking a quick look around while [npc.she] closes and locks the door, you see that while the furniture and general décor in [npc.her] tiny apartment is quite shabby, it's surprisingly clean and well-lit.
+	Пока эта проститутка [npc.race] отпирает и открывает дверь, ты следуешь за [npc.herHim] по тускло освещенному коридору, вверх по скрипучей старой лестнице и в маленькую, скудно обставленную комнату. Пока [npc.she] закрывает и запирает дверь, ты быстро оглядываешься и замечаешь, что хотя мебель и декор в крошечной квартирке [npc.her] довольно обшарпанные, здесь на удивление чисто и светло.
 	</p>
 	<p>
-		[npc.speech(Let's get to it then, babe!)] [npc.name] excitedly exclaims, before grabbing your [pc.hand] and leading you over to the double-bed on the other side of the room. Turning around and flashing you a seductive grin, she teases, [npc.speech(Come on then; show me how you'd like to dominate me...)]
+	[npc.speech(Тогда приступим, крошка!)] — восторженно восклицает [npc.name], прежде чем схватить тебя за [pc.hand] и повести к двуспальной кровати в другом конце комнаты. Обернувшись и одарив тебя соблазнительной ухмылкой, она дразнит: [npc.speech(Ну же; покажи мне, как именно ты хочешь меня подчинить...)]
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="ALLEY_PROSTITUTE_SUB_SEX"><![CDATA[
 	<p>
-		Although you like the sound of what [npc.name] is offering, you want to make sure that you can be the submissive partner, and so as you hand over [#SPECIAL_PARSE_0] flames to the [npc.race], you ask [npc.herHim] if [npc.she] can take the lead.
+	Хотя тебе и нравится предложение [npc.name], ты хочешь убедиться, что сможешь быть ведомым партнером, поэтому, отдавая [npc.race] [#SPECIAL_PARSE_0] огней, ты спрашиваешь [npc.herHim], может ли [npc.she] взять инициативу на себя.
 	</p>
 	<p>
-		[npc.speech(Don't you worry, you sweet little thing; I can take charge,)] [npc.name] confidently states, before [npc.stepping] back into the doorway behind [npc.herHim] and saying, [npc.speech(Come on in; I've got a bed we can use upstairs.)]
+		[npc.speech(Да не переживай ты, милашка; я всё возьму на себя,)] — уверенно заявляет [npc.name], прежде чем [npc.stepping] отступить в дверной проём позади [npc.herHim] и добавить: [npc.speech(Заходи; наверху есть кровать, которой мы можем воспользоваться.)]
 	</p>
 	<p>
-		Waiting for this [npc.race] prostitute to unlock and open the door, you follow [npc.herHim] into a dimly-lit hallway, up a creaky old staircase, and into a small, sparsely-furnished room. Taking a quick look around while [npc.she] closes and locks the door, you see that while the furniture and general décor in [npc.her] tiny apartment is quite shabby, it's surprisingly clean and well-lit.
+	Пока эта проститутка [npc.race] отпирает и открывает дверь, ты следуешь за [npc.herHim] по тускло освещенному коридору, вверх по скрипучей старой лестнице и в маленькую, скудно обставленную комнату. Пока [npc.she] закрывает и запирает дверь, ты быстро оглядываешься и замечаешь, что хотя мебель и декор в крошечной квартирке [npc.her] довольно обшарпанные, здесь на удивление чисто и светло.
 	</p>
 	<p>
-		[npc.speech(Let's get to it then, babe!)] [npc.name] excitedly exclaims, before grabbing your [pc.hand] and leading you over to the double-bed on the other side of the room. Turning around and flashing you a seductive grin, she teases, [npc.speech(So you wanted me to take charge, huh? Let me show you the sort of things I like...)]
+		[npc.speech(Тогда приступим, крошка!)] — восторженно восклицает [npc.name], хватая тебя за [pc.hand] и увлекая к двуспальной кровати на другом конце комнаты. Развернувшись и одарив тебя соблазнительной ухмылкой, она дразнит: [npc.speech(Значит, ты хотел, чтобы я взяла всё в свои руки, а? Ну, тогда позволь показать тебе, что именно мне нравится...)]
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="QUESTIONED"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_elis_alleyway_prostitute_apartment))
 		<p>
-			As you lie back on [npc.namePos] bed, you find yourself wondering why [npc.she] is choosing to work in these dangerous alleyways, and so you look over and ask [npc.herHim] why [npc.she] doesn't try to attract customers out in the safety of the town's main streets.
+			Когда ты откидываешься на [npc.namePos] кровати, ты невольно задаешься вопросом, почему [npc.she] предпочитает работать в этих опасных переулках, и, взглянув на неё, спрашиваешь [npc.herHim], почему [npc.she] не пытается завлекать клиентов на безопасных главных улицах города.
 		</p>
 		<p>
-			[npc.speech(Hey, what business is it of yours where I choose to work?)] [npc.name] defensively asks, before starting to panic and exclaim, [npc.speech(Wait, you're not an Enforcer, are you?! I can't afford to pay that fucking [#SPECIAL_PARSE_0] flame fine!)]
+			[npc.speech(Эй, а тебе какое дело, где мне работать?)] — оборонительно спрашивает [npc.name], после чего начинает паниковать и восклицать: [npc.speech(Погоди, ты ведь не Enforcer, правда?! У меня нет лишних денег, чтобы платить этот грёбаный штраф в [#SPECIAL_PARSE_0] огней!)]
 		</p>
 		<p>
-			As you confirm to [npc.name] that you're not an Enforcer, you can't help but notice how [npc.she] lets out a sigh of relief. Turning [npc.her] attention back to getting [npc.her] clothes in order, [npc.she] admits, [npc.speech(Look, let's just say that I prefer to work in places where I'm not likely to be found. Anyway, your time's almost up, so please get ready to leave...)]
+			Когда ты подтверждаешь [npc.name], что ты не Enforcer, ты не можешь не заметить, с каким облегчением [npc.she] выдыхает. Снова переключив [npc.her] внимание на то, чтобы привести [npc.her] одежду в порядок, [npc.she] признаётся: [npc.speech(Слушай, скажем так, мне больше нравится работать там, где меня вряд ли найдут. В любом случае, твоё время почти вышло, так что готовься уходить...)]
 		</p>
 		<p>
-			From the manner in which [npc.she] reacted, it's obvious that [npc.name] is wanted by the Enforcers for some sort of crime, and needs to pay a [#SPECIAL_PARSE_0] flame fine in order to get out of it. If you really felt like it, you could use this knowledge to clear [npc.herHim] out of this
+			Судя по реакции [npc.she], становится очевидно, что [npc.name] разыскивают Enforcer за какое-то преступление, и чтобы отделаться, ей нужно выплатить штраф в [#SPECIAL_PARSE_0] огней. Если у тебя будет такое желание, ты сможешь использовать это знание, чтобы выжить [npc.herHim] из этого
 			#IF(game.getDialogueFlags().hasFlag(FLAG_prostitutionLicenseObtained))
-				 area, or if you wanted to help, you could offer [npc.herHim] a job back in Dominion at Angel's Kiss...
+				 района, а если захочешь помочь, то можешь предложить [npc.herHim] работу в Dominion, в Angel's Kiss...
 			#ELSE
-				 area...
+				 районе...
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			Wondering why [npc.name] is choosing to work in these dangerous alleyways, you ask [npc.herHim] why [npc.she] isn't trying to attract customers out in the safety of Elis's main streets, or, even better, in the city's red-light district.
+			Задаваясь вопросом, почему [npc.name] предпочитает работать в таких опасных переулках, ты спрашиваешь [npc.herHim], почему [npc.she] не пытается заманивать клиентов на безопасных главных улицах Элиса или, что еще лучше, в городском квартале красных фонарей.
 		</p>
 		<p>
-			[npc.speech(Hey, what business is it of yours where I choose to work?)] [npc.name] defensively asks, before starting to panic and exclaim, [npc.speech(Wait, you're not an Enforcer, are you?! I can't afford to pay that fucking [#SPECIAL_PARSE_0] flame fine!)]
+			[npc.speech(Эй, а тебе какое дело, где мне работать?)] — оборонительно спрашивает [npc.name], после чего начинает паниковать и восклицать: [npc.speech(Погоди, ты ведь не Enforcer, правда?! У меня нет лишних денег, чтобы платить этот грёбаный штраф в [#SPECIAL_PARSE_0] огней!)]
 		</p>
 		<p>
-			As you confirm to [npc.name] that you're not an Enforcer, you can't help but notice how [npc.she] lets out a sigh of relief. Placing [npc.her] [npc.hands] on [npc.her] [npc.hips+], [npc.she] admits, [npc.speech(Look, let's just say that I prefer to work in places where I'm not likely to be found. Now, are you going to fuck me or what?!)]
+			Когда ты подтверждаешь [npc.name], что ты не Enforcer, ты невольно замечаешь, как [npc.she] облегченно вздыхает. Положив [npc.her] [npc.hands] на [npc.her] [npc.hips+], [npc.she] признается: [npc.speech(Слушай, скажем так, мне больше нравится работать там, где меня вряд ли найдут. Ну так что, ты собираешься меня трахать или как?!)]
 		</p>
 		<p>
-			From the manner in which [npc.she] reacted, it's obvious that [npc.name] is wanted by the Enforcers for some sort of crime, and needs to pay a [#SPECIAL_PARSE_0] flame fine in order to get out of it. If you really felt like it, you could use this knowledge to clear [npc.herHim] out of this
+			Судя по реакции [npc.she], становится очевидно, что [npc.name] разыскивают Enforcer за какое-то преступление, и чтобы отделаться, ей нужно выплатить штраф в [#SPECIAL_PARSE_0] огней. Если у тебя будет такое желание, ты сможешь использовать это знание, чтобы выжить [npc.herHim] из этого
 			#IF(game.getDialogueFlags().hasFlag(FLAG_prostitutionLicenseObtained))
-				 area, or if you wanted to help, you could offer [npc.herHim] a job back in Dominion  at Angel's Kiss...
+				 района, а если захочешь помочь, то можешь предложить [npc.herHim] работу в Dominion, в Angel's Kiss...
 			#ELSE
-				 area...
+				 районе...
 			#ENDIF
 		</p>
 	#ENDIF
@@ -141,28 +141,25 @@
 	
 	<htmlContent tag="ANGELS_KISS"><![CDATA[
 	<p>
-		Wanting to give [npc.name] an opportunity to get out of the unfortunate situation which [npc.she] finds [npc.herself] in, you ask [npc.herHim] if [npc.she]'d like to work in a safe, well-respected brothel.
+		Желая дать [npc.name] шанс выбраться из злосчастной ситуации, в которой [npc.she] заперта [npc.herself], ты спрашиваешь [npc.herHim], не хочет ли [npc.she] поработать в безопасном и уважаемом борделе.
 	</p>
 	<p>
-		A look of surprise flashes over [npc.namePos] face, and [npc.she] cautiously asks, [npc.speech(What do you mean by that? There's no brothel in Elis... Well, other than that place over in Wall's End, but they only take respectable sheep-girls there...)]
+		На лице [npc.namePos] промелькнуло удивление, и [npc.she] осторожно спрашивает: [npc.speech(Что ты имеешь в виду? В Элисе нет борделей... Ну, кроме того заведения в Уоллс-Энде, но там принимают только приличных овечьих девчонок...)]
+	</p><p>
+Рассказать [npc.name], что в Dominion ты дружишь с хозяйкой борделя «Поцелуй ангела», и заявить [npc.herHim], что [npc.her] можно погасить долг, если она согласится там работать. Признаться, что при этом часть дохода [npc.her] будет уходить напрямую борделю, и доказать, что это сущая мелочь, если это поможет избавиться от придирок Enforcer к [npc.her], не говоря уже о том, что у [npc.she] появится безопасное место для работы.
+</p><p>
+Больше не нужно никаких уговоров: [npc.namePos] и [npc.eyes] буквально светятся от радости, когда [npc.she] слышит, что ты предлагаешь [npc.herHim] путь из этих трущоб, и [npc.she] ахает, [npc.speech(Ты серьезно?! Только не вздумай меня обманывать! Неужели... неужели я наконец-то смогу выбраться из этих переулков?!)]
+</p><p>
+		Уверяя недоверчивую [npc.race], что ты говоришь [npc.herHim] чистую правду, ты велишь [npc.herHim] проложить [npc.her] путь к Dominion, отыскать бордель под названием «Поцелуй ангела» и сказать самой Ангел, что [npc.herHim] прислал [pc.name].
 	</p>
 	<p>
-		Telling [npc.name] that you're friends with the owner of the brothel, 'Angel's Kiss', back in Dominion, you tell [npc.herHim] that [npc.her] fine could be paid off in exchange for agreeing to work there. Admitting that it would involve paying a percentage of [npc.her] income directly to the brothel, you argue that surely that's a small price to pay in order to get the Enforcers off [npc.her] back, not to mention the fact that [npc.she]'ll have a safe place to work out of.
-	</p>
-	<p>
-		Not needing any more convincing, [npc.namePos] [npc.eyes] light up as [npc.she] hears you offering [npc.herHim] a way out of the alleyways, and [npc.she] gasps, [npc.speech(You're serious?! You'd better not be tricking me! I can... I can finally escape these alleyways?!)]
-	</p>
-	<p>
-		Telling the distrustful [npc.race] that you're being completely truthful with [npc.herHim], you instruct [npc.herHim] to make [npc.her] way to Dominion, seek out the brothel called 'Angel's Kiss', and tell Angel herself that '[pc.name]' sent [npc.herHim].
-	</p>
-	<p>
-		With tears in [npc.her] eyes, [npc.name] accepts your offer by gratefully exclaiming, [npc.speech(Thank you, thank you so much! I can't really... I mean, I'm so grateful... I don't know what to say...)]
+		Со слезами на [npc.her] глазах, [npc.name] принимает твоё предложение, благодарно восклицая: [npc.speech(Спасибо, спасибо тебе огромное! Я просто... то есть, я так тебе благодарна... даже не знаю, что и сказать...)]
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_innoxia_elis_alleyway_prostitute_apartment))
-			Telling [npc.name] that [npc.sheIs] welcome, you help [npc.herHim] to quickly grab [npc.her] things, before following [npc.herHim] out of [npc.her] apartment and watching [npc.herHim] run off in the direction of the town's gates. Smiling to yourself, you prepare to continue on your way, happy with the fact that you've helped [npc.name] to escape these dangerous alleyways...
+			Сказав [npc.name], что [npc.sheIs] рады тебе, ты помогаешь [npc.herHim] быстро собрать [npc.her], после чего провожаешь [npc.herHim] из [npc.her] квартиры и наблюдаешь, как [npc.herHim] убегает в сторону городских ворот. Улыбаясь про себя, ты готовишься продолжить свой путь, радуясь тому, что помог(ла) [npc.name] выбраться из этих опасных переулков...
 		#ELSE
-			Telling [npc.name] that [npc.sheIs] welcome, you watch as [npc.she] quickly grabs [npc.her] things, before thanking you one last time and then hurrying off in the direction of the town's gates. Smiling to yourself, you prepare to continue on your way, happy with the fact that you've helped [npc.name] to escape these dangerous alleyways...
+			Сказав [npc.name], что [npc.sheIs] рады тебе, ты наблюдаешь, как [npc.she] быстро хватает [npc.her], после чего в последний раз благодарит тебя и спешит в сторону городских ворот. Улыбаясь про себя, ты готовишься продолжить свой путь, радуясь тому, что помог(ла) [npc.name] выбраться из этих опасных переулков...
 		#ENDIF
 	</p>
 	]]></htmlContent>
@@ -170,41 +167,39 @@
 	<htmlContent tag="REMOVAL_THREATENED"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_elis_alleyway_prostitute_apartment))
 		<p>
-			Getting up off [npc.namePos] bed, you turn to face [npc.herHim] and pointedly ask what [npc.she] did in order to have earned a [#SPECIAL_PARSE_0] flame fine from the Enforcers. Letting out an exasperated sigh, the [npc.race] prostitute snaps, [npc.speech(That's none of your business! I should never have mentioned that...)]
+			Поднявшись с [npc.namePos] постели, ты поворачиваешься к [npc.herHim] и в упор спрашиваешь, что же такого сделала [npc.she], раз ей выписали штраф в [#SPECIAL_PARSE_0] огней от Enforcer. Издав раздраженный вздох, [npc.race] проститутка огрызается: [npc.speech(Это не твое дело! Не стоило мне об этом упоминать...)]
 		</p>
 		<p>
-			Having already got what you wanted from [npc.herHim], you continue with your plan to get rid of [npc.name], and casually wonder out loud what the Enforcers would do to [npc.herHim] if they knew where [npc.she] was living. As the [npc.race] turns to look at you with a shocked expression on [npc.her] face, you tell [npc.herHim] that you're looking forward to finding out, before heading towards the door and stating your intention to report [npc.herHim] to the nearest constable.
-		</p>
-		<p>
-			Frantically grabbing [npc.her] bag and stuffing [npc.her] personal possessions into it, [npc.name]
-			#IF(npc.isFeminine())
-				 screams,
+			Получив от [npc.herHim] всё, что ты хотел(а), ты приступаешь к своему плану по избавлению от [npc.name] и как бы невзначай рассуждаешь вслух о том, что сделают Enforcer с [npc.herHim], если узнают, где живет [npc.she]. Когда [npc.race] оборачивается к тебе с шокированным выражением [npc.her] на лице, ты говоришь [npc.herHim], что с нетерпением ждешь возможности это выяснить, после чего направляешься к двери, заявляя о своем намерении донести на [npc.herHim] ближайшему констеблю.
+		</p><p>
+			Лихорадочно хватая [npc.her] сумку и запихивая в неё [npc.her] личные вещи, [npc.name]			#IF(npc.isFeminine())
+				 истошно вопит,
 			#ELSE
-				 bellows,
+				 орет,
 			#ENDIF
-			 [npc.speech(You fucking [pc.bitch]! I can't believe you're doing this to me!)]
+			 [npc.speech(Ты, гребаный [pc.bitch]! Поверить не могу, что ты так со мной поступаешь!)]
 		</p>
 		<p>
-			Ignoring [npc.her] insult, you quickly exit [npc.namePos] apartment, and after waiting just a couple of minutes, you see [npc.herHim] stumble out of [npc.her] doorway, sobbing and crying as [npc.she] clutches [npc.her] bag tightly to [npc.her] chest. Not even noticing you in [npc.her] haste to get as far away from [npc.her] apartment as possible, the [npc.race] runs off down the alleyway and quickly disappears from your sight, never to be seen again...
+			Игнорируя [npc.her] оскорбление, ты быстро выходишь из [npc.namePos] квартиры. Подождав всего пару минут, ты видишь, как [npc.herHim] вываливается из [npc.her] дверного проема, рыдая и всхлипывая, а [npc.she] крепко прижимает [npc.her] сумку к [npc.her] груди. Даже не заметив тебя в своей [npc.her] спешке поскорее убраться подальше от [npc.her] квартиры, [npc.race] убегает в переулок и быстро скрывается из виду, больше никогда не попадаясь тебе на глаза...
 		</p>
 	#ELSE
 		<p>
-			Not wanting this lowlife hanging around in this area for any longer, you pointedly ask what [npc.she] did in order to have earned a [#SPECIAL_PARSE_0] flame fine from the Enforcers. Letting out an exasperated sigh, the [npc.race] prostitute snaps, [npc.speech(That's none of your business! I should never have mentioned that...)]
+			Не желая, чтобы эта никчемная девка и дальше ошивалась в этих краях, ты нарочито спрашиваешь, чем же [npc.she] так умудрилась заработать штраф в [#SPECIAL_PARSE_0] Огней от Enforcer. Издав раздраженный вздох, [npc.race] проститутка огрызается: [npc.speech(Не твоё дело! Надо было вообще про это не упоминать...)]
 		</p>
 		<p>
-			Continuing with your plan to get rid of [npc.name], you casually wonder out loud what the Enforcers would do to [npc.herHim] if they knew where [npc.she] was living. As a shocked expression quickly settles on the [npc.race]'s face, you tell [npc.herHim] that you're looking forward to finding out, before starting to [pc.walk] off and call out your intention to report [npc.herHim] to the nearest constable.
+			Продолжая свой план по избавлению от [npc.name], ты как бы невзначай размышляешь вслух о том, что сделают Enforcer с [npc.herHim], если узнают, где живет [npc.she]. Пока на лице [npc.race] застывает выражение шока, ты говоришь [npc.herHim], что с нетерпением ждешь возможности это выяснить, после чего начинаешь [pc.walk] и заявляешь, что собираешься донести на [npc.herHim] ближайшему констеблю.
 		</p>
 		<p>
-			[npc.NamePos] look of complete disbelief is quickly replaced by one of fear and anger as [npc.she] hears what it is you're saying, and as you [pc.walk] off, [npc.she]
+			[npc.NamePos] выражение полного недоверия быстро сменяется страхом и гневом, когда [npc.she] слышит твои слова, и когда ты [pc.walk], [npc.she]
 			#IF(npc.isFeminine())
-				 screams
+				 визжит
 			#ELSE
-				 bellows
+				 ревет
 			#ENDIF
-			 after you, [npc.speech(You fucking [pc.bitch]! I can't believe you're doing this to me!)]
+			 вслед за тобой, [npc.speech(Ах ты гребаная [pc.bitch]! Поверить не могу, что ты так со мной поступаешь!)]
 		</p>
 		<p>
-			Ignoring [npc.her] insult, you look back to see [npc.name] start to sob and cry as [npc.she] turns and runs off down the alleyway, before turning a corner and disappearing from your sight. With the threat of Enforcers looking for [npc.herHim] in this area, you can be sure that you'll never see [npc.herHim] again...
+			Игнорируя оскорбление [npc.her], ты оглядываешься и видишь, как [npc.name] начинает рыдать и плакать, пока [npc.she] разворачивается и убегает прочь по переулку, сворачивает за угол и скрывается из виду. Учитывая, что Enforcer будут искать [npc.herHim] в этом районе, ты можешь быть уверен, что больше никогда не увидишь [npc.herHim]...
 		</p>
 	#ENDIF
 	]]></htmlContent>
@@ -212,47 +207,44 @@
 	<htmlContent tag="REMOVAL_PAID"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_elis_alleyway_prostitute_apartment))
 		<p>
-			Not wanting to leave [npc.name] trapped in such a dangerous place, you ask [npc.herHim] if paying off the [#SPECIAL_PARSE_0] flame fine [npc.she] mentioned earlier would be enough for [npc.herHim] to escape from these alleyways. Letting out an exasperated sigh, the [npc.race] prostitute snaps, [npc.speech(Yes, but that's really none of your business! I should never have mentioned that...)]
+			Не желая оставлять [npc.name] в таком опасном месте, ты спрашиваешь [npc.herHim], хватит ли выплаты штрафа в [#SPECIAL_PARSE_0] огней, о котором [npc.she] упоминала ранее, чтобы [npc.herHim] смогла выбраться из этих переулков. Издав раздраженный вздох, [npc.race] проститутка огрызается: [npc.speech(Да, но это вообще не твое дело! Не стоило мне об этом упоминать...)]
 		</p>
 		<p>
-			Clearly on-edge about the fact that [npc.sheHasFull] such a huge fine to pay off, you don't let [npc.namePos] hostile reaction put you off from continuing with your plan. Getting up from off of [npc.her] bed, you [pc.step] over to the [npc.race] and offer [npc.herHim] the [#SPECIAL_PARSE_0] flames [npc.she] needs to pay off [npc.her] fine.
+			Очевидно, что [npc.sheHasFull] сильно нервничает из-за того, что ей нужно выплатить такой огромный штраф, но ты не позволяешь враждебной реакции [npc.namePos] сбить тебя с намеченного плана. Встав с [npc.her] кровати, ты [pc.step] к [npc.race] и предлагаешь [npc.herHim] те [#SPECIAL_PARSE_0] огней, которые нужны [npc.she], чтобы оплатить [npc.her] штраф.
+		</p><p>
+			[npc.speech(Ты это серьёзно?!)] [npc.name] в шоке вскрикивает, прежде чем прижать [npc.her] [npc.hands] к [npc.her] рту, когда [npc.she] видит количество огней, которые ты отдаёшь [npc.herHim]. Спустя мгновение [npc.she] нерешительно тянется за деньгами, словно [npc.she] ждёт, что ты отдёрнешь их в последний момент. Однако ты и не думаешь этого делать, и позволяешь [npc.name] забрать твои огни.
 		</p>
 		<p>
-			[npc.speech(Are you serious?!)] [npc.name] cries out in shock, before clasping [npc.her] [npc.hands] over [npc.her] mouth as [npc.she] sees the amount of flames which you're giving [npc.herHim]. After a moment, [npc.she] tentatively reaches out to take the money, almost as if [npc.she] expects you to pull it away at the last moment. No such thing is on your mind, however, and you let [npc.name] take the flames from you.
+			[npc.speech(Даже не знаю, что сказать... Спасибо! Спасибо тебе огромное! Наконец-то я смогу отсюда выбраться!)] [npc.name] рыдает от слез радости, пока [npc.she] смотрит на твои [pc.eyes] с огромной улыбкой на [npc.her] лице. Прежде чем ты успеваешь отреагировать на ее слезливое представление, [npc.she] внезапно что-то вспоминает и быстро перебегает на другой конец комнаты, где наклоняется и поддевает расшатанную половицу. Схватив то, что [npc.she] прятала под ней, [npc.name] подпрыгивая возвращается к тебе и говорит: [npc.speech(Не спрашивай, откуда это у меня, но я планировала использовать это как последний шанс, если Enforcer найдут меня здесь. Я хочу, чтобы ты взял это!)]
 		</p>
 		<p>
-			[npc.speech(I don't know what to say... Thank you! Thank you so much! I'm finally going to be able to get out of here!)] [npc.name] sobs, crying tears of joy as [npc.she] looks up into your [pc.eyes] with a huge smile on [npc.her] face. Before you can react to her tearful display, [npc.she] suddenly seems to think of something, and quickly darts over to the other side of the room, before bending down and prising up a loose floorboard. Grabbing something which [npc.she] was hiding under there, [npc.name] skips back over to where you're standing and says, [npc.speech(Don't ask me how I got this, but I was planning on using it as a last resort if the Enforcers found me here. I want you to take it!)]
+			Не оставляя тебе особого выбора, [npc.race] впихивает предмет тебе в [pc.hands], и ты смотришь вниз, обнаруживая, что это [#SPECIAL_PARSE_1]!
 		</p>
 		<p>
-			Not giving you much choice in the matter, the [npc.race] pushes the item into your [pc.hands], and you look down to see that it's [#SPECIAL_PARSE_1]!
+			Поблагодарив [npc.name], ты советуешь [npc.herHim] больше не позволять [npc.herself] попадать в такие передряги. Одарив тебя последней улыбкой, [npc.race] произносит: [npc.speech([style.random(Как только выплачу штраф, отправлюсь за Бескрайнее море. С меня хватит этого места!|Выплачу штраф и уеду из этого города. С меня хватит Dominion!|Когда закрою долг, отправлюсь на восток, в порт Лионесс. Покину эти земли и больше никогда не вернусь!|Сначала выплачу штраф, а потом свалим из Dominion. Терпеть не могу этот город!)])]
 		</p>
 		<p>
-			Thanking [npc.name], you tell [npc.herHim] not to let [npc.herself] get into such a bad position again. Flashing you one last smile, the [npc.race] reveals, [npc.speech([style.random(Once I've paid off my fine I'm going to take the trip over the Endless Sea. I've had enough of this place!|I'm going to pay off my fine and then move out of this city. I've had enough of Dominion!|After I've paid off my fine, I'm going east to the port of Lyonesse. I'm leaving the Realm and never coming back!|I'm going to pay off my fine then get out of Dominion. I can't stand this city!)])]
-		</p>
-		<p>
-			With that, [npc.she] turns away and swiftly exits [npc.her] apartment, before running off to go and pay [npc.her] fine. Satisfied that you've done a good deed, you hold your head up high as you prepare to follow in [npc.namePos] footsteps and continue on your journey...
+		
+С этими словами [npc.she] отворачивается и быстро покидает квартиру [npc.her], спеша оплатить штраф [npc.her]. Удовлетворенный тем, что совершил доброе дело, ты с высоко поднятой головой готовишься последовать за [npc.namePos] и продолжить свое путешествие...
 		</p>
 	#ELSE
 		<p>
-			Not wanting to leave [npc.name] trapped in such a dangerous place, you ask [npc.herHim] if paying off the [#SPECIAL_PARSE_0] flame fine [npc.she] mentioned earlier would be enough for [npc.herHim] to escape from these alleyways. Letting out an exasperated sigh, the [npc.race] prostitute snaps, [npc.speech(Yes, but that's really none of your business! I should never have mentioned that...)]
+			Не желая оставлять [npc.name] в таком опасном месте, ты спрашиваешь [npc.herHim], хватит ли выплаты штрафа в [#SPECIAL_PARSE_0] огней, о котором [npc.she] упоминала ранее, чтобы [npc.herHim] смогла выбраться из этих переулков. Издав раздраженный вздох, [npc.race] проститутка огрызается: [npc.speech(Да, но это вообще не твое дело! Не стоило мне об этом упоминать...)]
+		</p><p>
+Очевидно, что мысль о том, что [npc.sheHasFull] нужно выплатить такой огромный штраф, заставляет тебя нервничать, но ты не позволяешь [npc.namePos] враждебной реакции сбить тебя с намеченного плана. [pc.Stepping] к [npc.race], ты предлагаешь [npc.herHim] те [#SPECIAL_PARSE_0] огни, которые нужны [npc.she], чтобы погасить [npc.her] штраф.
+</p><p>
+			[npc.speech(Ты это серьёзно?!)] [npc.name] в шоке вскрикивает, прежде чем прижать [npc.her] [npc.hands] к [npc.her] рту, когда [npc.she] видит количество огней, которые ты отдаёшь [npc.herHim]. Спустя мгновение [npc.she] нерешительно тянется за деньгами, словно [npc.she] ждёт, что ты отдёрнешь их в последний момент. Однако ты и не думаешь этого делать, и позволяешь [npc.name] забрать твои огни.
+		</p><p>
+			[npc.speech(Даже не знаю, что сказать... Спасибо! Спасибо тебе огромное! Наконец-то я смогу отсюда выбраться!)] [npc.name] рыдает от слез радости, пока [npc.she] заглядывает тебе в [pc.eyes] с широкой улыбкой на [npc.her] лице. Прежде чем ты успеваешь как-то отреагировать на её слезливое ликование, [npc.she] внезапно о чем-то вспоминает и быстро пробегает немного вперед по переулку, после чего наклоняется и сдвигает в сторону расшатанную решетку на стене. Схватив то, что [npc.she] прятала за ней, [npc.name] подпрыгивая возвращается к тебе и говорит: [npc.speech(Не спрашивай, откуда это у меня, но я планировала использовать это как последний шанс, если Enforcer найдут меня здесь. Возьми это!)]
 		</p>
 		<p>
-			Clearly on-edge about the fact that [npc.sheHasFull] such a huge fine to pay off, you don't let [npc.namePos] hostile reaction put you off from continuing with your plan. [pc.Stepping] towards the [npc.race], you offer [npc.herHim] the [#SPECIAL_PARSE_0] flames [npc.she] needs to pay off [npc.her] fine.
+			Почти не давая тебе выбора, [npc.race] впихивает предмет тебе в [pc.hands], и ты смотришь вниз, обнаруживая, что это [#SPECIAL_PARSE_1]! 
 		</p>
 		<p>
-			[npc.speech(Are you serious?!)] [npc.name] cries out in shock, before clasping [npc.her] [npc.hands] over [npc.her] mouth as [npc.she] sees the amount of flames which you're giving [npc.herHim]. After a moment, [npc.she] tentatively reaches out to take the money, almost as if [npc.she] expects you to pull it away at the last moment. No such thing is on your mind, however, and you let [npc.name] take the flames from you.
+			Поблагодарив [npc.name], ты советуешь [npc.herHim] больше не позволять [npc.herself] попадать в такие передряги. Одарив тебя последней улыбкой, [npc.race] произносит: [npc.speech([style.random(Как только выплачу штраф, отправлюсь за Бескрайнее море. С меня хватит этого места!|Выплачу штраф и уеду из этого города. С меня хватит Dominion!|Когда закрою долг, отправлюсь на восток, в порт Лионесс. Покину эти земли и больше никогда не вернусь!|Сначала выплачу штраф, а потом свалим из Dominion. Терпеть не могу этот город!)])]
 		</p>
 		<p>
-			[npc.speech(I don't know what to say... Thank you! Thank you so much! I'm finally going to be able to get out of here!)] [npc.name] sobs, crying tears of joy as [npc.she] looks up into your [pc.eyes] with a huge smile on [npc.her] face. Before you can react to her tearful display, [npc.she] suddenly seems to think of something, and quickly darts a little way down the alleyway, before bending down and sliding a loose wall-grate to one side. Grabbing something which [npc.she] was hiding behind it, [npc.name] skips back over to where you're standing and says, [npc.speech(Don't ask me how I got this, but I was planning on using it as a last resort if the Enforcers found me here. I want you to take it!)]
-		</p>
-		<p>
-			Not giving you much choice in the matter, the [npc.race] pushes the item into your [pc.hands], and you look down to see that it's [#SPECIAL_PARSE_1]! 
-		</p>
-		<p>
-			Thanking [npc.name], you tell [npc.herHim] not to let [npc.herself] get into such a bad position again. Flashing you one last smile, the [npc.race] reveals, [npc.speech([style.random(Once I've paid off my fine I'm going to take the trip over the Endless Sea. I've had enough of this place!|I'm going to pay off my fine and then move out of this city. I've had enough of Dominion!|After I've paid off my fine, I'm going east to the port of Lyonesse. I'm leaving the Realm and never coming back!|I'm going to pay off my fine then get out of Dominion. I can't stand this city!)])]
-		</p>
-		<p>
-			With that, [npc.she] turns away and runs off to go and pay [npc.her] fine. Satisfied that you've done a good deed, you hold your head up high as you prepare to follow in [npc.namePos] footsteps and continue on your journey...
+			С этими словами [npc.she] отворачивается и убегает, чтобы оплатить [npc.her]. Удовлетворенный тем, что совершил доброе дело, ты гордо поднимаешь голову и готовишься последовать по стопам [npc.namePos], чтобы продолжить свое путешествие...
 		</p>
 	#ENDIF
 	]]></htmlContent>
@@ -261,23 +253,23 @@
 	<htmlContent tag="ATTACK"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_elis_alleyway_prostitute_apartment))
 		<p>
-			Having had your fun with [npc.herHim], you decide that it's time to put this whore in [npc.her] place. Knowing that [npc.sheIs] wanted by the Enforcers, and therefore extremely unlikely to report your assault, you get up off of [npc.her] bed and aggressively tell [npc.herHim] that you're going to teach [npc.herHim] a lesson.
+			Насладившись [npc.herHim], ты решаешь, что пора поставить эту шлюху на [npc.her]. Зная, что за [npc.sheIs] охотятся Enforcer и она вряд ли решится донести о твоем нападении, ты встаешь с [npc.her] кровати и агрессивно заявляешь [npc.herHim], что собираешься преподать [npc.herHim] урок.
 		</p>
 		<p>
-			[npc.speech(What the fuck?!)] the [npc.race] exclaims as [npc.she] jumps to [npc.her] [npc.feet] and prepares to defend [npc.herself]. [npc.speech(Get away from me!)]
+			[npc.speech(Какого хера?!)] — восклицает [npc.race], когда [npc.she] прыгает на [npc.her] [npc.feet], готовясь защищать [npc.herself]. [npc.speech(А ну отвали от меня!)]
 		</p>
 		<p>
-			Committed to your course of action, you ignore the [npc.race]'s words as you prepare to attack [npc.herHim]...
+			Верный своему решению, ты игнорируешь слова [npc.race] и готовишься атаковать [npc.herHim]...
 		</p>
 	#ELSE
 		<p>
-			Having heard enough from [npc.herHim], you decide that it's time to put this whore in [npc.her] place. Knowing that [npc.sheIs] wanted by the Enforcers, and therefore extremely unlikely to report your assault, you [pc.step] forwards and aggressively tell [npc.herHim] that you're going to teach [npc.herHim] a lesson.
+			Наслушавшись [npc.herHim], ты решаешь, что пора поставить эту шлюху на [npc.her] место. Зная, что за [npc.sheIs] охотятся Enforcer, и она вряд ли решится донести о твоем нападении, ты [pc.step] вперед и агрессивно заявляешь [npc.herHim], что сейчас преподашь [npc.herHim] урок.
 		</p>
 		<p>
-			[npc.speech(What the fuck?!)] the [npc.race] exclaims as [npc.she] jumps back and prepares to defend [npc.herself]. [npc.speech(Get away from me!)]
+			[npc.speech(Какого хера?!)] — восклицает [npc.race], когда [npc.she] отпрыгивает назад, готовясь защищать [npc.herself]. [npc.speech(А ну отвали от меня!)]
 		</p>
 		<p>
-			Committed to your course of action, you ignore the [npc.race]'s words as you prepare to attack [npc.herHim]...
+			Верный своему решению, ты игнорируешь слова [npc.race] и готовишься атаковать [npc.herHim]...
 		</p>
 	#ENDIF
 	]]></htmlContent>
@@ -285,19 +277,18 @@
 	<htmlContent tag="AFTER_SEX_PAID"><![CDATA[
 	<p>
 		#IF(npc.isSatisfiedFromLastSex())
-			As you [pc.step] back from [npc.name], [npc.she] sinks back onto [npc.her] bed, totally worn out from [npc.her]
+			Когда ты [pc.step] от [npc.name], [npc.she] снова опускается на [npc.her] кровать, совершенно измотанная после [npc.her]
 			#IF(sex.getNumberOfOrgasms(npc)>1)
-				 orgasms.
+				оргазмами.
 			#ELSE
-				 orgasm.
+				оргазмом.
 			#ENDIF
-			 Looking up at you, a satisfied smile settles on [npc.her] face, and [npc.she] sighs, [npc.speech(Damn, you're good! It looks like I've got a new favourite customer!)]
+			 Глядя на тебя снизу вверх, [npc.her] расплывается в довольной улыбке, а [npc.she] вздыхает: [npc.speech(Черт, а ты хорош! Кажется, у меня появился новый любимчик!)]
 		#ELSE
-			As you [pc.step] back from [npc.name], [npc.she] sinks back onto [npc.her] bed, letting out a deep sigh as [npc.she] realises that you've finished. Looking up at you, a tired smile settles on [npc.her] face, and [npc.she] exclaims, [npc.speech(I hope you had a good time!)]
-		#ENDIF
+Когда ты [pc.step] от [npc.name], [npc.she] откидывается на [npc.her] кровать, тяжело вздыхая, когда [npc.she] понимает, что ты закончил. Подняв на тебя взгляд, [npc.her] устало улыбается, и [npc.she] восклицает: [npc.speech(Надеюсь, тебе понравилось!)]		#ENDIF
 	</p>
 	<p>
-		Lying back on [npc.namePos] bed, you take a moment to catch your breath as [npc.she] stands up and starts to get cleaned and dressed. Looking up at the discoloured ceiling, you let out a deeply-satisfied sigh and wonder where you'll go after this...
+		Откинувшись на [npc.namePos] кровати, ты делаешь передышку, чтобы прийти в себя, пока [npc.she] встает и начинает приводить себя в порядок и одеваться. Глядя на пятнистый потолок, ты издаешь глубокий, удовлетворенный вздох и гадаешь, куда отправишься дальше...
 	</p>
 	]]></htmlContent>
 	
@@ -306,51 +297,47 @@
 	
 	<htmlContent tag="COMBAT_WON"><![CDATA[
 	<p>
-		Staggering back, [npc.name] collapses to the floor, completely defeated. [npc.She] looks up at you, and you see that there's a desperate, wild look in [npc.her] [npc.eyes]. Making a pitiful little whining noise, [npc.she] begs, [npc.speech(Do what you want with me! Just, please, I don't want to be a slave! Don't hand me over to the Enforcers!)]
+		Пошатываясь, [npc.name] падает на пол, полностью побежденная. [npc.She] смотрит на тебя, и ты видишь отчаяние и дикий блеск в [npc.her] [npc.eyes]. Издавая жалкий скулящий звук, [npc.she] умоляет: [npc.speech(Делай со мной всё, что хочешь! Только, пожалуйста, не хочу быть рабыней! Не отдавай меня Enforcer!)]
 	</p>
 	<p>
-		Despite the awful situation that [npc.she] finds [npc.herself] in, it appears as though your powerful arcane aura is having a strong effect on [npc.name]. Even as [npc.she] begs for you to have mercy, you see [npc.herHim] glance down hungrily at your body.
+		Несмотря на ужасное положение, в котором [npc.she] застает [npc.herself], кажется, твоя мощная аркана аура оказывает сильное влияние на [npc.name]. Даже когда [npc.she] молит о пощаде, ты замечаешь, как [npc.herHim] жадно оглядывает твое тело.
 		#IF(npc.isTaur())
-			 Seemingly unaware of what [npc.sheIs] doing, [npc.she] starts rubbing [npc.her] rear-end up against a nearby downpipe, and [npc.she] lets out [npc.a_moan+] as [npc.she] uses it to masturbate...
+			 Похоже, не осознавая, что делает [npc.sheIs], [npc.she] начинает тереться задницей [npc.her] о ближайшую водосточную трубу, и [npc.she] издает [npc.a_moan+], пока [npc.she] использует её для мастурбации...
 		#ELSE
-			 Seemingly unaware of what [npc.sheIs] doing, [npc.her] [npc.hands] suddenly drop down to [npc.her] groin, and [npc.she] lets out [npc.a_moan+] as [npc.she] starts touching [npc.herself]...
+			 Казалось бы, не осознавая, что делает [npc.sheIs], [npc.her] внезапно опускается к [npc.her] [npc.hands], и [npc.she] издает [npc.a_moan+], пока [npc.she] начинает ласкать [npc.herself]...
 		#ENDIF
-	</p>
-	<p>
-		<i>Now that you've revealed [npc.namePos] status as a fugitive from the law, you realise that [style.italicsMinorBad(this will be the last time you ever see [npc.herHim])], as [npc.sheIs] sure to move on once you leave.</i>
+	</p><p>
+	<i>Теперь, когда ты раскрыл статус [npc.namePos] как беглеца от закона, ты понимаешь, что [style.italicsMinorBad(это будет последний раз, когда ты увидишь [npc.herHim])], ведь [npc.sheIs] наверняка отправится в путь, как только ты уйдёшь.</i>
+</p>
+	]]></htmlContent>
+	
+	<htmlContent tag="COMBAT_WON_SEX"><![CDATA[<p>
+		Решив удовлетворить похоть этой [npc.race], которая так явно жаждет [npc.she], ты притягиваешь [npc.herHim] к [npc.her] [npc.feet] и плотно прижимаешься всем телом к [npc.hers]. Издавая [npc.a_moan+], [npc.name] умоляет: [npc.speech(О да! Давай же, трахни меня!)] 
 	</p>
 	]]></htmlContent>
 	
-	<htmlContent tag="COMBAT_WON_SEX"><![CDATA[
-	<p>
-		Deciding to give this horny [npc.race] what [npc.she] so clearly wants, you pull [npc.herHim] to [npc.her] [npc.feet] and press your body up close against [npc.hers]. Letting out [npc.a_moan+], [npc.name] begs, [npc.speech(Oh yes! Come on, fuck me!)] 
-	</p>
+	<htmlContent tag="COMBAT_WON_GENTLE"><![CDATA[<p>
+Решив удовлетворить похоть этой [npc.race] и дать ей то, чего [npc.she] так явно жаждет, ты нежно притягиваешь [npc.herHim] к [npc.her] [npc.feet] и плотно прижимаешься всем телом к [npc.hers]. Издавая [npc.a_moan+], [npc.name] умоляет: [npc.speech(О да! Давай же, трахни меня!)] 
+</p>
 	]]></htmlContent>
 	
-	<htmlContent tag="COMBAT_WON_GENTLE"><![CDATA[
-	<p>
-		Deciding to give this horny [npc.race] what [npc.she] so clearly wants, you gently pull [npc.herHim] to [npc.her] [npc.feet] and press your body up close against [npc.hers]. Letting out [npc.a_moan+], [npc.name] begs, [npc.speech(Oh yes! Come on, fuck me!)] 
-	</p>
-	]]></htmlContent>
-	
-	<htmlContent tag="COMBAT_WON_ROUGH"><![CDATA[
-	<p>
-		Deciding to give this horny [npc.race] what [npc.she] so clearly wants, you roughly pull [npc.herHim] to [npc.her] [npc.feet] and forcefully grind your body up close against [npc.hers]. Letting out [npc.a_moan+], [npc.name] begs, [npc.speech(Oh yes! Come on, fuck me!)] 
-	</p>
+	<htmlContent tag="COMBAT_WON_ROUGH"><![CDATA[<p>
+	Решив дать этой похотливой [npc.race] то, чего [npc.she] так явно жаждет, ты грубо притягиваешь [npc.herHim] к [npc.her] [npc.feet] и с силой вжимаешься всем телом в [npc.hers]. Издавая [npc.a_moan+], [npc.name] умоляет: [npc.speech(О да! Давай же, трахни меня!)] 
+</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="COMBAT_WON_SUBMIT"><![CDATA[
 	<p>
-		You really aren't sure what to do next, and start to feel pretty uncomfortable with the fact that you just attacked this poor [npc.race]. Leaning down, you do the first thing that comes into your mind, and after profusely apologising to [npc.herHim], you ask [npc.name] if there's anything you can do to make it up to [npc.herHim].
+		Ты толком не знаешь, что делать дальше, и начинаешь чувствовать себя довольно неловко из-за того, что только что напал на эту бедную [npc.race]. Наклонившись, ты делаешь первое, что приходит в голову, и, рассыпавшись в извинениях перед [npc.herHim], спрашиваешь [npc.name], можешь ли ты как-то загладить вину перед [npc.herHim].
 	</p>
 	<p>
 		For a moment,[npc.name] simply sits there looking confused, but as [npc.she] realises that you're genuinely troubled by what you've just done, an evil grin crosses [npc.her] face. Consumed by [npc.her] lust that's being brought about due to your powerful arcane aura, [npc.she] grabs you by the [pc.arm] and pulls you with [npc.her] as [npc.she] rises to [npc.her] [npc.feet], before forcefully pressing [npc.her] body against yours as [npc.she] growls, [npc.speech(How about you start by apologising properly?!)]
 	</p>
 	<p>
-		[npc.NamePos] strong, dominant grip on your [pc.arm] causes you to let out a lewd little moan, and your submissive nature takes over as you do as [npc.she] asks and exclaim, [pc.speech(I'm so sorry! Please forgive me! I'll do anything you ask!)]
+		Крепкая, доминирующая хватка [npc.NamePos] на твоем [pc.arm] заставляет тебя издать похотливый стон, и твоя покорная натура берет верх: ты послушно делаешь то, что просит [npc.she], восклицая: [pc.speech(Мне так жаль! Пожалуйста, прости меня! Я сделаю всё, что ты захочешь!)]
 	</p>
 	<p>
-		Roughly yanking you forwards, [npc.name] lets out a menacing growl, before forcing [npc.her] tongue into your mouth and starting to passionately kiss you. You let out a muffled yelp as your opponent takes charge, but as you feel [npc.her] [npc.hands] reaching down to start roughly groping your ass, you realise that you couldn't be happier with how things have turned out...
+		Грубо дернув тебя вперед, [npc.name] издает угрожающее рычание, прежде чем впиться [npc.her] языком в твой рот и начать страстно целовать тебя. Ты издаешь приглушенный вскрик, когда твоя противница берет инициативу в свои руки, но когда ты чувствуешь, как [npc.her] [npc.hands] тянется вниз, чтобы начать бесцеремонно тискать твою задницу, ты понимаешь, что не мог бы быть счастливее от того, как всё обернулось...
 	</p>
 	]]></htmlContent>
 	
@@ -359,57 +346,57 @@
 	
 	<htmlContent tag="COMBAT_LOST"><![CDATA[
 	<p>
-		You can't carry on fighting any more, and you feel your [pc.legs] giving out beneath you as you collapse to the ground, defeated. A mocking laugh causes you to look up, and you see [npc.name] grinning down at you.
+		Ты больше не в силах сражаться; чувствуешь, как [pc.legs] подкашиваются, и ты валишься на землю, поверженный. Насмешливый смех заставляет тебя поднять взгляд, и ты видишь, как [npc.name] скалится, глядя на тебя сверху вниз.
 	</p>
 	#IF(npc.isAttractedTo(pc) && npc.isWillingToRape())
-		<p>
-			[npc.speech(Hah! That was too easy!)] [npc.she] says, before leaning down to grab one of your [pc.arms]. Pulling you to your feet, [npc.name] pushes you against a nearby wall, before growling, [npc.speech(Looks like I'll be having to move on again now. I'm not sticking around for your little Enforcer friends to show up and arrest me! But before I go, I think I'll teach you a lesson not to fuck around with strangers!)]
+<p>
+			[npc.speech(Ха! Слишком просто!)] [npc.she] говорит, прежде чем наклониться и схватить одну из твоих [pc.arms]. Подняв тебя на ноги, [npc.name] прижимает тебя к ближайшей стене и рычит: [npc.speech(Похоже, мне пора снова двигаться дальше. Не собираюсь торчать здесь до тех пор, пока не нагрянут твои дружки-Enforcer, чтобы арестовать меня! Но перед уходом я, пожалуй, преподам тебе урок, чтобы ты больше не вздумал связываться с незнакомцами!)]
 		</p>
 		<p>
-			<i>Now that you've revealed [npc.namePos] status as a fugitive from the law, you realise that [style.italicsMinorBad(this will be the last time you ever see [npc.herHim])], as [npc.sheIs] sure to move on once [npc.sheHas] had [npc.her] fun with you.</i>
+			<i>Теперь, когда ты раскрыл статус [npc.namePos] как беглеца от закона, ты понимаешь, что [style.italicsMinorBad(это был твой последний шанс увидеть [npc.herHim])], ведь [npc.sheIs] наверняка двинется дальше, как только [npc.sheHas] получит от тебя свою [npc.her] порцию удовольствия.</i>
 		</p>
 	#ELSE
 		<p>
-			[npc.speech(Hah! That was too easy!)] [npc.she] says, before leaning down to grab one of your [pc.arms].
+			[npc.speech(Ха! Это было слишком просто!)] [npc.she] произносит это, прежде чем наклониться и схватить одну из твоих [pc.arms].
 		</p>
 		<p>
-			Pulling you to your feet, [npc.name] pushes you against a nearby wall, before demanding that you hand over your money. Reluctantly, you do as [npc.she] says, and, after giving [npc.herHim] some of your cash, [npc.she] roughly pushes you to the floor once more.
+			Подняв тебя на ноги, [npc.name] прижимает тебя к ближайшей стене, требуя отдать все деньги. Нехотя ты подчиняешься воле [npc.she], и, отдав [npc.herHim] часть наличности, ты чувствуешь, как [npc.she] грубо толкает тебя на пол.
 		</p>
 		<p>
-			[npc.speech(Looks like I'll be having to move on again now. I'm not sticking around for your little Enforcer friends to show up and arrest me!)] [npc.she] growls down at you, before turning around and running off.
+			[npc.speech(Похоже, мне пора снова двигаться дальше. Не собираюсь задерживаться здесь, пока твои дружки-Enforcer не нагрянули и не арестовали меня!)] [npc.she] рычит тебе в лицо, после чего разворачивается и убегает.
 		</p>
 		<p>
-			<i>Now that you've revealed [npc.namePos] status as a fugitive from the law, you realise that [style.italicsMinorBad(this was the last time you'll ever see [npc.herHim])].</i>
+			<i>Теперь, когда ты раскрыл свой статус [npc.namePos] беглеца от закона, ты понимаешь, что [style.italicsMinorBad(это был последний раз, когда ты видел [npc.herHim])].</i>
 		</p>
 	#ENDIF
 	]]></htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_SEX"><![CDATA[
-	<p>
-		[npc.NamePos] [npc.arms] wrap around your back, and [npc.she] continues passionately making out with you for a few moments, before finally pulling away. Giving you an evil grin, [npc.she] hungrily licks [npc.her] [npc.lips], and you realise that [npc.sheIs] probably not going to be content with just a kiss...
+		<p>
+		[npc.NamePos] [npc.arms] обвивают твою спину, и [npc.she] еще несколько мгновений страстно целует тебя, прежде чем наконец отстраниться. Одарив тебя злобной ухмылкой, [npc.she] жадно облизывает [npc.her] [npc.lips], и ты понимаешь, что [npc.sheIs] вряд ли ограничится одним лишь поцелуем...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_SEX_EAGER"><![CDATA[
 	<p>
-		[npc.NamePos] [npc.arms] wrap around your back, and you eagerly lean into [npc.herHim], passionately returning [npc.her] kiss for a few moments, before [npc.she] breaks away from you. Giving you an evil grin, [npc.she] hungrily licks [npc.her] [npc.lips], and you feel a rush of excitement as you realise that [npc.sheIs] going to want more than just a kiss...
+		[npc.NamePos] [npc.arms] обвивают твою спину, и ты с жадностью прижимаешься к [npc.herHim], страстно отвечая на поцелуи [npc.her] в течение нескольких мгновений, пока [npc.she] не отстраняется от тебя. Одарив тебя злобной ухмылкой, [npc.she] жадно облизывает [npc.her] [npc.lips], и ты чувствуешь прилив возбуждения, понимая, что [npc.sheIs] захочет гораздо большего, чем просто поцелуй...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_SEX_RESIST"><![CDATA[
 	<p>
-		[npc.NamePos] [npc.arms] wrap around your back, and you let out a distressed cry as [npc.she] pulls you into a forceful kiss. Summoning the last of your strength, you desperately try to push [npc.herHim] away, pleading for [npc.herHim] to stop. Giving you an evil grin, [npc.she] ignores your protests, and as you see [npc.herHim] hungrily licking [npc.her] [npc.lips], you realise that [npc.sheIs] not going to let you go...
+		[npc.NamePos] [npc.arms] обвивают твою спину, и ты издаешь полный тревоги крик, когда [npc.she] впивается в тебя в напористом поцелуе. Собрав последние силы, ты отчаянно пытаешься оттолкнуть [npc.herHim], умоляя [npc.herHim] остановиться. Одарив тебя злобной ухмылкой, [npc.she] игнорирует твои протесты, и когда ты видишь, как [npc.herHim] жадно облизывает [npc.her] [npc.lips], ты понимаешь, что [npc.sheIs] тебя просто так не отпустит...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="COMBAT_LOST_CONTINUE"><![CDATA[
 	#IF(npc.isAttractedTo(pc))
 		<p>
-			Refusing to have sex with the [npc.race], you watch as [npc.she] melts back into the undergrowth from whence [npc.she] came. After taking a moment in which to recover your energy, you look around to make sure that there's no other immediate danger and then prepare to continue on your way...
+			Отказываясь спариваться с [npc.race], ты наблюдаешь, как [npc.she] растворяется в зарослях, откуда и явилась [npc.she]. Немного переведя дух и восстановив энергию, ты оглядываешься по сторонам, чтобы убедиться в отсутствии немедленной опасности, и готовишься продолжить свой путь...
 		</p>
 	#ELSE
 		<p>
-			With one last triumphant sneer thrown your way, [npc.she] melts back into the undergrowth from whence [npc.she] came. After taking a moment in which to recover your energy, you look around to make sure that there's no other immediate danger and then prepare to continue on your way...
+			Бросив тебе последний торжествующий оскал, [npc.she] скрывается в зарослях, откуда и явилась [npc.she]. Немного переведя дух и восстановив энергию, ты оглядываешься по сторонам, чтобы убедиться в отсутствии немедленной опасности, и готовишься продолжить свой путь...
 		</p>
 	#ENDIF
 	]]>
@@ -417,7 +404,7 @@
 	
 	<htmlContent tag="COMBAT_LOST_FUCKED_WILLING"><![CDATA[
 	<p>
-		Agreeing to have sex with [npc.herHim], you let the bandit continue to grope you, and as you open your mouth to say something, [npc.she] leans forwards and pulls you into a dominant kiss. After grinding up against you for a few moments, [npc.she] pulls back and prepares to fuck you...
+		Согласившись на секс с [npc.herHim], ты позволяешь бандитке продолжать ласкать тебя руками. Когда ты открываешь рот, чтобы что-то сказать, [npc.she] наклоняется вперед и властно целует тебя. Потеревшись о тебя всем телом несколько мгновений, [npc.she] отстраняется, готовясь трахнуть тебя...
 	</p>
 	]]>
 	</htmlContent>
@@ -428,32 +415,29 @@
 	<htmlContent tag="AFTER_SEX_VICTORY"><![CDATA[
 	<p>
 		#IF(npc.isSatisfiedFromLastSex())
-			As you [pc.step] back from [npc.name], [npc.she] sinks to the floor, totally worn out from [npc.her]
+			Когда ты [pc.step] от [npc.name], [npc.she] оседает на пол, совершенно измотанная [npc.her]
 			#IF(sex.getNumberOfOrgasms(npc)>1)
-				 orgasms.
+				оргазмами.
 			#ELSE
-				 orgasm.
+				оргазмом.
 			#ENDIF
-			 Looking up at you, a satisfied smile settles on [npc.her] face, and you realise that you gave [npc.herHim] exactly what [npc.she] wanted.
+			Глядя на тебя снизу вверх, [npc.her] расплывается в довольной улыбке, и ты понимаешь, что дал [npc.herHim] именно то, чего [npc.she] так хотела.
 		#ELSE
-			As you [pc.step] back from [npc.name], [npc.she] sinks to the floor, letting out a desperate whine as [npc.she] realises that you've finished.
+			Когда ты [pc.step] от [npc.name], [npc.she] оседает на пол, издавая отчаянный скулёж, когда [npc.she] понимает, что ты закончил.
 			#IF(npc.isTaur())
-				 Unable to reach back to [npc.her] groin, [npc.she] frantically starts rubbing [npc.her] rear-end up against a nearby downpipe in a desperate attempt to masturbate and finish what you started.
+				 Не имея возможности дотянуться до паха [npc.her], [npc.she] лихорадочно начинает тереться задницей [npc.her] о ближайшую водосточную трубу в отчаянной попытке довести себя до оргазма и закончить то, что вы начали.
 			#ELSEIF(npc.hasLegs())
-				 [npc.Her] [npc.hands] dart down between [npc.her] [npc.legs], and [npc.she] frantically starts masturbating as [npc.she] seeks to finish what you started.
-			#ELSE
-				 [npc.Her] [npc.hands] dart down to [npc.her] groin, and [npc.she] frantically starts masturbating as [npc.she] seeks to finish what you started.
-			#ENDIF
+[npc.Her] [npc.hands] резко ныряет между [npc.her] [npc.legs], и [npc.she] в панике начинает мастурбировать, пока [npc.she] стремится закончить то, что ты начал(а).			#ELSE
+[npc.Her] [npc.hands] резко ныряет вниз, к [npc.her] паху, и [npc.she] начинает неистово мастурбировать, стремясь [npc.she] закончить то, что ты начал(а).			#ENDIF
 		#ENDIF
-	</p>
-	<p>
-		<i>Now that you've revealed [npc.namePos] status as a fugitive from the law, you realise that [style.italicsMinorBad(this will be the last time you ever see [npc.herHim])], as [npc.sheIs] sure to move on once you leave.</i>
-	</p>
+	</p><p>
+	<i>Теперь, когда ты раскрыл статус [npc.namePos] как беглеца от закона, ты понимаешь, что [style.italicsMinorBad(это будет последний раз, когда ты увидишь [npc.herHim])], ведь [npc.sheIs] наверняка отправится в путь, как только ты уйдёшь.</i>
+</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_VICTORY_LEAVE"><![CDATA[
 	<p>
-		After spending a few moments getting your breath back, you head over to the door and swiftly exit [npc.namePos] apartment. Grinning to yourself as you think back to how you beat [npc.herHim], you leave the [npc.race] behind and continue on your journey...
+		Немного переведя дух, ты направляешься к двери и стремительно покидаешь квартиру [npc.namePos]. Усмехаясь про себя при мысли о том, как ты уделал [npc.herHim], ты оставляешь [npc.race] позади и продолжаешь свой путь...
 	</p>
 	]]></htmlContent>
 	
@@ -463,30 +447,29 @@
 	<htmlContent tag="AFTER_SEX_DEFEAT"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_elis_alleyway_prostitute_apartment))
 		<p>
-			As [npc.name] [npc.steps] back and sorts [npc.her] clothes out, you sink to the floor, totally worn out from [npc.her] dominant treatment of you. Glancing up at the [npc.race], you see a very satisfied smile cross [npc.her] face, and [npc.she] leans down to pat you on the head and exclaim, [npc.speech(Farewell forever! You and your Enforcer cronies will have to try harder than that to catch me!)]
+			Пока [npc.name] [npc.steps] и поправляет [npc.her] одежду, ты опускаешься на пол, совершенно измотанная после [npc.her] доминирующего обращения с тобой. Взглянув на [npc.race], ты видишь очень довольную улыбку на лице [npc.her]; [npc.she] наклоняется, чтобы похлопать тебя по голове, и восклицает: [npc.speech(Прощай навсегда! Тебе и твоим дружкам-Enforcer придется постараться, чтобы поймать меня!)]
 		</p>
 		<p>
-			With that, [npc.she] quickly gathers up [npc.her] personal possessions, before exiting [npc.her] apartment and leaving you panting on the ground. It takes a little while for you to recover from your ordeal, but eventually you feel strong enough to get your things in order and carry on your way...
+			С этими словами [npc.she] быстро собирает [npc.her] личные вещи, после чего выходит из [npc.her] квартиры, оставляя тебя тяжело дышать на полу. Тебе требуется некоторое время, чтобы прийти в себя после пережитого, но в конце концов ты чувствуешь достаточно сил, чтобы привести вещи в порядок и отправиться дальше...
 		</p>
 		<p>
-			<i>Now that you've revealed [npc.namePos] status as a fugitive from the law, you realise that [style.italicsMinorBad(this was the last time you'll ever see [npc.herHim])], as [npc.sheIs] sure to move on to a new location.</i>
+			<i>Теперь, когда ты раскрыла статус [npc.namePos] как беглянки от закона, ты понимаешь, что [style.italicsMinorBad(это был последний раз, когда ты видела [npc.herHim])], так как [npc.sheIs] наверняка сменит место жительства.</i>
 		</p>
 	#ELSE
 		<p>
-			As [npc.name] [npc.steps] back and sorts [npc.her] clothes out, you sink to the floor, totally worn out from [npc.her] dominant treatment of you. Glancing up at the [npc.race], you see a very satisfied smile cross [npc.her] face, and [npc.she] leans down to pat you on the head and exclaim, [npc.speech(Farewell forever! You and your Enforcer cronies will have to try harder than that to catch me!)]
-		</p>
+			Пока [npc.name] [npc.steps] и поправляет [npc.her] одежду, ты опускаешься на пол, совершенно измотанная после [npc.her] доминирующего обращения с тобой. Взглянув на [npc.race], ты видишь очень довольную улыбку на лице [npc.her]; [npc.she] наклоняется, чтобы похлопать тебя по голове, и восклицает: [npc.speech(Прощай навсегда! Тебе и твоим дружкам-Enforcer придется постараться, чтобы поймать меня!)]
+		</p><p>
+			С этими словами [npc.she] [npc.walks] уходит, оставляя тебя тяжело дышать на полу в спальне [npc.her]...
+</p>
 		<p>
-			With that, [npc.she] [npc.walks] off, leaving you panting on the floor of [npc.her] bedroom...
-		</p>
-		<p>
-			<i>Now that you've revealed [npc.namePos] status as a fugitive from the law, you realise that [style.italicsMinorBad(this was the last time you'll ever see [npc.herHim])], as [npc.sheIs] sure to move on to a new location.</i>
+			<i>Теперь, когда ты раскрыла статус [npc.namePos] как беглянки от закона, ты понимаешь, что [style.italicsMinorBad(это был последний раз, когда ты видела [npc.herHim])], так как [npc.sheIs] наверняка сменит место жительства.</i>
 		</p>
 	#ENDIF
 	]]></htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_DEFEAT_LEAVE"><![CDATA[
 	<p>
-		After spending a few moments getting your breath back, you head over to the door and swiftly exit [npc.namePos] apartment. Letting out a groan as you think back to how you were beaten by [npc.herHim], you quickly leave the area and continue on your journey...
+		Немного переведя дух, ты подходишь к двери и стремительно покидаешь квартиру [npc.namePos]. Издав стон при мысли о том, как тебя отлупила [npc.herHim], ты поспешно уходишь из этого места и продолжаешь свой путь...
 	</p>
 	]]></htmlContent>
 	
