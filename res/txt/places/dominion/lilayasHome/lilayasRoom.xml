@@ -3,15 +3,15 @@
 
 	<htmlContent tag="EXTERIOR"><![CDATA[
 	<p>
-		As you walk around this particular corner of the first-floor corridor, you catch the faint scent of Lilaya's perfume lingering in the air. Turning towards the nearest door, you see a little heart-shaped sign has been affixed to it, which reads: <i>'Lilaya's Room'</i>.
-	</p>
+		Проходя по этому уголку коридора на первом этаже, ты улавливаешь в воздухе едва заметный аромат духов Lilaya. Повернувшись к ближайшей двери, ты замечаешь на ней маленькую табличку в форме сердечка с надписью: <i>«Комната Lilaya»</i>.
+		</p>
 	#IF(!game.isExtendedWorkTime())
 		<p>
-			Obviously being the source of your [lilaya.relation(pc)]'s fragrance, you take a step towards her bedroom, taking note of the fact that the door is firmly shut. After giving the handle a brief twist, you discover that [style.colourBad(the door is locked)], so if you wanted to take a look inside, you'd have to come back during the day when it's open...
+		Очевидно, что именно здесь источается аромат твоей [lilaya.relation(pc)], и ты делаешь шаг к её спальне, замечая, что дверь плотно закрыта. Слегка повернув ручку, ты обнаруживаешь, что [style.colourBad(дверь заперта)], так что если ты хочешь заглянуть внутрь, придётся вернуться днём, когда она будет открыта...
 		</p>
 	#ELSE
 		<p>
-			Obviously being the source of your [lilaya.relation(pc)]'s fragrance, you take a step towards her bedroom, taking note of the fact that the door is slightly ajar. With nobody around to stop you, you could always take a peek inside if you really wanted to...
+		Очевидно, что именно здесь источается аромат твоей [lilaya.relation(pc)], и ты делаешь шаг к её спальне, замечая, что дверь слегка приоткрыта. Раз поблизости никого нет, ты вполне можешь рискнуть и заглянуть внутрь, если очень захочется...
 		</p>
 	#ENDIF
 	]]>
@@ -19,461 +19,461 @@
 	
 	<htmlContent tag="INTERIOR_ENTRY"><![CDATA[
 	<p>
-		Turning the door's handle, you discover, just as you suspected, that it's not locked.
-		 Carefully peeking through the widening gap in the door as you push it open, you breathe a sigh of relief as you see that the room is currently deserted.
-		 Stepping forwards and closing the door behind you, you find yourself standing in your demonic [lilaya.relation(pc)]'s bedroom.
-	</p>
+		Повернув ручку, ты обнаруживаешь, как и подозревал, что дверь не заперта.
+		Осторожно заглядывая в расширяющуюся щель, пока ты толкаешь дверь, ты с облегчением вздыхаешь, увидев, что комната сейчас пустует.
+		Сделав шаг вперёд и прикрыв за собой дверь, ты оказываешься в спальне своей демонической [lilaya.relation(pc)].
+		</p>
 	<p>
-		As you take in your surrounds, you discover that you're surrounded on all sides by every shade of pink imaginable.
-		 From the pale rose hue of the walls, to the offensively bright hot pink sheets on her bed, you feel as though you can probably take a reasonable guess as to what Lilaya's favourite colour is.
-		 Some pieces of furniture, which have been painted white, along with the white ceiling and thick, cream carpet underfoot, are the only parts of her room that aren't one type of pink or another.
-	</p>
+		Оглядываясь по сторонам, ты понимаешь, что окружена всеми возможными оттенками розового.
+		От бледно-розовых стен до вызывающе ярко-розового постельного белья — кажется, можно без труда угадать любимый цвет Lilaya.
+		Лишь некоторые предметы мебели, выкрашенные в белый цвет, вместе с белым потолком и густым кремовым ковром под ногами, не относятся к тому или иному розовому оттенку.
+		</p>
 	<p>
-		Continuing to look around her room, the next thing that you notice is just how messy it is.
-		 The doors of her ceiling-height wardrobe have been left wide open, with all manner of clothing tumbling out onto the floor in front of it.
-		 The chests of drawers are all half-closed, and every available surface is piled high with makeup, brushes, clothing, and all sorts of other miscellaneous items.
-		 This mess even extends out into the main body of the room, with the floor being a complete minefield of dirty clothing, shoes, bags, hairbrushes, and every type of accessory you could possibly imagine.
-		 Navigating through this mess to take a look into her en-suite bathroom, you see crumpled towels, discarded bath robes, and all sorts of shampoo bottles littering the marble floor.
-	</p>
+		Продолжая осматривать комнату, ты замечаешь, насколько здесь беспорядок.
+		Двери её высокого до самого потолка гардероба распахнуты настежь, и из них на пол вываливается гора одежды.
+		Выдвижные ящики комодов полуоткрыты, а каждая свободная поверхность завалена косметикой, кистями, одеждой и всякой всячиной.
+		Этот хаос распространяется и на основную часть комнаты: пол превратился в настоящее минное поле из грязных вещей, обуви, сумок, расчесок и любых аксессуаров, какие только можно вообразить.
+		Пробираясь сквозь этот завал, чтобы заглянуть в её личную ванную, ты видишь скомканные полотенца, брошенные халаты и кучу флаконов из-под шампуня, разбросанных по мраморному полу.
+		</p>
 	<p>
-		The huge, four-poster bed that dominates one side of the room seems to be the crowing achievement of Lilaya's messiness.
-		 A huge pile of clothes has been stacked up on top of the hot pink sheets, and you find yourself wondering how on earth she manages to sleep in there.
-	</p>
+		Огромная кровать с балдахином, занимающая почти всю сторону комнаты, кажется венцом беспорядка, устроенного Lilaya.
+		На ярко-розовых простынях высится гора одежды, и ты невольно задаешься вопросом: как, черт возьми, ей вообще удается там спать?
+		</p>
 	<p>
-		Lilaya must have told Rose to not tidy her room up, and you wonder what possible reason your aunt would have for letting her room get into such a state as this.
-	</p>
+		Должно быть, Lilaya велела Rose не убираться в ее комнате, и ты гадаешь, какая причина заставляет твою тетушку доводить свое жилище до такого состояния.
+		</p>
 	<p>
-		As you look around the room, you can't help but notice a large pile of your aunt's discarded, dirty underwear stacked up next to her bed.
-		 You wonder if you should turn around and make your exit, or do something naughty instead...
-	</p>
+		Оглядывая комнату, ты не можешь не заметить огромную кучу выброшенного грязного нижнего белья твоей тети, сваленную прямо у кровати.
+		Ты раздумываешь: стоит ли развернуться и поскорее уйти или же вместо этого заняться чем-нибудь шальным...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PANTIES"><![CDATA[
 	<p>
-		First moving over to make sure that the door is firmly closed, you then turn back towards the pile of Lilaya's panties.
-		 With dirty thoughts on your mind, you quickly navigate through the chaotic mess of your aunt's bedroom floor, and soon find yourself standing next to the dirty laundry.
-	</p>
+		Сначала ты подходишь к двери, чтобы убедиться, что она плотно закрыта, а затем поворачиваешься обратно к куче трусиков Lilaya.
+		С грязными мыслями в голове ты быстро пробираешься через хаос на полу спальни твоей тети и вскоре оказываешься рядом с грязным бельем.
+		</p>
 	<p>
-		Glancing over once more to make sure that nobody's entered the room, you drop down onto your knees before the enticing heap of clothing.
-		 Reaching out, you grab the closest pair of panties, letting out an excited hum as you lift them up and give them an experimental stretch.
-	</p>
+		Еще раз бросив взгляд на дверь, чтобы убедиться, что никто не вошел, ты опускаешься на колени перед соблазнительной горой одежды.
+		Протянув руку, ты хватаешь ближайшую пару трусиков и, возбужденно промычав, приподнимаешь их, пробуя на растяжение.
+		</p>
 	<p>
-		Delighted by the way the soft fabric feels in your [pc.hands], you can't resist taking a closer look at Lilaya's underwear.
-		 Bringing them up to your face, you gently squeeze and pull at the stretchy fabric, breathing in the faint scent of musk and perfume as your [pc.hands] move ever closer to your nose.
-		 Your demonic aunt's scent is exactly the same as it was in your old world, and you find the familiar smell to be extremely comforting.
-	</p>
+		Восхищенный тем, как мягкая ткань ощущается в твоих [pc.hands], ты не можешь устоять перед желанием рассмотреть белье Lilaya поближе.
+		 Поднеся их к самому лицу, ты осторожно сжимаешь и растягиваешь эластичную ткань, вдыхая едва уловимый аромат мускуса и духов, пока твои [pc.hands] подбираются всё ближе к твоему носу.
+		 Запах твоей тетушки-демона в точности такой же, как и в твоем старом мире, и этот знакомый аромат кажется тебе невероятно уютным.
+		</p>
 	<p>
-		Having gone this far already, you let your knees slide out to either side of you, and, sinking down onto your [pc.ass+], you lean forwards and rest your head on the pile of panties.
-		 Letting out a deep, relaxed sigh, you find yourself enveloped in your aunt's comforting fragrance.
-	</p>
+		Зайдя уже так далеко, ты разводишь колени в стороны и, опускаясь на свои [pc.ass+], наклоняешься вперед, утыкаясь лицом в кучу трусиков.
+		 Глубоко и расслабленно вздохнув, ты чувствуешь, как тебя окутывает успокаивающий аромат твоей тети.
+		</p>
 	<p>
-		After several minutes of slowly rummaging through the pile of panties, you wonder if you should make your exit.
-		 Then again, it doesn't look like anyone's going to disturb you, and you wonder if you should take things a little further...
-	</p>
+		Прокопавшись в куче трусиков несколько минут, ты начинаешь задумываться, не пора ли тебе уходить.
+		 Но с другой стороны, похоже, тебя никто не побеспокоит, и ты гадаешь, не стоит ли зайти еще немного дальше...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PANTIES_EXIT"><![CDATA[
 	<p>
-		You decide that you've already taken things far enough, and, returning the panties in your [pc.hands] back to the pile, you stand up.
-		 Weaving your way through the minefield of clothing that is your aunt's bedroom floor, you quickly find yourself at the door, and, pushing it open, you step back out into the corridor beyond.
-	</p>
+		Ты решаешь, что и так уже зашел достаточно далеко, и, вернув трусики из своих [pc.hands] обратно в кучу, встаешь.
+		 Пробираясь сквозь минное поле из одежды на полу в спальне тети, ты быстро добираешься до двери и, толкнув ее, выходишь обратно в коридор.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PANTIES_MASTURBATION"><![CDATA[
 	<p>
-		The familiar scent of your aunt is too much for you to simply leave behind.
-		 Grabbing the topmost pair, you quickly bring them up to your nose, before taking a desperate, deep breath.
-		 The musky, perfume-laced scent of Lilaya overwhelms your senses, and you feel a distinct heat rising in your groin.
-	</p>
+		Знакомый аромат твоей тети слишком манит, чтобы просто оставить его позади.
+		 Схватив верхнюю пару, ты быстро подносишь их к носу и делаешь отчаянный, глубокий вдох.
+		 Мускусный запах Lilaya, смешанный с духами, дурманит чувства, и ты чувствуешь, как в паху разливается отчетливый жар.
+		</p>
 	<p>
 		#IF(!pc.hasLegs())
-			 Pushing yourself up into a sitting position, you reach down between to your groin and start touching yourself.
+			 Приподнявшись и сев, ты запускаешь руку между ног и начинаешь ласкать себя.
 		#ELSEIF(pc.isTaur())
-			 Pushing yourself up onto your knees once again, you push your rear-end back against one of the posts of Lilaya's bed and rub against it in order to masturbate.
+			 Снова встав на колени, ты прижимаешься задницей к одной из опор кровати Lilaya и начинаешь тереться о неё, чтобы довести себя до оргазма.
 		#ELSE
-			 Pushing yourself up onto your knees once again, you reach down between your legs and start touching yourself.
+			 Снова встав на колени, ты запускаешь руку между ног и начинаешь ласкать себя.
 		#ENDIF
-		 Breathing in Lilaya's scent once again, you find yourself letting out a desperate whine as you imagine the soft fabric rubbing up against her wet pussy. Quickly resolving to see this through to the end, you glance at the closed bedroom door once more, before starting to masturbate to your aunt's used panties...
+		 Снова вдыхая аромат Lilaya, ты невольно издаешь отчаянный стон, представляя, как мягкая ткань трется о её влажную киску. Решив во что бы то ни стало довести дело до конца, ты еще раз бросаешь взгляд на закрытую дверь спальни и начинаешь мастурбировать под использованные трусики своей тети...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PANTIES_POST_MASTURBATION"><![CDATA[
 	<p>
-		Your knees collapse out to either side of you once more, and, sinking down onto your [pc.ass+], you let out a deep sigh.
-		 The comforting fragrance of Lilaya's panties surrounds you, and you find your eyelids drooping as you recover from the fun you just had.
-	</p>
+		Твои колени снова разъезжаются в стороны, и, тяжело опускаясь на свой [pc.ass+], ты издаешь глубокий вздох.
+		 Успокаивающий аромат трусиков Lilaya окутывает тебя, и твои веки тяжелеют, пока ты приходишь в себя после недавнего удовольствия.
+		</p>
 	<p>
-		Suddenly, the silence of the room is broken by the faint sound of footsteps outside in the corridor.
-		 Your [pc.eyes] open wide, and, remaining perfectly still so as to be able to listen, you hear the person approaching Lilaya's bedroom door.
-	</p>
+		Внезапно тишину комнаты нарушает слабый звук шагов в коридоре.
+		 Твои [pc.eyes] широко распахиваются, и, замирая, чтобы прислушаться, ты слышишь, как кто-то приближается к двери спальни Lilaya.
+		</p>
 	<p>
-		You only have a split second to decide what to do.
-		 Being right next to the bed, you could quickly dive under it and hide, or, if you were feeling bolder, you could quickly hide the used panties behind your back and rush out of the room, making up an excuse to whoever is on the other side.
-		 Then again, the person outside could simply be passing by. You could continue to enjoy the panties before you and pay them no heed, but a little voice inside your head is saying that this would be a bad idea...
-	</p>
+		У тебя есть всего доля секунды, чтобы решить, что делать.
+		 Стоя прямо у кровати, ты можешь быстро нырнуть под неё и спрятаться, или же, если наберешься смелости, быстро засунуть использованные трусики за спину и выскочить из комнаты, на ходу придумывая оправдание тому, кто стоит за дверью.
+		 С другой стороны, человек снаружи может просто проходить мимо. Ты могла бы и дальше наслаждаться трусиками перед собой, не обращая на гостя внимания, но внутренний голос шепчет, что это плохая затея...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="HIDE"><![CDATA[
 	<p>
-		Gripping the used panties in one [pc.hand], you drop to the floor and crawl under Lilaya's bed.
-		 You manage to tuck your [pc.leg] in just as you hear the turning of the handle, right before the door swings open. 
-	</p>
+		Сжимая использованные трусики в одной [pc.hand], ты опускаешься на пол и забираешься под кровать Lilaya.
+		 Тебе удается пристроить свои [pc.leg] как раз в тот момент, когда ты слышишь поворот дверной ручки, прямо перед тем, как дверь распахивается.
+		</p>
 	<p>
-		From your vantage point beneath the bed, you can just about see through the piles of dirty clothing to the bedroom door, where there now stands the familiar black-and-white heels of Rose.
-		 As she enters the room, you can hear her muttering to herself, and, not daring to make any sort of move, you hold your breath as you listen to what it is she's saying.
-	</p>
+		Из своего укрытия под кроватью ты едва видишь сквозь груды грязной одежды входную дверь, у которой теперь замерли знакомые черно-белые каблуки Rose.
+		 Когда она входит в комнату, ты слышишь её бормотание под нос, и, не смея шелохнуться, затаив дыхание, ты прислушиваешься к её словам.
+		</p>
 	<p>
-		[rose.speech(Honestly... So this is why she told me not to come in here... She's just begging for some <i>real</i> punishment...)]
-	</p>
+		[rose.speech(Честно говоря... Так вот почему она велела мне не заходить сюда... Она просто умоляет о настоящем <i>наказании</i>...)]
+		</p>
 	<p>
-		Your [pc.eyes] move this way and that as you watch the cat-girl maid moving back and forth around the room.
-		 In a distinctly frustrated tone, she continues to mutter to herself, and you make sure to remain completely silent as you listen in.
-	</p>
+		Твоя [pc.eyes] дергается то туда, то сюда, пока ты наблюдаешь за тем, как кошкодевочка-горничная расхаживает по комнате.
+		 Откровенно раздраженным тоном она продолжает бормотать себе под нос, и ты стараешься не издавать ни звука, внимательно её слушая.
+		</p>
 	<p>
-		[rose.speech(I <i>know</i> I left it in here... And she's done so much to deserve it today as well... Ah! There it is!)]
-	</p>
+		[rose.speech(Я <i>точно</i> помню, что оставляла это здесь... И сегодня она заслужила это сполна... Ах! Вот оно!)]
+		</p>
 	<p>
-		Your eyes widen as you see Rose bend down, and, from out of a particularly large pile of discarded clothing, you see her retrieve a black leather riding crop.
-		 The cat-girl maid lets out a devious little laugh, before hurrying back to the bedroom door and making her exit.
-	</p>
+		Твои глаза расширяются, когда ты видишь, как Роуз наклоняется и выуживает из огромной кучи разбросанной одежды черную кожаную хлыст-стек. 
+		 Кошкодевочка-горничная издает лукавый смешок, после чего спешит к двери спальни и выходит наружу.
+		</p>
 	<p>
-		You wait until the sound of her footsteps has completely disappeared before crawling out from under the bed.
-		 With nothing more to be done in here, you turn towards the door yourself, and prepare to make your exit.
-	</p>
+		Ты ждешь, пока звук её шагов окончательно не стихнет, прежде чем выбраться из-под кровати.
+		 Поскольку делать здесь больше нечего, ты сам поворачиваешься к двери, готовясь к выходу.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FLEE"><![CDATA[
 	<p>
-		Gripping the used panties in one [pc.hand], you hide them behind your back as you rush over to the bedroom door.
-		 Quickly turning the handle, you pull open the door to find yourself standing before a very shocked-looking Rose.
+		Сжимая использованные трусики в одной [pc.hand], ты прячешь их за спиной и бросаешься к двери спальни.
+		 Быстро крутанув ручку, ты распахиваешь дверь и оказываешься лицом к лицу с крайне ошарашенной Роуз.
+		</p>
+	<p>
+		Не теряя времени, ты поспешно выпаливаешь оправдания:
+		 [pc.speech(А, привет, Роуз! Я просто проверял все комнаты на предмет возможных проблем. Здесь всё вполне спокойно!)]
+		</p>
+	<p>
+		[rose.speech(Не посмею ставить под сомнение мотивы одного из гостей Госпожи, но можно лишь гадать, какого рода «проблемы» можно ожидать в её комнате,)]
+		 — говорит Роуз, приподняв бровь и отступая в сторону, чтобы дать тебе пройти в коридор.
+		</p>
+	<p>
+		[pc.speech(Ну, в этом-то и вся суть неприятностей; никогда не знаешь, что это такое, пока не наткнешься,)]
+		 говоришь ты, игнорируя всё ещё приподнятую бровь Rose.
+		 [pc.speech(В любом случае, мне пора возвращаться в комнату, увидимся позже, Rose!)]
 	</p>
 	<p>
-		Taking the initiative, you quickly blurt out your excuses,
-		 [pc.speech(Ah, hello Rose! I was just checking all of the rooms for any sign of trouble. This one's safe enough!)]
+		Ты спешишь прочь по коридору, не смея оглядываться.
+		 Ты кожей чувствуешь вопросительный взгляд Rose, сверлящий твою спину, до самого того момента, пока не толкаешь дверь своей спальни и не входишь внутрь.
 	</p>
 	<p>
-		[rose.speech(I wouldn't dare question the motives of one of Mistress's guests, but one might wonder what sort of 'trouble' one would expect to find in her room,)]
-		 Rose says, raising one eyebrow as she steps back to make room for you to proceed out into the corridor.
-	</p>
-	<p>
-		[pc.speech(Ah, well, that's the thing with trouble; you don't know what it is until you find it,)]
-		 you say, ignoring Rose's still-raised eyebrow.
-		 [pc.speech(Anyway, I need to head back to my room now, I'll see you later, Rose!)]
-	</p>
-	<p>
-		You hurry off down the corridor, not daring to look back.
-		 You can feel Rose's questioning gaze drilling into your back up until the moment you push open your bedroom door and step inside.
-	</p>
-	<p>
-		Letting out a deep sigh of relief, you thank your lucky stars that you were able to get out of that situation without incident.
-		 What's more, you were even able to secure a trophy; that being the pair of used panties still clenched in your [pc.hand]...
+		Тяжело вздохнув с облегчением, ты благодаришь судьбу за то, что сумел выбраться из этой ситуации без происшествий.
+		 Более того, тебе даже удалось заполучить трофей — пару использованных трусиков, всё ещё зажатых в твоей [pc.hand]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CAUGHT"><![CDATA[
 	<p>
-		You decide that whoever is outside must just be passing by, and continue playing with the pile of Lilaya's panties before you.
+		Ты решаешь, что тот, кто там снаружи, просто проходит мимо, и продолжаешь возиться с кучей трусиков Lilaya перед собой.
 	</p>
 	<p>
-		The footsteps outside suddenly stop, and you look up to see the door's handle turning.
-		 You're unable to make a move before the door suddenly swings open, and you find yourself gazing up into the eyes of a very shocked-looking Rose.
+		Шаги снаружи внезапно стихают, и ты поднимаешь взгляд, видя, как поворачивается дверная ручка.
+		 Ты не успеваешь даже пошевелиться, как дверь резко распахивается, и ты оказываешься лицом к лицу с крайне шокированной Rose.
 	</p>
 	<p>
-		Before you can say anything, the expression on the cat-girl's face quickly shifts into one of mild disgust, and, with an icy tone, she's the first one to break the heavy silence.
-		[rose.speech(What do you think you're doing?)]
+		Прежде чем ты успеваешь что-то сказать, выражение лица кошкодевочки быстро сменяется легким отвращением, и она первой нарушает тяжелую тишину ледяным тоном.
+		[rose.speech(Ты что, серьезно? Чем это ты тут занимаешься?)]
 	</p>
 	<p>
-		[pc.speech(Well, I was just... Erm...)]
-		 you start, not sure quite what to say.
+		[pc.speech(Ну, я просто... Э-э...)]
+		 начинаешь ты, не зная, что именно сказать.
 	</p>
 	<p>
-		[rose.speech(You were just masturbating to Mistress's dirty underwear?)]
-		 Rose questions, before curtsying and turning to make her exit.
-		 [rose.speech(Well, if you'll excuse me, you do appear to be rather busy, and I have some pressing matters to discuss with Mistress. I wonder what she'll say...)]
+		[rose.speech(Ты что, только что мастурбировал на грязное белье Госпожи?)]
+		 Роуз задает вопрос, после чего делает реверанс и разворачивается, чтобы уйти.
+		 [rose.speech(Что ж, если позволишь, ты выглядишь довольно занятым, а мне нужно обсудить кое-какие важные дела с Госпожой. Интересно, что она скажет...)]
 	</p>
 	<p>
-		You see Rose smirk as she finishes her sentence, as though she's eager to witness Lilaya's reaction to being told what it is you've been up to.
-		 As the cat-girl turns to leave, you realise that you only have a moment in which to say something to stop her.
+		Ты видишь самодовольную ухмылку Роуз на ее лице; кажется, ей не терпится увидеть реакцию Lilaya, когда той раскроют твой маленький секрет.
+		 Когда кошкодевочка разворачивается, ты понимаешь, что у тебя есть лишь мгновение, чтобы что-то сказать и остановить ее.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="CAUGHT_FLEE"><![CDATA[
 	<p>
-		You don't think it would do much good to try and apologise to Rose, so, jumping to your feet, you rush to the door and hurry to block her path down the corridor.
-		 Running out in front of her, you turn and plead,
-		 [pc.speech(Please, Rose, promise me that you won't tell Lilaya!)]
+		Ты понимаешь, что извинения перед Роуз вряд ли помогут, поэтому вскакиваешь на ноги, несешься к двери и спешишь преградить ей путь в коридоре.
+		 Выбежав ей навстречу, ты поворачиваешься к ней и умоляюще произносишь:
+		 [pc.speech(Пожалуйста, Роуз, пообещай, что не расскажешь Lilaya!)]
 	</p>
 	<p>
-		[rose.speech(I'm sorry, but I can't do that. Now, if you'll excuse me,)]
-		 Rose replies, before stepping around you and hurrying off down the stairs.
+		[rose.speech(Прости, но я не могу этого сделать. А теперь, если позволишь,)]
+		 отвечает Роуз, обходя тебя и поспешно спускаясь по лестнице.
 	</p>
 	<p>
-		You let out a frustrated sigh, and, with nothing else to do, you continue on down the corridor and return to the safety of your own room.
+		Ты разочарованно вздыхаешь и, понимая, что делать больше нечего, продолжаешь идти по коридору, возвращаясь в относительную безопасность своей комнаты.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="APOLOGY"><![CDATA[
 	<p>
-		[pc.speech(Rose! Wait!)]
-		 you call out, and, much to your relief, the cat-girl maid stops in the doorway.
+		[pc.speech(Роуз! Подожди!)]
+		 выкрикиваешь ты, и, к твоему огромному облегчению, кошкодевочка-горничная замирает в дверном проеме.
 	</p>
 	<p>
-		[rose.speech(May I help you?)]
-		 Rose asks, failing to hide the devious smirk on her face.
+		[rose.speech(Могу я чем-то помочь?)]
+		 спрашивает Роуз, не в силах скрыть лукавую ухмылку.
 	</p>
 	<p>
-		[pc.speech(I'm sorry! Please, don't tell Lilaya! I'm really, really sorry!)]
-		 you call out, desperate for Rose to keep this a secret between the two of you.
+		[pc.speech(Прости! Пожалуйста, не говори Lilaya! Мне правда, правда очень жаль!)]
+		 кричишь ты, отчаянно надеясь, что Роуз сохранит этот секрет между вами двоими.
 	</p>
 	<p>
-		The hint of sadistic delight in Rose's voice is unmistakable as she curtsies and addresses you once more,
-		[rose.speech(I'm sorry, but this really isn't something that I can keep from Mistress. Have a good day.)]
+		В голосе Роуз сквозит нескрываемое садистское удовольствие, когда она снова кланяется тебе,
+		[rose.speech(Простите, но это не то, что я могу утаить от Госпожи. Хорошего дня.)]
 	</p>
 	<p>
-		Your apology clearly wasn't enough, and you wonder if you should debase yourself and beg for Rose to forgive you, or simply drop the matter and deal with Lilaya's wrath the next time you see her.
+		Твоих извинений явно недостаточно, и ты гадаешь: стоит ли унизиться и умолять Роуз о прощении, или просто оставить всё как есть и готовиться к гневу Lilaya при следующей встрече.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="APOLOGY_FLEE"><![CDATA[
 	<p>
-		You don't think that any further apologies are going to be of much use, so, jumping to your feet, you rush to the door and hurry to block Rose's path down the corridor.
-		 Running out in front of her, you turn and plead,
-		 [pc.speech(Please, Rose, promise me that you won't tell Lilaya!)]
+		Ты понимаешь, что дальнейшие извинения вряд ли помогут, поэтому вскакиваешь на ноги, бросаешься к двери и спешишь преградить Роуз путь в коридоре.
+		 Выскочив ей навстречу, ты разворачиваешься и взмолился:
+		 [pc.speech(Пожалуйста, Роуз, пообещай, что не расскажешь Lilaya!)]
 	</p>
 	<p>
-		[rose.speech(I'm sorry, but I can't do that. Now, if you'll excuse me,)]
-		 Rose replies, before stepping around you and hurrying off down the stairs.
+		[rose.speech(Прости, но я не могу этого сделать. А теперь, если позволишь,)]
+		 отвечает Роуз, обходя тебя и поспешно спускаясь по лестнице.
 	</p>
 	<p>
-		You let out a frustrated sigh, and, with nothing else to do, you continue on down the corridor and return to the safety of your own room.
+		Ты разочарованно вздыхаешь и, понимая, что делать больше нечего, продолжаешь идти по коридору, возвращаясь в относительную безопасность своей комнаты.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEG"><![CDATA[
 	<p>
-		[pc.speech(Rose! Please!)]
-		 you cry out in desperation, clasping your [pc.hands] together as you beg for her to remain silent.
-		 [pc.speech(Don't tell Lilaya! I'll do anything! Anything you ask!)]
+		[pc.speech(Роуз! Пожалуйста!)]
+		 — в отчаянии кричишь ты, сжимая [pc.hands] в мольбе, чтобы она сохранила всё в тайне.
+		 [pc.speech(Не говори Lilaya! Я сделаю всё, что угодно! Всё, что попросишь!)]
 	</p>
 	<p>
-		Already half-out of the doorway, Rose stops in her tracks as she hears your words.
-		 Keeping her back turned towards you, she offers you an ultimatum,
-		 [rose.speech(I could keep this from Mistress, but under only one condition. That being, you submit to my punishment.)]
+		Роуз, которая уже почти вышла из комнаты, замирает на месте, услышав твои слова.
+		 Не оборачиваясь, она ставит тебе ультиматум:
+		 [rose.speech(Я могла бы утаить это от Госпожи, но лишь при одном условии. Ты должна подчиниться моему наказанию.)]
 	</p>
 	<p>
-		The cold, cutting tone of Rose's voice is enough to send a shiver down your spine, but, being offered a way out of this situation, you ignore it and shuffle forwards.
-		 [pc.speech(What kind of punishment?)]
+		Холодный, режущий тон голоса Роуз заставляет тебя вздрогнуть, но, видя шанс выбраться из этой ситуации, ты отбрасываешь страх и делаешь шаг вперед.
+		 [pc.speech(Что за наказание?)]
 	</p>
 	<p>
-		As Rose turns towards you, you see an uncharacteristically evil, sadistic grin on her face.
-		 Stepping over to one side of the room, she roughly yanks open the top drawer of one of Lilaya's cabinets, and from within, produces a black leather harness, with a large, purple dildo fixed to the front.
-		 Holding the strap-on up so that you can clearly see it, she laughs in sadistic pleasure as she states,
-		 [rose.speech(This kind of punishment. You let me fuck you with this, and Lilaya never needs to know about your filthy behaviour. Understood?)]
+		Когда Роуз поворачивается к тебе, ты видишь на её лице несвойственную ей злую, садистскую ухмылку.
+		Подойдя к одному из шкафов Lilaya, она с силой дергает верхний ящик и достает оттуда кожаный стрэп-он с крупным фиолетовым фаллосом.
+		Поднимая игрушку так, чтобы ты мог рассмотреть её во всех деталях, она со злорадным смехом произносит:
+		 [rose.speech(Такое будет наказание. Ты позволишь мне трахать тебя этим, и Lilaya никогда не узнает о твоем грязном поведении. Понятно?)]
 	</p>
 	<p>
-		You gulp as you wonder if that would be worth it to avoid Lilaya's wrath...
+		Ты сглатываешь, гадая, стоит ли оно того, чтобы избежать гнева Lilaya...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BEG_FLEE"><![CDATA[
 	<p>
-		You really don't want to be on the receiving end of that kind of punishment, and, jumping to your feet, you tell Rose as much,
-		 [pc.speech(I really don't want to do that, Rose. Just... please, promise me that you won't tell Lilaya about all this!)]
+		Тебе меньше всего хочется оказаться на месте жертвы такого наказания, и ты вскакиваешь на ноги, говоря Роуз прямо:
+		 [pc.speech(Я правда не хочу этого, Роуз. Просто... пожалуйста, пообещай мне, что не расскажешь Lilaya обо всем этом!)]
 	</p>
 	<p>
-		[rose.speech(I'm sorry, but I can't do that. Now, if you'll excuse me,)]
-		 Rose replies, before quickly putting the strap-on away and hurrying off down the corridor.
+		[rose.speech(Прости, но я не могу этого сделать. А теперь, если позволишь,)]
+		 отвечает Роуз, после чего быстро убирает стрэп-он и спешит прочь по коридору.
 	</p>
 	<p>
-		You let out a frustrated sigh, and, with nothing else to do, you step out into the corridor and quickly return to the safety of your own room.
+		Ты разочарованно вздыхаешь и, раз делать больше нечего, выходишь в коридор, поспешно возвращаясь в безопасность своей комнаты.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ROSE_AS_DOM"><![CDATA[
 	<p>
-		[pc.speech(Ok, just don't let Lilaya know...)]
-		 you say, looking down at the floor.
+		[pc.speech(Ладно, только не говори Lilaya...)]
+		 — говоришь ты, глядя в пол.
 	</p>
 	<p>
-		[rose.speech(Excellent,)]
-		 Rose replies, lifting her maid's dress and dropping her thong to the floor.
-		 With a clear amount of previous practice, she then swiftly secures the strap-on's harness in place around her groin.
-		 [rose.speech(You'll call me Mistress for the duration of this, and you'd better show me a proper amount of respect, or else Lilaya will be certain to hear all about what it is that you like to do with her underwear. Now, let's start with you telling me how bad you've been.)]
+		[rose.speech(Превосходно,)]
+		 Роуз отвечает, приподнимая платье горничной и сбрасывая трусики на пол.
+		 Очевидно, что она уже не раз это практиковала: она ловко закрепляет ремни страпона на своем паху.
+		 [rose.speech(Пока всё это не закончится, ты будешь звать меня Госпожой. И лучше тебе проявлять должное уважение, иначе Lilaya точно узнает всё о том, что ты любишь делать с её бельём. А теперь, начнём с того, что ты расскажешь мне, каким плохим ты был.)]
 	</p>
 	<p>
-		Looking up, you see a determined, dominant glint in Rose's eyes, and you know for a fact that she'll follow through with her threat if you don't do as you're told.
-		 [pc.speech(I-I've been very bad... Mistress!)]
-		 you say, remembering at the last moment to address her in the proper manner.
+		Подняв взгляд, ты видишь в глазах Роуз решительный, доминантный блеск и точно понимаешь: если не будешь слушаться, она не побрезгует исполнить свою угрозу.
+		 [pc.speech(Я... я был очень плохим... Госпожа!)]
+		 произносишь ты, в последний момент вспомнив, что её нужно называть подобающим образом.
 	</p>
 	<p>
-		[rose.speech(Ooh, that was a close one!)]
-		 Rose taunts, stepping forwards and pushing the purple dildo into your face.
-		 [rose.speech(And why are you very bad?)]
+		[rose.speech(Ох, пронесло!)]
+		 насмехается Роуз, делая шаг вперёд и поднося фиолетовый дилдо прямо к твоему лицу.
+		 [rose.speech(И почему же ты был очень плохим?)]
 	</p>
 	<p>
-		[pc.speech(B-Because I was m-masturbating with Lilaya's panties, Mistress.)]
+		[pc.speech(П-потому что я м-мастурбировал в трусиках Lilaya, Госпожа.)]
 	</p>
 	<p>
-		[rose.speech(Mmm, that <i>is</i> bad.)]
-		 Rose sneers, reaching down to grab you by the [pc.arm], before pulling you to your feet.
-		 [rose.speech(And how are you going to earn forgiveness?)]
+		[rose.speech(Ммм, это <i>очень</i> плохо.)]
+		 Роуз усмехается, хватая тебя за [pc.arm], а затем рывком поднимает на ноги.
+		 [rose.speech(И как же ты собираешься заслуживать прощение?)]
 	</p>
 	<p>
-		[pc.speech(By... By letting you fuck me, Mistress,)]
-		 you answer, avoiding Rose's gaze.
-		 Suddenly, the cat-girl gives you a surprisingly hard shove, and you find yourself falling back onto Lilaya's bed.
+		[pc.speech(Тем... Тем, что позволю вам трахнуть меня, Госпожа,)]
+		 отвечаешь ты, избегая взгляда Роуз.
+		 Внезапно кошкодевочка с неожиданной силой толкает тебя, и ты валишься назад на кровать Lilaya.
 	</p>
 	<p>
 		#IF(pc.hasLegs())
-			[rose.speech(Now spread your legs, you horny slut,)]
-		#ELSE
-			[rose.speech(Now present yourself to me, you horny slut,)]
+			[rose.speech(А теперь раздвинь ноги, похотливая сучка,)]
+			#ELSE
+			[rose.speech(А теперь предстань предо мной, похотливая шлюшка,)]
 		#ENDIF
-		 Rose snaps, stepping forwards as you hurry to obey.
-		 Grinning down at you, Rose leans forwards as she commands,
-		 [rose.speech(Beg for me to fuck you.)]
-	</p>
+		 Rose щелкает пальцами, делая шаг вперед, пока ты спешишь повиноваться.
+		 Усмехаясь, Rose наклоняется к тебе и приказывает:
+		 [rose.speech(Умоляй меня трахнуть тебя.)]
+		</p>
 	<p>
-		[pc.speech(Please, Mistress, fuck me! I've been a very bad [pc.girl]! Please, I want to earn your forgiveness! Fuck me!)]
-	</p>
+		[pc.speech(Пожалуйста, Госпожа, трахните меня! Я была очень плохой [pc.girl]! Пожалуйста, я хочу заслужить ваше прощение! Трахните меня!)]
+		</p>
 	<p>
-		[rose.speech(Well, if you insist!)]
-		 Rose laughs, preparing to do exactly what it is you've just asked of her.
-	</p>
+		[rose.speech(Ну, раз ты так настаиваешь!)]
+		 Rose смеется, готовясь исполнить именно то, о чем ты только что попросила.
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROSE_AS_DOM"><![CDATA[
 	<p>
-		Rose steps back from the bed, grinning.
-		 [rose.speech(Well, I think you've been adequately punished now.)]
-	</p>
+		Rose отступает от кровати с довольной ухмылкой.
+		 [rose.speech(Что ж, думаю, теперь ты наказана сполна.)]
+		</p>
 	<p>
-		[pc.speech(Yes, Mistress... Thank you, Mistress...)]
-		 You pant, lying back on Lilaya's bed as you catch your breath.
-		 You hear Rose unfastening her strap-on, before she moves to retrieve her thong and get her clothes back in order.
-	</p>
+		[pc.speech(Да, Госпожа... Спасибо, Госпожа...)]
+		 Ты тяжело дышишь, откинувшись на кровать Lilaya и пытаясь перевести дух.
+		 Ты слышишь, как Rose расстегивает свой страпон, а затем она идет за трусиками, чтобы привести одежду в порядок.
+		</p>
 	<p>
-		[rose.speech(Now, back to your room,)]
-		 she commands.
-		 [rose.speech(And remember, the next time you see me, you're to treat me as Lilaya's slave once more. Understood?)]
-	</p>
+		[rose.speech(А теперь — назад в свою комнату,)]
+		 приказывает она.
+		 [rose.speech(И помни: в следующий раз, когда увидишь меня, ты снова будешь относиться ко мне как к рабыне Lilaya. Поняла?)]
+		</p>
 	<p>
-		[pc.speech(Y-Yes, Mistress,)] you reply, before quickly gathering your things and hurrying to the door. Glancing back one last time at Rose, you see her grinning evilly at you. Letting out a little cry, you quickly turn away and rush off down the corridor, not daring to stop until you're back safe and sound in your own room...
-	</p>
+		[pc.speech(Д-да, Госпожа,)] — отвечаешь ты, после чего быстро собираешь вещи и спешишь к двери. Бросив последний взгляд на Rose, ты видишь её злобную ухмылку. Издав тихий вскрик, ты резко отворачиваешься и несешься по коридору, не смея остановиться, пока не окажешься в безопасности в своей комнате...
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="THREATEN"><![CDATA[
 	<p>
-		You decide that there's only one thing for it. You'll have to threaten Rose into silence. Standing up, you quickly stride forwards until you're standing just in front of Rose, and, putting on your most menacing tone, you growl at her, [pc.speech(You'd <i>better</i> not tell Lilaya about all this. You'll be sorry if you do!)]
+		Ты решаешь, что выхода нет. Тебе придётся припугнуть Роуз, чтобы она замолчала. Вскочив на ноги, ты стремительно подходишь к ней почти вплотную и, приняв самый угрожающий вид, рычишь: [pc.speech(Тебе бы <i> лучше</i> не говорить Lilaya обо всем этом. Пожалеешь, если проболтаешься!)]
 	</p>
 	<p>
-		Completely unfazed by your aggressive action, Rose stares into your eyes and coolly replies, [rose.speech(It's really not very wise to threaten me. Let's find out what Mistress has to say about your actions, shall we?)]
+		Совершенно не смутившись твоей агрессией, Роуз смотрит тебе прямо в глаза и хладнокровно отвечает: [rose.speech(Угрожать мне — не самая мудрая затея. Давай узнаем, что Госпожа скажет о твоих выходках, а?)]
 	</p>
 	<p>
-		With that, Rose quickly steps away from you and slides a small wall panel to one side, before pressing a small button that's located behind it. Flashing you an evil smirk, the cat-girl maid raps her claw-like fingers on the surface of a nearby dresser, announcing as she does so, [rose.speech(Mistress will be up here in just a moment. Wait right there, [pc.name]...)]
+		С этими словами Роуз быстро отступает от тебя и сдвигает в сторону небольшую настенную панель, после чего нажимает спрятанную за ней кнопку. Одарив тебя злобной ухмылкой, кошкодевочка-горничная постукивает когтями по поверхности стоящего рядом комода, объявляя: [rose.speech(Госпожа будет здесь с минуты на минуту. Стой на месте, [pc.name]...)]
 	</p>
 	<p>
-		Realising that this button must have alerted Lilaya, and that your [lilaya.relation(pc)] must already be on her way up to this room, you wonder whether to wait for her arrival, or to instead hurry off and return to the safety of your own room...
+		Понимая, что эта кнопка наверняка оповестила Lilaya и что твои [lilaya.relation(pc)] уже спешит к тебе, ты раздумываешь: стоит ли дождаться её прихода или лучше поскорее смыться в безопасную тишь своей комнаты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="THREATEN_FLEE"><![CDATA[
 	<p>
-		Not wanting to face Lilaya right now, you tell Rose that you've got to leave, before dashing for the door and quickly exiting out into the corridor beyond. Thankfully, Lilaya doesn't seem to have made it up the stairs just yet, and so you manage to rush back to your room without encountering her...
+		Не желая сейчас сталкиваться с Lilaya лицом к лицу, ты говоришь Роуз, что тебе пора, после чего бросаешься к двери и быстро вылетаешь в коридор. К счастью, Lilaya, похоже, ещё не успела подняться по лестнице, так что тебе удаётся добежать до своей комнаты, так и не встретив её...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="THREATEN_WAIT"><![CDATA[
 	<p>
-		Not having anything to fear from Lilaya, you do as Rose says and wait for your [lilaya.relation(pc)]'s arrival. As the two of you await the [lilaya.race]'s arrival, Rose takes the time to sneer, [rose.speech(Don't think you can talk your way out of this, [pc.name]. If you're smart, you'll do as I suggest and submit to your punishment...)]
+		Понимая, что бояться тебе нечего, ты поступаешь как советует Rose, и ждешь прибытия своей [lilaya.relation(pc)]. Пока вы вдвоем ждете появления [lilaya.race], Rose не упускает возможности съязвить: [rose.speech(Не думай, что сможешь выкрутиться болтовней, [pc.name]. Если у тебя есть мозги, сделаешь как я сказала, и смиренно примешь свое наказание...)]
 	</p>
 	<p>
-		Before you can respond, the door to the bedroom suddenly flies open, and the familiar figure of Lilaya bursts into the room. As she makes her entry, you see that she's beginning to hastily pull off her clothes, but upon seeing you she halts this rapid undressing, and with a deep blush rising into her cheeks, she turns and exclaims to Rose, [lilaya.speech(Mistress! You used the special bell, so I was expecting... Well, you know... What's [pc.name] doing here? Is [pc.she] joining us for today's session?)]
+		Прежде чем ты успеваешь ответить, дверь в спальню внезапно распахивается, и в комнату влетает знакомая фигура Lilaya. Заметив, что она уже начала поспешно срывать с себя одежду, ты видишь, как она замирает при виде тебя; густо покраснев, она оборачивается к Rose и восклицает: [lilaya.speech(Госпожа! Вы использовали особый колокольчик, так что я ожидала... Ну, вы понимаете... А что здесь делает [pc.name]? [pc.she] тоже присоединится к сегодняшнему занятию?)]
 	</p>
 	<p>
-		Immediately picking up on the fact that Lilaya just called her maid 'Mistress', you realise that she was expecting Rose's summons to involve some kind of role-reversal sex. Before you can offer an explanation, the cat-girl quickly reveals, [rose.speech(I caught [pc.name] here pleasuring [pc.herself] with a pair of your underwear. Upon confronting [pc.herHim], [pc.she] threatened me, and so I was forced to summon you here.)]
+		Мгновенно уловив тот факт, что Lilaya только что назвала свою служанку «Госпожой», ты понимаешь: она ожидала, что зов Rose подразумевает какой-то секс с переменой ролей. Но не успеваешь ты дать объяснение, как кошкодевочка быстро выдает правду: [rose.speech(Я застукала [pc.name] здесь, когда она ласкала [pc.herself] твоим нижним бельем. Когда я предъявила [pc.herHim] претензии, [pc.she] начала мне угрожать, и поэтому мне пришлось призвать тебя сюда.)]
 	</p>
 	<p>
-		[lilaya.speech(You did what?!)] Lilaya exclaims, turning to face you with a curious mixture of anger and curiosity in her facial expression. Placing her hands on her hips, your [lilaya.relation(pc)] demands, [lilaya.speech(You're not to threaten Rose! And as to the other thing, you know you can come down to me and have some 'tests' at any time. There's no need for using my panties like that... Anyway, I want to hear you apologise to Rose for threatening her. If you know what's good for you, and don't want to end up on her bad side, then I suggest you submit and let her punish you like the naughty [pc.girl] you are!)]
+		[lilaya.speech(Ты что сделал?!)] — восклицает Lilaya, поворачиваясь к тебе с любопытной смесью гнева и любопытства на лице. Уперев руки в бока, твоя [lilaya.relation(pc)] требует: [lilaya.speech(Не смей угрожать Роуз! А что касается другого — ты же знаешь, что можешь прийти ко мне на любые «тесты» в любое время. Нет нужды вот так использовать мои трусики... В общем, я хочу, чтобы ты извинился перед Роуз за свои угрозы. Если тебе не впервой набивать шишки и ты не хочешь оказаться у неё в немилости, советую тебе подчиниться и позволить ей наказать тебя, как послушного [pc.girl]!)]
 	</p>
 	<p>
-		As she mentions that you should submit to Rose and be 'punished', Lilaya's cheeks flush red once more, and she turns to give her maid a submissive look. Realising that Rose is really the one in charge in this situation, you wonder whether to submit to her and undoubtedly be forced to endure some kind of sexual punishment, or to instead quickly apologise and return to your room...
+		Когда она говорит о том, что тебе стоит подчиниться Роуз и быть «наказанным», щеки Lilaya снова заливаются румянцем, и она бросает на свою горничную покорный взгляд. Осознав, что в этой ситуации главная именно Роуз, ты раздумываешь: то ли смиренно подчиниться ей и неизбежно подвергнуться какому-нибудь сексуальному наказанию, то ли поскорее извиниться и сбежать к себе в комнату...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="THREATEN_APOLOGISE"><![CDATA[
 	<p>
-		Not wanting to submit to Rose, nor end up on both her and Lilaya's bad side, you quickly apologise to the cat-girl maid, before dashing for the door and quickly exiting out into the corridor beyond. Thankfully, Lilaya doesn't seem to have any interest in pursuing you and demanding you do anything further, and so you manage to rush back to your room without further incident...
+		Не желая ни подчиняться Роуз, ни портить отношения сразу с обеими, ты поспешно извиняешься перед кошкодевочкой-горничной, после чего рвешь к двери и вылетаешь в коридор. К счастью, Lilaya, похоже, не горит желанием преследовать тебя и требовать чего-то еще, так что тебе удается без лишних приключений добежать до своей комнаты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="THREATEN_SUBMIT"><![CDATA[
 	<p>
-		Deciding that the best thing to do would be to completely submit to Rose, you bow down before her and offer the cat-girl your most sincere apology. Looking down at you with a look of triumph on her face, she drops what's left of her polite act, and after flashing you an uncharacteristically evil, sadistic grin, she declares, [rose.speech(That'll do for your apology, bitch. Now for your punishment. Get down on all fours and present yourself to me.)]
+		Решив, что лучшее, что ты можешь сделать — это полностью подчиниться Rose, ты склоняешься перед ней и приносишь кошкодевочке свои самые искренние извинения. Глядя на тебя с торжествующим видом, она отбрасывает остатки своей вежливости и, одарив тебя непривычно злой, садистской ухмылкой, объявляет: [rose.speech(Для извинений сойдет, сучка. А теперь — наказание. Вставай на четвереньки и представься мне.)]
 	</p>
 	<p>
-		Committed to completely submitting to Rose, you do as she says and get down onto all fours. As you turn your ass towards her, she addresses Lilaya in a manner most unlike how she does so while on the job, and snaps, [rose.speech(Strip naked, slut, then sit on the edge of your bed.)]
+		Настроенная на полное подчинение Rose, ты послушно встаешь на четвереньки. Когда ты подставляешь ей зад, она обращается к Lilaya совсем не так, как во время работы, и резко командует: [rose.speech(Разденься догола, шлюха, а потом сядь на край кровати.)]
 	</p>
 	<p>
-		As Lilaya obediently hurries to strip out of her clothing, Rose steps over to one side of the room, before roughly yanking open the top drawer of one of Lilaya's cabinets. From within, she produces a black leather harness, with a large, purple dildo fixed to the front. Holding the strap-on up so that you can clearly see it, she laughs in sadistic pleasure as she states, [rose.speech(For your punishment, I'm going to fuck you with this. Oh, and you'll call me Mistress for the duration of this. Understood?)]
+		Пока Lilaya послушно спешит раздеться, Rose подходит к одному из шкафов и с силой выдергивает верхний ящик. Из него она достает кожаную портупею с закрепленным спереди огромным фиолетовым фаллосом. Демонстративно поднимая страпон так, чтобы ты могла его отчетливо рассмотреть, она с садистским удовольствием смеется и заявляет: [rose.speech(В качестве наказания я буду трахать тебя этим. О, и пока всё это не закончится, ты будешь называть меня Госпожой. Понятно?)]
 	</p>
 	<p>
-		[pc.speech(Yes, Mistress,)] you reply.
+		[pc.speech(Да, Госпожа,)] — отвечаешь ты.
 	</p>
 	<p>
-		Sitting down on the edge of her bed, the now-naked Lilaya spreads her legs, before addressing Rose in the same manner in which you've been instructed to, [lilaya.speech(Mistress, am I going to be allowed to join in?)]
+		Сев на край кровати, уже обнаженная Lilaya раздвигает ноги и обращается к Rose так, как тебя проинструктировали: [lilaya.speech(Госпожа, мне разрешат присоединиться?)]
 	</p>
 	<p>
-		By means of an answer, the cat-girl maid grabs hold of you, before roughly pulling you forwards towards Lilaya, and once there, she pushes your face into your [lilaya.relation(pc)]'s groin. Grabbing hold of the back of your head, Lilaya pulls your head forwards, forcing you to lick and kiss her [lilaya.pussy+].
+		С помощью своего ответа кошка-горничная хватает тебя, а затем грубо толкает вперед, к Lilaya. Оказавшись рядом, она вжимает твое лицо в пах твоей [lilaya.relation(pc)]. Схватив тебя за затылок, Lilaya тянет твою голову вперед, заставляя тебя лизать и целовать её [lilaya.pussy+].
 	</p>
 	<p>
-		[rose.speech(Liking the taste of this slut's cunt?)] Rose teases as she lifts her maid's dress and drops her thong to the floor. With a clear amount of previous practice, she then swiftly secures the strap-on's harness in place around her groin. Dropping down behind you, she
+		[rose.speech(Нравится вкус киски этой шлюхи?)] — дразнит Rose, приподнимая платье горничной и сбрасывая её трусики на пол. С явным опытом в таких делах она быстро закрепляет ремни страпона на своем паху. Опустившись позади тебя, она
 		#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			 roughly gains access to your [pc.pussy+] and gives it a sharp slap, causing you to let out a muffled cry into Lilaya's cunt. Forcefully shoving three of her fingers into your [pc.pussy+], the cat-girl roughly fingers you as she states, 
+			 грубо пробирается к твоей [pc.pussy+] и отвешивает ей звонкую пощечину, заставляя тебя издать приглушенный стон прямо в киску Lilaya. Силой втискивая три пальца в твою [pc.pussy+], кошка-горничная грубо ласкает тебя пальцами, произнося:
 		#ELSEIF(game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true))
-			 roughly gains access to your [pc.ass+] and gives it a sharp slap, causing you to let out a muffled cry into Lilaya's cunt. After forcefully swatting your exposed ass several more times, the cat-girl finally stops and states, 
+			 грубо пробирается к твоей [pc.ass+] и отвешивает ей звонкую пощечину, заставляя тебя издать приглушенный стон прямо в киску Lilaya. Несколько раз с силой шлепая твою обнаженную задницу, кошка-горничная наконец останавливается и говорит:
 		#ELSE
-			 gives your ass a sharp slap, causing you to let out a muffled cry into Lilaya's cunt. After forcefully swatting your ass several more times, the cat-girl finally stops and states, 
+			 дает твоей заднице звонкий шлепок, заставляя тебя издать приглушенный стон прямо в киску Lilaya. Несколько раз с силой шлепая тебя по заднице, кошка-горничная наконец останавливается и говорит:
 		#ENDIF
-		 [rose.speech(You never answered me, bitch. You like the taste of slut's cunt? Or would you rather I have her grow a nice, fat cock for you to choke on?)]
+		 [rose.speech(Ты так и не ответила мне, сучка. Тебе нравится вкус киски этой шлюхи? Или ты хочешь, чтобы у неё вырос сочный, толстый член, которым ты будешь захлебываться?)]
 	</p>
 	<p>
-		[lilaya.speech(Be a good [pc.girl] and answer Mistress,)] Lilaya says, pushing your head back a little so as to allow you to breathe and make your decision...
+		[lilaya.speech(Будь хорошей [pc.girl] и ответь Госпоже,)] — говорит Lilaya, слегка отстраняя твою голову, чтобы дать тебе возможность вздохнуть и принять решение...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_AND_ROSE_AS_DOMS"><![CDATA[
 	<p>
-		[pc.speech(Yes, Mistress, I like the taste of her cunt,)] you reply, before burying your face between Lilaya's legs and carrying on where you left off.
+		[pc.speech(Да, Госпожа, мне нравится вкус её киски,)] — отвечаешь ты, прежде чем уткнуться лицом между ног Lilaya и продолжить с того места, где остановился.
 	</p>
 	<p>
-		[rose.speech(Keep eating her out then, bitch,)] Rose laughs in a sadistic, mocking tone.
+		[rose.speech(Ну так и соси её дальше, сучка,)] — садистски и насмешливо хохочет Rose.
 		#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			 Roughly yanking her fingers out of your cunt, she quickly brings the head of her purple strap-on to your [pc.labia+], and before you can react, she slams forwards, ramming the toy deep into your [pc.cunt+]. As you let out another muffled cry into Lilaya's pussy, Rose grabs your [pc.hips+] and sneers, [rose.speech(Take it like the bitch you are!)]
+			 Грубо выдернув пальцы из твоей киски, она быстро подносит головку своего фиолетового страпона к твоей [pc.labia+], и прежде чем ты успеваешь среагировать, она резко подается вперед, вонзая игрушку глубоко в твою [pc.cunt+]. Пока ты издаешь очередной приглушенный стон в лоно Lilaya, Rose хватает тебя за [pc.hips+] и скалится: [rose.speech(Принимай это, как истинная сучка!)]
 		#ELSEIF(game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true))
-			 Roughly spanking your exposed ass several times, she then quickly brings the head of her purple strap-on to your [pc.asshole+], and before you can react, she slams forwards, ramming the toy deep into your [pc.ass+]. As you let out another muffled cry into Lilaya's pussy, Rose grabs your [pc.hips+] and sneers, [rose.speech(Take it like the bitch you are!)]
+			 Несколько раз грубо отшлепав твою обнаженную задницу, она быстро подносит головку своего фиолетового страпона к твоей [pc.asshole+], и прежде чем ты успеваешь среагировать, она резко подается вперед, вонзая игрушку глубоко в твою [pc.ass+]. Пока ты издаешь очередной приглушенный стон в лоно Lilaya, Rose хватает тебя за [pc.hips+] и скалится: [rose.speech(Принимай это, как истинная сучка!)]
 		#ELSE
-			 Roughly spanking your ass several times, she then slaps the head of her purple strap-on against your [pc.ass+]. As you let out another muffled cry into Lilaya's pussy, Rose grabs your [pc.hips+] and sneers, [rose.speech(That's it, bitch! You're mine now!)]
+			 Несколько раз грубо отшлепав твою задницу, она хлопает головкой своего фиолетового страпона по твоей [pc.ass+]. Пока ты издаешь очередной приглушенный стон в лоно Lilaya, Rose хватает тебя за [pc.hips+] и скалится: [rose.speech(Вот так, сучка! Теперь ты моя!)]
 		#ENDIF
 	</p>
 	]]>
@@ -481,26 +481,26 @@
 	
 	<htmlContent tag="LILAYA_AND_ROSE_AS_DOMS_PENIS"><![CDATA[
 	<p>
-		[pc.speech(I'd prefer the taste of her cock, Mistress,)] you truthfully reply.
+		[pc.speech(Я бы предпочел вкус её члена, Госпожа,)] — честно отвечаешь ты.
 	</p>
 	<p>
-		[rose.speech(Go on, slut. Grow a nice, big cock for this bitch to choke on,)] Rose orders Lilaya.
+		[rose.speech(Давай, шлюха. Отрасти себе здоровенный член, чтобы этой сучке было чем подавиться,)] — приказывает Rose для Lilaya.
 	</p>
 	<p>
-		[lilaya.speech(Yes, Mistress!)] your [lilaya.relation(pc)] replies, and before your eyes, a thick, demonic cock quickly grows out above Lilaya's pussy. With a horny squeal,
+		[lilaya.speech(Да, Госпожа!)] отвечает твоя [lilaya.relation(pc)], и прямо на твоих глазах над киской Lilaya стремительно вырастает толстый демонический член. С похотливым визгом,
 		#IF(!lilaya.isPregnant())
-			 the [lilaya.race] then transforms away her pussy, leaving you with no other option but to orally service her newly-grown dick. As a pair of large, full balls drop down beneath her erect shaft,
+			 [lilaya.race] затем заменяет её киску, не оставляя тебе иного выбора, кроме как обслужить её новоиспеченный член орально. Когда под эрегированным стволом тяжело опускается пара крупных, полных яиц,
 		#ENDIF
-		 Lilaya impatiently grabs hold of your head and guides your mouth up to the twitching head of her throbbing cock. As you part your [pc.lips+], your [lilaya.relation(pc)] pulls your head down, forcing her cock into your mouth as she moans, [lilaya.speech(~Ooh!~ Yes! Take it deep!)]
+		 Lilaya нетерпеливо хватает тебя за голову и направляет твой рот к подергивающейся головке своего пульсирующего члена. Стоит тебе раскрыть свой [pc.lips+], как твоя [lilaya.relation(pc)] тянет твою голову вниз, силой вталкивая член тебе в рот, при этом она стонет: [lilaya.speech(~Ооо!~ Да! Глотай его поглубже!)]
 	</p>
 	<p>
-		[rose.speech(That's it, bitch, choke on that slut's fat cock,)] Rose laughs in a sadistic, mocking tone.
+		[rose.speech(Вот так, сучка, подавись этим жирным членом шалавы,)] — садистски и насмешливо хохочет Rose.
 		#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-			 Roughly yanking her fingers out of your cunt, she quickly brings the head of her purple strap-on to your [pc.labia+], and before you can react, she slams forwards, ramming the toy deep into your [pc.cunt+]. As you let out another muffled cry around Lilaya's cock, Rose grabs your [pc.hips+] and sneers, [rose.speech(Take it like the bitch you are!)]
+			 Грубо выдернув пальцы из твоей щели, она быстро подносит головку своего фиолетового страпона к твоему [pc.labia+], и прежде чем ты успеваешь среагировать, она резко подается вперед, вонзая игрушку глубоко в твой [pc.cunt+]. Пока ты издаешь очередной приглушенный крик, обхватив ртом член Lilaya, Rose хватает тебя за [pc.hips+] и скалится: [rose.speech(Принимай его как настоящая сучка!)]
 		#ELSEIF(game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true))
-			 Roughly spanking your exposed ass several times, she then quickly brings the head of her purple strap-on to your [pc.asshole+], and before you can react, she slams forwards, ramming the toy deep into your [pc.ass+]. As you let out another muffled cry around Lilaya's cock, Rose grabs your [pc.hips+] and sneers, [rose.speech(Take it like the bitch you are!)]
+			 Несколько раз грубо отшлепав твою обнаженную задницу, она быстро подносит головку своего фиолетового страпона к твоему [pc.asshole+], и прежде чем ты успеваешь среагировать, она резко подается вперед, вонзая игрушку глубоко в твой [pc.ass+]. Пока ты издаешь очередной приглушенный крик, обхватив ртом член Lilaya, Rose хватает тебя за [pc.hips+] и скалится: [rose.speech(Принимай его как настоящая сучка!)]
 		#ELSE
-			 Roughly spanking your ass several times, she then slaps the head of her purple strap-on against your [pc.ass+]. As you let out another muffled cry around Lilaya's cock, Rose grabs your [pc.hips+] and sneers, [rose.speech(That's it, bitch! You're mine now!)]
+			 Пару раз ощутимо отшлепав тебя по заднице, она с силой хлопает фиолетовым насадком по твоему [pc.ass+]. Пока ты издаешь очередной приглушенный стон, захлебываясь членом Lilaya, Rose хватает тебя за [pc.hips+] и скалится: [rose.speech(Вот так, сучка! Теперь ты моя!)]
 		#ENDIF
 	</p>
 	]]>
@@ -508,20 +508,20 @@
 	
 	<htmlContent tag="AFTER_LILAYA_AND_ROSE_AS_DOMS"><![CDATA[
 	<p>
-		Having had her fun, Rose steps back from the bed, and with a big grin on her face, she teases, [rose.speech(Well, I think you've been adequately punished now.)]
+	Насладившись игрой, Rose отступает от кровати и с широкой ухмылкой дразнит тебя: [rose.speech(Ну что ж, думаю, ты получила вполне достойное наказание.)]
 	</p>
 	<p>
-		[pc.speech(Yes, Mistress... Thank you, Mistress...)] You pant, withdrawing from Lilaya's crotch as you catch your breath. You hear Rose unfastening her strap-on, and as she moves to retrieve her thong and get her clothes back in order, she commands, [rose.speech(Now, back to your room, bitch. I need to show this slut some love, and we don't want you present for it. Oh, and remember, the next time you see me, you're to treat me as a maid once more, so none of this 'Mistress' business. Understood?)]
+	[pc.speech(Да, Госпожа... Спасибо, Госпожа...)] — тяжело дыша, отвечаешь ты, отстраняясь от паха Lilaya, чтобы перевести дух. Ты слышишь, как Rose расстегивает свой страпон, и пока она собирает свои трусики и приводит одежду в порядок, она командует: [rose.speech(А теперь — брысь в свою комнату, сучка. Мне нужно уделить этой шлюхе немного любви, и не стоит тебе мешаться под ногами. Ах да, и помни: в следующий раз, когда увидишь меня, будешь обращаться со мной как с горничной, так что забудь про это «Госпожа». Поняла?)]
 	</p>
 	<p>
-		[pc.speech(Yes,)] you reply, before quickly gathering your things and hurrying to the door as you prepare to leave...
+	[pc.speech(Да,)] — отвечаешь ты, после чего быстро собираешь вещи и спешишь к двери, готовясь уйти...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_LILAYA_AND_ROSE_AS_DOMS_LEAVE"><![CDATA[
 	<p>
-		Glancing back one last time, you see Rose stepping over to Lilaya and pulling her into a loving, tender kiss. Not wanting to get into trouble, you quickly turn away and rush off down the corridor, not daring to stop until you're back safe and sound in your own room...
+	Оглянувшись в последний раз, ты видишь, как Rose подходит к Lilaya и притягивает её к себе для нежного, любящего поцелуя. Не желая навлечь на себя неприятности, ты быстро отворачиваешься и мчишься по коридору, не смея остановиться, пока не окажешься в безопасности в своей комнате...
 	</p>
 	]]>
 	</htmlContent>
@@ -530,35 +530,35 @@
 	
 	<htmlContent tag="DOMINATE"><![CDATA[
 	<p>
-		You explain that you're just horny. Rose smirks and suggests to Lilaya that they both take a break from work and help you with your problem.
+	Ты объясняешь, что просто изголодалась по сексу. Rose ухмыляется и предлагает Lilaya сделать перерыв в делах и помочь тебе справиться с твоей проблемой.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_AS_SUB_START"><![CDATA[
 	<p>
-		Rose pushes Lilaya onto her knees before you, and pushes your face into her groin. She equips strap-on and kneels behind you.
+		Роуз заставляет Lilaya опуститься перед тобой на колени и прижимает твое лицо к её промежности. Затем она надевает страпон и опускается на колени позади тебя.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOMINATE_LEAVE"><![CDATA[
 	<p>
-		You say that you're not interested in that at the moment and return to your room.
+		Ты говоришь, что сейчас тебе это не интересно, и возвращаешься в свою комнату.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROSE_AND_LILAYA_AS_SUBS"><![CDATA[
 	<p>
-		Rose orders you to return to your room. Tells Lilaya to clean up and return to lab.
+		Роуз приказывает тебе вернуться в комнату, а Lilaya велит прибраться и вернуться в лабораторию.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_ROSE_AND_LILAYA_AS_SUBS_LEAVE"><![CDATA[
 	<p>
-		You say that you're not interested in that at the moment and return to your room.
+		Ты говоришь, что сейчас тебе это не интересно, и возвращаешься в свою комнату.
 	</p>
 	]]>
 	</htmlContent>

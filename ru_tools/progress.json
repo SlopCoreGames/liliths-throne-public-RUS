@@ -68,7 +68,16 @@
     "res/txt/places/dominion/lilayasHome/diningHall.xml",
     "res/txt/places/dominion/lilayasHome/doll_quest.xml",
     "res/txt/places/dominion/lilayasHome/dressingRoom.xml",
-    "res/txt/places/dominion/lilayasHome/generic.xml"
+    "res/txt/places/dominion/lilayasHome/generic.xml",
+    "res/txt/places/dominion/lilayasHome/lab.xml",
+    "res/txt/places/dominion/lilayasHome/library.xml",
+    "res/txt/places/dominion/lilayasHome/lilayaBirthing.xml",
+    "res/txt/places/dominion/lilayasHome/lilayasRoom.xml",
+    "res/txt/places/dominion/lilayasHome/playersRoom.xml",
+    "res/txt/places/dominion/lilayasHome/room_rose.xml",
+    "res/txt/places/dominion/lilayasHome/spa.xml",
+    "res/txt/places/dominion/lilithsTower/exterior.xml",
+    "res/txt/places/dominion/nightlife/lights_out.xml"
   ],
   "translated_java": [
     "src/com/lilithsthrone/game/dialogue/story/PrologueDialogue.java",

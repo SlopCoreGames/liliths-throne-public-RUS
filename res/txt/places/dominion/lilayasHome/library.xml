@@ -3,20 +3,20 @@
 	
 	<htmlContent tag="LIBRARY"><![CDATA[
 	<p>
-		Pushing open the heavy wooden door, you find yourself walking into Lilaya's library. Much like her lab, all four walls are covered in shelving; each one of them is stacked full of what must be in total many thousands of books of all shapes and sizes. Much of the room is taken up by free-standing book cases, although there's a little space on one side of the room, where a couple of comfortable leather-bound chairs flank an ornate fireplace.
+		olкрывая тяжелую деревянную дверь, ты входишь в библиотеку Lilaya. Как и в её лаборатории, все четыре стены здесь уставлены стеллажами; каждый из них забит книгами самых разных форм и размеров — их здесь, должно быть, тысячи. Большая часть комнаты занята отдельно стоящими книжными шкафами, хотя с одной стороны осталось немного места, где у изысканного камина стоят пара удобных кожаных кресел.
 	</p>
 	<p>
-		Walking down one of the aisles, you see a great deal of organisation has gone into the design of the room, and upon closer inspection, you see that the shelves are immaculately clean; evidence that a lot of care goes into its maintenance. As you walk, you scan the titles printed onto the spines of the books, but there's not really much that catches your eye. Only a few shelves really look to be of any interest, and you wonder if you should take some time to do a spot of reading.
+		Проходя по одному из проходов, ты замечаешь, насколько продуман дизайн комнаты. При ближайшем рассмотрении становится ясно, что полки безупречно чисты — верный признак того, что за библиотекой тщательно ухаживают. На ходу ты пробегаешь глазами по названиям на корешках книг, но мало что цепляет твой взгляд. Лишь несколько полок кажутся по-настоящему интересными, и ты задумываешься, не стоит ли уделить время чтению.
 	</p>
 	<p>
-		On the back wall at the end of the shelves is a huge map of the city of Dominion. You wonder if you should take a picture of it with your phone's camera.
+		На задней стене, в самом конце книжных рядов, висит огромная карта города Dominion. Ты думаешь о том, чтобы сфотографировать её на телефон.
 	</p>
 	<p>
-		One of the library's aisles is dedicated to holding copies of the spell books that you've discovered and read in your travels. As you walk down this aisle, you see that the shelves in this section are fashioned out of shimmering purple energy, and seem to shift and move with a life of their own.
+		Один из проходов библиотеки отведен под копии книг заклинаний, которые ты находил и читал во время своих странствий. Проходя по этому ряду, ты видишь, что полки в этой секции сотканы из мерцающей фиолетовой энергии; кажется, они живут своей собственной жизнью, постоянно меняя форму.
 	</p>
 	#IF(game.getNonCompanionCharactersPresent().isEmpty())
 		<p style='text-align:center;'>
-			[style.italicsDisabled(The library is deserted at the moment...)]
+			[style.italicsDisabled(В библиотеке сейчас безлюдно...)]
 		</p>
 	#ENDIF
 	]]>
@@ -24,205 +24,201 @@
 	
 	<htmlContent tag="ARCANE_AROUSAL"><![CDATA[
 	<p>
-		Sliding the large leather-bound tome out from the bookshelf, you then walk over to sit down on one of the library's comfortable chairs. The spine creaks as you open the cover, and as you start reading, you quickly discover that this book is way above your level of understanding. You decide to persist, and by flipping through the pages and skimming over some of the more intelligible passages, you do manage to discover some things.
+		Вытащив из книжного шкафа массивный фолиант в кожаном переплете, ты направляешься к одному из уютных кресел в библиотеке. При открытии обложки раздается отчетливый скрип корешка, и, начав чтение, ты быстро понимаешь, что эта книга куда выше твоего уровня понимания. Тем не менее, ты решаешь не сдаваться; пролистывая страницы и пробегая глазами наиболее понятные отрывки, тебе всё же удается кое-что разузнать.
 	</p>
 	<p>
-		For one, it seems as though arcane power is found all throughout this world, and although it's mostly concentrated in people's arcane auras, you discover that there are some places out in the wilderness where the arcane condenses into little micro-storms of activity. These places allow even the most novice of arcane users to harness its power, but for the most part, a person can only use arcane spells if they train their aura to become strong enough. This training process appears to take several years, and you realise how fortunate you are to have an aura with demon-like strength.
+		Во-первых, кажется, будто аркана пронизывает весь этот мир, и хотя она в основном сосредоточена в арканных аурах людей, ты обнаруживаешь, что в диких землях есть места, где аркана конденсируется в крошечные микро-штормы активности. Эти места позволяют даже самым неопытным пользователям арканы обуздать её силу, но в большинстве случаев человек может использовать арканные заклинания, только если натренирует свою ауру до достаточной мощности. Этот процесс обучения, судя по всему, занимает несколько лет, и ты осознаешь, как тебе повезло обладать аурой с демонической силой.
 	</p>
 	<p>
-		After reading through these technical aspects of the arcane, you move on to the nature of the arcane itself. You realise that this section is what must have given the book its title; 'Arcane Arousal'. It appears as though the arcane is some kind of primal force that feeds on a person's sexual energy. Although a person may normally be able to easily resist their aura's influence, when they get fatigued, their own aura will amplify their sexual desires, causing them to become obsessed with sex. This is the power that's behind the arcane storms that often erupt over Dominion, and you once again reflect on how lucky you are to have an aura powerful enough to cancel out the storm's potent effects.
+		Закончив с техническими аспектами Arcane, ты переходишь к изучению самой природы этой силы. Ты понимаешь, что именно этот раздел, должно быть, дал книге её название — «Arcane Arousal». Похоже, что Arcane — это своего рода первобытная сила, которая питается сексуальной энергией человека. Хотя в обычном состоянии люди легко могут сопротивляться влиянию своей Ауры, при утомлении она начинает усиливать их сексуальные желания, заставляя их буквально одержимо жаждать секса. Именно эта мощь стоит за Arcane-штормами, которые часто разражаются над Dominion, и ты вновь размышляешь о том, как тебе повезло обладать Аурой, достаточно сильной, чтобы нейтрализовать их сокрушительное воздействие.
 	</p>
 	<p>
-		Finally, you skim over the book's last few chapters, which define 'arcane essences'. These essences are described as being physical, gaseous manifestations of arcane power, and are able to be infused into clothing and items of food in order to create enchanted items and potions. People who have a very high level of arcane power are able to absorb arcane essences from out of the aura of people orgasming or being defeated in combat near them, with lilin even being able to passively absorb essences in a radius of several thousand metres. This does <i>not</i> diminish the aura of the orgasming person, but it does cause their aura to strengthen, preventing additional essence absorption for a few hours.
+		Наконец, ты бегло просматриваешь последние несколько глав, в которых дается определение «arcane essences». Эти эссенции описываются как физические, газообразные проявления силы Arcane, которые можно впитывать в одежду или пищу для создания зачарованных предметов и зелий. Люди с очень высоким уровнем Arcane способны поглощать эти эссенции из Ауры тех, кто испытывает оргазм или терпит поражение в бою рядом с ними; причём лилин способны пассивно впитывать эссенции в радиусе нескольких тысяч метров. Это <i>не</i> ослабляет Ауру человека, испытывающего оргазм, но заставляет её укрепляться, что предотвращает повторное поглощение эссенции в течение нескольких часов.
 	</p>
 	<p>
-		The book finishes by noting that, due to the sexual pleasure derived from beating others, powerful arcane users who are sadists are able to absorb essences from those they abuse or beat in fights. Conversely, powerful arcane users who are masochists absorb essences from being beaten.
+		Книга завершается примечанием о том, что благодаря сексуальному удовольствию, получаемому от избиения других, могущественные пользователи арканы-магии, являющиеся садистами, способны поглощать эссенции тех, кого они истязают или побеждают в бою. И наоборот, могущественные пользователи арканы-магии, будучи мазохистами, поглощают эссенции, когда их бьют.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILITHS_DYNASTY"><![CDATA[
 	<p>
-		You take the hardback book out of the bookshelf and walk over to sit down on one of the library's comfortable chairs. Opening the cover and flipping through the pages reveals that most of this book is taken up by descriptions of trivial events and tedious demon politics. In general, however, it does provide a good insight into how this world is ruled, and you spend a short while reading through the pages as you familiarise yourself with Lilith's dynasty.
+		Ты достаешь из книжного шкафа книгу в твердом переплете и идешь к одному из удобных кресел в библиотеке. Открыв обложку и перелистывая страницы, ты обнаруживаешь, что большая часть книги занята описаниями тривиальных событий и нудных демонических политических интриг. Однако в целом она дает хорошее представление о том, как управляется этот мир, и ты проводишь некоторое время за чтением, знакомясь с династией Lilith.
 	</p>
 	<p>
-		You already knew that the demon queen Lilith was the reigning monarch of this world, but what you find interesting is that there is no record of her predecessor. In fact, from what you're reading, it sounds as though Lilith has ruled this world since the beginning of recorded history, and you can't help but wonder how she's managed to keep control for such a length of time.
+		Ты и так знал, что королева демонов Lilith является правящей монархиней этого мира, но интересным кажется то, что записей о её предшественнике просто нет. На самом деле, судя по прочитанному, кажется, будто Lilith правит этим миром с начала письменной истории, и ты невольно задаешься вопросом, как ей удавалось удерживать власть на протяжении такого долгого времени.
 	</p>
 	<p>
-		Your question is answered as you turn the next few pages. Instead of relying on her own immense power alone, Lilith has created a race of extremely powerful demons called 'lilin' who rule in her name. Seven of these lilin are described as being even more powerful than all the rest, and are referred to as the 'elder lilin'. These elder lilin are Lilith's natural-born daughters and are a result of Lilith choosing to impregnate herself. In order of seniority, these seven elder lilin are:
-		<br/><i>Lirecea, Lovienne, Lasielle, Lyssieth, Lunette, Lyxias, and Lisophia.</i>
+		Перелистывая страницы, ты находишь ответ на свой вопрос. Вместо того чтобы полагаться лишь на собственную безграничную мощь, Lilith создала расу невероятно сильных демонов — лилин, которые правят от её имени. Семь из этих лилин описываются как существа, превосходящие по силе всех остальных, и их называют «старшими лилин». Эти старшие лилин — рожденные естественным путем дочери Lilith, результат того, что она сама предпочла зачать их. В порядке старшинства эти семь старших лилин представлены так:
+		<br/><i>Lirecea, Lovienne, Lasielle, Lyssieth, Lunette, Lyxias и Lisophia.</i>
 	</p>
 	<p>
-		The rest of the lilin, of which there are hundreds, have been created in one of two ways. Many were corrupted from common races into lilin by Lilith herself, and as they were exceptional enough to draw the attention of the queen of demons herself, these lilin are regarded as being the highest-ranking of all, being lesser only to Lilith and the seven elders. The rest of the lilin were born in a natural manner from the coupling between Lilith, an elder lilin, or one of the already-existing lilin.
+		Остальные лилин, которых насчитываются сотни, были созданы одним из двух способов. Многих из них сама Lilith превратила из представителей обычных рас в лилин; поскольку они были достаточно исключительны, чтобы привлечь внимание самой королевы демонов, такие лилин считаются высшим сословием, уступая лишь Lilith и семи старшим. Остальные же лилин рождались естественным путем от союза между Lilith, старшей лилин или уже существующей лилин.
 	</p>
 	<p>
-		The final part of the introduction describes how Lilith and the lilin usually corrupt their partners into demons before sex, so that the resulting offspring will be pure demons. Half-demons are considered to be lower in social standing than pure demons, with half-demons being born of a lilin and human being regarded as particularly shameful.
-	</p>
-	<p>
-		Apparently, although many lilin end up giving birth to hundreds, if not thousands, of demons, it's incredibly rare for a lilin to publicly acknowledge any of her demonic children as her own. Even if they're the rare sort of demon who prefers the form of an incubus to that of a succubus, a lilin's recognised offspring are always called daughters, and a recognised daughter of a lilin is considered to be at the very peak of society. Recognised half-demons seem to be almost unheard of, with just a handful of mentions throughout the entire book.
-	</p>
-	<p style='text-align:center;'>
-		In the book's centre-fold, there's a table which shows how demonic breeding works:
+		В заключительной части введения описывается, как Lilith и лилин обычно оскверняют своих партнеров, превращая их в демонов перед сексом, чтобы рожденное потомство было чистокровными демонами. Полудемоны считаются ниже по социальному положению, чем чистокровные демоны, а полукровки, рожденные от союза лилин и человека, и вовсе считаются позором.
+	</p><p>
+Судя по всему, хотя многие лилин в итоге производят на свет сотни, если не тысячи демонов, случается крайне редко, чтобы лилин публично признавала кого-то из своих демонических отпрысков своими детьми. Даже если это редкий вид демонов, предпочитающий облик инкуба, а не суккуба, признанное потомство лилин всегда называют дочерями, а признанная дочь лилин считается верхушкой общества. Признанные полудемоны, кажется, почти не встречаются — во всей книге упоминается лишь горстка таких случаев.
+</p><p style='text-align:center;'>
+		На развороте книги расположена таблица, показывающая, как работает демоническое размножение:
 		<br/><br/>
 		<table style='margin: 0px auto;'>
 		<tr style='font-weight:bold; text-align:left;'>
-			<td>[style.boldFeminine(Mother)]/[style.boldMasculine(Father)]</td><td>Lilin</td><td>Demon</td><td>Half-demon</td><td>Human half-demon</td><td>Non-demon</td><td>Human</td><td>Imp</td>
+			<td>[style.boldFeminine(Мать)]/[style.boldMasculine(Отец)]</td><td>Лилин</td><td>Демон</td><td>Полудемон</td><td>Человеческий полудемон</td><td>Недемон</td><td>Человек</td><td>Бес</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Lilin</td><td>[style.boldtfGreater(Ln)]</td><td>[style.boldtfLesser(Dn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Лилин</td><td>[style.boldtfGreater(Ln)]</td><td>[style.boldtfLesser(Dn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Demon</td><td>[style.boldtfLesser(Dn)]</td><td>[style.boldtfLesser(Dn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Демон</td><td>[style.boldtfLesser(Dn)]</td><td>[style.boldtfLesser(Dn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Half-demon</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Полудемон</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Human half-demon</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Человеческий полудемон</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldtfPartial(Hhdn)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Non-demon</td><td>[style.boldtfMinor(Hdn)]</td</td><td>[style.boldtfMinor(Hdn)]</td</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldtfGeneric(Nd)]</td><td>[style.boldtfGeneric(Nd)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Недемон</td><td>[style.boldtfMinor(Hdn)]</td</td><td>[style.boldtfMinor(Hdn)]</td</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldtfGeneric(Nd)]</td><td>[style.boldtfGeneric(Nd)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Human</td><td>[style.boldtfPartial(Hhdn)]</td</td><td>[style.boldtfPartial(Hhdn)]</td</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldtfGeneric(Nd)]</td><td>[style.boldHuman(Hn)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Человек</td><td>[style.boldtfPartial(Hhdn)]</td</td><td>[style.boldtfPartial(Hhdn)]</td</td><td>[style.boldtfMinor(Hdn)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldtfGeneric(Nd)]</td><td>[style.boldHuman(Hn)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		<tr>
-			<td style='font-weight:bold;'>Imp</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td>
+			<td style='font-weight:bold;'>Бес</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td><td>[style.boldBad(Ip)]</td>
 		</tr>
 		</table>
 		<br/>
-		[style.boldtfGreater(Ln)] = Lilin&nbsp;&nbsp;&nbsp;&nbsp;
-		[style.boldtfLesser(Dn)] = Demon&nbsp;&nbsp;&nbsp;&nbsp;
-		[style.boldtfMinor(Hdn)] = Half-demon&nbsp;&nbsp;&nbsp;&nbsp;
-		[style.boldtfPartial(Hhdn)] = Human half-demon</br>
-		[style.boldtfGeneric(Nd)] = Non-demon (non-human)&nbsp;&nbsp;&nbsp;&nbsp;
-		[style.boldHuman(Hn)] = Human&nbsp;&nbsp;&nbsp;&nbsp;
-		[style.boldBad(Ip)] = Imp
+		[style.boldtfGreater(Ln)] = Лилин&nbsp;&nbsp;&nbsp;&nbsp;
+		[style.boldtfLesser(Dn)] = Демон&nbsp;&nbsp;&nbsp;&nbsp;
+		[style.boldtfMinor(Hdn)] = Полудемон&nbsp;&nbsp;&nbsp;&nbsp;
+		[style.boldtfPartial(Hhdn)] = Человеческий полудемон</br>
+		[style.boldtfGeneric(Nd)] = Недемон (не человек)&nbsp;&nbsp;&nbsp;&nbsp;
+		[style.boldHuman(Hn)] = Человек&nbsp;&nbsp;&nbsp;&nbsp;
+		[style.boldBad(Ip)] = Бес
 		<br/>
-		<br/>
-		#IF(game.isFeralContentEnabled())
-			<i>[style.colourFeral(Feral mothers)] always give birth to the tauric version of their subspecies, such as centaurs for feral horses and driders for feral spiders.</i>
+		<br/>		#IF(game.isFeralContentEnabled())
+			<i>[style.colourFeral(Дикие матери)] всегда рождают таврическую версию своего подвида: например, кентавров у диких лошадей или дридеров у диких пауков.</i>
 		#ENDIF
 	</p>
 	<p>
-		After this, the book goes on to describe human half-demons as being particularly despised in the demon's social hierarchy. It explains that this is due to the fact that they are the only demon-kind to produce imp offspring, and imps are considered to be the lowest of all (even below humans). While still of a higher social standing than any non-demon, human half-demons are typically treated very poorly by their 'purer' relatives, who will often insult them with terms such as 'imp-breeder', 'imp-factory', 'imp-fucker', or other such profanities.
+		Затем в книге описывается, что полудемоны-люди пользуются особым презрением в социальной иерархии демонов. Объясняется это тем, что они — единственный вид демонов, способный порождать бесов, а бесы считаются самыми низшими существами (даже ниже людей). И хотя их социальный статус всё же выше, чем у любого не-демона, к полудемонам-людям обычно относятся крайне плохо их «чистокровные» сородичи, которые часто оскорбляют их, называя «матерью бесов», «фабрикой бесов», «трахальщицей бесов» или другими подобными ругательствами.
 	</p>
 	<p>
-		Your eyes widen as you read that Lilaya is one of only two recorded human half-demons in history to be publicly recognised by their lilin mother (who, in Lilaya's case, is the elder lilin, Lyssieth).
+		Твои глаза расширяются, когда ты читаешь, что Lilaya — одна из всего двух зафиксированных в истории полудемонов-людей, чьё происхождение было публично признано их матерью-лилин (в случае Lilaya — старшей лилин, Lyssieth).
 		#IF(flags.hasFlag(FLAG_impFortressDemonBossEncountered))
-			 The other half-demon mentioned is Lilaya's sister, [siren.name].
+			Другой упомянутой полукровкой является сестра Lilaya, [siren.name].
 		#ELSE
-			 The other half-demon to be mentioned is someone by the name of [siren.name], who is another of Lyssieth's daughters.
+			Ещё одна упомянутая полукровка — некая [siren.name], ещё одна дочь Lyssieth.
 		#ENDIF
-		 After reading about this, you can understand why Lilaya is extremely sensitive about her human half-demon form.
+			Прочитав об этом, ты начинаешь понимать, почему Lilaya так болезненно воспринимает свою человеческую полудемоническую сущность.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOMINION_HISTORY"><![CDATA[
 	<p>
-		As you slide the history book out from the bookshelf and flip through the pages, you see that the content is written in a very simplistic manner, and most of the pages are taken up by large illustrations. Looking at the front cover again, you see that the title is 'A horse-morph's guide to Dominion's history'. Tutting at the author's apparent assumption about the intelligence of horse-morphs, you nevertheless have a quick read through the book's pages.
+		Когда ты вытягиваешь книгу по истории с полки и перелистываешь страницы, ты замечаешь, что текст написан крайне упрощенно, а большую часть страниц занимают крупные иллюстрации. Снова взглянув на обложку, ты видишь название: «Путеводитель по истории Dominion для конь-морфов». Слегка цокая языком из-за очевидного пренебрежения автора к интеллекту конь-морфов, ты всё же быстро пробегаешь глазами страницы.
 	</p>
 	<p>
-		There isn't really much useful information inside, and you quickly finish the book from cover to cover. There's an interesting passage about the construction of Dominion by Lilith and the demons many centuries ago, but it doesn't really go into any detail.
+		Полезной информации внутри почти нет, и ты быстро прочитываешь книгу от корки до корки. Там есть любопытный отрывок о создании Dominion лилин и демонами много веков назад, но он не вдается в подробности.
 	</p>
 	<p>
-		Apart from that, the only other part of the book that piques your interest is a small section justifying the practice of slavery as a necessary evil. The passage explains how demons, not including half-demons, are the only race which are almost never seen to be enslaved. Apparently, this is due to the fact that a demonic slave being owned by a non-demon is considered completely unacceptable in Dominion's society, and requires a very hard-to-obtain license. It also mentions that Enforcers are very hesitant to sign off on any demon enslavement order, as for all they know, the demon in question could turn out to be the favourite offspring of a lilin, who would be sure to bring their wrath down upon them...
+		Помимо этого, твой интерес вызывает лишь небольшой раздел, оправдывающий рабство как «необходимое зло». В тексте объясняется, что демоны (за исключением полудемонов) — это единственная раса, которую почти никогда не берут в рабство. Судя по всему, это связано с тем, что владение демоном-рабом, не являющимся демоном, считается в обществе Dominion совершенно неприемлемым и требует получения крайне редкой лицензии. Также упоминается, что Enforcer неохотно подписывают любые приказы об обращении демонов в рабство, ведь, кто знает, вдруг этот демон окажется любимым отпрыском какой-нибудь лилин, которая непременно обрушит на них свой гнев...
 	</p>
 	<p>
-		Other than that snippet of trivia, the book doesn't contain anything useful.
+		Если не считать этой любопытной справки, книга не содержит ничего полезного.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="PREGNANCY_INFO"><![CDATA[
 	<p>
-		You slide the small paperback book out from the shelf, and, turning it over in your [pc.hands], you take a look at the front cover. On it, the title 'Knocked up' is displayed in bold pink lettering, and beneath that, there's a picture of a heavily-pregnant rabbit-girl cradling her swollen belly. A little speech-bubble is drawn coming from her mouth, and in it, you read the words 'All you need to know about being a parent!'.
+		Ты вытягиваешь с полки маленькую книгу в мягкой обложке и, вертя её в [pc.hands], рассматриваешь обложку. На ней жирным розовым шрифтом красуется название «Залетевшая», а под ним — изображение очень беременной крольчихи, нежно прижимающей к себе раздувшийся живот. Из её рта выходит маленькое облачко с текстом: «Всё, что нужно знать о родительстве!».
 	</p>
 	<p>
-		Opening its pages, you find that the information contained within the book is laid out in a very neat and easy-to-read format, and it only takes you a few minutes to read through the entire thing. One of the most striking facts is that in this world, the full cycle of pregnancy only lasts for a few weeks. What's more, once the mother is ready to give birth, she's able to stay in that state indefinitely, until such time as she feels comfortable giving birth.
+		Открыв книгу, ты замечаешь, что вся информация подана в очень аккуратном и легко читаемом формате, так что на всё про всё уходит всего пара минут. Один из самых поразительных фактов заключается в том, что в этом мире полный цикл беременности длится всего несколько недель. Более того, как только мать готова к родам, она может оставаться в этом состоянии неопределенно долго — до тех пор, пока сама не решит, что пора рожать.
 	</p>
 	<p>
-		The second alarming fact contained within these pages is related to the development of children. It only takes a few minutes for newborns to develop and mature into adults, and they will inherit all of the common knowledge held by their parents. This doesn't include specific memories, so for example, if a child's mother knows how to read and write, they will too, but they won't have the memory of their mother learning this information.
+		Второй тревожный факт, описанный на этих страницах, касается развития детей. Новорожденным требуется всего несколько минут, чтобы вырасти и превратиться во взрослых, при этом они наследуют все общие знания своих родителей. Это не касается конкретных воспоминаний: например, если мать умеет читать и писать, то и ребенок будет это уметь, но у него не будет памяти о том, как мать училась этому навыку.
 	</p>
 	<p>
-		After reaching full maturity within a matter of hours, the vast majority of children will immediately leave their parents in order to strike out for themselves and become fully independent. Despite this almost-immediate separation, a parent will always share special maternal or paternal bonds with their children, and, whether due to the arcane or some natural intuition, a parent and child, as well as siblings, will always recognise each other at first sight.
+		Достигнув полной зрелости всего за несколько часов, подавляющее большинство детей немедленно покидает родителей, чтобы начать самостоятельную жизнь и стать полностью независимыми. Несмотря на столь стремительное расставание, между родителем и ребенком всегда сохраняется особая материнская или отцовская связь, и — будь то благодаря аркане или природной интуиции — родитель, ребенок, а также братья и сестры всегда узнают друг друга с первого взгляда.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FERAL_HISTORY"><![CDATA[
 	<p>
-		The title, 'The History of Ferals', that's printed down the spine of a blue, hardback book catches your attention, and so you slide it off the shelf and open it.
+		Название «История диких», напечатанное на корешке синей книги в твердом переплете, привлекает твое внимание, и ты снимаешь ее с полки, чтобы открыть.
+	</p>
+	<p>		Бегло просматривая страницы, ты замечаешь, что первая глава посвящена истории животных и их правам в пределах Владений Lilith. В книге объясняется, как много десятилетий назад было доведено до совершенства заклинание, позволяющее реплицировать органическую материю. Благодаря возможности клонировать мясо животных, отпала необходимость в их забое или содержании огромных стад, поэтому сегодня даже на самых крупных фермах держат всего дюжину голов. Движимые эмпатией, которую зверолюды испытывают к существам, чьи черты они разделяют, люди требовали всё больше прав для этих животных, и теперь те пользуются юридической защитой, почти равной правам граждан Владений. Звероложство всегда вызывало неодобрение, но с расширением прав животных оно превратилось в серьезное преступление.
 	</p>
 	<p>
-		Skimming through the pages, you see that the first chapter covers the background of animals and animal rights within Lilith's Realm. The book explains how a spell that allows for organic matter replication was perfected many decades ago. With the ability to clone an animal's meat, there was no need to slaughter them or keep them in vast herds, and so today even the largest farms only keep a dozen or so animals. Driven by the empathy which animal-morphs feel for the creatures whose features they share, more and more rights were demanded for these animals, and now they enjoy legal protections which are almost of the same level as citizens of the Realm. Bestiality was always frowned upon, but with the expansion of animals' rights, it became a serious crime.
+		Следующая глава повествует о том, как возникли дикие трансформации, произошедшие летом 2005 года. Поскольку звериная страсть была под запретом, небольшой процент населения, которого привлекали животные, долгие годы искал способ превратить себя в звериную форму, чтобы удовлетворить свои плотские желания. Лилин в пустынном городе Тинис, который уже нарушил общественные нормы, отказавшись от женского облика и превратив себя в мальчика-шакала, был тем, кто открыл секрет этой трансформации. Этот лилин по имени Анубис обнаружил, что мощное заклинание, способствующее дикой трансформации, может быть заключено только в объекты значительной массы. Очевидным выбором стали валуны, и тысячи огромных глыб камня, зачарованных Анубисом, стали известны как «звериные камни». Контакт со звериным камнем в течение десяти минут превращал человека в дикую форму животного, на которое он был больше всего похож, на четыре часа.
 	</p>
 	<p>
-		The next chapter describes how feral transformations came to be, which took place in the summer of 2005. With bestiality outlawed, the small percentage of the population who were attracted to animals spent many years seeking a way to transform themselves into bestial forms in order to satisfy their carnal desires. A lilin in the desert city of Thinis, who'd already broken societal norms by rejecting a feminine form and transforming himself into a jackal-boy, was the one to discover the secret behind this transformation. Named Anubis, this lilin found out that the powerful enchantment which facilitated a feral transformation could only be bound into objects of significant mass. Boulders were the obvious choice, and the thousands of huge lumps of rock which were enchanted by Anubis came to be known as 'beast stones'. Contact with a beast stone for ten minutes transformed an individual into the feral form of the animal they most closely resembled for four hours.
-	</p>
-	<p>
-		The next chapter describes what came next. Encouraged by a lilin, and eager to experience the wild, primal lust that accompanied the feral transformation, citizens all throughout the Realm started experimenting with beast stones. Within weeks, they stopped keeping their activities behind closed doors, and it became a common sight in every town and city in the Realm to see ferals roaming the streets in broad daylight. Incidents of innocent citizens being 
+		Следующая глава описывает то, что последовало за этим. Воодушевленные лилином и жаждущие испытать дикую, первобытную Похоть, сопровождающую дикую трансформацию, жители всего Королевства начали экспериментировать со звериными камнями. Спустя всего несколько недель они перестали скрывать свои занятия, и в каждом городе и поселении Королевства стало обычным делом видеть диких существ, бродящих по улицам средь бела дня. Случаи, когда ни в чем не повинных граждан
 		#IF(game.isNonConEnabled())
-			 exposed to feral sex, attacked by ferals, and even raped by them,
+			вовлекали в звериный секс, нападали на них дикие или даже насиловали их,
 		#ELSE
-			 exposed to feral sex and attacked by ferals
+			вовлекали в звериный секс и нападали на них дикие
 		#ENDIF
-		 started to increase, but Lilith and the elder lilin chose not to act. After several months, during which time ferals had gained a reputation as being little better than lust-crazed beasts, Anubis managed to refine the enchantment and he created dozens of pebble-sized beast stones. Instead of touching them to activate their power, these small stones needed to be inserted inside someone to trigger the feral transformation. They were far more potent than the larger beast stones, as for each minute these smaller stones spent inside someone's body, they gained a year of a feral form.
+		 начали расти, но Lilith и старейшая лилин решили не вмешиваться. Спустя несколько месяцев, когда дикари уже прослыли существами, мало отличающимися от обезумевших от Похоти зверей, Анубису удалось усовершенствовать чары, и он создал десятки камней-зверей размером с гальку. Чтобы активировать их силу, их нужно было не просто касаться, а вводить внутрь тела, чтобы запустить трансформацию. Они были куда мощнее крупных камней-зверей: за каждую минуту, проведенную внутри тела, носитель обретал год жизни в облике дикаря.
 	</p>
 	<p>
-		The penultimate chapter describes the downfall of feral transformations. One of Lisophia's recognised daughters was an outspoken critic of ferals, and one day as she was walking to her mother's palace, she was attacked by Anubis and a pack of feral jackals. Having by now perfected the feral enchantment, Anubis forced his victim to kiss what he called a 'beast gem', and despite being a demon, she was permanently transformed into a feral jackal bitch.
+		Предпоследняя глава описывает закат эпохи дикарей. Одна из признанных дочерей Lisophia была ярой противницей дикарей, и однажды, когда она шла к дворцу матери, на неё напали Анубис и стая диких шакалов. К тому времени Анубис уже довел чары дикости до совершенства: он заставил свою жертву поцеловать то, что он называл «звериным самоцветом», и, несмотря на то что она была демоном, она навсегда превратилась в дикую суку-шакала.
 		#IF(game.isNonConEnabled())
-			 Right there in public, and to the shock and horror of bystanders, she was then raped by Anubis and his pack.
+			 Прямо на глазах у всех, к шоку и ужасу случайных прохожих, Анубис и его стая изнасиловали её.
 		#ENDIF
-		 This proved to be the straw that broke the camel's back, for as word of what was happening reached Lisophia's palace, the elder demon teleported to the aid of her daughter. Although normally choosing to remain in the form of a dragon-girl, Lisophia took on her true, demonic appearance, and in a furious rage she enslaved Anubis and every feral she could find.
+		 Это стало последней каплей: когда вести о случившемся достигли дворца Lisophia, старейшая демон телепортировалась на помощь своей дочери. Хотя обычно Lisophia предпочитала оставаться в облике девочки-дракона, в этот раз она приняла свой истинный демонический облик и в яростном гневе поработила Анубиса и каждого дикаря, которого смогла найти.
 	</p>
 	<p>
-		The final chapter covers what happened after this incident. Word of Lisophia's actions quickly spread throughout Thinis, and public opinion, which was already turning against ferals, fully swung against Anubis and his enchantments. Those who loved their feral forms fled to Dominion and elsewhere in the Realm, but they found little acceptance there. All throughout the Realm, the news of Anubis's actions and Lisophia's vengeance had spread, and just as quickly as the craze had started, feral transformations completely vanished. They were never explicitly banned, but these days the only people still willing to experiment with feral forms are outcasts, degenerates, and those seeking the rush of breaking a taboo.
+		В последней главе рассказывается о том, что произошло после этого инцидента. Весть о поступках Лисофии быстро разнеслась по всему Тинису, и общественное мнение, и без того настроенное против зверолюдей, окончательно обернулось против Анубиса и его чар. Те, кто обожал свои звериные формы, бежали в Dominion и другие уголки Королевства, но там их приняли с трудом. По всему Королевству разнеслась весть о деяниях Анубиса и мести Лисофии, и так же стремительно, как началось это безумие, превращения в зверолюдей почти сошли на нет. Их не запрещали официально, но в наши дни единственные, кто всё ещё готов экспериментировать с дикими формами — это изгои, дегенераты и те, кто жаждет острых ощущений от нарушения табу.
 	</p>
 	<p>
-		In the epilogue, the book says that Anubis was never seen again, but there's a rumour that those who displease Lisophia are given to her enslaved jackal and permanently transformed into one of his feral bitches.
+		В эпилоге говорится, что Анубиса больше никто не видел, но ходит слух, что тех, кто разгневал Лисофию, отдают её рабу-шакалу, и они навсегда превращаются в одну из его звериных сук.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DOMINION_MAP"><![CDATA[
 	<p>
-		Hanging on one of the walls of the library, a huge map of Dominion is displayed in a wooden frame. Using your phone, you take a picture of it for future reference.
+		На одной из стен библиотеки в деревянной раме висит огромная карта Dominion. Ты достаёшь телефон и фотографируешь её, чтобы сохранить на будущее.
 	</p>
 	<p style='text-align:center;'>
-		[style.italicsExcellent(Dominion Map fully revealed!)]
+		[style.italicsExcellent(Карта Dominion полностью открыта!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SLAVERY_HISTORY"><![CDATA[
 	<p>
-		Following Rose's instructions, you [pc.walk] down one of the library's many aisles and soon manage to find the section which contains books about slavery. Although the vast majority of these tomes look to be dry, legal texts, there's a hardback book titled 'People as Property' which appears to be aimed at the general public. Sliding this book out from its resting place, you open it up and briefly skim over its pages to see if you can find any interesting information.
+		Следуя указаниям Роуз, ты [pc.walk] по одному из многочисленных проходов библиотеки и вскоре находишь секцию с книгами о рабстве. Хотя подавляющее большинство этих томов выглядит как сухие юридические тексты, тебе попадается книга в твердом переплете под названием «Люди как собственность», явно предназначенная для широкой публики. Вытянув книгу с полки, ты открываешь её и бегло просматриваешь страницы в поисках чего-нибудь интересного.
 	</p>
 	<p>
-		The first half of the book is a rambling treatise seeking to justify slavery by positing that it's a natural part of societal hierarchies. After making the claim that slavery is morally justifiable from a philosophical point of view, the author of this book then attempts to champion slavery from a more practical point of view, arguing that the undesirable, criminal, and even unproductive elements of society are better off being put to use as slaves rather than being supported by the hard-working public.
+		Первая половина книги представляет собой путаный трактат, пытающийся оправдать рабство тем, что оно является естественной частью социальной иерархии. Заявив, что с философской точки зрения рабство морально оправданно, автор затем переходит к практическим доводам, утверждая, что нежелательные, преступные и даже непродуктивные элементы общества принесут больше пользы, если их использовать как рабов, вместо того чтобы содержать их за счет трудолюбивого народа.
 	</p>
 	<p>
-		After leafing through this lengthy opening to the book, you find that the rest of the pages are dedicated to the history and legal status of slaves in Lilith's Realm. Apparently, slavery has always been legal, and although there have been a couple of attempts to petition Lilith for a change in the law, these efforts ended with the petitioners becoming slaves themselves, which apparently did quite an excellent job of dissuading any further dissent over the matter. Reading on, you're somewhat surprised to read that only Lilith and the elder lilin are exempt from ever being enslaved, meaning that it's technically legal for even lilin to become slaves, although of course in practice this has never happened.
+		Пролистав это длинное вступление, ты обнаруживаешь, что остальные страницы посвящены истории и правовому статусу рабов в Владениях Lilith. Судя по всему, рабство было законным всегда, и хотя предпринимались попытки просить Lilith изменить закон, все эти усилия заканчивались тем, что просители сами становились рабами — что, очевидно, отлично отбивало желание и дальше сеять инакомыслие по этому вопросу. Читая дальше, ты с некоторым удивлением узнаешь, что только Lilith и старшие лилин освобождены от возможности попасть в рабство. Это означает, что технически даже лилин могут стать рабами, хотя на практике такого еще никогда не случалось.
 	</p>
 	<p>
-		The final part of the book deals with the somewhat prickly issue of demons being enslaved. Although it's perfectly legal, most non-demon slave owners would never choose to purchase a demon slave, due to the risk of potentially angering the demon's siblings, parents, or even the lilin at the head of their lineage. Other demons don't have the same reluctance to own demonic slaves, as it's widely considered to be socially acceptable for a demon to own another demon.
+		Заключительная часть книги посвящена довольно щекотливому вопросу — рабству демонов. Хотя это абсолютно законно, большинство владельцев рабов, не являющихся демонами, никогда не рискнули бы купить демона из-за страха разгневать его братьев, сестер, родителей или даже лилин, стоящую во главе их рода. У других демонов нет подобного опасения: в их обществе владение другим демоном считается вполне приемлемым и социально одобряемым.
 	</p>
 	<p>
-		Finally, taking up the last two pages, there's an abstract, double-spread map of Lilith's Realm. Although it's completely useless from a navigational perspective, it does an excellent job of showing the density of slaves in each part of the Realm. The highest concentration of slaves is, unsurprisingly, in Dominion itself, with the southern desert city of Thinis taking a relatively close second place. The jungle city of Itza'aak up to the north is also a hotbed of slavery, and finally there's a not-insignificant amount of slaves in the underwater city of Lyonesse. Conversely, the town of Elis out in the Foloi Fields, along with the vast majority of the Realm's countryside, is almost completely absent of slaves.
+		Наконец, на двух последних страницах, красуется абстрактная разворотная карта Царства Lilith. И хотя с точки зрения навигации она совершенно бесполезна, она отлично передает плотность населения рабов в каждой части Царства. Самая высокая концентрация рабов, что неудивительно, находится в самом Dominion, а южный пустынный город Thinis идет следом. Джунгли-сити Itza'aak на севере также является очагом рабовладения, и, наконец, немалое количество рабов обитает в подводном городе Lyonesse. Напротив, городок Elis в полях Foloi, как и подавляющее большинство сельских районов Царства, почти полностью лишен рабов.
 	</p>
 	<p>
-		With nothing more to be gained from continuing to read this book, you return it to its place on the shelf.
+		Понимая, что из этой книги больше нечего выжать, ты возвращаешь её на полку.
 		#IF(flags.hasFlag(FLAG_readBookSlavery))
-			 Looking across to the book titled 'Lilaya's Dirty Secrets', you wonder whether to
+			 Посмотрев на книгу под названием «Грязные секреты Lilaya», ты раздумываешь, стоит ли
 			#IF(flags.hasFlag(FLAG_acexp_dungeon_found))
-				 pull on it and go down to Lilaya's dungeon, or instead head elsewhere...
+				 потянуть за неё и спуститься в подземелье Lilaya, или же отправиться куда-нибудь ещё...
 			#ELSE
-				 take the time to have a look at it...
+				 потратить время на то, чтобы взглянуть на неё...
 			#ENDIF
 		#ELSE
-			 As you turn to [pc.step] back into the aisle, the title of a nearby book suddenly grabs your attention, and you find yourself staring in surprise at the words 'Lilaya's Dirty Secrets' embossed in silver lettering on the tome's spine. From the slight wear on the wooden shelf in front of this book, it looks to have been regularly taken out in the past, but a thin layer of dust on its top hints at the fact that it hasn't been read for some time. After quickly glancing up and down the aisle to make sure that you're not being watched, you wonder whether or not to take this book out and see what secrets it contains...
+			 Когда ты [pc.step] поворачиваешься обратно к проходу, название одной из стоящих рядом книг внезапно приковывает твой взгляд. Ты замираешь в изумлении, разглядывая серебряные буквы на корешке тома: «Грязные секреты Lilaya». Судя по легким потертостям на деревянной полке перед книгой, ее часто брали раньше, но тонкий слой пыли на макушке намекает на то, что ее давно не открывали. Быстро оглядевшись по сторонам, чтобы убедиться, что за тобой никто не наблюдает, ты начинаешь раздумывать: стоит ли вытащить эту книгу и узнать, какие тайны она в себе таит...
 		#ENDIF
 	</p>
 	]]>
@@ -230,25 +226,25 @@
 	
     <htmlContent tag="DUNGEON_TRIGGER"><![CDATA[
    	<p>
-        Quickly convincing yourself that your demonic [lilaya.relation(pc)] wouldn't object to it, you decide to take a look at the tome which promises to contain her dirty secrets. Reaching up to take hold of the top of the tome titled 'Lilaya's Dirty Secrets', you pull it forwards to draw it out of the shelf. As you do this, you're surprised to discover that the book doesn't slide out of its position as you'd expected, but instead tilts forwards, revealing that it's fixed in place and somehow hinged on the bottom. As the tome moves, a rumbling, grinding sound of stone sliding across stone fills the aisle, and you watch in wonder as the bookcase swings open to reveal a secret, spiral staircase that leads down into darkness.
+        Быстро убедив себя в том, что твоя демоническая [lilaya.relation(pc)] не будет против, ты решаешь взглянуть на фолиант, обещающий раскрыть ее грязные секреты. Протянув руку к верхней части тома под названием «Грязные секреты Lilaya», ты тянешь его на себя, чтобы вытащить с полки. К своему удивлению, ты замечаешь, что книга не просто скользит вперед, как ты ожидал, а наклоняется, обнаруживая, что она закреплена и каким-то образом держится на петлях снизу. Как только фолиант приходит в движение, проход наполняется рокочущим скрежетом камня о камень, и ты с изумлением наблюдаешь, как книжный шкаф распахивается, открывая секретную винтовую лестницу, уходящую вниз, в темноту.
 	</p>
    	<p>
-		Either due to the noise of this passage opening, or more likely from a hidden link to the mansion's bell system, your inadvertent discovery of this secret passage summons Rose, who you hear calling out as she rushes towards your position from the library's entrance, [rose.speech(Mistress! Have you finally decided to use the dungeon again?! I'd been hoping- Oh! It's <i><b>you</b></i>?!)]
+		Либо из-за шума открывающегося прохода, либо, что более вероятно, из-за скрытой связи с системой колокольчиков особняка, твое случайное открытие этого тайного хода привлекает внимание Роуз. Ты слышишь, как она спешит к тебе со стороны входа в библиотеку, выкрикивая: [rose.speech(Госпожа! Вы наконец решили снова воспользоваться подземельем?! Я так надеялась... О! Это же <i><b>ты</b></i>?!)]
 	</p>
    	<p>
-        As she comes a skidding to a halt in front of you, you can tell both from her words and the look of stern disapproval on her face that the cat-girl maid is not at all amused at finding you here instead of Lilaya. Quickly regaining her composure, she curtsies before you and asks, [rose.speech(How may I help you this time, [pc.name]?)]
+        Когда она, едва не поскользнувшись, замирает перед тобой, по её словам и суровому, неодобрительному взгляду становится ясно: кошкодевочка-горничная совсем не в восторге от того, что вместо Lilaya здесь обнаружился ты. Быстро взяв себя в руки, она кланяется тебе и спрашивает: [rose.speech(Чем я могу помочь вам на этот раз, [pc.name]?)]
 	</p>
    	<p>
-        Motioning towards the secret passageway, you tell Rose that you accidentally discovered it, but now that it's been opened, you're wondering what's down there. A faint blush creeps up on Rose's cheeks as she answers, [rose.speech(It leads down to... Well, I suppose you might call it a dungeon, but it's really more of a <i>recreational facility</i>... It's no longer in use, although of course I still keep it clean. Now that you've found it, I don't think that Mistress Lilaya wouldn't mind if you wanted to make use of it. She seems to have forgotten that it even exists...)]
+        Указав на тайный проход, ты объясняешь Роуз, что наткнулся на него случайно, но раз уж он открыт, тебе любопытно, что там внизу. На щеках Роуз проступает легкий румянец, когда она отвечает: [rose.speech(Он ведет вниз к... Ну, можно сказать, к подземелью, но на самом деле это скорее <i>место для отдыха</i>... Оно уже не используется, хотя я, конечно, по-прежнему поддерживаю там чистоту. Раз уж ты его нашел, думаю, госпожа Lilaya не будет против, если ты захочешь им воспользоваться. Кажется, она даже забыла о его существовании...)]
 	</p>
    	<p>
-   	    With that, Rose takes a single step forwards, which causes a series of arcane torches to burst into life. With the spiral staircase now illuminated by these flickering arcane flames, the cat-girl maid turns to face you, and after flashing you a somewhat-sinister smirk, she teases, [rose.speech(~Mmm!~ This does bring back memories... If you'd like me to give you a good time while you're down there, then use the bell-pull in the bedroom to call me... Just make sure that you're comfortable with the equipment you find in there being used on you first, ok?)]
+   	    С этими словами Роуз делает шаг вперед, и в тот же миг вспыхивает целая серия арканных факелов. Теперь, когда винтовую лестницу освещают эти мерцающие магические огни, кошкодевушка-горничная поворачивается к тебе и, одарив слегка зловещей ухмылкой, дразнит: [rose.speech(~Ммм!~ Это пробуждает воспоминания... Если захочешь, чтобы я составила тебе компанию внизу, просто дерни за колокольчик в спальне... Только сначала убедись, что ты не против того, чтобы я использовала на тебе всё снаряжение, которое там найдешь, ладно?)]
 	</p>
    	<p>
 	    #IF(pc.hasFetish(FETISH_MASOCHIST) || pc.hasFetish(FETISH_SUBMISSIVE) || pc.hasFetish(FETISH_BONDAGE_VICTIM))
-	        Having a pretty good idea what this dominant cat-girl has in mind, you can't help but let out a horny whine and shiver in anticipation. Smirking at your reaction, Rose turns her back on you, and as she struts off down the aisle, she calls out behind her, [rose.speech(I look forward to punishing you, [pc.name]...)]
+	        Довольно ясно понимая, что задумала эта доминантная кошкодевушка, ты невольно издаешь возбужденный стон и вздрагиваешь в предвкушении. Ухмыльнувшись твоей реакции, Роуз поворачивается к тебе спиной и, вальяжно удаляясь по проходу, бросает через плечо: [rose.speech(С нетерпением жду возможности наказать тебя, [pc.name]...)]
 	    #ELSE
-	        Not entirely sure or comfortable with what this dominant cat-girl has in mind, you give her a non-committal response and turn your attention back to the secret passage. Seeing that you have no further need of her, Rose turns her back on you, and as she struts off down the aisle, she calls out behind her, [rose.speech(Please enjoy yourself down there, [pc.name]...)]
+	        Не до конца понимая или не вполне доверяя замыслам этой доминантной кошкодевушки, ты отвечаешь ей неопределенно и снова переключаешь внимание на секретный проход. Видя, что она тебе больше не нужна, Роуз поворачивается к тебе спиной и, вальяжно удаляясь по проходу, бросает через плечо: [rose.speech(Наслаждайся там, [pc.name]...)]
 	    #ENDIF
 	</p>
 	]]>
@@ -256,10 +252,10 @@
 	
     <htmlContent tag="DUNGEON_TRIGGER_BACK"><![CDATA[
    	<p>
-        Deciding against heading down the spiral staircase and exploring Lilaya's dungeon, you take a [pc.step] back. By some arcane enchantment, the secret passageway senses that you're not making use of it, and after the arcane torches all suddenly extinguish themselves, the bookcase slides back into position, leaving no external hint of what's behind it.
+        Решив не спускаться по винтовой лестнице, чтобы не исследовать подземелье Lilaya, ты делаешь [pc.step]. Благодаря какому-то арканному заклинанию, секретный проход словно чувствует, что ты им не пользуешься: арканные факелы внезапно гаснут, и книжный шкаф возвращается на свое место, не оставляя снаружи ни малейшего намека на то, что скрывается за ним.
 	</p>
 	<p>
-		Looking up and down the aisle, you wonder where to go to next...
+		Оглядывая стеллажи по сторонам, ты раздумываешь, куда отправиться дальше...
 	</p>
 	]]>
     </htmlContent>
@@ -267,11 +263,11 @@
     <htmlContent tag="DUNGEON_OPENS"><![CDATA[
    	<p>
         #IF(!flags.hasFlag(FLAG_acexp_dungeon_explored))
-			Having been granted permission to do so by Rose, you decide that now's the time to head down and explore Lilaya's dungeon.
+			Получив разрешение от Rose, ты решаешь, что сейчас самое время спуститься и исследовать подземелье Lilaya.
 		#ELSE
-			Deciding that you'd like to head down into Lilaya's dungeon, you [pc.step] over to the bookcase which conceals the secret passage.
+			Решив, что хочешь спуститься в подземелье Lilaya, ты [pc.step] к книжному шкафу, скрывающему секретный проход.
 		#ENDIF
-         Reaching up to take hold of the top of the tome titled 'Lilaya's Dirty Secrets', you pull it forwards, finding once again that it's fixed in place and hinged on the bottom, allowing it to tilt but not be drawn out from its resting place. As the tome moves, a rumbling sound of grinding stone fills the aisle, and you watch as the bookcase swings open to reveal a secret, spiral staircase which leads down into darkness. As you begin to move forwards, the wall-mounted arcane torches burst into flame, casting the staircase in a dancing, flickering light.
+         Протянув руку к верхнему краю фолианта под названием «Грязные секреты Lilaya», ты тянешь его на себя, но снова обнаруживаешь, что он закреплен на петлях снизу — его можно наклонить, но нельзя вытащить из гнезда. Как только книга приходит в движение, проход наполняется грохотом скрежещущего камня, и ты наблюдаешь, как книжный шкаф отъезжает в сторону, открывая секретную винтовую лестницу, уходящую во тьму. Стоит тебе сделать шаг вперед, как закрепленные на стенах арканные факелы вспыхивают @@T1@@, заливая лестницу пляшущим, мерцающим светом.
 	</p>
 	]]>
     </htmlContent>

@@ -6,26 +6,26 @@
 	<htmlContent tag="START_SHOWER_SEX_AS_DOM"><![CDATA[
 	#IF([#SPECIAL_PARSE_0]==1)
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against [npc.name] and tell [npc.herHim] that now's the perfect time for you to fuck [npc.herHim].
+			Не желая пока заканчивать душ, ты прижимаешься своим мокрым телом к [npc.name] и говоришь [npc.herHim], что сейчас самое подходящее время, чтобы трахнуть [npc.herHim].
 		</p>
 		<p>
 			#IF(npc.isAttractedTo(pc))
-				Clearly feeling just as horny as you are, the [npc.race] lets out [npc.a_moan+] and leans in to plant a submissive kiss on your [pc.lips+]. With the shower's warm water cascading over your naked bodies, the two of you embrace one another and prepare to indulge in your lust...
+				Очевидно, что [npc.race] чувствует такую же похоть, как и ты, поэтому она издает [npc.a_moan+] и подается вперед, чтобы запечатлеть покорный поцелуй на твоих [pc.lips+]. Пока теплые струи душа стекают по вашим обнаженным телам, вы обнимаете друг друга, готовясь отдаться своей похоти...
 			#ELSE
-				Although [npc.sheIs] not attracted to you, the [npc.race] doesn't really have a choice in the matter, and lets out an anguished sigh as you lean in to plant a kiss on [npc.her] [npc.lips+]. With the shower's warm water cascading over your naked bodies, you embrace your slave and prepare to indulge in your lust...
+				Хотя [npc.sheIs] и не испытывает к тебе влечения, у [npc.race] особо нет выбора, и она издает мучительный вздох, когда ты наклоняешься, чтобы поцеловать [npc.her] [npc.lips+]. Пока теплые струи душа стекают по вашим обнаженным телам, ты обнимаешь свою рабыню, готовясь отдаться своей похоти...
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against your slaves and tell them that now's the perfect time for you to fuck them.
+			Не желая пока заканчивать душ, ты прижимаешься своим мокрым телом к своим рабыням и говоришь им, что сейчас самое подходящее время, чтобы трахнуть их.
 		</p>
 		<p>
 			#IF(npc.isAttractedTo(pc) && npc2.isAttractedTo(pc) && ([#SPECIAL_PARSE_0]==2 || npc3.isAttractedTo(pc)) && ([#SPECIAL_PARSE_0]<4 || npc4.isAttractedTo(pc)))
-				Clearly feeling just as horny as you are, your slaves let out a chorus of excited moans, before all leaning in to plant a series of submissive kisses on your [pc.lips+] and [pc.breasts+]. With the shower's warm water cascading over your naked bodies, you all slide up against one another and prepare to indulge in your lust...
+				Твои рабыни явно чувствуют такую же похоть, как и ты: они издают хор возбужденных стонов, после чего все вместе подаются вперед, осыпая твои [pc.lips+] и [pc.breasts+] чередой покорных поцелуев. Пока теплые струи душа стекают по вашим обнаженным телам, вы все прижимаетесь друг к другу, готовясь отдаться своей похоти...
 			#ELSEIF(!npc.isAttractedTo(pc) && !npc2.isAttractedTo(pc) && ([#SPECIAL_PARSE_0]==2 || !npc3.isAttractedTo(pc)) && ([#SPECIAL_PARSE_0]<4 || !npc4.isAttractedTo(pc)))
-				Although none of your slaves are attracted to you, they don't really have a choice in the matter, and they let out a series of anguished sighs as you lean in to plant a kiss on each of their lips. With the shower's warm water cascading over your naked bodies, you embrace your reluctant slaves and prepare to indulge in your lust...
+				Хотя твои рабыни и не испытывают к тебе влечения, у них особо нет выбора. Они издают череду мучительных вздохов, когда ты наклоняешься, чтобы запечатлеть поцелуй на каждой из их губ. Пока теплые струи душа стекают по вашим обнаженным телам, ты обнимаешь своих неохотных рабынь и готовишься поддаться своей похоти...
 			#ELSE
-				Although you can sense some hesitation, your slaves don't really have a choice in the matter, and you remind them of their place by leaning in to plant a dominant kiss on each of their lips. With the shower's warm water cascading over your naked bodies, you embrace your slaves and prepare to indulge in your lust...
+				Несмотря на ощутимое колебание, у твоих рабынь нет выбора, и ты напоминаешь им об их месте, властно целуя каждую из них. Пока теплые струи душа стекают по вашим обнаженным телам, ты обнимаешь своих рабынь и готовишься поддаться своей похоти...
 			#ENDIF
 		</p>
 	#ENDIF
@@ -35,24 +35,24 @@
 	<htmlContent tag="START_SHOWER_SEX_AS_SUB"><![CDATA[
 	#IF([#SPECIAL_PARSE_0]==1)
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against [npc.name] and tell [npc.herHim] that now's the perfect time for [npc.herHim] to do whatever [npc.she] wants with you.
+			Не желая пока заканчивать душ, ты прижимаешься своим влажным телом к [npc.name] и говоришь [npc.herHim], что сейчас идеальный момент для того, чтобы [npc.herHim] сделала с тобой всё, что пожелает [npc.she].
 		</p>
 		<p>
-			Clearly feeling just as horny as you are, the [npc.race] lets out [npc.a_moan+] and leans in to plant a dominant kiss on your [pc.lips+]. With the shower's warm water cascading over your naked bodies, the two of you embrace one another and prepare to indulge in your lust...
+			Очевидно, что [npc.race] хочет тебя не меньше, чем ты её: она издает [npc.a_moan+] и подается вперед, властно целуя твои [pc.lips+]. Пока теплые струи душа стекают по вашим обнаженным телам, вы обнимаете друг друга, готовясь поддаться вашей общей похоти...
 		</p>
 	#ELSEIF([#SPECIAL_PARSE_0]==2)
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against [npc.name] and [npc2.name] and tell them that now's the perfect time for them to do whatever they want with you.
+			Не желая пока заканчивать душ, ты прижимаешься своим влажным телом к [npc.name] и [npc2.name], говоря им, что сейчас самое время делать с тобой всё, что они только пожелают.
 		</p>
 		<p>
-			Clearly feeling just as horny as you are, your slaves let out a pair of excited moans, before leaning in to plant a series of dominant kisses on your [pc.lips+] and [pc.breasts+]. With the shower's warm water cascading over your naked bodies, your two slaves slide up against you and prepare to take full advantage of your submission...
+			Твои рабыни явно возбуждены не меньше тебя: они издают восторженные стоны и прижимаются к тебе, осыпая влажными, властными поцелуями твои [pc.lips+] и [pc.breasts+]. Пока теплые струи душа стекают по вашим обнаженным телам, они прижимаются к тебе всем телом, готовясь вовсю воспользоваться твоей покорностью...
 		</p>
 	#ELSE
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against your slaves and tell them that now's the perfect time for them to do whatever they want with you.
+			Не желая пока заканчивать душ, ты прижимаешься своим влажным телом к своим рабыням и говоришь им, что сейчас — идеальный момент, чтобы они могли делать с тобой всё, что захотят.
 		</p>
 		<p>
-			Clearly feeling just as horny as you are, your slaves let out a chorus of excited moans, before leaning in to plant a series of dominant kisses on your [pc.lips+] and [pc.breasts+]. With the shower's warm water cascading over your naked bodies, your slaves slide up against you and prepare to take full advantage of your submission...
+			Твои рабыни явно возбуждены не меньше тебя: они издают хор восторженных стонов и прижимаются к тебе, осыпая влажными, властными поцелуями твои [pc.lips+] и [pc.breasts+]. Пока теплые струи душа стекают по вашим обнаженным телам, они прижимаются к тебе всем телом, готовясь вовсю воспользоваться твоей покорностью...
 		</p>
 	#ENDIF
 	]]>
@@ -64,13 +64,13 @@
 	<htmlContent tag="AFTER_SHOWER_SEX"><![CDATA[
 	<p>
 		#IF(sex.getAllParticipants(false).size()==2)
-			Having had your fun, you tell [npc.name] to quickly wash you off, and after [npc.sheHas] done so, you turn off the tap and get your slave to dry you off.
+			Насладившись, ты просишь [npc.name] быстро тебя обмыть, и когда [npc.sheHas] заканчивает, ты выключаешь воду и просишь рабыню вытереть тебя насухо.
 		#ELSE
-			Having had your fun, you tell your slaves to quickly wash you off, and after they've done so, you turn off the tap and get your slaves to dry you off.
+			Насладившись, ты просишь своих рабынь быстро тебя обмыть, и когда они заканчивают, ты выключаешь воду и просишь их вытереть тебя насухо.
 		#ENDIF
 	</p>
 	<p>
-		Satisfied with the fun that you were able to have while taking your shower, you get dressed and prepare to head back into your room...
+		Довольный тем, как весело ты провел время в душе, ты одеваешься и готовишься вернуться в комнату...
 	</p>
 	]]>
 	</htmlContent>
@@ -81,26 +81,26 @@
 	<htmlContent tag="START_BATH_SEX_AS_DOM"><![CDATA[
 	#IF([#SPECIAL_PARSE_0]==1)
 		<p>
-			Not wanting to finish your bath just yet, you slide your wet body up against [npc.name] and tell [npc.herHim] that now's the perfect time for you to fuck [npc.herHim].
+			Не желая пока заканчивать купание, ты прижимаешься своим влажным телом к [npc.name] и говоришь [npc.herHim], что сейчас — идеальное время, чтобы трахнуть [npc.herHim].
 		</p>
 		<p>
 			#IF(npc.isAttractedTo(pc))
-				Clearly feeling just as horny as you are, the [npc.race] lets out [npc.a_moan+] and leans in to plant a submissive kiss on your [pc.lips+]. With the bath's warm water enveloping your naked bodies, the two of you embrace one another and prepare to indulge in your lust...
+				Очевидно, что [npc.race] испытывает такую же сильную похоть, как и ты; она издает [npc.a_moan+] и подается вперед, чтобы запечатлеть покорный поцелуй на твоих [pc.lips+]. Теплая вода в ванне окутывает ваши обнаженные тела, вы обнимаете друг друга, готовясь отдаться своей похоти...
 			#ELSE
-				Although [npc.sheIs] not attracted to you, the [npc.race] doesn't really have a choice in the matter, and lets out an anguished sigh as you lean in to plant a kiss on [npc.her] [npc.lips+]. With the bath's warm water enveloping your naked bodies, you embrace your slave and prepare to indulge in your lust...
+				Хотя [npc.sheIs] и не испытывает к тебе влечения, у [npc.race] особо нет выбора, и она издает мучительный вздох, когда ты наклоняешься, чтобы поцеловать ее в [npc.her] [npc.lips+]. Теплая вода в ванне окутывает ваши обнаженные тела; ты обнимаешь свою рабыню, готовясь утолить свою похоть...
 			#ENDIF
 		</p>
 	#ELSE
-		<p>
-			Not wanting to finish your bath just yet, you slide your wet body up against your slaves and tell them that now's the perfect time for you to fuck them.
-		</p>
+			<p>
+			Не желая пока заканчивать купание, ты прижимаешься своим влажным телом к своим рабыням и говоришь им, что сейчас — идеальный момент, чтобы трахнуть их.
+			</p>
 		<p>
 			#IF(npc.isAttractedTo(pc) && npc2.isAttractedTo(pc) && ([#SPECIAL_PARSE_0]==2 || npc3.isAttractedTo(pc)) && ([#SPECIAL_PARSE_0]<4 || npc4.isAttractedTo(pc)))
-				Clearly feeling just as horny as you are, your slaves let out a chorus of excited moans, before all leaning in to plant a series of submissive kisses on your [pc.lips+] and [pc.breasts+]. With the bath's warm water enveloping your naked bodies, you all slide up against one another and prepare to indulge in your lust...
+				Очевидно, что твои рабыни испытывают такую же сильную похоть, как и ты: они издают хор возбужденных стонов, прежде чем все вместе подаются вперед, чтобы осыпать твои [pc.lips+] и [pc.breasts+] чередой покорных поцелуев. Теплая вода в ванне окутывает ваши обнаженные тела; вы прижимаетесь друг к другу, готовясь отдаться своей похоти...
 			#ELSEIF(!npc.isAttractedTo(pc) && !npc2.isAttractedTo(pc) && ([#SPECIAL_PARSE_0]==2 || !npc3.isAttractedTo(pc)) && ([#SPECIAL_PARSE_0]<4 || !npc4.isAttractedTo(pc)))
-				Although none of your slaves are attracted to you, they don't really have a choice in the matter, and they let out a series of anguished sighs as you lean in to plant a kiss on each of their lips. With the bath's warm water enveloping your naked bodies, you embrace your reluctant slaves and prepare to indulge in your lust...
+				Хотя ни одна из твоих рабынь не испытывает к тебе влечения, у них особо нет выбора, и они издают череду мучительных вздохов, когда ты наклоняешься, чтобы поцеловать каждую в губы. Теплая вода в ванне окутывает ваши обнаженные тела; ты обнимаешь своих неохотных рабынь, готовясь утолить свою похоть...
 			#ELSE
-				Although you can sense some hesitation, your slaves don't really have a choice in the matter, and you remind them of their place by leaning in to plant a dominant kiss on each of their lips. With the bath's warm water enveloping your naked bodies, you embrace your slaves and prepare to indulge in your lust...
+				Хотя ты и чувствуешь некоторое колебание, у твоих рабов особо нет выбора, и ты напоминаешь им об их месте, наклоняясь, чтобы властно поцеловать каждого в губы. Пока теплая вода в ванне окутывает ваши обнаженные тела, ты обнимаешь своих рабов, готовясь предаться своей похоти...
 			#ENDIF
 		</p>
 	#ENDIF
@@ -110,24 +110,24 @@
 	<htmlContent tag="START_BATH_SEX_AS_SUB"><![CDATA[
 	#IF([#SPECIAL_PARSE_0]==1)
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against [npc.name] and tell [npc.herHim] that now's the perfect time for [npc.herHim] to do whatever [npc.she] wants with you.
+			Не желая пока заканчивать душ, ты прижимаешься своим влажным телом к [npc.name] и говоришь [npc.herHim], что сейчас идеальный момент для того, чтобы [npc.herHim] сделала с тобой всё, что пожелает [npc.she].
 		</p>
 		<p>
-			Clearly feeling just as horny as you are, the [npc.race] lets out [npc.a_moan+] and leans in to plant a dominant kiss on your [pc.lips+]. With the bath's warm water enveloping your naked bodies, the two of you embrace one another and prepare to indulge in your lust...
+			Очевидно, что [npc.race] хочет тебя не меньше, чем ты её: она издает [npc.a_moan+] и наклоняется, чтобы властно поцеловать твои [pc.lips+]. Пока теплая вода в ванне окутывает ваши обнаженные тела, вы обнимаете друг друга, готовясь предаться вашей общей похоти...
 		</p>
 	#ELSEIF([#SPECIAL_PARSE_0]==2)
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against [npc.name] and [npc2.name] and tell them that now's the perfect time for them to do whatever they want with you.
+			Не желая пока заканчивать душ, ты прижимаешься своим влажным телом к [npc.name] и [npc2.name], говоря им, что сейчас самое время делать с тобой всё, что они только пожелают.
 		</p>
 		<p>
-			Clearly feeling just as horny as you are, your slaves let out a pair of excited moans, before leaning in to plant a series of dominant kisses on your [pc.lips+] and [pc.breasts+]. With the bath's warm water enveloping your naked bodies, your two slaves slide up against you and prepare to take full advantage of your submission...
+			Очевидно, что твои рабы хотят тебя не меньше, чем ты их: они издают восторженные стоны, после чего наклоняются, чтобы осыпать твои [pc.lips+] и [pc.breasts+] властными поцелуями. Пока теплая вода в ванне окутывает ваши обнаженные тела, оба твоих раба прижимаются к тебе, готовясь в полной мере воспользоваться твоей покорностью...
 		</p>
 	#ELSE
 		<p>
-			Not wanting to finish your shower just yet, you slide your wet body up against your slaves and tell them that now's the perfect time for them to do whatever they want with you.
+			Не желая пока заканчивать душ, ты прижимаешься своим влажным телом к своим рабыням и говоришь им, что сейчас — идеальный момент, чтобы они могли делать с тобой всё, что захотят.
 		</p>
 		<p>
-			Clearly feeling just as horny as you are, your slaves let out a chorus of excited moans, before leaning in to plant a series of dominant kisses on your [pc.lips+] and [pc.breasts+]. With the bath's warm water enveloping your naked bodies, your slaves slide up against you and prepare to take full advantage of your submission...
+			Очевидно, что твои рабы хотят тебя не меньше, чем ты их: они издают хор восторженных стонов, после чего наклоняются, чтобы осыпать твои [pc.lips+] и [pc.breasts+] властными поцелуями. Пока теплая вода в ванне окутывает ваши обнаженные тела, твои рабы прижимаются к тебе, готовясь в полной мере воспользоваться твоей покорностью...
 		</p>
 	#ENDIF
 	]]>
@@ -139,13 +139,13 @@
 	<htmlContent tag="AFTER_BATH_SEX"><![CDATA[
 	<p>
 		#IF(sex.getAllParticipants(false).size()==2)
-			Having had your fun, you tell [npc.name] to quickly wash you off, and after [npc.sheHas] done so, you pull the plug and get your slave to dry you off.
+			Насладившись, ты велела [npc.name] быстро тебя отмыть, и когда [npc.sheHas] справляется с задачей, ты вынимаешь пробку и заставляешь своего раба вытереть тебя насухо.
 		#ELSE
-			Having had your fun, you tell your slaves to quickly wash you off, and after they've done so, you pull the plug and get your slaves to dry you off.
+			Насладившись, ты велишь своим рабам быстро тебя отмыть, и когда они заканчивают, ты вынимаешь пробку и заставляешь своих рабов вытереть тебя насухо.
 		#ENDIF
 	</p>
 	<p>
-		Satisfied with the fun that you were able to have while taking your bath, you get dressed and prepare to head back into your room...
+		Насладившись приятной ванной, ты одеваешься и готовишься вернуться в свою комнату...
 	</p>
 	]]>
 	</htmlContent>
@@ -183,57 +183,57 @@
 	#IF(pc.isAsleep())
 		#IF([#SPECIAL_PARSE_0])
 			<p>
-				Having had [npc.her] fun with you, [npc.name] gently shuffles back and slips off your bed. Letting out a very satisfied sigh, [npc.she] teases, [npc.speech(I knew you wouldn't wake up...)]
+				Насладившись [npc.her] весельем с тобой, [npc.name] мягко отстраняется и сползает с твоей кровати. Издав крайне удовлетворенный вздох, [npc.she] дразнит тебя: [npc.speech(Я знала, что ты не проснешься...)]
 			</p>
 			<p>
-				Completely unaware of what's happening, you snuggle down into your pillow and let out a soft sigh. Being such a deep sleeper, you aren't even close to waking up, and remain totally oblivious to [npc.namePos] presence as [npc.she] quietly slips away.
+				Совершенно не подозревая о происходящем, ты уютно устраиваешься на подушке и тихо вздыхаешь. Ты спишь так крепко, что даже не близок к тому, чтобы проснуться, и совершенно не замечаешь присутствия [npc.namePos], пока [npc.she] тихо ускользает.
 			</p>
 			<p>
 				...
 			</p>
 			<p>
-				Some time later, you naturally wake up, and after letting out a yawn and sleepily opening your eyes, you realise that something's not quite right. Your body still feels tired, and with the evidence of fresh sexual fluids on your sheets, you realise that someone must have fucked you in your sleep.
+				Спустя некоторое время ты просыпаешься, и, зевнув и сонно открыв глаза, понимаешь, что что-то не так. Тело все еще кажется тяжелым, а, обнаружив на простынях следы свежей смазки, ты осознаешь: кто-то трахал тебя, пока ты спала.
 			</p>
 			<p>
-				Getting out of bed, you wonder whether to do something about your night-time visitor, or to instead simply let [npc.herHim] be...
+				Вставая с постели, ты раздумываешь, стоит ли что-то предпринять в отношении своего ночного гостя или же просто оставить [npc.herHim] в покое...
 			</p>
 		#ELSE
 			<p>
-				Having their fun with you, [#SPECIAL_PARSE_1] gently shuffle back and slip off your bed. Letting out a very satisfied sigh, [npc.name] teases, [npc.speech(I knew [pc.she] wouldn't wake up...)]
+				Насладившись тобой, [#SPECIAL_PARSE_1] осторожно отстраняются и сползают с твоей кровати. Издав крайне удовлетворенный вздох, [npc.name] дразнит тебя: [npc.speech(Я знала, что [pc.she] не проснется...)]
 			</p>
 			<p>
-				Completely unaware of what's happening, you snuggle down into your pillow and let out a soft sigh. Being such a deep sleeper, you aren't even close to waking up, and remain totally oblivious to [#SPECIAL_PARSE_1] presence as they quietly slip away.
+				Совершенно не подозревая о происходящем, ты уютно устраиваешься на подушке и тихо вздыхаешь. Ты спишь так крепко, что даже не близок к пробуждению, и совершенно не замечаешь присутствия [#SPECIAL_PARSE_1], пока они тихо ускользают.
 			</p>
 			<p>
 				...
 			</p>
 			<p>
-				Some time later, you naturally wake up, and after letting out a yawn and sleepily opening your eyes, you realise that something's not quite right. Your body still feels tired, and with the evidence of fresh sexual fluids on your sheets, you realise that you've been fucked while sleeping.
+				Спустя некоторое время ты естественным образом просыпаешься. Зевая и сонно открывая глаза, ты понимаешь, что что-то не так. Тело всё еще кажется тяжелым, а, обнаружив на простынях следы свежих сексуальных выделений, ты осознаешь, что тебя трахали, пока ты спал.
 			</p>
 			<p>
-				Getting out of bed, you wonder whether to do something about your night-time visitors, or to instead simply let them be...
+				Вставая с кровати, ты раздумываешь: стоит ли что-то предпринять в отношении своих ночных посетителей или же просто оставить всё как есть...
 			</p>
 		#ENDIF
 	#ELSE
 		#IF([#SPECIAL_PARSE_0])
-			<p>
-				Having had [npc.her] fun with you, [npc.name] allows you to collapse back onto your bed. Letting out a very satisfied sigh, [npc.she] [npc.moans], [npc.speech(See, that was fun for both of us, wasn't it?)]
+<p>
+				Насладившись [npc.her], [npc.name] позволяет тебе повалиться на кровать. Издав очень довольный вздох, [npc.she] [npc.moans], [npc.speech(Видишь, это было весело для нас обоих, правда?)]
 			</p>
 			<p>
-				Interpreting your heavy breathing as a positive sign, [npc.name] smiles and asks, [npc.speech(Weren't you meant to be waking up at this time anyway?)]
+				Приняв твое тяжелое дыхание за положительный знак, [npc.name] улыбается и спрашивает: [npc.speech(Тебе ведь всё равно пора было просыпаться в это время, разве нет?)]
 			</p>
 			<p>
-				Realising that [npc.sheIs] right, you decide that you'd better get out of bed, and so, after a minute of lying back and catching your breath, you do just that. With a sigh and stretch of your [pc.arms], you allow [npc.name] to assist you as you gather your things, and with one final stretch, you get ready to set out once more...
+				Понимая, что [npc.sheIs] права, ты решаешь, что пора бы уже вставать с постели, и после минуты отдыха, чтобы перевести дух, ты так и делаешь. Со вздохом и потягиванием [pc.arms], ты позволяешь [npc.name] помочь тебе собрать вещи, и, сделав последнее глубокое движение, ты готовишься отправиться в путь...
 			</p>
 		#ELSE
 			<p>
-				Having had their fun with you, [#SPECIAL_PARSE_1] allow you to collapse back onto your bed. Letting out a very satisfied sigh, [npc.name] [npc.moans], [npc.speech(See, that was fun for all of us, wasn't it?)]
+				Насладившись тобой, [#SPECIAL_PARSE_1] позволяют тебе наконец рухнуть обратно на кровать. Издав крайне удовлетворенный вздох, [npc.name] [npc.moans], [npc.speech(Видишь, всем от этого только лучше, правда?)]
 			</p>
 			<p>
-				Interpreting your heavy breathing as a positive sign, [npc2.name] smiles and asks, [npc2.speech(Weren't you meant to be waking up at this time anyway?)]
+				Приняв твое тяжелое дыхание за знак одобрения, [npc2.name] улыбается и спрашивает: [npc2.speech(Тебе ведь и так полагалось проснуться в это время, разве нет?)]
 			</p>
 			<p>
-				Realising that [npc2.sheIs] right, you decide that you'd better get out of bed, and so, after a minute of lying back and catching your breath, you do just that. With a sigh and stretch of your [pc.arms], you allow [#SPECIAL_PARSE_1] to assist you as you gather your things, and with one final stretch, you get ready to set out once more...
+				Понимая, что [npc2.sheIs] права, ты решаешь, что пора бы уже вставать с постели, и после минуты отдыха, чтобы перевести дух, ты так и делаешь. Со вздохом и потягиванием [pc.arms], ты позволяешь [#SPECIAL_PARSE_1] помочь тебе собрать вещи, и, сделав последнее глубокое движение, ты готовишься отправиться в путь...
 			</p>
 		#ENDIF
 	#ENDIF
@@ -243,36 +243,36 @@
 	<htmlContent tag="REFUSE_SLAVE_SEX"><![CDATA[
 	#IF([#SPECIAL_PARSE_0])
 		<p>
-			You really aren't in the mood for having sex with [npc.name] right now, and so you put a swift end to [npc.her] plans by firmly telling [npc.herHim] to stop.
+			У тебя сейчас совсем нет настроения заниматься сексом с [npc.name], поэтому ты быстро пресекаешь [npc.her] планы, твердо велев [npc.herHim] остановиться.
 		</p>
 		<p>
-			[npc.speech(Fine...)] [npc.she] reluctantly
+			[npc.speech(Ладно...)] [npc.she] неохотно
 			#IF(npc.isFeminine())
-				 whines.
+				скулит.
 			#ELSE
-				 grunts.
+				кряхтит.
 			#ENDIF
 		</p>
 		<p>
-			Not wanting to give your slave another opportunity to pounce on you, you quickly get out of bed. With a sigh and stretch of your [pc.arms], you allow [#SPECIAL_PARSE_1] to assist you as you gather your things, and with one final stretch, you get ready to set out once more...
+			Не желая давать своему рабу еще один шанс наброситься на тебя, ты быстро сползаешь с кровати. Со вздохом и потягиванием [pc.arms], ты позволяешь [#SPECIAL_PARSE_1] помочь тебе собрать вещи, и, сделав последнее глубокое потягивание, ты готовишься отправиться в путь...
 		</p>
 	#ELSE
 		<p>
-			You really aren't in the mood for having sex with [#SPECIAL_PARSE_1] right now, and so you put a swift end to their plans by firmly telling them to stop.
+			Сейчас тебе совсем не до секса с [#SPECIAL_PARSE_1], поэтому ты быстро пресекаешь их планы, твердо приказав остановиться.
 		</p>
 		<p>
-			[npc.speech(Fine...)] [npc.name] reluctantly
+			[npc.speech(Ладно...)] [npc.name] неохотно
 			#IF(npc.isFeminine())
-				 whines.
+				скулит.
 			#ELSE
-				 grunts.
+				кряхтит.
 			#ENDIF
 		</p>
 		<p>
-			[npc2.speech(There's always next time...)] [npc2.name] says.
+			[npc2.speech(В следующий раз повезет...)] [npc2.name] говорит.
 		</p>
 		<p>
-			Not wanting to give your slaves another opportunity to pounce on you, you quickly get out of bed. With a sigh and stretch of your [pc.arms], you allow them to assist you as you gather your things, and with one final stretch, you get ready to set out once more...
+			Не желая давать своим рабам еще один шанс наброситься на тебя, ты быстро сползаешь с кровати. Со вздохом и потягиванием [pc.arms], ты позволяешь им помочь тебе собрать вещи, и, сделав последнее глубокое потягивание, ты готовишься отправиться в путь...
 		</p>
 	#ENDIF
 	]]>

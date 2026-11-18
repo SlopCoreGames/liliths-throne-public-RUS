@@ -6,32 +6,32 @@
 	<htmlContent tag="LILAYA_ASSISTS_PREGNANCY_START"><![CDATA[
 	#IF(pc.isShy())
 		<p>
-			Stepping forwards, you smile at your demonic [lilaya.relation(pc)],
+			Сделав шаг вперед, ты улыбаешься своей демонической [lilaya.relation(pc)],
 			#IF(pc.isTaur())
-				 before haltingly turning to one side and nervously revealing your [pc.legRace]'s swollen belly.
+				 а затем, замявшись, поворачиваешься боком, нервно демонстрируя раздувшийся живот своей [pc.legRace].
 			#ELSE
-				 before looking down and pointedly rubbing your belly.
+				 а затем опускаешь взгляд и нарочито поглаживаешь свой живот.
 			#ENDIF
-			 Glancing back up into your [lilaya.relation(pc)]'s eyes, you mumble, [pc.speech(Erm... Lilaya...)]
+			 Снова взглянув в глаза своей демонической [lilaya.relation(pc)], ты бормочешь: [pc.speech(Эм... Lilaya...)]
 		</p>
 		<p>
-			[lilaya.speech(Wait... Are you <i>pregnant</i>?!)] she asks.
+			[lilaya.speech(Погоди... Ты что, <i>беременна</i>?!)] — спрашивает она.
 		</p>
 		<p>
-			You aren't quite sure what to say, and sheepishly look back down at the floor, averting Lilaya's gaze as you hear her footsteps drawing near. Before you know what's happening, her hands are rubbing all over your belly, and you let out a little gasp at the sudden feeling of someone else touching your pregnant bump.
+			Ты не совсем понимаешь, что сказать, и застенчиво опускаешь взгляд в пол, избегая глаз Lilaya, пока слышишь, как её шаги приближаются. Не успеваешь ты опомниться, как её руки уже вовсю ласкают твой живот, и ты издаешь тихий вздох от внезапного ощущения чужих прикосновений к твоему беременному пузу.
 		</p>
 	#ELSE
 		<p>
-			Stepping forwards, you smile at Lilaya,
+			Сделав шаг вперед, ты улыбаешься Lilaya,
 			#IF(pc.isTaur())
-				 before turning to one side and showing off your [pc.legRace]'s swollen belly.
+				 а затем поворачиваешься боком, выставляя напоказ раздувшийся живот своей [pc.legRace].
 			#ELSE
-				 before glancing down and pointedly rubbing your belly.
+				 а затем бросаешь взгляд вниз и нарочито поглаживаешь свой живот.
 			#ENDIF
-			 Looking back up into your demonic [lilaya.relation(pc)]'s eyes, you smile and announce, [pc.speech(Hey, Lilaya, I've gone and got pregnant. What should I do now?)]
+			 Снова взглянув в глаза своей демонической [lilaya.relation(pc)], ты улыбаешься и объявляешь: [pc.speech(Эй, Lilaya, кажется, я умудрилась забеременеть. Что мне теперь делать?)]
 		</p>
 		<p>
-			[lilaya.speech(You really should have thought of that before you had unprotected sex,)] she scolds, before stepping up before you and running her hands over your swollen belly. Letting out a sigh, she looks up into your eyes and says, [lilaya.speech(I can help you with this, don't worry...)]
+			[lilaya.speech(Тебе стоило подумать об этом до того, как ты залез в меня без защиты,)] — ворчит она, подходя к тебе и проводя ладонями по твоему раздувшемуся животу. Тяжело вздохнув, она заглядывает тебе в глаза и произносит: [lilaya.speech(Я помогу тебе с этим, не переживай...)]
 		</p>
 	#ENDIF
 	]]>
@@ -40,34 +40,34 @@
 	<htmlContent tag="LILAYA_ASSISTS_PREGNANCY_LILAYA_POSSIBLY_FATHER"><![CDATA[
 	#IF(pc.isShy())
 		<p>
-			[pc.speech(Erm... Lilaya? Just so you know, you <i>might</i> be the one who got me pregnant...)] you explain, nervously shuffling your [pc.feet] once again.
+			[pc.speech(Эм... Lilaya? Просто чтобы ты знала, это ты, возможно, <i>заставила</i> меня забеременеть...)] — объясняешь ты, нервно переминаясь с [pc.feet] на [pc.feet].
 		</p>
 		<p>
 			#IF(pc.getPregnantLitter().getFertilisationType()==FERTILISATION_NORMAL)
-				[lilaya.speech(Well, you're the one who wanted me to grow a cock, remember?)]
+				[lilaya.speech(Ну, вообще-то это ты хотел, чтобы у меня вырос член, помнишь?)]
 			#ELSE
-				[lilaya.speech(Well, you're the one who wanted me to drink that bottle of Amazon's Secret, remember?)]
+				[lilaya.speech(Ну, вообще-то это ты хотел, чтобы я выпила ту бутылку «Секрета Амазонок», помнишь?)]
 			#ENDIF
-			 Lilaya laughs, clearly not at all worried by the fact that she might be the 'father' to your children.
+			 Lilaya смеется, явно ничуть не беспокоясь о том, что она может оказаться «отцом» твоих детей.
 		</p>
 		<p>
-			You feel very conscious of the fact that you just admitted to having had other sexual partners to Lilaya. As you glance over to the nearby chair that you both had sex on, the feeling of guilt in the back of your mind causes you to start explaining yourself to your demonic [lilaya.relation(pc)], [pc.speech(Well... You don't mind that I've been with other partners, do you? I mean, I still like you and everything...)]
+			Ты остро чувствуешь, что только что признался Lilaya в наличии других сексуальных партнеров. Бросив взгляд на стул неподалеку, на котором вы оба только что трахались, ты ощущаешь укол вины и начинаешь оправдываться перед своей демонической [lilaya.relation(pc)]: [pc.speech(Ну... тебя ведь не смущает, что у меня были другие партнеры? В смысле, ты мне всё еще очень нравишься и всё такое...)]
 		</p>
 		<p>
-			You look up to see Lilaya's cheeks flush red, and she momentarily stops feeling your stomach, leaving her hands to rest on your belly as she stutters a response, [lilaya.speech(O-Oh, no, not at all! D-Don't worry about it! I-I mean... I still like you too... A-And I've kind of got this special sort of relationship with Rose... S-So I didn't think we were exclusive or anything...)]
+			Ты поднимаешь взгляд и видишь, как щеки Lilaya заливаются румянцем. Она на мгновение перестает ощупывать твой живот, оставляя ладони на твоем пузе, и заикается, отвечая: [lilaya.speech(О-ой, нет, вовсе нет! Н-не переживай об этом! Я... в смысле... ты мне тоже всё еще нравишься... И у меня тут вроде как особые отношения с Rose... Т-так что я не думала, что мы пара или что-то в этом роде...)]
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(Oh, yeah, and it <i>might</i> be you who got me pregnant,)] you explain, thinking that you should probably let Lilaya know that she could be the 'father' of your children.
+			[pc.speech(О, да, и <i>возможно</i> именно ты и сделал меня беременной,)] объясняешь ты, понимая, что стоит дать Lilaya понять: она вполне может стать «отцом» твоих детей.
 		</p>
 		<p>
-			[lilaya.speech(Well, you seemed to be up for it at the time, remember?)] Lilaya laughs, seemingly not picking up on the fact that you've slept with someone other than her.
+			[lilaya.speech(Ну, в тот момент ты, кажется, была только за, помнишь?)] Lilaya смеется, похоже, даже не осознав, что ты переспал с кем-то еще, кроме нее.
 		</p>
 		<p>
-			Wanting to make sure that Lilaya understands what it is you're trying to say, you explain to your demonic [lilaya.relation(pc)], [pc.speech(I didn't mean it like that; I meant that the father could be someone else... You don't mind that I've been with other partners, do you? I mean, I still like you and everything...)]
+			Желая убедиться, что Lilaya понимает, что именно ты пытаешься сказать, ты объясняешь своей демонической [lilaya.relation(pc)]: [pc.speech(Я не это имела в виду; я имела в виду, что отцом может быть кто-то другой... Ты ведь не против, что у меня были другие партнеры? В смысле, ты мне всё еще очень нравишься и всё такое...)]
 		</p>
 		<p>
-			You look up to see Lilaya's cheeks flush red, and she momentarily stops feeling your stomach, leaving her hands to rest on your belly as she stutters a response, [lilaya.speech(O-Oh, no, not at all! D-Don't worry about it! I-I mean... I still like you too... A-And I've kind of got this special sort of relationship with Rose... S-So I didn't think we were exclusive or anything...)]
+			Ты поднимаешь взгляд и видишь, как щеки Lilaya заливаются румянцем. Она на мгновение перестает ощупывать твой живот, оставляя ладони на твоем пузе, и заикается, отвечая: [lilaya.speech(О-ой, нет, вовсе нет! Н-не переживай об этом! Я... в смысле... ты мне тоже всё еще нравишься... И у меня тут вроде как особые отношения с Rose... Т-так что я не думала, что мы пара или что-то в этом роде...)]
 		</p>
 	#ENDIF
 	]]>
@@ -76,18 +76,18 @@
 	<htmlContent tag="LILAYA_ASSISTS_PREGNANCY_LILAYA_DEFINITELY_FATHER"><![CDATA[
 	<p>
 		#IF(pc.isShy())
-			[pc.speech(Erm... Lilaya? Just so you know, you're definitely the one that got me pregnant...)] you sheepishly explain, looking down at your demonic [lilaya.relation(pc)]'s hands as they continue roaming over your swollen stomach.
+			[pc.speech(Эм... Lilaya? Просто чтобы ты знала... это ты точно меня обрюхатила...)] — застенчиво объясняешь ты, глядя на руки своей демонической [lilaya.relation(pc)], которые продолжают блуждать по твоему раздувшемуся животу.
 		#ELSE
-			[pc.speech(Oh, and Lilaya? Just so you know, you're definitely the one that got me pregnant.)] you explain, looking down at your demonic [lilaya.relation(pc)]'s hands as they continue roaming over your swollen stomach.
+			[pc.speech(О, и еще, Lilaya? Просто чтобы ты знала: это ты точно меня обрюхатила.)] — объясняешь ты, глядя на руки своей демонической [lilaya.relation(pc)], которые продолжают блуждать по твоему раздувшемуся животу.
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.getPregnantLitter().getFertilisationType()==FERTILISATION_NORMAL)
-			[lilaya.speech(Well, you're the one who wanted me to grow a cock, remember?)]
+			[lilaya.speech(Ну, вообще-то, это ты хотел, чтобы у меня вырос член, помнишь?)]
 		#ELSE
-			[lilaya.speech(Well, you're the one who wanted me to drink that bottle of Amazon's Secret, remember?)]
+			[lilaya.speech(Ну, вообще-то, это ты хотел, чтобы я выпила ту бутылку «Секрета Амазонок», помнишь?)]
 		#ENDIF
-		 Lilaya laughs, clearly not at all worried by the fact that she's the 'father' to your children.
+		 Lilaya смеется, явно ничуть не беспокоясь о том, что она — «отец» твоих детей.
 	</p>
 	]]>
 	</htmlContent>
@@ -95,17 +95,17 @@
 	<htmlContent tag="LILAYA_ASSISTS_PREGNANCY_LILAYA_DEFINITELY_NOT_FATHER"><![CDATA[
 	#IF(pc.isShy())
 		<p>
-			You feel very conscious of the fact that you're presenting clear evidence of having other sexual partners to Lilaya. As you glance over to the nearby chair that you both had sex on, the feeling of guilt in the back of your mind causes you to start explaining yourself to your demonic [lilaya.relation(pc)], [pc.speech(So... You don't mind that I've been with other partners, do you? I mean, I still like you and everything...)]
+			Ты остро чувствуешь, что буквально предъявляешь Lilaya неопровержимые доказательства наличия у тебя других сексуальных партнеров. Бросив взгляд на стул неподалеку, на котором вы оба только что трахались, ты поддаешься нахлынувшему чувству вины и начинаешь оправдываться перед своей демонической [lilaya.relation(pc)]: [pc.speech(Так... Тебя ведь не смущает, что у меня были другие партнеры? В смысле, ты мне всё еще очень нравишься и всё такое...)]
 		</p>
 		<p>
-			You look up to see Lilaya's cheeks flush red, and she momentarily stops feeling your stomach, leaving her hands to rest on your belly as she stutters a response, [lilaya.speech(O-Oh, no, not at all! D-Don't worry about it! I-I mean... I still like you too... A-And I've kind of got this special sort of relationship with Rose... S-So I didn't think we were exclusive or anything...)]
+			Ты поднимаешь взгляд и видишь, как щеки Lilaya заливаются румянцем. Она на мгновение перестает ощупывать твой живот, оставляя ладони на твоем пузе, и заикается, отвечая: [lilaya.speech(О-ой, нет, вовсе нет! Н-не переживай об этом! Я... в смысле... ты мне тоже всё еще нравишься... И у меня тут вроде как особые отношения с Rose... Т-так что я не думала, что мы пара или что-то в этом роде...)]
 		</p>
 	#ELSE
 		<p>
-			Wanting to make sure that Lilaya isn't angry at you for having other sexual partners, you explain, [pc.speech(So... You don't mind that I've been with other partners, do you? I mean, I still like you and everything...)]
+			Желая убедиться, что Lilaya не злится на тебя за наличие других любовников, ты объясняешь: [pc.speech(Так... Тебя ведь не смущает, что у меня были другие партнеры? В смысле, ты мне всё еще очень нравишься и всё такое...)]
 		</p>
 		<p>
-			You look up to see Lilaya's cheeks flush red, and she momentarily stops feeling your stomach, leaving her hands to rest on your belly as she stutters a response, [lilaya.speech(O-Oh, no, not at all! D-Don't worry about it! I-I mean... I still like you too... A-And I've kind of got this special sort of relationship with Rose... S-So I didn't think we were exclusive or anything...)]
+			Ты поднимаешь взгляд и видишь, как щеки Lilaya заливаются румянцем. Она на мгновение перестает ощупывать твой живот, оставляя ладони на твоем пузе, и заикается, отвечая: [lilaya.speech(О-ой, нет, вовсе нет! Н-не переживай об этом! Я... в смысле... ты мне тоже всё еще нравишься... И у меня тут вроде как особые отношения с Rose... Т-так что я не думала, что мы пара или что-то в этом роде...)]
 		</p>
 	#ENDIF
 	]]>
@@ -113,50 +113,52 @@
 	
 	<htmlContent tag="LILAYA_ASSISTS_PREGNANCY_END"><![CDATA[
 	<p>
-		She suddenly breaks off from fondling your abdomen, before grabbing your wrist and starting to pull you further into her lab. Looking around, you see that Rose has vacated the area, leaving you alone with your demonic [lilaya.relation(pc)].
+		Она внезапно перестает ласкать твой живот, хватает тебя за запястье и начинает увлечь за собой вглубь своей лаборатории. Оглядевшись, ты замечаешь, что Роуз ушла, оставив тебя наедине с твоим демоническим [lilaya.relation(pc)].
 	</p>
 	<p>
 		#IF(game.isPlotDiscovered())
-			[lilaya.speech(This is so exciting! I wonder how your body's going to react, what with you having been unaffected by Lilith's spell and everything!)]
+			[lilaya.speech(Это так волнительно! Интересно, как отреагирует твое тело, учитывая, что на тебя не подействовало заклинание Lilith и всё такое!)]
 		#ELSE
-			[lilaya.speech(This is so exciting! I wonder how your body's going to react, what with you coming from another universe and everything!)]
+			[lilaya.speech(Это так волнительно! Интересно, как отреагирует твое тело, ведь ты прибыл из другой вселенной и всё такое!)]
 		#ENDIF
-		 she exclaims, getting you to sit down on a nearby chair before running off to rummage around in some nearby boxes. As she does so, she shouts back over her shoulder, [lilaya.speech(I'm guessing you're not aware of how pregnancies work here, huh? Well, seeing as the arcane has a massive effect on it, I'm guessing it's pretty different than it is in your world! Hmm... Where did it go?)]
+		она восклицает, усаживая тебя на ближайший стул, а затем убегает копаться в каких-то ящиках неподалеку. Пока она возится, она выкрикивает тебе через плечо: [lilaya.speech(Полагаю, ты не совсем понимаешь, как здесь протекает беременность, а? Ну, раз уж аркана оказывает на неё огромное влияние, думаю, всё совсем не так, как в твоем мире! Хм... Куда же оно делось?)]
 	</p>
 	<p>
-		Lilaya stops talking for a moment as she concentrates on searching through the boxes. You aren't given much time to think about what she's saying before you see her straighten up and turn around, and as she starts walking back over towards you, you notice that she's holding another of those wand-like instruments in her right hand.
+		Lilaya на мгновение замолкает, сосредоточенно обыскивая ящики. Тебе не дают особо времени обдумать её слова, как вдруг она выпрямляется и оборачивается; когда она идет обратно к тебе, ты замечаешь, что в правой руке она держит еще один такой инструмент, похожий на волшебную палочку.
 	</p>
 	<p>
-		[lilaya.speech(So, I'm guessing you've already realised that the arcane has a big influence on pregnancy speed,)] she laughs, stroking your belly once more before stepping back and tinkering with some small dials on the instrument she's just retrieved. [lilaya.speech(I've actually done a fair bit of research on the arcane's influence on pregnancies, so I know that without its presence, pregnancies should really be taking about nine months...)]
+		[lilaya.speech(Итак, полагаю, ты уже осознал, что аркана сильно влияет на скорость протекания беременности,)] — смеется она, еще раз поглаживая твой живот, прежде чем отступить и приняться крутить маленькие диски на приборе, который она только что достала. [lilaya.speech(На самом деле я провела немало исследований о влиянии арканы на беременность, так что знаю: без её присутствия вынашивание должно занимать около девяти месяцев...)]
 	</p>
 	<p>
-		As you try to assimilate the information Lilaya's giving you, the instrument in her hand starts giving off a faint pink glow. Letting out a satisfied hum, your demonic [lilaya.relation(pc)] brings the little wand down to your pregnant bump, before running it up and down over your swollen belly. Letting out a series of concerned humming sounds, a puzzled expression settles on Lilaya's face, but before you can start to worry about what might be wrong, the instrument suddenly releases a bright flash of pink light, causing Lilaya to let out a happy little cry.
+		Пока ты пытаешься переварить информацию, которую дает тебе Lilaya, прибор в её руках начинает излучать слабое розовое свечение. Издав удовлетворенный гул, твоя демоническая [lilaya.relation(pc)] подносит маленькую палочку к твоему беременному животу, а затем водит ею вверх и вниз по твоей раздувшейся утробе. Лицо Lilaya озаряется озадаченным выражением, и она издает серию обеспокоенных звуков, но прежде чем ты успеваешь начать волноваться о том, что может быть не так, прибор внезапно выпускает яркую вспышку розового света, заставляя Lilaya радостно вскрикнуть.
 	</p>
 	<p>
-		[lilaya.speech(Well, that's a relief! Oh, right, I need to explain what's going on!)] she says, putting the instrument down on a nearby table before turning back to face you. [lilaya.speech(So, it turns out that your body has completely adapted to this world, and you're going to be obeying the same sort of rules for pregnancy as the rest of us! What that means is that you're not going to be pregnant for the better part of a year; it's going to be more like a few weeks at most. Oh, and also, the races of the children you're going to give birth to will be a split between your race, and the race of the father. Pretty exciting, huh?!)]
+		[lilaya.speech(Ну, это облегчение! Ох, точно, мне нужно объяснить, что к чему!)] — говорит она, кладя инструмент на ближайший стол и поворачиваясь к тебе. [lilaya.speech(В общем, оказалось, что твое тело полностью адаптировалось к этому миру, и ты будешь подчиняться тем же правилам беременности, что и все остальные! Это значит, что ты не будешь беременна добрую половину года; всё пройдет максимум за несколько недель. О, и еще: расы детей, которых ты родишь, будут распределяться между твоей расой и расой отца. Довольно захватывающе, а?!)]
 	</p>
 	<p>
 		#IF(pc.isConfident())
-			You look down at your pregnant belly, stroking it absent-mindedly as Lilaya's words sink in. As your thoughts turn to the process of bringing up a child in this strange world, you let out a deep sigh and ask, [pc.speech(How do people even bring children up in this world? And of course, what about the whole part of actually giving birth? I guess my life's going to change a lot...)]
+			Ты смотришь на свой беременный живот, рассеянно поглаживая его, пока слова Lilaya доходят до твоего сознания. Когда ты начинаешь задумываться о том, как растить ребенка в этом странном мире, ты тяжело вздыхаешь и спрашиваешь: [pc.speech(Как люди вообще растят детей в этом мире? И, конечно, как насчет самих родов? Кажется, моя жизнь сильно изменится...)]
 		#ELSE
-			You look down at your pregnant belly, stroking it absent-mindedly as Lilaya's words sink in. As your thoughts turn to the process of bringing up a child in this strange world, you feel yourself starting to become overwhelmed by emotion, and you blurt out to Lilaya, [pc.speech(B-but what do I do?! How am I meant to raise a child here?! A-And, what about the whole part of actually giving birth?! This is too much!)]
+			Ты смотришь на свой беременный живот, рассеянно поглаживая его, пока слова Lilaya доходят до твоего сознания. Когда ты начинаешь задумываться о том, как растить ребенка в этом странном мире, тебя захлестывают эмоции, и ты выпаливаешь Lilaya: [pc.speech(Н-но что мне делать?! Как мне вообще растить здесь ребенка?! И... а как насчет самих родов?! Это слишком!)]
 		#ENDIF
 	</p>
 	<p>
-		Much to your surprise, Lilaya's face momentarily scrunches up into a look of confusion, as though she doesn't quite know what you're talking about. Thankfully, after just a moment, she lets out an understanding sigh, and quickly moves to put your fears to rest, [lilaya.speech(Of course, what with the arcane being the thing responsible for rapid growth as well, you'd not know how it works here... I'm sure this will come as a major relief, but you don't have to worry about raising your children; thanks to the arcane, they'll reach full maturity in just a couple of hours. The arcane grants them their mother's general knowledge, without transferring specific memories, so they get all the information they need to make their own way in the world. There's no need for any 'raising' or anything, don't worry. Honestly, I don't even know how people would be able to cope without the arcane!)]
+		К твоему удивлению, лицо Lilaya на мгновение искажается от замешательства, будто она не совсем понимает, о чем ты говоришь. К счастью, спустя всего миг она понимающе вздыхает и поспешно развеивает твои опасения: [lilaya.speech(Конечно, раз уж именно Аркана отвечает за столь быстрый рост, тебе и не знать, как всё устроено в этих краях... Уверена, это станет для тебя огромным облегчением, но тебе не придется беспокоиться о воспитании детей; благодаря Аркане они достигнут полной зрелости всего за пару часов. Аркана наделяет их общими знаниями матери, не передавая при этом конкретных воспоминаний, так что они получают всю необходимую информацию, чтобы проложить свой путь в мире. Никакого «воспитания» или чего-то подобного не потребуется, не переживай. Честно говоря, я даже не представляю, как люди вообще справлялись бы без Арканы!)]
 	</p>
 	<p>
-		As Lilaya finishes speaking, a huge wave of relief washes over you. You sink back into the chair, sighing deeply, before you remember your last concern about this whole process; the part about actually giving birth. Before you can ask Lilaya about it again, she continues, 
+		Когда Lilaya замолкает, тебя накрывает огромная волна облегчения. Ты откидываешься на спинку стула с глубоким вздохом, но тут же вспоминаешь о своем последнем опасении по поводу всего этого процесса — о том, как именно будут проходить роды. Прежде чем ты успеваешь снова спросить об этом Lilaya, она продолжает: 
 		#IF(pc.hasStatusEffect(SE_PREGNANT_3))
-				 [lilaya.speech(Oh, and don't worry about the whole giving birth part. I see that your belly has already finished growing, so I can help you to give birth whenever you're ready!)]
+				 [lilaya.speech(О, и не беспокойся о самих родах. Я вижу, твой живот уже полностью вырос, так что я помогу тебе родить, как только ты будешь готова!)]
 			</p>
 			<p>
-				With your final question answered, you stand up from the chair, and thank Lilaya for all her help. She tells you not to worry about it, and to remember to come back to see her when you're ready to give birth.
+			
+Получив ответы на последние вопросы, ты встаешь со стула и благодаришь Lilaya за помощь. Она говорит не беспокоиться об этом и напоминает, чтобы ты заглянула к ней, когда будешь готова к родам.
 		#ELSE
-				 [lilaya.speech(Oh, and don't worry about the whole giving birth part. When you're ready, just come back here and I'll talk you through it!)]
+				 [lilaya.speech(О, и не переживай насчет самих родов. Когда будешь готова, просто возвращайся сюда, и я проведу тебя через всё это!)]
 			</p>
 			<p>
-				With your final question answered, you stand up from the chair, and thank Lilaya for all her help. She tells you not to worry about it, and to remember to come back to see her once your belly has finished growing.
+			
+Получив ответы на последние вопросы, ты встаешь со стула и благодаришь Lilaya за помощь. Она говорит не беспокоиться об этом и напоминает, чтобы ты заглянула к ней, когда твой живот окончательно вырастет.
 		#ENDIF
 	</p>
 	]]>
@@ -168,74 +170,75 @@
 	<htmlContent tag="LILAYA_ASSISTS_PREGNANCY_REPEAT"><![CDATA[
 	#IF(pc.isShy())
 		<p>
-			Stepping forwards, you nervously smile at your demonic [lilaya.relation(pc)],
+			Сделав шаг вперед, ты нервно улыбаешься своей демонической [lilaya.relation(pc)],
 			#IF(pc.isTaur())
-				 before turning to one side and showing off your [pc.legRace]'s swollen belly.
+				 а затем поворачиваешься боком, выставляя напоказ раздувшийся живот своей [pc.legRace].
 			#ELSE
-				 before looking down and rubbing your belly.
+				 прежде чем опустить взгляд и погладить свой живот.
 			#ENDIF
-			 With your shyness getting the better of you, you quietly mutter, [pc.speech(Erm... Lilaya...)]
+			 Поддавшись смущению, ты тихо бормочешь: [pc.speech(Эм... Lilaya...)]
 		</p>
 		<p>
 			#IF(pc.isVisiblyPregnant() && !game.getDialogueFlags().hasFlag(FLAG_reactedToPregnancyLilaya))
-				[lilaya.speech(Wait... Are you pregnant <i>again</i>?!)] she asks.
+				[lilaya.speech(Погоди... Ты что, <i>снова</i> беременна?!)] — спрашивает она.
 			#ELSE
-				[lilaya.speech(So, you're ready to do something about your little pregnancy problem, huh?)] she asks.
+				[lilaya.speech(Значит, ты готова что-то предпринять со своей маленькой проблемой в виде беременности, да?)] — спрашивает она.
 			#ENDIF
 		</p>
 		<p>
-			You aren't quite sure what to say, and continue to look sheepishly at the floor as you hear Lilaya's footsteps drawing near. Before you know what's happening, her hands are rubbing all over your belly, and you let out a little gasp at the sudden feeling of someone else touching your pregnant bump.
+		
+Ты не совсем понимаешь, что сказать, и продолжаешь виновато смотреть в пол, слыша, как шаги Lilaya приближаются. Прежде чем ты успеваешь что-то осознать, её руки уже вовсю ласкают твой живот, и ты невольно ахаешь от внезапного ощущения чужих прикосновений к своему беременному пузу.
 		</p>
 		<p>
 			#IF(pc.hasStatusEffect(SE_PREGNANT_3))
-				[lilaya.speech(I see your belly's already finished growing, so I can help you to give birth whenever you're ready!)] she says, smiling at you as she carries on fondling your swollen bump.
+				[lilaya.speech(Вижу, твой животик уже вырос, так что я смогу помочь тебе родить, когда ты будешь готова!)] — говорит она, улыбаясь тебе и продолжая ласкать твой раздувшийся живот.
 			#ELSE
-				[lilaya.speech(You're not quite ready to give birth just yet... Come back when your belly's really nice and round!)] she says, smiling at you as she carries on fondling your swollen bump.
+				[lilaya.speech(Ты еще не совсем готова к родам... Возвращайся, когда твой животик станет совсем круглым и большим!)] — говорит она, улыбаясь тебе и продолжая ласкать твой раздувшийся живот.
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			Stepping forwards, you approach Lilaya and 
+			Сделав шаг вперед, ты подходишь к Lilaya и 
 			#IF(pc.isTaur())
-				 turn to one side to show off your [pc.legRace]'s swollen belly.
+				 поворачиваешься боком, чтобы похвастаться раздувшимся животом своей [pc.legRace].
 			#ELSE
-				 start draw her attention to your swollen belly by rubbing your [pc.hands] over it.
+				 начинаешь привлекать её внимание к своему животу, потирая его своей [pc.hands].
 			#ENDIF
-			 Smiling at your demonic [lilaya.relation(pc)] [pc.speech(Look, Lilaya, I got pregnant again!)]
+			 Улыбаясь своей демонической [lilaya.relation(pc)], ты говоришь: [pc.speech(Смотри, Lilaya, я снова забеременела!)]
 		</p>
 		<p>
 			#IF(pc.isVisiblyPregnant() && !game.getDialogueFlags().hasFlag(FLAG_reactedToPregnancyLilaya))
-				[lilaya.speech(Yes, I can see that!)] she replies, before walking over towards you and placing her hands on your swollen abdomen.
+				[lilaya.speech(Да, я вижу!)] — отвечает она, прежде чем подойти к тебе и положить руки на твой раздувшийся живот.
 			#ELSE
-				[lilaya.speech(So, you're ready to do something about your little pregnancy problem, huh?)] she replies, before walking over towards you and placing her hands on your swollen abdomen.
+				[lilaya.speech(Значит, ты готова что-то предпринять со своей маленькой проблемой с беременностью, а?)] — отвечает она, прежде чем подойти к тебе и положить руки на твой раздувшийся живот.
 			#ENDIF
 		</p>
 		<p>
-			You let out a sigh at the feeling of your [lilaya.relation(pc)]'s hands rubbing your pregnant bump, but before you can respond, she continues,
+			Ты вздыхаешь от ощущения рук своей [lilaya.relation(pc)], поглаживающих твой беременный живот, но прежде чем ты успеваешь ответить, она продолжает:
 			#IF(pc.hasStatusEffect(SE_PREGNANT_3))
-				 [lilaya.speech(I see your belly's already finished growing, so I can help you to give birth whenever you're ready!)]
+				 [lilaya.speech(Вижу, твой живот уже вырос до предела, так что я помогу тебе родить, когда будешь готова!)]
 			#ELSE
-				 [lilaya.speech(You're not quite ready to give birth just yet... Come back when your belly's really nice and round!)]
+				 [lilaya.speech(Ты еще не совсем готова к родам... Возвращайся, когда твой животик станет совсем круглым и большим!)]
 			#ENDIF
 		</p>
 	#ENDIF
 	#IF(pc.isCharacterPossiblyFather(lilaya))
 		<p>
-			As nothing's been said on the matter yet, you take this opportunity to tell Lilaya that
+			Поскольку об этом еще не было сказано, ты пользуешься случаем, чтобы сказать Lilaya, что
 			#IF(pc.getPotentialPartnersAsMother().size()==1)
-				 she's
+				 именно она
 			#ELSE
-				 she might be
+				 возможно, она
 			#ENDIF
-			 the one who got you knocked up.
+			 та самая, кто тебя обрюхатил.
 		</p>
 		<p>
 			#IF(pc.getPregnantLitter().getFertilisationType()==FERTILISATION_NORMAL)
-				[lilaya.speech(Well, you're the one who wanted me to grow a cock, remember?)]
+				[lilaya.speech(Ну, вообще-то это ты хотел, чтобы у меня вырос член, помнишь?)]
 			#ELSE
-				[lilaya.speech(Well, you're the one who wanted me to drink that bottle of Amazon's Secret, remember?)]
+				[lilaya.speech(Ну, вообще-то это ты хотел, чтобы я выпила ту бутылку «Секрета Амазонок», помнишь?)]
 			#ENDIF
-			 Lilaya laughs, clearly not at all worried by the fact that she's the 'father' to your children. Taking her hands off your swollen belly, she steps back and finishes by asking, [lilaya.speech(So, is there anything else I can do for you, [pc.name]?)]
+			 Lilaya смеется, явно ничуть не беспокоясь тем, что она — «отец» твоих детей. Убрав руки с твоего раздувшегося живота, она отступает и завершает вопросом: [lilaya.speech(Итак, могу ли я сделать для тебя что-нибудь еще, [pc.name]?)]
 		</p>
 	#ENDIF
 	]]>
@@ -247,39 +250,41 @@
 	<htmlContent tag="LILAYA_DETECTS_BIRTHING_TYPE"><![CDATA[
 	<p>
 		#IF(pc.isTaur())
-			Turning to one side to present Lilya with your [pc.legRace]'s massively swollen belly, you say,
+			Повернувшись боком, чтобы продемонстрировать Lilaya свой огромный, раздутый [pc.legRace], ты говоришь:
 		#ELSE
-			Cradling your huge, swollen belly with both hands, you look up at Lilaya and say,
+			Поддерживая обеими руками свой огромный, раздутый живот, ты смотришь на Lilaya и говоришь:
 		#ENDIF
-		 [pc.speech(I'm ready to give birth now.)]
+		 [pc.speech(Я готова рожать.)]
 	</p>
 	#IF(!pc.isQuestCompleted(QUEST_LINE_SIDE_FIRST_TIME_PREGNANCY))
 		<p>
-			A delighted smile crosses her face, but despite her reassuring look, as well as knowing that you're in competent hands, you're still incredibly nervous about what comes next. Lilaya must have noticed the worried look on your face, as she moves up close to you and makes a soothing hushing sound. Her hands move down to gently stroke over your pregnant bump, and you start blushing at the thought of what's about to happen.
+		
+На её лице расцветает восторженная улыбка, но, несмотря на её ободряющий взгляд и понимание того, что ты в надежных руках, тебя всё равно невероятно переполняет нервозность перед тем, что будет дальше. Lilaya, должно быть, заметила твое беспокойство, потому что она подходит ближе и издает успокаивающее «ш-ш-ш». Её руки опускаются ниже, нежно поглаживая твой беременный живот, и ты начинаешь краснеть при мысли о том, что вот-вот произойдет.
 		</p>
 	#ELSE
 		<p>
-			A delighted smile crosses her face, and despite the fact that you've done this before, you're still pretty nervous about what comes next. She must have noticed the worried look on your face, as she suddenly steps close to you and makes a soothing hushing sound. Her hands stroke over your pregnant bump, and you start blushing at the thought of what's about to happen.
+		
+На её лице расцветает восторженная улыбка, и, несмотря на то что ты уже проходила через это раньше, ты всё равно изрядно нервничаешь перед тем, что будет дальше. Она, должно быть, заметила твое беспокойство, потому что внезапно подходит ближе и издает успокаивающее «ш-ш-ш». Её руки ласкают твой беременный живот, и ты начинаешь краснеть при мысли о том, что вот-вот произойдет.
 		</p>
 	#ENDIF
 	#IF(pc.getBodyMaterial()==BODY_MATERIAL_SLIME)
 		<p>
-			[lilaya.speech(Don't worry, I'm here for you,)] she says, pulling you into a loving hug for a moment before stepping back, [lilaya.speech(and anyway, giving birth to slimes is super easy and stress-free. We should do this in the birthing room, follow me!)]
+			[lilaya.speech(Не волнуйся, я рядом,)] — говорит она, на мгновение притягивая тебя в нежных объятиях, а затем отстраняется, — [lilaya.speech(и вообще, рожать слаймов очень легко и совсем не стрессово. Нам стоит сделать это в родильной, иди за мной!)]
 		</p>
 	#ELSE
 		<p>
-			[lilaya.speech(Don't worry, I'm here for you,)] she says, pulling you into a loving hug for a moment before stepping back, [lilaya.speech(but first, I need to know what sort of race you're going to be giving birth to.)]
+			[lilaya.speech(Не волнуйся, я рядом,)] — говорит она, на мгновение притягивая тебя в нежных объятиях, а затем отстраняется, — [lilaya.speech(но сначала мне нужно знать, какую расу ты будешь рожать.)]
 		</p>
 		<p>
 			#IF(!pc.isCoverableAreaExposed(CA_VAGINA))
-				As she speaks, Lilaya starts stripping off your clothes, and as she gets access to your vagina, she lets out a little humming noise,
+				Пока она говорит, Lilaya начинает стягивать с тебя одежду, и, добравшись до твоей вагины, она издает тихое довольное мурлыканье,
 			#ELSE
-				Your vagina is already exposed, and, after looking down at it for a moment, Lilaya lets out a little humming noise,
+				Твоя вагина уже обнажена, и, взглянув на неё пару мгновений, Lilaya издает тихое довольное мурлыканье,
 			#ENDIF
 			#IF(pc.isVaginaEggLayer())
-				 [lilaya.speech(Ooh, you're going to be laying #IF(pc.getPregnantLitter().getTotalLitterCount()>1)some eggs#ELSEan egg#ENDIF, how exciting! I'm sure you're already feeling it, but some incredibly strong maternal instincts are going to be kicking in pretty soon, and you're only going to feel comfortable doing this in a very personal area. I think using your room would be the best bet, follow me!)]
+				 [lilaya.speech(Ооо, ты собираешься откладывать #IF(pc.getPregnantLitter().getTotalLitterCount()>1)some eggs#ELSEan egg#ENDIF, how exciting! I'm sure you're already feeling it, but some incredibly strong maternal instincts are going to be kicking in pretty soon, and you're only going to feel comfortable doing this in a very personal area. I think using your room would be the best bet, follow me!)]
 			#ELSE
-				 [lilaya.speech(Ok, so you're going to be giving birth to live young. I've got a room set up for just that purpose, follow me!)]
+				 [lilaya.speech(Ладно, значит, ты будешь рожать живых детенышей. У меня как раз подготовлена комната специально для этого, иди за мной!)]
 			#ENDIF
 		</p>
 	#ENDIF
@@ -291,78 +296,78 @@
 	
 	<htmlContent tag="ASSIST_BIRTHING_FIRST_TIME"><![CDATA[
 	<p>
-		Taking your hands in hers, she leads you out of the lab and down the hallway. You soon find yourself standing outside one of the many doors that line the corridor, and Lilaya steps forwards and holds it open for you. Stepping inside, you find yourself in a specially-purposed birthing room. Instead of being carpeted, like most of the other rooms in this house, clean white tiles have been chosen for this room's flooring. A modern-looking birthing bed is sitting against one wall of the room, but apart from that, there isn't much else in the way of medical equipment. A few comfortable chairs have been placed around the edges of the room, but other than those, and a drinks cabinet that's sitting in one corner, the room is devoid of any other furniture.
+		Взяв тебя за руки, она ведет тебя из лаборатории по коридору. Вскоре вы останавливаетесь перед одной из множества дверей, и Lilaya делает шаг вперед, придерживая дверь для тебя. Переступив порог, ты оказываешься в специально оборудованной родильной комнате. Вместо ковров, которыми устланы почти все остальные комнаты в этом доме, здесь выбран пол из чистой белой плитки. У одной из стен стоит современная родильная кровать, но, помимо неё, медицинского оборудования здесь почти нет. По краям комнаты расставлено несколько удобных кресел, но в остальном здесь нет никакой мебели, кроме шкафчика с напитками в углу.
 	</p>
 	<p>
-		As Lilaya leads you over to the bed, she explains the situation, [lilaya.speech(Ok, so I know you haven't done anything like this before, so I'll quickly explain what's going to happen. In order for you to give birth, I need to focus a special kind of arcane spell into your nice little bump here. Although you won't feel any pain, a lot of the arcane power I'll be using is going to be drawn directly from your aura, and there's a good chance that you're going to pass out from it.)]
+		Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Итак, я знаю, что ты раньше никогда не занималась подобным, поэтому быстро объясню, что будет происходить. Чтобы ты смогла родить, мне нужно направить особое заклинание Арканы прямо в твой милый животик. Хотя боли ты не почувствуешь, большая часть магической силы, которую я буду использовать, будет черпаться напрямую из твоей Ауры, так что велик шанс, что ты просто отключишься.)]
 	</p>
 	<p>
-		You glance across worriedly at Lilaya as she says this, but she squeezes your hand in hers and reassures you, [lilaya.speech(Don't worry, you don't need to stay conscious during this. Now, after I've delivered your children, they're going to grow pretty quickly, so don't be alarmed! They're also going to be pretty hungry, but don't worry if you're not producing any milk, we've got everything they'll need in that cabinet there. Oh, and also, they're probably going to want to leave straight away. All children are born with a strong desire to go out and become independent as soon as possible, so don't take it personally if they've already left by the time you wake up.)]
+		Ты с тревогой смотришь на Lilaya, когда она это говорит, но она сжимает твою ладонь в своей, успокаивая тебя: [lilaya.speech(Не волнуйся, тебе не обязательно оставаться в сознании. Когда я рожу твоих детей, они начнут расти очень быстро, так что не пугайся! И они будут очень голодными, но не переживай, если у тебя не будет молока — в том шкафу есть всё, что им нужно. О, и ещё, они, скорее всего, захотят уйти сразу же. Все дети рождаются с сильным желанием поскорее отправиться в мир и стать независимыми, так что не принимай на свой счёт, если к тому моменту, как ты очнешься, они уже уйдут.)]
 	</p>
 	<p>
 		#IF(pc.isCoverableAreaExposed(CA_VAGINA))
-			As she's speaking, Lilaya starts stripping off your clothes, and as she gets access to your vagina, she gently pushes you down onto the bed.
+			Пока она говорит, Lilaya начинает стягивать с тебя одежду, а когда она получает доступ к твоей вагине, она осторожно укладывает тебя на кровать.
 		#ELSE
-			Your vagina is already exposed, so Lilaya starts by gently pushing you down onto the bed.
+			Твоя вагина уже обнажена, поэтому Lilaya начинает с того, что мягко укладывает тебя на кровать.
 		#ENDIF
 		#IF(pc.isTaur())
-			 Walking around behind your [pc.legRace]'s lower body, your demonic [lilaya.relation(pc)] positions herself so that she's right next to your [pc.pussy+].
+			 Обходя тебя сзади со стороны нижней части [pc.legRace], твоя демоническая [lilaya.relation(pc)] устраивается прямо рядом с твоей [pc.pussy+].
 		#ELSE
-			 After following a few more of her instructions, you find yourself
+			 Выполнив еще несколько её указаний, ты обнаруживаешь, что
 			 #IF(pc.hasLegs())
-				 lying back with your legs spread wide and your [pc.pussy+] fully on display to your demonic [lilaya.relation(pc)].
+				 лежишь, широко разведя ноги, и твоя [pc.pussy+] полностью выставлена на обозрение твоей демонической [lilaya.relation(pc)].
 			 #ELSE
-				 lying back with your [pc.pussy+] fully on display to your demonic [lilaya.relation(pc)].
+				 лежишь, и твоя [pc.pussy+] полностью выставлена на обозрение твоей демонической [lilaya.relation(pc)].
 			 #ENDIF
 		#ENDIF
-		 Giving you a reassuring smile, Lilaya asks, [lilaya.speech(Ok, all set?)]
+		 Улыбнувшись тебе ободряюще, Lilaya спрашивает: [lilaya.speech(Ну что, всё готово?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ASSIST_BIRTHING_SLIME"><![CDATA[
 	<p>
-		Taking your hands in hers, she leads you out of the lab and down the hallway. You soon find yourself standing outside one of the many doors that line the corridor, and Lilaya steps forwards and holds it open for you. Stepping inside, you find yourself in a specially purposed birthing room. Instead of being carpeted, like most of the other rooms in this house, clean white tiles have been chosen for this room's flooring. A modern-looking birthing bed is sitting against one wall of the room, but apart from that, there isn't much else in the way of medical equipment. A few comfortable chairs have been placed around the edges of the room, but other than those, and a drinks cabinet that's sitting in one corner, the room is devoid of any other furniture.
+		Взяв тебя за руки, она ведет тебя из лаборатории по коридору. Вскоре вы останавливаетесь перед одной из множества дверей, и Lilaya делает шаг вперед, придерживая дверь для тебя. Переступив порог, ты оказываешься в специально оборудованной родильной комнате. Вместо ковров, которыми устланы почти все остальные комнаты в этом доме, здесь выбран пол из чистой белой плитки. У одной из стен стоит современная родильная кровать, но, помимо неё, медицинского оборудования здесь почти нет. По краям комнаты расставлено несколько удобных кресел, но в остальном здесь нет никакой мебели, кроме шкафчика с напитками в углу.
 	</p>
 	<p>
-		As Lilaya closes the door behind you, she explains the situation, [lilaya.speech(Ok, so I know you haven't done anything like this before, so I'll quickly explain what's going to happen. In order for you to give birth, I need to focus a special kind of arcane spell into your nice little bump here. Slimes, such as yourself, don't give birth like other creatures. Those little cores inside of you don't need a vagina to exit through; instead, they'll simply split off from your body, taking some of your slime with them. Although you won't feel any pain, a lot of the arcane power I'll be using is going to be drawn directly from your aura, and there's a good chance that you're going to pass out from it.)]
+		Когда Lilaya закрывает за вами дверь, она объясняет ситуацию: [lilaya.speech(Так, я знаю, что ты раньше никогда такого не делала, поэтому быстро объясню, что будет происходить. Чтобы ты смогла родить, мне нужно направить особое заклинание Арканы прямо в твой милый животик. Slime, подобные тебе, рожают не так, как другие существа. Твоим маленьким ядрам не нужна вагина, чтобы выйти наружу; вместо этого они просто отделятся от твоего тела, забирая с собой часть твоего слайма. Хотя боли ты не почувствуешь, большая часть арканической силы, которую я буду использовать, будет черпаться напрямую из твоей Ауры, так что велик шанс, что ты просто отключишься.)]
 	</p>
 	<p>
-		You glance across worriedly at Lilaya as she says this, but she squeezes your hand in hers and reassures you, [lilaya.speech(Don't worry, you don't need to stay conscious during this, and I'll make sure to keep feeding you fluids to replenish any slime that your children take with them. I'll do the same with the newly birthed slimes, so they'll quickly get all of the fluid they need to mature to adulthood. Oh, and also, they're probably going to want to leave straight away. All children are born with a strong desire to go out and become independent as soon as possible, so don't take it personally if they've already left by the time you wake up.)]
+		Ты с беспокойством смотришь на Lilaya, когда она это произносит, но она сжимает твою ладонь в своей, успокаивая тебя: [lilaya.speech(Не волнуйся, тебе не обязательно оставаться в сознании во время процесса. Я прослежу, чтобы тебя постоянно поили жидкостью, восполняя тот слайм, который заберут с собой твои дети. То же самое я сделаю и с новорожденными слаймами, чтобы они быстро получили всю необходимую влагу для созревания. О, и еще — скорее всего, они захотят уйти сразу же. Все дети рождаются с сильным желанием поскорее отправиться в мир и стать независимыми, так что не принимай на свой счет, если к тому моменту, как ты проснешься, они уже уйдут.)]
 	</p>
 	<p>
-		Lilaya gets you to lie down on the bed, and, smiling, she asks, [lilaya.speech(You ready?)]
+		Lilaya укладывает тебя на кровать и с улыбкой спрашивает: [lilaya.speech(Ты готов?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ASSIST_BIRTHING"><![CDATA[
 	<p>
-		Taking your hands in hers, she leads you out of the lab and down the hallway. You soon find yourself standing outside one of the many doors that line the corridor, and Lilaya steps forwards and holds it open for you. Stepping inside, you once again find yourself standing in the specially purposed birthing room. Instead of being carpeted, like most of the other rooms in this house, clean white tiles have been chosen for this room's flooring. A modern-looking birthing bed is sitting against one wall of the room, but apart from that, there isn't much else in the way of medical equipment. A few comfortable chairs have been placed around the edges of the room, but other than those, and a drinks cabinet that's sitting in one corner, the room is devoid of any other furniture.
+		Взяв тебя за руки, она ведет тебя из лаборатории по коридору. Вскоре вы останавливаетесь перед одной из множества дверей, вдоль которых тянется проход; Lilaya делает шаг вперед и придерживает дверь для тебя. Переступив порог, ты снова оказываешься в специально оборудованной родильной комнате. Вместо ковров, которыми устланы почти все остальные комнаты в этом доме, здесь выбран пол из чистой белой плитки. У одной из стен стоит современная родильная кровать, но, помимо нее, медицинского оборудования здесь почти нет. По краям комнаты расставлено несколько удобных кресел, но в остальном здесь нет никакой мебели, кроме шкафчика для напитков в одном из углов.
 	</p>
 	<p>
-		As Lilaya leads you over to the bed, she reminds you of what's about to happen, [lilaya.speech(Ok, so I know you've done this before, but I'll quickly go over what's going to happen. In order for you to give birth, I need to focus a special kind of arcane spell into your nice little bump here. Although you won't feel any pain, a lot of the arcane power I'll be using is going to be drawn directly from your aura, and there's a good chance that you're going to pass out from it.)]
+		Когда Lilaya ведет тебя к кровати, она напоминает тебе о том, что сейчас произойдет: [lilaya.speech(Ладно, я знаю, что ты уже проходил через это, но я быстро пробегусь по тому, что будет дальше. Чтобы ты смог родить, мне нужно сосредоточить особое заклинание аркана в твоем милом маленьком животике. Хотя боли ты не почувствуешь, большая часть арканической силы, которую я буду использовать, будет черпаться прямо из твоей ауры, так что велик шанс, что ты просто отключишься.)]
 	</p>
 	<p>
-		You let out a sigh she says this, but she squeezes your hand in hers and reassures you, [lilaya.speech(Don't worry, remember, you don't need to stay conscious during this. Now, just remember that after I've delivered your children, they're going to grow pretty quickly! They're also going to be hungry, but don't worry if you're not producing any milk, we've got everything they'll need in that cabinet there. Oh, and also, they're probably going to want to leave straight away. All children are born with a strong desire to go out and become independent as soon as possible, so don't take it personally if they've already left by the time you wake up.)]
+		Ты вздыхаешь после её слов, но она сжимает твою ладонь в своей, успокаивая тебя: [lilaya.speech(Не волнуйся, помни, что тебе не обязательно оставаться в сознании во время процесса. И просто имей в виду: как только я приму твоих детей, они начнут расти очень быстро! А еще они будут очень голодными, но не переживай, если у тебя не будет молока — в том шкафу есть всё, что им нужно. О, и еще, они, скорее всего, захотят уйти сразу же. Все дети рождаются с сильным желанием поскорее отправиться в мир и стать независимыми, так что не принимай на свой счет, если к тому моменту, как ты очнешься, они уже уйдут.)]
 	</p>
 	<p>
 		#IF(pc.isCoverableAreaExposed(CA_VAGINA))
-			As she's speaking, Lilaya starts stripping off your clothes, and as she gets access to your vagina, she gently pushes you down onto the bed.
+			Пока она говорит, Lilaya начинает стягивать с тебя одежду, а когда она получает доступ к твоей вагине, она осторожно укладывает тебя на кровать.
 		#ELSE
-			Your vagina is already exposed, so Lilaya starts by gently pushing you down onto the bed.
+			Твоя вагина уже обнажена, поэтому Lilaya начинает с того, что мягко укладывает тебя на кровать.
 		#ENDIF
 		#IF(pc.isTaur())
-			 Walking around behind your [pc.legRace]'s lower body, your demonic [lilaya.relation(pc)] positions herself so that she's right next to your [pc.pussy+].
+			 Обходя тебя сзади со стороны нижней части [pc.legRace], твоя демоническая [lilaya.relation(pc)] устраивается прямо рядом с твоей [pc.pussy+].
 		#ELSE
-			 After following a few more of her instructions, you find yourself
+			 Выполнив еще несколько её указаний, ты обнаруживаешь, что
 			 #IF(pc.hasLegs())
-				 lying back with your legs spread wide and your [pc.pussy+] fully on display to your demonic [lilaya.relation(pc)].
+				 лежишь, широко разведя ноги, и твоя [pc.pussy+] полностью выставлена на обозрение твоей демонической [lilaya.relation(pc)].
 			 #ELSE
-				 lying back with your [pc.pussy+] fully on display to your demonic [lilaya.relation(pc)].
+				 лежишь, и твоя [pc.pussy+] полностью выставлена на обозрение твоей демонической [lilaya.relation(pc)].
 			 #ENDIF
 		#ENDIF
-		 Giving you a reassuring smile, Lilaya asks, [lilaya.speech(Ok, all set?)]
+		 Улыбнувшись тебе ободряюще, Lilaya спрашивает: [lilaya.speech(Ну что, всё готово?)]
 	</p>
 	]]>
 	</htmlContent>
@@ -372,27 +377,27 @@
 	
 	<htmlContent tag="LILAYA_ASSISTS_BIRTHING_DELIVERS"><![CDATA[
 	<p>
-		You nod to Lilaya, [pc.speech(I'm ready...)]
+		Ты киваешь Lilaya: [pc.speech(Я готов...)]
 	</p>
 	<p>
-		[lilaya.speech(Right, here we go!)] she says, and you see sparks of purple energy start to run down her arms.
+		[lilaya.speech(Так, поехали!)] — говорит она, и ты видишь, как по её рукам начинают пробегать искры фиолетовой энергии.
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			You turn your head and look back over your shoulder to
+			Ты поворачиваешь голову и оглядываешься через плечо, чтобы
 		#ELSE
-			You look down
+			Ты смотришь вниз
 			#IF(pc.hasLegs())
-				 between your [pc.legs] and
+				 между твоим [pc.legs] и
 			#ELSE
-				 to your groin and
+				 в область паха и
 			#ENDIF
 		#ENDIF
-		 see Lilaya holding her hands over your [pc.pussy+], before lifting them to hover over your pregnant belly. A huge wave of exhaustion crashes over you, and you remember what she said about how she was going to draw out your aura for this.
+		 ты видишь, как Lilaya держит руки над твоим [pc.pussy+], а затем поднимает их, занося над твоим беременным животом. На тебя накатывает огромная волна усталости, и ты вспоминаешь её слова о том, что для этого она собирается вытянуть твою Ауру.
 		#IF(pc.getBodyMaterial()==BODY_MATERIAL_SLIME)
-			 You struggle to keep your eyes open, but as you feel an intense pushing sensation deep with your slimy body, you're almost glad that you can't see what's happening. You start to slip in and out of consciousness, and you find yourself having a strange dream.
+			 Ты изо всех сил стараешься не смыкать глаз, но когда внутри твоего слизистого тела возникает интенсивное чувство распирания, ты почти радуешься тому, что не видишь, что происходит. Ты начинаешь то проваливаться в беспамятство, то приходить в себя, и тебе снится странный сон.
 		#ELSE
-			 You struggle to keep your eyes open, but as you feel an intense pushing sensation deep within your vagina, you're almost glad that you can't see what's happening. You start to slip in and out of consciousness, and you find yourself having a strange dream.
+			 Ты изо всех сил стараешься не смыкать глаз, но когда внутри твоей вагины возникает интенсивное чувство распирания, ты почти радуешься тому, что не видишь, что происходит. Ты начинаешь то проваливаться в беспамятство, то приходить в себя, и тебе снится странный сон.
 		#ENDIF
 	</p>
 	]]>
@@ -403,16 +408,16 @@
 	
 	<htmlContent tag="LILAYA_ASSISTS_BIRTHING_KNOCK_OUT"><![CDATA[
 	<p>
-		[pc.speech(Have you got anything to drink? You know, so maybe I don't have to be awake for this...)] you ask, looking up at Lilaya hopefully.
+		[pc.speech(У тебя есть что-нибудь выпить? Ну, чтобы мне, может, не пришлось всё это осознавать...)] — спрашиваешь ты, с надеждой глядя на Lilaya.
 	</p>
 	<p>
-		Letting out a good-natured laugh, she walks over to the drinks cabinet, saying, [Lilaya.speech(You know, I thought you might ask for that! I prepared this for you earlier!)]
+		Добродушно рассмеявшись, она подходит к шкафу с напитками, говоря: [Lilaya.speech(Знаешь, я так и думала, что ты об этом попросишь! Я приготовила это для тебя заранее!)]
 	</p>
 	<p>
 		#IF(pc.getBodyMaterial()==BODY_MATERIAL_SLIME)
-			She hands you a glass of what looks like ordinary sparkling water, but as you bring it to your lips and quickly down the liquid, you notice that it has a strong taste of peppermint. Almost instantly, you feel your eyelids grow heavy, and as you lie back on the bed, you vaguely see Lilaya bringing her hands up to hover over your pregnant belly. Sparks of purple energy start to run down her arms, and as you start to feel an intense pushing sensation deep within your slimy body, you're glad that you're not going to be awake for this.
+			Она протягивает тебе стакан с чем-то, похожим на обычную газированную воду, но стоит тебе поднести его к губам и быстро осушить, как ты чувствуешь сильный привкус перечной мяты. Почти мгновенно веки наливаются тяжестью, и, когда ты откидываешься на кровать, перед глазами смутно предстает Lilaya: она подносит руки к твоему беременному животу. По её рукам начинают пробегать искры фиолетовой энергии, и когда ты начинаешь ощущать интенсивные позывы к потужанию глубоко внутри своего слизистого тела, ты радуешься тому, что не будешь приходить в себя во время этого процесса.
 		#ELSE
-			She hands you a glass of what looks like ordinary sparkling water, but as you bring it to your lips and quickly down the liquid, you notice that it has a strong taste of peppermint. Almost instantly, you feel your eyelids grow heavy, and as you lie back on the bed, you vaguely see Lilaya bringing her hands up to hover over your pregnant belly. Sparks of purple energy start to run down her arms, and as you start to feel an intense pushing sensation deep within your vagina, you're glad that you're not going to be awake for this.
+			Она протягивает тебе стакан с чем-то, похожим на обычную газированную воду, но стоит тебе поднести его к губам и быстро осушить, как ты чувствуешь сильный привкус перечной мяты. Почти мгновенно веки наливаются тяжестью, и, когда ты откидываешься на кровать, перед глазами смутно предстает Lilaya: она подносит руки к твоему беременному животу. По её рукам начинают пробегать искры фиолетовой энергии, и когда ты начинаешь ощущать интенсивные позывы к потужанию глубоко внутри своей вагины, ты радуешься тому, что не будешь приходить в себя во время этого процесса.
 		#ENDIF
 	</p>
 	]]>
@@ -423,27 +428,27 @@
 	
 	<htmlContent tag="LILAYA_ASSISTS_EGG_LAYING"><![CDATA[
 	<p>
-		Taking your hands in hers, Lilaya leads you out of the lab and up to your room. Following her in as she pushes open the door, you see that Rose has laid a soft protective covering over your bed, and a few bottles of milk have been placed on your bedside cabinet.
+		Взяв тебя за руки, Lilaya ведет тебя из лаборатории к твоей комнате. Следуя за ней, пока она толкает открывающуюся дверь, ты видишь, что Rose постелила на твою кровать мягкое защитное покрывало, а на прикроватную тумбочку поставила несколько бутылок молока.
 	</p>
 	<p>
 		#IF(!pc.isQuestCompleted(QUEST_LINE_SIDE_FIRST_TIME_PREGNANCY))
-			As Lilaya leads you over to the bed, she explains the situation, [lilaya.speech(Ok, so I know you haven't done anything like this before, so I'll quickly explain what's going to happen. In order for you to start laying your #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, I need to focus a special kind of arcane spell into your nice little bump here. This isn't as intense as giving birth to live young, so you're going to stay conscious through all of this.)]
+			Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Ладно, я знаю, что ты раньше никогда ничего подобного не делала, так что я быстро объясню, что будет происходить. Чтобы ты начала рожать свои} #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, I need to focus a special kind of arcane spell into your nice little bump here. This isn't as intense as giving birth to live young, so you're going to stay conscious through all of this.)]
 		#ELSE
-			As Lilaya leads you over to the bed, she explains the situation, [lilaya.speech(Ok, so I know we've done this before, but I'll just quickly remind you of what's going to happen. In order for you to start laying your #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, I need to focus a special kind of arcane spell into your nice little bump here. This isn't as intense as giving birth to live young, so you're going to stay conscious through all of this.)]
+			Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Ладно, я знаю, мы это уже проходили, но давай я быстро напомню тебе, что сейчас будет. Чтобы ты мог начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, I need to focus a special kind of arcane spell into your nice little bump here. This isn't as intense as giving birth to live young, so you're going to stay conscious through all of this.)]
 		#ENDIF
 	</p>
 	<p>
-		You glance across worriedly at Lilaya as she says this, but she squeezes your hand in hers and reassures you, [lilaya.speech(Don't worry, it doesn't hurt or anything! Now, after I've helped you lay your #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, you're probably going to get aggressive if I hang around for too long, so I'll leave as quickly as possible. Oh, and don't worry about your behaviour, I understand that your maternal instinct is going to get pretty intense.)]
+		Ты с беспокойством смотришь на Lilaya, когда она это говорит, но она сжимает твою ладонь в своей и успокаивает тебя: [lilaya.speech(Не волнуйся, это совсем не больно! Так, когда я помогу тебе родить твои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, you're probably going to get aggressive if I hang around for too long, so I'll leave as quickly as possible. Oh, and don't worry about your behaviour, I understand that your maternal instinct is going to get pretty intense.)]
 	</p>
 	<p>
-		You fidget about uncomfortably a little, but Lilaya makes a soothing shushing noise as she pushes you down into the middle of your bed, before shuffling around to sit behind you. [lilaya.speech(It's alright, don't worry! So, after you've laid your #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs, you're going to incubate it#ELSEegg, you're going to incubate it#ENDIF for roughly twenty-four hours, during which time you'll find that you'll be unable to sleep or get any rest. Once the #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs start#ELSEeggs starts#ENDIF hatching, all that built-up tiredness will suddenly wash over you, and you might collapse from exhaustion. I'll be waiting to come in and help your children, so don't worry if you end up passing out! Oh, and remember that they're going to grow pretty rapidly once they've hatched, so they might have already flown the nest by the time you wake up.)]
+		Ты немного беспокойно ерзаешь, но Lilaya издает успокаивающий шуршащий звук, усаживая тебя в центр кровати, а затем устраивается позади тебя. [lilaya.speech(Все хорошо, не переживай! Значит, после того как ты родишь свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs, you're going to incubate it#ELSEegg, you're going to incubate it#ENDIF for roughly twenty-four hours, during which time you'll find that you'll be unable to sleep or get any rest. Once the #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs start#ELSEeggs starts#ENDIF hatching, all that built-up tiredness will suddenly wash over you, and you might collapse from exhaustion. I'll be waiting to come in and help your children, so don't worry if you end up passing out! Oh, and remember that they're going to grow pretty rapidly once they've hatched, so they might have already flown the nest by the time you wake up.)]
 	</p>
 	<p>
-		As she's been speaking, Lilaya has been shuffling around into a comfortable position behind you. Kneeling down on the bed, she presses herself into your back, before reaching around to rub her hands up and down over your belly.
+		Пока она говорила, Lilaya устроилась позади тебя поудобнее. Опустившись на колени на кровати, она прижимается к твоей спине, а затем обхватывает тебя руками, поглаживая живот вверх и вниз.
 		#IF(pc.hasLegs())
-		 	 Moving down to apply a gentle pressure to your inner-thighs, Lilaya gets you to spread your legs so that you're ready to start laying your #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF. In a gentle voice she then asks, [lilaya.speech(Ok, all set?)]
+		 	 Спускаясь ниже, чтобы мягко надавить на твои внутренние стороны бедер, Lilaya заставляет тебя раздвинуть ноги, чтобы ты был готов начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF. In a gentle voice she then asks, [lilaya.speech(Ok, all set?)]
 		 #ELSE
-		 	 Moving down to rest her hands on your lower abdomen, Lilaya asks, [lilaya.speech(Ok, you're ready to start laying your #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, so shall we start?)]
+		 	 Опустив руки на твой низ живота, Lilaya спрашивает: [lilaya.speech(Ну что, ты готов начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, so shall we start?)]
 		 #ENDIF
 	</p>
 	]]>
@@ -454,44 +459,44 @@
 	
 	<htmlContent tag="LILAYA_ASSISTS_EGG_LAYING_DELIVERS"><![CDATA[
 	<p>
-		You nod as you look down at Lilaya's hands resting on your swollen stomach. [pc.speech(I'm ready...)]
+		Ты киваешь, глядя на руки Lilaya, лежащие на твоем раздутом животе. [pc.speech(Я готов...)]
 	</p>
 	<p>
-		[lilaya.speech(Right, just try and relax...)] she whispers into your ear, and as she does so, you see a soft pink glow start to run down her arms.
+		[lilaya.speech(Хорошо, просто постарайся расслабиться...)] — шепчет она тебе на ухо, и в этот момент ты замечаешь, как по её рукам начинает разливаться мягкое розовое свечение.
 	</p>
 	<p>
-		Sliding her hands up and down over your pregnant belly, you feel her start to apply a gentle pressure with her thumbs, as though she's trying to push out the #IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF within you. As she does this, you start to feel an intense pressure building up deep within your vagina, and, collapsing back into Lilaya,
+		Она водит ладонями вверх и вниз по твоему беременному животу, и ты чувствуешь, как её большие пальцы начинают мягко надавливать, словно она пытается вытолкнуть #IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF within you. As she does this, you start to feel an intense pressure building up deep within your vagina, and, collapsing back into Lilaya,
 		#IF(pc.hasLegs())
-			 you spread your legs and let out a desperate whine.
+			 тебя, раздвигаешь ноги и издаешь отчаянный скулящий стон.
 		#ELSE
-			 you buck your hips and let out a desperate whine.
+			 тебя, подаешься тазом вперед и издаешь отчаянный скулящий стон.
 		#ENDIF
 	</p>
 	<p>
-		[lilaya.speech(That's right, now push... Go on, you can do it...)] Lilaya softly speaks into your ear, and, obeying her instructions, you try to push the pressure out from within your womb.
+		[lilaya.speech(Вот так, теперь тужься... Давай, ты сможешь...)] — Lilaya мягко шепчет тебе на ухо, и, повинуясь её наставлениям, ты пытаешься вытолкнуть давление изнутри своей утробы.
 	</p>
 	#IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)
 		<p>
-			Looking down, you see the tip of your first egg peeking out from your vagina, and with a determined cry, you push with all your might. You feel the egg stretching you out as you continue to apply pressure, but just as you feel that you can't keep going any longer, the egg pops free and slides out onto the bed beneath you.
+			Посмотрев вниз, ты видишь кончик своего первого яйца, выглядывающий из влагалища, и с решительным криком тужишься изо всех сил. Ты чувствуешь, как яйцо растягивает тебя, пока ты продолжаешь давить, но как раз в тот момент, когда кажется, что сил больше нет, яйцо с хлопком выскальзывает и оказывается на постели под тобой.
 		</p>
 		<p>
-			[pc.speech(I did it...)] you sigh, looking down at the egg you've just laid. It looks to be about the same size as an emu's egg, and as you marvel at its pale pink colouring and smooth shell, you feel yourself subconsciously reaching out to pick it up and cradle in your arms.
+			[pc.speech(У меня получилось...)] — вздыхаешь ты, глядя на только что отложенное яйцо. По размеру оно кажется почти как страусиное, и пока ты завороженно разглядываешь его нежно-розовый цвет и гладкую скорлупу, ты ловишь себя на подсознательном желании протянуть руки, подхватить его и прижать к себе.
 		</p>
 		<p>
-			[lilaya.speech(Good [pc.girl], [pc.name]! But wait, just leave it for a moment, you've still got more to lay!)] Lilaya pulls you back into her, continuing to apply the gentle pressure on your stomach as she makes soothing shushing noises into your ear.
+			[lilaya.speech(Молодец, [pc.girl], [pc.name]! Но подожди, оставь его пока так, тебе еще нужно отложить еще несколько!)] — Lilaya притягивает тебя обратно к себе, продолжая мягко надавливать на твой живот и успокаивающе шуршать тебе в ухо.
 		</p>
 		<p>
-			Doing as Lilaya says, you allow her to pull you back, but as she does so, a strange feeling suddenly washes over you, and it takes all of your willpower to prevent yourself from pushing Lilaya away and attempting to grab your egg. Almost as though she sensed what you were thinking, Lilaya reminds you to try and overcome your maternal instincts, at least until you've finished laying all your eggs. After promising to do your best, you set about pushing out the rest of your eggs, and within half an hour, you've laid a complete clutch of [#SPECIAL_PARSE_0] eggs.
+			Повинуясь словам Lilaya, ты позволяешь ей оттянуть тебя назад, но в этот момент тебя внезапно накрывает странное чувство. Тебе требуется вся твоя Сила воли, чтобы не оттолкнуть Lilaya и не попытаться схватить свое яйцо. Словно почувствовав твои мысли, Lilaya напоминает тебе, что нужно постараться преодолеть материнские инстинкты — по крайней мере, пока ты не отложишь все яйца. Пообещав сделать всё возможное, ты принимаешься выталкивать оставшиеся яйца, и уже через полчаса ты откладываешь целую кладку из [#SPECIAL_PARSE_0] яиц.
 		</p>
 	#ELSE
 		<p>
-			Looking down, you see the tip of your egg peeking out from your vagina, and with a determined cry, you push with all your might. You feel the egg stretching you out as you continue to apply pressure, but just as you feel that you can't keep going any longer, the egg pops free and slides out onto the bed beneath you.
+			Посмотрев вниз, ты видишь кончик своего яйца, выглядывающий из влагалища, и с решительным криком тужишься изо всех сил. Ты чувствуешь, как яйцо растягивает тебя, пока ты продолжаешь давить, но как раз в тот момент, когда кажется, что силы на исходе, яйцо с характерным звуком выскальзывает и падает на кровать под тобой.
 		</p>
 		<p>
-			[pc.speech(I did it...)] you sigh, looking down at the egg you've just laid. It looks to be about the same size as an emu's egg, and as you marvel at its pale pink colouring and smooth shell, you feel yourself subconsciously reaching out to pick it up and cradle it in your arms.
+			[pc.speech(У меня получилось...)] — вздыхаешь ты, глядя на только что отложенное яйцо. Оно размером примерно с эму, и пока ты завороженно разглядываешь его нежно-розовый цвет и гладкую скорлупу, ты ловишь себя на подсознательном желании подхватить его и прижать к груди.
 		</p>
 		<p>
-			[lilaya.speech(Good [pc.girl], [pc.name]!)] Lilaya exclaims, but as she does so, a strange feeling suddenly washes over you, and it takes all of your willpower to prevent yourself from pushing her away and attempting to grab your egg. Almost as though she sensed what you were thinking, Lilaya reminds you that your maternal instincts are about to take hold...
+			[lilaya.speech(Молодец, [pc.girl], [pc.name]!)] — восклицает Lilaya, но в этот миг тебя внезапно накрывает странное чувство, и тебе требуется вся твоя Сила воли, чтобы не оттолкнуть её и не попытаться схватить свое яйцо. Словно почувствовав твои мысли, Lilaya напоминает тебе, что твои материнские инстинкты вот-вот возьмут верх...
 		</p>
 	#ENDIF
 	]]>
@@ -503,35 +508,37 @@
 	<htmlContent tag="LILAYA_ASSISTS_EGG_LAYING_PROTECT_THE_EGGS"><![CDATA[
 	#IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)
 		<p>
-			As you look down at your clutch of eggs, you find yourself burning with an overwhelming need to protect them at all costs. Throwing Lilaya's arms off of you, you collapse forwards, wrapping your [pc.arms] around your precious brood as you turn your head back and shout, [pc.speech(Get away! Don't hurt them!)]
+			Когда ты смотришь на свою кладку, тебя охватывает непреодолимое желание защищать её любой ценой. Сбросив руки Lilaya со своего тела, ты подаешься вперед, обвивая свои драгоценные яйца [pc.arms], и, резко обернувшись, выкрикиваешь: [pc.speech(Прочь! Не смей их трогать!)]
 		</p>
 		<p>
-			Lilaya instantly stands up and starts backing off towards the door, [lilaya.speech(Ok, ok, don't worry, I'm leaving. You'll be safe in here...)]
+			Lilaya тут же вскакивает и начинает пятиться к двери, [lilaya.speech(Хорошо, хорошо, не волнуйся, я ухожу. Здесь ты будешь в безопасности...)]
 		</p>
 		<p>
-			Still making soothing shushing noises, she opens the door to your room and slips out, before closing it firmly behind her. Having driven off the only possible threat to your nest, you shuffle around into a more comfortable position, pressing the heat of your body up against your eggs as you continue to cover them with your [pc.arms]. You make sure to position yourself so that you're looking at the only entrance to your room, and, once satisfied that you're in a good position, you settle down to your vigilant watch...
+			Продолжая успокаивающе шипеть, она открывает дверь твоей комнаты и выскальзывает наружу, плотно закрывая её за собой. Прогнав единственную возможную угрозу для своего гнезда, ты устраиваешься поудобнее, прижимаясь всем теплом тела к яйцам и продолжая укрывать их своим [pc.arms]. Ты стараешься расположиться так, чтобы видеть единственный вход в комнату, и, убедившись, что занял выгодную позицию, замираешь в бдительном ожидании...
 		</p>
 		<p>
-			For the next twenty hours, you barely move a muscle, but despite the fact that you're lying on a warm, comfortable bed, you don't even consider for a moment to get any rest. Your eyes only occasionally drift away from the door, but only to check your surroundings for any sign of danger.
+		
+Следующие двадцать часов ты почти не шевелишься, и, несмотря на то что лежишь на теплой, мягкой постели, даже не думаешь о том, чтобы хоть немного отдохнуть. Твой взгляд лишь изредка отрывается от двери, но лишь для того, чтобы проверить обстановку на наличие малейших признаков опасности.
 		</p>
 		<p>
-			As you enter the twenty-first hour of your incubation, you feel one of your eggs start to move. Letting out a delighted cry, you shift position slightly to look down at your clutch. A feeling of overwhelming joy rushes through you as you see each and every one of your eggs trembling and shifting about.
+			На двадцать первый час инкубации ты чувствуешь, как одно из твоих яиц начинает шевелиться. Издав восторженный крик, ты слегка меняешь положение, чтобы взглянуть на свою кладку. Волны безграничной радости захлестывают тебя, когда ты видишь, как каждое твое яйцо дрожит и перекатывается.
 		</p>
 	#ELSE
 		<p>
-			As you look down at your egg, you find yourself burning with an overwhelming need to protect it at all costs. Throwing Lilaya's arms off of you, you collapse forwards, wrapping your [pc.arms] around your precious child as you turn your head back and shout, [pc.speech(Get away! Don't hurt it!)]
+			Глядя на свое яйцо, ты чувствуешь, как тебя охватывает непреодолимое желание защищать его любой ценой. Сбросив руки Lilaya со своего тела, ты подаешься вперед, обвивая своим [pc.arms] свое драгоценное дитя, и, резко обернувшись, выкрикиваешь: [pc.speech(Прочь! Не смейте его трогать!)]
 		</p>
 		<p>
-			Lilaya instantly stands up and starts backing off towards the door, [lilaya.speech(Ok, ok, don't worry, I'm leaving. You'll be safe in here...)]
+			Lilaya тут же вскакивает и начинает пятиться к двери, [lilaya.speech(Хорошо, хорошо, не волнуйся, я ухожу. Здесь ты будешь в безопасности...)]
 		</p>
 		<p>
-			Still making soothing shushing noises, she opens the door to your room and slips out, before closing it firmly behind her. Having driven off the only possible threat to your nest, you shuffle around into a more comfortable position, pressing the heat of your body up against your egg as you continue to cover it with your [pc.arms]. You make sure to position yourself so that you're looking at the only entrance to your room, and, once satisfied that you're in a good position, you settle down to your vigilant watch...
+			Продолжая успокаивающе шуршать, она открывает дверь в твою комнату и выскальзывает наружу, плотно прикрыв за собой дверь. Прогнав единственную возможную угрозу для твоего гнезда, ты устраиваешься поудобнее, прижимаясь всем теплом тела к своему яйцу и продолжая укрывать его своим [pc.arms]. Ты стараешься расположиться так, чтобы видеть единственный вход в комнату, и, убедившись, что заняла выгодную позицию, замираешь в бдительном ожидании...
 		</p>
 		<p>
-			For the next twenty hours, you barely move a muscle, but despite the fact that you're lying on a warm, comfortable bed, you don't even consider for a moment to get any rest. Your eyes only occasionally drift away from the door, but only to check your surroundings for any sign of danger.
+		
+Следующие двадцать часов ты почти не шевелишься, и, несмотря на то что лежишь на теплой, мягкой постели, даже не думаешь о том, чтобы хоть немного отдохнуть. Твой взгляд лишь изредка отрывается от двери, но лишь для того, чтобы проверить обстановку на наличие малейших признаков опасности.
 		</p>
 		<p>
-			As you enter the twenty-first hour of your incubation, you feel your egg start to move. Letting out a delighted cry, you shift position slightly to look down at it. A feeling of overwhelming joy rushes through you as you see it trembling and shifting about.
+			На двадцать первый час инкубации ты чувствуешь, как твое яйцо начинает шевелиться. Издав восторженный крик, ты слегка меняешь положение, чтобы взглянуть на него. Волны безграничной радости захлестывают тебя, когда ты видишь, как оно дрожит и перекатывается.
 		</p>
 	#ENDIF
 	]]>
@@ -540,9 +547,9 @@
 	<htmlContent tag="LILAYA_ASSISTS_EGG_LAYING_PROTECT_THE_EGGS_FEMININE_HATCHING"><![CDATA[
 	<p>
 		#IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)
-			You watch in awe as the first egg starts to crack. Within moments, a little head bursts through the top, and your eyes open wide as you see a tiny [#SPECIAL_PARSE_0] crawling out. A little egg-tooth is still attached to her forehead, but after a quick shake, she drops it off onto the bed beneath her. As all the other eggs start cracking in turn, you feel a wave of exhaustion washing over you, and with what little strength you have left, you feebly call out for Lilaya.
+			Ты завороженно наблюдаешь, как первое яйцо начинает трескаться. Спустя мгновение из верхушки пробивается крошечная головка, и твои глаза расширяются, когда ты видишь, как наружу выбирается маленькая [#SPECIAL_PARSE_0]. К её лбу всё ещё прикреплен яичный зубок, но после короткого встряхивания она сбрасывает его на постель под собой. Когда остальные яйца начинают трескаться одно за другим, тебя накрывает волна изнеможения, и из последних сил ты слабо зовешь Lilaya.
 		#ELSE
-			You watch in awe as your egg starts to crack. Within moments, a little head bursts through the top, and your eyes open wide as you see a tiny [#SPECIAL_PARSE_0] crawling out. A little egg-tooth is still attached to her forehead, but after a quick shake, she drops it off onto the bed beneath her. As you see that your child has safely hatched, you suddenly feel a wave of exhaustion washing over you, and with what little strength you have left, you feebly call out for Lilaya.
+			Ты завороженно наблюдаешь, как твое яйцо начинает трескаться. Спустя мгновение из верхушки пробивается крошечная головка, и твои глаза расширяются, когда ты видишь, как наружу выбирается маленькая [#SPECIAL_PARSE_0]. К её лбу всё ещё прикреплен яичный зубок, но после короткого встряхивания она сбрасывает его на постель под собой. Видя, что твой ребенок благополучно вылупился, ты внезапно чувствуешь, как тебя накрывает волна изнеможения, и из последних сил ты слабо зовешь Lilaya.
 		#ENDIF
 	</p>
 	]]>
@@ -551,9 +558,9 @@
 	<htmlContent tag="LILAYA_ASSISTS_EGG_LAYING_PROTECT_THE_EGGS_MASCULINE_HATCHING"><![CDATA[
 	<p>
 		#IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)
-			You watch in awe as the first egg starts to crack. Within moments, a little head bursts through the top, and your eyes open wide as you see a tiny [#SPECIAL_PARSE_0] crawling out. A little egg-tooth is still attached to his forehead, but after a quick shake, he drops it off onto the bed beneath him. As all the other eggs start cracking in turn, you feel a wave of exhaustion washing over you, and with what little strength you have left, you feebly call out for Lilaya.
+			Ты завороженно наблюдаешь, как первое яйцо начинает трескаться. Спустя мгновение из верхушки пробивается крошечная головка, и твои глаза расширяются, когда ты видишь, как наружу выбирается маленький [#SPECIAL_PARSE_0]. К его лбу всё ещё прикреплен яичный зубок, но после короткого встряхивания он сбрасывает его на постель под собой. Когда остальные яйца начинают трескаться одно за другим, тебя накрывает волна изнеможения, и из последних сил ты слабо зовешь Lilaya.
 		#ELSE
-			You watch in awe as your egg starts to crack. Within moments, a little head bursts through the top, and your eyes open wide as you see a tiny [#SPECIAL_PARSE_0] crawling out. A little egg-tooth is still attached to his forehead, but after a quick shake, he drops it off onto the bed beneath him. As you see that your child has safely hatched, you suddenly feel a wave of exhaustion washing over you, and with what little strength you have left, you feebly call out for Lilaya.
+			Ты с благоговением наблюдаешь, как твое яйцо начинает трескаться. Спустя мгновение сверху пробивается крошечная головка, и твои глаза широко распахиваются, когда ты видишь, как наружу выбирается маленький [#SPECIAL_PARSE_0]. На его лбу всё еще виден яичный зуб, но после короткого встряхивания он сбрасывает его на постель под собой. Видя, что твой ребенок благополучно вылупился, ты внезапно чувствуешь, как тебя накрывает волна изнеможения, и из последних сил слабо зовешь Lilaya.
 		#ENDIF
 	</p>
 	]]>
@@ -562,24 +569,24 @@
 	<htmlContent tag="LILAYA_ASSISTS_EGG_LAYING_PROTECT_THE_EGGS_END"><![CDATA[
 	#IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)
 		<p>
-			As your head collapses down onto the bed, you vaguely see Lilaya rushing into the room. A delighted smile breaks out across her face as she sees that your eggs are hatching, and just before you pass out, you see her bending down in order to start taking care of your children.
+			Когда твоя голова бессильно падает на кровать, ты смутно видишь, как в комнату влетает Lilaya. На ее лице расцветает восторженная улыбка при виде того, что твои яйца начали вылупляться, и прямо перед тем, как ты теряешь сознание, ты видишь, как она наклоняется, чтобы начать заботиться о твоих детях.
 		</p>
 		<p>
 			#IF(pc.getBreastRawMilkStorageValue()>0 && pc.isAbleToAccessCoverableArea(CA_NIPPLES, true) && pc.getNippleShape()==NIPPLE_SHAPE_NORMAL && game.isLactationContentEnabled())
-				Some time later, you drift back into consciousness for a moment as you feel a desperate suckling at your nipples, and you're vaguely aware that it's your children who are eagerly drinking down mouthfuls of your [pc.milk]. Letting your eyelids close again, you soon drift off into an exhausted sleep.
+				Спустя некоторое время ты на мгновение приходишь в сознание, чувствуя отчаянное сосание у своих сосков, и смутно осознаешь, что это твои дети жадно припадают к твоей [pc.milk]. Снова закрывая веки, ты вскоре погружаешься в изнуренный сон.
 			#ELSE
-				Some time later, you drift back into consciousness for a moment as you feel a weight on your chest, and you're vaguely aware of cradling your children in your arms as they eagerly drink down bottle after bottle of the milk that Lilaya has provided for you. Letting your eyelids close again, you soon drift off into an exhausted sleep.
+				Спустя некоторое время ты на мгновение приходишь в сознание, чувствуя тяжесть на своей груди, и смутно осознаешь, что баюкаешь своих детей на руках, пока они жадно выпивают бутылочку за бутылочкой молока, которое приготовила для тебя Lilaya. Снова закрывая веки, ты вскоре погружаешься в изнуренный сон.
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			As your head collapses down onto the bed, you vaguely see Lilaya rushing into the room. A delighted smile breaks out across her face as she sees that your egg has hatched, and just before you pass out, you see her bending down in order to start taking care of your child.
+		Твоя голова бессильно падает на кровать, и ты сквозь пелену видишь, как в комнату влетает Lilaya. На её лице расцветает восторженная улыбка — она видит, что твоё яйцо вылупилось, и прямо перед тем, как ты проваливаешься в беспамятство, ты замечаешь, как она наклоняется, чтобы начать заботиться о твоём дитя.
 		</p>
 		<p>
 			#IF(pc.getBreastRawMilkStorageValue()>0 && pc.isAbleToAccessCoverableArea(CA_NIPPLES, true) && pc.getNippleShape()==NIPPLE_SHAPE_NORMAL && game.isLactationContentEnabled())
-				Some time later, you drift back into consciousness for a moment as you feel a desperate suckling at your nipples, and you're vaguely aware that it's your child who's eagerly drinking down mouthfuls of your [pc.milk]. Letting your eyelids close again, you soon drift off into an exhausted sleep.
+				Спустя какое-то время ты на мгновение приходишь в сознание, чувствуя отчаянное сосание у своих сосков. Ты смутно понимаешь, что это твой ребёнок жадно глотает порции твоей [pc.milk]. Снова прикрыв веки, ты вскоре погружаешься в изнурительный сон.
 			#ELSE
-				Some time later, you drift back into consciousness for a moment as you feel a weight on your chest, and you're vaguely aware of cradling your child in your arms as they eagerly drink down bottle after bottle of the milk that Lilaya has provided for you. Letting your eyelids close again, you soon drift off into an exhausted sleep.
+				Спустя какое-то время ты на мгновение приходишь в сознание, чувствуя тяжесть на своей груди. Ты смутно осознаёшь, что прижимаешь к себе дитя, пока оно жадно выпивает бутылочку за бутылочкой молока, которое приготовила для тебя Lilaya. Снова прикрыв веки, ты вскоре погружаешься в изнурительный сон.
 			#ENDIF
 		</p>
 	#ENDIF
@@ -591,64 +598,67 @@
 	
 	<htmlContent tag="LILAYA_ASSISTS_BIRTHING_FINISHED"><![CDATA[
 	<p>
-		You wake up some time later, lying in your bed. With a groan, you sit up, pushing the covers back as you rub sleep from your eyes.
+	Спустя некоторое время ты просыпаешься в своей постели. Со стоном ты садишься, откидывая одеяло и протирая глаза от сна.
 	</p>
 	#IF(pc.hasVagina())
 		<p>
 			#IF(pc.isTaur())
-				The first thing you notice is how easy it is to move, and you let out a little gasp as you look back at your now-flat [pc.legRace]'s stomach.
+				Первое, что ты замечаешь — насколько легко тебе двигаться, и ты невольно ахаешь, оглядываясь на свой теперь уже плоский живот [pc.legRace].
 			#ELSE
-				The first thing you notice is how easy it is to move, and you let out a little gasp as you start running your hands over your now-flat stomach.
+				Первое, что ты замечаешь — насколько легко тебе двигаться, и ты невольно ахаешь, когда начинаешь водить руками по своему теперь уже плоскому животу.
 			#ENDIF
-			 As you do so, an unexpected twinge of sadness runs through you, and for a moment you find yourself deeply missing the reassuring feeling of having a big, swollen belly.
+			В этот момент тебя пронзает неожиданный укол грусти, и на миг ты ловишь себя на том, что глубоко тоскуешь по успокаивающему ощущению своего большого, раздутого живота.
 		</p>
 		<p>
-			As you move, you discover the second thing that's changed, and you let out a surprised gasp at the feeling
+		
+Двигаясь, ты обнаруживаешь второе изменение и удивленно ахаешь от ощущения
 			#IF(pc.hasLegs())
-				between your legs.
+				между ног.
 			#ELSE
-				in your groin.
+				в паху.
 			#ENDIF
 			#IF(pc.isTaur())
-				 After shuffling around a little, you feel
+				 Немного переминаясь с ноги на ногу, ты чувствуешь
 			#ELSE
-				 Quickly moving your fingers down to your groin, you discover
+				 Быстро проведя пальцами вниз к паху, ты обнаруживаешь,
 			#ENDIF
-			 that your vagina has been stretched out considerably, and you let out an uncomfortable groan as you become aware of the dull ache within your [pc.vaginaCapacity] pussy.
+			 что твоя киска изрядно растянулась, и ты издаешь неуютный стон, ощущая тупую боль внутри своей [pc.vaginaCapacity] киски.
 		</p>
 		<p>
-			Glancing across to your bedside cabinet, the final thing you discover is a note from Lilaya. Picking it up, you glance over the contents:
+		
+Бросив взгляд на прикроватную тумбочку, ты находишь последнюю вещь — записку от Lilaya. Подняв её, ты пробегаешь глазами по содержимому:
 		</p>
 	#ELSE
 		<p>
 			#IF(pc.isTaur())
-				You notice how easy it is to move, and you let out a little gasp as you look back at your now-flat [pc.legRace]'s stomach.
+				Ты замечаешь, насколько легко тебе двигаться, и тихо ахаешь, глядя на свой теперь уже плоский [pc.legRace] живот.
 			#ELSE
-				You notice how easy it is to move, and you let out a little gasp as you start running your hands over your now-flat stomach.
+				Ты замечаешь, насколько легко тебе двигаться, и тихо ахаешь, начиная водить руками по своему теперь уже плоскому животу.
 			#ENDIF
-			 As you do so, an unexpected twinge of sadness runs through you, and for a moment you find yourself deeply missing the reassuring feeling of having a big, swollen belly.
+			В этот момент тебя пронзает неожиданный укол грусти, и на миг ты ловишь себя на том, что глубоко тоскуешь по успокаивающему ощущению своего большого, раздутого живота.
 		</p>
 		<p>
-			Glancing across to your bedside cabinet, you discover a note from Lilaya. Picking it up, you glance over the contents:
+		
+Бросив взгляд на прикроватную тумбочку, ты обнаруживаешь записку от Lilaya. Подняв её, ты пробегаешь глазами по содержимому:
 		</p>
 	   #ENDIF
 	<p style='text-align:center;'>
 	<i>
-		Hey [pc.name], congratulations! Everything went perfectly!
+		Эй, [pc.name], поздравляю! Все прошло просто идеально!
 		<br/>
-		I hope you don't mind, but I collected a lot of data about your aura while we were doing this! I had to start analysing it straight away, and you were fast asleep anyway, so I hope you don't mind me leaving you there to rest.
+		Надеюсь, ты не против, но пока мы этим занимались, я собрала кучу данных о твоей ауре! Мне пришлось сразу же приступить к анализу, а ты все равно крепко спала, так что надеюсь, ты не обидишься, что я оставила тебя отдыхать.
 		<br/><br/>
-		If you need anything, or perhaps if you'd like some more 'tests', then you know where to find me!
+		Если тебе что-нибудь понадобится или, может, захочется еще парочки «тестов» — ты знаешь, где меня искать!
 		<br/><br/>
 		#IF(pc.getLastLitterBirthed().getTotalLitterCount() > 1)
-			P.S. I managed to get your kids together for a picture before they left, it's under this note!
+			P.S. Мне удалось сфотографировать твоих деток вместе перед тем, как они ушли, фото лежит под этой запиской!
 		#ELSE
-			P.S. I got a picture of your kid before they left, it's under this note!
+			P.S. Мне удалось сфотографировать твоего ребенка перед тем, как он ушел, фото лежит под этой запиской!
 		#ENDIF
 	</i>
 	</p>
 	<p>
-		You put down the piece of paper and see the picture lying where Lilaya said it would be. Picking it up, you feel tears welling up in your eyes as you see the result of your pregnancy smiling back at you.
+		Ты откладываешь листок бумаги и видишь фотографию там, где обещала Lilaya. Поднимая её, ты чувствуешь, как на глаза наворачиваются слезы, когда на тебя смотрят улыбающиеся плоды твоей беременности.
 	</p>
 	]]>
 	</htmlContent>

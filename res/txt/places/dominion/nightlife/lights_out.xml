@@ -5,7 +5,7 @@
 	
 	<htmlContent tag="EXIT"><![CDATA[
 	<p>
-		You once again find yourself standing at the main entrance to the bar. From here you could either take your leave and head back out into Dominion, or turn around and return to the bar.
+		Ты снова стоишь у главного входа в бар. Отсюда ты можешь либо уйти обратно в Dominion, либо развернуться и войти внутрь.
 	</p>
 	]]>
 	</htmlContent>
@@ -13,28 +13,28 @@
 	<htmlContent tag="EXIT_INITIAL_ENTRY"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_lights_out_visited))
 		<p>
-			[pc.Walking] down the steep set of stairs which lead down to 'Lights Out', you arrive at the bottom to find your way being blocked by a burly dog-boy bouncer. Recognising you from before, he grunts, [style.speechMasculineHeavy(Hey, you're Hannah's friend, right? Go on in...)]
+			[pc.Walking] спустившись по крутой лестнице, ведущей вниз в «Lights Out», ты оказываешься внизу, где твой путь преграждает дюжий пес-охранник. Узнав тебя, он хрипло бурчит: [style.speechMasculineHeavy(Эй, ты ведь друг Ханны, верно? Проходи...)]
 		</p>
 	#ELSE
 		<p>
-			[pc.Walking] down the steep set of stairs which lead down to 'Lights Out', you arrive at the bottom to find your way being blocked by a burly dog-boy bouncer. In a rough voice, he grunts, [style.speechMasculineHeavy(I haven't seen you around before. This bar's invite-only, so you're not getting in.)]
+			[pc.Walking] спустившись по крутой лестнице, ведущей вниз в «Lights Out», ты оказываешься внизу, где твой путь преграждает дюжий пес-охранник. Грубым голосом он ворчит: [style.speechMasculineHeavy(Раньше тебя здесь не видел. В этот бар пускают только по приглашениям, так что тебе не пройти.)]
 		</p>
 		<p>
-			Remembering what it is that Hannah told you, you tell the bouncer that a [hannah.race] named Hannah has sent you. Raising his eyebrows in surprise, the bouncer exclaims, [style.speechMasculineHeavy(<i>Hannah</i> sent you?! Well, shit, you'd better go on in then.)]
+			Вспомнив наставления Ханны, ты говоришь охраннику, что тебя прислала [hannah.race] по имени Ханна. Удивленно вскинув брови, охранник восклицает: [style.speechMasculineHeavy(<i>Ханна</i> прислала тебя?! Ну, черт с тобой, тогда проходи.)]
 		</p>
 	#ENDIF
 	<p>
-		Uncrossing his muscular arms, the bouncer steps aside, allowing you to push open the door and enter the basement bar. Concrete flooring, dim lights protected by wire cages, and metal tables and chairs all combine to give the place a rough, industrial vibe. Looking around, you see that boxing gloves, pictures of fights, and other types of boxing memorabilia have been hung up on the walls.
+		Разжав свои мускулистые руки, охранник отходит в сторону, позволяя тебе толкнуть дверь и войти в подвальный бар. Бетонный пол, тусклый свет под защитными сетчатыми плафонами, металлические столы и стулья — всё это создает в заведении грубую индустриальную атмосферу. Оглядевшись, ты замечаешь, что на стенах развешаны боксерские перчатки, фотографии боев и прочая боксерская атрибутика.
 	</p>
 	<p>
-		Although not a very big place, the bar has enough of a floor area to house a dozen tables, around which people of all races are sitting. Although they vary in species, the vast majority of the bar's patrons look to be incredibly strong, and you realise that most of them must be fighters of one sort or another. While a few of them turn their heads as you enter, most don't give you any notice.
+		Пусть это место и не слишком большое, но площади бара вполне хватает, чтобы разместить дюжину столов, за которыми сидят представители самых разных рас. И хотя они принадлежат к разным видам, подавляющее большинство посетителей выглядят невероятно сильными, и ты понимаешь, что почти все они — бойцы того или иного толка. Пока ты входишь, лишь немногие поворачивают головы, большинство же тебя даже не замечает.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="EXIT_LEAVE"><![CDATA[
 	<p>
-		Having had enough of the bar, you push open the door and climb the steep set of stairs beyond...
+		Насытившись атмосферой бара, ты толкаешь дверь и поднимаешься по крутой лестнице...
 	</p>
 	]]>
 	</htmlContent>
@@ -44,13 +44,13 @@
 	
 	<htmlContent tag="TABLES"><![CDATA[
 	<p>
-		You find yourself [pc.walking] through the main floor area of the bar, which is filled with about a dozen large, metal tables. Hung up on the walls are boxing gloves, pictures of fights, and other types of boxing memorabilia. The dim, caged lights and concrete flooring combine with the metal furniture to give this place a rough, industrial vibe.
+		Ты оказываешься [pc.walking] в главном зале бара, где расставлено около дюжины больших металлических столов. На стенах висят боксерские перчатки, фотографии поединков и прочая боксерская атрибутика. Тусклый свет в защитных клетках и бетонный пол в сочетании с металлической мебелью придают этому месту грубую, индустриальную атмосферу.
 	</p>
 	<p>
-		Seated around the tables are people of all races, who seem to all be engaged in either talking or drinking. Although they vary in species, the vast majority of them look to be very strong, and you realise that most of them must be fighters of one sort or another. While a few of them turn their heads as you pass, most don't give you any notice.
+		За столами сидят представители самых разных рас, и все они либо увлечены разговорами, либо поглощены выпивкой. И хотя они принадлежат к разным видам, подавляющее большинство выглядит очень крепким, и ты понимаешь, что почти все они — бойцы того или иного толка. Пока ты проходишь мимо, лишь немногие поворачивают головы, большинство же тебя даже не замечает.
 	</p>
 	<p>
-		In one corner of the room there's the main bar area, while in the opposite corner there's a sign pointing the way to the toilets. There doesn't seem to be much room at any of the tables, so the bar, the toilets, or the exit should be your next port of call...
+		В одном углу зала расположена основная барная стойка, а в противоположном — указатель, ведущий к туалетам. Свободных мест за столами почти нет, так что твоими следующими целями должны стать бар, туалеты или выход...
 	</p>
 	]]>
 	</htmlContent>
@@ -60,14 +60,14 @@
 	
 	<htmlContent tag="TOILETS"><![CDATA[
 	<p>
-		As is to be expected of a bar of this sort, the toilet facilities are very primitive, and not exactly the most hygienic of places. What's more, due to the quantity of drink consumed on these premises, they're in constant use, and it looks like most of the stalls are currently occupied.
+		Как и ожидалось от бара такого типа, уборные здесь крайне примитивные и не самые гигиеничные. Более того, из-за огромного количества выпитого здесь @@G0@@, они постоянно заняты, и кажется, что большинство кабинок сейчас обитаемы.
 	</p>
 	<p>
-		Looking into a couple of these empty stalls, you see that glory holes have been cut into the walls. Looking down at the dirty floor, you can't help but
+		Заглянув в пару пустых кабинок, ты замечаешь, что в стенах прорезаны «дыры славы». Глядя на грязный пол, ты невольно
 		#IF(pc.hasFetish(FETISH_MASOCHIST))
-			 feel turned on as you imagine how degrading it would be to service one of these holes.
+			 чувствуешь возбуждение, представляя, насколько унизительно было бы обслуживать одну из этих дыр.
 		#ELSE
-			 shudder as you imagine how degrading it would be for someone to service one of these holes.
+			 содрогаешься, представляя, насколько унизительно было бы, если бы кто-то начал обслуживать одну из этих дыр.
 		#ENDIF
 	</p>
 	]]>
@@ -75,14 +75,14 @@
 	
 	<htmlContent tag="TOILETS_USE"><![CDATA[
 	<p>
-		After heading over to a free stall, you [pc.step] into it and lock the door behind you, before making use of the toilet. After you've finished, you flush the toilet before making your way over to one of the sinks and washing your [pc.hands]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Найдя свободную кабинку, ты [pc.step] внутрь и запираешь за собой дверь, после чего пользуешься туалетом. Закончив дело, ты смываешь воду, подходишь к одной из раковин и моешь свои [pc.hands]. Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, гадая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TOILETS_WASH"><![CDATA[
 	<p>
-		Feeling like you could do with having a quick clean, you step over to the sinks and thoroughly wash your [pc.hands], before splashing some water on your [pc.face]. Grabbing a paper towel from the nearby dispenser, you quickly dry yourself off, before turning to face the room and wondering what to do next...
+		Чувствуя, что тебе не помешало бы освежиться, ты подходишь к раковинам и тщательно моешь свои [pc.hands], а затем плещешь немного воды в лицо ([pc.face]). Схватив бумажное полотенце из ближайшего диспенсера, ты быстро вытираешься, а затем оборачиваешься, оглядывая комнату и раздумывая, чем бы заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -92,24 +92,25 @@
 	
 	<htmlContent tag="BAR"><![CDATA[
 	<p>
-		A full two dozen seats have been lined up in front of the long, metal-topped bar before you. Behind the bar, rows upon rows of spirits have been lined up on shelves, but there's no sign of beer, wine, or non-alcoholic drinks. Most of the seats are occupied by large, muscular morphs of all different races.
+		Перед тобой тянется длинная барная стойка с металлической столешницей, перед которой выстроены целых два десятка стульев. За барной стойкой на полках выстроены ряды крепкого алкоголя, но пива, вина или безалкогольных напитков не видно. Большинство мест занято крупными, мускулистыми морфами самых разных рас.
 	</p>
 	<p>
-		Taking pride of place on the wall behind the bar, a dozen golden trophy cups have been placed upon a metal shelf. Engraved into their gleaming surfaces are masterfully detailed depictions of boxers delivering knock-out blows to their opponents. You can't help but notice that upon three of these cups the depiction of the victorious boxer is none other than Hannah.
+		На металлической полке на стене за барной стойкой гордо красуются дюжина золотых кубков. На их сияющих поверхностях искусно выгравированы детальные изображения боксеров, наносящих решающие нокаутирующие удары своим противникам. Ты невольно замечаешь, что на трех из этих кубков в роли победителя изображена не кто иная, как Ханна.
 	</p>
 	<p>
-		A burly, grumpy-looking bear-boy is standing behind the bar. Giving the briefest of grunts in response to his patrons' orders, he mutely pours out shots of vodka, rum, or whiskey, which are more often than not immediately downed.
+		За барной стойкой стоит крупный, угрюмый медведь-мальчик. Отвечая на заказы посетителей лишь коротким ворчанием, он молча разливает по стопкам водку, ром или виски, которые чаще всего тут же осушаются залпом.
 	</p>
 	#IF(game.getCharactersPresent().contains(hannah))
 		<p>
-			Looking down the row of seats, you see the familiar figure of Hannah sitting at the bar. Instead of the usual sports bra and shorts which she wears while at the gym, she's now wearing a black leather jacket that's unzipped to reveal a dark purple cropped tank top. Navy blue distressed jeans are covering her legs, while on her feet she's wearing a pair of dark purple skater shoes. She never wears jewellery to the gym, but here you notice that the dim lights of the bar are glinting off of silver ball studs that are fixed into her ears and nose.
+			Глядя вдоль ряда сидений, ты видишь знакомую фигуру Ханны, сидящую у бара. Вместо привычного спортивного топа и шорт, в которых она обычно занимается в зале, на ней сейчас черная кожаная куртка, расстегнутая так, что виден темно-фиолетовый кроп-топ. Ее ноги облегают темно-синие рваные джинсы, а на ногах — темно-фиолетовые кеды.
+		В зал она никогда не надевает украшений, но здесь ты замечаешь, как в тусклом свете бара поблескивают серебряные шарики-гвоздики в ее ушах и носу.
 		</p>
 		<p>
-			Clearly having felt your gaze upon her back, Hannah turns and notices that you're here. After giving you a silent nod, she turns back to face the bar and then downs the shot that's placed before her. It looks like she's not bothered if you're here to see her or not, so you could either go and sit down next to her and say hello, or take a seat somewhere else and do your own thing...
+			Очевидно почувствовав твой взгляд на своей спине, Ханна оборачивается и замечает тебя. Молча кивнув, она снова поворачивается к бару и залпом выпивает стоящую перед ней стопку. Похоже, ее не особо волнует твое присутствие, так что ты можешь либо подойти и сесть рядом, чтобы поздороваться, либо занять место где-нибудь в другом месте и заниматься своими делами...
 		</p>
 	#ELSE
 		<p>
-			Looking down the row of seats, you see that Hannah isn't here at the moment. As such, you could either sit down at an empty seat and order a drink, or turn around and head off to another part of the bar...
+			Глядя вдоль ряда сидений, ты замечаешь, что Ханны сейчас нет на месте. Ты можешь либо занять свободное место и заказать выпивку, либо развернуться и отправиться в другую часть бара...
 		</p>
 	#ENDIF
 	]]>
@@ -118,31 +119,31 @@
 	<htmlContent tag="BAR_SIT"><![CDATA[
 	<p>
 		#IF(game.getCharactersPresent().contains(hannah))
-			Knowing that Hannah isn't the sort of person to care about being left to drink alone, you decide to sit at the other end of the bar to her and spend some time alone.
+			Зная, что Ханна не из тех, кого заденет то, что её оставили пить в одиночестве, ты решаешь присесть на другом конце бара, чтобы провести немного времени наедине со своими мыслями.
 		#ELSE
-			Deciding that you'd like to spend some time at the bar, you head on over to a free seat and sit down.
+			Решив, что не прочь провести время у бара, ты направляешься к свободному месту и садишься.
 		#ENDIF
-		 The grumpy-looking bartender looks over to you as you take your place at the bar, and as you catch his eye, he gives you the briefest of nods to acknowledge your presence.
+		 хмурый бармен бросает на тебя взгляд, когда ты занимаешь своё место, и, встретившись с тобой глазами, едва заметно кивает, признавая твоё присутствие.
 	</p>
 	<p>
-		Looking over the many bottles of spirits that are lined up on the shelves before you, you wonder whether to order a drink right away, or perhaps to spend a moment sitting and relaxing here first.
+		Разглядывая множество бутылок с крепким алкоголем, выстроенных на полках перед тобой, ты раздумываешь: заказать напиток прямо сейчас или сначала просто посидеть и расслабиться.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_SIT_LEAVE"><![CDATA[
 	<p>
-		Having had enough of sitting at the bar, you stand up and [pc.step] back, before wondering what to do next...
+		Наситившись сидением у бара, ты встаёшь и [pc.step] Назад, после чего задумываешься, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_SIT_DRINK"><![CDATA[
 	<p>
-		Deciding that you'd like to order a drink, you manage to get the attention of the bear-boy bartender, who slowly ambles over to stand before you. Silently crossing his muscular, furry arms, he waits to hear what it is you want with an impatient frown on his face. Deciding that you'd better not waste his time, you quickly tell him that you want a shot of [#SPECIAL_PARSE_0].
+		Решив, что пора бы заказать выпивку, ты умудряешься привлечь внимание бармена — крупного, похожего на медведя парня, который неспешно подходит к тебе. Молча скрестив свои мускулистые волосатые руки, он ждёт, что ты захочешь, с нетерпеливой гримасой на лице. Понимая, что лучше не тратить его время попусту, ты быстро заказываешь стопку [#SPECIAL_PARSE_0].
 	</p>
 	<p>
-		Producing a shot glass from under the counter, the bartender places it down on the metal bar-top, before grabbing a bottle of [#SPECIAL_PARSE_0] from off the shelves and filling it to the brim. After handing over your flames to the bear-boy, you pick up the shot glass and down the spirit in one swift gulp.
+		Достав из-под стойки стопку, бармен ставит её на металлическую поверхность, после чего хватает с полки бутылку [#SPECIAL_PARSE_0] и наполняет её до самых краёв. Отдав свои огни медведопарню, ты подхватываешь стопку и одним махом осушаешь крепкий напиток.
 	</p>
 	]]>
 	</htmlContent>
@@ -152,92 +153,91 @@
 	
 	<htmlContent tag="BAR_SIT_RELAX"><![CDATA[
 	<p>
-		Wanting to take some time to simply sit and relax at the bar, you lean against the metal counter and listen to whatever snippets of conversation you can catch. After about ten minutes spent in this manner, you're suddenly aware of a muscled figure sitting down next to you.
+		Желая просто посидеть и расслабиться у бара, ты опираешься на металлическую стойку, прислушиваясь к обрывкам чужих разговоров. Спустя примерно десять минут такого отдыха ты внезапно чувствуешь, что рядом с тобой приземляется мускулистая фигура.
 	</p>
 	<p>
-		[partner.speech([style.random(If being sexy was a crime, then I'd be calling the Enforcers right now,|What does it feel like to be the hottest [pc.girl] in here?|I had a pickup line, but you're so hot that it made me forget,|You know, I'm a boxer, but the only knockout I'm interested in right now is you,|I was only here for a drink, but you keep on distracting me,)])] a [partner.feminine] voice says, causing you to look over to the person who's just sat down next to you. Sure enough, that cheesy pickup line was meant for you, as the [partner.raceFull(true)] who delivered it is looking straight into your eyes. Before you can respond, [partner.she] introduces [partner.herself] by saying, [partner.speech(I'm [partner.name]. Now it's your turn.)]
+		[partner.speech([style.random(Если бы сексуальность была преступлением, я бы уже вызвал Enforcer,|Каково это — быть самой горячей [pc.girl] в этом заведении?|У меня была заготовлена фраза для знакомства, но ты настолько горяча, что я всё забыл,|Знаешь, я боксёр, но единственный нокаут, который меня сейчас интересует — это ты,|Я зашёл сюда всего лишь выпить, но ты постоянно меня отвлекаешь,)])] — произносит [partner.feminine] [partner.feminine] голосом, заставляя тебя обернуться к севшему рядом человеку. И действительно, эта банальная подкатка предназначалась тебе: [partner.raceFull(true)], произнесший это, смотрит прямо тебе в глаза. Прежде чем ты успеваешь ответить, [partner.she] представляет [partner.herself], говоря: [partner.speech(Я — [partner.name]. Теперь твоя очередь.)]
 	</p>
 	<p>
-		Taking a good look at [partner.name], you wonder whether to give [partner.herHim] your name and flirt back with [partner.herHim], or to instead reject [partner.herHim]...
+		Внимательно разглядывая [partner.name], ты раздумываешь: стоит ли назвать [partner.herHim] своё имя и пофлиртовать с [partner.herHim], или же лучше отвергнуть [partner.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_SIT_RELAX_REJECT"><![CDATA[
 	<p>
-		You really aren't interested in this [partner.race], and so you bluntly tell [partner.herHim] to find someone else to bother. Letting out a defeated sigh, [partner.she] stands up and walks off, leaving you alone at the bar once again.
+		Тебе явно не интересен этот [partner.race], поэтому ты прямо говоришь [partner.herHim], чтобы он искал себе другую жертву. Издав обреченный вздох, [partner.she] встает и уходит, оставляя тебя в одиночестве у барной стойки.
 	</p>
 	<p>
-		Looking over the bottles of spirits that line the shelves, you wonder whether to order a drink or to instead spend some more time relaxing at the bar...
+		Разглядывая ряды бутылок с алкоголем на полках, ты раздумываешь: заказать ли выпить или просто еще немного посидеть в расслабленной обстановке у бара...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_SIT_RELAX_FLIRT"><![CDATA[
 	<p>
-		Liking the look of [partner.name], you give [partner.herHim] your name, to which [partner.she] replies, [partner.speech(I don't think I've had a one night stand with #IF(game.isVowel(pc.getName().charAt(0)))an#ELSEa#ENDIF '[pc.name]' before. Oh well, there's always a first for everything.)]
+		Приглядевшись к [partner.name], ты называешь [partner.herHim] свое имя, на что [partner.she] отвечает: [partner.speech(Не думаю, что у меня уже был секс на одну ночь с #IF(game.isVowel(pc.getName().charAt(0)))an#ELSEa#ENDIF '[pc.name]' before. Oh well, there's always a first for everything.)]
 	</p>
 	<p>
-		Rolling your eyes, you ask [partner.name] how [partner.sheIs] so sure that this evening is going to end in a one night stand, to which [partner.she] states, [partner.speech(Well, you haven't told me to get lost yet, so that's always a good sign. Anyway, tell me more about yourself; I'd like to know more about the cute [pc.race] I'll be fucking later tonight.)]
+		Закатив глаза, ты спрашиваешь [partner.name], с чего вдруг [partner.sheIs] так уверен, что этот вечер закончится сексом на одну ночь. На что [partner.she] заявляет: [partner.speech(Ну, ты ведь еще не послал(а) меня куда подальше, а это всегда хороший знак. В любом случае, расскажи о себе побольше; мне хочется узнать побольше о милом(ой) [pc.race], которого(ую) я буду трахать сегодня ночью.)]
 	</p>
 	<p>
-		Laughing at [partner.namePos] confidence, you do as [partner.she] asks and start telling [partner.herHim] about yourself. From there the two of you continue flirting back and forth for a while, before eventually the [partner.race] asks, [partner.speech(So, are you ready to show me back to your place, or are we going to do it in an alleyway?)]
+		Посмеиваясь над уверенностью [partner.namePos], ты делаешь, как просит [partner.she], и начинаешь рассказывать [partner.herHim] о себе. После этого вы еще какое-то время продолжаете флиртовать, пока в конце концов [partner.race] не спрашивает: [partner.speech(Ну так что, ты готов(а) проводить меня к себе, или мы займемся этим прямо в переулке?)]
 	</p>
 	<p>
-		Having been given this ultimatum, you wonder whether to invite [partner.name] back to your room, or perhaps instead you should flat-out reject [partner.herHim]...
+		Получив такой ультиматум, ты раздумываешь: пригласить ли [partner.name] к себе в комнату или, может, стоит просто прямо отвергнуть [partner.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_SIT_RELAX_FLIRT_REJECT"><![CDATA[
 	<p>
-		Although you enjoyed flirting with this [partner.race], you aren't interested in a one night stand, and so you bluntly tell [partner.herHim] that the fun's over. Letting out a defeated sigh, [partner.name] stands up and walks off, leaving you alone at the bar once again.
+		Хотя тебе и нравилось флиртовать с этой [partner.race], секс на одну ночь тебя не прельщает, и ты прямо говоришь [partner.herHim], что веселье окончено. Издав побежденный вздох, [partner.name] встает и уходит, оставляя тебя снова в одиночестве у барной стойки.
 	</p>
 	<p>
-		Looking over the bottles of spirits that line the shelves, you wonder whether to order a drink or to instead spend some more time relaxing at the bar...
+		Разглядывая ряды бутылок с алкоголем на полках, ты раздумываешь: заказать ли выпить или просто еще немного посидеть в расслабленной обстановке у бара...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_SIT_RELAX_FLIRT_SEX_START_ALLEYWAY"><![CDATA[
 	<p>
-		Not wanting to take the time to make the journey back to your room at Lilaya's mansion, you tell [partner.name] that an alleyway suits you fine. Encouraged by this, [partner.she] takes you by the [pc.hand(true)] and leads you out of the bar. Passing through the neon-lit streets of nightlife, you soon find yourself being led into a quiet, dark alley.
+		Не желая тратить время на путь обратно в твой номер в особняке Lilaya, ты говоришь [partner.name], что переулок тебе вполне подходит. Воодушевленная этим, [partner.she] берет тебя за [pc.hand(true)] и выводит из бара. Проходя через залитые неоном улицы ночного города, вскоре ты обнаруживаешь, что тебя ведут в тихий темный переулок.
 	</p>
 	<p>
-		[partner.speech(This is as good a place as any other,)] [partner.name] says, before pulling you into [partner.him] and planting a deep, passionate kiss on your [pc.lips]. As [partner.her] [partner.hands] roam all over your body, you find yourself letting out a horny [pc.moan] and willingly submitting to [partner.herHim]...
+	@@[partner.speech(Это место ничем не хуже других,)] [partner.name] произносит, прежде чем притянуть тебя к [partner.him] и запечатлеть глубокий, страстный поцелуй на твоих [pc.lips]. Пока [partner.her] [partner.hands] блуждают по всему твоему телу, ты невольно издаешь похотливый [pc.moan], добровольно подчиняясь [partner.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="BAR_SIT_RELAX_FLIRT_SEX_START_BEDROOM"><![CDATA[
+	<htmlContent tag="BAR_SIT_RELAX_FLIRT_SEX_START_BEDROOM"><![CDATA[<p>
+Сказав [partner.name], что секс на одну ночь в тёмных переулках — это не совсем твой стиль, ты предлагаешь, что кровать в твоей комнате будет куда удобнее. [partner.she] расплывается в ухмылке, услышав это, и [partner.name] берёт тебя за [pc.hand(true)], увлекая прочь из бара.
+</p>
 	<p>
-		Telling [partner.name] that one night stands in dark alleyways aren't your thing, you suggest that the bed in your room would be far more comfortable. Grinning as [partner.she] hears you say this, [partner.name] takes you by the [pc.hand(true)] and leads you out of the bar. 
-	</p>
-	<p>
-		Soon enough you're arriving back at Lilaya's mansion, and the a minute later the two of you are bursting into your bedroom. Grabbing hold of you, [partner.name] pulls you into [partner.her] body and plants a deep, passionate kiss on your [pc.lips]. As [partner.her] [partner.hands] roam all over your body, you find yourself letting out a horny [pc.moan] and willingly submitting to [partner.herHim]...
+		Вскоре ты возвращаешься в особняк Lilaya, и всего минуту спустя вы вдвоем влетаете в спальню. Крепко обхватив тебя, [partner.name] прижимает тебя к своему [partner.her] и накрывает твои [pc.lips] глубоким, страстным поцелуем. Пока [partner.her] [partner.hands] блуждают по всему твоему телу, ты невольно издаешь похотливый [pc.moan], покорно отдаваясь [partner.herHim]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ONE_NIGHT_STAND_AFTER_SEX_ALLEYWAY"><![CDATA[
 	<p>
-		With the two of you having had your fun, and the one night stand now at an end, both you and [partner.name] move away from one another and start getting your clothing in order.
+		Насладившись друг другом, вы понимаете, что эта ночь на одну закончена. Вы с [partner.name] отстраняетесь друг от друга и начинаете приводить одежду в порядок.
 	</p>
 	<p>
-		[partner.speech(I knew you'd be a good fuck as soon as I saw you sitting there at the bar,)] the [partner.race] teases, before turning [partner.her] back on you and [partner.walking] off down the alley. As [partner.she] disappears from sight, you're left alone in the dark alleyway, wondering what to do next...
+		[partner.speech(Как только я увидела тебя за барной стойкой, сразу поняла, что трахнешься ты отлично,)] — дразнит [partner.race], прежде чем развернуться [partner.her] и уйти прочь по переулку, увлекая за собой [partner.walking]. Когда [partner.she] скрывается из виду, ты остаешься один в темном переулке, гадая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="ONE_NIGHT_STAND_AFTER_SEX_BEDROOM"><![CDATA[
 	<p>
-		With the two of you having had your fun, and the one night stand now at an end, both you and [partner.name] move away from one another and start getting your clothing in order.
+		Насладившись друг другом, вы понимаете, что эта ночь на одну закончена. Вы с [partner.name] отстраняетесь друг от друга и начинаете приводить одежду в порядок.
 	</p>
 	<p>
-		[partner.speech(I knew you'd be a good fuck as soon as I saw you sitting there at the bar,)] the [partner.race] teases, before making a quick excuse to leave, [partner.speech(I need to be on the other side of the city first thing tomorrow, so I've got to go.)]
+		[partner.speech(Как только я увидела тебя за барной стойкой, сразу поняла, что трахнешься ты отлично,)] — дразнит [partner.race], после чего быстро находит предлог, чтобы уйти: [partner.speech(Завтра с самого утра мне нужно быть на другом конце города, так что пора идти.)]
 	</p>
 	<p>
-		Saying goodbye to the [partner.race], you use the bell-pull in your room to summon Rose so that she can escort [partner.herHim] out of the house. As your partner [partner.steps] out of your room and disappears from sight, you're left wondering what to do next...
+		Прощаясь с [partner.race], ты дергаешь за колокольчик в своей комнате, чтобы позвать Роуз — она должна проводить [partner.herHim] из дома. Когда твоя партнерша [partner.steps] выходит из комнаты и скрывается из виду, ты остаешься в раздумьях, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -247,33 +247,33 @@
 	
 	<htmlContent tag="BAR_HANNAH"><![CDATA[
 	<p>
-		Wanting to spend some time with Hannah, you approach the [hannah.race] and take the vacant seat next to her. As you sit down, she looks across at you and briefly grunts, [hannah.speech(Hey, [pc.name]. I was wondering if you'd be here tonight.)]
+		Желая провести время с Ханной, ты подходишь к [hannah.race] и занимаешь свободное место рядом с ней. Когда ты садишься, она бросает на тебя взгляд и коротко хмыкает: [hannah.speech(Эй, [pc.name]. А я гадала, заглянешь ли ты сегодня.)]
 	</p>
 	#IF(hannah.isVisiblyPregnant())
 		#IF(!hannah.isCharacterReactedToPregnancy(pc))
 			<p>
-				As you return her greeting and sit down beside the [hannah.race], you suddenly notice that something's different. Hannah's toned six-pack has vanished, and in its place she's now sporting a swollen, [style.colourSex(pregnant belly)]. Seeing what it is you're looking at, the [hannah.race] reveals, [hannah.speech(Yeah, you got me pregnant. I guess it's kind of my fault for getting drunk and horny... Hey, want a feel?)]
+				Ответив на её приветствие и присев рядом с [hannah.race], ты внезапно замечаешь, что что-то изменилось. Подтянутый пресс Ханны исчез, а на его месте теперь красуется раздутый, [style.colourSex(беременный живот)]. Заметив твой изумленный взгляд, [hannah.race] признается: [hannah.speech(Да, ты меня обрюхатил. Наверное, это моя вина — набралась, нагулялась... Эй, хочешь потрогать?)]
 			</p>
 		#ELSE
 			<p>
-				As you return her greeting and sit down beside the [hannah.race], you see that her toned six-pack is still missing, and instead she's got a swollen, [style.colourSex(pregnant belly)]. Seeing what it is you're looking at, the [hannah.race] reveals, [hannah.speech(Yeah, I'm still pregnant, thanks to you. I guess it's kind of my fault for getting drunk and horny... Hey, want a feel?)]
+				Ответив на её приветствие и присев рядом с [hannah.race], ты видишь, что её подтянутый пресс всё еще отсутствует, а вместо него у неё — раздутый, [style.colourSex(беременный живот)]. Заметив твой изумленный взгляд, [hannah.race] признается: [hannah.speech(Да, я всё еще беременна, и всё благодаря тебе. Наверное, это моя вина — набралась, нагулялась... Эй, хочешь потрогать?)]
 			</p>
 		#ENDIF
 		<p>
-			Replying in the affirmative, you place your [pc.hands] on her furry tummy. Giving her swollen bump a few loving strokes, you ask Hannah if there's anything you can do for her, to which she waves you off and lets out another of her bark-like laughs, [hannah.speech(I'm fine, don't worry about me! Anyway, let me get you your first drink. It's my way of thanks for persisting with my lessons until the end)]
+			Утвердительно кивнув, ты кладешь свою [pc.hands] на её пушистый животик. Нежно поглаживая её раздувшийся живот, ты спрашиваешь Ханну, не нужно ли ей чего-нибудь, на что она лишь отмахивается и издает очередной заливистый смех, похожий на лай: [hannah.speech(Со мной всё в порядке, не беспокойся! Давай лучше я угощу тебя первым напитком. Это моя благодарность за то, что ты не бросил мои уроки до самого конца)]
 		</p>
 		<p>
-			With your instinct kicking in, you ask Hannah if it's wise to be drinking alcohol while pregnant. Giving you a questioning look, she replies with a question of her own, [hannah.speech(Why wouldn't it be? As far as I understand it, the arcane protects kids from all that stuff. Drinking, smoking, even heavy exercise is meant to be safe, but I personally don't like the idea of that last one. Anyway, come on, what can I get you?)]
+			Доверившись инстинкту, ты спрашиваешь Ханну, разумно ли пить алкоголь во время беременности. Бросив на тебя вопросительный взгляд, она отвечает встречным вопросом: [hannah.speech(А почему бы и нет? Насколько я знаю, аркана защищает детей от всей этой дряни. Пить, курить и даже тяжелые нагрузки вроде как безопасно, хотя лично мне идея с нагрузками не очень нравится. В любом случае, ну же, что тебе принести?)]
 		</p>
 		<p>
-			Thanking her for the offer, you wonder whether to order a drink right away, or to spend some time talking with Hannah first...
+			Поблагодарив её за предложение, ты раздумываешь: заказать напиток прямо сейчас или сначала немного поболтать с Ханной...
 		</p>
 	#ELSE
 		<p>
-			Returning her greeting, you sit down beside the [hannah.race] and briefly look over the many bottles of spirits that are lined up on the shelves before you. Swatting an empty shot glass back and forth over the bar-top between her paw-like hands, Hannah offers, [hannah.speech(Let me get you your first drink. It's my way of thanks for persisting with my lessons until the end.)]
+			Ответив на приветствие, ты садишься рядом с [hannah.race] и бегло осматриваешь множество бутылок крепкого спиртного, выстроенных на полках перед тобой. Перекатывая пустой стопочный стакан между своими лапообразными руками по барной стойке, Ханна предлагает: [hannah.speech(Давай я угощу тебя первым напитком. Это моя благодарность за то, что ты не бросил мои уроки до самого конца.)]
 		</p>
 		<p>
-			Thanking her for the offer, you wonder whether to order a drink right away, or to spend some time talking with Hannah first...
+			Поблагодарив её за предложение, ты раздумываешь: заказать напиток прямо сейчас или сначала немного поболтать с Ханной...
 		</p>
 	#ENDIF
 	]]>
@@ -281,17 +281,17 @@
 	
 	<htmlContent tag="BAR_HANNAH_DRINK"><![CDATA[
 	<p>
-		Deciding that you'd like to order a drink, you manage to get the attention of the bear-boy bartender, who slowly ambles over to stand before you. Silently crossing his muscular, furry arms, he waits to hear what it is you want with an impatient frown on his face. Deciding that you'd better not waste his time, you quickly tell him that you want a shot of [#SPECIAL_PARSE_0].
+		Решив, что пора бы заказать выпивку, ты умудряешься привлечь внимание бармена — крупного, похожего на медведя парня, который неспешно подходит к тебе. Молча скрестив свои мускулистые волосатые руки, он ждёт, что ты захочешь, с нетерпеливой гримасой на лице. Понимая, что лучше не тратить его время попусту, ты быстро заказываешь стопку [#SPECIAL_PARSE_0].
 	</p>
 	<p>
-		Producing a shot glass from under the counter, the bartender places it down on the metal bar-top, before grabbing a bottle of [#SPECIAL_PARSE_0] from off the shelves and filling it to the brim.
+		Достав из-под стойки стопку, бармен ставит её на металлическую поверхность, после чего хватает с полки бутылку [#SPECIAL_PARSE_0] и наполняет её до самых краёв.
 		#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))
-				 Keeping her promise, Hannah leans forwards and says to the bear-boy, [hannah.speech(Put this one on my tab, would you?)]
+				 Сдержав обещание, Ханна наклоняется вперёд и говорит медведопарню: [hannah.speech(Запиши это на мой счёт, ладно?)]
 			</p>
 			<p>
-				Silently nodding, the bartender walks off to serve another customer. After thanking Hannah for the drink, you pick up the shot glass and down the spirit in one swift gulp.
+				Молча кивнув, бармен уходит обслуживать другого клиента. Поблагодарив Ханну за выпивку, ты берешь стопку и одним махом осушаешь её.
 		#ELSE
-			 After handing over your flames to the bear-boy, you pick up the shot glass and down the spirit in one swift gulp.
+			 Отдав свои огни медведопарню, ты берешь стопку и одним махом осушаешь крепкий напиток.
 		#ENDIF
 	</p>
 	]]>
@@ -299,67 +299,67 @@
 	
 	<htmlContent tag="BAR_HANNAH_DRINK_WARNING"><![CDATA[
 	<p style='text-align:center;'>
-		[style.italicsMinorBad(You've had far too much alcohol and are at your limit!)]
+		[style.italicsMinorBad(Ты выпил слишком много алкоголя, и твои силы на пределе!)]
 		<br/>
-		[style.italicsBad(Who knows what could happen if you drink any more...)]
+		[style.italicsBad(Кто знает, что может случиться, если ты выпьешь ещё...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_LEAVE"><![CDATA[
 	<p>
-		Feeling like you need to get some space, you stand up and tell Hannah that you've got to be going.
+		Чувствуя, что тебе нужно немного пространства, ты встаёшь и говоришь Ханне, что тебе пора идти.
 	</p>
 	<p>
-		[hannah.speech(I guess I should be leaving now too,)] she grunts, before ordering and downing one last shot of whiskey. Giving you a sly look, she teases, [hannah.speech(Next time you're here, you should stick around for a while... Who knows where things might lead?)]
+		[hannah.speech(Пожалуй, мне тоже пора,)] — хмыкает она, прежде чем заказать и осушить последнюю стопку виски. Бросив на тебя лукавый взгляд, она поддразнивает: [hannah.speech(В следующий раз, когда будешь здесь, не спеши уходить... Кто знает, куда это может привести?)]
 	</p>
 	<p>
-		Letting out one of her half-hyena, half-human laughs, she strides over to the exit and pulls open the door, before disappearing into the neon-lit night beyond. Looking around, you wonder whether to follow in her footsteps, or to instead spend a little more time in the bar...
+		Издав свой характерный смех — нечто среднее между человеческим и гиеноподобным, — она направляется к выходу и распахивает дверь, исчезая в залитой неоном ночи. Оглядевшись, ты раздумываешь: последовать за ней или всё же провести в баре ещё немного времени...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_TALK"><![CDATA[
 	<p>
-		Wanting to relax and chat with Hannah for a little while, and knowing that she likes boxing more than anything, you begin by asking her how her training at the gym went today. Sure enough, this is the key to getting her talking, and soon enough the two of you are discussing different training techniques, the quality of her students, and how many challengers she's defeated this week.
+		Желая немного расслабиться и поболтать с Ханной, и зная, что она больше всего на свете любит бокс, ты начинаешь с вопроса о том, как прошли её сегодняшние тренировки в зале. И это срабатывает — это именно то, что заставляет её разговориться. Вскоре вы уже вовсю обсуждаете различные техники тренировок, уровень её учеников и то, сколько претендентов она одолела на этой неделе.
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_lights_out_hannah_had_initial_talk))
 		<p>
-			[hannah.speech(Speaking of challengers, you know why they keep coming to me?)] she asks. Before you can respond to remind her that she has indeed told you of this before, Hannah points to three of the dozen trophy cups that are lined up behind the bar. As you see that these three have engravings of her likeness on them, she continues, [hannah.speech(I was champion three years running. Back then the sport was still all about the fight, but after my second victory, the organisers started cheapening it by focusing more on the promotions and showmanship.)]
+		[hannah.speech(Кстати о претендентах, знаешь, почему они всё время ко мне приходят?)] — спрашивает она. Прежде чем ты успеваешь напомнить ей, что она уже рассказывала об этом, Ханна указывает на три из дюжины кубков, выстроенных за барной стойкой. Заметив, что на этих трёх кубках выгравировано её изображение, она продолжает: [hannah.speech(Три года подряд я была чемпионкой. Тогда спорт всё ещё был про сам бой, но после моей второй победы организаторы начали его удешевлять, делая упор на пиар и шоудраму.)]
 		</p>
 		<p>
-			Clearly disgusted by this turn of events in her past, the [hannah.race] angrily slams her shot glass down onto the counter. As if possessing prescience, the bartender appears at that exact moment to pour another shot of whiskey into Hannah's glass. Instantly downing it, she continues her story by grumbling, [hannah.speech(After my third victory, I told the organisers that they were sell-outs. We exchanged some words, at the end of which I quit their championship. I'm still classed as being undefeated, so that's why challengers come seeking me out.)]
+		Очевидно раздосадованная тем, как повернулись дела в её прошлом, [hannah.race] с гневом хлопает стопкой по стойке. Словно обладая даром предвидения, бармен появляется именно в этот момент, чтобы подлить Ханне ещё виски. Мгновенно осушив стопку, она продолжает свой рассказ, ворчливо добавляя: [hannah.speech(После моей третьей победы я заявила организаторам, что они — продажные выскочки. Мы перекинулись парой крепких словечек, после чего я бросила их чемпионат. Я до сих пор числюсь непобежденной, вот почему претенденты и ищут встречи со мной.)]
 		</p>
 		<p>
-			Remembering what she told you before, you remark upon that being the point when she decided to go and work for Pix. Letting out one of her half-hyena, half-human laughs as you say this, she exclaims, [hannah.speech(That's right! She must have known where things were going, because when I got back to my apartment I found her waiting there. In the morning she offered me the job again, and I accepted.)]
+			Вспомнив её прошлые слова, ты замечаешь, что именно тогда она и решила пойти работать к Пикс. Издав свой характерный получеловеческий-полугиений смешок, она восклицает: [hannah.speech(Всё верно! Она, должно быть, понимала, к чему всё идёт, потому что, когда я вернулась в квартиру, она уже ждала меня там. А утром она снова предложила мне работу, и я согласилась.)]
 		</p>
 		<p>
-			Knowing from your previous discussion that she and Pix aren't in a relationship, you ask the [hannah.race] if that's still the case.
+			Помня из вашего предыдущего разговора, что она и Пикс не состоят в отношениях, ты спрашиваешь [hannah.race], так ли это по-прежнему.
 		</p>
 		<p>
-			[hannah.speech(Yeah, we've never really been a couple, we just spend the night together every now and then,)] Hannah replies. Downing yet another shot that the bartender has poured for her, she flashes you a grin and somewhat-clumsily teases, [hannah.speech(But you know that there's someone else I've got my eye on at the moment... Someone who's pretty hot and knows the way to please me...)]
+			[hannah.speech(Да, мы никогда толком не были парой, просто время от времени проводим ночи вместе,)] — отвечает Ханна. Опрокинув ещё одну стопку, которую налил ей бармен, она расплывается в улыбке и слегка неуклюже кокетничает: [hannah.speech(Но знаешь, у меня сейчас есть кое-кто на примете... Кто-то очень горячий и знающий, как доставить мне удовольствие...)]
 		</p>
 		<p>
-			Although Hannah's sober state is to be a little prude, the several shots she's recently downed are making her show her true feelings, and you wonder whether or not to flirt back with her...
+			Хотя в трезвом состоянии Ханна бывает немного ханжой, несколько выпитых стопок заставляют её проявлять истинные чувства, и ты гадаешь, стоит ли начать флиртовать с ней в ответ...
 		</p>
 	#ELSE
 		<p>
-			[hannah.speech(Speaking of challengers, you know why they keep coming to me?)] she asks. Before you can respond, she points to three of the dozen trophy cups that are lined up behind the bar. As you see that these three have engravings of Hannah's likeness on them, she continues, [hannah.speech(I was champion three years running. Back then the sport was still all about the fight, but after my second victory, the organisers started cheapening it by focusing more on the promotions and showmanship.)]
+			[hannah.speech(Кстати о претендентах... знаешь, почему они все время приходят ко мне?)] — спрашивает она. Прежде чем ты успеваешь ответить, она указывает на три из дюжины кубков, выстроенных за барной стойкой. Заметив, что на этих трех выгравировано изображение самой Ханны, она продолжает: [hannah.speech(Три года подряд я была чемпионкой. Тогда этот спорт был про сам бой, но после моей второй победы организаторы начали его дешевить, делая упор на пиар и шоу.)]
 		</p>
 		<p>
-			Clearly disgusted by this turn of events in her past, the [hannah.race] angrily slams her shot glass down onto the counter. As if possessing prescience, the bartender appears at that exact moment to pour another shot of whiskey into Hannah's glass. Instantly downing it, she continues her story by grumbling, [hannah.speech(After my third victory, I told the organisers that they were sell-outs. We exchanged some words, at the end of which I quit their championship. I'm still classed as being undefeated, so that's why challengers come seeking me out.)]
+		Очевидно раздосадованная тем, как повернулись дела в её прошлом, [hannah.race] с гневом хлопает стопкой по стойке. Словно обладая даром предвидения, бармен появляется именно в этот момент, чтобы подлить Ханне ещё виски. Мгновенно осушив стопку, она продолжает свой рассказ, ворчливо добавляя: [hannah.speech(После моей третьей победы я заявила организаторам, что они — продажные выскочки. Мы перекинулись парой крепких словечек, после чего я бросила их чемпионат. Я до сих пор числюсь непобежденной, вот почему претенденты и ищут встречи со мной.)]
 		</p>
 		<p>
-			You ask her if that's when she decided to go and work for Pix, to which Hannah lets out one of her half-hyena, half-human laughs and exclaims, [hannah.speech(That's right! She must have known where things were going, because when I got back to my apartment I found her waiting there. In the morning she offered me the job again, and I accepted.)]
+			Ты спрашиваешь, не тогда ли она решила пойти работать к Пикс. Ханна издает свой характерный полу-гиены, полу-человека смешок и восклицает: [hannah.speech(Именно! Она, должно быть, предвидела, куда всё катится, потому что, когда я вернулась в квартиру, она уже ждала меня там. Утром она снова предложила мне работу, и я согласилась.)]
 		</p>
 		<p>
-			Picking up on the meaning of Pix still being around to offer Hannah the job in the morning, you ask the [hannah.race] if she and Pix are still seeing one another.
+			Зацепившись за то, что Пикс всё еще была рядом, чтобы предложить Ханне работу на следующее утро, ты спрашиваешь [hannah.race], встречаются ли они с Пикс до сих пор.
 		</p>
 		<p>
-			[hannah.speech(We've never really been a couple, we just spend the night together every now and then,)] Hannah reveals. Downing yet another shot that the bartender has poured for her, she flashes you a grin and somewhat-clumsily teases, [hannah.speech(But there's someone else I've got my eye on at the moment... Someone who's pretty hot...)]
+			[hannah.speech(Мы никогда не были парой, просто время от времени проводим ночи вместе,)] — признается Ханна. Опрокинув очередную стопку, которую налил ей бармен, она расплывается в ухмылке и слегка неуклюже поддразнивает тебя: [hannah.speech(Но сейчас у меня есть кое-кто еще на примете... Кто-то очень горячий...)]
 		</p>
 		<p>
-			Although you can tell that she's genuinely into you, it seems as though Hannah's sober state is to be a little prude. Thanks to the several shots she's recently downed, she's starting to show her true feelings, and you wonder whether or not to flirt back with her...
+		Хотя и заметно, что ты ей искренне нравишься, в трезвом состоянии Ханна кажется немного ханжой. Но благодаря нескольким выпитым шотам она начинает проявлять свои истинные чувства, и ты раздумываешь, стоит ли отвечать ей взаимностью и начать флиртовать...
 		</p>
 	#ENDIF
 	]]>
@@ -367,176 +367,178 @@
 	
 	<htmlContent tag="BAR_HANNAH_FLIRT"><![CDATA[
 	<p>
-		Deciding to take things a little further, you start to flirt back with Hannah. Teasing her by pretending not to know that she's talking about you, you get her to reveal more of her feelings for you.
+		Решив зайти чуть дальше, ты начинаешь флиртовать с Ханной в ответ. Дразня её и притворяясь, что не понимаешь, что она говорит именно о тебе, ты заставляешь её раскрыться и признаться в своих чувствах.
 	</p>
 	<p>
 		#IF(hannah.getTotalTimesHadSex(pc)>0)
-			[hannah.speech(Stop playing with me, [pc.name],)] she finally moans. Downing another shot to give herself some more courage, she laments, [hannah.speech(Eugh! It's so easy to deal with people in the ring. We've already had sex as well, so why is it so hard to do this sort of stuff?)]
+			[hannah.speech(Хватит со мной играть, [pc.name],)] — наконец стонет она. Выпив ещё одну стопку, чтобы набраться смелости, она сетует: [hannah.speech(Тьфу! В ринге с людьми всё куда проще. Мы ведь уже даже переспали, так почему же вот это делать так трудно?)]
 		#ELSE
-			[hannah.speech(You know, I really do like you, [pc.name],)] she finally says. Downing another shot to give herself some more courage, she laments, [hannah.speech(Eugh! It's so easy to deal with people in the ring. Why is it so hard to do this sort of stuff?)]
+			[hannah.speech(Знаешь, ты мне и правда очень нравишься, [pc.name],)] — наконец произносит она. Выпив ещё одну стопку для храбрости, она жалуется: [hannah.speech(Тьфу! В ринге с людьми всё куда проще. Почему же вот это делать так сложно?)]
 		#ENDIF
 	</p>
 	<p>
-		Pushing her a little further, you tell Hannah to relax and just show you her true feelings. Although you're the one who suggested it, you're still taken a little aback by the forcefulness of Hannah's next move. Dragging her chair so that she's sitting right next to you, she grabs you and pulls you into her [hannah.breasts+].
+		Немного подначивая её, ты советуешь Ханне расслабиться и просто показать свои истинные чувства. И хотя это ты предложил, ты всё равно слегка опешиваешь от напористости её следующего шага. Подвинув стул вплотную к тебе, она хватает тебя и притягивает к своей [hannah.breasts+].
 	</p>
 	<p>
-		[hannah.speech(You mean like this?)] she asks. As she rubs her muscular body up against yours, it seems like she wants you to make the next move...
+		[hannah.speech(Ты имеешь в виду — вот так?)] — спрашивает она. Пока она прижимается своим мускулистым телом к твоему, кажется, она ждёт, что следующий шаг сделаешь ты...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_KISS"><![CDATA[
 	<p>
-		Giving the [hannah.race] what she wants, you lean into her and press your [pc.lips+] against hers. Letting out a deep, satisfied moan, she parts her lips and sloppily returns your gesture. What her kiss lacks in finesse it more than makes up for in passion, for she happily spends the next couple of minutes grinding into you and greedily exploring the inside of your mouth with her large, flat tongue.
+		Давая [hannah.race] то, чего она хочет, ты прижимаешься к ней, вжимая свой [pc.lips+] в её. Издав глубокий, удовлетворенный стон, она приоткрывает губы и жадно отвечает на твой поцелуй. В её ласках может не хватать изящества, но они с лихвой компенсируются страстью: следующие пару минут она с упоением трется о тебя, жадно исследуя твой рот своим широким и плоским языком.
 	</p>
 	<p>
-		Finally breaking off the kiss with a lewd, wet smacking noise, your partner moans, [hannah.speech(That's what I wanted... You're so hot, [pc.name]...)]
+		Наконец прервав поцелуй с похотливым влажным чмоканьем, твоя партнерша стонет: [hannah.speech(Вот чего я хотела... Ты такой горячий, [pc.name]...)]
 	</p>
 	<p>
 		#IF(hannah.getTotalTimesHadSex(pc)>0)
-			After downing yet another shot, the [hannah.race] leans forwards and locks her [hannah.eyeColour] eyes onto yours. Running her paw-like hands up your [pc.legs], she breathlessly moans, [hannah.speech(I want more... I want to fuck you again, [pc.name]... Just like last time...)]
+		
+		Опрокинув еще одну стопку, [hannah.race] подается вперед, впиваясь своими [hannah.eyeColour] глазами в твои. Проводя своими лапами-руками вверх по твоим [pc.legs], она прерывисто стонет: [hannah.speech(Хочу еще... Хочу трахнуть тебя снова, [pc.name]... Прямо как в прошлый раз...)]
 		#ELSE
-			After downing yet another shot, the [hannah.race] leans forwards and locks her [hannah.eyeColour] eyes onto yours. Running her paw-like hands up your [pc.legs], she breathlessly moans, [hannah.speech(I want more... I want to fuck you, [pc.name]...)]
+		
+		Опрокинув еще одну стопку, [hannah.race] подается вперед, впиваясь своими [hannah.eyeColour] глазами в твои. Проводя своими лапами-руками вверх по твоим [pc.legs], она прерывисто стонет: [hannah.speech(Хочу еще... Хочу трахнуть тебя, [pc.name]...)]
 		#ENDIF
 	</p>
 	<p>
-		With the alcohol in her system having broken down all of her inhibitions, Hannah continues to hungrily stare at you as she awaits your answer...
+		Алкоголь окончательно развязал ей язык и стер все запреты, и теперь Ханна продолжает голодно смотреть на тебя, ожидая ответа...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_SEX_START_ALLEYWAY"><![CDATA[
 	<p>
-		Wanting it as much as she does, you ask Hannah if she'd like to get out of here and find somewhere a little more private.
+		Желая этого так же сильно, как и она, ты спрашиваешь Ханну, не хочет ли она уйти отсюда и найти место поуединеннее.
 	</p>
 	<p>
-		[hannah.speech(Come on, [pc.name], let's go!)] the impatient [hannah.race] exclaims in response to your suggestion. Grabbing you by the [pc.hand(true)], she drags you through the bar and out into the neon-lit streets of Nightlife.
+		[hannah.speech(Давай, [pc.name], пошли!)] — нетерпеливая [hannah.race] восклицает в ответ на твое предложение. Схватив тебя за [pc.hand(true)], она тащит тебя через весь бар прямиком на залитые неоном улицы Найтлайфа.
 	</p>
 	<p>
-		As the two of you search for a private place in which to continue your evening, you suddenly spot a dark, quiet alleyway nestled between two buildings. Taking charge, you pull Hannah along as you make a beeline for it. A moment later and the two of you are deep within the gloomy alley, with the lights and sounds of Nightlife having been left far behind.
+		Пока вы вдвоем ищете укромное местечко, чтобы продолжить вечер, ты внезапно замечаешь темный, тихий переулок, зажатый между двумя зданиями. Перехватив инициативу, ты тянешь Ханну за собой, направляясь прямиком к нему. Мгновение спустя вы уже глубоко в мрачном переулке, а огни и шум Найтлайфа остались далеко позади.
 	</p>
 	<p>
-		Impassioned and desperate to fuck one another, the two of you pay your seedy surroundings no heed as you share yet another clumsy, sloppy kiss. Pulling back, the [hannah.race] desperately moans, [hannah.speech(Fuck me, [pc.name]!)]
+		Охваченные страстью и отчаянным желанием трахнуть друг друга, вы совершенно не замечаете грязного окружения, обмениваясь очередным неумелым, влажным поцелуем. Отстранившись, [hannah.race] отчаянно стонет: [hannah.speech(Трахни меня, [pc.name]!)]
 	</p>
 	<p>
-		More than happy to do as she asks, you prepare to get started...
+		С огромным удовольствием исполняя её просьбу, ты готовишься приступить к делу...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_SEX_START_BEDROOM"><![CDATA[
 	<p>
-		Wanting it as much as she does, you ask Hannah if she'd like to get out of here and find somewhere a little more private.
+		Желая этого так же сильно, как и она, ты спрашиваешь Ханну, не хочет ли она уйти отсюда и найти место поуединеннее.
 	</p>
 	<p>
-		[hannah.speech(Come on, [pc.name], let's go!)] the impatient [hannah.race] exclaims in response to your suggestion. Grabbing you by the [pc.hand(true)], she drags you through the bar and out into the neon-lit streets of Nightlife.
+		[hannah.speech(Давай, [pc.name], пошли!)] — нетерпеливая [hannah.race] восклицает в ответ на твое предложение. Схватив тебя за [pc.hand(true)], она тащит тебя через весь бар прямиком на залитые неоном улицы Найтлайфа.
 	</p>
 	<p>
-		Although you're a fair distance from Lilaya's house, you know that it won't take more than half an hour to get there. As such, you tell your drunk, horny companion that you want to take her back to your place.
+		Хотя до дома Lilaya еще приличное расстояние, ты знаешь, что путь займет не больше получаса. Поэтому ты говоришь своей пьяной и похотливой спутнице, что хочешь затащить её к себе.
 	</p>
 	<p>
-		[hannah.speech(Can't we just do it down an alleyway?)] she slurs, but after hearing you say that it'd be far more comfortable to have a bed, she relents, [hannah.speech(Fine, but let's hurry!)]
+		[hannah.speech(Может, просто сделаем это в переулке?)] — заплетающимся языком бормочет она, но, услышав твои слова о том, что с кроватью будет куда удобнее, сдается: [hannah.speech(Ладно, но давай поскорее!)]
 	</p>
 	<p>
-		Pulling her along beside you, the two of you soon find yourself at Lilaya's mansion. Too drunk to notice, or perhaps too horny to care, Hannah doesn't comment on the size of the place, and in fact doesn't say much at all until you're finally staggering into your bedroom.
+		Ведя её за собой, ты вскоре оказываешься у особняка Lilaya. Слишком пьяная, чтобы заметить, или, возможно, слишком возбужденная, чтобы обращать внимание, Ханна не комментирует размеры поместья и, по сути, почти не проронит ни слова, пока вы, наконец, не вваливаетесь в спальню.
 	</p>
 	<p>
-		[hannah.speech(Yeah, this is a better place to fuck than an alley,)] she declares, before pulling you into another clumsy, sloppy kiss. Pulling back, the [hannah.race] desperately moans, [hannah.speech(Now fuck me, [pc.name]!)]
+		[hannah.speech(Да, здесь трахаться куда лучше, чем в подворотне,)] — заявляет она, прежде чем втянуть тебя в очередной неуклюжий, влажный поцелуй. Отстранившись, [hannah.race] отчаянно стонет: [hannah.speech(А теперь трахни меня, [pc.name]!)]
 	</p>
 	<p>
-		More than happy to do as she asks, you prepare to get started...
+		С огромным удовольствием исполняя её просьбу, ты готовишься приступить к делу...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_ALLEYWAY"><![CDATA[
 	<p>
-		Having satisfied your carnal desires with one another, you and Hannah step back and start getting your clothing back in order. For the first time since entering this dark, narrow alleyway, the two of you begin to become aware that you might be in danger of being set upon by muggers. As the two of you are proficient fighters, you see the possibility of being set upon as more of an inconvenience than a real threat, but you'd still like to avoid it if at all possible.
+		Утолив взаимное плотское вожделение, вы с Ханной отстраняетесь друг от друга и начинаете приводить одежду в порядок. Впервые с тех пор, как вы вошли в этот темный узкий переулок, до вас начинает доходить, что вы можете стать легкой добычей для грабителей. Поскольку вы оба — опытные бойцы, нападение кажется вам скорее досадной помехой, чем реальной угрозой, но всё же лучше бы его избежать.
 	</p>
 	<p>
-		[hannah.speech(I guess we shouldn't hang around here any longer,)] Hannah states, clearly thinking the same thing that you are. After giving you one last, sloppy kiss, she steps back and says, [hannah.speech(I'd better get back home to sleep... See you around, [pc.name]...)]
+		[hannah.speech(Думаю, нам не стоит здесь задерживаться,)] — произносит Ханна, явно думая о том же, что и ты. Одарив тебя последним небрежным поцелуем, она отступает и говорит: [hannah.speech(Мне пора домой, поспать... Еще увидимся, [pc.name]...)]
 	</p>
 	<p>
-		With that, the [hannah.race] staggers off, leaving you alone and wondering what to do next...
+		С этими словами [hannah.race], пошатываясь, уходит, оставляя тебя в одиночестве и заставляя гадать, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_ALLEYWAY_CONTINUE"><![CDATA[
 	<p>
-		With Hannah having departed, and the pleasant memory of your encounter still fresh in your mind, you get your things in order and continue on your way...
+		Ханна ушла, но приятные воспоминания о вашей встрече всё еще свежи в памяти. Ты приводишь вещи в порядок и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_BEDROOM"><![CDATA[
 	<p>
-		Having satisfied your carnal desires with one another, you and Hannah break off and collapse down onto your bed. After a couple of minutes spent panting as you try to get your breath back, you're the first to break the happy silence by asking Hannah if she's going to spend the rest of the night here.
+		Утолив плотские желания друг друга, вы с Ханной расходитесь и обессиленно падаете на кровать. Проведя пару минут в тяжелой одышке, пытаясь восстановить дыхание, ты первым нарушаешь счастливое молчание, спрашивая Ханну, собирается ли она провести здесь остаток ночи.
 	</p>
 	<p>
-		[hannah.speech(Yeah, there's no way I'm walking all the back home now,)] she replies, before throwing back the covers and dragging you into bed with her. Wrapping her muscular, furry arms around you, she tightly embraces you as she presses her lips against yours and once again gives you a clumsy, sloppy kiss. Pulling back a moment later, she sleepily sighs, [hannah.speech(Good night, [pc.name]...)]
+		[hannah.speech(Ага, уж точно не собираюсь сейчас топать всю дорогу домой домой,)] — отвечает она, прежде чем откинуть одеяло и затащить тебя в постель. Обхватив тебя своими мускулистыми, покрытыми мехом руками, она крепко прижимает тебя к себе и снова дарит тебе неуклюжий, влажный поцелуй. Отстранившись мгновение спустя, она сонно вздыхает: [hannah.speech(Спокойной ночи, [pc.name]...)]
 	</p>
 	<p>
-		Before you've even finished saying good night back to her, the [hannah.race] is loudly snoring. Her arms are still tightly wrapped around you, and as you try to move, she mumbles in her sleep and pulls you even tighter in against her [hannah.breasts+]. Realising that you're going to have to spend the night acting as Hannah's teddy bear, you relax and allow yourself to drift off to sleep beside her...
+		Ты даже не успеваешь пожелать ей спокойной ночи в ответ, как [hannah.race] уже громко храпит. Её руки всё еще крепко обхватывают тебя, и когда ты пытаешься пошевелиться, она что-то бормочет во сне и прижимает тебя еще сильнее к своей [hannah.breasts+]. Осознав, что тебе придется провести всю ночь в роли плюшевого мишки для Ханны, ты расслабляешься и позволяешь себе погрузиться в сон рядом с ней...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_BEDROOM_MORNING"><![CDATA[
 	<p>
-		The next thing you know, you're waking up as Hannah pulls her arms out from under you and then rolls out of bed. Looking across to the gap in the curtains, you see that it's only just first light.
+		В следующий миг ты понимаешь, что просыпаешься: Ханна вытягивает руки из-под тебя и скатывается с кровати. Глядя в щель между шторами, ты видишь, что только-только забрезжил рассвет.
 	</p>
 	<p>
-		[hannah.speech(Thanks for last night, [pc.name],)] the [hannah.race] sighs, before clutching her head and groaning, [hannah.speech(Eugh... I drank too much again... See you at the gym or the bar again...)]
+		[hannah.speech(Спасибо за прошлую ночь, [pc.name],)] — вздыхает [hannah.race], а затем хватается за голову и стонет: [hannah.speech(Ух... Опять я перебрала... Увидимся в спортзале или в баре...)]
 	</p>
 	<p>
-		As she staggers out of the room, you call after Hannah to tell her to use one of the bell-pulls to summon Rose, who'll give her a drink and let her out. Raising her paw-like hand to show that she's got the message, Hannah departs, leaving you with both the fond memory of last night, as well as with a noticeable smell of alcohol and sex...
+		Пока она шатается к выходу, ты окликаешь Ханну, советуя ей дернуть за колокольчик, чтобы позвать Роуз — та подаст ей выпить и проводит на выход. Подняв свою похожую на лапу руку в знак того, что она всё поняла, Ханна уходит, оставляя тебя наедине с нежными воспоминаниями о прошлой ночи и отчетливым запахом алкоголя и секса...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_BEDROOM_MORNING_CONTINUE"><![CDATA[
 	<p>
-		Lying back in bed, you wonder whether to get up and get moving yourself, or whether to get a little more sleep first...
+		Лежа в постели, ты раздумываешь: стоит ли вставать и приводить себя в порядок, или лучше еще немного поспать...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_WASTED"><![CDATA[
 	<p>
-		As the burning spirit washes down your throat, you feel your head spinning, and before you know what's happening you've completely lost track of what's going on around you...
+		Когда обжигающий спирт смывает сухость в горле, ты чувствуешь, как голова идет кругом, и не успеваешь опомниться, как окончательно теряешь связь с реальностью...
 	</p>
 	<p>
-		The next thing you know, you're breathing in the relatively fresh air of Dominion. Looking around as you stumble forwards, you see that Hannah's leading you down a dark, narrow alleyway. After turning a corner, and leaving the lights and sounds of Nightlife behind, the [hannah.race] stops and turns to face you.
+		В следующий миг ты уже вдыхаешь относительно свежий воздух Dominion. Оглядываясь по сторонам и спотыкаясь на ходу, ты видишь, что Ханна ведет тебя по темному узкому переулку. Свернув за угол и оставив позади огни и шум Nightlife, [hannah.race] останавливается и поворачивается к тебе.
 	</p>
 	<p>
-		[hannah.speech(This spot'll do,)] she slurs, before pulling you into a clumsy, sloppy kiss. Breaking it off a moment later, she moans, [hannah.speech(Now let's fuck!)]
+		[hannah.speech(Это местечко сойдет,)] — бормочет она, прежде чем впиться в тебя неуклюжим, небрежным поцелуем. Разорвав его мгновение спустя, она стонет: [hannah.speech(А теперь давай трахаться!)]
 	</p>
 	<p>
-		Having taken charge, Hannah grabs you and prepares to get what she wants. In a moment of relative clarity, you realise that you only have this one moment in which to put a stop to this. Then again, perhaps this is what you wanted all along...
+		Взяв всё в свои руки, Ханна хватает тебя, готовясь получить желаемое. На мгновение к тебе возвращается ясность ума, и ты понимаешь, что это твой единственный шанс всё остановить. С другой стороны... возможно, именно этого ты и хотел всё это время...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_WASTED_LEAVE"><![CDATA[
 	<p>
-		Not wanting to have sex in such a seedy, potentially-dangerous place, you push Hannah away and mumble something about needing to go.
+		Не желая заниматься сексом в таком злачном и потенциально опасном месте, ты отстраняешь Ханну и что-то бормочешь о том, что тебе пора уходить.
 	</p>
 	<p>
-		[hannah.speech(I guess I came on too strongly,)] Hannah states, before stepping back and continuing, [hannah.speech(I'd better get back home to sleep... See you around, [pc.name]...)]
+		[hannah.speech(Кажется, я слишком навалилась,)] — констатирует Ханна, отступая назад и продолжая: [hannah.speech(Пожалуй, мне лучше пойти домой поспать... Еще увидимся, [pc.name]...)]
 	</p>
 	<p>
-		With that, the [hannah.race] staggers off, leaving you alone and wondering what to do next...
+		С этими словами [hannah.race], пошатываясь, уходит, оставляя тебя в одиночестве и заставляя гадать, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="BAR_HANNAH_WASTED_SEX_START"><![CDATA[
 	<p>
-		Impassioned and desperate to fuck Hannah as much as she is to fuck you, you pay your seedy surroundings no heed as you tell her to get started. Happily moaning, the [hannah.race] pulls you into her [hannah.breasts+] and desperately moans, [hannah.speech(Yes, [pc.name], I'll fuck you so good!)]
+		Охваченный страстью и отчаянным желанием трахнуть Ханну так же сильно, как она хочет тебя, ты не обращаешь внимания на сомнительную обстановку вокруг и велишь ей начинать. Счастливо стоная, [hannah.race] притягивает тебя к своей [hannah.breasts+] и отчаянно выдыхает: [hannah.speech(Да, [pc.name], я оттрахаю тебя так, что ты забудешь обо всем!)]
 	</p>
 	<p>
-		With the [hannah.race] having taken charge, you submit to her and prepare to get started...
+		Поскольку [hannah.race] взяла инициативу на себя, ты подчиняешься ей и готовишься приступить к делу...
 	</p>
 	]]>
 	</htmlContent>
