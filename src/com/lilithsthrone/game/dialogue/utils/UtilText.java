@@ -231,6 +231,8 @@ import com.lilithsthrone.game.sex.positions.slots.SexSlot;
 import com.lilithsthrone.game.sex.positions.slots.SexSlotManager;
 import com.lilithsthrone.game.sex.sexActions.baseActions.ToyVagina;
 import com.lilithsthrone.main.Main;
+import com.lilithsthrone.utils.RuMorphology;
+import com.lilithsthrone.utils.RuVerbTable;
 import com.lilithsthrone.utils.Units;
 import com.lilithsthrone.utils.Util;
 import com.lilithsthrone.utils.Util.Value;
@@ -870,24 +872,15 @@ public class UtilText {
 	 * @return The word, with an appropriate determiner (either 'a' or 'an' ) added in front of it.
 	 */
 	public static String addDeterminer(String word) {
-		return generateSingularDeterminer(word)+" "+word;
+		String d = generateSingularDeterminer(word);
+		return d.isEmpty() ? word : d + " " + word;
 	}
 	
 	/**
 	 * @return 'a' or 'an'
 	 */
 	public static String generateSingularDeterminer(String word) {
-		if(word.isEmpty()) {
-			return "";
-		}
-		if ((isVowel(word.charAt(0)) || word.charAt(0)=='x' || word.charAt(0)=='X')
-				 && !word.startsWith("Uni") && !word.startsWith("uni")
-				 && !word.startsWith("Used") && !word.startsWith("used")) {
-			return "an";
-			
-		} else {
-			return "a";
-		}
+		return "";
 	}
 
 	/**
@@ -1741,15 +1734,15 @@ public class UtilText {
 				} else {
 					if(isPlayer(target, character)) {
 						if(command.startsWith("N")) {
-							return "You";
+							return "Ты";
 						} else {
-							return "you";
+							return "ты";
 						}
 					}
 					if(character.isPlayerKnowsName() || character.isPlayer()) {
 						return character.getName(true);
 					}
-					return character.getName("the");
+					return character.getName("");
 				}
 			}
 		});
@@ -1765,25 +1758,25 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments!=null) {
 					if(arguments.equals(" ") || arguments.equalsIgnoreCase("true")) {
-						return character.getNameIgnoresPlayerKnowledge()+"'s";
+						return RuMorphology.toGenitive(character.getNameIgnoresPlayerKnowledge());
 					}
-					return character.getName(arguments) + "'s";
+					return RuMorphology.toGenitive(character.getName(arguments));
 					
 				} else if(!speechTarget.isEmpty()) {
-					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR)+"'s";
+					return RuMorphology.toGenitive(parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR));
 					
 				} else {
 					if(isPlayer(target, character)) {
 						if(command.startsWith("N")) {
-							return "Your";
-						} else {						 
-							return "your";
+							return "Твой";
+						} else {
+							return "твой";
 						}
 					}
 					if(character.isPlayerKnowsName()) {
-						return character.getName(true) + "'s";
+						return RuMorphology.toGenitive(character.getName(true));
 					}
-					return character.getName("the") + "'s";
+					return RuMorphology.toGenitive(character.getName(""));
 				}
 			}
 		});
@@ -1799,21 +1792,21 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments!=null) {
 					if(arguments.equals(" ") || arguments.equalsIgnoreCase("true")) {
-						return character.getNameIgnoresPlayerKnowledge()+"'s";
+						return character.getNameIgnoresPlayerKnowledge();
 					}
-					return character.getName(arguments) + "'s";
+					return character.getName(arguments);
 					
 				} else if(!speechTarget.isEmpty()) {
-					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR)+"'s";
+					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR);
 					
 				} else {
 					if(isPlayer(target, character)) {
-						return "you're";
+						return "ты";
 					}
 					if(character.isPlayerKnowsName()) {
-						return character.getName(true) + "'s";
+						return character.getName(true);
 					}
-					return character.getName("the") + "'s";
+					return character.getName("");
 				}
 			}
 		});
@@ -1828,21 +1821,21 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments!=null) {
 					if(arguments.equals(" ") || arguments.equalsIgnoreCase("true")) {
-						return character.getNameIgnoresPlayerKnowledge()+" is";
+						return character.getNameIgnoresPlayerKnowledge();
 					}
-					return character.getName(arguments) + " is";
+					return character.getName(arguments);
 					
 				} else if(!speechTarget.isEmpty()) {
-					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR)+" is";
+					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR);
 					
 				} else {
 					if(isPlayer(target, character)) {
-						return "you are";
+						return "ты";
 					}
 					if(character.isPlayerKnowsName()) {
-						return character.getName(true) + " is";
+						return character.getName(true);
 					}
-					return character.getName("the") + " is";
+					return character.getName("");
 				}
 			}
 		});
@@ -1858,21 +1851,21 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments!=null) {
 					if(arguments.equals(" ") || arguments.equalsIgnoreCase("true")) {
-						return character.getNameIgnoresPlayerKnowledge()+"'s";
+						return character.getNameIgnoresPlayerKnowledge();
 					}
-					return character.getName(arguments) + "'s";
+					return character.getName(arguments);
 					
 				} else if(!speechTarget.isEmpty()) {
-					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR)+"'s";
+					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR);
 					
 				} else {
 					if(isPlayer(target, character)) {
-						return "you've";
+						return "ты";
 					}
 					if(character.isPlayerKnowsName()) {
-						return character.getName(true) + "'s";
+						return character.getName(true);
 					}
-					return character.getName("the") + "'s";
+					return character.getName("");
 				}
 			}
 		});
@@ -1887,21 +1880,21 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments!=null) {
 					if(arguments.equals(" ") || arguments.equalsIgnoreCase("true")) {
-						return character.getNameIgnoresPlayerKnowledge()+" has";
+						return character.getNameIgnoresPlayerKnowledge();
 					}
-					return character.getName(arguments) + " has";
+					return character.getName(arguments);
 					
 				} else if(!speechTarget.isEmpty()) {
-					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR)+" has";
+					return parseSyntaxNew(specialNPCs, speechTarget, parseCapitalise?"PetName":"petName", target, ParseMode.REGULAR);
 					
 				} else {
 					if(isPlayer(target, character)) {
-						return "you have";
+						return "ты";
 					}
 					if(character.isPlayerKnowsName()) {
-						return character.getName(true) + " has";
+						return character.getName(true);
 					}
-					return character.getName("the") + " has";
+					return character.getName("");
 				}
 			}
 		});
@@ -1916,24 +1909,7 @@ public class UtilText {
 				"Returns a verb in the (probably) correct person for this character. A player might get 'wiggle' where an NPC would get 'wiggles'.") {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				if (character.isPlayer()) {
-					return arguments;
-				} else if (arguments.endsWith("s")
-						||arguments.endsWith("x")
-						||arguments.endsWith("sh")
-						||arguments.endsWith("ch")
-						||arguments.endsWith("o")){
-					return arguments + "es";
-				} else if (arguments.endsWith("y")
-						&&!arguments.endsWith("ay")
-						&&!arguments.endsWith("ey")
-						&&!arguments.endsWith("iy")
-						&&!arguments.endsWith("oy")
-						&&!arguments.endsWith("uy")) {
-					return arguments.substring(0, arguments.length()-1) + "ies";
-				}else {
-					return arguments + "s";
-				}
+				return RuVerbTable.conjugate(arguments, character.isPlayer());
 			}
 		});
 		
@@ -2373,16 +2349,16 @@ public class UtilText {
 				try {
 					GameCharacter targetedCharacter = character.getPartyLeader();
 					if(targetedCharacter==null) {
-						return "companion";
+						return character.isFeminine() ? "спутница" : "спутник";
 					}
 					Set<Relationship> set = character.getRelationshipsTo(targetedCharacter);
 					if(set.size()>=1 && Math.random()<0.5f) {
 						return set.iterator().next().getName(character);
 					} else {
 						if(character.isSlave() && character.getOwner().equals(targetedCharacter) && Math.random()<0.5f) {
-							return "slave";
+							return character.isFeminine() ? "рабыня" : "раб";
 						}
-						return "companion";
+						return character.isFeminine() ? "спутница" : "спутник";
 					}
 					
 				} catch(Exception ex) {
@@ -2409,7 +2385,7 @@ public class UtilText {
 					if(set.size()>=1) {
 						return set.iterator().next().getName(character);
 					} else {
-						return "no relation";
+						return "нет родства";
 					}
 //					return character.getRelationshipStrTo(targetedCharacter);
 					
@@ -2481,9 +2457,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "mommy";
+					return "мамочка";
 				} else {
-					return "daddy";
+					return "папочка";
 				}
 			}
 		});
@@ -2500,9 +2476,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "mom";
+					return "мама";
 				} else {
-					return "dad";
+					return "папа";
 				}
 			}
 		});
@@ -2532,9 +2508,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "sis";
+					return "сестрёнка";
 				} else {
-					return "bro";
+					return "братишка";
 				}
 			}
 		});
@@ -2564,9 +2540,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "mistress";
+					return "госпожа";
 				} else {
-					return "master";
+					return "господин";
 				}
 			}
 		});
@@ -2583,9 +2559,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "ma'am";
+					return "мэм";
 				} else {
-					return "sir";
+					return "сэр";
 				}
 			}
 		});
@@ -2601,9 +2577,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "lady";
+					return "леди";
 				} else {
-					return "lord";
+					return "лорд";
 				}
 			}
 		});
@@ -2619,9 +2595,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "heroine";
+					return "героиня";
 				} else {
-					return "hero";
+					return "герой";
 				}
 			}
 		});
@@ -2639,9 +2615,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "Miss";
+					return "мисс";
 				} else {
-					return "Mr.";
+					return "мистер";
 				}
 			}
 		});
@@ -2657,9 +2633,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "girlfriend";
+					return "девушка";
 				} else {
-					return "boyfriend";
+					return "парень";
 				}
 			}
 		});
@@ -2676,11 +2652,11 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				try {
 					if(Main.game.getPlayer().getClothingInSlot(InventorySlot.NECK).getStickers().get("txt").equals("filly")) {
-						return "filly";
+						return "кобылка";
 					}
 				} catch(Exception ex) {
 				}
-				return "mule";
+				return "мул";
 			}
 		});
 
@@ -2696,11 +2672,11 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				try {
 					if(Main.game.getPlayer().getClothingInSlot(InventorySlot.NECK).getStickers().get("txt").equals("filly")) {
-						return "fillies";
+						return "кобылки";
 					}
 				} catch(Exception ex) {
 				}
-				return "mules";
+				return "мулы";
 			}
 		});
 		
@@ -2716,9 +2692,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return UtilText.returnStringAtRandom("bitch", "slut", "cunt", "whore", "skank");
+					return UtilText.returnStringAtRandom("сука", "шлюха", "блядь", "потаскуха");
 				} else {
-					return UtilText.returnStringAtRandom("asshole", "bastard", "fuckface", "fucker");
+					return UtilText.returnStringAtRandom("мудак", "ублюдок", "выродок", "трахаль");
 				}
 			}
 		});
@@ -2737,11 +2713,12 @@ public class UtilText {
 				"Returns a random mean word to describe this person, based on their femininity, with a mean descriptor before it.") {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				String naughtyDescriptor = Util.randomItemFromValues("worthless", "dumb", "dirty", "filthy");
 				if(character.isFeminine()) {
-					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("bitch", "slut", "cunt", "whore", "skank");
+					String naughtyDescriptor = Util.randomItemFromValues("никчёмная", "тупая", "грязная", "поганая");
+					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("сука", "шлюха", "блядь", "потаскуха");
 				} else {
-					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("asshole", "bastard", "fuckface", "fucker");
+					String naughtyDescriptor = Util.randomItemFromValues("никчёмный", "тупой", "грязный", "поганый");
+					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("мудак", "ублюдок", "выродок", "трахаль");
 				}
 			}
 		});
@@ -2758,9 +2735,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return UtilText.returnStringAtRandom("bitches", "sluts", "cunts", "whores", "skanks");
+					return UtilText.returnStringAtRandom("суки", "шлюхи", "бляди", "потаскухи");
 				} else {
-					return UtilText.returnStringAtRandom("assholes", "bastards", "fuckfaces", "fuckers");
+					return UtilText.returnStringAtRandom("мудаки", "ублюдки", "выродки", "уёбки");
 				}
 			}
 		});
@@ -2779,11 +2756,11 @@ public class UtilText {
 				"Returns a random mean pluralised word to describe this person, based on their femininity, with a mean descriptor before it.") {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				String naughtyDescriptor = Util.randomItemFromValues("worthless", "dumb", "dirty", "filthy");
+				String naughtyDescriptor = Util.randomItemFromValues("никчёмные", "тупые", "грязные", "поганые");
 				if(character.isFeminine()) {
-					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("bitches", "sluts", "cunts", "whores", "skanks");
+					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("суки", "шлюхи", "бляди", "потаскухи");
 				} else {
-					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("assholes", "bastards", "fuckfaces", "fuckers");
+					return naughtyDescriptor+" "+UtilText.returnStringAtRandom("мудаки", "ублюдки", "выродки", "уёбки");
 				}
 			}
 		});
@@ -2799,9 +2776,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "babe";
+					return "детка";
 				} else {
-					return "hun";
+					return "дорогой";
 				}
 			}
 		});
@@ -2880,11 +2857,11 @@ public class UtilText {
 				if(arguments!=null && Boolean.valueOf(arguments)) {
 					boolean pronoun = parseAddPronoun;
 					parseAddPronoun = false;
-					String name = character.isRaceConcealed()?"unknown race":getSubspeciesName(character.getSubspecies(), character);
+					String name = character.isRaceConcealed()?"неизвестная раса":getSubspeciesName(character.getSubspecies(), character);
 					return "<span style='color:"+(character.isRaceConcealed()?PresetColour.TEXT_GREY:character.getSubspecies().getColour(character)).toWebHexString()+";'>"
 							+ (parseCapitalise
-									?Util.capitaliseSentence((pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
-									:(pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									?Util.capitaliseSentence((pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									:(pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
 							+"</span>";
 				}
 				return getSubspeciesName(character.getSubspecies(), character);
@@ -2904,11 +2881,11 @@ public class UtilText {
 				if(arguments!=null && Boolean.valueOf(arguments)) {
 					boolean pronoun = parseAddPronoun;
 					parseAddPronoun = false;
-					String name = character.isRaceConcealed()?"unknown race":getSubspeciesNamePlural(character.getSubspecies(), character);
+					String name = character.isRaceConcealed()?"неизвестная раса":getSubspeciesNamePlural(character.getSubspecies(), character);
 					return "<span style='color:"+(character.isRaceConcealed()?PresetColour.TEXT_GREY:character.getSubspecies().getColour(character)).toWebHexString()+";'>"
 							+ (parseCapitalise
-									?Util.capitaliseSentence((pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
-									:(pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									?Util.capitaliseSentence((pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									:(pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
 							+"</span>";
 				}
 				return getSubspeciesNamePlural(character.getSubspecies(), character);
@@ -2928,11 +2905,11 @@ public class UtilText {
 				if(arguments!=null && Boolean.valueOf(arguments)) {
 					boolean pronoun = parseAddPronoun;
 					parseAddPronoun = false;
-					String name = character.isRaceConcealed()?"unknown race":character.getSubspecies().getFeralName(character.getBody());
+					String name = character.isRaceConcealed()?"неизвестная раса":character.getSubspecies().getFeralName(character.getBody());
 					return "<span style='color:"+(character.isRaceConcealed()?PresetColour.TEXT_GREY:character.getSubspecies().getColour(character)).toWebHexString()+";'>"
 							+ (parseCapitalise
-									?Util.capitaliseSentence((pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
-									:(pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									?Util.capitaliseSentence((pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									:(pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
 							+"</span>";
 				}
 				return character.getSubspecies().getFeralName(character.getBody());
@@ -2951,19 +2928,19 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(!character.isElemental()) {
-					return "[style.italicsBad(The 'passiveRace' command does not work on non-elementals!)]";
+					return "[style.italicsBad(Команда 'passiveRace' работает только на элементалях!)]";
 				}
 				Elemental elemental = ((Elemental)character);
 				String name = elemental.getPassiveForm()==null
-						?"wisp"
+						?"огонёк"
 						:elemental.getPassiveForm().getFeralName(elemental.getBody());
 				if(arguments!=null && Boolean.valueOf(arguments)) {
 					boolean pronoun = parseAddPronoun;
 					parseAddPronoun = false;
 					return "<span style='color:"+(elemental.getPassiveForm()==null?elemental.getCurrentSchool().getColour():elemental.getPassiveForm().getColour(character)).toWebHexString()+";'>"
 							+ (parseCapitalise
-									?Util.capitaliseSentence((pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
-									:(pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									?Util.capitaliseSentence((pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									:(pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
 							+"</span>";
 				}
 				return name;
@@ -2982,7 +2959,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(!character.isElemental()) {
-					return "[style.italicsBad(The 'boundSchool' command does not work on non-elementals!)]";
+					return "[style.italicsBad(Команда 'boundSchool' работает только на элементалях!)]";
 				}
 				Elemental elemental = ((Elemental)character);
 				String name = elemental.getCurrentSchool().getName();
@@ -2991,8 +2968,8 @@ public class UtilText {
 					parseAddPronoun = false;
 					return "<span style='color:"+elemental.getCurrentSchool().getColour().toWebHexString()+";'>"
 							+ (parseCapitalise
-									?Util.capitaliseSentence((pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
-									:(pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									?Util.capitaliseSentence((pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									:(pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
 							+"</span>";
 				}
 				return name;
@@ -3014,8 +2991,8 @@ public class UtilText {
 					String name = character.getRaceStage().getName();
 					return "<span style='color:"+character.getRaceStage().getColour().toWebHexString()+";'>"
 							+ (parseCapitalise
-									?Util.capitaliseSentence((pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
-									:(pronoun?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									?Util.capitaliseSentence((pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
+									:(pronoun && !UtilText.generateSingularDeterminer(name).isEmpty()?UtilText.generateSingularDeterminer(name)+" ":"")+name)
 							+"</span>";
 				}
 				return character.getRaceStage().getName();
@@ -3053,13 +3030,13 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getBodyMaterial()==BodyMaterial.FLESH) {
-					return "covered in";
+					return "покрыто";
 				} else {
 					return UtilText.returnStringAtRandom(
-							"made from",
-							"composed entirely of",
-							"formed out of",
-							"made entirely from");
+							"состоит из",
+							"соткано целиком из",
+							"сформировано из",
+							"полностью состоит из");
 				}
 			}
 		});
@@ -3629,9 +3606,9 @@ public class UtilText {
 				try {
 					GameCharacter targetedCharacter = parserTarget.getCharacter(arguments.toLowerCase(), null);
 					if(targetedCharacter.getHeightValue()<character.getHeightValue()) {
-						return "down";
+						return "вниз";
 					} else {
-						return "up";
+						return "вверх";
 					}
 				} catch(Exception ex) {
 					ex.printStackTrace();
@@ -4031,17 +4008,17 @@ public class UtilText {
 				if(Main.game.isInSex()) {
 					if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("sob", "scream", "cry");
+							return returnStringAtRandom("всхлип", "вскрик", "крик");
 						} else {
-							return returnStringAtRandom("shout", "cry");
+							return returnStringAtRandom("крик", "вопль");
 						}
 					}
 				}
 				
 				if(character.isFeminine()) {
-					return returnStringAtRandom("moan", "squeal", "gasp");
+					return returnStringAtRandom("стон", "писк", "вздох");
 				} else {
-					return returnStringAtRandom("groan", "grunt");
+					return returnStringAtRandom("стон", "рык");
 				}
 			}
 		});
@@ -4067,24 +4044,24 @@ public class UtilText {
 				if(Main.game.isInSex()) {
 					if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("miserable", "pathetic", "distressed") + " " + returnStringAtRandom("sob", "scream", "cry");
+							return returnStringAtRandom("жалобный", "жалкий", "отчаянный") + " " + returnStringAtRandom("всхлип", "вскрик", "крик");
 						} else {
-							return returnStringAtRandom("miserable", "pathetic", "distressed") + " " + returnStringAtRandom("shout", "cry");
+							return returnStringAtRandom("жалобный", "жалкий", "отчаянный") + " " + returnStringAtRandom("крик", "вопль");
 						}
 						
 					} else if(Main.sex.getSexPace(character)==SexPace.DOM_GENTLE) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("soft", "gentle", "quiet") + " " + returnStringAtRandom("moan", "sigh", "gasp");
+							return returnStringAtRandom("тихий", "нежный", "слабый") + " " + returnStringAtRandom("стон", "вздох", "ах");
 						} else {
-							return returnStringAtRandom("soft", "gentle", "quiet") + " " + returnStringAtRandom("groan", "grunt");
+							return returnStringAtRandom("тихий", "нежный", "слабый") + " " + returnStringAtRandom("стон", "рык");
 						}
 					}
 				}
 				
 				if(character.isFeminine()) {
-					return returnStringAtRandom("lewd", "high-pitched", "desperate") + " " + returnStringAtRandom("moan", "squeal", "cry", "gasp");
+					return returnStringAtRandom("похотливый", "звонкий", "отчаянный") + " " + returnStringAtRandom("стон", "писк", "вскрик", "вздох");
 				} else {
-					return returnStringAtRandom("deep", "low", "desperate") + " " + returnStringAtRandom("groan", "grunt");
+					return returnStringAtRandom("глубокий", "низкий", "отчаянный") + " " + returnStringAtRandom("стон", "рык");
 				}
 			}
 		});
@@ -4110,33 +4087,33 @@ public class UtilText {
 					if(Main.game.isInSex()) {
 						if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 							if(character.isFeminine()) {
-								return returnStringAtRandom("sob", "scream", "cry");
+								return returnStringAtRandom("всхлипываешь", "вскрикиваешь", "стонешь");
 							} else {
-								return returnStringAtRandom("shout", "cry");
+								return returnStringAtRandom("кричишь", "стонешь");
 							}
 						}
 					}
 					
 					if(character.isFeminine()) {
-						return returnStringAtRandom("moan", "squeal", "gasp");
+						return returnStringAtRandom("стонешь", "пищишь", "ахаешь");
 					} else {
-						return returnStringAtRandom("groan", "grunt");
+						return returnStringAtRandom("стонешь", "рычишь");
 					}
 				} else {
 					if(Main.game.isInSex()) {
 						if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 							if(character.isFeminine()) {
-								return returnStringAtRandom("sobs", "screams", "cries");
+								return returnStringAtRandom("всхлипывает", "кричит", "рыдает");
 							} else {
-								return returnStringAtRandom("shouts", "cries");
+								return returnStringAtRandom("кричит", "вопит");
 							}
 						}
 					}
 					
 					if(character.isFeminine()) {
-						return returnStringAtRandom("moans", "squeals", "gasps");
+						return returnStringAtRandom("стонет", "пищит", "ахает");
 					} else {
-						return returnStringAtRandom("groans", "grunts");
+						return returnStringAtRandom("стонет", "рычит");
 					}
 				}
 			}
@@ -4172,47 +4149,47 @@ public class UtilText {
 					if(Main.game.isInSex()) {
 						if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 							if(character.isFeminine()) {
-								return returnStringAtRandom("miserably", "pathetically") + " " + returnStringAtRandom("sob", "scream", "cry");
+								return returnStringAtRandom("жалобно", "жалко") + " " + returnStringAtRandom("всхлипываешь", "кричишь", "плачешь");
 							} else {
-								return returnStringAtRandom("miserably", "pathetically") + " " + returnStringAtRandom("shout", "cry");
+								return returnStringAtRandom("жалобно", "жалко") + " " + returnStringAtRandom("кричишь", "вопишь");
 							}
 							
 						} else if(Main.sex.getSexPace(character)==SexPace.DOM_GENTLE) {
 							if(character.isFeminine()) {
-								return returnStringAtRandom("softly", "gently", "quietly") + " " + returnStringAtRandom("moan", "sigh", "cry", "gasp");
+								return returnStringAtRandom("тихо", "нежно", "слабо") + " " + returnStringAtRandom("стонешь", "вздыхаешь", "ахаешь");
 							} else {
-								return returnStringAtRandom("softly", "gently", "quietly") + " " + returnStringAtRandom("groans", "grunts");
+								return returnStringAtRandom("тихо", "нежно", "слабо") + " " + returnStringAtRandom("стонешь", "рычишь");
 							}
 						}
 					}
 					
 					if(character.isFeminine()) {
-						return returnStringAtRandom("lewdly", "desperately") + " " + returnStringAtRandom("moan", "squeal", "cry", "gasp");
+						return returnStringAtRandom("похотливо", "отчаянно") + " " + returnStringAtRandom("стонешь", "пищишь", "вскрикиваешь", "ахаешь");
 					} else {
-						return returnStringAtRandom("lewdly", "desperately") + " " + returnStringAtRandom("groan", "grunt");
+						return returnStringAtRandom("похотливо", "отчаянно") + " " + returnStringAtRandom("стонешь", "рычишь");
 					}
 				} else {
 					if(Main.game.isInSex()) {
 						if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 							if(character.isFeminine()) {
-								return returnStringAtRandom("miserably", "pathetically", "desperately") + " " + returnStringAtRandom("sobs", "cries");
+								return returnStringAtRandom("жалобно", "жалко", "отчаянно") + " " + returnStringAtRandom("всхлипывает", "рыдает");
 							} else {
-								return returnStringAtRandom("miserably", "pathetically", "desperately") + " " + returnStringAtRandom("shouts", "cries");
+								return returnStringAtRandom("жалобно", "жалко", "отчаянно") + " " + returnStringAtRandom("кричит", "вопит");
 							}
 							
 						} else if(Main.sex.getSexPace(character)==SexPace.DOM_GENTLE) {
 							if(character.isFeminine()) {
-								return returnStringAtRandom("softly", "gently", "quietly") + " " + returnStringAtRandom("moans", "sighs", "gasps");
+								return returnStringAtRandom("тихо", "нежно", "слабо") + " " + returnStringAtRandom("стонет", "вздыхает", "ахает");
 							} else {
-								return returnStringAtRandom("softly", "gently", "quietly") + " " + returnStringAtRandom("groans", "grunts");
+								return returnStringAtRandom("тихо", "нежно", "слабо") + " " + returnStringAtRandom("стонет", "рычит");
 							}
 						}
 					}
 					
 					if(character.isFeminine()) {
-						return returnStringAtRandom("lewdly", "desperately") + " " + returnStringAtRandom("moans", "squeals", "cries");
+						return returnStringAtRandom("похотливо", "отчаянно") + " " + returnStringAtRandom("стонет", "пищит", "вскрикивает");
 					} else {
-						return returnStringAtRandom("eagerly", "desperately") + " " + returnStringAtRandom("groans", "grunts", "cries");
+						return returnStringAtRandom("охотно", "отчаянно") + " " + returnStringAtRandom("стонет", "рычит", "вопит");
 					}
 				}
 			}
@@ -4235,17 +4212,17 @@ public class UtilText {
 				if(Main.game.isInSex()) {
 					if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("sobs", "cries");
+							return returnStringAtRandom("всхлипы", "вскрики");
 						} else {
-							return returnStringAtRandom("shouts", "cries");
+							return returnStringAtRandom("крики", "вопли");
 						}
 					}
 				}
 				
 				if(character.isFeminine()) {
-					return returnStringAtRandom("moans", "squeals", "gasps");
+					return returnStringAtRandom("стоны", "писки", "вздохи");
 				} else {
-					return returnStringAtRandom("groans", "grunts");
+					return returnStringAtRandom("стоны", "хрипы");
 				}
 			}
 		});
@@ -4272,24 +4249,24 @@ public class UtilText {
 				if(Main.game.isInSex()) {
 					if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("miserable", "pathetic", "distressed") + " " + returnStringAtRandom("sobs", "cries");
+							return returnStringAtRandom("жалобные", "жалкие", "отчаянные") + " " + returnStringAtRandom("всхлипы", "вскрики");
 						} else {
-							return returnStringAtRandom("miserable", "pathetic", "distressed") + " " + returnStringAtRandom("shouts", "cries");
+							return returnStringAtRandom("жалобные", "жалкие", "отчаянные") + " " + returnStringAtRandom("крики", "вопли");
 						}
 						
 					} else if(Main.sex.getSexPace(character)==SexPace.DOM_GENTLE) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("soft", "gentle", "quiet") + " " + returnStringAtRandom("moans", "sighs", "gasps");
+							return returnStringAtRandom("тихие", "нежные", "слабые") + " " + returnStringAtRandom("стоны", "вздохи", "ахи");
 						} else {
-							return returnStringAtRandom("soft", "gentle", "quiet") + " " + returnStringAtRandom("groans", "grunts");
+							return returnStringAtRandom("тихие", "нежные", "слабые") + " " + returnStringAtRandom("стоны", "хрипы");
 						}
 					}
 				}
 				
 				if(character.isFeminine()) {
-					return returnStringAtRandom("lewd", "high-pitched", "desperate") + " " + returnStringAtRandom("moans", "squeals", "gasps");
+					return returnStringAtRandom("похотливые", "звонкие", "отчаянные") + " " + returnStringAtRandom("стоны", "писки", "вздохи");
 				} else {
-					return returnStringAtRandom("deep", "eager", "desperate") + " " + returnStringAtRandom("groans", "grunts");
+					return returnStringAtRandom("глубокие", "нетерпеливые", "отчаянные") + " " + returnStringAtRandom("стоны", "хрипы");
 				}
 			}
 		});
@@ -4309,17 +4286,17 @@ public class UtilText {
 				if(Main.game.isInSex()) {
 					if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("sobbing", "crying");
+							return returnStringAtRandom("всхлипывая", "рыдая");
 						} else {
-							return returnStringAtRandom("shouting", "protesting");
+							return returnStringAtRandom("крича", "протестуя");
 						}
 					}
 				}
 					
 				if(character.isFeminine()) {
-					return returnStringAtRandom("moaning", "squealing");
+					return returnStringAtRandom("стоня", "попискивая");
 				} else {
-					return returnStringAtRandom("groaning", "grunting");
+					return returnStringAtRandom("стоня", "рыча");
 				}
 			}
 		});
@@ -4343,24 +4320,24 @@ public class UtilText {
 				if(Main.game.isInSex()) {
 					if(Main.sex.getSexPace(character)==SexPace.SUB_RESISTING) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("miserably", "pathetically", "desperately") + " " + returnStringAtRandom("sobbing", "crying");
+							return returnStringAtRandom("жалобно", "жалко", "отчаянно") + " " + returnStringAtRandom("всхлипывая", "рыдая");
 						} else {
-							return returnStringAtRandom("miserably", "pathetically", "desperately") + " " + returnStringAtRandom("shouting", "protesting");
+							return returnStringAtRandom("жалобно", "жалко", "отчаянно") + " " + returnStringAtRandom("крича", "протестуя");
 						}
 						
 					} else if(Main.sex.getSexPace(character)==SexPace.DOM_GENTLE) {
 						if(character.isFeminine()) {
-							return returnStringAtRandom("softly", "gently", "quietly") + " " + returnStringAtRandom("moaning", "sighing");
+							return returnStringAtRandom("тихо", "нежно", "слабо") + " " + returnStringAtRandom("стоня", "вздыхая");
 						} else {
-							return returnStringAtRandom("softly", "gently", "quietly") + " " + returnStringAtRandom("groaning", "grunting");
+							return returnStringAtRandom("тихо", "нежно", "слабо") + " " + returnStringAtRandom("стоня", "рыча");
 						}
 					}
 				}
 				
 				if(character.isFeminine()) {
-					return returnStringAtRandom("lewdly", "eagerly", "desperately") + " " + returnStringAtRandom("moaning", "squealing");
+					return returnStringAtRandom("похотливо", "охотно", "отчаянно") + " " + returnStringAtRandom("стоня", "попискивая");
 				} else {
-					return returnStringAtRandom("lewdly", "eagerly", "desperately") + " " + returnStringAtRandom("groaning", "grunting");
+					return returnStringAtRandom("похотливо", "охотно", "отчаянно") + " " + returnStringAtRandom("стоня", "рыча");
 				}
 			}
 		});
@@ -4381,28 +4358,28 @@ public class UtilText {
 					List<String> descriptors = new ArrayList<>();
 					switch(Main.sex.getSexPace(character)) {
 						case DOM_GENTLE:
-							descriptors = Util.newArrayListOfValues("gently", "softly", "lovingly");
+							descriptors = Util.newArrayListOfValues("нежно", "мягко", "ласково");
 							break;
 						case DOM_NORMAL:
-							descriptors = Util.newArrayListOfValues("happily", "eagerly", "enthusiastically", "desperately");
+							descriptors = Util.newArrayListOfValues("радостно", "охотно", "с энтузиазмом", "жадно");
 							break;
 						case DOM_ROUGH:
-							descriptors = Util.newArrayListOfValues("roughly", "forcefully", "violently", "dominantly");
+							descriptors = Util.newArrayListOfValues("грубо", "силой", "жёстко", "властно");
 							break;
 						case SUB_EAGER:
-							descriptors = Util.newArrayListOfValues("happily", "eagerly", "enthusiastically", "desperately");
+							descriptors = Util.newArrayListOfValues("радостно", "охотно", "с энтузиазмом", "жадно");
 							break;
 						case SUB_NORMAL:
 							if(arguments!=null && !arguments.isEmpty()) {
 								return Util.capitaliseSentence(arguments); // Assume start of sentence, so capitalise.
 							} else if(Character.isUpperCase(command.charAt(0))) {
-								descriptors = Util.newArrayListOfValues("happily", "eagerly", "willingly"); // If start of sentence, need descriptor.
+								descriptors = Util.newArrayListOfValues("охотно", "радостно", "покорно"); // If start of sentence, need descriptor.
 								break;
 							} else {
 								return "";
 							}
 						case SUB_RESISTING:
-							descriptors = Util.newArrayListOfValues("frantically", "desperately", "maniacally");
+							descriptors = Util.newArrayListOfValues("исступлённо", "отчаянно", "неистово");
 							break;
 					}
 					
@@ -4423,7 +4400,7 @@ public class UtilText {
 					return returnString;
 				}
 					
-				return "eagerly";
+				return "охотно";
 			}
 		});
 		
@@ -4439,9 +4416,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return returnStringAtRandom("scent", "scent", "perfume");
+					return returnStringAtRandom("аромат", "запах", "парфюм");
 				} else {
-					return returnStringAtRandom("musk", "musk", "aroma");
+					return returnStringAtRandom("мускус", "запах", "аромат");
 				}
 			}
 		});
@@ -4460,9 +4437,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return returnStringAtRandom("feminine scent", "feminine perfume", "delicate scent");
+					return returnStringAtRandom("женственный аромат", "нежный парфюм", "тонкий запах");
 				} else {
-					return returnStringAtRandom("masculine musk", "masculine aroma");
+					return returnStringAtRandom("мужественный мускус", "мужской аромат");
 				}
 			}
 		});
@@ -4479,9 +4456,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "girl";
+					return "девушка";
 				} else {
-					return "guy";
+					return "парень";
 				}
 			}
 		});
@@ -4515,9 +4492,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return Gender.F_V_B_FEMALE.getNounYoung()+"s";
+					return "девушки";
 				} else {
-					return Gender.M_P_MALE.getNounYoung()+"s";
+					return "парни";
 				}
 			}
 		});
@@ -4567,9 +4544,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine())
-					return "feminine";
+					return "женственный";
 				else
-					return "masculine";
+					return "мужественный";
 			}
 		});
 		
@@ -4584,9 +4561,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "filly";
+					return "кобылка";
 				} else {
-					return "colt";
+					return "жеребчик";
 				}
 			}
 		});
@@ -4602,9 +4579,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "mare";
+					return "кобыла";
 				} else {
-					return "stallion";
+					return "жеребец";
 				}
 			}
 		});
@@ -4624,26 +4601,26 @@ public class UtilText {
 				
 				switch(character.getFemininity()) {
 					case FEMININE_STRONG:
-						descriptor = UtilText.returnStringAtRandom("very feminine", "beautiful", "gorgeous");
+						descriptor = UtilText.returnStringAtRandom("очень женственная", "прекрасная", "роскошная");
 						break;
 					case FEMININE:
-						descriptor = UtilText.returnStringAtRandom("pretty", "feminine", "cute");
+						descriptor = UtilText.returnStringAtRandom("милая", "женственная", "симпатичная");
 						break;
 					case ANDROGYNOUS:
-						descriptor = UtilText.returnStringAtRandom("androgynous");
+						descriptor = UtilText.returnStringAtRandom("андрогинная");
 						break;
 					case MASCULINE:
-						descriptor = UtilText.returnStringAtRandom("masculine", "handsome");
+						descriptor = UtilText.returnStringAtRandom("мужественный", "привлекательный");
 						break;
 					case MASCULINE_STRONG:
-						descriptor = UtilText.returnStringAtRandom("very masculine", "extremely handsome");
+						descriptor = UtilText.returnStringAtRandom("очень мужественный", "неотразимый");
 						break;
 				}
 				
 				String determiner = "";
 				if(parseAddPronoun) {
 					parseAddPronoun = false;
-					determiner = UtilText.generateSingularDeterminer(descriptor)+" ";
+					String _det = UtilText.generateSingularDeterminer(descriptor); determiner = _det.isEmpty() ? "" : _det + " ";
 				}
 				
 				if(arguments.equals(" ") || arguments.equalsIgnoreCase("true")) {
@@ -4681,9 +4658,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.isFeminine()) {
-					return "wife";
+					return "жена";
 				} else {
-					return "husband";
+					return "муж";
 				}
 			}
 		});
@@ -4699,9 +4676,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(isPlayer(target, character)) {
-					return "have";
+					return "имеешь";
 				} else {
-					return "has";
+					return "имеет";
 				}
 			}
 		});
@@ -4716,11 +4693,7 @@ public class UtilText {
 				"Returns the correct version of 'is' for this character (is or are)."){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				if(isPlayer(target, character)) {
-					return "are";
-				} else {
-					return "is";
-				}
+				return "";
 			}
 		});
 		
@@ -4735,9 +4708,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(isPlayer(target, character)) {
-					return "do";
+					return "делаешь";
 				} else {
-					return "does";
+					return "делает";
 				}
 			}
 		});
@@ -4752,10 +4725,10 @@ public class UtilText {
 				"Returns the correct version of 'was' for this character (was or were)."){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				if(isPlayer(target, character)) {
-					return "were";
+				if(character.isFeminine()) {
+					return "была";
 				} else {
-					return "was";
+					return "был";
 				}
 			}
 		});
@@ -4776,7 +4749,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "your";
+					return "твой";
 					
 				} else {
 					if(character.isFeminine()) {
@@ -4808,7 +4781,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "yours";
+					return "твой";
 				} else {
 					if(character.isFeminine()) {
 						return Gender.F_V_B_FEMALE.getPossessiveAlone();
@@ -4831,12 +4804,12 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "yours";
+					return "твой";
 				} else {
 					if(character.isPlayerKnowsName()) {
-						return character.getName(true) + "'s";
+						return RuMorphology.toGenitive(character.getName(true));
 					}
-					return character.getName("the") + "'s";
+					return RuMorphology.toGenitive(character.getName(""));
 				}
 			}
 		});
@@ -4855,7 +4828,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "you";
+					return "тебя";
 				} else {
 					if(character.isFeminine()) {
 						if(character.isPlayer()) {
@@ -4888,7 +4861,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "you";
+					return "ты";
 				} else {
 					if(character.isFeminine()) {
 						if(character.isPlayer()) {
@@ -4921,19 +4894,19 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "you're";
+					return "ты";
 				} else {
 					if(character.isFeminine()) {
 						if(character.isPlayer()) {
-							return Gender.F_V_B_FEMALE.getSecondPerson() + "'s";
+							return Gender.F_V_B_FEMALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getFeminine() + "'s";
+							return GenderPronoun.SECOND_PERSON.getFeminine();
 						}
 					} else {
 						if(character.isPlayer()) {
-							return Gender.M_P_MALE.getSecondPerson() + "'s";
+							return Gender.M_P_MALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getMasculine() + "'s";
+							return GenderPronoun.SECOND_PERSON.getMasculine();
 						}
 					}
 				}
@@ -4954,19 +4927,19 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "you are";
+					return "ты";
 				} else {
 					if(character.isFeminine()) {
 						if(character.isPlayer()) {
-							return Gender.F_V_B_FEMALE.getSecondPerson() + " is";
+							return Gender.F_V_B_FEMALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getFeminine() + " is";
+							return GenderPronoun.SECOND_PERSON.getFeminine();
 						}
 					} else {
 						if(character.isPlayer()) {
-							return Gender.M_P_MALE.getSecondPerson() + " is";
+							return Gender.M_P_MALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getMasculine() + " is";
+							return GenderPronoun.SECOND_PERSON.getMasculine();
 						}
 					}
 				}
@@ -4987,19 +4960,19 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(arguments==null && isPlayer(target, character)) {
-					return "you've";
+					return "ты";
 				} else {
 					if(character.isFeminine()) {
 						if(character.isPlayer()) {
-							return Gender.F_V_B_FEMALE.getSecondPerson() + "'s";
+							return Gender.F_V_B_FEMALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getFeminine() + "'s";
+							return GenderPronoun.SECOND_PERSON.getFeminine();
 						}
 					} else {
 						if(character.isPlayer()) {
-							return Gender.M_P_MALE.getSecondPerson() + "'s";
+							return Gender.M_P_MALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getMasculine() + "'s";
+							return GenderPronoun.SECOND_PERSON.getMasculine();
 						}
 					}
 				}
@@ -5019,19 +4992,19 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(isPlayer(target, character)) {
-					return "you have";
+					return "ты";
 				} else {
 					if(character.isFeminine()) {
 						if(character.isPlayer()) {
-							return Gender.F_V_B_FEMALE.getSecondPerson() + " has";
+							return Gender.F_V_B_FEMALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getFeminine() + " has";
+							return GenderPronoun.SECOND_PERSON.getFeminine();
 						}
 					} else {
 						if(character.isPlayer()) {
-							return Gender.M_P_MALE.getSecondPerson() + " has";
+							return Gender.M_P_MALE.getSecondPerson();
 						} else {
-							return GenderPronoun.SECOND_PERSON.getMasculine() + " has";
+							return GenderPronoun.SECOND_PERSON.getMasculine();
 						}
 					}
 				}
@@ -5049,23 +5022,7 @@ public class UtilText {
 						+ " If you need the regular reflexive player character pronoun, passin 'true' as an argument."){
 					@Override
 					public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-						if(arguments==null && isPlayer(target, character)) {
-							return "yourself";
-						} else {
-							if(character.isFeminine()) {
-								if(character.isPlayer()) {
-									return Gender.F_V_B_FEMALE.getThirdPerson()+"self";
-								} else {
-									return GenderPronoun.THIRD_PERSON.getFeminine()+"self";
-								}
-							} else {
-								if(character.isPlayer()) {
-									return Gender.M_P_MALE.getThirdPerson()+"self";
-								} else {
-									return GenderPronoun.THIRD_PERSON.getMasculine()+"self";
-								}
-							}
-						}
+						return "себя";
 					}
 				});
 		
@@ -5232,13 +5189,13 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				int hour = Main.game.getHourOfDay();
 				if(hour<4) {
-					return "evening";
+					return "вечер";
 				} else if(hour<12) {
-					return "morning";
+					return "утро";
 				}else if(hour<17) {
-					return "afternoon";
+					return "день";
 				}
-				return "evening";
+				return "вечер";
 			}
 		});
 		
@@ -5544,7 +5501,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if (arguments == null || arguments.isEmpty()) {
-					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "mL" : "oz";
+					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "мл" : "унц.";
 				}
 				return Units.fluid(Double.valueOf(arguments), Units.ValueType.NUMERIC, Units.UnitType.SHORT);
 			}
@@ -5561,7 +5518,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if (arguments == null || arguments.isEmpty()) {
-					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "centimetre" : "inch";
+					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "сантиметр" : "дюйм";
 				}
 				return Units.size(Double.valueOf(arguments), Units.ValueType.NUMERIC, Units.UnitType.LONG_SINGULAR);
 			}
@@ -5579,7 +5536,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if (arguments == null || arguments.isEmpty()) {
-					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "centimetres" : "inches";
+					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "сантиметров" : "дюймов";
 				}
 				return Units.size(Double.valueOf(arguments), Units.ValueType.NUMERIC, Units.UnitType.LONG);
 			}
@@ -5596,7 +5553,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if (arguments == null || arguments.isEmpty()) {
-					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "cm" : Units.INCH_SYMBOL;
+					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "см" : Units.INCH_SYMBOL;
 				}
 				return Units.size(Double.valueOf(arguments), Units.ValueType.NUMERIC, Units.UnitType.SHORT);
 			}
@@ -5614,7 +5571,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if (arguments == null || arguments.isEmpty()) {
-					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "metre" : "foot";
+					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "метр" : "фут";
 				}
 				return Units.size(Double.valueOf(arguments), Units.ValueType.TEXT, Units.UnitType.LONG_SINGULAR);
 			}
@@ -5632,7 +5589,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if (arguments == null || arguments.isEmpty()) {
-					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "metres" : "feet";
+					return Main.getProperties().hasValue(PropertyValue.metricSizes) ? "метров" : "футов";
 				}
 				return Units.size(Double.valueOf(arguments), Units.ValueType.TEXT, Units.UnitType.LONG);
 			}
@@ -5651,7 +5608,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getMainWeapon(0)==null) {
-					return "fists";
+					return "кулаки";
 				} else {
 					return character.getMainWeapon(0).getName();
 				}
@@ -5669,7 +5626,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getMainWeapon(1)==null) {
-					return "fists";
+					return "кулаки";
 				} else {
 					return character.getMainWeapon(1).getName();
 				}
@@ -5687,7 +5644,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getMainWeapon(2)==null) {
-					return "fists";
+					return "кулаки";
 				} else {
 					return character.getMainWeapon(2).getName();
 				}
@@ -5708,7 +5665,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getOffhandWeapon(0)==null) {
-					return "fists";
+					return "кулаки";
 				} else {
 					return character.getOffhandWeapon(0).getName();
 				}
@@ -5726,7 +5683,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getOffhandWeapon(1)==null) {
-					return "fists";
+					return "кулаки";
 				} else {
 					return character.getOffhandWeapon(1).getName();
 				}
@@ -5744,7 +5701,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getOffhandWeapon(2)==null) {
-					return "fists";
+					return "кулаки";
 				} else {
 					return character.getOffhandWeapon(2).getName();
 				}
@@ -5980,7 +5937,7 @@ public class UtilText {
 				BodyPartType.LEG){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return UtilText.returnStringAtRandom("armpit", "underarm");
+				return "подмышка";
 			}
 		});
 		
@@ -5999,29 +5956,29 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				List<String> descriptors = new ArrayList<>();
 				if(character.getCovering(character.getArmCovering()).getModifier().isFurryModifier()) {
-					descriptors.add("furry");
+					descriptors.add("пушистая");
 				} else {
 					if(Main.game.isBodyHairEnabled() && character.getUnderarmHair()!=BodyHair.ZERO_NONE) {
-						descriptors.add("hairy");
+						descriptors.add("волосатая");
 					} else {
-						descriptors.add("smooth");
+						descriptors.add("гладкая");
 					}
 				}
 				if(character.isFeminine()) {
-					descriptors.add("feminine");
-					descriptors.add("sexy");
-					descriptors.add("hot");
+					descriptors.add("женственная");
+					descriptors.add("сексуальная");
+					descriptors.add("горячая");
 				} else {
-					descriptors.add("masculine");
+					descriptors.add("мужественная");
 				}
 				if(character.getMuscleValue()>=Muscle.THREE_MUSCULAR.getMinimumValue()) {
-					descriptors.add("muscular");
+					descriptors.add("мускулистая");
 				} else if(character.getMuscleValue()<Muscle.ONE_LIGHTLY_MUSCLED.getMinimumValue() && character.getBodySizeValue()>=BodySize.THREE_LARGE.getMinimumValue()){
-					descriptors.add("chubby");
+					descriptors.add("пухлая");
 				}
 				return applyDescriptor(
 						Util.randomItemFrom(descriptors),
-						UtilText.returnStringAtRandom("armpit", "underarm"));
+						"подмышка");
 			}
 		});
 
@@ -6036,7 +5993,7 @@ public class UtilText {
 				BodyPartType.LEG){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return UtilText.returnStringAtRandom("armpits", "underarms");
+				return "подмышки";
 			}
 		});
 		
@@ -6055,23 +6012,23 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				List<String> descriptors = new ArrayList<>();
 				if(character.getCovering(character.getArmCovering()).getModifier().isFurryModifier()) {
-					descriptors.add("furry");
+					descriptors.add("пушистые");
 				} else {
 					if(character.getUnderarmHair()!=BodyHair.ZERO_NONE) {
-						descriptors.add("hairy");
+						descriptors.add("волосатые");
 					} else {
-						descriptors.add("smooth");
+						descriptors.add("гладкие");
 					}
 				}
 				if(character.isFeminine()) {
-					descriptors.add("feminine");
-					descriptors.add("sexy");
+					descriptors.add("женственные");
+					descriptors.add("сексуальные");
 				} else {
-					descriptors.add("masculine");
+					descriptors.add("мужественные");
 				}
 				return applyDescriptor(
 						Util.randomItemFrom(descriptors),
-						UtilText.returnStringAtRandom("armpits", "underarms"));
+						"подмышки");
 			}
 		});
 		
@@ -6086,11 +6043,11 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getArmRows()==1) {
-					return "a pair of";
+					return "пара";
 				} else if(character.getArmRows()==2) {
-					return "two pairs of";
+					return "две пары";
 				} else {
-					return "three pairs of";
+					return "три пары";
 				}
 			}
 		});
@@ -6328,7 +6285,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getGenitalArrangement()==GenitalArrangement.CLOACA
 						|| character.getGenitalArrangement()==GenitalArrangement.CLOACA_BEHIND) {
-					return "cloaca";
+					return "клоака";
 				} else {
 					return character.getBody().getAss().getNameSingular(character);
 				}
@@ -6347,7 +6304,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getGenitalArrangement()==GenitalArrangement.CLOACA
 						|| character.getGenitalArrangement()==GenitalArrangement.CLOACA_BEHIND) {
-					return "slit-like cloaca";
+					return "щелевидная клоака";
 				} else {
 					return applyDescriptor(character.getBody().getAss().getDescriptor(character), character.getBody().getAss().getNameSingular(character));
 				}
@@ -6399,7 +6356,7 @@ public class UtilText {
 				BodyPartType.ASS){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "hips";
+				return "бёдра";
 			}
 		});
 		
@@ -6416,7 +6373,7 @@ public class UtilText {
 				BodyPartType.ASS){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return applyDescriptor(character.getHipSize().getDescriptor(), "hips");
+				return applyDescriptor(character.getHipSize().getDescriptor(), "бёдра");
 			}
 		});
 		
@@ -6448,7 +6405,7 @@ public class UtilText {
 				BodyPartType.BREAST){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return character.isBreastFuckablePaizuri()?"paizuri":"naizuri";
+				return character.isBreastFuckablePaizuri()?"пайдзури":"найдзури";
 			}
 		});
 		
@@ -6628,9 +6585,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getBreastRows()==1) {
-					return "pair of";
+					return "пара";
 				} else {
-					return Util.intToString(character.getBreastRows())+" pairs of";
+					return Util.intToString(character.getBreastRows())+" пар";
 				}
 			}
 		});
@@ -6739,7 +6696,7 @@ public class UtilText {
 				BodyPartType.BREAST){//TODO
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return character.getBreastCrotchShape()==BreastShape.UDDERS?"set":"pair";
+				return character.getBreastCrotchShape()==BreastShape.UDDERS?"вымя":"пара";
 			}
 		});
 		
@@ -6949,11 +6906,11 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getBreastCrotchRows()==0) {
-					return "single";
+					return "одно";
 				} else if(character.getBreastCrotchRows()==1) {
-					return "pair of";
+					return "пара";
 				} else {
-					return Util.intToString(character.getBreastCrotchRows())+" pairs of";
+					return Util.intToString(character.getBreastCrotchRows())+" пар";
 				}
 			}
 		});
@@ -7377,7 +7334,7 @@ public class UtilText {
 				BodyPartType.LEG){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "thighs";
+				return "бёдра";
 			}
 		});
 		
@@ -7392,7 +7349,7 @@ public class UtilText {
 				BodyPartType.LEG){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return applyDescriptor(character.getHipSize().getDescriptor(), "thighs");
+				return applyDescriptor(character.getHipSize().getDescriptor(), "бёдра");
 			}
 		});
 		
@@ -7415,8 +7372,8 @@ public class UtilText {
 							AbstractClothing clothing = character.getHighestZLayerCoverableArea(CoverableArea.FEET);
 							return UtilText.returnStringAtRandom(
 									clothing.getSlotEquippedTo()==InventorySlot.FOOT
-										?"footwear"
-										:clothing.getName()+"-clad-"+character.getLegType().getFootNameSingular(character),
+										?"обувь"
+										:character.getLegType().getFootNameSingular(character)+" в "+clothing.getName(),
 									clothing.getName(),
 									clothing.getName());
 						} catch(Exception ex) {
@@ -7447,8 +7404,8 @@ public class UtilText {
 							AbstractClothing clothing = character.getHighestZLayerCoverableArea(CoverableArea.FEET);
 							return UtilText.returnStringAtRandom(
 									clothing.getSlotEquippedTo()==InventorySlot.FOOT
-									?"footwear"
-									:clothing.getName()+"-clad-"+character.getLegType().getFootNameSingular(character),
+									?"обувь"
+									:character.getLegType().getFootNameSingular(character)+" в "+clothing.getName(),
 									clothing.getName(),
 									clothing.getName());
 						} catch(Exception ex) {
@@ -7478,8 +7435,8 @@ public class UtilText {
 							AbstractClothing clothing = character.getHighestZLayerCoverableArea(CoverableArea.FEET);
 							return UtilText.returnStringAtRandom(
 									clothing.getSlotEquippedTo()==InventorySlot.FOOT
-										?"footwear"
-										:clothing.getName()+"-clad-"+character.getLegType().getFootNamePlural(character),
+										?"обувь"
+										:character.getLegType().getFootNamePlural(character)+" в "+clothing.getNamePlural(),
 									clothing.getNamePlural(),
 									clothing.getNamePlural());
 						} catch(Exception ex) {
@@ -7510,8 +7467,8 @@ public class UtilText {
 							AbstractClothing clothing = character.getHighestZLayerCoverableArea(CoverableArea.FEET);
 							return UtilText.returnStringAtRandom(
 									clothing.getSlotEquippedTo()==InventorySlot.FOOT
-										?"footwear"
-										:clothing.getName()+"-clad-"+character.getLegType().getFootNamePlural(character),
+										?"обувь"
+										:character.getLegType().getFootNamePlural(character)+" в "+clothing.getNamePlural(),
 									clothing.getNamePlural(),
 									clothing.getNamePlural());
 						} catch(Exception ex) {
@@ -7541,8 +7498,8 @@ public class UtilText {
 							AbstractClothing clothing = character.getHighestZLayerCoverableArea(CoverableArea.FEET);
 							return UtilText.returnStringAtRandom(
 									clothing.getSlotEquippedTo()==InventorySlot.FOOT
-										?"footwear"
-										:clothing.getName()+"-clad-"+character.getLegType().getFootNamePlural(character),
+										?"обувь"
+										:character.getLegType().getFootNamePlural(character)+" в "+clothing.getNamePlural(),
 									clothing.getNamePlural(),
 									clothing.getNamePlural());
 						} catch(Exception ex) {
@@ -7573,8 +7530,8 @@ public class UtilText {
 							AbstractClothing clothing = character.getHighestZLayerCoverableArea(CoverableArea.FEET);
 							return UtilText.returnStringAtRandom(
 									clothing.getSlotEquippedTo()==InventorySlot.FOOT
-										?"footwear"
-										:clothing.getName()+"-clad-"+character.getLegType().getFootNamePlural(character),
+										?"обувь"
+										:character.getLegType().getFootNamePlural(character)+" в "+clothing.getNamePlural(),
 									clothing.getNamePlural(),
 									clothing.getNamePlural());
 						} catch(Exception ex) {
@@ -7645,9 +7602,9 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.hasLegs()) {
-					return UtilText.parse(character, "spreading [npc.her] [npc.legs]");
+					return UtilText.parse(character, "раздвигая [npc.her] [npc.legs]");
 				} else {
-					return UtilText.parse(character, "bucking [npc.her] [npc.hips]");
+					return UtilText.parse(character, "выгибая [npc.her] [npc.hips]");
 				}
 			}
 		});
@@ -7669,7 +7626,7 @@ public class UtilText {
 				BodyPartType.PENIS){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "urethra";
+				return "уретра";
 			}
 		});
 		
@@ -7690,7 +7647,7 @@ public class UtilText {
 				BodyPartType.PENIS){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return applyDescriptor(character.getPenisUrethraDescriptor(), "urethra");
+				return applyDescriptor(character.getPenisUrethraDescriptor(), "уретра");
 			}
 		});
 		
@@ -7820,7 +7777,7 @@ public class UtilText {
 				BodyPartType.CUM){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "precum";
+				return "предэякулят";
 			}
 		});
 		
@@ -7836,10 +7793,10 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(!character.getCumModifiers().isEmpty()) {
-					return character.getCumModifiers().get(Util.random.nextInt(character.getCumModifiers().size())).getName() + " precum";
+					return character.getCumModifiers().get(Util.random.nextInt(character.getCumModifiers().size())).getName() + " предэякулят";
 				}
 				
-				return "precum";
+				return "предэякулят";
 			}
 		});
 		
@@ -7970,10 +7927,10 @@ public class UtilText {
 					sb.append("<span style='color:"+character.getPenisRace().getColour().toWebHexString()+";'>");
 				}
 				if(character.getPenisRace()!=Race.HUMAN) {
-					sb.append(character.getPenisRace().getName(true)+"-cock");
+					sb.append(character.getPenisRace().getName(true)+"-член");
 					
 				} else {
-					sb.append("human cock");
+					sb.append("человеческий член");
 				}
 				if(coloured) {
 					sb.append("</span>");
@@ -8339,7 +8296,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getLegConfiguration()==LegConfiguration.TAIL_LONG) {
-					return "tip";
+					return "кончик";
 				}
 				return character.getTailType().getTailTipNameSingular(character);
 			}
@@ -8358,7 +8315,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getLegConfiguration()==LegConfiguration.TAIL_LONG) {
-					return "tips";
+					return "кончики";
 				}
 				return character.getTailType().getTailTipNamePlural(character);
 			}
@@ -8379,7 +8336,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getLegConfiguration()==LegConfiguration.TAIL_LONG) {
-					return "pointed tip";
+					return "заострённый кончик";
 				}
 				return applyDescriptor(character.getTailType().getTailTipDescriptor(character), character.getTailType().getTailTipNameSingular(character));
 			}
@@ -8400,7 +8357,7 @@ public class UtilText {
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				if(character.getLegConfiguration()==LegConfiguration.TAIL_LONG) {
-					return "pointed tips";
+					return "заострённые кончики";
 				}
 				return applyDescriptor(character.getTailType().getTailTipDescriptor(character), character.getTailType().getTailTipNamePlural(character));
 			}
@@ -8661,7 +8618,7 @@ public class UtilText {
 				BodyPartType.VAGINA){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "urethra";
+				return "уретра";
 			}
 		});
 		
@@ -8684,7 +8641,7 @@ public class UtilText {
 				BodyPartType.VAGINA){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return applyDescriptor(character.getVaginaUrethraDescriptor(), "urethra");
+				return applyDescriptor(character.getVaginaUrethraDescriptor(), "уретра");
 			}
 		});
 		commandsList.add(new ParserCommand(
@@ -8874,7 +8831,7 @@ public class UtilText {
 				BodyPartType.VAGINA){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "labia";
+				return "половые губы";
 			}
 		});
 		
@@ -8896,7 +8853,7 @@ public class UtilText {
 					descriptors.add(character.getCovering(character.getVaginaCovering()).getPrimaryColour().getName());
 				}
 				
-				return Util.randomItemFrom(descriptors)+" labia";
+				return Util.randomItemFrom(descriptors)+" половые губы";
 			}
 		});
 
@@ -9066,7 +9023,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return "toy";
+					return "игрушка";
 				}
 				return toy.getName();
 			}
@@ -9087,7 +9044,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return "toy";
+					return "игрушка";
 				}
 				AbstractClothingType toyType = toy.getClothingType();
 				PenisLength length = PenisLength.getPenisLengthFromInt(toyType.getPenetrationSelfLength());
@@ -9109,7 +9066,7 @@ public class UtilText {
 				BodyPartType.VAGINA){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return UtilText.returnStringAtRandom("head", "tip");
+				return UtilText.returnStringAtRandom("головка", "кончик");
 			}
 		});
 		
@@ -9128,10 +9085,10 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("head", "tip");
+					return UtilText.returnStringAtRandom("головка", "кончик");
 				}
 				String descriptor = toy.getColour(0).getName();
-				return applyDescriptor(descriptor, UtilText.returnStringAtRandom("head", "tip"));
+				return applyDescriptor(descriptor, UtilText.returnStringAtRandom("головка", "кончик"));
 			}
 		});
 
@@ -9153,7 +9110,7 @@ public class UtilText {
 				
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("toy");
+					return "игрушка";
 				}
 				AbstractClothingType toyType = toy.getClothingType();
 				
@@ -9209,7 +9166,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("nonexistant");
+					return "отсутствует";
 				}
 				PenisLength length = PenisLength.getPenisLengthFromInt(toy.getClothingType().getPenetrationSelfLength());
 				return length.getDescriptor();
@@ -9230,7 +9187,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("N/A");
+					return "н/д";
 				}
 				float circumference = (float) (Penis.getGenericDiameter(toy.getClothingType().getPenetrationSelfLength(), PenetrationGirth.getGirthFromInt(toy.getClothingType().getPenetrationSelfGirth())) * Math.PI);
 				if(arguments!=null && arguments.equalsIgnoreCase("true")) {
@@ -9256,7 +9213,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("N/A");
+					return "н/д";
 				}
 				float diameter = Penis.getGenericDiameter(toy.getClothingType().getPenetrationSelfLength(), PenetrationGirth.getGirthFromInt(toy.getClothingType().getPenetrationSelfGirth()));
 				if(arguments!=null &&  arguments.equalsIgnoreCase("true")) {
@@ -9279,7 +9236,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("N/A");
+					return "н/д";
 				}
 				return PenetrationGirth.getGirthFromInt(toy.getClothingType().getPenetrationSelfGirth()).getName();
 			}
@@ -9300,7 +9257,7 @@ public class UtilText {
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
 				AbstractClothing toy = ToyVagina.getToyInVagina(character);
 				if(toy==null) {
-					return UtilText.returnStringAtRandom("N/A");
+					return "н/д";
 				}
 				int length = toy.getClothingType().getPenetrationSelfLength();
 				if(arguments!=null && arguments.equalsIgnoreCase("true")) {
@@ -9323,7 +9280,7 @@ public class UtilText {
 				BodyPartType.SPINNERET){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return "spinneret";
+				return "паутинная железа";
 			}
 		});
 
@@ -9338,7 +9295,7 @@ public class UtilText {
 				BodyPartType.SPINNERET){
 			@Override
 			public String parse(List<GameCharacter> specialNPCs, String command, String arguments, String target, GameCharacter character) {
-				return character.getSpinneretDescriptor() + " spinneret";
+				return character.getSpinneretDescriptor() + " паутинная железа";
 			}
 		});
 		

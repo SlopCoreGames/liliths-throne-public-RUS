@@ -82,10 +82,11 @@ OVERRIDES = {
 
 def translate_verb_batch(api_url: str, verbs: list[str]) -> dict[str, list[str]]:
     sys_p = (
-        "You translate English RPG action verbs for 'Lilith's Throne' into Russian present tense (uncensored 18+ literary Russian). "
-        "For EACH English verb key, return a JSON array of 2 lowercase Cyrillic strings: "
+        "You conjugate English or Russian RPG action verbs for 'Lilith's Throne' into Russian present tense (uncensored 18+ literary Russian). "
+        "For EACH input verb key, return a JSON array of 2 lowercase Cyrillic strings: "
         "[2nd_person_singular_ты, 3rd_person_singular_он_она]. "
-        'Example: {"pull": ["тянешь", "тянет"], "smile": ["улыбаешься", "улыбается"], "fuck": ["трахаешь", "трахает"]}. '
+        "If the input key is already a Russian verb form or short verb phrase (e.g. 'подносит', 'начинаешь', 'расстегнуть', 'хвастливо показать'), normalize it to its exact [ты_form, он_она_form] pair in present tense. "
+        'Examples: {"pull": ["тянешь", "тянет"], "подносит": ["подносишь", "подносит"], "начинаешь": ["начинаешь", "начинает"], "хвастливо показать": ["хвастливо показываешь", "хвастливо показывает"]}. '
         "Return ONLY valid JSON mapping every input key to a 2-string array in Cyrillic."
     )
     usr_p = "Verbs:\n" + json.dumps(verbs, ensure_ascii=False)
@@ -156,7 +157,7 @@ def emit_java(mapping: dict[str, list[str]]):
         " */",
         "public final class RuVerbTable {",
         "",
-        "    private static final Map<String, String[]> VERBS = new HashMap<>(" + (len(mapping) + 64) + ");",
+        f"    private static final Map<String, String[]> VERBS = new HashMap<>({len(mapping) + 64});",
         "",
         "    static {",
     ]

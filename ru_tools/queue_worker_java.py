@@ -146,11 +146,37 @@ def revert_offending_files(mvn_out: str, recent_batch: list[str]):
     print(f"  [MVN-GATE] Reverted offending files: {reverted}", file=sys.stderr, flush=True)
 
 
+def git_checkpoint_push(done_cnt: int, total_cnt: int):
+    try:
+        subprocess.run(["git", "-C", str(ROOT), "add", "src/", "ru_tools/"], check=False)
+        res = subprocess.run(
+            ["git", "-C", str(ROOT), "commit", "-m", f"Phase 3 progress: {done_cnt}/{total_cnt} Java files"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="ignore",
+        )
+        if res.returncode == 0:
+            push = subprocess.run(
+                ["git", "-C", str(ROOT), "push", "origin", "dev"],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="ignore",
+            )
+            print(f"[GIT-PUSH] rc={push.returncode}: {(push.stdout + push.stderr).strip()[:200]}", flush=True)
+        else:
+            print("[GIT-PUSH] nothing new to commit.", flush=True)
+    except Exception as e:
+        print(f"[GIT-PUSH] skipped due to error: {e}", file=sys.stderr, flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--api", default=base.DEFAULT_API)
     ap.add_argument("--rebuild-queue", action="store_true")
     ap.add_argument("--compile-every", type=int, default=15)
+    ap.add_argument("--push-every", type=int, default=45)
     args = ap.parse_args()
 
     glossary = base.load_glossary()
@@ -164,7 +190,9 @@ def main():
     else:
         queue = json.loads(QUEUE_PATH.read_text(encoding="utf-8"))
 
+    total_target = len(prog.get("translated_java_v2", [])) + len(queue)
     recent_batch: list[str] = []
+    since_push = 0
     energy_counter = 0
 
     while queue:
@@ -207,7 +235,11 @@ def main():
             ok, out = run_mvn_compile()
             if ok:
                 print("[MVN-GATE] BUILD SUCCESS", flush=True)
+                since_push += len(recent_batch)
                 recent_batch.clear()
+                if args.push_every > 0 and since_push >= args.push_every:
+                    git_checkpoint_push(len(prog.get("translated_java_v2", [])), total_target)
+                    since_push = 0
             else:
                 revert_offending_files(out, recent_batch)
                 recent_batch.clear()
@@ -223,6 +255,10 @@ def main():
             print(f"[MVN-GATE] Final post-revert compile ok={ok2}", flush=True)
         else:
             print("[MVN-GATE] FINAL BUILD SUCCESS", flush=True)
+
+    ok_final, _ = run_mvn_compile()
+    if ok_final:
+        git_checkpoint_push(len(prog.get("translated_java_v2", [])), total_target)
 
     base.flush_energy_stats()
     print("[JAVA-WORKER] Queue complete!", flush=True)

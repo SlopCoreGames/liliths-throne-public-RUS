@@ -72,10 +72,10 @@ public class Util {
 		put(KeyCode.COLON, ":");
 		put(KeyCode.COMMA, ",");
 		put(KeyCode.CONTROL, "Ctrl");
-		put(KeyCode.DELETE, "Delete");
+		put(KeyCode.DELETE, "Del");
 		put(KeyCode.DIVIDE, "/");
 		put(KeyCode.DOLLAR, "$");
-		put(KeyCode.DOWN, "Down");
+		put(KeyCode.DOWN, "Вниз");
 		put(KeyCode.END, "End");
 		put(KeyCode.ENTER, "Enter");
 		put(KeyCode.EQUALS, "=");
@@ -83,11 +83,11 @@ public class Util {
 		put(KeyCode.EURO_SIGN, "&euro;"); // €
 		put(KeyCode.EXCLAMATION_MARK, "!");
 		put(KeyCode.GREATER, ">");
-		put(KeyCode.KP_DOWN, "Down");
-		put(KeyCode.KP_LEFT, "Left");
-		put(KeyCode.KP_RIGHT, "Right");
-		put(KeyCode.KP_UP, "Up");
-		put(KeyCode.LEFT, "Left");
+		put(KeyCode.KP_DOWN, "Вниз");
+		put(KeyCode.KP_LEFT, "Влево");
+		put(KeyCode.KP_RIGHT, "Вправо");
+		put(KeyCode.KP_UP, "Вверх");
+		put(KeyCode.LEFT, "Влево");
 		put(KeyCode.LEFT_PARENTHESIS, "(");
 		put(KeyCode.LESS, "<");
 		put(KeyCode.MINUS, "-");
@@ -99,22 +99,22 @@ public class Util {
 		put(KeyCode.NUMPAD5, "5");
 		put(KeyCode.NUMPAD6, "6");
 		put(KeyCode.NUMPAD7, "7");
-		put(KeyCode.NUMPAD8, "9");
+		put(KeyCode.NUMPAD8, "8");
 		put(KeyCode.NUMPAD9, "9");
 		put(KeyCode.OPEN_BRACKET, "[");
-		put(KeyCode.PAGE_DOWN, "Pg Dn");
-		put(KeyCode.PAGE_UP, "Pg Up");
+		put(KeyCode.PAGE_DOWN, "PgDn");
+		put(KeyCode.PAGE_UP, "PgUp");
 		put(KeyCode.PERIOD, ".");
 		put(KeyCode.PLUS, "+");
 		put(KeyCode.POUND, "&pound;"); // £
 		put(KeyCode.POWER, "^");
 		put(KeyCode.QUOTE, "\"");
-		put(KeyCode.RIGHT, "Right");
+		put(KeyCode.RIGHT, "Вправо");
 		put(KeyCode.RIGHT_PARENTHESIS, ")");
 		put(KeyCode.SEMICOLON, ";");
-		put(KeyCode.SHIFT, "Sft");
+		put(KeyCode.SHIFT, "Shift");
 		put(KeyCode.SLASH, "/");
-		put(KeyCode.SPACE, "Space");
+		put(KeyCode.SPACE, "Пробел");
 		put(KeyCode.SUBTRACT, "-");
 		put(KeyCode.TAB, "Tab");
 	}};
@@ -611,60 +611,84 @@ public class Util {
 	}
 	
 	private static String[] numbersLessThanTwenty = {
-			"zero",
-			"one",
-			"two",
-			"three",
-			"four",
-			"five",
-			"six",
-			"seven",
-			"eight",
-			"nine",
-			"ten",
-			"eleven",
-			"twelve",
-			"thirteen",
-			"fourteen",
-			"fifteen",
-			"sixteen",
-			"seventeen",
-			"eighteen",
-			"nineteen"
+			"ноль",
+			"один",
+			"два",
+			"три",
+			"четыре",
+			"пять",
+			"шесть",
+			"семь",
+			"восемь",
+			"девять",
+			"десять",
+			"одиннадцать",
+			"двенадцать",
+			"тринадцать",
+			"четырнадцать",
+			"пятнадцать",
+			"шестнадцать",
+			"семнадцать",
+			"восемнадцать",
+			"девятнадцать"
 	};
 	private static String[] positionsLessThanTwenty = {
-			"zero",
-			"first",
-			"second",
-			"third",
-			"fourth",
-			"fifth",
-			"sixth",
-			"seventh",
-			"eighth",
-			"ninth",
-			"tenth",
-			"eleventh",
-			"twelfth",
-			"thirteenth",
-			"fourteenth",
-			"fifteenth",
-			"sixteenth",
-			"seventeenth",
-			"eighteenth",
-			"nineteenth"
+			"нулевой",
+			"первый",
+			"второй",
+			"третий",
+			"четвёртый",
+			"пятый",
+			"шестой",
+			"седьмой",
+			"восьмой",
+			"девятый",
+			"десятый",
+			"одиннадцатый",
+			"двенадцатый",
+			"тринадцатый",
+			"четырнадцатый",
+			"пятнадцатый",
+			"шестнадцатый",
+			"семнадцатый",
+			"восемнадцатый",
+			"девятнадцатый"
 	};
 	private static String[] tensGreaterThanNineteen = {
 			"",
 			"",
-			"twenty",
-			"thirty",
-			"forty",
-			"fifty",
-			"sixty",
-			"seventy",
-			"eighty",
-			"ninety"
+			"двадцать",
+			"тридцать",
+			"сорок",
+			"пятьдесят",
+			"шестьдесят",
+			"семьдесят",
+			"восемьдесят",
+			"девяносто"
+	};
+	private static String[] tensPositionsGreaterThanNineteen = {
+			"",
+			"",
+			"двадцатый",
+			"тридцатый",
+			"сороковой",
+			"пятидесятый",
+			"шестидесятый",
+			"семидесятый",
+			"восьмидесятый",
+			"девяностый"
+	};
+	private static String[] hundredsRu = {
+			"",
+			"сто",
+			"двести",
+			"триста",
+			"четыреста",
+			"пятьсот",
+			"шестьсот",
+			"семьсот",
+			"восемьсот",
+			"девятьсот"
 	};
 	
 	/**
@@ -674,7 +698,7 @@ public class Util {
 	 */
 	public static String intToString(long integer) {
 		if(integer==0) {
-			return "zero";
+			return "ноль";
 		}
 		
 		boolean minus = integer<0;
@@ -688,51 +712,69 @@ public class Util {
 			
 			int hundred = thousandths/100;
 			if(hundred>0) {
-				innerSB.append(numbersLessThanTwenty[hundred]+" hundred");
+				innerSB.append(hundredsRu[hundred]);
 			}
 			int tens = thousandths%100;
 			if(thousandths%100>0) {
 				if(innerSB.length()>0) {
-					innerSB.append(" and ");
+					innerSB.append(" ");
 				}
 				if(tens<20) {
-					innerSB.append(numbersLessThanTwenty[thousandths%100]);
+					if(i==1 && tens%10==1 && tens!=11) {
+						innerSB.append("одна");
+					} else if(i==1 && tens%10==2 && tens!=12) {
+						innerSB.append("две");
+					} else {
+						innerSB.append(numbersLessThanTwenty[tens]);
+					}
 				} else {
 					innerSB.append(tensGreaterThanNineteen[tens/10]);
 					if(tens%10>0) {
 						innerSB.append(" ");
-						innerSB.append(numbersLessThanTwenty[tens%10]);
+						int ones = tens%10;
+						if(i==1 && ones==1) {
+							innerSB.append("одна");
+						} else if(i==1 && ones==2) {
+							innerSB.append("две");
+						} else {
+							innerSB.append(numbersLessThanTwenty[ones]);
+						}
 					}
 				}
 			}
 			if(innerSB.length()>0) {
+				int m100 = thousandths % 100;
+				int m10 = thousandths % 10;
+				String f;
 				switch(i) {
 					case 1:
-						innerSB.append(" thousand");
+						f = (m100>=11 && m100<=19) ? "тысяч" : (m10==1 ? "тысяча" : (m10>=2 && m10<=4 ? "тысячи" : "тысяч"));
+						innerSB.append(" ").append(f);
 						break;
 					case 2:
-						innerSB.append(" million");
+						f = (m100>=11 && m100<=19) ? "миллионов" : (m10==1 ? "миллион" : (m10>=2 && m10<=4 ? "миллиона" : "миллионов"));
+						innerSB.append(" ").append(f);
 						break;
 					case 3:
-						innerSB.append(" billion");
+						f = (m100>=11 && m100<=19) ? "миллиардов" : (m10==1 ? "миллиард" : (m10>=2 && m10<=4 ? "миллиарда" : "миллиардов"));
+						innerSB.append(" ").append(f);
 						break;
 					case 4:
-						innerSB.append(" trillion");
+						innerSB.append(" триллионов");
 						break;
 					case 5:
-						innerSB.append(" quadrillion");
+						innerSB.append(" квадриллионов");
 						break;
 					case 6:
-						innerSB.append(" quintillion");
+						innerSB.append(" квинтиллионов");
 						break;
-					// This isn't needed but whatever...
 					case 7:
-						innerSB.append(" sextillion"); // hehe it says sex
+						innerSB.append(" секстиллионов");
 						break;
 				}
 			}
 			if(sb.length()>0) {
-				innerSB.append(", ");
+				innerSB.append(" ");
 			}
 			sb.insert(0, innerSB.toString());
 			integer /= 1000;
@@ -740,7 +782,7 @@ public class Util {
 		}
 		
 		if(minus) {
-			sb.insert(0, "minus ");
+			sb.insert(0, "минус ");
 		}
 		
 		return sb.toString();
@@ -749,7 +791,7 @@ public class Util {
 	/**
 	 * Converts an integer (positive or negative) to a series of numbers expressed as a String, with each number linked by a dash.
 	 * @param integer
-	 * @return e.g. 17904 will output "one-seven-nine-zero-four", -8201 will output "negative eight-two-zero-one"
+	 * @return e.g. 17904 will output "один-семь-девять-ноль-четыре"
 	 */
 	public static String intToIndividualNumbersString(int integer) {
 		LinkedList<String> stringStack = new LinkedList<>();
@@ -767,7 +809,7 @@ public class Util {
 
 		StringBuilder sb = new StringBuilder();
 		if(negative) {
-			sb.append("negative ");
+			sb.append("минус ");
 		}
 		while(!stringStack.isEmpty()) {
 			sb.append(stringStack.pop());
@@ -780,16 +822,16 @@ public class Util {
 	}
 	
 	private static String[] primarySequence = {
-			"primary",
-			"secondary",
-			"tertiary",
-			"quaternary",
-			"quinary",
-			"senary",
-			"septenary",
-			"octonary",
-			"nonary",
-			"denary"
+			"первичн.",
+			"вторичн.",
+			"третичн.",
+			"четвертичн.",
+			"пятиричн.",
+			"шестиричн.",
+			"семиричн.",
+			"восьмеричн.",
+			"девятиричн.",
+			"десятиричн."
 	};
 	
 	public static String intToPrimarySequence(int integer) {
@@ -801,42 +843,34 @@ public class Util {
 	
 
 	public static String intToDate(int integer) {
-		int remainderHundred = integer%100;
-		if(remainderHundred<=10 || remainderHundred>20) {
-			if(integer%10==1) {
-				return integer+"st";
-			} else if(integer%10==2) {
-				return integer+"nd";
-			} else if(integer%10==3) {
-				return integer+"rd";
-			}
-		}
-		return integer+"th";
+		return integer+"-е";
 	}
 	
 	/**
 	 * @param integer Input number to convert.
-	 * @return 'once', 'twice', or 'integer times'
+	 * @return 'один раз', 'дважды', или 'N раз(а)'
 	 */
 	public static String intToCount(int integer) {
 		if(integer==1) {
-			return "once";
+			return "один раз";
 		} else if(integer==2) {
-			return "twice";
+			return "дважды";
 		}
-		
-		return intToString(integer)+" times";
+		int m100 = Math.abs(integer) % 100;
+		int m10 = Math.abs(integer) % 10;
+		String unit = (m100>=11 && m100<=19) ? "раз" : ((m10>=2 && m10<=4) ? "раза" : "раз");
+		return intToString(integer)+" "+unit;
 	}
 
 	/**
 	 * @param integer Input number to convert.
-	 * @return 'first', 'second', etc.
+	 * @return 'первый', 'второй' и т.д.
 	 */
 	public static String intToPosition(int integer) {
 		String intToString = "";
 		
 		if(integer<0) {
-			intToString = "minus ";
+			intToString = "минус ";
 		}
 		integer = Math.abs(integer);
 		if (integer >= 100_000) {
@@ -845,37 +879,41 @@ public class Util {
 		
 		
 		if(integer>=1000) {
-			if((integer/1000)<20) {
-				intToString+=numbersLessThanTwenty[(integer/1000)]+" thousand";
-			} else {
-				intToString+=tensGreaterThanNineteen[integer/10000] + (((integer/1000)%10!=0)?"-"+numbersLessThanTwenty[(integer/1000)%10]:"")+" thousand";
-			}
+			int th = integer / 1000;
+			intToString += intToString(th) + " ";
+			int m100 = th % 100;
+			int m10 = th % 10;
+			intToString += (m100>=11 && m100<=19) ? "тысяч" : (m10==1 ? "тысяча" : (m10>=2 && m10<=4 ? "тысячи" : "тысяч"));
 		}
 		
 		if(integer>=100) {
 			if(integer>=1000 && integer%1000 != 0) {
-				intToString+=", ";
+				intToString+=" ";
 			}
 			integer = integer % 1000;
-			if (intToString.isEmpty() || integer>=100) {
-				intToString += numbersLessThanTwenty[integer/100]+" hundred";
+			if (integer>=100) {
+				intToString += hundredsRu[integer/100];
+				if(integer%100!=0) {
+					intToString+=" ";
+				}
 			}
-			if(integer%100!=0) {
-				intToString+=" and ";
-				integer = integer % 100;
-			}
+			integer = integer % 100;
 		}
 		
 		if(integer%100<20) {
 			if (integer%100 == 0) {
 				if (intToString.isEmpty()) {
-					return "zero";
+					return "нулевой";
 				}
 			} else {
 				intToString+=positionsLessThanTwenty[integer%100];
 			}
 		} else {
-			intToString+=tensGreaterThanNineteen[(integer%100)/10] + ((integer%10!=0)?"-"+positionsLessThanTwenty[integer%10]:"");
+			if (integer%10 == 0) {
+				intToString+=tensPositionsGreaterThanNineteen[(integer%100)/10];
+			} else {
+				intToString+=tensGreaterThanNineteen[(integer%100)/10] + " " + positionsLessThanTwenty[integer%10];
+			}
 		}
 		
 		return intToString;
@@ -919,7 +957,7 @@ public class Util {
 			numeralSB.append("I");
 		}
 		if(limit<integer) {
-			numeralSB.append("... (Total: "+integer+")");
+			numeralSB.append("... (Всего: "+integer+")");
 		}
 		
 		return numeralSB.toString();
@@ -934,7 +972,7 @@ public class Util {
 
 		if(limit%5 != 0) numeralSB.append(zhengPhase[limit%5-1]);
 
-		if(limit<integer) numeralSB.append("... (Total: "+integer+")");
+		if(limit<integer) numeralSB.append("... (Всего: "+integer+")");
 		return numeralSB.toString();
 	}
 	
@@ -981,7 +1019,7 @@ public class Util {
 	}
 
 	public static boolean isVowel(char c) {
-		return "AEIOUaeiou".indexOf(c) != -1;
+		return "AEIOUaeiouАЕЁИОУЫЭЮЯаеёиоуыэюя".indexOf(c) != -1;
 	}
 
 	/**
@@ -1338,16 +1376,11 @@ public class Util {
 		return insertIntoSentences(sentence, frequency, inserts, true);
 	}
 
-	public static String[] bimboWords = new String[] { ", like,", ", like,", ", like,", ", um,", ", uh,", ", ah," };
+	public static String[] bimboWords = new String[] { ", типа,", ", типа,", ", как бы,", ", эм,", ", э-э,", ", ах," };
 	/**
 	 * Turns a normal sentence into the kind of thing a Bimbo would come out with.
 	 * Can be safely used in conjunction with addStutter.
 	 * If using addStutter after using addBimbo, bimbo words can also become stuttered.<br/>
-	 * Example: "How far is it to the town hall?"<br/>
-	 * "How, like, far is it to the town, uh, hall and stuff?"<br/>
-	 * "How far is, like, it to the, um, town hall and stuff?"<br/>
-	 * "Like, How far is it to the, like, town hall?"<br/>
-	 * Used in conjunction with addStutter(): "L-Like, How far is it t-to the, like, town hall?"
 	 *
 	 * @param sentence
 	 *            sentence to apply bimbo modifications
@@ -1374,12 +1407,12 @@ public class Util {
 				case 0:
 					CharSequence cs = utilitiesStringBuilder.subSequence(deleteindex, utilitiesStringBuilder.length());
 					utilitiesStringBuilder.delete(deleteindex, utilitiesStringBuilder.length());
-					utilitiesStringBuilder.append(" and stuff");
+					utilitiesStringBuilder.append(" и всё такое");
 					utilitiesStringBuilder.append(cs);
 					break;
 				case 1:
 					utilitiesStringBuilder.delete(deleteindex, utilitiesStringBuilder.length());
-					utilitiesStringBuilder.append(", y'know?");
+					utilitiesStringBuilder.append(", понимаешь?");
 					break;
 				default:
 					break;
@@ -1387,14 +1420,14 @@ public class Util {
 		}
 
 		String returnString = utilitiesStringBuilder.toString();
-		returnString = returnString.replaceAll("Hello", "Heya");
-		returnString = returnString.replaceAll("hello", "heya");
-		returnString = returnString.replaceAll("Goodbye", "Bye");
-		returnString = returnString.replaceAll("goodbye", "bye");
+		returnString = returnString.replaceAll("Привет", "Хей");
+		returnString = returnString.replaceAll("привет", "хей");
+		returnString = returnString.replaceAll("До свидания", "Покеда");
+		returnString = returnString.replaceAll("до свидания", "покеда");
 		return returnString;
 	}
 	
-	private static String[] broWords = new String[] { ", like,", ", like, dude,", ", like, bro,", ", like,", ", um,", ", uh,", ", ah," };
+	private static String[] broWords = new String[] { ", типа,", ", эй, чувак,", ", типа, бро,", ", короче,", ", эм,", ", э-э,", ", ага," };
 	public static String addBro(String sentence, int frequency) {
 		sentence = insertIntoSentences(sentence, frequency, broWords);
 		StringBuilder utilitiesStringBuilder = new StringBuilder();
@@ -1406,12 +1439,12 @@ public class Util {
 				case 0:
 					char end = utilitiesStringBuilder.charAt(utilitiesStringBuilder.length() - 1);
 					utilitiesStringBuilder.deleteCharAt(utilitiesStringBuilder.length() - 1);
-					utilitiesStringBuilder.append(" and stuff");
+					utilitiesStringBuilder.append(" и всё такое");
 					utilitiesStringBuilder.append(end);
 					break;
 				case 1:
 					utilitiesStringBuilder.deleteCharAt(utilitiesStringBuilder.length() - 1);
-					utilitiesStringBuilder.append(UtilText.returnStringAtRandom(", y'know, bro?", ", y'know, dude?"));
+					utilitiesStringBuilder.append(UtilText.returnStringAtRandom(", понял, бро?", ", чувак?"));
 					break;
 				default:
 					break;
@@ -1423,11 +1456,11 @@ public class Util {
 		return utilitiesStringBuilder.toString();
 	}
 
-	private static String[] muteSexSounds = new String[] { "... ~Ooh!~", "... ~Mmm!~", "... ~Aah!~" };
+	private static String[] muteSexSounds = new String[] { "... ~Ууу!~", "... ~Ммм!~", "... ~Ааа!~" };
 	/**
 	 * @param sentence The sentence to mute.
 	 * @param sexMoans If the character should moan/pant due to being in sex.
-	 * @return A series of "..." if no sexMoans, or "... ~Ooh!~", "... ~Mmm!~", "... ~Aah!~" if sexMoans
+	 * @return A series of "..." if no sexMoans, or "... ~Ууу!~", "... ~Ммм!~", "... ~Ааа!~" if sexMoans
 	 */
 	public static String replaceWithMute(String sentence, boolean sexMoans) {
 		int length = Math.max(1, sentence.split(" ").length/3);
@@ -1445,12 +1478,12 @@ public class Util {
 		return muteSB.toString();
 	}
 		
-	private static String[] muffledSounds = new String[] { " ~Mrph~", " ~Mmm~", " ~Mrmm~" };
+	private static String[] muffledSounds = new String[] { " ~Мрф~", " ~Ммм~", " ~Мрм~" };
 	/**
 	 * Turns a normal sentence into a muffled sentence.<br/>
 	 * Example:<br/>
 	 * "How far is it to the town hall?"<br/>
-	 * "How ~Mrph~ far is it ~Mmm~ to the town ~Mrph~ hall?"<br/>
+	 * "How ~Мрф~ far is it ~Ммм~ to the town ~Мрф~ hall?"<br/>
 	 *
 	 * @param sentence
 	 *            sentence to apply muffles
@@ -1469,17 +1502,16 @@ public class Util {
 		for(int i=0; i<muffles; i++) {
 			muffleSB.append(muffledSounds[random.nextInt(muffledSounds.length)]);
 		}
-		muffleSB.delete(0, 1); // Remove space at start
+		if (muffleSB.length() > 0) {
+			muffleSB.delete(0, 1); // Remove space at start
+		}
 		return muffleSB.toString();
 	}
 
-	private static String[] sexSounds = new String[] { " ~Aah!~", " ~Mmm!~", " ~Ooh!~" };
-	private static String[] sexSoundsResisting = new String[] { " ~Aah!~", " ~No!~", " ~Eugh!~" };
+	private static String[] sexSounds = new String[] { " ~Ааа!~", " ~Ммм!~", " ~Ууу!~" };
+	private static String[] sexSoundsResisting = new String[] { " ~Ааа!~", " ~Нет!~", " ~Фу!~" };
 	/**
 	 * Turns a normal sentence into a sexy sentence.<br/>
-	 * Example:<br/>
-	 * "How far is it to the town hall?"<br/>
-	 * "How ~Aah!~ far is it ~Mmm!~ to the town ~Aah!~ hall?"<br/>
 	 *
 	 * @param sentence
 	 *            sentence to apply sexy modifications
@@ -1492,12 +1524,9 @@ public class Util {
 		return insertIntoSentences(sentence, frequency, resisting?sexSoundsResisting:sexSounds);
 	}
 
-	private static String[] drunkSounds = new String[] { " ~Hic!~" };
+	private static String[] drunkSounds = new String[] { " ~Ик!~" };
 	/**
 	 * Turns a normal sentence into a drunk one.<br/>
-	 * Example:<br/>
-	 * "How far is it to the town hall?"<br/>
-	 * "How ~Hic!~ far ish it ~Hic!~ to the town ~Hic!~ hall?"<br/>
 	 *
 	 * @param sentence to apply drunk modifications to.
 	 * @param frequency of drunk sounds (i.e. 4 would be 1 in 4 words are drunk)
@@ -1511,222 +1540,58 @@ public class Util {
 			String [] splitConditional = s.split("#IF\\((.*?)\\)|#ELSEIF\\((.*?)\\)"); // Do not replace text inside conditional parsing statements
 			for(String s2 : splitConditional) {
 				String sReplace = s2
-						.replaceAll("Hi ", "Heeey ")
-						.replaceAll("yes", "yesh")
-						.replaceAll("Is", "Ish")
-						.replaceAll("is", "ish")
-						.replaceAll("It's", "It'sh")
-						.replaceAll("it's", "it'sh")
-						.replaceAll("So", "Sho")
-						.replaceAll("so", "sho");
+						.replaceAll("Привет ", "Пр-ривет ")
+						.replaceAll("да", "д-да")
+						.replaceAll("Да", "Д-да")
+						.replaceAll("С", "Ш")
+						.replaceAll("с", "ш");
 					
 					sentence = sentence.replace(s2, sReplace);
 			}
 		}
 		
 		return sentence;
-		
-//		return insertIntoSentences(sentence, frequency, drunkSounds, false)
-//			.replaceAll("Hi ", "Heeey ")
-//			.replaceAll("yes", "yesh")
-//			.replaceAll("is", "ish")
-//			.replaceAll("So", "Sho")
-//			.replaceAll("so", "sho");
 	}
 
 	private static Map<String, String> slovenlySpeechReplacementMap = new LinkedHashMap<>();
 	static {
-		slovenlySpeechReplacementMap.put("What are", "Wot's");
-		slovenlySpeechReplacementMap.put("what are", "wot's");
-		
-		slovenlySpeechReplacementMap.put("Are", "Is");
-		slovenlySpeechReplacementMap.put("are", "is");
-
-		slovenlySpeechReplacementMap.put("You're", "You's");
-		slovenlySpeechReplacementMap.put("you're", "you's");
-		
-		slovenlySpeechReplacementMap.put("Your", "Yer");
-		slovenlySpeechReplacementMap.put("your", "yer");
-		
-		slovenlySpeechReplacementMap.put("You ", "Ya "); // End with a space as sentences which are simply 'You.' are awkward to read when converted to 'Ya.'
-		slovenlySpeechReplacementMap.put("you", "ya");
-		
-		slovenlySpeechReplacementMap.put("Yourself", "Yerself");
-		slovenlySpeechReplacementMap.put("yourself", "yerself");
-
-		slovenlySpeechReplacementMap.put("You'd", "You's");
-		slovenlySpeechReplacementMap.put("you'd", "you's");
-
-		slovenlySpeechReplacementMap.put("Her", "'Er");
-		slovenlySpeechReplacementMap.put("her", "'er");
-
-		slovenlySpeechReplacementMap.put("His", "'Is");
-		slovenlySpeechReplacementMap.put("his", "'is");
-		
-		slovenlySpeechReplacementMap.put("Going to", "Gonna");
-		slovenlySpeechReplacementMap.put("going to", "gonna");
-		
-		slovenlySpeechReplacementMap.put("To", "Ta");
-		slovenlySpeechReplacementMap.put("to", "ta");
-		slovenlySpeechReplacementMap.put("Into", "Inta");
-		slovenlySpeechReplacementMap.put("into", "inta");
-
-		slovenlySpeechReplacementMap.put("The", "Da");
-		slovenlySpeechReplacementMap.put("the", "da");
-
-		slovenlySpeechReplacementMap.put("Them", "Dem");
-		slovenlySpeechReplacementMap.put("them", "dem");
-
-		slovenlySpeechReplacementMap.put("They", "Dey");
-		slovenlySpeechReplacementMap.put("they", "dey");
-
-		slovenlySpeechReplacementMap.put("These", "Dese");
-		slovenlySpeechReplacementMap.put("these", "dese");
-		
-		slovenlySpeechReplacementMap.put("And", "'An");
-		slovenlySpeechReplacementMap.put("and", "an'");
-		
-		slovenlySpeechReplacementMap.put("Of", "O'");
-		slovenlySpeechReplacementMap.put("of", "o'");
-		slovenlySpeechReplacementMap.put("Who", "'O");
-		slovenlySpeechReplacementMap.put("who", "'o");
-		slovenlySpeechReplacementMap.put("Whoever", "'Oever");
-		slovenlySpeechReplacementMap.put("whoever", "'oever");
-		
-		slovenlySpeechReplacementMap.put("Was", "Were");
-		slovenlySpeechReplacementMap.put("was", "were");
-		
-		slovenlySpeechReplacementMap.put("What", "Wot");
-		slovenlySpeechReplacementMap.put("what", "wot");
-		
-		slovenlySpeechReplacementMap.put("Isn't", "Ain't");
-		slovenlySpeechReplacementMap.put("isn't", "ain't");
-		slovenlySpeechReplacementMap.put("Aren't", "Ain't");
-		slovenlySpeechReplacementMap.put("aren't", "ain't");
-		
-		slovenlySpeechReplacementMap.put("This one", "This 'un");
-		slovenlySpeechReplacementMap.put("this one", "this 'un");
-		slovenlySpeechReplacementMap.put("That one", "That 'un");
-		slovenlySpeechReplacementMap.put("that one", "that 'un");
-		
-		slovenlySpeechReplacementMap.put("Before", "'Afore");
-		slovenlySpeechReplacementMap.put("before", "'afore");
-		
-		slovenlySpeechReplacementMap.put("Give me", "Gimme");
-		slovenlySpeechReplacementMap.put("give me", "gimme");
-		
-		slovenlySpeechReplacementMap.put("We're", "We's");
-		slovenlySpeechReplacementMap.put("we're", "we's");
-		
-		slovenlySpeechReplacementMap.put("So that", "So's");
-		slovenlySpeechReplacementMap.put("so that", "so's");
-
-		slovenlySpeechReplacementMap.put("Have not", "'Aven't");
-		slovenlySpeechReplacementMap.put("have not", "'aven't");
-		slovenlySpeechReplacementMap.put("Haven't", "'Aven't");
-		slovenlySpeechReplacementMap.put("haven't", "'aven't");
-		slovenlySpeechReplacementMap.put("Have", "'Ave");
-		slovenlySpeechReplacementMap.put("have", "'ave");
-
-		slovenlySpeechReplacementMap.put("Here", "'Ere");
-		slovenlySpeechReplacementMap.put("here", "'ere");
-		
-		slovenlySpeechReplacementMap.put("My", "Me");
-		slovenlySpeechReplacementMap.put("my", "me");
-
-		slovenlySpeechReplacementMap.put("Myself", "Meself");
-		slovenlySpeechReplacementMap.put("myself", "meself");
-		
-		slovenlySpeechReplacementMap.put("That", "Dat");
-		slovenlySpeechReplacementMap.put("that", "dat");
-
-		slovenlySpeechReplacementMap.put("Some", "Sum");
-		slovenlySpeechReplacementMap.put("some", "sum");
-
-		slovenlySpeechReplacementMap.put("This", "Dis");
-		slovenlySpeechReplacementMap.put("this", "dis");
-		
-		slovenlySpeechReplacementMap.put("For", "Fer");
-		slovenlySpeechReplacementMap.put("for", "fer");
-		
-		slovenlySpeechReplacementMap.put("Very", "Real");
-		slovenlySpeechReplacementMap.put("very", "real");
-		
-		slovenlySpeechReplacementMap.put("Yes", "Yeah");
-		slovenlySpeechReplacementMap.put("yes", "yeah");
-
-		slovenlySpeechReplacementMap.put("Hurry", "'Urry");
-		slovenlySpeechReplacementMap.put("hurry", "'urry");
-		
-		slovenlySpeechReplacementMap.put("Doesn't", "Don't");
-		slovenlySpeechReplacementMap.put("doesn't", "don't");
-		
-		slovenlySpeechReplacementMap.put("Because", "'Cause");
-		slovenlySpeechReplacementMap.put("because", "'cause");
+		slovenlySpeechReplacementMap.put("Что ", "Чё ");
+		slovenlySpeechReplacementMap.put("что ", "чё ");
+		slovenlySpeechReplacementMap.put("Чтобы", "Шоб");
+		slovenlySpeechReplacementMap.put("чтобы", "шоб");
+		slovenlySpeechReplacementMap.put("Сейчас", "Ща");
+		slovenlySpeechReplacementMap.put("сейчас", "ща");
+		slovenlySpeechReplacementMap.put("Вообще", "Ваще");
+		slovenlySpeechReplacementMap.put("вообще", "ваще");
+		slovenlySpeechReplacementMap.put("Ничего", "Ничё");
+		slovenlySpeechReplacementMap.put("ничего", "ничё");
+		slovenlySpeechReplacementMap.put("Потому что", "Потамушта");
+		slovenlySpeechReplacementMap.put("потому что", "потамушта");
+		slovenlySpeechReplacementMap.put("Конечно", "Канеш");
+		slovenlySpeechReplacementMap.put("конечно", "канеш");
+		slovenlySpeechReplacementMap.put("Сколько", "Скока");
+		slovenlySpeechReplacementMap.put("сколько", "скока");
+		slovenlySpeechReplacementMap.put("Тебя", "Тя");
+		slovenlySpeechReplacementMap.put("тебя", "тя");
+		slovenlySpeechReplacementMap.put("Меня", "Мя");
+		slovenlySpeechReplacementMap.put("меня", "мя");
 	}
 	/**
-	 * Replaces words in the sentence to give the impression that the speaker is talking in a slovenly manner. The replacements are:
-			<br/>Are -> Is
-			<br/>You're -> You's
-			<br/>Your -> Yer
-			<br/>You -> Ya
-			<br/>Yourself - Yerself
-			<br/>You'd -> You's
-			<br/>Her -> 'Er
-			<br/>His -> 'Is
-			<br/>To -> Ta
-			<br/>Into -> inta
-			<br/>The -> Da
-			<br/>Them -> Dem
-			<br/>These -> Dese
-			<br/>And -> An'
-			<br/>Of -> 'O
-			<br/>Who -> 'O
-			<br/>Who -> 'O
-			<br/>Was -> Were
-			<br/>Isn't -> ain't
-			<br/>Aren't -> ain't
-			<br/>This one -> This 'un
-			<br/>That one -> That 'un
-			<br/>Before -> 'afore
-			<br/>Give me -> Gimme
-			<br/>Going to -> gonna
-			<br/><i>X</i>ing -> <i>X</i>in'
-			<br/>We're -> We's
-			<br/>So that -> so's
-			<br/>Have not -> 'aven't
-			<br/>Haven't -> 'aven't
-			<br/>Have -> 'ave
-			<br/>My -> Me
-			<br/>Myself -> Meself
-			<br/>That -> Dat
-			<br/>Some -> Sum
-			<br/>For -> Fer
-			<br/>Here -> 'ere
-			<br/>Very -> Real
-			<br/>Yes -> Yeah
-			<br/>Hurry -> 'Urry
-			<br/>Doesn't -> Don't
-			<br/>Because -> 'Cause
+	 * Replaces words in the sentence to give the impression that the speaker is talking in a slovenly manner.
 	 *
-	 * @param sentence The speech to which the lisp should be applied.
+	 * @param sentence The speech to which the effect should be applied.
 	 * @return The modified sentence.
 	 */
 	public static String applySlovenlySpeech(String sentence) {
-		//Use non-letter regex replacement ([^A-Za-z0-9]) 
 		String modifiedSentence = sentence;
 		for(Entry<String, String> entry : slovenlySpeechReplacementMap.entrySet()) {
-			modifiedSentence = modifiedSentence.replaceAll("([^A-Za-z0-9\\.]|^)"+entry.getKey()+"([^A-Za-z0-9\\]])", "$1"+entry.getValue()+"$2");
+			modifiedSentence = modifiedSentence.replace(entry.getKey(), entry.getValue());
 		}
-		modifiedSentence = modifiedSentence.replaceAll("ing([^A-Za-z0-9\\]])", "in'$1");
 		return modifiedSentence;
 	}
 	
 	/**
-	 * Applies a lisp to speech (a speech defect in which s is pronounced like th in thick and z is pronounced like th in this). Modified sibilants are italicised in order to assist with reading.<br/>
-	 * Example:<br/>
-	 * "Is there a zoo that's nearby?"<br/>
-	 * "I<i>th</i> there a <i>th</i>oo that'<i>th</i> nearby?"<br/>
+	 * Applies a lisp to speech (in Russian: replacing sibilants с/з with <i>ф</i>). Modified sibilants are italicised in order to assist with reading.<br/>
 	 *
 	 * @param sentence The speech to which the lisp should be applied.
 	 * @return The modified sentence.
@@ -1755,10 +1620,10 @@ public class Util {
 			}
 			
 			if(openingCurly==closingCurly && openingAngular==closingAngular && openingSquare==closingSquare) {
-				if(sentence.charAt(i)=='s' || sentence.charAt(i)=='z') {
-					modifiedSentence.append(">i/<ht>i<");
-				} else if((sentence.charAt(i)=='S' && (i-1>=0 && sentence.charAt(i-1)!='L')) || sentence.charAt(i)=='Z') {
-					modifiedSentence.append(">i/<hT>i<");
+				if(sentence.charAt(i)=='с' || sentence.charAt(i)=='з') {
+					modifiedSentence.append(">i/<ф>i<");
+				} else if(sentence.charAt(i)=='С' || sentence.charAt(i)=='З') {
+					modifiedSentence.append(">i/<Ф>i<");
 				} else {
 					modifiedSentence.append(sentence.charAt(i));
 				}
@@ -1775,13 +1640,6 @@ public class Util {
 	
 	/**
 	 * Builds a string representing the list of items in a collection.
-	 *
-	 * If there is one item, that string will be returned:
-	 * <code>"something"</code>.
-	 * If there are two items, they are combined with the combining word:
-	 * <code>"something and nothing"</code>.
-	 * If there are three or more items, all will be combined with commas, except the last two will use the combining word:
-	 * <code>"something, nothing and everything"</code>.
 	 *
 	 * @param items a {@link Collection} of items to turn into a pretty list
 	 * @param stringExtractor the function used to get the strings out of the objects in the collection
@@ -1802,7 +1660,7 @@ public class Util {
 					utilitiesStringBuilder.append(", " + stringExtractor.apply(currentItem));
 					currentItem = itemIterator.next();
 				}
-				utilitiesStringBuilder.append((items.size()>2?", ":" ") + combiningWord + " " + stringExtractor.apply(currentItem));
+				utilitiesStringBuilder.append(" " + combiningWord + " " + stringExtractor.apply(currentItem));
 			}
 		} catch(NoSuchElementException ex) {
 			System.err.println("Util.toStringList() error - NoSuchElementException! (It's probably nothing to worry about...)");
@@ -1819,7 +1677,7 @@ public class Util {
 							?Util.capitaliseSentence(o.getNamePlural(null))
 							:o.getNamePlural(null))
 					+"</span>",
-				"and");
+				"и");
 	}
 	
 	public static String charactersToStringListOfNames(Collection<GameCharacter> characters) {
@@ -1830,47 +1688,47 @@ public class Util {
 		return Util.toStringList(characters,
 				(GameCharacter c) -> 
 					UtilText.parse(c, (withColouring?"<span style='color:"+c.getFemininity().getColour().toWebHexString()+";'>":"")+"[npc.name]"+(withColouring?"</span>":"")),
-				"and");
+				"и");
 	}
 
 	public static String clothesToStringList(Collection<AbstractClothing> clothingSet, boolean capitalise) {
-		return Util.toStringList(clothingSet, (AbstractClothing o) -> (capitalise?Util.capitaliseSentence(o.getClothingType().getName()):o.getClothingType().getName()), "and");
+		return Util.toStringList(clothingSet, (AbstractClothing o) -> (capitalise?Util.capitaliseSentence(o.getClothingType().getName()):o.getClothingType().getName()), "и");
 	}
 
 	public static String setToStringListCoverableArea(Set<CoverableArea> coverableAreaSet) {
-		return Util.toStringList(coverableAreaSet, (CoverableArea o) -> Util.capitaliseSentence(o.getName()), "and");
+		return Util.toStringList(coverableAreaSet, (CoverableArea o) -> Util.capitaliseSentence(o.getName()), "и");
 	}
 
 	public static String stringsToStringList(List<String> list, boolean capitalise) {
-		return Util.toStringList(list, (String o) -> capitalise?Util.capitaliseSentence(o):o, "and");
+		return Util.toStringList(list, (String o) -> capitalise?Util.capitaliseSentence(o):o, "и");
 	}
 
 	public static String stringsToStringChoice(List<String> list, boolean capitalise) {
-		return Util.toStringList(list, (String o) -> capitalise?Util.capitaliseSentence(o):o, "or");
+		return Util.toStringList(list, (String o) -> capitalise?Util.capitaliseSentence(o):o, "или");
 	}
 
 	public static String coloursToStringList(Collection<Colour> colourSet) {
-		return Util.toStringList(colourSet, Colour::getName, "and");
+		return Util.toStringList(colourSet, Colour::getName, "и");
 	}
 
 	public static String coverableAreaListToStringList(List<CoverableArea> coverableAreaCollection) {
-		return Util.toStringList(coverableAreaCollection, CoverableArea::getName, "and");
+		return Util.toStringList(coverableAreaCollection, CoverableArea::getName, "и");
 	}
 
 	public static String inventorySlotsToStringList(List<InventorySlot> inventorySlots) {
-		return Util.toStringList(inventorySlots, InventorySlot::getName, "and");
+		return Util.toStringList(inventorySlots, InventorySlot::getName, "и");
 	}
 	
 	public static String inventorySlotsToParsedStringList(List<InventorySlot> inventorySlots, GameCharacter owner) {
-		return Util.toStringList(inventorySlots, ((slot) -> slot.getNameOfAssociatedPart(owner)), "and");
+		return Util.toStringList(inventorySlots, ((slot) -> slot.getNameOfAssociatedPart(owner)), "и");
 	}
 	
 	public static String tattooInventorySlotsToStringList(List<InventorySlot> inventorySlots) {
-		return Util.toStringList(inventorySlots, InventorySlot::getTattooSlotName, "and");
+		return Util.toStringList(inventorySlots, InventorySlot::getTattooSlotName, "и");
 	}
 
 	public static String displacementTypesToStringList(List<DisplacementType> displacedList) {
-		return Util.toStringList(displacedList, DisplacementType::getDescriptionPast, "and");
+		return Util.toStringList(displacedList, DisplacementType::getDescriptionPast, "и");
 	}
 
 	public static <Any> Any randomItemFrom(List<Any> list) {

@@ -4040,16 +4040,14 @@ public abstract class GameCharacter implements XMLSaving {
 			return getName(true);
 			
 		} else {
-			String nameText = (isPrependWingedToRaceName() ? "winged " : "") + getName(true);
-			if(this.isUnique()) {
-				determiner = "the";
+			String nameText = (isPrependWingedToRaceName() ? (this.isFeminine() ? "крылатая " : "крылатый ") : "") + getName(true);
+			if(determiner==null || determiner.isEmpty() || determiner.equalsIgnoreCase("a") || determiner.equalsIgnoreCase("an") || determiner.equalsIgnoreCase("the")) {
+				if(determiner!=null && !determiner.isEmpty() && Character.isUpperCase(determiner.charAt(0))) {
+					return Util.capitaliseSentence(nameText);
+				}
+				return nameText;
 			}
-			return (determiner.equalsIgnoreCase("a") || determiner.equalsIgnoreCase("an")
-						?(Character.isUpperCase(determiner.charAt(0))
-								?Util.capitaliseSentence(UtilText.generateSingularDeterminer(nameText))
-								:UtilText.generateSingularDeterminer(nameText))
-						:determiner)
-					+ " " + nameText;
+			return determiner + " " + nameText;
 		}
 	}
 

@@ -289,26 +289,23 @@ public enum Units {
             case LONG:
                 if(Math.floor(inches) == 0 && vType != ValueType.PRECISE) {
                     output.setLength(0);
-                    return output.append("less than ")
-                            .append(vType == ValueType.TEXT ? "one" : "1")
-                            .append(" inch").toString();
+                    return output.append("менее ")
+                            .append(vType == ValueType.TEXT ? "одного" : "1")
+                            .append(" дюйма").toString();
                 }
                 
                 output.append(" ");
-                if(Math.abs(usedValue) >= 1 + roundingFactor/2
-                		|| usedValue == 0) {
-                	output.append(wrap ? "feet" : "inches");
-                } else {
-                	output.append(wrap ? "foot" : "inch");
-                }
+                output.append(wrap
+                        ? ruPlural(usedValue, "фут", "фута", "футов")
+                        : ruPlural(usedValue, "дюйм", "дюйма", "дюймов"));
                 break;
             case LONG_SINGULAR:
-                output.append("-").append(wrap ? "foot" : "inch");
+                output.append("-").append(wrap ? "фут." : "дюйм.");
         }
 
         // Append second unit for long or short notation and if neither value is 0
         if (both) {
-            if (uType == UnitType.LONG) output.append(" and ");
+            if (uType == UnitType.LONG) output.append(" и ");
             if (uType == UnitType.LONG_SINGULAR) output.append("-");
             remainingInches = Math.abs(roundTo(remainingInches, roundingFactor));
             output.append(value(remainingInches, vType, true));
@@ -317,7 +314,7 @@ public enum Units {
                     output.append(INCH_SYMBOL);
                     break;
                 case LONG:
-                    output.append(" ").append(remainingInches >= 1 + roundingFactor/2 ? "inches" : "inch");
+                    output.append(" ").append(ruPlural(remainingInches, "дюйм", "дюйма", "дюймов"));
                     break;
                 case LONG_SINGULAR:
                     break;
@@ -325,6 +322,19 @@ public enum Units {
         }
 
         return output.toString();
+    }
+
+    private static String ruPlural(double val, String f1, String f2, String f5) {
+        long n = Math.abs(Math.round(val));
+        if (Math.abs(val - n) > 0.01) {
+            return f2;
+        }
+        long mod100 = n % 100;
+        long mod10 = n % 10;
+        if (mod100 >= 11 && mod100 <= 19) return f5;
+        if (mod10 == 1) return f1;
+        if (mod10 >= 2 && mod10 <= 4) return f2;
+        return f5;
     }
 
     /**
@@ -336,7 +346,7 @@ public enum Units {
      */
     public static String sizeAsMetric(double cm, ValueType vType, UnitType uType) {
         double m = cm / 100;
-        return valueWithUnit(cm, "cm", "centimetre"/*+(cm!=1?"s":"")*/, m, "m", "metre"/*+(cm!=100?"s":"")*/, vType, uType, false);
+        return valueWithUnit(cm, " см", "сантиметр", m, " м", "метр", vType, uType, false);
     }
 
     /**
@@ -391,7 +401,7 @@ public enum Units {
         double oz = ml / 28.4131;
 
         double gal = oz / 160;
-        return valueWithUnit(oz, "oz", "ounce", gal, "gal", "gallon", vType, uType, true);
+        return valueWithUnit(oz, " унц.", "унция", gal, " галл.", "галлон", vType, uType, true);
     }
 
     /**
@@ -403,7 +413,7 @@ public enum Units {
      */
     public static String fluidAsMetric(double ml, ValueType vType, UnitType uType) {
         double l = ml / 1000;
-        return valueWithUnit(ml, "mL", "millilitre", l, "L", "litre", vType, uType, false); // Innoxia's note: I usually prefer the lowercase l for ml and l, but LT's font makes it look bad.
+        return valueWithUnit(ml, " мл", "миллилитр", l, " л", "литр", vType, uType, false);
     }
 
     /**
@@ -447,7 +457,7 @@ public enum Units {
         double oz = grams / 28.34952;
 
         double lb = oz / 16;
-        return valueWithUnit(oz, "oz", "ounce", lb, "lb", "pound", vType, uType, true);
+        return valueWithUnit(oz, " унц.", "унция", lb, " фунт.", "фунт", vType, uType, true);
     }
 
     /**
@@ -459,7 +469,7 @@ public enum Units {
      */
     public static String weightAsMetric(double grams, ValueType vType, UnitType uType) {
         double kg = grams / 1000;
-        return valueWithUnit(grams, "g", "gram", kg, "kg", "kilogram", vType, uType, false);
+        return valueWithUnit(grams, " г", "грамм", kg, " кг", "килограмм", vType, uType, false);
     }
 
     private static String value(double value, ValueType vType, boolean useQuarters) {
@@ -503,19 +513,48 @@ public enum Units {
             case LONG:
                 if (Math.floor(value) == 0 && vType != ValueType.PRECISE) {
                     output.setLength(0);
-                    return output.append("less than ")
-                            .append(vType == ValueType.TEXT ? "one " : "1 ")
-                            .append(unit).toString();
+                    return output.append("менее ")
+                            .append(vType == ValueType.TEXT ? "одного " : "1 ")
+                            .append(ruUnitGenitive(unit)).toString();
                 }
 
-                output.append(" ").append(wrap ? wrappedUnit : unit);
-                if (Math.abs(usedValue) != 1.0) output.append("s");
+                output.append(" ").append(ruPluralUnit(usedValue, wrap ? wrappedUnit : unit));
                 break;
             case LONG_SINGULAR:
                 output.append(" ").append((wrap ? wrappedUnit : unit));
         }
 
         return output.toString();
+    }
+
+    private static String ruUnitGenitive(String baseUnit) {
+        switch (baseUnit) {
+            case "унция": return "унции";
+            case "галлон": return "галлона";
+            case "фунт": return "фунта";
+            case "сантиметр": return "сантиметра";
+            case "метр": return "метра";
+            case "миллилитр": return "миллилитра";
+            case "литр": return "литра";
+            case "грамм": return "грамма";
+            case "килограмм": return "килограмма";
+            default: return baseUnit;
+        }
+    }
+
+    private static String ruPluralUnit(double val, String baseUnit) {
+        switch (baseUnit) {
+            case "унция": return ruPlural(val, "унция", "унции", "унций");
+            case "галлон": return ruPlural(val, "галлон", "галлона", "галлонов");
+            case "фунт": return ruPlural(val, "фунт", "фунта", "фунтов");
+            case "сантиметр": return ruPlural(val, "сантиметр", "сантиметра", "сантиметров");
+            case "метр": return ruPlural(val, "метр", "метра", "метров");
+            case "миллилитр": return ruPlural(val, "миллилитр", "миллилитра", "миллилитров");
+            case "литр": return ruPlural(val, "литр", "литра", "литров");
+            case "грамм": return ruPlural(val, "грамм", "грамма", "граммов");
+            case "килограмм": return ruPlural(val, "килограмм", "килограмма", "килограммов");
+            default: return baseUnit;
+        }
     }
 
     /**
@@ -543,37 +582,24 @@ public enum Units {
         }
     }
 
-    private final static String[] suffixes = new String[] { "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th" };
-    /**
-     * Selects the correct ordinal for a given value. Only the ordinal itself is returned.
-     * @param value The number to select an ordinal for
-     * @return A string containing the ordinal
-     */
     public static String getOrdinal(int value) {
-        switch (value % 100) {
-            case 11:
-            case 12:
-            case 13:
-                return "th";
-            default:
-                return suffixes[value % 10];
-        }
+        return "";
     }
 
     public static String getMonthName(int month) {
         switch (month) {
-            case 1: return "January";
-            case 2: return "February";
-            case 3: return "March";
-            case 4: return "April";
-            case 5: return "May";
-            case 6: return "June";
-            case 7: return "July";
-            case 8: return "August";
-            case 9: return "September";
-            case 10: return "October";
-            case 11: return "November";
-            case 12: return "December";
+            case 1: return "января";
+            case 2: return "февраля";
+            case 3: return "марта";
+            case 4: return "апреля";
+            case 5: return "мая";
+            case 6: return "июня";
+            case 7: return "июля";
+            case 8: return "августа";
+            case 9: return "сентября";
+            case 10: return "октября";
+            case 11: return "ноября";
+            case 12: return "декабря";
         }
         return "";
     }
