@@ -16,42 +16,42 @@
 	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsFeminine>
 	
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>badger-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>барсучий</descriptor>
+		<descriptor>пушистая</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>badger-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>барсучий</descriptor>
+		<descriptor>пушистая</descriptor>
 	</handDescriptorsFeminine>
 	
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>badger-like</descriptor>
+		<descriptor>барсучий</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>badger-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>барсучий</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
 		Всего за мгновение их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую шерсть, растущую на спинах [npc.her] рук, в то время как острые когти прорываются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] маленькие подушечки, а на [npc.her] верхней части бицепсов [npc.her] мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела.
-		<br/>Когда трансформация полностью завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldBadger(badger-like arms and hands)], которые [npc.materialDescriptor] [npc.armFullDescription].
+		<br/>Когда трансформация полностью завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldBadger(подобными барсуку руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

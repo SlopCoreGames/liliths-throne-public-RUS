@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[пистолетные арбалеты]]></namePlural>
 		<description><![CDATA[Этот компактный арбалет представляет собой лук, закрепленный горизонтально на раме в форме пистолета, и его легко удерживать одной рукой. Когда тетива оттягивается назад, из владельца извлекается арканная эссенция, которая преобразуется в эфирный болт, готовый к выстрелу по цели.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Shoot [npc2.name] with your pistol crossbow.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc2.name] из своего пистоля-арбалета.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<weaponSet/>
 		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] пистолетный арбалет, готовый к бою.]]></equipText>

@@ -536,7 +536,7 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submission]]></responseTitle>
+				<responseTitle><![CDATA[Покорность]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.getBool('shiranui_meraxis_question_submission'))
 						Ты уже спрашивал Мераксис о том, чем она занималась в Submission при вашей первой встрече...

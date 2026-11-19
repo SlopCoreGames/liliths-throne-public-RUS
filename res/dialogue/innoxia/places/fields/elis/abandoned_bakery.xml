@@ -219,7 +219,7 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Hammer]]></responseTitle>
+				<responseTitle><![CDATA[Молот]]></responseTitle>
 				<responseTooltip><![CDATA[Решить войти в здание через парадную дверь вместе с Хаммером.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_abandoned_bakery_mission_start_hammer</nextDialogue>
 				<effects><![CDATA[
@@ -418,10 +418,10 @@
 						<enemy leader="false"><![CDATA[gangMember2]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[You decide to give Ghost some backup and move to help her fight the gang members.]]></combatant>
-						<combatant id="ghost"><![CDATA[[ghost.speech(I can handle this myself,)] the [ghost.race] says, before smirking and adding, [ghost.speech(but I guess it'll be quicker this way.)]]]></combatant>
-						<combatant id="gangMember1"><![CDATA[[gangMember1.speech(Who the fuck are you?!)] the gang member demands.]]></combatant>
-						<combatant id="gangMember2"><![CDATA[[gangMember2.speech(They look pretty serious!)] the second gang member calls out to [gangMember2.her] comrade.]]></combatant>
+						<combatant id="pc"><![CDATA[Ты решаешь поддержать Призрака и бросаешься на помощь, чтобы сразиться с членами банды.]]></combatant>
+						<combatant id="ghost"><![CDATA[[ghost.speech(Я и сама справлюсь,)] — говорит [ghost.race], ухмыляясь и добавляя: [ghost.speech(но так, пожалуй, будет быстрее.)]]]></combatant>
+						<combatant id="gangMember1"><![CDATA[[gangMember1.speech(Ты еще кто за хер?!)] — требует бандит.]]></combatant>
+						<combatant id="gangMember2"><![CDATA[[gangMember2.speech(Они выглядят довольно серьезно!)] — выкрикивает второй бандит своему товарищу [gangMember2.her].]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 					<submitBlocked><![CDATA[true]]></submitBlocked>
@@ -531,10 +531,10 @@
 						<enemy leader="false"><![CDATA[gangMember2]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[You decide to give Hammer some backup and move to help him fight the gang members.]]></combatant>
-						<combatant id="hammer"><![CDATA[[hammer.speech(Let's make this quick,)] Hammer grunts, before pointing his shotgun towards the enemy.]]></combatant>
-						<combatant id="gangMember1"><![CDATA[[gangMember1.speech(Who the fuck are you?!)] the gang member demands.]]></combatant>
-						<combatant id="gangMember2"><![CDATA[[gangMember2.speech(They look pretty serious!)] the second gang member calls out to [gangMember2.her] comrade.]]></combatant>
+						<combatant id="pc"><![CDATA[Ты решаешь поддержать Молота и бросаешься на помощь, чтобы помочь ему сразиться с членами банды.]]></combatant>
+						<combatant id="hammer"><![CDATA[[hammer.speech(Давайте покончим с этим побыстрее,)] — ворчит Молот, направляя дробовик на врагов.]]></combatant>
+						<combatant id="gangMember1"><![CDATA[[gangMember1.speech(Ты еще кто за хер?!)] — требует бандит.]]></combatant>
+						<combatant id="gangMember2"><![CDATA[[gangMember2.speech(Они выглядят довольно серьезно!)] — выкрикивает второй бандит своему товарищу [gangMember2.her].]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 					<submitBlocked><![CDATA[true]]></submitBlocked>
@@ -679,12 +679,12 @@
 						<enemy leader="false"><![CDATA[gangMember3]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[You decide to give Hammer and Ghost some backup and move to help them fight the gang members.]]></combatant>
-						<combatant id="hammer"><![CDATA[[hammer.speech(You're finished,)] Hammer barks as he raises his shotgun towards the nearest gang member.]]></combatant>
-						<combatant id="ghost"><![CDATA[[ghost.speech(This is our territory now,)] Ghost says in an attempt to make it seem like you're from a rival gang.]]></combatant>
-						<combatant id="gangMember1"><![CDATA[[gangMember1.speech(Fuck you!)] [gangMember1.name] shouts.]]></combatant>
-						<combatant id="gangMember2"><![CDATA[[gangMember2.speech(I'll fuck you up!)] [gangMember2.name] roars as [gangMember2.she] rushes forwards.]]></combatant>
-						<combatant id="gangMember3"><![CDATA[[gangMember3.speech(Let's do this!)] [gangMember3.name] cries.]]></combatant>
+						<combatant id="pc"><![CDATA[Ты решаешь поддержать и Молота, и Призрака, бросаясь на помощь, чтобы помочь им сразиться с членами банды.]]></combatant>
+						<combatant id="hammer"><![CDATA[[hammer.speech(Ты спекся,)] — рявкает Хаммер, вскидывая дробовик в сторону ближайшего бандита.]]></combatant>
+						<combatant id="ghost"><![CDATA[[ghost.speech(Теперь это наша территория,)] — говорит Гост, пытаясь создать впечатление, будто ты из вражеской банды.]]></combatant>
+						<combatant id="gangMember1"><![CDATA[[gangMember1.speech(Пошел нахуй!)] — выкрикивает [gangMember1.name].]]></combatant>
+						<combatant id="gangMember2"><![CDATA[[gangMember2.speech(Я тебя в порошок сотру!)] — ревет [gangMember2.name], когда [gangMember2.she] бросается вперед.]]></combatant>
+						<combatant id="gangMember3"><![CDATA[[gangMember3.speech(Ну, погнали!)] — вопит [gangMember3.name].]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 					<submitBlocked><![CDATA[true]]></submitBlocked>
@@ -858,11 +858,11 @@
 						<enemy leader="false"><![CDATA[nir]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[You decide to give Hammer and Ghost some backup and move to help them fight Angelixx's bodyguards.]]></combatant>
-						<combatant id="hammer"><![CDATA[[hammer.speech(I'll put you down!)] Hammer barks.]]></combatant>
-						<combatant id="ghost"><![CDATA[[ghost.speech(You don't stand a chance,)] Ghost teases.]]></combatant>
-						<combatant id="sleip"><![CDATA[[sleip.speech(Surrender now and I'll go easy on you!)] [sleip.name] shouts.]]></combatant>
-						<combatant id="nir"><![CDATA[[nir.speech(We'll be rewarded for beating you!)] [nir.name] gleefully exclaims.]]></combatant>
+						<combatant id="pc"><![CDATA[Ты решаешь поддержать Хаммера и Госта и бросаешься на помощь в битве с телохранителями Анжеликсы.]]></combatant>
+						<combatant id="hammer"><![CDATA[[hammer.speech(Сейчас я тебя прихлопну!)] — лает Хаммер.]]></combatant>
+						<combatant id="ghost"><![CDATA[[ghost.speech(У тебя нет ни единого шанса,)] — поддразнивает Гост.]]></combatant>
+						<combatant id="sleip"><![CDATA[[sleip.speech(Сдавайтесь сейчас, и я буду с вами помягче!)] — кричит [sleip.name].]]></combatant>
+						<combatant id="nir"><![CDATA[[nir.speech(Нас вознаградят за то, что мы вас размотаем!)] — радостно восклицает [nir.name].]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 					<submitBlocked><![CDATA[true]]></submitBlocked>

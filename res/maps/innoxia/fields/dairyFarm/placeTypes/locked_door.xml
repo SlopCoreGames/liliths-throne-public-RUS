@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Locked Door]]></name>
-	<tooltipDescription><![CDATA[A locked door bars anyone from progressing further down the corridor.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the corridor at Evelyx's Dairy]]></virginityLossDescription>
+	<name><![CDATA[Запертая дверь]]></name>
+	<tooltipDescription><![CDATA[Запертая дверь преграждает путь любому, кто захочет пройти дальше по коридору.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре молочной фермы Эвеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_CRIMSON</colour>

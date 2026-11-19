@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[back door]]></name>
-	<tooltipDescription><![CDATA[The back door to the abandoned bakery leads directly out into one of Elis's northern alleyways.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[by the back door to the abandoned bakery in Elis]]></virginityLossDescription>
+	<name><![CDATA[задняя дверь]]></name>
+	<tooltipDescription><![CDATA[Задняя дверь заброшенной пекарни ведет прямиком в один из северных переулков Элиса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у задней двери заброшенной пекарни в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>exit</svgName>
 	<colour>BASE_RED</colour>

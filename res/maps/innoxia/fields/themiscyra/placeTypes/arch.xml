@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Themiscyra Arch]]></name>
-	<tooltipDescription><![CDATA[The entrance to the town of Themiscyra takes the form of a huge, stone archway.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beneath the Themiscyra Arch]]></virginityLossDescription>
+	<name><![CDATA[Арка Фемискиры]]></name>
+	<tooltipDescription><![CDATA[Вход в город Фемискира представляет собой огромную каменную арку.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[под Аркой Фемискиры]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

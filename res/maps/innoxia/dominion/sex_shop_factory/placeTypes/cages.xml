@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[cages]]></name>
-	<tooltipDescription><![CDATA[Dozens of cages, each large enough to hold twenty people, have been constructed in this area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside the cages in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[клетки]]></name>
+	<tooltipDescription><![CDATA[На этой территории возведено множество клеток, каждая из которых достаточно велика, чтобы вместить двадцать человек.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с клетками на фабрике под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[assembly line B]]></name>
-	<tooltipDescription><![CDATA[Continuing down the assembly line, the silicone limbs, torsos, and heads are connected to one another, forming complete dolls.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the back of Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[сборочная линия Б]]></name>
+	<tooltipDescription><![CDATA[Продолжая путь вдоль сборочной линии, можно увидеть, как силиконовые конечности, торсы и головы соединяются друг с другом, превращаясь в готовых кукол.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в задней части «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

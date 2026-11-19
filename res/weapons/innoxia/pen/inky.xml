@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[Перья Инки]]></namePlural>
 		<description><![CDATA[Эта изысканная перьевая ручка таит в себе невероятно мощное заклинание. Если перед тем, как снять колпачок, трижды провернуть его, на врагов владельца обрушивается аркана-сущность, известная лишь как «Инка»...]]></description>
 		<attackDescriptor>poke</attackDescriptor>
-		<attackTooltipDescription>Poke [npc2.name] with your pen.</attackTooltipDescription>
+		<attackTooltipDescription>Ткни [npc2.name] своей ручкой.</attackTooltipDescription>
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>
 		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] перо Инки и [npc.verb(get)] готовым использовать его в бою.]]></equipText>

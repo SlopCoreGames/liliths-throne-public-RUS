@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[A concrete corridor runs through the storage area and connects the elevator to the rest of the factory.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in a corridor in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Бетонный коридор тянется через складскую зону, соединяя лифт с остальной частью фабрики.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре фабрики под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

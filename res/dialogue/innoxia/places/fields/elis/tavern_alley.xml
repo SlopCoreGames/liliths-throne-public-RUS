@@ -134,13 +134,13 @@
 		<travelDisabled>false</travelDisabled>
 		<responseTabs>
 			<tab index="0"><![CDATA[
-				Talk
+				Поговорить
 			]]></tab>
 			<tab index="1"><![CDATA[
-				Drinks
+				Напитки
 			]]></tab>
 			<tab index="2"><![CDATA[
-				Food
+				Еда
 			]]></tab>
 		</responseTabs>
 		<responses>
@@ -508,7 +508,7 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Пивная сучка (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer from the beer-bitch's tits. #ELSE You can't afford a pint of beer from the beer-bitch's tits... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Заказать пинту пива из сисек пивной сучки. #ELSE Тебе не по карману пинта пива из сисек пивной сучки... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -526,7 +526,7 @@
 				<responseTitle><![CDATA[
 					[beerBitch2.Name] (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)
 				]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer from [beerBitch2.namePos] tits. #ELSE You can't afford a pint of beer from [beerBitch2.namePos] tits... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Заказать пинту пива из сисек [beerBitch2.namePos]. #ELSE Тебе не по карману пинта пива из сисек [beerBitch2.namePos]... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -544,7 +544,7 @@
 				<responseTitle><![CDATA[
 					[beerBitch3.Name] (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)
 				]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer from [beerBitch3.namePos] tits. #ELSE You can't afford a pint of beer from [beerBitch3.namePos] tits... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Заказать пинту пива из сисек [beerBitch3.namePos]. #ELSE Тебе не по карману пинта пива из сисек [beerBitch3.namePos]... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -562,7 +562,7 @@
 				<responseTitle><![CDATA[
 					[beerBitch4.Name] (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)
 				]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer from [beerBitch4.namePos] tits. #ELSE You can't afford a pint of beer from [beerBitch4.namePos] tits... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Заказать пинту пива из сисек [beerBitch4.namePos]. #ELSE Тебе не по карману даже пинта пива с [beerBitch4.namePos] сисек... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -580,7 +580,7 @@
 				<responseTitle><![CDATA[
 					[beerBitch5.Name] (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)
 				]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer from [beerBitch5.namePos] tits. #ELSE You can't afford a pint of beer from [beerBitch5.namePos] tits... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Заказать пинту пива с [beerBitch5.namePos] сисек. #ELSE Тебе не по карману даже пинта пива с [beerBitch5.namePos] сисек... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -596,7 +596,7 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
 				<responseTitle><![CDATA[Водка (#IF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100) Order a glass of vodka. #ELSE You can't afford a glass of vodka... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100) Заказать рюмку водки. #ELSE Тебе не по карману даже рюмка водки... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=100)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -609,7 +609,7 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
 				<responseTitle><![CDATA[Ром (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a glass of rum. #ELSE You can't afford a glass of rum... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Заказать рюмку рома. #ELSE Тебе не по карману даже рюмка рома... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -622,7 +622,7 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
 				<responseTitle><![CDATA[Виски (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a glass of whiskey. #ELSE You can't afford a glass of whiskey... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Заказать рюмку виски. #ELSE Тебе не по карману даже рюмка виски... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -637,7 +637,7 @@
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Рыба с картошкой (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a serving of fish and chips from the main menu. #ELSE You can't afford a serving of fish and chips from the main menu... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Заказать порцию рыбы с картошкой из основного меню. #ELSE Тебе не хватает денег на порцию рыбы с картошкой из основного меню... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
 				<effects><![CDATA[
@@ -653,7 +653,7 @@
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[Сосиски (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a serving of sausages from the main menu. #ELSE You can't afford a serving of sausages from the main menu... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Заказать порцию сосисок из основного меню. #ELSE Тебе не хватает денег на порцию сосисок из основного меню... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
 				<effects><![CDATA[
@@ -669,7 +669,7 @@
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<responseTitle><![CDATA[Бургер (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a burger from the main menu. #ELSE You can't afford a burger from the main menu... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Заказать бургер из основного меню. #ELSE Тебе не хватает денег на бургер из основного меню... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
 				<effects><![CDATA[
@@ -685,7 +685,7 @@
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
 				<responseTitle><![CDATA[Куриный пирог (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Order a chicken pie from the main menu. #ELSE You can't afford a chicken pie from the main menu... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Заказать куриный пирог из основного меню. #ELSE Тебе не хватает денег на куриный пирог из основного меню... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=180)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
 				<effects><![CDATA[
@@ -701,7 +701,7 @@
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
 				<responseTitle><![CDATA[Стейк (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Order a steak from the main menu. #ELSE You can't afford a steak from the main menu... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Заказать стейк из основного меню. #ELSE Тебе не хватает денег на стейк из основного меню... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=250)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
 				<effects><![CDATA[
@@ -1552,8 +1552,8 @@
 						<enemy leader="true"><![CDATA[attacker]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[Refusing to apologise in such a demeaning way, you tell the [attacker.race] that [attacker.sheIs] making a mistake as you prepare to defend yourself.]]></combatant>
-						<combatant id="attacker"><![CDATA[Flashing you a wicked smirk, the [attacker.race] sneers, [attacker.speech(I'll get an apology out of you, one way or another!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Отказываясь извиняться столь унизительным образом, ты говоришь [attacker.race], что [attacker.sheIs] совершает ошибку, готовясь защитить себя.]]></combatant>
+						<combatant id="attacker"><![CDATA[Одарив тебя дерзкой ухмылкой, [attacker.race] скалится: [attacker.speech(Ты еще извинишься передо мной, так или иначе!)]]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>
@@ -1563,7 +1563,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[Рассчитаться (#IF(pc.getMoney()>=200)[style.moneyFormat([#200], span)]#ELSE[style.moneyFormatUncoloured([#200], span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=200) Offer [style.intToString([#200])] flames to pay off the [attacker.race]'s bar tab as an apology. #ELSE You can't afford to pay off the [attacker.race]'s bar tab... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=200) Предложить [style.intToString([#200])] огней, чтобы в качестве извинения оплатить счет [attacker.race] в баре. #ELSE Тебе не хватает средств, чтобы оплатить счет [attacker.race] в баре... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=200)innoxia_places_fields_elis_tavern_alley_seating_attacked_peaceful_end#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.incrementMoney(-200))]
@@ -1982,8 +1982,8 @@
 						<enemy leader="true"><![CDATA[attacker]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[Telling the [attacker.race] that [attacker.sheIs] making a mistake, you prepare to defend yourself from [attacker.herHim].]]></combatant>
-						<combatant id="attacker"><![CDATA[Letting out a wild laugh, the [attacker.race] declares, [attacker.speech(I just want a good fight!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Заявляя [attacker.race], что [attacker.sheIs] ошибается, ты готовишься защищаться от [attacker.herHim].]]></combatant>
+						<combatant id="attacker"><![CDATA[Издавая дикий смех, [attacker.race] провозглашает: [attacker.speech(Я просто хочу хорошей драки!)]]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>

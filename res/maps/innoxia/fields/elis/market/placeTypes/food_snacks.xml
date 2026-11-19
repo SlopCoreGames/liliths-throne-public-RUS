@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Sweets & Treats]]></name>
-	<tooltipDescription><![CDATA[A group of pretty sheep-girls run this snacks stall.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the Farmer's Market in Elis]]></virginityLossDescription>
+	<name><![CDATA[Сладости и лакомства]]></name>
+	<tooltipDescription><![CDATA[Этим прилавком со снеками заправляет группа симпатичных овечьих девочек.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на фермерском рынке в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>food</svgName>
 	<colour>BASE_GREEN_LIGHT</colour>

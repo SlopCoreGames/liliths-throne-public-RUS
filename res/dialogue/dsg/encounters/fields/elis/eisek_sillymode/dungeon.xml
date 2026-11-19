@@ -77,7 +77,7 @@
 						<enemy leader="true"><![CDATA[dsg_larpattacker]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="dsg_larpattacker"><![CDATA[[dsg_larpattacker.speech(You look like a tasty source of XP!)] [dsg_larpattacker.name] shouts.]]></combatant>
+						<combatant id="dsg_larpattacker"><![CDATA[[dsg_larpattacker.speech(Ты выглядишь как чертовски вкусный источник опыта!)] [dsg_larpattacker.name] выкрикивает.]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>

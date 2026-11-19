@@ -310,7 +310,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Привет! Я [npc.name]! В этом клубе просто супер, правда?)]
-			#ELSE [npc.speech(Hello! I'm [npc.name]! I haven't seen you here before!)]
+			#ELSE [npc.speech(Привет! Я [npc.name]! Раньше тебя здесь не видела!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -333,7 +333,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech([pc.Name]! Снова привет! Как ты?!)]
-			#ELSE [npc.speech(Oh, [pc.name]! Hi! How are you?)]
+			#ELSE [npc.speech(О, [pc.name]! Привет! Как ты?)]
 			#ENDIF
 		#ENDIF
 	</p><p>
@@ -370,7 +370,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN скрещивает руки на груди [npc.her] [npc.arms] и гневно смотрит на тебя. [npc.speech(Ты настоящий [pc.bitch], ты же в курсе?!)]
-			#ELSE rolls [npc.her] [npc.eyes] and sighs, [npc.speech(I'm out of here. You're no fun at all.)]
+			#ELSE [npc.her] [npc.eyes] и вздыхает, [npc.speech(Я ухожу. Ты совсем не забавный.)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -407,13 +407,13 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN[npc.She] ведет себя очень уверенно и пару раз перекрикивает тебя в порыве [npc.her] возбуждения.
-			#ELSE[npc.She] listens attentively to what you have to say, before happily continuing the conversation.
+			#ELSE[npc.She] внимательно слушает то, что ты говоришь, после чего с радостью продолжает разговор.
 			#ENDIF
 		#ENDIF
 		 Обменявшись мнениями о состоянии клуба и о том, насколько здесь людно, [npc.name] в итоге начинает немного рассказывать о
 		#IF npc.getHistory()==OCCUPATION_NPC_UNEMPLOYED || npc.getHistory()==OCCUPATION_NPC_UNIVERSITY_STUDENT
 		#THEN [npc.her] друзьях и о том, чем они обычно занимаются в Dominion.
-		#ELSE [npc.her] job as [npc.a_jobName].
+		#ELSE работа [npc.her] в качестве [npc.a_jobName].
 		#ENDIF
 	</p>
 	<p>
@@ -436,7 +436,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN[npc.She] уверенно улыбается тебе, когда [npc.she] слышит твои слова, и, сделав шаг вперед, [npc.she] говорит, что лестью можно добиться чего угодно.
-			#ELSE[npc.She] throws you a playful smile as [npc.she] hears what you've just said, and, stepping forwards, [npc.she] asks you what else you like about [npc.herHim].
+			#ELSE[npc.She] игриво улыбается, когда [npc.she] слышит твои слова, и, сделав шаг вперед, [npc.she] спрашивает, что еще тебе нравится в [npc.herHim].
 			#ENDIF
 		#ENDIF
 		В течение следующих нескольких минут вы вдвоем флиртуете, обмениваясь комплиментами и двусмысленными намеками под фоновую музыку и гул голосов.
@@ -495,7 +495,7 @@
 		#THEN Поднимая свободную [pc.hand] к [npc.her] груди, ты сжимаешь и ласкаешь одну из [npc.her] [npc.breastSize] [npc.breasts], после чего переходишь к тому, чтобы уделить внимание
 			#IF npc.getBreastRows()>1
 			#THEN остальным.
-			#ELSE other one some attention.
+			#ELSE другому немного внимания.
 			#ENDIF
 		#ENDIF
 		#IF npc.isShy()
@@ -503,7 +503,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.Name] издает [npc.a_moan+] в ответ на твои прикосновения, после чего жадно прижимается [npc.herself] к тебе и тяжело дышит тебе в [pc.ear], [npc.speech(~Ах!~ О да, детка, продолжай! ~Ммм!~ Да, именно так!)]
-			#ELSE [npc.Name] lets out [npc.a_moan+] in response to your touch, before leaning in against you and panting heavily into your [pc.ear], [npc.speech(~Aah!~ Yes... Keep going!)]
+			#ELSE [npc.Name] издает [npc.a_moan+] в ответ на твои прикосновения, после чего прижимается к тебе и тяжело дышит тебе в [pc.ear], [npc.speech(~Аах!~ Да... Продолжай!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -521,7 +521,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Какого черта?! Оставь свои [pc.hands] при себе!)]
-			#ELSE [npc.speech(Hey! Cut that out! Keep your [pc.hands] to yourself!)]
+			#ELSE [npc.speech(Эй! Прекрати! Оставь свою [pc.hands] при себе!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -616,7 +616,7 @@
 				#ELSE
 					#IF npc.hasVagina()
 					#THEN [npc.her] киска
-					#ELSE [npc.her] genderless mound
+					#ELSE бесполое возвышение [npc.her]
 					#ENDIF
 				#ENDIF
 			#ENDIF
@@ -894,7 +894,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Мне пора сваливать, но мы ведь еще увидимся, да?)]
-			#ELSE [npc.speech(I need to leave now, but I'll see you again, won't I?)]
+			#ELSE [npc.speech(Мне пора идти, но мы ведь еще увидимся, верно?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -912,7 +912,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Всё, мне пора сваливать. Трахнулся ты довольно паршиво, но я бы не отказалась повторить. Увидимся здесь как-нибудь ещё, ладно?)]
-			#ELSE [npc.speech(I need to leave now. I don't really mind too much about the disappointing sex, so I'll see you again, won't I?)]
+			#ELSE [npc.speech(Мне пора идти. Меня не особо расстроил этот посредственный секс, так что мы ведь еще увидимся, верно?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -955,7 +955,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN[npc.speech(Ладно. Раз так, то и ты иди нахер, чертов [pc.bitch].)] [npc.name] огрызается, сверля тебя взглядом мгновение, прежде чем развернуться на [npc.her] каблуках и [npc.her] уйти.
-			#ELSE[npc.speech(Eugh. What [pc.a_bitch]. Fuck you too.)] [npc.name] snaps, before quickly turning and taking [npc.her] leave.
+			#ELSE[npc.speech(Фу, ну и [pc.a_bitch]. Иди ты нахер тоже.)] [npc.name] огрызается, после чего быстро разворачивается и [npc.her] уходит.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1021,7 +1021,7 @@
 	
 	<htmlContent tag="WATERING_HOLE_BAR_KALAHARI_INTRO"><![CDATA[
 	<p>
-	[kalahari.speech(Приветик, дорогуша!)] — говорит львица, делая шаг навстречу. [kalahari.speech(Что-то я тебя раньше здесь не #IFpc.isFeminine()#THENpretty#ELSEhandsome#ENDIF face in here before!)]
+	[kalahari.speech(Приветик, дорогуша!)] — говорит львица, делая шаг навстречу. [kalahari.speech(Что-то я тебя раньше здесь не #IFpc.isFeminine()#THENpretty#ELSEhandsome#ENDIF было в этом месте раньше!)]
 	</p>
 	<p>
 	[pc.speech(Я здесь впервые,)] — отвечаешь ты, отвечая на дружелюбную улыбку львицы.
@@ -1074,7 +1074,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Ого! Полегче!)]
-			#ELSE [npc.speech(Hey! Calm down!)]
+			#ELSE [npc.speech(Эй! Успокойся!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1098,7 +1098,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Какого черта?! Оставь свои [pc.hands] при себе!)]
-			#ELSE [npc.speech(Hey! Cut that out! Keep your [pc.hands] to yourself!)]
+			#ELSE [npc.speech(Эй! Прекрати! Оставь свою [pc.hands] при себе!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1274,7 +1274,7 @@
 	
 	<htmlContent tag="WATERING_HOLE_KALAHARI_BREAK_FLIRT"><![CDATA[
 	<p>
-		Подвинувшись вплотную к Kalahari, ты ослепительно улыбаешься ей... #IFpc.isFeminine()#THENseductive#ELSEcharming#ENDIF smile, before complimenting her on her appearance. The lioness blushes a little as she hears what you have to say, before retorting with a flattering remark of her own.
+		Подвинувшись вплотную к Kalahari, ты ослепительно улыбаешься ей... #IFpc.isFeminine()#THENseductive#ELSEcharming#ENDIF улыбается, прежде чем сделать ей комплимент. Львица слегка краснеет, услышав твои слова, а затем отвечает ответным льстивым замечанием.
 	</p>
 	<p>
 		Когда вы двое начинаете флиртовать, Kalahari пододвигается чуть ближе, потирая свою ногу о твою и томно глядя тебе в глаза. Это продолжается несколько минут, после чего она слегка отстраняется на диване, ожидая твоего следующего шага...
@@ -1297,7 +1297,7 @@
 	
 	<htmlContent tag="WATERING_HOLE_KALAHARI_BREAK_GROPE"><![CDATA[
 	<p>
-		Глаза Kalahari, огромные [kalahari.eyeColour], полны пылающего, покорного желания. Ты прижимаешься к ней всем телом, кладя одну [pc.hand] ей на бедро, и... #IFpc.getArmRows()==1#THENthe other#ELSEanother#ENDIF on her [kalahari.breasts+].
+		Глаза Kalahari, огромные [kalahari.eyeColour], полны пылающего, покорного желания. Ты прижимаешься к ней всем телом, кладя одну [pc.hand] ей на бедро, и... #IFpc.getArmRows()==1#THENthe other#ELSEanother#ENDIF на её [kalahari.breasts+].
 	</p>
 	<p>
 		[kalahari.speech(~Ммм~ Хочешь взглянуть?)] Kalahari хихикает, и её голос так и сочится похотью. Ответив утвердительно, ты ухмыляешься, пока Kalahari задирает свой топ, позволяя своей [kalahari.breasts+] свободно подпрыгивать.
@@ -1569,7 +1569,7 @@
 				#ELSE
 					#IF pc.hasVagina()
 					#THEN твоя киска.
-					#ELSE your genderless mound.
+					#ELSE твою бесполую плоть.
 					#ENDIF
 				#ENDIF
 			#ENDIF
@@ -1779,7 +1779,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Какого черта?! Оставь свои [pc.hands] при себе!)]
-			#ELSE [npc.speech(Hey! Cut that out! Keep your [pc.hands] to yourself!)]
+			#ELSE [npc.speech(Эй! Прекрати! Оставь свою [pc.hands] при себе!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1876,7 +1876,7 @@
 		Чувствуя возбуждение и жажду доставить удовольствие чьим-то чужим членам, ты заходишь в забрызганную спермой кабинку. Заметив твое появление, кто-то быстро заходит в соседнюю кабинку и тут же просовывает [npc.her] [npc.a_cock+] сквозь отверстие. Когда ты смотришь на [npc.cock+], его владелец
 		#IFnpc.isFeminine()
 		#THEN резко выкрикивает приказ,
-		#ELSE lets out a deep grunt,
+		#ELSE издает глубокое ворчание,
 		#ENDIF
 		 [game.random(
 		[npc.speech(Давай, шлюшка, за дело!)]
@@ -1989,7 +1989,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Мне пора сваливать, но мы ведь еще увидимся, да?)]
-			#ELSE [npc.speech(I need to leave now, but I'll see you again, won't I?)]
+			#ELSE [npc.speech(Мне пора идти, но мы ведь еще увидимся, верно?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2007,7 +2007,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Всё, мне пора сваливать. Трахнулся ты довольно паршиво, но я бы не отказалась повторить. Увидимся здесь как-нибудь ещё, ладно?)]
-			#ELSE [npc.speech(I need to leave now. I don't really mind too much about the disappointing sex, so I'll see you again, won't I?)]
+			#ELSE [npc.speech(Мне пора идти. Меня не особо расстроил этот посредственный секс, так что мы ведь еще увидимся, верно?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2050,7 +2050,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN[npc.speech(Ладно. Раз так, то и ты иди нахер, чертов [pc.bitch].)] [npc.name] огрызается, сверля тебя взглядом, прежде чем развернуться на [npc.her] пятке и стремительно выйти из комнаты.
-			#ELSE[npc.speech(Eugh. What [pc.a_bitch]. Fuck you too.)] [npc.name] snaps, before quickly turning and taking [npc.her] leave.
+			#ELSE[npc.speech(Фу, ну и [pc.a_bitch]. Иди ты нахер тоже.)] [npc.name] огрызается, после чего быстро разворачивается и [npc.her] уходит.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2094,7 +2094,7 @@
 		[pc.Walking] Перейдя на другую сторону зала, ты останавливаешься, чтобы рассмотреть плакаты, обклеившие всю стену. Большинство из них рекламные: на них красуются музыкальные группы, новинки косметики и одежды или изображения различных блюд и напитков.
 </p>
 	<p>
-		Однако некоторые плакаты носят более зловещий характер — на них красуются фотороботы опасных на вид преступников. Разыскиваемых за самые разные преступления, от грабежей и #IF(game.isNonConEnabled())rape#ELSEassault#ENDIF to kidnapping and sedition, the posters promise that these criminals will be caught eventually, and anyone caught aiding them will join them in a punishment of lifetime enslavement.
+		Однако некоторые плакаты носят более зловещий характер — на них красуются фотороботы опасных на вид преступников. Разыскиваемых за самые разные преступления, от грабежей и #IF(game.isNonConEnabled())изнасилование#ELSEнападение#ENDIF похищениям и мятежам, плакаты обещают, что эти преступники будут рано или поздно пойманы, а любой, кто будет уличен в помощи им, разделит их участь — пожизненное рабство.
 	</p>
 	<p>
 		Последний примечательный плакат изображает идиллическую сцену: счастливую семью, живущую в сельской местности. Надпись под ним обещает лучшую жизнь любому, кто решится покинуть Dominion и отправиться в плавание через «Бескрайнее море» в далекие земли.
@@ -2124,9 +2124,9 @@
 		#THEN
 			#IFnpc.isVulnerableToArcaneStorm()
 			#THEN Из-за непрекращающегося аркана-шторма [npc.name] то и дело пытается затащить тебя в сторону, чтобы заняться сексом, но ты твердо намерен добраться до дома, прежде чем что-то начнется, и, увлекая за собой [npc.herHim], продолжаешь путь домой.
-			#ELSE Although there's an ongoing arcane storm, [npc.name] is just as unaffected by it as you, and the two of you chat happily with one another as you travel back home.
+			#ELSE Хотя бушует аркана-шторм, [npc.name] страдает от него не больше тебя, и вы весело болтаете друг с другом по пути домой.
 			#ENDIF
-		#ELSE The journey is pretty uneventful, and you chat happily with one another as you travel back home.
+		#ELSE Путешествие проходит довольно спокойно, и вы весело болтаете друг с другом по пути домой.
 		#ENDIF
 	</p><p>
 	Вскоре ты уже поднимаешься по ступеням к парадному входу особняка, и [npc.name] замирает на [npc.her] следах, когда [npc.she] восклицает,		#IF npc.isShy()
@@ -2134,7 +2134,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Ого! Ты живешь здесь?! Это место просто колоссальное!)]
-			#ELSE [npc.speech(Oh wow, you live here?! It's huge...)]
+			#ELSE [npc.speech(Ого, ты здесь живешь?! Тут просто огромный дом...)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2228,7 +2228,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Мне пора сваливать, но мы ведь еще увидимся в клубе, верно?)]
-			#ELSE [npc.speech(I need to leave now, but I'll see you at the club another time, won't I?)]
+			#ELSE [npc.speech(Мне пора бежать, но мы еще увидимся в клубе, верно?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2246,7 +2246,7 @@
 		#ELSE
 			#IF npc.isConfident()
 			#THEN [npc.speech(Мне пора сваливать. Ты в сексе довольно паршивый, но я бы всё равно не отказалась увидеться снова. Пересечёмся в клубе как-нибудь, ладно?)]
-			#ELSE [npc.speech(I need to leave now. I don't really mind too much about the disappointing sex, so I'll see you at the club again, won't I?)]
+			#ELSE [npc.speech(Мне пора. На разочаровывающий секс я особо не обижаюсь, так что еще увидимся в клубе, идет?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2381,7 +2381,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Давай, [pc.babe]! Весь вечер пялюсь на твое горячее тело, и у меня уже всё горит внутри. Вышибалам плевать, если кто-то трахается в туалетах, так что пошли сделаем это там,)] [npc.name] грубо заявляет, прежде чем схватить тебя за [pc.hand] и потащить за собой, вслед за [npc.herHim], пока [npc.she] направляется к уборным. [npc.speech(Надеюсь, ты получше того кобеля, что был здесь до тебя!)]
-			#ELSE [npc.speech(Come on, [pc.name], let's go have some fun!)] [npc.name] says, before taking your [pc.hand] in [npc.hers] and setting off towards the toilets. [npc.speech(The bouncers don't care about people fucking in there!)]
+			#ELSE [npc.speech(Давай, [pc.name], пойдем повеселимся!)] [npc.name] говорит это, прежде чем взять твою [pc.hand] в [npc.hers] и направиться к туалетам. [npc.speech(Вышибалам плевать, если там кто-то трахается!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2401,7 +2401,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Эй, [pc.babe]! Выглядишь совсем одиноко, и я прямо вижу, что тебе хочется по-настоящему оторваться. Я — [npc.name], и можешь провести этот вечер со мной, идет?)]
-			#ELSE [npc.speech(Hello! I saw you standing all alone over here, and thought you could use some company. I'm [npc.name], by the way, do you want to hang out together?)]
+			#ELSE [npc.speech(Привет! Увидела, что ты стоишь тут совсем один, и подумала, что тебе не помешает компания. Кстати, я [npc.name], хочешь потусить вместе?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2428,7 +2428,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Эй, [pc.babe]! Опять ищешь приключений на свою голову, а? Ну так что, сегодня снова будешь со мной, идет?)]
-			#ELSE [npc.speech(Hi, [pc.name]! I saw you standing all alone, and thought you might want some company. You want to hang out together again?)]
+			#ELSE [npc.speech(Привет, [pc.name]! Заметила, что ты стоишь один, и решила, что тебе может пригодиться компания. Хочешь еще раз потусить вместе?)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2505,12 +2505,12 @@
 		#THEN
 			#IF pc.isFeminine()
 			#THEN [npc.speech(Давай я угощу тебя выпивкой, [pc.name]. Тут почти всё довольно крепкое, но есть еще «Кошачья прихоть». Тебе ведь нравится такое, да?)] — спрашивает [npc.name], улыбаясь тебе и ожидая ответа [npc.she].
-			#ELSE [npc.speech(Let me buy you a drink, [pc.name]. Most of the stuff they sell here is pretty potent, but they also offer Canine's Crush. You like that, right?)] [npc.name] asks, smiling at you as [npc.she] awaits your response.
+			#ELSE [npc.speech(Позволь угостить тебя выпивкой, [pc.name]. Почти всё, что здесь продают, довольно крепкое, но у них есть и «Собачий кайф». Тебе ведь такое нравится?)] [npc.name] спрашивает, улыбаясь тебе, пока [npc.she] ждет твоего ответа.
 			#ENDIF
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Я сейчас достану тебе выпивку, [pc.babe]! И никакой этой слабой херни, ясно? Тут продают ром «Черная крыса», так что я возьму тебе бокал этого пойла,)] — заявляет [npc.name], после чего разворачивается и пытается привлечь внимание одной из барменш-зебр. [npc.speech(Эй, ну же! Сюда, я хочу заказать!)]
-			#ELSE [npc.speech(Would you like a drink, [pc.name]? They sell Wolf Whiskey here, which is far better than all their other stuff. Here, let me order you a glass,)] [npc.name] says, before turning and trying to get the attention of one of the zebra-girl barmaids.
+			#ELSE [npc.speech(Хочешь выпить, [pc.name]? Здесь продают Волчий Виски, и он куда лучше всего остального. Давай, я закажу тебе бокал,)] [npc.name] говорит, прежде чем повернуться и попытаться привлечь внимание одной из официанток-зебр.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2566,7 +2566,7 @@
 		Одарив тебя очаровательной улыбкой, [npc.name] поворачивается к бару и, привлекая внимание ближайшей зебродевушки-официантки, заказывает
 		#IF npc.isFeminine()
 		#THEN два бокала этого сливочного алкогольного напитка.
-		#ELSE one glass of the creamy alcoholic beverage, and one bottle of Canine Crush for [npc.herself].
+		#ELSE один бокал сливочного алкогольного напитка и одну бутылку «Собачьего Краша» для [npc.herself].
 		#ENDIF
 	</p>
 	<p>
@@ -2589,7 +2589,7 @@
 		Одарив тебя очаровательной улыбкой, [npc.name] поворачивается к бару и, привлекая внимание ближайшей зебродевушки-официантки, заказывает
 		#IF npc.isFeminine()
 		#THEN одну бутылку «Собачьего хмеля» и один бокал «Кошачьего каприза» для [npc.herself].
-		#ELSE two bottles of Canine Crush.
+		#ELSE две бутылки «Собачьего Краша».
 		#ENDIF
 	</p>
 	<p>
@@ -2663,7 +2663,7 @@
 		#THEN Опершись на барную стойку, [npc.name] начинает с тобой флиртовать, осыпая комплиментами твою внешность и манеры. [npc.Her] тщательно подбирает очаровательные слова, и [npc.she] не спешит переходить к физическому контакту, предпочитая подождать и оценить твою реакцию, прежде чем зайти дальше...
 		#ELSE
 			#IF npc.isSelfish()
-#THEN Опершись о барную стойку, [npc.name] начинает грубо флиртовать с тобой, осыпая довольно прямолинейными комплиментами твою фигуру и внешность в целом. И хотя [npc.her] не отличается особым изяществом, её слова кажутся искренними, но прежде чем ты успеваешь ответить на такой беспардонный флирт, [npc.she] стремительно переходит к физическому контакту. Положив одну [npc.hand] на твою [pc.hips+], [npc.she] внезапно ведет [npc.her] вниз, чтобы сжать твою [pc.ass+], и расплывается в улыбке, когда [npc.she] шепчет, что [npc.she] хотела бы сделать гораздо больше, чем просто ласкать её...			#ELSE Leaning against the bar's counter, [npc.name] starts flirting with you, offering you compliments on your appearance and mannerisms. [npc.Her] words are a little crude at times, but [npc.her] flattery does seem to be completely genuine, and, as further proof of [npc.her] good intentions, [npc.she] chooses to wait and judge your response before taking things any further...
+#THEN Опершись о барную стойку, [npc.name] начинает грубо флиртовать с тобой, осыпая довольно прямолинейными комплиментами твою фигуру и внешность в целом. И хотя [npc.her] не отличается особым изяществом, её слова кажутся искренними, но прежде чем ты успеваешь ответить на такой беспардонный флирт, [npc.she] стремительно переходит к физическому контакту. Положив одну [npc.hand] на твою [pc.hips+], [npc.she] внезапно ведет [npc.her] вниз, чтобы сжать твою [pc.ass+], и расплывается в улыбке, когда [npc.she] шепчет, что [npc.she] хотела бы сделать гораздо больше, чем просто ласкать её...			#ELSE Опершись на барную стойку, [npc.name] начинает флиртовать с тобой, осыпая комплиментами твою внешность и манеры. Слова [npc.Her] временами бывают слегка грубоватыми, но лесть [npc.her] кажется совершенно искренней, и, в качестве еще одного доказательства добрых намерений [npc.her], [npc.she] решает подождать и оценить твою реакцию, прежде чем заходить дальше...
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2742,7 +2742,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN Внезапно сделав шаг вперед и прижавшись к тебе [npc.herself], [npc.name] быстро кладет [npc.her] [npc.hands] на твою [pc.hips+], а затем ведет [npc.her] вниз, обхватывая твою [pc.ass+]. Наклонившись вперед, [npc.she] [npc.moans], [npc.speech(Ммм, твоя горячая задница сегодня принадлежит мне!)]
-			#ELSE Suddenly stepping forwards and pressing [npc.herself] against you, [npc.name] quickly places [npc.her] [npc.hands] on your [pc.hips+], before starting to slide [npc.her] touch down and around towards your [pc.ass+]. Leaning forwards, [npc.she] [npc.moans], [npc.speech(Mmm, you're so sexy...)]
+			#ELSE Внезапно шагнув вперед и прижав [npc.herself] к тебе, [npc.name] быстро кладет [npc.her] [npc.hands] на твои [pc.hips+], после чего начинает медленно вести [npc.her] касание вниз и вокруг твоих [pc.ass+]. Наклонившись вперед, [npc.she] [npc.moans], [npc.speech(Ммм, ты такая сексуальная...)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2758,7 +2758,7 @@
 				#THEN Когда одна из [npc.her] [npc.hands] незаметно подползает, чтобы нежно прощупать твои [pc.ass+], [npc.name] приподнимает [npc.her] другую, чтобы крепко сжать твои [pc.breasts+], вырывая из твоего рта очередной [pc.moan]. Воодушевленная твоей пылкой реакцией, [npc.name] прижимается своими [npc.her] [npc.lips+] к твоим, страстно целуя тебя и продолжая проводить [npc.her] [npc.hands] по твоему телу.
 				#ELSE
 					#IF npc.isSelfish()
-#THEN Спустя мгновение, когда [npc.her] и [npc.hands] жадно ощупали твою [pc.ass+], [npc.name] переключает [npc.her] внимание на твою грудь. Отпустив твою [pc.ass], [npc.she] быстро тянется вверх, чтобы крепко и властно сжать твои [pc.breasts+], вырывая из твоего рта очередной [pc.moan]. Воодушевлённая твоим пылким откликом, [npc.she] властно прижимает [npc.her] [npc.lips+] к твоим, грубо целуя тебя и продолжая ощупывать и ласкать каждый сантиметр твоего тела.					#ELSE As one of [npc.her] [npc.hands] slip around to greedily grope your [pc.ass+], [npc.name] lifts [npc.her] other one up to give your [pc.breasts+] a firm squeeze, drawing yet another [pc.moan] out of your mouth. Encouraged by your eager response, [npc.name] dominantly presses [npc.her] [npc.lips+] against yours, passionately kissing you while continuing to run [npc.her] [npc.hands] all over your body.
+#THEN Спустя мгновение, когда [npc.her] и [npc.hands] жадно ощупали твою [pc.ass+], [npc.name] переключает [npc.her] внимание на твою грудь. Отпустив твою [pc.ass], [npc.she] быстро тянется вверх, чтобы крепко и властно сжать твои [pc.breasts+], вырывая из твоего рта очередной [pc.moan]. Воодушевлённая твоим пылким откликом, [npc.she] властно прижимает [npc.her] [npc.lips+] к твоим, грубо целуя тебя и продолжая ощупывать и ласкать каждый сантиметр твоего тела.					#ELSE Пока одна из [npc.her] [npc.hands] скользит к тебе, жадно ощупывая твои [pc.ass+], [npc.name] приподнимает [npc.her] другую, чтобы крепко сжать твои [pc.breasts+], вырывая из твоего рта очередной [pc.moan]. Воодушевленная твоим пылким откликом, [npc.name] властно прижимает [npc.her] [npc.lips+] к твоим, страстно целуя тебя и продолжая проводить [npc.her] [npc.hands] по всему твоему телу.
 					#ENDIF
 				#ENDIF
 		#ELSE
@@ -2767,7 +2767,7 @@
 				#ELSE
 					#IF npc.isSelfish()
 					#THEN Воодушевленная твоим похотливым стоном, [npc.she] начинает грубо сжимать и ощупывать твои [pc.ass+]. Когда ты начинаешь издавать очередной [pc.moan], [npc.she] властно прижимает свои [npc.her] [npc.lips+] к твоим, грубо целуя тебя и продолжая вовсю наслаждаться игрой с твоими [pc.ass].
-					#ELSE Encouraged by your lewd cry, [npc.she] slips both of [npc.her] [npc.hands] around your waist, before moving down to give your [pc.ass+] a firm, dominant squeeze. As you start to let out another [pc.moan], [npc.name] moves to press [npc.her] [npc.lips+] against yours, passionately kissing you while continuing to grope and squeeze your [pc.ass].
+					#ELSE Воодушевленная твоим похотливым стоном, [npc.she] обвивает оба своих [npc.her] [npc.hands] вокруг твоей талии, а затем опускается ниже, чтобы властно и крепко сжать твои [pc.ass+]. Когда ты начинаешь издавать очередной [pc.moan], [npc.name] прижимается [npc.her] [npc.lips+] к твоим, страстно целуя тебя и продолжая ласкать и сжимать твои [pc.ass].
 					#ENDIF
 				#ENDIF
 		#ENDIF
@@ -2779,7 +2779,7 @@
 #THEN Пока вы двое продолжаете страстно целоваться, [npc.name] водит одной из [npc.her] [npc.hands], начиная тереться о твою внутреннюю сторону бедра. [pc.Moaning] похотливо в [npc.her] рот, ты прижимаешься всё плотнее к [npc.name], пока [npc.her] [npc.fingers] блуждают вверх, лаская и сжимая твою пах. Потирая [npc.her] [npc.hand] о твою [pc.cock+], [npc.she] отстраняется от поцелуя и ухмыляется тебе, пока [npc.she] дразнит: [npc.speech(Ммм, неужели уже встал?)]			#ELSE
 				#IF npc.isSelfish()
 				#THEN Пока вы продолжаете страстно целоваться, [npc.name] двигает одной из [npc.her] [npc.hands], властно вжимаясь в твое внутреннее бедро. [pc.Moaning] похотливо в [npc.her] рот, ты прижимаешься всё плотнее к [npc.name], пока [npc.her] [npc.fingers] блуждают вверх, грубо ощупывая и сжимая твой пах. Потирая [npc.her] [npc.hand] о твое [pc.cock+], [npc.she] отстраняется от поцелуя и, прежде чем начать дразнить, произносит: [npc.speech(Ты уже возбудился, а? Вот подожди, когда я начну тебя трахать...)]
-				#ELSE As the two of you continue making out with one another, [npc.name] moves one of [npc.her] [npc.hands] around to start rubbing up against your inner thigh. [pc.Moaning] lewdly into [npc.her] mouth, you press yourself ever closer against [npc.name] as [npc.her] [npc.fingers] roam up to stroke and squeeze your groin. Rubbing [npc.her] [npc.hand] against your [pc.cock+], [npc.she] pulls back from the kiss, grinning at you as [npc.she] teases, [npc.speech(Mmm, getting hard already? Perhaps we should head somewhere quiet...)]
+				#ELSE Пока вы вдвоем продолжаете страстно целоваться, [npc.name] водит одной из [npc.her] [npc.hands] по твоему бедру, начиная тереться о внутреннюю сторону. [pc.Moaning] похотливо в [npc.her] рот, ты прижимаешься всё плотнее к [npc.name], пока [npc.her] [npc.fingers] блуждают вверх, лаская и сжимая твою пах. Потирая [npc.her] [npc.hand] о твою [pc.cock+], [npc.she] отстраняется от поцелуя и с ухмылкой смотрит на тебя, пока [npc.she] дразнит, [npc.speech(Ммм, уже встал? Может, нам стоит найти какое-нибудь тихое местечко...)]
 				#ENDIF
 			#ENDIF
 		</p>
@@ -2791,7 +2791,7 @@
 				#ELSE
 					#IF npc.isSelfish()
 					#THEN В этот момент [npc.her] опускает [pc.cock+] ниже, [npc.name] сворачивает [npc.her] [npc.fingers] и начинает властно тереться о твои [pc.pussy+]. Наклонившись к тебе, [npc.she] издает властный рык: [npc.speech(Ты там уже вся промокла, а, сучка? Ну и шлюха, позволяешь так использовать себя на людях! Блядь, не терпится трахнуть тебя сегодня ночью...)]
-					#ELSE Moving [npc.her] touch down beneath your [pc.cock+], [npc.name] curls [npc.her] [npc.fingers] up and starts firmly rubbing at your [pc.pussy+]. Letting out a horny [npc.moan], [npc.she] bites [npc.her] [npc.lip] and sighs, [npc.speech(You're getting wet, aren't you [pc.name]? Fuck, you're so fucking hot...)]
+					#ELSE Когда [npc.her] опускает свои [pc.cock+] ниже, [npc.name] сгибает [npc.her] [npc.fingers] и начинает уверенно тереться о твою [pc.pussy+]. Издавая похотливый [npc.moan], [npc.she] кусает [npc.her] [npc.lip] и вздыхает: [npc.speech(Ты ведь уже вся мокрая, [pc.name]? Блядь, ты такая чертовски горячая...)]
 					#ENDIF
 				#ENDIF
 			</p>
@@ -2805,7 +2805,7 @@
 				#ELSE
 					#IF npc.isSelfish()
 					#THEN Пока вы продолжаете страстно целоваться, [npc.name] перемещает одну из своих [npc.her] [npc.hands] к твоему паху, после чего сворачивает [npc.her] [npc.fingers] и начинает властно тереться о твои [pc.pussy+]. Наклонившись к тебе, [npc.she] издает властный рык: [npc.speech(Ты там уже вся промокла, а, сучка? Ну и шлюха, позволяешь так использовать себя на людях! Блядь, не терпится трахнуть тебя сегодня ночью...)]
-					#ELSE As the two of you continue making out with one another, [npc.name] moves one of [npc.her] [npc.hands] around to your groin, before curling [npc.her] [npc.fingers] up and starting to firmly rub at your [pc.pussy+]. Letting out a horny [npc.moan], [npc.she] bites [npc.her] [npc.lip] and sighs, [npc.speech(You're getting wet, aren't you [pc.name]? Fuck, you're so fucking hot...)]
+					#ELSE Пока вы двое продолжаете страстно целоваться, [npc.name] перемещает одну из своих [npc.her] [npc.hands] к твоему паху, после чего сгибает [npc.her] [npc.fingers] и начинает уверенно тереться о твою [pc.pussy+]. Издавая похотливый [npc.moan], [npc.she] кусает [npc.her] [npc.lip] и вздыхает: [npc.speech(Ты ведь уже вся мокрая, [pc.name]? Блядь, ты такая чертовски горячая...)]
 					#ENDIF
 				#ENDIF
 			</p>
@@ -2816,7 +2816,7 @@
 				#ELSE
 					#IF npc.isSelfish()
 					#THEN Пока вы продолжаете страстно целоваться, [npc.name] водит одной из [npc.her] [npc.hands] по твоему паху, а затем подтягивает [npc.her] [npc.fingers] и начинает властно потирать твою бесполую промежность. Наклонившись к тебе, [npc.she] издает властный рык: [npc.speech(У тебя совсем нет гениталий, а? Ну, я всё равно могу использовать твой рот и задницу. Блядь, мне не терпится увидеть, какими будут твои оргазмы, когда там совсем ничего нет...)]
-					#ELSE As the two of you continue making out with one another, [npc.name] moves one of [npc.her] [npc.hands] around to your groin, before curling [npc.her] [npc.fingers] up and starting to firmly rub at your genderless mound. Letting out a horny [npc.moan], [npc.she] bites [npc.her] [npc.lip] and sighs, [npc.speech(Mmm, nothing down there, huh? Well, I'm sure we can have some fun, regardless. Fuck, you're so fucking hot...)]
+					#ELSE Пока вы двое продолжаете страстно целоваться, [npc.name] перемещает одну из своих [npc.her] [npc.hands] к твоему паху, после чего сгибает [npc.her] [npc.fingers] и начинает уверенно тереться о твой бесполый бугорок. Издавая похотливый [npc.moan], [npc.she] кусает [npc.her] [npc.lip] и вздыхает: [npc.speech(Ммм, там ничего нет, да? Ну, я уверена, мы всё равно сможем повеселиться. Блядь, ты такая чертовски горячая...)]
 					#ENDIF
 				#ENDIF
 			</p>
@@ -2835,8 +2835,8 @@
 		#THEN [npc.speech(Прости! Я немного увлекся(ась),)] — застенчиво извиняется [npc.name], разжимая [npc.her] хватку на твоей [pc.hips] и отступая на шаг, чтобы дать тебе немного пространства.
 		#ELSE
 			#IF npc.isSelfish()
-			#THEN [npc.speech(Aww, don't be like that, [pc.babe],)] [npc.name] says, keeping [npc.her] tight grip on your [pc.ass+]. Completely shocked by [npc.her] refusal to listen, you end up pushing [npc.herHim] back once again, this time with a considerable amount of force. Thankfully, [npc.name] has to let go of you in order to steady [npc.herself], and you furiously shout at [npc.herHim] not to try anything like that again.
-			#ELSE [npc.speech(Sorry! I thought that's what you wanted,)] [npc.name] tries to explain, releasing [npc.her] grip on your [pc.hips] and stepping back to give you some space.
+			#THEN [npc.speech(Ой, ну не будь таким, [pc.babe],)] [npc.name] говорит, крепко сжимая [npc.her] на твоем [pc.ass+]. Совершенно потрясенный отказом [npc.her] слушать, ты в итоге снова отталкиваешь [npc.herHim], на этот раз с изрядной силой. К счастью, [npc.name] приходится отпустить тебя, чтобы удержать [npc.herself], и ты яростно кричишь на [npc.herHim], чтобы она больше не смела так делать.
+			#ELSE [npc.speech(Прости! Я думала, ты именно этого и хочешь,)] [npc.name] пытается объяснить, разжимая [npc.her] хватку на твоем [pc.hips] и отступая назад, чтобы дать тебе немного пространства.
 			#ENDIF
 		#ENDIF
 	</p><p>
@@ -2888,7 +2888,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN Сделав шаг вперед, [npc.name] слегка наклоняет [npc.her] голову набок, а затем протягивает руку, чтобы схватить твою [pc.hips] и притянуть тебя к [npc.herHim]. Наклонившись, [npc.she] собирается тебя поцеловать, и всего за мгновение до того, как [npc.her] [npc.lips] прижмутся к твоим, тебе нужно решить: ответить на [npc.her] любовный жест или отстраниться и сказать [npc.herHim], чтобы та не наглела...
-			#ELSE Stepping forwards, [npc.name] tilts [npc.her] head to one side, leaning in against you as [npc.she] tries to give you a kiss. With just a moment before [npc.her] [npc.lips] press against yours, you need to decide whether to return [npc.her] amorous gesture, or to pull away and tell [npc.herHim] to back off...
+			#ELSE Сделав шаг вперед, [npc.name] наклоняет [npc.her] голову набок и прижимается к тебе, пока [npc.she] пытается тебя поцеловать. Всего мгновение отделяет [npc.her] [npc.lips] от соприкосновения с твоими, и тебе нужно решить: ответить ли на [npc.her] любовный жест или отстраниться и велеть [npc.herHim] отойти...
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2902,12 +2902,12 @@
 		#THEN
 			#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, false)
 			#THEN Крепко и властно схватив твою [pc.hips+], [npc.name] втискивает [npc.her] [npc.tongue] тебе в рот, после чего начинает жадно целовать тебя. Когда [npc.her] [npc.tongue+] скользит по твоим, ты чувствуешь, как [npc.her] [npc.hands] обхватывает тебя сзади, чтобы крепко сжать твою [pc.ass+], и, используя этот захват, [npc.she] грубо притягивает тебя к [npc.herHim].
-			#ELSE As your mouth is blocked, [npc.name] has to make do with kissing your [pc.lips] and face. Taking a firm, dominant grip on your [pc.hips+], [npc.her] [npc.hands] reach around to give your [pc.ass+] a firm squeeze, and, using this grip, [npc.she] roughly pulls you up against [npc.herHim].
+			#ELSE Поскольку твой рот перекрыт, [npc.name] приходится довольствоваться поцелуями в твои [pc.lips] и лицо. Крепко и властно сжав твой [pc.hips+], [npc.her] [npc.hands] обхватывает его рукой, чтобы с силой сжать твои [pc.ass+], и, используя этот захват, [npc.she] грубо притягивает тебя к [npc.herHim].
 			#ENDIF
 		#ELSE
 			#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, false)
 			#THEN Крепко схватив твою [pc.hips+], [npc.name] вводит [npc.her] [npc.tongue] тебе в рот, после чего начинает страстно целовать тебя. Когда [npc.her] [npc.tongue+] скользит по твоим, ты чувствуешь, как [npc.her] [npc.hands] обхватывает тебя сзади, чтобы нежно сжать твою [pc.ass+], и, используя этот захват, [npc.she] уверенно притягивает тебя к [npc.herHim].
-			#ELSE As your mouth is blocked, [npc.name] has to make do with kissing your [pc.lips] and face. Taking a firm grip on your [pc.hips+], [npc.her] [npc.hands] reach around to give your [pc.ass+] a gentle squeeze, and, using this grip, [npc.she] roughly pulls you up against [npc.herHim].
+			#ELSE Поскольку твой рот занят, [npc.name] приходится довольствоваться поцелуями в твои [pc.lips] и лицо. Крепко сжав твои [pc.hips+], [npc.her] [npc.hands] обхватывает тебя сзади, чтобы слегка сжать твои [pc.ass+], и, используя этот захват, [npc.she] грубо притягивает тебя к [npc.herHim].
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2924,7 +2924,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN Не желая, чтобы [npc.name] тебя целовала, ты отстраняешься от [npc.herHim] и просишь [npc.herHim] соблюдать [npc.her] дистанцию. Неохотно подчинившись, [npc.she] отходит в сторону, игриво шлепает тебя по [pc.ass+], а затем с похотливой ухмылкой смотрит на тебя. [npc.speech(Да ладно тебе, [pc.name]! Сама себе не соврешь! Ты же знаешь, что хочешь меня...)]
-			#ELSE Not wanting to be kissed by [npc.name], you pull back from [npc.herHim] and tell [npc.herHim] to keep [npc.her] distance. Reluctantly doing as you ask, [npc.she] sighs, [npc.speech(Sure thing, [pc.name]. Perhaps you'll be up for some real fun later on tonight...)]
+			#ELSE Не желая, чтобы [npc.name] тебя целовала, ты отстраняешься от [npc.herHim] и велишь [npc.herHim] держать [npc.her] дистанцию. Нехотя подчиняясь твоей просьбе, [npc.she] вздыхает: [npc.speech(Как скажешь, [pc.name]. Может, позже сегодня ты будешь настроена на настоящее веселье...)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -2938,11 +2938,11 @@
 	<p>
 		#IF npc.isKind()
 		#THEN Опираясь на барную стойку, [npc.name] одаривает тебя очаровательной улыбкой и пытается завязать разговор. Потратив пару минут на обсуждение
-		#ELSE Leaning against the bar, [npc.name] smiles at you, before attempting to strike up a conversation. Spending a couple of minutes talking about
+		#ELSE Опершись о барную стойку, [npc.name] улыбается тебе, прежде чем попытаться завязать разговор. Проведя пару минут за разговором о
 		#ENDIF
 		#IF npc.getHistory()==OCCUPATION_NPC_UNEMPLOYED || npc.getHistory()==OCCUPATION_NPC_UNIVERSITY_STUDENT
 		#THEN некоторых из [npc.her] друзей и их приключений в Dominion, [npc.she] делает паузу, давая тебе возможность вставить свое слово.
-		#ELSE [npc.her] job as [npc.a_jobName], [npc.she] then pauses to offer you a chance to give your input.
+		#ELSE работе [npc.her] в качестве [npc.a_jobName], [npc.she] делает паузу, давая тебе возможность вставить свое слово.
 		#ENDIF
 	</p>
 	]]>
@@ -3005,7 +3005,7 @@
 	<p>
 		#IF npc.isSelfish()
 		#THEN Используя суетливую толпу танцоров как прикрытие, [npc.name] внезапно делает шаг вперед и прижимает [npc.herself] к тебе. Быстро прижав [npc.her] [npc.hands] к твоей [pc.hips+], [npc.she] скользит [npc.her] вниз и вокруг, крепко сжимая твою [pc.ass+]. Наклонившись вперед, [npc.she] [npc.moans] в твою [pc.ear], [npc.speech(Ммм, твоя горячая задница сегодня принадлежит мне!)]
-		#ELSE Using the bustling crowd of dancers as cover, [npc.name] suddenly steps forwards and presses [npc.herself] against you. Quickly placing [npc.her] [npc.hands] on your [pc.hips+], [npc.she] starts to slide [npc.her] touch down and around towards your [pc.ass+]. Leaning forwards, [npc.she] [npc.moans] into your [pc.ear], [npc.speech(Mmm, you're so sexy...)]
+		#ELSE Используя суетливую толпу танцующих как прикрытие, [npc.name] внезапно делает шаг вперед и прижимает [npc.herself] к тебе. Быстро поместив [npc.her] [npc.hands] на твои [pc.hips+], [npc.she] начинает скользить, [npc.her] касаясь и двигаясь вокруг твоих [pc.ass+]. Наклонившись вперед, [npc.she] [npc.moans] в твои [pc.ear], [npc.speech(Ммм, ты такая сексуальная...)]
 		#ENDIF
 	</p>
 	]]>
@@ -3018,12 +3018,12 @@
 		#THEN
 			#IF npc.isSelfish()
 			#THEN Спустя мгновение, когда [npc.her] жадно лапает твою [pc.ass+] обеими [npc.hands], [npc.name] переключает [npc.her] внимание на твою грудь. Отпустив твою [pc.ass], [npc.she] быстро тянется вверх, чтобы крепко и властно сжать твои [pc.breasts+], заставляя тебя издать очередной [pc.moan]. Воодушевленный твоей пылкой реакцией, [npc.she] властно прижимает свои [npc.lips+] к твоим [npc.her], грубо целуя тебя и продолжая бесстыдно ощупывать и ласкать каждый сантиметр твоего тела.
-			#ELSE As one of [npc.her] [npc.hands] slip around to greedily grope your [pc.ass+], [npc.name] lifts [npc.her] other one up to give your [pc.breasts+] a firm squeeze, drawing yet another [pc.moan] out of your mouth. Encouraged by your eager response, [npc.name] dominantly presses [npc.her] [npc.lips+] against yours, passionately kissing you while continuing to run [npc.her] [npc.hands] all over your body.
+			#ELSE Когда одна из [npc.her] [npc.hands] скользит к тебе, жадно ощупывая твои [pc.ass+], [npc.name] приподнимает [npc.her] другую, чтобы крепко сжать твои [pc.breasts+], вырывая из твоего рта очередной [pc.moan]. Воодушевленная твоей пылкой реакцией, [npc.name] властно прижимает [npc.her] [npc.lips+] к твоим, страстно целуя тебя и продолжая проводить [npc.her] [npc.hands] по всему твоему телу.
 			#ENDIF
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN Воодушевленный твоим похотливым стоном, [npc.she] начинает грубо сжимать и лапать твою [pc.ass+]. Когда ты готов издать очередной [pc.moan], [npc.she] властно прижимает свои [npc.lips+] к твоим [npc.her], грубо целуя тебя и продолжая наслаждаться игрой с твоей [pc.ass].
-			#ELSE Encouraged by your lewd cry, [npc.she] slips both of [npc.her] [npc.hands] around your waist, before moving down to give your [pc.ass+] a firm, dominant squeeze. As you start to let out another [pc.moan], [npc.name] moves to press [npc.her] [npc.lips+] against yours, passionately kissing you while continuing to grope and squeeze your [pc.ass].
+			#ELSE Воодушевленная твоим похотливым стоном, [npc.she] обвивает оба своих [npc.her] [npc.hands] вокруг твоей талии, а затем опускается ниже, чтобы властно и крепко сжать твои [pc.ass+]. Когда ты начинаешь издавать очередной [pc.moan], [npc.name] прижимается [npc.her] [npc.lips+] к твоим, страстно целуя тебя и продолжая ласкать и сжимать твои [pc.ass].
 			#ENDIF
 		#ENDIF
 	</p>
@@ -3031,7 +3031,7 @@
 	#THEN
 		<p>
 			#IF npc.isSelfish()
-#THEN Пока вы двое продолжаете страстно целоваться, [npc.name] двигает одной из [npc.her] [npc.hands], чтобы начать властно тереться о твою внутреннюю сторону бедра. [pc.Moaning] похотливо в [npc.her] рот, ты прижимаешься всё плотнее к [npc.name], пока [npc.her] [npc.fingers] бесцеремонно ласкают и сжимают твой пах. Потирая [npc.her] [npc.hand] о твой [pc.cock+], [npc.she] отстраняется от поцелуя, прежде чем дразняще произнести: [npc.speech(Уже встал, да? Подожди только, когда я начну тебя трахать...)]			#ELSE As the two of you continue making out with one another, [npc.name] moves one of [npc.her] [npc.hands] around to start rubbing up against your inner thigh. [pc.Moaning] lewdly into [npc.her] mouth, you press yourself ever closer against [npc.name] as [npc.her] [npc.fingers] roam up to stroke and squeeze your groin. Rubbing [npc.her] [npc.hand] against your [pc.cock+], [npc.she] pulls back from the kiss, grinning at you as [npc.she] teases, [npc.speech(Mmm, getting hard already? Perhaps we should head somewhere quiet...)]
+#THEN Пока вы двое продолжаете страстно целоваться, [npc.name] двигает одной из [npc.her] [npc.hands], чтобы начать властно тереться о твою внутреннюю сторону бедра. [pc.Moaning] похотливо в [npc.her] рот, ты прижимаешься всё плотнее к [npc.name], пока [npc.her] [npc.fingers] бесцеремонно ласкают и сжимают твой пах. Потирая [npc.her] [npc.hand] о твой [pc.cock+], [npc.she] отстраняется от поцелуя, прежде чем дразняще произнести: [npc.speech(Уже встал, да? Подожди только, когда я начну тебя трахать...)]			#ELSE Пока вы двое продолжаете страстно целоваться, [npc.name] водит одной из [npc.her] [npc.hands] по твоему бедру, начиная тереться о внутреннюю сторону. [pc.Moaning] похотливо в [npc.her] рот, ты прижимаешься всё плотнее к [npc.name], пока [npc.her] [npc.fingers] блуждают вверх, лаская и сжимая твой пах. Потирая [npc.her] [npc.hand] о твой [pc.cock+], [npc.she] отрывается от поцелуя и ухмыляется тебе, пока [npc.she] дразнит: [npc.speech(Ммм, уже встал? Может, нам стоит найти какое-нибудь тихое местечко...)]
 			#ENDIF
 		</p>
 		#IF pc.hasVagina()
@@ -3039,7 +3039,7 @@
 			<p>
 				#IF npc.isSelfish()
 				#THEN Вскоре [npc.her] опускает [pc.cock+] ниже, [npc.name] сворачивает [npc.her] [npc.fingers] и начинает властно тереться о твою [pc.pussy+]. Наклонившись к тебе, [npc.she] издает властный рык: [npc.speech(Ты там уже вся промокла, а, сучка? Ну и шлюха, позволяешь так использовать себя на людях! Блядь, не могу дождаться, когда трахну тебя сегодня ночью...)]
-				#ELSE Moving [npc.her] touch down beneath your [pc.cock+], [npc.name] curls [npc.her] [npc.fingers] up and starts firmly rubbing at your [pc.pussy+]. Letting out a horny [npc.moan], [npc.she] bites [npc.her] [npc.lip] and sighs, [npc.speech(You're getting wet, aren't you [pc.name]? Fuck, you're so fucking hot...)]
+				#ELSE Когда [npc.her] опускает [pc.cock+] ниже твоих [npc.name], [npc.her] сворачивается [npc.fingers] и начинает уверенно тереться о твою [pc.pussy+]. Издавая похотливый [npc.moan], [npc.she] кусает [npc.her] [npc.lip] и вздыхает, [npc.speech(Ты ведь уже вся мокрая, [pc.name]? Блядь, ты такая чертовски горячая...)]
 				#ENDIF
 			</p>
 		#ENDIF
@@ -3049,14 +3049,14 @@
 			<p>
 				#IF npc.isSelfish()
 				#THEN Пока вы двое продолжаете страстно целоваться, [npc.name] перемещает одну из [npc.her] [npc.hands] к твоему паху, после чего сворачивает [npc.her] [npc.fingers] и начинает властно тереться о твою [pc.pussy+]. Наклонившись к тебе, [npc.she] издает властный рык: [npc.speech(Ты там уже вся промокла, а, сучка? Ну и шлюха, позволяешь так использовать себя на людях! Блядь, не могу дождаться, когда трахну тебя сегодня ночью...)]
-				#ELSE As the two of you continue making out with one another, [npc.name] moves one of [npc.her] [npc.hands] around to your groin, before curling [npc.her] [npc.fingers] up and starting to firmly rub at your [pc.pussy+]. Letting out a horny [npc.moan], [npc.she] bites [npc.her] [npc.lip] and sighs, [npc.speech(You're getting wet, aren't you [pc.name]? Fuck, you're so fucking hot...)]
+				#ELSE Пока вы двое продолжаете страстно целоваться, [npc.name] перемещает одну из [npc.her] [npc.hands] к твоему паху, после чего сворачивает [npc.her] [npc.fingers] и начинает уверенно тереться о твою [pc.pussy+]. Издавая похотливый [npc.moan], [npc.she] кусает [npc.her] [npc.lip] и вздыхает, [npc.speech(Ты ведь уже вся мокрая, [pc.name]? Блядь, ты такая чертовски горячая...)]
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
 				#IF npc.isSelfish()
 				#THEN Пока вы двое продолжаете страстно целоваться, [npc.name] перемещает одну из [npc.her] [npc.hands] к твоему паху, после чего сворачивает [npc.her] [npc.fingers] и начинает властно тереться о твою безгендерную плоть. Наклонившись к тебе, [npc.she] издает властный рык: [npc.speech(У тебя совсем нет гениталий, да? Ну, я всё равно смогу использовать твой рот и задницу. Блядь, не терпится увидеть, какими будут твои оргазмы, когда там совсем ничего нет...)]
-				#ELSE As the two of you continue making out with one another, [npc.name] moves one of [npc.her] [npc.hands] around to your groin, before curling [npc.her] [npc.fingers] up and starting to firmly rub at your genderless mound. Letting out a horny [npc.moan], [npc.she] bites [npc.her] [npc.lip] and sighs, [npc.speech(Mmm, nothing down there, huh? Well, I'm sure we can have some fun, regardless. Fuck, you're so fucking hot...)]
+				#ELSE Пока вы двое продолжаете страстно целоваться, [npc.name] перемещает одну из [npc.her] [npc.hands] к твоему паху, после чего сворачивает [npc.her] [npc.fingers] и начинает уверенно тереться о твой бесполый бугорок. Издавая похотливый [npc.moan], [npc.she] кусает [npc.her] [npc.lip] и вздыхает, [npc.speech(Ммм, там совсем ничего нет, да? Ну, я уверена, мы всё равно сможем повеселиться. Блядь, ты такая чертовски горячая...)]
 				#ENDIF
 			</p>
 		#ENDIF
@@ -3071,8 +3071,8 @@
 	</p>
 	<p>
 		#IF npc.isSelfish()
-		#THEN [npc.speech(Aww, don't be like that, [pc.babe],)] [npc.name] replies, keeping [npc.her] tight grip on your [pc.ass+]. Completely shocked by [npc.her] refusal to listen, you end up pushing [npc.herHim] back once again, this time with a considerable amount of force. Thankfully, [npc.name] has to let go of you in order to steady [npc.herself], and you furiously shout at [npc.herHim] not to try anything like that again.
-		#ELSE [npc.speech(Sorry! I thought that's what you wanted,)] [npc.name] tries to explain, releasing [npc.her] grip on your [pc.hips] and stepping back to give you some space.
+		#THEN [npc.speech(Ой, ну не будь таким, [pc.babe],)] [npc.name] отвечает, крепко сжимая [npc.her] на твоем [pc.ass+]. Совершенно потрясенный отказом [npc.her] слушать, ты в итоге снова отталкиваешь [npc.herHim], на этот раз с изрядной силой. К счастью, [npc.name] приходится отпустить тебя, чтобы удержать [npc.herself], и ты яростно кричишь на [npc.herHim], чтобы она больше не смела так делать.
+		#ELSE [npc.speech(Прости! Я думала, ты именно этого и хочешь,)] [npc.name] пытается объясниться, разжимая [npc.her] хватку на твоем [pc.hips] и отступая назад, чтобы дать тебе немного пространства.
 		#ENDIF
 	</p><p>
 Попытка [npc.her] прощупать тебя ничуть тебя не забавляет, и ты сердито велишь [npc.name] держать [npc.her] [npc.hands] при [npc.herself]. Высказав всё, что ты думаешь о [npc.herHim], ты быстро остываешь и со вздохом говоришь [npc.name], что не против, если [npc.herHim] и дальше будет вести вас за собой.
@@ -3084,7 +3084,7 @@
 	<p>
 		#IF npc.isSelfish()
 		#THEN Сделав шаг вперед, [npc.name] склоняет [npc.her] голову набок, а затем протягивает руку, чтобы схватить твою [pc.hips] и притянуть тебя к [npc.herHim]. Наклонившись, [npc.she] собирается тебя поцеловать, и всего за мгновение до того, как [npc.her] [npc.lips] прижмутся к твоим, тебе нужно решить: ответить на [npc.her] любовный жест или отстраниться и велеть [npc.herHim] отойти...
-		#ELSE Stepping forwards, [npc.name] tilts [npc.her] head to one side, leaning in against you as [npc.she] tries to give you a kiss. With just a moment before [npc.her] [npc.lips] press against yours, you need to decide whether to return [npc.her] amorous gesture, or to pull away and tell [npc.herHim] to back off...
+		#ELSE Сделав шаг вперед, [npc.name] наклоняет [npc.her] голову набок и прижимается к тебе, пытаясь [npc.she] поцеловать. Всего мгновение отделяет тебя от того, что [npc.her] [npc.lips] прижмутся к твоим, и тебе нужно решить: ответить ли на [npc.her] любовный жест или отстраниться и велеть [npc.herHim] отойти...
 		#ENDIF
 	</p>
 	]]>
@@ -3097,12 +3097,12 @@
 		#THEN
 			#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, false)
 			#THEN Крепко и властно схватив твою [pc.hips+], [npc.name] втискивает [npc.her] [npc.tongue] тебе в рот, после чего начинает жадно целовать тебя. Когда [npc.her] [npc.tongue+] скользит по твоим, ты чувствуешь, как [npc.her] [npc.hands] обхватывает тебя сзади, чтобы крепко сжать твою [pc.ass+], и, используя этот захват, [npc.she] грубо притягивает тебя к [npc.herHim].
-			#ELSE As your mouth is blocked, [npc.name] has to make do with kissing your [pc.lips] and face. Taking a firm, dominant grip on your [pc.hips+], [npc.her] [npc.hands] reach around to give your [pc.ass+] a firm squeeze, and, using this grip, [npc.she] roughly pulls you up against [npc.herHim].
+			#ELSE Поскольку твой рот перекрыт, [npc.name] приходится довольствоваться поцелуями в твои [pc.lips] и лицо. Крепко и властно сжав твой [pc.hips+], [npc.her] [npc.hands] обхватывает его рукой, чтобы с силой сжать твои [pc.ass+], и, используя этот захват, [npc.she] грубо притягивает тебя к [npc.herHim].
 			#ENDIF
 		#ELSE
 			#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, false)
 			#THEN Крепко схватив твою [pc.hips+], [npc.name] вводит [npc.her] [npc.tongue] тебе в рот, после чего начинает страстно целовать тебя. Когда [npc.her] [npc.tongue+] скользит по твоим, ты чувствуешь, как [npc.her] [npc.hands] обхватывает тебя сзади, чтобы нежно сжать твою [pc.ass+], и, используя этот захват, [npc.she] уверенно притягивает тебя к [npc.herHim].
-			#ELSE As your mouth is blocked, [npc.name] has to make do with kissing your [pc.lips] and face. Taking a firm grip on your [pc.hips+], [npc.her] [npc.hands] reach around to give your [pc.ass+] a gentle squeeze, and, using this grip, [npc.she] roughly pulls you up against [npc.herHim].
+			#ELSE Поскольку твой рот занят, [npc.name] приходится довольствоваться поцелуями в твои [pc.lips] и лицо. Крепко сжав твои [pc.hips+], [npc.her] [npc.hands] обхватывает тебя сзади, чтобы слегка сжать твои [pc.ass+], и, используя этот захват, [npc.she] грубо притягивает тебя к [npc.herHim].
 			#ENDIF
 		#ENDIF
 	</p>
@@ -3116,7 +3116,7 @@
 	<p>
 		#IF npc.isSelfish()
 		#THEN Не желая целоваться с [npc.name], ты отстраняешься от [npc.herHim] и требуешь от [npc.herHim] соблюдать [npc.her] дистанцию. Нехотя подчиняясь, [npc.she] отступает в сторону и игриво шлепает тебя по [pc.ass+], после чего с похотливой ухмылкой смотрит на тебя. [npc.speech(Да ладно тебе, [pc.name]! Сама себе не врешь! Ты же знаешь, что хочешь меня...)]
-		#ELSE Not wanting to be kissed by [npc.name], you pull back from [npc.herHim] and tell [npc.herHim] to keep [npc.her] distance. Reluctantly doing as you ask, [npc.she] sighs, [npc.speech(Sure thing, [pc.name]. Perhaps you'll be up for some real fun later on tonight...)]
+		#ELSE Не желая целоваться с [npc.name], ты отстраняешься от [npc.herHim] и велишь [npc.herHim] соблюдать [npc.her]. Неохотно подчиняясь твоей просьбе, [npc.she] вздыхает: [npc.speech(Как скажешь, [pc.name]. Может, позже сегодня ты будешь настроен на настоящее веселье...)]
 		#ENDIF
 	</p>
 	<p>
@@ -3439,7 +3439,7 @@
 	Издавая счастливый [pc.moan], ты прижимаешься к [npc.name], повторяя движения [npc.her] и наклоняя голову набок, пока [npc.her] [npc.lips+] прижимаются к твоим.
 		#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, false)
 		#THEN Обхватив ладонями твою голову, [npc.name] вводит [npc.her] [npc.tongue] тебе в рот и начинает страстно целовать тебя. Когда [npc.her] [npc.tongue+] скользит по твоим губам, ты чувствуешь жар [npc.her] тела, прижатого к твоему, и невольно издаешь довольный, сильно приглушенный вздох.
-		#ELSE As your mouth is blocked, [npc.name] has to make do with kissing your [pc.lips] and face. As [npc.she] reaches up to take hold of the sides of your head, you feel the heat of [npc.her] body pressing against yours, and you can't help but let out a satisfied, and very muffled, sigh.
+		#ELSE Поскольку твой рот заблокирован, [npc.name] приходится довольствоваться поцелуями в твои [pc.lips] и лицо. Когда [npc.she] тянется вверх, чтобы обхватить твою голову ладонями, ты чувствуешь жар тела [npc.her], прижатого к твоему, и не можешь не издать удовлетворенный, хоть и очень приглушенный вздох.
 		#ENDIF
 	</p>
 	<p>
@@ -3452,7 +3452,7 @@
 	<p>
 		#IF npc.isKind()
 		#THEN Не желая, чтобы [npc.name] тебя целовала, ты отстраняешься от [npc.herHim] и просишь [npc.herHim] соблюдать [npc.her] дистанцию. Тут же исполнив твою просьбу, [npc.she] извиняется: [npc.speech(Прости, [pc.name]! Я немного увлеклась и не так почувствовала момент.)]
-		#ELSE Not wanting to be kissed by [npc.name], you pull back from [npc.herHim] and tell [npc.herHim] to keep [npc.her] distance. Reluctantly doing as you ask, [npc.she] sighs, [npc.speech(Sure thing, [pc.name]. Perhaps you'll be up for some real fun later on tonight...)]
+		#ELSE Не желая целоваться с [npc.name], ты отстраняешься от [npc.herHim] и велишь [npc.herHim] соблюдать [npc.her]. Неохотно подчиняясь твоей просьбе, [npc.she] вздыхает: [npc.speech(Как скажешь, [pc.name]. Может, позже сегодня ты будешь настроен на настоящее веселье...)]
 		#ENDIF
 	</p>
 	<p>
@@ -3614,7 +3614,7 @@
 	<p>
 		#IF pc.isFeminine()
 		#THEN [pc.speech(Да пошел ты!)] — кричишь ты, отвешивая [npc.name] звонкую пощечину.
-		#ELSE [pc.speech(Fuck off!)] you shout, roughly pushing [npc.name] away from you.
+		#ELSE [pc.speech(Да пошел ты!)] — кричишь ты, грубо отталкивая [npc.name] от себя.
 		#ENDIF
 	</p>
 	<p>
@@ -3633,7 +3633,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Ну, если ты будешь так себя вести, то ладно. Надеюсь, в следующий раз ты не будешь такой занудой,)] — резко отвечает [npc.name], после чего внезапно разворачивается и уходит вместе с [npc.her].
-			#ELSE [npc.speech(Yeah, sure thing, [pc.name]. I'll catch you around some other time. Take care,)] [npc.name] responds, smiling at you before turning and taking [npc.her] leave.
+			#ELSE [npc.speech(Ну да, конечно, [pc.name]. Увидимся как-нибудь в другой раз. Береги себя,)] — отвечает [npc.name], улыбаясь тебе, прежде чем развернуться и уйти вслед за [npc.her].
 			#ENDIF
 		#ENDIF
 	</p>
@@ -3653,7 +3653,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Ну и пошел ты нахуй, [pc.bitch]. Наслаждайся трахом со своими другими сучками-подружками,)] [npc.name] грубо бросает тебе в ответ, после чего разворачивается и стремительно уходит в другую часть клуба.
-			#ELSE [npc.speech(Well, that was pretty blunt. Whatever. Bye,)] [npc.name] dismissively responds, before turning and taking [npc.her] leave.
+			#ELSE [npc.speech(Ну и грубо же это было. Ладно, неважно. Пока,)] — пренебрежительно отвечает [npc.name], после чего разворачивается и уходит вслед за [npc.her].
 			#ENDIF
 		#ENDIF
 	</p>
@@ -3675,7 +3675,7 @@
 			#THEN Когда вы вдвоем выходите на улицу, перед вами предстает вид валящего снегопада. К счастью, у [npc.name] есть зонт с [npc.herHim], и вы идете плечом к плечу под его защитой, направляясь к дому [npc.her].
 			#ELSE
 				#IF game.getCurrentWeather()==WEATHER_MAGIC_STORM
-#THEN Когда вы вдвоём выходите на улицу, вас встречает грохот арканического грома. [npc.Name] мгновенно поддаётся его возбуждающему воздействию и, без предупреждения, прижимает тебя к [npc.herHim], страстно целуя в [pc.lips]. Немного поцеловав друг друга, ты мягко отстраняешь [npc.herHim], напоминая [npc.herHim] о том, куда вы идёте. Пытаясь привести [npc.her] в чувство, [npc.she] берёт тебя за [pc.hand], и вы оба бегом направляетесь к дому [npc.her], время от времени останавливаясь, чтобы снова поцеловаться.				#ELSE As the two of you step out into the busy street, [npc.name] turns towards you and smiles. Still holding your [pc.hand] in [npc.hers], [npc.she] tells you in what direction [npc.her] house is, and, setting off that way, the two of you make your way to [npc.her] house.
+#THEN Когда вы вдвоём выходите на улицу, вас встречает грохот арканического грома. [npc.Name] мгновенно поддаётся его возбуждающему воздействию и, без предупреждения, прижимает тебя к [npc.herHim], страстно целуя в [pc.lips]. Немного поцеловав друг друга, ты мягко отстраняешь [npc.herHim], напоминая [npc.herHim] о том, куда вы идёте. Пытаясь привести [npc.her] в чувство, [npc.she] берёт тебя за [pc.hand], и вы оба бегом направляетесь к дому [npc.her], время от времени останавливаясь, чтобы снова поцеловаться.				#ELSE Когда вы вдвоем выходите на оживленную улицу, [npc.name] поворачивается к тебе и улыбается. Все еще сжимая твою [pc.hand] в [npc.hers], [npc.she] говорит тебе, в какой стороне находится дом [npc.her], и, отправившись в ту сторону, вы вдвоем направляетесь к дому [npc.her].
 				#ENDIF
 			#ENDIF
 		#ENDIF
@@ -3811,7 +3811,7 @@
 		#ELSE
 			#IF npc.isSelfish()
 			#THEN [npc.speech(Ты слишком уж [pc.a_bitch], чтобы тратить на тебя время. Бывай,)] — бросает [npc.name], резко разворачивается и уходит в толпу.
-			#ELSE [npc.speech(I'm really not having fun, [pc.name]. I'm off. Perhaps try being less of [pc.a_bitch] in the future,)] [npc.name] says, before abruptly turning and heading off into the crowd.
+			#ELSE [npc.speech(Мне совсем не весело, [pc.name]. Я пошла. Может, в следующий раз попробуешь быть не такой [pc.a_bitch],)] — говорит [npc.name], прежде чем резко развернуться и скрыться в толпе.
 			#ENDIF
 		#ENDIF
 	</p>

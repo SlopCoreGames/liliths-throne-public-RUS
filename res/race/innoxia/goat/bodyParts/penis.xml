@@ -33,7 +33,7 @@
 	<transformationDescription><![CDATA[
 		Невольно застонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная оболочка.
 		<br/>[npc.She] теперь [npc.has] [style.boldGoat(козлиный член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldGoat([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE goat#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldGoat(goat cum)].
+		<br/>[npc.She] [npc.has] [style.boldGoat([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ELSE козий#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldGoat(козью сперму)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

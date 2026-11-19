@@ -76,7 +76,7 @@
 	
 	<htmlContent tag="COMBAT_DEFEAT_NO_TF"><![CDATA[
 	<p>
-		Бесы не делают тебе TF. Этого не должно быть, это баг! Пожалуйста, сообщи об этом Innoxia с сообщением: 'impAttackAlpha COMBAT_DEFEAT_NO_TF is being triggered.'
+		Бесы не дают тебе TF. Этого не должно быть, это баг! Пожалуйста, сообщи об этом Innoxia с сообщением: 'impAttackAlpha COMBAT_DEFEAT_NO_TF is being triggered.'
 	</p>
 	]]>
 	</htmlContent>
@@ -247,7 +247,7 @@
 					Почти не имея выбора, кроме как подчиниться, ты слизываешь сперму с [npc.namePos] пальцев
 					#IF pc.isVisiblyPregnant()
 					#THEN.
-					#ELSE, and as you do so, you can't help but wonder if the imp's seed has gotten you pregnant.
+					#ELSE, и в этот момент ты невольно задаешься вопросом, не забеременела ли ты от семени беса.
 					#ENDIF
 					 Быстро заставляемая проглотить соленую жижу, заполнившую рот, ты смотришь вверх, как [npc.name] в последний раз ухмыляется тебе, прежде чем собрать [npc.her] свою банду и исчезнуть в темных туннелях Submission.
 				#ELSE

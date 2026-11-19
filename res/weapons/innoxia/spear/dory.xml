@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[дори]]></namePlural>
 		<description><![CDATA[Длинное копье на деревянном древке, длиной почти в [style.sizes(300)] от острия до конца. Арканное лезвие на конце имеет форму листа, а на противоположном конце расположен арканный шипованный противовес, известный как «сауротер».]]></description> 
 		<attackDescriptor>skewer</attackDescriptor>
-		<attackTooltipDescription>Thrust your dory at [npc2.name] and skewer [npc2.herHim]!</attackTooltipDescription>
+		<attackTooltipDescription>Тыкни дори в [npc2.name] и проткни [npc2.herHim]!</attackTooltipDescription>
 		<rarity>COMMON</rarity> 
 		<weaponSet/> 
 		<equipText><![CDATA[[npc.Name] [npc.verb(take)] в руки [npc.her] дори, пока [npc.she] [npc.verb(ready)] [npc.herself], чтобы использовать её в бою.]]></equipText>

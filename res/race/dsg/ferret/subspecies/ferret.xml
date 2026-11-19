@@ -91,7 +91,7 @@
 	<bookIconName>ferreticon</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName>Playful Ferrets</bookName>
+	<bookName>Игривые хорьки</bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
@@ -118,11 +118,11 @@
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[vallug]]></name>
-			<namePlural><![CDATA[vallug]]></namePlural>
-			<singularMaleName><![CDATA[vallug]]></singularMaleName>
-			<singularFemaleName><![CDATA[vallug]]></singularFemaleName>
-			<pluralMaleName><![CDATA[vallug]]></pluralMaleName>
+			<name><![CDATA[валлуг]]></name>
+			<namePlural><![CDATA[валлуг]]></namePlural>
+			<singularMaleName><![CDATA[валлуг]]></singularMaleName>
+			<singularFemaleName><![CDATA[валлуг]]></singularFemaleName>
+			<pluralMaleName><![CDATA[валлуг]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[валлуг]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>

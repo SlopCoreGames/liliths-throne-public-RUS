@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[LAR1A1]]></namePlural>
 		<description><![CDATA[Легкая автоматическая винтовка, способная к полуавтоматическому огню и использующая съемные коробчатые магазины на 20 патронов калибра 7.62×51 мм NATO. Газоотводный механизм приводится в действие коротким штоком с пружинным поршнем, расположенным над стволом, и обеспечивает темп стрельбы около 700 выстрелов в минуту.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Use your LAR1A1 to fire a single bullet at your target.</attackTooltipDescription>
+		<attackTooltipDescription>Используй свой LAR1A1, чтобы выпустить одну пулю в цель.</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>

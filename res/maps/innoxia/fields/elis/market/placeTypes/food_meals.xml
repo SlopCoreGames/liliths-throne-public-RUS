@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Burgers, Fries, & Pies]]></name>
-	<tooltipDescription><![CDATA[A pair of portly pig-morphs run this hot food stall.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the Farmer's Market in Elis]]></virginityLossDescription>
+	<name><![CDATA[Бургеры, картошка фри и пироги]]></name>
+	<tooltipDescription><![CDATA[Этим лотком с горячей едой заправляет парочка пухлых свиноморфов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на фермерском рынке в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>food</svgName>
 	<colour>BASE_GREEN</colour>

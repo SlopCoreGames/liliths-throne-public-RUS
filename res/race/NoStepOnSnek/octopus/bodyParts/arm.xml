@@ -16,24 +16,24 @@
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>octopus-like</descriptor>
-		<descriptor>webbed</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
+		<descriptor>перепончатый</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>octopus-like</descriptor>
-		<descriptor>webbed</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
+		<descriptor>перепончатый</descriptor>
 	</handDescriptorsFeminine>
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</fingerDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Всего за мгновение они превращаются в стройные конечности, не слишком отличающиеся от человеческих рук, разве что между пальцами на каждой кисти натянута тонкая перепонка.

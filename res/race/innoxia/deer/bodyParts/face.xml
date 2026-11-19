@@ -17,13 +17,13 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic deer-like</descriptor>
-		<descriptor>deer-like</descriptor>
+		<descriptor>антропоморфный оленерогий</descriptor>
+		<descriptor>оленья</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic deer-like</descriptor>
-		<descriptor>deer-like</descriptor>
+		<descriptor>антропоморфный оленерогий</descriptor>
+		<descriptor>оленья</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[нос]]></noseName>

@@ -87,12 +87,12 @@
 			Whatever text is returned by this element will be the tab's title. -->
 			<tab index="0"><![CDATA[
 				#IF(false)
-					This will never be seen!
+					Этого никогда не увидят!
 				#ENDIF
 			]]></tab>
 			<tab index="1"><![CDATA[
 				#IF(false)
-					Neither will this!
+					И этого тоже!
 				#ENDIF
 			]]></tab>
 		</responseTabs>
@@ -276,8 +276,8 @@
 					<!-- An optional element where you can define custom text for the opening dialogue for each character.
 					You can omit this section entirely, or omit as many of the combatants as you want (in which case they'll use a generic opening dialogue). -->
 					<openingDescriptions>
-						<combatant id="nyan"><![CDATA[Nyan points her minigun at Brax and exclaims, [nyan.speech(I've had enough!)]]]></combatant>
-						<combatant id="brax"><![CDATA[Brax looks rather worried and stutters, [brax.speech(W-Why am I always the one being picked on?)]]]></combatant>
+						<combatant id="nyan"><![CDATA[Nyan наводит свой миниган на Brax и восклицает: [nyan.speech(С меня хватит!)]]]></combatant>
+						<combatant id="brax"><![CDATA[Brax выглядит довольно обеспокоенным и заикается: [brax.speech(П-почему всегда выбирают именно меня?)]]]></combatant>
 					</openingDescriptions>
 					<!-- An optional element, which defaults to false.
 						If set to true, the option to try and escape from this combat scene is blocked. -->

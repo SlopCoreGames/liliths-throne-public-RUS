@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Elevator]]></name>
-	<tooltipDescription><![CDATA[This elevator goes back up to Lovienne's Luxuries.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the elevator at Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[Лифт]]></name>
+	<tooltipDescription><![CDATA[Этот лифт везет обратно в «Роскошь Ловьенн».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в лифте в «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_MAGENTA</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

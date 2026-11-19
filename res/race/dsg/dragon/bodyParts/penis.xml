@@ -68,7 +68,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)], как [npc.her] пенис принимает новую форму, а [npc.sheIs] накрывает волна непреодолимого возбуждения, когда [npc.her] ствол заглатывается жировым мешочком, образующимся внутри [npc.her] паха. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] в поисках воздуха, головка [npc.her] члена сужается, постепенно переходя в свою новую форму.
 		<br/>[npc.She] теперь [npc.has] [style.boldDragon(драконий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldDragon([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldDragon(dragon cum)].
+		<br/>[npc.She] [npc.has] [style.boldDragon([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldDragon(драконью сперму)].
 	]]></transformationDescription>
 	
 	<!-- How this penis is described in a character's description page. -->

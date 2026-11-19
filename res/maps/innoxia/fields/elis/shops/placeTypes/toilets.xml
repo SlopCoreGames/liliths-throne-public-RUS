@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[public toilets]]></name>
-	<tooltipDescription><![CDATA[Offering a place for shoppers to relieve themselves, these public toilets are well maintained and cleaned at least once every hour.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the toilets in the 'Wall's End' shopping precinct]]></virginityLossDescription>
+	<name><![CDATA[общественные туалеты]]></name>
+	<tooltipDescription><![CDATA[Эти общественные туалеты, предназначенные для покупателей, содержатся в чистоте и убираются как минимум раз в час.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в туалетах торгового квартала «Край Стены»]]></virginityLossDescription>
 	<sexBlockedReason/>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>

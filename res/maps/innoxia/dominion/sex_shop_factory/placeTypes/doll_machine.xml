@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[dollification machine]]></name>
-	<tooltipDescription><![CDATA[A series of pipes connect several huge machines in this area, each of which performs a different part of the dollification process.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[while being dollified in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[машина для куколизации]]></name>
+	<tooltipDescription><![CDATA[Ряд труб соединяет здесь несколько огромных машин, каждая из которых выполняет определенный этап процесса превращения в куклу.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в процессе куколизации на фабрике под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

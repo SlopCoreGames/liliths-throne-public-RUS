@@ -12,7 +12,7 @@
 		<descriptor><![CDATA[капибароподобный]]></descriptor>
 	</descriptorsFeminine>
 	<bodyDescription><![CDATA[
-		[npc.Her] рот удерживает [npc.a_tongueLength], [npc.tongueColour(true)], капибароподобный [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот удерживает [npc.a_tongueLength], [npc.tongueColour(true)], капибароподобный [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.
 	]]></bodyDescription>
 	<defaultTongueModifiers></defaultTongueModifiers>
 </tongue>

@@ -70,7 +70,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)] как [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная складка. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотая воздух, основание [npc.her] члена раздувается в узел, а вокруг головки проступают маленькие мясные шипы.
 		<br/>[npc.She] теперь [npc.has] [style.boldGryphon(грифоний пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldGryphon([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldGryphon(gryphon cum)].
+		<br/>[npc.She] [npc.has] [style.boldGryphon([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldGryphon(грифоний сперма)].
 	]]></transformationDescription>
 	
 	<!-- How this penis is described in a character's description page. -->

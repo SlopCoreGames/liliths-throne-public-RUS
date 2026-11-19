@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[exit?]]></name>
-	<tooltipDescription><![CDATA[The exits from Shiranui's trap aren't quite what they seem...]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[on a path within Shiranui's trap]]></virginityLossDescription>
+	<name><![CDATA[выход?]]></name>
+	<tooltipDescription><![CDATA[Выходы из ловушки Ширануи не совсем такие, какими кажутся...]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на тропе внутри ловушки Ширануи]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>exit_question</svgName>
 	<colour>BASE_GREY</colour>

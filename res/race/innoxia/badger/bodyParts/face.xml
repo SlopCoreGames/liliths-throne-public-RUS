@@ -17,13 +17,13 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic badger-like</descriptor>
-		<descriptor>badger-like</descriptor>
+		<descriptor>антропоморфный барсукоподобный</descriptor>
+		<descriptor>барсучий</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic badger-like</descriptor>
-		<descriptor>badger-like</descriptor>
+		<descriptor>антропоморфный барсукоподобный</descriptor>
+		<descriptor>барсучий</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[нос]]></noseName>

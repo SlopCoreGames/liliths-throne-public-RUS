@@ -166,7 +166,7 @@
 			Так как [npc2.Name] уже была ошеломлена, боевой танец [npc.namePos] оказался невероятно эффективным!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] потратил(а) весь ход [npc2.her], пытаясь прицелиться в [npc.name].
+			[npc2.Name] #IF(npc2.isFeminine())потратила#ELSEпотратил#ENDIF весь ход впустую, пытаясь прицелиться в [npc.name].
 			<p>
 			[#npc2.incrementAttribute(ATTRIBUTE_ACTION_POINTS, -1, true)]
 			</p>

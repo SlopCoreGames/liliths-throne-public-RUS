@@ -35,7 +35,7 @@
 			<category id="tab" priority="1"> 
 				<categoryName><![CDATA[Петлицы]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -46,8 +46,8 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="tab_pc" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE"> 
-					<stickerName><![CDATA[Police Constable]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Constable ]]></namePrefix> 
+					<stickerName><![CDATA[Констебль]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Констебль Enforcer ]]></namePrefix> 
 					<namePostfix/> 
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия констебля полиции.</i>]]></descriptionModification> 
 					<imageName>enfdwaistcoat_st_tab_pc.svg</imageName> 
@@ -65,12 +65,12 @@
 						#ENDIF
 					]]></unavailabilityText> 
 					<availabilityText>
-						As an Enforcer who holds the rank of Police Constable, you can freely use these collar tabs.
+						Как Enforcer в звании констебля, ты можешь свободно использовать эти петлицы.
 					</availabilityText> 
 				</sticker>
 				<sticker id="tab_sg" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE"> 
-					<stickerName><![CDATA[Sergeant]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Sergeant ]]></namePrefix>
+					<stickerName><![CDATA[Сержант]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Сержант Enforcer ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия сержанта.</i>]]></descriptionModification>
 					<imageName>enfdwaistcoat_st_tab_sg.svg</imageName>
@@ -88,11 +88,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Sergeant, you can freely use these collar tabs.
+						Как Enforcer в звании сержанта, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_ip" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Inspector]]></stickerName>
+					<stickerName><![CDATA[Инспектор]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Инспектор ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия инспектора.</i>]]></descriptionModification>
@@ -111,11 +111,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Inspector, you can freely use these collar tabs.
+						Как Enforcer в звании инспектора, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_su" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Superintendent]]></stickerName>
+					<stickerName><![CDATA[Суперинтендант]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Супер интендант ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия суперинтенданта.</i>]]></descriptionModification>
@@ -132,11 +132,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Superintendent, you can freely use these collar tabs.
+						Как Enforcer в звании супер интенданта, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_cs" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Chief Superintendent]]></stickerName>
+					<stickerName><![CDATA[Главный суперинтендант]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Главный супер интендант ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплен знак старшего суперинтенданта.</i>]]></descriptionModification>
@@ -153,14 +153,14 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Chief Superintendent, you can freely use these collar tabs.
+						Как Enforcer в звании главного супер интенданта, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 			</category>
 			<category id="name" priority="2"> 
 				<categoryName><![CDATA[Именная табличка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="2" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -171,7 +171,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="name_pc" priority="2" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Police Constable]]></stickerName>
+					<stickerName><![CDATA[Констебль]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -186,11 +186,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Police Constable, you can freely use this name plate.
+						Как Enforcer в звании констебля, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_sg" priority="2" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Sergeant]]></stickerName>
+					<stickerName><![CDATA[Сержант]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -205,11 +205,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Sergeant, you can freely use this name plate.
+						Как Enforcer в звании сержанта, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_ip" priority="3" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Inspector]]></stickerName>
+					<stickerName><![CDATA[Инспектор]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -224,11 +224,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Inspector, you can freely use this name plate.
+						Как Enforcer в звании инспектора, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_su" priority="4" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Superintendent]]></stickerName>
+					<stickerName><![CDATA[Суперинтендант]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -241,11 +241,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Superintendent, you can freely use this name plate.
+						Как Enforcer в звании супер интенданта, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_cs" priority="5" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Chief Superintendent]]></stickerName>
+					<stickerName><![CDATA[Главный суперинтендант]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -258,7 +258,7 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Chief Superintendent, you can freely use this name plate.
+						Как Enforcer в звании главного интенданта, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 			</category>

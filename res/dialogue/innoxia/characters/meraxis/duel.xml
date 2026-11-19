@@ -153,7 +153,7 @@
 						<enemy leader="true"><![CDATA[meraxis]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="meraxis"><![CDATA[Meraxis swirls her scythe around in a large circle, before pointing it at you and declaring, [meraxis.speech(Prepare to be vanquished! I, the Dark Siren, shall soon be victorious!)]]]></combatant>
+						<combatant id="meraxis"><![CDATA[Меракс описывает своей косой широкий круг, после чего направляет её на тебя и провозглашает: [meraxis.speech(Готовься к поражению! Скоро я, Темная Сирена, одержу победу!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>

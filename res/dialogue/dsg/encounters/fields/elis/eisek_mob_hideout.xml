@@ -297,7 +297,7 @@
 						<enemy leader="true"><![CDATA[dsg_muscle]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="dsg_muscle"><![CDATA[[dsg_muscle.speech(Let's see if you're as strong as you think you are!)] [dsg_muscle.name] shouts.]]></combatant>
+						<combatant id="dsg_muscle"><![CDATA[[dsg_muscle.speech(Посмотрим, так ли ты силен, как о себе мнишь!)] [dsg_muscle.name] выкрикивает.]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>
@@ -341,7 +341,7 @@
 						<enemy leader="true"><![CDATA[dsg_muscle]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="dsg_muscle"><![CDATA[[dsg_muscle.speech(Spell this, spell that. You won't even be able to spell your own name after I'm done with you!) [dsg_muscle.name] shouts.]]]></combatant>
+						<combatant id="dsg_muscle"><![CDATA[[dsg_muscle.speech(Заклинание то, заклинание сё... После того как я с тобой разделаюсь, ты даже своё имя по буквам не выговоришь!) [dsg_muscle.name] выкрикивает.]]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>

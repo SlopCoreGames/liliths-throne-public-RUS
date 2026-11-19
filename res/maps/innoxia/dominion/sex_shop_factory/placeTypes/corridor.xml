@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[A concrete corridor links the slime milking chamber to the darkest corners of the factory...]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the corridor in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Бетонный коридор соединяет камеру дойки слаймов с самыми темными уголками фабрики...]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре фабрики под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

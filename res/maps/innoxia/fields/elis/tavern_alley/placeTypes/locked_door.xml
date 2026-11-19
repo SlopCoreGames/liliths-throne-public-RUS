@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[locked door]]></name>
-	<tooltipDescription><![CDATA[A locked door bars members of the public from accessing the VIP area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[запертая дверь]]></name>
+	<tooltipDescription><![CDATA[Запертая дверь преграждает путь обычным посетителям в VIP-зону.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в таверне «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_CRIMSON</colour>

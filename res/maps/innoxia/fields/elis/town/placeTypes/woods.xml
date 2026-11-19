@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[woodland]]></name>
-	<tooltipDescription><![CDATA[Patches of deciduous woodland surround Elis and offer places for the townsfolk to forage for mushrooms and truffles.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the woodland beside Elis]]></virginityLossDescription>
+	<name><![CDATA[лесистая местность]]></name>
+	<tooltipDescription><![CDATA[Участки лиственного леса окружают Элис, предлагая горожанам места для сбора грибов и трюфелей.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в лесу рядом с Элис]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREEN</colour>
 	<backgroundColour>MAP_BACKGROUND_GREEN</backgroundColour>

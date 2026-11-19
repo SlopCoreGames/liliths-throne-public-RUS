@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name noCapitalisation="true"><![CDATA[Bank of Elis]]></name>
-	<tooltipDescription><![CDATA[Positioned close to the farmer's market, this bank serves all of Elis.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[outside of the Bank of Elis]]></virginityLossDescription>
+	<name noCapitalisation="true"><![CDATA[Банк Элиса]]></name>
+	<tooltipDescription><![CDATA[Этот банк расположен совсем рядом с фермерским рынком и обслуживает весь город Элис.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[снаружи Банка Элис]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_GOLD</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

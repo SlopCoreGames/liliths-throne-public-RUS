@@ -34,14 +34,14 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's ear of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>frilled</descriptor>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>с бахромой</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>frilled</descriptor>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>с бахромой</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this ear type.
@@ -54,12 +54,12 @@
 		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
 		 и по завершении трансформации [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми, похожими на саламандровых ушами взад-вперед.
-		<br/>[npc.Name] теперь [npc.has] [style.boldSalamander(large, salamander-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldSalamander(крупные, похожие на саламандровые уши)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How this ear is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пару воротничковых,#IF(npc.isPiercedEar()) pierced,#ENDIF salamander-like ears, which are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пару воротничковых,#IF(npc.isPiercedEar()) проколотые,#ENDIF похожие на саламандровые уши, которые [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

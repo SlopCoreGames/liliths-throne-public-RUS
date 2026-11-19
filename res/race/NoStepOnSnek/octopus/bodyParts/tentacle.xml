@@ -16,18 +16,18 @@
 	<name><![CDATA[щупальце]]></name>
 	<namePlural><![CDATA[щупальца]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>strong</descriptor>
+		<descriptor>сильный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>strong</descriptor>
+		<descriptor>сильный</descriptor>
 	</descriptorsFeminine>
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>rounded</descriptor>
+		<descriptor>закругленный</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>rounded</descriptor>
+		<descriptor>закругленный</descriptor>
 	</tipDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 	]]></transformationDescription>

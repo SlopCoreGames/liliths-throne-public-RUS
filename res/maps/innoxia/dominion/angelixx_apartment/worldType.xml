@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Angelixx's Apartment]]></name>
+	<name><![CDATA[Квартира Анжеликсы]]></name>
 	<colour>BASE_PINK_LIGHT</colour>
-	<sexBlockedReason><![CDATA[[npc.Name] cannot have sex here!]]></sexBlockedReason> 
+	<sexBlockedReason><![CDATA[[npc.Name] нельзя здесь заниматься сексом!]]></sexBlockedReason> 
 	<furniturePresent>true</furniturePresent>
 	<wallsPresent>true</wallsPresent>
 	<loiteringEnabled>false</loiteringEnabled>

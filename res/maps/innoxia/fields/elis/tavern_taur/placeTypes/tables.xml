@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Main floor]]></name>
-	<tooltipDescription><![CDATA[The majority of the floor area inside 'The Centaur's Sword' tavern is occupied by large, wooden tables.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the main floor area of 'The Centaur's Sword' tavern]]></virginityLossDescription>
+	<name><![CDATA[Первый этаж]]></name>
+	<tooltipDescription><![CDATA[Большую часть площади таверны «Меч Кентавра» занимают большие деревянные столы.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в основном зале таверны «Меч Кентавра»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -162,12 +162,12 @@
 			Хотя теперь она полноценный демон, ты всерьез сомневаешься, что ей удастся безнаказанно вызвать тебя на бой прямо у дверей комнаты твоей матери, поэтому уверенно отвечаешь:
 			#IF pc.hasTraitActivated(PERK_CHUUNI)
 			#ТОГДА [pc.speech(Твои силы — ничто по сравнению с моими, сестренка! Может, когда-нибудь ты и обретешь хотя бы сотую часть моей мощи, но не думаю, что это случится скоро! А теперь дай мне пройти к [lyssieth.name]!)]
-			#ELSE [pc.speech(There's no need for us to fight, little sister. I'm here to see [lyssieth.name].)]
+			#ELSE [pc.speech(Нам нет нужды сражаться, сестренка. Я здесь, чтобы увидеть [lyssieth.name].)]
 			#ENDIF
-		#ELSE You seriously doubt that she'd be able to get away with challenging you to combat just outside her mother's room, and so you confidently reply,
+		#ELSE Ты всерьез сомневаешься, что ей удастся безнаказанно бросить тебе вызов прямо у дверей материнской опочивальни, и поэтому уверенно отвечаешь,
 			#IF pc.hasTraitActivated(PERK_CHUUNI)
 			#ТОГДА [pc.speech(Твои силы — ничто по сравнению с моими, Мераксис! Может, когда-нибудь ты и обретешь хотя бы сотую часть моей мощи, но не думаю, что это случится скоро! А теперь дай мне пройти к [lyssieth.name]!)]
-			#ELSE [pc.speech(There's no need for us to fight, Meraxis. I'm here to see [lyssieth.name].)]
+			#ELSE [pc.speech(Нам нет нужды сражаться, Мераксис. Я здесь, чтобы увидеть [lyssieth.name].)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -271,7 +271,7 @@
 				#ПОТОМ
 					#IF pc.hasFetish(FETISH_INCEST)
 					#ПОТОМ, решительно шагая к тебе и заключая в нежные объятия. [lyssieth.speech(Оу, ты снова пришел навестить свою мамочку! Как это мило!)]
-					#ELSE before striding over to you and pulling you into a loving hug. [lyssieth.speech(Aww, you came to visit me again! How sweet of you!)]
+					#ELSE прежде чем решительно подойти к тебе и заключить в нежные объятия. [lyssieth.speech(О-о, ты снова пришел навестить меня! Как это мило!)]
 					#ENDIF
 				#ELSE
 					 нежно улыбаясь тебе. [lyssieth.speech(Снова здравствуй, [pc.name]. Чем могу быть полезна?)]
@@ -289,7 +289,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN [pc.speech(Тебе повезло; я куда сильнее, чем ты можешь себе представить!)] — заявляешь ты, прежде чем направиться к двери на противоположной стороне комнаты и поспешно выйти.
-		#ELSE [pc.speech(Ok, see you next time,)] you say, rolling your eyes. Before the little chuuni can make any more outrageous statements, you march over to the door on the far side of the room and quickly make your exit.
+		#ELSE [pc.speech(Ладно, увидимся в следующий раз,)] — говоришь ты, закатывая глаза. Прежде чем маленькая чуни успевает изречь еще какую-нибудь нелепицу, ты направляешься к двери на противоположной стороне комнаты и поспешно выходишь.
 		#ENDIF
 	</p>
 	<p>
@@ -305,7 +305,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN [pc.speech(Тебе повезло; я куда сильнее, чем ты можешь себе представить!)] — заявляешь ты, после чего велишь [npc.name] следовать за тобой и направляешься к двери на противоположной стороне комнаты.
-		#ELSE [pc.speech(Ok, see you next time,)] you say, rolling your eyes. Before the little chuuni can make any more outrageous statements, you tell [npc.name] to follow you and then march over to the door on the far side of the room.
+		#ELSE [pc.speech(Ладно, увидимся в следующий раз,)] — говоришь ты, закатывая глаза. Прежде чем маленькая чуни успевает изречь еще какую-нибудь нелепицу, ты велишь [npc.name] следовать за тобой и направляешься к двери на противоположной стороне комнаты.
 		#ENDIF
 	</p>
 	<p>
@@ -380,7 +380,7 @@
 		#THEN
 			#IF pc.hasFetish(FETISH_INCEST)
 			#THEN [lyssieth.speech(О, хочешь побольше узнать о маминой младшенькой сестренке? Полагаю, раз уж теперь я твоя мамочка, то технически она твоя тетя,)]
-			#ELSE [lyssieth.speech(Oh, you want to know a little more about my little sister? I suppose now that I'm your mother, she's technically your aunt,)]
+			#ELSE [lyssieth.speech(О, хочешь узнать побольше о моей младшей сестренке? Полагаю, раз уж теперь я твоя мать, то технически она твоя тетя,)]
 			#ENDIF
 		#ELSE
 			[lyssieth.speech(О, хочешь побольше узнать о моей младшей сестре?)]
@@ -411,7 +411,7 @@
 		#THEN
 			#IF pc.hasFetish(FETISH_INCEST)
 			#THEN [pc.speech(Мамочка, я хочу узнать побольше о моей новой семье,)] говоришь ты, жаждая услышать подробности о дочерях, сестрах и матери Lyssieth.
-			#ELSE [pc.speech(I want to know more about my new family,)] you say, eager to hear more about Lyssieth's daughters, sisters and mother.
+			#ELSE [pc.speech(Я хочу побольше узнать о своей новой семье,)] — говоришь ты, жаждая услышать больше о дочерях, сестрах и матери Lyssieth.
 			#ENDIF
 		#ELSE
 			[pc.speech(Я бы хотел узнать побольше о твоей семье,)] говоришь ты, жаждая услышать подробности о дочерях, сестрах и матери Lyssieth.
@@ -1194,7 +1194,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speech(Это бы очень помогло мамочке,)]
-		#ELSE [lyssieth.speech(That'd really help,)]
+		#ELSE [lyssieth.speech(Это бы очень помогло,)]
 		#ENDIF
 		Отвечает Lyssieth, наклоняясь над твоим плечом, чтобы поцеловать тебя в щеку, а затем отстраняется и говорит: [lyssieth.speech(А теперь собирай остальные вещи. Уверена, тебе не терпится отправиться и повеселиться в своём новом теле!)]
 	</p>
@@ -1275,7 +1275,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Ухмыляясь своей сопернице, ты заявляешь: [pc.speech(Ха! Да я ни за что не проиграю тебе! Мои силы за пределами твоего понимания! А теперь мне пора; скоро о моих величайших способностях Арканы узнают и начнут трепетать во всем Dominion, и наверняка там, наверху, есть кучка несчастных глупцов, которых нужно поставить на место!)]
-		#ELSE Rolling your eyes at your sister's ridiculous statement, you say, [pc.speech(Ok, sure thing Meraxis, but for now, I need to take my leave. I'll see you later.)]
+		#ELSE Закатив глаза на нелепое заявление своей сестры, ты произносишь: [pc.speech(Ладно, без проблем, Meraxis, но сейчас мне пора. Увидимся позже.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1300,7 +1300,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Ухмыляясь своей сопернице, ты заявляешь: [pc.speech(Ха! Да я ни за что не проиграю тебе! Мои силы за пределами твоего понимания! А теперь мне пора; скоро о моих величайших способностях Арканы узнают и начнут трепетать во всем Dominion, и наверняка там, наверху, есть кучка несчастных глупцов, которых нужно поставить на место!)]
-		#ELSE Rolling your eyes at your sister's ridiculous statement, you say, [pc.speech(Ok, sure thing Meraxis, but for now, I need to take my leave. I'll see you later.)]
+		#ELSE Закатив глаза на нелепое заявление своей сестры, ты произносишь: [pc.speech(Ладно, без проблем, Meraxis, но сейчас мне пора. Увидимся позже.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1520,7 +1520,7 @@
 		Видя столь внезапное и сильное возбуждение Lilaya после поцелуя, ты понимаешь, что Lyssieth использовала свою аркана-силу, чтобы внушить ей любовь к инцесту. Прежде чем ты успеваешь осознать свои чувства к происходящему, Lyssieth поворачивается к тебе с ухмылкой и спрашивает:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speech(Ты ведь наверняка хочешь помочь мамочке хорошенько оттрахать твою сестренку? Это последний раз, когда она получит такую любовь как полудемон...)]
-		#ELSE [lyssieth.speech(Surely you'd like to help me in giving Lilaya a good fucking? It's the last she'll ever receive as a half-demon...)]
+		#ELSE [lyssieth.speech(Ты ведь наверняка хочешь помочь мне хорошенько оттрахать Lilaya? Это последнее, что она получит, пока еще полудемон...)]
 		#ENDIF
 	</p>
 	]]>
@@ -1563,25 +1563,25 @@
 	<p>
 		#IF pc.hasPenis()
 		#THEN Затем и ты, и Lyssieth быстро раздеваетесь, после чего занимаете позиции по обе стороны от Lilaya.
-		#ELSE Using your transformative abilities to grow a thick cock, both you and Lyssieth then quickly disrobe, before stepping into position on either side of Lilaya.
+		#ELSE Используя свои способности к трансформации, чтобы вырастить толстый член, ты и Lyssieth быстро раздеваетесь, после чего встаете по обе стороны от Lilaya.
 		#ENDIF
 		Когда твоя мать обхватывает бедра Lilaya и прижимается к её спине, твоя [lilaya.relation(pc)] внезапно ахает, и ты понимаешь, что Lyssieth стремительно вошла ей в задницу. Прижав свою полудемонку к своей [lyssieth.breasts+], Lyssieth наклоняется, хватает одну из ног Lilaya и задирает её вверх, подставляя тебе её демоническую киску.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая моя драгоценная Lilaya мокрая и готовая к твоему члену! Ну же, покажи мамочке, как сильно ты любишь свою сестренку!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Look how wet and ready she is for your cock! Come on, fuck her!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая она мокрая и готовая к твоему члену! Давай же, трахни её!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Выполняя просьбу матери, ты [pc.step] перед Lilaya и, дразня [pc.cockHead+] своего [pc.cock] над её [lilaya.labia+], подаешься тазом вперед и входишь в свою [lilaya.relation(pc)].
-		#ELSE Doing as the elder lilin asks, you [pc.step] up in front of Lilaya, and, teasing the [pc.cockHead+] of your [pc.cock] over her [lilaya.labia+], you thrust your hips forwards and penetrate her.
+		#ELSE Повинуясь просьбе старшей лилин, ты [pc.step] перед Lilaya и, дразня [pc.cockHead+] своего [pc.cock] над её [lilaya.labia+], подаешься бедрами вперед и входишь в неё.
 		#ENDIF
 	</p>
 	<p>
 		[lilaya.speechNoEffects(~Аах!~ Да! Трахни меня!)] — кричит Lilaya, тяжело дыша и стоная, пока вы с Lyssieth зажимаете её между своими телами.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Когда в её заднице находится член твоей матери, а твой пронзает её киску, твоя [lilaya.relation(pc)] продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт, пока она еще полудемон...
-		#ELSE With Lyssieth's cock in her ass, and yours penetrating her pussy, Lilaya continues to make lewd noises as the two of you give her her last sexual experience while still a half-demon...
+		#ELSE Пока член Lyssieth наполняет её задницу, а твой проникает в её киску, Lilaya продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт в качестве полудемона...
 		#ENDIF
 	</p>
 	]]>
@@ -1597,24 +1597,24 @@
 	<p>
 		#IF pc.hasPenis()
 		#THEN Затем и ты, и Lyssieth быстро раздеваетесь, после чего занимаете позиции по обе стороны от Lilaya.
-		#ELSE Using your transformative abilities to grow a thick cock, both you and Lyssieth then quickly disrobe, before stepping into position on either side of Lilaya.
+		#ELSE Используя свои способности к трансформации, чтобы вырастить толстый член, ты и Lyssieth быстро раздеваетесь, после чего встаете по обе стороны от Lilaya.
 		#ENDIF
 		Сделав первый шаг, ты хватаешь Lilaya за бедра и прижимаешься к её спине, просовывая [pc.cockHead+] своего [pc.cock] между её ягодицами. Резким толчком бедер ты входишь в анус своей [lilaya.relation(pc)], заставляя её внезапно ахнуть. Притянув разгоряченную полудемонку к своему [pc.breasts+], ты хватаешь одну из ног Lilaya, поднимаешь её и подставляешь её демоническую киску матери.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(~Ммм!~ Посмотри, какая твоя дочка мокрая и готовая к твоему члену! Давай, мамочка, покажи мне, как сильно ты любишь мою сестренку!)]
-		#ELSE [pc.speechNoEffects(~Mmm!~ Look how wet and ready she is for your cock! Come on, fuck her!)]
+		#ELSE [pc.speechNoEffects(~Ммм!~ Посмотри, какая она мокрая и готовая к твоему члену! Давай, трахни её!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
-#THEN Выполняя твою просьбу, Lyssieth делает шаг к Lilaya и, дразняще покачивая [lyssieth.cockHead+] своей [lyssieth.cock] над твоей [lilaya.labia+], подаётся бёдрами вперёд и проникает в твоего [lilaya.relation(pc)].		#ELSE Doing as you ask, Lyssieth steps up in front of Lilaya, and, teasing the [lyssieth.cockHead+] of her [lyssieth.cock] over her [lilaya.labia+], she thrusts her hips forwards and penetrates her.
+#THEN Выполняя твою просьбу, Lyssieth делает шаг к Lilaya и, дразняще покачивая [lyssieth.cockHead+] своей [lyssieth.cock] над твоей [lilaya.labia+], подаётся бёдрами вперёд и проникает в твоего [lilaya.relation(pc)].		#ELSE Выполняя просьбу, Lyssieth подходит к Lilaya и, дразня [lyssieth.cockHead+] своей [lyssieth.cock] над её [lilaya.labia+], подается бедрами вперед и входит в неё.
 		#ENDIF
 	</p>
 	<p>
 		[lilaya.speechNoEffects(~Аах!~ Да! Трахни меня!)] — кричит Lilaya, тяжело дыша и стоная, пока вы с Lyssieth зажимаете её между своими телами.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Пока твой член в её заднице, а мать проникает в её киску, твоя [lilaya.relation(pc)] продолжает издавать похотливые звуки, пока вы вдвоем дарите ей её последний сексуальный опыт в качестве полудемона...
-		#ELSE With your cock in her ass, and Lyssieth's penetrating her pussy, Lilaya continues to make lewd noises as the two of you give her her last sexual experience while still a half-demon...
+		#ELSE Пока твой член в её заднице, а Lyssieth проникает в её киску, Lilaya продолжает издавать похотливые звуки, пока вы вдвоем дарите ей её последний сексуальный опыт, пока она еще полудемон...
 		#ENDIF
 	</p>
 	]]>
@@ -1630,25 +1630,25 @@
 	<p>
 		#IF pc.hasPenis()
 		#THEN Затем и ты, и Lyssieth быстро раздеваетесь, после чего занимаете позиции по обе стороны от Lilaya.
-		#ELSE Using your transformative abilities to grow a thick cock, both you and Lyssieth then quickly disrobe, before stepping into position on either side of Lilaya.
+		#ELSE Используя свои способности к трансформации, чтобы вырастить толстый член, ты и Lyssieth быстро раздеваетесь, после чего встаете по обе стороны от Lilaya.
 		#ENDIF
 		Когда твоя мать обхватывает бедра Lilaya и прижимается к её спине, твоя [lilaya.relation(pc)] внезапно ахает, и ты понимаешь, что Lyssieth стремительно вошла ей в задницу. Прижав свою полудемонку к своей [lyssieth.breasts+], Lyssieth наклоняется, хватает одну из ног Lilaya и задирает её вверх, подставляя тебе её демоническую киску.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая моя драгоценная Lilaya мокрая и готовая! Ну же, покажи мамочке, как сильно ты любишь свою сестренку!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Look how wet and ready she is! Come on, give her what she wants!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая она мокрая и готовая! Давай, дай ей то, чего она хочет!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Выполняя просьбу матери, ты опускаешься на колени перед своей [lilaya.relation(pc)] и, прижимая свой [pc.lips+] к её [lilaya.labia+], втискиваешь свой [pc.tongue+] в её киску и начинаешь её вылизывать.
-		#ELSE Doing as the elder lilin asks, you drop down onto your knees in front of Lilaya, and, pressing your [pc.lips+] against her [lilaya.labia+], you push your [pc.tongue+] into her pussy and start eating her out.
+		#ELSE Повинуясь просьбе старшей лилин, ты опускаешься на колени перед Lilaya и, прижимая свой [pc.lips+] к её [lilaya.labia+], втискиваешь свой [pc.tongue+] в её киску и начинаешь её ласкать языком.
 		#ENDIF
 	</p>
 	<p>
 		[lilaya.speechNoEffects(~Аах!~ Да! Еще!)] — стонет Lilaya, тяжело дыша и постанывая, пока вы с Lyssieth зажимаете её между собой.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN С членом матери в её заднице и твоим языком, проникающим в её киску, твоя [lilaya.relation(pc)] продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт в качестве полудемона...
-		#ELSE With Lyssieth's cock in her ass, and your tongue penetrating her pussy, Lilaya continues to make lewd noises as the two of you give her her last sexual experience while still a half-demon...
+		#ELSE Пока член Lyssieth в её заднице, а твой язык проникает в её киску, Lilaya продолжает издавать похотливые звуки, пока вы вдвоем дарите ей её последний сексуальный опыт, пока она еще полудемон...
 		#ENDIF
 	</p>
 	]]>
@@ -1665,20 +1665,20 @@
 		Вы с Lyssieth быстро раздеваетесь и занимаете позиции по обе стороны от Lilaya. Когда твоя мать обхватывает бедра Lilaya и прижимается к её спине, твоя [lilaya.relation(pc)] внезапно ахает — ты понимаешь, что Lyssieth быстро вошла в её киску сзади. Прижимая к своей [lyssieth.breasts+] свою полудемоническую дочь, Lyssieth обхватывает рукой член Lilaya и подносит его к тебе.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая моя драгоценная Lilaya твердая! Ну же, покажи мамочке, как сильно ты любишь свою сестренку!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Look how hard she is! Come on, give her what she wants!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая она твердая! Давай, дай ей то, чего она хочет!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Повинуясь просьбе матери, ты опускаешься на колени перед своей [lilaya.relation(pc)] и, прижимая свой [pc.lips+] к её [lilaya.cockHead+], подаешься вперед, принимая её пульсирующую плоть в рот.
-		#ELSE Doing as the elder lilin asks, you drop down onto your knees in front of Lilaya, and, pressing your [pc.lips+] against the [lilaya.cockHead+] of her cock, you push your head forwards and take her throbbing length into your mouth.
+		#ELSE Повинуясь просьбе старшей лилин, ты опускаешься на колени перед Lilaya и, прижимая свой [pc.lips+] к [lilaya.cockHead+] её члена, подаешься головой вперед и берешь её пульсирующую плоть в рот.
 		#ENDIF
 	</p>
 	<p>
 		[lilaya.speechNoEffects(~Аах!~ Да! Еще!)] — стонет Lilaya, тяжело дыша и постанывая, пока вы с Lyssieth зажимаете её между собой.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Пока член твоей матери наполняет её киску, а твой [pc.lips+] обхватывает её член, твоя [lilaya.relation(pc)] продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт в качестве полудемона...
-		#ELSE With Lyssieth's cock in her pussy, and your [pc.lips+] wrapped around her cock, Lilaya continues to make lewd noises as the two of you give her her last sexual experience while still a half-demon...
+		#ELSE Когда член Lyssieth входит в её киску, а твой [pc.lips+] обхватывает его, Lilaya продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт, пока она еще полудемон...
 		#ENDIF
 	</p>
 	]]>
@@ -1694,19 +1694,19 @@
 		Вы с Lyssieth быстро раздеваетесь и встаете по обе стороны от Lilaya. Сделав первый шаг, ты обхватываешь бедра Lilaya и опускаешься на колени, прижимая свой [pc.face] между её ягодицами. Резким толчком своего [pc.tongue+] ты проникаешь в анус своей [lilaya.relation(pc)], заставляя её внезапно ахнуть. Притянув разгоряченную полудемонку ближе к себе, ты обхватываешь её руку и начинаешь ласкать её влажную киску, а затем раздвигаешь её [lilaya.labia+], демонстрируя её матери. На мгновение отстранившись от её задницы, ты стонешь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(~Ммм!~ Посмотри, какая твоя дочка мокрая и готовая к твоему члену! Давай, мамочка, покажи мне, как сильно ты любишь мою сестренку!)]
-		#ELSE [pc.speechNoEffects(~Mmm!~ Look how wet and ready she is for your cock! Come on, fuck her!)]
+		#ELSE [pc.speechNoEffects(~Ммм!~ Посмотри, какая она мокрая и готовая к твоему члену! Давай, трахни её!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
-#THEN Выполняя твою просьбу, Lyssieth делает шаг к Lilaya и, дразняще покачивая [lyssieth.cockHead+] своей [lyssieth.cock] над твоей [lilaya.labia+], подаётся бёдрами вперёд и проникает в твоего [lilaya.relation(pc)].		#ELSE Doing as you ask, Lyssieth steps up in front of Lilaya, and, teasing the [lyssieth.cockHead+] of her [lyssieth.cock] over her [lilaya.labia+], she thrusts her hips forwards and penetrates her.
+#THEN Выполняя твою просьбу, Lyssieth делает шаг к Lilaya и, дразняще покачивая [lyssieth.cockHead+] своей [lyssieth.cock] над твоей [lilaya.labia+], подаётся бёдрами вперёд и проникает в твоего [lilaya.relation(pc)].		#ELSE Выполняя просьбу, Lyssieth подходит к Lilaya и, дразня [lyssieth.cockHead+] своей [lyssieth.cock] над её [lilaya.labia+], подается бедрами вперед и входит в неё.
 		#ENDIF
 	</p>
 	<p>
 		[lilaya.speechNoEffects(~Аах!~ Да! Трахни меня!)] — кричит Lilaya, тяжело дыша и стоная, пока вы с Lyssieth зажимаете её между своими телами.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Пока твой язык снова лижет её задницу, а член твоей матери проникает в её киску, твоя [lilaya.relation(pc)] продолжает издавать похотливые звуки — вы вдвоем дарите ей последний сексуальный опыт, пока она еще остается полудемоном...
-		#ELSE With your tongue returning to lick her ass, and Lyssieth's cock penetrating her pussy, Lilaya continues to make lewd noises as the two of you give her her last sexual experience while still a half-demon...
+		#ELSE Пока твой язык снова лижет её задницу, а член Lyssieth проникает в её киску, Lilaya продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт, пока она еще полудемон...
 		#ENDIF
 	</p>
 	]]>
@@ -1723,20 +1723,20 @@
 		Вы с Lyssieth быстро раздеваетесь и встаете по обе стороны от Lilaya. Когда твоя мать обхватывает бедра Lilaya и прижимается к её спине, твоя [lilaya.relation(pc)] внезапно ахает, и ты понимаешь, что Lyssieth быстро вошла ей в задницу. Прижимая свою полудемонку к своей [lyssieth.breasts+], Lyssieth наклоняется и хватает одну из ног Lilaya, после чего задирает её вверх, подставляя тебе её демоническую киску.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая моя драгоценная Lilaya мокрая и готовая! Ну же, покажи мамочке, как сильно ты любишь свою сестренку!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Look how wet and ready she is! Come on, give her what she wants!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Посмотри, какая она мокрая и готовая! Давай, дай ей то, чего она хочет!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Выполняя просьбу матери, ты опускаешь руку между ног своей [lilaya.relation(pc)], и, прижав свой [pc.fingers+] к её [lilaya.labia+], проталкиваешь руку вперед и вводишь пальцы в её киску.
-		#ELSE Doing as the elder lilin asks, you drop your hand down between Lilaya's legs, and, pressing your [pc.fingers+] against her [lilaya.labia+], you push your hand forwards and slide your digits into her pussy.
+		#ELSE Повинуясь просьбе старшей лилин, ты опускаешь руку между ног Lilaya и, прижимая свой [pc.fingers+] к её [lilaya.labia+], проталкиваешь руку вперед, вводя пальцы в её киску.
 		#ENDIF
 	</p>
 	<p>
 		[lilaya.speechNoEffects(~Аах!~ Да! Еще!~)] — вскрикивает Lilaya, тяжело дыша и стоная, пока вы с Lyssieth зажимаете её между своими телами.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Пока член твоей матери наполняет её задницу, а твои пальцы ласкают её между ног, твоя [lilaya.relation(pc)] продолжает издавать похотливые звуки — вы дарите ей последний сексуальный опыт в качестве полудемона...
-		#ELSE With Lyssieth's cock in her ass, and your fingers working away between her legs, Lilaya continues to make lewd noises as the two of you give her her last sexual experience while still a half-demon...
+		#ELSE Пока член Lyssieth входит в её задницу, а твои пальцы ласкают её между ног, Lilaya продолжает издавать похотливые звуки, пока вы вдвоем дарите ей последний сексуальный опыт, пока она еще полудемон...
 		#ENDIF
 	</p>
 	]]>
@@ -1751,7 +1751,7 @@
 		Когда все трое наконец удовлетворены, вы высвобождаетесь из объятий друг друга. Lyssieth первой нарушает тишину, тихо стоная:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Это было весело для мамочки... Хотя я и сомневалась, стоит ли это делать, ты выглядишь просто потрясающе в облике полноценного демона, дорогая.)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ That was fun... While I was hesitant to go through with this, you do look rather stunning as a full demon, Lilaya.)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Это было весело... Хотя я и сомневалась, стоит ли это делать, ты выглядишь просто потрясающе в облике полноценного демона, Lilaya.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1787,7 +1787,7 @@
 		Когда все трое наконец удовлетворены, вы высвобождаетесь из объятий друг друга. Lyssieth первой нарушает тишину, тихо стоная:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Это было весело для мамочки... Хотя я и сомневалась, стоит ли это делать, ты выглядишь просто потрясающе в облике полноценного демона, дорогая.)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ That was fun... While I was hesitant to go through with this, you do look rather stunning as a full demon, Lilaya.)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Это было весело... Хотя я и сомневалась, стоит ли это делать, ты выглядишь просто потрясающе в облике полноценного демона, Lilaya.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1796,7 +1796,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Прежде чем ты успеваешь вставить хоть слово, твоя [lilaya.relation(pc)] отстраняется от матери и тут же бросается тебе в [pc.arms]. Счастливо глядя тебе в глаза, она вздыхает: [lilaya.speech(И тебе огромное спасибо, [pc.name]! Мне так повезло, что у меня есть такой любящий [pc.sister]!)]
-		#ELSE Before you can offer any words of your own, your [lilaya.relation(pc)] breaks off the hug with your mother, and immediately throws herself into your [pc.arms]. Gazing happily into your eyes, she sighs, [lilaya.speech(Thank you so much as well, [pc.name]! I'm so lucky to have such a loving [pc.sister]!)]
+		#ELSE Прежде чем ты успеваешь вставить хоть слово, твоя [lilaya.relation(pc)] отстраняется от матери и тут же бросается тебе в [pc.arms]. Счастливо глядя тебе в глаза, она вздыхает: [lilaya.speech(И тебе огромное спасибо, [pc.name]! Мне так повезло с таким любящим [pc.sister]!)]
 		#ENDIF
 	</p>
 	<p>
@@ -2125,7 +2125,7 @@
 		Когда все получили свое удовольствие, вы вчетвером распутываетесь и пытаетесь подняться. Лиссиет говорит первой, тихо стоная:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Какие умницы... Вы обе и правда выглядите прекрасно в облике полноценных демонов...)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Good girls... You really do both look beautiful as full demons...)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Хорошие девочки... Вы обе и правда выглядите прекрасно в облике полноценных демонов...)]
 		#ENDIF
 	</p>
 	<p>
@@ -2184,7 +2184,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Не в силах удержаться и не ответить на её угрозу, ты принимаешь столь же пафосную позу и заявляешь: [pc.speech(Твои стратегии окажутся бесполезными перед лицом моей абсолютной мощи! Мои боевые техники — это легенда; такой простой ученице аркана, как ты, даже не постичь масштаб моих способностей!)]
-		#ELSE Trying hard not to visibly cringe at your [siren.relation(pc)]'s ridiculous mannerisms, you reply, [pc.speech(Well then, I suppose it's a relief for me that you're not allowed to fight in here.)]
+		#ELSE Стараясь изо всех сил не поморщиться от нелепых манер твоей [siren.relation(pc)], ты отвечаешь: [pc.speech(Ну, тогда для меня это облегчение, что тебе здесь не позволено сражаться.)]
 		#ENDIF
 	</p>
 	<p>

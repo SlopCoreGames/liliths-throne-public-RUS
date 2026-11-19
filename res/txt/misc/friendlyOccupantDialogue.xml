@@ -323,12 +323,12 @@
 			 Опускаясь на [npc2.her] колени перед [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, [pc.name] и я устроим тебе настоящий отрыв, так что просто расслабься и наслаждайся.)]
 		</p>
 		<p>
-			Reaching down to run [npc2.her] [npc2.fingers] over [npc.namePos] [npc.lips+], [npc2.name] grins as [npc2.her] move is met by a long, erotic [npc.moan]. Turning [npc.her] head as [npc.she] shifts [npc.her] focus back onto you, [npc.name] raises [npc.her] ass and shakes it from side to side as [npc.she] teases, [npc.speech(Come on, [pc.name], make sure to give me a good, hard fucking while I pleasure [npc2.name] with my mouth!)]
+			Проводя рукой [npc2.her] [npc2.fingers] по [npc.namePos] [npc.lips+], [npc2.name] ухмыляется, когда [npc2.her] движение встречает долгий, эротичный [npc.moan]. [npc.her] поворачивает голову, когда [npc.she] переводит [npc.her] взгляд обратно на тебя, и [npc.name] задирает [npc.her] задницу, виляя ею из стороны в сторону, пока [npc.she] дразнит тебя, [npc.speech(Давай, [pc.name], трахай меня хорошенько и жестко, пока я ласкаю [npc2.name] своим ртом!)]
 		#ELSE
 			 Обходя [npc.name] спереди, [npc2.name] разворачивает [npc2.her] [npc2.legConfiguration] тело в сторону, подставляя [npc2.her] пах [npc.herHim], пока [npc.she] [npc2.moansVerb], [npc2.speech(О да, [pc.name] и я устроим тебе незабываемое время, так что просто расслабься и наслаждайся.)]
 		</p>
 		<p>
-			Turning [npc.her] head as [npc.she] shifts [npc.her] focus back onto you, [npc.name] raises [npc.her] ass and shakes it from side to side as [npc.she] teases, [npc.speech(Come on, [pc.name], make sure to give me a good, hard fucking while I pleasure [npc2.name] with my mouth!)]
+			Повернув голову и вновь переведя взгляд на тебя, [npc.name] приподнимает зад и кокетливо покачивает им из стороны в сторону, дразня: [npc.speech(Давай, [pc.name], трахай меня как следует, посильнее и пожестче, пока я ласкаю [npc2.name] ртом!)]
 		#ENDIF
 	</p>
 	<p>
@@ -524,7 +524,7 @@
 	
 	<htmlContent tag="OCCUPANT_TALK_JOB"><![CDATA[
 	<p>
-		Wanting to know how [npc.namePos] job as [npc.a_job] is going, you ask [npc.herHim] how [npc.sheIs] finding it. All too eager to try and impress you with [npc.her] tales of finally being a productive member of society, [npc.name] starts recounting some of [npc.her] recent experiences at work, pausing every now and then to allow you to compliment [npc.herHim] or make a comment on [npc.her] story-telling.
+		Желая узнать, как [npc.namePos] справляется с работой [npc.a_job], ты спрашиваешь [npc.herHim], каково [npc.sheIs] на этой должности. Слишком уж [npc.name] жаждет впечатлить тебя [npc.her] рассказами о том, что наконец-то стал полезным членом общества, и начинает пересказывать [npc.her] недавние рабочие будни, время от времени делая паузы, чтобы ты мог сделать [npc.herHim] комплимент или прокомментировать манеру [npc.her] повествования.
 	</p><p>
 		Спустя некоторое время [npc.name] сводит разговор на нет, напоминая напоследок, что рабочие часы <b>[npc.her] — с [npc.jobStartTime] до [npc.jobEndTime] и с [npc.jobStartDay] до [npc.jobEndDay]</b>.
 	</p>
@@ -564,7 +564,7 @@
 		Хотя Lilaya вечно заперта в своей лаборатории за экспериментами, [npc.name] говорит, что [npc.sheHas] пару раз навещал [npc.herHim]. И хотя [npc.she] утверждает, что Lilaya добра, отзывы [npc.her] о твоей тете далеко не такие теплые и дружелюбные, как те, что [npc.she] отзывался о Rose. Зная, насколько нетерпеливой бывает Lilaya с теми, кто не помогает ей в исследованиях, ты чувствуешь облегчение, слыша, что она хотя бы ведет себя вежливо с [npc.name].
 	</p>
 	<p>
-		With [npc.her] opinions on your aunt and her cat-girl maid now given, [npc.name] smiles happily at you as [npc.she] awaits to hear what you want to talk about next...
+		Теперь, когда [npc.her] высказала своё мнение о твоей тёте и её горничной-кошкоделке, [npc.name] счастливо улыбается тебе, а [npc.she] с нетерпением ждёт, о чём ты захочешь поговорить дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -937,7 +937,7 @@
 		[pc.speech(Конечно, я пойду с тобой!)] — отвечаешь ты с радостной улыбкой, видя, как лицо [npc.namePos] [npc.eyes] озаряется светом. Помогая [npc.herHim] донести один из [npc.her] чемоданов до двери, ты оборачиваешься и спрашиваешь: [pc.speech(Ну так в какую сторону нам идти?)]
 	</p>
 	<p>
-		[npc.speech(It's this way, it won't take too long to get there,)] [npc.name] replies, pulling [npc.her] suitcase along behind [npc.herHim] as [npc.she] sets off down the street. Suddenly remembering [npc.her] other belongings, [npc.she] looks back and apologises, [npc.speech(Oh, sorry, [npc.pcName]! I've left you with my other bag!)]
+		[npc.speech(Сюда, это не займет много времени,)] отвечает [npc.name], таща за собой чемодан [npc.her] вслед за [npc.herHim], пока [npc.she] отправляется в путь по улице. Внезапно вспомнив о других вещах [npc.her], [npc.she] оглядывается и извиняется: [npc.speech(Ой, прости, [npc.pcName]! Я оставила тебя со своей другой сумкой!)]
 	</p>
 	<p>
 		[pc.speech(Не волнуйся, я справлюсь,)] отвечаешь ты, делая шаг вперед и идя рядом с [npc.name], помогая [npc.herHim] перевезти [npc.her] вещи в [npc.her] новую квартиру.
@@ -949,7 +949,7 @@
 		Спустя короткое время возвращается [npc.name]; сжимая в руке ключи от [npc.hand], он радостно подбегает к тебе. [npc.speech(Квартира у меня! Пойдем скорее, поднимемся и осмотрим её!)]
 	</p>
 	<p>
-		Helping [npc.name] carry [npc.her] suitcases up to the second floor, the two of you soon find yourselves stepping into a simply furnished, one-bedroom apartment. While smaller than the room [npc.she] was renting from you, [npc.name] is nevertheless overcome with happiness at finally having [npc.her] own place in which to live. As soon as you place the suitcase you were carrying down on the floor, the [npc.race] throws [npc.herself] at you, wrapping [npc.her] [npc.arms] around your back and pulling you into a loving hug as [npc.she] starts crying, [npc.speech(T-Thank you f-for everything, [npc.pcName]! Y-You're t-the best thing t-that's ever h-happened to me!)]
+Помогая [npc.name] нести [npc.her] чемоданов на второй этаж, вы вскоре оказываетесь в просторной, но скромно обставленной однокомнатной квартире. Хотя она меньше той комнаты, которую [npc.she] снимала у вас, [npc.name] все равно переполняет счастье от того, что у неё наконец-то появилось [npc.her] собственное жилье. Как только вы ставите чемодан, который несли, на пол, [npc.race] бросает [npc.herself] на вас, обвивает [npc.her] [npc.arms] вокруг вашей спины и притягивает к себе в нежных объятиях, пока [npc.she] начинает плакать, [npc.speech(С-спасибо тебе за всё, [npc.pcName]! Т-ты — л-лучшее, ч-что когда-либо со м-мной случалось!)]
 	</p>
 	<p>
 		Прижав [npc.name] к себе, вы какое-то время стоите в объятиях друг друга, пока [npc.she] медленно не отстраняется, шмыгая носом, пока [npc.she] вытирает [npc.her] слезы радости. [npc.speech(П-правда, спасибо тебе огромное, [npc.pcName]. Поверить не могу, что всё это происходит наяву...)]
@@ -965,7 +965,7 @@
 			[npc.speech(Эй, [npc.pcName]...)] — говорит [npc.name] озорным тоном. [npc.speech(Вся эта суматоха с переездом меня так раззадорила... Не хочешь помочь мне снять стресс?)]
 		</p>
 		<p>
-			You look across at [npc.name] to see that [npc.sheHas] a lustful glint in [npc.her] [npc.eye], and you wonder if you should give [npc.herHim] what [npc.she] wants, or just take it easy for the time being...
+			Ты смотришь на [npc.name] и видишь, что в [npc.her] [npc.eye] [npc.sheHas] похотливый блеск, и гадаешь, стоит ли дать [npc.herHim] то, чего [npc.she] хочет, или пока просто расслабиться...
 		</p>
 	#ELSE
 		<p>
@@ -1228,7 +1228,7 @@
 	
 	<htmlContent tag="OCCUPANT_APARTMENT_TALK_JOB"><![CDATA[
 	<p>
-		Wanting to know how [npc.namePos] job as [npc.a_job] is going, you ask [npc.herHim] how [npc.sheIs] finding it. All too eager to try and impress you with [npc.her] tales of finally being a productive member of society, [npc.name] starts recounting some of [npc.her] recent experiences at work, pausing every now and then to allow you to compliment [npc.herHim] or make a comment on [npc.her] story-telling.
+		Желая узнать, как [npc.namePos] справляется с работой [npc.a_job], ты спрашиваешь [npc.herHim], каково [npc.sheIs] на этой должности. Слишком уж [npc.name] жаждет впечатлить тебя [npc.her] рассказами о том, что наконец-то стал полезным членом общества, и начинает пересказывать [npc.her] недавние рабочие будни, время от времени делая паузы, чтобы ты мог сделать [npc.herHim] комплимент или прокомментировать манеру [npc.her] повествования.
 	</p><p>
 		Спустя некоторое время [npc.name] сводит разговор на нет, напоминая напоследок, что рабочие часы <b>[npc.her] — с [npc.jobStartTime] до [npc.jobEndTime] и с [npc.jobStartDay] до [npc.jobEndDay]</b>.
 	</p>

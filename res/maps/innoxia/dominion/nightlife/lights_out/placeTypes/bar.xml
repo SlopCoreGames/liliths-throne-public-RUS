@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[bar]]></name>
-	<tooltipDescription><![CDATA[The long bar in 'Lights Out' can seat up to twenty patrons at once.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the bar in 'Lights Out']]></virginityLossDescription>
+	<name><![CDATA[бар]]></name>
+	<tooltipDescription><![CDATA[За длинной барной стойкой в «Lights Out» могут одновременно разместиться до двадцати посетителей.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у барной стойки в «Lights Out»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

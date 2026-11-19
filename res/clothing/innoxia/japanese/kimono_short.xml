@@ -23,7 +23,7 @@
 			<category id="kimono_pattern" priority="1">
 				<categoryName><![CDATA[Узор]]></categoryName>
 				<sticker id="flowers" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Flowers]]></stickerName>
+					<stickerName><![CDATA[Цветы]]></stickerName>
 					<namePrefix/>
 					<namePostfix priority="1"><![CDATA[(цветы)]]></namePostfix>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ <i>На этом кимоно изображен цветочный узор.</i>]]></descriptionModification>
@@ -34,7 +34,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="blossom" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Blossom]]></stickerName>
+					<stickerName><![CDATA[Цветение]]></stickerName>
 					<namePrefix/>
 					<namePostfix priority="1"><![CDATA[(цветение)]]></namePostfix>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ <i>На этом кимоно изображен узор из цветущей сакуры.</i>]]></descriptionModification>
@@ -45,7 +45,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="none" priority="0" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>

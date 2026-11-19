@@ -35,7 +35,7 @@
 			<category id="badge" priority="1"> 
 				<categoryName><![CDATA[Кокарда]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -46,8 +46,8 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="badge_dominion" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_LUST"> 
-					<stickerName><![CDATA[badge_dominion]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Dominion Patrol Enforcer ]]></namePrefix> 
+					<stickerName><![CDATA[знак_доминиона]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Патрульный Enforcer из Dominion ]]></namePrefix> 
 					<namePostfix/> 
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой шляпе прикреплена кокарда патруля передовой линии Dominion.</i>]]></descriptionModification> 
 					<imageName>bwhat_st_badge_dominion.svg</imageName> 
@@ -63,12 +63,12 @@
 						#ENDIF
 					]]></unavailabilityText> 
 					<availabilityText>
-						As a Patrol Enforcer, you can freely use this cap badge.
+						Как патрульный Enforcer, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText> 
 				</sticker>
 				<sticker id="badge_elis" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_PHYSICAL"> 
-					<stickerName><![CDATA[Elis]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Elis Enforcer ]]></namePrefix>
+					<stickerName><![CDATA[Элис]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Enforcer Элис ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Элиса.</i>]]></descriptionModification>
 					<imageName>bwhat_st_badge_elis.svg</imageName>
@@ -84,11 +84,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As a Patrol Enforcer, you can freely use this cap badge.
+						Как патрульный Enforcer, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 				<sticker id="thinis" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_FIRE">
-					<stickerName><![CDATA[Thinis]]></stickerName>
+					<stickerName><![CDATA[Тонкий]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Тинис]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Тинис.</i>]]></descriptionModification>
@@ -105,11 +105,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As a Patrol Enforcer, you can freely use this cap badge.
+						Как патрульный Enforcer, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 				<sticker id="badge_itzaak" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_POISON">
-					<stickerName><![CDATA[Itza'aak]]></stickerName>
+					<stickerName><![CDATA[Ица'ак]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Ицаак]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Ицаак.</i>]]></descriptionModification>
@@ -126,11 +126,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As a Patrol Enforcer, you can freely use this cap badge.
+						Как патрульный Enforcer, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 				<sticker id="badge_lyonesse" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_COLD">
-					<stickerName><![CDATA[Lyonesse]]></stickerName>
+					<stickerName><![CDATA[Лионесс]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Лионесс]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Лионесс.</i>]]></descriptionModification>
@@ -147,11 +147,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As a Patrol Enforcer, you can freely use this cap badge.
+						Как патрульный Enforcer, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 				<sticker id="badge_cm" priority="6" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_PURPLE">
-					<stickerName><![CDATA[Commissioner]]></stickerName>
+					<stickerName><![CDATA[Комиссар]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Комиссар Enforcer]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон канцелярии Комиссара.</i>]]></descriptionModification>
@@ -168,14 +168,14 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Commissioner, you can freely use this cap badge.
+						Как Enforcer в звании комиссара, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 			</category>
 			<category id="oakleaves" priority="2">
 				<categoryName><![CDATA[Дубовые листья]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="2" colourSelected="TEXT_GREY">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -186,7 +186,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="oakleaves_dm" priority="1" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_PURPLE">
-					<stickerName><![CDATA[Deputy Commissioner]]></stickerName>
+					<stickerName><![CDATA[Заместитель комиссара]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом значке изображен единственный ряд дубовых листьев, соответствующий рангу заместителя комиссара.</i>]]></descriptionModification>
@@ -203,11 +203,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Deputy Commissioner, you can freely use this cap badge.
+						Как Enforcer в звании заместителя комиссара, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 				<sticker id="oakleaves_cm" priority="2" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_PURPLE">
-					<stickerName><![CDATA[Commissioner]]></stickerName>
+					<stickerName><![CDATA[Комиссар]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -224,7 +224,7 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Commissioner, you can freely use this cap badge.
+						Как Enforcer в звании комиссара, ты можешь свободно использовать этот жетон на фуражке.
 					</availabilityText>
 				</sticker>
 			</category>

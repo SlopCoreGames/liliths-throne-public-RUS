@@ -39,13 +39,13 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's hair of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>feathery</descriptor>
-		<descriptor>feather-like</descriptor>
+		<descriptor>пернатый</descriptor>
+		<descriptor>похожий на перья</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feathery</descriptor>
-		<descriptor>feathery-like</descriptor>
+		<descriptor>пернатый</descriptor>
+		<descriptor>подобный перьям</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this hair type.

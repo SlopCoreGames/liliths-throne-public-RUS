@@ -23,7 +23,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Woolly Friends</bookName>
+	<bookName>Шерстистые друзья</bookName>
 	<basicDescriptionId>SHEEP_BASIC</basicDescriptionId>
 	<advancedDescriptionId>SHEEP_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

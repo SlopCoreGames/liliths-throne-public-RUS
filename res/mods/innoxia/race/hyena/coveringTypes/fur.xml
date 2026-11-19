@@ -11,19 +11,19 @@
 	This will most likely be the same as what you define in the 'name' element below, and for that reason it's safe to omit this field entirely, in which case the game will simply use the value in 'name' in transformation menus.
 	This can be useful to define if your covering is of the same general type as something else, but specific to one part of the body.
 	For an example of this in use, take a look at the 'race/innoxia/sheep/coveringTypes/wool_face.xml' file.-->
-	<nameTransformation><![CDATA[fur]]></nameTransformation>
+	<nameTransformation><![CDATA[мех]]></nameTransformation>
 	
 	<!-- The determiner which should be used when describing this covering.
 	For feathers, it would be something like 'a plume of'. -->
 	<determiner><![CDATA[a layer of]]></determiner>
 	
 	<!-- The name of this covering. -->
-	<name><![CDATA[fur]]></name>
+	<name><![CDATA[мех]]></name>
 	
 	<!-- The plural of this covering.
 	The 'pluralByDefault' attribute determines whether or not this covering is by default referred to as a plural.
 	For example, a covering of feathers would be pluralByDefault="true", as it should be referred to as 'a plume of feathers', not 'a plume of feather'. -->
-	<namePlural pluralByDefault="false"><![CDATA[fur]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[мех]]></namePlural> 
 	
 	<!-- Which modifiers this covering should *naturally* have available to it.
 	The first modifier defined will be used as the default modifier, which in this case is 'FLUFFY'.

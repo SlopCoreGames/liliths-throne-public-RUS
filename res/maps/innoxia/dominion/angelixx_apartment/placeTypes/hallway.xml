@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Hallway]]></name>
-	<tooltipDescription><![CDATA[The narrow, carpeted hallways connect the rooms in Angelixx's apartment.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the hallway at Angelixx's apartment]]></virginityLossDescription>
+	<name><![CDATA[Коридор]]></name>
+	<tooltipDescription><![CDATA[Узкие ковровые коридоры соединяют комнаты в квартире Анжеликсы.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре квартиры Анжеликсы]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

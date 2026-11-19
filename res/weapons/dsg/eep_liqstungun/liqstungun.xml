@@ -22,7 +22,7 @@
 		
 		<attackDescriptor>Shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your stun gun.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc2.name] из своего электрошокера.</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		

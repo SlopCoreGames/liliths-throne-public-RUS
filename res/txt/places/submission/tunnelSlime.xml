@@ -10,9 +10,9 @@
 	
 	<htmlContent tag="ATTACK_TRANSFORMER_PLAYER_SLIME"><![CDATA[
 	<p>
-		[npc.speech(Haha! Did I make you jump?)]
-		 [npc.She] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Mmm! You're lookin' good!)]
+		[npc.speech(Ха-ха! Я заставила тебя подпрыгнуть?)]
+		 [npc.She] смеется, продолжая наступать на тебя. Тело [npc.Her] [npc.skinColour] слегка вздрагивает и идет рябью от [npc.her] радостного порыва, и [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Ммм! Выглядишь отлично!)]
 	</p>
 	<p>
 		[npc.Name] внезапно останавливается, после чего кладет [npc.her] руки на [npc.her] [npc.hips+]. Несмотря на подозрительное поведение [npc.her], не похоже, что [npc.she] хочет напасть на тебя, и когда [npc.she] заговаривает снова, это подтверждается. [npc.speech(Не бойся, я не ищу драки или чего-то такого! Я здесь просто по приказу Королевы. Нужно превратить как можно больше путешественников в слаймов и всё в таком духе!)]
@@ -49,9 +49,9 @@
 	
 	<htmlContent tag="ATTACK_TRANSFORMER_SLIME_QUEEN"><![CDATA[
 	<p>
-		[npc.speech(Haha! Did I make you jump?)]
-		 [npc.She] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Mmm! You're gonna make a great slime, I can tell already!)]
+		[npc.speech(Ха-ха! Я заставила тебя подпрыгнуть?)]
+		 [npc.She] смеется, продолжая наступать на тебя. Тело [npc.Her] [npc.skinColour] слегка вздрагивает и идет рябью от [npc.her] радостного порыва, и [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Ммм! Ты будешь отличным слаймом, я уже это вижу!)]
 	</p>
 	<p>
 		[npc.Name] внезапно останавливается, кладет [npc.her] руки на [npc.her] [npc.hips+] и злобно ухмыляется тебе. [npc.speech(Слушай, меня не интересуют твои деньги или всё, что ты там можешь сказать! Королева приказала мне превращать как минимум пятерых человек в слаймов каждый день, и ты — мое счастливое число четыре!)]
@@ -98,9 +98,9 @@
 	
 	<htmlContent tag="ATTACK"><![CDATA[
 	<p>
-		[npc.speech(Haha! Did I make you jump?)]
-		 [npc.She] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(Mmm! Yeah, you look like you've got some cash!)]
+		[npc.speech(Ха-ха! Я заставила тебя подпрыгнуть?)]
+		 [npc.She] смеется, продолжая наступать на тебя. Тело [npc.Her] [npc.skinColour] слегка вздрагивает и идет рябью от [npc.her] радостного порыва, и [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Ммм! Ага, похоже, у тебя припрятано немного денежек!)]
 	</p>
 	<p>
 		[pc.speech(Чего ты хочешь?)]
@@ -218,8 +218,8 @@
 		#ELSE
 			[npc.speech(Ха-ха! Снова ты!)]
 		#ENDIF
-		 The familiar [npc.race] laughs, continuing to advance on you. [npc.Her] [npc.skinColour] body shakes and ripples a little from [npc.her] joyous outburst, and [npc.she] bites [npc.her] lip as [npc.she] eyes you up and down.
-		 [npc.speech(So, you gonna hand over your cash, or what?)]
+		 Знакомая [npc.race] смеется, продолжая наступать на тебя. Тело [npc.Her] [npc.skinColour] слегка вздрагивает и идет рябью от [npc.her] радостного порыва, и [npc.she] прикусывает [npc.her] губу, пока [npc.she] разглядывает тебя с ног до головы.
+		 [npc.speech(Ну так что, отдашь свои денежки или как?)]
 	</p>
 	<p>
 		Ты инстинктивно слегка приседаешь, готовясь к защите.
@@ -270,7 +270,7 @@
 		 [npc.speech(Ммм... Это было хорошо...)]
 	</p>
 	<p>
-		Grinning at the happy little [npc.moaning] noises [npc.name] continues to make, you quickly get your things in order, before moving off and continuing on your way...
+		Усмехаясь от счастливых звуков, которые издает маленький [npc.moaning], ты быстро приводишь свои вещи в порядок, после чего отправляешься в путь, и [npc.name] продолжает свой путь...
 	</p>
 	]]>
 	</htmlContent>
@@ -550,7 +550,7 @@
 		Ты пошатываешься назад, тяжело дыша и опираясь на ближайшую стену, [pc.speech(Ладно... Хватит... Ты победила!)]
 	</p>
 	<p>
-		[npc.Name] can't help but grin as [npc.she] hears those words, and, stepping forwards, [npc.she] places [npc.her] [npc.hands] on [npc.her] [npc.hips] and smirks at you. [npc.speech(Next time, don't bother trying to fight back! You'll only embarrass yourself even more!)]
+		[npc.Name] не может сдержать ухмылки, когда [npc.she] слышит эти слова; сделав шаг вперед, [npc.she] кладет [npc.her] [npc.hands] на [npc.her] [npc.hips] и самодовольно смотрит на тебя. [npc.speech(В следующий раз даже не пытайся сопротивляться! Только еще сильнее опозоришься!)]
 	</p>
 	<p>
 		[pc.speech(Конечно...)]

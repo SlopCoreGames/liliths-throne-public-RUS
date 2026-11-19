@@ -49,9 +49,9 @@
 	<htmlContent tag="PAYMENT"><![CDATA[
 	<p>
 		#IF(pc.isCowardly())
-			Well and truly terrified at the prospect of this [attacker.race] choosing to engage you in physical combat, you hastily grab [#SPECIAL_PARSE_0] flames and offer them to [attacker.herHim]. Letting out an amused chuckle as [attacker.she] sees how scared you are, the [attacker.race] snatches the money from your trembling [pc.hands]
+			По-настоящему напуганный перспективой того, что [attacker.race] решит вступить с тобой в физический бой, ты поспешно хватаешь [#SPECIAL_PARSE_0] огней и предлагаешь [attacker.herHim]. Издавая усмешливый смешок при виде того, как сильно [attacker.she] напуган(а), [attacker.race] выхватывает деньги из твоих дрожащих [pc.hands]
 		#ELSEIF(pc.isBrave())
-			Not wanting to waste any time on this [attacker.race], you grab [#SPECIAL_PARSE_0] flames and offer them to [attacker.herHim]. Letting out an annoyed tut as [attacker.she] sees the stoic look on your face, the [attacker.race] snatches the money from your [pc.hands]
+			Не желая тратить время на эту [attacker.race], ты хватаешь [#SPECIAL_PARSE_0] огней и протягиваешь их [attacker.herHim]. Издавая раздраженное цоканье, когда [attacker.she] видит твое бесстрастное лицо, [attacker.race] выхватывает деньги из твоих [pc.hands]
 		#ELSE
 			Не желая вступать в бой с этим [attacker.race], ты говоришь [attacker.herHim], что готов заплатить пошлину, лишь бы избежать драки. Схватив [#SPECIAL_PARSE_0] огней, ты замираешь на месте, пока [attacker.race] выхватывает деньги из твоих [pc.hands]
 		#ENDIF

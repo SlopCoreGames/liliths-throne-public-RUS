@@ -44,15 +44,15 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's face of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic ryu-like</descriptor>
-		<descriptor>ryu-like</descriptor>
-		<descriptor>draconic</descriptor>
+		<descriptor>антропоморфный, похожий на рю</descriptor>
+		<descriptor>похожий на рю</descriptor>
+		<descriptor>драконьи</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic ryu-like</descriptor>
-		<descriptor>ryu-like</descriptor>
-		<descriptor>draconic</descriptor>
+		<descriptor>антропоморфный, похожий на рю</descriptor>
+		<descriptor>похожий на рю</descriptor>
+		<descriptor>драконьи</descriptor>
 	</descriptorsFeminine>
 	
 	

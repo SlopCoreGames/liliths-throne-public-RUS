@@ -25,31 +25,31 @@
 	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>anthropomorphic, panther-like</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>антропоморфный, пантероподобный</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>anthropomorphic, panther-like</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>антропоморфный, пантероподобный</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsFeminine>
 	
 	<footDescriptorsMasculine>
-		<descriptor>panther-like</descriptor>
+		<descriptor>пантеровский</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>panther-like</descriptor>
+		<descriptor>пантеровский</descriptor>
 	</footDescriptorsFeminine>
 	
 	<toeDescriptorsMasculine>
-		<descriptor>panther-like</descriptor>
+		<descriptor>пантеровский</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>panther-like</descriptor>
+		<descriptor>пантеровский</descriptor>
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

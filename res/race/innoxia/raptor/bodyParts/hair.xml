@@ -16,16 +16,16 @@
 	<namePlural pluralByDefault="true"><![CDATA[головные перья]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
 		Трансформация длится лишь мгновение, оставляя [npc.herHim] с хохолком из перьев вместо волос.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour], птичьи [style.boldRaptor(raptor feathers)].
+<br/>[npc.Name] теперь [npc.has] [npc.hairColour], птичьи [style.boldRaptor(рапторьи перья)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

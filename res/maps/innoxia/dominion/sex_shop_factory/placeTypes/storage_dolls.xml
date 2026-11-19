@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[storage area]]></name>
-	<tooltipDescription><![CDATA[Hundreds of sex dolls are lined up beside one another in identical poses, and dozens of crates hold what must be thousands of sex toys.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the storage area in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[складская зона]]></name>
+	<tooltipDescription><![CDATA[Сотни секс-кукол выстроены в ряд в одинаковых позах, а в десятках ящиков лежат, должно быть, тысячи секс-игрушек.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в складской зоне фабрики под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

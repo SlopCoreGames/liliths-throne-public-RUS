@@ -43,7 +43,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName/>
 	<bookIconName>icon</bookIconName>
-	<bookName>Big Cats</bookName>
+	<bookName>Большие кошки</bookName>
 	<basicDescriptionId>PANTHER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PANTHER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

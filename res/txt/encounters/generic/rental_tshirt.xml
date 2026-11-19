@@ -11,11 +11,11 @@
 			заявляет, [npc.speech(Не могла не заметить, что у тебя написано на футболке. Ты ведь не просто так её надела, а? О, кстати, я [npc.name].)]
 		</p>
 		<p>
-			Knowing what [npc.name] must be thinking, you ask [npc.herHim] if [npc.she] was hoping for you to be [npc.her] '[pc.mommy]'. Nodding [npc.her] head in enthusiastic response, [npc.she] replies, [npc.speech(Yes, I want you to be my [pc.mommy]! I can pay the [style.intFormat([#flags.getSavedLong('rentalPrice')])] flames your t-shirt's asking for. I want to
+			Зная, о чём наверняка думает [npc.name], ты спрашиваешь [npc.herHim], не надеется ли [npc.she], что ты будешь [npc.her] «[pc.mommy]». С энтузиазмом закивав в ответ, [npc.she] восклицает: [npc.speech(Да, я хочу, чтобы ты стала моей [pc.mommy]! Я заплачу все [style.intFormat([#flags.getSavedLong('rentalPrice')])] огней, сколько требует твоя футболка. Я хочу
 			#IF(npc.hasFetish(FETISH_EXHIBITIONIST))
-				 хорошенько и жестко оттрахать тебя прямо здесь, на глазах у всех, кто захочет посмотреть!
+				 хорошенько и жёстко трахнуть тебя прямо здесь, на глазах у всех, кто захочет посмотреть!
 			#ELSE
-				 затащить тебя к себе в квартиру и хорошенько, жестко оттрахать!
+				 затащить тебя к себе в квартиру и хорошенько, жёстко оттрахать!
 			#ENDIF
 			)]
 		</p>

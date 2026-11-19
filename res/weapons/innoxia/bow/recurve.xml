@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[арканные рекурсивные луки]]></namePlural>
 		<description><![CDATA[Плечи этого лука при расслабленном состоянии изгибаются в стороны от лучника, что позволяет накапливать и отдавать больше энергии, чем прямой лук аналогичной конструкции. При натяжении тетивы из накопленной эссенции лучника формируется арканный болт, который и служит стрелой.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Shoot at [npc.name] with your recurve bow.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc.name] из своего рекурсивного лука.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<weaponSet/>
 		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] рекурсивный лук.]]></equipText>

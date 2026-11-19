@@ -33,7 +33,7 @@
 	#ENDVAR
 	
 	<p>
-		[pc.Walking] до огромного склада, из которого работает Dominion Express, ты толкаешь входную дверь и [pc.step] в вестибюль. От основного зала склада это пространство отделено внутренней стеной; здесь обустроена зона ресепшена и ожидания. В одной части этого просторного зала в ряд расставлены несколько диванов и кресел
+		[pc.Walking] к огромному складу, через который работает Dominion Express, ты толкаешь входную дверь и [pc.step] в вестибюль. От основного зала склада это пространство отделено внутренней стеной; здесь обустроена зона ресепшена и ожидания. В одной части этого просторного зала в ряд расставлены несколько диванов и кресел
 		#IF(game.isExtendedWorkTime())
 			, на которых сидят пара бизнесменов, ожидающих встречи с представителями компании.
 		#ELSE
@@ -422,7 +422,7 @@
 	#ENDVAR
 	
 	<p>
-		В дальнем конце коридора виднеется большая открытая арка, соединяющая склад с просторным пристроем. Глядя сквозь неё, становится ясно, что в этом расширении основного здания содержатся все рабыни-кентавры Dominion Express; оно представляет собой несколько длинных коридоров с отдельными стойлами, очень похожими на те, что встречаются в обычных конюшнях.
+	В дальнем конце коридора виднеется большая открытая арка, соединяющая склад с просторным пристроем. Глядя сквозь неё, становится ясно, что в этом расширении основного здания содержатся все рабыни-кентавры Dominion Express; оно представляет собой несколько длинных коридоров с отдельными стойлами, очень похожими на те, что встречаются в обычных конюшнях.
 		#IF(game.isExtendedWorkTime())
 			Поскольку сейчас разгар рабочего дня, большинство стойл пустуют — их постоянные обитательницы разъехались развозить грузы по всему Dominion.
 		#ELSE
@@ -503,7 +503,7 @@
 Предвкушая, что наконец-то получит [style.mule] для обслуживания [npc.herHim], [npc.race] нетерпеливо скребёт лапами землю, а затем отступает и начинает крутиться вокруг, подставляя тебе [npc.her], прежде чем, вильнув [npc.her] хвостом в сторону, [npc.she] демонстрирует тебе [npc.her] [npc.asshole+]. Затем [npc.she] оглядывается через [npc.her] плечо и нетерпеливо требует: [npc.speech(Давай же, [style.mule], ты и так знаешь, что делать! Поцелуй меня в зад, чтобы мы могли начать!)]
 </p>
 	<p>
-		Knowing that you need to show your submission before you can get started, you dutifully kneel down behind [npc.name] and plant a big, wet kiss on [npc.her] [npc.asshole+]. Letting out an excited [npc.moan], [npc.she] turns to one side to show off [npc.her] rapidly-hardening horse-cock, and with a wild gleam in [npc.her] eyes, [npc.she] exclaims, [npc.speech(So, what'll it be, [style.mule]?! You want to suck my cock or bury your face in my ass? Or maybe you want me to mount you and rut your asshole?!)]
+		Понимая, что прежде чем приступить к делу, тебе нужно продемонстрировать покорность, ты послушно опускаешься на колени позади [npc.name] и оставляешь долгий, влажный поцелуй на [npc.her] [npc.asshole+]. Издавая возбужденный [npc.moan], [npc.she] поворачивается боком, демонстрируя свой стремительно твердеющий лошадиный член [npc.her], и с диким блеском в [npc.her] глазах [npc.she] восклицает: [npc.speech(Ну, что выберешь, [style.mule]?! Хочешь сосать мой член или уткнуться лицом в мою задницу? А может, хочешь, чтобы я оседлал тебя и оттрахал твой анус?!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -534,7 +534,7 @@
 		Не успеваешь ты и слова сказать, как [npc.name] с силой толкает тебя на колени, быстро разворачивается и делает шаг назад, с силой втискивая [npc.her] прямо тебе в лицо. Отбросив [npc.her] хвост в сторону, [npc.she] подставляет тебе [npc.her] [npc.asshole+], а затем оглядывается через [npc.her] плечо и нетерпеливо приказывает: [npc.speech(Давай же, [style.mule], ты и сама знаешь, что делать! Одари мою задницу сочным, глубоким поцелуем!)]
 	</p>
 	<p>
-		Knowing that you need to show your submission before you can get started, you dutifully lean forwards and plant a big, wet kiss on [npc.namePos] puffy, ebony horse-anus. Letting out an approving grunt, the [npc.race] quickly turns to one side to show off [npc.her] rapidly-hardening ebony horse-cock, and with a wild gleam in [npc.her] eyes, [npc.she] asks, [npc.speech(What are you waiting for, [style.mule]?! Are you going to put your mouth to work, or am I going to have to mount you and rut your slutty little asshole again?!)]
+Зная, что тебе нужно засвидетельствовать свое почтение, прежде чем можно будет приступить к делу, ты послушно наклоняешься вперед и оставляешь сочный, влажный поцелуй на пухлом, иссиня-черном лошадином анусе [npc.namePos]. Издав одобряющий хрип, [npc.race] быстро поворачивается боком, демонстрируя свой стремительно твердеющий иссиня-черный лошадиный член [npc.her], и с диким блеском в [npc.her] глазах [npc.she] спрашивает: [npc.speech(Чего ты ждешь, [style.mule]?! Ты собираешься взяться ртом за дело, или мне придется снова оседлать тебя и оттрахать твою шлюшью дырочку?!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -724,7 +724,7 @@
 	
 	<htmlContent tag="AFTER_STABLE_SEX_SLEEP_AFTER_WAKEUP_SEX_MOUNTED"><![CDATA[
 	<p>
-		Having had [npc.her] fun, [npc.name] slides [npc.her] cock out of your ass and stands up, leaving you panting and gasping for breath on the pile of straw bedding. Letting out a cheeky laugh, [npc.she] prances around to stand in front of you, before taking a quick sidestep and slapping [npc.her] softening horse-cock down against your face. As you let out a surprised gasp, [npc.she] firmly commands, [npc.speech(You're not finished yet, [style.mule]! If you want those extra couple of points, you'll be a good [style.mule] and clean my cock!)]
+Насладившись [npc.her], [npc.name] вынимает [npc.her] из твоей задницы и встает, оставляя тебя тяжело дышать и хватать ртом воздух на куче соломы. Озорно рассмеявшись, [npc.she] кружится вокруг, чтобы встать перед тобой, а затем делает резкий шаг в сторону и шлепает [npc.her] обмякшим лошадиным членом тебе по лицу. Пока ты издаешь удивленный вздох, [npc.she] властно командует: [npc.speech(Ты еще не закончила, [style.mule]! Если хочешь получить те лишние пару очков, будь хорошей [style.mule] и вылижи мой член!)]
 	</p>
 	<p>
 		Покорно выполняя приказ, ты поднимаешь голову и начинаешь вылизывать и облизывать покрытый спермой член [npc.namePos], ощущая на языке вкус собственной задницы. Спустя всего пару минут тебе удается слизать всю лошадиную смазку с [npc.cockGirth] члена [npc.her], после чего ты отползаешь назад и сообщаешь [npc.herHim], что закончила.
@@ -1419,7 +1419,7 @@
 Одобрительно хмыкнув, [npc.race] похотливо уставится на тебя, пока Наталья заставляет тебя развернуться и подставить свою [pc.ass+] к [npc.herHim]. Обводя пальцами край твоей [pc.asshole+], она дразнит: [natalya.speech(Бьюсь об заклад, ты не можешь дождаться, когда эта малявка [style.mule] закончит свою [pc.her] тренировку, чтобы ты смог как следует оттрахать эту горячую попку [pc.hers]...)]
 </p>
 	<p>
-		The small [natalya.race]'s teasing is having the effect she wanted, as [npc.namePos] massive horse-cock is now fully erect, and there's a significant amount of precum leaking from its flat, flared head. Playfully pouting at her slave, Mistress Natalya reveals, [natalya.speech(Unfortunately, this [style.mule]'s ass isn't ready to be rutted just yet. Instead, you're here to help [pc.herHim] train [pc.her] blowjob skills. Now let [pc.herHim] show you [pc.her] submission so that [pc.she] can get started!)]
+		Дразнилки маленькой [natalya.race] приносят желаемый эффект: огромный конский член [npc.namePos] уже полностью эрегирован, а из его плоской, расширенной головки сочится немало предэякулята. Игриво надув губы перед своей рабыней, госпожа Наталья произносит: [natalya.speech(К сожалению, задница этой [style.mule] еще не готова к тому, чтобы ее трахали. Вместо этого ты здесь, чтобы помочь [pc.herHim] отточить [pc.her] навыки минета. А теперь позволь [pc.herHim] показать тебе [pc.her] покорность, чтобы [pc.she] могла начать!)]
 	</p><p>
 	Издав очередной стон, [npc.name] оборачивается на месте и отводит [npc.her] хвост в сторону, подставляя тебе [npc.her] пухлый, [npc.assholeColour] анус. Быстро шлепнув тебя по заднице, госпожа Наталья напоминает: [natalya.speech(Правило здесь, в Dominion Express, гласит, что [style.mules] должны сначала поцеловать анус своего партнера, чтобы все понимали — [style.mule] это покорная, обожающая анал шлюшка! Так что давай, [style.mule], одари [npc.namePos] анус сочным, влажным поцелуем, и тогда сможешь приняться сосать [npc.her] член!)]
 </p>
@@ -1537,7 +1537,7 @@
 				Повинуясь приказу, ты раздеваешься так быстро, как только можешь, после чего поднимаешь взгляд на госпожу и говоришь, что готов.
 		#ENDIF
 	#IF(pc.isAbleToWearMakeup())
-				Голодно прикусив губу и разглядывая твоё обнаженное тело, [natalya.race] дразнит тебя: [natalya.speech(Ты pretty little [style.mule], но если ты и впрямь хочешь сводить с ума всех моих крупных и сильных парней и девок, тебе не помешают кое-какие финальные штрихи...)]
+				Голодно прикусив губу и разглядывая твоё обнаженное тело, [natalya.race] дразнит тебя: [natalya.speech(Ты милая маленькая [style.mule], но если ты и впрямь хочешь сводить с ума всех моих крупных и сильных парней и девок, тебе не помешают кое-какие финальные штрихи...)]
 		</p>
 		<p>
 			Открыв верхний ящик своего стола, госпожа Наталья достает три ярко раскрашенных тюбика помады, после чего протягивает их тебе со словами: [natalya.speech(Если хорошенько накрасить губы, я уверена, что из тебя получится та самая грязная [style.mule] шлюшка, которая за гроши обслуживает лошадиные задницы. Выбирай любую, [style.mule]; уже через минуту ты будешь красить мою дырочку теми губами, какой цвет выберешь!)]
@@ -1787,7 +1787,7 @@
 	
 	<htmlContent tag="OFFICE_STABLE_TRAINING_3_SLAVE_ENTRY_OBEY_END"><![CDATA[
 	<p>
-		Before you can react, [npc.name] drops down into a kneeing position and immediately shuffles back, forcefully pushing [npc.her] puffy, saliva-coated asshole into your face. Letting your previous training take over, you eagerly resume where you left off just a minute ago, and after planting a passionate kiss on [npc.her] ebony doughnut, you bury your face into the [npc.race]'s ass and start greedily tonguing [npc.her] puffy asshole.
+	Прежде чем ты успеваешь среагировать, [npc.name] опускается на колени и тут же отъезжает назад, с силой прижимая [npc.her] пухлый, покрытый слюной анус к твоему лицу. Позволив накопленному опыту взять верх, ты с жадностью продолжаешь с того места, на котором остановился минуту назад, и, запечатлев страстный поцелуй на [npc.her] угольно-черном колечке, ты утыкаешься лицом в задницу [npc.race] и начинаешь жадно вылизывать [npc.her] пухлый анус.
 	</p><p>
 		Когда ты начинаешь ласкать [npc.name] ртом, ты снова чувствуешь, как плоская, расширенная головка огромного лошадиного члена госпожи Натальи прижимается к твоей заднице. Потратив несколько мгновений на то, чтобы обильно смазать твою [pc.asshole+] предэякулятом, маленькая [natalya.race] издаёт звонкое ржание и вгоняет свой [natalya.cockGirth] лошадиный член в твой задний проход. От этого резкого толчка твоё лицо вжимается в [npc.namePos] мускулистое анус, и ты невольно издаёшь приглушённый стон, пока госпожа Наталья триумфально визжит: [natalya.speech(~Ммм!~ Твоя задница такая классная, [style.mule]! ~Ооо!~ Тебе ведь нравится чувствовать себя грязной маленькой задроткой, а?! Давай, [style.mule], подавайся назад и принимай его глубже!)]
 </p>
@@ -1987,7 +1987,7 @@
 	
 	<htmlContent tag="OFFICE_STABLE_FILLY_RECEIVE_RIMJOB"><![CDATA[
 	<p>
-		Желая вовсю использовать тот факт, что ты — единственная [style.mule] золотого ранга в Dominion Express, ты подставляешь свой [pc.ass+] госпоже Наталье и приказываешь ей сделать тебе римджоб. Зная, что она связана условиями контракта, властная [natalya.race] неохотно обходит свой стол и опускается на пол позади тебя. С гневной гримасой на лице она огрызается: [natalya.speech(Поверить не могу, что ты заставляешь меня это делать, мелкий паршивый [style.mule]! Только не вздумай зазнаться; я всё ещё твоя Госпожа!)]
+		Желая вовсю использовать тот факт, что ты — единственная [style.mule] золотого ранга в Dominion Express, ты подставляешь свою [pc.ass+] госпоже Наталье и приказываешь ей сделать тебе римджоб. Зная, что она связана условиями контракта, властная [natalya.race] неохотно обходит свой стол и опускается на пол позади тебя. С гневной гримасой на лице она огрызается: [natalya.speech(Поверить не могу, что ты заставляешь меня это делать, мелкий паршивый [style.mule]! Только не вздумай зазнаться; я всё ещё твоя Госпожа!)]
 	</p>
 	]]>
 	</htmlContent>

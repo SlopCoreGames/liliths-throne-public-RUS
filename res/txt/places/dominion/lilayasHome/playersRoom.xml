@@ -156,11 +156,11 @@
 	<htmlContent tag="BED_SEX_START"><![CDATA[
 	#IF([#SPECIAL_PARSE_0])
 		<p>
-			Before you can react, [npc.name] lowers [npc.herself] down over the top of you, pressing [npc.her] [npc.lips+] against yours and pulling you into a passionate kiss. Breaking it off a moment later, [npc.her] [npc.hands] start to roam down and grope your body as your horny slave [npc.moans], [npc.speech(Don't worry, [pc.name], I'll make this good for you as well...)]
+			Прежде чем ты успеваешь среагировать, [npc.name] опускает [npc.herself] на тебя, прижимая [npc.her] [npc.lips+] к твоим и вовлекая тебя в страстный поцелуй. Мгновение спустя, прервав его, [npc.her] [npc.hands] начинают спускаться ниже и ласкать твое тело, пока твоя похотливая рабыня [npc.moans], [npc.speech(Не волнуйся, [pc.name], я тоже сделаю так, чтобы тебе было хорошо...)]
 		</p>
 	#ELSE
 		<p>
-			[#SPECIAL_PARSE_1] had obviously conspired to wait until you'd gone to sleep before pinning you down and having their way with you. Before you can react to the situation, [npc.name] lowers [npc.herself] down over the top of you, pressing [npc.her] [npc.lips+] against yours and pulling you into a passionate kiss. Leaning in on one side of you, [npc2.name] [npc2.moans], [npc2.speech(Don't worry, [pc.name], we'll make this good for you as well...)]
+			[#SPECIAL_PARSE_1] явно сговорились дождаться, пока ты уснешь, чтобы прижать тебя к постели и взять свое. Прежде чем ты успеваешь осознать ситуацию, [npc.name] опускает [npc.herself] на тебя, прижимая [npc.her] [npc.lips+] к твоим и вовлекая тебя в страстный поцелуй. Прильнув к тебе с одной стороны, [npc2.name] [npc2.moans], [npc2.speech(Не волнуйся, [pc.name], мы тоже сделаем так, чтобы тебе было хорошо...)]
 		</p>
 	#ENDIF
 	]]>
@@ -169,11 +169,11 @@
 	<htmlContent tag="BED_SEX_START_SLEEP"><![CDATA[
 	#IF([#SPECIAL_PARSE_0])
 		<p>
-			Before you can react, [npc.name] lowers [npc.herself] down over the top of you, pressing [npc.her] [npc.lips+] against yours and pulling you into a passionate kiss. Breaking it off a moment later, [npc.her] [npc.hands] start to roam down and grope your body as your horny slave [npc.moans], [npc.speech(Don't worry, [pc.name], I'll make this good for you as well...)]
+			Прежде чем ты успеваешь среагировать, [npc.name] опускает [npc.herself] на тебя, прижимая [npc.her] [npc.lips+] к твоим и вовлекая тебя в страстный поцелуй. Мгновение спустя, прервав его, [npc.her] [npc.hands] начинают спускаться ниже и ласкать твое тело, пока твоя похотливая рабыня [npc.moans], [npc.speech(Не волнуйся, [pc.name], я тоже сделаю так, чтобы тебе было хорошо...)]
 		</p>
 	#ELSE
 		<p>
-			[#SPECIAL_PARSE_1] had obviously conspired to wait until you'd gone to sleep before pinning you down and having their way with you. Before you can react to the situation, [npc.name] lowers [npc.herself] down over the top of you, pressing [npc.her] [npc.lips+] against yours and pulling you into a passionate kiss. Leaning in on one side of you, [npc2.name] [npc2.moans], [npc2.speech(Don't worry, [pc.name], we'll make this good for you as well...)]
+			[#SPECIAL_PARSE_1] явно сговорились дождаться, пока ты уснешь, чтобы прижать тебя к постели и взять свое. Прежде чем ты успеваешь осознать ситуацию, [npc.name] опускает [npc.herself] на тебя, прижимая [npc.her] [npc.lips+] к твоим и вовлекая тебя в страстный поцелуй. Прильнув к тебе с одной стороны, [npc2.name] [npc2.moans], [npc2.speech(Не волнуйся, [pc.name], мы тоже сделаем так, чтобы тебе было хорошо...)]
 		</p>
 	#ENDIF
 	]]>

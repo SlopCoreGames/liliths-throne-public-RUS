@@ -5,16 +5,16 @@
 	
 	<htmlContent tag="SEX_START"><![CDATA[
 	<p>
-		Putting on your most seductive voice, you step close to [npc.name] and ask, [pc.speech(You know, if you're feeling stressed from all this work, maybe I could help you to blow off some steam?)]
+		Приняв самый соблазнительный вид и понизив голос, ты подходишь вплотную к [npc.name] и спрашиваешь: [pc.speech(Знаешь, если ты так устала от всей этой работы, может, я помогу тебе немного расслабиться?)]
 	</p>
 	<p>
-		A desperate little whine escapes from [npc.her] mouth, and before you can say anything else, the [npc.race] grabs you by the [pc.arm] and pulls you towards where [npc.her] cart is parked. Covering the distance in just a few long strides, [npc.name] leads you around to the other side of the vehicle, where you discover that the many wooden boxes which constitute the cart's cargo blocks the view down a narrow alley from the rest of the street.
+		Из уст [npc.her] вырывается отчаянный тихий стон, и прежде чем ты успеваешь что-то сказать, [npc.race] хватает тебя за [pc.arm] и тянет к тому месту, где припаркована [npc.her]. Сделав всего несколько широких шагов, [npc.name] ведет тебя за другую сторону повозки, где ты обнаруживаешь, что многочисленные деревянные ящики, составляющие груз, закрывают вид на узкий переулок с остальной части улицы.
 	</p>
 	<p>
-		[npc.speech(Ah, fuck! I'm so horny!)] [npc.name] whines, pulling you a little way down the alley before turning and wrapping [npc.her] arms around you. [npc.speech(I was told Dominion was the place to go for an easy fuck, but I've been so caught up in work that I haven't met anyone but you! Please, let's just fuck already!)]
+		[npc.speech(Ах, блядь! Как же меня штырит!)] — стонет [npc.name], увлекая тебя немного вглубь переулка, а затем разворачивается и обвивает [npc.her] своими руками. [npc.speech(Мне говорили, что в Dominion легко найти развлечение на одну ночь, но я так зарылась в работу, что не встретила никого, кроме тебя! Пожалуйста, давай просто трахнемся уже!)]
 	</p>
 	<p>
-		You can't say no to that, and as [npc.name] presses [npc.her] [npc.lips] against yours, you return the [npc.race]'s passionate embrace...
+		На такое невозможно ответить отказом, и когда [npc.name] прижимает [npc.her] [npc.lips] к твоим, ты отвечаешь на [npc.race] страстные объятия...
 	</p>
 	]]>
 	</htmlContent>
@@ -25,7 +25,7 @@
 	<htmlContent tag="ENCOUNTER_START"><![CDATA[
 	#IF(game.getDialogueFlags().hasEncounteredReindeer(npc.getId()))
 		<p>
-			Wanting to speak with [npc.name] again, you look around for a little while, before eventually spotting [npc.herHim] issuing orders to some of [npc.her] workers. Walking up to [npc.herHim], you call out a greeting, [pc.speech(Hi, [npc.name]!)]
+		Желая снова поговорить с [npc.name], ты некоторое время оглядываешься по сторонам, пока наконец не замечаешь, как [npc.herHim] раздает указания некоторым [npc.her] рабочим. Подойдя к [npc.herHim], ты окликаешь её: [pc.speech(Привет, [npc.name]!)]
 		</p>
 		<p>
 			[npc.Name] поворачивается, чтобы увидеть, кто зовёт [npc.herHim], и вы видите, как улыбка разрывает лицо [npc.her], когда [npc.she] видит, что это вы. [npc.speech(Привет снова, [pc.name]!)]
@@ -42,23 +42,23 @@
 		</p>
 		#IF(game.getDialogueFlags().hasEncounteredAnyReindeers())
 			<p>
-				Feeling happy now that you've found the overseer for this particular group, you reply, [pc.speech(What sort of goods do you have? I've spoken with another overseer already, and they mostly had Yuletide-related clothing, food and drink, as well as some clothing from the youko.)]
+				Чувствуя радость от того, что ты наконец нашла смотрителя этой группы, ты отвечаешь: [pc.speech(Какие товары у вас есть? Я уже говорила с другим смотрителем, у них в основном была рождественская одежда, еда и напитки, а также кое-какая одежда ёкко.)]
 			</p>
 			<p>
-				The [npc.race] smiles as [npc.she] answers, [npc.speech(Well, all of us reindeer-morphs travel together, so we've got the same goods as any of the other groups. Still, if you'd like to take a look, just let me know.)]
+				[npc.race] улыбается, когда [npc.she] отвечает: [npc.speech(Ну, все мы, олени-морфы, путешествуем вместе, так что у нас те же товары, что и у любой другой группы. Но если хочешь взглянуть, просто дай мне знать.)]
 			</p>
 		#ELSE
 			<p>
-				Feeling happy now that you've got an opportunity to talk to one of these reindeer-morphs, you reply, [pc.speech(What sort of goods do you have? And where did all of you come from? I haven't seen reindeer-morphs here in Dominion before.)]
+				Радуясь возможности поговорить с одним из этих оленей-морфов, ты спрашиваешь: [pc.speech(Какие товары у вас есть? И откуда вы все взялись? Раньше я не видела оленей-морфов здесь, в Dominion.)]
 			</p>
 			<p>
-				The [npc.race] smiles as [npc.she] answers, [npc.speech(We travel here from our homeland out in the frozen tundra every winter. We stay here to work until the end of February, which is when it stops snowing, and then we migrate back to the tundra for the rest of the year, which is why you haven't seen us before. As to what goods I can offer, we've brought plenty of the food, drink, and clothing that we make in our homeland. We travelled through the Shinrin highlands this year, so I also have some of the youko's traditional clothing which we traded for.)]
+				[npc.race] улыбается, когда [npc.she] отвечает: [npc.speech(Каждую зиму мы приходим сюда из нашей родины, что лежит в замерзшей тундре. Мы остаемся здесь работать до конца февраля, когда перестает идти снег, а затем мигрируем обратно в тундру на остаток года — вот почему ты не видела нас раньше. Что касается товаров, которые я могу предложить, мы привезли с собой много еды, напитков и одежды, которую делаем на родине. В этом году мы путешествовали через высокогорье Синрин, так что у меня также есть немного традиционной одежды ёкко, которую мы выменяли.)]
 			</p>
 		#ENDIF
 	#ENDIF
 	#IF(game.getDialogueFlags().hasWorkedForReindeer(npc.getId()))
 		<p>
-			[npc.Name] smiles fondly at you for a brief moment and says,
+			[npc.Name] на мгновение нежно улыбается тебе и говорит:
 			#IF(game.getDialogueFlags().hasFuckedReindeer(npc.getId()) && npc.isAttractedTo(pc))
 				 [npc.speech(Спасибо за помощь сегодня, [pc.name]; я очень ценю это. Ты знаешь... мне бы хотелось немного расслабиться... Ты хочешь снова немного повеселиться?)]
 			#ELSE
@@ -103,20 +103,20 @@
 			Зная, что твоя плохая работа, безусловно, приведет к снижению твоей зарплаты, ты смиряешься с тем, что ты не так силен, как думал. Следующие несколько часов проходят достаточно быстро, и к тому времени, когда дневная работа закончена, ты чувствуешь себя совершенно измученным.
 		</p>
 		<p>
-			[npc.speech(Hi, [pc.name]! Good work today!)] [npc.name] calls out, mercifully not mentioning your sub-par performance as [npc.she] pays you. [npc.speech(Here's the [#SPECIAL_PARSE_0] flames you've earned today!)]
+			[npc.speech(Привет, [pc.name]! Отличная работа сегодня!)] — окликает [npc.name], милосердно не упоминая о твоей посредственной работе, пока [npc.she] платит тебе. [npc.speech(Вот твои [#SPECIAL_PARSE_0] Огни, которые ты заработал сегодня!)]
 		</p>
 	#ELSEIF(pc.hasStatusEffect(SE_PHYSIQUE_PERK_2) || pc.hasStatusEffect(SE_PHYSIQUE_PERK_3))
 		<p>
-			Setting off to where the other reindeer-morphs are working, you get stuck in and start shovelling snow. Although it's harder work than you first though it would be, you're able to keep up with the reindeer-morphs, and even manage to shovel a little more snow than a couple of them.
+			Отправляясь туда, где работают остальные морфы-олени, ты впрягаешься в дело и начинаешь грести снег. Хотя работа оказывается тяжелее, чем ты думал поначалу, тебе удается не отставать от морфов-оленей, и ты даже умудряешься перекидать чуть больше снега, чем парочка из них.
 		</p>
 		<p>
-			[npc.speech(Great work, [pc.name],)] the voice of [npc.name] calls out, and you turn around to see [npc.herHim] approach, [npc.speech(everyone else here is used to this sort of work, and you're managing to keep up with them! Just make sure to take a rest if you're feeling tired.)]
+			[npc.speech(Отличная работа, [pc.name],)] — раздается голос [npc.name], и ты оборачиваешься, видя приближающегося [npc.herHim]: [npc.speech(все остальные здесь привыкли к такой работе, и ты вполне справляешься! Только не забывай отдыхать, если почувствуешь усталость.)]
 		</p>
 		<p>
-			Knowing that your good performance will undoubtedly result in an increase to your wages, you keep working at the same pace. The next few hours pass quickly enough, and by the time the day's work is done, you find yourself satisfied with your performance.
+			Зная, что твои старания несомненно приведут к увеличению платы, ты продолжаешь работать в том же темпе. Следующие несколько часов проходят довольно быстро, и к тому времени, как рабочий день подходит к концу, ты чувствуешь удовлетворение от проделанной работы.
 		</p>
 		<p>
-			[npc.speech(Hi, [pc.name]! Great work today!)] [npc.name] calls out, sounding genuinely pleased as [npc.she] pays you. [npc.speech(Here's the [#SPECIAL_PARSE_0] flames you've earned today!)]
+			[npc.speech(Привет, [pc.name]! Великолепная работа сегодня!)] — окликает [npc.name], звуча искренне довольным, пока [npc.she] платит тебе. [npc.speech(Вот твои [#SPECIAL_PARSE_0] Огни, которые ты заработал сегодня!)]
 		</p>
 	#ELSE
 		<p>
@@ -149,24 +149,25 @@
 			Несмотря на ободряющие слова [npc.namePos], ты не можешь не чувствовать, что не полностью используешь истинную силу посоха. Тем не менее, следующие несколько часов проходят достаточно быстро, и вскоре вся улица очищена от снега.
 		</p>
 		<p>
-			[npc.speech(Hi [pc.name]! Good work today!)] [npc.name] says as [npc.she] pays you. [npc.speech(Here's the [#SPECIAL_PARSE_0] flames you've earned!)]
+			[npc.speech(Привет, [pc.name]! Отличная работа сегодня!)] — говорит [npc.name], пока [npc.she] платит тебе. [npc.speech(Вот твои [#SPECIAL_PARSE_0] огней!)]
 		</p>
 	#ELSEIF(pc.hasStatusEffect(SE_INTELLIGENCE_PERK_2) || pc.hasStatusEffect(SE_INTELLIGENCE_PERK_3))
 		<p>
-			Setting off to the area where the reindeer-morphs will need to clear next, you do as [npc.name] instructed, and point the bottom of the staff at the mounds of snow while focusing your arcane energy into it. A small jet of flames shoots out of the staff, and by tracing a path over the snow, you're able to quickly melt it into pre-cut sections, ready for the reindeer-morphs to shovel.
+			Отправляясь в район, который следующим предстоит расчистить оленеморфам, ты поступаешь так, как велел(а) [npc.name]: направляешь нижнюю часть посоха на сугробы, концентрируя в нём свою арканную энергию. Из посоха вырывается тонкая струя пламени, и, прочерчивая путь по снегу, ты быстро плавишь его на заранее нарезанные секции, которые оленеморфам останется только разгрести.
 		</p>
 		<p>
-			[npc.speech(Looking great, [pc.name],)] the voice of [npc.name] calls out, and you turn around to see [npc.herHim] approach. [npc.speech(With you helping out like this, the rest of the day's work shouldn't take too long.)]
+			[npc.speech(Выглядит великолепно, [pc.name],)] — раздается голос [npc.name], и ты оборачиваешься, видя приближающуюся [npc.herHim]. [npc.speech(С такой помощью, как твоя, остальная часть работы сегодня не должна занять много времени.)]
 		</p>
 		<p>
-			Encouraged by [npc.namePos] words, you set about harnessing the staff's power to break up the snow. The next few hours pass quickly enough, and before long the entire street is clear.
+			Воодушевленный(ая) словами [npc.namePos], ты принимаешься использовать силу посоха, чтобы разбивать снег. Следующие несколько часов проходят довольно быстро, и вскоре вся улица оказывается расчищена.
 		</p>
 		<p>
-			[npc.speech(Hi, [pc.name]! Great work today!)] [npc.name] beams at you as [npc.she] pays you. [npc.speech(Here's the [#SPECIAL_PARSE_0] flames you've earned!)]
+			[npc.speech(Привет, [pc.name]! Отличная работа сегодня!)] [npc.name] сияет, глядя на тебя, пока [npc.she] платит тебе. [npc.speech(Вот твои [#SPECIAL_PARSE_0] огней!)]
 		</p>
 	#ELSE
 		<p>
-			Setting off to the area where the reindeer-morphs will need to clear next, you do as [npc.name] instructed, and point the bottom of the staff at the mounds of snow while focusing your arcane energy into it. An intense jet of flames blasts out of the staff, and by tracing a path over the snow, you're able to almost-instantly melt it into pre-cut sections, ready for the reindeer-morphs to shovel.
+		
+Отправляясь к участку, который следующим предстоит расчистить оленеморфам, ты поступаешь так, как велел(а) [npc.name]: направляешь нижнюю часть посоха на сугробы, концентрируя в нем свою арканную энергию. Из посоха вырывается мощная струя огней; прочерчивая ими путь по снегу, ты почти мгновенно плавишь его на заранее намеченные секции, готовые к тому, чтобы оленеморфы их перекидали.
 		</p>
 		<p>
 			[npc.speech(Вау, [pc.name]!)] Голос [npc.name] зовёт, и ты поворачиваешься, чтобы увидеть, как [npc.herHim] подходит, [npc.speech(Я даже не подозревал, что у посоха столько силы! Я никогда не видел, чтобы кто-то использовал его таким образом! С твоей помощью мы должны закончить в кратчайшие сроки!)]
@@ -190,23 +191,27 @@
 			Отправившись в район, где работают олени-оборотни, ты делаешь то, что тебе указал [npc.name], и начинаешь спрашивать каждого, не хотят ли они выпить. Рабочие гораздо менее благодарны за твои усилия, чем ты ожидал, и вскоре ты начинаешь сожалеть о своём решении помочь таким образом. 
 		</p>
 		<p>
-			[npc.speech(Good work, [pc.name],)] the voice of [npc.name] calls out, and you turn around to see [npc.herHim] approach and declare, [npc.speech(With you helping out like this, the rest of the day's work shouldn't take too long.)]
+		
+[npc.speech(Хорошая работа, [pc.name],)] — раздается голос [npc.name]. Ты оборачиваешься и видишь приближающуюся [npc.herHim], которая заявляет: [npc.speech(С такой помощью, как твоя, остальная часть сегодняшней работы не должна занять много времени.)]
 		</p>
 		<p>
-			Despite [npc.namePos] encouraging words, you can't help but feel as though you're not doing very well. Nevertheless, the next few hours pass quickly enough, and before long the entire street is clear of snow.
+		
+Несмотря на ободряющие слова [npc.namePos], ты не можешь избавиться от ощущения, что справляешься не так уж хорошо. Тем не менее, следующие несколько часов проходят достаточно быстро, и вскоре вся улица оказывается очищена от снега.
 		</p>
 		<p>
-			[npc.speech(Hi, [pc.name]! Good work today!)] [npc.name] says as [npc.she] pays you. [npc.speech(Here's the [#SPECIAL_PARSE_0] flames you've earned!)]
+		
+[npc.speech(Привет, [pc.name]! Отличная работа сегодня!)] — говорит [npc.name], пока [npc.she] платит тебе. [npc.speech(Вот твои [#SPECIAL_PARSE_0] огней, которые ты заработал(а)!)]
 		</p>
 	#ELSEIF(pc.hasStatusEffect(SE_CORRUPTION_PERK_2) || pc.hasStatusEffect(SE_CORRUPTION_PERK_3))
 		<p>
-			Setting off to the area where the reindeer-morphs are working, you do as [npc.name] instructed and start asking each one if they'd like a drink. The workers seem to appreciate your efforts, especially when you take time out to flirt with them each time you bring them their requested beverages.
+		
+Отправляясь к месту, где трудятся оленеморфы, ты следуешь указаниям [npc.name] и начинаешь спрашивать каждого, не желает ли он выпить. Рабочие, кажется, ценят твои старания, особенно когда ты находишь время пофлиртовать с ними каждый раз, когда приносишь им заказанные напитки.
 		</p>
 		<p>
-			[npc.speech(Great work, [pc.name],)] the voice of [npc.name] calls out, and you turn around to see [npc.herHim] approach and declare, [npc.speech(With you helping out like this, the rest of the day's work shouldn't take too long.)]
+			[npc.speech(Отличная работа, [pc.name],)] — раздается голос [npc.name], и ты оборачиваешься, видя, как [npc.herHim] подходит к тебе и заявляет: [npc.speech(С такой помощью, как твоя, остальная часть работы сегодня не должна занять много времени.)]
 		</p>
 		<p>
-			Encouraged by [npc.namePos] words, you continue serving drinks to the reindeer-morphs and flirting with them to encourage them to work harder. In this manner, the next few hours pass quite quickly, and before long the entire street is clear of snow.
+			Воодушевленная словами [npc.namePos], ты продолжаешь разносить напитки оленеморфам, кокетливо заигрывая с ними, чтобы те работали усерднее. Таким образом следующие несколько часов проходят довольно быстро, и вскоре вся улица оказывается очищена от снега.
 		</p>
 		<p>
 			[npc.speech(Привет, [pc.name]! Отличная работа сегодня!)] [npc.name] говорит, когда [npc.she] платит тебе. [npc.speech(Вот твои [#SPECIAL_PARSE_0] кредиты / огни (Flames)!)]

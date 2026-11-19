@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[raiding party]]></name>
-	<tooltipDescription><![CDATA[A group of demonic centaurs are looting buildings in this area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the streets of Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[отряд налетчиков]]></name>
+	<tooltipDescription><![CDATA[Группа демонических кентавров грабит здания в этой области.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на улицах Фемискиры]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>GENERIC_BAD</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

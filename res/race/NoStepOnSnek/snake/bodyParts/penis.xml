@@ -24,7 +24,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)] как [npc.her] член принимает новую форму, и [npc.sheIs] накрывает волной непреодолимого возбуждения, пока [npc.her] ствол наливается твердостью. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотая воздух, головка [npc.her] члена сужается, становясь более заостренной в своей новой форме.
 		<br/>[npc.She] теперь [npc.has] [style.boldSnake(змеиный член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldSnake([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldSnake(snake cum)].
+		<br/>[npc.She] [npc.has] [style.boldSnake([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldSnake(змеиную сперму)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] змеиный член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].

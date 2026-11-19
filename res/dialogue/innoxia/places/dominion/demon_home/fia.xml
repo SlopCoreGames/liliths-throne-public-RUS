@@ -142,7 +142,7 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[5]]></index>
 						<responseTitle><![CDATA[Виски (#IF(pc.getMoney()>=120 && !flags.hasFlag(FLAG_innoxia_fia_bar_alcohol_refused))[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-						<responseTooltip><![CDATA[#IF(pc.getMoney()<120)You can't afford any more whiskey...#ELSEIF(flags.hasFlag(FLAG_innoxia_fia_bar_alcohol_refused))The barman is unwilling to serve you any more alcohol tonight...#ELSEYou've run out of whiskey so decide to order some more.#ENDIF]]></responseTooltip>
+						<responseTooltip><![CDATA[#IF(pc.getMoney()<120)Тебе уже не по карману покупать виски...#ELSEIF(flags.hasFlag(FLAG_innoxia_fia_bar_alcohol_refused))Бармен не желает больше наливать тебе Алкоголь сегодня вечером...#ELSEУ тебя закончился виски, и ты решаешь заказать еще.#ENDIF]]></responseTooltip>
 						<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=120 && !flags.hasFlag(FLAG_innoxia_fia_bar_alcohol_refused))innoxia_places_dominion_demon_home_fia_talk#ELSEnull#ENDIF]]></nextDialogue>
 						<effects><![CDATA[
 							[#flags.setSavedLong('fia_whiskey_sips', 0)]
@@ -160,7 +160,7 @@
 					<index><![CDATA[6]]></index>
 					<responseTitle><![CDATA[
 						#IF(pc.isQuestCompleted(QUEST_LINE_SIDE_SLIME_QUEEN))
-							Slime Queen
+							Королева Slime
 						#ELSE
 							???
 						#ENDIF

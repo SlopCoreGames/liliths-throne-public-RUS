@@ -14,31 +14,31 @@
 	<name><![CDATA[щупальце]]></name>
 	<namePlural><![CDATA[щупальца]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>suckered</descriptor>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>присосками</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>suckered</descriptor>
-		<descriptor>octopus-like</descriptor>
-		<descriptor>slender</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>присосками</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
+		<descriptor>тонкие</descriptor>
 	</descriptorsFeminine>
 	<footDescriptorsMasculine>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</footDescriptorsFeminine>
 	<toeDescriptorsMasculine>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</toeDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Слой гладкой кожи быстро покрывает [npc.her] [npc.legs], которые пугающим образом начинают напоминать щупальца. Эта стремительная трансформация завершается тем, что [npc.name] обретает [npc.her] новую кожу, плавно переходящую в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.
-		<br/>[npc.Name] теперь [npc.has] [style.boldOctopus(octopus-like legs)], которые [npc.materialDescriptor] [npc.legFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldOctopus(похожие на щупальца ноги)], которые [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		[npc.Her] осьминогоподобная нижняя часть тела [npc.materialCompositionDescriptor] [npc.legFullDescription(true)].

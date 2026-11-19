@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[hallway]]></name>
-	<tooltipDescription><![CDATA[The only way in and out of Meraxis's hideout is via this small hallway.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Meraxis's hideout]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Единственный путь в убежище Мераксиса и обратно лежит через этот узкий коридор.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в убежище Мераксиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

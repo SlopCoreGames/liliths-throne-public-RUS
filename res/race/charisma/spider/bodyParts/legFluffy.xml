@@ -16,28 +16,28 @@
 	<name><![CDATA[нога]]></name>
 	<namePlural><![CDATA[ноги]]></namePlural> 
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>anthropomorphic, spider-like</descriptor>
-		<descriptor>chitinous</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>антропоморфный, паукообразный</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>anthropomorphic, spider-like</descriptor>
-		<descriptor>chitinous</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>антропоморфный, паукообразный</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</descriptorsFeminine>
 	<footDescriptorsMasculine>
-		<descriptor>chitinous</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>chitinous</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</footDescriptorsFeminine>
 	<toeDescriptorsMasculine>
-		<descriptor>segmented</descriptor>
+		<descriptor>сегментированный</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>segmented</descriptor>
+		<descriptor>сегментированный</descriptor>
 	</toeDescriptorsFeminine>
 	<transformationDescription><![CDATA[Слой паукообразного хитина быстро нарастает на [npc.her] ноги, пока они принимают новую форму. По мере того как [npc.her] новый хитин распространяется до самых кончиков [npc.her] пальцев, он раздваивается вокруг суставов, придавая им сегментированный вид, в результате чего [npc.him] обретает плоскостопые, паучьи ступни. На этом твердом хитине прорастает слой хитиновых волосков, напоминающих мех, который быстро окутывает [npc.her] ноги целиком. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новые хитиновые пластины резко переходят в [npc.skin], покрывающие остальную часть [npc.her] тела, на уровне [npc.her] верхней части бедра.
 <br/>[npc.Name] теперь [npc.has] [style.boldSpider(плоскостопые, паукообразные ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].]]></transformationDescription>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Themiscyra smithies]]></name>
-	<tooltipDescription><![CDATA[The place where weapons and armour were once made with which to equip the town's all-female army.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside the smithies in Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[Кузницы Фемискиры]]></name>
+	<tooltipDescription><![CDATA[Место, где когда-то ковали оружие и доспехи для снаряжения исключительно женской армии города.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с кузницами в Фемискире]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_STEEL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

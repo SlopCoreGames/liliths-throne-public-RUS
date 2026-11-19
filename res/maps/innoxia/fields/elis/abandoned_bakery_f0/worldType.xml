@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[abandoned bakery F0]]></name>
+	<name><![CDATA[заброшенная пекарня F0]]></name>
 	<colour>BASE_TAN</colour>
-	<sexBlockedReason><![CDATA[[npc.Name] cannot have sex here!]]></sexBlockedReason> 
+	<sexBlockedReason><![CDATA[[npc.Name] нельзя здесь заниматься сексом!]]></sexBlockedReason> 
 	<furniturePresent>true</furniturePresent>
 	<wallsPresent>true</wallsPresent>
 	<loiteringEnabled>false</loiteringEnabled>

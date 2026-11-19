@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[VIP door]]></name>
-	<tooltipDescription><![CDATA[The counters at the Bank of Elis are staffed by bank employees, who are able to help customers with all matters relating to their accounts.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the counters in the Bank of Elis]]></virginityLossDescription>
+	<name><![CDATA[Дверь для VIP-персон]]></name>
+	<tooltipDescription><![CDATA[За стойками Банка Элиса стоят сотрудники, готовые помочь клиентам по любым вопросам, связанным с их счетами.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у стоек в Банке Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -6,18 +6,18 @@
 	
 	<race>innoxia_hyena</race>
 	
-	<transformationName><![CDATA[hyena]]></transformationName>
+	<transformationName><![CDATA[гиена]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[hyena-]]></name>
+		<name><![CDATA[гиена-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[hyena-]]></name>
+		<name><![CDATA[гиена-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

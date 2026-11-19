@@ -49,15 +49,15 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's face of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic salamander-like</descriptor>
-		<descriptor>salamander-like</descriptor>
-		<descriptor>reptilian</descriptor>
+		<descriptor>антропоморфная саламандроподобная</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
+		<descriptor>рептилоидные</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic salamander-like</descriptor>
-		<descriptor>salamander-like</descriptor>
-		<descriptor>reptilian</descriptor>
+		<descriptor>антропоморфная саламандроподобная</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
+		<descriptor>рептилоидные</descriptor>
 	</descriptorsFeminine>
 	
 	

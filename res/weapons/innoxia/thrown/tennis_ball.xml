@@ -14,8 +14,8 @@
 		<namePlural pluralByDefault="false"><![CDATA[теннисные мячи]]></namePlural>
 		<description><![CDATA[Наполненный воздухом мяч из прочной резины, предназначенный для игры в теннис. Он покрыт ворсистым фетром с белой полосой, идущей по кругу овальной кривой.]]></description>
 		<attackDescriptor>throw</attackDescriptor>
-		<attackDescriptionPrefix>throw tennis ball at</attackDescriptionPrefix>
-		<attackTooltipDescription>Throw the tennis ball at [npc2.name].</attackTooltipDescription>
+		<attackDescriptionPrefix>бросить теннисный мяч в</attackDescriptionPrefix>
+		<attackTooltipDescription>Брось теннисный мяч в [npc2.name].</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		
 		<equipText><![CDATA[[npc.Name] [npc.verb(берет)] [npc.her] теннисный мяч и [npc.verb(готовится)] его бросить.]]></equipText>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[This corridor serves to link all of the hideout's bedrooms.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Meraxis's hideout]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Этот коридор связывает все спальни в убежище.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в убежище Мераксиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

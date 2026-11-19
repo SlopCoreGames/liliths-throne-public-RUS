@@ -16,47 +16,47 @@
 	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsFeminine>
 	
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>claw-like</descriptor>
-		<descriptor>rodent</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>когтеобразный</descriptor>
+		<descriptor>грызуний</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>claw-like</descriptor>
-		<descriptor>rodent</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>когтеобразный</descriptor>
+		<descriptor>грызуний</descriptor>
 	</handDescriptorsFeminine>
 	
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>claw-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>rodent</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>когтеобразный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>грызуний</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>claw-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>rodent</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>когтеобразный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>грызуний</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

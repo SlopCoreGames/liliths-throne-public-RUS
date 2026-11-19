@@ -14,12 +14,12 @@
 	<names/>
 	<namesPlural/>
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic snake-like</descriptor>
-		<descriptor>snake-like</descriptor>
+		<descriptor>антропоморфный змееподобный</descriptor>
+		<descriptor>змеиный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic snake-like</descriptor>
-		<descriptor>snake-like</descriptor>
+		<descriptor>антропоморфный змееподобный</descriptor>
+		<descriptor>змеиный</descriptor>
 	</descriptorsFeminine>
 	<noseName><![CDATA[нос]]></noseName>
 	<noseNamePlural><![CDATA[носы]]></noseNamePlural>
@@ -39,6 +39,6 @@
 		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], преимущественно человеческое лицо [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], и лишь пара характерных клыков выдает его змеиную природу.
 	]]></bodyDescription>
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено #IF(game.isSillyModeEnabled())very boopable snoot#ELSE muzzle#ENDIF.
+		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено #IF(game.isSillyModeEnabled())очень милый носик, который так и хочется ткнуть#ELSE морда#ENDIF.
 	]]></bodyDescriptionFeral>
 </face>

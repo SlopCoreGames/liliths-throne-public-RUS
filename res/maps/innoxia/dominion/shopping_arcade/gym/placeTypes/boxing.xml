@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[boxing rings]]></name>
-	<tooltipDescription><![CDATA[Punch bags and free weights surround a couple of boxing rings.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the gym, 'Pix's Playground']]></virginityLossDescription>
+	<name><![CDATA[ринги для бокса]]></name>
+	<tooltipDescription><![CDATA[Боксерские груши и свободные веса окружают пару боксерских рингов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спортзале «Игровая площадка Пикса»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREEN_DARK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

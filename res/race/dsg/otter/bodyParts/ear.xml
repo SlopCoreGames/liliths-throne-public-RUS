@@ -34,16 +34,16 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's ear of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>otter-like</descriptor>
-		<descriptor>lutrine</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
+		<descriptor>выдриный</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>otter-like</descriptor>
-		<descriptor>lutrine</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
+		<descriptor>выдриный</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this ear type.
@@ -56,12 +56,12 @@
 		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
 		 и когда трансформация завершается, [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми вытянутыми ушами, похожими на выдриные.
-		<br/>[npc.Name] теперь [npc.has] [style.boldOtter(rounded, otter-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldOtter(округлые, выдриные уши)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How this ear is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пара округлых,#IF(npc.isPiercedEar()) pierced,#ENDIF otter-like ears, which can fold back to sit very close to [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара округлых,#IF(npc.isPiercedEar()) проколотые,#ENDIF выдриные уши, которые могут прижиматься назад, плотно прилегая к [npc.her] голове, и являются [npc.materialCompositionDescriptor] [npc.earFullDescription(истинные)].
 	]]></bodyDescription>
 	
 </ear>

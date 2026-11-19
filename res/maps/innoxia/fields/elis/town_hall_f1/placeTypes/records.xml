@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[archives]]></name>
-	<tooltipDescription><![CDATA[Containing dozens of shelving units, this room holds records on the administrative history of Elis.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in one of the archive rooms in Elis's town hall tower]]></virginityLossDescription>
+	<name><![CDATA[архивы]]></name>
+	<tooltipDescription><![CDATA[В этой комнате, заставленной десятками стеллажей, хранятся записи об административной истории Элиса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в одной из архивных комнат в башне ратуши Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_TEAL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

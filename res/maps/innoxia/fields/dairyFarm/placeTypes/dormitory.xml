@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Dormitory]]></name>
-	<tooltipDescription><![CDATA[This large room contains dozens of bunk beds, and an adjacent wetroom provides shower and toilet facilities to the farm's workers.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the dormitory at Evelyx's Dairy]]></virginityLossDescription>
+	<name><![CDATA[Спальня]]></name>
+	<tooltipDescription><![CDATA[В этой большой комнате стоят десятки двухъярусных кроватей, а примыкающая к ней душевая комната обеспечивает работников фермы душем и туалетом.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спальне молочной фермы Эвеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_AQUA</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

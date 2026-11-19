@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[арканные мушкеты]]></namePlural>
 		<description><![CDATA[Благодаря твоим усилиям и стараниям Мераксиса, городок Элис производит столько этих арканных мушкетов, сколько только может. Вместо пуль эти гладкоствольные длинноствольные ружья выпускают сгустки арканной энергии, давая даже самому неопытному ополченцу шанс выстоять против демонических кентавров Лунетт.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Point your musket at [npc.name] and fire!</attackTooltipDescription>
+		<attackTooltipDescription>Нацель мушкет на [npc.name] и стреляй!</attackTooltipDescription>
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>
 		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] арканный мушкет.]]></equipText>

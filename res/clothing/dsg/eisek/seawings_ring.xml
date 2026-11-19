@@ -35,7 +35,7 @@
 			<category id="inscription" priority="1"> 
 				<categoryName><![CDATA[Надпись]]></categoryName> 
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected=""> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -46,7 +46,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="scratches" priority="1" defaultSticker="false" zLayer="1" colourSelected="55a2d5"> 
-					<stickerName><![CDATA[Scratches]]></stickerName> 
+					<stickerName><![CDATA[Царапины]]></stickerName> 
 					<namePrefix/> 
 					<namePostfix/> 
 					<descriptionModification fullReplacement="true" priority="1"><![CDATA[Редкий образец мастерства эпохи до Драконопада; это кольцо Лисофия дарила тем, кого считала особенно преданными. Большинство современных драконов видят в них символ рабства, но немногие хранят их как семейные реликвии, напоминая себе об ошибках древних времен. Когда-то надпись гласила «верный слуга», но [eisek.Name] выцарапал(а) слово «слуга», превратив мрачный артефакт в символ надежды на будущее, проведенное рядом с тобой.]]></descriptionModification> 

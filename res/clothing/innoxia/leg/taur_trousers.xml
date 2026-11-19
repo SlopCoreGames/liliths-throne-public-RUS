@@ -99,7 +99,7 @@
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] focuses [npc.her] thoughts on unzipping [npc.her] taur-trousers, and, sure enough, the weak telekinetic enchantment sets to work, soon allowing [npc.herHim] to take them off by pulling them up and over [npc.her] head.]]>
+      <![CDATA[[npc.Name] сосредотачивает [npc.her] мысли на том, чтобы расстегнуть [npc.her] тавр-брюки, и, как и ожидалось, слабое телекинетическое зачарование принимается за дело, вскоре позволяя [npc.herHim] снять их, подтянув и стянув через [npc.her] голову.]]>
     </self>
     <other>
       <![CDATA[[npc.Name] [npc.verb(unzip)] штаны тавра [npc2.namePos], а затем натягивает их на голову [npc2.her].]]>

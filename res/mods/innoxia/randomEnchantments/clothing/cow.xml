@@ -43,12 +43,12 @@
 		If this element returns nothing, or if only whitespace is returned, then no prefix will be added. -->
 	<namePrefix><![CDATA[
 		#IF(flags.getInt('rapidTF')<33)
-			Powerful
+			Мощный
 		#ENDIF
 	]]></namePrefix>
 	<!-- namePostfix assigns text after the clothing's type name.
 		e.g. A namePostfix of 'of the cow', when applied to a ring, would result in the name being 'Ring of the cow' -->
-	<namePostfix><![CDATA[of the cow]]></namePostfix>
+	<namePostfix><![CDATA[коровьего]]></namePostfix>
 	<!-- namePrefix and namePostfix can be used in combination with each other.
 		So, for example, if you define them as so:
 			<namePrefix><![CDATA[Holy]]></namePrefix> 

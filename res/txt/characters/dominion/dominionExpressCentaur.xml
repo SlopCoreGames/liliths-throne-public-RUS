@@ -31,62 +31,62 @@
 			#ELSE
 				Когда ты [pc.walk] по улице
 			#ENDIF
-, вы вдруг замечаете, что [npc.a_race] быстро бежит прямо к вам. Поворачиваясь к [npc.herHim], вы замечаете, что ваш взгляд прикован к [npc.cockSize], эрегированному конскому пенису между [npc.her] дикими задницами. Осознав, что эта явно возбужденная [npc.race] должна быть одной из работок Dominion Express, вы слушаете, как [npc.she] хрипит, [npc.speech(Я видела твою [style.mule] ошейник с другой стороны улицы! Пожалуйста, ты должен помочь мне получить немного облегчения! Я дам тебе [#SPECIAL_PARSE_0] [style.mule] баллов, пожалуйста, просто [#SPECIAL_PARSE_1]!)]		#ENDIF
+, вы вдруг замечаете, что [npc.a_race] быстро бежит прямо к вам. Поворачиваясь к [npc.herHim], вы замечаете, что ваш взгляд прикован к [npc.cockSize], эрегированному конскому пенису между [npc.her] дикими задницами. Осознав, что эта явно возбужденная [npc.race] должна быть одной из работок Dominion Express, вы слушаете, как [npc.she] хрипит, [npc.speech(Я видела твой [style.mule] ошейник с другой стороны улицы! Пожалуйста, ты должен помочь мне получить немного облегчения! Я дам тебе [#SPECIAL_PARSE_0] [style.mule] баллов, пожалуйста, просто [#SPECIAL_PARSE_1]!)]		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		Stepping away from you, [npc.name] quickly turns around and flicks [npc.her] tail to one side, presenting you with [npc.her] puffy, feral horse-anus. Clearly not at all bothered by the fact that you're in such a public place, [npc.she] looks back over [npc.her] shoulder and demands, [npc.speech(Come on, [style.mule]! Kiss my ass so that we can get started!)]
+		Отходя от вас, [npc.name] быстро разворачивается и отбрасывает [npc.her] хвост в сторону, демонстрируя вам [npc.her] припухлый, дикий лошадиный анус. Явно не беспокоясь о том, что вы находитесь в таком людном месте, [npc.she] оглядывается через [npc.her] плечо и требует: [npc.speech(Давай же, [style.mule]! Поцелуй мою задницу, чтобы мы могли начать!)]
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="INITIAL_ENCOUNTER_REFUSED"><![CDATA[
 	<p>
-		Not wanting to service this slave right now, you tell [npc.herHim] that [npc.sheIs] going to have to find another [style.mule] to give [npc.herHim] what [npc.she] wants. Letting out a frantic, desperate whine, the [npc.race] doesn't stick around to argue, and instead canters off
+		Не желая обслуживать эту рабыню прямо сейчас, вы говорите [npc.herHim], что [npc.sheIs] придется найти другого [style.mule], чтобы дать [npc.herHim] то, чего [npc.she] хочет. Издав отчаянный, жалобный скулеж, [npc.race] не задерживается, чтобы спорить, а вместо этого галопом уносится
 		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			 towards the stables in search for another [style.mule].
+			 в сторону конюшен в поисках другого [style.mule].
 		#ELSE
 			#IF(pc.getLocationPlace().getPlaceType()==PLACE_TYPE_DOMINION_BOULEVARD)
-				 down the wide boulevard in search for another [style.mule].
+				 вниз по широкому бульвару в поисках другого [style.mule].
 			#ELSE
-				 down the street in search for another [style.mule].
+				 вниз по улице в поисках другого [style.mule].
 			#ENDIF
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		After taking a moment to watch [npc.herHim] leave, you turn around and prepare to continue on your way...
+		Понаблюдав мгновение за тем, как уходит [npc.herHim], ты разворачиваешься и готовишься продолжить свой путь...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="INITIAL_ENCOUNTER_BLOWJOB_START"><![CDATA[
 	<p>
-		Seeing no reason to refuse [npc.namePos] request, you obediently drop down behind [npc.her] feral hindquarters,
+		Не видя причин отказывать просьбе [npc.namePos], ты послушно опускаешься позади диких задних частей [npc.her],
 		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			 and in full view of the rest of the warehouse,
+			 и на виду у всех остальных на складе,
 		#ELSE
-			 and in full view of the public,
+			 и на виду у публики,
 		#ENDIF
-		 you plant a wet, passionate kiss on [npc.her] puffy, horse-like asshole. Pulling back and smiling to yourself as you hear [npc.herHim] let out a deep [npc.moan], you quickly shuffle around beneath [npc.her] horse body, before leaning in to deliver a long, wet lick up the length of [npc.her] throbbing horse-cock.
+		 ты оставляешь влажный, страстный поцелуй на пухлом, лошадином анусе [npc.her]. Отстранившись и улыбаясь про себя при звуке глубокого [npc.moan], который издает [npc.herHim], ты быстро перебираешь ногами под лошадиным телом [npc.her], прежде чем наклониться и провести долгим, влажным языком по всей длине пульсирующего лошадиного члена [npc.her].
 	</p>
 	<p>
-		[npc.speech(That's it [style.mule]! ~Mmm!~ Suck my cock!)] [npc.name] desperately calls out, and, not wanting to keep [npc.herHim] waiting, you open wide and take the flat, flared head of [npc.her] feral horse-cock into your mouth. As your partner lets out yet another desperate [npc.moan], you lewdly wrap your [pc.lips+] around [npc.her] [npc.cockGirth], hot shaft and start eagerly giving [npc.herHim] the blowjob [npc.she] was looking for...
+		[npc.speech(Вот так, [style.mule]! ~Ммм!~ Соси мой член!)] — отчаянно выкрикивает [npc.name], и, не желая заставлять [npc.herHim] ждать, ты широко открываешь рот и берешь плоскую, расширенную головку дикого лошадиного члена [npc.her] в рот. Когда твой партнер издает еще один отчаянный [npc.moan], ты похотливо обвиваешь свои [pc.lips+] вокруг [npc.her] [npc.cockGirth], горячего ствола, и с жадностью начинаешь делать [npc.herHim] тот самый минет, которого [npc.she] так ждал...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="INITIAL_ENCOUNTER_RIMJOB_START"><![CDATA[
 	<p>
-		Seeing no reason to refuse [npc.namePos] request, you obediently drop down behind [npc.her] feral hindquarters,
+		Не видя причин отказывать просьбе [npc.namePos], ты послушно опускаешься позади диких задних частей [npc.her],
 		#IF(pc.getWorldLocation()==WORLD_TYPE_DOMINION_EXPRESS)
-			 and in full view of the rest of the warehouse,
+			 и на виду у всех остальных на складе,
 		#ELSE
-			 and in full view of the public,
+			 и на виду у публики,
 		#ENDIF
-		 you plant a wet, passionate kiss on [npc.her] puffy, horse-like asshole. Pulling back and smiling to yourself as you hear [npc.herHim] let out a deep [npc.moan], you deliver a few more big, wet kisses and licks to the rim of [npc.her] [npc.asshole+], before shuffling forwards and eagerly burying your face in [npc.her] feral horse-ass.
+		 ты оставляешь влажный, страстный поцелуй на пухлом, лошадином анусе [npc.her]. Отстранившись и довольно улыбаясь, когда ты слышишь, как [npc.herHim] издает глубокий [npc.moan], ты оставляешь еще несколько долгих, влажных поцелуев и облизываний края [npc.her] [npc.asshole+], после чего подаешься вперед и с жадностью утыкаешься лицом в дикий лошадиный зад [npc.her].
 	</p>
 	<p>
-		[npc.speech(That's it [style.mule]! ~Mmm!~ Eat my ass!)] [npc.name] desperately calls out, and, more than happy to give [npc.herHim] what [npc.she] wants, you push your [pc.tongue+] into [npc.her] ass and start passionately performing anilingus on [npc.herHim]. Encouraged to keep on going by the series of lewd, [npc.moans+] that burst out from [npc.namePos] mouth, you lewdly press your [pc.lips+] against [npc.her] puffy, feral horse-anus and continue giving [npc.herHim] the rimjob [npc.she] was looking for...
+		[npc.speech(Вот так, [style.mule]! ~Ммм!~ Отсоси мне в зад!)] [npc.name] отчаянно выкрикивает, и, более чем готовый дать [npc.herHim] то, чего [npc.she] хочет, ты вжимаешь свой [pc.tongue+] в [npc.her] задницу и начинаешь страстно ласкать [npc.herHim] языком. Воодушевленный серией похотливых, [npc.moans+], вырывающихся из рта [npc.namePos], ты бесстыдно прижимаешься своим [pc.lips+] к [npc.her] пухлой, дикой лошадиной анусу и продолжаешь дарить [npc.herHim] тот самый римджоб, который [npc.she] так жаждала...
 	</p>
 	]]></htmlContent>
 	

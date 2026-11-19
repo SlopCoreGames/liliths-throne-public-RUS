@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Meraxis's room]]></name>
-	<tooltipDescription><![CDATA[Having lost a duel to Meraxis, the tavern's owner has surrendered possession of this room to the chuuni [meraxis.race].]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Meraxis's room at 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[Комната Мераксиса]]></name>
+	<tooltipDescription><![CDATA[Проиграв дуэль Мераксису, владелец таверны уступил эту комнату чоунному [meraxis.race].]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в комнате Мераксиса в таверне «Рыжий дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>room</svgName>
 	<colour>BASE_PURPLE</colour>

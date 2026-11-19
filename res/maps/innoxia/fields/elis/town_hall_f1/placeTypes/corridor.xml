@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[landing]]></name>
-	<tooltipDescription><![CDATA[This landing separates the tower's central staircase from the rooms which surround it.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the landing of Elis's town hall tower]]></virginityLossDescription>
+	<name><![CDATA[площадка]]></name>
+	<tooltipDescription><![CDATA[Эта площадка отделяет центральную лестницу башни от окружающих её комнат.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на площадке башни ратуши Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

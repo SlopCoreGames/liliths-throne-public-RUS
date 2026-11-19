@@ -9,7 +9,7 @@
 		Поначалу зловещую тишину, пропитавшую эти мрачные катакомбы, нарушает лишь шорох мусора, который вы с напарником поднимаете под ногами, но чем дальше вы идете, тем отчетливее слышишь слабые звуки чьих-то движений где-то далеко позади. Осознав, что за вами следят, и не желая нечаянно угодить в засаду, которая может подстерегать впереди, ты замираешь на месте и оборачиваешься навстречу преследователям.
 	</p>
 	<p>
-		[npc.speech(Imps...)] шепчет [npc.Name], и спустя мгновение [npc.sheIs] оказывается прав: из-за дальнего поворота появляются четыре беса. Двое из них крупнее остальных, и хотя их крылья кажутся достаточно большими для полета, они предпочитают идти по земле, в то время как двое других, бесов поменьше, порхают в воздухе чуть позади.
+		[npc.speech(Бесы...)] шепчет [npc.Name], и спустя мгновение [npc.sheIs] оказывается прав: из-за дальнего поворота появляются четыре беса. Двое из них крупнее остальных, и хотя их крылья кажутся достаточно большими для полета, они предпочитают идти по земле, в то время как двое других, бесов поменьше, порхают в воздухе чуть позади.
 	</p>
 	<p>
 		Все четверо бесов одеты в скудные лохмотья, и, возможно, из-за того, что им удобнее летать, чем ходить, ты замечаешь, что на двух мелких бесах совсем нет обуви. Однако больше всего твое внимание привлекает то, что двое крупных бесов вооружены. Один из них держит кусок металлической трубы и грубый деревянный щит, а другой, кажется, вооружен зачарованным коротким луком.
@@ -69,7 +69,7 @@
 		</p>
 	#ELSE
 		<p>
-			[npc2.speech(This stupid [pc.insult]'s got [pc.her] mouth blocked! Fucking [pc.insult]!)] [npc2.name] spits in disgust. Turning to [npc2.her] subordinate, [npc2.she] snaps, [npc2.speech(Save that potion for the next one we catch! Let's just fuck whatever holes we can with this [pc.insult].)]
+			[npc2.speech(У этой тупой [pc.insult] рот забит [pc.her]! Чертова [pc.insult]!)] [npc2.name] сплевывает в отвращении. Повернувшись к подчиненному [npc2.her], [npc2.she] рявкает: [npc2.speech(Прибереги это зелье для следующего, кого мы поймаем! Давайте просто трахнем все дырки, которые сможем, с этой [pc.insult].)]
 		</p>
 		<p>
 		
@@ -86,7 +86,7 @@
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 		#THEN[npc.speech(Конечно, [pc.name],)] [npc.name] отвечает. [npc.speech(Если ты действительно хочешь, чтобы я так поступил...)]
-		#ELSE[npc.speech([pc.Name]! W-What the hell?!)] [npc.name] replies in alarm. [npc.speech(I-I really don't want to do that!)]
+		#ELSE[npc.speech([pc.Name]! Ч-что за чертовщина?!)] [npc.name] отвечает в тревоге. [npc.speech(Я... я правда не хочу этого делать!)]
 		#ENDIF
 	</p>
 	<p>
@@ -127,7 +127,7 @@
 		</p>
 	#ELSE
 		<p>
-			[npc2.speech(This stupid [npc.insult]'s got [npc.her] mouth blocked! Fucking [npc.insult]!)] [npc2.name] spits in disgust. Turning to [npc2.her] subordinate, [npc2.she] snaps, [npc2.speech(Save that potion for the next one we catch! Let's just fuck whatever holes we can with this [npc.insult].)]
+			[npc2.speech(У этой тупой [npc.insult] рот забит [npc.her]! Чертова [npc.insult]!)] [npc2.name] сплевывает в отвращении. Повернувшись к подчиненному [npc2.her], [npc2.she] рявкает: [npc2.speech(Прибереги это зелье для следующего, кого мы поймаем! Давайте просто трахнем все дырки, которые сможем, с этой [npc.insult].)]
 		</p>
 		<p>
 			Без лишних предупреждений, [npc2.name] подается вперед, хватает [npc.namePos] за затылок и ставит [npc.herHim] на четвереньки. [npc2.speech(Вниз, [npc.insult]! Пора стать нашей послушной секс-игрушкой!)]
@@ -160,7 +160,7 @@
 		К твоему облегчению, [npc.name] вырывает [npc.her] голову из хватки [npc2.namePos], после чего выплевывает трансформирующую жидкость прямо на пол. Сопротивление [npc.Her] тут же встречается резкой пощечиной, сопровождаемой громким визгом, когда [npc2.name] отшвыривает пустую бутылку в сторону. [npc2.speech(Ты, гребаная [npc.insult]! Твою мать! Ты хоть знаешь, каких трудов стоит боссу достать эти зелья для нас?! Чертова тупая [npc.insult]!)]
 	</p>
 	<p>
-		Knowing what the alternative was, [npc2.namePos] insults prove easy for [npc.name] to weather, and [npc.she] simply casts [npc.her] gaze to the floor as [npc.she] waits for [npc2.name] to calm down. As [npc.she] does this, however, you see [npc2.name] suddenly reach forwards, and, grabbing your companion by the back of the neck, [npc2.she] forces [npc.herHim] down onto all fours. [npc2.speech(Get down, [npc.insult]! If you can't do something so simple as drinking a potion, all you're good for is being a fuck-toy for us to use!)]
+Зная, какая альтернатива их ждет, [npc2.namePos] легко выносит оскорбления [npc.name], а [npc.she] просто устремляет [npc.her] взгляд в пол, пока [npc.she] ждет, когда [npc2.name] успокоится. Однако, пока [npc.she] так делает, ты видишь, как [npc2.name] внезапно подается вперед и, схватив твоего спутника за затылок, [npc2.she] заставляет [npc.herHim] опуститься на четвереньки. [npc2.speech(Вниз, [npc.insult]! Если ты не способен на такое простое дело, как выпить зелье, то всё, на что ты годен — это быть нашей подстилкой!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -251,7 +251,7 @@
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 		#THEN[npc.speech(Хорошая мысль, [pc.name],)] отвечает [npc.name]. [npc.speech(Так будет куда легче, чем вступать с ними в бой...)]
-		#ELSE[npc.speech([pc.Name]! W-What the hell?!)] [npc.name] replies in alarm. [npc.speech(I-I really don't want to do that!)]
+		#ELSE[npc.speech([pc.Name]! Ч-что за чертовщина?!)] [npc.name] отвечает в тревоге. [npc.speech(Я... я правда не хочу этого делать!)]
 		#ENDIF
 	</p>
 	<p>
@@ -617,7 +617,7 @@
 					Не имея иного выбора, кроме как подчиниться, ты слизываешь сперму с [npc2.namePos] пальцев
 					#IF pc.isVisiblyPregnant()
 					#THEN.
-					#ELSE, and as you do so, you can't help but wonder if the imp's seed has gotten you pregnant.
+					#ELSE, и в этот момент ты невольно задаешься вопросом, не забеременела ли ты от семени беса.
 					#ENDIF
 					 Поспешно заглатывая соленую жижу, что теперь наполняет твой рот, ты смотришь вверх, как [npc2.name] в последний раз ухмыляется тебе, прежде чем собрать свою [npc2.her] шайку и исчезнуть в темных туннелях Submission.
 				#ELSE
@@ -677,9 +677,9 @@
 					Прежде чем кто-то из вас успевает ответить, [npc2.name] вынимает [npc2.her] пальцы, из-за чего ты и [npc.name] — к немалому удовольствию остальных трех бесов — синхронно издаете [pc.moans]. Когда ты поворачиваешь голову, чтобы оглянуться на [npc2.herHim], [npc2.name] быстро делает шаг вперед,
 					#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 					#THEN
-						#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
-						#THEN
-							 before shoving [npc2.her] cum-coated fingers into your and [npc.namePos] mouths. [npc2.speech(Clean me off, [pc.insultPlural]!)]
+					#IF pc.isAbleToAccessCoverableArea(CA_MOUTH, true)
+					#THEN
+						 заталкивая испачканные в сперме пальцы [npc2.her] тебе и [npc.namePos] в рты. [npc2.speech(Вылижи меня, [pc.insultPlural]!)]
 						#ELSE
 							 прежде чем запихнуть [npc2.her] испачканные в сперме пальцы в рот [npc.namePos] и начать размазывать [npc2.her] другой рукой по твоему лицу. [npc2.speech(Не дергайся, [pc.insultPlural]!)]
 						#ENDIF
@@ -722,9 +722,9 @@
 			#ПОТОМ
 				#IF npc.isVisiblyPregnant()
 				#THEN
-					Suddenly, you see [npc2.name] step around behind your companion, before sliding [npc2.her] fingers into [npc.her] freshly-creampied pussy. [npc.Name] lets out an exhausted moan as [npc.she] feels the sudden penetration, and [npc2.name] leans forwards to snicker, [npc2.speech(Shame yer already knocked up, slut. We could have done with you pumpin' out some more imps to join our gang.)]
+					Внезапно ты видишь, как [npc2.name] обходит твою спутницу со спины, а затем [npc2.her] пальцы скользят в [npc.her] свежезалитую спермой киску. [npc.Name] издает изнуренный стон, когда [npc.she] чувствует внезапное проникновение, а [npc2.name] наклоняется вперед, чтобы хихикнуть, [npc2.speech(Позорница, ты уже забеременела, шлюха. Нам бы не помешало, если бы ты нарожала еще бесов для нашей банды.)]
 				#ELSE
-					Suddenly, you see [npc2.name] step around behind your companion, before sliding [npc2.her] fingers into [npc.her] freshly-creampied pussy. [npc.Name] lets out an exhausted moan as [npc.she] feels the sudden penetration, and [npc2.name] leans forwards to snicker, [npc2.speech(Wonderin' if we got you knocked up, huh, slut? Well, if you get pregnant from this, just send them imp kids of yours this way. We could always do with more gang members!)]
+					Внезапно ты видишь, как [npc2.name] обходит твою спутницу со спины, а затем [npc2.her] пальцы скользят в [npc.her] свежезалитую спермой киску. [npc.Name] издает изнуренный стон, когда [npc.she] чувствует внезапное проникновение, а [npc2.name] наклоняется вперед, чтобы хихикнуть, [npc2.speech(Интересно, мы тебя оплодотворили, а, шлюха? Ну, если забеременеешь от этого, просто присылай своих бесяток к нам. Нам всегда нужны новые члены банды!)]
 				#ENDIF
 				#IF npc.isAbleToAccessCoverableArea(CA_MOUTH, true)
 				#THEN
@@ -778,7 +778,7 @@
 					Почти не имея выбора, кроме как подчиниться приказу [npc.sheIs], [npc.name] слизывает сперму с пальцев [npc2.namePos]
 					#IF npc.isVisiblyPregnant()
 					#ЗАТЕМ.
-					#ELSE, and as [npc.she] do so, you glance down at the imp's seed oozing out of [npc.her] pussy, wondering if it's gotten [npc.herHim] pregnant.
+					#ELSE, и пока [npc.she] это делает, ты бросаешь взгляд вниз на семя беса, сочащееся из [npc.her] киски, гадая, не забеременела ли она от [npc.herHim]
 					#ENDIF
 					Быстро заставив себя проглотить соленую жижу, заполнившую рот [npc.her], [npc.name] поднимает взгляд: [npc2.name] в последний раз ухмыляется, глядя на [npc.herHim], после чего собирает свою банду [npc2.her] и исчезает в темных туннелях Submission.
 				#ELSE

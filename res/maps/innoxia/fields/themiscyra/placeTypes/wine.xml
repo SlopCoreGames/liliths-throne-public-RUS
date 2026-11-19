@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[wine merchants' district]]></name>
-	<tooltipDescription><![CDATA[The residents of Themiscyra had a particular fondness for wine, and as a result an entire wine merchant district sprang up to serve this demand.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the wine merchants' district in Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[квартал торговцев вином]]></name>
+	<tooltipDescription><![CDATA[Жители Фемискиры питали особую страсть к вину, и в результате, чтобы удовлетворить этот спрос, здесь вырос целый квартал торговцев вином.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в квартале торговцев вином в Фемискире]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -601,7 +601,7 @@
 		Убежденный страстной мольбой Lilaya, ты соглашаешься сделать так, как она просит,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speech(Хорошо, Lilaya, используй резонансный камень, чтобы связаться с мамой, а я помогу тебе её убедить.)]
-		#ELSE [pc.speech(Ok, Lilaya, use the resonance stone to contact Lyssieth, and I'll help you to convince her.)]
+		#ELSE [pc.speech(Ладно, Lilaya, используй резонансный камень, чтобы связаться с Lyssieth, а я помогу тебе её убедить.)]
 		#ENDIF
 	</p>
 	]]>
@@ -612,7 +612,7 @@
 		Желая дать Lilaya понять, что ты передумал, ты говоришь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speech(Давай, используй резонансный камень, чтобы связаться с мамой, а я помогу тебе убедить её превратить тебя в полноценного демона.)]
-		#ELSE [pc.speech(Go on, use the resonance stone to contact Lyssieth, and I'll help you to convince her to turn you into a full demon.)]
+		#ELSE [pc.speech(Давай, используй резонансный камень, чтобы связаться с Lyssieth, и я помогу тебе убедить её превратить тебя в полноценного демона.)]
 		#ENDIF
 	</p>
 	]]>
@@ -632,7 +632,7 @@
 		Уже согласившись помочь Лилае, ты обращаешься к матери:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speech(В том, чтобы сделать Лилаю полноценным демоном, ведь нет ничего плохого, правда, мамочка? Этого она хочет больше всего...)]
-		#ELSE [pc.speech(There'd be no harm in making Lilaya a full demon, would there? It's what she really wants...)]
+		#ELSE [pc.speech(В том, чтобы сделать Lilaya полноценным демоном, нет ничего плохого, верно? Это ведь то, чего она хочет на самом деле...)]
 		#ENDIF
 	</p>
 	<p>
@@ -649,7 +649,7 @@
 		Покачав головой, ты отвечаешь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speech(Этот вопрос — между тобой и мамочкой. Я не хочу так вклиниваться между вами, поэтому не могу сделать так, как ты просишь. Прости, Lilaya.)]
-		#ELSE [pc.speech(This issue is between you and mother. I don't want to get between the two of you like this, so I can't do as you ask. Sorry, Lilaya.)]
+		#ELSE [pc.speech(Этот вопрос — между тобой и матерью. Я не хочу вот так вставать между вами, поэтому не могу сделать так, как ты просишь. Прости, Lilaya.)]
 		#ENDIF
 	</p>
 	<p>

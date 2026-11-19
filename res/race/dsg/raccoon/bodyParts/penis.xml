@@ -69,7 +69,7 @@
 	<transformationDescription><![CDATA[
 		Непроизвольно застонав, [npc.name] [npc.verb(feel)] как [npc.her] член принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] стержня внезапно разрастается толстая кожаная оболочка. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотком воздуха, головка [npc.her] члена сужается, принимая свой новый облик.
 		<br/>[npc.She] теперь [npc.has] [style.boldRaccoon(еновий член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldRaccoon([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldRaccoon(raccoon cum)].
+		<br/>[npc.She] [npc.has] [style.boldRaccoon([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldRaccoon(raccoon cum)].
 	]]></transformationDescription>
 	
 	<!-- How this penis is described in a character's description page. -->

@@ -52,7 +52,7 @@
 	This description immediately follows a brief description of the eye type undergoing a transformation. -->
 	<transformationDescription><![CDATA[
 		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они уже превратились в глаза саламандры с вертикальными рептильными зрачками.
-		<br/>[npc.Name] теперь [npc.has] [style.boldSalamander(salamander-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		<br/>[npc.Name] теперь [npc.has] [style.boldSalamander(глаза, подобные глазам саламандры)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<!-- How this eye is described in a character's description page. -->

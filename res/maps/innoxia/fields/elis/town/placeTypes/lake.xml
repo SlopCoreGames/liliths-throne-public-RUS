@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[lake]]></name>
-	<tooltipDescription><![CDATA[There is a relatively large lake to the immediate north-east of Elis, in which fish of many varieties can be found.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the lake to the north-east of Elis]]></virginityLossDescription>
+	<name><![CDATA[озеро]]></name>
+	<tooltipDescription><![CDATA[К северо-востоку от Элиса раскинулось довольно большое озеро, в котором водится множество различных видов рыб.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в озере к северо-востоку от Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE</colour>
 	<backgroundColour>MAP_BACKGROUND_BLUE</backgroundColour>

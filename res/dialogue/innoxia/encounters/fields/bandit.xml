@@ -30,8 +30,8 @@
 						<enemy leader="true"><![CDATA[attacker]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[Refusing to hand over your money, you tell the bandit that [attacker.sheIs] making a mistake as you prepare to defend yourself.]]></combatant>
-						<combatant id="attacker"><![CDATA[Flashing you a wicked smirk, the bandit sneers, [attacker.speech(I'll make you pay, one way or another!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Отказываясь отдать деньги, ты говоришь бандиту, что [attacker.sheIs] совершает ошибку, и готовишься к защите.]]></combatant>
+						<combatant id="attacker"><![CDATA[Одарив тебя злобной ухмылкой, бандит скалится: [attacker.speech(Ты заплатишь, так или иначе!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>
@@ -40,7 +40,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[Заплатить (#IF(pc.getMoney()>=attacker.getPaymentDemand())[style.moneyFormat([#attacker.getPaymentDemand()], span)]#ELSE[style.moneyFormatUncoloured([#attacker.getPaymentDemand()], span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand()) Hand over the [style.intToString([#attacker.getPaymentDemand()])] flames which the bandit is asking for. #ELSE You can't afford to pay off the bandit... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand()) Отдай [style.intToString([#attacker.getPaymentDemand()])] огней, которые требует бандит. #ELSE Тебе не под силу откупиться от бандита... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand())innoxia_encounters_fields_bandit_payment#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString([#attacker.getPaymentDemand()])]', true)]

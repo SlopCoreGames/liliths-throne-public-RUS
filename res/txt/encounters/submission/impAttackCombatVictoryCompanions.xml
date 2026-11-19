@@ -256,7 +256,7 @@
 			#ELSEIF(npc.hasVagina())
 				Пока ты пытаешься поднять взгляд и оглянуться, [npc.name] делает шаг вперед и хватает тебя за подбородок, после чего задирает твою голову и прижимает [npc.her] пах к твоему лицу, [npc.speech(Так тебе нравится, а?! Когда бесская киска трется прямо об твое лицо?!)]
 			#ELSE
-				Пока ты пытаешься поднять взгляд и оглянуться, [npc.name] делает шаг вперед и хватает тебя за подбородок, после чего задирает твою голову и ухмыляется, [npc.speech(Вот как? Значит, ты больше всего на свете любишь... #IF(pc.hasLegs())spreadin' yer legs fer#ELSEgettin' railed by#ENDIF any imp ya come across?!)]
+				Пока ты пытаешься поднять взгляд и оглянуться, [npc.name] делает шаг вперед и хватает тебя за подбородок, после чего задирает твою голову и ухмыляется, [npc.speech(Вот как? Значит, ты больше всего на свете любишь... #IF(pc.hasLegs())раздвигаешь ноги, чтобы#ELSEтебя оттрахал#ENDIF любой бес, которого встретишь?!)]
 			#ENDIF
 		</p>
 		<p>
@@ -342,7 +342,7 @@
 			[pc.speech(Живее, представьте себя!)] — командуешь ты, пока вы с [com.name] загоняете бесов в нужные позиции, заставляя каждого из них встать перед вами на четвереньки.
 		</p>
 		<p>
-			[npc.speech(You [pc.insultPlural]...)] [npc.name] sighs, the tone of [npc.her] voice revealing how desperately turned-on [npc.she] is right now. As you reach forwards and give [npc.her] [npc.ass] a quick slap, [npc.she] lets out a desperate, shuddering [npc.moan], and turns [npc.her] head to look back at you as [npc.she] raises [npc.her] [npc.ass] and [npc.moansVerb], [npc.speech(Come on then! I'm the leader, so you have to fuck me first!)]
+			[npc.speech(Ты [pc.insultPlural]...)] [npc.name] вздыхает, и в [npc.her] голосе слышно, насколько отчаянно [npc.she] сейчас возбуждена. Когда ты подаешься вперед и даешь [npc.her] [npc.ass] звонкую пощечину, [npc.she] издает отчаянный, дрожащий [npc.moan] и поворачивает [npc.her] голову, чтобы посмотреть на тебя, пока [npc.she] приподнимает [npc.her] свои [npc.ass] и [npc.moansVerb], [npc.speech(Ну же! Раз я предводительница, значит, ты должен трахнуть меня первой!)]
 		</p>
 		#IF(game.getNonCompanionCharactersPresent().size()==4)
 			<p>
@@ -524,7 +524,7 @@
 			</p>
 		#ELSE
 			<p>
-				Когда ты поднимаешь взгляд и оглядываешься, [npc.name] делает шаг вперед и берет твою [com.companion] за подбородок, задирая [com.her] голову и ухмыляясь, [npc.speech('А как насчет тебя? Ты ведь обожаешь больше всего на свете... #IF(com.hasLegs())spreadin' yer legs fer#ELSEgettin' railed by#ENDIF any imp ya come across, does ya?!)]
+				Когда ты поднимаешь взгляд и оглядываешься, [npc.name] делает шаг вперед и берет твою [com.companion] за подбородок, задирая [com.her] голову и ухмыляясь, [npc.speech('А как насчет тебя? Ты ведь обожаешь больше всего на свете... #IF(com.hasLegs())раздвигаешь ноги, чтобы#ELSEтебя оттрахал#ENDIF любого беса, которого встретишь на пути!)]
 			</p>
 			<p>
 				#IF(com.isAttractedTo(npc) || !game.isNonConEnabled())

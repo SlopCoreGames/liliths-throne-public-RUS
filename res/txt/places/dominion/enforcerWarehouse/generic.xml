@@ -600,7 +600,7 @@
 		</p>
 	#ENDIF
 	<p>
-		Reluctantly agreeing with Claire, you decide against taking any of [npc.namePos] equipment. Knowing that you'll probably have an opportunity to get your [pc.hands] on some of this SWORD gear another time in the future, you set off and continue onwards through the warehouse...
+Неохотно соглашаясь с Клэр, ты решаешь не брать никакого снаряжения [npc.namePos]. Зная, что, скорее всего, в будущем у тебя еще будет возможность прибрать к рукам часть экипировки SWORD [pc.hands], ты отправляешься в путь и продолжаешь идти через склад...
 	</p>
 	]]>
 	</htmlContent>
@@ -732,7 +732,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Reluctantly agreeing with Claire, you decide against taking any of [npc.namePos] equipment. Knowing that you'll probably have an opportunity to get your [pc.hands] on some of this SWORD gear another time in the future, and with Claire hot on your heels, you make your way over towards the huge warehouse doors that the SWORD Enforcers were guarding. Just beside this large industrial entranceway, there's a smaller, regular-sized door, and it's this exit which you and your cat-girl companion quickly approach. Eager to finally get out of this place, you hurriedly unlock the door, before pushing it open and making good your escape...
+Неохотно соглашаясь с Клэр, ты решаешь не брать никакого снаряжения [npc.namePos]. Зная, что, скорее всего, в будущем у тебя еще будет возможность прибрать к рукам часть экипировки SWORD [pc.hands], и чувствуя, что Клэр буквально наступает тебе на пятки, ты направляешься к огромным дверям склада, которые охраняли Enforcer из SWORD. Прямо рядом с этим массивным промышленным входом находится дверь обычного размера, и именно к этому выходу вы с твоей спутницей — девочкой-кошкой — быстро приближаетесь. Жаждя наконец выбраться из этого места, ты торопливо отпираешь дверь, а затем толкаешь её и совершаешь свой побег...
 	</p>
 	]]>
 	</htmlContent>
@@ -945,7 +945,7 @@
 		Издавая глубоко удовлетворенный рык, [npc.race] отступает назад, прежде чем снова привести [npc.her] форму в порядок. Пока [npc.she] это делает, ты слышишь, как несколько человек в толпе гадают, пометят ли тебя для общественного пользования или нет.
 	</p>
 	<p>
-		After [npc.sheHas] sorted [npc.her] uniform out, the [npc.race] lets an evil grin settle on [npc.her] face, and in a voice loud enough for the crowd to hear, [npc.she] says, [npc.speech(That was a good fuck, bitch. I'll be back tomorrow to get you registered as a slave. Until then, I'll leave you marked as being fully available for public use, just like I promised.)]
+		После того как [npc.sheHas] разобрал [npc.her] униформу, [npc.race] позволяет злой ухмылке застыть на [npc.her] лице, и достаточно громким для толпы голосом [npc.she] произносит: [npc.speech(Хороший был трах, сучка. Завтра вернусь, чтобы зарегистрировать тебя как рабыню. А пока оставлю тебя помеченной как полностью доступную для публичного пользования, как и обещал.)]
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_seanIntroduced))
 		<p>

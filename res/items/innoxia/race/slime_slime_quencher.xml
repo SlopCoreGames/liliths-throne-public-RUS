@@ -28,8 +28,8 @@
 		<enchantmentEffectId>ATTRIBUTE_SEXUAL</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldSex(+1)] [style.boldWetness(Vagina Wetness)]]]></line>
-			<line><![CDATA[[style.boldSex(+1)] [style.boldWetness(Anal Wetness)]]]></line>
+			<line><![CDATA[[style.boldSex(+1)] [style.boldWetness(Влажность влагалища)]]]></line>
+			<line><![CDATA[[style.boldSex(+1)] [style.boldWetness(Влажность ануса)]]]></line>
 			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(5)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		

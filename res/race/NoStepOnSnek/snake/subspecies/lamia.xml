@@ -25,7 +25,7 @@
 	<iconName displaySize="60">snake</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>snake</bookIconName>
-	<bookName>Clutching Coils</bookName>
+	<bookName>Сжимающие кольца</bookName>
 	<basicDescriptionId>SNAKE_BASIC</basicDescriptionId>
 	<advancedDescriptionId>SNAKE_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
@@ -69,9 +69,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		Although [npc.namePos] snake-like body is very quick and strong, [npc.she] can't regulate [npc.her] body temperature very well, and so [npc.sheIs] weak to both arcane ice and fire. On the positive side, [npc.she] [npc.has] a strong affinity with arcane poison.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[Хотя [npc.namePos] змееподобное тело очень быстрое и сильное, [npc.she] не может очень хорошо регулировать [npc.her] температуру тела, поэтому [npc.sheIs] уязвима как к арканическому льду, так и к огню. С другой стороны, [npc.she] [npc.has] сильная предрасположенность к арканическому яду.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>
 		<attribute value="0">MAJOR_ARCANE</attribute> 

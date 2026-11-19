@@ -16,37 +16,37 @@
 	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>woolly</descriptor>
-		<descriptor>wool-coated</descriptor>
+		<descriptor>шерстяная</descriptor>
+		<descriptor>покрытая шерстью</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>woolly</descriptor>
-		<descriptor>wool-coated</descriptor>
+		<descriptor>шерстяная</descriptor>
+		<descriptor>покрытая шерстью</descriptor>
 	</descriptorsFeminine>
 	
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>sheep-like</descriptor>
-		<descriptor>woolly</descriptor>
+		<descriptor>овечий</descriptor>
+		<descriptor>шерстяная</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>sheep-like</descriptor>
-		<descriptor>woolly</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>овечий</descriptor>
+		<descriptor>шерстяная</descriptor>
 	</handDescriptorsFeminine>
 	
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>sheep-like</descriptor>
+		<descriptor>овечий</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>sheep-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>овечий</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

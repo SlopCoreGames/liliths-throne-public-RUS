@@ -25,7 +25,7 @@
 			<category id="level" priority="1">
 				<categoryName><![CDATA[Уровень доступа]]></categoryName>
 				<sticker id="trainee" priority="0" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="BASE_YELLOW_LIGHT">
-					<stickerName><![CDATA[Trainee]]></stickerName>
+					<stickerName><![CDATA[Телонка]]></stickerName>
 					<namePrefix/>
 					<namePostfix priority="1"><![CDATA[(стажер)]]></namePostfix>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ коровнику «Обучение» на молочной ферме Эвеликс.]]></descriptionModification>
@@ -36,7 +36,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="heifer" priority="1" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="BASE_YELLOW">
-					<stickerName><![CDATA[Heifer]]></stickerName>
+					<stickerName><![CDATA[Тёлка]]></stickerName>
 					<namePrefix/>
 					<namePostfix priority="1"><![CDATA[(телка)]]></namePostfix>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ коровнику «Разведение» на молочной ферме Эвеликс.]]></descriptionModification>
@@ -47,7 +47,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="cow" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="BASE_GOLD">
-					<stickerName><![CDATA[Cow]]></stickerName>
+					<stickerName><![CDATA[Корова]]></stickerName>
 					<namePrefix/>
 					<namePostfix priority="1"><![CDATA[(корова)]]></namePostfix>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ дойный сарай в молочной ферме Эвеликс.]]></descriptionModification>

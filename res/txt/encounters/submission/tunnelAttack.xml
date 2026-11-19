@@ -95,7 +95,7 @@
 				#ELSE
 					 [npc.speech(То, что мне нравится быть мамочкой, еще не значит, что я спущу тебя с поводка! Мне бы не помешало немного денег, так что просто сдавайся и дай мне уже тебя обобрать!)]
 				#ENDIF
-			#ELSE [npc.speech(That's right, you got me pregnant...)] [npc.name] mumbles, before clearing [npc.her] throat and glaring at you.
+			#ELSE [npc.speech(Все верно, ты забеременела от меня...)] [npc.name] бормочет, прежде чем прочистить [npc.her] горло и свирепо уставиться на тебя.
 				#IF(npc.isAttractedTo(pc))
 					 [npc.speech(Пусть я и беременна, но я все равно, блядь, постоянно такая возбужденная, т-так что ты возьмешь за это ответственность, понял?!)]
 				#ELSE
@@ -126,15 +126,15 @@
 	<p>
 		#IF(npc.getPregnantLitter().isFatherId(pc.getId()))
 			#IF(npc.hasFetish(FETISH_PREGNANCY))
-				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] laughs, [npc.speech(That's right, I'm still pregnant, all thanks to you!)]
+				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF [npc.her] вздувшийся живот, пока [npc.she] смеётся, [npc.speech(Всё верно, я всё ещё беременна, и всё благодаря тебе!)]
 			#ELSE
-				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] scowls, [npc.speech(That's right, I'm still pregnant, and it's all your fault!)]
+				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF [npc.her] вздувшийся живот, пока [npc.she] хмурится, [npc.speech(Всё верно, я всё ещё беременна, и это целиком твоя вина!)]
 			#ENDIF
 		#ELSE
 			#IF(npc.hasFetish(FETISH_PREGNANCY))
-				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] laughs, [npc.speech(That's right, I'm still pregnant, all thanks to [#npc.getPregnantLitter().getFatherName()]!)]
+				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF [npc.her] вздувшийся живот, пока [npc.she] смеётся, [npc.speech(Всё верно, я всё ещё беременна, и всё благодаря [#npc.getPregnantLitter().getFatherName()]!)]
 			#ELSE
-				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] scowls, [npc.speech(That's right, I'm still pregnant, and it's all your and [#npc.getPregnantLitter().getFatherName()]'s fault!)]
+				Ты видишь, что [npc.sheIs] всё еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF [npc.her] выпячивает раздутый живот, пока [npc.she] хмурится, [npc.speech(Все верно, я все еще беременна, и это целиком твоя и [#npc.getPregnantLitter().getFatherName()] вина!)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -201,7 +201,7 @@
 	#IF(npc.isVisiblyPregnant() && npc.getPregnantLitter().isFatherId(pc.getId()))
 		#IF(!npc.isCharacterReactedToPregnancy(pc))
 			<p>
-				Когда [npc.she] выходит из тени, ты замечаешь, что на этот раз в [npc.herHim] есть что-то новенькое. Последствие того, что ты кончил(а) внутрь [npc.herHim], буквально пялится тебе прямо в лицо, и ты сглатываешь, видя, как [npc.herHim] указывает на [npc.her] [style.colourSex(pregnant belly)].
+				Когда [npc.she] выходит из тени, ты замечаешь, что на этот раз в [npc.herHim] есть что-то новенькое. Последствие того, что ты кончил(а) внутрь [npc.herHim], буквально пялится тебе прямо в лицо, и ты сглатываешь, видя, как [npc.herHim] указывает на [npc.her] [style.colourSex(беременный живот)].
 			</p>
 			<p>
 				#IF(npc.isMute())
@@ -221,7 +221,7 @@
 			</p>
 		#ELSE
 			<p>
-				Когда [npc.she] выходит из тени, ты замечаешь, что [npc.sheIs] всё ещё щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she]
+				Когда [npc.she] выходит из тени, ты замечаешь, что [npc.sheIs] всё ещё щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF [npc.her] вздувшийся бугорок, как у [npc.she]
 				#IF(npc.isMute())
 						одаривает тебя самодовольной ухмылкой и снисходительным взглядом.
 					#IF(npc.isAttractedTo(pc))
@@ -374,7 +374,7 @@
 	#IF(npc.isVisiblyPregnant() && npc.getPregnantLitter().isFatherId(pc.getId()))
 		#IF(!npc.isCharacterReactedToPregnancy(pc))
 			<p>
-				Когда [npc.she] выходит из тени, ты замечаешь, что на этот раз в [npc.herHim] есть что-то новенькое. Последствие того, что ты кончил(а) внутрь [npc.herHim], буквально пялится тебе прямо в лицо, и ты сглатываешь, видя, как [npc.herHim] указывает на [npc.her] [style.colourSex(pregnant belly)].
+				Когда [npc.she] выходит из тени, ты замечаешь, что на этот раз в [npc.herHim] есть что-то новенькое. Последствие того, что ты кончил(а) внутрь [npc.herHim], буквально пялится тебе прямо в лицо, и ты сглатываешь, видя, как [npc.herHim] указывает на [npc.her] [style.colourSex(беременный живот)].
 			</p>
 			<p>
 				#IF(npc.isMute())
@@ -389,7 +389,7 @@
 			</p>
 		#ELSE
 			<p>
-				Ты видишь, что [npc.sheIs] все еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she]
+				Ты видишь, что [npc.sheIs] все еще щеголяет круглым, [style.colourSex(беременным животом)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF [npc.her] вздувшийся бугорок, как у [npc.she]
 				#IF(npc.isMute())
 					 бросает на тебя угрожающий взгляд. В отличие от ваших прошлых встреч с [npc.herHim], [npc.name], похоже, не интересуют твои деньги; вместо этого она принимает внушительную позу, готовясь потребовать кое-что другое.
 				#ELSE
@@ -542,14 +542,14 @@
 	<p>
 		#IF(npc.getPregnantLitter().isFatherId(pc.getId()))
 			#IF(npc.hasFetish(FETISH_PREGNANCY))
-				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] laughs,
+				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF вздувшийся живот [npc.her], пока [npc.she] смеётся,
 				#IF(npc.isAttractedTo(pc))
 					 [npc.speech(Именно так, я всё ещё беременна, и всё благодаря тебе! Если хочешь взять на себя ответственность, то пара Огней никогда не помешает. С другой стороны, если ты просто хочешь провести со мной время, это тоже будет чудесно! И, ну... раз уж я в положении, меня тянет на секс как никогда, так что если тебе по душе беременная [npc.girls], только скажи...)]
 				#ELSE
 					 [npc.speech(Именно так, я всё ещё беременна, и всё благодаря тебе! Если хочешь взять на себя ответственность, то пара Огней никогда не помешает. С другой стороны, если ты просто хочешь провести со мной время, это тоже будет чудесно!])
 				#ENDIF
 			#ELSE
-				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] sighs,
+				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF вздувшийся живот [npc.her], пока [npc.she] вздыхает,
 				#IF(npc.isAttractedTo(pc))
 					 [npc.speech(Именно так, я всё ещё беременна... Если хочешь взять на себя ответственность, то пара Огней никогда не помешает. С другой стороны, если ты просто хочешь провести со мной время, это тоже будет чудесно! И, ну... хоть я и беременна, меня всё равно дико возбуждает, так что если тебе по душе беременная [npc.girls], только скажи...)]
 				#ELSE
@@ -558,14 +558,14 @@
 			#ENDIF
 		#ELSE
 			#IF(npc.hasFetish(FETISH_PREGNANCY))
-				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] laughs,
+				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF вздувшийся живот [npc.her], пока [npc.she] смеётся,
 				#IF(npc.isAttractedTo(pc))
 					 [npc.speech(Именно так, я всё ещё беременна, и всё благодаря [#npc.getPregnantLitter().getFatherName()]! Если ты хочешь взять на себя ответственность за то, что они натворили, то пара Огней никогда не помешает. С другой стороны, если ты хочешь провести со мной время, это тоже будет чудесно! И, ну... раз уж я в положении, меня тянет на секс как никогда, так что если тебе нравятся беременные [npc.girls], только скажи...)]
 				#ELSE
 					 [npc.speech(Именно так, я всё ещё беременна, и всё благодаря [#npc.getPregnantLitter().getFatherName()]! Если ты хочешь взять на себя ответственность за то, что они натворили, то пара Огней никогда не помешает. С другой стороны, если ты хочешь провести со мной время, это тоже будет чудесно!])
 				#ENDIF
 			#ELSE
-				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())gestures towards#ELSEstrokes#ENDIF [npc.her] swollen bump as [npc.she] sighs,
+				Делая шаг вперед и собираясь поздороваться, ты замечаешь, что [npc.name] всё так же щеголяет круглым, [style.colourSex(беременным животиком)], а [npc.she] рассеянно #IF(npc.isTaur())жестикулирует в сторону#ELSEгладит#ENDIF вздувшийся живот [npc.her], пока [npc.she] вздыхает,
 				#IF(npc.isAttractedTo(pc))
 					 [npc.speech(Именно так, я всё ещё ношу под сердцем детей от [#npc.getPregnantLitter().getFatherName()]... Если ты хочешь взять на себя ответственность за то, что они натворили, то пара Огней никогда не помешает. С другой стороны, если ты хочешь провести со мной время, это тоже будет чудесно! И, ну... хоть я и беременна, меня всё равно дико штырит, так что если тебе нравятся беременные [npc.girls], только скажи...)]
 				#ELSE
@@ -986,7 +986,7 @@
 	
 	<htmlContent tag="AFTER_COMBAT_VICTORY_ATTRACTION"><![CDATA[
 	<p>
-		[npc.Name] падает на пол, полностью побежденная. Пока [npc.she] смотрит на тебя снизу вверх, отчаянно скуля и кусая [npc.her] [npc.lip], ты замечаешь, что в [npc.her] [npc.eyes] [npc.she] всё еще горит голодный, похотливый взгляд. В поражении [npc.namePos] аркана Аура полностью подавлена мощью твоей собственной, и, не в силах сдержать [npc.her] жгучее желание, [npc.she] #IF(npc.isTaur())starts bucking [npc.her] hips in a humping motion,#ELSEreaches down to [npc.her] crotch and starts stroking [npc.herself],#ENDIF making pitiful little whining noises as [npc.she] squirms on the floor.
+		[npc.Name] падает на пол, полностью побежденная. Пока [npc.she] смотрит на тебя снизу вверх, отчаянно скуля и кусая [npc.her] [npc.lip], ты замечаешь, что в [npc.her] [npc.eyes] [npc.she] всё еще горит голодный, похотливый взгляд. В поражении [npc.namePos] аркана Аура полностью подавлена мощью твоей собственной, и, не в силах сдержать [npc.her] жгучее желание, [npc.she] #IF(npc.isTaur())начинает ритмично двигать [npc.her] бедрами, имитируя фрикции,#ELSEтянется рукой к промежности [npc.her] и начинает ласкать [npc.herself],#ENDIF издает жалкие тихие скулящие звуки, пока [npc.she] корчится на полу.
 	</p>
 	<p>
 		#IF(npc.isMute())
@@ -1014,7 +1014,7 @@
 		[npc.Name] бессильно опускается на пол, полностью побежденная. [npc.She] на мгновение поднимает на тебя взгляд, прежде чем опустить [npc.her] взор на пол, и в этот краткий миг ты видишь, что вся надежда и энергия в лице [npc.namePos] полностью испарились. Издав жалкий скулящий звук, [npc.she] внезапно разражается слезами, всхлипывая и рыдая какое-то время, прежде чем вытереть [npc.her] [npc.eyes] и снова посмотреть на тебя.
 	</p>
 	<p>
-		[npc.speech(П-просто забери все мои деньги и уходи!)] — умоляет [npc.she], швыряя [npc.her] #IFnpc.isFeminine()#THENpurse#ELSEwallet#ENDIF at your feet. [npc.speech(I thought you were different, but you just wanted to hurt me, like all the others!)]
+		[npc.speech(П-просто забери все мои деньги и уходи!)] — умоляет [npc.she], швыряя [npc.her] #IFnpc.isFeminine()#THENpurse#ELSEwallet#ENDIF у твоих ног. [npc.speech(Я думала, ты другой, но ты просто хотел причинить мне боль, как и все остальные!)]
 	</p>
 	#IF(game.isNonConEnabled())
 		<p>
@@ -1032,7 +1032,7 @@
 		[npc.Name] оседает на пол, полностью побежденная. [npc.She] на мгновение поднимает на тебя взгляд, прежде чем опустить [npc.her] глаза к полу, и в это краткое мгновение ты видишь отчаянный взгляд сожаления в [npc.her] [npc.eyes]. Издавая жалкие скулящие звуки, [npc.she] пытается отползти от тебя, явно опасаясь твоих намерений.
 	</p>
 	<p>
-		[npc.speech(П-просто забери мои деньги и оставь меня в покое!)] — умоляет [npc.she], швыряя [npc.her] #IFnpc.isFeminine()#THENpurse#ELSEwallet#ENDIF at your feet.
+		[npc.speech(П-просто забери мои деньги и оставь меня в покое!)] — умоляет [npc.she], швыряя [npc.her] #IFnpc.isFeminine()#THENpurse#ELSEwallet#ENDIF у твоих ног.
 	</p>
 	#IF(game.isNonConEnabled())
 		<p>
@@ -2212,7 +2212,7 @@
 	</p>
 	<p>
 		#IF(friend.hasFetish(FETISH_IMPREGNATION) && !pc.isPregnant() && !pc.isTaur())
-				[friend.speech(Я тебя обрюхачу, [pc.name],)] — дразнит [friend.race], прежде чем нетерпеливо хватает твои [pc.legs+], раздвигая их и прижимая к твоей голове. Переставляя ноги и устраиваясь [friend.herself] прямо поверх тебя, [friend.name] фиксирует тебя в позе «mating press», после чего приподнимает [friend.her] бедра и начинает скользить [friend.cockHead+] своего [friend.her] член вверх и вниз по твоей [pc.labia+]. Заглядывая в твою [pc.eyes+], [friend.she] облизывает [friend.her], [friend.lips] и [friend.moansVerb], [friend.speech(Я иду, [pc.name]. А теперь стони для меня, как настоящая шлюха!)]
+				[friend.speech(Я тебя обрюхачу, [pc.name],)] — дразнит [friend.race], прежде чем нетерпеливо хватает твои [pc.legs+], раздвигая их и прижимая к твоей голове. Переставляя ноги и устраиваясь [friend.herself] прямо поверх тебя, [friend.name] фиксирует тебя в позе «mating press», после чего приподнимает [friend.her] бедра и начинает скользить [friend.cockHead+] своего [friend.her] члена вверх и вниз по твоей [pc.labia+]. Заглядывая в твою [pc.eyes+], [friend.she] облизывает [friend.her], [friend.lips] и [friend.moansVerb], [friend.speech(Я иду, [pc.name]. А теперь стони для меня, как настоящая шлюха!)]
 			</p>
 			<p>
 				Прежде чем ты успеваешь ответить, [friend.race] нетерпеливо вгоняет [friend.her] [friend.cock+] глубоко в твою [pc.pussy+]. От внезапного проникновения ты невольно издаешь [pc.moan], и не можешь сдержать тяжелое дыхание и скуление, когда [friend.name] начинает ритмично долбить в твою [pc.pussy+]...
@@ -2349,7 +2349,7 @@
 			 приказывает: [npc.speech(Сиди здесь и жди моего возвращения, [pc.name].)]
 		#ENDIF
 	</p><p>
-		Покорно ожидая снаружи, пока [npc.name] заходит в бистро перекусить, ты начинаешь чувствовать на себе взгляды нескольких прохожих, слоняющихся неподалеку. Спустя пару минут один из этих незнакомцев, [stranger.a_fullRace(true)], [stranger.walks] к твоему месту и с широкой ухмылкой на [stranger.her] спрашивает: [stranger.speech(Ты что, в пет-плей играешь с тем [npc.race], что зашел внутрь? Выглядишь как тупая, похотливая сучка. Бьюсь об заклад, ты прямо жаждешь попробовать мой... #IF(stranger.hasPenis())fat cock#ELSEcunt#ENDIF, aren't you?)]
+		Покорно ожидая снаружи, пока [npc.name] заходит в бистро перекусить, ты начинаешь чувствовать на себе взгляды нескольких прохожих, слоняющихся неподалеку. Спустя пару минут один из этих незнакомцев, [stranger.a_fullRace(true)], [stranger.walks] к твоему месту и с широкой ухмылкой на [stranger.her] спрашивает: [stranger.speech(Ты что, в пет-плей играешь с тем [npc.race], что зашел внутрь? Выглядишь как тупая, похотливая сучка. Бьюсь об заклад, ты прямо жаждешь попробовать мой... #IF(stranger.hasPenis())толстый член#ELSEпльзя#ENDIF, верно?)]
 	</p>
 	<p>
 		#IF(stranger.hasPenis())

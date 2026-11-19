@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[narrow alleyways]]></name>
-	<tooltipDescription><![CDATA[Instead of cobbled streets, the northern part of Elis consists of a maze-like network of narrow alleyways.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the alleyways of Elis]]></virginityLossDescription>
+	<name><![CDATA[узкие переулки]]></name>
+	<tooltipDescription><![CDATA[Вместо мощеных улиц северная часть Элиса представляет собой лабиринт из узких переулков.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в переулках Элиса]]></virginityLossDescription>
 	<sexBlockedReason/>
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>

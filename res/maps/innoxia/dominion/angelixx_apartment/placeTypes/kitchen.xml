@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Kitchen]]></name>
-	<tooltipDescription><![CDATA[This open-plan kitchen is joined to the dining room, and is of a reasonable size.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the kitchen at Angelixx's apartment]]></virginityLossDescription>
+	<name><![CDATA[Кухня]]></name>
+	<tooltipDescription><![CDATA[Эта кухня открытой планировки плавно переходит в столовую и имеет вполне приличный размер.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на кухне в квартире Анжеликсы]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

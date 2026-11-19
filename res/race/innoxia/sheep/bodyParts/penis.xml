@@ -37,7 +37,7 @@
 	<transformationDescription><![CDATA[
 		Невольно застонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная оболочка.
 		<br/>[npc.She] теперь [npc.has] [style.boldSheep(овечий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldSheep([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE sheep#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldSheep(sheep cum)].
+		<br/>[npc.She] [npc.has] [style.boldSheep([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ELSE овечьи#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldSheep(овечью сперму)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

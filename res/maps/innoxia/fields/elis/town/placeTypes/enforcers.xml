@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Enforcer station]]></name>
-	<tooltipDescription><![CDATA[The Elis Enforcers are based out of a large, heavily-fortified building.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[outside the Enforcer station in Elis]]></virginityLossDescription>
+	<name><![CDATA[Пост Enforcer]]></name>
+	<tooltipDescription><![CDATA[Enforcer города Элис базируются в большом, сильно укрепленном здании.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[снаружи поста Enforcer в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>#2c5aa0</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

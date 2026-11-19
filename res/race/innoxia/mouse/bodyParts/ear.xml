@@ -12,14 +12,14 @@
 	<namePlural><![CDATA[уши]]></namePlural>
 	
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>mouse-like</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>мышиный</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>mouse-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>мышиный</descriptor>
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -30,11 +30,11 @@
 		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
 		 и когда трансформация завершается, [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми мышиными ушками взад-вперед.
-		 <br/>[npc.Name] теперь [npc.has] [style.boldMouse(mouse-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		 <br/>[npc.Name] теперь [npc.has] [style.boldMouse(мышиные ушки)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пара #IF(npc.isPiercedEar()) pierced,#ENDIF mouse-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара #IF(npc.isPiercedEar()) проколотые,#ENDIF мышиные ушки, расположенные высоко на [npc.her] голове и [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

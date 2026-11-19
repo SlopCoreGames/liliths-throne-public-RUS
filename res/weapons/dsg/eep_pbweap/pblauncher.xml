@@ -20,7 +20,7 @@
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your pepper grenade launcher.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели [npc2.name] из своего перцового гранатомёта.</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		

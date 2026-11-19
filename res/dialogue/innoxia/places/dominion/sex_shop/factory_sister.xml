@@ -75,8 +75,8 @@
 						<enemy leader="true"><![CDATA[sister]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[With the succubus advancing on you with a desperate, lustful look in her eyes, you prepare to defend yourself!]]></combatant>
-						<combatant id="sister"><![CDATA[[sister.speech(Mistress will reward me for catching you!)] the succubus happily exclaims, [sister.speech(Submit to me!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Суккуб наступает на тебя с отчаянным, полным похоти взглядом, и ты готовишься к защите!]]></combatant>
+						<combatant id="sister"><![CDATA[[sister.speech(Госпожа вознаградит меня за то, что я поймала тебя!)] — радостно восклицает суккуб, [sister.speech(Покорись мне!)]]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>

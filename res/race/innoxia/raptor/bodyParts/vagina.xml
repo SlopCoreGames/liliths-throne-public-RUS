@@ -32,7 +32,7 @@
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF raptor-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.
+		[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSEа#ENDIF киска раптора с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.
 	]]></bodyDescription>
 	
 </vagina>

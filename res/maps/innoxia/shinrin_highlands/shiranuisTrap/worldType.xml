@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[Shiranui's Trap]]></name>
+	<name><![CDATA[Ловушка Ширануи]]></name>
 	<colour>BASE_PINK_LIGHT</colour>
-	<sexBlockedReason><![CDATA[[npc.Name] cannot have sex here!]]></sexBlockedReason> 
+	<sexBlockedReason><![CDATA[[npc.Name] нельзя здесь заниматься сексом!]]></sexBlockedReason> 
 	<furniturePresent deskName="tree stump">true</furniturePresent>
 	<wallsPresent wallName="tree">true</wallsPresent>
 	<loiteringEnabled>false</loiteringEnabled>

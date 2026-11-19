@@ -108,10 +108,10 @@
 				<availabilityConditional><![CDATA[[#!npc.hasFetish(FETISH_EXHIBITIONIST) && npc.hasFetish(FETISH_DOMINANT)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Agree to [npc.namePos] offer and allow [npc.herHim] to lead you to [npc.her] nearby apartment so that you can get fucked in privacy.
-					<br/>[style.italicsGood(You will gain:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
+					Согласиться на предложение [npc.namePos] и позволить [npc.herHim] привести тебя в ближайшую квартиру [npc.her], чтобы заняться сексом наедине.
+					<br/>[style.italicsGood(Вы получите:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
@@ -143,10 +143,10 @@
 				<availabilityConditional><![CDATA[[#!npc.hasFetish(FETISH_EXHIBITIONIST) && !npc.hasFetish(FETISH_DOMINANT)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Agree to [npc.namePos] offer and accompany [npc.herHim] to [npc.her] nearby apartment so that you can fuck [npc.herHim] in privacy.
-					<br/>[style.italicsGood(You will gain:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
+					Согласиться на предложение [npc.namePos] и отправиться вместе с [npc.herHim] в ближайшую квартиру [npc.her], чтобы трахнуть [npc.herHim] наедине.
+					<br/>[style.italicsGood(Вы получите:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
@@ -180,10 +180,10 @@
 				<availabilityConditional><![CDATA[[#npc.hasFetish(FETISH_EXHIBITIONIST) && npc.hasFetish(FETISH_DOMINANT)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Public sex (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс на людях (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Agree to [npc.namePos] offer and allow [npc.herHim] to fuck you right here in full view of the public.
-					<br/>[style.italicsGood(You will gain:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
+					Согласиться на предложение [npc.namePos] и позволить [npc.herHim] трахнуть тебя прямо здесь, на виду у всех.
+					<br/>[style.italicsGood(Вы получите:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
@@ -215,10 +215,10 @@
 				<availabilityConditional><![CDATA[[#npc.hasFetish(FETISH_EXHIBITIONIST) && !npc.hasFetish(FETISH_DOMINANT)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Public sex (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс на людях (+[style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Agree to [npc.namePos] offer and fuck [npc.herHim] right here in full view of the public.
-					<br/>[style.italicsGood(You will gain:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
+					Согласиться на предложение [npc.namePos] и трахнуть [npc.herHim] прямо здесь, на виду у всех.
+					<br/>[style.italicsGood(Вы получите:)] [style.moneyFormat([#flags.getSavedLong('rentalPrice')], span)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[

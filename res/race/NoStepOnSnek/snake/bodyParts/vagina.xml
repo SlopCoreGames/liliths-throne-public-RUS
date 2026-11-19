@@ -23,6 +23,6 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldSnake(змеиная киска)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF snake-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.
+		[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSEа#ENDIF змеиная киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.
 	]]></bodyDescription>
 </vagina>

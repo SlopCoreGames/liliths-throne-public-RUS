@@ -19,7 +19,7 @@
 		
 		<attackDescriptor>Shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your taser.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc2.name] из своего электрошокера.</attackTooltipDescription>
 		
 		<rarity>RARE</rarity> 
 		
@@ -74,14 +74,14 @@
 			Нацелив [npc.her] тазер на [npc2.name], [npc.she] 
 			#IF game.isSillyModeEnabled()
 			#THEN [npc.verb(shouts)] [npc.speech(А ну стоять, преступная мразь!)] перед тем как нажать на курок. 
-			#ELSE [npc.verb(pull)] the trigger. 
+			#ELSE [npc.verb(pull)] курок. 
 			#ENDIF 
 			Металлические дротики вонзаются в [npc2.namePos] ауру, пока по проводам пробегают розовые и фиолетовые молнии, высасывая [npc2.her] энергию! Использованный картридж вылетает и растворяется в воздухе. [npc.Name] внезапно [npc.verb(find)] еще один картридж в [npc.her] [npc.hand] и [npc.verb(insert)] его в дуло тазера.
 		]]></hitText>
 		<hitText><![CDATA[
 			[npc.Name] [npc.verb(shoot)] [npc2.name] из [npc.her] 
 			#IF game.isSillyModeEnabled()
-#ЗАТЕМ тазер с выкриком [npc.speech(Я — закон!)]			#ELSE taser.
+#ЗАТЕМ тазер с выкриком [npc.speech(Я — закон!)]			#ELSE электрошокер.
 			#ENDIF
 			Раздается громкий хлопок, а затем яркая розовая и фиолетовая вспышка — [npc2.namePos] выкачивает энергию! Отработанный картридж вылетает, и [npc.name] [npc.verb(insert)] новый в тазер.
 		]]></hitText>

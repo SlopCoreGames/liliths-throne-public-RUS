@@ -162,10 +162,10 @@
 Покорно исполняя приказ, ты спешишь к [npc2.name] и падешь на колени перед [npc2.herHim]. Ухмыляясь, [npc2.race] возвышается над тобой, и [npc2.her] повышает голос, чтобы [npc2.she] было слышно сквозь радостный гомон [npc2.her] бесов-стражников, и командует: [npc2.speech(Значит, ты знаешь своё место! Хорошо! А теперь — на спину. Пора тебя осеменить.)]
 </p>
 	<p>
-		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, ты #IF(pc.hasLegs())spread your [pc.legs]#ELSEpresent yourself#ENDIF and beg, [pc.speech(Please, give me your strong seed!)]
+		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, ты #IF(pc.hasLegs())раскрой свой [pc.legs]#ELSEпредставься#ENDIF и умоляй: [pc.speech(Пожалуйста, дай мне свое сильное семя!)]
 	</p>
 	<p>
-		Опускаешься на колени #IF(pc.hasLegs())between your [pc.legs]#ELSEbefore you#ENDIF, the [npc2.race] shuffles forwards to bump the rapidly-hardening bulge in [npc2.her] crotch against your groin, and bellows, [npc2.speech(Oh, you'll be getting it alright!)]
+		Опускаешься на колени #IF(pc.hasLegs())между твоими [pc.legs]#ELSEперед тобой#ENDIF, [npc2.race] шаркает вперед, прижимая быстро твердеющий бугор в [npc2.her] паху к твоему паху, и ревет: [npc2.speech(О, ты еще получишь свое, уж поверь!)]
 	</p>
 	<p>
 		Издавая счастливый [pc.moan], ты готовишься к тому, чтобы тебя оттрахал [npc2.cockSize] член [npc2.namePos]...
@@ -180,7 +180,7 @@
 		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, чтобы открыться бесам, ты смотришь на них и скулишь: [pc.speech(Ну же, трахайте меня!)]
 	</p>
 	<p>
-		Быстро окружая тебя, трое альфа-бесов начинают ощупывать и сжимать твоё тело, причём тот,#IF(pc.hasLegs()) between your [pc.legs]#ELSEat your groin#ENDIF sneering, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Быстро окружая тебя, трое альфа-бесов начинают ощупывать и сжимать твоё тело, причём тот,#IF(pc.hasLegs()) между твоими [pc.legs]#ELSEв твоем паху#ENDIF с усмешкой, [npc3.speech(Ммм, да, тебе понравится мой член!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы тебя оттрахали стражники [npc2.namePos]...
@@ -195,10 +195,10 @@
 			Послушно выполняя приказ, ты спешишь туда, где стоит [npc2.name], и падает на колени перед [npc2.herHim]. Твой спутник жаждет осеменения так же сильно, как и ты, и [npc.she] опускается на колени рядом с тобой, голодно глядя на выпуклость в хакама [npc2.namePos].
 		#ELSE
 Послушно выполняя приказ, ты спешишь к [npc2.name] и падешь на колени перед [npc2.herHim]. [npc.Name] волочит за собой ноги [npc.her], пока [npc.she] неохотно следует за тобой, а затем, разочарованно вздохнув, [npc.she] опускается на колени рядом с тобой, отводя [npc.her] взгляд от выпуклости в [npc2.namePos] хакама.		#ENDIF
-		 Smirking down at the two of you, the [npc2.race] raises [npc2.her] voice so that [npc2.she] can be heard over the gleeful chatter coming from [npc2.her] imp guards, and commands, [npc2.speech(So, you two know your place! Good! Now, on your backs. Let's get you both bred.)]
+		 Ухмыляясь на вас двоих, [npc2.race] возвышает [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь радостный гомон [npc2.her] бесов-стражников, и командует: [npc2.speech(Значит, вы двое знаете свое место! Хорошо! А теперь — на спины. Пора вас обоих осеменить.)]
 	</p>
 	<p>
-		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, ты #IF(pc.hasLegs())spread your [pc.legs]#ELSEpresent yourself#ENDIF and beg, [pc.speech(Please, give me your strong seed!)]
+		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, ты #IF(pc.hasLegs())раскрой свой [pc.legs]#ELSEпредставься#ENDIF и умоляй: [pc.speech(Пожалуйста, дай мне свое сильное семя!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
@@ -209,7 +209,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Опускаешься на колени #IF(pc.hasLegs())between your [pc.legs]#ELSEbefore you#ENDIF, the [npc2.race] shuffles forwards to bump the rapidly-hardening bulge in [npc2.her] crotch against your groin, and bellows, [npc2.speech(Oh, you'll be getting it alright!)]
+		Опускаешься на колени #IF(pc.hasLegs())между твоими [pc.legs]#ELSEперед тобой#ENDIF, [npc2.race] шаркает вперед, прижимая быстро твердеющий бугор в [npc2.her] паху к твоему паху, и ревет: [npc2.speech(О, ты еще получишь свое, уж поверь!)]
 	</p>
 	<p>
 		Издавая счастливый [pc.moan], ты готовишься к тому, чтобы тебя оттрахал [npc2.cockSize] член [npc2.namePos]...
@@ -224,13 +224,13 @@
 			Послушно выполняя приказ, ты спешишь туда, где стоит [npc2.name], и падает на колени перед [npc2.herHim]. Твой спутник жаждет осеменения так же сильно, как и ты, и [npc.she] опускается на колени рядом с тобой, голодно глядя на выпуклость в хакама [npc2.namePos].
 		#ELSE
 Послушно выполняя приказ, ты спешишь к [npc2.name] и падешь на колени перед [npc2.herHim]. [npc.Name] волочит за собой ноги [npc.her], пока [npc.she] неохотно следует за тобой, а затем, разочарованно вздохнув, [npc.she] опускается на колени рядом с тобой, отводя [npc.her] взгляд от выпуклости в [npc2.namePos] хакама.		#ENDIF
-		 Smirking down at the two of you, the [npc2.race] raises [npc2.her] voice so that [npc2.she] can be heard over the gleeful chatter coming from [npc2.her] imp guards, and commands, [npc2.speech(So, you two know your place! Good! Now, on your back, [pc.race]. Let's get you bred, while your friend satisfies my imps.)]
+		 Ухмыляясь на вас двоих, [npc2.race] возвышает [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь радостный гомон [npc2.her] бесов-стражников, и командует: [npc2.speech(Значит, вы двое знаете свое место! Хорошо! А теперь — на спину, [pc.race]. Пора тебя осеменить, пока твой друг развлекает моих бесов.)]
 	</p>
 	<p>
-		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, ты #IF(pc.hasLegs())spread your [pc.legs]#ELSEpresent yourself#ENDIF and beg, [pc.speech(Please, give me your strong seed!)]
+		Желая угодить [npc2.name], ты снова повинуешься приказу и, ложась на спину, ты #IF(pc.hasLegs())раскрой свой [pc.legs]#ELSEпредставься#ENDIF и умоляй: [pc.speech(Пожалуйста, дай мне свое сильное семя!)]
 	</p>
 	<p>
-		Опускаешься на колени #IF(pc.hasLegs())between your [pc.legs]#ELSEbefore you#ENDIF, the [npc2.race] shuffles forwards to bump the rapidly-hardening bulge in [npc2.her] crotch against your groin, and bellows, [npc2.speech(Oh, you'll be getting it alright!)]
+		Опускаешься на колени #IF(pc.hasLegs())между твоими [pc.legs]#ELSEперед тобой#ENDIF, [npc2.race] шаркает вперед, прижимая быстро твердеющий бугор в [npc2.her] паху к твоему паху, и ревет: [npc2.speech(О, ты еще получишь свое, уж поверь!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -242,7 +242,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Быстро окружая [npc.herHim], трое альфа-бесов начинают ощупывать и сжимать тело [npc.namePos], причём один#IF(npc.hasLegs()) between [npc.her] [npc.legs]#ELSEat [npc.her] groin#ENDIF sneering, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Быстро окружая [npc.herHim], трое альфа-бесов начинают ощупывать и сжимать тело [npc.namePos], причём один#IF(npc.hasLegs()) между [npc.her] [npc.legs]#ELSEв паху [npc.her]#ENDIF с усмешкой, [npc3.speech(Ммм, да, тебе понравится мой член!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -267,20 +267,20 @@
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 		#THEN
-			Желая угодить [npc2.name], [npc.name] снова делает то, что велел [npc.sheIs], и, откинувшись назад, [npc.she] #IF(npc.hasLegs())spreads [npc.her] [npc.legs]#ELSEpresents [npc.herself]#ENDIF and begs, [npc.speech(Please, give me your strong seed!)]
+			Желая угодить [npc2.name], [npc.name] снова делает то, что велел [npc.sheIs], и, откинувшись назад, [npc.she] #IF(npc.hasLegs())разводит [npc.her] [npc.legs]#ELSEпредставляет [npc.herself]#ENDIF и умоляет: [npc.speech(Пожалуйста, дай мне свое сильное семя!)]
 		#ELSE
 			[npc.speech(Фу... поверить в это не могу...)] — вздыхает [npc.name], давая понять, что [npc.sheIs] делает это только потому, что [npc.sheHasFull] тоже.
 [npc.speech(Просто покончите с этим.)]
 		#ENDIF
 	</p>
 	<p>
-		Опускаешься на колени #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion#ENDIF, the [npc2.race] shuffles forwards to bump the rapidly-hardening bulge in [npc2.her] crotch against [npc.her] groin, and bellows, [npc2.speech(You'll be a mother soon enough!)]
+		Опускаешься на колени #IF(npc.hasLegs())между [npc.legs] твоего спутника#ELSEперед твоим спутником#ENDIF, [npc2.race] шаркает вперед, прижимая стремительно твердеющий бугор [npc2.her] к паху [npc.her], и ревет: [npc2.speech(Скоро ты станешь матерью!)]
 	</p>
 	<p>
 		Желая поскорее начать, ты ложишься на спину и подставляешься под бесов, прежде чем взвизгнуть: [pc.speech(Давай же, трахай меня!)]
 	</p>
 	<p>
-		Быстро окружая тебя, трое альфа-бесов начинают ощупывать и сжимать твоё тело, причём тот,#IF(pc.hasLegs()) between your [pc.legs]#ELSEat your groin#ENDIF sneering, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Быстро окружая тебя, трое альфа-бесов начинают ощупывать и сжимать твоё тело, причём тот,#IF(pc.hasLegs()) между твоими [pc.legs]#ELSEв твоем паху#ENDIF с усмешкой, [npc3.speech(Ммм, да, тебе понравится мой член!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы бесы-стражники оттрахали тебя, пока их предводитель спаривается с [npc.name]...
@@ -309,7 +309,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Быстро наступая, чтобы окружить тебя и [npc.name], трое альфа-бесов начинают ощупывать и сжимать ваши тела, причём тот, #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF sneering, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Быстро наступая, чтобы окружить тебя и [npc.name], трое альфа-бесов начинают ощупывать и сжимать ваши тела, причём тот, #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF с усмешкой, [npc3.speech(Ммм, да, тебе понравится мой член!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -338,7 +338,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] realises that you're not willing to face [npc2.herHim] in combat. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming, [npc2.speech(How dishonourable! The only way you're getting out of here now is by surrendering your wombs to me!)]
+		[npc2.Name] разжимает [npc2.her] хватку на [npc2.her] катане, когда [npc2.she] понимает, что ты не готов встретить [npc2.herHim] в бою. Шагая вперед и останавливаясь прямо перед вами, [npc2.she] протягивает руки, чтобы схватить вас обоих за плечи, и, прежде чем ты успеваешь среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно объявляет: [npc2.speech(Как бесчестно! Единственный способ выбраться отсюда теперь — это отдать мне свои утробы!)]
 	</p>
 	<p>
 		Оказавшись в столь покорном положении, тебе остается лишь задрать голову и встретиться взглядом с [npc2.eyeColour] глазами [npc2.race], прежде чем пробормотать: [pc.speech(Н-наши утробы?)]
@@ -347,7 +347,7 @@
 		[npc2.speech(Именно!)] — гремит [npc2.Name], прежде чем опуститься на [npc2.her] колени перед вами и крепко повалить тебя и [npc.name] на спины. [npc2.speech(Для таких, как вы, единственное достойное наказание — это когда ваши животы будут набиты бесами!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to fuck you and your companion in the missionary position...  
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF трахнуть тебя и твоего спутника в миссионерской позе...  
 	</p>
 	]]>
 	</htmlContent>
@@ -368,7 +368,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] realises that you're not willing to face [npc2.herHim] in combat. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming, [npc2.speech(How dishonourable! The only way you're getting out of here now is by surrendering your womb to me! And your friend can get to work satisfying my imps!)]
+		[npc2.Name] разжимает [npc2.her] хватку на [npc2.her] катане, когда [npc2.she] понимает, что ты не готов встретить [npc2.herHim] в бою. Шагая вперед и останавливаясь прямо перед вами, [npc2.she] протягивает руки, чтобы схватить вас обоих за плечи, и, прежде чем ты успеваешь среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно объявляет: [npc2.speech(Как бесчестно! Единственный способ выбраться отсюда теперь — это отдать мне свою утробу! А твой друг может приняться за дело и развлечь моих бесов!)]
 	</p>
 	<p>
 		Поскольку ты теперь в столь покорной позе, всё, что тебе остаётся — это заворожённо смотреть в [npc2.eyeColour] глаза [npc2.race], прежде чем пролепетать: [pc.speech(М-моё чрево?)]
@@ -377,7 +377,7 @@
 		[npc2.speech(Именно так!)] — гремит [npc2.Name], прежде чем рухнуть на [npc2.her] колени перед тобой и крепко прижать тебя и [npc.name] спинами к земле. [npc2.speech(Для такой, как ты, единственное достойное наказание — это когда твоё чрево будет набито бесами!)]
 	</p>
 	<p>
-		Пока это происходит, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Тот, #IF(npc.hasLegs())between [npc.her] [npc.legs]#ELSEin front of [npc.her] groin#ENDIF sneers, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Пока это происходит, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Тот, #IF(npc.hasLegs())между [npc.her] [npc.legs]#ELSE перед пахом [npc.her]#ENDIF усмехается, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -406,7 +406,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] realises that you're not willing to face [npc2.herHim] in combat. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming down at your companion, [npc2.speech(How dishonourable! The only way you're getting out of here now is by surrendering your womb to me! And your friend can get to work satisfying my imps!)]
+		[npc2.Name] разжимает [npc2.her] хватку на [npc2.her] катане, когда [npc2.she] понимает, что ты не готов встретить [npc2.herHim] в бою. Шагая вперед и останавливаясь прямо перед вами, [npc2.she] протягивает руки, чтобы схватить вас обоих за плечи, и, прежде чем ты успеваешь среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно гремит, глядя на твою спутницу: [npc2.speech(Как бесчестно! Единственный способ выбраться отсюда теперь — это отдать мне свою утробу! А твой друг может приняться за дело и развлечь моих бесов!)]
 	</p>
 	<p>
 		Поскольку [npc.sheIs] теперь находится в столь покорной позе, всё, что может сделать [npc.name] — это смотреть снизу вверх в [npc2.eyeColour] глаза [npc2.race], прежде чем пролепетать: [npc.speech(М-моё чрево?)]
@@ -415,7 +415,7 @@
 		[npc2.speech(Именно так!)] [npc2.Name] ревет, прежде чем упасть на [npc2.her] колени перед твоим спутником и с силой повалить вас обоих на [npc2.her] спины. [npc2.speech(Для такого, как ты, единственное подходящее наказание — это когда твой живот набьют бесами!)]
 	</p>
 	<p>
-		Пока это происходит, трое альфа-бесов быстро окружают вас, начиная ощупывать и сжимать твоё тело. Тот, #IF(pc.hasLegs())between your [pc.legs]#ELSEin front of your groin#ENDIF sneers, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Пока это происходит, трое альфа-бесов быстро окружают вас, начиная ощупывать и сжимать твоё тело. Тот, #IF(pc.hasLegs())между твоими [pc.legs]#ELSE перед твоим пахом#ENDIF усмехается, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы бесы-стражники оттрахали тебя, пока их предводитель спаривается с [npc.name]...
@@ -448,7 +448,7 @@
 		[npc2.speech(Именно так!)] [npc2.Name] ревет, подзывая [npc2.her] бесов вперед. [npc2.speech(Я предпочитаю осеменять дерзких нарушителей, но раз с вами обоими это невозможно, я просто позволю моим стражникам немного повеселиться!)]
 	</p>
 	<p>
-		Как только [npc2.she] произносит это, трое альфа-бесов стремительно окружают тебя и [npc.name], начиная бесцеремонно ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым хохотом, после чего отступает назад, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами обоими. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF and chuckling at [npc.herHim], [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Как только [npc2.she] произносит это, трое альфа-бесов стремительно окружают тебя и [npc.name], начиная бесцеремонно ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым хохотом, после чего отступает назад, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами обоими. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF и, посмеиваясь над [npc.herHim], [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -590,7 +590,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_DOUBLE_BREEDING"><![CDATA[
 	<p>
-		A grin breaks out across [npc2.namePos] face as [npc2.she] hears what it is you're after. With [npc2.her] gaze hungrily roaming up and down over your and [npc.namePos] bodies, [npc2.she] offers [npc2.her] terms, [npc2.speech(Well, I haven't had the opportunity to breed two people at once in a good long while, so you let me fill your bellies with imps, and then I'll give you my help in getting to meet with our boss.)]
+		На лице [npc2.namePos] расплывается ухмылка, когда [npc2.she] слышит, чего именно ты хочешь. [npc2.her] жадным взглядом осматривает твоё тело и тело [npc.namePos] с ног до головы, после чего [npc2.she] предлагает [npc2.her] свои условия: [npc2.speech(Что ж, мне уже давно не выпадало возможности осеменить двоих сразу, так что вы позволяете мне наполнить ваши животы бесами, а взамен я помогу вам встретиться с нашим боссом.)]
 	</p>
 	<p>
 		Потирая бугорок под [npc2.her] хакама, [npc2.she] продолжает: [npc2.speech(Конечно, ты можешь сказать «нет», но тогда мне придётся наказать тебя за то, что ворвалась сюда без приглашения. Так что в любом случае я собираюсь залить твоё чрево своей спермой, так что с тебя будет толк, верно?)]
@@ -603,7 +603,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_BREEDING_COMPANION_IMPS"><![CDATA[
 	<p>
-		A grin breaks out across [npc2.namePos] face as [npc2.she] hears what it is you're after. With [npc2.her] gaze hungrily roaming up and down over your body, [npc2.she] offers [npc2.her] terms, [npc2.speech(Well, I haven't had the opportunity to breed [pc.a_race] as fine as you in a good long while, so you let me knock you up, and then I'll give you my help in getting to meet with our boss. Oh, and your friend can make [npc.herself] useful by satisfying my guards.)]
+		На [npc2.namePos] лице расплывается ухмылка, когда [npc2.she] слышит, чего именно ты хочешь. С [npc2.her] голодным взглядом, скользящим вверх и вниз по твоему телу, [npc2.she] предлагает [npc2.her] свои условия: [npc2.speech(Ну, мне уже целую вечность не выпадало возможности осеменить [pc.a_race] такую красавицу, как ты, так что давай: ты позволяешь мне зачать от себя ребенка, а взамен я помогу тебе встретиться с нашим боссом. Ах да, и твоя подружка может принести [npc.herself] пользу, если удовлетворит моих стражников.)]
 	</p>
 	<p>
 		Потирая бугорок под [npc2.her] хакама, [npc2.she] продолжает: [npc2.speech(Конечно, ты можешь сказать «нет», но тогда мне придётся наказать тебя за то, что ворвалась сюда без приглашения. Так что в любом случае я буду трахать тебя, пока твоя подружка будет отдаваться моим бесам, так что с тебя будет толк, верно?)]
@@ -642,7 +642,7 @@
 		Решив поступить так, как просит [npc2.name], ты вздыхаешь: [pc.speech(Ладно, я сделаю это. Но только я, а не мой спутник.)]
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] hears your reply. Striding forwards and coming to a halt right in front of you, [npc2.she] reaches out to grab you by the shoulders, and, before you can react, [npc2.she] pushes you down onto your knees, before booming, [npc2.speech(Excellent! Now surrender your womb to me!)]
+		[npc2.Name] разжимает [npc2.her] пальцы на [npc2.her] катане, услышав [npc2.she] ответ. Шагнув вперед и остановившись прямо перед тобой, [npc2.she] хватает тебя за плечи и, прежде чем ты успеваешь среагировать, [npc2.she] с силой толкает тебя на колени, после чего громогласно объявляет: [npc2.speech(Превосходно! А теперь отдай мне свою утробу!)]
 	</p>
 	<p>
 		Оказавшись в столь покорной позе, тебе остается лишь задрать голову и посмотреть в [npc2.eyeColour] глаза [npc2.race], прежде чем ответить: [pc.speech(Да... Сделай меня матерью...)]
@@ -651,7 +651,7 @@
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], прежде чем рухнуть перед тобой на [npc2.her] колени и крепко повалить тебя на спину. [npc2.speech(А теперь — приступим!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to fuck you in the missionary position...  
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовым трахнуть тебя в миссионерской позе...  
 	</p>
 	]]>
 	</htmlContent>
@@ -661,7 +661,7 @@
 		Решив поступить так, как просит [npc2.name], ты вздыхаешь: [pc.speech(Ладно, я сделаю это. Но только я, а не мой спутник.)]
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] hears your reply. Striding forwards and coming to a halt right in front of you, [npc2.she] reaches out to grab you by the shoulders, and, before you can react, [npc2.she] pushes you down onto your knees, before booming, [npc2.speech(Excellent! Now make sure to satisfy all three of them!)]
+		[npc2.Name] разжимает [npc2.her] пальцы на [npc2.her] катане, услышав [npc2.she] ответ. Шагая вперед и замирая прямо перед тобой, [npc2.she] протягивает руки, чтобы схватить тебя за плечи, и, прежде чем ты успеваешь среагировать, [npc2.she] толкает тебя на колени, после чего громогласно объявляет: [npc2.speech(Отлично! А теперь позаботься о том, чтобы удовлетворить всех троих!)]
 	</p>
 	<p>
 		Оказавшись в столь покорной позе, тебе остается лишь задрать голову и посмотреть в [npc2.eyeColour] глаза [npc2.race], прежде чем вздохнуть: [pc.speech(Я постараюсь...)]
@@ -669,7 +669,7 @@
 	<p>
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], подзывая [npc2.her] бесов вперед. [npc2.speech(Живее! Не каждый день я позволяю вам троим так развлечься!)]
 	</p><p>
-Повинуясь приказу вожака, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд #IF(pc.hasLegs())between your [pc.legs]#ELSEto your groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+Повинуясь приказу вожака, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд #IF(pc.hasLegs())между твоими [pc.legs]#ELSEв твой пах#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы тебя оттрахали стражники [npc2.namePos]...
@@ -690,7 +690,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] hears your reply. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming, [npc2.speech(Excellent! Now surrender your wombs to me!)]
+		[npc2.Name] разжимает [npc2.her] пальцы на [npc2.her] катане, услышав [npc2.she] ответ. Шагнув вперед и остановившись прямо перед вами, [npc2.she] протягивает руки, чтобы схватить вас обоих за плечи, и, прежде чем вы успеваете среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно объявляет: [npc2.speech(Превосходно! А теперь отдайте свои утробы мне!)]
 	</p>
 	<p>
 		Оказавшись в столь покорной позе, тебе остается лишь задрать голову и посмотреть в [npc2.eyeColour] глаза [npc2.race], прежде чем ответить: [pc.speech(Да... Мы станем матерями для твоих бесов...)]
@@ -699,7 +699,7 @@
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], прежде чем рухнуть перед тобой на [npc2.her] колени и крепко повалить тебя на спину. [npc2.speech(А теперь — приступим!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to fuck you and [npc.name] in the missionary position...  
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовый трахнуть тебя и [npc.name] в миссионерской позе...  
 	</p>
 	]]>
 	</htmlContent>
@@ -717,7 +717,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] hears your reply. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming, [npc2.speech(Excellent! Now surrender your womb to me!)]
+		[npc2.Name] разжимает [npc2.her] пальцы на [npc2.her] катане, услышав [npc2.she] ответ. Шагнув вперед и остановившись прямо перед вами, [npc2.she] протягивает руки, чтобы схватить вас обоих за плечи, и, прежде чем вы успеваете среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно объявляет: [npc2.speech(Превосходно! А теперь отдайте свою утробу мне!)]
 	</p>
 	<p>
 		Оказавшись в столь покорной позе, тебе остается лишь задрать голову и посмотреть в [npc2.eyeColour] глаза [npc2.race], прежде чем ответить: [pc.speech(Да... Сделай меня матерью...)]
@@ -726,7 +726,7 @@
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], прежде чем рухнуть на [npc2.her] колени перед тобой и крепко повалить тебя на спину. [npc2.speech(А ну же, вы трое, развлекитесь с этой [npc.race]!)]
 	</p>
 	<p>
-		Повинуясь приказу вожака, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Прежде чем [npc.she] успевает осознать происходящее, двое бесов внезапно толкают [npc.her] вниз, рядом с тобой, а третий делает шаг вперед... #IF(npc.hasLegs())between [npc.her] [npc.legs]#ELSEin front of [npc.her] groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Повинуясь приказу вожака, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Прежде чем [npc.she] успевает осознать происходящее, двое бесов внезапно толкают [npc.her] вниз, рядом с тобой, а третий делает шаг вперед... #IF(npc.hasLegs())между [npc.her] [npc.legs]#ELSE перед пахом [npc.her]#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -752,7 +752,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] hears your reply. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming at your companion, [npc2.speech(Excellent! Now surrender your womb to me!)]
+		[npc2.Name] разжимает [npc2.her] пальцы на [npc2.her] катане, услышав [npc2.she] твой ответ. Широким шагом шагнув вперед и остановившись прямо перед вами, [npc2.she] протягивает руки, чтобы схватить вас обоих за плечи, и, прежде чем ты успеваешь среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно восклицает твоему спутнику: [npc2.speech(Превосходно! А теперь отдай мне свое чрево!)]
 	</p>
 	#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
 	#THEN
@@ -771,7 +771,7 @@
 		</p>
 	#ENDIF
 	<p>
-		Повинуясь приказу вожака, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. Тот, #IF(pc.hasLegs())between your [pc.legs]#ELSEin front of your groin#ENDIF sneers, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Повинуясь приказу вожака, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. Тот, #IF(pc.hasLegs())между твоими [pc.legs]#ELSE перед твоим пахом#ENDIF усмехается, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы бесы-стражники оттрахали тебя, пока их предводитель спаривается с [npc.name]...
@@ -792,7 +792,7 @@
 		#ENDIF
 	</p>
 	<p>
-		[npc2.Name] releases [npc2.her] grip on [npc2.her] katana as [npc2.she] hears your reply. Striding forwards and coming to a halt right in front of the two of you, [npc2.she] reaches out to grab you both by the shoulders, and, before you can react, [npc2.she] pushes you and [npc.name] down onto your knees, before booming, [npc2.speech(Excellent! Now make sure to satisfy all three of them!)]
+		[npc2.Name] разжимает [npc2.her] пальцы на [npc2.her] катане, услышав [npc2.she] твой ответ. Шагнув вперед и остановившись прямо перед вами двоими, [npc2.she] хватает вас обоих за плечи и, прежде чем ты успеваешь среагировать, [npc2.she] толкает тебя и [npc.name] на колени, после чего громогласно объявляет: [npc2.speech(Отлично! А теперь позаботьтесь о том, чтобы удовлетворить всех троих!)]
 	</p>
 	<p>
 		Оказавшись в столь покорной позе, тебе остается лишь смотреть в [npc2.eyeColour] глаза [npc2.race], прежде чем вздохнуть: [pc.speech(Мы постараемся...)]
@@ -800,7 +800,7 @@
 	<p>
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], подзывая [npc2.her] бесов вперед. [npc2.speech(Живее! Не каждый день я позволяю вам троим так развлечься!)]
 	</p><p>
-Повинуясь приказу своего вожака, трое альфа-бесов стремительно окружают тебя и [npc.name], начиная ощупывать и сжимать твои тела. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед, #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+Повинуясь приказу своего вожака, трое альфа-бесов стремительно окружают тебя и [npc.name], начиная ощупывать и сжимать твои тела. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед, #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -1006,7 +1006,7 @@
 		[npc2.speech(Именно так!)] [npc2.Name] рявкает, прежде чем рухнуть на [npc2.her] колени перед тобой и крепко повалить тебя на спину. [npc2.speech(Для такой, как ты, единственное достойное наказание за содеянное — это когда твоё чрево будет набито бесами!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to push them apart, getting ready to fuck you in the missionary position...  
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовый растолкать их, чтобы заняться с тобой сексом в миссионерской позе...  
 	</p>
 	]]>
 	</htmlContent>
@@ -1028,7 +1028,7 @@
 		[npc2.speech(Меня интересуют только те, кого я смогу оплодотворить!)] [npc2.Name] гремит, прежде чем грубо толкнуть тебя на спину перед [npc2.herHim]. [npc2.speech(Нет, если я не смогу тебя зачать, то ты мне не интересна. А вот мои стражники, с другой стороны...)]
 	</p>
 	<p>
-		Пока [npc2.she] произносит это, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. [npc2.Name] разражается громовым смехом, отступает назад и убеждается, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с тобой. Не успеваешь ты осознать происходящее, как двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд, #IF(pc.hasLegs())between your [pc.legs]#ELSEto your groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Пока [npc2.she] произносит это, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. [npc2.Name] разражается громовым смехом, отступает назад и убеждается, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с тобой. Не успеваешь ты осознать происходящее, как двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд, #IF(pc.hasLegs())между твоими [pc.legs]#ELSEв твой пах#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы тебя оттрахали стражники [npc2.namePos]...
@@ -1071,7 +1071,7 @@
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], прежде чем рухнуть перед тобой на [npc2.her] колени и крепко повалить тебя на спину. [npc2.speech(А теперь — приступим!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to push them apart, getting ready to fuck you and [npc.name] in the missionary position...  
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовый растолкать их, чтобы заняться сексом с тобой и [npc.name] в миссионерской позе...  
 	</p>
 	]]>
 	</htmlContent>
@@ -1087,7 +1087,7 @@
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], прежде чем рухнуть на [npc2.her] колени перед тобой и крепко повалить тебя на спину. [npc2.speech(А ну же, вы трое, развлекитесь с этой [npc.race]!)]
 	</p>
 	<p>
-		Повинуясь приказу вожака, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Прежде чем [npc.she] успевает осознать происходящее, двое бесов внезапно толкают [npc.her] вниз, рядом с тобой, а третий делает шаг вперед... #IF(npc.hasLegs())between [npc.her] [npc.legs]#ELSEin front of [npc.her] groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Повинуясь приказу вожака, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Прежде чем [npc.she] успевает осознать происходящее, двое бесов внезапно толкают [npc.her] вниз, рядом с тобой, а третий делает шаг вперед... #IF(npc.hasLegs())между [npc.her] [npc.legs]#ELSE перед пахом [npc.her]#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -1121,7 +1121,7 @@
 		</p>
 	#ENDIF
 	<p>
-		Повинуясь приказу вожака, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. Тот, #IF(pc.hasLegs())between your [pc.legs]#ELSEin front of your groin#ENDIF sneers, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Повинуясь приказу вожака, трое альфа-бесов быстро окружают тебя, начиная ощупывать и сжимать твоё тело. Тот, #IF(pc.hasLegs())между твоими [pc.legs]#ELSE перед твоим пахом#ENDIF усмехается, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный звук согласия, ты готовишься к тому, чтобы бесы-стражники оттрахали тебя, пока их предводитель спаривается с [npc.name]...
@@ -1139,7 +1139,7 @@
 	<p>
 		[npc2.speech(Вот это я люблю!)] — ревет [npc2.Name], подзывая [npc2.her] бесов вперед. [npc2.speech(Живее! Не каждый день я позволяю вам троим так развлечься!)]
 	</p><p>
-Повинуясь приказу своего вожака, трое альфа-бесов стремительно окружают тебя и [npc.name], начиная ощупывать и сжимать твои тела. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед, #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+Повинуясь приказу своего вожака, трое альфа-бесов стремительно окружают тебя и [npc.name], начиная ощупывать и сжимать твои тела. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед, #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -1229,7 +1229,7 @@
 		[npc2.speech(Меня интересуют только те, кого я смогу оплодотворить!)] [npc2.Name] гремит во всю глотку, прежде чем грубо повалить [npc.name] на [npc.her] спину на глазах у [npc2.herHim]. [npc2.speech(Нет, если я не смогу тебя зачать, то ты мне не интересна. Можешь удовлетворить моих стражников вместо этого! А ну, вы трое, развлекитесь с этой [npc.race]!)]
 	</p>
 	<p>
-		Повинуясь приказу вожака, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Прежде чем [npc.she] успевает осознать происходящее, двое бесов внезапно толкают [npc.her] вниз, рядом с тобой, а третий делает шаг вперед... #IF(npc.hasLegs())between [npc.her] [npc.legs]#ELSEin front of [npc.her] groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Повинуясь приказу вожака, трое альфа-бесов быстро окружают [npc.name], начиная ощупывать и сжимать тело [npc.her]. Прежде чем [npc.she] успевает осознать происходящее, двое бесов внезапно толкают [npc.her] вниз, рядом с тобой, а третий делает шаг вперед... #IF(npc.hasLegs())между [npc.her] [npc.legs]#ELSE перед пахом [npc.her]#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -1256,7 +1256,7 @@
 		Подняв взгляд и издав испуганный стон, ты видишь, как [npc2.race] потирает толстую выпуклость в хакама [npc2.her]. Пока твои глаза широко распахиваются, [npc2.she] падает на [npc2.her] колени перед тобой и твоим спутником(цей) и крепко прижимает вас обоих к земле на спины. [npc2.speech(Скоро ты будешь вынашивать целые выводки бесов!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to push them apart, getting ready to breed you and [npc.name] in the missionary position...  
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовый растолкать их, чтобы осеменить тебя и [npc.name] в миссионерской позе...  
 	</p>
 	]]>
 	</htmlContent>
@@ -1268,7 +1268,7 @@
 		Задрав голову и издав испуганный стон, ты видишь, как [npc2.race] потирает толстый бугор в [npc2.her] хакама. Твои глаза широко распахиваются, когда [npc2.she] падает на [npc2.her] колени перед тобой и твоим спутником, крепко прижимая вас обоих спинами к земле. [npc2.speech(Скоро я сделаю из тебя мать! А что до тебя, [npc.race], мои бесы смогут немного развлечься с тобой!)]
 	</p>
 	<p>
-		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to push them apart, getting ready to breed you as the three imps rush forwards to take advantage of your companion...
+		Схватив твою [pc.legs]#IF(pc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовый растолкать их, чтобы осеменить тебя, пока три беса бросаются вперед, желая воспользоваться твоим спутником...
 	</p>
 	]]>
 	</htmlContent>
@@ -1280,7 +1280,7 @@
 		Задрав голову и издав испуганный стон, ты видишь, как [npc2.race] потирает толстый бугор в [npc2.her] хакама. Твои глаза широко распахиваются, когда [npc2.she] падает на [npc2.her] колени перед тобой и твоим спутником, крепко прижимая вас обоих спинами к земле. Голодно взирая на [npc.name], [npc2.she] ревет: [npc2.speech(Сдай мне свое чрево! А что до тебя, [pc.race], мои бесы смогут немного развлечься с тобой!)]
 	</p>
 	<p>
-		Схватить [npc.namePos] [npc.legs]#IF(npc.hasLegs()), [npc2.name] starts to push them apart, getting#ELSE[npc2.name] gets#ENDIF ready to breed [npc.herHim] as the three imps rush forwards to take advantage of you...
+		Схватить [npc.namePos] [npc.legs]#IF(npc.hasLegs()), [npc2.name] начинает раздвигать их, готовясь#ELSE[npc2.name] готовится#ENDIF готовый осеменить [npc.herHim], пока три беса бросаются вперед, желая воспользоваться тобой...
 	</p>
 	]]>
 	</htmlContent>
@@ -1297,7 +1297,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_DOUBLE_BREEDING"><![CDATA[
 	<p>
-		Покорно позволить [npc2.name] #IF(pc.hasLegs())spread your [pc.legs]#ELSEtake hold of your hips#ENDIF, you can't help but let out a small [pc.moan] as you realise that you're about to be bred by this strong, dominant [npc2.race].
+		Покорно позволить [npc2.name] #IF(pc.hasLegs())разведи свои [pc.legs]#ELSEсхвати за бедра#ENDIF, ты невольно издаешь тихий [pc.moan], осознавая, что этот сильный, доминантный [npc2.race] вот-вот начнет тебя осеменять.
 	</p>
 	<p>
 		[npc2.speech(Так и рвёшься забеременеть, да?)] [npc2.name] хохочет, прежде чем шаркающей походкой подойти ближе и прижаться [npc2.her] выпуклостью к твоему паху. [npc2.speech(К твоему сведению, моё семя чертовски живучее, так что вы обе почти гарантированно залёте от этого!)]
@@ -1310,7 +1310,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_BREEDING_COMPANION_IMPS"><![CDATA[
 	<p>
-		Покорно позволить [npc2.name] #IF(pc.hasLegs())spread your [pc.legs]#ELSEtake hold of your hips#ENDIF, you can't help but let out a small [pc.moan] as you realise that you're about to be bred by this strong, dominant [npc2.race].
+		Покорно позволить [npc2.name] #IF(pc.hasLegs())разведи свои [pc.legs]#ELSEсхвати за бедра#ENDIF, ты невольно издаешь тихий [pc.moan], осознавая, что этот сильный, доминантный [npc2.race] вот-вот начнет тебя осеменять.
 	</p>
 	<p>
 		[npc2.speech(Так и рвёшься забеременеть, да?)] [npc2.name] хохочет, прежде чем шаркающей походкой подойти ближе и прижаться [npc2.her] выпуклостью к твоему паху. [npc2.speech(К твоему сведению, моё семя чертовски живучее, так что ты почти гарантированно забеременеешь от этого!)]
@@ -1322,7 +1322,7 @@
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_IMPS_COMPANION_BREEDING"><![CDATA[<p>
-Трое альфа-бесов движутся вперёд, быстро окружают тебя и начинают ощупывать и сжимать твоё тело. [npc2.Name] разражается громовым смехом, после чего переключает [npc2.her] внимание обратно на твою спутницу. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд #IF(pc.hasLegs())between your [pc.legs]#ELSEto your groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+Трое альфа-бесов движутся вперёд, быстро окружают тебя и начинают ощупывать и сжимать твоё тело. [npc2.Name] разражается громовым смехом, после чего переключает [npc2.her] внимание обратно на твою спутницу. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд #IF(pc.hasLegs())между твоими [pc.legs]#ELSEв твой пах#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный звук в знак согласия, ты готовишься к тому, что тебя будут трахать [npc2.namePos] стражника, пока их [npc2.race] предводитель осеменяет [npc.name]...
@@ -1332,7 +1332,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_DOUBLE_IMPS"><![CDATA[
 	<p>
-		Трое альфа-бесов движутся вперед, быстро окружая тебя и [npc.name], и начинают ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Трое альфа-бесов движутся вперед, быстро окружая тебя и [npc.name], и начинают ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный [pc.moan], ты готовишься к тому, что тебя будут трахать [npc2.namePos] стражников вместе с [npc.name]...
@@ -1342,7 +1342,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_DOUBLE_BREEDING_EAGER"><![CDATA[
 	<p>
-		Покорно #IF(pc.hasLegs())spreading your [pc.legs] for [npc2.name]#ELSEpresenting yourself to [npc2.name]#ENDIF, you can't help but let out a desperate [pc.moan] as you realise that you're about to be bred by this strong, dominant [npc.race]. [pc.speech(Oh, yes! Come on, breed us!)]
+		Покорно #IF(pc.hasLegs())раздвигая свои [pc.legs] для [npc2.name]#ELSEпредставляя себя перед [npc2.name]#ENDIF, ты невольно издаешь отчаянный [pc.moan], осознавая, что этот сильный, доминантный [npc.race] вот-вот начнет тебя осеменять. [pc.speech(О, да! Давай, осеменяй нас!)]
 	</p>
 	<p>
 		[npc2.speech(Ого, как же ты жаждешь забеременеть!)] [npc2.name] смеется, прежде чем подойти ближе и прижаться [npc.her] бугром к твоему паху. [npc2.speech(В таком случае, уверен, тебе будет приятно узнать, что моё семя необычайно плодовито, так что вам двоим почти гарантировано зачать от этого!)]
@@ -1355,7 +1355,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_BREEDING_COMPANION_IMPS_EAGER"><![CDATA[
 	<p>
-		Покорно #IF(pc.hasLegs())spreading your [pc.legs] for [npc2.name]#ELSEpresenting yourself to [npc2.name]#ENDIF, you can't help but let out a desperate [pc.moan] as you realise that you're about to be bred by this strong, dominant [npc.race]. [pc.speech(Oh, yes! Come on, breed me!)]
+		Покорно #IF(pc.hasLegs())раздвигая свои [pc.legs] для [npc2.name]#ELSEпредставляя себя перед [npc2.name]#ENDIF, ты невольно издаешь отчаянный [pc.moan], осознавая, что этот сильный, доминантный [npc.race] вот-вот начнет тебя осеменять. [pc.speech(О, да! Давай, осемени меня!)]
 	</p>
 	<p>
 		[npc2.speech(Ого, как же ты жаждешь забеременеть!)] [npc.name] смеется, прежде чем подойти ближе и прижаться [npc.her] бугром к твоему паху. [npc2.speech(В таком случае, уверен, тебе будет приятно узнать, что моё семя необычайно плодовито, так что тебе почти гарантировано забеременеть от этого!)]
@@ -1367,7 +1367,7 @@
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_IMPS_COMPANION_BREEDING_EAGER"><![CDATA[<p>
-Трое альфа-бесов движутся вперёд, быстро окружают тебя и начинают ощупывать и сжимать твоё тело. [npc2.Name] разражается громовым смехом, после чего переключает [npc2.her] внимание обратно на твою спутницу. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд #IF(pc.hasLegs())between your [pc.legs]#ELSEto your groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+Трое альфа-бесов движутся вперёд, быстро окружают тебя и начинают ощупывать и сжимать твоё тело. [npc2.Name] разражается громовым смехом, после чего переключает [npc2.her] внимание обратно на твою спутницу. Прежде чем ты успеваешь среагировать на происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперёд #IF(pc.hasLegs())между твоими [pc.legs]#ELSEв твой пах#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Покорно скуля в знак согласия, ты с предвкушением готовишься к тому, чтобы тебя оттрахали [npc2.namePos] стражника, пока их [npc2.race] предводитель будет осеменять [npc.name]...
@@ -1377,7 +1377,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_DOUBLE_IMPS_EAGER"><![CDATA[
 	<p>
-		Трое альфа-бесов движутся вперед, быстро окружая тебя и [npc.name], и начинают ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Трое альфа-бесов движутся вперед, быстро окружая тебя и [npc.name], и начинают ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая покорный [pc.moan], ты с жадностью готовишься к тому, чтобы тебя оттрахали [npc2.namePos] стражников вместе с [npc.name]...
@@ -1426,7 +1426,7 @@
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_IMPS_COMPANION_BREEDING_RESIST"><![CDATA[
 	<p>
 		Трое альфа-бесов движутся вперед, а затем быстро окружают тебя, начиная ощупывать и сжимать твое тело. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне достаточно, чтобы справиться с тобой. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед...
-	[npc2.Name] #IF(pc.hasLegs())between your [pc.legs]#ELSEto your groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+	[npc2.Name] #IF(pc.hasLegs())между твоими [pc.legs]#ELSEв твой пах#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая отчаянный крик, ты изо всех сил пытаешься сопротивляться, пока [npc2.namePos] стражников готовятся трахать тебя...
@@ -1436,7 +1436,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_DOUBLE_IMPS_RESIST"><![CDATA[
 	<p>
-		Трое альфа-бесов движутся вперед, быстро окружая тебя и [npc.name], и начинают ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())between your companion's [npc.legs]#ELSEbefore your companion's groin#ENDIF and chuckling, [npc3.speech(Mmm, yeah, you're gonna love my cock!)]
+		Трое альфа-бесов движутся вперед, быстро окружая тебя и [npc.name], и начинают ощупывать и сжимать ваши тела. [npc2.Name] разражается громовым смехом, после чего отступает, убеждаясь, что [npc2.her] похотливых бесов вполне хватит, чтобы справиться с вами. Прежде чем ты успеваешь осознать происходящее, двое бесов внезапно валят тебя на спину, а третий делает шаг вперед. #IF(npc.hasLegs())между [npc.legs] пахом твоего спутника#ELSEперед пахом твоего спутника#ENDIF и посмеиваясь, [npc3.speech(Ммм, да, мой член тебе точно понравится!)]
 	</p>
 	<p>
 		Издавая отчаянный крик, ты изо всех сил пытаешься сопротивляться, пока [npc2.namePos] стражников готовятся трахать тебя...
@@ -1527,7 +1527,7 @@
 				Натянув стринги повыше, чтобы они плотно сидели на твоих [pc.hips+], [npc.race] издает восторженный смех, а затем [npc.she] отступает назад, чтобы полюбоваться плодами [npc.her] труда. [npc.speech(Ну, каково это? Ты уже отчаянно жаждешь забеременеть от моего семени?)]
 			</p>
 			<p>
-				Когда [npc.name] говорит это, ты невольно издаёшь неистовый стон при мысли о новой жизни, зарождающейся в твоём чреве. Потянувшись вниз,#IF(pc.hasLegs()) between your [pc.legs]#ENDIF, you make sure that the dildo is securely in place, letting out a relieved sigh as you feel that it's firmly plugging your vagina and keeping all that precious cum locked deep inside your uterus.
+				Когда [npc.name] говорит это, ты невольно издаёшь неистовый стон при мысли о новой жизни, зарождающейся в твоём чреве. Потянувшись вниз,#IF(pc.hasLegs()) между твоими [pc.legs]#ENDIF, ты проверяешь, надежно ли сидит дилдо, и с облегчением вздыхаешь, чувствуя, как он плотно закупоривает твою киску, удерживая всю драгоценную сперму глубоко внутри матки.
 			</p>
 			<p>
 				[npc.speech(Ха! Вижу, чары уже действуют!)] [npc.she] смеётся. [npc.speech(Они также сделают твои бёдра широкими и крепкими, чтобы тебе было легче выносить, а позже и родить наше демоническое отродье. О, и да, прежде чем ты спросишь — оно тоже запечатано, хотя и более мощным заклинанием, чем дилдо. Ты не снимешь его в ближайшее время!)]
@@ -1552,7 +1552,7 @@
 				Натянув стринги повыше, чтобы они плотно сидели на твоих [pc.hips+], [npc.race] издает восторженный смех, а затем [npc.she] отступает назад, чтобы полюбоваться плодами [npc.her] труда. [npc.speech(Ну, каково это? Ты уже отчаянно жаждешь забеременеть от моего семени?)]
 			</p>
 			<p>
-				Когда [npc.name] говорит это, ты невольно издаёшь неистовый стон при мысли о новой жизни, зарождающейся в твоём чреве. Потянувшись вниз,#IF(pc.hasLegs()) between your [pc.legs]#ENDIF, you push your [pc.fingers] into your cum-stuffed cunt, before desperately trying to push as much of the precious seed deep into your uterus as you possibly can.
+				Когда [npc.name] говорит это, ты невольно издаёшь неистовый стон при мысли о новой жизни, зарождающейся в твоём чреве. Потянувшись вниз,#IF(pc.hasLegs()) между твоими [pc.legs]#ENDIF, ты втискиваешь свои [pc.fingers] в набитую спермой киску, а затем отчаянно пытаешься протолкнуть как можно больше драгоценного семени глубоко в матку.
 			</p>
 			<p>
 				[npc.speech(Ха! Вижу, чары уже действуют!)] [npc.she] смеется. [npc.speech(Они еще и сделают твои бедра широкими, чтобы тебе было легче выносить и позже родить наше демоническое отродье. О, и да, прежде чем ты спросишь — на нем стоит мощное запечатывающее заклинание. Снять его в ближайшее время не получится!)]
@@ -1603,10 +1603,10 @@
 					Вы оба начинаете протестующе скулить, но прежде чем ты успеваешь выразить хоть какое-то реальное возражение против того, как [npc2.namePos] обращается с вами, [npc2.she] быстро достает две стринги без ластовицы. Сначала [npc2.she] решительно натягивает темно-красные на твою [pc.feet], а затем задирает их выше по бедрам. [pc.speech(Эй! Ч-что это?)]
 				</p>
 				<p>
-					Sliding the thong all the way up to rest in place around your [pc.hips+], the [npc2.race] lets out a delighted laugh as [npc2.she] then forces [npc.name] to wear the light pink one. Stepping back to admire [npc2.her] handiwork, [npc2.she] booms, [npc2.speech(So, how does that feel? Are you both desperately wishing to get pregnant from my seed yet?)]
+					Натянув стринги повыше, чтобы они плотно сидели на твоих [pc.hips+], [npc2.race] издает восторженный смех, пока [npc2.she] заставляет [npc.name] надеть светло-розовые. Отступив на шаг, чтобы полюбоваться работой [npc2.her], [npc2.she] громогласно вопрошает: [npc2.speech(Ну, каково это? Вы обе уже отчаянно жаждете забеременеть от моего семени?)]
 				</p>
 				<p>
-					Когда [npc2.name] произносит это, ты невольно издаешь судорожный стон при мысли о новой жизни, зарождающейся в твоем чреве. Потянувшись вниз...#IF(pc.hasLegs()) between your [pc.legs]#ENDIF, you make sure that the dildo is securely in place, letting out a relieved sigh as you feel that it's firmly plugging your vagina and keeping all that precious cum locked deep inside your uterus.
+					Когда [npc2.name] произносит это, ты невольно издаешь судорожный стон при мысли о новой жизни, зарождающейся в твоем чреве. Потянувшись вниз...#IF(pc.hasLegs()) между твоими [pc.legs]#ENDIF, ты проверяешь, надежно ли зафиксирован дилдо, и с облегчением вздыхаешь, чувствуя, как он плотно закупоривает твою вагину, удерживая всю эту драгоценную сперму глубоко внутри матки.
 				</p>
 				<p>
 					[npc2.speech(Ха! Вижу, чары уже действуют!)] [npc2.she] смеется. [npc2.speech(Они также сделают твои бедра широкими и крепкими, чтобы вам двоим было легче выносить и позже родить ваших бесовских отпрысков. О, и да, прежде чем ты спросишь — они тоже запечатаны, хотя и более сильным заклинанием, чем твои дилдо. Снять их в ближайшее время не получится!)]
@@ -1625,7 +1625,7 @@
 					Натянув стринги до самого верха, чтобы они плотно сидели на твоей [pc.hips+], [npc2.race] издает восторженный смех, а [npc2.she] отступает назад, чтобы полюбоваться работой [npc2.her]. [npc2.speech(Ну, каково это? Ты уже отчаянно хочешь забеременеть от моего семени?)]
 				</p>
 				<p>
-					Когда [npc2.name] произносит это, ты невольно издаешь судорожный стон при мысли о новой жизни, зарождающейся в твоем чреве. Потянувшись вниз...#IF(pc.hasLegs()) between your [pc.legs]#ENDIF, you make sure that the dildo is securely in place, letting out a relieved sigh as you feel that it's firmly plugging your vagina and keeping all that precious cum locked deep inside your uterus.
+					Когда [npc2.name] произносит это, ты невольно издаешь судорожный стон при мысли о новой жизни, зарождающейся в твоем чреве. Потянувшись вниз...#IF(pc.hasLegs()) между твоими [pc.legs]#ENDIF, ты проверяешь, надежно ли зафиксирован дилдо, и с облегчением вздыхаешь, чувствуя, как он плотно закупоривает твою вагину, удерживая всю эту драгоценную сперму глубоко внутри матки.
 				</p>
 				<p>
 					[npc2.speech(Ха! Вижу, чары уже действуют!)] [npc2.she] смеется. [npc2.speech(Они также сделают твои бедра широкими, чтобы тебе было легче выносить и позже родить наше демоническое отродье. О, и да, прежде чем ты спросишь — они запечатаны, причем чары на них куда сильнее, чем на дилдо. Так что скоро ты их не снимешь!)]
@@ -1660,7 +1660,7 @@
 					Прежде чем ты или [npc.name] успеваете что-то сказать, [npc2.name] быстро достает две стринги с открытой промежностью, после чего решительно натягивает сначала темно-красные на твою [pc.feet], а затем и выше по бедрам. [pc.speech(Эй! Ч-что это?)]
 				</p>
 				<p>
-					Sliding the thong all the way up to rest in place around your [pc.hips+], the [npc2.race] lets out a delighted laugh as [npc2.she] then forces [npc.name] to wear the light pink one. Stepping back to admire [npc2.her] handiwork, [npc2.she] booms, [npc2.speech(So, how does that feel? Are you both desperately wishing to get pregnant from my seed yet?)]
+					Натянув стринги повыше, чтобы они плотно сидели на твоих [pc.hips+], [npc2.race] издает восторженный смех, пока [npc2.she] заставляет [npc.name] надеть светло-розовые. Отступив на шаг, чтобы полюбоваться работой [npc2.her], [npc2.she] громогласно вопрошает: [npc2.speech(Ну, каково это? Вы обе уже отчаянно жаждете забеременеть от моего семени?)]
 				</p>
 				<p>
 					Когда [npc2.name] произносит это, ты невольно издаешь судорожный стон при мысли о новой жизни, зарождающейся в твоем чреве. Просунув руку между [pc.legs], ты проверяешь, плотно ли сидит дилдо, и с облегчением вздыхаешь, чувствуя, как он надежно закупоривает твою вагину, удерживая всю эту драгоценную сперму глубоко внутри матки.
@@ -1681,7 +1681,7 @@
 						Прежде чем ты или [npc.name] успеваешь что-то сказать, [npc2.name] быстро достает светло-розовые стринги без ластовицы, после чего решительно натягивает их сначала на [npc.feet] [npc.namePos], а затем и на бедра [npc.her]. [npc.speech(Эй! Ч-что это такое?)]
 				</p>
 					<p>
-						Sliding the thong all the way up to rest in place around your companion's [pc.hips+], the [npc.race] lets out a delighted laugh as [npc.she] then steps back to admire [npc.her] handiwork. [npc.speech(So, how does that feel? Are you desperately wishing to get pregnant from my seed yet?)]
+						Натягивая стринги повыше, чтобы они плотно сели на [pc.hips+] твоей спутницы, [npc.race] издает восторженный смех, а затем [npc.she] отступает, чтобы полюбоваться [npc.her] плодами своих трудов. [npc.speech(Ну, как ощущения? Ты уже отчаянно мечтаешь забеременеть от моего семени?)]
 					</p>
 					<p>
 						Когда [npc2.name] произносит это, [npc.name] не может сдержать судорожного стона при мысли о новой жизни, зарождающейся в чреве [npc.her]. Просунув руку между [npc.her] [npc.legs], [npc.she] проверяет, плотно ли сидит дилдо, и с облегчением вздыхает, чувствуя, как [npc.she] надежно закупоривает [npc.her] вагину, удерживая всю эту драгоценную сперму глубоко внутри матки [npc.her].
@@ -1690,7 +1690,7 @@
 						[npc2.speech(Ха! Вижу, чары уже действуют!)] [npc2.name] смеется. [npc2.speech(Они также сделают твои бедра широкими, чтобы тебе было легче выносить и позже родить наше демоническое отродье. О, и да, прежде чем ты спросишь — на нем стоит мощное запечатывающее заклинание. Так что просто так ты его не снимешь!)]
 					</p>
 					<p>
-						[npc.NamePos] cheeks flush as [npc2.name] talks about the imps that [npc.she] might be pregnant with, and [npc.she] finds [npc.herself] desperately wishing that [npc.sheIs] soon going to be showing signs of being a mother.
+						Щеки [npc.NamePos] вспыхивают, когда [npc2.name] говорит о бесах, которыми [npc.she] может забеременеть, и [npc.she] понимает, что [npc.herself] отчаянно желает, чтобы [npc.sheIs] поскорее проявила признаки материнства.
 					</p>
 					<p>
 						Наконец закончив с вами обоими, [npc.name] встает и пренебрежительно отмахивается, прогоняя вас. [npc.speech(Возвращайтесь, когда выносите детей, и я оплодотворю вас снова. Те особенные трусики, что на тебе надеты, заставят тебя жаждать новой беременности, так что уверен — мы еще увидимся.)]

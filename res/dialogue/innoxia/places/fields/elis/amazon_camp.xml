@@ -337,7 +337,7 @@
 						<enemy leader="true"><![CDATA[aurokaris]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="aurokaris"><![CDATA[[aurokaris.speech(Give me everything you've got, [pc.name]!)] Aurokaris shouts with a smile on her face, [aurokaris.speech(I'm not going to hold back either!)]]]></combatant>
+						<combatant id="aurokaris"><![CDATA[[aurokaris.speech(Выкладывай всё, что есть, [pc.name]!)] — с улыбкой на лице выкрикивает Аврокарис, [aurokaris.speech(Я тоже не буду скромничать!)]]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>

@@ -33,20 +33,20 @@
 				i.e. If set to false, this clothing would always be called 'template socks' instead of, for example, 'white template socks' 
 			The 'appendEnchantmentPostfix' attribute works in the same way; you can omit it to default to true, but if you set it to false then this clothing type will never automatically append an automatically-generated enchantment postfix.
 				An example of this would be if a normal item was enchanted with an enslavement enchantment, that item would be have "of enslavement" added to the end of its name. -->
-		<name appendColourName="true" appendEnchantmentPostfix="true"><![CDATA[template sock]]></name>
+		<name appendColourName="true" appendEnchantmentPostfix="true"><![CDATA[шаблон носка]]></name>
 		
 		<!-- The plural form of the name. The attribute 'pluralByDefault' determines whether this item is naturally referred to as a plural (use true for things like socks or gloves).
 			- Example: I've named the plural as "template socks", and defined pluralByDefault as true, so that this item will be referred to by this plural name in all but extremely exceptional circumstances. -->
-		<namePlural pluralByDefault="true"><![CDATA[template socks]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[шаблон носков]]></namePlural> 
 		
 		<!-- This is the description which is shown in tooltips and on the item's inspection page.
 			- Example: The description for ordinary, "boring" items of clothing might be a little dry, but as they won't be read by the player much, it doesn't really matter.
 			You can use 'npc' to access the character who's got this clothing equipped, but if you do you should do an npc null check first (as this clothing may be on the ground with no owner), as shown in the example below.  -->
 		<description><![CDATA[
 			#IF(npc!=null)
-				[npc.NamePos] ordinary pair of socks, intended to be worn on the feet in order to absorb perspiration and provide both insulation and comfort. If [npc.name] [npc.is] a silly person, [npc.she] may choose to wear them on [npc.her] hands...
+				[npc.NamePos] обычная пара носков, предназначенная для ношения на ногах, чтобы впитывать пот, а также обеспечивать тепло и комфорт. Если [npc.name] [npc.is] глупый человек, [npc.she] может решить надеть их на [npc.her]...
 			#ELSE
-				An ordinary pair of socks, intended to be worn on the feet in order to absorb perspiration and provide both insulation and comfort. A silly person may choose to wear them on their hands...
+				Обычная пара носков, предназначенная для ношения на ногах, чтобы впитывать пот, а также обеспечивать тепло и комфорт. Глупый человек может решить надеть их на руки...
 			#ENDIF
 		]]></description> 
 		
@@ -304,51 +304,51 @@
 	<replacementText slot="SOCK" type="REMOVE_OR_EQUIP">
 		<self>
 			<!-- These lines follow all of the standard parsing rules, which can be found in-game by accessing the debug menu (type 'buggy' during gameplay), and then selecting 'Open parser', then 'Help'/'Targets'/'Commands' -->
-			<![CDATA[[npc.Name] [npc.verb(pull)] the socks on to cover [npc.her] [npc.feet].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки, закрывая [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the socks onto [npc2.namePos] [npc2.feet].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки на [npc2.namePos] [npc2.feet].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the socks onto [npc2.namePos] [npc2.feet].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] носки на [npc2.namePos] [npc2.feet].]]>
 		</otherRough>
 	</replacementText>
 	<!-- 'displacementText' is used for removal and displacement. -->
 	<!-- - Example: This is the unequip text for when socks are removed from the "SOCK" slot:-->
 	<displacementText slot="SOCK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] socks.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] socks.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки с [npc2.namePos] [npc2.feet].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] socks.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] носки с [npc2.namePos] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	
 	<!-- - Example: This is the equip text for when socks are equipped to the "HAND" slot:-->
 	<replacementText slot="HAND" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the socks on to cover [npc.her] [npc.hands].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки на [npc.her] [npc.hands].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the socks onto [npc2.namePos] [npc2.hands].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки на [npc2.namePos] [npc2.hands].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the socks onto [npc2.namePos] [npc2.hands].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] носки на [npc2.namePos] [npc2.hands].]]>
 		</otherRough>
 	</replacementText>
 	<!-- - Example: This is the unequip text for when socks are removed from the "HAND" slot:-->
 	<displacementText slot="HAND" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the socks from off of [npc.her] [npc.hands].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки с [npc.her] [npc.hands].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the socks from off of [npc2.namePos] [npc2.hands].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] носки с [npc2.namePos] [npc2.hands].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the socks from off of [npc2.namePos] [npc2.hands].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] носки с [npc2.namePos] [npc2.hands].]]>
 		</otherRough>
 	</displacementText>
 	

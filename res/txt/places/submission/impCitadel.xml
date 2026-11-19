@@ -621,7 +621,7 @@
 			<p>
 				#IF pc.isFeminine()
 				#THEN Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, такие лисицы, как ты, кажутся мне совершенно неотразимыми... Почему бы тебе не подойти сюда и не встать на колени? Тогда я милостиво позволю тебе облизать мою киску...)]
-				#ELSE Before you can reply, she continues, [citadelArcanist.speech(Anyway, I must confess, I'm not too fond of masculinity... If you were to come back and visit after feminising yourself, I'll graciously let you lick my pussy...)]
+				#ELSE Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, я не слишком жалую мужественность... Если ты вернешься ко мне после того, как станешь женственной, я соизволю позволить тебе лизать мою киску...)]
 				#ENDIF
 			</p>
 		#ELSE
@@ -646,7 +646,7 @@
 			<p>
 				#IF pc.isFeminine()
 				#THEN Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, такие лисицы, как ты, кажутся мне совершенно неотразимыми... Почему бы тебе не подойти сюда и не встать на колени? Тогда я милостиво позволю тебе облизать мою киску...)]
-				#ELSE Before you can reply, she continues, [citadelArcanist.speech(Anyway, I must confess, I'm not too fond of masculinity... If you were to come back and visit after feminising yourself, I'll graciously let you lick my pussy...)]
+				#ELSE Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, я не слишком жалую мужественность... Если ты вернешься ко мне после того, как станешь женственной, я соизволю позволить тебе облизать мою киску...)]
 				#ENDIF
 			</p>
 		#ELSE
@@ -667,7 +667,7 @@
 		[citadelArcanist.speech(Ой, да помолчи ты, глупая малявка,)] — пренебрежительно бросает [citadelArcanist.name], махнув рукой.
 		#IF pc.isFeminine()
 			#THEN Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, такие лисицы, как ты, кажутся мне чертовски неотразимыми... Почему бы тебе не подойти сюда и не опуститься на колени? Я так и быть, милостиво позволю тебе облизать мою киску...)]
-			#ELSE Before you can reply, she continues, [citadelArcanist.speech(Anyway, I must confess, I'm not too fond of masculinity... If you were to come back and visit after feminising yourself, I'll graciously let you lick my pussy...)]
+			#ELSE Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, я не слишком жалую мужественность... Если ты вернешься ко мне после того, как станешь женственной, я соизволю позволить тебе лизать мою киску...)]
 		#ENDIF
 	</p>
 	]]>
@@ -876,7 +876,7 @@
 		Ты решаешь, что пришло время встретиться с этой «темной сиреной», и, готовясь к худшему, делаешь шаг вперед и толкаешь тяжелые деревянные ворота.
 		#IF pc.hasStatusEffect(SE_PHYSIQUE_PERK_0)
 		#THEN Из-за своей слабости ты долго сражаешься с ними, пытаясь сдвинуть с места, но в конце концов тебе удается распахнуть их, и ты входишь внутрь цитадели.
-		#ELSE Thankfully, they're both unlocked and quite well balanced, and they readily swing open before you, allowing you to step forwards into the keep.
+		#ELSE К счастью, обе двери разблокированы и вполне сбалансированы; они легко распахиваются перед тобой, позволяя сделать шаг вперед, вглубь цитадели.
 		#ENDIF
 	</p>
 	<p>
@@ -889,7 +889,7 @@
 		Глядя мимо демонов, ты видишь возвышение, на вершине которого стоит трон из темного камня. На этом престоле восседает предводительница цитадели — сама темная сирена. Хотя остальная часть огромного зала ярко освещена арканными фонарями, фигура на троне по какой-то причине окутана густой тенью.
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Желая заставить эту скрытную предводительницу банд бесов явить себя миру, ты выкрикиваешь свой вызов: [pc.speech(Так это ты смеешь называть себя «темной сиреной»?! Пришло время тебе встретить свой конец!)]
-		#ELSE Wanting this reclusive leader of the imp gangs to reveal herself, you call out, [pc.speech(So you're the one who's responsible for the imp gangs terrorising the tunnels of Submission! I've come to put a stop to all that, siren!)]
+		#ELSE Желая заставить эту затворническую предводительницу бесовских банд явить себя, ты выкрикиваешь: [pc.speech(Так значит, именно ты отвечаешь за банды бесов, терроризирующих туннели Submission! Я пришел, чтобы покончить с этим, сирена!)]
 		#ENDIF
 	</p>
 	<p>
@@ -898,7 +898,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#ТОГДА Ты невольно замечаешь, как [impAlphaLeader.name] вздрагивает от впечатляющего представления сирены, но, какой бы устрашающей она ни казалась, ты знаешь, что ей не сравниться с твоей безграничной мощью!
-		#ELSE You can't help but notice [impAlphaLeader.name] flinching at the siren's cringe-worthy introduction, and, as she describes herself as the 'destroyer of worlds', you find yourself letting out a low groan as you share in the second-hand embarrassment.
+		#ELSE Ты не можешь не заметить, как [impAlphaLeader.name] вздрагивает от нелепого представления сирены, а когда та называет себя «разрушительницей миров», ты невольно издаешь тихий стон, разделяя её испанский стыд.
 		#ENDIF
 		 Подняв взгляд на возвышение, ты видишь, как предводительница этих демонов встает, и когда она делает шаг вперед, навстречу свету, перед тобой предстает весьма неожиданная фигура.
 	</p>
@@ -922,7 +922,7 @@
 		Ты снова решаешь попытаться противостоять [siren.name] и победить её, поэтому, собираясь с духом перед грядущей схваткой, ты делаешь шаг вперед и толкаешь тяжелые деревянные ворота.
 		#IF pc.hasStatusEffect(SE_PHYSIQUE_PERK_0)
 		#THEN Из-за своей слабости ты долго сражаешься с ними, пытаясь сдвинуть с места, но в конце концов тебе удается распахнуть их, и ты входишь внутрь цитадели.
-		#ELSE Thankfully, they're both unlocked and quite well balanced, and they readily swing open before you, allowing you to step forwards into the keep.
+		#ELSE К счастью, обе двери разблокированы и вполне сбалансированы; они легко распахиваются перед тобой, позволяя сделать шаг вперед, вглубь цитадели.
 		#ENDIF
 	</p>
 	<p>
@@ -934,7 +934,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Прежде чем ты успеваешь ответить, сама [siren.name] поднимается со своего трона и произносит очередную впечатляющую речь:
-		#ELSE Before you can answer, [siren.name] herself stands up from her throne, and delivers yet another cringe-worthy speech,
+		#ELSE Прежде чем ты успеваешь ответить, [siren.name] сама встает со своего трона и произносит очередную нелепую речь,
 		#ENDIF
 		 [siren.speech(Ты смеешь возвращаться в чертоги самой грозной пользовательницы арканы, которую когда-либо видел этот мир? Глупая смертная! Готовься к поражению!)]
 	</p>
@@ -963,7 +963,7 @@
 		Посмотрев на трон сирены, ты видишь, как [siren.name] спускается с возвышения под её смех: [siren.speech(Дурак! Теперь ты узришь мощь моих безграничных астрономических сил! Сама ткань пространства и времени прогибается под моей волей!)]
 	</p>
 	<p>
-		Выставив одну ногу вперед, [siren.name] принимает героическую позу и, закинув свою огромную косу над головой одной рукой, с легкостью вращает ею, демонстрируя впечатляющую силу и изящество. Перехватив древко другой рукой, она переводит оружие в низкую боевую позицию, прежде чем издать очередной #IFpc.hasTraitActivated(PERK_CHUUNI)#THENspirited#ELSEridiculous#ENDIF laugh, [siren.speech(~Mwhaha!~ Prepare for your obliteration!)]
+		Выставив одну ногу вперед, [siren.name] принимает героическую позу и, закинув свою огромную косу над головой одной рукой, с легкостью вращает ею, демонстрируя впечатляющую силу и изящество. Перехватив древко другой рукой, она переводит оружие в низкую боевую позицию, прежде чем издать очередной #IFpc.hasTraitActivated(PERK_CHUUNI)#THENspirited#ELSEridiculous#ENDIF смеясь, [siren.speech(~Мва-ха-ха!~ Готовься к полному уничтожению!)]
 	</p>
 	<p>
 		У тебя нет времени, чтобы перевести дух после битвы с демонами, ведь [siren.name] готовится немедленно броситься на тебя в схватку один на один!
@@ -1069,7 +1069,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты вовсю используешь ловкость своего тела, чтобы уворачиваться от падающих валунов и обломков кладки, пока спешишь через двор вслед за тремя демонами к выходу в пещеру Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you rush across the courtyard and follow the three demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обломков кладки, пока ты несешься через внутренний двор и следует за тремя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1093,7 +1093,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты вовсю используешь ловкость своего тела, чтобы уворачиваться от падающих валунов и обломков кладки, пока спешишь через двор вслед за тремя демонами к выходу в пещеру Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you rush across the courtyard and follow the three demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обломков кладки, пока ты несешься через внутренний двор и следует за тремя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1305,7 +1305,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты мастерски используешь ловкость своего тела, чтобы уклоняться от падающих валунов и рушащейся кладки, пока мчишься через внутренний двор вслед за двумя демонами к пещере Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you rush across the courtyard and follow the two demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обломков кладки, пока ты несешься через внутренний двор и следует за двумя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1332,7 +1332,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты мастерски используешь ловкость своего тела, чтобы уклоняться от падающих валунов и рушащейся кладки, пока мчишься через внутренний двор вслед за двумя демонами к пещере Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you rush across the courtyard and follow the two demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обломков кладки, пока ты несешься через внутренний двор и следует за двумя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>

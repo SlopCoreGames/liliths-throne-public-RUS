@@ -68,7 +68,7 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
 					<responseTitle><![CDATA[Спа (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
-					<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Give Penelope a hundred and fifty flames in exchange for access to the spa. #ELSE You can't afford to use the spa... #ENDIF]]></responseTooltip>
+					<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Отдай Пенелопе сто пятьдесят огней, чтобы получить доступ к спа. #ELSE Тебе не хватает огней, чтобы воспользоваться спа... #ENDIF]]></responseTooltip>
 					<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_shops_spa_relax#ELSEnull#ENDIF]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 					<effects><![CDATA[
@@ -80,7 +80,7 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
 					<responseTitle><![CDATA[Массаж (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
-					<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Give Penelope two hundred and fifty flames in exchange for receiving a massage. #ELSE You can't afford to get a massage... #ENDIF]]></responseTooltip>
+					<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Отдай Пенелопе двести пятьдесят огней, чтобы получить массаж. #ELSE Тебе не хватает огней, чтобы получить массаж... #ENDIF]]></responseTooltip>
 					<nextDialogue><![CDATA[
 						#IF(pc.getMoney()>=250)
 							#IF(!flags.hasFlag(FLAG_innoxia_spa_sheep_introduced))
@@ -347,7 +347,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
 					<responseTitle><![CDATA[Пенелопа (#IF(pc.getMoney()>=750)[style.moneyFormat(750, span)]#ELSE[style.moneyFormatUncoloured(750, span)]#ENDIF)]]></responseTitle>
-					<responseTooltip><![CDATA[#IF(pc.getMoney()>=750) Give Penelope an additional seven hundred and fifty flames in exchange for receiving a massage from her. #ELSE You can't afford to get a massage from Penelope... #ENDIF]]></responseTooltip>
+					<responseTooltip><![CDATA[#IF(pc.getMoney()>=750) Отдай Пенелопе еще семьсот пятьдесят огней, чтобы получить массаж лично от нее. #ELSE Тебе не хватает огней, чтобы получить массаж от Пенелопы... #ENDIF]]></responseTooltip>
 					<nextDialogue><![CDATA[#IF(pc.getMoney()>=750)innoxia_places_fields_elis_shops_spa_massage_penelope_start#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.incrementMoney(-750))]

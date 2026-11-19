@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[арканные короткие луки]]></namePlural>
 		<description><![CDATA[Этот короткий лук пропитан мощным арканным зачарованием: стоит натянуть тетиву, как он вытягивает арканную эссенцию из ауры пользователя, превращая её в энергетический снаряд для выстрела по цели.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Shoot at [npc.name] with your shortbow.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc.name] из своего короткого лука.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<weaponSet/>
 		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] короткий лук.]]></equipText>

@@ -38,7 +38,7 @@
 	
 	<!-- How this tongue is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], заостренный грифоний [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], заостренный грифоний [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.
 	]]></bodyDescription>
 	
 	<!-- The tongue modifiers which this tongue has when first created (such as when a new hyena-morph is spawned).

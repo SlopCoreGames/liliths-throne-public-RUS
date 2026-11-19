@@ -18,13 +18,13 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic panther-like</descriptor>
-		<descriptor>panther-like</descriptor>
+		<descriptor>антропоморфная пантера</descriptor>
+		<descriptor>пантеровский</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic panther-like</descriptor>
-		<descriptor>panther-like</descriptor>
+		<descriptor>антропоморфная пантера</descriptor>
+		<descriptor>пантеровский</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[нос]]></noseName>

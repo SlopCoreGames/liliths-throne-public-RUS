@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[tables]]></name>
-	<tooltipDescription><![CDATA[Taking up most of the floor space in 'The Crossed Blades' tavern, numerous large wooden tables are where the more friendly patrons choose to sit and drink.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at one of the tables within 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[столы]]></name>
+	<tooltipDescription><![CDATA[Занимая почти всё пространство пола в таверне «Скрещенные клинки», многочисленные большие деревянные столы служат местом, где предпочитают сидеть и выпивать самые дружелюбные посетители.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[за одним из столов в таверне «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -34,7 +34,7 @@
 	<transformationDescription><![CDATA[
 		Непроизвольно простонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно разрастается толстая кожа, а головка резко сужается.
 		<br/>[npc.She] теперь [npc.has] [style.boldPig(свиной пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldPig([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE pig#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldPig(pig cum)].
+		<br/>[npc.She] [npc.has] [style.boldPig([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ELSE свиной#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldPig(свиную сперму)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

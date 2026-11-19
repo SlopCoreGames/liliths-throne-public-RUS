@@ -40,22 +40,22 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_START"><![CDATA[
 	<p>
-		Having already waited long enough, you quickly [pc.step] up to the glory hole,
+		Подождав достаточно долго, ты быстро [pc.step] к отверстию,
 		#IF(pc.hasPenis())
-			 preparing to have your [pc.cock+] sucked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет сосать твой [pc.cock+].
 		#ELSEIF(pc.hasVagina())
-			 preparing to have your [pc.pussy+] licked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет лизать твой [pc.pussy+].
 		#ELSE
-			 preparing to have your genderless mound licked by the stranger on the other side.
+			 готовясь к тому, что незнакомец по ту сторону будет лизать твой бесполый холмик.
 		#ENDIF
 	</p>
 	<p>
-		As [glory.she] sees the approach of your groin, [glory.name] lets out [glory.a_moan+], before shuffling closer to the wall and firmly pressing [glory.her] open mouth up against the hole. 
+		Когда [glory.she] видит приближение твоего паха, [glory.name] издает [glory.a_moan+], после чего придвигается ближе к стене и плотно прижимает [glory.her] открытый рот к отверстию. 
 		#IF(!glory.isMute())
-			 Letting out [glory.a_moan+], [glory.she] impatiently encourages you to get started, [game.random(
-			[glory.speech(Oh yeah, come on! Let this whore show you what [glory.sheIs] capable of!)]
-			|[glory.speech(~Mmm!~ Oh yeah! Let's get started!)]
-			|[glory.speech(Oh yeah, babe! I'll show you how much of a slut I am!)])]
+			 Издавая [glory.a_moan+], [glory.she] нетерпеливо подгоняет тебя, [game.random(
+			[glory.speech(О да, давай! Пусть эта шлюха покажет тебе, на что способна [glory.sheIs]!)]
+			|[glory.speech(~Ммм!~ О да! Давай начнем!)]
+			|[glory.speech(О да, детка! Я покажу тебе, какая я шлюшка!)])]
 		#ENDIF
 	</p>
 	]]>
@@ -63,10 +63,10 @@
 	
 	<htmlContent tag="TOILETS_GLORY_HOLE_DOM_POST_SEX"><![CDATA[
 	<p>
-		You [pc.step] back from the glory hole, grinning as you hear [glory.name] let out a happy little [glory.moan]. As you get your things in order, you see a flash of movement through the hole, before the creak of the adjoining stall's door announces the horny slut's exit.
+		Ты [pc.step] от отверстия, ухмыляясь и слыша, как [glory.name] издает радостный маленький [glory.moan]. Пока ты приводишь вещи в порядок, ты замечаешь мелькание движения в отверстии, а затем скрип двери соседней кабинки возвещает об уходе похотливой шлюхи.
 	</p>
 	<p>
-		Just a moment later, you reach down to unlock the door of your own stall, and as you open it and [pc.step] back out into the toilets, you see that [glory.name] has already left. With absolutely no idea as to who just orally serviced you, you wonder what to do next... 
+		Спустя мгновение ты тянешься вниз, чтобы отпереть дверь своей кабинки, и когда ты открываешь её и [pc.step] назад в туалет, то видишь, что [glory.name] уже ушел. Совершенно не понимая, кто только что отсосал тебе, ты гадаешь, что делать дальше... 
 	</p>
 	]]>
 	</htmlContent>
@@ -84,30 +84,30 @@
 		 В положении и готовая начать, ты терпеливо ждешь, пока незнакомец не появится и не попросит тебя обслужить его...
 	</p>
 	<p>
-		A few minutes later, and someone finally enters the stall on the other side. With the open glory hole obviously having been the reason they chose to enter this stall, the stranger immediately steps up to it and starts shifting their clothing out of the way. Just a moment later, and their [glory.cockDescriptive(true)] is being pushed through the hole. Before you can make a move, [glory.name]
+		Через несколько минут кто-то наконец входит в кабинку напротив. Очевидно, открытая дыра в стене стала причиной, по которой незнакомец выбрал именно это место: он тут же подходит к ней и начинает сдвигать одежду. Спустя мгновение его [glory.cockDescriptive(true)] просовывается сквозь отверстие. Прежде чем ты успеваешь что-то предпринять, [glory.name]
 		#IF(glory.isMute())
-			 impatiently taps the wall, encouraging you to get started on sucking [glory.her] cock...
+			 нетерпеливо постукивает по стене, подгоняя тебя начать сосать [glory.her] член...
 		#ELSE
 			#IF(glory.isSelfish())
 				#IF(glory.isFeminine())
-					 barks out a sharp command,
+					 выкрикивает резкую команду,
 				#ELSE
-					 lets out a deep growl,
+					 издает глубокое рычание,
 				#ENDIF
 				 [game.random(
-				[glory.speech(Come on, slut, get to work!)]
-				|[glory.speech(Start sucking, slut!)]
-				|[glory.speech(Come on, you dirty slut, get started already!)])]
+				[glory.speech(Давай, шлюха, за работу!)]
+				|[glory.speech(Начни сосать, шлюха!)]
+				|[glory.speech(Ну же, грязная шлюха, начинай уже!)])]
 			#ELSE
 				#IF(glory.isFeminine())
-					 sensually [glory.moansVerb],
+					 чувственно [glory.moansVerb],
 				#ELSE
-					 lets out a deep grunt,
+					 издает глубокий стон,
 				#ENDIF
 				 [game.random(
-				[glory.speech(Come on then, show me what you can do!)]
-				|[glory.speech(Get your lips wrapped around my cock!)]
-				|[glory.speech(Come on, get started already!)])]
+				[glory.speech(Ну же, покажи, на что ты способна!)]
+				|[glory.speech(Обхвати мой член губами!)]
+				|[glory.speech(Давай, начинай уже!)])]
 			#ENDIF
 		#ENDIF
 	</p>

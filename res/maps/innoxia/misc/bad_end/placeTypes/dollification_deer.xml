@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Slave School]]></name>
-	<tooltipDescription><![CDATA[You're used by your Mistress to break-in new and unruly slaves.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in your Mistress's slave training school]]></virginityLossDescription>
+	<name><![CDATA[Школа рабов]]></name>
+	<tooltipDescription><![CDATA[Твоя Госпожа использует тебя, чтобы приручать новых и строптивых рабов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в школе обучения рабов твоей Госпожи]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

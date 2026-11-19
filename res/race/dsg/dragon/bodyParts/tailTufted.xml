@@ -56,25 +56,25 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tail of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>dragon-like</descriptor>
-		<descriptor>draconic</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>драконий</descriptor>
+		<descriptor>драконьи</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>dragon-like</descriptor>
-		<descriptor>draconic</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>драконий</descriptor>
+		<descriptor>драконьи</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tail type above, but these describe the tail's tip: -->
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>tufted</descriptor>
+		<descriptor>пушистый</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>tufted</descriptor>
+		<descriptor>пушистый</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this tail type.
@@ -85,16 +85,16 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldDragon(драконий хвост с кисточкой)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
 [npc.TailCount] чешуйчатые драконьи хвосты вырастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь частично управляет ими, но [npc.is] всё же может ими вилять из стороны в сторону.
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldDragon(tufted draconic tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldDragon(пушистые драконьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<!-- How this tail is described in a character's description page. -->
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] dragon tail tipped with a tuft of [npc.hairColour(true)] hair, which [npc.she] can swish from side to side at will.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] драконий хвост с кисточкой из [npc.hairColour(true)] волос, которым [npc.she] может вилять из стороны в сторону по своему желанию.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] dragon tails tipped with tufts of [npc.hairColour(true)] hair, which [npc.she] can swish from side to side at will.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] драконьи хвосты с кисточками из [npc.hairColour(true)] волос, которыми [npc.she] можно вилять из стороны в сторону по своему желанию.
 		#ENDIF
 	]]></bodyDescription>
 	

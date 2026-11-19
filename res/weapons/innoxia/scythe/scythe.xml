@@ -18,7 +18,7 @@
 		
 		<attackDescriptor>reap</attackDescriptor>
 		
-		<attackTooltipDescription>Swing your scythe at [npc2.name].</attackTooltipDescription>
+		<attackTooltipDescription>Взмахни косой по [npc2.name].</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		

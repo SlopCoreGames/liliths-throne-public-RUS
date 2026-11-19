@@ -23,7 +23,7 @@
 			<category id="colour" priority="1">
 				<categoryName><![CDATA[Цвета]]></categoryName>
 				<sticker id="one" priority="1" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[One]]></stickerName>
+					<stickerName><![CDATA[Один]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -34,7 +34,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="two" priority="2" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Two (hard)]]></stickerName>
+					<stickerName><![CDATA[Два (твердый)]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -45,7 +45,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="two_soft" priority="2" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Two (soft)]]></stickerName>
+					<stickerName><![CDATA[Два (мягкий)]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -56,7 +56,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="three" priority="3" defaultSticker="false" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Three (hard)]]></stickerName>
+					<stickerName><![CDATA[Три (твердый)]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -67,7 +67,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="three_soft" priority="3" defaultSticker="false" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Three (soft)]]></stickerName>
+					<stickerName><![CDATA[Три (мягкий)]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -188,7 +188,7 @@
 			<![CDATA[[npc.Name] [npc.verb(pull)] огромный лошадиный дилдо из [npc2.namePos] [npc2.vagina+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] huge equine dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.vagina+].]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] огромный лошадиный дилдо и [npc.verb(yank)] его из [npc2.her] [npc2.vagina+].]]>
 		</otherRough>
 	</displacementText>
 
@@ -212,7 +212,7 @@
 			<![CDATA[[npc.Name] [npc.verb(pull)] огромный конский дилдо из [npc2.namePos] [npc2.anus+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] huge equine dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.anus+].]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] огромный лошадиный дилдо и [npc.verb(yank)] его из [npc2.her] [npc2.anus+].]]>
 		</otherRough>
 	</displacementText>
 
@@ -236,7 +236,7 @@
 			<![CDATA[[npc.Name] [npc.verb(pull)] огромный лошадиный дилдо из [npc2.namePos] [npc2.mouth+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] huge equine dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.mouth+].]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] огромный лошадиный дилдо и [npc.verb(yank)] его из [npc2.her] [npc2.mouth+].]]>
 		</otherRough>
 	</displacementText>
 	

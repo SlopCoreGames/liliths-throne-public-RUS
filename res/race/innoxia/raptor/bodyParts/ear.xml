@@ -12,16 +12,16 @@
 	<namePlural><![CDATA[уши]]></namePlural>
 	
 	<descriptorsMasculine>
-		<descriptor>feathered</descriptor>
-		<descriptor>feather-covered</descriptor>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>покрытые перьями</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>feathered</descriptor>
-		<descriptor>feather-covered</descriptor>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>покрытые перьями</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -31,7 +31,7 @@
 		#ELSE
 Как и всё тело [npc.her], [npc.her] теперь полностью внутренние уши сделаны из [npc.earFullDescription],		#ENDIF
 		 и по завершении трансформации у [npc.sheIs] остается пара пернатых ушей раптора.
-		<br/>[npc.Name] теперь [npc.has] [style.boldRaptor(internal, feather-covered raptor ears)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldRaptor(internal, покрытые перьями уши раптора)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

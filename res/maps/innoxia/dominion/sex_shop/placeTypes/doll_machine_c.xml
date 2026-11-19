@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[assembly line C]]></name>
-	<tooltipDescription><![CDATA[At the end of the assembly line, the assembled dolls enter an arcane saturation chamber, in which they're enchanted to become autonomous.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the back of Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[сборочная линия C]]></name>
+	<tooltipDescription><![CDATA[В конце сборочной линии собранные куклы попадают в камеру насыщения Арканой, где их зачаровывают, чтобы они обрели автономность.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в задней части «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

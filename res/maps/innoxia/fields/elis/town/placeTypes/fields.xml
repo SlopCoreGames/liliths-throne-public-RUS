@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[fields]]></name>
-	<tooltipDescription><![CDATA[The land around Elis consists of either natural meadows or fields of crops.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the fields outside Elis]]></virginityLossDescription>
+	<name><![CDATA[поля]]></name>
+	<tooltipDescription><![CDATA[Земли вокруг Элиса состоят либо из природных лугов, либо из возделанных полей.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на полях за пределами Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND_GREEN</backgroundColour>

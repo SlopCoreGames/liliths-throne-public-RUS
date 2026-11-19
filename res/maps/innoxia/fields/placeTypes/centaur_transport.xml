@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Centaur Carriage Depot]]></name>
-	<tooltipDescription><![CDATA[Located a short distance to the north of Dominion, the 'Centaur Carriage Depot' is the place to go if you want to catch a ride to Elis.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the 'Centaur Carriage Depot' north of Dominion]]></virginityLossDescription>
+	<name><![CDATA[Депо кентавров]]></name>
+	<tooltipDescription><![CDATA[Расположенный совсем недалеко к северу от Dominion, «Депо кентавров» — это лучшее место, если вы хотите отправиться в путь до Элиса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в «Депо кентавров» к северу от Dominion]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_TAN</colour>
 	<backgroundColour>MAP_BACKGROUND_GREEN</backgroundColour>

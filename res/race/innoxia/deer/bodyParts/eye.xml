@@ -25,7 +25,7 @@
 	
 	<transformationDescription><![CDATA[К тому времени как [npc.she] нерешительно [npc.verb(open)] их снова, они превращаются в оленьи глаза с огромными радужками и горизонтальными зрачками.
 <br/>
-[npc.Name] теперь [npc.has] [style.boldGoat(deer-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].]]></transformationDescription>
+[npc.Name] теперь [npc.has] [style.boldGoat(оленьи глаза)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
 		[npc.SheHasFull] [npc.eyePairs] оленьи глаза, радужки и зрачки которых крупнее, чем у обычного человека. У них [npc.irisShape], [npc.irisColour(true)] радужки, [npc.pupilShape], [npc.pupilColour(true)] зрачки и [npc.scleraColour(true)] склеры.

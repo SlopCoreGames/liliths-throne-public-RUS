@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[locked door]]></name>
-	<tooltipDescription><![CDATA[This door links the corridor to the doll machine.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside a locked door in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[запертая дверь]]></name>
+	<tooltipDescription><![CDATA[Эта дверь ведет из коридора к машине для кукол.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с запертой дверью на фабрике под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_CRIMSON</colour>

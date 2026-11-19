@@ -48,13 +48,13 @@
 		Выходя из Красного Дракона, вы поворачиваете в сторону Конец Стены и отправляетесь по улице. Вам не нужно долго идти, чтобы добраться до торгового района, и, пройдя мимо хорошо укомплектованных цветочных ящиков, которые выстроились вдоль входа, вы входите в главную площадь торгового района.
 	</p>
 	<p>
-		Casting your gaze around, you don't see any sign of Meraxis, but there is an unusually-large crowd gathered around the square's central fountain. From where you're standing, it sounds like there's a fight going on in the middle of this crowd. A feminine voices shouts out, then another one makes some kind of battle cry, and then finally you hear a shout which sounds very much like Meraxis's voice.
+		Окинув взглядом окрестности, ты не замечаешь никаких признаков присутствия Мераксис, но у центрального фонтана на площади собралась необычайно большая толпа. Оттуда, где ты стоишь, доносится шум, похожий на драку в самой гуще толпы. Слышится женский выкрик, затем еще один голос издает своего рода боевой клич, и, наконец, ты слышишь крик, который очень напоминает голос Мераксис.
 	</p>
 	<p>
 		#IF(pc.isAbleToFly())
-			Quickly taking off into the air, you fly up and over the crowd, and as you look down you're able to confirm that the voice you just heard does indeed belong to Meraxis. The chuuni [meraxis.race] is standing in front of her succubi followers, and from the way they're lined up and the exaggerated forms of the heroic poses which they're striking, Meraxis looks to be instructing them in her style of performative combat. Swooping down to land in front of the crowd, you [pc.step] forwards and prepare to call out to Meraxis.
+			Стремительно взмыв в воздух, ты пролетаешь над толпой и, глянув вниз, убеждаешься, что голос действительно принадлежит Мераксис. Эта чууни [meraxis.race] стоит перед своими последовательницами-суккубами и, судя по их строю и преувеличенно героическим позам, обучает их своему стилю театрального боя. Спикировав к краю толпы, ты [pc.step] вперёд и готовишься окликнуть Мераксис.
 		#ELSEIF(pc.getRace()==RACE_DEMON)
-			[pc.Stepping] forwards, you loudly demand that the crowd makes way for you, and as the members of this gathering turn to see that you're demon, they hurriedly move aside to give you a clear path. Passing through these dutifully-subservient citizens of Elis, you're able to reach the fountain and confirm that the voice you just heard does indeed belong to Meraxis. The chuuni [meraxis.race] is standing in front of her succubi followers, and from the way they're lined up and the exaggerated forms of the heroic poses which they're striking, Meraxis looks to be instructing them in her style of performative combat.
+			[pc.Stepping] идет вперед; ты громко требуешь, чтобы толпа расступилась, и когда собравшиеся видят, что ты — демон, они поспешно отходят, освобождая тебе путь. Пробираясь сквозь этих послушных и раболепных жителей Элиса, ты доходишь до фонтана и убеждаешься, что голос, который ты только что слышал, действительно принадлежит Мераксис. Эта чунибёя [meraxis.race] стоит перед своими последовательницами-суккубами, и судя по тому, как они выстроились и какие преувеличенно героические позы принимают, Мераксис, похоже, обучает их своему стилю театрального боя.
 		#ELSE
 			[pc.Stepping] продвигаясь вперед, ты пробираешься сквозь толпу, и хотя происходит некоторое толкание, ты быстро добираешься до фонтана и подтверждаешь, что голос, который ты только что услышал, действительно принадлежит Мераксис. Чууни [meraxis.race] стоит перед своими последовательницами-суккубами, и судя по тому, как они выстроились и как они делают героические позы, Мераксис, похоже, обучает их своему стилю перформативного боя.
 		#ENDIF
@@ -103,20 +103,20 @@
 		[pc.Stepping] подходит к ней, ты сообщаешь Мераксис, что скоро будет очень важная встреча в ратуше, и что вам обоим нужно добраться туда как можно быстрее.
 	</p>
 	<p>
-		[meraxis.speech(Of course, the fate of this town, and that of the very world itself, rests in our hands, does it not?)] she replies with a smirk on her face, before swishing her cloak out behind her and declaring, [meraxis.speech(Let us depart henceforth!)]
+		[meraxis.speech(Разумеется, судьба этого города и всего мира лежит в наших руках, не так ли?)] — отвечает она с ухмылкой на лице, после чего взмахивает плащом и провозглашает: [meraxis.speech(Итак, отправляемся!)]
 	</p>
 	<p>
-		The crowd beings to disperse as they see that the show's over, and Meraxis cheerfully bounces along at your side as the two of you head over towards the precinct's exit. As you depart, you notice that Meraxis's ex-minions are hanging out over in one corner of the shopping precinct. Letting out a laugh, the chuuni [meraxis.race] points at these succubi and asks, [meraxis.speech(Pathetic, aren't they? I was attempting to show them the key to true power, but they simply couldn't comprehend it. Out of the hundreds of followers that I've had, only a handful have ever truly understood me.)]
+		Толпа начинает расходиться, понимая, что шоу окончено, и Мераксис весело подпрыгивает рядом с тобой, пока вы вдвоем направляетесь к выходу из торгового квартала. Уходя, ты замечаешь, что бывшие прислужницы Мераксис ошиваются в одном из углов торгового комплекса. Издав смешок, чунибьё [meraxis.race] указывает на этих суккубов и спрашивает: [meraxis.speech(Жалкие, не так ли? Я пыталась показать им ключ к истинной власти, но они просто не смогли его постичь. Из сотен моих последователей лишь горстка когда-либо по-настоящему понимала меня.)]
 	</p>
 	<p>
-		Although she doesn't seem to need to hear it, you still tell Meraxis that she's better off without them. Nodding in agreement, the chuuni [meraxis.race] stays by your side as the two of you turn your backs on the succubi and set off in the direction of the town hall...
+		Хотя ей, кажется, и так всё понятно, ты всё же говоришь Мераксис, что без них ей будет только лучше. Кивнув в знак согласия, чунибьё [meraxis.race] остается рядом с тобой, пока вы вдвоем поворачиваетесь спиной к суккубам и отправляетесь в сторону ратуши...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FIND_MERAXIS_WALLS_END_POSE"><![CDATA[
 	<p>
-		Feeling a little sorry for Meraxis after witnessing herfollowers abandon her in such a public fashion, you decide to humour her request. Trying not to think about how many people are watching, you do your best to mimic one of the poses which you've seen Meraxis perform in the past. 
+		Чувствуя легкую жалость к Мераксис после того, как ты увидел, как её последователи бросили её на глазах у всех, ты решаешь потакать её просьбе. Стараясь не думать о том, сколько людей наблюдает за тобой, ты изо всех сил пытаешься скопировать одну из поз, которые видел у Мераксис раньше. 
 	</p>
 	<p>
 		Хотя в толпе раздается несколько смешков, похоже, вы не сделали ничего плохого. Однако, по меркам Мераксис, вы, похоже, сильно отстаете, ведь она смеется и громко спрашивает, [meraxis.speech(Что это должно было означать? Я покажу вам настоящую высшую позу!)]
@@ -128,17 +128,17 @@
 		Прежде чем вы успеете среагировать, она поднимает свою косу и снова размахивает ею, прежде чем поднять ее за спину и принять позу, которая заставляет ее выглядеть так, будто она собирается атаковать. С зловещей ухмылкой на лице она наклоняет голову вперед и смеется, [meraxis.speech(Сами фундаментальные силы вселенной подвластны мне! Не хочу ли я дать вам попробовать космические силы, которыми я владею?)]
 	</p>
 	<p>
-		The crowd mutters and some visibly cringe at this performance. Not wanting to give her an excuse to start throwing out spells, which would no doubt cause significantly more damage than simply cracking a paving stone, you tell Meraxis that you're suitably impressed, and that everyone can see what an immensely powerful демон she is. Not giving her any time in which to respond, you [pc.step] over to the chuuni [meraxis.race] and inform her that there's about to be a very important meeting in the town hall, and that the two of you need to get over there as quickly as possible.
+		Толпа ропщет, а некоторые заметно морщатся от этого представления. Не желая давать ей повода начать разбрасываться заклинаниями — что, без сомнения, нанесет куда больший ущерб, чем просто трещина в брусчатке, — ты говоришь Мераксис, что впечатлен и что все видят, какой безмерно могущественной демоном она является. Не давая ей времени на ответ, ты [pc.step] к этой чуни, [meraxis.race] и сообщаешь, что в ратуше вот-вот начнется очень важное собрание и что вам двоим нужно поскорее туда добраться.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FIND_MERAXIS_WALLS_END_CHUUNI"><![CDATA[
 	<p>
-		With a smug chuckle, you declare to both Meraxis and the crowd that, just this once, you've decided to show off your true power outside of combat. Placing one of your [pc.hands] over one side of your face, you reveal that you are master of both darkness and light, before swishing your arms outwards in a wide, sweeping motion.
+		Самодовольно усмехнувшись, ты заявляешь и Мераксис, и толпе, что только в этот раз решил продемонстрировать свою истинную мощь вне боя. Приложив одну из своих [pc.hands] к одной стороне лица, ты являешь, что являешься хозяином и тьмы, и света, после чего широко и плавно взмахиваешь руками в стороны.
 	</p>
 	<p>
-		[meraxis.speech(Impressive, but the very fundamental forces of the universe itself are mine to control! What are darkness and light compared to the cosmic powers which I wield?!)] Meraxis boasts, and after sweeping her scythe around in an unbelievably-cool manner, she strikes it down onto the ground, cracking a paving stone in the process.
+		[meraxis.speech(Впечатляет, но сами фундаментальные силы вселенной подвластны мне! Что такое тьма и свет по сравнению с космическими силами, которыми я повелеваю?!)] — хвастается Мераксис и, невероятно эффектно взмахнув своей косой, обрушивает её на землю, отчего та с треском раскалывает брусчатку.
 	</p>
 	<p>
 		Ещё не закончив, ты отвечаешь похожим заявлением. Хотя ты и хотел сохранить это в тайне, ты раскрываешь всем вокруг, что ты катализатор апокалипсиса, и хотя одна из твоих частей стремится разрушить этот мир, ты поклялся защищать тех, кого ты ценишь. Заканчивая своё хвастовство, ты крутишься и прячешься в позу пантеры, держа руки за спиной, что заставляет тебя выглядеть как дикое животное, готовое атаковать в любой момент.
@@ -236,10 +236,10 @@
 	
 	<htmlContent tag="MEETING_WEAPONS"><![CDATA[
 	<p>
-		Хозя захотев узнать, есть ли какие-либо решения для отсутствия оружия, ты обращаешься к Хаммеру и призраку и спрашиваешь их, есть ли какой-либо способ получить больше от э enforcing Dominion. 
+		Захотев узнать, можно ли решить проблему нехватки оружия, ты обращаешься к Хаммеру и призраку, спрашивая, есть ли способ добыть больше ресурсов у Enforcer Dominion. 
 	</p>
 	<p>
-		[ghost.speech(За сотни оружия, которые нам нужно, чтобы правильно экипировать ополчение? Нет никаких шансов на это,)] Ghost с сожалением вздыхает, [ghost.speech(За то, что мы встали против лилина, нас фактически изгнали из Dominion, и любой, кто там пойман на оказании нам услуг, получит аналогичное обращение. Даже если кто-то из Dominion Enforcers был бы готов помочь нам, передача оружия в таком количестве, о котором мы говорим, потребовала бы одобрения самой Комиссар. Даже если бы она не ненавидела нас, нет никаких шансов, что она когда-нибудь одобрила бы что-то подобное.)]
+		[ghost.speech(Сотни единиц оружия, чтобы должным образом экипировать ополчение? Шансов практически нет,)] Ghost с сожалением вздыхает, [ghost.speech(Из-за того, что мы восстали против Лилит, нас фактически изгнали из Dominion, и любого, кто попадется на оказании нам услуг, ждет та же участь. Даже если бы кто-то из Enforcer Dominion был готов помочь, передача оружия в таких масштабах потребовала бы одобрения самой Комиссар. Даже если бы она нас не ненавидела, она вряд ли когда-нибудь согласилась бы на подобное.)]
 	</p>
 	<p>
 		[hammer.speech(У нас действительно был огромный склад конфискованного оружия HLF, которое действительно пригодилось бы сейчас, но <i>кто-то</i> приказал уничтожить его пару лет назад,)] Хаммер рычит, прежде чем посмотреть на Миноталыса. 
@@ -298,7 +298,7 @@
 		Внезапно осознав, что она назвала Лиссит "мамой" на глазах у всех, Мераксис начинает краснеть. К счастью для неё, Минотальис отвлекает внимание всех от этого, говоря: [minotallys.speech(Я серьёзно сомневаюсь, что юко поможет нам. Отложим это на время, как вы предлагаете, как нам достать достаточно оружия, чтобы вооружить милицию?)]
 	</p>
 	<p>
-		[meraxis.speech(A few years ago, I stole a huge cache of guns that <i>Lyssieth</i> made, so we can use those,)] Meraxis says, putting emphasis on her mother's name in an attempt to compensate for her previous blunder. While the others didn't seem too impressed when meraxis mentioned the youko, Hammer and Ghsot both raise their eyebrows as Meraxis mentions these guns. Seeing their reactions, the chuuni [meraxis.race] can't help but smirk as she explains, [meraxis.speech(Lyssieth planned on having her unrecognised daughters wear some funny red uniforms and march around with those guns. I thought that was a waste, so over the course of a few nights, I teleported them out of her palace box-by-box. I thought it would be fun to give them to my army of imps in Submission!)]
+		[meraxis.speech(Несколько лет назад я украла огромный запас пушек, которые сделала <i>Lyssieth</i>, так что мы можем ими воспользоваться,)] — говорит Meraxis, делая акцент на имени матери в попытке загладить свою прошлую оплошность. В то время как остальные, казалось, не слишком впечатлились упоминанием юко, Hammer и Ghsot вскидывают брови, когда Meraxis заводит речь об этом оружии. Видя их реакцию, чуни [meraxis.race] не может сдержать ухмылки, объясняя: [meraxis.speech(Lyssieth планировала одеть своих непризнанных дочерей в забавную красную форму и заставить их маршировать с этими пушками. Я подумала, что это пустая трата ресурсов, поэтому за несколько ночей я телепортировала их из её дворца ящик за ящиком. Мне показалось, что будет весело отдать их моей армии бесов в Submission!)]
 	</p><p>
 		[hammer.speech(Я никогда не слышал о армии бесов с ружьями,)] Хэмер хрюкает.
 	</p>
@@ -318,23 +318,23 @@
 		[meraxis.speech(Эй! Я могу это сделать! Особенно если [pc.name] со мной!)] Мераксис выкрикивает, [meraxis.speech(Я знаю, что не все доверяют юко, но, как я уже говорил, даже мама сказала, что это хорошая идея получить их помощь!)]
 	</p>
 	<p>
-		Having once again called Lyssieth 'mommy', Meraxis pauses and blushes, giving you a moment in which to interject.
+		Снова назвав Lyssieth «мамочкой», Meraxis замолкает и краснеет, давая тебе возможность вставить свое слово.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_YOUKO"><![CDATA[
 	<p>
-		Everyone seems dismissive of Meraxis's suggestions, so you ask what the problem with the youko is.
+		Все кажутся равнодушными к предложениям Meraxis, поэтому ты спрашиваешь, в чем именно заключается проблема с юко.
 	</p>
 	<p>
-		[hammer.speech(They're only interested in their own affairs, and even the kindest youko will do nothing to help the world outside of their Shinrin Highlands,)] Hammer grunts, before looking at Meraxis and saying in a accusatory tone, [hammer.speech(I've looked through the file on you; that youko friend of yours is a follower of the trickster youko lilin, isn't she? I'd sooner trust an imp than a servant of Kayo.)]
+		[hammer.speech(Их волнуют только собственные дела, и даже самая добрая ёко ничего не сделает для мира за пределами своих высокогорий Синрин,)] Молот хмыкает, а затем, глядя на Мераксис, произносит обвиняющим тоном: [hammer.speech(Я просмотрел на тебя досье; та твоя подруга-ёко — последовательница ёко-обманщицы лилин, верно? Я скорее поверю бесу, чем слуге Кайо.)]
 	</p>
 	<p>
-		[meraxis.speech(So what does it matter if she serves Kayo? She's my friend, and she'll help us!)] Meraxis says, stomping her foot on the ground in the process.
+		[meraxis.speech(Ну и какое дело, что она служит Кайо? Она моя подруга, и она поможет нам!)] — говорит Мераксис, при этом топая ногой по земле.
 	</p>
 	<p>
-		[minotallys.speech(The youko lilin; Kayo and Kazuha...)] Minotallys sighs, [minotallys.speech(I've had dealings with them before, and I don't wish to get involved with them ever again. Even if you could somehow convince a hundred youko to leave their homes and come to our aid, you'd have to have the blessing of both of the youko lilin, or else they'd act to ruin everything. I imagine that Kazhua, being the benevolent one, could be convinced to help us once she understands the threat which Lunette poses. It's Kayo who'll be the problem. You'll be lucky to ever be seen again if you somehow manage to track her down, and as to convincing her to help us? No chance.)]
+		[minotallys.speech(Ёко лилин; Кайо и Казуха...)] Миноталлис вздыхает, [minotallys.speech(Мне уже приходилось иметь с ними дело, и больше я не желаю в это ввязываться. Даже если бы тебе каким-то образом удалось убедить сотню ёко покинуть свои дома и прийти нам на помощь, тебе понадобилось бы благословение обеих ёко лилин, иначе они сделают всё, чтобы всё испортить. Полагаю, что Казуху, будучи добродушной, можно было бы убедить помочь нам, как только она поймет, какую угрозу представляет Лунетт. А вот Кайо станет проблемой. Тебе повезет, если тебя вообще увидят снова, если ты каким-то чудом сумеешь выследить её, а уж убедить её помочь нам? Без шансов.)]
 	</p>
 	<p>
 		[meraxis.speech(Хорошо, так какие у тебя идеи?)] Мераксис требует, [meraxis.speech(Кто еще знает, где можно найти сотни видов оружия? Кто может убедить сотню демонов прийти и сражаться против Лунетт от нашего имени?)]
@@ -391,16 +391,16 @@
 		Вместе со всеми, ты покидаешь кабинет Минотались.
 	</p>
 	<p>
-		As you [pc.walk] down the stairs, Hammer says, [hammer.speech(It'll take us some time to put the milita together, so until we've got that organised and the training really begins, you'll still be able to find us in the usual room in the Enforcer station.)]
+		Пока ты [pc.walk] вниз по лестнице, Хаммер говорит: [hammer.speech(Нам понадобится время, чтобы собрать ополчение, так что пока всё не будет организовано и не начнутся настоящие тренировки, нас всё ещё можно будет найти в нашей обычной комнате на станции Enforcer.)]
 	</p>
 	<p>
-		[ursa.speech(I'll be in my usual tent as well,)] Ursa says, [ursa.speech(Once the militia is formed and the training starts, that might change, but for now I'll be in our camp.)]
+		[ursa.speech(Я тоже буду в своей обычной палатке),] — говорит Урса, — [ursa.speech(Как только ополчение сформируется и начнутся тренировки, всё может измениться, но пока я буду в нашем лагере.)]
 	</p>
 	<p>
-		[meraxis.speech(And I'll be in The Red Dragon,)] Meraxis cheerfully joins in, [meraxis.speech(Come and find me as soon as you're ready to set off to the Shinrin Highlands. The first thing we need to do is find Takahashi. She should have made contact with me by now, but seeing as she hasn't, we need to go and check our backup rendezvous spot, which is my old hideout in the Shinrin Highlands.)]
+		[meraxis.speech(А я буду в «Красном драконе»),] — весело подхватывает Мераксис, — [meraxis.speech(Приходи и найди меня, как только будешь готова отправиться на высокогорье Шинрин. Первым делом нам нужно найти Такахаши. Она уже должна была выйти со мной на связь, но раз этого не случилось, нам нужно проверить наше запасное место встречи — моё старое убежище в высокогорье Шинрин.)]
 	</p>
 	<p>
-		Exiting the town hall, you tell Meraxis that you'll come and see her soon. Saying goodbye to everyone, you watch them go their separate ways and wonder what to do next...
+		Выйдя из ратуши, ты говоришь Мераксис, что скоро зайдёшь к ней. Попрощавшись со всеми, ты наблюдаешь, как они расходятся кто куда, и гадаешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>

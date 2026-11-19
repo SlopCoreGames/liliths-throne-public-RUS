@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[bar]]></name>
-	<tooltipDescription><![CDATA[Positioned in the centre of the floor, the circular bar at 'The Centaur's Sword' is able to accommodate numerous tauric customers at once.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the bar in 'The Centaur's Sword' tavern]]></virginityLossDescription>
+	<name><![CDATA[бар]]></name>
+	<tooltipDescription><![CDATA[Круглая барная стойка в таверне «Меч Кентавра» расположена в самом центре зала и способна одновременно принять множество клиентов-тавров.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у барной стойки в таверне «Меч Кентавра»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

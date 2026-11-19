@@ -153,7 +153,7 @@
 	
 	<htmlContent tag="SET_SLAVE_FREE_SCARLETT"><![CDATA[
 	<p>
-		Deciding that it's time to set [npc.name] free, you write [npc.her] name on your Freedom Certification and give it your signature, before holding it up to your now-ex slave and letting [npc.herHim] see what it is that you've just done. Not quite believing what it is [npc.sheIs] seeing, [npc.she] reaches up to take the piece of paper from your [pc.hands] and carefully reads over it several times. With a suspicious glare in [npc.her] [npc.eyes+], [npc.she] finally asks, [npc.speech(This isn't a trick, is it? I'm... I'm actually free?)]
+		Решив, что пришло время даровать [npc.name] свободу, ты вписываешь [npc.her] имя в Сертификат Свободы и ставишь свою подпись. Затем ты поднимаешь документ перед своей бывшей рабыней, позволяя [npc.herHim] увидеть, что именно ты только что совершил. Поверив с трудом в то, что [npc.sheIs] видит, [npc.she] тянется, чтобы забрать листок из твоих [pc.hands], и несколько раз внимательно его перечитывает. С подозрительным блеском в [npc.her] [npc.eyes+], [npc.she] наконец спрашивает: [npc.speech(Это ведь не розыгрыш? Я... я правда свободна?)]
 	</p>
 	<p>
 		Как только ты подтверждаешь, что [npc.sheIs] теперь свободная [npc.race], к [npc.namePos] внезапно возвращается её прежний характер: она стремительно проходит мимо тебя и распахивает дверь. Больше не боясь выражать свои истинные чувства, [npc.she] оборачивается и гневно рычит: [npc.speech(Пошел ты к черту за то, что держал меня в рабстве, [pc.name]! Мне будет куда лучше в гнезде у Helena!)]
@@ -169,7 +169,7 @@
 
 	<htmlContent tag="SET_SLAVE_FREE_DISLIKE"><![CDATA[
 	<p>
-		Deciding that it's time to set [npc.name] free, you write [npc.her] name on your Freedom Certification and give it your signature, before holding it up to your now-ex slave and letting [npc.herHim] see what it is that you've just done. Not quite believing what it is [npc.sheIs] seeing, [npc.she] reaches up to take the piece of paper from your [pc.hands] and carefully reads over it several times. With a suspicious glare in [npc.her] [npc.eyes+], [npc.she] finally asks, [npc.speech(This isn't a trick, is it? I'm... I'm actually free?)]
+		Решив, что пришло время даровать [npc.name] свободу, ты вписываешь [npc.her] имя в Сертификат Свободы и ставишь свою подпись. Затем ты поднимаешь документ перед своей бывшей рабыней, позволяя [npc.herHim] увидеть, что именно ты только что совершил. Поверив с трудом в то, что [npc.sheIs] видит, [npc.she] тянется, чтобы забрать листок из твоих [pc.hands], и несколько раз внимательно его перечитывает. С подозрительным блеском в [npc.her] [npc.eyes+], [npc.she] наконец спрашивает: [npc.speech(Это ведь не розыгрыш? Я... я правда свободна?)]
 	</p>
 	<p>
 		Как только ты подтверждаешь, что [npc.sheIs] теперь свободная [npc.race], [npc.name] проносится мимо тебя и распахивает дверь. Больше не боясь выражать свои истинные чувства, [npc.she] оборачивается и гневно рычит: [npc.speech(Пошел ты, [pc.name]! Хочу сказать, чтобы я больше никогда не видела твою гребаную рожу!)]
@@ -182,7 +182,7 @@
 
 	<htmlContent tag="SET_SLAVE_FREE_NO_GUEST"><![CDATA[
 	<p>
-		Deciding that it's time to set [npc.name] free, you write [npc.her] name on your Freedom Certification and give it your signature, before holding it up to your now-ex slave and letting [npc.herHim] see what it is that you've just done. Not quite believing what it is [npc.sheIs] seeing, [npc.she] reaches up to take the piece of paper from your [pc.hands] and carefully reads over it several times. With a suspicious glare in [npc.her] [npc.eyes+], [npc.she] finally asks, [npc.speech(This isn't a trick, is it? I'm... I'm actually free?)]
+		Решив, что пришло время даровать [npc.name] свободу, ты вписываешь [npc.her] имя в Сертификат Свободы и ставишь свою подпись. Затем ты поднимаешь документ перед своей бывшей рабыней, позволяя [npc.herHim] увидеть, что именно ты только что совершил. Поверив с трудом в то, что [npc.sheIs] видит, [npc.she] тянется, чтобы забрать листок из твоих [pc.hands], и несколько раз внимательно его перечитывает. С подозрительным блеском в [npc.her] [npc.eyes+], [npc.she] наконец спрашивает: [npc.speech(Это ведь не розыгрыш? Я... я правда свободна?)]
 	</p><p>
 Как только ты подтверждаешь, что [npc.sheIs] теперь свободная [npc.race], [npc.name] издаёт долгий вздох и [npc.walks] к двери. Однако, прежде чем [npc.she] уйдёт, [npc.she] оборачивается и слегка тебе улыбается, прежде чем сказать: [npc.speech(Думаю, ты был не самым худшим хозяином, [pc.name]. Надеюсь, ты хорошо относишься к остальным своим рабам...)]
 </p>
@@ -194,7 +194,7 @@
 
 	<htmlContent tag="SET_SLAVE_FREE_GUEST_CHOICE"><![CDATA[
 	<p>
-		Deciding that it's time to set [npc.name] free, you write [npc.her] name on your Freedom Certification and give it your signature, before holding it up to your now-ex slave and letting [npc.herHim] see what it is that you've just done. Not quite believing what it is [npc.sheIs] seeing, [npc.she] reaches up to take the piece of paper from your [pc.hands] and carefully reads over it several times. With a suspicious glare in [npc.her] [npc.eyes+], [npc.she] finally asks, [npc.speech(This isn't a trick, is it? I'm... I'm actually free?)]
+		Решив, что пришло время даровать [npc.name] свободу, ты вписываешь [npc.her] имя в Сертификат Свободы и ставишь свою подпись. Затем ты поднимаешь документ перед своей бывшей рабыней, позволяя [npc.herHim] увидеть, что именно ты только что совершил. Поверив с трудом в то, что [npc.sheIs] видит, [npc.she] тянется, чтобы забрать листок из твоих [pc.hands], и несколько раз внимательно его перечитывает. С подозрительным блеском в [npc.her] [npc.eyes+], [npc.she] наконец спрашивает: [npc.speech(Это ведь не розыгрыш? Я... я правда свободна?)]
 	</p><p>
 Как только ты подтверждаешь, что [npc.sheIs] теперь свободная [npc.race], [npc.name] издаёт долгий вздох и [npc.walks] к двери. Прежде чем [npc.she] уйдёт, ты понимаешь, что у тебя есть единственный шанс не дать [npc.herHim] навсегда исчезнуть из твоей жизни. Предложив [npc.herHim] остановиться в одной из гостевых комнат особняка, ты мог бы построить настоящие отношения с [npc.name]. С другой стороны, если ты просто хочешь, чтобы [npc.herHim] ушла, можно просто попрощаться...
 </p>
@@ -213,7 +213,7 @@
 
 	<htmlContent tag="SET_SLAVE_FREE_THROWN_OUT"><![CDATA[
 	<p>
-		Definitely not interested in having [npc.name] stay on as a guest in the mansion, you decide to speed [npc.her] departure along by [pc.stepping] over to the room's bell-pull and tugging on it. Within seconds, Rose appears at the door, and you tell the cat-girl maid that [npc.name] is trespassing and needs to be thrown out. Immediately grabbing your ex-slave by the [npc.arm], Rose gives [npc.herHim] no time in which to say anything more to you and forcefully pulls [npc.herHim] out of the room.
+Раз уж тебе совсем не хочется, чтобы [npc.name] оставалась в особняке в качестве гостьи, ты решаешь ускорить [npc.her] отъезд и [pc.stepping] тянешь за шнур колокольчика в комнате. Спустя считанные секунды в дверях появляется Роуз, и ты говоришь горничной-кошке, что [npc.name] — незваная гостья, которую нужно выставить вон. Мгновенно схватив твою бывшую рабыню за [npc.arm], Роуз не дает [npc.herHim] возможности сказать тебе хоть слово и силой вытаскивает [npc.herHim] из комнаты.
 	</p>
 	<p>
 		Вскоре после этого ты слышишь далекий звук закрывающейся входной двери за [npc.name] и осознаешь, что тебе больше никогда не придется видеть [npc.herHim]...

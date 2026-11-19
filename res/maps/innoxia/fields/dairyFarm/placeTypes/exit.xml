@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Waiting Area]]></name>
-	<tooltipDescription><![CDATA[The entrance to the dairy farm takes the form of a pair of modern, glass doors, and leads directly into a large waiting area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the waiting area at Evelyx's Dairy]]></virginityLossDescription>
+	<name><![CDATA[Зона ожидания]]></name>
+	<tooltipDescription><![CDATA[Вход на молочную ферму представляет собой пару современных стеклянных дверей, ведущих прямиком в просторную зону ожидания.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в зоне ожидания молочной фермы Эвеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

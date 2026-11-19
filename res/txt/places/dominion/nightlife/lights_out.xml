@@ -176,7 +176,7 @@
 	
 	<htmlContent tag="BAR_SIT_RELAX_FLIRT"><![CDATA[
 	<p>
-		Приглядевшись к [partner.name], ты называешь [partner.herHim] свое имя, на что [partner.she] отвечает: [partner.speech(Не думаю, что у меня уже был секс на одну ночь с #IF(game.isVowel(pc.getName().charAt(0)))an#ELSEa#ENDIF '[pc.name]' before. Oh well, there's always a first for everything.)]
+		Приглядевшись к [partner.name], ты называешь [partner.herHim] свое имя, на что [partner.she] отвечает: [partner.speech(Не думаю, что у меня уже был секс на одну ночь с #IF(game.isVowel(pc.getName().charAt(0)))an#ELSEa#ENDIF Прежде '[pc.name]'. Ну что ж, всё когда-то случается в первый раз.)]
 	</p>
 	<p>
 		Закатив глаза, ты спрашиваешь [partner.name], с чего вдруг [partner.sheIs] так уверен, что этот вечер закончится сексом на одну ночь. На что [partner.she] заявляет: [partner.speech(Ну, ты ведь еще не послал(а) меня куда подальше, а это всегда хороший знак. В любом случае, расскажи о себе побольше; мне хочется узнать побольше о милом(ой) [pc.race], которого(ую) я буду трахать сегодня ночью.)]

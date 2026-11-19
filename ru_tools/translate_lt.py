@@ -32,11 +32,13 @@ _TM_CACHE: dict | None = None
 
 HTML_TAG_RE = re.compile(r"</?[a-zA-Z][^>]*?>")
 STYLE_MONEY_RE = re.compile(r"\[style\.moneyFormat[a-zA-Z]*\([^\]]*\)\]")
+VERB_TAG_RE = re.compile(r"\[[a-zA-Z0-9_]+\.verb(?:Person|Past|Ing)?\([^)\]]*\)\]")
 BRACKET_ATOMIC_RE = re.compile(r"\[[a-zA-Z0-9_]+\.[a-zA-Z0-9_+\-]+\]")
 LITERAL_TOKEN_RE = re.compile(r"\bformattedDamageInflicted\b")
 MASK_TOKEN_RE = re.compile(r"@@[A-Z]\d+@@")
-DIRECTIVE_SPLIT_RE = re.compile(r"(</p>|[ \t]*#(?:IF|ELSEIF|ELSE|ENDIF)[^\n]*\n?)")
-DIRECTIVE_LINE_RE = re.compile(r"^[ \t]*#(?:IF|ELSEIF|ELSE|ENDIF)")
+WRAPPER_PREFIX_RE = re.compile(r"\[[a-zA-Z0-9_]+\.[a-zA-Z0-9_]+\(")
+EN_PROSE_RUN_RE = re.compile(r"\b[A-Za-z][A-Za-z'\-]*(?:\s+[A-Za-z][A-Za-z'\-]{1,}){2,}\b")
+UNTR_SPEECH_RE = re.compile(r"\.(?:speech|speechNoEffects|speechNoExtraEffects|thought)\(([^)]+)\)")
 CODE_OR_ENUM_RE = re.compile(r"^(?:true|false|null|[A-Z0-9_]+|[\d.\-+*/\s]+)$")
 
 # Strict whitelist of CDATA parent tags eligible for translation per res/<subdir>.
@@ -44,7 +46,7 @@ CODE_OR_ENUM_RE = re.compile(r"^(?:true|false|null|[A-Z0-9_]+|[\d.\-+*/\s]+)$")
 # is preserved verbatim.
 SAFE_CDATA_TAGS: dict[str, set[str]] = {
     "res/txt": {"htmlContent"},
-    "res/dialogue": {"responseTitle", "responseTooltip", "title", "tooltip"},
+    "res/dialogue": {"responseTitle", "responseTooltip", "title", "tooltip", "combatant", "tab"},
     "res/clothing": {
         "name",
         "namePlural",
@@ -59,6 +61,7 @@ SAFE_CDATA_TAGS: dict[str, set[str]] = {
         "namePrefix",
         "namePostfix",
         "categoryName",
+        "stickerName",
         "availabilityText",
     },
     "res/items": {
@@ -80,6 +83,7 @@ SAFE_CDATA_TAGS: dict[str, set[str]] = {
         "equipText",
         "unequipText",
         "attackTooltipDescription",
+        "attackDescriptionPrefix",
         "authorTag",
         "clothingAuthorTag",
         "effect",
@@ -136,6 +140,7 @@ SAFE_CDATA_TAGS: dict[str, set[str]] = {
         "crotchBoobsBodyDescription",
         "defaultTransformName",
         "effect",
+        "bookName",
         "nameTransformation",
         "nameSillyMode",
         "namePluralSillyMode",
@@ -147,6 +152,7 @@ SAFE_CDATA_TAGS: dict[str, set[str]] = {
         "nameOverride",
         "applicationSpeechStart",
         "applicationSpeechEnd",
+        "effect",
     },
     "res/sex": {
         "description",
@@ -161,12 +167,10 @@ SAFE_CDATA_TAGS: dict[str, set[str]] = {
     "res/encounters": {"name"},
     "res/patterns": {"name"},
     "res/colours": {"name"},
+    "res/maps": {"name", "tooltipDescription", "virginityLossDescription", "sexBlockedReason"},
 }
 
-LEAF_TAGS = ["name", "namePlural", "description", "title", "tooltip", "displayName"]
-LEAF_TAG_RE = re.compile(
-    rf"(<(?:{'|'.join(LEAF_TAGS)})(?:\s+[^>]*)?>)([^<]+)(</(?:{'|'.join(LEAF_TAGS)})>)"
-)
+LEAF_TAG_RE = re.compile(r"(<([a-zA-Z0-9_:-]+)(?:\s+[^>]*)?>)([^<]+)(</\2>)")
 CDATA_TAG_RE = re.compile(
     r"(<([a-zA-Z0-9_:-]+)(?:\s+[^>]*)?>\s*)<!\[CDATA\[(.*?)\]\]>(\s*</\2>)",
     re.S,
@@ -430,6 +434,7 @@ def mask_text(text: str) -> tuple[str, dict]:
 
     masked = _mask_nashorn_blocks(text, masks, counter)
     masked = STYLE_MONEY_RE.sub(repl("M"), masked)
+    masked = VERB_TAG_RE.sub(repl("V"), masked)
     masked = HTML_TAG_RE.sub(repl("H"), masked)
     masked = BRACKET_ATOMIC_RE.sub(repl("T"), masked)
     masked = LITERAL_TOKEN_RE.sub(repl("K"), masked)
@@ -437,22 +442,34 @@ def mask_text(text: str) -> tuple[str, dict]:
 
 
 def unmask_text(text: str, masks: dict) -> str:
-    for key, val in masks.items():
+    for key, val in reversed(list(masks.items())):
         text = text.replace(key, val)
     return text
 
 
-def validate_masks(translated: str, masks: dict) -> bool:
+def validate_masks(
+    translated: str, masks: dict, require_cyr: bool = False, src_text: str = "", required_keys: list[str] | None = None
+) -> bool:
     if not translated or not translated.strip():
         return False
     if "Контекст:" in translated or "Context:" in translated:
         return False
     if any(tok not in masks for tok in MASK_TOKEN_RE.findall(translated)):
         return False
-    if not all(key in translated for key in masks):
+    keys_to_check = required_keys if required_keys is not None else list(masks.keys())
+    if not all(key in translated for key in keys_to_check):
         return False
     unmasked = unmask_text(translated, masks)
     if "@@" in unmasked:
+        return False
+    if src_text:
+        if "->" in unmasked and "->" not in src_text:
+            return False
+        if src_text.count("[") != unmasked.count("[") or src_text.count("]") != unmasked.count("]"):
+            return False
+        if sorted(WRAPPER_PREFIX_RE.findall(unmasked)) != sorted(WRAPPER_PREFIX_RE.findall(src_text)):
+            return False
+    if require_cyr and not re.search(r"[А-Яа-яЁё]", unmasked):
         return False
     return True
 
@@ -469,7 +486,7 @@ def build_glossary_hint(text: str, glossary: dict) -> str:
     return "\n".join(parts)
 
 
-def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_tokens: int = 3072) -> str:
+def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_tokens: int = 3072, temperature: float = 0.25) -> str:
     adaptive_thermal_guard()
     t0 = time.monotonic()
     temp_b, w_b = get_gpu_telemetry()
@@ -477,7 +494,7 @@ def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_toke
     body = {
         "model": DEFAULT_MODEL,
         "messages": messages,
-        "temperature": 0.25,
+        "temperature": temperature,
         "max_tokens": max_tokens,
         "chat_template_kwargs": {"enable_thinking": False},
     }
@@ -501,38 +518,196 @@ def call_llm_raw(api_url: str, messages: list, json_mode: bool = False, max_toke
     return data["choices"][0]["message"]["content"].strip()
 
 
+def _strip_wrappers_and_masks(text: str) -> str:
+    """Strip Nashorn/HTML/atomic/verb masks and `[obj.func(` prefixes leaving only visible prose."""
+    masked, _ = mask_text(text)
+    s = MASK_TOKEN_RE.sub(" ", masked)
+    # Remove wrapper prefixes like `[npc.speech(` or `[style.colourSex(` and closing `)]` or `]`
+    s = WRAPPER_PREFIX_RE.sub(" ", s)
+    s = s.replace(")]", " ")
+    # Also remove XML character entities so &nbsp; / &amp; don't trigger false positives
+    s = re.sub(r"&(?:amp|lt|gt|quot|apos|nbsp|#\d+|#x[0-9a-fA-F]+);", " ", s)
+    return s
+
+
 def has_translatable_words(text: str) -> bool:
-    """Return True only if text contains actual English prose outside masks/enums."""
+    """Return True only if text contains actual English prose outside masks/wrappers/enums."""
     s = text.strip()
     if not s or CODE_OR_ENUM_RE.match(s):
         return False
-    stripped, _ = mask_text(text)
-    stripped = MASK_TOKEN_RE.sub(" ", stripped)
+    for m in UNTR_SPEECH_RE.finditer(text):
+        inner = m.group(1)
+        if re.search(r"[a-zA-Z]{2,}", inner) and not re.search(r"[А-Яа-яЁё]", inner):
+            return True
+    stripped = _strip_wrappers_and_masks(text)
+    if re.search(r"[А-Яа-яЁё]", text):
+        # Already has Russian: only treat as needing translation if there is still an English phrase run (>=2 words)
+        return bool(EN_PROSE_RUN_RE.search(stripped))
     return bool(re.search(r"[a-zA-Z]{2,}", stripped))
 
 
-def translate_single(api_url: str, text: str, glossary: dict, context_note: str) -> str:
-    if not text or not text.strip() or not has_translatable_words(text):
-        return text
-    masked, masks = mask_text(text)
-    hint = build_glossary_hint(text, glossary)
+SPEECH_WRAPPER_START_RE = re.compile(
+    r"\[([a-zA-Z0-9_]+\.(?:speech|speechNoEffects|speechNoExtraEffects|thought))\("
+)
+
+
+def _translate_with_wrapper_fallback(api_url: str, core: str, glossary: dict, context_note: str) -> str | None:
+    """Translate speech/thought wrappers first, mask them as @@W*@@, then translate outer prose."""
+    spans = []
+    pos = 0
+    n = len(core)
+    while pos < n:
+        m = SPEECH_WRAPPER_START_RE.search(core, pos)
+        if not m:
+            break
+        open_p = m.end() - 1
+        end_p = _find_matching_paren(core, open_p)
+        if end_p == -1 or end_p + 1 >= n or core[end_p + 1] != "]":
+            pos = m.end()
+            continue
+        inner = core[m.end() : end_p]
+        spans.append((m.start(), end_p + 2, f"[{m.group(1)}(", inner, ")]"))
+        pos = end_p + 2
+    if not spans:
+        return None
+
+    w_masks: dict[str, str] = {}
+    parts = []
+    last = 0
+    for idx, (st, en, pref, inner, suff) in enumerate(spans):
+        parts.append(core[last:st])
+        inner_ru = translate_single(api_url, inner, glossary, context_note, allow_wrapper_fallback=False)
+        key = f"@@W{idx}@@"
+        w_masks[key] = f"{pref}{inner_ru}{suff}"
+        parts.append(key)
+        last = en
+    parts.append(core[last:])
+    outer_src = "".join(parts)
+
+    if not has_translatable_words(outer_src):
+        return unmask_text(outer_src, w_masks)
+
+    masked_outer, outer_masks = mask_text(outer_src)
+    # Keep w_masks LAST so reversed() unmasks W* only if needed after outer masks, or vice versa:
+    # actually outer_masks may wrap W* inside #IF/#ELSE? No, split_directives already split #IF.
+    # Put outer_masks then w_masks so reversed() unmasks W* FIRST, or outer_masks AFTER W*?
+    # W* contains NO @@ tokens, while HTML/S blocks aren't inside W*; ordering doesn't conflict, and
+    # putting outer_masks BEFORE w_masks unmasks w_masks first then outer_masks cleanly.
+    all_masks = {**outer_masks, **w_masks}
+    hint = build_glossary_hint(outer_src, glossary)
+    require_cyr = not bool(re.search(r"[А-Яа-яЁё]", outer_src)) and bool(
+        re.search(r"[a-zA-Z]{2,}", _strip_wrappers_and_masks(outer_src))
+    )
     sys_p = (
         "You are an expert Russian literary translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
-        "Translate into natural, idiomatic, uncensored Russian (avoid stiff literal English calques). "
-        "Prefer present tense for 'you' ('ты' — e.g. 'ты видишь', 'ты берёшь') so it fits any player gender naturally. "
-        "Preserve EVERY exact placeholder token (such as @@H0@@, @@T0@@, @@S0@@, @@M0@@, @@K0@@) that appears in the input without modifying or inventing any placeholder tokens, and keep [obj.speech(...)] / [style.func(...)] wrappers intact. "
+        "Translate ALL English prose into natural, idiomatic, uncensored Russian. "
+        "Treat @@W0@@/@@W1@@ tokens as complete quoted character speech clauses inside the sentence. "
+        "CRITICAL: Keep EVERY @@...@@ token in your translation — NEVER omit a @@T*@@ token even if English grammar seems redundant in Russian. "
         "Output ONLY the Russian translation without notes."
     )
-    usr_p = f"Context: {context_note}\n" + (hint + "\n" if hint else "") + f"Text:\n{masked}"
-    for _ in range(3):
+    req_keys = [k for k in all_masks if k in masked_outer]
+    usr_p = f"Context: {context_note}\n" + (hint + "\n" if hint else "") + f"Text:\n{masked_outer}"
+    for attempt in range(3):
         out = call_llm_raw(
             api_url,
             [{"role": "system", "content": sys_p}, {"role": "user", "content": usr_p}],
             json_mode=False,
             max_tokens=2048,
+            temperature=0.25 + 0.1 * attempt,
         )
-        if validate_masks(out, masks):
-            return unmask_text(out, masks)
+        if validate_masks(
+            out, all_masks, require_cyr=require_cyr, src_text=unmask_text(outer_src, w_masks), required_keys=req_keys
+        ):
+            return unmask_text(out, all_masks)
+    return None
+
+
+def _split_sentences_outside_brackets(text: str) -> list[str]:
+    """Split text into sentence chunks preserving spacing, only splitting outside [...] and (...)."""
+    chunks = []
+    start = 0
+    b_depth = 0
+    p_depth = 0
+    i = 0
+    n = len(text)
+    while i < n:
+        c = text[i]
+        if c == "[":
+            b_depth += 1
+        elif c == "]" and b_depth > 0:
+            b_depth -= 1
+        elif c == "(":
+            p_depth += 1
+        elif c == ")" and p_depth > 0:
+            p_depth -= 1
+        elif b_depth == 0 and p_depth == 0 and c in ".!?" and i + 1 < n and text[i + 1].isspace():
+            j = i + 1
+            while j < n and text[j].isspace():
+                j += 1
+            chunks.append(text[start:j])
+            start = j
+            i = j
+            continue
+        i += 1
+    if start < n:
+        chunks.append(text[start:])
+    return chunks
+
+
+def translate_single(
+    api_url: str,
+    text: str,
+    glossary: dict,
+    context_note: str,
+    allow_wrapper_fallback: bool = True,
+    allow_sentence_split: bool = True,
+) -> str:
+    if not text or not text.strip() or not has_translatable_words(text):
+        return text
+    lead = text[: len(text) - len(text.lstrip())]
+    trail = text[len(text.rstrip()) :]
+    core = text.strip()
+    masked, masks = mask_text(core)
+    req_keys = [k for k in masks if k in masked]
+    hint = build_glossary_hint(core, glossary)
+    require_cyr = not bool(re.search(r"[А-Яа-яЁё]", core)) and bool(re.search(r"[a-zA-Z]{2,}", _strip_wrappers_and_masks(core)))
+    sys_p = (
+        "You are an expert Russian literary translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
+        "Translate ALL English prose into natural, idiomatic, uncensored Russian (avoid stiff literal English calques). "
+        "If the text ALREADY contains wrappers like [npc.speech(...)] or [style.colour(...)], translate ONLY the English prose inside the parentheses while keeping those wrapper prefixes intact; do NOT invent new bracket tags, arrows ('->'), or repeat the English original. "
+        "Treat @@V0@@/@@V1@@ tokens as verbs already present in the sentence (do NOT insert a second verb right next to a @@V*@@ token). "
+        "Prefer present tense for 'you' ('ты' — e.g. 'ты видишь', 'ты берёшь') so it fits any player gender naturally. "
+        "CRITICAL: Preserve EVERY exact @@*@@ token present in the input text — NEVER drop or merge a @@T*@@ pronoun token! "
+        "Output ONLY the Russian translation without notes."
+    )
+    usr_p = f"Context: {context_note}\n" + (hint + "\n" if hint else "") + f"Text:\n{masked}"
+    for attempt in range(4):
+        temp = 0.25 if attempt == 0 else min(0.55, 0.25 + 0.1 * attempt)
+        out = call_llm_raw(
+            api_url,
+            [{"role": "system", "content": sys_p}, {"role": "user", "content": usr_p}],
+            json_mode=False,
+            max_tokens=2048,
+            temperature=temp,
+        )
+        if validate_masks(out, masks, require_cyr=require_cyr, src_text=core, required_keys=req_keys):
+            return lead + unmask_text(out, masks) + trail
+    if allow_wrapper_fallback:
+        fallback = _translate_with_wrapper_fallback(api_url, core, glossary, context_note)
+        if fallback is not None:
+            return lead + fallback + trail
+    if allow_sentence_split:
+        sents = _split_sentences_outside_brackets(core)
+        if len(sents) > 1:
+            translated_sents = [
+                translate_single(
+                    api_url, s, glossary, context_note, allow_wrapper_fallback=allow_wrapper_fallback, allow_sentence_split=False
+                )
+                for s in sents
+            ]
+            joined = "".join(translated_sents)
+            if joined != core:
+                return lead + joined + trail
     return text
 
 
@@ -544,10 +719,10 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
         s0 = items[0]
         if not has_translatable_words(s0):
             return [s0]
-        if s0 in tm and "@@" not in tm[s0]:
+        if s0 in tm and "@@" not in tm[s0] and not has_translatable_words(tm[s0]):
             return [tm[s0]]
         res0 = translate_single(api_url, s0, glossary, context_note)
-        if res0 != s0 and "@@" not in res0:
+        if res0 != s0 and "@@" not in res0 and not has_translatable_words(res0):
             tm[s0] = res0
             save_tm_cache()
         return [res0]
@@ -562,11 +737,12 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
             if not s or not s.strip() or not has_translatable_words(s):
                 idx += 1
                 continue
-            if s in tm and "@@" not in tm[s]:
-                results[idx] = tm[s]
+            cached = tm.get(s)
+            if cached and "@@" not in cached and not has_translatable_words(cached):
+                results[idx] = cached
                 idx += 1
                 continue
-            if batch_indices and char_sum + len(s) > 1600:
+            if batch_indices and char_sum + len(s) > 1400:
                 break
             batch_indices.append(idx)
             char_sum += len(s)
@@ -578,26 +754,36 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
             i = batch_indices[0]
             res_i = translate_single(api_url, items[i], glossary, context_note)
             results[i] = res_i
-            if res_i != items[i] and "@@" not in res_i:
+            if res_i != items[i] and "@@" not in res_i and not has_translatable_words(res_i):
                 tm[items[i]] = res_i
                 save_tm_cache()
             continue
 
         masked_map = {}
         masks_map = {}
+        meta_map = {}
         combined_src = []
         for pos, orig_i in enumerate(batch_indices):
-            m_txt, m_dict = mask_text(items[orig_i])
+            orig = items[orig_i]
+            lead = orig[: len(orig) - len(orig.lstrip())]
+            trail = orig[len(orig.rstrip()) :]
+            core = orig.strip()
+            m_txt, m_dict = mask_text(core)
+            req_cyr = not bool(re.search(r"[А-Яа-яЁё]", core)) and bool(re.search(r"[a-zA-Z]{2,}", _strip_wrappers_and_masks(core)))
+            req_keys = [k for k in m_dict if k in m_txt]
             masked_map[str(pos)] = m_txt
             masks_map[str(pos)] = m_dict
-            combined_src.append(items[orig_i])
+            meta_map[str(pos)] = (lead, core, trail, req_cyr, req_keys)
+            combined_src.append(core)
 
         hint = build_glossary_hint("\n".join(combined_src), glossary)
         sys_p = (
             "You are an expert Russian literary translator for the explicit 18+ dark fantasy RPG 'Lilith's Throne'. "
-            "Translate each JSON string value from English into natural, idiomatic, uncensored Russian (no stiff calques). "
+            "Translate ONLY the English prose in each JSON string value into natural, idiomatic, uncensored Russian. "
+            "If a value contains wrappers like [npc.speech(...)] or [style.colour(...)], translate only the English words inside the parentheses while keeping those wrapper prefixes unchanged; NEVER invent new bracket tags, arrows ('->'), or repeat the English source. "
+            "Treat @@V0@@/@@V1@@ tokens as verbs already present in the sentence (do NOT add an extra verb right next to a @@V*@@ token). "
             "Prefer present tense for 'you' ('ты') where natural so it fits any player gender. "
-            "CRITICAL: Keep exact JSON keys, preserve EVERY exact placeholder token (such as @@H0@@, @@T0@@, @@S0@@, @@M0@@, @@K0@@) that appears in each value without altering or inventing any placeholder tokens, and keep [obj.speech(...)] / [style.func(...)] wrappers intact. "
+            "CRITICAL: Keep exact JSON keys and preserve EVERY exact placeholder token (@@H*@@, @@T*@@, @@V*@@, @@S*@@, @@M*@@, @@K*@@) without altering or inventing any tokens. "
             "Return ONLY a valid JSON object."
         )
         usr_p = (
@@ -622,20 +808,153 @@ def translate_batch(api_url: str, items: list[str], glossary: dict, context_note
 
         for pos, orig_i in enumerate(batch_indices):
             k = str(pos)
+            lead, core, trail, req_cyr, req_keys = meta_map[k]
             if (
                 isinstance(parsed, dict)
                 and isinstance(parsed.get(k), str)
-                and validate_masks(parsed[k], masks_map[k])
+                and validate_masks(parsed[k], masks_map[k], require_cyr=req_cyr, src_text=core, required_keys=req_keys)
             ):
-                tr_val = unmask_text(parsed[k], masks_map[k])
+                tr_val = lead + unmask_text(parsed[k], masks_map[k]) + trail
             else:
                 tr_val = translate_single(api_url, items[orig_i], glossary, context_note)
             results[orig_i] = tr_val
-            if tr_val != items[orig_i] and "@@" not in tr_val:
+            if tr_val != items[orig_i] and "@@" not in tr_val and not has_translatable_words(tr_val):
                 tm[items[orig_i]] = tr_val
         save_tm_cache()
 
     return results
+
+
+def _find_matching_paren(text: str, open_idx: int) -> int:
+    """Find matching ')' for '(' at `open_idx`, respecting nested () and quotes."""
+    depth = 0
+    in_quote = None
+    i = open_idx
+    n = len(text)
+    while i < n:
+        ch = text[i]
+        if in_quote:
+            if ch == "\\" and i + 1 < n:
+                i += 2
+                continue
+            if ch == in_quote:
+                in_quote = None
+        else:
+            if ch in ("'", '"'):
+                in_quote = ch
+            elif ch == "(":
+                depth += 1
+            elif ch == ")":
+                depth -= 1
+                if depth == 0:
+                    return i
+        i += 1
+    return -1
+
+
+def split_long_prose(text: str, max_len: int = 850) -> list[str]:
+    """Split oversized prose blocks into <= max_len sub-chunks along blank lines, <br/>, newlines, or sentences."""
+    if len(text) <= max_len:
+        return [text]
+    # Split on newlines or single <br/> preserving separators as standalone items or attached ends
+    parts = re.split(r"(<br\s*/?>|\r?\n)", text)
+    out = []
+    buf = ""
+    for p in parts:
+        if not p:
+            continue
+        if len(buf) + len(p) > max_len and buf.strip():
+            out.append(buf)
+            buf = p
+        else:
+            buf += p
+    if buf:
+        out.append(buf)
+    final_out = []
+    for chunk in out:
+        if len(chunk) <= max_len:
+            final_out.append(chunk)
+        else:
+            # Sentence boundary split outside [...] brackets
+            sub_start = 0
+            depth = 0
+            last_split = 0
+            i = 0
+            while i < len(chunk):
+                c = chunk[i]
+                if c == "[":
+                    depth += 1
+                elif c == "]" and depth > 0:
+                    depth -= 1
+                elif depth == 0 and c in ".!?" and i + 1 < len(chunk) and chunk[i + 1].isspace():
+                    if i + 1 - sub_start >= max_len * 0.7:
+                        final_out.append(chunk[sub_start : i + 1])
+                        sub_start = i + 1
+                    else:
+                        last_split = i + 1
+                if i - sub_start >= max_len and last_split > sub_start:
+                    final_out.append(chunk[sub_start:last_split])
+                    sub_start = last_split
+                i += 1
+            if sub_start < len(chunk):
+                final_out.append(chunk[sub_start:])
+    return final_out
+
+
+def split_directives(inner: str) -> list[tuple[bool, str]]:
+    """Split CDATA prose strictly on `#IF(...)`, `#ELSEIF(...)`, `#ELSE`, `#ENDIF`, `</p>`, and double `<br/>`."""
+    tokens: list[tuple[bool, str]] = []
+    buf_start = 0
+    i = 0
+    n = len(inner)
+    while i < n:
+        # Check </p>
+        if inner.startswith("</p>", i):
+            if i > buf_start:
+                for sub in split_long_prose(inner[buf_start:i]):
+                    tokens.append((False, sub))
+            tokens.append((True, "</p>"))
+            i += 4
+            buf_start = i
+            continue
+        # Check double/multi <br/><br/> paragraph break
+        m_br = re.match(r"(?:\s*<br\s*/?>\s*){2,}", inner[i:])
+        if m_br:
+            if i > buf_start:
+                for sub in split_long_prose(inner[buf_start:i]):
+                    tokens.append((False, sub))
+            tokens.append((True, m_br.group(0)))
+            i += len(m_br.group(0))
+            buf_start = i
+            continue
+        # Check #IF(...) / #ELSEIF(...) / #ELSE / #ENDIF
+        if inner[i] == "#":
+            if inner.startswith("#IF(", i) or inner.startswith("#ELSEIF(", i):
+                open_p = inner.find("(", i)
+                end_p = _find_matching_paren(inner, open_p)
+                if end_p != -1:
+                    if i > buf_start:
+                        for sub in split_long_prose(inner[buf_start:i]):
+                            tokens.append((False, sub))
+                    tokens.append((True, inner[i : end_p + 1]))
+                    i = end_p + 1
+                    buf_start = i
+                    continue
+            else:
+                m_kw = re.match(r"#(?:ELSEIF|ELSE|ENDIF)(?![A-Za-z0-9_])", inner[i:])
+                if m_kw:
+                    if i > buf_start:
+                        for sub in split_long_prose(inner[buf_start:i]):
+                            tokens.append((False, sub))
+                    tokens.append((True, m_kw.group(0)))
+                    i += len(m_kw.group(0))
+                    buf_start = i
+                    continue
+        i += 1
+    if buf_start < n:
+        for sub in split_long_prose(inner[buf_start:n]):
+            tokens.append((False, sub))
+    return tokens
 
 
 def _safe_xml_text(s: str) -> str:
@@ -651,6 +970,13 @@ def translate_xml_file(path: Path, api_url: str, glossary: dict) -> bool:
 
     parts_top = rel.split("/")
     top_dir = "/".join(parts_top[:2]) if len(parts_top) >= 2 else rel
+    if top_dir == "res/mods" and len(parts_top) >= 4:
+        mod_cat = parts_top[3]
+        if mod_cat == "items" and len(parts_top) >= 5:
+            item_sub = parts_top[4]
+            top_dir = f"res/{item_sub}" if item_sub in {"clothing", "items", "tattoos", "weapons"} else "res/items"
+        else:
+            top_dir = f"res/{mod_cat}"
     allowed_cdata = SAFE_CDATA_TAGS.get(top_dir, set())
     if not allowed_cdata:
         return False
@@ -686,42 +1012,24 @@ def translate_xml_file(path: Path, api_url: str, glossary: dict) -> bool:
     skeleton = CDATA_TAG_RE.sub(collect_cdata, working)
 
     cdata_paras = []
-    block_splits = []
+    block_splits: list[list[str]] = []
     for b_idx, (tag, inner) in enumerate(cdata_blocks):
         if tag not in allowed_cdata:
             block_splits.append([inner])
             continue
-        parts = DIRECTIVE_SPLIT_RE.split(inner)
-        chunks = []
-        buf = ""
-        for p in parts:
-            if not p:
-                continue
-            if DIRECTIVE_LINE_RE.match(p):
-                if buf:
-                    chunks.append(buf)
-                    buf = ""
-                chunks.append(p)
-            else:
-                buf += p
-                if p == "</p>":
-                    chunks.append(buf)
-                    buf = ""
-        if buf:
-            chunks.append(buf)
+        toks = split_directives(inner)
+        chunks = [txt for _, txt in toks]
         block_splits.append(chunks)
-        for p_idx, ch in enumerate(chunks):
-            if ch.strip() and not DIRECTIVE_LINE_RE.match(ch) and has_translatable_words(ch):
+        for p_idx, (is_dir, ch) in enumerate(toks):
+            if not is_dir and ch.strip() and has_translatable_words(ch):
                 cdata_paras.append((b_idx, p_idx, ch))
 
     leaf_matches = list(LEAF_TAG_RE.finditer(skeleton))
     leaf_texts = []
     valid_leaf_indices = []
     for m_idx, m in enumerate(leaf_matches):
-        open_tag = m.group(1)
-        tag_name_m = re.match(r"<([a-zA-Z0-9_:-]+)", open_tag)
-        tag_name = tag_name_m.group(1) if tag_name_m else ""
-        txt = m.group(2)
+        tag_name = m.group(2)
+        txt = m.group(3)
         if (
             tag_name in allowed_cdata
             and txt.strip()
@@ -752,7 +1060,7 @@ def translate_xml_file(path: Path, api_url: str, glossary: dict) -> bool:
         for m_idx, m in enumerate(leaf_matches):
             out_parts.append(skeleton[last : m.start()])
             if m_idx in leaf_out_map:
-                out_parts.append(f"{m.group(1)}{leaf_out_map[m_idx]}{m.group(3)}")
+                out_parts.append(f"{m.group(1)}{leaf_out_map[m_idx]}{m.group(4)}")
             else:
                 out_parts.append(m.group(0))
             last = m.end()

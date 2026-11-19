@@ -53,20 +53,20 @@
 						<openingDescriptions>
 							<combatant id="pc"><![CDATA[
 								#IF(npc.getPlayerSurrenderCount()>=4)
-									Telling [npc.name] that you're not going to be [npc.her] bitch any longer, you prepare to fight for your freedom.
+									Заявив [npc.name], что ты больше не собираешься быть [npc.her] сучкой, ты готовишься сражаться за свою свободу.
 								#ELSEIF(npc.getPlayerSurrenderCount()==3)
-									Telling [npc.name] that you're never going to be [npc.her] bitch, you prepare to defend yourself.
+									Заявив [npc.name], что ты никогда не станешь [npc.her] сучкой, ты готовишься защищаться.
 								#ELSE
-									Refusing to hand over your money, you tell [npc.name] that [npc.sheIs] making a mistake as you prepare to defend yourself.
+									Отказываясь отдать деньги, ты говоришь [npc.name], что [npc.sheIs] совершает ошибку, и готовишься защищаться.
 								#ENDIF
 							]]></combatant>
 							<combatant id="npc"><![CDATA[
 								#IF(npc.getPlayerSurrenderCount()>=4)
-									Flashing you a wicked smirk, [npc.name] sneers, [npc.speech(You forget your place! I'll remind you of where you belong!)]
+									Одарив тебя злобной ухмылкой, [npc.name] цедит сквозь зубы: [npc.speech(Ты забыла свое место! Я напомню тебе, где тебе самое место!)]
 								#ELSEIF(npc.getPlayerSurrenderCount()==3)
-									Flashing you a wicked smirk, [npc.name] sneers, [npc.speech(I'll make you my bitch, one way or another!)]
+									Одарив тебя злобной ухмылкой, [npc.name] цедит сквозь зубы: [npc.speech(Я сделаю тебя своей сучкой, так или иначе!)]
 								#ELSE
-									Flashing you a wicked smirk, [npc.name] sneers, [npc.speech(I'll make you pay, one way or another!)]
+									Одарив тебя злобной ухмылкой, [npc.name] цедит сквозь зубы: [npc.speech(Ты заплатишь мне, так или иначе!)]
 								#ENDIF
 							]]></combatant>
 						</openingDescriptions>
@@ -445,7 +445,7 @@
 	
 	<scene id="submitted_after_sex">
 		<title><![CDATA[Завершено]]></title>
-		<tooltip><![CDATA[[npc.Name] has had [npc.her] fun with you, and with a satisfied sigh [npc.she] [npc.steps] back and brings an end to the sex...]]></tooltip>
+		<tooltip><![CDATA[[npc.Name] получила с тобой [npc.her] удовольствия и с удовлетворенным вздохом [npc.she] [npc.steps] назад, завершая секс...]]></tooltip>
 		<content folderPath="txt/encounters/dominion/alleywayAttack">SUBMITTED_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -525,15 +525,15 @@
 						<enemy leader="true"><![CDATA[victim]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[Obediently doing as [npc.name] commands, you prepare to assist [npc.herHim] in subduing [victim.name].]]></combatant>
+						<combatant id="pc"><![CDATA[Послушно выполняя приказы [npc.name], ты готовишься помочь [npc.herHim] усмирить [victim.name].]]></combatant>
 						<combatant id="npc"><![CDATA[
 							#IF(npc.isMute())
-								With a wicked smirk on [npc.her] face, [npc.name] motions for you to attack [victim.name].
+								Со злой ухмылкой на [npc.her] лице, [npc.name] жестом призывает тебя атаковать [victim.name].
 							#ELSE
-								Letting out a mocking laugh, [npc.name] taunts [victim.name], [npc.speech(You've got no chance against the two of us!)]
+								Издавая насмешливый смешок, [npc.name] издевается над [victim.name], [npc.speech(Против нас двоих у тебя нет ни единого шанса!)]
 							#ENDIF
 						]]></combatant>
-						<combatant id="victim"><![CDATA[Taking on a defensive stance, [victim.name] desperately shouts, [victim.speech(Leave me alone!)]]]></combatant>
+						<combatant id="victim"><![CDATA[Приняв оборонительную стойку, [victim.name] отчаянно кричит: [victim.speech(Оставьте меня в покое!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>
@@ -659,7 +659,7 @@
 	
 	<scene id="submitted_repeat_mugging_after_spectating_sex">
 		<title><![CDATA[Завершено]]></title>
-		<tooltip><![CDATA[[npc.Name] has had [npc.her] fun with [victim.name], and with a satisfied sigh [npc.she] [npc.steps] back and brings an end to the sex...]]></tooltip>
+		<tooltip><![CDATA[[npc.Name] получила с [victim.name] [npc.her] удовольствия и с удовлетворенным вздохом [npc.she] [npc.steps] назад, завершая секс...]]></tooltip>
 		<content folderPath="txt/encounters/dominion/alleywayAttack">SUBMITTED_REPEAT_MUGGING_SPECTATE_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1124,7 +1124,7 @@
 	
 	<scene id="submitted_repeat_pimped_out_after_sex">
 		<title><![CDATA[Завершено]]></title>
-		<tooltip><![CDATA[[friend.Name] has had [friend.her] fun with you, and brings the sex to an end...]]></tooltip>
+		<tooltip><![CDATA[[friend.Name] получила с тобой [friend.her] удовольствия и заканчивает секс...]]></tooltip>
 		<content folderPath="txt/encounters/dominion/alleywayAttack">SUBMITTED_REPEAT_PIMPED_OUT_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1500,7 +1500,7 @@
 			[#game.banishNPC(stranger)]
 		]]></preParsingEffects>
 		<title><![CDATA[Завершено]]></title>
-		<tooltip><![CDATA[[stranger.Name] has had [stranger.her] fun with you, and brings the sex to an end...]]></tooltip>
+		<tooltip><![CDATA[[stranger.Name] получила с тобой [stranger.her] удовольствия и завершает секс...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1691,7 +1691,7 @@
 	
 	<scene id="submitted_repeat_tattooed_finished_after_sex">
 		<title><![CDATA[Завершено]]></title>
-		<tooltip><![CDATA[[tattooist.Name] has had [tattooist.her] fun with you, and brings the sex to an end...]]></tooltip>
+		<tooltip><![CDATA[[tattooist.Name] получила с тобой [tattooist.her] удовольствия и ставит точку в этом сексе...]]></tooltip>
 		<content folderPath="txt/encounters/dominion/alleywayAttack">SUBMITTED_REPEAT_TATTOOED_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>

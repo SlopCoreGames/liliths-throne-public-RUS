@@ -306,7 +306,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[Гипергрудь]]></responseTitle>
-				<responseTooltip><![CDATA[Принцесса решает увеличить твою грудь #IF(pc.hasBreastsCrotch())and udders#ENDIF into the ultimate milk-producing vessels...]]></responseTooltip>
+				<responseTooltip><![CDATA[Принцесса решает увеличить твою грудь #IF(pc.hasBreastsCrotch())и вымя#ENDIF превращается в совершенные сосуды для производства молока...]]></responseTooltip>
 				<nextDialogue>innoxia_badEnds_evelyx_new_life_2_tf</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/badEnds/evelyx', 'NEW_LIFE_2_HYPER'))]

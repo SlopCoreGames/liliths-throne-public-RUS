@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[stable]]></name>
-	<tooltipDescription><![CDATA[Behind a locked door, the stable to the rear of 'The Centaur's Sword' is rented out to amorous couples on an hourly rate.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the stable behind 'The Centaur's Sword' tavern]]></virginityLossDescription>
+	<name><![CDATA[конюшня]]></name>
+	<tooltipDescription><![CDATA[За запертой дверью скрывается конюшня в задней части таверны «Меч Кентавра», которую сдают в аренду влюбленным парам по часовой ставке.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в конюшне за таверной «Меч Кентавра»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>RACE_HORSE_MORPH</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

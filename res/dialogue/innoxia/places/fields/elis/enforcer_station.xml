@@ -344,7 +344,7 @@
 				<availabilityConditional><![CDATA[[#pc.isQuestProgressGreaterThan(QUEST_LINE_MAIN, QUEST_MAIN_3_H_SWORD_MISSION) && !flags.hasFlag(FLAG_innoxia_sword_mission_reward)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Elis]]></responseTitle>
+				<responseTitle><![CDATA[Элис]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_sword_talk_elis))
 						Ты уже расспрашиваешь Enforcer о том, как они оказались здесь, в Elis...

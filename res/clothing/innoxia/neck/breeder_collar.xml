@@ -6,7 +6,7 @@
 		<determiner><![CDATA[an]]></determiner>
 		<name><![CDATA[ошейник]]></name>
 		<namePlural pluralByDefault="false"><![CDATA[ошейники]]></namePlural>
-		<description><![CDATA[A <span style='color:[#thisItem.getColour(0).toWebHexString()];'>[style.glow(glowing [#thisItem.getColourName()])]</span> leather collar, with bold metal lettering attached to the front spelling out the word ]]></description>
+		<description><![CDATA[Кожаный <span style='color:[#thisItem.getColour(0).toWebHexString()];'>[style.glow(сияющий [#thisItem.getColourName()])]</span> ошейник, на передней части которого красуются крупные металлические буквы, складывающиеся в слово ]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -22,7 +22,7 @@
 		<category id="txt" priority="1">
 			<categoryName><![CDATA[Текст]]></categoryName>
 			<sticker id="breeder" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[Breeder]]></stickerName>
+				<stickerName><![CDATA[Производитель]]></stickerName>
 				<namePrefix priority="1"><![CDATA[изысканный <i>'Самка'</i> ]]></namePrefix>
 				<namePostfix/>
 				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'САМКА'</i>.]]></descriptionModification>
@@ -33,7 +33,7 @@
 				<availabilityText/>
 			</sticker>
 			<sticker id="bimbo" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[Bimbo]]></stickerName>
+				<stickerName><![CDATA[Бимбо]]></stickerName>
 				<namePrefix priority="1"><![CDATA[изысканный <i>'Бимби'</i> ]]></namePrefix>
 				<namePostfix/>
 				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'БИМБИ'</i>.]]></descriptionModification>
@@ -44,7 +44,7 @@
 				<availabilityText/>
 			</sticker>
 			<sticker id="bitch" priority="3" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[Bitch]]></stickerName>
+				<stickerName><![CDATA[Сучка]]></stickerName>
 				<namePrefix priority="1"><![CDATA[изысканный <i>'Сучка'</i> ]]></namePrefix>
 				<namePostfix/>
 				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'СУЧКА'</i>.]]></descriptionModification>
@@ -55,7 +55,7 @@
 				<availabilityText/>
 			</sticker>
 			<sticker id="slut" priority="4" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[Slut]]></stickerName>
+				<stickerName><![CDATA[Шлюшка]]></stickerName>
 				<namePrefix priority="1"><![CDATA[изысканный <i>«Шлюшка»</i> ]]></namePrefix>
 				<namePostfix/>
 				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>«ШЛЮШКА»</i>.]]></descriptionModification>
@@ -66,7 +66,7 @@
 				<availabilityText/>
 			</sticker>
 			<sticker id="cum_slut" priority="5" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[Cum Slut]]></stickerName>
+				<stickerName><![CDATA[Кончалка]]></stickerName>
 				<namePrefix priority="1"><![CDATA[изысканный <i>«Кончница»</i> ]]></namePrefix>
 				<namePostfix/>
 				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>«КОНЧНИЦА»</i>.]]></descriptionModification>
@@ -77,7 +77,7 @@
 				<availabilityText/>
 			</sticker>
 			<sticker id="whore" priority="6" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[Whore]]></stickerName>
+				<stickerName><![CDATA[Шалава]]></stickerName>
 				<namePrefix priority="1"><![CDATA[изысканный <i>«Шалава»</i> ]]></namePrefix>
 				<namePostfix/>
 				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>«ШАЛАВА»</i>.]]></descriptionModification>
@@ -91,7 +91,7 @@
 		<category id="ring" priority="2">
 			<categoryName><![CDATA[Дополнительно]]></categoryName>
 			<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-				<stickerName><![CDATA[D-ring]]></stickerName>
+				<stickerName><![CDATA[D-образное кольцо]]></stickerName>
 				<namePrefix/>
 				<namePostfix/>
 				<descriptionModification/>
@@ -102,7 +102,7 @@
 				<availabilityText/>
 			</sticker>
 			<sticker id="none" priority="2" defaultSticker="false" zLayer="1" colourSelected="TEXT_GREY"> 
-				<stickerName><![CDATA[None]]></stickerName>
+				<stickerName><![CDATA[Нет]]></stickerName>
 				<namePrefix/>
 				<namePostfix/>
 				<descriptionModification/>

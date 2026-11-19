@@ -867,7 +867,7 @@
 					<responseTooltip><![CDATA[
 						#IF(!angelixx.hasVagina() && !game.isAnalContentEnabled())
 							Анжеликсе нужно подставить киску, чтобы привлечь парочку незнакомцев для секса.						#ELSEIF((!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) && (!game.isAnalContentEnabled() || !pc.isAbleToAccessCoverableArea(CA_ANUS, true)))
-							Твоя киска должна быть доступна #IF(game.isAnalContentEnabled())or asshole#ENDIF in order to attract a couple of strangers to get fucked by.
+							Твоя киска должна быть доступна #IF(game.isAnalContentEnabled())или мудак#ENDIF чтобы привлечь парочку незнакомцев, которых можно было бы оттрахать.
 						#ELSE
 							Попозируй с Angelixx, чтобы попытаться привлечь парочку незнакомцев и трахнуться с ними.<br/>[style.italicsSex(Это может привести к тому, что ты станешь подчиненной в групповом сексе с Angelixx и двумя незнакомцами...)]
 						#ENDIF

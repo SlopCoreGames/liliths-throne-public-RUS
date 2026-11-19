@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[MKAR]]></namePlural>
 		<description><![CDATA[Эта модернизированная штурмовая винтовка под патрон 7,62×39 мм советского промежуточного типа поддерживает как полуавтоматический, так и полностью автоматический режимы стрельбы. Газоотводный механизм с поворотным затвором обеспечивает темп стрельбы около 600–650 выстрелов в минуту.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Use your MKAR to fire a single bullet at your target.</attackTooltipDescription>
+		<attackTooltipDescription>Используй свой MKAR, чтобы выстрелить одной пулей в цель.</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		<weaponSet/> 

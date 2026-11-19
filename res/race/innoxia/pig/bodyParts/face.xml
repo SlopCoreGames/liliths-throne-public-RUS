@@ -17,13 +17,13 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic pig-like</descriptor>
-		<descriptor>pig-like</descriptor>
+		<descriptor>антропоморфный, похожий на свинью</descriptor>
+		<descriptor>свиной</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic pig-like</descriptor>
-		<descriptor>pig-like</descriptor>
+		<descriptor>антропоморфный, похожий на свинью</descriptor>
+		<descriptor>свиной</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[рыло]]></noseName>

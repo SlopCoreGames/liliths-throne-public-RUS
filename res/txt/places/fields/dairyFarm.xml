@@ -799,10 +799,10 @@
 			Передумав насчет своего окончательного повышения, ты говоришь Дейлу, что хочешь еще раз встретиться с Эвеликс по этому поводу. Хотя он и бросает на тебя обеспокоенный взгляд, Дейл все же тянется вперед и нажимает кнопку на арканном интеркоме, стоящем на его столе. Издав короткий громкий жужжащий звук, из него раздается изысканный женский голос, который нетерпеливо бросает: [evelyx.speech(Что такое, Дейл?)]
 		</p>
 		<p>
-			[dale.speech(I have your employee, [pc.name], here in reception again, Ma'am,)] Dale replies,[dale.speech([pc.She] says that [pc.she]'d changed [pc.her] mind about receiving [pc.her] final promotion, and would like to speak with you about it again.)]
+			[dale.speech(Ваша сотрудница [pc.name] снова в приёмной, мэм,)] — отвечает Дейл. — [dale.speech([pc.She] говорит, что передумала насчёт своего последнего повышения и хотела бы ещё раз обсудить это с вами.)]
 		</p>
 		<p>
-			[evelyx.speech(That dumb cow has changed [pc.her] mind, has [pc.she]?)] Evelyx's voice icily crackles out from the intercom, and after letting out a frustrated sigh, she says, [evelyx.speech(Fine, I'll see [pc.herHim] again, but make [pc.herHim] wait another thirty minutes first to put [pc.herHim] in [pc.her] place.)]
+			[evelyx.speech(Эта глупая корова передумала, серьёзно?)] — голос Эвеликс с ледяным треском раздаётся из интеркома, после чего она разочарованно вздыхает: [evelyx.speech(Ладно, я приму [pc.herHim] ещё раз, но сначала заставь [pc.herHim] прождать полчаса, чтобы знала своё место.)]
 		</p>
 		<p>
 			Когда интерком отключается, Дейл указывает на диваны в другой части приемной и говорит: [dale.speech(Если вы подождете полчаса, я провожу вас в кабинет Эвеликс.)] 
@@ -1744,27 +1744,27 @@
 Решив получше рассмотреть торговый автомат в общежитии, ты ждёшь, пока другая корова закончит свои дела, а затем [pc.stepping] к нему, чтобы посмотреть, что же тут продаётся. Под огромным изображением красавицы-коровушки, выставляющей напоказ свою гигантскую грудь и призывающей тебя через текстовое облачко покупать всё подряд, чтобы стать похожей на неё, перечислены товары и их цены:
 </p><div class='container-full-width'>
 		<div class='container-full-width inner' style='margin-bottom:4px;'>
-			[style.boldTfGeneric(Water)] [style.moneyFormat(20, b)] | [style.boldTfGeneric(Bubble Milk)] [style.moneyFormat(30, b)] | [style.boldTfGeneric(Bread Roll)] [style.moneyFormat(30, b)] | [style.boldTfGeneric(Bubble Cream)] [style.moneyFormat(40, b)] | [style.boldTfGeneric(Berry Trifle)] [style.moneyFormat(60, b)]
+			[style.boldTfGeneric(Вода)] [style.moneyFormat(20, b)] | [style.boldTfGeneric(Пузырчатое молоко)] [style.moneyFormat(30, b)] | [style.boldTfGeneric(Булочка)] [style.moneyFormat(30, b)] | [style.boldTfGeneric(Пузырчатый крем)] [style.moneyFormat(40, b)] | [style.boldTfGeneric(Ягодный трайфл)] [style.moneyFormat(60, b)]
 			<br/>Если ты проголодалась или хочешь пить, ты можешь купить еду или напитки прямо здесь!
 		</div>
 		<div class='container-full-width inner' style='margin-bottom:4px;'>
-			[style.boldCow(Pretty Cow Potion)] [style.moneyFormat(1200, b)]
+			[style.boldCow(Зелье милой коровы)] [style.moneyFormat(1200, b)]
 			<br/>Тебе ведь не хочется, чтобы за твоей спиной называли уродкой? Купи это и стань краше, чем «она»!
 		</div>
 		<div class='container-full-width inner' style='margin-bottom:4px;'>
-			[style.boldCow(Busty Cow Potion)] [style.moneyFormat(1400, b)]
+			[style.boldCow(Зелье пышной коровы)] [style.moneyFormat(1400, b)]
 			<br/>Коровы с пышной грудью куда привлекательнее! Это научно&#8482; доказано!
 		</div>
 		<div class='container-full-width inner' style='margin-bottom:4px;'>
-			[style.boldCow(Milky Cow Potion)] [style.moneyFormat(1600, b)]
+			[style.boldCow(Зелье молочной коровы)] [style.moneyFormat(1600, b)]
 			<br/>Чем больше молока ты даёшь, тем быстрее получишь повышение!
 		</div>
 		<div class='container-full-width inner' style='margin-bottom:4px;'>
-			[style.boldCow(Wet Cow Potion)] [style.moneyFormat(1800, b)]
+			[style.boldCow(Зелье мокрой коровы)] [style.moneyFormat(1800, b)]
 			<br/>Тебе просто необходимо пускать слюни из своей течной киски, чтобы клиенты остались в восторге!
 		</div>
 		<div class='container-full-width inner' style='margin-bottom:4px;'>
-			[style.boldCow(Happy Cow Potion)] [style.moneyFormat(2000, b)]
+			[style.boldCow(Зелье счастливой коровы)] [style.moneyFormat(2000, b)]
 			<br/>Ну, типа, так бесит постоянно обо всём думать, да?
 		</div>
 	</div>

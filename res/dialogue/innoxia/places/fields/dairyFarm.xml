@@ -593,7 +593,7 @@
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
 				<responseTitle><![CDATA[Телонка (#IF(pc.getMoney()>=10000)[style.moneyFormat(10000, span)]#ELSE[style.moneyFormatUncoloured(10000, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=10000) Hand over ten thousand flames and have sex with one of the farm's trainee milkers. #ELSE You can't afford to have sex with one of the farm's trainee milkers... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=10000) Отдай десять тысяч огней и переспи с одной из стажёрок-доярок фермы. #ELSE Тебе не хватает огней, чтобы переспать с одной из стажёрок-доярок фермы... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=10000)innoxia_places_fields_dairyFarm_milker_sex_start#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -613,7 +613,7 @@
 				<index><![CDATA[2]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
 				<responseTitle><![CDATA[Тёлка (#IF(pc.getMoney()>=5000)[style.moneyFormat(5000, span)]#ELSE[style.moneyFormatUncoloured(5000, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=5000) Hand over five thousand flames and have sex with one of the farm's heifers. #ELSE You can't afford to have sex with one of the farm's heifers... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=5000) Отдай пять тысяч огней и переспи с одной из телок фермы. #ELSE Тебе не хватает огней, чтобы переспать с одной из телок фермы... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=5000)innoxia_places_fields_dairyFarm_milker_sex_start#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -633,7 +633,7 @@
 				<index><![CDATA[3]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
 				<responseTitle><![CDATA[Корова (#IF(pc.getMoney()>=2500)[style.moneyFormat(2500, span)]#ELSE[style.moneyFormatUncoloured(2500, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=2500) Hand over two thousand five hundred flames and have sex with one of the farm's cows. #ELSE You can't afford to have sex with one of the farm's cows... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=2500) Отдай две тысячи пятьсот огней и переспи с одной из коров фермы. #ELSE Тебе не хватает огней, чтобы переспать с одной из коров фермы... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=2500)innoxia_places_fields_dairyFarm_milker_sex_cow_choices#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -1278,7 +1278,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Заплатить (#IF(pc.getMoney()>=50000)[style.moneyFormat(50000, span)]#ELSE[style.moneyFormatUncoloured(50000, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50000) Give Evelyx the fifty thousand flames which she's demanding in return for Monica's breast pump. #ELSE You can't afford to pay fifty thousand flames for Monica's breast pump... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50000) Отдай Эвеликс пятьдесят тысяч огней, которые она требует в обмен на молокоотсос Моники. #ELSE Тебе не хватает огней, чтобы заплатить пятьдесят тысяч за молокоотсос Моники... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=50000)innoxia_places_fields_dairyFarm_monica_quest_meeting_paid#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.incrementMoney(-50000))]
@@ -2242,7 +2242,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Вода (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=20) Purchase a bottle of water. #ELSE You can't afford a bottle of water... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=20) Купить бутылку воды. #ELSE Тебе не хватает огней даже на бутылку воды... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=20)innoxia_places_fields_dairyFarm_dormitory_vending_machine#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString(20)]', true)]
@@ -2256,7 +2256,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[Пузырчатое молоко (#IF(pc.getMoney()>=30)[style.moneyFormat(30, span)]#ELSE[style.moneyFormatUncoloured(30, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=30) Purchase a bottle of bubble milk. #ELSE You can't afford a bottle of bubble milk... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=30) Купить бутылку пузырчатого молока. #ELSE Тебе не хватает денег на бутылку пузырчатого молока... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=30)innoxia_places_fields_dairyFarm_dormitory_vending_machine#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString(30)]', true)]
@@ -2270,7 +2270,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<responseTitle><![CDATA[Булочка (#IF(pc.getMoney()>=30)[style.moneyFormat(30, span)]#ELSE[style.moneyFormatUncoloured(30, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=30) Purchase an individually-wrapped bread roll. #ELSE You can't afford a bread roll... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=30) Купить булочку в индивидуальной упаковке. #ELSE Тебе не хватает денег на булочку... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=30)innoxia_places_fields_dairyFarm_dormitory_vending_machine#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString(30)]', true)]
@@ -2284,7 +2284,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
 				<responseTitle><![CDATA[Пузырчатый крем (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Purchase a pot of bubble cream. #ELSE You can't afford a pot of bubble cream... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Купить горшочек пузырчатого крема. #ELSE Тебе не хватает денег на горшочек пузырчатого крема... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_dairyFarm_dormitory_vending_machine#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString(40)]', true)]
@@ -2298,7 +2298,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
 				<responseTitle><![CDATA[Ягодный трайфл (#IF(pc.getMoney()>=60)[style.moneyFormat(60, span)]#ELSE[style.moneyFormatUncoloured(60, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=60) Purchase a pot of berry trifle. #ELSE You can't afford a pot of berry trifle... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=60) Купить порцию ягодного трифла. #ELSE Тебе не хватает денег на порцию ягодного трифла... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=60)innoxia_places_fields_dairyFarm_dormitory_vending_machine#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString(60)]', true)]

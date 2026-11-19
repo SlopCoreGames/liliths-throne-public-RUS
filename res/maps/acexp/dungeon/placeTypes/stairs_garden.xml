@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
     <worldRegion>DOMINION</worldRegion>
-    <name><![CDATA[Staircase (garden)]]></name>
-    <tooltipDescription><![CDATA[This spiral staircase leads up into the central garden of Lilaya's mansion.]]></tooltipDescription>
-    <virginityLossDescription><![CDATA[in Lilaya's dungeon]]></virginityLossDescription>
+    <name><![CDATA[Лестница (сад)]]></name>
+    <tooltipDescription><![CDATA[Эта винтовая лестница ведет вверх, в центральный сад особняка Lilaya.]]></tooltipDescription>
+    <virginityLossDescription><![CDATA[в подземелье Lilaya]]></virginityLossDescription>
     <sexBlockedReason/>
     <sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
     <colour>BASE_GREEN_LIGHT</colour>

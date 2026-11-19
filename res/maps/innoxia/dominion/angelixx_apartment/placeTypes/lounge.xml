@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Lounge]]></name>
-	<tooltipDescription><![CDATA[The large lounge in Angelixx's apartment holds several plush sofas, each of which is covered in colourful cushions.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the lounge at Angelixx's apartment]]></virginityLossDescription>
+	<name><![CDATA[Гостиная]]></name>
+	<tooltipDescription><![CDATA[В просторной гостиной в апартаментах Анжеликс стоит несколько мягких диванов, каждый из которых усыпан разноцветными подушками.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в гостиной в апартаментах Анжеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_INDIGO</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

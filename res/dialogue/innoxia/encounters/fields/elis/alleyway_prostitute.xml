@@ -370,8 +370,8 @@
 						<enemy leader="true"><![CDATA[npc]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[Readying yourself for the fight to come, you tell [npc.name] that [npc.sheIs] about to receive a sound beating.]]></combatant>
-						<combatant id="prostitute"><![CDATA[With a furious scowl on [npc.her] face, [npc.name] cries, [npc.speech(You'll regret this!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Готовясь к предстоящей схватке, ты говоришь [npc.name], что [npc.sheIs] вот-вот получит хорошую взбучку.]]></combatant>
+						<combatant id="prostitute"><![CDATA[С яростной гримасой на лице [npc.her], [npc.name] кричит: [npc.speech(Ты об этом пожалеешь!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>

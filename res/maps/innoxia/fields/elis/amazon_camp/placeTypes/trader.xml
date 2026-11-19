@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Marketplace]]></name>
-	<tooltipDescription><![CDATA[Catering to the needs of the Amazon population, a series of large tents have been set up in this area in which all manner of goods are being traded.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Aurokaris's tent in the Amazons' camp]]></virginityLossDescription>
+	<name><![CDATA[Рыночная площадь]]></name>
+	<tooltipDescription><![CDATA[Чтобы удовлетворить нужды амазонок, на этой территории разбили ряд больших шатров, в которых торгуют самыми разнообразными товарами.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в палатке Аврокарис в лагере амазонок]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_TEAL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

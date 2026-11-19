@@ -10,14 +10,14 @@
 	<name><![CDATA[волосы]]></name>
 	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>coarse</descriptor>
+		<descriptor>жесткими</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>coarse</descriptor>
+		<descriptor>жесткими</descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с жесткими волосами.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSnake(snake hair)].
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSnake(змеиные волосы)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)] волосы

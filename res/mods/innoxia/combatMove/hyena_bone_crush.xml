@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Bone crush]]></name>
+	<name><![CDATA[Дробящий кости]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -24,7 +24,7 @@
 	'damageInflicted' will parse to the attacker's projected damage of this attack (using the defined 'baseDamage' field defined below).
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[
-		Use [npc.her] powerful hyena jaws to deliver a bone-crushing bite to [npc.her] target, dealing formattedDamageInflicted damage.
+		Использует [npc.her] мощные челюсти гиены, чтобы нанести сокрушительный укус [npc.her] цели, нанося formattedDamageInflicted урона.
 	]]></description>
 	
 	<!-- The type of damage that this move inflicts. 
@@ -106,7 +106,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters who have a hyena face type.
+		Доступно персонажам с типом лица «гиена».
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -137,7 +137,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Target's physique is less than half of the attacker's physique.
+		Телосложение цели меньше половины телосложения атакующего.
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -149,17 +149,17 @@
 	'isCritical' will parse to the boolean return value for isCritical, and will therefore be either 'true' or 'false'.
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] powerful hyena jaws to deliver a bone-crushing bite to [npc2.name], dealing formattedDamageInflicted damage.
+		Использует [npc.her] мощные челюсти гиены, чтобы нанести сокрушительный укус [npc2.name], нанося formattedDamageInflicted урона.
 		#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-			 [style.italicsTerrible(Damage is reduced to 0 as [npc.her] mouth is blocked!)]
+			 [style.italicsTerrible(Урон снижен до 0, так как [npc.her] рот заблокирован!)]
 		#ENDIF
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] powerful hyena jaws to deliver a bone-crushing bite to [npc.her] target, dealing formattedDamageInflicted damage.
+		Использует [npc.her] мощные челюсти гиены, чтобы нанести сокрушительный укус [npc.her] цели, нанося formattedDamageInflicted урона.
 		#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-			 [style.italicsTerrible(Damage is reduced to 0 as [npc.her] mouth is blocked!)]
+			 [style.italicsTerrible(Урон снижен до 0, так как [npc.her] рот заблокирован!)]
 		#ENDIF
 	]]></movePredictionDescriptionNoTarget>
 	
@@ -175,17 +175,17 @@
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
 			#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-				As [npc.her] mouth is blocked, [npc.name] [npc.verb(fail)] to bite [npc2.name], and [npc.verb(end)] up doing no damage at all...
+				Так как [npc.her] рот заблокирован, [npc.name] [npc.verb(fail)], чтобы укусить [npc2.name], и [npc.verb(end)], не нанося при этом никакого урона...
 			#ELSE
-				[npc.Name] [npc.verb(open)] [npc.her] mouth, and after letting out a hyena-like laugh, [npc.verb(lunge)] at [npc2.name] and [npc.verb(succeed)] in delivering a bone-crushing bite!
+				[npc.Name] [npc.verb(open)] [npc.her] рот, а затем, издав гиеньеподобный смех, [npc.verb(lunge)] на [npc2.name] и [npc.verb(succeed)], нанося сокрушительный укус!
 			#ENDIF
 			formattedHealthDamage
 		]]></execute>
 		<critDescription><![CDATA[
-			[npc.NamePos] bone-crushing bite was extremely effective!
+			[npc.NamePos] костедробительный укус был чрезвычайно эффективен!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] been crippled by the attack!
+			[npc2.Name] #IF(npc2.isFeminine())ошеломлена#ELSEошеломлён#ENDIF атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

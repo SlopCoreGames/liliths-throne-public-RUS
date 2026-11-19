@@ -51,7 +51,7 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's penis of this type.
 	Additional penis descriptors are generated based on the penis's properties (such as its modifiers, colour, etc.), so these descriptors should only be related to the race itself. -->
 	<descriptors>
-		<descriptor>ursine</descriptor>
+		<descriptor>медвежья</descriptor>
 	</descriptors>
 	<!-- Hyena penises do not need any racial descriptors, but if you wanted to add some, use this format:
 	<descriptors>
@@ -71,7 +71,7 @@
 	<transformationDescription><![CDATA[
 		Непроизвольно простонав, [npc.name] [npc.verb(feel)] , как [npc.her] penis принимает новую форму, а [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствол внезапно разрастается толстая кожаная оболочка. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] , пытаясь глотнуть воздуха, головка [npc.her] cock расширяется, принимая свою новую тупую форму.
 		<br/>[npc.She] теперь [npc.has] [style.boldBear(медвежий член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldBear([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldBear(bear cum)].
+		<br/>[npc.She] [npc.has] [style.boldBear([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldBear(медвежью сперму)].
 	]]></transformationDescription>
 	
 	<!-- How this penis is described in a character's description page. -->

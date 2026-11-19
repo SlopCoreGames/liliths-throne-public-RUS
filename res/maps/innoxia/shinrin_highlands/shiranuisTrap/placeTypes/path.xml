@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[path]]></name>
-	<tooltipDescription><![CDATA[A narrow path winds its way between the mist-shrouded trees.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[on a path within Shiranui's trap]]></virginityLossDescription>
+	<name><![CDATA[тропа]]></name>
+	<tooltipDescription><![CDATA[Узкая тропа вьется среди окутанных туманом деревьев.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на тропе внутри ловушки Ширануи]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -3,14 +3,14 @@
 	<worldRegion>FIELD_CITY</worldRegion>
 	
 	<name><![CDATA[
-		Empty Lot
+		Пустырь
 	]]></name>
 
 	<tooltipDescription><![CDATA[
-		An empty space that has yet to find a new tenant.
+		Пустое место, которое еще не обрело нового владельца.
 	]]></tooltipDescription>
 	
-	<virginityLossDescription><![CDATA[in the Farmer's Market in Elis]]></virginityLossDescription>
+	<virginityLossDescription><![CDATA[на фермерском рынке в Элисе]]></virginityLossDescription>
 	
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>

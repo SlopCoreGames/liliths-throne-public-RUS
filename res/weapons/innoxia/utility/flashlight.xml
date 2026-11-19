@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[фонарики]]></namePlural>
 		<description><![CDATA[Фонарик, работающий на энергии Арканы. Этот прочный прибор не только освещает самые темные уголки, но и может послужить импровизированной дубинкой...]]></description>
 		<attackDescriptor>whack</attackDescriptor>
-		<attackTooltipDescription>Whack [npc2.name] with your flashlight.</attackTooltipDescription>
+		<attackTooltipDescription>Хлопни [npc2.name] своим фонариком.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] фонарик и [npc.verb(prepare)] использовать его, чтобы осветить любые темные места [npc.she] [npc.verb(encounter)].]]></equipText>
 		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] фонарик.]]></unequipText>

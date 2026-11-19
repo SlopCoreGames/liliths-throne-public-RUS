@@ -10,12 +10,12 @@
 	<name><![CDATA[волосы]]></name>
 	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-like</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожими на мех</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-like</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожими на мех</descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, похожими на мех.

@@ -18,7 +18,7 @@
 			<category id="straps" priority="1">
 				<categoryName><![CDATA[Бретели]]></categoryName>
 				<sticker id="attached" priority="1" defaultSticker="true" zLayer="-1">
-					<stickerName><![CDATA[Attached]]></stickerName>
+					<stickerName><![CDATA[Прикреплено]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="3"><![CDATA[Бретели в данный момент прикреплены к боди.]]></descriptionModification>
@@ -29,7 +29,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="removed" priority="0" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[Removed]]></stickerName>
+					<stickerName><![CDATA[Снято]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="3"><![CDATA[Бретели сняты с боди.]]></descriptionModification>

@@ -186,7 +186,7 @@
 			В [npc.her] отчаянии, [npc.namePos] наносит невероятно эффективный удар!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] ошеломлен атакой!
+			[npc2.Name] #IF(npc2.isFeminine())ошеломлена#ELSEошеломлён#ENDIF атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

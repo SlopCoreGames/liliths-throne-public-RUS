@@ -61,7 +61,7 @@
 	<p style='text-align:center;'>
 		[pc.thought(Теперь я просто обычная шлюха...
 			<br/>Которую трахает любой встречный...
-			<br/>Теперь всё, на что я годна — стать следующей счастливой #IF(pc.getSexualOrientation().isAttractedToMasculine())guy#ELSEgirl#ENDIF's fuck-toy...)]
+			<br/>Теперь всё, на что я годна — стать следующей счастливой #IF(pc.getSexualOrientation().isAttractedToMasculine())парень#ELSEдевушка#ENDIF...шлюшка для секса...)]
 	</p>
 	<p>
 		#IF(npc.isAsleep())
@@ -100,7 +100,7 @@
 	<p style='text-align:center;'>
 		[pc.thought(Теперь я всего лишь секс-игрушка...
 			<br/>Меня трахает любой, кто захочет меня использовать...
-			<br/>Все, на что я теперь способна — стать следующей везучей #IF(pc.getSexualOrientation().isAttractedToMasculine())guy#ELSEgirl#ENDIF's cum dump...)]
+			<br/>Все, на что я теперь способна — стать следующей везучей #IF(pc.getSexualOrientation().isAttractedToMasculine())парень#ELSEдевушка#ENDIF...свалка для спермы...)]
 	</p>
 	<p>
 		#IF(npc.isAsleep())
@@ -138,7 +138,7 @@
 	<p style='text-align:center;'>
 		[pc.thought(Теперь я всего лишь секс-игрушка...
 			<br/>Меня трахает любой, кто захочет меня использовать...
-			<br/>Все, на что я теперь способна — стать следующей везучей #IF(pc.getSexualOrientation().isAttractedToMasculine())guy#ELSEgirl#ENDIF's cum dump...)]
+			<br/>Все, на что я теперь способна — стать следующей везучей #IF(pc.getSexualOrientation().isAttractedToMasculine())парень#ELSEдевушка#ENDIF...свалка для спермы...)]
 	</p>
 	<p>
 		Совершенно не осознавая, каким сокрушительным ударом станет потеря девственности, когда ты проснешься, [npc.name] продолжает тебя трахать. Сны продолжают подбрасывать тебе похотливые сцены, и в глубине души ты начинаешь принимать свою участь [style.boldTerrible(сломленной девственницы)]...
@@ -207,7 +207,7 @@
 	</p>
 	#IF(npc.hasFetish(FETISH_DEFLOWERING) && !npc.isMute() && !npc.isDoll() && !npc.isAsleep())
 		<p>
-			[npc.speech(О, да!)] — вскрикивает [npc.she], — [npc.speech(Молодец, [pc.girl], приберегла свою анальную девственность для меня! Запомни этот момент, запомни, что именно <i>мой</i> [#SPECIAL_PARSE_0] был тем, кто превратил тебя в } #IF(pc.isFeminine())a horny buttslut#ELSEa little fucktoy#ENDIF!)]
+			[npc.speech(О, да!)] — вскрикивает [npc.she], — [npc.speech(Молодец, [pc.girl], приберегла свою анальную девственность для меня! Запомни этот момент, запомни, что именно <i>мой</i> [#SPECIAL_PARSE_0] был тем, кто превратил тебя в } #IF(pc.isFeminine())похотливая задницелюбная шлюшка#ELSEмаленькая игрушка для секса#ENDIF!)]
 		</p>
 	#ENDIF
 	<p>
@@ -230,7 +230,7 @@
 	#ENDIF
 	<p>
 		#IF(npc.hasFetish(FETISH_SADIST))
-			Although you don't show any reaction to losing your anal virginity, [npc.name] clearly knows that you must be in pain. Drawing [npc.her] [#SPECIAL_PARSE_0] back, [npc.she] sadistically smirks at you, before violently thrusting deep inside you once again. [npc.She] lets out an evil laugh as [npc.she] makes [npc.her] movements as fast and rough as [npc.she] can; [npc.her] sadistic nature fuelling [npc.her] violent thrusts into your [pc.asshole] as [npc.she] ruthlessly fucks your [pc.ass].
+			Хотя ты никак не реагируешь на потерю анальной девственности, [npc.name] явно понимает, что тебе должно быть больно. Оттягивая [npc.her] [#SPECIAL_PARSE_0] назад, [npc.she] садистски ухмыляется тебе в лицо, прежде чем снова яростно вонзиться глубоко в тебя. [npc.She] издает злобный смешок, пока [npc.she] совершает [npc.her] движения так быстро и грубо, как только может [npc.she]; садистская натура [npc.her] подпитывает [npc.her] яростные толчки в твою [pc.asshole], пока [npc.she] беспощадно трахает твою [pc.ass].
 		#ELSE
 			Не в силах отреагировать, ты продолжаешь вести себя как неодушевленная секс-кукла, пока [npc.name] оттягивает [npc.her] [#SPECIAL_PARSE_0] назад, а затем снова глубоко входишь в тебя. На этот раз боль не такая острая, как прежде, и ты понимаешь, что начинаешь привыкать к ощущению, когда тебя трахают в зад.
 		#ENDIF
@@ -268,7 +268,7 @@
 	</p>
 	#IF(npc.hasFetish(FETISH_DEFLOWERING) && !npc.isMute() && !npc.isDoll())
 		<p>
-			[npc.speech(О, да!)] — вскрикивает [npc.she], — [npc.speech(Молодец, [pc.girl], приберегла свою анальную девственность для меня! Запомни этот момент, запомни, что именно <i>мой</i> [#SPECIAL_PARSE_0] был тем, кто превратил тебя в } #IF(pc.isFeminine())a horny buttslut#ELSEa little fucktoy#ENDIF!)]
+			[npc.speech(О, да!)] — вскрикивает [npc.she], — [npc.speech(Молодец, [pc.girl], приберегла свою анальную девственность для меня! Запомни этот момент, запомни, что именно <i>мой</i> [#SPECIAL_PARSE_0] был тем, кто превратил тебя в } #IF(pc.isFeminine())похотливая задницелюбная шлюшка#ELSEмаленькая игрушка для секса#ENDIF!)]
 		</p>
 	#ENDIF
 	<p>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[The Barn]]></name>
-	<tooltipDescription><![CDATA[The only business in the shopping precinct which is open 24/7, the convenience store 'The Barn' offers the usual range of consumable items.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in 'The Barn' convenience store]]></virginityLossDescription>
+	<name><![CDATA[«Амбар»]]></name>
+	<tooltipDescription><![CDATA[Единственное заведение в торговом квартале, работающее круглосуточно, — это магазин «Хлев», предлагающий привычный ассортимент расходных материалов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в магазине «Хлев»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_TEAL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

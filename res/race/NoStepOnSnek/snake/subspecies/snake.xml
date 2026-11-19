@@ -23,7 +23,7 @@
 	<iconName displaySize="60">snake</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>snake</bookIconName>
-	<bookName>Clutching Coils</bookName>
+	<bookName>Сжимающие кольца</bookName>
 	<basicDescriptionId>SNAKE_BASIC</basicDescriptionId>
 	<advancedDescriptionId>SNAKE_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

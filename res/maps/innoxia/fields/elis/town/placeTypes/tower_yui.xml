@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[tower]]></name>
-	<tooltipDescription><![CDATA[At several points along the wall's perimeter, tall stone towers have been constructed, from the crenellated tops of which the surrounding lands can easily be surveyed.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in one of the towers along the walls of Elis]]></virginityLossDescription>
+	<name><![CDATA[башня]]></name>
+	<tooltipDescription><![CDATA[В нескольких местах вдоль периметра стены возведены высокие каменные башни, с зубчатых вершин которых легко обозреть окрестные земли.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в одной из башен вдоль стен Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>tower</svgName>
 	<colour>BASE_BLACK</colour>

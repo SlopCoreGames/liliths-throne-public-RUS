@@ -206,7 +206,7 @@
 		Решив, что лучше избежать гнева [helena.namePos], ты хранишь молчание, пока она прыгает с края платформы. Ты просто наблюдаешь, как она описывает вираж в воздухе и улетает в сторону Переулка Рабов. Ты уверен, что поступил правильно; ведь кто знает, какое ужасное наказание уготовила бы тебе [helena.name], если бы ты решился её остановить.
 	</p>
 	<p>
-		Ближний круг гарпий [helena.NamePos] не обращает на тебя внимания, пока их матриарх уносится в... #IF(game.isDayTime())sky#ELSEnight#ENDIF. They're far too concerned with speculating as to what [helena.name] is going to do to Scarlett, and as you overhear some of their more frightful ideas, you suddenly remember that you still need the rude raven-harpy to tell you what happened to Arthur.
+		Ближний круг гарпий [helena.NamePos] не обращает на тебя внимания, пока их матриарх уносится в... #IF(game.isDayTime())небо#ELSEночь#ENDIF. Они слишком увлечены догадками о том, что [helena.name] сделает со Scarlett, и, подслушав некоторые из их самых пугающих идей, ты внезапно вспоминаешь, что тебе всё ещё нужно, чтобы грубая гарпия-ворона рассказала тебе, что случилось с Arthur.
 	</p>
 	<p>
 		Похоже, никто не собирается мешать твоему уходу, поэтому ты поспешно направляешься к выходу. Тебе стоит поскорее вернуться в лавку Scarlett и разузнать, что именно [helena.name] приготовила для неё...
@@ -333,7 +333,7 @@
 	
 	<htmlContent tag="HELENAS_NEST_MAIN_QUEST_TAKE_FLIGHT"><![CDATA[
 	<p>
-		Следуя по стопам [helena.name], ты спешишь к краю платформы. #IF(!pc.isAbleToFlyFromExtraParts())With a flap of your wings, you#ELSEYou#ENDIF leap off and take flight, following the speck of white in the distance as [helena.name] leads you back to Scarlett's shop.
+		Следуя по стопам [helena.name], ты спешишь к краю платформы. #IF(!pc.isAbleToFlyFromExtraParts())Взмахнув крыльями, ты#ELSEВы#ENDIF срываешься вниз и взлетаешь, следуя за белой точкой вдали, пока [helena.name] ведет тебя обратно к лавке Scarlett.
 	</p>
 	<p>
 		Где-то по пути ты теряешь из виду матриарха гарпий, и тебе требуется некоторое время, чтобы снова сориентироваться. Однако вскоре ты замечаешь под собой знакомые улочки Рабского переулка и камнем вниз пикируешь к лавке Scarlett.

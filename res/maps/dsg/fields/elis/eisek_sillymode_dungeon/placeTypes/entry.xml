@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>	
-	<name><![CDATA[Entryway]]></name>
-	<tooltipDescription><![CDATA[This door once led to the outside world, but the sheer amount of junk blocking it has made it impossible to open.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the entryway to a strange basement]]></virginityLossDescription>	
+	<name><![CDATA[Вход]]></name>
+	<tooltipDescription><![CDATA[Когда-то эта дверь вела во внешний мир, но из-за огромного количества скопившегося хлама открыть её стало невозможно.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у входа в странный подвал]]></virginityLossDescription>	
 	<sexBlockedFromCharacterPresent/>
 	<svgName>dungeon_door</svgName>
 	<colour>BASE_WHITE</colour>

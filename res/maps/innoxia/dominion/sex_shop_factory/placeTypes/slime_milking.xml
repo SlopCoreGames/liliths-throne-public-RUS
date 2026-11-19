@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[slime milking stalls]]></name>
-	<tooltipDescription><![CDATA[Dozens of huge slimes are locked into milking stalls in this area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[by the slime milking stalls in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[станки для дойки слаймов]]></name>
+	<tooltipDescription><![CDATA[В этой области десятки огромных слаймов заперты в станках для дойки.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у станков для дойки слаймов на фабрике под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>RACE_SLIME</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

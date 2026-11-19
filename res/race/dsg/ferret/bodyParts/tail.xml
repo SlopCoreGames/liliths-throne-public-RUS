@@ -55,25 +55,25 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tail of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>ferret-like</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>mustelid</descriptor>
+		<descriptor>хорьковый</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>куницеобразный</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>ferret-like</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>mustelid</descriptor>
+		<descriptor>хорьковый</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>куницеобразный</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tail type above, but these describe the tail's tip: -->
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this tail type.
@@ -84,16 +84,16 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldFerret(хорьи хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
 [npc.TailCount] пушистые, похожие на ферречьи хвосты вырастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь частично управляет ими, но [npc.is] всё же может вилять ими из стороны в сторону.
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldFerret(ferret-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldFerret(похожие на ферречьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<!-- How this tail is described in a character's description page. -->
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] ferret tail, which [npc.she] can swish from side to side at will.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] ферречий хвост, которым [npc.she] может вилять из стороны в сторону по своему желанию.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] ferret tails, which [npc.she] can swish from side to side at will.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] ферречьи хвосты, которыми [npc.she] может вилять из стороны в сторону по своему желанию.
 		#ENDIF
 	]]></bodyDescription>
 	

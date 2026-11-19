@@ -1213,7 +1213,7 @@
 	#IF(npc.isTaur())
 		#IF(npc.isMute())
 			<p>
-				In response, the mute [npc.race] lets out a series of desperate whines, before impatiently bucking [npc.her] [npc.hips+] back in a clear sign that [npc.she] wants you to fuck [npc.herHim]. More than happy to give [npc.herHim] what [npc.she] wants, you climb up onto the massage table so that you're positioned behind the rear end of [npc.her] [npc.legRace]'s body, ready to start having some fun with [npc.herHim]...
+				В ответ немой [npc.race] издает серию отчаянных скулящих звуков, а затем нетерпеливо подбрасывает [npc.her] [npc.hips+] назад, ясно давая понять, что [npc.she] хочет, чтобы ты трахнул [npc.herHim]. С радостью исполняя то, чего [npc.she] хочет от [npc.herHim], ты забираешься на массажный стол и устраиваешься позади задницы [npc.her] [npc.legRace], готовый начать развлекаться с [npc.herHim]...
 			</p>
 		#ELSE
 			<p>
@@ -1225,14 +1225,14 @@
 	#ELSE
 		#IF(npc.isMute())
 			<p>
-				In response, the mute [npc.race] lets out a series of desperate whines, before suddenly rolling over onto [npc.her] back and presenting [npc.herself] to you. More than happy to give [npc.herHim] what [npc.she] wants, you climb up onto the massage table so that you're positioned between [npc.namePos] [npc.legs], ready to start having some fun with [npc.herHim]...
+				В ответ на это немой [npc.race] издает серию отчаянных скулящих звуков, а затем внезапно переворачивается на [npc.her] спину, подставляя тебе [npc.herself]. С радостью желая дать [npc.herHim] то, чего [npc.she] хочет, ты забираешься на массажный стол и устраиваешься между [npc.namePos] [npc.legs], готовый начать развлекаться с [npc.herHim]...
 			</p>
 		#ELSE
 			<p>
 				В ответ на это [npc.race] издает серию отчаянных скулящих звуков, а затем внезапно переворачивается на [npc.her] спину, подставляя [npc.herself] тебе. Глядя снизу вверх в твои [pc.eyes], [npc.she] [npc.moansVerb] [npc.speech(Ну же, [pc.name]! ~Ммм!~ Трахни меня!)]
 			</p>
 			<p>
-				More than happy to give [npc.name] what [npc.she] wants, you climb up onto the massage table so that you're positioned between [npc.namePos] [npc.legs], ready to start having some fun with [npc.herHim]...
+				С огромным удовольствием отдавая [npc.name] всё, чего желает [npc.she], ты забираешься на массажный стол и устраиваешься между [npc.namePos] [npc.legs], готовая начать весело проводить время с [npc.herHim]...
 			</p>
 		#ENDIF
 	#ENDIF
@@ -1275,7 +1275,7 @@
 	
 	<htmlContent tag="SPA_GUEST_CORE_MASSAGE_RECEIVE_SEX_START"><![CDATA[
 	<p>
-		Knowing that it'll only take a little teasing to make [npc.name] desperately hot and horny, you tell [npc.herHim] that [npc.she] doesn't have to hold back, and can massage absolutely any part of you. Happily [npc.moaning] as [npc.she] hears you say this, [npc.name] quickly moves [npc.her] [npc.hands] down
+				Зная, что понадобится лишь немного дразнилок, чтобы довести [npc.name] до состояния неистовой похоти, ты говоришь [npc.herHim], что [npc.she] не нужно сдерживаться и можно массировать абсолютно любую часть твоего тела. Счастливая [npc.moaning], услышав это от [npc.she], [npc.name] быстро опускает [npc.her] [npc.hands]
 		#IF(pc.isTaur())
 			 по нижней части твоей [pc.legRace], прежде чем
 		#ELSE

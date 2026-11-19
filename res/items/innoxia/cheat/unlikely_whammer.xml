@@ -31,7 +31,7 @@
 		
 		<effectTooltipLines>
 			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.italicsSex(+10)] [style.italicsFeminine(femininity)]]]></line>
+			<line><![CDATA[[style.italicsSex(+10)] [style.italicsFeminine(женственность)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -66,7 +66,7 @@
 		Разворачивая бумажную обертку «Невероятного Умника», [npc.name] быстро [npc.verb(reveal)] жирный чизбургер внутри. Поднеся его к рту [npc.her], [npc.she] [npc.verb(take)] огромный кусок и [npc.verb(discover)], что он невероятно вкусный. Вдохновленная таким вкусом, [npc.herHim] требуется всего пара мгновений, чтобы умясти в себя всю порцию.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Unwrapping the Improbable-Whammer's paper covering, [npc.name] quickly [npc.verb(reveal)] the greasy cheeseburger contained within, before offering it to [npc2.name]. Bringing it up to [npc2.her] mouth, [npc2.name] [npc2.verb(take)] a big bite, and [npc2.verb(discover)] that it's absolutely delicious. Encouraged by the taste, it only takes [npc2.herHim] a few moments to wolf down the meal.
+		Разворачивая бумажную обертку Невероятного-Бампера, [npc.name] быстро [npc.verb(reveal)] жирный чизбургер, лежащий внутри, прежде чем предложить его [npc2.name]. Поднеся его к рту [npc2.her], [npc2.name] [npc2.verb(take)] огромный кусок и [npc2.verb(discover)], что это чертовски вкусно. Воодушевленная вкусом, [npc2.herHim] требуется всего несколько мгновений, чтобы уплести всё в один присест.
 		]]></otherUse>
 	</useDescriptions>
 

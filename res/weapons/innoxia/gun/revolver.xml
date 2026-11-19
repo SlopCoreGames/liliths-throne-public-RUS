@@ -13,7 +13,7 @@
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your arcane revolver.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc2.name] из своего арканного револьвера.</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		

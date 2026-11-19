@@ -7,13 +7,13 @@
 	<name><![CDATA[ухо]]></name>
 	<namePlural><![CDATA[уши]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>scaly</descriptor>
-		<descriptor>snake-like</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>змеиный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>scaly</descriptor>
-		<descriptor>snake-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>змеиный</descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Они быстро уменьшаются, превращаясь в крошечные бугорки, так как большая часть внешнего хряща смещается в бока головы [npc.her].
@@ -22,10 +22,10 @@
 		#ELSE
 Как и всё тело [npc.her], [npc.her] теперь полностью внутренние уши сделаны из [npc.earFullDescription],		#ENDIF
 		 и когда трансформация завершается, [npc.sheIs] остается с ушами змееморфа.
-		<br/>[npc.Name] теперь [npc.has] [style.boldSnake(internal, scale-covered snake ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldSnake(внутренние, покрытые чешуей змеиные уши)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		Уши [npc.Her] — это внутренняя часть головы [npc.her], окруженная слоем [npc.earFullDescription(true)].
-			#IF(npc.isPiercedEar()) They have been cleverly pierced so as to allow [npc.herHim] to wear ear-specific jewellery.#ENDIF
+			#IF(npc.isPiercedEar()) Они были искусно проколоты, чтобы [npc.herHim] мог носить специальные украшения для ушей.#ENDIF
 	]]></bodyDescription>
 </ear>

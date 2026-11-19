@@ -12,7 +12,7 @@
 		<descriptor><![CDATA[паукообразные]]></descriptor>
 	</descriptorsFeminine>
 	<bodyDescription><![CDATA[
-		Во рту [npc.Her] находятся [npc.a_tongueLength], [npc.tongueColour(true)], паукообразные [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		Во рту [npc.Her] находятся [npc.a_tongueLength], [npc.tongueColour(true)], паукообразные [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.
 	]]></bodyDescription>
 	<defaultTongueModifiers/>
 </tongue>

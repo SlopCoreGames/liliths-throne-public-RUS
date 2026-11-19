@@ -23,7 +23,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Harvest Friends</bookName>
+	<bookName>Друзья Урожая</bookName>
 	<basicDescriptionId>MOUSE_BASIC</basicDescriptionId>
 	<advancedDescriptionId>MOUSE_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

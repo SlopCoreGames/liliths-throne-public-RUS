@@ -1544,7 +1544,7 @@
 		#ELSE
 			<p>
 				#IF(pc.getTrueRace()!=RACE_HORSE_MORPH || !pc.hasPenisIgnoreDildo())
-					Пока ты смотришь на камень зверя, Стеропа достает из сундука зелье. С энтузиазмом сжимая его в руках, она предлагает: [sterope.speech(Если выпьешь это, ты превратишься в великого #IF(pc.isFeminine())horse-girl with a nice, big cock,#ELSEhorse-boy,#ENDIF and then you can join me in touching the beast stone. We could fuck as animals all night long...)]
+					Пока ты смотришь на камень зверя, Стеропа достает из сундука зелье. С энтузиазмом сжимая его в руках, она предлагает: [sterope.speech(Если выпьешь это, ты превратишься в великого #IF(pc.isFeminine())лошадиная девка с отличным, большим членом,#ELSEлошадиный парень,#ENDIF а потом ты сможешь присоединиться ко мне, чтобы потрогать этот звериный камень. Мы могли бы трахаться как животные всю ночь напролет...)]
 				#ELSE
 					Пока ты смотришь на камень зверя, Стеропа делает еще одно предложение: [sterope.speech(Ты всегда можешь присоединиться ко мне и прикоснуться к камню... Мы могли бы трахаться как животные всю ночь напролет...)]
 				#ENDIF
@@ -1647,7 +1647,7 @@
 	
 	<htmlContent tag="STEROPE_STABLES_TRANSFORM_FERAL_BOTH"><![CDATA[
 	<p>
-		Тебе нравится сама мысль о превращении в дикую #IF(pc.isFeminine())mare#ELSEstallion#ENDIF and then getting to fuck Sterope in the form of a feral mare,
+		Тебе нравится сама мысль о превращении в дикую #IF(pc.isFeminine())кобыла#ELSEжеребец#ENDIF а затем заняться трахом со Стеропой в облике дикой кобылы,
 		#IF(pc.getTrueRace()!=RACE_HORSE_MORPH || !pc.hasPenisIgnoreDildo())
 
 			 ты берешь зелье трансформации и выпиваешь его одним долгим глотком. Стеропа игриво прикусывает губу и издает предвкушающий стон, когда ты говоришь ей, что тоже коснешься камня зверя.
@@ -2045,7 +2045,7 @@
 			[#SPECIAL_PARSE_0]
 			#IF(sterope.isPregnant())
 				<p>
-					[sterope.speech(Давно уже сбилась со счета, сколько раз меня здесь, в конюшне, обрюхачивали,)] — небрежно признается кобыла, прежде чем пояснить: [sterope.speech(Если я забеременею, то не смогу выполнять всю работу, так что мне придется #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)this brat#ELSEthese brats#ENDIF pumped out and sent packing before morning. Don't like it? #IF(sterope.getPregnantLitter().getFertilisationType()==FERTILISATION_TRIBBING)Then don't make me drink Amazon's Secret next time.#ELSEThen pull out or use a condom next time.#ENDIF)]
+					[sterope.speech(Давно уже сбилась со счета, сколько раз меня здесь, в конюшне, обрюхачивали,)] — небрежно признается кобыла, прежде чем пояснить: [sterope.speech(Если я забеременею, то не смогу выполнять всю работу, так что мне придется #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)этого сопляка#ELSEэтих сопляков#ENDIF выкачанных и вышвырнутых вон еще до рассвета. Не нравится? #IF(sterope.getPregnantLitter().getFertilisationType()==FERTILISATION_TRIBBING)Тогда не заставляй меня пить «Секрет Амазонки» в следующий раз.#ELSETгда вынимай или используй презерватив в следующий раз.#ENDIF)]
 				</p>
 				<p>
 				Оставив тебя на мгновение обдумать твое решение
@@ -2085,7 +2085,7 @@
 			[#SPECIAL_PARSE_0]
 			#IF(sterope.isPregnant())
 				<p>
-					[sterope.speech(Давно уже сбилась со счета, сколько раз я залетала здесь, в конюшне,)] — небрежно признается [sterope.race], после чего поясняет: [sterope.speech(Если я забеременею, я не смогу выполнять все свои рабочие обязанности, так что мне придется... #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)this brat#ELSEthese brats#ENDIF pumped out and sent packing before morning. Don't like it? #IF(sterope.getPregnantLitter().getFertilisationType()==FERTILISATION_TRIBBING)Then don't make me drink Amazon's Secret next time.#ELSEThen pull out or use a condom next time.#ENDIF)]
+					[sterope.speech(Давно уже сбилась со счета, сколько раз я залетала здесь, в конюшне,)] — небрежно признается [sterope.race], после чего поясняет: [sterope.speech(Если я забеременею, я не смогу выполнять все свои рабочие обязанности, так что мне придется... #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)этого сопляка#ELSEэтих сопляков#ENDIF выкачанных и вышвырнутых вон еще до рассвета. Не нравится? #IF(sterope.getPregnantLitter().getFertilisationType()==FERTILISATION_TRIBBING)Тогда не заставляй меня пить «Секрет Амазонки» в следующий раз.#ELSETгда вынимай или используй презерватив в следующий раз.#ENDIF)]
 				</p>
 				<p>
 				Оставив тебя на мгновение обдумать твое решение
@@ -2474,11 +2474,11 @@
 			Больше не в силах сопротивляться, ты визжишь от покорного восторга, чувствуя, как твоя киска начинает непроизвольно спазмировать и сжиматься вокруг [centaur.namePos] пальцев. Достигнув оргазма в тот же миг, что и ты, Стеропа дрожащим голосом объявляет: [sterope.speech(~Ааах!~ Да, я никчемная кобыла! ~Ммм!~ Трахни меня! Я грязное, порочное животное!)]
 		</p>
 		<p>
-			Offering an equally-degrading declaration of your own, you immediately orgasm, and along with Sterope, moan and squeal in ecstasy as [centaur.name] continues to call you degrading names and tell you how worthless you are. Pulling [centaur.her] fingers out of your cunts, [centaur.she] uses your flanks to wipe her fingers clean, before stepping back and deciding upon your next punishment...
+			Ответив столь же унизительным признанием, ты мгновенно кончаешь, и вместе со Стеропой ты стонешь и визжишь от экстаза, пока [centaur.name] продолжает называть тебя всякими гадкими словами и твердить, насколько ты ничтожен. Вытащив пальцы [centaur.her] из твоих кисок, [centaur.she] вытирает о твои бока свои пальцы, после чего отступает назад, обдумывая твое следующее наказание...
 		</p>
 	#ELSE
 		<p>
-			[centaur.speech(What a pair of worthless cunts,)] [centaur.name] sneers as [centaur.she] swats both your and Sterope's asses. Roughly groping your ass cheeks, [centaur.she] spits, [centaur.speech(Disgusting! I can't believe I've got to fuck you filthy bitches...)]
+			[centaur.speech(Ну и парочка никчемных сук,)] [centaur.name] скалится, шлепая [centaur.she] по твоей заднице и заднице Стеропы. Грубо сминая твои ягодицы, [centaur.she] сплевывает: [centaur.speech(Мерзость! Поверить не могу, что мне придется трахать этих грязных сучек...)]
 		</p>
 		<p>
 			От унизительных слов [centaur.NamePos] ты и Стеропа издаете похотливые, высокие стоны. Продолжая словесную атаку [centaur.her], пока [centaur.she] вовсю лапает ваши задницы, [centaur.race] насмешливо вздыхает: [centaur.speech(Не верится, что вы сами хотите, чтобы вас связали и трахнули в конюшне... Вы двое — настоящие дегенератки, да?)]
@@ -2542,13 +2542,13 @@
 		</p>
 	#ELSE
 		<p>
-			[centaur.speech(Ну и жирные же у вас, шлюхи, похотливые соски,)] — хрипит [centaur.race], прежде чем залезть под тебя и Стеропу, чтобы грубо схватить и сжать ваши #IF(pc.hasBreasts())breasts#ELSEchests#ENDIF. As the two of you let out horny whines, [centaur.name] laughs and sneers, [centaur.speech(Now to make you filthy cunts really squeal!)]
+			[centaur.speech(Ну и жирные же у вас, шлюхи, похотливые соски,)] — хрипит [centaur.race], прежде чем залезть под тебя и Стеропу, чтобы грубо схватить и сжать ваши #IF(pc.hasBreasts())груди#ELSEгрудь#ENDIF. Пока вы обе издаете похотливые стоны, [centaur.name] смеется и скалится: [centaur.speech(А теперь заставлю этих грязных сучек по-настоящему визжать!)]
 		</p>
 		<p>
 			С этими словами садистка [centaur.race] с силой щипает и тянет тебя за соски, заставляя издать удивленный, высокий вскрик. Рядом с тобой Стеропа громко визжит, а затем стонет: [sterope.speech(Да! ~Аах!~ Издевайся над нами!)]
 		</p>
 		<p>
-			С огромным удовольствием исполняя просьбу Стеропы, [centaur.race] продолжает жестоко щипать, крутить и тянуть твои соски. Она прерывается лишь для того, чтобы жадно ощупать и сжать твои #IF(pc.hasBreasts())tits#ELSEbodies#ENDIF, [centaur.name] soon reduces you and Sterope to panting, squealing wrecks.
+			С огромным удовольствием исполняя просьбу Стеропы, [centaur.race] продолжает жестоко щипать, крутить и тянуть твои соски. Она прерывается лишь для того, чтобы жадно ощупать и сжать твои #IF(pc.hasBreasts())сиськи#ELSEтела#ENDIF, [centaur.name] вскоре превращает тебя и Стеропу в тяжело дышащих, визжащих руин.
 		</p>
 		<p>
 			[centaur.speech(Ну и парочка тупых, похотливых шлюх!)] — восклицает [centaur.race]. Резким последним рывком за соски [centaur.she] отступает назад, чтобы решить, как наказать вас в следующий раз...
@@ -2719,7 +2719,7 @@
 		[#SPECIAL_PARSE_0]
 		#IF(sterope.isPregnant())
 <p>
-[sterope.speech(Даже не вспомню, сколько раз меня зачинали в этой конюшне давным-давно,)] небрежно роняет [sterope.race], после чего поворачивается к [centaur.name] и объясняет: [sterope.speech(Если я буду беременна, то не смогу выполнять все свои рабочие обязанности, так что мне придётся] #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)this brat#ELSEthese brats#ENDIF pumped out and sent packing before morning. Don't like it? Then you should have pulled out or used a condom.)]
+[sterope.speech(Даже не вспомню, сколько раз меня зачинали в этой конюшне давным-давно,)] небрежно роняет [sterope.race], после чего поворачивается к [centaur.name] и объясняет: [sterope.speech(Если я буду беременна, то не смогу выполнять все свои рабочие обязанности, так что мне придётся] #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)этого сопляка#ELSEэтих сопляков#ENDIF выжатых и вышвырнутых вон еще до рассвета. Не нравится? Тогда надо было выниматься или надевать презерватив.)]
 			</p>
 			<p>
 				Оставив [centaur.race] на мгновение обдумывать решение [centaur.her] залить её спермой, Стеропа идет к стойлу в дальнем конце конюшни.
@@ -2922,7 +2922,7 @@
 		[#SPECIAL_PARSE_0]
 		#IF(sterope.isPregnant())
 <p>
-[sterope.speech(Даже не вспомню, сколько раз меня зачинали в этой конюшне давным-давно,)] небрежно роняет [sterope.race], после чего поворачивается к [centaur.name] и объясняет: [sterope.speech(Если я буду беременна, то не смогу выполнять все свои рабочие обязанности, так что мне придётся] #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)this brat#ELSEthese brats#ENDIF pumped out and sent packing before morning. Don't like it? Then you should have pulled out or used a condom.)]
+[sterope.speech(Даже не вспомню, сколько раз меня зачинали в этой конюшне давным-давно,)] небрежно роняет [sterope.race], после чего поворачивается к [centaur.name] и объясняет: [sterope.speech(Если я буду беременна, то не смогу выполнять все свои рабочие обязанности, так что мне придётся] #IF(sterope.getPregnantLitter().getTotalLitterCount()==1)этого сопляка#ELSEэтих сопляков#ENDIF выжатых и вышвырнутых вон еще до рассвета. Не нравится? Тогда надо было выниматься или надевать презерватив.)]
 			</p>
 			<p>
 				Оставив [centaur.race] на мгновение, чтобы обдумать решение [centaur.her] кончить в неё, Стеропа отходит к стойлу в дальнем конце конюшни.

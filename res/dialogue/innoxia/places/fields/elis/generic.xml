@@ -717,19 +717,19 @@
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects())
 									 и
 								#ENDIF
-								 [style.italicsDirty(dirty inventory slots)], 
+								 [style.italicsDirty(грязные ячейки инвентаря)], 
 							#ENDIF
 							#IF(!game.isAnalContentEnabled() && !pc.hasVagina())
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0)
 									 и
 								#ENDIF
-								 [style.italicsSex(no vagina)], 
+								 [style.italicsSex(без влагалища)], 
 							#ENDIF
 							#IF(pc.getLegConfiguration()!=LEG_CONFIGURATION_BIPEDAL)
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0 || (!game.isAnalContentEnabled() && !pc.hasVagina()))
 									 и
 								#ENDIF
-								 [style.italicsTfGeneric(a non-bipedal lower body)], 
+								 [style.italicsTfGeneric(небипедальное нижнее тело)], 
 							#ENDIF
 							 [style.italicsBad(Юи здесь не будет)]!
 						#ENDIF

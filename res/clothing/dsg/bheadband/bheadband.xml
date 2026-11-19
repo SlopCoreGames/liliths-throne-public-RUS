@@ -20,7 +20,7 @@
 		<stickers>
 			<category id="Inserts" priority="1">
 				<sticker id="none" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -31,7 +31,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="inserts" priority="2" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[Detailed]]></stickerName>
+					<stickerName><![CDATA[Детально]]></stickerName>
 					<namePrefix priority="1"><![CDATA[детализированный ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>

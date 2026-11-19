@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[saunas]]></name>
-	<tooltipDescription><![CDATA[A couple of saunas are located near to the pool.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the sauna at the gym, 'Pix's Playground']]></virginityLossDescription>
+	<name><![CDATA[сауны]]></name>
+	<tooltipDescription><![CDATA[Несколько саун расположены рядом с бассейном.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в сауне спортзала, «Игровая площадка Пикса»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

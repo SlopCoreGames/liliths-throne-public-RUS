@@ -33,7 +33,7 @@
 	<transformationDescription><![CDATA[
 		Непроизвольно застонав, [npc.name] [npc.verb(feel)] как [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает кожаный чехол.
 		<br/>[npc.She] теперь [npc.has] [style.boldMouse(мышиный пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldMouse([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE mouse#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldMouse(mouse cum)].
+		<br/>[npc.She] [npc.has] [style.boldMouse([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ELSE мышиный#ENDIF яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldMouse(мышиную сперму)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[entrance]]></name>
-	<tooltipDescription><![CDATA[The entrance to 'The Crossed Blades' tavern.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the entrance to 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[вход]]></name>
+	<tooltipDescription><![CDATA[Вход в таверну «Скрещенные клинки».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у входа в таверну «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

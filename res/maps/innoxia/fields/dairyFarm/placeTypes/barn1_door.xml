@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Locked Door]]></name>
-	<tooltipDescription><![CDATA[A sign fixed to the wall above this large, locked door indicates that it leads into the 'Training Barn'.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the training barn at Evelyx's Dairy]]></virginityLossDescription>
+	<name><![CDATA[Запертая дверь]]></name>
+	<tooltipDescription><![CDATA[Табличка, прикрепленная к стене над этой большой запертой дверью, указывает на то, что она ведет в «Тренировочный амбар».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в тренировочном амбаре на молочной ферме Эвеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_YELLOW_LIGHT</colour>

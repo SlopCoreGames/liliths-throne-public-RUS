@@ -57,7 +57,7 @@
 	Immediately follows on from:
 		'Between [npc.her] [npc.legs], ' -->
 	<bodyDescription><![CDATA[
-		[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF ferret-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.
+		[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSEа#ENDIF хорьи-киски, с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.
 	]]></bodyDescription>
 	
 </vagina>

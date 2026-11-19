@@ -11,12 +11,12 @@
 	<names/>
 	<namesPlural/> 
 	<descriptorsMasculine>
-		<descriptor>spider-like</descriptor>
-		<descriptor>chelicerae-equipped</descriptor>
+		<descriptor>паукообразные</descriptor>
+		<descriptor>с хелицерами</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>spider-like</descriptor>
-		<descriptor>chelicerae-equipped</descriptor>
+		<descriptor>паукообразные</descriptor>
+		<descriptor>с хелицерами</descriptor>
 	</descriptorsFeminine>
 	<noseName><![CDATA[нос]]></noseName>
 	<noseNamePlural><![CDATA[носы]]></noseNamePlural>

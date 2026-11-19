@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Entrance]]></name>
-	<tooltipDescription><![CDATA[A large sign is positioned above the entrance to this shopping precinct, informing shoppers that it's called 'Wall's End'.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the entrance to the 'Wall's End' shopping precinct]]></virginityLossDescription>
+	<name><![CDATA[Вход]]></name>
+	<tooltipDescription><![CDATA[Над входом в этот торговый квартал висит огромная вывеска, сообщающая покупателям, что это место называется «Конец Стен».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у входа в торговый квартал «Конец Стен»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

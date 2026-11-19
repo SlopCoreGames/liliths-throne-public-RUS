@@ -49,7 +49,7 @@
 	<iconName>icon</iconName>
 	<backgroundName>raceBackground</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Deadly Spiders</bookName>
+	<bookName>Смертоносные пауки</bookName>
 	<basicDescriptionId>SPIDER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>SPIDER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

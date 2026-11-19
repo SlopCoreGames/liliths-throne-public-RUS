@@ -43,15 +43,15 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's face of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic gryphon-like</descriptor>
-		<descriptor>gryphon-like</descriptor>
-		<descriptor>avian</descriptor>
+		<descriptor>антропоморфный грифоноподобный</descriptor>
+		<descriptor>грифоний</descriptor>
+		<descriptor>птичий</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic gryphon-like</descriptor>
-		<descriptor>gryphon-like</descriptor>
-		<descriptor>avian</descriptor>
+		<descriptor>антропоморфный грифоноподобный</descriptor>
+		<descriptor>грифоний</descriptor>
+		<descriptor>птичий</descriptor>
 	</descriptorsFeminine>
 	
 	

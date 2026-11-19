@@ -35,7 +35,7 @@
 	<areasCummedIn/>
 	<areasCummedOn/>
 	<title><![CDATA[
-		[style.colourFetish(Breasts lover)]
+		[style.colourFetish(Любитель груди)]
 	]]></title>
 	<tooltip><![CDATA[
 		#IF(sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_NIPPLE, PENETRATION_TONGUE).contains(pc))

@@ -47,7 +47,7 @@
 			[#utilText.static.generateSingularDeterminer(flags.getString('potionRaceName'))]
 		#ENDIF
 		 <span style='color:[#flags.getObject('potionSubspecies').getColour(npc).toWebHexString()];'>[#flags.getString('potionRaceName')]</span>
-		 would suit you perfectly!
+		 подошло бы тебе идеально!
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd/>
@@ -58,7 +58,7 @@
 		]]></conditional>
 		<effect><![CDATA[
 			<p style='text-align:center;'>
-				[style.italicsDisabled(Nothing happens, as [npc.namePos] race is unable to be transformed...)]
+				[style.italicsDisabled(Ничего не происходит, так как раса [npc.namePos] не поддается трансформации...)]
 			</p>
 		]]></effect>
 	</potionEffects>

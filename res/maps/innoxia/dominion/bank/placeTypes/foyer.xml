@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[foyer]]></name>
-	<tooltipDescription><![CDATA[The foyer of the Bank of Dominion takes the form of a large room, with polished marble flooring and a high, vaulted ceiling.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the foyer in the Bank of Dominion]]></virginityLossDescription>
+	<name><![CDATA[фойе]]></name>
+	<tooltipDescription><![CDATA[Фойе Банка Dominion представляет собой просторное помещение с полированным мраморным полом и высоким сводчатым потолком.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в фойе Банка Dominion]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

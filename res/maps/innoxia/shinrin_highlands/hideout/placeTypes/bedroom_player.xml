@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[spare bedroom]]></name>
-	<tooltipDescription><![CDATA[A sparsely-furnished bedroom, with only a futon, a chest of drawers, and a low table with accompanying chair.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the spare bedroom in Meraxis's hideout]]></virginityLossDescription>
+	<name><![CDATA[гостевая спальня]]></name>
+	<tooltipDescription><![CDATA[Скудно обставленная спальня, где есть лишь футон, комод и низкий столик с приставленным к нему стулом.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в гостевой спальне в убежище Мераксиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>bedroom</svgName>
 	<colour>BASE_AQUA</colour>

@@ -54,27 +54,27 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tail of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>bear-like</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>short</descriptor>
-		<descriptor>ursine</descriptor>
+		<descriptor>медвежий</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>короткие</descriptor>
+		<descriptor>медвежья</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>bear-like</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>short</descriptor>
-		<descriptor>ursine</descriptor>
+		<descriptor>медвежий</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>короткие</descriptor>
+		<descriptor>медвежья</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tail type above, but these describe the tail's tip: -->
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this tail type.
@@ -85,16 +85,16 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldBear(медвежий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
 [npc.TailCount] короткие медвежьи хвосты прорастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь частично контролируешь их, но [npc.is] всё же можешь вилять ими из стороны в сторону.
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldBear(bear-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldBear(медвежьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<!-- How this tail is described in a character's description page. -->
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] bear tail, which [npc.she] can swish from side to side at will.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] медвежий хвост, которым [npc.she] можешь вилять из стороны в сторону по своему желанию.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] bear tails, which [npc.she] can swish from side to side at will.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] медвежьи хвосты, которыми [npc.she] можешь вилять из стороны в сторону по своему желанию.
 		#ENDIF
 	]]></bodyDescription>
 	

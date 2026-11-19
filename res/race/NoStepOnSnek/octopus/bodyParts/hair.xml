@@ -10,12 +10,12 @@
 	<name><![CDATA[щупальце]]></name>
 	<namePlural pluralByDefault="true"><![CDATA[щупальца]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>squishy</descriptor>
-		<descriptor>floppy</descriptor>
+		<descriptor>мягкие</descriptor>
+		<descriptor>повисшие</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>squishy</descriptor>
-		<descriptor>floppy</descriptor>
+		<descriptor>мягкие</descriptor>
+		<descriptor>повисшие</descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с декоративными щупальцами. К большому разочарованию [npc.her], [npc.she] [npc.does] не обладает над ними существенным контролем.

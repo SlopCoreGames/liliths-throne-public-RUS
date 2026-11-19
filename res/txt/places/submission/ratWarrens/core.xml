@@ -141,7 +141,7 @@
 		</p>
 		<p>
 		
-		[npc2.speech(Axel, huh... You's better not be lyin' ta me,)] — усмехается [npc2.name], после чего делает шаг назад и жестом приглашает тебя войти, [npc2.speech(We's got our eyes on the two o' you, so ya betta watch yerselves in 'ere...)]
+		[npc2.speech(Аксель, хм... Смотри не вздумай мне врать,)] — усмехается [npc2.name], после чего делает шаг назад и жестом приглашает тебя войти, [npc2.speech(Мы за вами приглядываем, так что в этих краях лучше не расслабляться...)]
 		</p><p>
 			Следуя за [npc3.her], [npc3.name] отступает в сторону, давая тебе и [npc.name] беспрепятственно войти в Крысиные Норы...
 		</p>
@@ -152,7 +152,7 @@
 		</p>
 		<p>
 		
-		[npc.speech(Axel, huh... You's better not be lyin' ta me,)] — усмехается [npc.name], после чего делает шаг назад и жестом приглашает тебя войти, [npc.speech(We's got our eyes on you, so ya betta watch yerself in 'ere...)]
+		[npc.speech(Аксель, хм... Смотри не вздумай мне врать,)] — усмехается [npc.name], после чего делает шаг назад и жестом приглашает тебя войти, [npc.speech(Мы за тобой приглядываем, так что в этих краях лучше не расслабляться...)]
 		</p>
 		<p>
 		
@@ -1213,7 +1213,7 @@
 	</p>
 	#IF(game.getDialogueFlags().hasFlag(FLAG_ratWarrensClearedCentre))
 <p>
-Поскольку крысы, охранявшие вход, уже повержены, в этой области сейчас нет ни одного члена банды. Более того, рычаги, управляющие дверью, кажется, сломаны, из-за чего [obj.speech(you)] оказывается в ловушке...			#IF(pc.hasCompanions())
+Поскольку крысы, охранявшие вход, уже повержены, в этой области сейчас нет ни одного члена банды. Более того, рычаги, управляющие дверью, кажется, сломаны, из-за чего [obj.speech(ты)] оказывается в ловушке...			#IF(pc.hasCompanions())
 ты и [npc.name] внутри. Если вы хотите выбраться отсюда, вам двоим придётся зайти ещё глубже в логово банды и бросить вызов Венгару...			#ELSE
 				 внутри. Если хочешь выбраться отсюда, тебе придется зайти поглубже в логово банды и бросить вызов Венгару...
 			#ENDIF
@@ -1797,9 +1797,9 @@
 		<p style='text-align:center;'><i>
 			Аренда дойки с фром 
 			#IF(game.isHourBetween(14, 22))
-				 [style.italicsMinorGood(2 til 10 pee-em)]
+				 [style.italicsMinorGood(с 2 до 10 вечера)]
 			#ELSE
-				 [style.italicsMinorBad(2 til 10 pee-em)]
+				 [style.italicsMinorBad(с 2 до 10 вечера)]
 			#ENDIF
 			<br/>Пять сот флэйм за ебанную сессию.
 			<br/>Без возвратов.
@@ -1867,9 +1867,9 @@
 		<p style='text-align:center;'><i>
 			Аренда дойки с фром 
 			#IF(game.isHourBetween(14, 22))
-				 [style.italicsMinorGood(2 til 10 pee-em)]
+				 [style.italicsMinorGood(с 2 до 10 вечера)]
 			#ELSE
-				 [style.italicsMinorBad(2 til 10 pee-em)]
+				 [style.italicsMinorBad(с 2 до 10 вечера)]
 			#ENDIF
 			<br/>Пять сот флэйм за ебанную сессию.
 			<br/>Без возвратов.
@@ -2051,10 +2051,10 @@
 	</p>
 	<p>
 		Вытягивая шеи, чтобы понять, почему их Хозяин не отвечает на крики, четыре «дойные коровы» начинают понемногу утихать, завидев
-#IF(pc.hasCompanions()) you and [npc.name]#ELSE you#ENDIF standing there instead. They don't completely stop making a noise, however, as the steady pumping of their milking machines is enough to draw a stream of subdued, horny moans out from between their parted lips.
+#IF(pc.hasCompanions()) ты и [npc.name]#ELSE ты#ENDIF стоишь вместо них. Впрочем, они не замолкают окончательно: мерное сопение доильных аппаратов заставляет их то и дело издавать приглушенные, похотливые стоны сквозь приоткрытые губы.
 	</p>
 	<p>
-		Вглядываясь в строй человеческих доярок перед собой, ты замечаешь, что каждый их раздутый, сочащийся молоком сосок зажат в герметичных чашах доильного аппарата, а вибрирующий вакуумный насос так же усердно работает с их дрожащими кисками. И раз здесь некому тебя остановить...#IF(pc.hasCompanions()) you and [npc.name]#ELSE you#ENDIF could quite easily have some fun with one or more of these milkers.
+		Вглядываясь в строй человеческих доярок перед собой, ты замечаешь, что каждый их раздутый, сочащийся молоком сосок зажат в герметичных чашах доильного аппарата, а вибрирующий вакуумный насос так же усердно работает с их дрожащими кисками. И раз здесь некому тебя остановить...#IF(pc.hasCompanions()) ты и [npc.name]#ELSE ты#ENDIF можно вполне весело развлечься с одной или несколькими из этих сисек.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_ratWarrensMilkersFreeAttempt))
 			 Попробовав выпустить их, ты понимаешь, что они вовсе не хотят на свободу, так что твой единственный вариант — просто развернуться и уйти...
 		#ELSE
@@ -2452,9 +2452,9 @@
 			</p>
 			<p>
 				#IF(pc.hasCompanions())
-					Как и следует из её имени, «Тишина» не произносит ни слова, наступая на тебя, оставляя Венгару право насмехаться: [vengar.speechNoEffects(Как только вы двое попробуете её силу на вкус, я, пожалуй, #IF(pc.isAbleToHaveRaceTransformed())'ave ya both turned into slutty rat-girls, an' #ENDIFlet all me gang members use ya as public cock-sleeves! Hah!)]
+					Как и следует из её имени, «Тишина» не произносит ни слова, наступая на тебя, оставляя Венгару право насмехаться: [vengar.speechNoEffects(Как только вы двое попробуете её силу на вкус, я, пожалуй, #IF(pc.isAbleToHaveRaceTransformed())вы обе превратились в шлюхковатых крысодевок, и #ENDIFпусть все мои соратники используют вас как общественные залупники! Ха!)]
 				#ELSE
-					Как и следует из её имени, «Тишина» не произносит ни слова, наступая на тебя, оставляя Венгару право насмехаться: [vengar.speechNoEffects(Как только ты попробуешь её силу на вкус, я, пожалуй, #IF(pc.isAbleToHaveRaceTransformed())'ave ya turned into a slutty rat-girl, an' #ENDIFlet all me gang members use ya as a public cock-sleeve! Hah!)]
+					Как и следует из её имени, «Тишина» не произносит ни слова, наступая на тебя, оставляя Венгару право насмехаться: [vengar.speechNoEffects(Как только ты попробуешь её силу на вкус, я, пожалуй, #IF(pc.isAbleToHaveRaceTransformed())ты превратилась в шлюхковатую крысодевку, и #ENDIFпусть все мои соратники используют тебя как общественную залупницу! Ха!)]
 				#ENDIF
 			</p>
 		#ELSE
@@ -2550,7 +2550,7 @@
 	<htmlContent tag="VENGARS_HALL_CHALLENGE"><![CDATA[
 	#IF(pc.hasCompanions())
 		<p>
-			Желая сразу перейти к делу, ты делаешь шаг вперед и заявляешь Венгару, что ты и [npc.name] пришли, чтобы одолеть его и положить конец его преступной деятельности. Издав издевательский смешок, крысопацан скалится: [vengar.speechNoEffects(Ты тупее, чем кажешься! Тень, Тишина! Втаптывайте этих наглых сук в землю! Как только они слягут, я, пожалуй,] #IF(pc.isAbleToHaveRaceTransformed())'ave 'em turned into slutty rat-girls, an' #ENDIFlet all me gang members use 'em as public cock-sleeves! Hah!)]
+			Желая сразу перейти к делу, ты делаешь шаг вперед и заявляешь Венгару, что ты и [npc.name] пришли, чтобы одолеть его и положить конец его преступной деятельности. Издав издевательский смешок, крысопацан скалится: [vengar.speechNoEffects(Ты тупее, чем кажешься! Тень, Тишина! Втаптывайте этих наглых сук в землю! Как только они слягут, я, пожалуй,] #IF(pc.isAbleToHaveRaceTransformed())они превратились в шлюхковатых крысодевок, и #ENDIFпусть все мои соратники используют их как общественных залупников! Ха!)]
 		</p>
 		<p>
 			Покорно повинуясь приказу вожака, Тень и Тишина вместе делают шаг вперед. Верная своему имени, белошерстная крысиха не проронила ни слова, позволяя своей черноволосой спутнице жестоко усмехнуться: [shadow.speechNoEffects(А это будет весело! Обязательно орите для меня, ладно? Совсем не в кайф, если вы обе свалитесь без единого звука!)]
@@ -2560,7 +2560,7 @@
 		</p>
 	#ELSE
 		<p>
-			Желая сразу перейти к делу, ты делаешь шаг вперед и заявляешь Венгару, что пришли одолеть его и положить конец его преступной деятельности. Издав издевательский смешок, крысопацан скалится: [vengar.speechNoEffects(Ты тупее, чем кажешься! Тень, Тишина! Втаптывайте этого наглого ублюдка в землю! Как только [pc.sheIs] сляжет, я, пожалуй,} #IF(pc.isAbleToHaveRaceTransformed())'ave [pc.her] turned into a slutty rat-girl, an' #ENDIFlet all me gang members use [pc.herHim] as a public cock-sleeve! Hah!)]
+			Желая сразу перейти к делу, ты делаешь шаг вперед и заявляешь Венгару, что пришли одолеть его и положить конец его преступной деятельности. Издав издевательский смешок, крысопацан скалится: [vengar.speechNoEffects(Ты тупее, чем кажешься! Тень, Тишина! Втаптывайте этого наглого ублюдка в землю! Как только [pc.sheIs] сляжет, я, пожалуй,} #IF(pc.isAbleToHaveRaceTransformed())[pc.her] превратилась в шлюхковатую крысодевку, и #ENDIFпусть все мои соратники используют [pc.herHim] как общественную залупницу! Ха!)]
 		</p>
 		<p>
 			Покорно исполняя приказ своего предводителя, Тень и Тишина делают шаг вперед. Верная своему имени, белошерстная крысица не проронила ни слова, позволяя своей черноволосой спутнице жестоко усмехнуться: [shadow.speechNoEffects(Сейчас я оторвусь по полной! Только не вздумай сдохнуть тихо, слышишь? Без криков это совсем не весело!)]
@@ -2597,9 +2597,9 @@
 	<p>
 		Не желая ни преклонять колени перед Венгаром, ни платить требуемые им деньги, ты решаешь просто еще раз сказать ему, чтобы он перестал вымогать дань у предприятий во всем Submission. Когда он понимает, что ты не собираешься выполнять его условия, морда крысопарня искажается в оскале, и он рявкает приказ своим телохранителям:
 		#IF(pc.hasCompanions())
-		 [vengar.speechNoEffects(Тень, тишина! Вломите этим сукам как следует! Как только закончишь с ними, я... #IF(pc.isAbleToHaveRaceTransformed())turn 'em into slutty rat-girls, an' #ENDIFlet all me gang members use 'em as public cock-sleeves! Hah!)]
+		 [vengar.speechNoEffects(Тень, тишина! Вломите этим сукам как следует! Как только закончишь с ними, я... #IF(pc.isAbleToHaveRaceTransformed())превратить их в шлюхковатых крысодевок, и #ENDIFпусть все мои соратники используют их как общественных залупников! Ха!)]
 		#ELSE
-		 [vengar.speechNoEffects(Тень, тишина! Вломи этому [pc.bitch] как следует! Как только закончишь с [pc.herHim], я... #IF(pc.isAbleToHaveRaceTransformed())turn [pc.herHim] into a slutty rat-girl, an' #ENDIFlet all me gang members use [pc.herHim] as public a cock-sleeve! Hah!)]
+		 [vengar.speechNoEffects(Тень, тишина! Вломи этому [pc.bitch] как следует! Как только закончишь с [pc.herHim], я... #IF(pc.isAbleToHaveRaceTransformed())превратить [pc.herHim] в шлюхковатую крысодевку, и #ENDIFпусть все мои соратники используют [pc.herHim] как общественную залупницу! Ха!)]
 		#ENDIF
 	</p>
 	<p>
@@ -2710,9 +2710,9 @@
 	<p>
 		Не желая терпеть столь унизительное обращение, ты встаешь и заявляешь Венгару, что он уже перешел все границы, а затем снова велишь ему прекратить вымогать деньги у лавок по всему Submission. Когда до крысопарня доходит, что ты не собираешься подчиняться, его морда искажается в оскале, и он рявкает приказ своим телохранителям,
 		#IF(pc.hasCompanions())
-		 [vengar.speechNoEffects(Тень, тишина! Вломите этим сукам как следует! Как только закончишь с ними, я... #IF(pc.isAbleToHaveRaceTransformed())turn 'em into slutty rat-girls, an' #ENDIFlet all me gang members use 'em as public cock-sleeves! Hah!)]
+		 [vengar.speechNoEffects(Тень, тишина! Вломите этим сукам как следует! Как только закончишь с ними, я... #IF(pc.isAbleToHaveRaceTransformed())превратить их в шлюхковатых крысодевок, и #ENDIFпусть все мои соратники используют их как общественных залупников! Ха!)]
 		#ELSE
-		 [vengar.speechNoEffects(Тень, тишина! Вломи этому [pc.bitch] как следует! Как только закончишь с [pc.herHim], я... #IF(pc.isAbleToHaveRaceTransformed())turn [pc.herHim] into a slutty rat-girl, an' #ENDIFlet all me gang members use [pc.herHim] as public a cock-sleeve! Hah!)]
+		 [vengar.speechNoEffects(Тень, тишина! Вломи этому [pc.bitch] как следует! Как только закончишь с [pc.herHim], я... #IF(pc.isAbleToHaveRaceTransformed())превратить [pc.herHim] в шлюхковатую крысодевку, и #ENDIFпусть все мои соратники используют [pc.herHim] как общественную залупницу! Ха!)]
 		#ENDIF
 	</p>
 	<p>
@@ -2752,13 +2752,13 @@
 	
 	<htmlContent tag="VENGARS_HALL_SUB_SEX_BOTH"><![CDATA[
 	<p>
-		Спустя какое-то время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того, чтобы разрешить тебе встать, он наклоняется вперед и грубо хватает обе твои и [npc.namePos] задницы каждой рукой. Издав потрясенный вздох, крысопацан разжимает пальцы и проводит большим пальцем по твоей #IF(pc.hasVagina())pussy, pressing down between your [pc.labia+]#ELSEasshole, before pressing down a little#ENDIF and growling, [vengar.speechNoEffects(I's can tell that yer both gettin' real turned on by all this! Present yerselves ta me, an' I'll give yer the fuckin' yer desperate for, right in front o' everyone in this 'ere 'all!)]
+		Спустя какое-то время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того, чтобы разрешить тебе встать, он наклоняется вперед и грубо хватает обе твои и [npc.namePos] задницы каждой рукой. Издав потрясенный вздох, крысопацан разжимает пальцы и проводит большим пальцем по твоей #IF(pc.hasVagina())киска, прижимаясь между твоей [pc.labia+]#ELSEзадницей, прежде чем слегка надавить#ENDIF и рыча, [vengar.speechNoEffects(Я ж вижу, вас обеих уже вовсю штырит от всего этого! Предстаньте передо мной, и я дам вам тот ебаный секс, которого вы так жаждете, прямо на глазах у всех в этом зале!)]
 	</p>
 	<p>
 		#IF(npc.isAttractedTo(vengar))
-Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] появилось похотливое выражение, и она поворачивается назад, чтобы игриво прикусить [npc.her] [npc.lip] у Венгара, пока тот играет с [npc.her] #IF(npc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF. Clearly happy to let the rat-boy fuck [npc.herHim], [npc.she] [npc.moans], [npc.speech(~Mmm!~ Yes, give me your cock!)]
+Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] появилось похотливое выражение, и она поворачивается назад, чтобы игриво прикусить [npc.her] [npc.lip] у Венгара, пока тот играет с [npc.her] #IF(npc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF. Очевидно, она рада позволить крысопарню трахать [npc.herHim], [npc.she] [npc.moans], [npc.speech(~Ммм!~ Да, дай мне свой член!)]
 		#ELSE
-Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] отражается отвращение, и он отворачивается, чтобы сердито взглянуть на Венгара, пока тот возится с [npc.her] #IF(pc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF. Clearly not at all happy with the idea of having the rat-boy fuck [npc.herHim], [npc.she] growls, [npc.speech(Get away from there!)]
+Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] отражается отвращение, и он отворачивается, чтобы сердито взглянуть на Венгара, пока тот возится с [npc.her] #IF(pc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF. Очевидно, она совсем не рада мысли о том, что крысопарень будет трахать [npc.herHim], [npc.she] рычит, [npc.speech(А ну брысь оттуда!)]
 		#ENDIF
 	</p>
 	<p>
@@ -2769,13 +2769,13 @@
 	
 	<htmlContent tag="VENGARS_HALL_SUB_SEX_COMPANION_WATCHING"><![CDATA[
 	<p>
-		Спустя какое-то время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того, чтобы разрешить тебе встать, он наклоняется вперед и грубо хватает твою задницу обеими руками. Пока ты издаешь потрясенный вздох, крысопацан разжимает пальцы и проводит большим пальцем по твоей #IF(pc.hasVagina())pussy, pressing down between your [pc.labia+]#ELSEasshole, before pressing down a little#ENDIF and growling, [vengar.speechNoEffects(I's can tell that yer gettin' real turned on by all this! Present yerself ta me, an' I'll give yer the fuckin' yer desperate for, right in front o' yer friend an' everyone else in this 'ere 'all!)]
+		Спустя какое-то время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того, чтобы разрешить тебе встать, он наклоняется вперед и грубо хватает твою задницу обеими руками. Пока ты издаешь потрясенный вздох, крысопацан разжимает пальцы и проводит большим пальцем по твоей #IF(pc.hasVagina())киска, прижимаясь между твоей [pc.labia+]#ELSEзадницей, прежде чем слегка надавить#ENDIF и рыча, [vengar.speechNoEffects(Я ж вижу, тебя уже вовсю штырит от всего этого! Предстань передо мной, и я дам тебе тот ебаный секс, которого ты так жаждешь, прямо на глазах у твоей подруги и всех остальных в этом зале!)]
 	</p>
 	<p>
 		#IF(game.isVoluntaryNTREnabled())
 			Похоже, [npc.companion] его не особо интересует, и Венгар игнорирует [npc.name], продолжая грубо тискать и лапать твой зад, после чего хватает тебя за бедра и слегка притягивает к себе. Ты уже сделала достаточно, чтобы доказать свою покорность, и думаешь, что вполне можешь отклонить требование Венгара. С другой стороны, если ты действительно захочешь, ты можешь позволить ему трахать тебя на глазах у всех в зале...
 		#ELSE
-			Не имея возможности добраться до [npc.companion]'s #IF(npc.hasVagina())pussy#ELSEasshole#ENDIF, Vengar ignores [npc.name] as he continues to roughly fondle and grope your rear-end, before grabbing your hips and pulling you slightly back towards him. Having already done more than enough to show your submission to him, you think that you could reasonably refuse Vengar's demand. Then again, if you really wanted to, you could allow him to fuck you in front of everyone in the hall...
+			Не имея возможности добраться до [npc.companion]'s #IF(npc.hasVagina())киска#жопка#ENDIF, Венгар игнорирует [npc.name], продолжая грубо ласкать и тискать твою задницу, после чего хватает тебя за бедра и слегка притягивает к себе. Ты уже сделала достаточно, чтобы показать свою покорность, и думаешь, что вполне могла бы отклонить требование Венгара. С другой стороны, если ты действительно захочешь, ты можешь позволить ему трахать тебя на глазах у всех в зале...
 		#ENDIF
 	</p>
 	]]>
@@ -2783,7 +2783,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_SUB_SEX_SOLO"><![CDATA[
 	<p>
-		Спустя какое-то время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того, чтобы разрешить тебе встать, он наклоняется вперед и грубо хватает твою задницу обеими руками. Пока ты издаешь потрясенный вздох, крысопацан разжимает пальцы и проводит большим пальцем по твоей #IF(pc.hasVagina())pussy, pressing down between your [pc.labia+]#ELSEasshole, before pressing down a little#ENDIF and growling, [vengar.speechNoEffects(I's can tell that yer gettin' real turned on by all this! Present yerself ta me, an' I'll give yer the fuckin' yer desperate for, right in front o' everyone else in this 'ere 'all!)]
+		Спустя какое-то время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того, чтобы разрешить тебе встать, он наклоняется вперед и грубо хватает твою задницу обеими руками. Пока ты издаешь потрясенный вздох, крысопацан разжимает пальцы и проводит большим пальцем по твоей #IF(pc.hasVagina())киска, прижимаясь между твоей [pc.labia+]#ELSEзадницей, прежде чем слегка надавить#ENDIF и рыча, [vengar.speechNoEffects(Я ж вижу, тебя уже вовсю штырит от всего этого! Предстань передо мной, и я дам тебе тот ебаный секс, которого ты так жаждешь, прямо на глазах у всех остальных в этом зале!)]
 	</p>
 	<p>
 		Ты уже сделала достаточно, чтобы доказать свою покорность, и думаешь, что вполне можешь отклонить требование Венгара. С другой стороны, если ты действительно захочешь, ты можешь позволить ему трахать тебя на глазах у всех в зале...
@@ -2793,11 +2793,11 @@
 	
 	<htmlContent tag="VENGARS_HALL_SUB_SEX_PLAYER_WATCHING"><![CDATA[
 	<p>
-		Спустя некоторое время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того чтобы разрешить тебе встать, он наклоняется вперед и грубо сжимает твою [npc.companion] обеими руками. Пока [npc.name] издает шокированный вздох, крысопацан разжимает пальцы и проводит большим пальцем по [npc.her] #IF(npc.hasVagina())pussy, pressing down between [npc.her] [npc.labia+]#ELSEasshole, before pressing down a little#ENDIF and growling, [vengar.speechNoEffects(I's can tell that yer gettin' real turned on by all this! Present yerself ta me, an' I'll give yer the fuckin' yer desperate for, right in front o' yer friend an' everyone else in this 'ere 'all!)]
+		Спустя некоторое время унижений ты чувствуешь, как Венгар убирает ноги с твоей спины, но вместо того чтобы разрешить тебе встать, он наклоняется вперед и грубо сжимает твою [npc.companion] обеими руками. Пока [npc.name] издает шокированный вздох, крысопацан разжимает пальцы и проводит большим пальцем по [npc.her] #IF(npc.hasVagina())киска, прижимаясь между [npc.her] [npc.labia+]#ELSEанус, прежде чем слегка надавить#ENDIF и рыча, [vengar.speechNoEffects(Я ж вижу, тебя уже вовсю штырит от всего этого! Предстань передо мной, и я дам тебе тот ебаный секс, которого ты так жаждешь, прямо на глазах у твоей подруги и всех остальных в этом зале!)]
 	</p>
 	<p>
 		#IF(npc.isAttractedTo(vengar))
-Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] появилось похотливое выражение, и она поворачивается назад, чтобы игриво прикусить [npc.her] [npc.lip] у Венгара, пока тот играет с [npc.her] #IF(npc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF. Clearly happy to let the rat-boy fuck [npc.herHim], [npc.she] turns to you and [npc.moans], [npc.speech(~Mmm!~ Come on, [pc.name], you can watch as he gives me a good, hard fuck!)]
+Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] появилось похотливое выражение, и она поворачивается назад, чтобы игриво прикусить [npc.her] [npc.lip] у Венгара, пока тот играет с [npc.her] #IF(npc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF. Очевидно, она рада позволить крысопарню трахать [npc.herHim], [npc.she] поворачивается к тебе и [npc.moans], [npc.speech(~Ммм!~ Давай же, [pc.name], можешь смотреть, как он хорошенько и жестко меня оттрахивает!)]
 		#ELSE
 Глядя на [npc.name], ты замечаешь, что на [npc.her] лице [npc.sheHas] отражается отвращение, и он отворачивается, чтобы сердито взглянуть на Венгара, пока тот возится с [npc.her] #IF(pc.hasVagina())[npc.pussy+]#ELSE[npc.asshole+]#ENDIF.
 			#IF(!npc.isSlave() && !npc.isElemental())
@@ -3315,7 +3315,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Видя, что развлечение подошло к концу, крысы в зале возвращаются к своим делам: еде, выпивке и болтовне друг с другом. Когда внимание крыс переключается, Венгар смотрит на тебя сверху вниз.#IF(pc.hasCompanions()) and [npc.name]#ENDIF, and with a big grin on his face, he says, [vengar.speechNoEffects(That were a real good fuck! Now get up an' follow me if yer still wantin' ta discuss that business concernin' Axel.)]
+		Видя, что развлечение подошло к концу, крысы в зале возвращаются к своим делам: еде, выпивке и болтовне друг с другом. Когда внимание крыс переключается, Венгар смотрит на тебя сверху вниз.#IF(pc.hasCompanions()) и [npc.name]#ENDIF, и с широкой ухмылкой на лице он говорит: [vengar.speechNoEffects(Это был чертовски хороший трах! А теперь поднимайтесь и идите за мной, если всё еще хотите обсудить то дело касательно Акселя.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -3352,7 +3352,7 @@
 		#ENDIF
 	#ENDIF
 	<p>
-		Совершенно ожидаемо для простых смертных, внезапно осознавших твое безграничное могущество, крысы в зале начинают нервно перешептываться, услышав твой вызов Венгару. С болезненным выражением лица — которое, как ты полагаешь, вызвано лишь страхом перед тобой — крысопацан кричит своим подчиненным: [vengar.speechNoEffects(Заткнитесь, гребаные идиоты! Да он всё это дерьмо просто выдумывает! Он и близко не настолько силен, чтобы бросить мне вызов! Стоит мне дать [pc.herHim] попробовать моей силы на вкус, как я...)] #IF(pc.isAbleToHaveRaceTransformed())'ave [pc.herHim] turned into a slutty rat-girl, an' #ENDIFlet all o' yous use [pc.herHim] as a public cock-sleeve!)]
+		Совершенно ожидаемо для простых смертных, внезапно осознавших твое безграничное могущество, крысы в зале начинают нервно перешептываться, услышав твой вызов Венгару. С болезненным выражением лица — которое, как ты полагаешь, вызвано лишь страхом перед тобой — крысопацан кричит своим подчиненным: [vengar.speechNoEffects(Заткнитесь, гребаные идиоты! Да он всё это дерьмо просто выдумывает! Он и близко не настолько силен, чтобы бросить мне вызов! Стоит мне дать [pc.herHim] попробовать моей силы на вкус, как я...)] #IF(pc.isAbleToHaveRaceTransformed())превратила [pc.herHim] в шлюшливую крысодевочку, и #ENDIF позволила всем вам использовать [pc.herHim] как общественную залупу!)]
 	</p>
 	<p>
 		Уверенно спускаясь по ступеням помоста, Венгар сжимает кулаки с кастетами, после чего вскидывает их, принимая боевую стойку. Крысопацан бросается вперед, давая тебе лишь мгновение на реакцию!
@@ -3477,7 +3477,7 @@
 	
 	<htmlContent tag="VENGARS_HALL_APPROACH_THREATEN_KNOCK_OUT_SWORD_RAID"><![CDATA[
 	<p>
-		Не зная, чего ожидать, ты решаешь поступить как сказала Тень, и остаешься пригнувшись за троном вместе с#IF(pc.hasCompanions()) [npc.name] and#ENDIF the two rat-girls. Just a moment after you've taken up this position, a series of deafening bangs and blinding flashes ring out throughout the hall, which cause the tone of the still-fighting gang member's shouts to change from anger to surprise.
+		Не зная, чего ожидать, ты решаешь поступить как сказала Тень, и остаешься пригнувшись за троном вместе с#IF(pc.hasCompanions()) [npc.name] и#ENDIF две крысодевочки. Спустя мгновение после того, как ты занял эту позицию, по всему залу раздаются оглушительные хлопки и ослепительные вспышки, от которых крики всё еще сражающихся членов банды сменяются с гнева на удивление.
 	</p>
 	<p>
 		Сразу после этого с другого конца зала доносятся несколько глубоких выкриков: [style.speechMasculineStrong(Всем лечь на пол! Это отряд МЕЧА; не сопротивляться! Живо на гребаный пол!)]
@@ -3911,7 +3911,7 @@
 		Все еще совершенно измотанная после боя, ты почти не можешь сопротивляться, пока Мёрк принимается срывать с тебя всю одежду и вещи. С огромным энтузиазмом взявшись за дело, похотливый крысопацан вовсю пользуется ситуацией, чтобы ощупывать и сжимать каждый сантиметр твоего обнаженного тела. Пошлые комментарии и голодное рычание Мёрка прерываются лишь редкими напоминаниями Венгара о том, что все твои пожитки теперь принадлежат ему, и их нужно сложить в ближайший ящик, чтобы он разобрал их позже.
 	</p>
 	<p>
-		Once you've been completely stripped of all of your flames, clothing, and other belongings, Murk securely locks the crate into which they were placed, before turning to Vengar and saying, [murk.speechNoEffects(Watch over [pc.herHim] fer a second while I get [pc.her] new 'outfit'. Heh-heh-heh...)]
+Когда с тебя окончательно срывают все огни, одежду и прочие пожитки, Мёрк надёжно запирает ящик, в который их сложили, после чего поворачивается к Венгару и говорит: [murk.speechNoEffects(Присмотри за [pc.herHim] секунду, пока я достану [pc.her] новый «наряд». Хе-хе-хе...)]
 	</p>
 	<p>
 		Похрюкивая от смеха, Мёрк ковыляет к груде ящиков в дальнем углу пещеры, открывает ближайший и начинает там рыться. После недолгого ожидания на коленях рядом с Венгаром, ты видишь, как Мёрк наконец находит то, что искал; с грохотом захлопнув крышку ящика, он направляется обратно к тебе. Вглядевшись в его руки, ты замечаешь, что он держит тяжелый металлический ошейник нежно-розового, весьма женственного цвета.

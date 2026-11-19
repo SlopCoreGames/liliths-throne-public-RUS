@@ -512,19 +512,19 @@
 					#ELSE
 						<i>Мерасис нужно, чтобы она привыкла к
 						#IF(flags.hasFlag(FLAG_innoxia_meraxis_oral_unlocked))
-							 [style.colourGood(oral)],
+							 [style.colourGood(оральный)],
 						#ELSE
-							 [style.colourBad(oral)],
+							 [style.colourBad(оральный)],
 						#ENDIF
 						#IF(flags.hasFlag(FLAG_innoxia_meraxis_vaginal_unlocked))
 							#IF(game.isAnalContentEnabled())
-								 [style.colourGood(vaginal)],
+								 [style.colourGood(вагинальный)],
 							#ELSE
 								 и [style.colourGood(vaginal)]
 							#ENDIF
 						#ELSE
 							#IF(game.isAnalContentEnabled())
-								 [style.colourBad(vaginal)],
+								 [style.colourBad(вагинальный)],
 							#ELSE
 								 и [style.colourBad(vaginal)]
 							#ENDIF

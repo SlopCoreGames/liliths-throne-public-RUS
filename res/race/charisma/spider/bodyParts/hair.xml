@@ -10,16 +10,16 @@
 	<name><![CDATA[волосы]]></name>
 	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	<descriptorsMasculine>
-		<descriptor>damp</descriptor>
-		<descriptor>human</descriptor>
+		<descriptor>влажными</descriptor>
+		<descriptor>человеческими</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>damp</descriptor>
-		<descriptor>human</descriptor>
+		<descriptor>влажными</descriptor>
+		<descriptor>человеческими</descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Трансформация длится лишь мгновение, оставляя [npc.herHim] с шелковистыми, похожими на человеческие волосами.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSpider(spider-morph hair)].
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSpider(паучьи волосы)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], шелковистые человеческие волосы

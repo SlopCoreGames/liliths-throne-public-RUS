@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[conservatory]]></name>
-	<tooltipDescription><![CDATA[A conservatory connected to the back of 'The Red Dragon' provides access to the beer garden.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the conservatory at 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[оранжерея]]></name>
+	<tooltipDescription><![CDATA[Оранжерея, примыкающая к задней части таверны «Красный дракон», ведет к пивному саду.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в оранжерее таверны «Красный дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREEN</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

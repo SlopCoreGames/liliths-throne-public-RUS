@@ -24,9 +24,9 @@
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они превращаются в глаза, подобные пантеровому взору, с огромными радужками и круглыми зрачками.
+		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они превращаются в глаза, подобные взору пантеры, с огромными радужками и круглыми зрачками.
 		<br/>
-		[npc.Name] теперь [npc.has] [style.boldBadger(badger-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		[npc.Name] теперь [npc.has] [style.boldBadger(глаза, подобные барсучьим)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

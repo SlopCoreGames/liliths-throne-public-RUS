@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[This corridor in the rear of the building links the elevator to the staff room.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the back of Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Этот коридор в задней части здания соединяет лифт со служебным помещением.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в задней части «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

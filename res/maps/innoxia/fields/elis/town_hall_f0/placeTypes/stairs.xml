@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[staircase]]></name>
-	<tooltipDescription><![CDATA[This staircase is guarded by a demonic enforcer; a clear sign that there's something of great importance up there.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the staircase in Elis's town hall]]></virginityLossDescription>
+	<name><![CDATA[лестница]]></name>
+	<tooltipDescription><![CDATA[Эту лестницу охраняет демон-каратель; явный признак того, что наверху происходит что-то очень важное.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на лестнице в ратуше Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREEN_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

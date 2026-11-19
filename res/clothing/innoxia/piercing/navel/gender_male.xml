@@ -21,7 +21,7 @@
 			<category id="glyph_shape" priority="1">
 				<categoryName><![CDATA[Форма глифа]]></categoryName>
 				<sticker id="circle" priority="1" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Circle]]></stickerName>
+					<stickerName><![CDATA[Круг]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -32,7 +32,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="heart" priority="2" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Heart]]></stickerName>
+					<stickerName><![CDATA[Сердце]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>

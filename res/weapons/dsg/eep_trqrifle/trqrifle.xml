@@ -20,7 +20,7 @@
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your tranquiliser rifle.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc2.name] из своего транквилизатора.</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		

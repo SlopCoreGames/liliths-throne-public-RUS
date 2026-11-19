@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[hideout]]></name>
-	<tooltipDescription><![CDATA[Taking the form of a single-story, Japanese-style building, Meraxis's hideout stands in this location.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in front of Meraxis's hideout within Shiranui's trap]]></virginityLossDescription>
+	<name><![CDATA[убежище]]></name>
+	<tooltipDescription><![CDATA[В этом месте расположено убежище Мераксиса, представляющее собой одноэтажное здание в японском стиле.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[перед убежищем Мераксиса в ловушке Ширануи]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

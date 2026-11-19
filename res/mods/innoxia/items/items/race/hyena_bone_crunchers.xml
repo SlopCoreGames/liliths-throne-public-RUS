@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a bag of]]></determiner>
-		<name><![CDATA[Bone Crunchers]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Bone Crunchers]]></namePlural>
-		<description><![CDATA[A brown paper bag, containing half a dozen pieces of roasted bone. Although the juicy marrow is all that most normal people would eat, an image on the back of the bag shows a buff hyena-girl using her strong jaws to crunch and swallow every last piece of them.]]></description> 
+		<name><![CDATA[Костоломки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Костоломки]]></namePlural>
+		<description><![CDATA[Коричневый бумажный пакет, в котором лежит полдюжины кусочков жареной кости. Хотя сочный костный мозг — это всё, что ели бы обычные люди, на обратной стороне пакета красуется изображение мускулистой гиены-девушки, которая своими мощными челюстями хрустит и заглатывает каждую последнюю косточку.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -47,15 +47,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger...
+				[npc.Name] [npc.verb(start)], чтобы почувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -69,19 +69,19 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(open)] the top of the brown paper bag and [npc.verb(breathe)] in the rich, meaty smell of its contents. Unable to resist the delicious-looking pieces of roasted bone found inside, [npc.she]
+		[npc.Name] [npc.verb(open)] край коричневого бумажного пакета и [npc.verb(breathe)] насыщенный мясной аромат содержимого. Не в силах устоять перед аппетитно выглядящими кусочками жареной кости, [npc.she]
 		#IF(npc.getFaceType()==FACE_TYPE_innoxia_hyena_face)
-			 [npc.verb(start)] using [npc.her] powerful hyena jaws to crunch each of them into pieces, and in a matter of moments [npc.has] completely devoured the entire bag.
+			 [npc.verb(start)], используя [npc.her] мощные челюсти гиены, чтобы разгрызть каждую из них в щепки, и в считанные мгновения [npc.has] полностью опустошает весь пакет.
 		#ELSE
-			 [npc.verb(start)] eagerly sucking the delicious marrow out of each of them, and in a matter of moments [npc.has] completely devoured the entire bag.
+			 [npc.verb(start)], жадно высасывая из каждой косточки вкуснейший мозг, и в считанные мгновения [npc.has] полностью опустошает весь пакет.
 		#ENDIF
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(open)] the top of the brown paper bag and [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to breathe in the rich, meaty smell of its contents. Unable to resist the delicious-looking pieces of roasted bone found inside, [npc2.she]
+		[npc.Name] [npc.verb(open)] край коричневого бумажного пакета и [npc.verb(hold)] его, чтобы [npc2.name], позволяя [npc2.herHim] вдыхать насыщенный мясной аромат содержимого. Не в силах устоять перед аппетитно выглядящими кусочками жареной кости, [npc2.she]
 		#IF(npc.getFaceType()==FACE_TYPE_innoxia_hyena_face)
-			 [npc2.verb(start)] using [npc2.her] powerful hyena jaws to crunch each of them into pieces, and in a matter of moments [npc2.has] completely devoured the entire bag.
+			 [npc2.verb(start)] использует [npc2.her] мощные гиены челюсти, чтобы разгрызть каждую из них в щепки, и в считанные мгновения [npc2.has] полностью пожирает весь мешочек.
 		#ELSE
-			 [npc2.verb(start)] eagerly sucking the delicious marrow out of each of them, and in a matter of moments [npc2.has] completely devoured the entire bag.
+			 [npc2.verb(start)], с жадностью высасывая из каждой вкусный костный мозг, и в считанные мгновения [npc2.has] полностью опустошает весь мешок.
 		#ENDIF
 		]]></otherUse>
 	</useDescriptions>

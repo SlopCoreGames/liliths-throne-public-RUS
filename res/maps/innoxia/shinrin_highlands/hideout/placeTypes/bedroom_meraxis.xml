@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[Meraxis's bedroom]]></name>
-	<tooltipDescription><![CDATA[Posters of demons striking heroic poses cover the walls of Meraxis's bedroom, while weapons, clothing, and miscellaneous objects of all kinds are strewn about over the place.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Meraxis's bedroom]]></virginityLossDescription>
+	<name><![CDATA[Спальня Мераксиса]]></name>
+	<tooltipDescription><![CDATA[Стены спальни Мераксиса увешаны плакатами с демонами, принимающими героические позы, а повсюду разбросано оружие, одежда и всякая всячина.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спальне Мераксиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>bedroom</svgName>
 	<colour>BASE_PURPLE</colour>

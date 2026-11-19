@@ -16,11 +16,11 @@
 		
 		<namePlural pluralByDefault="false"><![CDATA[криопризмы]]></namePlural> 
 		
-		<description><![CDATA[Обладая самой большой дальностью стрельбы в арсенале Enforcer, криопризма использует [style.colourIce(freezing)] [style.colourLegendary(clear demonstone)] в качестве активной среды для обычного четырехканального твердотельного лазера. В результате слегка раздражающий лазерный луч превращается в мощный замораживающий луч с идеально прямой траекторией.]]></description> 
+		<description><![CDATA[Обладая самой большой дальностью стрельбы в арсенале Enforcer, криопризма использует [style.colourIce(ледяной)] [style.colourLegendary(чистый демонический камень)] в качестве активной среды для обычного четырехканального твердотельного лазера. В результате слегка раздражающий лазерный луч превращается в мощный замораживающий луч с идеально прямой траекторией.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your cryoprism gun.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели из своей криопризмы по [npc2.name].</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		

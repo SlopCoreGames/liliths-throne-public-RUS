@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[gym floor]]></name>
-	<tooltipDescription><![CDATA[The main floor of the gym connects the weights area, running machines, yoga studio, showers, and boxing ring.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the gym, 'Pix's Playground']]></virginityLossDescription>
+	<name><![CDATA[зал спортзала]]></name>
+	<tooltipDescription><![CDATA[Основной зал спортзала объединяет зону свободных весов, беговые дорожки, студию йоги, душевые и боксерский ринг.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спортзале «Игровая площадка Пикса»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

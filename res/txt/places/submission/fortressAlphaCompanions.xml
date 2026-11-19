@@ -158,7 +158,7 @@
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX"><![CDATA[
 	<p>
-		Послушно выполняя приказ, ты спешишь туда, где сидит [npc2.name], и опускаешься на колени перед [npc2.herHim]. Усмехаясь, [npc2.race] возвышает [npc2.her] голос, чтобы [npc2.she] было слышно сквозь хохот бесов-стражников из числа [npc2.her], и командует: [npc2.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, beg.)]
+		Послушно выполняя приказ, ты спешишь туда, где сидит [npc2.name], и опускаешься на колени перед [npc2.herHim]. Усмехаясь, [npc2.race] возвышает [npc2.her] голос, чтобы [npc2.she] было слышно сквозь хохот бесов-стражников из числа [npc2.her], и командует: [npc2.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF ты есть. Интересно, ты и другие трюки умеешь по команде? Давай, шлюха, умоляй.)]
 	</p>
 	<p>
 		Желая угодить [npc2.name], ты снова подчиняешься приказу и, заискивающе приподнимая [pc.hands], смотришь на [npc2.herHim] и скулишь: [pc.speech(Пожалуйста, дай мне пососать твой член!)]
@@ -174,7 +174,7 @@
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX_IMPS"><![CDATA[
 	<p>
-		Послушно выполняя приказ, ты спешишь туда, где сидят бесы [npc2.name] и [npc2.her], и встаешь перед ними на четвереньки. Ухмыляясь, [npc2.race] возвышает свой [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь хор насмешливого смеха бесовских стражников [npc2.her], и командует: [npc2.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, present yourself for my girls.)]
+		Послушно выполняя приказ, ты спешишь туда, где сидят бесы [npc2.name] и [npc2.her], и встаешь перед ними на четвереньки. Ухмыляясь, [npc2.race] возвышает свой [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь хор насмешливого смеха бесовских стражников [npc2.her], и командует: [npc2.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF ты есть. Интересно, ты и другие трюки умеешь по команде? Давай, шлюха, представь себя моим девчонкам.)]
 	</p>
 	<p>
 		Желая угодить [npc2.name], ты снова подчиняешься приказу и, переставляя ноги, чтобы подставить свою [pc.ass+] бесам, опускаешь плечи и задираешь [pc.hips+], жалобно скуля: [pc.speech(Пожалуйста, трахни меня!)]
@@ -197,7 +197,7 @@
 			Послушно выполняя приказ, ты спешишь к [npc2.name], и встаешь на колени перед [npc2.herHim]. [npc.Name] тащит [npc.her] за ноги, пока [npc.she] неохотно следует за тобой, и с разочарованным вздохом [npc.she] опускается на колени рядом с тобой, отводя [npc.her] взгляд от бугра в джинсах [npc2.namePos].
 		#ENDIF
 	</p><p>
-Ухмыляясь вам обоим, [npc2.race] возвышает [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь хор издевательского смеха, доносящегося от [npc2.her] бесов-стражников, и командует, [npc2.speech(Какие верные...)] #IFpc.isFeminine()#THENbitches#ELSEdogs#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, sluts, beg.)]
+Ухмыляясь вам обоим, [npc2.race] возвышает [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь хор издевательского смеха, доносящегося от [npc2.her] бесов-стражников, и командует, [npc2.speech(Какие верные...)] #IFpc.isFeminine()#THENbitches#ELSEdogs#ENDIF так и есть. Интересно, ты и другие трюки умеешь по команде? А ну, шлюхи, просите!)]
 	</p>
 	<p>
 		Желая угодить [npc2.name], ты снова подчиняешься приказу и, заискивающе приподнимая [pc.hands], смотришь на [npc2.herHim] и скулишь: [pc.speech(Пожалуйста, дай мне пососать твой член!)]
@@ -221,13 +221,13 @@
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX_ORAL_COMPANION_IMPS"><![CDATA[
 	<p>
-		Послушно выполняя приказ, ты спешишь туда, где сидит [npc2.name], и опускаешься на колени перед [npc2.herHim]. Усмехаясь, [npc2.race] возвышает [npc2.her] голос, чтобы [npc2.she] было слышно сквозь хохот бесов-стражников из числа [npc2.her], и командует: [npc2.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, beg.)]
+		Послушно выполняя приказ, ты спешишь туда, где сидит [npc2.name], и опускаешься на колени перед [npc2.herHim]. Усмехаясь, [npc2.race] возвышает [npc2.her] голос, чтобы [npc2.she] было слышно сквозь хохот бесов-стражников из числа [npc2.her], и командует: [npc2.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF ты есть. Интересно, ты и другие трюки умеешь по команде? Давай, шлюха, умоляй.)]
 	</p>
 	<p>
 		Желая угодить [npc2.name], ты снова подчиняешься приказу и, заискивающе приподнимая [pc.hands], смотришь на [npc2.herHim] и скулишь: [pc.speech(Пожалуйста, дай мне пососать твой член!)]
 	</p>
 	<p>
-		Опустившись на [npc.her] колени, садистка [npc2.race] выпячивает [npc.her] [npc.hips] вперед, крепко прижимая быстро твердеющий бугор в [npc2.her] джинсах к твоим [pc.face], пока [npc2.she] скалится: [npc2.speech(Хочу, чтобы ты подавилась им, шлюшка. А ты, [npc.race], вставай рядом с моей #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF so my imps can fuck you!)]
+		Опустившись на [npc.her] колени, садистка [npc2.race] выпячивает [npc.her] [npc.hips] вперед, крепко прижимая быстро твердеющий бугор в [npc2.her] джинсах к твоим [pc.face], пока [npc2.she] скалится: [npc2.speech(Хочу, чтобы ты подавилась им, шлюшка. А ты, [npc.race], вставай рядом с моей #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF чтобы мои бесы могли трахать вас!)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc3) || !game.isNonConEnabled()
@@ -252,7 +252,7 @@
 	</htmlContent>
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX_IMPS_COMPANION_ORAL"><![CDATA[<p>
-		Послушно выполняя наставления [npc.sheIs], [npc.name] спешит к [npc2.name] и падает на [npc.her] колени перед [npc2.herHim]. Усмехаясь, [npc2.race] возвышается над твоей спутницей и повышает [npc2.her] голос, чтобы [npc2.she] можно было расслышать сквозь хор насмешливого смеха, доносящегося от [npc2.her] бесов-стражников, и командует: [npc2.speech(Какая верная... #IFnpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, beg.)]
+		Послушно выполняя наставления [npc.sheIs], [npc.name] спешит к [npc2.name] и падает на [npc.her] колени перед [npc2.herHim]. Усмехаясь, [npc2.race] возвышается над твоей спутницей и повышает [npc2.her] голос, чтобы [npc2.she] можно было расслышать сквозь хор насмешливого смеха, доносящегося от [npc2.her] бесов-стражников, и командует: [npc2.speech(Какая верная... #IFnpc.isFeminine()#THENbitch#ELSEdog#ENDIF ты есть. Интересно, ты и другие трюки умеешь по команде? Давай, шлюха, умоляй.)]
 	</p>
 	<p>
 		#IFnpc.isAttractedTo(npc2) || !game.isNonConEnabled()
@@ -263,7 +263,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Падая на колени перед [npc.her], садист [npc2.race] мощно толкает [npc.her] [npc.hips] вперед, плотно прижимая быстро твердеющий бугор в [npc2.her] джинсах к [npc.namePos] [npc.face], пока [npc2.she] скалится: [npc2.speech(Хочу, чтобы ты подавилась им, шлюха. А ты, [pc.race], вставай рядом с моей #IFnpc.isFeminine()#THENbitch#ELSEdog#ENDIF so my imps can fuck you!)]
+		Падая на колени перед [npc.her], садист [npc2.race] мощно толкает [npc.her] [npc.hips] вперед, плотно прижимая быстро твердеющий бугор в [npc2.her] джинсах к [npc.namePos] [npc.face], пока [npc2.she] скалится: [npc2.speech(Хочу, чтобы ты подавилась им, шлюха. А ты, [pc.race], вставай рядом с моей #IFnpc.isFeminine()#THENbitch#ELSEdog#ENDIF чтобы мои бесы могли трахать вас!)]
 	</p>
 	<p>
 		[pc.speech(Да! Пожалуйста, используй меня!)] — радостно выкрикиваешь ты, прежде чем опуститься на четвереньки рядом со своим спутником.
@@ -286,7 +286,7 @@
 			Послушно выполняя приказ, ты спешишь туда, где сидит [npc2.name], и опускаешься на четвереньки перед [npc2.herHim]. [npc.Name] волочит [npc.her] ноги, пока [npc.she] неохотно следует за тобой, и с разочарованным вздохом [npc.she] опускается рядом, уставившись [npc.her] взглядом в пол.
 		#ENDIF
 	</p><p>
-Ухмыляясь вам обоим, [npc2.race] возвышает [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь хор издевательского смеха, доносящегося от [npc2.her] бесов-стражников, и командует, [npc2.speech(Какие верные...)] #IFpc.isFeminine()#THENbitches#ELSEdogs#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, sluts, present yourselves for my girls.)]
+Ухмыляясь вам обоим, [npc2.race] возвышает [npc2.her] голос так, чтобы [npc2.she] было слышно сквозь хор издевательского смеха, доносящегося от [npc2.her] бесов-стражников, и командует, [npc2.speech(Какие верные...)] #IFpc.isFeminine()#THENbitches#ELSEdogs#ENDIF так и есть. Интересно, ты и другие трюки умеешь по команде? А ну, шлюхи, представьтесь моим девчонкам.)]
 	</p>
 	<p>
 		Желая угодить [npc2.name], ты снова подчиняешься приказу и, переставляя ноги, чтобы подставить свою [pc.ass+] бесам, опускаешь плечи и задираешь [pc.hips+], жалобно скуля: [pc.speech(Пожалуйста, трахни меня!)]
@@ -413,7 +413,7 @@
 		[npc2.speech(Вот это по-нашему!)] [npc2.Name] рявкает, грубо толкая вас обоих на четвереньки перед [npc2.herHim], после чего опускается на [npc2.her] колени и вжимает [npc2.her] пах в лицо [npc.namePos]. [npc2.speech(Давай, высасывай всё до капли, шлюха! А ты, [pc.race], раз уж у тебя рот забит, будешь спермоприемником для моих девок!)]
 	</p>
 	<p>
-		Doing as [npc.sheIs] told, your companion reaches up and unbuttons [npc2.her] jeans, before tugging them down to reveal a black thong barely managing to contain the massive bulge of [npc2.her] erection. [npc.NamePos] eyes open wide as [npc.she] sees that just above [npc2.namePos] groin, [npc2.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Continuing with [npc.her] task, [npc.name] pulls down the [npc2.race]'s thong, allowing [npc2.her] [npc2.penisGirth], [npc2.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before [npc.herHim].
+		Повинуясь приказу [npc.sheIs], твой спутник тянется вверх и расстегивает джинсы [npc2.her], а затем стягивает их вниз, обнажая черные стринги, которые едва сдерживают массивный бугор [npc2.her] эрекции. Глаза [npc.NamePos] широко распахиваются, когда [npc.she] замечает, что прямо над пахом [npc2.namePos] у [npc2.sheHas] красуется черная татуировка в стиле трайбл, дополненная надписью «Подавись, сучка!», выведенной изящным курсивом. Продолжая [npc.her] задачу, [npc.name] стягивает стринги [npc2.race], позволяя [npc2.her] [npc2.penisGirth], проколотому и украшенному серебряным кольцом члену [npc2.penisValue], вырваться на свободу перед [npc.herHim].
 	</p>
 	<p>
 		[npc2.speech(Это не просто для красоты, сучка,)] — рычит [npc2.name], указывая на [npc2.her] татуировку. [npc2.speech(Я хочу, чтобы ты <i>давилась им</i>!)]
@@ -494,7 +494,7 @@
 		Вскоре [npc2.name] уже тяжело дышит и обливается потом от напряжения, а уклоняться от каждого из [npc2.her] ударов становится всё проще и проще. Понимая, что пора заканчивать, ты стремительно бросаешься вперед,
 		#IF npc2.isVisiblyPregnant()
 		#THEN и, осознавая, что [npc2.sheIs] беременна, ты выворачиваешь [npc2.her] [npc2.arm] за [npc2.her] спину, после чего осторожно, но решительно прижимая [npc2.herHim] к земле.
-		#ELSE landing a solid punch to [npc2.her] stomach, before tripping [npc2.herHim] and hurling [npc2.herHim] to the ground.
+		#ELSE нанося мощный удар в живот [npc2.her], после чего подсекая [npc2.herHim] и швыряя [npc2.herHim] на землю.
 		#ENDIF
 	</p>
 	<p>
@@ -638,7 +638,7 @@
 		[npc2.Name] обессиленно валится на пол. Встав рядом с [npc2.herHim], ты с ухмылкой смотришь на изрядно потрёпанную [npc2.race]. [pc.speech(Может, теперь ты дважды подумаешь, прежде чем приказывать своим бандам нападать на людей!)]
 	</p>
 	<p>
-		With a pathetic groan, [npc2.name] pushes [npc2.herself] up onto to [npc2.her] knees. As you get your things in order, [npc2.she] catches [npc2.her] breath, before standing up and staggering towards the door.
+		С жалким стоном [npc2.name] заставляет [npc2.herself] подняться на [npc2.her] колени. Пока ты приводишь свои дела в порядок, [npc2.she] пытается перевести [npc2.her] дух, после чего встаёт и, пошатываясь, направляется к двери.
 	</p>
 	]]>
 	</htmlContent>
@@ -680,7 +680,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_DOUBLE_ORAL"><![CDATA[
 	<p>
-		A wicked grin crosses [npc2.namePos] face as [npc2.she] hears what it is you're after. With a playful tone in [npc2.her] voice, [npc2.she] offers [npc2.her] terms, [npc2.speech(Well, my cock hasn't been sucked in a good long while, so if the two of you get down and show your submission by fixing that, then I'll give you my help in getting to meet with our boss.)]
+		Злобная ухмылка расплывается по лицу [npc2.namePos], когда [npc2.she] слышит, чего именно ты хочешь. Игривым тоном в голосе [npc2.her], [npc2.she] предлагает [npc2.her] условия: [npc2.speech(Ну, мой член уже целую вечность никто не сосал, так что если вы двое опуститесь на колени и продемонстрируете свою покорность, исправив это, то я помогу вам встретиться с нашим боссом.)]
 	</p>
 	<p>
 		Потирая бугорок в [npc2.her] джинсах, [npc2.she] продолжает: [npc2.speech(Конечно, вы можете сказать «нет», но тогда нам просто придётся отлупить вас за то, что вломились сюда без приглашения. Так что в любом случае скоро я буду трахать ваши рожи, так что с таким же успехом вы можете извлечь из этого хоть какую-то выгоду, верно?)]
@@ -693,7 +693,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_ORAL_COMPANION_IMPS"><![CDATA[
 	<p>
-		A wicked grin crosses [npc2.namePos] face as [npc2.she] hears what it is you're after. With a playful tone in [npc2.her] voice, [npc2.she] offers [npc2.her] terms, [npc2.speech(Well, my cock hasn't been sucked in a good long while, so if you get down and show your submission by fixing that, then I'll give you my help in getting to meet with our boss. Oh, and as your little friend here's got [npc.her] mouth blocked, [npc.she] can make [npc.herself] useful as a cum-dump for my girls.)]
+		Злобная ухмылка расплывается по лицу [npc2.namePos], когда [npc2.she] слышит, чего именно ты хочешь. Игривым тоном в голосе [npc2.her], [npc2.she] предлагает [npc2.her] условия: [npc2.speech(Ну, мой член уже целую вечность никто не сосал, так что если ты опустишься на колени и продемонстрируешь свою покорность, исправив это, то я помогу тебе встретиться с нашим боссом. О, и раз уж твоей подружке здесь заткнули [npc.her] рот, то [npc.she] может сделать [npc.herself] полезной в качестве свалки для спермы моих девок.)]
 	</p>
 	<p>
 		Потирая бугорок в джинсах [npc2.her], [npc2.she] продолжает: [npc2.speech(Конечно, ты можешь сказать «нет», но тогда нам придётся хорошенько тебя отлупить за то, что вломилась сюда без приглашения. Так что в любом случае я буду трахать тебе рот, пока мои девки заливают твоего [npc.race] дружка спермой, так что тебе лучше извлечь из этого хоть какую-то выгоду, а?)]
@@ -706,7 +706,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_IMPS_COMPANION_ORAL"><![CDATA[
 	<p>
-		A wicked grin crosses [npc2.namePos] face as [npc2.she] hears what it is you're after. With a playful tone in [npc2.her] voice, [npc2.she] offers [npc2.her] terms, [npc2.speech(Well, my cock hasn't been sucked in a good long while, so if your friend here gets down and shows [npc.her] submission by fixing that, then I'll give you my help in getting to meet with our boss. Oh, and as you've got your mouth blocked, you can make yourself useful as a cum-dump for my girls.)]
+		Злобная ухмылка расплывается по лицу [npc2.namePos], когда [npc2.she] слышит, чего именно ты хочешь. Игривым тоном в голосе [npc2.her], [npc2.she] предлагает [npc2.her] условия: [npc2.speech(Ну, мой член уже целую вечность никто не сосал, так что если твоя подружка здесь опустится на колени и продемонстрирует [npc.her] покорность, исправив это, то я помогу вам встретиться с нашим боссом. О, и раз уж тебе заткнули рот, ты можешь сделать себя полезной в качестве свалки для спермы моих девок.)]
 	</p>
 	<p>
 		Потирая бугорок в джинсах [npc2.her], [npc2.she] продолжает: [npc2.speech(Конечно, ты можешь сказать «нет», но тогда нам придётся хорошенько тебя отлупить за то, что вломилась сюда без приглашения. Так что в любом случае я буду трахать рот твоему [npc.race] дружку, пока мои девки заливают тебя спермой, так что тебе лучше извлечь из этого хоть какую-то выгоду, а?)]
@@ -719,7 +719,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_DOUBLE_IMPS"><![CDATA[
 	<p>
-		A wicked grin crosses [npc2.namePos] face as [npc2.she] hears what it is you're after. With a playful tone in [npc2.her] voice, [npc2.she] offers [npc2.her] terms, [npc2.speech(Well, I'd have liked to have got you both sucking my cock, but it looks like that's not going to be happening. Instead, how about the two of you get down and show your submission by letting my girls here fuck you, and then I'll give you my help in getting to meet with our boss.)]
+		Злобная ухмылка озаряет лицо [npc2.namePos], когда [npc2.she] понимает, чего именно ты хочешь. Игривым тоном в голосе [npc2.her], [npc2.she] предлагает [npc2.her] свои условия: [npc2.speech(Ну, я бы с удовольствием посмотрел, как вы обе сосёте мой член, но, похоже, этого не случится. Вместо этого, как насчёт того, чтобы вы обе опустились на колени и продемонстрировали свою покорность, позволив моим девчонкам оттрахать вас, а после я помогу вам встретиться с нашим боссом.)]
 	</p><p>
 Сжимая [npc2.her] кулаки, [npc2.she] продолжает, [npc2.speech(Конечно, ты можешь сказать «нет», но тогда нам просто придётся хорошенько тебя отлупить за то, что вломился сюда без приглашения. Так что в любом случае вас обоих скоро поимеют, так что с таким же успехом можно извлечь из этого хоть какую-то выгоду, верно?)]
 </p>
@@ -836,7 +836,7 @@
 		[npc2.speech(Вот это по-нашему!)] [npc2.Name] смеется, прежде чем сделать шаг вперед и грубо толкнуть вас обоих на четвереньки перед [npc2.herHim]. Не теряя времени, [npc2.she] опускается на [npc2.her] колени и вжимает [npc2.her] пах в лицо [npc.namePos], пока [npc2.she] скалится: [npc2.speech(Давай, вылизывай, сучка!)]
 	</p>
 	<p>
-		Doing as [npc.sheIs] told, your companion reaches up and unbuttons [npc2.her] jeans, before tugging them down to reveal a black thong barely managing to contain the massive bulge of [npc2.her] erection. [npc.NamePos] eyes open wide as [npc.she] sees that just above [npc2.namePos] groin, [npc2.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Continuing with [npc.her] task, [npc.name] pulls down the [npc2.race]'s thong, allowing [npc2.her] [npc2.penisGirth], [npc2.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before [npc.herHim].
+		Повинуясь приказу [npc.sheIs], твой спутник тянется вверх и расстегивает джинсы [npc2.her], а затем стягивает их вниз, обнажая черные стринги, которые едва сдерживают массивный бугор [npc2.her] эрекции. Глаза [npc.NamePos] широко распахиваются, когда [npc.she] замечает, что прямо над пахом [npc2.namePos] у [npc2.sheHas] красуется черная татуировка в стиле трайбл, дополненная надписью «Подавись, сучка!», выведенной изящным курсивом. Продолжая [npc.her] задачу, [npc.name] стягивает стринги [npc2.race], позволяя [npc2.her] [npc2.penisGirth], проколотому и украшенному серебряным кольцом члену [npc2.penisValue], вырваться на свободу перед [npc.herHim].
 	</p>
 	<p>
 		[npc2.speech(Это не просто для красоты, сучка,)] — рычит [npc2.name], указывая на [npc2.her] татуировку. [npc2.speech(Я хочу, чтобы ты <i>давилась им</i>!)]

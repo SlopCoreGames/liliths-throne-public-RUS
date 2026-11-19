@@ -23,7 +23,7 @@
 	
 	<transformationDescription><![CDATA[
 		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они уже превратились в мышиные глаза с огромными радужками и зрачками.
-		<br/>[npc.Name] теперь [npc.has] [style.boldMouse(mouse-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		<br/>[npc.Name] теперь [npc.has] [style.boldMouse(мышиные глаза)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

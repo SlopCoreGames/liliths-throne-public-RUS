@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[toilets]]></name>
-	<tooltipDescription><![CDATA[Unfortunately for members of the public, these toilets are signed as being 'staff only', and are securely locked.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the toilets in Elis's town hall]]></virginityLossDescription>
+	<name><![CDATA[туалеты]]></name>
+	<tooltipDescription><![CDATA[К несчастью для простых смертных, на этих туалетах висит табличка «только для персонала», и они надежно заперты.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в туалетах в ратуше Элиса]]></virginityLossDescription>
 	<sexBlockedReason/>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Bathroom]]></name>
-	<tooltipDescription><![CDATA[This bathroom is quite small, and holds only a toilet and sink.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the bathroom at Angelixx's apartment]]></virginityLossDescription>
+	<name><![CDATA[Ванная]]></name>
+	<tooltipDescription><![CDATA[Эта ванная довольно тесная, в ней есть только унитаз и раковина.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в ванной в квартире Анжеликсы]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

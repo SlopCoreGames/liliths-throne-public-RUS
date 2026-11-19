@@ -15,28 +15,28 @@
 	<name><![CDATA[нога]]></name>
 	<namePlural><![CDATA[ноги]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>anthropomorphic, capybara-like</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>антропоморфный, похожий на капибару</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>anthropomorphic, capybara-like</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>антропоморфный, похожий на капибару</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsFeminine>
 	<footDescriptorsMasculine>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</footDescriptorsFeminine>
 	<toeDescriptorsMasculine>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</toeDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		По мере того как [npc.her] ноги принимают новую форму, их быстро покрывает слой капибароподобного меха. Когда [npc.her] новый мех спускается до самых кончиков [npc.her] пальцев, между ними начинают прорастать перепонки, а подошвы [npc.her] покрываются грубыми кожаными подушечками, превращая [npc.herHim] в лапы. Когда трансформация завершается, [npc.she] [npc.verb(see)] что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.

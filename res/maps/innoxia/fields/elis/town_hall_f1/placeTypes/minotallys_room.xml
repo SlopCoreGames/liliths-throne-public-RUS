@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Minotallys's bedroom]]></name>
-	<tooltipDescription><![CDATA[Out of a matter of convenience, Minotallys has one of the rooms opposite her office converted into her living quarters.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Minotallys's bedroom in Elis's town hall]]></virginityLossDescription>
+	<name><![CDATA[Спальня Миноталлис]]></name>
+	<tooltipDescription><![CDATA[Из соображений удобства Миноталлис переоборудовала одну из комнат напротив своего кабинета под жилые покои.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спальне Миноталлис в ратуше Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>room</svgName>
 	<colour>BASE_PURPLE_LIGHT</colour>

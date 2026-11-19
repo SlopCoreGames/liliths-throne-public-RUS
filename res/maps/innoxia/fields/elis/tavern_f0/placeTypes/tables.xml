@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Main floor]]></name>
-	<tooltipDescription><![CDATA[The majority of the floor area inside 'The Red Dragon' tavern is occupied by wooden tables and chairs, which provide places for customers to sit and drink.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the main floor area of 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[Первый этаж]]></name>
+	<tooltipDescription><![CDATA[Большую часть площади таверны «Красный дракон» занимают деревянные столы и стулья, предназначенные для отдыха и выпивки посетителей.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на первом этаже таверны «Красный дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

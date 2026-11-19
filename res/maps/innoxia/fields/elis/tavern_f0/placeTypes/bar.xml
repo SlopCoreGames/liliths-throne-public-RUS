@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[bar]]></name>
-	<tooltipDescription><![CDATA[The source of food and drink, the bar at 'The Red Dragon' is always busy.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the bar in 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[бар]]></name>
+	<tooltipDescription><![CDATA[Бар в таверне «Красный дракон» — главный источник еды и выпивки, здесь всегда полно народу.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у барной стойки в таверне «Красный дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

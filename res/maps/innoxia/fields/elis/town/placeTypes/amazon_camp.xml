@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Amazons' camp]]></name>
-	<tooltipDescription><![CDATA[The Amazons, driven out of their hometown of Themiscyra, have set up a temporary camp in the woods to the west of Elis.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the Amazons' camp to the west of Elis]]></virginityLossDescription>
+	<name><![CDATA[Лагерь амазонок]]></name>
+	<tooltipDescription><![CDATA[Амазонки, изгнанные из своего родного города Фемисциры, разбили временный лагерь в лесах к западу от Элиды.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в лагере амазонок к западу от Элиды]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND_GREEN</backgroundColour>

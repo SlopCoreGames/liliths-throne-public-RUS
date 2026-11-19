@@ -25,21 +25,21 @@
 	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>badger-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>барсучий</descriptor>
+		<descriptor>пушистая</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>badger-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>барсучий</descriptor>
+		<descriptor>пушистая</descriptor>
 	</descriptorsFeminine>
 	
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -48,15 +48,15 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldBadger(пушистый барсучий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
 [npc.TailCount] пушистые барсучьи хвосты вырастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] может лишь слегка ими управлять, лишь приподнимая или опуская.
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldBadger(badger-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldBadger(барсучьи хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] badger tail, which [npc.she] can just about lift up and down.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] барсучий хвост, которым [npc.she] может лишь слегка приподнимать и опускать.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] badger tails, which [npc.she] can just about lift up and down.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] барсучьи хвосты, которыми [npc.she] может лишь слегка приподнимать и опускать.
 		#ENDIF
 	]]></bodyDescription>
 </tail>

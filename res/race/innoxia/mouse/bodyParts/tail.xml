@@ -27,21 +27,21 @@
 	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>пушистая</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>пушистая</descriptor>
 	</descriptorsFeminine>
 	
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -56,9 +56,9 @@
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] mouse tail, which [npc.she] can lift up and down.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] мышиный хвост, который [npc.she] может поднимать и опускать.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] mouse tails, which [npc.she] can lift up and down.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] мышиные хвосты, которые [npc.she] может поднимать и опускать.
 		#ENDIF
 	]]></bodyDescription>
 </tail>

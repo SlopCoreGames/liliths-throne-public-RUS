@@ -44,15 +44,15 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's face of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic coatl-like</descriptor>
-		<descriptor>coatl-like</descriptor>
-		<descriptor>draconic</descriptor>
+		<descriptor>антропоморфный, похожий на коатля</descriptor>
+		<descriptor>похожий на коатля</descriptor>
+		<descriptor>драконьи</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic coatl-like</descriptor>
-		<descriptor>coatl-like</descriptor>
-		<descriptor>draconic</descriptor>
+		<descriptor>антропоморфный, похожий на коатля</descriptor>
+		<descriptor>похожий на коатля</descriptor>
+		<descriptor>драконьи</descriptor>
 	</descriptorsFeminine>
 	
 	

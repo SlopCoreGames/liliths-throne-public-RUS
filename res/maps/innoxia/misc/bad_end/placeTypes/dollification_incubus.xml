@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Master's Mansion]]></name>
-	<tooltipDescription><![CDATA[You and nine other sex dolls act as statues in your Master's mansion.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in your Master's mansion]]></virginityLossDescription>
+	<name><![CDATA[Особняк Господина]]></name>
+	<tooltipDescription><![CDATA[Ты и еще девять секс-кукол замерли статуями в особняке своего Господина.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в особняке твоего Господина]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

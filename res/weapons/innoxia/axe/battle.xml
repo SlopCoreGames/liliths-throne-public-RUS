@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[боевые топоры]]></namePlural>
 		<description><![CDATA[Огромный боевой топор, созданный специально для сражений. Несмотря на свой громоздкий вид, он удивительно легкий, что позволяет владельцу эффективно обрушивать лезвие, шип и крюк на цель.]]></description> 
 		<attackDescriptor>chop</attackDescriptor>
-		<attackTooltipDescription>Swing your battle axe at [npc2.name]!</attackTooltipDescription>
+		<attackTooltipDescription>Замахнись боевым топором на [npc2.name]!</attackTooltipDescription>
 		<rarity>COMMON</rarity> 
 		<weaponSet/> 
 		<equipText><![CDATA[[npc.Name] [npc.verb(берет)] [npc.her] боевой топор, пока [npc.she] [npc.verb(готовится)] использовать его в бою.]]></equipText>

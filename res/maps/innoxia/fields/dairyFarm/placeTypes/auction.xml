@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Auction Room]]></name>
-	<tooltipDescription><![CDATA[A luxuriously furnished room in which new slaves are auctioned off to the highest bidder.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the auction room at Evelyx's Dairy]]></virginityLossDescription>
+	<name><![CDATA[Аукционный зал]]></name>
+	<tooltipDescription><![CDATA[Роскошно обставленная комната, в которой новых рабов продают с молотка тому, кто предложит самую высокую цену.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в аукционном зале молочной фермы Эвеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

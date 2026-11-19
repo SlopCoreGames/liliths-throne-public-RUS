@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[seating area]]></name>
-	<tooltipDescription><![CDATA[Large sofas, specially-designed to accommodate taurs, are scattered throughout this seating area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the seating area at 'The Centaur's Sword' tavern]]></virginityLossDescription>
+	<name><![CDATA[зона отдыха]]></name>
+	<tooltipDescription><![CDATA[По всей этой зоне отдыха расставлены большие диваны, специально сконструированные для тавров.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в зоне отдыха таверны «Меч кентавра»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BROWN</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

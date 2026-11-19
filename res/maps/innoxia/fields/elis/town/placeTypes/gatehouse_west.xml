@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[gatehouse]]></name>
-	<tooltipDescription><![CDATA[A pair of towers flank the western gatehouse, guarding the road which leads out of Elis.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the western gatehouse at Elis]]></virginityLossDescription>
+	<name><![CDATA[сторожевая башня]]></name>
+	<tooltipDescription><![CDATA[Пару башен фланкируют западные ворота, охраняя дорогу, ведущую из Элиса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в западных воротах Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>gatehouse</svgName> 
 	<colour>BASE_BLACK</colour>

@@ -16,18 +16,18 @@
 	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>woolly</descriptor>
-		<descriptor>wool-like</descriptor>
+		<descriptor>шерстяная</descriptor>
+		<descriptor>похожими на шерсть</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>woolly</descriptor>
-		<descriptor>wool-like</descriptor>
+		<descriptor>шерстяная</descriptor>
+		<descriptor>похожими на шерсть</descriptor>
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, похожими на шерсть.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSheep(sheep hair)].
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSheep(овечья шерсть)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

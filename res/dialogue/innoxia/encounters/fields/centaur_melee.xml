@@ -32,8 +32,8 @@
 						<enemy leader="true"><![CDATA[attacker]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[You tell the centauress that she's not going to get any of your money and prepare to defend yourself.]]></combatant>
-						<combatant id="attacker"><![CDATA[The marauder's face scrunches up in rage, and she screams, [attacker.speech(You insolent [pc.insult]! I'll make you wish you'd never been born!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Ты говоришь кентавридке, что ни копейки ей не достанется, и готовишься к обороне.]]></combatant>
+						<combatant id="attacker"><![CDATA[Лицо мародерши искажается от ярости, и она кричит: [attacker.speech(Ты, дерзкий [pc.insult]! Ты пожалеешь, что вообще родился на свет!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>
@@ -42,7 +42,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[Заплатить (#IF(pc.getMoney()>=attacker.getPaymentDemand())[style.moneyFormat([#attacker.getPaymentDemand()], span)]#ELSE[style.moneyFormatUncoloured([#attacker.getPaymentDemand()], span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand()) Hand over the [style.intToString([#attacker.getPaymentDemand()])] flames which the marauder is asking for. #ELSE You can't afford to pay off the marauder... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand()) Отдать [style.intToString([#attacker.getPaymentDemand()])] огней, которые требует мародерша. #ELSE У тебя не хватает денег, чтобы откупиться от мародерши... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand())innoxia_encounters_fields_centaur_melee_payment#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.addSpecialParsingString('[style.intToString([#attacker.getPaymentDemand()])]', true)]

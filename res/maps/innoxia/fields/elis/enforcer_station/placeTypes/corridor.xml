@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[The corridors in the Enforcer station are carpeted and have that faint, musty smell that you typically find in old buildings.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the corridor at the Enforcer station in Elis]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Коридоры на станции Enforcer устланы коврами и пропитаны тем слабым, затхлым запахом, который обычно встретишь в старых зданиях.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре на станции Enforcer в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

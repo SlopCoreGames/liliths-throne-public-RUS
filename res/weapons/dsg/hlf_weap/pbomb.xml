@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[На бутылке выгравировано: "Произведено DSG Beverages GmbH"]]></authorTag>
+		<authorTag><![CDATA[На бутылке выгравировано: «Произведено DSG Beverages GmbH»]]></authorTag>
 		<value>30</value>
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>

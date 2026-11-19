@@ -24,7 +24,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная оболочка. 
 		<br/>[npc.She] теперь [npc.has] [style.boldCapybara(капибароподобный пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldCapybara([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldCapybara(capybara cum)].
+		<br/>[npc.She] [npc.has] [style.boldCapybara([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldCapybara(капибарийская сперма)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] капибаровый член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].

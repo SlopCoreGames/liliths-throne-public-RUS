@@ -27,7 +27,7 @@
 	<iconName displaySize="80">octopus</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>octopus</bookIconName>
-	<bookName>Heavily Armed Suckers</bookName>
+	<bookName>Тяжеловооруженные присоски</bookName>
 	<basicDescriptionId>OCTOPUS_BASIC</basicDescriptionId>
 	<advancedDescriptionId>OCTOPUS_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

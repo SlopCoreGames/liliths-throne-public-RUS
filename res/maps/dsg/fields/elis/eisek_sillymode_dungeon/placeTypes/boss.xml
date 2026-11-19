@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Final Chamber]]></name>
-	<tooltipDescription><![CDATA[This "room" is decorated in a much more ornate fashion than everywhere else in this basement.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the final chamber of a weird basement]]></virginityLossDescription>	
+	<name><![CDATA[Финальная палата]]></name>
+	<tooltipDescription><![CDATA[Эта «комната» украшена куда более изысканно, чем все остальные помещения в этом подземелье.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в финальной палате странного подземелья]]></virginityLossDescription>	
 	<sexBlockedFromCharacterPresent/>
 	<svgName>crown</svgName>
 	<colour>BASE_WHITE</colour>

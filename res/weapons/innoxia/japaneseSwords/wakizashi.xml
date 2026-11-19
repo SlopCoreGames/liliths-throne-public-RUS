@@ -18,7 +18,7 @@
 		
 		<attackDescriptor>cut</attackDescriptor>
 		
-		<attackTooltipDescription>Slash [npc2.name] with your wakizashi.</attackTooltipDescription>
+		<attackTooltipDescription>Ударь [npc2.name] своим вакидзаши.</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity>
 		

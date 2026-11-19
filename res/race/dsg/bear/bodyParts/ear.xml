@@ -34,16 +34,16 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's ear of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>bear-like</descriptor>
-		<descriptor>ursine</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>медвежий</descriptor>
+		<descriptor>медвежья</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>bear-like</descriptor>
-		<descriptor>ursine</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>медвежий</descriptor>
+		<descriptor>медвежья</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this ear type.
@@ -56,12 +56,12 @@
 		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
 		и по завершении трансформации [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми медвежьими ушами взад и вперед.
-		<br/>[npc.Name] теперь [npc.has] [style.boldBear(rounded, bear-like ears)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldBear(округлые, медвежьи уши)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How this ear is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пара стоячих,#IF(npc.isPiercedEar()) pierced,#ENDIF bear-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара стоячих,#IF(npc.isPiercedEar()) проколотые,#ENDIF медвежьи уши, расположенные высоко на [npc.her] голове и представляющие собой [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[Takahashi's bedroom]]></name>
-	<tooltipDescription><![CDATA[Several bookshelves have been squeezed into Takahashi's bedroom, and are filled with books, potions, and stacks of papers.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Takahashi's bedroom]]></virginityLossDescription>
+	<name><![CDATA[Спальня Такахаши]]></name>
+	<tooltipDescription><![CDATA[В спальне Такахаши теснятся книжные полки, заставленные книгами, зельями и стопками бумаг.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спальне Такахаши]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>bedroom</svgName>
 	<colour>BASE_BLUE_LIGHT</colour>

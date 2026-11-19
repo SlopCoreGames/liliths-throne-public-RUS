@@ -7,13 +7,13 @@
 	<name><![CDATA[ухо]]></name>
 	<namePlural><![CDATA[уши]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Они быстро начинают уменьшаться и округляться, при этом смещаясь выше на [npc.her] голове, чем располагались бы обычные человеческие уши.
@@ -22,10 +22,10 @@
 		#ELSE
 			 Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
-		 и по завершении трансформации [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми капибароподобными ушами взад-вперед.
-		<br/>[npc.Name] теперь [npc.has] [style.boldCapybara(large, capybara-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		 и по завершении трансформации [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми капибароподобными ушами, двигающимися взад-вперед.
+		<br/>[npc.Name] теперь [npc.has] [style.boldCapybara(крупные, капибароподобные уши)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пару маленьких, стоячих,#IF(npc.isPiercedEar()) pierced,#ENDIF capybara-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пару маленьких, стоячих,#IF(npc.isPiercedEar()) проколотые,#ENDIF капибароподобные уши, расположенные высоко на [npc.her] голове и представляющие собой [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 </ear>

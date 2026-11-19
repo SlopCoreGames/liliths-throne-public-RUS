@@ -19,7 +19,7 @@
 		
 		<attackDescriptor>bash</attackDescriptor>
 		
-		<attackTooltipDescription>Bash your shield against [npc2.name].</attackTooltipDescription>
+		<attackTooltipDescription>Ударь щитом по [npc2.name].</attackTooltipDescription>
 		
 		<rarity>UNCOMMON</rarity> 
 		

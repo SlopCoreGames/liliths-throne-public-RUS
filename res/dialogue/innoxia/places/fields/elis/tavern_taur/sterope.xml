@@ -412,13 +412,13 @@
 				<responseTitle><![CDATA[Дикая ТФ (оба)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getTrueRace()!=RACE_HORSE_MORPH && !pc.isAbleToHaveRaceTransformed())
-						Так как твоя раса не способна к трансформации, ты не можешь превратиться в дикого... #IF(pc.isFeminine())mare#ELSEstallion#ENDIF...
+						Так как твоя раса не способна к трансформации, ты не можешь превратиться в дикого... #IF(pc.isFeminine())кобыла#ELSEжеребец#ENDIF...
 					#ELSE
 						Заставь Стеропе касаться камня зверя в течение пятнадцати минут — этого должно хватить, чтобы она превратилась в дикую кобылу до самого утра.
 						#IF(pc.getTrueRace()!=RACE_HORSE_MORPH)
-							 Поскольку ты не конь-морф, тебе сначала нужно выпить зелье трансформации, чтобы превратиться в одного, а затем коснуться камня, чтобы стать диким #IF(pc.isFeminine())mare#ELSEstallion#ENDIF for the same duration.
+							 Поскольку ты не конь-морф, тебе сначала нужно выпить зелье трансформации, чтобы превратиться в одного, а затем коснуться камня, чтобы стать диким #IF(pc.isFeminine())кобыла#ELSEжеребец#ENDIF на столько же времени.
 						#ELSE
-							 Коснуться камня вместе с ней, чтобы превратиться в дикого #IF(pc.isFeminine())mare#ELSEstallion#ENDIF for the same duration.
+							 Коснуться камня вместе с ней, чтобы превратиться в дикого #IF(pc.isFeminine())кобыла#ELSEжеребец#ENDIF на столько же времени.
 						#ENDIF
 					#ENDIF
 				]]></responseTooltip>

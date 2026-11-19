@@ -76,7 +76,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)], как [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно проступает толстый узел. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотками хватая воздух, головка [npc.her] члена сужается, принимая свои новые очертания.
 		<br/>[npc.She] теперь [npc.has] [style.boldSalamander(похожий на саламандру пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldSalamander([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldSalamander(salamander cum)].
+		<br/>[npc.She] [npc.has] [style.boldSalamander([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldSalamander(саламандровую сперму)].
 	]]></transformationDescription>
 	
 	<!-- How this penis is described in a character's description page. -->

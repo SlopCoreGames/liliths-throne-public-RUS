@@ -22,7 +22,7 @@
 			<category id="top_txt" priority="1">
 				<categoryName><![CDATA[Текст на бирке]]></categoryName>
 				<sticker id="bound" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Bound]]></stickerName>
+					<stickerName><![CDATA[Связанная]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Связанная </i>]]></descriptionModification>
@@ -33,7 +33,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="good" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Good]]></stickerName>
+					<stickerName><![CDATA[Хорошая]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Послушная </i>]]></descriptionModification>
@@ -44,7 +44,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="bad" priority="3" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Bad]]></stickerName>
+					<stickerName><![CDATA[Плохая]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Плохая </i>]]></descriptionModification>
@@ -55,7 +55,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="obedient" priority="4" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Obedient]]></stickerName>
+					<stickerName><![CDATA[Послушная]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Покорная </i>]]></descriptionModification>
@@ -66,7 +66,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="broken" priority="5" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Broken]]></stickerName>
+					<stickerName><![CDATA[Сломленная]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Сломленная </i>]]></descriptionModification>
@@ -77,7 +77,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="worthless" priority="6" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Worthless]]></stickerName>
+					<stickerName><![CDATA[Никчемная]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Никчемная </i>]]></descriptionModification>
@@ -88,7 +88,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="cheap" priority="7" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Cheap]]></stickerName>
+					<stickerName><![CDATA[Дешевка]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Дешёвый </i>]]></descriptionModification>
@@ -99,7 +99,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="dumb" priority="8" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Dumb]]></stickerName>
+					<stickerName><![CDATA[Тупая]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Тупой </i>]]></descriptionModification>
@@ -113,7 +113,7 @@
 			<category id="btm_txt" priority="2">
 				<categoryName><![CDATA[Текст тега низа]]></categoryName>
 				<sticker id="bitch" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Bitch]]></stickerName>
+					<stickerName><![CDATA[Сучка]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Сучка</i>]]></descriptionModification>
@@ -124,7 +124,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="dog" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Dog]]></stickerName>
+					<stickerName><![CDATA[Собачка]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Пёс</i>]]></descriptionModification>
@@ -135,7 +135,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="pet" priority="3" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Pet]]></stickerName>
+					<stickerName><![CDATA[Питомец]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Питомка</i>]]></descriptionModification>
@@ -146,7 +146,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="slut" priority="4" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Slut]]></stickerName>
+					<stickerName><![CDATA[Шлюшка]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Шалава</i>]]></descriptionModification>
@@ -157,7 +157,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="stud" priority="5" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Stud]]></stickerName>
+					<stickerName><![CDATA[Самец]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Самец</i>]]></descriptionModification>
@@ -168,7 +168,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="cunt" priority="6" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Cunt]]></stickerName>
+					<stickerName><![CDATA[Пизда]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Пизда</i>]]></descriptionModification>
@@ -179,7 +179,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="whore" priority="7" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Whore]]></stickerName>
+					<stickerName><![CDATA[Шалава]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Шлюха</i>]]></descriptionModification>
@@ -190,7 +190,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="toy" priority="8" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Toy]]></stickerName>
+					<stickerName><![CDATA[Игрушка]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Игрушка</i>]]></descriptionModification>
@@ -201,7 +201,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="horsie" priority="9" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Horsie]]></stickerName>
+					<stickerName><![CDATA[Лошадка]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Лошадка</i>]]></descriptionModification>

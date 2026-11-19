@@ -5,16 +5,16 @@
 	
 	<htmlContent tag="CONVINCING_LILAYA"><![CDATA[
 	<p>
-		It being a suitable time of evening in which to go and meet and [daddy.herHim], you decide that now is the right moment in which to tell Lilaya about [daddy.name], and what the two of you discussed over dinner. As you mention [daddy.her] name, Lilaya lets out an annoyed sigh and rolls her eyes, but as you recount what [daddy.name] said about loving Lyssieth and wanting to marry her, Lilaya's expression shifts from irritation to one of curiosity.
+		Вечер как раз подходит для того, чтобы пойти и встретить [daddy.herHim], и ты решаешь, что сейчас — идеальный момент, чтобы рассказать Lilaya о [daddy.name] и о том, что вы обсуждали за ужином. Когда ты произносишь имя [daddy.her], Lilaya раздраженно вздыхает и закатывает глаза, но когда ты пересказываешь слова [daddy.name] о том, что он любит Lyssieth и хочет на ней жениться, выражение лица Lilaya сменяется с раздражения на любопытство.
 	</p>
 	<p>
-		Before you're even half-way through your story, Lilaya interrupts, [lilaya.speech(Hold on, so <i>that's</i> what [daddy.she] wanted all this time? I thought [daddy.she] was trying to scam me... I guess that explains why [daddy.she] was so persistent...)]
+		Не успеваешь ты и половины истории поведать, как Lilaya прерывает тебя: [lilaya.speech(Погоди, так <i>значит</i>, что [daddy.she] всё это время хотел именно этого? А я-то думала, что [daddy.she] пытается меня развести... Теперь понятно, почему [daddy.she] был так настойчив...)]
 	</p>
 	<p>
-		Assuring Lilaya that you're beyond convinced that [daddy.name] is genuinely in love with Lyssieth, you then tell the rest of your tale, before finishing with the part about [daddy.herHim] wanting Lilaya to accept [daddy.herHim] as her new '[daddy.daddy]'. As she hears you say this, your [lilaya.relation(pc)]'s cheeks flush red, and, with her tail nervously wrapping around her left leg, she stammers, [lilaya.speech(W-What? [daddy.She] w-wants me to call [daddy.herHim]... '[daddy.daddy]'?)]
+		Уверяя Lilaya, что ты более чем убежден в искренней любви [daddy.name] к Lyssieth, ты продолжаешь свой рассказ и заканчиваешь тем, что [daddy.herHim] хочет, чтобы Lilaya приняла [daddy.herHim] как своего нового «[daddy.daddy]». При этих словах щеки твоей [lilaya.relation(pc)] заливаются румянцем, и, нервно обернув хвостом левую ногу, она заикается: [lilaya.speech(Ч-что? [daddy.She] х-хочет, чтобы я называла [daddy.herHim]... «[daddy.daddy]»?)]
 	</p>
 	<p>
-		As you confirm that that's [daddy.namePos] request, you can't help but notice a little gleam in Lilaya's [lilaya.eyeColour] eyes, and, after clearing her throat to shake off her earlier stutter, she says, [lilaya.speech(Well, it wouldn't be so bad to have someone step in as a father figure... I mean, I've never met my biological father, and mommy couldn't recall who it was either...)]
+		Когда ты подтверждаешь, что это [daddy.namePos] просьба, ты невольно замечаешь легкий блеск в [lilaya.eyeColour] глазах Lilaya; откашлявшись, чтобы избавиться от недавнего заикания, она говорит: [lilaya.speech(Ну, было бы неплохо, если бы кто-то занял место отца... В смысле, я никогда не видела своего биологического папу, да и мамочка не помнит, кто это был...)]
 	</p>
 	<p>
 		Лилая, кажется, немного раздражается к концу этого предложения, но, переключая свои мысли на будущее, а не на прошлое, она продолжает: [lilaya.speech(Я доверяю твоему суждению, [pc.name], и может быть забавно иметь кого-то такого, к кому я могла бы иногда заходить...)]
@@ -57,13 +57,13 @@
 	
 	<htmlContent tag="FIRST_ENCOUNTER_ANSWER"><![CDATA[
 	<p>
-		Deciding to let this incubus know who you are, you quickly tell him that not only do you live here, but that you're also related to Lilaya. As you reveal this information to him, the incubus suddenly becomes reinvigorated, and with a voice full of optimism, he exclaims, [daddy.speech(You're just the person I need to talk to! Look, I'm out of time right now, but if you could please pay me a visit at my place over in Demon Home one evening when you're free, I'll treat you to dinner in one of Dominion's finest restaurants! I work some pretty unusual shifts, so I'm only available between six and ten every evening. You can find me here...)]
+		Решив дать этому инкубу понять, кто ты такой, ты быстро сообщаешь ему, что не только живешь здесь, но и являешься родственником Lilaya. Как только ты раскрываешь ему эту информацию, инкуб внезапно воодушевляется и с оптимизмом в голосе восклицает: [daddy.speech(Вы как раз тот человек, с которым мне нужно поговорить! Послушайте, сейчас я спешу, но если вы сможете навестить меня у себя в Demon Home каким-нибудь свободным вечером, я угощу вас ужином в одном из лучших ресторанов Dominion! У меня довольно необычный график, так что я доступен только с шести до десяти каждый вечер. Найти меня можно здесь...)]
 	</p>
 	<p>
-		Producing a business card from his left pocket, he pushes it into your hands before glancing at his watch and sharply inhaling, [daddy.speech(Damn, I knew I'd be cutting this close! I need to go! Please, I'm begging you, come and visit me whenever you can!)]
+		Достав из левого кармана визитку, он вкладывает её тебе в руки, после чего бросает взгляд на свои часы и резко вдыхает: [daddy.speech(Черт, я знал, что опаздываю! Мне пора! Пожалуйста, умоляю вас, приходите ко мне, когда сможете!)]
 	</p>
 	<p>
-		Leaving you no time in which to respond, he flashes you one last charming smile, before putting his hard hat back on, turning away, and then dashing off down the street. After briefly watching him run off, you glance down at the business card still in your [pc.hand], which informs you both of this curious incubus's address, as well as the fact that his name is '[daddy.name]'. Wondering what you'll do about his request to meet him, you turn towards Lilaya's mansion, before stepping up to the front door and giving it a knock.
+		Не давая тебе времени на ответ, он ослепительно улыбается тебе в последний раз, надевает свою каску, отворачивается и стремительно убегает по улице. Недолго наблюдая за его бегом, ты переводишь взгляд на визитку, всё еще зажатую в твоей [pc.hand]; она сообщает тебе и адрес этого любопытного инкуба, и то, что его зовут '[daddy.name]'. Раздумывая, что делать с его предложением встретиться, ты поворачиваешься к особняку Lilaya, подходишь к парадной двери и стучишь в неё.
 	</p>
 	<p>
 		Как обычно, вам нужно только подождать, пока дверь не откроется перед вами, и вы не окажетесь лицом к лицу с Розой. Очевидно, ожидая, что [daddy.name] был тем, кто постучал, она немного удивлена, увидев, что это вы стоите перед ней, но, быстро приходя в себя, она послушно отходит в сторону, чтобы пропустить вас. Когда вы заходите внутрь, она спрашивает, [rose.speech(Вы не могли бы помочь нам избавиться от него навсегда? Он продолжает приставать к госпоже в надежде уйти с ней на ужин, хотя ему уже было сказано, что она совершенно не заинтересована в такой договоренности. Если бы вы могли зайти к нему домой и сообщить ему, чтобы он больше не беспокоил нас, это было бы очень полезно. Я могу дать вам адрес, если вы не против подождать немного.)]
@@ -144,7 +144,7 @@
 		[daddy.speech(Ты пришла!)] он радостно восклицает, прежде чем тут же достает ключи с верхней полки в прихожей. Двигаясь вперед, как будто собираясь выйти из квартиры, он говорит: [daddy.speech(Давай, я угощу тебя ужином. Мне нужно исправить плохое первое впечатление, которое я, должно быть, произвел на тебя!)]
 	</p>
 	<p>
-		Having just a moment to make your decision, you wonder if you should let [daddy.name] take you out to dinner and listen to what he has to say, or simply refuse him right here and now...
+		У тебя есть лишь мгновение, чтобы принять решение. Ты гадаешь, стоит ли позволить [daddy.name] сводить тебя на ужин и выслушать, что он хочет сказать, или же просто отказать ему прямо здесь и сейчас...
 	</p>
 	]]>
 	</htmlContent>
@@ -158,7 +158,7 @@
 		[daddy.speech(Ты пришла!)] он радостно восклицает, прежде чем тут же достает ключи с верхней полки в прихожей. Двигаясь вперед, как будто собираясь выйти из квартиры, он говорит: [daddy.speech(Давай, я угощу тебя ужином. Есть много, о чем я хочу с тобой поговорить!)]
 	</p>
 	<p>
-		Having just a moment to make your decision, you wonder if you should let [daddy.name] take you out to dinner and listen to what he has to say, or simply refuse him right here and now...
+		У тебя есть лишь мгновение, чтобы принять решение. Ты гадаешь, стоит ли позволить [daddy.name] сводить тебя на ужин и выслушать, что он хочет сказать, или же просто отказать ему прямо здесь и сейчас...
 	</p>
 	]]>
 	</htmlContent>
@@ -197,35 +197,35 @@
 						[daddy.speech(Эй, [pc.name]!)] [daddy.name] восклицает, внезапно замечая выпирающий живот, [daddy.speech(Ты забеременела?! Это замечательно! Вот, я помогу тебе немного!)]
 					</p>
 					<p>
-						With that, your [daddy.daddy] ducks back into [daddy.her] apartment, before quickly appearing with a small bag of flames. Before you have a chance to accept or refuse [daddy.her] help, [daddy.sheHas] already pushed the money into your [pc.hands], and is saying, [daddy.speech(I know you'll make an excellent mother for our kids, [pc.name]!)]
+						С этими словами твой [daddy.daddy] ныряет обратно в квартиру [daddy.her], а затем быстро возвращается с небольшим мешочком огней. Прежде чем ты успеваешь принять или отвергнуть помощь [daddy.her], [daddy.sheHas] уже впихивает деньги тебе в [pc.hands], приговаривая: [daddy.speech(Я знаю, ты станешь отличной матерью для наших детей, [pc.name]!)]
 				#ELSE
-						[daddy.speech(Hey, [pc.name]!)] [daddy.name] exclaims, suddenly noticing the bulge in your belly, [daddy.speech(You're pregnant?! Here, let me help you out a little...)]
+						[daddy.speech(Эй, [pc.name]!)] [daddy.name] восклицает, внезапно заметив выпуклость на твоем животе, [daddy.speech(Ты беременна?! Давай, позволь мне немного помочь тебе...)]
 					</p>
 					<p>
-						With that, your [daddy.daddy] ducks back into [daddy.her] apartment, before quickly appearing with a small bag of flames. Before you have a chance to accept or refuse [daddy.her] help, [daddy.sheHas] already pushed the money into your [pc.hands], and is saying, [daddy.speech(I know you'll make an excellent mother, [pc.name]!)]
+						С этими словами твой [daddy.daddy] ныряет обратно в квартиру [daddy.her], а затем быстро появляется с небольшим мешочком огней. Прежде чем у тебя появляется шанс принять или отвергнуть помощь [daddy.her], [daddy.sheHas] уже впихивает деньги тебе в [pc.hands], приговаривая: [daddy.speech(Я знаю, ты будешь отличной матерью, [pc.name]!)]
 				#ENDIF
 			#ELSE
 				#IF(pc.getPregnantLitter().isFatherId(daddy.getId()))
-						[daddy.speech(Hey, [pc.name]!)] [daddy.name] exclaims, noticing the bulge in your belly, [daddy.speech(You're still pregnant with our kids? I hope everything's going ok for you!)]
+						[daddy.speech(Эй, [pc.name]!)] [daddy.name] восклицает, заметив выпуклость на твоем животе, [daddy.speech(Ты все еще носишь наших детей? Надеюсь, у тебя все хорошо!)]
 					</p>
 					<p>
 				#ELSE
-						[daddy.speech(Hey, [pc.name]!)] [daddy.name] exclaims, noticing the bulge in your belly, [daddy.speech(You're still pregnant? I hope everything's going ok for you!)]
+						[daddy.speech(Эй, [pc.name]!)] [daddy.name] восклицает, заметив выпуклость на твоем животе, [daddy.speech(Ты все еще беременна? Надеюсь, у тебя все хорошо!)]
 					</p>
 					<p>
 				#ENDIF
 			#ENDIF
 			</p>
 			<p>
-				[daddy.speech(Oh, hey, I didn't mean for my earlier comment to make you blush,)] [daddy.name] says to Lilaya, having just noticed the colour of her cheeks. Saying this to her, combined with his next sentence, only causes Lilaya's cheeks to darken even more, [daddy.speech(So, assuming [pc.name]'s explained my plan to you, you're here ready to accept me as your new [daddy.dad], aren't you?)]
+				[daddy.speech(О, привет, я не хотел, чтобы мой предыдущий комментарий заставил тебя покраснеть,)] [daddy.name] говорит Lilaya, только что заметив румянец на ее щеках. Эти слова в сочетании со следующим предложением заставляют щеки Lilaya вспыхнуть еще сильнее: [daddy.speech(Итак, полагая, что [pc.name] объяснил тебе мой план, ты здесь, чтобы принять меня как своего нового [daddy.dad], верно?)]
 		#ELSE
-			[daddy.speech(Ah, sorry about that, I didn't mean to make you blush,)] [daddy.name] replies, which, combined with his next sentence, only causes Lilaya's cheeks to darken even more, [daddy.speech(So, assuming [pc.name]'s explained my plan to you, you're here ready to accept me as your new [daddy.dad], aren't you?)]
+			[daddy.speech(Ах, прости, я не хотел заставлять тебя краснеть,)] [daddy.name] отвечает, что в сочетании со следующим предложением заставляет щеки Lilaya покраснеть еще сильнее, [daddy.speech(Итак, полагая, что [pc.name] объяснил тебе свой план, ты здесь и готова принять меня как своего нового [daddy.dad], не так ли?)]
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		[lilaya.speech(W-Well, I-I... T-That is...)] Lilaya stammers, clearly struggling to find the right words. You're certain that she's trying to say yes, as she let you know on more than one occasion on the way over here that if she didn't like the look of [daddy.name], she was going to immediately turn around and march back home.
+		[lilaya.speech(Н-Ну, я... Э-Это...)] — заикается Lilaya, явно пытаясь подобрать нужные слова. Ты уверен, что она пытается сказать «да», ведь не раз по пути сюда она давала понять, что если ей не понравится [daddy.name], она тут же развернется и отправится обратно домой.
 	</p>
 	]]>
 	</htmlContent>
@@ -238,22 +238,22 @@
 		<p>
 			#IF(!pc.isCharacterReactedToPregnancy(daddy))
 				#IF(pc.getPregnantLitter().isFatherId(daddy.getId()))
-						[daddy.speech(Oh hey, [pc.name]!)] [daddy.she] exclaims, before suddenly noticing the bulge in your belly and gasping, [daddy.speech(I got you pregnant?! That's fantastic! Here, let me help you out a little!)]
+						[daddy.speech(О, привет, [pc.name]!)] — восклицает [daddy.she], прежде чем внезапно заметить выпуклость на твоем животе и ахнуть: [daddy.speech(Ты что, беременна?! Это просто фантастика! Давай, позволь мне тебе немного помочь!)]
 					</p>
 					<p>
-						With that, your [daddy.daddy] ducks back into [daddy.her] apartment, before quickly appearing with a small bag of flames. Before you have a chance to accept or refuse [daddy.her] help, [daddy.sheHas] already pushed the money into your [pc.hands], and is saying, [daddy.speech(I know you'll make an excellent mother for our kids, [pc.name]! Now, do you want to go out for dinner with me again? Or perhaps you just want to come inside and hang out for a bit?)]
+						С этими словами твой [daddy.daddy] ныряет обратно в квартиру [daddy.her], а затем быстро появляется с небольшим мешочком огней. Прежде чем у тебя появляется шанс принять или отклонить помощь [daddy.her], [daddy.sheHas] уже впихивает деньги тебе в [pc.hands], приговаривая: [daddy.speech(Я знаю, что из тебя получится отличная мать для наших детей, [pc.name]! Ну так что, хочешь снова сходить со мной поужинать? Или, может, просто зайдешь внутрь и немного посидишь со мной?)]
 				#ELSE
-						[daddy.speech(Oh hey, [pc.name]!)] [daddy.she] exclaims, before suddenly noticing the bulge in your belly, [daddy.speech(You're pregnant?! Here, let me help you out a little...)]
+						[daddy.speech(О, привет, [pc.name]!)] [daddy.she] восклицает, прежде чем внезапно заметить выпуклость на твоем животе, [daddy.speech(Ты беременна?! Давай, позволь мне немного помочь тебе...)]
 					</p>
 					<p>
-						With that, your [daddy.daddy] ducks back into [daddy.her] apartment, before quickly appearing with a small bag of flames. Before you have a chance to accept or refuse [daddy.her] help, [daddy.sheHas] already pushed the money into your [pc.hands], and is saying, [daddy.speech(I know you'll make an excellent mother, [pc.name]! Now, do you want to go out for dinner with me again? Or perhaps you just want to come inside and hang out for a bit?)]
+						С этими словами твой [daddy.daddy] ныряет обратно в [daddy.her] квартиру, а затем быстро возвращается с маленьким мешочком огней. Прежде чем у тебя появляется шанс принять или отклонить помощь [daddy.her], [daddy.sheHas] уже впихивает деньги тебе в [pc.hands], приговаривая: [daddy.speech(Я знаю, что ты будешь отличной матерью, [pc.name]! Ну что, хочешь снова сходить со мной поужинать? Или, может, просто зайдешь ко мне ненадолго поболтать?)]
 				#ENDIF
 			#ELSE
 				#IF(pc.getPregnantLitter().isFatherId(daddy.getId()))
-						[daddy.speech(Hey, [pc.name]!)] [daddy.name] exclaims, noticing the bulge in your belly, [daddy.speech(You're still pregnant with our kids? I hope everything's going ok for you!)]
+						[daddy.speech(Эй, [pc.name]!)] [daddy.name] восклицает, заметив выпуклость на твоем животе, [daddy.speech(Ты все еще носишь наших детей? Надеюсь, у тебя все хорошо!)]
 					</p>
 					<p>
-						After you've replied in the positive, [daddy.name] continues, [daddy.speech(That's great! Now, do you want to go out for dinner with me again? Or perhaps you just want to come inside and hang out for a bit?)]
+						После твоего утвердительного ответа [daddy.name] продолжает: [daddy.speech(Это отлично! Ну что, хочешь снова сходить со мной поужинать? Или, может, просто зайдешь ко мне ненадолго поболтать?)]
 				#ELSE
 						[daddy.speech(Привет, [pc.name]!)] [daddy.name] восклицает, заметив выпуклость в твоем животе, [daddy.speech(Ты все еще беременна? Надеюсь, все у тебя в порядке!)]
 					</p>
@@ -373,20 +373,20 @@
 		[genericMale.speech(Я не думаю, что босс когда-либо простил бы мне, если бы я отказал вам. Давайте посмотрим, что я могу сделать,)] говорит официант, прежде чем вернуться в ресторан.
 	</p>
 	<p>
-		[daddy.speech(Don't you worry, [pc.name], I can always get a table here,)] [daddy.name] says, flashing you another of his charming smiles.
+		[daddy.speech(Не беспокойся, [pc.name], я всегда смогу забронировать столик,)] — говорит [daddy.name], одаривая тебя очередной своей очаровательной улыбкой.
 	</p>
 	<p>
-		After less than a minute, the waiter returns, and, beckoning the two of you forwards, he leads you to a clear table in the rear right-hand corner of the restaurant. After the two of you have been seated, he hands you each a menu, before informing you of the specials that the restaurant is serving this evening. Proceeding to tell you that he'll be back momentarily to take your orders for drinks, he then departs, leaving you and [daddy.name] alone.
+		Не прошло и минуты, как возвращается официант; жестом пригласив вас двоих, он ведет вас к свободному столику в дальнем правом углу ресторана. Когда вы усаживаетесь, он вручает каждому из вас меню, а затем сообщает о специальных блюдах, которые подают сегодня вечером. Сказав, что он скоро вернется, чтобы принять заказ на напитки, он уходит, оставляя тебя и [daddy.name] наедине.
 	</p>
 	<p>
-		[daddy.speech(Want to share a bottle of wine with me?)] he asks, relaxing back in his chair as he smiles your way yet again.
+		[daddy.speech(Хочешь разделить со мной бутылку вина?)] — спрашивает он, снова улыбаясь тебе и расслабленно откидываясь на спинку стула.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_AGREE_FLIRT"><![CDATA[
 	<p>
-		Deciding to accept [daddy.namePos] offer of dinner, you tell him that you'd love to go out on a date with him, before putting on your most flirtatious tone to inform him both of your name, and that while you're happy to hear him out, you're ultimately here to let him know that Lilaya doesn't want to be bothered by him again. Delivering this information in such a seductive manner immediately yields results, for, after shrugging off the fact that you're the bearer of bad news, and then leading you out of his apartment building, the handsome incubus reaches down to slip an arm around your waist. Telling you that he's happy to treat this like a date if you are, he holds you close as he leads you across the street towards a restaurant bearing the name 'Temptation'.
+		Решив принять предложение [daddy.namePos] поужинать, ты говоришь ему, что с удовольствием сходишь с ним на свидание, а затем самым кокетливым тоном сообщаешь свое имя и то, что, хоть тебе и приятно его выслушать, на самом деле ты здесь, чтобы дать понять: Lilaya больше не хочет, чтобы он ей докучал. Подача этой новости в столь соблазнительной манере приносит мгновенный результат: отмахнувшись от того факта, что ты вестница плохих новостей, красавец-инкуб выводит тебя из своего дома и, наклонившись, обнимает тебя за талию. Сказав, что он будет рад считать это свиданием, если ты не против, он прижимает тебя к себе и ведет через дорогу к ресторану под названием «Искушение».
 	</p>
 	<p>
 		Как вы подходите, становится совершенно ясно, что у этого заведения отличная репутация, так как не только через его большие окна видно, что все столы заняты, но и у входа в ресторан стоит небольшая очередь. Когда вы начинаете игриво дразнить [daddy.name] за то, что он заставляет свою девушку ждать в такой длинной очереди, он смотрит на вас [daddy.heightDown(pc)] и подмигивает вам, прежде чем вести вас мимо очереди и прямо к входу.
@@ -446,10 +446,10 @@
 		Решив, что ты собираешься принять [daddy.name] как твоего '[daddy.daddy]', ты смотрю [pc.heightUp(daddy)] в глаза [daddy.her] [daddy.eyeColour] и говоришь, [pc.speech(Хорошо... [daddy.Daddy]... Я приму тебя как это, и я убежу Лилаю сделать то же самое...)]
 	</p>
 	<p>
-		Immediately falling into [daddy.her] new role, [daddy.name] happily steps forwards and pulls you into a big hug, exclaiming, [daddy.speech(That's my [pc.girl]! I'll get those scrolls and old spell book of mine sent to you before I sleep tonight, just as I promised! Come on now, let [daddy.dad] take you out for dinner!)]
+		Мгновенно вживаясь в новую роль [daddy.her], [daddy.name] радостно делает шаг вперед и крепко обнимает тебя, восклицая: [daddy.speech(Вот это моя [pc.girl]! Я отправлю тебе те свитки и мой старый сборник заклинаний перед тем, как лечь спать сегодня, как и обещал! А теперь пойдем, позволь [daddy.dad] сводить тебя поужинать!)]
 	</p>
 	<p>
-		Taking [daddy.herHim] up on [daddy.her] offer, you join the [daddy.race] as [daddy.she] leads you out of [daddy.her] apartment building and across the street, towards the familiar restaurant, 'Temptation'. Once again, you can see through the windows that all the tables have been taken, and there's yet another queue lining up outside the front door. Thankfully, it appears as though all of the waiting staff are on familiar terms with your new [daddy.daddy], and before you know it, you've been led inside and over to your usual table in the rear right-hand corner of the restaurant.
+Приняв [daddy.herHim] на [daddy.her] предложение, ты присоединяешься к [daddy.race], пока [daddy.she] ведет тебя прочь из жилого дома [daddy.her] и через дорогу, к знакомому ресторану «Искушение». Снова сквозь окна видно, что все столики заняты, а у входной двери выстроилась очередная очередь. К счастью, кажется, что весь обслуживающий персонал в дружеских отношениях с твоим новым [daddy.daddy], и не успеваешь ты опомниться, как вас уже проводят внутрь, к вашему обычному столику в дальнем правом углу ресторана.
 	</p>
 	<p>
 		После того, как вас усадили, официант передает вам меню, прежде чем сообщить, что он скоро вернется, чтобы принять ваши заказы на напитки, и затем уходит, оставляя вас и [daddy.name] наедине.
@@ -464,10 +464,10 @@
 		Решив, что ты будешь принимать [daddy.name] как свою '[daddy.daddy]', ты сможешь [pc.heightUp(daddy)] в глаза [daddy.her] [daddy.eyeColour], прежде чем надеть свой самый соблазнительный вид и сказать, [pc.speech(Верно, я хочу, чтобы ты был моим новым [daddy.daddy]... Ах, и я убежу Лилаю сделать то же самое!)]
 	</p>
 	<p>
-		Immediately falling into [daddy.her] new role, [daddy.name] happily steps forwards and pulls you into a big hug, exclaiming, [daddy.speech(That's my [pc.girl]! I'll get those scrolls and old spell book of mine sent to you before I sleep tonight, just as I promised! Come on now, let [daddy.dad] take you out for dinner!)]
+		Мгновенно вживаясь в новую роль [daddy.her], [daddy.name] радостно делает шаг вперед и крепко обнимает тебя, восклицая: [daddy.speech(Вот это моя [pc.girl]! Я отправлю тебе те свитки и мой старый сборник заклинаний перед тем, как лечь спать сегодня, как и обещал! А теперь пойдем, позволь [daddy.dad] сводить тебя поужинать!)]
 	</p>
 	<p>
-		Responding with a flirtatious remark, you take your new [daddy.daddy] up on [daddy.her] offer, smiling happily [pc.heightUp(daddy)] at [daddy.herHim] as [daddy.she] slips [daddy.her] hand around your waist. Telling you that [daddy.sheIs] happy to have this kind of relationship with you, [daddy.she] holds you close as [daddy.she] leads you out of [daddy.her] apartment building and across the street, towards the familiar restaurant, 'Temptation'. Once again, you can see through the windows that all the tables have been taken, and there's yet another queue lining up outside the front door. Thankfully, it appears as though all of the waiting staff are on familiar terms with your new [daddy.daddy], and before you know it, you've been led inside and over to your usual table in the rear right-hand corner of the restaurant.
+		Ответив кокетливым замечанием, ты принимаешь предложение своего нового [daddy.daddy] на [daddy.her], счастливо улыбаясь [pc.heightUp(daddy)] [daddy.herHim], пока [daddy.she] скользит [daddy.her] рукой вокруг твоей талии. Говоря тебе, что [daddy.sheIs] счастлив иметь такие отношения с тобой, [daddy.she] прижимает тебя к себе, пока [daddy.she] ведет тебя из [daddy.her] жилого дома и через дорогу, к знакомому ресторану «Искушение». Снова сквозь окна видно, что все столики заняты, а у входной двери уже выстроилась очередь. К счастью, кажется, что весь обслуживающий персонал в дружеских отношениях с твоим новым [daddy.daddy], и не успеваешь ты опомниться, как вас уже ведут внутрь, к вашему обычному столику в дальнем правом углу ресторана.
 	</p>
 	<p>
 		Вы не можете не улыбнуться, увидев, что официант поставил на стол как зажженную свечу, так и маленькую вазу с одной красивой розой, создавая очень романтическую атмосферу. После того, как вас обоих посадили, вам каждому вручили меню, а затем официант сообщил, что он скоро вернется, чтобы принять ваши заказы на напитки, после чего официант уходит, оставив вас и [daddy.name] наедине.
@@ -502,16 +502,16 @@
 		Не в силах больше смотреть на [daddy.her] в глаза и всё ещё явно чрезвычайно смущённая этой всей ситуацией, Лилая отворачивается от [daddy.name], прежде чем спрашивает, [lilaya.speech(Итак, мы будем стоять в этом коридоре всю ночь или что?)] 
 	</p>
 	<p>
-		[daddy.speech(Good point, lets head out,)] [daddy.name] replies, grabbing [daddy.her] keys and stepping out of [daddy.her] apartment. Smiling at you, [daddy.she] then glances down at the back of Lilaya's dress, where a large hole has been cut in the fabric in order to allow her tail to comfortably swing down behind her. [daddy.speech(You know, you really are so similar to your mother. I had the good fortune to see her take on her full demonic appearance, and your tail is just as thick and alluring as hers...)]
+		[daddy.speech(Верное замечание, пошли,] [daddy.name] отвечает, хватая [daddy.her] ключи и выходя из квартиры [daddy.her]. Улыбнувшись тебе, [daddy.she] затем бросает взгляд на спину платья Lilaya, где в ткани прорезана большая дыра, чтобы её хвост мог свободно свисать сзади. [daddy.speech(Знаешь, ты действительно так похожа на свою мать. Мне посчастливилось видеть её в полном демоническом обличии, и твой хвост такой же толстый и соблазнительный, как и её...)]
 	</p>
 	<p>
-		Although clearly meant as a compliment, this remark seems to cause Lilaya to let out an embarrassed little cry, and, wrapping her tail around her body, she desperately clutches it in both hands as she turns and exclaims, [lilaya.speech(Th-Thick?! W-What are you even saying?! Y-You've got one more c-chance, o-ok?! S-Stop embarrassing me!)]
+		Хотя это явно было сказано как комплимент, от такого замечания Lilaya, кажется, издает смущенный тоненький вскрик; обхватив хвост вокруг тела, она отчаянно сжимает его обеими руками, разворачивается и восклицает: [lilaya.speech(Т-толстый?! Ч-что ты вообще такое несешь?! У т-тебя есть еще один ш-шанс, о-ок?! Х-хватит меня смущать!)]
 	</p>
 	<p>
-		With that, and still clutching her tail, Lilaya turns and marches off down the stairs, with you and [daddy.name] in hot pursuit. As you follow your [lilaya.relation(pc)] down and out into Demon Home, you find yourself glancing down at the base of Lilaya's tail, and remarking to yourself how it is indeed quite thick, easily having a circumference as large as one of her arms at the base. As she comes to a halt in front of the two of you, you see that she's holding her tail quite gently, and before letting it go and turning to face you, she gives it an almost-unnoticeable tender stoke.
+		С этими словами, все еще сжимая хвост, Lilaya разворачивается и уходит вниз по лестнице, а ты и [daddy.name] бросаетесь в погоню. Следуя за своей [lilaya.relation(pc)] вниз, в Демоний Дом, ты ловишь себя на том, что поглядываешь на основание хвоста Lilaya, отмечая про себя, что он и впрямь довольно толстый — у основания его обхват легко сравним с ее рукой. Когда она замирает перед вами, ты замечаешь, что она держит хвост очень нежно, и прежде чем отпустить его и повернуться к тебе, она делает почти незаметное ласковое поглаживание.
 	</p>
 	<p>
-		[lilaya.speech(So, where are we going?)] she asks.
+		[lilaya.speech(Ну и куда мы идем?)] — спрашивает она.
 	</p>
 	<p>
 		[daddy.speech(Я думал, мы могли бы пойти и поесть в 'Temptation',)] [daddy.name] отвечает.
@@ -529,17 +529,17 @@
 		После того, как вас троих посадили, официантка раздаёт каждому меню, прежде чем сообщить, что она вернётся через минуту, чтобы принять ваши заказы на напитки, и затем уходит, оставляя вас троих в покое.
 	</p>
 	<p>
-		[lilaya.speech(No way,)] Lilaya says, clearly impressed by how [daddy.name] got the three of you in here so easily, [lilaya.speech(How did you even do that? Last I heard, this place is fully booked at least six months in advance.)]
+		[lilaya.speech(Да ладно,)] — говорит Lilaya, явно впечатленная тем, как [daddy.name] так легко затащил вас троих сюда, [lilaya.speech(Как тебе это вообще удалось? Насколько я слышала, здесь всё забронировано как минимум на полгода вперед.)]
 	</p>
 	<p>
-		[daddy.speech(Ah, well, you know how it is,)] [daddy.name] responds in as nonchalant a manner as he can, [daddy.speech(I just helped the owner out with some minor repairs here and there when this place was first setting up, and now he seems to think he's eternally in my debt or something. Anyway, do you two want to start with a bottle of wine?)]
+		[daddy.speech(Ах, ну, сама понимаешь, как это бывает,)] [daddy.name] отвечает настолько небрежно, насколько это возможно: [daddy.speech(Когда это место только открывалось, я помогал владельцу с мелким ремонтом тут и там, и теперь он, кажется, считает, что навеки мне обязан. В любом случае, вы двое не хотите начать с бутылочки вина?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_INITIAL_MEETING_TO_DINNER_FLIRT"><![CDATA[
 	<p>
-		Deciding to help your stuttering [lilaya.relation(pc)] out, you move a little closer to her, and, making sure to use several sexual innuendos, you remind her of what she said back in her lab, about how it would be nice to have a father figure. Although it doesn't help with her blushing, your words do seem to have a positive effect, and, looking the silver-haired [daddy.race] in the eyes, she replies, [lilaya.speech(Ok, [daddy.name], I'll give you a trial run as my... a-as my... [daddy.daddy]. B-But you'd better be serious about everything you've said! Don't make me regret giving you this chance!)]
+		Решив помочь своей заикающейся [lilaya.relation(pc)], ты придвигаешься к ней чуть ближе и, не забывая вставлять двусмысленные намеки, напоминаешь ей о том, что она говорила в своей лаборатории — о том, как было бы здорово иметь фигуру отца. И хотя это не помогает ей перестать краснеть, твои слова, кажется, производят положительный эффект, и, глядя сереброволосой [daddy.race] в глаза, она отвечает: [lilaya.speech(Хорошо, [daddy.name], я дам тебе пробный период в качестве моего... о-одного моего... [daddy.daddy]. Н-но лучше будь серьезен во всем, что сказал! Не заставляй меня жалеть о том, что я дала тебе этот шанс!)]
 	</p>
 	<p>
 		[daddy.speech(Ты не пожалеешь, я обещаю,)] отвечает [daddy.name].
@@ -548,16 +548,16 @@
 		Не в силах больше смотреть на [daddy.her] в глаза и всё ещё явно чрезвычайно смущённая этой всей ситуацией, Лилая отворачивается от [daddy.name], прежде чем спрашивает, [lilaya.speech(Итак, мы будем стоять в этом коридоре всю ночь или что?)] 
 	</p>
 	<p>
-		[daddy.speech(Good point, lets head out,)] [daddy.name] replies, grabbing [daddy.her] keys and stepping out of [daddy.her] apartment. Smiling at you, [daddy.she] then glances down at the back of Lilaya's dress, where a large hole has been cut in the fabric in order to allow her tail to comfortably swing down behind her. [daddy.speech(You know, you really are so similar to your mother. I had the good fortune to see her take on her full demonic appearance once, and your tail is just as thick and alluring as hers...)]
+		[daddy.speech(Верное замечание, пошли,] [daddy.name] отвечает, хватая ключи [daddy.her] и выходя из квартиры [daddy.her]. Улыбнувшись тебе, [daddy.she] затем бросает взгляд на спину платья Lilaya, где в ткани прорезана большая дыра, чтобы её хвост мог свободно свисать сзади. [daddy.speech(Знаешь, ты действительно так похожа на свою мать. Мне посчастливилось однажды увидеть её в её истинном демоническом обличье, и твой хвост такой же толстый и манящий, как и её...))]
 	</p>
 	<p>
-		Although clearly meant as a compliment, this remark seems to cause Lilaya to let out an embarrassed little cry, and, wrapping her tail around her body, she desperately clutches it in both hands as she turns and exclaims, [lilaya.speech(Th-Thick?! W-What are you even saying?! Y-You've got one more c-chance, o-ok?! S-Stop embarrassing me!)]
+		Хотя это явно было сказано как комплимент, от такого замечания Lilaya, кажется, издает смущенный тоненький вскрик; обхватив хвост вокруг тела, она отчаянно сжимает его обеими руками, разворачивается и восклицает: [lilaya.speech(Т-толстый?! Ч-что ты вообще такое несешь?! У т-тебя есть еще один ш-шанс, о-ок?! Х-хватит меня смущать!)]
 	</p>
 	<p>
-		With that, and still clutching her tail, Lilaya turns and marches off down the stairs, with you and [daddy.name] in hot pursuit. As you follow your [lilaya.relation(pc)] down and out into Demon Home, you find yourself glancing down at the base of Lilaya's tail, and remarking to yourself how it is indeed quite thick, easily having a circumference as large as one of her arms at the base. As she comes to a halt in front of the two of you, you see that she's holding her tail quite gently, and before letting it go and turning to face you, she gives it an almost-unnoticeable tender stoke.
+		С этими словами, все еще сжимая хвост, Lilaya разворачивается и уходит вниз по лестнице, а ты и [daddy.name] бросаетесь в погоню. Следуя за своей [lilaya.relation(pc)] вниз, в Демоний Дом, ты ловишь себя на том, что поглядываешь на основание хвоста Lilaya, отмечая про себя, что он и впрямь довольно толстый — у основания его обхват легко сравним с ее рукой. Когда она замирает перед вами, ты замечаешь, что она держит хвост очень нежно, и прежде чем отпустить его и повернуться к тебе, она делает почти незаметное ласковое поглаживание.
 	</p>
 	<p>
-		[lilaya.speech(So, where are we going?)] she asks.
+		[lilaya.speech(Ну и куда мы идем?)] — спрашивает она.
 	</p>
 	<p>
 		[daddy.speech(Я думал, мы могли бы пойти и поесть в 'Temptation',)] [daddy.name] отвечает.
@@ -628,33 +628,33 @@
 		Ты не можешь не улыбнуться, когда видишь, что официантка заметила, что ты ведешь себя очень сексуально по отношению к обоим [daddy.name] и Лилайе, и, следовательно, поставила на стол зажженную свечу, а также маленькую вазу с одной красивой розой, создавая очень романтическую атмосферу. После того, как вас троих посадили, каждому вручили меню, а затем официант сообщил, что он скоро вернется, чтобы принять ваши заказы на напитки, официант уходит, оставляя тебя, Лилайю и [daddy.name] в одиночестве.
 	</p>
 	<p>
-		[daddy.speech(Do you two want to share a bottle of wine with me?)] [daddy.name] asks, relaxing back in [daddy.her] chair as [daddy.she] flashes you both a seductive smile.
+		[daddy.speech(Хотите разделить со мной бутылочку вина?)] [daddy.name] спрашивает, расслабленно откидываясь в кресле [daddy.her] и одаривая вас обоих соблазнительной улыбкой [daddy.she].
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="MEETING_STAY_IN_APARTMENT"><![CDATA[
 	<p>
-		You tell [daddy.name] that you'd like to come in and hang out in [daddy.her] apartment for a while, to which [daddy.she] happily replies, [daddy.speech(Of course, come right in!)]
+		Ты говоришь [daddy.name], что хотел бы зайти и немного посидеть в квартире [daddy.her], на что [daddy.she] радостно отвечает: [daddy.speech(Конечно, заходите!)]
 	</p>
 	<p>
-		After stepping inside, [daddy.name] shuts the front door after you, before leading you through the entrance hall and into [daddy.her] open-plan lounge-cum-kitchen. Sitting down on the comfortable sofa found in this area, you smile up at [daddy.name] as [daddy.she] fetches the two of you some drinks and snacks.
+		Войдя внутрь, [daddy.name] закрывает за вами входную дверь, после чего ведет вас через прихожую в объединенную гостиную-кухню [daddy.her]. Устроившись на уютном диване в этой комнате, ты улыбаешься [daddy.name], пока [daddy.she] приносит вам напитки и закуски.
 	</p>
 	<p>
-		[daddy.speech(So, how are things with you?)] [daddy.name] asks, sitting down on the chair next to your sofa.
+		[daddy.speech(Ну, как у вас дела?)] [daddy.name] спрашивает, присаживаясь на стул рядом с твоим диваном.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_MEETING_STAY_IN_APARTMENT"><![CDATA[
 	<p>
-		You tell [daddy.name] that you and Lilaya would like to come in and hang out in [daddy.her] apartment for a while, to which [daddy.she] happily replies, [daddy.speech(Of course, come right in, you two!)]
+		Ты говоришь [daddy.name], что вы с Lilaya хотели бы зайти и немного посидеть в [daddy.her] квартире, на что [daddy.she] радостно отвечает: [daddy.speech(Конечно, заходите, вы оба!)]
 	</p>
 	<p>
-		After stepping inside, [daddy.name] shuts the front door after you, before leading you through the entrance hall and into [daddy.her] open-plan lounge-cum-kitchen. Sitting down next to one another on the comfortable sofa found in this area, you and Lilaya smile up at [daddy.name] as [daddy.she] fetches some drinks and snacks.
+		Войдя внутрь, [daddy.name] закрывает за вами входную дверь, а затем ведет вас через прихожую в объединенную гостиную-кухню [daddy.her]. Устроившись рядом на уютном диване, вы с Lilaya с улыбкой смотрите на [daddy.name], пока [daddy.she] приносит напитки и закуски.
 	</p>
 	<p>
-		[daddy.speech(So, how are my two favourite step-kids-to-be doing?)] [daddy.name] asks, sitting down on the chair next to your sofa.
+		[daddy.speech(Ну, как поживают мои два любимых будущих пасынка и падчерица?)] — спрашивает [daddy.name], усаживаясь в кресло рядом с вашим диваном.
 	</p>
 	]]>
 	</htmlContent>
@@ -692,31 +692,31 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly turning down [daddy.her] offer of wine, you tell [daddy.name] that you'd prefer to drink water this evening, before batting your eyelids at [daddy.herHim] and asking how [daddy.she] was able to get past the front queue so easily.
+			Кокетливо отклонив предложение [daddy.her] выпить вина, ты говоришь [daddy.name], что сегодня вечером предпочтешь воду, после чего застенчиво хлопаешь ресницами, глядя на [daddy.herHim], и спрашиваешь, как [daddy.she] удалось так легко проскочить через очередь у входа.
 		#ELSE
-			Turning down [daddy.her] offer of wine, you inform [daddy.name] that you'll stick to drinking water this evening, before asking [daddy.herHim] how [daddy.she] was able to get past the front queue so easily.
+			Отклонив предложение [daddy.her] выпить вина, ты сообщаешь [daddy.name], что сегодня вечером остановишься на воде, а затем спрашиваешь [daddy.herHim], как [daddy.she] удалось так легко проскочить через очередь у входа.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		[daddy.speech(Well, you know how it is,)] [daddy.she] responds, smiling as [daddy.she] tries to act as nonchalant as possible, [daddy.speech(I helped the owner out with some repairs when he first set this place up, and he feels like he's in my debt or something.)]
+		[daddy.speech(Ну, сама понимаешь, как это бывает,)] [daddy.she] отвечает с улыбкой, пока [daddy.she] пытается казаться как можно более невозмутимой, [daddy.speech(Я помог владельцу с ремонтом, когда он только открывал это место, и теперь он чувствует себя будто должником.)]
 	</p>
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
 			#IF(!pc.isTaur())
-				Running your [pc.foot] up the length of [daddy.namePos] leg, you bite your lip as you ask if that's what [daddy.she] does for a living. Clearly getting turned on by your teasing, the silver-haired [daddy.race] gazes hungrily into your [pc.eyes] as [daddy.she] answers,
+				Проводя своей [pc.foot] вдоль всей ноги [daddy.namePos], ты закусываешь губу и спрашиваешь, не этим ли [daddy.she] занимается профессионально. Очевидно возбужденный твоим дразнением, сереброволосый [daddy.race] жадно смотрит тебе в [pc.eyes], пока [daddy.she] отвечает,
 			#ELSE
-				Making a show of glancing down at [daddy.namePos] muscular chest, you bite your lip as you ask if that's what [daddy.she] does for a living. Clearly getting turned on by your teasing, the silver-haired [daddy.race] gazes hungrily into your [pc.eyes] as [daddy.she] answers,
+				Демонстративно бросив взгляд на мускулистую грудь [daddy.namePos], ты закусываешь губу и спрашиваешь, не этим ли [daddy.she] занимается профессионально. Очевидно возбужденный твоим дразнением, сереброволосый [daddy.race] жадно смотрит тебе в [pc.eyes], пока [daddy.she] отвечает,
 			#ENDIF
 		#ELSE
-			Asking [daddy.herHim] if that's what [daddy.she] does for a living, the silver-haired [daddy.race] nods and answers,
+			Спрашиваешь [daddy.herHim], не этим ли [daddy.she] занимается профессионально, и сереброволосый [daddy.race] кивает и отвечает,
 		#ENDIF
-		 [daddy.speech(That's right, I work as a contractor in the construction industry. Demons are always in high demand for jobs like that, what with us being able to harness the arcane in order to telekinetically manipulate matter and such.)]
+		 [daddy.speech(Все верно, я работаю подрядчиком в строительной сфере. Демоны всегда пользуются спросом на такой работе, учитывая нашу способность использовать Аркану, чтобы телекинетически манипулировать материей и тому подобным.)]
 	</p>
 	<p>
-		At this point, the waiter returns to take your orders for drinks, and after he's done so, soon returns with your bottled water and [daddy.namePos] glass of wine. You then place your orders for your meals, and after that's done, you're finally able to move on and ask [daddy.name] what this is all about.
+		В этот момент официант возвращается, чтобы принять заказ на напитки, а вскоре после этого приносит бутылку воды и [daddy.namePos] бокал вина. Затем вы заказываете еду, и, когда с этим покончено, вы наконец можете перейти к делу и спросить [daddy.name], что всё это значит.
 	</p>
 	]]>
 	</htmlContent>
@@ -725,21 +725,21 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly accepting [daddy.her] offer of wine, you tell [daddy.name] that it would be fun to let yourself go a little this evening, before batting your eyelids at [daddy.herHim] and asking how [daddy.she] was able to get past the front queue so easily.
+			Кокетливо принимая предложение [daddy.her] угостить вас вином, вы говорите [daddy.name], что сегодня вечером было бы неплохо немного расслабиться, после чего игриво хлопаете ресницами, глядя на [daddy.herHim], и спрашиваете, как [daddy.she] удалось так легко проскочить очередь у входа.
 		#ELSE
-			Accepting [daddy.her] offer of wine, you tell [daddy.name] that you'll let [daddy.herHim] pick the vintage, before asking [daddy.herHim] how [daddy.she] was able to get past the front queue so easily.
+			Принимая предложение [daddy.her] угостить вас вином, вы говорите [daddy.name], что позволите [daddy.herHim] выбрать сорт, после чего спрашиваете [daddy.herHim], как [daddy.she] удалось так легко проскочить очередь у входа.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		[daddy.speech(Well, you know how it is,)] [daddy.she] responds, smiling as [daddy.she] tries to act as nonchalant as possible, [daddy.speech(I helped the owner out with some repairs when he first set this place up, and he feels like he's in my debt or something.)]
+		[daddy.speech(Ну, сама понимаешь, как это бывает,)] [daddy.she] отвечает с улыбкой, пока [daddy.she] пытается казаться как можно более невозмутимой, [daddy.speech(Я помог владельцу с ремонтом, когда он только открывал это место, и теперь он чувствует себя будто должником.)]
 	</p>
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
 			#IF(!pc.isTaur())
-				Running your [pc.foot] up the length of [daddy.namePos] leg, you bite your lip as you ask if that's what [daddy.she] does for a living. Clearly getting turned on by your teasing, the silver-haired [daddy.race] gazes hungrily into your [pc.eyes] as [daddy.she] answers,
+				Проводя своей [pc.foot] вдоль всей ноги [daddy.namePos], ты закусываешь губу и спрашиваешь, не этим ли [daddy.she] занимается профессионально. Очевидно возбужденный твоим дразнением, сереброволосый [daddy.race] жадно смотрит тебе в [pc.eyes], пока [daddy.she] отвечает,
 			#ELSE
 				Делая вид, что смотришь вниз на мускулистый торс [daddy.namePos], ты сжимаешь губы, спрашивая, не это ли делает [daddy.she]. Очевидно, ты возбуждаешься от своих собственных кокетничаний, и [daddy.race] с серебряными волосами жадно смотрит на твои [pc.eyes], в то время как [daddy.she] отвечает,
 			#ENDIF
@@ -772,22 +772,22 @@
 Текст:
 	</p>
 	<p>
-		[daddy.speech(Yeah, yeah, I know marriages aren't exactly a fashionable thing, but there's something deep inside me that just wants the two of us to be together forever,)] [daddy.name] replies, [daddy.her] voice taking on an uncharacteristically sincere tone, [daddy.speech(So ever since that moment I first saw her, I've been working towards making my dream a reality. I quickly found out that she only likes humans, hence this appearance I choose to take on, and, rather unfortunately, that she secludes herself in that fortified palace down in Submission. I tried countless times to get an audience with her, but those guards at the front gate made it quite clear that such a thing would be 'absolutely impossible'. It was then that I realised I was only trying to take on half of my future responsibilities; once we're married, I'll have to look after not only Lyssieth, but also all of her recognised children. Realising this, I decided to set out and convince her daughters that I'd make a suitable father for them. If I'm able to do that, Lyssieth will definitely want to meet me!)]
+		[daddy.speech(Да-да, я знаю, что браки сейчас — не самая модная штука, но где-то глубоко внутри меня живет желание, чтобы мы были вместе вечно,)] [daddy.name] отвечает, [daddy.her] голос принимает несвойственный ему искренний тон, [daddy.speech(Так что с того самого момента, как я впервые её увидел, я только и делаю, что пытаюсь воплотить свою мечту в реальность. Я быстро понял, что ей нравятся только люди, отсюда и этот облик, который я выбрал, и, к сожалению, что она заперлась в том укрепленном дворце в Submission. Я бесчисленное количество раз пытался добиться аудиенции, но стражники у главных ворот ясно дали понять, что это «абсолютно невозможно». Именно тогда я осознал, что пытаюсь взять на себя лишь половину будущих обязанностей; когда мы поженимся, мне придется заботиться не только о Lyssieth, но и обо всех её признанных детях. Поняв это, я решил отправиться в путь и убедить её дочерей, что стану для них достойным отцом. Если мне это удастся, Lyssieth точно захочет со мной встретиться!)]
 	</p>
 	<p>
-		[pc.speech(So why are you focused on Lilaya, and not also attempting to convince Meraxis?)] you ask.
+		[pc.speech(Так почему ты сосредоточен на Lilaya, а не пытаешься убедить еще и Meraxis?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[daddy.speech(Hah, well, as you must know, she's a little more... <i>eccentric</i> than her sister,)] [daddy.name] replies, [daddy.speech(I actually managed to meet her fairly easily, but she insisted on duelling me in single combat in order to 'prove my worth' to her. I'm willing to do anything it takes to be by Lyssieth's side, so I quickly accepted... She didn't look so powerful, despite all of her boasting and talk of 'destroying the universe', but I seriously underestimated her... The next thing I knew, I was being thrown out of her fortress, and being told to only return when I'm worthy of fighting her again.)]
+		[daddy.speech(Ха, ну, как ты наверняка знаешь, она чуть более... <i>эксцентрична</i>, чем её сестра,)] [daddy.name] отвечает, [daddy.speech(На самом деле мне удалось встретиться с ней довольно легко, но она настояла на дуэли со мной один на один, чтобы «доказать мою ценность». Я готов на всё, лишь бы быть рядом с Lyssieth, так что быстро согласился... Она не казалась такой уж могущественной, несмотря на всё её хвастовство и разговоры о «разрушении вселенной», но я серьезно её недооценил... В следующий миг я уже вылетал из её крепости, и мне велели возвращаться только тогда, когда я снова буду достоин сразиться с ней.)]
 	</p>
 	<p>
-		At this moment, your food arrives, and [daddy.namePos] story is momentarily put on hold as the two of you start eating. 
+		В этот момент приносят твою еду, и рассказ [daddy.namePos] ненадолго прерывается, так как вы оба начинаете трапезу. 
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			 Quickly discovering that the food served here is nothing short of exceptional, you allow the conversation to slow down in order to fully enjoy it, while still making sure to throw in a flirtatious remark here and there.
+			 Быстро обнаружив, что местная еда просто исключительна, ты позволяешь беседе замедлиться, чтобы в полной мере насладиться вкусом, время от времени вставляя кокетливые замечания.
 		#ELSE
-			 Quickly discovering that the food served here is nothing short of exceptional, you happily allow the conversation to slow down in order to fully enjoy it.
+			 Быстро обнаружив, что местная еда просто исключительна, ты с удовольствием позволяешь беседе замедлиться, чтобы в полной мере насладиться вкусом.
 		#ENDIF
-		 With this break in the flow of [daddy.her] story, [daddy.name] starts recounting some of [daddy.her] history, and you soon discover that [daddy.sheIs] an unrecognised descendant of the elder Lilin, Lovienne, and has spent most of [daddy.her] life working in the construction industry here in Dominion.
+		 С этим перерывом в повествовании [daddy.her], [daddy.name] начинает пересказывать часть [daddy.her] истории, и вскоре ты обнаруживаешь, что [daddy.sheIs] — непризнанная потомок старейшей лилин, Ловиенн, и большую часть [daddy.her] жизни провела, работая в строительной индустрии здесь, в Dominion.
 	</p>
 	<p>
 		Вскоре вы оба закончили есть, и [daddy.name] снова возвращает тему разговора к тому, почему [daddy.she] привел вас сюда, [daddy.speech(Первое, с чем мне нужна ваша помощь, это мое внешнее сходство. Я никогда не мог получить достойный ответ от кого-либо, кто действительно знает ее, и, поскольку вы с ней связаны, вы должны знать... Моя внешность - это то, что нравится Lyssieth?)]
@@ -806,16 +806,16 @@
 		 Отбросив это предупреждение, он говорит, [daddy.speech(Это все, что мне нужно было знать, я уверен, что смогу соблазнить Lyssieth, если только смогу ее встретить! Вот где мне действительно нужна ваша помощь...)]
 	</p>
 	<p>
-		You ask [daddy.name] what he has in mind, and, leaning forwards in his chair, he takes on a serious tone as he says, [daddy.speech(I'll need you to convince Lilaya to accept me as her father, and to come out here and meet me. No matter what I try, that cat-girl maid of hers always instantly shoots me down, so I can't do this without your help... Oh, and there is one other very important thing. I'm going to need to show Lyssieth that several of her children have already accepted me as their father, and as you're related to her, that includes you, doesn't it)]
+		Ты спрашиваешь [daddy.name], что у него на уме, и он, подавшись вперед в кресле, принимает серьезный тон и говорит: [daddy.speech(Мне нужно, чтобы ты убедила Lilaya принять меня как своего отца и пришла сюда, чтобы встретиться со мной. Что бы я ни пробовал, эта её кошкодевочка-горничная всегда мгновенно дает мне от ворот поворот, так что без твоей помощи мне не справиться... О, и есть еще одна очень важная вещь. Мне нужно будет показать Lyssieth, что несколько её детей уже приняли меня как своего отца, а раз ты её родственница, то это касается и тебя, верно?)]
 	</p>
 	<p>
-		[pc.speech(Well, it's a little more complicated than that,)] you reply.
+		[pc.speech(Ну, всё немного сложнее, чем кажется,)] — отвечаешь ты.
 	</p>
 	<p>
-		[daddy.speech(In any case, you're directly related to her,)] [daddy.name] says, [daddy.speech(so I need you to accept me as your father. That includes you calling me '[daddy.daddy]'.)]
+		[daddy.speech(В любом случае, ты её прямая родственница,)] — говорит [daddy.name], [daddy.speech(так что мне нужно, чтобы ты приняла меня как своего отца. А это значит, что ты должна называть меня «[daddy.daddy]».)]
 	</p>
 	<p>
-		You're caught off-guard by this demand suddenly being made of you, and before you're able to think of a response, [daddy.name] continues, [daddy.speech(It wouldn't be so bad having me as your new dad, would it? If you agree to help me like this, I'll give you all of my old arcane spell books and scrolls.)]
+		Это внезапное требование застает тебя врасплох, и прежде чем ты успеваешь придумать ответ, [daddy.name] продолжает, [daddy.speech(В том, чтобы сделать меня своим новым папочкой, нет ничего плохого, правда? Если ты согласишься помочь мне вот так, я отдам тебе все свои старые книги и свитки с арканными заклинаниями.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -824,7 +824,7 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Thinking that it would be a lot hotter if [daddy.name] took on his succubus form, you tell him that Lyssieth seems to prefer to be surrounded by females, and, making sure to make several sexual remarks, attempt to convince him that he'd probably have a better chance at seducing her if he transformed himself into one.		#ELSE
+			Подумав о том, что было бы куда горячее, если бы [daddy.name] приняла облик суккуба, ты говоришь ему, что Lyssieth, кажется, предпочитает общество женщин, и, не упуская возможности отпустить несколько сексуальных замечаний, пытаешься убедить его, что у него будет гораздо больше шансов соблазнить её, если он превратится в одну из них.		#ELSE
 			Думая, что было бы лучше, если бы [daddy.name] принял свою форму сукубы, ты говоришь ему, что Лиссеит, кажется, предпочитает быть окруженной женщинами, и что у него, вероятно, будет больше шансов соблазнить её, если он превратится в одну из них.
 		#ENDIF
 
@@ -841,20 +841,20 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Sitting down in front of you, [daddy.name] lets out an exhausted sigh, and as her chest moves, you can't help but glance down and see that her now-large nipples are clearly visible through the stretched fabric of her t-shirt. Seeing this really starts to turn you on, and you can't help but make a complimentary, sexual remark about her new body.
+			Сев перед тобой, [daddy.name] издает изнуренный вздох, и когда её грудь вздымается, ты невольно опускаешь взгляд и видишь, что её теперь уже огромные соски отчетливо проступают сквозь натянутую ткань футболки. Это зрелище начинает по-настоящему тебя заводить, и ты не можешь удержаться от комплиментарного, сексуального замечания по поводу её нового тела.
 		#ELSE
-			Sitting down in front of you, [daddy.name] lets out an exhausted sigh, and as her chest moves, you can't help but notice that her now-large nipples are clearly visible through the stretched fabric of her t-shirt.
+			Сев перед тобой, [daddy.name] издает изнуренный вздох, и когда её грудь вздымается, ты невольно замечаешь, что её теперь уже огромные соски отчетливо проступают сквозь натянутую ткань футболки.
 		#ENDIF
-		 As her full lips turn up into a smile, she says, in a much higher-pitched, feminine voice, [daddy.speech(You know, it's been so long since I took on this form that I forgot how good it feels... Anyway, what do you think? Would Lyssieth like me more now?)]
+		 Когда её полные губы расплываются в улыбке, она произносит гораздо более высоким, женственным голосом: [daddy.speech(Знаешь, прошло столько времени с тех пор, как я приняла этот облик, что я и забыла, как это приятно... В общем, что думаешь? Ты считаешь, Lyssieth будет любить меня больше теперь?)]
 	</p>
 	<p>
-		You can't help but feel a lot happier with [daddy.namePos] new appearance, and after quickly replying in the positive, you ask her what else she wanted you to help her with. Leaning forwards in her chair, she takes on a serious tone as she says, [daddy.speech(Well, now that I've got the right looks, I need you to convince Lilaya to accept me as her father... No, wait, I guess now it'd be her second mother... And also for her to come out here and meet me. No matter what I try, that cat-girl maid of hers always instantly shoots me down, so I can't do this without your help. Oh, and there is one other very important thing. I'm going to need to show Lyssieth that as many of her children have already accepted me as their new parent as possible, and as you're related to her, that includes you, doesn't it)]
+		Ты не можешь не почувствовать прилив радости от нового облика [daddy.namePos], и, быстро ответив утвердительно, спрашиваешь её, в чём ещё тебе нужно ей помочь. Подавшись вперёд в своём кресле, она принимает серьёзный тон и говорит: [daddy.speech(Ну, раз уж я теперь выгляжу как надо, мне нужно, чтобы ты убедил Lilaya принять меня как своего отца... Нет, погоди, наверное, теперь я буду для неё второй матерью... А ещё нужно, чтобы она вышла сюда и встретилась со мной. Что бы я ни пыталась, эта её кошкодевочка-горничная вечно сразу меня отшивает, так что без твоей помощи мне не справиться. О, и есть ещё одна очень важная вещь. Мне нужно показать Lyssieth, что как можно больше её детей уже приняли меня как своего нового родителя, а раз ты с ней родственник, то это касается и тебя, верно?)]
 	</p>
 	<p>
-		[pc.speech(Well, it's a little more complicated than that,)] you reply.
+		[pc.speech(Ну, всё немного сложнее, чем кажется,)] — отвечаешь ты.
 	</p>
 	<p>
-		[daddy.speech(In any case, you're directly related to her,)] [daddy.name] says, [daddy.speech(so I need you to accept me as your mother. That includes you calling me '[daddy.daddy]'.)]
+		[daddy.speech(В любом случае, ты с ней напрямую связан,)] — говорит [daddy.name], — [daddy.speech(так что мне нужно, чтобы ты принял меня как свою мать. А это значит, что ты должен называть меня «[daddy.daddy]».)]
 	</p><p>
 		Ты застигнута врасплох этой внезапной просьбой, и прежде чем ты успеваешь подумать о ответе, [daddy.name] продолжает: [daddy.speech(Не так уж плохо иметь меня своей новой мамой, не так ли? Если ты согласна помочь мне таким образом, я дам тебе все мои старые книги и свитки по аркана.)]
 	</p>
@@ -865,18 +865,18 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly turning down [daddy.her] offer of wine, you tell [daddy.name] that you'd prefer to drink water this evening, before batting your eyelids at [daddy.herHim] and asking how [daddy.sheHas] been lately.
+			Кокетливо отвергая предложение [daddy.her] угостить тебя вином, ты говоришь [daddy.name], что этим вечером предпочтешь воду, после чего застенчиво хлопаешь ресницами, глядя на [daddy.herHim], и спрашиваешь, как [daddy.sheHas] поживает в последнее время.
 		#ELSE
-			Turning down [daddy.her] offer of wine, you inform [daddy.name] that you'll stick to drinking water this evening, before asking [daddy.herHim] how [daddy.sheHas] been lately.
+			Отвергнув предложение [daddy.her] выпить вина, ты сообщаешь [daddy.name], что этим вечером остановишься на воде, а затем спрашиваешь [daddy.herHim], как [daddy.sheHas] поживает в последнее время.
 		#ENDIF
-		 Responding positively, [daddy.name] tells you that [daddy.sheHas] been well, although he hasn't had much time in which to relax, as [daddy.sheIs] currently busy working on several projects around the city.
+		 Отвечая утвердительно, [daddy.name] говорит тебе, что у [daddy.sheHas] всё было хорошо, хотя у него не было много времени на отдых, так как [daddy.sheIs] сейчас занят работой над несколькими проектами по всему городу.
 	</p>
 	<p>
-		At this point, the waiter returns to take your orders for drinks, and after he's done so, soon returns with your bottled water and [daddy.namePos] glass of wine. You then place your orders for your meals, and after that's done,
+		В этот момент официант возвращается, чтобы принять заказ на напитки, а вскоре после этого приносит бутылку воды и [daddy.namePos] бокал вина. Затем вы заказываете еду, и когда с этим покончено,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			 you're able to really get started on flirting with and teasing your [daddy.daddy].
+			 ты можешь по-настоящему приступить к флирту и дразнилкам со своим [daddy.daddy].
 		#ELSE
-			 you're able to get a real conversation going with your [daddy.daddy].
+			 тебе удается завязать настоящий разговор со своим [daddy.daddy].
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
@@ -888,9 +888,9 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly accepting [daddy.her] offer of wine, you tell [daddy.name] that it would be fun to let yourself go a little this evening, before batting your eyelids at [daddy.herHim] and asking how [daddy.sheHas] been lately.
+			Кокетливо принимая предложение [daddy.her] угостить тебя вином, ты говоришь [daddy.name], что этим вечером было бы весело немного расслабиться, после чего застенчиво хлопаешь ресницами, глядя на [daddy.herHim], и спрашиваешь, как [daddy.sheHas] поживает в последнее время.
 		#ELSE
-			Accepting [daddy.her] offer of wine, you tell [daddy.name] that you'll let [daddy.herHim] pick the vintage, before asking [daddy.herHim] how [daddy.sheHas] been lately.		#ENDIF
+			Приняв предложение [daddy.her] угостить тебя вином, ты говоришь [daddy.name], что позволишь [daddy.herHim] выбрать сорт, после чего спрашиваешь [daddy.herHim], как [daddy.sheHas] поживает в последнее время.		#ENDIF
 		 Отвечая положительно, [daddy.name] говорит вам, что [daddy.sheHas] чувствует себя хорошо, хотя у него не было много времени, чтобы расслабиться, так как [daddy.sheIs] в настоящее время занят работой над несколькими проектами по всему городу.
 	</p>
 	<p>
@@ -915,10 +915,10 @@
 			#ELSE
 				Делая вид, что жадно смотришь вниз на тело [daddy.namePos], ты кокетливо спрашиваешь, нравится ли [daddy.sheIs] твое общество. Очевидно, возбужденная вашим дразнением, [daddy.race] отвечает очень положительно и дает вам понять, что [daddy.she] хотел бы, чтобы вы вернулись в квартиру [daddy.her] после вашего ужина.			#ENDIF
 		<p>
-			Continuing to flirt with one another in this manner, it doesn't take long before you've both finished with your meals, and after setting [daddy.her] cutlery down, [daddy.name] asks you if you'd like to order some dessert.
+			Вы продолжаете так непринужденно флиртовать, и вскоре оба заканчиваете трапезу; отложив [daddy.her] столовые приборы, [daddy.name] спрашивает, не хочешь ли ты заказать десерт.
 		</p>
 		#ELSE
-			 It doesn't take long before you've both finished with your meals, and after setting [daddy.her] cutlery down, [daddy.name] asks you if you'd like to order some dessert.
+			 Вскоре вы оба заканчиваете трапезу, и после того как [daddy.her] откладывает приборы, [daddy.name] спрашивает тебя, не хочешь ли ты заказать десерт.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
@@ -930,19 +930,19 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly turning down [daddy.her] offer of wine, you tell [daddy.name] that you'd prefer to drink water this evening, before making several flirtatious remarks towards both [daddy.herHim] and Lilaya. Much to your delight, both of your companions seem more than happy to reciprocate with several sexual remarks of their own.
+			Кокетливо отклонив предложение [daddy.her] угостить тебя вином, ты говоришь [daddy.name], что этим вечером предпочтешь воду, после чего отпускаешь несколько игривых замечаний в адрес и [daddy.herHim], и Lilaya. К твоему delight, обе твои спутницы, кажется, с радостью отвечают тебе весьма сексуальными комментариями.
 		#ELSE
-			Turning down [daddy.her] offer of wine, you inform [daddy.name] that you'll stick to drinking water this evening, before asking [daddy.herHim] how [daddy.sheHas] been recently. Responding positively, [daddy.name] says that [daddy.sheHas] been well, although he hasn't had much time in which to relax, as [daddy.sheIs] currently busy working on several projects around the city.
+			Отклонив предложение [daddy.her] угостить тебя вином, ты сообщаешь [daddy.name], что сегодня остановишься на воде, после чего спрашиваешь [daddy.herHim], как [daddy.sheHas] поживает в последнее время. Отвечая с энтузиазмом, [daddy.name] говорит, что [daddy.sheHas] чувствует себя хорошо, хотя у него было не так много времени на отдых, так как [daddy.sheIs] сейчас занят работой над несколькими проектами по всему городу.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		At this point, the waiter returns to take your orders for drinks, and after he's done so, soon returns with your bottled water and a bottle of wine for Lilaya and [daddy.name] to share. You then place your orders for your meals, and after that's done,
+		В этот момент официант возвращается, чтобы принять заказ на напитки, а вскоре после этого приносит бутилированную воду и бутылку вина, которую Lilaya и [daddy.name] могут разделить на двоих. Затем вы заказываете еду, и когда с этим покончено,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			 you're able to really get started on flirting with and teasing your [lilaya.relation(pc)] and [daddy.daddy].
+			 ты можешь всерьез приняться флиртовать и дразнить свою [lilaya.relation(pc)] и [daddy.daddy].
 		#ELSE
-			 you're able to get a real conversation going with your [lilaya.relation(pc)] and [daddy.daddy].		#ENDIF
+			 ты можешь завязать настоящий разговор со своей [lilaya.relation(pc)] и [daddy.daddy].		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
@@ -953,9 +953,9 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly accepting [daddy.her] offer of wine, you tell [daddy.name] that it would be fun to let yourself go a little this evening, before making several flirtatious remarks towards both [daddy.herHim] and Lilaya. Much to your delight, both of your companions seem more than happy to reciprocate with several sexual remarks of their own.
+			Кокетливо принимая предложение [daddy.her] угостить вином, ты говоришь [daddy.name], что сегодня вечером было бы здорово немного расслабиться, после чего отпускаешь несколько кокетливых замечаний в адрес и [daddy.herHim], и Lilaya. К твоему восторгу, обе твои спутницы, кажется, с радостью отвечают тебе весьма сексуальными репликами.
 		#ELSE
-			Accepting [daddy.her] offer of wine, you tell [daddy.name] that you'll let [daddy.herHim] pick the vintage, before asking [daddy.herHim] how [daddy.sheHas] been recently. Responding positively, [daddy.name] says that [daddy.sheHas] been well, although he hasn't had much time in which to relax, as [daddy.sheIs] currently busy working on several projects around the city.
+			Принимая предложение [daddy.her] угостить вином, ты говоришь [daddy.name], что позволишь [daddy.herHim] выбрать сорт, после чего спрашиваешь [daddy.herHim], как поживает [daddy.sheHas]. Отвечая с энтузиазмом, [daddy.name] говорит, что у [daddy.sheHas] всё хорошо, хотя у него было не так много времени на отдых, так как [daddy.sheIs] сейчас занят работой над несколькими проектами по всему городу.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
@@ -963,9 +963,9 @@
 	<p>
 		В этот момент официант возвращается, чтобы принять ваши заказы на напитки, и после того, как он это сделает, вскоре возвращается с выбранной вами бутылкой вина. Затем вы делаете заказы на свои блюда, и после этого,
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			 you're able to really get started on flirting with and teasing your [lilaya.relation(pc)] and [daddy.daddy].
+			 ты можешь всерьез приняться флиртовать и дразнить свою [lilaya.relation(pc)] и [daddy.daddy].
 		#ELSE
-			 you're able to get a real conversation going with your [lilaya.relation(pc)] and [daddy.daddy].		#ENDIF
+			 ты можешь завязать настоящий разговор со своей [lilaya.relation(pc)] и [daddy.daddy].		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
@@ -974,10 +974,10 @@
 	
 	<htmlContent tag="LILAYA_DINNER_CORE"><![CDATA[
 	<p>
-		Soon enough, your food arrives, and your current conversation is momentarily put on hold as the three of you start eating.
+		Вскоре приносят еду, и ваш разговор ненадолго прерывается, так как вы втроем принимаетесь за трапезу.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
 			#IF(!pc.isTaur())
-				 Not letting a moment go to waste, you continue your flirting by running your [pc.foot] up the length of Lilaya's and [daddy.namePos] legs, pausing now and again to bite your lip and coyly ask if they are enjoying your company. Clearly getting turned on by your teasing, the two of them respond very much in the positive, with [daddy.name] making it well known to that [daddy.she] would like for the two of you to come back to [daddy.her] apartment after your meal. 
+				 Не желая упускать ни мгновения, ты продолжаешь флиртовать, проводя своей [pc.foot] по всей длине ног Lilaya и [daddy.namePos], время от времени прикусывая губу и кокетливо спрашивая, нравится ли им твоя компания. Очевидно возбужденные твоими ласками, обе девушки отвечают с энтузиазмом, при этом [daddy.name] дает понять, что [daddy.she] хотела бы, чтобы вы вдвоем зашли к ней в [daddy.her] квартиру после еды. 
 			#ELSE
 Делая вид, что жадно оглядываешь тело Лилаи и [daddy.namePos], ты прикусываешь губу, когда кокетливо спрашиваешь, нравится ли им твое общество. Очевидно, что они возбуждены твоей игривостью, и оба отвечают, что да, и [daddy.name] сообщает, что [daddy.she] хотел бы, чтобы вы оба вернулись в квартиру [daddy.her] после ужина.			#ENDIF
 <p>
@@ -1003,7 +1003,7 @@
 Текст:
 	</p>
 	<p>
-		At this point, the waiter returns to take your orders for drinks, and after he's done so, soon returns with your bottled water and a bottle of wine for Lilaya and [daddy.name] to share. You then place your orders for your meals, and after that's done, talk turns to the matter of [daddy.namePos] potential meeting with Lyssieth.
+		В этот момент возвращается официант, чтобы принять заказ на напитки, а вскоре приносит воду и бутылку вина, которую Lilaya и [daddy.name] должны разделить на двоих. Затем вы заказываете основные блюда, и после этого разговор переходит к вопросу о возможной встрече [daddy.namePos] с Lyssieth.
 	</p>
 	]]>
 	</htmlContent>
@@ -1012,22 +1012,22 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Coyly accepting [daddy.her] offer of wine, you tell [daddy.name] that it would be fun to let yourself go a little this evening, before making several flirtatious remarks towards both [daddy.herHim] and Lilaya. Much to your delight, both of your companions seem more than happy to reciprocate with several sexual remarks of their own.
+			Кокетливо принимая предложение [daddy.her] угостить вином, ты говоришь [daddy.name], что сегодня вечером было бы здорово немного расслабиться, после чего отпускаешь несколько кокетливых замечаний в адрес и [daddy.herHim], и Lilaya. К твоему восторгу, обе твои спутницы, кажется, с радостью отвечают тебе весьма сексуальными репликами.
 		#ELSE
-			Accepting [daddy.her] offer of wine, you tell [daddy.name] that you'll let [daddy.herHim] pick the vintage, before asking [daddy.herHim] how [daddy.sheHas] been recently. Responding positively, [daddy.name] says that [daddy.sheHas] been well, although he hasn't had much time in which to relax, as [daddy.sheIs] currently busy working on several projects around the city.
+			Принимая предложение [daddy.her] угостить вином, ты говоришь [daddy.name], что позволишь [daddy.herHim] выбрать сорт, после чего спрашиваешь [daddy.herHim], как поживает [daddy.sheHas]. Отвечая с энтузиазмом, [daddy.name] говорит, что у [daddy.sheHas] всё хорошо, хотя у него было не так много времени на отдых, так как [daddy.sheIs] сейчас занят работой над несколькими проектами по всему городу.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		At this point, the waiter returns to take your orders for drinks, and after he's done so, soon returns with your chosen bottle of wine. You then place your orders for your meals, and after that's done, talk turns to the matter of [daddy.namePos] potential meeting with Lyssieth.
+		В этот момент возвращается официант, чтобы принять заказ на напитки, а вскоре приносит выбранную вами бутылку вина. Затем вы заказываете основные блюда, и после этого разговор переходит к вопросу о возможной встрече [daddy.namePos] с Lyssieth.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_DINNER_CORE_INITIAL"><![CDATA[
 	<p>
-		[daddy.speech(So, with the two of you accepting me as your new [daddy.dad], Lyssieth is sure to want to meet me, isn't she?)] [daddy.name] asks, smiling at you and Lilaya.
+		[daddy.speech(Итак, раз уж вы обе приняли меня как своего нового [daddy.dad], Lyssieth наверняка захочет со мной познакомиться, верно?)] [daddy.name] спрашивает, улыбаясь тебе и Lilaya.
 	</p>
 	<p>
 		Вздохнув, Лилая пытается передать свои плохие новости как можно более мягко, [lilaya.speech(Понимаю, что вы искренне готовы взять на себя роль нового партнера мамы, но я действительно не думаю, что она будет рада вас встретить... Я ценю, что вы превратились, чтобы выглядеть как можно более человечно, но мама заинтересована только в настоящих людях, и даже тогда, она в настоящее время не может встретить никого...)]
@@ -1048,7 +1048,7 @@
 		[daddy.speech(Ну, ты, конечно, можешь это сделать со мной! Приходи и посещай меня здесь, в Доме Демона, как часто захочешь!)] [daddy.name] радостно восклицает.
 	</p>
 	<p>
-		With the matter of [daddy.namePos] meeting with Lyssieth now being resolved, talk soon turns to more mundane matters, consisting mostly of you, Lilaya, and [daddy.name] telling one another about recent events in your lives. 
+		Теперь, когда вопрос о встрече [daddy.namePos] с Lyssieth был решен, разговор переходит к более обыденным вещам: ты, Lilaya и [daddy.name] рассказываете друг другу о недавних событиях в вашей жизни. 
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
 			Желая заставить их обоих настроиться на веселье позже, ты стараешься поддерживать флиртующий тон в большей части разговора. Довольно счастлива играть в эту игру, Лилая и [daddy.name] вставляют несколько собственных сексуальных замечаний, и ты скоро понимаешь, что они обе очень возбуждены...
 		#ENDIF
@@ -1072,17 +1072,17 @@
 Текст:
 	</p>
 	<p>
-		[daddy.speech(That's my [pc.girl]!)] [daddy.name] happily replies, instantly taking on the role of your new [daddy.dad], [daddy.speech(I'll get those scrolls and old spell book of mine sent to you as soon I'm home, just as I promised! Now let's get some dessert to celebrate our new relationship!)]
+		[daddy.speech(Вот это моя [pc.girl]!)] — радостно отвечает [daddy.name], мгновенно примеряя на себя роль твоего нового [daddy.dad], [daddy.speech(Как только буду дома, я сразу же пришлю тебе те свитки и мою старую книгу заклинаний, как и обещал! А теперь давай возьмем десерт, чтобы отпраздновать наши новые отношения!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FIRST_DINNER_REFUSE"><![CDATA[
 	<p>
-		Feeling as though that's an arrangement you're definitely not comfortable with, you tell [daddy.name] that you're not prepared to do as [daddy.she] asks, and that it would be best if [daddy.she] didn't bother Lilaya about all this ever again. Immediately, [daddy.she] lets out a defeated sigh, and, dropping [daddy.her] shoulders, says, [daddy.speech(Right... Well, if you ever change your mind, you know where to find me...)]
+		Чувствуя, что такое положение дел тебе совсем не по душе, ты говоришь [daddy.name], что не готова исполнять просьбы [daddy.she], и что будет лучше всего, если [daddy.she] больше никогда не будет докучать Lilaya всеми этими делами. Тут же [daddy.she] издает побежденный вздох и, понурив [daddy.her], произносит: [daddy.speech(Ладно... Что ж, если когда-нибудь передумаешь, ты знаешь, где меня найти...)]
 	</p>
 	<p>
-		With that, [daddy.she] tells you that [daddy.she] hopes you'll one day change your mind, before standing up and heading over to the restaurant's small bar area in order to settle the bill. With the evening's business between the two of you now concluded, you exit the restaurant just after [daddy.name], and watch as [daddy.she] walks off into Demon Home, lost in [daddy.her] thoughts...
+		С этими словами [daddy.she] говорит, что [daddy.she] надеется, будто однажды ты передумаешь, после чего встает и направляется к небольшому бару в ресторане, чтобы рассчитаться по счету. Теперь, когда вечерняя трапеза подошла к концу, ты выходишь из ресторана вслед за [daddy.name] и наблюдаешь, как [daddy.she] уходит в Демоний Дом, погруженная в [daddy.her] мысли...
 	</p>
 	]]>
 	</htmlContent>
@@ -1094,9 +1094,9 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			You tell [daddy.name] that you'd like to take [daddy.herHim] up on [daddy.her] offer of dessert, giving you more time in which to continue flirting with [daddy.herHim].
+			Ты говоришь [daddy.name], что хотел бы принять [daddy.herHim] на [daddy.her] предложение десерта, что даст тебе больше времени, чтобы продолжить флиртовать с [daddy.herHim].
 		#ELSE
-			You tell [daddy.name] that you'd like to take [daddy.herHim] up on [daddy.her] offer of dessert, giving you more time in which to continue your conversation.
+			Ты говоришь [daddy.name], что хотел бы принять [daddy.herHim] на [daddy.her] предложение десерта, что даст тебе больше времени, чтобы продолжить ваш разговор.
 		#ENDIF
 		 Следовательно, когда официант приходит убирать ваш стол, [daddy.name] просит показать десертное меню, и после того, как вы его изучите, вы оба делаете заказы.
 	</p>
@@ -1128,9 +1128,9 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			Both you and Lilaya tell [daddy.name] that you'd like to take [daddy.herHim] up on [daddy.her] offer of dessert, giving you more time in which to flirt with one another.
+			И ты, и Lilaya говорите [daddy.name], что хотели бы принять [daddy.herHim] на [daddy.her] предложение десерта, что даст вам больше времени, чтобы пофлиртовать друг с другом.
 		#ELSE
-			Both you and Lilaya tell [daddy.name] that you'd like to take [daddy.herHim] up on [daddy.her] offer of dessert, giving you more time in which to continue your conversation.
+			И ты, и Lilaya говорите [daddy.name], что хотели бы принять [daddy.herHim] на [daddy.her] предложение десерта, что даст вам больше времени, чтобы продолжить ваш разговор.
 		#ENDIF
 			В результате, когда официант приходит убирать ваш стол, [daddy.name] просит показать меню десертов, и после того, как вы его просматриваете, вы все трое заказываете десерты.
 	</p>
@@ -1146,9 +1146,9 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			With your evening out coming to an end, and with [daddy.namePos] arms around each of your waists, you and Lilaya move to exit the restaurant, and are soon stepping back out into the streets of Demon Home. Looking [daddy.heightDown(pc)] at Lilaya, and then over at you, [daddy.she] pulls you both close as [daddy.she] asks, [daddy.speech(So, do you two want to come back to my place for a little more fun?)]
+			Ваш вечер подходит к концу, и, когда [daddy.namePos] обнимает вас за талии, вы с Lilaya направляетесь к выходу из ресторана, вскоре выходя на улицы Демоньего Дома. Взглянув [daddy.heightDown(pc)] на Lilaya, а затем на тебя, [daddy.she] притягивает вас обеих ближе, пока [daddy.she] спрашивает: [daddy.speech(Ну что, хотите заглянуть ко мне, чтобы продолжить веселье?)]
 		#ELSE
-			With your evening out coming to an end, you and Lilaya exit the restaurant by [daddy.namePos] side, and are soon stepping back out into the streets of Demon Home. Looking [daddy.heightDown(pc)] at Lilaya, and then across to you, [daddy.she] smiles as [daddy.she] says, [daddy.speech(You know, I really enjoyed this evening with the two of you. Please do come and visit me any other evening you like, and we can do this again.)]
+			Ваш вечер подходит к концу, вы с Lilaya выходите из ресторана, [daddy.namePos] рука об руку, и вскоре оказываетесь на улицах Демоньего Дома. Взглянув [daddy.heightDown(pc)] на Lilaya, а затем на тебя, [daddy.she] улыбается, а [daddy.she] говорит: [daddy.speech(Знаете, мне очень понравился этот вечер с вами обеими. Пожалуйста, заходите ко мне в любой другой вечер, когда захотите, и мы сможем повторить.)]
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
@@ -1160,11 +1160,11 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
-			You tell [daddy.name] that you were thinking of a different sort of dessert, and that perhaps you could soon head back to [daddy.her] apartment in order to get started on it.
+			Ты говоришь [daddy.name], что подумываешь о десерте иного рода, и что, возможно, вам стоит поскорее отправиться в квартиру [daddy.her], чтобы приступить к нему.
 		#ELSE
-			You tell [daddy.name] that you're too full to have any dessert, and that you should probably be thinking about leaving soon.
+			Ты говоришь [daddy.name], что ты слишком сыта для десерта и что вам, пожалуй, пора понемногу собираться и уходить.
 		#ENDIF
-		 Consequently, when the waiter comes to clear your table, [daddy.name] asks to settle the bill, and once that's done, the two of you prepare to make a move.
+		 В итоге, когда официант подходит, чтобы убрать со стола, [daddy.name] просит принести счет, и как только с этим заканчивается, вы вдвоем готовитесь к переходу к следующему этапу.
 	</p>
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
@@ -1212,35 +1212,35 @@
 		С этим, вы скользите вниз по стулу, прежде чем опуститься на колени под стол. Благодаря белой ткани, накинутой на поверхность над вами, никто другой в ресторане не может увидеть, что вы делаете, и, представляя себе выражение лица [daddy.namePos], вы улыбаетесь себе, когда вы скользите вперед между ногами [daddy.her].
 	</p>
 	<p>
-		[daddy.speech(Oh, yes, I'll need just one dessert menu,)] вы слышите [daddy.name] внезапно сказать сверху, сообщая вам, что один из официантов подошел к вашему столу. С лукавой улыбкой на лице, вы тянетесь, чтобы погладить [daddy.namePos] ногу, прежде чем переместить прикосновение вверх, чтобы расстегнуть и разстегнуть [daddy.her] джинсы. Спуская их немного, вы не можете не выпустить маленькую, голодную [pc.moan], когда видите контуры [daddy.her] [daddy.cockSize], твердого члена, давящего на ткань [daddy.her] нижнего белья.
+		[daddy.speech(О, да, мне понадобится всего одно десертное меню,)] вы слышите, как [daddy.name] внезапно говорит сверху, сообщая вам, что один из официантов подошел к вашему столу. С лукавой улыбкой на лице, вы тянетесь, чтобы погладить ногу [daddy.namePos], прежде чем переместить прикосновение выше, чтобы расстегнуть и расправить [daddy.her] джинсы. Спуская их немного, вы не можете не издать маленький, голодный [pc.moan], когда видите контуры [daddy.her] [daddy.cockSize], твердого члена, давящего на ткань [daddy.her] нижнего белья.
 	</p>
 	<p>
-		[daddy.speech(Yes, could I get this,)] [daddy.name] says from up above as [daddy.she] places [daddy.her] order for dessert. Wanting to tease [daddy.herHim] a little, you stroke and gently squeeze [daddy.her] shaft through [daddy.her] boxers, smiling to yourself as your touch causes [daddy.herHim] to [daddy.moan], [daddy.speech(~Mmm!~ No, [pc.sheHas] just gone to the restroom... ~Aah!~ And said [pc.she] didn't want any dessert, so it's just the one.)]
+		[daddy.speech(Да, можно мне это,)] говорит [daddy.name] сверху, пока [daddy.she] делает [daddy.her] заказ на десерт. Желая немного подразнить [daddy.herHim], вы поглаживаете и нежно сжимаете [daddy.her] член сквозь [daddy.her] боксеры, улыбаясь про себя, когда ваше прикосновение заставляет [daddy.herHim] [daddy.moan], [daddy.speech(~Ммм!~ Нет, [pc.sheHas] только что ушла в дамскую комнату... ~Аах!~ И сказала, что [pc.she] не хочет десерта, так что меню всего одно.)]
 	</p>
 	<p>
 		Когда официант уходит, вы расстегиваете [daddy.namePos] боксеры, позволяя [daddy.her] [daddy.cockGirth], полностью эрегированному члену, освободиться. Наклоняясь вперед, вы целуете его [daddy.cockHead+], прежде чем провести вашу [pc.tongue+] по всей длине снизу. Останавливаясь у основания, вы затем опускаетесь вниз и делаете серию поцелуев и лизаний [daddy.her] [daddy.ballSize], тяжелых яичек, мягко [pc.moaning], когда вы представляете, как они накачивают свою порцию глубоко в ваш рот.
 	</p>
 	<p>
-		Wanting to be a good [pc.girl] for your [daddy.daddy], you remember your manners, and wait until you hear [daddy.her] dessert arriving before moving up and getting started on enjoying your own. Delivering yet another wet kiss to the very tip of [daddy.her] cock, you slowly drop your head down, parting your [pc.lips+] as you take [daddy.her] throbbing length down your throat...
+		Желая быть хорошей [pc.girl] для своего [daddy.daddy], вы вспоминаете о манерах и ждете, пока не услышите, что [daddy.her] десерт принесли, прежде чем подняться выше и приступить к наслаждению собственным. Оставив еще один влажный поцелуй на самом кончике [daddy.her] члена, вы медленно опускаете голову, размыкая свои [pc.lips+], чтобы принять пульсирующую длину [daddy.her] в свой рот...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_DINNER_DADDYS_DESSERT"><![CDATA[
 	<p>
-		Thanks to your flirting, you've managed to turn on not only your two dinner companions, but also yourself, and upon hearing [daddy.daddy] mention dessert, you suddenly get a naughty idea. Running your [pc.hand] over her thigh, you lean in to seductively whisper in Lilaya's ear, [pc.speech(I was thinking of getting some dessert directly from [daddy.name], you want to join me?)]
+		Благодаря твоему флирту тебе удалось завести не только двух своих спутниц по ужину, но и саму себя, а услышав, как [daddy.daddy] упоминает десерт, ты внезапно ловишь шальную мысль. Проводя своей [pc.hand] по её бедру, ты наклоняешься, чтобы соблазнительно прошептать Lilaya на ушко, [pc.speech(Я тут подумала, что мы могли бы полакомиться десертом прямо у [daddy.name], хочешь со мной?)]
 	</p>
 	<p>
-		Letting out a hurried reply in the positive, Lilaya bites her lip at [daddy.name] as you tell [daddy.herHim], [pc.speech(You go ahead and order something for yourself, [daddy.daddy], Lilaya and I already know what we're having for dessert...)]
+		Поспешно ответив согласием, Lilaya прикусывает губу, глядя на [daddy.name], пока ты говоришь [daddy.herHim]: [pc.speech(Заказывай себе что-нибудь сама, [daddy.daddy], мы с Lilaya уже знаем, какой десерт хотим съесть...)]
 	</p>
 	<p>
-		With that, the two of you slide down in your chairs, before dropping down onto your knees under the table. Thanks to the white cloth draped over the surface above you, nobody else in the restaurant is able to see what the two of you are doing, and, imagining the look on [daddy.namePos] face, you smile to yourself as you shuffle forwards alongside your [lilaya.relation(pc)] until the two of you are side-by-side between [daddy.her] legs.
+		С этими словами вы вдвоем соскальзываете со своих стульев и опускаетесь на колени под стол. Благодаря белой скатерти, накрывающей стол над вами, никто больше в ресторане не видит, что вы творите, и, представляя выражение лица [daddy.namePos], ты довольно улыбаешься про себя, продвигаясь вперед вместе со своей [lilaya.relation(pc)], пока вы не оказываетесь плечом к плечу между ног [daddy.her].
 	</p>
 	<p>
-		[daddy.speech(Oh, yes, I'll need just one dessert menu,)] вы слышите [daddy.name] внезапно сказать сверху, сообщая вам, что один из официантов подошел к вашему столу. С лукавой улыбкой на лице, вы тянетесь, чтобы погладить [daddy.namePos] ногу, в то время как Лилая поднимает руки, чтобы расстегнуть и расстегнуть [daddy.namePos] джинсы. Когда разгоряченная суккуба опускает их немного, вы с Лилайей не можете не выпустить маленькие, голодные [pc.moans], когда видите очертания вашего [daddy.daddy]'s [daddy.cockSize], твердый член, давящий на ткань [daddy.her] нижнего белья.
+		[daddy.speech(О, да, мне понадобится всего одно десертное меню,)] вы слышите, как [daddy.name] внезапно говорит сверху, сообщая вам, что один из официантов подошел к вашему столу. С лукавой улыбкой на лице, вы тянетесь, чтобы погладить [daddy.namePos] ногу, в то время как Лилая поднимает руки, чтобы расстегнуть и расстегнуть [daddy.namePos] джинсы. Когда разгоряченная суккуба слегка спускает их, вы с Лилайей не можете не издать маленькие, голодные [pc.moans], когда видите очертания [daddy.cockSize] вашего [daddy.daddy] — твердый член, давящий на ткань [daddy.her] нижнего белья.
 	</p>
 	<p>
-		[daddy.speech(Yes, could I get this,)] [daddy.name] says from up above as [daddy.she] places [daddy.her] order for dessert. Wanting to tease [daddy.herHim] a little, both you and Lilaya get to work stroking and gently squeezing [daddy.her] shaft through [daddy.her] boxers, grinning at one another as your combined touch causes [daddy.herHim] to [daddy.moan], [daddy.speech(~Mmm!~ No, they've just gone to the restroom... ~Aah!~ And they said they didn't want any dessert, so it's just the one.)]
+		[daddy.speech(Да, можно мне это,)] говорит [daddy.name] сверху, пока [daddy.she] делает [daddy.her] заказ на десерт. Желая немного подразнить [daddy.herHim], и вы, и Лилая принимаетесь ласкать и нежно сжимать [daddy.her] ствол сквозь [daddy.her] боксеры, переглядываясь с улыбками, пока ваши совместные прикосновения заставляют [daddy.herHim] [daddy.moan], [daddy.speech(~Ммм!~ Нет, они просто отошли в уборную... ~Аах!~ И они сказали, что не хотят десерта, так что хватит одного.)]
 	</p>
 	<p>
 		Когда официант уходит, вы расстегиваете [daddy.namePos] боксеры, позволяя [daddy.her] [daddy.cockGirth], полностью эрегированному члену, освободиться. Наклоняясь вперед, Лилая целует его [daddy.cockHead+], в то время как вы наклоняетесь под ней, чтобы дать серию поцелуев и лизаний [daddy.her] [daddy.ballSize], тяжелые яички, мягко [pc.moaning], когда вы представляете, как они впрыскивают свою сперму глубоко в ваш рот.
@@ -1253,7 +1253,7 @@
 		#IF(lilaya.isFeminine()==pc.isFeminine())
 			 [pc.girls]
 		#ENDIF
-		 for your [daddy.daddy], both you and Lilaya wait until you hear [daddy.her] dessert arriving before moving up and getting started on enjoying your own. This time, your [lilaya.relation(pc)] allows you to be the one to plant a wet kiss to the very tip of [daddy.namePos] cock, while she moves down to lick [daddy.her] heavy balls. With a soft [pc.moan], you then slowly drop your head down, parting your [pc.lips+] as you take [daddy.her] throbbing length down your throat...
+		 ради твоего [daddy.daddy], и ты, и Lilaya ждете, пока не услышите, что [daddy.her] десерт прибывает, прежде чем подняться и приступить к наслаждению своим. На этот раз, твои [lilaya.relation(pc)] позволяют тебе самому запечатлеть влажный поцелуй на самом кончике [daddy.namePos] члена, пока она опускается ниже, чтобы лизать [daddy.her] тяжелые яички. С мягким [pc.moan] ты затем медленно опускаешь голову, раздвигая свои [pc.lips+], чтобы принять [daddy.her] пульсирующую длину в свой рот...
 	</p>
 	]]>
 	</htmlContent>
@@ -1295,9 +1295,9 @@
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.getQuest(QUEST_LINE_SIDE_DADDY) == QUEST_DADDY_ACCEPTED)
-			Не чувствуя настроения вернуться в [daddy.her] место, ты извиняешься и отказываешься от предложения [daddy.namePos]. С разочарованным тоном [daddy.name] отвечает, [daddy.speech(Ok, well, I'm just happy that you accepted me as your new [daddy.dad]. I really had a lot of fun tonight, and I'm looking forward to meeting Lilaya when you bring her with you.)]
+			Не чувствуя настроения вернуться в [daddy.her] место, ты извиняешься и отказываешься от предложения [daddy.namePos]. С разочарованным тоном [daddy.name] отвечает, [daddy.speech(Ладно, ну, я просто счастлив, что ты принял меня как своего нового [daddy.dad]. Мне сегодня было очень весело, и я с нетерпением жду знакомства с Lilaya, когда ты приведешь её с собой.)]
 		#ELSE
-			Не чувствуя настроения вернуться в [daddy.her] место, ты извиняешься и отказываешься от предложения [daddy.namePos]. С разочарованным тоном [daddy.name] отвечает, [daddy.speech(Ok, well, come back and visit me any evening you want. I really had a lot of fun tonight.)]
+			Не чувствуя настроения вернуться в [daddy.her] место, ты извиняешься и отказываешься от предложения [daddy.namePos]. С разочарованным тоном [daddy.name] отвечает, [daddy.speech(Ладно, ну, возвращайся и навещай меня в любой вечер, когда захочешь. Мне сегодня было очень весело.)]
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
@@ -1310,44 +1310,44 @@
 	
 	<htmlContent tag="LILAYA_DINNER_END_REFUSE"><![CDATA[
 	<p>
-		Не чувствуя настроения вернуться в [daddy.her] место, ты извиняешься и отказываешься от предложения [daddy.namePos]. Говоря, что она останется с тобой и сопроводит тебя обратно в ее квартиру, Лилая подходит к тебе. С разочарованным тоном [daddy.name] отвечает, [daddy.speech(Ok, well, come back and visit me any evening you want. I really had a lot of fun tonight.)]
+		Не чувствуя настроения возвращаться в [daddy.her] место, ты извиняешься и отказываешься от предложения [daddy.namePos]. Сказав, что она останется с тобой и проводит тебя обратно в свою квартиру, Лилая подходит к тебе. С разочарованным тоном [daddy.name] отвечает: [daddy.speech(Ладно, ну тогда возвращайся ко мне в любой вечер, когда захочешь. Мне сегодня было очень весело.)]
 	</p>
 	<p>
 		Говоря, что ты обязательно посетишь [daddy.herHim] снова в ближайшее время, ты и Лилая прощаетесь с [daddy.daddy], прежде чем расстаться с [daddy.herHim]. [daddy.name] возвращается в квартиру [daddy.her], а ты и Лилая отправляетесь обратно в ее особняк, разговаривая о вашем вечере по дороге туда.
 	</p>
 	<p>
-		Roughly half an hour later the two of you arrive back home, and after Rose has let you in, Lilaya thanks you for your company, before heading off upstairs with her cat-girl maid to get changed. Being left alone in the hallway, you wonder what to do next...
+		Примерно через полчаса вы вдвоем возвращаетесь домой, и после того как Роуз впускает тебя, Лилая благодарит тебя за компанию, прежде чем отправиться наверх вместе со своей горничной-кошкоязычной, чтобы переодеться. Оставшись один в коридоре, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="DINNER_END_ACCEPT"><![CDATA[
 	<p>
-		Rubbing up against your [daddy.daddy], you tell [daddy.herHim] that you'd love to go back to [daddy.her] place, and that you can't wait to find out what [daddy.sheIs] got in store for you. Moving [daddy.her] grip down from your waist, [daddy.name] gives your [pc.ass+] a firm squeeze, before saying, [daddy.speech(I'm going to show you how your [daddy.daddy] treats [daddy.her] good little [pc.girl]...)]
+		Теребя свою [daddy.daddy], ты говоришь [daddy.herHim], что с радостью отправишься к [daddy.her], и что тебе не терпится узнать, что [daddy.sheIs] приготовил для тебя. Спуская [daddy.her] руку ниже твоей талии, [daddy.name] крепко сжимает твою [pc.ass+], прежде чем произнести: [daddy.speech(Я покажу тебе, как твой [daddy.daddy] балует свою хорошую маленькую [pc.girl]... [daddy.her])]
 	</p>
 	<p>
-		Hurriedly crossing the street, [daddy.name] leads you inside [daddy.her] apartment building and up the flight of stairs, before unlocking [daddy.her] door and pulling you into [daddy.her] apartment. Immediately, your hands are all over one another, and as [daddy.her] [daddy.lips+] press against yours, you feel [daddy.her] touch roam down to grope between your [pc.legs].
+		Поспешно переходя улицу, [daddy.name] заводит тебя в [daddy.her] многоквартирный дом и ведет вверх по лестнице, после чего отпирает [daddy.her] дверь и затягивает тебя в [daddy.her] квартиру. Ваши руки тут же оказываются повсюду, и когда [daddy.her] [daddy.lips+] прижимаются к твоим, ты чувствуешь, как [daddy.her] спускается ниже, чтобы начать ласкать между твоих [pc.legs].
 	</p><p>
 		В спешке, вы врываетесь в гостиную, стол в коридоре сталкивается с вами и падает на пол, но вы настолько увлечены страстью, что никому из вас это не важно. Снимая футболку с [daddy.daddy], вы прижимаете свои губы к [daddy.her] [daddy.breasts+], целуя [daddy.her] [daddy.nipples+], пока вы не спускаете вниз, чтобы снять свою одежду.
 	</p>
 	<p>
-		With [daddy.name] helping you to strip to your underwear in record time, your garments are soon thrown all over the floor. Taking hold of your [pc.hips+], [daddy.she] locks [daddy.her] [daddy.eyes+] onto yours and commands, [daddy.speech(That's [daddy.daddy]'s good [pc.girl]... Now get on my bed and present yourself to me...)]
+		Благодаря тому, что [daddy.name] помогает тебе раздеться до белья в рекордные сроки, твоя одежда вскоре оказывается разбросанной по всему полу. Схватив твои [pc.hips+], [daddy.she] прижимает [daddy.her] [daddy.eyes+] к твоим и командует: [daddy.speech(Это [daddy.daddy]'ы хорошая [pc.girl]... А теперь марш на мою кровать и явись мне...)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_DINNER_END_ACCEPT"><![CDATA[
 	<p>
-		Rubbing up against your [daddy.daddy], you and Lilaya tell [daddy.herHim] that you'd both love to go back to [daddy.her] place, and that you can't wait to find out what [daddy.sheIs] got in store for the two of you. Moving [daddy.her] grip down from your waists, [daddy.name] gives each of your asses a firm squeeze, before saying, [daddy.speech(I'm going to show you how your [daddy.daddy] treats [daddy.her] good little
+		Прижимаясь к твоим [daddy.daddy], вы с Lilaya говорите [daddy.herHim], что обе очень хотите отправиться к [daddy.her], и что вам не терпится узнать, что [daddy.sheIs] приготовила для вас двоих. Опуская [daddy.her] хватку ниже талий, [daddy.name] крепко сжимает ваши ягодицы, прежде чем сказать: [daddy.speech(Я покажу тебе, как твоя [daddy.daddy] ласкает [daddy.her] хорошую маленькую
 		#IF(lilaya.isFeminine()==pc.isFeminine())
 			 [pc.girls]
 		#ELSE
-			 [pc.girl] and [lilaya.girl]
+			 [pc.girl] и [lilaya.girl]
 		#ENDIF
 		...)]
 	</p>
 	<p>
-		Hurriedly crossing the street, [daddy.name] leads you inside [daddy.her] apartment building and up the flight of stairs, before unlocking [daddy.her] door and pulling you both into [daddy.her] apartment. Immediately, your hands are all over one another, and as [daddy.name] alternates between kissing you and Lilaya, you feel [daddy.her] touch roam down to grope between your [pc.legs].
+		Поспешно переходя улицу, [daddy.name] ведет тебя в жилой дом [daddy.her] и вверх по лестнице, после чего отпирает дверь [daddy.her] и затаскивает вас обоих в квартиру [daddy.her]. Ваши руки тут же оказываются повсюду; пока [daddy.name] то целует тебя, то Lilaya, ты чувствуешь, как [daddy.her] спускается ниже, чтобы бесцеремонно сжать твои [pc.legs].
 	</p>
 	<p>
 		В спешке, чтобы переместиться в гостиную квартиры, стол в коридоре сталкивается с землей, но вы все настолько увлечены своим увлечением, что никому из вас это не важно. Снимая футболку [daddy.daddy], вы прижимаете свои губы к [daddy.her] [daddy.breasts+], целуя [daddy.her] [daddy.nipples+], пока ваш [lilaya.relation(pc)] вставляет свой язык в рот [daddy.her]. Дотягиваясь до Лилайи, вы помогаете ей снять ее платье, обнажая соответствующую пару черных кружевных трусиков и бюстгальтер. Отступая, чтобы отплатить, Лилая проводит руками по вашему телу, помогая вам снять вашу верхнюю одежду, пока ваш [daddy.daddy] дает вам свою очередь, вставляя [daddy.her] язык в ваш рот.
@@ -1357,7 +1357,7 @@
 		#IF(lilaya.isFeminine()==pc.isFeminine())
 			 [pc.girls]
 		#ELSE
-			 [pc.girl] and [lilaya.girl]
+			 [pc.girl] и [lilaya.girl]
 		#ENDIF
 		... Теперь лежите на моей кровати и представьтесь мне...)]
 	</p>
@@ -1375,19 +1375,19 @@
 	
 	<htmlContent tag="LILAYA_DINNER_END_HOME"><![CDATA[
 	<p>
-		Telling [daddy.herHim] that you had a lot of fun this evening, both you and Lilaya thank [daddy.name] for treating you to dinner. In a happy tone, [daddy.she] replies, [daddy.speech(You're more than welcome! Anything for my good
+		Говоря [daddy.herHim], что этот вечер был чудесным, и ты, и Lilaya благодарите [daddy.name] за ужин. Радостным тоном [daddy.she] отвечает: [daddy.speech(Всегда пожалуйста! Для моих хороших девчонок — всё что угодно!
 		#IF(lilaya.isFeminine()==pc.isFeminine())
 			 [pc.girls]
 		#ELSE
-			 [pc.girl] and [lilaya.girl]
+			 [pc.girl] и [lilaya.girl]
 		#ENDIF
-		! I really had a lot of fun tonight as well, and please come back and visit me any evening you want.)]
+		! Мне тоже сегодня было очень весело, так что, пожалуйста, заходи ко мне в гости в любой вечер, когда захочешь.)]
 	</p>
 	<p>
 		Говоря, что ты обязательно посетишь [daddy.herHim] снова в ближайшее время, ты и Лилая прощаетесь с [daddy.daddy], прежде чем расстаться с [daddy.herHim]. [daddy.name] возвращается в квартиру [daddy.her], а ты и Лилая отправляетесь обратно в ее особняк, разговаривая о вашем вечере по дороге туда.
 	</p>
 	<p>
-		Roughly half an hour later the two of you arrive back home, and after Rose has let you in, Lilaya thanks you for your company, before heading off upstairs with her cat-girl maid to get changed. Being left alone in the hallway, you wonder what to do next...
+		Примерно через полчаса вы вдвоем возвращаетесь домой, и после того как Роуз впускает тебя, Лилая благодарит тебя за компанию, прежде чем отправиться наверх вместе со своей горничной-кошкоязычной, чтобы переодеться. Оставшись один в коридоре, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -1397,20 +1397,20 @@
 	
 	<htmlContent tag="AFTER_DINNER_SEX"><![CDATA[
 	<p>
-		More than happy to do as [daddy.she] tells you to do, you head into [daddy.namePos] bedroom, with [daddy.herHim] right on your heels. Stepping over towards [daddy.her] king-sized bed, you climb up on top of it,
+		С радостью подчиняясь указаниям [daddy.she], ты направляешься в спальню [daddy.namePos], а [daddy.herHim] следует прямо за тобой по пятам. Шагнув к огромной кровати [daddy.her], ты забираешься на неё,
 		#IF(!pc.isTaur())
-			 before falling forwards onto your [pc.hands] and knees and presenting your rear end to your [daddy.daddy].
+			 прежде чем упасть вперед на свои [pc.hands] и колени, подставляя задницу своему [daddy.daddy].
 		#ELSE
-			 before lying down on your animalistic lower half and presenting your rear end to your [daddy.daddy].
+			 прежде чем лечь на свою звериную нижнюю часть и подставить задницу своему [daddy.daddy].
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		Looking back over your shoulder, you see [daddy.name] stripping off the last of [daddy.her] clothes, revealing [daddy.her] [daddy.cockSize], [daddy.cockGirth], fully-erect cock. As [daddy.she] sees what it is you're hungrily staring at, [daddy.name] grins and teases, [daddy.speech(Can't wait to get a feel of your [daddy.daddy]'s cock?)]
+		Оглянувшись через плечо, ты видишь, как [daddy.name] стягивает последние остатки [daddy.her] одежды, обнажая [daddy.her] [daddy.cockSize], [daddy.cockGirth], полностью эрегированный член. Когда [daddy.she] замечает, на что ты так жадно пялишься, [daddy.name] ухмыляется и дразнит: [daddy.speech(Не терпится почувствовать член твоего [daddy.daddy]?)]
 	</p>
 	<p>
-		[pc.speech(Please,)] you [pc.moan], [pc.speech(Come and fuck me!)]
+		[pc.speech(Пожалуйста,)] ты [pc.moan], [pc.speech(Приди и трахни меня!)]
 	</p>
 	<p>
 		Не нужно мне объяснять, [daddy.name] забирается на кровать за тобой, ударяя [daddy.cockHead+] твою [daddy.her], уже на ходу, в твою [pc.ass+]. Выдавая еще один [pc.moan+], ты готовишься к тому, чтобы тебя трахнул твой [daddy.daddy]...
@@ -1420,7 +1420,7 @@
 	
 	<htmlContent tag="LILAYA_AFTER_DINNER_SEX"><![CDATA[
 	<p>
-		More than happy to do as [daddy.she] commands, both you and Lilaya head into [daddy.namePos] bedroom, with [daddy.herHim] right on your heels. Stepping over towards [daddy.her] king-sized bed, the two of you share a wet, passionate kiss, before climbing up on top of the sheets together.
+		С огромным удовольствием исполняя приказы [daddy.she], и ты, и Lilaya направляетесь в [daddy.namePos] спальню, а [daddy.herHim] следует прямо за вами по пятам. Подойдя к [daddy.her] огромной королевской кровати, вы вдвоем обмениваетесь влажным, страстным поцелуем, прежде чем вместе забраться на простыни.
 		#IF(!pc.isTaur())
 				Оба, отражая движения друг друга, падаете на руки и колени, представляя свои задницы твоей [daddy.daddy].
 		#ELSE
@@ -1440,61 +1440,61 @@
 		#IF(!pc.isTaur())
 			#IF(lilaya.getFetishDesire(FETISH_PREGNANCY).isNegative())
 				[lilaya.speech(Приходи и трахни нас! J-Просто не сперли внутри меня, хорошо? Я <i>не</i> забеременею от этого!)] Лилая заканчивает, прежде чем повернуться к тебе и потянуть тебя в отчаянный поцелуй.			#ELSE
-				[lilaya.speech(Приходи и трахни нас!)] Lilaya finishes, before turning towards you and pulling you into a desperate kiss.
+				[lilaya.speech(Приходи и трахни нас!)] — заканчивает Lilaya, прежде чем повернуться к тебе и втянуть в отчаянный поцелуй.
 			#ENDIF
 		#ELSE
 			#IF(lilaya.getFetishDesire(FETISH_PREGNANCY).isNegative())
-				[lilaya.speech(Приходи и трахни нас! J-Just don't cum inside me, ok? I'm <i>not</i> getting pregnant from this!)] Lilaya finishes, before joining you in enticingly raising and shaking her ass.
+				[lilaya.speech(Приходи и трахни нас! Т-только не кончай в меня, ладно? Я <i>не</i> должна забеременеть от этого!)] — заканчивает Lilaya, после чего присоединяется к тебе, соблазнительно задирая и потряхивая своей задницей.
 			#ELSE
-				[lilaya.speech(Приходи и трахни нас!)] Lilaya finishes, before joining you in enticingly raising and shaking her ass.
+				[lilaya.speech(Приходи и трахни нас!)] — заканчивает Lilaya, после чего присоединяется к тебе, соблазнительно задирая и потряхивая своей задницей.
 			#ENDIF
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		Not needing to be told twice, [daddy.name] climbs up onto the bed behind you, before reaching forwards and starting to grope and slap your asses with each hand. Letting out yet another [pc.moan+], you prepare to get fucked alongside Lilaya by your [daddy.daddy]...
+		Не нужно повторять дважды, [daddy.name] забирается на кровать позади тебя, после чего тянется вперед и начинает ощупывать и шлепать твои ягодицы обеими руками. Издавая очередной [pc.moan+], ты готовишься к тому, что тебя будут трахать вместе с Lilaya твой [daddy.daddy]...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_DINNER_DOMINATE"><![CDATA[
 	<p>
-		Giving [daddy.name] a mischievous grin, you step up to press yourself against [daddy.her] hot body, before informing [daddy.herHim], [pc.speech(That's not quite how this is going to work. I'm the one who's going to be giving orders around here.)]
+		Одарив [daddy.name] озорной ухмылкой, ты подходишь ближе, прижимаясь к горячему телу [daddy.her], а затем заявляешь [daddy.herHim]: [pc.speech(Все будет не совсем так. Здесь приказы буду отдавать я.)]
 	</p>
 	<p>
-		Not giving [daddy.herHim] any time to object, you move to strip your [daddy.daddy] naked, throwing [daddy.herHim] a lustful grin as [daddy.her] [daddy.cockSize], [daddy.cockGirth] cock is revealed. Grabbing [daddy.herHim] by the arm, you then pull [daddy.herHim] into [daddy.her] bedroom, before pushing [daddy.herHim] down onto [daddy.her] bed.
+		Не давая [daddy.herHim] времени возразить, ты принимаешься раздевать [daddy.daddy] догола, бросая [daddy.herHim] похотливый взгляд, пока [daddy.her] [daddy.cockSize], обнажается [daddy.cockGirth] член. Схватив [daddy.herHim] за руку, ты тащишь [daddy.herHim] в [daddy.her] спальню, а затем толкаешь [daddy.herHim] на [daddy.her] кровать.
 	</p>
 	<p>
-		[daddy.speech(Easy now, there's no need to rush-)] [daddy.name] starts, but [daddy.her] voice is cut off as you jump forwards and, lowering yourself down over the top of [daddy.herHim], firmly press your [pc.lips+] down against [daddy.hers]. After dominantly kissing [daddy.herHim] in this fashion for a moment, you pull back,
+		[daddy.speech(Полегче, не нужно спешить—)] начинает [daddy.name], но [daddy.her] голос обрывается, когда ты прыгаешь вперед и, нависая над [daddy.herHim], крепко прижимаешь свои [pc.lips+] к [daddy.hers]. Доминантно целуя [daddy.herHim] таким образом какое-то время, ты отстраняешься,
 		#IF(!pc.hasLegs())
-			 before sliding down and bumping your groin against [daddy.her] crotch.
+			 прежде чем соскользнуть вниз и ткнуть своим пахом в промежность [daddy.her].
 		#ELSEIF(pc.isTaur())
-			 before repositioning yourself and lowering your animalistic rear end down over [daddy.her] crotch.
+			 прежде чем ты поудобнее устроишься и опустишь свой звериный зад прямо на [daddy.her] промежность.
 		#ELSE
-			 before swinging your [pc.legs] over [daddy.hers] and straddling [daddy.her] crotch.
+			 прежде чем ты перебросишь свой [pc.legs] через [daddy.hers] и усядешься верхом на [daddy.her] промежность.
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		[pc.speech(There we go... All comfortable down there?)] you ask, preparing to start having some dominant fun with your [daddy.daddy] as [daddy.she] gives you a very positive response...
+		[pc.speech(Вот так... Удобно там?)] — спрашиваешь ты, готовясь начать доминирующую игру со своим [daddy.daddy], пока [daddy.she] отвечает тебе весьма восторженно...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_AFTER_DINNER_DOMINATE"><![CDATA[
 	<p>
-		Sharing a mischievous grin with Lilaya, the two of you step up on either side of [daddy.name], before informing [daddy.herHim], [pc.speech(That's not quite how this is going to work. What do you say, Lilaya, you get [daddy.her] tongue, and I get [daddy.her] cock?)]
+		Обменявшись озорными ухмылками с Lilaya, вы вдвоем подходите к [daddy.name] с обеих сторон, после чего сообщаешь [daddy.herHim]: [pc.speech(Все будет немного иначе. Как насчет того, Lilaya, что тебе достанется [daddy.her] язык, а мне — [daddy.her] член?)]
 	</p>
 	<p>
-		[lilaya.speech(That sounds good to me,)] Lilaya replies, lifting a finger and running it over [daddy.namePos] lips. [lilaya.speech(You're going to love the taste of my pussy...)]
+		[lilaya.speech(Мне это нравится,)] — отвечает Lilaya, поднимая палец и проводя им по губам [daddy.namePos]. [lilaya.speech(Тебе понравится вкус моей киски...)]
 	</p>
 	<p>
-		Not giving [daddy.herHim] any time to object, you and your [lilaya.relation(pc)] move to strip your [daddy.daddy] naked, throwing each other lustful grins as [daddy.her] [daddy.cockSize], [daddy.cockGirth] cock is revealed. Grabbing [daddy.her] arms, the two of you then pull [daddy.herHim] into [daddy.her] bedroom, before pushing [daddy.herHim] down onto [daddy.her] bed.
+		Не давая [daddy.herHim] времени возразить, ты и твоя [lilaya.relation(pc)] принимаетесь раздевать [daddy.daddy] догола, обмениваясь похотливыми взглядами, когда открывается [daddy.her] [daddy.cockSize], [daddy.cockGirth] член. Схватив [daddy.her] за руки, вы вдвоем затаскиваете [daddy.herHim] в [daddy.her] спальню, а затем толкаете [daddy.herHim] на [daddy.her] кровать.
 	</p>
 	<p>
-		[daddy.speech(Easy now, there's no need to rush-)] [daddy.name] начинает, но голос [daddy.her] прерывается, когда Lilaya прыгает вперед и, опустившись на [daddy.her] нижнюю часть тела, кладет свою покрытую трусиками пу**ю на [daddy.her] рот.
+		[daddy.speech(Потише, не нужно спешить—)] [daddy.name] начинает, но голос [daddy.her] прерывается, когда Lilaya прыгает вперед и, опустившись на [daddy.her] нижнюю часть тела, кладет свою покрытую трусиками пу**ю на [daddy.her] рот.
 	</p>
 	<p>
 		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
@@ -1503,7 +1503,7 @@
 		#ELSE
 			Быстро пересаживаясь, чтобы прижать свою задницу к [daddy.namePos], ты оглядываешься на Lilaya,
 		#ENDIF
-			улыбаясь счастливо, когда [daddy.race] под тобой поднимается, чтобы схватить ее бедра. Ты начинаешь тереть свое влажное место вверх и вниз по [daddy.namePos] эрегированному члену, а Lilaya дразнит: [lilaya.speech(So, are you ready for a taste down there?)]
+			счастливо улыбаясь, когда [daddy.race] под тобой поднимается, чтобы схватить ее бедра. Ты начинаешь тереть свое влажное место вверх и вниз по [daddy.namePos] эрегированному члену, а Lilaya дразнит: [lilaya.speech(Ну что, готов попробовать на вкус там, внизу?)]
 	</p>
 	<p>
 		Принимая [daddy.namePos] задыхающийся крик как 'да', твой [lilaya.relation(pc)] опускается, чтобы потянуть ее кружевные трусики в сторону, прежде чем твердо посадить свою влажную, [lilaya.pussy+] вниз на [daddy.her] рот. Когда твой [daddy.daddy] начинает лизать Lilaya, ты готов начать наслаждаться [daddy.her] [daddy.cock+]...
@@ -1549,7 +1549,7 @@
 		#IF(lilaya.isSatisfiedFromLastSex())
 			[lilaya.speech(~Mmm~ Мне это понравилось,)] Lilaya вздыхает, [lilaya.speech(Я надеюсь, что мы сможем сделать это снова когда-нибудь...)]
 		#ELSE
-			[lilaya.speech(~Mmm~ I could have done with a little more attention,)] Lilaya sighs, [lilaya.speech(Perhaps if we do this again, you can make sure I'm fully satisfied...)]
+			[lilaya.speech(~Ммм~ Мне бы не помешало чуть больше внимания,)] вздыхает Lilaya, [lilaya.speech(Возможно, если мы повторим это снова, ты сможешь убедиться, что я полностью удовлетворена...)]
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
@@ -1559,30 +1559,30 @@
 	
 	<htmlContent tag="AFTER_APARTMENT_SEX_HOME"><![CDATA[
 	<p>
-		After lying next to one another for a while, you eventually decide that it's time for you to leave, and, after putting your clothes back on, [daddy.name] leads you back to [daddy.her] front door. Leaning in to plant one last kiss on your [pc.lips+] [daddy.she] says,
+		Полежав так какое-то время, вы в конце концов решаете, что пора расходиться, и, надев одежду, [daddy.name] провожает тебя к [daddy.her] входной двери. Наклонившись, чтобы запечатлеть последний поцелуй на твоих [pc.lips+], [daddy.she] говорит:
 		#IF(pc.getQuest(QUEST_LINE_SIDE_DADDY) == QUEST_DADDY_ACCEPTED)
-			 [daddy.speech(I really had a lot of fun tonight, [pc.name]. Please come and visit me again soon, and I'm looking forward to meeting Lilaya when you bring her with you!)]
+			 [daddy.speech(Сегодня было действительно весело, [pc.name]. Пожалуйста, заходи ко мне снова в ближайшее время, и я с нетерпением жду знакомства с Lilaya, когда ты приведешь ее с собой!)]
 		#ELSE
-			 [daddy.speech(I really had a lot of fun tonight, [pc.name]. Please come and visit me again soon!)]
+			 [daddy.speech(Сегодня было действительно весело, [pc.name]. Пожалуйста, заходи ко мне снова в ближайшее время!)]
 		#ENDIF
 Контекст: XML res/txt/quests/main/lyssiethReveal.xml
 Текст:
 	</p>
 	<p>
-		Reassuring [daddy.herHim] that you will, you make your exit, heading down the stairs and back out into Demon Home...
+		Успокоив [daddy.herHim] обещанием вернуться, ты выходишь, спускаясь по лестнице обратно в Обитель Демонов...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LILAYA_AFTER_APARTMENT_SEX_HOME"><![CDATA[
 	<p>
-		After lying next to one another for a while, you eventually decide that it's time for you to leave, and, after putting your clothes back on, [daddy.name] leads you and Lilaya back to [daddy.her] front door. Leaning in to plant one last kiss on each of your lips, [daddy.she] says, [daddy.speech(I really had a lot of fun tonight. Please come and visit me again soon!)]
+		Полежав так какое-то время, вы в конце концов решаете, что пора уходить, и, надев одежду, [daddy.name] ведет тебя и Lilaya обратно к входной двери [daddy.her]. Наклонившись, чтобы запечатлеть по последнему поцелую на ваших губах, [daddy.she] говорит: [daddy.speech(Мне сегодня было очень весело. Пожалуйста, заходите ко мне снова в ближайшее время!)]
 	</p>
 	<p>
-		Reassuring [daddy.herHim] that you will, you make your exit, heading down the stairs and back out into Demon Home. Agreeing to accompany Lilaya back to her mansion, the two of you set off, talking with one another about your fun-filled evening the entire way there.
+		Успокоив [daddy.herHim] обещанием вернуться, вы выходите, спускаясь по лестнице обратно в Обитель Демонов. Согласившись проводить Lilaya до её особняка, вы вдвоем отправляетесь в путь, на протяжении всей дороги болтая о вашем полночном веселье.
 	</p>
 	<p>
-		Roughly half an hour later the two of you arrive back home, and after Rose has let you in, Lilaya thanks you for your company, before heading off upstairs with her cat-girl maid to get changed. Being left alone in the hallway, you wonder what to do next...
+		Примерно через полчаса вы вдвоем возвращаетесь домой, и после того как Роуз впускает тебя, Лилая благодарит тебя за компанию, прежде чем отправиться наверх вместе со своей горничной-кошкоязычной, чтобы переодеться. Оставшись один в коридоре, ты раздумываешь, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -1593,14 +1593,15 @@
 	<htmlContent tag="APARTMENT_TALK"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
 		<p>
-			Wanting to hear about [daddy.namePos] recent exploits, you continue to make flirtatious remarks as you ask [daddy.herHim] about what [daddy.sheHas] been getting up to recently. More than happy to regale you with tales from [daddy.her] ongoing construction projects, [daddy.name] proceeds to spend a good deal of time telling you several stories from the life of an arcane construction worker.
+			Желая разузнать о недавних подвигах [daddy.namePos], ты продолжаешь отпускать кокетливые замечания, расспрашивая [daddy.herHim] о том, чем [daddy.sheHas] занимался в последнее время. С радостью потчевая тебя рассказами о текущих строительных проектах [daddy.her], [daddy.name] тратит немало времени, повествуя тебе различные истории из жизни строителя арканы.
 		</p>
 		<p>
-			After a while, and with the atmosphere still sexually-charged from your relentless flirting, talk turns to your own adventures throughout Dominion, and then on to news of other mundane goings-on in the city. Eventually, conversation starts to run dry, and you wonder if now would be a good time to make a move on [daddy.herHim]...
+			Спустя некоторое время, когда атмосфера всё ещё была пропитана сексуальным напряжением из-за твоего неустанного флирта, разговор переходит на твои собственные приключения по всему Dominion, а затем на новости о других повседневных делах в городе. В конце концов, беседа начинает иссякать, и ты задаешься вопросом, не пора ли сделать шаг навстречу [daddy.herHim]...
 		</p>
 	#ELSE
 		<p>
-			Wanting to hear about [daddy.namePos] recent exploits, you ask [daddy.herHim] about what [daddy.sheHas] been getting up to recently. More than happy to regale you with tales from [daddy.her] ongoing construction projects, [daddy.name] proceeds to spend a good deal of time telling you several stories from the life of an arcane construction worker.
+		
+Желая услышать о недавних подвигах [daddy.namePos], ты спрашиваешь [daddy.herHim] о том, чем [daddy.sheHas] занимался в последнее время. С радостью потчуя тебя рассказами о текущих строительных проектах [daddy.her], [daddy.name] тратит немало времени, повествуя тебе несколько историй из жизни строителя-аркана.
 		</p>
 		<p>
 			После некоторого времени, разговор переходит к вашим собственным приключениям в Доминионе, а затем к новостям о других мирских событиях в городе. В конце концов, разговор начинает иссякать, и вы задаетесь вопросом, не пришло ли время попрощаться...
@@ -1612,14 +1613,15 @@
 	<htmlContent tag="LILAYA_APARTMENT_TALK"><![CDATA[
 	#IF(game.getDialogueFlags().hasFlag(FLAG_flirtingWithDaddy))
 		<p>
-			Wanting to hear about [daddy.namePos] recent exploits, you continue to make flirtatious remarks as you ask [daddy.herHim] about what [daddy.sheHas] been getting up to recently. More than happy to regale you and Lilaya with tales from [daddy.her] ongoing construction projects, [daddy.name] proceeds to spend a good deal of time telling you several stories from the life of an arcane construction worker.
+		
+Желая услышать о недавних подвигах [daddy.namePos], ты продолжаешь отпускать кокетливые замечания, спрашивая [daddy.herHim] о том, чем [daddy.sheHas] занимался в последнее время. С радостью потчуя тебя и Lilaya рассказами о текущих строительных проектах [daddy.her], [daddy.name] тратит немало времени, повествуя тебе несколько историй из жизни строителя-аркана.
 		</p>
 		<p>
 			После некоторого времени, и с атмосферой, все еще заряженной сексуальностью от вашего неустанного флирта, разговор переходит к вашим собственным приключениям в Доминионе, а затем к новостям о арканных исследовательских проектах Лилайи. В конце концов, разговор начинает иссякать, и, с вашими двумя спутницами явно возбужденными, вы задаетесь вопросом, не пришло ли время сделать шаг к ним...
 		</p>
 	#ELSE
 		<p>
-			Wanting to hear about [daddy.namePos] recent exploits, you ask [daddy.herHim] about what [daddy.sheHas] been getting up to recently. More than happy to regale you and Lilaya with tales from [daddy.her] ongoing construction projects, [daddy.name] proceeds to spend a good deal of time telling you several stories from the life of an arcane construction worker.
+			Желая услышать о недавних подвигах [daddy.namePos], ты расспрашиваешь [daddy.herHim] о том, чем [daddy.sheHas] занимался в последнее время. С огромным удовольствием потчует тебя и Lilaya историями о [daddy.her] текущих строительных проектах, [daddy.name] принимается тратить немало времени, рассказывая тебе разные байки из жизни строителя-аркана.
 		</p>
 		<p>
 			После некоторого времени разговоры переходят к вашим собственным приключениям по всему Доминиону, а затем к новостям о проектах Лилайи по исследованию Арканы. В конце концов, разговор начинает иссякать, и вы задаетесь вопросом, не пришло ли время для вас и вашего [lilaya.relation(pc)] попрощаться с [daddy.name]...
@@ -1642,7 +1644,7 @@
 		Прежде чем вы успеваете понять, что происходит, вы оба впиваете друг другу языки, в то время как ваши [pc.hands] отчаянно исследуют тела друг друга. Быстро снимая майку [daddy.daddy], вы прижимаете свои губы к [daddy.her] [daddy.breasts+], целуя [daddy.her] [daddy.nipples+], когда вы опускаете руку, чтобы начать снимать свою одежду.
 	</p>
 	<p>
-		С помощью [daddy.name], ты раздеваешься в рекордно короткие сроки, и твои вещи разбросаны по полу. Теперь, стоя лицом к лицу, [daddy.name] застегивает [daddy.her] [daddy.eyes+] на твоих и приказывает: [daddy.speech(That's [daddy.daddy]'s good [pc.girl]... Now get on my bed and present yourself to me...)]
+		С помощью [daddy.name] ты раздеваешься в рекордно короткие сроки, и твои вещи разбросаны по полу. Теперь, стоя лицом к лицу, [daddy.name] застегивает [daddy.her] [daddy.eyes+] на тебе и приказывает: [daddy.speech(Это хорошая [daddy.daddy] [pc.girl]... А теперь ложись на мою кровать и яви себя мне...)]
 	</p>
 	]]>
 	</htmlContent>

@@ -35,7 +35,7 @@
 		Улыбаясь [prologueMale.name], ты позволяешь ему протянуть руку и взять твою за руку, прежде чем тебя ведут к тихому, затененному дверному проему неподалеку. [prologueMale.speech(Похоже, здесь будет пусто...)]
 	</p>
 	<p>
-		You can't help but smile at his observation, before skipping forwards and [pc.moaning] into his ear, [pc.speech(~Mmm!~ This is going to be good!)]
+		Ты невольно улыбаешься его замечанию, после чего подаешься вперед и [pc.moaning] ему в ухо, [pc.speech(~Ммм!~ Это будет весело!)]
 	</p><p>
 		Не обращая внимания на табличку "Только для персонала", [prologueMale.name] отпирает тяжелую дубовую дверь и заглядывает внутрь, улыбаясь, когда вы оба видите, что комната за дверью совершенно темная; доказательство того, что она полностью пуста. Втягивая вас внутрь, он включает свет, прежде чем закрыть дверь за вами.
 	</p><p>
@@ -65,7 +65,7 @@
 
 	<htmlContent tag="INTRO_EMPTY_ROOM_SEX_FEMALE_AS_FEMALE_START_DOM"><![CDATA[
 	<p>
-		You pull [prologueFemale.name] into your [pc.breasts], desperately [pc.moaning] into her mouth as you dominantly grope and fondle [npc.her] body...
+		Ты притягиваешь [prologueFemale.name] к своим [pc.breasts], отчаянно [pc.moaning] ей в рот, властно ощупывая и лаская [npc.her] тело...
 	</p>
 	]]>
 	</htmlContent>
@@ -314,7 +314,7 @@
 	</htmlContent>
 
 	<htmlContent tag="INTRO_NEW_WORLD_1"><![CDATA[<p>
-		[pc.speech(~Ow!~)] Ты вскрикиваешь, когда тянешься, чтобы потереть свою пульсирующую голову. Когда ты это делаешь, ты замечаешь, что лежишь на чем-то холодном и твердом. Поднимаясь в сидячее положение, ты быстро закрываешь глаза, когда через твою голову пронзают боли. Держа голову, пытаясь остановить ее вращение, ты начинаешь слышать голоса, раздающиеся вокруг тебя.
+		[pc.speech(~Ой!~)] Ты вскрикиваешь, когда тянешься, чтобы потереть свою пульсирующую голову. Когда ты это делаешь, ты замечаешь, что лежишь на чем-то холодном и твердом. Поднимаясь в сидячее положение, ты быстро закрываешь глаза, когда через твою голову пронзают боли. Держа голову, пытаясь остановить ее вращение, ты начинаешь слышать голоса, раздающиеся вокруг тебя.
 	</p><p>
 		[style.speechMasculineStrong(О боже, [pc.sheIs] жива!)] кто-то говорит.
 	</p><p>
@@ -325,7 +325,7 @@
 		[style.speechMasculineStrong(Эм...)] говорят два голоса в унисон.
 	</p>
 	<p>
-		[style.speechFeminine(You two don't have a brain between you... [pc.SheIs] human, get it? Since when could a human use that kind of arcane power? Hell, only a Lilin could just appear out of thin air like that. This little runt obviously pissed off a lilin, or messed with some artefact [pc.she] didn't understand. In other words, [pc.sheIs] fair game, so just hold [pc.herHim] still until the storm starts.)]
+		[style.speechFeminine(На двоих у вас совсем нет мозгов... [pc.SheIs] человек, понимаешь? С каких это пор человек может использовать такую арканическую силу? Черт, только лилин может вот так просто появиться из ниоткуда. Этот мелкий щенок явно разозлил лилин или связался с каким-то артефактом, который [pc.she] не понял. Другими словами, [pc.sheIs] легкая добыча, так что просто держи [pc.herHim] смирно, пока не начнется буря.)]
 	</p><p>
 		Когда люди заканчивают свой разговор, вы удивляетесь, обнаружив, что большая часть боли в вашей голове уже исчезла. Вы открываете глаза, чтобы увидеть, что происходит, но как только вы это делаете, вас внезапно хватают две пары сильных рук.
 	</p><p>
@@ -408,7 +408,7 @@
 		Именно когда вы теряете последнюю надежду, откуда-то сзади раздаётся странно знакомый голос.
 	</p>
 	<p>
-		[lilaya.speech(Do you <i>really</i> have to play your silly little games right here in the middle of the street? You know, some people don't really care for that sort of thing, and by the looks of it, your little friend under there may just be one of them.)]
+		[lilaya.speech(Тебе <i>действительно</i> нужно играть в свои глупые игры прямо посреди улицы? Знаешь, некоторым такие вещи не очень по душе, и, судя по всему, твой маленький дружок там внизу может оказаться одним из них.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -420,7 +420,7 @@
 	</p><p>
 		[style.speechMasculine(О боже! Бежать!)] Мальчики-лошади быстро убегают, оставив своего лидера.
 	</p><p>
-		Девушка-кот быстро начинает оправдываться, когда вы слышите, как таинственная женщина подходит ближе, [style.speechFeminineStrong(L-look, w-we were only playing! Anyway, if [pc.she] didn't want to have some fun, why's [pc.she] outside just before a storm's about to break?!)]
+	Девушка-кот начинает быстро оправдываться, когда вы слышите, как таинственная женщина подходит ближе: [style.speechFeminineStrong(Л-мы всего лишь играли! В любом случае, если [pc.she] не хотела повеселиться, почему [pc.she] стоит снаружи прямо перед началом бури?!)]
 	</p><p>
 		[lilaya.speech(Ну, это действительно не мое дело, но теперь, когда ваши маленькие друзья убежали, что мешает <i>[pc.herHim]</i> немного повеселиться с <i>вами</i>?)] отвечает женщина, и на этот раз вы уверены, что узнаете ее голос.
 	</p><p>
@@ -482,7 +482,7 @@
 	</p>
 
 	<p>
-	Lily knocks on the door and turns back to you, sighing, [lilaya.speech(Of course they're nothing to worry about! Oh, and stop calling me 'Lily'! Maybe back in <i>your</i> world, I was your aunt and was called that, but <i>here</i>, I'm not your aunt, and my name is 'Lilaya'. S-So call me that!)]
+	Lily стучит в дверь и, вздохнув, оборачивается к вам: [lilaya.speech(Конечно, о них не стоит беспокоиться! Ох, и хватит звать меня «Лили»! Может, в <i>твоем</i> мире я и была твоей тетей, и так меня называли, но <i>здесь</i> я тебе не тетя, и мое имя — «Lilaya». Т-так что зови меня так!)]
 	</p><p>
 		Лилая, произнеся это, быстро поворачивается к двери, и ты вздыхаешь, думая: [pc.thought(Чёрт, она даже смущается, когда называет своё имя? Она никогда не разговаривает с людьми или что-то в этом роде?)]
 	</p><p>

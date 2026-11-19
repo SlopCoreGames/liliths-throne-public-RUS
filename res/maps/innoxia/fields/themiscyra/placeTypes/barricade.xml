@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[burning barricade]]></name>
-	<tooltipDescription><![CDATA[Constructed and lit by the town's defenders, this burning barricade is producing a considerable amount of heat and smoke, making it impossible for you to pass.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside a burning barricade in Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[пылающая баррикада]]></name>
+	<tooltipDescription><![CDATA[Возведенная и подожженная защитниками города, эта пылающая баррикада источает столько жара и дыма, что пройти сквозь нее практически невозможно.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[возле пылающей баррикады в Фемискире]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

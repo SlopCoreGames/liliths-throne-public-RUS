@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Elis tourism board]]></name>
-	<tooltipDescription><![CDATA[This particular office is signposted as being home to the 'Elis tourism board'.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the office of the 'Elis tourism board' in the town hall]]></virginityLossDescription>
+	<name><![CDATA[Туристическое бюро Элиса]]></name>
+	<tooltipDescription><![CDATA[На указателе гласит, что в этом кабинете располагается «туристическое бюро Элиса».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в офисе «туристического бюро Элиса» в ратуше]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>office</svgName>
 	<colour>BASE_BLUE_STEEL</colour>

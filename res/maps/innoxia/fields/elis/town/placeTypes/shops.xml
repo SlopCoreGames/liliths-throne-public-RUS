@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Wall's End]]></name>
-	<tooltipDescription><![CDATA[Carrying the name of 'Wall's End', this open-air shopping precinct contains the sort of businesses which aren't suitable for the farmer's market.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the shopping precinct in Elis]]></virginityLossDescription>
+	<name><![CDATA[Уэллс-Энд]]></name>
+	<tooltipDescription><![CDATA[Этот торговый квартал под открытым небом, носящий имя «Край Стен», объединяет заведения, которым не место на обычном фермерском рынке.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в торговом квартале Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Themiscyra plaza]]></name>
-	<tooltipDescription><![CDATA[Positioned before the palace, the main plaza in Themiscyra is paved in a marble mosaic and home to dozens of statues that portray the town's previous queens.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Themiscyra's plaza]]></virginityLossDescription>
+	<name><![CDATA[Площадь Фемискиры]]></name>
+	<tooltipDescription><![CDATA[Расположенная перед дворцом, главная площадь Фемискиры вымощена мраморной мозаикой; здесь установлены десятки статуй, изображающих былых королев города.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на площади Фемискиры]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

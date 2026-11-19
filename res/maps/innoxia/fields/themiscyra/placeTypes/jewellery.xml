@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[jewellery quarter]]></name>
-	<tooltipDescription><![CDATA[Wanting to look their best, the residents of Themiscyra mastered the art of creating fine pieces of jewellery in this area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the jewellery quarter in Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[ювелирный квартал]]></name>
+	<tooltipDescription><![CDATA[Желая выглядеть безупречно, жители Фемискиры в этом районе в совершенстве овладели искусством создания изысканных ювелирных украшений.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в ювелирном квартале Фемискиры]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GOLD</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

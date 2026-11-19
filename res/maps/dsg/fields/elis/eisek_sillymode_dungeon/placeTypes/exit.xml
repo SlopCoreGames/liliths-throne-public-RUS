@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>	
-	<name><![CDATA[Exit]]></name>
-	<tooltipDescription><![CDATA[The air is not so foul near this door, it must be the way out.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the exit from a strange basement]]></virginityLossDescription>	
+	<name><![CDATA[Выход]]></name>
+	<tooltipDescription><![CDATA[Воздух возле этой двери не такой зловонный, должно быть, это выход.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на выходе из странного подвала]]></virginityLossDescription>	
 	<sexBlockedFromCharacterPresent/>
 	<svgName>dungeon_door</svgName>
 	<colour>BASE_WHITE</colour>

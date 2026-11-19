@@ -37,7 +37,7 @@
 			#ENDIF
 			 сейчас [npc.materialCompositionDescriptor]
 			#IF(npc.isHeavyMakeup(BODY_COVERING_TYPE_MAKEUP_LIPSTICK) && game.isLipstickMarkingEnabled())
-				 [style.colourPinkDeep(heavy layer)]
+				 [style.colourPinkDeep(густой слой)]
 			#ENDIF
 			 [#npc.getLipstick().getFullDescription(npc, true)].
 		#ELSE

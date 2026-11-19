@@ -14,8 +14,8 @@
 		<namePlural pluralByDefault="false"><![CDATA[клубки шерсти]]></namePlural>
 		<description><![CDATA[Длинная, непрерывная нить переплетенных шерстяных волокон, плотно смотанная в тугой шар.]]></description>
 		<attackDescriptor>throw</attackDescriptor>
-		<attackDescriptionPrefix>throw ball of yarn at</attackDescriptionPrefix>
-		<attackTooltipDescription>Throw the ball of yarn at [npc2.name].</attackTooltipDescription>
+		<attackDescriptionPrefix>бросить клубок пряжи в</attackDescriptionPrefix>
+		<attackTooltipDescription>Брось клубок пряжи в [npc2.name].</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		
 		<equipText><![CDATA[[npc.Name] [npc.verb(take)] [npc.her] клубок шерсти и [npc.verb(prepare)] бросить его.]]></equipText>

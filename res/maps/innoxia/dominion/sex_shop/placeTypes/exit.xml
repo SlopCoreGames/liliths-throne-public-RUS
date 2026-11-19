@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Entrance]]></name>
-	<tooltipDescription><![CDATA[The entrance to Lovienne's Luxuries.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the entrance to Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[Вход]]></name>
+	<tooltipDescription><![CDATA[Вход в «Роскошь Ловьенн».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у входа в «Роскошь Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

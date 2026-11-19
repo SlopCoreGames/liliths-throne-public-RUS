@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[Служебные револьверы Waspley Mk IV]]></namePlural> 
 		<description><![CDATA[Хотя внешне он почти идентичен своему собрату калибра .455, этот револьвер с двойным действием и откидным стволом рассчитан под более мелкий патрон .38.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Shoot [npc2.name] with your revolver.</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели в [npc2.name] из своего револьвера.</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		<weaponSet/> 

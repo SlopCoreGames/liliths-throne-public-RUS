@@ -20,7 +20,7 @@
 	<htmlContent tag="DONATION_PROGRESS"><![CDATA[
 	<p style='text-align:center;'>
 		#IF(flags.getSavedLong('nnxx_callie_total_donated')<100000)
-			You have donated a total of [style.moneyFormat([#flags.getSavedLong('nnxx_callie_total_donated')], b)] to Callie!
+			Всего ты пожертвовал Кэлли сумму в [style.moneyFormat([#flags.getSavedLong('nnxx_callie_total_donated')], b)]!
 			<br/>
 		#ENDIF
 		#IF(flags.getSavedLong('nnxx_callie_total_donated')>=100000)

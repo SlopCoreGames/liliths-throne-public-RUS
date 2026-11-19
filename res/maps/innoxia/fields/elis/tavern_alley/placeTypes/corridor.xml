@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[A narrow corridor links the VIP room to the main floor of 'The Crossed Blades' tavern.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the corridor at 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Узкий коридор соединяет VIP-зал с основным залом таверны «Скрещенные клинки».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре таверны «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

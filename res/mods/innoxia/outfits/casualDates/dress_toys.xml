@@ -4,10 +4,10 @@
 
 	<coreAttributes>
 		<!-- Names are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable (lowercase) name.-->
-		<name><![CDATA[casual dress with toys]]></name>
+		<name><![CDATA[повседневное платье с игрушками]]></name>
 		
 		<!-- Again, descriptions are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable description.-->
-		<description><![CDATA[A dress hides the fact that the wearer has a toy or two inserted into their orifices...]]></description>
+		<description><![CDATA[Платье скрывает тот факт, что в отверстия его обладательницы вставлена одна или две игрушки...]]></description>
 		
 		<!-- The femininity needed for someone to generate this outfit. MASCULINE, ANDROGYNOUS, and FEMININE are the three acceptable values. ANDROGYNOUS means anyone can use this outfit, while the other two are self-explanatory.-->
 		<femininity>FEMININE</femininity>

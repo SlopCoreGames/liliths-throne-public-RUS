@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[back door]]></name>
-	<tooltipDescription><![CDATA[Used by the shop's staff to enter and exit the building without having to go through the shop floor, this back door requires a key card to open.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the back of Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[задняя дверь]]></name>
+	<tooltipDescription><![CDATA[Этой дверью пользуется персонал магазина, чтобы входить в здание и выходить из него, не проходя через торговый зал; для её открытия требуется ключ-карта.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в задней части «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_RED_DARK</colour>

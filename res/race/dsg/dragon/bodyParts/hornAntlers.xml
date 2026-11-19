@@ -30,13 +30,13 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's horn of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>single-branched</descriptor>
-		<descriptor>draconic</descriptor>
+		<descriptor>однорогий</descriptor>
+		<descriptor>драконьи</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>single-branched</descriptor>
-		<descriptor>draconic</descriptor>
+		<descriptor>однорогий</descriptor>
+		<descriptor>драконьи</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this horn type.

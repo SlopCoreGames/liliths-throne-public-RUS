@@ -10,7 +10,7 @@
 		<description><![CDATA[Мощный демонстоун, чью силу можно поглотить в ауру человека, чтобы усилить его безоружные удары дополнительным стихийным уроном. Ходят слухи, что такие демонстоуны — это кристаллизованная эссенция оргазма лилин.]]></description> 
 		
 		<attackDescriptor>crystal strike</attackDescriptor>
-		<attackTooltipDescription>Strike at [npc.name] in melee, using your crystal's power to inflict extra damage!</attackTooltipDescription>
+		<attackTooltipDescription>Наноси удар [npc.name] в ближнем бою, используя мощь своего кристалла для нанесения дополнительного урона!</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		

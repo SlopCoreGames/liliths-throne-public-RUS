@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Golden Treasures]]></name>
-	<tooltipDescription><![CDATA[A ferret-boy runs this stall, and has all manner of jewellery and trinkets for sale, some of which is enchanted.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the Farmer's Market in Elis]]></virginityLossDescription>
+	<name><![CDATA[Золотые сокровища]]></name>
+	<tooltipDescription><![CDATA[Этим прилавком заправляет мальчишка-хорек; у него можно купить самые разные украшения и безделушки, некоторые из которых зачарованы.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на фермерском рынке в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>trinkets</svgName>
 	<colour>BASE_GOLD</colour>

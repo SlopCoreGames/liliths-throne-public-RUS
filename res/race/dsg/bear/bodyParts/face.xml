@@ -44,13 +44,13 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's face of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic bear-like</descriptor>
-		<descriptor>bear-like</descriptor>
+		<descriptor>антропоморфный медвежий</descriptor>
+		<descriptor>медвежий</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic bear-like</descriptor>
-		<descriptor>bear-like</descriptor>
+		<descriptor>антропоморфный медвежий</descriptor>
+		<descriptor>медвежий</descriptor>
 	</descriptorsFeminine>
 	
 	

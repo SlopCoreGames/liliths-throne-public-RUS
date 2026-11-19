@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Flash's room]]></name>
-	<tooltipDescription><![CDATA[The tavern's owner, Flash, lives in this room.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Flash's room at 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[Комната Флэша]]></name>
+	<tooltipDescription><![CDATA[В этой комнате живет Флэш, владелец таверны.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в комнате Флэша в таверне «Рыжий дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>room</svgName>
 	<colour>BASE_BLACK</colour>

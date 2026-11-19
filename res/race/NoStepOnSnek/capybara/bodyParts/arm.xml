@@ -10,42 +10,42 @@
 	<name><![CDATA[рука]]></name>
 	<namePlural><![CDATA[руки]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsFeminine>
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>capybara-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>paw-like</descriptor>
+		<descriptor>капибароподобный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожая на лапу</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>capybara-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>paw-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>капибароподобный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожая на лапу</descriptor>
 	</handDescriptorsFeminine>
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>padded</descriptor>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>пышный</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>padded</descriptor>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пышный</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</fingerDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Всего за мгновение их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую шерсть, растущую на спинках [npc.her] рук, с легкими перепонками между [npc.her] пальцами. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] грубые кожистые подушечки, а у [npc.her] верхней части бицепса [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].
-		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldCapybara(capybara-like arms and hands)], которые [npc.materialDescriptor] [npc.armFullDescription].
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldCapybara(похожими на капибару руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 	[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] руки превратились в антропоморфные, капибароподобные кисти с грубыми кожистыми подушечками и легкими перепонками между пальцами.

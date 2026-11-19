@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[Meraxis's Hideout]]></name>
+	<name><![CDATA[Убежище Мераксиса]]></name>
 	<colour>BASE_PURPLE_LIGHT</colour>
-	<sexBlockedReason><![CDATA[[npc.Name] cannot have sex here!]]></sexBlockedReason>
+	<sexBlockedReason><![CDATA[[npc.Name] нельзя здесь заниматься сексом!]]></sexBlockedReason>
 	<furniturePresent deskName="table">true</furniturePresent>
 	<wallsPresent>true</wallsPresent>
 	<loiteringEnabled>true</loiteringEnabled>

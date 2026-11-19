@@ -10,7 +10,7 @@
 		<description><![CDATA[Обычный вид демонского камня, чью силу можно поглотить аурой человека, чтобы усилить его удары без оружия дополнительным стихийным уроном. Ходят слухи, что подобные демонские камни — это кристаллизованная эссенция оргазма лилин.]]></description> 
 		
 		<attackDescriptor>crystal strike</attackDescriptor>
-		<attackTooltipDescription>Strike at [npc.name] in melee, using your crystal's power to inflict extra damage!</attackTooltipDescription>
+		<attackTooltipDescription>Наноси удар [npc.name] в ближнем бою, используя мощь своего кристалла для нанесения дополнительного урона!</attackTooltipDescription>
 		
 		<rarity>RARE</rarity> 
 		

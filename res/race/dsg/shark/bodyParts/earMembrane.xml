@@ -34,12 +34,12 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's ear of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>hidden</descriptor>
+		<descriptor>скрытые</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>hidden</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>скрытые</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this ear type.
@@ -52,12 +52,12 @@
 		 Тонкая мембрана быстро разрастается, чтобы закрыть их. Как и всё остальное тело [npc.her], она состоит из [npc.earFullDescription],
 		#ENDIF
 		 и по завершении трансформации [npc.she] замечает, что [npc.verb(twitch)] слух [npc.her] на самом деле совсем не пострадал.
-		<br/>[npc.Name] теперь [npc.has] [style.boldShark(hidden, shark-like ears)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldShark(скрытые, акулий слуховой проход)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
 		]]></transformationDescription>
 	
 	<!-- How this ear is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пара стоячих,#IF(npc.isPiercedEar()) pierced,#ENDIF shark-like ears, which are actually holes hidden by a thin membrane of [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара стоячих,#IF(npc.isPiercedEar()) проколотые,#ENDIF акуличьи ушные раковины, которые на самом деле представляют собой отверстия, скрытые тонкой мембраной [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

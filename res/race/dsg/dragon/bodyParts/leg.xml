@@ -55,35 +55,35 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's leg of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>scaly</descriptor>
-		<descriptor>anthropomorphic, dragon-like</descriptor>
-		<descriptor>scale-coated</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>антропоморфный, драконоподобный</descriptor>
+		<descriptor>покрытая чешуей</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>scaly</descriptor>
-		<descriptor>anthropomorphic, dragon-like</descriptor>
-		<descriptor>scale-coated</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>антропоморфный, драконоподобный</descriptor>
+		<descriptor>покрытая чешуей</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same descriptor formats as those for the leg type above, but these describe the leg's feet.
 	Foot type descriptors are also used, so these are extra definitions related to this leg type's race. -->
 	<footDescriptorsMasculine>
-		<descriptor>dragon-like</descriptor>
+		<descriptor>драконий</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>dragon-like</descriptor>
+		<descriptor>драконий</descriptor>
 	</footDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the leg type above, but these describe the leg's toes.
 	Foot type's toe descriptors are also used, so these are extra definitions related to this leg type's race. -->
 	<toeDescriptorsMasculine>
-		<descriptor>dragon-like</descriptor>
+		<descriptor>драконий</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>dragon-like</descriptor>
+		<descriptor>драконий</descriptor>
 	</toeDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this leg type.

@@ -23,8 +23,8 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldTfGrow(+1)] [style.boldTfSex(ass size)]]]></line>
-			<line><![CDATA[[style.boldTfGrow(+1)] [style.boldTfSex(hip size)]]]></line>
+			<line><![CDATA[[style.boldTfGrow(+1)] [style.boldTfSex(размер задницы)]]]></line>
+			<line><![CDATA[[style.boldTfGrow(+1)] [style.boldTfSex(размер бедер)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[

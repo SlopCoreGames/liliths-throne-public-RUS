@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Entrance]]></name>
-	<tooltipDescription><![CDATA[The main entrance to Elis's town hall.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the entrance to Elis's town hall]]></virginityLossDescription>
+	<name><![CDATA[Вход]]></name>
+	<tooltipDescription><![CDATA[Главный вход в ратушу Элиса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у входа в ратушу Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

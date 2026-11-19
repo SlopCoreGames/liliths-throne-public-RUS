@@ -21,7 +21,7 @@
 			<category id="second_chain" priority="1">
 				<categoryName><![CDATA[Вторая цепочка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -32,7 +32,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="add1" priority="1" defaultSticker="true" zLayer="2">
-					<stickerName><![CDATA[Medium]]></stickerName>
+					<stickerName><![CDATA[Средний]]></stickerName>
 					<namePrefix/>
 					<descriptionModification/>
 					<imageName>nipple_chain_add_1.svg</imageName>
@@ -45,7 +45,7 @@
 			<category id="third_chain" priority="2">
 				<categoryName><![CDATA[Третья цепочка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -56,7 +56,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="add2" priority="2" defaultSticker="true" zLayer="3">
-					<stickerName><![CDATA[Thin]]></stickerName>
+					<stickerName><![CDATA[Тонкий]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>

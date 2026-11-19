@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Wall's End]]></name>
-	<tooltipDescription><![CDATA[A circular cobblestone path links all of the stores within the Wall's End shopping precinct.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the 'Wall's End' shopping precinct]]></virginityLossDescription>
+	<name><![CDATA[Уэллс-Энд]]></name>
+	<tooltipDescription><![CDATA[Круговая мощеная дорожка соединяет все лавки в торговом квартале «Конец Стены».]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в торговом квартале «Конец Стены»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

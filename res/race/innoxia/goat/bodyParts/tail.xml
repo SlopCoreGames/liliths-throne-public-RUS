@@ -24,21 +24,21 @@
 	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>goat-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>козий</descriptor>
+		<descriptor>пушистая</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>goat-like</descriptor>
-		<descriptor>furry</descriptor>
+		<descriptor>козий</descriptor>
+		<descriptor>пушистая</descriptor>
 	</descriptorsFeminine>
 	
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -47,15 +47,15 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldGoat(козий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
 [npc.TailCount] пушистые козьи хвостики прорастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] может лишь слегка ими управлять, лишь приподнимая или опуская их.
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldGoat(goat-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldGoat(козьи хвостики)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] goat tail, which [npc.she] can lift up and down.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] козий хвост, который [npc.she] может поднимать и опускать.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] goat tails, which [npc.she] can lift up and down.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] козьи хвосты, которые [npc.she] может поднимать и опускать.
 		#ENDIF
 	]]></bodyDescription>
 </tail>

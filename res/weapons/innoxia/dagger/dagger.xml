@@ -71,7 +71,7 @@
 			You should use the parsing target of 'npc' for the character using this weapon, and if needed, you can also use 'npc2' for the targeted character.
 			If this element is omitted, then the value defined in the 'attackDescriptor' element above will be used.
 			This element is used to display the predicted attacks to the player in combat, and as such should be kept as brief as possible. -->
-		<attackDescriptionPrefix>stab</attackDescriptionPrefix>
+		<attackDescriptionPrefix>укол</attackDescriptionPrefix>
 		
 		<!-- The description that's displayed when hovering over the attack action in combat. Follow the same guidelines as equipText (a couple of entries further down this page).
 		As this tooltip is only ever seen from the player's perspective, you can always write in the first-person narrative. (Still use npc2 for the target, though.)-->

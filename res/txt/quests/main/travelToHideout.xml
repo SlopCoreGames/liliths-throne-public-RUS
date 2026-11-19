@@ -5,26 +5,26 @@
 	
 	<htmlContent tag="START"><![CDATA[
 	<p>
-		You tell Meraxis that the time has come for the two of you to set off and find Takahashi.
+		Ты говоришь Мераксису, что пришло время вам двоим отправиться на поиски Такахаши.
 	</p>
 	#IF(meraxis.isPregnant())
 		<p>
-			[meraxis.speech(Then what are we waiting for?!)] the chuuni [meraxis.race] excitedly asks. After leaping to her feet, she suddenly seems to lose her confidence, and she rubs her hand over her
+			[meraxis.speech(Тогда чего мы ждем?!)] — восторженно спрашивает чунибьянка [meraxis.race]. Вскочив на ноги, она внезапно будто теряет уверенность и проводит рукой по своему
 			#IF(meraxis.isVisiblyPregnant())
-				 visibly-swollen belly and mumbles, [meraxis.speech(I kind of feel like I should deal with this before going on an adventure...)]
+				 заметно вздутому животу, бормоча: [meraxis.speech(Мне кажется, мне стоит разобраться с этим, прежде чем пускаться в приключение...)]
 			#ELSE
-				 flat tummy and mumbles, [meraxis.speech(I took a pregnancy test and... you got me pregnant, [pc.name]. I kind of feel like I should deal with this before going on an adventure...)]
+				 плоскому животу и бормочет: [meraxis.speech(Я сделала тест на беременность и... ты залетел мне, [pc.name]. Мне кажется, мне стоит разобраться с этим, прежде чем пускаться в приключение...)]
 			#ENDIF
 		</p>
 		<p>
-			You tell Meraxis that the Shinrin Highlands can wait; it's best if she gets some rest and waits until the two of you can deal with her pregnancy before setting out on what could end up being a dangerous journey.
+			Ты говоришь Мераксису, что Высокогорье Синрин может подождать; лучше всего будет, если она немного отдохнет и дождется, пока вы двое не разберетесь с ее беременностью, прежде чем отправляться в путь, который может оказаться опасным.
 		</p>
 		<p>
-			[meraxis.speech(Wait?! No! Takahashi might be in trouble, and we've waited long enough,)] she declares, before saying,
+			[meraxis.speech(Подождать?! Нет! Такахаши может быть в беде, и мы и так ждали достаточно долго,)] — заявляет она, прежде чем добавить:
 			#IF(meraxis.getPregnantLitter().getTotalLitterCount()>1)
-				 [meraxis.speech(You stay here, [pc.name]. Mommy always has some Mother's Milk, and she can help me to give birth. Our kids will be safe in Lyssieth's palace and my sisters will give them everything they need to sort themselves out!)]
+				 [meraxis.speech(Ты оставайся здесь, [pc.name]. У мамочки всегда найдется материнское молочко, и она поможет мне родить. Наши детки будут в безопасности во дворце Lyssieth, а мои сестры дадут им всё необходимое, чтобы они понемногу освоились!)]
 			#ELSE
-				 [meraxis.speech(You stay here, [pc.name]. Mommy always has some Mother's Milk, and she can help me to give birth. Our kid will be safe in Lyssieth's palace and my sisters will give them everything they need to sort themselves out!)]
+				 [meraxis.speech(Ты остаешься здесь, [pc.name]. У мамочки всегда найдется немного материнского молока, и она поможет мне при родах. Наш малыш будет в безопасности во дворце Lyssieth, а мои сестры дадут им всё необходимое, чтобы они во всем разобрались!)]
 			#ENDIF
 		</p>
 		<p>
@@ -149,10 +149,10 @@
 		[shiranui.speech(Еще двое грубых нарушителей попались в мою сеть!)] веселый, женственный голос раздается вокруг тебя. Это переходит в вспышку зловещего смеха, а затем внезапно теневая фигура выглядывает из-за нескольких деревьев одновременно. Обернувшись к этим теневым угрозам, ты и Мераксис стоите спиной к спине, готовые к тому, что принесет вам судьба.
 </p>
 	<p>
-		[meraxis.speech(Stay focused, my nemesis! So long as we don't get split up we should be-)] Meraxis says from behind you, but her words are suddenly cut short. Spinning around, you see that the chuuni [meraxis.race] has vanished, and so too have all of the shadowy figures. A total silence, as thick and as heavy as the surrounding mists, completely envelops you, and although you remain ready for her to reappear, Shiranui doesn't show herself to you again.
+		[meraxis.speech(Не теряй концентрацию, мой заклятый враг! Пока нас не разделили, мы должны быть-)] — говорит Meraxis у тебя за спиной, но её слова внезапно обрываются. Обернувшись, ты видишь, что чуни [meraxis.race] исчезла, как и все призрачные фигуры. Полная тишина, густая и тяжелая, как окружающий туман, окутывает тебя, и хотя ты всё еще ждешь её появления, Shiranui больше не показывается.
 	</p>
 	<p>
-		Thankfully, the beaten path which winds its way between the vague silhouettes of trees remains relatively clear of mist, allowing you to navigate through this illusionary realm. Hoping that Meraxis is not in danger, you set off down the path and begin your search for the fires which you need to extinguish in order to escape from this illusionary realm...
+		К счастью, протоптанная тропа, вьющаяся между смутных силуэтов деревьев, остается относительно свободной от тумана, что позволяет тебе ориентироваться в этом иллюзорном мире. Надеясь, что Meraxis не в опасности, ты отправляешься в путь и начинаешь искать огни, которые нужно потушить, чтобы выбраться из этого иллюзорного царства...
 	</p>
 	]]>
 	</htmlContent>

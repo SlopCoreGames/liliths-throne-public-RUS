@@ -174,7 +174,7 @@
 	
 	<htmlContent tag="ALLEYWAY"><![CDATA[
 	<p>
-		Ты идёшь по одному из многочисленных переулков Slaver Alley, соединенных между собой. Вымощенные чистой серой брусчаткой и почти такие же широкие, как обычные улицы, они совсем не похожи на те типичные проходы, из которых состоят остальные закоулки Dominion.
+		Ты идешь по одному из многочисленных переулков Slaver Alley, соединенных между собой. Вымощенные чистой серой брусчаткой и почти такие же широкие, как обычные улицы, они совсем не похожи на те типичные проходы, из которых состоят остальные закоулки Dominion.
 		#IF(game.isDayTime())
 			С боков окружающих зданий свисают разноцветные брезентовые навесы, а если посмотреть вверх сквозь просвет посередине, можно увидеть слабое розовое мерцание — след щита, защищающего Slaver Alley от арканальных штормов.
 		#ELSE
@@ -447,9 +447,9 @@
 		#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2)
 			 'Iron & Steel'. Плакат у самой двери гласит, что ты можешь <i>'попросить персонал кафе устроить демонстрацию силы и мужской состоятельности наших рабов'</i>.
 		#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3)
-			 'The Rear Entrance'. Плакат у самой двери гласит, что ты можешь <i>'попросить персонал кафе устроить демонстрацию анальных способностей наших рабов'</i>.
+			 'Задний вход'. Плакат у самой двери гласит, что ты можешь <i>'попросить персонал кафе устроить демонстрацию анальных способностей наших рабов'</i>.
 		#ELSE
-			 'A Woman's Touch'. Плакат у самой двери гласит, что ты можешь <i>'попросить персонал кафе устроить демонстрацию покорности и желания угождать наших рабынь'</i>.
+			 'Женское прикосновение'. Плакат у самой двери гласит, что ты можешь <i>'попросить персонал кафе устроить демонстрацию покорности и желания угождать наших рабынь'</i>.
 		#ENDIF
 	</p>
 	<p>
@@ -639,7 +639,7 @@
 	
 	<htmlContent tag="MARKET_STALL_CAFE_INTERIOR_ORDER"><![CDATA[
 	<p>
-		Позвав #IF(npc.isFeminine())waitress#ELSEwaiter#ENDIF, you place an order for [#SPECIAL_PARSE_0] [#SPECIAL_PARSE_1], before handing over the [#SPECIAL_PARSE_2] flames [npc.she] asks of you. Having received the payment, [npc.she] sets off into the kitchen, before swiftly returning to your table and placing the [#SPECIAL_PARSE_1] down in front of you.
+		Позвав #IF(npc.isFeminine())официантка#ELSEофициант#ENDIF, ты заказываешь [#SPECIAL_PARSE_0] [#SPECIAL_PARSE_1], а затем отдаешь [#SPECIAL_PARSE_2] огней, которые просит [npc.she]. Получив оплату, [npc.she] уходит на кухню, после чего стремительно возвращается к твоему столику и ставит перед тобой [#SPECIAL_PARSE_1].
 		#IF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE)
 			Одарив тебя бодрой улыбкой, она быстро разворачивается и спешит к другому столику, требующему её внимания.
 		#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2)
@@ -662,7 +662,7 @@
 	
 	<htmlContent tag="MARKET_STALL_CAFE_INTERIOR_ORDER_COMPANION"><![CDATA[
 	<p>
-		Позвав #IF(npc.isFeminine())waitress#ELSEwaiter#ENDIF, you place an order for [#SPECIAL_PARSE_0] [#SPECIAL_PARSE_1], before handing over the [#SPECIAL_PARSE_2] flames [npc.she] asks of you. Having received the payment, [npc.she] sets off into the kitchen, before returning to your table and placing the [#SPECIAL_PARSE_1] down in front of [com.name].
+		Позвав #IF(npc.isFeminine())официантка#ELSEофициант#ENDIF, ты заказываешь [#SPECIAL_PARSE_0] [#SPECIAL_PARSE_1], а затем отдаешь [#SPECIAL_PARSE_2] огней, которые просит [npc.she]. Получив оплату, [npc.she] уходит на кухню, после чего возвращается к твоему столику и ставит [#SPECIAL_PARSE_1] перед [com.name].
 		#IF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE)
 			 Одарив вас обоих жизнерадостной улыбкой, она быстро разворачивается и спешит к другому столику, требующему её внимания.
 		#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2)
@@ -2509,7 +2509,7 @@
 			</p>
 		#ELSE
 			<p>
-				Clearly still possessing a large amount of energy, [sean.name] half-drags, half-carries you and [com.name] all the way back to the square in which the public stocks are located. Taking a look around, the [sean.race] sighs in annoyance, [sean.speech(Damn... There's only one free set of stocks...)]
+				В явно не исчерпанной энергии, [sean.name] то ли полуволоча, то ли полунеся тебя и [com.name], дотаскивает тебя до самой площади, где расположены публичные колодки. Оглядевшись по сторонам, [sean.race] раздраженно вздыхает: [sean.speech(Черт... Свободны только одни колодки...)]
 			</p>
 			<p>
 				Явно решив, что ты заслуживаешь места в колодках больше, чем [com.name], [sean.name] оставляет своего спутника восстанавливать силы и наблюдает за тем, как тот раздевает тебя догола, а затем запирает в единственном свободном наборе колодок. Привлеченная шумом, вокруг начинает собираться небольшая толпа, пока [sean.race] задвигает засовы и объявляет: [sean.speech(Вот так-то! Теперь мы готовы повеселиться с прохожими!)]
@@ -2744,7 +2744,7 @@
 			[sean.speech(Ладно, раз так, тогда я просто помечу твои колодки как полностью доступные для общественного пользования!)] — разочарованно восклицает [sean.name], прежде чем двинуться вперед и быстро закончить свое дело. Закончив, он обходит тебя и с дерзкой ухмылкой произносит: [sean.speech(Слово есть слово, так что без обид, а?)]
 		</p>
 		<p>
-			Taking the defeated whine which you let out as confirmation that you're not angry with him, [sean.name] smiles and walks around behind [com.name] again. Giving [com.her] exposed pussy a gentle slap, he laughs as your [com.companion] lets out a horny moan, before walking off and calling over his shoulder, [sean.speech(I'll be back to give you a good breeding once I've seen your friend here get fucked!)]
+			Услышав твой победный скулёж, ставший подтверждением того, что ты не сердишься на него, [sean.name] улыбается и снова обходит [com.name] со спины. Слегка шлёпнув по обнажённой киске [com.her], он смеётся, слыша твой [com.companion], изливаемый в похотливом стоне, а затем уходит, бросая через плечо: [sean.speech(Я вернусь, чтобы как следует тебя осеменить, как только посмотрю, как трахают твою подружку!)]
 		</p>
 	#ELSEIF(game.getDialogueFlags().hasFlag(FLAG_slaverAlleyCompanionInStocks))
 		<p>

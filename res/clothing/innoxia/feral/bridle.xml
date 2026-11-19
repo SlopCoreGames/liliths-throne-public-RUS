@@ -22,7 +22,7 @@
 			<category id="reins" priority="1">
 				<categoryName><![CDATA[Поводья]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Present]]></stickerName>
+					<stickerName><![CDATA[Надето]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[К этой уздечке прикреплены поводья.]]></descriptionModification>
@@ -33,7 +33,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="removed" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Removed]]></stickerName>
+					<stickerName><![CDATA[Снято]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[С этой уздечки сняли поводья.]]></descriptionModification>

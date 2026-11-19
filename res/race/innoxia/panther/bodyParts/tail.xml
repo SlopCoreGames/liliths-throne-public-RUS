@@ -26,21 +26,21 @@
 	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>panther-like</descriptor>
-		<descriptor>fluffy</descriptor>
+		<descriptor>пантеровский</descriptor>
+		<descriptor>пушистый</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>panther-like</descriptor>
-		<descriptor>fluffy</descriptor>
+		<descriptor>пантеровский</descriptor>
+		<descriptor>пушистый</descriptor>
 	</descriptorsFeminine>
 	
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -55,9 +55,9 @@
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] panther tail, which [npc.she] can swish from side to side at will.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] пантеровский хвост, которым [npc.she] может помахивать из стороны в сторону по своему желанию.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] panther tails, which [npc.she] can swish from side to side at will.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] пантеровские хвосты, которыми [npc.she] может помахивать из стороны в сторону по своему желанию.
 		#ENDIF
 	]]></bodyDescription>
 </tail>

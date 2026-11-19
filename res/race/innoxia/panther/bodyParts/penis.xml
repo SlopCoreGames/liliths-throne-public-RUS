@@ -34,7 +34,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)], как [npc.her] пенис принимает новую форму, а [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно разрастается толстая оболочка. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотками хватая воздух, вдоль всего [npc.her] ствола проступают ряды плотских маленьких шипов, направленных назад.
 		<br/>[npc.She] теперь [npc.has] [style.boldPanther(пантерский член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldPanther([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldPanther(panther cum)].
+		<br/>[npc.She] [npc.has] [style.boldPanther([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldPanther(пантерскую сперму)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

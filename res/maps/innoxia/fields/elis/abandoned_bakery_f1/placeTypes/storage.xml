@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[storage room]]></name>
-	<tooltipDescription><![CDATA[This room has been filled with all sorts of boxes and containers, the vast majority of which are empty.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the storage room in the abandoned bakery in Elis]]></virginityLossDescription>
+	<name><![CDATA[кладовая]]></name>
+	<tooltipDescription><![CDATA[Эта комната забита всевозможными коробками и контейнерами, подавляющее большинство из которых пусты.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в кладовой заброшенной пекарни в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_TEAL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

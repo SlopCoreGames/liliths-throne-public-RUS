@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Street]]></name>
-	<tooltipDescription><![CDATA[The streets of Themiscyra are strewn with debris, scorch marks, and other remnants of battle.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the streets of Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[Улица]]></name>
+	<tooltipDescription><![CDATA[Улицы Фемискиры усыпаны обломками, следами гари и прочими останками битвы.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на улицах Фемискиры]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

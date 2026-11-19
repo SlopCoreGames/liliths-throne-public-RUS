@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[A narrow corridor leads off from one side of the bar.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the corridor at 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[От одного из краев барной стойки отходит узкий коридор.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре таверны «Красный дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

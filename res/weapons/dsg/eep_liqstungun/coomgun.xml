@@ -22,7 +22,7 @@
 		
 		<attackDescriptor>Shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your coom gun.</attackTooltipDescription>
+		<attackTooltipDescription>Стреляй в [npc2.name] из своего конч-пулемета.</attackTooltipDescription>
 		
 		<rarity>EPIC</rarity> 
 		
@@ -34,7 +34,7 @@
 		#ELSEIF npc.getPenisRawStoredCumValue()>=150
 			#ЗАТЕМ незаметно [npc.verb(надевает)] чашеобразную насадку на [npc.her] [npc.penisD]. [npc.She] затем [npc.verb(накидывает)] ремень на [npc.her] плечо и [npc.verb(издает)] тихий стон, когда насосы засасывают [npc.her] [npc.cumD] во встроенный бак.
 			[#npc.setPenisStoredCum(npc.getPenisRawStoredCumValue()-150)]
-		#ELSE and [npc.verb(allow)] the built-in tank to magically fill itself with arcane-enhanced water, since [npc.sheHasFull] no special ammunition to put in it, before pulling the sling over [npc.her] shoulder.
+		#ELSE и [npc.verb(allow)] встроенный бак магическим образом наполняется водой, усиленной Арканой, так как [npc.sheHasFull] нет специальных боеприпасов, чтобы залить в него, после чего накидывает ремень на [npc.her] плечо.
 		#ENDIF
 		]]></equipText>
 		

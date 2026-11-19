@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[Shiranui's fire]]></name>
-	<tooltipDescription><![CDATA[A pink flame, suspended in mid-air and burning with arcane energy, powers Shiranui's spell and keeps trespassers trapped within her realm.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside one of the fires within Shiranui's trap]]></virginityLossDescription>
+	<name><![CDATA[Огонь Ширануи]]></name>
+	<tooltipDescription><![CDATA[Розовое пламя, парящее в воздухе и пылающее арканной энергией, питает заклинание Ширануи и удерживает незваных гостей в плену её владений.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с одним из огней в ловушке Ширануи]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>flame</svgName>
 	<colour>BASE_PINK</colour>

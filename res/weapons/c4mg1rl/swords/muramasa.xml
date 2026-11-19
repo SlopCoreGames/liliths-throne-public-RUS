@@ -20,7 +20,7 @@
 		
 		<attackDescriptor>cut</attackDescriptor>
 		
-		<attackTooltipDescription>Slash [npc2.name] with your blade.</attackTooltipDescription>
+		<attackTooltipDescription>Ударь [npc2.name] своим клинком.</attackTooltipDescription>
 		
 		<rarity>QUEST</rarity> 
 		

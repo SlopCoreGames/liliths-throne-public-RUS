@@ -49,7 +49,7 @@
 			<category id="name_plate" priority="1"> 
 				<categoryName><![CDATA[Именная табличка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Подрядчик ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -83,7 +83,7 @@
 					]]></availabilityText> 
 				</sticker>
 				<sticker id="claire" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS"> 
-					<stickerName><![CDATA[Claire]]></stickerName>
+					<stickerName><![CDATA[Клэр]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Клэр ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Это принадлежит Клэр.</i>]]></descriptionModification>
@@ -104,7 +104,7 @@
 					]]></availabilityText>
 				</sticker>
 				<sticker id="sean" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS"> 
-					<stickerName><![CDATA[Sean]]></stickerName>
+					<stickerName><![CDATA[Шон]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Шона ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Это принадлежит Шону.</i>]]></descriptionModification>

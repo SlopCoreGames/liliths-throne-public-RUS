@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Counter]]></name>
-	<tooltipDescription><![CDATA[The counter at Lovienne's Luxuries is staffed by a smartly-dressed succubus called Saellatrix.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the counter in Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[Прилавок]]></name>
+	<tooltipDescription><![CDATA[За прилавком в «Роскоши Ловьенны» стоит элегантно одетая суккуб по имени Саэллатрикс.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у прилавка в «Роскоши Ловьенны»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

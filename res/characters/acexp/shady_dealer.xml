@@ -5,8 +5,8 @@
     <core>
       <name nameAndrogynous="Kiera" nameFeminine="Cara" nameMasculine="Carlos"/>
       <surname value="Little"/>
-      <genericName value="shady dealer"/>
-      <description value="This shady dealer is someone you met in the back alleys of Dominion."/>
+      <genericName value="тёмный торговец"/>
+      <description value="Этот подозрительный торговец — один из тех, кого ты встретил в подворотнях Доминиона."/>
       <playerKnowsName value="false"/>
       <playerOnFirstNameTerms value="false"/>
       <raceConcealed value="false"/>

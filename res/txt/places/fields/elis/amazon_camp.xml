@@ -20,7 +20,7 @@
 	<p>
 		К счастью, в этот самый момент ты замечаешь впереди знакомую фигуру Аврокарис, прогуливающейся по лагерю. Понимая, что заступничество этой амазонки тебе не повредит, ты окликаешь корову-девушку и ей удается привлечь твое внимание. Подойдя к стражникам, она указывает на тебя и объявляет:
 		#IF(pc.hasPerkAnywhereInTree(PERK_HERO_OF_THEMISCYRA))
-			 [aurokaris.speech(Это Герой,#IF(pc.isFeminine())ine#ENDIF who defeated dozens of Lunette's daughters Themiscyra, before helping to saving our queen! [pc.She] may not be one of us, but [pc.sheHas] earned the right to enter our camp!)]
+			 [aurokaris.speech(Это Герой,#IF(pc.isFeminine())ine#ENDIF которая одолела десятки дочерей Лунетты в Фемискире, прежде чем помочь спасти нашу королеву! [pc.She] может и не из наших, но [pc.sheHas] заслужила право войти в наш лагерь!)]
 		#ELSE
 			 [aurokaris.speech(Это тот самый [pc.race], который помог спасти нашу королеву в Фемискире! [pc.She], может, и не одна из нас, но [pc.sheHas] заслужил право войти в наш лагерь!)]
 		#ENDIF
@@ -248,7 +248,7 @@
 	<p>
 		Повернувшись к только что заговорившей воительнице, Аврокарис заставляет её замолчать, громко объявляя на весь лагерь:
 		#IF(pc.hasPerkAnywhereInTree(PERK_HERO_OF_THEMISCYRA))
-			 [aurokaris.speech(Это Герой,#IF(pc.isFeminine())ine#ENDIF of Themiscyra! [pc.She] saved our queen, so [pc.sheHas] earned the right to be here!)]
+			 [aurokaris.speech(Это Герой,#IF(pc.isFeminine())ine#ENDIF Фемискиры! [pc.She] спасла нашу королеву, так что [pc.sheHas] заслужила право быть здесь!)]
 		#ELSE
 			 [aurokaris.speech(Это [pc.race], который сражался бок о бок со мной в Фемискире! [pc.She] помогла спасти нашу королеву, так что [pc.sheHas] заслужила право быть здесь!)]
 		#ENDIF

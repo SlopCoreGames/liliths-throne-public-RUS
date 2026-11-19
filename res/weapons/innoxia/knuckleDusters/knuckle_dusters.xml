@@ -18,7 +18,7 @@
 		
 		<attackDescriptor>punch</attackDescriptor>
 		
-		<attackTooltipDescription>Punch [npc2.name] with your knuckle dusters.</attackTooltipDescription>
+		<attackTooltipDescription>Ударь [npc2.name] кастетами.</attackTooltipDescription>
 		
 		<rarity>COMMON</rarity> 
 		

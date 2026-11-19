@@ -16,33 +16,33 @@
 	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>hair-coated</descriptor>
+		<descriptor>поросший волосами</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>hair-coated</descriptor>
+		<descriptor>поросший волосами</descriptor>
 	</descriptorsFeminine>
 	
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>pig-like</descriptor>
+		<descriptor>свиной</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>pig-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>свиной</descriptor>
 	</handDescriptorsFeminine>
 	
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>pig-like</descriptor>
+		<descriptor>свиной</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>pig-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>свиной</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

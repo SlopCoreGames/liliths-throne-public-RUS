@@ -20,7 +20,7 @@
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
-		<attackTooltipDescription>Shoot [npc2.name] with your pepperball rifle.</attackTooltipDescription>
+		<attackTooltipDescription>Стреляй в [npc2.name] из своей перечной винтовки.</attackTooltipDescription>
 		
 		<rarity>RARE</rarity> 
 		

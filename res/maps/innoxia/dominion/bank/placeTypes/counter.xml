@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Counter]]></name>
-	<tooltipDescription><![CDATA[The counters at the Bank of Dominion are staffed by bank employees, who are able to help customers with all matters relating to their accounts.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at the counters in the Bank of Dominion]]></virginityLossDescription>
+	<name><![CDATA[Прилавок]]></name>
+	<tooltipDescription><![CDATA[За прилавками в Банке Dominion работают сотрудники, готовые помочь клиентам с любыми вопросами, касающимися их счетов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у прилавков в Банке Dominion]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

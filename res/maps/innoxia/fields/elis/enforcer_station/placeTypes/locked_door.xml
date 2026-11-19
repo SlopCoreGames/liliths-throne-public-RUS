@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[locked door]]></name>
-	<tooltipDescription><![CDATA[The door which leads into the rear section of the Enforcer station is kept locked.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside the locked door in the Enforcer station in Elis]]></virginityLossDescription>
+	<name><![CDATA[запертая дверь]]></name>
+	<tooltipDescription><![CDATA[Дверь, ведущая в заднюю часть станции Enforcer, всегда заперта.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[возле запертой двери на станции Enforcer в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

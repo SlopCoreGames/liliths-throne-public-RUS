@@ -19,7 +19,7 @@
 		
 		<attackDescriptor>Swing</attackDescriptor>
 		
-		<attackTooltipDescription>Hit [npc2.name] with your cardboard sword.</attackTooltipDescription>
+		<attackTooltipDescription>Ударь [npc2.name] своим картонным мечом.</attackTooltipDescription>
 		
 		<rarity>UNCOMMON</rarity> 
 		

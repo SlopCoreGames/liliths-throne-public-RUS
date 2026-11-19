@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Oglix's bedroom]]></name>
-	<tooltipDescription><![CDATA[Behind two locked doors, Oglix's surprisingly-girly bedroom can be found.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Oglix's bedroom]]></virginityLossDescription>
+	<name><![CDATA[Спальня Огликса]]></name>
+	<tooltipDescription><![CDATA[За двумя запертыми дверями скрывается на удивление девичья спальня Огликса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спальне Огликса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>bedroom</svgName>
 	<colour>BASE_PINK</colour>

@@ -56,25 +56,25 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tail of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>salamander-like</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>salamander-like</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tail type above, but these describe the tail's tip: -->
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>scaly</descriptor>
-		<descriptor>cool</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>прохладный</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>scaly</descriptor>
-		<descriptor>cool</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>прохладный</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this tail type.
@@ -94,16 +94,16 @@
 			#ELSE
 				 Странно, но вскоре от каждого кончика начинает исходить холодная аркана-аура. К счастью, оказывается, что маленькие завихрения инея на ощупь приятно прохладные. [npc.She] быстро [npc.verb(осознает)], что [npc.she] [npc.has] полностью контролирует [npc.her] новые хвосты.
 			#ENDIF
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldSalamanderFrost(frost-tipped salamander tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldSalamanderFrost(саламандровые хвосты с морозными кончиками)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<!-- How this tail is described in a character's description page. -->
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 цепкий #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] salamander tail, whose chilled tip is enveloped in a small, swirling cloud of frost.
+			 цепкий #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] хвост саламандры, чей охлажденный кончик окутан маленьким завихрением инея.
 		#ELSE
-			 [npc.tailCount] цепкий #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] salamander tails, whose chilled tips are enveloped in small, swirling clouds of frost.
+			 [npc.tailCount] цепкий #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] хвосты саламандр, чьи охлажденные кончики окутаны маленькими завихрениями инея.
 		#ENDIF
 	]]></bodyDescription>
 	

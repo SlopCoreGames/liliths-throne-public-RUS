@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[shop floor]]></name>
-	<tooltipDescription><![CDATA[Old tables and chairs have been stacked up against the walls in the area which used to serve as a cafe.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[on the shop floor in the abandoned bakery in Elis]]></virginityLossDescription>
+	<name><![CDATA[торговый зал]]></name>
+	<tooltipDescription><![CDATA[Старые столы и стулья свалены вдоль стен в зоне, где раньше располагалось кафе.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на торговом полу заброшенной пекарни в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

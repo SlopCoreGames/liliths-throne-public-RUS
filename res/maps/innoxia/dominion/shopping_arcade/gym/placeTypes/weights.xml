@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[weights]]></name>
-	<tooltipDescription><![CDATA[Both free weights and machines offer different ways for gym members to get some resistance training.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the gym, 'Pix's Playground']]></virginityLossDescription>
+	<name><![CDATA[веса]]></name>
+	<tooltipDescription><![CDATA[И свободные веса, и тренажеры предлагают разные способы для членов спортзала получить силовую нагрузку.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спортзале «Игровая площадка Пикса»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_STEEL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

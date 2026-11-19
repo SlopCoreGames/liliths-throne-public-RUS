@@ -15,24 +15,24 @@
 	<name><![CDATA[брюшко]]></name>
 	<namePlural><![CDATA[брюшки]]></namePlural> 
 	<descriptorsMasculine>
-		<descriptor>spider-like</descriptor>
-		<descriptor>smooth</descriptor>
+		<descriptor>паукообразные</descriptor>
+		<descriptor>гладкая</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>spider-like</descriptor>
-		<descriptor>smooth</descriptor>
+		<descriptor>паукообразные</descriptor>
+		<descriptor>гладкая</descriptor>
 	</descriptorsFeminine>
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>pointed</descriptor>
+		<descriptor>заостренное</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>pointed</descriptor>
+		<descriptor>заостренное</descriptor>
 	</tipDescriptorsFeminine>
 	<transformationDescription><![CDATA[Прямо над [npc.her] задницей прорастает хитиновое овальное паучье брюшко, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину и более половины такой ширины. [npc.She] затем [npc.verb(realise)], что трансформация еще не окончена: после того как от кончика [npc.her] нового брюшка вверх пробегает покалывающее ощущение, [npc.she] [npc.verb(feel)], как внутри него начинает формироваться глубокий канал. Инстинктивно [npc.she] [npc.verb(know)], что этот канал — [npc.her] новый паучий орган, и [npc.she] [npc.verb(feel)], как он тут же начинает вырабатывать шелк.
 <br/>[npc.Name] теперь [npc.has] [style.boldSpider(паучье брюшко)], [npc.materialDescriptor] [npc.tailFullDescription(true)].]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		Растущее прямо над [npc.her] задницей, [npc.sheHasFull] это #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] spider abdomen, complete with a spinneret.
+		Растущее прямо над [npc.her] задницей, [npc.sheHasFull] это #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] брюшко паука, снабженное паутинным выростом.
 	]]></bodyDescription>
 </tail>

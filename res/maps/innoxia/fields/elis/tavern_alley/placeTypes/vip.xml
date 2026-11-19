@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[VIP area]]></name>
-	<tooltipDescription><![CDATA[Large, comfortable sofas and a private bar can be found within this VIP area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the VIP area at 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[VIP-зона]]></name>
+	<tooltipDescription><![CDATA[В этой VIP-зоне можно найти большие удобные диваны и отдельный бар.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в VIP-зоне таверны «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>seating</svgName>
 	<colour>BASE_GOLD</colour>

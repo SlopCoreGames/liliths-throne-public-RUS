@@ -117,7 +117,7 @@
 	
 	<htmlContent tag="ENEMY_DEFEATED_WANTS_SEX"><![CDATA[
 	<p>
-		[npc.Name] collapses to the floor, letting out a defeated sigh as [npc.she] gazes up at you. Looking down at the vanquished [npc.race] before you, you see that [npc.she]'s got a desperately hungry look in [npc.her] eyes. Before you can say anything, [npc.she] suddenly #IF(npc.isTaur())starts bucking [npc.her] hips in a humping motion,#ELSEreaches down to [npc.her] crotch and starts stroking [npc.herself],#ENDIF making pitiful little whining noises as [npc.she] squirms on the floor.
+		[npc.Name] падает на пол, издавая побежденный вздох, пока [npc.she] смотрит на тебя снизу вверх. Глядя на поверженную [npc.race] перед собой, ты замечаешь, что в [npc.her] [npc.she] застыл отчаянно голодный взгляд. Прежде чем ты успеваешь что-то сказать, [npc.she] внезапно #IF(npc.isTaur())начинает ритмично двигать [npc.her] бедрами, имитируя фрикции,#ELSEтянется рукой к промежности [npc.her] и начинает ласкать [npc.herself],#ENDIF издает жалкие тихие скулящие звуки, пока [npc.she] корчится на полу.
 	</p>
 	<p>
 		[npc.speech(Ааах! Чего ты ждешь?! Трахни меня!)] [npc.she] умоляет, прикусывая [npc.her] [npc.lip], пока [npc.she] продолжает ласкать [npc.herself].
@@ -135,7 +135,7 @@
 		[npc.speech(П-просто забери мои деньги и оставь меня в покое!)] [npc.she] умоляет, швыряя тебе под ноги несколько огней.
 	</p>
 	<p>
-		You wonder if you should do as [npc.she] says, and leave [npc.herHim] alone. Then again, you <i>could</i> take advantage of [npc.her] weakened, vulnerable body...
+		Ты раздумываешь, стоит ли поступить так, как говорит [npc.she], и оставить [npc.herHim] в покое. Но с другой стороны, ты мог бы <i>воспользоваться</i> ослабленным, беззащитным телом [npc.her]...
 	</p>
 	]]>
 	</htmlContent>

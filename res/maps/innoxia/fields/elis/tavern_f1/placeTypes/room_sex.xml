@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Jess's room]]></name>
-	<tooltipDescription><![CDATA[The fox-girl prostitute, Jess, lives and works out of this room.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Jess's room at 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[Комната Джесс]]></name>
+	<tooltipDescription><![CDATA[В этой комнате живет и работает Джесс, лисица-проститутка.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в комнате Джесс в таверне «Красный дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PINK_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

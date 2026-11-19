@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Rainbow's End]]></name>
-	<tooltipDescription><![CDATA[This stall is run by a pair of foxtauresses and sells all manner of colourful clothing.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the Farmer's Market in Elis]]></virginityLossDescription>
+	<name><![CDATA[Радужный край]]></name>
+	<tooltipDescription><![CDATA[Этим прилавком заправляет пара лисодевушек, торгующих всевозможной разноцветной одеждой.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на фермерском рынке в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>clothing</svgName>
 	<colour>BASE_ROSE</colour>

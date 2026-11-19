@@ -17,15 +17,15 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic mouse-like</descriptor>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>rodent</descriptor>
+		<descriptor>антропоморфная мышиная</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>грызуний</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic mouse-like</descriptor>
-		<descriptor>mouse-like</descriptor>
-		<descriptor>rodent</descriptor>
+		<descriptor>антропоморфная мышиная</descriptor>
+		<descriptor>мышиный</descriptor>
+		<descriptor>грызуний</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[нос]]></noseName>

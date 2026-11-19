@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>150</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[T-shirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[T-shirts]]></namePlural> 
-		<description><![CDATA[A feminine-cut T-shirt. It bears the words:<br/>]]></description> 
+		<name><![CDATA[Футболка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Футболки]]></namePlural> 
+		<description><![CDATA[Женственная футболка. На ней красуется надпись:<br/>]]></description> 
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>TORSO_UNDER</slot>
@@ -21,7 +21,7 @@
 			<category id="top_txt" priority="1"> <!-- All stickers defined within this category are *mutually exclusive with one another, but not with stickers defined in other 'category' elements*.
 			The 'id' should be unique to each category, and can be defined as whatever you want, but for formatting purposes, it would be preferable for it to just contain basic alpha-numerical values and underscores.
 			The 'priority' variable determines the position of this category in UI rendering order (in the inventory's clothing dye screen), with lower values being rendered nearer to the top of the category list.-->
-				<categoryName><![CDATA[Top Text]]></categoryName> <!-- This is used in-game as the title for this sticker category in the sticker application menu UI. As such, please try to make this human-readable. -->
+				<categoryName><![CDATA[Верхний текст]]></categoryName> <!-- This is used in-game as the title for this sticker category in the sticker application menu UI. As such, please try to make this human-readable. -->
 				<sticker id="rental" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected=""> <!-- A sticker element.
 				The 'id' element should be unique to stickers within this category element.
 				The 'priority' variable determines the position of this sticker in UI rendering order (in the inventory's clothing dye screen), with lower values being rendered nearer to the left of the buttons list.
@@ -33,11 +33,11 @@
 				Available colours can be found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/utils/colours/PresetColour.java
 				You can also define custom colours instead of a PresetColour id, in which case you *must* use a standard RGB hex code as the value.
 				e.g. colourDisabled="777777" colourSelected="57DB7E"-->
-					<stickerName><![CDATA[Rental]]></stickerName> <!-- This is used in-game as the title for this sticker's button in the sticker application menu UI. As such, please try to make this human-readable. -->
-					<namePrefix priority="1"><![CDATA[Rental]]></namePrefix> <!-- Define a 'namePrefix' to add a prefix to the base clothing's name when this sticker is applied.
+					<stickerName><![CDATA[Арендный]]></stickerName> <!-- This is used in-game as the title for this sticker's button in the sticker application menu UI. As such, please try to make this human-readable. -->
+					<namePrefix priority="1"><![CDATA[Арендный]]></namePrefix> <!-- Define a 'namePrefix' to add a prefix to the base clothing's name when this sticker is applied.
 					The 'priority' variable defines the order in which multiple sticker 'namePrefix's are displayed. A *lower value* means they will be *displayed first*. This can be left undefined. -->
 					<namePostfix/> <!-- Exactly the same as 'namePrefix', but the text is appended after the base clothing name. -->
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Rental </i>]]></descriptionModification> <!-- You can set whether this sticker should define a new description for the clothing.
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Арендный </i>]]></descriptionModification> <!-- You can set whether this sticker should define a new description for the clothing.
 					If 'fullReplacement' is true, then the clothing's description is completely replaced with 'descriptionModification' while this sticker is applied. If 'fullReplacement' is false, then it is appended to the base clothing description (so long as another sticker has not applied a 'fullReplacement').
 					The 'priority' element defines in what order the description appending is performed, or, if 'fullReplacement' is true for multiple active stickers, which sticker's description has priority. -->
 					<imageName zLayer="1" slot="TORSO_UNDER">text_rental.svg</imageName> <!-- The path name for this sticker, which should be in the same folder location as this xml file.
@@ -81,10 +81,10 @@
 					-->
 				</sticker>
 				<sticker id="dommy" priority="2" defaultSticker="false" zLayer="1"> <!-- This sticker is mutually exclusive with the one above, as it is defined within the same 'category' element. -->
-					<stickerName><![CDATA[Dommy]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Dommy]]></namePrefix>
+					<stickerName><![CDATA[Домми]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Домми]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Dommy </i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Домми </i>]]></descriptionModification>
 					<imageName>text_dommy.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -92,10 +92,10 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="subby" priority="2" defaultSticker="false" zLayer="1"> <!-- This sticker is mutually exclusive with the one above, as it is defined within the same 'category' element. -->
-					<stickerName><![CDATA[Subby]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Subby]]></namePrefix>
+					<stickerName><![CDATA[Сабби]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Сабби]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Subby </i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>Служка </i>]]></descriptionModification>
 					<imageName>text_subby.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -104,12 +104,12 @@
 				</sticker>
 			</category>
 			<category id="btm_txt" priority="2"> <!-- A new category, meaning that these stickers can be used in conjunction with one of the two defined above. -->
-				<categoryName><![CDATA[Bottom Text]]></categoryName>
+				<categoryName><![CDATA[Нижний текст]]></categoryName>
 				<sticker id="mommy" priority="1" defaultSticker="true" zLayer="1">
-					<stickerName><![CDATA[Mommy]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Mommy]]></namePrefix>
+					<stickerName><![CDATA[Мамочка]]></stickerName>
+					<namePrefix priority="2"><![CDATA[Мамочка]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Mommy</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Мамочка</i>]]></descriptionModification>
 					<imageName>text_mommy.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -117,10 +117,10 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="daddy" priority="2" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[Daddy]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Daddy]]></namePrefix>
+					<stickerName><![CDATA[Папочка]]></stickerName>
+					<namePrefix priority="2"><![CDATA[Папочка]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Daddy</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i>Папочка</i>]]></descriptionModification>
 					<imageName>text_daddy.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -130,12 +130,12 @@
 				<!-- I haven't defined a 'None' sticker for this category, meaning that either the 'Mommy' or 'Daddy' sticker will always be displayed. -->
 			</category>
 			<category id="price" priority="3">
-				<categoryName><![CDATA[Price]]></categoryName>
+				<categoryName><![CDATA[Цена]]></categoryName>
 				<sticker id="50" priority="1" defaultSticker="true" zLayer="1"> <!-- The 'defaultSticker' variable is set to true, meaning that this clothing will spawn in with it applied, but if it were false, this sticker slot would be unused (which is available due to the 'allowsNone="true"' definition in the 'category' element above).-->
 					<stickerName><![CDATA[50]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(50, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>sometimes</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(50, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>иногда</b> подойти к тебе и предложить секс за деньги, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_50.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -146,7 +146,7 @@
 				</sticker>
 				<sticker id="100" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[100]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(100, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>sometimes</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(100, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>иногда</b> подходить к тебе и предлагать секс за деньги, если увидят на тебе эту вещь!)]]]></descriptionModification>
 					<imageName>text_flames_100.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -154,7 +154,7 @@
 				</sticker>
 				<sticker id="250" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[250]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(250, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>sometimes</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(250, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>иногда</b> подходить к тебе и предлагать деньги за секс, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_250.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -162,7 +162,7 @@
 				</sticker>
 				<sticker id="500" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[500]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(500, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>sometimes</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(500, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>иногда</b> подходить к тебе и предлагать деньги за секс, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_500.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -170,7 +170,7 @@
 				</sticker>
 				<sticker id="1000" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[1000]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(1000, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>sometimes</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(1000, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>иногда</b> подходить к тебе и предлагать деньги за секс, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_1000.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -178,7 +178,7 @@
 				</sticker>
 				<sticker id="2500" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[2500]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(2500, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>rarely</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(2500, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>редко</b> подходить к тебе и предлагать деньги за секс, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_2500.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -186,7 +186,7 @@
 				</sticker>
 				<sticker id="5000" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[5000]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(5000, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>very rarely</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(5000, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>очень редко</b> подходить к тебе и предлагать деньги за секс, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_5000.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
@@ -194,14 +194,14 @@
 				</sticker>
 				<sticker id="10000" priority="1" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[10000]]></stickerName>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(10000, span)]</i><br/>[style.italicsBlueLight(Members of the public might <b>extremely rarely</b> approach you and offer to pay for sex if they can see you wearing it!)]]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[, <i>[style.moneyFormatNoColour(10000, span)]</i><br/>[style.italicsBlueLight(Прохожие могут <b>крайне редко</b> подходить к тебе и предлагать деньги за секс, если увидят на тебе это!)]]]></descriptionModification>
 					<imageName>text_flames_10000.svg</imageName>
 					<itemTagsAdded>
 						<tag>UNLOCKS_ENCOUNTER</tag>
 					</itemTagsAdded>
 				</sticker>
 				<sticker id="none" priority="0" defaultSticker="false" zLayer="1"> <!-- This has a priority of 0, so even though I've put it last in this sticker element list, it will be rendered first in the game's button UI. -->
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -276,49 +276,49 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] through the T-shirt's sleeves as [npc.she] [npc.verb(pull)] it down over [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] сквозь рукава футболки, пока [npc.she] [npc.verb(pull)] ее вниз через [npc.her] голову.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the T-shirt's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава футболки, пока [npc.she] [npc.verb(pull)] ее вниз через [npc2.her] голову.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the T-shirt's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава футболки, пока [npc.she] [npc.verb(pull)] ее вниз через [npc2.her] голову.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] T-shirt.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] футболку.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] T-shirt.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] футболку.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] T-shirt.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] футболку.]]>
     </otherRough>
   </displacementText>
 	
   <replacementText type="PULLS_UP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] T-shirt back down, covering [npc.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] футболку обратно вниз, закрывая [npc.her] торс.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] T-shirt back down, covering [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] футболку вниз, прикрывая [npc2.her] торс.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] T-shirt back down, covering [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(yank)] [npc2.namePos] футболку вниз, прикрывая [npc2.her] торс.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="PULLS_UP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] T-shirt up to just below [npc.her] chin, fully exposing [npc.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] футболку вверх, почти до самого [npc.her] подбородка, полностью обнажая [npc.her] торс.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] T-shirt up to just below [npc2.her] chin, fully exposing [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] футболку вверх, почти до самого [npc2.her] подбородка, полностью обнажая [npc2.her] торс.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] T-shirt up to just below [npc2.her] chin, fully exposing [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] футболку вверх, почти до самого [npc2.her] подбородка, полностью обнажая [npc2.her] торс.]]>
     </otherRough>
   </displacementText>
 	

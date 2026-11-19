@@ -109,7 +109,7 @@
 	<bookIconName>dragonicon</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName>Mysterious Dragons</bookName>
+	<bookName>Таинственные драконы</bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->

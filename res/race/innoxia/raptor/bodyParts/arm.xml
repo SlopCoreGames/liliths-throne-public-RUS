@@ -17,33 +17,33 @@
 	<namePlural><![CDATA[крылья]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>feathered</descriptor>
-		<descriptor>bird-like</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>птичьи</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>feathered</descriptor>
-		<descriptor>bird-like</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>птичьи</descriptor>
 	</descriptorsFeminine>
 	
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>feathered</descriptor>
+		<descriptor>оперенные</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>feathered</descriptor>
-		<descriptor>feminine</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>женственная</descriptor>
 	</handDescriptorsFeminine>
 	
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>feathered</descriptor>
+		<descriptor>оперенные</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>feathered</descriptor>
-		<descriptor>feminine</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>женственная</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

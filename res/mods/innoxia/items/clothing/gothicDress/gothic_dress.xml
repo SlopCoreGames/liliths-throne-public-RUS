@@ -4,9 +4,9 @@
 	<coreAtributes>
 		<value>1500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[gothic dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[gothic dresses]]></namePlural>
-		<description><![CDATA[Dresses such as this one are typically only worn by Lilin or high-ranking demons when called upon to attend a prestigious event.]]></description>
+		<name><![CDATA[готическое платье]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[готические платья]]></namePlural>
+		<description><![CDATA[Подобные платья обычно носят только лилин или высокопоставленные демоны, когда их приглашают на престижное мероприятие.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot>

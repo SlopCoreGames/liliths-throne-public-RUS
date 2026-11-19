@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[tables]]></name>
-	<tooltipDescription><![CDATA[Taking up most of the floor space in 'Lights Out', numerous metal tables are where most of the bar's patrons choose to sit and drink.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at one of the tables within 'Lights Out']]></virginityLossDescription>
+	<name><![CDATA[столы]]></name>
+	<tooltipDescription><![CDATA[Занимая большую часть площади в «Lights Out», многочисленные металлические столы служат местом, где большинство посетителей бара предпочитают сидеть и выпивать.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[за одним из столов в «Lights Out»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

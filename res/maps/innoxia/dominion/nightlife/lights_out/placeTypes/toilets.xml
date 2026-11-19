@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[toilets]]></name>
-	<tooltipDescription><![CDATA[Due to the large quantity of alcohol consumed on the premises, the toilets at 'Lights Out' are well used.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the toilets at 'Lights Out']]></virginityLossDescription>
+	<name><![CDATA[туалеты]]></name>
+	<tooltipDescription><![CDATA[Из-за огромного количества потребляемого здесь алкоголя, туалеты в «Lights Out» всегда оживлены.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в туалетах «Lights Out»]]></virginityLossDescription>
 	<sexBlockedReason/>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>

@@ -26,7 +26,7 @@
 	<transformationDescription><![CDATA[
 		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они уже превратились в козьи глаза с огромными радужками и горизонтальными зрачками.
 		<br/>
-		[npc.Name] теперь [npc.has] [style.boldGoat(goat-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		[npc.Name] теперь [npc.has] [style.boldGoat(козьи глаза)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

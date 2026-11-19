@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Ensuite Bathroom]]></name>
-	<tooltipDescription><![CDATA[Angelixx's bedroom has an ensuite bathroom, which contains a shower, a bathtub, a sink, and a toilet.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the ensuite bathroom at Angelixx's apartment]]></virginityLossDescription>
+	<name><![CDATA[Личная ванная]]></name>
+	<tooltipDescription><![CDATA[В спальне Анжеликсы есть собственная ванная комната, в которой есть душ, ванна, раковина и унитаз.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в личной ванной комнате в квартире Анжеликссы]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_AQUA</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

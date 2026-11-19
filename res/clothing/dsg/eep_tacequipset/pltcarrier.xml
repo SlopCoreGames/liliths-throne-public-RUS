@@ -35,7 +35,7 @@
 			<category id="branchtape" priority="1"> 
 				<categoryName><![CDATA[Ветветовая лента]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Подрядчик ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -146,13 +146,13 @@
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] расстегни[npc.do] поясницу по обеим сторонам [npc.her] плитоносца и [npc.verb(slide)] просунь[npc.her] голову в горловину.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] камербанд по обеим сторонам [npc.her] плитника, [npc.verb(withdraw)] [npc.her] [npc.arms] из плечевых лямок и [npc.verb(slide)] его через голову.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] расстегни[npc.do] поясницу по обеим сторонам [npc2.namePos] плитоносца и [npc.verb(slide)] просунь[npc2.her] голову в горловину.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] камербанд по обеим сторонам плитника [npc2.namePos], [npc.verb(guide)] [npc2.her] [npc2.arms] из плечевых лямок и [npc.verb(slide)] остальное через [npc2.her] голову.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(rip)] расстегни[npc2.namePos] поясницу по обеим сторонам [npc2.namePos] плитоносца и [npc.verb(yank)] натяни остальное на[npc2.her] голову.]]>
+			<![CDATA[[npc.Name] [npc.verb(rip)] камербанд по обеим сторонам плитника [npc2.namePos], силой [npc.verb(pull)] [npc2.her] [npc2.arms] из плечевых лямок и [npc.verb(yank)] остальное через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 	

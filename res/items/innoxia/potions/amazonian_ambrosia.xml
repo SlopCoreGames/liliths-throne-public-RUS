@@ -23,9 +23,9 @@
 		<enchantmentEffectId/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.italicsSex(+5)] [style.italicsFeminine(femininity)]]]></line>
-			<line><![CDATA[[style.italicsGood(+3)] [style.italicsMuscleTwo(muscle)]]]></line>
-			<line><![CDATA[[style.boldMinorBad(Добавляет)] 10% к [style.boldAlcohol(intoxication level)]]]></line>
+			<line><![CDATA[[style.italicsSex(+5)] [style.italicsFeminine(женственность)]]]></line>
+			<line><![CDATA[[style.italicsGood(+3)] [style.italicsMuscleTwo(мускулистость)]]]></line>
+			<line><![CDATA[[style.boldMinorBad(Добавляет)] 10% к [style.boldAlcohol(уровню опьянения)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[

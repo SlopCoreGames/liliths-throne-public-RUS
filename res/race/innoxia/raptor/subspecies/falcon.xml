@@ -24,7 +24,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>The Sharpest Talons</bookName>
+	<bookName>Острейшие когти</bookName>
 	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
 	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

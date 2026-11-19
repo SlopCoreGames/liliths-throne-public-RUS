@@ -42,12 +42,12 @@
 		<responseTabs>
 			<tab index="0"><![CDATA[
 				#IF(flags.hasFlag(FLAG_innoxia_elis_clothing_visited))
-					Trade
+					Торговать
 				#ENDIF
 			]]></tab>
 			<tab index="1"><![CDATA[
 				#IF(flags.hasFlag(FLAG_innoxia_elis_clothing_visited))
-					Talk
+					Поговорить
 				#ENDIF
 			]]></tab>
 		</responseTabs>

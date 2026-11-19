@@ -91,7 +91,7 @@
 	<bookIconName>sharkicon</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName>Circling Sharks</bookName>
+	<bookName>Кружащие акулы</bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
@@ -118,11 +118,11 @@
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[kojin]]></name>
-			<namePlural><![CDATA[kojin]]></namePlural>
-			<singularMaleName><![CDATA[kojin]]></singularMaleName>
-			<singularFemaleName><![CDATA[kojin]]></singularFemaleName>
-			<pluralMaleName><![CDATA[kojin]]></pluralMaleName>
+			<name><![CDATA[коджин]]></name>
+			<namePlural><![CDATA[коджин]]></namePlural>
+			<singularMaleName><![CDATA[коджин]]></singularMaleName>
+			<singularFemaleName><![CDATA[коджин]]></singularFemaleName>
+			<pluralMaleName><![CDATA[коджин]]></pluralMaleName>
 			<pluralFemaleName><![CDATA[коджин]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>

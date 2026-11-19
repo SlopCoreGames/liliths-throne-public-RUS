@@ -498,7 +498,7 @@
 			Двое доберман-парней направляются к тебе, похотливо скалясь и разглядывая твое беззащитное тело. Издав глубокий, гортанный рык, Вольфганг торжествует: [wolfgang.speech(Ты реально думала, что сможешь нас одолеть?! Ну что, как насчет того, чтобы использовать свое горячее тельце, чтобы извиниться за все те хлопоты, что ты нам устроила?!)]
 		</p>
 		<p>
-			[karl.speech([pc.She] looks like [pc.she]'d be a good fuck,)] Karl grunts, before reaching down to push you over onto all fours and then asking, [karl.speech(So, what's it going to be? You hungry for dobermann cock, slut?)]
+			[karl.speech([pc.She] выглядит как [pc.she], с которой было бы охрененно трахаться,)] хмыкает Карл, прежде чем наклониться, чтобы поставить тебя на четвереньки, и спрашивает: [karl.speech(Ну, и что будет? Хочешь доберманского члена, шлюха?)]
 		</p>
 		<p>
 			Не дожидаясь ответа, Вольфганг опускается на колени позади тебя и грубо хватает тебя за [pc.hips+]. Следуя примеру своего лидера, Карл опускается прямо перед твоим лицом, демонстрируя свой не менее огромный бугорок и давая тебе лишь мгновения на то, чтобы решить, как на это ответить...
@@ -1315,7 +1315,7 @@
 		<p>
 			Когда голова [kay.namePos] так близко к твоему паху, ты не можешь устоять перед искушением заставить [kay.herHim] отсосать тебе.
 			#IF(pc.isAbleToAccessCoverableArea(CA_PENIS, false))
-				 Разворачивая кресло в сторону, ты#IF(pc.hasLegs()) spread your [pc.legs] and#ENDIF present your submissive pet with your rapidly-hardening cock.
+				 Разворачивая кресло в сторону, ты#IF(pc.hasLegs()) раздвинь свои [pc.legs] и#ENDIF представь своему покорному питомцу свой быстро твердеющий член.
 			#ELSE
 				 Доставая свой стремительно твердеющий член, ты разворачиваешь кресло в сторону и подставляешь его своему покорному питомцу.
 			#ENDIF
@@ -1350,7 +1350,7 @@
 		<p>
 			Когда голова [kay.namePos] так близко к твоему паху, ты не можешь устоять перед искушением заставить [kay.herHim] отсосать тебе.
 			#IF(pc.isAbleToAccessCoverableArea(CA_VAGINA, false))
-				 Разворачивая кресло в сторону, ты#IF(pc.hasLegs()) spread your [pc.legs] and#ENDIF present your submissive pet with your [pc.pussy+].
+				 Разворачивая кресло в сторону, ты#IF(pc.hasLegs()) раздвинь свои [pc.legs] и#ENDIF представь своему покорному питомцу свой [pc.pussy+].
 			#ELSE
 				 Быстро обнажив свою [pc.pussy+], ты разворачиваешь кресло в сторону и подставляешься своему покорному питомцу.
 			#ENDIF
@@ -1376,7 +1376,7 @@
 			#ENDIF
 		</p>
 		<p>
-			[kay.speech(Oh, [pc.name]...)] [kay.name] softly moans as [kay.she] fixes [kay.her] big, blue eyes onto your [pc.clit+]. Looking back and smiling as you see that the cute [kay.race] is enraptured by the sight of your [pc.clit+], you step back and dominantly grind it against [kay.her] [kay.lips+].
+			[kay.speech(О, [pc.name]...)] [kay.name] тихо стонет, когда [kay.she] устремляет свои большие голубые глаза [kay.her] на твой [pc.clit+]. Обернувшись и улыбнувшись, увидев, что милая [kay.race] очарована видом твоего [pc.clit+], ты отступаешь назад и властно втираешь его в [kay.her] [kay.lips+].
 		</p>
 		<p>
 			Издав высокий булькающий стон, когда [kay.she] берет твой [pc.clit] в [kay.her] рот, [kay.name] послушно начинает двигать [kay.her] головой вперед-назад. Слегка покачивая своей [pc.hips], ты издаешь [pc.a_moan+], пока [kay.name] сосет твой клитор так, словно это [kay.she] сосет член...
@@ -1385,7 +1385,7 @@
 		<p>
 			Когда голова [kay.namePos] так близко к твоему паху, ты не можешь устоять перед искушением заставить [kay.herHim] отсосать тебе.
 			#IF(pc.isAbleToAccessCoverableArea(CA_VAGINA, false))
-				 Разворачивая кресло в сторону, ты#IF(pc.hasLegs()) spread your [pc.legs] and#ENDIF present your submissive pet with your [pc.pussy+].
+				 Разворачивая кресло в сторону, ты#IF(pc.hasLegs()) раздвинь свои [pc.legs] и#ENDIF представь своему покорному питомцу свой [pc.pussy+].
 			#ELSE
 				 Быстро обнажив свою [pc.pussy+], ты разворачиваешь кресло в сторону и подставляешься своему покорному питомцу.
 			#ENDIF
@@ -1409,7 +1409,7 @@
 	</p>
 	<p>
 		#IF(pc.isTaur())
-			Smiling at [kay.namePos] enthusiasm, you rest your [pc.legRace]'s body down on the floor, before folding your arms over the edge of [kay.namePos] desk and resting your head on them. Quickly stepping around behind you, your [kay.race] pet sets about massaging your body, and you can't help but let out a series of deeply-satisfied [pc.moans] as [kay.her] delicate hands work the tension out of your muscles.
+			Улыбаясь [kay.namePos] энтузиазму, ты опускаешься всем своим [pc.legRace] телом на пол, скрещиваешь руки на краю [kay.namePos] стола и кладешь на них голову. Твой [kay.race] питомец быстро обходит тебя сзади и принимается массировать твое тело, и ты не можешь удержаться от серии глубоко удовлетворенных [pc.moans], пока [kay.her] нежные руки разминают твои затекшие мышцы.
 		#ELSE
 			Улыбаясь [kay.namePos] энтузиазму, ты наклоняешься над краем [kay.namePos] стола и, скрестив руки и положив на них голову, принимаешь удобное положение. Твой [kay.race] питомец быстро подходит к тебе и принимается массировать твое тело; ты невольно издаешь серию глубоко удовлетворенных [pc.moans], пока [kay.her] нежные руки разминают твои затекшие мышцы.
 		#ENDIF
@@ -1449,7 +1449,7 @@
 				Почти сразу ты чувствуешь, как [kay.name] начинает ласкать твою [pc.labia+], отчего ты издаешь эротичный [pc.moan]. Воодушевленная твоей реакцией, [kay.race] просовывает [kay.her] [kay.fingers+] в твою [pc.pussy+], после чего с энтузиазмом принимается пальцевать тебя.
 			</p>
 			<p>
-				This alone proves to not be enough for your horny pet, for no sooner has [kay.she] started to pleasure your [pc.pussy+], you feel [kay.name] using [kay.her] other hand to reach down and stroke your [pc.cock+]. Delighted by [kay.her] decision to give both sets of your genitalia [kay.her] attention, you let out a series of [pc.moans+] and tell the [kay.race] not to stop until you're completely satisfied...
+				Одного этого недостаточно для твоего похотливого питомца: не успевает [kay.she] начать ласкать твои [pc.pussy+], как ты чувствуешь, что [kay.name] использует [kay.her] руку, чтобы дотянуться до твоих [pc.cock+] и погладить их. В восторге от решения [kay.her] уделить [kay.her] внимание обоим твоим наборам гениталий, ты издаешь серию [pc.moans+] и говоришь [kay.race] не останавливаться, пока ты не получишь полное удовлетворение...
 			</p>
 		#ELSE
 			<p>
@@ -1866,7 +1866,7 @@
 	
 	<htmlContent tag="KAY_OFFICE_DOMINATE_BUTTPLUG_SIT_BACK"><![CDATA[
 	<p>
-		Deciding not to take advantage of [kay.namePos] submissive position, you tell [kay.herHim] to put [kay.her] clothes back on and return to [kay.her] previous position. Being the good [kay.girl] that [kay.she] is, the cute [kay.race] quickly pulls [kay.her] trousers up and sits back down on the floor beside you. Reaching over and stroking the top of [kay.her] head, you wonder what to do with [kay.name] next...
+		Решив не злоупотреблять [kay.namePos] покорным положением, ты велишь [kay.herHim] снова надеть [kay.her] одежду и вернуться в [kay.her] прежнюю позу. Будучи такой послушной [kay.girl], какой является [kay.she], милая [kay.race] быстро натягивает [kay.her] брюки и снова садится на пол рядом с тобой. Протягивая руку и поглаживая [kay.her] по макушке, ты гадаешь, что делать с [kay.name] дальше...
 	</p>
 	]]>
 	</htmlContent>

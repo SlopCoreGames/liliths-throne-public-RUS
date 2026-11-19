@@ -40,13 +40,13 @@
 		<travelDisabled>false</travelDisabled>
 		<responseTabs>
 			<tab index="0"><![CDATA[
-				Actions
+				Действия
 			]]></tab>
 			<tab index="1"><![CDATA[
-				Fast Travel
+				Быстрое перемещение
 			]]></tab>
 			<tab index="2"><![CDATA[
-				Bathroom
+				Ванная
 			]]></tab>
 		</responseTabs>
 		<responses>

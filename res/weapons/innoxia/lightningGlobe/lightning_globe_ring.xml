@@ -18,7 +18,7 @@
 		
 		<attackDescriptor>lightning strike</attackDescriptor>
 		
-		<attackTooltipDescription>Fire a bolt of arcane lightning at [npc2.name].</attackTooltipDescription>
+		<attackTooltipDescription>Выстрели молнией Арканы в [npc2.name].</attackTooltipDescription>
 		
 		<rarity>QUEST</rarity> 
 		

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[toilets]]></name>
-	<tooltipDescription><![CDATA[Due to the large quantity of alcohol consumed on the premises, the poorly-maintained toilets at 'The Crossed Blades' tavern are frequently in use.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the toilets at 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[туалеты]]></name>
+	<tooltipDescription><![CDATA[Из-за огромного количества потребляемого здесь алкоголя, туалеты в таверне «Скрещенные клинки», за которыми почти не следят, постоянно заняты.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в туалетах таверны «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedReason/>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>

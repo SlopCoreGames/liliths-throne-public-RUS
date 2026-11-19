@@ -44,7 +44,7 @@
 	<p>
 		#IF npc.getRace()==RACE_DEMON
 		#THEN [npc.speech(Хех, мы, демоны, определенно умеем творить чудеса с заклинаниями земли!)] [npc.name] замечает.
-		#ELSE [npc.speech(Wow... Demons sure can do a lot with earth spells...)] [npc.name] marvels.
+		#ELSE [npc.speech(Ого... Демоны и впрямь способны на многое с помощью заклинаний земли...)] [npc.name] восхищается.
 		#ENDIF
 	</p>
 	<p>
@@ -967,12 +967,12 @@
 				#THEN
 					#IF npc.isFeminine()
 					#THEN Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы, вроде вас, кажутся мне чертовски соблазнительными... Почему бы вам обеим не подойти сюда и не встать на колени? Я так и быть, позволю вам облизать мою киску...)]
-					#ELSE Before you can reply, she addresses [npc.name], [citadelArcanist.speech(Anyway, I must confess, I do find feminine foxes quite irresistible... Why don't you come over here and get down on your knees, and I'll graciously let you lick my pussy... Oh, and you can watch, [pc.race]...)]
+					#ELSE Прежде чем ты успеваешь ответить, она обращается к [npc.name]: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы кажутся мне весьма неотразимыми... Почему бы тебе не подойти сюда и не встать на колени? Тогда я милостиво позволю тебе лизать мою киску... О, и ты сможешь смотреть, [pc.race]...)]
 					#ENDIF
 				#ELSE
 					#IF npc.isFeminine()
 					#THEN Прежде чем ты успеваешь ответить, она обращается к [npc.name]: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы кажутся мне чертовски соблазнительными... Почему бы тебе не подойти сюда и не встать на колени? Я так и быть, позволю тебе облизать мою киску... О, а ты можешь смотреть, [pc.race]...)]
-					#ELSE Before you can reply, she continues, [citadelArcanist.speech(Anyway, I must confess, I'm not too fond of masculinity... If you were to come back and visit after feminising yourselves, I'll graciously let you both lick my pussy...)]
+					#ELSE Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, я не слишком жалую мужественность... Если вы вернетесь ко мне после того, как станете женственными, я милостиво позволю вам обоим лизать мою киску...)]
 					#ENDIF
 				#ENDIF
 			#ELSE
@@ -1007,12 +1007,12 @@
 				#THEN
 					#IF npc.isFeminine()
 					#THEN Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы, вроде вас, кажутся мне чертовски соблазнительными... Почему бы вам обеим не подойти сюда и не встать на колени? Я так и быть, позволю вам облизать мою киску...)]
-					#ELSE Before you can reply, she addresses [npc.name], [citadelArcanist.speech(Anyway, I must confess, I do find feminine foxes quite irresistible... Why don't you come over here and get down on your knees, and I'll graciously let you lick my pussy... Oh, and you can watch, [pc.race]...)]
+					#ELSE Прежде чем ты успеваешь ответить, она обращается к [npc.name]: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы кажутся мне весьма неотразимыми... Почему бы тебе не подойти сюда и не встать на колени? Тогда я милостиво позволю тебе лизать мою киску... О, и ты сможешь смотреть, [pc.race]...)]
 					#ENDIF
 				#ELSE
 					#IF npc.isFeminine()
 					#THEN Прежде чем ты успеваешь ответить, она обращается к [npc.name]: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы кажутся мне чертовски соблазнительными... Почему бы тебе не подойти сюда и не встать на колени? Я так и быть, позволю тебе облизать мою киску... О, а ты можешь смотреть, [pc.race]...)]
-					#ELSE Before you can reply, she continues, [citadelArcanist.speech(Anyway, I must confess, I'm not too fond of masculinity... If you were to come back and visit after feminising yourselves, I'll graciously let you both lick my pussy...)]
+					#ELSE Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, я не слишком жалую мужественность... Если вы вернетесь ко мне после того, как станете женственными, я милостиво позволю вам обоим лизать мою киску...)]
 					#ENDIF
 				#ENDIF
 			#ELSE
@@ -1042,12 +1042,12 @@
 		#THEN
 			#IF npc.isFeminine()
 			#THEN Прежде чем ты успеваешь ответить, она продолжает: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы вроде вас просто неотразимы... Почему бы вам обеим не подойти сюда и не встать на колени? Я милостиво позволю вам облизать мою киску...)]
-			#ELSE Before you can reply, she addresses [npc.name], [citadelArcanist.speech(Anyway, I must confess, I do find feminine foxes quite irresistible... Why don't you come over here and get down on your knees, and I'll graciously let you lick my pussy... Oh, and you can watch, [pc.race]...)]
+			#ELSE Прежде чем ты успеваешь ответить, она обращается к [npc.name], [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы кажутся мне весьма неотразимыми... Почему бы тебе не подойти сюда и не встать на колени? Я милостиво позволю тебе облизать мою киску... О, и ты сможешь наблюдать, [pc.race]...)]
 			#ENDIF
 		#ELSE
 			#IF npc.isFeminine()
 			#THEN Прежде чем ты успеваешь ответить, она обращается к [npc.name]: [citadelArcanist.speech(Впрочем, должна признаться, женственные лисицы просто неотразимы... Почему бы тебе не подойти сюда и не встать на колени? Я милостиво позволю тебе облизать мою киску... О, и ты можешь смотреть, [pc.race]...)]
-			#ELSE Before you can reply, she continues, [citadelArcanist.speech(Anyway, I must confess, I'm not too fond of masculinity... If you were to come back and visit after feminising yourselves, I'll graciously let you both lick my pussy...)]
+			#ELSE Прежде чем ты успеваешь ответить, она продолжает, [citadelArcanist.speech(Как бы то ни было, признаюсь, я не слишком жалую мужественность... Если вы вернетесь ко мне после того, как станете женственными, я милостиво позволю вам обоим облизать мою киску...)]
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1092,7 +1092,7 @@
 	<p>
 		#IFnpc.isAttractedTo(citadelArcanist) || !game.isNonConEnabled()
 		#THEN[npc.speech(С огромным удовольствием!)] — с энтузиазмом отвечает [npc.name]. [npc.speech(Пожалуйста, [citadelArcanist.name], дай мне попробовать твою киску!)]
-		#ELSE[npc.speech([pc.Name]... I-I really don't want to...)] [npc.name] replies. [npc.speech(B-But I guess I have no choice...)]
+		#ELSE[npc.speech([pc.Name]... Я-я правда не хочу...)] отвечает [npc.name]. [npc.speech(Н-но, полагаю, у меня нет выбора...)]
 		#ENDIF
 	</p>
 	<p>
@@ -1117,7 +1117,7 @@
 	<p>
 		#IFnpc.isAttractedTo(citadelArcanist) || !game.isNonConEnabled()
 		#THEN[npc.speech(С огромным удовольствием!)] — с энтузиазмом отвечает [npc.name]. [npc.speech(Пожалуйста, [citadelArcanist.name], дай мне попробовать твою киску!)]
-		#ELSE[npc.speech([pc.Name]... I-I really don't want to...)] [npc.name] replies. [npc.speech(B-But I guess I have no choice...)]
+		#ELSE[npc.speech([pc.Name]... Я-я правда не хочу...)] отвечает [npc.name]. [npc.speech(Н-но, полагаю, у меня нет выбора...)]
 		#ENDIF
 	</p>
 	<p>
@@ -1222,7 +1222,7 @@
 	<p>
 		#IF !npc.getFetishDesire(FETISH_TRANSFORMATION_RECEIVING).isPositive()
 		#THEN [npc.speech(Я... я правда не хочу быть лисичкой!)] [npc.name] жалуется, но, понимая, что у [npc.sheHasFull] нет выбора, [npc.she] неохотно продолжает: [npc.speech(Ладно... я выпью...)]
-		#ELSE [npc.speech(Ooh, being a fox-girl sounds like fun!)] [npc.name] happily replies. [npc.speech(Come on, give me the potion!)]
+		#ELSE [npc.speech(О-о, быть девочкой-лисицей звучит весело!)] радостно отвечает [npc.name]. [npc.speech(Давай же, дай мне зелье!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1242,7 +1242,7 @@
 		[citadelArcanist.speech(О-о, всё прошло идеально!)] — в восторге восклицает [citadelArcanist.name]. [citadelArcanist.speech(В какую же сексуальную лисичку ты превратилась!)]
 	</p>
 	<p>
-		Panting and gasping, [npc.name] tries to catch [npc.her] breath and recover from the alarming process that [npc.her] body has just been through. [npc.speech(I... Feel so... Different...)]
+		Тяжело дыша и задыхаясь, [npc.name] пытается перевести дух [npc.her] и прийти в себя после пугающего процесса, через который только что прошло тело [npc.her]. [npc.speech(Я... Чувствую себя такой... Другой...)]
 	</p>
 	<p>
 		[citadelArcanist.speech(Глупости, конечно же!)] [citadelArcanist.name] хихикает. [citadelArcanist.speech(Ммм, ты куда горячее, чем я думала... Эй, ты ведь жаждешь повеселиться в этом новом теле, верно? Встань на колени, и я позволю тебе облизать мою киску!)]
@@ -1270,7 +1270,7 @@
 	<p>
 		#IFnpc.isAttractedTo(citadelArcanist) || !game.isNonConEnabled()
 		#THEN[npc.speech(С огромным удовольствием!)] — с энтузиазмом отвечает [npc.name]. [npc.speech(Пожалуйста, [citadelArcanist.name], дай мне попробовать твою киску!)]
-		#ELSE[npc.speech([pc.Name]... I-I really don't want to...)] [npc.name] replies. [npc.speech(B-But I guess I have no choice...)]
+		#ELSE[npc.speech([pc.Name]... Я-я правда не хочу...)] отвечает [npc.name]. [npc.speech(Н-но, полагаю, у меня нет выбора...)]
 		#ENDIF
 	</p>
 	<p>
@@ -1298,7 +1298,7 @@
 	<p>
 		#IF !npc.getFetishDesire(FETISH_TRANSFORMATION_RECEIVING).isPositive()
 		#THEN [npc.speech(Я... я правда не хочу быть лисичкой!)] [npc.name] жалуется, но, понимая, что у [npc.sheHasFull] нет выбора, [npc.she] неохотно продолжает: [npc.speech(Ладно... я тоже выпью...)]
-		#ELSE [npc.speech(Ooh, being a fox-girl sounds like fun!)] [npc.name] happily replies. [npc.speech(Come on, give me the potion!)]
+		#ELSE [npc.speech(О-о, быть девочкой-лисицей звучит весело!)] радостно отвечает [npc.name]. [npc.speech(Давай же, дай мне зелье!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1359,7 +1359,7 @@
 	<p>
 		#IFnpc.isAttractedTo(citadelArcanist) || !game.isNonConEnabled()
 		#THEN[npc.speech(С огромным удовольствием!)] — с энтузиазмом отвечает [npc.name]. [npc.speech(Пожалуйста, [citadelArcanist.name], дай мне попробовать твою киску!)]
-		#ELSE[npc.speech([pc.Name]... I-I really don't want to...)] [npc.name] replies. [npc.speech(B-But I guess I have no choice...)]
+		#ELSE[npc.speech([pc.Name]... Я-я правда не хочу...)] отвечает [npc.name]. [npc.speech(Н-но, полагаю, у меня нет выбора...)]
 		#ENDIF
 	</p>
 	<p>
@@ -1497,7 +1497,7 @@
 		Ты решаешь, что пришло время встретиться с этой «темной сиреной», и, готовясь к худшему, делаешь шаг вперед и толкаешь тяжелые деревянные ворота.
 		#IF pc.hasStatusEffect(SE_PHYSIQUE_PERK_0)
 		#THEN Поскольку ты слишком слаб, тебе приходится призывать на помощь [npc.name], чтобы заставить их распахнуться перед тобой, позволяя тебе и твоему спутнику шагнуть внутрь цитадели.
-		#ELSE Thankfully, they're both unlocked and quite well balanced, and they readily swing open before you and [npc.name], allowing the two of you to step forwards into the keep.
+		#ELSE К счастью, обе они разблокированы и вполне сбалансированы; они легко распахиваются перед тобой и [npc.name], позволяя вам двоим шагнуть вперед, вглубь цитадели.
 		#ENDIF
 	</p>
 	<p>
@@ -1510,7 +1510,7 @@
 		Глядя мимо демонов, ты видишь возвышение, на вершине которого стоит трон из темного камня. На этом престоле восседает предводительница цитадели — сама темная сирена. Хотя остальная часть огромного зала ярко освещена арканными фонарями, фигура на троне по какой-то причине окутана густой тенью.
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Желая заставить эту скрытную предводительницу банд бесов явить себя миру, ты выкрикиваешь свой вызов: [pc.speech(Так это ты смеешь называть себя «темной сиреной»?! Пришло время тебе встретить свой конец!)]
-		#ELSE Wanting this reclusive leader of the imp gangs to reveal herself, you call out, [pc.speech(So you're the one who's responsible for the imp gangs terrorising the tunnels of Submission! I've come to put a stop to all that, siren!)]
+		#ELSE Желая заставить эту затворническую предводительницу бесовских банд явить себя, ты выкрикиваешь: [pc.speech(Так значит, именно ты отвечаешь за банды бесов, терроризирующих туннели Submission! Я пришел, чтобы покончить с этим, сирена!)]
 		#ENDIF
 		
 	</p>
@@ -1520,7 +1520,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Ты не можешь не заметить, как [npc.name] вздрагивает от столь впечатляющего представления сирены, но, какой бы грозной она ни казалась, ты знаешь, что ей не сравниться с твоей абсолютной мощью!
-		#ELSE You can't help but notice [npc.name] flinching at the siren's cringe-worthy introduction, and, as she describes herself as the 'destroyer of worlds', you find yourself letting out a low groan as you share in the second-hand embarrassment.
+		#ELSE Ты невольно замечаешь, как [npc.name] вздрагивает от тошнотворного представления сирены, а когда та называет себя «разрушительницей миров», ты невольно издаешь тихий стон, разделяя этот испанский стыд.
 		#ENDIF
 		 Подняв взгляд на возвышение, ты видишь, как предводительница этих демонов встает, и когда она делает шаг вперед, навстречу свету, перед тобой предстает весьма неожиданная фигура.
 	</p>
@@ -1544,7 +1544,7 @@
 		Ты снова решаешь попытаться противостоять [siren.name] и победить её, поэтому, собираясь с духом перед грядущей схваткой, ты делаешь шаг вперед и толкаешь тяжелые деревянные ворота.
 		#IF pc.hasStatusEffect(SE_PHYSIQUE_PERK_0)
 		#THEN Поскольку ты слишком слаб, тебе приходится призывать на помощь [npc.name], чтобы заставить их распахнуться перед тобой, позволяя тебе и твоему спутнику шагнуть внутрь цитадели.
-		#ELSE Thankfully, they're both unlocked and quite well balanced, and they readily swing open before you and [npc.name], allowing the two of you to step forwards into the keep.
+		#ELSE К счастью, обе они разблокированы и вполне сбалансированы; они легко распахиваются перед тобой и [npc.name], позволяя вам двоим шагнуть вперед, вглубь цитадели.
 		#ENDIF
 	</p>
 	<p>
@@ -1556,7 +1556,7 @@
 	<p>
 		#IF pc.hasTraitActivated(PERK_CHUUNI)
 		#THEN Прежде чем ты успеваешь ответить, сама [siren.name] поднимается со своего трона и произносит очередную впечатляющую речь:
-		#ELSE Before you can answer, [siren.name] herself stands up from her throne, and delivers yet another cringe-worthy speech,
+		#ELSE Прежде чем ты успеваешь ответить, [siren.name] сама встает со своего трона и произносит очередную нелепую речь,
 		#ENDIF
 		 [siren.speech(Вы смеете возвращаться в чертоги самой грозной пользовательницы арканы, которую когда-либо видел этот мир? Глупые смертные! Готовьтесь к поражению!)]
 	</p>
@@ -1585,7 +1585,7 @@
 		Взглянув на трон сирены, ты видишь, как [siren.name], смеясь, спускается с возвышения: [siren.speech(Глупцы! Теперь вы оба узрите мою безграничную астрономическую мощь! Сама ткань пространства и времени прогибается под моей волей!)]
 	</p>
 	<p>
-		Выставив одну ногу вперед, [siren.name] принимает героическую позу и, закинув свою огромную косу над головой одной рукой, с легкостью вращает ею, демонстрируя впечатляющую силу и изящество. Перехватив древко другой рукой, она переводит оружие в низкую боевую позицию, прежде чем издать очередной #IFpc.hasTraitActivated(PERK_CHUUNI)#THENspirited#ELSEridiculous#ENDIF laugh, [siren.speech(~Mwhaha!~ Prepare for your obliteration!)]
+		Выставив одну ногу вперед, [siren.name] принимает героическую позу и, закинув свою огромную косу над головой одной рукой, с легкостью вращает ею, демонстрируя впечатляющую силу и изящество. Перехватив древко другой рукой, она переводит оружие в низкую боевую позицию, прежде чем издать очередной #IFpc.hasTraitActivated(PERK_CHUUNI)#THENspirited#ELSEridiculous#ENDIF смеясь, [siren.speech(~Мва-ха-ха!~ Готовься к полному уничтожению!)]
 	</p>
 	<p>
 		У тебя нет времени, чтобы перевести дух после битвы с демонами, ведь [siren.name] уже готовится немедленно броситься на вас двоих!
@@ -1691,7 +1691,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты вовсю используешь ловкость своего тела, чтобы уворачиваться от падающих валунов и обрушивающейся кладки, пока вы с спутником мчитесь через внутренний двор, следуя за тремя демонами в пещеру Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you and your companion rush across the courtyard and follow the three demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обрушивающейся кладки, пока вы с спутницей несетесь через внутренний двор, следуя за тремя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1715,7 +1715,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты вовсю используешь ловкость своего тела, чтобы уворачиваться от падающих валунов и обрушивающейся кладки, пока вы с спутником мчитесь через внутренний двор, следуя за тремя демонами в пещеру Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you and your companion rush across the courtyard and follow the three demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обрушивающейся кладки, пока вы с спутницей несетесь через внутренний двор, следуя за тремя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1938,7 +1938,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#THEN ты мастерски используешь ловкость своего тела, чтобы уклоняться от падающих валунов и рушащейся кладки, пока мчишься через внутренний двор вслед за двумя демонами к пещере Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you rush across the courtyard and follow the two demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обломков кладки, пока ты несешься через внутренний двор и следует за двумя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>
@@ -1965,7 +1965,7 @@
 		#ELSE
 			#IF pc.getRace()==RACE_SQUIRREL_MORPH || pc.getRace()==RACE_CAT_MORPH
 			#ТОГДА ты ловко уворачиваешься от падающих валунов и обломков кладки, пока вы с спутником несетесь через внутренний двор, следуя за двумя демонами в пещеру Submission.
-			#ELSE you somehow manage to dodge all of the falling boulders and collapsing masonry as you and your companion rush across the courtyard and follow the two demons out into Submission's cavern.
+			#ELSE тебе каким-то образом удается уклониться от всех падающих валунов и обрушивающейся кладки, пока вы с спутницей несетесь через внутренний двор, следуя за двумя демонами в пещеру Submission.
 			#ENDIF
 		#ENDIF
 	</p>

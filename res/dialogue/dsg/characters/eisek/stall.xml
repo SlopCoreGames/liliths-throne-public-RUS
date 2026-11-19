@@ -118,7 +118,7 @@
 					<availabilityConditional><![CDATA[[#pc.hasQuestInLine(QUEST_LINE_SIDE_EISEK_MOB, QUEST_EISEK_MOB_QUEST_STAGE_TWO_FAILED) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[[style.boldBad(Mob)]]]></responseTitle>
+					<responseTitle><![CDATA[[style.boldBad(Моб)]]]></responseTitle>
 					<responseTooltip><![CDATA[Сообщить Эйзеку, что тебе не удалось разобраться с толпой]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_mob_quest_complete]]></nextDialogue>
 					<secondsPassed/>
@@ -131,7 +131,7 @@
 					<availabilityConditional><![CDATA[[#pc.hasQuestInLine(QUEST_LINE_SIDE_EISEK_MOB, QUEST_EISEK_MOB_QUEST_STAGE_THREE) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[[style.boldGood(Mob)]]]></responseTitle>
+					<responseTitle><![CDATA[[style.boldGood(Моб)]]]></responseTitle>
 					<responseTooltip><![CDATA[Сказать Эйзеку, что ты разобрался с толпой]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_mob_quest_complete]]></nextDialogue>
 					<secondsPassed/>
@@ -191,7 +191,7 @@
 					<availabilityConditional><![CDATA[[#pc.hasQuest(QUEST_LINE_SIDE_EISEK_STALL) && pc.hasQuestInLine(QUEST_LINE_SIDE_EISEK_STALL, QUEST_EISEK_STALL_QUEST_STAGE_FOUR) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_STALL)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[[style.boldGood(Stall)]]]></responseTitle>
+					<responseTitle><![CDATA[[style.boldGood(Торговец)]]]></responseTitle>
 					<responseTooltip><![CDATA[Ты собрал всё нужное, чтобы улучшить лавку Эйзека. Пора показать ему результат.]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_stall_quest_complete]]></nextDialogue>
 					<secondsPassed/>

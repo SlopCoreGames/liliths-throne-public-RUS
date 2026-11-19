@@ -33,7 +33,7 @@
 	<transformationDescription><![CDATA[
 		Невольно простонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, меняющий свою форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная оболочка.
 		<br/>[npc.She] теперь [npc.has] [style.boldBadger(барсучий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldBadger([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE badger#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldBadger(badger cum)].
+		<br/>[npc.She] [npc.has] [style.boldBadger([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ELSE барсук#ENDIF яйца)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldBadger(барсучью сперму)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

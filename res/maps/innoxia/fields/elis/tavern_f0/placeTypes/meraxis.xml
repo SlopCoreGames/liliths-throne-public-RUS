@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[seating area]]></name>
-	<tooltipDescription><![CDATA[Sofas and coffee tables are arranged so as to form several cosy seating areas.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the seating area at 'The Red Dragon' tavern]]></virginityLossDescription>
+	<name><![CDATA[зона отдыха]]></name>
+	<tooltipDescription><![CDATA[Диваны и кофейные столики расставлены так, чтобы образовать несколько уютных зон для отдыха.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в зоне отдыха таверны «Рыжий дракон»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>seating</svgName>
 	<colour>BASE_BROWN</colour>

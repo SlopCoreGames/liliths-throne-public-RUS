@@ -37,47 +37,47 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
-		<descriptor>lutrine</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
+		<descriptor>выдриный</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
-		<descriptor>lutrine</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
+		<descriptor>выдриный</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's hands: -->
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>otter-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>paw-like</descriptor>
-		<descriptor>webbed</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожая на лапу</descriptor>
+		<descriptor>перепончатый</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>otter-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>paw-like</descriptor>
-		<descriptor>webbed</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожая на лапу</descriptor>
+		<descriptor>перепончатый</descriptor>
 	</handDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's fingers: -->
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>padded</descriptor>
-		<descriptor>otter-like</descriptor>
+		<descriptor>пышный</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>padded</descriptor>
-		<descriptor>otter-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пышный</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this arm type.

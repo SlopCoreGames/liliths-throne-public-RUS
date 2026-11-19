@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Themiscyra palace]]></name>
-	<tooltipDescription><![CDATA[The seat of government in Themiscyra, this classical palace sits atop a rocky hill and overlooks the entire town.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[outside the palace in Themiscyra]]></virginityLossDescription>
+	<name><![CDATA[Дворец Фемискиры]]></name>
+	<tooltipDescription><![CDATA[Центр управления Фемискирой, этот классический дворец возвышается на скалистом холме, возвышаясь над всем городом.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[снаружи дворца в Фемискире]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_TEAL</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

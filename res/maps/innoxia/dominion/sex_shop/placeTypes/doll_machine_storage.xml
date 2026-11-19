@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[doll storage]]></name>
-	<tooltipDescription><![CDATA[Having completed their journey down the assembly line, finished sex dolls are stored here.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the back of Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[хранилище кукол]]></name>
+	<tooltipDescription><![CDATA[Здесь хранятся готовые секс-куклы, завершившие свой путь по сборочной линии.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в задней части «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>dolls</svgName>
 	<colour>BASE_PURPLE_DARK</colour>

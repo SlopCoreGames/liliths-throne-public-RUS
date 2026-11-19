@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[cultist's chapel]]></name>
-	<tooltipDescription><![CDATA[The Cult of Lilith's presence in Elis takes the form of not only a large custom-built chapel, but also several ancillary buildings to either side of it.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[outside the cultist's chapel in Elis]]></virginityLossDescription>
+	<name><![CDATA[часовня культистов]]></name>
+	<tooltipDescription><![CDATA[Присутствие Культа Lilith в Элисе выражается не только в виде огромной, построенной на заказ часовни, но и в нескольких вспомогательных зданиях по обе стороны от неё.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[снаружи часовни культистов в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PINK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

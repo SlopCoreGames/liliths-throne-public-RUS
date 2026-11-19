@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[woodsman's hut]]></name>
-	<tooltipDescription><![CDATA[Managing the woodland surrounding Elis is a full time job for the occupant of this quaint hut.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside the woodsman's hut at Elis]]></virginityLossDescription>
+	<name><![CDATA[хижина лесоруба]]></name>
+	<tooltipDescription><![CDATA[Управление лесами вокруг Элиса — это работа на полную ставку для обитателя этой уютной хижины.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с хижиной лесоруба в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BROWN</colour>
 	<backgroundColour>MAP_BACKGROUND_GREEN</backgroundColour>

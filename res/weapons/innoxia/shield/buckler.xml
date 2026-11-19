@@ -12,7 +12,7 @@
 		<description><![CDATA[Маленький металлический щит диаметром примерно [style.sizeShort(45)], который держат одной рукой за рукоять, расположенную за умбоном. Подобные щиты обычно зачарованы, чтобы помогать владельцу сопротивляться определенному типу урона Арканы.]]></description> 
 		
 		<attackDescriptor>shield-bash</attackDescriptor>
-		<attackTooltipDescription>Bash [npc2.name] with your buckler.</attackTooltipDescription>
+		<attackTooltipDescription>Ударь [npc2.name] своим баклером.</attackTooltipDescription>
 		<rarity>COMMON</rarity> 
 		
 		<equipText><![CDATA[[npc.Name] [npc.verb(берет)] [npc.her] баклею и [npc.verb(готовится)] использовать её, чтобы защищать [npc.herself] в бою.]]></equipText>

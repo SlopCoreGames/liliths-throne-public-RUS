@@ -23,7 +23,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Moonlit Stripes</bookName>
+	<bookName>Лунная Полосатка</bookName>
 	<basicDescriptionId>BADGER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>BADGER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

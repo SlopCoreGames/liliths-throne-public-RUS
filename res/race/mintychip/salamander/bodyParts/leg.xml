@@ -59,35 +59,35 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's leg of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>reptilian</descriptor>
-		<descriptor>anthropomorphic, salamander-like</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>рептилоидные</descriptor>
+		<descriptor>антропоморфная, похожая на саламандру</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>reptilian</descriptor>
-		<descriptor>anthropomorphic, salamander-like</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>рептилоидные</descriptor>
+		<descriptor>антропоморфная, похожая на саламандру</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same descriptor formats as those for the leg type above, but these describe the leg's feet.
 	Foot type descriptors are also used, so these are extra definitions related to this leg type's race. -->
 	<footDescriptorsMasculine>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</footDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the leg type above, but these describe the leg's toes.
 	Foot type's toe descriptors are also used, so these are extra definitions related to this leg type's race. -->
 	<toeDescriptorsMasculine>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</toeDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this leg type.

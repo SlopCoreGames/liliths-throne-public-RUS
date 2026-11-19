@@ -32,7 +32,7 @@
 		[lyssieth.speechNoEffects(Мой хороший маленький демон,)] — торжествует Lyssieth, посылая в твою глотку очередную струю горячей демонической спермы.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Покажи своей новой мамочке, как сильно ты её любишь! Выпей всё до капли, и скоро ты станешь моей новой доченькой!)]
-		#ELSE [lyssieth.speechNoEffects(Drink it all down, and let the corruption in!)]
+		#ELSE [lyssieth.speechNoEffects(Выпей всё до дна и впусти в себя Порочность!)]
 		#ENDIF
 	</p>
 	<p>
@@ -58,7 +58,7 @@
 		[lyssieth.speechNoEffects(Хороший [pc.girl],)] — говорит Lyssieth, наконец вынимая почти весь свой член из твоего горла, но оставляя головку во рту,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(А теперь покажи своей мамочке, как ты счастлив получить ее подарок!)]
-		#ELSE [lyssieth.speechNoEffects(Now, show me how happy you are to have received my gift!)]
+		#ELSE [lyssieth.speechNoEffects(А теперь покажи мне, как ты счастлив получить мой подарок!)]
 		#ENDIF
 	</p>
 	<p>
@@ -75,7 +75,7 @@
 		Повинуясь приказу, ты поднимаешься на ноги, слегка пошатываясь и привыкая к новому центру тяжести из-за появившихся хвоста и крыльев. Сделав шаг вперед, Lyssieth берет тебя в свои руки, и прежде чем ты успеваешь что-то сказать, она прижимается своими губами к твоим и вталкивает язык в твой залитый спермой рот. Ты невольно стонешь, когда она начинает страстно целовать тебя, но как раз в тот момент, когда ты закрываешь глаза, полностью отдаваясь моменту, она внезапно прерывается и отстраняется, тихо застонав:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Какой послушный [pc.girl]... Сейчас тебе нужна классная, узкая демоническая киска, чтобы ты прочувствовал, как это здорово — когда тебя трахает мамочкино огромное члено!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Such a good little demon... What you need now is a nice, tight, demonic pussy, so that you can find out how good it feels to get fucked!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Какой послушный маленький демон... Сейчас тебе нужна хорошая, тугая демоническая киска, чтобы ты прочувствовал, как это — когда тебя трахают!)]
 		#ENDIF
 	</p>
 	<p>
@@ -183,7 +183,7 @@
 		Когда трансформации подходят к концу, ты внезапно осознаешь, что в процессе твоего превращения ты подвергся медленному маскулинизирующему воздействию.
 		#IF pc.getFemininity()==FEMININITY_ANDROGYNOUS
 		#THEN Твое тело, которое до всего этого процесса было андрогинным, теперь стало решительно мальчишеским. Ты издаешь глубокий стон,
-		#ELSE Your body, while masculine before this whole process, is now decidedly manly. You let out a deep, powerful groan
+		#ELSE Твое тело, бывшее до всего этого процесса мужским, теперь стало по-настоящему мужественным. Ты издаешь глубокий, мощный стон
 		#ENDIF
 		 осознавая, что Lyssieth реагирует на твое доминирование, пытаясь превратить тебя в своего идеального мужчину. Ты представляешь, что если продолжишь проявлять власть над ней, то в итоге превратишься в чрезвычайно мужественного инкуба...
 	</p>
@@ -300,13 +300,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тебе нравится, доченька?)] — спрашивает Lyssieth, снова делая шаг вперёд и кладя руки тебе на бёдра, [lyssieth.speechNoEffects(Теперь ты именно такая, какой мамочка хочет тебя видеть, но раз уж ты мечтаешь стать полноценным демоном, мы ещё далеко не закончили.)]
-		#ELSE [lyssieth.speechNoEffects(Do you approve, little succubus?)] Lyssieth asks, stepping forwards once again to place her hands on your hips, [lyssieth.speechNoEffects(You're just as I like now, but as you want to be a full demon, we're still far from done.)]
+		#ELSE [lyssieth.speechNoEffects(Ты одобряешь, маленькая суккуб?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра, [lyssieth.speechNoEffects(Теперь ты именно такая, как мне нравится, но раз уж ты хочешь стать полноценным демоном, мы еще далеко не закончили.)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка,)] — отвечаешь ты, с любовью глядя в глаза своей новой матери.
-		#ELSE [pc.speechNoEffects(Mmm, yes,)] you reply, gazing lovingly up into Lyssieth's eyes.
+		#ELSE [pc.speechNoEffects(Ммм, да,)] — отвечаешь ты, с любовью глядя в глаза Lyssieth.
 		#ENDIF
 	</p>
 	<p>
@@ -324,13 +324,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ О да, какая тесная для мамочки,)] — хихикает Lyssieth, вынимая пальцы из твоей щели, [lyssieth.speechNoEffects(А теперь умоляй меня раздвинуть тебя!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Oh yes, nice and tight,)] Lyssieth giggles, sliding her fingers out of your cunt, [lyssieth.speechNoEffects(Now beg for me to break you in!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ О да, такая узкая и тугая,)] — хихикает Lyssieth, вынимая пальцы из твоей киски, [lyssieth.speechNoEffects(А теперь умоляй меня размять тебя!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, трахни меня!)] — кричишь ты, широко раздвигая перед ней ноги.
-		#ELSE [pc.speechNoEffects(Yes, please, fuck me!)] you cry, spreading your legs wide open before her.
+		#ELSE [pc.speechNoEffects(Да, пожалуйста, трахай меня!)] — кричишь ты, широко раздвигая перед ней ноги.
 		#ENDIF
 	</p>
 	<p>
@@ -350,18 +350,18 @@
 		 тобой
 		#IF pc.hasVagina()
 		#THEN на самом деле не хочешь, чтобы она использовала твою киску.
-		#ELSE really don't like the idea of having a vagina, let along having it penetrated.
+		#ELSE совсем не нравится идея иметь вагину, не говоря уже о том, чтобы в неё входили.
 		#ENDIF
 		 Когда старшая лилин притягивает тебя к себе в объятия, ты смотришь ей в глаза и умоляешь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, используй вместо этого мою задницу!)]
-		#ELSE [pc.speechNoEffects(Please, I want you to use my ass instead!)]
+		#ELSE [pc.speechNoEffects(Пожалуйста, я хочу, чтобы ты использовала мою задницу вместо этого!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(О, так ты у нас маленькая похотливая жопошлёпка, ммм? Что ж, мамочка с радостью даст тебе то, чего ты хочешь,)]
-		#ELSE [lyssieth.speechNoEffects(Oh, so you're a horny little buttslut, hmm? Well, I'm happy to give you what you want,)]
+		#ELSE [lyssieth.speechNoEffects(О, так ты у нас маленькая похотливая жопошница, ммм? Что ж, я с радостью дам тебе то, чего ты хочешь,)]
 		#ENDIF
 		 Lyssieth тихо стонет, и, издав облегченный вздох, ты позволяешь ей взять инициативу в свои руки, когда она вновь втягивает тебя в отчаянный, страстный поцелуй. Стоная ей в рот, ты чувствуешь, как твое тело начинает реагировать на прикосновения старшей лилин, и когда ее массивные крылья окутывают тебя, прижимая к своим [lyssieth.breastSize] грудям, пропорции твоего тела начинают меняться...
 	</p>
@@ -386,7 +386,7 @@
 		<p>
 			#IF pc.hasFetish(FETISH_INCEST)
 			#THEN [pc.speechNoEffects(Нет, мамочка,)] уступаешь ты, поглаживая свой милый маленький член, [pc.speechNoEffects(Так мне лучше.)]
-			#ELSE [pc.speechNoEffects(No,)] you concede, giving your cute little cock a stroke, [pc.speechNoEffects(I'm better like this.)]
+			#ELSE [pc.speechNoEffects(Нет,)] — уступаешь ты, поглаживая свой милый маленький член, — [pc.speechNoEffects(так мне лучше.)]
 			#ENDIF
 		</p>
 	#ENDIF
@@ -399,13 +399,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Теперь ты именно такой, как любит мамочка, но раз уж ты хочешь стать полноценным демоном, мы ведь еще далеко не закончили, а, мой [pc.daughter]?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра.
-		#ELSE [lyssieth.speechNoEffects(You're just as I like now, but as you want to be a full demon, we're still far from done, aren't we, little succubus?)] Lyssieth asks, stepping forwards once again to place her hands on your hips.
+		#ELSE [lyssieth.speechNoEffects(Сейчас ты именно такая, как мне нравится, но раз уж ты хочешь стать полноценным демоном, мы ещё далеко не закончили, верно, маленькая суккуб?)] — спрашивает Lyssieth, снова делая шаг вперёд и кладя руки тебе на бёдра.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка,)] — отвечаешь ты, с любовью глядя в глаза своей новой матери.
-		#ELSE [pc.speechNoEffects(Mmm, yes,)] you reply, gazing lovingly up into Lyssieth's eyes.
+		#ELSE [pc.speechNoEffects(Ммм, да,)] — отвечаешь ты, с любовью глядя в глаза Lyssieth.
 		#ENDIF
 	</p>
 	<p>
@@ -414,13 +414,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ О да, мамочке это очень понравится,)] Lyssieth хихикает, вынимая пальцы из твоей задницы, [lyssieth.speechNoEffects(А теперь умоляй меня трахнуть твою попку!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Oh yes, I'm going to enjoy this,)] Lyssieth giggles, sliding her fingers out of your butt, [lyssieth.speechNoEffects(Now beg for me to pound your ass!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ О да, это будет одно удовольствие,)] — хихикает Lyssieth, вынимая пальцы из твоей задницы, — [lyssieth.speechNoEffects(А теперь умоляй меня трахнуть твою жопку!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, трахни мою задницу!)] — кричишь ты, широко разводя перед ней ноги.
-		#ELSE [pc.speechNoEffects(Yes, please, fuck my butt!)] you cry, spreading your legs wide open before her.
+		#ELSE [pc.speechNoEffects(Да, пожалуйста, трахай мою задницу!)] — кричишь ты, широко раздвигая перед ней ноги.
 		#ENDIF
 	</p>
 	<p>
@@ -436,19 +436,19 @@
 		Ты не помнишь, чтобы когда-либо соглашалась на то, чтобы Lyssieth трахала тебя,
 		#IF !pc.hasVagina()
 		#THEN и ты абсолютно уверена, что никогда не говорила, будто хочешь, чтобы она сделала тебе киску. 
-		#ELSE and you have no intention of letting her do so.
+		#ELSE и у тебя нет намерения позволить ей это сделать.
 		#ENDIF
 		Потряхивая своими [pc.arms], чтобы вырваться из её хватки, ты хватаешь её за запястья и с силой притягиваешь к себе. Когда её огромные груди прижимаются к твоей груди, ты рычишь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Я не говорил, что ты можешь так трахать меня, мамочка! Придётся преподать тебе урок и хорошенько оттрахать прямо на твоём столе!)]
-		#ELSE [pc.speechNoEffects(I never said you could fuck me like that! I'm going to have to teach you a lesson, and give you a good, hard fucking over your desk!)]
+		#ELSE [pc.speechNoEffects(Я не говорил, что ты можешь так меня трахать! Мне придётся преподать тебе урок и хорошенько оттрахать прямо на твоём столе!)]
 		#ENDIF
 	</p>
 	<p>
 		Вместо того чтобы разозлиться или сопротивляться, Lyssieth издает похотливый стон и тяжело дышит:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(О-о боже, какой же ты непослушный [pc.daughter]... Мамочка не хочет тебя расстраивать, так что можешь использовать её как пожелаешь...)] 
-		#ELSE [lyssieth.speechNoEffects(O-Oh my, what a naughty demon you are... I suppose I can allow this...)]
+		#ELSE [lyssieth.speechNoEffects(О-О боже, какой же ты непослушный демон... Полагаю, я могу это позволить...)]
 		#ENDIF
 	</p>
 	<p>
@@ -468,7 +468,7 @@
 		Заглянув себе между ног, ты видишь, что у тебя теперь огромный, [unit.size(20)] демонический член,
 		#IF!pc.isInternalTesticles()
 		#THEN, дополненный крупными, полными спермы яичками.
-		#ELSE which is already fully-hard and standing to attention.
+		#ELSE который уже полностью затвердел и стоит торчком.
 		#ENDIF
 		#IF !pc.isFeminine() && pc.hasVagina()
 		#THEN Под ним не осталось и следа от твоей вагины; кажется, в данный момент Lyssieth интересует только твой член.
@@ -482,7 +482,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Тогда не будем тебя заставлять ждать, мамочка,)] — говоришь ты, делая шаг вперед и властно толкая Lyssieth назад.
-		#ELSE [pc.speechNoEffects(Let's not keep you waiting then,)] you say, stepping forwards and dominantly pushing Lyssieth back.
+		#ELSE [pc.speechNoEffects(Тогда не будем тебя заставлять ждать,)] — говоришь ты, делая шаг вперед и властно толкая Lyssieth назад.
 		#ENDIF
 		С удивленным писком старшая лилин врезается в свой стол и заваливается на него спиной, когда ты входишь прямо между её разведенных ног.
 	</p>
@@ -509,13 +509,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тебе нравится, доченька?)] — спрашивает Lyssieth, снова делая шаг вперёд и кладя руки тебе на бёдра, [lyssieth.speechNoEffects(Теперь ты именно такая, какой мамочка хочет тебя видеть, но раз уж ты мечтаешь стать полноценным демоном, мы ещё далеко не закончили.)]
-		#ELSE [lyssieth.speechNoEffects(Do you approve, little succubus?)] Lyssieth asks, stepping forwards once again to place her hands on your hips, [lyssieth.speechNoEffects(You're just as I like now, but as you want to be a full demon, we're still far from done.)]
+		#ELSE [lyssieth.speechNoEffects(Ты одобряешь, маленькая суккуб?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра, [lyssieth.speechNoEffects(Теперь ты именно такая, как мне нравится, но раз уж ты хочешь стать полноценным демоном, мы еще далеко не закончили.)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка,)] — отвечаешь ты, с любовью глядя в глаза своей новой матери.
-		#ELSE [pc.speechNoEffects(Mmm, yes,)] you reply, gazing lovingly up into Lyssieth's eyes.
+		#ELSE [pc.speechNoEffects(Ммм, да,)] — отвечаешь ты, с любовью глядя в глаза Lyssieth.
 		#ENDIF
 	</p>
 	<p>
@@ -533,13 +533,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ О да, какая тесная для мамочки,)] — хихикает Lyssieth, вынимая пальцы из твоей щели, [lyssieth.speechNoEffects(А теперь умоляй меня раздвинуть тебя!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Oh yes, nice and tight,)] Lyssieth giggles, sliding her fingers out of your cunt, [lyssieth.speechNoEffects(Now beg for me to break you in!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ О да, такая узкая и тугая,)] — хихикает Lyssieth, вынимая пальцы из твоей киски, [lyssieth.speechNoEffects(А теперь умоляй меня размять тебя!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, трахни меня!)] — кричишь ты, широко раздвигая перед ней ноги.
-		#ELSE [pc.speechNoEffects(Yes, please, fuck me!)] you cry, spreading your legs wide open before her.
+		#ELSE [pc.speechNoEffects(Да, пожалуйста, трахай меня!)] — кричишь ты, широко раздвигая перед ней ноги.
 		#ENDIF
 	</p>
 	<p>
@@ -565,13 +565,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тебе нравится, доченька?)] — спрашивает Lyssieth, снова делая шаг вперёд и кладя руки тебе на бёдра, [lyssieth.speechNoEffects(Теперь ты именно такая, какой мамочка хочет тебя видеть, но раз уж ты мечтаешь стать полноценным демоном, мы ещё далеко не закончили.)]
-		#ELSE [lyssieth.speechNoEffects(Do you approve, little succubus?)] Lyssieth asks, stepping forwards once again to place her hands on your hips, [lyssieth.speechNoEffects(You're just as I like now, but as you want to be a full demon, we're still far from done.)]
+		#ELSE [lyssieth.speechNoEffects(Ты одобряешь, маленькая суккуб?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра, [lyssieth.speechNoEffects(Теперь ты именно такая, как мне нравится, но раз уж ты хочешь стать полноценным демоном, мы еще далеко не закончили.)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка,)] — отвечаешь ты, с любовью глядя в глаза своей новой матери.
-		#ELSE [pc.speechNoEffects(Mmm, yes,)] you reply, gazing lovingly up into Lyssieth's eyes.
+		#ELSE [pc.speechNoEffects(Ммм, да,)] — отвечаешь ты, с любовью глядя в глаза Lyssieth.
 		#ENDIF
 	</p>
 	<p>
@@ -589,13 +589,13 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ О да, как же тесно для мамочки,)] Lyssieth хихикает, вынимая пальцы из твоей киски, [lyssieth.speechNoEffects(Так, ты говорил, что хочешь заняться со мной ножницами?)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Oh yes, nice and tight,)] Lyssieth giggles, sliding her fingers out of your cunt, [lyssieth.speechNoEffects(Now, you said that you wanted to scissor with me?)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ О да, так приятно и тесно,)] — хихикает Lyssieth, вынимая пальцы из твоей киски, [lyssieth.speechNoEffects(Так ты говорил, что хочешь заняться со мной ножницами?)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Всё верно, мамочка, я собираюсь использовать твою киску!)]
-		#ELSE [pc.speechNoEffects(Yes, I'm going to use your pussy!)]
+		#ELSE [pc.speechNoEffects(Да, я собираюсь использовать твою киску!)]
 		#ENDIF
 		 восклицаешь ты, прежде чем повалить её на диван и перебраться сверху.
 	</p>
@@ -615,14 +615,14 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] визжишь ты, изо всех сил сжимая киску вокруг её толстого ребристого ствола, [pc.speechNoEffects(Я твоя хорошая девочка!)]
-		#ELSE [pc.speechNoEffects(Fuck, yes!)] you squeal, clenching your pussy down as hard as you can around her fat, ribbed shaft, [pc.speechNoEffects(Fuck me!)]
+		#ELSE [pc.speechNoEffects(Да, трахай!)] — визжишь ты, сжимая её толстый ребристый член так сильно, как только можешь, [pc.speechNoEffects(Трахай меня!)]
 		#ENDIF
 	</p>
 	<p>
 		Как только ты это произносишь, ты внезапно чувствуешь, как член Lyssieth дергается и пульсирует внутри тебя, и, когда она издает неистовый визг, еще одна массивная порция ее горячего семени впрыскивается глубоко в твою
 		#IF pc.isVisiblyPregnant()
 		#THEN уже переполненную утробу.
-		#ELSE cum-stuffed cunt.
+		#ELSE залитая спермой киска.
 		#ENDIF
 		Твои щеки вспыхивают румянцем, и ты продолжаешь издавать похотливые звуки, чувствуя, как развратная сперма разливает глубокое тепло по всему твоему телу, поднимаясь к рукам и ногам.
 	</p>
@@ -630,13 +630,13 @@
 		На твоих глазах [pc.armSkin], покрывающие твою [pc.arms], начинают смещаться и меняться, и после очередного толчка спермы в твою изъеденную сексом киску, они внезапно превращаются в пару гладких демонических рук. Ты издаешь потрясенный вздох, но в этот момент Lyssieth прижимает основание своего члена к твоим [pc.labiaSize] половым губам, превращая твой вздох в сладостный стон. После очередного дерганья и пульсации сперма Lyssieth начинает вытекать из твоей переполненной щели вокруг ее толстого ствола, заставляя ее надуть губы и спросить:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Оу, неужели тебе трудно принять всю мамину сперму?)]
-		#ELSE [lyssieth.speechNoEffects(Aww, are you struggling to take all of my cum?)]
+		#ELSE [lyssieth.speechNoEffects(Оу, неужели тебе трудно принять всю мою сперму?)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Нет, мамочка! Дай мне еще!)] — визжишь ты, широко раздвигая ноги для своей новой матери.
-		#ELSE [pc.speechNoEffects(No! Please, give me more!)] you squeal, spreading your legs for the elder lilin.
+		#ELSE [pc.speechNoEffects(Нет! Пожалуйста, дай мне еще!)] — визжишь ты, раздвигая ноги перед старшей лилин.
 		#ENDIF
 	</p>
 	<p>
@@ -645,7 +645,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Вот моя послушная [pc.girl],)] — говорит Lyssieth, улыбаясь тебе сверху вниз, — [lyssieth.speechNoEffects(А теперь покажи мамочке, как тебе весело!)]
-		#ELSE [lyssieth.speechNoEffects(Good little succubus,)] Lyssieth says, smiling down at you, [lyssieth.speechNoEffects(Now, show me that you're having a good time!)]
+		#ELSE [lyssieth.speechNoEffects(Хорошая маленькая суккуб,)] — говорит Lyssieth, с улыбкой глядя на тебя сверху вниз, [lyssieth.speechNoEffects(А теперь покажи мне, что тебе весело!)]
 		#ENDIF
 	</p>
 	<p>
@@ -661,7 +661,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тсс, моя хорошая [pc.girl],)] — говорит она, самодовольно глядя на тебя, — [lyssieth.speechNoEffects(Хочешь, чтобы мамочка опустилась на пол, и ты могла поразвлечься, втираясь в ее киску?)]
-		#ELSE [lyssieth.speechNoEffects(Hush now, little succubus,)] Lyssieth says, smiling down at you, [lyssieth.speechNoEffects(Would you like it if I got down on the floor, so that you can have some fun humping my pussy?)]
+		#ELSE [lyssieth.speechNoEffects(Тише, маленькая суккуб,)] — говорит Lyssieth, с улыбкой глядя на тебя сверху вниз, [lyssieth.speechNoEffects(Хочешь, я опущусь на пол, чтобы ты могла поразвлечься, толкаясь в мою киску?)]
 		#ENDIF
 	</p>
 	]]>
@@ -676,7 +676,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] — визжишь ты, изо всех сил сжимая задницу вокруг её толстого ребристого ствола, [pc.speechNoEffects(Я твой послушный [pc.girl]!)]
-		#ELSE [pc.speechNoEffects(Fuck, yes!)] you squeal, clenching your ass down as hard as you can around her fat, ribbed shaft, [pc.speechNoEffects(Fuck me!)]
+		#ELSE [pc.speechNoEffects(Блядь, да!)] — визжишь ты, изо всех сил сжимая задницей её толстый ребристый член, [pc.speechNoEffects(Трахни меня!)]
 		#ENDIF
 	</p>
 	<p>
@@ -686,13 +686,13 @@
 		На твоих глазах [pc.armSkin], покрывающие твой [pc.arms], начинают двигаться и меняться, и после очередной порции спермы в твой оттраханный анус они внезапно превращаются в пару гладких демонических рук. Ты издаешь потрясенный вздох, но в этот момент Lyssieth вжимает основание своего члена в твою задницу, превращая твой вздох в сладостный стон. После очередного содрогания и пульсации сперма Lyssieth начинает вытекать из твоей переполненной дырочки вокруг её толстого ствола, заставляя её надуть губы и спросить:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Оу, неужели тебе трудно принять всю мамину сперму?)]
-		#ELSE [lyssieth.speechNoEffects(Aww, are you struggling to take all of my cum?)]
+		#ELSE [lyssieth.speechNoEffects(Оу, неужели тебе трудно принять всю мою сперму?)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Нет, мамочка! Дай мне еще!)] — визжишь ты своей новой матери.
-		#ELSE [pc.speechNoEffects(No! Please, give me more!)] you squeal to the elder lilin.
+		#ELSE [pc.speechNoEffects(Нет! Пожалуйста, дай мне еще!)] — визжишь ты старшей лилин.
 		#ENDIF
 	</p>
 	<p>
@@ -701,7 +701,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Вот моя послушная [pc.girl],)] — говорит Lyssieth, улыбаясь тебе сверху вниз, — [lyssieth.speechNoEffects(А теперь покажи мамочке, как тебе весело!)]
-		#ELSE [lyssieth.speechNoEffects(Good little succubus,)] Lyssieth says, smiling down at you, [lyssieth.speechNoEffects(Now, show me that you're having a good time!)]
+		#ELSE [lyssieth.speechNoEffects(Хорошая маленькая суккуб,)] — говорит Lyssieth, с улыбкой глядя на тебя сверху вниз, [lyssieth.speechNoEffects(А теперь покажи мне, что тебе весело!)]
 		#ENDIF
 	</p>
 	<p>
@@ -717,7 +717,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тише, моя хорошая маленькая сисси [pc.girl],)] — говорит она, ухмыляясь, глядя на твой крошечный член, — [lyssieth.speechNoEffects(Хочешь, чтобы мамочка опустилась на пол и представила тебе свою киску, чтобы ты мог повеселиться, втираясь в неё своим маленьким клитор-членом? Или, может, ты хочешь, чтобы она продолжила трахать твою задницу и превратила тебя в её настоящую дочку-сисси, задротшу в задницу?)]
-		#ELSE [lyssieth.speechNoEffects(Hush now, little sissy succubus,)] Lyssieth says, smiling down at your tiny cock, [lyssieth.speechNoEffects(Would you like it if I got down on the floor and presented myself to you, so that you can have some fun humping my pussy with your little clitty-dick? Or perhaps you'd like me to continue fucking your ass, and turn you into a real sissy buttslut?)]
+		#ELSE [lyssieth.speechNoEffects(Тише, маленькая суккубша-девственница,)] Lyssieth говорит, с улыбкой глядя на твой крошечный член, [lyssieth.speechNoEffects(Хотел бы ты, если бы я опустилась на пол и представилась тебе, чтобы ты мог поразвлечься, втирая свой малюсенький клитор-член в мою киску? Или, может, ты хочешь, чтобы я продолжила трахать твою задницу и превратила тебя в настоящего сисси-попаса?)]
 		#ENDIF
 	</p>
 	]]>
@@ -730,7 +730,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тише, мой хороший [pc.girl],)] — говорит она, самодовольно глядя на тебя сверху вниз, — [lyssieth.speechNoEffects(Хочешь, чтобы мамочка опустилась на пол и преподнесла себя тебе, чтобы ты мог вдоволь оттрахать её киску?)]
-		#ELSE [lyssieth.speechNoEffects(Hush now, little succubus,)] Lyssieth says, smiling down at you, [lyssieth.speechNoEffects(Would you like it if I got down on the floor and presented myself to you, so that you can have some fun fucking my pussy?)]
+		#ELSE [lyssieth.speechNoEffects(Тише, маленькая суккуб,)] — говорит Lyssieth, улыбаясь тебе сверху вниз, — [lyssieth.speechNoEffects(Хочешь, я опущусь на пол и преподнесу себя тебе, чтобы ты мог повеселиться, трахая мою киску?)]
 		#ENDIF
 	</p>
 	]]>
@@ -745,7 +745,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] — отвечаешь ты, [pc.moan], вгоняя свой толстый ствол как можно глубже в её щель, — [pc.speechNoEffects(Я твой послушный [pc.girl]!)]
-		#ELSE [pc.speechNoEffects(Fuck, yes!)] you [pc.moan], ramming your thick shaft as deep as possible into her cunt, [pc.speechNoEffects(Take it!)]
+		#ELSE [pc.speechNoEffects(Бля, да!)] — [pc.moan] ты, вонзая свой толстый член как можно глубже в её щель, — [pc.speechNoEffects(Получай!)]
 		#ENDIF
 	</p>
 	<p>
@@ -755,13 +755,13 @@
 	На твоих глазах [pc.armSkin], покрывающий твои [pc.arms], начинает меняться, и после очередного сжатия натрепанной киски Lyssieth они внезапно превращаются в пару гладких демонических рук. Ты издаешь потрясенный вздох, но в этот момент Lyssieth, зажав тебя ногами, вжимает твой член глубоко в свою киску и жалобно стонет:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Вот так, трахай свою мамочку! ~Аах!~ Мамочкина киска вся твоя!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ That's right, fuck me! ~Aah!~ Your cock is the best!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Вот так, трахай меня! ~Аах!~ Твой член — лучший!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка! Бери!)] — вскрикиваешь ты, вцепившись в бедра своей новой матери и наполняя её киску своим толстым членом.
-		#ELSE [pc.speechNoEffects(Yes! Take it!)] you cry out, gripping the elder lilin's hips and filling her pussy with your thick cock.
+		#ELSE [pc.speechNoEffects(Да! Получай!)] — вскрикиваешь ты, сжимая бёдра старшей лилин и наполняя её киску своим толстым членом.
 		#ENDIF
 	</p>
 	<p>
@@ -770,7 +770,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Вот мой хороший [pc.girl],)] — говорит Lyssieth, улыбаясь тебе снизу вверх, [lyssieth.speechNoEffects(А теперь наполни мамочкину киску своей вкусной спермой!)]
-		#ELSE [lyssieth.speechNoEffects(Good little succubus,)] Lyssieth says, smiling up at you, [lyssieth.speechNoEffects(Now, fill my pussy with your hot cum!)]
+		#ELSE [lyssieth.speechNoEffects(Хорошая маленькая суккуб,)] — говорит Lyssieth, улыбаясь тебе снизу вверх, — [lyssieth.speechNoEffects(А теперь наполни мою киску своей горячей спермой!)]
 		#ENDIF
 	</p>
 	<p>
@@ -818,7 +818,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] ты [pc.moan], втираясь своей киской в её лоно, [pc.speechNoEffects(Я твоя послушная [pc.girl]!)]
-		#ELSE [pc.speechNoEffects(Fuck, yes!)] you [pc.moan] as you obediently grind your pussy against her cunt.
+		#ELSE [pc.speechNoEffects(Бля, да!)] — [pc.moan] ты, послушно втирая свою киску в её щель.
 		#ENDIF
 	</p>
 	<p>
@@ -828,13 +828,13 @@
 		На твоих глазах [pc.armSkin], покрывающая твои [pc.arms], начинает двигаться и меняться, и после очередного спазма влажной киски Lyssieth они внезапно превращаются в пару гладких демонических рук. Ты издаешь потрясенный вздох, но в этот момент Lyssieth, пользуясь своим положением, продолжает тереться своей киской о твою, прежде чем жалобно простонать:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Вот так! ~Ааах!~ Мамочкина киска вся твоя!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ That's right! ~Aah!~ Your pussy is the best!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Вот так! ~Аах!~ Твоя киска — лучшая!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] — выкрикиваешь ты, вцепляясь в бедра своей новой матери и втирая свой клитор в её.
-		#ELSE [pc.speechNoEffects(Yes!)] you cry out, gripping the elder lilin's hips and rubbing your clit against hers.
+		#ELSE [pc.speechNoEffects(Да!)] — вскрикиваешь ты, сжимая бёдра старшей лилин и потирая свой клитор о её.
 		#ENDIF
 	</p>
 	<p>
@@ -843,7 +843,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Моя хорошая [pc.girl],)]
-		#ELSE [lyssieth.speechNoEffects(Good little succubus,)]
+		#ELSE [lyssieth.speechNoEffects(Хорошая маленькая суккуб,)]
 		#ENDIF
 		Говорит Lyssieth, улыбаясь тебе сверху вниз, [lyssieth.speechNoEffects(Теперь твоя очередь кончать!)]
 	</p>
@@ -860,7 +860,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Тсс, моя хорошая [pc.girl],)] — говорит она, самодовольно глядя на тебя, — [lyssieth.speechNoEffects(Хочешь, чтобы мамочка опустилась на пол, и ты могла поразвлечься, втираясь в ее киску?)]
-		#ELSE [lyssieth.speechNoEffects(Hush now, little succubus,)] Lyssieth says, smiling down at you, [lyssieth.speechNoEffects(Would you like it if I got down on the floor, so that you can have some fun humping my pussy?)]
+		#ELSE [lyssieth.speechNoEffects(Тише, маленькая суккуб,)] — говорит Lyssieth, с улыбкой глядя на тебя сверху вниз, [lyssieth.speechNoEffects(Хочешь, я опущусь на пол, чтобы ты могла поразвлечься, толкаясь в мою киску?)]
 		#ENDIF
 	</p>
 	]]>
@@ -875,7 +875,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] ты [pc.moan], втираясь своей киской в её лоно, [pc.speechNoEffects(Я твоя послушная [pc.girl]!)]
-		#ELSE [pc.speechNoEffects(Fuck, yes!)] you [pc.moan] as you obediently grind your pussy against her cunt.
+		#ELSE [pc.speechNoEffects(Бля, да!)] — [pc.moan] ты, послушно втирая свою киску в её щель.
 		#ENDIF
 	</p>
 	<p>
@@ -885,13 +885,13 @@
 		На твоих глазах [pc.armSkin], покрывающая твою [pc.arms], начинает двигаться и меняться, и после очередного спазма влажной киски Lyssieth они внезапно превращаются в пару гладких демонических рук. Ты изумлённо ахаешь, но в этот момент Lyssieth продолжает тереться своей киской о твою, жалобно скуля:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Вот так! ~Ааах!~ Мамочкина киска вся твоя!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ That's right! ~Aah!~ Your pussy is the best!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Вот так! ~Аах!~ Твоя киска — лучшая!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] — выкрикиваешь ты, вцепляясь в бедра своей новой матери и втирая свой клитор в её.
-		#ELSE [pc.speechNoEffects(Yes!)] you cry out, gripping the elder lilin's hips and rubbing your clit against hers.
+		#ELSE [pc.speechNoEffects(Да!)] — вскрикиваешь ты, сжимая бёдра старшей лилин и потирая свой клитор о её.
 		#ENDIF
 	</p>
 	<p>
@@ -900,7 +900,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Моя хорошая [pc.girl],)]
-		#ELSE [lyssieth.speechNoEffects(Good little succubus,)]
+		#ELSE [lyssieth.speechNoEffects(Хорошая маленькая суккуб,)]
 		#ENDIF
 		 Lyssieth говорит, улыбаясь тебе снизу вверх, [lyssieth.speechNoEffects(Теперь твоя очередь кончать!)]
 	</p>
@@ -914,14 +914,14 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ладно, ты, непослушная [pc.girl],)] игриво говорит Lyssieth, отталкивая тебя и заставляя твою киску отстраниться от её собственной, [lyssieth.speechNoEffects(Мамочка позволила тебе поиграть в ножницы, но пора перестать строить из себя главную!)]
-		#ELSE [lyssieth.speechNoEffects(Ok, you naughty demon,)] Lyssieth playfully says, pushing you back and forcing your pussy away from hers, [lyssieth.speechNoEffects(I let you scissor me, but it's time to stop acting like you're the one in charge!)]
+		#ELSE [lyssieth.speechNoEffects(Ладно, ты, непослушный демон,)] — игриво говорит Lyssieth, отталкивая тебя назад и уводя твою киску от своей, — [lyssieth.speechNoEffects(Я позволяю тебе заниматься со мной ножницами, но пора перестать вести себя так, будто ты здесь главный!)]
 		#ENDIF
 	</p>
 	<p>
 		Используя свои огромные крылья, Lyssieth приподнимается на диване, и пока соки из её киски стекают, небрежно разбрызгиваясь по полу, она прищуривается и ухмыляется тебе.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Притворяться главным — это, конечно, здорово, но теперь мамочка хочет, чтобы принимающей стороной был ты. Тебе ведь этого хочется, правда?)]
-		#ELSE [lyssieth.speechNoEffects(It's all well and good acting as the dominant one, but I need you to be on the receiving end now. You'd like that, wouldn't you?)]
+		#ELSE [lyssieth.speechNoEffects(Приятно строить из себя доминанта, но сейчас мне нужно, чтобы принимающей стороной был ты. Тебе ведь это понравится, правда?)]
 		#ENDIF
 	</p>
 	<p>
@@ -937,7 +937,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка, очень хочется,)] — отвечаешь ты, жаждая трахнуть её.
-		#ELSE [pc.speechNoEffects(Yes, I'd like that,)] you reply, eager to fuck her.
+		#ELSE [pc.speechNoEffects(Да, мне бы это понравилось,)] — отвечаешь ты, жаждя трахнуть её.
 		#ENDIF
 	</p>
 	#IF !pc.hasPenis()
@@ -952,12 +952,12 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ммм, да, а теперь будь хорошей [pc.girl] и иди трахни свою мамочку,)] — дразнит Lyssieth, после чего разворачивается и встаёт перед тобой на четвереньки.
-		#ELSE [lyssieth.speechNoEffects(Mmm, yes, now come fuck me,)] Lyssieth teases, before turning around and dropping down onto all fours before you.
+		#ELSE [lyssieth.speechNoEffects(Ммм, да, а теперь иди и трахни меня,)] — дразнит Lyssieth, прежде чем повернуться и встать перед тобой на четвереньки.
 		#ENDIF
 		 Приподняв бёдра, она выставляет свои [lyssieth.pussy+], оборачиваясь и стоная:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ну же, мамочка ждёт!)]
-		#ELSE [lyssieth.speechNoEffects(Come on, take me now!)]
+		#ELSE [lyssieth.speechNoEffects(Давай же, возьми меня прямо сейчас!)]
 		#ENDIF
 	</p>
 	<p>
@@ -972,18 +972,18 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка, очень хочется,)] — отвечаешь ты, жаждая трахнуть её.
-		#ELSE [pc.speechNoEffects(Yes, I'd like that,)] you reply, eager to fuck her.
+		#ELSE [pc.speechNoEffects(Да, я бы этого хотел,)] — отвечаешь ты, жаждя трахнуть её.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Не знаю, получит ли мамочка много удовольствия от твоего крошечного девчачьего члена, но не волнуйся, она сама кончит, пока ты будешь в неё вжиматься,)] — произносит Lyssieth очень покровительственным тоном, после чего разворачивается и встает перед тобой на четвереньки.
-		#ELSE [lyssieth.speechNoEffects(I don't know if I'm going to have much fun with that little sissy cock of yours, but don't worry, I'll get myself off while you're humping me,)] Lyssieth says in a very patronising tone, before turning around and dropping down onto all fours before you.
+		#ELSE [lyssieth.speechNoEffects(Не знаю, будет ли мне весело с твоим крошечным неженским членом, но не волнуйся, я сама кончу, пока ты будешь в меня вжиматься,)] — говорит Lyssieth очень покровительственным тоном, прежде чем повернуться и встать перед тобой на четвереньки.
 		#ENDIF
 		 Приподняв бёдра, она выставляет свои [lyssieth.pussy+], оборачиваясь и стоная:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ну же, мамочка ждёт!)]
-		#ELSE [lyssieth.speechNoEffects(Come on, take me now!)]
+		#ELSE [lyssieth.speechNoEffects(Давай же, возьми меня прямо сейчас!)]
 		#ENDIF
 	</p>
 	<p>
@@ -998,18 +998,18 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Мамочка, а можно мне вместо этого твой ротик?)] — спрашиваешь ты, проявляя больший интерес к оральному сексу, чем к вагинальному.
-		#ELSE [pc.speechNoEffects(Could I use your mouth instead?)] you ask, more interested in oral than vaginal sex.
+		#ELSE [pc.speechNoEffects(А можно мне использовать твой ротик?)] — спрашиваешь ты, проявляя больший интерес к оральному сексу, чем к вагинальному.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Конечно можно! Мамочка с радостью уделит внимание своему хорошему [pc.girl],)] — счастливо отвечает Lyssieth,
-		#ELSE [lyssieth.speechNoEffects(Of course you can!)] Lyssieth happily replies,
+		#ELSE [lyssieth.speechNoEffects(Конечно можно!)] — радостно отвечает Lyssieth,
 		#ENDIF
 		прежде чем обвести тебя вокруг своего стола и усадить в своё большое кожаное кресло. Ты чувствуешь её горячее дыхание в паху, когда она опускается на колени и тихо стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ты просто откинься назад и позволь мамочке позаботиться о тебе...)]
-		#ELSE [lyssieth.speechNoEffects(You just sit back and let me take good care of you...)]
+		#ELSE [lyssieth.speechNoEffects(Просто сиди сзади и позволяй мне о тебе позаботиться...)]
 		#ENDIF
 	</p>
 	<p>
@@ -1024,18 +1024,18 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Мамочка, а можно мне вместо этого твой ротик?)] — спрашиваешь ты, проявляя больший интерес к оральному сексу, чем к вагинальному.
-		#ELSE [pc.speechNoEffects(Could I use your mouth instead?)] you ask, more interested in oral than vaginal sex.
+		#ELSE [pc.speechNoEffects(А можно мне использовать твой ротик?)] — спрашиваешь ты, проявляя больший интерес к оральному сексу, чем к вагинальному.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Конечно можно! Мамочка с радостью уделит внимание своему хорошему маленькому девчачьему члену,)] — счастливо отвечает Lyssieth,
-		#ELSE [lyssieth.speechNoEffects(Of course you can!)] Lyssieth happily replies,
+		#ELSE [lyssieth.speechNoEffects(Конечно можно!)] — радостно отвечает Lyssieth,
 		#ENDIF
 		прежде чем обвести тебя вокруг своего стола и усадить в своё большое кожаное кресло. Ты чувствуешь её горячее дыхание в паху, когда она опускается на колени и тихо стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочке всё равно было бы не так уж весело с твоим милым крошечным сисси-хвостом в её киске...)]
-		#ELSE [lyssieth.speechNoEffects(I wouldn't have had much fun with this cute little sissy cock in my pussy anyway...)]
+		#ELSE [lyssieth.speechNoEffects(Всё равно с этим милым крошечным сисси-хвостом в моей киске было бы не так уж весело...)]
 		#ENDIF
 	</p>
 	<p>
@@ -1050,24 +1050,24 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, просто продолжай трахать меня!)] — вскрикиваешь ты.
-		#ELSE [pc.speechNoEffects(Please, just keep fucking me!)] you cry out.
+		#ELSE [pc.speechNoEffects(Пожалуйста, просто продолжай трахать меня!)] — вскрикиваешь ты.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Уже влюбился в мамочкин член, сладенький?)] — мягко смеётся Lyssieth,
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ In love with my cock already, are you?)] Lyssieth softly laughs,
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~~)] Уже влюбился в мой член, да? — Lyssieth тихо смеется,
 		#ENDIF
 		прежде чем перехватить твои запястья и потянуть тебя вверх со стола. Прильнув к старшей лилин, ты чувствуешь её горячее дыхание на своём лице, пока она нежно стонет тебе в ответ,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочке надоедает одна и та же поза, так что как насчёт того, чтобы ты встал на четвереньки и тебя оттрахали как животное?)]
-		#ELSE [lyssieth.speechNoEffects(I get tired of the same position, so how about you get down on your hands and knees and get fucked like an animal?)]
+		#ELSE [lyssieth.speechNoEffects(Мне надоедает одна и та же поза, так что как насчет того, чтобы ты встал на четвереньки и тебя оттрахали как животное?)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] — послушно отвечаешь ты, прежде чем развернуться и опуститься на четвереньки.
-		#ELSE [pc.speechNoEffects(~Mmm!~ Yes!)] you obediently reply, before turning around and dropping down onto all fours.
+		#ELSE [pc.speechNoEffects(~Ммм!~ Да!)] — послушно отвечаешь ты, прежде чем повернуться и опуститься на четвереньки.
 		#ENDIF
 	</p>
 	<p>
@@ -1086,24 +1086,24 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, просто продолжай трахать мою задницу!)] — вскрикиваешь ты.
-		#ELSE [pc.speechNoEffects(Please, just keep fucking my ass!)] you cry out.
+		#ELSE [pc.speechNoEffects(Пожалуйста, просто продолжай трахать мою задницу!)] — вскрикиваешь ты.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ Уже влюбился в мамочкин член, сладенький?)] — мягко смеётся Lyssieth,
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ In love with my cock already, are you?)] Lyssieth softly laughs,
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~~)] Уже влюбился в мой член, да? — Lyssieth тихо смеется,
 		#ENDIF
 		прежде чем перехватить твои запястья и потянуть тебя вверх со стола. Прильнув к старшей лилин, ты чувствуешь её горячее дыхание на своём лице, пока она нежно стонет тебе в ответ,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочке надоедает одна и та же поза, так что как насчёт того, чтобы ты встал на четвереньки и тебя оттрахали как животное?)]
-		#ELSE [lyssieth.speechNoEffects(I get tired of the same position, so how about you get down on your hands and knees and get fucked like an animal?)]
+		#ELSE [lyssieth.speechNoEffects(Мне надоедает одна и та же поза, так что как насчет того, чтобы ты встал на четвереньки и тебя оттрахали как животное?)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка!)] — послушно отвечаешь ты, прежде чем развернуться и опуститься на четвереньки.
-		#ELSE [pc.speechNoEffects(~Mmm!~ Yes!)] you obediently reply, before turning around and dropping down onto all fours.
+		#ELSE [pc.speechNoEffects(~Ммм!~ Да!)] — послушно отвечаешь ты, прежде чем повернуться и опуститься на четвереньки.
 		#ENDIF
 	</p>
 	#IFpc.hasPenis()
@@ -1117,14 +1117,14 @@
 				Пока Lyssieth продолжает ласкать твой крошечный член, ты ахаешь, чувствуя, как он сжимается до еще более мизерных размеров. Посмотрев вниз, между ног, ты видишь, что его длина теперь составляет всего [unit.size(3)], но еще больше тебя удивляет то, что старшая лилин собирается застегнуть на нем ярко-розовую девственную клетку. Осознав, что это одна из вещей, которые она только что достала из своего стола, ты издаешь испуганный вскрик, когда она защелкивает замок на твоем крошечном члене, после чего она выпрямляется и тихонько смеется,
 				#IF pc.hasFetish(FETISH_INCEST)
 				#THEN [lyssieth.speechNoEffects(Вот и моя хорошая маленькая сисси! Теперь все будут знать, что тебе не нравится, когда пользуются твоим крошечным членом, и что ты предпочитаешь принимать настоящие члены в свою шлюшью задницу!)]
-				#ELSE [lyssieth.speechNoEffects(That's a good little sissy! This will tell everyone that you don't like your clitty-dick used, and prefer taking real cocks up your slutty butt instead!)]
+				#ELSE [lyssieth.speechNoEffects(Какой послушный маленький сисси! Это скажет всем, что тебе не нравится, когда пользуются твоим клитор-хвостиком, и что ты предпочитаешь принимать настоящие члены в свою шлюшью задницу!)]
 				#ENDIF
 			</p>
 			<p>
 				Ты поворачиваешь голову, кусая губу и скуля перед Lyssieth, и в этот момент замечаешь, что она держит второй предмет из тех, что достала со стола; это похоже на прямоугольную полоску светло-розового пластика с символом «вход воспрещен» — кругом и диагональной чертой посередине. Сдирая защитную пленку с клейкой основы, ты замечаешь, что внутри знака «вход воспрещен» красуются слова «только для анального использования», и, как раз в тот момент, когда ты осознаешь, что сейчас будет, Lyssieth плотно приклеивает эту полоску поверх твоей вагины.
 				#IF pc.hasFetish(FETISH_INCEST)
 				#THEN [lyssieth.speechNoEffects(Вот и готово! Теперь все будут знать, что ты мамина сисси-попа, которая принимает член только в задницу!)]
-				#ELSE [lyssieth.speechNoEffects(There we go! Now everyone knows that you're a sissy buttslut, who only takes cock up the ass!)]
+				#ELSE [lyssieth.speechNoEffects(Вот так! Теперь все знают, что ты — заднеприводная шлюшка, которая принимает член только в жопу!)]
 				#ENDIF
 			</p>
 		#ELSE
@@ -1135,7 +1135,7 @@
 				Пока Lyssieth продолжает ласкать твой маленький член, ты ахаешь от неожиданности, чувствуя, как он уменьшается до совсем крошечных размеров. Посмотрев вниз, между своих ног, ты видишь, что его длина теперь составляет всего [unit.size(3)], но еще больше тебя поражает то, что старшая лилин собирается застегнуть на нем ярко-розовую девственную клетку. Осознав, что это и был тот самый предмет из ящика, ты вскрикиваешь от испуга, когда она защелкивает замок на твоем крошечном члене, после чего выпрямляется и тихонько смеется.
 				#IF pc.hasFetish(FETISH_INCEST)
 				#THEN [lyssieth.speechNoEffects(Вот и моя хорошая маленькая сисси! Теперь все будут знать, что тебе не нравится, когда пользуются твоим крошечным членом, и что ты предпочитаешь принимать настоящие члены в свою шлюшью задницу!)]
-				#ELSE [lyssieth.speechNoEffects(That's a good little sissy! This will tell everyone that you don't like your clitty-dick used, and prefer taking real cocks up your slutty butt instead!)]
+				#ELSE [lyssieth.speechNoEffects(Какой послушный маленький сисси! Это скажет всем, что тебе не нравится, когда пользуются твоим клитор-хвостиком, и что ты предпочитаешь принимать настоящие члены в свою шлюшью задницу!)]
 				#ENDIF
 			</p>
 		#ENDIF
@@ -1146,7 +1146,7 @@
 				Обернувшись, ты издаешь удивленный стон, видя, как старшая лилин отходит от тебя и обходит свой стол. Открыв один из ящиков, она довольно улыбается, быстро находя то, что искала, и, сжимая в руке небольшой предмет, поспешно направляется к тебе, чтобы опуститься на колени позади. Прикусив губу и скуля перед Lyssieth, ты видишь, что она держит тот самый предмет; это похоже на прямоугольную полоску светло-розового пластика с символом «вход воспрещен» — кругом и диагональной чертой посередине. Когда она отклеивает защитную пленку, ты замечаешь надпись «только для анала» внутри знака, и, как раз в тот момент, когда ты осознаешь, что сейчас будет, Lyssieth плотно приклеивает эту полоску прямо поверх твоей вагины.
 				#IF pc.hasFetish(FETISH_INCEST)
 				#THEN [lyssieth.speechNoEffects(Вот и готово! Теперь все будут знать, что ты мамина задрочка, которая принимает член только в задницу!)]
-				#ELSE [lyssieth.speechNoEffects(There we go! Now everyone knows that you're a buttslut, who only takes cock up the ass!)]
+				#ELSE [lyssieth.speechNoEffects(Вот так! Теперь все знают, что ты — заднеприводная шлюшка, которая принимает член только в жопу!)]
 				#ENDIF
 			</p>
 		#ENDIF
@@ -1155,14 +1155,14 @@
 		Перехватив твои бедра, Lyssieth подается вперед, прижимая головку своего огромного члена к твоему набитому спермой анусу. С нежным стоном она дразнит тебя:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Хочешь, чтобы мамочка оттрахала твою задницу? Тогда умоляй!)]
-		#ELSE [lyssieth.speechNoEffects(You want me to pound your ass? Then beg for it!)]
+		#ELSE [lyssieth.speechNoEffects(Хочешь, чтобы я оттрахала твою задницу? Тогда умоляй об этом!)]
 		#ENDIF
 	</p>
 		<p>
 		Отчаянно желая, чтобы она поскорее начала трахать тебя, ты вскрикиваешь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка! Трахни мою задницу! Мне нужен твой член!)]
-		#ELSE [pc.speechNoEffects(Please! Fuck my ass! I need your cock!)]
+		#ELSE [pc.speechNoEffects(Пожалуйста! Трахни мою задницу! Мне нужен твой член!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1188,25 +1188,25 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Одобряешь, доченька?)] — спрашивает Lyssieth, снова делая шаг вперёд и кладя руки тебе на бёдра, [lyssieth.speechNoEffects(Теперь ты именно такая, какой тебя любит мамочка. Но раз уж ты хочешь стать полноценным демоном, тебя ждёт финальное превращение, когда твоя тесная новая киска наполнится мамочкиной спермой.)]
-		#ELSE [lyssieth.speechNoEffects(Do you approve, little succubus?)] Lyssieth asks, stepping forwards once again to place her hands on your hips, [lyssieth.speechNoEffects(You're just as I like now, but as you want to be a full demon, you'll get a final transformation as I fill your tight new cunt with my cum.)]
+		#ELSE [lyssieth.speechNoEffects(Ты одобряешь, маленькая суккуб?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра, [lyssieth.speechNoEffects(Теперь ты именно такая, как мне нравится, но раз уж ты хочешь стать полноценным демоном, ты получишь финальную трансформацию, когда я заполню твою тугую новую киску своей спермой.)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка,)] — отвечаешь ты, с любовью глядя в глаза своей новой матери.
-		#ELSE [pc.speechNoEffects(Mmm, yes,)] you reply, gazing lovingly up into Lyssieth's eyes.
+		#ELSE [pc.speechNoEffects(Ммм, да,)] — отвечаешь ты, с любовью глядя в глаза Lyssieth.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ О да, какая же ты тесненькая, мамочке нравится,)] — вздыхает Lyssieth, силой втискивая пальцы в твою узкую киску и заставляя тебя издать отчаянный стон. Прикусив губу, пока она смотрит на тебя сверху вниз, твоя новая мамочка сжимает пальцы внутри тебя и стонет: [lyssieth.speechNoEffects(А теперь умоляй меня размягчить тебя!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Oh yes, nice and tight,)] Lyssieth sighs, forcing her fingers into your tight cunt and causing you to let out a desperate cry. Biting her lip as she looks down at you, the elder lilin curls her fingers up inside of you and moans, [lyssieth.speechNoEffects(Now beg for me to break you in!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ О да, как же тесно,)] Lyssieth вздыхает, силой втискивая пальцы в твою узкую киску и заставляя тебя издать отчаянный крик. Прикусив губу и глядя на тебя сверху вниз, старшая лилин сжимает пальцы внутри тебя и стонет: [lyssieth.speechNoEffects(А теперь умоляй меня разбить тебя!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, трахни меня!)] — кричишь ты, широко раздвигая перед ней ноги.
-		#ELSE [pc.speechNoEffects(Yes, please, fuck me!)] you cry, spreading your legs wide open before her.
+		#ELSE [pc.speechNoEffects(Да, пожалуйста, трахай меня!)] — кричишь ты, широко раздвигая перед ней ноги.
 		#ENDIF
 	</p>
 	<p>
@@ -1226,18 +1226,18 @@
 		 тобой
 		#IF pc.hasVagina()
 		#THEN на самом деле не хочешь, чтобы она использовала твою киску.
-		#ELSE really don't like the idea of having a vagina, let along having it penetrated.
+		#ELSE совсем не нравится идея иметь вагину, не говоря уже о том, чтобы в неё входили.
 		#ENDIF
 		 Когда старшая лилин притягивает тебя к себе в объятия, ты смотришь ей в глаза и умоляешь:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, используй вместо этого мою задницу!)]
-		#ELSE [pc.speechNoEffects(Please, I want you to use my ass instead!)]
+		#ELSE [pc.speechNoEffects(Пожалуйста, я хочу, чтобы ты использовала мою задницу вместо этого!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(О, так ты у нас маленькая похотливая жопошлёпка, ммм? Что ж, мамочка с радостью даст тебе то, чего ты хочешь,)]
-		#ELSE [lyssieth.speechNoEffects(Oh, so you're a horny little buttslut, hmm? Well, I'm happy to give you what you want,)]
+		#ELSE [lyssieth.speechNoEffects(О, так ты у нас маленькая похотливая жопошница, ммм? Что ж, я с радостью дам тебе то, чего ты хочешь,)]
 		#ENDIF
 		 Lyssieth тихо стонет, и, издав облегченный вздох, ты позволяешь ей взять инициативу в свои руки, когда она вновь втягивает тебя в отчаянный, страстный поцелуй. Стоная ей в рот, ты чувствуешь, как твое тело начинает реагировать на прикосновения старшей лилин, и когда ее массивные крылья окутывают тебя, прижимая к своим [lyssieth.breastSize] грудям, пропорции твоего тела начинают меняться...
 	</p>
@@ -1253,25 +1253,25 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ты одобряешь, доченька?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра. [lyssieth.speechNoEffects(Сейчас ты именно такая, какой любит тебя мамочка, но раз уж ты хочешь стать полноценным демоном, тебя ждет финальная трансформация, когда твоя узкая задница наполнится мамочкиной спермой.)]
-		#ELSE [lyssieth.speechNoEffects(Do you approve, little succubus?)] Lyssieth asks, stepping forwards once again to place her hands on your hips, [lyssieth.speechNoEffects(You're just as I like now, but as you want to be a full demon, you'll get a final transformation as I fill your tight butt with my cum.)]
+		#ELSE [lyssieth.speechNoEffects(Ты одобряешь, маленькая суккуб?)] — спрашивает Lyssieth, снова делая шаг вперед и кладя руки тебе на бедра. [lyssieth.speechNoEffects(Теперь ты именно такая, как мне нравится, но раз уж ты хочешь стать полноценным демоном, ты получишь финальную трансформацию, когда я заполню твою узкую задницу своей спермой.)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Да, мамочка,)] — отвечаешь ты, с любовью глядя в глаза своей новой матери.
-		#ELSE [pc.speechNoEffects(Mmm, yes,)] you reply, gazing lovingly up into Lyssieth's eyes.
+		#ELSE [pc.speechNoEffects(Ммм, да,)] — отвечаешь ты, с любовью глядя в глаза Lyssieth.
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(~Ммм!~ О да, это будет приятно для мамочкиного члена,)] — стонет Lyssieth, с силой втискивая пальцы в твой демонический анус, заставляя тебя издать отчаянный крик. Прикусив губу и глядя на тебя сверху вниз, твоя новая мамочка сжимает пальцы внутри тебя и восклицает: [lyssieth.speechNoEffects(А теперь умоляй мамочку трахнуть твою задницу!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Oh yes, nice and tight,)] Lyssieth moans, forcing her fingers into your demonic asshole and causing you to let out a desperate cry. Biting her lip as she looks down at you, the elder lilin curls her fingers up inside of you and cries, [lyssieth.speechNoEffects(Now beg for me to fuck your ass!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ О да, как же тесно,)] — стонет Lyssieth, силой втискивая пальцы в твой демонический анус и заставляя тебя издать отчаянный крик. Прикусив губу и глядя на тебя сверху вниз, старшая лилин сжимает пальцы внутри тебя и восклицает: [lyssieth.speechNoEffects(А теперь умоляй меня трахнуть твою задницу!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [pc.speechNoEffects(Пожалуйста, мамочка, трахни мою попку!)] — с жадностью отвечаешь ты, широко раздвигая перед ней ноги.
-		#ELSE [pc.speechNoEffects(Yes, please, fuck my butt!)] you eagerly reply, spreading your legs wide open before her.
+		#ELSE [pc.speechNoEffects(Да, пожалуйста, трахни мою задницу!)] — с нетерпением отвечаешь ты, широко раздвигая перед ней ноги.
 		#ENDIF
 	</p>
 	<p>
@@ -1311,9 +1311,9 @@
 	</p>
 	<p>
 		#IF(pc.hasFetish(FETISH_INCEST))
-			[lyssieth.speechNoEffects(~Ох!~ Т-ты такой сильный...)] — стонет Lyssieth, [lyssieth.speechNoEffects(Мамочка просто хотела проверить тебя...#IF(!flags.hasFlag(FLAG_lyssiethNoCockDemonTF)) She has no need for a cock now...#ENDIF))]
+			[lyssieth.speechNoEffects(~Ох!~ Т-ты такой сильный...)] — стонет Lyssieth, [lyssieth.speechNoEffects(Мамочка просто хотела проверить тебя...#IF(!flags.hasFlag(FLAG_lyssiethNoCockDemonTF)) Сейчас ей не нужен член...#ENDIF))]
 		#ELSE
-			[lyssieth.speechNoEffects(~Ох!~ Т-ты такой сильный...)] — стонет Lyssieth, [lyssieth.speechNoEffects(Я просто хотела проверить тебя...#IF(!flags.hasFlag(FLAG_lyssiethNoCockDemonTF)) I've no need for a cock now...#ENDIF))]
+			[lyssieth.speechNoEffects(~Ох!~ Т-ты такой сильный...)] — стонет Lyssieth, [lyssieth.speechNoEffects(Я просто хотела проверить тебя...#IF(!flags.hasFlag(FLAG_lyssiethNoCockDemonTF)) Сейчас мне не нужен член...#ENDIF))]
 		#ENDIF
 	</p>
 	<p>
@@ -1419,7 +1419,7 @@
 		Обернувшись, Lyssieth с восторгом улыбается, видя твою новую демоническую форму, и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(А теперь будь хорошим [pc.girl] для мамочки и устрой мне сочный, густой кремпи!)]
-		#ELSE [lyssieth.speechNoEffects(Be a good little succubus now, and give me a nice big creampie!)]
+		#ELSE [lyssieth.speechNoEffects(Будь хорошей маленькой суккубкой и устрой мне отличный кремпай!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1433,14 +1433,14 @@
 		Пока твоя сперма вытекает из киски Lyssieth вдоль твоего толстого члена, старшая лилин оглядывается и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Хороший [pc.girl]... Ты так славно наполнил мамочку!)]
-		#ELSE [lyssieth.speechNoEffects(Mmm, that's good... You filled me up nicely!)]
+		#ELSE [lyssieth.speechNoEffects(Ммм, это хорошо... Ты отлично меня наполнила!)]
 		#ENDIF
 	</p>
 	<p>
 		После этого Lyssieth ослабляет хватку хвоста на твоей талии, позволяя тебе выскользнуть из её изъеденной сексом киски. Издав удовлетворенный вздох, старшая лилин произносит:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочка устала, ей нужно отдохнуть.)]
-		#ELSE [lyssieth.speechNoEffects(You've worn me out... I need to rest now.)]
+		#ELSE [lyssieth.speechNoEffects(Ты меня совсем измотал... Мне нужно отдохнуть.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1459,7 +1459,7 @@
 	Все еще глядя на тебя снизу вверх, Lyssieth довольно улыбается, видя твой новый демонический облик, и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(А теперь будь хорошим [pc.girl] для мамочки и устрой мне сочный, густой кремпи!)]
-		#ELSE [lyssieth.speechNoEffects(Be a good little succubus now, and give me a nice big creampie!)]
+		#ELSE [lyssieth.speechNoEffects(Будь хорошей маленькой суккубкой и устрой мне отличный кремпай!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1473,14 +1473,14 @@
 	Пока твоя сперма вытекает из киски Lyssieth вдоль твоего толстого члена, старшая лилин смотрит тебе в глаза и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Хороший [pc.girl]... Ты так славно наполнил мамочку!)]
-		#ELSE [lyssieth.speechNoEffects(Mmm, that's good... You filled me up nicely!)]
+		#ELSE [lyssieth.speechNoEffects(Ммм, это хорошо... Ты отлично меня наполнила!)]
 		#ENDIF
 	</p>
 	<p>
 	После этого Lyssieth разжимает ноги вокруг твоей талии, позволяя тебе выскользнуть из её изъеденной трахом киски. Издав удовлетворенный вздох, старшая лилин говорит:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочка устала, ей нужно отдохнуть.)]
-		#ELSE [lyssieth.speechNoEffects(You've worn me out... I need to rest now.)]
+		#ELSE [lyssieth.speechNoEffects(Ты меня совсем измотал... Мне нужно отдохнуть.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1499,7 +1499,7 @@
 	Глядя на тебя сверху вниз, Lyssieth довольно улыбается, видя твой новый демонический облик, и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(А теперь будь хорошим [pc.girl] для мамочки и сжимай её член своей узенькой киской!)]
-		#ELSE [lyssieth.speechNoEffects(Be a good little succubus now, and squeeze your tight little pussy around my cock!)]
+		#ELSE [lyssieth.speechNoEffects(А теперь будь хорошей маленькой суккубом и сжимай свою узенькую киску вокруг моего члена!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1513,14 +1513,14 @@
 		Пока сперма Lyssieth вытекает из твоей щели вокруг её толстого члена, старшая лилин смотрит тебе прямо в глаза и стонет:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Хорошая [pc.girl]... Твоя киска была такой узкой и приятной для мамочки!)]
-		#ELSE [lyssieth.speechNoEffects(Mmm, that's good... Your pussy was nice and tight!)]
+		#ELSE [lyssieth.speechNoEffects(Ммм, это хорошо... Твоя киска была такой классной и узкой!)]
 		#ENDIF
 	</p>
 	<p>
 		С этими словами Lyssieth отстраняется, вынимая свой твёрдый ствол из твоей изъеденной сексом киски. Издав удовлетворенный вздох, старшая лилин произносит:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочка устала, ей нужно отдохнуть.)]
-		#ELSE [lyssieth.speechNoEffects(You've worn me out... I need to rest now.)]
+		#ELSE [lyssieth.speechNoEffects(Ты меня совсем измотал... Мне нужно отдохнуть.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1539,7 +1539,7 @@
 	Глядя на тебя сверху вниз, Lyssieth довольно улыбается, видя твой новый демонический облик, и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(А теперь будь хорошей [pc.girl] для мамочки и сжимай свою узкую попку вокруг её члена!)]
-		#ELSE [lyssieth.speechNoEffects(Be a good little succubus now, and squeeze your tight little ass around my cock!)]
+		#ELSE [lyssieth.speechNoEffects(А теперь будь хорошей маленькой суккубом и сжимай свою узенькую попку вокруг моего члена!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1553,14 +1553,14 @@
 		Пока сперма Lyssieth вытекает из твоей ануса вокруг её толстого члена, старшая лилин смотрит тебе прямо в глаза и стонет,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Хороший [pc.girl]... Твоя попка была такой узкой и тугой для мамочки!)]
-		#ELSE [lyssieth.speechNoEffects(Mmm, that's good... Your ass was nice and tight!)]
+		#ELSE [lyssieth.speechNoEffects(Ммм, это хорошо... Твоя попка была такой классной и узкой!)]
 		#ENDIF
 	</p>
 	<p>
 		С этими словами Lyssieth отступает, вынимая свой твёрдый ствол из твоей изрядно оттраханной задницы. Издав удовлетворенный вздох, старшая лилин произносит:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочка устала, ей нужно отдохнуть.)]
-		#ELSE [lyssieth.speechNoEffects(You've worn me out... I need to rest now.)]
+		#ELSE [lyssieth.speechNoEffects(Ты меня совсем измотал... Мне нужно отдохнуть.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1614,14 +1614,14 @@
 		Густые струйки слюны вперемешку со спермой стекают из уголков рта Lyssieth, когда она отстраняет голову, позволяя твоему толстому, влажному члену полностью выйти из её горла. Встав во весь рост и глядя на тебя сверху вниз, старшая лилин облизывает губы и стонет:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Ох [pc.girl]... Мамочке нравится вкус твоей вкусненькой спермы!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Your cum tastes so good!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Твоя сперма такая вкусная!)]
 		#ENDIF
 	</p>
 	<p>
 		Пока ты улыбаешься ей снизу вверх, старшая лилин вытирает рот и вздыхает:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочка устала, ей нужно отдохнуть.)]
-		#ELSE [lyssieth.speechNoEffects(You've worn me out... I need to rest now.)]
+		#ELSE [lyssieth.speechNoEffects(Ты меня совсем измотал... Мне нужно отдохнуть.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1675,14 +1675,14 @@
 		С блестящей слюной и девичьей смазкой во рту, Lyssieth отстраняет голову, позволяя своему демоническому языку скользнуть из твоей киски. Встав во весь рост и глядя на тебя сверху вниз, старшая лилин облизывает губы и стонет:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Хорошая [pc.girl]... Мамочке нравится вкус твоей милой маленькой киски!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Your pussy tastes so good!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Твоя киска такая вкусная!)]
 		#ENDIF
 	</p>
 	<p>
 		Пока ты улыбаешься ей снизу вверх, старшая лилин вытирает рот и вздыхает:
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Мамочка устала, ей нужно отдохнуть.)]
-		#ELSE [lyssieth.speechNoEffects(You've worn me out... I need to rest now.)]
+		#ELSE [lyssieth.speechNoEffects(Ты меня совсем измотал... Мне нужно отдохнуть.)]
 		#ENDIF
 	</p>
 	<p>
@@ -1699,14 +1699,14 @@
 		Издав очередной похотливый крик,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN твоя мать вонзает свой [lyssieth.cock+] глубоко в киску Lilaya. Когда очередная мощная порция демонической, развращающей спермы наполняет лоно её дочери, старшая лилин тихо стонет: [lyssieth.speechNoEffects(~Ммм!~ Да, именно так, принимай всё! Чувствуй, как она развращает твоё тело!)]
-		#ELSE Lyssieth thrusts her [lyssieth.cock+] deep into Lilaya's pussy. As yet another huge pump of demonic, corruptive cum fills Lilaya's womb, the elder lilin softly moans, [lyssieth.speechNoEffects(~Mmm!~ Yes, that's right, take it all! Feel it corrupting your body!)]
+		#ELSE Lyssieth вонзает свою [lyssieth.cock+] глубоко в киску Lilaya. Когда очередная мощная порция демонической, развращающей спермы наполняет лоно Lilaya, старшая лилин тихо стонет: [lyssieth.speechNoEffects(~Ммм!~ Да, именно так, принимай всё! Чувствуй, как она развращает твоё тело!)]
 		#ENDIF
 	</p>
 	<p>
 		Тяжело дыша и стоная, Lilaya издает восторженный крик, глядя вниз на то, как кожа на ее руках и ногах окрашивается в тот же алый цвет, что и ее демонические части.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Когда сперма ее матери начинает вытекать из толстого члена, зарытого глубоко в киску твоей [lilaya.relation(pc)], она стонет: [lilaya.speechNoEffects(~Аах!~ Да! Сделай меня полноценным демоном! ~Ммм!~ Да, мамочка! Дай мне всю свою сперму!)]
-		#ELSE As Lyssieth's cum starts to leak out around the fat shaft buried deep in Lilaya's pussy, she moans, [lilaya.speechNoEffects(~Aah!~ Yes! Make me a full demon! ~Mmm!~ Give me all of your cum!)]
+		#ELSE Когда сперма Lyssieth начинает вытекать из-под толстого члена, глубоко запрятанного в киску Lilaya, та стонет: [lilaya.speechNoEffects(~Аах!~ Да! Сделай меня полноценным демоном! ~Ммм!~ Отдай мне всю свою сперму!)]
 		#ENDIF 
 	</p>
 	<p>
@@ -1720,14 +1720,14 @@
 		Издав очередной похотливый крик,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN твоя мать глубоко вгоняет свой [lyssieth.cock+] в задницу Lilaya. Когда очередная порция демонической, развращающей спермы наполняет задницу ее дочери, старшая лилин тихо стонет: [lyssieth.speechNoEffects(~Ммм!~ Да, именно так, принимай всё! Чувствуй, как она развращает твое тело!)]
-		#ELSE Lyssieth thrusts her [lyssieth.cock+] deep into Lilaya's ass. As yet another huge pump of demonic, corruptive cum fills Lilaya's butt, the elder lilin softly moans, [lyssieth.speechNoEffects(~Mmm!~ Yes, that's right, take it all! Feel it corrupting your body!)]
+		#ELSE Lyssieth вонзает свою [lyssieth.cock+] глубоко в зад Lilaya. Когда очередная мощная порция демонической, развращающей спермы наполняет зад Lilaya, старшая лилин тихо стонет: [lyssieth.speechNoEffects(~Ммм!~ Да, именно так, принимай всё! Чувствуй, как она развращает твоё тело!)]
 		#ENDIF
 	</p>
 	<p>
 		Тяжело дыша и стоная, Lilaya издает восторженный крик, глядя вниз на то, как кожа на ее руках и ногах окрашивается в тот же алый цвет, что и ее демонические части.
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN Когда сперма её матери начинает вытекать из-под толстого члена, глубоко зажатого в заднице твоей [lilaya.relation(pc)], она стонет: [lilaya.speechNoEffects(~Аах!~ Да! Сделай меня полноценным демоном! ~Ммм!~ Да, мамочка! Дай мне всю свою сперму!)]
-		#ELSE As Lyssieth's cum starts to leak out around the fat shaft buried deep in Lilaya's back door, she moans, [lilaya.speechNoEffects(~Aah!~ Yes! Make me a full demon! ~Mmm!~ Give me all of your cum!)]
+		#ELSE Когда сперма Lyssieth начинает вытекать из-под толстого члена, глубоко запрятанного в задний проход Lilaya, та стонет: [lilaya.speechNoEffects(~Аах!~ Да! Сделай меня полноценным демоном! ~Ммм!~ Отдай мне всю свою сперму!)]
 		#ENDIF 
 	</p>
 	<p>
@@ -1746,7 +1746,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [siren.speechNoEffects(~Аах!~ Да, мамочка! ~Ммм!~ Дай мне ещё!)] — вскрикивает её дочь, сжимая вокруг толстого члена матери свою раздутую от спермы киску.
-		#ELSE [siren.speechNoEffects(~Aah!~ Yes! ~Mmm!~ Give me more!)] Meraxis cries out, squeezing her cum-stuffed cunt down around Lyssieth's thick shaft.
+		#ELSE [siren.speechNoEffects(~Аах!~ Да! ~Ммм!~ Дай мне ещё!)] — вскрикивает Meraxis, сжимая свою набитую спермой киску вокруг толстого члена Lyssieth.
 		#ENDIF
 	</p>
 	<p>
@@ -1756,7 +1756,7 @@
 		Сделав последний мощный толчок, от которого её семя начинает вытекать вдоль толстого члена, Lyssieth издает восторженный стон,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Какая мамочка хорошая девочка! ~Ммм!~ Твоя киска так сладко обхватила мой член!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Your pussy's spread so nicely around my cock!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Твоя киска так славно обхватила мой член!)]
 		#ENDIF
 	</p>
 	<p>
@@ -1772,7 +1772,7 @@
 	<p>
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [siren.speechNoEffects(~Аах!~ Да, мамочка! ~Ммм!~ Еще!~)] — кричит ее дочь, сжимая забитую спермой дырочку вокруг толстого члена матери.
-		#ELSE [siren.speechNoEffects(~Aah!~ Yes! ~Mmm!~ Give me more!)] Meraxis cries out, squeezing her cum-stuffed asshole down around Lyssieth's thick shaft.
+		#ELSE [siren.speechNoEffects(~Аах!~ Да! ~Ммм!~ Дай мне ещё!)] — вскрикивает Meraxis, сжимая свой набитый спермой задний проход вокруг толстого члена Lyssieth.
 		#ENDIF
 	</p>
 	<p>
@@ -1782,7 +1782,7 @@
 		Сделав последний мощный толчок, от которого её семя начинает вытекать вдоль толстого члена, Lyssieth издает восторженный стон,
 		#IF pc.hasFetish(FETISH_INCEST)
 		#THEN [lyssieth.speechNoEffects(Какая мамина хорошая девочка! ~Ммм!~ Твоя дырочка так сладко обхватила мой член!)]
-		#ELSE [lyssieth.speechNoEffects(~Mmm!~ Your asshole's spread so nicely around my cock!)]
+		#ELSE [lyssieth.speechNoEffects(~Ммм!~ Твоя дырочка так аппетитно обхватила мой член!)]
 		#ENDIF
 	</p>
 	<p>

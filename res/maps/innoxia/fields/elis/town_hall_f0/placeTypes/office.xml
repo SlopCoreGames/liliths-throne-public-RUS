@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[office]]></name>
-	<tooltipDescription><![CDATA[This is just one of the many offices to be found throughout Elis's town hall.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in one of the offices in Elis's town hall]]></virginityLossDescription>
+	<name><![CDATA[кабинет]]></name>
+	<tooltipDescription><![CDATA[Это всего лишь один из множества кабинетов, которые можно найти в ратуше Элиса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в одном из кабинетов ратуши Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_ORANGE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

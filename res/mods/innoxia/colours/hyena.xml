@@ -7,7 +7,7 @@
 	<metallic>false</metallic>
 	
 	<!-- The name of this colour. -->
-	<name><![CDATA[faded brown]]></name>
+	<name><![CDATA[блекло-коричневый]]></name>
 	
 	<!-- This colour's hex code, which is used when the game is set in the default 'dark' theme. -->
 	<colour>6c5d53</colour>

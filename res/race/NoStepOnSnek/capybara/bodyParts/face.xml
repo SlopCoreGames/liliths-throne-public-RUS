@@ -11,12 +11,12 @@
 	<names/>
 	<namesPlural/>
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic, capybara-like</descriptor>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>антропоморфный, похожий на капибару</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic, capybara-like</descriptor>
-		<descriptor>capybara-like</descriptor>
+		<descriptor>антропоморфный, похожий на капибару</descriptor>
+		<descriptor>капибароподобный</descriptor>
 	</descriptorsFeminine>
 	<noseName><![CDATA[нос]]></noseName>
 	<noseNamePlural><![CDATA[носы]]></noseNamePlural>

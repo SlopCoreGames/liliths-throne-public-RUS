@@ -18,7 +18,7 @@
 	</descriptorsFeminine>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], козий [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], козий [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.
 	]]></bodyDescription>
 	
 	<defaultTongueModifiers>

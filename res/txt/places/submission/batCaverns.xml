@@ -171,10 +171,10 @@
 	
 	<htmlContent tag="SLIME_LAKE_FLY"><![CDATA[
 	<p>
-		Не видя смысла использовать лодку, ты легким бегом направляешься к берегу озера, и#IF(!pc.isAbleToFlyFromExtraParts()), with a flap of your wings,#ENDIF launch yourself into the air. Circling around a couple of times to gain altitude, you glide over the lake's calm, still surface, speedily making your way towards the island.
+		Не видя смысла использовать лодку, ты легким бегом направляешься к берегу озера, и#IF(!pc.isAbleToFlyFromExtraParts()), взмахнув крыльями,#ENDIF ты взмываешь в воздух. Сделав пару кругов, чтобы набрать высоту, ты скользишь над спокойной, неподвижной гладью озера, стремительно направляясь к острову.
 	</p>
 	<p>
-		Путь до цели занимает всего пару минут, и#IF(!pc.isAbleToFlyFromExtraParts()), with a final flap of your wings,#ENDIF you land on the island's shore, right beside a wooden jetty that's the mirror image of the one on the lake's far side. Smiling to yourself as you think about those poor people who aren't able to fly, you begin to walk up the island's gentle incline towards the stout stone tower.
+		Путь до цели занимает всего пару минут, и#IF(!pc.isAbleToFlyFromExtraParts()), сделав последний взмах крыльев,#ENDIF ты приземляешься на берег острова, прямо рядом с деревянным причалом, который является зеркальным отражением того, что на противоположном берегу озера. Улыбаясь про себя при мысли о тех беднягах, что не умеют летать, ты начинаешь подниматься по пологому склону острова к массивной каменной башне.
 	</p>
 	]]>
 	</htmlContent>
@@ -205,10 +205,10 @@
 	
 	<htmlContent tag="SLIME_LAKE_FLY_RETURN"><![CDATA[
 	<p>
-		Не видя смысла использовать маленькую деревянную лодку, ты припускаешь бегом к берегу озера, и#IF(!pc.isAbleToFlyFromExtraParts()), with a flap of your wings,#ENDIF launch yourself into the air. Circling around a couple of times to gain altitude, you glide over the lake's calm, still surface, speedily making your way towards the far shore.
+		Не видя смысла использовать маленькую деревянную лодку, ты припускаешь бегом к берегу озера, и#IF(!pc.isAbleToFlyFromExtraParts()), взмахнув крыльями,#ENDIF ты взмываешь в воздух. Сделав пару кругов, чтобы набрать высоту, ты скользишь над спокойной, неподвижной гладью озера, стремительно направляясь к дальнему берегу.
 	</p>
 	<p>
-		Путь до цели занимает всего пару минут, и поэтому#IF(!pc.isAbleToFlyFromExtraParts()), with a final flap of your wings,#ENDIF you quickly land on the edge of the underground mushroom forest. Smiling to yourself as you think about those poor people who aren't able to fly, you set off to continue on your journey.
+		Путь до цели занимает всего пару минут, и поэтому#IF(!pc.isAbleToFlyFromExtraParts()), сделав последний взмах крыльев,#ENDIF ты быстро приземляешься на краю подземного грибного леса. Улыбаясь про себя при мысли о тех беднягах, что не умеют летать, ты отправляешься в путь дальше.
 	</p>
 	]]>
 	</htmlContent>
@@ -360,7 +360,7 @@
 	</p>
 	<p align=center>
 		<i>
-			AELUM
+			ЭЛУМ
 		</i>
 	</p>
 	<p align=right>

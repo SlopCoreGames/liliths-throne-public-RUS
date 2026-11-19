@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[Под ствольной коробкой видна небольшая гравировка: «Изготовлено MFD by DSG Forgeworks».]]></authorTag>
+		<authorTag><![CDATA[Под ствольной коробкой видна небольшая гравировка: «Изготовлено MFD компанией DSG Forgeworks».]]></authorTag>
 		<value>2500</value>
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>YOUKO_FOREST</worldRegion>
-	<name><![CDATA[seating]]></name>
-	<tooltipDescription><![CDATA[An old fabric sofa, two leather chairs, and a kotatsu with four matching zaisu have been assembled in this area.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Meraxis's hideout]]></virginityLossDescription>
+	<name><![CDATA[места для сидения]]></name>
+	<tooltipDescription><![CDATA[В этой зоне расположились старый тканевый диван, два кожаных кресла и котацу с четырьмя подходящими к нему стульями дзаси.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в убежище Мераксиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_INDIGO</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

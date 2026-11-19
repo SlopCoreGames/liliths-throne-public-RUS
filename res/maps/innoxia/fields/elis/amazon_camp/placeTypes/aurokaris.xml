@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Aurokaris's tent]]></name>
-	<tooltipDescription><![CDATA[Aurokaris has her tent in this area of the Amazons' camp.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Aurokaris's tent in the Amazons' camp]]></virginityLossDescription>
+	<name><![CDATA[Палатка Аврокарис]]></name>
+	<tooltipDescription><![CDATA[В этой части лагеря амазонок стоит палатка Аврокарис.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в палатке Аврокарис в лагере амазонок]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>tents</svgName>
 	<colour>RACE_COW_MORPH</colour>

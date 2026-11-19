@@ -26,19 +26,19 @@
 	<namePlural><![CDATA[хвостовые перья]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsFeminine>
 	
 	<tipName><![CDATA[конец]]></tipName>
 	<tipNamePlural><![CDATA[заканчивается]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>feathered</descriptor>
+		<descriptor>оперенные</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>feathered</descriptor>
+		<descriptor>оперенные</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -54,9 +54,9 @@
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF plume of [npc.tailColour(true)] tail-feathers, which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF пучок [npc.tailColour(true)] хвостовых перьев, которыми [npc.she] может быстро двигать вверх и вниз, чтобы помочь [npc.herHim] сохранять [npc.her] равновесие и управлять [npc.her] траекторией в полете.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF plumes of [npc.tailColour(true)] tail-feathers, which [npc.she] can rapidly move up and down to help [npc.herHim] keep [npc.her] balance and to control [npc.her] path when in flight.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF пучки [npc.tailColour(true)] хвостовых перьев, которыми [npc.she] может быстро двигать вверх и вниз, чтобы помочь [npc.herHim] сохранять [npc.her] равновесие и управлять [npc.her] траекторией в полете.
 		#ENDIF
 	]]></bodyDescription>
 </tail>

@@ -1229,7 +1229,7 @@
 		Приняв решение действовать именно так, ты отдаешь двести огней, которых требует этот [attacker.race]. Хотя на лице [attacker.her] всё еще застыл угрожающий оскал, [attacker.race] умиротворен этой выплатой; когда [attacker.she] снова усаживается, [attacker.she] рычит: [attacker.speech(Ну давай, проваливай с глаз моих!)]
 	</p>
 	<p>
-		Not wanting to stick around and give [attacker.herHim] a chance to change [attacker.her] mind, you move forwards and continue on your way...
+		Не желая задерживаться и давать [attacker.herHim] шанс передумать [attacker.her], ты движешься вперёд и продолжаешь свой путь...
 	</p>
 	]]>
 	</htmlContent>

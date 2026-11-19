@@ -17,7 +17,7 @@
 	<name><![CDATA[Дар Трикстера]]></name>
 	
 	<description><![CDATA[
-		Нося сет Трикстера, [npc.nameIs] наполняется чувством озорного восторга. Когда в [npc.her] разум лезут самые разные хитрые замыслы и коварные планы, [npc.name] [npc.verb(feel)] так, словно [npc.sheHas] стал богом-трикстером#IF(npc.isFeminine())dess#ENDIF!
+		Нося сет Трикстера, [npc.nameIs] наполняется чувством озорного восторга. Когда в [npc.her] разум лезут самые разные хитрые замыслы и коварные планы, [npc.name] [npc.verb(feel)] так, словно [npc.sheHas] стал богом-трикстером#IF(npc.isFeminine())десс#ENDIF!
 	]]></description>
 	
 	<imageName>trickster_set.svg</imageName>

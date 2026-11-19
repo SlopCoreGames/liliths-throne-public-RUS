@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[entrance]]></name>
-	<tooltipDescription><![CDATA[These doors connect the gym to the shopping arcade.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the gym, 'Pix's Playground']]></virginityLossDescription>
+	<name><![CDATA[вход]]></name>
+	<tooltipDescription><![CDATA[Эти двери ведут из спортзала в торговую галерею.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спортзале «Игровая площадка Пикса»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_RED</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

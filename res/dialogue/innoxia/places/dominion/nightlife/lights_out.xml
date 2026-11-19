@@ -173,7 +173,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
 				<responseTitle><![CDATA[Водка (#IF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100) Order a shot of vodka. #ELSE You can't afford a shot of vodka... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100) Заказать стопку водки. #ELSE Тебе не хватает денег на стопку водки... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=100)innoxia_places_dominion_nightlife_lights_out_bar_sit#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -187,7 +187,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
 				<responseTitle><![CDATA[Ром (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a shot of rum. #ELSE You can't afford a shot of rum... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Заказать стопку рома. #ELSE Тебе не хватает денег на стопку рома... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_dominion_nightlife_lights_out_bar_sit#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -201,7 +201,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
 				<responseTitle><![CDATA[Виски (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a shot of whiskey. #ELSE You can't afford a shot of whiskey... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Заказать стопку виски. #ELSE Тебе не хватает денег на стопку виски... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_dominion_nightlife_lights_out_bar_sit#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -215,7 +215,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
 				<responseTitle><![CDATA[Аррак (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Order a shot of arrack. #ELSE You can't afford a shot of whiskey... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Заказать стопку аррака. #ELSE Тебе не хватает денег на стопку виски... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=180)innoxia_places_dominion_nightlife_lights_out_bar_sit#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -229,7 +229,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
 				<responseTitle><![CDATA[Грог (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Order a shot of grog. #ELSE You can't afford a shot of grog... #ENDIF]]></responseTooltip>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Заказать стопку грога. #ELSE Тебе не хватает денег на стопку грога... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=180)innoxia_places_dominion_nightlife_lights_out_bar_sit#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -581,8 +581,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Водка (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Free#ELSEIF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Order a shot of vodka. #ELSE You can't afford a shot of vodka... #ENDIF]]></responseTooltip>
+				<responseTitle><![CDATA[Водка (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Свобода#ELSEIF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Заказать стопку водки. #ELSE Тебе не хватает денег на стопку водки... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_lights_out_hannah_alcohol_warning))
 						innoxia_places_dominion_nightlife_lights_out_bar_hannah_wasted
@@ -611,8 +611,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Ром (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Free#ELSEIF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Order a shot of rum. #ELSE You can't afford a shot of rum... #ENDIF]]></responseTooltip>
+				<responseTitle><![CDATA[Ром (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Свобода#ELSEIF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Заказать стопку рома. #ELSE Тебе не хватает денег на стопку рома... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_lights_out_hannah_alcohol_warning))
 						innoxia_places_dominion_nightlife_lights_out_bar_hannah_wasted
@@ -641,8 +641,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Виски (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Free#ELSEIF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Order a shot of whiskey. #ELSE You can't afford a shot of whiskey... #ENDIF]]></responseTooltip>
+				<responseTitle><![CDATA[Виски (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Свобода#ELSEIF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Заказать стопку виски. #ELSE Тебе не хватает денег на стопку виски... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_lights_out_hannah_alcohol_warning))
 						innoxia_places_dominion_nightlife_lights_out_bar_hannah_wasted
@@ -671,8 +671,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Аррак (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Free#ELSEIF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Order a shot of arrack. #ELSE You can't afford a shot of arrack... #ENDIF]]></responseTooltip>
+				<responseTitle><![CDATA[Аррак (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Свобода#ELSEIF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Заказать стопку аррака. #ELSE Тебе даже на стопку аррака не хватает... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_lights_out_hannah_alcohol_warning))
 						innoxia_places_dominion_nightlife_lights_out_bar_hannah_wasted
@@ -701,8 +701,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Грог (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Free#ELSEIF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
-				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Order a shot of grog. #ELSE You can't afford a shot of grog... #ENDIF]]></responseTooltip>
+				<responseTitle><![CDATA[Грог (#IF(flags.hasFlag(FLAG_innoxia_lights_out_free_drink))Свобода#ELSEIF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
+				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180 || flags.hasFlag(FLAG_innoxia_lights_out_free_drink)) Заказать стопку грога. #ELSE Тебе не хватает денег на стопку грога... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_lights_out_hannah_alcohol_warning))
 						innoxia_places_dominion_nightlife_lights_out_bar_hannah_wasted

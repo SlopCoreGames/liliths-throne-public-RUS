@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Freshly Squeezed]]></name>
-	<tooltipDescription><![CDATA[A family of rabbit-morphs run this non-alcoholic drinks stall.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the Farmer's Market in Elis]]></virginityLossDescription>
+	<name><![CDATA[Свежевыжатый]]></name>
+	<tooltipDescription><![CDATA[Этим прилавком с безалкогольными напитками управляет семейство кроликов-морфов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на фермерском рынке в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>drinks</svgName>
 	<colour>BASE_YELLOW_PALE</colour>

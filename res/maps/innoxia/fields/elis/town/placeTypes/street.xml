@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[street]]></name>
-	<tooltipDescription><![CDATA[The streets of Elis are paved in cobblestones, and with the majority of the flanking buildings being of a timber-framed design, the entire town has a late-medieval look about it.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the streets of Elis]]></virginityLossDescription>
+	<name><![CDATA[улица]]></name>
+	<tooltipDescription><![CDATA[Улицы Элиса вымощены булыжником, а поскольку большинство прилегающих зданий построены из фахверка, весь город выглядит так, словно он застыл в эпохе позднего средневековья.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[на улицах Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -32,8 +32,8 @@
 	
 	<transformationDescription><![CDATA[
 		Невольно застонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, меняющий свою форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда он уходит внутрь новой складки, образовавшейся у основания.
-		<br/>[npc.She] теперь [npc.has] [style.boldRaptor(raptor penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldRaptor([npc.ballsCount]#IF(npc.isInternalTesticles()) internal,#ENDIF avian balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldRaptor(raptor cum)].
+		<br/>[npc.She] теперь [npc.has] [style.boldRaptor(пенис раптора)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		<br/>[npc.She] [npc.has] [style.boldRaptor([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний,#ENDIF птичьи яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldRaptor(сперму раптора)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

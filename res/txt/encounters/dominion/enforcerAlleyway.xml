@@ -71,7 +71,7 @@
 					 Напустив на себя самый убедительный вид [candi.Name], ты подтверждаешь, что так оно и есть.
 				</p>
 				<p>
-					 [npc2.speech(Taking a break from vacuuming, I'm sure,)] the [npc2.name] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.race]'s elbow.
+					 [npc2.speech(Наверняка решил сделать перерыв от пылесоса,)] [npc2.name] бормочет под [npc2.her] дыхание, тут же получая [npc2.herHim] тычок локтем от [npc.race].
 				</p>
 				<p>
 					Быстро сменив тему, [npc.race] просит тебя об одолжении: [npc.speech(Простите [npc.herHim], мы всё ещё не выполнили норму на этой неделе... Если вы укажете нам на какие-нибудь возможности поблизости, это нам очень поможет.)] Снова собрав всё своё актерское мастерство, ты отвечаешь офицерам, что подумаешь об этом.
@@ -113,7 +113,7 @@
 					 Напустив на себя самый убедительный вид [wes.Name], ты подтверждаешь, что это так.
 				</p>
 				<p>
-					 [npc2.speech(Didn't know [pc.she] was even capable of taking breaks,)] the [npc2.name] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.name]'s elbow. 
+					 [npc2.speech(И не знала, что [pc.she] вообще способен на перерывы,)] [npc2.name] бормочет под [npc2.her] дыхание, тут же получая [npc2.herHim] тычок локтем от [npc.name]. 
 				</p>
 				<p>
 					Быстро сменив тему, [npc.name] просит тебя об одолжении: [npc.speech(Прошу прощения за [npc.herHim], на этой неделе мы не дотягиваем до квоты... если ты укажешь нам на какие-нибудь подходящие цели поблизости, это нам очень поможет.)] Снова собрав всё своё актерское мастерство, ты отвечаешь обоим офицерам, что сделаешь это.
@@ -129,7 +129,7 @@
 					 Принявшись изображать лучшую [elle.Name], ты подтверждаешь, что согласна.
 				</p>
 				<p>
-					 [npc2.speech(Armory must get real stuffy from all the fucking,)] the [npc2.name] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.name]'s elbow. 
+					 [npc2.speech(В оружейной, должно быть, становится совсем душно от всего этого гребаного...)] [npc2.name] бормочет под [npc2.her] дыхание, тут же получая [npc2.herHim] тычок локтем от [npc.name]. 
 				</p>
 				<p>
 					Быстро сменив тему, [npc.name] просит тебя об одолжении: [npc.speech(Прошу прощения за [npc.herHim], на этой неделе мы не дотягиваем до квоты... если ты укажешь нам на какие-нибудь подходящие цели поблизости, это нам очень поможет.)] Снова собрав всё своё актерское мастерство, ты отвечаешь обоим офицерам, что сделаешь это, и запоминаешь имена на их нагрудных знаках.
@@ -139,7 +139,7 @@
 					Заметив старшего офицера, оба стражника заметно вытягиваются и честью отдают тебе салют. [npc.name] приветствует тебя словами: [npc.speech(Комиссар, [pc.sir], здесь всё в порядке.)] Принявшись изображать лучшую версию Нисы, ты приказываешь им расслабиться.
 				</p>
 				<p>
-					[npc2.speech(Just our luck,)] the [npc2.name] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.name]'s elbow. 
+					[npc2.speech(Ну вот, везет же нам,)] [npc2.name] бормочет под [npc2.her] дыхание, тут же получая [npc2.herHim] тычок локтем от [npc.name]. 
 				</p>
 				<p>
 					Быстро сменив тему, [npc.name] просит тебя об одолжении: [npc.speech(Мы будем неподалеку, если понадоблюсь, [pc.sir], просто дайте знать.)]
@@ -155,7 +155,7 @@
 					 Стараясь произвести на них лучшее впечатление [sean.Name], ты подтверждаешь, что так оно и есть.
 				</p>
 				<p>
-					 [npc2.speech(Probably trying to get into [candi.NamePos] pants again, I'm sure,)] the [npc2.name] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.race]'s elbow.
+					 [npc2.speech(Наверняка опять пытается залезть к [candi.NamePos] в штаны,)] — бормочет [npc2.name] под [npc2.her] нос, тут же получая [npc2.herHim] тычок локтем от [npc.race].
 				</p>
 				<p>
 					Быстро сменив тему, [npc.race] просит тебя об одолжении: [npc.speech(Простите [npc.herHim], мы всё ещё не выполнили норму на этой неделе... Если вы укажете нам на какие-нибудь возможности поблизости, это нам очень поможет.)] Снова собрав всё своё актерское мастерство, ты отвечаешь офицерам, что подумаешь об этом.
@@ -375,7 +375,7 @@
 				 Стараясь изо всех сил изобразить [wes.Name], ты подтверждаешь, что так оно и есть.
 			</p>
 			<p>
-				 [npc2.speech(Didn't know [pc.she] was even capable of taking breaks,)] the [npc2.race] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.race]'s elbow. 
+				 [npc2.speech(И не знала, что [pc.she] вообще способен делать перерывы,)] — бормочет [npc2.race] под [npc2.her] нос, тут же получая [npc2.herHim] тычок локтем от [npc.race]. 
 			</p>
 			<p>
 				Быстро сменив тему, [npc.race] просит тебя об одолжении: [npc.speech(Прошу прощения за [npc.herHim], мы на этой неделе не добираем норму... если сможешь подсказать нам какие-нибудь подходящие возможности поблизости, это нам очень поможет.)] Снова задействуя все свои актерские способности, ты обещаешь офицерам сделать это и запоминаешь имена на их жилетах.
@@ -391,7 +391,7 @@
 				 Стараясь изо всех сил изобразить [elle.Name], ты подтверждаешь, что так оно и есть.
 			</p>
 			<p>
-				 [npc2.speech(Armory must get real stuffy from all the fucking,)] the [npc2.race] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.race]'s elbow. 
+				 [npc2.speech(В оружейной, должно быть, становится совсем душно от всего этого ебаного траха,)] — бормочет [npc2.race] под [npc2.her] нос, тут же получая [npc2.herHim] тычок локтем от [npc.race]. 
 			</p>
 			<p>
 				Быстро сменив тему, [npc.race] просит тебя об одолжении: [npc.speech(Прошу прощения за [npc.herHim], мы на этой неделе не добираем норму... если сможешь подсказать нам какие-нибудь подходящие возможности поблизости, это нам очень поможет.)] Снова задействуя все свои актерские способности, ты обещаешь офицерам сделать это и запоминаешь имена на их жилетах.
@@ -416,7 +416,7 @@
 				 Стараясь подражать [sean.Name], ты подтверждаешь, что так и есть.
 			</p>
 			<p>
-				 [npc2.speech(Probably trying to get into [candi.NamePos] pants again, I'm sure,)] the [npc2.race] mutters under [npc2.her] breath, promptly earning [npc2.herHim] a prod from the [npc.race]'s elbow.
+				 [npc2.speech(Наверняка опять пытается залезть к [candi.NamePos] в штаны,)] — бормочет [npc2.race] под [npc2.her] нос, тут же получая [npc2.herHim] тычок локтем от [npc.race].
 			</p>
 			<p>
 				 Быстро сменив тему, [npc.race] просит тебя об одолжении: [npc.speech(Извини [npc.herHim], мы на этой неделе не дотягиваем до квоты... Если сможешь подсказать нам какие-нибудь возможности поблизости, это бы нам очень помогло.)] Снова собрав всю свою актерскую игру, ты отвечаешь офицерам, что подумаешь об этом, и запоминаешь имена на их жилетах.
@@ -901,7 +901,7 @@
 	#ENDVAR
 	
 	<p>
-	Решив беспрекословно подчиниться, ты раздеваешься догола перед [npc.name] и прижимаешься [pc.hands] к стене, после чего
+		Решив беспрекословно подчиниться, ты раздеваешься догола перед [npc.name] и прижимаешься [pc.hands] к стене, после чего
 		#IF(pc.hasLegs())
 			раздвигаешь свои [pc.legs] и
 		#ENDIF
@@ -931,7 +931,7 @@
 	#ENDVAR
 	
 	<p>
-		Решив беспрекословно подчиниться, ты раздеваешься догола перед [npc.name], но вместо того, чтобы прижаться своим [pc.hands] к стене, ты оборачиваешься и соблазнительно спрашиваешь, не хочет ли [npc2.name] тоже поучаствовать в обыске. Очевидно, жаждая вклиниться в процесс, [npc2.race] [npc2.steps] подается вперед, бросая: [npc2.speech(Тогда вставай на четвереньки! Я займусь твоим ртом, пока [npc.name] будет трахать твою киску!)]
+	Решив беспрекословно подчиниться, ты раздеваешься догола перед [npc.name], но вместо того, чтобы прижаться своим [pc.hands] к стене, ты оборачиваешься и соблазнительно спрашиваешь, не хочет ли [npc2.name] тоже поучаствовать в обыске. Очевидно, жаждая вклиниться в процесс, [npc2.race] [npc2.steps] подается вперед, бросая: [npc2.speech(Тогда вставай на четвереньки! Я займусь твоим ртом, пока [npc.name] будет трахать твою киску!)]
 	</p>
 	<p>
 		Снова послушно выполняя приказ, ты опускаешься на четвереньки, выставляя свой [pc.ass+] навстречу [npc.name]. Оглядываясь через плечо, ты невольно издаешь предвкушающий [pc.moan], видя, как [npc.race] опускается позади тебя и достает [npc.her]
@@ -988,7 +988,7 @@
 		#ENDIF
 	</p>
 	<p>
-		You open your mouth to reply, but just as you do so, the impatient [npc.race] suddenly grabs your [pc.hips+] and [npc.steps] forwards, pushing [npc.her] [npc.cock+] fully into your [pc.ass+] in the process. The sudden penetration causes you to let out [pc.a_moan+], which is followed by several more as [npc.name] starts thrusting [npc.her] [npc.cock+] in and out of your [pc.asshole+]...
+		Ты открываешь рот, чтобы ответить, но как раз в этот момент нетерпеливая [npc.race] внезапно хватает тебя за [pc.hips+] и [npc.steps] вперед, в процессе с силой вгоняя [npc.her] [npc.cock+] в твою [pc.ass+]. От внезапного проникновения ты издаешь [pc.a_moan+], а затем еще несколько стонов, когда [npc.name] начинает яростно [npc.her] [npc.cock+] в твою [pc.asshole+]...
 	</p>
 	]]>
 	</htmlContent>
@@ -999,7 +999,7 @@
 	#ENDVAR
 	
 	<p>
-		Решив беспрекословно подчиниться, ты раздеваешься догола перед [npc.name], но вместо того, чтобы прижаться [pc.hands] к стене, ты разворачиваешься и соблазнительно спрашиваешь, не хочет ли [npc2.name] тоже поучаствовать в обыске. Очевидно жаждущий действия, [npc2.race] подается [npc2.steps] вперед, бросая: [npc2.speech(Тогда вставай на четвереньки! Я займусь твоим ртом, пока [npc.name] будет трахать твою задницу!)]
+	Решив беспрекословно подчиниться, ты раздеваешься догола перед [npc.name], но вместо того, чтобы прижаться [pc.hands] к стене, ты разворачиваешься и соблазнительно спрашиваешь, не хочет ли [npc2.name] тоже поучаствовать в обыске. Очевидно жаждущий действия, [npc2.race] подается [npc2.steps] вперед, бросая: [npc2.speech(Тогда вставай на четвереньки! Я займусь твоим ртом, пока [npc.name] будет трахать твою задницу!)]
 	</p>
 	<p>
 		Снова послушно выполняя приказ, ты опускаешься на четвереньки, выставляя свой [pc.ass+] навстречу [npc.name]. Оглядываясь через плечо, ты невольно издаешь предвкушающий [pc.moan], видя, как [npc.race] опускается позади тебя и достает [npc.her]
@@ -1271,7 +1271,7 @@
 			[npc2.speech(Погоди, что?!)] — восклицает [npc2.name], [npc2.speech(Демоны не могут так трансформироваться!)]
 		</p>
 		<p>
-			Сообщая Enforcer, что твои способности проистекают от того, что ты — прямой [pc.daughter] #IF(pc.getLilinMother()!=null)[#pc.getLilinMother().getName()]#ELSEa lilin#ENDIF herself, you again ask them if they're planning on treating you any differently now that you've revealed your demonic form. Just as expected, the two officers seem suitably impressed and intimidated, and they quickly start apologising for wasting your time. Smugly smirking at them in triumphant glee, you quickly self-transform back into your previous form, before wondering what to do next...
+			Сообщая Enforcer, что твои способности проистекают от того, что ты — прямой [pc.daughter] #IF(pc.getLilinMother()!=null)[#pc.getLilinMother().getName()]#ELSEлилин#ENDIF сама, ты снова спрашиваешь их, не собираются ли они относиться к тебе иначе теперь, когда ты явила свой демонический облик. Как и ожидалось, оба офицера выглядят вполне впечатленными и даже слегка запуганными, и они поспешно начинают извиняться за то, что тратят твое время. Самодовольно ухмыляясь им в триумфальном восторге, ты быстро принимаешь свой прежний облик, после чего задумываешься, что делать дальше...
 		</p>
 	#ENDIF
 	]]>
@@ -1495,7 +1495,7 @@
 		</p>
 	#ELSE
 		<p>
-			Looking past the two Enforcers, you see the familiar figure of [npc3.name]. From the shocked expression on [npc3.her] face, [npc3.she] looks as though [npc3.sheIs] trying to decide whether to run or not, but as [npc3.she] catches sight of you, [npc3.she] calls out, [npc3.speech([pc.Name]! Help me!)]
+			Заглянув за спины двух Enforcer, ты видишь знакомую фигуру [npc3.name]. Судя по шокированному выражению лица [npc3.her], [npc3.she] выглядит так, будто [npc3.sheIs] пытается решить, бежать ей или нет, но как только [npc3.she] замечает тебя, [npc3.she] выкрикивает: [npc3.speech([pc.Name]! Помоги мне!)]
 		</p>
 		<p>
 		
@@ -1534,7 +1534,7 @@
 		</p>
 	#ELSE
 		<p>
-			Looking past the two Enforcers, you see the familiar figure of [npc3.name]. From the shocked expression on [npc3.her] face, [npc3.she] looks as though [npc3.sheIs] trying to decide whether to run or not, but as [npc3.she] catches sight of you, [npc3.she] calls out, [npc3.speech(These Enforcers are here because of you?! You'll pay for this!)]
+			За спинами двух Enforcer ты видишь знакомый силуэт [npc3.name]. Судя по шокированному выражению лица [npc3.her], [npc3.she] словно [npc3.sheIs] пытается решить, бежать ей или нет, но как только [npc3.she] замечает тебя, [npc3.she] выкрикивает: [npc3.speech(Эти Enforcer здесь из-за тебя?! Ты за это заплатишь!)]
 		</p>
 		<p>
 			С яростной гримасой на лице [npc3.her], [npc3.name] отчаянно пытается сопротивляться двум Enforcer, но усилия [npc3.her] быстро оказываются напрасными: разряд арканного тазера [npc2.namePos] оглушает преступника, позволяя [npc.name] повалить [npc3.herHim] на пол.
@@ -1773,9 +1773,9 @@
 		
 Возбуждающее действие твоей арканной ауры, кажется, оказывает глубокое влияние на этих поверженных Enforcer: обменявшись коварными ухмылками, они поднимаются на ноги и стремительно наступают на тебя, начиная ощупывать и ласкать твое тело. Издавая похотливый [pc.moan], ты отдаешься на милость этих двух Enforcer, пока те пытаются использовать тебя, чтобы утолить свою похоть...
 		#ELSEIF(npc.isAttractedTo(pc))
-			The arousing effect of your arcane aura seems to be having a profound effect on [npc.name], as after rising to [npc.her] [npc.feet] and leaving [npc.her] partner behind, [npc.she] advances upon you and starts to grope and caress your body. Letting out a horny [pc.moan], you surrender yourself to the [npc.race] as [npc.she] seeks to use you to satisfy [npc.her] lust...
+			Возбуждающее действие твоей арканной ауры, кажется, оказывает глубокое влияние на [npc.name]: поднявшись до [npc.her], [npc.feet] оставляет [npc.her] партнера позади, после чего [npc.she] наступает на тебя и начинает ощупывать и ласкать твое тело. Издавая похотливый [pc.moan], ты отдаешься [npc.race], пока [npc.she] стремится использовать тебя, чтобы утолить свою [npc.her] похоть...
 		#ELSE
-			The arousing effect of your arcane aura seems to be having a profound effect on [npc2.name], as after rising to [npc2.her] [npc2.feet] and leaving [npc2.her] partner behind, [npc2.she] advances upon you and starts to grope and caress your body. Letting out a horny [pc.moan], you surrender yourself to the [npc2.race] as [npc2.she] seeks to use you to satisfy [npc2.her] lust...
+			Возбуждающее действие твоей арканной ауры, кажется, оказывает глубокое влияние на [npc2.name]: поднявшись до [npc2.her], [npc2.feet] оставляет [npc2.her] партнера позади, после чего [npc2.she] наступает на тебя и начинает ощупывать и ласкать твое тело. Издавая похотливый [pc.moan], ты отдаешься [npc2.race], пока [npc2.she] стремится использовать тебя, чтобы утолить свою [npc2.her] похоть...
 		#ENDIF
 	</p>
 	]]>
@@ -2222,7 +2222,7 @@
 	#ENDVAR
 	
 	<p>
-		Перекрывая тебе пути к отступлению, [npc2.name] заявляет: [npc.speech(Нам всё еще нужно разобраться с тем, как ты напал на пару Enforcer!)]
+		Перекрывая тебе пути к отступлению, [npc2.name] заявляет: [npc.speech(Нам всё ещё нужно разобраться с тем, как ты напал на пару Enforcer!)]
 	</p>
 	#IF(npc.getFoughtPlayerCount()>1)
 		<p>
@@ -2320,7 +2320,7 @@
 	#ENDVAR
 	
 	<p>
-		Покорно подчиняясь Enforcers, ты позволяешь им застегнуть наручники на твоих запястьях, после чего они ведут тебя за собой...
+		Покорно подчиняясь Enforcer, ты позволяешь им застегнуть наручники на твоих запястьях, после чего они ведут тебя за собой...
 		#IF(canal)
 			прочь от канала
 		#ELSE

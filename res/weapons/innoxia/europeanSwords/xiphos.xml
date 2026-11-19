@@ -7,7 +7,7 @@
 		<determiner><![CDATA[]]></determiner>
 		<name><![CDATA[ксифос]]></name>
 		<namePlural pluralByDefault="false"><![CDATA[ксифа]]></namePlural>
-		<description><![CDATA[Одноручный короткий меч с обоюдоострым, прямым, #IF(game.isMetricSizes())60cm#ELSE24 inch#ENDIF blade. The ancient Greeks used it as a secondary battlefield weapon after the dory or javelin.]]></description> 
+		<description><![CDATA[Одноручный короткий меч с обоюдоострым, прямым, #IF(game.isMetricSizes())60 см#ELSE24 дюйма#ENDIF лезвие. Древние греки использовали его как вспомогательное оружие на поле боя после дори или дротика.]]></description> 
 		<attackDescriptor>slash</attackDescriptor>
 		<attackTooltipDescription><![CDATA[Наносишь удар [npc2.name] своим ксифосом.]]></attackTooltipDescription>
 		<rarity>COMMON</rarity>

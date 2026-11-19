@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
     <worldRegion>DOMINION</worldRegion>
-    <name><![CDATA[BDSM bedroom]]></name>
-    <tooltipDescription><![CDATA[A fully equipped BDSM bedroom in the dungeon under Lilaya's mansion.]]></tooltipDescription>
-    <virginityLossDescription><![CDATA[in Lilaya's dungeon]]></virginityLossDescription>
+    <name><![CDATA[BDSM-спальня]]></name>
+    <tooltipDescription><![CDATA[Полностью оборудованная BDSM-спальня в подземелье под особняком Lilaya.]]></tooltipDescription>
+    <virginityLossDescription><![CDATA[в подземелье Lilaya]]></virginityLossDescription>
     <sexBlockedReason/>
     <sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
     <colour>BASE_BROWN_DARK</colour>

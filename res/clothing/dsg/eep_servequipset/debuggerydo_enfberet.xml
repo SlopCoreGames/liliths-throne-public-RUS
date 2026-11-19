@@ -35,7 +35,7 @@
 			<category id="flash" priority="1"> 
 				<categoryName><![CDATA[Кокарда берета]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -46,7 +46,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="flash_patrol_dominion" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE"> 
-					<stickerName><![CDATA[Dominion Patrol]]></stickerName>
+					<stickerName><![CDATA[Патруль Dominion]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Патрульный Enforcer Dominion ]]></namePrefix> 
 					<namePostfix/> 
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[
@@ -63,12 +63,12 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText> 
 					<availabilityText>
-						As a Patrol Enforcer, you can freely use this beret flash.
+						Как Патрульный Enforcer, ты можешь свободно использовать этот знак на берете.
 					</availabilityText> 
 				</sticker>
 				<sticker id="flash_sword" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_GREY"> 
 					<stickerName><![CDATA[SWORD]]></stickerName>
-					<namePrefix priority="1"><![CDATA[SWORD Enforcer ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[МЕЧ Enforcer ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[
 					<i> Этот берет украшен кокардой SWORD — элитного вооруженного спецподразделения Enforcer.</i><br/>
@@ -84,7 +84,7 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As a SWORD Enforcer, you can freely use this beret flash.
+						Как SWORD Enforcer, ты можешь свободно использовать этот знак на берете.
 					</availabilityText>
 				</sticker>
 				<sticker id="flash_oricl" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_PURPLE_DARK">
@@ -105,11 +105,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an ORICL Enforcer, you can freely use this beret flash.
+						Как ORICL Enforcer, ты можешь свободно использовать этот знак на берете.
 					</availabilityText>
 				</sticker>
 				<sticker id="flash_academy" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_WHITE">
-					<stickerName><![CDATA[Enforcer Academy]]></stickerName>
+					<stickerName><![CDATA[Академия Enforcer]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Инструктор Академии Enforcer]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[
@@ -126,7 +126,7 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an instructor at the Enforcer Academy, you can freely use this beret_flash.
+						Как инструктор в Академии Enforcer, ты можешь свободно использовать этот знак на берете.
 					</availabilityText>
 				</sticker>
 			</category>

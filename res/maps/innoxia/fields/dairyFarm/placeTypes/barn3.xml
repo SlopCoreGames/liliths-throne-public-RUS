@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELDS</worldRegion>
-	<name><![CDATA[Cow Barn]]></name>
-	<tooltipDescription><![CDATA[The 'cow' barn is lined on both sides by several dozen stalls, beside each one of which there's a steadily-humming milking machine.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the cow barn at Evelyx's Dairy]]></virginityLossDescription>
+	<name><![CDATA[Коровник]]></name>
+	<tooltipDescription><![CDATA[Коровник уставлен десятками стойл по обе стороны, у каждого из которых мерно гудит доильный аппарат.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коровнике на молочной ферме Эвеликс]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>milking</svgName>
 	<colour>BASE_GOLD</colour>

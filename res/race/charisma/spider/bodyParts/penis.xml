@@ -26,7 +26,7 @@
 	<transformationDescription><![CDATA[
 		Невольно издав стон, [npc.name] [npc.verb(feel)], как [npc.her] пенис принимает новую форму, и [npc.sheIs] захлестывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая оболочка, уходящая в [npc.her] тело. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] в поисках воздуха, кончик [npc.her] члена сужается, принимая свои новые очертания.
 		<br/>[npc.She] теперь [npc.has] [style.boldSpider(паучий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
-		<br/>[npc.She] [npc.has] [style.boldSpider([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldSpider(spider cum)].
+		<br/>[npc.She] [npc.has] [style.boldSpider([npc.ballsCount]#IF(npc.isInternalTesticles()) внутренний#ENDIF яички)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], которые производят [npc.cumColour(true)] [style.boldSpider(паучью сперму)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
 		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] паучий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].

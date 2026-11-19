@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[corridor]]></name>
-	<tooltipDescription><![CDATA[Creaky old floorboards and cobweb-covered ceilings make it obvious that this place has been abandoned for many years.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the upstairs corridor in the abandoned bakery in Elis]]></virginityLossDescription>
+	<name><![CDATA[коридор]]></name>
+	<tooltipDescription><![CDATA[Скрипучие старые половицы и покрытые паутиной потолки ясно дают понять, что это место заброшено уже много лет.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в коридоре наверху в заброшенной пекарне в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

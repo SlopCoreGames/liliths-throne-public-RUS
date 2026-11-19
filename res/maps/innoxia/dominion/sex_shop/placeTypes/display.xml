@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Display]]></name>
-	<tooltipDescription><![CDATA[A trio of sex dolls have been stuffed full of toys and ordered to perform a lewd display in this corner of the store.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[Витрина]]></name>
+	<tooltipDescription><![CDATA[Трио секс-кукол набили игрушками и приказали устроить похотливое представление в этом уголке магазина.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GOLD</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

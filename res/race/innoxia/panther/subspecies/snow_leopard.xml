@@ -37,7 +37,7 @@
 	<iconName displaySize="100">icon_leopard</iconName>
 	<backgroundName>background_snow_leopard</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Big Cats</bookName>
+	<bookName>Большие кошки</bookName>
 	<basicDescriptionId>PANTHER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PANTHER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

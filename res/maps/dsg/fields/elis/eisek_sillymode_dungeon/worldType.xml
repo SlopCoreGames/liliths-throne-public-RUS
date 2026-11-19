@@ -3,11 +3,11 @@
 	
 	<worldRegion>FIELD_CITY</worldRegion>
 	
-	<name><![CDATA[Basement]]></name>
+	<name><![CDATA[Подвал]]></name>
 	
 	<colour>BASE_GREY</colour>
 	
-	<sexBlockedReason><![CDATA[Getting off in a dungeon full of weirdos isn't a good idea.]]></sexBlockedReason> 
+	<sexBlockedReason><![CDATA[Выходить в подземелье, полное всяких чудиков — не самая лучшая идея.]]></sexBlockedReason> 
 	
 	<furniturePresent>false</furniturePresent>
 	

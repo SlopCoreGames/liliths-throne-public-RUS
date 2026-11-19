@@ -23,7 +23,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Porky Porcines</bookName>
+	<bookName>Поросята-свинолюды</bookName>
 	<basicDescriptionId>PIG_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PIG_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

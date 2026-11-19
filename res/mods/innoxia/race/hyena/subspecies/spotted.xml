@@ -128,7 +128,7 @@
 	<bookIconName>icon</bookIconName>
 	
 	<!-- The name for the book. -->
-	<bookName>Laughing Hyenas</bookName>
+	<bookName>Смеющиеся гиены</bookName>
 	
 	<!-- The element names which contain the book's basic and advanced descriptions.
 	These should be entered into the 'bookEntries.xml' file in the same folder location as this file. -->
@@ -143,20 +143,20 @@
 	Formatting for bipeds (which should probably be left to be covered by the 'namesDefault' element) should usually follow the pattern of X-morph, X-boy, X-girl. -->
 	<nameAnthro>
 		<namesDefault> <!-- You must include this 'namesDefault' element, which will be used for any undefined legConfiguration names (for example, if the player somehow became a TAIL_LONG hyena). -->
-			<name><![CDATA[spotted hyena-morph]]></name>
-			<namePlural><![CDATA[spotted hyena-morphs]]></namePlural>
-			<singularMaleName><![CDATA[spotted hyena-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[spotted hyena-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[spotted hyena-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[spotted hyena-girls]]></pluralFemaleName>
+			<name><![CDATA[морф пятнистой гиены]]></name>
+			<namePlural><![CDATA[морфы пятнистой гиены]]></namePlural>
+			<singularMaleName><![CDATA[парень-пятнистая гиена]]></singularMaleName>
+			<singularFemaleName><![CDATA[девушка-пятнистая гиена]]></singularFemaleName>
+			<pluralMaleName><![CDATA[парни-пятнистые гиены]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девушки-пятнистые гиены]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="QUADRUPEDAL"> <!-- This is the usual naming pattern for quadrupeds, even if the names do get a little unwieldy at times... -->
-			<name><![CDATA[spotted hyenataur]]></name>
-			<namePlural><![CDATA[spotted hyenataurs]]></namePlural>
-			<singularMaleName><![CDATA[spotted hyenataur]]></singularMaleName>
-			<singularFemaleName><![CDATA[spotted hyenatauress]]></singularFemaleName>
-			<pluralMaleName><![CDATA[spotted hyenataurs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[spotted hyenatauresses]]></pluralFemaleName>
+			<name><![CDATA[пятниставтавр]]></name>
+			<namePlural><![CDATA[пятниставтавры]]></namePlural>
+			<singularMaleName><![CDATA[пятниставтавр]]></singularMaleName>
+			<singularFemaleName><![CDATA[пятниставтарша]]></singularFemaleName>
+			<pluralMaleName><![CDATA[пятниставтавры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[пятнистые гиенотавры]]></pluralFemaleName>
 		</names>
 	</nameAnthro>
 	
@@ -164,26 +164,26 @@
 	See the 'res/race/NoStepOnSnek/snake/subspecies/snake.xml' file for an example in use. -->
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic spotted hyena, known as a 'spotted hyena-morph' when bipedal, and a 'spotted hyenataur' when the lower body is that of a typically-oversized feral spotted hyena. To be identified as a spotted hyena-morph, a character must be a hyena-morph that has spotted fur.]]></description>
+	<description><![CDATA[Антропоморфная пятнистая гиена, известная как «пятнистая гиеноморф», когда она передвигается на двух ногах, и «пятнистая гиенотавра», когда её нижняя часть тела представляет собой типично огромную дикую пятнистую гиену. Чтобы считаться пятнистой гиеноморфом, персонаж должен быть гиеноморфом с пятнистым мехом.]]></description>
 	
 	<!-- Names for this subspecies when the character is a half-demon.
 	You can omit these altogether, in which case the game will automatically generate a generic half-demon name for your subspecies, based on the names you've defined in the 'nameAnthro' element up above. -->
 	<nameHalfDemon>
 		<namesDefault> <!-- If you include the parent element 'nameHalfDemon', you must define this 'namesDefault' element. -->
-			<name><![CDATA[kishi]]></name>
-			<namePlural><![CDATA[kishis]]></namePlural>
-			<singularMaleName><![CDATA[kishi]]></singularMaleName>
-			<singularFemaleName><![CDATA[kishi]]></singularFemaleName>
-			<pluralMaleName><![CDATA[kishis]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[kishi]]></pluralFemaleName>
+			<name><![CDATA[киши]]></name>
+			<namePlural><![CDATA[киши]]></namePlural>
+			<singularMaleName><![CDATA[киши]]></singularMaleName>
+			<singularFemaleName><![CDATA[киши]]></singularFemaleName>
+			<pluralMaleName><![CDATA[киши]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[киши]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="QUADRUPEDAL">
-			<name><![CDATA[kishitaur]]></name>
-			<namePlural><![CDATA[kishitaurs]]></namePlural>
-			<singularMaleName><![CDATA[kishitaur]]></singularMaleName>
-			<singularFemaleName><![CDATA[kishitauress]]></singularFemaleName>
-			<pluralMaleName><![CDATA[kishitaurs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[kishitauresses]]></pluralFemaleName>
+			<name><![CDATA[кишитавра]]></name>
+			<namePlural><![CDATA[кишитавры]]></namePlural>
+			<singularMaleName><![CDATA[кишитавра]]></singularMaleName>
+			<singularFemaleName><![CDATA[кишитауресса]]></singularFemaleName>
+			<pluralMaleName><![CDATA[кишитавры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[кишитаурессы]]></pluralFemaleName>
 		</names>
 	</nameHalfDemon>
 	
@@ -191,12 +191,12 @@
 	<feralAttributes>
 		<!-- As ferals can only be of one leg configuration, there is no need to define names based on a 'legConfiguration' attribute as done with half-demons and anthro names.
 		As such, just define your names like so: -->
-		<name><![CDATA[spotted hyena]]></name>
-		<namePlural><![CDATA[spotted hyenas]]></namePlural>
-		<singularMaleName><![CDATA[spotted hyena]]></singularMaleName>
-		<singularFemaleName><![CDATA[spotted hyena]]></singularFemaleName>
-		<pluralMaleName><![CDATA[spotted hyenas]]></pluralMaleName>
-		<pluralFemaleName><![CDATA[spotted hyenas]]></pluralFemaleName>
+		<name><![CDATA[пятнистая гиена]]></name>
+		<namePlural><![CDATA[пятнистые гиены]]></namePlural>
+		<singularMaleName><![CDATA[пятнистая гиена]]></singularMaleName>
+		<singularFemaleName><![CDATA[пятнистая гиена]]></singularFemaleName>
+		<pluralMaleName><![CDATA[пятнистые гиены]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[пятнистые гиены]]></pluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -234,7 +234,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] hyena-like body is very strong, and [npc.she] [npc.has] a primal urge to make the most of opportunities which present themselves to [npc.herHim].
+		[npc.NamePos] гиеноподобное тело очень сильное, а [npc.she] [npc.has] первобытное стремление использовать любую возможность, что подворачивается [npc.herHim].
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

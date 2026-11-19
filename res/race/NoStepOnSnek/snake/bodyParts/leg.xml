@@ -15,28 +15,28 @@
 	<name><![CDATA[нога]]></name>
 	<namePlural><![CDATA[ноги]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>scaly</descriptor>
-		<descriptor>anthropomorphic, reptilian</descriptor>
-		<descriptor>scale-covered</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>антропоморфный, рептилоидный</descriptor>
+		<descriptor>покрытый чешуей</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>scaly</descriptor>
-		<descriptor>anthropomorphic, reptilian</descriptor>
-		<descriptor>scale-covered</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>чешуйчатая</descriptor>
+		<descriptor>антропоморфный, рептилоидный</descriptor>
+		<descriptor>покрытый чешуей</descriptor>
 	</descriptorsFeminine>
 	<footDescriptorsMasculine>
-		<descriptor>reptilian</descriptor>
+		<descriptor>рептилоидные</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>reptilian</descriptor>
+		<descriptor>рептилоидные</descriptor>
 	</footDescriptorsFeminine>
 	<toeDescriptorsMasculine>
-		<descriptor>reptilian</descriptor>
+		<descriptor>рептилоидные</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>reptilian</descriptor>
+		<descriptor>рептилоидные</descriptor>
 	</toeDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Слой рептилийской чешуи быстро покрывает [npc.her] ноги, когда те принимают новую форму. По мере того как [npc.her] новая чешуя спускается к самым кончикам [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а подошвы [npc.her] покрываются мелкой чешуей, оставляя [npc.herHim] с рептильими ступнями. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новая чешуя плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.

@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a pair of]]></determiner>
 		
-		<name><![CDATA[gothic heel]]></name>
+		<name><![CDATA[готическая туфля]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[gothic heels]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[готические туфли]]></namePlural> 
 		
-		<description><![CDATA[A pair of decorative heels, complete with lacy trim and intricate patterning.]]></description> 
+		<description><![CDATA[Пара декоративных туфель, украшенных кружевной отделкой и замысловатым узором.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

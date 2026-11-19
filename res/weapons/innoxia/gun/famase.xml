@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[FAUXMAS]]></namePlural>
 		<description><![CDATA[Бесшумная штурмовая винтовка типа «булл-ап», использующая систему с задержкой отдачи и оснащенная магазином на 25 патронов. Она лучше всего работает с французскими стальными патронами калибра 5.56×45 мм и обладает очень высокой скорострельностью — 1100 выстрелов в минуту. Также известна как <i>Le Clairon</i>.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription>Use your FAUXMAS to fire a single bullet at your target.</attackTooltipDescription>
+		<attackTooltipDescription>Используй свой FAUXMAS, чтобы выпустить одну пулю в цель.</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		<weaponSet/> 

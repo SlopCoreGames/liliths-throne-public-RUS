@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[The Centaur's Sword]]></name>
-	<tooltipDescription><![CDATA[Located adjacent to the farmer's market, the tavern 'The Centaur's Sword' prides itself on having taur-friendly seating and plenty of space at the bar.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[outside 'The Centaur's Sword' tavern]]></virginityLossDescription>
+	<name><![CDATA[Меч Кентавра]]></name>
+	<tooltipDescription><![CDATA[Расположенная рядом с фермерским рынком, таверна «Меч кентавра» гордится наличием удобных посадочных мест для тавров и просторной барной стойкой.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[снаружи таверны «Меч кентавра»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BROWN</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

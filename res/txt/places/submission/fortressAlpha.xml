@@ -138,7 +138,7 @@
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX"><![CDATA[
 	<p>
-		Послушно выполняя приказ, ты спешишь туда, где сидит [npc.name], и падешь на колени перед [npc.herHim]. Усмехаясь, [npc.race] возвышается над тобой, и [npc.her] повышает свой голос так, чтобы [npc.she] было слышно сквозь хор издевательского смеха [npc.her] бесов-стражников, и командует: [npc.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, beg.)]
+		Послушно выполняя приказ, ты спешишь туда, где сидит [npc.name], и падешь на колени перед [npc.herHim]. Усмехаясь, [npc.race] возвышается над тобой, и [npc.her] повышает свой голос так, чтобы [npc.she] было слышно сквозь хор издевательского смеха [npc.her] бесов-стражников, и командует: [npc.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF ты есть. Интересно, ты и другие трюки умеешь по команде? Давай, шлюха, умоляй.)]
 	</p>
 	<p>
 		Желая угодить [npc.name], ты снова повинуешься приказу и, задирая свой [pc.hands] в умоляющем жесте, смотришь на [npc.herHim] и скулишь: [pc.speech(Пожалуйста, дай мне отсосать твой член!)]
@@ -154,7 +154,7 @@
 	
 	<htmlContent tag="KEEP_PACIFIED_REPEAT_SEX_IMPS"><![CDATA[
 	<p>
-		Послушно выполняя приказ, ты спешишь к бесам [npc.name] и [npc.her], которые сидят там, и встаешь перед ними на четвереньки. Усмехаясь, [npc.race] возвышается над тобой, и [npc.her] повышает свой голос так, чтобы [npc.she] было слышно сквозь хор издевательского смеха [npc.her] бесов-стражников, и командует: [npc.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF you are. I wonder, do you do other tricks on command as well? Go on, slut, present yourself for my girls.)]
+		Послушно выполняя приказ, ты спешишь к бесам [npc.name] и [npc.her], которые сидят там, и встаешь перед ними на четвереньки. Усмехаясь, [npc.race] возвышается над тобой, и [npc.her] повышает свой голос так, чтобы [npc.she] было слышно сквозь хор издевательского смеха [npc.her] бесов-стражников, и командует: [npc.speech(Какая верная, #IFpc.isFeminine()#THENbitch#ELSEdog#ENDIF ты есть. Интересно, ты и другие трюки умеешь по команде? Давай, шлюха, представь себя моим девчонкам.)]
 	</p>
 	<p>
 		Желая угодить [npc.name], ты снова повинуешься приказу и, перебирая ногами, чтобы подставить свой [pc.ass+] бесам, опускаешь плечи и поднимаешь [pc.hips+], прежде чем заскулить: [pc.speech(Пожалуйста, трахни меня!)]
@@ -244,7 +244,7 @@
 	Вскоре [npc.name] уже тяжело дышит и обливается потом от напряжения, ведь уклоняться от каждого из [npc.her] ударов становится всё проще и проще. Понимая, что пора заканчивать, ты стремительно бросаешься вперёд,
 		#IF npc.isVisiblyPregnant()
 		#THEN и, осознавая, что [npc.sheIs] беременна, ты выворачиваешь [npc.her] [npc.arm] за [npc.her] спину, после чего осторожно, но решительно прижимая [npc.herHim] к земле.
-		#ELSE landing a solid punch to [npc.her] stomach, before tripping [npc.herHim] and hurling [npc.herHim] to the ground.
+		#ELSE нанося мощный удар в живот [npc.her], после чего подсекая [npc.herHim] и швыряя [npc.herHim] на землю.
 		#ENDIF
 	</p>
 	<p>
@@ -378,7 +378,7 @@
 	
 	<htmlContent tag="KEEP_AUDIENCE_ORAL"><![CDATA[
 	<p>
-		A wicked grin crosses [npc.namePos] face as [npc.she] hears what it is you're after. With a playful tone in [npc.her] voice, [npc.she] offers [npc.her] terms, [npc.speech(Well, my cock hasn't been sucked in a good long while, so if you get down and show your submission by fixing that, then I'll give you my help in getting to meet with our boss.)]
+		Злобная ухмылка расплывается на лице [npc.namePos], когда [npc.she] слышит, чего именно ты хочешь. Игривым тоном в [npc.her] голосе, [npc.she] предлагает [npc.her] условия: [npc.speech(Ну, мой член уже целую вечность никто не сосал, так что если ты опустишься на колени и докажешь свою покорность, ублажив его, то я помогу тебе встретиться с нашей боссом.)]
 	</p>
 	<p>
 		Потирая выпуклость в [npc.her] джинсах, [npc.she] продолжает: [npc.speech(Конечно, ты можешь отказаться, но тогда нам просто придется отлупить тебя за то, что вломился сюда без приглашения. Так что в любом случае скоро я буду трахать твое лицо, так что тебе лучше извлечь из этого хоть какую-то выгоду, верно?)]
@@ -666,7 +666,7 @@
 	
 	<htmlContent tag="KEEP_AFTER_COMBAT_DEFEAT_SEX_EAGER"><![CDATA[
 	<p>
-		Happily doing as you're told, you crawl forwards, before reaching up and quickly unbuttoning [npc.namePos] jeans. Tugging them down, you reveal a black thong which is barely managing to contain the massive bulge of [npc.her] erection. Your eyes open wide as you see that just above [npc.namePos] groin, [npc.sheHas] got a black tribal tattoo, complete with the words 'Choke on it, bitch!' inked in flowing italicised script. Eagerly continuing with your task, you pull down [npc.her] thong, allowing [npc.her] [npc.penisGirth], [npc.penisValue] cock, which has been pierced and fitted with a silver ring, to spring free before you.
+		С радостью подчиняясь приказу, ты ползешь вперед, после чего тянешься вверх и быстро расстегиваешь джинсы [npc.namePos]. Сдергивая их вниз, ты обнаруживаешь черные стринги, которые едва сдерживают массивный бугор [npc.her] эрекции. Твои глаза широко распахиваются, когда ты видишь, что прямо над пахом [npc.namePos] у [npc.sheHas] красуется черная татуировка в племенном стиле, дополненная надписью «Подавись им, сучка!», выведенной изящным курсивом. С энтузиазмом продолжая свое дело, ты стягиваешь [npc.her] стринги, позволяя [npc.her] [npc.penisGirth], [npc.penisValue] члену, проколотому и украшенному серебряным кольцом, вырваться на свободу прямо перед тобой.
 	</p>
 	<p>
 		[npc.speech(Это не просто для красоты, сучка,)] [npc.name] рычит, указывая на татуировку [npc.her]. [npc.speech(Я хочу, чтобы ты <i>подавилась</i> им!)]
@@ -694,7 +694,7 @@
 		#ELSE
 			#IF pc.hasHair()
 			#THEN твои [pc.hair(true)]
-			#ELSE your head
+			#ELSE твоя голова
 			#ENDIF
 		#ENDIF
 		 и силой прижимает твое лицо к паху [npc.her]. Тщетно борясь и колотя по [npc.legs] [npc.race], ты можешь только кричать, когда [npc.she] с силой впечатывает головку [npc.her] [npc.cock+] в твой [pc.face]. [npc.speech(Прибереги дыхание, сучка. Оно тебе еще пригодится!)]

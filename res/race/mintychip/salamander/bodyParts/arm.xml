@@ -42,46 +42,46 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>scaled</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>чешуйчатый</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>scaled</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>чешуей</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's hands: -->
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>salamander-like</descriptor>
-		<descriptor>scaled</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
+		<descriptor>чешуей</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>salamander-like</descriptor>
-		<descriptor>scaled</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
+		<descriptor>видишь</descriptor>
 	</handDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's fingers: -->
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>scaled</descriptor>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>твоих</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>scaled</descriptor>
-		<descriptor>salamander-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>твои</descriptor>
+		<descriptor>похожий на саламандру</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this arm type.
 	This description immediately follows a brief description of the arm type beginning to transform. -->
 	<transformationDescription><![CDATA[
 		Буквально за считанные мгновения их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую чешую, прорастающую на спинах [npc.her] рук, в то время как острые когти прорываются наружу, заменяя [npc.her] ногти. На [npc.her] верхней части бицепса [npc.her] чешуя плавно переходит в [npc.skin], покрывающую остальное тело [npc.her].
-		<br/>Когда трансформация завершается, [npc.nameIsFull] остается с антропоморфными, [style.boldSalamander(salamander-like arms and hands)], которые [npc.materialDescriptor] [npc.armFullDescription].
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остается с антропоморфными, [style.boldSalamander(похожими на саламандру руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->

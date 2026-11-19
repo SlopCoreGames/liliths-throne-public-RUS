@@ -34,13 +34,13 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's mouth of this type.
 	Additional mouth descriptors are generated based on the mouth's properties (such as its modifiers, lubrication, capacity, etc.), so these descriptors should only be related to the race itself. -->
 	<descriptorsMasculine>
-		<descriptor>sharp</descriptor>
-		<descriptor>dangerously hooked</descriptor>
+		<descriptor>острая</descriptor>
+		<descriptor>опасно загнутый</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>sharp</descriptor>
-		<descriptor>dangerously hooked</descriptor>
+		<descriptor>острая</descriptor>
+		<descriptor>опасно загнутый</descriptor>
 	</descriptorsFeminine>
 	<!-- Hyena mouths do not need any racial descriptors, but if you wanted to add some, use this format:
 	<descriptorsMasculine>
@@ -57,7 +57,7 @@
 			#ENDIF
 			 сейчас [npc.materialCompositionDescriptor]
 			#IF(npc.isHeavyMakeup(BODY_COVERING_TYPE_MAKEUP_LIPSTICK) && game.isLipstickMarkingEnabled())
-				 [style.colourPinkDeep(heavy layer)]
+				 [style.colourPinkDeep(густой слой)]
 			#ENDIF
 			 [#npc.getLipstick().getFullDescription(npc, true)].
 		#ELSE

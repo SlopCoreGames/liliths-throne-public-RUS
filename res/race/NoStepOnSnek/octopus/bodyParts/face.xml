@@ -10,12 +10,12 @@
 	<names/>
 	<namesPlural/>
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic octopus-like</descriptor>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>антропоморфный осьминогоподобный</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic octopus-like</descriptor>
-		<descriptor>octopus-like</descriptor>
+		<descriptor>антропоморфный осьминогоподобный</descriptor>
+		<descriptor>осьминогоподобный</descriptor>
 	</descriptorsFeminine>
 	<noseName><![CDATA[нос]]></noseName>
 	<noseNamePlural><![CDATA[носы]]></noseNamePlural>

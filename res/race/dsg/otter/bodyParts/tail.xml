@@ -55,29 +55,29 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tail of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>otter-like</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>tapered</descriptor>
-		<descriptor>rudder-like</descriptor>
-		<descriptor>lutrine</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>заостренный</descriptor>
+		<descriptor>подобный рулю</descriptor>
+		<descriptor>выдриный</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>otter-like</descriptor>
-		<descriptor>fluffy</descriptor>
-		<descriptor>tapered</descriptor>
-		<descriptor>rudder-like</descriptor>
-		<descriptor>lutrine</descriptor>
+		<descriptor>вытянутый, как у выдры</descriptor>
+		<descriptor>пушистый</descriptor>
+		<descriptor>заостренный</descriptor>
+		<descriptor>подобный рулю</descriptor>
+		<descriptor>выдриный</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tail type above, but these describe the tail's tip: -->
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>furry</descriptor>
+		<descriptor>пушистая</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this tail type.
@@ -88,16 +88,16 @@
 			<br/>[npc.Name] теперь [npc.has] [style.boldOtter(выдриный хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
 [npc.TailCount] сужающиеся, похожие на выдриные хвосты вырастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь частично контролирует их, но [npc.is] всё же может вилять ими из стороны в сторону, используя как рули под водой.
-<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldOtter(otter-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldOtter(выдриные хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<!-- How this tail is described in a character's description page. -->
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] otter tail, which [npc.she] can swish from side to side at will and use as a rudder underwater.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] выдриный хвост, которым [npc.she] может вилять из стороны в сторону по своему желанию и использовать как руль под водой.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] otter tails, which [npc.she] can swish from side to side at will and use as a rudder underwater.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] выдриные хвосты, которыми [npc.she] может вилять из стороны в сторону по своему желанию и использовать как рули под водой.
 		#ENDIF
 	]]></bodyDescription>
 	

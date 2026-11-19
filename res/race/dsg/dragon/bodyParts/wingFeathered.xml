@@ -48,7 +48,7 @@
 		#ELSE
 			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить невольный стон удовольствия, когда пара [npc.wingSize] оперенных крыльев прорывается сквозь лопатки [npc.her].
 		#ENDIF
-		<br/>[npc.Name] теперь [npc.has] [style.boldDragon(feathered wings)].
+		<br/>[npc.Name] теперь [npc.has] [style.boldDragon(оперенные крылья)].
 	]]></transformationDescription>
 	
 	<!-- How this wing is described in a character's description page. -->

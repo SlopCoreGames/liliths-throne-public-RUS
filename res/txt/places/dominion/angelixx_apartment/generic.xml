@@ -1627,7 +1627,7 @@
 		#ELSEIF(game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true))
 			 [sleip.speech(Нравится, какая тяжелая у меня яичка, сучка? Вся эта сперма затекает глубоко в твою задницу.)]
 		#ELSE
-			 [sleip.speech(Нравится, какая тяжелая у меня яичка, сучка? Вся эта сперма размазывается по #IF(pc.hasBreasts())your tits#ELSEyour chest#ENDIF.)]
+			 [sleip.speech(Нравится, какая тяжелая у меня яичка, сучка? Вся эта сперма размазывается по #IF(pc.hasBreasts())твоей груди#ELSEтвоей груди#ENDIF.)]
 		#ENDIF
 	</p>
 	<p>

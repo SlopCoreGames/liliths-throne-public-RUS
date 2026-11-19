@@ -17,13 +17,13 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic goat-like</descriptor>
-		<descriptor>goat-like</descriptor>
+		<descriptor>антропоморфный козий</descriptor>
+		<descriptor>козий</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic goat-like</descriptor>
-		<descriptor>goat-like</descriptor>
+		<descriptor>антропоморфный козий</descriptor>
+		<descriptor>козий</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[нос]]></noseName>

@@ -47,7 +47,7 @@
 	This description immediately follows a brief description of the hair type beginning to transform. -->
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с драконьими волосами.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldDragon(dragon hair)].
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldDragon(драконьи волосы)].
 	]]></transformationDescription>
 	
 	<!-- How this hair is described in a character's description page. -->

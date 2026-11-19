@@ -42,7 +42,7 @@
 	<iconName displaySize="80">dalmatianIcon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>dalmatianIcon</bookIconName>
-	<bookName>Canine Culture</bookName>
+	<bookName>Собачья культура</bookName>
 	<basicDescriptionId>DOG_MORPH_BASIC</basicDescriptionId>
 	<advancedDescriptionId>DOG_MORPH_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

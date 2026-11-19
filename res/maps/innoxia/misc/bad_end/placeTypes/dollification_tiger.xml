@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Clothing Store]]></name>
-	<tooltipDescription><![CDATA[You're kept in your Mistress's shop and used to demonstrate outfits to potential customers.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in your Mistress's shop]]></virginityLossDescription>
+	<name><![CDATA[Магазин одежды]]></name>
+	<tooltipDescription><![CDATA[Тебя держат в лавке твоей Госпожи, где ты служишь живым манекеном, демонстрируя наряды потенциальным покупательницам.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в лавке твоей Госпожи]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GOLD</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

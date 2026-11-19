@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[cardio machines]]></name>
-	<tooltipDescription><![CDATA[Running, cycling, and rowing machines offer gym members multiple ways in which to get some cardio exercise.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the gym, 'Pix's Playground']]></virginityLossDescription>
+	<name><![CDATA[кардиотренажеры]]></name>
+	<tooltipDescription><![CDATA[Беговые дорожки, велотренажеры и гребные аппараты предлагают посетителям спортзала множество способов получить кардионагрузку.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в спортзале «Игровая площадка Пикса»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLUE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

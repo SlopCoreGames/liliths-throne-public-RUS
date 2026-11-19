@@ -28,9 +28,9 @@
 		#ENDIF
 		прежде чем продиктовать [npc.herHim], что именно ты хочешь съесть.
 		#IF(npc.getObedienceBasic()==OBEDIENCE_BASIC_DISOBEDIENT && npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-			 Хотя [npc.she] дерзко заявляет, как сильно [npc.she] ненавидит подобную работу, у [npc.she] нет иного выбора, кроме как принять твой заказ. Сквозь зубы глядя на тебя, пока [npc.she] уходит, #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF hurries off to the kitchen to relay your choice to the chef.
+			 Хотя [npc.she] дерзко заявляет, как сильно [npc.she] ненавидит подобную работу, у [npc.she] нет иного выбора, кроме как принять твой заказ. Сквозь зубы глядя на тебя, пока [npc.she] уходит, #IF(npc.isSlave())твоя рабыня#ELSE[npc.name]#ENDIF спешит на кухню, чтобы передать повару твой выбор.
 		#ELSE
-			 Приняв твой заказ, #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF hurries off to the kitchen to relay your choice to the chef.
+			 Приняв твой заказ, #IF(npc.isSlave())твоя рабыня#ELSE[npc.name]#ENDIF спешит на кухню, чтобы передать повару твой выбор.
 		#ENDIF
 	</p>
 	<p>
@@ -44,7 +44,7 @@
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL_DESSERT_COCK"><![CDATA[
 	<p>
-		Почувствовав иной вид голода, ты тянешься, чтобы ощупать пах [npc.namePos], пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехаясь от того, что чувствуешь, как член [npc.her] дергается в ответ на твои прикосновения, ты говоришь: #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] cock into a dessert for you to enjoy.
+		Почувствовав иной вид голода, ты тянешься, чтобы ощупать пах [npc.namePos], пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехаясь от того, что чувствуешь, как член [npc.her] дергается в ответ на твои прикосновения, ты говоришь: #IF(npc.isSlave())твоя рабыня#ELSE[npc.name]#ENDIF отправиться на кухню и заставить повара превратить [npc.her] член в десерт, которым ты сможешь насладиться.
 	</p>
 	<p>
 		Сделав всё, как велела [npc.sheIs], [npc.name] забирает твою тарелку и спешит на кухню. Спустя короткое время [npc.she] возвращается, и ты предвкушающе облизываешь свои [pc.lips], видя, что член [npc.her] покрыт взбитыми сливками, [style.random(шоколадным|карамельным|клубничным)] соусом и [style.random(посыпкой|с вишенкой сверху)].
@@ -60,7 +60,7 @@
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL_DESSERT_PUSSY"><![CDATA[
 	<p>
-		Почувствовав иной вид голода, ты тянешься вперед, чтобы ощупать пах [npc.namePos], пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехнувшись, когда [npc.she] издает удивленный вздох, ты говоришь: #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] pussy into a dessert for you to enjoy.
+		Почувствовав иной вид голода, ты тянешься вперед, чтобы ощупать пах [npc.namePos], пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехнувшись, когда [npc.she] издает удивленный вздох, ты говоришь: #IF(npc.isSlave())твоя рабыня#ELSE[npc.name]#ENDIF отправиться на кухню и заставить повара превратить [npc.her] киску в десерт, которым ты сможешь насладиться.
 	</p>
 	<p>
 		Сделав так, как велела [npc.sheIs], [npc.name] забирает твою тарелку и спешит на кухню. Спустя короткое время [npc.she] возвращается, и ты предвкушающе облизываешь свои [pc.lips], видя, что [npc.her] [npc.pussy] покрыта взбитыми сливками, [style.random(шоколадным|карамельным|клубничным)] соусом и [style.random(посыпкой|вишенкой сверху)].
@@ -78,7 +78,7 @@
 	
 	<htmlContent tag="ROOM_DINING_HALL_RECEIVE_MEAL_DESSERT_ASS"><![CDATA[
 	<p>
-		Почувствовав иной вид голода, ты тянешься вперед, чтобы шлепнуть [npc.namePos] по заднице, пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехнувшись, когда [npc.she] издает удивленный вздох, ты говоришь: #IF(npc.isSlave())your slave#ELSE[npc.name]#ENDIF to go to the kitchen and have the chef turn [npc.her] butt into a dessert for you to enjoy.
+		Почувствовав иной вид голода, ты тянешься вперед, чтобы шлепнуть [npc.namePos] по заднице, пока [npc.she] наклоняется, чтобы забрать твою тарелку. Усмехнувшись, когда [npc.she] издает удивленный вздох, ты говоришь: #IF(npc.isSlave())твоя рабыня#ELSE[npc.name]#ENDIF отправиться на кухню и заставить повара превратить [npc.her] задницу в десерт, которым ты сможешь насладиться.
 	</p>
 	<p>
 		Сделав всё, как велела [npc.sheIs], [npc.name] забирает твою тарелку и спешит на кухню. Спустя короткое время [npc.she] возвращается, и ты предвкушающе облизываешь свои [pc.lips], видя, что задница [npc.her] покрыта взбитыми сливками, [style.random(шоколадным|карамельным|клубничным)] соусом и [style.random(посыпкой|с вишенкой сверху)].

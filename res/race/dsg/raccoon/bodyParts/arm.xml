@@ -37,52 +37,52 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-coated</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>покрытая мехом</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's hands: -->
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>raccoon-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>paw-like</descriptor>
-		<descriptor>dexterous</descriptor>
+		<descriptor>енотоподобный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожая на лапу</descriptor>
+		<descriptor>ловкими</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>raccoon-like</descriptor>
-		<descriptor>furry</descriptor>
-		<descriptor>paw-like</descriptor>
-		<descriptor>dexterous</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>енотоподобный</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожая на лапу</descriptor>
+		<descriptor>ловкими</descriptor>
 	</handDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's fingers: -->
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>padded</descriptor>
-		<descriptor>raccoon-like</descriptor>
+		<descriptor>пышный</descriptor>
+		<descriptor>енотоподобный</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>padded</descriptor>
-		<descriptor>raccoon-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>пышный</descriptor>
+		<descriptor>енотоподобный</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this arm type.
 	This description immediately follows a brief description of the arm type beginning to transform. -->
 	<transformationDescription><![CDATA[
 		Всего за мгновение их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую шерсть, растущую на спинках [npc.her] рук, в то время как острые когти прорываются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] грубые кожистые подушечки, а в районе [npc.her] верхней части бицепса [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].
-		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldRaccoon(raccoon-like arms and hands)], которые являются [npc.materialDescriptor] [npc.armFullDescription].
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldRaccoon(похожими на еноточьи руками и кистями)], которые являются [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->

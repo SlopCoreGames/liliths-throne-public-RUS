@@ -34,14 +34,14 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's ear of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>shark-like</descriptor>
-		<descriptor>finned</descriptor>
+		<descriptor>акулья</descriptor>
+		<descriptor>плавниковый</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>shark-like</descriptor>
-		<descriptor>finned</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>акулья</descriptor>
+		<descriptor>плавниковый</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this ear type.
@@ -54,12 +54,12 @@
 		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
 		и когда трансформация завершается, [npc.she] экспериментально [npc.verb(twitch)] [npc.her] своими новыми акулоподобными ушами взад-вперед.
-		<br/>[npc.Name] теперь [npc.has] [style.boldShark(large, shark-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		<br/>[npc.Name] теперь [npc.has] [style.boldShark(крупные, акулоподобные уши)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How this ear is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] пара стоячих,#IF(npc.isPiercedEar()) pierced,#ENDIF shark-like ears that resemble swept, pointed fins. They are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара стоячих,#IF(npc.isPiercedEar()) проколотые,#ENDIF акулоподобные уши, напоминающие загнутые, заостренные плавники. Они расположены высоко на [npc.her] голове и являются [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

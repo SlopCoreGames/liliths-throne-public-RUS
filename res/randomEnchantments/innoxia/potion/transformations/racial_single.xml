@@ -28,7 +28,7 @@
 		]]></conditional>
 		<effect><![CDATA[
 			<p style='text-align:center;'>
-				[style.italicsDisabled(Nothing happens, as [npc.namePos] race is unable to be transformed...)]
+				[style.italicsDisabled(Ничего не происходит, так как раса [npc.namePos] не поддается трансформации...)]
 			</p>
 		]]></effect>
 	</potionEffects>

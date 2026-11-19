@@ -32,7 +32,7 @@
 	<iconName displaySize="80">icon</iconName>
 	<backgroundName>background</backgroundName>
 	<bookIconName>icon</bookIconName>
-	<bookName>Prowling Lupines</bookName>
+	<bookName>Затаившиеся люпины</bookName>
 	<basicDescriptionId>WOLF_MORPH_BASIC</basicDescriptionId>
 	<advancedDescriptionId>WOLF_MORPH_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Dolls]]></name>
-	<tooltipDescription><![CDATA[Dozens of sex dolls are lined up beside one another in identical poses.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[Куклы]]></name>
+	<tooltipDescription><![CDATA[В ряд, в одинаковых позах, выстроились десятки секс-кукол.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_BLACK</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

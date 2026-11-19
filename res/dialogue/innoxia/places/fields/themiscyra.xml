@@ -592,9 +592,9 @@
 						<enemy leader="true"><![CDATA[lunexis]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[With Ursa, the queen of the Amazons, at your side, you prepare to fight Lunexis.]]></combatant>
-						<combatant id="ursa"><![CDATA[[ursa.speech(I haven't got much strength left,)] Ursa pants, [ursa.speech(I'll be relying on you, [pc.name]...)]]]></combatant>
-						<combatant id="lunexis"><![CDATA[[lunexis.speech(I'll be taking the two of you as my slaves!)] Lunexis gleefully shouts as she effortlessly swirls her four morning stars around.]]></combatant>
+						<combatant id="pc"><![CDATA[С Урсой, королевой амазонок, на твоей стороне, ты готовишься к битве с Лунексис.]]></combatant>
+						<combatant id="ursa"><![CDATA[[ursa.speech(У меня почти не осталось сил,)] — тяжело дышит Урса, — [ursa.speech(Буду полагаться на тебя, [pc.name]...)]]]></combatant>
+						<combatant id="lunexis"><![CDATA[[lunexis.speech(Вы двое станете моими рабынями!)] — радостно выкрикивает Лунексис, непринужденно вращая своими четырьмя утренними звездами.]]></combatant>
 					</openingDescriptions>
 					<escapeBlocked><![CDATA[true]]></escapeBlocked>
 				</combatVariables>
@@ -977,10 +977,10 @@
 						<enemy leader="false"><![CDATA[attacker2]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[[pc.Walking] up to the trio of centauresses, you confront them by ordering them to cease their looting.]]></combatant>
-						<combatant id="aurokaris"><![CDATA[[aurokaris.speech(You'll pay for what you've done to my hometown!)] Aurokaris shouts.]]></combatant>
-						<combatant id="attacker"><![CDATA[The centauress who looks to be in charge stomps one of her huge hoofs on the ground, before angrily shouting, [attacker.speech(You'll pay for your insolence, [pc.insult]!)]]]></combatant>
-						<combatant id="attacker2"><![CDATA[The second centauress taunts, [attacker2.speech(I'm going to enjoy playing with the two of you!)]]]></combatant>
+						<combatant id="pc"><![CDATA[[pc.Walking], приближаясь к троице кентаврид, ты бросаешь им вызов, приказывая прекратить грабеж.]]></combatant>
+						<combatant id="aurokaris"><![CDATA[[aurokaris.speech(Ты заплатишь за то, что сделал с моим родным городом!)] — кричит Аврокарис.]]></combatant>
+						<combatant id="attacker"><![CDATA[Кентаврида, которая кажется предводительницей, топает одним из своих огромных копыт по земле, а затем гневно выкрикивает: [attacker.speech(Ты заплатишь за свою дерзость, [pc.insult]!)]]]></combatant>
+						<combatant id="attacker2"><![CDATA[Вторая кентаврида насмехается: [attacker2.speech(Мне будет очень весело поиграть с вами двумя!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>

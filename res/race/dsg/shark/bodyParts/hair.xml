@@ -39,18 +39,18 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's hair of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>silky-smooth</descriptor>
+		<descriptor>шелковисто-гладкими</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>silky-smooth</descriptor>
+		<descriptor>шелковисто-гладкими</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this hair type.
 	This description immediately follows a brief description of the hair type beginning to transform. -->
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с шелковисто-гладкими волосами, которые почти не создают сопротивления под водой.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldShark(shark hair)].
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldShark(акулья шевелюра)].
 	]]></transformationDescription>
 	
 	<!-- How this hair is described in a character's description page. -->

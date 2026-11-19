@@ -16,18 +16,18 @@
 	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-like</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожими на мех</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>furry</descriptor>
-		<descriptor>fur-like</descriptor>
+		<descriptor>пушистая</descriptor>
+		<descriptor>похожими на мех</descriptor>
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
 		Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, похожими на мех.
-		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldBadger(badger hair)].
+<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldBadger(густая щетина)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

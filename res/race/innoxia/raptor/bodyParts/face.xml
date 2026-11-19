@@ -17,13 +17,13 @@
 	<namesPlural/> 
 	
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic raptor-like</descriptor>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>антропоморфное рапторье</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic raptor-like</descriptor>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>антропоморфное рапторье</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</descriptorsFeminine>
 	
 	<noseName><![CDATA[нос]]></noseName>
@@ -40,7 +40,7 @@
 			 Как и все остальное тело [npc.her], новое лицо [npc.her] — это [npc.materialDescriptor] [npc.faceSkin+],
 		#ENDIF
 		 и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышать и вздыхать, пока [npc.she] [npc.verb(try)] перевести [npc.her] дух. К огромному облегчению [npc.her], [npc.She] [npc.verb(find)], что [npc.sheIs] может по своему желанию делать края [npc.her] клюва тверже или мягче, что позволяет [npc.herHim] выражать мимику, а также обхватывать краями [npc.her] клюва всё, что [npc.she] захочет засунуть себе в [npc.her] рот.
-		<br/>[npc.Name] теперь [npc.has] антропоморфное [style.boldRaptor(raptor-like face)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldRaptor(thin, bird-like tongue)].
+		<br/>[npc.Name] теперь [npc.has] антропоморфное [style.boldRaptor(рапторье лицо)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.sheHasFull] [style.boldRaptor(тонкий, птичий язык)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

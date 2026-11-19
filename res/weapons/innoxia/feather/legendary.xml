@@ -9,7 +9,7 @@
 		<namePlural pluralByDefault="false"><![CDATA[безупречное арканное перо]]></namePlural>
 		<description><![CDATA[Говорят, это перо вырвали из крыльев лилин. Благодаря своей арканной природе оно может впитаться в чью-то Ауру, даруя способность наносить дистанционные атаки. Это конкретное перо находится в безупречном состоянии, наделяя владельца колоссальной мощью.]]></description>
 		<attackDescriptor>feather bolt</attackDescriptor>
-		<attackTooltipDescription>Use your feather's power to shoot a bolt of energy at [npc2.name].</attackTooltipDescription>
+		<attackTooltipDescription>Используй силу своего пера, чтобы выстрелить разрядом энергии в [npc2.name].</attackTooltipDescription>
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>
 		<equipText><![CDATA[[npc.Name] [npc.verb(focus)] на энергии внутри арканного пера. Когда [npc.she] [npc.does], оно растворяется и вливается в Ауру [npc.her], даруя [npc.herHim] способность совершать дистанционные атаки, наполненные арканой.]]></equipText>

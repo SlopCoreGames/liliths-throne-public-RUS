@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[elevator]]></name>
-	<tooltipDescription><![CDATA[A large, industrial elevator, which links the rear of the shop to the subterranean doll factory.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the elevator in Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[лифт]]></name>
+	<tooltipDescription><![CDATA[Огромный промышленный лифт, соединяющий заднюю часть лавки с подземной фабрикой кукол.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в лифте в «Роскоши Ловиенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREEN_LIME</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

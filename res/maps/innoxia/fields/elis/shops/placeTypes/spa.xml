@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Woolly Heaven]]></name>
-	<tooltipDescription><![CDATA[This massage parlour is staffed exclusively by sheep and goat girls, who promise to work out all of the stress from their clients.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the 'Woolly Heaven' massage parlour]]></virginityLossDescription>
+	<name><![CDATA[Шерстяной рай]]></name>
+	<tooltipDescription><![CDATA[В этом массажном салоне работают исключительно овечьи и козьи девушки, которые обещают снять любой стресс со своих клиентов.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в массажном салоне «Шерстяной рай»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_AQUA</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

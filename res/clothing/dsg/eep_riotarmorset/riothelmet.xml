@@ -106,13 +106,13 @@
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] рас[npc.do] подбородочный ремень на шлеме [npc.her] и [npc.verb(ease)] его, снимая шлем.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] подбородочный ремень на [npc.her] шлеме и [npc.verb(ease)] его, снимая шлем.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] рас[npc.do] подбородочный ремень на шлеме [npc2.namePos] и [npc.verb(ease)] его, снимая шлем.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] подбородочный ремень на шлеме [npc2.namePos] и [npc.verb(ease)] его, снимая шлем.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(rip)] расстегивает подбородочный ремень на шлеме [npc2.namePos] и [npc.verb(yank)] его с шеи [npc2.her].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(rip)] подбородочный ремень на шлеме [npc2.namePos] и [npc.verb(yank)] шлем с [npc2.her] головы.]]>
 		</otherRough>
 	</displacementText>
 

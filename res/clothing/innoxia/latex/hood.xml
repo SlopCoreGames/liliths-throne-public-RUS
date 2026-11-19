@@ -20,7 +20,7 @@
 			<category id="ponytail" priority="1">
 				<categoryName><![CDATA[Хвостик]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Present]]></stickerName>
+					<stickerName><![CDATA[Надето]]></stickerName>
 					<namePrefix/>
 					<descriptionModification/>
 					<imageName zLayer="-1" slot="HEAD">hood_stickers/ponytail.svg</imageName>
@@ -30,7 +30,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="absent" priority="2" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[Absent]]></stickerName>
+					<stickerName><![CDATA[Отсутствует]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -44,7 +44,7 @@
 			<category id="eyes" priority="2">
 				<categoryName><![CDATA[Отверстия для глаз]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Present]]></stickerName>
+					<stickerName><![CDATA[Надето]]></stickerName>
 					<namePrefix/>
 					<descriptionModification/>
 					<imageName zLayer="1" slot="HEAD">hood_stickers/eyes.svg</imageName>
@@ -54,7 +54,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="absent" priority="2" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[Absent]]></stickerName>
+					<stickerName><![CDATA[Отсутствует]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -71,7 +71,7 @@
 			<category id="mouth" priority="3">
 				<categoryName><![CDATA[Отверстия для рта]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
-					<stickerName><![CDATA[Present]]></stickerName>
+					<stickerName><![CDATA[Надето]]></stickerName>
 					<namePrefix/>
 					<descriptionModification/>
 					<imageName zLayer="1" slot="HEAD">hood_stickers/mouth.svg</imageName>
@@ -81,7 +81,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="absent" priority="2" defaultSticker="false" zLayer="1">
-					<stickerName><![CDATA[Absent]]></stickerName>
+					<stickerName><![CDATA[Отсутствует]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>

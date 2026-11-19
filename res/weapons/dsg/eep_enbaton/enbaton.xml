@@ -19,7 +19,7 @@
 		
 		<attackDescriptor>Bludgeon</attackDescriptor>
 		
-		<attackTooltipDescription>Hit [npc2.name] with your baton.</attackTooltipDescription>
+		<attackTooltipDescription>Ударь [npc2.name] своей дубинкой.</attackTooltipDescription>
 		
 		<rarity>UNCOMMON</rarity> 
 		

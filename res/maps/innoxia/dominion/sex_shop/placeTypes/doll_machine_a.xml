@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[assembly line A]]></name>
-	<tooltipDescription><![CDATA[At the start of the doll assembly line, arcane-infused silicone is cast into the shape of limbs, torsos, and heads.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the back of Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[сборочная линия А]]></name>
+	<tooltipDescription><![CDATA[В начале линии сборки кукол в формы конечностей, торсов и голов заливается пропитанный Арканой силикон.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в задней части «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_INDIGO</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

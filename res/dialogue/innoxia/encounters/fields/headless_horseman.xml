@@ -59,8 +59,8 @@
 						<enemy leader="true"><![CDATA[headHorse]]></enemy>
 					</enemies>
 					<openingDescriptions>
-						<combatant id="pc"><![CDATA[Refusing to submit to the headless horseman, you tell him that [headHorse.sheIs] not going to get any head from you!]]></combatant>
-						<combatant id="headHorse"><![CDATA[Gripping his [headHorse.mainWeapon], the horseman booms, [headHorse.speech(It's pointless to resist! You'll have my cock deep down your throat soon enough!)]]]></combatant>
+						<combatant id="pc"><![CDATA[Отказываясь подчиниться всаднику без головы, ты заявляешь ему, что [headHorse.sheIs] не видать ему твоей головы!]]></combatant>
+						<combatant id="headHorse"><![CDATA[Сжимая свой [headHorse.mainWeapon], всадник громогласно объявляет: [headHorse.speech(Сопротивляться бесполезно! Скоро мой член будет глубоко в твоем горле!)]]]></combatant>
 					</openingDescriptions>
 				</combatVariables>
 			</response>

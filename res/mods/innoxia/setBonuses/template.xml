@@ -4,7 +4,7 @@
 	You can see many examples of set bonuses in the 'res/setBonuses/' folder -->
 	
 	<!-- The name of this set bonus -->
-	<name><![CDATA[Socks of Power]]></name>
+	<name><![CDATA[Носки Силы]]></name>
 	
 	<!-- The id of the status effect which should be applied when a character is under the effect of this set bonus. -->
 	<statusEffect>innoxia_set_template</statusEffect>

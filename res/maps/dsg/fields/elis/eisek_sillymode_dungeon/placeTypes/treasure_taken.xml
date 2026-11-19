@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Treasure Room (Looted)]]></name>
-	<tooltipDescription><![CDATA[An empty wooden chest lies in the middle of this room.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the treasure room of a strange basement]]></virginityLossDescription>	
+	<name><![CDATA[Сокровищница (разграбленная)]]></name>
+	<tooltipDescription><![CDATA[Посреди этой комнаты стоит пустой деревянный сундук.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в сокровищнице странного подземелья]]></virginityLossDescription>	
 	<sexBlockedFromCharacterPresent/>
 	<svgName>chest</svgName>
 	<colour>BASE_WHITE</colour>

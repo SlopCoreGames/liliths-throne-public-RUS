@@ -20,7 +20,7 @@
 			<category id="wearntear" priority="1"> 
 				<categoryName><![CDATA[Износ]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix priority="1"><![CDATA[]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
@@ -31,7 +31,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="patched" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BROWN"> 
-					<stickerName><![CDATA[Patched]]></stickerName>
+					<stickerName><![CDATA[Залатано]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Латаные ]]></namePrefix> 
 					<namePostfix/> 
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Их латали столько раз, что даже вспоминать о пятнах не хочется.</i>]]></descriptionModification> 
@@ -40,7 +40,7 @@
 					<itemTagsRemoved/> 
 					<unavailabilityText/> 
 					<availabilityText>
-						If you really want that vintage look...
+						Если ты действительно хочешь добиться этого винтажного образа...
 					</availabilityText> 
 				</sticker>
 			</category>

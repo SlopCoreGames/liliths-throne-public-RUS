@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[The Creamy Bakey]]></name>
+	<name><![CDATA[Сливочная пекарня]]></name>
 	<colour>BASE_BROWN</colour>
 	<sexBlockedReason/>
 	<furniturePresent>true</furniturePresent>

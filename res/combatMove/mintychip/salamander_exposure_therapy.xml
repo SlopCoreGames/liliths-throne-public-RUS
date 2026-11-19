@@ -191,7 +191,7 @@
 			Яростный удар [npc.NamePos] был крайне эффективным!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] ослаблен(а) атакой!
+			[npc2.Name] #IF(npc2.isFeminine())ослаблена#ELSEослаблен#ENDIF атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

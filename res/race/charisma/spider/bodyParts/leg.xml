@@ -16,28 +16,28 @@
 	<name><![CDATA[нога]]></name>
 	<namePlural><![CDATA[ноги]]></namePlural> 
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>hard</descriptor>
-		<descriptor>anthropomorphic, spider-like</descriptor>
-		<descriptor>chitinous</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>твёрдая</descriptor>
+		<descriptor>антропоморфный, паукообразный</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>hard</descriptor>
-		<descriptor>anthropomorphic, spider-like</descriptor>
-		<descriptor>chitinous</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>твёрдая</descriptor>
+		<descriptor>антропоморфный, паукообразный</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</descriptorsFeminine>
 	<footDescriptorsMasculine>
-		<descriptor>chitinous</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>chitinous</descriptor>
+		<descriptor>хитиновая</descriptor>
 	</footDescriptorsFeminine>
 	<toeDescriptorsMasculine>
-		<descriptor>spider-like</descriptor>
+		<descriptor>паукообразные</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>spider-like</descriptor>
+		<descriptor>паукообразные</descriptor>
 	</toeDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		Слой паукообразного хитина быстро нарастает на [npc.her] ногах, пока те принимают новую форму. По мере того как [npc.her] новый хитин распространяется до самых кончиков [npc.her] пальцев, он разделяется вокруг суставов, придавая им вид кукольных ног или латных перчаток, оставляя [npc.him] с плоскостопыми, паукообразными ступнями. Когда трансформация завершается, [npc.she] [npc.verb(see)] что [npc.her] новые хитиновые пластины резко переходят в [npc.skin], покрывающие остальную часть [npc.her] тела на уровне [npc.her] верхней части бедра.

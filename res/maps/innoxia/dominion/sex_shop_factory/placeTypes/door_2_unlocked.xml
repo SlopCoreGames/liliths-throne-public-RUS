@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[unlocked door]]></name>
-	<tooltipDescription><![CDATA[This door links the main factory to the slime milking chamber, and has been unlocked.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside a door in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[отпертая дверь]]></name>
+	<tooltipDescription><![CDATA[Эта дверь соединяет главный завод с камерой доения слаймов; она разблокирована.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с дверью на фабрике под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_GREEN_LIGHT</colour>

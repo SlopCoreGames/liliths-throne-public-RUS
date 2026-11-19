@@ -44,15 +44,15 @@
 	<!-- The descriptors which should be drawn upon when describing a masculine character's face of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>anthropomorphic shark-like</descriptor>
-		<descriptor>shark-like</descriptor>
-		<descriptor>angular-muzzled</descriptor>
+		<descriptor>антропоморфный акулоподобный</descriptor>
+		<descriptor>акулья</descriptor>
+		<descriptor>с угловатой мордой</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>anthropomorphic shark-like</descriptor>
-		<descriptor>shark-like</descriptor>
-		<descriptor>angular-muzzled</descriptor>
+		<descriptor>антропоморфный акулоподобный</descriptor>
+		<descriptor>акулья</descriptor>
+		<descriptor>с угловатой мордой</descriptor>
 	</descriptorsFeminine>
 	
 	
@@ -68,11 +68,11 @@
 	</noseDescriptorsMasculine>
 	-->
 	<noseDescriptorsMasculine>
-		<descriptor>pointed</descriptor>
+		<descriptor>заостренное</descriptor>
 	</noseDescriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<noseDescriptorsFeminine>
-		<descriptor>pointed</descriptor>
+		<descriptor>заостренное</descriptor>
 	</noseDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this face type.

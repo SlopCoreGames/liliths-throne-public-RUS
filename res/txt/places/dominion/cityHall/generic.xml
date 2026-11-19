@@ -259,10 +259,10 @@
 			Поскольку [npc.sheIs] не может говорить, [npc.name] снова отвечает кивком [npc.her] головы, после чего берет [npc.her] чемодан и сопровождает тебя из ратуши вниз по улице. Пока вы идете плечом к плечу, [npc.name] кажется всё более воодушевленной своим [npc.her] будущим, и к тому времени, как вы прибываете к особняку Lilaya, прежнее изможденное выражение [npc.her] лица сменяется взглядом, полным детского восторга.
 		</p>
 		<p>
-			Although [npc.she] can't talk, [npc.name] makes [npc.her] emotions known by giving you a look of utter disbelief as you head to the front door. After telling [npc.herHim] that this is where you live, the [npc.race] shakes [npc.her] head in wonder, before following you up the steps to the mansion's entrance.
+			Хотя [npc.she] не умеет говорить, [npc.name] выражает [npc.her] эмоции, одаривая тебя взглядом полного недоверия, когда ты направляешься к парадной двери. Сказав [npc.herHim], что это твой дом, [npc.race] в изумлении качает [npc.her] головой, после чего следует за тобой вверх по ступеням к входу в особняк.
 		</p>
 		<p>
-			After Rose has opened the door, you accompany [npc.name] through the mansion and show [npc.herHim] to [npc.her] room. Putting [npc.her] suitcase down beside the bed, [npc.she] turns towards you and offers you [npc.her] sincere thanks by bowing [npc.her] head and smiling at you. Telling [npc.name] that [npc.sheIs] very welcome, you tell [npc.herHim] to take [npc.her] time getting settled in, before [pc.stepping] out of [npc.her] room and giving [npc.herHim] some privacy in which to unpack. Feeling as though you've done a good thing, you wonder what to do next...
+			Когда Роуз открывает дверь, ты сопровождаешь [npc.name] по особняку и показываешь [npc.herHim] комнату [npc.her]. Поставив [npc.her] чемодан рядом с кроватью, [npc.she] поворачивается к тебе и выражает [npc.her] искреннюю благодарность, [npc.her] склонив голову и улыбаясь тебе. Говоря [npc.name], что [npc.sheIs] здесь очень рады, ты советуешь [npc.herHim] не торопиться с обустройством, прежде чем [pc.stepping] выйдешь из [npc.her] комнаты и [npc.herHim] оставишь наедине, чтобы [npc.her] мог спокойно разобрать вещи. Чувствуя, что ты совершил доброе дело, ты задумываешься о том, чем заняться дальше...
 		</p>
 	#ELSE
 		<p>

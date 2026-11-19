@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Entrance]]></name>
-	<tooltipDescription><![CDATA[The entrance to the abandoned bakery has had several planks of wood nailed over it to keep it shut.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[by the entrance in the abandoned bakery in Elis]]></virginityLossDescription>
+	<name><![CDATA[Вход]]></name>
+	<tooltipDescription><![CDATA[Вход в заброшенную пекарню заколочен несколькими деревянными досками, чтобы он оставался закрытым.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[у входа в заброшенную пекарню в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

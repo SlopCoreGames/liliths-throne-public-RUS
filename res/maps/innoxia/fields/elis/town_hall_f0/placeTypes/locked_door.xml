@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[locked door]]></name>
-	<tooltipDescription><![CDATA[A locked, staff-only door leads into the parts of town hall which aren't open to the public.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[beside the locked door in Elis's town hall]]></virginityLossDescription>
+	<name><![CDATA[запертая дверь]]></name>
+	<tooltipDescription><![CDATA[Запертая дверь, предназначенная только для персонала, ведет в те части ратуши Элиса, которые закрыты для публики.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[рядом с запертой дверью в ратуше Элиса]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

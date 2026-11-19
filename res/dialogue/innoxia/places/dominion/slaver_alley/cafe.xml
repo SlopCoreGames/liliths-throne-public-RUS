@@ -359,8 +359,8 @@
 					<index><![CDATA[11]]></index>
 					<responseTitle><![CDATA[Демо-сцена с задницей]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] buttslut skills.
-						<br/>[style.italicsSex(This will lead into you fucking [npc.namePos] ass.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировала свои навыки [npc.her]-потаскухи.
+						<br/>[style.italicsSex(Это приведет к тому, что ты будешь трахать [npc.namePos] в зад.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -416,8 +416,8 @@
 					<index><![CDATA[12]]></index>
 					<responseTitle><![CDATA[Демонстрация анилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] anilingus skills.
-						<br/>[style.italicsSex(This will lead into [npc.name] giving you a rimjob.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировала свои навыки [npc.her]-анилингуса.
+						<br/>[style.italicsSex(Это приведет к тому, что [npc.name] сделает тебе римджоб.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -539,8 +539,8 @@
 					<index><![CDATA[11]]></index>
 					<responseTitle><![CDATA[Демонстрация киски]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] pussy skills.
-						<br/>[style.italicsSex(This will lead into you fucking [npc.namePos] pussy.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировала свои навыки [npc.her]-трахальщицы.
+						<br/>[style.italicsSex(Это приведет к тому, что ты будешь трахать [npc.namePos] в киску.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>

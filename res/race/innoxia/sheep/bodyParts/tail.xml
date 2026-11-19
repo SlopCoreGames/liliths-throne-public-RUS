@@ -24,21 +24,21 @@
 	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>sheep-like</descriptor>
-		<descriptor>woolly</descriptor>
+		<descriptor>овечий</descriptor>
+		<descriptor>шерстяная</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>sheep-like</descriptor>
-		<descriptor>woolly</descriptor>
+		<descriptor>овечий</descriptor>
+		<descriptor>шерстяная</descriptor>
 	</descriptorsFeminine>
 	
 	<tipName><![CDATA[кончик]]></tipName>
 	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>woolly</descriptor>
+		<descriptor>шерстяная</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>woolly</descriptor>
+		<descriptor>шерстяная</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
@@ -53,9 +53,9 @@
 	<bodyDescription><![CDATA[
 		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
-			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] sheep tail, which [npc.she] can just about swish from side to side.
+			 a #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] овечий хвост, которым [npc.she] едва может вилять из стороны в сторону.
 		#ELSE
-			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] sheep tails, which [npc.she] can just about swish from side to side.
+			 [npc.tailCount] #IF(npc.isTailFeral()) [style.colourFeral(дикий)],#ENDIF [npc.tailColour(true)] овечьи хвосты, которыми [npc.she] едва может вилять из стороны в сторону.
 		#ENDIF
 	]]></bodyDescription>
 </tail>

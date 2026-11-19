@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[staff door]]></name>
-	<tooltipDescription><![CDATA[This door is marked 'Staff Only', and is kept locked at all times.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[служебная дверь]]></name>
+	<tooltipDescription><![CDATA[На этой двери висит табличка «Только для персонала», и она всегда заперта.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в «Роскоши Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>door</svgName>
 	<colour>BASE_CRIMSON</colour>

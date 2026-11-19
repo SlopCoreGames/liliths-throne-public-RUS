@@ -10,7 +10,7 @@
 	<race>innoxia_hyena</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[hyena]]></transformationName>
+	<transformationName><![CDATA[гиена]]></transformationName>
 	
 	<!-- The id of the material covering this tentacle.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -47,27 +47,27 @@
 	
 	<!-- The singular and plural name of this tentacle type.
 	These should be left as 'tentacle' and 'tentacles' for standard tentacle types, but could be something like 'tentacle feathers'/'tentacle feathers' (both as plural) for bird tentacles. -->
-	<name><![CDATA[tentacle]]></name>
-	<namePlural><![CDATA[tentacles]]></namePlural> 
+	<name><![CDATA[щупальце]]></name>
+	<namePlural><![CDATA[щупальца]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tentacle of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor>strong</descriptor>
+		<descriptor>сильный</descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor>strong</descriptor>
+		<descriptor>сильный</descriptor>
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tentacle type above, but these describe the tentacle's tip: -->
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
-		<descriptor>rounded</descriptor>
+		<descriptor>закругленный</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
-		<descriptor>rounded</descriptor>
+		<descriptor>закругленный</descriptor>
 	</tipDescriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this tentacle type.
@@ -76,8 +76,6 @@
 	]]></transformationDescription>
 	
 	<!-- How this tentacle is described in a character's description page. -->
-	<bodyDescription><![CDATA[
-		In place of legs, [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)] tentacles, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects.
-	]]></bodyDescription>
+	<bodyDescription><![CDATA[Вместо ног у [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)] щупальца, над которыми [npc.sheHasFull] обладает полным контролем, что позволяет [npc.herHim] использовать их, чтобы хватать и удерживать предметы.]]></bodyDescription>
 	
 </tentacle>

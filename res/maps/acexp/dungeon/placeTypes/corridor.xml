@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
     <worldRegion>DOMINION</worldRegion>
-    <name><![CDATA[Dungeon corridor]]></name>
-    <tooltipDescription><![CDATA[A corridor connecting the various rooms in the dungeon under Lilaya's mansion.]]></tooltipDescription>
-    <virginityLossDescription><![CDATA[in Lilaya's dungeon]]></virginityLossDescription>
+    <name><![CDATA[Коридор подземелья]]></name>
+    <tooltipDescription><![CDATA[Коридор, соединяющий различные комнаты в подземелье под особняком Lilaya.]]></tooltipDescription>
+    <virginityLossDescription><![CDATA[в подземелье Lilaya]]></virginityLossDescription>
     <sexBlockedReason/>
     <sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
     <colour>BASE_GREY</colour>

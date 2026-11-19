@@ -25,34 +25,34 @@
 	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>clawed</descriptor>
-		<descriptor>anthropomorphic, raptor-like</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>когтистые</descriptor>
+		<descriptor>антропоморфные, подобные раптору</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>clawed</descriptor>
-		<descriptor>anthropomorphic, raptor-like</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>когтистые</descriptor>
+		<descriptor>антропоморфные, подобные раптору</descriptor>
 	</descriptorsFeminine>
 	
 	<footDescriptorsMasculine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</footDescriptorsFeminine>
 	
 	<toeDescriptorsMasculine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>raptor-like</descriptor>
+		<descriptor>похожий на язык раптора</descriptor>
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
 		Слой чешуйчатой, птичьей кожи быстро покрывает [npc.her] ноги, пока те принимают новую форму. По мере того как новая кожистая кожа [npc.her] распространяется до самых кончиков [npc.her] пальцев, [npc.her] ступни начинают подвергаться экстремальной трансформации. [npc.Her] пальцы сливаются и перестраиваются в три направленных вперед когтя, в то время как четвертый, направленный назад коготь ответвляется позади них. Когда трансформация завершается, эта кожистая кожа резко переходит в [npc.skinColour] [npc.skin] [npc.her] тела на уровне [npc.her] верхней части бедра.
-		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRaptor(raptor-like legs and talons in place of feet)], которые являются [npc.materialDescriptor] [npc.legFullDescription].
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRaptor(подобные раптору ноги и когти вместо ступней)], которые являются [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

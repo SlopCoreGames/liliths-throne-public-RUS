@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[crates (searched)]]></name>
-	<tooltipDescription><![CDATA[Dozens of crates are located in this area, and together hold what must be thousands of sex toys. The only one which wasn't securely closed has already been looted.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the storage area in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[ящики (осмотрены)]]></name>
+	<tooltipDescription><![CDATA[В этой области расположены десятки ящиков, в которых вместе лежат, должно быть, тысячи секс-игрушек. Единственный ящик, который не был плотно закрыт, уже разграблен.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в складской зоне фабрики под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>storage_crates</svgName>
 	<colour>BASE_GREY</colour>

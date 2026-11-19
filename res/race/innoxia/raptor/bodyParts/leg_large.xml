@@ -25,38 +25,38 @@
 	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>powerful</descriptor>
-		<descriptor>large</descriptor>
-		<descriptor>masculine</descriptor>
-		<descriptor>clawed</descriptor>
-		<descriptor>anthropomorphic, eagle-like</descriptor>
+		<descriptor>мощные</descriptor>
+		<descriptor>крупные</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>когтистые</descriptor>
+		<descriptor>антропоморфные, орлиные</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>powerful</descriptor>
-		<descriptor>large</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>clawed</descriptor>
-		<descriptor>anthropomorphic, eagle-like</descriptor>
+		<descriptor>мощные</descriptor>
+		<descriptor>крупные</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>когтистые</descriptor>
+		<descriptor>антропоморфные, орлиные</descriptor>
 	</descriptorsFeminine>
 	
 	<footDescriptorsMasculine>
-		<descriptor>eagle-like</descriptor>
+		<descriptor>орлиные</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>eagle-like</descriptor>
+		<descriptor>орлиные</descriptor>
 	</footDescriptorsFeminine>
 	
 	<toeDescriptorsMasculine>
-		<descriptor>eagle-like</descriptor>
+		<descriptor>орлиные</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>eagle-like</descriptor>
+		<descriptor>орлиные</descriptor>
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
 		По мере того как [npc.her] ноги увеличиваются в размерах и обретают новую форму, их быстро покрывает слой чешуйчатой птичьей кожи. Когда [npc.her] новая кожистая оболочка спускается до самых кончиков [npc.her] пальцев, [npc.her] ступни начинают подвергаться экстремальной трансформации. [npc.Her] пальцы срастаются и перестраиваются в три направленных вперед когтя, в то время как четвертый коготь ответвляется сзади. По завершении трансформации эта кожистая кожа резко переходит в [npc.skinColour] [npc.skin] [npc.her] тела на уровне [npc.her] верхней части бедра.
-		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRaptor(eagle-like legs and talons in place of feet)], которые являются [npc.materialDescriptor] [npc.legFullDescription].
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRaptor(орлиные ноги и когти вместо ступней)], которые являются [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[

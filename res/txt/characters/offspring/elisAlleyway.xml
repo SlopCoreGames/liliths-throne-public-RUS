@@ -909,7 +909,7 @@
 	
 	<htmlContent tag="OFFSPRING_ENCOUNTER_SEX"><![CDATA[
 	<p>
-		С того самого момента, как ты переступил порог [npc.namePos], ты не можешь оторвать взгляда от [pc.eyes], стоящей перед [npc.herHim]. Тот факт, что [npc.sheIs] твоя [npc.relation(pc)], лишь сильнее разжигает твое желание, а [npc.she] лишь лукаво улыбается. #IF(npc.isFeminine())sweetly#ELSEcharmingly#ENDIF at you once more, you can't help but act.
+		С того самого момента, как ты переступил порог [npc.namePos], ты не можешь оторвать взгляда от [pc.eyes], стоящей перед [npc.herHim]. Тот факт, что [npc.sheIs] твоя [npc.relation(pc)], лишь сильнее разжигает твое желание, а [npc.she] лишь лукаво улыбается. #IF(npc.isFeminine())сладко#ELSEочаровательно#ENDIF на тебя снова, ты не можешь не начать действовать.
 	</p>
 	<p>
 		#IF(npc.getHistory()==OCCUPATION_NPC_PROSTITUTE)
@@ -941,7 +941,7 @@
 			[npc.Name] отстраняется от тебя с крайне обеспокоенным выражением лица на [npc.her]. [npc.speech([pc.Name]?! Какого черта?! Я не собираюсь заниматься сексом с собственной [pc.mother]!)]
 		</p>
 		<p>
-			#IF(pc.isFeminine())You pout#ELSEYou frown#ENDIF at your [npc.relation(pc)], upset that [npc.sheIs] not interested in what you had in mind, [pc.speech(Well, the offer's out there, if you ever change your mind.)]
+			#IF(pc.isFeminine())Ты дуешь губы#ELSEТы хмуришься#ENDIF на своего [npc.relation(pc)], расстроенный тем, что [npc.sheIs] не заинтересован в том, что у тебя на уме, [pc.speech(Ну, предложение в силе, если вдруг передумаешь.)]
 		</p>
 		<p>
 			[npc.speech(Ладно, может, просто сделаем вид, что этого никогда не было?!)] — говорит [npc.she], явно расстроенная таким поворотом событий.
@@ -1010,7 +1010,7 @@
 	<htmlContent tag="AFTER_COMBAT_VICTORY"><![CDATA[
 	#IF(npc.isAttractedTo(pc) || !game.isNonConEnabled())
 		<p>
-			[npc.Name] бессильно оседает на пол, полностью побежденная. Когда [npc.she] смотрит на тебя снизу вверх, ты замечаешь, что твоя мощная Аура оказывает на [npc.herHim] сильнейшее воздействие, а в [npc.her] [npc.eyes+] читается голодный, полный похоти взгляд. [npc.She] #IF(npc.isTaur())starts bucking [npc.her] hips in a humping motion,#ELSEreaches down to [npc.her] crotch and starts stroking [npc.herself],#ENDIF making pitiful little whining noises as [npc.she] squirms on the floor.
+			[npc.Name] бессильно оседает на пол, полностью побежденная. Когда [npc.she] смотрит на тебя снизу вверх, ты замечаешь, что твоя мощная Аура оказывает на [npc.herHim] сильнейшее воздействие, а в [npc.her] [npc.eyes+] читается голодный, полный похоти взгляд. [npc.She] #IF(npc.isTaur())начинает ритмично двигать [npc.her] бедрами, имитируя фрикции,#ELSEтянется рукой к промежности [npc.her] и начинает ласкать [npc.herself],#ENDIF издавая жалкие тихие скулящие звуки, пока [npc.she] корчится на полу.
 		</p>
 		<p>
 			[npc.speech(Пожалуйста, [npc.pcName]! Трахни меня!)], — умоляет [npc.she], прикусывая [npc.her] [npc.lip], пока [npc.she] продолжает ласкать [npc.herself]. [npc.speech(Я буду послушной [npc.daughter]! Только, пожалуйста, трахни меня!)]

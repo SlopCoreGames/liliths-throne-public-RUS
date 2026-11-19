@@ -12,7 +12,7 @@
 		<descriptor><![CDATA[змеиный]]></descriptor>
 	</descriptorsFeminine>
 	<bodyDescription><![CDATA[
-		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], змеиный [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], змеиный [npc.tongue]#IF(npc.isPiercedTongue()), проколотый#ENDIF.
 	]]></bodyDescription>
 	<defaultTongueModifiers>
 		<modifier>BIFURCATED</modifier>

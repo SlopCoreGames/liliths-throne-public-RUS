@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[maintenance passage]]></name>
-	<tooltipDescription><![CDATA[A maintenance passage provides access to the ventilation ducts which keep the factory supplied with relatively fresh air from the surface.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in the vents in the factory beneath Lovienne's Luxuries]]></virginityLossDescription>
+	<name><![CDATA[технический проход]]></name>
+	<tooltipDescription><![CDATA[Технический проход открывает доступ к вентиляционным шахтам, которые снабжают фабрику относительно свежим воздухом с поверхности.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в вентиляционных шахтах фабрики под «Роскошью Ловьенн»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<svgName>vents</svgName>
 	<colour>BASE_GREY_DARK</colour>

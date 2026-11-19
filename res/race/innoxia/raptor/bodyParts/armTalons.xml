@@ -16,40 +16,40 @@
 	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>feathered</descriptor>
-		<descriptor>bird-like</descriptor>
-		<descriptor>feather-coated</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>птичьи</descriptor>
+		<descriptor>покрытыми перьями</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor>feathered</descriptor>
-		<descriptor>bird-like</descriptor>
-		<descriptor>feather-coated</descriptor>
+		<descriptor>оперенные</descriptor>
+		<descriptor>птичьи</descriptor>
+		<descriptor>покрытыми перьями</descriptor>
 	</descriptorsFeminine>
 	
 	<handName><![CDATA[кисть]]></handName>
 	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
-		<descriptor>bird-like</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>птичьи</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</handDescriptorsMasculine>
 	<handDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>bird-like</descriptor>
-		<descriptor>scaly</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>птичьи</descriptor>
+		<descriptor>чешуйчатая</descriptor>
 	</handDescriptorsFeminine>
 	
 	<fingerName><![CDATA[палец]]></fingerName>
 	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
-		<descriptor>talon-tipped</descriptor>
-		<descriptor>bird-like</descriptor>
+		<descriptor>с когтями на концах</descriptor>
+		<descriptor>птичьи</descriptor>
 	</fingerDescriptorsMasculine>
 	<fingerDescriptorsFeminine>
-		<descriptor>soft</descriptor>
-		<descriptor>feminine</descriptor>
-		<descriptor>talon-tipped</descriptor>
-		<descriptor>bird-like</descriptor>
+		<descriptor>мягкий</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>с когтями на концах</descriptor>
+		<descriptor>птичьи</descriptor>
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

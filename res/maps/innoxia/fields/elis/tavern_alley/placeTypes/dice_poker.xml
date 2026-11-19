@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[dice poker]]></name>
-	<tooltipDescription><![CDATA[In the middle of 'The Crossed Blades' tavern, several large tables are reserved for games of dice poker.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[at a dice poker table in 'The Crossed Blades' tavern]]></virginityLossDescription>
+	<name><![CDATA[кости и покер]]></name>
+	<tooltipDescription><![CDATA[Посреди таверны «Скрещенные клинки» несколько больших столов зарезервированы для игры в кости и покер.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[за столом для костей и покера в таверне «Скрещенные клинки»]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_GOLD</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -9,7 +9,7 @@
 		#IF(npc.isVisiblyPregnant() && npc.getPregnantLitter().isFatherId(pc.getId()))
 			#IF(!npc.isCharacterReactedToPregnancy(pc))
 				<p>
-					Твой взгляд мгновенно приковывает [npc.her] отчетливо видимый [style.colourSex(pregnant belly)], и когда [npc.name] смотрит на тебя, [npc.she] издает короткий смешок и восклицает:
+					Твой взгляд мгновенно приковывает [npc.her] отчетливо видимый [style.colourSex(беременный живот)], и когда [npc.name] смотрит на тебя, [npc.she] издает короткий смешок и восклицает:
 					[style.random(
 							[npc.speech(Да, всё так, горячий парень! Я воспользовалась одним из тех арканных тестов на беременность, и это ты меня оплодотворил!)] |
 							[npc.speech(О, снова привет, крошка! Глянь, что ты наделал! Я сделала арканный тест, и я точно тащу в себе твоих деток!)] |
@@ -331,7 +331,7 @@
 		Ты толком не знаешь, что делать дальше, и начинаешь чувствовать себя довольно неловко из-за того, что только что напал на эту бедную [npc.race]. Наклонившись, ты делаешь первое, что приходит в голову, и, рассыпавшись в извинениях перед [npc.herHim], спрашиваешь [npc.name], можешь ли ты как-то загладить вину перед [npc.herHim].
 	</p>
 	<p>
-		For a moment,[npc.name] simply sits there looking confused, but as [npc.she] realises that you're genuinely troubled by what you've just done, an evil grin crosses [npc.her] face. Consumed by [npc.her] lust that's being brought about due to your powerful arcane aura, [npc.she] grabs you by the [pc.arm] and pulls you with [npc.her] as [npc.she] rises to [npc.her] [npc.feet], before forcefully pressing [npc.her] body against yours as [npc.she] growls, [npc.speech(How about you start by apologising properly?!)]
+		На мгновение [npc.name] просто замирает с растерянным видом, но как только [npc.she] понимает, что тебя действительно гложет содеянное, на лице [npc.her] расплывается зловещая ухмылка. Охваченная [npc.her], вызванной твоей мощной арканной аурой, [npc.she] хватает тебя за [pc.arm] и тянет за собой, пока [npc.she] [npc.feet] [npc.her] [npc.her], а затем с силой прижимает [npc.her] тело к твоему, издавая при этом [npc.speech(Как насчет того, чтобы начать с достойных извинений?!)] [npc.she]
 	</p>
 	<p>
 		Крепкая, доминирующая хватка [npc.NamePos] на твоем [pc.arm] заставляет тебя издать похотливый стон, и твоя покорная натура берет верх: ты послушно делаешь то, что просит [npc.she], восклицая: [pc.speech(Мне так жаль! Пожалуйста, прости меня! Я сделаю всё, что ты захочешь!)]

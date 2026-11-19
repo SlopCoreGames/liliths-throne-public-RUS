@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <worldType>
 	<worldRegion>DOMINION</worldRegion>
-	<name><![CDATA[Lilaya's Dungeon]]></name>
+	<name><![CDATA[Подземелье Lilaya]]></name>
 	<colour>BASE_GREY</colour>
 	<sexBlockedReason/>
 	<furniturePresent>false</furniturePresent>

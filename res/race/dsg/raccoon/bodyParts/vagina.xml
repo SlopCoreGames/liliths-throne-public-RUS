@@ -50,14 +50,14 @@
 		</p>
 		<p>
 			Как раз в тот момент, когда [npc.she] [npc.verb(start)] думать, что трансформация подошла к концу, [npc.her] киска непроизвольно сжимается, и отрывистый визг срывается с [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по нижней части живота [npc.her]. Перед [npc.her] глазами мелькают образы пульсирующих енотьих членов, с силой вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)], как они впрыскивают свое мощное семя глубоко в [npc.her] новую матку. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия проходит сквозь [npc.her] тело, [npc.she] [npc.verb(feel)], как [npc.her] женские репродуктивные органы завершают свою трансформацию.
-			<br/>[npc.Name] теперь [npc.has] [style.boldRaccoon(raccoon vagina)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.
+			<br/>[npc.Name] теперь [npc.has] [style.boldRaccoon(вагина енота)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.
 	]]></transformationDescription>
 	
 	<!-- How this torso is described in a character's description page.
 	Immediately follows on from:
 		'Between [npc.her] [npc.legs], ' -->
 	<bodyDescription><![CDATA[
-		[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEa#ENDIF raccoon-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.
+		[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSEа#ENDIF вагина енота, с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.
 	]]></bodyDescription>
 	
 </vagina>

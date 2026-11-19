@@ -46,8 +46,8 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="tab_pc" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE"> 
-					<stickerName><![CDATA[Police Constable]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Constable ]]></namePrefix> 
+					<stickerName><![CDATA[Констебль]]></stickerName>
+					<namePrefix priority="1"><![CDATA[Констебль Enforcer ]]></namePrefix> 
 					<namePostfix/> 
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К нему прикреплен знак отличия констебля полиции.</i>]]></descriptionModification> 
 					<imageName>enfdjacket_st_tab_pc.svg</imageName> 
@@ -60,12 +60,12 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText> 
 					<availabilityText>
-						As an Enforcer who holds the rank of Police Constable, you can freely use these collar tabs.
+						Как Enforcer в звании констебля, ты можешь свободно использовать эти петлицы.
 					</availabilityText> 
 				</sticker>
 				<sticker id="tab_sg" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE"> 
-					<stickerName><![CDATA[Sergeant]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Enforcer Sergeant ]]></namePrefix>
+					<stickerName><![CDATA[Сержант]]></stickerName>
+					<namePrefix priority="2"><![CDATA[Сержант Enforcer ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К нему прикреплен знак отличия сержанта.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_sg.svg</imageName>
@@ -78,11 +78,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Sergeant, you can freely use these collar tabs.
+						Как Enforcer в звании сержанта, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_ip" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Inspector]]></stickerName>
+					<stickerName><![CDATA[Инспектор]]></stickerName>
 					<namePrefix priority="2"><![CDATA[Enforcer Инспектор ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак инспектора.</i>]]></descriptionModification>
@@ -96,11 +96,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Inspector, you can freely use these collar tabs.
+						Как Enforcer в звании инспектора, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_ci" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Chief Inspector]]></stickerName>
+					<stickerName><![CDATA[Главный инспектор]]></stickerName>
 					<namePrefix priority="2"><![CDATA[Enforcer Главный инспектор ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак главного инспектора.</i>]]></descriptionModification>
@@ -114,11 +114,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Chief Inspector, you can freely use these collar tabs.
+						Как Enforcer в звании главного инспектора, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_su" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Superintendent]]></stickerName>
+					<stickerName><![CDATA[Суперинтендант]]></stickerName>
 					<namePrefix priority="2"><![CDATA[Enforcer Супер интендант ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак супер интенданта.</i>]]></descriptionModification>
@@ -132,11 +132,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Superintendent, you can freely use these collar tabs.
+						Как Enforcer в звании супер интенданта, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_cs" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Chief Superintendent]]></stickerName>
+					<stickerName><![CDATA[Главный суперинтендант]]></stickerName>
 					<namePrefix priority="2"><![CDATA[Enforcer Главный супер интендант ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак главного супер интенданта.</i>]]></descriptionModification>
@@ -150,11 +150,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Chief Superintendent, you can freely use these collar tabs.
+						Как Enforcer в звании главного супер интенданта, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 				<sticker id="tab_cm" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Commissioner]]></stickerName>
+					<stickerName><![CDATA[Комиссар]]></stickerName>
 					<namePrefix priority="2"><![CDATA[Комиссар Enforcer]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак комиссара.</i>]]></descriptionModification>
@@ -168,14 +168,14 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Commissioner, you can freely use these collar tabs.
+						Как Enforcer в звании комиссара, ты можешь свободно использовать эти петлицы.
 					</availabilityText>
 				</sticker>
 			</category>
 			<category id="name" priority="2"> 
 				<categoryName><![CDATA[Именная табличка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="2" colourSelected="TEXT_GREY"> 
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -186,7 +186,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="name_pc" priority="2" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Police Constable]]></stickerName>
+					<stickerName><![CDATA[Констебль]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -196,11 +196,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Police Constable, you can freely use this name plate.
+						Как Enforcer в звании констебля, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_sg" priority="2" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Sergeant]]></stickerName>
+					<stickerName><![CDATA[Сержант]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -210,11 +210,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Sergeant, you can freely use this name plate.
+						Как Enforcer в звании сержанта, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_ip" priority="3" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Inspector]]></stickerName>
+					<stickerName><![CDATA[Инспектор]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -224,11 +224,11 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Inspector, you can freely use this name plate.
+						Как Enforcer в звании инспектора, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_su" priority="4" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Superintendent]]></stickerName>
+					<stickerName><![CDATA[Суперинтендант]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -238,11 +238,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Superintendent, you can freely use this name plate.
+						Как Enforcer в звании супер интенданта, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_cs" priority="5" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Chief Superintendent]]></stickerName>
+					<stickerName><![CDATA[Главный суперинтендант]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -252,7 +252,7 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Chief Superintendent, you can freely use this name plate.
+						Как Enforcer в звании главного интенданта, ты можешь свободно использовать эту именную табличку.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_brax" priority="6" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="ADB4FF">
@@ -266,11 +266,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						Look at you, hacker.
+						Посмотрите-ка на него, хакер.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_candi" priority="7" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS">
-					<stickerName><![CDATA[Candi]]></stickerName>
+					<stickerName><![CDATA[Кэнди]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Кэнди ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Кэнди.</i>]]></descriptionModification>
@@ -280,11 +280,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						A pathetic creature of meat and bone.
+						Жалкое создание из плоти и костей.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_claire" priority="8" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="FEMININE">
-					<stickerName><![CDATA[Claire]]></stickerName>
+					<stickerName><![CDATA[Клэр]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Клэр ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Клэр.</i>]]></descriptionModification>
@@ -297,11 +297,11 @@
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
-						Panting and sweating as you run through my corridors.
+						Тяжело дышишь и потеешь, пробегая по моим коридорам.
 					</availabilityText>
 				</sticker>
 				<sticker id="name_elle" priority="9" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="d69423">
-					<stickerName><![CDATA[Elle]]></stickerName>
+					<stickerName><![CDATA[Элль]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Элль ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Элль.</i>]]></descriptionModification>
@@ -311,7 +311,7 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						How can you challenge a perfect immortal machine?
+						Как ты можешь бросать вызов совершенной бессмертной машине?
 					</availabilityText>
 				</sticker>
 				<sticker id="name_wesley" priority="10" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="d6c19c">
@@ -325,11 +325,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						Welcome to my DEATH MACHINE, interloper!
+						Добро пожаловать в мою МАШИНУ СМЕРТИ, пришелец!
 					</availabilityText>
 				</sticker>
 				<sticker id="name_nysa" priority="11" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_ORANGE">
-					<stickerName><![CDATA[Nysa]]></stickerName>
+					<stickerName><![CDATA[Ниса]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Нисы ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Нисе.</i>]]></descriptionModification>
@@ -339,7 +339,7 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						I have nothing more to say to you, hacker
+						Мне больше нечего тебе сказать, хакер
 					</availabilityText>
 				</sticker>
 			</category>
@@ -366,11 +366,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						My plans have come to fruition prematurely, but quite to my satisfaction.
+						Мои планы воплотились преждевременно, но весьма к моему удовлетворению.
 					</availabilityText>
 				</sticker>
 				<sticker id="ribbon_candi" priority="2" defaultSticker="false" zLayer="3" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS">
-					<stickerName><![CDATA[Candi]]></stickerName>
+					<stickerName><![CDATA[Кэнди]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -380,11 +380,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						You have my thanks, hacker.
+						Благодарю тебя, хакер.
 					</availabilityText>
 				</sticker>
 				<sticker id="ribbon_claire" priority="3" defaultSticker="false" zLayer="3" colourDisabled="TEXT_GREY" colourSelected="FEMININE">
-					<stickerName><![CDATA[Claire]]></stickerName>
+					<stickerName><![CDATA[Клэр]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -394,11 +394,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						Let me show you the destruction you have brought upon the planet Earth.
+						Позволь мне показать тебе разрушение, которое ты принес на планету Земля.
 					</availabilityText>
 				</sticker>
 				<sticker id="ribbon_elle" priority="4" defaultSticker="false" zLayer="3" colourDisabled="TEXT_GREY" colourSelected="d69423">
-					<stickerName><![CDATA[Elle]]></stickerName>
+					<stickerName><![CDATA[Элль]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -408,7 +408,7 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						Make yourself comfortable, Hacker.
+						Устраивайся поудобнее, Хакер.
 					</availabilityText>
 				</sticker>
 				<sticker id="ribbon_wes" priority="5" defaultSticker="false" zLayer="3" colourDisabled="TEXT_GREY" colourSelected="d6c19c">
@@ -422,11 +422,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						Stay a while.
+						Задержись ненадолго.
 					</availabilityText>
 				</sticker>
 				<sticker id="ribbon_nysa" priority="6" defaultSticker="false" zLayer="3" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_ORANGE">
-					<stickerName><![CDATA[Nysa]]></stickerName>
+					<stickerName><![CDATA[Ниса]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -436,14 +436,14 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						I have nothing more to say to you, hacker
+						Мне больше нечего тебе сказать, хакер
 					</availabilityText>
 				</sticker>
 			</category>
 			<category id="qual" priority="4">
 				<categoryName><![CDATA[Квалификационный знак]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="4" colourSelected="TEXT_GREY">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -454,7 +454,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="qual_flyer" priority="0" defaultSticker="false" zLayer="4" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_PURPLE_LIGHT">
-					<stickerName><![CDATA[Combat Flyer]]></stickerName>
+					<stickerName><![CDATA[Боевой летчик]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -464,11 +464,11 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who has a Combat Flyer qualification, you can freely wear this badge!
+						Как Enforcer с квалификацией «Боевой пилот», ты можешь свободно носить этот значок!
 					</availabilityText>
 				</sticker>
 				<sticker id="qual_diver" priority="0" defaultSticker="false" zLayer="4" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE_GREY">
-					<stickerName><![CDATA[Combat Diver]]></stickerName>
+					<stickerName><![CDATA[Боевой водолаз]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -478,14 +478,14 @@
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who has a Combat Diver qualification, you can freely wear this badge!
+						Как Enforcer с квалификацией «Боевой ныряльщик», ты можешь свободно носить этот значок!
 					</availabilityText>
 				</sticker>	
 			</category>
 			<category id="aig" priority="5">
 				<categoryName><![CDATA[Эглет]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="5" colourSelected="TEXT_GREY">
-					<stickerName><![CDATA[None]]></stickerName>
+					<stickerName><![CDATA[Нет]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -496,7 +496,7 @@
 					<availabilityText/>
 				</sticker>
 				<sticker id="aig_cm" priority="1" defaultSticker="false" zLayer="5" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
-					<stickerName><![CDATA[Commissioner]]></stickerName>
+					<stickerName><![CDATA[Комиссар]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
 					<descriptionModification/>
@@ -507,7 +507,7 @@
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 					]]></unavailabilityText>
 					<availabilityText>
-						As an Enforcer who holds the rank of Commissioner, you can freely use this aiguillette.
+						Как Enforcer в звании Комиссара, ты можешь свободно носить этот аксельбант.
 					</availabilityText>
 				</sticker>
 			</category>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Ursa's tent]]></name>
-	<tooltipDescription><![CDATA[This purple tent is larger than all the others in the Amazons' camp, and it houses the queen, Ursa.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Ursa's tent in the Amazons' camp]]></virginityLossDescription>
+	<name><![CDATA[Шатер Урсы]]></name>
+	<tooltipDescription><![CDATA[Этот пурпурный шатер больше всех остальных в лагере амазонок, и в нем обитает королева Урса.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в шатре Урсы в лагере амазонок]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

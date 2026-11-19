@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[town hall]]></name>
-	<tooltipDescription><![CDATA[The town hall is by far the largest building in all of Elis, and thanks to its distinctive tower, it's also the tallest.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[outside of the town hall at Elis]]></virginityLossDescription>
+	<name><![CDATA[ратуша]]></name>
+	<tooltipDescription><![CDATA[Ратуша — несомненно, самое большое здание во всем Элисе, а благодаря своей характерной башне она еще и самое высокое.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[снаружи ратуши в Элисе]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_PURPLE_LIGHT</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

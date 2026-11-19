@@ -25,29 +25,29 @@
 	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
-		<descriptor>masculine</descriptor>
-		<descriptor>anthropomorphic, pig-like</descriptor>
-		<descriptor>hair-coated</descriptor>
+		<descriptor>мужской</descriptor>
+		<descriptor>антропоморфный, свиноподобный</descriptor>
+		<descriptor>поросший волосами</descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor>feminine</descriptor>
-		<descriptor>anthropomorphic, pig-like</descriptor>
-		<descriptor>hair-coated</descriptor>
+		<descriptor>женственная</descriptor>
+		<descriptor>антропоморфный, свиноподобный</descriptor>
+		<descriptor>поросший волосами</descriptor>
 	</descriptorsFeminine>
 	
 	<footDescriptorsMasculine>
-		<descriptor>pig-like</descriptor>
+		<descriptor>свиной</descriptor>
 	</footDescriptorsMasculine>
 	<footDescriptorsFeminine>
-		<descriptor>pig-like</descriptor>
+		<descriptor>свиной</descriptor>
 	</footDescriptorsFeminine>
 	
 	<toeDescriptorsMasculine>
-		<descriptor>pig-like</descriptor>
+		<descriptor>свиной</descriptor>
 	</toeDescriptorsMasculine>
 	<toeDescriptorsFeminine>
-		<descriptor>pig-like</descriptor>
+		<descriptor>свиной</descriptor>
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[

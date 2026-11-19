@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[abandoned bakery]]></name>
-	<tooltipDescription><![CDATA[An abandoned bakery sits deep within the narrow alleyways of northern Elis.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[near the abandoned bakery in Elis]]></virginityLossDescription>
+	<name><![CDATA[заброшенная пекарня]]></name>
+	<tooltipDescription><![CDATA[В глубине узких переулков северного Элиса притаилась заброшенная пекарня.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[недалеко от заброшенной пекарни в Элисе]]></virginityLossDescription>
 	<sexBlockedReason/>
 	<sexBlockedFromCharacterPresent>false</sexBlockedFromCharacterPresent>
 	<colour>BASE_GREY</colour>

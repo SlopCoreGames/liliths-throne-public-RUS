@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <placeType>
 	<worldRegion>FIELD_CITY</worldRegion>
-	<name><![CDATA[Lunexis's tent]]></name>
-	<tooltipDescription><![CDATA[This tent is guarded by elite Amazon warriors, and has been enchanted to allow no sound to pass through its fabric.]]></tooltipDescription>
-	<virginityLossDescription><![CDATA[in Lunexis's tent in the Amazons' camp]]></virginityLossDescription>
+	<name><![CDATA[Палатка Лунексис]]></name>
+	<tooltipDescription><![CDATA[Эту палатку охраняют элитные воительницы-амазонки, а её ткань зачарована так, чтобы ни один звук не мог просочиться наружу.]]></tooltipDescription>
+	<virginityLossDescription><![CDATA[в палатке Лунексис в лагере амазонок]]></virginityLossDescription>
 	<sexBlockedFromCharacterPresent>true</sexBlockedFromCharacterPresent>
 	<colour>BASE_CRIMSON</colour>
 	<backgroundColour>MAP_BACKGROUND</backgroundColour>

@@ -282,7 +282,7 @@
 				Твоя вагина уже обнажена, и, взглянув на неё пару мгновений, Lilaya издает тихое довольное мурлыканье,
 			#ENDIF
 			#IF(pc.isVaginaEggLayer())
-				 [lilaya.speech(Ооо, ты собираешься откладывать #IF(pc.getPregnantLitter().getTotalLitterCount()>1)some eggs#ELSEan egg#ENDIF, how exciting! I'm sure you're already feeling it, but some incredibly strong maternal instincts are going to be kicking in pretty soon, and you're only going to feel comfortable doing this in a very personal area. I think using your room would be the best bet, follow me!)]
+				 [lilaya.speech(Ооо, ты собираешься откладывать #IF(pc.getPregnantLitter().getTotalLitterCount()>1)несколько яиц#ELSEяйцо#ENDIF, как волнительно! Уверена, ты уже это чувствуешь, но совсем скоро в тебе проснутся невероятно сильные материнские инстинкты, и тебе захочется заниматься этим только в очень уединенном месте. Думаю, твоя комната будет лучшим вариантом, иди за мной!)]
 			#ELSE
 				 [lilaya.speech(Ладно, значит, ты будешь рожать живых детенышей. У меня как раз подготовлена комната специально для этого, иди за мной!)]
 			#ENDIF
@@ -432,23 +432,23 @@
 	</p>
 	<p>
 		#IF(!pc.isQuestCompleted(QUEST_LINE_SIDE_FIRST_TIME_PREGNANCY))
-			Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Ладно, я знаю, что ты раньше никогда ничего подобного не делала, так что я быстро объясню, что будет происходить. Чтобы ты начала рожать свои} #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, I need to focus a special kind of arcane spell into your nice little bump here. This isn't as intense as giving birth to live young, so you're going to stay conscious through all of this.)]
+			Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Ладно, я знаю, что ты раньше никогда ничего подобного не делала, так что я быстро объясню, что будет происходить. Чтобы ты начала рожать свои} #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца#ELSEяйцо#ENDIF, мне нужно направить особое арканное заклинание прямо в твой милый животик. Это не так интенсивно, как рождение живого потомства, так что ты останешься в сознании на протяжении всего процесса.)]
 		#ELSE
-			Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Ладно, я знаю, мы это уже проходили, но давай я быстро напомню тебе, что сейчас будет. Чтобы ты мог начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, I need to focus a special kind of arcane spell into your nice little bump here. This isn't as intense as giving birth to live young, so you're going to stay conscious through all of this.)]
+			Пока Lilaya ведет тебя к кровати, она объясняет ситуацию: [lilaya.speech(Ладно, я знаю, мы это уже проходили, но давай я быстро напомню тебе, что сейчас будет. Чтобы ты мог начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца#ELSEяйцо#ENDIF, мне нужно направить особое арканное заклинание прямо в твой милый животик. Это не так интенсивно, как рождение живого потомства, так что ты останешься в сознании на протяжении всего процесса.)]
 		#ENDIF
 	</p>
 	<p>
-		Ты с беспокойством смотришь на Lilaya, когда она это говорит, но она сжимает твою ладонь в своей и успокаивает тебя: [lilaya.speech(Не волнуйся, это совсем не больно! Так, когда я помогу тебе родить твои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, you're probably going to get aggressive if I hang around for too long, so I'll leave as quickly as possible. Oh, and don't worry about your behaviour, I understand that your maternal instinct is going to get pretty intense.)]
+		Ты с беспокойством смотришь на Lilaya, когда она это говорит, но она сжимает твою ладонь в своей и успокаивает тебя: [lilaya.speech(Не волнуйся, это совсем не больно! Так, когда я помогу тебе родить твои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца#ELSEяйцо#ENDIF, ты, вероятно, станешь агрессивной, если я задержусь слишком долго, так что я уйду как можно скорее. О, и не беспокойся о своем поведении, я понимаю, что твои материнские инстинкты станут очень сильными.)]
 	</p>
 	<p>
-		Ты немного беспокойно ерзаешь, но Lilaya издает успокаивающий шуршащий звук, усаживая тебя в центр кровати, а затем устраивается позади тебя. [lilaya.speech(Все хорошо, не переживай! Значит, после того как ты родишь свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs, you're going to incubate it#ELSEegg, you're going to incubate it#ENDIF for roughly twenty-four hours, during which time you'll find that you'll be unable to sleep or get any rest. Once the #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs start#ELSEeggs starts#ENDIF hatching, all that built-up tiredness will suddenly wash over you, and you might collapse from exhaustion. I'll be waiting to come in and help your children, so don't worry if you end up passing out! Oh, and remember that they're going to grow pretty rapidly once they've hatched, so they might have already flown the nest by the time you wake up.)]
+		Ты немного беспокойно ерзаешь, но Lilaya издает успокаивающий шуршащий звук, усаживая тебя в центр кровати, а затем устраивается позади тебя. [lilaya.speech(Все хорошо, не переживай! Значит, после того как ты родишь свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца, ты будешь высиживать их#ELSEяйцо, ты будешь высиживать его#ENDIF примерно двадцать четыре часа, в течение которых ты обнаружишь, что не можешь ни спать, ни отдыхать. Как только #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца начинают#ELSEяйца начинает#ENDIF вылуплении, вся накопившаяся усталость внезапно нахлынет на тебя, и ты можешь просто рухнуть от изнеможения. Я буду ждать возможности войти и помочь твоим деткам, так что не переживай, если в итоге отключишься! О, и помни, что как только они вылупятся, они начнут расти очень быстро, так что к тому времени, как ты проснешься, они могут уже вовсю летать по гнезду.)]
 	</p>
 	<p>
 		Пока она говорила, Lilaya устроилась позади тебя поудобнее. Опустившись на колени на кровати, она прижимается к твоей спине, а затем обхватывает тебя руками, поглаживая живот вверх и вниз.
 		#IF(pc.hasLegs())
-		 	 Спускаясь ниже, чтобы мягко надавить на твои внутренние стороны бедер, Lilaya заставляет тебя раздвинуть ноги, чтобы ты был готов начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF. In a gentle voice she then asks, [lilaya.speech(Ok, all set?)]
+		 	 Спускаясь ниже, чтобы мягко надавить на твои внутренние стороны бедер, Lilaya заставляет тебя раздвинуть ноги, чтобы ты был готов начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца#ELSEяйцо#ENDIF. Затем нежным голосом она спрашивает: [lilaya.speech(Ну что, всё готово?)]
 		 #ELSE
-		 	 Опустив руки на твой низ живота, Lilaya спрашивает: [lilaya.speech(Ну что, ты готов начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF, so shall we start?)]
+		 	 Опустив руки на твой низ живота, Lilaya спрашивает: [lilaya.speech(Ну что, ты готов начать рожать свои #IF(pc.getPregnantLitter().getTotalLitterCount()>1)яйца#ELSEяйцо#ENDIF, так что начнем?)]
 		 #ENDIF
 	</p>
 	]]>
@@ -465,7 +465,7 @@
 		[lilaya.speech(Хорошо, просто постарайся расслабиться...)] — шепчет она тебе на ухо, и в этот момент ты замечаешь, как по её рукам начинает разливаться мягкое розовое свечение.
 	</p>
 	<p>
-		Она водит ладонями вверх и вниз по твоему беременному животу, и ты чувствуешь, как её большие пальцы начинают мягко надавливать, словно она пытается вытолкнуть #IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)eggs#ELSEegg#ENDIF within you. As she does this, you start to feel an intense pressure building up deep within your vagina, and, collapsing back into Lilaya,
+		Она водит ладонями вверх и вниз по твоему беременному животу, и ты чувствуешь, как её большие пальцы начинают мягко надавливать, словно она пытается вытолкнуть #IF(pc.getLastLitterBirthed().getTotalLitterCount()>1)яйца#ELSEяйцо#ENDIF внутри тебя. Пока она это делает, ты начинаешь чувствовать, как глубоко во влагалище нарастает сильное давление, и, откидываясь назад на Lilaya,
 		#IF(pc.hasLegs())
 			 тебя, раздвигаешь ноги и издаешь отчаянный скулящий стон.
 		#ELSE

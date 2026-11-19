@@ -42,7 +42,7 @@
 			e.g.
 				The example below will grant the potion the name "Youko's potion of the Milky Cow"
 				Instead, if you defined defaultPrepend="false", then the name would simply be "the Milky Cow" -->
-	<name defaultPrepend="true"><![CDATA[the Milky Cow]]></name>
+	<name defaultPrepend="true"><![CDATA[Молочная корова]]></name>
 	
 	
 	<!-- When a character consumes the 'Cultist's Mystery Potion' item, they can hear a ghostly voice in their head.
@@ -52,9 +52,9 @@
 			If you do this, please use html formatting (i.e. wrapping paragraphs in <p> tags)-->
 	<applicationSpeechStart replaceAll="false"><![CDATA[
 		#IF(game.isLactationContentEnabled())
-			One milky cow, coming right up!
+			Одна молочная корова, будет сделано!
 		#ELSE
-			One fat-titted cow, coming right up!
+			Одна корова с жирными сиськами, будет сделано!
 		#ENDIF
 	]]></applicationSpeechStart>
 	
