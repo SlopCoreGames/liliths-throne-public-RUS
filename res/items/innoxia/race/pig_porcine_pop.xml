@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>18</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Porcine Pop]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Porcine Pops]]></namePlural>
-		<description><![CDATA[A small glass bottle filled with a dark brown liquid. The list of ingredients on the back of the bottle's label reveals this to be a sort of cola, albeit one with an extraordinarily high sugar content.]]></description> 
+		<name><![CDATA[Свинопоп]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Свинопопы]]></namePlural>
+		<description><![CDATA[Маленькая стеклянная бутылочка, наполненная темно-коричневой жидкостью. Список ингредиентов на обороте этикетки гласит, что это своего рода кола, хотя и с чрезвычайно высоким содержанием сахара.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A soothing wave of arcane energy washes over [npc.name]...
+				Успокаивающая волна арканы омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 		]]></applyEffects>
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After first popping off the cap, [npc.name] [npc.verb(bring)] the glass bottle of Porcine Pop up to [npc.her] [npc.mouth]. Tilting [npc.her] head back, [npc.she] [npc.verb(start)] drinking the cool, fizzy cola, and despite its overwhelmingly sweet taste, [npc.she] [npc.verb(manage)] to quickly finish the entire bottle.
+		Откупорив крышку, [npc.name] [npc.verb(подносит)] стеклянную бутылку Свинопопа к [npc.her] [npc.mouth]. Закинув [npc.her] голову, [npc.she] [npc.verb(начинает)] пить прохладную шипучую колу, и, несмотря на ее приторно-сладкий вкус, [npc.she] [npc.verb(умудряется)] быстро осушить всю бутылку.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After first popping off the cap, [npc.name] [npc.verb(bring)] the glass bottle of Porcine Pop up to [npc2.namePos] waiting [npc2.lips]. Tilting [npc2.her] head back, [npc2.she] [npc2.verb(start)] drinking the cool, fizzy cola, and despite its overwhelmingly sweet taste, [npc2.she] [npc2.verb(manage)] to quickly finish the entire bottle.
+		Откупорив крышку, [npc.name] [npc.verb(подносит)] стеклянную бутылку Свинопопа к ожидающей [npc2.namePos] [npc2.lips]. Закинув [npc2.her] голову, [npc2.she] [npc2.verb(начинает)] пить прохладную шипучую колу, и, несмотря на ее приторно-сладкий вкус, [npc2.she] [npc2.verb(умудряется)] быстро осушить всю бутылку.
 		]]></otherUse>
 	</useDescriptions>
 

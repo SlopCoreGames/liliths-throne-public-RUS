@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>8000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA['Pix's Playground' membership card]]></name>
-		<namePlural pluralByDefault="false"><![CDATA['Pix's Playground' membership card]]></namePlural>
-		<description><![CDATA[A cardboard card with laminate coating, declaring the holder as being a member of the gym, 'Pix's Playground'.]]></description> 
+		<name><![CDATA[Карта участника «Игровой площадки Пикса»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Карта участника «Игровой площадки Пикса»]]></namePlural>
+		<description><![CDATA[Картонная карточка с ламинацией, подтверждающая, что её владелец является членом спортзала «Игровая площадка Пикса».]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourGood(Grants access)] to 'Pix's Playground']]></line>
+			<line><![CDATA[[style.colourGood(Дает доступ)] в «Игровую площадку Пикса»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			There's nothing about this card's appearance to suggest that it cost eight thousand flames. Made of flimsy cardboard, and with just a thin laminate coating to protect it from moisture, the simple design on the front leaves much to be desired. The words 'Pix's Playground', along with a basic icon of a dumbbell, are the only identifying marks which it carries.
+			По внешнему виду этой карты и не скажешь, что она стоила восемь тысяч огней. Сделанная из хлипкого картона и лишь слегка покрытая ламинацией для защиты от влаги, она оставляет желать лучшего. Простой дизайн на лицевой стороне почти ничего не говорит — лишь надпись «Игровая площадка Пикса» да примитивная иконка гантели служат какими-то опознавательными знаками.
 		</p>
 		]]></applyEffects>
 		
@@ -38,11 +38,9 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the card...
+		[npc.Name] [npc.verb(рассматриваешь)] карту повнимательнее...
 		]]></selfUse>
-		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] card to [npc2.name], who is duly impressed by [npc.her] possession of it...
-		]]></otherUse>
+		<otherUse><![CDATA[[npc.Name] [npc.verb(show)] [npc.her] карту [npc2.name], который всерьез впечатлен тем, что она принадлежит [npc.her]...]]></otherUse>
 	</useDescriptions>
 
 	

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>15</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[mince pie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[mince pies]]></namePlural>
-		<description><![CDATA[A sweet pie, filled with a mixture of dried fruits and spices. Curiously, the pie seems to remain permanently warm to the touch, revealing that an enchantment of some sort must have been placed on it.]]></description> 
+		<name><![CDATA[мясной пирог]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[мясные пироги]]></namePlural>
+		<description><![CDATA[Сладкий пирог, начиненный смесью сухофруктов и специй. Любопытно, но пирог кажется постоянно теплым на ощупь — это выдает наложенное на него какое-то зачарование.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -28,16 +28,16 @@
 		<enchantmentEffectId>ATTRIBUTE_SEXUAL</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(1)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_DAMAGE_FIRE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(1)] к «эффектам зелий»]]></line>
+			<line><![CDATA[[#ATTRIBUTE_DAMAGE_FIRE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A warm wave of arcane energy washes over [npc.name]...
+				Теплая волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_DAMAGE_LUST, 1)]
 			[#npc.addPotionEffect(ATTRIBUTE_DAMAGE_FIRE, 1)]
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(bring)] the enchanted mince pie up to [npc.her] mouth, before taking an experimental bite. The warm, spiced fruit filling is absolutely delicious, leading [npc.herHim] to greedily wolf down the entire pie.
+		[npc.Name] [npc.verb(bring)] зачарованный мясной пирог к [npc.her] рту, после чего делаешь пробный укус. Теплая, пряная фруктовая начинка просто божественна, заставляя [npc.herHim] жадно сожрать весь пирог целиком.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(bring)] the enchanted mince pie up to [npc2.namePos] mouth, before encouraging [npc2.herHim] to take an experimental bite. The warm, spiced fruit filling turns out to be absolutely delicious, leading [npc2.name] to eagerly wolf down the entire pie.
+		[npc.Name] [npc.verb(bring)] зачарованный мясной пирог к [npc2.namePos] рту, подталкивая [npc2.herHim] сделать пробный укус. Теплая, пряная фруктовая начинка оказывается просто божественной, заставляя [npc2.name] с жадностью сожрать весь пирог целиком.
 		]]></otherUse>
 	</useDescriptions>
 

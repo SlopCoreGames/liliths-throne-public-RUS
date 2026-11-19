@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>0</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[beer-bitch token]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[beer-bitch tokens]]></namePlural>
-		<description><![CDATA[A token which was given to you by Oglix upon purchase of a pint of beer. Collecting five of these tokens allows you to trade them in for a fuck of Oglix's beer-bitch.]]></description> 
+		<name><![CDATA[жетон пивной сучки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[жетоны пивной сучки]]></namePlural>
+		<description><![CDATA[Жетон, который вручил тебе Оглик при покупке пинты пива. Собрав пять таких жетонов, ты сможешь обменять их на трах пивной сучки Оглика.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Exchanged for a fuck of a beer-bitch at the bar in the tavern, 'The Crossed Blades']]></line>
+			<line><![CDATA[Обменивается на трах пивной сучки в баре таверны «Скрещенные клинки»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			This token is nothing more than a bottle cap that's been painted green and then crudely stamped with an 'O' marking. Remembering what Oglix told you, five of these tokens can be traded in for a fuck of the beer-bitch behind her bar.
+			Этот жетон — не более чем крышка от бутылки, покрашенная в зеленый цвет и грубо отштампованная буквой «О». Помнишь, что говорил Оглик? Пять таких жетонов можно обменять на трах пивной сучки, стоящей за барной стойкой.
 		</p>
 		]]></applyEffects>
 		
@@ -38,10 +38,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the beer-bitch token...
+		[npc.Name] [npc.verb(take)] внимательнее рассмотреть жетон пивной сучки...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] beer-bitch token to [npc2.name]...
+		[npc.Name] [npc.verb(show)] [npc.her] жетон пивной сучки перед [npc2.name]...
 		]]></otherUse>
 	</useDescriptions>
 

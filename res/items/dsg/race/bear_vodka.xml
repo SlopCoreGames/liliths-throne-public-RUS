@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the bottle reads 'Distilled by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[Снизу на бутылке видна едва заметная надпись: «Дистиллировано ООО „Продукты DSG“»]]></authorTag>
 		
 		<value>200</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Vodka]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Vodkas]]></namePlural>
-		<description><![CDATA[A glass bottle containing a highly alcoholic beverage made from potatoes.
+		<name><![CDATA[Водка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Водки]]></namePlural>
+		<description><![CDATA[Стеклянная бутылка с крепким алкогольным напитком, сделанным из картофеля.
 		#IF(!game.isSillyModeEnabled())
-		 The label depicts a bear-boy hard at work loading a still.
+		 На этикетке изображен медведь-мальчик, усердно загружающий самогонный аппарат.
 		#ELSE
-		 The label depicts a bear-boy squatting in a tracksuit. Above him a speech bubble reads "Иди нахуй", which you assume is some kind of swear.
+		 На этикетке изображен медведь-мальчик, сидящий на корточках в спортивном костюме. В облачке текста над ним написано «Иди нахуй» — судя по всему, это какое-то ругательство.
 		#ENDIF
 		]]></description> 
 		
@@ -36,16 +36,16 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 15% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_ICE.getFormattedValue(3)] to 'potion effects']]></line>
-			<line><![CDATA[[style.boldMinorBad(Adds)] 25% to [style.boldAlcohol(intoxication level)]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 15% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_ICE.getFormattedValue(3)] к «эффектам зелий»]]></line>
+			<line><![CDATA[[style.boldMinorBad(Добавляет)] 25% к [style.boldAlcohol(уровню опьянения)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM) * 0.15)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_RESISTANCE_ICE, 3)]
 			[#npc.incrementAlcoholLevel(0.25)]
@@ -61,10 +61,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After first removing the cork, [npc.name] [npc.verb(bring)] the bottle of Vodka up to [npc.her] [npc.mouth]. A very potent smell of alcohol rises from the opening, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the fiery liquid, a tingling warmth begins growing in the core of [npc.her] body.
+		Сначала вытащив пробку, [npc.name] [npc.verb(поднимает)] бутылку водки к [npc.her] [npc.mouth]. Из горлышка исходит резкий запах алкоголя, и когда [npc.she] [npc.verb(закидывает)] [npc.her] голову и [npc.verb(начинает)] пить эту обжигающую жидкость, в самом центре [npc.her] тела начинает разливаться покалывающее тепло.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After first removing the cork, [npc.name] [npc.verb(bring)] the bottle of Grog up to [npc2.namePos] waiting [npc2.lips]. A very potent smell of alcohol rises from the opening, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the fiery liquid, a tingling warmth begins growing in the core of [npc2.her] body.
+		Сначала вытащив пробку, [npc.name] [npc.verb(поднимает)] бутылку грога к ожидающей [npc2.namePos] [npc2.lips]. Из горлышка исходит резкий запах алкоголя, и когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову и [npc2.verb(начинает)] пить эту обжигающую жидкость, в самом центре [npc2.her] тела начинает разливаться покалывающее тепло.
 		]]></otherUse>
 	</useDescriptions>
 

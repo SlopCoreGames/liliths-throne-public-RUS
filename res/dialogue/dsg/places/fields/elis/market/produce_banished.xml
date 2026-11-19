@@ -3,7 +3,7 @@
 
 	<scene id ="stall">
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[An empty lot]]></title>
+		<title><![CDATA[Пустое место]]></title>
 		<tooltip/>				
 		<preParsingEffects/>
 		<content folderPath="txt/dsg/places/fields/elis/market/produce_banished">STALL</content>		

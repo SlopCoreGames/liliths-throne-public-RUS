@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>75</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Chicken Pot Pie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Chicken Pot Pies]]></namePlural>
-		<description><![CDATA[A small tin containing a pie with a mix of vegetables and meat. While plenty of omnivorous races enjoy the taste of these pies, they are a particular favourite of fox-morphs.]]></description> 
+		<name><![CDATA[Куриный пирог]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Куриные пироги]]></namePlural>
+		<description><![CDATA[Маленькая жестяная форма с пирогом из смеси овощей и мяса. Хотя многие всеядные расы любят эти пироги, лис-морфы просто обожают их.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot more energetic...
+				[npc.Name] [npc.verb(start)] чувствовать себя гораздо энергичнее...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -55,10 +55,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] the Chicken Pot Pie out of its tin, before bringing it up to [npc.her] mouth and taking a bite. [npc.She] [npc.verb(find)] that its delicious, nutritious mix of vegetables and meat is easy to chew through, and [npc.she] swiftly [npc.verb(consume)] the entire thing.
+		[npc.Name] [npc.verb(take)] куриный пирог из жестяной формы, подносит его к [npc.her] рту и откусывает кусочек. [npc.She] [npc.verb(find)] вкусную, питательную смесь овощей и мяса легко прожевать, и [npc.she] стремительно [npc.verb(consume)] всё целиком.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(take)] the Chicken Pot Pie out of its tin, before bringing it up to [npc2.namePos] mouth and getting [npc2.herHim] to take a bite. [npc2.She] [npc2.verb(find)] that its delicious, nutritious mix of vegetables and meat is easy to chew through, and [npc2.name] swiftly [npc2.verb(consume)] the entire thing.
+		[npc.Name] [npc.verb(take)] куриный пирог из жестяной формы, подносит его к [npc2.namePos] рту и заставляет [npc2.herHim] откусить кусочек. [npc2.She] [npc2.verb(find)] вкусную, питательную смесь овощей и мяса легко прожевать, и [npc2.name] стремительно [npc2.verb(consume)] всё целиком.
 		]]></otherUse>
 	</useDescriptions>
 

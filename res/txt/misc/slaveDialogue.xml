@@ -6,21 +6,21 @@
 	<htmlContent tag="RAPE_START_MILKING_ROOM"><![CDATA[
 	<p>
 		#IF(!pc.isTaur())
-			As [npc.name] is locked into the milking machine, [npc.sheIs] left completely powerless as you step around behind [npc.herHim] and reach down to grab [npc.her] [npc.ass+]. Letting out [npc.a_sob+], [npc.she] pleads, [npc.speech(No! Please! Just leave me alone!)]
+			Пока [npc.name] зажата в доильном аппарате, [npc.sheIs] остается совершенно беспомощной. Ты обходишь [npc.herHim] со спины и протягиваешь руку, чтобы схватить [npc.her] [npc.ass+]. Издавая [npc.a_sob+], [npc.she] умоляет: [npc.speech(Нет! Пожалуйста! Просто оставь меня в покое!)]
 		#ELSE
-			As [npc.name] is locked into the milking machine, [npc.sheIs] left completely powerless as you step forwards over the top of [npc.herHim] and press your animalistic [pc.legConfiguration] body down against [npc.her] back. Letting out [npc.a_sob+], [npc.she] pleads, [npc.speech(No! Please! Just leave me alone!)]
+			Пока [npc.name] зажата в доильном аппарате, [npc.sheIs] остается совершенно беспомощной. Ты шагаешь вперед, нависая над [npc.herHim], и прижимаешь свое звериное [pc.legConfiguration] тело к [npc.her] со спины. Издавая [npc.a_sob+], [npc.she] умоляет: [npc.speech(Нет! Пожалуйста! Просто оставь меня в покое!)]
 		#ENDIF
 	</p>
 	<p>
 		#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-			Smiling in delight as [npc.name] helplessly tries to break free of the milking machine's restraints, you cruelly tease, [pc.speech(That's right, cry and scream all you want; it's no fun if my victims don't put up a struggle!)]
+			С предвкушающей улыбкой наблюдая, как [npc.name] беспомощно пытается вырваться из оков доильного аппарата, ты жестоко дразнишь её: [pc.speech(Вот так, плачь и кричи сколько влезет; нет никакого удовольствия, если мои жертвы не сопротивляются!)]
 		#ELSE
-			Letting out a disappointed sigh as [npc.name] helplessly tries to break free of the milking machine's restraints, you say, [pc.speech(Hush now, [npc.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+			Разочарованно вздохнув, пока [npc.name] беспомощно пытается вырваться из оков доильного аппарата, ты говоришь: [pc.speech(Тише, [npc.name]. Знаешь, тебе было бы куда проще, если бы ты уже просто смирилась со своей судьбой.)]
 		#ENDIF
 	</p>
 	#IF(npc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
 		<p>
-			There seems to be something not quite right in the tone of [npc.namePos] voice, as though [npc.sheIs] not genuinely distressed by what's happening to [npc.herHim]. As one of [npc.her] frantic sobs momentarily turns into an excited squeal, you suddenly realise that [npc.sheIs] getting off on the fact that [npc.sheIs] being raped...
+			В голосе [npc.namePos] слышится что-то странное, будто [npc.sheIs] не так уж и страшно от того, что происходит с [npc.herHim]. Когда один из [npc.her] отчаянных всхлипов на мгновение превращается в возбужденный писк, ты внезапно осознаешь, что [npc.sheIs] получает истинное удовольствие от того, что [npc.sheIs] насилуют...
 		</p>
 	#ENDIF
 	]]>
@@ -29,13 +29,13 @@
 	<htmlContent tag="SEX_START_MILKING_ROOM"><![CDATA[
 	<p>
 		#IF(!pc.isTaur())
-			As [npc.name] is locked into the milking machine, [npc.sheIs] left completely powerless as you step around behind [npc.herHim] and reach down to grab [npc.her] [npc.ass+]. Letting out [npc.a_moan+], [npc.she] pleads, [npc.speech(~Mmm!~ Yes! Fuck me!)]
+			Пока [npc.name] зажата в доильном аппарате, [npc.sheIs] остается совершенно беспомощной. Ты обходишь [npc.herHim] со спины и тянешься к [npc.her] [npc.ass+]. Издавая [npc.a_moan+], [npc.she] умоляет: [npc.speech(~Ммм!~ Да! Трахни меня!)]
 		#ELSE
-			As [npc.name] is locked into the milking machine, [npc.sheIs] left completely powerless as you step forwards over the top of [npc.herHim] and press your animalistic [pc.legConfiguration] body down against [npc.her] back. Letting out [npc.a_moan+], [npc.she] pleads, [npc.speech(~Ooh!~ Yes! Mount me and rut me like an animal!)]
+			Пока [npc.name] зажата в доильном аппарате, [npc.sheIs] остается совершенно беспомощной. Ты шагаешь вперед, нависая над [npc.herHim], и прижимаешь свое звериное [pc.legConfiguration] тело к [npc.her] спине. Издавая [npc.a_moan+], [npc.she] умоляет: [npc.speech(~Ооо!~ Да! Оседлай меня и трахай, как животное!)]
 		#ENDIF
 	</p>
 	<p>
-		All too eager to do as [npc.she] asks, you prepare to have your way with [npc.herHim]...
+		Слишком жаждая исполнить просьбу [npc.she], ты готовишься взять [npc.herHim] своим...
 	</p>
 	]]>
 	</htmlContent>
@@ -43,65 +43,65 @@
 	<htmlContent tag="RAPE_START"><![CDATA[
 	#IF(npc.isAsleep())
 		<p>
-			Хозяин, желая трахнуть свою рабыню, подходит к кровати [npc.namePos], чтобы убедиться, что [npc.sheIs] действительно спит, а не просто притворяется. Остановившись рядом с [npc.herHim], он видит, что [npc.her] [npc.eyes] закрыты, а [npc.her] грудь медленно поднимается и опускается в такт дыханию [npc.her]. Хозяин, желая убедиться, что [npc.she] не просто притворяется спящим, кладет [pc.a_hand] на бедро [npc.her] и медленно поднимает свою [pc.fingers+] вверх и поглаживает [npc.her] [npc.breasts+]. Несмотря на прикосновение, [npc.she] не реагирует, что говорит о том, что [npc.she] действительно спит.
+			Желая трахнуть свою рабыню, ты подходишь к постели [npc.namePos], чтобы проверить, действительно ли [npc.sheIs] спит или просто притворяется. Остановившись рядом с [npc.herHim], ты видишь, что [npc.her] [npc.eyes] закрыты, а [npc.her] грудь медленно вздымается в такт [npc.her] дыханию. Чтобы убедиться, что [npc.she] не притворяется, ты кладешь [pc.a_hand] на [npc.her] бедро и медленно ведешь своей [pc.fingers+] по [npc.her] [npc.breasts+]. Несмотря на твои прикосновения, [npc.she] не реагирует, подтверждая, что [npc.she] действительно спит.
 		</p>
 		<p>
-			Зная, что [npc.she] не испытывает к нему влечения, и что [npc.she] наверняка попытается сопротивляться его ухаживаниям, он решает, что лучше не будить [npc.name].
+			Понимая, что [npc.she] к тебе не влечет, а [npc.she] наверняка попытается сопротивляться твоим ласкам, ты решаешь, что будет лучше не будить [npc.name].
 			#IF(pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-				 Улыбаясь с дьявольской хитростью, думая о возможности изнасиловать [npc.herHim], не зная об этом [npc.herHim],
+				 С коварной ухмылкой предвкушая возможность изнасиловать [npc.herHim] так, что [npc.herHim] даже не заметит, 
 			#ELSE
-				 Улыбаясь, готовясь воспользоваться уязвимым положением [npc.her],
+				 Ты довольно улыбаешься про себя, готовясь воспользоваться уязвимым положением [npc.her],
 			#ENDIF
-			 он экспериментально опускает руку и ощупывает [npc.namePos]
+			ты экспериментально опускаешь руку и ощупываешь [npc.namePos]
 			#IF(npc.hasPenis())
 				 [npc.cock+].
 			#ELSEIF(npc.hasVagina())
 				 [npc.pussy+].
 			#ELSE
-				 область промежности.
+				пах.
 			#ENDIF
-			 Будучи очень крепким сном, даже этого достаточно, чтобы не разбудить жертву, и [npc.she] просто вздыхает в [npc.her] сне в ответ на его похотливый жест.
+			 Поскольку [npc.she] спит очень крепко, даже этого недостаточно, чтобы разбудить жертву, и [npc.she] лишь вздыхает во [npc.her] сне в ответ на твой похотливый жест.
 		</p>
 		<p>
 			#IF(pc.getFetishDesire(FETISH_SADIST).isPositive())
-				Although you're not sure if you'll be able to resist slapping [npc.herHim] awake half-way through fucking [npc.herHim],
+				Хотя ты не уверен, сможешь ли удержаться от того, чтобы не шлепнуть [npc.herHim] и не разбудить её на полпути к траху с [npc.herHim],
 			#ELSE
-				Confident that [npc.she] won't wake up,
+				Уверенный в том, что [npc.she] не проснется,
 			#ENDIF
-			 you gently lower yourself down between your sleeping slave's [npc.legs] and prepare to fuck [npc.herHim] in [npc.her] sleep. So long as you remain gentle and don't shove anything down [npc.her] throat, you should be able to fuck [npc.herHim] without causing [npc.herHim] to wake up...
+			 ты осторожно опускаешься между [npc.legs] твоей спящей рабыни и готовишься трахать [npc.herHim] во [npc.her] сне. Пока ты ведешь себя нежно и не запихиваешь ничего в [npc.her] горло, тебе должно удаваться трахать [npc.herHim] так, чтобы не заставить [npc.herHim] проснуться...
 		</p>
 	#ELSE
 		#IF(npc.hasSlavePermissionSetting(SLAVE_PERMISSION_SETTING_GENERAL_CRAWLING))
 			#IF(!pc.isTaur())
 				<p>
-					As you've instructed [npc.name] to crawl everywhere [npc.she] goes, there's nothing stopping you from simply stepping around behind [npc.herHim] and dropping to your knees, ready to fuck [npc.herHim] in the doggy-style position. Reaching down to grab [npc.her] [npc.ass+], you [npc.moanVerb], [pc.speech(~Mmm!~ This is going to be good!)]
+				Поскольку ты велел [npc.name] ползать повсюду, где бы ни находилась [npc.she], ничто не мешает тебе просто обойти [npc.herHim] со спины и опуститься на колени, готовым трахать [npc.herHim] в позе по-собачьи. Схватив рукой [npc.her] [npc.ass+], ты [npc.moanVerb], [pc.speech(~Ммм!~ Это будет чертовски хорошо!)]
 				</p>
 				<p>
-					[npc.Name] tries to crawl away, but you keep a firm grip on [npc.her] [npc.hips+], preventing [npc.herHim] from escaping. Turning back to try and push you away, [npc.she] [npc.sobs+], [npc.speech(No! Stop! Leave me alone!)]
+				[npc.Name] пытается уползти, но ты крепко держишь [npc.her] за [npc.hips+], не давая [npc.herHim] сбежать. Обернувшись, чтобы попытаться оттолкнуть тебя, [npc.she] [npc.sobs+], [npc.speech(Нет! Стой! Оставь меня в покое!)]
 				</p>
 			#ELSE
 				<p>
-					As you've instructed [npc.name] to crawl everywhere [npc.she] goes, there's nothing stopping you from simply stepping over the top of [npc.herHim] with your [pc.legConfiguration] lower body and mounting [npc.herHim]. Pressing your animalistic [pc.legRace]'s body down against [npc.her] back, you [npc.moanVerb], [pc.speech(~Mmm!~ Time to give you a good rutting!)]
+					Поскольку ты велел(а) [npc.name] ползать повсюду, где ходит [npc.she], ничто не мешает тебе просто нависнуть над [npc.herHim] своим [pc.legConfiguration] низом и оседлать [npc.herHim]. Прижимая свое животное [pc.legRace] тело к [npc.her] спине, ты [npc.moanVerb], [pc.speech(~Ммм!~ Пора хорошенько тебя оттрахать!)]
 				</p>
 				<p>
-					[npc.Name] tries to crawl away, but with your large feral body over the top of [npc.herHim], you're easily able to prevent [npc.her] escape. Realising that any attempts to flee are useless, [npc.she] gives up and [npc.sobs+], [npc.speech(Please, don't do this! Leave me alone!)]
+					[npc.Name] пытается уползти, но под твоим массивным диким телом [npc.herHim] тебе легко преградить [npc.her] путь к побегу. Осознав, что любые попытки бегства бесполезны, [npc.she] сдается и [npc.sobs+], [npc.speech(Пожалуйста, не надо! Оставь меня в покое!)]
 				</p>
 			#ENDIF
 		#ELSE
-			<p>
-				Wanting to have some fun with your slave, you step forwards and pull [npc.name] into a dominant, passionate kiss. Almost immediately, [npc.she] desperately tries to push you away, but despite [npc.her] best efforts, all [npc.she] manages to do is temporarily pull away from your kiss. Using this opportunity to take a non-physical approach to deterring you from raping [npc.herHim], [npc.she] desperately pleads, [npc.speech(Please, don't do this! Leave me alone!)]
-			</p>
+				<p>
+					Желая развлечься со своей рабыней, ты делаешь шаг вперед и вовлекаешь [npc.name] в доминантный, страстный поцелуй. Почти сразу [npc.she] отчаянно пытается оттолкнуть тебя, но, несмотря на все усилия [npc.her], [npc.she] удается лишь на мгновение разорвать поцелуй. Пытаясь психологически отвратить тебя от изнасилования [npc.herHim], [npc.she] отчаянно молит: [npc.speech(Пожалуйста, не надо! Оставь меня в покое!)]
+				</p>
 		#ENDIF
 		<p>
 			#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-				Smiling in delight as [npc.name] starts to cry, you cruelly tease, [pc.speech(That's right, wail and scream all you want; it's no fun if my victims enjoy it!)]
+					Улыбаясь от восторга при виде того, как [npc.name] начинает плакать, ты жестоко дразнишь: [pc.speech(Вот так, вой и кричи сколько влезет; нет никакого удовольствия, если мои жертвы наслаждаются процессом!)]
 			#ELSE
-				Letting out a disappointed sigh as [npc.name] starts to cry, you say, [pc.speech(Hush now, [npc.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+					Издавая разочарованный вздох, когда [npc.name] начинает плакать, ты говоришь: [pc.speech(Тише, [npc.name]. Знаешь, тебе было бы куда проще, если бы ты уже просто смирилась со своей судьбой.)]
 			#ENDIF
 		</p>
 		#IF(npc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
-			<p>
-				There seems to be something not quite right in the tone of [npc.namePos] voice, as though [npc.sheIs] not genuinely distressed by what's happening to [npc.herHim]. As one of [npc.her] frantic sobs momentarily turns into an excited squeal, you suddenly realise that [npc.sheIs] getting off on the fact that [npc.sheIs] being raped...
+<p>
+				В голосе [npc.namePos] слышится что-то странное, будто [npc.sheIs] не так уж сильно расстроена тем, что происходит с [npc.herHim]. Когда один из [npc.her] неистовых всхлипов на мгновение превращается в возбужденный визг, ты внезапно понимаешь: [npc.sheIs] получает удовольствие от того, что [npc.sheIs] насилуют...
 			</p>
 		#ENDIF
 	#ENDIF
@@ -111,305 +111,296 @@
 	<htmlContent tag="SEX_START"><![CDATA[
 	#IF(npc.isAsleep())
 		<p>
-			Wanting to fuck your slave, you approach [npc.namePos] bed to see if [npc.sheIs] really asleep or merely pretending. Coming to a halt beside [npc.herHim], you see that [npc.her] [npc.eyes] are closed and [npc.her] chest is slowly rising and falling in time with [npc.her] breathing. Wanting to make sure that [npc.she] isn't simply pretending to be asleep, you place [pc.a_hand] on [npc.her] thigh and slowly run your [pc.fingers+] up and over [npc.her] [npc.breasts+]. Despite your touch, [npc.she] doesn't react, revealing that [npc.she] is indeed asleep.
+			Желая трахнуть свою рабыню, ты подходишь к постели [npc.namePos], чтобы проверить, действительно ли [npc.sheIs] спит или просто притворяется. Остановившись рядом с [npc.herHim], ты видишь, что [npc.her] [npc.eyes] закрыты, а [npc.her] грудь медленно вздымается в такт [npc.her] дыханию. Чтобы убедиться, что [npc.she] не притворяется, ты кладешь [pc.a_hand] на [npc.her] бедро и медленно ведешь своей [pc.fingers+] по [npc.her] [npc.breasts+]. Несмотря на твои прикосновения, [npc.she] не реагирует, подтверждая, что [npc.she] действительно спит.
 		</p>
 		<p>
-			Wanting to make the most of this opportunity, you decide not to wake [npc.name] and instead have some fun with [npc.herHim] while [npc.she] sleeps.
+			Желая извлечь из этой возможности максимум, ты решаешь не будить [npc.name], а вместо этого немного развлечься с [npc.herHim], пока [npc.she] спит.
 			#IF(pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-				 Grinning in devious delight at the prospect of fucking [npc.herHim] without [npc.herHim] even knowing, 
+				Предвкушая, как ты будешь ебать [npc.herHim] так, что [npc.herHim] даже не узнает, ты довольно скалишься.
 			#ELSE
-				 Smiling to yourself as you prepare to take advantage of [npc.her] vulnerable position,
+				 Ты довольно улыбаешься про себя, готовясь воспользоваться уязвимым положением [npc.her],
 			#ENDIF
-			 you experimentally reach down and grope [npc.namePos]
+			ты экспериментально опускаешь руку и ощупываешь [npc.namePos]
 			#IF(npc.hasPenis())
 				 [npc.cock+].
 			#ELSEIF(npc.hasVagina())
 				 [npc.pussy+].
 			#ELSE
-				 groin.
+				пах.
 			#ENDIF
-			 Being a very heavy sleeper, even this isn't enough to wake the [npc.race], and [npc.she] simply sighs in [npc.her] sleep in response to your lustful move.
-		</p>
-		<p>
-			Confident that [npc.she] won't wake up, you gently lower yourself down between your sleeping slave's [npc.legs] and prepare to fuck [npc.herHim] in [npc.her] sleep. So long as you remain gentle and don't shove anything down [npc.her] throat, you should be able to fuck [npc.herHim] without causing [npc.herHim] to wake up...
+			[npc.race] спит очень крепко, так что даже это не может её разбудить, а [npc.she] лишь сладко вздыхает во [npc.her] сне в ответ на твой похотливый жест.
+		</p><p>
+			Уверенный, что [npc.she] не проснется, ты осторожно опускаешься между [npc.legs] своей спящей рабыни и готовишься трахнуть [npc.herHim] во время [npc.her] сна. Если ты будешь действовать нежно и не полезешь ничем в [npc.her] глотку, то тебе удастся трахнуть [npc.herHim] так, чтобы не заставить [npc.herHim] проснуться...
 		</p>
 	#ELSEIF(npc.isDollStatue())
 		<p>
-			Finding yourself getting turned on by [npc.namePos] perfect impression of a lifeless statue, you [pc.step] forwards and lustfully grope [npc.her]
+			Понимая, что тебя возбуждает то, как идеально [npc.namePos] изображает безжизненную статую, ты [pc.step] вперед и похотливо ощупываешь [npc.her]
 			#IF(npc.hasBreasts())
 				 [npc.breasts+].
 			#ELSE
 				 [npc.ass+].
 			#ENDIF
-			 [npc.Her] complete lack of a reaction to your touch only serves to get you even more aroused, and you decide that the only thing for it is to give this doll a good fucking.
+			 Полное отсутствие реакции [npc.Her] на твои прикосновения лишь сильнее раззадоривает тебя, и ты решаешь, что единственный выход — как следует оттрахать эту куклу.
 		</p>
 		<p>
 			#IF(npc.hasSlaveJobSetting(SLAVE_JOB_DOLL_STATUE, SLAVE_JOB_SETTING_DOLL_STATUE_MISSIONARY) || npc.hasSlaveJobSetting(SLAVE_JOB_DOLL_STATUE, SLAVE_JOB_SETTING_DOLL_STATUE_BRIDGE))
-				As [npc.sheIs] already lying back with [npc.her] [npc.legs] spread, you simply drop down and prepare to fuck [npc.herHim] in the missionary position.
+				Поскольку [npc.sheIs] уже лежит на спине, раздвинув [npc.her] [npc.legs], ты просто опускаешься сверху, готовясь трахать [npc.herHim] в миссионерской позе.
 			#ELSEIF(npc.hasSlaveJobSetting(SLAVE_JOB_DOLL_STATUE, SLAVE_JOB_SETTING_DOLL_STATUE_ALL_FOURS))
-				As [npc.sheIs] already down on all fours, you simply drop down behind [npc.herHim] and prepare to fuck [npc.herHim] doggy-style.
+				Поскольку [npc.sheIs] уже стоит на четвереньках, ты просто нависаешь над [npc.herHim] и готовишься ебать [npc.herHim] в позе догги-стайл.
 			#ELSEIF(npc.hasSlaveJobSetting(SLAVE_JOB_DOLL_STATUE, SLAVE_JOB_SETTING_DOLL_STATUE_SQUATTING))
-				As [npc.sheIs] already squatting down on the floor, you simply [pc.step] forwards and prepare to receive oral from [npc.herHim].
+				[npc.sheIs] уже сидит на корточках на полу, так что тебе остается лишь [pc.step] вперед и приготовиться к тому, что [npc.herHim] отсосет тебе.
 			#ELSE
-				[pc.Stepping] forwards, you press your body against [npc.hers] and prepare to fuck [npc.herHim].
+				[pc.Stepping] подается вперед, ты прижимаешься всем телом к [npc.hers] и готовишься трахнуть [npc.herHim].
 			#ENDIF
 		</p>
 	#ELSEIF(npc.hasSlavePermissionSetting(SLAVE_PERMISSION_SETTING_GENERAL_CRAWLING))
 		<p>
-			[pc.speech(I know what it is you want,)] you tease, looking down at [npc.name], who, thanks to your order of having to crawl everywhere [npc.she] goes, is on all fours before you. [pc.speech(You just want your [pc.mistress] to give you some attention, don't you?)]
+			[pc.speech(Я знаю, чего ты хочешь,)] — дразнишь ты, глядя сверху вниз на [npc.name], которая из-за твоего приказа ползать везде, где [npc.she], стоит перед тобой на четвереньках. [pc.speech(Тебе просто хочется, чтобы твой [pc.mistress] уделил тебе немного внимания, верно?)]
 		</p>
 		<p>
 			#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-				[npc.speech(Eugh, I hate you so much...)] [npc.name] remarks, scowling at you for a moment before hungrily gazing up and down over your body and stating, [npc.speech(I guess I have no choice in the matter, do I? Anyway, a good hate-fuck wouldn't be so bad...)]
+				[npc.speech(Фу, как же я тебя ненавижу...)] — замечает [npc.name], на мгновение нахмурившись на тебя, а затем жадно оглядывая твое тело с ног до головы и добавляя: [npc.speech(Полагаю, у меня нет выбора, да? Впрочем, хороший секс на почве ненависти был бы не так уж плох...)]
 			#ELSE
 				#IF(npc.isFeminine())
-					[npc.speech(Yes, [pc.name],)] [npc.name] sensually replies, biting [npc.her] [npc.lip] and letting out a horny moan as [npc.she] looks up at you, [npc.speech(Please, I want you to take me...)]
+					[npc.speech(Да, [pc.name],)] — чувственно отвечает [npc.name], прикусывая [npc.her] [npc.lip] и издавая похотливый стон, пока [npc.she] смотрит на тебя снизу вверх: [npc.speech(Пожалуйста, я хочу, чтобы ты взял меня...)]
 				#ELSE
-					[npc.speech(Yes, [pc.name],)] [npc.name] replies, smiling at you and letting out a hungry groan as [npc.she] looks up at you, [npc.speech(Please, I want you to take me...)]
+					[npc.speech(Да, [pc.name],)] — отвечает [npc.name], улыбаясь тебе и издавая голодный стон, пока [npc.she] смотрит на тебя снизу вверх: [npc.speech(Пожалуйста, я хочу, чтобы ты взял меня...)]
 				#ENDIF
 			#ENDIF
 		</p>
 		<p>
 			#IF(!pc.isTaur())
-				Stepping around behind your submissive slave, you drop to your knees, before taking hold of [npc.her] [npc.hips+] and pulling [npc.herHim] in against your groin. Letting out an especially horny [npc.moan], [npc.she] cries out, [npc.speech(Yes, fuck me like an animal!)]
+				Обходя свою покорную рабыню со спины, ты опускаешься на колени, берешь [npc.her] за [npc.hips+] и притягиваешь [npc.herHim] к своему паху. Издав особенно возбужденный [npc.moan], [npc.she] вскрикивает: [npc.speech(Да, трахай меня как животное!)]
 			#ELSE
-				Moving around behind your submissive slave, you step forwards over the top of [npc.herHim], before lowering your [pc.legConfiguration] body down to grind against [npc.herHim]. Letting out an especially horny [npc.moan], [npc.she] cries out, [npc.speech(Yes, mount me and rut me like an animal!)]
+				Перемещаясь позади своей покорной рабыни, ты переступаешь через [npc.herHim], а затем опускаешь свое [pc.legConfiguration] тело, чтобы прижаться и тереться о [npc.herHim]. Издавая особенно похотливый [npc.moan], [npc.she] вскрикивает: [npc.speech(Да, оседлай меня и трахай, словно животное!)]
 			#ENDIF
-		</p><p>
-			С нетерпением выполняя просьбу [npc.she], ты готовься начать трахать свою рабыню на полу в комнате [npc.her]...
+		</p>
+		<p>
+			Сгорая от желания исполнить просьбу [npc.she], ты готовишься начать трахать свою рабыню прямо на полу в комнате [npc.her]...
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(I know what it is you want,)] you tease, stepping forwards and reaching out to take hold of [npc.namePos] [npc.hips+]. [pc.speech(You just want your [pc.mistress] to give you some attention, don't you?)]
+			[pc.speech(Я знаю, чего ты хочешь,)] дразнишь ты, делая шаг вперед и хватая [npc.namePos] за [npc.hips+]. [pc.speech(Тебе просто нужно, чтобы твоя [pc.mistress] уделила тебе внимание, верно?)]
 		</p>
 		<p>
 			#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
-				[npc.speech(Eugh, I hate you so much...)] [npc.name] remarks, scowling at you for a moment before hungrily gazing up and down over your body and stating, [npc.speech(I guess I have no choice in the matter, do I? Anyway, a good hate-fuck wouldn't be so bad...)]
+				[npc.speech(Фу, как же я тебя ненавижу...)] — замечает [npc.name], на мгновение нахмурившись на тебя, а затем жадно оглядывая твое тело с ног до головы и добавляя: [npc.speech(Полагаю, у меня нет выбора, да? Впрочем, хороший секс на почве ненависти был бы не так уж плох...)]
 			#ELSE
 				#IF(npc.isFeminine())
-					[npc.speech(Yes, [pc.name],)] [npc.name] sensually replies, biting [npc.her] [npc.lip] and letting out a horny moan as [npc.she] leans into you, [npc.speech(Please, I want you...)]
+					[npc.speech(Да, [pc.name],)] чувственно отвечает [npc.name], прикусывая [npc.her] за [npc.lip] и издавая похотливый стон, пока [npc.she] прижимается к тебе: [npc.speech(Пожалуйста, я хочу тебя...)]
 				#ELSE
-					[npc.speech(Yes, [pc.name],)] [npc.name] replies, smiling at you and letting out a hungry groan as [npc.she] leans into you, [npc.speech(Please, I want you...)]
+					[npc.speech(Да, [pc.name],)] отвечает [npc.name], улыбаясь тебе и издавая голодный стон, пока [npc.she] прижимается к тебе: [npc.speech(Пожалуйста, я хочу тебя...)]
 				#ENDIF
 			#ENDIF
+		</p><p>
+			Когда теплое тело [npc.namePos] прижимается к твоему, ты властно притягиваешь [npc.herHim] к себе и жадно целуешь [npc.herHim] прямо в [npc.lips]. [npc.name] приоткрывает [npc.her] рот, позволяя твоему [pc.tongue] скользнуть внутрь [npc.hers], и издает счастливый, приглушенный [npc.moan], пока вы оба увлеченно целуетесь.
 		</p>
 		<p>
-			As [npc.namePos] warm body presses against yours, you dominantly pull [npc.herHim] in against you and kiss [npc.herHim] fully on the [npc.lips]. Opening [npc.her] mouth to allow your [pc.tongue] to slide in over [npc.hers], [npc.name] lets out a happy, muffled [npc.moan] as the two of you start making out with one another.
-		</p>
-		<p>
-			After just a moment, you find yourself wanting more than just a kiss, and after pulling back, you [pc.moan], [pc.speech(I've got an hour or two to spare, let's make the most of it...)]
+			Спустя всего мгновение ты понимаешь, что тебе мало просто поцелуя, и, отстранившись, ты [pc.moan]: [pc.speech(У меня есть час или два, давай проведем их с пользой...)]
 		</p>
 	#ENDIF
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="SEX_SPITROAST_FRONT_START"><![CDATA[
-	#VAR
+	<htmlContent tag="SEX_SPITROAST_FRONT_START"><![CDATA[#VAR
 		var isRape = !npc.isAttractedTo(pc) && !npc.isAttractedTo(npc2);
 	
 		var positioning = "";
 		if(npc.getLegConfiguration()==LEG_CONFIGURATION_BIPEDAL) {
-			positioning = "onto [npc.her] hands and knees ";
+			positioning = "на [npc.her] руки и колени ";
 		}
-		var playerPositioning = "Falling to your knees in front of [npc.name], you say,";
+		var playerPositioning = "Падая на колени перед [npc.name], ты говоришь,";
 		if(pc.isTaur()) {
-			playerPositioning = "Turning your [pc.legConfiguration] body to one side, you present your groin to [npc.name], before calling down to [npc.herHim],";
+			playerPositioning = "Повернувшись своим [pc.legConfiguration] телом боком, ты подставляешь пах [npc.name], а затем окликаешь [npc.herHim],";
 		}
-	#ENDVAR
-	
-	#IF(npc.isDollStatue())
+	#ENDVAR	#IF(npc.isDollStatue())
 		<p>
-			Finding yourself getting turned on by [npc.namePos] perfect impression of a lifeless statue, you [pc.step] forwards and lustfully grope [npc.her]
+			Понимая, что тебя возбуждает то, как идеально [npc.namePos] изображает безжизненную статую, ты [pc.step] вперед и похотливо ощупываешь [npc.her]
 			#IF(npc.hasBreasts())
 				 [npc.breasts+].
 			#ELSE
 				 [npc.ass+].
 			#ENDIF
-			 [npc.Her] complete lack of a reaction to your touch only serves to get you even more aroused, and you decide that the only thing for it is to give this doll a good fucking.
+			 Полное отсутствие реакции [npc.Her] на твои прикосновения лишь сильнее раззадоривает тебя, и ты решаешь, что единственный выход — как следует оттрахать эту куклу.
 		</p>
 		<p>
-			Pushing [npc.name] down [#positioning], you look over to one side and see [npc2.name] gazing greedily down at [npc.namePos] ass.
+		
+Прижимая [npc.name] [#positioning], ты косишь глазами в сторону и видишь, как [npc2.name] жадно пялится на задницу [npc.namePos].
 			#IF(!npc2.isTaur())
-				 Wasting no time, [npc2.she] sinks down onto [npc2.her] knees behind [npc.name] and gets ready to fuck [npc.herHim].
+				 Не теряя времени, [npc2.she] опускается на [npc2.her] колени позади [npc.name], готовясь трахнуть [npc.herHim].
 			#ELSE
-				 Wasting no time, [npc2.she] positions [npc2.her] [npc2.legConfiguration] body over the top of [npc.name] and gets ready to fuck [npc.herHim].
+				 Не теряя времени, [npc2.she] устраивается своим [npc2.her] [npc2.legConfiguration] телом поверх [npc.name], готовясь трахнуть [npc.herHim].
 			#ENDIF
-			 Taking your place in front of [npc.name], you prepare to spitroast [npc.herHim]...
+			 Занимая свое место перед [npc.name], ты готовишься устроить сэндвич из [npc.herHim]...
 		</p>
 	#ELSEIF(!isRape)
 		<p>
-			[pc.speech(You know, I was thinking that the three of us could have some fun together,)] you tease, turning to face [npc.name]. [pc.speech(You want to show [npc2.name] and I what a horny little slave you are, don't you?)]
+			[pc.speech(Знаешь, я тут подумал, что нам троим было бы весело вместе,)] — дразнишь ты, поворачиваясь к [npc.name]. [pc.speech(Ты ведь хочешь показать нам с [npc2.name], какая ты похотливая маленькая рабыня, верно?)]
 		</p>
 		<p>
-			[npc.speech(Yes, [pc.name],)] [npc.name] replies, before submissively pouting as you run your [pc.fingers] over [npc.her] [npc.lips+]. [npc.speech(Would you like to use my mouth?)]
+			[npc.speech(Да, [pc.name],)] — отвечает [npc.name], после чего покорно дует губки, когда ты проводишь своей [pc.fingers] по [npc.her] [npc.lips+]. [npc.speech(Хочешь, чтобы я использовала свой рот?)]
 		</p>
 		<p>
-			[pc.speech(Yes, I'd like that very much,)] you reply, [pc.speech(Get down on all fours now, so that we can all have some fun together.)]
+			[pc.speech(Да, это было бы просто чудесно,)] — отвечаешь ты, [pc.speech(А теперь вставай на четвереньки, чтобы мы все могли вместе повеселиться.)]
 		</p>
 		<p>
-			Immediately doing as [npc.sheIs] asked, [npc.name] drops down [#positioning] before you. Looking over to one side, you see [npc2.name] gazing greedily down at [npc.her] ass.
+		
+Тут же выполняя просьбу [npc.sheIs], [npc.name] опускается [#positioning] перед тобой. Косясь в сторону, ты видишь, как [npc2.name] жадно пялится на задницу [npc.her].
 			#IF(!npc2.isTaur())
-					 Sinking down onto [npc2.her] knees behind [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(Oh yeah, [pc.name] and I will show you a real good time, so you just relax and enjoy this.)]
+Опустившись на [npc2.her] колени позади [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, [pc.name] и я устроим тебе незабываемое время, так что просто расслабься и наслаждайся.)]
 				</p>
 				<p>
-					Reaching down to squeeze [npc.namePos] [npc.ass+], [npc2.name] grins as [npc2.her] move is met by a surprised, erotic yelp. Turning [npc.her] head back, [npc.name] raises [npc.her] ass and shakes it from side to side as [npc.she] teases, [npc.speech(Well, aren't you super eager to get a piece of me? Make sure to give me a good, hard fucking while I pleasure [pc.name] with my mouth!)]
+					Сжав [npc.namePos] [npc.ass+], [npc2.name] ухмыляется, когда [npc2.her] отвечает удивленным, эротичным вскриком. Обернув [npc.her] голову, [npc.name] задирает [npc.her] задницу и виляет ею из стороны в сторону, пока [npc.she] дразнит: [npc.speech(Ну что, ты прямо-таки жаждешь откусить кусочек от меня? Только не забудь хорошенько и жестко оттрахать меня, пока я ласкаю [pc.name] своим ртом!)]
 			#ELSE
-					 Stepping forwards so as to position [npc2.her] [npc2.legConfiguration] body over the top of [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(Oh yeah, [pc.name] and I will show you a real good time, so you just relax and enjoy this.)]
+					 Шагнув вперед, чтобы расположить [npc2.her] тело [npc2.legConfiguration] поверх [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, мы с [pc.name] устроим тебе отличный отдых, так что просто расслабься и наслаждайся.)]
 				</p>
 				<p>
-					Grinding [npc2.her] groin down against [npc.namePos] [npc.ass+], [npc2.name] grins as [npc2.her] move is met by a surprised, erotic yelp. With a lewd [npc.moan], [npc.name] raises [npc.her] ass and presses it up against [npc2.namePos] animal-like body as [npc.she] teases, [npc.speech(Well, weren't you super eager to mount me? Make sure to give me a good, hard rutting while I pleasure [pc.name] with my mouth!)]
+					Втирая [npc2.her] пах в [npc.namePos] [npc.ass+], [npc2.name] ухмыляется, когда [npc2.her] отвечает удивленным, эротичным вскриком. С похотливым [npc.moan], [npc.name] задирает [npc.her] задницу и прижимается ею к звериному телу [npc2.namePos], пока [npc.she] дразнит: [npc.speech(Ну что, ты ведь так жаждала оседлать меня? Только не забудь хорошенько и жестко спариться со мной, пока я ласкаю [pc.name] своим ртом!)]
 			#ENDIF
 		</p>
 		<p>
-			[#playerPositioning] [pc.speech(That's a good [npc.girl]! Now it's time for you to show us what an obedient subby slave you are!)]
+			[#playerPositioning] [pc.speech(Вот это отличная [npc.girl]! А теперь пришло время показать нам, какая ты послушная и покорная рабыня!)]
 		</p>
 		<p>
-			With an enthusiastic [npc.moan], [npc.name] prepares to be used by the two of you...
+			С восторженным [npc.moan], [npc.name] готовится к тому, чтобы вы вдвоем использовали её...
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(You know, I was thinking that you need to be reminded of the fact that you're nothing more than my property,)] you tease, turning to face [npc.name], [pc.speech(and what better way to do that than for [npc2.name] and I to give you a good fucking?)]
+			[pc.speech(Знаешь, я тут подумал, что тебе нужно напомнить о том, что ты всего лишь моя собственность,)] — дразнишь ты, поворачиваясь к [npc.name], — [pc.speech(и какой способ лучше, чем если мы с [npc2.name] хорошенько тебя оттрахаем?)]
 		</p>
 		<p>
-			[npc.speech([pc.Name], please, don't!)] [npc.name] pleads, turning [npc.her] face away as you reach up to run your [pc.fingers] over [npc.her] [npc.lips+]. [npc.speech(Get away from me!)]
+			[npc.speech([pc.Name], пожалуйста, не надо!)] — умоляет [npc.name], отворачивая [npc.her] лицо, когда ты тянешься рукой, чтобы провести [pc.fingers] по [npc.her] [npc.lips+]. [npc.speech(Уйди от меня!)]
 		</p>
 		<p>
 			#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-				Smiling in delight as [npc.name] starts to panic, you cruelly tease, [pc.speech(That's right, wail and scream all you want; it's no fun if my victims enjoy it!)]
+				Наблюдая с довольной улыбкой за тем, как [npc.name] начинает паниковать, ты жестоко дразнишь её: [pc.speech(Верно, вой и кричи сколько влезет; нет никакого удовольствия, если мои жертвы получают кайф!)]
 			#ELSE
-				Letting out a disappointed sigh as [npc.name] starts to panic, you say, [pc.speech(Hush now, [npc.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+				Разочарованно вздохнув при виде паники [npc.name], ты говоришь: [pc.speech(Тише, [npc.name]. Знаешь, тебе было бы куда проще, если бы ты уже просто смирилась со своей судьбой.)]
 			#ENDIF
 		</p>
 		<p>
-			Grabbing hold of [npc.her] shoulders, you push [npc.name] down [#positioning] before you. Looking over to one side, you see [npc2.name] gazing greedily down at [npc.her] ass.
+			Схватив [npc.her] за плечи, ты прижимаешь [npc.name] к земле [#positioning] перед собой. Посмотрев в сторону, ты видишь, как [npc2.name] жадно пялится на задницу [npc.her].
 			#IF(!npc2.isTaur())
-					 Sinking down onto [npc2.her] knees behind [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(Oh yeah, [pc.name] and I will soon put you in your place!)]
-				</p>
+Опускаясь на [npc2.her] колени позади [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, [pc.name] и я скоро поставим тебя на место!)]
+</p>
 				<p>
-					Reaching down to squeeze [npc.namePos] [npc.ass+], [npc2.name] grins as [npc2.her] move is met by a frantic wail.
+					Схватив и сжав [npc.namePos] [npc.ass+], [npc2.name] ухмыляется, когда движение [npc2.her] сопровождается отчаянным воем.
 			#ELSE
-					 Stepping forwards so as to position [npc2.her] [npc2.legConfiguration] body over the top of [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(Oh yeah, [pc.name] and I will soon put you in your place!)]
+					 Шагнув вперед, чтобы накрыть тело [npc2.her] [npc2.legConfiguration] телом [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, мы с [pc.name] скоро поставим тебя на место!)]
 				</p>
 				<p>
-					Grinding [npc2.her] groin down against [npc.namePos] [npc.ass+], [npc2.name] grins as [npc2.her] move is met by a frantic wail.
+					Втирая пах [npc2.her] в [npc.namePos] [npc.ass+], [npc2.name] скалится, когда движение [npc2.her] вызывает очередной истошный вопль.
 			#ENDIF
-			 With tears in [npc.her] [npc.eyes], [npc.name] tries, to no avail, to crawl away as [npc.she] shrieks, [npc.speech(Stop it! No!)]
+			 С глазами [npc.her] [npc.eyes], полными слез, [npc.name] тщетно пытается уползти, пока [npc.she] визжит: [npc.speech(Прекрати! Нет!)]
 		</p>
 		<p>
-			[#playerPositioning] [pc.speech(Remember that you're nothing but my slave, [npc.girl]! Now it's time to train you to be an obedient whore for your [pc.mistress]!)]
+			[#playerPositioning] [pc.speech(Помни, что ты всего лишь моя рабыня, [npc.girl]! Пришло время приучить тебя быть послушной шлюхой для твоей [pc.mistress]!)]
 		</p>
 		<p>
 		#IF(npc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
-			There seems to be something not quite right in the tone of [npc.namePos] resultant scream, as though [npc.sheIs] not genuinely distressed by what's happening to [npc.herHim]. As one of [npc.her] frantic sobs momentarily turns into an excited squeal, you suddenly realise that [npc.sheIs] getting off on the fact that [npc.sheIs] being raped...
-		#ELSE
-			With a desperate, shuddering scream, [npc.name] does [npc.her] best to resist the advances of the two of you...
-		#ENDIF
+В тоне [npc.namePos] крика слышится что-то странное, будто [npc.sheIs] не так уж и мучается от того, что происходит с [npc.herHim]. Когда один из [npc.her] неистовых всхлипов на мгновение сменяется возбужденным визгом, ты внезапно понимаешь: [npc.sheIs] получает удовольствие от того, что [npc.sheIs] насилуют...		#ELSE
+С отчаянным, дрожащим криком [npc.name] изо всех сил [npc.her] пытается сопротивляться вашим общим ласкам...		#ENDIF
 		</p>
 	#ENDIF
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="SEX_SPITROAST_BEHIND_START"><![CDATA[#VAR
-	var isRape = !npc.isAttractedTo(pc) && !npc.isAttractedTo(npc2);
+	<htmlContent tag="SEX_SPITROAST_BEHIND_START"><![CDATA[
+	#VAR
+		var isRape = !npc.isAttractedTo(pc) && !npc.isAttractedTo(npc2);
+		
+		var positioning = "";
+		if(npc.getLegConfiguration()==LEG_CONFIGURATION_BIPEDAL) {
+			positioning = "на четвереньки перед [npc.her]";
+		}
+		var playerPositioning = "Падая на колени позади [npc.name], ты говоришь:";
+		var playerMounting = "трахайте [npc.herHim]! Не забудьте хорошенько и жестко оттрахать её, пока я ласкаю [npc2.name] своим ртом!";
+		if(pc.isTaur()) {
+			playerPositioning = "Шагнув вперед так, что твоё [pc.legConfiguration] тело нависает над [npc.name], ты кричишь [npc.herHim]:";
+			playerMounting = "оседлайте [npc.herHim]! Не забудьте хорошенько и жестко оттрахать её, пока я ласкаю [npc2.name] своим ртом!";
+		}
+	#ENDVAR
 	
-	var positioning = "";
-	if(npc.getLegConfiguration()==LEG_CONFIGURATION_BIPEDAL) {
-		positioning = "onto [npc.her] hands and knees";
-	}
-	var playerPositioning = "Falling to your knees behind [npc.name], you say,";
-	var playerMounting = "take [npc.herHim]! Make sure to give me a good, hard fucking while I pleasure [npc2.name] with my mouth!";
-	if(pc.isTaur()) {
-		playerPositioning = "Stepping forwards so that your [pc.legConfiguration] body is over the top of [npc.name], you call down to [npc.herHim],";
-		playerMounting = "mount [npc.herHim]! Make sure to give me a good, hard rutting while I pleasure [npc2.name] with my mouth!";
-	}
-#ENDVAR
-	
-#IF(npc.isDollStatue())
-	<p>
-		Finding yourself getting turned on by [npc.namePos] perfect impression of a lifeless statue, you [pc.step] forwards and lustfully grope [npc.her]
-		#IF(npc.hasBreasts())
-			 [npc.breasts+].
-		#ELSE
-			 [npc.ass+].
-		#ENDIF
-		 [npc.Her] complete lack of a reaction to your touch only serves to get you even more aroused, and you decide that the only thing for it is to give this doll a good fucking.
-	</p>
+	#IF(npc.isDollStatue())
 		<p>
-			Pushing [npc.name] down [#positioning], you look over to one side and see [npc2.name] gazing greedily down at [npc.namePos] ass.
-			#IF(!npc2.isTaur())
-				 Wasting no time, [npc2.she] sinks down onto [npc2.her] knees in front of [npc.name] and gets ready to use [npc.her] mouth.
+			Понимая, что тебя возбуждает то, как идеально [npc.namePos] изображает безжизненную статую, ты [pc.step] вперед и похотливо ощупываешь [npc.her]
+			#IF(npc.hasBreasts())
+				 [npc.breasts+].
 			#ELSE
-				 Wasting no time, [npc2.she] moves around in front of [npc.name] and turns [npc2.her] [npc2.legConfiguration] body to one side, presenting [npc2.her] groin and getting ready to receive oral.
+				 [npc.ass+].
 			#ENDIF
-			 Taking your place behind [npc.name], you prepare to spitroast [npc.herHim]...
+			 Полное отсутствие реакции [npc.Her] на твои прикосновения лишь сильнее раззадоривает тебя, и ты решаешь, что единственный выход — как следует оттрахать эту куклу.
+		</p>
+		<p>
+		
+Прижимая [npc.name] [#positioning], ты косишь глазами в сторону и видишь, как [npc2.name] жадно пялится на задницу [npc.namePos].
+			#IF(!npc2.isTaur())
+				 Не теряя времени, [npc2.she] опускается на [npc2.her] колени перед [npc.name] и готовится использовать [npc.her] рот.			#ELSE
+				 Не теряя времени, [npc2.she] обходит [npc.name] спереди и поворачивает [npc2.her] [npc2.legConfiguration] боком, открывая [npc2.her] пах и готовясь к оральному сексу.			#ENDIF
+			 Встав позади [npc.name], ты готовишься устроить для [npc.herHim] настоящий спитроаст...
 		</p>
 	#ELSEIF(!isRape)
 		<p>
-			[pc.speech(You know, I was thinking that the three of us could have some fun together,)] you tease, turning to face [npc.name]. [pc.speech(You want to show [npc2.name] and I what a horny little sub you are, don't you?)]
+			[pc.speech(Знаешь, я тут подумал, что нам троим было бы весело вместе,)] — дразнишь ты, поворачиваясь к [npc.name]. [pc.speech(Ты ведь хочешь показать нам с [npc2.name], какая ты похотливая маленькая рабыня, верно?)]
 		</p>
 		<p>
-			[npc.speech(Yes, [pc.name],)] [npc.name] replies, before submissively pushing [npc.her] [npc.ass+] out towards you as you turn [npc.herHim] around to position yourself at [npc.her] back. [npc.speech(Would you like to take me from behind?)]
-		</p><p>
-			[pc.speech(Да, мне это очень нравится,)] ты отвечаешь, [pc.speech(Теперь ляг на четвереньки, чтобы мы могли все вместе повеселиться.)]
+			[npc.speech(Да, [pc.name],)] — отвечает [npc.name], покорно подталкивая [npc.her] [npc.ass+] к тебе, пока ты разворачиваешь [npc.herHim], чтобы устроиться у [npc.her] со спины. [npc.speech(Хочешь взять меня сзади?)]
 		</p>
 		<p>
-			Immediately doing as [npc.sheIs] asked, [npc.name] drops down [#positioning] before you. Looking over to one side, you see [npc2.name] gazing greedily down at [npc.herHim].
+			[pc.speech(Да, это было бы просто чудесно,)] — отвечаешь ты, [pc.speech(А теперь вставай на четвереньки, чтобы мы все могли вместе повеселиться.)]
+		</p>
+		<p>
+			Тут же исполнив просьбу [npc.sheIs], [npc.name] опускается [#positioning] перед тобой. Посмотрев в сторону, ты видишь, как [npc2.name] жадно пялится на [npc.herHim].
 			#IF(!npc2.isTaur())
-				 Sinking down onto [npc2.her] knees in front of [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(Oh yeah, [pc.name] and I will show you a real good time, so you just relax and enjoy this.)]
+Опустившись на [npc2.her] колени перед [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, [pc.name] и я устроим тебе незабываемое время, так что просто расслабься и наслаждайся.)]
 			</p>
 			<p>
 				Reaching down to run [npc2.her] [npc2.fingers] over [npc.namePos] [npc.lips+], [npc2.name] grins as [npc2.her] move is met by a long, erotic [npc.moan]. Turning [npc.her] head as [npc.she] shifts [npc.her] focus back onto you, [npc.name] raises [npc.her] ass and shakes it from side to side as [npc.she] teases, [npc.speech(Come on, [pc.name], make sure to give me a good, hard fucking while I pleasure [npc2.name] with my mouth!)]
 			#ELSE
-				 Stepping around in front of [npc.name], [npc2.name] turns [npc2.her] [npc2.legConfiguration] body to one side, presenting [npc2.her] groin to [npc.herHim] as [npc.she] [npc2.moansVerb], [npc2.speech(Oh yeah, [pc.name] and I will show you a real good time, so you just relax and enjoy this.)]
+Подступив к [npc.name], [npc2.name] поворачивает [npc2.her] [npc2.legConfiguration] тело боком, подставляя [npc2.her] пах [npc.herHim], пока [npc.she] [npc2.moansVerb], [npc2.speech(О да, [pc.name] и я устроим тебе незабываемое время, так что просто расслабься и наслаждайся.)]
 			</p>
 			<p>
 				Turning [npc.her] head as [npc.she] shifts [npc.her] focus back onto you, [npc.name] raises [npc.her] ass and shakes it from side to side as [npc.she] teases, [npc.speech(Come on, [pc.name], make sure to give me a good, hard fucking while I pleasure [npc2.name] with my mouth!)]
 			#ENDIF
 		</p>
 		<p>
-			[#playerPositioning] [pc.speech(That's a good [npc.girl]! Now it's time for you to show us what an obedient subby slut you are!)]
+			[#playerPositioning] [pc.speech(Умница, [npc.girl]! А теперь пришло время показать нам, какая ты послушная и любвеобильная сучка!)]
 		</p>
 		<p>
-			With an enthusiastic [npc.moan], [npc.name] prepares to be used by the two of you...
+			С восторженным [npc.moan], [npc.name] готовится к тому, чтобы вы вдвоем использовали её...
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(You know, I was thinking that you need to be reminded of the fact that you're nothing more than my property,)] you tease, turning to face [npc.name], [pc.speech(and what better way to do that than for [npc2.name] and I to give you a good fucking?)]
+			[pc.speech(Знаешь, я тут подумал, что тебе нужно напомнить о том, что ты всего лишь моя собственность,)] — дразнишь ты, поворачиваясь к [npc.name], — [pc.speech(и какой способ лучше, чем если мы с [npc2.name] хорошенько тебя оттрахаем?)]
 		</p>
 		<p>
-			[npc.speech([pc.Name], please, don't!)] [npc.name] pleads, before trying to pull [npc.her] [npc.ass+] away from you as you turn [npc.herHim] around to position yourself at [npc.her] back. [npc.speech(Get away from me!)]
+			[npc.speech([pc.Name], пожалуйста, не надо!)] [npc.name] умоляет, пытаясь оттащить [npc.her] [npc.ass+] от тебя, пока ты разворачиваешь [npc.herHim], чтобы встать у [npc.her] со спины. [npc.speech(Уйди от меня!)]
 		</p>
 		<p>
 			#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-				Smiling in delight as [npc.name] starts to panic, you cruelly tease, [pc.speech(That's right, wail and scream all you want; it's no fun if my victims enjoy it!)]
+				Наблюдая с довольной улыбкой за тем, как [npc.name] начинает паниковать, ты жестоко дразнишь её: [pc.speech(Верно, вой и кричи сколько влезет; нет никакого удовольствия, если мои жертвы получают кайф!)]
 			#ELSE
-				Letting out a disappointed sigh as [npc.name] starts to panic, you say, [pc.speech(Hush now, [npc.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+				Разочарованно вздохнув при виде паники [npc.name], ты говоришь: [pc.speech(Тише, [npc.name]. Знаешь, тебе было бы куда проще, если бы ты уже просто смирилась со своей судьбой.)]
 			#ENDIF
 		</p>
 		<p>
-			Grabbing hold of [npc.her] shoulders, you push [npc.name] down [#positioning] before you. Looking over to one side, you see [npc2.name] gazing greedily down at [npc.herHim].
+			Схватив [npc.her] за плечи, ты прижимаешь [npc.name] к земле [#positioning]. Посмотрев в сторону, ты видишь, как [npc2.name] жадно пялится на [npc.herHim].
 			#IF(!npc2.isTaur())
-				 Sinking down onto [npc2.her] knees in front of [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(Oh yeah, [pc.name] and I will soon put you in your place!)]
-			</p>
-			<p>
-				Reaching down to run [npc2.her] [npc2.fingers] over [npc.namePos] [npc.lips+], [npc2.name] grins as [npc2.her] move is met by a frantic wail.
-			#ELSE
-				 Stepping around in front of [npc.name], [npc2.name] turns [npc2.her] [npc2.legConfiguration] body to one side, presenting [npc2.her] groin to [npc.herHim] as [npc.she] [npc2.moansVerb], [npc2.speech(Oh yeah, [pc.name] and I will soon put you in your place!)]
-			</p>
-			<p>
-				Pushing [npc2.her] groin into [npc.namePos] [npc.face+], [npc2.name] grins as [npc2.her] move is met by a frantic wail.
-			#ENDIF
-			 With tears in [npc.her] [npc.eyes], [npc.name] tries, to no avail, to crawl away as [npc.she] shrieks, [npc.speech(Stop it! No!)]
+Опустившись на [npc2.her] колени перед [npc.herHim], [npc2.she] [npc2.moans], [npc2.speech(О да, [pc.name] и я скоро поставим тебя на место!)]
+			</p><p>
+Протянув руку, чтобы провести [npc2.her] [npc2.fingers] по [npc.namePos] [npc.lips+], [npc2.name] ухмыляется, когда [npc2.her] движение вызывает отчаянный вопль.			#ELSE
+Пристроившись перед [npc.name], [npc2.name] поворачивает [npc2.her] [npc2.legConfiguration] тело боком, подставляя [npc2.her] пах [npc.herHim], пока [npc.she] [npc2.moansVerb], [npc2.speech(О да, [pc.name] и я скоро поставим тебя на место!)]
+			</p><p>
+Втискивая [npc2.her] в [npc.namePos] [npc.face+], [npc2.name] скалится, когда [npc2.her] в ответ на его движения разражается неистовым воплем.			#ENDIF
+			 С глазами [npc.her] [npc.eyes], полными слез, [npc.name] тщетно пытается уползти, пока [npc.she] визжит: [npc.speech(Прекрати! Нет!)]
 		</p>
 		<p>
-			[#playerPositioning] [pc.speech(Remember that you're nothing but my slave, [npc.girl]! Now it's time to train you to be an obedient whore for your [pc.mistress]!)]
+			[#playerPositioning] [pc.speech(Помни, что ты всего лишь моя рабыня, [npc.girl]! Пришло время приучить тебя быть послушной шлюхой для твоей [pc.mistress]!)]
 		</p>
 		<p>
 		#IF(npc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
-			There seems to be something not quite right in the tone of [npc.namePos] resultant scream, as though [npc.sheIs] not genuinely distressed by what's happening to [npc.herHim]. As one of [npc.her] frantic sobs momentarily turns into an excited squeal, you suddenly realise that [npc.sheIs] getting off on the fact that [npc.sheIs] being raped...
-		#ELSE
-			With a desperate, shuddering scream, [npc.name] does [npc.her] best to resist the advances of the two of you...
-		#ENDIF
+В тоне [npc.namePos] крика слышится что-то странное, будто [npc.sheIs] не так уж и мучается от того, что происходит с [npc.herHim]. Когда один из [npc.her] неистовых всхлипов на мгновение сменяется возбужденным визгом, ты внезапно понимаешь: [npc.sheIs] получает удовольствие от того, что [npc.sheIs] насилуют...		#ELSE
+С отчаянным, дрожащим криком [npc.name] изо всех сил [npc.her] пытается сопротивляться вашим общим ласкам...		#ENDIF
 		</p>
 	#ENDIF
 	]]>
@@ -417,115 +408,116 @@
 	
 	<htmlContent tag="SEX_SIDE_BY_SIDE_START"><![CDATA[
 	#IF(npc.isDollStatue() || npc2.isDollStatue())
+
 		<p>
-			Wanting nothing more than to fuck [npc.name] and [npc2.name], you grab hold of them and push them to the floor. Dropping down onto all fours beside on another, they assume just the position you were looking for, and eagerly drop down behind them.
+			Не желая ничего, кроме как трахнуть [npc.name] и [npc2.name], ты хватаешь их и швыряешь на пол. Встав на четвереньки рядом друг с другом, они принимают именно ту позу, которую ты искал, и ты с нетерпением нависаешь над ними сзади.
 		</p>
 		<p>
-			Slapping each of their asses in turn, you suffle forwards and prepare to fuck them side-by-side...
+			Поочередно шлепая каждую по заднице, ты подбираешься ближе, готовясь трахнуть их бок о бок...
 		</p>
 	#ELSEIF(npc.isAttractedTo(pc) && npc2.isAttractedTo(pc))
 		<p>
-			[pc.speech(You know, I was thinking that I could have some fun with the two of you at once...)] you tease, turning to face both [npc.name] and [npc2.name], before glaring dominantly at the two of them.
+			[pc.speech(Знаешь, я тут подумал... можно было бы развлечься сразу с вами обеими...)] — дразнишь ты, поворачиваясь к [npc.name] и [npc2.name], а затем бросаешь на них властный взгляд.
 		</p>
 		<p>
-			Sensing what it is that you want, both [npc.name] and [npc2.name] step towards each other, casting submissive glances at you before turning and dropping down onto all fours. Letting out a delighted [pc.moan], you step towards the two of them as they present their rear ends for your use.
+			Почувствовав твои желания, [npc.name] и [npc2.name] делают шаг навстречу друг другу, бросая на тебя покорные взгляды, после чего разворачиваются и встают на четвереньки. Издав восторженный [pc.moan], ты шагаешь к ним, пока они подставляют тебе свои задницы.
 		</p>
 		<p>
-			[npc.speech(Come and take us!)] [npc.name] [npc.moans], looking back over [npc.her] shoulder and seductively biting [npc.her] [npc.lip]. 
+			[npc.speech(Приди и возьми нас!)] — [npc.name] и [npc.moans] оглядываются через [npc.her] плечо, соблазнительно прикусывая [npc.her] [npc.lip].
 		</p>
 		<p>
-			[npc2.speech(Mmm, yes, put us in our place!)] [npc2.name] joins in, copying [npc.name] as [npc2.she] glances back over [npc2.her] shoulder and bats [npc.her] eyelids at you. 
+			[npc2.speech(Ммм, да, поставь нас на место!)] — подхватывает [npc2.name], подражая [npc.name], пока [npc2.she] смотрит через [npc2.her] плечо и кокетливо хлопает [npc.her] ресницами.
 		</p>
 		<p>
 			#IF(!pc.isTaur())
-				Dropping down onto your knees behind them, you prepare to do exactly as they say, and, reaching forwards to grab their asses in each [pc.hand], you [pc.moan], [pc.speech(I wonder which of you I'll fuck first...)]
+				Опустившись перед ними на колени, ты готовишься исполнить их желание и, протянув руки вперед, чтобы сжать их задницы в каждой [pc.hand], ты [pc.moan], [pc.speech(Интересно, в кого из вас я трахну первым...)]
 			#ELSE
-				Stepping forwards and preparing to use your [pc.legConfiguration] body to mount one of them, you wonder out loud, [pc.speech(I wonder which of you I'll rut first...)]
+				Делая шаг вперед и готовясь оседлать одну из них своим [pc.legConfiguration] телом, ты вслух размышляешь: [pc.speech(Интересно, в кого из вас я вложусь первым...)]
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			[pc.speech(You know, I was thinking that I could have some fun with the two of you at once...)] you tease, turning to face both [npc.name] and [npc2.name], before glaring dominantly at the two of them.
-		</p>#IF(!npc.isAttractedTo(pc) && !npc2.isAttractedTo(pc))
+			[pc.speech(Знаешь, я тут подумал... можно было бы развлечься сразу с вами обеими...)] — дразнишь ты, поворачиваясь к [npc.name] и [npc2.name], а затем бросаешь на них властный взгляд.
+		</p>
+		#IF(!npc.isAttractedTo(pc) && !npc2.isAttractedTo(pc))
 			<p>
-				Чувствуя, чего ты хочешь, [npc.name] и [npc2.name] начинают отступать, бросая друг на друга нервные взгляды, пока ты быстро подходишь и становишься перед ними. Прежде чем они успеют сопротивляться или убежать, ты хватаешь их за плечи и швыряешь каждого на четвереньки перед собой. Выпуская из себя довольное [pc.moan], ты подходишь к двум задницам, теперь представленным для твоего использования.
+				Чувствуя, чего ты хочешь, [npc.name] и [npc2.name] начинают понемногу отступать, нервно переглядываясь, пока ты стремительно наступаешь на них. Прежде чем у них появляется шанс вырваться или сбежать, ты хватаешь их за плечи и грубо швыряешь обоих на четвереньки перед собой. Издав восторженный [pc.moan], ты шагаешь к двум задницам, которые теперь полностью в твоем распоряжении.
 			</p>
 			<p>
-				Feeling as though this is the time in which to do something, [npc.name] tries to stand back up, complaining, [npc.speech(S-Stop it, [pc.name]! Can't you see we don't wan-)]
+				Почувствовав, что настал подходящий момент, [npc.name] пытается подняться на ноги, жалуясь: [npc.speech(П-прекрати, [pc.name]! Неужели ты не видишь, что мы не хот-)]
 			</p>
 			<p>
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					You quickly cut [npc.her] objections off as you reach down and grab the back of [npc.her] neck, before roughly slamming [npc.herHim] to the floor. Smiling in delight as [npc.name] lets out a panicked cry, you cruelly tease, [pc.speech(That's right, wail and scream all you want; it's no fun if my victims enjoy it!)]
+					Ты быстро пресекаешь возражения [npc.her], наклоняешься и хватаешь [npc.her] за загривок, после чего с силой впечатываешь [npc.herHim] в пол. С предвкушающей улыбкой на лице, пока [npc.name] издает панический крик, ты жестоко поддразниваешь: [pc.speech(Вот так, войте и кричите сколько влезет; нет никакого удовольствия, если мои жертвы получают кайф!)]
 				#ELSE
-					You quickly cut [npc.her] objections off as you reach down and grab the back of [npc.her] neck, before forcing [npc.herHim] to the floor. Tutting in disapproval as [npc.name] lets out a panicked cry, you say, [pc.speech(Hush now, [npc.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+					Ты быстро пресекаешь возражения [npc.her], наклоняешься и хватаешь [npc.her] за загривок, после чего заставляешь [npc.herHim] рухнуть на пол. С неодобрительным цоканьем, пока [npc.name] издает панический крик, ты говоришь: [pc.speech(Тише, [npc.name]. Знаешь, тебе было бы куда проще, если бы ты просто смирилась со своей участью.)]
 				#ENDIF
 			</p>
 			<p>
-				[npc2.speech(W-Why don't you just leave the two of us alone?!)] [npc2.name] joins in, trying to stand up for [npc.name] as [npc2.she] glances back over [npc2.her] shoulder to look up at you. 
+				[npc2.speech(П-почему ты просто не оставишь нас двоих в покое?!)] — подхватывает [npc2.name], пытаясь заступиться за [npc.name], пока [npc2.she] оглядывается через плечо [npc2.her], чтобы посмотреть на тебя.
 			</p>
 			<p>
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					Ruthlessly kicking [npc2.name] down, you snarl, [pc.speech(Unless you want to be locked in the stocks for an entire week, you'd better shut your mouth, [npc2.bitch]!)]
+					Безжалостно втаптывая [npc2.name] в грязь, ты рычишь: [pc.speech(Если не хочешь провести целую неделю в колодках, лучше прикрой пасть, [npc2.bitch]!)]
 				#ELSE
-					Ruthlessly pushing [npc2.namePos] head down, you threaten, [pc.speech(Unless you want to be locked in the stocks for an entire week, you'd better shut it!)]
+					Безжалостно прижимая голову [npc2.namePos] к земле, ты угрожающе цедишь: [pc.speech(Если не хочешь неделю торчать в колодках, лучше заткнись!)]
 				#ENDIF
 			</p>
 			<p>
-				With both [npc.namePos] and [npc2.namePos] resistance now being limited to tears and distressed wails, you're finally ready to start fucking them. With one final threatening snarl, you wonder out loud,
+				Когда сопротивление [npc.namePos] и [npc2.namePos] сводится лишь к слезам и жалобным воплям, ты наконец готов приступить к траху. Бросив напоследок угрожающее рычание, ты вслух вопрошаешь:
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					 [pc.speech(Now, which one of you worthless cunts should I fuck first?)]
+					 [pc.speech(Ну и кого из вас, никчемных сук, мне трахнуть первой?)]
 				#ELSE
-					 [pc.speech(Now, which one of you should I fuck first?)]
+					 [pc.speech(Ну и кого из вас мне трахнуть первой?)]
 				#ENDIF
 			</p>
 		#ELSEIF(!npc.isAttractedTo(pc))
 			<p>
-				Sensing what it is that you want, [npc.name] starts to back off, casting a nervous glance at [npc2.name] as you quickly move up to stand in front of them. Sensing that [npc.name] is about to struggle or attempt to flee, you grab [npc.herHim] by the shoulders and shove [npc.herHim] down onto all fours in front of you. Looking down at the rear end now presented for your use, you [pc.moan], [pc.speech(Go on, [npc2.name], join [npc.herHim] in presenting yourselves to me!)]
+				Чувствуя твои желания, [npc.name] начинает пятиться, нервно поглядывая на [npc2.name], пока ты стремительно приближаешься к ним. Заметив, что [npc.name] вот-вот начнет сопротивляться или попытается сбежать, ты хватаешь [npc.herHim] за плечи и швыряешь [npc.herHim] на четвереньки прямо перед собой. Глядя на задницу, которая теперь в твоем распоряжении, ты [pc.moan], [pc.speech(А ну, [npc2.name], подтягивайся к [npc.herHim] и тоже представь мне свою жопу!)]
 			</p>
 			<p>
-				Feeling as though this is the time in which to do something, [npc.name] tries to stand back up, complaining, [npc.speech(S-Stop it, [pc.name]! Can't you see I don't wan-)]
+				Понимая, что пора что-то предпринимать, [npc.name] пытается подняться, жалуясь: [npc.speech(П-прекрати, [pc.name]! Неужели не видишь, что я не хоч...)]
 			</p>
 			<p>
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					You quickly cut [npc.her] objections off as you reach down and grab the back of [npc.her] neck, before roughly slamming [npc.herHim] to the floor. Smiling in delight as [npc.name] lets out a panicked cry, you cruelly tease, [pc.speech(That's right, wail and scream all you want; it's no fun if my victims enjoy it!)]
+					Ты быстро пресекаешь возражения [npc.her], наклоняешься и хватаешь [npc.her] за загривок, после чего с силой впечатываешь [npc.herHim] в пол. С предвкушающей улыбкой на лице, пока [npc.name] издает панический крик, ты жестоко поддразниваешь: [pc.speech(Вот так, войте и кричите сколько влезет; нет никакого удовольствия, если мои жертвы получают кайф!)]
 				#ELSE
-					You quickly cut [npc.her] objections off as you reach down and grab the back of [npc.her] neck, before forcing [npc.herHim] to the floor. Tutting in disapproval as [npc.name] lets out a panicked cry, you say, [pc.speech(Hush now, [npc.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+					Ты быстро пресекаешь возражения [npc.her], наклоняешься и хватаешь [npc.her] за загривок, после чего заставляешь [npc.herHim] рухнуть на пол. С неодобрительным цоканьем, пока [npc.name] издает панический крик, ты говоришь: [pc.speech(Тише, [npc.name]. Знаешь, тебе было бы куда проще, если бы ты просто смирилась со своей участью.)]
 				#ENDIF
 			</p>
 			<p>
-				[npc2.speech(Don't worry, [npc.name], I'm sure you'll get into it,)] [npc2.name] offers as [npc2.she] drops down beside [npc.herHim]. 
+				[npc2.speech(Не волнуйся, [npc.name], уверена, тебе быстро понравится,)] — подбадривает [npc2.name], пока [npc2.she] опускается на колени рядом с [npc.herHim]. 
 			</p>
 			<p>
-				With [npc.namePos] resistance now being limited to tears and distressed wails, you're finally ready to start fucking both [npc.herHim] and [npc2.name]. With one final threatening snarl, you wonder out loud,
+				Поскольку сопротивление [npc.namePos] теперь сводится лишь к слезам и жалобным воплям, ты наконец готов приступить к траху и [npc.herHim], и [npc2.name]. Издав напоследок угрожающее рычание, ты вслух вопрошаешь:
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					 [pc.speech(Now, should I fuck the worthless cunt, or the obedient slut first?)]
+					 [pc.speech(Ну что, с кого мне начать: с этой никчемной сучки или с послушной шлюхи?)]
 				#ELSE
-					 [pc.speech(Now, which one of you should I fuck first?)]
+					 [pc.speech(Ну и кого из вас мне трахнуть первой?)]
 				#ENDIF
 			</p>
 		#ELSE
 			<p>
-				Sensing what it is that you want, [npc2.name] starts to back off, casting a nervous glance at [npc.name] as you quickly move up to stand in front of them. Sensing that [npc2.name] is about to struggle or attempt to flee, you grab [npc2.herHim] by the shoulders and shove [npc2.herHim] down onto all fours in front of you. Looking down at the rear end now presented for your use, you [pc.moan], [pc.speech(Go on, [npc.name], join [npc2.herHim] in presenting yourselves to me!)]
+				Чувствуя твои намерения, [npc2.name] начинает пятиться, нервно поглядывая на [npc.name], пока ты стремительно наступаешь на них. Предчувствуя, что [npc2.name] вот-вот начнет сопротивляться или попытается сбежать, ты хватаешь [npc2.herHim] за плечи и грубо вжимаешь [npc2.herHim] на четвереньки прямо перед собой. Глядя на задницу, которая теперь открыта для твоего использования, ты [pc.moan], [pc.speech(А ну же, [npc.name], вставай рядом с [npc2.herHim] и представьтесь мне!)]
 			</p>
 			<p>
-				Feeling as though this is the time in which to do something, [npc2.name] tries to stand back up, complaining, [npc2.speech(S-Stop it, [pc.name]! Can't you see I don't wan-)]
+				Понимая, что сейчас самое время что-то предпринять, [npc2.name] пытается подняться, жалуясь: [npc2.speech(П-прекрати, [pc.name]! Неужели ты не видишь, что я не хоч...)]
 			</p>
 			<p>
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					You quickly cut [npc2.her] objections off as you reach down and grab the back of [npc2.her] neck, before roughly slamming [npc2.herHim] to the floor. Smiling in delight as [npc2.name] lets out a panicked cry, you cruelly tease, [pc.speech(That's right, wail and scream all you want; it's no fun if my victims enjoy it!)]
-				#ELSE
-					You quickly cut [npc2.her] objections off as you reach down and grab the back of [npc2.her] neck, before forcing [npc2.herHim] to the floor. Tutting in disapproval as [npc2.name] lets out a panicked cry, you say, [pc.speech(Hush now, [npc2.name]. You know, it'd be a lot less stressful for you if you just accepted your fate already.)]
+Ты быстро пресекаешь все [npc2.her] возражения, наклоняешься и хватаешь [npc2.her] за затылок, а затем грубо швыряешь [npc2.herHim] на пол. С предвкушающей улыбкой слушая панический крик [npc2.name], ты жестоко дразнишь её: [pc.speech(Вот так, вой и кричи сколько влезет; ведь если жертвам слишком нравится, то в этом нет никакого удовольствия!)]				#ELSE
+					Ты быстро пресекаешь [npc2.her] возражений, хватая [npc2.her] за затылок и силой вжимая [npc2.herHim] в пол. С неодобрительным цоканьем на то, как [npc2.name] издает панический крик, ты говоришь: [pc.speech(Тише, [npc2.name]. Знаешь, тебе было бы куда проще, если бы ты уже просто смирилась со своей судьбой.)]
 				#ENDIF
 			</p>
 			<p>
-				[npc.speech(Don't worry, [npc2.name], I'm sure you'll get into it,)] [npc.name] offers as [npc.she] drops down beside [npc2.herHim]. 
+				[npc.speech(Не волнуйся, [npc2.name], я уверена, тебе понравится,)] — предлагает [npc.name], когда [npc.she] опускается рядом с [npc2.herHim]. 
 			</p>
 			<p>
-				With [npc2.namePos] resistance now being limited to tears and distressed wails, you're finally ready to start fucking both [npc2.herHim] and [npc.name]. With one final threatening snarl, you wonder out loud,
+				Поскольку сопротивление [npc2.namePos] теперь сводится лишь к слезам и жалобным воплям, ты наконец готов приступить к траху с обеими — и [npc2.herHim], и [npc.name]. Издав напоследок угрожающее рычание, ты вслух размышляешь:
 				#IF(pc.getFetishDesire(FETISH_SADIST).isPositive() || pc.getFetishDesire(FETISH_NON_CON_DOM).isPositive())
-					 [pc.speech(Now, should I fuck the worthless cunt, or the obedient slut first?)]
+					 [pc.speech(Ну что, с кого мне начать: с этой никчемной сучки или с послушной шлюхи?)]
 				#ELSE
-					 [pc.speech(Now, which one of you should I fuck first?)]
+					 [pc.speech(Ну и кого из вас мне трахнуть первой?)]
 				#ENDIF
 			</p>
 		#ENDIF
@@ -537,19 +529,19 @@
 	<htmlContent tag="SEX_GANGBANG_3"><![CDATA[
 	#IF(npc.isDollStatue() || npc2.isDollStatue() || npc3.isDollStatue())
 		<p>
-			Wanting to have sex with everyone present, you advance on [npc.name], [npc2.name], and [npc3.name] with a lustful gleam in your [pc.eyes+]. Wanting to satiate your lewd desires as quickly as possible, you quickly [pc.step] forwards and prepare to get started...
+			Желая перетрахать всех присутствующих, ты надвигаешься на [npc.name], [npc2.name] и [npc3.name] с похотливым блеском в [pc.eyes+]. Стремясь как можно скорее утолить свои грязные желания, ты стремительно [pc.step] вперед, готовясь начать...
 		</p>
 	#ELSE
 		<p>
-			Wanting to have sex with everyone present, you tell [npc.name], [npc2.name], and [npc3.name] what's on your mind.
+			Желая перетрахать всех присутствующих, ты говоришь [npc.name], [npc2.name] и [npc3.name], что у тебя на уме.
 		</p>
 		<p>
 			#IF(npc.isAttractedTo(pc) && npc2.isAttractedTo(pc) && npc3.isAttractedTo(pc))
-				As all three of them give positive responses,
+				Поскольку все трое отвечают согласием,
 			#ELSE
-				Before any of them have any time in which to respond,
+				Прежде чем кто-либо из них успевает ответить,
 			#ENDIF
-			 you [pc.step] forwards and prepare to get started...
+			 ты [pc.step] вперед, готовясь начать...
 		</p>
 	#ENDIF
 	]]>
@@ -558,19 +550,19 @@
 	<htmlContent tag="SEX_GANGBANG_4"><![CDATA[
 	#IF(npc.isDollStatue() || npc2.isDollStatue() || npc3.isDollStatue()|| npc4.isDollStatue())
 		<p>
-			Wanting to have sex with everyone present, you advance on [npc.name], [npc2.name], [npc3.name], and [npc4.name] with a lustful gleam in your [pc.eyes+]. Wanting to satiate your lewd desires as quickly as possible, you quickly [pc.step] forwards and prepare to get started...
+			Желая перетрахать всех присутствующих, ты надвигаешься на [npc.name], [npc2.name], [npc3.name] и [npc4.name] с похотливым блеском в [pc.eyes+]. Стремясь как можно скорее утолить свои грязные желания, ты стремительно [pc.step] вперед, готовясь начать...
 		</p>
 	#ELSE
 		<p>
-			Wanting to have sex with everyone present, you tell [npc.name], [npc2.name], [npc3.name], and [npc4.name] what's on your mind.
+			Желая перетрахать всех присутствующих, ты открыто говоришь [npc.name], [npc2.name], [npc3.name] и [npc4.name], чего именно ты хочешь.
 		</p>
 		<p>
 			#IF(npc.isAttractedTo(pc) && npc2.isAttractedTo(pc) && npc3.isAttractedTo(pc) && npc4.isAttractedTo(pc))
-				As all four of them give positive responses,
+				Поскольку все четверо отвечают согласием,
 			#ELSE
-				Before any of them have any time in which to respond,
+				Прежде чем кто-либо из них успевает ответить,
 			#ENDIF
-			 you [pc.step] forwards and prepare to get started...
+			 ты [pc.step] вперед, готовясь начать...
 		</p>
 	#ENDIF
 	]]>
@@ -583,203 +575,203 @@
 	
 	<htmlContent tag="SEX_AS_SUB_START"><![CDATA[
 	<p>
-		[pc.speech(You know, [npc.name], I just can't stop thinking about you,)] you tease, stepping forwards and reaching out to tease your [pc.fingers] over [npc.her] [npc.breasts]. [pc.speech(I'm sure you'd love the chance to get to fuck your owner, wouldn't you?)]
+		[pc.speech(Знаешь, [npc.name], я просто не могу перестать думать о тебе,)] — дразнишь ты, делая шаг вперед и протягивая руку, чтобы ласково потискать [pc.fingers] за [npc.her] [npc.breasts]. [pc.speech(Уверена, тебе бы очень хотелось трахнуть своего хозяина, верно?)]
 	</p>
 	#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
 		<p>
-			[npc.speech(You'd let me fuck you?)] [npc.name] asks, barely managing to hide the contempt in [npc.her] voice as [npc.her] [npc.lips] turn up into a snarl.
+			[npc.speech(Ты позволишь мне трахать тебя?)] — спрашивает [npc.name], едва справляясь с презрением в [npc.her] голосе, в то время как [npc.her] [npc.lips] скалится от ярости.
 		</p>
 		#IF(pc.getFetishDesire(FETISH_MASOCHIST).isPositive())
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>desperate</i> to take out all of your frustrations on me. There's no need for you to hold back; you won't be punished in any way for treating me like your worthless little fuck-toy...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, [pc.speech(Я вижу, что ты просто <i>жаждешь</i> выплеснуть на меня всю свою злость. Тебе нет нужды сдерживаться; тебя не накажут за то, что ты обращаешься со мной как со своей никчемной маленькой секс-игрушкой...)]
 			</p>
 			<p>
-				[npc.speech(In that case, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] reaches up to firmly grab you by the neck, [npc.speech(I'm gonna' hate-fuck you into the ground, you fucking [pc.bitch]! Fuck, I hate you so much...)]
+				[npc.speech(В таком случае, <i>[pc.bitch]</i>,)] — выплевывает [npc.name], пока [npc.she] решительно хватает тебя за шею, [npc.speech(Я оттрахаю тебя до полусмерти, от ненависти к тебе, чертов [pc.bitch]! Блядь, как же сильно я тебя ненавижу...)]
 			</p>
 			<p>
-				[pc.speech(That's right, let it all out!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a degrading manner by your slave. [pc.speech(I'll be a good-)]
+				[pc.speech(Верно, выплесни всё!)] — отвечаешь ты, с наслаждением прикусывая [pc.lip] и упиваясь тем, как униженно обращается с тобой твоя рабыня. [pc.speech(Я буду хорош...)]
 			</p>
 			<p>
-				Your words are interrupted as [npc.name] releases [npc.her] grip on your neck, before suddenly delivering a stinging slap to your face. Through clenched teeth, [npc.she] snarls, [npc.speech(Shut your fucking mouth, you worthless [pc.bitch]!)]
+				Твои слова прерываются, когда [npc.name] разжимает [npc.her] свою хватку на твоей шее, а затем внезапно отвешивает тебе звонкую пощечину. Сквозь стиснутые зубы [npc.she] рычит: [npc.speech(Заткни свой гребаный рот, никчемная [pc.bitch]!)]
 			</p>
 		#ELSE
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>desperate</i> to take out all of your frustrations on me. You can have your fun with me; you won't get into trouble, I promise...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, — [pc.speech(Я вижу, что ты просто <i>в отчаянии</i> выплеснуть на меня всю свою злость. Можешь развлечься со мной; обещаю, проблем не будет...)]
 			</p>
 			<p>
-				[npc.speech(Fine, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] firmly grabs your [pc.hips] and pulls you into [npc.herHim], [npc.speech(I'm gonna' give you a real good hate-fucking!)]
+				[npc.speech(Ладно, <i>[pc.bitch]</i>,)] — выплевывает [npc.name], пока [npc.she] крепко хватает тебя за [pc.hips] и притягивает к [npc.herHim], — [npc.speech(Сейчас я устрою тебе настоящий трах во имя ненависти!)]
 			</p>
 			<p>
-				[pc.speech(Oh, yes, give it to me!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a manner by your slave.
+				[pc.speech(О, да, давай же!)] — отвечаешь ты, с наслаждением прикусывая [pc.lip] от восторга, упиваясь тем, как твоя рабыня обращается с тобой.
 			</p>
 			<p>
-				Leaning forwards and pressing [npc.her] [npc.lips+] against yours, [npc.name] gives you a rough, forceful kiss, before pulling back and snarling through clenched teeth, [npc.speech(I've wanted to do this to you for a long time...)]
+				Наклонившись вперед и прижимая [npc.her] свои [npc.lips+] к твоим, [npc.name] дарит тебе грубый, властный поцелуй, после чего отстраняется и рычит сквозь стиснутые зубы: [npc.speech(Я давно хотела сделать это с тобой...)]
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			[npc.speech(Oh, вы бы хотели немного поменяться ролями, не так ли?)] [npc.name] спрашивает, с похотливым взглядом глядя на ваше [pc.eyes], когда вы кусаете свое [pc.lip] и моргаете на [npc.herHim]. [npc.speech(Вам нравится идея того, что низкий раб трахает [npc.her] [pc.mistress]?)]
+			[npc.speech(О, тебе хочется небольшой смены ролей, да?)] — спрашивает [npc.name], похотливо глядя в твои [pc.eyes], пока ты прикусываешь [pc.lip] и кокетливо хлопаешь ресницами перед [npc.herHim]. [npc.speech(Тебе нравится мысль о том, что низшая рабыня трахает [npc.her] [pc.mistress]?)]
 		</p>
 		<p>
-			[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>desperate</i> for it as well, so why don't you show me what you can do?)]
+			[pc.speech(Именно так,)] — подтверждаешь ты, — [pc.speech(Я вижу, что ты сама <i>жаждешь этого</i>, так почему бы тебе не показать, на что ты способна?)]
 		</p>
 		<p>
-			Не нуждаясь в дополнительном ободрении, [npc.name] наклоняется вперед и прижимает [npc.her] [npc.lips+] к вашим, даря долгий, страстный поцелуй, прежде чем отступить и [npc.moaning], [npc.speech(Это хороший [pc.girl], теперь подчинись своему рабу...)]
+			Не нуждаясь в дальнейшем подстрекательстве, [npc.name] наклоняется вперед и прижимает [npc.her] [npc.lips+] к твоим, даря долгий, страстный поцелуй, прежде чем отстраниться и [npc.moaning]: [npc.speech(Хорошая [pc.girl], а теперь подчинись своей рабыне...)]
 		</p>
 	#ENDIF
 	<p>
-		Выпуская возбужденный [pc.moan], вы готовитесь к тому, чтобы быть доминирующе траханным вашим [npc.race] рабом... 
-	</p>
+		Издавая возбужденный [pc.moan], ты готовишься к тому, что твоя [npc.race] рабыня будет доминантно трахать тебя... 
+		</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SEX_SPITROASTED_START"><![CDATA[
 	<p>
-		[pc.speech(Вы знаете, я думал, что мы трое могли бы повеселиться вместе...)] вы поддразниваете, поворачиваясь к обоим [npc.name] и [npc2.name], прежде чем кусать свое [pc.lip] и надеть на себя самый покорный, соблазнительный вид.
-	</p>#IF(npc2.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE && npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
+		[pc.speech(Знаете, я тут подумала, что мы могли бы втроем немного повеселиться...)] — дразнишь ты, поворачиваясь к [npc.name] и [npc2.name], после чего прикусываешь свою [pc.lip] и принимаешь самый покорный и соблазнительный вид.
+	</p>
+	#IF(npc2.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE && npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
 		<p>
-			[npc2.speech(Ты позволишь нам трахать тебя?)] [npc2.name] спрашивает, едва скрывая презрение в голосе [npc2.her], когда [npc2.her] [npc2.lips] превращается в злобную гримасу.
+			[npc2.speech(Ты позволишь нам трахнуть тебя?)] — спрашивает [npc2.name], едва справляясь с презрением в [npc2.her] голосе, пока [npc2.her] [npc2.lips] переходит в рычание.
 		</p>
 		#IF(pc.getFetishDesire(FETISH_MASOCHIST).isPositive())
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're both just <i>desperate</i> to take out all of your frustrations on me. There's no need for either of you to hold back; you won't be punished in any way for treating me like your worthless little fuck-toy...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, [pc.speech(Я вижу, что вы обе просто <i>отчаялись</i> выплеснуть на меня всю свою досаду. Вам не нужно сдерживаться; вас ничто не накажет за то, что вы обращаетесь со мной как со своей никчемной маленькой игрушкой для секса...)]
 			</p>
 			<p>
-				[npc.speech(In that case, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] reaches up to firmly grab you by the neck, [npc.speech(I'm gonna' hate-fuck you into the ground, you fucking [pc.bitch]! Fuck, I hate you so much...)]
+				[npc.speech(В таком случае, <i>[pc.bitch]</i>,)] — выплевывает [npc.name], пока [npc.she] решительно хватает тебя за шею, [npc.speech(Я оттрахаю тебя до полусмерти, от ненависти к тебе, чертов [pc.bitch]! Блядь, как же сильно я тебя ненавижу...)]
 			</p>
 			<p>
-				[pc.speech(That's right, let it all out!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a degrading manner by your slave. [pc.speech(I'll be a good-)]
+				[pc.speech(Верно, выплесни всё!)] — отвечаешь ты, с наслаждением прикусывая [pc.lip] и упиваясь тем, как униженно обращается с тобой твоя рабыня. [pc.speech(Я буду хорош...)]
 			</p>
 			<p>
-				Your words are interrupted as [npc2.name] steps forwards and suddenly delivers a stinging slap to your face. Through clenched teeth, [npc2.she] snarls, [npc2.speech(Shut your fucking mouth, you worthless [pc.bitch]!)]
+				Твои слова прерываются, когда [npc2.name] делает шаг вперед и внезапно отвешивает тебе звонкую пощечину. Сквозь стиснутые зубы [npc2.she] рычит: [npc2.speech(Заткни свой гребаный рот, никчемная [pc.bitch]!)]
 			</p>
 		#ELSE
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're both just <i>desperate</i> to take out all of your frustrations on me. You can have your fun with me; you won't get into trouble, I promise...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, [pc.speech(Я вижу, что вы обе просто <i>отчаялись</i> выплеснуть на меня всю свою досаду. Вы можете развлечься со мной; обещаю, вам за это ничего не будет...)]
 			</p>
 			<p>
-				[npc.speech(Fine, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] firmly grabs your [pc.hips] and pulls you into [npc.herHim], [npc.speech(I'm gonna' give you a real good hate-fucking!)]
+				[npc.speech(Ладно, <i>[pc.bitch]</i>,)] — выплевывает [npc.name], пока [npc.she] крепко хватает тебя за [pc.hips] и притягивает к [npc.herHim], — [npc.speech(Сейчас я устрою тебе настоящий трах во имя ненависти!)]
 			</p>
 			<p>
-				[pc.speech(О, да, дай мне!)] ты отвечаешь, кусая свои [pc.lip] от удовольствия, наслаждаясь тем, как тебя обращаются с тобой твои
+				[pc.speech(О, да, дай мне это!)] — отвечаешь ты, в восторге прикусывая [pc.lip], наслаждаясь тем, как с тобой обращаются твои
 				#IF(npc.isSlave() && npc2.isSlave())
-					 рабы.
+					 рабыни.
 				#ELSE
-					 рабы и спутница.
+					 рабыня и спутница.
 				#ENDIF
 			</p>
 			<p>
-				Дотягиваясь, чтобы взять тебя за подбородок и повернуть твою голову в сторону, [npc2.name] нажимает [npc2.her] [npc2.lips+] на твою, давая тебе грулый, сильный поцелуй, прежде чем отдернуть и фыркать зубами, [npc2.speech(...)]
+				Протянув руку, чтобы схватить тебя за подбородок и повернуть твою голову в сторону, [npc2.name] прижимает [npc2.her] [npc2.lips+] к твоим, даря тебе грубый, властный поцелуй, после чего отстраняется и рычит сквозь стиснутые зубы: [npc2.speech(...)]
 			</p>
 		#ENDIF
 	#ELSEIF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
 		<p>
-			[npc2.speech(О, чувствуешь ли ты похоть #IF(npc2.isSlave())для твоего раба#ENDIF, [pc.name]?)] [npc2.name] спрашивает, лукаво глядя на твою [pc.eyes], когда [npc2.she] делает шаг вперед и кладет одну [npc2.hand] на твою [pc.ass+], прежде чем крепко сжимать ее.
+			[npc2.speech(Ох, чувствуешь, как тебя штырит, #IF(npc2.isSlave())for your slave#ENDIF, are you, [pc.name]?)] [npc2.name] coyly asks, gazing lustfully into your [pc.eyes] as [npc2.she] steps forwards and places one [npc2.hand] on your [pc.ass+], before giving it a firm squeeze.
 		</p>
 		<p>
-			[npc.speech(Ты позволишь нам трахать тебя?)] [npc2.name] спрашивает, едва сдерживая презрение в голосе [npc2.her], когда [npc2.her] [npc2.lips] поднимают брови в знак недовольства.
+			[npc.speech(Ты позволишь нам трахнуть тебя?)] — спрашивает [npc2.name], едва справляясь с презрением в [npc2.her] голосе, пока [npc2.her] [npc2.lips] превращаются в оскал.
 		</p>
 		#IF(pc.getFetishDesire(FETISH_MASOCHIST).isPositive())
 			<p>
-				[pc.speech(Верно,)] ты подтверждаешь, [pc.speech(Я вижу, что ты просто <i>отчаянно</i> хочешь выпустить все свои разочарования на мне, [npc.name]. Нет необходимости сдерживаться; ты не будешь наказан за то, что обращаешься со мной как с твоей никчемной игрушкой...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, — [pc.speech(Я вижу, что ты просто <i>отчаялась</i> выплеснуть на меня всю свою злость, [npc.name]. Тебе нет нужды сдерживаться; тебя не накажут за то, что ты обращаешься со мной как со своей никчемной маленькой игрушкой для секса...)]
 			</p>
 			<p>
-				[npc.speech(In that case, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] steps up beside [npc2.name], before reaching up to firmly grab you by the neck. [npc.speech(I'm gonna' hate-fuck you into the ground, you fucking [pc.bitch]! Fuck, I hate you so much...)]
+				[npc.speech(В таком случае, <i>[pc.bitch]</i>,)] — выплевывает [npc.name], когда [npc.she] подходит к [npc2.name], а затем крепко хватает тебя за шею. [npc.speech(Я оттрахаю тебя из чистой ненависти, пока ты не сдохнешь, чертова [pc.bitch]! Блядь, как же сильно я тебя ненавижу...)]
 			</p>
 			<p>
-				[pc.speech(That's right, let it all out!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a degrading manner#IF(npc.isSlave()) by your slave#ENDIF. [pc.speech(I'll be a good-)]
+				[pc.speech(Верно, выплесни всё!)] — отвечаешь ты, с наслаждением прикусывая [pc.lip] от восторга, упиваясь тем, как униженно с тобой обращаются.#IF(npc.isSlave()) by your slave#ENDIF. [pc.speech(I'll be a good-)]
 			</p>
 			<p>
-				Your words are interrupted as [npc.name] releases your neck, before suddenly delivering a stinging slap to your face. Through clenched teeth, [npc.she] snarls, [npc.speech(Shut your fucking mouth, you worthless [pc.bitch]!)]
+				Твои слова обрываются: [npc.name] разжимает пальцы на твоей шее и внезапно отвешивает тебе звонкую пощечину. Сквозь стиснутые зубы [npc.she] рычит: [npc.speech(Заткни свой гребаный рот, никчемная [pc.bitch]!)]
 			</p>
 		#ELSE
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>desperate</i> to take out all of your frustrations on me, [npc.name]. You can have your fun with me; you won't get into trouble, I promise...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, [pc.speech(Я же вижу, что ты просто <i>в отчаянии</i>, хочешь выплеснуть на меня всю свою злость, [npc.name]. Можешь развлекаться со мной сколько угодно; обещаю, проблем у тебя не будет...)]
 			</p>
 			<p>
-				[npc.speech(Fine, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] steps up beside [npc2.name] to glare into your [pc.eyes]. [npc.speech(I'm gonna' give you a real good hate-fucking!)]
+				[npc.speech(Ладно, <i>[pc.bitch]</i>,)] — выплевывает [npc.name], пока [npc.she] подходит к [npc2.name], чтобы впиться взглядом в твои [pc.eyes]. [npc.speech(Я устрою тебе настоящий секс из чистой ненависти!)]
 			</p>
 			<p>
-				[pc.speech(Oh, yes, give it to me!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a manner by your
+				[pc.speech(О, да, дай мне это!)] — отвечаешь ты, в восторге прикусывая [pc.lip], наслаждаясь тем, как с тобой обращаются твои
 				#IF(npc.isSlave())
-					 slave.
+					 рабыня.
 				#ELSE
-					 hateful companion.
+					 ненавистная спутница.
 				#ENDIF
 			</p>
 			<p>
-				Reaching up to grab your chin and turn your head to one side, [npc.name] presses [npc.her] [npc.lips+] against yours, giving you a rough, forceful kiss, before pulling back and snarling through clenched teeth, [npc.speech(I've wanted to do this to you for a long time...)]
+				[npc.name] хватает тебя за подбородок, поворачивая твою голову набок, и прижимается [npc.her] [npc.lips+] к твоим, осыпая тебя грубым, властным поцелуем. Затем [npc.name] отстраняется и сквозь стиснутые зубы рычит: [npc.speech(Я давно хотела сделать это с тобой...)]
 			</p>
 		#ENDIF
 	#ELSEIF(npc2.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
 		<p>
-			[npc.speech(Oh, feeling horny #IF(npc.isSlave())for your slave#ENDIF, are you, [pc.name]?)] [npc.name] coyly asks, gazing lustfully into your [pc.eyes] as [npc.she] steps forwards and places one [npc.hand] on your [pc.ass+], before giving it a firm squeeze.
+			[npc.speech(О, чувствуешь, как возбуждается #IF(npc.isSlave())for your slave#ENDIF, are you, [pc.name]?)] [npc.name] coyly asks, gazing lustfully into your [pc.eyes] as [npc.she] steps forwards and places one [npc.hand] on your [pc.ass+], before giving it a firm squeeze.
 		</p>
 		<p>
-			[npc2.speech(You'd let us fuck you?)] [npc2.name] asks, barely managing to hide the contempt in [npc2.her] voice as [npc2.her] [npc2.lips] turn up into a snarl.
+			[npc2.speech(Ты позволишь нам трахнуть тебя?)] — спрашивает [npc2.name], едва справляясь с презрением в [npc2.her] голосе, пока [npc2.her] [npc2.lips] превращается в оскал.
 		</p>
 		#IF(pc.getFetishDesire(FETISH_MASOCHIST).isPositive())
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>[npc2.name]</i>desperate</i> to take out all of your frustrations on me, [npc2.name]. There's no need for you to hold back; you won't be punished in any way for treating me like your worthless little fuck-toy...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, [pc.speech(Я же вижу, что ты просто <i>в отчаянии</i>, хочешь выплеснуть на меня всю свою злость, [npc2.name]. Тебе нет нужды сдерживаться; тебя ничто не накажет за то, что ты обращаешься со мной как со своей никчемной маленькой игрушкой для секса...)]
 			</p>
 			<p>
-				[npc2.speech(In that case, <i>[pc.bitch]</i>,)] [npc2.name] spits as [npc2.she] steps up beside [npc.name], before reaching up to firmly grab you by the neck. [npc2.speech(I'm gonna' hate-fuck you into the ground, you fucking [pc.bitch]! Fuck, I hate you so much...)]
+				[npc2.speech(В таком случае, <i>[pc.bitch]</i>,)] — выплевывает [npc2.name], пока [npc2.she] подходит к [npc.name], после чего протягивает руку и крепко хватает тебя за шею. [npc2.speech(Я оттрахаю тебя из чистой ненависти так, что ты в землю вроешься, чертова [pc.bitch]! Блядь, как же сильно я тебя ненавижу...)]
 			</p>
 			<p>
-				[pc.speech(That's right, let it all out!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a degrading manner#IF(npc2.isSlave()) by your slave#ENDIF. [pc.speech(I'll be a good-)]
+				[pc.speech(Верно, выплесни всё!)] — отвечаешь ты, с наслаждением прикусывая [pc.lip] от восторга, упиваясь тем, как униженно с тобой обращаются.#IF(npc2.isSlave()) by your slave#ENDIF. [pc.speech(I'll be a good-)]
 			</p>
 			<p>
-				Your words are interrupted as [npc2.name] releases your neck, before suddenly delivering a stinging slap to your face. Through clenched teeth, [npc2.she] snarls, [npc2.speech(Shut your fucking mouth, you worthless [pc.bitch]!)]
+				Твои слова обрываются: [npc2.name] разжимает пальцы на твоей шее и внезапно отвешивает тебе звонкую пощечину. Сквозь стиснутые зубы [npc2.she] рычит: [npc2.speech(Заткни свой гребаный рот, никчемная [pc.bitch]!)]
 			</p>
 		#ELSE
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>[npc2.name]</i> desperate</i> to take out all of your frustrations on me, [npc2.name]. You can have your fun with me; you won't get into trouble, I promise...)]
+				[pc.speech(Верно,)] — подтверждаешь ты, — [pc.speech(Я вижу, что ты просто <i>отчаялась</i> выплеснуть на меня всю свою злость, [npc2.name]. Можешь развлечься со мной; обещаю, проблем не будет...)]
 			</p>
 			<p>
-				[npc2.speech(Fine, <i>[pc.bitch]</i>,)] [npc2.name] spits as [npc2.she] steps up beside [npc.name] to glare into your [pc.eyes]. [npc2.speech(I'm gonna' give you a real good hate-fucking!)]
+				[npc2.speech(Ладно, <i>[pc.bitch]</i>,)] — выплевывает [npc2.name], пока [npc2.she] встает рядом с [npc.name], чтобы впиться взглядом в твои [pc.eyes]. [npc2.speech(Я устрою тебе настоящий секс из чистой ненависти!)]
 			</p>
 			<p>
-				[pc.speech(Oh, yes, give it to me!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a manner by your
+				[pc.speech(О, да, дай мне это!)] — отвечаешь ты, в восторге прикусывая [pc.lip], наслаждаясь тем, как с тобой обращаются твои
 				#IF(npc2.isSlave())
-					 slave.
+					 рабыня.
 				#ELSE
-					 hateful companion.
+					 ненавистная спутница.
 				#ENDIF
 			</p>
 			<p>
-				Reaching up to grab your chin and turn your head to one side, [npc2.name] presses [npc2.her] [npc2.lips+] against yours, giving you a rough, forceful kiss, before pulling back and snarling through clenched teeth, [npc2.speech(I've wanted to do this to you for a long time...)]
+				[npc2.name] хватает тебя за подбородок, поворачивая твою голову набок, и прижимается [npc2.her] [npc2.lips+] к твоим, осыпая тебя грубым, властным поцелуем. Затем [npc2.name] отстраняется и сквозь стиснутые зубы рычит: [npc2.speech(Я давно хотела сделать это с тобой...)]
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			[npc2.speech(Oh, feeling horny #IF(npc2.isSlave())for your #IF(npc.isSlave())slaves#ELSEslave#ENDIF#ENDIF, are you, [pc.name]?)] [npc2.name] coyly asks, gazing lustfully into your [pc.eyes] as [npc2.she] steps forwards and places one [npc2.hand] on your [pc.ass+], before giving it a firm squeeze.
+			[npc2.speech(Ох, чувствуешь, как тебя штырит, #IF(npc2.isSlave())for your #IF(npc.isSlave())slaves#ELSEslave#ENDIF#ENDIF, are you, [pc.name]?)] [npc2.name] coyly asks, gazing lustfully into your [pc.eyes] as [npc2.she] steps forwards and places one [npc2.hand] on your [pc.ass+], before giving it a firm squeeze.
 		</p>
 		<p>
-			[npc.speech([pc.She] just can't resist us,)] [npc.name] states, following [npc2.namePos] lead as [npc.she] moves up beside you, before planting a wet kiss on your [pc.lips+].
+			[npc.speech([pc.She] просто не может перед нами устоять,)] — утверждает [npc.name], следуя примеру [npc2.namePos], пока [npc.she] подходит к тебе вплотную и оставляет влажный поцелуй на твоей [pc.lips+].
 		</p>
 	#ENDIF
 	<p>
-		[npc2.speech(You take [pc.her] mouth,)] [npc2.name] says to [npc.name], [npc2.speech([pc.Her] ass belongs to me.)]
+		[npc2.speech(Забирай рот [pc.her],)] — говорит [npc2.name], обращаясь к [npc.name], — [npc2.speech(Попа [pc.Her] принадлежит мне.)]
 	</p>
-	<p>
-		Breaking off the kiss, [npc.name] responds, [npc.speech(That suits me fine!)]
-	</p>
+		<p>
+		Прервав поцелуй, [npc.name] отвечает: [npc.speech(Меня это вполне устраивает!)]
+		</p>
 	<p>
 		#IF(!npc2.isTaur())
-			With agreement from [npc.name], [npc2.name] takes hold of your [pc.hips] and pulls you down onto your knees as [npc2.she] drops down behind you.
+			Получив согласие от [npc.name], [npc2.name] хватает тебя за [pc.hips] и заставляет опуститься на колени, в то время как [npc2.she] опускается позади тебя.
 		#ELSE
-			With agreement from [npc.name], [npc2.name] takes hold of your [pc.hips] and pushes you down onto your knees, before stepping forwards and positioning [npc2.her] [npc2.legConfiguration] body over the top of you, ready to mount you.
+			Получив согласие от [npc.name], [npc2.name] хватает тебя за [pc.hips] и ставит на колени, после чего делает шаг вперед, нависая над тобой всем телом [npc2.her] [npc2.legConfiguration], готовая оседлать тебя.
 		#ENDIF
 	</p>
 	<p>
 		#IF(!npc.isTaur() && !pc.isTaur())
-			Kneeling down before you, [npc.name] then reaches up to grab your shoulders, before pulling down and forcing you onto all fours.
+			Опустившись перед тобой на колени, [npc.name] затем тянется вверх, чтобы схватить тебя за плечи, после чего тянет вниз, заставляя встать на четвереньки.
 		#ELSEIF(npc.isTaur())
-			Moving around in front of you, [npc.name] kneels down to grab your shoulders, before pushing down and forcing you onto all fours. Standing back up, [npc2.she] turns [npc2.her] [npc2.legConfiguration] body to one side in order to present [npc2.her] groin to you.
+			Кружив перед тобой, [npc.name] опускается на колени и хватает тебя за плечи, а затем с силой надавливает, заставляя встать на четвереньки. Выпрямившись, [npc2.she] поворачивает [npc2.her] [npc2.legConfiguration] тело боком, чтобы выставить тебе напоказ [npc2.her] пах.
 		#ELSE
-			Moving around in front of you, [npc.name] lets out a hungry [npc2.moan] as [npc.she] prepares to present [npc2.her] groin to you.
-		#ENDIF
-		 With the two of them now ready to start fucking you on either end, you can't help but let out a desperate, horny [pc.moan]...
+Расхаживая перед тобой, [npc.name] издаёт голодный [npc2.moan], пока [npc.she] готовится выставить тебе напоказ свой [npc2.her].		#ENDIF
+		Когда обе готовы приняться за то, чтобы трахать тебя с обоих концов, ты невольно издаешь отчаянный, похотливый [pc.moan]...
 	</p>
 	]]>
 	</htmlContent>
@@ -787,73 +779,72 @@
 	<!-- npc is the one fucking you and npc2 -->
 	<htmlContent tag="SEX_SIDE_BY_SIDE_AS_SUB_START"><![CDATA[
 	<p>
-		[pc.speech(You know, I was thinking that this would be the perfect opportunity for you to have some fun with [npc2.name] and I,)] you tease, turning to face [npc.name] as you ask, [pc.speech(You want to fuck both of us at once, don't you?)]
-	</p>#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
+		[pc.speech(Знаешь, я тут подумала, что это идеальный шанс для тебя развлечься с нами с [npc2.name],)] — дразнишь ты, поворачиваясь к [npc.name] и спрашивая: [pc.speech(Ты ведь хочешь трахнуть нас обеих разом, верно?)]
+	</p>
+	#IF(npc.getAffectionLevelBasic(pc)==AFFECTION_BASIC_DISLIKE)
 		<p>
-			[npc.speech(Ты хочешь, чтобы я трахала тебя?)] [npc.name] спрашивает, едва сдерживая презрение в [npc.her] голосе, когда [npc.her] [npc.lips] превращается в злобную гримасу.
+			[npc.speech(Ты хочешь сказать, что позволишь мне трахать тебя?)] — спрашивает [npc.name], едва справляясь с презрением в [npc.her] голосе, пока [npc.her] [npc.lips] превращается в оскал.
 		</p>
 		#IF(pc.getFetishDesire(FETISH_MASOCHIST).isPositive())
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>desperate</i> to take out all of your frustrations on me, [npc.name]. There's no need for you to hold back; you won't be punished in any way for treating me like your worthless little fuck-toy...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, — [pc.speech(Я вижу, что ты просто <i>отчаялась</i> выплеснуть на меня всю свою злость, [npc.name]. Тебе нет нужды сдерживаться; тебя не накажут за то, что ты обращаешься со мной как со своей никчемной маленькой игрушкой для секса...)]
+			</p><p>
+				[npc.speech(В таком случае, <i>[pc.bitch]</i>,)] [npc.name] сплёвывает, когда [npc.she] делает шаг к тебе и [npc2.name], [npc.speech(Я оттрахаю тебя так, что ты в землю впечатаешься, гребаный ты [pc.bitch]! Блядь, как же сильно я тебя ненавижу...)]
 			</p>
 			<p>
-				[npc.speech(In that case, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc.she] steps up before you and [npc2.name], [npc.speech(I'm gonna' hate-fuck you into the ground, you fucking [pc.bitch]! Fuck, I hate you so much...)]
+				[pc.speech(Верно, выплесни всё!)] — отвечаешь ты, с наслаждением прикусывая [pc.lip] от восторга, упиваясь тем, как униженно с тобой обращаются.#IF(npc.isSlave()) by your slave#ENDIF. [pc.speech(I'll be a good-)]
 			</p>
 			<p>
-				[pc.speech(That's right, let it all out!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a degrading manner#IF(npc.isSlave()) by your slave#ENDIF. [pc.speech(I'll be a good-)]
-			</p>
-			<p>
-				Your words are interrupted as [npc.name] suddenly delivers a stinging slap to your face, before wasting no time in grabbing both you and [npc2.name] by the shoulders and pushing the two of you down onto all fours, side-by-side. Through clenched teeth, [npc.she] snarls, [npc.speech(You keep your fucking mouth shut, [pc.bitch], unless it's to beg for me to fuck you!)]
+				Твои слова обрываются: [npc.name] внезапно отвешивает тебе звонкую пощечину, а затем, не теряя ни секунды, хватает тебя и [npc2.name] за плечи и грубо толкает вас обоих на четвереньки, бок о бок. Сквозь стиснутые зубы [npc.she] рычит: [npc.speech(Держи свой гребаный рот на замке, [pc.bitch], если только не собираешься умолять меня трахнуть тебя!)]
 			</p>
 		#ELSE
 			<p>
-				[pc.speech(That's right,)] you confirm, [pc.speech(I can tell that you're just <i>desperate</i> to take out all of your frustrations on me, [npc.name]. You can have your fun with me; you won't get into trouble, I promise...)]
+				[pc.speech(Именно так,)] — подтверждаешь ты, [pc.speech(Я же вижу, что ты просто <i>в отчаянии</i>, хочешь выплеснуть на меня всю свою злость, [npc.name]. Можешь развлекаться со мной сколько угодно; обещаю, проблем у тебя не будет...)]
 			</p>
 			<p>
-				[npc.speech(Fine, <i>[pc.bitch]</i>,)] [npc.name] spits as [npc2.she] steps up before you and [npc2.name], [npc2.speech(I'm gonna' give you a real good hate-fucking!)]
+				[npc.speech(Ладно, <i>[pc.bitch]</i>,)] — сплевывает [npc.name], пока [npc2.she] подходит к тебе и [npc2.name], [npc2.speech(Сейчас я устрою вам настоящую трахню ненависть!)]
 			</p>
 			<p>
-				[pc.speech(Oh, yes, give it to me!)] you reply, biting your [pc.lip] in delight as you relish being treated in such a manner by your
+				[pc.speech(О, да, дай мне это!)] — отвечаешь ты, в восторге прикусывая [pc.lip], наслаждаясь тем, как с тобой обращаются твои
 				#IF(npc2.isSlave())
-					 slave.
+					 рабыня.
 				#ELSE
-					 hateful companion.
+					 ненавистная спутница.
 				#ENDIF
-			</p>
-			<p>
-				Grabbing both you and [npc2.name] by the shoulders, [npc.name] pushes the two of you down onto all fours, side-by-side, before snarling through clenched teeth, [npc2.speech(I've wanted to do this to you for a long time...)]
+			</p><p>
+				Схватив тебя и [npc2.name] за плечи, [npc.name] толкает вас обоих на четвереньки, так, чтобы вы лежали бок о бок, а затем, скалясь сквозь стиснутые зубы, рычит: [npc2.speech(Я давно хотела сделать это с тобой...)]
 			</p>
 		#ENDIF
 		<p>
 			#IF(npc2.getFetishDesire(FETISH_MASOCHIST).isPositive())
-				[npc2.speech(Don't go easy on me, either!)] [npc2.name] calls out as [npc2.she] glances back over [npc2.her] shoulder and pouts at [npc.name].
+				[npc2.speech(И меня тоже не жалей!)] — выкрикивает [npc2.name], пока [npc2.she] оглядывается через плечо [npc2.her] и капризно смотрит на [npc.name].
 			#ELSE
-				[npc2.speech(Just give [pc.name] most of the rough stuff,)] [npc2.name] says, glancing back over [npc2.her] shoulder to winks at [npc.name].
+				[npc2.speech(Просто отдай [pc.name] всю самую жесткую часть,)] — говорит [npc2.name], оглядываясь через плечо [npc2.her] и подмигивая [npc.name].
 			#ENDIF
 		</p>
 		<p>
-			Dropping down onto [npc.her] knees behind the two of you, [npc.name] reaches forwards to grab your asses in each [npc.hand], before delivering a particularly sharp slap to yours as [npc.she] [npc.moans], [npc.speech(I wonder which of you I'll fuck first...)]
+			Опустившись на [npc.her] колени позади вас двоих, [npc.name] протягивает руки, чтобы сжать ваши [npc.hand], после чего отвешивает особенно резкий шлепок по твоей, пока [npc.she] [npc.moans], [npc.speech(Интересно, кого из вас я трахну первым...)]
 		</p>
 	#ELSE
 		<p>
-			[npc.speech(Oh fuck yeah,)] [npc.name] eagerly replies, wasting no time before grabbing both you and [npc2.name] by the shoulders and pushing the two of you down onto all fours, side-by-side.
+			[npc.speech(О да, черт возьми!)] [npc.name] с нетерпением отвечает, не теряя ни секунды, и хватает тебя и [npc2.name] за плечи, толкая вас обоих на четвереньки, бок о бок.
 		</p>
 		<p>
 			#IF(pc.isFeminine())
-				[pc.speech(That's right, now come and take us!)] you [pc.moan], looking back over your shoulder and seductively biting your [pc.lip].
+				[pc.speech(Верно, а теперь иди и возьми нас!)] ты, [pc.moan], оглядываешься через плечо и соблазнительно прикусываешь свою [pc.lip].
 			#ELSE
-				[pc.speech(That's right, now come and take us!)] you [pc.moan], looking back over your shoulder to give [npc.name] a charming grin.
+				[pc.speech(Верно, а теперь иди и возьми нас!)] ты, [pc.moan], оглядываешься через плечо, чтобы одарить [npc.name] очаровательной ухмылкой.
 			#ENDIF
 		</p>
 		<p>
 			#IF(npc2.isFeminine())
-				[npc2.speech(That's right, put us in our place!)] [npc2.name] joins in, following your lead as [npc2.she] glances back over [npc2.her] shoulder and bats [npc2.her] eyelids at [npc.name].
+				[npc2.speech(Верно, поставь нас на место!)] [npc2.name] подхватывает твой тон, следуя твоему примеру, пока [npc2.she] смотрит через плечо [npc2.her] и кокетливо хлопает ресницами [npc2.her], глядя на [npc.name].
 			#ELSE
-				[npc2.speech(That's right, put us in our place!)] [npc2.name] joins in, following your lead as [npc2.she] glances back over [npc2.her] shoulder and winks at [npc.name].
+				[npc2.speech(Верно, поставь нас на место!)] [npc2.name] подхватывает твой тон, следуя твоему примеру, пока [npc2.she] смотрит через плечо [npc2.her] и подмигивает [npc.name].
 			#ENDIF
 		</p>
 		<p>
-			Dropping down onto [npc.her] knees behind the two of you, [npc.name] prepares to do exactly as you say, and, reaching forwards to grab your asses in each [npc.hand], [npc.she] [npc.moans], [npc.speech(I wonder which of you I'll fuck first...)]
+			Опустившись на [npc.her] колени позади вас двоих, [npc.name] готовится исполнить всё в точности так, как ты сказал; протянув руки вперед, чтобы сжать ваши задницы в каждой [npc.hand], [npc.she] [npc.moans], [npc.speech(Интересно, в кого из вас я трахнусь первым...)]
 		</p>
 	#ENDIF
 	]]>
@@ -862,20 +853,20 @@
 	<!-- Description is more generic as with more than 2 characters the combinations of attracted/non-attracted would be quite complex to fully detail. -->
 	<htmlContent tag="SEX_GANGBANG_AS_SUB_3"><![CDATA[
 	<p>
-		Wanting everyone present to dominantly fuck you, you tell [npc.name], [npc2.name], and [npc3.name] what's on your mind.
+	Желая, чтобы все присутствующие доминантно трахали тебя, ты говоришь [npc.name], [npc2.name] и [npc3.name], что у тебя на уме.
 	</p>
 	<p>
-		As all three of them give positive responses, you [pc.step] forwards and prepare to submit to them...
+	Когда все трое отвечают согласием, ты [pc.step] вперед, готовясь подчиниться им...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SEX_GANGBANG_AS_SUB_4"><![CDATA[
 	<p>
-		Wanting everyone present to dominantly fuck you, you tell [npc.name], [npc2.name], [npc3.name], and [npc4.name] what's on your mind.
+	Желая, чтобы все присутствующие доминантно трахали тебя, ты говоришь [npc.name], [npc2.name], [npc3.name] и [npc4.name], что у тебя на уме.
 	</p>
 	<p>
-		As all four of them give positive responses, you [pc.step] forwards and prepare to submit to them...
+	Когда все четверо отвечают согласием, ты [pc.step] вперед, готовясь подчиниться им...
 	</p>
 	]]>
 	</htmlContent>
@@ -886,37 +877,36 @@
 	#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
 		#IF(!npc2.isAttractedTo(pc))
 			<p>
-				You step back from [npc.name] and [npc2.name], panting and sighing as the two of them let out relieved sighs at the realisation that you've finished. After you've recovered, you start to get your things back in order, before commanding the two of them to follow you once more.
+				Ты отступаешь от [npc.name] и [npc2.name], тяжело дыша и вздыхая, в то время как они оба облегченно выдыхают, понимая, что ты закончил. Придя в себя, ты начинаешь приводить вещи в порядок, прежде чем снова приказать им следовать за тобой.
 			</p>
 			<p>
-				[npc.speech(Yes, [pc.name]...)] [npc.name] sobs, casting [npc.her] gaze to the floor as [npc.she] and [npc2.name] gather their own things and fall in line.
+				[npc.speech(Да, [pc.name]...)] [npc.name] всхлипывает, опуская [npc.her] взгляд в пол, пока [npc.she] и [npc2.name] собирают свои вещи и выстраиваются в ряд.
 			</p>
 			<p>
-				Smirking at the two of them, you then turn and set off on your way, wondering when you'll rape them next...
+				Усмехнувшись им обоим, ты разворачиваешься и отправляешься в путь, гадая, когда же ты снова изнасилуешь их...
 			</p>
 		#ELSE
 			<p>
-				You step back from [npc.name] and [npc2.name], panting and sighing as you each catch your breath. After you've recovered, you start to get your things back in order, before commanding the two of them to follow you once more.
+				Ты отстраняешься от [npc.name] и [npc2.name], тяжело дыша и вздыхая, пока каждый из вас пытается перевести дух. Придя в себя, ты начинаешь приводить свои вещи в порядок, а затем снова приказываешь им следовать за тобой.
 			</p>
 			<p>
-				[npc.speech(Yes, [pc.name]...)] [npc.name] sobs, casting [npc.her] gaze to the floor as [npc.she] and [npc2.name] gather their own things and fall in line.
+				[npc.speech(Да, [pc.name]...)] [npc.name] всхлипывает, опуская [npc.her] взгляд в пол, пока [npc.she] и [npc2.name] собирают свои вещи и выстраиваются в ряд.
 			</p>
 			<p>
-				Smirking at the two of them, you then turn and set off on your way, wondering when you'll get [npc2.name] to join you in raping [npc.name] next...
+				Усмехнувшись им обоим, ты разворачиваешься и отправляешься в путь, гадая, когда же ты снова заставишь [npc2.name] присоединиться к тебе, чтобы изнасиловать [npc.name]...
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			You, [npc.name], and [npc2.name] all step back from one another, panting and sighing as you each catch your breath. After you've recovered, the three of you start to get your things together, before eventually standing up and smiling at one another.
+			Вы — ты, [npc.name] и [npc2.name] — отстраняетесь друг от друга, тяжело дыша и вздыхая, пока каждый из вас пытается перевести дух. Придя в себя, вы втроем начинаете собирать вещи, а затем наконец встаете и улыбаетесь друг другу.
 		</p>
 		<p>
-			[npc.speech(Mmm, that was fun,)] [npc.name] says with a little laugh.
+			[npc.speech(Ммм, это было весело,)] — с легким смешком говорит [npc.name].
+		</p><p>
+			[npc2.speech(Да, это было просто супер,)] [npc2.name] отвечает, [npc2.speech(Нам определённо стоит повторить это как-нибудь ещё, правда, [pc.name]?)]
 		</p>
 		<p>
-			[npc2.speech(Yeah, that really was great,)] [npc2.name] replies, [npc2.speech(We really should do this again some time, right, [pc.name]?)]
-		</p>
-		<p>
-			[pc.speech(We'll see,)] you tease, smiling and letting out a small laugh as [npc.name] and [npc2.name] whine in unison.
+			[pc.speech(Посмотрим,)] — дразнишь ты с улыбкой и коротким смешком, пока [npc.name] и [npc2.name] в унисон начинают капризничать.
 		</p>
 	#ENDIF
 	]]>
@@ -926,54 +916,55 @@
 	#IF(npc.getPartyLeader()!=null && npc.getPartyLeader().isPlayer())
 		#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
 			<p>
-				You step back from [npc.name], smirking down at [npc.her] as [npc.she] collapses to the floor with a pathetic sob. Ignoring [npc.her] whines for the moment, you turn away and begin getting your things in order.
+				Ты отстраняешься от [npc.name], усмехаясь над [npc.her], пока [npc.she] с жалким всхлипом оседает на пол. Игнорируя на мгновение нытье [npc.her], ты отворачиваешься и начинаешь приводить свои вещи в порядок.
 			</p>
 			<p>
-				[pc.speech(Come on, [npc.name],)] you order once you're ready to go, [pc.speech(unless you want me to rape you again right now.)]
+				[pc.speech(Живее, [npc.name],)] — командуешь ты, когда уже готов идти, — [pc.speech(если только ты не хочешь, чтобы я прямо сейчас снова изнасиловал тебя.)]
 			</p>
 			<p>
-				Letting out another pathetic cry at that prospect, [npc.name] hurries to gather [npc.her] things, before quickly running forwards to join you as you set off on your way once more...
+				Издав еще один жалкий вскрик при этой мысли, [npc.name] спешит собрать [npc.her], а затем быстро бежит вперед, чтобы присоединиться к тебе, когда ты снова отправляешься в путь...
 			</p>
 		#ELSE
 			<p>
-				You step back from [npc.name], smirking down at [npc.her] as [npc.she] collapses to the floor with a deeply-satisfied sigh, [npc.speech(Oh, fuck, that was so good...)]
-			</p><p>
-				В то время как [npc.she] вздыхает и тяжело дышит от напряжения, ты отворачиваешься и начинаешь собирать свои вещи, а затем подходишь к своему спутнику и приказываешь: [pc.speech(Давай, [npc.name], пойдем.)]
+				Ты отстраняешься от [npc.name], самодовольно глядя на [npc.her], пока [npc.she] рушится на пол с глубоким, удовлетворенным вздохом, [npc.speech(Ох, блядь, как же было хорошо...)]
 			</p>
 			<p>
-				[npc.speech(Yes, [pc.name]!)] [npc.she] quickly replies, before hurrying to gather [npc.her] things and then quickly running forwards to join you as you set off on your way once more...
+				Пока [npc.she] тяжело дышит и вздыхает от усталости, ты отворачиваешься и начинаешь приводить свои вещи в порядок, а закончив, подходишь к своей спутнице и командуешь: [pc.speech(Пошли, [npc.name], выдвигаемся.)]
+			</p>
+			<p>
+				[npc.speech(Да, [pc.name]!)] — быстро отвечает [npc.she], после чего спешит собрать [npc.her] и бежит вперед, чтобы присоединиться к тебе, когда ты снова отправляешься в путь...
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(npc.isAsleep())
 			<p>
-				Even after having sex with [npc.herHim], [npc.name] still shows no sign of waking up. Carefully standing up so as not to wake [npc.herHim], you [pc.step] back and look down at the sleeping [npc.race].
+				Даже после секса с [npc.herHim], [npc.name] всё еще не подает признаков пробуждения. Осторожно вставая, чтобы не разбудить [npc.herHim], ты [pc.step] назад и смотришь на спящую [npc.race].
 			</p>
 			<p>
 				#IF(npc.isFeminine())
-					[npc.speech(~Mmm...~)] [npc.she] softly moans as [npc.she] turns onto [npc.her] side.
+					[npc.speech(~Ммм...~)] — тихо стонет [npc.she], когда [npc.she] поворачивается на [npc.her] бок.
 				#ELSE
-					[npc.speech(~Aah...~)] [npc.she] softly groans as [npc.she] turns onto [npc.her] side.
+					[npc.speech(~Аах...~)] — тихо стонет [npc.she], когда [npc.she] поворачивается на [npc.her] бок.
 				#ENDIF
 			</p>
 			<p>
-				Having had your fun, and seeing no reason to wake [npc.herHim] up, you [pc.step] back and leave [npc.name] to continue sleeping... 
+				Насладившись, и не видя причин будить [npc.herHim], ты [pc.step] назад и оставляешь [npc.name] дальше спать... 
 			</p>
 		#ELSEIF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
 			<p>
-				As you step back from [npc.name], [npc.she] sinks to the floor, letting out a thankful sob as [npc.she] realises that you've finished. Ignoring [npc.her] whines for the moment, you turn away and begin getting your things in order.
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая благодарный всхлип, когда [npc.she] понимает, что ты закончил. Игнорируя нытье [npc.her], ты отворачиваешься и начинаешь приводить свои вещи в порядок.
 			</p>
 			<p>
-				Letting out another pathetic cry, [npc.name] shuffles away from you as you look down at [npc.herHim] and wonder what to do next...
+				Издавая очередной жалкий крик, [npc.name] отползает от тебя, пока ты смотришь на [npc.herHim] и раздумываешь, что делать дальше...
 			</p>
 		#ELSE
 			<p>
-				As you step back from [npc.name], [npc.she] sinks to the floor, totally worn out from [npc.her] orgasm#IF(sex.getNumberOfOrgasms(npc)>1)s#ENDIF. Looking up at you, a satisfied smile settles across [npc.her] face, and you realise that you gave [npc.herHim] exactly what [npc.she] wanted.
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, совершенно измотанная после [npc.her] оргазма.#IF(sex.getNumberOfOrgasms(npc)>1)s#ENDIF. Looking up at you, a satisfied smile settles across [npc.her] face, and you realise that you gave [npc.herHim] exactly what [npc.she] wanted.
 			</p>
 			<p>
-				After quickly getting your things in order, you look down at [npc.name] and wonder what to do next...
+				Быстро приведя свои вещи в порядок, ты смотришь на [npc.name] и раздумываешь, что делать дальше...
 			</p>
-	#ENDIF
+		#ENDIF
 	#ENDIF
 	]]>
 	</htmlContent>
@@ -982,86 +973,84 @@
 	#IF(npc.getPartyLeader()!=null && npc.getPartyLeader().isPlayer())
 		#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
 			<p>
-				You step back from [npc.name], smirking down at [npc.her] as [npc.she] collapses to the floor with a pathetic sob. Ignoring [npc.her] whines for the moment, you turn away and begin getting your things in order.
+				Ты отстраняешься от [npc.name], усмехаясь над [npc.her], пока [npc.she] с жалким всхлипом оседает на пол. Игнорируя на мгновение нытье [npc.her], ты отворачиваешься и начинаешь приводить свои вещи в порядок.
 			</p>
 			<p>
-				[pc.speech(Come on, [npc.name],)] you order once you're ready to go, [pc.speech(unless you want me to rape you again right now.)]
+				[pc.speech(Живее, [npc.name],)] — командуешь ты, когда уже готов идти, — [pc.speech(если только ты не хочешь, чтобы я прямо сейчас снова изнасиловал тебя.)]
 			</p>
 			<p>
-				Letting out another pathetic cry at that prospect, [npc.name] hurries to gather [npc.her] things, before quickly running forwards to join you as you set off on your way once more...
+				Издав еще один жалкий вскрик при этой мысли, [npc.name] спешит собрать [npc.her], а затем быстро бежит вперед, чтобы присоединиться к тебе, когда ты снова отправляешься в путь...
 			</p>
 		#ELSE
 			<p>
-				You step back from [npc.name], smirking down at [npc.her] as [npc.she] collapses to the floor with a protesting whine, [npc.speech(Aww... I'm not satisfied from that...)]
-			</p><p>
-				Игнорируя жалобы [npc.her], ты отворачиваешься и начинаешь собирать свои вещи, а когда это сделано, ты подходишь к своему спутнику и прикажешь: [pc.speech(Давай, [npc.name], пойдем.)]
+				Ты отстраняешься от [npc.name], ухмыляясь на [npc.her], пока [npc.she] валится на пол с протестующим скулением, [npc.speech(О-о-о... мне этого мало...)]
 			</p>
 			<p>
-				[npc.speech(Ok, [pc.name]...)] [npc.she] reluctantly replies, before hurrying to gather [npc.her] things and then quickly running forwards to join you as you set off on your way once more...
+				Игнорируя жалобы [npc.her], ты отворачиваешься и начинаешь приводить свои вещи в порядок, а закончив, подходишь к своему спутнику и командуешь: [pc.speech(Пошли, [npc.name], выдвигаемся.)]
+			</p>
+			<p>
+				[npc.speech(Хорошо, [pc.name]...)] — неохотно отвечает [npc.she], прежде чем поспешно собрать вещи [npc.her] и быстро догнать тебя, когда ты снова отправляешься в путь...
 			</p>
 		#ENDIF
 	#ELSE
 		#IF(npc.isAsleep())
 			<p>
-				Even after having sex with [npc.herHim], [npc.name] still shows no sign of waking up. Carefully standing up so as not to wake [npc.herHim], you [pc.step] back and look down at the sleeping [npc.race].
+				Даже после секса с [npc.herHim], [npc.name] всё еще не подает признаков пробуждения. Осторожно вставая, чтобы не разбудить [npc.herHim], ты [pc.step] назад и смотришь на спящую [npc.race].
 			</p>
 			<p>
 				#IF(npc.isFeminine())
-					[npc.speech(~Mmm...~)] [npc.she] softly moans as [npc.she] turns onto [npc.her] side.
+					[npc.speech(~Ммм...~)] — тихо стонет [npc.she], когда [npc.she] поворачивается на [npc.her] бок.
 				#ELSE
-					[npc.speech(~Aah...~)] [npc.she] softly groans as [npc.she] turns onto [npc.her] side.
+					[npc.speech(~Аах...~)] — тихо стонет [npc.she], когда [npc.she] поворачивается на [npc.her] бок.
 				#ENDIF
 			</p>
 			<p>
-				Having had your fun, and seeing no reason to wake [npc.herHim] up, you [pc.step] back and leave [npc.name] to continue sleeping... 
+				Насладившись, и не видя причин будить [npc.herHim], ты [pc.step] назад и оставляешь [npc.name] дальше спать... 
 			</p>
 		#ELSE
 			<p>
-				As you step back from [npc.name], [npc.she] sinks to the floor, letting out a desperate whine as [npc.she] realises that you've finished.
-				#IF(npc.hasSlavePermissionSetting(SLAVE_PERMISSION_SETTING_SEX_MASTURBATE))
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая отчаянный скулеж, когда [npc.she] понимает, что ты закончил.				#IF(npc.hasSlavePermissionSetting(SLAVE_PERMISSION_SETTING_SEX_MASTURBATE))
 					#IF(npc.isTaur())
-						 Unable to reach back to [npc.her] groin, [npc.she] frantically starts rubbing [npc.her] rear-end up against a nearby piece of furniture in a desperate attempt to masturbate and finish what you started.
+						 Не в силах дотянуться до паха [npc.her], [npc.she] отчаянно начинает тереться [npc.her] о ближайший предмет мебели, пытаясь мастурбировать и закончить то, что ты начал.
 					#ELSEIF(npc.hasLegs())
-						 [npc.Her] [npc.hands] dart down between [npc.her] [npc.legs], and [npc.she] frantically starts masturbating as [npc.she] seeks to finish what you started.
-					#ELSE
-						 [npc.Her] [npc.hands] dart down to [npc.her] groin, and [npc.she] frantically starts masturbating as [npc.she] seeks to finish what you started.
-					#ENDIF
+[npc.Her] [npc.hands] стремительно проскальзывает между [npc.her] [npc.legs], и [npc.she] в панике начинает мастурбировать, пока [npc.she] пытается закончить то, что ты начал(а).					#ELSE
+[npc.Her] [npc.hands] резко ныряет к [npc.her] паху, и [npc.she] в неистовстве начинает мастурбировать, стремясь завершить то, что ты начал(а)[npc.she].					#ENDIF
 				#ELSE
-					 Forbidden from masturbating, all [npc.she] can do is fruitlessly rub [npc.her] thighs together and let out another frustrated groan.
+						 Лишенная возможности мастурбировать, [npc.she] может лишь тщетно тереть [npc.her] бедра, издавая очередной разочарованный стон.
 				#ENDIF
 			</p>
 			<p>
 				#IF(!npc.isAttractedTo(pc) && game.isNonConEnabled())
-					Trying not to look at you, [npc.she] mutters under [npc.her] breath, [npc.speech(Fuck... Why am I so horny?)]
-				#ELSE
-					[npc.speech([pc.Name]! I'm still horny!)] [npc.she] cries.
+Стараясь не смотреть на тебя, [npc.she] бормочет себе под [npc.her] нос, [npc.speech(Блядь... Ну почему меня так штырит?)]				#ELSE
+						 [npc.speech([pc.Name]! Я всё еще хочу!)] — вскрикивает [npc.she].
 				#ENDIF
 			</p>
-	@@H0@@
-		Having had your fun, you disentangle yourself from @@T2@@, @@T3@@, and @@T4@@, before starting to get your things back in order. Grinning at your three partners, you tell them that you should do this again some time, before @@T5@@ back and wondering what to do next...
-	@@H1@@]]>
+		#ENDIF
+	#ENDIF
+	]]>
 	</htmlContent>
 	
-	<htmlContent tag="AFTER_SEX_GANGBANG_3"><![CDATA[<p>
-		Насладившись, ты отстегиваешь [npc.name], [npc2.name] и [npc3.name], прежде чем начать собирать свои вещи. Улыбаясь своим трем партнерам, ты говоришь им, что вам следует сделать это снова когда-нибудь, прежде чем [pc.stepping] возвращается и думает, что делать дальше...
+	<htmlContent tag="AFTER_SEX_GANGBANG_3"><![CDATA[
+	<p>
+		Насладившись, ты высвобождаешься из объятий [npc.name], [npc2.name] и [npc3.name], после чего начинаешь приводить свои вещи в порядок. Усмехаясь своим трем партнершам, ты говоришь им, что вам стоит повторить это как-нибудь еще, прежде чем [pc.stepping] вернется и начнет раздумывать, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_GANGBANG_4"><![CDATA[
 	<p>
-		Насладившись, ты освобождаешься от [npc.name], [npc2.name], [npc3.name] и [npc4.name], прежде чем начать собирать свои вещи. Улыбаясь своим четырём партнёрам, ты говоришь им, что вам следует сделать это снова когда-нибудь, прежде чем [pc.stepping] возвращается и задумывается о том, что делать дальше...
+		Насладившись, ты высвобождаешься из объятий [npc.name], [npc2.name], [npc3.name] и [npc4.name], после чего начинаешь приводить свои вещи в порядок. Усмехаясь своим четырем партнершам, ты говоришь им, что вам стоит повторить это как-нибудь еще, прежде чем [pc.stepping] вернется и начнет раздумывать, чем заняться дальше...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AFTER_SEX_CONTINUE"><![CDATA[
 	<p>
-		Насладившись своим рабом, ты задумываешься о том, что делать дальше.
+		Насладившись своей рабыней, ты раздумываешь, чем заняться дальше.
 		#IF(npc.isAsleep())
-			 Поскольку [npc.sheIs] всё ещё спит, тебе нужно разбудить [npc.herHim], прежде чем взаимодействовать с [npc.herHim]. Это наверняка немного разозлит [npc.herHim]...
+			 Поскольку [npc.sheIs] всё еще спит, тебе нужно разбудить [npc.herHim], прежде чем взаимодействовать с [npc.herHim]. Это наверняка немного разозлит [npc.herHim]...
 		#ELSE
-			 Ждучи, чтобы услышать, какое будет твоё следующее действие, [npc.name] задумывается о том, будешь ли ты использовать [npc.herHim] снова или сделаешь что-то ещё...
+			 Ожидая твоей команды, [npc.name] гадает, воспользуешься ли ты снова [npc.herHim] или решишь заняться чем-то еще...
 		#ENDIF
 	</p>
 	]]>

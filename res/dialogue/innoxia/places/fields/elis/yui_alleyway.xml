@@ -14,18 +14,18 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Submit to Yui and allow her to tie you up so that you can be fucked by strangers all night long...
-					<br/>[style.italicsSex(This will involve submissive, masochistic sex with numerous strangers!)]
+					Подчиниться Юи и позволить ей связать тебя, чтобы незнакомцы трахали тебя всю ночь напролет...
+					<br/>[style.italicsSex(Это будет покорный, мазохистский секс с кучей незнакомцев!)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_start]]></nextDialogue>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Refuse]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Yui that you're not interested in her offer.]]></responseTooltip>
+				<responseTitle><![CDATA[Отказаться]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Юи, что её предложение тебя не интересует.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_refused]]></nextDialogue>
 			</response>
 		</responses>
@@ -44,8 +44,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[You wonder where to go to next...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Ты гадаешь, куда отправиться дальше...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 			</response>
@@ -66,8 +66,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Tied up]]></responseTitle>
-				<responseTooltip><![CDATA[Yui ties you up in the alleyway...]]></responseTooltip>
+				<responseTitle><![CDATA[Связан(а)]]></responseTitle>
+				<responseTooltip><![CDATA[Юи связывает тебя в переулке...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_tied_up]]></nextDialogue>
 			</response>
 		</responses>
@@ -89,8 +89,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wait]]></responseTitle>
-				<responseTooltip><![CDATA[Completely immobilised and unable to communicate, all you can do is wait...]]></responseTooltip>
+				<responseTitle><![CDATA[Ждать]]></responseTitle>
+				<responseTooltip><![CDATA[Ты полностью обездвижен(а) и не можешь даже сказать ни слова, остается только ждать...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_core]]></nextDialogue>
 			</response>
 		</responses>
@@ -110,8 +110,8 @@
 				<availabilityConditional><![CDATA[[#!client.hasFetish(FETISH_ORAL_GIVING) && client.hasFetish(FETISH_VAGINAL_GIVING)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[[client.Name] chooses to fuck your pussy...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[[client.Name] решает трахнуть твою киску...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#client.setExtraBlockedParts(null)]
@@ -158,8 +158,8 @@
 				<availabilityConditional><![CDATA[[#!client.hasFetish(FETISH_ORAL_GIVING) && client.hasFetish(FETISH_ANAL_GIVING)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Anal]]></responseTitle>
-				<responseTooltip><![CDATA[[client.Name] chooses to fuck your ass...]]></responseTooltip>
+				<responseTitle><![CDATA[Анал]]></responseTitle>
+				<responseTooltip><![CDATA[[client.Name] решает трахнуть твою попку...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#client.setExtraBlockedParts(null)]
@@ -206,8 +206,8 @@
 				<availabilityConditional><![CDATA[[#client.hasFetish(FETISH_ORAL_GIVING) && !client.hasFetish(FETISH_ANAL_GIVING)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Pussy licked]]></responseTitle>
-				<responseTooltip><![CDATA[[client.Name] is forced to lick your pussy clean...]]></responseTooltip>
+				<responseTitle><![CDATA[Киску лижут]]></responseTitle>
+				<responseTooltip><![CDATA[[client.Name] заставляют вылизать твою киску дочиста...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#client.setExtraBlockedParts(null)]
@@ -246,8 +246,8 @@
 				<availabilityConditional><![CDATA[[#client.hasFetish(FETISH_ORAL_GIVING) && client.hasFetish(FETISH_ANAL_GIVING)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Ass licked]]></responseTitle>
-				<responseTooltip><![CDATA[[client.Name] is forced to perform anilingus on you...]]></responseTooltip>
+				<responseTitle><![CDATA[Задницу лижут]]></responseTitle>
+				<responseTooltip><![CDATA[[client.Name] вынуждена заняться анилингусом с тобой...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#client.setExtraBlockedParts(null)]
@@ -302,8 +302,8 @@
 			[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/yui_alleyway', 'POST_SEX'))]
 			[#game.banishNPC(client)]
 		]]></preParsingEffects>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[The [client.name] has had enough...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[С [client.name] хватит...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -314,8 +314,8 @@
 				<availabilityConditional><![CDATA[[#game.isHourBetween(5, 12)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Gang leaves]]></responseTitle>
-				<responseTooltip><![CDATA[The gang has had enough and leaves without giving you a second thought...]]></responseTooltip>
+				<responseTitle><![CDATA[Банда уходит]]></responseTitle>
+				<responseTooltip><![CDATA[Банде всё надоедает, и они уходят, даже не взглянув на тебя во второй раз...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_gang_leaves]]></nextDialogue>
 			</response>
 			<!-- More sex scenes -->
@@ -323,11 +323,11 @@
 				<availabilityConditional><![CDATA[[#game.isHourBetween(12, 5)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Recover]]></responseTitle>
+				<responseTitle><![CDATA[Восстановиться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You have a few moments in which to recover before another stranger finds you...
+					У тебя есть несколько мгновений, чтобы прийти в себя, прежде чем тебя найдет очередной незнакомец...
 					#IF(flags.hasFlag(FLAG_innoxia_yui_alleyway_gang_present))
-						<br/>[style.italicsSex(Keep on experiencing sex scenes as you're repeatedly fucked by gang members.)]
+						<br/>[style.italicsSex(Продолжать сцены секса, пока тебя раз за разом трахают члены банды.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_core_repeat]]></nextDialogue>
@@ -337,10 +337,10 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_yui_alleyway_gang_present) && flags.hasFlag(FLAG_innoxia_yui_alleyway_gang_victim_cleaned) && game.isHourBetween(12, 5)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Gang's cock-sleeve]]></responseTitle>
+				<responseTitle><![CDATA[Спермоприемник для банды]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You're repeatedly fucked by members of the gang throughout the rest of the night...
-					<br/>[style.italicsMinorBad(This will skip through the rest of the night until Yui arrives to release you.)]
+					Остаток ночи тебя будут раз за разом трахать члены банды...
+					<br/>[style.italicsMinorBad(Пропустить остаток ночи до прихода Юи, которая тебя освободит.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_night_of_sex]]></nextDialogue>
 			</response>
@@ -366,8 +366,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Released]]></responseTitle>
-				<responseTooltip><![CDATA[Yui has returned to release you...]]></responseTooltip>
+				<responseTitle><![CDATA[Освобождение]]></responseTitle>
+				<responseTooltip><![CDATA[Юи вернулась, чтобы освободить тебя...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -388,8 +388,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Released]]></responseTitle>
-				<responseTooltip><![CDATA[Yui has returned to release you...]]></responseTooltip>
+				<responseTitle><![CDATA[Освобождение]]></responseTitle>
+				<responseTooltip><![CDATA[Юи вернулась, чтобы освободить тебя...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_yui_alleyway_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -409,8 +409,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Finish getting dressed and continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Закончи одеваться и продолжай свой путь...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[

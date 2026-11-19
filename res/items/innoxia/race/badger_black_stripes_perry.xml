@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>40</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Black Stripes Perry]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Black Stripes Perries]]></namePlural>
-		<description><![CDATA[A glass bottle containing pear cider, known more commonly as 'perry'. A stylised image of a badger's face is displayed upon the bottle's neck, while the label declares it to be of the brand 'Black Stripes'.]]></description> 
+		<name><![CDATA[Черные Полоски Перри]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Черные Полоски Перри]]></namePlural>
+		<description><![CDATA[Стеклянная бутылка с грушевым сидром, более известным как «перри». На горлышке красуется стилизованное изображение морды барсука, а этикетка гласит, что это бренд «Черные Полоски».]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,16 +28,16 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
-			<line><![CDATA[[style.boldMinorBad(Adds)] 5% to [style.boldAlcohol(intoxication level)]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
+			<line><![CDATA[[style.boldMinorBad(Добавляет)] 5% к [style.boldAlcohol(уровню опьянения)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A soothing wave of arcane energy washes over [npc.name]...
+				Успокаивающая волна арканы омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 			[#npc.incrementAlcoholLevel(0.05)]
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off the bottle of perry, before tilting [npc.her] head back and gulping down the golden liquid. Quickly finishing off the entire bottle, [npc.name] [npc.verb(notice)] a faint, musky dryness permeating through the sweet liquid, which lingers for some time as a slightly unpleasant aftertaste.
+		[npc.Name] [npc.verb(pop)] откупоривает бутылку перри, после чего запрокидывает [npc.her] голову и жадно глотает золотистую жидкость. Быстро осушив всю бутылку, [npc.name] [npc.verb(notice)] едва уловимую мускусную сухость, пропитывающую сладкий напиток, которая на какое-то время оставляет слегка неприятное послевкусие.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off the bottle of perry, before bringing it up to [npc2.namePos] [npc2.lips] and making [npc2.herHim] gulp down the golden liquid. Quickly finishing off the entire bottle, [npc2.name] [npc2.verb(notice)] a faint, musky dryness permeating through the sweet liquid, which lingers for some time as a slightly unpleasant aftertaste.
+		[npc.Name] [npc.verb(pop)] откупоривает бутылку перри, подносит её к [npc2.namePos] [npc2.lips] и заставляет [npc2.herHim] жадно глотать золотистую жидкость. Быстро осушив всю бутылку, [npc2.name] [npc2.verb(notice)] едва уловимую мускусную сухость, пропитывающую сладкий напиток, которая на какое-то время оставляет слегка неприятное послевкусие.
 		]]></otherUse>
 	</useDescriptions>
 

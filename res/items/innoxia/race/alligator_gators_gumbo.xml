@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>100</value> 
 		<determiner><![CDATA[a bowl of]]></determiner>
-		<name><![CDATA[Gator's Gumbo]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Gator's Gumbo]]></namePlural>
-		<description><![CDATA[A novelty, individual-sized cast iron bowl, complete with a resealable lid. The contents take the form of a delicious-smelling variety of gumbo, which contains meat, okra, and a variety of other mysterious vegetables.]]></description> 
+		<name><![CDATA[Гамбо из аллигатора]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Гамбо из аллигатора]]></namePlural>
+		<description><![CDATA[Необычная порционная чугунная миска с герметичной крышкой. Внутри — ароматное и сытное гамбо, в котором смешались мясо, окра и множество других таинственных овощей.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(3)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(3)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot stronger...
+				[npc.Name] [npc.verb(start)] почувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 3)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(remove)] the lid from the bowl of Gator's Gumbo and [npc.verb(start)] eating the rich meal contained within. The delicious, slightly spicy taste of seafood instantly fills [npc.her] mouth, but [npc.she] [npc.do]n't take any time to really relish the flavour, as [npc.she] can't help but keep on greedily moving on to [npc.her] next mouthful until [npc.sheHas] gulped down all of the tangy mess.
+		[npc.Name] [npc.verb(remove)] крышку с миски с гамбо из аллигатора и [npc.verb(start)] жадно поглощать это наваристое блюдо. Вкус морепродуктов, пикантный и слегка пряный, мгновенно наполняет рот [npc.her], но [npc.she] [npc.do] не хватает времени, чтобы по-настоящему насладиться вкусом, ведь [npc.she] не может перестать жадно заглатывать [npc.her] следующий кусок, пока [npc.sheHas] не проглатывает всю эту острую смесь целиком.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(remove)] the lid from the bowl of Gator's Gumbo and [npc.verb(offer)] the rich meal contained within to [npc2.name]. Tucking in, the delicious, slightly spicy taste of seafood instantly fills [npc2.namePos] mouth, but [npc2.she] [npc2.do]n't take any time to really relish the flavour, as [npc2.she] can't help but keep on greedily moving on to [npc2.her] next mouthful until [npc2.sheHas] gulped down all of the tangy mess.
+		[npc.Name] [npc.verb(remove)] крышку с миски с гамбо из аллигатора и [npc.verb(offer)] это наваристое блюдо [npc2.name]. Стоит ей начать есть, как вкус морепродуктов, пикантный и слегка пряный, мгновенно наполняет рот [npc2.namePos], но [npc2.she] [npc2.do] не хватает времени, чтобы по-настоящему насладиться вкусом, ведь [npc2.she] не может перестать жадно заглатывать [npc2.her] следующий кусок, пока [npc2.sheHas] не проглатывает всю эту острую смесь целиком.
 		]]></otherUse>
 	</useDescriptions>
 

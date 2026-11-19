@@ -30,11 +30,11 @@
 	<sexEffect>false</sexEffect>
 	
 	<!-- The name of this set bonus. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
-	<name><![CDATA[Courageous Enforcer]]></name>
+	<name><![CDATA[Храбрый Enforcer]]></name>
 	
 	<!-- The description of this status effect. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
 	<description><![CDATA[
-		By wearing the Enforcer Heavy Tactical Uniform, [npc.name] [npc.has] gained a substantial amount of protection and [npc.verb(feel)] more courageous that [npc.she] might otherwise be.
+		Благодаря тяжелой тактической униформе Enforcer, [npc.name] [npc.has] получает значительную защиту и [npc.verb(feel)] чувствует себя куда смелее, чем [npc.she] мог бы чувствовать себя без нее.
 	]]></description>
 	
 	<!-- The name of the icon which should be used to represent this status effect. The icon must be an svg file, and must be placed in the same folder as this XML file. -->

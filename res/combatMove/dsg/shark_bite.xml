@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Charging Bite]]></name>
+	<name><![CDATA[Стремительный укус]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -24,7 +24,7 @@
 	'damageInflicted' will parse to the attacker's projected damage of this attack (using the defined 'baseDamage' field defined below).
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[
-		Use [npc.her] mouthful of sharp sharkteeth to deliver a powerful bite to [npc.her] target, dealing formattedDamageInflicted damage.
+		[npc.her] использует пасть, полную острых акуличьих зубов, чтобы нанести мощный укус по цели [npc.her], нанося formattedDamageInflicted урона.
 	]]></description>
 	
 	<!-- The type of damage that this move inflicts. 
@@ -103,7 +103,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters who have a shark face type.
+		Доступно персонажам с типом лица «акула».
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -134,7 +134,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Target's physique is less than two-thirds of the attacker's physique.
+		Телосложение цели составляет менее двух третей от телосложения атакующего.
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -146,17 +146,17 @@
 	'isCritical' will parse to the boolean return value for isCritical, and will therefore be either 'true' or 'false'.
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] mouthful of sharp sharkteeth to deliver a powerful bite [npc2.name], dealing formattedDamageInflicted damage.
+		[npc.her] использует пасть, полную острых акуличьих зубов, чтобы нанести мощный укус [npc2.name], нанося formattedDamageInflicted урона.
 		#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-			 [style.italicsTerrible(Damage is reduced to 0 as [npc.her] mouth is blocked!)]
+			 [style.italicsTerrible(Урон снижен до 0, так как пасть [npc.her] заблокирована!)]
 		#ENDIF
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] mouthful of sharp sharkteeth to deliver a powerful bite [npc.her] target, dealing formattedDamageInflicted damage.
+		[npc.her] использует пасть, полную острых акуличьих зубов, чтобы нанести мощный укус по цели [npc.her], нанося formattedDamageInflicted урона.
 		#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-			 [style.italicsTerrible(Damage is reduced to 0 as [npc.her] mouth is blocked!)]
+			 [style.italicsTerrible(Урон снижен до 0, так как пасть [npc.her] заблокирована!)]
 		#ENDIF
 	]]></movePredictionDescriptionNoTarget>
 	
@@ -172,17 +172,15 @@
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
 			#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-				As [npc.her] mouth is blocked, [npc.name] [npc.verb(fail)] to bite [npc2.name], and [npc.verb(end)] up doing no damage at all...
+				Поскольку пасть [npc.her] заблокирована, [npc.name] [npc.verb(fail)] укусить [npc2.name] и в итоге [npc.verb(end)] наносит совсем немного урона...
 			#ELSE
-				[npc.Name] [npc.verb(charge)] with incredible speed at [npc2.name] and [npc.verb(open)] [npc.her] mouth just before impact, revealing extremely sharp teeth that [npc.she] [npc.verb(sink)] into [npc2.namePos] aura!
+				[npc.Name] [npc.verb(charge)] с невероятной скоростью на [npc2.name] и [npc.verb(open)] [npc.her] пасть прямо перед столкновением, обнажая чрезвычайно острые зубы, которые [npc.she] [npc.verb(sink)] в [npc2.namePos] ауру!
 			#ENDIF
 			formattedHealthDamage
 		]]></execute>
-		<critDescription><![CDATA[
-			[npc.NamePos] bite was extremely effective!
-		]]></critDescription>
+		<critDescription><![CDATA[[npc.NamePos] укус был невероятно эффективным!]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] been crippled by the attack!
+			[npc2.Name] [npc2.has] ошеломлен атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

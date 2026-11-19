@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Cornered Beast]]></name>
+	<name><![CDATA[Загнанный зверь]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -24,7 +24,7 @@
 	'damageInflicted' will parse to the attacker's projected damage of this attack (using the defined 'baseDamage' field defined below).
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[
-		Use [npc.her] claw-tipped digits to deliver a blow to [npc.her] target, dealing formattedDamageInflicted damage. Does triple damage when [npc.her] HP is below [style.boldCrimson(50%)].
+		Используя [npc.her] когтистые пальцы, наносит удар по [npc.her], нанося formattedDamageInflicted урона. Наносит тройной урон, если [npc.her] Здоровье ниже [style.boldCrimson(50%)].
 	]]></description>
 	
 	<!-- The type of damage that this move inflicts. 
@@ -105,7 +105,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters who have a raccoon arm type.
+		Доступно персонажам с типом руки «енот».
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -138,7 +138,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Attacker's HP is less than [style.boldCrimson(20%)].
+		Здоровье атакующего меньше [style.boldCrimson(20%)].
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -150,17 +150,17 @@
 	'isCritical' will parse to the boolean return value for isCritical, and will therefore be either 'true' or 'false'.
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] raccoon claws to deliver a powerful blow to [npc2.name], dealing formattedDamageInflicted damage. Will deal triple damage when [npc.namePos] HP is below [style.boldCrimson(50%)].
+		Используя [npc.her] когти енота, наносит мощный удар по [npc2.name], нанося formattedDamageInflicted урона. Наносит тройной урон, если [npc.namePos] Здоровье ниже [style.boldCrimson(50%)].
 		#IF(npc.isArmMovementHindered())
-			 [style.italicsTerrible(Damage is reduced to 0 as [npc.her] arms are restricted!)]
+			 [style.italicsTerrible(Урон снижается до 0, так как [npc.her] руки скованы!)]
 		#ENDIF
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] raccoon claws to deliver a powerful blow to [npc.her] target, dealing formattedDamageInflicted damage. Will deal triple damage when [npc.namePos] HP is below [style.boldCrimson(50%)].
+		Используя [npc.her] когти енота, наносит мощный удар по [npc.her], нанося formattedDamageInflicted урона. Наносит тройной урон, если [npc.namePos] Здоровье ниже [style.boldCrimson(50%)].
 		#IF(npc.isArmMovementHindered())
-			 [style.italicsTerrible(Damage is reduced to 0 as [npc.her] arms are restricted!)]
+			 [style.italicsTerrible(Урон снижается до 0, так как [npc.her] руки скованы!)]
 		#ENDIF
 	]]></movePredictionDescriptionNoTarget>
 	
@@ -176,17 +176,17 @@
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
 			#IF(npc.isArmMovementHindered())
-				As [npc.her] arms are restricted, [npc.name] [npc.verb(fail)] to hit [npc2.name], and [npc.verb(end)] up doing no damage at all...
+				Поскольку [npc.her] руки скованы, [npc.name] [npc.verb(fail)] попасть по [npc2.name] и в итоге [npc.verb(end)] наносит совсем немного урона...
 			#ELSE
-				[npc.Name] [npc.verb(lunge)] at [npc2.name] with [npc.her] claws and [npc.verb(leave)] deep gashes in [npc2.namePos] aura!
+				[npc.Name] [npc.verb(lunge)] на [npc2.name], используя [npc.her] когти, и [npc.verb(leave)] глубокие раны в [npc2.namePos] ауре!
 			#ENDIF
 			formattedHealthDamage
 		]]></execute>
 		<critDescription><![CDATA[
-			In [npc.her] desperation, [npc.namePos] makes an extremely effective strike!
+			В [npc.her] отчаянии, [npc.namePos] наносит невероятно эффективный удар!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] been crippled by the attack!
+			[npc2.Name] [npc2.has] ошеломлен атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

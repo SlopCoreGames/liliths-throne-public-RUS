@@ -24,8 +24,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Exit the gym and head back out into the Shopping Arcade.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Выйти из спортзала и вернуться в Торговую аркаду.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="SHOPPING_ARCADE_PIXS_GYM"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -70,8 +70,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_pix_had_tour)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Tour]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Pix and let her give you a tour of the gym.]]></responseTooltip>
+				<responseTitle><![CDATA[Экскурсия]]></responseTitle>
+				<responseTooltip><![CDATA[Пойти за Пикс, чтобы она провела тебе экскурсию по спортзалу.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_tour]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.walkPathNoEffects(3, 0, true, 1)]
@@ -85,18 +85,18 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_pix_session_started) || pc.getMoney()<100)
-						Single ([style.moneyFormatUncoloured(100, span)])
+						Разовое занятие ([style.moneyFormatUncoloured(100, span)])
 					#ELSE
-						Single ([style.moneyFormat(100, span)])
+						Разовое занятие ([style.moneyFormat(100, span)])
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_pix_session_started))
-						You've already purchased a single session in the gym!
+						Ты уже купил разовое занятие в спортзале!
 					#ELSEIF(pc.getMoney()<100)
-						You don't have the one hundred flames required to purchase a single session in the gym!
+						У тебя недостаточно огней (нужно сто), чтобы купить разовое занятие в спортзале!
 					#ELSE
-						Tell Pix that you'd like to purchase a single session in the gym and give her one hundred flames.
+						Сказать Пикс, что ты хочешь купить разовое занятие, и отдать ей сто огней.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -118,18 +118,18 @@
 				<index><![CDATA[2]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.getMoney()<8000 || !game.getCharactersPresent().contains(pix))
-						Membership ([style.moneyFormatUncoloured(8000, span)])
+						Абонемент ([style.moneyFormatUncoloured(8000, span)])
 					#ELSE
-						Membership ([style.moneyFormat(8000, span)])
+						Абонемент ([style.moneyFormat(8000, span)])
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!game.getCharactersPresent().contains(pix))
-						You can only purchase a lifetime membership from Pix, so will have to return during the day when she's here.
+						Пожизненный абонемент можно купить только у Пикс, так что тебе придется вернуться днем, когда она будет на месте.
 					#ELSEIF(pc.getMoney()<8000)
-						You don't have the eight thousand flames required to purchase a lifetime membership!
+						У тебя недостаточно восьми тысяч огней, чтобы купить пожизненный абонемент!
 					#ELSE
-						Tell Pix that you'd like to sign up for the lifetime membership option and give her eight thousand flames.
+						Скажи Пикс, что хочешь оформить пожизненный абонемент, и отдай ей восемь тысяч огней.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -150,14 +150,14 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(pix) && flags.hasFlag(FLAG_innoxia_pix_had_tour) && pc.hasItemType(ITEM_innoxia_quest_gym_membership_card)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Pix's workout]]></responseTitle>
+				<responseTitle><![CDATA[Тренировка Пикс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isVisiblyPregnant())
-						Pix isn't willing to put you through any kind of strenuous exercise while you're pregnant!
+						Пикс не хочет подвергать тебя никаким изнурительным упражнениям, пока ты беременна!
 					#ELSEIF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do Pix's exhausting workout routine!
+						Ты слишком устала, чтобы выполнять изматывающую программу тренировок Пикс!
 					#ELSE
-						Pix is hovering close by, bouncing up and down on the spot while glancing your way. She obviously wants you to ask her for a personal training session...
+						Пикс крутится рядом, подпрыгивая на месте и поглядывая на тебя. Очевидно, она хочет, чтобы ты попросила её о персональной тренировке...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -179,12 +179,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_pix_had_tour) && game.getCharactersPresent().contains(pix)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Gym]]></responseTitle>
+				<responseTitle><![CDATA[Тренажерный зал]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_pix_talk_gym))
-						You're already asking Pix about the history of her gym!
+						Ты уже расспрашиваешь Пикс об истории её спортзала!
 					#ELSE
-						Ask Pix about the history of her gym.
+						Расспроси Пикс об истории её спортзала.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -205,12 +205,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_pix_had_tour) && game.getCharactersPresent().contains(pix)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Hannah]]></responseTitle>
+				<responseTitle><![CDATA[Ханна]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_pix_talk_boxing))
-						You're already asking Pix about Hannah!
+						Ты уже расспрашиваешь Пикс о Ханне!
 					#ELSE
-						Ask Pix about the spotted hyena-girl, Hannah, who works here as a boxing instructor.
+						Расспросить Пикс о пятнистой гиене-девушке по имени Ханна, которая работает здесь инструктором по боксу.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -231,12 +231,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_pix_had_tour) && game.getCharactersPresent().contains(pix)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Brahman]]></responseTitle>
+				<responseTitle><![CDATA[Брахман]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_pix_talk_yoga))
-						You're already asking Pix about Brahman!
+						Ты уже расспрашиваешь Пикс о Брахмане!
 					#ELSE
-						Ask Pix about the bull-boy, Brahman, who works here as a yoga instructor.
+						Расспросить Пикс о парне-быке по имени Брахман, который работает здесь инструктором по йоге.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -258,8 +258,8 @@
 				<availabilityConditional><![CDATA[[#!pc.hasItemType(ITEM_innoxia_quest_gym_membership_card) && !flags.hasFlag(FLAG_innoxia_pix_session_started)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Pix that you don't have time right now, but you might be back later.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Пикс, что сейчас у тебя нет времени, но ты, возможно, вернешься позже.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_dominion_shopping_arcade_gym_exit"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -279,8 +279,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Follow]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Pix as she leads you through the gym.]]></responseTooltip>
+				<responseTitle><![CDATA[Следовать]]></responseTitle>
+				<responseTooltip><![CDATA[Идти за Пикс, пока она ведет тебя по спортзалу.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_tour_next]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.walkPathNoEffects(0, 2, true, 1)]
@@ -299,8 +299,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Return]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Pix as she takes you back to the reception desk.]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Идти за Пикс, пока она ведет тебя обратно к стойке регистрации.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_tour_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_innoxia_dominion_shopping_arcade_gym, PLACE_TYPE_innoxia_dominion_shopping_arcade_gym_reception)]
@@ -352,8 +352,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Full effort]]></responseTitle>
-				<responseTooltip><![CDATA[Put all of your effort into the weights routine.]]></responseTooltip>
+				<responseTitle><![CDATA[На полную мощь]]></responseTitle>
+				<responseTooltip><![CDATA[Выложись на полную во время тренировки с весами.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_pix_workout_cardio]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setRandomLocation(WORLD_TYPE_innoxia_dominion_shopping_arcade_gym, PLACE_TYPE_innoxia_dominion_shopping_arcade_gym_cardio)]
@@ -366,8 +366,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Hold back]]></responseTitle>
-				<responseTooltip><![CDATA[Hold back and conserve your energy...]]></responseTooltip>
+				<responseTitle><![CDATA[Сдерживаться]]></responseTitle>
+				<responseTooltip><![CDATA[Сдерживаться и беречь энергию...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_pix_workout_cardio]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setRandomLocation(WORLD_TYPE_innoxia_dominion_shopping_arcade_gym, PLACE_TYPE_innoxia_dominion_shopping_arcade_gym_cardio)]
@@ -388,8 +388,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Steady run]]></responseTitle>
-				<responseTooltip><![CDATA[Set the running machine's speed to a steady pace.]]></responseTooltip>
+				<responseTitle><![CDATA[Размеренный бег]]></responseTitle>
+				<responseTooltip><![CDATA[Установи на беговой дорожке средний темп.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_pix_workout_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_pix_workout_cardio_saved_energy, false)]
@@ -400,8 +400,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Slow jog]]></responseTitle>
-				<responseTooltip><![CDATA[Set the running machine's speed to a slow jog in order to conserve energy.]]></responseTooltip>
+				<responseTitle><![CDATA[Легкий бег трусцой]]></responseTitle>
+				<responseTooltip><![CDATA[Установи на беговой дорожке темп легкой трусцы, чтобы сберечь энергию.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_pix_workout_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/shoppingArcade/pixsPlayground', 'RECEPTION_PIX_WORKOUT_CARDIO_HELD_BACK'))]
@@ -434,12 +434,12 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Pix's reward]]></responseTitle>
+				<responseTitle><![CDATA[Награда Пикс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isAbleToOrgasm())
-						As you are unable to orgasm, you cannot take Pix up on her offer of a 'one-to-one cooldown exercise'...
+						Поскольку ты не можешь достичь оргазма, ты не можешь принять предложение Пикс о «заминке один на один»...
 					#ELSE
-						You have a good idea of what Pix means when she says she wants to give you a 'one-to-one cooldown exercise'...
+						Ты прекрасно понимаешь, что имеет в виду Пикс, когда говорит, что хочет устроить тебе «заминку один на один»...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -461,8 +461,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[You're far too tired to deal with Pix right now...]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Ты слишком устал, чтобы сейчас возиться с Пикс...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_reception_pix_workout_end_no_reward]]></nextDialogue>
 				<effects><![CDATA[
 					[#pix.returnToHome()]
@@ -488,8 +488,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Accept]]></responseTitle>
-				<responseTooltip><![CDATA[Let Pix have her fun with you.]]></responseTooltip>
+				<responseTitle><![CDATA[Принять]]></responseTitle>
+				<responseTooltip><![CDATA[Позволить Пикс повеселиться с тобой.]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -516,8 +516,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Pix that you're too tired for this right now...]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Пикс, что ты сейчас слишком устал для этого...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_dominion_shopping_arcade_gym_showers"/>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/shoppingArcade/pixsPlayground', 'RECEPTION_PIX_WORKOUT_END_REWARD_DECLINED'))]
@@ -528,8 +528,8 @@
 	</scene>
 	
 	<scene id ="reception_pix_workout_end_reward_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Pix has had her fun and helps you out of the shower...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Пикс получает свое удовольствие и помогает тебе выбраться из душа...]]></tooltip>
 		<preParsingEffects><![CDATA[
 			[#pix.returnToHome()]
 		]]></preParsingEffects>
@@ -541,8 +541,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having recovered your strength, you're now able to head back out into the gym...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Восстановив силы, ты наконец готов вернуться в спортзал...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_dominion_shopping_arcade_gym_showers"/>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/shoppingArcade/pixsPlayground', 'RECEPTION_PIX_WORKOUT_END_REWARD_AFTER_SEX_LEAVE'))]
@@ -569,8 +569,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Too tired]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Pix that you're far too tired to do any more physical exercise right now.]]></responseTooltip>
+				<responseTitle><![CDATA[Слишком устал]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Пикс, что ты слишком вымотан, чтобы продолжать физические упражнения прямо сейчас.]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -597,8 +597,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Offer sex]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Pix that you can make it up to her right now...]]></responseTooltip>
+				<responseTitle><![CDATA[Предложить секс]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Пикс, что ты можешь отблагодарить её прямо сейчас...]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -625,8 +625,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Accept punishment]]></responseTitle>
-				<responseTooltip><![CDATA[Apologise to Pix and accept her punishment.]]></responseTooltip>
+				<responseTitle><![CDATA[Принять наказание]]></responseTitle>
+				<responseTooltip><![CDATA[Извиниться перед Пикс и принять её наказание.]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -653,12 +653,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Break free]]></responseTitle>
+				<responseTitle><![CDATA[Вырваться]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_pix_workout_weights_saved_energy) || !flags.hasFlag(FLAG_innoxia_pix_workout_cardio_saved_energy))
-						As you spent all of your energy pushing yourself through Pix's cardio and weights exercises, you simply don't have enough energy left to try and break free!
+						Поскольку ты потратил всю свою Энергию, изнуряя себя кардио и упражнениями с весами под руководством Пикс, у тебя просто не осталось сил, чтобы попытаться вырваться!
 					#ELSE
-						Use the energy that you've saved by holding back during your exercise to break free from Pix.
+						Использовать Энергию, которую ты сэкономил, не выкладываясь на полную во время тренировки, чтобы вырваться из рук Пикс.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -677,12 +677,12 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_pix_workout_weights_saved_energy) || !flags.hasFlag(FLAG_innoxia_pix_workout_cardio_saved_energy) || pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)<pix.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Turn tables]]></responseTitle>
+				<responseTitle><![CDATA[Перехватить инициативу]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_pix_workout_weights_saved_energy) || !flags.hasFlag(FLAG_innoxia_pix_workout_cardio_saved_energy))
-						As you spent all of your energy pushing yourself through Pix's cardio and weights exercises, you simply don't have enough energy left to try and turn the tables on Pix!
+						Поскольку ты потратил всю свою Энергию, изнуряя себя кардио и упражнениями с весами под руководством Пикс, у тебя просто не осталось сил, чтобы попытаться перехватить инициативу!
 					#ELSE
-						Pix is both stronger and fitter than you (her physique of [#pix.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)] is greater than your physique of [#pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)]), so you don't stand a chance of turning the tables on her in this situation.
+						Пикс сильнее и выносливее тебя (её Телосложение [#pix.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)] выше твоего Телосложения [#pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)]), так что в этой ситуации у тебя нет ни единого шанса перехватить инициативу.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -691,8 +691,8 @@
 				<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_pix_workout_weights_saved_energy) && flags.hasFlag(FLAG_innoxia_pix_workout_cardio_saved_energy)) && pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)>=pix.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Turn tables]]></responseTitle>
-				<responseTooltip><![CDATA[Use the energy that you've saved by holding back during your exercise to break free from Pix, and then turn the tables on her...]]></responseTooltip>
+				<responseTitle><![CDATA[Перехватить инициативу]]></responseTitle>
+				<responseTooltip><![CDATA[Использовать Энергию, которую ты сэкономил, не выкладываясь на полную во время тренировки, чтобы вырваться из рук Пикс, а затем перехватить инициативу...]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -720,8 +720,8 @@
 	</scene>
 	
 	<scene id ="reception_pix_workout_end_reward_after_sex_as_dom">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had your fun with Pix...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[С Пикс ты уже повеселился...]]></tooltip>
 		<preParsingEffects><![CDATA[
 			[#pix.returnToHome()]
 		]]></preParsingEffects>
@@ -734,8 +734,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having recovered your strength, you're now able to head back out into the gym...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Восстановив силы, ты наконец готов вернуться в спортзал...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_dominion_shopping_arcade_gym_showers"/>
 			</response>
 		</responses>
@@ -750,8 +750,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having dealt with Pix, you're ready to return to the gym...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Разобравшись с Пикс, ты готов вернуться в спортзал...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_dominion_shopping_arcade_gym_showers"/>
 			</response>
 		</responses>
@@ -768,12 +768,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Running]]></responseTitle>
+				<responseTitle><![CDATA[Бег]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do any more exercise!
+						Ты слишком устал, чтобы продолжать тренировку!
 					#ELSE
-						Use one of the running machines to burn off some of your body size.
+						Используй беговую дорожку, чтобы немного уменьшить размер своего тела.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -796,14 +796,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Cycling]]></responseTitle>
+				<responseTitle><![CDATA[Велосипед]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do any more exercise!
+						Ты слишком устал, чтобы продолжать тренировку!
 					#ELSEIF(!pc.isBipedal())
-						As you don't have a bipedal body type, you cannot use the cycling machines...
+						Поскольку у тебя не двуногое телосложение, ты не можешь использовать велотренажеры...
 					#ELSE
-						Use one of the cycling machines to burn off some of your body size.
+						Используй велотренажер, чтобы немного уменьшить размер своего тела.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -826,14 +826,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Rowing]]></responseTitle>
+				<responseTitle><![CDATA[Гребля]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do any more exercise!
+						Ты слишком устал, чтобы продолжать тренировку!
 					#ELSEIF(!pc.isBipedal())
-						As you don't have a bipedal body type, you cannot use the rowing machines...
+						Так как у тебя не двуногое телосложение, ты не можешь использовать гребные тренажеры...
 					#ELSE
-						Use one of the rowing machines to burn off some of your body size.
+						Используй один из гребных тренажеров, чтобы немного уменьшить размер своего тела.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -874,12 +874,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Weights]]></responseTitle>
+				<responseTitle><![CDATA[Свободные веса]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do any more exercise!
+						Ты слишком устал, чтобы продолжать тренировку!
 					#ELSE
-						Use the sets of free weights to work out and build some muscle.
+						Используй наборы свободных весов, чтобы потренироваться и нарастить мышцы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -902,12 +902,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Machines]]></responseTitle>
+				<responseTitle><![CDATA[Тренажеры]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do any more exercise!
+						Ты слишком устал, чтобы продолжать тренировку!
 					#ELSE
-						Use the resistance machines to work out and build some muscle.
+						Используй силовые тренажеры, чтобы потренироваться и нарастить мышцы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -930,12 +930,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Body weight]]></responseTitle>
+				<responseTitle><![CDATA[Собственный вес]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to do any more exercise!
+						Ты слишком устал, чтобы продолжать тренировку!
 					#ELSE
-						Go through a series of body weight exercises to build some muscle.
+						Выполни серию упражнений с собственным весом, чтобы нарастить мышцы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -975,10 +975,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Yoga]]></responseTitle>
+				<responseTitle><![CDATA[Йога]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Wait for Brahman to arrive and start a yoga lesson...
-					<br/>[style.italicsMinorBad(This will be added in a future update!)]
+					Дождись прихода Брахмана, чтобы начать урок йоги...
+					<br/>[style.italicsMinorBad(Это будет добавлено в будущем обновлении!)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
@@ -995,11 +995,11 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Quick shower]]></responseTitle>
+				<responseTitle><![CDATA[Быстрый душ]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use the facilities to take a quick shower.
-					<br/>[style.italicsGood(Cleans <b>a maximum of [style.fluid(500)]</b> of fluids from all orifices.)]
-					<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]
+					Воспользуйся удобствами, чтобы быстро ополоснуться.
+					<br/>[style.italicsGood(Очищает <b>максимум [style.fluid(500)]</b> жидкостей из всех отверстий.)]
+					<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_dominion_shopping_arcade_gym_showers]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -1011,11 +1011,11 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Thorough shower]]></responseTitle>
+				<responseTitle><![CDATA[Тщательный душ]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use the facilities to take a shower, and spend some time thoroughly cleaning yourself.
-					<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]
-					<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]
+					Воспользуйся удобствами, чтобы хорошенько отмыться.
+					<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех твоих отверстий.)]
+					<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_dominion_shopping_arcade_gym_showers]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -1037,10 +1037,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sauna]]></responseTitle>
+				<responseTitle><![CDATA[Сауна]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Head inside one of the saunas and spend some time in the heat...
-					<br/>[style.italicsMinorBad(This will be added in a future update!)]
+					Зайди в одну из саун и проведи время в жаре...
+					<br/>[style.italicsMinorBad(Это будет добавлено в будущем обновлении!)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
@@ -1057,10 +1057,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Swim]]></responseTitle>
+				<responseTitle><![CDATA[Поплавать]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Slip into the pool and have a swim...
-					<br/>[style.italicsMinorBad(This will be added in a future update!)]
+					Спустись в бассейн и немного поплавай...
+					<br/>[style.italicsMinorBad(Это будет добавлено в будущем обновлении!)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
@@ -1085,12 +1085,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(hannah) && !flags.hasFlag(FLAG_innoxia_hannah_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Hannah]]></responseTitle>
+				<responseTitle><![CDATA[Ханна]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasItemType(ITEM_innoxia_quest_gym_membership_card))
-						As you're not a member of the gym, you can't get lessons from Hannah, and so it'd be best not to bother her...
+						Так как ты не член клуба, ты не можешь брать уроки у Ханны, так что лучше её не беспокоить...
 					#ELSE
-						Head over to where Hannah is training and introduce yourself.
+						Направляйся туда, где тренируется Ханна, и представься.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1110,8 +1110,8 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(hannah) && flags.hasFlag(FLAG_innoxia_hannah_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Hannah]]></responseTitle>
-				<responseTooltip><![CDATA[Head over to where Hannah is training and say hello.]]></responseTooltip>
+				<responseTitle><![CDATA[Ханна]]></responseTitle>
+				<responseTooltip><![CDATA[Подойди к Ханне, пока она тренируется, и поздоровайся.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_boxing_hannah]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/shoppingArcade/pixsPlayground', 'BOXING_HANNAH'))]
@@ -1137,8 +1137,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Hannah that you've got to go for now.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Ханне, что тебе пора идти.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_dominion_shopping_arcade_gym_path"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -1151,16 +1151,16 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(hannah) && flags.hasFlag(FLAG_innoxia_hannah_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Boxing lesson]]></responseTitle>
+				<responseTitle><![CDATA[Урок бокса]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasItemType(ITEM_innoxia_quest_gym_membership_card))
-						You need to be a member of the gym to gain access to boxing lessons from Hannah...
+						Чтобы брать у Ханны уроки бокса, нужно быть членом спортзала...
 					#ELSEIF(pc.isVisiblyPregnant())
-						Hannah isn't willing to give you boxing lessons while you're pregnant!
+						Ханна не хочет давать тебе уроки бокса, пока ты беременна!
 					#ELSEIF(pc.hasStatusEffect(SE_GYM_FATIGUE))
-						You are too tired to take boxing lessons from Hannah at the moment!
+						Сейчас ты слишком устала, чтобы брать у Ханны уроки бокса!
 					#ELSE
-						Tell Hannah that you'd like her to give you a boxing lesson...
+						Скажи Ханне, что хочешь, чтобы она дала тебе урок бокса...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1178,12 +1178,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(hannah) && flags.hasFlag(FLAG_innoxia_hannah_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[History]]></responseTitle>
+				<responseTitle><![CDATA[История]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_hannah_talk_history))
-						You're already asking Hannah about her history!
+						Ты и так уже расспрашиваешь Ханну о её прошлом!
 					#ELSE
-						Ask Hannah about how she came to work here.
+						Спроси Ханну о том, как она здесь оказалась.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1204,12 +1204,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(hannah) && flags.hasFlag(FLAG_innoxia_hannah_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Pix]]></responseTitle>
+				<responseTitle><![CDATA[Пикс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_hannah_talk_pix))
-						You're already asking Hannah about what she thinks of Pix!
+						Ты уже спрашиваешь Ханну о том, что она думает о Пикс!
 					#ELSE
-						Ask Hannah what she thinks of Pix.
+						Спросить Ханну, что она думает о Пикс.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1230,12 +1230,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(hannah) && flags.hasFlag(FLAG_innoxia_hannah_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Brahman]]></responseTitle>
+				<responseTitle><![CDATA[Брахман]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_hannah_talk_yoga))
-						You're already asking Hannah about what she thinks of Brahman!
+						Ты уже спрашиваешь Ханну о том, что она думает о Брахмане!
 					#ELSE
-						Ask Hannah what she thinks of Brahman.
+						Спросить Ханну, что она думает о Брахмане.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1285,8 +1285,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA['Lights Out']]></responseTitle>
-				<responseTooltip><![CDATA[Tell Hannah that you haven't heard of that bar before.]]></responseTooltip>
+				<responseTitle><![CDATA["'Свет гаснет'"]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Ханне, что ты раньше не слышал о таком баре.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_shopping_arcade_gym_boxing_talk]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/shoppingArcade/pixsPlayground', 'BOXING_LESSON_FINAL_END'))]

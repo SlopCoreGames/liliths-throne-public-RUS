@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Ink Cloud]]></name>
+	<name><![CDATA[Чернильное облако]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -24,7 +24,7 @@
 	'damageInflicted' will parse to the attacker's projected damage of this attack (using the defined 'baseDamage' field defined below).
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[
-		Use a gland inside [npc.her] octopus-like mouth to spit a cloud of ink at [npc.her] target, temporarily blinding them.
+		Используя железу внутри [npc.her] осьминогоподобного рта, [npc.her] выплевывает облако чернил в [npc.her] цель, временно ослепляя её.
 	]]></description>
 	
 	<!-- The type of damage that this move inflicts. 
@@ -102,7 +102,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters who have an octopus face type.
+		Доступно персонажам с типом лица «осьминог».
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -133,7 +133,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Cannot crit.
+		Не может нанести критический удар.
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -145,17 +145,17 @@
 	'isCritical' will parse to the boolean return value for isCritical, and will therefore be either 'true' or 'false'.
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] ability to spit ink to blind [npc2.name].
+		Использует [npc.her] способность выплевывать чернила, чтобы ослепить [npc2.name].
 		#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-			 [style.italicsTerrible([npc.She] cannot use this move as [npc.her] mouth is blocked!)]
+			 [style.italicsTerrible([npc.She] не может использовать этот прием, так как рот [npc.her] заблокирован!)]
 		#ENDIF
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] ability to spit ink to blind [npc.her] target.
+		Использует [npc.her] способность выплевывать чернила, чтобы ослепить [npc.her].
 		#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-			 [style.italicsTerrible([npc.She] cannot use this move as [npc.her] mouth is blocked!)]
+			 [style.italicsTerrible([npc.She] не может использовать этот прием, так как рот [npc.her] заблокирован!)]
 		#ENDIF
 	]]></movePredictionDescriptionNoTarget>
 	
@@ -171,17 +171,15 @@
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
 			#IF(!npc.isCoverableAreaExposed(CA_MOUTH))
-				As [npc.her] mouth is blocked, [npc.name] [npc.verb(fail)] to bite [npc2.name], and [npc.verb(end)] up doing no damage at all...
+				Поскольку пасть [npc.her] заблокирована, [npc.name] [npc.verb(fail)] укусить [npc2.name] и в итоге [npc.verb(end)] наносит совсем немного урона...
 			#ELSE
-				[npc.Name] [npc.verb(open)] [npc.her] mouth and [npc.verb(spit)] a cloud of ink at [npc2.name]!
+				[npc.Name] [npc.verb(open)] [npc.her] рот и [npc.verb(spit)] облако чернил в [npc2.name]!
 			#ENDIF
 		]]></execute>
 		<critDescription><![CDATA[
-			[npc.NamePos] ink cloud was extremely effective!
+			Чернильное облако [npc.NamePos] оказалось крайне эффективным!
 		]]></critDescription>
-		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] been blinded by the attack!
-		]]></critEffectDescription>
+		<critEffectDescription><![CDATA[[npc2.Name] [npc2.has] ослеплен атакой!]]></critEffectDescription>
 	</performMove>
 	
 </combatMove>

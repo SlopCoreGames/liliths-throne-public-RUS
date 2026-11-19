@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Seven Rounds Rapid]]></name>
+	<name><![CDATA[Семь быстрых выстрелов]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -25,11 +25,14 @@
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[ 
 		#IF(npc.getEssenceCount() < 7)
-			Fire [style.colorArcane([#npc.getEssenceCount()])]
+		
+Огонь [style.colorArcane([#npc.getEssenceCount()])]
 		#ELSE
-			Fire all [style.colorFire(7)]
+		
+Выпустить все [style.colorFire(7)]
 		#ENDIF
-		rounds from [npc.her] pepperball pistol's magazine, dealing a highly variable amount of damage.
+
+пули из магазина перцового пистолета [npc.her], нанося крайне нестабильный урон.
 	]]></description>
 	
 	<!-- The type of damage that this move inflicts. 
@@ -115,7 +118,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters carrying a Pepperball Pistol with more than 2 essences.
+		Доступно персонажам, несущим перцовый пистолет с запасом более 2 эссенций.
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -142,7 +145,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Target resistance to fire is less than -10.
+		Сопротивление цели огню меньше -10.
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -155,21 +158,26 @@
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
 		#IF(npc.getEssenceCount() < 7)
-			Fire [style.colorFire([#npc.getEssenceCount()])]
+		
+Огонь [style.colorFire([#npc.getEssenceCount()])]
 		#ELSE
-			Fire all [style.colorFire(7)]
+		
+Выпустить все [style.colorFire(7)]
 		#ENDIF
-		rounds from [npc.her] pepperball pistol's magazine at [npc2.name], dealing a highly variable amount of damage.
+
+пули из магазина перцового пистолета [npc.her] в [npc2.name], нанося крайне нестабильный урон.
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
 		#IF(npc.getEssenceCount() < 7)
-			Fire [style.colorFire([#npc.getEssenceCount()])]
+		
+Огонь [style.colorFire([#npc.getEssenceCount()])]
 		#ELSE
-			Fire all [style.colorFire(7)]
+		
+Выпустить все [style.colorFire(7)]
 		#ENDIF
-		rounds from [npc.her] pepperball pistol's magazine at [npc.her] target, dealing a highly variable amount of damage.
+		[npc.her] выстрелов из перцового пистолета [npc.her] в цель, наносящих крайне нестабильный урон.
 	]]></movePredictionDescriptionNoTarget>
 	
 	<!-- The code that's executed when this move is performed.
@@ -183,22 +191,22 @@
 		<!-- The 'execute' section should be used for the main description of the attack, as well as any extra effects you want to apply.
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
-			Squeezing the trigger as fast as [npc.name] can manage, [npc.she] [npc.verb(manage)] to get [style.colorFire([#~~(hits)])] hits on [npc2.name]!
+			[npc.she] [npc.verb(manage)] нажать на спусковой крючок так быстро, как только может [npc.name], чтобы нанести [style.colorFire([#~~(hits)])] попаданий по [npc2.name]!
 			formattedHealthDamage
-			Expending so much ammo costs [npc.herHim] 
+			Такой расход боеприпасов стоит [npc.herHim] 
 			#IF(npc.getEssenceCount() < 7)
-				[style.colorArcane([#npc.getEssenceCount()])] essences.
+				[style.colorArcane([#npc.getEssenceCount()])] эссенций Arcane.
 				[##npc.setEssenceCount(0)]
 			#ELSE
-				[style.colorArcane(7)] essences.
+				[style.colorArcane(7)] эссенций Arcane.
 				[##npc.incrementEssenceCount(-7, false)]
 			#ENDIF
 		]]></execute>
 		<critDescription><![CDATA[
-			[npc2.NamePos] is especially vulnerable to fire damage, it's super effective!
+			[npc2.NamePos] особенно уязвим к урону огнем, это суперэффективно!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			The hot pepper oil lingers around [npc2.name]!
+			Горячее перцовое масло обволакивает [npc2.name]!
 		]]></critEffectDescription>
 	</performMove>
 	

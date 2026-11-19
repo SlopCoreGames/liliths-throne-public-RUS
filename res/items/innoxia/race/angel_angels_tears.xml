@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>100000</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Angel's Tears]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Angel's Tears]]></namePlural>
-		<description><![CDATA[A delicate glass vial full of a light turquoise liquid.​ There's an image of a weeping angel engraved into the glass, and you see that her tears are falling into a vial just like this one.]]></description> 
+		<name><![CDATA[Слёзы ангела]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Слёзы ангела]]></namePlural>
+		<description><![CDATA[Изящный стеклянный флакон, наполненный светло-бирюзовой жидкостью.​ На стекле выгравировано изображение плачущего ангела, и ты видишь, как её слёзы падают в точно такой же сосуд.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,10 +28,10 @@
 		<enchantmentEffectId>ATTRIBUTE_CORRUPTION</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 100% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldGood(Restores)] 100% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldExcellent(Lowers)] [style.boldLust(lust)] to resting level]]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_LUST.getFormattedValue(50)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 100% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 100% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldExcellent(Снижает)] [style.boldLust(lust)] до естественного уровня]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_LUST.getFormattedValue(50)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -39,7 +39,7 @@
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM))]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A soothing wave of pure energy washes over [npc.name]...
+			Успокаивающая волна чистой энергии омывает [npc.name]...
 			</p>
 			#IF(npc.getLust()>npc.getRestingLust())
 				[#npc.setLust(npc.getRestingLust())]
@@ -55,10 +55,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Pulling out the stopper from the vial of Angel's Tears, [npc.name] [npc.verb(bring)] it up to [npc.her] waiting [npc.lips]. The faint scent of roses rises up from the opening, and [npc.she] [npc.verb(find)] [npc.herself] letting out a gentle sigh before tilting back [npc.her] head and drinking down all of the cool liquid.
+		Вытащив пробку из флакона со Слёзами ангела, [npc.name] [npc.verb(подносит)] его к [npc.her], ожидающей [npc.lips]. Из горлышка доносится тонкий аромат роз, и [npc.she] [npc.verb(застаёт)] [npc.herself], которая тихо вздыхает, прежде чем запрокинуть [npc.her] голову и осушить флакон, выпив всю прохладную жидкость.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Pulling out the stopper from the vial of Angel's Tears, [npc.name] [npc.verb(bring)] it up to [npc2.namePos] waiting [npc2.lips]. The faint scent of roses rises up from the opening, and [npc2.name] [npc2.verb(find)] [npc2.herself] letting out a gentle sigh before tilting back [npc2.her] head and drinking down all of the cool liquid.
+		Вытащив пробку из флакона со Слёзами ангела, [npc.name] [npc.verb(подносит)] его к [npc2.namePos], ожидающей [npc2.lips]. Из горлышка доносится тонкий аромат роз, и [npc2.name] [npc2.verb(застаёт)] [npc2.herself], которая тихо вздыхает, прежде чем запрокинуть [npc2.her] голову и осушить флакон, выпив всю прохладную жидкость.
 		]]></otherUse>
 	</useDescriptions>
 

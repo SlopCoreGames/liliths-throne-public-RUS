@@ -19,8 +19,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Leave Elis and head back out into the Foloi Fields.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Покинуть Элис и вернуться на поля Фолой.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="WORLD_MAP_FIELDS_CITY"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -49,8 +49,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Leave Elis and head back out into the Foloi Fields.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Покинуть Элис и вернуться на поля Фолой.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="WORLD_MAP_FIELDS_CITY"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -75,12 +75,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Explore]]></responseTitle>
+				<responseTitle><![CDATA[Исследовать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(ENCOUNTER_innoxia_elis_alleyway.isAnyEncounterAvailable())
-						Spend some time exploring the surrounding alleyways to see if you can find anything of interest.
+						Потратить время на осмотр окрестных переулков, чтобы попытаться найти что-нибудь интересное.
 					#ELSE
-						You get the feeling that you're not going to find anything interesting in the surrounding alleyways, so there's no reason to waste your time exploring...
+						У тебя такое чувство, что в этих переулках вряд ли найдется что-то стоящее, так что нет смысла тратить время на поиски...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -111,8 +111,8 @@
 				<availabilityConditional><![CDATA[[#(game.getDayOfWeek()==DOW_SUNDAY && !game.isHourBetween(10, 16)) || (game.getDayOfWeek()!=DOW_SUNDAY && !game.isHourBetween(9, 17))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[The bank is currently closed...]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Банк сейчас закрыт...]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 				<effects/>
 			</response>
@@ -120,8 +120,8 @@
 				<availabilityConditional><![CDATA[[#(game.getDayOfWeek()==DOW_SUNDAY && game.isHourBetween(10, 16)) || (game.getDayOfWeek()!=DOW_SUNDAY && game.isHourBetween(9, 17))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Enter the bank.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Войти в банк.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_bank_exit"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -160,12 +160,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(8, 20))
-						Head inside the Enforcer station...
+						Зайти в станцию Enforcer...
 					#ELSE
-						The enforcer station is currently closed to members of the public...
+						Станция Enforcer сейчас закрыта для посетителей...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -204,8 +204,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Leave Elis and head back out into the Foloi Fields.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Покинуть Элис и вернуться на поля Фолой.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="WORLD_MAP_FIELDS_CITY"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -220,8 +220,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fly onto wall]]></responseTitle>
-				<responseTooltip><![CDATA[As you're capable of flight, you could fly on up onto the walls of Elis from here.]]></responseTooltip>
+				<responseTitle><![CDATA[Взлететь на стену]]></responseTitle>
+				<responseTooltip><![CDATA[Так как ты умеешь летать, ты можешь взлететь прямо отсюда на стены Элис.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_wall"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -235,8 +235,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fly onto tower]]></responseTitle>
-				<responseTooltip><![CDATA[As you're capable of flight, you could fly on up onto the nearest tower from here.]]></responseTooltip>
+				<responseTitle><![CDATA[Взлететь на башню]]></responseTitle>
+				<responseTooltip><![CDATA[Так как ты умеешь летать, ты можешь взлететь прямо отсюда на ближайшую башню.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_tower"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -266,7 +266,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Enforcers]]></responseTitle>
-				<responseTooltip><![CDATA[Approach the Enforcers who're guarding the gatehouse.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTooltip><![CDATA[Подойди к Enforcers, которые охраняют надвратную башню.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<!-- The player IS travelling along the walls (index 1): -->
@@ -277,7 +277,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Enforcer]]></responseTitle>
-				<responseTooltip><![CDATA[Approach the Enforcer who's guarding the portcullis.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTooltip><![CDATA[Подойди к Enforcer, который охраняет герсу.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -302,7 +302,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Enforcers]]></responseTitle>
-				<responseTooltip><![CDATA[Approach the Enforcers who're guarding the gatehouse.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTooltip><![CDATA[Подойди к Enforcers, которые охраняют надвратную башню.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<!-- The player IS travelling along the walls (index 1): -->
@@ -313,7 +313,7 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[Enforcer]]></responseTitle>
-				<responseTooltip><![CDATA[Approach the Enforcer who's guarding the portcullis.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTooltip><![CDATA[Подойди к Enforcer, который охраняет герсу.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -333,8 +333,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Back]]></responseTitle>
-				<responseTooltip><![CDATA[Turn away from the lake's shore and head back into the fields.]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Отойди от берега озера и направляйся обратно на поля.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_fields"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -348,15 +348,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Swim]]></responseTitle>
-				<responseTooltip><![CDATA[Swim out into the middle of the lake.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTitle><![CDATA[Поплавать]]></responseTitle>
+				<responseTooltip><![CDATA[Выплыви на середину озера.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Skip stones]]></responseTitle>
-				<responseTooltip><![CDATA[Start skipping stones over the surface of the lake.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTitle><![CDATA[Пускать блинчики]]></responseTitle>
+				<responseTooltip><![CDATA[Ты начинаешь пускать камешки по поверхности озера.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -389,16 +389,16 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(8, 18))
-						Enter the Farmer's Market and take a look around the stalls...
+						Зайти на фермерский рынок и осмотреть прилавки...
 					#ELSEIF(game.getHourOfDay()==7)
-						As the stalls of the Farmer's Market are currently being set up, there's not yet a reason to start taking a look around. You should return in an hour if you wanted to do some shopping...
+						Поскольку прилавки на фермерском рынке сейчас только раскладывают, пока нет особого смысла осматриваться. Если хочешь закупиться, лучше вернись через час...
 					#ELSEIF(game.getHourOfDay()==18)
-						As the stalls of the Farmer's Market are currently being cleared away, there's no reason to start taking a look around. You should return tomorrow if you wanted to do some shopping...
+						Поскольку прилавки на фермерском рынке сейчас уже разбирают, смысла осматриваться нет. Если хочешь закупиться, лучше вернись завтра...
 					#ELSE
-						As the Farmer's Market is currently closed, there's nothing here except a large, empty, cobblestone square. You should return tomorrow if you wanted to do some shopping...
+						Так как фермерский рынок сейчас закрыт, здесь нет ничего, кроме большой пустой мощеной площади. Если хочешь закупиться, лучше вернись завтра...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -426,8 +426,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Information sign]]></responseTitle>
-				<responseTooltip><![CDATA[Take a moment to read one of the information signs positioned at each of the entrances to the market.]]></responseTooltip>
+				<responseTitle><![CDATA[Информационная табличка]]></responseTitle>
+				<responseTooltip><![CDATA[Уделить время чтению одной из информационных табличек, установленных у каждого из входов на рынок.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_generic_market_info</nextDialogue>
 			</response>
 		</responses>
@@ -446,8 +446,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Back]]></responseTitle>
-				<responseTooltip><![CDATA[You've finished reading and so [pc.step] away from the sign.]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Ты закончил читать и теперь в [pc.step] от таблички.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_market"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects/>
@@ -469,8 +469,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Loiter]]></responseTitle>
-				<responseTooltip><![CDATA[You aren't afraid of a so-called pond monster! Loiter about and see if it decides to show itself.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTitle><![CDATA[Поглазеть по сторонам]]></responseTitle>
+				<responseTooltip><![CDATA[Ты совсем не боишься так называемого болотного монстра! Поброди здесь немного, вдруг он решит показаться.<br/>[style.italicsMinorBad(Это будет добавлено позже!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -516,8 +516,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wall's End]]></responseTitle>
-				<responseTooltip><![CDATA[Head into the shopping precinct.]]></responseTooltip>
+				<responseTitle><![CDATA[Уэллс-Энд]]></responseTitle>
+				<responseTooltip><![CDATA[Направиться в торговый квартал.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_shops_exit"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -575,8 +575,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Use one of the tavern's entrances to head inside.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Войти в таверну через один из входов.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_f0_first_entry]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -591,8 +591,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Use one of the tavern's entrances to head inside.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Войти в таверну через один из входов.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_tavern_f0_exit"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -620,9 +620,9 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					The tavern isn't open at this time of day...
+					В это время суток таверна еще не открыта...
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					null
@@ -635,8 +635,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Push open the tavern's door and head inside.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Толкнуть дверь таверны и войти внутрь.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_tavern_alley_exit"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -653,14 +653,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Old stables]]></responseTitle>
+				<responseTitle><![CDATA[Старые конюшни]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!game.isHourBetween(6, 7))
-						You need to come back between [units.time(6)]-[units.time(7)] if you wanted to see what Golix does to Kheiron...
+						Если ты хочешь увидеть, что Голикс делает с Хейроном, тебе нужно вернуться между [units.time(6)] и [units.time(7)]...
 					#ELSEIF(flags.hasFlag(FLAG_innoxia_oglix_kheiron_spectated_today))
-						You've already seen what Golix does to Kheiron today...
+						Ты уже видел сегодня, что Голикс делает с Хейроном...
 					#ELSE
-						Sneak around the back of the tavern to the old stables so that you can watch what Golix does to Kheiron...
+						Прокрадись за таверну к старым конюшням, чтобы понаблюдать за тем, что Голикс сделает с Хейроном...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -679,59 +679,59 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Yui]]></responseTitle>
+				<responseTitle><![CDATA[Юи]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_yui_public_toy_unavailable_today))
-						As you've already refused Yui's offer today, you aren't going to be able to meet her here until next Friday...
+						Поскольку ты уже сегодня отклонил предложение Юи, ты не сможешь встретить её здесь до следующей пятницы...
 					#ELSE
 						#IF(!game.isHourBetween(20, 23))
-							Yui told you to meet her here between [style.italicsMinorBad([units.time(20)]-[units.time(23)])], on a
+							Юи сказала встретить её здесь между [style.italicsMinorBad([units.time(20)]-[units.time(23)])], в
 						#ELSE
-							Yui told you to meet her here between [style.italicsMinorGood([units.time(20)]-[units.time(23)])], 
+							Юи сказала встретить её здесь между [style.italicsMinorGood([units.time(20)]-[units.time(23)])], 
 						#ENDIF
 						#IF(game.getDayOfWeek()==DOW_FRIDAY)
-							 [style.colourMinorGood(Friday)],
+							 [style.colourMinorGood(пятницу)],
 						#ELSE
-							 [style.colourMinorBad(Friday)],
+							 [style.colourMinorBad(пятницу)],
 						#ENDIF
 						#IF(game.isHourBetween(20, 23) && game.getDayOfWeek()==DOW_FRIDAY)
-							 so you could wait here for her to show herself...
+							 так что ты можешь подождать здесь, пока она не покажется...
 						#ELSE
-							 so she won't show up at the moment...
+							 так что она не появится в данный момент...
 						#ENDIF
 						
 						#IF(!pc.hasFetish(FETISH_MASOCHIST))
-							<br/>As you're [style.italicsBad(not a masochist)], you've got a bad feeling about this and [style.italicsBad(decide not to meet with Yui)]...
+							<br/>Так как ты [style.italicsBad(не мазохист)], у тебя нехорошее предчувствие, и ты [style.italicsBad(решаешь не встречаться с Юи)]...
 						#ELSEIF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0 || (!game.isAnalContentEnabled() && !pc.hasVagina()) || pc.getLegConfiguration()!=LEG_CONFIGURATION_BIPEDAL)
-							<br/>As you have
+							<br/>Поскольку на тебе
 							#IF(pc.isAnyEquippedClothingSealed())
-								 [style.italicsSealed(sealed)] clothing equipped,
+								 [style.italicsSealed(sealed)] одежда,
 							#ENDIF
 							#IF(pc.isHasAnyPregnancyEffects())
 								#IF(pc.isAnyEquippedClothingSealed() && pc.getDirtySlots().size()==0)
-									 and
+									 и
 								#ENDIF
-								 a [style.italicsSex(pregnancy-related status effect)] active,
+								 [style.italicsSex(pregnancy-related status effect)] активен,
 							#ENDIF
 							#IF(pc.getDirtySlots().size()>0)
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects())
-									 and
+									 и
 								#ENDIF
 								 [style.italicsDirty(dirty inventory slots)], 
 							#ENDIF
 							#IF(!game.isAnalContentEnabled() && !pc.hasVagina())
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0)
-									 and
+									 и
 								#ENDIF
 								 [style.italicsSex(no vagina)], 
 							#ENDIF
 							#IF(pc.getLegConfiguration()!=LEG_CONFIGURATION_BIPEDAL)
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0 || (!game.isAnalContentEnabled() && !pc.hasVagina()))
-									 and
+									 и
 								#ENDIF
 								 [style.italicsTfGeneric(a non-bipedal lower body)], 
 							#ENDIF
-							 [style.italicsBad(Yui won't show up)]!
+							 [style.italicsBad(Юи здесь не будет)]!
 						#ENDIF
 					#ENDIF
 				]]></responseTooltip>
@@ -763,8 +763,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Use one of the tavern's entrances to head inside.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Войти в таверну через один из входов.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_tavern_taur_exit"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -792,8 +792,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fly down]]></responseTitle>
-				<responseTooltip><![CDATA[As you're capable of flight, you could fly down into the fields from here.]]></responseTooltip>
+				<responseTitle><![CDATA[Спуститься]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку ты умеешь летать, ты можешь прямо отсюда спланировать вниз, на поля.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_fields"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -827,54 +827,54 @@
 						1
 					#ENDIF
 				]]></index>
-				<responseTitle><![CDATA[Yui]]></responseTitle>
+				<responseTitle><![CDATA[Юи]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_yui_dungeon_unavailable_today))
-						As you've already refused Yui's offer this evening, you aren't going to be able to meet her here until
+						Так как ты уже отклонил предложение Юи этим вечером, ты не сможешь встретить её здесь раньше,
 						#IF(game.getDayOfWeek()==DOW_MONDAY)
-							 Wednesday evening...
+							 чем в среду вечером...
 						#ELSE
-							 Monday evening...
+							 чем в понедельник вечером...
 						#ENDIF
 					#ELSE
 						#IF(!game.isHourBetween(20, 23))
-							Yui told you to meet her here between [style.italicsMinorBad([units.time(20)]-[units.time(23)])], on a
+							Юи сказала встретить её здесь между [style.italicsMinorBad([units.time(20)]-[units.time(23)])], в
 						#ELSE
-							Yui told you to meet her here between [style.italicsMinorGood([units.time(20)]-[units.time(23)])], 
+							Юи сказала встретить её здесь между [style.italicsMinorGood([units.time(20)]-[units.time(23)])], 
 						#ENDIF
 						#IF(game.getDayOfWeek()==DOW_MONDAY)
-							 [style.colourMinorGood(Monday)] or Wednesday.
+							 [style.colourMinorGood(понедельника)] или среды.
 						#ELSEIF(game.getDayOfWeek()==DOW_WEDNESDAY)
-							 Monday or [style.colourMinorGood(Wednesday)],
+							 Понедельника или [style.colourMinorGood(среды)],
 						#ELSE
-							 [style.colourMinorBad(Monday or Wednesday)],
+							 [style.colourMinorBad(понедельника или среды)],
 						#ENDIF
 						#IF(game.isHourBetween(20, 23)&& (game.getDayOfWeek()==DOW_MONDAY || game.getDayOfWeek()==DOW_WEDNESDAY))
-							 so you could wait here for her to show herself...
+							 так что ты можешь подождать здесь, пока она не покажется...
 						#ELSE
-							 so she won't show up at the moment...
+							 так что она не появится в данный момент...
 						#ENDIF
 						
 						#IF(!pc.hasFetish(FETISH_MASOCHIST))
-							<br/>As you're [style.italicsBad(not a masochist)], you've got a bad feeling about this and [style.italicsBad(decide not to meet with Yui)]...
+							<br/>Так как ты [style.italicsBad(не мазохист)], у тебя нехорошее предчувствие, и ты [style.italicsBad(решаешь не встречаться с Юи)]...
 						#ELSEIF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects() || pc.getDirtySlots().size()>0)
-							<br/>As you have
+							<br/>Поскольку на тебе
 							#IF(pc.isAnyEquippedClothingSealed())
-								 [style.italicsSealed(sealed)] clothing equipped,
+								 [style.italicsSealed(sealed)] одежда,
 							#ENDIF
 							#IF(pc.isHasAnyPregnancyEffects())
 								#IF(pc.isAnyEquippedClothingSealed() && pc.getDirtySlots().size()==0)
-									 and
+									 и
 								#ENDIF
-								 a [style.italicsSex(pregnancy-related status effect)] active,
+								 [style.italicsSex(pregnancy-related status effect)] активен,
 							#ENDIF
 							#IF(pc.getDirtySlots().size()>0)
 								#IF(pc.isAnyEquippedClothingSealed() || pc.isHasAnyPregnancyEffects())
-									 and
+									 и
 								#ENDIF
-								 [style.italicsDirty(dirty inventory slots)], 
+								 [style.italicsDirty(грязные слоты инвентаря)], 
 							#ENDIF
-							 [style.italicsBad(Yui won't show up)]!
+							 [style.italicsBad(Юи здесь не будет)]!
 						#ENDIF
 					#ENDIF
 				]]></responseTooltip>
@@ -906,14 +906,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getHourOfDay()>=7 && game.getHourOfDay()<21)
-						Use the door marked as the 'public entrance' to head inside Elis's town hall.
+						Воспользуйся дверью с надписью «общественный вход», чтобы войти в ратушу Элиса.
 					#ELSEIF(flags.hasFlag(FLAG_innoxia_elis_minotallys_introduced))
-						Show the Enforcer your pass and enter the town hall.
+						Покажи Enforcer свой пропуск и войди в ратушу.
 					#ELSE
-						As the town hall is closed at this hour, you're unable to head inside...
+						Поскольку в этот час ратуша закрыта, войти внутрь не получается...
 					#ENDIF
 					]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -949,8 +949,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fly down]]></responseTitle>
-				<responseTooltip><![CDATA[As you're capable of flight, you could fly down into the fields from here.]]></responseTooltip>
+				<responseTitle><![CDATA[Спуститься]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку ты умеешь летать, ты можешь прямо отсюда спланировать вниз, на поля.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_fields"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -975,8 +975,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Knock]]></responseTitle>
-				<responseTooltip><![CDATA[Knock on the door to the log cabin and introduce yourself to its occupant.<br/>[style.italicsMinorBad(This will be added soon!)]]]></responseTooltip>
+				<responseTitle><![CDATA[Постучать]]></responseTitle>
+				<responseTooltip><![CDATA[Постучи в дверь бревенчатой хижины и представься её обитателю.<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -996,14 +996,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Explore]]></responseTitle>
+				<responseTitle><![CDATA[Исследовать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(ENCOUNTER_innoxia_elis_woodland.isAnyEncounterAvailable())
-						Spend some time exploring the surrounding woodland to see if you can find anything of interest.
+						Проведи некоторое время, исследуя окрестные леса, чтобы посмотреть, не найдется ли там чего-нибудь интересного.
 					#ELSE
-						You get the feeling that you're not going to find anything interesting in the surrounding woodland, so there's no reason to waste your time exploring...
+						У тебя такое чувство, что в окрестных лесах ты вряд ли найдешь что-то интересное, так что нет смысла тратить время на прогулки...
 						<br/>
-						<i>Perhaps if you came back tomorrow there'd be something worth finding.</i>
+						<i>Возможно, если ты вернешься завтра, то найдешь что-нибудь стоящее.</i>
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[

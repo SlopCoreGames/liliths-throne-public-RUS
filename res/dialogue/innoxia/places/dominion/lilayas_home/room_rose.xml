@@ -13,8 +13,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[You should give your [lilaya.relation(pc)] and her lover some privacy... Right?]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе стоит дать твоей [lilaya.relation(pc)] и её любовнику немного уединения... Ведь так?]]></responseTooltip>
                 <nextDialogue stripContent="false" defaultPlaceType="LILAYA_HOME_CORRIDOR"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -25,9 +25,9 @@
 			<response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Continue watching]]></responseTitle>
+                <responseTitle><![CDATA[Продолжить наблюдение]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Watching your [lilaya.relation(pc)] submissively service her maid is too hot to pass up on...
+					Наблюдать за тем, как твоя [lilaya.relation(pc)] покорно обслуживает свою горничную — это слишком горячее зрелище, чтобы устоять...
                 ]]></responseTooltip>
                 <colour><![CDATA[TEXT]]></colour>
                 <nextDialogue/>
@@ -83,8 +83,8 @@
 		<preParsingEffects><![CDATA[
 			[#rose.initKittyScene()]
 		]]></preParsingEffects>
-		<title><![CDATA[Show's over]]></title>
-		<tooltip><![CDATA[Rose has had enough of this...]]></tooltip>
+		<title><![CDATA[Шоу окончено]]></title>
+		<tooltip><![CDATA[С Роуз уже хватит...]]></tooltip>
 		<preParsingEffects/>
 		<content folderPath="txt/places/dominion/lilayasHome/room_rose">LILAYA_KITTY_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -95,8 +95,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Satisfied that you were able to witness such a hot display, you leave Rose's room behind you and continue on your way.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Удовлетворенный тем, что тебе удалось стать свидетелем столь жаркого зрелища, ты покидаешь комнату Роуз и отправляешься дальше своим путем.]]></responseTooltip>
                 <nextDialogue stripContent="false" defaultPlaceType="LILAYA_HOME_CORRIDOR"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[

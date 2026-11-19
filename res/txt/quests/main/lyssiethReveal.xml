@@ -50,41 +50,41 @@
 	
 	<htmlContent tag="FORWARDS_2"><![CDATA[
 	<p>
-		[elizabeth.speech(I can tell that you're impressed by Her Highness's collections. Perhaps you can ask her more about them in a moment,)] Elizabeth says, turning to face you as the two of you reach the end of the corridor. Before you are a pair of large, ornately-carved wooden doors, and you assume that Lyssieth is within the room beyond.
+		[elizabeth.speech(Вижу, коллекции Ее Высочества произвели на тебя впечатление. Возможно, через мгновение ты сможешь расспросить ее об этом поподробнее,)] — говорит Elizabeth, поворачиваясь к тебе, когда вы оба достигаете конца коридора. Перед вами пара массивных деревянных дверей с искусной резьбой, и ты предполагаешь, что Lyssieth находится в комнате за ними.
 	</p>
 	<p>
-		[pc.speech(Yeah, I suppose it would be interesting to find out which vending machine she must have looted,)] you reply.
+		[pc.speech(Да, полагаю, было бы любопытно узнать, из какого торгового автомата ей пришлось всё это награбить,)] — отвечаешь ты.
 	</p>
 	<p>
-		[elizabeth.speech(I hope you're not insinuating that Her Highness has stolen anything,)] Elizabeth says in an icy tone. [elizabeth.speech(Unfortunately, I need to return to my post as soon as I show you through these doors, so I can't stop you from saying something you'll regret. Just remember who it is you're being given the honour of meeting, and treat Her Highness with the utmost respect. Understand?)]
+		[elizabeth.speech(Надеюсь, ты не намекаешь на то, что Ее Высочество что-то украла,)] — произносит Elizabeth ледяным тоном. [elizabeth.speech(К сожалению, как только я проведу тебя через эти двери, мне нужно будет немедленно вернуться на пост, так что я не смогу помешать тебе сказать что-то, о чем ты потом пожалеешь. Просто помни, с кем тебе выпала честь встретиться, и относись к Ее Высочеству с величайшим почтением. Понятно?)]
 	</p>
 	<p>
-		[pc.speech(I understand,)] you say.
+		[pc.speech(Понятно,)] — говоришь ты.
 	</p>
 	<p>
-		[elizabeth.speech(Good. Now, there's something you need to know,)] Elizabeth continues, blushing a little as she awkwardly tries to explain, [elizabeth.speech(Her Highness, well, she likes to... That is, she respects humans a lot, and, erm... Well, she likes to take on the form of a human. You are absolutely not to judge her on that, nor are you to judge the manner in which she derives entertainment!)]
+		[elizabeth.speech(Хорошо. Теперь есть кое-что, что тебе нужно знать,)] — продолжает Elizabeth, слегка краснея и неловко пытаясь объясниться. [elizabeth.speech(Ее Высочество... ну, ей нравится... То есть, она очень уважает людей и, э-э... В общем, ей нравится принимать человеческий облик. Тебе ни в коем случае нельзя судить ее за это, как не стоит судить и за то, как она развлекается!)]
 	</p>
 	<p>
-		[pc.speech(Ok, I'm not judging,)] you reply, [pc.speech(but what do you mean, 'entertainment'?)]
+		[pc.speech(Ладно, я не сужу,)] — отвечаешь ты, [pc.speech(но что ты имеешь в виду под «развлекается»?)]
 	</p>
 	<p>
-		Elizabeth flinches as you ask this, before replying [elizabeth.speech(Well, Her Highness likes to act out a certain fantasy, in which she's, erm... what did she call it... a 'chief executive officer'?)]
+		Элизабет вздрагивает от твоего вопроса, прежде чем ответить: [elizabeth.speech(Ну, Ее Высочество любит воплощать в жизнь одну фантазию, в которой она, э-э... как она это назвала... «генеральный директор»?)]
 	</p>
 	<p>
-		[pc.speech(Wait, what? You mean she's role-playing as a businesswoman?)]
+		[pc.speech(Погоди, что? Ты хочешь сказать, она играет в бизнесвумен?)]
 	</p>
 	<p>
-		[elizabeth.speech(Look, I don't question it, alright? Now, do you want to meet with her or not?!)] Elizabeth quickly blurts out, clearly flustered by having to explain Lyssieth's eccentricities to you.
+		[elizabeth.speech(Слушай, я не подвергаю это сомнению, ясно?! Так ты хочешь с ней встретиться или нет?!)] — быстро выпаливает Элизабет, явно смущенная тем, что ей приходится объяснять тебе эксцентричные причуды Lyssieth.
 	</p>
 	<p>
-		[pc.speech(Of course,)] you reply, breathing a sigh of relief as Elizabeth quickly steps over towards the doors in front of you. Knocking on them three times in quick succession, she opens them and steps inside, beckoning you to follow her.
+		[pc.speech(Конечно,)] — отвечаешь ты, с облегчением вздохнув, пока Элизабет быстро направляется к дверям перед тобой. Трижды коротко постучав, она распахивает их и входит внутрь, жестом приглашая тебя следовать за ней.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FORWARDS_3"><![CDATA[
 	<p>
-		Following Elizabeth through the doors, you find yourself entering a room quite unlike the sort that you were expecting. Not only is Lyssieth conspicuously absent, but this area appears to be a sort of waiting room, of the same style as you might expect to see in a very prestigious office building.
+		Следуя за Элизабет в дверях, ты оказываешься в комнате, совсем не такой, какую ожидал увидеть. Lyssieth здесь явно нет, а само помещение больше напоминает приемную в каком-нибудь очень престижном офисном здании.
 	</p>
 	<p>
 		Вместо белого мрамора, пол покрыт темной, полированной древесиной, а в центре комнаты, слегка смещенная, находится большая, кремового цвета ковер. Кремовые стены украшены многочисленными произведениями абстрактного искусства, а на противоположной стороне от входа находится одна, махоговая дверь. В каждом углу комнаты стоит пышная, горшечная рослина, и, наконец, перед диванами стоит низкий журнальный столик, на поверхности которого разбросаны несколько журналов о моде.
@@ -171,17 +171,17 @@
 		[lyssieth.speech(Ты действительно думаешь, что сможешь дать отпор, не так ли?)] Lyssieth asks, laughing once again, [lyssieth.speech(Silly [pc.race], all I'd have to do is tell you to [style.glowArcane(kneel)]!)]
 	</p>
 	<p>
-		The elder lilin's command seems to be infused with a powerful arcane spell, and as the word 'kneel' echoes around the office, you feel a powerful physical force beginning to push you down towards the floor. Simultaneously, a strange haziness settles over your mind, and you start to feel as though it would be the right thing to do to obey Lyssieth...
+		Приказ старшей лилин, кажется, пропитан мощным заклинанием Арканы, и когда эхо слова «преклони колено» разносится по кабинету, ты чувствуешь, как неведомая физическая сила начинает вдавливать тебя в пол. Одновременно с этим твой разум застилает странная дымка, и тебе начинает казаться, что повиноваться Lyssieth — это самое правильное решение...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFICE_REACTION_RESIST"><![CDATA[
 	<p>
-		Refusing to submit, you try to shake your head clear of the intrusive thoughts, and at the same time, you put all of your strength into resisting the crushing downwards force. From what little awareness you have left of your surroundings, you're able to make out a highly-amused smile on Lyssieth's face, and, as she steps towards you, she tuts, [lyssieth.speech(Now, now, that won't do at all. When I give people an order, they're expected to [style.glowArcane(obey)].)]
+		Отказываясь подчиниться, ты пытаешься стряхнуть навязчивые мысли и одновременно вкладываешь все силы в то, чтобы противостоять сокрушительной давящей силе. Из тех крох сознания, что у тебя остались, ты успеваешь разглядеть на лице Lyssieth крайне забавную улыбку; когда она делает шаг к тебе, она цокает языком: [lyssieth.speech(Ну-ну, так дело не пойдет. Когда я отдаю приказ, люди должны [style.glowArcane(повиноваться)].)]
 	</p>
 	<p>
-		The physical force pushing down on you suddenly increases in strength, and, try as you might, it's far too powerful for you to resist. As you're finally forced down onto your knees before the elder lilin, your head starts to swim, and you feel as though you're dipping in and out of consciousness. The only words that you can seem to form in your mind are 'yes' and 'mistress', but, still refusing to capitulate, you decide to stay silent instead of using your now severely-limited vocabulary.
+		Физическая сила, давящая на тебя, внезапно возрастает, и, как бы ты ни старался, сопротивляться ей оказывается слишком трудно. Когда тебя наконец заставляют опуститься на колени перед старшей лилин, голова начинает идти кругом, и кажется, будто ты то проваливаешься в беспамятство, то снова приходишь в себя. Единственные слова, которые удается сформировать в твоем сознании — это «да» и «госпожа», но, все еще не желая капитулировать, ты решаешь хранить молчание вместо того, чтобы использовать свой теперь уже крайне скудный словарный запас.
 	</p>
 	]]>
 	</htmlContent>
@@ -198,7 +198,6 @@
 	
 	<htmlContent tag="OFFICE_REACTION_BETRAYAL"><![CDATA[
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF siren.getAffection(pc)>30
 		#THEN [siren.speech(Мама! Прекрати! [pc.Name] спас меня, помнишь?!)] [siren.name] кричит, защищая тебя. [siren.speech(Отпусти [pc.herHim]!)]
 		#ELSE [siren.speech(Mom! What's going on?!)] [siren.name] shouts, clearly distressed by the scene that's taking place in front of her. [siren.speech(This is too much!)]
@@ -211,48 +210,47 @@
 		Лиссит suddenly turns away and paces back towards her desk, and as she turns her back on you, the haziness in your mind instantly clears. The physical force that was pushing down on you also immediately vanishes, but, having just borne the brunt of an elder lilin's power, you decide against making any sudden move, and stay down on your knees as you and [siren.name] witness Lyssieth's internal struggle.
 	</p>
 	<p>
-		[lyssieth.speech(Why don't I just do it?!)] she shouts to herself. You're relieved to hear that her deep, malevolent voice has shifted back to the soft, womanly one which she used to greet you. Pacing back and forth beside her desk, she throws you the occasional glance as she continues in an exasperated tone, [lyssieth.speech(I'd be a fool to go against her! I should just hand you over and be done with it! But... But then she'd regain her full power... And the humans... They'd suffer... No. I can't let that happen!)]
+		[lyssieth.speech(Почему бы мне просто не сделать это?!)] — восклицает она сама себе. Ты с облегчением слышишь, что ее глубокий, злобный голос снова сменился на мягкий, женственный, которым она приветствовала тебя. Расхаживая взад-вперед возле своего стола, она время от времени бросает на тебя взгляды и продолжает раздраженным тоном: [lyssieth.speech(Я была бы дурой, если бы пошла против нее! Нужно просто отдать тебя и покончить с этим! Но... Но тогда она вернет себе всю свою мощь... И люди... Они будут страдать... Нет. Я не могу этого допустить!)]
 	</p>
 	<p>
-		With a final, defeated sigh, she looks down at her ruined chair, and lets out a very sad chuckle, [lyssieth.speech(Now look what I've done...)]
+		С последним, побежденным вздохом она смотрит на свой разрушенный стул и издает печальный смешок, [lyssieth.speech(Ну вот, что я наделала...)]
 	</p>
 	<p>
-		[siren.speech(Mom? Are you ok?)] [siren.name] asks in a quivering voice, and you glance over to see that she looks to be on the verge of tears.
+		[siren.speech(Мам? Ты в порядке?)] [siren.name] спрашивает дрожащим голосом, и ты замечаешь, что она вот-вот расплачется.
 	</p>
 	<p>
-		[lyssieth.speech(Yes, I'm sorry, my darling,)] Lyssieth sighs, smiling at her daughter, before looking back down at you. You see that the colour of her eyes has shifted back to a calm green, and, once again tucking a loose strand of her wavy dark-brown hair back behind her ear, she gives you an apologetic smile. [lyssieth.speech(And I'm especially sorry to you, [pc.name]. I should have known that this day would come, and that I must choose to betray Lilith. You should not have had to endure the consequence of my indecision. Please, do stand up.)]
+		[lyssieth.speech(Да, прости меня, дорогая,)] — вздыхает Lyssieth, улыбаясь дочери, а затем снова переводит взгляд на тебя. Ты видишь, что цвет её глаз вернулся к спокойному зеленому, и она снова заправляет выбившуюся прядь своих волнистых темно-каштановых волос за ухо, виновато улыбаясь тебе. [lyssieth.speech(И перед тобой, [pc.name], мне особенно жаль. Мне следовало знать, что этот день настанет и что мне придется предать Lilith. Тебе не пришлось бы терпеть последствия моей нерешительности. Пожалуйста, вставай.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="OFFICE_REACTION_END"><![CDATA[
 	<p>
-		Doing as Lyssieth says, you push yourself up onto your [pc.feet]. Wanting now more than ever to get a real explanation of why you're here, and feeling the frustration of your seemingly never-ending quest to find out what's going on boiling over, you angrily state, [pc.speech(Look, I've been all over Dominion, trying to get someone to tell me why I'm in your world, and after finally finding Arthur, he tells me that you're the only one who has that information. Now, after running this way and that for goodness knows how long, I finally get to meet you, and then I get assaulted! What's more, you're talking about handing me over to Lilith, then something about humans suffering, and now you say you've decided to 'betray' your mother?!
-		#IF pc.isSelfish()
+		Следуя указаниям Lyssieth, ты опираешься на свои [pc.feet]. Желая как никогда получить внятное объяснение того, почему ты здесь, и чувствуя, как закипает ярость от этого, казалось бы, бесконечного квеста по выяснению истины, ты гневно заявляешь: [pc.speech(Слушай, я исходил весь Dominion вдоль и поперек, пытаясь заставить кого-нибудь объяснить, какого черта я оказался в твоем мире, и когда я наконец нашел Arthur, он сказал, что только ты владеешь этой информацией. И вот, после того как я носился туда-сюда бог знает сколько времени, я наконец-то до тебя добрался, и что в итоге? На меня нападают! Мало того, ты толкуешь о том, чтобы отдать меня Lilith, потом несешь какую-то чушь о страданиях людей, а теперь заявляешь, что решила «предать» собственную мать?!
+)		#IF pc.isSelfish()
 		#THEN
-			 Don't keep us in suspense, Lyssieth, this has been a complete fucking nightmare! Just tell us what the fuck is going on!
+			 Не томи нас, Lyssieth, это уже какой-то гребаный кошмар! Просто скажи, что, блять, происходит!
 		#ELSE
-			 Please, just tell me what's going on!
+			 Пожалуйста, просто скажи мне, что происходит!
 		#ENDIF)]
 	</p>
 	<p>
-		[lyssieth.speech(Don't worry, I'll tell you everything,)] [lyssieth.name] says, [lyssieth.speech(but first, let us conclude the business regarding my daughter's return. You have something to say, don't you, [siren.name]?)]
+	[lyssieth.speech(Не волнуйся, я всё тебе расскажу,)] [lyssieth.name] говорит, [lyssieth.speech(но сначала давай закончим с делом возвращения моей дочери. Тебе ведь есть что сказать, не так ли, [siren.name]?)]
 	</p>
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(siren.getAffection(pc)>30)
-			[siren.speech(Y-Yes, I suppose...)] [siren.name] says, blushing and looking at the floor. [siren.speech(Sorry for all the trouble I caused. And thank you... F-For saving me, that is...)]
+			[siren.speech(Д-да, пожалуй...)] [siren.name] произносит, краснея и глядя в пол. [siren.speech(Прости за все хлопоты, что я доставила. И спасибо... С-спасибо, что спас меня...)]
 		#ELSEIF(flags.hasFlag(FLAG_meraxisTrickedWithRing))
-			[siren.speech(Even though [pc.she] tricked me into putting on your ring? You're making <i>me</i> apologise?)] [siren.name] protests, but her mother just raises an eyebrow and starts tapping her foot on the floor. [siren.speech(Fine... Sorry, [pc.name], for all the trouble I caused...)]
+			[siren.speech(И это после того, как [pc.she] обманом заставила меня надеть твое кольцо? Ты заставляешь <i>меня</i> извиняться?)] [siren.name] протестует, но ее мать лишь приподнимает бровь и начинает нетерпеливо постукивать ногой по полу. [siren.speech(Ладно... Прости, [pc.name], за все те хлопоты, что я доставила...)]
 		#ELSE
-			[siren.speech(Even though [pc.she] was going to leave me to be crushed? You're making <i>me</i> apologise?)] [siren.name] protests, but her mother just raises an eyebrow and starts tapping her foot on the floor. [siren.speech(Fine... Sorry, [pc.name], for all the trouble I caused...)]
+			[siren.speech(И это после того, как [pc.she] чуть не бросила меня на растерзание? Ты заставляешь <i>меня</i> извиняться?)] [siren.name] протестует, но ее мать лишь приподнимает бровь и начинает нетерпеливо постукивать ногой по полу. [siren.speech(Ладно... Прости, [pc.name], за все те хлопоты, что я доставила...)]
 		#ENDIF
 	</p>
 	<p>
-		[lyssieth.speech(Good girl. Now that we've got all of that out of the way, I think the three of us should pay my dear Lilaya a visit,)] Lyssieth says, [lyssieth.speech(It'll be best if I explain the situation to all of you at once.)]
+		[lyssieth.speech(Умница. Раз уж со всем этим покончено, думаю, нам троим стоит навестить мою дорогую Lilaya,)] — говорит Lyssieth, — [lyssieth.speech(Будет лучше, если я объясню ситуацию вам всем сразу.)]
 	</p>
 	<p>
-		[siren.speech(But getting to her place will take ages,)] [siren.name] complains.
+		[siren.speech(Но добраться до ее дома будет целая вечность,)] — жалуется [siren.name].
 	</p>
 	<p>
 		[lyssieth.speech(О, мы не идем пешком,)] [lyssieth.name] отвечает, [lyssieth.speech(Я телепортирую нас троих туда. Я могу отключить мамины заклинания на короткое время, так что она не должна заметить моего отсутствия. Теперь подойдите ближе, вы двое.)]
@@ -271,7 +269,7 @@
 		Делая, как просит старшая лилин, ты и [siren.name] шагаете вперед к обеим сторонам Лиссит, которая быстро протягивает руки и тянет вас обоих в однорукий объятие. Когда ты и ее дочь прижимаетесь к ее огромным грудям, старшая лилин выдает мягкий смешок, [lyssieth.speech(Это так уютно! Теперь, позволь мне просто отключить мамины заклинания... И... Давай!)]
 	</p>
 	<p>
-		С внезапным, ослепительным вспышкой фиолетового света, вы, @@T2@@ и Лиссит исчезаете из кабинета Лиссит...
+		Внезапная ослепительная вспышка фиолетового света — и вы втроем исчезаете из кабинета Lyssieth...
 	</p>
 	]]>
 	</htmlContent>
@@ -377,43 +375,43 @@
 		[pc.speech(Но не Самаэля?)] ты замечаешь.
 	</p>
 	<p>
-		[lyssieth.speech(No, he eluded us for quite some time, but when we made it known that we were prepared to do terrible things to his archangel companions, he offered us his surrender,)] Lyssieth scowls as she recalls what happened next, [lyssieth.speech(He gave us an offering in exchange for the release of his friends; a great mirror, which he said was able to replicate the soul of anyone who gazed into it. Of course, he lied! So eager were we to finally capture the king of all angels, that we allowed him to trick us into gazing into the mirror. In a flash, all seven of us were transported to a sealed dimension, in which we found ourselves living in a vast, empty palace. For four thousand years, we lived in the confines of that place, but we were not alone. The seven archangels, who we'd brought along as hostages, were also transported into the mirror with us.)]
+		[lyssieth.speech(Нет, довольно долго он ускользал от нас, но когда мы дали понять, что готовы на ужасные вещи с его архангелами-спутниками, он предложил нам свою капитуляцию,)] Lyssieth хмурится, вспоминая, что было дальше, [lyssieth.speech(В обмен на освобождение друзей он преподнес нам дар; великое зеркало, которое, по его словам, способно копировать душу любого, кто в него заглянет. Разумеется, он лгал! Мы так жаждали наконец пленить короля всех ангелов, что позволили ему обманом заставить нас посмотреть в зеркало. В мгновение ока все семеро нас перенесло в запечатанное измерение, где мы оказались в огромном пустом дворце. Четыре тысячи лет мы жили в тесноте этого места, но не были одиноки. Семь архангелов, которых мы взяли с собой в качестве заложников, тоже оказались в зеркале вместе с нами.)]
 	</p>
 	<p>
-		[lilaya.speech(He just sacrificed his friends like that?)] Lilaya asks. [lilaya.speech(And that mirror; it's the same one [pc.name] fell into in the museum, isn't it?)]
+		[lilaya.speech(Он просто вот так взял и принес своих друзей в жертву?)] спрашивает Lilaya. [lilaya.speech(И это зеркало... оно ведь то самое, в которое упала [pc.name] в музее, верно?)]
 	</p>
 	<p>
-		[lyssieth.speech(Yes, and yes,)] Lyssieth replies, [lyssieth.speech(Oh, how those archangels were used by my sisters and mother... The one which Lilith gave to me, Valoel, had it better than the rest, however. Although angels are disgusting creatures, I can't help but recognise how similar to humans they are, and as such, I refused to corrupt him as my mother ordered. That was the start of Lilith's suspicions about me, although she was too busy during those four thousand years to take any action against me.)]
+		[lyssieth.speech(Да, и верно,)] отвечает Lyssieth, [lyssieth.speech(О, как же мои сестры и мать использовали тех архангелов... Впрочем, тому, которого Lilith отдала мне, Валоэлю, досталось лучше остальных. Хотя ангелы — отвратительные создания, не могу не признать, насколько они похожи на людей, и поэтому я отказалась осквернить его, как велела мать. Именно тогда у Lilith и закрались подозрения на мой счет, хотя в те четыре тысячи лет она была слишком занята, чтобы предпринять против меня какие-то действия.)]
 	</p>
 	<p>
-		[arthur.speech(That's while she was weaving the reality-change spell, I assume?)] Arthur asks, quick to realise that it would take a significant amount of time to create such a spell.
+		[arthur.speech(Это пока она плела заклинание изменения реальности, я полагаю?)] — спрашивает Arthur, быстро осознавая, что создание подобного заклинания должно было занять немало времени.
 	</p>
 	<p>
-		[lyssieth.speech(That's right, and by the time [pc.name] here provided the catalyst for our release, it was powerful enough to warp the reality of the entire world,)] Lyssieth says, [lyssieth.speech(It was to reforge every living soul into a demon, so that Lilith would have no opposition in taking her place as queen of all creation. The spell, however, didn't go quite as planned...)]
+		[lyssieth.speech(Верно, и к тому времени, как [pc.name] послужил катализатором нашего освобождения, оно было достаточно мощным, чтобы исказить реальность всего мира,] — говорит Lyssieth, — [чтобы перековать каждую живую душу в демона, дабы Lilith не встретила никакого сопротивления, вступая на престол королевы всего сущего. Однако заклинание пошло не совсем так, как планировалось...)]
 	</p>
 	<p>
-		[arthur.speech(Because of [pc.name], and the power that's been infused into [pc.her] aura?)] Arthur asks again, getting into his element as the elder lilin starts talking about arcane matters.
+		[arthur.speech(Из-за [pc.name] и силы, что была влита в [pc.her] ауру?)] — снова спрашивает Arthur, входя в азарт, когда старшая лилин начинает рассуждать об аркане.
 	</p><p>
 		[lyssieth.speech(Правильно снова. Вы видите, ангелы всегда проиграют демонам, по природе своей жалких правил морали. Даже когда Самаэль мог бы заточить нас в то зеркало и выбросить ключ, он выбрал способ, которым мы могли бы однажды быть освобождены,)] Lyssieth смеется, [lyssieth.speech(И он сделал это, заставив душу, которая должна была вызвать наше освобождение, поглотить часть силы Лилит. Крошечную, крошечную часть, но не совсем незначительную. Так же, как одна опора, вытащенная из нижней части башни из карт, заставит всю конструкцию рухнуть, так и удаление крошечной части силы Лилит заставило ее заклинание сработать наоборот.)]
 	</p>
 	<p>
-		[pc.speech(It doesn't look like it backfired to me,)] you observe, [pc.speech(Dominion, demons, animal-morphs, magic; all of these things never existed.)]
+		[pc.speech(Как по мне, всё выглядит так, будто оно сработало наоборот,] — замечаешь ты, — [Dominion, демоны, зверолюди, магия — всего этого раньше просто не существовало.)]
 	</p>
 	<p>
-		[lyssieth.speech(Well, actually, demons and the other lilin have always been in your world, but yes, the spell did work, to an extent. It transformed the entire of what you knew as the British Isles into a new reality, in which demons, humans, anthropomorphic animals, and mythological creatures have lived for thousands of years. Lilith, my six sisters, and I merged with, and gained the memories of, the alternate versions of ourselves who existed in this reality,)] Lyssieth explains, [lyssieth.speech(Every single other person who was present within the spell's area had their soul reforged into a new being, including you three; Lilaya, [siren.name], and Arthur.)]
+		[lyssieth.speech(Ну, вообще-то, демоны и прочие лилин всегда были в твоем мире, но да, заклинание сработало, в какой-то степени. Оно превратило всё, что ты знал как Британские острова, в новую реальность, в которой демоны, люди, антропоморфные животные и мифические существа живут уже тысячи лет. Лилит, шесть моих сестер и я слились с альтернативными версиями самих себя, существовавшими в этой реальности, и обрели их воспоминания,)] — объясняет Lyssieth, — [lyssieth.speech(Каждая душа, находившаяся в радиусе действия заклинания, была перекована в новое существо, включая вас троих: Lilaya, [siren.name] и Arthur.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LAB_LILAYA_ANGERY"><![CDATA[
 	<p>
-		[lilaya.speech(So... I'm not really Lilaya? I'm just a transformed version of [pc.namePos] aunt, Lily?)] Lilaya asks, the colour draining from her cheeks as she faces an existential crisis.
+		[lilaya.speech(Значит... я на самом деле не Lilaya? Я просто изменившаяся версия тетушки [pc.namePos], Лили?)] — спрашивает Lilaya, и краска сходит с её лица, пока она переживает экзистенциальный кризис.
 	</p>
 	<p>
-		[lyssieth.speech(No, you are Lilaya,)] Lyssieth reassures her, [lyssieth.speech(It was in a different reality altogether that you were Lily.)]
+		[lyssieth.speech(Нет, ты — Lilaya,)] — успокаивает её Lyssieth, — [lyssieth.speech(Лилей ты была в совершенно иной реальности.)]
 	</p>
 	<p>
-		Acting as though he already knew all of this, Arthur joins in, [arthur.speech(Hmm, yes, well, I must admit that this possibility did cross my mind. Don't worry, Lilaya, the people we may once have been no longer exist. We are who we are now, you see?)]
+		Делая вид, будто он и так всё это знал, Arthur вступает в разговор: [arthur.speech(Хм, да, пожалуй, должен признать, что эта мысль уже посещала мой разум. Не волнуйся, Lilaya, те люди, которыми мы могли быть когда-то, больше не существуют. Мы — это те, кто мы есть сейчас, понимаешь?)]
 	</p>
 	<p>
 		К сожалению, слова Артура, похоже, имеют противоположный эффект от того, что он задумал, и волнение Лилаи быстро превращается в гнев, [lilaya.speech(И что, если я была счастлива как Лили?! Я не просила, чтобы меня сделали полудемонкой! И если ты знал, что это возможно, почему ты не сказал мне раньше, Артур?!)]
@@ -449,16 +447,16 @@
 		Вы можете сказать, что экзистенциальный кризис Лилайи достиг точки невозврата, и, понимая, что простой правды будет достаточно, чтобы успокоить её, вы утешаете её, [pc.speech(Да, теперь ты наполовину демон, Лилая, но твоя личность, твои манеры, даже твоя внешность все еще такие же, как когда ты была Лили. Ты все еще в глубине души остаешься той же самой личностью, даже если ты этого не чувствуешь. Помнишь, как я сразу узнал тебя, когда увидел тебя в первый раз? Ты все еще <i>ты</i>, Лилая.)]
 	</p>
 	<p>
-		Thankfully, your words have the desired effect, and your aunt's anger dissipates as quickly as it appeared. Collapsing down onto a nearby chair, she sighs, [lilaya.speech(I don't know... So I was really your aunt, huh? I'm just a different version of... well... myself. In a different body, in a different reality...
+		К счастью, твои слова производят нужный эффект, и гнев твоей тети рассеивается так же быстро, как и появился. Опустившись на ближайший стул, она вздыхает: [lilaya.speech(Даже не знаю... Значит, я и правда твоя тетя, да? Просто другая версия... ну... самой себя. В другом теле, в другой реальности...
 		#IF pc.getSexCount(lilaya)>0
 		#THEN
-			 And we had sex... Well, I mean, I suppose you're not <i>really</i> my [pc.niece] any more, so I guess I don't mind that...
+			 И у нас был секс... Ну, в смысле, полагаю, ты уже не <i>настоящий</i> мой [pc.niece], так что, думаю, меня это не особо беспокоит...
 		#ELSE
-			 I mean, I suppose you're not <i>really</i> my [pc.niece] any more, so I guess I don't mind still offering you those tests...
+			 В смысле, полагаю, ты уже не <i>настоящий</i> мой [pc.niece], так что, думаю, я не против и дальше предлагать тебе эти тесты...
 		#ENDIF)]
 	</p>
 	<p>
-		Taking this opportunity to ask the question at the forefront of his mind, Arthur turns to Lyssieth and says, [arthur.speech(So I'm assuming that [pc.name] is somehow special to Lilith, and, considering that you've decided to tell us all this, you're committed to hiding [pc.herHim] from her. I can only assume that, due to your, erm, fondness for humans, this all has something to do with preventing Lilith from warping the reality of the rest of the world?)]
+		Воспользовавшись возможностью задать вопрос, который больше всего занимал его ум, Arthur поворачивается к Lyssieth и говорит: [arthur.speech(То есть, я так понимаю, что [pc.name] каким-то образом особенный для Lilith, и, учитывая, что ты решила открыться нам, ты твердо намерена скрывать [pc.herHim] от нее. Могу лишь предположить, что из-за твоей, э-э, любви к людям, все это нужно для того, чтобы не дать Lilith исказить реальность остального мира?)]
 	</p>
 	<p>
 		[lyssieth.speech(Да, это так,)] Lyssieth confirms, [lyssieth.speech(Мы все думали, что [pc.name] здесь исчезла навсегда, и что часть силы Лилит в [pc.herHim] никогда не будет восстановлена. Если бы мать узнала, что [pc.she] здесь, она не потратила бы ни секунды на то, чтобы телепортироваться сюда, поработить нас всех, а затем извлечь свою силу из [pc.name], любыми доступными способами. С восстановлением всей своей силы, она могла бы использовать огромные количества неконтролируемой арканой энергии, которая была высвобождена в момент, когда её заклинание сработало не так, как надо, и с этим, она могла бы закончить заклинание, изменяющее реальность. Я не могу позволить этому случиться... Люди должны быть ценимы, а не превращены в демонов!)]
@@ -477,16 +475,16 @@
 		[pc.speech(Если это только Британские острова, которые были преобразованы, почему остальной мир ничего не сделал за эти три года?)] you ask.
 	</p>
 	<p>
-		[lyssieth.speech(Remember how I said that there were many, many lilin which Lilith created by corrupting humans? Well, both they and their countless demon offspring all disguised themselves as humans when Lilith and my sisters were imprisoned. Over the course of history, they've been infiltrating circles of power, instigating wars, sowing discontent, and keeping the world in chaos so as to prepare for our mother's return.)] Lyssieth explains, [lyssieth.speech(By the end of the twentieth century, they had de-facto control of every single major power in the world. Thanks to their vice-like grip on every government agency and all of the media, they can control everything that the world's population sees. Those who do discover what's going on are dismissed out of hand as crazed conspiracy theorists, and soon after, are never heard from again. After all, who would believe that an entire nation could have disappeared overnight?)]
+		[lyssieth.speech(Помнишь, я говорила, что существует множество, просто невероятное множество лилин, которых Lilith создала, развращая людей? Так вот, и они, и их бесчисленное потомство из демонов приняли человеческий облик, когда Lilith и мои сестры оказались в заточении. На протяжении всей истории они проникали в круги власти, разжигали войны, сеяли раздор и держали мир в хаосе, чтобы подготовить почву для возвращения нашей матери.)] — объясняет Lyssieth, [lyssieth.speech(К концу двадцатого века они де-факто контролировали каждую крупную державу в мире. Благодаря своей мертвой хватке в каждом правительственном агентстве и во всех СМИ, они могут управлять всем, что видит население планеты. Те немногие, кому удается разгадать правду, тут же объявляются сумасшедшими конспирологами, а вскоре о них и вовсе перестают слышать. В конце концов, кто поверит, что целая нация может исчезнуть в одночасье?)]
 	</p>
 	<p>
-		[pc.speech(But what about tourists, and trade, and everyone with connections to the old reality of Britain?)] you ask.
+		[pc.speech(А как же туристы, торговля и все те, у кого остались связи со старой реальностью Британии?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[lyssieth.speech(I believe that the official line is quarantine due to an untreatable pandemic,)] Lyssieth replies, [lyssieth.speech(Or was that just what one country was being told... The lilin out there in the rest of the world have quite an extensive subversive network. Nothing is beyond their reach.)]
+		[lyssieth.speech(Думаю, официальная версия гласит, что введен карантин из-за неизлечимой пандемии,)] — отвечает Lyssieth, [lyssieth.speech(Или это лишь то, что внушали одной конкретной стране... У лилин в остальном мире разветвленная подрывная сеть. Для них нет ничего недосягаемого.)]
 	</p>
 	<p>
-		[pc.speech(And what of the people here in this new reality? What if they leave?)] you ask, [pc.speech(Surely a sighting of a real-life cat-girl would be shared all over the world?)]
+		[pc.speech(А как же люди здесь, в этой новой реальности? Что, если они уедут?)] — спрашиваешь ты, [pc.speech(Неужели встреча с настоящей девочкой-кошкой не разлетелась бы по всему миру?)]
 	</p>
 	<p>
 		[lyssieth.speech(Я не думаю, что вы полностью понимаете, насколько лилин контролируют распространение информации.)] Lyssieth replies, [lyssieth.speech(Девочки-кошки, демоны и все остальные расы совершают исход с тех пор, как появилась эта новая реальность, и ни один кусочек доказательств не распространился из соседних стран, которые вынуждены принимать их всех. Вы никогда не задумывались, почему дети здесь растут так быстро? Лилит намеренно делает это, используя часть разряженной энергии из своего сломанного заклинания. Это работает, наполовину фазируя тело новорожденного в микроразмер, в котором время проходит со скоростью одного года за каждую нашу минуту. Как только их тело достигает зрелости, оно полностью возвращается в эту реальность. Таким образом, она создает огромные проблемы с перенаселением и вынуждает десятки тысяч жителей Доминиона покидать его каждый день. Это все часть ее плана.)]
@@ -608,7 +606,7 @@
 		[pc.speech(Я присоединюсь к твоему плану, но когда мы победим Лилит, я буду тем, кто займет ее место как правитель этого мира,)] ты решительно заявляешь.
 	</p>
 	<p>
-		[lyssieth.speech(From one who harbours a fragment of Lilith's power in [pc.her] aura, I'm not surprised to hear that you share her same desire to rule,)] Lyssieth says, but, surprisingly, she doesn't sound at all worried by your statement, [lyssieth.speech(Very well, so long as you agree to treat humans fairly, then I will support you when we get that far.)]
+		[lyssieth.speech(Для той, в чьей [pc.her] ауре таится частица силы Lilith, не ново слышать, что ты разделяешь её жажду власти,)] — говорит Lyssieth, но, к удивлению, в её голосе нет ни капли беспокойства из-за твоих слов. [lyssieth.speech(Что ж, если ты обещаешь править людьми справедливо, то я поддержу тебя, когда придет время.)]
 	</p>
 	<p>
 		[lilaya.speech(Я не вижу в этом никакой проблемы,)] Лилая говорит, [lilaya.speech(Лучше быть под властью [pc.name], чем под властью Лилит.)]
@@ -640,7 +638,6 @@
 	
 	<htmlContent tag="LAB_ENDING_NOTHING"><![CDATA[
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF pc.getHistory()==OCCUPATION_UNEMPLOYED
 		#THEN
 			[pc.speech(С той ночи в музее я не перестаю работать,)] ты жалуешься, [pc.speech(Я просто хочу вернуться к тому, чтобы быть NEET, и оставить спасение мира кому-то другому.)]
@@ -649,26 +646,26 @@
 		#ENDIF
 	</p>
 	<p>
-		[lilaya.speech(Seriously?!)] Lilaya exclaims, [lilaya.speech(That's how you repay me for everything I've done, by just giving up?)]
+		[lilaya.speech(Серьезно?!)] — восклицает Lilaya. [lilaya.speech(Так вот как ты отплачиваешь мне за всё, что я сделала — просто сдаешься?)]
 	</p>
 	<p>
-		[lyssieth.speech(I will not allow such a lazy individual to stay in contact with my daughter!)] Lyssieth angrily joins in.
+		[lyssieth.speech(Я не позволю такому лентяю оставаться в контакте с моей дочерью!)] — гневно вступает Lyssieth.
 	</p>
 	<p>
-		Sensing that your comfortable life would be ruined if you don't relent, you hold up your [pc.hands] and capitulate, [pc.speech(Ok, ok! I'll join in with your plan, just don't kick me out!)]
+		Чувствуя, что твоя безмятежная жизнь пойдет прахом, если ты не уступишь, ты поднимаешь свои [pc.hands] и капитулируешь: [pc.speech(Ладно, ладно! Я присоединюсь к вашему плану, только не выгоняйте меня!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LAB_ENDING"><![CDATA[
 	<p>
-		[siren.speech(So what's going to happen now?)] [siren.name] asks.
+		[siren.speech(И что теперь будет?)] — спрашивает [siren.name].
 	</p>
 	<p>
-		[lyssieth.speech(In order to stand a chance at defeating Lilith, all of my sisters must first be dealt with,)] Lyssieth states, before turning to face you. [lyssieth.speech(As you have a fraction of Lilith's power within your aura, you should be able to absorb the essence of each lilin that you defeat. With the combined powers of all seven of the elder lilin, you'll be able to face Lilith head-on. By defeating each of my sisters, you'll not only be gaining strength, but Lilith's grip over her domain will also be weakened.)]
+		[lyssieth.speech(Чтобы иметь хоть какой-то шанс одолеть Lilith, сначала нужно разобраться со всеми моими сестрами,)] — заявляет Lyssieth, прежде чем повернуться к тебе. [lyssieth.speech(Поскольку в твоей ауре теплится частица силы Lilith, ты сможешь поглощать эссенцию каждой побежденной лилин. Собрав воедино мощь всех семи старших лилин, ты сможешь бросить вызов самой Lilith лицом к лицу. Побеждая моих сестер, ты не только будешь набираться сил, но и ослабишь хватку Lilith над её владениями.)]
 	</p>
 	<p>
-		[lilaya.speech(So you want [pc.name] to fight your sisters?)] Lilaya asks in shock.
+		[lilaya.speech(То есть ты хочешь, чтобы [pc.name] сражалась с твоими сестрами?)] — в шоке переспрашивает Lilaya.
 	</p>
 	<p>
 		[lyssieth.speech(Это единственный способ, которым можно хоть как-то оспорить власть Лилит,)] Лиссит отвечает, [lyssieth.speech(Вам нужно будет начать с моей младшей сестры, Лунетт, которая правит железной рукой над окружающими полями и лугами. Все лилин имеют форму, которую они предпочитают принимать, и Лунетт предпочитает форму огромного пегатора. Во главе своей стаи демонических кентавров она терроризирует деревни и фермы, которые разбросаны по местности. Прежде чем вы сможете отправиться дальше, вам нужно будет победить её.)]
@@ -684,86 +681,85 @@
 		[lyssieth.speech(Как только я передаю тебе свою эссенцию, ты становишься неуязвимым к заклинанию Лилит "Командный заклинание". Таким образом, Лунетт будет вынуждена сразиться с тобой в бою.)] Lyssieth says, [lyssieth.speech(А что касается её кентавров, то тебе может помочь лилин Минотальис. Она мэр города Элис, крупнейшего поселения в полях. Жители города испытывают большие трудности из-за кентавров Лунетт. Не стоит упоминать Минотальис обо всем, о чем мы здесь говорили. Несмотря на то, что она слишком добрая для своего блага, она всегда была полностью преданной и лояльной Лилит и, без сомнения, предала бы тебя.)]
 	</p>
 	<p>
-		[siren.speech(Why would she choose to help now?)] [siren.name] chimes in, [siren.speech(I met Minotallys when I was questing to unlock the secrets of the seven scrolls of ultimate power, and she could barely even admit that the centaurs were a problem. She's a complete push-over and does whatever Lunette tells her.)]
+		[siren.speech(С чего бы ей вдруг помогать сейчас?)] — вставляет [siren.name], — [siren.speech(Я встречала Миноталлис, когда искала секреты семи свитков абсолютной власти, и та едва решалась признать, что кентавры — это проблема. Она совершенно бесхребетная и делает всё, что велит Лунетт.)]
 	</p>
 	<p>
-		[lyssieth.speech(Things have got worse out there since you were last in Elis,)] Lyssieth responds, [lyssieth.speech(Even Lilith herself is concerned with the prospect of an uprising due to Lunette's brutality. All Minotallys will need is a little push, and you should have a powerful ally to help you defeat the centaurs.)]
+		[lyssieth.speech(Там, снаружи, всё стало ещё хуже с тех пор, как ты в последний раз была в Элисе,)] — отвечает Lyssieth, — [lyssieth.speech(Даже сама Lilith обеспокоена перспективой восстания из-за жестокости Лунетт. Миноталлис понадобится лишь небольшой толчок, и у тебя будет могущественный союзник, который поможет тебе сокрушить кентавров.)]
 	</p>
 	<p>
-		[lilaya.speech(Supposing [pc.name] manages to pull this off,)] Lilaya wonders out loud, [lilaya.speech(Is Lilith just going to sit in her tower and ignore the fact that an elder lilin has been defeated right under her nose?)]
+		[lilaya.speech(Если предположить, что [pc.name] удастся это провернуть,)] — задумчиво произносит Lilaya, — [lilaya.speech(Неужели Lilith просто будет сидеть в своей башне и игнорировать тот факт, что старейшая лилин была повержена прямо у неё под носом?)]
 	</p>
 	<p>
-		[lyssieth.speech(Lilith is far too busy trying to assert control over the rest of the world,)] Lyssieth replies, [lyssieth.speech(Most of the time she's not even here, and she certainly doesn't have the time to personally deal with any problems her Realm might experience. With what little influence I have left, I'll play the game of politics so as to put Minotallys forwards as being put in control of stabilising the Foloi Fields. Lilith doesn't take too kindly to failure, so I imagine that Lunette will be rewarded by being either locked up in Lilith's tower or given some insignificant plot of land to rule over. Either way, [pc.name] shouldn't draw the wrath of Lilith. Not yet, at least...)]
+		[lyssieth.speech(Lilith слишком занята попытками утвердить контроль над остальным миром),] — отвечает Lyssieth, — [lyssieth.speech(Большую часть времени её здесь даже нет, и уж точно у неё нет времени лично разбираться с любыми проблемами, которые могут возникнуть в её Царстве. Пользуясь теми крохами влияния, что у меня остались, я сыграю в политические игры так, чтобы выставить Minotallys главной по стабилизации Полей Фолой. Lilith не слишком жалует неудачи, так что, полагаю, наградой для Lunette станет либо заточение в башне Lilith, либо какой-нибудь ничтожный клочок земли в управление. В любом случае, [pc.name] не должна навлечь на себя гнев Lilith. По крайней мере, пока...)]
 	</p>
 	<p>
-		[siren.speech(Perhaps you could get the youko to help as well?)] [siren.name] chimes in, [siren.speech(They're no match for my universe-shattering powers, but if you get a couple of nine-tails on your side then you probably wouldn't even need Minotallys.)]
+		[siren.speech(Может, тебе стоит привлечь на помощь ещё и ёко?)] — вставляет [siren.name], — [siren.speech(Они не сравнятся с моими силами, способными сокрушать вселенные, но если ты переманишь на свою сторону парочку девятихвостых, то, возможно, Minotallys тебе и вовсе не понадобится.)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LAB_ENDING_SIREN_HELP"><![CDATA[
 	<p>
-		[pc.speech(The youko?)] you ask.
+		[pc.speech(Ёко?)] — переспрашиваешь ты.
 	</p>
 	<p>
-		[siren.speech(They're multi-tailed foxes who live in the forests of the Shinrin highlands, to the west of Elis,)] she explains, [siren.speech(Maybe you met my friend, [youkoGuide.name], in my citadel's lab? Normally, the youko are pretty hard to make contact with, but she could get you in touch with them!)]
+		[siren.speech(Это многохвостые лисы, живущие в лесах высокогорья Синрин, к западу от Элиса),] — объясняет она, — [siren.speech(Может, ты встречал мою подругу, [youkoGuide.name], в лаборатории моей цитадели? Обычно с ёко довольно трудно связаться, но она могла бы устроить тебе встречу с ними!)]
 	</p>
 	<p>
-		[pc.speech(She's not going to be in the citadel anymore,)] you state, [pc.speech(Where could I find her?)]
+		[pc.speech(Её больше не будет в цитадели),] — заявляешь ты, — [pc.speech(Где я смогу её найти?)]
 	</p>
 	<p>
-		[siren.speech(I first met her in one of the taverns in Elis, back before I decided to conquer all of Submission. Let me see... I think it was called 'The Red Dragon'? She's probably gone back there.)]
+		[siren.speech(Впервые я встретила её в одной из таверн Элиса, ещё до того, как решила покорить всю Submission. Дай-ка вспомнить... Кажется, она называлась «Красный дракон»? Скорее всего, она уже вернулась туда.)]
 	</p>
 	<p>
-		[lyssieth.speech(Excellent idea, Meraxis! With the youko's help, Lunette's centaurs won't stand a chance,)] Lyssieth exclaims, happily clapping her hands together. Looking at you, she continues, [lyssieth.speech(Now, I need to infuse my essence into your aura in order to grant you immunity to the Lilith's Command spell. It won't diminish my own powers in any way, so I'll still be able to help when we're finally ready to confront Lilith.)]
+		[lyssieth.speech(Отличная идея, Мераксис! С помощью ёко кентаврам Лунетт не будет равных!)] — восклицает Lyssieth, радостно хлопая в ладоши. Глядя на тебя, она продолжает: [lyssieth.speech(Теперь мне нужно наполнить твою ауру своей эссенцией, чтобы даровать тебе иммунитет к заклинанию «Команда Lilith». Это ничуть не ослабит мои силы, так что я всё ещё смогу помочь, когда мы наконец будем готовы противостоять Lilith.)]
 	</p>
 	<p>
-		[lilaya.speech(And how exactly will you do that?)] Lilaya angrily asks, [lilaya.speech(By fucking [pc.herHim], I suppose?!)]
+		[lilaya.speech(И как именно ты собираешься это сделать?)] — гневно спрашивает Lilaya. [lilaya.speech(Через трах [pc.herHim], я полагаю?!)]
 	</p>
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.getRace()==RACE_HUMAN)
-			[lyssieth.speech(Well, you know, what with the nature of the arcane being as it is, yes, I'll need to orgasm in order to fuse my essence into [pc.namePos] aura,)] Lyssieth says in a rather unconvincing manner, and you can't help but wonder if she's lying just to try and get you to have sex with her.
+			[lyssieth.speech(Ну, понимаешь, учитывая природу арканы... да, мне нужно будет испытать оргазм, чтобы влить свою эссенцию в ауру [pc.namePos],)] — говорит Lyssieth довольно неубедительно, и ты невольно задаешься вопросом: а не лжёт ли она просто для того, чтобы затащить тебя в постель?
 		#ELSE
-			[lyssieth.speech(That isn't strictly necessary,)] Lyssieth says, [lyssieth.speech(but it is a rather intimate process, and, well, it would be only natural to have sex while doing it...)]
+			[lyssieth.speech(Это не строго обязательно,)] — говорит Lyssieth, [lyssieth.speech(но процесс довольно интимный, и, ну... было бы вполне естественно заняться сексом во время него...)]
 		#ENDIF
 	</p>
 	<p>
-		[lilaya.speech(You're certainly not doing that in my lab!)] Lilaya exclaims, [lilaya.speech(You can go and do it elsewhere.)]
+		[lilaya.speech(Только не в моей лаборатории!)] — восклицает Lilaya. [lilaya.speech(Можешь идти и делать это где угодно, только не здесь.)]
 	</p>
 	<p>
 		[lyssieth.speech(Hmm, I suppose it <i>is</i> time for me to return home, so I'll take [pc.name] with me then,)] Lyssieth says. 
 	</p>
 	<p>
-		[siren.speech(Oh, mum, can I stay here for a while and catch up with sis'?)] [siren.name] asks.
+		[siren.speech(О, мам, можно я побуду здесь немного и поболтаю с сестрёнкой?)] — спрашивает [siren.name].
 	</p>
 	<p>
-		[lyssieth.speech(Very well, but do not let her out of your sight, Lilaya,)] Lyssieth says, before suddenly stepping over to you and pulling you into a big hug, [lyssieth.speech(I'll be back to pick her up soon. Let's go, [pc.name].)] 
+		[lyssieth.speech(Очень хорошо, но не спускай с неё глаз, Lilaya,)] — говорит Lyssieth, прежде чем внезапно подойти к тебе и крепко обнять, [lyssieth.speech(Скоро я вернусь, чтобы забрать её. Пошли, [pc.name].)] 
 	</p>
 	<p>
-		Squeezing you in against her [lyssieth.breastSize], [lyssieth.cupSize]-cup breasts, Lyssieth casts her teleportation spell, and the two of you disappear in a flash of purple light...
+		Прижимая тебя к своей [lyssieth.breastSize], пышной груди [lyssieth.cupSize]-го размера, Lyssieth произносит заклинание телепортации, и вы оба исчезаете во вспышке фиолетового света...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LAB_ENDING_RETURN"><![CDATA[
 	<p>
-		In an instant, you find yourself standing in the middle of Lyssieth's office, with the mature elder lilin still hugging you tightly into her busty chest. [lyssieth.speech(Oh, excellent, my absence hasn't been discovered,)] she says.
+		В мгновение ока ты оказываешься посреди кабинета Lyssieth, а зрелая старшая лилин всё еще крепко прижимает тебя к своей пышной груди. [lyssieth.speech(О, отлично, моё отсутствие еще не заметили,)] — говорит она.
 	</p>
 	<p>
-		[pc.speech(So, I need your essence to be able to resist that commanding spell?)] you ask.
+		[pc.speech(Значит, мне нужна твоя эссенция, чтобы иметь возможность противостоять этому повелевающему заклинанию?)] — спрашиваешь ты.
 	</p>
 	<p>
-		[lyssieth.speech(Mmm, that's right. It won't turn you into a demon or anything like that, it's just going to strengthen your aura,)] Lyssieth says, her arms still wrapped around you,
+		[lyssieth.speech(Ммм, именно так. Это не превратит тебя в демона или что-то в этом роде, это просто укрепит твою ауру,)] — говорит Lyssieth, всё еще обнимая тебя,
 		#IF(pc.getRace()==RACE_HUMAN)
-			 [lyssieth.speech(You need to get me to orgasm for it to work... Mmm... Yes... You humans are so sexy... Do you want to use my pussy, or would you like me to grow a nice big cock and fuck you?
+			 [lyssieth.speech(Чтобы это сработало, тебе нужно довести меня до оргазма... Ммм... Да... Вы, люди, такие сексуальные... Хочешь использовать мою киску, или хочешь, чтобы у меня вырос большой стояк и я оттрахала тебя?
 			#IF(pc.getSexCount(lilaya)>0)
-				 You know, there aren't many humans who can say that they've fucked both an elder lilin <i>and</i> her recognised daughter!
+				 Знаешь, немногие люди могут похвастаться тем, что трахали и старшую лилин <i>и</i> её признанную дочь!
 			#ENDIF)]
 		#ELSE
-			 [lyssieth.speech(Now, I can do this without having sex, but where's the fun in that?
+			 [lyssieth.speech(Вообще-то, я могу сделать это и без секса, но где же тогда веселье?
 			#IF(pc.getSexCount(lilaya)>0)
-				 You know, there aren't many people who can say that they've fucked both an elder lilin <i>and</i> her recognised daughter!
+				 Знаешь, немногие могут сказать, что трахали и старшую лилин <i>и</i> её признанную дочь!
 			#ENDIF)]
 		#ENDIF
 	</p>
@@ -775,7 +771,6 @@
 	
 	<htmlContent tag="LAB_ENDING_RETURN_DECLINE_SEX_HUMAN"><![CDATA[
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.hasStatusEffect(SE_FETISH_PURE_VIRGIN))
 			Ты абсолютно не хочешь рисковать своей драгоценной девственностью, и поэтому, быстро освободившись от объятий Лилайи, ты говоришь: [pc.speech(Я не собираюсь заниматься сексом, ок? Я сохраняю себя для кого-то особенного, так что не можем ли мы сделать это по-другому?)]
 		#ELSE
@@ -791,23 +786,22 @@
 		[lyssieth.speech(Хорошо...)] Лилайя говорит, всё ещё понуро глядя на тебя, прежде чем вздохнуть и закрыть глаза. [lyssieth.speech(Садись и расслабься. Это будет сделано в одночасье...)]
 	</p>
 	<p>
-		Doing as instructed, you sit down on one of the chairs before Lyssieth's desk, and, closing your eyes, you try to relax. As you let out a sigh of your own, you start to feel a strange warmth pulsating all around you. Before you can react to this feeling, a huge surge of energy jolts throughout your entire body, causing you to slip out of consciousness...
+		[pc.speech(Good,)] you say, happy to discover that you're not going to be forced to have sex with Lilaya's mother. [pc.speech(Shall we get this done, then?)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="LAB_ENDING_RETURN_DECLINE_SEX"><![CDATA[
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF pc.hasStatusEffect(SE_FETISH_PURE_VIRGIN)
-		#THEN
-			There's absolutely no way that you're going to risk losing your precious virginity, and, disentangling yourself from Lyssieth's clutches, you say, [pc.speech(Let's do it without sex, ok? I'm saving myself for someone special...)]
+		#ТОГДА
+			Ты решительно не готов рисковать своей драгоценной девственностью, и, высвобождаясь из объятий Lyssieth, говоришь: [pc.speech(Давай без секса, ладно? Я берегу себя для кого-то особенного...)]
 		#ELSE
-			You really don't want to have sex with Lyssieth, and so, disentangling yourself from her clutches, you say, [pc.speech(Let's do it without sex, ok?)]
+			Тебе совсем не хочется заниматься сексом с Lyssieth, поэтому, высвобождаясь из её объятий, ты произносишь: [pc.speech(Давай без секса, ладно?)]
 		#ENDIF
 	</p>
 	<p>
-		[lyssieth.speech(Aww...)] Lyssieth whines, pouting at you as she steps over to sit down on the surface of her desk. [lyssieth.speech(I suppose that's fine. We don't have to have sex if you don't want to...)]
+		[lyssieth.speech(О-о-о...)] — капризно стонет Lyssieth, надув губы и подходя к столу, чтобы присесть на него. [lyssieth.speech(Ну, полагаю, так сойдет. Если не хочешь, то можем и без секса...)]
 	</p>
 	<p>
 		Doing as instructed, you sit down on one of the chairs before Lyssieth's desk, and, closing your eyes, you try to relax. As you let out a sigh of your own, you start to feel a strange warmth pulsating all around you. Before you can react to this feeling, a huge surge of energy jolts throughout your entire body, causing you to slip out of consciousness...
@@ -823,32 +817,30 @@
 	
 	<htmlContent tag="SEX_PUSSY"><![CDATA[
 	<p>
-		[pc.speech(I want your pussy,)] you say, not too fond of the idea of having Lyssieth grow a cock.
+		[pc.speech(Я хочу твою киску,)] — говоришь ты, не слишком жалуя идею того, что у Lyssieth вырастет член.
 	</p>
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.hasPenisIgnoreDildo() && pc.getRace()==RACE_HUMAN)
-			[lyssieth.speech(Mmm, just make sure to cum inside, dear,)] Lyssieth giggles, before stepping forwards and running her hands down over your body. [lyssieth.speech(My womb's made for human seed, and I can't wait for you to give me a nice big creampie!)]
+			[lyssieth.speech(Ммм, только не забудь кончить внутрь, дорогой,)] — хихикает Lyssieth, делая шаг вперед и проводя ладонями по твоему телу. [lyssieth.speech(Моя утроба создана для человеческого семени, и мне не терпится получить от тебя сочный, полный кремпай!)]
 		#ELSE
-			[lyssieth.speech(Mmm, yes, I prefer using my pussy as well,)] Lyssieth giggles, before stepping forwards and running her hands down over your body. [lyssieth.speech(Now, come on, fuck me!)]
+			[lyssieth.speech(Ммм, да, я тоже предпочитаю использовать свою киску,)] — хихикает Lyssieth, делая шаг вперед и проводя ладонями по твоему телу. [lyssieth.speech(А теперь давай, трахни меня!)]
 		#ENDIF
 	</p>
 	<p>
-		With that, Lyssieth leans forwards and plants a deep, passionate kiss on your [pc.lips+]. Reaching around to grip her [lyssieth.ass+], you eagerly return her kiss, and get ready to give her the fucking she desires...
+		После этих слов Lyssieth наклоняется вперед и дарит тебе глубокий, страстный поцелуй в [pc.lips+]. Обхватив её [lyssieth.ass+], ты с жадностью отвечаешь на поцелуй, готовясь подарить ей тот самый секс, которого она так жаждет...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="SEX_COCK"><![CDATA[
 	<p>
-		[pc.speech(I want your cock,)] you say, preferring to be on the receiving end.
+		[pc.speech(Я хочу твой член,)] — говоришь ты, предпочитая сам быть принимающей стороной.
 	</p>
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF(pc.hasVagina() && pc.getRace()==RACE_HUMAN)
-			[lyssieth.speech(Mmm, in which case, I must warn you that I prefer finishing inside, dear,)] Lyssieth giggles, before stepping forwards and running her hands down over your body. [lyssieth.speech(My seed is made for human wombs, and I can't wait to give you a nice big creampie!)]
+			[lyssieth.speech(Ммм, в таком случае, должна тебя предупредить: я предпочитаю кончать внутрь, дорогой,)] Lyssieth хихикает, прежде чем сделать шаг вперед и провести ладонями по твоему телу. [lyssieth.speech(Мое семя создано для человеческих утроб, и мне не терпится устроить тебе отличный, сочный залит!)]
 		#ELSE
-			[lyssieth.speech(Mmm, in which case, I must warn you that I prefer finishing inside, dear,)] Lyssieth giggles, before stepping forwards and running her hands down over your body. [lyssieth.speech(I just love the look of a nice big creampie!)]
+			[lyssieth.speech(Ммм, в таком случае, должна тебя предупредить: я предпочитаю кончать внутрь, дорогой,)] Lyssieth хихикает, прежде чем сделать шаг вперед и провести ладонями по твоему телу. [lyssieth.speech(Обожаю, когда внутри остается такой классный, толстый залит!)]
 		#ENDIF
 	</p>
 	<p>
@@ -859,13 +851,13 @@
 	
 	<htmlContent tag="POWER_VISION"><![CDATA[
 	<p>
-		[genericFemale.speech(Lyssieth, we have Valoel cornered in the throne room,)] your lilin sister, Orialyss, informs you. [genericFemale.speech(What shall we do with the humans?)]
+		[genericFemale.speech(Lyssieth, мы загнали Валоэля в угол в тронном зале,)] сообщает тебе твоя сестра-лилин, Orialyss. [genericFemale.speech(Что нам делать с людьми?)]
 	</p>
 	<p>
-		[lyssieth.speechNoEffects(Restrain them,)] you command, sweeping past the scarlet-skinned succubus as you set off down the palace's hallway. [lyssieth.speechNoEffects(Their treachery cannot go unpunished. I will see to them later.)]
+		[lyssieth.speechNoEffects(Свяжите их,)] командуешь ты, проносясь мимо алой суккубницы и направляясь по дворцовому коридору. [lyssieth.speechNoEffects(Их предательство не должно остаться безнаказанным. С ними я разберусь позже.)]
 	</p>
 	<p>
-		Orialyss falls in behind you, following in your footsteps as you make your way to where your other lilin subordinates have trapped your angelic foe. With Valoel soon to be captured, you'll finally be able to return to the comfort of your human harem, and, with that thought in mind, you can't help but grin as you step over the shattered remains of the throne room's doors and come face-to-face with the archangel himself.
+		Orialyss следует за тобой, повторяя твои шаги на пути туда, где остальные твои подчиненные-лилин загнали в ловушку твоего ангельского врага. Когда Валоэль будет схвачен, ты наконец сможешь вернуться к неге своего человеческого гарема, и от этой мысли ты невольно ухмыляешься, переступая через обломки дверей тронного зала и оказываясь лицом к лицу с самим архангелом.
 	</p>
 	<p>
 		Ты чувствуешь, как твое сердце замирает, когда замечаешь, что он выглядит почти как человек, и притом невероятно привлекательный. Светлокожий, с рыжими волосами и голубыми глазами, ангел с мужским, красивым лицом поворачивается то в одну, то в другую сторону, готовясь защищаться от атаки, которая может прийти с любого направления. Опустив взгляд вниз, ты замечаешь, что его туника наполовину разорвана, обнажая его рельефные мышцы и мускулистую грудь. Прижатые к стене за его спиной, это единственные видимые признаки его ангельской природы, принимающие форму пары огромных, белых крыльев. Они выглядят немного потрёпанными после его борьбы с твоими сестрами, и ты удивляешься, чувствуя укол сострадания, когда видишь страх в его глазах.
@@ -956,8 +948,6 @@
 		#А если хочешь, можешь заняться сексом... В следующий раз не будет обморока!
 		#ELSE or if you want to have some sex...
 		#ENDIF)]
-Контекст: XML res/txt/quests/main/lyssiethReveal.xml
-Текст:
 	</p>
 	<p>
 		[pc.speech(Хорошо, я обязательно вернусь,)] ты говоришь, направляясь к двери кабинета Лиссит.
@@ -1011,13 +1001,11 @@
 		[pc.speech(Ah, да, она действительно хочет стать полноценным демоном,)] ты вспоминаешь.
 	</p>
 	<p>
-		[lyssieth.speech(She doesn't understand. I don't want to corrupt her like that, and take away what humanity she has left,)] Lyssieth explains, [lyssieth.speech(But anyway, you seem to be fully recovered now, [pc.name]. I'm sorry for thrusting all this responsibility upon you, but you really are the only person who can stop Lilith from wiping out all of humanity. I need to return to fetch [siren.name] now, so if you could please excuse me. Oh, and please do come back at any time if you have more questions,
-		#IF pc.getSexCount(lyssieth)>0
+		[lyssieth.speech(Она не понимает. Я не хочу так осквернять её, отнимая последние остатки человечности,)] — объясняет Lyssieth, — [lyssieth.speech(Но в любом случае, кажется, ты уже полностью восстановился, [pc.name]. Прости, что взвалила на тебя всю эту ответственность, но ты действительно единственный, кто может помешать Lilith уничтожить всё человечество. Теперь мне нужно вернуться за [siren.name], так что, если позволишь, я пойду. О, и, пожалуйста, заходи в любое время, если возникнут вопросы,
+]		#IF pc.getSexCount(lyssieth)>0
 		#А если хочешь, можешь заняться сексом... В следующий раз не будет обморока!
 		#ELSE or if you want to have some sex...
 		#ENDIF)]
-Контекст: XML res/txt/quests/main/lyssiethReveal.xml
-Текст:
 	</p>
 	<p>
 		[pc.speech(Хорошо, я обязательно вернусь,)] ты говоришь, направляясь к двери кабинета Лиссит.
@@ -1033,50 +1021,48 @@
 	
 	<htmlContent tag="END_SIREN"><![CDATA[
 	<p>
-		Finally getting a moment to yourself, the revelation that this world is in fact your own has time to sink in. Although Lilaya has the same soul, and bears resemblance to your aunt in many ways, you realise that you're never going to see Lily again. Walking over to the nearest sofa, you collapse down onto it and rest your head in your hands.
+		Наконец-то выдалась минутка наедине с собой, и осознание того, что этот мир на самом деле твой собственный, начинает постепенно доходить до сознания. Хотя у Lilaya та же душа и во многих отношениях она напоминает твою тетю, ты понимаешь, что больше никогда не увидишь Lily. Подойдя к ближайшему дивану, ты тяжело опускаешься на него и обхватываешь голову руками.
 	</p>
 	<p>
-		You aren't sure for how long you sit there for, thinking about things, but before you know it, you hear the door to Lyssieth's office open, before the familiar voice of [siren.name] calls out, [siren.speech(Oh, [pc.name], you're still here? Hey, are you ok?)]
+		Ты не знаешь, сколько именно просидел так, погруженный в раздумья, но внезапно слышишь, как открывается дверь в кабинет Lyssieth, а затем раздается знакомый голос [siren.name]: [siren.speech(О, [pc.name], ты всё еще здесь? Эй, ты в порядке?)]
 	</p>
 	<p>
-		Sitting back upright, you reply, [pc.speech(Yeah, just a lot to think about, I suppose.)]
+		Выпрямившись, ты отвечаешь: [pc.speech(Да так, просто нужно всё обдумать.)]
 	</p>
 	<p>
-		Хотя тебе и больно от того, что ты не сможешь насладиться зрелищем одной из твоих потрясающих высших поз, ты быстро сообщаешь Мераксис, что нет времени на это.
 		#IF siren.getAffection(pc)<-25
 		#THEN
-			[siren.speech(You know, I still haven't forgiven you for abandoning me in my citadel like that,)] [siren.name] says, walking back over to her desk and sitting down in her chair, [siren.speech(And no matter what, you're still my arch nemesis! But... Thanks for helping mum like this... I guess you can't be too bad after all...)]
-		#ELSE
-			[siren.speech(You know, you're still my arch-nemesis,)] [siren.name] says, walking back over to her desk and sitting down in her chair, [siren.speech(And one day we shall duel to decide the fate of the universe! But... I just want to say... Thanks for helping mum like this...)]
+			[siren.speech(Знаешь, я до сих пор не простила тебе то, что ты так бросил меня в моей цитадели,)] — говорит [siren.name], возвращаясь к своему столу и усаживаясь в кресло, — [siren.speech(И что бы ни случилось, ты всё равно мой заклятый враг! Но... спасибо, что так помог маме... Наверное, ты не такой уж и плохой...)]
+			#ELSE
+			[siren.speech(Знаешь, ты всё ещё мой заклятый враг,)] [siren.name] говорит, возвращаясь к своему столу и усаживаясь в кресло, [siren.speech(И однажды мы сойдёмся в дуэли, чтобы решить судьбу вселенной! Но... я просто хочу сказать... спасибо, что так помог маме...)]
 		#ENDIF
-Контекст: XML res/txt/quests/main/lyssiethReveal.xml
-Текст:
 	</p>
 	<p>
-		[pc.speech(I just hope that I can get the help of Minotallys and your friend, [youkoGuide.name],)] you reply, turning your thoughts to Lunette and her herd of demonic centaurs. [pc.speech(You said she's probably in a tavern in Elis called 'The Red Dragon'?)]
+		[pc.speech(Я просто надеюсь, что смогу заручиться помощью Миноталлиса и твоей подруги, [youkoGuide.name],)] — отвечаешь ты, перенося мысли на Лунетт и её стадо демонических кентавров. [pc.speech(Ты сказала, что она, скорее всего, в таверне в Элисе под названием «Красный дракон»?)]
 	</p>
 	<p>
-		[siren.speech(Yeah, that's right. Oh, and mum said to give you this map. It's got Elis marked on it, so you won't lose your way,)] [siren.name] says, placing a folded paper map on the desk in front of her. 
+		[siren.speech(Да, всё верно. О, и мама просила передать тебе эту карту. На ней отмечен Элис, чтобы ты не сбился с пути,)] — говорит [siren.name], кладя сложенную бумажную карту на стол перед собой. 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="END_FINAL"><![CDATA[
 	<p>
-		Standing up from the sofa, you step over to [siren.namePos] desk and take the offered map. Looking down at the parchment in your [pc.hands], you see that it depicts a large area, with each of the square edges of the map measuring
+		Встав с дивана, ты подходишь к столу [siren.namePos] и берешь предложенную карту. Глядя на пергамент в своих [pc.hands], ты видишь, что на нём изображена обширная территория, где каждая сторона квадрата карты составляет
 		#IF(game.isMetricSizes())
-			 150 kilometres
+			 150 километров
 		#ELSE
-			 just over 90 miles
+			 чуть более 90 миль
 		#ENDIF
-		 in length. There looks to be a large amount of farmland surrounding the capital, which is bordered by an expanse of wild grassland and forests. To the north, there's a huge expanse of what's marked as jungle, while to the south, the farmland transitions first into a wide savannah, and then into a desert.
+		 в длину. Похоже, столицу окружает огромное количество сельскохозяйственных угодий, граничащих с бескрайними дикими лугами и лесами. На севере простираются огромные просторы, отмеченные как джунгли, а на юге пашни сменяются сначала широкой саванной, а затем пустыней.
 	</p>
 	<p>
-		[siren.speech(Elis is here,)] [siren.name] says, pointing to a mark west of Dominion. You look across to see that the town is just a few #IF(game.isMetricSizes())kilometres#ELSEmiles#ENDIF to the east of the area marked as the 'Shinrin highlands', and that it looks to be roughly
+		[siren.speech(Элис здесь,)] — говорит [siren.name], указывая на отметку к западу от Dominion. Ты смотришь вдаль и видишь, что город находится всего в
+ #IF(game.isMetricSizes())kilometres#ELSEmiles#ENDIF to the east of the area marked as the 'Shinrin highlands', and that it looks to be roughly
 		#IF(game.isMetricSizes())
-			 35 kilometres
+			 35 километрах
 		#ELSE
-			 20 miles
+			 20 милях
 		#ENDIF
 		 от самого Dominion.
 	</p>

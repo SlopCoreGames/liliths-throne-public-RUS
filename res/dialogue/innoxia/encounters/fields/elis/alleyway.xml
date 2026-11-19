@@ -56,7 +56,7 @@
 				[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/encounters/fields/elis/alleyway', 'START'))]
 			#ENDIF
 		]]></preParsingEffects>
-		<title><![CDATA[Assaulted!]]></title>
+		<title><![CDATA[Нападение!]]></title>
 		<author><![CDATA[Innoxia]]></author>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -77,20 +77,19 @@
 					]]></index>
 					<responseTitle><![CDATA[
 						#IF(npc.getPlayerSurrenderCount()>=4)
-							Rebel
+							Мятежник
 						#ELSEIF(npc.getPlayerSurrenderCount()==3)
-							Refuse
+							Отказаться
 						#ELSE
-							Fight
+							Сражаться
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(npc.getPlayerSurrenderCount()>=4)
-							Refuse to play along as [npc.namePos] bitch any longer and prepare to fight for your freedom!
-						#ELSEIF(npc.getPlayerSurrenderCount()==3)
-							Refuse to become [npc.namePos] bitch and prepare to defend yourself!
+Хватит покорно играть роль [npc.namePos] сучки — готовься сражаться за свою свободу!						#ELSEIF(npc.getPlayerSurrenderCount()==3)
+							Отказаться становиться [npc.namePos] сучкой и приготовиться к самообороне!
 						#ELSE
-							Refuse to pay [npc.name] and prepare to defend yourself!
+							Отказаться платить [npc.name] и приготовиться к самообороне!
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue/>
@@ -132,12 +131,12 @@
 					<availabilityConditional><![CDATA[[#npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Offer money (#IF(pc.getMoney()>=flags.getMuggerDemand3())[style.moneyFormat([#flags.getMuggerDemand3()], span)]#ELSE[style.moneyFormatUncoloured([#flags.getMuggerDemand3()], span)]#ENDIF)]]></responseTitle>
+					<responseTitle><![CDATA[Предложить деньги (#IF(pc.getMoney()>=flags.getMuggerDemand3())[style.moneyFormat([#flags.getMuggerDemand3()], span)]#ELSE[style.moneyFormatUncoloured([#flags.getMuggerDemand3()], span)]#ENDIF)]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(pc.getMoney()>=flags.getMuggerDemand3())
-							Offer to pay [npc.name] [style.intToString([#flags.getMuggerDemand3()])] flames to leave you alone.
+							Предложить заплатить [npc.name] [style.intToString([#flags.getMuggerDemand3()])] огней, чтобы тебя оставили в покое.
 						#ELSE
-							You don't have enough money to offer to pay [npc.name] off. You'll have to either fight [npc.herHim] or offer [npc.herHim] your body!
+							У тебя недостаточно денег, чтобы откупиться от [npc.name]. Тебе придется либо сразиться с [npc.herHim], либо предложить [npc.herHim] свое тело!
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[#IF(pc.getMoney()>=flags.getMuggerDemand3())innoxia_encounters_fields_elis_alleyway_payment#ELSEnull#ENDIF]]></nextDialogue>
@@ -153,18 +152,18 @@
 					<availabilityConditional><![CDATA[[#npc.isAffectionAggressionTrigger(pc) && !npc.isAttractedTo(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Offer body]]></responseTitle>
-					<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you. You'll either have to hand over your money, or prepare for a fight!]]></responseTooltip>
+					<responseTitle><![CDATA[Предложить свое тело]]></responseTitle>
+					<responseTooltip><![CDATA[Сразу видно, что [npc.name] совсем не интересует секс с тобой. Тебе придется либо отдать свои деньги, либо приготовиться к драке!]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
 				<response>
 					<availabilityConditional><![CDATA[[#npc.isAffectionAggressionTrigger(pc) && npc.isAttractedTo(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Offer body]]></responseTitle>
+					<responseTitle><![CDATA[Предложить свое тело]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you can't afford to pay, and instead offer them the use of your body...
-						<br/>[style.italicsSex(Repeatedly submitting to [npc.name] will eventually lead to [npc.herHim] demanding that you become [npc.her] bitch...)]
+						Сказать [npc.name], что денег нет, и вместо этого предложить свое тело...
+						<br/>[style.italicsSex(Постоянная покорность перед [npc.name] в итоге приведет к тому, что [npc.herHim] потребует, чтобы ты стала [npc.her] сучкой...)]
 					]]></responseTooltip>
 					<requiredFetishes>
 						<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
@@ -198,11 +197,11 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
 					<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-					<responseTitle><![CDATA[Surrender]]></responseTitle>
+					<responseTitle><![CDATA[Сдаться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Completely surrender to [npc.name] and let [npc.herHim] do whatever [npc.she] wants with your body...
-						<br/>[style.italicsTfGeneric(This will result in [npc.name] trying to get you to drink a transformation potion, before possibly choosing to fuck you!)]
-						<br/>[style.italicsSex(Repeatedly submitting to [npc.name] will eventually lead to [npc.herHim] demanding that you become [npc.her] bitch...)]
+						Полностью сдаться на милость [npc.name] и позволить [npc.herHim] делать с твоим телом всё, что захочет [npc.she]...
+						<br/>[style.italicsTfGeneric(Это приведет к тому, что [npc.name] попытается заставить тебя выпить зелье трансформации, прежде чем, возможно, решит трахнуть тебя!)]
+						<br/>[style.italicsSex(Постоянная покорность перед [npc.name] в итоге приведет к тому, что [npc.herHim] потребует, чтобы ты стала [npc.her] сучкой...)]
 					]]></responseTooltip>
 					<requiredFetishes>
 						<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
@@ -229,13 +228,13 @@
 						<fetish><![CDATA[FETISH_FOOT_RECEIVING]]></fetish>
 					</requiredFetishes>
 					<corruptionLevel><![CDATA[FIVE_CORRUPT]]></corruptionLevel>
-					<responseTitle><![CDATA[Kiss [npc.feet]]]></responseTitle>
+					<responseTitle><![CDATA[Поцеловать [npc.feet]]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Show [npc.name] that you're [npc.her] bitch by doing as [npc.she] commands and bending down to submissively kiss [npc.her] [npc.feet].
+						Показать [npc.name], что ты — [npc.her] сучка, беспрекословно выполняя приказы [npc.she] и покорно склоняясь, чтобы поцеловать [npc.her] в [npc.feet].
 						#IF(npc.isApplyingPostCombatTransformations())
-							<br/>[style.italicsTfGeneric(This will result in [npc.name] trying to get you to drink a transformation potion, before possibly choosing to fuck you!)]
+						<br/>[style.italicsTfGeneric(Это приведет к тому, что [npc.name] попытается напоить тебя зельем трансформации, прежде чем, возможно, решит трахнуть тебя!)]
 						#ENDIF
-						<br/>[style.italicsSex(Becoming [npc.namePos] bitch will change your available options when encountering [npc.herHim] again in the future.)]
+						<br/>[style.italicsSex(Статус [npc.namePos] сучки изменит доступные тебе варианты при следующей встрече с [npc.herHim].)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -253,13 +252,13 @@
 						<fetish><![CDATA[FETISH_MASOCHIST]]></fetish>
 					</requiredFetishes>
 					<corruptionLevel><![CDATA[FIVE_CORRUPT]]></corruptionLevel>
-					<responseTitle><![CDATA[Get spanked]]></responseTitle>
+					<responseTitle><![CDATA[Получить порку]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Show [npc.name] that you're [npc.her] bitch by doing as [npc.she] commands and presenting [npc.herHim] with your ass so that [npc.she] can give you a rough spanking.
+						Покажи [npc.name], что ты [npc.her] сучка, выполняя приказы [npc.she] и подставляя [npc.herHim] свою задницу, чтобы [npc.she] могла хорошенько тебя отшлепать.
 						#IF(npc.isApplyingPostCombatTransformations())
-							<br/>[style.italicsTfGeneric(This will result in [npc.name] trying to get you to drink a transformation potion, before possibly choosing to fuck you!)]
+						<br/>[style.italicsTfGeneric(Это приведет к тому, что [npc.name] попытается напоить тебя зельем трансформации, прежде чем, возможно, решит трахнуть тебя!)]
 						#ENDIF
-						<br/>[style.italicsSex(Becoming [npc.namePos] bitch will change your available options when encountering [npc.herHim] again in the future.)]
+						<br/>[style.italicsSex(Статус [npc.namePos] сучки изменит доступные тебе варианты при следующей встрече с [npc.herHim].)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -278,13 +277,13 @@
 						<fetish><![CDATA[FETISH_MASOCHIST]]></fetish>
 					</requiredFetishes>
 					<corruptionLevel><![CDATA[FIVE_CORRUPT]]></corruptionLevel>
-					<responseTitle><![CDATA[Bow down]]></responseTitle>
+					<responseTitle><![CDATA[Склониться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Show [npc.name] that you're [npc.her] bitch by doing as [npc.she] commands and bowing down to [npc.herHim].
+						Покажи [npc.name], что ты [npc.her] сучка, выполняя приказы [npc.she] и склоняясь перед [npc.herHim].
 						#IF(npc.isApplyingPostCombatTransformations())
-							<br/>[style.italicsTfGeneric(This will result in [npc.name] trying to get you to drink a transformation potion, before possibly choosing to fuck you!)]
+						<br/>[style.italicsTfGeneric(Это приведет к тому, что [npc.name] попытается напоить тебя зельем трансформации, прежде чем, возможно, решит трахнуть тебя!)]
 						#ENDIF
-						<br/>[style.italicsSex(Becoming [npc.namePos] bitch will change your available options when encountering [npc.herHim] again in the future.)]
+						<br/>[style.italicsSex(Статус [npc.namePos] сучки изменит доступные тебе варианты при следующей встрече с [npc.herHim].)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -299,9 +298,9 @@
 						<availabilityConditional><![CDATA[[#npc.getPlayerSurrenderCount()>=4 && npc.isApplyingPostCombatTransformations()]]]></availabilityConditional>
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[1]]></index>
-						<responseTitle><![CDATA[Swallow]]></responseTitle>
+						<responseTitle><![CDATA[Проглотить]]></responseTitle>
 						<responseTooltip><![CDATA[
-							Do as [npc.name] says and swallow the transformative fluid!
+						Сделай то, что велит [npc.name], и проглоти эту трансформирующую жидкость!
 						]]></responseTooltip>
 						<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_transformation]]></nextDialogue>
 						<effects><![CDATA[
@@ -316,7 +315,7 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[1]]></index>
 						<responseTitle><![CDATA[Pay up ([style.moneyFormat([#flags.getMuggerDemand3()], span)])]]></responseTitle>
-						<responseTooltip><![CDATA[Do as [npc.name] commands and give [npc.herHim] [style.intToString([#flags.getMuggerDemand3()])] flames.]]></responseTooltip>
+						<responseTooltip><![CDATA[Делай так, как велит [npc.name], и отдай [npc.herHim] [style.intToString([#flags.getMuggerDemand3()])] огней.]]></responseTooltip>
 						<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_repeat_pay_up]]></nextDialogue>
 						<effects><![CDATA[
 							[#npc.applyPlayerPregnancyReactions()]
@@ -328,7 +327,7 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[1]]></index>
 						<responseTitle><![CDATA[Pay up ([style.moneyFormatUncoloured([#flags.getMuggerDemand3()], span)])]]></responseTitle>
-						<responseTooltip><![CDATA[[npc.Name] isn't demanding money from you this time...]]></responseTooltip>
+						<responseTooltip><![CDATA[[npc.Name] на этот раз не требует от тебя денег...]]></responseTooltip>
 						<nextDialogue><![CDATA[null]]></nextDialogue>
 						<effects/>
 					</response>
@@ -338,8 +337,8 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[2]]></index>
 						<colour><![CDATA[GENERIC_COMBAT]]></colour>
-						<responseTitle><![CDATA[Partner in crime]]></responseTitle>
-						<responseTooltip><![CDATA[Obediently follow [npc.name] and assist [npc.herHim] in mugging the first innocent traveller you find.]]></responseTooltip>
+						<responseTitle><![CDATA[Соучастница]]></responseTitle>
+						<responseTooltip><![CDATA[Покорно следуй за [npc.name] и помогай [npc.herHim] ограбить первого же встречного путника.]]></responseTooltip>
 						<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_repeat_mugging]]></nextDialogue>
 						<effects><![CDATA[
 							[#npc.applyPlayerPregnancyReactions()]
@@ -352,8 +351,8 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[3]]></index>
 						<colour><![CDATA[GENERIC_SEX]]></colour>
-						<responseTitle><![CDATA[Pimped out]]></responseTitle>
-						<responseTooltip><![CDATA[Submissively follow [npc.name] and allow [npc.herHim] to pimp you out to a 'friend' of [npc.hers].]]></responseTooltip>
+						<responseTitle><![CDATA[Проститутка]]></responseTitle>
+						<responseTooltip><![CDATA[Покорно следуй за [npc.name] и позволь [npc.herHim] сдать тебя в бордель «другу» [npc.hers].]]></responseTooltip>
 						<requiredFetishes>
 							<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 						</requiredFetishes>
@@ -369,8 +368,8 @@
 						<availabilityConditional><![CDATA[[#npc.getPlayerSurrenderCount()>=4 && !npc.isApplyingPostCombatTransformations() && flags.getSavedLong('randomResponseIndex')==4]]]></availabilityConditional>
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[1]]></index>
-						<responseTitle><![CDATA[Fucked]]></responseTitle>
-						<responseTooltip><![CDATA[Be a good bitch and let [npc.name] dominantly fuck you in whatever way [npc.she] desires.]]></responseTooltip>
+						<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+						<responseTooltip><![CDATA[Будь послушной сучкой и позволь [npc.name] доминирующе трахать тебя так, как пожелает [npc.she].]]></responseTooltip>
 						<requiredFetishes>
 							<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 						</requiredFetishes>
@@ -402,8 +401,8 @@
 						<availabilityConditional><![CDATA[[#npc.getPlayerSurrenderCount()>=4 && !npc.isApplyingPostCombatTransformations() && flags.getSavedLong('randomResponseIndex')==5]]]></availabilityConditional>
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[1]]></index>
-						<responseTitle><![CDATA[Walkies]]></responseTitle>
-						<responseTooltip><![CDATA[Crawl alongside [npc.name] as [npc.she] travels to a nearby shop to buy some food.]]></responseTooltip>
+						<responseTitle><![CDATA[Прогулка]]></responseTitle>
+						<responseTooltip><![CDATA[Ползи рядом с [npc.name], пока [npc.she] идет в ближайшую лавку за едой.]]></responseTooltip>
 						<requiredFetishes>
 							<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 						</requiredFetishes>
@@ -420,10 +419,11 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[1]]></index>
 						<colour><![CDATA[GENERIC_SEX]]></colour>
-						<responseTitle><![CDATA[Tattooed]]></responseTitle>
+						<responseTitle><![CDATA[Татуированная]]></responseTitle>
 						<responseTooltip><![CDATA[
-							Follow [npc.name] to find [npc.her] friend, who's going to tattoo you with a declaration of ownership.
-							<br/>[style.italicsSex(After being tattooed, you're going to be fucked by [npc.namePos] friend!)]
+						
+Следуй за [npc.name], чтобы найти друга [npc.her], который набьет тебе татуировку — клеймо собственности.
+							<br/>[style.italicsSex(После татуировки тебя будет трахать друг [npc.namePos]!)]
 						]]></responseTooltip>
 						<requiredFetishes>
 							<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
@@ -442,9 +442,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Talk]]></responseTitle>
+					<responseTitle><![CDATA[Поговорить]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Talk to [npc.name] for a while in order to get to know [npc.herHim] a little better.
+						Поговори с [npc.name] какое-то время, чтобы получше узнать [npc.herHim].
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_peaceful_talk]]></nextDialogue>
 					<effects><![CDATA[
@@ -460,9 +460,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Offer money (#IF(pc.getMoney()>=flags.getMuggerDemand3())[style.moneyFormat([#flags.getMuggerDemand3()], span)]#ELSE[style.moneyFormatUncoloured([#flags.getMuggerDemand3()], span)]#ENDIF)]]></responseTitle>
+					<responseTitle><![CDATA[Предложить деньги (#IF(pc.getMoney()>=flags.getMuggerDemand3())[style.moneyFormat([#flags.getMuggerDemand3()], span)]#ELSE[style.moneyFormatUncoloured([#flags.getMuggerDemand3()], span)]#ENDIF)]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Offer [npc.name] some money to help [npc.herHim] buy food and clothing.
+						Дай [npc.name] немного денег, чтобы помочь [npc.herHim] купить еду и одежду.
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[#IF(pc.getMoney()>=flags.getMuggerDemand3())innoxia_encounters_fields_elis_alleyway_peaceful_offer_money#ELSEnull#ENDIF]]></nextDialogue>
 					<effects><![CDATA[
@@ -480,8 +480,8 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && !npc.isAttractedTo(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Sex (dom)]]></responseTitle>
-					<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you...]]></responseTooltip>
+					<responseTitle><![CDATA[Секс (доминант)]]></responseTitle>
+					<responseTooltip><![CDATA[Ты чувствуешь, что [npc.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
 				<response>
@@ -489,10 +489,10 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
 					<responseTitle><![CDATA[
-						Sex (dom)
+						Секс (доминант)
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Take the dominant role and have sex with [npc.name].
+						Возьми на себя ведущую роль и трахни [npc.name].
 					]]></responseTooltip>
 					<nextDialogue/>
 					<requiredFetishes>
@@ -521,8 +521,8 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && !npc.isAttractedTo(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Sex (sub)]]></responseTitle>
-					<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you...]]></responseTooltip>
+					<responseTitle><![CDATA[Секс (сабмиссив)]]></responseTitle>
+					<responseTooltip><![CDATA[Ты чувствуешь, что [npc.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
 				<response>
@@ -530,10 +530,10 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
 					<responseTitle><![CDATA[
-						Sex (sub)
+						Секс (сабмиссив)
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Take the submissive role and have sex with [npc.name].
+						Займи подчиненную роль и дай [npc.name] трахнуть себя.
 					]]></responseTooltip>
 					<nextDialogue/>
 					<requiredFetishes>
@@ -562,10 +562,10 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3 && (!pc.hasQuest(QUEST_LINE_SIDE_ACCOMMODATION) || !npc.isAffectionHighEnoughToInviteHome())]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Offer room]]></responseTitle>
+					<responseTitle><![CDATA[Предложить комнату]]></responseTitle>
 					<responseTooltip><![CDATA[
-						You feel as though it would be best to spend some more time getting to know [npc.name] before inviting [npc.herHim] back to Lilaya's mansion...
-						<br/>[style.italics(Requires [npc.name] to have at least [#AFFECTION_POSITIVE_THREE_CARING.getMinimumValue()] affection towards you.)]
+						Тебе кажется, что было бы лучше получше узнать [npc.name], прежде чем приглашать [npc.herHim] назад в особняк Lilaya...
+						<br/>[style.italics(Требуется, чтобы [npc.name] имела к тебе как минимум [#AFFECTION_POSITIVE_THREE_CARING.getMinimumValue()] привязанности.)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
@@ -573,9 +573,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3 && pc.hasQuest(QUEST_LINE_SIDE_ACCOMMODATION) && npc.isAffectionHighEnoughToInviteHome() && !pc.isQuestCompleted(QUEST_LINE_SIDE_ACCOMMODATION)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Offer room]]></responseTitle>
+					<responseTitle><![CDATA[Предложить комнату]]></responseTitle>
 					<responseTooltip><![CDATA[
-						You'll need to get Lilaya's permission before inviting [npc.name] back to her mansion...
+						Тебе нужно получить разрешение Lilaya, прежде чем приглашать [npc.name] в её особняк...
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
@@ -583,9 +583,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3 && pc.hasQuest(QUEST_LINE_SIDE_ACCOMMODATION) && npc.isAffectionHighEnoughToInviteHome() && pc.isQuestCompleted(QUEST_LINE_SIDE_ACCOMMODATION) && !game.isFreeRoomAvailableForOccupant()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Offer room]]></responseTitle>
+					<responseTitle><![CDATA[Предложить комнату]]></responseTitle>
 					<responseTooltip><![CDATA[
-						You don't have a suitable room prepared for [npc.name] to move in to. Upgrade one of the empty rooms in Lilaya's house to a 'Guest Room' first.
+						У тебя нет подходящей комнаты, чтобы [npc.name] могла въехать. Сначала улучши одну из пустых комнат в доме Lilaya до «Гостевой комнаты».
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
@@ -593,9 +593,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3 && pc.hasQuest(QUEST_LINE_SIDE_ACCOMMODATION) && npc.isAffectionHighEnoughToInviteHome() && pc.isQuestCompleted(QUEST_LINE_SIDE_ACCOMMODATION) && game.isFreeRoomAvailableForOccupant()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Offer room]]></responseTitle>
+					<responseTitle><![CDATA[Предложить комнату]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Ask [npc.name] if [npc.she] would like a room in Lilaya's mansion.
+						Спросить у [npc.name], не хочет ли [npc.she] комнату в особняке Lilaya.
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_peaceful_offer_room]]></nextDialogue>
 					<effects><![CDATA[
@@ -608,9 +608,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3 && npc.isApplyingPostCombatTransformations() && flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[6]]></index>
-					<responseTitle><![CDATA[Get transformed]]></responseTitle>
+					<responseTitle><![CDATA[Трансформироваться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						[npc.Name] has already given you all the transformation potions [npc.she] had!
+						[npc.Name] уже отдала тебе все зелья трансформации, что были у [npc.she]!
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<effects/>
@@ -620,10 +620,10 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[6]]></index>
 					<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-					<responseTitle><![CDATA[Get transformed]]></responseTitle>
+					<responseTitle><![CDATA[Трансформироваться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you'd like to drink any transformation potions which [npc.she] has...
-						<br/>[style.italicsTfGeneric(This will result in [npc.name] getting you to drink a transformation potion!)]
+						Скажи [npc.name], что хочешь выпить любые зелья трансформации, которые есть у [npc.she]...
+						<br/>[style.italicsTfGeneric(В результате [npc.name] заставит тебя выпить зелье трансформации!)]
 					]]></responseTooltip>
 					<requiredFetishes>
 						<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
@@ -643,8 +643,8 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[10]]></index>
 					<colour><![CDATA[GENERIC_COMBAT]]></colour>
-					<responseTitle><![CDATA[Attack]]></responseTitle>
-					<responseTooltip><![CDATA[Betray [npc.namePos] trust and attack [npc.herHim]!]]></responseTooltip>
+					<responseTitle><![CDATA[Атаковать]]></responseTitle>
+					<responseTooltip><![CDATA[Предать доверие [npc.namePos] и напасть на [npc.herHim]!]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_peaceful_attack]]></nextDialogue>
 					<effects><![CDATA[
 						[#npc.applyPlayerPregnancyReactions()]
@@ -657,9 +657,9 @@
 					<availabilityConditional><![CDATA[[#!npc.isAffectionAggressionTrigger(pc) && npc.getPlayerSurrenderCount()<3]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[0]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you're in a rush to be somewhere else, before continuing on your way.
+						Скажи [npc.name], что тебе нужно спешить по делам, прежде чем отправиться дальше своим путем.
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[default]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -679,7 +679,7 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					Satisfied with the payment you've given [npc.herHim], [npc.name] takes [npc.her] leave, allowing you to continue on your way...
 				]]></responseTooltip>
@@ -693,7 +693,7 @@
 	<!-- After submitting for sex: -->
 	
 	<scene id="after_sex_sub">
-		<title><![CDATA[Finished]]></title>
+		<title><![CDATA[Завершено]]></title>
 		<tooltip><![CDATA[[npc.Name] has had [npc.her] fun with you, and with a satisfied sigh [npc.she] [npc.steps] back and brings an end to the sex...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">AFTER_SEX_SUB</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -708,11 +708,11 @@
 						GENERIC_NPC_REMOVAL
 					#ENDIF
 				]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					As [npc.name] has left, there's nothing else for you to do except continue on your way...
+					Когда [npc.name] уходит, тебе остается только продолжать свой путь...
 					#IF(npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer))
-						<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]
+						<br/>[style.italicsBad([npc.Name] навсегда исчезнет из игры.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -748,11 +748,11 @@
 						GENERIC_NPC_REMOVAL
 					#ENDIF
 				]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Decide against doing anything further with [npc.name] and continue on your way...
+					Реши не продолжать ничего с [npc.name] и отправляйся дальше своим путем...
 					#IF(npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer))
-						<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]
+						<br/>[style.italicsBad([npc.Name] навсегда исчезнет из игры.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
@@ -770,8 +770,8 @@
 				<availabilityConditional><![CDATA[[#npc.isPostCombatNoSex()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you...]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Ты чувствуешь, что [npc.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -781,19 +781,19 @@
 				<responseTitle><![CDATA[
 					#IF(npc.isPostCombatWantsSex())
 						#IF(npc.isPostCombatRapePlay())
-							Rape-play
+						Рейп-плей
 						#ELSE
-							Sex
+							Секс
 						#ENDIF
 					#ELSE
-						Rape
+						Рейп
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(npc.isPostCombatWantsSex())
-						Take advantage of your victory to have dominant sex with [npc.name].
+						Воспользоваться победой, чтобы заняться с [npc.name] доминантным сексом.
 					#ELSE
-						Take advantage of your victory to rape [npc.name].
+						Воспользоваться победой, чтобы изнасиловать [npc.name].
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -819,8 +819,8 @@
 				<availabilityConditional><![CDATA[[#npc.isPostCombatNoSex()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Gentle sex]]></responseTitle>
-				<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you...]]></responseTooltip>
+				<responseTitle><![CDATA[Нежный секс]]></responseTitle>
+				<responseTooltip><![CDATA[Ты чувствуешь, что [npc.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -830,19 +830,19 @@
 				<responseTitle><![CDATA[
 					#IF(npc.isPostCombatWantsSex())
 						#IF(npc.isPostCombatRapePlay())
-							Rape-play (gentle)
+						Рейп-плей (нежный)
 						#ELSE
-							Gentle sex
+							Нежный секс
 						#ENDIF
 					#ELSE
-						Rape [npc.herHim] (gentle)
+						Изнасиловать [npc.herHim] (нежно)
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(npc.isPostCombatWantsSex())
-						Take advantage of your victory to have gentle, dominant sex with [npc.name].
+						Воспользоваться победой, чтобы заняться с [npc.name] нежным, но доминантным сексом.
 					#ELSE
-						Take advantage of your victory to rape [npc.name].
+						Воспользоваться победой, чтобы изнасиловать [npc.name].
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -870,8 +870,8 @@
 				<availabilityConditional><![CDATA[[#npc.isPostCombatNoSex()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Rough sex]]></responseTitle>
-				<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you...]]></responseTooltip>
+				<responseTitle><![CDATA[Грубый секс]]></responseTitle>
+				<responseTooltip><![CDATA[Ты чувствуешь, что [npc.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -881,19 +881,19 @@
 				<responseTitle><![CDATA[
 					#IF(npc.isPostCombatWantsSex())
 						#IF(npc.isPostCombatRapePlay())
-							Rape-play (rough)
+						Игры в изнасилование (грубые)
 						#ELSE
-							Rough sex
+							Грубый секс
 						#ENDIF
 					#ELSE
-						Rape [npc.herHim] (rough)
+						Изнасиловать [npc.herHim] (грубо)
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(npc.isPostCombatWantsSex())
-						Take advantage of your victory to have rough, dominant sex with [npc.name].
+						Воспользоваться победой, чтобы заняться с [npc.name] грубым, доминантным сексом.
 					#ELSE
-						Take advantage of your victory to roughly rape [npc.name].
+						Воспользоваться победой, чтобы грубо изнасиловать [npc.name].
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -922,16 +922,16 @@
 				<availabilityConditional><![CDATA[[#!npc.isAttractedTo(pc) || npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[You can tell that [npc.name] isn't at all interested in having sex with you...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Ты чувствуешь, что [npc.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#npc.isAttractedTo(pc) && !npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[Feeling bad for beating [npc.name], you decide to submit to [npc.herHim] and offer [npc.herHim] the use of your body...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Чувствуя вину за то, что побил(а) [npc.name], ты решаешь подчиниться [npc.herHim] и предлагаешь [npc.herHim] использовать свое тело...]]></responseTooltip>
 				<requiredFetishes>
 					<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 				</requiredFetishes>
@@ -959,8 +959,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Inventory]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда ты одолел(а) [npc.name], ничто не мешает тебе полакомиться одеждой и вещами [npc.her]...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(npc, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -971,12 +971,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Talk]]></responseTitle>
+				<responseTitle><![CDATA[Поговорить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer))
-						After betraying [npc.namePos] trust, [npc.she] will never want to talk to you again.
+						После предательства доверия [npc.namePos], [npc.she] больше никогда не захочет с тобой разговаривать.
 					#ELSE
-						Talk to [npc.name] and ask [npc.herHim] why [npc.she] attacked you.
+						Поговорить с [npc.name] и спросить [npc.herHim], почему [npc.she] напал(а) на тебя.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -997,8 +997,8 @@
 				<availabilityConditional><![CDATA[[#npc.isAbleToSelfTransform()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Transform [npc.herHim]]]></responseTitle>
-				<responseTooltip><![CDATA[Take a very detailed look at what [npc.name] can transform [npc.herself] into...]]></responseTooltip>
+				<responseTitle><![CDATA[Трансформировать [npc.herHim]]]></responseTitle>
+				<responseTooltip><![CDATA[Внимательно рассмотреть, в кого [npc.name] может превратить [npc.herself]...]]></responseTooltip>
 				<nextDialogue><![CDATA[BODY_CHANGING_CORE]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.initTransformationMenu(npc)]
@@ -1008,10 +1008,10 @@
 				<availabilityConditional><![CDATA[[#npc.isAbleToSelfTransform()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Quick transformations]]></responseTitle>
+				<responseTitle><![CDATA[Быстрые трансформации]]></responseTitle>
 				<responseTooltip><![CDATA[
-					As [npc.she] is able to transform [npc.herself], you have a few quick ideas in mind...
-					<br/><i>You'll return to these options once finished transforming [npc.herHim].</i>
+					Поскольку [npc.she] способен(на) трансформировать [npc.herself], у тебя в голове мелькают несколько быстрых идей...
+					<br/><i>Ты вернешься к этим вариантам, когда закончишь трансформацию [npc.herHim].</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[QUICK_TRANSFORMATIONS_START]]></nextDialogue>
 				<effects><![CDATA[
@@ -1025,10 +1025,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Remove character]]></responseTitle>
+				<responseTitle><![CDATA[Удалить персонажа]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Scare [npc.name] away.
-					<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]
+					Напугать [npc.name] так, чтобы он(а) сбежал(а).
+					<br/>[style.italicsBad([npc.Name] будет навсегда удален(а) из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
@@ -1042,14 +1042,14 @@
 				<availabilityConditional><![CDATA[[#oglix.isBeerBitchBarrelAvailable()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[11]]></index>
-				<responseTitle><![CDATA[Beer-bitch]]></responseTitle>
+				<responseTitle><![CDATA[Пивная сучка]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5, 14))
-						'The Crossed Blades' tavern is closed at this time of day, so you're currently unable to take [npc.name] there and offer [npc.herHim] to Oglix as a new beer-bitch...
-						<br/>[style.italicsMinorBad(The tavern is closed between the hours of [units.time(5)]-[units.time(14)])]
+						Таверна «Скрещенные клинки» в это время суток закрыта, поэтому ты пока не можешь привести [npc.name] туда и предложить [npc.herHim] Огликсу в качестве новой пивной сучки...
+						<br/>[style.italicsMinorBad(Таверна закрыта в период с [units.time(5)] по [units.time(14)])]
 					#ELSE
-						Take [npc.name] to 'The Crossed Blades' tavern and offer [npc.herHim] to Oglix as a new beer-bitch.
-						<br/>[style.italicsMinorBad([npc.Name] will be enslaved to Oglix and permanently locked into a barrel in her tavern.)]
+						Отвести [npc.name] в таверну «Скрещенные клинки» и отдать [npc.herHim] Огликс в качестве новой пивной сучки.
+						<br/>[style.italicsMinorBad([npc.Name] станет рабыней Огликс и будет навечно заперта в бочке в её таверне.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1068,8 +1068,8 @@
 	</scene>
 	
 	<scene id="after_sex_dom">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had enough fun with [npc.name]...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[С [npc.name] ты уже вдоволь повеселился...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">AFTER_SEX_DOM</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1083,11 +1083,11 @@
 						GENERIC_NPC_REMOVAL
 					#ENDIF
 				]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Now that you've had your fun, you decide to leave [npc.name] and continue on your way...
+					Насладившись весельем, ты решаешь оставить [npc.name] и отправиться дальше своим путем...
 					#IF(npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer))
-						<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]
+						<br/>[style.italicsBad([npc.Name] навсегда исчезнет из игры.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -1103,8 +1103,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Inventory]]></responseTitle>
-				<responseTooltip><![CDATA[As you've defeated [npc.name], there's nothing stopping you from helping yourself to [npc.her] clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь]]></responseTitle>
+				<responseTooltip><![CDATA[Раз ты одолел [npc.name], ничто не мешает тебе прибрать к рукам [npc.her] одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(npc, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -1117,10 +1117,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Remove character]]></responseTitle>
+				<responseTitle><![CDATA[Удалить персонажа]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Scare [npc.name] away.
-					<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]
+					Напугать [npc.name] так, чтобы он(а) сбежал(а).
+					<br/>[style.italicsBad([npc.Name] будет навсегда удален(а) из игры.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
@@ -1134,14 +1134,14 @@
 				<availabilityConditional><![CDATA[[#oglix.isBeerBitchBarrelAvailable()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[11]]></index>
-				<responseTitle><![CDATA[Beer-bitch]]></responseTitle>
+				<responseTitle><![CDATA[Пивная сучка]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5, 14))
-						'The Crossed Blades' tavern is closed at this time of day, so you're currently unable to take [npc.name] there and offer [npc.herHim] to Oglix as a new beer-bitch...
-						<br/>[style.italicsMinorBad(The tavern is closed between the hours of [units.time(5)]-[units.time(14)])]
+						Таверна «Скрещенные клинки» в это время суток закрыта, поэтому ты пока не можешь привести [npc.name] туда и предложить [npc.herHim] Огликсу в качестве новой пивной сучки...
+						<br/>[style.italicsMinorBad(Таверна закрыта в период с [units.time(5)] по [units.time(14)])]
 					#ELSE
-						Take [npc.name] to 'The Crossed Blades' tavern and offer [npc.herHim] to Oglix as a new beer-bitch.
-						<br/>[style.italicsMinorBad([npc.Name] will be enslaved to Oglix and permanently locked into a barrel in her tavern.)]
+						Отвести [npc.name] в таверну «Скрещенные клинки» и отдать [npc.herHim] Огликс в качестве новой пивной сучки.
+						<br/>[style.italicsMinorBad([npc.Name] станет рабыней Огликс и будет навечно заперта в бочке в её таверне.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1174,9 +1174,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Let [npc.name] go.
+					Отпустить [npc.name].
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<effects/>
@@ -1198,10 +1198,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Continue on your way.
-					<br/>[style.italicsBad([npc.Name] will be permanently removed from the game.)]
+					Идти дальше своим путем.
+					<br/>[style.italicsBad([npc.Name] навсегда исчезнет из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
@@ -1215,10 +1215,10 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) && npc.isApplyingPostCombatTransformations() && game.isSpittingDisabled()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Spit]]></responseTitle>
+					<responseTitle><![CDATA[Сплюнуть]]></responseTitle>
 					<responseTooltip><![CDATA[
-						You are being forced to drink down the potion!<br/>[style.italicsBad(Rejection of TF potions is disabled in the gameplay options!)]
-					]]></responseTooltip>
+					Тебя заставляют выпить зелье!<br/>[style.italicsBad(В настройках игры отключена возможность отказываться от TF-зелий!)]
+				]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<effects/>
 				</response>
@@ -1226,10 +1226,10 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) && npc.isApplyingPostCombatTransformations() && !game.isSpittingDisabled() && pc.hasFetish(FETISH_TRANSFORMATION_RECEIVING)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Spit]]></responseTitle>
+					<responseTitle><![CDATA[Сплюнуть]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Due to your [style.boldFetish([#FETISH_TRANSFORMATION_RECEIVING.getName(pc)])] fetish, you love being transformed so much that you can't bring yourself to spit out the transformative fluid!
-					]]></responseTooltip>
+					Из-за твоего фетиша [style.boldFetish([#FETISH_TRANSFORMATION_RECEIVING.getName(pc)])] тебе так нравится трансформация, что ты просто не можешь заставить себя выплюнуть преобразующую жидкость!
+				]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<effects/>
 				</response>
@@ -1237,10 +1237,10 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) && npc.isApplyingPostCombatTransformations() && !game.isSpittingDisabled()  && !pc.hasFetish(FETISH_TRANSFORMATION_RECEIVING)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Spit]]></responseTitle>
+					<responseTitle><![CDATA[Сплюнуть]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Spit out the transformative fluid!
-					]]></responseTooltip>
+					Выплюнуть преобразующую жидкость!
+				]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_after_combat_transformations]]></nextDialogue>
 					<effects><![CDATA[
 						[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/encounters/fields/elis/alleyway', 'COMBAT_LOST_SPIT'))]
@@ -1252,9 +1252,9 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) && npc.isApplyingPostCombatTransformations()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Swallow]]></responseTitle>
+					<responseTitle><![CDATA[Проглотить]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Do as [npc.name] says and swallow the transformative fluid!
+						Сделай так, как говорит [npc.name], и проглоти трансформирующую жидкость!
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_after_combat_transformations]]></nextDialogue>
 					<effects><![CDATA[
@@ -1271,8 +1271,8 @@
 					<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) || !npc.isApplyingPostCombatTransformations()) && !npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer) && npc.isAttractedTo(pc) && npc.isWillingToRape()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Fucked]]></responseTitle>
-					<responseTooltip><![CDATA[You're unable to stop [npc.name] from dominantly fucking you...]]></responseTooltip>
+					<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+					<responseTooltip><![CDATA[Ты не в силах помешать [npc.name] властно трахать тебя...]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
 					<sexVariables enabled="true">
@@ -1297,12 +1297,12 @@
 					<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) || !npc.isApplyingPostCombatTransformations()) && !npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer) && (!npc.isWillingToRape() || (npc.isWillingToRape() && !npc.isAttractedTo(pc)))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(npc.isAttractedTo(pc))
-							Refuse to submit to [npc.name] and wait for [npc.herHim] to leave before continuing on your way...
+							Упрямо не подчиняться [npc.name] и ждать, пока [npc.herHim] уйдет, прежде чем продолжить путь...
 						#ELSE
-							Wait for [npc.name] to leave before continuing on your way...
+							Дождаться, пока [npc.name] уйдет, прежде чем продолжить путь...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
@@ -1315,9 +1315,9 @@
 					<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) || !npc.isApplyingPostCombatTransformations()) && !npc.hasFlag(NPC_FLAG_genericNPCBetrayedByPlayer) && npc.isAttractedTo(pc) && !npc.isWillingToRape()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Submit]]></responseTitle>
+					<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Do as [npc.name] says and submit to [npc.herHim], allowing [npc.herHim] to dominantly fuck you...
+						Сделай так, как говорит [npc.name], и подчинись [npc.herHim], позволяя [npc.herHim] властно трахать тебя...
 					]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
@@ -1369,9 +1369,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Say goodbye to [npc.name] and continue on your way.
+					Попрощаться с [npc.name] и продолжить свой путь.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1397,9 +1397,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Say goodbye to [npc.name] and continue on your way.
+					Попрощаться с [npc.name] и продолжить свой путь.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1416,8 +1416,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Give directions]]></responseTitle>
-				<responseTooltip><![CDATA[Give [npc.name] instructions to find Meraxis in 'The Red Dragon' tavern, and to have her teleport [npc.herHim] to [npc.her] new room in Lilaya's mansion.]]></responseTooltip>
+				<responseTitle><![CDATA[Дать указания]]></responseTitle>
+				<responseTooltip><![CDATA[Дать [npc.name] инструкции, как найти Мераксиса в таверне «Красный дракон», и велеть ей телепортировать [npc.herHim] в [npc.her] новую комнату в особняке Lilaya.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_peaceful_offer_room_directions]]></nextDialogue>
 				<effects><![CDATA[
 					[#npc.setLocation(game.getFreeRoomForOccupant(), true)]
@@ -1428,8 +1428,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Accompany [npc.herHim]]]></responseTitle>
-				<responseTooltip><![CDATA[Accompany [npc.name] through the Foloi Fields all the way back to Dominion and then to Lilaya's mansion.]]></responseTooltip>
+				<responseTitle><![CDATA[Сопроводить [npc.herHim]]]></responseTitle>
+				<responseTooltip><![CDATA[Сопроводить [npc.name] через Поля Фолой обратно в Dominion, а затем к особняку Lilaya.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_peaceful_offer_room_accompany]]></nextDialogue>
 				<effects><![CDATA[
 					[#npc.setLocation(game.getFreeRoomForOccupant(), true)]
@@ -1450,9 +1450,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Now that [npc.name] has been sent back to Lilaya's mansion, you're free to continue on your way.
+					Теперь, когда [npc.name] отправили обратно в особняк Lilaya, ты можешь спокойно продолжить свой путь.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1469,9 +1469,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Let [npc.name] get settled in.
+					Дать [npc.name] обустроиться.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1496,8 +1496,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
-				<responseTooltip><![CDATA[Start fighting [npc.name]!]]></responseTooltip>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
+				<responseTooltip><![CDATA[Начать бой с [npc.name]!]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1518,8 +1518,8 @@
 	</scene>
 	
 	<scene id="after_sex_peaceful">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You and [npc.name] have had enough sex for now...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Ты и [npc.name] на сегодня наедились секса...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">AFTER_SEX_PEACEFUL</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1528,9 +1528,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Now that you've had your fun with [npc.name], it's time to continue on your way.
+					Теперь, когда ты вдоволь развлекся с [npc.name], пора двигаться дальше.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1579,10 +1579,11 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) && npc.isApplyingPostCombatTransformations()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Spit]]></responseTitle>
+					<responseTitle><![CDATA[Сплюнуть]]></responseTitle>
 					<responseTooltip><![CDATA[
-						As you've only just accepted being [npc.namePos] bitch, you can't bring yourself to disobey [npc.her] order to drink the potion!
-					]]></responseTooltip>
+						
+Поскольку ты только что согласилась стать сучкой [npc.namePos], ты не можешь заставить себя ослушаться приказа [npc.her] и выпить зелье!
+						]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<effects/>
 				</response>
@@ -1591,9 +1592,9 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) && npc.isApplyingPostCombatTransformations()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Swallow]]></responseTitle>
+					<responseTitle><![CDATA[Проглотить]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Do as [npc.name] says and swallow the transformative fluid!
+						Сделай так, как говорит [npc.name], и проглоти трансформирующую жидкость!
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_transformation]]></nextDialogue>
 					<effects><![CDATA[
@@ -1609,8 +1610,8 @@
 					<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) || !npc.isApplyingPostCombatTransformations()) && npc.isAttractedTo(pc) && npc.isWillingToRape()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Fucked]]></responseTitle>
-					<responseTooltip><![CDATA[You're unable to stop [npc.name] from dominantly fucking you...]]></responseTooltip>
+					<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+					<responseTooltip><![CDATA[Ты не в силах помешать [npc.name] властно трахать тебя...]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
 					<sexVariables enabled="true">
@@ -1635,12 +1636,12 @@
 					<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) || !npc.isApplyingPostCombatTransformations()) && (!npc.isWillingToRape() || !npc.isAttractedTo(pc))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(npc.isAttractedTo(pc))
-							Refuse to let [npc.name] fuck you and wait for [npc.herHim] to leave before continuing on your way...
+							Отказаться позволить [npc.name] трахать тебя и дождаться, пока [npc.herHim] уйдет, прежде чем продолжить путь...
 						#ELSE
-							Wait for [npc.name] to leave before continuing on your way...
+							Дождаться, пока [npc.name] уйдет, прежде чем продолжить путь...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
@@ -1653,9 +1654,9 @@
 					<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_alleyway_transformations_applied) || !npc.isApplyingPostCombatTransformations()) && npc.isAttractedTo(pc) && !npc.isWillingToRape()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Submit]]></responseTitle>
+					<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Do as [npc.name] says and submit to [npc.herHim], allowing [npc.herHim] to dominantly fuck you...
+						Сделай так, как говорит [npc.name], и подчинись [npc.herHim], позволяя [npc.herHim] властно трахать тебя...
 					]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
@@ -1688,8 +1689,8 @@
 	</scene>
 	
 	<scene id="submitted_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[npc.Name] has had [npc.her] fun with you, and with a satisfied sigh [npc.she] [npc.steps] back and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[npc.Name] получила с тобой [npc.her] удовольствия и с удовлетворенным вздохом [npc.she] [npc.steps] назад, завершая секс...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">SUBMITTED_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1698,8 +1699,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[As [npc.name] has left, there's nothing else for you to do except continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Когда [npc.name] уходит, тебе остается только продолжить свой путь...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects/>
@@ -1726,8 +1727,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[As [npc.name] has left, there's nothing else for you to do except continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Когда [npc.name] уходит, тебе остается только продолжить свой путь...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects/>
@@ -1754,8 +1755,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
-				<responseTooltip><![CDATA[Join [npc.name] in fighting [victim.name]!]]></responseTooltip>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
+				<responseTooltip><![CDATA[Присоединиться к [npc.name] в битве против [victim.name]!]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1795,12 +1796,12 @@
 					<availabilityConditional><![CDATA[[#npc.isAttractedTo(victim) && !npc.hasStatusEffect(SE_RECOVERING_AURA) && (npc.isWillingToRape(victim) || victim.isAttractedTo(npc))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Watch]]></responseTitle>
+					<responseTitle><![CDATA[Смотреть]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(!victim.isAttractedTo(npc))
-							Watch as [npc.name] rapes [victim.name]...
+							Смотреть, как [npc.name] насилует [victim.name]...
 						#ELSE
-							Watch as [victim.name] submits to [npc.name] and allows [npc.herHim] to fuck [victim.herHim]...
+							Смотреть, как [victim.name] подчиняется [npc.name] и позволяет [npc.herHim] трахать [victim.herHim]...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue/>
@@ -1827,8 +1828,8 @@
 					<availabilityConditional><![CDATA[[#npc.isAttractedTo(victim) && !npc.hasStatusEffect(SE_RECOVERING_AURA) && (npc.isWillingToRape(victim) || victim.isAttractedTo(npc))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
-					<responseTooltip><![CDATA[Not wanting to watch [npc.name] having sex with [victim.name], you leave [npc.herHim] to it and continue on your way...]]></responseTooltip>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
+					<responseTooltip><![CDATA[Не желая смотреть, как [npc.name] трахается с [victim.name], ты оставляешь [npc.herHim] наедине с ними и продолжаешь свой путь...]]></responseTooltip>
 					<nextDialogue><![CDATA[default]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 					<effects><![CDATA[
@@ -1843,16 +1844,16 @@
 					<index><![CDATA[1]]></index>
 					<responseTitle><![CDATA[
 						#IF(!victim.isAttractedTo(pc))
-							Rape [victim.herHim]
+							Насиловать [victim.herHim]
 						#ELSE
-							Fuck [victim.herHim]
+							Трахать [victim.herHim]
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(!victim.isAttractedTo(pc))
-							Do as [npc.name] commands and rape [victim.name] in front of [npc.herHim].
+							Сделать, как велит [npc.name], и насиловать [victim.name] на глазах у [npc.herHim].
 						#ELSE
-							Do as [npc.name] commands and fuck [victim.name] in front of [npc.herHim].
+							Сделать, как велит [npc.name], и трахать [victim.name] на глазах у [npc.herHim].
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue/>
@@ -1879,8 +1880,8 @@
 					<availabilityConditional><![CDATA[[#((!npc.isAttractedTo(victim) || npc.hasStatusEffect(SE_RECOVERING_AURA)) || !npc.isWillingToRape(victim)) && (game.isNonConEnabled() || victim.isAttractedTo(pc))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Refuse]]></responseTitle>
-					<responseTooltip><![CDATA[Not wanting to fuck [victim.name] in front of [npc.name], you tell [npc.herHim] that you can't do it...]]></responseTooltip>
+					<responseTitle><![CDATA[Отказаться]]></responseTitle>
+					<responseTooltip><![CDATA[Не желая трахать [victim.name] на глазах у [npc.name], ты говоришь [npc.herHim], что не можешь этого сделать...]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_repeat_mugging_refuse_sex]]></nextDialogue>
 					<effects/>
 				</response>
@@ -1889,8 +1890,8 @@
 				<availabilityConditional><![CDATA[[#((!npc.isAttractedTo(victim) || npc.hasStatusEffect(SE_RECOVERING_AURA)) || !npc.isWillingToRape(victim)) && (!game.isNonConEnabled() && !victim.isAttractedTo(pc))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Not wanting to stick around and get caught by the Enforcers, you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Не желая задерживаться и попасться на глаза Enforcer, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -1902,8 +1903,8 @@
 	</scene>
 	
 	<scene id="submitted_repeat_mugging_after_spectating_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[npc.Name] has had [npc.her] fun with [victim.name], and with a satisfied sigh [npc.she] [npc.steps] back and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[npc.Name] получила с [victim.name] [npc.her] удовольствия и с удовлетворенным вздохом [npc.she] [npc.steps] назад, завершая секс...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">SUBMITTED_REPEAT_MUGGING_SPECTATE_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1912,8 +1913,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Not wanting to stick around and get caught by the Enforcers, you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Не желая задерживаться и попасться на глаза Enforcer, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -1925,8 +1926,8 @@
 	</scene>
 	
 	<scene id="submitted_repeat_mugging_after_fuck_victim">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had your fun with [victim.name], and with a satisfied sigh you [pc.step] back and bring an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Ты вдоволь развлекалась с [victim.name], и с удовлетворенным вздохом ты [pc.step] назад, завершая секс...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">SUBMITTED_REPEAT_MUGGING_FUCK_VICTIM_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1935,8 +1936,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Not wanting to stick around and get caught by the Enforcers, you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Не желая задерживаться и попасться на глаза Enforcer, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -1959,8 +1960,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Not wanting to stick around and get caught by the Enforcers, you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Не желая задерживаться и попасться на глаза Enforcer, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -1984,8 +1985,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Escape]]></responseTitle>
-				<responseTooltip><![CDATA[Quickly escape before the Enforcers arrive!]]></responseTooltip>
+				<responseTitle><![CDATA[Сбежать]]></responseTitle>
+				<responseTooltip><![CDATA[Быстро убирайся, пока не явились Enforcers!]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -2060,9 +2061,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Present ass]]></responseTitle>
+                <responseTitle><![CDATA[Показать зад]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Present your [pc.ass+] to [friend.name] so that [friend.she] can fuck your [pc.asshole+]...
+					Показать свою [pc.ass+] [friend.name], чтобы [friend.she] мог трахать твою [pc.asshole+]...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2112,9 +2113,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Present pussy]]></responseTitle>
+                <responseTitle><![CDATA[Показать киску]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Present your [pc.pussy+] to [friend.name] so that [friend.she] can fuck you...
+					Показать свою [pc.pussy+] [friend.name], чтобы [friend.she] мог трахать тебя...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2170,9 +2171,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Open wide]]></responseTitle>
+                <responseTitle><![CDATA[Раскрой рот пошире]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Open wide and present your mouth to [friend.name] so that [friend.she] can fuck your throat...
+					Раскрой рот пошире и подставь его [friend.name], чтобы [friend.she] мог трахать твое горло...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2222,9 +2223,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Present cock]]></responseTitle>
+                <responseTitle><![CDATA[Выставить член]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Present your [pc.cock+] to [friend.name] so that [friend.she] can use [friend.her] [friend.asshole+] to ride it...
+					Выстави свой [pc.cock+] перед [friend.name], чтобы [friend.she] могла использовать [friend.her] [friend.asshole+], чтобы оседлать его...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2274,9 +2275,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Present cock]]></responseTitle>
+                <responseTitle><![CDATA[Выставить член]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Present your [pc.cock+] to [friend.name] so that [friend.she] can use [friend.her] [friend.pussy+] to ride it...
+					Выстави свой [pc.cock+] перед [friend.name], чтобы [friend.she] могла использовать [friend.her] [friend.pussy+], чтобы оседлать его...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2326,9 +2327,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Submit]]></responseTitle>
+                <responseTitle><![CDATA[Подчиниться]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Submit to [friend.name] so that [friend.she] can fuck you...
+					Покориться [friend.name], чтобы [friend.she] могла оттрахать тебя...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2367,8 +2368,8 @@
 	</scene>
 	
 	<scene id="submitted_repeat_pimped_out_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[friend.Name] has had [friend.her] fun with you, and brings the sex to an end...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[friend.Name] получила с тобой [friend.her] удовольствия и заканчивает секс...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">SUBMITTED_REPEAT_PIMPED_OUT_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -2377,8 +2378,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having been told to get out of here by [npc.name], you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Получив от [npc.name] приказ убираться отсюда, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -2438,8 +2439,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Remain still]]></responseTitle>
-				<responseTooltip><![CDATA[Ignore the stranger and remain seated outside the bistro until [stranger.she] loses interest and leaves.]]></responseTooltip>
+				<responseTitle><![CDATA[Не двигаться]]></responseTitle>
+				<responseTooltip><![CDATA[Игнорировать незнакомку и сидеть снаружи бистро до тех пор, пока [stranger.she] не потеряет к тебе интерес и не уйдет.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_repeat_walkies_ignore]]></nextDialogue>
 				<effects/>
 			</response>
@@ -2451,12 +2452,12 @@
                 ]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Lick cock]]></responseTitle>
+				<responseTitle><![CDATA[Лизать член]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!stranger.hasFetish(FETISH_ORAL_RECEIVING))
-						You're unable to access your mouth, so cannot lick the [stranger.race]'s cock!
+						Ты не можешь пошевелить ртом, чтобы лизнуть член [stranger.race]!
 					#ELSE
-						The [stranger.race] doesn't have a cock for you to lick!
+						У [stranger.race] нет члена, который ты могла бы лизнуть!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -2468,9 +2469,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Lick cock]]></responseTitle>
+                <responseTitle><![CDATA[Лизать член]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Lean over to [stranger.namePos] groin and give [stranger.her] [stranger.cock+] a lick, before taking it into your mouth and giving [stranger.herHim] a blowjob...
+					Наклонись к паху [stranger.namePos] и лизни [stranger.her] [stranger.cock+], а затем возьми [stranger.herHim] в рот и отсоси...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2517,12 +2518,12 @@
                 ]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Kiss pussy]]></responseTitle>
+				<responseTitle><![CDATA[Целовать киску]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!stranger.hasFetish(FETISH_ORAL_RECEIVING))
-						You're unable to access your mouth, so cannot kiss the [stranger.race]'s pussy!
+						Ты не можешь пошевелить ртом, чтобы поцеловать киску [stranger.race]!
 					#ELSE
-						The [stranger.race] doesn't have a pussy for you to kiss!
+						У [stranger.race] нет киски, которую ты могла бы поцеловать!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -2534,9 +2535,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[3]]></index>
-                <responseTitle><![CDATA[Kiss pussy]]></responseTitle>
+                <responseTitle><![CDATA[Целовать киску]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Lean over to [stranger.namePos] groin and give [stranger.her] [stranger.pussy+] a kiss, before eagerly eating [stranger.herHim] out...
+					Наклонись к паху [stranger.namePos] и поцелуй [stranger.her] [stranger.pussy+], а затем с жадностью начни посасывать [stranger.herHim]...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2583,12 +2584,12 @@
                 ]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Present pussy]]></responseTitle>
+				<responseTitle><![CDATA[Показать киску]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!stranger.hasFetish(FETISH_VAGINAL_GIVING))
-						You don't have a pussy, so cannot get fucked by the [stranger.race]!
+						У тебя нет киски, так что [stranger.race] не может тебя оттрахать!
 					#ELSE
-						The [stranger.race] doesn't have a cock, so [stranger.she] can't fuck your pussy!
+						У [stranger.race] нет члена, так что [stranger.she] не может трахнуть твою киску!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -2600,9 +2601,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[4]]></index>
-                <responseTitle><![CDATA[Present pussy]]></responseTitle>
+                <responseTitle><![CDATA[Показать киску]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Drop down onto all fours and shuffle around to present your [pc.pussy+] to [stranger.name] so that [stranger.she] can fuck you...
+					Встань на четвереньки и пошарься вокруг, подставляя свою [pc.pussy+] для [stranger.name], чтобы [stranger.she] могла трахнуть тебя...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2649,14 +2650,15 @@
                 ]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Present ass]]></responseTitle>
+				<responseTitle><![CDATA[Показать зад]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isAbleToAccessCoverableArea(CA_ANUS, true))
-						You can't access your asshole, so cannot get anally fucked by the [stranger.race]!
+						Ты не можешь дотянуться до своей задницы, поэтому [stranger.race] не получается оттрахать тебя в анус!
 					#ELSEIF(!stranger.hasFetish(FETISH_ANAL_GIVING))
-						The [stranger.race] doesn't seem to be interested in wanting to fuck your ass...
+						[stranger.race], кажется, не особо горит желанием трахать твою задницу...
 					#ELSE
-						The [stranger.race] doesn't have a cock, so [stranger.she] can't fuck your ass!
+					
+У [stranger.race] нет члена, так что [stranger.she] не может оттрахать твою задницу!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -2668,9 +2670,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[5]]></index>
-                <responseTitle><![CDATA[Present ass]]></responseTitle>
+                <responseTitle><![CDATA[Показать зад]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Drop down onto all fours and shuffle around to present your [pc.asshole+] to [stranger.name] so that [stranger.she] can fuck your ass...
+					Встань на четвереньки и пошарься вокруг, подставляя свою [pc.asshole+] для [stranger.name], чтобы [stranger.she] могла оттрахать твою задницу...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2726,8 +2728,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[As [npc.name] has left, there's nothing else for you to do except continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Когда [npc.name] уходит, тебе остается только продолжить свой путь...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -2742,8 +2744,8 @@
 			[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/encounters/fields/elis/alleyway', 'SUBMITTED_REPEAT_WALKIES_SEX_END'))]
 			[#game.banishNPC(stranger)]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[stranger.Name] has had [stranger.her] fun with you, and brings the sex to an end...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[stranger.Name] получила с тобой [stranger.her] удовольствия и завершает секс...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -2752,8 +2754,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having been told to get out of here by [npc.name], you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Получив от [npc.name] приказ убираться отсюда, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -2794,8 +2796,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Obey]]></responseTitle>
-				<responseTooltip><![CDATA[Lie down on the table and allow [tattooist.name] to tattoo you...]]></responseTooltip>
+				<responseTitle><![CDATA[Повиноваться]]></responseTitle>
+				<responseTooltip><![CDATA[Ложись на стол и позволь [tattooist.name] набить тебе татуировку...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_encounters_fields_elis_alleyway_submitted_repeat_tattooed_finished]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -2829,9 +2831,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Spread [pc.legs]]]></responseTitle>
+                <responseTitle><![CDATA[Раздвинь [pc.legs]]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Spread your [pc.legs] so [tattooist.name] can get [tattooist.her] payment by fucking your cunt.
+					Раздвинь свою [pc.legs], чтобы [tattooist.name] могла получить [tattooist.her] оплату, трахая твою киску.
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2885,9 +2887,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Raise ass]]></responseTitle>
+                <responseTitle><![CDATA[Поднять зад]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Present your [pc.asshole+] to [tattooist.name] so that [tattooist.she] can fuck your ass...
+					Представь свой [pc.asshole+] перед [tattooist.name], чтобы [tattooist.she] могла оттрахать твою задницу...
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -2933,8 +2935,8 @@
 	</scene>
 	
 	<scene id="submitted_repeat_tattooed_finished_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[tattooist.Name] has had [tattooist.her] fun with you, and brings the sex to an end...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[tattooist.Name] получила с тобой [tattooist.her] удовольствия и ставит точку в этом сексе...]]></tooltip>
 		<content folderPath="txt/encounters/fields/elis/alleyway">SUBMITTED_REPEAT_TATTOOED_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -2943,8 +2945,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having been told to get out of here by [npc.name], you decide to quickly take your leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Получив от [npc.name] приказ убираться отсюда, ты решаешь поскорее уйти...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[

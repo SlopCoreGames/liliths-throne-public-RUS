@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>15</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Sugar Carrot Cube]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Sugar Carrot Cube]]></namePlural>
-		<description><![CDATA[A bright orange sugar cube, which smells of carrots. From the horse-shoe icon on the wrapper, this is obviously meant as a snack for horse-morphs, but is nevertheless edible for all races.]]></description> 
+		<name><![CDATA[Сахарный морковный кубик]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Сахарный морковный кубик]]></namePlural>
+		<description><![CDATA[Ярко-оранжевый сахарный кубик с ароматом моркови. Судя по иконке подковы на обертке, это явно лакомство для конь-морфов, но его может съесть представитель любой расы.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(3)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(3)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot stronger...
+				[npc.Name] [npc.verb(start)] почувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 3)]
 		]]></applyEffects>
@@ -55,10 +55,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] off the paper packaging and [npc.verb(pop)] the Sugar Carrot Cube into [npc.her] mouth. The strong taste of carrots instantly hits [npc.her] [npc.tongue], but before [npc.she] [npc.has] any time in which to relish the flavour, it dissolves into a sweet, sugary mess, which [npc.she] quickly [npc.verb(gulp)] down.
+		[npc.Name] [npc.verb(peel)] бумажную обертку и [npc.verb(pop)] сахарный морковный кубик в [npc.her] рот. Насыщенный вкус моркови мгновенно бьет по [npc.her] [npc.tongue], но прежде чем [npc.she] [npc.has] успеваешь насладиться вкусом, кубик превращается в сладкую сахарную кашицу, которую [npc.she] быстро [npc.verb(gulp)] проглатываешь.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] off the paper packaging and [npc.verb(pop)] the Sugar Carrot Cube into [npc2.namePos] mouth. The strong taste of carrots instantly hits [npc2.namePos] [npc2.tongue], but before [npc2.she] [npc2.has] any time in which to relish the flavour, it dissolves into a sweet, sugary mess, which [npc2.she] quickly [npc2.verb(gulp)] down.
+		[npc.Name] [npc.verb(peel)] бумажную обертку и [npc.verb(pop)] сахарный морковный кубик в [npc2.namePos] рот. Насыщенный вкус моркови мгновенно бьет по [npc2.namePos] [npc2.tongue], но прежде чем [npc2.she] [npc2.has] успеваешь насладиться вкусом, кубик превращается в сладкую сахарную кашицу, которую [npc2.she] быстро [npc2.verb(gulp)] проглатываешь.
 		]]></otherUse>
 	</useDescriptions>
 

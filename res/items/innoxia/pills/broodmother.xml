@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>50</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[broodmother pill]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[broodmother pills]]></namePlural>
-		<description><![CDATA[A small, pink pill, individually packaged in a foil and plastic wrapper. While the text printed on the foil identifies this pill as an 'Orally-Administered Fecundity Enhancer', it's colloquially known as a 'broodmother pill'. Its main effect is to make the user conceive far more offspring than usual.]]></description> 
+		<name><![CDATA[таблетка матки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[таблетки матки]]></namePlural>
+		<description><![CDATA[Маленькая розовая таблетка в индивидуальной фольгированной упаковке. Хотя на обертке написано «Пероральный стимулятор плодовитости», в народе её называют «таблеткой матки». Её основной эффект — заставляет потребителя зачинать гораздо больше потомства, чем обычно.]]></description> 
 		
 		<useDescriptor>swallow</useDescriptor>
 		
@@ -27,41 +27,41 @@
 		</statusEffects>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourExcellent(Doubles)] offspring conceived]]></line>
-			<line><![CDATA[[style.colourExcellent(Disables)] 'menopause' effect]]></line>
+			<line><![CDATA[[style.colourExcellent(Doubles)] зачатых потомков]]></line>
+			<line><![CDATA[[style.colourExcellent(Disables)] эффект «менопаузы"]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.removeStatusEffect(SE_PROMISCUITY_PILL)]
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				As the pill slides down [npc.namePos] throat, [npc.she] [npc.verb(assume)] there's little effect to be felt, but suddenly a powerful cramp takes hold of [npc.her] stomach!
+				Когда таблетка проскальзывает по [npc.namePos] горлу, [npc.she] [npc.verb(assume)] кажется, что эффекта почти нет, но внезапно [npc.her] живот пронзает мощная судорога!
 			</p>
 			<p>
 				#IF(npc.hasVagina())
-					[npc.Name] [npc.verb(feel)] [npc.her] ovaries kick into overdrive as eggs begin to cascade towards [npc.her] womb. As the discomfort fades, [npc.she] [npc.verb(realise)] that [npc.sheIs] now able to be impregnated with far more children than [npc.she] would normally be able to
+					[npc.Name] [npc.verb(feel)], как [npc.her] яичники начинают работать на пределе возможностей, а яйцеклетки устремляются к [npc.her] матке. Когда дискомфорт утихает, [npc.she] [npc.verb(realise)], что теперь [npc.sheIs] способна выносить гораздо больше детей, чем [npc.she] смогла бы обычно
 					#IF(npc.hasFetish(FETISH_PREGNANCY))
-						 carry, and the thought that [npc.she] could get so heavily pregnant with so little work makes a happy smile settle on [npc.her] face.
+						выносить, и от мысли о том, что [npc.she] может стать такой многодетной матерью при таких малых усилиях, на [npc.her] лице расцветает счастливая улыбка.
 					#ELSE
-						 carry.
+						выносить.
 					#ENDIF
 					#IF(npc.hasPenisIgnoreDildo())
-						 The feeling doesn't stop there, however, as the cramp quickly moves down into [npc.her] groin. [npc.She] [npc.verb(feel)] [npc.her] testes churning as they produce sperm at a supernatural rate. The discomfort eventually fades, and [npc.she] [npc.verb(realise)] that any womb that [npc.her] semen finds its way into will be able to carry far more children than it normally
+						Однако на этом ощущения не заканчиваются: судорога быстро спускается ниже, в пах [npc.her]. [npc.She] [npc.verb(feel)], как [npc.her] яички бурлят, производя сперму с невероятной скоростью. В конце концов дискомфорт проходит, и [npc.she] [npc.verb(realise)], что любое чрево, в которое попадет [npc.her] семя, сможет выносить гораздо больше детей, чем обычно
 						#IF(npc.hasFetish(FETISH_PREGNANCY))
-							 would, and [npc.she] can't help but grin at the thought of someone's belly being swollen to bursting point with [npc.her] numerous offspring.
+							, и [npc.she] не может сдержать ухмылки при мысли о том, что чей-то живот раздуется до предела от [npc.her] многочисленного потомства.
 						#ELSE
-							 would.
+							.
 						#ENDIF
 					#ENDIF
 				#ELSEIF(npc.hasPenisIgnoreDildo())
-					The feeling doesn't stop there, however, as the cramp quickly moves down into [npc.her] groin. [npc.She] [npc.verb(feel)] [npc.her] testes churning as they produce sperm at a supernatural rate. The discomfort eventually fades, and [npc.she] [npc.verb(realise)] that any womb that [npc.her] semen finds its way into will be able to carry far more children than it normally
+					Однако ощущения на этом не заканчиваются: спазм быстро спускается в пах [npc.her]. [npc.She] [npc.verb(feel)] как [npc.her] яички бурлят, производя сперму с невероятной скоростью. Дискомфорт со временем утихает, и [npc.she] [npc.verb(realise)] что любое чрево, в которое попадет [npc.her] семя, сможет выносить гораздо больше детей, чем это было бы возможно в обычном состоянии
 					#IF(npc.hasFetish(FETISH_PREGNANCY))
-						 would, and [npc.she] can't help but grin at the thought of someone's belly being swollen to bursting point with [npc.her] numerous offspring.
+							, и [npc.she] не может сдержать ухмылки при мысли о том, что чей-то живот раздуется до предела от [npc.her] многочисленного потомства.
 					#ELSE
-						 would.
+							.
 					#ENDIF
 				#ENDIF
 				#IF(!npc.hasVagina() && !npc.hasPenisIgnoreDildo())
-					Although the cramp quickly fades away, [npc.sheIs] left thinking that if [npc.she] were to gain a vagina or penis, then [npc.she]'d be able to conceive far more offspring than would normally be possible.
+					Хотя спазм быстро проходит, [npc.sheIs] остается с мыслью о том, что если бы у [npc.she] появились вагина или пенис, то [npc.she] смог бы зачать гораздо больше потомства, чем это возможно в норме.
 				#ENDIF
 			</p>
 		]]></applyEffects>
@@ -75,10 +75,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the broodmother's pill out of its little foil wrapper, before quickly placing it in [npc.her] mouth and swallowing it down.
+		[npc.Name] [npc.verb(pop)] таблетку матки из маленькой фольгированной упаковки, после чего быстро отправляет её в [npc.her] рот и проглатывает.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the broodmother's pill out of its little foil wrapper, before bringing it up to [npc2.namePos] [npc2.lips], forcing it into [npc2.her] mouth, and making sure that [npc2.she] [npc2.verb(swallow)] it down.
+		[npc.Name] [npc.verb(pop)] таблетку матки из маленькой фольгированной упаковки, после чего подносит её к [npc2.namePos] [npc2.lips], силой впихивая в [npc2.her] рот и следя за тем, чтобы [npc2.she] [npc2.verb(swallow)] её.
 		]]></otherUse>
 	</useDescriptions>
 

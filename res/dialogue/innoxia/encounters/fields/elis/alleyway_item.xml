@@ -9,7 +9,7 @@
 			[#pc.getCell().getInventory().addItem(game.getAlleywayItem())]
 			[#game.addSpecialParsingString(game.getAlleywayItem().getDisplayName(true), true)]
 		]]></preParsingEffects>
-		<title><![CDATA[Abandoned Item]]></title>
+		<title><![CDATA[Заброшенная вещь]]></title>
 		<content folderPath="txt/encounters/fields/elis/alleyway_item">ITEM_FOUND</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -18,9 +18,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take]]></responseTitle>
+				<responseTitle><![CDATA[Взять]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Add the [#game.getAlleywayItem().getName()] to your inventory.
+					Добавить [#game.getAlleywayItem().getName()] в свой инвентарь.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -31,9 +31,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Leave the [#game.getAlleywayItem().getName()] on the floor.
+					Оставить [#game.getAlleywayItem().getName()] на полу.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -48,7 +48,7 @@
 			[#pc.getCell().getInventory().addClothing(game.getAlleywayClothing())]
 			[#game.addSpecialParsingString(game.getAlleywayClothing().getDisplayName(true), true)]
 		]]></preParsingEffects>
-		<title><![CDATA[Clothing Found]]></title>
+		<title><![CDATA[Найдена одежда]]></title>
 		<content folderPath="txt/encounters/fields/elis/alleyway_item">CLOTHING_FOUND</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -57,9 +57,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take]]></responseTitle>
+				<responseTitle><![CDATA[Взять]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Add the [#game.getAlleywayClothing().getName()] to your inventory.
+					Добавить [#game.getAlleywayClothing().getName()] в свой инвентарь.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -70,9 +70,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Leave the [#game.getAlleywayClothing().getName()] on the floor.
+					Оставить [#game.getAlleywayClothing().getName()] на полу.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -87,7 +87,7 @@
 			[#pc.getCell().getInventory().addWeapon(game.getAlleywayWeapon())]
 			[#game.addSpecialParsingString(game.getAlleywayWeapon().getDisplayName(true), true)]
 		]]></preParsingEffects>
-		<title><![CDATA[Weapon Found]]></title>
+		<title><![CDATA[Найдено оружие]]></title>
 		<content folderPath="txt/encounters/fields/elis/alleyway_item">WEAPON_FOUND</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -96,9 +96,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take]]></responseTitle>
+				<responseTitle><![CDATA[Взять]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Add the [#game.getAlleywayWeapon().getName()] to your inventory.
+					Добавить [#game.getAlleywayWeapon().getName()] в инвентарь.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -109,9 +109,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Leave the [#game.getAlleywayWeapon().getName()] on the floor.
+					Оставить [#game.getAlleywayWeapon().getName()] на полу.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>

@@ -50,12 +50,12 @@
             <response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Approach]]></responseTitle>
+                <responseTitle><![CDATA[Подойти]]></responseTitle>
                 <responseTooltip><![CDATA[
                 	#IF(flags.hasSavedLong('AceXpShadyDealer'))
-		                Approach the shady dealer.
+		                Подойти к подозрительному торговцу.
 	                #ELSE
-		                Find out what is going on...
+		                Выяснить, что здесь происходит...
 	                #ENDIF
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_dominion_shady_dealer_trade]]></nextDialogue>
@@ -64,12 +64,12 @@
             <response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[0]]></index>
-                <responseTitle><![CDATA[Ignore]]></responseTitle>
+                <responseTitle><![CDATA[Игнорировать]]></responseTitle>
                 <responseTooltip><![CDATA[
                 	#IF(flags.hasSavedLong('AceXpShadyDealer'))
-		                Don't pay attention to the shady dealer.
+		                Не обращать внимания на подозрительного торговца.
 	                #ELSE
-		                It's probably best to ignore who or whatever is lurking in the shadows...
+		                Возможно, лучше не замечать того, кто или что таится в тенях...
 	                #ENDIF
  			    ]]></responseTooltip>
                 <nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
@@ -98,9 +98,9 @@
             <response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Trade]]></responseTitle>
+                <responseTitle><![CDATA[Торговать]]></responseTitle>
                 <responseTooltip><![CDATA[
-					See if you can strike a bargain...
+				Попробовать заключить сделку...
                 ]]></responseTooltip>
                 <effects/>
                 <tradingVariables enabled="true">
@@ -110,9 +110,9 @@
             <response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[0]]></index>
-                <responseTitle><![CDATA[Leave]]></responseTitle>
+                <responseTitle><![CDATA[Уйти]]></responseTitle>
                 <responseTooltip><![CDATA[
-				    Time to leave...
+				    Пора уходить...
  			    ]]></responseTooltip>
                 <nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
                 <effects><![CDATA[

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the plate reads 'Packed by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[На дне тарелки едва заметна надпись: «Упаковано ООО „Продукты DSG“»]]></authorTag>
 		
 		<value>250</value> 
 		<determiner><![CDATA[a plate of]]></determiner>
-		<name><![CDATA[Sausages]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Sausages]]></namePlural>
-		<description><![CDATA[A plate of high quality sausages accompanied by seasoned tomatoes and cucumbers all underneath a glass cover. The label on the cover depicts a nude ferret-girl straddling a similar, but comically over-sized sausage, coquettishly hiding her nipples from the viewer.]]></description> 
+		<name><![CDATA[Колбаски]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Колбаски]]></namePlural>
+		<description><![CDATA[Тарелка высококачественных колбасок, приправленных помидорами и огурцами, накрытая стеклянным колпаком. На этикетке под стеклом изображена обнаженная хорько-девушка, верхом сидящая на похожей, но комично огромной колбасе и кокетливо прикрывающая соски от взора зрителя.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -30,9 +30,9 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -40,7 +40,7 @@
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger...
+				[npc.Name] [npc.verb(start)] чувствовать себя сильнее...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(remove)] the glass cover and [npc.verb(breathe)] in the smoky scent of the sausage mixed with a sharp undertone of seasoning. Unable to resist the delicious looking meal, [npc.she] eagerly [npc.verb(start)] wolfing it all down and [npc.verb(empty)] the plate in moments.
+		[npc.Name] [npc.verb(remove)] стеклянный колпак и [npc.verb(breathe)] дымный аромат колбасок с резким оттенком специй. Не в силах устоять перед этим аппетитным блюдом, [npc.she] с жадностью [npc.verb(start)] начинает уплетать всё за обе щеки и в мгновение ока [npc.verb(empty)] тарелку.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(remove)] glass cover from the plate and [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to [npc2.verb(breathe)] in the smoky scent of the sausage mixed with a sharp undertone of seasoning. Unable to resist the delicious-looking meal, [npc2.she] [npc2.verb(start)] wolfing it all down and [npc.verb(empty)] the plate in moments.
+		[npc.Name] [npc.verb(remove)] стеклянный колпак с тарелки и [npc.verb(hold)] его перед [npc2.name], позволяя [npc2.herHim] [npc2.verb(breathe)] дымный аромат колбасок с резким оттенком специй. Не в силах устоять перед этим аппетитным блюдом, [npc2.she] [npc2.verb(start)] начинает жадно уплетать всё за обе щеки и в мгновение ока [npc.verb(empty)] тарелку.
 		]]></otherUse>
 	</useDescriptions>
 

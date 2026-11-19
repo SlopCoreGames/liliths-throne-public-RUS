@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Hindquarters kick]]></name>
+	<name><![CDATA[Удар задними ногами]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -24,7 +24,7 @@
 	'damageInflicted' will parse to the attacker's projected damage of this attack (using the defined 'baseDamage' field defined below).
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[
-		Use [npc.her] hind legs to deliver a powerful kick to [npc.her] target, dealing formattedDamageInflicted damage.
+		Использует задние ноги [npc.her], чтобы нанести мощный удар по цели [npc.her], нанося formattedDamageInflicted урона.
 	]]></description>
 	
 	<!-- The name of the icon which should be used to represent this combat move. The icon must be an svg file, and must be placed in the same folder as this XML file. -->
@@ -133,7 +133,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters who have the 'quadrupedal' leg configuration.
+		Доступно персонажам с конфигурацией ног «четвероногое».
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -160,7 +160,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Target's health is less than 50%.
+		Здоровье цели меньше 50%.
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -172,17 +172,17 @@
 	'isCritical' will parse to the boolean return value for isCritical, and will therefore be either 'true' or 'false'.
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] hind legs to deliver a powerful kick to [npc2.name], dealing formattedDamageInflicted damage.
+		Использует задние ноги [npc.her], чтобы нанести мощный удар по [npc2.name], нанося formattedDamageInflicted урона.
 		#IF(npc.isLegMovementHindered())
-			 [style.italicsMinorBad(Damage is reduced by 50% as [npc.her] clothing is hindering leg movement!)]
+			 [style.italicsMinorBad(Урон снижен на 50%, так как одежда [npc.her] сковывает движения ног!)]
 		#ENDIF
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] hind legs to deliver a powerful kick to [npc.her] target, dealing formattedDamageInflicted damage.
+		Использует задние ноги [npc.her], чтобы нанести мощный удар по цели [npc.her], нанося formattedDamageInflicted урона.
 		#IF(npc.isLegMovementHindered())
-			 [style.italicsMinorBad(Damage is reduced by 50% as [npc.her] clothing is hindering leg movement!)]
+			 [style.italicsMinorBad(Урон снижен на 50%, так как одежда [npc.her] сковывает движения ног!)]
 		#ENDIF
 	]]></movePredictionDescriptionNoTarget>
 	
@@ -198,17 +198,16 @@
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
 			#IF(npc.isLegMovementHindered())
-				As [npc.her] clothing is restricting [npc.her] legs' movement, [npc.name] [npc.verb(struggle)] to put any power behind [npc.her] kick, and as a result only [npc.verb(deal)] half damage to [npc2.name]...
+				Из-за того, что одежда [npc.her] стесняет движения ног [npc.her], [npc.name] [npc.verb(пытается)] вложить хоть какую-то силу в [npc.her] удар, и в результате [npc.verb(наносит)] лишь половину урона [npc2.name]...
 			#ELSE
-				[npc.Name] [npc.verb(spin)] around on the spot, before kicking out with [npc.her] hind legs and powerfully striking [npc2.name] with [npc.her] rear [npc.feet]!
-			#ENDIF
+[npc.Name] [npc.verb(spin)] на месте, а затем резко выбрасывает [npc.her] задние лапы, с силой ударяя [npc2.name] [npc.her] задним [npc.feet]!			#ENDIF
 			formattedHealthDamage
 		]]></execute>
 		<critDescription><![CDATA[
-			[npc.NamePos] kick was extremely effective!
+			Удар [npc.NamePos] был невероятно эффективным!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] been dazed by the attack!
+			[npc2.Name] [npc2.has] ошеломлен атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

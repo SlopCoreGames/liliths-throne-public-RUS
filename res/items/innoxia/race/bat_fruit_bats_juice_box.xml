@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>20</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Fruit Bat's Juice Box]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Fruit Bat's Juice Boxes]]></namePlural>
-		<description><![CDATA[A small cardboard carton, labelled as 'Fruit Bat's Juice Box'. On one side of the carton, there's an image of a scantily-clad bat-girl squeezing the juice from all sorts of fruit over her breasts.]]></description> 
+		<name><![CDATA[Сок «Летучая фруктовая мышь»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Соки «Летучая фруктовая мышь»]]></namePlural>
+		<description><![CDATA[Маленький картонный пакет с надписью «Сок „Летучая фруктовая мышь“». На одной из сторон изображена полураздетая девочка-летучая мышь, выдавливающая сок из всевозможных фруктов прямо себе на грудь.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A cool wave of arcane energy washes over [npc.name]...
+			Прохладная волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 1)]
 		]]></applyEffects>
@@ -51,10 +51,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Tearing the attached straw from the front of the Fruit Bat's Juice Box, [npc.name] [npc.verb(use)] it to pierce the foil circle on the top, before wrapping [npc.her] [npc.lips] around it and quickly drinking all of the tropical-fruits-flavoured liquid contained within.
+		Оторвав прикрепленную трубочку от пакета сока, [npc.name] [npc.verb(use)] её, чтобы проткнуть фольгированную крышечку, после чего обхватывает [npc.her] [npc.lips] и быстро выпивает всю жидкость с тропическим вкусом.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Tearing the attached straw from the front of the Fruit Bat's Juice Box, [npc.name] [npc.verb(use)] it to pierce the foil circle on the top, before getting [npc2.name] to wrap [npc2.her] [npc2.lips] around it and drink all of the tropical-fruits-flavoured liquid contained within.
+		Оторвав прикрепленную трубочку от пакета сока, [npc.name] [npc.verb(use)] её, чтобы проткнуть фольгированную крышечку, а затем заставляет [npc2.name] обхватить [npc2.her] [npc2.lips] и выпить всю жидкость с тропическим вкусом.
 		]]></otherUse>
 	</useDescriptions>
 

@@ -12,8 +12,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Teleported]]></responseTitle>
-				<responseTooltip><![CDATA[Allow Meraxis to teleport the two of you to Themiscyra.]]></responseTooltip>
+				<responseTitle><![CDATA[Телепортирован(а)]]></responseTitle>
+				<responseTooltip><![CDATA[Позволить Мераксису телепортировать вас обоих в Фемискиру.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_journey_teleported]]></nextDialogue>
 				<effects><![CDATA[
 					#IF(game.getWorlds().get(WORLD_TYPE_WORLD_MAP).getCell(PLACE_TYPE_innoxia_fields_themiscyra)==null)
@@ -35,8 +35,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Themiscyra]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Meraxis to the plumes of smoke which must be coming from the town of Themiscyra.]]></responseTooltip>
+				<responseTitle><![CDATA[Фемискира]]></responseTitle>
+				<responseTooltip><![CDATA[Последовать за Мераксисом к столбам дыма, которые, должно быть, исходят из города Фемискира.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_journey_hurry]]></nextDialogue>
 			</response>
 		</responses>
@@ -51,8 +51,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Hurry]]></responseTitle>
-				<responseTooltip><![CDATA[Hurry onwards to the triumphal arch which stands at the entrance to the town.]]></responseTooltip>
+				<responseTitle><![CDATA[Поспешить]]></responseTitle>
+				<responseTooltip><![CDATA[Поспешить к триумфальной арке, стоящей у входа в город.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_journey_centaurs]]></nextDialogue>
 				<effects><![CDATA[
 					[#lunexis.initThemiscyra()]
@@ -72,8 +72,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take cover]]></responseTitle>
-				<responseTooltip><![CDATA[Take cover from the collapsing arch!]]></responseTooltip>
+				<responseTitle><![CDATA[Укрыться]]></responseTitle>
+				<responseTooltip><![CDATA[Укрыться от обрушивающейся арки!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_journey_separated]]></nextDialogue>
 				<effects><![CDATA[
 					[#meraxis.setLocation(WORLD_TYPE_innoxia_fields_themiscyra, PLACE_TYPE_innoxia_fields_themiscyra_plaza)]
@@ -92,8 +92,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Explain]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Aurokaris that you came to Themiscyra to see if the town was being threatened by Lunette's army of demonic centauresses.]]></responseTooltip>
+				<responseTitle><![CDATA[Объяснить]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Аврокарис, что ты пришла в Фемискиру, чтобы проверить, не угрожает ли городу армия демонических кентаврид Лунетт.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_journey_aurokaris]]></nextDialogue>
 				<effects><![CDATA[
 					[#aurokaris.setPlayerKnowsName(true)]
@@ -111,8 +111,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Agree]]></responseTitle>
-				<responseTooltip><![CDATA[There's no reason not to team up with Aurokaris, so tell her that you can travel together as you make your way to the palace.]]></responseTooltip>
+				<responseTitle><![CDATA[Согласиться]]></responseTitle>
+				<responseTooltip><![CDATA[Нет причин не объединиться с Аврокарис, так что скажи ей, что вы можете путешествовать вместе по пути к дворцу.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_journey_aurokaris_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.setQuestProgress(QUEST_LINE_MAIN, QUEST_MAIN_3_E_THEMISCYRA_ATTACK))]
@@ -130,8 +130,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[With Aurokaris at your side, you set off into Themiscyra...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[В сопровождении Аврокарис ты отправляешься в Фемискиру...]]></responseTooltip>
 				<nextDialogue>default</nextDialogue>
 			</response>
 		</responses>
@@ -160,8 +160,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Back]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Aurokaris that the two of you should continue on your way through Themiscyra.]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Аврокарис, что вам двоим пора продолжать путь через Фемискиру.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/themiscyra', 'AUROCHSIA_CONTINUE'))]
@@ -175,12 +175,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Themiscyra]]></responseTitle>
+				<responseTitle><![CDATA[Фемискира]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_aurokaris_talk_town))
-						You've already asked Aurokaris about this town, and she doesn't have the patience to repeat herself right now.
+						Ты уже спрашивал Аврокарис об этом городе, и сейчас у неё нет терпения повторяться.
 					#ELSE
-						Ask Aurokaris about this town.
+						Спросить Аврокарис об этом городе.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -198,12 +198,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Amazons]]></responseTitle>
+				<responseTitle><![CDATA[Амазонки]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_aurokaris_talk_amazons))
-						You've already asked Aurokaris about the Amazons who live here, and she doesn't have the patience to repeat herself right now.
+						Ты уже спрашивал Аврокарис об амазонках, живущих здесь, и сейчас у неё нет терпения повторяться.
 					#ELSE
-						Ask Aurokaris about the Amazons who live here.
+						Спросить Аврокарис об амазонках, живущих здесь.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -221,12 +221,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Ursa]]></responseTitle>
+				<responseTitle><![CDATA[Урса]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_aurokaris_talk_ursa))
-						You've already asked Aurokaris about what kind of person Ursa is, and she doesn't have the patience to repeat herself right now.
+						Ты уже спрашивал Аврокарис о том, что представляет собой Урса, и сейчас у неё нет терпения повторяться.
 					#ELSE
-						Ask Aurokaris what kind of person Ursa is.
+						Спросить Аврокарис, что представляет собой Урса.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -244,12 +244,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Lunette's attack]]></responseTitle>
+				<responseTitle><![CDATA[Атака Лунетт]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_aurokaris_talk_raiders))
-						You've already asked Aurokaris about the current situation in Themiscyra, and she doesn't have the patience to repeat herself right now.
+						Ты уже спрашивал Аврокарис о текущем положении дел в Фемискире, и сейчас у неё нет терпения повторяться.
 					#ELSE
-						Ask Aurokaris about the current situation in Themiscyra.
+						Спросить Аврокарис о текущем положении дел в Фемискире.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -269,26 +269,26 @@
 				<index><![CDATA[5]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_themiscyra_arch)
-						Arch
+						Арка
 					#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_themiscyra_barricade)
-						Barricade
+						Баррикада
 					#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_themiscyra_raiders_cleared)
-						Looting
+						Мародерство
 					#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_themiscyra_smithies)
-						Smithies
+						Кузницы
 					#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_themiscyra_wine)
-						Wine merchants
+						Виноторговцы
 					#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_themiscyra_jewellery)
-						Jewellers
+						Ювелиры
 					#ELSE
-						Streets
+						Улицы
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_aurokaris_talk_location))
-						You've already asked Aurokaris about the location in which you find yourself, and she doesn't have the patience to repeat herself right now.
+						Ты уже спрашивал(а) Аврокарис о том, где находишься, и сейчас у неё нет терпения повторяться.
 					#ELSE
-						Ask Aurokaris about the location in which you find yourself.
+						Спросить Аврокарис о том, где ты находишься.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -341,8 +341,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Aurokaris]]></responseTitle>
-				<responseTooltip><![CDATA[Stop for a moment to talk to Aurokaris.]]></responseTooltip>
+				<responseTitle><![CDATA[Аурокарис]]></responseTitle>
+				<responseTooltip><![CDATA[Остановиться на мгновение, чтобы поговорить с Аврокарис.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_aurokaris]]></nextDialogue>
 			</response>
 		</responses>
@@ -365,12 +365,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Search]]></responseTitle>
+				<responseTitle><![CDATA[Обыскать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_smithies_looted))
-						You've already searched through the ruins of the smithies, and so there's nothing else to be found here...
+						Ты уже обыскал руины кузниц, так что здесь больше нечего найти...
 					#ELSE
-						Search through the ruins of the smithies to see if you can find anything useful...
+						Обыскать руины кузниц, чтобы посмотреть, не найдется ли чего полезного...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -399,12 +399,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Search]]></responseTitle>
+				<responseTitle><![CDATA[Обыскать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_wine_looted))
-						You've already searched through the rubble, and so there's nothing else to be found here...
+						Ты уже обыскал обломки, так что здесь больше нечего найти...
 					#ELSE
-						Search through the rubble surrounding the destroyed warehouses to see if you can find anything useful...
+						Обыскать обломки вокруг разрушенных складов, чтобы посмотреть, не найдется ли чего полезного...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -434,12 +434,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Search]]></responseTitle>
+				<responseTitle><![CDATA[Обыскать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_jewellers_looted))
-						You've already searched through the workshops, and so there's nothing else to be found here...
+						Ты уже обыскал мастерские, так что здесь больше нечего найти...
 					#ELSE
-						Search through the workshops to see if you can find anything useful...
+						Обыскать мастерские, чтобы посмотреть, не найдется ли чего полезного...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -468,8 +468,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having completed your successful search, it's time to continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Успешный поиск завершен, пора двигаться дальше...]]></responseTooltip>
 				<nextDialogue>default</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/themiscyra', 'LOOTING_FINISHED'))]
@@ -487,8 +487,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Back]]></responseTitle>
-				<responseTooltip><![CDATA[With no way to get past this burning barricade, you'll have to [pc.step] back and find a different route...]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку этот пылающий баррикадный завал не преодолеть, тебе придется [pc.step] назад и найти другой путь...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_themiscyra_street"/>
 				<effects><![CDATA[
 					[#pc.setLocation(pc.getLastCell())]
@@ -522,8 +522,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Follow]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Aurokaris as she leads you around the plaza so that you can reach Ursa and Meraxis without being confronted by the army of demonic centauresses.]]></responseTooltip>
+				<responseTitle><![CDATA[Следовать]]></responseTitle>
+				<responseTooltip><![CDATA[Следуй за Аврокарис: она проведет тебя через площадь, чтобы ты смог добраться до Урсы и Мераксиса, не столкнувшись с армией демонических кентаврид.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_follow]]></nextDialogue>
 				<effects><![CDATA[
 					[#lunexis.setLocation(WORLD_TYPE_innoxia_fields_themiscyra, PLACE_TYPE_innoxia_fields_themiscyra_plaza)]
@@ -537,8 +537,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Not yet]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Aurokaris that the two of you still have things to do in Themiscyra, but that you'll be back to help Ursa very soon.]]></responseTooltip>
+				<responseTitle><![CDATA[Еще нет]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Аврокарис, что вам двоим еще есть чем заняться в Фемискире, но ты скоро вернешься, чтобы помочь Урсе.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_themiscyra_street"/>
 				<effects><![CDATA[
 					[#pc.setLocation(pc.getLastCell())]
@@ -557,8 +557,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Prepare]]></responseTitle>
-				<responseTooltip><![CDATA[Prepare to meet whoever it is that's coming your way!]]></responseTooltip>
+				<responseTitle><![CDATA[Приготовиться]]></responseTitle>
+				<responseTooltip><![CDATA[Готовься встретить того, кто направляется к тебе!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_lunexis_entry]]></nextDialogue>
 			</response>
 		</responses>
@@ -573,11 +573,11 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Join Ursa in fighting Lunexis as Meraxis and Aurokaris hold back the demonic centauresses.
+					Вместе с Урсой сражайся против Лунексиса, пока Мераксис и Аврокарис сдерживают демонических кентаврид.
 					#IF(game.isBadEndsEnabled())
-						<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, Lunexis won't let you ever get away!
+						<br/>[style.boldBadEnd(ПЛОХОЙ ФИНАЛ:)] Если ты проиграешь этот бой, Лунексис больше никогда тебя не отпустит!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -602,8 +602,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Shielding]]></responseTitle>
-				<responseTooltip><![CDATA[Use every ounce of your strength to summon forth a protective arcane shield to assist Meraxis, Aurokaris, and Ursa.]]></responseTooltip>
+				<responseTitle><![CDATA[Защита]]></responseTitle>
+				<responseTooltip><![CDATA[Используй все свои силы, чтобы призвать защитный арканный щит и помочь Мераксис, Аврокарис и Урсе.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_non_combatant]]></nextDialogue>
 				<requiredPerks>
 					<perk><![CDATA[SACRIFICIAL_SHIELDING]]></perk>
@@ -619,8 +619,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
-				<responseTooltip><![CDATA[Hang back and watch as Meraxis, Ursa, and Aurokaris fight Lunexis and her demonic centauresses.]]></responseTooltip>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
+				<responseTooltip><![CDATA[Останься в стороне и наблюдай, как Мераксис, Урса и Аврокарис сражаются с Лунексисом и её демоническими кентавридами.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_non_combatant]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/themiscyra', 'PLAZA_WATCH'))]
@@ -641,8 +641,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Teleported]]></responseTitle>
-				<responseTooltip><![CDATA[Summoning the last of her energy, Meraxis manages to teleport all of you to safety!]]></responseTooltip>
+				<responseTitle><![CDATA[Телепортирован(а)]]></responseTitle>
+				<responseTooltip><![CDATA[Собрав последние капли своей энергии, Мераксис умудряется телепортировать вас всех в безопасное место!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_teleported]]></nextDialogue>
 				<effects><![CDATA[
 					[#lunexis.unequipAllWeaponsIntoVoid(true)]
@@ -668,8 +668,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Prepare]]></responseTitle>
-				<responseTooltip><![CDATA[The hundreds of demonic centauresses who were watching the fight rush forwards to attack!]]></responseTooltip>
+				<responseTitle><![CDATA[Приготовиться]]></responseTitle>
+				<responseTooltip><![CDATA[Сотни демонических кентаврид, наблюдавших за боем, бросаются в атаку!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_combat_won_prepare]]></nextDialogue>
 			</response>
 		</responses>
@@ -684,8 +684,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Teleported]]></responseTitle>
-				<responseTooltip><![CDATA[Summoning the last of her energy, Meraxis manages to teleport all of you to safety!]]></responseTooltip>
+				<responseTitle><![CDATA[Телепортирован(а)]]></responseTitle>
+				<responseTooltip><![CDATA[Собрав последние капли своей энергии, Мераксис умудряется телепортировать вас всех в безопасное место!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_teleported]]></nextDialogue>
 			</response>
 		</responses>
@@ -724,8 +724,8 @@
 						GENERIC_BAD_END
 					#ENDIF
 				]]></colour>
-				<responseTitle><![CDATA[Claimed]]></responseTitle>
-				<responseTooltip><![CDATA[Lunexis stakes her claim on your body by fucking you...]]></responseTooltip>
+				<responseTitle><![CDATA[Занято]]></responseTitle>
+				<responseTooltip><![CDATA[Лунексис заявляет свои права на твое тело, трахая тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -784,8 +784,8 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled() && !game.isBadEnd()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Buy time]]></responseTitle>
-				<responseTooltip><![CDATA[Try to buy some time while Meraxis recovers enough energy to cast her teleport spell.]]></responseTooltip>
+				<responseTitle><![CDATA[Выиграть время]]></responseTitle>
+				<responseTooltip><![CDATA[Попытаться выиграть немного времени, пока Мераксис восстанавливает достаточно энергии, чтобы сотворить заклинание телепортации.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_combat_lost_buy_time]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 			</response>
@@ -793,16 +793,16 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled() && !game.isBadEnd() && (!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) && (!game.isAnalContentEnabled() || !pc.isAbleToAccessCoverableArea(CA_ANUS, true)) && !pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[As you can't gain access to your orifices, you can't submit to Lunexis and let her fuck you in front of everyone...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку к твоим отверстиям нет доступа, ты не можешь полностью подчиниться Лунексис и позволить ей трахать тебя на глазах у всех...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled() && !game.isBadEnd() && ((pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) || (game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true)) || pc.isAbleToAccessCoverableArea(CA_MOUTH, true))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[Submit to Lunexis and let her fuck you in front of everyone...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Подчиниться Лунексис и позволить ей трахать тебя на глазах у всех...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -860,8 +860,8 @@
 	</scene>
 	
 	<scene id="plaza_combat_lost_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The centauress has had her fun with you, and with a cruel laugh she kicks you away from her...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Кентавриха вдоволь натешалась тобой и с жестоким смехом отпинывает тебя прочь...]]></tooltip>
 		<content folderPath="txt/places/fields/themiscyra">PLAZA_COMBAT_LOST_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -872,8 +872,8 @@
 				<availabilityConditional><![CDATA[[#!game.isBadEnd()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Teleported]]></responseTitle>
-				<responseTooltip><![CDATA[Summoning the last of her energy, Meraxis manages to teleport all of you to safety!]]></responseTooltip>
+				<responseTitle><![CDATA[Телепортирован(а)]]></responseTitle>
+				<responseTooltip><![CDATA[Собрав последние капли своей энергии, Мераксис умудряется телепортировать вас всех в безопасное место!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_teleported]]></nextDialogue>
 			</response>
 			<!-- Bad end: -->
@@ -881,8 +881,8 @@
 				<availabilityConditional><![CDATA[[#game.isBadEnd()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Cock-sleeve]]></responseTitle>
-				<responseTooltip><![CDATA[Lunexis adds you to her collection of cock-sleeves, while Meraxis, Ursa, and Aurokaris go to the centauresses who defeated them.]]></responseTooltip>
+				<responseTitle><![CDATA[Чехол для члена]]></responseTitle>
+				<responseTooltip><![CDATA[Лунексис добавляет тебя в свою коллекцию чехлов для члена, в то время как Мераксис, Урса и Аврокарис отправляются к кентавриссам, которые их победили.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -897,8 +897,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Teleported]]></responseTitle>
-				<responseTooltip><![CDATA[Summoning the last of her energy, Meraxis manages to teleport all of you to safety!]]></responseTooltip>
+				<responseTitle><![CDATA[Телепортирован(а)]]></responseTitle>
+				<responseTooltip><![CDATA[Собрав последние капли своей энергии, Мераксис умудряется телепортировать вас всех в безопасное место!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_plaza_teleported]]></nextDialogue>
 			</response>
 		</responses>
@@ -927,8 +927,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
-				<responseTooltip><![CDATA[Do as Minotallys says and stay out of her fight with Lunexis.]]></responseTooltip>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
+				<responseTooltip><![CDATA[Сделать так, как говорит Миноталлис, и не лезть в её битву с Лунексис.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_elis_fight]]></nextDialogue> <!-- Dialogue found at the end of this file -->
 			</response>
 		</responses>
@@ -951,8 +951,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Back]]></responseTitle>
-				<responseTooltip><![CDATA[Deciding against confronting the centauresses, you carefully fall back the way you came...]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Решив не вступать в противостояние с кентавриссами, ты осторожно отступаешь тем же путем, которым пришел...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_themiscyra_street"/>
 				<effects><![CDATA[
 					[#pc.setLocation(pc.getLastCell())]
@@ -962,8 +962,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Confront]]></responseTitle>
-				<responseTooltip><![CDATA[Confront the centauresses, which will undoubtedly lead into having to fight them...]]></responseTooltip>
+				<responseTitle><![CDATA[Противостоять]]></responseTitle>
+				<responseTooltip><![CDATA[Противостоять кентавриссам, что неминуемо приведет к сражению с ними...]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<combatVariables enabled="true">
@@ -1003,10 +1003,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Decide against doing anything further with the centauresses and continue on your way...
-					<br/>[style.italicsBad(The centauresses will be permanently removed from the game.)]
+					Решить не делать ничего больше с кентавриссами и продолжить свой путь...
+					<br/>[style.italicsBad(Кентавриссы будут навсегда удалены из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(game.getWorlds().get(WORLD_TYPE_innoxia_fields_themiscyra).getCells(PLACE_TYPE_innoxia_fields_themiscyra_raiders).size()==0 && !pc.hasPerkAnywhereInTree(PERK_HERO_OF_THEMISCYRA))
@@ -1030,8 +1030,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have dominant sex with the centauresses.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться своей победой, чтобы заняться доминантным сексом с кентавриссами.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -1054,8 +1054,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Gentle sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have gentle, dominant sex with the centauresses.]]></responseTooltip>
+				<responseTitle><![CDATA[Нежный секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться своей победой, чтобы заняться нежным, но доминантным сексом с кентавриссами.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -1080,8 +1080,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Rough sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have rough, dominant sex with the centauresses.]]></responseTooltip>
+				<responseTitle><![CDATA[Грубый секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться своей победой, чтобы заняться грубым, доминантным сексом с кентавриссами.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -1108,8 +1108,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Inventory ([attacker.name])]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've defeated the centauresses, there's nothing stopping you from helping yourself to [attacker.namePos] clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь ([attacker.name])]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда ты одолел кентаврид, ничто не мешает тебе прибрать к рукам их [attacker.namePos] одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(attacker, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -1118,8 +1118,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Inventory ([attacker2.name])]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've defeated the centauress, there's nothing stopping you from helping yourself to [attacker2.namePos] clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь ([attacker2.name])]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда кентаврида повержена, ничто не мешает тебе прибрать к рукам её [attacker2.namePos] одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(attacker2, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -1130,12 +1130,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[11]]></index>
-				<responseTitle><![CDATA[Interrogate]]></responseTitle>
+				<responseTitle><![CDATA[Допросить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_centauresses_question))
-						You've already interrogated the centauresses, and the information they gave you wasn't very useful...
+						Ты уже допросил кентаврисс, но информация, которую они дали, оказалась не слишком полезной...
 					#ELSE
-						Ask the centauresses why they're attacking Themiscyra and what their plans are.
+						Спросить у кентаврисс, почему они атакуют Фемискиру и каковы их планы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1154,8 +1154,8 @@
 	</scene>
 	
 	<scene id="raiders_after_sex_dom">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had enough fun with the centauresses...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[С кентавриссами ты уже вдоволь развлекся...]]></tooltip>
 		<content folderPath="txt/places/fields/themiscyra">RAIDERS_AFTER_SEX_DOM</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1165,10 +1165,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Now that you've had your fun, you decide to leave the centauresses and continue on your way...
-					<br/>[style.italicsBad(The centauresses will be permanently removed from the game.)]
+					Насладившись весельем, ты решаешь оставить кентаврид и отправиться дальше своим путем...
+					<br/>[style.italicsBad(Кентавриды будут навсегда удалены из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(game.getWorlds().get(WORLD_TYPE_innoxia_fields_themiscyra).getCells(PLACE_TYPE_innoxia_fields_themiscyra_raiders).size()==0 && !pc.hasPerkAnywhereInTree(PERK_HERO_OF_THEMISCYRA))
@@ -1192,8 +1192,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Inventory ([attacker.name])]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've defeated the centauress, there's nothing stopping you from helping yourself to [attacker.namePos] clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь ([attacker.name])]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда кентаврида побеждена, ничто не мешает тебе прибрать к рукам её [attacker.namePos] одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(attacker, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -1202,8 +1202,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Inventory ([attacker2.name])]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've defeated the centauress, there's nothing stopping you from helping yourself to [attacker2.namePos] clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь ([attacker2.name])]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда кентаврида повержена, ничто не мешает тебе прибрать к рукам её [attacker2.namePos] одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(attacker2, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -1249,8 +1249,8 @@
 				<availabilityConditional><![CDATA[[#game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[[attacker.name] and [attacker2.name] move to fuck you and Aurokaris...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[[attacker.name] и [attacker2.name] бросаются трахать тебя и Аврокарис...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1310,9 +1310,9 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Flee]]></responseTitle>
+				<responseTitle><![CDATA[Сбежать]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Escape from the centauresses while they argue between themselves...
+					Ускользнуть от кентаврид, пока они спорят между собой...
 				]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_themiscyra_street"/>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -1325,8 +1325,8 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Obey]]></responseTitle>
-				<responseTooltip><![CDATA[Do as the centauresses say and remain still while they decide which one of them is going to fuck you and which one will take Aurokaris...]]></responseTooltip>
+				<responseTitle><![CDATA[Повиноваться]]></responseTitle>
+				<responseTooltip><![CDATA[Сделать так, как велят кентавриды: замереть и ждать, пока они решат, какая из них будет трахать тебя, а какая возьмет Аврокарис...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1388,8 +1388,8 @@
 		<preParsingEffects><![CDATA[
 			[#pc.setLocation(pc.getLastCell())]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The centauress has had her fun with you, and with a cruel laugh she kicks you away from her...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Кентавриха вдоволь натешалась тобой и с жестоким смехом отпинывает тебя прочь...]]></tooltip>
 		<content folderPath="txt/places/fields/themiscyra">RAIDERS_AFTER_SEX_SUB</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1398,9 +1398,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					After your sexual encounter with the two centauresses, you wonder where to go now...
+					После сексуальной близости с двумя кентавридами ты раздумываешь, куда двигаться дальше...
 				]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_themiscyra_street"/>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -1421,8 +1421,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having cleared out all of the looting demons from Themiscyra, all that's left now is to find the Amazon queen, Ursa...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Раз ты расправился со всеми мародерствующими демонами в Фемискире, остается лишь найти королеву амазонок, Урсу...]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -1463,8 +1463,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Listen]]></responseTitle>
-				<responseTooltip><![CDATA[Listen as Lunexis foolishly reveals her mother's plans.]]></responseTooltip>
+				<responseTitle><![CDATA[Слушать]]></responseTitle>
+				<responseTooltip><![CDATA[Слушать, как Лунексис глупо выдает планы своей матери.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_elis_listen]]></nextDialogue>
 			</response>
 		</responses>
@@ -1479,8 +1479,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Reassure]]></responseTitle>
-				<responseTooltip><![CDATA[Try to think of something to say to reassure Minotallys and snap her out of her depression.]]></responseTooltip>
+				<responseTitle><![CDATA[Успокоить]]></responseTitle>
+				<responseTooltip><![CDATA[Постарайся сказать что-нибудь, чтобы утешить Minotallys и вывести её из состояния депрессии.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_elis_reassure]]></nextDialogue>
 			</response>
 		</responses>
@@ -1495,8 +1495,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Help]]></responseTitle>
-				<responseTooltip><![CDATA[As this will lead you to your goal of defeating Lunette, you offer to help prepare Elis for the battle to come.]]></responseTooltip>
+				<responseTitle><![CDATA[Помочь]]></responseTitle>
+				<responseTooltip><![CDATA[Понимая, что это приблизит тебя к цели — победе над Lunette, ты предлагаешь помочь Elis в подготовке к грядущей битве.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_elis_help]]></nextDialogue>
 			</response>
 		</responses>
@@ -1519,8 +1519,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Preparations]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Minotallys what kind of preparations can be made to prepare for Lunette.]]></responseTooltip>
+				<responseTitle><![CDATA[Подготовка]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Minotallys, какая подготовка необходима, чтобы противостоять Lunette.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_themiscyra_elis_preparations]]></nextDialogue>
 			</response>
 		</responses>
@@ -1538,8 +1538,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[With your next task being to enlist the aid of Elis's Enforcers, you leave Minotallys's office and set off on your way.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку твоей следующей задачей станет привлечение на свою сторону Enforcer из свиты Elis, ты покидаешь кабинет Minotallys и отправляешься в путь.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_town_town_hall"/>
 				<effects><![CDATA[
 					[#meraxis.setLocation(WORLD_TYPE_innoxia_fields_elis_tavern_f1, PLACE_TYPE_innoxia_fields_elis_tavern_f1_room_meraxis)]

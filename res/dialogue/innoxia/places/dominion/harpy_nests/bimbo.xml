@@ -7,7 +7,7 @@
 
 	<scene id ="exterior">
 		<author><![CDATA[Innoxia]]></author>
-		<title><![CDATA[[harpyBimbo.NamePos] nest]]></title>
+		<title><![CDATA[Гнездо [harpyBimbo.NamePos]]]></title>
 		<content folderPath="txt/places/dominion/harpyNests/bimbo">HARPY_NEST_BIMBO</content>
 		<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -19,16 +19,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.hasFlag(FLAG_bimboEncountered))
-						Approach [harpyBimbo.name]
+						Подойти к [harpyBimbo.name]
 					#ELSE
-						Approach matriarch
+						Подойти к матриарху
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_bimboEncountered))
-						Both [harpyBimbo.name] and her flock are sleeping in the buildings below her nest. You'll have to come back during the day if you want to speak with her.
+						И [harpyBimbo.name], и её стая спят в постройках под её гнездом. Тебе придется вернуться днем, если ты хочешь поговорить с ней.
 					#ELSE
-						The matriarch and her flock are sleeping in the buildings below her nest. You'll have to come back during the day if you want to speak with her.
+						Матриарх и её стая спят в постройках под её гнездом. Тебе придется вернуться днем, если ты хочешь поговорить с ней.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -39,16 +39,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.hasFlag(FLAG_bimboEncountered))
-						Approach [harpyBimbo.name]
+						Подойти к [harpyBimbo.name]
 					#ELSE
-						Approach matriarch
+						Подойти к матриарху
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_bimboEncountered))
-						If you want to talk to [bimboHarpy.name], you'll have to come back after the arcane storm has passed.
+						Если ты хочешь поговорить с [bimboHarpy.name], тебе придется вернуться после того, как пройдет аркана-буря.
 					#ELSE
-						If you want to talk to the matriarch, you'll have to come back after the arcane storm has passed.
+						Если ты хочешь поговорить с матриархом, тебе придется вернуться после того, как пройдет аркана-буря.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -57,8 +57,8 @@
 				<availabilityConditional><![CDATA[[#!pc.hasQuest(QUEST_LINE_SIDE_HARPY_PACIFICATION)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Approach matriarch]]></responseTitle>
-				<responseTooltip><![CDATA[You have no need to talk to the matriarch of this nest.]]></responseTooltip>
+				<responseTitle><![CDATA[Подойти к матриарху]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе нет нужды разговаривать с матриархом этого гнезда.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -69,16 +69,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.hasFlag(FLAG_bimboEncountered))
-						Approach [harpyBimbo.name]
+						Подойти к [harpyBimbo.name]
 					#ELSE
-						Approach matriarch
+						Подойти к матриарху
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_bimboEncountered))
-						[pc.Walk] to the centre of the nest and talk to [bimboHarpy.name].
+						[pc.Walk] к центру гнезда и поговори с [bimboHarpy.name].
 					#ELSE
-						Walk to the centre of the nest and talk to the matriarch.
+						Иди к центру гнезда и поговори с матриархом.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_approach]]></nextDialogue>
@@ -88,7 +88,7 @@
 
 	<scene id ="approach">
 		<author><![CDATA[AceXp]]></author>
-		<title><![CDATA[[harpyBimbo.NamePos] nest]]></title>
+		<title><![CDATA[Гнездо [harpyBimbo.NamePos]]]></title>
 		<preParsingEffects><![CDATA[
 			[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/harpyNests/bimbo', 'HARPY_NEST_BIMBO_APPROACH'))]
 			[#bimboHarpy.setCharacterReactedToPregnancy(pc, true)]
@@ -104,8 +104,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_bimboPacified)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell [bimboHarpy.name] that you'll be back later.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи [bimboHarpy.name], что вернешься позже.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_exterior]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -117,8 +117,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_bimboPacified)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Talk]]></responseTitle>
-				<responseTooltip><![CDATA[Try to convince [bimboHarpy.name] to calm down.]]></responseTooltip>
+				<responseTitle><![CDATA[Поговорить]]></responseTitle>
+				<responseTooltip><![CDATA[Попытайся убедить [bimboHarpy.name] успокоиться.]]></responseTooltip>
 				<nextDialogue><![CDATA[HARPY_NEST_BIMBO_TALK]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -129,8 +129,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_bimboPacified)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Bimbo queen]]></responseTitle>
-				<responseTooltip><![CDATA[This bitch is, like, super not cool. You should totally convince the nest that you should be their queen!]]></responseTooltip>
+				<responseTitle><![CDATA[Бимбо-королева]]></responseTitle>
+				<responseTooltip><![CDATA[Эта сучка, типа, вообще не в адеквате. Тебе определенно стоит убедить всё гнездо, что королевой должна стать ты!]]></responseTooltip>
 				<nextDialogue><![CDATA[HARPY_NEST_BIMBO_QUEEN]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<requiredFetishes>
@@ -156,11 +156,11 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<colour><![CDATA[GENERIC_COMBAT]]></colour>
-				<responseTitle><![CDATA[Call her ugly]]></responseTitle>
+				<responseTitle><![CDATA[Назови её уродиной]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You know that this would be a terrible idea...
+					Ты понимаешь, что это будет ужасная идея...
 					#IF(game.isBadEndsEnabled() && pc.isAbleToHaveRaceTransformed())
-						<br/>[style.boldBadEnd(BAD END:)] If you lose this fight, the harpies won't ever let you leave!
+						<br/>[style.boldBadEnd(ПЛОХОЙ ФИНАЛ:)] Если ты проиграешь этот бой, гарпии больше никогда тебя не выпустят!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[HARPY_NEST_BIMBO_UGLY]]></nextDialogue>
@@ -175,8 +175,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_bimboPacified)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell [bimboHarpy.name] that you'll be back later.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи [bimboHarpy.name], что вернешься позже.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_exterior]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -187,8 +187,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_bimboPacified)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[Have dominant sex with [harpyBimbo.name].]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Заниматься доминирующим сексом с [harpyBimbo.name].]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -213,19 +213,19 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_bimboPacified) && !harpyBimboCompanion.isAttractedTo(pc) && !game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Threesome (oral)]]></responseTitle>
-				<responseTooltip><![CDATA[As [harpyBimboCompanion.name] is not attracted to you, she's unwilling to take part in a threesome with you and [harpyBimbo.name]...]]></responseTooltip>
+				<responseTitle><![CDATA[Тройничок (оральный)]]></responseTitle>
+				<responseTooltip><![CDATA[Так как [harpyBimboCompanion.name] не испытывает к тебе влечения, она неохотно соглашается на тройничок с тобой и [harpyBimbo.name]...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_bimboPacified) && (harpyBimboCompanion.isAttractedTo(pc) || game.isNonConEnabled())]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Threesome (oral)]]></responseTitle>
+				<responseTitle><![CDATA[Тройничок (оральный)]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Have [harpyBimbo.name] and [harpyBimboCompanion.name] service you with their mouths.
+					Пусть [harpyBimbo.name] и [harpyBimboCompanion.name] обслуживают тебя ртом.
 					#IF(!harpyBimboCompanion.isAttractedTo(pc))
-						<br/>[style.italicsBad([harpyBimboCompanion.Name] will not like this!)]
+						<br/>[style.italicsBad([harpyBimboCompanion.Name] это не понравится!)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -255,19 +255,19 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_bimboPacified) && !harpyBimboCompanion.isAttractedTo(pc) && !game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Threesome (missionary)]]></responseTitle>
-				<responseTooltip><![CDATA[As [harpyBimboCompanion.name] is not attracted to you, she's unwilling to take part in a threesome with you and [harpyBimbo.name]...]]></responseTooltip>
+				<responseTitle><![CDATA[Тройничок (миссионерская поза)]]></responseTitle>
+				<responseTooltip><![CDATA[Так как [harpyBimboCompanion.name] не испытывает к тебе влечения, она неохотно соглашается на тройничок с тобой и [harpyBimbo.name]...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_bimboPacified) && (harpyBimboCompanion.isAttractedTo(pc) || game.isNonConEnabled())]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Threesome (missionary)]]></responseTitle>
+				<responseTitle><![CDATA[Тройничок (миссионерская поза)]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Fuck [harpyBimbo.name] and [harpyBimboCompanion.name] side by side in the missionary position.
+					Трахни [harpyBimbo.name] и [harpyBimboCompanion.name] одновременно в миссионерской позе.
 					#IF(!harpyBimboCompanion.isAttractedTo(pc))
-						<br/>[style.italicsBad([harpyBimboCompanion.Name] will not like this!)]
+						<br/>[style.italicsBad([harpyBimboCompanion.Name] это не понравится!)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -298,8 +298,8 @@
 
 	<scene id ="after_sex">
 		<author><![CDATA[Innoxia]]></author>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've finished having your fun...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Развлечения подошли к концу...]]></tooltip>
 		<preParsingEffects/>
 		<content folderPath="txt/places/dominion/harpyNests/bimbo">BIMBO_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -310,8 +310,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Having had your fun, you decide to leave.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Насладившись весельем, ты решаешь уйти.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_exterior]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -344,8 +344,8 @@
 					<availabilityConditional><![CDATA[[#!game.isBadEnd() && !pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Thrown out]]></responseTitle>
-					<responseTooltip><![CDATA[As you're unable to gain access to your mouth, [harpyBimbo.name] cannot transform you, and so simply has you thrown out of her nest instead...]]></responseTooltip>
+					<responseTitle><![CDATA[Тебя вышвыривают]]></responseTitle>
+					<responseTooltip><![CDATA[Поскольку ты не можешь раскрыть рот, [harpyBimbo.name] не может превратить тебя и просто вышвыривает из своего гнезда...]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_exterior]]></nextDialogue>
 					<effects><![CDATA[
 						[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/harpyNests/bimbo', 'COMBAT_LOST_MOUTH_BLOCKED'))]
@@ -356,10 +356,10 @@
 					<availabilityConditional><![CDATA[[#!game.isBadEnd() && pc.isAbleToAccessCoverableArea(CA_MOUTH, true) && game.isSpittingDisabled()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Refuse]]></responseTitle>
+					<responseTitle><![CDATA[Отказаться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Refuse to take the lollipop into your mouth.
-						<br/>[style.italicsBad(Rejection of TF potions is disabled in the gameplay options!)]
+						Отказаться брать леденец в рот.
+						<br/>[style.italicsBad(Отказ от зелий ТФ отключен в настройках игры!)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 				</response>
@@ -367,9 +367,9 @@
 					<availabilityConditional><![CDATA[[#!game.isBadEnd() && pc.isAbleToAccessCoverableArea(CA_MOUTH, true) && !game.isSpittingDisabled()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Refuse]]></responseTitle>
+					<responseTitle><![CDATA[Отказаться]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Refuse to take the lollipop into your mouth.
+						Отказаться брать леденец в рот.
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_combat_lost_punished]]></nextDialogue>
 					<effects><![CDATA[
@@ -381,10 +381,10 @@
 					<availabilityConditional><![CDATA[[#!game.isBadEnd() && pc.isAbleToAccessCoverableArea(CA_MOUTH, true) && !game.isSpittingDisabled()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Suck lollipop]]></responseTitle>
+					<responseTitle><![CDATA[Сосать леденец]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Allow [bimboHarpy.Name] to push the lollipop into your mouth...
-						<br/>[style.italicsMinorBad(This is a unique transformation, and so bypasses your TF preferences!)]
+						Позволить [bimboHarpy.Name] запихнуть леденец тебе в рот...
+						<br/>[style.italicsMinorBad(Это уникальная трансформация, поэтому она игнорирует твои предпочтения ТФ!)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_combat_lost_punished]]></nextDialogue>
 					<effects><![CDATA[
@@ -398,9 +398,9 @@
 					<availabilityConditional><![CDATA[[#game.isBadEnd()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Suck lollipops]]></responseTitle>
+					<responseTitle><![CDATA[Сосать леденцы]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Completely overpowered and at the mercy of these harpies, all you can do is suck on the lollipops that have been forced into your mouth...
+						Совершенно обессиленный и во власти этих гарпий, ты можешь лишь сосать леденцы, которые насильно запихивают тебе в рот...
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_bad_end]]></nextDialogue>
 					<effects><![CDATA[
@@ -445,8 +445,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Thrown out]]></responseTitle>
-				<responseTooltip><![CDATA[Having had their fun, the harpies throw you out of their nest.]]></responseTooltip>
+				<responseTitle><![CDATA[Тебя вышвыривают]]></responseTitle>
+				<responseTooltip><![CDATA[Насладившись тобой, гарпии вышвыривают тебя из своего гнезда.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_exterior]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -466,8 +466,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Apologise]]></responseTitle>
-				<responseTooltip><![CDATA[You really need to, like, say how super sorry you are!]]></responseTooltip>
+				<responseTitle><![CDATA[Извиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе реально нужно, типа, сказать, как ты супер-сильно извиняешься!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_harpy_nests_bimbo_bad_end_apologise]]></nextDialogue>
 			</response>
 		</responses>
@@ -503,9 +503,9 @@
 				<availabilityConditional><![CDATA[[#pc.hasVagina()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Obey]]></responseTitle>
+				<responseTitle><![CDATA[Повиноваться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Eat [harpyBimbo.name] out while [harpyBimboCompanion.name] directs a nearby male harpy to fuck your pussy.
+					Сосать [harpyBimbo.name], пока [harpyBimboCompanion.name] командует ближайшей гарпии трахать твою киску.
 				]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -565,9 +565,9 @@
 				<availabilityConditional><![CDATA[[#!pc.hasVagina()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Obey]]></responseTitle>
+				<responseTitle><![CDATA[Повиноваться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Eat [harpyBimbo.name] out while [harpyBimboCompanion.name] rides your cock.
+					Сосать [harpyBimbo.name], пока [harpyBimboCompanion.name] скачет на твоем члене.
 				]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -622,8 +622,8 @@
 	</scene>
 	
 	<scene id ="bad_end_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[harpyBimbo.Name] has had her fun, and so brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[harpyBimbo.Name] получила свое удовольствие, и на этом секс заканчивается...]]></tooltip>
 		<preParsingEffects/>
 		<content folderPath="txt/places/dominion/harpyNests/bimbo">BAD_END_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -634,12 +634,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Bimbo heaven]]></responseTitle>
+				<responseTitle><![CDATA[Бимбо-рай]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasVagina())
-						Suck on the lollipops as [harpyBimboMale.name] continues fucking your pussy...
+						Сосать леденцы, пока [harpyBimboMale.name] продолжает трахать твою киску...
 					#ELSE
-						Suck on the lollipops as [harpyBimboCompanion.name] continues riding your cock...
+						Сосать леденцы, пока [harpyBimboCompanion.name] продолжает скакать на твоем члене...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>innoxia_places_dominion_harpy_nests_bimbo_bad_end_final</nextDialogue>
@@ -663,8 +663,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[The End...]]></responseTitle>
-				<responseTooltip><![CDATA[[style.italicsBadEnd(With this end to your journey, the thread of prophecy is severed. Restore a saved game to restore the weave of fate, or persist in the doomed world you have created.)]]]></responseTooltip>
+				<responseTitle><![CDATA[Конец...]]></responseTitle>
+				<responseTooltip><![CDATA[[style.italicsBadEnd(С таким финалом твоего путешествия нить пророчества обрывается. Загрузи сохраненную игру, чтобы восстановить плетение судьбы, или продолжай жить в обреченном мире, который ты создал.)]]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 				<effects/>
 			</response>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>20</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[sterility pill]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[sterility pills]]></namePlural>
-		<description><![CDATA[A small, blue pill, individually packaged in a foil and plastic wrapper. While the text printed on the foil identifies this pill as an 'Orally-Administered Reproduction Inhibitor', it's colloquially known as either a 'sterility pill' or 'slut pill', and temporarily reduces both fertility and virility when ingested.]]></description> 
+		<name><![CDATA[таблетка бесплодия]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[таблетки бесплодия]]></namePlural>
+		<description><![CDATA[Маленькая синяя таблетка в индивидуальной фольгированной упаковке. Хотя на обертке написано «Пероральный ингибитор репродуктивной функции», в народе их называют «таблетками бесплодия» или «таблетками шлюх». При приеме они временно снижают как фертильность, так и вирильность.]]></description> 
 		
 		<useDescriptor>swallow</useDescriptor>
 		
@@ -32,7 +32,7 @@
 			[##npc.removeStatusEffect(SE_VIXENS_VIRILITY)]
 			[##npc.removeStatusEffect(SE_BROODMOTHER_PILL)]
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				The little blue pill easily slides down [npc.namePos] throat, and after only a few moments [npc.she] [npc.verb(feel)] a cool throbbing sensation taking root deep within [npc.her] loins.
+				Маленькая синяя таблетка легко проскальзывает по [npc.namePos] горлу, и всего через мгновение [npc.she] [npc.verb(чувствует)], как глубоко в [npc.her] чреслах зарождается прохладное пульсирующее ощущение.
 			</p>
 		]]></applyEffects>
 		
@@ -45,10 +45,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the sterility pill out of its little foil wrapper, before quickly placing it in [npc.her] mouth and swallowing it down.
+		[npc.Name] [npc.verb(выщелкивает)] таблетку бесплодия из маленькой фольгированной упаковки, после чего быстро отправляет её в [npc.her] рот и проглатывает.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the sterility pill out of its little foil wrapper, before bringing it up to [npc2.namePos] [npc2.lips], forcing it into [npc2.her] mouth, and making sure that [npc2.she] [npc2.verb(swallow)] it down.
+		[npc.Name] [npc.verb(выщелкивает)] таблетку бесплодия из маленькой фольгированной упаковки, подносит её к [npc2.namePos] [npc2.lips], силой запихивает в [npc2.her] рот и следит за тем, чтобы [npc2.she] [npc2.verb(проглотила)] её.
 		]]></otherUse>
 	</useDescriptions>
 

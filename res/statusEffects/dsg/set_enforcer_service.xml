@@ -30,11 +30,11 @@
 	<sexEffect>false</sexEffect>
 	
 	<!-- The name of this set bonus. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
-	<name><![CDATA[Dutiful Enforcer]]></name>
+	<name><![CDATA[Послушный Enforcer]]></name>
 	
 	<!-- The description of this status effect. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
 	<description><![CDATA[
-		By wearing the Enforcer Service Uniform, [npc.name] [npc.verb(find)] [npc.herself] feeling a sense of duty towards the realm's law and order.
+		Нося форменную одежду Enforcer, [npc.name] [npc.verb(find)] [npc.herself] ощущает глубокое чувство долга перед законом и порядком в королевстве.
 	]]></description>
 	
 	<!-- The name of the icon which should be used to represent this status effect. The icon must be an svg file, and must be placed in the same folder as this XML file. -->

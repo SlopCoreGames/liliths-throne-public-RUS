@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the can reads 'Canned by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[Снизу на банке видна едва заметная надпись: «Консервировано DSG Foodstuffs LLC»]]></authorTag>
 		
 		<value>15</value> 
 		<determiner><![CDATA[a can of]]></determiner>
-		<name><![CDATA[Fizzy Orange Juice]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Fizzy Orange Juices]]></namePlural>
-		<description><![CDATA[A can of carbonated orange juice. The label depicts a ferret-boy wrapped around the branch of an orange tree, stretching his long body to reach for the fruit.]]></description> 
+		<name><![CDATA[Шипучий апельсиновый сок]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Шипучие апельсиновые соки]]></namePlural>
+		<description><![CDATA[Банка газированного апельсинового сока. На этикетке изображен хорек-мальчик, обвивший ветку апельсинового дерева и вытянувший свое длинное тело, чтобы дотянуться до плода.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -30,15 +30,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_HEALTH_MAXIMUM.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_HEALTH_MAXIMUM.getFormattedValue(2)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				An uplifting wave of arcane energy washes over [npc.name]...
+				Волна бодрящей арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_HEALTH_MAXIMUM, 2)]
 		]]></applyEffects>
@@ -52,10 +52,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After opening it, [npc.name] [npc.verb(bring)] the can of Fizzy Orange Juice up to [npc.her] [npc.mouth]. The smell of fresh citrus fruit punctuated by carbonation rises from the opening, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the tingly liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		Открыв банку, [npc.name] [npc.verb(подносит)] шипучий апельсиновый сок к [npc.her], ожидающей [npc.mouth]. Из горлышка бьет аромат свежих цитрусовых, смешанный с пузырьками газа. Когда [npc.she] [npc2.verb(закидывает)] [npc.her] голову назад и [npc2.verb(начинает)] пить покалывающую жидкость, [npc.she] [npc.verb(чувствует)] небывалую свежесть.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After opening it, [npc.name] [npc.verb(bring)] the can of Fizzy Orange Juice up to [npc2.namePos] waiting [npc2.lips]. The smell of fresh citrus fruit punctuated by carbonation rises from the opening, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the tingly liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		Открыв банку, [npc.name] [npc.verb(подносит)] шипучий апельсиновый сок к [npc2.namePos], ожидающему [npc2.lips]. Из горлышка бьет аромат свежих цитрусовых, смешанный с пузырьками газа. Когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову назад и [npc2.verb(начинает)] пить покалывающую жидкость, [npc.she] [npc.verb(чувствует)] небывалую свежесть.
 		]]></otherUse>
 	</useDescriptions>
 

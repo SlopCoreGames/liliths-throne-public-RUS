@@ -20,8 +20,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Exit the bank and head back out into the streets of Elis.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Выйти из банка и вернуться на улицы Элиса.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_bank"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -44,10 +44,10 @@
 				<availabilityConditional><![CDATA[[#pc.hasItemType(ITEM_innoxia_quest_bank_card)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take out loan]]></responseTitle>
+				<responseTitle><![CDATA[Взять кредит]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Approach one of the bank clerks and ask her about taking out a loan.
-					<br/>[style.italicsMinorBad(This will be added when the bounty hunter lodge content is added!)]
+					Подойти к одной из банковских служащих и спросить о возможности взять кредит.
+					<br/>[style.italicsMinorBad(Это будет добавлено, когда появится контент с гильдией охотников за головами!)]
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 				<effects/>
@@ -66,8 +66,8 @@
 				<availabilityConditional><![CDATA[[#!pc.hasItemType(ITEM_innoxia_quest_bank_card)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[[pc.Step] back]]></responseTitle>
-				<responseTooltip><![CDATA[As you don't have permission to access the bank's deposit boxes, you're not allowed through the door...]]></responseTooltip>
+				<responseTitle><![CDATA[[pc.Step] назад]]></responseTitle>
+				<responseTooltip><![CDATA[Так как у тебя нет прав доступа к банковским сейфам, дверь для тебя закрыта...]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_bank_foyer</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/bank', 'VIP_DOOR_STEP_BACK'))]
@@ -89,11 +89,11 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
-					Interest ([style.moneyFormatUncoloured(0, span)])
+					Проценты ([style.moneyFormatUncoloured(0, span)])
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You do not have any interest to collect...
-					<br/>Interest is calculated on your savings at 12% APR, and is added up every midnight.
+					У тебя пока нет накопленных процентов...
+					<br/>Проценты начисляются на твои сбережения по ставке 12% годовых и суммируются каждую полночь.
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 				<effects/>
@@ -106,8 +106,8 @@
 					Interest ([style.moneyFormat([#game.getDialogueFlags().getSavedLong('bank_interest')], span)])
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Collect the interest which has accumulated on your savings...
-					<br/>Interest is calculated on your savings at 12% APR, and is added up every midnight.
+					Забрать проценты, накопившиеся на твоих сбережениях...
+					<br/>Проценты начисляются на твои сбережения по ставке 12% годовых и суммируются каждую полночь.
 				]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_bank_deposit_box_interest_collected</nextDialogue>
 				<effects><![CDATA[

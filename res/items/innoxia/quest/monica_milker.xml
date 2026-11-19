@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>50</value> 
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[Monica's Moo Milker]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Monica's Moo Milkers]]></namePlural>
-		<description><![CDATA[A manual cow-themed breast pump, complete with plastic beaker, which used to belong to Monica.]]></description> 
+		<name><![CDATA[Доильный аппарат Моники]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Доильные аппараты Моники]]></namePlural>
+		<description><![CDATA[Ручной молокоотсос в коровьем стиле с пластиковым стаканом, который когда-то принадлежал Монике.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Has sentimental value to Monica]]></line>
+			<line><![CDATA[Моника дорожит этой вещью]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			This Moo Milker has a limited-edition custom colour scheme, and has also had its suction cup enlarged. The writing 'Monica's Milker' on the side makes it clear who its owner is.
+			Этот аппарат имеет эксклюзивную цветовую схему, а его всасывающая чаша была специально увеличена. Надпись «Доилка Моники» на боку не оставляет сомнений в том, кому он принадлежит.
 		</p>
 		]]></applyEffects>
 		
@@ -38,10 +38,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the Moo Milker...
+		[npc.Name] [npc.verb(take)] внимательнее рассмотреть доильный аппарат...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off the Moo Milker to [npc2.name], who pretends to be impressed by its custom colour scheme...
+		[npc.Name] [npc.verb(show)] доильный аппарат [npc2.name], которая делает вид, что впечатлена его уникальным цветом...
 		]]></otherUse>
 	</useDescriptions>
 

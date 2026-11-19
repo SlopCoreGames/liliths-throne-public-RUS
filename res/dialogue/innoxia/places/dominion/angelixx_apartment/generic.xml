@@ -127,16 +127,16 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCharactersPresent().contains(angelixx))
 						#IF(sleip.getWorldLocation()==WORLD_TYPE_EMPTY)
-							Accept Angelixx's invitation to come in to her apartment.
+							Принять приглашение Анжеликсы зайти к ней в квартиру.
 						#ELSE
-							As Angelixx's sons are here at the moment, she isn't interested in inviting you in.
+							Поскольку сыновья Анжеликссы сейчас здесь, она не особо горит желанием приглашать тебя внутрь.
 						#ENDIF
 					#ELSE
-						Accept Sleip's invitation to come in to the apartment.
+							Принять приглашение Слейпа зайти в квартиру.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -166,12 +166,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(angelixx)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sleip & Nir]]></responseTitle>
+				<responseTitle><![CDATA[Слейп и Нир]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sleip.getWorldLocation()==WORLD_TYPE_EMPTY)
-						As Sleip and Nir aren't here at the moment, you can't ask to see them.
+							Так как Слейпа и Нира сейчас нет на месте, ты не можешь попросить их увидеть.
 					#ELSE
-						Tell Angelixx that you're here to see her sons...
+							Сказать Анжеликссе, что ты пришел повидаться с её сыновьями...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -197,12 +197,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(angelixx)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Go out]]></responseTitle>
+				<responseTitle><![CDATA[Выйти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sleip.getWorldLocation()!=WORLD_TYPE_EMPTY)
-						Suggest to Angelixx that the two of you could go out somewhere together.
+							Предложить Анжеликссе куда-нибудь сходить вместе.
 					#ELSE
-						Angelixx doesn't look at all interested in going out at the moment.
+							Анжеликкса сейчас совсем не выглядит заинтересованной в прогулках.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -221,12 +221,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCharactersPresent().contains(angelixx))
-						Tell Angelixx that you were just dropping by to say hello, and now you have to leave.
+						Скажи Анжеликсе, что ты просто заскочил поздороваться, но теперь тебе пора идти.
 					#ELSE
-						Tell Sleip that you were just dropping by to say hello, and now you have to leave.
+						Скажи Слейпу, что ты просто заскочил поздороваться, но теперь тебе пора идти.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
@@ -268,12 +268,12 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Talk]]></responseTitle>
+					<responseTitle><![CDATA[Поговорить]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(!flags.hasFlag(FLAG_innoxia_angelixx_bedroom_talked))
-							Try to get to know Angelixx a little better.
+						Попытайся узнать Анжеликссу получше.
 						#ELSE
-							You've already spent a little time talking with Angelixx, and she now quite clearly wants more than just conversation...
+						Вы уже немного поболтали, и теперь она явно хочет чего-то большего, чем просто разговор...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -291,12 +291,12 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Flirt]]></responseTitle>
+					<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(!flags.hasFlag(FLAG_innoxia_angelixx_bedroom_flirted))
-							Tease Angelixx and flirt with her a little.
+						Подразни Анжеликссу и немного пофлиртуй с ней.
 						#ELSE
-							You've already flirted with Angelixx, and she doesn't look like she'll tolerate any more of it...
+						Ты уже пофлиртовал с Анжеликссой, и, похоже, она не намерена терпеть это дальше...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -315,8 +315,8 @@
 					<availabilityConditional><![CDATA[[#!angelixx.isTaur()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Fuck her]]></responseTitle>
-					<responseTooltip><![CDATA[Give Angelixx what she so desperately wants...]]></responseTooltip>
+					<responseTitle><![CDATA[Трахать её]]></responseTitle>
+					<responseTooltip><![CDATA[Дай Анжеликссе то, чего она так отчаянно хочет...]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
 					<sexVariablesWithManager enabled="true">
@@ -344,8 +344,8 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_angelixx_demands_unlocked)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Demands]]></responseTitle>
-					<responseTooltip><![CDATA[As she seems to be willing to do anything to get you on her side, you think that you can make some demands of Angelixx...]]></responseTooltip>
+					<responseTitle><![CDATA[Требования]]></responseTitle>
+					<responseTooltip><![CDATA[Поскольку она, кажется, готова на всё, лишь бы ты был на её стороне, ты решаешь, что можешь выдвинуть Анжеликссе свои требования...]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_bedroom_demand]]></nextDialogue>
 					<effects><![CDATA[
 						[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/angelixx_apartment/generic', 'BEDROOM_ANGELIXX_DEMANDS'))]
@@ -359,16 +359,16 @@
 					<index><![CDATA[6]]></index>
 					<responseTitle><![CDATA[
 						#IF(angelixx.getBreastRawSizeValue()>0)
-							Flat chest
+						Плоская грудь
 						#ELSE
-							A-cups
+							Размер А
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(angelixx.getBreastRawSizeValue()>0)
-							Tell Angelixx that you'd prefer her with a perfectly flat chest.
+							Скажи Анжеликсе, что предпочел бы, чтобы её грудь была совершенно плоской.
 						#ELSE
-							Tell Angelixx that you've had enough of her flat chest, and she can give herself the little B-cup breasts she prefers.
+							Скажи Анжеликсе, что с её плоской груди с тебя хватит, и пусть она оставляет себе свои маленькие сиськи размера B, которые ей так нравятся.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_bedroom_demand]]></nextDialogue>
@@ -388,16 +388,16 @@
 					<index><![CDATA[7]]></index>
 					<responseTitle><![CDATA[
 						#IF(angelixx.getBreastRawSizeValue()!=10)
-							Big tits
+							Большая грудь
 						#ELSE
-							A-cups
+							Размер А
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(angelixx.getBreastRawSizeValue()!=10)
-							Tell Angelixx that you'd prefer her with a big pair of tits.
+							Скажи Анжеликсе, что предпочел бы, чтобы у неё была огромная пара сисек.
 						#ELSE
-							Tell Angelixx that you've had enough of her big tits, and she can give herself the little B-cup breasts she prefers.
+							Скажи Анжеликсе, что с её огромными сиськами с тебя хватит, и пусть она оставляет себе свои маленькие сиськи размера B, которые ей так нравятся.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_bedroom_demand]]></nextDialogue>
@@ -416,16 +416,16 @@
 					<index><![CDATA[8]]></index>
 					<responseTitle><![CDATA[
 						#IF(angelixx.hasPenis() && !angelixx.hasVagina())
-							Pussy only
+							Только киска
 						#ELSE
-							Cock only
+							Только член
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(angelixx.hasPenis() && !angelixx.hasVagina())
-							Tell Angelixx to get rid of her cock and go back to only having a pussy.
+							Скажи Анжеликсе избавиться от члена и вернуться к тому, чтобы у неё была только киска.
 						#ELSE
-							Tell Angelixx that you'd prefer her to not have a pussy, and to instead have a cock for you to play with.
+							Скажи Анжеликсе, что ты бы предпочел, чтобы вместо киски у нее был член, которым ты сможешь поиграть.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_bedroom_demand]]></nextDialogue>
@@ -447,16 +447,16 @@
 					<index><![CDATA[9]]></index>
 					<responseTitle><![CDATA[
 						#IF((angelixx.hasPenis() && !angelixx.hasVagina()) || (!angelixx.hasPenis() && angelixx.hasVagina()))
-							Futa
+							Фута
 						#ELSE
-							Pussy only
+							Только киска
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF((angelixx.hasPenis() && !angelixx.hasVagina()) || (!angelixx.hasPenis() && angelixx.hasVagina()))
-							Tell Angelixx that you want her to have both a cock and a pussy.
+							Скажи Анжеликсе, что хочешь, чтобы у нее были и член, и киска.
 						#ELSE
-							Tell Angelixx to get rid of her cock and go back to only having a pussy.
+							Скажи Анжеликсе избавиться от члена и вернуться к тому, чтобы у неё была только киска.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_bedroom_demand]]></nextDialogue>
@@ -475,9 +475,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell Angelixx that it's time for you to leave.
+				Скажи Анжеликсе, что тебе пора уходить.
 				]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
 				<effects><![CDATA[
@@ -517,8 +517,8 @@
 	</scene>
 	
 	<scene id="angelixx_bedroom_after_sex">
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Angelixx has had enough...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[С Анжеликсы хватит...]]></tooltip>
 		<content folderPath="txt/places/dominion/angelixx_apartment/generic">ANGELIXX_AFTER_SEX</content>
 		<secondsPassed><![CDATA[30]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -527,8 +527,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Goodbye]]></responseTitle>
-				<responseTooltip><![CDATA[It's time for you to leave.]]></responseTooltip>
+				<responseTitle><![CDATA[Прощай]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе пора уходить.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_DEMON_HOME_SEX_SHOP)]
@@ -565,8 +565,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Clubbing]]></responseTitle>
-				<responseTooltip><![CDATA[Head to the club with Angelixx.]]></responseTooltip>
+				<responseTitle><![CDATA[В клуб]]></responseTitle>
+				<responseTooltip><![CDATA[Отправиться в клуб вместе с Анжеликсой.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club]]></nextDialogue>
 			</response>
 		</responses>
@@ -585,8 +585,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Head on in to the club.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Зайти в клуб.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_start]]></nextDialogue>
 			</response>
 		</responses>
@@ -607,16 +607,16 @@
 				<index><![CDATA[1]]></index>
                 <responseTitle><![CDATA[
 					#IF(pc.getMoney()<400)
-						Pay ([style.moneyFormatUncoloured(400, span)])
+						Заплатить ([style.moneyFormatUncoloured(400, span)])
 					#ELSE
-						Pay ([style.moneyFormat(400, span)])
+						Заплатить ([style.moneyFormat(400, span)])
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<400)
-						You don't have enough flames to pay for the drinks which Angelixx has ordered...
+						У тебя недостаточно огней, чтобы оплатить напитки, которые заказала Анжеликса...
 					#ELSE
-						Do as Angelixx says and pay for both of your drinks...
+						Сделать, как говорит Анжеликса, и оплатить напитки за вас обоих...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_core]]></nextDialogue>
@@ -634,8 +634,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Angelixx pays]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that it was her decision to order these drinks, so she's going to have to pay for them.]]></responseTooltip>
+                <responseTitle><![CDATA[Анжеликса платит]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Анжеликсе, что это было её решение заказать эти напитки, так что теперь ей придётся платить.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_core]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/angelixx_apartment/generic', 'ANGELIXX_CLUB_START_ANGELIXX_PAYS'))]
@@ -652,16 +652,16 @@
 				<index><![CDATA[6]]></index>
                 <responseTitle><![CDATA[
 					#IF(pc.getMoney()<400)
-						Pay & abstain ([style.moneyFormatUncoloured(400, span)])
+						Заплатить и воздержаться ([style.moneyFormatUncoloured(400, span)])
 					#ELSE
-						Pay & abstain ([style.moneyFormat(400, span)])
+						Заплатить и воздержаться ([style.moneyFormat(400, span)])
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<400)
-						You don't have enough flames to pay for the drinks which Angelixx has ordered...
+						У тебя недостаточно огней, чтобы оплатить напитки, которые заказала Анжеликса...
 					#ELSE
-						Do as Angelixx says and pay for both of your drinks, but don't drink the one that she's ordered for you...
+						Сделать, как говорит Анжеликса, и оплатить напитки за вас обоих, но не пить тот, что она заказала тебе...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_core]]></nextDialogue>
@@ -677,8 +677,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-                <responseTitle><![CDATA[Angelixx pays & abstain]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that it was her decision to order these drinks, so she's going to have to pay for them. Also don't drink the cocktail that's she's ordered for you.]]></responseTooltip>
+                <responseTitle><![CDATA[Анжеликса платит и воздерживается]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Анжеликсе, что это была её идея заказать эти напитки, так что платить за них будет она. И не пей коктейль, который она заказала для тебя.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_core]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/angelixx_apartment/generic', 'ANGELIXX_CLUB_START_ANGELIXX_PAYS_ABSTAIN'))]
@@ -706,14 +706,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Dance]]></responseTitle>
+					<responseTitle><![CDATA[Танцевать]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getDialogueFlags().getSavedLong('angelixx_club_progress')>=5)
-							Angelixx wants to do something a little more exciting...
+							Анжеликсе хочется чего-нибудь поинтереснее...
 						#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_WATERING_HOLE_DANCE_FLOOR)
-							You've just spent some time dancing with Angelixx, so it's time to do something else...
+							Вы только что потанцевали с Анжеликсной, так что пора заняться чем-то еще...
 						#ELSE
-							Take Angelixx over to the dancefloor and have some fun.
+							Утащи Анжеликсну на танцпол и оторвитесь по полной.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -736,20 +736,20 @@
 					<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 					<responseTitle><![CDATA[
 						#IF(pc.getMoney()<400 || game.getDialogueFlags().getSavedLong('angelixx_club_progress')>=5 || pc.getLocationPlaceType()==PLACE_TYPE_WATERING_HOLE_BAR)
-							Drink ([style.moneyFormatUncoloured(400, span)])
+							Выпить ([style.moneyFormatUncoloured(400, span)])
 						#ELSE
-							Drink ([style.moneyFormat(400, span)])
+							Выпить ([style.moneyFormat(400, span)])
 						#ENDIF
 					]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getDialogueFlags().getSavedLong('angelixx_club_progress')>=5)
-							Angelixx wants to do something a little more exciting...
+							Анжеликсе хочется чего-нибудь поинтереснее...
 						#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_WATERING_HOLE_BAR)
-							You and Angelixx have just had a drink, so you'd better do something else before ordering another one...
+							Вы с Анжеликсной только что выпили, так что лучше заняться чем-то еще, прежде чем заказывать следующую порцию...
 						#ELSEIF(pc.getMoney()<400)
-							You don't have enough flames to pay for the drinks which Angelixx wants...
+							У тебя недостаточно Огней, чтобы оплатить напитки, которые хочет Анжеликса...
 						#ELSE
-							Take Angelixx over to the bar and pay for both of your drinks...
+							Подвести Анжеликссу к бару и оплатить напитки для вас обоих...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -773,14 +773,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Talk]]></responseTitle>
+					<responseTitle><![CDATA[Поговорить]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getDialogueFlags().getSavedLong('angelixx_club_progress')>=5)
-							Angelixx wants to do something a little more exciting...
+							Анжеликсе хочется чего-нибудь поинтереснее...
 						#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_WATERING_HOLE_SEATING_AREA)
-							You and Angelixx have just spent some time talking, so it's time to do something else...
+							Вы с Анжеликссой только что болтали, так что пора заняться чем-нибудь еще...
 						#ELSE
-							Take Angelixx over to the relative quiet of a seating area and talk to her for a little while...
+							Увести Анжеликссу в относительно тихое место и немного поболтать с ней...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -801,14 +801,14 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
 					<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-					<responseTitle><![CDATA[Flirt]]></responseTitle>
+					<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getDialogueFlags().getSavedLong('angelixx_club_progress')>=5)
-							Angelixx wants to do something a little more exciting...
+							Анжеликсе хочется чего-нибудь поинтереснее...
 						#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_WATERING_HOLE_MAIN_AREA)
-							You and Angelixx have just spent some time flirting with one another, so it's time to do something else...
+							Вы с Анжеликссой только что флиртовали друг с другом, так что пора заняться чем-нибудь еще...
 						#ELSE
-							Flirt with Angelixx for a little while...
+							Немного пофлиртовать с Анжеликссой...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -830,8 +830,8 @@
 					<availabilityConditional><![CDATA[[#game.getDialogueFlags().getSavedLong('angelixx_club_progress')>=5]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[6]]></index>
-					<responseTitle><![CDATA[Bathroom fuck]]></responseTitle>
-					<responseTooltip><![CDATA[Take Angelixx into the club's bathrooms and fuck her in one of the stalls...]]></responseTooltip>
+					<responseTitle><![CDATA[Трах в туалете]]></responseTitle>
+					<responseTooltip><![CDATA[Увести Анжеликссу в клубную уборную и трахнуть её в одной из кабинок...]]></responseTooltip>
 					<nextDialogue/>
 					<effects><![CDATA[
 						[#pc.setLocation(WORLD_TYPE_NIGHTLIFE_CLUB, PLACE_TYPE_WATERING_HOLE_WATERING_HOLE_TOILETS)]
@@ -863,14 +863,13 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[7]]></index>
 					<colour><![CDATA[GENERIC_SEX]]></colour>
-					<responseTitle><![CDATA[Pose]]></responseTitle>
+					<responseTitle><![CDATA[Поза]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(!angelixx.hasVagina() && !game.isAnalContentEnabled())
-							Angelixx needs to have a pussy in order to attract a couple of strangers to get fucked by.
-						#ELSEIF((!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) && (!game.isAnalContentEnabled() || !pc.isAbleToAccessCoverableArea(CA_ANUS, true)))
-							You need to have an accessible pussy #IF(game.isAnalContentEnabled())or asshole#ENDIF in order to attract a couple of strangers to get fucked by.
+							Анжеликсе нужно подставить киску, чтобы привлечь парочку незнакомцев для секса.						#ELSEIF((!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) && (!game.isAnalContentEnabled() || !pc.isAbleToAccessCoverableArea(CA_ANUS, true)))
+							Твоя киска должна быть доступна #IF(game.isAnalContentEnabled())or asshole#ENDIF in order to attract a couple of strangers to get fucked by.
 						#ELSE
-							Pose with Angelixx to try and attract a couple of strangers to get fucked by.<br/>[style.italicsSex(This could lead to being a submissive partner in a foursome with Angelixx and two strangers...)]
+							Попозируй с Angelixx, чтобы попытаться привлечь парочку незнакомцев и трахнуться с ними.<br/>[style.italicsSex(Это может привести к тому, что ты станешь подчиненной в групповом сексе с Angelixx и двумя незнакомцами...)]
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -887,12 +886,12 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[8]]></index>
 					<colour><![CDATA[GENERIC_SEX]]></colour>
-					<responseTitle><![CDATA[Jules]]></responseTitle>
+					<responseTitle><![CDATA[Джулс]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-							You need to be able to access your mouth in order to repay Jules for letting the two of you into the club.
+							Тебе нужно иметь возможность использовать свой рот, чтобы отблагодарить Джулса за то, что он пустил вас обоих в клуб.
 						#ELSE
-							Go and repay Jules for letting the two of you into the club.<br/>[style.italicsSex(This will lead to being a submissive partner in a threesome with Angelixx and Jules...)]
+							Подойди и отблагодари Джулса за то, что он пустил вас обоих в клуб.<br/>[style.italicsSex(Это приведет к тому, что ты станешь подчиненной в сексе втроем с Angelixx и Джулсом...)]
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -911,8 +910,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that you've had enough of this and leave the club.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Angelixx, что с тебя хватит, и уходи из клуба.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_NIGHTLIFE_DISTRICT"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -929,8 +928,8 @@
 			[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
 			[#angelixx.setLocation(pc)]
 		]]></preParsingEffects>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[You've had enough of this...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[С тебя хватит...]]></tooltip>
 		<content folderPath="txt/places/dominion/angelixx_apartment/generic">ANGELIXX_CLUB_BATHROOM_AFTER_SEX</content>
 		<secondsPassed><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -939,16 +938,16 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Walk home]]></responseTitle>
-				<responseTooltip><![CDATA[Walk Angelixx home...]]></responseTooltip>
+				<responseTitle><![CDATA[Пойти домой]]></responseTitle>
+				<responseTooltip><![CDATA[Проводить Angelixx до дома...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_walked_home]]></nextDialogue>
 			</response>
 			<!-- Leave: -->
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Refuse]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that she can find her own way back.]]></responseTooltip>
+				<responseTitle><![CDATA[Отказаться]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Angelixx, что она может найти дорогу назад сама.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_NIGHTLIFE_DISTRICT"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -976,8 +975,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Flirt ([stranger1.name])]]></responseTitle>
-				<responseTooltip><![CDATA[Start flirting with [stranger1.name], leaving Angelixx to flirt with [stranger2.name].]]></responseTooltip>
+				<responseTitle><![CDATA[Флиртовать ([stranger1.name])]]></responseTitle>
+				<responseTooltip><![CDATA[Начать флиртовать с [stranger1.name], оставив Анжеликсу флиртовать с [stranger2.name].]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_pose_flirt]]></nextDialogue>
 				<effects><![CDATA[
 					[#angelixx.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -990,8 +989,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Flirt ([stranger2.name])]]></responseTitle>
-				<responseTooltip><![CDATA[Start flirting with [stranger2.name], leaving Angelixx to flirt with [stranger1.name].]]></responseTooltip>
+				<responseTitle><![CDATA[Флиртовать ([stranger2.name])]]></responseTitle>
+				<responseTooltip><![CDATA[Начать флиртовать с [stranger2.name], оставив Анжеликсу флиртовать с [stranger1.name].]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_pose_flirt]]></nextDialogue>
 				<effects><![CDATA[
 					[#angelixx.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -1005,8 +1004,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that you've had enough of this and leave the club.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Angelixx, что с тебя хватит, и уходи из клуба.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_NIGHTLIFE_DISTRICT"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -1030,8 +1029,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Go with [chosenStranger.name]]]></responseTitle>
-				<responseTooltip><![CDATA[Submissively allow [chosenStranger.name] to lead you outside, where you hope to be fucked alongside Angelixx and [angelixxStranger.she].]]></responseTooltip>
+				<responseTitle><![CDATA[Пойти с [chosenStranger.name]]]></responseTitle>
+				<responseTooltip><![CDATA[Покорно позволить [chosenStranger.name] увести тебя наружу, надеясь, что тебя трахнут вместе с Анжеликсой и [angelixxStranger.she].]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_club_pose_alleyway]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setLocation(angelixx)]
@@ -1044,8 +1043,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell [chosenStranger.name] that you've had enough of this and leave the club.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать [chosenStranger.name], что с тебя хватит, и уйти из клуба.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_NIGHTLIFE_DISTRICT"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -1068,8 +1067,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[[chosenStranger.Name] fucks you alongside Angelixx as she's fucked by [angelixxStranger.name]...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[[chosenStranger.Name] трахает тебя вместе с Анжеликсой, пока ту трахает [angelixxStranger.name]...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1183,8 +1182,8 @@
 			[#game.banishNPC(stranger1)]
 			[#game.banishNPC(stranger2)]
 		]]></preParsingEffects>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[[stranger1.Name] and [stranger2.name] have have their fun and bring an end to the sex...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[[stranger1.Name] и [stranger2.name] получают свое удовольствие и заканчивают секс...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1193,16 +1192,16 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Walk home]]></responseTitle>
-				<responseTooltip><![CDATA[Walk Angelixx home...]]></responseTooltip>
+				<responseTitle><![CDATA[Пойти домой]]></responseTitle>
+				<responseTooltip><![CDATA[Проводить Angelixx до дома...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_walked_home]]></nextDialogue>
 			</response>
 			<!-- Leave: -->
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Refuse]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that she can find her own way back.]]></responseTooltip>
+				<responseTitle><![CDATA[Отказаться]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Angelixx, что она может найти дорогу назад сама.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_NIGHTLIFE_DISTRICT"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -1224,8 +1223,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Suck cock]]></responseTitle>
-				<responseTooltip><![CDATA[Join Angelixx in sucking Jules's cock...]]></responseTooltip>
+				<responseTitle><![CDATA[Сосать член]]></responseTitle>
+				<responseTooltip><![CDATA[Присоединиться к Анжеликсе и сосать член Джулса...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1276,8 +1275,8 @@
 			[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
 			[#angelixx.setLocation(pc)]
 		]]></preParsingEffects>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Jules has had his fun, and is finished with the two of you...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Джулс вдоволь нагулялся и закончил с вами обеими...]]></tooltip>
 		<content folderPath="txt/places/dominion/angelixx_apartment/generic">ANGELIXX_CLUB_JULES_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1286,16 +1285,16 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Walk home]]></responseTitle>
-				<responseTooltip><![CDATA[Walk Angelixx home...]]></responseTooltip>
+				<responseTitle><![CDATA[Пойти домой]]></responseTitle>
+				<responseTooltip><![CDATA[Проводить Angelixx до дома...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_angelixx_walked_home]]></nextDialogue>
 			</response>
 			<!-- Leave: -->
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Refuse]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Angelixx that she can find her own way back.]]></responseTooltip>
+				<responseTitle><![CDATA[Отказаться]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Angelixx, что она может найти дорогу назад сама.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_NIGHTLIFE_DISTRICT"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_NIGHTLIFE_DISTRICT)]
@@ -1321,8 +1320,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Angelixx has returned home, you're left wondering what to do now...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Анжеликса вернулась домой, ты гадаешь, чем заняться дальше...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
 				<effects><![CDATA[
 					[#angelixx.returnToHome()]
@@ -1368,12 +1367,12 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Drink beer]]></responseTitle>
+					<responseTitle><![CDATA[Выпить пива]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF((sleip.isAttractedTo(pc) || game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')<3) && game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')<5)
-							Drink one of the bottles of beer that's on the coffee table.
+							Выпить одну из бутылок пива, стоящих на кофейном столике.
 						#ELSE
-							You need to respond to Sleip's demand before you can do anything else...
+							Тебе нужно ответить на требование Слейпа, прежде чем ты сможешь сделать что-то еще...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -1396,14 +1395,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Talk]]></responseTitle>
+					<responseTitle><![CDATA[Поговорить]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_sleip_nir_conversation_talked))
-							You've already spent some time trying to make conversation with the nightmares...
+							Ты уже провел какое-то время, пытаясь завязать разговор с кошмарами...
 						#ELSEIF((sleip.isAttractedTo(pc) || game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')<3) && game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')<5)
-							Try and make conversation with the nightmares...
+							Попытаться завязать разговор с кошмарами...
 						#ELSE
-							You need to respond to Sleip's demand before you can do anything else...
+							Тебе нужно ответить на требование Слейпа, прежде чем ты сможешь сделать что-то еще...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -1425,14 +1424,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Flirt]]></responseTitle>
+					<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>=5)
-							The time for simply flirting appears to be over...
+							Похоже, время простого флирта подошло к концу...
 						#ELSEIF(sleip.isAttractedTo(pc))
-							Start flirting with Sleip and Nir...
+							Начать флиртовать со Слейпом и Ниром...
 						#ELSE
-							You can tell that Sleip and Nir aren't attracted to you, and so flirting with them isn't going to do any good...
+							Ты понимаешь, что Слейп и Нир не испытывают к тебе влечения, так что флирт вряд ли принесет какой-то толк...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -1458,16 +1457,16 @@
 						<colour><![CDATA[FEMININE_PLUS]]></colour>
 						<responseTitle><![CDATA[
 							#IF(pc.isAbleToSelfTransform())
-								Transform
+								Преобразиться
 							#ELSE
-								Drink potion
+								Выпить зелье
 							#ENDIF
 						]]></responseTitle>
 						<responseTooltip><![CDATA[
 							#IF(pc.isAbleToSelfTransform())
-								Do as Sleip says and use your abilities to transform yourself in the way that he wants.
+								Сделать так, как говорит Слейп: использовать свои способности, чтобы измениться так, как он того хочет.
 							#ELSE
-								Do as Sleip says and drink the potion that's normally given to dollification victims...
+								Сделать так, как говорит Слейп: выпить зелье, которое обычно дают жертвам доллификации...
 							#ENDIF
 						]]></responseTooltip>
 						<nextDialogue><![CDATA[
@@ -1496,8 +1495,8 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[5]]></index>
 						<colour><![CDATA[ANDROGYNOUS]]></colour>
-						<responseTitle><![CDATA[Hypno-Watch]]></responseTitle>
-						<responseTooltip><![CDATA[Introduce Sleip and Nir to your hypno-watch to convince them that your body is just fine the way it is.]]></responseTooltip>
+						<responseTitle><![CDATA[Гипно-часы]]></responseTitle>
+						<responseTooltip><![CDATA[Показать Слейпу и Ниру свои гипно-часы, чтобы убедить их, что с твоим телом всё и так в полном порядке.]]></responseTooltip>
 						<nextDialogue><![CDATA[
 							innoxia_places_dominion_angelixx_apartment_generic_sleip_nir
 						]]></nextDialogue>
@@ -1513,8 +1512,8 @@
 						<responseTabIndex><![CDATA[0]]></responseTabIndex>
 						<index><![CDATA[4]]></index>
 						<colour><![CDATA[GENERIC_SEX]]></colour>
-						<responseTitle><![CDATA[Stroke cocks]]></responseTitle>
-						<responseTooltip><![CDATA[Do as Nir says and start stroking his and Sleip's cocks.]]></responseTooltip>
+						<responseTitle><![CDATA[Ласкать члены]]></responseTitle>
+						<responseTooltip><![CDATA[Сделать так, как говорит Нир: начать ласкать его член и член Слейпа.]]></responseTooltip>
 						<nextDialogue><![CDATA[innoxia_places_dominion_angelixx_apartment_generic_sleip_nir_sexual]]></nextDialogue>
 						<effects><![CDATA[
 							[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/angelixx_apartment/generic', 'SLEIP_NIR_HANDJOBS'))]
@@ -1525,9 +1524,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell Sleip and Nir that it's time for you to leave.
+					Сказать Слейпу и Ниру, что тебе пора уходить.
 				]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
 				<effects><![CDATA[
@@ -1560,12 +1559,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Get them hard]]></responseTitle>
+				<responseTitle><![CDATA[Завести их]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')==5)
-						Stroke the nightmares' cocks to get them hard.
+					Ласкай члены кошмаров, чтобы они встали.
 					#ELSE
-						Sleip and Nir are already rock hard...
+					Слейп и Нир уже тверды как камень...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1585,12 +1584,12 @@
 				<availabilityConditional><![CDATA[[#game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>5]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Cock focus]]></responseTitle>
+				<responseTitle><![CDATA[Сосредоточиться на членах]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')<10)
-						Focus on masturbating the nightmares' cocks as they continue groping you.
+					Сосредоточься на мастурбации членов кошмаров, пока они продолжают ощупывать тебя.
 					#ELSE
-						The time for foreplay is over.
+					Время прелюдии подошло к концу.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1610,12 +1609,12 @@
 				<availabilityConditional><![CDATA[[#game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>5]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Balls focus]]></responseTitle>
+				<responseTitle><![CDATA[Сосредоточиться на яйцах]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')<10)
-						Move your focus down to the nightmares' big, heavy balls as they talk to one another.
+					Переключи внимание на большие тяжелые яйца кошмаров, пока они болтают друг с другом.
 					#ELSE
-						The time for foreplay is over.
+					Время прелюдии подошло к концу.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1635,14 +1634,14 @@
 				<availabilityConditional><![CDATA[[#game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>5]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Kiss Sleip]]></responseTitle>
+				<responseTitle><![CDATA[Поцеловать Слейп]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>=10)
-						The time for simply kissing is over.
+						Время простых поцелуев прошло.
 					#ELSEIF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, false))
-						Your mouth is blocked, so you can't kiss Sleip...
+						Твой рот занят, так что ты не можешь поцеловать Слейп...
 					#ELSE
-						Lean over to kiss Sleip.
+						Наклонись, чтобы поцеловать Слейп.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1662,14 +1661,14 @@
 				<availabilityConditional><![CDATA[[#game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>5]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Kiss Nir]]></responseTitle>
+				<responseTitle><![CDATA[Поцеловать Нир]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>=10)
-						The time for simply kissing is over.
+						Время простых поцелуев прошло.
 					#ELSEIF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, false))
-						Your mouth is blocked, so you can't kiss Nir...
+						Твой рот занят, так что ты не можешь поцеловать Нир...
 					#ELSE
-						Lean over to kiss Nir.
+						Наклонись, чтобы поцеловать Нир.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1690,8 +1689,8 @@
 				<availabilityConditional><![CDATA[[#game.getDialogueFlags().getSavedLong('sleip_nir_conversation_progress')>=10]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[Let Sleip and Nir decide how best to fuck you...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[Позволить Слейп и Нир самим решить, как лучше тебя оттрахать...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1792,9 +1791,9 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell Sleip and Nir that it's time for you to leave.
+					Сказать Слейпу и Ниру, что тебе пора уходить.
 				]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
 				<effects><![CDATA[
@@ -1817,12 +1816,12 @@
 				<availabilityConditional><![CDATA[[#game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_sleip_nir_leave_denied))
-						Tell Sleip and Nir that it's time for you to leave.
+						Сказать Слейп и Нир, что тебе пора уходить.
 					#ELSE
-						Sleip and Nir have made it clear that you're not allowed to leave before satisfying them.
+						Слейп и Нир ясно дали понять: тебе не позволят уйти, пока ты не удовлетворишь их.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1841,8 +1840,8 @@
 	</scene>
 	
 	<scene id="sleip_nir_after_sex">
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Having had enough, the nightmares step back...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Насытившись, кошмары отступают...]]></tooltip>
 		<content folderPath="txt/places/dominion/angelixx_apartment/generic">SLEIP_NIR_AFTER_SEX</content>
 		<secondsPassed><![CDATA[30]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1851,8 +1850,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Having had their fun with you, the nightmares have other things to do this evening, and so demand that you leave...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Насладившись тобой, кошмары понимают, что у них есть дела поважнее, и требуют, чтобы ты убирался...]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="DOMINION_DEMON_HOME_SEX_SHOP"/>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_DOMINION, PLACE_TYPE_DOMINION_DEMON_HOME_SEX_SHOP)]

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>25</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Jet Black Coffee]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Jet Black Coffees]]></namePlural>
-		<description><![CDATA[A plastic bottle of cold-brew coffee, advertised as having an extremely high caffeine content. At the bottom of the bottle's label there's a picture of a spider-girl who's passed out drunk, and beneath her, the cautionary words: <i>'Warning! Extremely alcoholic to spiders!'</i>]]></description> 
+		<name><![CDATA[Иссиня-черный кофе]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Иссиня-черный кофе]]></namePlural>
+		<description><![CDATA[Пластиковая бутылка кофе холодного заваривания, рекламируемая как напиток с экстремально высоким содержанием кофеина. В нижней части этикетки красуется изображение паучьей девушки, которая отключилась от пьянства, а под ней — предостережение: <i>'Осторожно! Чрезвычайно алкогольно для пауков!'</i>]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 		]]></applyEffects>
@@ -51,10 +51,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After first unscrewing the cap, [npc.name] [npc.verb(bring)] the bottle of coffee up to [npc.her] [npc.mouth]. A strong smell of espresso assaults [npc.her] nostrils, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the cool liquid, [npc.she] [npc.verb(feel)] a surge of alertness.
+		Едва открутив крышку, [npc.name] [npc.verb(подносит)] бутылку кофе к [npc.her] [npc.mouth]. Резкий запах эспрессо бьет [npc.her] в ноздри, и когда [npc.she] [npc.verb(закидывает)] [npc.her] голову и [npc.verb(начинает)] пить прохладную жидкость, [npc.she] [npc.verb(чувствует)] прилив бодрости.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After first unscrewing the cap, [npc.name] [npc.verb(bring)] the bottle of coffee up to [npc2.namePos] waiting [npc2.lips]. A strong smell of espresso assaults [npc2.her] nostrils, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the cool liquid, [npc2.she] [npc2.verb(feel)] a surge of alertness.
+		Едва открутив крышку, [npc.name] [npc.verb(подносит)] бутылку кофе к ожидающей [npc2.namePos] [npc2.lips]. Резкий запах эспрессо бьет [npc2.her] в ноздри, и когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову и [npc2.verb(начинает)] пить прохладную жидкость, [npc2.she] [npc2.verb(чувствует)] прилив бодрости.
 		]]></otherUse>
 	</useDescriptions>
 

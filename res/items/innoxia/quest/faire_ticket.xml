@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>0</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Faire ticket]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Faire tickets]]></namePlural>
-		<description><![CDATA[A type of fairground ticket given out at the Farmer's Market in Elis. It can be traded in at some of the stalls for special rewards.]]></description> 
+		<name><![CDATA[Билет на ярмарку]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Билеты на ярмарку]]></namePlural>
+		<description><![CDATA[Тип ярмарочного билета, который раздают на Фермерском рынке в Элисе. Его можно обменять в некоторых лавках на особые награды.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Exchanged for rewards at stalls in the Farmer's Market]]></line>
+			<line><![CDATA[Обменивается на награды в лавках на Фермерском рынке]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			A small paper ticket, bearing the icon of a bull's head and the word 'Faire'. It can be traded in for special rewards at some of the stalls in the Farmer's Market at Elis.
+			Маленький бумажный билет с изображением головы быка и надписью «Faire». Его можно обменять на особые награды в некоторых лавках на Фермерском рынке в Элисе.
 		</p>
 		]]></applyEffects>
 		
@@ -38,10 +38,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the ticket...
+		[npc.Name] [npc.verb(take)] внимательнее рассмотреть билет...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] ticket to [npc2.name]...
+		[npc.Name] [npc.verb(show)] [npc.her] билет [npc2.name]...
 		]]></otherUse>
 	</useDescriptions>
 

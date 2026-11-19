@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>225</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Silic Oil]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Silic Oils]]></namePlural>
-		<description><![CDATA[A plastic bottle full of 'Silic Oil'. It claims to be a lubricant for 'sex toys, dolls, and heavy machinery', and bears large letters reading 'Do Not Drink'. The instructions on the back go on to say that it's safe for consumption only for dolls, which should result in the doll's orifices getting wetter.]]></description> 
+		<name><![CDATA[Силиконовое масло]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Силиконовые масла]]></namePlural>
+		<description><![CDATA[Пластиковая бутылка, наполненная «силиконовым маслом». На этикетке сказано, что это смазка для «секс-игрушек, кукол и тяжелого машиностроения», а крупными буквами красуется надпись: «Не пить!». Инструкция на обороте гласит, что масло безопасно для употребления внутрь только куклами, после чего их отверстия должны стать более влажными.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,19 +28,19 @@
 		<enchantmentEffectId>ATTRIBUTE_SEXUAL</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourHuman(Non-dolls:)] [style.colourTerrible(Drains)] 75% [style.colourHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.colourDoll(Dolls:)] [style.colourGood(Increases)] [style.colourWetness(wetness)] of all [style.colourSex(orifices)]]]></line>
+			<line><![CDATA[[style.colourHuman(Не-куклы:)] [style.colourTerrible(Снижает)] 75% [style.colourHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.colourDoll(Куклы:)] [style.colourGood(Увеличивает)] [style.colourWetness(влажность)] всех [style.colourSex(отверстий)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			#IF(npc.getRace()!=RACE_DOLL)
 				[##npc.incrementHealth(-npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)*(3/4))]
 				<p style='margin-bottom:0; padding-bottom:0;'>
-					A sickly feeling rises in [npc.namePos] stomach, making [npc.herHim] feel very unwell...
+				В желудке [npc.namePos] поднимается тошнотворное чувство, из-за чего [npc.herHim] чувствует себя очень скверно...
 				</p>
 			#ELSE
 				<p style='margin-bottom:0; padding-bottom:0;'>
-					[npc.Name] [npc.verb(feel)] the oil spreading throughout [npc.her] silicone body, and a moment later it begins to seep out of [npc.her] orifices...
+				[npc.Name] [npc.verb(чувствует)], как масло растекается по силиконовому телу [npc.her], а мгновение спустя оно начинает сочиться из отверстий [npc.her]...
 				</p>
 				[#npc.incrementFaceWetness(1)]
 				#IF(npc.hasBreasts())
@@ -67,19 +67,19 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off of the bottle of Silic Oil, before lifting it to [npc.her] waiting [npc.lips] and promptly downing the entire bottle.
+		[npc.Name] [npc.verb(откупоривает)] бутылку силиконового масла, подносит её к ждущей [npc.lips] [npc.her] и залпом выпивает всё содержимое.
 		#IF(npc.getRace()!=RACE_DOLL)
-			 [npc.She] [npc.verb(choke)] and [npc.verb(splutter)] as the nasty silicone oil slides down [npc.her] throat.
+			 [npc.She] [npc.verb(давится)] и [npc.verb(хлюпает)], пока мерзкое силиконовое масло скользит по горлу [npc.her].
 		#ELSE
-			 [npc.She] eagerly [npc.verb(swallow)] every last drop, finding the taste of the silicone oil to be absolutely delicious.
+			 [npc.She] жадно [npc.verb(проглатывает)] каждую последнюю каплю, находя вкус силиконового масла абсолютно восхитительным.
 		#ENDIF
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off of the bottle of Silic Oil, before lifting it to [npc2.namePos] waiting [npc2.lips] and getting [npc2.her] to down the entire bottle.
+		[npc.Name] [npc.verb(pop)] крышку бутылки с силиконовым маслом, а затем подносит её к [npc2.namePos], которая, затаив [npc2.lips], заставляет [npc2.her] осушить бутылку целиком.
 		#IF(npc.getRace()!=RACE_DOLL)
-			 [npc2.Name] [npc2.verb(choke)] and [npc2.verb(splutter)] as the nasty silicone oil slides down [npc2.her] throat.
+			 [npc2.Name] [npc2.verb(choke)] и [npc2.verb(splutter)], пока мерзкое силиконовое масло скользит по горлу [npc2.her].
 		#ELSE
-			 [npc2.Name] obediently [npc2.verb(swallow)] every last drop, finding the taste of the silicone oil to be absolutely delicious.
+			 [npc2.Name] послушно [npc2.verb(swallow)] каждую последнюю каплю, находя вкус силиконового масла абсолютно восхитительным.
 		#ENDIF
 		]]></otherUse>
 	</useDescriptions>

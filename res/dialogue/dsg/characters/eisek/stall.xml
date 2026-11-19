@@ -15,8 +15,8 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[0]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
-					<responseTooltip><![CDATA[Leave Eisek be, for now.]]></responseTooltip>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
+					<responseTooltip><![CDATA[Оставь Эйзека пока в покое.]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_leave]]></nextDialogue>
 					<secondsPassed/>
 					<effects/>
@@ -25,8 +25,8 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Buy]]></responseTitle>
-					<responseTooltip><![CDATA[See what Eisek has for sale.]]></responseTooltip>
+					<responseTitle><![CDATA[Купить]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотреть, что продает Эйзек.]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed/>
 					<effects/>
@@ -38,12 +38,12 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Himself]]></responseTitle>
+					<responseTitle><![CDATA[О нем самом]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_himself)
-							You're already asking Eisek about himself!
+							Ты уже расспрашиваешь Эйзека о нем самом!
 						#ELSE
-							Ask Eisek about himself.
+							Расспросить Эйзека о нем самом.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -66,12 +66,12 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Business]]></responseTitle>
+					<responseTitle><![CDATA[Дела]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_business)
-							You're already asking Eisek about his business!
+							Ты уже расспрашиваешь Эйзека о его делах!
 						#ELSE
-							Ask Eisek about how his business is doing.
+							Расспросить Эйзека о том, как идут его дела.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -94,8 +94,8 @@
 					<availabilityConditional><![CDATA[[#!pc.hasQuest(QUEST_LINE_SIDE_EISEK_MOB) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Mob]]></responseTitle>
-					<responseTooltip><![CDATA[Ask Eisek about the mob that was around his stall the first time you met him.]]></responseTooltip>
+					<responseTitle><![CDATA[Толпа]]></responseTitle>
+					<responseTooltip><![CDATA[Спросить Эйзека о толпе, которая крутилась возле его лавки при вашей первой встрече.]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_talk_ask_about_mob]]></nextDialogue>
 					<secondsPassed/>
 					<effects><![CDATA[
@@ -108,8 +108,8 @@
 					<availabilityConditional><![CDATA[[#pc.hasQuest(QUEST_LINE_SIDE_EISEK_MOB) && pc.isQuestProgressLessThan(QUEST_LINE_SIDE_EISEK_MOB, QUEST_EISEK_MOB_QUEST_STAGE_TWO) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Mob]]></responseTitle>
-					<responseTooltip><![CDATA[Probably best to not bring this topic back up without some results to show.]]></responseTooltip>
+					<responseTitle><![CDATA[Толпа]]></responseTitle>
+					<responseTooltip><![CDATA[Пожалуй, лучше не поднимать эту тему, пока не будет каких-то результатов.]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<secondsPassed/>
 					<effects/>
@@ -119,7 +119,7 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
 					<responseTitle><![CDATA[[style.boldBad(Mob)]]]></responseTitle>
-					<responseTooltip><![CDATA[Inform Eisek of your failure to handle the mob]]></responseTooltip>
+					<responseTooltip><![CDATA[Сообщить Эйзеку, что тебе не удалось разобраться с толпой]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_mob_quest_complete]]></nextDialogue>
 					<secondsPassed/>
 					<effects><![CDATA[
@@ -132,7 +132,7 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
 					<responseTitle><![CDATA[[style.boldGood(Mob)]]]></responseTitle>
-					<responseTooltip><![CDATA[Tell Eisek that you've handled the mob]]></responseTooltip>
+					<responseTooltip><![CDATA[Сказать Эйзеку, что ты разобрался с толпой]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_mob_quest_complete]]></nextDialogue>
 					<secondsPassed/>
 					<effects><![CDATA[
@@ -151,12 +151,12 @@
 					<availabilityConditional><![CDATA[[#pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB) || pc.isQuestFailed(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Mob]]></responseTitle>
+					<responseTitle><![CDATA[Толпа]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(pc.isQuestFailed(QUEST_LINE_SIDE_EISEK_MOB))
-							You probably don't want to dig up reminders of your failure.
+							Тебе вряд ли хочется ворошить воспоминания о своем провале.
 						#ELSE
-							You've handled the mob. It's all water under the bridge now.
+							Ты разобрался с толпой. Теперь это всё в прошлом.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -168,8 +168,8 @@
 					<availabilityConditional><![CDATA[[#!pc.isQuestFailed(QUEST_LINE_SIDE_EISEK_MOB) && pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_STALL) && !pc.hasQuest(QUEST_LINE_SIDE_EISEK_STALL) && flags.hasFlag(FLAG_dsg_elis_eisek_mob_quest_persuade)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Stall]]></responseTitle>
-					<responseTooltip><![CDATA[See if there's anything more you can do to help Eisek. Maybe about the state of his stall?]]></responseTooltip>
+					<responseTitle><![CDATA[Лавка]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотреть, не можешь ли ты еще чем-то помочь Эйзеку. Может, стоит заняться состоянием его лавки?]]></responseTooltip>
 					<colour><![CDATA[QUEST_SIDE]]></colour>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_stall_quest_start]]></nextDialogue>
 					<secondsPassed/>
@@ -181,8 +181,8 @@
 					<availabilityConditional><![CDATA[[#pc.hasQuest(QUEST_LINE_SIDE_EISEK_STALL) && pc.isQuestProgressLessThan(QUEST_LINE_SIDE_EISEK_STALL, QUEST_EISEK_STALL_QUEST_STAGE_FOUR) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_STALL)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Stall]]></responseTitle>
-					<responseTooltip><![CDATA[You probably don't want to talk about this until you have everything you need.]]></responseTooltip>
+					<responseTitle><![CDATA[Лавка]]></responseTitle>
+					<responseTooltip><![CDATA[Ты, вероятно, не хочешь об этом говорить, пока не соберешь всё необходимое.]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<secondsPassed/>
 					<effects/>
@@ -192,7 +192,7 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
 					<responseTitle><![CDATA[[style.boldGood(Stall)]]]></responseTitle>
-					<responseTooltip><![CDATA[You've gathered what you need to improve Eisek's stall. Time to show him.]]></responseTooltip>
+					<responseTooltip><![CDATA[Ты собрал всё нужное, чтобы улучшить лавку Эйзека. Пора показать ему результат.]]></responseTooltip>
 					<nextDialogue><![CDATA[dsg_characters_eisek_stall_stall_quest_complete]]></nextDialogue>
 					<secondsPassed/>
 					<effects><![CDATA[
@@ -210,8 +210,8 @@
 					<availabilityConditional><![CDATA[[#pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_STALL)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Stall]]></responseTitle>
-					<responseTooltip><![CDATA[You've built the stall of Eisek's dreams.]]></responseTooltip>
+					<responseTitle><![CDATA[Лавка]]></responseTitle>
+					<responseTooltip><![CDATA[Ты построил лавку о которой Эйзек мог только мечтать.]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<secondsPassed/>
 					<effects/>
@@ -220,14 +220,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[6]]></index>
-					<responseTitle><![CDATA[Other dragons]]></responseTitle>
+					<responseTitle><![CDATA[Другие драконы]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(eisek.getAffection(pc) < 15)
-							You can tell that Eisek doesn't trust you enough yet to talk about if he's ever met other dragons...
+							Видно, что Эйзек еще недостаточно тебе доверяет, чтобы рассказать, встречал ли он когда-нибудь других драконов...
 						#ELSEIF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_other_dragons)
-							You're already asking Eisek about if he's ever met other dragons.
+							Ты уже расспрашиваешь Эйзека о том, встречал ли он когда-нибудь других драконов.
 						#ELSE
-							Ask Eisek if he's ever met other dragons.
+							Спросить Эйзека, встречал ли он когда-нибудь других драконов.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -249,14 +249,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[7]]></index>
-					<responseTitle><![CDATA[Why Elis?]]></responseTitle>
+					<responseTitle><![CDATA[Почему Элис?]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(eisek.getAffection(pc) < 15)
-							You can tell that Eisek doesn't trust you enough yet to talk about why he chose to come to Elis...
+							Видно, что Эйзек еще недостаточно тебе доверяет, чтобы рассказать, почему он решил прийти в Элис...
 						#ELSEIF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_why_elis)
-							You're already asking Eisek about why he chose to come to Elis.
+							Ты уже расспрашиваешь Эйзека о том, почему он решил прийти в Элис.
 						#ELSE
-							Ask Eisek why he chose to come to Elis.
+							Спросить Эйзека, почему он решил прийти в Элис.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -279,14 +279,14 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_dsg_elis_eisek_asked_himself)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[8]]></index>
-					<responseTitle><![CDATA[Family]]></responseTitle>
+					<responseTitle><![CDATA[Семья]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(eisek.getAffection(pc) < 15)
-							You can tell that Eisek doesn't trust you enough yet to talk about his family...
+							Понятно, что Эйзеку еще не хватает доверия к тебе, чтобы говорить о своей семье...
 						#ELSEIF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_family)
-							You're already asking Eisek about his family.
+							Ты уже расспрашиваешь Эйзека о его семье.
 						#ELSE
-							Ask Eisek about his family.
+							Спросить Эйзека о его семье.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -309,12 +309,12 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_dsg_elis_eisek_asked_about_mob) && !pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[9]]></index>
-					<responseTitle><![CDATA[Dragonfall?]]></responseTitle>
+					<responseTitle><![CDATA[Падение драконов?]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_ask_about_dragonfall_vague)
-							You're already asking Eisek about 'the dragons of old' and a 'Dragonfall'.
+							Ты уже расспрашиваешь Эйзека о «драконах древности» и «Падении драконов».
 						#ELSE
-							Eisek mentioned something about 'the dragons of old' and a 'Dragonfall' when you asked him about the mob. What did he mean by that?
+							Когда ты спросил Эйзека о банде, он упомянул нечто о «драконах древности» и «Падении драконов». Что он имел в виду?
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -331,12 +331,12 @@
 					<availabilityConditional><![CDATA[[#pc.isQuestCompleted(QUEST_LINE_SIDE_EISEK_MOB)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[9]]></index>
-					<responseTitle><![CDATA[Dragonfall?]]></responseTitle>
+					<responseTitle><![CDATA[Падение драконов?]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(game.getCurrentDialogueNode()==DN_dsg_characters_eisek_stall_talk_ask_about_dragonfall_specific)
-							You're already asking Eisek about the truth about the 'dragons of old'.
+							Ты уже расспрашиваешь Эйзека об истинной природе «драконов древности».
 						#ELSE
-							You've earned the right to know the truth about the 'dragons of old'.
+							Ты заслужил право узнать правду о «драконах древности».
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -357,14 +357,14 @@
 				<response>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[10]]></index>
-					<responseTitle><![CDATA[Small talk]]></responseTitle>
+					<responseTitle><![CDATA[Светская беседа]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(eisek.getAffection(pc) < 30)
-							You can tell that Eisek wouldn't be comfortable making small talk with you. Perhaps you should get to know him better first...
+							Сразу видно, что Эйзеку не очень уютно просто болтать с тобой ни о чем. Возможно, стоит сначала получше его узнать...
 						#ELSEIF(flags.hasFlag(FLAG_dsg_elis_eisek_small_talk))
-							You've already done this today. Much as Eisek likes talking to you, he <i>does</i> have a stall to run.
+							Ты уже делал это сегодня. Как бы Эйзеку ни нравилось с тобой болтать, у него <i>есть</i> прилавок, за которым нужно присматривать.
 						#ELSE
-							Make small talk.
+							Завести светскую беседу.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -469,8 +469,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Focus on mob]]></responseTitle>
-				<responseTooltip><![CDATA[Come up with a solution to Eisek's problem.]]></responseTooltip>
+				<responseTitle><![CDATA[Сосредоточиться на толпе]]></responseTitle>
+				<responseTooltip><![CDATA[Придумать решение проблемы Эйзека.]]></responseTooltip>
 				<colour><![CDATA[QUEST_SIDE]]></colour>
 				<nextDialogue><![CDATA[dsg_characters_eisek_stall_mob_quest_start]]></nextDialogue>
 				<secondsPassed/>
@@ -481,8 +481,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Dragonfall?]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Eisek what he means by 'before the Dragonfall'.]]></responseTooltip>
+				<responseTitle><![CDATA[Падение драконов?]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Эйзека, что он имеет в виду под «до Падения Драконов».]]></responseTooltip>
 				<nextDialogue><![CDATA[dsg_characters_eisek_stall_talk_ask_about_dragonfall_vague_in_mob_scene]]></nextDialogue>
 				<secondsPassed/>
 				<effects/>
@@ -490,8 +490,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Change the subject]]></responseTitle>
-				<responseTooltip><![CDATA[Maybe this is getting too heavy.]]></responseTooltip>
+				<responseTitle><![CDATA[Сменить тему]]></responseTitle>
+				<responseTooltip><![CDATA[Может, это становится слишком тяжелым?]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[dsg_characters_eisek_stall_talk_menu]]></nextDialogue>
 				<secondsPassed/>
 				<effects><![CDATA[
@@ -514,8 +514,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Dragonfall?]]></responseTitle>
-				<responseTooltip><![CDATA[You're already asking Eisek what he means by 'before the Dragonfall'!]]></responseTooltip>
+				<responseTitle><![CDATA[Падение драконов?]]></responseTitle>
+				<responseTooltip><![CDATA[Ты уже вовсю расспрашиваешь Эйзека, что он имеет в виду под «перед Падением Дракона»!]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 				<secondsPassed/>
 				<effects/>

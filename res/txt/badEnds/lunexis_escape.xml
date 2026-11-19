@@ -5,57 +5,57 @@
 	
 	<htmlContent tag="FAILED"><![CDATA[
 	<p>
-		Not able to bring yourself to betray Meraxis, and by extension Ursa, Minotallys, Lyssieth, and everyone else who's counting on you to play a major role in defeating Lunette, you tell the [meraxis.race] that while interrogating her, Lunexis managed to seduce you, and that you were on the verge of carrying out her plans.
+		Не в силах предать Мераксис, а значит — Урсу, Миноталлис, Lyssieth и всех остальных, кто рассчитывает на твою ключевую роль в победе над Лунетт, ты сообщаешь [meraxis.race], что во время допроса Лунексис умудрилась соблазнить тебя, и ты уже был на грани того, чтобы исполнить её замыслы.
 	</p>
 	<p>
-		[meraxis.speech(Wait, what?!)] Meraxis cries with a look of absolute shock on her face. Shaking her head a little, she momentarily drops her chuuni act as she asks, [meraxis.speech(What did that bitch tell you to do?! I'll teach her a lesson!)]
+		[meraxis.speech(Погоди, что?!)] Мераксис вскрикивает с выражением абсолютного шока на лице. Слегка качая головой, она на мгновение отбрасывает свой образ чунибья и спрашивает: [meraxis.speech(Что эта сучка велела тебе сделать?! Я ей устрою!)]
 	</p>
 	<p>
-		Realising that Meraxis will find out about the details of your Mistress's plan one way or another, you tell her what Lunexis's orders were.
+		Понимая, что Мераксис в любом случае узнает подробности плана твоей Госпожи, ты рассказываешь ей, какими были приказы Лунексис.
 	</p>
 	<p>
-		[meraxis.speech(So she sent you here to trick me into setting her free? That bitch...)] Meraxis sighs, before placing her hands on her hips and declaring in her typical chuuni way, [meraxis.speech(I cannot possibly imagine what foul, dark arts that demon used to force you to submit to her! Thankfully our fates have been intertwined strongly enough to have ensured that you wouldn't betray me. The queen of the Amazons herself needs to be informed of Lunexis's evil powers, otherwise her subjects could be seduced and enslaved to that demon's will. So join me, [pc.name]; we're going to their camp!)]
+		[meraxis.speech(Значит, она подослала тебя, чтобы заставить меня освободить её? Ах ты сучка...)] Мераксис вздыхает, после чего упирает руки в бока и в своей типичной манере чунибья заявляет: [meraxis.speech(Даже представить не могу, какие грязные, темные искусства использовала эта демоница, чтобы заставить тебя подчиниться! К счастью, наши судьбы переплелись достаточно крепко, чтобы ты не предал меня. Самой королеве амазонок нужно сообщить о зловещей силе Лунексис, иначе её подданные могут быть соблазнены и порабощены волей этого демона. Так что иди за мной, [pc.name]; мы отправляемся в их лагерь!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FAILED_URSA"><![CDATA[
 	<p>
-		Having committed to betraying Lunexis, you do as Meraxis says and join her as she leads the way through Elis, out of the western gate, and to the entrance of the Amazons' camp. The sentinels on duty recognise the two of you, and so the [meraxis.race] is able to confidently stride right past them, and with you at her side, is soon standing before Ursa's tent.
+		Решившись на предательство Лунексиса, ты следуешь совету Мераксис и идешь за ней. Она ведет тебя через Элис, мимо западных ворот, прямиком к лагерю амазонок. Часовые узнают вас, так что [meraxis.race] может уверенно пройти мимо них, и вскоре, с тобой подле руки, она оказывается у самого шатра Урсы.
 	</p>
 	<p>
-		[style.speechFeminineStrong(Meraxis. What brings you back here?)] one of the bear-girl guards asks, revealing that Meraxis has already paid Ursa a visit at some point.
+		[style.speechFeminineStrong(Мераксис. Что привело тебя сюда?)] — спрашивает одна из стражниц-медведиц, давая понять, что Мераксис уже успела навестить Урсу ранее.
 	</p>
 	<p>
-		[meraxis.speech(I require an audience with your queen!)] your companion declares, before striking a wild pose and warning, [meraxis.speech(The very fate of your people depends on Ursa receiving the information I hold!)]
+		[meraxis.speech(Мне нужен аудиенция с вашей королевой!)] — заявляет твоя спутница, после чего принимает величественную позу и предостерегает: [meraxis.speech(Сама судьба вашего народа зависит от того, получит ли Урса те сведения, которыми я владею!)]
 	</p>
 	<p>
-		Nodding her head, the larger of the two bear-girl guards gestures for you and Meraxis to go on in. A moment later, and you and the [meraxis.race] are standing in the middle of the queen's tent. Looking back and forth between the two of you from the other side of the table which sits in the centre of the tent, Ursa crosses her arms and asks, [ursa.speech(Well, what is it? Speak quickly, for I have many matters to attend to.)]
+		Кивнув, более крупная из двух стражниц-медведиц жестом приглашает тебя и Мераксис войти. Мгновение спустя вы с [meraxis.race] уже стоите посреди королевского шатра. Урса, сидящая по ту сторону стола в центре шатра, переводит взгляд с одного на другую, скрещивает руки на груди и спрашивает: [ursa.speech(Ну? Говорите же быстрее, у меня полно дел.)]
 	</p>
 	<p>
-		Not wasting any time, Meraxis recounts what you revealed to her in her typical, exaggerated manner of speaking. Upon hearing that you'd submitted to Lunexis and been ordered to help set her free, Ursa shoots you a severe glare, but as Meraxis finally finishes recounting your tale, the queen lets out a deep, relieved sigh and states, [ursa.speech(It seems as though I've underestimated our prisoner. I should have known that a recognised daughter of an elder lilin was capable of something like this... Well, in any case, at least you pulled through in the end, [pc.name], and didn't betray us. I think we'll all agree that it would be wise not to let you see Lunexis again; who knows what she could make you do if you were subjected to any more of her charms.)]
+		Не теряя ни секунды, Мераксис в своей типичной манере, с излишним драматизмом, пересказывает всё то, что ты ей поведал. Услышав, что ты подчинился Лунексис и получил приказ помочь ей на свободу, Урса бросает на тебя суровый взгляд, но когда Мераксис наконец заканчивает свой рассказ, королева издает глубокий, облегченный вздох и произносит: [ursa.speech(Похоже, я недооценила нашу пленницу. Мне следовало знать, что признанная дочь старшей лилин способна на такое... Что ж, в любом случае, по крайней мере, в конце концов ты справился, [pc.name], и не предал нас. Думаю, мы все согласимся, что было бы мудро больше не давать тебе видеться с Лунексис; кто знает, на что она способна тебя толкнуть, если ты снова поддашься её чарам.)]
 	</p>
 	<p>
-		[meraxis.speech(I agree,)] Meraxis chimes in, [meraxis.speech(Whatever foul power that demon has been able to exert over [pc.name] must not be allowed to be harnessed!)]
+		[meraxis.speech(Согласна,)] — вставляет Мераксис, — [meraxis.speech(Какую бы скверну ни смогла навлечь на [pc.name] эта демоница, нельзя допустить, чтобы она использовала эту силу в своих целях!)]
 	</p>
 	<p>
-		Nodding in agreement, Ursa looks over at you and states in her deep voice, [ursa.speech(I don't hold anything against you, [pc.name]; there's no shame in being bested by a demon of that power. Now, with that all settled, I think this would be a good opportunity to give you your reward for assisting me in Themiscyra, Meraxis. You departed so quickly the last time you were here that I wasn't able to show you my deep appreciation...)]
+		Кивнув в знак согласия, Урса переводит взгляд на тебя и произносит своим глубоким голосом: [ursa.speech(Я не держу на тебя зла, [pc.name]; нет позора в том, чтобы проиграть демону такой силы. Теперь, когда всё прояснилось, думаю, это отличный случай вознаградить тебя за помощь мне в Фемискире, Мераксис. В прошлый раз ты ушла так быстро, что я не успела выразить тебе свою глубокую признательность...)]
 	</p>
 	<p>
-		Noticing the hungry look in the bear-girl's eyes, Meraxis seems to quickly understand what exactly this reward entails. Obviously not wanting to be dominantly fucked by the Amazonian queen, she quickly blurts out, [meraxis.speech(Oh! A thousand apologies, but I just remembered! Erm... I left my minions unattended! I need to get back to them! Fare well!)]
+		Заметив голодный блеск в глазах девочки-медведицы, Мераксис, кажется, быстро понимает, что именно подразумевается под этой наградой. Очевидно не желая, чтобы амазонская королева доминировала в постели, она выпаливает: [meraxis.speech(О! Тысяча извинений, но я только что вспомнила! Эмм... я оставила своих бесов без присмотра! Мне нужно скорее к ним! Прощай!)]
 	</p>
 	<p>
-		Not giving the queen any time to respond, Meraxis disappears in a flash of pink light as she casts teleport. Letting out an amused growl, Ursa looks over to you and says, [ursa.speech(I didn't really have time for it right now anyway... I suppose you'd better be on your way as well, [pc.name]. Come back tomorrow if you want to see me again; I'll be busy for the rest of the day.)] 
+		Не давая королеве времени на ответ, Мераксис исчезает во вспышке розового света, используя телепортацию. Издав забавное рычание, Урса смотрит на тебя и говорит: [ursa.speech(Впрочем, сейчас у меня всё равно не было на это времени... Думаю, тебе тоже пора идти, [pc.name]. Возвращайся завтра, если захочешь увидеть меня снова; до конца дня я буду занята.)] 
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FAILED_URSA_LEAVE"><![CDATA[
 	<p>
-		Doing as the queen suggests, you quickly say goodbye and exit her tent. As you [pc.step] back out into the Amazons' camp, you reflect on the miraculous fact that Ursa and Meraxis didn't seem to think any less of you after learning of your submission to Lunexis. Thankfully, they seemed more impressed by your honesty than concerned at your initial betrayal, and so you breathe a sigh of relief as you realise that your relations with the two of them aren't going to suffer from this episode.
+		Следуя совету королевы, ты быстро прощаешься и выходишь из её шатра. Когда ты [pc.step] Назад в лагерь амазонок, ты размышляешь о чудесном факте: Урса и Мераксис, похоже, не стали думать о тебе хуже после того, как узнали о твоём подчинении Лунексис. К счастью, твоя честность впечатлила их больше, чем твое первоначальное предательство, и ты с облегчением вздыхаешь, понимая, что твои отношения с ними не пострадают от этого эпизода.
 	</p>
 	<p>
-		Turning your thoughts back to Lunexis, you can't help but let out a disappointed sigh as you realise that you're not going to be able to get another taste of her cock. Hoping that you'll find another Mistress like her at some point in the future, you continue on your way into the camp and wonder what to do next...
+		Возвращаясь мыслями к Lunexis, ты невольно издаешь разочарованный вздох, осознавая, что тебе больше не суждено отведать её члена. Надеясь, что когда-нибудь в будущем ты встретишь другую Госпожу, подобную ей, ты продолжаешь путь в лагерь, раздумывая, что делать дальше...
 	</p>
 	]]>
 	</htmlContent>
@@ -65,238 +65,237 @@
 	
 	<htmlContent tag="START"><![CDATA[
 	<p>
-		Thinking of how your Mistress will reward you by turning you into her cock-sleeve, you decide to commit to carrying out her orders and try to trick Meraxis into helping you set her free. Knowing the sort of thing that the [meraxis.race] would be interested in, you tell Meraxis that during your interrogation of Lunexis, she revealed to you that the reason for their assault on Themiscyra was to find a secret weapon, said to have been created by Lilith herself. With the defeat of their leader, and not knowing the real reason why they were led there, Lunexis's army will have scattered and abandoned Themiscyra, allowing you to go there and claim this weapon for yourself.
+		Представляя, как Госпожа вознаградит тебя, превратив в свою залупу-чулок, ты решаешь во что бы то ни стало исполнить её приказ и пытаешься обманом заставить Meraxis помочь тебе освободить её. Зная, что именно может заинтересовать [meraxis.race], ты говоришь Meraxis, что во время допроса Lunexis призналась: целью их нападения на Фемисциру был поиск секретного оружия, которое якобы создала сама Lilith. Теперь, когда их предводительница повержена, а истинная причина похода остается тайной, армия Lunexis должна была рассеяться и покинуть Фемисциру, что даст тебе шанс отправиться туда и забрать это оружие себе.
 	</p>
 	<p>
-		[meraxis.speech(So that's why they risked attacking Themiscyra...)] Meraxis responds, clearly believing your every word. Striking a confident pose, she states in her typical, flamboyant manner, [meraxis.speech(We shall journey to Themiscyra, uncover this weapon, and unleash its cataclysmic powers in order to defeat Lunette! Simply lead the way, [pc.name], and soon this artefact shall be ours!)]
+		[meraxis.speech(Так вот почему они рискнули напасть на Фемисциру...)] — отвечает Meraxis, явно веря каждому твоему слову. Приняв уверенную позу, она заявляет в своей типичной эксцентричной манере: [meraxis.speech(Мы отправимся в Фемисциру, отыщем это оружие и высвободим его катаклизмическую мощь, чтобы сокрушить Lunette! Просто веди нас, [pc.name], и скоро этот артефакт будет нашим!)]
 	</p>
 	<p>
-		Continuing with your fabricated tale, you tell Meraxis that Lunexis's directions are too vague, and as such you'll be unable to pinpoint the exact location where the weapon is hidden. As such, you'll need to take the centauress along with you so that she can lead the way to the weapon. 
+		Продолжая свою выдуманную историю, ты говоришь Мераксис, что указания Лунексиса слишком расплывчаты, и потому ты не сможешь точно определить место, где спрятано оружие. Следовательно, тебе нужно взять кентаврисса с собой, чтобы она провела вас к цели.
 	</p>
 	<p>
-		[meraxis.speech(Take Lunexis with us?)] Meraxis asks, clearly startled by your suggestion. Furrowing her brow, she continues, [meraxis.speech(I'm sure that our powers combined would be more than enough to keep her subdued, but it still sounds risky. Has Ursa been informed of all this?)]
+		[meraxis.speech(Взять с собой Лунексис?)] — спрашивает Мераксис, явно ошеломленная твоим предложением. Нахмурившись, она продолжает: [meraxis.speech(Я уверена, что наших объединенных сил будет более чем достаточно, чтобы держать её в узде, но всё равно это звучит рискованно. Урсе уже сообщили об этом?)]
 	</p>
 	<p>
-		Telling Meraxis that the Amazon queen has enough to deal with as it is, you say that you won't need her help, and that what's needed is decisive action before some looter or bandit discovers the weapon before you.
+		Отвечая Мераксис, что у королевы амазонок и так хватает забот, ты говоришь, что её помощь не потребуется, а сейчас нужно действовать решительно, пока какой-нибудь мародер или бандит не отыскал оружие раньше вас.
 	</p>
 	<p>
-		[meraxis.speech(I'm not so sure about this,)] Meraxis says, before stating, [meraxis.speech(I'll speak with Lunexis myself. Once I hear what that demon's talking about I'll make a decision. Come on, [pc.name], let's get going!)]
+		[meraxis.speech(Я не совсем в этом уверена,)] — произносит Мераксис, а затем добавляет: [meraxis.speech(Я поговорю с Лунексис сама. Как только я услышу, о чем болтает этот демон, я приму решение. Пошли, [pc.name], выдвигаемся!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AMAZON_CAMP"><![CDATA[
 	<p>
-		Having committed to loyally serving your Mistress, you do as Meraxis says and join her as she leads the way through Elis, out of the western gate, and to the entrance of the Amazons' camp. The sentinels on duty recognise the two of you, and so the [meraxis.race] is able to confidently stride right past them, and with you at her side, is soon standing before Ursa's tent.
+		Верная своей обязательству служить Госпоже, ты поступаешь так, как сказала Мераксис, и следуешь за ней. Она ведет тебя через Элис, к западным воротам, а затем к входу в лагерь амазонок. Часовые узнают вас, поэтому [meraxis.race] может уверенно пройти мимо них, и, когда ты идешь рядом, она вскоре оказывается у шатра Урсы.
 	</p>
 	<p>
-		[style.speechFeminineStrong(Meraxis. What brings you back here?)] one of the bear-girl guards asks, revealing that Meraxis has already paid Ursa a visit at some point. Looking back and forth between the two of you, she reveals, [style.speechFeminineStrong(Our queen is in the middle of a critically important meeting, and cannot be disturbed for any reason.)]
+		[style.speechFeminineStrong(Меракс? Что привело тебя сюда снова?)] — спрашивает одна из стражниц-медведиц, давая понять, что Меракс уже успела навестить Урсу. Переводя взгляд с одного на другого, она добавляет: [style.speechFeminineStrong(Наша королева сейчас на крайне важном собрании, и беспокоить её ни под каким предлогом нельзя.)]
 	</p>
 	<p>
-		This revelation lends credence to your assertion that Ursa is too busy to get involved in the matter of retrieving a secret weapon, and you utter silent thanks to the queen for choosing this moment in which to hold her meeting. Not deterred by the guard's statement, Meraxis declares in an uncharacteristically-hushed tone, [meraxis.speech(It's not your queen that we're here to see. Let us through, for we need to speak with the prisoner.)]
+		Это откровение лишь подтверждает твои догадки о том, что Урса слишком занята, чтобы вникать в дело о поиске секретного оружия, и ты мысленно благодаришь королеву за то, что она выбрала именно этот момент для своего собрания. Однако Меракс, не смутившись словами стражницы, заявляет непривычно тихим тоном: [meraxis.speech(Нам нужна не твоя королева. Пропусти нас, нам нужно поговорить с узницей.)]
 	</p>
 	<p>
-		Nodding in understanding, one of the two bear-girl guards motions for you to follow her, and so you and Meraxis trail along behind her as she enters the queen's tent. Once inside, you see that almost two dozen Amazons are crowded around the tent's central table, noisily discussing plans on how to recapture their town. Thanks to this commotion, you're able to skirt around the edge of the tent and exit out of the far side without being noticed. Once again finding yourself in the small, walled compound, you and Meraxis leave the bear-girl guard behind as you head straight on over to the large, pale-red tent which is positioned in the centre of this grassy area.
+		Понимающе кивнув, одна из двух стражниц-медведиц жестом приглашает вас следовать за ней, и вы с Меракс идете следом, пока она входит в шатер королевы. Оказавшись внутри, ты видишь, что почти две дюжины амазонок сгрудились вокруг центрального стола, шумно обсуждая планы по возвращению своего города. Благодаря этой суматохе тебе удается проскользнуть вдоль края шатра и незаметно выйти с противоположной стороны. Снова оказавшись в небольшом обнесенном стеной лагере, вы с Меракс оставляете стражницу позади и направляетесь прямиком к большому бледно-красному шатру, стоящему в самом центре этой травянистой поляны.
 	</p>
 	<p>
-		As you open the entrance flap and [pc.step] into the sound-proof tent, you notice a flash of delight in Lunexis's eyes as she sees that Meraxis is with you. Thankfully, the centauress quickly gets control of herself and takes on the part of the indignant demon as the two of you move forwards to stand before her. With a furious scowl on her face, she spits, [lunexis.speech(What the fuck do you two cunts want?! Set me free, you vile wretches, and I might consider taking you as my personal cock-sleeves!)]
+		Когда ты откидываешь входной полог и [pc.step] в звукоизолированную палатку, ты замечаешь вспышку восторга в глазах Лунексис: она видит, что Меракс рядом с тобой. К счастью, кентаврисса быстро берет себя в руки и изображает возмущенного демона, пока вы двое продвигаетесь вперед, чтобы предстать перед ней. С яростной гримасой на лице она выплевывает: [lunexis.speech(Какого хера вам обоим, сучки, нужно?! Освободите меня, мерзкие твари, и, может быть, я даже подумаю о том, чтобы сделать вас своими личными чехлами для члена!)]
 	</p>
 	<p>
-		Feeling your heart pounding in excitement as your Mistress says this, you try to keep your cool as you state that you're here about the secret weapon she mentioned before. Although possessing herculean strength and an unbreakable will, Lunexis isn't known for her intellectual prowess, and so when she hears your talk of a secret weapon, she blurts out, [lunexis.speech(What the fuck are you talking about, slave?! Set me free!)]
+		Чувствуя, как сердце бешено колотится от возбуждения после слов Госпожи, ты стараешься сохранять спокойствие и заявляешь, что пришли из-за того секретного оружия, о котором она упоминала ранее. Несмотря на геркулесову силу и несокрушимую волю, Лунексис не славится своим интеллектуальным превосходством, поэтому, услышав про секретное оружие, она выпаливает: [lunexis.speech(О чем ты, блять, несешь, раб?! Освободи меня!)]
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="AMAZON_CAMP_REMIND_HER"><![CDATA[
 	<p>
-		With your plan teetering on the brink of failure, you glare at Lunexis and pointedly 'remind her' of what she told you; there's a secret weapon hidden in Themiscyra, and she's the only one who knows exactly where it is. Finally understanding what's going on, the brutish centauress grins and declares, [lunexis.speech(Forget about that, you dumb cunt! I'll never let you have it! That weapon is mine!)]
+		Когда твой план оказывается на грани провала, ты свирепо смотришь на Лунексис и нарочито «напоминаешь» ей о том, что она сама тебе сказала: в Фемискире спрятано секретное оружие, и только она знает, где именно оно находится. Наконец осознав, что происходит, грубая кентаврисса оскаливается и заявляет: [lunexis.speech(Забудь об этом, тупая пизда! Я никогда не отдам его вам! Это оружие — моё!)]
 	</p>
 	<p>
-		Thankfully, in her excitement at the prospect of obtaining a powerful relic, Meraxis hasn't noticed Lunexis's odd behaviour, and after pointing an accusatory finger at the centauress, she demands, [meraxis.speech(Tell us what you know, you evil beast! That weapon shall be ours!)]
+		К счастью, ослепленная предвкушением обладания могущественной реликвией, Меракс еще не заметила странного поведения Лунексис. Ткнув в сторону кентавриссы обвиняющим пальцем, она требует: [meraxis.speech(А ну, выкладывай всё, что знаешь, злобная тварь! Это оружие будет нашим!)]
 	</p>
 	<p>
-		[lunexis.speech(The only thing that's going to be yours is my fat cock as I ram it into your cunt!)] the centauress bellows.
+		— [lunexis.speech(Единственное, что будет твоим — это мой толстый член, когда я всажу его тебе в киску!)] — гремит кентаврисса.
 	</p>
 	<p>
-		[meraxis.speech(Uncooperative as ever, I see,)] Meraxis states, before grinning and saying, [meraxis.speech(Well, we don't need you to tell us where it is. We'll be making you show it to us in just a moment...)]
+		— [meraxis.speech(Всё такая же неразговорчивая, я вижу,)] — констатирует Меракс, после чего ухмыляется и добавляет: [meraxis.speech(Ну, нам и не обязательно, чтобы ты сама сказала, где оно. Мы заставим тебя показать его нам... буквально через мгновение...)]
 	</p>
 	<p>
-		With that, the [meraxis.race] turns to you and asks, [meraxis.speech(Are you certain that it's safe to teleport to Themiscyra? I haven't heard anything about the movements of Lunexis's army...)]
+		С этими словами [meraxis.race] поворачивается к тебе и спрашивает: [meraxis.speech(Ты уверен, что телепортация в Фемискиру безопасна? Я ничего не слышала о передвижениях армии Лунексис...)]
 	</p>
 	<p>
-		Reassuring Meraxis by telling her that you've checked it out and that it's safe, you try to make your lie a little more believable by warning her that there might be the occasional bandit. Not wanting to give the [meraxis.race] any time in which to stop and think, you say that you want to get this over and done with as quickly as possible, and to avoid as much travel as you can, she should teleport the three of you straight to the town's plaza.
+		Успокаивая Меракс заверениями, что ты всё проверил и всё безопасно, ты пытаешься сделать свою ложь более правдоподобной, предупреждая, что по пути могут встретиться случайные бандиты. Не желая давать [meraxis.race] времени на раздумья, ты говоришь, что хочешь поскорее со всем покончить, и чтобы избежать лишних разъездов, ей стоит телепортировать вас троих прямиком на городскую площадь.
 	</p>
 	<p>
-		[meraxis.speech(Ok, let's do this,)] Meraxis states, before turning to Lunexis and warning her, [meraxis.speech(Try to run away or attack us, and you'll regret it! You lost once to us already, and this time you don't even have your weapons, so you stand no chance against us. Do as I say, and I won't have to hurt you.)]
+		[meraxis.speech(Ладно, приступим,)] — заявляет Меракс, после чего поворачивается к Лунексис и предостерегает её: [meraxis.speech(Попробуй только сбежать или напасть на нас — и ты пожалеешь! Ты уже проигрывала нам однажды, а на этот раз у тебя даже нет оружия, так что шансов у тебя нет. Делай, как я говорю, и мне не придётся причинять тебе боль.)]
 	</p>
 	<p>
-		With that, Meraxis begins to channel her energy, and by sacrificing a large amount of the essences she's absorbed into her aura, she manages to remove the seal that's been placed on Lunexis's collar. Realising that she's about to get her revenge, a devious smirk settles on Lunexis's face as she impatiently unclasps the metal collar from around her neck and hurls it to the ground. Fixing her gaze on Meraxis's face, she sneers, [lunexis.speech(Don't worry, bitch, you have my word that I won't leave you.)]
+		С этими словами Меракс начинает направлять свою Энергию, и, пожертвовав огромным количеством Эссенций, поглощённых в её Ауру, ей удаётся снять печать с ошейника Лунексис. Понимая, что месть близка, Лунексис хитро ухмыляется; она нетерпеливо расстегивает металлический ошейник на шее и швыряет его на землю. Приковав взгляд к лицу Меракс, она цедит сквозь зубы: [lunexis.speech(Не волнуйся, сучка, даю слово — я тебя не оставлю.)]
 	</p>
 	<p>
-		[meraxis.speech(You'd better not,)] Meraxis replies, before summoning her energy and beginning to cast the teleportation spell. The last thing you see before a flash of pinkish purple light envelops you is a wild, triumphant grin on your Mistress's face...
+		[meraxis.speech(Лучше бы не опаздывать,)] — отвечает Меракс, прежде чем призвать свою Энергию и начать читать Заклинание телепортации. Последнее, что ты видишь перед тем, как тебя окутывает вспышка розовато-пурпурного света, — это дикую, торжествующую ухмылку на лице твоей Госпожи...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TELEPORTED"><![CDATA[
 	<p>
-		An instant later, and the three of you find yourselves standing back in the middle of Themiscyra's plaza. Just as Lunexis had hoped, her army is still here, and as the purple flash dies away, you glance around to see that hundreds of demonic centaurs are looking your way. Stepping forwards, Lunexis roughly grabs hold of you, before rearing up and pointing at Meraxis as she booms, [lunexis.speech(Get her before she can escape!)]
+		Мгновение спустя вы втроём обнаруживаете себя посреди площади Фемисциры. Как и надеялась Лунексис, её армия всё ещё здесь, и когда пурпурная вспышка гаснет, ты оглядываешься и видишь, что сотни демонических кентавров смотрят прямо на вас. Сделав шаг вперёд, Лунексис грубо хватает тебя, а затем, выпрямившись, указывает на Меракс и громогласно командует: [lunexis.speech(Взять её, пока она не сбежала!)]
 	</p>
 	<p>
-		Letting out a triumphant laugh, your Mistress watches as her army rushes forwards to attack Meraxis. Possessing considerable arcane and combat skills, the [meraxis.race] manages to floor the first centauresses who reach her, and as Lunexis realises that this fight might take a while, she barks out an order to a nearby centauress, [lunexis.speech(Bring me my clothes and weapons, you worthless scum! Oh, and bring a collar for my slave, too!)]
+		Издавая торжествующий смех, твоя Госпожа наблюдает, как её армия несется вперед, чтобы атаковать Меракс. Обладая недюжинными навыками боя и магией Арканы, [meraxis.race] умудряется повалить на землю первых подоспевших к ней кентаврисс; и когда Лунексис понимает, что битва может затянуться, она выкрикивает приказ ближайшей кентавриссе: [lunexis.speech(Принесите мне мою одежду и оружие, ничтожное отребье! Ах да, и ошейник для моего раба тоже принесите!)]
 	</p>
 	<p>
-		As Meraxis continues to fight against the never-ending tide of demonic centauresses, your Mistress uses her four, strong arms to roughly strip you naked. As her subordinate quickly returns with the items she asked for, Lunexis clasps a heavy metal slave collar around your neck, before donning her cloak and hefting her four morning stars. Maniacally laughing as she finds herself once again free and at the head of her army, she looks down at you once again and snaps, [lunexis.speech(What are you waiting for, cock-sleeve?! Get me hard with your mouth, so that I'm ready to rut that bitch once my army's beaten her!)]
+		Пока Меракс продолжает сражаться с бесконечным потоком демонических кентаврисс, твоя Госпожа своими четырьмя сильными руками грубо раздевает тебя догола. Когда её подчиненная быстро возвращается с вещами, которые она просила, Лунексис застегивает на твоей шее тяжелый металлический рабский ошейник, после чего накидывает плащ и берет в руки четыре булавы. Маниакально хохоча от того, что она снова на свободе и во главе своей армии, она вновь смотрит на тебя и рявкает: [lunexis.speech(Чего ты ждешь, чехол для члена?! Разбуди во мне возбуждение своим ртом, чтобы я была готова трахнуть эту суку, как только моя армия её размотает!)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TELEPORTED_BLOWJOB"><![CDATA[
 	<p>
-		Hurrying to obey, you drop down beneath your Mistress and lean in between her rear legs. Planting a big, wet kiss on her thick sheath, you're quickly rewarded for your efforts as her massive, horse-like cock pushes out and rises into an erection. Continuing to lick, kiss, and suck on her massive, throbbing shaft, you can't help but let out a series of lewd, hungry moans.
+		Спешно подчиняясь, ты опускаешься под Госпожу и приникаешь к пространству между её задними ногами. Оставив большой влажный поцелуй на её толстой препуции, ты тут же получаешь награду за свои старания: её массивный, лошадиный член вырывается наружу и встает в эрекцию. Продолжая лизать, целовать и сосать её огромный пульсирующий ствол, ты невольно издаешь серию похотливых, голодных стонов.
 	</p>
 	<p>
-		[lunexis.speech(What's taking you so long, you useless cunts?!)] Lunexis rages at her subordinates as they continue to fight against Meraxis. As you're concentrating on servicing your Mistress's cock, you can't see how the fight is going, but you're alerted to its end by a sudden throbbing of Lunexis's cock as she triumphantly cries out, [lunexis.speech(Yes! Quick! Collar that bitch before she teleports away!)]
+		[lunexis.speech(Чего вы копаетесь, бесполезные вы сучки?!)] — Лунексис неистовствует на своих подчиненных, пока те продолжают сражаться с Мераксис. Пока ты сосредоточенно обслуживаешь член своей Госпожи, ты не видишь хода битвы, но внезапная пульсация члена Лунексис и её триумфальный крик [lunexis.speech(Да! Быстро! Наденьте на эту суку ошейник, пока она не телепортировалась!)] извещают тебя о её победе.
 	</p>
 	<p>
-		Trotting forwards, your Mistress leaves you scrambling to follow after her as she approaches the defeated form of Meraxis. Looking over at her, you see the [meraxis.race] attempting to summon the last of her strength in order to cast teleport. Before she can finish the spell, however, the centauress who felled her quickly clasps an iron collar around her neck, which drains Meraxis's arcane energy and interrupts her casting. Just like Lunexis, the muscular, purple-skinned brute of a centauress who felled Meraxis has four arms, allowing her to hold your old companion down while quickly tearing off her clothes. Once Meraxis is wearing nothing but a few strips of torn cloth, the huge, beast of a centauress uses her upper arms to effortlessly lift her prey into the air, while using her lower two to spread her labia and roughly shove her thick fingers into her cunt. Hungrily grunting as she fingers Meraxis, she looks at Lunexis and declares, [style.speechFeminineStrong(This bitch is mine!)]
+	Твоя Госпожа семенит вперед, заставляя тебя спешно следовать за ней к поверженной Мераксис. Посмотрев на неё, ты видишь, как [meraxis.race] пытается собрать последние силы, чтобы сотворить заклинание телепортации. Однако прежде чем она успевает закончить, кентаврида, сразившая её, быстро застегивает на её шее железный ошейник, который высасывает арканную энергию Мераксис и прерывает заклинание. Как и у Лунексис, у этой мускулистой фиолетовокожей кентавриды-зверя четыре руки, что позволяет ей удерживать твою бывшую спутницу, одновременно быстро срывая с неё одежду. Когда на Мераксис остаются лишь обрывки ткани, огромная кентаврида верхними руками без усилий поднимает добычу в воздух, а нижними — раздвигает её половые губы и грубо засовывает толстые пальцы в её щель. Голодно хрюкая, пока она ласкает Мераксис пальцами, она смотрит на Лунексис и заявляет: [style.speechFeminineStrong(Эта сучка — моя!)]
 	</p>
 	<p>
-		Angrily stomping her hoofs on the ground, and shattering a flagstone in the process, Lunexis hefts her weapons and roars, [lunexis.speech(As the one who defeated her, Lunette's law gives you that right, but I challenge you to a duel for her!)]
+		Разгневанная Лунексис яростно топает копытами, отчего одна из каменных плит под ногами разлетается вдребезги. Схватив оружие, она издает громовой рев: [lunexis.speech(Раз ты одолела её, закон Лунетт дает тебе такое право, но я бросаю тебе вызов! Сразись со мной в дуэли за неё!)]
 	</p>
 	<p>
-		The muscular, purple-skinned centauress lets out an annoyed grunt, and with the fingers of one hand stuffed deep into Meraxis's cunt, she moves her other up to roughly molest the [meraxis.race]'s tits, growling as she does so, [style.speechFeminineStrong(After you vanished, I was recognised by our sisters as the army's leader. I'll stand down without a fight, but only on the condition that you let me keep this bitch.)]
+		Мускулистая фиолетовокожая кентаврисса раздраженно рычит. Засунув пальцы одной руки глубоко в щель Мераксис, она другой рукой грубо сжимает сиськи [meraxis.race], утробно рыча при этом: [style.speechFeminineStrong(После твоего исчезновения сестры признали во мне предводительницу армии. Я отступлю без боя, но лишь при одном условии: ты позволишь мне оставить эту сучку себе.)]
+	</p>
+	<p>		Троясь вперед, Лунексис подходит вплотную к другой кентавриссе, зажимая Мераксис между своими шестью грудями и четырьмя грудями грубой соперницы. Их носы почти соприкасаются; две титанические, мускулистые кентавриссы мгновение сверлят друг друга яростными взглядами, пока Лунексис, не услышав одобрительных криков от своих подчиненных, не отступает с сердитым рыком. Окинув взглядом свое войско, она громко объявляет: [lunexis.speech(Да будет так, я подчинюсь закону Лунетт! Я сдаю эту шлюху, и тем самым возвращаю себе власть!)]
 	</p>
 	<p>
-		Trotting forwards, Lunexis steps right up in front of this other centauress, squishing Meraxis between her six breasts and the brutish challenger's four. With their noses practically touching, the two titanic, muscular centauresses glare at one another for a moment, before Lunexis, realising that there are no shouts of support coming from her other subordinates, steps back with an angry grunt. Looking around at her army, she loudly declares, [lunexis.speech(I shall obey Lunette's law! I surrender this slut, and as such I'm back in charge!)]
+		Когда противостояние завершено, фиолетовая кентавриха тащит побежденную, тяжело дышащую Мераксис к ближайшим руинам обрушившейся колонны. Бросив её на большой кусок каменной кладки, она встает на дыбы и оседлывает [meraxis.race], после чего быстро приставляет свой массивный, твердый как камень конский член к её щели. С триумфальным ревом она яростно толкается вперед, вонзая свой толстый, звериный ствол глубоко в [meraxis.pussy+] Мераксис. Громко рыча над ней, она насмехается между грубыми толчками: [style.speechFeminineStrong(Приятнее, чем мои пальцы, а, шлюха?! ~Ммм!~ Теперь ты моя, сучка!)]
 	</p>
 	<p>
-		With this confrontation resolved, the purple centauress drags the defeated, panting figure of Meraxis over to the nearby ruins of a fallen column. Throwing her down over a large piece of masonry, she rears up and mounts the [meraxis.race], before quickly lining her massive, rock-hard horse-cock up to her cunt. With a triumphant roar, she violently thrusts forwards, ramming her fat, animalistic shaft deep into Meraxis's [meraxis.pussy+]. Grunting down at her, she taunts in-between rough thrusts, [style.speechFeminineStrong(Feels better than my fingers, huh, slut?! ~Mmm!~ You're mine now, bitch!)]
-	</p>
-	<p>
-		Clearly annoyed at having to surrender Meraxis in exchange for regaining control over her army, Lunexis breaks yet another of the plaza's flagstones beneath a furious stomp of her huge hoofs. Having lost her prize, Lunexis turns her attention to you, and after letting out one last angry grunt, she smirks and states, [lunexis.speech(At least I've got one new slave. You did well, my obedient cock-sleeve. Now it's time for your reward!)]
+		Очевидно раздраженная тем, что ей приходится отдать Мераксис в обмен на возвращение контроля над своей армией, Лунексис в ярости разбивает очередную плиту площади мощным ударом своих огромных копыт. Потеряв свой приз, Лунексис переключает внимание на тебя; издав последний сердитый хрип, она ухмыляется и произносит: [lunexis.speech(По крайней мере, у меня появился новый раб. Ты хорошо потрудился, моя послушная залупа! Теперь пора получить награду!)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TELEPORTED_SEX"><![CDATA[
 	<p>
-		Using one of her huge hoofs, Lunexis roughly kicks you down, and as she swings her gigantic horse-cock towards you, she growls, [lunexis.speech(Get on all fours, cunt!)]
+		Одним из своих огромных копыт Лунексис грубо сбивает тебя с ног, и, занося над тобой свой гигантский конский член, она рычит: [lunexis.speech(Встань на четвереньки, пизда!)]
 	</p>
 	<p>
-		More than happy to submit to her, you quickly do as you're told and drop down onto all fours before the demonic centauress. Wasting no time, she
+		Более чем готовый подчиниться ей, ты быстро делаешь то, что велено, и встаешь на четвереньки перед демонической кентаврихой. Не теряя времени даром, она
 		#IF(pc.hasVagina() || game.isAnalContentEnabled())
-			 quickly steps forwards and mounts you, before ramming her monstrous, fully-erect cock as deep as possible into your exposed
+			 быстро шагает вперед и насаживается на тебя, с силой вгоняя свой монструозный, полностью эрегированный член так глубоко, как только может, в твою открытую
 			#IF(pc.hasVagina())
 				 [pc.pussy].
 			#ELSE
 				 [pc.asshole].
 			#ENDIF
 		#ELSE
-			 quickly steps around and mounts your face, before ramming her monstrous, fully-erect cock as deep as possible down your throat.
+			 быстро обходит тебя и усаживается сверху, прежде чем с силой вогнать свой чудовищный, полностью эрегированный член так глубоко в твое горло, насколько это возможно.
 		#ENDIF
-		 Keeping her fat, throbbing shaft hilted deep inside of you, she ignores your squirming and the lewd moaning noises that you're making and calls over a few nearby centauresses. Acting as though you don't exist, she spends the next few minutes ordering her subordinates to ready the palace for her arrival and to send a report to Lunette. Only after this business has been sorted out does Lunexis return her attention to you, and after bucking her hips into you a few times, she muses to herself, [lunexis.speech(There really does seem to be potential for this slut... I suppose I'll have [pc.herHim] trained like I promised.)]
+		 Оставив свой толстый, пульсирующий член глубоко внутри тебя, она игнорирует твои извивания и похотливые стоны, выкликая нескольких ближайших кентаврид. Ведя себя так, будто тебя не существует, она тратит следующие несколько минут на то, чтобы отдать подчиненным приказы подготовить дворец к своему прибытию и отправить отчет Лунетт. Только когда с делами покончено, Лунексис вновь обращает на тебя внимание, и, несколько раз мощно вбившись тебе в нутро, задумчиво произносит: [lunexis.speech(В этой шлюхе и впрямь есть потенциал... Полагаю, я обучу [pc.herHim], как и обещала.)]
 	</p>
 	<p>
-		Having come to a decision on what to do with you, Lunexis pulls her hips back, allowing her throbbing, hot horse-cock to slide mostly out of your
+		Приняв решение, что с тобой делать, Лунексис отводит бедра назад, позволяя своему пульсирующему, горячему конскому члену почти полностью выйти из твоего
 		#IF(pc.hasVagina())
 			 [pc.pussy],
 		#ELSEIF(game.isAnalContentEnabled())
 			 [pc.asshole],
 		#ELSE
-			 mouth,
+			 рта,
 		#ENDIF
-		 before ruthlessly thrusting forwards and forcing it deep inside of you once again. Beginning to repeat this process, she addresses you by grunting, [lunexis.speech(Forget whatever life you had, cunt. ~Mmm!~ You're my cock-sleeve now, and you're going to be trained to love it!)]
+		 прежде безжалостно толкнувшись вперед и снова вогнав его глубоко в тебя. Начиная повторять этот процесс, она обращается к тебе с хриплым стоном: [lunexis.speech(Забудь о любой жизни, которую ты знала, сучка. ~Ммм!~ Теперь ты — моя чехол-блядь для члена, и тебя научат обожать это!)]
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="AFTER_SEX"><![CDATA[
 	<p>
-		Snapping her fingers at you, Lunexis points back and down towards her groin, before commanding, [lunexis.speech(Lick my cock clean, slut.)]
+		Щелкнув пальцами, Лунексис указывает тебе на свою промежность, а затем приказывает: [lunexis.speech(Вылижи мой член дочиста, сучка.)]
 	</p>
 	<p>
-		Completely at her mercy, and more than happy to do as you're told, you obediently crawl beneath your Mistress's horse body and begin to lick all traces of her cum from her fat, hot horse-cock. As you do this, you're able to look over to one side to see that Meraxis, with cum drooling out of her well-fucked cunt, has her face buried in her captor's
+		Находясь в полной её власти и будучи более чем готовой беспрекословно подчиняться, ты послушно ползешь под лошадиное тело своей Госпожи и начинаешь слизывать все следы её спермы с её толстого, горячего конского члена. Пока ты это делаешь, тебе удается взглянуть в сторону и увидеть, что Мераксис, из чьей отъебанной киски течет сперма, уткнулась лицом в...
 		#IF(game.isAnalContentEnabled())
-			 ass as she performs anilingus on her.
+			когда та делает ей анилингус.
 		#ELSE
-			 pussy as she performs cunnilingus on her.
+			когда та делает ей куннилингус.
 		#ENDIF
-		 Grunting in pleasure, the muscular, purple-skinned centauress shouts, [style.speechFeminineStrong(Get your tongue in deep, you dumb bitch! I'll have you cumming from this by the time I'm finished with you!)]
+		 Громко стоная от удовольствия, мускулистая фиолетовокожая кентаврида кричит: [style.speechFeminineStrong(Засунь язык поглубже, тупая сучка! К тому времени, как я закончу, ты будешь кончать от одного этого!)]
 	</p>
 	<p>
-		[lunexis.speech(I need more than this,)] Lunexis suddenly sighs, before forcefully ramming her cock down your throat. Pinning you to the floor with her gigantic shaft buried deep inside of you, she grunts, [lunexis.speech(~Aah!~ That's better!)] 
+		[lunexis.speech(Мне нужно нечто большее,)] Лунексис внезапно вздыхает, а затем с силой вгоняет свой член тебе в глотку. Прижимая тебя к полу своим гигантским стволом, глубоко засевшим внутри тебя, она кряхтит: [lunexis.speech(~Аах!~ Вот так-то лучше!)] 
 	</p>
 	<p>
-		A few moments later, and Lunexis lets out a deep, erotic grunt, before spurting a huge load of hot demonic cum directly into your stomach. Panting and moaning, the demonic centauress then slides her softening shaft out of your mouth, before ordering one of her subordinates to drag you along behind her as she trots off towards the palace.
+		Спустя несколько мгновений Лунексис издает глубокий эротический стон и извергает огромную порцию горячей демонической спермы прямо тебе в желудок. Тяжело дыша и стоная, демоническая кентаврисса вытягивает свой обмякший член из твоего рта, а затем приказывает одному из своих подчиненных тащить тебя следом за собой, пока она галопом направляется к дворцу.
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="PALACE"><![CDATA[
 	<p>
-		Treated like a completely worthless slave, you find yourself being unceremoniously dragged along behind Lunexis as she climbs the winding staircase that leads up to the palace's entrance. Meraxis is similarly dragged along behind you while her captor, who is clearly second-in-command behind Lunexis, strides after her. Once inside, the [meraxis.race] is dragged off to the part of the palace which has been claimed by the purple-skinned centauress, while you're taken to the throne room and chained to a pillar.
+		С тобой обращаются как с абсолютно никчемной рабыней: тебя бесцеремонно тащат позади Лунексис, пока она поднимается по винтовой лестнице, ведущей к входу во дворец. Мераксис тащат так же позади тебя, а её захватчица — явно правая рука Лунексис — шагает следом. Оказавшись внутри, [meraxis.race] уводят в ту часть дворца, которую заняла фиолетовокожая кентаврисса, в то время как тебя ведут в тронный зал и приковывают цепями к колонне.
 	</p>
 	<p>
-		For the next several hours you're left alone while Lunexis meets with her lieutenants to plan their next move. Just when you think you've been forgotten, a group of a dozen or so scantily-clad slaves approach. Their leader, a heavily-pierced and tattooed horse-girl, looks down at you and identifies the group by saying, [style.speechFeminine(We are Lunexis's cock-sleeves, and you are our newest member. We live to service our divine queen, and crave nothing more than to be stuffed full of her perfect cock.)]
+		Следующие несколько часов тебя оставляют в одиночестве, пока Лунексис встречается со своими лейтенантами, планируя следующий шаг. И как раз в тот момент, когда ты уже начинаешь думать, что о тебе забыли, к тебе приближается группа из дюжины полураздетых рабынь. Их предводительница, лошадиная дева, покрытая множеством пирсинга и татуировок, смотрит на тебя сверху вниз и представляет группу: [style.speechFeminine(Мы — «чехлы» Лунексис, а ты — наш новый член. Мы живем, чтобы служить нашей божественной королеве, и не жаждем ничего, кроме как быть набитыми её идеальным членом.)]
 	</p>
 	<p>
-		Dropping the wispy, translucent skirt which was concealing her genitals, this horse-girl reveals that she's sporting a massive, and very familiar-looking, horse-cock. Nodding as she sees the look of recognition in your face, she reveals, [style.speechFeminine(Yes, my cock has the exact same proportions as that of Lunexis. You're to be trained on my cock so that you'll be proficient at servicing your queen. We begin your training immediately.)]
+		Сбросив прозрачную, почти невесомую юбку, скрывавшую её лоно, эта кобылка являет миру массивный и до боли знакомый тебе конский член. Заметив на твоём лице узнавание, она понимающе кивает и произносит: [style.speechFeminine(Да, мой член имеет точно такие же пропорции, как у Лунексис. Тебя будут обучать на моём члене, чтобы ты научилась мастерски обслуживать свою королеву. Начнём твою тренировку немедленно.)]
 	</p>
 	<p>
-		At the horse-girl's order, four of the other slaves step forwards and hold you down. Stroking her shaft so that it quickly rises to full erection, the leader of Lunexis's cock-sleeves squats down and roughly rams her cock deep down your throat. Keeping it hilted for what seems like an eternity, she then starts ruthlessly face-fucking you, and can't help but moan in pleasure as she enjoys giving you a taste of your new life...
+		По приказу кобылки четверо других рабынь делают шаг вперед и прижимают тебя к земле. Поглаживая свой ствол так, чтобы он быстро встал в полную эрекцию, предводительница «прислужниц члена» Лунексис приседает и грубо вонзает свой член тебе глубоко в глотку. Удерживая его внутри, кажется, целую вечность, она начинает беспощадно трахать тебе лицо, не в силах сдержать стоны наслаждения — она упивается тем, что дает тебе почувствовать вкус твоей новой жизни...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TRAINED"><![CDATA[
 	<p>
-		Having already accepted the fact that you're to become one of Lunexis's cock-sleeves, you happily consume several mind-altering potions which are given to you by the horse-girl slave, which make you more open to the concept of being another's property while simultaneously causing memories of your life before meeting Lunexis to become foggy and confusing. Thanks to these potions, as well as your relentless schedule of being fucked, exhibited, and forced to submissively serve the other cock-sleeves, you soon start to call yourself 'cock-sleeve' and see yourself as one of the group.
+		Уже смирившись с тем, что тебе суждено стать одним из «чехлов» Лунексис, ты с радостью поглощаешь несколько изменяющих сознание зелий, предложенных рабыней-лошадями. Эти эликсиры делают тебя более податливым к мысли о том, что ты — чья-то собственность, и одновременно заставляют воспоминания о жизни до встречи с Лунексис тускнеть и путаться. Благодаря этим зельям, а также изнурительному графику, состоящему из непрерывного траха, публичных показов и принудительного подчинения другим «чехлам», ты вскоре начинаешь называть себя «чехлом» и искренне ощущаешь себя частью этой группы.
 	</p>
 	<p style='text-align:center;'>
 		...
 	</p>
 	<p>
-		Two months pass in this manner, and while the other cock-sleeves are regularly called out to service your queen, you're never asked for. The horse-girl slave, who like all of you cock-sleeves has no name, responds to any question of being used by Lunexis by saying something along the lines of, [style.speechFeminine(Your training is not yet finished. Now swallow my cock and stay still while I fill you with cum.)]
+		Так проходят два месяца: пока остальных членов «кок-сливов» регулярно вызывают на службу к твоей королеве, тебя всё не зовут. Девушка-кобылка, у которой, как и у всех вас, нет имени, на любые вопросы о том, используют ли её Лунексис, отвечает что-то вроде: [style.speechFeminine(Твоё обучение ещё не закончено. А теперь глотай мой член и не дергайся, пока я наполняю тебя спермой.)]
 	</p>
 	<p style='text-align:center;'>
 		...
 	</p>
 	<p>
-		After another month, on one day after spending all morning fucking you and pumping you full of cum, the horse-girl suddenly declares, [style.speechFeminine(Your preliminary training is finished. Now we need to get you specialised. I think I already know what's best for you, but let's hear what you think. How best do you like taking my cock?)]
+		Спустя ещё месяц, в один из дней, проведя всё утро в том, чтобы трахать тебя и накачивать спермой, кобылка внезапно заявляет: [style.speechFeminine(Твоя предварительная подготовка завершена. Теперь пора переходить к специализации. Думаю, я уже знаю, что для тебя лучше всего, но давай послушаем твоё мнение. Как тебе больше всего нравится принимать мой член?)]
 	</p>
 	<p>
-		Dropping her thick, meaty shaft down onto your face, the horse-girl smirks as you breathe in the musky scent of her massive cock and wonder how to answer...
+		Обрушив свой толстый, мясистый ствол прямо тебе на лицо, кобылка ухмыляется, пока ты вдыхаешь мускусный запах её огромного члена и гадаешь, что же ей ответить...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TRAINED_ORAL"><![CDATA[
 	<p>
-		In love with the taste of her cock and being able to cum from simply licking, kissing, and swallowing her thick, hot shaft, you tell the horse-girl that you want to be able to give Lunexis the best blowjobs she's ever had. Nodding her head as she hears you say this, the horse-girl roughly rams her erect horse-cock down your throat, saying as she does so, [style.speechFeminine(I knew right from the first moment I saw you that you were a dirty oral whore. Let's turn your passion into an obsession, and get your throat trained to take our queen's cock.)]
+		Влюблённый во вкус её члена и в то, что ты можешь кончать, просто лизая, целуя и заглатывая её горячий толстый ствол, ты говоришь кобылке, что хочешь научиться делать Лунексис лучший минет в её жизни. Услышав это, кобылка кивает и грубо вбивает свой эрегированный лошадиный член тебе в глотку, приговаривая: [style.speechFeminine(С самого первого взгляда я поняла, что ты грязная оральная шлюха. Давай превратим твою страсть в одержимость и натренируем твою глотку принимать член нашей королевы.)]
 	</p>
 	<p>
-		Happily taking the horse-girl's cock fully down your throat, you completely lose yourself to the idea of becoming Lunexis's oral cock-sleeve. That day you end up swallowing load after load of the horse-girl's cum, each time feeling like you'll be a little better at orally servicing Lunexis's cock...
+		С наслаждением заглатывая член кобылки целиком, ты полностью отдаешься мысли о том, чтобы стать оральным членом для Лунексис. В тот день ты глотаешь порцию за порцией спермы кобылки, и с каждым разом чувствуешь, что всё лучше и лучше справляешься с тем, чтобы обслуживать член Лунексис ртом...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TRAINED_VAGINAL"><![CDATA[
 	<p>
-		In love with the feeling of her cock being rammed deep into your cunt, and being able to cum from the first touch of her flared head against your [pc.labia+], you tell the horse-girl that you want to be able to be the best fuck that Lunexis has ever had. Nodding her head as she hears you say this, the horse-girl slaps her erect horse-cock against your pussy, before ramming it deep inside and saying as she does so, [style.speechFeminine(I knew right from the first moment I saw you that you were born to be a cock-sleeve. Let's turn your passion into an obsession, and get your cunt trained to take our queen's cock.)]
+		Влюбленная в ощущение её члена, глубоко вбитого в твою киску, и в то, что ты кончаешь от первого же касания её расширенной головки к твоей [pc.labia+], ты говоришь кобылке, что хочешь стать лучшей трахой в жизни Лунексис. Услышав это, кобылка кивает, хлопает своим эрегированным лошадиным членом по твоей щелке, а затем с силой вбивает его глубоко внутрь, приговаривая: [style.speechFeminine(Я с самого первого взгляда поняла, что ты рождена быть оральным членом. Давай превратим твою страсть в одержимость и приучим твою киску принимать член нашей королевы.)]
 	</p>
 	<p>
-		Happily moaning as the slave hilts her fat horse-cock in your pussy, you completely lose yourself to the idea of becoming Lunexis's obedient cock-sleeve. That day you end up taking load after load of the horse-girl's cum, each time feeling like your pussy will be a little better at making Lunexis's cock feel good...
+		Счастливо стоная, когда рабыня вгоняет основание своего толстого лошадиного члена в твою киску, ты полностью отдаешься мысли о том, чтобы стать послушным оральным членом для Лунексис. В тот день ты принимаешь порцию за порцией спермы кобылки, и с каждым разом чувствуешь, что твоя киска всё лучше и лучше заставляет член Лунексис получать удовольствие...
 	</p>
 	]]>
 	</htmlContent>
 
 	<htmlContent tag="TRAINED_ANAL"><![CDATA[
 	<p>
-		In love with the feeling of her cock being rammed deep into your ass, and being able to cum from the first touch of her flared head against your [pc.asshole+], you tell the horse-girl that you want to be able to be the best anal slut that Lunexis has ever had. Nodding her head as she hears you say this, the horse-girl slaps her erect horse-cock against your ass, before ramming it deep inside your butt and saying as she does so, [style.speechFeminine(I knew right from the first moment I saw you that you were a dirty butt slut. Let's turn your passion into an obsession, and get your ass trained to take our queen's cock.)]
+		Обожаешь это чувство, когда её член глубоко вколачивается в твою задницу, и ты готов кончать от одного лишь прикосновения её расширенной головки к твоему [pc.asshole+]. Ты признаешься лошадке, что хочешь стать лучшей анал-шлюхой, которая когда-либо была у Лунексис. Услышав это, она кивает, хлопает своим эрегированным конским членом по твоей заднице, а затем с силой вбивает его глубоко внутрь тебя, произнося: [style.speechFeminine(Я с самого первого взгляда поняла, что ты грязная задница-шлюшка. Давай превратим твою страсть в одержимость и натренируем твою попку принимать член нашей королевы.)]
 	</p>
 	<p>
-		Happily moaning as the slave hilts her fat horse-cock in your asshole, you completely lose yourself to the idea of becoming Lunexis's anal cock-sleeve. That day you end up taking load after load of the horse-girl's cum, each time feeling like your asshole will be a little better at making Lunexis's cock feel good...
+		Счастливо стоная, когда рабыня вгоняет свой толстый конский член в твой анус, ты полностью растворяешься в мысли о том, чтобы стать живым чехлом для члена Лунексис. В тот день ты принимаешь порцию за порцией спермы лошадки, и каждый раз чувствуешь, что твоя задница становится всё лучше и лучше в том, чтобы доставлять удовольствие члену Лунексис...
 	</p>
 	]]>
 	</htmlContent>
@@ -304,80 +303,81 @@
 	<htmlContent tag="GRADUATION"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_oral))
 		<p>
-			After many more days of sucking the horse-girl's cock, licking her balls, and swallowing load after load of her cum, you're finally ordered one evening to kneel before the other cock-sleeves, where the horse-girl announces, [style.speechFeminine(This cock-sleeve has finished [pc.her] training. Please step forwards and congratulate her one by one.)]
+			После многих дней сосания конского члена лошадки, облизывания её яичек и проглатывания порции за порцией её спермы, однажды вечером тебе приказывают встать на колени перед остальными «чехлами». Там лошадка объявляет: [style.speechFeminine(Эта шлюшка закончила тренировку [pc.her]. Пожалуйста, выходите вперед и поздравьте её по очереди.)]
 		</p>
 		<p>
-			Lining up, the other cock-sleeves take turns using their cocks or strap-ons to fuck your face. None of them feel anywhere near as good as the horse-girl's shaft, and so after they're all done, you beg her to hilt her fat cock deep down your throat. Shaking her head, she replies, [style.speechFeminine(Your graduation is over, which means that your mouth and throat are only for our queen's cock now. You won't have long to wait for it, either, for an orgy has been planned for tomorrow evening out in the plaza to celebrate the fall of Themiscyra and Lunexis's return. The party is going to be started by a public demonstration of how you and that [meraxis.race] you arrived with have been reduced to obedient cock-sleeves. Do your best to please our queen, cock-sleeve.)]
+			Выстроившись в очередь, остальные cock-sleeves по очереди трахают твое лицо своими членами или страпонами. Ни один из них не ощущается так же великолепно, как член той лошадиной девки, поэтому, когда они заканчивают, ты умоляешь её вогнать свой толстый член глубоко тебе в глотку. Покачав головой, она отвечает: [style.speechFeminine(Твое посвящение окончено, а значит, теперь твой рот и горло принадлежат только члену нашей королевы. Тебе не придется долго ждать, ведь на завтрашний вечер на площади запланирована оргия в честь падения Фемисциры и возвращения Лунексиса. Праздник начнется с публичной демонстрации того, как ты и та [meraxis.race], с которой ты прибыла, превратились в послушных cock-sleeves. Постарайся изо всех сил угодить нашей королеве, cock-sleeve.)]
 		</p>
 	#ELSEIF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_vaginal))
 		<p>
-			After many more days of being fucked by the horse-girl's cock, acting as her cock-sleeve, and being pumped full of load after load of her cum, you're finally ordered one evening to lie down before the other cock-sleeves, where the horse-girl announces, [style.speechFeminine(This cock-sleeve has finished [pc.her] training. Please step forwards and congratulate her one by one.)]
+			Прошло еще много дней, в течение которых тебя трахала лошадиная девка, используя тебя как свой кок-слив и наполняя тебя порцией за порцией своей спермы. Наконец, одним вечером тебе приказывают лечь перед остальными кок-сливами, после чего лошадиная девка объявляет: [style.speechFeminine(Эта кок-слив завершила обучение [pc.her]. Пожалуйста, выходите вперед и поздравьте её одна за другой.)]
 		</p>
 		<p>
-			Lining up, the other cock-sleeves take turns using their cocks or strap-ons to fuck your pussy. None of them feel anywhere near as good as the horse-girl's shaft, and so after they're all done, you beg her to hilt her fat cock deep into your hungry twat. Shaking her head, she replies, [style.speechFeminine(Your graduation is over, which means that your pussy is only for our queen's cock now. You won't have long to wait for it, either, for an orgy has been planned for tomorrow evening out in the plaza to celebrate the fall of Themiscyra and Lunexis's return. The party is going to be started by a public demonstration of how you and that [meraxis.race] you arrived with have been reduced to obedient cock-sleeves. Do your best to please our queen, cock-sleeve.)]
+			Выстроившись в очередь, остальные cock-sleeves по очереди трахают твою киску своими членами или страпонами. Ни один из них не ощущается так же великолепно, как член той лошадиной девки, поэтому, когда они заканчивают, ты умоляешь её вогнать свой толстый член глубоко в твою голодную щелку. Покачав головой, она отвечает: [style.speechFeminine(Твое посвящение окончено, а значит, теперь твоя киска принадлежит только члену нашей королевы. Тебе не придется долго ждать, ведь на завтрашний вечер на площади запланирована оргия в честь падения Фемисциры и возвращения Лунексиса. Праздник начнется с публичной демонстрации того, как ты и та [meraxis.race], с которой ты прибыла, превратились в послушных cock-sleeves. Постарайся изо всех сил угодить нашей королеве, cock-sleeve.)]
 		</p>
 	#ELSE
 		<p>
-			After many more days of being anally fucked by the horse-girl's cock, acting as her cock-sleeve, and being pumped full of load after load of her cum, you're finally ordered one evening to lie down before the other cock-sleeves, where the horse-girl announces, [style.speechFeminine(This cock-sleeve has finished [pc.her] training. Please step forwards and congratulate her one by one.)]
+			После множества дней, проведенных в роли её кок-слива, когда тебя непрерывно трахали в анус и наполняли порциями её спермы, однажды вечером тебе приказывают лечь перед остальными кок-сливами, после чего лошадиная девка объявляет: [style.speechFeminine(Эта кок-слив завершила [pc.her] обучение. Пожалуйста, выходите вперед и поздравьте её по очереди.)]
 		</p>
 		<p>
-			Lining up, the other cock-sleeves take turns using their cocks or strap-ons to fuck your ass. None of them feel anywhere near as good as the horse-girl's shaft, and so after they're all done, you beg her to hilt her fat cock deep into your hungry asshole. Shaking her head, she replies, [style.speechFeminine(Your graduation is over, which means that your ass is only for our queen's cock now. You won't have long to wait for it, either, for an orgy has been planned for tomorrow evening out in the plaza to celebrate the fall of Themiscyra and Lunexis's return. The party is going to be started by a public demonstration of how you and that [meraxis.race] you arrived with have been reduced to obedient cock-sleeves. Do your best to please our queen, cock-sleeve.)]
+			Очередь за кок-сливами движется: они по очереди используют свои члены или страпоны, чтобы трахать твою задницу. Ни один из них не приносит такого удовольствия, как член той лошадиной девки, поэтому, когда они заканчивают, ты умоляешь её вогнать свой толстый член по самую рукоять в твой голодный анус. Покачав головой, она отвечает: [style.speechFeminine(Твоё обучение окончено, а значит, теперь твоя задница принадлежит только члену нашей королевы. Тебе не придётся долго ждать, ведь на завтрашний вечер на площади запланирована оргия в честь падения Фемисциры и возвращения Лунексис. Праздник начнется с публичной демонстрации того, как ты и тот [meraxis.race], с которым ты прибыл, превратились в послушных кок-сливов. Постарайся изо всех сил угодить нашей королеве, кок-слив.)]
 		</p>
 	#ENDIF
 	<p>
-		Promising that you will, you spend the next twenty four hours constantly thinking about how good it's going to feel to finally be stuffed full of your queen's cock. After what seems like an eternity, the time finally arrives, and you're led off to the party, ready to show Lunexis and all of her guests what a good cock-sleeve you are...
+		Пообещав, что так и сделаешь, ты проводишь следующие двадцать четыре часа в постоянных мыслях о том, как сладко будет наконец-то набиться до отказа членом своей королевы. Спустя целую вечность долгожданный момент наступает, и тебя ведут на праздник, готового показать Лунексис и всем её гостям, какая ты отличная дырка...
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="FINAL"><![CDATA[
 	<p>
-		Having been kept back as the final cock-sleeve to be brought to the party, you're impatiently watched by at least a few hundred centauresses as you're led down the steps before the palace, and then a short way across the plaza. Arriving at the exact same point where you were teleported to, you see that everyone's already here and waiting for you.
+		Тебя задержали, оставив напоследок, чтобы ты стал последним кок-сливом, которого приведут на праздник. Пока тебя ведут по ступеням перед дворцом, а затем через небольшую часть площади, за тобой нетерпеливо наблюдают как минимум несколько сотен кентавриек. Придя в ту самую точку, куда тебя телепортировали, ты видишь, что все уже здесь и ждут тебя.
 	</p>
 	<p>
-		Your gaze wanders first to the muscular, purple-skinned brute of a centauress who claimed Meraxis, and you see that she's got the chuuni demon on a thick leather leash. Grunting at you in amusement, the centauress tugs on this leash, causing Meraxis to step forwards and show off her new body. Now covered in degrading tattoos, and with every conceivable part of her body pierced, Meraxis has been transformed to have five pairs of big, perky breasts, each one of which is sporting a thick, golden ring. Completely naked apart from the countless piercings which adorn her abused body, the [meraxis.race] has clearly been trained to be an obedient cock-sleeve, for without being told to, she reaches down between her legs and spreads her big, dripping-wet labia. As her Mistress reaches down to stroke the top of her shaved head, the cock-sleeve's massive, plump lips part, allowing her to excitedly moan, [meraxis.speech(This worthless cunt is ready for your cock, Mistress!)]
+		Твой взгляд первым делом падает на мускулистую, фиолетовокожую кентавриху-бруталку, заявившую права на Мераксис, и ты видишь, что она держит этого демона-чуни на толстом кожаном поводке. С усмешливым хрипом кентавриха дергает за поводок, заставляя Мераксис шагнуть вперед и продемонстрировать свое новое тело. Теперь, покрытая унизительными татуировками и пронзенная пирсингом буквально во всех мыслимых местах, Мераксис преобразилась: у нее пять пар больших, упругих грудей, и на каждой красуется толстое золотое кольцо. Совершенно голая, если не считать бесчисленных проколов, украшающих ее измученное тело, [meraxis.race] явно натренировали быть послушной дыркой для члена — ведь, не дожидаясь команды, она опускает руку между ног и раздвигает свои огромные, сочащиеся влагой половые губы. Когда ее Госпожа тянется, чтобы погладить ее по выбритой макушке, пухлые губы этой сучки приоткрываются, позволяя ей возбужденно простонать: [meraxis.speech(Эта никчемная пизда готова к твоему члену, Госпожа!)]
 	</p>
 	<p>
-		Lined up a short distance behind Meraxis and her owner, you see about two dozen enslaved Amazons, all of whom are already down on all fours, presenting themselves to the horde of centauresses. From the cum that's leaking down their inner-thighs, as well as the fact that several of them have swollen, pregnant bellies, you can see that the demonic host has been enjoying their cunts on a regular basis. Also trained to be obedient cock-sleeves, these slaves are lifting their hips so as to show off their pussies, while desperately begging to be fucked.
+		В нескольких шагах позади Мераксиса и её госпожи ты видишь около двух десятков порабощенных амазонок. Все они уже стоят на четвереньках, подставляясь орде кентавриек. По сперме, стекающей по их внутренней стороне бедер, а также по тому факту, что у нескольких из них уже вздулись беременные животы, становится ясно: демоническое воинство регулярно лакомится их кисками. Обученные быть послушными чехлами для члена, эти рабыни высоко поднимают бедра, выставляя напоказ свои щелочки и отчаянно умоляя о том, чтобы их трахнули.
 	</p>
 	<p>
-		All that's left now is for Lunexis to show off what a well-trained cock-sleeve you are, and so the huge, muscular centauress, who's been close by this entire time, simply turns to her side and presents you with the thing that you want most in the world right now. The sight of your queen's huge, meaty horse-cock causes you to let out a desperate whine, and you rush forwards to drop down beside her, ready to obey at a moment's notice when she finally gives you the command to get started.
+		Теперь Лунексис остается лишь показать, насколько ты хорошо натренированная дырка, и поэтому огромная мускулистая кентаврисса, которая всё это время была рядом, просто поворачивается боком, подставляя тебе то, чего ты желаешь больше всего на свете. Вид огромного, мясистого лошадиного члена твоей королевы заставляет тебя жалобно скулить, и ты бросаешься вперед, чтобы опуститься рядом с ней, готовая повиноваться в любую секунду, как только она наконец прикажет начинать.
 	</p>
 	<p>
-		Smirking at your show of obedience, your queen addresses the crowd that's gathered by booming in her loud voice, [lunexis.speech(Sisters! The fields have been ravaged, Themiscyra is in ruins, and Elis will soon be ours! Tonight we celebrate our triumphs! To get things started, I present to you the fate of all who dare oppose us!)]
+		Усмехнувшись твоему проявлению покорности, королева обращается к собравшейся толпе громовым голосом: [lunexis.speech(Сестры! Поля разорены, Фемискира в руинах, а Элис скоро будет нашей! Сегодня мы празднуем наши триумфы! А для начала я представлю вам судьбу всех, кто осмелится нам противостоять!)]
 	</p>
 	#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_oral))
 		<p>
-			With a mocking smirk on her face, the centauress looks down at you and grunts, [lunexis.speech(My balls are sweaty from running around all day. Lick them clean, cock-sleeve.)]
+			С насмешливой ухмылкой на лице кентавридка смотрит на тебя сверху вниз и хмыкает: [lunexis.speech(У меня яйца вспотели, пока я весь день скакала туда-сюда. Вылижи их дочиста, чехол для члена.)]
 		</p>
 		<p>
-			Eager to obey, you quickly shuffle forwards and start licking her huge, ebony-skinned balls. Lovingly sliding your tongue over her four heavy testicles, you make sure to lick up every drop of sweat. Your queen's gigantic horse-cock rapidly slides out of its sheath in response to your attention, and as it stiffens into full erection, she snaps, [lunexis.speech(That's enough! Now swallow my cock and show everyone what a good cock-sleeve you are!)]
+		
+			Стремясь угодить, ты быстро подаешься вперед и начинаешь вылизывать её огромные, иссиня-черные яйца. С любовью проводя языком по её четырем тяжелым семенникам, ты стараешься слизать каждую каплю пота. В ответ на твое внимание гигантский конский член твоей королевы стремительно выскальзывает из препуция, и когда он наливается твердостью, она рявкает: [lunexis.speech(Довольно! А теперь заглоти мой член и покажи всем, какая ты послушная сучка!)]
 		</p>
 		<p>
-			Quickly repositioning yourself, you do as Lunexis commands. Opening wide, you slide your head forwards, and with the help of a buck of your queen's hips, the massive, meaty shaft is soon hilted deep down your throat. Your training proves to have been worthwhile, for as soon as your throat is full of cock, Lunexis moans, [lunexis.speech(~Mmm!~ Fuck! This slut's throat feels too good!)]
+			Быстро сменив позу, ты повинуешься приказу Лунексис. Широко раскрыв рот, ты подаешься вперед, и после резкого толчка её бедер массивный, мясистый ствол оказывается глубоко в твоем горле. Твои тренировки не прошли даром: как только твое горло наполняется членом, Лунексис стонет: [lunexis.speech(~Ммм!~ Блядь! Горло этой шлюхи чертовски приятно ощущает мой член!)]
 		</p>
 		<p>
-			Reaching up to play with her [lunexis.breastRows], your queen starts pumping her hips forward and back, forcing her massive, throbbing shaft deep down and then back up your throat. As she fucks your face in this manner, you find that your position allows you to look across and see what's happening to the cock-sleeve who you once knew as Meraxis...
+		Заигрывая со своей [lunexis.breastRows], твоя королева начинает двигать бедрами вперед и назад, с силой вгоняя свой массивный, пульсирующий член глубоко в твое горло и вытаскивая его обратно. Пока она так трахает твое лицо, ты понимаешь, что твое положение позволяет тебе взглянуть в сторону и увидеть, что происходит с той «чехлом для члена», которой когда-то была Мераксис...
 		</p>
 	#ELSEIF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_vaginal))
 		<p>
-			With a mocking smirk on her face, the centauress looks down at you and grunts, [lunexis.speech(My balls are aching. Present yourself, cock-sleeve, so I can empty them in you.)]
+			С насмешливой ухмылкой на лице кентавридка смотрит на тебя сверху вниз и хмыкает: [lunexis.speech(У меня яйца ноют. Предъяви себя, коленно-портушная сучка, чтобы я могла излить их в тебя.)]
 		</p>
 		<p>
-			Eager to obey, you quickly drop down beneath your queen and present her with your [pc.pussy+]. Your queen's gigantic horse-cock rapidly slides out of its sheath, and the moment that it stiffens into a full erection, she bucks her hips and rams her massive, meaty shaft into your hungry cunt. Stepping forwards, she roughly forces the entire length of her thick, throbbing dick inside of you, letting out a satisfied groan as she hilts herself as deep as possible into your cunt. Your training proves to have been worthwhile, for as soon as your cunt is full of cock, Lunexis moans, [lunexis.speech(~Mmm!~ Fuck! This slut's pussy feels too good!)]
+			Стремясь угодить, ты быстро опускаешься перед своей королевой и подставляешь ей свою [pc.pussy+]. Гигантский конский член твоей королевы стремительно выскальзывает из препуция, и в тот самый миг, когда он наливается полной твердостью, она резко подается бедрами вперед, вонзая свой массивный, мясистый ствол в твою жадную киску. Сделав шаг вперед, она грубо вбивает всю длину своего толстого, пульсирующего члена в тебя, удовлетворенно стоная, когда входит в твою щель до самого основания. Твои тренировки явно не прошли даром: как только твоя киска наполняется членом, Лунексис стонет: [lunexis.speech(~Ммм!~ Блядь! Как же охеренно ощущается эта сучья щель!)]
 		</p>
 		<p>
-			Reaching up to play with her [lunexis.breastRows], your queen starts pumping her hips forward and back, forcing her massive, throbbing shaft deep inside and then back out of your twat. As she fucks you in this manner, you find that your position allows you to look across and see what's happening to the cock-sleeve who you once knew as Meraxis...
+		Заигрывая со своей [lunexis.breastRows], твоя королева начинает двигать бедрами вперед и назад, с силой вгоняя свой массивный, пульсирующий член глубоко в твою щелку и вытаскивая его обратно. Пока она так трахает тебя, ты понимаешь, что твое положение позволяет тебе взглянуть в сторону и увидеть, что происходит с той «чехлом для члена», которой когда-то была Мераксис...
 		</p>
 	#ELSE
 		<p>
-			With a mocking smirk on her face, the centauress looks down at you and grunts, [lunexis.speech(My balls are aching. Present yourself, cock-sleeve, so I can empty them in you.)]
+			С насмешливой ухмылкой на лице кентавридка смотрит на тебя сверху вниз и хмыкает: [lunexis.speech(У меня яйца ноют. Предъяви себя, коленно-портушная сучка, чтобы я могла излить их в тебя.)]
 		</p>
 		<p>
-			Eager to obey, you quickly drop down beneath your queen and present her with your [pc.ass+]. Your queen's gigantic horse-cock rapidly slides out of its sheath, and the moment that it stiffens into a full erection, she bucks her hips and rams her massive, meaty shaft into your hungry asshole. Stepping forwards, she roughly forces the entire length of her thick, throbbing dick inside of you, letting out a satisfied groan as she hilts herself as deep as possible into your ass. Your training proves to have been worthwhile, for as soon as you're full of cock, Lunexis moans, [lunexis.speech(~Mmm!~ Fuck! This slut's ass feels too good!)]
+			Стремясь угодить, ты быстро опускаешься на колени перед своей королевой и подставляешь ей свой [pc.ass+]. Гигантский лошадиный член королевы стремительно выскальзывает из препуция, и как только он наливается твердостью, она резко подается бедрами вперед, вбивая свой массивный, мясистый ствол в твою голодную задницу. Сделав шаг вперед, она грубо заталкивает всю длину своего толстого, пульсирующего члена в тебя, удовлетворенно стоная, когда входит в твой анус до самого основания. Твои тренировки явно не прошли даром: как только ты наполняешься членом до краев, Лунексис стонет: [lunexis.speech(~Ммм!~ Блядь! Задница этой шлюхи чертовски хороша!~)]
 		</p>
 		<p>
-			Reaching up to play with her [lunexis.breastRows], your queen starts pumping her hips forward and back, forcing her massive, throbbing shaft deep inside and then back out of your rear entrance. As she fucks you in this manner, you find that your position allows you to look across and see what's happening to the cock-sleeve who you once knew as Meraxis...
+			Потянувшись, чтобы поиграть с её [lunexis.breastRows], твоя королева начинает ритмично двигать бедрами вперед и назад, заставляя свой массивный, пульсирующий член то глубоко входить в твой задний проход, то выходить из него. Пока она трахает тебя в таком темпе, ты понимаешь, что твое положение позволяет тебе взглянуть в сторону и увидеть, что происходит с тем «приемником» для члена, которого ты когда-то знал как Мераксиса...
 		</p>
 	#ENDIF
 	]]>
@@ -385,33 +385,33 @@
 
 	<htmlContent tag="FINAL_MERAXIS"><![CDATA[
 	<p>
-		Looking across to the [meraxis.race] cock-sleeve who was once called Meraxis, you see her heavily-tattooed body wildly rocking back and forth as her brutish, purple-skinned owner violently pumps her huge horse-cock in and out of her cunt. The cock-sleeve's five pairs of big breasts, each one pierced and bearing a thick golden ring, are jiggling and swaying in a hypnotic manner as she kneels down on all fours beneath her Mistress. Clearly loving every moment of being roughly fucked in public like this, the cock-sleeve moans, [meraxis.speech(~Aah!~ Yes, Mistress! I'm your worthless slut! ~Ooh!~ Break my dirty little cunt!)]
+		Глядя на [meraxis.race], бывшую когда-то Мераксис, ты видишь, как её покрытое татуировками тело бешено раскачивается взад-вперед, пока её грубый фиолетокожий хозяин яростно вгоняет свой огромный лошадиный член в её щель. Пять пар больших грудей этой кок-сльюв, каждая из которых проколота и украшена толстым золотым кольцом, гипнотически колышутся и подпрыгивают, пока она стоит на четвереньках перед своей Госпожой. Очевидно, наслаждаясь каждым мгновением того, что её так грубо трахают на публике, кок-сльюв стонет: [meraxis.speech(~Аах!~ Да, Госпожа! Я твоя никчемная шлюха! ~Ооо!~ Разбей мою грязную щелочку!)]
 	</p>
 	<p>
-		Letting out a deep, guttural roar, the centauress thrusts her fat cock deep inside her cock-sleeve. The [meraxis.race]'s massive, pierced labia spread and grip down lewdly around her mistress's thick cock, causing the centauress to shout, [style.speechFeminineStrong(That's it, milk my cock, you dumb bitch! ~Aah!~ Ready to get knocked up again, cunt?!)]
+		Издав глубокий гортанный рев, кентаврисса вонзает свой толстый член глубоко внутрь кок-сльюв. Массивные проколотые половые губы [meraxis.race] бесстыдно обхватывают толстый член её госпожи, заставляя кентаврисссу выкрикнуть: [style.speechFeminineStrong(Вот так, дои мой член, тупая сучка! ~Аах!~ Ну что, готова снова забеременеть, щелка?!)]
 	</p>
 	<p>
-		With that, the centauress's heavy balls tense up, and she continues grunting and making degrading comments as she fills her cock-sleeve's pussy with hot, demonic cum. It takes almost a full minute for her orgasm to end, by which point her thick, salty jizz has backed up and leaked out around her cock to form a large, slimy puddle on the ground beneath her cock-sleeve's well-fucked cunt. By no means having finished with the tattooed, pierced [meraxis.race], the centauress slides her fat cock free with an audible squelch, before commanding,
+		С этим звуком тяжелые яйца кентавриссы напрягаются, и она продолжает хрипеть и отпускать унизительные комментарии, наполняя киску кок-сльюв горячей демонической спермой. Её оргазм длится почти целую минуту, и к тому времени, как он затихает, её густая соленая сперма выплескивается и вытекает вокруг члена, образуя большую скользкую лужу на земле под изъеденной трахом щелью кок-сльюв. Совсем не желая заканчивать с татуированной и проколотой [meraxis.race], кентаврисса с отчетливым хлюпаньем вытягивает свой толстый член, после чего командует:
 		#IF(game.isAnalContentEnabled())
-			 [style.speechFeminineStrong(Get to work on my ass, cock-sleeve! I want to hear you cumming from giving me a rimjob, you filthy slut!)]
+			 [style.speechFeminineStrong(А ну, за работу, чехол для члена! Хочу слышать, как ты кончаешь, когда будешь лизать мне задницу, грязная сучка!)]
 		#ELSE
-			 [style.speechFeminineStrong(Get to work on my cunt, cock-sleeve! I want to hear you cumming from eating me out, you filthy slut!)]
+			 [style.speechFeminineStrong(А ну, за работу, чехол для члена! Хочу слышать, как ты кончаешь, когда будешь сосать мою киску, грязная сучка!)]
 		#ENDIF
 	</p>
 	<p>
-		Hurrying to obey, the cock-sleeve jumps to her feet, and with cum drooling out of her pussy, she moves around behind her mistress. Swishing her tail to one side, the centauress grins as her slave eagerly buries her face in her rear end, and within moments, you hear the multi-breasted [meraxis.race]'s muffled squeals announcing the fact that she's orgasmed simply from
+		Спешно исполняя приказ, чехол для члена вскакивает на ноги, и, пока из её киски течет сперма, она обходит свою госпожу сзади. Отбросив хвост в сторону, кентаврисса ухмыляется, глядя, как её рабыня жадно утыкается лицом в её задницу, и спустя мгновение ты слышишь приглушенные визги многогрудой [meraxis.race], возвещающие о том, что она кончила лишь от
 		#IF(game.isAnalContentEnabled())
-			 performing anilingus. Letting out a mocking laugh, the centauress shouts back to her cock-sleeve, [style.speechFeminineStrong(That's a good bitch! I'll give you another tattoo after the party as a reward for your obedience. I'm thinking 'Rimjob Whore' would go nicely on those fat lips of yours!)]
+			 анилингуса. Издав насмешливый смех, кентаврисса выкрикивает своей чехлу для члена: [style.speechFeminineStrong(Хорошая сучка! После вечеринки, в награду за твою Покорность, я сделаю тебе еще одну татуировку. Думаю, «Шлюха для Римджоба» отлично будет смотреться на твоих жирных губах!)]
 		#ELSE
-			 performing cunnilingus. Letting out a mocking laugh, the centauress shouts back to her cock-sleeve, [style.speechFeminineStrong(That's a good bitch! I'll give you another tattoo after the party as a reward for your obedience. I'm thinking 'Cunt Kisser' would go nicely on those fat lips of yours!)]
+			 куннилингуса. Издав насмешливый смех, кентаврисса выкрикивает своей чехлу для члена: [style.speechFeminineStrong(Хорошая сучка! После вечеринки, в награду за твою Покорность, я сделаю тебе еще одну татуировку. Думаю, «Целовальница кисок» отлично будет смотреться на твоих жирных губах!)]
 		#ENDIF
 	</p>
 	<p>
-		Not having been told to stop, the cock-sleeve continues eagerly performing oral on her mistress. Despite being interrupted now and again by an intense, body-shaking orgasm, the [meraxis.race] quickly settles into a steady rhythm
+		Не получив команды остановиться, чехол для члена продолжает с энтузиазмом ласкать госпожу орально. Несмотря на то, что её время от времени прерывают интенсивные, сотрясающие всё тело оргазмы, [meraxis.race] быстро входит в устойчивый ритм,
 		#IF(game.isAnalContentEnabled())
-			 as she gives her mistress a marathon rimjob...
+			 устраивая своей госпоже настоящий марафон анилингуса...
 		#ELSE
-			 as she gives her mistress a marathon cunnilingus session...
+			 пока она устраивает своей госпоже настоящий марафон куннилингуса...
 		#ENDIF
 	</p>
 	]]>
@@ -420,74 +420,78 @@
 	<htmlContent tag="FINAL_SELF"><![CDATA[
 	#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_oral))
 		<p>
-			Instead of looking to see what's happening to the other cock-sleeve, you focus on pleasuring your queen. Moving your head in time with the rhythmic pumping of her hips, you remember your training with the horse-girl whose name you never knew and work hard to give Lunexis the best blowjob she's ever had. Putting everything you've got into sucking, swallowing, and licking her thick, throbbing horse-shaft, you can't help but feel extremely proud of yourself as the centauress lets out a series of shuddering, deeply erotic moans.
+		
+Вместо того чтобы смотреть, что происходит с другим «приемником», ты сосредотачиваешься на удовольствии своей королевы. Двигая головой в такт ритмичным толчкам её бедер, ты вспоминаешь свои тренировки с той лошадиной девчонкой, чьего имени так и не узнал, и изо всех сил стараешься подарить Лунексис лучший минет в её жизни. Вкладывая все силы в то, чтобы сосать, глотать и облизывать её толстый, пульсирующий конский член, ты не можешь не чувствовать огромной гордости за себя, когда кентаврисса издает серию дрожащих, глубоко эротичных стонов.
 		</p>
 		<p>
-			[lunexis.speech(~Aah!~ Yes, cock-sleeve!)] she squeals, [lunexis.speech(~Ooh!~ Take my load, you fucking slut!)]
+			[lunexis.speech(~Аах!~ Да, кок-слив!)] — визжит она, [lunexis.speech(~Ооо!~ Принимай мою струю, гребаная сучка!)]
 		</p>
 		<p>
-			With that, the centauress lets out a deep, guttural grunt, before violently slamming her massive cock as deep as possible down your throat. Thanks to your training, you're fully prepared for this moment, and continue using your tongue and throat muscles to massage her cock as she reaches her climax. As her balls tense up, a truly massive load of hot, salty cum spurts out of her horse-cock and jets directly down into your stomach. Greedily swallowing down every last drop, you push your [pc.lips+] up against the sweaty, salty base of her animalistic shaft to signal that you're able to comfortably take every last
+			С этими словами кентавриеска издает глубокий, гортанный рык, прежде чем с силой вогнать свой массивный член так глубоко в твое горло, как только возможно. Благодаря тренировкам ты полностью готова к этому моменту и продолжаешь работать языком и мышцами горла, массируя её член, пока она достигает пика. Когда её яички напрягаются, из её конского члена вырывается по-настоящему мощная струя горячей соленой спермы, которая бьет прямо тебе в желудок. Жадно проглатывая каждую последнюю каплю, ты прижимаешься своим [pc.lips+] к потному, соленому основанию её звериного ствола, давая знак, что можешь с комфортом принять каждый последний
 			#IF(game.isMetricSizes())
-				 centimetre
+				 сантиметр
 			#ELSE
-				 inch
+				 дюйм
 			#ENDIF
-			 of her cock down your throat.
+			 её член глубоко в твоем горле.
 		</p>
 		<p>
-			[lunexis.speech(You've been trained well, cock-sleeve,)] Lunexis grunts as she finishes her climax. Keeping her cock hilted down your throat, she continues absent-mindedly playing with her multiple breasts as she commands, [lunexis.speech(Keep doing that thing with your throat while I watch the party.)]
+			[lunexis.speech(Тебя хорошо натренировали, залупница,)] — хрипит Лунексис, доходя до пика. Удерживая свой член глубоко в твоем горле, она рассеянно продолжает ласкать свои многочисленные груди, отдавая приказ: [lunexis.speech(Продолжай возиться горлом, пока я наблюдаю за вечеринкой.)]
 		</p>
 		<p>
-			Doing as you're told, you put your training to good use as you remain as still as you can while using your tongue and throat muscles to pleasure your queen's cock...
+			Повинуясь приказу, ты вовсю используешь свои навыки: стараешься не шевелиться, задействуя лишь язык и мышцы горла, чтобы доставить удовольствие члену своей королевы...
 		</p>
 	#ELSEIF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_vaginal))
 		<p>
-			Instead of looking to see what's happening to the other cock-sleeve, you focus on pleasuring your queen. Moving your hips in time with the rhythmic pumping of her cock, you remember your training with the horse-girl whose name you never knew and work hard to give Lunexis the best sex she's ever had. Putting everything you've got into pushing back against her and squeezing your pussy down around her thick, throbbing horse-shaft, you can't help but feel extremely proud of yourself as the centauress lets out a series of shuddering, deeply erotic moans.
+		
+Вместо того чтобы смотреть, что происходит с другим «приемником», ты сосредотачиваешься на удовольствии своей королевы. Двигая бедрами в такт ритмичным толчкам её члена, ты вспоминаешь свои тренировки с той лошадиной девчонкой, чье имя так и не узнал, и изо всех сил стараешься подарить Лунексис лучший секс в её жизни. Вкладывая все силы в то, чтобы подаваться навстречу и сжимать её толстый, пульсирующий конский член своей киской, ты не можешь не чувствовать огромной гордости за себя, когда кентаврисса издает серию дрожащих, глубоко эротичных стонов.
 		</p>
 		<p>
-			[lunexis.speech(~Aah!~ Yes, cock-sleeve!)] she squeals, [lunexis.speech(~Ooh!~ Take my load, you fucking slut!)]
+			[lunexis.speech(~Аах!~ Да, кок-слив!)] — визжит она, [lunexis.speech(~Ооо!~ Принимай мою струю, гребаная сучка!)]
 		</p>
 		<p>
-			With that, the centauress lets out a deep, guttural grunt, before violently slamming her massive cock as deep as possible into your [pc.pussy+]. Thanks to your training, you're fully prepared for this moment, and use your vaginal muscles to massage her cock as she reaches her climax. As her balls tense up, a truly massive load of hot, salty cum spurts out of her horse-cock and jets directly into your womb. Milking her for every last drop, you push back and press your [pc.labia+] against the sweaty, hot base of her animalistic shaft to signal that you're able to comfortably take every last
+		
+С этими словами кентавридка издает глубокий, гортанный стон и с силой вбивает свой массивный член так глубоко, как только может, в твою [pc.pussy+]. Благодаря тренировкам ты полностью готова к этому моменту и используешь мышцы влагалища, чтобы массировать её член, пока она достигает пика. Когда её яички напрягаются, из её лошачьего члена вырывается по-настоящему мощный поток горячей соленой спермы, который бьет прямо тебе в матку. Выжимая из неё всё до последней капли, ты подаешься назад, прижимая свою [pc.labia+] к потному, горячему основанию её звериного ствола, давая понять, что ты готова принять каждую...
 			#IF(game.isMetricSizes())
-				 centimetre
+				 сантиметр
 			#ELSE
-				 inch
+				 дюйм
 			#ENDIF
-			 of her cock into your cunt.
+			каплю её члена в свою киску.
 		</p>
 		<p>
-			[lunexis.speech(You've been trained well, cock-sleeve,)] Lunexis grunts as she finishes her climax. Keeping her cock hilted in your cum-stuffed pussy, she continues absent-mindedly playing with her multiple breasts as she teases,
+			[lunexis.speech(Тебя хорошо натренировали, чехол для члена,)] — ворчит Лунексис, завершая оргазм. Оставив свой член глубоко в твоей набитой спермой щели, она рассеянно продолжает перебирать свои многочисленные груди, дразня тебя:
 			#IF(game.isIncestEnabled())
-				 [lunexis.speech(You're going to get pregnant from this, slut. I'm sure that the daughters you'll birth will enjoy fucking their mother's hot cunt as much as I do. Now keep on milking my cock while I watch the party.)]
+				 [lunexis.speech(От этого ты забеременеешь, шлюшка. Уверена, что дочери, которых ты родишь, будут трахать горячую киску своей матери так же сильно, как это делаю я. А теперь продолжай доить мой член, пока я наблюдаю за вечеринкой.)]
 			#ELSE
-				 [lunexis.speech(You're going to get pregnant from this, slut. Now keep on milking my cock while I watch the party.)]
+				 [lunexis.speech(От этого ты забеременеешь, шлюшка. А теперь продолжай доить мой член, пока я наблюдаю за вечеринкой.)]
 			#ENDIF
 		</p>
 		<p>
-			Doing as you're told, you put your training to good use as you use your vaginal muscles to squeeze and pleasure your queen's cock...
+		
+Повинуясь приказу, ты вовсю используешь свои навыки, сжимая мышцами влагалища член своей королевы, доставляя ей наслаждение...
 		</p>
 	#ELSE
 		<p>
-			Instead of looking to see what's happening to the other cock-sleeve, you focus on pleasuring your queen. Moving your hips in time with the rhythmic pumping of her cock, you remember your training with the horse-girl whose name you never knew and work hard to give Lunexis the best anal sex she's ever had. Putting everything you've got into pushing back against her and squeezing your asshole down around her thick, throbbing horse-shaft, you can't help but feel extremely proud of yourself as the centauress lets out a series of shuddering, deeply erotic moans.
+			Вместо того чтобы глазеть на то, что происходит с другой дыркой для члена, ты сосредотачиваешься на удовольствии своей королевы. Двигая бедрами в такт ритмичным толчкам её члена, ты вспоминаешь свои тренировки с той лошадиной девчонкой, чьего имени так и не узнал, и изо всех сил стараешься подарить Лунексис лучший анальный секс в её жизни. Вкладывая все силы в то, чтобы подаваться ей навстречу и сжимать анус вокруг её толстого, пульсирующего лошадиного ствола, ты не можешь не чувствовать невероятной гордости, когда кентаврисса издает серию содрогающихся, глубоко эротичных стонов.
 		</p>
 		<p>
-			[lunexis.speech(~Aah!~ Yes, cock-sleeve!)] she squeals, [lunexis.speech(~Ooh!~ Take my load, you fucking slut!)]
+			[lunexis.speech(~Аах!~ Да, кок-слив!)] — визжит она, [lunexis.speech(~Ооо!~ Принимай мою струю, гребаная сучка!)]
 		</p>
 		<p>
-			With that, the centauress lets out a deep, guttural grunt, before violently slamming her massive cock as deep as possible into your [pc.ass+]. Thanks to your training, you're fully prepared for this moment, and use your anal muscles to massage her cock as she reaches her climax. As her balls tense up, a truly massive load of hot, salty cum spurts out of her horse-cock and jets deep into your ass. Milking her for every last drop, you push back and press your [pc.ass+] against the sweaty, hot base of her animalistic shaft to signal that you're able to comfortably take every last
+		
+		С этими словами кентаврисса издает глубокий гортанный рык, прежде чем с силой вогнать свой массивный член так глубоко, как только возможно, в твой [pc.ass+]. Благодаря тренировкам ты полностью готов к этому моменту и используешь мышцы ануса, чтобы массировать её член, пока она достигает пика. Когда её яички напрягаются, из её лошадиного члена вырывается по-настоящему огромная порция горячей соленой спермы, бьющей глубоко в твою задницу. Выжимая из неё всё до последней капли, ты подаешься назад и прижимаешься своим [pc.ass+] к потному, горячему основанию её звериного ствола, давая понять, что ты можешь с комфортом принять в свой задний проход весь её член целиком.
 			#IF(game.isMetricSizes())
-				 centimetre
+				 сантиметр
 			#ELSE
-				 inch
+				 дюйм
 			#ENDIF
-			 of her cock into your rear entrance.
+			</p>
+		<p>
+			[lunexis.speech(Тебя хорошо натренировали, рукав для члена,)] — хрипит Лунексис, заканчивая свой оргазм. Оставив свой член глубоко в твоем набитом спермой анусе, она продолжает рассеянно ласкать свою грудь, дразня тебя: [lunexis.speech(Какая же ты грязная задняя шлюшка. А теперь продолжай доить мой член, пока я наблюдаю за вечеринкой.)]
 		</p>
 		<p>
-			[lunexis.speech(You've been trained well, cock-sleeve,)] Lunexis grunts as she finishes her climax. Keeping her cock hilted in your cum-stuffed asshole, she continues absent-mindedly playing with her multiple breasts as she teases, [lunexis.speech(You're such a filthy butt-slut. Now keep on milking my cock while I watch the party.)]
-		</p>
-		<p>
-			Doing as you're told, you put your training to good use as you use your anal muscles to squeeze and pleasure your queen's cock...
+		Повинуясь приказу, ты вовсю используешь свои тренировки, сжимая анальные мышцы, чтобы доставлять удовольствие члену своей королевы...
 		</p>
 	#ENDIF
 	]]>
@@ -495,32 +499,31 @@
 
 	<htmlContent tag="EPILOGUE"><![CDATA[
 	<p>
-		You and the other cock-sleeve are publicly used in this manner for another half an hour or so, before Lunexis booms out over the noise of the crowd, [lunexis.speech(Bring in the slaves! Themiscyra is mine, and soon Elis shall share its fate!)]
+		Вы с другой дыркой для члена еще около получаса на виду у всех служите в таком режиме, пока Лунексис не перекрывает шум толпы своим громогласным приказом: [lunexis.speech(Ведите рабов! Фемисцира — моя, и скоро Элис разделит её участь!)]
 	</p>
 	<p>
-		To the wild cheering and shouting of the hundreds of demonic centauresses who are present, a train of at least a hundred slaves is led into the plaza. Quickly gaining massive erections and stripping off their clothes to reveal huge, bouncing breasts, Lunette's daughters impatiently await the signal from Lunexis, which is soon given as she shouts, [lunexis.speech(Let the orgy commence!)]
+		Под дикие крики и ликование сотен присутствующих демониц-кентавров на площадь выводят колонну как минимум из сотни рабов. Быстро наливаясь мощной эрекцией и срывая с себя одежду, обнажая огромные, прыгающие груди, дочери Лунетт нетерпеливо ждут сигнала от Лунексис, который вскоре раздается вместе с её криком: [lunexis.speech(Да начнется оргия!)]
 	</p>
 	<p>
-		The vast majority of these slaves look like they've been taken from the Foloi Fields' villages and farms as part of the centauresses' looting, although some of the taller and more muscular are no doubt Amazons who were captured in the fall of Themiscyra. Whatever their background, they all share the same fate, that being having their holes stuffed full of horse-cock and hot, demonic cum. Within moments, you find yourself in the middle of a wild orgy, although Lunexis is enjoying using you so much that you find yourself being hogged by her for the entire night.
+		Подавляющее большинство этих рабов выглядят так, будто их выгребли из деревень и ферм полей Фолой во время набегов кентавриек, хотя некоторые — самые высокие и мускулистые — без сомнения, амазонки, захваченные при падении Фемисциры. Каким бы ни было их прошлое, всех ждет одна участь: их дырки будут забиты конскими членами и горячей демонической спермой. Спустя мгновение ты оказываешься в самом центре дикой оргии, но Лунексис настолько наслаждается тобой, что забирает тебя целиком себе на всю ночь.
 	</p>
 	<p>
-		By the time the party has progressed into the early hours of the morning, you've seen the cock-sleeve once known as Meraxis being fucked by at least a hundred different cocks, each one of which filled or covered her in slimy, demonic cum. Thanks to being shared with so many sexual partners, she's soon coated in such a thick layer of jizz that you struggle to see the tattoos and piercing which cover her body.
+		К тому времени, как вечеринка переваливает за раннее утро, ты успеваешь увидеть, как кок-слив, известную под именем Меракс, трахают как минимум сотня разных членов, каждый из которых наполняет или покрывает её склизкой демонической спермой. Из-за того, что её делят столь многие любовники, она вскоре покрывается таким толстым слоем кончи, что тебе становится трудно разглядеть татуировки и пирсинг на её теле.
 	</p>
 	<p>
-		Throughout it all, you happily moan, squeal, and beg for more of your Mistress's cock. So thorough has your training been that you can't recall a life before becoming Lunexis's slave, and so by the time the sun comes up, you're convinced that you've always been, and forever shall remain, nothing but an obedient cock-sleeve for your demonic Mistress...
+		На протяжении всего этого ты счастливо стонешь, визжишь и умоляешь о добавке члена своей Госпожи. Твоё обучение было настолько тщательным, что ты уже не можешь вспомнить жизнь до того, как стала рабыней Лунексис, и к моменту восхода солнца ты убеждена, что всегда была и навсегда останешься лишь послушной кок-слив для своей демонической Госпожи...
 	</p>
 	<p style='text-align:center;'>
 		...
 	</p>
 	<p><i>
-		In the months and years to follow, the name of Themiscyra becomes synonymous with Lunexis's brutality. Any unfortunate soul caught by the centauresses who inhabit these ruins is brought to the palace, where they're fucked, used as entertainment in gladiatorial contests, or auctioned off as slaves. Through it all, you and Meraxis serve as your owners' cock-sleeves.
+		В последующие месяцы и годы имя Фемисцира станет синонимом жестокости Лунексис. Любая несчастная душа, пойманная кентавриссами, обитающими в этих руинах, доставляется во дворец, где её трахают, используют для развлечения на гладиаторских боях или продают на аукционе в рабство. На протяжении всего этого ты и Меракс служите кок-сливами своим владелицам.
 	</i></p>
 	<p><i>
-		With degrading tattoos covering every part of her body, and wearing a uniform consisting of golden piercings and nothing else, the [meraxis.race] who was once called Meraxis is trained by her owner into becoming the perfect masochistic fuck-toy. Her ten large breasts, with the thick, teat-like nipple on each one pierced and sporting a heavy, golden ring, regularly draw the attention of visitors to the palace. Loving nothing more than being roughly pounded and abused by the brutish, purple-skinned centauress who owns her, this cock-sleeve gains a reputation throughout the palace as being a particularly dirty slut, who's willingly engaged in every degrading sex act imaginable...
-	</i></p>
-	<p><i>
-		Thanks to your training, and the expertise you displayed on the night of the grand orgy, Lunexis takes you as her favourite cock-sleeve. While a lot of your time is spent resting with the other cock-sleeves, you're called to your queen's side multiple times each day, where you're roughly rutted, pumped full of cum, and ordered afterwards to pleasure her cock. Dressed up in translucent silks which leave nothing to the imagination, you're sometimes shown off by your queen and lent for a day or two to particularly deserving subordinates as a special reward. Unable to remember your life before becoming a cock-sleeve, you love every moment of dutifully serving your queen and her massive, hot horse-cock...
-	</i></p>
+		Покрытая унизительными татуировками по всему телу и одетая лишь в золотые пирсинги, [meraxis.race], которую когда-то звали Мераксис, под руководством своей хозяйки превращается в идеальную мазохистскую подстилку. Её десять огромных грудей с толстыми, похожими на соски сосками, каждый из которых пробит тяжелым золотым кольцом, регулярно приковывают взгляды посетителей дворца. Не находя ничего слаще, чем грубые толчки и издевательства со стороны своей хозяйки — грубой фиолетовокожей кентавриссы, эта дырка заслужила славу самой грязной шлюхи во всем дворце, готовой на любой, даже самый унизительный секс...
+	</i></p><p><i>
+Благодаря твоим тренировкам и мастерству, проявленному в ночь великой оргии, Лунексис берет тебя в свои любимые дырки. Хотя большую часть времени ты проводишь на отдыхе с другими сосальщиками, тебя по несколько раз в день вызывают к королеве, где тебя грубо трахают, наполняют спермой, а после приказывают ласкать её член. Одетый в полупрозрачные шелка, не оставляющие места для воображения, ты порой становишься предметом гордости твоей королевы, которая на день или два одалживает тебя особо отличившимся подчиненным в качестве особого вознаграждения. Не в силах вспомнить свою жизнь до того, как ты стал дыркой, ты наслаждаешься каждым мгновением покорного служения своей королеве и её огромному, горячему конскому члену...
+</i></p>
 	]]>
 	</htmlContent>
 	

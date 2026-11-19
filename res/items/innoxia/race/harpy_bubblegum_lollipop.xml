@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>10</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Bubblegum Lollipop]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Bubblegum Lollipop]]></namePlural>
-		<description><![CDATA[A bright pink lollipop, with a little ball of gum at its core. Although it doesn't look out of the ordinary, it's somewhat unusual in the fact that it has an incredibly strong smell of bubblegum.]]></description> 
+		<name><![CDATA[Жевательная леденцовая конфета]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Жевательная леденцовая конфета]]></namePlural>
+		<description><![CDATA[Ярко-розовый леденец с шариком жевательной резинки внутри. На первый взгляд он кажется обычным, но у него невероятно сильный аромат баблгама.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -35,13 +35,13 @@
 		</statusEffects>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(10)] to 'potion effects']]></line>
+			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(10)] к «эффектам зелий»]]></line>
 			<line><![CDATA[[style.italicsSex(+3)] [style.italicsFeminine(femininity)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel more feminine...
+				[npc.Name] [npc.verb(start)] чувствовать себя более женственной...
 			</p>
 			[#npc.incrementFemininity(3)]
 			[#npc.addPotionEffect(ATTRIBUTE_DAMAGE_LUST, 10)]
@@ -56,10 +56,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(push)] the bright pink lollipop past [npc.her] [npc.lips], causing [npc.her] taste buds to be overwhelmed by the sweet, sugary flavour of bubblegum. Before [npc.she] [npc.verb(know)] what [npc.sheIs] doing, [npc.sheIs] letting out soft, feminine moans, which soon turn into lewd whines as [npc.she] [npc.verb(find)] [npc.herself] unable to think about anything other than wildly sucking on the object in [npc.her] mouth.
+		[npc.Name] [npc.verb(push)] ярко-розовый леденец сквозь [npc.her] [npc.lips], отчего [npc.her] вкусовые рецепторы захлестывает сладкий, сахарный вкус баблгама. Прежде чем [npc.she] [npc2.verb(know)] что [npc.sheIs] творит, [npc.sheIs] издает мягкие женственные стоны, которые вскоре переходят в похотливое поскуливание, когда [npc.she] [npc2.verb(find)] [npc.herself] неспособной думать о чем-либо, кроме того, как неистово сосать этот предмет во рту [npc.her].
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(push)] the bright pink lollipop past [npc2.namePos] [npc2.lips], causing [npc2.her] taste buds to be overwhelmed by the sweet, sugary flavour of bubblegum. Before [npc2.she] [npc2.verb(know)] what [npc2.sheIs] doing, [npc2.nameIs] letting out soft, feminine moans, which soon turn into lewd whines as [npc2.she] [npc2.verb(find)] [npc2.herself] unable to think about anything other than wildly sucking on the object in [npc2.her] mouth.
+		[npc.Name] [npc.verb(push)] ярко-розовый леденец сквозь [npc2.namePos] [npc2.lips], отчего [npc2.her] вкусовые рецепторы захлестывает сладкий, сахарный вкус баблгама. Прежде чем [npc2.she] [npc2.verb(know)] что [npc2.sheIs] творит, [npc2.nameIs] издает мягкие женственные стоны, которые вскоре переходят в похотливое поскуливание, когда [npc2.she] [npc2.verb(find)] [npc2.herself] неспособной думать о чем-либо, кроме того, как неистово сосать этот предмет во рту [npc2.her].
 		]]></otherUse>
 	</useDescriptions>
 

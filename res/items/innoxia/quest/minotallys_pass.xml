@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>1000</value> 
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[Elis Town Hall Pass]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Elis Town Hall Passes]]></namePlural>
-		<description><![CDATA[A plastic card which grants the holder access to the tower of Elis's town hall.]]></description> 
+		<name><![CDATA[Пропуск в ратушу Элиса]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Пропуска в ратушу Элиса]]></namePlural>
+		<description><![CDATA[Пластиковая карта, дающая владельцу доступ к башне ратуши Элиса.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourGood(Grants access)] to Elis's town hall's tower]]></line>
+			<line><![CDATA[[style.colourGood(Дает доступ)] к башне ратуши Элиса]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			Signed by Minotally's personal assistant, Arion, this pass carries a 'gold' level clearance, which, due to the fact that it grants you unrestricted access to Minotallys herself, you assume to be the highest level of clearance there is.
+			Этот пропуск, подписанный личным помощником Минотали — Арионом, обладает «золотым» уровнем допуска. Поскольку он дает тебе неограниченный доступ к самой Минотали, ты полагаешь, что это самый высокий уровень допуска из всех возможных.
 		</p>
 		]]></applyEffects>
 		
@@ -38,10 +38,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the pass...
+		[npc.Name] [npc.verb(внимательнее рассмотреть)] пропуск...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] pass to [npc2.name], who is duly impressed by [npc.her] possession of it...
+		[npc.Name] [npc.verb(хвастливо показать)] [npc.her] пропуск [npc2.name], который должным образом впечатляется тем, что [npc.her] владеет им...
 		]]></otherUse>
 	</useDescriptions>
 

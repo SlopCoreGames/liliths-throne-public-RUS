@@ -14,10 +14,10 @@
 	
 	<tags/>
 	
-	<name><![CDATA[Trickster's Bounty]]></name>
+	<name><![CDATA[Дар Трикстера]]></name>
 	
 	<description><![CDATA[
-		By wearing the Trickster's set, [npc.nameIs] filled with a sense of roguish delight. With all manner of cunning plots and schemes jumping into [npc.her] mind, [npc.name] [npc.verb(feel)] as though [npc.sheHas] become a trickster god#IF(npc.isFeminine())dess#ENDIF!
+		Нося сет Трикстера, [npc.nameIs] наполняется чувством озорного восторга. Когда в [npc.her] разум лезут самые разные хитрые замыслы и коварные планы, [npc.name] [npc.verb(feel)] так, словно [npc.sheHas] стал богом-трикстером#IF(npc.isFeminine())dess#ENDIF!
 	]]></description>
 	
 	<imageName>trickster_set.svg</imageName>

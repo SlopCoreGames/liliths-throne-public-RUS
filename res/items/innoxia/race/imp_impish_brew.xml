@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>10</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Impish Brew]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Impish Brews]]></namePlural>
-		<description><![CDATA[A cracked and dirty glass bottle, filled with a creamy-yellow liquid. There's no label, but someone's helpfully, albeit crudely, written 'Impish Brew' in black marker pen on one side. You think you can guess what the thick, musky liquid is...]]></description> 
+		<name><![CDATA[Бесовское варево]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Бесовские варева]]></namePlural>
+		<description><![CDATA[Потрескавшаяся грязная стеклянная бутылка, наполненная кремово-желтой жидкостью. Этикетки нет, но кто-то услужливо, хоть и небрежно, вывел черным маркером «Бесовское варево» на одной из сторон. Кажется, ты можешь догадаться, что это за густая мускусная жижа...]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_CORRUPTION</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_CORRUPTION.getFormattedValue(50)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_CORRUPTION.getFormattedValue(50)] к «эффектам зелья»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A sickly wave of corruptive arcane energy washes over [npc.name]...
+				Болезненная волна порочной арканической энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_CORRUPTION, 50)]
 		]]></applyEffects>
@@ -50,10 +50,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		As [npc.name] [npc.verb(unscrew)] the cap from the bottle of Impish Brew, [npc.her] senses are immediately assaulted by the musky, potent smell of the liquid within. Bringing the dirty bottle to [npc.her] [npc.lips], [npc.she] [npc.verb(force)] [npc.herself] to gulp down all of the thick, musky liquid contained within.
+		Когда [npc.name] [npc.verb(unscrew)] крышку бутылки с Бесовским варевом, чувства [npc.her] тут же атакует резкий мускусный запах жидкости. Поднеся грязную бутылку к [npc.her] [npc.lips], [npc.she] [npc.verb(force)] [npc.herself] заглатывать густую мускусную жижу до последней капли.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Unscrewing the cap from the dirty bottle of Impish Brew, [npc.name] [npc.verb(bring)] it up to [npc2.namePos] waiting [npc2.lips]. After letting out an uncomfortable whine, [npc2.she] [npc2.verb(force)] [npc2.herself] to gulp down all of the thick, musky liquid contained within.
+		Открутив крышку грязной бутылки с Бесовским варевом, [npc.name] [npc.verb(bring)] её к ожидающей [npc2.namePos] [npc2.lips]. Издав неуютный скулящий звук, [npc2.she] [npc2.verb(force)] [npc2.herself] заглатывать густую мускусную жижу до последней капли.
 		]]></otherUse>
 	</useDescriptions>
 

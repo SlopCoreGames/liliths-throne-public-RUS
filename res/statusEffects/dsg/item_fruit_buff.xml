@@ -10,9 +10,9 @@
 	<combatEffect>false</combatEffect>
 	<sexEffect>false</sexEffect>
 	<tags/>
-	<name><![CDATA[Crag's Bounty]]></name>
+	<name><![CDATA[Дары Скал]]></name>
 	<description><![CDATA[
-		Consuming mountain-grown produce wards [npc.name] from poison!
+		Употребление горных плодов защищает [npc.name] от яда!
 	]]></description>
 	<imageName>fruit_buff_tangerine.svg</imageName>
 	<colourPrimary>GENERIC_GOOD</colourPrimary> 

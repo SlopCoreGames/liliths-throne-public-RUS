@@ -15,10 +15,10 @@
 		<determiner><![CDATA[a]]></determiner>
 		
 		<!-- The name of this item. -->
-		<name><![CDATA[breeder pill]]></name>
+		<name><![CDATA[таблетка заводчицы]]></name>
 		
 		<!-- The plural name of this item. If pluralByDefault's "false" is changed to "true", then the game will always the plural name when referring to this item. -->
-		<namePlural pluralByDefault="false"><![CDATA[breeder pills]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[таблетки заводчицы]]></namePlural>
 		
 		<!-- The description/lore of this item.
 			You can use 'npc' to access the character who's the owner of this item, but if you do you should do an npc null check first (as this item may be on the ground with no owner), like so:
@@ -31,7 +31,7 @@
 					 It's worth [style.moneyFormat([#thisItem.getValue()], span)]!
 				]]></description> 
 		-->
-		<description><![CDATA[A small, light-purple pill, individually packaged in a foil and plastic wrapper. While the text printed on the foil identifies this pill as an 'Orally-Administered Reproduction Enhancer', it's colloquially known as a 'breeder pill', and temporarily boosts both fertility and virility when ingested.]]></description> 
+		<description><![CDATA[Маленькая светло-фиолетовая таблетка в индивидуальной фольгированной упаковке. Хотя на обертке написано «Пероральное средство для усиления репродуктивной функции», в народе её называют «таблеткой заводчицы». При приеме она временно повышает как фертильность, так и мужскую силу.]]></description> 
 		
 		<!-- How the item is used. This should be a single verb, and is used as the title of the action when using it. -->
 		<useDescriptor>swallow</useDescriptor>
@@ -121,7 +121,7 @@
 		It should probably only be used to describe what happens in the <applyEffects> element.
 		No characters are passed in as parsing arguments, so you should NOT use any character-specific parsing elements (such as [npc.name]). -->
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourExcellent(Disables)] 'menopause' effect]]></line>
+			<line><![CDATA[[style.colourExcellent(Disables)] эффект «менопаузы"]]></line>
 		</effectTooltipLines>
 		
 		<!-- This is what is called and parsed every time this item is used on someone.
@@ -131,24 +131,24 @@
 		<applyEffects><![CDATA[
 			[##npc.removeStatusEffect(SE_PROMISCUITY_PILL)]
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				The small pill easily slides down [npc.her] throat, and within moments [npc.she] [npc.verb(feel)]
+				Маленькая таблетка легко проскальзывает по [npc.her] горлу, и спустя мгновение [npc.she] [npc.verb(feel)]
 				#IF(npc.hasVagina())
-					 a soothing, warm glow spreading out from [npc.her] ovaries into [npc.her] lower torso. [npc.Her] mind fogs over with an overwhelming desire to feel potent sperm spurting deep into [npc.her] 
+					 успокаивающее тепло разливается от [npc.her] яичников по [npc.her] нижней части живота. [npc.Her] разум затуманивается от непреодолимого желания почувствовать, как мощная сперма бьет глубоко в [npc.her] 
 					#IF(npc.isVisiblyPregnant())
-						 pussy,
+						 киску,
 					#ELSE
-						 womb,
+						 матку,
 					#ENDIF
-					 and before [npc.she] can stop it, a horny whimper escapes from between [npc.her] [npc.lips].
+					 и прежде чем [npc.she] успевает это остановить, из-под [npc.her] [npc.lips] вырывается похотливый скулеж.
 					#IF(npc.hasPenisIgnoreDildo())
-						 At the same time, [npc.her] manhood begins to throb with need, and [npc.she] [npc.verb(feel)]
+						 В то же время [npc.her] мужское достоинство начинает пульсировать от нужды, и [npc.she] [npc.verb(feel)]
 					#ENDIF
 				#ENDIF
 				#IF(npc.hasPenisIgnoreDildo())
-					 an overpowering desire to sink deep into a fertile female's cunt and fill her with [npc.cum+].
+					 непреодолимое желание погрузиться глубоко в чрево плодовитой самки и заполнить её [npc.cum+].
 				#ENDIF
 				#IF(!npc.hasPenisIgnoreDildo() && !npc.hasVagina())
-					a desperate heat in [npc.her] genderless mound.
+					отчаянный жар в бесполом теле [npc.her].
 				#ENDIF
 			</p>
 		]]></applyEffects>
@@ -168,10 +168,10 @@
 	-->
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the breeder pill out of its little foil wrapper, before quickly placing it in [npc.her] mouth and swallowing it down.
+		[npc.Name] [npc.verb(pop)] достает таблетку плодовитости из маленькой фольгированной обертки, после чего быстро отправляет ее в [npc.her] рот и проглатывает.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the breeder pill out of its little foil wrapper, before bringing it up to [npc2.namePos] [npc2.lips], forcing it into [npc2.her] mouth, and making sure that [npc2.she] [npc2.verb(swallow)] it down.
+		[npc.Name] [npc.verb(pop)] достает таблетку плодовитости из маленькой фольгированной обертки, подносит ее к [npc2.namePos] [npc2.lips], силой впихивает в [npc2.her] рот и следит за тем, чтобы [npc2.she] [npc2.verb(swallow)] ее.
 		]]></otherUse>
 	</useDescriptions>
 

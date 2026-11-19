@@ -20,9 +20,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Go for it ([style.moneyFormatUncoloured(10000, span)])]]></responseTitle>
+                <responseTitle><![CDATA[Действуй ([style.moneyFormatUncoloured(10000, span)])]]></responseTitle>
                 <responseTooltip><![CDATA[
-					You can't afford to pay Angel that kind of money right now...
+					Ты просто не можешь позволить себе отвалить Ангелу такие бабки прямо сейчас...
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[null]]></nextDialogue>
                 <effects/>
@@ -33,9 +33,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Go for it ([style.moneyFormat(10000, span)])]]></responseTitle>
+                <responseTitle><![CDATA[Действуй ([style.moneyFormat(10000, span)])]]></responseTitle>
                 <responseTooltip><![CDATA[
-					You just can't say no and happily pay the ten thousand flames which Angel is asking of you in order to have sex with her.
+					Ты просто не можешь сказать «нет» и с радостью отдаешь десять тысяч огней, которые требует Ангел, чтобы переспать с ней.
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -76,12 +76,12 @@
             <response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Refuse]]></responseTitle>
+                <responseTitle><![CDATA[Отказаться]]></responseTitle>
                 <responseTooltip><![CDATA[
 					#IF(pc.getMoney()<10000)
-						You simply can't afford to pay that kind of money to have sex with Angel, so have no option but to refuse her offer...
+						У тебя просто нет возможности выложить такую сумму за секс с Ангелом, так что остается только принять ее предложение...
 					#ELSE
-						You're not willing to pay that kind of money to have sex with Angel, so decide to refuse her offer...
+						Тебе не хочется тратить столько денег на секс с Ангелом, поэтому ты решаешь отклонить ее предложение...
 					#ENDIF
 				]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_dominion_angel_office_leave]]></nextDialogue>
@@ -104,8 +104,8 @@
 
     <scene id ="after_sex">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Having satisfied you, Angel smiles and tells you that her work here is done...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Удовлетворив тебя, Ангел улыбается и говорит, что ее работа здесь окончена...]]></tooltip>
         <content folderPath="txt/acexp/dominion/angel_office">AFTER_SEX</content>
         <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
         <continuesDialogue>false</continuesDialogue>
@@ -115,8 +115,8 @@
                 <availabilityConditional><![CDATA[true]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Continue]]></responseTitle>
-                <responseTooltip><![CDATA[Continue on your way.]]></responseTooltip>
+                <responseTitle><![CDATA[Продолжить]]></responseTitle>
+                <responseTooltip><![CDATA[Продолжить свой путь.]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_dominion_angel_office_leave]]></nextDialogue>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
                 <effects><![CDATA[
@@ -146,12 +146,12 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Sex ([style.moneyFormatUncoloured(10000, span)])]]></responseTitle>
+                <responseTitle><![CDATA[Секс ([style.moneyFormatUncoloured(10000, span)])]]></responseTitle>
                 <responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_acexp_angel_daily_sex))
-						You've already had sex with Angel, and she doesn't have time for another session today...
+						Ты уже занимался сексом с Ангелом, и сегодня у неё нет времени на ещё один раунд...
 					#ELSE
-						You can't afford to pay Angel that kind of money right now...
+						Сейчас ты не можешь позволить себе заплатить Ангелу такие деньги...
 					#ENDIF
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[null]]></nextDialogue>
@@ -163,9 +163,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Sex ([style.moneyFormat(10000, span)])]]></responseTitle>
+                <responseTitle><![CDATA[Секс ([style.moneyFormat(10000, span)])]]></responseTitle>
                 <responseTooltip><![CDATA[
-					You just can't say no and happily pay the ten thousand flames which Angel is asking of you in order to have sex with her.
+					Ты просто не можешь сказать «нет» и с радостью отдаешь десять тысяч огней, которые требует Ангел, чтобы переспать с ней.
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>

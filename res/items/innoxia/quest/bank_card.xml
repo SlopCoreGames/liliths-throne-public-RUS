@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>10000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[platinum Bank of Dominion card]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[platinum Bank of Dominion cards]]></namePlural>
-		<description><![CDATA[A plastic card which declares the holder as possessing a platinum account with the Bank of Dominion, thereby identifying them as a direct descendant of an elder lilin.]]></description> 
+		<name><![CDATA[платиновая карта Банка Dominion]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[платиновые карты Банка Dominion]]></namePlural>
+		<description><![CDATA[Пластиковая карта, подтверждающая, что её владелец обладает платиновым счетом в Банке Dominion, что прямо указывает на его происхождение от старших лилин.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Grants access to premium banking services]]></line>
+			<line><![CDATA[Дает доступ к премиальным банковским услугам]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			The small print on the front of the card explains that platinum accounts are only given out to direct descendants of elder lilin, and as such your card has been marked to identify you as being of Lyssieth's lineage. It has been verified with three arcane stamps, which glow when the card is in possession of its rightful owner. A warning on the front instructs citizens to immediately notify the nearest Enforcer if the stamps are not glowing.
+			Мелкий шрифт на лицевой стороне карты гласит, что платиновые счета выдаются только прямым потомкам старших лилин, поэтому твоя карта отмечена как принадлежащая к роду Lyssieth. На карте стоят три Арканы, которые начинают светиться, когда карта находится в руках законного владельца. Предупреждение на лицевой стороне велит гражданам немедленно сообщать ближайшему Enforcer, если печати не светятся.
 		</p>
 		]]></applyEffects>
 		
@@ -38,10 +38,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the bank card...
+		[npc.Name] [npc.verb(take)] внимательнее рассмотреть банковскую карту...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] bank card to [npc2.name], who is duly impressed by [npc.her] possession of it...
+		[npc.Name] [npc.verb(show)] [npc.her] банковскую карту перед [npc2.name], который всерьез впечатлен тем, что [npc.her] владеет ею...
 		]]></otherUse>
 	</useDescriptions>
 

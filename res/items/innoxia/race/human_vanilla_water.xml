@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>10</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Vanilla Water]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Vanilla Waters]]></namePlural>
-		<description><![CDATA[A plastic bottle filled with what appears to be nothing but water. While there's no label on the bottle, there is a slight indentation on its surface, and, holding it up to the light to get a better look, you see that the impression spells the words 'Vanilla Water'.]]></description> 
+		<name><![CDATA[Ванильная вода]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ванильные воды]]></namePlural>
+		<description><![CDATA[Пластиковая бутылка, наполненная, кажется, самой обычной водой. На бутылке нет этикетки, но на её поверхности есть небольшое углубление; если поднести её к свету, чтобы рассмотреть получше, можно увидеть, что это надпись «Ванильная вода».]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A cool wave of arcane energy washes over [npc.name]...
+			Прохладная волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 1)]
 		]]></applyEffects>
@@ -51,10 +51,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After first unscrewing the cap, [npc.name] [npc.verb(bring)] the plastic bottle of Vanilla Water up to [npc.her] [npc.mouth]. A faint sweet smell informs [npc.herHim] that this isn't any ordinary water, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the cool liquid, the taste of vanilla overwhelms [npc.her] senses.
+		Открутив крышку, [npc.name] [npc.verb(подносит)] пластиковую бутылку с ванильной водой к [npc.her] [npc.mouth]. Слабый сладкий аромат подсказывает [npc.herHim], что это не просто вода, и когда [npc.she] [npc.verb(закидывает)] [npc.her] голову назад и [npc.verb(начинает)] пить прохладную жидкость, вкус ванили ошеломляет [npc.her] чувства.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After first unscrewing the cap, [npc.name] [npc.verb(bring)] the plastic bottle of Vanilla Water up to [npc2.namePos] waiting [npc2.lips]. A faint sweet smell informs [npc2.herHim] that this isn't any ordinary water, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the cool liquid, the taste of vanilla overwhelms [npc2.her] senses.
+		Открутив крышку, [npc.name] [npc.verb(подносит)] пластиковую бутылку с ванильной водой к ожидающей [npc2.namePos] [npc2.lips]. Слабый сладкий аромат подсказывает [npc2.herHim], что это не просто вода, и когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову назад и [npc2.verb(начинает)] пить прохладную жидкость, вкус ванили ошеломляет [npc2.her] чувства.
 		]]></otherUse>
 	</useDescriptions>
 

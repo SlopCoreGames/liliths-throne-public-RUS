@@ -3,7 +3,7 @@
 
 	<scene id ="start">				
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[A gathered mob]]></title>			
+		<title><![CDATA[Собравшаяся толпа]]></title>			
 		<content folderPath="txt/dsg/encounters/fields/elis/market/eisek_initial">ENCOUNTER_START</content>		
 		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>	
 		<travelDisabled><![CDATA[true]]></travelDisabled>	
@@ -13,8 +13,8 @@
 			<response>					
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Approach]]></responseTitle>
-				<responseTooltip><![CDATA[Approach the stall and see what the mob is up to.]]></responseTooltip>
+				<responseTitle><![CDATA[Подойти]]></responseTitle>
+				<responseTooltip><![CDATA[Подойти к прилавку и посмотреть, чем занята толпа.]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[dsg_encounters_fields_elis_market_eisek_initial_approach]]></nextDialogue>
 				<secondsPassed/>
@@ -25,8 +25,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Back off]]></responseTitle>
-				<responseTooltip><![CDATA[People are avoiding the area for a reason.]]></responseTooltip>
+				<responseTitle><![CDATA[Отступить]]></responseTitle>
+				<responseTooltip><![CDATA[Люди избегают этого места не просто так.]]></responseTooltip>
 				<nextDialogue><![CDATA[dsg_encounters_fields_elis_market_eisek_initial_back_off]]></nextDialogue>
 				<secondsPassed/>
 				<effects><![CDATA[
@@ -38,7 +38,7 @@
 	
 	<scene id ="back_off">				
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[Backing off...]]></title>		
+		<title><![CDATA[Отступаешь...]]></title>		
 		<content folderPath="txt/dsg/encounters/fields/elis/market/eisek_initial">ENCOUNTER_BACK_OFF</content>		
 		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>				
 		<continuesDialogue><![CDATA[true]]></continuesDialogue>	
@@ -49,8 +49,8 @@
 			<response>				
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having backed off from the stall, you're now free to continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Отойдя от прилавка, ты можешь спокойно продолжить свой путь...]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
 				<secondsPassed/>
@@ -61,7 +61,7 @@
 	
 	<scene id ="approach">				
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[Approach the mob]]></title>		
+		<title><![CDATA[Подойти к толпе]]></title>		
 		<content folderPath="txt/dsg/encounters/fields/elis/market/eisek_initial">ENCOUNTER_APPROACH</content>		
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>				
 		<travelDisabled><![CDATA[true]]></travelDisabled>	
@@ -72,8 +72,8 @@
 				<availabilityConditional><![CDATA[[#!pc.getRace().equals(RACE_dsg_dragon)]]]></availabilityConditional>	
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Play along]]></responseTitle>
-				<responseTooltip><![CDATA[Play along and pretend that you know this [eisek.race].]]></responseTooltip>
+				<responseTitle><![CDATA[Прикинуться своей]]></responseTitle>
+				<responseTooltip><![CDATA[Прикинуться своей и сделать вид, что ты знаешь эту [eisek.race].]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[dsg_encounters_fields_elis_market_eisek_initial_play_along]]></nextDialogue>
 				<secondsPassed/>
@@ -88,8 +88,8 @@
 				<availabilityConditional><![CDATA[[#pc.getRace().equals(RACE_dsg_dragon)]]]></availabilityConditional>	
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Well, that certainly was something...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Ну, это было... эффектно...]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[dsg_encounters_fields_elis_market_eisek_initial_play_along]]></nextDialogue>
 				<secondsPassed/>
@@ -105,8 +105,8 @@
 				<availabilityConditional><![CDATA[[#!pc.getRace().equals(RACE_dsg_dragon)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Side with the mob]]></responseTitle>
-				<responseTooltip><![CDATA[There's no way you're going to let someone you don't even know take advantage of you.]]></responseTooltip>
+				<responseTitle><![CDATA[Принять сторону толпы]]></responseTitle>
+				<responseTooltip><![CDATA[Ты ни за что не позволишь какому-то незнакомцу нажиться на тебе.]]></responseTooltip>
 				<nextDialogue><![CDATA[dsg_encounters_fields_elis_market_eisek_initial_side_with_mob]]></nextDialogue>
 				<secondsPassed/>
 				<effects><![CDATA[					
@@ -122,7 +122,7 @@
 	
 	<scene id ="side_with_mob">				
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[Siding with the mob]]></title>	
+		<title><![CDATA[Принять сторону толпы]]></title>	
 		<content folderPath="txt/dsg/encounters/fields/elis/market/eisek_initial">ENCOUNTER_SIDE_WITH_MOB</content>		
 		<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>				
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>	
@@ -133,8 +133,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Nothing left to see here, might as well move on.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Смотреть тут больше не на что, можно двигаться дальше.]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue><![CDATA[dsg_places_fields_elis_market_produce_banished_stall]]></nextDialogue>
 				<secondsPassed/>
@@ -145,7 +145,7 @@
 	
 	<scene id ="play_along">				
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[Playing along]]></title>
+		<title><![CDATA[Подыграть]]></title>
 		<content folderPath="txt/dsg/encounters/fields/elis/market/eisek_initial">ENCOUNTER_PLAY_ALONG</content>		
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>		
 		<continuesDialogue><![CDATA[false]]></continuesDialogue>	

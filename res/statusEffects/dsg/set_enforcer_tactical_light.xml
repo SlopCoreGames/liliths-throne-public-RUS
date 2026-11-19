@@ -30,11 +30,11 @@
 	<sexEffect>false</sexEffect>
 	
 	<!-- The name of this set bonus. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
-	<name><![CDATA[Methodical Enforcer]]></name>
+	<name><![CDATA[Методичный Enforcer]]></name>
 	
 	<!-- The description of this status effect. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
 	<description><![CDATA[
-		The Enforcer Light Tactical Uniform gives [npc.name] a sense of both protection and agility.
+		Легкая тактическая униформа Enforcer дарит [npc.name] одновременно чувство защищенности и маневренности.
 	]]></description>
 	
 	<!-- The name of the icon which should be used to represent this status effect. The icon must be an svg file, and must be placed in the same folder as this XML file. -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA["MFD by DSG Tarp and Awning Co." is burned into one section.]]></authorTag>
+		<authorTag><![CDATA[На одной из секций выжжено: «Произведено компанией DSG Tarp and Awning Co.»]]></authorTag>
 		
 		<value>550</value> 
 		<determiner><![CDATA[a set of]]></determiner>
-		<name><![CDATA[foldable awning poles]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[foldable awning poles]]></namePlural>
-		<description><![CDATA[Originally destined to become the haft of several battleaxes, this set of wooden poles has been re-purposed to hold up an awning instead.]]></description> 
+		<name><![CDATA[складные шесты для навеса]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[складные шесты для навеса]]></namePlural>
+		<description><![CDATA[Изначально предназначенные для того, чтобы стать топорищами для нескольких боевых топоров, эти деревянные шесты теперь переделаны под опоры для навеса.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -25,12 +25,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[One of [style.colourGood(three)] items that you need to fix up Eisek's stall.]]></line>
+			<line><![CDATA[Один из [style.colourGood(трех)] предметов, необходимых для починки лавки Эйзека.]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			The wooden poles are joined together with metal hinges and locking tubes allowing it to either unfold to a longer size or fold to a more compact size for travel.
+			Деревянные шесты соединены металлическими шарнирами и зажимными трубками, что позволяет либо раздвигать их, увеличивая длину, либо складывать для удобства транспортировки.
 		</p>
 		]]></applyEffects>
 		
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unfold)] the set of wooden poles and [npc.verb(take)] a closer look while resisting the urge to swing it around like a quarterstaff...
+		[npc.Name] [npc.verb(разложить)] шесты и [npc.verb(рассмотреть)] их поближе, едва сдерживая желание взмахнуть ими, словно боевым посохом...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unfold)] the set of wooden poles for [npc2.name] to take a closer look at...
+		[npc.Name] [npc.verb(разложить)] шесты, чтобы [npc2.name] мог(ла) рассмотреть их поближе...
 		]]></otherUse>
 	</useDescriptions>
 

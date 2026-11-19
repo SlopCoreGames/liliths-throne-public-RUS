@@ -9,12 +9,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(9, 24))
-						Push open the door and enter 'Woolly Heaven'.
+						Толкаешь дверь и входишь в «Шерстяной рай».
 					#ELSE
-						As 'Woolly Heaven' is currently closed, you'll have to come back at another time...
+						Поскольку «Шерстяной рай» сейчас закрыт, тебе придется зайти в другой раз...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -43,9 +43,9 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Introduction]]></responseTitle>
+					<responseTitle><![CDATA[Знакомство]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell Penelope who you are.
+						Представиться Пенелопе.
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_introduction]]></nextDialogue>
 				</response>
@@ -54,8 +54,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Cosmetics]]></responseTitle>
-					<responseTooltip><![CDATA[Ask Penelope about her cosmetic services...]]></responseTooltip>
+					<responseTitle><![CDATA[Косметика]]></responseTitle>
+					<responseTooltip><![CDATA[Расспросить Пенелопу о её косметических услугах...]]></responseTooltip>
 					<nextDialogue><![CDATA[BEAUTICIAN_START]]></nextDialogue>
 					<effects><![CDATA[
 						[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'COSMETICS_START'))]
@@ -67,7 +67,7 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Spa (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+					<responseTitle><![CDATA[Спа (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 					<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Give Penelope a hundred and fifty flames in exchange for access to the spa. #ELSE You can't afford to use the spa... #ENDIF]]></responseTooltip>
 					<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_shops_spa_relax#ELSEnull#ENDIF]]></nextDialogue>
 					<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -79,7 +79,7 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Massage (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
+					<responseTitle><![CDATA[Массаж (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
 					<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Give Penelope two hundred and fifty flames in exchange for receiving a massage. #ELSE You can't afford to get a massage... #ENDIF]]></responseTooltip>
 					<nextDialogue><![CDATA[
 						#IF(pc.getMoney()>=250)
@@ -107,12 +107,12 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Posters]]></responseTitle>
+					<responseTitle><![CDATA[Плакаты]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_spa_talk_posters))
-							You've already asked Penelope about the posters which cover the walls today...
+							Ты уже спрашивал Пенелопу о плакатах на стенах сегодня...
 						#ELSE
-							Ask Penelope about the posters of her which cover the walls.
+							Расспросить Пенелопу о плакатах с её изображением, которые висят на стенах.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -134,13 +134,12 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Sheep focus]]></responseTitle>
+					<responseTitle><![CDATA[Овцы повсюду]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_spa_talk_sheep))
-							You've already asked Penelope about why all of her employees are sheep-morphs today...
+							Ты уже спрашивал(а) Пенелопу о том, почему сегодня все её сотрудники — овцелюди...
 						#ELSE
-							Ask Penelope why all of her employees are sheep-morphs.
-						#ENDIF
+							Спросить Пенелопу, почему все её сотрудники — овцелюди.						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_spa_talk_sheep))
@@ -162,8 +161,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_spa_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[0]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
-					<responseTooltip><![CDATA[Say goodbye to Penelope and exit the spa.]]></responseTooltip>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
+					<responseTooltip><![CDATA[Попрощаться с Пенелопой и выйти из спа.]]></responseTooltip>
 					<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_shops_street"/>
 					<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 					<effects><![CDATA[
@@ -210,8 +209,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Relax]]></responseTitle>
-				<responseTooltip><![CDATA[Take some time to relax in the spa...]]></responseTooltip>
+				<responseTitle><![CDATA[Расслабиться]]></responseTitle>
+				<responseTooltip><![CDATA[Немного расслабиться в спа...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_relax_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.applyWash(true, false, SE_CLEANED_SPA, 240+120)]
@@ -240,8 +239,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Daphne]]></responseTitle>
-				<responseTooltip><![CDATA[The next sheep-girl enters the reception area...]]></responseTooltip>
+				<responseTitle><![CDATA[Дафна]]></responseTitle>
+				<responseTooltip><![CDATA[Следующая овцедевушка заходит в зону ресепшена...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_intro_next]]></nextDialogue>
 				<effects/>
 			</response>
@@ -260,8 +259,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Farah]]></responseTitle>
-				<responseTooltip><![CDATA[The last of the three sheep-girls enters the reception area...]]></responseTooltip>
+				<responseTitle><![CDATA[Фарах]]></responseTitle>
+				<responseTooltip><![CDATA[Последняя из трёх овцедевушек заходит в зону ресепшена...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_intro_final]]></nextDialogue>
 				<effects/>
 			</response>
@@ -280,8 +279,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Penelope]]></responseTitle>
-				<responseTooltip><![CDATA[With the three sheep-girls introduced, Penelope lets you know what you'll be in for if you choose her...]]></responseTooltip>
+				<responseTitle><![CDATA[Пенелопа]]></responseTitle>
+				<responseTooltip><![CDATA[После знакомства с тремя овечьими девушками, Пенелопа дает тебе понять, чего именно стоит ожидать, если ты выберешь её...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_intro_final_penelope]]></nextDialogue>
 				<effects/>
 			</response>
@@ -311,8 +310,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Belle]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Belle that you'd like to receive a massage from her.]]></responseTooltip>
+				<responseTitle><![CDATA[Белль]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Белль, что ты хочешь получить от неё массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_belle_start]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.addStatusEffect(SE_CLEANED_MASSAGED, 260*60)]
@@ -323,8 +322,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Daphne]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Daphne that you'd like to receive a massage from her.]]></responseTooltip>
+				<responseTitle><![CDATA[Дафна]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Дафне, что ты хочешь получить от неё массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_daphne_start]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.addStatusEffect(SE_CLEANED_MASSAGED, 260*60)]
@@ -335,8 +334,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Farah]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Farah that you'd like to receive a massage from her.]]></responseTooltip>
+				<responseTitle><![CDATA[Фарах]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Фаре, что ты хочешь получить от неё массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_farah_start]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.addStatusEffect(SE_CLEANED_MASSAGED, 260*60)]
@@ -347,7 +346,7 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Penelope (#IF(pc.getMoney()>=750)[style.moneyFormat(750, span)]#ELSE[style.moneyFormatUncoloured(750, span)]#ENDIF)]]></responseTitle>
+					<responseTitle><![CDATA[Пенелопа (#IF(pc.getMoney()>=750)[style.moneyFormat(750, span)]#ELSE[style.moneyFormatUncoloured(750, span)]#ENDIF)]]></responseTitle>
 					<responseTooltip><![CDATA[#IF(pc.getMoney()>=750) Give Penelope an additional seven hundred and fifty flames in exchange for receiving a massage from her. #ELSE You can't afford to get a massage from Penelope... #ENDIF]]></responseTooltip>
 					<nextDialogue><![CDATA[#IF(pc.getMoney()>=750)innoxia_places_fields_elis_shops_spa_massage_penelope_start#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
@@ -361,8 +360,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Back ([style.moneyFormat(+250, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Penelope that you've changed your mind and don't want a massage after all...<br/>[style.italicsGood(You will be refunded your two hundred and fifty flames.)]]]></responseTooltip>
+				<responseTitle><![CDATA[Назад ([style.moneyFormat(+250, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Пенелопе, что ты передумал и массаж тебе больше не нужен...<br/>[style.italicsGood(Тебе вернут двести пятьдесят огней.)]]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_back]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.incrementMoney(250))]
@@ -393,8 +392,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Massage]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Belle that you just want her to continue with the massage.]]></responseTooltip>
+				<responseTitle><![CDATA[Массаж]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Белль, чтобы она просто продолжала массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_belle_continue_massage]]></nextDialogue>
 				<effects/>
 			</response>
@@ -405,14 +404,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormatUncoloured(100, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormatUncoloured(100, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<100)
-						You don't have enough money to pay for a special groin 'massage'.
+						У тебя недостаточно денег, чтобы оплатить особый «массаж» паха.
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive a special groin 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить особый «массаж» паха.
 					#ELSE
-						As you're unable to access your groin, you cannot receive a special 'massage'.
+						Поскольку у тебя нет доступа к паху, ты не можешь получить особый «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -423,18 +422,18 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormat(100, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormat(100, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Belle a hundred flames in exchange for receiving a special groin 'massage'.
+					Дай Белле сто огней в обмен на особый «массаж» паха.
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
 						#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-							[style.italicsSex(This will result in Belle giving you a handjob and fingering you.)]
+							[style.italicsSex(В результате Белла отсосет тебе и подействует пальцами в твою щель.)]
 						#ELSE
-							[style.italicsSex(This will result in Belle giving you a handjob.)]
+							[style.italicsSex(В результате Белла отсосет тебе.)]
 						#ENDIF
 					#ELSE
-						[style.italicsSex(This will result in Belle fingering you.)]
+						[style.italicsSex(В результате Белла подействует тебе пальцами.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -484,14 +483,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormatUncoloured(250, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormatUncoloured(250, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<250)
-						You don't have enough money to pay for an oral 'massage'.
+						У тебя недостаточно денег, чтобы оплатить оральный «массаж».
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive an oral 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить оральный «массаж».
 					#ELSE
-						As you're unable to access your groin, you cannot receive an oral 'massage'.
+						Так как у тебя нет доступа к паху, ты не можешь получить оральный «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -502,14 +501,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormat(250, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormat(250, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Belle two hundred and fifty flames in exchange for receiving an oral 'massage'.
+					Отдай Белле двести пятьдесят огней, чтобы получить оральный «массаж».
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
-						[style.italicsSex(This will result in Belle giving you a blowjob.)]
+						[style.italicsSex(Белль отсосет тебе.)]
 					#ELSE
-						[style.italicsSex(This will result in Belle eating you out.)]
+						[style.italicsSex(Белль отсосет тебе в щель.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -559,8 +558,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for sex with Belle.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя недостаточно денег, чтобы переспать с Белль.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -569,10 +568,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormat(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс ([style.moneyFormat(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Belle five hundred flames in exchange for having sex with her.
-					<br/>[style.italicsSex(This will result in having sex with Belle.)]
+					Отдай Белле пятьсот огней, чтобы заняться с ней сексом.
+					<br/>[style.italicsSex(Ты переспишь с Белль.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-500))]
@@ -604,8 +603,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Bondage ([style.moneyFormatUncoloured(750, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for bondage sex with Belle.]]></responseTooltip>
+				<responseTitle><![CDATA[Бондаж ([style.moneyFormatUncoloured(750, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе не хватает денег, чтобы заняться бондаж-сексом с Белль.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -614,10 +613,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Bondage ([style.moneyFormat(750, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Бондаж ([style.moneyFormat(750, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Belle seven hundred and fifty flames in exchange for having bondage sex with her.
-					<br/>[style.italicsSex(This will result in binding Belle to the massage table and having sex with her.)]
+					Отдай Белль семьсот пятьдесят огней, чтобы заняться с ней бондаж-сексом.
+					<br/>[style.italicsSex(В результате Белль привяжут к массажному столу, и вы займетесь сексом.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-750))]
@@ -655,8 +654,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Belle has finished giving you your massage, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Белль закончила массаж, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_BELLE_FINISHED'))]
@@ -668,8 +667,8 @@
 	</scene>
 	
 	<scene id="massage_belle_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Belle has finished giving you your special service...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Белль закончила оказывать тебе особую услугу...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/shops/spa">MASSAGE_BELLE_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -679,8 +678,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Belle has finished giving you your special service, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Белль закончила оказывать тебе особую услугу, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_BELLE_FINISHED_END'))]
@@ -702,8 +701,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Massage]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Daphne that you just want her to continue with the massage.]]></responseTooltip>
+				<responseTitle><![CDATA[Массаж]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Дафне, что ты хочешь, чтобы она просто продолжила массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_daphne_continue_massage]]></nextDialogue>
 				<effects><![CDATA[
 				]]></effects>
@@ -715,14 +714,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormatUncoloured(100, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormatUncoloured(100, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<100)
-						You don't have enough money to pay for a special groin 'massage'.
+						У тебя недостаточно денег, чтобы оплатить особый «массаж» паха.
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive a special groin 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить особый «массаж» паха.
 					#ELSE
-						As you're unable to access your groin, you cannot receive a special 'massage'.
+						Поскольку у тебя нет доступа к паху, ты не можешь получить особый «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -733,18 +732,18 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormat(100, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormat(100, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Daphne a hundred flames in exchange for receiving a special groin 'massage'.
+					Отдай Дафне сто огней, чтобы получить особый «массаж» паха.
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
 						#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-							[style.italicsSex(This will result in Daphne giving you a handjob and fingering you.)]
+							[style.italicsSex(В результате Дафна сделает тебе мастурбацию рукой и пальцами.)]
 						#ELSE
-							[style.italicsSex(This will result in Daphne giving you a handjob.)]
+							[style.italicsSex(Дафна сделает тебе мастурбацию руками.)]
 						#ENDIF
 					#ELSE
-						[style.italicsSex(This will result in Daphne fingering you.)]
+						[style.italicsSex(Дафна будет ласкать тебя пальцами.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -794,14 +793,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormatUncoloured(250, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormatUncoloured(250, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<250)
-						You don't have enough money to pay for an oral 'massage'.
+						У тебя недостаточно денег, чтобы оплатить оральный «массаж».
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive an oral 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить оральный «массаж».
 					#ELSE
-						As you're unable to access your groin, you cannot receive an oral 'massage'.
+						Так как у тебя нет доступа к паху, ты не можешь получить оральный «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -812,14 +811,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormat(250, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormat(250, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Daphne two hundred and fifty flames in exchange for receiving an oral 'massage'.
+					Отдай Дафне двести пятьдесят огней в обмен на оральный «массаж».
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
-						[style.italicsSex(This will result in Daphne giving you a blowjob.)]
+						[style.italicsSex(Дафна сделает тебе минет.)]
 					#ELSE
-						[style.italicsSex(This will result in Daphne eating you out.)]
+						[style.italicsSex(Дафна будет ласкать тебя языком.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -869,8 +868,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for sex with Daphne.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя недостаточно денег, чтобы переспать с Дафной.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -879,10 +878,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormat(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс ([style.moneyFormat(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Daphne five hundred flames in exchange for having sex with her.
-					<br/>[style.italicsSex(This will result in having sex with Daphne.)]
+					Отдай Дафне пятьсот огней, чтобы заняться с ней сексом.
+					<br/>[style.italicsSex(Ты переспишь с Дафной.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-500))]
@@ -914,8 +913,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Pet-play ([style.moneyFormatUncoloured(750, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for pet-play sex with Daphne.]]></responseTooltip>
+				<responseTitle><![CDATA[Пет-плей ([style.moneyFormatUncoloured(750, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя недостаточно денег, чтобы заняться с Дафной пет-плеем.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -924,10 +923,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Pet-play ([style.moneyFormat(750, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Пет-плей ([style.moneyFormat(750, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Daphne seven hundred and fifty flames in exchange for having pet-play sex with her.
-					<br/>[style.italicsSex(This will result in Daphne pretending to be a feral sheep and only being able to be fucked in the all-fours position.)]
+					Отдать Дафне семьсот пятьдесят огней, чтобы заняться с ней пет-плеем.
+					<br/>[style.italicsSex(В этом случае Дафна будет притворяться дикой овечкой, и трахать её можно будет только в позе на четвереньках.)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
@@ -967,8 +966,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Daphne has finished giving you your massage, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Дафна закончила делать тебе массаж, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_DAPHNE_FINISHED'))]
@@ -980,8 +979,8 @@
 	</scene>
 	
 	<scene id="massage_daphne_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Daphne has finished giving you your special service...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Дафна закончила оказывать тебе особый сервис...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/shops/spa">MASSAGE_DAPHNE_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -991,8 +990,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Daphne has finished giving you your special service, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Дафна закончила оказывать тебе особый сервис, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_DAPHNE_FINISHED_END'))]
@@ -1014,8 +1013,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Massage]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Farah that you just want her to continue with the massage.]]></responseTooltip>
+				<responseTitle><![CDATA[Массаж]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Фаре, что ты хочешь, чтобы она просто продолжила массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_farah_continue_massage]]></nextDialogue>
 				<effects><![CDATA[
 				]]></effects>
@@ -1027,14 +1026,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormatUncoloured(100, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormatUncoloured(100, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<100)
-						You don't have enough money to pay for a special groin 'massage'.
+						У тебя недостаточно денег, чтобы оплатить особый «массаж» паха.
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive a special groin 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить особый «массаж» паха.
 					#ELSE
-						As you're unable to access your groin, you cannot receive a special 'massage'.
+						Поскольку у тебя нет доступа к паху, ты не можешь получить особый «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1045,18 +1044,18 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormat(100, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormat(100, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Farah a hundred flames in exchange for receiving a special groin 'massage'.
+					Отдать Фаре сто огней, чтобы получить особый «массаж» паха.
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
 						#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-							[style.italicsSex(This will result in Farah dominantly giving you a handjob and fingering you.)]
+							[style.italicsSex(В этом случае Фара будет доминировать, делая тебе мастурбацию рукой и пальцами.)]
 						#ELSE
-							[style.italicsSex(This will result in Farah dominantly giving you a handjob.)]
+							[style.italicsSex(В этом случае Фара будет доминировать, делая тебе мастурбацию рукой.)]
 						#ENDIF
 					#ELSE
-						[style.italicsSex(This will result in Farah dominantly fingering you.)]
+							[style.italicsSex(В этом случае Фара будет доминировать, лаская тебя пальцами.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -1106,14 +1105,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormatUncoloured(250, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormatUncoloured(250, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<250)
-						You don't have enough money to pay for an oral 'massage'.
+						У тебя недостаточно денег, чтобы оплатить оральный «массаж».
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive an oral 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить оральный «массаж».
 					#ELSE
-						As you're unable to access your groin, you cannot receive an oral 'massage'.
+						Так как у тебя нет доступа к паху, ты не можешь получить оральный «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1124,14 +1123,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormat(250, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormat(250, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Farah two hundred and fifty flames in exchange for receiving an oral 'massage'.
+					Отдать Фаре двести пятьдесят огней, чтобы получить оральный «массаж».
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
-						[style.italicsSex(This will result in Farah dominantly giving you a blowjob.)]
+						[style.italicsSex(В этом случае Фара будет доминировать, отсосывая тебе.)]
 					#ELSE
-						[style.italicsSex(This will result in Farah dominantly eating you out.)]
+						[style.italicsSex(В этом случае Фара будет доминировать, лаская тебя языком.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -1181,8 +1180,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for sex with Farah.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя недостаточно денег, чтобы заняться сексом с Фарой.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -1191,10 +1190,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormat(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс ([style.moneyFormat(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Farah five hundred flames in exchange for having sex with her.
-					<br/>[style.italicsSex(This will result in having sex with Farah.)]
+					Дай Фаре пятьсот огней в обмен на секс с ней.
+					<br/>[style.italicsSex(Ты займешься сексом с Фарой.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-500))]
@@ -1226,12 +1225,13 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Fertile sex ([style.moneyFormatUncoloured(750, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Плодовитый секс ([style.moneyFormatUncoloured(750, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(farah.isPregnant())
-						Farah is already pregnant, so she can't offer you the option of having fertile sex with her.
+						Фара уже беременна, поэтому она не может предложить тебе плодовитый секс.
 					#ELSE
-						You don't have enough money to pay for fertile sex with Farah.
+					
+У тебя недостаточно денег, чтобы заняться плодовитым сексом с Фарой.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1242,10 +1242,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Fertile sex ([style.moneyFormat(750, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Плодовитый секс ([style.moneyFormat(750, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Farah seven hundred and fifty flames in exchange for having fertile sex with her.
-					<br/>[style.italicsSex(This will result in Farah taking a fertility pill, thereby giving you the chance to impregnate her during sex.)]
+					Дай Фаре семьсот пятьдесят огней в обмен на плодовитый секс с ней.
+					<br/>[style.italicsSex(Фара примет таблетку для повышения фертильности, что даст тебе шанс оплодотворить её во время секса.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-750))]
@@ -1284,8 +1284,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Farah has finished giving you your massage, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда массаж окончен, тебе остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_FARAH_FINISHED'))]
@@ -1297,8 +1297,8 @@
 	</scene>
 	
 	<scene id="massage_farah_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Farah has finished giving you your special service...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Фарах закончила оказывать тебе особые услуги...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/shops/spa">MASSAGE_FARAH_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1308,8 +1308,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Farah has finished giving you your special service, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Фарах закончила свои особые услуги, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_FARAH_FINISHED_END'))]
@@ -1327,8 +1327,8 @@
 				[#game.appendToTextEndStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_FARAH_AFTER_SEX_FERTILE_RESULT'))]
 			#ENDIF
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Farah has finished giving you your special service...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Фарах закончила оказывать тебе особые услуги...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/shops/spa">MASSAGE_FARAH_AFTER_SEX_FERTILE</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1338,8 +1338,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Farah has finished giving you your special service, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Фарах закончила свои особые услуги, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_FARAH_FINISHED_END'))]
@@ -1362,8 +1362,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Massage]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Penelope that you just want her to continue with the massage.]]></responseTooltip>
+				<responseTitle><![CDATA[Массаж]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Пенелопе, что ты хочешь, чтобы она продолжила массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_continue_massage]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_PENELOPE_CONTINUE'))]
@@ -1376,14 +1376,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormatUncoloured(200, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormatUncoloured(200, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<200)
-						You don't have enough money to pay for a special groin 'massage'.
+						У тебя недостаточно денег, чтобы оплатить особый «массаж» паха.
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive a special groin 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить особый «массаж» паха.
 					#ELSE
-						As you're unable to access your groin, you cannot receive a special 'massage'.
+						Поскольку у тебя нет доступа к паху, ты не можешь получить особый «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1394,18 +1394,18 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormat(200, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormat(200, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope two hundred flames in exchange for receiving a special groin 'massage'.
+					Дай Пенелопе двести огней в обмен на особый «массаж» паха.
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
 						#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-							[style.italicsSex(This will result in Penelope submissively giving you a handjob and fingering you.)]
+							[style.italicsSex(В результате Пенелопа покорно сделает тебе мастурбацию руками и пальцами.)]
 						#ELSE
-							[style.italicsSex(This will result in Penelope submissively giving you a handjob.)]
+							[style.italicsSex(В результате Пенелопа покорно сделает тебе мастурбацию руками.)]
 						#ENDIF
 					#ELSE
-						[style.italicsSex(This will result in Penelope submissively fingering you.)]
+						[style.italicsSex(В результате этого Пенелопа покорно будет ласкать тебя пальцами.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -1455,14 +1455,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<500)
-						You don't have enough money to pay for an oral 'massage'.
+						У тебя недостаточно денег, чтобы оплатить оральный «массаж».
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive an oral 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить оральный «массаж».
 					#ELSE
-						As you're unable to access your groin, you cannot receive an oral 'massage'.
+						Так как у тебя нет доступа к паху, ты не можешь получить оральный «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1473,14 +1473,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormat(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormat(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope five hundred flames in exchange for receiving an oral 'massage'.
+					Отдай Пенелопе пятьсот огней в обмен на оральный «массаж».
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
-						[style.italicsSex(This will result in Penelope submissively giving you a blowjob.)]
+						[style.italicsSex(В результате этого Пенелопа покорно отсосет тебе.)]
 					#ELSE
-						[style.italicsSex(This will result in Penelope submissively eating you out.)]
+						[style.italicsSex(В результате этого Пенелопа покорно будет посасывать тебе.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -1530,8 +1530,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormatUncoloured(1000, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for sex with Penelope.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс ([style.moneyFormatUncoloured(1000, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя недостаточно денег, чтобы заняться сексом с Пенелопой.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -1540,10 +1540,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormat(1000, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс ([style.moneyFormat(1000, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope a thousand flames in exchange for having sex with her.
-					<br/>[style.italicsSex(This will result in having dominant sex with Penelope.)]
+					Отдай Пенелопе тысячу огней в обмен на секс с ней.
+					<br/>[style.italicsSex(В результате этого ты будешь доминировать во время секса с Пенелопой.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-1000))]
@@ -1575,8 +1575,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Fashion show ([style.moneyFormatUncoloured(1500, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for fashion show sex with Penelope.]]></responseTooltip>
+				<responseTitle><![CDATA[Показ мод ([style.moneyFormatUncoloured(1500, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе не хватает денег, чтобы заняться сексом с Пенелопой во время показа мод.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -1586,10 +1586,10 @@
 				<colour><![CDATA[GENERIC_SEX_AS_DOM]]></colour>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Fashion show ([style.moneyFormat(1500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Показ мод ([style.moneyFormat(1500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope one thousand five hundred flames in exchange for having fashion show sex with her.
-					<br/>[style.italicsSex(This will result in Penelope changing into an outfit of your choice and performing a mock fashion show, before either submissively or dominantly having sex with you.)]
+					Отдай Пенелопе полторы тысячи огней, чтобы заняться с ней сексом во время показа мод.
+					<br/>[style.italicsSex(В результате Пенелопа переоденется в выбранный тобой наряд и устроит шуточный показ мод, после чего займется с тобой сексом — либо покорно, либо доминантно.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_fashion_show]]></nextDialogue>
 				<effects><![CDATA[
@@ -1600,8 +1600,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Reverse massage]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Penelope that you want to swap things around and give her a massage.]]></responseTooltip>
+				<responseTitle><![CDATA[Обратный массаж]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Пенелопе, что хочешь поменяться ролями и сделать ей массаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_continue_massage_reversal]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_PENELOPE_CONTINUE_REVERSAL'))]
@@ -1615,14 +1615,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormatUncoloured(200, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormatUncoloured(200, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<200)
-						You don't have enough money to pay for a special groin 'massage'.
+						У тебя недостаточно денег, чтобы оплатить особый «массаж» паха.
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive a special groin 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить особый «массаж» паха.
 					#ELSE
-						As you're unable to access your groin, you cannot receive a special 'massage'.
+						Поскольку у тебя нет доступа к паху, ты не можешь получить особый «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1633,18 +1633,18 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Groin 'massage' ([style.moneyFormat(200, span)])]]></responseTitle>
+				<responseTitle><![CDATA[«Массаж» паха ([style.moneyFormat(200, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope two hundred flames in exchange for receiving a special groin 'massage'.
+					Дай Пенелопе двести огней в обмен на особый «массаж» паха.
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
 						#IF(pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))
-							[style.italicsSex(This will result in Penelope dominantly giving you a handjob and fingering you.)]
+							[style.italicsSex(В результате Пенелопа в доминантной манере сделает тебе мастурбацию и подействует пальцами.)]
 						#ELSE
-							[style.italicsSex(This will result in Penelope dominantly giving you a handjob.)]
+							[style.italicsSex(В результате Пенелопа в доминантной манере сделает тебе мастурбацию.)]
 						#ENDIF
 					#ELSE
-						[style.italicsSex(This will result in Penelope dominantly fingering you.)]
+							[style.italicsSex(В результате Пенелопа в доминантной манере подействует на тебя пальцами.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -1695,14 +1695,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormatUncoloured(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()<500)
-						You don't have enough money to pay for an oral 'massage'.
+						У тебя недостаточно денег, чтобы оплатить оральный «массаж».
 					#ELSEIF(!pc.hasPenisIgnoreDildo() && !pc.hasVagina())
-						As you do not have any genitals, you cannot receive an oral 'massage'.
+						Так как у тебя нет гениталий, ты не можешь получить оральный «массаж».
 					#ELSE
-						As you're unable to access your groin, you cannot receive an oral 'massage'.
+						Так как у тебя нет доступа к паху, ты не можешь получить оральный «массаж».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1713,14 +1713,14 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Oral 'massage' ([style.moneyFormat(500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Оральный «массаж» ([style.moneyFormat(500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope five hundred flames in exchange for receiving an oral 'massage'.
+					Отдай Пенелопе пятьсот огней в обмен на оральный «массаж».
 					<br/>
 					#IF(pc.hasPenisIgnoreDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true))
-						[style.italicsSex(This will result in Penelope dominantly giving you a blowjob.)]
+							[style.italicsSex(В результате Пенелопа в доминантной манере отсосет тебе.)]
 					#ELSE
-						[style.italicsSex(This will result in Penelope dominantly eating you out.)]
+						[style.italicsSex(В этом случае Пенелопа будет доминировать, лаская тебя языком.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
@@ -1770,8 +1770,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormatUncoloured(1000, span)])]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have enough money to pay for sex with Penelope.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс ([style.moneyFormatUncoloured(1000, span)])]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя недостаточно денег, чтобы заняться сексом с Пенелопой.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -1780,10 +1780,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Sex ([style.moneyFormat(1000, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Секс ([style.moneyFormat(1000, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope a thousand flames in exchange for having sex with her.
-					<br/>[style.italicsSex(This will result in having submissive sex with Penelope.)]
+					Отдай Пенелопе тысячу огней, чтобы заняться с ней сексом.
+					<br/>[style.italicsSex(В этом случае секс будет подчиненным для тебя.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-1000))]
@@ -1815,12 +1815,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Double facial ([style.moneyFormatUncoloured(1500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Двойной минет ([style.moneyFormatUncoloured(1500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-						You cannot access your mouth, and so cannot receive a double facial from Penelope.
+					Ты не можешь использовать рот, поэтому не можешь получить двойной минет от Пенелопы.
 					#ELSE
-						You don't have enough money to pay for a double facial from Penelope.
+					У тебя недостаточно денег, чтобы оплатить двойной минет от Пенелопы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1831,10 +1831,10 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Double facial ([style.moneyFormat(1500, span)])]]></responseTitle>
+				<responseTitle><![CDATA[Двойной минет ([style.moneyFormat(1500, span)])]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Give Penelope one thousand five hundred flames in exchange for getting a double facial from her.
-					<br/>[style.italicsSex(This will result in Penelope dominantly making you suck her cock, before cumming and squirting over your face.)]
+					Отдай Пенелопе тысячу пятьсот огней, чтобы она сделала тебе двойной минет.
+					<br/>[style.italicsSex(В этом случае Пенелопа будет доминировать, заставляя тебя сосать её член, прежде чем кончить и забрызгать твоё лицо спермой и смазкой.)]
 				]]></responseTooltip>
 				<nextDialogue/><effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(pc.incrementMoney(-1500))]
@@ -1881,8 +1881,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Penelope has finished giving you your massage, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Пенелопа закончила делать тебе массаж, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_PENELOPE_FINISHED'))]
@@ -1902,8 +1902,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've finished giving Penelope a massage, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда ты закончил делать массаж Пенелопе, остается только отправиться дальше, в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_PENELOPE_FINISHED_REVERSAL'))]
@@ -1923,10 +1923,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-				<responseTitle><![CDATA[At the ball]]></responseTitle>
+				<responseTitle><![CDATA[На балу]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Penelope to wear her 'At the ball' outfit for her fashion show.
-					</br>[style.italicsPinkLight(Penelope will wear an elegant outfit consisting of a flowing ballgown, elbow-length gloves, and expensive jewellery.)]
+					Попросить Пенелопу надеть наряд «На балу» для её модного показа.
+					</br>[style.italicsPinkLight(Пенелопа наденет элегантный образ: струящееся бальное платье, перчатки до локтей и дорогие украшения.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_fashion_show_show]]></nextDialogue>
 				<effects><![CDATA[
@@ -1938,10 +1938,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-				<responseTitle><![CDATA[About town]]></responseTitle>
+				<responseTitle><![CDATA[По городу]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Penelope to wear her 'About town' outfit for her fashion show.
-					</br>[style.italicsPinkLight(Penelope will wear a stylish, casual outfit consisting of a blouse, cardigan, and tight-fitting jeans.)]
+					Попросить Пенелопу надеть наряд «По городу» для её модного показа.
+					</br>[style.italicsPinkLight(Пенелопа наденет стильный повседневный образ: блузку, кардиган и облегающие джинсы.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_fashion_show_show]]></nextDialogue>
 				<effects><![CDATA[
@@ -1953,10 +1953,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-				<responseTitle><![CDATA[Drunken alley]]></responseTitle>
+				<responseTitle><![CDATA[Пьяный переулок]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Penelope to wear her 'Drunken alley' outfit for her fashion show.
-					</br>[style.italicsPinkLight(Penelope will wear a daring, bright-pink outfit consisting of a clubbing dress, strappy sandals, and plenty of accessories.)]
+					Попросить Пенелопу надеть наряд «Пьяный переулок» для её модного показа.
+					</br>[style.italicsPinkLight(Пенелопа наденет дерзкий ярко-розовый образ: клубное платье, босоножки на ремешках и кучу аксессуаров.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_fashion_show_show]]></nextDialogue>
 				<effects><![CDATA[
@@ -1968,10 +1968,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-				<responseTitle><![CDATA[Less is more]]></responseTitle>
+				<responseTitle><![CDATA[Меньше значит больше]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Penelope to wear her 'Less is more' outfit for her fashion show.
-					</br>[style.italicsPinkLight(Penelope will wear dark-purple lingerie consisting of a chemise, thong, and stockings with garter belt.)]
+					Попросить Пенелопу надеть наряд «Меньше значит больше» для её модного показа.
+					</br>[style.italicsPinkLight(Пенелопа наденет темно-фиолетовое белье: сорочку, стринги и чулки с поясом.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_fashion_show_show]]></nextDialogue>
 				<effects><![CDATA[
@@ -1983,10 +1983,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-				<responseTitle><![CDATA[Latex indulgence]]></responseTitle>
+				<responseTitle><![CDATA[Латексное искушение]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Penelope to wear her 'Latex indulgence' outfit for her fashion show.
-					</br>[style.italicsPinkLight(Penelope will wear a bright-red latex outfit including a corset, stiletto heels, and an insertable dildo.)]
+					Попросить Пенелопу надеть наряд «Латексное искушение» для её модного показа.
+					</br>[style.italicsPinkLight(Пенелопа наденет ярко-красный латексный костюм, включающий корсет, туфли на шпильке и вставной дилдо.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_penelope_fashion_show_show]]></nextDialogue>
 				<effects><![CDATA[
@@ -2006,9 +2006,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fuck her]]></responseTitle>
+				<responseTitle><![CDATA[Трахать её]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Fuck Penelope while she's wearing the outfit you've chosen for her.
+					Трахать Пенелопу, пока она одета в выбранный тобой наряд.
 				]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
@@ -2034,9 +2034,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Submit to Penelope and ask her to fuck you while she's wearing the outfit you've chosen for her.
+					Подчиниться Пенелопе и попросить её трахнуть тебя, пока на ней надет выбранный тобой наряд.
 				]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
@@ -2063,8 +2063,8 @@
 	</scene>
 	
 	<scene id="massage_penelope_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Penelope has finished giving you your special service...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Пенелопа закончила оказывать тебе особые услуги...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/shops/spa">MASSAGE_PENELOPE_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -2074,8 +2074,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that Penelope has finished giving you your special service, there's nothing left to do except continue on out into the reception area.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда Пенелопа закончила свои особые услуги, остается только продолжить путь в зону приема гостей.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_spa_massage_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/spa', 'MASSAGE_PENELOPE_FINISHED_END'))]

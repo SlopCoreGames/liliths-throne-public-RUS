@@ -31,8 +31,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope that you're going to find someone else to be with tonight.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Стеропе, что сегодня ночью ты найдешь себе кого-нибудь другого.]]></responseTooltip>
 				<nextDialogue stripContent="true">innoxia_places_fields_elis_tavern_taur_core_tables</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_LEAVE'))]
@@ -48,8 +48,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX_AS_DOM]]></colour>
-				<responseTitle><![CDATA[Claim Sterope]]></responseTitle>
-				<responseTooltip><![CDATA[Tell [centaur.name] that Sterope is yours tonight.]]></responseTooltip>
+				<responseTitle><![CDATA[Застолбить Стеропу]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи [centaur.name], что Стеропа сегодня твоя.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_claimed</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_CLAIMED'))]
@@ -68,16 +68,16 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true) && (!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) && (!game.isAnalContentEnabled() || !pc.isAbleToAccessCoverableArea(CA_ANUS, true)))
 						#IF(game.isAnalContentEnabled())
-							You need to be able to access your mouth, have a vagina and to be able to access it, or to be able to access your asshole, in order to do this...
+							Чтобы сделать это, тебе нужно иметь доступ к своему рту, влагалищу (с возможностью к нему добраться) или к своей заднице...
 						#ELSE
-							You need to be able to access your mouth, or have a vagina and to be able to access it, in order to do this...
+							Чтобы сделать это, тебе нужно иметь доступ к своему рту или влагалищу (с возможностью к нему добраться)...
 						#ENDIF
 					#ELSE
-						Submit to [centaur.name] and tell [centaur.herHim] that you're a worthless slut like Sterope.
+Подчинись [centaur.name] и скажи [centaur.herHim], что ты такая же никчемная шлюха, как Стеропа.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -100,8 +100,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX_AS_DOM]]></colour>
-				<responseTitle><![CDATA[Claim her]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope that she's yours tonight.]]></responseTooltip>
+				<responseTitle><![CDATA[Застолбить её]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Стеропе, что сегодня ночью она твоя.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_claimed</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_CLAIMED'))]
@@ -115,16 +115,16 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_sterope_with_centaur)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Attract a taur]]></responseTitle>
+				<responseTitle><![CDATA[Привлечь таура]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true) && (!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) && (!game.isAnalContentEnabled() || !pc.isAbleToAccessCoverableArea(CA_ANUS, true)))
 						#IF(game.isAnalContentEnabled())
-							You need to be able to access your mouth, have a vagina and to be able to access it, or to be able to access your asshole, in order to do this...
+							Чтобы сделать это, тебе нужно иметь доступ к своему рту, влагалищу (с возможностью к нему добраться) или к своей заднице...
 						#ELSE
-							You need to be able to access your mouth, or have a vagina and to be able to access it, in order to do this...
+							Чтобы сделать это, тебе нужно иметь доступ к своему рту или влагалищу (с возможностью к нему добраться)...
 						#ENDIF
 					#ELSE
-						Tell Sterope that you want to join her in a threesome and submit to a taur.
+						Скажи Стеропе, что хочешь заняться с ней тройничком и подчиниться тавру.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -154,8 +154,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Find taur]]></responseTitle>
-				<responseTooltip><![CDATA[Look around the tavern for a mean-looking taur.]]></responseTooltip>
+				<responseTitle><![CDATA[Найти тавра]]></responseTitle>
+				<responseTooltip><![CDATA[Осмотреться в таверне в поисках какого-нибудь грозного тавра.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_attract_taur1]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.walkPathNoEffects(game.getWorlds().get(WORLD_TYPE_innoxia_fields_elis_tavern_taur).getRandomUnoccupiedCell(PLACE_TYPE_innoxia_fields_elis_tavern_taur_tables).getLocation(), false, 1)]
@@ -179,7 +179,7 @@
 				<responseTitle><![CDATA[
 					[centaur_potential1.Race(true)]
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Lead the [centaur_potential1.raceStage(true)] [centaur_potential1.femininity(true)] [centaur_potential1.race(true)] back to Sterope and get [centaur_potential1.herHim] to dominantly fuck the two of you.]]></responseTooltip>
+				<responseTooltip><![CDATA[Приведи [centaur_potential1.raceStage(true)] [centaur_potential1.femininity(true)] [centaur_potential1.race(true)] обратно к Стеропе и заставь [centaur_potential1.herHim] доминирующе трахать вас обоих.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.setParserTarget('centaur', centaur_potential1)]
@@ -189,8 +189,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Keep looking]]></responseTitle>
-				<responseTooltip><![CDATA[See if you can find another taur...]]></responseTooltip>
+				<responseTitle><![CDATA[Искать дальше]]></responseTitle>
+				<responseTooltip><![CDATA[Попробовать найти другого тавра...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_attract_taur2]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.walkPathNoEffects(game.getWorlds().get(WORLD_TYPE_innoxia_fields_elis_tavern_taur).getRandomUnoccupiedCell(PLACE_TYPE_innoxia_fields_elis_tavern_taur_tables).getLocation(), false, 1)]
@@ -215,7 +215,7 @@
 				<responseTitle><![CDATA[
 					[centaur_potential1.Race(true)]
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Lead the [centaur_potential1.raceStage(true)] [centaur_potential1.femininity(true)] [centaur_potential1.race(true)] back to Sterope and get [centaur_potential1.herHim] to dominantly fuck the two of you.]]></responseTooltip>
+				<responseTooltip><![CDATA[Приведи [centaur_potential1.raceStage(true)] [centaur_potential1.femininity(true)] [centaur_potential1.race(true)] обратно к Стеропе и заставь [centaur_potential1.herHim] доминирующе трахать вас обоих.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.banishNPC(centaur_potential2)]
@@ -229,7 +229,7 @@
 				<responseTitle><![CDATA[
 					[centaur_potential2.Race(true)]
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Lead the [centaur_potential2.raceStage(true)] [centaur_potential2.femininity(true)] [centaur_potential2.race(true)] back to Sterope and get [centaur_potential2.herHim] to dominantly fuck the two of you.]]></responseTooltip>
+				<responseTooltip><![CDATA[Приведи [centaur_potential2.raceStage(true)] [centaur_potential2.femininity(true)] [centaur_potential2.race(true)] обратно к Стеропе и заставь [centaur_potential2.herHim] доминирующе трахать вас обоих.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.banishNPC(centaur_potential1)]
@@ -240,8 +240,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Keep looking]]></responseTitle>
-				<responseTooltip><![CDATA[See if you can find another taur...]]></responseTooltip>
+				<responseTitle><![CDATA[Искать дальше]]></responseTitle>
+				<responseTooltip><![CDATA[Попробовать найти другого тавра...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_attract_taur3]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.walkPathNoEffects(game.getWorlds().get(WORLD_TYPE_innoxia_fields_elis_tavern_taur).getRandomUnoccupiedCell(PLACE_TYPE_innoxia_fields_elis_tavern_taur_tables).getLocation(), false, 1)]
@@ -265,7 +265,7 @@
 				<responseTitle><![CDATA[
 					[centaur_potential1.Race(true)]
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Lead the [centaur_potential1.raceStage(true)] [centaur_potential1.femininity(true)] [centaur_potential1.race(true)] back to Sterope and get [centaur_potential1.herHim] to dominantly fuck the two of you.]]></responseTooltip>
+				<responseTooltip><![CDATA[Приведи [centaur_potential1.raceStage(true)] [centaur_potential1.femininity(true)] [centaur_potential1.race(true)] обратно к Стеропе и заставь [centaur_potential1.herHim] доминирующе трахать вас обоих.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.banishNPC(centaur_potential2)]
@@ -280,7 +280,7 @@
 				<responseTitle><![CDATA[
 					[centaur_potential2.Race(true)]
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Lead the [centaur_potential2.raceStage(true)] [centaur_potential2.femininity(true)] [centaur_potential2.race(true)] back to Sterope and get [centaur_potential2.herHim] to dominantly fuck the two of you.]]></responseTooltip>
+				<responseTooltip><![CDATA[Приведи [centaur_potential2.raceStage(true)] [centaur_potential2.femininity(true)] [centaur_potential2.race(true)] обратно к Стеропе и заставь [centaur_potential2.herHim] доминирующе трахать вас обоих.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.banishNPC(centaur_potential1)]
@@ -295,7 +295,7 @@
 				<responseTitle><![CDATA[
 					[centaur_potential3.Race(true)]
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Lead the [centaur_potential3.raceStage(true)] [centaur_potential3.femininity(true)] [centaur_potential3.race(true)] back to Sterope and get [centaur_potential3.herHim] to dominantly fuck the two of you.]]></responseTooltip>
+				<responseTooltip><![CDATA[Приведи [centaur_potential3.raceStage(true)] [centaur_potential3.femininity(true)] [centaur_potential3.race(true)] обратно к Стеропе и заставь [centaur_potential3.herHim] доминирующе трахать вас обоих.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.banishNPC(centaur_potential1)]
@@ -307,8 +307,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Give up]]></responseTitle>
-				<responseTooltip><![CDATA[Return to Sterope and say that you couldn't find a suitable taur...]]></responseTooltip>
+				<responseTitle><![CDATA[Сдаться]]></responseTitle>
+				<responseTooltip><![CDATA[Вернись к Стеропе и скажи, что тебе не удалось найти подходящую тав...]]></responseTooltip>
 				<nextDialogue stripContent="true">innoxia_places_fields_elis_tavern_taur_core_tables</nextDialogue>
 				<effects><![CDATA[
 					[#game.banishNPC(centaur_potential1)]
@@ -332,8 +332,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX_AS_DOM]]></colour>
-				<responseTitle><![CDATA[Stable]]></responseTitle>
-				<responseTooltip><![CDATA[Lead Sterope to the stable and get ready for some kinky sex.]]></responseTooltip>
+				<responseTitle><![CDATA[Стабильница]]></responseTitle>
+				<responseTooltip><![CDATA[Приведи Стеропу в стабильницу и приготовься к извращенному сексу.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_stables</nextDialogue>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_innoxia_fields_elis_tavern_taur, PLACE_TYPE_innoxia_fields_elis_tavern_taur_stable)]
@@ -357,14 +357,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Tie her up]]></responseTitle>
+				<responseTitle><![CDATA[Связать её]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sterope.getRaceStage()!=RACE_STAGE_GREATER)
-						Tell Sterope not to drink the transformative potion, before tying her up and bending her over the table.
+						Скажи Стеропе не пить зелье трансформации, а затем свяжи её и насади на стол.
 					#ELSEIF(sterope.getRaceStage()==RACE_STAGE_GREATER && (flags.hasFlag(FLAG_innoxia_sterope_fully_furry) && game.isFeralContentEnabled()))
-						Tell Sterope not to transform into a feral mare, before tying her up and bending her over the table.
+						Скажи Стеропе не превращаться в дикую кобылу, а затем свяжи её и насади на стол.
 					#ELSE
-						Tie Sterope up and bend her over the table.
+						Свяжи Стеропе и насади её на стол.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_stables_core</nextDialogue>
@@ -379,8 +379,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-				<responseTitle><![CDATA[TF & tie up]]></responseTitle>
-				<responseTooltip><![CDATA[Get Sterope to drink the transformation potion and then tie her up and bend her over the table.]]></responseTooltip>
+				<responseTitle><![CDATA[ТФ и связывание]]></responseTitle>
+				<responseTooltip><![CDATA[Заставь Стеропе выпить зелье трансформации, а затем свяжи её и насади на стол.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_stables_core</nextDialogue>
 				<effects><![CDATA[
 					[#sterope.applyTransformation()]
@@ -394,8 +394,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<colour><![CDATA[RACE_BESTIAL]]></colour>
-				<responseTitle><![CDATA[Mare TF]]></responseTitle>
-				<responseTooltip><![CDATA[Get Sterope to touch the beast stone for fifteen minutes, which should be enough to transform her into a feral mare until morning.]]></responseTooltip>
+				<responseTitle><![CDATA[ТФ в кобылу]]></responseTitle>
+				<responseTooltip><![CDATA[Заставь Стеропе касаться камня зверя в течение пятнадцати минут — этого должно хватить, чтобы она превратилась в дикую кобылу до самого утра.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_stables_core]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_STABLES_TRANSFORM_FERAL'))]
@@ -409,16 +409,16 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<colour><![CDATA[RACE_BESTIAL]]></colour>
-				<responseTitle><![CDATA[Feral TF (both)]]></responseTitle>
+				<responseTitle><![CDATA[Дикая ТФ (оба)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getTrueRace()!=RACE_HORSE_MORPH && !pc.isAbleToHaveRaceTransformed())
-						As you're unable to have your race transformed, you cannot transform into a feral #IF(pc.isFeminine())mare#ELSEstallion#ENDIF...
+						Так как твоя раса не способна к трансформации, ты не можешь превратиться в дикого... #IF(pc.isFeminine())mare#ELSEstallion#ENDIF...
 					#ELSE
-						Get Sterope to touch the beast stone for fifteen minutes, which should be enough to transform her into a feral mare until morning.
+						Заставь Стеропе касаться камня зверя в течение пятнадцати минут — этого должно хватить, чтобы она превратилась в дикую кобылу до самого утра.
 						#IF(pc.getTrueRace()!=RACE_HORSE_MORPH)
-							 As you're not a horse-morph, you'll first drink a transformative potion to turn into one, and then you'll touch the stone so that you transform into a feral #IF(pc.isFeminine())mare#ELSEstallion#ENDIF for the same duration.
+							 Поскольку ты не конь-морф, тебе сначала нужно выпить зелье трансформации, чтобы превратиться в одного, а затем коснуться камня, чтобы стать диким #IF(pc.isFeminine())mare#ELSEstallion#ENDIF for the same duration.
 						#ELSE
-							 Join her in touching the stone so that you transform into a feral #IF(pc.isFeminine())mare#ELSEstallion#ENDIF for the same duration.
+							 Коснуться камня вместе с ней, чтобы превратиться в дикого #IF(pc.isFeminine())mare#ELSEstallion#ENDIF for the same duration.
 						#ENDIF
 					#ENDIF
 				]]></responseTooltip>
@@ -464,8 +464,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Spanking]]></responseTitle>
-				<responseTooltip><![CDATA[Give Sterope a good, hard spanking.]]></responseTooltip>
+				<responseTitle><![CDATA[Порка]]></responseTitle>
+				<responseTooltip><![CDATA[Хорошенько отшлепать Стеропу.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_stables_core</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_STABLES_SPANKING'))]
@@ -474,8 +474,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Whipping]]></responseTitle>
-				<responseTooltip><![CDATA[Use the riding crop to give Sterope a thorough whipping.]]></responseTooltip>
+				<responseTitle><![CDATA[Бичевание]]></responseTitle>
+				<responseTooltip><![CDATA[Использовать хлыст, чтобы хорошенько выпороть Стеропу.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_stables_core</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_STABLES_WHIPPING'))]
@@ -484,8 +484,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Degrading talk]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope what a worthless cunt she is.]]></responseTooltip>
+				<responseTitle><![CDATA[Унизительные слова]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Стеропе, какая она никчемная сучка.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_stables_core</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_STABLES_DEGRADING'))]
@@ -496,10 +496,10 @@
 				<availabilityConditional><![CDATA[[#!sterope.isFeral()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Fuck her]]></responseTitle>
+				<responseTitle><![CDATA[Трахать её]]></responseTitle>
 				<responseTooltip><![CDATA[
-					[pc.Step] up behind Sterope and get ready to fuck her...
-					<br/>[style.italicsMinorBad(This BDSM scene will end after sex, so make sure to punish Sterope as much as you want before doing this!)]
+					[pc.Step] встань позади Стеропы и приготовься трахнуть её...
+					<br/>[style.italicsMinorBad(Эта БДСМ-сцена закончится после секса, так что не забудь наказать Стеропу столько, сколько захочешь, прежде чем начинать!)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
@@ -527,10 +527,10 @@
 				<availabilityConditional><![CDATA[[#sterope.isFeral()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Fuck her]]></responseTitle>
+				<responseTitle><![CDATA[Трахать её]]></responseTitle>
 				<responseTooltip><![CDATA[
-					[pc.Step] up behind Sterope and get ready to fuck her...
-					<br/>[style.italicsMinorBad(This BDSM scene will end after sex, so make sure to punish Sterope as much as you want before doing this!)]
+					[pc.Step] встань позади Стеропы и приготовься трахнуть её...
+					<br/>[style.italicsMinorBad(Эта БДСМ-сцена закончится после секса, так что не забудь наказать Стеропу столько, сколько захочешь, прежде чем начинать!)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
@@ -558,12 +558,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Nipple clamps]]></responseTitle>
+				<responseTitle><![CDATA[Зажимы для сосков]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sterope.getClothingInSlot(IS_NIPPLE)!=null)
-						Sterope is already wearing nipple clamps!
+						На Стеропе уже надеты зажимы для сосков!
 					#ELSE
-						Tease and pinch Sterope's nipples, before attaching nipple clamps to them.
+						Пощекочи и прищипни соски Стеропе, прежде чем закрепить на них зажимы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -583,12 +583,12 @@
 					<availabilityConditional><![CDATA[[#sterope.isFeral()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[7]]></index>
-					<responseTitle><![CDATA[Tack]]></responseTitle>
+					<responseTitle><![CDATA[Упряжь]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(sterope.getClothingInSlot(IS_MOUTH)!=null)
-							You've already tacked up Sterope!
+							Ты уже запряг Стеропу!
 						#ELSE
-							Tack up Sterope by equipping her with a bridle, saddle, and tail wrap.
+							Запряги Стеропу, надев на неё уздечку, седло и обмотку для хвоста.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -607,12 +607,12 @@
 					<availabilityConditional><![CDATA[[#!sterope.isFeral()]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[7]]></index>
-					<responseTitle><![CDATA[Ring gag]]></responseTitle>
+					<responseTitle><![CDATA[Кольцевой кляп]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(sterope.getClothingInSlot(IS_MOUTH)!=null)
-							Sterope is already wearing a ring gag!
+							На Стеропе уже надет кольцевой кляп!
 						#ELSE
-							Make Sterope open her mouth, before forcing her to wear a ring gag.
+							Заставь Стеропу открыть рот, прежде чем вставить ей кольцевой кляп.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -630,12 +630,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Blindfold]]></responseTitle>
+				<responseTitle><![CDATA[Повязка на глаза]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sterope.getClothingInSlot(IS_EYES)!=null)
-						Sterope is already wearing a blindfold!
+						На Стеропе уже надета повязка на глазах!
 					#ELSE
-						Put a blindfold on Sterope so that she can't see what's happening.
+						Надень на Стеропу повязку, чтобы она не видела, что происходит.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -653,12 +653,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Dildo]]></responseTitle>
+				<responseTitle><![CDATA[Дилдо]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sterope.getClothingInSlot(IS_VAGINA)!=null)
-						Sterope already has a dildo shoved deep in her cunt!
+						В киску Стеропы уже глубоко засунут дилдо!
 					#ELSE
-						Use the dildo to fuck Sterope's cunt, making her orgasm before hilting it deep in her pussy.
+						Используй дилдо, чтобы трахать киску Стеропы, доведя её до оргазма, а затем глубоко вонзи его в её щель.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -677,12 +677,12 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Anal beads]]></responseTitle>
+				<responseTitle><![CDATA[Анальные бусы]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(sterope.getClothingInSlot(IS_ANUS)!=null)
-						Sterope's ass is already full of anal beads!
+						Задница Стеропы уже набита анальными бусами!
 					#ELSE
-						Tease Sterope's asshole, before shoving the anal beads inside of her.
+						Поласкай анус Стеропы, прежде чем засунуть анальные бусы внутрь неё.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -709,9 +709,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fuck her]]></responseTitle>
+				<responseTitle><![CDATA[Трахать её]]></responseTitle>
 				<responseTooltip><![CDATA[
-					[pc.Step] up behind Sterope and get ready to fuck her...
+					[pc.Step]кSterope сзади и приготовься трахать её...
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
@@ -740,8 +740,8 @@
 	
 	<scene id="after_sex">
 		<preParsingEffects/>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Having had your fun with Sterope, it's time to bring an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Насладившись Стеропой, пора положить конец сексу...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_taur">STEROPE_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -750,8 +750,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Join her]]></responseTitle>
-				<responseTooltip><![CDATA[Join Sterope in the shower and get clean.]]></responseTooltip>
+				<responseTitle><![CDATA[Присоединиться к ней]]></responseTitle>
+				<responseTooltip><![CDATA[Присоединиться к Стеропе в душе и отмыться.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_after_sex_shower</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_AFTER_SEX_SHOWER'))]
@@ -761,8 +761,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope that you don't need a shower.]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Стеропе, что душ тебе не нужен.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_after_sex_shower</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_AFTER_SEX_SHOWER_DECLINED'))]
@@ -787,8 +787,8 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
 					<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
-					<responseTitle><![CDATA[Wait]]></responseTitle>
-					<responseTooltip><![CDATA[Wait here in the stables for your feral transformation to end.]]></responseTooltip>
+					<responseTitle><![CDATA[Ждать]]></responseTitle>
+					<responseTooltip><![CDATA[Подождать здесь, в конюшне, пока закончится твоя звериная трансформация.]]></responseTooltip>
 					<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 					<effects><![CDATA[
 						[#sterope.setLocation(WORLD_TYPE_EMPTY, PLACE_TYPE_GENERIC_HOLDING_CELL)]
@@ -808,8 +808,8 @@
 					<availabilityConditional><![CDATA[[#!pc.isFeral() && sterope.getRaceStage()==RACE_STAGE_GREATER && !flags.hasFlag(FLAG_innoxia_sterope_fully_furry)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Say goodbye]]></responseTitle>
-					<responseTooltip><![CDATA[Say goodbye to Sterope and return to the tavern.]]></responseTooltip>
+					<responseTitle><![CDATA[Попрощаться]]></responseTitle>
+					<responseTooltip><![CDATA[Попрощаться со Стеропе и вернуться в таверну.]]></responseTooltip>
 					<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 					<effects><![CDATA[
 						[#sterope.resetToStartingBody()]
@@ -824,8 +824,8 @@
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
 					<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-					<responseTitle><![CDATA[Stay transformed]]></responseTitle>
-					<responseTooltip><![CDATA[Tell Sterope not to transform back to her previous form, and to instead remain as a fully furry horse-girl.]]></responseTooltip>
+					<responseTitle><![CDATA[Остаться в облике зверя]]></responseTitle>
+					<responseTooltip><![CDATA[Сказать Стеропе, чтобы она не возвращалась в прежний облик, а осталась полноценной пушистой лошадкой-девушкой.]]></responseTooltip>
 					<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 					<effects><![CDATA[
 						[#flags.setFlag(FLAG_innoxia_sterope_fully_furry, true)]
@@ -840,8 +840,8 @@
 					<availabilityConditional><![CDATA[[#!pc.isFeral() && (sterope.getRaceStage()!=RACE_STAGE_GREATER || flags.hasFlag(FLAG_innoxia_sterope_fully_furry))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Say goodbye]]></responseTitle>
-					<responseTooltip><![CDATA[Say goodbye to Sterope and return to the tavern.]]></responseTooltip>
+					<responseTitle><![CDATA[Попрощаться]]></responseTitle>
+					<responseTooltip><![CDATA[Попрощаться со Стеропе и вернуться в таверну.]]></responseTooltip>
 					<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 					<effects><![CDATA[
 						[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_AFTER_SEX_LEAVE_NO_TF_OPTION'))]
@@ -863,8 +863,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Continue on your way through the tavern...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Продолжить путь по таверне...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_tavern_taur_tables"/>
 				<effects/>
 			</response>
@@ -888,8 +888,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Stable]]></responseTitle>
-				<responseTooltip><![CDATA[Allow the [centaur.race] to lead you and Sterope to the stable and get ready for some kinky sex.]]></responseTooltip>
+				<responseTitle><![CDATA[Стабильница]]></responseTitle>
+				<responseTooltip><![CDATA[Позволить [centaur.race] привести тебя и Стеропу в конюшню и приготовиться к извращенному сексу.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit_stables</nextDialogue>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_innoxia_fields_elis_tavern_taur, PLACE_TYPE_innoxia_fields_elis_tavern_taur_stable)]
@@ -924,20 +924,20 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF((flags.hasFlag(FLAG_innoxia_sterope_fully_furry) && game.isFeralContentEnabled() && (pc.getTrueRace()==RACE_HORSE_MORPH || pc.isAbleToHaveRaceTransformed())) || (pc.getTrueRace()!=RACE_HORSE_MORPH && pc.isAbleToHaveRaceTransformed()))
-						Refuse TF
+						Отказаться от ТФ
 					#ELSE
-						Tied up
+						Связанная
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF((flags.hasFlag(FLAG_innoxia_sterope_fully_furry) && game.isFeralContentEnabled() && (pc.getTrueRace()==RACE_HORSE_MORPH || pc.isAbleToHaveRaceTransformed())) || (pc.getTrueRace()!=RACE_HORSE_MORPH && pc.isAbleToHaveRaceTransformed()))
 						#IF(flags.hasFlag(FLAG_innoxia_sterope_fully_furry) && game.isFeralContentEnabled())
-							Refuse to transform into a feral mare and instead simply submit to be tied up so that you're bent over the table.
+							Отказаться от превращения в дикую кобылу и просто подчиниться, позволив связать себя и нагнуться над столом.
 						#ELSE
-							Don't drink the transformation potion and instead simply submit to be tied up so that you're bent over the table.
+							Не пить зелье трансформации и просто подчиниться, позволив связать себя и нагнуться над столом.
 						#ENDIF
 					#ELSE
-						Submit and allow yourself to be tied up so that you're bent over the table.
+						Подчиниться и позволить связать себя так, чтобы нагнуться над столом.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit_stables_core]]></nextDialogue>
@@ -951,18 +951,18 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-				<responseTitle><![CDATA[Drink potion]]></responseTitle>
+				<responseTitle><![CDATA[Выпить зелье]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getTrueRace()!=RACE_HORSE_MORPH && pc.isAbleToHaveRaceTransformed())
 						#IF(flags.hasFlag(FLAG_innoxia_sterope_fully_furry) && game.isFeralContentEnabled())
-							Refuse to transform into a feral mare, but agree to drink the transformation potion and turn into a greater horse-girl.
+							Отказаться от превращения в дикую кобылу, но согласиться выпить зелье трансформации и превратиться в высшую лошадиную деву.
 						#ELSE
-							Drink the transformation potion, turning you into a greater horse-girl.
+							Выпить зелье трансформации, превращаясь в высшую лошадиную деву.
 						#ENDIF
 					#ELSEIF(pc.getTrueRace()==RACE_HORSE_MORPH)
-						As you are already a [pc.race], there's no need for you to drink a transformation potion.
+						Поскольку ты уже [pc.race], тебе нет нужды пить зелье трансформации.
 					#ELSE
-						As you cannot have your race transformed, the potion is useless.
+						Поскольку твою расу нельзя изменить, зелье бесполезно.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -984,15 +984,15 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<colour><![CDATA[RACE_BESTIAL]]></colour>
-				<responseTitle><![CDATA[Mare TF]]></responseTitle>
+				<responseTitle><![CDATA[ТФ в кобылу]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getTrueRace()!=RACE_HORSE_MORPH && !pc.isAbleToHaveRaceTransformed())
-						As you're unable to have your race transformed, you cannot transform into a feral mare...
+						Так как ты не можешь сменить расу, ты не можешь превратиться в дикую кобылу...
 					#ELSE
 						#IF(pc.getTrueRace()!=RACE_HORSE_MORPH)
-							 Drink the transformation potion, turning you into a greater horse-girl. Then join Sterope in touching the beast stone for fifteen minutes, which should be enough to transform the two of you into feral mares until morning.
+							 Выпей зелье трансформации, чтобы превратиться в совершенную кентавру. Затем присоединяйся к Стеропе и прикоснись к камню зверя на пятнадцать минут — этого должно хватить, чтобы вы обе превратились в диких кобылиц до самого утра.
 						#ELSE
-							 Join Sterope in touching the beast stone for fifteen minutes, which should be enough to transform the two of you into feral mares until morning.
+							 Присоединяйся к Стеропе и прикоснись к камню зверя на пятнадцать минут — этого должно хватить, чтобы вы обе превратились в диких кобылиц до самого утра.
 						#ENDIF
 					#ENDIF
 				]]></responseTooltip>
@@ -1031,14 +1031,11 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.getSavedLong('sterope_centaur_punishments')==0)
-						Punished
-					#ELSEIF(flags.getSavedLong('sterope_centaur_punishments')==1)
-						Punished again
-					#ELSE
-						Punishment!
-					#ENDIF
+							 Наказана					#ELSEIF(flags.getSavedLong('sterope_centaur_punishments')==1)
+							 Наказана снова					#ELSE
+							 Наказание!					#ENDIF
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Tied up and at the mercy of the [centaur.race], all you can do is submit to your punishment.]]></responseTooltip>
+				<responseTooltip><![CDATA[Связанная и оказавшаяся во власти [centaur.race], тебе остается лишь смиренно принимать свое наказание.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit_stables_core</nextDialogue>
 				<effects><![CDATA[
 					#IF(flags.getSavedLong('sterope_centaur_punishments')<2)
@@ -1060,8 +1057,8 @@
 					<availabilityConditional><![CDATA[[#flags.getSavedLong('sterope_centaur_punishments')>=3 && flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Sterope first...]]></responseTitle>
-					<responseTooltip><![CDATA[The [centaur.race] decides to rut Sterope first...]]></responseTooltip>
+					<responseTitle><![CDATA[Стеропе — первой...]]></responseTitle>
+					<responseTooltip><![CDATA[[centaur.race] решает сначала оттрахать Стеропу...]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
 					<sexVariablesWithManager enabled="true">
@@ -1093,8 +1090,8 @@
 					<availabilityConditional><![CDATA[[#flags.getSavedLong('sterope_centaur_punishments')>=3 && !flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[You first...]]></responseTitle>
-					<responseTooltip><![CDATA[The [centaur.race] decides to rut you first...]]></responseTooltip>
+					<responseTitle><![CDATA[Ты — первая...]]></responseTitle>
+					<responseTooltip><![CDATA[[centaur.race] решает сначала оттрахать тебя...]]></responseTooltip>
 					<nextDialogue/>
 					<effects/>
 					<sexVariablesWithManager enabled="true">
@@ -1131,8 +1128,8 @@
 	</scene>
 	
 	<scene id="centaur_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The [centaur.race] has had [centaur.her] fun, and so brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[centaur.race] получила свое [centaur.her] удовольствие, и на этом секс заканчивается...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_taur">STEROPE_CENTAUR_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1143,8 +1140,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sterope next...]]></responseTitle>
-				<responseTooltip><![CDATA[Having had [centaur.her] fun with you, the [centaur.race] moves over to rut Sterope...]]></responseTooltip>
+				<responseTitle><![CDATA[Следующая — Стеропа...]]></responseTitle>
+				<responseTooltip><![CDATA[Насладившись [centaur.her] с тобой, [centaur.race] переходит к спариванию со Стеропой...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1176,8 +1173,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[You next...]]></responseTitle>
-				<responseTooltip><![CDATA[Having had [centaur.her] fun with Sterope, the [centaur.race] moves over to rut you...]]></responseTooltip>
+				<responseTitle><![CDATA[Теперь ты...]]></responseTitle>
+				<responseTooltip><![CDATA[Насладившись [centaur.her] со Стеропой, [centaur.race] переходит к спариванию с тобой...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1217,8 +1214,8 @@
 		<preParsingEffects><![CDATA[
 			[#game.addSpecialParsingString(ITEM_EFFECT_TYPE_PREGNANCY_TEST.applyEffect(null, null, null, 0, sterope, sterope, null), true)]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The [centaur.race] has had [centaur.her] fun, and so brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[centaur.race] получила свое [centaur.her] удовольствие, и на этом секс заканчивается...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_taur">STEROPE_CENTAUR_AFTER_SEX_FINAL</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1227,8 +1224,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Join her]]></responseTitle>
-				<responseTooltip><![CDATA[Join Sterope in the shower and get clean.]]></responseTooltip>
+				<responseTitle><![CDATA[Присоединиться к ней]]></responseTitle>
+				<responseTooltip><![CDATA[Присоединиться к Стеропе в душе и отмыться.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_after_sex_final_shower</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_CENTAUR_AFTER_SEX_FINAL_SHOWER'))]
@@ -1240,8 +1237,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope that you don't need a shower and leave.]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Стеропе, что тебе не нужен душ, и уходи.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_after_sex_final_shower</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_CENTAUR_AFTER_SEX_FINAL_SHOWER_DECLINED'))]
@@ -1262,8 +1259,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Say goodbye]]></responseTitle>
-				<responseTooltip><![CDATA[Say goodbye to Sterope and return to the tavern.]]></responseTooltip>
+				<responseTitle><![CDATA[Попрощаться]]></responseTitle>
+				<responseTooltip><![CDATA[Попрощаться со Стеропе и вернуться в таверну.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 				<effects><![CDATA[
 					[#sterope.resetToStartingBody()]
@@ -1279,8 +1276,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
 				<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-				<responseTitle><![CDATA[Stay transformed]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope not to transform back to her previous form, and to instead remain as a fully furry horse-girl.]]></responseTooltip>
+				<responseTitle><![CDATA[Остаться в облике зверя]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Стеропе, чтобы она не возвращалась в прежний облик, а осталась полноценной пушистой лошадкой-девушкой.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_sterope_fully_furry, true)]
@@ -1305,8 +1302,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Tied & tacked up]]></responseTitle>
-				<responseTooltip><![CDATA[The [centaur.race] puts tack equipment on both you and Sterope.]]></responseTooltip>
+				<responseTitle><![CDATA[Связан и под упряжью]]></responseTitle>
+				<responseTooltip><![CDATA[[centaur.race] надевает упряжь и на тебя, и на Стеропу.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit_stables_feral_sex</nextDialogue>
 				<effects><![CDATA[
 					[#sterope.applyTack(centaur, sterope)]
@@ -1335,14 +1332,11 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.getSavedLong('sterope_centaur_punishments')==0)
-						Punished
-					#ELSEIF(flags.getSavedLong('sterope_centaur_punishments')==1)
-						Punished again
-					#ELSE
-						Punishment!
-					#ENDIF
+							 Наказана					#ELSEIF(flags.getSavedLong('sterope_centaur_punishments')==1)
+							 Наказана снова					#ELSE
+							 Наказание!					#ENDIF
 				]]></responseTitle>
-				<responseTooltip><![CDATA[Tied up and at the mercy of the [centaur.race], all you can do is submit to your punishment.]]></responseTooltip>
+				<responseTooltip><![CDATA[Связанная и оказавшаяся во власти [centaur.race], тебе остается лишь смиренно принимать свое наказание.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_submit_stables_feral_sex</nextDialogue>
 				<effects><![CDATA[
 					#IF(flags.getSavedLong('sterope_centaur_punishments')<2)
@@ -1363,8 +1357,8 @@
 				<availabilityConditional><![CDATA[[#flags.getSavedLong('sterope_centaur_punishments')>=3 && flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sterope first...]]></responseTitle>
-				<responseTooltip><![CDATA[The [centaur.race] decides to rut Sterope first...]]></responseTooltip>
+				<responseTitle><![CDATA[Стеропе — первой...]]></responseTitle>
+				<responseTooltip><![CDATA[[centaur.race] решает сначала оттрахать Стеропу...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1396,8 +1390,8 @@
 				<availabilityConditional><![CDATA[[#flags.getSavedLong('sterope_centaur_punishments')>=3 && !flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[You first...]]></responseTitle>
-				<responseTooltip><![CDATA[The [centaur.race] decides to rut you first...]]></responseTooltip>
+				<responseTitle><![CDATA[Ты — первая...]]></responseTitle>
+				<responseTooltip><![CDATA[[centaur.race] решает сначала оттрахать тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1437,8 +1431,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sterope next...]]></responseTitle>
-				<responseTooltip><![CDATA[Having rutted you, the [centaur.race] moves over to fuck Sterope next...]]></responseTooltip>
+				<responseTitle><![CDATA[Следующая — Стеропа...]]></responseTitle>
+				<responseTooltip><![CDATA[Натрахавшись с тобой, [centaur.race] переключается на Стеропу...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1470,8 +1464,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_sterope_centaur_fucks_sterope_first)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[You next...]]></responseTitle>
-				<responseTooltip><![CDATA[Having rutted Sterope, the [centaur.race] moves over to fuck you next...]]></responseTooltip>
+				<responseTitle><![CDATA[Теперь ты...]]></responseTitle>
+				<responseTooltip><![CDATA[Натрахавшись со Стеропой, [centaur.race] переключается на тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1508,8 +1502,8 @@
 				[#sterope.clearFluidsStored(ORIFICE_VAGINA)]
 			#ENDIF
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The [centaur.race] has had [centaur.her] fun, and so brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[centaur.race] получила свое [centaur.her] удовольствие, и на этом секс заканчивается...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_taur">STEROPE_CENTAUR_FERAL_AFTER_SEX_FINAL</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1518,8 +1512,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Join her]]></responseTitle>
-				<responseTooltip><![CDATA[Join Sterope in the shower and get clean.]]></responseTooltip>
+				<responseTitle><![CDATA[Присоединиться к ней]]></responseTitle>
+				<responseTooltip><![CDATA[Присоединиться к Стеропе в душе и отмыться.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_feral_after_sex_final_shower</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_CENTAUR_FERAL_AFTER_SEX_FINAL_SHOWER'))]
@@ -1531,8 +1525,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Sterope that you don't need a shower.]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Стеропе, что душ тебе не нужен.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_centaur_feral_after_sex_final_shower</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'STEROPE_CENTAUR_FERAL_AFTER_SEX_FINAL_SHOWER_DECLINED'))]
@@ -1554,8 +1548,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
-				<responseTitle><![CDATA[Wait]]></responseTitle>
-				<responseTooltip><![CDATA[Wait here in the stables for your feral transformation to end.]]></responseTooltip>
+				<responseTitle><![CDATA[Ждать]]></responseTitle>
+				<responseTooltip><![CDATA[Подождать здесь, в конюшне, пока закончится твоя звериная трансформация.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_sterope_ending_no_content</nextDialogue>
 				<effects><![CDATA[
 					[#sterope.setLocation(WORLD_TYPE_EMPTY, PLACE_TYPE_GENERIC_HOLDING_CELL)]

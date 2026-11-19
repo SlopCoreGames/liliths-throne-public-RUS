@@ -24,12 +24,12 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
-				<responseTitle><![CDATA[Talk]]></responseTitle>
+				<responseTitle><![CDATA[Поговорить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_tavern_fae_small_talk))
-						Spend some time talking with the foxtauresses.
+						Поболтать с лисодевами.
 					#ELSE
-						The foxtauresses don't seem interested in spending any more time talking with you tonight.
+						Похоже, лисодевы сегодня больше не настроены на пустую болтовню.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -48,12 +48,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Drinks]]></responseTitle>
+				<responseTitle><![CDATA[Выпить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_tavern_fae_drink))
-						Ask the foxtauresses if they'd like a drink.
+						Предложить лисодевам выпить.
 					#ELSE
-						The foxtauresses already have a drink.
+						У лисодев уже есть напитки.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -77,12 +77,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Fluff tails]]></responseTitle>
+				<responseTitle><![CDATA[Взъерошить хвосты]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_tavern_fae_tail_fluffed))
-						Get the foxtauresses to turn around and let you fluff their tails.
+						Заставить лисодев обернуться и позволить тебе взъерошить их пушистые хвосты.
 					#ELSE
-						The foxtauresses have already let you fluff their tails, and now want more physical contact...
+						Лисодевы уже позволили тебе взъерошить их хвосты, и теперь они жаждут более тесного контакта...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -103,12 +103,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Flirt]]></responseTitle>
+				<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_tavern_fae_flirt))
-						Start flirting with the foxtauresses.
+						Начать флиртовать с лисодевами.
 					#ELSE
-						You've already flirted with the foxtauresses, and now they want some real physical contact...
+						Ты уже пофлиртовал с лисодевами, и теперь они хотят перейти к настоящему физическому контакту...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -129,14 +129,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Kiss]]></responseTitle>
+				<responseTitle><![CDATA[Поцеловать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_tavern_fae_flirt) && !flags.hasFlag(FLAG_innoxia_tavern_fae_tail_fluffed))
-						You need to spend some time flirting with Fae and Silvia before making a move on them...
+						Тебе нужно немного пофлиртовать с Фэй и Сильвией, прежде чем переходить к делу...
 					#ELSEIF(!flags.hasFlag(FLAG_innoxia_tavern_fae_kiss))
-						Start kissing the foxtauresses.
+						Начать целовать лисодевушек.
 					#ELSE
-						You've already spent some time kissing the foxtauresses, and now they want sex...
+						Ты уже провел время, целуя лисодевушек, и теперь они хотят секса...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -158,12 +158,12 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Take home]]></responseTitle>
+				<responseTitle><![CDATA[Забрать к себе]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_tavern_fae_kiss))
-						You're going to need to get the foxtauresses in the mood by kissing them before offering to take them back to your room in 'The Red Dragon'.
+						Тебе нужно настроить лисодевушек на нужный лад, целуя их, прежде чем предложить им отправиться к тебе в комнату в «Красном драконе».
 					#ELSE
-						Offer to take the foxtauresses back to your room in 'The Red Dragon'.
+						Предложить лисодевушкам пойти к тебе в комнату в «Красном драконе».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -183,8 +183,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell the foxtauresses that you've got to go.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать лисодевушкам, что тебе пора идти.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_taur_core_tables]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'SEATING_FAE_LEAVE'))]
@@ -215,10 +215,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take charge]]></responseTitle>
+				<responseTitle><![CDATA[Взять инициативу в свои руки]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell the foxtauresses that you'll be the one taking charge...
-					<br/>[style.colourSex(This will start a normal sex scene in which Fae and Silvia are the submissive participants.)]
+					Сказать лисодевушкам, что сегодня главным будешь ты...
+					<br/>[style.colourSex(Это начнет обычную секс-сцену, в которой Фэй и Сильвия будут подчиняться.)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
@@ -249,10 +249,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell the foxtauresses that you want them to take charge...
-					<br/>[style.colourSex(This will start a normal sex scene in which Fae and Silvia are the dominant participants.)]
+					Сказать лисодевушкам, что ты хочешь, чтобы они взяли всё в свои руки...
+					<br/>[style.colourSex(Это начнет обычную секс-сцену, в которой Фэй и Сильвия будут доминировать.)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
@@ -284,12 +284,12 @@
 				<availabilityConditional><![CDATA[[#!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Doggy-styled]]></responseTitle>
+				<responseTitle><![CDATA[Догги-стайл]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasVagina())
-						As you don't have a vagina, you cannot get doggy-styled...
+						Раз у тебя нет влагалища, ты не можешь заняться сексом в позе догги-стайл...
 					#ELSE
-						As you can't gain access to your vagina, you cannot get doggy-styled...
+						Поскольку у тебя нет доступа к влагалищу, ты не можешь заняться сексом в позе догги-стайл...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -298,10 +298,10 @@
 				<availabilityConditional><![CDATA[[#pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Doggy-styled]]></responseTitle>
+				<responseTitle><![CDATA[Догги-стайл]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell the foxtauresses that you want them to fuck you in the doggy-style position...
-					<br/>[style.colourSex(Fae will fuck your pussy while you perform oral on Silvia.)]
+					Скажи лисицессам, что хочешь, чтобы они трахнули тебя в позе догги-стайл...
+					<br/>[style.colourSex(Фэй будет трахать твою киску, пока ты отсасываешь Сильвии.)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
@@ -348,18 +348,18 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && !pc.isAbleToAccessCoverableArea(CA_ANUS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Doggy-styled (anal)]]></responseTitle>
-				<responseTooltip><![CDATA[As you can't gain access to your asshole, you cannot get anally doggy-styled...]]></responseTooltip>
+				<responseTitle><![CDATA[Догги-стайл (анальный)]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку у тебя нет доступа к анусу, ты не можешь заняться анальным сексом в позе догги-стайл...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Doggy-styled (anal)]]></responseTitle>
+				<responseTitle><![CDATA[Догги-стайл (анальный)]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell the foxtauresses that you want them to anally fuck you in the doggy-style position...
-					<br/>[style.colourSex(Fae will fuck your ass while you perform oral on Silvia.)]
+					Скажи лисицессам, что хочешь, чтобы они трахнули тебя в задницу в позе догги-стайл...
+					<br/>[style.colourSex(Фэй будет трахать твою задницу, пока ты отсасываешь Сильвии.)]
 				]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
@@ -406,8 +406,8 @@
 	
 	<scene id="seating_after_sex">
 		<author><![CDATA[Innoxia]]></author>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The foxtauresses seem satisfied and bring an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Лисицессы, кажется, удовлетворены и заканчивают секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_taur">SEATING_FAE_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -416,8 +416,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Say goodbye]]></responseTitle>
-				<responseTooltip><![CDATA[Say goodbye to Fae and Silvia.]]></responseTooltip>
+				<responseTitle><![CDATA[Попрощаться]]></responseTitle>
+				<responseTooltip><![CDATA[Попрощаться с Фэй и Сильвией.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_fae_silvia_seating_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#fae.setLocation(WORLD_TYPE_EMPTY, PLACE_TYPE_GENERIC_HOLDING_CELL, false)]
@@ -428,8 +428,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sleep over]]></responseTitle>
-				<responseTooltip><![CDATA[Offer to let Fae and Silvia stay the night with you here in your room.]]></responseTooltip>
+				<responseTitle><![CDATA[Переночевать]]></responseTitle>
+				<responseTooltip><![CDATA[Предложить Фэй и Сильвии переночевать здесь, в твоей комнате.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_fae_silvia_seating_sleep_over]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
 					[#~~(game.getMinutesUntilNextMorningOrEvening() + 5)]
@@ -462,8 +462,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[No sex]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Fae and Silvia that you're not interested in more sex and say goodbye to them.]]></responseTooltip>
+				<responseTitle><![CDATA[Без секса]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Фэй и Сильвии, что больше секса тебе не нужно, и попрощаться с ними.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_fae_silvia_seating_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#fae.setLocation(WORLD_TYPE_EMPTY, PLACE_TYPE_GENERIC_HOLDING_CELL, false)]
@@ -475,8 +475,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Suck cock]]></responseTitle>
-				<responseTooltip><![CDATA[Take Fae's fox-cock into your mouth and give her a blowjob.]]></responseTooltip>
+				<responseTitle><![CDATA[Сосать член]]></responseTitle>
+				<responseTooltip><![CDATA[Взять лисий член Фэй в рот и отсосать ей.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_fae_oral_on_fae]]></id>
@@ -531,8 +531,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Eat her out]]></responseTitle>
-				<responseTooltip><![CDATA[Get Fae to plant her fox-pussy over your mouth so that you can eat her out.]]></responseTooltip>
+				<responseTitle><![CDATA[Отсосать ей]]></responseTitle>
+				<responseTooltip><![CDATA[Заставить Фэй опуститься своей лисьей киской тебе на рот, чтобы ты мог поласкать её языком.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_fae_oral_on_fae_pussy]]></id>
@@ -588,8 +588,8 @@
 	
 	<scene id="seating_after_sleep_sex">
 		<author><![CDATA[Innoxia]]></author>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The foxtauresses seem satisfied and bring an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Лисицессы, кажется, удовлетворены и заканчивают секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_taur">SEATING_FAE_SLEEP_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -598,8 +598,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Say goodbye]]></responseTitle>
-				<responseTooltip><![CDATA[Say goodbye to Fae and Silvia.]]></responseTooltip>
+				<responseTitle><![CDATA[Попрощаться]]></responseTitle>
+				<responseTooltip><![CDATA[Попрощаться с Фэй и Сильвией.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_fae_silvia_seating_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#fae.setLocation(WORLD_TYPE_EMPTY, PLACE_TYPE_GENERIC_HOLDING_CELL, false)]

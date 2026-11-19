@@ -12,9 +12,9 @@
 		<tag>HINDERS_ARM_MOVEMENT</tag>
 		<tag>HINDERS_LEG_MOVEMENT</tag>
 	</tags>
-	<name><![CDATA[Marauder's Seal]]></name>
+	<name><![CDATA[Печать Мародерши]]></name>
 	<description><![CDATA[
-		After being defeated by a centauress marauder, you've had a debilitating arcane spell cast upon you! It's not only hindering your arm and leg movement, but is also sending out an arcane signal to any demonic centaur slavers who might be in the area...
+		После поражения от кентаврицы-мародерши на тебя наложили изнуряющее арканное заклинание! Оно не только сковывает движения твоих рук и ног, но и посылает арканный сигнал всем демоническим кентаврам-работорговцам, которые могут находиться поблизости...
 	]]></description>
 	<imageName>centaur_seal.svg</imageName>
 	<colourPrimary>DAMAGE_TYPE_MELEE</colourPrimary>
@@ -27,7 +27,7 @@
 	<spells/>
 	<extraEffects>
 		<effect><![CDATA[
-			[style.colourPurple(Attracting slavers!)]
+			[style.colourPurple(Привлекает работорговцев!)]
 		]]></effect>
 	</extraEffects>
 	

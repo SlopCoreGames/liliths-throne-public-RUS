@@ -16,7 +16,7 @@
 	
 	<!-- The name of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work. -->
-	<name><![CDATA[Exposure therapy]]></name>
+	<name><![CDATA[Экспозиционная терапия]]></name>
 	
 	<!-- The description of this move.
 	The character using this move is passed in as the 'npc' target for parsing, so commands such as [npc.name] will work.
@@ -24,13 +24,13 @@
 	'damageInflicted' will parse to the attacker's projected damage of this attack (using the defined 'baseDamage' field defined below).
 	'formattedDamageInflicted' will parse to a formatted damage prediction, taking into account whether or not the target is at maximum lust (therefore taking into account conversion of lust damage to health/mana damage). -->
 	<description><![CDATA[
-		Use [npc.her] 
+		Использовать [npc.her] 
 		#IF(npc.getTailType() == (TAIL_TYPE_mintychip_salamander_tailFrost))
-			freezing
+			замораживающий
 		#ELSE
-			flaming
+			пылающий
 		#ENDIF
-		 salamander tail to deliver a vicious swipe to [npc.her] target, dealing formattedDamageInflicted damage.
+		 хвост саламандры, чтобы нанести жестокий удар по цели [npc.her], нанося formattedDamageInflicted урона.
 	]]></description>
 	
 	<!-- The type of damage that this move inflicts. 
@@ -108,7 +108,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move being available to them. -->
 	<availabilityDescription><![CDATA[
-		Available to characters who have a salamander tail.
+		Доступно персонажам с хвостом саламандры.
 	]]></availabilityDescription>
 	
 	<!-- The weighting for this action's chance of being selected by an AI combatant.
@@ -135,7 +135,7 @@
 	
 	<!-- A short description to let the player know what the conditions are for this move to inflict a critical hit. -->
 	<criticalDescription><![CDATA[
-		Attacker's lust is greater than [style.boldMagenta(80%)].
+		Похоть атакующего выше [style.boldMagenta(80%)].
 	]]></criticalDescription>
 	
 	<!-- The description that is shown to the player to let them know what this move's effects will be.
@@ -147,24 +147,24 @@
 	'isCritical' will parse to the boolean return value for isCritical, and will therefore be either 'true' or 'false'.
 	-->
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her]
+		Использовать [npc.her]
 		#IF(npc.getTailType() == (TAIL_TYPE_mintychip_salamander_tailFrost))
-			 freezing
+			 замораживающий
 		#ELSE
-			 flaming
+			 пылающий
 		#ENDIF
-		 salamander tail to deliver a vicious swipe to [npc2.name], dealing formattedDamageInflicted damage.
+		 хвост саламандры наносит [npc2.name] яростный удар, нанося formattedDamageInflicted урона.
 	]]></movePredictionDescriptionWithTarget>
 	
 	<!-- This is almost identical to the defined description above, with the difference being that there is no targeted character. As such, the description cannot use any 'npc2' parsing. -->
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her]
+		Использовать [npc.her]
 		#IF(npc.getTailType() == (TAIL_TYPE_mintychip_salamander_tailFrost))
-			 freezing
+			 замораживающий
 		#ELSE
-			 flaming
+			 пылающий
 		#ENDIF
-		 salamander tail to deliver a vicious swipe to [npc.her] target, dealing formattedDamageInflicted damage.
+		 хвост саламандры, чтобы нанести жестокий удар по цели [npc.her], нанося formattedDamageInflicted урона.
 	]]></movePredictionDescriptionNoTarget>
 	
 	<!-- The code that's executed when this move is performed.
@@ -178,20 +178,20 @@
 		<!-- The 'execute' section should be used for the main description of the attack, as well as any extra effects you want to apply.
 		NOTE: The damage is automatically applied to the target, so you don't need to handle parsing of that. -->
 		<execute><![CDATA[
-			The tip of [npc.namePos] tail flashes brightly as [npc.she] [npc.verb(rush)] at [npc2.name] and [npc.verb(land)] a
+			Кончик хвоста [npc.namePos] ярко вспыхивает, когда [npc.she] [npc.verb(бросается)] на [npc2.name] и [npc.verb(наносит)]
 			#IF(npc.getTailType() == (TAIL_TYPE_mintychip_salamander_tailFrost))
-				 freezing cold
+				 леденящий холод
 			#ELSE
-				 burning hot
+				 обжигающий жар
 			#ENDIF
-			 swipe with it!
+			 удар!
 			formattedHealthDamage
 		]]></execute>
 		<critDescription><![CDATA[
-			[npc.NamePos] vicious strike was extremely effective!
+			Яростный удар [npc.NamePos] был крайне эффективным!
 		]]></critDescription>
 		<critEffectDescription><![CDATA[
-			[npc2.Name] [npc2.has] been weakened by the attack!
+			[npc2.Name] [npc2.has] ослаблен(а) атакой!
 		]]></critEffectDescription>
 	</performMove>
 	

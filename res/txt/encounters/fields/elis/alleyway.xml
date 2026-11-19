@@ -1006,7 +1006,8 @@
 					<p>
 						Наклонившись, чтобы силой прижать тебя к полу, [npc.she] достает откуда-то из виду пару любопытных маленьких бутылочек и начинает их энергично трясти.
 						#IF(!npc.isMute())
-как [npc.she] насмехается, [npc.speech(Думаю, тебе не помешает немного <i>улучшений</i>! Я превращу тебя в свой идеальный [npc.preferredBody(b)]!)]						#ELSE
+							пока [npc.she] насмехается: [npc.speech(Думаю, тебе не помешают кое-какие <i>улучшения</i>! Я превращу тебя в свой идеальный [npc.preferredBody(b)]!)]
+						#ELSE
 							 прямо перед твоим лицом, так что ты успеваешь заметить на одной из них этикетку с надписью '[npc.preferredBody(b)]'.
 						#ENDIF
 					</p>
@@ -1334,9 +1335,8 @@
 		#ELSEIF(npc.getAffection(pc)<30)
 			<p>
 				Желая узнать, начала ли [npc.name] приводить свои [npc.her] дела в порядок, ты тепло улыбаешься [npc.herHim] и спрашиваешь, как у [npc.herHim] дела в последнее время.
-			</p>
-			<p>
-				<i>'Things could be better,'</i> [npc.name] replies by once again writing on a slip of paper. Half-heartedly smiling as [npc.she] does [npc.her] best to make light of [npc.her] dire situation, she adds, <i>'I'm fine. I get enough to eat and stuff, but it's really hard to keep going sometimes...'</i>
+			</p><p>
+				<i>«Могло бы быть и лучше»,</i> — [npc.name] отвечает, снова что-то записывая на клочке бумаги. С неохотной улыбкой, пока [npc.she] изо всех [npc.her] сил старается разрядить [npc.her] тяжелую ситуацию, она добавляет: <i>«Я в порядке. Есть мне хватает, и всё такое, но иногда продолжать этот путь бывает чертовски трудно...»</i>
 			</p>
 			<p>
 				Выражая [npc.herHim] свое сочувствие, ты гадаешь, чем можешь помочь подруге. Желая убедиться, что с [npc.sheIs] всё будет хорошо, ты спрашиваешь [npc.herHim], сможет ли [npc.she] продержаться еще какое-то время.
@@ -1433,7 +1433,8 @@
 	<p>
 		#IF(!npc.isMute())
 [npc.speech(Правда? Это мне?)] [npc.name] спрашивает, [npc.stepping] подаётся вперёд и осторожно забирает у тебя Огни. [npc.speech(Даже не знаю, что сказать... Спасибо тебе огромное, огромное спасибо, [pc.name]! Ты даже не представляешь, как сильно это поможет!)]		#ELSE
-Почтительно склонив [npc.her] голову в безмолвной благодарности, [npc.name] [npc.steps] делает шаг вперёд и осторожно забирает у тебя @@H*@@Огни@@H*@@. Одарив тебя счастливой улыбкой, [npc.she] снова кланяется в знак [npc.her], после чего жестом показывает, что [npc.she] собирается немедленно отправиться на них за едой.		#ENDIF
+			Покорно склонив голову [npc.her] в безмолвной благодарности, [npc.name] [npc.steps] делает шаг вперед и осторожно забирает у тебя огни. Одарив тебя счастливой улыбкой, [npc.she] снова кланяется в знак [npc.her], после чего жестом показывает, что [npc.she] собирается немедленно отправиться на них за едой.
+		#ENDIF
 	</p><p>
 		Говоря другу, что [npc.sheIs] более чем рады, ты просишь [npc.herHim] пообещать позаботиться о [npc.herself].
 	</p>
@@ -1537,7 +1538,7 @@
 		#ENDIF
 	</p>
 	<p>
-		Responding to [npc.namePos] question by asking [npc.herHim] if [npc.she] likes it, you open the door on the side of the room to reveal [npc.her] en-suite bathroom. 
+		В ответ на вопрос [npc.namePos] ты спрашиваешь [npc.herHim], нравится ли [npc.she], и открываешь боковую дверь в комнате, за которой обнаруживается личная ванная комната [npc.her].
 	</p>
 	<p>
 		#IF(!npc.isMute())
@@ -2415,7 +2416,7 @@
 	
 	<htmlContent tag="SUBMITTED_REPEAT_PIMPED_OUT_VAGINAL_GIVING_START"><![CDATA[
 	<p>
-		Повинуясь приказу, ты [pc.walk] к [friend.namePos] «постели@@ и ложишься на [friend.her] потертый, испачканный матрас. Жаждущая начать, [friend.race] обнажает свои [friend.her] [friend.pussy+], после чего нависает над тобой, жадно выставляя напоказ твою [pc.cock+].
+		Делая всё, как велено, ты [pc.walk] к «кровати» [friend.namePos] и ложишься на [friend.her] поношенный, запятнанный матрас. Жаждущая начать, [friend.race] обнажает [friend.her] [friend.pussy+], прежде чем опуститься сверху на тебя, жадно обнажая твой [pc.cock+].
 		#IF(pc.getTattooInSlot(IS_GROIN)!=null && pc.getTattooInSlot(IS_GROIN).getWriting()!=null && pc.getTattooInSlot(IS_GROIN).getWriting().getText().equalsIgnoreCase('Property of '+npc.getNameIgnoresPlayerKnowledge()))
 			 Увидев надпись «Собственность [npc.name]» как часть твоей татуировки на матке, [friend.name] издает усмешливый смешок и восклицает: [friend.speech(Вижу, ты отметила [pc.name] как свою собственность. Но я уже заплатил за [pc.herHim], так что на данный момент [pc.sheIs] — мой!)]
 		#ELSE

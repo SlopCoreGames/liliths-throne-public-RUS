@@ -2,7 +2,7 @@
 <dialogueNodes>
 
 	<scene id="start">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">START</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -11,15 +11,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Town hall]]></responseTitle>
-				<responseTooltip><![CDATA[Accompany Meraxis to the town hall.]]></responseTooltip>
+				<responseTitle><![CDATA[Ратуша]]></responseTitle>
+				<responseTooltip><![CDATA[Сопроводи Мераксиса в ратушу.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_town_hall]]></nextDialogue>
 			</response>
 		</responses>
 	</scene>
 	
 	<scene id="town_hall">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<preParsingEffects><![CDATA[
 			[#pc.setLocation(WORLD_TYPE_innoxia_fields_elis_town, PLACE_TYPE_innoxia_fields_elis_town_town_hall)]
 			[#meraxis.setLocation(pc)]
@@ -32,15 +32,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Meraxis into the town hall.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Следуй за Мераксисом в ратушу.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_town_hall_entry]]></nextDialogue>
 			</response>
 		</responses>
 	</scene>
 	
 	<scene id="town_hall_entry">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<preParsingEffects><![CDATA[
 			[#pc.setLocation(WORLD_TYPE_innoxia_fields_elis_town_hall_f0, PLACE_TYPE_innoxia_fields_elis_town_hall_f0_info)]
 			[#meraxis.setLocation(pc)]
@@ -53,15 +53,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Head over towards the staircase which leads up to Minotallys's office.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Направляйся к лестнице, ведущей к кабинету Миноталиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_town_hall_stairs]]></nextDialogue>
 			</response>
 		</responses>
 	</scene>
 	
 	<scene id="town_hall_stairs">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<preParsingEffects><![CDATA[
 			[#pc.setLocation(WORLD_TYPE_innoxia_fields_elis_town_hall_f0, PLACE_TYPE_innoxia_fields_elis_town_hall_f0_stairs)]
 			[#meraxis.setLocation(pc)]
@@ -74,15 +74,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Upstairs]]></responseTitle>
-				<responseTooltip><![CDATA[Head up the stairs to finally meet Minotallys.]]></responseTooltip>
+				<responseTitle><![CDATA[Наверх]]></responseTitle>
+				<responseTooltip><![CDATA[Поднимись по лестнице, чтобы наконец встретиться с Миноталисом.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_town_hall_upstairs]]></nextDialogue>
 			</response>
 		</responses>
 	</scene>
 	
 	<scene id="town_hall_upstairs">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<preParsingEffects><![CDATA[
 			[#pc.setLocation(WORLD_TYPE_innoxia_fields_elis_town_hall_f1, PLACE_TYPE_innoxia_fields_elis_town_hall_f1_stairs)]
 			[#meraxis.setLocation(pc)]
@@ -97,12 +97,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Introduction]]></responseTitle>
+				<responseTitle><![CDATA[Знакомство]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_introduced))
-						You've already introduced yourself to Arion.
+						Ты уже представился Ариону.
 					#ELSE
-						Tell Arion who you are.
+						Расскажи Ариону, кто ты.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -122,12 +122,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Duties]]></responseTitle>
+				<responseTitle><![CDATA[Обязанности]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_duties))
-						You've already asked Arion about what he and Minotallys do here.
+						Ты уже спрашивал Ариона о том, чем он и Миноталлис занимаются здесь.
 					#ELSE
-						Ask Arion what he and Minotallys do here.
+						Спроси Ариона, чем он и Миноталлис занимаются здесь.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -150,12 +150,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Paintings]]></responseTitle>
+				<responseTitle><![CDATA[Картины]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_paintings))
-						You've already asked Arion about the paintings which hang on the walls around you.
+						Ты уже спрашивал Ариона о картинах, висящих на стенах вокруг.
 					#ELSE
-						Ask Arion about the paintings which hang on the walls around you.
+						Спроси Ариона о картинах, висящих на стенах вокруг.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -178,12 +178,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Rooms]]></responseTitle>
+				<responseTitle><![CDATA[Комнаты]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_rooms))
-						You've already asked Arion about the rooms found in this tower.
+						Ты уже спрашивал Ариона о комнатах в этой башне.
 					#ELSE
-						Ask Arion what all of the rooms are for on this level of the tower.
+						Спроси Ариона, для чего нужны все эти комнаты на этом уровне башни.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -206,12 +206,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_duties) || !flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_paintings) || !flags.hasFlag(FLAG_innoxia_minotallys_arion_talk_rooms))
-						You need to wait for Minotallys to finish her business before being able to meet her, so you should spend the time talking with Arion.
+						Тебе нужно подождать, пока Миноталлис закончит свои дела, прежде чем ты сможешь встретиться с ней. Пока можешь провести время, поболтав с Арионом.
 					#ELSE
-						Now that Minotallys has finished her business, you can finally meet her...
+						Теперь, когда дела Миноталлис закончены, ты наконец-то можешь встретиться с ней...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -226,7 +226,7 @@
 	</scene>
 	
 	<scene id="arion_talking">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[3]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -241,7 +241,7 @@
 			[#arion.setLocation(pc)]
 			[#minotallys.setLocation(pc)]
 		]]></preParsingEffects>
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">MINOTALLYS_START</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -250,8 +250,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Politely decline Minotallys's offer.]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Вежливо отклонить предложение Миноталлис.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_minotallys_drink]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/quests/main/minotallys_meeting', 'MINOTALLYS_START_DECLINE'))]
@@ -261,8 +261,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Drink]]></responseTitle>
-				<responseTooltip><![CDATA[Drink the glass of what is quite clearly Minotallys's breast milk.]]></responseTooltip>
+				<responseTitle><![CDATA[Выпить]]></responseTitle>
+				<responseTooltip><![CDATA[Выпить бокал того, что явно является грудным молоком Миноталлис.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_minotallys_drink]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/quests/main/minotallys_meeting', 'MINOTALLYS_START_DRINK'))]
@@ -274,7 +274,7 @@
 	</scene>
 	
 	<scene id="minotallys_drink">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">MINOTALLYS_START_DRINK_END</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -283,15 +283,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Confirm]]></responseTitle>
-				<responseTooltip><![CDATA[Confirm Meraxis's explanation by telling Minotallys and Arion that Lyssieth has sent you to help deal with Lunette.]]></responseTooltip>
+				<responseTitle><![CDATA[Подтвердить]]></responseTitle>
+				<responseTooltip><![CDATA[Подтвердить объяснения Мераксиса, сказав Миноталлис и Ариону, что тебя прислала Lyssieth, чтобы помочь разобраться с Лунетт.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_minotallys_explain]]></nextDialogue>
 			</response>
 		</responses>
 	</scene>
 	
 	<scene id="minotallys_explain">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">MINOTALLYS_EXPLAIN</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -300,15 +300,15 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Themiscyra?]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Minotallys what's so important about this town of 'Themiscyra'.]]></responseTooltip>
+				<responseTitle><![CDATA[Фемисцира?]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить у Миноталлис, что такого важного в этом городе под названием «Фемисцира».]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_minotallys_themiscyra]]></nextDialogue>
 			</response>
 		</responses>
 	</scene>
 	
 	<scene id="minotallys_themiscyra">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">MINOTALLYS_THEMISCRYA</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -317,8 +317,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Agree]]></responseTitle>
-				<responseTooltip><![CDATA[Agree to Arion's suggestion and say that you and Meraxis will travel to Themiscyra to see how they're faring against Lunette.]]></responseTooltip>
+				<responseTitle><![CDATA[Согласиться]]></responseTitle>
+				<responseTooltip><![CDATA[Согласиться на предложение Ариона и сказать, что вы с Мераксисом отправитесь в Фемисциру, чтобы посмотреть, как они справляются с Лунетт.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_minotallys_themiscyra_agree]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.setQuestProgress(QUEST_LINE_MAIN, QUEST_MAIN_3_D_TO_THEMISCYRA))]
@@ -330,7 +330,7 @@
 	</scene>
 	
 	<scene id="minotallys_themiscyra_agree">
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">MINOTALLYS_THEMISCRYA_AGREE</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -339,8 +339,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Downstairs]]></responseTitle>
-				<responseTooltip><![CDATA[Head back down to the ground floor.]]></responseTooltip>
+				<responseTitle><![CDATA[Вниз]]></responseTitle>
+				<responseTooltip><![CDATA[Спуститься обратно на первый этаж.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_minotallys_meeting_minotallys_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -352,7 +352,7 @@
 			[#meraxis.returnToHome()]
 			[#meraxis.hourlyUpdate()]
 		]]></preParsingEffects>
-		<title><![CDATA[Meeting Minotallys]]></title>
+		<title><![CDATA[Встреча с Миноталисом]]></title>
 		<content folderPath="txt/quests/main/minotallys_meeting">MINOTALLYS_END</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -361,8 +361,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that your meeting with Minotallys is over, you wonder where to go to next...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда встреча с Миноталисом позади, ты задумываешься о том, куда отправиться дальше...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 			</response>
 		</responses>

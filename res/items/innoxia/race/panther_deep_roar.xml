@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Deep Roar]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Deep Roars]]></namePlural>
-		<description><![CDATA[A glass bottle filled with arrack; a distilled alcoholic drink made from fermented coconut sugar. The branding on the front proudly carries the name 'Deep Roar', while a label on the back describes how a family of tiger-morphs have been distilling this beverage for twelve generations.]]></description> 
+		<name><![CDATA[Глубокий Рёв]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Глубокие Рёвы]]></namePlural>
+		<description><![CDATA[Стеклянная бутылка, наполненная арраком — крепким алкогольным напитком, полученным путем дистилляции ферментированного кокосового сахара. На передней стороне красуется гордое название «Глубокий Рёв», а на этикетке сзади повествует о том, что целое семейство тигроморфов гонит этот напиток уже двенадцать поколений.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,16 +28,16 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
-			<line><![CDATA[[style.boldMinorBad(Adds)] 45% to [style.boldAlcohol(intoxication level)]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
+			<line><![CDATA[[style.boldMinorBad(Добавляет)] 45% к [style.boldAlcohol(уровню опьянения)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 			[#npc.incrementAlcoholLevel(0.45)]
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the bottle of Deep Roar, before tilting [npc.her] head back and bringing it up to [npc.her] waiting [npc.lips]. An extremely strong alcoholic scent rises from the opening, and with a gulp, [npc.name] [npc.verb(start)] downing the liquid, discovering that it tastes like a floral dark rum.
+		[npc.Name] [npc.verb(отвинчивает)] крышку бутылки «Глубокого Рёва», после чего запрокидывает [npc.her] голову и подносит её к ожидающему [npc.lips] [npc.her]. Из горлышка бьёт резкий алкогольный аромат, и, сделав глоток, [npc.name] [npc2.verb(начинает)] жадно глушить жидкость, обнаруживая, что на вкус она напоминает цветовой тёмный ром.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the bottle of Deep Roar, before bringing it up to [npc2.namePos] waiting [npc2.lips]. An extremely strong alcoholic scent rises from the opening, and with a gulp, [npc2.name] [npc2.verb(start)] downing the liquid, discovering that it tastes like a floral dark rum.
+		[npc.Name] [npc.verb(отвинчивает)] крышку бутылки «Глубокого Рёва», после чего подносит её к ожидающему [npc2.lips] [npc2.namePos]. Из горлышка бьёт резкий алкогольный аромат, и, сделав глоток, [npc2.name] [npc2.verb(начинает)] жадно глушить жидкость, обнаруживая, что на вкус она напоминает цветовой тёмный ром.
 		]]></otherUse>
 	</useDescriptions>
 

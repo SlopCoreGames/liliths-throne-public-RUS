@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>20</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Bubble Milk]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Bubble Milks]]></namePlural>
-		<description><![CDATA[The thick glass bottle of 'Bubble Milk' appears to contain, much as its name would suggest, a generous helping of milk. Looking through the glass, you see that there are little bubbles fizzing up in the liquid within, making this milk appear to be carbonated.]]></description> 
+		<name><![CDATA[Пузырьковое молоко]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Пузырьковое молоко]]></namePlural>
+		<description><![CDATA[Толстая стеклянная бутылка «Пузырькового молока» содержит, как и следует из названия, изрядную порцию молока. Сквозь стекло видно, как в жидкости поднимаются крошечные пузырьки, из-за чего молоко кажется газированным.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -52,10 +52,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the top of the bottle of Bubble Milk, before tilting [npc.her] head back and quickly gulping down the creamy liquid. Despite its name and the appearance of being carbonated, the mellow taste lacks any sort of fizz, and after draining the entire bottle, a soft, pleasant aftertaste lingers in [npc.namePos] mouth.
+		[npc.Name] [npc.verb(unscrew)] крышку с бутылки Пузырькового молока, после чего [npc.her] запрокидывает голову и быстро осушает бутылку, глотая сливочную жидкость. Несмотря на название и вид газировки, мягкий вкус лишен всякого шипения, а после того, как бутылка пустеет, во [npc.namePos] рту остается нежное, приятное послевкусие.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the top of the bottle of Bubble Milk, before bringing it up to [npc2.namePos] [npc2.lips] and making [npc2.herHim] gulp down the creamy liquid. Despite its name and the appearance of being carbonated, the mellow taste lacks any sort of fizz, and after draining the entire bottle, a soft, pleasant aftertaste lingers in [npc2.namePos] mouth.
+		[npc.Name] [npc.verb(unscrew)] крышку с бутылки Пузырькового молока, подносит её к [npc2.namePos] [npc2.lips] и заставляет [npc2.herHim] жадно глотать сливочную жидкость. Несмотря на название и вид газировки, мягкий вкус лишен всякого шипения, а после того, как бутылка пустеет, во [npc2.namePos] рту остается нежное, приятное послевкусие.
 		]]></otherUse>
 	</useDescriptions>
 

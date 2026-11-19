@@ -30,11 +30,11 @@
 	<sexEffect>false</sexEffect>
 	
 	<!-- The name of this set bonus. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
-	<name><![CDATA[Steadfast Enforcer]]></name>
+	<name><![CDATA[Стойкий Enforcer]]></name>
 	
 	<!-- The description of this status effect. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
 	<description><![CDATA[
-		The Enforcer Riot Control Uniform's overlapping fitment provides [npc.name] with additional protection.
+		Многослойная конструкция формы Enforcer для подавления беспорядков обеспечивает [npc.name] дополнительную защиту.
 	]]></description>
 	
 	<!-- The name of the icon which should be used to represent this status effect. The icon must be an svg file, and must be placed in the same folder as this XML file. -->

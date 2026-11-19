@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>40</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Bunny Carrot-Cake]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Bunny Carrot-Cakes]]></namePlural>
-		<description><![CDATA[An individually-wrapped slice of frosted carrot cake, complete with a decorative icing carrot on the top. On the wrapper, there's a very lewd image of a rabbit-girl being bred by a muscular rabbit-boy.]]></description> 
+		<name><![CDATA[Морковный кекс зайки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Морковные кексы зайки]]></namePlural>
+		<description><![CDATA[Индивидуально упакованный кусочек морковного торта с глазурью и декоративной морковкой сверху. На обертке красуется весьма похотливое изображение крольчихи, которую вовсю трахает мускулистый кролик.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,17 +31,17 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_FERTILITY.getFormattedValue(15)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_VIRILITY.getFormattedValue(15)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_LUST.getFormattedValue(-25)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_FERTILITY.getFormattedValue(15)] к 'эффектам зелья']]></line>
+			<line><![CDATA[[#ATTRIBUTE_VIRILITY.getFormattedValue(15)] к 'эффектам зелья']]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_LUST.getFormattedValue(-25)] к 'эффектам зелья']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel like [npc.she] [npc.verb(need)] to breed...
+				[npc.Name] [npc.verb(start)] чувствуешь, как [npc.she] [npc.verb(need)] трахаться...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_FERTILITY, 15)]
 			[#npc.addPotionEffect(ATTRIBUTE_VIRILITY, 15)]
@@ -59,10 +59,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Tearing off the Bunny Carrot-Cake's plastic wrapper, [npc.name] [npc.verb(pop)] the small slice of cake into [npc.her] mouth. It turns out to be absolutely delicious, and after [npc.sheHas] swallowed down the sweet mess, a delightful carroty aftertaste lingers on [npc.her] [npc.tongue].
+		Сорвав пластиковую обертку с морковного кекса, [npc.name] [npc.verb(pop)] маленький кусочек прямо в [npc.her] рот. Он оказывается невероятно вкусным, и после того как [npc.sheHas] проглатываешь эту сладкую массу, на [npc.her] [npc.tongue] остается восхитительное морковное послевкусие.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Tearing off the Bunny Carrot-Cake's plastic wrapper, [npc.name] [npc.verb(pop)] the small slice of cake into [npc2.namePos] mouth. It turns out to be absolutely delicious, and after [npc2.sheHas] swallowed down the sweet mess, a delightful carroty aftertaste lingers on [npc2.namePos] [npc2.tongue].
+		Сорвав пластиковую обертку с морковного кекса, [npc.name] [npc.verb(pop)] маленький кусочек прямо в [npc2.namePos] рот. Он оказывается невероятно вкусным, и после того как [npc2.sheHas] проглатываешь эту сладкую массу, на [npc2.namePos] [npc2.tongue] остается восхитительное морковное послевкусие.
 		]]></otherUse>
 	</useDescriptions>
 

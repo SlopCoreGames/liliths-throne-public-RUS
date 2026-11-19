@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA["MFD by DSG Sanitary Supply GmbH" is lightly embossed on one edge of the packaging.]]></authorTag>
+		<authorTag><![CDATA["Произведено DSG Sanitary Supply GmbH" — эта надпись слегка вытиснена на одном из краев упаковки.]]></authorTag>
 		
 		<value>50</value> 
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[arcane wet wipe]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[arcane wet wipes]]></namePlural>
-		<description><![CDATA[Some foil wrapped, alcohol soaked cotton wipes. The writing on the rear of the packet declares that these wet wipes have been 'arcane-enhanced to remove all odours'.]]></description> 
+		<name><![CDATA[арканная влажная салфетка]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[арканные влажные салфетки]]></namePlural>
+		<description><![CDATA[Несколько обернутых в фольгу ватных салфеток, пропитанных алкоголем. Надпись на обороте упаковки гласит, что эти салфетки были «усилены арканой для удаления любых запахов».]]></description> 
 		
 		<useDescriptor>use</useDescriptor>
 		
@@ -25,11 +25,11 @@
 		<colourTertiary>CLOTHING_GOLD</colourTertiary>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Cleans all inventory slots)]]]></line>
-			<line><![CDATA[[style.boldGood(Cleans all equipped clothing)]]]></line>
+			<line><![CDATA[[style.boldGood(Очищает все ячейки инвентаря)]]]></line>
+			<line><![CDATA[[style.boldGood(Очищает всю надетую одежду)]]]></line>
 			<line><![CDATA[
 				#IF(game.isMuskContentEnabled())
-					[style.boldGood(Removes 'marked by musk')]
+					[style.boldGood(Убирает 'запах мускуса')]
 				#ENDIF
 			]]></line>
 		</effectTooltipLines>
@@ -39,7 +39,7 @@
 			[##npc.cleanAllDirtySlots(true)]
 			[##npc.clearMuskMarkers()]
 			<p style='text-align:center; margin-top:0; padding-top:0;'>
-				Just as [npc.she] [npc.verb(start)] looking for a place to toss the soiled wipe, <b>it disappears, conveniently taking the absorbed filth with it</b>!
+			Стоит тебе [npc.she] [npc.verb(start)] искать место, куда бы выбросить грязную салфетку, как <b>она исчезает, удобно забирая с собой всю впитавшуюся грязь</b>!
 			</p>
 		]]></applyEffects>
 		
@@ -50,10 +50,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(tear)] open the foil packet and [npc.verb(take)] out the wet wipe, before quickly cleaning [npc.herself] with it.
+		[npc.Name] [npc.verb(tear)] фольгированный пакетик и [npc.verb(take)] влажную салфетку, после чего быстро протирает ею [npc.herself].
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(tear)] open the foil packet and [npc.verb(take)] out the wet wipe, before quickly cleaning [npc2.name] with it.
+		[npc.Name] [npc.verb(tear)] фольгированный пакетик и [npc.verb(take)] влажную салфетку, после чего быстро протирает ею [npc2.name].
 		]]></otherUse>
 	</useDescriptions>
 

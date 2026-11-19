@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>20</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Glade Springs]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Glade Springs]]></namePlural>
-		<description><![CDATA[A glass bottle of sparkling water bearing the brand name 'Glade Springs'. On the reverse label, a muscular stag-boy is pictured post-coitus with two deer-girls, and is drinking a bottle of this sparkling water.]]></description> 
+		<name><![CDATA[Глейд Спрингс]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Глейд Спрингс]]></namePlural>
+		<description><![CDATA[Стеклянная бутылка газированной воды под брендом «Глейд Спрингс». На обратной стороне этикетки изображен мускулистый олень-мальчик, который только что закончил совокупление с двумя оленихами и теперь жадно пьет эту самую воду.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A soothing wave of arcane energy washes over [npc.name]...
+				Успокаивающая волна арканы омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 		]]></applyEffects>
@@ -51,10 +51,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-			After first unscrewing the cap, [npc.name] [npc.verb(bring)] the glass bottle of Glade Springs up to [npc.her] [npc.mouth]. A faint sweet smell informs [npc.herHim] that this isn't any ordinary water, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the fizzy liquid, [npc.she] [npc.verb(taste)] a subtle hint of mint.
+			Открутив крышку, [npc.name] [npc.verb(подносит)] стеклянную бутылку «Глейд Спрингс» к [npc.her] [npc.mouth]. Слабый сладковатый аромат подсказывает [npc.herHim], что это не просто обычная вода, и когда [npc.she] [npc2.verb(закидывает)] [npc.her] голову назад и [npc2.verb(начинает)] пить шипучую жидкость, [npc.she] [npc.verb(чувствует)] едва уловимую нотку мяты.
 		]]></selfUse>
 		<otherUse><![CDATA[
-			After first unscrewing the cap, [npc.name] [npc.verb(bring)] the glass bottle of Glade Springs up to [npc2.namePos] waiting [npc2.lips]. A faint sweet smell informs [npc2.herHim] that this isn't any ordinary water, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the fizzy liquid, [npc.she] [npc.verb(taste)] a subtle hint of mint.
+			Открутив крышку, [npc.name] [npc.verb(подносит)] стеклянную бутылку «Глейд Спрингс» к ожидающей [npc2.namePos] [npc2.lips]. Слабый сладковатый аромат подсказывает [npc2.herHim], что это не просто обычная вода, и когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову назад и [npc2.verb(начинает)] пить шипучую жидкость, [npc.she] [npc.verb(чувствует)] едва уловимую нотку мяты.
 		]]></otherUse>
 	</useDescriptions>
 

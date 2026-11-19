@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription printed on the packaging reads 'Packed by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[На упаковке едва заметна надпись: «Упаковано DSG Foodstuffs LLC»]]></authorTag>
 		
 		<value>350</value> 
 		<determiner><![CDATA[a package of]]></determiner>
-		<name><![CDATA[Pâté and Crackers]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Tuna Sashimi]]></namePlural>
-		<description><![CDATA[A small tin of meat pâté and crackers wrapped in a wax paper package. The label on package is a cartoony depiction a smiling gryphon-boy with crumbs all around his beak.]]></description> 
+		<name><![CDATA[Паштет с крекерами]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Сашими из тунца]]></namePlural>
+		<description><![CDATA[Маленькая жестяная банка с мясным паштетом и крекерами, завернутая в вощеную бумагу. На этикетке — мультяшное изображение улыбающегося грифона-мальчишки, весь клюв которого в крошках.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -30,10 +30,10 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 20% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldGood(Restores)] 20% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 20% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 20% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -41,7 +41,7 @@
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/5)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger and more alert...
+				[npc.Name] [npc.verb(start)] чувствуешь прилив сил и бодрость...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 1)]
@@ -57,25 +57,25 @@
 	<useDescriptions>
 		<selfUse><![CDATA[
 		#IF(game.isSillyModeEnabled())
-		 [npc.speech(Okay, let's get this out of the packaging,)] [npc.name] [npc.verb(say)] to an unseen audience before unpacking the crackers and opening the tin. The tin makes a slight hiss as air rushes in. [npc.speech(Nice hiss,)] [npc.she] [npc.verb(comment)].
+		 [npc.speech(Так, пора это распаковать,)] [npc.name] [npc.verb(say)] невидимой аудитории, прежде чем развернуть крекеры и открыть банку. При открытии из банки доносится легкое шипение — внутрь устремляется воздух. [npc.speech(Приятное шипение,)] [npc.she] [npc.verb(comment)].
 		#ELSE
-		 [npc.Name] [npc.verb(unpack)] the crackers and [npc.verb(open)] the tin.
+		 [npc.Name] [npc.verb(unpack)] крекеры и [npc.verb(open)] банку.
 		#ENDIF 
-		 [npc.She] [npc.verb(breathe)] in the hearty scent of crackers just out of the oven and freshly cooked meat. Unable to resist the delicious looking meal, [npc.she] quickly [npc.verb(devour)] it all, leaving only an empty tin and torn wax paper behind.
+		 [npc.She] [npc.verb(breathe)] густой аромат свежеиспеченных крекеров и только что приготовленного мяса. Не в силах устоять перед этой аппетитной едой, [npc.she] быстро [npc.verb(devour)] всё подчистую, оставляя после себя лишь пустую банку и клочья вощеной бумаги.
 		]]></selfUse>
 		<otherUse><![CDATA[
 		#IF(game.isSillyModeEnabled())
-		 [npc.speech(Okay, let's get this out of the packaging.)] [npc.Name] says before unpacking
+		 [npc.speech(Так, пора распаковывать.)] — говорит [npc.Name] перед тем, как начать распаковку
 		#ELSE
-		 [npc.Name] [npc.verb(unpack)]
+		 [npc.Name] [npc.verb(распаковывает)]
 		#END IF
-		 the crackers and [npc.verb(open)] the tin
+		 крекеры и [npc.verb(открывает)] жестяную банку
 		#IF(game.isSillyModeEnabled())
-		. The tin makes a slight hiss as air rushes in. [npc.speech(Nice hiss.)] [npc.she] [npc.verb(say)] while laying out
+		. Банка издает легкое шипение, когда внутрь устремляется воздух. [npc.speech(Приятное шипение.)] — [npc.verb(произносит)] [npc.she], раскладывая
 		#ELSE
-		, laying out
+		, раскладывая
 		#ENDIF
-		 the meal before [npc2.name]. [npc2.She] [npc2.verb(breathe)] in the hearty scent of crackers just out of the oven and freshly cooked meat. Unable to resist, [npc2.she] quickly [npc2.verb(devour)] it all, leaving only an empty tin and torn wax paper behind.
+		 еду перед [npc2.name]. [npc2.She] [npc2.verb(вдыхает)] густой аромат только что испеченных крекеров и свежеприготовленного мяса. Не в силах устоять, [npc2.she] быстро [npc2.verb(пожирает)] всё дочиста, оставляя после себя лишь пустую банку и клочья вощеной бумаги.
 		]]></otherUse>
 	</useDescriptions>
 

@@ -29,8 +29,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Interrupt]]></responseTitle>
-				<responseTooltip><![CDATA[Interrupt Saellatrix and Lilaya to tell them that you're here to see them.]]></responseTooltip>
+				<responseTitle><![CDATA[Прервать]]></responseTitle>
+				<responseTooltip><![CDATA[Прервать Саэллатрикс и Lilaya, чтобы сказать, что ты пришел к ним.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_start_intro]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/lilayasHome/doll_quest', 'START_INTERRUPT'))]
@@ -39,8 +39,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wait]]></responseTitle>
-				<responseTooltip><![CDATA[Wait for Saellatrix to finish with Lilaya...]]></responseTooltip>
+				<responseTitle><![CDATA[Ждать]]></responseTitle>
+				<responseTooltip><![CDATA[Подождать, пока Саэллатрикс закончит разговор с Lilaya...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_start_intro]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -59,8 +59,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Listen]]></responseTitle>
-				<responseTooltip><![CDATA[Hear what it is that Saellatrix has to say to you.]]></responseTooltip>
+				<responseTitle><![CDATA[Слушать]]></responseTitle>
+				<responseTooltip><![CDATA[Выслушать, что Саэллатрикс хочет тебе сказать.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_reveal]]></nextDialogue>
 			</response>
 		</responses>
@@ -75,8 +75,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Explain]]></responseTitle>
-				<responseTooltip><![CDATA[Explain to Lilaya what you and FIammetta found beneath Saellatrix's shop.]]></responseTooltip>
+				<responseTitle><![CDATA[Объяснить]]></responseTitle>
+				<responseTooltip><![CDATA[Объяснить Lilaya, что ты и Fiammetta нашли под лавкой Саэллатрикс.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_explain]]></nextDialogue>
 			</response>
 		</responses>
@@ -91,8 +91,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Her excuse]]></responseTitle>
-				<responseTooltip><![CDATA[Hear how Saellatrix thinks she'll be able to get out of this.]]></responseTooltip>
+				<responseTitle><![CDATA[Её оправдание]]></responseTitle>
+				<responseTooltip><![CDATA[Послушать, как Саэллатрикс пытается выкрутиться из этой ситуации.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_counter]]></nextDialogue>
 			</response>
 		</responses>
@@ -107,8 +107,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Alone]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you're alone with Saellatrix, you hope that she's going to drop the act.]]></responseTooltip>
+				<responseTitle><![CDATA[Наедине]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда ты наедине с Саэллатрикс, ты надеешься, что она наконец перестанет ломать комедию.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_lilaya_leaves]]></nextDialogue>
 			</response>
 		</responses>
@@ -127,8 +127,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Loyal to Fia]]></responseTitle>
-				<responseTooltip><![CDATA[Refuse to betray Fia's trust and tell Saellatrix that she deserves to be behind bars.]]></responseTooltip>
+				<responseTitle><![CDATA[Верна Фии]]></responseTitle>
+				<responseTooltip><![CDATA[Отказаться предавать доверие Фии и сказать Саэллатрикс, что та заслуживает оказаться за решеткой.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_choice]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/lilayasHome/doll_quest', 'SIDE_FIA'))]
@@ -141,8 +141,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Betray Fia]]></responseTitle>
-				<responseTooltip><![CDATA[Perhaps it'd be best to side with a recognised daughter of an elder lilin rather than stay loyal to a no-name reporter.]]></responseTooltip>
+				<responseTitle><![CDATA[Предать Фию]]></responseTitle>
+				<responseTooltip><![CDATA[Возможно, лучше примкнуть к признанной дочери старшей лилин, чем оставаться верной какой-то безымянной репортерше.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_lilayas_home_doll_quest_choice]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/lilayasHome/doll_quest', 'SIDE_SAE'))]
@@ -167,8 +167,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now left alone in the library, you think over your decision before continuing on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Оставшись в библиотеке в одиночестве, ты обдумываешь свое решение, прежде чем продолжить путь...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/dominion/lilayasHome/doll_quest', 'END'))]

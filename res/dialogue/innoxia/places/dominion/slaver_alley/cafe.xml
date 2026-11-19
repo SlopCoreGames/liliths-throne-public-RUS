@@ -13,8 +13,8 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE && !flags.hasFlag(FLAG_slaverAlleyCafe1Demonstrated)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA['Demonstration']]></responseTitle>
-					<responseTooltip><![CDATA[Ask the waitress what this 'demonstration' involves.]]></responseTooltip>
+					<responseTitle><![CDATA['Демонстрация']]></responseTitle>
+					<responseTooltip><![CDATA[Спросить у официантки, что именно подразумевается под этой «демонстрацией».]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_slaver_alley_cafe_demonstration_explanation]]></nextDialogue>
 				</response>
 				<!-- Blowjob: -->
@@ -22,14 +22,14 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE && flags.hasFlag(FLAG_slaverAlleyCafe1Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe1DailyDemonstrated) || !pc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Blowjob demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация минета]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe1DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want another one...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще одну, придется прийти завтра...
 						#ELSEIF(!pc.hasPenis())
-							As you don't have a penis, you're unable to get a blowjob demonstration...
+							Так как у тебя нет пениса, ты не можешь получить демонстрацию минета...
 						#ELSE
-							As you're unable to access your penis, you're unable to get a blowjob demonstration...
+							Так как у тебя нет доступа к пенису, ты не можешь получить демонстрацию минета...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -38,10 +38,10 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE && flags.hasFlag(FLAG_slaverAlleyCafe1Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe1DailyDemonstrated) && pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Blowjob demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация минета]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] blowjob skills.
-						<br/>[style.italicsSex(This will lead into [npc.name] giving you a blowjob.)]
+						Сказать [npc.name], что ты хочешь, чтобы [npc.herHim] продемонстрировала тебе свои навыки [npc.her] минета.
+						<br/>[style.italicsSex(Это приведет к тому, что [npc.name] отсосет тебе.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -79,14 +79,14 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE && flags.hasFlag(FLAG_slaverAlleyCafe1Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe1DailyDemonstrated) || !pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Cunnilingus demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация куннилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe1DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want some more...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще, придется прийти завтра...
 						#ELSEIF(!pc.hasVagina())
-							As you don't have a vagina, you're unable to get a cunnilingus demonstration...
+							Так как у тебя нет влагалища, ты не можешь получить демонстрацию куннилингуса...
 						#ELSE
-							As you're unable to access your vagina, you're unable to get a cunnilingus demonstration...
+							Так как у тебя нет доступа к влагалищу, ты не можешь получить демонстрацию куннилингуса...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -95,10 +95,10 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE && flags.hasFlag(FLAG_slaverAlleyCafe1Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe1DailyDemonstrated) && pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Cunnilingus demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация куннилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] cunnilingus skills.
-						<br/>[style.italicsSex(This will lead into [npc.name] eating you out.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировал(а) свои навыки куннилингуса на [npc.her].
+					<br/>[style.italicsSex(Это приведет к тому, что [npc.name] будет лизать тебя.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -136,8 +136,8 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && !flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA['Demonstration']]></responseTitle>
-					<responseTooltip><![CDATA[Ask the waiter what this 'demonstration' involves.]]></responseTooltip>
+					<responseTitle><![CDATA['Демонстрация']]></responseTitle>
+					<responseTooltip><![CDATA[Спросить у официанта, что именно подразумевается под этой «демонстрацией».]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_slaver_alley_cafe_demonstration_explanation]]></nextDialogue>
 				</response>
 				<!-- Give blowjob: -->
@@ -145,12 +145,12 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated) || !pc.isAbleToAccessCoverableArea(CA_MOUTH, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Face-fuck demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация фейсфака]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want another one...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще одну, придется прийти завтра...
 						#ELSE
-							As you're unable to access your mouth, you're unable to get a face-fuck demonstration...
+							Так как у тебя нет доступа к рту, ты не можешь получить демонстрацию фейсфака...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -159,10 +159,10 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated) && pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Face-fuck demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация фейсфака]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] face-fucking skills.
-						<br/>[style.italicsSex(This will lead into you giving [npc.name] a blowjob.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировал(а) свои навыки фейсфака на [npc.her].
+					<br/>[style.italicsSex(Это приведет к тому, что ты сделаешь [npc.name] минет.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -200,14 +200,14 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated) || !pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Breeding demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация осеменения]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want another one...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще одну, придется прийти завтра...
 						#ELSEIF(!pc.hasVagina())
-							As you don't have a vagina, you're unable to get a breeding demonstration...
+							Так как у тебя нет влагалища, ты не можешь получить демонстрацию осеменения...
 						#ELSE
-							As you're unable to access your pussy, you're unable to get a breeding demonstration...
+							Так как ты не можешь дотянуться до своей киски, ты не можешь получить демонстрацию размножения...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -216,10 +216,10 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated) && pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Breeding demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация осеменения]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] breeding skills.
-						<br/>[style.italicsSex(This will lead into [npc.name] fucking your pussy.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировал(а) тебе свои навыки [npc.her] в размножении.
+						<br/>[style.italicsSex(Это приведет к тому, что [npc.name] оттрахает твою киску.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -275,12 +275,12 @@
 					<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated) || !pc.isAbleToAccessCoverableArea(CA_ANUS, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[13]]></index>
-					<responseTitle><![CDATA[Anal demo]]></responseTitle>
+					<responseTitle><![CDATA[Анальная демо-сцена]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want another one...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще одну, придется прийти завтра...
 						#ELSE
-							As you're unable to access your asshole, you're unable to get an anal demonstration...
+							Так как ты не можешь дотянуться до своей задницы, ты не можешь получить анальную демонстрацию...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -289,10 +289,10 @@
 					<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_2 && flags.hasFlag(FLAG_slaverAlleyCafe2Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe2DailyDemonstrated) && pc.isAbleToAccessCoverableArea(CA_ANUS, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[13]]></index>
-					<responseTitle><![CDATA[Anal demo]]></responseTitle>
+					<responseTitle><![CDATA[Анальная демо-сцена]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] ass-fucking skills.
-						<br/>[style.italicsSex(This will lead into [npc.name] fucking your ass.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировал(а) тебе свои навыки [npc.her] в трахании в задницу.
+						<br/>[style.italicsSex(Это приведет к тому, что [npc.name] оттрахает твою задницу.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -330,8 +330,8 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && !flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA['Demonstration']]></responseTitle>
-					<responseTooltip><![CDATA[Ask the waiter what this 'demonstration' involves.]]></responseTooltip>
+					<responseTitle><![CDATA['Демонстрация']]></responseTitle>
+					<responseTooltip><![CDATA[Спросить у официанта, что именно подразумевается под этой «демонстрацией».]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_slaver_alley_cafe_demonstration_explanation]]></nextDialogue>
 				</response>
 				<!-- Fuck ass: -->
@@ -339,16 +339,16 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated) && (!game.isAnalContentEnabled() || flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated) || !pc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Buttslut demo]]></responseTitle>
+					<responseTitle><![CDATA[Демо-сцена с задницей]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want another one...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще одну, придется прийти завтра...
 						#ELSEIF(!game.isAnalContentEnabled())
-							This content involves anal sex, and as you have anal content disabled in your settings, this action is unavailable.
+							Этот контент включает анальный секс, но так как в настройках анальный секс отключен, это действие недоступно.
 						#ELSEIF(!pc.hasPenis())
-							As you don't have a penis, you're unable to get a buttslut demonstration...
+							Так как у тебя нет пениса, ты не можешь получить демо-сцену с задницей...
 						#ELSE
-							As you're unable to access your penis, you're unable to get a buttslut demonstration...
+							Так как ты не можешь дотянуться до своего пениса, ты не можешь получить демо-сцену с задницей...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -357,7 +357,7 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated) && game.isAnalContentEnabled() && !flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated) && pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Buttslut demo]]></responseTitle>
+					<responseTitle><![CDATA[Демо-сцена с задницей]]></responseTitle>
 					<responseTooltip><![CDATA[
 						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] buttslut skills.
 						<br/>[style.italicsSex(This will lead into you fucking [npc.namePos] ass.)]
@@ -398,14 +398,14 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated) && (!game.isAnalContentEnabled() || flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated) || !pc.isAbleToAccessCoverableArea(CA_ANUS, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Anilingus demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация анилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want some more...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще, придется прийти завтра...
 						#ELSEIF(!game.isAnalContentEnabled())
-							This content involves anal sex, and as you have anal content disabled in your settings, this action is unavailable.
+							Этот контент включает анальный секс, но так как в настройках анальный секс отключен, это действие недоступно.
 						#ELSE
-							As you're unable to access your asshole, you're unable to get an anilingus demonstration...
+							Поскольку у тебя нет доступа к своему анусу, ты не можешь получить демонстрацию анилингуса...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -414,7 +414,7 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated) && game.isAnalContentEnabled() && !flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated) && pc.isAbleToAccessCoverableArea(CA_ANUS, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Anilingus demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация анилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
 						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] anilingus skills.
 						<br/>[style.italicsSex(This will lead into [npc.name] giving you a rimjob.)]
@@ -455,14 +455,14 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated) && (!game.isAnalContentEnabled() || flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated) || !pc.isAbleToAccessCoverableArea(CA_MOUTH, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[13]]></index>
-					<responseTitle><![CDATA[Ass tasting demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация вкуса задницы]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want some more...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще, придется прийти завтра...
 						#ELSEIF(!game.isAnalContentEnabled())
-							This content involves anal sex, and as you have anal content disabled in your settings, this action is unavailable.
+							Этот контент включает анальный секс, но так как в настройках анальный секс отключен, это действие недоступно.
 						#ELSE
-							As you're unable to access your mouth, you're unable to get an anal taste demonstration...
+							Поскольку у тебя нет доступа к своему рту, ты не можешь получить демонстрацию вкуса ануса...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -471,10 +471,10 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_3 && flags.hasFlag(FLAG_slaverAlleyCafe3Demonstrated) && game.isAnalContentEnabled() && !flags.hasFlag(FLAG_slaverAlleyCafe3DailyDemonstrated) && pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[13]]></index>
-					<responseTitle><![CDATA[Ass tasting demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация вкуса задницы]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of how good [npc.her] ass tastes.
-						<br/>[style.italicsSex(This will lead into you giving [npc.name] a rimjob.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировала, насколько хорош на вкус [npc.her] анус.
+						<br/>[style.italicsSex(Это приведет к тому, что ты сделаешь [npc.name] римджоб.)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -512,8 +512,8 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_4 && !flags.hasFlag(FLAG_slaverAlleyCafe4Demonstrated)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA['Demonstration']]></responseTitle>
-					<responseTooltip><![CDATA[Ask the waitress what this 'demonstration' involves.]]></responseTooltip>
+					<responseTitle><![CDATA['Демонстрация']]></responseTitle>
+					<responseTooltip><![CDATA[Спросить у официантки, что именно подразумевается под этой «демонстрацией».]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_dominion_slaver_alley_cafe_demonstration_explanation]]></nextDialogue>
 				</response>
 				<!-- Fuck her: -->
@@ -521,14 +521,14 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_4 && flags.hasFlag(FLAG_slaverAlleyCafe4Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe4DailyDemonstrated) || !pc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Pussy demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация киски]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe4DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want another one...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще одну, придется прийти завтра...
 						#ELSEIF(!pc.hasPenis())
-							As you don't have a penis, you're unable to get a pussy demonstration...
+							Так как у тебя нет пениса, ты не можешь получить демонстрацию киски...
 						#ELSE
-							As you're unable to access your penis, you're unable to get a pussy demonstration...
+							Так как у тебя нет доступа к пенису, ты не можешь получить демонстрацию киски...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -537,7 +537,7 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_4 && flags.hasFlag(FLAG_slaverAlleyCafe4Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe4DailyDemonstrated) && pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Pussy demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация киски]]></responseTitle>
 					<responseTooltip><![CDATA[
 						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of [npc.her] pussy skills.
 						<br/>[style.italicsSex(This will lead into you fucking [npc.namePos] pussy.)]
@@ -578,12 +578,12 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_4 && flags.hasFlag(FLAG_slaverAlleyCafe4Demonstrated) && (flags.hasFlag(FLAG_slaverAlleyCafe4DailyDemonstrated) || !pc.isAbleToAccessCoverableArea(CA_MOUTH, true))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Cunnilingus demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация куннилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_slaverAlleyCafe4DailyDemonstrated))
-							You've already received a demonstration from [npc.name] today. You'll have to come back tomorrow if you want some more...
+							Ты уже получал демонстрацию от [npc.name] сегодня. Если хочешь еще, придется прийти завтра...
 						#ELSE
-							As you're unable to access your mouth, you're unable to get a cunnilingus demonstration...
+							Так как у тебя нет доступа к рту, ты не можешь получить демонстрацию куннилингуса...
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -592,10 +592,10 @@
 					<availabilityConditional><![CDATA[[#pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE_4 && flags.hasFlag(FLAG_slaverAlleyCafe4Demonstrated) && !flags.hasFlag(FLAG_slaverAlleyCafe4DailyDemonstrated) && pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Cunnilingus demo]]></responseTitle>
+					<responseTitle><![CDATA[Демонстрация куннилингуса]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell [npc.name] that you want [npc.herHim] to give you a demonstration of how much [npc.she] loves to receive cunnilingus.
-						<br/>[style.italicsSex(This will lead into you eating [npc.name] out.)]
+						Скажи [npc.name], что хочешь, чтобы [npc.herHim] продемонстрировала, как сильно [npc.she] любит куннилингус.
+						<br/>[style.italicsSex(Это приведет к тому, что ты начнешь посасывать [npc.name].)]
 					]]></responseTooltip>
 					<nextDialogue/>
 					<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -652,8 +652,8 @@
 	
     <scene id ="after_sex">
         <author><![CDATA[Innoxia]]></author>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Having given you an orgasm, [npc.name] smiles and tells you that the demonstration is over...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Доведя тебя до оргазма, [npc.name] улыбается и говорит, что демонстрация окончена...]]></tooltip>
         <preParsingEffects><![CDATA[
 			#IF(pc.getLocationPlaceType()==PLACE_TYPE_SLAVER_ALLEY_CAFE)
 				[#flags.setFlag(FLAG_slaverAlleyCafe1DailyDemonstrated, true)]
@@ -675,8 +675,8 @@
                 <availabilityConditional><![CDATA[true]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Continue]]></responseTitle>
-                <responseTooltip><![CDATA[Having had your fun, you return to your table.]]></responseTooltip>
+                <responseTitle><![CDATA[Продолжить]]></responseTitle>
+                <responseTooltip><![CDATA[Насладившись, ты возвращаешься к своему столику.]]></responseTooltip>
                 <nextDialogue><![CDATA[MARKET_STALL_CAFE_INTERIOR_NO_CONTENT]]></nextDialogue>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
                 <effects><![CDATA[

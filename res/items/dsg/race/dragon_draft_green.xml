@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the bottle reads 'Bottled by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[Снизу на бутылке видна едва заметная надпись: «Разлито компанией DSG Foodstuffs LLC»]]></authorTag>
 		
 		<value>500</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Green Dragon Draft]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Green Dragon Drafts]]></namePlural>
-		<description><![CDATA[The recipe for this mysterious liquid and how it has maintained its carbonation for so long are both unknown. Even the dragons for whom this beverage was named after have mostly forgotten. Those who have tasted it have described it as tasting vaguely of prickly pears.]]></description> 
+		<name><![CDATA[Зелёный драконий эль]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Зелёные драконьи эли]]></namePlural>
+		<description><![CDATA[Ни рецепт этой таинственной жидкости, ни секрет того, как ей удается так долго сохранять газацию, никому не известны. Даже драконы, в честь которых назван напиток, почти всё забыли. Те же, кто пробовал его, описывают вкус как отдаленно напоминающий колючую грушу.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -30,8 +30,8 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 25% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldGood(Restores)] 35% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 25% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 35% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -48,10 +48,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After opening it, [npc.name] [npc.verb(bring)] the bottle of Green Dragon Draft [npc.her] [npc.mouth]. The smell of fresh prickly pears punctuated by carbonation rises from the opening, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the tingly liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		После того как бутылка открыта, [npc.name] [npc.verb(подносит)] бутылку зелёного драконьего эля [npc.her] [npc.mouth]. Из горлышка бьет аромат свежей колючей груши с резкими пузырьками газа, и когда [npc.she] [npc.verb(закидывает)] [npc.her] голову назад и [npc.verb(начинает)] пить покалывающую жидкость, [npc.she] [npc.verb(чувствует)] невероятную свежесть.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After opening it, [npc.name] [npc.verb(bring)] the can of Green Dragon Draft up to [npc2.namePos] waiting [npc2.lips]. The smell of fresh prickly pears punctuated by carbonation rises from the opening, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the tingly liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		После того как банка открыта, [npc.name] [npc.verb(подносит)] банку зелёного драконьего эля к ожидающей [npc2.namePos] [npc2.lips]. Из открытой банки бьет аромат свежей колючей груши с резкими пузырьками газа, и когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову назад и [npc2.verb(начинает)] пить покалывающую жидкость, [npc.she] [npc.verb(чувствует)] невероятную свежесть.
 		]]></otherUse>
 	</useDescriptions>
 

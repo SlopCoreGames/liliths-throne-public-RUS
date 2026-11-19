@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>40</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Fruit Bat's Salad]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Fruit Bat's Salad]]></namePlural>
-		<description><![CDATA[A little plastic pot, containing a delicious-looking fruit salad. Printed into the film lid, there's a little picture of a bat-girl sitting cross-legged as she eats her way through a mountain of fruit.]]></description> 
+		<name><![CDATA[Салат «Летучая мышь»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Салат «Летучая мышь»]]></namePlural>
+		<description><![CDATA[Маленький пластиковый контейнер с аппетитным фруктовым салатом. На защитной пленке напечатано изображение девочки-летучей мыши, которая сидит, скрестив ноги, и уплетает гору фруктов.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(2)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel [npc.her] arcane power increasing...
+				[npc.Name] [npc.verb(start)] чтобы почувствовать, как растет [npc.her] аркана...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 2)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] off the film lid to the pot of Fruit Bat's Salad, before starting to eat the fruit contained within. The slices of orange, mango, and strawberry are all absolutely delicious, and it only takes [npc.herHim] a moment to finish off the entire pot.
+		[npc.Name] [npc.verb(peel)] защитную пленку с контейнера с салатом «Летучая мышь», а затем принимаешься поедать фрукты. Ломтики апельсина, манго и клубники просто божественны, и [npc.herHim] требуется всего лишь мгновение, чтобы опустошить весь контейнер.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] off the film lid to the pot of Fruit Bat's Salad, before presenting it to [npc2.name] and getting [npc2.herHim] to start eating the fruit contained within. The slices of orange, mango, and strawberry are all absolutely delicious, and it only takes [npc2.name] a moment to finish off the entire pot.
+		[npc.Name] [npc.verb(peel)] защитную пленку с контейнера с салатом «Летучая мышь», а затем подносишь его к [npc2.name], заставляя [npc2.herHim] начать поедать фрукты. Ломтики апельсина, манго и клубники просто божественны, и [npc2.name] требуется всего лишь мгновение, чтобы опустошить весь контейнер.
 		]]></otherUse>
 	</useDescriptions>
 

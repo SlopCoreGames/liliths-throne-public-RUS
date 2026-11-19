@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA['MFD by DSG Novelty Co.' is printed around one of the sphere's poles.]]></authorTag>
+		<authorTag><![CDATA[Вокруг одного из полюсов сферы напечатано: «Изготовлено компанией DSG Novelty Co.»]]></authorTag>
 		
 		<value>1000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Mystical Orb of Fate]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Mystical Orbs of Fate]]></namePlural>
-		<description><![CDATA[Supposedly a powerful arcane artefact capable of seeing into the future, it is actually just a novelty toy. Inside its spherical plastic shell, an icosahedral die floats in alcohol. The small window allows the wielder to view a random answer inscribed on the die as it floats up.]]></description> 
+		<name><![CDATA[Мистический шар судьбы]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Мистические шары судьбы]]></namePlural>
+		<description><![CDATA[Предположительно, это мощный арканный артефакт, способный заглядывать в будущее, но на деле это всего лишь забавная игрушка. Внутри пластиковой сферы в алкоголе плавает двадцатигранный кубик. Через маленькое окошко владелец может увидеть случайный ответ, выгравированный на кубике, когда тот всплывает на поверхность.]]></description> 
 		
 		<useDescriptor>ponder</useDescriptor>
 		
@@ -25,12 +25,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Answers a yes-or-no question.]]></line>
+			<line><![CDATA[Отвечает на вопросы, требующие ответа «да» или «нет».]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			A blue triangle floats up into view. Upon its surface, the inscription reads: <i>"[style.random(Certainly|Decidedly|No doubt|Definitely|Count on it|I see it is so|Most likely|A high chance|Yes|Signs are good|Too horny, try again|Try again later|Answer delayed|Uncertain|Masturbate and try again|Doubtful|No|Don't rely on it|Sources say no|Bad signs)]."</i>
+			В поле зрения всплывает синий треугольник. На его поверхности читается надпись: <i>"[style.random(Определенно|Бесспорно|Без сомнений|Наверняка|Можешь на это рассчитывать|Вижу, что так и есть|Весьма вероятно|Высокий шанс|Да|Знаки благоприятны|Слишком возбужден, попробуй снова|Попробуй позже|Ответ задерживается|Неопределенно|Подрочи и попробуй снова|Сомнительно|Нет|Не полагайся на это|Источники говорят «нет»|Плохие знаки)]."</i>
 		</p>
 		]]></applyEffects>
 		
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] gingerly [npc.verb(shake)] the orb before peering into its murky depths...
+		[npc.Name] осторожно [npc.verb(shake)] шар, прежде чем вглядеться в его мутные глубины...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(shake)] the orb before turning the window on it towards [npc2.name] so that [npc2.she] can peer into its murky depths...
+		[npc.Name] [npc.verb(shake)] шар, после чего поворачивает окошко к [npc2.name], чтобы [npc2.she] могла вглядеться в его мутные глубины...
 		]]></otherUse>
 	</useDescriptions>
 

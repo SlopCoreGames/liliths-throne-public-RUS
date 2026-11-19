@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA['Printed by DSG Stationery Co.' is lightly embossed on the back.]]></authorTag>
+		<authorTag><![CDATA[На обороте едва заметно вытиснено: «Напечатано в DSG Stationery Co.»]]></authorTag>
 		
 		<value>100</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[HappyRat Gold+ discount card]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[HappyRat Gold+ discount cards]]></namePlural>
-		<description><![CDATA[A plastic card, bearing a golden, holographic icon of a smiling rat's face. The writing on the front identifies it as a 'HappyRat Gold+ discount card', which can be used at 'any Hazmat Rat vending machine'.]]></description> 
+		<name><![CDATA[Золотая дисконтная карта HappyRat+]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Золотые дисконтные карты HappyRat+]]></namePlural>
+		<description><![CDATA[Пластиковая карта с золотистой голографической иконкой улыбающейся мордочки крысы. Надпись на лицевой стороне гласит: «Золотая дисконтная карта HappyRat+», которую можно использовать в «любом торговом автомате Hazmat Rat».]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -25,12 +25,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Provides a [style.colourExcellent(50% discount)] at all [style.colourGreen(Hazmat Rat vending machines)]]]></line>
+			<line><![CDATA[Дает [style.colourExcellent(скидку 50%)] во всех [style.colourGreen(торговых автоматах Hazmat Rat)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			This plastic card is the same size and shape as a credit card, and bears a golden, holographic icon of a smiling rat's face. The writing on the front identifies it as a 'HappyRat Gold+ discount card', which can be used at 'any Hazmat Rat vending machine'.
+			Эта пластиковая карта по размеру и форме как кредитная, на ней красуется золотистая голографическая иконка улыбающейся мордочки крысы. Надпись на лицевой стороне гласит: «Золотая дисконтная карта HappyRat+», которую можно использовать в «любом торговом автомате Hazmat Rat».
 		</p>
 		]]></applyEffects>
 		
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the HappyRat card...
+		[npc.Name] [npc.verb(внимательно рассмотреть)] карту HappyRat...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] HappyRat card to [npc2.name], who is duly impressed by [npc.her] possession of it...
+		[npc.Name] [npc.verb(хвастливо показать)] [npc.her] карту HappyRat перед [npc2.name], который/ая всерьез впечатлен(а) тем, что у [npc.her] есть такая штука...
 		]]></otherUse>
 	</useDescriptions>
 

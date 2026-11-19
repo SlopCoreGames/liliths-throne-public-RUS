@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>100000000</value> 
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[Inno-chan's gift]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Inno-chan's gifts]]></namePlural>
-		<description><![CDATA[This is no ordinary bottle of wine, as it turns anyone who drinks it into a youko! Additional consumption will increase the number of Youko tails the drinker has.<br/>[style.italicsMinorGood(While this is a debug-only item, it should be safe to use anywhere.)]]]></description> 
+		<name><![CDATA[Подарок Инно-тян]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Подарки Инно-тян]]></namePlural>
+		<description><![CDATA[Это не просто бутылка вина: любой, кто его выпьет, превращается в ёко! Каждое последующее употребление увеличивает количество хвостов у выпившего.<br/>[style.italicsMinorGood(Хотя это предмет только для отладки, его можно безопасно использовать где угодно.)]]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,21 +28,21 @@
 		<enchantmentEffectId/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldBad(Does not affect unique characters or dolls)]]]></line>
-			<line><![CDATA[[style.boldTfGeneric(Transforms)] non-youko into [style.boldFox(youko)]]]></line>
-			<line><![CDATA[[style.boldTfGeneric(Grants)] youko an extra tail]]></line>
+			<line><![CDATA[[style.boldBad(Не влияет на уникальных персонажей или кукол)]]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Превращает)] не-ёко в [style.boldFox(ёко)]]]></line>
+			<line><![CDATA[[style.boldTfGeneric(Дарует)] ёко дополнительный хвост]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p style='text-align:center'>
 			#IF(npc.isDoll())
-				[style.italicsDisabled(This item does not work on dolls...)]
+				[style.italicsDisabled(Этот предмет не работает на куклах...)]
 			#ELSEIF(!npc.isPlayer() && npc.isUnique() && (!npc.isSlave() || npc.getOwner().isPlayer()))
-				[style.italicsDisabled(This item does not work on non-slave unique characters...)]
+				[style.italicsDisabled(Этот предмет не работает на уникальных персонажах, не являющихся рабынями...)]
 			#ELSEIF(npc.getSubspecies()!=SUBSPECIES_FOX_ASCENDANT && npc.getSubspecies()!=SUBSPECIES_FOX_ASCENDANT_ARCTIC && npc.getSubspecies()!=SUBSPECIES_FOX_ASCENDANT_FENNEC)
 				[##game.getCharacterUtils().reassignBody(npc, npc.getBody(), npc.getGender(), SUBSPECIES_FOX_ASCENDANT, RACE_STAGE_PARTIAL_FULL, true)]
 				[#npc.setTailCount(1, true)]
-				[style.italicsFox([npc.NameIsFull] now [npc.a_race]!)]
+				[style.italicsFox([npc.NameIsFull] теперь [npc.a_race]!)]
 			#ELSE
 				[#npc.incrementTailCount(1, true)]
 			#ENDIF
@@ -57,11 +57,9 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Opening the bottle of Inno-chan's gift, [npc.name] [npc.verb(tilt)] [npc.her] head back and [npc.verb(bring)] it up to [npc.her] waiting [npc.lips]. The heady fragrance of rich red wine wafts from the neck of the newly opened bottle, which is soon joined by a rich, sweet taste that lingers on [npc.namePos] [npc.tongue] well after [npc.sheHas] had [npc.her] fill.
+		Откупорив бутылку с подарком Инно-тян, [npc.name] [npc.verb(закидывает)] [npc.her] голову назад и [npc.verb(подносит)] её к [npc.her], ожидающей [npc.lips]. Из горлышка только что открытой бутылки струится пьянящий аромат насыщенного красного вина, за которым следует густой сладкий вкус, долго не покидающий [npc.namePos] [npc.tongue] даже спустя долгое время после того, как [npc.sheHas] успела [npc.her] наполнить.
 		]]></selfUse>
-		<otherUse><![CDATA[
-		Opening the bottle of Inno-chan's gift, [npc.name] [npc.verb(bring)] it up to [npc2.namePos] waiting [npc2.lips]. The heady fragrance of rich red wine wafts from the neck of the newly opened bottle, which is soon joined by a rich, sweet taste that lingers on [npc2.namePos] [npc2.tongue] well after [npc2.sheHas] had [npc2.her] fill.
-		]]></otherUse>
+		<otherUse><![CDATA[Откупорив бутылку, подарок Инно-тян, [npc.name] [npc.verb(bring)] её к [npc2.namePos], ожидающей [npc2.lips]. Из горлышка только что открытой бутылки доносится пьянящий аромат насыщенного красного вина, а вскоре на [npc2.namePos] [npc2.tongue] разливается густой сладкий вкус, который остается еще долго после того, как [npc2.sheHas] успела [npc2.her] наполнить.]]></otherUse>
 	</useDescriptions>
 
 	

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>0</value> 
 		<determiner><![CDATA[a collection of]]></determiner>
-		<name><![CDATA[clothing keys]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[clothing keys]]></namePlural>
-		<description><![CDATA[A collection of small keys, each of which unlocks an item of clothing...]]></description> 
+		<name><![CDATA[ключи от одежды]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[ключи от одежды]]></namePlural>
+		<description><![CDATA[Коллекция маленьких ключей, каждый из которых открывает определенный предмет одежды...]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Tracks what clothing keys you currently own]]></line>
+			<line><![CDATA[Отслеживает ключи от одежды, которыми ты владеешь в данный момент]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			These are the keys that you currently own which allow you to unlock sealed items of clothing without having to pay the essence cost of removal:
+			Это ключи, которыми ты владеешь сейчас. Они позволяют открывать запечатанную одежду, не тратя эссенцию на её снятие:
 			<br/>
 			[#pc.getFormattedUnlockKeys()]
 		</p>
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at [npc.her] keys...
+		[npc.Name] [npc.verb(take)] внимательнее рассмотреть ключи [npc.her]...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] keys to [npc2.name]...
+		[npc.Name] [npc.verb(show)] ключи [npc.her] перед [npc2.name]...
 		]]></otherUse>
 	</useDescriptions>
 

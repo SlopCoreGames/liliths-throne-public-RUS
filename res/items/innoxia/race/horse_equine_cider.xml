@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>60</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Equine Cider]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Equine Ciders]]></namePlural>
-		<description><![CDATA[The thick glass bottle of 'Equine Cider' appears to contain, much as its name would suggest, a generous helping of some sort of alcoholic cider. On the label, there's an incredibly lewd illustration of a horse-boy slamming his massive cock deep into a girl's eager pussy.]]></description> 
+		<name><![CDATA[Конский сидр]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Конские сидры]]></namePlural>
+		<description><![CDATA[Толстостенная стеклянная бутылка «Конского сидра» содержит, как и следует из названия, щедрую порцию какого-то алкогольного сидра. На этикетке красуется невероятно похотливая иллюстрация: жеребец-мальчик с силой вколачивает свой массивный член в жадную киску девушки.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,16 +28,16 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
-			<line><![CDATA[[style.boldMinorBad(Adds)] 8% to [style.boldAlcohol(intoxication level)]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
+			<line><![CDATA[[style.boldMinorBad(Adds)] 8% к [style.boldAlcohol(intoxication level)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 			[#npc.incrementAlcoholLevel(0.08)]
@@ -55,10 +55,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off the bottle of Equine Cider, before tilting [npc.her] head back and gulping down the golden liquid. Quickly finishing off the entire bottle, [npc.name] [npc.verb(notice)] a faint, musky dryness permeating through the sweet liquid, which lingers for some time as a slightly unpleasant aftertaste.
+		[npc.Name] [npc.verb(pop)] откупоривает бутылку конского сидра, после чего запрокидывает [npc.her] голову и жадно глотает золотистую жидкость. Быстро осушив всю бутылку, [npc.name] [npc.verb(notice)] едва уловимую мускусную сухость, пропитывающую сладкий напиток, которая еще долго оставляет слегка неприятное послевкусие.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off the bottle of Equine Cider, before bringing it up to [npc2.namePos] [npc2.lips] and making [npc2.herHim] gulp down the golden liquid. Quickly finishing off the entire bottle, [npc2.name] [npc2.verb(notice)] a faint, musky dryness permeating through the sweet liquid, which lingers for some time as a slightly unpleasant aftertaste.
+		[npc.Name] [npc.verb(pop)] откупоривает бутылку конского сидра, подносит её к [npc2.namePos] [npc2.lips] и заставляет [npc2.herHim] глотать золотистую жидкость. Быстро осушив всю бутылку, [npc2.name] [npc2.verb(notice)] едва уловимую мускусную сухость, пропитывающую сладкий напиток, которая еще долго оставляет слегка неприятное послевкусие.
 		]]></otherUse>
 	</useDescriptions>
 

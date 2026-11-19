@@ -7,10 +7,10 @@
 	
 	<equipWeighting>10</equipWeighting>
 	
-	<name><![CDATA[Tentacle-grab]]></name>
+	<name><![CDATA[Захват щупальцами]]></name>
 	
 	<description><![CDATA[
-		Use [npc.her] [npc.tentacles] to constrict [npc.her] target.
+		Используй [npc.her] [npc.tentacles], чтобы сдавить [npc.her] цель.
 	]]></description>
 	
 	<damageType><![CDATA[
@@ -54,7 +54,7 @@
 	</availabilityCondition>
 	
 	<availabilityDescription><![CDATA[
-		Available to characters who have tentacles.
+		Доступно персонажам, обладающим щупальцами.
 	]]></availabilityDescription>
 	
 	<!-- Once started to constrict a target, the AI will become more and more interested in finishing the process off. -->
@@ -75,38 +75,37 @@
 	]]></criticalCondition>
 	
 	<criticalDescription><![CDATA[
-		Cannot critically hit.
+		Не может нанести критический удар.
 	]]></criticalDescription>
 	
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] strong tentacles to constrict [npc2.name].
+		Используй [npc.her] сильных щупалец, чтобы сдавить [npc2.name].
 	]]></movePredictionDescriptionWithTarget>
 	
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] strong tentacles to constrict [npc.her] target.
+		Используй [npc.her] сильных щупалец, чтобы сдавить [npc.her] цель.
 	]]></movePredictionDescriptionNoTarget>
 	
 	<performMove>
 		<execute><![CDATA[
-			[npc.Name] [npc.verb(lurch)] forwards and [npc.verb(coil)] [npc.her] strong tentacles around [npc2.name]!
+			[npc.Name] [npc.verb(lurch)] вперед и [npc.verb(coil)] [npc.her] сильных щупалец вокруг [npc2.name]!
 			#IF(npc2.hasStatusEffect(SE_TENTACLE_RESTRAIN_3))
 				[##npc2.setHealth(0)]
-				<br/>[style.italicsTerrible([npc2.NameIsFull] now totally constricted by [npc.namePos] tentacles, and as such [npc2.is] completely defeated!)]
+				<br/>[style.italicsTerrible([npc2.NameIsFull] теперь полностью скован(а) [npc.namePos] щупальцами, и в результате [npc2.is] окончательно повержен(а)!)]
 			#ELSEIF(npc2.hasStatusEffect(SE_TENTACLE_RESTRAIN_2))
 				[##npc2.removeStatusEffectCombat(SE_TENTACLE_RESTRAIN_2)]
 				[##npc2.addStatusEffect(SE_TENTACLE_RESTRAIN_3, 10)]
-				<br/>[style.italicsTerrible([npc2.NameIsFull] almost totally constricted by [npc.namePos] tentacles, and as such [npc2.is] near to being completely defeated!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] tentacle-grabbed again, [npc2.she] will be instantly defeated!)]
+				<br/>[style.italicsTerrible([npc2.NameIsFull] почти полностью скован(а) [npc.namePos] щупальцами, и в результате [npc2.is] близок(за) к полному поражению!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] снова [npc2.verb(get)] захвачен(а) щупальцами, [npc2.she] будет мгновенно повержен(а)!)]
 			#ELSEIF(npc2.hasStatusEffect(SE_TENTACLE_RESTRAIN_1))
 				[##npc2.removeStatusEffectCombat(SE_TENTACLE_RESTRAIN_1)]
 				[##npc2.addStatusEffect(SE_TENTACLE_RESTRAIN_2, 10)]
-				<br/>[style.italicsBad([npc2.NameIsFull] seriously constricted by [npc.namePos] tentacles, and as such [npc2.is] struggling to fight back!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] tentacle-grabbed again, this effect will become extremely serious!)]
+				<br/>[style.italicsBad([npc2.NameIsFull] сильно скован(а) [npc.namePos] щупальцами, и в результате [npc2.is] изо всех сил пытается сопротивляться!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] снова [npc2.verb(get)] захвачен(а) щупальцами, этот эффект станет крайне серьезным!)]
 			#ELSE
-				[##npc2.addStatusEffect(SE_TENTACLE_RESTRAIN_1, 10)]
-				<br/>[style.italicsBad([npc2.NameIsFull] partially constricted by [npc.namePos] tentacles, and as such [npc2.her] ability to fight back is impaired!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] tentacle-grabbed again, this effect will become more serious!)]
-			#ENDIF
+[##npc2.addStatusEffect(SE_TENTACLE_RESTRAIN_1, 10)]
+<br/>[style.italicsBad([npc2.NameIsFull] частично скована [npc.namePos] щупальцами, из-за чего [npc2.her] становится труднее сопротивляться!)]
+<br/>[style.italicsTerrible(Если [npc2.name] [npc2.verb(get)] снова захватит [npc2.NameIsFull] щупальцами, этот эффект усилится!)]			#ENDIF
 		]]></execute>
 		<critDescription><![CDATA[
 			N/A

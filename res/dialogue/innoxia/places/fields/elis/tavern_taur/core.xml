@@ -35,8 +35,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Introduction]]></responseTitle>
-				<responseTooltip><![CDATA[Introduce yourself to the centaur.]]></responseTooltip>
+				<responseTitle><![CDATA[Знакомство]]></responseTitle>
+				<responseTooltip><![CDATA[Представиться кентавру.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_core_bar_intro_talk]]></nextDialogue>
 				<effects><![CDATA[
 					[#kheiron.setPlayerKnowsName(true)]
@@ -49,13 +49,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Small talk]]></responseTitle>
+				<responseTitle><![CDATA[Светская беседа]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_kheiron_smalltalk_complete))
-						You've already spent time making small talk with Kheiron today. You'll have to wait until tomorrow before you can repeat this.
+						Ты уже сегодня потратил время на пустую болтовню с Хироном. Чтобы повторить это, придется подождать до завтра.
 					#ELSE
-						Spend fifteen minutes talking to Kheiron about the weather, local news, and other such trivial topics.
-					#ENDIF
+						Потратить пятнадцать минут, обсуждая с Хироном погоду, местные новости и прочую всякую чепуху.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_kheiron_smalltalk_complete))
@@ -79,13 +78,11 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Lunette]]></responseTitle>
+				<responseTitle><![CDATA[Лунетт]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_lunette)
-						You're already asking Kheiron what he knows about Lunette!
-					#ELSE
-						Ask Kheiron what he knows about Lunette.
-					#ENDIF
+						Ты уже расспрашиваешь Хирона о том, что ему известно о Лунетт!					#ELSE
+						Спросить Хирона, что он знает о Лунетт.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_lunette)
@@ -102,13 +99,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[History]]></responseTitle>
+				<responseTitle><![CDATA[История]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_history)
-						You're already asking Kheiron about his history and how he came to own this tavern!
+						Ты уже расспрашиваешь Хирона о его прошлом и о том, как эта таверна досталась ему!
 					#ELSE
-						Ask Kheiron about his history and how he came to own this tavern.
-					#ENDIF
+						Спросить Хирона о его истории и о том, как он стал владельцем этой таверны.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_history)
@@ -123,13 +119,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(kheiron) && kheiron.isPlayerKnowsName() && flags.hasFlag(FLAG_innoxia_elis_market_fae_passionate)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Fae & Silvia]]></responseTitle>
+				<responseTitle><![CDATA[Фэй и Сильвия]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_fae_silvia)
-						You're already asking Kheiron if he knows Fae and Silvia and what he can tell you about them!
+						Ты уже спрашиваешь Хирона, знает ли он Фэй и Сильвию и что может о них рассказать!
 					#ELSE
-						Ask Kheiron if he knows Fae and Silvia and what he can tell you about them.
-					#ENDIF
+						Спросить Хирона, знает ли он Фэй и Сильвию и что он может о них поведать.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_fae_silvia)
@@ -144,12 +139,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(kheiron) && kheiron.isPlayerKnowsName() && flags.hasFlag(FLAG_innoxia_sterope_unlocked)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Sterope]]></responseTitle>
+				<responseTitle><![CDATA[Стеропа]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_fields_elis_tavern_taur_core_bar_talk_sterope)
-						You're already asking Kheiron if he knows Sterope and what he can tell you about her!
+						Ты уже спрашиваешь Хейрона, знает ли он Стеропу и что может о ней рассказать!
 					#ELSE
-						Ask Kheiron if he knows Sterope and what he can tell you about her.
+						Спроси Хейрона, знает ли он Стеропу и что может о ней рассказать.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -168,8 +163,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Barrels]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Kheiron if he has four large, spare barrels which could be sent to Oglix's tavern.]]></responseTooltip>
+				<responseTitle><![CDATA[Бочки]]></responseTitle>
+				<responseTooltip><![CDATA[Спроси Хейрона, нет ли у него четырех больших запасных бочек, которые можно было бы отправить в таверну Огликса.]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_core_bar_barrels</nextDialogue>
 				<effects/>
 			</response>
@@ -179,12 +174,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Golix]]></responseTitle>
+				<responseTitle><![CDATA[Голикс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_kheiron_talk_golix))
-						You've already asked Kheiron about his relationship with Golix today. It'd be best not to bring up the subject again until tomorrow at the earliest...
+						Ты уже спрашивал сегодня Хейрона об их отношениях с Голикс. Лучше не поднимать эту тему до завтрашнего дня, как минимум...
 					#ELSE
-						Ask Kheiron about his relationship with Oglix's elemental, Golix.
+						Спроси Хейрона об их отношениях с элементалем Огликса, Голикс.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
@@ -207,10 +202,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
-					Water (Free)
+					Вода (Бесплатно)
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Order a glass of water.
+					Заказать стакан воды.
 				]]></responseTooltip>
 				<nextDialogue stripContent="true">innoxia_places_fields_elis_tavern_taur_core_bar</nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -223,7 +218,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Orange juice (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Апельсиновый сок (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=20) Order a glass of carbonated orange juice. #ELSE You can't afford a glass of carbonated orange juice... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=20)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -237,7 +232,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Berry soda (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Ягодная газировка (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=20) Order a glass of berry-flavoured soda. #ELSE You can't afford a glass of berry-flavoured soda... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=20)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -251,7 +246,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Cola (#IF(pc.getMoney()>=25)[style.moneyFormat(25, span)]#ELSE[style.moneyFormatUncoloured(25, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Кола (#IF(pc.getMoney()>=25)[style.moneyFormat(25, span)]#ELSE[style.moneyFormatUncoloured(25, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=25) Order a glass of carbonated cola. #ELSE You can't afford a glass of carbonated cola... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=25)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -265,7 +260,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Coffee (#IF(pc.getMoney()>=30)[style.moneyFormat(30, span)]#ELSE[style.moneyFormatUncoloured(30, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Кофе (#IF(pc.getMoney()>=30)[style.moneyFormat(30, span)]#ELSE[style.moneyFormatUncoloured(30, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=30) Order a glass of cold-brew, black coffee. #ELSE You can't afford a glass of cold-brew, black coffee... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=30)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -279,7 +274,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Bread rolls (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Булочки (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50) Order a small basket of freshly-baked bread rolls from the 'starters & sides' menu. #ELSE You can't afford a small basket of freshly-baked bread rolls from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=50)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -293,7 +288,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Mixed nuts (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Смесь орехов (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50) Order a serving of mixed nuts from the 'starters & sides' menu. #ELSE You can't afford a serving of mixed nuts from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=50)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -307,7 +302,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Pâté and crackers (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Паштет с крекерами (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a serving of meat pâté and crackers from the 'starters & sides' menu. #ELSE You can't afford a serving of meat pâté and crackers from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -321,7 +316,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Honey bread (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Медовый хлеб (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a serving of honey bread from the dessert menu. #ELSE You can't afford a serving of honey bread from the dessert menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -335,7 +330,7 @@
 				<availabilityConditional><![CDATA[[#!game.getCharactersPresent().contains(kheiron)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Brownie (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Брауни (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a chocolate brownie from the dessert menu. #ELSE You can't afford a chocolate brownie from the dessert menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -352,10 +347,10 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
-					Water (Free)
+					Вода (Бесплатно)
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Order a glass of water.
+					Заказать стакан воды.
 				]]></responseTooltip>
 				<nextDialogue stripContent="true">innoxia_places_fields_elis_tavern_taur_core_bar</nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -367,7 +362,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Orange juice (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Апельсиновый сок (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=20) Order a glass of carbonated orange juice. #ELSE You can't afford a glass of carbonated orange juice... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=20)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -380,7 +375,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Berry soda (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Ягодная газировка (#IF(pc.getMoney()>=20)[style.moneyFormat(20, span)]#ELSE[style.moneyFormatUncoloured(20, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=20) Order a glass of berry-flavoured soda. #ELSE You can't afford a glass of berry-flavoured soda... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=20)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -393,7 +388,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Cola (#IF(pc.getMoney()>=25)[style.moneyFormat(25, span)]#ELSE[style.moneyFormatUncoloured(25, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Кола (#IF(pc.getMoney()>=25)[style.moneyFormat(25, span)]#ELSE[style.moneyFormatUncoloured(25, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=25) Order a glass of carbonated cola. #ELSE You can't afford a glass of carbonated cola... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=25)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -406,7 +401,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Coffee (#IF(pc.getMoney()>=30)[style.moneyFormat(30, span)]#ELSE[style.moneyFormatUncoloured(30, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Кофе (#IF(pc.getMoney()>=30)[style.moneyFormat(30, span)]#ELSE[style.moneyFormatUncoloured(30, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=30) Order a glass of cold-brew, black coffee. #ELSE You can't afford a glass of cold-brew, black coffee... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=30)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -420,7 +415,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Beer (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Пиво (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer. #ELSE You can't afford a pint of beer... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -433,7 +428,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Cider (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Сидр (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of cider. #ELSE You can't afford a pint of cider... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -446,7 +441,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Perry (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Перри (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of pear cider, which is commonly known as perry. #ELSE You can't afford a pint of pear cider... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -459,7 +454,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Red wine (#IF(pc.getMoney()>=60)[style.moneyFormat(60, span)]#ELSE[style.moneyFormatUncoloured(60, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Красное вино (#IF(pc.getMoney()>=60)[style.moneyFormat(60, span)]#ELSE[style.moneyFormatUncoloured(60, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=60) Order a glass of red wine. #ELSE You can't afford a glass of red wine... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=60)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -472,7 +467,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[White wine (#IF(pc.getMoney()>=60)[style.moneyFormat(60, span)]#ELSE[style.moneyFormatUncoloured(60, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Белое вино (#IF(pc.getMoney()>=60)[style.moneyFormat(60, span)]#ELSE[style.moneyFormatUncoloured(60, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=60) Order a glass of white wine. #ELSE You can't afford a glass of white wine... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=60)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -485,7 +480,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[11]]></index>
-				<responseTitle><![CDATA[Vodka (#IF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Водка (#IF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100) Order a glass of vodka. #ELSE You can't afford a glass of vodka... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=100)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -498,7 +493,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[12]]></index>
-				<responseTitle><![CDATA[Rum (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Ром (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a glass of rum. #ELSE You can't afford a glass of rum... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -511,7 +506,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[13]]></index>
-				<responseTitle><![CDATA[Whiskey (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Виски (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a glass of whiskey. #ELSE You can't afford a glass of whiskey... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -524,7 +519,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[14]]></index>
-				<responseTitle><![CDATA[Champagne (#IF(pc.getMoney()>=160)[style.moneyFormat(160, span)]#ELSE[style.moneyFormatUncoloured(160, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Шампанское (#IF(pc.getMoney()>=160)[style.moneyFormat(160, span)]#ELSE[style.moneyFormatUncoloured(160, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=160) Order a glass of champagne. #ELSE You can't afford a glass of champagne... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=160)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -540,7 +535,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Bread rolls (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Булочки (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50) Order a small basket of freshly-baked bread rolls from the 'starters & sides' menu. #ELSE You can't afford a small basket of freshly-baked bread rolls from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=50)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -553,7 +548,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Mixed nuts (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Смесь орехов (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50) Order a serving of mixed nuts from the 'starters & sides' menu. #ELSE You can't afford a serving of mixed nuts from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=50)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -566,7 +561,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Curly fries (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Картофель фри завитушками (#IF(pc.getMoney()>=50)[style.moneyFormat(50, span)]#ELSE[style.moneyFormatUncoloured(50, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=50) Order a serving of curly fries from the 'starters & sides' menu. #ELSE You can't afford a serving of curly fries from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=50)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -579,7 +574,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Shrimp cocktail (#IF(pc.getMoney()>=75)[style.moneyFormat(75, span)]#ELSE[style.moneyFormatUncoloured(75, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Коктейль из креветок (#IF(pc.getMoney()>=75)[style.moneyFormat(75, span)]#ELSE[style.moneyFormatUncoloured(75, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=75) Order a serving of shrimp cocktail from the 'starters & sides' menu. #ELSE You can't afford a serving of shrimp cocktail from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=75)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -592,7 +587,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Pâté and crackers (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Паштет с крекерами (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a serving of meat pâté and crackers from the 'starters & sides' menu. #ELSE You can't afford a serving of meat pâté and crackers from the 'starters & sides' menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -606,7 +601,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Fish & chips (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Рыба с картошкой (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a serving of fish and chips from the main menu. #ELSE You can't afford a serving of fish and chips from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -619,7 +614,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Sausages (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Сосиски (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a serving of high-quality sausages from the main menu. #ELSE You can't afford a serving of high-quality sausages from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -632,7 +627,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Burger (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Бургер (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a burger from the main menu. #ELSE You can't afford a burger from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -645,7 +640,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Chicken pie (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Куриный пирог (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Order a chicken pie from the main menu. #ELSE You can't afford a chicken pie from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=180)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -658,7 +653,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Steak (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Стейк (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Order a steak from the main menu. #ELSE You can't afford a steak from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=250)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -672,7 +667,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[11]]></index>
-				<responseTitle><![CDATA[Fruit salad (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Фруктовый салат (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a fruit salad from the dessert menu. #ELSE You can't afford a fruit salad from the dessert menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -685,7 +680,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[12]]></index>
-				<responseTitle><![CDATA[Honey bread (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Медовый хлеб (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a serving of honey bread from the dessert menu. #ELSE You can't afford a serving of honey bread from the dessert menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -698,7 +693,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[13]]></index>
-				<responseTitle><![CDATA[Berry trifle (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Ягодный трайфл (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a serving of berry trifle from the dessert menu. #ELSE You can't afford a serving of berry trifle from the dessert menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -711,7 +706,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[14]]></index>
-				<responseTitle><![CDATA[Brownie (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Брауни (#IF(pc.getMoney()>=80)[style.moneyFormat(80, span)]#ELSE[style.moneyFormatUncoloured(80, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=80) Order a chocolate brownie from the dessert menu. #ELSE You can't afford a chocolate brownie from the dessert menu... #ENDIF]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[#IF(pc.getMoney()>=80)innoxia_places_fields_elis_tavern_taur_core_bar#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -775,8 +770,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Good horsie]]></responseTitle>
-				<responseTooltip><![CDATA[Just as Golix said, Kheiron is refusing to cooperate, but perhaps the phrase she gave you to use will work...]]></responseTooltip>
+				<responseTitle><![CDATA[Хорошая лошадка]]></responseTitle>
+				<responseTooltip><![CDATA[Как и говорила Голикс, Хейрон отказывается сотрудничать, но, возможно, та фраза, которую она тебе дала, сработает...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_core_bar_barrels_end]]></nextDialogue>
 				<effects/>
 			</response>
@@ -793,8 +788,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Agree]]></responseTitle>
-				<responseTooltip><![CDATA[As you don't know the details about Kheiron's relationship with Golix, it's easy for you to agree to the centaur's terms.]]></responseTooltip>
+				<responseTitle><![CDATA[Согласиться]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку тебе неизвестны подробности отношений Хейрона с Голиксом, тебе легко согласиться на условия кентавра.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_core_bar_barrels_end_bar]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.setQuestProgress(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS, QUEST_OGLIX_BEER_BARRELS_2))]
@@ -833,8 +828,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Exit the tavern and head back out into the streets of Elis.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Выйти из таверны и вернуться на улицы Элиса.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_street"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -868,12 +863,12 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(fae)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fae & Silvia]]></responseTitle>
+				<responseTitle><![CDATA[Фэй и Сильвия]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-						Approach the table where Fae and Silvia are sitting and say hello.
+						Подойди к столу, за которым сидят Фэй и Сильвия, и поздоровайся.
 					#ELSE
-						You need to be able to access your mouth in order to have fun with Fae and Silvia...
+						Тебе нужно иметь доступ к своему рту, чтобы повеселиться с Фэй и Сильвией...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -909,8 +904,8 @@
 				<availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(sterope)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sterope]]></responseTitle>
-				<responseTooltip><![CDATA[Head on over to Sterope's table and say hello.]]></responseTooltip>
+				<responseTitle><![CDATA[Стеропа]]></responseTitle>
+				<responseTooltip><![CDATA[Направляйся к столу Стеропы и поздоровайся.]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_sterope_met_in_tavern))
 						innoxia_places_fields_elis_tavern_taur_sterope_start
@@ -940,8 +935,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[[pc.Step] back]]></responseTitle>
-				<responseTooltip><![CDATA[As the door is locked, you can't go any further...]]></responseTooltip>
+				<responseTitle><![CDATA[[pc.Step] назад]]></responseTitle>
+				<responseTooltip><![CDATA[Дверь заперта, так что дальше пройти не удается...]]></responseTooltip>
 				<nextDialogue>innoxia_places_fields_elis_tavern_taur_core_corridor</nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_taur', 'LOCKED_DOOR_STEP_BACK'))]
@@ -972,9 +967,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Enter the toilets.
+					Зайти в туалет.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_taur_core_toilets_interior]]></nextDialogue>
 			</response>
@@ -989,9 +984,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Exit the toilets and head back out into the shopping precinct.
+					Выйти из туалета и вернуться в торговый квартал.
 				]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_shops_street"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -1003,9 +998,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Toilet]]></responseTitle>
+				<responseTitle><![CDATA[Туалет]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use the toilet.
+					Сходить в туалет.
 				]]></responseTooltip>
 				<nextDialogue forceContinue="true" stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_taur_core_toilets_interior]]></nextDialogue>
 				<effects><![CDATA[
@@ -1015,10 +1010,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wash]]></responseTitle>
+				<responseTitle><![CDATA[Умыться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use the sinks to wash your [pc.hands] and face.
-					<br/>[style.italicsGood(This will clean all inventory slots associated with head and hand slots, as well as any clothing worn in these slots.)]
+					Умыться у раковины, вымыв [pc.hands] и лицо.
+					<br/>[style.italicsGood(Это очистит все слоты инвентаря, относящиеся к голове и рукам, а также всю одежду, надетую в эти слоты.)]
 				]]></responseTooltip>
 				<nextDialogue forceContinue="true" stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_taur_core_toilets_interior]]></nextDialogue>
 				<effects><![CDATA[

@@ -15,8 +15,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Find Meraxis]]></responseTitle>
-				<responseTooltip><![CDATA[Head over to The Red Dragon and tell Meraxis that an important meeting is about to begin.]]></responseTooltip>
+				<responseTitle><![CDATA[Найти Мераксиса]]></responseTitle>
+				<responseTooltip><![CDATA[Отправляйся в «Красного дракона» и скажи Мераксису, что скоро начнется важное собрание.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_find_meraxis]]></nextDialogue>
 			</response>
 		</responses>
@@ -35,8 +35,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wall's End]]></responseTitle>
-				<responseTooltip><![CDATA[Head over to Wall's End to see if Meraxis is there.]]></responseTooltip>
+				<responseTitle><![CDATA[Уэллс-Энд]]></responseTitle>
+				<responseTooltip><![CDATA[Отправляйся в Уоллс-Энд, чтобы проверить, нет ли там Мераксиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_walls_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -56,8 +56,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Approach]]></responseTitle>
-				<responseTooltip><![CDATA[You're going to have to interrupt Meraxis's lesson.]]></responseTooltip>
+				<responseTitle><![CDATA[Подойти]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе придется прервать урок Мераксиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_walls_end_continue]]></nextDialogue>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_meraxis_walls_end_fountain_scene_demons_present, false)]
@@ -76,19 +76,19 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Meeting]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Meraxis that there's an important meeting in the town hall and that there's no time for this.]]></responseTooltip>
+				<responseTitle><![CDATA[Встреча]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Мераксису, что в ратуше начинается важное собрание и времени на это нет.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_walls_end_no_time]]></nextDialogue>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Pose attempt]]></responseTitle>
+				<responseTitle><![CDATA[Попытка принять позу]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.hasTraitActivated(PERK_CHUUNI))
-						You don't need to 'attempt' to strike a pose! You're [pc.name]; the chosen one [pc.herself]!
+						Тебе не нужно «пытаться» принять позу! Ты же [pc.name]; избранная [pc.herself]!
 					#ELSE
-						Do your best to strike a heroic pose for Meraxis.
+						Сделай всё возможное, чтобы принять героическую позу перед Мераксисом.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -105,8 +105,8 @@
 				</requiredPerks>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Ultimate pose]]></responseTitle>
-				<responseTooltip><![CDATA[Show Meraxis and the crowd what a real ultimate pose looks like!]]></responseTooltip>
+				<responseTitle><![CDATA[Ультимативная поза]]></responseTitle>
+				<responseTooltip><![CDATA[Покажи Мераксису и толпе, как выглядит настоящая ультимативная поза!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_walls_end_chuuni]]></nextDialogue>
 			</response>
 		</responses>
@@ -126,8 +126,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Town hall]]></responseTitle>
-				<responseTooltip><![CDATA[Accompany Meraxis back to the town hall so that you can attend the meeting.]]></responseTooltip>
+				<responseTitle><![CDATA[Ратуша]]></responseTitle>
+				<responseTooltip><![CDATA[Проводи Мераксиса обратно в ратушу, чтобы ты мог(ла) присутствовать на собрании.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_return]]></nextDialogue>
 			</response>
 		</responses>
@@ -148,8 +148,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Town hall]]></responseTitle>
-				<responseTooltip><![CDATA[Accompany Meraxis back to the town hall so that you can attend the meeting.]]></responseTooltip>
+				<responseTitle><![CDATA[Ратуша]]></responseTitle>
+				<responseTooltip><![CDATA[Проводи Мераксиса обратно в ратушу, чтобы ты мог(ла) присутствовать на собрании.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_return]]></nextDialogue>
 			</response>
 		</responses>
@@ -170,8 +170,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Town hall]]></responseTitle>
-				<responseTooltip><![CDATA[Accompany Meraxis back to the town hall so that you can attend the meeting.]]></responseTooltip>
+				<responseTitle><![CDATA[Ратуша]]></responseTitle>
+				<responseTooltip><![CDATA[Проводи Мераксиса обратно в ратушу, чтобы ты мог(ла) присутствовать на собрании.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_return]]></nextDialogue>
 			</response>
 		</responses>
@@ -196,8 +196,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Begin meeting]]></responseTitle>
-				<responseTooltip><![CDATA[The meeting begins.]]></responseTooltip>
+				<responseTitle><![CDATA[Начать собрание]]></responseTitle>
+				<responseTooltip><![CDATA[Собрание начинается.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_meeting_start]]></nextDialogue>
 			</response>
 		</responses>
@@ -225,8 +225,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Weapons]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Hammer what can be done about the weapon shortage.]]></responseTooltip>
+				<responseTitle><![CDATA[Оружие]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Хаммера, что можно сделать с нехваткой оружия.]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_elis_defence_meeting_weapons))
 						innoxia_quests_main_elisDefenceMeeting_meeting_continuation
@@ -245,8 +245,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Spells]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Minotallys if she's powerful enough to shield the town from Lunette's spells.]]></responseTooltip>
+				<responseTitle><![CDATA[Заклинания]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Миноталис, хватит ли ей сил защитить город от заклинаний Лунетт.]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_elis_defence_meeting_spells))
 						innoxia_quests_main_elisDefenceMeeting_meeting_continuation
@@ -268,8 +268,8 @@
                 ]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Meraxis?]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Meraxis what she means by being able to solve both problems.]]></responseTooltip>
+				<responseTitle><![CDATA[Мераксис?]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Мераксис, что она имеет в виду под способностью решить обе проблемы.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_meeting_takahashi]]></nextDialogue>
 			</response>
 		</responses>
@@ -285,8 +285,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Youko]]></responseTitle>
-				<responseTooltip><![CDATA[Ask everyone what the problem with the youko is.]]></responseTooltip>
+				<responseTitle><![CDATA[Юко]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить всех, в чем именно заключается проблема с ёко.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_meeting_youko]]></nextDialogue>
 			</response>
 		</responses>
@@ -305,8 +305,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[No choice]]></responseTitle>
-				<responseTooltip><![CDATA[As dangerous as these youko may be, there's no other option but to go with Meraxis's plan.]]></responseTooltip>
+				<responseTitle><![CDATA[Выбора нет]]></responseTitle>
+				<responseTooltip><![CDATA[Какими бы опасными ни были эти ёко, другого выхода, кроме плана Мераксис, просто нет.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_meeting_final]]></nextDialogue>
 			</response>
 		</responses>
@@ -322,8 +322,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Leave the town hall with everyone else.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Покинуть ратушу вместе со всеми остальными.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_elisDefenceMeeting_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -349,8 +349,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Now that the meeting is over, you wonder where to go to next...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда собрание окончено, ты гадаешь, куда отправиться дальше...]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 			</response>
 		</responses>

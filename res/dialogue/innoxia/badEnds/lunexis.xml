@@ -2,7 +2,7 @@
 <dialogueNodes>
 	
 	<scene id="plaza_bad_end">
-		<title><![CDATA[[style.boldBadEnd(Bad End: Lunexis's Cock-sleeve)]]]></title>
+		<title><![CDATA[[style.boldBadEnd(Плохая концовка: Членник Лунексиса)]]]></title>
 		<content folderPath="txt/badEnds/lunexis">PLAZA_BAD_END</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -11,8 +11,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Palace]]></responseTitle>
-				<responseTooltip><![CDATA[The four of you are dragged into Themiscyra's palace...]]></responseTooltip>
+				<responseTitle><![CDATA[Дворец]]></responseTitle>
+				<responseTooltip><![CDATA[Вас четверых затаскивают во дворец Фемисциры...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_palace]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_innoxia_fields_themiscyra, PLACE_TYPE_innoxia_fields_themiscyra_palace)]
@@ -39,8 +39,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Trained]]></responseTitle>
-				<responseTooltip><![CDATA[Over the next few months, Lunexis has you trained into becoming her obedient cock-sleeve...]]></responseTooltip>
+				<responseTitle><![CDATA[Обученная]]></responseTitle>
+				<responseTooltip><![CDATA[В течение следующих нескольких месяцев Лунексис дрессирует тебя, превращая в её послушный членник...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_palace_trained]]></nextDialogue>
 			</response>
 		</responses>
@@ -55,7 +55,7 @@
 			[#lunexis.applyTraining(meraxis)]
 			[#lunexis.applyTraining(aurokaris)]
 		]]></preParsingEffects>
-		<title><![CDATA[[style.boldBadEnd(Bad End: Lunexis's Cock-sleeve)]]]></title>
+		<title><![CDATA[[style.boldBadEnd(Плохая концовка: Членник Лунексиса)]]]></title>
 		<content folderPath="txt/badEnds/lunexis">PLAZA_BAD_END_PALACE_TRAINED</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -65,8 +65,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Oral whore]]></responseTitle>
-				<responseTooltip><![CDATA[Tell the horse-girl that you love sucking her fat horse cock most of all!]]></responseTooltip>
+				<responseTitle><![CDATA[Оральная шлюха]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи этой лошадке, что больше всего на свете ты обожаешь сосать её толстый конский член!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_palace_trained_choice]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/badEnds/lunexis', 'PLAZA_BAD_END_PALACE_TRAINED_ORAL'))]
@@ -78,16 +78,16 @@
 				<availabilityConditional><![CDATA[[#!pc.hasVagina()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Cock-sleeve]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have a pussy, so can't be trained to be a true cock-sleeve...]]></responseTooltip>
+				<responseTitle><![CDATA[Чехол для члена]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя нет киски, так что тебя невозможно обучить быть настоящим членником...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#pc.hasVagina()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Cock-sleeve]]></responseTitle>
-				<responseTooltip><![CDATA[Tell the horse-girl that you love being a true cock sleeve, having her fat horse cock hilted deep into your cunt!]]></responseTooltip>
+				<responseTitle><![CDATA[Чехол для члена]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи этой лошадке, что обожаешь быть настоящим членником, когда её толстый конский член глубоко входит в твою киску!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_palace_trained_choice]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/badEnds/lunexis', 'PLAZA_BAD_END_PALACE_TRAINED_VAGINAL'))]
@@ -99,8 +99,8 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Butt slut]]></responseTitle>
-				<responseTooltip><![CDATA[Tell the horse-girl that you love the feeling of having her massive cock rammed deep into your slutty ass!]]></responseTooltip>
+				<responseTitle><![CDATA[Задняя шлюшка]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи этой кобылке, как тебе нравится, когда её огромный член вбивается глубоко в твою шлюшью задницу!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_palace_trained_choice]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/badEnds/lunexis', 'PLAZA_BAD_END_PALACE_TRAINED_ANAL'))]
@@ -119,8 +119,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Final training]]></responseTitle>
-				<responseTooltip><![CDATA[You get trained by the horse-girl to become Lunexis's perfect cock-sleeve...]]></responseTooltip>
+				<responseTitle><![CDATA[Финальная тренировка]]></responseTitle>
+				<responseTooltip><![CDATA[Кобылка тренирует тебя, чтобы ты стала идеальной залупой для Лунексиса...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_graduation]]></nextDialogue>
 				<effects><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_oral))
@@ -143,7 +143,7 @@
 	</scene>
 	
 	<scene id="plaza_bad_end_graduation">
-		<title><![CDATA[[style.boldBadEnd(Bad End: Lunexis's Cock-sleeve)]]]></title>
+		<title><![CDATA[[style.boldBadEnd(Плохая концовка: Членник Лунексиса)]]]></title>
 		<content folderPath="txt/badEnds/lunexis">PLAZA_BAD_END_GRADUATION</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -152,8 +152,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Party]]></responseTitle>
-				<responseTooltip><![CDATA[You're taken to the party, where you're to finally get stuffed full of Lunexis's cock!]]></responseTooltip>
+				<responseTitle><![CDATA[Вечеринка]]></responseTitle>
+				<responseTooltip><![CDATA[Тебя ведут на вечеринку, где тебя наконец-то набьют до отказа членом Лунексиса!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_badEnds_lunexis_plaza_bad_end_final]]></nextDialogue>
 			</response>
 		</responses>
@@ -172,7 +172,7 @@
 			[#aurokaris.setLocation(pc)]
 			[#lunexis.setLocation(pc)]
 		]]></preParsingEffects>
-		<title><![CDATA[[style.boldBadEnd(Bad End: Lunexis's Cock-sleeve)]]]></title>
+		<title><![CDATA[[style.boldBadEnd(Плохая концовка: Членник Лунексиса)]]]></title>
 		<content folderPath="txt/badEnds/lunexis">PLAZA_BAD_END_FINAL</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -181,12 +181,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Meraxis]]></responseTitle>
+				<responseTitle><![CDATA[Мераксис]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_meraxis))
-						You've already seen what's become of the cock-sleeve who used to be known as Meraxis.
+						Ты уже видела, во что превратилась залупа, которую когда-то звали Мераксис.
 					#ELSE
-						Look across and see what's being done to the cock-sleeve who used to be known as Meraxis.
+						Посмотри на ту залупу, которой когда-то была Мераксис, и увидь, что с ней делают.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -204,12 +204,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Aurokaris]]></responseTitle>
+				<responseTitle><![CDATA[Аурокарис]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_aurokaris))
-						You've already seen what fate has befallen the cock-sleeve formerly known as Aurokaris.
+						Ты уже видел, какая участь постигла бывшую Аврокарис, ставшую обычной дыркой для члена.
 					#ELSE
-						From your position you're able to see what's being done to the cock-sleeve formerly known as Aurokaris.
+						Со своего места ты можешь наблюдать за тем, что творят с бывшей Аврокарис, превратившейся в послушную дырку.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -227,12 +227,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Ursa]]></responseTitle>
+				<responseTitle><![CDATA[Урса]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_ursa))
-						You've already seen what's become of the cock-sleeve who used to be queen of the Amazons.
+						Ты уже видел, во что превратилась бывшая королева амазонок, ставшая всего лишь дыркой для члена.
 					#ELSE
-						The cock-sleeve who was once queen of the Amazons is off to your side, allowing you to look across and see what's happening to her.
+						Бывшая королева амазонок, ныне — лишь дырка для члена, находится совсем рядом, позволяя тебе наблюдать за тем, что с ней происходит.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -250,12 +250,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Pleasure Lunexis]]></responseTitle>
+				<responseTitle><![CDATA[Услада Лунексис]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_self))
-						You've already pleasured Lunexis, who's momentarily satisfied and has commanded you to remain still and act as her cock-sleeve.
+						Ты уже доставил удовольствие Лунексис; на мгновение удовлетворившись, она приказала тебе замереть и служить ей дыркой для члена.
 					#ELSE
-						Focus on pleasuring your queen instead of watching what's happening to the other three cock-sleeves.
+						Сосредоточься на ласках своей королевы вместо того, чтобы пялиться на то, что происходит с тремя другими дырками.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -273,13 +273,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Epilogue]]></responseTitle>
+				<responseTitle><![CDATA[Эпилог]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_meraxis) || !flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_aurokaris) || !flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_ursa) || !flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_self))
-						The party's only just getting started!
+						Вечеринка только начинается!
 					#ELSE
-						After the party, you start your new life as Lunexis's favoured cock-sleeve...
-					#ENDIF
+После празднества твоя новая жизнь начинается в роли любимой куклы для члена Лунексиса...					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_meraxis) || !flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_aurokaris) || !flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_ursa) || !flags.hasFlag(FLAG_innoxia_themiscyra_bad_end_spectate_self))
@@ -293,7 +292,7 @@
 	</scene>
 	
 	<scene id="plaza_bad_end_final_spectate">
-		<title><![CDATA[[style.boldBadEnd(Bad End: Lunexis's Cock-sleeve)]]]></title>
+		<title><![CDATA[[style.boldBadEnd(Плохая концовка: Членник Лунексиса)]]]></title>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -311,7 +310,7 @@
 			[#aurokaris.setLocation(pc)]
 			[#lunexis.setLocation(pc)]
 		]]></preParsingEffects>
-		<title><![CDATA[[style.boldBadEnd(Bad End: Lunexis's Cock-sleeve)]]]></title>
+		<title><![CDATA[[style.boldBadEnd(Плохая концовка: Членник Лунексиса)]]]></title>
 		<content folderPath="txt/badEnds/lunexis">PLAZA_BAD_END_FINAL_EPILOGUE</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>true</continuesDialogue>
@@ -320,8 +319,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[The End...]]></responseTitle>
-				<responseTooltip><![CDATA[[style.italicsBadEnd(With this end to your journey, the thread of prophecy is severed. Restore a saved game to restore the weave of fate, or persist in the doomed world you have created.)]]]></responseTooltip>
+				<responseTitle><![CDATA[Конец...]]></responseTitle>
+				<responseTooltip><![CDATA[[style.italicsBadEnd(С таким финалом твоего путешествия нить пророчества обрывается. Загрузи сохраненную игру, чтобы восстановить плетение судьбы, или продолжай жить в обреченном мире, который ты создал.)]]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 			</response>
 		</responses>

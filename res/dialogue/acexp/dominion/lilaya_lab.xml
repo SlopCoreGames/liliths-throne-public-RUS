@@ -13,9 +13,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Spy on them]]></responseTitle>
+                <responseTitle><![CDATA[Шпионить за ними]]></responseTitle>
                 <responseTooltip><![CDATA[
-					You've already spied on Lilaya and Rose today, and doing so for a second time would undoubtedly be pushing your luck too far. It would be best to return here tomorrow if you wanted to watch them have sex again.
+					Ты уже шпионил за Lilaya и Rose сегодня, и делать это во второй раз было бы слишком рискованно. Если ты хочешь снова увидеть их секс, лучше вернуться сюда завтра.
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[null]]></nextDialogue>
                 <effects/>
@@ -26,9 +26,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Spy on them]]></responseTitle>
+                <responseTitle><![CDATA[Шпионить за ними]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Spying on your [lilaya.relation(pc)] and her maid? That idea gets you so excited, you just have to do this, whatever may happen next...
+					Шпионить за твоей [lilaya.relation(pc)] и её служанкой? От этой мысли тебя так возбуждает, что ты просто обязан это сделать, что бы ни случилось дальше...
                 ]]></responseTooltip>
                 <colour><![CDATA[TEXT]]></colour>
                 <nextDialogue/>
@@ -86,8 +86,8 @@
 
     <scene id ="after_sex">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[That was interesting, now quickly make your exit...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Это было интересно, теперь поскорее уходи...]]></tooltip>
         <preParsingEffects><![CDATA[
 			[#pc.setNearestLocation(PLACE_TYPE_LILAYA_HOME_CORRIDOR)]
 		]]></preParsingEffects>
@@ -100,8 +100,8 @@
                 <availabilityConditional><![CDATA[true]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Continue]]></responseTitle>
-                <responseTooltip><![CDATA[Continue on your way.]]></responseTooltip>
+                <responseTitle><![CDATA[Продолжить]]></responseTitle>
+                <responseTooltip><![CDATA[Продолжить свой путь.]]></responseTooltip>
                 <nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
                 <effects/>

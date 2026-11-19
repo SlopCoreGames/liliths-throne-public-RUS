@@ -10,9 +10,9 @@
 	<combatEffect>false</combatEffect>
 	<sexEffect>false</sexEffect>
 	<tags/>
-	<name><![CDATA[Crag's Greater Bounty]]></name>
+	<name><![CDATA[Великое изобилие Крэга]]></name>
 	<description><![CDATA[
-		An apple a day keeps the healer away!
+		Одно яблоко в день — и лекарь не нужен!
 	]]></description>
 	<imageName>fruit_buff_apple.svg</imageName>
 	<colourPrimary>GENERIC_EXCELLENT</colourPrimary> 

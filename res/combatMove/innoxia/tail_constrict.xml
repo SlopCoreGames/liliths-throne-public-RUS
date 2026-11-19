@@ -7,10 +7,10 @@
 	
 	<equipWeighting>10</equipWeighting>
 	
-	<name><![CDATA[Tail-constrict]]></name>
+	<name><![CDATA[Сдавливание хвостом]]></name>
 	
 	<description><![CDATA[
-		Use [npc.her] strong, serpent-like tail to constrict [npc.her] target.
+		Использовать [npc.her] мощный, змеиный хвост, чтобы сдавить [npc.her] цель.
 	]]></description>
 	
 	<damageType><![CDATA[
@@ -54,7 +54,7 @@
 	</availabilityCondition>
 	
 	<availabilityDescription><![CDATA[
-		Available to characters who have a '[#LEG_CONFIGURATION_TAIL_LONG.getName()]' leg configuration.
+		Доступно персонажам с конфигурацией ног '[#LEG_CONFIGURATION_TAIL_LONG.getName()]'.
 	]]></availabilityDescription>
 	
 	<!-- Once started to constrict a target, the AI will become more and more interested in finishing the process off. -->
@@ -75,38 +75,41 @@
 	]]></criticalCondition>
 	
 	<criticalDescription><![CDATA[
-		Cannot critically hit.
+		Не может нанести критический удар.
 	]]></criticalDescription>
 	
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] strong, serpent-like tail to constrict [npc2.name].
+		Использовать [npc.her] мощный, змеиный хвост, чтобы сдавить [npc2.name].
 	]]></movePredictionDescriptionWithTarget>
 	
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] strong, serpent-like tail to constrict [npc.her] target.
+		Использовать [npc.her] мощный, змеиный хвост, чтобы сдавить [npc.her] цель.
 	]]></movePredictionDescriptionNoTarget>
 	
 	<performMove>
 		<execute><![CDATA[
-			[npc.Name] [npc.verb(lurch)] forwards and [npc.verb(coil)] [npc.her] strong, serpent-like tail around [npc2.name]!
+			[npc.Name] [npc.verb(lurch)] вперед и [npc.verb(coil)] [npc.her] мощный, змеиный хвост вокруг [npc2.name]!
 			#IF(npc2.hasStatusEffect(SE_TAIL_RESTRAIN_3))
+
 				[##npc2.setHealth(0)]
-				<br/>[style.italicsTerrible([npc2.NameIsFull] now totally constricted by [npc.namePos] tail, and as such [npc2.is] completely defeated!)]
+				<br/>[style.italicsTerrible([npc2.NameIsFull] теперь полностью сжат [npc.namePos] хвостом, и в результате [npc2.is] окончательно повержен!)]
 			#ELSEIF(npc2.hasStatusEffect(SE_TAIL_RESTRAIN_2))
+
 				[##npc2.removeStatusEffectCombat(SE_TAIL_RESTRAIN_2)]
 				[##npc2.addStatusEffect(SE_TAIL_RESTRAIN_3, 10)]
-				<br/>[style.italicsTerrible([npc2.NameIsFull] almost totally constricted by [npc.namePos] tail, and as such [npc2.is] near to being completely defeated!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] tail-constricted again, [npc2.she] will be instantly defeated!)]
+				<br/>[style.italicsTerrible([npc2.NameIsFull] почти полностью сжат [npc.namePos] хвостом, и в результате [npc2.is] близок к полному поражению!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] снова [npc2.verb(get)] сжат хвостом, [npc2.she] будет мгновенно повержен!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] снова [npc2.verb(get)] сжат хвостом, этот эффект станет крайне серьезным!)]
 			#ELSEIF(npc2.hasStatusEffect(SE_TAIL_RESTRAIN_1))
+
 				[##npc2.removeStatusEffectCombat(SE_TAIL_RESTRAIN_1)]
 				[##npc2.addStatusEffect(SE_TAIL_RESTRAIN_2, 10)]
-				<br/>[style.italicsBad([npc2.NameIsFull] seriously constricted by [npc.namePos] tail, and as such [npc2.is] struggling to fight back!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] tail-constricted again, this effect will become extremely serious!)]
+				<br/>[style.italicsBad([npc2.NameIsFull] сильно сжат [npc.namePos] хвостом, и в результате [npc2.is] изо всех сил пытается сопротивляться!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] снова [npc2.verb(get)] сжат хвостом, этот эффект станет крайне серьезным!)]
 			#ELSE
-				[##npc2.addStatusEffect(SE_TAIL_RESTRAIN_1, 10)]
-				<br/>[style.italicsBad([npc2.NameIsFull] partially constricted by [npc.namePos] tail, and as such [npc2.her] ability to fight back is impaired!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] tail-constricted again, this effect will become more serious!)]
-			#ENDIF
+[##npc2.addStatusEffect(SE_TAIL_RESTRAIN_1, 10)]
+<br/>[style.italicsBad([npc2.NameIsFull] частично зажат хвостом [npc.namePos], из-за чего [npc2.her] становится труднее сопротивляться!)]
+<br/>[style.italicsTerrible(Если [npc2.name] [npc2.verb(get)] снова окажется в кольце хвоста, эффект станет еще серьезнее!)]			#ENDIF
 		]]></execute>
 		<critDescription><![CDATA[
 			N/A

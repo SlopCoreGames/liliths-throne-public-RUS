@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA["Grown by the dragons of the DSG Farmer's Guild" is lightly embossed under the carton.]]></authorTag>
+		<authorTag><![CDATA[Под картонной коробкой едва заметно вытиснена надпись: «Выращено драконами Гильдии Фермеров DSG».]]></authorTag>
 		<value>5</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[carton of blueberries]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[cartons of blueberries]]></namePlural>
-		<description><![CDATA[A carton of berries picked from a highbush blueberry plant. They have a faint, translucent glow about them when under sunlight.]]></description>
+		<name><![CDATA[картонная коробка черники]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[картонные коробки черники]]></namePlural>
+		<description><![CDATA[Коробка черники, собранной с высокорослых кустов. На солнце ягоды излучают слабое, полупрозрачное свечение.]]></description>
 		<useDescriptor>eat</useDescriptor>
 		<sexUse>true</sexUse>
 		<combatUseAllies>true</combatUseAllies>
@@ -24,9 +24,9 @@
 		<enchantmentEffectId/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldGood(Increases)] [style.boldPoison([#ATTRIBUTE_RESISTANCE_POISON.getName()])] by 7 for 1 hour.]]></line>
-			<line><![CDATA[[style.colourBlueLight(Changes)] the flavour of all fluids to [style.colourBlueDark(blueberry)].]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Увеличивает)] [style.boldPoison([#ATTRIBUTE_RESISTANCE_POISON.getName()])] на 7 единиц на 1 час.]]></line>
+			<line><![CDATA[[style.colourBlueLight(Меняет)] вкус всех жидкостей на [style.colourBlueDark(черничный)].]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -47,7 +47,7 @@
 				[##npc.addStatusEffect(SE_dsg_item_fruit_buff, 3600)]
 			#ENDIF
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(feel)] vaguely healthier...
+				[npc.Name] [npc.verb(чувствуешь)] себя немного здоровее...
 			</p>
 		]]></applyEffects>
 		
@@ -59,10 +59,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-			[npc.Name] gingerly [npc.verb(pick)] a few blueberries from the carton and [npc.verb(start)] eating them, but soon [npc.she] [npc.verb(start)] dumping the whole thing into [npc.her] mouth. It doesn't take long to empty the carton after that...
+			[npc.Name] осторожно [npc.verb(берешь)] несколько ягод черники из коробки и [npc.verb(начинаешь)] есть их, но вскоре [npc.she] [npc.verb(начинает)] закидывать их прямо в [npc.her] рот. После этого коробка пустеет довольно быстро...
 		]]></selfUse>
 		<otherUse><![CDATA[
-			[npc.Name] gingerly [npc.verb(pick)] a few blueberries from the carton for [npc2.name] to eat, but soon [npc2.name] takes the whole thing from [npc.her] and [npc2.verb(start)] dumping it into [npc.her] mouth. It doesn't take long to empty the carton after that...
+			[npc.Name] осторожно [npc.verb(берешь)] несколько ягод черники из коробки, чтобы [npc2.name] съела их, но вскоре [npc2.name] выхватывает всё содержимое из [npc.her] рук и [npc2.verb(начинает)] закидывать их в [npc.her] рот. После этого коробка пустеет довольно быстро...
 		]]></otherUse>
 	</useDescriptions>
 

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>0</value> 
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[Angelixx's diary]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Angelixx's diaries]]></namePlural>
-		<description><![CDATA[A small, pink diary, with the name 'Angelixx' written on the front in flowing white script.]]></description> 
+		<name><![CDATA[Дневник Анжеликс]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Дневники Анжеликсы]]></namePlural>
+		<description><![CDATA[Маленький розовый дневник, на обложке которого изящным белым почерком выведено имя «Анжеликса».]]></description> 
 		
 		<useDescriptor>read</useDescriptor>
 		
@@ -23,7 +23,7 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[Reveals Angelixx's secrets]]></line>
+			<line><![CDATA[Раскрывает секреты Анжеликсы]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -33,7 +33,7 @@
 			</i>
 		</p>
 		<p>
-			The content of this diary is completely at odds with its appearance, for Angelixx has used brightly-coloured gel pens to fill the pages with her extremely girly handwriting. She's even gone so far as to dot every 'i' with a little heart, and fill the margin of almost every page with hearts, flowers, and other such innocent illustrations.
+			Содержимое этого дневника совершенно не вяжется с его внешним видом: Анжеликса использовала яркие гелевые ручки, чтобы заполнить страницы своим невероятно девчачьим почерком. Она даже дошла до того, что украшает каждую точку над «i» маленьким сердечком, а поля почти каждой страницы заполняет сердечками, цветами и прочими невинными рисунками.
 		</p>
 		]]></applyEffects>
 		
@@ -43,10 +43,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-			[npc.Name] [npc.verb(release)] the diary's elasticated strap, allowing it to be opened. Stopping on a random page to read a paragraph, [npc.she] [npc.verb(see)] that the contents of this diary are far more lewd, and at times sinister, than anyone would expect from its appearance:
+			[npc.Name] [npc.verb(release)] эластичную ленту дневника, позволяя ему открыться. Остановившись на случайной странице, чтобы прочесть абзац, [npc.she] [npc.verb(see)], что содержимое этого дневника куда более похотливое, а порой и зловещее, чем можно было ожидать от его внешнего вида:
 		]]></selfUse>
 		<otherUse><![CDATA[
-			[npc.Name] [npc.verb(release)] the diary's elasticated strap, allowing it to be opened, before showing it off to [npc2.name]. Stopping on a random page to read a paragraph, [npc.she] [npc.verb(see)] that the contents of this diary are far more lewd, and at times sinister, than anyone would expect from its appearance:
+			[npc.Name] [npc.verb(release)] эластичную ленту дневника, позволяя ему открыться, прежде чем показать его [npc2.name]. Остановившись на случайной странице, чтобы прочесть абзац, [npc.she] [npc.verb(see)], что содержимое этого дневника куда более похотливое, а порой и зловещее, чем можно было ожидать от его внешнего вида:
 		]]></otherUse>
 	</useDescriptions>
 

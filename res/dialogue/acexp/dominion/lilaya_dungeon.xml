@@ -3,8 +3,8 @@
 
     <scene id ="stairsUp">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Stairs up]]></title>
-        <tooltip><![CDATA[Head up the stairs and return to the library...]]></tooltip>
+        <title><![CDATA[Лестница вверх]]></title>
+        <tooltip><![CDATA[Подняться по лестнице и вернуться в библиотеку...]]></tooltip>
         <preParsingEffects/>
         <content folderPath="txt/acexp/dominion/lilaya_dungeon">STAIRS_UP</content>
         <secondsPassed ><![CDATA[20]]></secondsPassed>
@@ -15,8 +15,8 @@
                 <availabilityConditional><![CDATA[true]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Stairs up]]></responseTitle>
-                <responseTooltip><![CDATA[Head up the spiral staircase...]]></responseTooltip>
+                <responseTitle><![CDATA[Лестница вверх]]></responseTitle>
+                <responseTooltip><![CDATA[Подняться по винтовой лестнице...]]></responseTooltip>
                 <nextDialogue stripContent="true" defaultPlaceType="LILAYA_HOME_LIBRARY"/>
                 <secondsPassed ><![CDATA[20]]></secondsPassed>
                 <effects><![CDATA[
@@ -30,8 +30,8 @@
 
     <scene id ="stairsUp_garden">
         <author><![CDATA[Innoxia]]></author>
-        <title><![CDATA[Stairs up]]></title>
-        <tooltip><![CDATA[Head up the stairs and return to the garden...]]></tooltip>
+        <title><![CDATA[Лестница вверх]]></title>
+        <tooltip><![CDATA[Подняться по лестнице и вернуться в сад...]]></tooltip>
         <preParsingEffects/>
         <content folderPath="txt/acexp/dominion/lilaya_dungeon">STAIRS_UP_GARDEN</content>
         <secondsPassed ><![CDATA[20]]></secondsPassed>
@@ -42,8 +42,8 @@
                 <availabilityConditional><![CDATA[true]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Stairs up]]></responseTitle>
-                <responseTooltip><![CDATA[Head up the spiral staircase...]]></responseTooltip>
+                <responseTitle><![CDATA[Лестница вверх]]></responseTitle>
+                <responseTooltip><![CDATA[Подняться по винтовой лестнице...]]></responseTooltip>
                 <nextDialogue stripContent="true" defaultPlaceType="LILAYA_HOME_FOUNTAIN"/>
                 <secondsPassed ><![CDATA[20]]></secondsPassed>
                 <effects><![CDATA[
@@ -58,8 +58,8 @@
 
     <scene id ="corridor">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Corridor]]></title>
-        <tooltip><![CDATA[Corridor]]></tooltip>
+        <title><![CDATA[Коридор]]></title>
+        <tooltip><![CDATA[Коридор]]></tooltip>
         <preParsingEffects><![CDATA[
 			#IF(RND.nextInt(100)<=20)
 				[#flags.setFlag(FLAG_acexp_dungeon_sounds_heard, true)]
@@ -74,8 +74,8 @@
 
     <scene id ="room">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Dungeon BDSM room]]></title>
-        <tooltip><![CDATA[Room]]></tooltip>
+        <title><![CDATA[BDSM-комната в подземелье]]></title>
+        <tooltip><![CDATA[Комната]]></tooltip>
         <preParsingEffects/>
         <content folderPath="txt/acexp/dominion/lilaya_dungeon">ROOM</content>
         <secondsPassed ><![CDATA[20]]></secondsPassed>
@@ -86,9 +86,9 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Call Rose]]></responseTitle>
+                <responseTitle><![CDATA[Позвать Роуз]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Rose hinted she could treat you to a good time, call her to find out what she has in mind.
+                    Роуз намекнула, что может устроить тебе незабываемое времяпрепровождение. Позови её, чтобы узнать, что она задумала.
                 ]]></responseTooltip>
                 <colour><![CDATA[TEXT]]></colour>
                 <nextDialogue stripContent="false">acexp_dominion_lilaya_dungeon_room_rose</nextDialogue>
@@ -109,8 +109,8 @@
 
     <scene id ="room_rose">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Dungeon BDSM room]]></title>
-        <tooltip><![CDATA[Room]]></tooltip>
+        <title><![CDATA[BDSM-комната в подземелье]]></title>
+        <tooltip><![CDATA[Комната]]></tooltip>
         <preParsingEffects/>
         <content folderPath="txt/acexp/dominion/lilaya_dungeon">ROOM_ROSE</content>
         <secondsPassed ><![CDATA[20]]></secondsPassed>
@@ -121,8 +121,8 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Dungeon]]></responseTitle>
-                <responseTooltip><![CDATA[Ask Rose about the dungeon.]]></responseTooltip>
+                <responseTitle><![CDATA[Подземелье]]></responseTitle>
+                <responseTooltip><![CDATA[Спросить Роуз о подземелье.]]></responseTooltip>
                 <nextDialogue>acexp_dominion_lilaya_dungeon_room_rose_talk_history</nextDialogue>
                 <effects/>
             </response>
@@ -130,17 +130,17 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Bedroom]]></responseTitle>
-                <responseTooltip><![CDATA[Ask Rose about this room that you are in.]]></responseTooltip>
+                <responseTitle><![CDATA[Спальня]]></responseTitle>
+                <responseTooltip><![CDATA[Спросить Роуз об этой комнате.]]></responseTooltip>
                 <nextDialogue>acexp_dominion_lilaya_dungeon_room_rose_talk_room</nextDialogue>
             </response>
             <response>
                 <availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_acexp_dungeon_sex)]]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[3]]></index>
-                <responseTitle><![CDATA[Dominated]]></responseTitle>
+                <responseTitle><![CDATA[Покоренная]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Surrender yourself to Rose and let her dominate you.
+                    Предайся Розе и позволь ей полностью подчинить тебя себе.
                 ]]></responseTooltip>
                 <colour><![CDATA[TEXT]]></colour>
                 <nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
@@ -187,9 +187,9 @@
                 <availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_acexp_dungeon_sex)]]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[3]]></index>
-                <responseTitle><![CDATA[Dominated]]></responseTitle>
+                <responseTitle><![CDATA[Покоренная]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    You can't be dominated by Rose right now. <br/>[style.italicsMinorBad(You need to wait until the next day.)]
+                    Сейчас Роза не может тебя подчинить. <br/>[style.italicsMinorBad(Нужно подождать до следующего дня.)]
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[null]]></nextDialogue>
             </response>
@@ -197,8 +197,8 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[4]]></index>
-                <responseTitle><![CDATA[Dismiss Rose]]></responseTitle>
-                <responseTooltip><![CDATA[Tell Rose she can continue with her duties.]]></responseTooltip>
+                <responseTitle><![CDATA[Отпустить Розу]]></responseTitle>
+                <responseTooltip><![CDATA[Сказать Розе, что она может продолжать свои обязанности.]]></responseTooltip>
                 <nextDialogue stripContent="false">acexp_dominion_lilaya_dungeon_room</nextDialogue>
                 <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
                 <effects><![CDATA[
@@ -218,8 +218,8 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Dungeon]]></responseTitle>
-                <responseTooltip><![CDATA[You're already asking Rose about the dungeon!]]></responseTooltip>
+                <responseTitle><![CDATA[Подземелье]]></responseTitle>
+                <responseTooltip><![CDATA[Ты уже спрашиваешь Розу о подземелье!]]></responseTooltip>
                 <nextDialogue>null</nextDialogue>
                 <effects/>
             </response>
@@ -236,8 +236,8 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Bedroom]]></responseTitle>
-                <responseTooltip><![CDATA[You're already asking Rose about this room!]]></responseTooltip>
+                <responseTitle><![CDATA[Спальня]]></responseTitle>
+                <responseTooltip><![CDATA[Ты уже спрашиваешь Розу об этой комнате!]]></responseTooltip>
                 <nextDialogue>null</nextDialogue>
                 <effects/>
             </response>
@@ -246,8 +246,8 @@
 	
     <scene id ="after_sex">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[You need some time to recover...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Тебе нужно время, чтобы прийти в себя...]]></tooltip>
         <preParsingEffects><![CDATA[
             [#rose.returnToHome()]
             [#rose.unequipClothingIntoVoid(rose.getClothingInSlot(IS_GROIN), true, rose)]

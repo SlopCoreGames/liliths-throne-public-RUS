@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA['Woven by the DSG Textile Guild' in very small print is woven in one corner.]]></authorTag>
+		<authorTag><![CDATA[В одном из углов мелким шрифтом вышито: «Сделано текстильной гильдией DSG».]]></authorTag>
 		
 		<value>2480</value> 
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[embroidered sign]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[embroidered signs]]></namePlural>
-		<description><![CDATA[A folded up piece of rectangular canvas fabric embroidered with a design that Monica had made for you based on your interpretation of the qualities that Eisek values most in his goods.]]></description> 
+		<name><![CDATA[вышитый знак]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[вышитые знаки]]></namePlural>
+		<description><![CDATA[Сложенный прямоугольный кусок холста с вышитым на нем узором, который Моника создала для тебя, основываясь на твоем понимании того, какие качества Эйсек ценит в своих товарах больше всего.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -25,12 +25,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[One of [style.colourGood(three)] items that you need to fix up Eisek's stall.]]></line>
+			<line><![CDATA[Один из [style.colourGood(трех)] предметов, необходимых для починки лавки Эйзека.]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			This sign is made from canvas, rolled at the edges for durability. Embroidered on its otherwise featureless surface is a stylized depiction of many different types of fruits and vegetables carried by an avalanche descending down the side of a mountain. In the upper right, the words "ALPINE PRODUCE" are similarly sewn in with metallic blue thread.
+			Этот знак сделан из холста с подвернутыми краями для долговечности. На его пустой поверхности вышито стилизованное изображение множества различных фруктов и овощей, несущихся лавиной вниз по склону горы. В верхнем правом углу синими металлизированными нитями вышита надпись «ГОРНЫЕ ПРОДУКТЫ».
 		</p>
 		]]></applyEffects>
 		
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unfold)] the sign to get a closer look...
+		[npc.Name] [npc.verb(unfold)] знак, чтобы рассмотреть его поближе...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unfold)] the sign to show it off to [npc2.name], who [npc.verb(lean)] in to get a closer look...
+		[npc.Name] [npc.verb(unfold)] знак, чтобы похвастаться им перед [npc2.name], которая [npc.verb(lean)] вперед, чтобы рассмотреть его поближе...
 		]]></otherUse>
 	</useDescriptions>
 

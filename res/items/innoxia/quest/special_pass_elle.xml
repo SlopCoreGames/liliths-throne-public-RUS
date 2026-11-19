@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>5000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Elle's Contractor Pass]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Elle's Contractor Pass]]></namePlural>
-		<description><![CDATA[Complete with a sturdy fabric lanyard, and signed by Superintendent Aellasys Lunettemartu herself, this pass grants the bearer access to the requisitions area of Dominion's Enforcer HQ. It can also be shown to Enforcer patrols to prevent illegal items from being confiscated.]]></description> 
+		<name><![CDATA[Пропуск подрядчика Элль]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Пропуск подрядчика Элль]]></namePlural>
+		<description><![CDATA[Этот пропуск на прочном тканевом шнурке, скрепленный подписью самой суперинтенданта Аэлласис Лунеттемарту, дает владельцу доступ в зону снабжения штаб-квартиры Enforcer Dominion. Его также можно предъявлять патрулям Enforcer, чтобы избежать конфискации запрещенных предметов.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,14 +23,14 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourGood(Grants access)] to Enforcer HQ's requisitions area]]></line>
-			<line><![CDATA[Provides [style.colourExcellent(immunity)] to [style.colourBlueDark(illegal)] item confiscations]]></line>
-			<line><![CDATA[Provides [style.colourTerrible(no immunity)] to [style.colourBlueDark(highly illegal)] item confiscations]]></line>
+			<line><![CDATA[[style.colourGood(Дает доступ)] к зоне снабжения штаб-квартиры Enforcer]]></line>
+			<line><![CDATA[Обеспечивает [style.colourExcellent(иммунитет)] к конфискации [style.colourBlueDark(нелегальных)] предметов]]></line>
+			<line><![CDATA[Обеспечивает [style.colourTerrible(отсутствие иммунитета)] к конфискации [style.colourBlueDark(крайне нелегальных)] предметов]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			Signed by Superintendent Aellasys Lunettemartu, and attached to a sturdy fabric lanyard, this 'Contractor Pass' grants the bearer access to the requisitions area of Dominion's Enforcer HQ. It can also be shown to Enforcer patrols to prevent illegal items from being confiscated.
+			Этот «Пропуск подрядчика» на прочном тканевом шнурке, скрепленный подписью суперинтенданта Аэлласис Лунеттемарту, дает владельцу доступ в зону снабжения штаб-квартиры Enforcer Dominion. Его также можно предъявлять патрулям Enforcer, чтобы избежать конфискации запрещенных предметов.
 		</p>
 		]]></applyEffects>
 		
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the pass...
+		[npc.Name] [npc.verb(внимательнее рассмотреть)] пропуск...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off [npc.her] pass to [npc2.name], who is duly impressed by [npc.her] possession of it...
+		[npc.Name] [npc.verb(хвастливо показать)] [npc.her] пропуск [npc2.name], который должным образом впечатляется тем, что [npc.her] владеет им...
 		]]></otherUse>
 	</useDescriptions>
 

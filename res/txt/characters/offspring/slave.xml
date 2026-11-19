@@ -299,7 +299,7 @@
 		<p>
 		#IF(npc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
 В тоне [npc.namePos] крика слышится что-то странное, будто [npc.sheIs] не так уж и мучается от того, что происходит с [npc.herHim]. Когда один из [npc.her] неистовых всхлипов на мгновение сменяется возбужденным визгом, ты внезапно понимаешь: [npc.sheIs] получает удовольствие от того, что [npc.sheIs] насилуют...		#ELSE
-С отчаянным, дрожащим криком [npc.name] изо всех сил [npc.her] пытается сопротивляться вашим с @@T2@@ натискам...		#ENDIF
+С отчаянным, дрожащим криком [npc.name] изо всех сил [npc.her] пытается сопротивляться вашим общим ласкам...		#ENDIF
 		</p>
 	#ENDIF
 	]]>
@@ -400,7 +400,8 @@
 		<p>
 		#IF(npc.getFetishDesire(FETISH_NON_CON_SUB).isPositive())
 В тоне [npc.namePos] крика слышится что-то странное, будто [npc.sheIs] не так уж и мучается от того, что происходит с [npc.herHim]. Когда один из [npc.her] неистовых всхлипов на мгновение сменяется возбужденным визгом, ты внезапно понимаешь: [npc.sheIs] получает удовольствие от того, что [npc.sheIs] насилуют...		#ELSE
-С отчаянным, дрожащим криком [npc.name] изо всех сил [npc.her] пытается сопротивляться вашим с @@T2@@ натискам...		#ENDIF
+			With a desperate, shuddering scream, [npc.name] does [npc.her] best to resist the advances of the two of you...
+		#ENDIF
 		</p>
 	#ENDIF
 	]]>
@@ -960,8 +961,7 @@
 			</p>
 		#ELSE
 			<p>
-				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, совершенно измотанная [npc.her] оргазмом.
-			@@H1@@#IF(sex.getNumberOfOrgasms(npc)>1)s#ENDIF. Looking up at you, a satisfied smile settles across [npc.her] face, and you realise that you gave [npc.herHim] exactly what [npc.she] wanted.
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, совершенно измотанная после [npc.her] оргазма.#IF(sex.getNumberOfOrgasms(npc)>1)s#ENDIF. Looking up at you, a satisfied smile settles across [npc.her] face, and you realise that you gave [npc.herHim] exactly what [npc.she] wanted.
 			</p>
 			<p>
 				Быстро приведя свои вещи в порядок, ты смотришь на [npc.name] и раздумываешь, что делать дальше...
@@ -1011,8 +1011,7 @@
 			</p>
 		#ELSE
 			<p>
-				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая отчаянный скулящий звук, когда [npc.she] понимает, что ты закончил.
-			@@H1@@				#IF(npc.hasSlavePermissionSetting(SLAVE_PERMISSION_SETTING_SEX_MASTURBATE))
+				Когда ты отстраняешься от [npc.name], [npc.she] оседает на пол, издавая отчаянный скулеж, когда [npc.she] понимает, что ты закончил.				#IF(npc.hasSlavePermissionSetting(SLAVE_PERMISSION_SETTING_SEX_MASTURBATE))
 					#IF(npc.isTaur())
 						 Не в силах дотянуться до паха [npc.her], [npc.she] отчаянно начинает тереться [npc.her] о ближайший предмет мебели, пытаясь мастурбировать и закончить то, что ты начал.
 					#ELSEIF(npc.hasLegs())

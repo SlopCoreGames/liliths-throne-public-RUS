@@ -10,8 +10,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Hideout]]></responseTitle>
-				<responseTooltip><![CDATA[[pc.Walk] over to the building which serves as Meraxis's hideout and head inside.]]></responseTooltip>
+				<responseTitle><![CDATA[Убежище]]></responseTitle>
+				<responseTooltip><![CDATA[[pc.Walk] направляйся к зданию, которое служит убежищем Мераксиса, и заходи внутрь.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_shinrin_highlands_hideout_exit]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setLocation(WORLD_TYPE_innoxia_shinrin_highlands_hideout, PLACE_TYPE_innoxia_shinrin_highlands_hideout_exit)]
@@ -46,8 +46,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Exit]]></responseTitle>
-				<responseTooltip><![CDATA[Head back out into the Shinrin Highlands.]]></responseTooltip>
+				<responseTitle><![CDATA[Выход]]></responseTitle>
+				<responseTooltip><![CDATA[Вернуться обратно в высокогорье Шинрин.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_shinrin_highlands_hideout_world_map]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -71,10 +71,10 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Takahashi]]></responseTitle>
+				<responseTitle><![CDATA[Такахаши]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Talk to Takahashi.
-					<br/>[style.italicsMinorBad(Full Takahashi interactions will be added in the next update!)]
+					Поговорить с Такахаши.
+					<br/>[style.italicsMinorBad(Полный набор взаимодействий с Такахаши будет добавлен в следующем обновлении!)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue><!-- innoxia_places_shinrin_highlands_hideout_potion_lab_talk -->
 				<effects><![CDATA[
@@ -90,12 +90,12 @@
                 <availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_hideout_takahashi_talked_potions)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Youko potion]]></responseTitle>
+				<responseTitle><![CDATA[Зелье ёко]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_hideout_collected_potion_today))
-						You've already collected a youko potion today. If you want another one, you'll have to come back tomorrow.
+						Сегодня ты уже собрал(а) зелье ёко. Если хочешь еще одно, придется вернуться завтра.
 					#ELSE
-						Takahashi has left a youko potion on the counter-top for you to pick up.
+						Такахаши оставила зелье ёко на прилавке, чтобы ты мог(ла) его забрать.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -132,8 +132,8 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Takahashi that you've got to go now.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Такахаши, что тебе пора идти.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/shinrin_highlands/hideout', 'POTION_LAB_TALK_LEAVE'))]
@@ -144,12 +144,12 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Meraxis]]></responseTitle>
+				<responseTitle><![CDATA[Мераксис]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_shinrin_highlands_hideout_potion_lab_talk_meraxis)
-						You're already asking Takahashi about her relationship with Meraxis...
+						Ты уже расспрашиваешь Такахаши о её отношениях с Мераксисом...
 					#ELSE
-						Ask Takahashi about her relationship with Meraxis.
+						Расспросить Такахаши о её отношениях с Мераксисом.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -164,12 +164,12 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Shiranui]]></responseTitle>
+				<responseTitle><![CDATA[Сирануи]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_shinrin_highlands_hideout_potion_lab_talk_shiranui)
-						You're already asking Takahashi about Shiranui...
+						Ты уже спрашиваешь Такахаши о Сирануи...
 					#ELSE
-						Ask Takahashi about Shiranui.
+						Спросить Такахаши о Сирануи.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -184,12 +184,12 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Potions]]></responseTitle>
+				<responseTitle><![CDATA[Зелья]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_shinrin_highlands_hideout_potion_lab_talk_potions)
-						You're already talking to Takahashi about the potions she's making...
+						Ты уже говоришь с Такахаши о зельях, которые она варит...
 					#ELSE
-						Ask Takahashi about the potions she's making.
+						Спросить Такахаши о зельях, которые она варит.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -206,17 +206,17 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
 				<colour><![CDATA[TRANSFORMATION_GENERIC]]></colour>
-				<responseTitle><![CDATA[Drink potion]]></responseTitle>
+				<responseTitle><![CDATA[Выпить зелье]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isFeminine() || (pc.getRace()!=RACE_FOX_MORPH || !pc.isAbleToHaveRaceTransformed()))
 						#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-							You can't access your mouth, so you aren't able to drink Takahashi's potion....
+							Ты не можешь пошевелить ртом, поэтому не в силах выпить зелье Такахаши....
 						#ELSE
-							Agree to drink Takahashi's potion.
-							<br/>Takahashi's potion will [style.italicsTfGeneric(transform you into a fox-girl)], and is likely to apply some additional, non-racial, transformative effects!
+							Согласиться выпить зелье Такахаши.
+							<br/>Зелье Такахаши [style.italicsTfGeneric(превратит тебя в лисицу-девочку)] и, скорее всего, вызовет дополнительные трансформационные эффекты, не связанные с расой!
 						#ENDIF
 					#ELSE
-						You're already to Takahashi's liking, so she doesn't want to transform you.
+						Ты уже в полной мере нравишься Такахаши, поэтому она не хочет тебя трансформировать.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -233,14 +233,14 @@
                 <availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_hideout_takahashi_talked_potions) && (flags.hasFlag(FLAG_innoxia_takahashi_daily_sex) || !takahashi.isAttractedTo(pc) || !pc.isAbleToAccessCoverableArea(CA_MOUTH, true))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Eat her out]]></responseTitle>
+				<responseTitle><![CDATA[Отсосать ей]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_takahashi_daily_sex))
-						You've already had sex with Takahashi today, and she's unwilling to have sex with you again until tomorrow...
+						Ты уже занимался сексом с Такахаши сегодня, и она не желает повторять это до завтра...
 					#ELSEIF(!takahashi.isAttractedTo(pc))
-						Takahashi is not attracted to you, and so would be unwilling to let you eat her out...
+						Такахаши не испытывает к тебе влечения, поэтому она вряд ли позволит тебе отсосать ей...
 					#ELSE
-						As you're unable to gain access to your mouth, you cannot perform oral on Takahashi...
+						Поскольку ты не можешь добраться до своего рта, ты не в состоянии заняться оральным сексом с Такахаши...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -249,8 +249,8 @@
                 <availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_takahashi_daily_sex) && flags.hasFlag(FLAG_innoxia_hideout_takahashi_talked_potions) && takahashi.isAttractedTo(pc) && pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Eat her out]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Takahashi that you're willing to serve her by eating her out.]]></responseTooltip>
+				<responseTitle><![CDATA[Отсосать ей]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Такахаши, что ты готов(а) послужить ей, отсосав...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -289,12 +289,12 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Youko]]></responseTitle>
+				<responseTitle><![CDATA[Юко]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_shinrin_highlands_hideout_potion_lab_talk_youko)
-						You're already talking to Takahashi about the youko...
+						Ты уже говоришь с Такахаши о ёко...
 					#ELSE
-						Ask Takahashi about the youko.
+						Спросить Такахаши о ёко.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -309,12 +309,12 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi) && flags.hasFlag(FLAG_innoxia_hideout_takahashi_talked_youko)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Kazuha]]></responseTitle>
+				<responseTitle><![CDATA[Кадзуха]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCurrentDialogueNode()==DN_innoxia_places_shinrin_highlands_hideout_potion_lab_talk_kazuha)
-						You're already talking to Takahashi about Kazuha, the benevolent lilin youko...
+						Ты уже говоришь с Такахаши о Кадзухе, добродетельной лилин ёко...
 					#ELSE
-						Ask Takahashi about Kazuha, the benevolent lilin youko.
+						Спросить Такахаши о Кадзухе, добродетельной лилин ёко.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -329,14 +329,14 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(takahashi) && flags.hasFlag(FLAG_innoxia_hideout_takahashi_talked_youko)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Kayo]]></responseTitle>
+				<responseTitle><![CDATA[Каё]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_hideout_takahashi_talked_meraxis))
-						You need to talk to Takahashi about her relationship with Meraxis before being able to ask about Kayo.
+						Прежде чем спрашивать о Каё, тебе нужно поговорить с Такахаши о её отношениях с Мераксисом.
 					#ELSEIF(game.getCurrentDialogueNode()==DN_innoxia_places_shinrin_highlands_hideout_potion_lab_talk_kayo)
-						You're already talking to Takahashi about Kayo, the trickster lilin youko...
+						Ты уже говоришь с Такахаши о Каё, лилин ёко-трикстере...
 					#ELSE
-						Ask Takahashi about Kayo, the trickster lilin youko.
+						Спросить Такахаши о Кайо, лилин-ёкае, обожающей розыгрыши.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -421,8 +421,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Transformed!]]></responseTitle>
-				<responseTooltip><![CDATA[Takahashi has transformed you into [pc.a_race]!]]></responseTooltip>
+				<responseTitle><![CDATA[Трансформация!]]></responseTitle>
+				<responseTooltip><![CDATA[Такахаши превратил тебя в [pc.a_race]!]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_shinrin_highlands_hideout_potion_lab_drink_potion_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -437,7 +437,7 @@
 	</scene>
 	
 	<scene id="potion_lab_after_sex_performing_oral">
-		<title><![CDATA[Finished]]></title>
+		<title><![CDATA[Завершено]]></title>
 		<content folderPath="txt/places/shinrin_highlands/hideout">POTION_LAB_AFTER_SEX_PERFORMING_ORAL</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -458,16 +458,16 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(meraxis)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Takahashi]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Meraxis about her relationship with Takahashi.]]></responseTooltip>
+				<responseTitle><![CDATA[Такахаши]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Мерасис об её отношениях с Такахаши.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_shinrin_highlands_hideout_seating_talk_takahashi]]></nextDialogue>
 			</response>
 			<response>
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(meraxis)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Hideout]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Meraxis why she made a hideout here in the Shinrin Highlands.]]></responseTooltip>
+				<responseTitle><![CDATA[Убежище]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Мерасис, почему она обустроила здесь убежище в высокогорье Шинрин.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_shinrin_highlands_hideout_seating_talk_hideout]]></nextDialogue>
 			</response>
 			
@@ -476,12 +476,12 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(meraxis)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Duel]]></responseTitle>
+				<responseTitle><![CDATA[Дуэль]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_meraxis_duel_daily_complete))
-						As you and Meraxis have already duelled one another today, you'll have to wait until tomorrow to do it again...
+						Поскольку вы с Мераксис уже сражались сегодня, придется подождать до завтра, чтобы устроить реванш...
 					#ELSE
-						Accept Meraxis's offer of a duel.
+						Принять вызов Мераксис на дуэль.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -503,14 +503,14 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(meraxis)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_meraxis_daily_sex))
-						You've already had sex with Meraxis in her room today, and as such will have to wait until tomorrow before you can do it again...
+					Сегодня ты уже занимался сексом с Мераксис в её комнате, поэтому тебе придётся подождать до завтра, прежде чем вы сможете повторить это...
 					#ELSEIF(flags.hasFlag(FLAG_innoxia_meraxis_oral_unlocked) && flags.hasFlag(FLAG_innoxia_meraxis_vaginal_unlocked) && (!game.isAnalContentEnabled() || flags.hasFlag(FLAG_innoxia_meraxis_anal_unlocked)))
-						Tell Meraxis that you want to have a 'duel' with her in her bedroom...
+					Скажи Мераксис, что хочешь устроить с ней «дуэль» в её спальне...
 					#ELSE
-						<i>Meraxis needs to be comfortable with having
+						<i>Мерасис нужно, чтобы она привыкла к
 						#IF(flags.hasFlag(FLAG_innoxia_meraxis_oral_unlocked))
 							 [style.colourGood(oral)],
 						#ELSE
@@ -520,21 +520,21 @@
 							#IF(game.isAnalContentEnabled())
 								 [style.colourGood(vaginal)],
 							#ELSE
-								 and [style.colourGood(vaginal)]
+								 и [style.colourGood(vaginal)]
 							#ENDIF
 						#ELSE
 							#IF(game.isAnalContentEnabled())
 								 [style.colourBad(vaginal)],
 							#ELSE
-								 and [style.colourBad(vaginal)]
+								 и [style.colourBad(vaginal)]
 							#ENDIF
 						#ENDIF
 						#IF(flags.hasFlag(FLAG_innoxia_meraxis_anal_unlocked))
-							 and [style.colourGood(anal)]
+							 и [style.colourGood(anal)]
 						#ELSE
-							 and [style.colourBad(anal)]
+							 и [style.colourBad(anal)]
 						#ENDIF
-						 sex with you before she'd agree to have sex with you in her bedroom...</i>
+занялась бы с тобой сексом в своей спальне, только если бы сначала переспала с тобой где-нибудь еще...</i>
 					#ENDIF
 				]]></responseTooltip>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
@@ -565,8 +565,8 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(meraxis)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Takahashi]]></responseTitle>
-				<responseTooltip><![CDATA[You're already talking to Meraxis about her relationship with Takahashi...]]></responseTooltip>
+				<responseTitle><![CDATA[Такахаши]]></responseTitle>
+				<responseTooltip><![CDATA[Ты уже говоришь с Мераксис о её отношениях с Такахаши...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -582,8 +582,8 @@
                 <availabilityConditional><![CDATA[[#game.getCharactersPresent().contains(meraxis)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Hideout]]></responseTitle>
-				<responseTooltip><![CDATA[You're already talking to Meraxis about her hideout...]]></responseTooltip>
+				<responseTitle><![CDATA[Убежище]]></responseTitle>
+				<responseTooltip><![CDATA[Ты уже говоришь с Мераксис о её убежище...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 		</responses>
@@ -599,8 +599,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Take charge]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Meraxis that you're going to be the one who's in charge...]]></responseTooltip>
+				<responseTitle><![CDATA[Взять инициативу в свои руки]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Мераксис, что главным будешь именно ты...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_meraxis_standard]]></id>
@@ -625,8 +625,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[Submit to Meraxis and allow her to take charge...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Покориться Мераксис и позволить ей взять всё в свои руки...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_meraxis_standard]]></id>
@@ -652,8 +652,8 @@
 	</scene>
 	
 	<scene id="seating_meraxis_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You and Meraxis have finished having sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Вы с Мераксис закончили заниматься сексом...]]></tooltip>
 		<content folderPath="txt/places/shinrin_highlands/hideout">SEATING_MERAXIS_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -662,8 +662,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Leave Meraxis's room and continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Выйти из комнаты Мераксиса и продолжить свой путь...]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_shinrin_highlands_hideout_corridor"/>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/shinrin_highlands/hideout', 'SEATING_MERAXIS_AFTER_SEX_LEAVE'))]
@@ -686,8 +686,8 @@
                 <availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_hideout_youko_lore_book_obtained)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Book]]></responseTitle>
-				<responseTooltip><![CDATA[Take a look at the dusty old book.]]></responseTooltip>
+				<responseTitle><![CDATA[Книга]]></responseTitle>
+				<responseTooltip><![CDATA[Взглянуть на старую пыльную книгу.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_shinrin_highlands_hideout_table_book]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.addItem(game.getItemGen().generateItem(SUBSPECIES_FOX_ASCENDANT.getBook()), 1, false, true))]
@@ -741,8 +741,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Rest (1 hour)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for an hour. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (1 час)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть один час. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_bedroom_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[60]]></secondsPassed>
 				<effects><![CDATA[
@@ -753,8 +753,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Rest (4 hours)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for four hours. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (4 часа)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть четыре часа. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_bedroom_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[240]]></secondsPassed>
 				<effects><![CDATA[
@@ -765,8 +765,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Rest (8 hours)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for eight hours. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (8 часов)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть восемь часов. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_bedroom_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[480]]></secondsPassed>
 				<effects><![CDATA[
@@ -777,8 +777,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Rest (12 hours)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for twelve hours. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (12 часов)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть двенадцать часов. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_bedroom_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[720]]></secondsPassed>
 				<effects><![CDATA[
@@ -790,28 +790,28 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
 				<responseTitle><![CDATA[
-					Rest until
+					Отдыхать до
 					#IF(game.isDayTime())
-						 Sunset
+						 заката
 					#ELSE
-						 Sunrise
+						 рассвета
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Rest for
+					Отдыхать на
 					#IF(game.getMinutesUntilNextMorningOrEvening() >= 60)
-						 [#~~(game.getMinutesUntilNextMorningOrEvening()/60)] hours
+						 [#~~(game.getMinutesUntilNextMorningOrEvening()/60)] час(ов)
 					#ENDIF
 					#IF(game.getMinutesUntilNextMorningOrEvening() % 60 != 0)
-						 [#~~(game.getMinutesUntilNextMorningOrEvening()%60)] minutes
+						 [#~~(game.getMinutesUntilNextMorningOrEvening()%60)] мин(ут)
 					#ENDIF
-					 until five minutes past
+						 до пяти минут после
 					#IF(game.isDayTime())
-						 sunset.
+						 заката.
 					#ELSE
-						 sunrise.
+						 рассвета.
 					#ENDIF
-					 As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.
+					Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь статус «Выспавшийся».
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_bedroom_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
@@ -827,8 +827,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Set alarm]]></responseTitle>
-				<responseTooltip><![CDATA[Set the alarm on your phone, so that you can wake at a specific time.]]></responseTooltip>
+				<responseTitle><![CDATA[Установить будильник]]></responseTitle>
+				<responseTooltip><![CDATA[Установи будильник на телефоне, чтобы проснуться в определенное время.]]></responseTooltip>
 				<nextDialogue stripContent="false"><![CDATA[ROOM_SET_ALARM]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[[#game.saveDialogueNode()]]]></effects>
@@ -838,9 +838,9 @@
 				<index><![CDATA[10]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.getSavedLong('player_phone_alarm') < 0)
-						Rest until alarm (unset)
+						Отдыхать до будильника (не установлен)
 					#ELSE
-						Rest until alarm ([#
+						Отдыхать до будильника ([#
 							var alarm = flags.getSavedLong('player_phone_alarm');
 							var alarmObj = game.getCustomTime(alarm/60, alarm%60, 0);
 							game.getDisplayTime(alarmObj)
@@ -849,20 +849,20 @@
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.getSavedLong('player_phone_alarm') < 0)
-						[style.colourBad(Your alarm is unset!)]
+						[style.colourBad(Будильник не установлен!)]
 					#ELSE
-						Rest for
+						Отдыхать
 						#IF(game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))==0)
-							 24 hours,
+							 24 часа,
 						#ELSE
 							#IF(game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm')) >= 60)
-								 [#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) / 60)] hours,
+								 [#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) / 60)] часов,
 							#ENDIF
 							#IF((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) % 60 != 0)
-								 [#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) % 60)] minutes,
+								[#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) % 60)] минут,
 							#ENDIF
 						#ENDIF
-						 until your alarm goes off. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.
+						до того как прозвенит будильник. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь статус «Хорошо отдохнувший».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
@@ -902,8 +902,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Toilet]]></responseTitle>
-				<responseTooltip><![CDATA[Use the toilet.]]></responseTooltip>
+				<responseTitle><![CDATA[Туалет]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться туалетом.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_toilets_use]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/shinrin_highlands/hideout', 'TOILET_USE'))]
@@ -912,10 +912,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wash]]></responseTitle>
+				<responseTitle><![CDATA[Умыться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use the sink to wash your hands and face.
-					<br/>[style.italicsGood(This will clean your head, eyes, mouth, neck, hair, fingers, hands, and wrists, as well as any clothing worn in these slots.)]
+					Умыться в раковине.
+					<br/>[style.italicsGood(Это очистит твою голову, глаза, рот, шею, волосы, пальцы, кисти и запястья, а также любую одежду в этих слотах.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_shinrin_highlands_hideout_toilets_use]]></nextDialogue>
 				<effects><![CDATA[
@@ -943,14 +943,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Quick shower]]></responseTitle>
+				<responseTitle><![CDATA[Быстрый душ]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCharactersPresent().contains(meraxis))
-						You'll have to wait until Meraxis is finished in the bathroom before being able to use it.
+						Тебе придется подождать, пока Мераксис выйдет из ванной, прежде чем ты сможешь ею воспользоваться.
 					#ELSE
-						Use the bathroom's shower to quickly wash yourself.
-						<br/>[style.italicsGood(Cleans <b>a maximum of [style.fluid(500)]</b> of fluids from all orifices.)]
-						<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]
+						Воспользуйся душем в ванной, чтобы быстро ополоснуться.
+						<br/>[style.italicsGood(Очищает <b> максимум [style.fluid(500)]</b> жидкостей из всех отверстий.)]
+						<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
@@ -969,14 +969,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Thorough shower]]></responseTitle>
+				<responseTitle><![CDATA[Тщательный душ]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCharactersPresent().contains(meraxis))
-						You'll have to wait until Meraxis is finished in the bathroom before being able to use it.
+						Тебе придется подождать, пока Мераксис выйдет из ванной, прежде чем ты сможешь ею воспользоваться.
 					#ELSE
-						Use the bathroom's shower to thoroughly clean yourself.
-						<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]
-						<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]
+						Воспользуйся душем в ванной, чтобы тщательно вымыться.
+						<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех твоих отверстий.)]
+						<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
@@ -995,14 +995,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Bath time]]></responseTitle>
+				<responseTitle><![CDATA[Время купания]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCharactersPresent().contains(meraxis))
-						You'll have to wait until Meraxis is finished in the bathroom before being able to use it.
+						Тебе придется подождать, пока Мераксис выйдет из ванной, прежде чем ты сможешь ею воспользоваться.
 					#ELSE
-						Use the bathroom's shower to thoroughly clean yourself and then spend some time soaking in the bath.
-						<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]
-						<br/>[style.italicsExcellent(This will clean <b>all</b> clothing in your inventory.)]
+						Воспользуйся душем в ванной, чтобы тщательно вымыться, а затем полежи немного в ванне.
+						<br/>[style.italicsExcellent(Это вымоет <b>все</b> жидкости из всех твоих отверстий.)]
+						<br/>[style.italicsExcellent(Это очистит <b>всю</b> одежду в твоем инвентаре.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[

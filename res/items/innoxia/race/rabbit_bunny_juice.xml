@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>30</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Bunny Juice]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Bunny Juices]]></namePlural>
-		<description><![CDATA[A small plastic bottle of what appears to be some sort of carrot juice, labelled as 'Bunny Juice'.  On the label, there's a rather obscene image of a rabbit-girl stuffing a carrot-shaped dildo into her pussy.]]></description> 
+		<name><![CDATA[Зайчий сок]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Завьи соки]]></namePlural>
+		<description><![CDATA[Маленькая пластиковая бутылочка с чем-то, напоминающим морковный сок, на которой красуется надпись «Зайчий сок». На этикетке изображена довольно непристойная картинка: девочка-кролик засовывает морковный фаллос себе в киску.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,14 +28,14 @@
 		<enchantmentEffectId>ATTRIBUTE_SEXUAL</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[#ATTRIBUTE_FERTILITY.getFormattedValue(5)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_VIRILITY.getFormattedValue(5)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_LUST.getFormattedValue(-10)] to 'potion effects']]></line>
+			<line><![CDATA[[#ATTRIBUTE_FERTILITY.getFormattedValue(5)] к «эффектам зелья»]]></line>
+			<line><![CDATA[[#ATTRIBUTE_VIRILITY.getFormattedValue(5)] к «эффектам зелья»]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_LUST.getFormattedValue(-10)] к «эффектам зелья»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A warm wave of arcane energy washes over [npc.name]...
+				Теплая волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_FERTILITY, 5)]
 			[#npc.addPotionEffect(ATTRIBUTE_VIRILITY, 5)]
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the Bunny Juice's cap and [npc.verb(start)] drinking the liquid contained within. An intense taste of carrots instantly fills [npc.her] mouth, and after greedily gulping down the entire beverage, [npc.she] [npc.verb(discover)] that it has an unusually sweet aftertaste.
+		[npc.Name] [npc.verb(unscrew)] крышку «Зачьего сока» и [npc.verb(start)] жадно пить содержимое. Насыщенный вкус моркови мгновенно наполняет рот [npc.her], и, осушив бутылочку залпом, [npc.she] [npc.verb(discover)] необычайно сладкое послевкусие.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the Bunny Juice's cap and [npc.verb(get)] [npc2.name] to drink the liquid contained within. An intense taste of carrots instantly fills [npc2.her] mouth, and after greedily gulping down the entire beverage, [npc2.she] [npc2.verb(discover)] that it has an unusually sweet aftertaste.
+		[npc.Name] [npc.verb(unscrew)] крышку «Зачьего сока» и [npc.verb(get)] [npc2.name] выпить содержимое. Насыщенный вкус моркови мгновенно наполняет рот [npc2.her], и, после того как [npc2.she] жадно осушает бутылочку, [npc2.she] [npc2.verb(discover)] необычайно сладкое послевкусие.
 		]]></otherUse>
 	</useDescriptions>
 

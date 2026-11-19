@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>25</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[lube pill]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[lube pills]]></namePlural>
-		<description><![CDATA[A round, turquoise lozenge, individually packaged in a foil and plastic wrapper. Small text printed on the foil names it as an 'instant-effect lubrication lozenge', but it's more commonly referred to as a 'lube pill'.]]></description> 
+		<name><![CDATA[смазывающая таблетка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[смазывающие таблетки]]></namePlural>
+		<description><![CDATA[Круглая бирюзовая пастилка в индивидуальной фольгированной пластиковой упаковке. Мелкий текст на фольге гласит: «пастилка для мгновенного смазывания», но чаще её называют просто «смазывающей таблеткой».]]></description> 
 		
 		<useDescriptor>swallow</useDescriptor>
 		
@@ -27,17 +27,17 @@
 		</statusEffects>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourSex(During sex:)]]]></line>
-			<line><![CDATA[[style.colourWetness(Lubricates)] all areas]]></line>
+			<line><![CDATA[[style.colourSex(Во время секса:)]]]></line>
+			<line><![CDATA[[style.colourWetness(Смазывает)] все области]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				The round lozenge instantly dissolves in [npc.namePos] mouth, and after swallowing the resulting sugary fluid, [npc.she] [npc.verb(feel)] a wave of arcane energy pulse through [npc.her] body.
+				Круглая пастилка мгновенно растворяется во рту [npc.namePos], и после проглатывания получившейся сладкой жидкости, [npc.she] [npc.verb(чувствует)], как волна арканной энергии пульсирует сквозь [npc.her] тело.
 				#IF(game.isInSex())
-					 [npc.NamePos] orifices instantly get wet, and a thin layer of slippery, odourless liquid seeps out of [npc.her] [npc.skin] to coat [npc.her] entire body in a thin layer of lubricant.
+					 [npc.NamePos] отверстия мгновенно становятся влажными, и тонкий слой скользкой, без запаха жидкости выделяется из [npc.her] [npc.skin], покрывая всё тело [npc.her] тонким слоем смазки.
 				#ELSE
-					 As [npc.sheIs] not currently having sex, the pill's lubricating effects don't immediately take effect...
+					 Поскольку [npc.sheIs] сейчас не занимается сексом, смазывающий эффект таблетки проявляется не сразу...
 				#ENDIF
 			</p>
 		]]></applyEffects>
@@ -51,10 +51,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-			[npc.Name] [npc.verb(pop)] the lube pill out of its little foil wrapper, before quickly placing it in [npc.her] mouth.
+			[npc.Name] [npc.verb(достает)] смазывающую таблетку из маленькой фольгированной упаковки, после чего быстро отправляет её в [npc.her] рот.
 		]]></selfUse>
 		<otherUse><![CDATA[
-			[npc.Name] [npc.verb(pop)] the lube pill out of its little foil wrapper, before bringing it up to [npc2.namePos] [npc2.lips] and forcing it into [npc2.her] mouth.
+			[npc.Name] [npc.verb(достает)] смазывающую таблетку из маленькой фольгированной упаковки, подносит её к [npc2.namePos] [npc2.lips] и заталкивает в [npc2.her] рот.
 		]]></otherUse>
 	</useDescriptions>
 

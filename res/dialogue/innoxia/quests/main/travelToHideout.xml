@@ -19,16 +19,16 @@
                 <availabilityConditional><![CDATA[[#!meraxis.isPregnant()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[To the hideout]]></responseTitle>
-				<responseTooltip><![CDATA[Travel through the Shinrin Highlands to reach Meraxis's hideout.]]></responseTooltip>
+				<responseTitle><![CDATA[К убежищу]]></responseTitle>
+				<responseTooltip><![CDATA[Пройти через высокогорье Шинрин, чтобы добраться до убежища Мераксиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_travelToHideout_world_map]]></nextDialogue>
 			</response>
 			<response>
                 <availabilityConditional><![CDATA[[#meraxis.isPregnant()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wait]]></responseTitle>
-				<responseTooltip><![CDATA[Wait for Meraxis to return.]]></responseTooltip>
+				<responseTitle><![CDATA[Ждать]]></responseTitle>
+				<responseTooltip><![CDATA[Дождаться возвращения Мераксиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_travelToHideout_start_pregnancy_sorted]]></nextDialogue>
 			</response>
 		</responses>
@@ -48,8 +48,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[To the hideout]]></responseTitle>
-				<responseTooltip><![CDATA[Travel through the Shinrin Highlands to reach Meraxis's hideout.]]></responseTooltip>
+				<responseTitle><![CDATA[К убежищу]]></responseTitle>
+				<responseTooltip><![CDATA[Пройти через высокогорье Шинрин, чтобы добраться до убежища Мераксиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_travelToHideout_world_map]]></nextDialogue>
 			</response>
 		</responses>
@@ -71,8 +71,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Voice]]></responseTitle>
-				<responseTooltip><![CDATA[Tell this mysterious person to show themselves.]]></responseTooltip>
+				<responseTitle><![CDATA[Голос]]></responseTitle>
+				<responseTooltip><![CDATA[Попросить таинственную личность показаться.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_travelToHideout_meeting]]></nextDialogue>
 			</response>
 		</responses>
@@ -87,8 +87,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Continue on to Meraxis's hideout.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Продолжить путь к убежищу Мераксиса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_quests_main_travelToHideout_hideout]]></nextDialogue>
 			</response>
 		</responses>
@@ -108,8 +108,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Alone]]></responseTitle>
-				<responseTooltip><![CDATA[Suddenly finding yourself alone in this mist-clad landscape, you need to find the flames which Meraxis mentioned in order to break the youko's spell.]]></responseTooltip>
+				<responseTitle><![CDATA[Наедине]]></responseTitle>
+				<responseTooltip><![CDATA[Внезапно оказавшись в одиночестве среди окутанных туманом пейзажей, тебе нужно найти огни, о которых упоминал Мераксис, чтобы разрушить заклинание ёко.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 			</response>
 		</responses>

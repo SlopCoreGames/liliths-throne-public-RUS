@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the plate reads 'Packed by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[На дне тарелки едва заметна надпись: «Упаковано ООО „Продукты DSG“»]]></authorTag>
 		
 		<value>15</value> 
 		<determiner><![CDATA[a bag of]]></determiner>
-		<name><![CDATA[Popcorn]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Popcorn]]></namePlural>
-		<description><![CDATA[A plastic bag of lightly buttered popcorn. The label on the cover depicts a raccoon-girl in denim overalls triumphantly raising an ear of corn above her while popcorn kernels explode off of it.]]></description> 
+		<name><![CDATA[Попкорн]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Попкорн]]></namePlural>
+		<description><![CDATA[Пластиковый пакет с легким слоем сливочного масла. На этикетке изображена енот-девушка в джинсовом комбинезоне, которая триумфально поднимает над головой початок кукурузы, от которого разлетаются зерна попкорна.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -30,15 +30,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger...
+				[npc.Name] [npc.verb(start)] чувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 		]]></applyEffects>
@@ -52,10 +52,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(open)] the bag and [npc.verb(breathe)] in the rich scent of butter and hot starch. Unable to resist the delicious looking snack, [npc.she] eagerly [npc.verb(start)] wolfing it all down and [npc.verb(empty)] the bag in moments.
+		[npc.Name] [npc.verb(open)] пакет и [npc.verb(breathe)] густой аромат масла и горячего крахмала. Не в силах устоять перед этим аппетитным лакомством, [npc.she] с жадностью [npc.verb(start)] поглощать его, и в считанные мгновения [npc.verb(empty)] пакет до дна.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(open)] the bag and [npc.verb(hold)] it out to [npc2.name], allowing [npc2.herHim] to [npc2.verb(breathe)] in the rich scent of butter and hot starch. Unable to resist the delicious-looking popcorn inside, [npc2.she] [npc2.verb(start)] wolfing it all down and [npc.verb(empty)] the bag in moments.
+		[npc.Name] [npc.verb(open)] пакет и [npc.verb(hold)] его перед [npc2.name], позволяя [npc2.herHim] [npc2.verb(breathe)] густой аромат масла и горячего крахмала. Не в силах устоять перед аппетитным попкорном, [npc2.she] с жадностью [npc2.verb(start)] поглощает его, и в считанные мгновения [npc.verb(empty)] пакет до дна.
 		]]></otherUse>
 	</useDescriptions>
 

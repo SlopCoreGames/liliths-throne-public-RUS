@@ -7,10 +7,10 @@
 	
 	<equipWeighting>10</equipWeighting>
 	
-	<name><![CDATA[Spin web]]></name>
+	<name><![CDATA[Плести паутину]]></name>
 	
 	<description><![CDATA[
-		Use [npc.her] spinneret to fire a stream of sticky webbing at [npc.her] target.
+		Используй [npc.her] паучий аппарат, чтобы выстрелить струей липкой паутины в [npc.her] цель.
 	]]></description>
 	
 	<damageType><![CDATA[
@@ -54,7 +54,7 @@
 	</availabilityCondition>
 	
 	<availabilityDescription><![CDATA[
-		Available to characters who have a spinneret.
+		Доступно персонажам, обладающим паучьим аппаратом.
 	]]></availabilityDescription>
 	
 	<!-- Once started to cocoon a target, the AI will become more and more interested in finishing the cocooning process off. -->
@@ -75,38 +75,37 @@
 	]]></criticalCondition>
 	
 	<criticalDescription><![CDATA[
-		Cannot critically hit.
+		Не может нанести критический удар.
 	]]></criticalDescription>
 	
 	<movePredictionDescriptionWithTarget><![CDATA[
-		Use [npc.her] spinneret to fire a stream of sticky webbing at [npc2.name].
+		Используй [npc.her] паучий аппарат, чтобы выстрелить струей липкой паутины в [npc2.name].
 	]]></movePredictionDescriptionWithTarget>
 	
 	<movePredictionDescriptionNoTarget><![CDATA[
-		Use [npc.her] spinneret to fire a stream of sticky webbing at [npc.her] target.
+		Используй [npc.her] паучий аппарат, чтобы выстрелить струей липкой паутины в [npc.her] цель.
 	]]></movePredictionDescriptionNoTarget>
 	
 	<performMove>
 		<execute><![CDATA[
-			[npc.Name] [npc.verb(point)] [npc.her] spinneret at [npc2.name], and before [npc2.sheIs] able to dodge out of the way, [npc.name] [npc.verb(fire)] a sticky stream of thick, strong webbing all over [npc2.herHim]!
+			[npc.Name] [npc.verb(point)] [npc.her] паучий аппарат на [npc2.name], и прежде чем [npc2.sheIs] успеет уклониться, [npc.name] [npc.verb(fire)] струю липкой, густой и прочной паутины прямо на [npc2.herHim]!
 			#IF(npc2.hasStatusEffect(SE_WEBBED_3))
 				[##npc2.setHealth(0)]
-				<br/>[style.italicsTerrible([npc2.NameIsFull] now totally wrapped up in a cocoon, and as such [npc2.is] completely defeated!)]
+				<br/>[style.italicsTerrible([npc2.NameIsFull] теперь полностью окутан коконом, и как след, [npc2.is] окончательно повержен!)]
 			#ELSEIF(npc2.hasStatusEffect(SE_WEBBED_2))
 				[##npc2.removeStatusEffectCombat(SE_WEBBED_2)]
 				[##npc2.addStatusEffect(SE_WEBBED_3, 10)]
-				<br/>[style.italicsTerrible([npc2.NameIsFull] almost totally wrapped up in a cocoon, and as such [npc2.is] near to being completely defeated!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] webbed again, [npc2.she] will be instantly defeated!)]
+				<br/>[style.italicsTerrible([npc2.NameIsFull] почти полностью окутан коконом, и как след, [npc2.is] близок к полному поражению!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] [npc2.verb(get)] окутан паутиной снова, [npc2.she] будет мгновенно повержен!)]
 			#ELSEIF(npc2.hasStatusEffect(SE_WEBBED_1))
 				[##npc2.removeStatusEffectCombat(SE_WEBBED_1)]
 				[##npc2.addStatusEffect(SE_WEBBED_2, 10)]
-				<br/>[style.italicsBad([npc2.NameIsFull] seriously caught up in strong, sticky webbing, and as such [npc2.is] struggling to fight back!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] webbed again, this effect will become extremely serious!)]
+				<br/>[style.italicsBad([npc2.NameIsFull] серьезно запутался в прочной липкой паутине, и как след, [npc2.is] с трудом пытается сопротивляться!)]
+				<br/>[style.italicsTerrible(Если [npc2.name] [npc2.verb(get)] окутан паутиной снова, этот эффект станет крайне серьезным!)]
 			#ELSE
-				[##npc2.addStatusEffect(SE_WEBBED_1, 10)]
-				<br/>[style.italicsBad([npc2.NameIsFull] caught up in strong, sticky webbing, and as such [npc2.her] ability to fight back is impaired!)]
-				<br/>[style.italicsTerrible(If [npc2.name] [npc2.verb(get)] webbed again, this effect will become more serious!)]
-			#ENDIF
+[##npc2.addStatusEffect(SE_WEBBED_1, 10)]
+<br/>[style.italicsBad([npc2.NameIsFull] запуталась в прочной, липкой паутине, из-за чего [npc2.her] способность сопротивляться ослаблена!)]
+<br/>[style.italicsTerrible(Если [npc2.name] [npc2.verb(get)] паутину снова, этот эффект станет еще серьезнее!)]			#ENDIF
 		]]></execute>
 		<critDescription><![CDATA[
 			N/A

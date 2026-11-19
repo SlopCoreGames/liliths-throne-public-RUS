@@ -13,12 +13,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Depot]]></responseTitle>
+				<responseTitle><![CDATA[Депо]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_transport_setup_in_progress))
-						As Astrapi informed you that she and Vronti will not be offering rides for the rest of today, you'll have to come back tomorrow if you wanted to make use of their services.
+						Раз Астрапи сообщила, что она и Вронти больше не будут возить пассажиров сегодня, тебе придется вернуться завтра, если ты хочешь воспользоваться их услугами.
 					#ELSE
-						Approach the Centaur Carriage Depot and see if you can find Astrapi or Vronti.
+						Подойди к депо кентавров и попробуй найти Астрапи или Вронти.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -46,12 +46,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Inside]]></responseTitle>
+				<responseTitle><![CDATA[Внутри]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5.75, 15))
-						The Centaur Carriage Depot is open between [style.italicsMinorGood([units.time(5.75)]-[units.time(15)])], and as such you could [pc.step] inside the intact barn and see what all the noise is about.
+						Депо кентавров открыто с [style.italicsMinorGood([units.time(5.75)]-[units.time(15)])], так что ты можешь [pc.step] внутрь целого амбара и посмотреть, из-за чего такой шум.
 					#ELSE
-						The Centaur Carriage Depot is open between [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], and as such is currently deserted. You'll have to come back during opening times if you wanted to take a look inside the barn.
+						Депо кентавров открыто с [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], поэтому сейчас оно пустует. Тебе придется вернуться в часы работы, если ты хочешь заглянуть внутрь амбара.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -68,8 +68,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wait & enter]]></responseTitle>
-				<responseTooltip><![CDATA[As the depot is currently closed, you could wait here until [units.time(5.75)] for it to open and then head inside, should you want to...]]></responseTooltip>
+				<responseTitle><![CDATA[Подождать и войти]]></responseTitle>
+				<responseTooltip><![CDATA[Так как депо сейчас закрыто, ты можешь подождать здесь до [units.time(5.75)], чтобы оно открылось, а затем войти, если пожелаешь...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_approach_inside]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
 					[#game.getMinutesUntilTimeInMinutes(5.75*60)]
@@ -84,12 +84,12 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5.75, 15))
-						Decide against heading inside the building and continue on your way through the Foloi Fields.
+						Решить не заходить в здание и продолжить свой путь через поля Фолой.
 					#ELSE
-						As the Centaur Carriage Depot is currently closed, there's nothing for you to do here. You'll have to come back between [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])] if you wanted to take a look inside the barn.
+						Поскольку депо кентавров сейчас закрыто, тебе здесь делать нечего. Тебе придется вернуться в промежутке между [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], если ты хочешь заглянуть внутрь амбара.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -113,8 +113,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Introduction]]></responseTitle>
-				<responseTooltip><![CDATA[Introduce yourself to the two centaurs.]]></responseTooltip>
+				<responseTitle><![CDATA[Знакомство]]></responseTitle>
+				<responseTooltip><![CDATA[Представиться двум кентаврам.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_introductions]]></nextDialogue>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_centaur_transport_introduced, true)]
@@ -139,16 +139,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.getMoney()>=250)
-						Elis [style.moneyFormat(250, span)]
+						Элис [style.moneyFormat(250, span)]
 					#ELSE
-						Elis [style.moneyFormatUncoloured(250, span)]
+						Элис [style.moneyFormatUncoloured(250, span)]
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()>=250)
-						Take up Astrapi's offer and have her take you to Elis now.
+						Принять предложение Астрапи, чтобы она отвезла тебя к Элис прямо сейчас.
 					#ELSE
-						You don't have enough money to get a ride to Elis!
+						У тебя недостаточно денег, чтобы доехать до Элис!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -166,8 +166,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Astrapi that you don't want a ride to Elis right now.]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Астрапи, что ты не хочешь ехать к Элис прямо сейчас.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'LEAVE_BARN'))]
@@ -190,12 +190,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Inside]]></responseTitle>
+				<responseTitle><![CDATA[Внутри]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5.75, 15))
-						The Centaur Carriage Depot is open between [style.italicsMinorGood([units.time(5.75)]-[units.time(15)])], and as such you could [pc.step] inside the intact barn and potentially find Astrapi or Vronti.
+						Депо кентаврских экипажей открыто с [style.italicsMinorGood([units.time(5.75)]-[units.time(15)])], так что ты можешь [pc.step] внутри целого амбара и, возможно, найти Астрапи или Вронти.
 					#ELSE
-						The Centaur Carriage Depot is open between [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], and as such is currently deserted. You'll have to come back during opening times if you wanted to meet Astrapi or Vronti again.
+						Депо кентаврских экипажей открыто с [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], поэтому сейчас оно пустует. Тебе придется вернуться в часы работы, если ты хочешь снова встретить Астрапи или Вронти.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -212,8 +212,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wait & enter]]></responseTitle>
-				<responseTooltip><![CDATA[As the depot is currently closed, you could wait here until [units.time(5.75)] for it to open and then head inside, should you want to...]]></responseTooltip>
+				<responseTitle><![CDATA[Подождать и войти]]></responseTitle>
+				<responseTooltip><![CDATA[Так как депо сейчас закрыто, ты можешь подождать здесь до [units.time(5.75)], чтобы оно открылось, а затем войти, если пожелаешь...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_approach_inside_repeat]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
 					[#game.getMinutesUntilTimeInMinutes(5.75*60)]
@@ -228,12 +228,12 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5.75, 15))
-						Decide against heading inside the building and continue on your way through the Foloi Fields.
+						Решить не заходить в здание и продолжить свой путь через поля Фолой.
 					#ELSE
-						As the Centaur Carriage Depot is currently closed, there's nothing for you to do here. You'll have to come back between [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])] if you wanted to meet Astrapi or Vronti again.
+						Поскольку депо кентаврских экипажей сейчас закрыто, тебе здесь делать нечего. Тебе придется вернуться в промежутке между [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], если ты хочешь снова встретить Астрапи или Вронти.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -271,8 +271,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wait]]></responseTitle>
-				<responseTooltip><![CDATA[As neither Astrapi nor Vronti are here right now, you'll need to wait for the next departure time if you wanted to get a ride to Elis.]]></responseTooltip>
+				<responseTitle><![CDATA[Ждать]]></responseTitle>
+				<responseTooltip><![CDATA[Раз ни Астрапи, ни Вронти сейчас нет на месте, тебе придется ждать следующего рейса, если ты хочешь отправиться в Элис.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_approach_inside_repeat]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
 					#IF(game.getHourOfDay()>12)
@@ -304,20 +304,20 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.getMoney()>=250)
-						Elis ([style.moneyFormat(250, span)])
+						Элис ([style.moneyFormat(250, span)])
 					#ELSE
-						Elis ([style.moneyFormatUncoloured(250, span)])
+						Элис ([style.moneyFormatUncoloured(250, span)])
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()>=250)
 						#IF(game.getCharactersPresent().contains(astrapi))
-							Take up Astrapi's offer and have her take you to Elis now.
+							Принять предложение Астрапи и отправиться в Элис прямо сейчас.
 						#ELSE
-							Take up Vronti's offer and have him take you to Elis now.
+							Принять предложение Вронти и отправиться в Элис прямо сейчас.
 						#ENDIF
 					#ELSE
-						You don't have enough money to get a ride to Elis!
+						У тебя недостаточно денег, чтобы доехать до Элис!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -344,8 +344,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Astrapi that you don't want a ride to Elis right now and exit the barn.]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Астрапи, что ты не хочешь ехать в Элис прямо сейчас, и выйти из амбара.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					#IF(game.getCharactersPresent().contains(astrapi) && astrapi.isVisiblyPregnant())
@@ -375,12 +375,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Set off]]></responseTitle>
+				<responseTitle><![CDATA[Отправиться в путь]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Set off on your way to Elis.
+						Отправиться в путь к Элис.
 					#ELSE
-						Set off on your way to Dominion.
+						Отправиться в путь к Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey]]></nextDialogue>
@@ -408,14 +408,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Relax and stay quiet as you're transported to Elis.
+						Расслабиться и сидеть тихо, пока тебя везут в Элис.
 					#ELSE
-						Relax and stay quiet as you're transported to Dominion.
+						Расслабься и веди себя тихо, пока тебя везут в Dominion.
 					#ENDIF
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из этих пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_end]]></nextDialogue>
 				<effects><![CDATA[
@@ -425,10 +425,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[History]]></responseTitle>
+				<responseTitle><![CDATA[История]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Astrapi about how long she and her brother have been working together as centaur carriage operators.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Спросить у Астрапи, как долго она и её брат работают вместе кентаврами-извозчиками.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из этих пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_talk]]></nextDialogue>
 				<effects><![CDATA[
@@ -438,10 +438,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Competition]]></responseTitle>
+				<responseTitle><![CDATA[Соперничество]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Astrapi about the competition she has for providing centaur carriage rides.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Спросить у Астрапи о конкуренции в сфере перевозок на кентаврах.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из этих пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_talk]]></nextDialogue>
 				<effects><![CDATA[
@@ -451,10 +451,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Lunette]]></responseTitle>
+				<responseTitle><![CDATA[Лунетт]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Astrapi about Lunette's centaurs and how she manages to avoid conflict with them.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Спросить у Астрапи о кентаврах Лунетт и о том, как ей удается избегать с ними конфликтов.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из этих пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_talk]]></nextDialogue>
 				<effects><![CDATA[
@@ -464,10 +464,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Flirt]]></responseTitle>
+				<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Start flirting with Astrapi.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Начать флиртовать с Астрапи.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из этих пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_flirt]]></nextDialogue>
 			</response>
@@ -493,12 +493,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Relax and continue making small talk as you're transported to Elis.
+						Расслабься и продолжай светскую беседу, пока тебя везут в Элис.
 					#ELSE
-						Relax and continue making small talk as you're transported to Dominion.
+						Расслабься и продолжай светскую беседу, пока тебя везут в Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_end]]></nextDialogue>
@@ -525,19 +525,19 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Push her]]></responseTitle>
-				<responseTooltip><![CDATA[With Astrapi shamelessly flashing you her horse-pussy, you can be sure that a little more pushing in the right direction will result in an offer of sex.]]></responseTooltip>
+				<responseTitle><![CDATA[Подтолкнуть её]]></responseTitle>
+				<responseTooltip><![CDATA[Астрапи бесстыдно демонстрирует тебе свою лошадиную киску, так что ты можешь быть уверен: еще немного поднажать в нужном направлении, и она сама предложит тебе секс.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_flirt_pushed]]></nextDialogue>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Stop flirting]]></responseTitle>
+				<responseTitle><![CDATA[Перестать флиртовать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Having had your fun, decide to stop flirting with Astrapi and stay quiet as you're transported to Elis.
+						Насладившись моментом, ты решаешь прекратить флирт с Астрапи и хранишь молчание, пока тебя везут в Элис.
 					#ELSE
-						Having had your fun, decide to stop flirting with Astrapi and stay quiet as you're transported to Dominion.
+						Насладившись моментом, ты решаешь прекратить флирт с Астрапи и хранишь молчание, пока тебя везут в Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_end]]></nextDialogue>
@@ -573,14 +573,14 @@
 				<availabilityConditional><![CDATA[[#(!pc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true)) && (!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Receive oral]]></responseTitle>
+				<responseTitle><![CDATA[Принять минет]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasPenis() && !pc.hasVagina())
-						You don't have a penis or a vagina, so Astrapi cannot perform oral on you...
+						У тебя нет ни пениса, ни вагины, так что Астрапи не может отсосать тебе...
 					#ELSEIF(pc.hasPenis())
-						You cannot gain access to your penis, so Astrapi cannot perform oral on you...
+						Ты не можешь дотянуться до своего пениса, поэтому Астрапи не может отсосать тебе...
 					#ELSE
-						You cannot gain access to your pussy, so Astrapi cannot perform oral on you...
+						Ты не можешь дотянуться до своей киски, поэтому Астрапи не может отсосать тебе...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -589,8 +589,8 @@
 				<availabilityConditional><![CDATA[[#(pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)) || (pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Receive oral]]></responseTitle>
-				<responseTooltip><![CDATA[Get Astrapi to drop down and perform oral on you.]]></responseTooltip>
+				<responseTitle><![CDATA[Принять минет]]></responseTitle>
+				<responseTooltip><![CDATA[Заставь Астрапи спуститься и отсосать тебе.]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -639,12 +639,12 @@
 				<availabilityConditional><![CDATA[[#!pc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Titjob]]></responseTitle>
+				<responseTitle><![CDATA[Титиджб]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasPenis())
-						You don't have a penis, so Astrapi cannot give you a titjob...
+						У тебя нет пениса, так что Астрапи не может сделать тебе титиджб...
 					#ELSE
-						You cannot gain access to your penis, so Astrapi cannot give you a titjob...
+						Ты не можешь дотянуться до своего пениса, так что Астрапи не может сделать тебе титиджб...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -653,8 +653,8 @@
 				<availabilityConditional><![CDATA[[#pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Titjob]]></responseTitle>
-				<responseTooltip><![CDATA[Get Astrapi to squeeze her huge breasts together so that you can fuck them.]]></responseTooltip>
+				<responseTitle><![CDATA[Титиджб]]></responseTitle>
+				<responseTooltip><![CDATA[Заставь Астрапи сжать свои огромные груди так, чтобы ты мог трахнуть их.]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -690,8 +690,8 @@
 				<availabilityConditional/>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Service pussy]]></responseTitle>
-				<responseTooltip><![CDATA[Get Astrapi to fully present her horse-pussy to you so that you can finger her and perform cunnilingus.]]></responseTooltip>
+				<responseTitle><![CDATA[Отсосать ей]]></responseTitle>
+				<responseTooltip><![CDATA[Заставь Астрапи полностью выставить тебе свою лошадиную киску, чтобы ты мог потыкать в неё пальцами или отсосать.]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -729,16 +729,16 @@
 				<index><![CDATA[4]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.isTaur())
-						Mount her
+						Оседлать её
 					#ELSE
-						Fuck her
+						Трахнуть её
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasPenis())
-						You don't have a penis, so you cannot fuck Astrapi...
+						У тебя нет пениса, так что ты не можешь трахнуть Астрапи...
 					#ELSE
-						You cannot gain access to your penis, so you cannot fuck Astrapi...
+						Ты не можешь дотянуться до своего пениса, так что не можешь трахнуть Астрапи...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -749,16 +749,16 @@
 				<index><![CDATA[4]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.isTaur())
-						Mount her
+						Оседлать её
 					#ELSE
-						Fuck her
+						Трахнуть её
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isTaur())
-						Get Astrapi to present herself to you so that you can mount her and rut her pussy.
+						Заставь Астрапи подставиться под тебя, чтобы ты мог оседлать её и оттрахать её киску.
 					#ELSE
-						Get Astrapi to present herself to you so that you can fuck her pussy.
+						Заставь Астрапи подставиться под тебя, чтобы ты мог трахнуть её киску.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -796,16 +796,16 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_astrapi_impregnation_talk)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Impregnation]]></responseTitle>
+				<responseTitle><![CDATA[Оплодотворение]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!astrapi.isAffectionAtLeast(pc, AFFECTION_POSITIVE_FOUR_LOVE))
-						As Astrapi doesn't seem too keen on the idea of being impregnated, you think that you'd better wait until the two of you are on better terms before asking her about it.
-						<br/>[style.italicsBad(Requires affection of at least [#AFFECTION_POSITIVE_FOUR_LOVE.getMinimumValue()].)]
-						<br/>Current affection: [#~~astrapi.getAffection(pc)]
+						Поскольку Астрапи, похоже, не в восторге от идеи забеременеть, ты думаешь, что лучше подождать, пока вы не станете ближе, прежде чем спрашивать её об этом.
+						<br/>[style.italicsBad(Требуется привязанность не менее [#AFFECTION_POSITIVE_FOUR_LOVE.getMinimumValue()].)]
+						<br/>Текущая привязанность: [#~~astrapi.getAffection(pc)]
 					#ELSE
-						Wanting to knock her up, you ask Astrapi if she'd be willing to let you impregnate her.
-						<br/>[style.italicsGood(Requires affection of at least [#AFFECTION_POSITIVE_FOUR_LOVE.getMinimumValue()].)]
-						<br/>Current affection: [#~~astrapi.getAffection(pc)]
+						Желая её оплодотворить, ты спрашиваешь Астрапи, готова ли она позволить тебе зачать от тебя ребенка.
+						<br/>[style.italicsGood(Требуется привязанность не менее [#AFFECTION_POSITIVE_FOUR_LOVE.getMinimumValue()].)]
+						<br/>Текущая привязанность: [#~~astrapi.getAffection(pc)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -824,12 +824,12 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Service ass]]></responseTitle>
+				<responseTitle><![CDATA[Анус на службе]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-						Tell Astrapi about how [style.mules] such as yourself are well trained to perform anilingus, before demonstrating this fact on her.
+						Расскажи Астрапи о том, что [style.mules] вроде тебя отлично обучены делать анилингус, а затем продемонстрируй это на ней.
 					#ELSE
-						Get Astrapi to fully present her rear end to you so that you can finger her anus and perform anilingus.
+						Заставь Астрапи полностью подставить тебе свой зад, чтобы ты мог поиграть пальцами в её анус и заняться анилингусом.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -882,16 +882,16 @@
 				<index><![CDATA[7]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.isTaur())
-						Mount her (anal)
+						Оседлать её (анально)
 					#ELSE
-						Fuck her ass
+						Трахать её в задницу
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasPenis())
-						You don't have a penis, so you cannot fuck Astrapi...
+						У тебя нет пениса, так что ты не можешь трахнуть Астрапи...
 					#ELSE
-						You cannot gain access to your penis, so you cannot fuck Astrapi...
+						Ты не можешь дотянуться до своего пениса, так что не можешь трахнуть Астрапи...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -902,16 +902,16 @@
 				<index><![CDATA[7]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.isTaur())
-						Mount her (anal)
+						Оседлать её (анально)
 					#ELSE
-						Fuck her ass
+						Трахать её в задницу
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isTaur())
-						Get Astrapi to present herself to you so that you can mount her and rut her asshole.
+						Заставить Астрапи подставиться, чтобы ты мог оседлать её и оттрахать её анус.
 					#ELSE
-						Get Astrapi to present herself to you so that you can fuck her asshole.
+						Заставить Астрапи подставиться, чтобы ты мог трахнуть её в задницу.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -948,12 +948,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Back out]]></responseTitle>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Having had your fun, decide to back out of this situation and tell Astrapi that you don't want to have sex after all, then stay quiet as you're transported to Elis.
+						Насладившись, решить выйти из этой ситуации и сказать Астрапи, что ты всё-таки не хочешь заниматься сексом, а затем молча ехать дальше до Элиса.
 					#ELSE
-						Having had your fun, decide to back out of this situation and tell Astrapi that you don't want to have sex after all, then stay quiet as you're transported to Dominion.
+						Насладившись, решить выйти из этой ситуации и сказать Астрапи, что ты всё-таки не хочешь заниматься сексом, а затем молча ехать дальше до Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_end]]></nextDialogue>
@@ -973,8 +973,8 @@
 	</scene>
 	
 	<scene id="astrapi_post_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You and Astrapi bring an end to the sex.]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Вы с Астрапи заканчиваете секс.]]></tooltip>
 		<content folderPath="txt/places/fields/centaur_transport">ASTRAPI_POST_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -983,12 +983,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Relax for the rest of the journey as Astrapi continues to transport you to Elis.
+						Расслабиться на остаток пути, пока Астрапи везёт тебя к Элису.
 					#ELSE
-						Relax for the rest of the journey as Astrapi continues to transport you to Dominion.
+						Отдыхай остаток пути, пока Астрапи везет тебя в Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_journey_end]]></nextDialogue>
@@ -1031,12 +1031,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Thank Astrapi for the ride and say goodbye, before setting off towards the gates of Elis.
+						Поблагодари Астрапи за поездку и попрощайся, прежде чем отправиться к вратам Элиса.
 					#ELSE
-						Thank Astrapi for the ride and say goodbye, before setting off towards Dominion.
+						Поблагодари Астрапи за поездку и попрощайся, прежде чем отправиться в Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
@@ -1049,16 +1049,16 @@
 				<availabilityConditional><![CDATA[[#(astrapi.getTotalTimesHadSex(pc)==0)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Offer clean]]></responseTitle>
-				<responseTooltip><![CDATA[You don't think that Astrapi would feel comfortable allowing you to help clean her off. Perhaps if the two of you had previously had intimate relations with one another, things would be different...]]></responseTooltip>
+				<responseTitle><![CDATA[Предложить помочь с чисткой]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе кажется, что Астрапи будет неловко, если ты предложишь ей помочь привести себя в порядок. Возможно, если бы между вами уже была интимная связь, всё было бы иначе...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#(astrapi.getTotalTimesHadSex(pc)>0)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Offer clean]]></responseTitle>
-				<responseTooltip><![CDATA[You can see that there's a fine sheen of sweat over the human half of Astrapi's body, while her horse half looks like it could do with a brush. Offer to help clean her off.]]></responseTooltip>
+				<responseTitle><![CDATA[Предложить помочь с чисткой]]></responseTitle>
+				<responseTooltip><![CDATA[Ты замечаешь, что человеческая часть тела Астрапи покрыта тонким слоем пота, а её лошадиная часть явно нуждается в чистке. Предложи помочь ей привести себя в порядок.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_clean]]></nextDialogue>
 			</response>
 		</responses>
@@ -1077,23 +1077,23 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wipe back]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Astrapi that you'll wipe the sweat from her back.]]></responseTooltip>
+				<responseTitle><![CDATA[Вытереть спину]]></responseTitle>
+				<responseTooltip><![CDATA[Скажи Астрапи, что ты вытрешь пот с её спины.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_clean_wipe]]></nextDialogue>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Lick abs]]></responseTitle>
-				<responseTooltip><![CDATA[As Astrapi is clearly getting turned on, you're certain that she'll consent to letting you lick the sweat from her abdominal muscles.]]></responseTooltip>
+				<responseTitle><![CDATA[Облизать пресс]]></responseTitle>
+				<responseTooltip><![CDATA[Астрапи явно заводится, так что ты уверен: она позволит тебе слизывать пот с её пресса.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_clean_abs]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#game.isArmpitContentEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Lick armpits]]></responseTitle>
-				<responseTooltip><![CDATA[As Astrapi is clearly getting turned on, you're certain that she'll consent to letting you lick the sweat from her armpits.]]></responseTooltip>
+				<responseTitle><![CDATA[Лизать подмышки]]></responseTitle>
+				<responseTooltip><![CDATA[Астрапи явно заводится, так что ты уверен: она позволит тебе слизывать пот из её подмышек.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_astrapi_clean_armpits]]></nextDialogue>
 				<requiredFetishes>
 					<fetish><![CDATA[FETISH_ARMPIT_GIVING]]></fetish>
@@ -1116,8 +1116,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Finished]]></responseTitle>
-				<responseTooltip><![CDATA[Having finished helping her out, it's time to say goodbye to Astrapi.]]></responseTooltip>
+				<responseTitle><![CDATA[Завершено]]></responseTitle>
+				<responseTooltip><![CDATA[Помощь закончена, пора прощаться с Астрапи.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -1141,8 +1141,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Finished]]></responseTitle>
-				<responseTooltip><![CDATA[Having finished helping her out, it's time to say goodbye to Astrapi.]]></responseTooltip>
+				<responseTitle><![CDATA[Завершено]]></responseTitle>
+				<responseTooltip><![CDATA[Помощь закончена, пора прощаться с Астрапи.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'ASTRAPI_CLEAN_ABS_END'))]
@@ -1154,12 +1154,12 @@
 				<availabilityConditional><![CDATA[[#!pc.hasPenisIgnoresDildo() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Handjob]]></responseTitle>
+				<responseTitle><![CDATA[Ручная стимуляция]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasPenisIgnoresDildo())
-						You don't have a penis, so you cannot receive a handjob from Astrapi...
+						У тебя нет пениса, так что Астрапи не сможет отработать тебе рукой...
 					#ELSE
-						You cannot gain access to your penis, so you cannot receive a handjob from Astrapi...
+						Ты не можешь дотянуться до своего пениса, так что Астрапи не сможет отработать тебе рукой...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -1168,8 +1168,8 @@
 				<availabilityConditional><![CDATA[[#pc.hasPenisIgnoresDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Handjob]]></responseTitle>
-				<responseTooltip><![CDATA[Accept Astrapi's offer of a handjob so that you can cum on her muscular abs.]]></responseTooltip>
+				<responseTitle><![CDATA[Ручная стимуляция]]></responseTitle>
+				<responseTooltip><![CDATA[Принять предложение Астрапи и позволить ей довести тебя до конча на её мускулистый пресс.]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1204,8 +1204,8 @@
 	</scene>
 	
 	<scene id="astrapi_post_sex_abs">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You and Astrapi bring an end to the sex.]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Вы с Астрапи заканчиваете секс.]]></tooltip>
 		<content folderPath="txt/places/fields/centaur_transport">ASTRAPI_POST_SEX_ABS</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1215,8 +1215,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Having finished helping her out, it's time to say goodbye to Astrapi.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Помощь закончена, пора прощаться с Астрапи.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'ASTRAPI_CLEAN_END'))]
@@ -1239,8 +1239,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Finished]]></responseTitle>
-				<responseTooltip><![CDATA[Having finished helping her out, it's time to say goodbye to Astrapi.]]></responseTooltip>
+				<responseTitle><![CDATA[Завершено]]></responseTitle>
+				<responseTooltip><![CDATA[Помощь закончена, пора прощаться с Астрапи.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'ASTRAPI_CLEAN_ARMPITS_END'))]
@@ -1252,12 +1252,12 @@
 				<availabilityConditional><![CDATA[[#!pc.hasPenisIgnoresDildo() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Armpit fuck]]></responseTitle>
+				<responseTitle><![CDATA[Подмышечный секс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasPenisIgnoresDildo())
-						You don't have a penis, so you cannot fuck Astrapi's armpits...
+						У тебя нет пениса, так что ты не можешь трахать подмышки Астрапи...
 					#ELSE
-						You cannot gain access to your penis, so you cannot fuck Astrapi's armpits...
+						Ты не можешь дотянуться до своего члена, так что не можешь трахать подмышки Астрапи...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -1266,8 +1266,8 @@
 				<availabilityConditional><![CDATA[[#pc.hasPenisIgnoresDildo() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Armpit fuck]]></responseTitle>
-				<responseTooltip><![CDATA[Take up Astrapi's offer and rub your cock up and down over her armpits until you cum on them.]]></responseTooltip>
+				<responseTitle><![CDATA[Подмышечный секс]]></responseTitle>
+				<responseTooltip><![CDATA[Принять предложение Астрапи и тереть свой член вверх-вниз по её подмышкам, пока не кончишь на них.]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1302,8 +1302,8 @@
 	</scene>
 	
 	<scene id="astrapi_post_sex_armpits">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You and Astrapi bring an end to the sex.]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Вы с Астрапи заканчиваете секс.]]></tooltip>
 		<content folderPath="txt/places/fields/centaur_transport">ASTRAPI_POST_SEX_ARMPITS</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1313,8 +1313,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Having finished helping her out, it's time to say goodbye to Astrapi.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Помощь закончена, пора прощаться с Астрапи.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'ASTRAPI_CLEAN_END'))]
@@ -1325,8 +1325,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_astrapi_not_shaving) && game.isBodyHairEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Stop shaving]]></responseTitle>
-				<responseTooltip><![CDATA[Before saying goodbye to Astrapi, tell her to stop shaving her armpits.]]></responseTooltip>
+				<responseTitle><![CDATA[Перестать брить]]></responseTitle>
+				<responseTooltip><![CDATA[Перед тем как попрощаться с Астрапи, сказать ей, чтобы она перестала брить подмышки.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'ASTRAPI_POST_SEX_ARMPITS_SHAVING_STOP'))]
@@ -1339,8 +1339,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_astrapi_not_shaving) && game.isBodyHairEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Start shaving]]></responseTitle>
-				<responseTooltip><![CDATA[Before saying goodbye to Astrapi, tell her to start shaving her armpits again.]]></responseTooltip>
+				<responseTitle><![CDATA[Начать брить]]></responseTitle>
+				<responseTooltip><![CDATA[Перед тем как попрощаться с Астрапи, сказать ей, чтобы она снова начала брить подмышки.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/centaur_transport', 'ASTRAPI_POST_SEX_ARMPITS_SHAVING_START'))]
@@ -1367,12 +1367,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Set off]]></responseTitle>
+				<responseTitle><![CDATA[Отправиться в путь]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Get into the carriage and set off on your way to Elis.
+						Сесть в карету и отправиться в путь к Элису.
 					#ELSE
-						Get into the carriage and set off on your way to Dominion.
+						Садись в карету и отправляйся в путь к Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey]]></nextDialogue>
@@ -1400,14 +1400,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Relax and stay quiet as you're transported to Elis.
+						Расслабиться и сидеть тихо, пока тебя везут в Элис.
 					#ELSE
-						Relax and stay quiet as you're transported to Dominion.
+						Расслабься и веди себя тихо, пока тебя везут в Dominion.
 					#ENDIF
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из этих пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
 				<effects><![CDATA[
@@ -1417,10 +1417,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[History]]></responseTitle>
+				<responseTitle><![CDATA[История]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Vronti about how long he and his sister have been working together as centaur carriage operators.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Спроси Вронти о том, как долго он и его сестра работают вместе кентаврами-возничими.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
 				<effects><![CDATA[
@@ -1431,10 +1431,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Competition]]></responseTitle>
+				<responseTitle><![CDATA[Соперничество]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Vronti about the competition he has for providing centaur carriage rides.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Спроси Вронти о конкуренции среди тех, кто предоставляет услуги кентавров-возничих.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
 				<effects><![CDATA[
@@ -1445,10 +1445,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Lunette]]></responseTitle>
+				<responseTitle><![CDATA[Лунетт]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Ask Vronti about Lunette's centaurs and how he manages to avoid conflict with them.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Спроси Вронти о кентаврах Лунетты и о том, как ему удается избегать с ними конфликтов.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
 				<effects><![CDATA[
@@ -1459,10 +1459,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Flirt]]></responseTitle>
+				<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Start flirting with Vronti.
-					<br/><i>Only one of these five actions can be chosen before you reach your destination.</i>
+					Начни флиртовать с Вронти.
+					<br/><i>До того как ты достигнешь пункта назначения, можно выбрать только одно из пяти действий.</i>
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_flirt]]></nextDialogue>
 			</response>
@@ -1493,19 +1493,19 @@
 				</requiredPerks>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Push him]]></responseTitle>
-				<responseTooltip><![CDATA[Use every possible trick you know to seduce Vronti and get him to respond to your flirting.]]></responseTooltip>
+				<responseTitle><![CDATA[Подразнить его]]></responseTitle>
+				<responseTooltip><![CDATA[Использовать все известные тебе уловки, чтобы соблазнить Вронти и заставить его ответить на твой флирт.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_flirt_pushed]]></nextDialogue>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Give up]]></responseTitle>
+				<responseTitle><![CDATA[Сдаться]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Vronti's stoicism seems to be completely unassailable. Stop trying to flirt with him and stay quiet as you're transported to Elis.
+					Стоицизм Вронти кажется абсолютно несокрушимым. Перестань пытаться флиртовать с ним и просто молчи, пока тебя везут в Элис.
 					#ELSE
-						Vronti's stoicism seems to be completely unassailable. Stop trying to flirt with him and stay quiet as you're transported to Dominion.
+					Стоицизм Вронти кажется абсолютно несокрушимым. Перестань пытаться флиртовать с ним и просто молчи, пока тебя везут в Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
@@ -1537,8 +1537,8 @@
 				<availabilityConditional/>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Handjob]]></responseTitle>
-				<responseTooltip><![CDATA[Having successfully given him an erection, tell Vronti that you'll help him deal with it by jerking him off.]]></responseTooltip>
+				<responseTitle><![CDATA[Ручная стимуляция]]></responseTitle>
+				<responseTooltip><![CDATA[Успешно доставив ему эрекцию, скажи Вронти, что поможешь ему справиться с этим, поработав рукой.]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_vronti_handjob_given, true)]
@@ -1576,12 +1576,12 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_vronti_handjob_given) || !pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Blowjob]]></responseTitle>
+				<responseTitle><![CDATA[Минет]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_vronti_handjob_given))
-						You can tell that Vronti wouldn't agree to anything more than receiving a handjob. After jerking him off, you're sure that he'll be more receptive to a blowjob the next time you find yourself in this situation.
+						Ты понимаешь, что Вронти не согласится ни на что большее, чем просто мастурбация. После того как ты его оттрахаешь рукой, ты уверена, что в следующий раз, когда вы окажетесь в такой ситуации, он будет куда охотнее принять минет.
 					#ELSE
-						You cannot gain access to your mouth, so you cannot give Vronti a blowjob...
+						Ты не можешь воспользоваться своим ртом, а значит, не можешь сделать Вронти минет...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -1590,8 +1590,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_vronti_handjob_given) && pc.isAbleToAccessCoverableArea(CA_MOUTH, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Blowjob]]></responseTitle>
-				<responseTooltip><![CDATA[Having successfully given him an erection, tell Vronti that you'll help him deal with it by giving him a blowjob.]]></responseTooltip>
+				<responseTitle><![CDATA[Минет]]></responseTitle>
+				<responseTooltip><![CDATA[Успешно доставив ему эрекцию, скажи Вронти, что поможешь ему справиться с этим, сделав ему минет.]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_vronti_blowjob_given, true)]
@@ -1629,18 +1629,18 @@
 				<availabilityConditional><![CDATA[[#(!flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) && !flags.hasFlag(FLAG_innoxia_vronti_anilingus_given)) || !pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) && !flags.hasFlag(FLAG_innoxia_vronti_anilingus_given))
 						#IF(game.isAnalContentEnabled())
-							You can tell that Vronti wouldn't agree to anything more than receiving a blowjob or having his ass serviced. After doing either of these two things, you're sure that he'll be more receptive to fucking you the next time you find yourself in this situation.
+							Ты понимаешь, что Вронти не согласится ни на что большее, чем минет или ласки его задницы. После того как ты сделаешь что-то из этого, ты уверена, что в следующий раз он будет куда охотнее трахнет тебя.
 						#ELSE
-							You can tell that Vronti wouldn't agree to anything more than receiving a blowjob. After sucking his cock, you're sure that he'll be more receptive to fucking you the next time you find yourself in this situation.
+							Ты понимаешь, что Вронти не согласится ни на что большее, чем минет. После того как ты пососешь его член, ты уверена, что в следующий раз он будет куда охотнее трахнет тебя.
 						#ENDIF
 					#ELSEIF(!pc.hasVagina())
-						You do not have a vagina, so you cannot get fucked by Vronti...
+						У тебя нет влагалища, так что Вронти не сможет тебя оттрахать...
 					#ELSE
-						You cannot gain access to your vagina, so you cannot get fucked by Vronti...
+						Ты не можешь получить доступ к своему влагалищу, так что Вронти не сможет тебя оттрахать...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -1649,8 +1649,8 @@
 				<availabilityConditional><![CDATA[[#(flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) || flags.hasFlag(FLAG_innoxia_vronti_anilingus_given)) && pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[Having successfully given him an erection, tell Vronti that you'll help him deal with it by letting him rut your pussy.]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[Успешно доставив ему эрекцию, скажи Вронти, что поможешь ему справиться с этим, позволив ему трахнуть твою киску.]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_vronti_sex_given, true)]
@@ -1687,12 +1687,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Stop flirting]]></responseTitle>
+				<responseTitle><![CDATA[Перестать флиртовать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Having had your fun, decide to stop flirting with Vronti and stay quiet as you're transported to Elis.
+						Насладившись моментом, ты решаешь перестать флиртовать с Вронти и затихаешь, пока вас везут в Элис.
 					#ELSE
-						Having had your fun, decide to stop flirting with Vronti and stay quiet as you're transported to Dominion.
+						Насладившись, ты решаешь перестать флиртовать с Вронти и затихаешь, пока тебя везут в Dominion.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
@@ -1705,9 +1705,9 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && !flags.hasFlag(FLAG_innoxia_vronti_handjob_given)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Service ass]]></responseTitle>
+				<responseTitle><![CDATA[Анус на службе]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You can tell that Vronti wouldn't agree to anything more than receiving a handjob. After jerking him off, you're sure that he'll be more receptive to having his ass serviced the next time you find yourself in this situation.
+					Ты понимаешь, что Вронти не согласится ни на что большее, чем мастурбация рукой. После того как ты его оттрахаешь, ты уверена, что в следующий раз, когда вы окажетесь в такой ситуации, он будет куда охотнее подставит тебе задницу.
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 			</response>
@@ -1715,12 +1715,12 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && flags.hasFlag(FLAG_innoxia_vronti_handjob_given)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Service ass]]></responseTitle>
+				<responseTitle><![CDATA[Анус на службе]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-						Having successfully given him an erection, tell Vronti about how [style.mules] such as yourself are well trained to perform anilingus, before demonstrating this fact on him.
+						Успешно доставив ему эрекцию, расскажи Вронти о том, что такие [style.mules], как ты, отлично обучены технике анилингуса, а затем продемонстрируй это на деле.
 					#ELSE
-						Having successfully given him an erection, tell Vronti that you'll help him deal with it by anally fingering him, after which you could also perform anilingus on him.
+						Успешно доставив ему эрекцию, скажи Вронти, что поможешь ему справиться с возбуждением, проникая пальцами в его анус, а после этого ты также сможешь заняться с ним анилингусом.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -1773,12 +1773,12 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && ((!flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) && !flags.hasFlag(FLAG_innoxia_vronti_anilingus_given)) || !pc.isAbleToAccessCoverableArea(CA_ANUS, true))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Fucked (anal)]]></responseTitle>
+				<responseTitle><![CDATA[Трахали (анально)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) && !flags.hasFlag(FLAG_innoxia_vronti_anilingus_given))
-						You can tell that Vronti wouldn't agree to anything more than receiving a blowjob or having his ass serviced. After doing either of these two things, you're sure that he'll be more receptive to fucking your ass the next time you find yourself in this situation.
+						Ты понимаешь, что Вронти не согласится ни на что большее, чем минет или ласки его задницы. После того как ты сделаешь что-то из этого, ты уверена, что в следующий раз он будет куда охотнее трахать твою задницу.
 					#ELSE
-						You cannot gain access to your asshole, so you cannot get fucked by Vronti...
+						Ты не можешь открыть доступ к своему анусу, поэтому Вронти не может тебя оттрахать...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -1787,8 +1787,8 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && (flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) || flags.hasFlag(FLAG_innoxia_vronti_anilingus_given)) && pc.isAbleToAccessCoverableArea(CA_ANUS, true)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Fucked (anal)]]></responseTitle>
-				<responseTooltip><![CDATA[Having successfully given him an erection, tell Vronti that you'll help him deal with it by letting him rut your asshole.]]></responseTooltip>
+				<responseTitle><![CDATA[Трахали (анально)]]></responseTitle>
+				<responseTooltip><![CDATA[Успешно доставив ему эрекцию, скажи Вронти, что поможешь ему справиться с ней, позволив ему оттрахать твою задницу.]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_vronti_anal_sex_given, true)]
@@ -1826,14 +1826,14 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && ((!flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) && !flags.hasFlag(FLAG_innoxia_vronti_anilingus_given)) || !pc.isAbleToAccessCoverableArea(CA_PENIS, true) || !pc.hasPenis())]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Fuck his ass]]></responseTitle>
+				<responseTitle><![CDATA[Трахать его в зад]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) && !flags.hasFlag(FLAG_innoxia_vronti_anilingus_given))
-						You can tell that Vronti wouldn't agree to anything more than receiving a blowjob or having his ass serviced. After doing either of these two things, you're sure that he'll be more receptive to other forms of stimulation...
+						Сразу видно, что Вронти не согласится ни на что большее, чем минет или отсос его задницы. Но ты уверена, что после этого он станет куда восприимчивее к другим видам стимуляции...
 					#ELSEIF(!pc.hasPenis())
-						You don't have a penis, so you can't fuck Vronti in the ass...
+						У тебя нет пениса, так что ты не можешь оттрахать Вронти в зад...
 					#ELSEIF(!pc.isAbleToAccessCoverableArea(CA_PENIS, true))
-						You cannot gain access to your penis, so you cannot fuck Vronti in the ass...
+						Ты не можешь дотянуться до своего пениса, поэтому не можешь оттрахать Вронти в зад...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
@@ -1842,8 +1842,8 @@
 				<availabilityConditional><![CDATA[[#game.isAnalContentEnabled() && (flags.hasFlag(FLAG_innoxia_vronti_blowjob_given) || flags.hasFlag(FLAG_innoxia_vronti_anilingus_given)) && pc.isAbleToAccessCoverableArea(CA_PENIS, true) && pc.hasPenis()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Fuck his ass]]></responseTitle>
-				<responseTooltip><![CDATA[Having successfully given him an erection, you think that you'll be able to convince Vronti to let you fuck his ass.]]></responseTooltip>
+				<responseTitle><![CDATA[Трахать его в зад]]></responseTitle>
+				<responseTooltip><![CDATA[Успешно доставив ему эрекцию, ты думаешь, что сможешь убедить Вронти позволить тебе оттрахать его в зад.]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_vronti_ass_fucked, true)]
@@ -1880,8 +1880,8 @@
 	</scene>
 	
 	<scene id="vronti_post_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You and Vronti bring an end to the sex.]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Вы с Вронти заканчиваете секс.]]></tooltip>
 		<content folderPath="txt/places/fields/centaur_transport">VRONTI_POST_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1890,13 +1890,11 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Relax for the rest of the journey as Vronti continues to transport you to Elis.
-					#ELSE
-						Relax for the rest of the journey as Vronti continues to transport you to Dominion.
-					#ENDIF
+						Ты отдыхаешь остаток пути, пока Вронти продолжает везти тебя в Элис.					#ELSE
+						Ты отдыхаешь остаток пути, пока Вронти продолжает везти тебя в Dominion.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_centaur_transport_vronti_journey_end]]></nextDialogue>
 			</response>
@@ -1933,13 +1931,11 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_centaur_travel_to_elis))
-						Thank Vronti for the ride and say goodbye, before setting off towards the gates of Elis.
-					#ELSE
-						Thank Vronti for the ride and say goodbye, before setting off towards Dominion.
-					#ENDIF
+						Поблагодари Вронти за поездку и попрощайся, прежде чем отправиться к вратам Элис.					#ELSE
+						Поблагодари Вронти за поездку и попрощайся, прежде чем отправиться в Dominion.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<effects><![CDATA[

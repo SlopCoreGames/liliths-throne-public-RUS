@@ -9,8 +9,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
-				<responseTooltip><![CDATA[Enter the convenience store.]]></responseTooltip>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
+				<responseTooltip><![CDATA[Войти в магазинчик.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_convenience_enter]]></nextDialogue>
 			</response>
 		</responses>
@@ -31,9 +31,9 @@
 					<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_elis_convenience_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Introduction]]></responseTitle>
+					<responseTitle><![CDATA[Знакомство]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell Ceridwen who you are.
+						Представиться Керидвен.
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_convenience_introduction]]></nextDialogue>
 				</response>
@@ -42,8 +42,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_convenience_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Trade]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look around Ceridwen's store and see what she's got for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Торговать]]></responseTitle>
+					<responseTooltip><![CDATA[Осмотреться в лавке Керидвен и посмотреть, что у неё есть в продаже...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[ceridwen]]></tradePartner>
@@ -54,12 +54,12 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_convenience_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[The Barn]]></responseTitle>
+					<responseTitle><![CDATA[«Амбар»]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_ceridwen_talk_name))
-							You've already asked Ceridwen about the story behind her convenience store's name today...
+							Ты уже спрашивал сегодня Керидвен о том, почему её магазин называется именно так...
 						#ELSE
-							Ask Ceridwen for the story behind her convenience store's name, 'The Barn'.
+							Спросить Керидвен о происхождении названия её магазина — «Амбар».
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -81,12 +81,12 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_convenience_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Suppliers]]></responseTitle>
+					<responseTitle><![CDATA[Поставщики]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_ceridwen_talk_sources))
-							You've already asked Ceridwen about how she sources all of her goods today...
+							Ты уже спрашивал сегодня Керидвен о том, где она берет свои товары...
 						#ELSE
-							Ask Ceridwen how she sources all of the goods that she's got for sale.
+							Спросить Керидвен, откуда у неё берутся все эти товары на продажу.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -108,12 +108,12 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_convenience_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[4]]></index>
-					<responseTitle><![CDATA[Mouse-morphs]]></responseTitle>
+					<responseTitle><![CDATA[Мышеморфы]]></responseTitle>
 					<responseTooltip><![CDATA[
 						#IF(flags.hasFlag(FLAG_innoxia_ceridwen_talk_mice))
-							You've already asked Ceridwen about why she only employs mouse-morphs today...
+							Ты уже спрашивал Серидвен о том, почему сегодня она наняла одних лишь мышеморфов...
 						#ELSE
-							Ask Ceridwen why she only employs mouse-morphs.
+							Спросить Серидвен, почему сегодня у неё на работе только мышеморфы.
 						#ENDIF
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[
@@ -136,10 +136,10 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_convenience_visited) && flags.hasFlag(FLAG_innoxia_ceridwen_side_quest_available)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[5]]></index>
-					<responseTitle><![CDATA[Offer help]]></responseTitle>
+					<responseTitle><![CDATA[Предложить помощь]]></responseTitle>
 					<responseTooltip><![CDATA[
-						Tell Ceridwen that you'd like to help her out in some way, and ask her if there's anything you can do that would allow her to go home and rest during the day.
-						<br/>[style.italicsMinorBad(This will be added soon!)]
+							Скажи Серидвен, что хочешь ей как-нибудь помочь, и спроси, можешь ли ты сделать что-то такое, чтобы она могла уйти домой и отдохнуть днём.
+						<br/>[style.italicsMinorBad(Это будет добавлено скоро!)]
 					]]></responseTooltip>
 					<nextDialogue><![CDATA[null]]></nextDialogue>
 					<effects/>
@@ -149,8 +149,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_convenience_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[0]]></index>
-					<responseTitle><![CDATA[Leave]]></responseTitle>
-					<responseTooltip><![CDATA[Say goodbye to Ceridwen and exit her convenience store.]]></responseTooltip>
+					<responseTitle><![CDATA[Уйти]]></responseTitle>
+					<responseTooltip><![CDATA[Попрощаться с Серидвен и выйти из её лавки.]]></responseTooltip>
 					<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_shops_street"/>
 					<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 					<effects><![CDATA[

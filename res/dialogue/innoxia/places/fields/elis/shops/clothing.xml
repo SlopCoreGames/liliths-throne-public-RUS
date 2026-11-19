@@ -9,12 +9,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter]]></responseTitle>
+				<responseTitle><![CDATA[Войти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(9, 17))
-						Enter the clothing shop.
+						Войти в магазин одежды.
 					#ELSE
-						As the shop is currently closed, you'll have to come back at another time...
+						Магазин сейчас закрыт, так что тебе придется зайти в другой раз...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -57,8 +57,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Introduction]]></responseTitle>
-				<responseTooltip><![CDATA[Tell the cow-girl who you are.]]></responseTooltip>
+				<responseTitle><![CDATA[Знакомство]]></responseTitle>
+				<responseTooltip><![CDATA[Представиться девушке-коровке.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_clothing_talk]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/clothing', 'CLOTHING_INTRO'))]
@@ -72,8 +72,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Female Clothing]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what items of feminine clothing Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Женская одежда]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотреть, какую женскую одежду продает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -86,8 +86,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Female Lingerie]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what items of feminine underwear Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Женское белье]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотреть, какое женское белье продает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -100,8 +100,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[3]]></index>
-					<responseTitle><![CDATA[Female Accessories]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what feminine accessories Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Женские аксессуары]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотреть, какие женские аксессуары продает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -115,8 +115,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[6]]></index>
-					<responseTitle><![CDATA[Male Clothing]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what items of masculine clothing Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Мужская одежда]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотри, какую мужскую одежду предлагает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -129,8 +129,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[7]]></index>
-					<responseTitle><![CDATA[Male Underwear]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what items of masculine underwear Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Мужское нижнее белье]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотри, какое мужское нижнее белье предлагает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -143,8 +143,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[8]]></index>
-					<responseTitle><![CDATA[Male Accessories]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what masculine accessories Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Мужские аксессуары]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотри, какие мужские аксессуары предлагает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -158,8 +158,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[11]]></index>
-					<responseTitle><![CDATA[Unisex Clothing]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what items of unisex clothing Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Унисекс одежда]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотри, какую одежду унисекс предлагает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -172,8 +172,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[12]]></index>
-					<responseTitle><![CDATA[Unisex Underwear]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what items of unisex underwear Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Унисекс белье]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотри, какое белье унисекс предлагает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -186,8 +186,8 @@
 					<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[13]]></index>
-					<responseTitle><![CDATA[Unisex Accessories]]></responseTitle>
-					<responseTooltip><![CDATA[Take a look at what unisex accessories Monica has for sale...]]></responseTooltip>
+					<responseTitle><![CDATA[Аксессуары унисекс]]></responseTitle>
+					<responseTooltip><![CDATA[Посмотри, какие унисекс-аксессуары продает Моника...]]></responseTooltip>
 					<nextDialogue/>
 					<tradingVariables enabled="true">
 						<tradePartner><![CDATA[monica]]></tradePartner>
@@ -200,8 +200,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_clothing_visited)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Say goodbye to Monica and head out of her store...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Попрощайся с Моникой и выйди из лавки...]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_shops_street"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -214,14 +214,13 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<secondsPassed minutes="true"><![CDATA[15]]></secondsPassed>
-				<responseTitle><![CDATA[Small talk]]></responseTitle>
+				<responseTitle><![CDATA[Светская беседа]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_small))
-						You've already spent time asking Monica about how her day is going today...
-						<br/>[style.italics(You should come back tomorrow if you wanted to talk to her about this again.)]
+						Ты уже расспрашивал Монику о том, как проходит её день...
+						<br/>[style.italics(Если хочешь обсудить это снова, лучше прийти завтра.)]
 					#ELSE
-						Ask Monica how her day is going.
-					#ENDIF
+						Спросить Монику, как проходит её день.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_small))
@@ -241,14 +240,13 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Business]]></responseTitle>
+				<responseTitle><![CDATA[Дела]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_business))
-						You've already spent time asking Monica about how business has been today...
-						<br/>[style.italics(You should come back tomorrow if you wanted to talk to her about this again.)]
+						Ты уже расспрашивал Монику о том, как идут дела в лавке...
+						<br/>[style.italics(Если хочешь обсудить это снова, лучше прийти завтра.)]
 					#ELSE
-						Ask Monica about how business has been today.
-					#ENDIF
+						Спросить Монику, как идут её дела сегодня.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_business))
@@ -269,14 +267,13 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
-				<responseTitle><![CDATA[Elis]]></responseTitle>
+				<responseTitle><![CDATA[Элис]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_elis))
-						You've already spent time asking Monica about Elis today...
-						<br/>[style.italics(You should come back tomorrow if you wanted to talk to her about this again.)]
+						Ты уже расспрашивал Монику об Элис сегодня...
+						<br/>[style.italics(Если хочешь обсудить это снова, лучше прийти завтра.)]
 					#ELSE
-						Ask Monica about what she thinks of Elis.
-					#ENDIF
+						Спросить Монику, что она думает об Элис.					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_elis))
@@ -296,13 +293,13 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[History]]></responseTitle>
+				<responseTitle><![CDATA[История]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_history))
-						You've already spent time asking Monica about her past and how she came to own this shop today...
-						<br/>[style.italics(You should come back tomorrow if you wanted to talk to her about this again.)]
+						Ты уже расспрашивал Монику о её прошлом и о том, как она стала владелицей этой лавки...
+						<br/>[style.italics(Если хочешь обсудить это снова, лучше прийти завтра.)]
 					#ELSE
-						Ask Monica about her past and how she came to own this shop.
+						Спросить Монику о её прошлом и о том, как она стала владелицей этой лавки.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -326,8 +323,8 @@
 					<availabilityConditional><![CDATA[[#pc.hasQuest(QUEST_LINE_SIDE_EISEK_STALL) && pc.getQuest(QUEST_LINE_SIDE_EISEK_STALL) == QUEST_EISEK_STALL_QUEST_STAGE_ONE]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Fabric?]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Monica if she'd be willing to sell you some fabric for Eisek's stall.]]></responseTooltip>
+				<responseTitle><![CDATA[Ткань?]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Монику, не согласится ли она продать тебе ткань для прилавка Эйзека.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_clothing_talk_fabric]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.setQuestProgress(QUEST_LINE_SIDE_EISEK_STALL, QUEST_EISEK_STALL_QUEST_STAGE_TWO))]
@@ -341,8 +338,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[Pick up order]]></responseTitle>
-				<responseTooltip><![CDATA[It hasn't been three days since you placed your order yet.]]></responseTooltip>
+				<responseTitle><![CDATA[Забрать заказ]]></responseTitle>
+				<responseTooltip><![CDATA[Три дня с момента заказа ещё не прошло.]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 				<effects/>
 			</response>
@@ -357,16 +354,16 @@
 				<index><![CDATA[10]]></index>
 					<responseTitle><![CDATA[
 						#IF(pc.getMoney() < 2500)
-							Pick up order ([style.moneyFormatUncoloured(2500, span)])
+							Забрать заказ ([style.moneyFormatUncoloured(2500, span)])
 						#ELSE
-							Pick up order ([style.moneyFormat(2500, span)])
+							Забрать заказ ([style.moneyFormat(2500, span)])
 						#ENDIF
 					]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney() < 2500)
-						You need two thousand five hundred flames to pay for your order, and you don't have that much money!
+						Для оплаты заказа тебе нужно две тысячи пятьсот огней, а у тебя столько нет!
 					#ELSE
-						Pick up your order from Monica.
+						Забрать свой заказ у Моники.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -391,8 +388,8 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_monica_talk_history) && !flags.hasFlag(FLAG_innoxia_monica_talk_milker_unlocked)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Milking issues]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Monica what issues she's having with her daily milking.]]></responseTooltip>
+				<responseTitle><![CDATA[Проблемы с дойкой]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить Монику, какие у неё возникли трудности с ежедневной дойкой.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_clothing_talk]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/clothing', 'CLOTHING_TALK_MILKING'))]
@@ -404,14 +401,14 @@
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<colour><![CDATA[QUEST_RELATIONSHIP]]></colour>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Offer help]]></responseTitle>
+				<responseTitle><![CDATA[Предложить помощь]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isLactationContentEnabled())
-						Tell Monica that you'd be willing to travel to her old farm and retrieve her personalised breast pump.
-						<br/>[style.italicsQuestRomance(This will start Monica's romance quest!)]
+						Скажи Монике, что ты готов отправиться на её старую ферму и забрать её персональный молокоотсос.
+						<br/>[style.italicsQuestRomance(Это запустит романтический квест Моники!)]
 					#ELSE
-						Monica's romance quest involves milking content, and so isn't suitable for if you don't like that sort of thing...
-						<br/>[style.italicsBad(You need to turn on lactation content to access this quest.)]
+						Романтический квест Моники включает в себя сцены дойки, так что он может не подойти, если тебе не нравится подобное...
+						<br/>[style.italicsBad(Чтобы получить доступ к этому квесту, нужно включить контент с лактацией.)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -434,12 +431,12 @@
 				<availabilityConditional><![CDATA[[#pc.hasQuest(QUEST_LINE_ROMANCE_MONICA) && !pc.isQuestCompleted(QUEST_LINE_ROMANCE_MONICA)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Give milker]]></responseTitle>
+				<responseTitle><![CDATA[Отдать молокоотсос]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getQuest(QUEST_LINE_ROMANCE_MONICA)==QUEST_ROMANCE_MONICA_3_THE_JOURNEY_HOME)
-						Give Monica her personalised breast pump.
+						Отдать Монике её персональный молокоотсос.
 					#ELSE
-						You need to retrieve Monica's personalised breast pump before being able to give it her!
+						Прежде чем отдать его ей, тебе нужно сначала найти и забрать персональный молокоотсос Моники!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -462,13 +459,13 @@
 				<availabilityConditional><![CDATA[[#pc.isQuestCompleted(QUEST_LINE_ROMANCE_MONICA)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Milk her]]></responseTitle>
+				<responseTitle><![CDATA[Подоить её]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_milked))
-						You've already milked Monica today...
-						<br/>[style.italics(You should come back tomorrow if you wanted to milk her again.)]
+						Ты уже доил Монику сегодня...
+						<br/>[style.italics(Если хочешь подоить её снова, приходи завтра.)]
 					#ELSE
-						Ask Monica if she'd like some help being milked...
+						Спросить Монику, не нужна ли ей помощь с дойкой...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -484,13 +481,13 @@
 				<availabilityConditional><![CDATA[[#game.isSillyMode()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Big boobs]]></responseTitle>
+				<responseTitle><![CDATA[Большая грудь]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_monica_talk_boobies))
-						You've already commented on the size of Monica's breasts today.
-						<br/>[style.italics(You should come back tomorrow if you wanted to talk to her about this again.)]
+						Ты уже сегодня комментировал размер груди Моники.
+						<br/>[style.italics(Если хочешь снова поговорить с ней об этом, приходи завтра.)]
 					#ELSE
-						Make a comment on how large Monica's breasts are.
+						Прокомментировать, насколько огромная у Моники грудь.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -511,8 +508,8 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Say goodbye to Monica and head out of her store...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Попрощайся с Моникой и выйди из лавки...]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_shops_street"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -543,8 +540,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Pump]]></responseTitle>
-				<responseTooltip><![CDATA[Do as Monica asks and use her breast pump to milk her.]]></responseTooltip>
+				<responseTitle><![CDATA[Насос]]></responseTitle>
+				<responseTooltip><![CDATA[Сделать так, как просит Моника, и использовать её молокоотсос, чтобы подоить её.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_clothing_milking_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/clothing', 'CLOTHING_MILKING_PUMP'))]
@@ -554,8 +551,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Massage]]></responseTitle>
-				<responseTooltip><![CDATA[Offer to massage Monica's breasts while she operates the pump.]]></responseTooltip>
+				<responseTitle><![CDATA[Массаж]]></responseTitle>
+				<responseTooltip><![CDATA[Предложить помассировать грудь Моники, пока она пользуется насосом.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_shops_clothing_milking_finished]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/shops/clothing', 'CLOTHING_MILKING_MASSAGE'))]
@@ -565,12 +562,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Use mouth]]></responseTitle>
+				<responseTitle><![CDATA[Ртом]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-						Offer to suckle on Monica's breasts and drink her milk instead of using the pump.
+						Предложить вместо насоса сосать грудь Моники и пить её молоко.
 					#ELSE
-						As you cannot gain access to your mouth, you're not able to suckle on Monica's breasts and drink her milk instead of using the pump...
+						Поскольку у тебя нет доступа ртом, ты не можешь сосать грудь Моники и пить её молоко вместо использования насоса...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -603,8 +600,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Monica that you were happy to have been of help and take your leave.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Монике, что ты был рад помочь, и попрощаться.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_shops_street"/>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -615,8 +612,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Fuck her]]></responseTitle>
-				<responseTooltip><![CDATA[Monica is clearly extremely turned on. You could offer to help her get some sexual relief...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахать её]]></responseTitle>
+				<responseTooltip><![CDATA[Моника явно в сильном возбуждении. Ты мог бы предложить ей помочь получить сексуальную разрядку...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_monica_generic]]></id>
@@ -642,8 +639,8 @@
 	</scene>
 	
 	<scene id="milking_sex_end">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Monica is satisfied and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Моника довольна и завершает секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/shops/clothing">CLOTHING_MILKING_FINISHED_SEX_END</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -652,8 +649,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Tell Monica that you were happy to have been of help and take your leave.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Сказать Монике, что ты был рад помочь, и попрощаться.]]></responseTooltip>
 				<nextDialogue stripContent="true" defaultPlaceType="innoxia_fields_elis_shops_street"/>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[

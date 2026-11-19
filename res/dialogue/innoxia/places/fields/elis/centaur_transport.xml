@@ -10,14 +10,14 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Barn]]></responseTitle>
+				<responseTitle><![CDATA[Сарай]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!flags.hasFlag(FLAG_innoxia_centaur_transport_introduced))
-						The barn looks to be well and truly deserted. There's nothing for you to do here except continue on your way.
+						Похоже, сарай совсем пуст. Тебе здесь делать нечего, кроме как идти дальше.
 					#ELSEIF(flags.hasFlag(FLAG_innoxia_centaur_transport_setup_in_progress))
-						As Astrapi informed you that she and Vronti will not be offering rides for the rest of today, you'll have to come back tomorrow if you wanted to make use of their services.
+						Раз Астрапи сообщила, что она и Вронти больше не будут возить пассажиров сегодня, тебе придется вернуться завтра, если ты хочешь воспользоваться их услугами.
 					#ELSE
-						Approach the barn and see if you can find Astrapi or Vronti.
+						Подойти к сараю и попытаться найти Астрапи или Вронти.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -40,12 +40,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Inside]]></responseTitle>
+				<responseTitle><![CDATA[Внутри]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5.75, 15))
-						The barn is open between [style.italicsMinorGood([units.time(5.75)]-[units.time(15)])], and as such you could [pc.step] inside the intact barn and potentially find Astrapi or Vronti.
+						Сарай открыт в период [style.italicsMinorGood([units.time(5.75)]-[units.time(15)])], так что ты можешь [pc.step] внутрь целого здания и, возможно, найти Астрапи или Вронти.
 					#ELSE
-						The barn is open between [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], and as such is currently deserted. You'll have to come back during opening times if you wanted to meet Astrapi or Vronti again.
+						Сарай открыт в период [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])], а сейчас он пустует. Чтобы снова встретить Астрапи или Вронти, тебе придется вернуться в часы работы.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -62,8 +62,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wait & enter]]></responseTitle>
-				<responseTooltip><![CDATA[As the barn is currently closed, you could wait here until [units.time(5.75)] for it to open and then head inside, should you want to...]]></responseTooltip>
+				<responseTitle><![CDATA[Подождать и войти]]></responseTitle>
+				<responseTooltip><![CDATA[Поскольку сейчас сарай закрыт, ты можешь подождать здесь до [units.time(5.75)], чтобы он открылся, а затем зайти внутрь, если захочешь...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_centaur_transport_approach_inside]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
 					[#game.getMinutesUntilTimeInMinutes(5.75*60)]
@@ -77,12 +77,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isHourBetween(5.75, 15))
-						Decide against heading inside the building.
+						Решить не заходить в здание.
 					#ELSE
-						As the barn is currently closed, there's nothing for you to do here. You'll have to come back between [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])] if you wanted to meet Astrapi or Vronti again.
+						Так как сарай сейчас закрыт, тебе здесь делать нечего. Чтобы снова встретить Астрапи или Вронти, придется вернуться в период [style.italicsMinorBad([units.time(5.75)]-[units.time(15)])].
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -118,8 +118,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Wait]]></responseTitle>
-				<responseTooltip><![CDATA[As neither Astrapi nor Vronti are here right now, you'll need to wait for the next departure time if you wanted to get a ride to Elis.]]></responseTooltip>
+				<responseTitle><![CDATA[Ждать]]></responseTitle>
+				<responseTooltip><![CDATA[Раз ни Астрапи, ни Вронти сейчас нет на месте, тебе придется ждать следующего рейса, если ты хочешь отправиться в Элис.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_centaur_transport_approach_inside]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
 					#IF(game.getHourOfDay()>12)
@@ -159,12 +159,12 @@
 				<responseTooltip><![CDATA[
 					#IF(pc.getMoney()>=250)
 						#IF(game.getCharactersPresent().contains(astrapi))
-							Take up Astrapi's offer and have her take you to Dominion now.
+							Принять предложение Астрапи, чтобы она прямо сейчас отвезла тебя в Dominion.
 						#ELSE
-							Take up Vronti's offer and have him take you to Dominion now.
+							Принять предложение Вронти, чтобы он прямо сейчас отвез тебя в Dominion.
 						#ENDIF
 					#ELSE
-						You don't have enough money to get a ride to Dominion!
+							У тебя недостаточно денег, чтобы доехать до Dominion!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -191,12 +191,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.getCharactersPresent().contains(astrapi))
-						Tell Astrapi that you don't want a ride to Dominion right now and exit the barn.
+							Сказать Астрапи, что ты не хочешь ехать в Dominion прямо сейчас, и выйти из амбара.
 					#ELSE
-						Tell Vronti that you don't want a ride to Dominion right now and exit the barn.
+							Сказать Вронти, что ты не хочешь ехать в Dominion прямо сейчас, и выйти из амбара.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>

@@ -7,9 +7,9 @@
 	<combatEffect>false</combatEffect>
 	<sexEffect>false</sexEffect>
 	<tags/>
-	<name><![CDATA[Benevolent Blessing]]></name>
+	<name><![CDATA[Благословение Милосердия]]></name>
 	<description><![CDATA[
-		By wearing the benevolent set, [npc.nameIs] filled with a sense of peaceful tranquility. [npc.name] [npc.verb(feel)] as though [npc.she] can save the world!
+		Нося благословенный сет, [npc.nameIs] наполняется чувством безмятежного спокойствия. [npc.name] [npc.verb(feel)] так, будто [npc.she] может спасти этот мир!
 	]]></description>
 	<imageName>benevolent_set.svg</imageName>
 	<colourPrimary>CLOTHING_RED_DARK</colourPrimary>

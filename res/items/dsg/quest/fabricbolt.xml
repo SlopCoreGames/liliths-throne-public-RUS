@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA['Woven by the DSG Textile Guild' is printed on one end of the board.]]></authorTag>
+		<authorTag><![CDATA[На одном конце рулона красуется надпись: «Соткано текстильной гильдией DSG».]]></authorTag>
 		
 		<value>20</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[bolt of green cloth]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[bolts of green cloth]]></namePlural>
-		<description><![CDATA[A cut of dark green fabric wrapped around cardboard for easy transport. You selected the colour based on Eisek's stated preferences.]]></description> 
+		<name><![CDATA[рулон зеленой ткани]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[рулоны зеленой ткани]]></namePlural>
+		<description><![CDATA[Отрез темно-зеленой ткани, намотанный на картонную основу для удобства транспортировки. Ты выбрал(а) этот цвет, основываясь на предпочтениях Эйзека.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -25,12 +25,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[One of [style.colourGood(three)] items that you need to fix up Eisek's stall.]]></line>
+			<line><![CDATA[Один из [style.colourGood(трех)] предметов, необходимых для починки лавки Эйзека.]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			The cotton fabric is as simple as can be, dyed green and somewhat coarse but seems luxurious compared to the burlap that currently adorns Eisek's stall.
+			Хлопковая ткань проста как никогда, окрашена в зеленый цвет и слегка грубовата на ощупь, но выглядит роскошно по сравнению с мешковиной, которой сейчас обтянут прилавок Эйзека.
 		</p>
 		]]></applyEffects>
 		
@@ -40,10 +40,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unroll)] the bolt to get a closer look at the fabric...
+		[npc.Name] [npc.verb(unroll)] рулон, чтобы получше рассмотреть ткань...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unroll)] the bolt to show it off to [npc2.name], who [npc.verb(lean)] in to get a closer look at the fabric...
+		[npc.Name] [npc.verb(unroll)] рулон, чтобы похвастаться им перед [npc2.name], которая [npc.verb(lean)] вперед, чтобы рассмотреть ткань поближе...
 		]]></otherUse>
 	</useDescriptions>
 

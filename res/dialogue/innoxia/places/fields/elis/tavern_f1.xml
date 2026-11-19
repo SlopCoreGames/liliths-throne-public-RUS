@@ -54,8 +54,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Rest (1 hour)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for an hour. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (1 час)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть один час. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[60]]></secondsPassed>
 				<effects><![CDATA[
@@ -66,8 +66,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Rest (4 hours)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for four hours. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (4 часа)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть четыре часа. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[240]]></secondsPassed>
 				<effects><![CDATA[
@@ -78,8 +78,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Rest (8 hours)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for eight hours. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (8 часов)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть восемь часов. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[480]]></secondsPassed>
 				<effects><![CDATA[
@@ -90,8 +90,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Rest (12 hours)]]></responseTitle>
-				<responseTooltip><![CDATA[Rest for twelve hours. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.]]></responseTooltip>
+				<responseTitle><![CDATA[Отдохнуть (12 часов)]]></responseTitle>
+				<responseTooltip><![CDATA[Отдохнуть двенадцать часов. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь эффект статуса «Выспавшийся».]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[720]]></secondsPassed>
 				<effects><![CDATA[
@@ -103,28 +103,28 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
 				<responseTitle><![CDATA[
-					Rest until
+					Отдыхать до
 					#IF(game.isDayTime())
-						 Sunset
+						 заката
 					#ELSE
-						 Sunrise
+						 рассвета
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Rest for
+					Отдыхать на
 					#IF(game.getMinutesUntilNextMorningOrEvening() >= 60)
-						 [#~~(game.getMinutesUntilNextMorningOrEvening()/60)] hours
+						 [#~~(game.getMinutesUntilNextMorningOrEvening()/60)] час(ов)
 					#ENDIF
 					#IF(game.getMinutesUntilNextMorningOrEvening() % 60 != 0)
-						 [#~~(game.getMinutesUntilNextMorningOrEvening()%60)] minutes
+						 [#~~(game.getMinutesUntilNextMorningOrEvening()%60)] мин(ут)
 					#ENDIF
-					 until five minutes past
+						 до пяти минут после
 					#IF(game.isDayTime())
-						 sunset.
+						 заката.
 					#ELSE
-						 sunrise.
+						 рассвета.
 					#ENDIF
-					 As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.
+					Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь статус «Выспавшийся».
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[
@@ -140,8 +140,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[Set alarm]]></responseTitle>
-				<responseTooltip><![CDATA[Set the alarm on your phone, so that you can wake at a specific time.]]></responseTooltip>
+				<responseTitle><![CDATA[Установить будильник]]></responseTitle>
+				<responseTooltip><![CDATA[Установи будильник на телефоне, чтобы проснуться в определенное время.]]></responseTooltip>
 				<nextDialogue stripContent="false"><![CDATA[ROOM_SET_ALARM]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[[#game.saveDialogueNode()]]]></effects>
@@ -151,9 +151,9 @@
 				<index><![CDATA[10]]></index>
 				<responseTitle><![CDATA[
 					#IF(flags.getSavedLong('player_phone_alarm') < 0)
-						Rest until alarm (unset)
+						Отдыхать до будильника (не установлен)
 					#ELSE
-						Rest until alarm ([#
+						Отдыхать до будильника ([#
 							var alarm = flags.getSavedLong('player_phone_alarm');
 							var alarmObj = game.getCustomTime(alarm/60, alarm%60, 0);
 							game.getDisplayTime(alarmObj)
@@ -162,20 +162,20 @@
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.getSavedLong('player_phone_alarm') < 0)
-						[style.colourBad(Your alarm is unset!)]
+						[style.colourBad(Будильник не установлен!)]
 					#ELSE
-						Rest for
+						Отдыхать
 						#IF(game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))==0)
-							 24 hours,
+							 24 часа,
 						#ELSE
 							#IF(game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm')) >= 60)
-								 [#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) / 60)] hours,
+								 [#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) / 60)] часов,
 							#ENDIF
 							#IF((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) % 60 != 0)
-								 [#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) % 60)] minutes,
+								[#~~((game.getMinutesUntilTimeInMinutes(flags.getSavedLong('player_phone_alarm'))) % 60)] минут,
 							#ENDIF
 						#ENDIF
-						 until your alarm goes off. As well as replenishing your [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] and [#ATTRIBUTE_MANA_MAXIMUM.getName()], you will also get the 'Well Rested' status effect.
+						до того как прозвенит будильник. Помимо восстановления [#ATTRIBUTE_HEALTH_MAXIMUM.getName()] и [#ATTRIBUTE_MANA_MAXIMUM.getName()], ты также получишь статус «Хорошо отдохнувший».
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[
@@ -206,8 +206,8 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Entrance]]></responseTitle>
-				<responseTooltip><![CDATA[Fast travel down to the tavern's entrance.]]></responseTooltip>
+				<responseTitle><![CDATA[Вход]]></responseTitle>
+				<responseTooltip><![CDATA[Быстро переместиться к входу в таверну.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_tavern_f0_exit"/>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -218,8 +218,8 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Your room]]></responseTitle>
-				<responseTooltip><![CDATA[You are already in your room!]]></responseTooltip>
+				<responseTitle><![CDATA[Твоя комната]]></responseTitle>
+				<responseTooltip><![CDATA[Ты уже у себя в комнате!]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 			</response>
 			
@@ -227,11 +227,11 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Quick shower]]></responseTitle>
+				<responseTitle><![CDATA[Быстрый душ]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use your room's ensuite bathroom to take a quick shower.
-					<br/>[style.italicsGood(Cleans <b>a maximum of [style.fluid(500)]</b> of fluids from all orifices.)]
-					<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]
+					Воспользоваться ванной в комнате, чтобы быстро принять душ.
+					<br/>[style.italicsGood(<b>Очистит максимум [style.fluid(500)]</b> жидкостей из всех отверстий.)]
+					<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
@@ -243,11 +243,11 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Thorough shower]]></responseTitle>
+				<responseTitle><![CDATA[Тщательный душ]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use your room's en-suite to take a shower, and spend some time thoroughly cleaning yourself.
-					<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]
-					<br/>[style.italicsGood(This will clean <b>only</b> your currently equipped clothing.)]
+					Воспользоваться ванной в комнате, чтобы принять душ и хорошенько отмыться.
+					<br/>[style.italicsExcellent(Это очистит <b>все</b> жидкости из всех твоих отверстий.)]
+					<br/>[style.italicsGood(Это очистит <b>только</b> твою текущую одежду.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -259,11 +259,11 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Bath time]]></responseTitle>
+				<responseTitle><![CDATA[Время купания]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use your room's en-suite to take a bath, and spend some time thoroughly cleaning yourself.
-					<br/>[style.italicsExcellent(This will clean <b>all</b> fluids out of all your orifices.)]
-					<br/>[style.italicsExcellent(This will clean <b>all</b> clothing in your inventory.)]
+					Воспользоваться ванной в комнате, чтобы принять ванну и хорошенько отмыться.
+					<br/>[style.italicsExcellent(Это очистит <b>все</b> жидкости из всех твоих отверстий.)]
+					<br/>[style.italicsExcellent(Это очистит <b>всю</b> одежду в твоем инвентаре.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_f1_room_player]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[30]]></secondsPassed>
@@ -299,8 +299,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Keyhole]]></responseTitle>
-				<responseTooltip><![CDATA[Look through the keyhole to see what's happening inside...]]></responseTooltip>
+				<responseTitle><![CDATA[Замочная скважина]]></responseTitle>
+				<responseTooltip><![CDATA[Заглянуть в замочную скважину, чтобы увидеть, что происходит внутри...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#jess.setLust(80)]
@@ -371,8 +371,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Keyhole]]></responseTitle>
-				<responseTooltip><![CDATA[Look through the keyhole to see what's happening inside...]]></responseTooltip>
+				<responseTitle><![CDATA[Замочная скважина]]></responseTitle>
+				<responseTooltip><![CDATA[Заглянуть в замочную скважину, чтобы увидеть, что происходит внутри...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#jess.setLust(80)]
@@ -419,8 +419,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Keyhole]]></responseTitle>
-				<responseTooltip><![CDATA[Look through the keyhole to see what's happening inside...]]></responseTooltip>
+				<responseTitle><![CDATA[Замочная скважина]]></responseTitle>
+				<responseTooltip><![CDATA[Заглянуть в замочную скважину, чтобы увидеть, что происходит внутри...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#jess.setLust(80)]
@@ -472,8 +472,8 @@
 			[#jess.hourlyUpdate()]
 			[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_f1', 'ROOM_SEX_PEEPING_AFTER_SEX'))]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[[ncom.Name] and Jess have finished having sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[[ncom.Name] и Джесс закончили заниматься сексом...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_f1">ROOM_PLAYER</content>
 		<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -493,8 +493,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Downstairs]]></responseTitle>
-				<responseTooltip><![CDATA[Head down the staircase to the ground floor of the tavern.]]></responseTooltip>
+				<responseTitle><![CDATA[Вниз]]></responseTitle>
+				<responseTooltip><![CDATA[Спуститься по лестнице на первый этаж таверны.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_tavern_f0_stairs"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[

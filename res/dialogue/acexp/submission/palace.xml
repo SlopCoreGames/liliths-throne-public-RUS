@@ -12,12 +12,12 @@
             <response>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Enter room]]></responseTitle>
+                <responseTitle><![CDATA[Войти в комнату]]></responseTitle>
                 <responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_acexp_elizabeth_introduced))
-						Approach Elizabeth and greet her.
+						Подойди к Элизабет и поприветствуй её.
 					#ELSE
-						Enter the room and find out who's playing the piano.
+						Войди в комнату и узнай, кто играет на пианино.
 					#ENDIF
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_submission_palace_music]]></nextDialogue>
@@ -29,9 +29,9 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[0]]></index>
-                <responseTitle><![CDATA[Continue]]></responseTitle>
+                <responseTitle><![CDATA[Продолжить]]></responseTitle>
                 <responseTooltip><![CDATA[
-					Decide against entering the room and instead continue on your way through the palace.
+					Реши не входить в комнату, а вместо этого продолжить путь по дворцу.
                 ]]></responseTooltip>
                 <nextDialogue defaultPlaceType="LYSSIETH_PALACE_CORRIDOR"/>
                 <effects><![CDATA[
@@ -65,22 +65,22 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Talk]]></responseTitle>
+                <responseTitle><![CDATA[Поговорить]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Talk with Elizabeth about her role as a palace guard for a while.
-					<br/><i>Elizabeth will be impressed if you have
+                    Поговори с Элизабет о её службе во дворцовой страже.
+					<br/><i>Элизабет будет впечатлена, если у тебя
 					#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_PHYSIQUE)>=50)
-						 [style.italicsGood(a high physique)]
+						 [style.italicsGood(высокое Телосложение)]
 					#ELSE
-						 [style.italicsBad(a high physique)]
+						 [style.italicsBad(высокое Телосложение)]
 					#ENDIF
-					 or if you were
+						 или если ты был
 					#IF(pc.hasTraitActivated(PERK_JOB_SOLDIER))
-						 [style.italicsGood(a soldier)]
+						 [style.italicsGood(солдатом)]
 					#ELSE
-						 [style.italicsBad(a soldier)]
+						 [style.italicsBad(солдат)]
 					#ENDIF
-					 in your old world.</i>
+					 в твоем старом мире.</i>
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_submission_palace_interact]]></nextDialogue>
                 <effects><![CDATA[
@@ -99,22 +99,22 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Compliment]]></responseTitle>
+                <responseTitle><![CDATA[Сделать комплимент]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Compliment Elizabeth on her proficiency at playing the piano.
-					<br/><i>Elizabeth will be impressed if you are
+                    Сделать Элизабет комплимент по поводу ее мастерства игры на пианино.
+					<br/><i>Элизабет будет впечатлена, если ты
 					#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_ARCANE)>=50)
-						 [style.italicsGood(proficient with the arcane)]
+						 [style.italicsGood(владеешь Арканой)]
 					#ELSE
-						 [style.italicsBad(proficient with the arcane)]
+						 [style.italicsBad(владеешь Арканой)]
 					#ENDIF
-					 or if you were
+						 или если ты был
 					#IF(pc.hasTraitActivated(PERK_JOB_MUSICIAN))
-						 [style.italicsGood(a musician)]
+						 [style.italicsGood(музыкант)]
 					#ELSE
-						 [style.italicsBad(a musician)]
+						 [style.italicsBad(музыкант)]
 					#ENDIF
-					 in your old world.</i>
+					 в твоем старом мире.</i>
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_submission_palace_interact]]></nextDialogue>
                 <effects><![CDATA[
@@ -133,22 +133,22 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[3]]></index>
-                <responseTitle><![CDATA[Flirt]]></responseTitle>
+                <responseTitle><![CDATA[Флиртовать]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Flirt with Elizabeth.
-					<br/><i>Elizabeth will be impressed if you have
+                    Флиртовать с Елизаветой.
+					<br/><i>Елизавета будет впечатлена, если у тебя
 					#IF(pc.getAttributeValue(ATTRIBUTE_MAJOR_CORRUPTION)>=50)
-						 [style.italicsGood(a high corruption)]
+						 [style.italicsGood(высокая Порочность)]
 					#ELSE
-						 [style.italicsBad(a high corruption)]
+						 [style.italicsBad(высокая Порочность)]
 					#ENDIF
-					 or if you were
+						 или если ты был
 					#IF(pc.hasTraitActivated(PERK_JOB_ARISTOCRAT))
-						 [style.italicsGood(an aristocrat)]
+						 [style.italicsGood(аристократ)]
 					#ELSE
-						 [style.italicsBad(an aristocrat)]
+						 [style.italicsBad(аристократ)]
 					#ENDIF
-					 in your old world.</i>
+					 в твоем старом мире.</i>
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[acexp_submission_palace_interact]]></nextDialogue>
                 <effects><![CDATA[
@@ -167,9 +167,9 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[0]]></index>
-                <responseTitle><![CDATA[Leave]]></responseTitle>
+                <responseTitle><![CDATA[Уйти]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Tell Elizabeth that you'd better be going.
+                    Сказать Елизавете, что тебе пора идти.
                 ]]></responseTooltip>
                 <nextDialogue defaultPlaceType="LYSSIETH_PALACE_CORRIDOR"/>
                 <effects><![CDATA[
@@ -195,9 +195,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Sex]]></responseTitle>
+                <responseTitle><![CDATA[Секс]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Take Elizabeth up on her offer.
+                    Принять предложение Елизаветы.
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -239,9 +239,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Sex]]></responseTitle>
+                <responseTitle><![CDATA[Секс]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Take Elizabeth up on her offer.
+                    Принять предложение Елизаветы.
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -283,9 +283,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Sex]]></responseTitle>
+                <responseTitle><![CDATA[Секс]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Take Elizabeth up on her offer.
+                    Принять предложение Елизаветы.
                 ]]></responseTooltip>
                 <nextDialogue/>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -328,9 +328,9 @@
                 ]]></availabilityConditional>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Sex]]></responseTitle>
+                <responseTitle><![CDATA[Секс]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    You're going to have to do better than that to get Elizabeth to want to have sex with you...
+                    Тебе придется постараться получше, если хочешь, чтобы Элизабет захотела переспать с тобой...
                 ]]></responseTooltip>
                 <nextDialogue><![CDATA[null]]></nextDialogue>
                 <secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
@@ -340,9 +340,9 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[2]]></index>
-                <responseTitle><![CDATA[Leave]]></responseTitle>
+                <responseTitle><![CDATA[Уйти]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Say goodbye to Elizabeth and take your leave.
+                    Попрощайся с Элизабет и отправляйся в путь.
                 ]]></responseTooltip>
                 <nextDialogue defaultPlaceType="LYSSIETH_PALACE_CORRIDOR"/>
                 <effects><![CDATA[
@@ -356,8 +356,8 @@
 
     <scene id ="after_sex">
         <author><![CDATA[AceXp]]></author>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Say goodbye and prepare to move on...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Попрощайся и приготовься двигаться дальше...]]></tooltip>
         <content folderPath="txt/acexp/submission/elizabeth">AFTER_SEX</content>
         <secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
         <continuesDialogue>false</continuesDialogue>
@@ -367,9 +367,9 @@
                 <availabilityConditional/>
                 <responseTabIndex><![CDATA[0]]></responseTabIndex>
                 <index><![CDATA[1]]></index>
-                <responseTitle><![CDATA[Leave]]></responseTitle>
+                <responseTitle><![CDATA[Уйти]]></responseTitle>
                 <responseTooltip><![CDATA[
-                    Say goodbye to Elizabeth and take your leave.
+                    Попрощайся с Элизабет и отправляйся в путь.
                 ]]></responseTooltip>
                 <nextDialogue defaultPlaceType="LYSSIETH_PALACE_CORRIDOR"/>
                 <effects><![CDATA[

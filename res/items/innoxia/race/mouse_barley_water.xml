@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>50</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Harvest Mouse's barley water]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Harvest Mouse's barley waters]]></namePlural>
-		<description><![CDATA[A bottle of barley water, bearing the brand of 'Harvest Mouse'. On the reverse label, there's a lewd image of a mouse-girl hiking up her skirt to show off her tight, wet pussy.]]></description> 
+		<name><![CDATA[Ячменная вода «Полевой мышки»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ячменная вода «Полевой мышки»]]></namePlural>
+		<description><![CDATA[Бутылка ячменной воды под брендом «Полевая мышка». На обратной стороне этикетки красуется похотливое изображение мышки-девушки, задирающей юбку, чтобы продемонстрировать свою тугую, влажную киску.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A cool wave of arcane energy washes over [npc.name]...
+			Прохладная волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 1)]
 		]]></applyEffects>
@@ -52,10 +52,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the bottle of Harvest Mouse's barley water, before tilting [npc.her] head back and bringing it up to [npc.her] waiting [npc.lips]. Gulping down the cool liquid, [npc.sheIs] pleased to discover that it has a mild, refreshing taste of barley.
+		[npc.Name] [npc.verb(unscrew)] крышку бутылки с ячменной водой «Полевой мышки», после чего закидывает [npc.her] голову и подносит её к ожидающим [npc.lips] [npc.her]. Глотая прохладную жидкость, [npc.sheIs] с удовольствием обнаруживает у неё мягкий, освежающий вкус ячменя.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the bottle of Harvest Mouse's barley water, before bringing it up to [npc2.namePos] waiting [npc2.lips]. Gulping down the cool liquid, [npc2.sheIs] pleased to discover that it has a mild, refreshing taste of barley.
+		[npc.Name] [npc.verb(unscrew)] крышку бутылки с ячменной водой «Полевой мышки», после чего подносит её к ожидающим [npc2.lips] [npc2.namePos]. Глотая прохладную жидкость, [npc2.sheIs] с удовольствием обнаруживает у неё мягкий, освежающий вкус ячменя.
 		]]></otherUse>
 	</useDescriptions>
 

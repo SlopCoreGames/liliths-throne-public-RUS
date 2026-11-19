@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a tin of]]></determiner>
-		<name><![CDATA[Chocolate Coated Coffee Bean]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[Chocolate Coated Coffee Beans]]></namePlural>
-		<description><![CDATA[A metal tin containing several dozen coffee beans covered in dark chocolate. On one side of the tin there's a picture of a flushed spider-girl winking at the viewer, along with the cautionary words: <i>'Warning! Extremely alcoholic to spiders!'</i>]]></description> 
+		<name><![CDATA[Кофейное зерно в шоколаде]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Кофейные зерна в шоколаде]]></namePlural>
+		<description><![CDATA[Металлическая жестяная банка, наполненная несколькими десятками кофейных зерен, покрытых темным шоколадом. На одной стороне банки красуется изображение раскрасневшейся паучихи, подмигивающей зрителю, и предостережение: <i>'Осторожно! Чрезвычайно алкогольно для пауков!'</i>]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger...
+				[npc.Name] [npc.verb(start)] чувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a handful of chocolate coated coffee beans and [npc.verb(crush)] it in [npc.her] [npc.mouth]. Unable to control [npc.herself], [npc.she] quickly [npc.verb(finish)] the entire tin.
+		[npc.Name] [npc.verb(take)] горсть шоколадных кофейных зерен и [npc.verb(crush)] их в [npc.her] [npc.mouth]. Не в силах сдержать [npc.herself], [npc.she] быстро [npc.verb(finish)] всю банку целиком.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a handful of chocolate coated coffee beans and [npc.verb(hold)] it out to [npc2.name], who [npc.verb(crush)] it in [npc2.her] [npc2.mouth]. Unable to control [npc2.herself], [npc2.she] quickly [npc2.verb(finish)] the entire tin.
+		[npc.Name] [npc.verb(take)] горсть шоколадных кофейных зерен и [npc.verb(hold)] их перед [npc2.name], которая [npc.verb(crush)] их в [npc2.her] [npc2.mouth]. Не в силах сдержать [npc2.herself], [npc2.she] быстро [npc2.verb(finish)] всю банку целиком.
 		]]></otherUse>
 	</useDescriptions>
 

@@ -7,7 +7,7 @@
 			[#attacker.setLocation(pc)]
 			[#flags.setFlag(FLAG_innoxia_fields_centaur_attacker_talked, false)]
 		]]></preParsingEffects>
-		<title><![CDATA[Marauder Attack]]></title>
+		<title><![CDATA[Нападение мародёрки]]></title>
 		<author><![CDATA[Innoxia]]></author>
 		<content folderPath="txt/encounters/fields/centaur_melee">START</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -18,9 +18,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Refuse to pay the centauress and prepare to defend yourself!
+					Отказаться платить кентавру и приготовиться к обороне!
 				]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -41,7 +41,7 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Pay up (#IF(pc.getMoney()>=attacker.getPaymentDemand())[style.moneyFormat([#attacker.getPaymentDemand()], span)]#ELSE[style.moneyFormatUncoloured([#attacker.getPaymentDemand()], span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Заплатить (#IF(pc.getMoney()>=attacker.getPaymentDemand())[style.moneyFormat([#attacker.getPaymentDemand()], span)]#ELSE[style.moneyFormatUncoloured([#attacker.getPaymentDemand()], span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand()) Hand over the [style.intToString([#attacker.getPaymentDemand()])] flames which the marauder is asking for. #ELSE You can't afford to pay off the marauder... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=attacker.getPaymentDemand())innoxia_encounters_fields_centaur_melee_payment#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
@@ -54,9 +54,9 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Submit to the marauder and beg for mercy.
+					Подчиниться мародёрке и молить о пощаде.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_encounters_fields_centaur_melee_submit]]></nextDialogue>
 				<effects><![CDATA[
@@ -82,10 +82,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Satisfied with the payment you've given her, the marauder takes her leave, allowing you to continue on your way...
-					<br/>[style.italicsBad(The centauress will be permanently removed from the game.)]
+					Удовлетворённая полученной платой, мародёрка уходит, позволяя тебе продолжить путь...
+					<br/>[style.italicsBad(Кентавриха навсегда исчезнет из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -108,9 +108,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Grovel]]></responseTitle>
+				<responseTitle><![CDATA[Преклонить колени]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Grovel on the floor and wait to see what the centauress will decide to do with you.
+					Повиноваться на полу и ждать, что кентавриха решит с тобой сделать.
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
@@ -147,12 +147,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Present pussy]]></responseTitle>
+				<responseTitle><![CDATA[Показать киску]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.hasVagina())
-						You do not have a vagina to present to the marauder...
+						У тебя нет влагалища, чтобы предложить его мародёрке...
 					#ELSE
-						You cannot gain access to your vagina, so cannot present it to the marauder...
+						Ты не можешь дотянуться до своего влагалища, чтобы показать его мародёрке...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -163,11 +163,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Present pussy]]></responseTitle>
+				<responseTitle><![CDATA[Показать киску]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Expose your vagina and present it to the marauder so that she can rut you.
+					Раскрыть влагалище и подставить его мародёрке, чтобы она могла в него трахнуться.
 					#IF(!attacker.hasPenis())
-						<br/>[style.italicsSexDom(The centauress will grow a demonic cock with which to fuck you!)]
+
+						<br/>[style.italicsSexDom(У кентаврихи вырастет демонический член, которым она будет тебя трахать!)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -213,8 +214,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Kiss cock]]></responseTitle>
-				<responseTooltip><![CDATA[You cannot gain access to your mouth, so cannot kiss the marauder's cock...]]></responseTooltip>
+				<responseTitle><![CDATA[Поцеловать член]]></responseTitle>
+				<responseTooltip><![CDATA[Ты не можешь дотянуться ртом, поэтому не получается поцеловать член мародерши...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -223,11 +224,11 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Kiss cock]]></responseTitle>
+				<responseTitle><![CDATA[Поцеловать член]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Crawl underneath the marauder and kiss her cock.
+					Пролезть под мародершу и поцеловать её член.
 					#IF(!attacker.hasPenis())
-						<br/>[style.italicsSexDom(The centauress will grow a demonic cock for you to kiss!)]
+						<br/>[style.italicsSexDom(У кентаврии вырастает демонический член, чтобы ты могла его поцеловать!)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -273,8 +274,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Kiss pussy]]></responseTitle>
-				<responseTooltip><![CDATA[You cannot gain access to your mouth, so cannot kiss the marauder's pussy...]]></responseTooltip>
+				<responseTitle><![CDATA[Целовать киску]]></responseTitle>
+				<responseTooltip><![CDATA[Ты не можешь дотянуться ртом, поэтому не получается поцеловать киску мародерши...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -283,11 +284,11 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Kiss pussy]]></responseTitle>
+				<responseTitle><![CDATA[Целовать киску]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Crawl underneath the marauder and kiss her pussy.
+					Пролезть под мародершу и поцеловать её киску.
 					#IF(!attacker.hasVagina())
-						<br/>[style.italicsSexDom(The centauress will grow a demonic pussy for you to kiss!)]
+						<br/>[style.italicsSexDom(У кентаврии вырастает демоническая киска, чтобы ты могла её поцеловать!)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -333,9 +334,9 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Present asshole]]></responseTitle>
+				<responseTitle><![CDATA[Показать задницу]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You cannot gain access to your asshole, so cannot present it to the marauder...
+					Ты не можешь дотянуться до своей задницы, поэтому не получается подставить её мародерше...
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
@@ -345,11 +346,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Present asshole]]></responseTitle>
+				<responseTitle><![CDATA[Показать задницу]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Expose your asshole and present it to the marauder so that she can fuck your ass.
+					Выстави свой зад перед мародёркой, чтобы она могла оттрахать твою задницу.
 					#IF(!attacker.hasPenis())
-						<br/>[style.italicsSexDom(The centauress will grow a demonic cock with which to fuck you!)]
+
+						<br/>[style.italicsSexDom(У кентаврихи вырастет демонический член, которым она будет тебя трахать!)]
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -395,8 +397,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Kiss asshole]]></responseTitle>
-				<responseTooltip><![CDATA[You cannot gain access to your mouth, so cannot kiss the marauder's asshole...]]></responseTooltip>
+				<responseTitle><![CDATA[Поцеловать анус]]></responseTitle>
+				<responseTooltip><![CDATA[Ты не можешь дотянуться ртом, поэтому не получается поцеловать анус мародёрки...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
@@ -405,9 +407,9 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Kiss asshole]]></responseTitle>
+				<responseTitle><![CDATA[Поцеловать анус]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Crawl underneath the marauder and kiss her asshole.
+					Подползти под мародёрку и поцеловать её анус.
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
@@ -454,8 +456,8 @@
 				[#pc.addStatusEffect(SE_innoxia_centaur_melee_seal, 14400)]
 			#ENDIF
 		-->
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The marauder has had her fun with you, and with a cruel laugh she kicks you away from her...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Мародёрка вдоволь натешалась тобой и с жестоким смехом отпихивает тебя от себя...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -465,10 +467,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					As the marauder has left, there's nothing else for you to do except continue on your way...
-					<br/>[style.italicsBad(The centauress will be permanently removed from the game.)]
+					Когда мародёрка уходит, тебе остается только продолжить свой путь...
+					<br/>[style.italicsBad(Кентавристка навсегда исчезнет из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -492,10 +494,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Decide against doing anything further with the marauder and continue on your way...
-					<br/>[style.italicsBad(The centauress will be permanently removed from the game.)]
+					Решить больше ничего не делать с мародёркой и продолжить свой путь...
+					<br/>[style.italicsBad(Кентавристка навсегда исчезнет из игры.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -509,8 +511,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have dominant sex with the centauress.]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться своей победой, чтобы доминировать над кентавристкой в сексе.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -532,8 +534,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Gentle sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have gentle, dominant sex with the centauress.]]></responseTooltip>
+				<responseTitle><![CDATA[Нежный секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться своей победой, чтобы заняться с кентавристкой нежным, но доминирующим сексом.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -557,8 +559,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Rough sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have rough, dominant sex with the centauress.]]></responseTooltip>
+				<responseTitle><![CDATA[Грубый секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользуйся своей победой, чтобы грубо и доминантно трахнуть кентаврисску.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -585,9 +587,9 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Decide to submit to the marauder.
+					Решить подчиниться налетчице.
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_encounters_fields_centaur_melee_submit]]></nextDialogue>
 				<effects><![CDATA[
@@ -604,8 +606,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Inventory]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you've defeated the centauress, there's nothing stopping you from helping yourself to her clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда кентаврисса повержена, ничто не мешает тебе обшарить её одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(attacker, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -616,12 +618,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Question]]></responseTitle>
+				<responseTitle><![CDATA[Допрос]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_fields_centaur_attacker_talked))
-						You've already tried to question the centauress, and she's proven to be completely uncooperative...
+						Ты уже пытался расспросить кентаврисску, но она оказалась совершенно неразговорчивой...
 					#ELSE
-						Ask the marauder where she came from and why she's attacking innocent travellers.
+						Спросить налетчицу, откуда она взялась и почему нападает на невинных путников.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -640,8 +642,8 @@
 	</scene>
 	
 	<scene id="after_sex_dom">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had enough fun with the marauder...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[С тобой уже хватит веселья с налетчицей...]]></tooltip>
 		<content folderPath="txt/encounters/fields/centaur_melee">AFTER_SEX_DOM</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -651,10 +653,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Now that you've had your fun, you decide to leave the marauder and continue on your way...
-					<br/>[style.italicsBad(The centauress will be permanently removed from the game.)]
+					Насладившись, ты решаешь оставить налетчицу и продолжить свой путь...
+					<br/>[style.italicsBad(Кентаврисса будет навсегда удалена из игры.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -668,8 +670,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Inventory]]></responseTitle>
-				<responseTooltip><![CDATA[As you've defeated the centauress, there's nothing stopping you from helping yourself to her clothing and items...]]></responseTooltip>
+				<responseTitle><![CDATA[Инвентарь]]></responseTitle>
+				<responseTooltip><![CDATA[Раз ты одолел кентаврисску, ничто не мешает тебе обшарить её одежду и вещи...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#game.openInventoryDialogue(attacker, INVENTORY_INTERACTION_FULL_MANAGEMENT)]
@@ -699,8 +701,8 @@
 				<availabilityConditional><![CDATA[[#game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[You're unable to stop the centauress from dominantly fucking you...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[Ты не в силах помешать кентавриссе доминантно трахать тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -727,8 +729,8 @@
 				<availabilityConditional><![CDATA[[#game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Resist]]></responseTitle>
-				<responseTooltip><![CDATA[Refuse to submit to the centauress and try to resist as she dominantly fucks you...]]></responseTooltip>
+				<responseTitle><![CDATA[Сопротивляться]]></responseTitle>
+				<responseTooltip><![CDATA[Отказаться подчиняться кентавриссе и попытаться сопротивляться, пока она властно трахает тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -758,10 +760,10 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_NPC_REMOVAL]]></colour>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Refuse to submit to the centauress and wait for her to leave before continuing on your way...
-					<br/>[style.italicsBad(The centauress will be permanently removed from the game.)]
+					Отказаться подчиняться кентавриссе и ждать, пока она уйдет, прежде чем продолжить свой путь...
+					<br/>[style.italicsBad(Кентаврисса навсегда исчезнет из игры.)]
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -775,9 +777,9 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Do as the centauress says and submit to her, allowing her to dominantly fuck you...
+					Сделать так, как говорит кентаврисса, и подчиниться ей, позволяя ей властно трахать тебя...
 				]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>

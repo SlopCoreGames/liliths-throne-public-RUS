@@ -251,16 +251,15 @@
 	</p>
 	]]></htmlContent>
 	
-	<htmlContent tag="ALLEY_PROSTITUTE_DOM_SEX"><![CDATA[
+	<htmlContent tag="ALLEY_PROSTITUTE_DOM_SEX"><![CDATA[(Примечание: Поскольку предоставленный текст является программным кодом (XML/JavaScript), а не игровым текстом для перевода, перевод переменных внутри логики обычно не требуется, если только это не строковые значения. Однако, основываясь на структуре, здесь содержатся только логические условия. Если бы это был текст для игрока, он бы выглядел иначе. В данном контексте «перевод» кода не предусмотрен, но если нужно перевести комментарии или подразумеваемые значения:)
+
 	#VAR
 		var canal = npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL_END);
 				
 		var storm = npc.isVulnerableToArcaneStorm() && game.getCurrentWeather()==WEATHER_MAGIC_STORM;
-	#ENDVAR
-	
-	#IF(storm)
+	#ENDVAR	#IF(storm)
 		<p>
 			Решив воспользоваться изнуряющей [npc.namePos] похотью, ты наклоняешься к [npc.herHim] и властно прижимаешься губами к [npc.her] [npc.lips+]. Издав отчаянный [npc.moan], похотливая [npc.race] тут же начинает жадно и неряшливо целовать тебя, а затем немного отстраняется, тяжело дыша: [npc.speech(Ну же, трахни меня так, чтобы искры из глаз! Давай прямо здесь, прямо сейчас!)]
 		</p>
@@ -291,16 +290,15 @@
 	#ENDIF
 	]]></htmlContent>
 	
-	<htmlContent tag="ALLEY_PROSTITUTE_SUB_SEX"><![CDATA[
+	<htmlContent tag="ALLEY_PROSTITUTE_SUB_SEX"><![CDATA[(Примечание: Поскольку предоставленный текст является программным кодом (XML/JavaScript), а не игровым текстом для перевода, перевод переменных внутри логики обычно не требуется, если только это не строковые значения. Однако, основываясь на структуре, здесь содержатся только логические условия. Если бы это был текст для игрока, он бы выглядел иначе. В данном контексте «перевод» кода не предусмотрен, но если нужно перевести комментарии или подразумеваемые значения:)
+
 	#VAR
 		var canal = npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL_END);
 				
 		var storm = npc.isVulnerableToArcaneStorm() && game.getCurrentWeather()==WEATHER_MAGIC_STORM;
-	#ENDVAR
-	
-	#IF(storm)
+	#ENDVAR	#IF(storm)
 		<p>
 			Решив воспользоваться изнуряющей похотью [npc.namePos], ты наклоняешься к [npc.herHim] и покорно позволяешь [npc.herHim] прижать [npc.her] [npc.lips+] к своим губам. Издав отчаянный [npc.moan], похотливая [npc.race] тут же начинает жадно и небрежно целовать тебя, после чего слегка отстраняется, тяжело дыша: [npc.speech(О да! Я трахну тебя так, что ты с ума сойдешь! Давай прямо здесь, прямо сейчас!)]
 		</p>
@@ -331,16 +329,15 @@
 	#ENDIF
 	]]></htmlContent>
 	
-	<htmlContent tag="ALLEY_PROSTITUTE_THREESOME"><![CDATA[
+	<htmlContent tag="ALLEY_PROSTITUTE_THREESOME"><![CDATA[(Примечание: Поскольку предоставленный текст является программным кодом (XML/JavaScript), а не игровым текстом для перевода, перевод переменных внутри логики обычно не требуется, если только это не строковые значения. Однако, основываясь на структуре, здесь содержатся только логические условия. Если бы это был текст для игрока, он бы выглядел иначе. В данном контексте «перевод» кода не предусмотрен, но если нужно перевести комментарии или подразумеваемые значения:)
+
 	#VAR
 		var canal = npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL_END);
 				
 		var storm = npc.isVulnerableToArcaneStorm() && game.getCurrentWeather()==WEATHER_MAGIC_STORM;
-	#ENDVAR
-	
-	#IF(storm)
+	#ENDVAR	#IF(storm)
 		<p>
 			Решив воспользоваться изнуряющей похотью [npc.namePos], ты велишь своей [com.companion] присоединиться к веселью, после чего наклоняешься к возбужденной [npc.race] и властно прижимаешься губами к её [npc.her] [npc.lips+]. Издав отчаянный [npc.moan], [npc.name] тут же начинает жадно и неистово целовать тебя, а затем слегка отстраняется, тяжело дыша: [npc.speech(Давай же, трахни меня так, чтобы искры из глаз! Давай прямо здесь и прямо сейчас!)]
 		</p>
@@ -369,16 +366,15 @@
 	#ENDIF
 	]]></htmlContent>
 	
-	<htmlContent tag="ALLEY_PROSTITUTE_COMPANION_DOM_SEX"><![CDATA[
+	<htmlContent tag="ALLEY_PROSTITUTE_COMPANION_DOM_SEX"><![CDATA[(Примечание: Поскольку предоставленный текст является программным кодом (XML/JavaScript), а не игровым текстом для перевода, перевод переменных внутри логики обычно не требуется, если только это не строковые значения. Однако, основываясь на структуре, здесь содержатся только логические условия. Если бы это был текст для игрока, он бы выглядел иначе. В данном контексте «перевод» кода не предусмотрен, но если нужно перевести комментарии или подразумеваемые значения:)
+
 	#VAR
 		var canal = npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_ALLEYS_CANAL_CROSSING)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL)
 				|| npc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_DOMINION_CANAL_END);
 				
 		var storm = npc.isVulnerableToArcaneStorm() && game.getCurrentWeather()==WEATHER_MAGIC_STORM;
-	#ENDVAR
-	
-	#IF(storm)
+	#ENDVAR	#IF(storm)
 		<p>
 			Решив воспользоваться изнуряющей похотью [npc.namePos], ты [pc.step] от [npc.herHim] и велено своей [com.companion] занять твоё место. Довольная возможностью переспать с этой похотливой [npc.race], [com.name] наклоняется к [npc.herHim] и властно прижимается [com.her] ртом к [npc.her] [npc.lips+]. Издав отчаянный [npc.moan], [npc.name] тут же начинает неистово целовать твои [com.companion], после чего слегка отстраняется, тяжело дыша: [npc.speech(Давай же, трахай меня до беспамятства! Давай сделаем это, прямо здесь и прямо сейчас!)]
 		</p>
@@ -520,10 +516,9 @@
 	</p>
 	<p>
 		Рассказав [npc.name], что ты дружишь с хозяйкой борделя «Поцелуй Ангела», ты сообщаешь [npc.herHim], что [npc.her] сможет выплатить долги в обмен на согласие работать там. Признавая, что это потребует отдавать процент от [npc.her] дохода напрямую борделю, ты доказываешь, что это ничтожная цена за то, чтобы Enforcer отвязались от [npc.her], не говоря уже о том, что у [npc.she] будет безопасное место для работы.
-	</p>
-	<p>
-		Not needing any more convincing, [npc.namePos] [npc.eyes] light up as [npc.she] hears you offering [npc.herHim] a way out of the alleyways, and [npc.she] gasps, [npc.speech(You're serious?! You'd better not be tricking me! I can... I can finally escape these alleyways?!)]
 	</p><p>
+Больше не нужно никаких уговоров: [npc.namePos] и [npc.eyes] буквально светятся от радости, когда [npc.she] слышит, что ты предлагаешь [npc.herHim] путь из этих трущоб, и [npc.she] ахает, [npc.speech(Ты серьезно?! Только не вздумай меня обманывать! Неужели... неужели я наконец-то смогу выбраться из этих переулков?!)]
+</p><p>
 		Уверяя недоверчивую [npc.race], что ты говоришь [npc.herHim] чистую правду, ты велишь [npc.herHim] отправить [npc.her] прямиком в «Поцелуй Ангела» и передать Ангелу, что [npc.herHim] прислала «[pc.name]».
 	</p>
 	<p>
@@ -566,9 +561,10 @@
 	</p>
 	]]></htmlContent>
 	
-	<htmlContent tag="PROSTITUTE_REMOVAL_THREATENED"><![CDATA[<p>
-Не желая, чтобы эта никчемная девка и дальше ошивалась поблизости, ты в лоб спрашиваешь, что же такого натворила [npc.she], раз ей пришлось платить штраф в [#SPECIAL_PARSE_0] @@H*@@ за нарушение порядка перед Enforcer. Тяжело вздохнув, [npc.race] проститутка огрызается: [npc.speech(Не твоё дело! Зря я только рот открыла...)]
-</p>
+	<htmlContent tag="PROSTITUTE_REMOVAL_THREATENED"><![CDATA[
+	<p>
+		Не желая, чтобы эта никчемная особа и дальше ошивалась здесь, ты нарочито спрашиваешь, что же такого сделала [npc.she], чтобы получить штраф в [#SPECIAL_PARSE_0] огней от Enforcer. Издав раздраженный вздох, [npc.race] проститутка огрызается: [npc.speech(Это не твое дело! Не стоило мне об этом упоминать...)]
+	</p>
 	<p>
 		Продолжая свой план по избавлению от [npc.name], ты небрежно размышляешь вслух о том, что сделают Enforcer с [npc.herHim], если узнают, где живет [npc.she]. Когда на лице [npc.race] быстро проступает выражение шока, ты говоришь [npc.herHim], что с нетерпением ждешь возможности это выяснить, после чего начинаешь [pc.walk] и заявляешь о своем намерении донести на [npc.herHim] ближайшему констеблю.
 	</p>
@@ -854,7 +850,7 @@
 			#ENDIF
 			. Глядя на твой [com.companion], [npc.her] довольно улыбается, и [npc.she] вздыхает: [npc.speech(Черт, а ты хорош! Кажется, у меня появился новый любимый клиент!)]
 		#ELSE
-			As [com.name] steps back from [npc.name], [npc.she] sinks back onto [npc.her] bed, letting out a deep sigh as [npc.she] realises that your [com.companion] has finished. Looking up at [com.name], a tired smile settles on [npc.her] face, and [npc.she] exclaims, [npc.speech(I hope you had a good time!)]
+			Когда [com.name] отстраняется от [npc.name], [npc.she] снова опускается на [npc.her] кровать, тяжело вздыхая, когда [npc.she] понимает, что твоя [com.companion] подошла к концу. Подняв взгляд на [com.name], [npc.her] расплывается в усталой улыбке, и [npc.she] восклицает: [npc.speech(Надеюсь, тебе понравилось!)]
 		#ENDIF
 	</p>
 	<p>
@@ -871,7 +867,7 @@
 			#ELSE
 				 оргазма
 			#ENDIF
-			. Looking up at you, a satisfied smile settles on [npc.her] face, and [npc.she] sighs, [npc.speech(Damn, you're good! It looks like I've got a new favourite customer!)]
+			. Подняв на тебя взгляд, [npc.her] довольно улыбается, и [npc.she] вздыхает: [npc.speech(Черт, а ты хорош! Кажется, у меня появился новый любимый клиент!)]
 		#ELSE
 Когда ты [pc.step] от [npc.name], [npc.she] откидывается на [npc.her] кровать, тяжело вздыхая, когда [npc.she] понимает, что ты закончил. Подняв на тебя взгляд, [npc.her] устало улыбается, и [npc.she] восклицает: [npc.speech(Надеюсь, тебе понравилось!)]		#ENDIF
 	</p>
@@ -1017,7 +1013,7 @@
 	<p>
 		С этими словами [npc.she] быстро собирает [npc.her] личные вещи, после чего выходит из [npc.her] квартиры, оставляя тебя тяжело дышать на полу. Тебе требуется некоторое время, чтобы прийти в себя после пережитого, но в конце концов ты чувствуешь достаточно сил, чтобы привести вещи в порядок и продолжить свой путь...
 	</p><p>
-	<i>Теперь, когда ты раскрыл статус [npc.namePos] как беглеца от закона, ты понимаешь, что [style.italicsMinorBad(это был последний раз, когда ты видел [npc.herHim])], ведь [npc.sheIs] наверняка отправится на новое место.</i>
+	<i>Теперь, когда ты раскрыл статус [npc.namePos] как беглеца от закона, ты понимаешь, что [style.italicsMinorBad(это был последний раз, когда ты видел [npc.herHim])], ведь [npc.sheIs] наверняка отправится на новое место обитания.</i>
 </p>
 	]]></htmlContent>
 	

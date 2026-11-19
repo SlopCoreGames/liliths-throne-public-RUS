@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>80</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Brown Rat's Burger]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Brown Rat's Burgers]]></namePlural>
-		<description><![CDATA[A double-cheeseburger, wrapped up in greaseproof paper. On the wrapper, there's a picture of a brown-furred rat-boy greedily shoving one of these burgers into his mouth.]]></description> 
+		<name><![CDATA[Бургер из бурой крысы]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Бургеры из бурой крысы]]></namePlural>
+		<description><![CDATA[Двойной чизбургер, завернутый в пергаментную бумагу. На обертке красуется изображение крысопарня с бурой шерстью, который жадно запихивает один из таких бургеров себе в рот.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,9 +31,9 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
-			<line><![CDATA[If body size is less than [style.colourBodySizeThree('large')], increases body size by 1]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
+			<line><![CDATA[Если размер тела меньше [style.colourBodySizeThree('крупного')], увеличивает размер тела на 1]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -41,14 +41,14 @@
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/5)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				The taste of the burger reminds [npc.name] of home, and [npc.she] [npc.verb(start)] to feel a lot more energetic!
+				Вкус бургера напоминает [npc.name] о доме, а [npc.she] [npc.verb(start)] чувствовать прилив сил!
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 4)]
 		#ELSE
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot more energetic...
+				[npc.Name] [npc.verb(start)] почувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		#ENDIF
@@ -67,10 +67,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Unwrapping the Brown Rat's Burger's paper covering, [npc.name] quickly [npc.verb(reveal)] the greasy cheeseburger contained within. Bringing it up to [npc.her] mouth, [npc.she] [npc.verb(take)] a big bite, and [npc.verb(discover)] that it's absolutely delicious. Encouraged by the taste, it only takes [npc.herHim] a few moments to wolf down the meal.
+		Разворачивая бумагу бургера из бурой крысы, [npc.name] быстро [npc.verb(reveal)] жирный чизбургер внутри. Поднеся его к [npc.her] рту, [npc.she] [npc.verb(take)] огромный кусок и [npc.verb(discover)], что это чертовски вкусно. Вдохновленная вкусом, [npc.name] тратит всего лишь [npc.herHim] мгновения, чтобы уплести всё до последней крошки.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Unwrapping the Brown Rat's Burger's paper covering, [npc.name] quickly [npc.verb(reveal)] the greasy cheeseburger contained within, before offering it to [npc2.name]. Bringing it up to [npc2.her] mouth, [npc2.name] [npc2.verb(take)] a big bite, and [npc2.verb(discover)] that it's absolutely delicious. Encouraged by the taste, it only takes [npc2.herHim] a few moments to wolf down the meal.
+		Разворачивая бумагу бургера из бурой крысы, [npc.name] быстро [npc.verb(reveal)] жирный чизбургер внутри, после чего предлагает его [npc2.name]. Поднеся его к [npc2.her] рту, [npc2.name] [npc2.verb(take)] огромный кусок и [npc2.verb(discover)], что это чертовски вкусно. Вдохновленный вкусом, [npc2.herHim] тратит всего лишь несколько мгновений, чтобы уплести всё до последней крошки.
 		]]></otherUse>
 	</useDescriptions>
 

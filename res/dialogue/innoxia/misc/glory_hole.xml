@@ -13,24 +13,24 @@
 				<availabilityConditional><![CDATA[[#pc.isTaur()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Glory hole (use)]]></responseTitle>
-				<responseTooltip><![CDATA[Due to the shape of your [pc.legRace]'s body, you cannot get into a suitable position for using the glory hole...]]></responseTooltip>
+				<responseTitle><![CDATA[Глори-хоул (использовать)]]></responseTitle>
+				<responseTooltip><![CDATA[Из-за особенностей телосложения твоей [pc.legRace], ты не можешь принять удобную позу, чтобы воспользоваться глори-хоулом...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#!pc.isTaur() && ((!pc.hasPenis() || !pc.isAbleToAccessCoverableArea(CA_PENIS, true)) && (!pc.hasVagina() || !pc.isAbleToAccessCoverableArea(CA_VAGINA, true)))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Glory hole (use)]]></responseTitle>
-				<responseTooltip><![CDATA[You can't get access to your genitals, so can't get serviced at a glory hole...]]></responseTooltip>
+				<responseTitle><![CDATA[Глори-хоул (использовать)]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя нет доступа к своим гениталиям, поэтому ты не можешь получить удовольствие в глори-хоуле...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#!pc.isTaur() && ((pc.hasPenis() && pc.isAbleToAccessCoverableArea(CA_PENIS, true)) || (pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Glory hole (use)]]></responseTitle>
-				<responseTooltip><![CDATA[Enter a stall which has a glory hole in it and wait for someone on the other side to service you...]]></responseTooltip>
+				<responseTitle><![CDATA[Глори-хоул (использовать)]]></responseTitle>
+				<responseTooltip><![CDATA[Зайди в кабинку с глори-хоулом и жди, пока кто-нибудь с другой стороны обслужит тебя...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_misc_glory_hole_dom_start]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.spawnSubGloryHoleNPC('stranger', 'glory')]
@@ -40,8 +40,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Glory hole (service)]]></responseTitle>
-				<responseTooltip><![CDATA[Enter a stall which has a glory hole in it and wait to service someone on the other side...]]></responseTooltip>
+				<responseTitle><![CDATA[Глори-хоул (обслуживание)]]></responseTitle>
+				<responseTooltip><![CDATA[Зайди в кабинку с глори-хоулом и жди, чтобы обслужить кого-то с другой стороны...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_misc_glory_hole_sub_start]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.spawnDomGloryHoleNPC('stranger', 'glory')]
@@ -52,8 +52,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Glory hole (double service)]]></responseTitle>
-				<responseTooltip><![CDATA[Enter a stall which has a glory hole in both sides of it and wait to service two people at once...]]></responseTooltip>
+				<responseTitle><![CDATA[Глори-хоул (двойное обслуживание)]]></responseTitle>
+				<responseTooltip><![CDATA[Зайди в кабинку, в которой есть глори-хоулы с обеих сторон, и жди, чтобы обслужить сразу двух человек...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_misc_glory_hole_sub_threesome_start]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.spawnDomGloryHoleNPC('stranger', 'glory')]
@@ -74,8 +74,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[On second thoughts, you don't really want some stranger having fun with your private parts...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Если подумать, тебе не особо хочется, чтобы какой-то незнакомец развлекался с твоими интимными местами...]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -86,8 +86,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Start]]></responseTitle>
-				<responseTooltip><![CDATA[Do as [npc.name] says and [pc.step] up to the glory hole.]]></responseTooltip>
+				<responseTitle><![CDATA[Начать]]></responseTitle>
+				<responseTooltip><![CDATA[Сделай, как говорит [npc.name], и [pc.step] к дырке славы.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_misc_glory_hole_dom]]></id>
@@ -117,8 +117,8 @@
 			[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/misc/glory_hole', 'TOILETS_GLORY_HOLE_DOM_POST_SEX'))]
 			[#game.banishNPC(glory)]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The stranger quickly exits their stall and heads out of the toilets, leaving you to do the same...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Незнакомец быстро выходит из кабинки и направляется к выходу из туалета, оставляя тебя делать то же самое...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -127,8 +127,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[[pc.Step] out of the stall.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[[pc.Step] из кабинки.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 			</response>
@@ -144,8 +144,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[On second thoughts, you don't really want to suck the cock of some random stranger...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Если подумать, тебе не особо хочется сосать член какому-то случайному незнакомцу...]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -156,8 +156,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Start]]></responseTitle>
-				<responseTooltip><![CDATA[Do as [npc.name] says and get ready to service [npc.her] glory hole.]]></responseTooltip>
+				<responseTitle><![CDATA[Начать]]></responseTitle>
+				<responseTooltip><![CDATA[Сделай, как говорит [npc.name], и приготовься обслуживать [npc.her] в дырке славы.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_misc_glory_hole_sub]]></id>
@@ -187,8 +187,8 @@
 			[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/misc/glory_hole', 'TOILETS_GLORY_HOLE_SUB_POST_SEX'))]
 			[#game.banishNPC(glory)]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The stranger quickly exits their stall and heads out of the toilets, leaving you to do the same...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Незнакомец быстро выходит из кабинки и направляется к выходу из туалета, оставляя тебя делать то же самое...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -197,8 +197,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[[pc.Step] out of the stall.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[[pc.Step] из кабинки.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 			</response>
@@ -214,8 +214,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[0]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[On second thoughts, you don't really want to suck the cock of a couple of random strangers...]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Если подумать, тебе не особо и хочется сосать члены кучке случайных незнакомцев...]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -227,8 +227,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Start]]></responseTitle>
-				<responseTooltip><![CDATA[Do as these strangers say and get ready to service their glory holes.]]></responseTooltip>
+				<responseTitle><![CDATA[Начать]]></responseTitle>
+				<responseTooltip><![CDATA[Сделай так, как говорят эти незнакомцы, и приготовься обслуживать их «дыры славы».]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_misc_glory_hole_threesome_sub]]></id>
@@ -263,8 +263,8 @@
 			[#game.banishNPC(glory)]
 			[#game.banishNPC(glory2)]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The strangers quickly exit their stalls and head out of the toilets, leaving you to do the same...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Незнакомцы быстро покидают свои кабинки и выходят из туалета, оставляя тебя делать то же самое...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -273,8 +273,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[[pc.Step] out of the stall.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[[pc.Step] из кабинки.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 			</response>

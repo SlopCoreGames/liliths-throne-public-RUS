@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the can reads 'Canned by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[Снизу на банке видна едва заметная надпись: «Консервировано DSG Foodstuffs LLC»]]></authorTag>
 		
 		<value>10</value> 
 		<determiner><![CDATA[a cup of]]></determiner>
-		<name><![CDATA[Cotton Candy Soda]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Cotton Candy Sodas]]></namePlural>
-		<description><![CDATA[A large translucent plastic cup of blue raspberry cotton candy flavoured soda. The label depicts a raccoon-boy in a lab coat dangling a wad of cotton candy over a bowl of carbonated water.]]></description> 
+		<name><![CDATA[Газировка «Сахарная вата»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Газировки «Сахарная вата»]]></namePlural>
+		<description><![CDATA[Большой полупрозрачный пластиковый стакан с синей газировкой со вкусом малиновой сахарной ваты. На этикетке изображен мальчик-енот в лабораторном халате, держащий пушистый комок сахарной ваты над чашей с газированной водой.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -30,15 +30,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A cool wave of arcane energy washes over [npc.name]...
+				Прохладная волна арканы омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 1)]
 		]]></applyEffects>
@@ -52,10 +52,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(bring)] the cup of Cotton Candy Soda up to [npc.her] [npc.mouth]. The smell of sugar and raspberries rises from the straw, and as [npc.she] [npc.verb(wrap)] [npc.her] lips around it and [npc.verb(start)] sucking down the tingly liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		[npc.Name] [npc.verb(bring)] стакан газировки «Сахарная вата» к [npc.her] [npc.mouth]. От трубочки исходит аромат сахара и малины, и когда [npc.she] [npc.verb(wrap)] [npc.her] губы вокруг неё и [npc.verb(start)] начинает жадно пить эту покалывающую жидкость, [npc.she] [npc.verb(feel)] прилив невероятной свежести.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(bring)] the cup of Cotton Candy Soda up to [npc2.namePos] waiting [npc2.lips]. The smell of sugar and raspberries rises from the straw, and as [npc2.she] [npc2.verb(warp)] [npc2.her] lips around it and [npc2.verb(start)] sucking down the tingly liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		[npc.Name] [npc.verb(bring)] стакан газировки «Сахарная вата» к ожидающей [npc2.namePos] [npc2.lips]. От трубочки исходит аромат сахара и малины, и когда [npc2.she] [npc2.verb(warp)] [npc2.her] губы вокруг неё и [npc2.verb(start)] начинает жадно пить эту покалывающую жидкость, [npc.she] [npc.verb(feel)] прилив невероятной свежести.
 		]]></otherUse>
 	</useDescriptions>
 

@@ -22,8 +22,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
-				<responseTooltip><![CDATA[Exit the town hall and head back out into the streets of Elis.]]></responseTooltip>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
+				<responseTooltip><![CDATA[Выйти из ратуши и вернуться на улицы Элиса.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_street"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -47,9 +47,9 @@
 				<availabilityConditional><![CDATA[[#game.isHourBetween(7, 21)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Minotallys]]></responseTitle>
+				<responseTitle><![CDATA[Миноталлис]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Approach the information desk and ask one of the receptionists about Minotallys.
+					Подойди к стойке информации и расспроси кого-нибудь из администраторов о Миноталлисах.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_town_hall_f0_info_minotallys]]></nextDialogue>
 			</response>
@@ -66,9 +66,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Minotallys]]></responseTitle>
+				<responseTitle><![CDATA[Миноталлис]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You are already asking one of the receptionists about Minotallys!
+					Ты уже расспрашиваешь одного из администраторов о Миноталлисах!
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
@@ -107,16 +107,16 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_elis_minotallys_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Upstairs]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have permission to go upstairs...]]></responseTooltip>
+				<responseTitle><![CDATA[Наверх]]></responseTitle>
+				<responseTooltip><![CDATA[Тебе не разрешено подниматься наверх...]]></responseTooltip>
 				<nextDialogue>null</nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_elis_minotallys_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Upstairs]]></responseTitle>
-				<responseTooltip><![CDATA[Head up the staircase into the town hall's tower.]]></responseTooltip>
+				<responseTitle><![CDATA[Наверх]]></responseTitle>
+				<responseTooltip><![CDATA[Подняться по лестнице в башню ратуши.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_hall_f1_stairs"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -148,10 +148,10 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Knock]]></responseTitle>
+				<responseTitle><![CDATA[Постучать]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Knock on the door and wait for an answer.
-					<br/>[style.italicsMinorBad(This will be added soon!)]
+					Постучи в дверь и жди ответа.
+					<br/>[style.italicsMinorBad(Это скоро будет добавлено!)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>

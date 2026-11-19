@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the bottle reads 'Distilled by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[Снизу на бутылке видна едва заметная надпись: «Дистиллировано ООО „Продукты DSG“»]]></authorTag>
 		
 		<value>15</value> 
 		<determiner><![CDATA[a can of]]></determiner>
-		<name><![CDATA[Berry Soda]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Berry Sodas]]></namePlural>
-		<description><![CDATA[An aluminium can of berry-flavoured soda. The label on the can depicts an otter-boy in some swim trunks sitting on the bank of a river while drinking from a similar can.
+		<name><![CDATA[Ягодная газировка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ягодные газировки]]></namePlural>
+		<description><![CDATA[Алюминиевая банка с газировкой со вкусом ягод. На этикетке изображен мальчик-выдра в плавательных шортах, который сидит на берегу реки и пьет из такой же банки.
 		]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 15% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_HEALTH_MAXIMUM.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 15% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_HEALTH_MAXIMUM.getFormattedValue(2)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM) * 0.15)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				An uplifting wave of arcane energy washes over [npc.name]...
+				Волна бодрящей арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_HEALTH_MAXIMUM, 2)]
 		]]></applyEffects>
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After first opening the can, [npc.name] [npc.verb(bring)] the can of Berry Soda up to [npc.her] [npc.mouth]. A surprisingly authentic smell of nondescript berries rises from the opening, and as [npc.she] [npc.verb(tilt)] [npc.her] head back and [npc.verb(start)] drinking the fizzy liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		Едва открыв банку, [npc.name] [npc.verb(подносит)] банку с ягодной газировкой к [npc.her] [npc.mouth]. Из горлышка доносится удивительно натуральный аромат каких-то ягод, и когда [npc.she] [npc.verb(закидывает)] [npc.her] голову назад и [npc.verb(начинает)] пить шипучую жидкость, [npc.she] [npc.verb(чувствует)] невероятную свежесть.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After first removing the cork, [npc.name] [npc.verb(bring)] the bottle of Grog up to [npc2.namePos] waiting [npc2.lips]. A surprisingly authentic smell of nondescript berries rises from the opening, and as [npc2.she] [npc2.verb(tilt)] [npc2.her] head back and [npc2.verb(start)] drinking the fizzy liquid, [npc.she] [npc.verb(feel)] much more refreshed.
+		Едва вытащив пробку, [npc.name] [npc.verb(подносит)] бутылку грога к ожидающей [npc2.namePos] [npc2.lips]. Из горлышка доносится удивительно натуральный аромат каких-то ягод, и когда [npc2.she] [npc2.verb(закидывает)] [npc2.her] голову назад и [npc2.verb(начинает)] пить шипучую жидкость, [npc.she] [npc.verb(чувствует)] невероятную свежесть.
 		]]></otherUse>
 	</useDescriptions>
 

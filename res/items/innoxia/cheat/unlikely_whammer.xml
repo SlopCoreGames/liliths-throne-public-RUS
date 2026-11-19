@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>80</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Improbable-Whammer]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Improbable-Whammer]]></namePlural>
-		<description><![CDATA[Although this may look and taste like an ordinary burger, the packaging declares this 'Improbable-Whammer' to be 100% meat free. Printed in very small, hard-to-read text, there's a disclaimer which states that the meat substitute is 'dangerously high in female hormones'...]]></description> 
+		<name><![CDATA[Невероятный Умник]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Невероятный Умник]]></namePlural>
+		<description><![CDATA[Хотя на вид и вкус это может показаться обычным бургером, на упаковке красуется надпись, что этот «Невероятный Умник» на 100% не содержит мяса. Мелким, едва читаемым шрифтом там напечатано предупреждение: заменитель мяса содержит «опасно высокое содержание женских гормонов»...]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -30,7 +30,7 @@
 		<enchantmentEffectId/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
 			<line><![CDATA[[style.italicsSex(+10)] [style.italicsFeminine(femininity)]]]></line>
 		</effectTooltipLines>
 		
@@ -39,14 +39,14 @@
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/5)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				The taste of the burger reminds [npc.name] of home, and [npc.she] [npc.verb(start)] to feel a lot more energetic!
+				Вкус бургера напоминает [npc.name] о доме, а [npc.she] [npc.verb(start)] чувствовать прилив сил!
 			</p>
 			[#npc.incrementFemininity(10)]
 		#ELSE
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(feel)] the burger's side effects kicking in almost immediately...
+				[npc.Name] [npc.verb(feel)] как побочные эффекты бургера начинают действовать почти мгновенно...
 			</p>
 			[#npc.incrementFemininity(10)]
 		#ENDIF
@@ -63,7 +63,7 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Unwrapping the Improbable-Whammer's paper covering, [npc.name] quickly [npc.verb(reveal)] the greasy cheeseburger contained within. Bringing it up to [npc.her] mouth, [npc.she] [npc.verb(take)] a big bite, and [npc.verb(discover)] that it's absolutely delicious. Encouraged by the taste, it only takes [npc.herHim] a few moments to wolf down the meal.
+		Разворачивая бумажную обертку «Невероятного Умника», [npc.name] быстро [npc.verb(reveal)] жирный чизбургер внутри. Поднеся его к рту [npc.her], [npc.she] [npc.verb(take)] огромный кусок и [npc.verb(discover)], что он невероятно вкусный. Вдохновленная таким вкусом, [npc.herHim] требуется всего пара мгновений, чтобы умясти в себя всю порцию.
 		]]></selfUse>
 		<otherUse><![CDATA[
 		Unwrapping the Improbable-Whammer's paper covering, [npc.name] quickly [npc.verb(reveal)] the greasy cheeseburger contained within, before offering it to [npc2.name]. Bringing it up to [npc2.her] mouth, [npc2.name] [npc2.verb(take)] a big bite, and [npc2.verb(discover)] that it's absolutely delicious. Encouraged by the taste, it only takes [npc2.herHim] a few moments to wolf down the meal.

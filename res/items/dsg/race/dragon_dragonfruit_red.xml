@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint wax stamp on the peel reads "Grown by the dragons of the DSG Farmer's Guild."]]></authorTag>
+		<authorTag><![CDATA[На кожуре едва заметен восковой штамп: «Выращено драконами из Фермерской гильдии DSG».]]></authorTag>
 		
 		<value>100</value> 
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[Red Dragonfruit]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Red Dragonfruits]]></namePlural>
-		<description><![CDATA[Named for the scaly, spiky leaves on its exterior, this rare fruit was first cultivated by dragon-morphs centuries ago. Legend has it that every hidden grove where it now grows was once a dragon's home. This variety grows best in poor, clay heavy soils.]]></description> 
+		<name><![CDATA[Красный драконий фрукт]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Красные драконьи фрукты]]></namePlural>
+		<description><![CDATA[Названный в честь чешуйчатых, колючих листьев на внешней стороне, этот редкий плод был впервые окультурен дракономорфами столетия назад. Легенда гласит, что каждая скрытая роща, где он растет сейчас, когда-то была домом дракона. Этот сорт лучше всего растет на бедных, тяжелых глинистых почвах.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -30,13 +30,13 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(9)] to 'potion effects']]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_ARCANE.getFormattedValue(9)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger...
+				[npc.Name] [npc.verb(start)] чувствовать себя сильнее...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_ARCANE, 9)]
@@ -50,10 +50,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] the fruit and [npc.verb(marvel)] at tender flesh and crunchy seeds inside. Unable to resist the delicious looking fruit, [npc.she] eagerly [npc.verb(start)] wolfing it all down, leaving empty peels behind in moments.
+		[npc.Name] [npc.verb(peel)] фрукт и [npc.verb(marvel)] нежной мякотью и хрустящими семенами внутри. Не в силах устоять перед этим аппетитным плодом, [npc.she] с жадностью [npc.verb(start)] начинает уплетать его за обе щеки, в мгновение ока оставляя лишь пустую кожуру.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] the fruit for [npc2.name] and [npc.verb(hold)] it out to [npc2.her], allowing [npc2.herHim] to [npc2.verb(marvel)] at the tender flesh and crunchy seeds inside. Unable to resist the delicious-looking fruit, [npc2.she] [npc2.verb(start)] wolfing it all down, leaving behind empty peels in moments.
+		[npc.Name] [npc.verb(peel)] фрукт для [npc2.name] и [npc.verb(hold)] его перед [npc2.her], позволяя [npc2.herHim] [npc2.verb(marvel)] нежной мякотью и хрустящими семенами внутри. Не в силах устоять перед этим аппетитным плодом, [npc2.she] [npc2.verb(start)] начинает жадно уплетать его, в мгновение ока оставляя лишь пустую кожуру.
 		]]></otherUse>
 	</useDescriptions>
 

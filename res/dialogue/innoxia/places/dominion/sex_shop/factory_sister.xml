@@ -18,8 +18,8 @@
 					<availabilityConditional><![CDATA[[#!(pc.hasStatusEffect(SE_MARKED_BY_MUSK) || pc.hasStatusEffect(SE_SMOKING) || pc.hasStatusEffect(SE_RECENTLY_SMOKED) || pc.getAlcoholLevel().isGreaterThan(ALCOHOL_LEVEL_TWO_MERRY))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Hide]]></responseTitle>
-					<responseTooltip><![CDATA[Hide and wait for the horny succubus to leave before continuing on your way through the factory...]]></responseTooltip>
+					<responseTitle><![CDATA[Спрятаться]]></responseTitle>
+					<responseTooltip><![CDATA[Спрятаться и подождать, пока похотливая суккубша уйдет, чтобы продолжить путь через фабрику...]]></responseTooltip>
 					<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 					<effects><![CDATA[
 						[#game.appendToTextEndStringBuilder(game.parseFromFile('txt/places/dominion/sex_shop/factory_sister', 'ENCOUNTER_HIDE'))]
@@ -30,8 +30,8 @@
 					<availabilityConditional><![CDATA[[#!(pc.hasStatusEffect(SE_MARKED_BY_MUSK) || pc.hasStatusEffect(SE_SMOKING) || pc.hasStatusEffect(SE_RECENTLY_SMOKED) || pc.getAlcoholLevel().isGreaterThan(ALCOHOL_LEVEL_TWO_MERRY))]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[2]]></index>
-					<responseTitle><![CDATA[Confront]]></responseTitle>
-					<responseTooltip><![CDATA[Confront the horny succubus!]]></responseTooltip>
+					<responseTitle><![CDATA[Противостоять]]></responseTitle>
+					<responseTooltip><![CDATA[Противостоять похотливой суккубше!]]></responseTooltip>
 					<colour><![CDATA[GENERIC_COMBAT]]></colour>
 					<nextDialogue><![CDATA[innoxia_places_dominion_sex_shop_factory_sister_encounter_confrontation]]></nextDialogue>
 					<effects><![CDATA[
@@ -43,8 +43,8 @@
 					<availabilityConditional><![CDATA[[#pc.hasStatusEffect(SE_MARKED_BY_MUSK) || pc.hasStatusEffect(SE_SMOKING) || pc.hasStatusEffect(SE_RECENTLY_SMOKED) || pc.getAlcoholLevel().isGreaterThan(ALCOHOL_LEVEL_TWO_MERRY)]]]></availabilityConditional>
 					<responseTabIndex><![CDATA[0]]></responseTabIndex>
 					<index><![CDATA[1]]></index>
-					<responseTitle><![CDATA[Discovered!]]></responseTitle>
-					<responseTooltip><![CDATA[The horny succubus has detected you!]]></responseTooltip>
+					<responseTitle><![CDATA[Обнаружен!]]></responseTitle>
+					<responseTooltip><![CDATA[Похотливая суккубша заметила тебя!]]></responseTooltip>
 					<colour><![CDATA[GENERIC_COMBAT]]></colour>
 					<nextDialogue><![CDATA[innoxia_places_dominion_sex_shop_factory_sister_encounter_confrontation]]></nextDialogue>
 					<effects/>
@@ -61,9 +61,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					There's nothing for it but to fight this succubus!
+					Остается только одно — сразиться с этой суккубом!
 				]]></responseTooltip>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -94,12 +94,12 @@
 				<availabilityConditional><![CDATA[[#saellatrix.isAnySisterPresent()]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Talk]]></responseTitle>
+				<responseTitle><![CDATA[Поговорить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_doll_factory_sister_talked))
-						Trying to talk to the horny succubus isn't getting you anywhere...
+						Попытки заговорить с похотливой суккубшей ни к чему не приводят...
 					#ELSE
-						Try to talk to the horny succubus.
+						Попробовать заговорить с похотливой суккубшей.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -117,8 +117,8 @@
 				<availabilityConditional><![CDATA[[#saellatrix.isAnySisterPresent()]]]></availabilityConditional> <!-- Have this conditional as this response is reused in other dialogue nodes where it's required -->
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[Give this horny succubus what she wants...]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Дать этой похотливой суккубше то, чего она хочет...]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					#IF(fia.getAffection(pc)>=-15)
@@ -157,8 +157,8 @@
 	</scene>
 	
 	<scene id="after_sex">
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Having had enough, you bring an end to the sex...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Насладившись сполна, ты завершаешь секс...]]></tooltip>
 		<content folderPath="txt/places/dominion/sex_shop/factory_sister">SISTER_SEX_END</content>
 		<secondsPassed><![CDATA[60]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -201,16 +201,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.isTaur())
-						Get moving
+						Двигаться дальше
 					#ELSE
-						Crawl...
+						Ползти...
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isTaur())
-						In your current state you have no choice but to carry the succubus on your back as she directs you deeper into the factory...
+						В твоем нынешнем состоянии тебе остается только нести суккубшу на спине, пока она ведет тебя вглубь фабрики...
 					#ELSE
-						In your current state you have no choice but to crawl after the succubus as she leads you deeper into the factory...
+						В твоем нынешнем состоянии тебе остается только ползти следом за суккубшей, пока она ведет тебя вглубь фабрики...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_sex_shop_factory_sister_travel]]></nextDialogue>
@@ -220,8 +220,8 @@
 				<availabilityConditional><![CDATA[[#game.isNonConEnabled() && (!sister.hasFetish(FETISH_ORAL_GIVING) || pc.hasPenisIgnoreDildo() || pc.hasVagina())]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[You can't summon the strength to resist this sexy succubus any longer...]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Ты больше не в силах сопротивляться этой сексуальной суккубе...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -421,8 +421,8 @@
 		<preParsingEffects><![CDATA[
 			[#game.appendToTextEndStringBuilder(game.parseFromFile('txt/places/dominion/sex_shop/factory_sister', 'SISTER_COLLARED'))]
 		]]></preParsingEffects>
-        <title><![CDATA[Finished]]></title>
-        <tooltip><![CDATA[Having had enough, the succubus brings an end to the sex...]]></tooltip>
+        <title><![CDATA[Завершено]]></title>
+        <tooltip><![CDATA[Насытившись, суккуба завершает секс...]]></tooltip>
 		<content folderPath="txt/places/dominion/sex_shop/factory_sister">SISTER_SUBMISSIVE_SEX_END</content>
 		<secondsPassed><![CDATA[60]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -433,16 +433,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(pc.isTaur())
-						Get moving
+						Двигаться дальше
 					#ELSE
-						Crawl...
+						Ползти...
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.isTaur())
-						In your current state you have no choice but to carry the succubus on your back as she directs you deeper into the factory...
+						В твоем нынешнем состоянии тебе остается только нести суккубшу на спине, пока она ведет тебя вглубь фабрики...
 					#ELSE
-						In your current state you have no choice but to crawl after the succubus as she leads you deeper into the factory...
+						В твоем нынешнем состоянии тебе остается только ползти следом за суккубшей, пока она ведет тебя вглубь фабрики...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_sex_shop_factory_sister_travel]]></nextDialogue>
@@ -469,8 +469,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Nightmares]]></responseTitle>
-				<responseTooltip><![CDATA[You recognise the two nightmares from having encountered them during the SWORD raid in Elis.]]></responseTooltip>
+				<responseTitle><![CDATA[Кошмары]]></responseTitle>
+				<responseTooltip><![CDATA[Ты узнаешь этих двоих — ты уже встречал их во время рейда мечей в Элисе.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_sex_shop_factory_sister_travel_end]]></nextDialogue>
 			</response>
 		</responses>
@@ -492,8 +492,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Captured]]></responseTitle>
-				<responseTooltip><![CDATA[You've been captured by Angelixx and her sons, and are now completely at their mercy...]]></responseTooltip>
+				<responseTitle><![CDATA[Плененные]]></responseTitle>
+				<responseTooltip><![CDATA[Ты попал(а) в плен к Анжеликсе и её сыновьям и теперь полностью во власти их милости...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_dominion_sex_shop_factory_bad_end_start]]></nextDialogue>
 			</response>
 		</responses>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>50</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Raptor energy bar]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Raptor energy bars]]></namePlural>
-		<description><![CDATA[A small, Raptor-branded energy bar, which proudly states on the back to be of 'Over 80% meat content'. On the reverse of the wrapper, there's an image of a fit falcon-boy dominantly face-fucking a naked mouse-girl.]]></description> 
+		<name><![CDATA[Энергетический батончик Раптора]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Энергетические батончики Раптора]]></namePlural>
+		<description><![CDATA[Маленький энергетический батончик под брендом Раптора, на обороте которого гордо красуется надпись: «Более 80% мяса». На обратной стороне обертки изображен подтянутый сокол-парень, доминирующе трахающий в рот обнаженную мышь-девушку.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,16 +31,16 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 15% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_HEALTH_MAXIMUM.getFormattedValue(10)] to 'potion effects']]></line>
-			<line><![CDATA[[#ATTRIBUTE_CRITICAL_DAMAGE.getFormattedValue(10)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 15% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_HEALTH_MAXIMUM.getFormattedValue(10)] к «эффектам зелий»]]></line>
+			<line><![CDATA[[#ATTRIBUTE_CRITICAL_DAMAGE.getFormattedValue(10)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM) * 0.15)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful jolt of energy surges through [npc.namePos] body!
+			Мощный прилив энергии пронзает тело [npc.namePos]!
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_HEALTH_MAXIMUM, 10)]
 			[#npc.addPotionEffect(ATTRIBUTE_CRITICAL_DAMAGE, 10)]
@@ -58,10 +58,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-			Tearing off the plastic wrapper, [npc.name] [npc.verb(take)] a big bite out of the Raptor energy bar. Although its savoury, meaty taste has an artificial hint to it, it's not at all unpleasant, and so [npc.she] happily [npc.verb(finish)] it off, after which [npc.she] quickly [npc.verb(find)] [npc.herself] feeling full of energy.
+			Сорвав пластиковую обертку, [npc.name] [npc.verb(take)] огромный кусок энергетического батончика Раптора. Хотя его сытный мясной вкус имеет искусственный привкус, он вовсе не неприятен, так что [npc.she] с удовольствием [npc.verb(finish)] съедает его, после чего [npc.she] быстро [npc.verb(find)] [npc.herself], чувствующего прилив сил.
 		]]></selfUse>
 		<otherUse><![CDATA[
-			Tearing off the plastic wrapper, [npc.name] [npc.verb(make)] [npc2.name] take a big bite out of the Raptor energy bar. Although its savoury, meaty taste has an artificial hint to it, it's not at all unpleasant, and so [npc2.she] happily [npc2.verb(finish)] it off, after which [npc2.she] quickly [npc2.verb(find)] [npc2.herself] feeling full of energy.
+			Сорвав пластиковую обертку, [npc.name] [npc.verb(make)] [npc2.name] откусить большой кусок энергетического батончика Раптора. Хотя его сытный мясной вкус имеет искусственный привкус, он вовсе не неприятен, так что [npc2.she] с удовольствием [npc2.verb(finish)] съедает его, после чего [npc2.she] быстро [npc2.verb(find)] [npc2.herself], чувствующего прилив сил.
 		]]></otherUse>
 	</useDescriptions>
 

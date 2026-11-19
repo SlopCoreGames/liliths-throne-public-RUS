@@ -12,12 +12,12 @@
 		
 		<!-- The title of this scene, which will be displayed as the title at the top-centre of the UI.
 		This can be omitted entirely, and is done so in most of the game's scenes, as when omitted the game instead uses the name of the tile which the player is current in as the title. -->
-		<title><![CDATA[Berry bounty]]></title>
+		<title><![CDATA[Ягодное изобилие]]></title>
 		
 		<!-- A scene's tooltip is almost always defined within a response to the scene which precedes it, and as such this field is almost never used or seen by the player.
 		The only time where this is actually used is when a scene immediately follows on from a sex scene, in which case this is seen as the tooltip to the action which ends sex.
 		As such, don't worry about filling this out (you can even omit it entirely). -->
-		<tooltip><![CDATA[You find berries!]]></tooltip>
+		<tooltip><![CDATA[Ты находишь ягоды!]]></tooltip>
 		
 		<!-- This is a conditional statement which is executed before the scene's dialogue is parsed.
 		This allows you to make any gameplay changes before the scene is presented to the player (which can be very useful for making sure that transformed characters get parsed correctly).
@@ -129,10 +129,10 @@
 				<index><![CDATA[1]]></index>
 				
 				<!-- The title of this response, as seen by the player on the action button. -->
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				
 				<!-- The tooltip contents of this response, as seen by the player when they hover their mouse over this response's action button. -->
-				<responseTooltip><![CDATA[You don't think that eating wild berries is a very wise thing to do, and so decide to leave them untouched and continue on you way.]]></responseTooltip>
+				<responseTooltip><![CDATA[Ты не считаешь, что есть дикие ягоды — очень мудрая затея, поэтому решаешь оставить их нетронутыми и продолжить свой путь.]]></responseTooltip>
 				
 				<!-- The colour of the title's text, which should most likely be omitted or left blank, as action colouring should only be used to let the player know the action leads to combat, sex, trade, or a quest (which apart from quests are handled automatically).
 				You can define this as either a PresetColour value or a raw colour hex.
@@ -411,8 +411,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Eat red berries]]></responseTitle>
-				<responseTooltip><![CDATA[Decide to eat the red berries and leave the purple ones behind.]]></responseTooltip>
+				<responseTitle><![CDATA[Съесть красные ягоды]]></responseTitle>
+				<responseTooltip><![CDATA[Решаешь съесть красные ягоды, оставив фиолетовые.]]></responseTooltip>
 				<nextDialogue>innoxia_encounters_fields_elis_woods_berries_eaten</nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -426,8 +426,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Eat purple berries]]></responseTitle>
-				<responseTooltip><![CDATA[Decide to eat the purple berries and leave the red ones behind.]]></responseTooltip>
+				<responseTitle><![CDATA[Съесть фиолетовые ягоды]]></responseTitle>
+				<responseTooltip><![CDATA[Решаешь съесть фиолетовые ягоды, оставив красные.]]></responseTooltip>
 				<nextDialogue>innoxia_encounters_fields_elis_woods_berries_eaten</nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -442,8 +442,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
 				<colour><![CDATA[ATTRIBUTE_CORRUPTION]]></colour>
-				<responseTitle><![CDATA[Eat all berries]]></responseTitle>
-				<responseTooltip><![CDATA[Decide to eat both the red and purple berries, despite your instincts telling you that doing so will have [style.colourCorruption(corruptive effects)]!]]></responseTooltip>
+				<responseTitle><![CDATA[Съесть все ягоды]]></responseTitle>
+				<responseTooltip><![CDATA[Решаешь съесть и красные, и фиолетовые ягоды, несмотря на инстинкты, твердящие, что это вызовет [style.colourCorruption(порочные эффекты)]!]]></responseTooltip>
 				<nextDialogue>innoxia_encounters_fields_elis_woods_berries_eaten_both</nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -473,8 +473,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Having consumed the berries and gained their effects, you're ready to continue on your way.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Съев ягоды и ощутив их действие, ты готов продолжить свой путь.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects/>
@@ -498,8 +498,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Calm down]]></responseTitle>
-				<responseTooltip><![CDATA[Spend some time calming down, before continuing on your way through the woods.]]></responseTooltip>
+				<responseTitle><![CDATA[Успокоиться]]></responseTitle>
+				<responseTooltip><![CDATA[Провести некоторое время, успокаиваясь, прежде чем продолжить путь через лес.]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 				<effects><![CDATA[
@@ -511,8 +511,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Masturbate]]></responseTitle>
-				<responseTooltip><![CDATA[You can't control yourself! Besides, there'd be no harm in masturbating here in the middle of the woods.]]></responseTooltip>
+				<responseTitle><![CDATA[Мастурбировать]]></responseTitle>
+				<responseTooltip><![CDATA[Ты не можешь сдержаться! К тому же, нет ничего плохого в том, чтобы заняться мастурбацией прямо здесь, посреди леса.]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<sexVariables enabled="true">
 					<consensual><![CDATA[true]]></consensual>
@@ -530,8 +530,8 @@
 	
 	<scene id="berries_after_masturbating">
 		<author><![CDATA[Innoxia]]></author>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had enough of masturbating, and so put a stop to it and prepare to move on...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[С тебя хватит мастурбации, так что ты останавливаешься и готовишься двигаться дальше...]]></tooltip>
 		<preParsingEffects/>
 		<content folderPath="txt/encounters/fields/elis/woods">BERRIES_AFTER_MASTURBATING</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -542,8 +542,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Continue on your way through the woods.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Продолжить путь через лес.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects/>
@@ -567,8 +567,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[You don't have time to relax, and so continue on your way past the clearing.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[У тебя нет времени на отдых, поэтому ты продолжаешь путь мимо поляны.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<effects><![CDATA[
@@ -579,8 +579,8 @@
 				<availabilityConditional><![CDATA[true]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Relax]]></responseTitle>
-				<responseTooltip><![CDATA[Spend some time relaxing in the idyllic clearing.]]></responseTooltip>
+				<responseTitle><![CDATA[Расслабиться]]></responseTitle>
+				<responseTooltip><![CDATA[Провести некоторое время, расслабляясь на этой идиллической поляне.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[35]]></secondsPassed>
 				<effects><![CDATA[

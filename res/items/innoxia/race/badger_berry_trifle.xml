@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>40</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Berry Trifle]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Berry Trifles]]></namePlural>
-		<description><![CDATA[A small plastic pot, containing a delicious-looking berry trifle. A stylised pair of white stripes streak across the lid's black background, and from the description printed on the pot's side, you can safely deduce that this trifle is advertised towards badger-morphs.]]></description> 
+		<name><![CDATA[Ягодный трифл]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ягодные трифлы]]></namePlural>
+		<description><![CDATA[Маленький пластиковый стаканчик с аппетитным ягодным трифлом. На черном фоне крышки красуются стилизованные белые полосы, а из описания на боку можно смело сделать вывод, что этот десерт рекламируется специально для барсукоморфов.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot healthier...
+				[npc.Name] [npc.verb(start)] почувствовать себя гораздо здоровее...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] off the film lid to the pot of Berry Trifle, before starting to eat the combination of fruit, cream, and custard contained within. The masterful combination of berries makes this treat an absolutely delicious one, and it only takes [npc.herHim] a moment to finish off the entire pot.
+		[npc.Name] [npc.verb(peel)] снимаешь пленку с крышечки стаканчика с ягодным трифлом, а затем принимаешься за смесь фруктов, сливок и заварного крема. Искусное сочетание ягод делает это лакомство невероятно вкусным, и тебе требуется всего лишь [npc.herHim] мгновение, чтобы опустошить весь стаканчик.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(peel)] off the film lid to the pot of Berry Trifle, before presenting it to [npc2.name] and getting [npc2.herHim] to start eating the combination of fruit, cream, and custard contained within. The masterful combination of berries makes this treat an absolutely delicious one, and it only takes [npc2.name] a moment to finish off the entire pot.
+		[npc.Name] [npc.verb(peel)] снимаешь пленку с крышечки стаканчика с ягодным трифлом, прежде чем поднести его к [npc2.name] и заставить [npc2.herHim] начать поедать смесь фруктов, сливок и заварного крема. Искусное сочетание ягод делает это лакомство невероятно вкусным, и требуется всего лишь [npc2.name] мгновение, чтобы опустошить весь стаканчик.
 		]]></otherUse>
 	</useDescriptions>
 

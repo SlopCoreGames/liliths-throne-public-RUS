@@ -12,8 +12,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Exit]]></responseTitle>
-				<responseTooltip><![CDATA[Push open the tavern's door and head back outside.]]></responseTooltip>
+				<responseTitle><![CDATA[Выход]]></responseTitle>
+				<responseTooltip><![CDATA[Толкни дверь таверны и выйди обратно на улицу.]]></responseTooltip>
 				<nextDialogue defaultPlaceType="innoxia_fields_elis_town_tavern_alley"/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -44,8 +44,8 @@
 				<availabilityConditional><![CDATA[[#!flags.hasFlag(FLAG_innoxia_oglix_introduced)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Bar]]></responseTitle>
-				<responseTooltip><![CDATA[Head over to the bar and greet the green-skinned succubus.]]></responseTooltip>
+				<responseTitle><![CDATA[Бар]]></responseTitle>
+				<responseTooltip><![CDATA[Подойди к барной стойке и поприветствуй зеленокожую суккуба.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_intro]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
 				<effects><![CDATA[
@@ -73,8 +73,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Elemental]]></responseTitle>
-				<responseTooltip><![CDATA[Look over at Oglix's elemental as it greets you.]]></responseTooltip>
+				<responseTitle><![CDATA[Элементаль]]></responseTitle>
+				<responseTooltip><![CDATA[Посмотри на элементаля Огликса, когда он приветствует тебя.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_intro_elemental]]></nextDialogue>
 			</response>
 		</responses>
@@ -89,8 +89,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Beer-bitch]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Oglix what she means by this [beerBitch.race] being a 'beer-bitch'.]]></responseTooltip>
+				<responseTitle><![CDATA[Пивная сучка]]></responseTitle>
+				<responseTooltip><![CDATA[Спроси у Огликса, что она имеет в виду под тем, что [beerBitch.race] — «пивная сучка».]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_intro_beer_bitch]]></nextDialogue>
 			</response>
 		</responses>
@@ -149,12 +149,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Background]]></responseTitle>
+				<responseTitle><![CDATA[Прошлое]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_oglix_talk_background))
-						You've already asked Oglix about how she came to own this tavern today. You should wait until tomorrow to talk to her about this again.
+						Ты уже спрашивал сегодня Огликса о том, как она стала владелицей этой таверны. Стоит подождать до завтра, чтобы поговорить об этом снова.
 					#ELSE
-						Ask Oglix about how she came to own this tavern.
+						Спросить Огликса о том, как она стала владелицей этой таверны.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -177,12 +177,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Lunette]]></responseTitle>
+				<responseTitle><![CDATA[Лунетт]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_oglix_talk_lunette))
-						You've already asked Oglix about her thoughts on Lunette. You should wait until tomorrow to talk to her about this again.
+						Ты уже спрашивал Огликса о её мыслях по поводу Лунетт. Стоит подождать до завтра, чтобы поговорить об этом снова.
 					#ELSE
-						Ask Oglix what she thinks about Lunette.
+						Спросить Огликса, что она думает о Лунетт.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -205,12 +205,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Beer-bitch]]></responseTitle>
+				<responseTitle><![CDATA[Пивная сучка]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_oglix_talk_beer_bitch))
-						You've already asked Oglix about her beer-bitch today. You should wait until tomorrow to talk to her about this again.
+						Ты уже спрашивал Огликс про её пивную сучку сегодня. Стоит подождать до завтра, чтобы завести об этом разговор снова.
 					#ELSE
-						Ask Oglix about her beer-bitch.
+						Спросить Огликс про её пивную сучку.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -234,12 +234,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Elemental]]></responseTitle>
+				<responseTitle><![CDATA[Элементаль]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_oglix_talk_elemental))
-						You've already asked Oglix about her elemental today. You should wait until tomorrow to talk to her about this again.
+						Ты уже спрашивал Огликс про её элементаля сегодня. Стоит подождать до завтра, чтобы завести об этом разговор снова.
 					#ELSE
-						Ask Oglix about her elemental, Golix.
+						Спросить Огликс про её элементаля, Голикс.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -264,12 +264,12 @@
 				<availabilityConditional><![CDATA[[#flags.hasFlag(FLAG_innoxia_oglix_talk_vip_unlocked)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[VIP room]]></responseTitle>
+				<responseTitle><![CDATA[VIP-зал]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_oglix_talk_vip))
-						You've already asked Oglix about the VIP room today. You should wait until tomorrow to talk to her about this again.
+						Ты уже спрашивал Огликс про VIP-зал сегодня. Стоит подождать до завтра, чтобы завести об этом разговор снова.
 					#ELSE
-						Ask Oglix what it takes to gain access to the VIP room.
+						Спросить Огликс, что нужно, чтобы получить доступ в VIP-зал.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -289,13 +289,13 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Beer-bitch (5 tokens)]]></responseTitle>
+				<responseTitle><![CDATA[Пивная сучка (5 жетонов)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)>=5)
-						Trade in five of your beer tokens to fuck the beer-bitch.
-						<br/><i>Beer tokens in your inventory: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
+						Отдай пять пивных жетонов, чтобы трахнуть пивную сучку.
+						<br/><i>Пивных жетонов в твоём инвентаре: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
 					#ELSE
-						You need at least five beer tokens to fuck the beer-bitch...
+						Тебе нужно как минимум пять пивных жетонов, чтобы трахнуть пивную сучку...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -314,13 +314,13 @@
 				<availabilityConditional><![CDATA[[#oglix.getBeerBitches().size()>1]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[[beerBitch2.Name] (5 tokens)]]></responseTitle>
+				<responseTitle><![CDATA[[beerBitch2.Name] (5 жетонов)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)>=5)
-						Trade in five of your beer tokens to fuck [beerBitch2.name].
-						<br/><i>Beer tokens in your inventory: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
+						Отдай пять пивных жетонов, чтобы трахнуть [beerBitch2.name].
+						<br/><i>Пивных жетонов в твоем инвентаре: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
 					#ELSE
-						You need at least five beer tokens to fuck [beerBitch2.name]...
+						Тебе нужно как минимум пять пивных жетонов, чтобы трахнуть [beerBitch2.name]...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -339,13 +339,13 @@
 				<availabilityConditional><![CDATA[[#oglix.getBeerBitches().size()>2]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[[beerBitch3.Name] (5 tokens)]]></responseTitle>
+				<responseTitle><![CDATA[[beerBitch3.Name] (5 жетонов)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)>=5)
-						Trade in five of your beer tokens to fuck [beerBitch3.name].
-						<br/><i>Beer tokens in your inventory: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
+						Отдай пять пивных жетонов, чтобы трахнуть [beerBitch3.name].
+						<br/><i>Пивных жетонов в твоем инвентаре: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
 					#ELSE
-						You need at least five beer tokens to fuck [beerBitch3.name]...
+						Тебе нужно как минимум пять пивных жетонов, чтобы трахнуть [beerBitch3.name]...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -364,13 +364,13 @@
 				<availabilityConditional><![CDATA[[#oglix.getBeerBitches().size()>3]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[9]]></index>
-				<responseTitle><![CDATA[[beerBitch4.Name] (5 tokens)]]></responseTitle>
+				<responseTitle><![CDATA[[beerBitch4.Name] (5 жетонов)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)>=5)
-						Trade in five of your beer tokens to fuck [beerBitch4.name].
-						<br/><i>Beer tokens in your inventory: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
+						Отдай пять пивных жетонов, чтобы трахнуть [beerBitch4.name].
+						<br/><i>Пивных жетонов в твоем инвентаре: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
 					#ELSE
-						You need at least five beer tokens to fuck [beerBitch4.name]...
+						Тебе нужно как минимум пять пивных жетонов, чтобы трахнуть [beerBitch4.name]...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -389,13 +389,13 @@
 				<availabilityConditional><![CDATA[[#oglix.getBeerBitches().size()>4]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[10]]></index>
-				<responseTitle><![CDATA[[beerBitch5.Name] (5 tokens)]]></responseTitle>
+				<responseTitle><![CDATA[[beerBitch5.Name] (5 жетонов)]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)>=5)
-						Trade in five of your beer tokens to fuck [beerBitch5.name].
-						<br/><i>Beer tokens in your inventory: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
+						Отдай пять пивных жетонов, чтобы трахнуть [beerBitch5.name].
+						<br/><i>Пивных жетонов в твоем инвентаре: [style.boldGood([#pc.getItemCount(ITEM_innoxia_quest_oglix_beer_token)])]</i>
 					#ELSE
-						You need at least five beer tokens to fuck [beerBitch5.name]...
+						Тебе нужно как минимум пять пивных жетонов, чтобы трахнуть [beerBitch5.name]...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -416,18 +416,18 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[11]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Golix punishment]]></responseTitle>
+				<responseTitle><![CDATA[Наказание Голикса]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF((pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) || (game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true)) || (pc.isAbleToAccessCoverableArea(CA_MOUTH, true)))
-						Ask Oglix if she can tell Golix to give you a punishment...
+						Спроси Огликс, может ли она велеть Голиксу наказать тебя...
 					#ELSE
-						You need to be able to offer Golix your
+						Тебе нужно иметь возможность предложить Голиксу свою
 						#IF(game.isAnalContentEnabled())
-							 pussy, ass, or mouth,
+						 киску, задницу или рот,
 						#ELSE
-							 pussy or mouth,
+						 киску или рот,
 						#ENDIF
-						 and as access to these areas is blocked, you cannot receive a punishment...
+					 и так как доступ к этим зонам заблокирован, ты не можешь получить наказание...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -445,9 +445,9 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<colour><![CDATA[QUEST_SIDE]]></colour>
 				<index><![CDATA[12]]></index>
-				<responseTitle><![CDATA[More Barrels]]></responseTitle>
+				<responseTitle><![CDATA[Больше бочек]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Tell Oglix that you think it's a good idea to get more barrels and expand her range of beer-bitches, before offering to help her source them.
+					Скажи Огликс, что это отличная идея — раздобыть больше бочек и расширить армию её пивных шлюх, а затем предложи помочь ей с их поиском.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					innoxia_places_fields_elis_tavern_alley_bar_empty_responses
@@ -462,12 +462,12 @@
 				<availabilityConditional><![CDATA[[#pc.hasQuest(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS) && !pc.isQuestCompleted(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[12]]></index>
-				<responseTitle><![CDATA[Report back]]></responseTitle>
+				<responseTitle><![CDATA[Доложить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getQuest(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS)==QUEST_OGLIX_BEER_BARRELS_2)
-						Report back to Oglix that Kheiron decided to be 'a good horsie' for Golix, and that four barrels are to be delivered to her.
+						Доложи Огликс, что Кейрон решил быть «хорошей лошадкой» для Голикс, и что ей нужно доставить четыре бочонка.
 					#ELSE
-						You need to get Kheiron to agree to send more barrels to Oglix before you can report back to her!
+						Прежде чем докладывать ей, тебе нужно уговорить Кейрона отправить Огликс еще больше бочонков!
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -483,12 +483,13 @@
 				<availabilityConditional><![CDATA[[#pc.isQuestCompleted(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[12]]></index>
-				<responseTitle><![CDATA[Flirt]]></responseTitle>
+				<responseTitle><![CDATA[Флиртовать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(flags.hasFlag(FLAG_innoxia_oglix_flirted))
-						You've already flirted with Oglix once today, and from the look in her eyes, you can tell that she's not in the mood for any more of it.
+						Ты уже флиртовал с Огликс сегодня, и по ее взгляду видно, что она не настроена на новые игры.
 					#ELSE
-						Having bluntly expressed her desire to fuck you, it would probably only take a little bit of flirting to get Oglix to invite you to her bedroom...
+					
+После того как она прямо заявила о своем желании трахнуть тебя, тебе понадобится лишь капля флирта, чтобы Огликс пригласила тебя в свою спальню...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -506,7 +507,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Beer-bitch (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Пивная сучка (#IF(pc.getMoney()>=40)[style.moneyFormat(40, span)]#ELSE[style.moneyFormatUncoloured(40, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=40) Order a pint of beer from the beer-bitch's tits. #ELSE You can't afford a pint of beer from the beer-bitch's tits... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=40)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -594,7 +595,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[6]]></index>
-				<responseTitle><![CDATA[Vodka (#IF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Водка (#IF(pc.getMoney()>=100)[style.moneyFormat(100, span)]#ELSE[style.moneyFormatUncoloured(100, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=100) Order a glass of vodka. #ELSE You can't afford a glass of vodka... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=100)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -607,7 +608,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[7]]></index>
-				<responseTitle><![CDATA[Rum (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Ром (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a glass of rum. #ELSE You can't afford a glass of rum... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -620,7 +621,7 @@
 			<response>
 				<responseTabIndex><![CDATA[1]]></responseTabIndex>
 				<index><![CDATA[8]]></index>
-				<responseTitle><![CDATA[Whiskey (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Виски (#IF(pc.getMoney()>=120)[style.moneyFormat(120, span)]#ELSE[style.moneyFormatUncoloured(120, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=120) Order a glass of whiskey. #ELSE You can't afford a glass of whiskey... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=120)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -635,7 +636,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fish & chips (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Рыба с картошкой (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a serving of fish and chips from the main menu. #ELSE You can't afford a serving of fish and chips from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -651,7 +652,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sausages (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Сосиски (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a serving of sausages from the main menu. #ELSE You can't afford a serving of sausages from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -667,7 +668,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Burger (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Бургер (#IF(pc.getMoney()>=150)[style.moneyFormat(150, span)]#ELSE[style.moneyFormatUncoloured(150, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=150) Order a burger from the main menu. #ELSE You can't afford a burger from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=150)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -683,7 +684,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[4]]></index>
-				<responseTitle><![CDATA[Chicken pie (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Куриный пирог (#IF(pc.getMoney()>=180)[style.moneyFormat(180, span)]#ELSE[style.moneyFormatUncoloured(180, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=180) Order a chicken pie from the main menu. #ELSE You can't afford a chicken pie from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=180)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -699,7 +700,7 @@
 			<response>
 				<responseTabIndex><![CDATA[2]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Steak (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Стейк (#IF(pc.getMoney()>=250)[style.moneyFormat(250, span)]#ELSE[style.moneyFormatUncoloured(250, span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=250) Order a steak from the main menu. #ELSE You can't afford a steak from the main menu... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=250)innoxia_places_fields_elis_tavern_alley_bar_empty_responses#ELSEnull#ENDIF]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[20]]></secondsPassed>
@@ -757,8 +758,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Punished]]></responseTitle>
-				<responseTooltip><![CDATA[Oglix commands her elemental to fuck you...]]></responseTooltip>
+				<responseTitle><![CDATA[Наказание]]></responseTitle>
+				<responseTooltip><![CDATA[Огликс приказывает своему элементалю трахнуть тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_tavern_alley_after_brawl_fucked]]></id>
@@ -815,8 +816,8 @@
 		<preParsingEffects><![CDATA[
 			[#oglix.getElemental().returnToHome()]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Golix decides that you've had enough punishment and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Голикс решает, что наказания с тебя хватит, и прекращает секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_alley">BAR_PUNISHMENT_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -825,8 +826,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[With Golix having had her fun, you're left wondering what to do next...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Голикс уже вдоволь нагулялась, и ты гадаешь, чем заняться теперь...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_empty_responses]]></nextDialogue>
 				<effects><![CDATA[
@@ -846,8 +847,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Get started]]></responseTitle>
-				<responseTooltip><![CDATA[[pc.Step] up to [npc.namePos] ass and prepare to fuck [npc.herHim]...]]></responseTooltip>
+				<responseTitle><![CDATA[Начать]]></responseTitle>
+				<responseTooltip><![CDATA[[pc.Step] по уши в [npc.namePos] заднице и готов трахать [npc.herHim]...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_tavern_alley_beer_bitch]]></id>
@@ -872,8 +873,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Back out]]></responseTitle>
-				<responseTooltip><![CDATA[Now that you find yourself in position to start fucking [npc.name], you're having second thoughts about the whole thing...]]></responseTooltip>
+				<responseTitle><![CDATA[Назад]]></responseTitle>
+				<responseTooltip><![CDATA[Теперь, когда ты наконец готов начать трахать [npc.name], у тебя возникают сомнения во всей этой затее...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_empty_responses]]></nextDialogue>
 				<effects><![CDATA[
@@ -884,8 +885,8 @@
 	</scene>
 	
 	<scene id="fuck_beer_bitch_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[You've had enough of fucking [npc.name] for now...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[На сегодня с трахом [npc.name] хватит...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_alley">FUCK_BEER_BITCH_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -894,8 +895,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Return to bar]]></responseTitle>
-				<responseTooltip><![CDATA[Having had your fun, you [pc.step] back around to the other side of the bar...]]></responseTooltip>
+				<responseTitle><![CDATA[Вернуться за бар]]></responseTitle>
+				<responseTooltip><![CDATA[Насладившись, ты [pc.step] обходишь бар и возвращаешься на другую сторону...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_empty_responses]]></nextDialogue>
 				<effects><![CDATA[
@@ -918,8 +919,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Small talk]]></responseTitle>
-				<responseTooltip><![CDATA[Deciding to do as Oglix says and stick around for a while, you engage in small talk with her...]]></responseTooltip>
+				<responseTitle><![CDATA[Светская беседа]]></responseTitle>
+				<responseTooltip><![CDATA[Решив поступить как говорит Огликс, и задержаться здесь ненадолго, ты заводишь с ней светскую беседу...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_barrels_delivered_next]]></nextDialogue>
 				<effects/>
 			</response>
@@ -935,8 +936,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[New bitches]]></responseTitle>
-				<responseTooltip><![CDATA[Ask Oglix where you can go to find new candidates for becoming beer-bitches.]]></responseTooltip>
+				<responseTitle><![CDATA[Новые сучки]]></responseTitle>
+				<responseTooltip><![CDATA[Спросить у Огликс, где можно найти новых кандидаток на роль пивных сучек.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_barrels_delivered_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextEndStringBuilder(pc.setQuestProgress(QUEST_LINE_SIDE_OGLIX_BEER_BARRELS, QUEST_SIDE_UTIL_COMPLETE))]
@@ -966,8 +967,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Potions]]></responseTitle>
-				<responseTooltip><![CDATA[Give Oglix the potions and watch as she transforms [npc.name] into a horny beer-bitch...]]></responseTooltip>
+				<responseTitle><![CDATA[Зелья]]></responseTitle>
+				<responseTooltip><![CDATA[Отдай Огликс зелья и наблюдай, как она превращает [npc.name] в похотливую пивную сучку...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_new_beer_bitch_delivered_end]]></nextDialogue>
 				<effects><![CDATA[
@@ -988,8 +989,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fuck her]]></responseTitle>
-				<responseTooltip><![CDATA[Take up Oglix's offer of being the first to fuck the new '[#npc.getGenericName()]'...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахать её]]></responseTitle>
+				<responseTooltip><![CDATA[Принять предложение Огликс стать первым, кто трахнет новую «[#npc.getGenericName()]»...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_alley_fuck_beer_bitch]]></nextDialogue>
 				<effects><![CDATA[
@@ -999,8 +1000,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Turn down Oglix's offer of being the first to fuck the '[#npc.getGenericName()]'...]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Отклонить предложение Огликс стать первым, кто трахнет «[#npc.getGenericName()]»...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_empty_responses]]></nextDialogue>
 				<effects><![CDATA[
@@ -1025,8 +1026,8 @@
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
 				<colour><![CDATA[GENERIC_SEX]]></colour>
-				<responseTitle><![CDATA[Bedroom]]></responseTitle>
-				<responseTooltip><![CDATA[Accept Oglix's offer to show you to her bedroom, where no doubt she'll want to dominantly fuck you...]]></responseTooltip>
+				<responseTitle><![CDATA[Спальня]]></responseTitle>
+				<responseTooltip><![CDATA[Принять предложение Огликс проводить тебя в её спальню, где она, без сомнения, захочет доминантно трахнуть тебя...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_flirting_bedroom]]></nextDialogue>
 				<effects><![CDATA[
 					#IF(oglix.getAffection(pc)<=45)
@@ -1039,8 +1040,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Decline]]></responseTitle>
-				<responseTooltip><![CDATA[Turn down Oglix's offer to show you to her bedroom. This will no doubt annoy her...]]></responseTooltip>
+				<responseTitle><![CDATA[Отклонить]]></responseTitle>
+				<responseTooltip><![CDATA[Отклонить предложение Огликс проводить тебя в её спальню. Это наверняка её разозлит...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_empty_responses]]></nextDialogue>
 				<effects><![CDATA[
@@ -1064,8 +1065,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fucked]]></responseTitle>
-				<responseTooltip><![CDATA[Oglix lets out another hungry moan and prepares to start dominantly fucking you...]]></responseTooltip>
+				<responseTitle><![CDATA[Трахнутый]]></responseTitle>
+				<responseTooltip><![CDATA[Огликс издает очередной голодный стон и готовится начать доминантно трахать тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<effects/>
 				<sexVariablesWithManager enabled="true">
@@ -1092,8 +1093,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Take charge]]></responseTitle>
-				<responseTooltip><![CDATA[Get Oglix to surrender the dominant role to you and fuck her.]]></responseTooltip>
+				<responseTitle><![CDATA[Взять инициативу в свои руки]]></responseTitle>
+				<responseTooltip><![CDATA[Заставить Огликс уступить тебе роль доминантки и трахнуть её.]]></responseTooltip>
 				<requiredPerks>
 					<perk><![CDATA[MARTIAL_ARTIST]]></perk>
 				</requiredPerks>
@@ -1125,8 +1126,8 @@
 	
 	<scene id="flirting_after_sex">
 		<preParsingEffects/>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Oglix has had enough and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Огликс берет свое и заканчивает секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_alley">FLIRTING_BEDROOM_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1135,8 +1136,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Return to bar]]></responseTitle>
-				<responseTooltip><![CDATA[Follow Oglix back to the bar.]]></responseTooltip>
+				<responseTitle><![CDATA[Вернуться за бар]]></responseTitle>
+				<responseTooltip><![CDATA[Пойти за Огликс обратно к бару.]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_bar_empty_responses]]></nextDialogue>
 				<effects><![CDATA[
@@ -1166,8 +1167,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
-				<responseTooltip><![CDATA[Watch as Oglix allows Golix to have her fun with Kheiron...]]></responseTooltip>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
+				<responseTooltip><![CDATA[Наблюдай, как Оглик позволяет Голик поразвлечься с Кейроном...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_old_stables_next]]></nextDialogue>
 				<effects/>
@@ -1188,8 +1189,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Kheiron collared]]></responseTitle>
-				<responseTooltip><![CDATA[Carry on watching as Golix fastens the collar around Kheiron's neck...]]></responseTooltip>
+				<responseTitle><![CDATA[Кейрон в ошейнике]]></responseTitle>
+				<responseTooltip><![CDATA[Продолжай смотреть, как Голик затягивает ошейник на шее Кейрона...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_old_stables_final]]></nextDialogue>
 			</response>
@@ -1200,8 +1201,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Kheiron submits]]></responseTitle>
-				<responseTooltip><![CDATA[It looks like Kheiron is going to submit and get collared by Golix again...]]></responseTooltip>
+				<responseTitle><![CDATA[Кейрон подчиняется]]></responseTitle>
+				<responseTooltip><![CDATA[Похоже, Кейрон собирается снова подчиниться и позволить Голик надеть на себя ошейник...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_old_stables_final]]></nextDialogue>
 			</response>
@@ -1211,8 +1212,8 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Kheiron dominates]]></responseTitle>
-				<responseTooltip><![CDATA[It looks like Kheiron is going to insist on being the one on top this time...]]></responseTooltip>
+				<responseTitle><![CDATA[Кейрон доминирует]]></responseTitle>
+				<responseTooltip><![CDATA[Похоже, на этот раз Кейрон будет настаивать на том, чтобы быть сверху...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_old_stables_final_kheiron_dom]]></nextDialogue>
 			</response>
@@ -1232,12 +1233,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isAnalContentEnabled())
-						Watch as Golix fucks Kheiron's ass...
+						Наблюдай, как Голик трахает Кейрона в зад...
 					#ELSE
-						Watch as Golix fucks Kheiron's throat...
+						Наблюдай, как Голик трахает Кейрона в глотку...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -1291,9 +1292,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You don't want to stick around to see what's next...
+					Тебе не хочется задерживаться здесь, чтобы увидеть, что будет дальше...
 				]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -1318,12 +1319,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isAnalContentEnabled())
-						Watch as Kheiron fucks Golix's ass...
+						Наблюдать, как Хейрон трахает задницу Голикса...
 					#ELSE
-						Watch as Kheiron fucks Golix's throat...
+						Наблюдать, как Хейрон трахает горло Голиксу...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -1389,9 +1390,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You don't want to stick around to see what's next...
+					Тебе не хочется задерживаться здесь, чтобы увидеть, что будет дальше...
 				]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -1407,8 +1408,8 @@
 	</scene>
 	
 	<scene id="old_stables_after_watch">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Golix decides that Kheiron has had enough and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Голикс решает, что с Хейроном хватит, и заканчивает секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_alley">OLD_STABLES_AFTER_WATCH</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1417,9 +1418,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					You don't want to stick around to be seen by Kheiron, so decide to quickly leave...
+					Ты не хочешь задерживаться, чтобы тебя не заметил Хейрон, поэтому решаешь поскорее уйти...
 				]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
@@ -1457,18 +1458,18 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Toilet]]></responseTitle>
-				<responseTooltip><![CDATA[Use the toilet.]]></responseTooltip>
+				<responseTitle><![CDATA[Туалет]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться туалетом.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_toilets_use]]></nextDialogue>
 				<effects/>
 			</response>
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Wash]]></responseTitle>
+				<responseTitle><![CDATA[Умыться]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Use the sinks to wash your hands and face.
-					<br/>[style.italicsGood(This will clean your head, eyes, mouth, neck, hair, fingers, hands, and wrists, as well as any clothing worn in these slots.)]
+					Использовать раковины, чтобы вымыть руки и лицо.
+					<br/>[style.italicsGood(Это очистит твою голову, глаза, рот, шею, волосы, пальцы, кисти рук и запястья, а также одежду в этих слотах.)]
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_toilets_wash]]></nextDialogue>
 				<effects><![CDATA[
@@ -1537,8 +1538,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
-				<responseTooltip><![CDATA[Seeing no alternative, you choose to defend yourself against this angry [attacker.race].]]></responseTooltip>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
+				<responseTooltip><![CDATA[Не видя иного выхода, ты решаешь защититься от этого разгневанного [attacker.race].]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_oglix_tavern_brawl, true)]
@@ -1561,7 +1562,7 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Settle tab (#IF(pc.getMoney()>=200)[style.moneyFormat([#200], span)]#ELSE[style.moneyFormatUncoloured([#200], span)]#ENDIF)]]></responseTitle>
+				<responseTitle><![CDATA[Рассчитаться (#IF(pc.getMoney()>=200)[style.moneyFormat([#200], span)]#ELSE[style.moneyFormatUncoloured([#200], span)]#ENDIF)]]></responseTitle>
 				<responseTooltip><![CDATA[#IF(pc.getMoney()>=200) Offer [style.intToString([#200])] flames to pay off the [attacker.race]'s bar tab as an apology. #ELSE You can't afford to pay off the [attacker.race]'s bar tab... #ENDIF]]></responseTooltip>
 				<nextDialogue><![CDATA[#IF(pc.getMoney()>=200)innoxia_places_fields_elis_tavern_alley_seating_attacked_peaceful_end#ELSEnull#ENDIF]]></nextDialogue>
 				<effects><![CDATA[
@@ -1573,12 +1574,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Intimidate]]></responseTitle>
+				<responseTitle><![CDATA[Запугать]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(pc.getTrueRace()==RACE_DEMON)
-						Use your demonic nature to intimidate the [attacker.race] into sitting back down and apologising to you.
+						Использовать свою демоническую природу, чтобы запугать [attacker.race], заставив его сесть на место и извиниться перед тобой.
 					#ELSE
-						You need to be a demon in order to intimidate the [attacker.race] into sitting back down and apologising to you...
+						Тебе нужно быть демоном, чтобы запугать [attacker.race], заставив его сесть на место и извиниться перед тобой...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
@@ -1600,8 +1601,8 @@
 					<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 				</requiredFetishes>
 				<corruptionLevel><![CDATA[THREE_DIRTY]]></corruptionLevel>
-				<responseTitle><![CDATA[Beg for forgiveness]]></responseTitle>
-				<responseTooltip><![CDATA[Bow down before the [attacker.race] and beg for [attacker.her] forgiveness.]]></responseTooltip>
+				<responseTitle><![CDATA[Умолять о прощении]]></responseTitle>
+				<responseTooltip><![CDATA[Склониться перед [attacker.race] и молить о [attacker.her] прощении.]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_seating_attacked_peaceful_end]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_alley', 'SEATING_ATTACKED_BEG'))]
@@ -1614,12 +1615,12 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Offer oral]]></responseTitle>
+				<responseTitle><![CDATA[Предложить оральный секс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(!pc.isAbleToAccessCoverableArea(CA_MOUTH, true))
-						You cannot access your mouth, and so cannot offer to perform oral on the [attacker.race] as an apology...
+						Ты не можешь пошевелить ртом, поэтому не можешь предложить [attacker.race] отсосать в качестве извинения...
 					#ELSE
-						You can tell that the [attacker.race] is not attracted to you, so an offer to perform oral on [attacker.herHim] wouldn't be a good idea...
+						Ты чувствуешь, что [attacker.race] к тебе не расположен(а), так что предложение отсосать [attacker.herHim] вряд ли будет хорошей идеей...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1630,15 +1631,15 @@
 				]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[5]]></index>
-				<responseTitle><![CDATA[Offer oral]]></responseTitle>
+				<responseTitle><![CDATA[Предложить оральный секс]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Offer to get down under the [attacker.race]'s table and
+					Предложить залезть под стол [attacker.race] и
 					#IF(attacker.hasPenis())
-						 suck [attacker.her] cock.
+						отсосать [attacker.her].
 					#ELSEIF(attacker.hasVagina())
-						 eat [attacker.herHim] out.
+						отлизать [attacker.herHim].
 					#ELSE
-						 perform oral on [attacker.herHim].
+						сделать [attacker.herHim] минет/куннилингус.
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue/>
@@ -1698,9 +1699,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Having pacified the [attacker.race], you're left to head back into the tavern...
+					Успокоив [attacker.race], ты возвращаешься в таверну...
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects><![CDATA[
@@ -1713,8 +1714,8 @@
 	</scene>
 	
 	<scene id="seating_attacked_after_oral">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The [attacker.race] has had enough and brings an end to your oral session...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[С [attacker.race] было довольно, и он(а) завершает ваш оральный секс...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_alley">SEATING_ATTACKED_AFTER_ORAL</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1723,9 +1724,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					With the [attacker.race] having got what [attacker.she] wanted, you're left to head back into the tavern...
+					Получив от [attacker.race] всё, что [attacker.she] хотела, ты возвращаешься в таверну...
 				]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects><![CDATA[
@@ -1750,12 +1751,12 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(attacker.isAttractedTo(pc) || game.isNonConEnabled())
-						Decide against doing anything further with the [attacker.race] and find somewhere safe to move to...
+						Решить больше ничего не делать с [attacker.race] и найти безопасное место для отдыха...
 					#ELSE
-						Leave the [attacker.race] behind and find somewhere safe to move to...
+						Оставить [attacker.race] позади и найти безопасное место для отдыха...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_seating_attacked_brawl]]></nextDialogue>
@@ -1769,12 +1770,12 @@
 				<availabilityConditional><![CDATA[[#!attacker.isAttractedTo(pc)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(game.isNonConEnabled())
-						You can tell that [attacker.name] isn't at all interested in having sex with you, and with so many people all around, it'd be impossible to get away with raping [attacker.herHim]...
+						Ты понимаешь, что [attacker.name] совсем не горит желанием трахаться с тобой, а вокруг столько народу, что безнаказанно изнасиловать [attacker.herHim] будет почти невозможно...
 					#ELSE
-						You can tell that [attacker.name] isn't at all interested in having sex with you...
+						Ты понимаешь, что [attacker.name] совсем не горит желанием трахаться с тобой...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
@@ -1783,8 +1784,8 @@
 				<availabilityConditional><![CDATA[[#attacker.isAttractedTo(pc)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Sex]]></responseTitle>
-				<responseTooltip><![CDATA[Take advantage of your victory to have dominant sex with the [attacker.race].]]></responseTooltip>
+				<responseTitle><![CDATA[Секс]]></responseTitle>
+				<responseTooltip><![CDATA[Воспользоваться своей победой и взять [attacker.race] сверху, доминируя в сексе.]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_tavern_alley_after_combat]]></id>
@@ -1811,16 +1812,16 @@
 				<availabilityConditional><![CDATA[[#!attacker.isAttractedTo(pc)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[You can tell that [attacker.name] isn't at all interested in having sex with you...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Ты понимаешь, что [attacker.name] совсем не горит желанием заняться с тобой сексом...]]></responseTooltip>
 				<nextDialogue><![CDATA[null]]></nextDialogue>
 			</response>
 			<response>
 				<availabilityConditional><![CDATA[[#attacker.isAttractedTo(pc)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[3]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[Feeling bad for beating the [attacker.race], you decide to submit to [attacker.herHim] and offer [attacker.herHim] the use of your body...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Чувствуя вину за то, что побил [attacker.race], ты решаешь подчиниться [attacker.herHim] и предложить [attacker.herHim] свое тело...]]></responseTooltip>
 				<requiredFetishes>
 					<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 				</requiredFetishes>
@@ -1864,16 +1865,16 @@
 				<index><![CDATA[1]]></index>
 				<responseTitle><![CDATA[
 					#IF(attacker.isAttractedTo(pc))
-						Decline
+						Отказаться
 					#ELSE
-						Continue
+						Продолжить
 					#ENDIF
 				]]></responseTitle>
 				<responseTooltip><![CDATA[
 					#IF(attacker.isAttractedTo(pc))
-						Tell the [attacker.race] that you have no interest in having sex with [attacker.herHim]...
+						Сказать [attacker.race], что у тебя нет никакого желания трахаться с [attacker.herHim]...
 					#ELSE
-						With the [attacker.race] having got [attacker.her] apology, you're left to fend for yourself in the midst of the chaotic brawl...
+						Получив от [attacker.race] [attacker.her] извинений, ты остаешься один на один с хаосом в разгаре драки...
 					#ENDIF
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_seating_attacked_brawl]]></nextDialogue>
@@ -1887,8 +1888,8 @@
 				<availabilityConditional><![CDATA[[#attacker.isAttractedTo(pc)]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Submit]]></responseTitle>
-				<responseTooltip><![CDATA[You decide that it's best to submit to [attacker.herHim] and let [attacker.herHim] use your body...]]></responseTooltip>
+				<responseTitle><![CDATA[Подчиниться]]></responseTitle>
+				<responseTooltip><![CDATA[Ты решаешь, что лучше всего подчиниться [attacker.herHim] и позволить [attacker.herHim] использовать твое тело...]]></responseTooltip>
 				<requiredFetishes>
 					<fetish><![CDATA[FETISH_SUBMISSIVE]]></fetish>
 				</requiredFetishes>
@@ -1918,8 +1919,8 @@
 	</scene>
 	
 	<scene id="seating_attacked_after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[The sex comes to an end...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Секс подходит к концу...]]></tooltip>
 		<content folderPath="txt/places/fields/elis/tavern_alley">SEATING_ATTACKED_AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -1928,9 +1929,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					With the [attacker.race] having got what [attacker.she] wanted, you're left to fend for yourself in the midst of the chaotic brawl...
+					Получив от [attacker.race] то, что желала [attacker.she], ты остаешься один на один с хаосом в разгаре драки...
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_seating_attacked_brawl]]></nextDialogue>
 				<effects><![CDATA[
@@ -1966,8 +1967,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
-				<responseTooltip><![CDATA[The [attacker.race] only seems interested in having a good fight. Defend yourself from [attacker.herHim]!]]></responseTooltip>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
+				<responseTooltip><![CDATA[Кажется, [attacker.race] интересует только хорошая драка. Защищайся от [attacker.herHim]!]]></responseTooltip>
 				<nextDialogue/>
 				<effects><![CDATA[
 					[#flags.setFlag(FLAG_innoxia_oglix_tavern_brawl, false)]
@@ -2009,8 +2010,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Decide not to watch Oglix's elemental fucking [attacker.race] and instead continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Решить не смотреть на стихийный трах [attacker.race] у Огликса, а вместо этого продолжить свой путь...]]></responseTooltip>
 				<secondsPassed minutes="true"><![CDATA[10]]></secondsPassed>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects><![CDATA[
@@ -2024,8 +2025,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
-				<responseTooltip><![CDATA[Watch Oglix's elemental fuck the [attacker.race]...]]></responseTooltip>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
+				<responseTooltip><![CDATA[Смотреть, как стихия Огликса трахает [attacker.race]...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_tavern_alley_after_brawl_watch]]></id>
@@ -2111,8 +2112,8 @@
 				<availabilityConditional><![CDATA[[#game.isNonConEnabled() && ((pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) || (game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true)) || (pc.isAbleToAccessCoverableArea(CA_MOUTH, true)))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Punished]]></responseTitle>
-				<responseTooltip><![CDATA[Oglix commands her elemental to fuck you...]]></responseTooltip>
+				<responseTitle><![CDATA[Наказание]]></responseTitle>
+				<responseTooltip><![CDATA[Огликс приказывает своему элементалю трахнуть тебя...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_tavern_alley_after_brawl_fucked]]></id>
@@ -2167,8 +2168,8 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled() || !((pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) || (game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true)) || (pc.isAbleToAccessCoverableArea(CA_MOUTH, true)))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Decide not to watch Oglix's elemental fucking [attacker.race] and instead continue on your way...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Решить не смотреть на стихийный трах [attacker.race] у Огликса, а вместо этого продолжить свой путь...]]></responseTooltip>
 				<nextDialogue stripContent="true"><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects><![CDATA[
 					[#game.appendToTextStartStringBuilder(game.parseFromFile('txt/places/fields/elis/tavern_alley', 'SEATING_ATTACKED_BRAWL_DONT_WATCH'))]
@@ -2181,8 +2182,8 @@
 				<availabilityConditional><![CDATA[[#!game.isNonConEnabled() || !((pc.hasVagina() && pc.isAbleToAccessCoverableArea(CA_VAGINA, true)) || (game.isAnalContentEnabled() && pc.isAbleToAccessCoverableArea(CA_ANUS, true)) || (pc.isAbleToAccessCoverableArea(CA_MOUTH, true)))]]]></availabilityConditional>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Watch]]></responseTitle>
-				<responseTooltip><![CDATA[Watch Oglix's elemental fuck the [attacker.race]...]]></responseTooltip>
+				<responseTitle><![CDATA[Смотреть]]></responseTitle>
+				<responseTooltip><![CDATA[Смотреть, как стихия Огликса трахает [attacker.race]...]]></responseTooltip>
 				<nextDialogue/>
 				<sexVariablesWithManager enabled="true">
 					<id><![CDATA[innoxia_elis_tavern_alley_after_brawl_watch]]></id>
@@ -2243,8 +2244,8 @@
 			[#oglix.getElemental().returnToHome()]
 			[#oglix.returnToHome()]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Oglix's elemental decides that [attacker.name] has had enough punishment and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Стихия Огликса решает, что с [attacker.name] уже хватит наказаний, и заканчивает секс...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -2253,8 +2254,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[With the brawl now at an end, it's time to move on...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Драка подошла к концу, пора двигаться дальше...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects/>
 			</response>
@@ -2267,8 +2268,8 @@
 			[#oglix.getElemental().returnToHome()]
 			[#oglix.returnToHome()]
 		]]></preParsingEffects>
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Oglix's elemental decides that you've had enough punishment and brings an end to the sex...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Элементаль Огликса решает, что с тебя хватит наказаний, и прекращает секс...]]></tooltip>
 		<content/>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -2277,8 +2278,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[With the brawl now at an end, it's time to move on...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Драка подошла к концу, пора двигаться дальше...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects/>
 			</response>
@@ -2322,8 +2323,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[[pc.Step] back]]></responseTitle>
-				<responseTooltip><![CDATA[Not able to get through this door, there's little else for you to do but [pc.step] back into the tavern...]]></responseTooltip>
+				<responseTitle><![CDATA[[pc.Step] назад]]></responseTitle>
+				<responseTooltip><![CDATA[Раз уж в эту дверь не пробраться, остается лишь [pc.step] назад, в таверну...]]></responseTooltip>
 				<nextDialogue><![CDATA[innoxia_places_fields_elis_tavern_alley_tables]]></nextDialogue>
 				<effects><![CDATA[
 					[#pc.setNearestLocation(PLACE_TYPE_innoxia_fields_elis_tavern_alley_tables)]

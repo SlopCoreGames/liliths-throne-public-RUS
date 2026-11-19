@@ -6,9 +6,9 @@
 	<beneficial>BENEFICIAL</beneficial>
 	<combatEffect>false</combatEffect>
 	<sexEffect>false</sexEffect>
-	<name><![CDATA[HLF Insurgent]]></name>
+	<name><![CDATA[Повстанец HLF]]></name>
 	<description><![CDATA[
-		Dressing like an HLF insurgent fills [npc.name] with the strength to fight back against an unjust system no matter the odds.
+		Одеяние повстанца HLF наполняет [npc.name] силой, позволяющей дать отпор несправедливой системе, какими бы ни были шансы.
 	]]></description>
 	<imageName>set_hlf_icon.svg</imageName>
 	<colourPrimary>CLOTHING_WHITE</colourPrimary> 

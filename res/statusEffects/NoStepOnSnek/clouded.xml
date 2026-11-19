@@ -46,11 +46,11 @@
 	<tags></tags>
 	
 	<!-- The name of this set bonus. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
-	<name><![CDATA[Blinded]]></name>
+	<name><![CDATA[Ослепление]]></name>
 	
 	<!-- The description of this status effect. The character under the effect is passed in as the 'npc' parsing argument, so if you want to, you can include parsing elements such as [npc.name]. -->
 	<description><![CDATA[
-		A cloud of ink has left [npc.name] temporarily dazzled, and [npc.sheIsFull] struggling to regain control of [npc.her] senses!
+		Облако чернил заставило [npc.name] на время потерять ориентацию, и теперь [npc.sheIsFull] изо всех сил пытается вернуть контроль над [npc.her] чувствами!
 	]]></description>
 	
 	<!-- The name of the icon which should be used to represent this status effect. The icon must be an svg file, and must be placed in the same folder as this XML file. -->

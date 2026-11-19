@@ -81,7 +81,7 @@
 			#ENDIF
 		]]></preParsingEffects>
 		<title><![CDATA[
-			A Customer Approaches
+			К тебе подходит покупатель
 		]]></title>
 		<author><![CDATA[Innoxia]]></author>
 		<content folderPath="txt/encounters/generic/rental_tshirt">START</content>
@@ -93,8 +93,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Refuse]]></responseTitle>
-				<responseTooltip><![CDATA[Turn down [npc.namePos] offer and continue on your way.]]></responseTooltip>
+				<responseTitle><![CDATA[Отказаться]]></responseTitle>
+				<responseTooltip><![CDATA[Отклонить предложение [npc.namePos] и идти дальше.]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 				<effects><![CDATA[
@@ -252,8 +252,8 @@
 	<!-- After sex: -->
 	
 	<scene id="after_sex">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Having had [npc.her] fun, [npc.name] sighs that [npc.sheHas] had enough...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Насладившись [npc.her], [npc.name] вздыхает, что с [npc.sheHas] на сегодня хватит...]]></tooltip>
 		<content folderPath="txt/encounters/generic/rental_tshirt">AFTER_SEX</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -262,9 +262,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Leave]]></responseTitle>
+				<responseTitle><![CDATA[Уйти]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Leave [npc.namePos] apartment and continue on your way...
+					Покинуть квартиру [npc.namePos] и продолжить свой путь...
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
@@ -277,8 +277,8 @@
 	</scene>
 	
 	<scene id="after_sex_public">
-		<title><![CDATA[Finished]]></title>
-		<tooltip><![CDATA[Having had [npc.her] fun, [npc.name] sighs that [npc.sheHas] had enough...]]></tooltip>
+		<title><![CDATA[Завершено]]></title>
+		<tooltip><![CDATA[Насладившись [npc.her], [npc.name] вздыхает, что с [npc.sheHas] на сегодня хватит...]]></tooltip>
 		<content folderPath="txt/encounters/generic/rental_tshirt">AFTER_SEX_PUBLIC</content>
 		<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>
 		<continuesDialogue>false</continuesDialogue>
@@ -287,9 +287,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Leave [npc.namePos] behind and continue on your way...
+					Оставить [npc.namePos] позади и продолжить свой путь...
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[default]]></nextDialogue>
 				<secondsPassed minutes="true"><![CDATA[5]]></secondsPassed>

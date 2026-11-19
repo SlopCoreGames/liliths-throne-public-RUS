@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint wax stamp on the peel reads "Grown by the dragons of the DSG Farmer's Guild."]]></authorTag>
+		<authorTag><![CDATA[На кожуре едва заметен восковой штамп: «Выращено драконами из Фермерской гильдии DSG».]]></authorTag>
 		<value>8</value>
 		<determiner><![CDATA[some]]></determiner>
-		<name><![CDATA[tangerines]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[tangerines]]></namePlural>
-		<description><![CDATA[A winter citrus fruit that is less sour than many of its larger cousins. The peel has a glossy shine to it, as if it has been polished.]]></description>
+		<name><![CDATA[мандарины]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[мандарины]]></namePlural>
+		<description><![CDATA[Зимний цитрусовый фрукт, который менее кислый, чем многие его более крупные сородичи. Кожура обладает глянцевым блеском, будто её отполировали.]]></description>
 		<useDescriptor>eat</useDescriptor>
 		<sexUse>true</sexUse>
 		<combatUseAllies>true</combatUseAllies>
@@ -24,9 +24,9 @@
 		<enchantmentEffectId/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[style.boldGood(Increases)] [style.boldPoison([#ATTRIBUTE_RESISTANCE_POISON.getName()])] by 5 for 90 minutes.]]></line>
-			<line><![CDATA[[style.colourBlueLight(Changes)] the flavour of all fluids to [style.colourOrange(orange)].]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[style.boldGood(Увеличивает)] [style.boldPoison([#ATTRIBUTE_RESISTANCE_POISON.getName()])] на 5 на 90 минут.]]></line>
+			<line><![CDATA[[style.colourBlueLight(Изменяет)] вкус всех жидкостей на [style.colourOrange(оранжевый)].]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -47,7 +47,7 @@
 				[##npc.addStatusEffect(SE_dsg_item_fruit_buff, 5400)]
 			#ENDIF
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(feel)] vaguely healthier...
+				[npc.Name] [npc.verb(чувствуешь)] себя немного здоровее...
 			</p>
 		]]></applyEffects>
 		
@@ -59,10 +59,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-			[npc.Name] [npc.verb(find)] the tangerine surprisingly easy to peel and [npc.verb(start)] eating it wedge by wedge. It doesn't take long to consume the whole thing after that...
+			[npc.Name] [npc.verb(находит)] мандарин удивительно легко очищаемым и [npc.verb(начинает)] есть его долька за долькой. Вскоре после этого он съедает его целиком...
 		]]></selfUse>
 		<otherUse><![CDATA[
-			[npc.Name] [npc.verb(find)] the tangerine surprisingly easy to peel and [npc.verb(start)] feeding it to [npc2.name] wedge by wedge. It doesn't take long to consume the whole thing after that...
+			[npc.Name] [npc.verb(находит)] мандарин удивительно легко очищаемым и [npc.verb(начинает)] скармливать его [npc2.name] долька за долькой. Вскоре после этого он съедает его целиком...
 		]]></otherUse>
 	</useDescriptions>
 

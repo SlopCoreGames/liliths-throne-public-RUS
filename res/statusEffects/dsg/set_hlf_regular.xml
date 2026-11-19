@@ -6,9 +6,9 @@
 	<beneficial>BENEFICIAL</beneficial>
 	<combatEffect>false</combatEffect>
 	<sexEffect>false</sexEffect>
-	<name><![CDATA[HLF Regular]]></name>
+	<name><![CDATA[Рядовой HLF]]></name>
 	<description><![CDATA[
-		Wearing the uniform of an HLF Regular fills [npc.name] with the conviction to do what is necessary.
+		Ношение формы рядового HLF наполняет [npc.name] решимостью делать то, что необходимо.
 	]]></description>
 	<imageName>set_hlf_icon.svg</imageName>
 	<colourPrimary>CLOTHING_RED_DARK</colourPrimary> 

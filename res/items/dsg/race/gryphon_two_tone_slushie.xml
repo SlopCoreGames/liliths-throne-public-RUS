@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A faint inscription underneath the cup reads 'Mixed by DSG Foodstuffs LLC']]></authorTag>
+		<authorTag><![CDATA[На дне стакана едва заметна надпись: «Смешано в DSG Foodstuffs LLC»]]></authorTag>
 		
 		<value>20</value> 
 		<determiner><![CDATA[a cup of]]></determiner>
-		<name><![CDATA[Two-Tone Slushie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Grogs]]></namePlural>
-		<description><![CDATA[A kiwi-and-strawberry flavored two-tone slushie. The label depicts a gryphon-girl wearing only an apron handing a fountain cup resembling this one out towards an imaginary customer.]]></description> 
+		<name><![CDATA[Двухцветный слаш]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Напитки]]></namePlural>
+		<description><![CDATA[Двухцветный слаш со вкусом киви и клубники. На этикетке изображена девочка-грифон в одном лишь фартуке, протягивающая такой же стакан воображаемому покупателю.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -30,15 +30,15 @@
 		<enchantmentEffectId>ATTRIBUTE_ARCANE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 15% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_FIRE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 15% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_FIRE.getFormattedValue(1)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM) * 0.15)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_RESISTANCE_FIRE, 1)]
 		]]></applyEffects>
@@ -52,11 +52,9 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(bring)] the cup of Two-Tone Slushie up to [npc.her] [npc.mouth]. The smell of kiwis and strawberries rises from the straw, and as [npc.she] [npc.verb(wrap)] [npc.her] lips around it and [npc.verb(start)] sucking down the cold semi-solid [npc.she] [npc.verb(feel)] much more refreshed.
+		[npc.Name] [npc.verb(подносит)] стакан с двухцветным слашем к [npc.her], ожидающей [npc.mouth]. От трубочки исходит аромат киви и клубники, и когда [npc.she] [npc.verb(обхватывает)] [npc.her] губами и [npc2.verb(начинает)] жадно потягивать холодную полужидкую [npc.she], [npc.she] [npc.verb(чувствует)] небывалую свежесть.
 		]]></selfUse>
-		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(bring)] the cup of Two-Tone Slushie up to [npc2.namePos] waiting [npc2.lips]. The smell of kiwis and strawberries rises from the straw, and as [npc2.she] [npc2.verb(warp)] [npc2.her] lips around it and [npc2.verb(start)] sucking down the cold semi-solid, [npc.she] [npc.verb(feel)] much more refreshed.
-		]]></otherUse>
+		<otherUse><![CDATA[[npc.Name] [npc.verb(bring)] чашку двухцветного слэш-напитка к [npc2.namePos], ожидающей [npc2.lips]. От трубочки исходит аромат киви и клубники, и когда [npc2.she] [npc2.verb(warp)] [npc2.her] губы вокруг неё и [npc2.verb(start)] жадно втягивает холодную полужидкую массу, [npc.she] [npc.verb(feel)] невероятный прилив свежести.]]></otherUse>
 	</useDescriptions>
 
 	

@@ -3,7 +3,7 @@
 
 	<scene id="street">
 		<author><![CDATA[DSG]]></author>
-		<title><![CDATA[A Familiar Stench...]]></title>
+		<title><![CDATA[Знакомое зловоние...]]></title>
 		<tooltip/>
 		<preParsingEffects><![CDATA[
 			[#game.getPlayerCell().getPlace().setPlaceType(PLACE_TYPE_innoxia_fields_elis_town_eisek_sillymode_dungeon_entrance)]
@@ -18,8 +18,8 @@
 			<response>				
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Enter basement]]></responseTitle>
-				<responseTooltip><![CDATA[It's not like any of them were armed...at least that you could tell...<br/>[style.colourBad(You will not be able to leave the basement until you reach the end.)]]]></responseTooltip>
+				<responseTitle><![CDATA[Спуститься в подвал]]></responseTitle>
+				<responseTooltip><![CDATA[Не похоже, чтобы кто-то из них был вооружен... по крайней мере, на первый взгляд...<br/>[style.colourBad(Ты не сможешь покинуть подвал, пока не дойдешь до конца.)]]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[dsg_places_fields_elis_eisek_sillymode_dungeon_ambush]]></nextDialogue>
 				<secondsPassed/>
@@ -30,8 +30,8 @@
 			<response>				
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Leave it]]></responseTitle>
-				<responseTooltip><![CDATA[You're not in the mood to go into the land of the basement dwellers right now.]]></responseTooltip>
+				<responseTitle><![CDATA[Оставить всё как есть]]></responseTitle>
+				<responseTooltip><![CDATA[Сейчас тебе совсем не хочется отправляться в земли обитателей подвала.]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
 				<secondsPassed/>
@@ -43,7 +43,7 @@
 
 	<scene id ="combat">
 		<author><![CDATA[DSG]]></author>			
-		<title><![CDATA[Cardboard Warrior]]></title>
+		<title><![CDATA[Картонный воин]]></title>
 		<tooltip/>				
 		<preParsingEffects><![CDATA[
 			[#game.addNPC('fields.SillyModeLARPAttacker', 'dsg_larpattacker')]
@@ -63,8 +63,8 @@
 			<response>				
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Fight]]></responseTitle>
-				<responseTooltip><![CDATA[Nobody who's dressed like this is going to defeat you!]]></responseTooltip>
+				<responseTitle><![CDATA[Сразиться]]></responseTitle>
+				<responseTooltip><![CDATA[Никто, кто одет подобным образом, не сможет тебя одолеть!]]></responseTooltip>
 				<colour><![CDATA[GENERIC_COMBAT]]></colour>
 				<nextDialogue/>
 				<secondsPassed minutes="true"><![CDATA[1]]></secondsPassed>
@@ -87,7 +87,7 @@
 	
 	<scene id ="combat_won">
 		<author><![CDATA[DSG]]></author>
-		<title><![CDATA[Victory!]]></title>
+		<title><![CDATA[Победа!]]></title>
 		<preParsingEffects/>
 		<content folderPath="txt/dsg/encounters/fields/elis/eisek_sillymode/dungeon">COMBAT_WON</content>
 		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
@@ -99,9 +99,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Continue making your way through the dungeon.
+					Продолжить путь через подземелье.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					default
@@ -115,7 +115,7 @@
 	
 	<scene id ="combat_lost">
 		<author><![CDATA[DSG]]></author>
-		<title><![CDATA[Defeat...]]></title>
+		<title><![CDATA[Поражение...]]></title>
 		<preParsingEffects/>
 		<content folderPath="txt/dsg/encounters/fields/elis/eisek_sillymode/dungeon">COMBAT_LOST</content>
 		<secondsPassed minutes="false"><![CDATA[30]]></secondsPassed>
@@ -127,9 +127,9 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
 				<responseTooltip><![CDATA[
-					Well...your opponent certainly seemed happy. Continue making your way through the dungeon.
+					Что ж... твой противник определенно выглядел счастливым. Продолжай свой путь через подземелье.
 				]]></responseTooltip>
 				<nextDialogue><![CDATA[
 					default
@@ -143,7 +143,7 @@
 	
 	<scene id="boss_battle">
 		<author><![CDATA[DSG]]></author>
-		<title><![CDATA[Boss "Battle"]]></title>
+		<title><![CDATA[Битва с боссом]]></title>
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="txt/dsg/encounters/fields/elis/eisek_sillymode/dungeon">BOSS</content>
@@ -154,8 +154,8 @@
 			<response>				
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Prepare yourself!]]></responseTitle>
-				<responseTooltip><![CDATA[There's no telling what that orb could do!]]></responseTooltip>
+				<responseTitle><![CDATA[Приготовься!]]></responseTitle>
+				<responseTooltip><![CDATA[Кто знает, на что способна эта сфера!]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[dsg_encounters_fields_elis_eisek_sillymode_dungeon_boss_battle_two]]></nextDialogue>
 				<secondsPassed/>
@@ -166,7 +166,7 @@
 	
 	<scene id="boss_battle_two">
 		<author><![CDATA[DSG]]></author>
-		<title><![CDATA[Boss "Battle"]]></title>
+		<title><![CDATA[Битва с боссом]]></title>
 		<tooltip/>
 		<preParsingEffects/>
 		<content folderPath="txt/dsg/encounters/fields/elis/eisek_sillymode/dungeon">BOSS_TWO</content>
@@ -177,8 +177,8 @@
 			<response>				
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue...]]></responseTitle>
-				<responseTooltip><![CDATA[Some artefact this turned out to be.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить...]]></responseTitle>
+				<responseTooltip><![CDATA[Ну и артефакт же это оказался.]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[default]]></nextDialogue>
 				<secondsPassed/>

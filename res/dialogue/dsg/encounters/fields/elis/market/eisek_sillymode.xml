@@ -4,7 +4,7 @@
 	<scene id ="start">
 
 		<author><![CDATA[DSG]]></author>
-		<title><![CDATA[Another Mob??]]></title>
+		<title><![CDATA[Еще одна толпа??]]></title>
 		<content folderPath="txt/dsg/encounters/fields/elis/market/eisek_sillymode">ENCOUNTER_START</content>
 		<secondsPassed minutes="true"><![CDATA[2]]></secondsPassed>
 		<travelDisabled><![CDATA[true]]></travelDisabled>
@@ -14,8 +14,8 @@
 			<response>	
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Approach]]></responseTitle>
-				<responseTooltip><![CDATA[Approach the stall and see what the mob is up to.]]></responseTooltip>
+				<responseTitle><![CDATA[Подойти]]></responseTitle>
+				<responseTooltip><![CDATA[Подойти к прилавку и посмотреть, чем занята толпа.]]></responseTooltip>
 				<colour><![CDATA[QUEST_SIDE]]></colour>
 				<nextDialogue stripContent="false"><![CDATA[dsg_encounters_fields_elis_market_eisek_sillymode_approach]]></nextDialogue>
 				<secondsPassed/>
@@ -28,8 +28,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[2]]></index>
-				<responseTitle><![CDATA[Back off]]></responseTitle>
-				<responseTooltip><![CDATA[They're not a threat and this isn't worth your time. Eisek can handle this on his own.]]></responseTooltip>
+				<responseTitle><![CDATA[Отступить]]></responseTitle>
+				<responseTooltip><![CDATA[Они не представляют угрозы, и это не стоит твоего времени. Эйсек справится сам.]]></responseTooltip>
 				<nextDialogue><![CDATA[dsg_encounters_fields_elis_market_eisek_sillymode_back_off]]></nextDialogue>
 				<secondsPassed/>
 				<effects><![CDATA[
@@ -50,8 +50,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[Something is rotten in the town of Elis...]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[В городе Элис творится что-то неладное...]]></responseTooltip>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="true"><![CDATA[dsg_characters_eisek_stall_talk_menu]]></nextDialogue>
 				<secondsPassed/>
@@ -73,8 +73,8 @@
 			<response>
 				<responseTabIndex><![CDATA[0]]></responseTabIndex>
 				<index><![CDATA[1]]></index>
-				<responseTitle><![CDATA[Continue]]></responseTitle>
-				<responseTooltip><![CDATA[It seems they got what they wanted. Hopefully they won't be back.]]></responseTooltip>
+				<responseTitle><![CDATA[Продолжить]]></responseTitle>
+				<responseTooltip><![CDATA[Похоже, они получили то, что хотели. Будем надеяться, что они больше не вернутся.]]></responseTooltip>
 				<responseTooltip/>
 				<colour><![CDATA[TEXT]]></colour>
 				<nextDialogue stripContent="true"><![CDATA[dsg_characters_eisek_stall_talk_menu]]></nextDialogue>
