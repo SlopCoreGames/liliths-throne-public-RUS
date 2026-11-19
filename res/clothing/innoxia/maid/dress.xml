@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>2500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[maid's dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[maid's dresses]]></namePlural>
-		<description><![CDATA[A heavily stylised Maid's dress, it consists of a coloured one-piece dress with decorative white lace trimmings. A small white apron is attached to the front, and is similarly trimmed in white lace.]]></description>
+		<name><![CDATA[платье горничной]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[платья горничной]]></namePlural>
+		<description><![CDATA[Сильно стилизованное платье горничной, состоящее из цветного цельного платья с декоративной белой кружевной отделкой. Спереди прикреплен маленький белый фартук, также украшенный белым кружевом.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot>
@@ -79,51 +79,49 @@
 
 	
 	<displacementText type="REMOVE_OR_EQUIP">
-		<self><![CDATA[
-			[npc.Name] [npc.verb(reach)] back and [npc.verb(unzip)] [npc.her] maid's dress, before pulling [npc.her] [npc.arms] out, sliding it down [npc.her] body, and finally [npc.stepping] out of it.
-		]]></self>
+		<self><![CDATA[[npc.Name] [npc.verb(reach)] назад и [npc.verb(unzip)] [npc.her] платье горничной, после чего вытягивает [npc.her] [npc.arms], спуская его по [npc.her] тело, и, наконец, [npc.stepping] из него.]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(unzip)] the back of [npc2.namePos] maid's dress, before pulling [npc2.her] [npc2.arms] free to allow the dress to fall to the floor.
+			[npc.Name] [npc.verb(unzip)] спинку [npc2.namePos] платья горничной, после чего [npc2.her] освобождает [npc2.arms], позволяя платью упасть на пол.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] impatiently [npc.verb(unzip)] the back of [npc2.namePos] maid's dress, before roughly pulling [npc2.her] [npc2.arms] free and yanking the dress to the floor.
+			[npc.Name] нетерпеливо [npc.verb(unzip)] спинку [npc2.namePos] платья горничной, после чего грубо освобождает [npc2.her] [npc2.arms] и сдергивает платье на пол.
 		]]></otherRough>
 	</displacementText>
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.step] into the dress and [npc.verb(pull)] it up over [npc.her] torso, zipping [npc.herself] up at the back before making sure the trimmings and apron are neatly arranged.
+			[npc.Name] помогает [npc.step] облачиться в платье и [npc.verb(pull)] его вверх по [npc.her] торсу, застегивая [npc.herself] на спине и проверяя, чтобы кружево и фартук лежали аккуратно.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(get)] [npc2.name] to [npc2.step] into the dress, before pulling it up over [npc2.her] torso. Zipping [npc2.herHim] up at the back, [npc.she] then [npc.verb(make)] sure that the trimmings and apron are neatly arranged.
+			[npc.Name] заставляет [npc2.name] облачиться в [npc2.step], прежде чем натянуть его на [npc2.her] торс. Застегнув [npc2.herHim] на спине, [npc.she] затем [npc.verb(make)] проверяет, чтобы кружево и фартук лежали аккуратно.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] [npc.verb(force)] [npc2.name] to [npc2.step] into the dress, before yanking it up over [npc2.her] torso. Forcefully zipping [npc2.herHim] up at the back, [npc.she] then [npc.verb(make)] sure that the trimmings and apron are neatly arranged.
+			[npc.Name] силой заставляет [npc2.name] облачиться в [npc2.step], после чего резко натягивает его на [npc2.her] торс. Резко застегивая [npc2.herHim] на спине, [npc.she] затем [npc.verb(make)] проверяет, чтобы кружево и фартук лежали аккуратно.
 		]]></otherRough>
 	</replacementText>
 
 	
 	<displacementText type="PULLS_UP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] maid's dress.
+			[npc.Name] [npc.verb(pull)] юбку [npc.her] платья горничной вверх.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] maid's dress.
+			[npc.Name] [npc.verb(pull)] вверх подол платья горничной [npc2.namePos].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] up the skirt of [npc2.namePos] maid's dress.
+			[npc.Name] грубо [npc.verb(pull)] вверх подол платья горничной [npc2.namePos].
 		]]></otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] down the skirt of [npc.her] maid's dress.
+			[npc.Name] [npc.verb(pull)] вниз подол платья горничной [npc.her].
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(pull)] down the skirt of [npc2.namePos] maid's dress.
+			[npc.Name] [npc.verb(pull)] вниз подол платья горничной [npc2.namePos].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] down the skirt of [npc2.namePos] maid's dress.
+			[npc.Name] грубо [npc.verb(pull)] вниз подол платья горничной [npc2.namePos].
 		]]></otherRough>
 	</replacementText>
 </clothing>

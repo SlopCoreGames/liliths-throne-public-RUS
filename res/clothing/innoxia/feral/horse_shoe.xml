@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>500</value>
     <determiner><![CDATA[a set of]]></determiner>
-    <name><![CDATA[horseshoe]]></name>
-    <namePlural pluralByDefault="true"><![CDATA[horseshoes]]></namePlural>
-    <description><![CDATA[A set of four horseshoes. Although they're intended for centaurs and feral horses, a pair of them would also be suitable for being fit onto hoofed anthros.]]></description>
+    <name><![CDATA[подкова]]></name>
+    <namePlural pluralByDefault="true"><![CDATA[подковы]]></namePlural>
+    <description><![CDATA[Набор из четырех подков. Хотя они предназначены для кентавров и диких лошадей, пары вполне хватит, чтобы надеть их на копытных антропоморфов.]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -57,25 +57,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(step)] onto the horseshoes, at which point their arcane enchantment activates, attaching themselves securely to [npc.her] hoofs.]]>
+			<![CDATA[[npc.Name] [npc.verb(step)] на подковы, после чего срабатывает их аркана зачарование, намертво прикрепляя их к копытам [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(direct)] [npc2.name] to step onto the horseshoes, at which point their arcane enchantment activates, attaching themselves securely to [npc2.her] hoofs.]]>
+			<![CDATA[[npc.Name] [npc.verb(direct)] [npc2.name] наступить на подковы, после чего срабатывает их аркана зачарование, намертво прикрепляя их к копытам [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step onto the horseshoes, at which point their arcane enchantment activates, attaching themselves securely to [npc2.her] hoofs.]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить на подковы, после чего срабатывает их аркана зачарование, намертво прикрепляя их к копытам [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(stomp)] [npc.her] hoofs against the ground, forcing the horseshoes to undo their enchantment and fall off.]]>
+			<![CDATA[[npc.Name] [npc.verb(stomp)] [npc.her] копытами о землю, заставляя подковы развеять свое зачарование и свалиться.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(direct)] [npc2.name] to stomp [npc2.her] hoofs against the ground, which forces the horseshoes to undo their enchantment and fall off.]]>
+			<![CDATA[[npc.Name] [npc.verb(direct)] [npc2.name] топнуть [npc2.her] копытами о землю, что заставляет подковы развеять свое зачарование и свалиться.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] impatiently [npc.verb(order)] [npc2.name] to stomp [npc2.her] hoofs against the ground, which forces the horseshoes to undo their enchantment and fall off.]]>
+			<![CDATA[[npc.Name] нетерпеливо [npc.verb(order)] [npc2.name] топнуть [npc2.her] копытами о землю, что заставляет подковы развеять свое зачарование и свалиться.]]>
 		</otherRough>
 	</displacementText>
 

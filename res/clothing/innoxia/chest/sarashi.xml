@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[chest sarashi]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[chest sarashis]]></namePlural>
-		<description><![CDATA[A long strip of thick cotton, wrapped around the chest as an added layer of protection, or to flatten the wearer's breasts.]]></description>
+		<name><![CDATA[сараси]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[сараси]]></namePlural>
+		<description><![CDATA[Длинная полоса плотного хлопка, обмотанная вокруг груди в качестве дополнительной защиты или для того, чтобы прижать грудь носительницы.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>CHEST</slot> 
@@ -48,25 +48,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(wrap)] the sarashi tightly around [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] туго [npc.verb(wrap)] сараси вокруг груди [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(wrap)] the sarashi tightly around [npc2.namePos] chest.]]>
+		  <![CDATA[[npc.Name] туго [npc.verb(wrap)] сараси вокруг груди [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(wrap)] the sarashi tightly around [npc2.namePos] chest.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(wrap)] сараси вокруг груди [npc2.namePos].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unwrap)] the sarashi from around [npc.her] chest and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unwrap)] сараси с груди [npc.her] и [npc.verb(take)] её.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unwrap)] the sarashi from around [npc2.namePos] chest and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unwrap)] сараси с груди [npc2.namePos] и [npc.verb(take)] её.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unwrap)] the sarashi from around [npc2.namePos] chest and [npc.verb(yank)] it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unwrap)] сараси с груди [npc2.namePos] и [npc.verb(yank)] её.]]>
 		</otherRough>
 	</displacementText>
 	

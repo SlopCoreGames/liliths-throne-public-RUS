@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>600</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[maid's headpiece]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[maid's headpieces]]></namePlural>
-		<description><![CDATA[A heavily stylised maid's headpiece, it consists of a coloured headband with a decorative white lace attached on top.]]></description>
+		<name><![CDATA[чепчик горничной]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[чепчики горничной]]></namePlural>
+		<description><![CDATA[Вычурный чепчик горничной, состоящий из цветного ободка с прикрепленным сверху декоративным белым кружевом.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>HEAD</slot>
@@ -47,25 +47,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-		<![CDATA[[npc.Name] [npc.verb(place)] the headpiece onto [npc.her] head.]]>
+		<![CDATA[[npc.Name] [npc.verb(place)] чепчик на голову [npc.her].]]>
     </self>
     <other>
-		<![CDATA[[npc.Name] [npc.verb(place)] the headpiece onto [npc2.namePos] head.]]>
+		<![CDATA[[npc.Name] [npc.verb(place)] чепчик на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-		<![CDATA[[npc.Name] roughly [npc.verb(push)] the headpiece onto [npc2.namePos] head.]]>
+		<![CDATA[[npc.Name] грубо [npc.verb(push)] чепчик на голову [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-		<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] headpiece.]]>
+		<![CDATA[[npc.Name] [npc.verb(take)] чепчик с головы [npc.her].]]>
     </self>
     <other>
-		<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] headpiece.]]>
+		<![CDATA[[npc.Name] [npc.verb(take)] чепчик с головы [npc2.namePos].]]>
     </other>
     <otherRough>
-		<![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] headpiece.]]>
+		<![CDATA[[npc.Name] [npc.verb(snatch)] чепчик с головы [npc2.namePos].]]>
     </otherRough>
   </displacementText>
   

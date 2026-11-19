@@ -38,12 +38,10 @@
 	<!-- Information displayed to the player: -->
 	
 	<title><![CDATA[
-		Orgasm
+		Оргазм
 	]]></title>
 	
-	<tooltip><![CDATA[
-		You can't do anything to prevent your orgasm!
-	]]></tooltip>
+	<tooltip><![CDATA[Ты ничего не можешь сделать, чтобы предотвратить свой оргазм!]]></tooltip>
 	
 	<descriptions>
 		<description>

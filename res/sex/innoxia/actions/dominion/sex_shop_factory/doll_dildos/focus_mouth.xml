@@ -30,16 +30,16 @@
 	<areasCummedOn/>
 	<title><![CDATA[
 		#IF(sex.getNumberOfOrgasms(pc)==0)
-			Face-fuck
+			Фейсфак
 		#ELSE
-			Massage dildo
+			Массаж дилдо
 		#ENDIF
 	]]></title>
 	<tooltip><![CDATA[
 		#IF(sex.getNumberOfOrgasms(pc)==0)
-			Do as the doll commands and start pumping the dildo in and out of your throat.
+			Повиноваться приказу куклы и начать ритмично вгонять дилдо в глотку и вынимать его.
 		#ELSE
-			Do as the doll commands and use your tongue to massage the underside of the dildo's shaft.
+			Повиноваться приказу куклы и начать массировать языком нижнюю часть стержня дилдо.
 		#ENDIF
 	]]></tooltip>
 	<descriptions>
@@ -48,7 +48,7 @@
 				[#sex.getNumberOfOrgasms(pc)==0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Surrendering to the red doll's authority, you obediently take hold of the end of the dildo that's poking out between your plump, 'o'-shaped lips and pull it half-way out of your throat. A shiver of masochistic pleasure jolts through your silicone body as you take on the role of testing the doll's sex toys, and with an excited, muffled moan, you plunge the thick dildo back down your throat. Repeating this action, you start to rhythmically fuck your own face, drawing an approving nod from the red doll as a surge of intense arousal washes over you.
+				Смирившись с властью красной куклы, ты послушно берешься за конец дилдо, торчащий между твоих пухлых, растянутых в форме «О» губ, и вытягиваешь его наполовину из глотки. Дрожь мазохистского удовольствия прошибает твое силиконовое тело, когда ты примеряешь на себя роль тестировщицы секс-игрушек куклы, и с возбужденным, приглушенным стоном ты снова вонзаешь толстое дилдо глубоко в горло. Повторяя это действие, ты начинаешь ритмично трахать собственное лицо, вызывая одобрительный кивок красной куклы, в то время как тебя накрывает мощная волна возбуждения.
 			]]></text>
 		</description>
 		<description>
@@ -56,7 +56,7 @@
 				[#sex.getNumberOfOrgasms(pc)>0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Submitting to the doll's command, you instantly start using your tongue to caress the underside of the huge, equine dildo that's hilted deep down your throat. The act of sliding your silicone tongue up and down the toy makes you wish that you were doing this to a real cock, and that you'd be rewarded with a blast of hot cum down your throat at the end of it. This intrusive thought briefly makes you question what's happening to you, but as you obediently continue massaging the silicone horse-cock you quickly sink into a blissful state of mind where all that matters is acting like a good, obedient sex doll.
+				Подчиняясь приказу куклы, ты тут же начинаешь ласкать языком нижнюю часть огромного, лошадиного дилдо, рукоять которого ушла глубоко в твою глотку. От того, как твой силиконовый язык скользит вверх и вниз по игрушке, тебе хочется, чтобы это был настоящий член, и чтобы в конце тебя наградили мощным залпом горячей спермы прямо в горло. Эта навязчивая мысль на мгновение заставляет тебя задуматься о происходящем, но, послушно продолжая массировать силиконовый конь, ты быстро погружаешься в блаженное состояние, где всё, что имеет значение — это роль хорошей, послушной секс-куклы.
 			]]></text>
 		</description>
 	</descriptions>

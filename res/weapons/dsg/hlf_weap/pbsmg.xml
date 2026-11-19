@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[Underneath the receiver, a small engraving reads "MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[Под ствольной коробкой видна небольшая гравировка: «Изготовлено MFD by DSG Forgeworks».]]></authorTag>
 		<value>2500</value>
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendDamageName="true"><![CDATA[pepperball submachine gun]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pepperball submachine gun]]></namePlural>
-		<description><![CDATA[Although this weapon looks masterfully crafted, it nonetheless bears all the signs of having been made by hand rather than manufactured. Stamped on the body is an insignia that you don't recognize.]]></description>
+		<name appendDamageName="true"><![CDATA[пистолет-пулемёт с перцовыми шариками]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пистолет-пулемёт с перцовыми шариками]]></namePlural>
+		<description><![CDATA[Хотя это оружие выглядит мастерски исполненным, на нём всё же видны следы ручной работы, а не заводского производства. На корпусе выштампована эмблема, которую ты не узнаёшь.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Shoot [npc2.name] with your submachine gun.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Выстрели из пистолета-пулемёта в [npc2.name].]]></attackTooltipDescription>
 		<rarity>RARE</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] out the submachine gun, [npc.verb(load)] a fresh magazine, and [npc.verb(pulls)] the charging handle before disengaging the safety.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(open)] the bolt and [npc.verb(check)] to see that the chamber is empty before removing the magazine and putting the submachine gun away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] пистолет-пулемёт, [npc.verb(load)] свежий магазин и [npc.verb(pulls)] затвор, прежде чем снять с предохранителя.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(open)] затвор и [npc.verb(check)] патронник, чтобы убедиться, что он пуст, после чего вынимает магазин и убирает пистолет-пулемёт.]]></unequipText>
 		<imageName>pbsmg_uneq.svg</imageName>
 		<imageEquippedName>pbsmg.svg</imageEquippedName>
 		<physicalResistance>0</physicalResistance>
@@ -47,13 +47,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(squeeze)] off a burst at [npc2.name]. The gelatin capsules burst on impact with [npc2.namePos] aura, splattering [npc2.herHim] with stinging, burning oil.
+		[npc.Name] [npc.verb(line)] up [npc2.name] в прицеле [npc.her] и [npc.verb(squeeze)] выпускает очередь по [npc2.name]. Желатиновые капсулы лопаются при ударе об [npc2.namePos] ауру, забрызгивая [npc2.herHim] жгучим, обжигающим маслом.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(squeeze)] off a burst at [npc2.name]. The capsules miss [npc2.herHim] completely and splatters uselessly in the distance.
+		[npc.Name] [npc.verb(line)] up [npc2.name] в прицеле [npc.her] и [npc.verb(squeeze)] выпускает очередь по [npc2.name]. Капсулы пролетают мимо [npc2.herHim] и бесполезно разлетаются где-то вдалеке.
 		]]></missText>
 	</missDescriptions>
 	

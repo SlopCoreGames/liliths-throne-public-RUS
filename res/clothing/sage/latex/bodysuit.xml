@@ -4,9 +4,9 @@
 	<coreAtributes>
 		<value>3900</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[latex bodysuit]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[latex bodysuits]]></namePlural>
-		<description><![CDATA[A tight shiny latex bodysuit worn by high ranking members of the church of Lilith, it looks like liquid oil and conforms to every curve in an almost sinful way.]]></description>
+		<name><![CDATA[латексный боди]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[латексные боди]]></namePlural>
+		<description><![CDATA[Облегающий блестящий латексный боди, который носят высокопоставленные члены церкви Lilith; он напоминает жидкое масло и почти греховно подчеркивает каждый изгиб тела.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>STOMACH</slot>
@@ -110,24 +110,24 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on [npc.her] bodysuit, before buckling it up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] за [npc.her] боди, прежде чем застегнуть его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.name] into the bodysuit, before buckling [npc2.herHim] up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.name] в боди, прежде чем застегнуть [npc2.herHim].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.name] into the bodysuit, before impatiently buckling [npc2.herHim] up.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.name] в боди, после чего нетерпеливо застегивает [npc2.herHim].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] bodysuit, before pulling it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] боди, прежде чем стянуть его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc2.namePos] bodysuit, before pulling it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc2.namePos] боди, прежде чем стянуть его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unbuckle)] [npc2.namePos] bodysuit, before impatiently pulling it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unbuckle)] [npc2.namePos] боди, после чего нетерпеливо стягивает его.]]>
 		</otherRough>
 	</displacementText>
 	

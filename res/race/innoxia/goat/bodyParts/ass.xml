@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_goat</race>
 	
-	<transformationName><![CDATA[goat]]></transformationName>
+	<transformationName><![CDATA[коза]]></transformationName>
 	
 	<coveringType>innoxia_goat_fur</coveringType>
 	
@@ -15,10 +15,10 @@
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldGoat(goat-like)], [npc.assholeFullDescription].
+		Теперь у [npc.She] [npc.has] [style.boldGoat(goat-like)], [npc.assholeFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a goat-like, [npc.anusFullDescription(true)]
+		У [npc.SheHasFull] козий, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[massage table]]></deskName>
+	<deskName><![CDATA[массажный стол]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[true]]></subHasEqualControl>
@@ -83,16 +83,16 @@
 			<dirtyTalk>
 				<character id="pc">
 					<standard additionToDefault="false">
-						<line extraNoises="false"><![CDATA[~Baa!~]]></line>
-						<line extraNoises="false"><![CDATA[I'm your good little sheep! ~Baa!~]]></line>
-						<line extraNoises="false"><![CDATA[~Baa!~ Yes, give it to me!]]></line>
-						<line extraNoises="false"><![CDATA[~Baa!~]]></line>
+						<line extraNoises="false"><![CDATA[~Бее!~]]></line>
+						<line extraNoises="false"><![CDATA[Я твоя послушная овечка! ~Бее!~]]></line>
+						<line extraNoises="false"><![CDATA[~Бее!~ Да, дай мне это!]]></line>
+						<line extraNoises="false"><![CDATA[~Бее!~]]></line>
 					</standard>
 					<submissive additionToDefault="false">
-						<line extraNoises="false"><![CDATA[~Aah!~ Yes! Treat me like your dirty little sheep! ~Baa!~]]></line>
-						<line extraNoises="false"><![CDATA[~Baa!~ Fuck me like the dumb little sheep I am!]]></line>
-						<line extraNoises="false"><![CDATA[Put me in my place! ~Baa!~ Yes, I'm your dirty little sheep!]]></line>
-						<line extraNoises="false"><![CDATA[~Baa!~ Yes, I'm a dumb little sheep who needs to be fucked! ~Baa!~]]></line>
+						<line extraNoises="false"><![CDATA[~Аах!~ Да! Обращайся со мной как с грязной маленькой овечкой! ~Бее!~]]></line>
+						<line extraNoises="false"><![CDATA[~Бее!~ Трахни меня, как тупую маленькую овечку!]]></line>
+						<line extraNoises="false"><![CDATA[Поставь меня на место! ~Бее!~ Да, я твоя грязная маленькая овечка!]]></line>
+						<line extraNoises="false"><![CDATA[~Бее!~ Да, я тупая маленькая овечка, которую нужно трахать! ~Бее!~]]></line>
 					</submissive>
 				</character>
 			</dirtyTalk>

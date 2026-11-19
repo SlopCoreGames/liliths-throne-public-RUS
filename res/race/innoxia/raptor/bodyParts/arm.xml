@@ -2,7 +2,7 @@
 <arm>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_feathers</coveringType>
 	
@@ -13,8 +13,8 @@
 		<tag>ARM_WINGS_FEATHERED</tag>
 	</tags>
 	
-	<name><![CDATA[wing]]></name>
-	<namePlural><![CDATA[wings]]></namePlural> 
+	<name><![CDATA[крыло]]></name>
+	<namePlural><![CDATA[крылья]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>feathered</descriptor>
@@ -26,8 +26,8 @@
 		<descriptor>bird-like</descriptor>
 	</descriptorsFeminine>
 	
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>feathered</descriptor>
 	</handDescriptorsMasculine>
@@ -36,8 +36,8 @@
 		<descriptor>feminine</descriptor>
 	</handDescriptorsFeminine>
 	
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>feathered</descriptor>
 	</fingerDescriptorsMasculine>
@@ -47,14 +47,14 @@
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		Within a matter of moments, a thick layer of [npc.armFullDescription] quickly sprouts out all over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new feathers growing over the backs of [npc.her] hands as well. Just as [npc.she] thinks that the transformation has finished, [npc.she] [npc.verb(cry)] out in shock as [npc.her] bones grow and snap into a new form. Thankfully, the transformation is quickly over, leaving [npc.herHim] with a pair of huge, feathered wings in place of arms. Where [npc.her] hands once were, two of [npc.her] fingers have shrunk down into the middle-joint of [npc.her] appendages, leaving [npc.herHim] with two feathered forefingers and an opposable thumb, each of which ends in a sharp, retractable claw. Where [npc.her] new wings meet [npc.her] body at the shoulder, [npc.her] feathers smoothly cover the transition into the [npc.skin] that's covering the rest of [npc.her] torso.
-		<br/>[npc.Name] now [npc.has] huge [style.boldRaptor(raptor wings)] in place of arms, which are [npc.materialDescriptor] [npc.armFullDescription].
+		Всего за мгновение их покрывает густой слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новые перья, прорастающие на спинах [npc.her] рук. Как только [npc.she] думает, что трансформация завершена, [npc.she] [npc.verb(cry)] от шока, когда [npc.her] кости растут и с треском принимают новую форму. К счастью, превращение быстро заканчивается, оставляя [npc.herHim] с парой огромных пернатых крыльев вместо рук. Там, где раньше были [npc.her] руки, два из [npc.her] пальцев уменьшились до середины [npc.her] конечностей, оставив [npc.herHim] два пернатых указательных пальца и противопоставленный большой палец, каждый из которых заканчивается острым втягивающимся когтем. Там, где новые крылья [npc.her] соединяются с [npc.her] телом в районе плеч, [npc.her] перья плавно переходят в [npc.skin], покрывающий остальную часть [npc.her] торса.
+		<br/>[npc.Name] теперь [npc.has] огромные [style.boldRaptor(raptor wings)] вместо рук, которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		In place of arms and hands, [npc.she] [npc.has] [npc.armRows] huge wings, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].
+		Вместо рук и кистей у [npc.she] [npc.has] [npc.armRows] огромные крылья, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].
 		#IF(!npc.isFeral())
-			 Where [npc.her] hands should be, [npc.she] [npc.has] two feathered forefingers and a thumb, each of which ends in a sharp, retractable claw. Although slightly less dexterous than a human hand, [npc.sheIs] still able to use [npc.her] digits to form a hand-like grip.
+			 Там, где должны быть [npc.her] руки, [npc.she] [npc.has] два пернатых указательных пальца и большой палец, каждый из которых заканчивается острым втягивающимся когтем. Хотя они чуть менее ловкие, чем человеческая кисть, [npc.sheIs] все еще может использовать [npc.her] пальцы, чтобы имитировать хват руки.
 		#ENDIF
 	]]></bodyDescription>
 	

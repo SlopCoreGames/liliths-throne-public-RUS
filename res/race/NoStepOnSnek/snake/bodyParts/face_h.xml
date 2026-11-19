@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <face>
 	<race>NoStepOnSnek_snake</race>
-	<transformationName><![CDATA[hooded-snake]]></transformationName>
+	<transformationName><![CDATA[кобра]]></transformationName>
 	<coveringType>SNAKE_SCALES</coveringType>
 	<mouthType>NoStepOnSnek_snake_mouth</mouthType>
 	<tags>
@@ -21,24 +21,24 @@
 		<descriptor>anthropomorphic snake-like</descriptor>
 		<descriptor>snake-like</descriptor>
 	</descriptorsFeminine>
-	<noseName><![CDATA[nose]]></noseName>
-	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+	<noseName><![CDATA[нос]]></noseName>
+	<noseNamePlural><![CDATA[носы]]></noseNamePlural>
 	<noseDescriptorsMasculine/>
 	<noseDescriptorsFeminine/>
 	<transformationDescription><![CDATA[
-		[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic, snake-like muzzle. [npc.Her] teeth grow out into a pair of long fangs, which can thankfully be folded up within [npc.her] mouth in order to tuck them out of the way. With the transformation not having yet run its course, [npc.namePos] neck suddenly stretches out and [npc.her] tongue narrows and splits, leaving [npc.herHim] with a distinctly snake-like head. Meanwhile, the back and sides of [npc.her] neck begin to flare out, and within moments [npc.she] [npc.has] a very distinctive, cobra-like hood.
+		[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную змеиную морду. [npc.Her] зубы превращаются в пару длинных клыков, которые, к счастью, можно убрать внутрь [npc.her] рта, чтобы они не мешались. Поскольку трансформация еще не завершена, [npc.namePos] шея внезапно вытягивается, а [npc.her] язык сужается и раздваивается, оставляя [npc.herHim] с отчетливо змеиной головой. Тем временем затылок и бока [npc.her] шеи начинают раздуваться, и через мгновение [npc.she] [npc.has] образуется характерный капюшон кобры.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-			 A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face, 
+			 Слой [npc.faceSkin+] быстро разрастается, покрывая новое лицо [npc.her], 
 		#ELSE
-			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+], 
+			 Как и все остальное тело [npc.her], новое лицо [npc.her] становится [npc.materialDescriptor] [npc.faceSkin+], 
 		#ENDIF
-		and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
-		<br/>[npc.Name] now [npc.has] an anthropomorphic [style.boldSnake(snake-like face)], which is [npc.materialDescriptor] [npc.faceFullDescription]. On the back and sides of [npc.her] elongated neck, [npc.she] [npc.has] a cobra-like hood, while in [npc.her] [npc.mouth], [npc.she] [npc.has] a [style.boldSnake(flat, snake-like tongue)].
+		и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышать и вздыхать, пока [npc.she] [npc.verb(try)] перевести [npc.her] дух.
+		<br/>[npc.Name] теперь [npc.has] антропоморфная [style.boldSnake(змеиная морда)], которая [npc.materialDescriptor] [npc.faceFullDescription]. На затылке и боках [npc.her] удлиненной шеи [npc.she] [npc.has] капюшон кобры, а во рту [npc.her] [npc.mouth], [npc.she] [npc.has] [style.boldSnake(плоский змеиный язык)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, snake-like face, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a muzzle, fangs, and cobra-like hood.
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфная змеиная морда, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] с мордой, клыками и капюшоном кобры.
 	]]></bodyDescription>
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a #IF(game.isSillyModeEnabled())very boopable snoot#ELSE muzzle#ENDIF, fangs, and cobra-like hood.
+		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено #IF(game.isSillyModeEnabled())very boopable snoot#ELSE muzzle#ENDIF, fangs, and cobra-like hood.
 	]]></bodyDescriptionFeral>
 </face>

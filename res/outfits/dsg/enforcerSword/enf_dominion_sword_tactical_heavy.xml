@@ -4,10 +4,10 @@
 
 	<coreAttributes>
 		<!-- Names are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable (lowercase) name.-->
-		<name><![CDATA[SWORD Enforcer heavy tactical uniform]]></name>
+		<name><![CDATA[Тяжелая тактическая униформа Enforcer с мечом]]></name>
 		
 		<!-- Again, descriptions are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable description.-->
-		<description><![CDATA[Enforcer heavy tactical uniform with SWORD colours.]]></description>
+		<description><![CDATA[Тяжелая тактическая униформа Enforcer в цветах SWORD.]]></description>
 		
 		<!-- The femininity needed for someone to generate this outfit. MASCULINE, ANDROGYNOUS, and FEMININE are the three acceptable values. ANDROGYNOUS means anyone can use this outfit, while the other two are self-explanatory.-->
 		<femininity>ANDROGYNOUS</femininity>

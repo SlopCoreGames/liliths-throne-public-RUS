@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>150</value>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[insertable dildo]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[insertable dildos]]></namePlural>
-		<description><![CDATA[A dildo-shaped sex toy, designed to be discreetly inserted into the vagina.]]></description>
+		<name><![CDATA[вставляемый дилдо]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[вставляемые дилдо]]></namePlural>
+		<description><![CDATA[Секс-игрушка в форме дилдо, предназначенная для скрытого введения во влагалище.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>VAGINA</slot>
@@ -65,25 +65,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(push)] the dildo into [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] дилдо во [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the dildo into [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] дилдо во [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(hold)] [npc2.name] still as [npc.she] roughly [npc.verb(force)] the dildo into [npc2.her] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(hold)] [npc2.name] неподвижно, пока [npc.she] грубо [npc.verb(force)] дилдо в [npc2.her] [npc2.pussy+].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the dildo out from [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] дилдо из [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the dildo out from [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] дилдо из [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.namePos] dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.namePos] дилдо и [npc.verb(yank)] его из [npc2.her] [npc2.pussy+].]]>
 		</otherRough>
 	</displacementText>
 	

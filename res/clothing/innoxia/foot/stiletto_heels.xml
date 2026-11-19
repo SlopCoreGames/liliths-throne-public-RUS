@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[stiletto heel]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[stiletto heels]]></namePlural>
-		<description><![CDATA[A pair of shoes which have long, thin high heels, commonly referred to as stiletto heels. The significantly-raised heel serves to make the wearer taller, as well as to accentuate their calf muscles and the overall length of their legs.]]></description>
+		<name><![CDATA[туфля на шпильке]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[туфли на шпильках]]></namePlural>
+		<description><![CDATA[Пара обуви на длинном, тонком и высоком каблуке, который обычно называют шпилькой. Значительная высота каблука не только делает обладательницу выше, но и выгодно подчеркивает рельеф икр и визуально удлиняет ноги.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>FOOT</slot> 
@@ -50,25 +50,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] into the stiletto heels.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] в туфли на шпильках.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] into the stiletto heels.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] в туфли на шпильках.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the stiletto heels.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.namePos] [npc2.feet] в туфли на шпильках.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slip)] off [npc.her] stiletto heels.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] с [npc.her] туфель на шпильках.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slip)] off [npc2.namePos] stiletto heels.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] с [npc2.namePos] туфель на шпильках.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] stiletto heels.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] туфель на шпильках.]]>
     </otherRough>
   </displacementText>
 	

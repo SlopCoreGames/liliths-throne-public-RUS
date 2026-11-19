@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>600</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[plunge dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[plunge dresses]]></namePlural>
-		<description><![CDATA[An elegant dress with a plunging v-neckline, perfect for showing off its wearer's cleavage.]]></description>
+		<name><![CDATA[платье с глубоким декольте]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[платья с глубоким декольте]]></namePlural>
+		<description><![CDATA[Элегантное платье с глубоким V-образным вырезом, идеально подчеркивающее декольте своей обладательницы.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot> 
@@ -82,73 +82,73 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(step)] into the plunge dress, before pulling it up around [npc.her] torso. Once in place, [npc.she] [npc.verb(reach)] back to zip [npc.herself] up.]]>
+			<![CDATA[[npc.Name] [npc.verb(step)] в платье с глубоким декольте, а затем натягивает его на [npc.her] торс. Когда оно сядет по фигуре, [npc.she] [npc.verb(reach)] назад, чтобы застегнуть [npc.herself] на молнию.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(guide)] the plunge dress up around [npc2.namePos] [npc2.legs], before pulling it up around [npc2.her] torso. Once it's in place, [npc.she] zips [npc2.name] up at the back.]]>
+			<![CDATA[[npc.Name] [npc.verb(guide)] платье с глубоким декольте вверх по [npc2.namePos] [npc2.legs], а затем натягивает его на [npc2.her] торс. Когда оно окажется на месте, [npc.she] застегивает [npc2.name] на молнию сзади.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the plunge dress up around [npc2.namePos] [npc2.legs], before yanking it up around [npc2.her] torso. Once it's in place, [npc.she] quickly zips [npc2.name] up at the back.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] платье с глубоким декольте вверх по [npc2.namePos] [npc2.legs], а затем резко натягивает его на [npc2.her] торс. Когда оно сядет, [npc.she] быстро застегивает [npc2.name] на молнию сзади.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] plunge dress and [npc.verb(wriggle)] out of it as it drops to [npc.her] [npc.feet].]]>
+			<![CDATA[[npc.Name] [npc.verb(unzip)] платье с глубоким декольте [npc.her] и [npc.verb(wriggle)] из него, пока оно сползает по [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] plunge dress and [npc.verb(pull)] it down off [npc2.her] body and past [npc2.her] [npc2.feet].]]>
+			<![CDATA[[npc.Name] [npc.verb(unzip)] платье с глубоким декольте [npc2.namePos] и [npc.verb(pull)] его вниз, снимая с [npc2.her] тела и мимо [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] hastily [npc.verb(unzip)] [npc2.namePos] plunge dress and roughly [npc.verb(pull)] it down off [npc2.her] body and past [npc2.her] [npc2.feet].]]>
+			<![CDATA[[npc.Name] поспешно [npc.verb(unzip)] платье с глубоким декольте [npc2.namePos] и грубо [npc.verb(pull)] его вниз, снимая с [npc2.her] тела и мимо [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the lower half of [npc.her] plunge dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть платья с глубоким декольте [npc.her] обратно на место.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the lower half of [npc2.namePos] plunge dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть платья с глубоким декольте [npc2.namePos] назад, возвращая её в надлежащее положение.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the lower half of [npc2.namePos] plunge dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] нижнюю часть платья с глубоким декольте [npc2.namePos] назад, возвращая её в надлежащее положение.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] up the lower half of [npc.her] plunge dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть платья с глубоким декольте [npc.her] вверх.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] up the lower half of [npc2.namePos] plunge dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть платья с глубоким декольте [npc2.namePos] вверх.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] hold of the lower half of [npc2.namePos] plunge dress, before roughly pulling it up.]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] нижнюю часть платья с глубоким декольте [npc2.namePos], а затем грубо тянет её вверх.]]>
 		</otherRough>
 	</displacementText>
 
 	<displacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(shrug)] off the shoulder straps of [npc.her] plunge dress and [npc.verb(allow)] the top half to fall down around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(shrug)] бретельки платья с глубоким декольте [npc.her] с плеч, [npc.verb(allow)] верхней части платья сползти до [npc.her] талии.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the straps of [npc2.namePos] plunge dress down off [npc2.her] shoulders, before tugging it down around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] бретельки платья с глубоким декольте [npc2.namePos] с [npc2.her] плеч, а затем стягивает его вниз до [npc.her] талии.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the straps of [npc2.namePos] plunge dress down off [npc2.her] shoulders, before forcefully yanking it down around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] бретельки платья с глубоким декольте [npc2.namePos] с [npc2.her] плеч, а затем с силой дергает его вниз до [npc.her] талии.]]>
 	  </otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the top half of [npc.her] plunge dress back up into its proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть платья с глубоким декольте [npc.her] вверх, возвращая её в надлежащее положение.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the top half of [npc2.namePos] plunge dress back up into its proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть платья с глубоким декольте [npc2.namePos] вверх, возвращая её в надлежащее положение.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(yank)] the top half of [npc2.namePos] plunge dress back up into its proper position.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(yank)] затягивает верхнюю часть платья с глубоким декольте [npc2.namePos] обратно на место.]]>
 		</otherRough>
 	</replacementText>
 	

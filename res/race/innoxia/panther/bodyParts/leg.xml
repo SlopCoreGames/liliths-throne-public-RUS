@@ -2,7 +2,7 @@
 <leg>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<coveringType>innoxia_panther_fur</coveringType>
 	
@@ -21,8 +21,8 @@
 		<configuration>QUADRUPEDAL</configuration>
 	</allowedLegConfigurations>
 	
-	<name><![CDATA[leg]]></name>
-	<namePlural><![CDATA[legs]]></namePlural> 
+	<name><![CDATA[нога]]></name>
+	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>masculine</descriptor>
@@ -53,12 +53,12 @@
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		A layer of panther-like fur quickly grows over [npc.her] legs as they shift into a new form. As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and tough leathery pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
-		<br/>[npc.Name] now [npc.has] anthropomorphic, [style.boldPanther(panther-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+		Слой пантерьего меха быстро покрывает [npc.her] ноги, пока те принимают новую форму. По мере того как [npc.her] новый мех спускается к самым кончикам [npc.her] пальцев, [npc.her] когти утолщаются, превращаясь в острые лезвия, а подошвы [npc.her] покрываются грубыми кожаными подушечками, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)] что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldPanther(пантерьи ноги и лапы)], которые [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic panther-like paws, complete with sharp claws and tough leathery pads.
+		[npc.Her] ноги — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превратились в антропоморфьи пантерьи лапы с острыми когтями и грубыми кожаными подушечками.
 	]]></bodyDescription>
 </leg>

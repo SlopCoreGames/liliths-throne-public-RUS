@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <setBonus>
-	<name><![CDATA[Witch]]></name>
+	<name><![CDATA[Ведьма]]></name>
 	
 	<statusEffect>SET_WITCH</statusEffect>
 	

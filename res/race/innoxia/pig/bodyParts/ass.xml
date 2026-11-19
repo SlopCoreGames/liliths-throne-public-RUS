@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<coveringType>innoxia_pig_fur</coveringType>
 	
@@ -15,10 +15,10 @@
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldPig(pig-like)], [npc.assholeFullDescription].
+		[npc.She] теперь [npc.has] [style.boldPig(pig-like)], [npc.assholeFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a pig-like, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] свиноподобная, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[table]]></deskName>
+	<deskName><![CDATA[таблица]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -15,14 +15,14 @@
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
-			With the chaotic brawl now at an end, the tavern's patrons sit back and enjoy the show that [attacker.name] and Oglix's elemental are putting on for them...
+			Хаотичная потасовка подошла к концу, и посетители таверны, откинувшись на спинки стульев, с удовольствием наблюдают за шоу, которое устраивают [attacker.name] и элементал Огликса...
 		]]></startingDescription>
 		<randomDescriptions enabled="true">
-			<description><![CDATA[A couple of nearby spectators loudly laugh and cheer at the lewd display.]]></description>
-			<description><![CDATA[You hear someone in the tavern wolf-whistling as they watch [attacker.name] and Oglix's elemental go at it.]]></description>
-			<description><![CDATA[Over the sound of laughter and drunken cheers, you somehow manage to hear someone nearby commenting on [attacker.namePos] performance.]]></description>
-			<description><![CDATA[Cheering and laughing, the crowd which has gathered encourages Oglix's elemental to give [attacker.name] a good, hard fuck.]]></description>
-			<description><![CDATA[You glance across to see a couple of drunks touching themselves as they watch [attacker.name] and Oglix's elemental having sex.]]></description>
+			<description><![CDATA[Пара стоящих неподалеку зрителей громко смеется и подбадривает участников этой похотливой сцены.]]></description>
+			<description><![CDATA[Ты слышишь, как кто-то в таверне громко свистит, наблюдая за тем, как [attacker.name] и элементал Огликса вовсю трахаются.]]></description>
+			<description><![CDATA[Сквозь смех и пьяные крики тебе удается расслышать, как кто-то неподалеку комментирует старания [attacker.namePos].]]></description>
+			<description><![CDATA[Скандируя и хохоча, собравшаяся толпа подгоняет элементала Огликса, призывая его хорошенько и жестко оттрахать [attacker.name].]]></description>
+			<description><![CDATA[Ты бросаешь взгляд в сторону и видишь парочку пьяниц, которые ласкают себя, наблюдая за сексом [attacker.name] и элементала Огликса.]]></description>
 		</randomDescriptions>
 	</publicSex>
 	<characterInformationContainer>
@@ -120,11 +120,11 @@
 			<dirtyTalk>
 				<character id="attacker">
 					<standard additionToDefault="false">
-						<line><![CDATA[Take your punishment, you bad [attacker.girl]!]]></line>
-						<line><![CDATA[Mistress demands that you remember this!]]></line>
-						<line><![CDATA[This is your punishment!]]></line>
-						<line><![CDATA[You've been a bad [attacker.girl]!]]></line>
-						<line><![CDATA[Don't ever forget this!]]></line>
+						<line><![CDATA[Получай свое наказание, плохая [attacker.girl]!]]></line>
+						<line><![CDATA[Госпожа требует, чтобы ты запомнила это!]]></line>
+						<line><![CDATA[Это твоя кара!]]></line>
+						<line><![CDATA[Ты была плохой [attacker.girl]!]]></line>
+						<line><![CDATA[Никогда об этом не забывай!]]></line>
 					</standard>
 				</character>
 			</dirtyTalk>

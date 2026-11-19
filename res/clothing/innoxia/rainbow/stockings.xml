@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name appendColourName="false"><![CDATA[rainbow stocking]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[rainbow stockings]]></namePlural>
-		<description><![CDATA[A pair of brightly coloured rainbow stockings that reach up to the wearer's mid-thigh.]]></description>
+		<name appendColourName="false"><![CDATA[радужная чулок]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[радужные чулки]]></namePlural>
+		<description><![CDATA[Пара ярко раскрашенных радужных чулок, доходящих до середины бедра.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>SOCK</slot> 
@@ -87,25 +87,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] on the rainbow stockings before pulling them all the way up to [npc.her] mid-thigh.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] радужные чулки, прежде чем натянуть их до [npc.her] середины бедра.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the rainbow stockings onto [npc2.namePos] [npc2.feet], before pulling them all the way up to [npc2.her] mid-thigh.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] радужные чулки на [npc2.namePos] [npc2.feet], а затем натягивает их до [npc2.her] середины бедра.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the rainbow stockings onto [npc2.namePos] [npc2.feet], before pulling them all the way up to [npc2.her] mid-thigh.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] радужные чулки на [npc2.namePos] [npc2.feet], а затем натягивает их до [npc2.her] середины бедра.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] rainbow stockings.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] радужные чулки.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] rainbow stockings.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] радужные чулки.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] rainbow stockings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] радужные чулки.]]>
     </otherRough>
   </displacementText>
 	

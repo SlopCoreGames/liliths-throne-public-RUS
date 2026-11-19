@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>1000</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Jack-o'-Lantern]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Jack-o'-Lanterns]]></namePlural>
-		<description><![CDATA[A pumpkin that's not only had a frightening face carved into it, but which has also been enchanted so as to glow with an inner light. A hole has been cut out of the bottom of it, allowing someone to wear it like a helmet.]]></description>
+		<name><![CDATA[Светильник Джека]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Светильники Джека]]></namePlural>
+		<description><![CDATA[Тыква, в которой не только вырезана пугающая рожица, но и заложено магическое сияние. Снизу проделано отверстие, позволяющее носить её на голове, словно шлем.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -20,7 +20,7 @@
 			<category id="Face" priority="1">
 				<sticker id="creepy" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Creepy]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Creepy]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Жуткий]]></namePrefix>
 					<descriptionModification/>
 					<imageName zLayer="1" slot="HEAD">jack_o_lantern_creepy.svg</imageName>
 					<itemTagsAdded/>
@@ -30,7 +30,7 @@
 				</sticker>
 				<sticker id="grin" priority="2" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[Grin]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Grin]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Оскал]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
 					<imageName>jack_o_lantern_grin.svg</imageName>
@@ -76,25 +76,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(place)] the Jack-o'-Lantern onto [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] светильник Джека на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(place)] the Jack-o'-Lantern onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] светильник Джека на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the Jack-o'-Lantern onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] светильник Джека на голову [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] Jack-o'-Lantern.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] светильник Джека с [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] Jack-o'-Lantern.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] светильник Джека с [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] Jack-o'-Lantern.]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] с [npc2.namePos] Джек-о-Лэнтэна.]]>
     </otherRough>
   </displacementText>
 	

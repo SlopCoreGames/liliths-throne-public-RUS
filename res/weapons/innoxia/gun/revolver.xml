@@ -6,10 +6,10 @@
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[arcane revolver]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[arcane revolvers]]></namePlural> 
+		<name><![CDATA[арканный револьвер]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[арканные револьверы]]></namePlural> 
 		
-		<description><![CDATA[Although this revolver appears to be of the top-break variety, there's actually no way to open and reload it, as instead of bullets, it fires concentrated arcane essences. This weapon is only seen being carried by Lyssieth's elite guards.]]></description> 
+		<description><![CDATA[Хотя этот револьвер выглядит как модель с откидным стволом, на самом деле его невозможно открыть или перезарядить, ведь вместо пуль он стреляет концентрированной арканной эссенцией. Такое оружие можно встретить только у элитной гвардии Lyssieth.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
@@ -19,9 +19,9 @@
 		
 		<weaponSet>LYSSIETH_GUARD</weaponSet> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] arcane revolver, ready to use it in combat.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] арканный револьвер, готовый к бою.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] arcane revolver.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] арканный револьвер.]]></unequipText>
 		
 		<imageName>revolver.svg</imageName> 
 		
@@ -63,27 +63,25 @@
 	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Aiming and firing [npc.her] arcane revolver, [npc.name] [npc.verb(manage)] to hit [npc2.name] with a powerful arcane bullet!
+		Целясь и стреляя из [npc.her] арканного револьвера, [npc.name] [npc.verb(manage)] попасть в [npc2.name] мощной арканной пулей!
 		]]></hitText>
 		<hitText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] arcane revolver, [npc.name] [npc.verb(pull)] the trigger, unleashing a powerful blast of arcane energy that slams into [npc2.namePos] torso!
+		Целясь в [npc2.name] из [npc.her] арканного револьвера, [npc.name] [npc.verb(pull)] спусковой крючок, высвобождая мощный заряд арканной энергии, который врезается в торс [npc2.namePos]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane revolver, and, pulling the trigger, [npc.she] [npc.verb(manage)] to hit [npc2.herHim] right in the chest!
+		[npc.Name] [npc.verb(aim)] в [npc2.name] из [npc.her] арканного револьвера и, нажав на спуск, [npc.she] [npc.verb(manage)] попасть [npc2.herHim] прямо в грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		Aiming and firing [npc.her] arcane revolver, [npc.name] [npc.verb(miss)] [npc2.name]!
+		Целясь и стреляя из [npc.her] арканного револьвера, [npc.name] [npc.verb(miss)] [npc2.name]!
 		]]></missText>
 		<missText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] arcane revolver, [npc.name] [npc.verb(pull)] the trigger, letting out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Целясь в [npc2.name] из [npc.her] арканного револьвера, [npc.name] [npc.verb(pull)] спусковой крючок, издавая разочарованный крик, когда [npc.she] [npc.verb(miss)] цель [npc.her]!
 		]]></missText>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane revolver and [npc.verb(pull)] the trigger, but [npc.she] [npc.verb(end)] up missing [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(aim)] на [npc2.name], целясь из [npc.her] арканного револьвера, и [npc.verb(pull)] за курок, но [npc.she] [npc.verb(end)] промахивается мимо [npc.her] цели!]]></missText>
 	</missDescriptions>
 	
 </weapon>

@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the side seam reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве пришита маленькая бирка: «Служебная форма Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>850</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[test coat]]></name>
+		<name><![CDATA[тестовое пальто]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[test coats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[тестовые пальто]]></namePlural> 
 
-		<description><![CDATA[A dress uniform coat with four pockets.]]></description> 
+		<description><![CDATA[Парадный мундир с четырьмя карманами.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -33,7 +33,7 @@
 		<stickers>
 			
 			<category id="collar" priority="1"> 
-				<categoryName><![CDATA[Collar Tabs]]></categoryName>
+				<categoryName><![CDATA[Петлицы]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[Enforcer]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix>
@@ -49,7 +49,7 @@
 					<stickerName><![CDATA[Police Constable]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Constable ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of a Police Constable attached to it.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К нему прикреплен знак отличия констебля полиции.</i>]]></descriptionModification> 
 					<imageName>enfdjacket_st_tab_pc.svg</imageName> 
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -67,7 +67,7 @@
 					<stickerName><![CDATA[Sergeant]]></stickerName>
 					<namePrefix priority="2"><![CDATA[Enforcer Sergeant ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of a Sergeant attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К нему прикреплен знак отличия сержанта.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_sg.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -83,9 +83,9 @@
 				</sticker>
 				<sticker id="tab_ip" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Inspector]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Enforcer Inspector ]]></namePrefix>
+					<namePrefix priority="2"><![CDATA[Enforcer Инспектор ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of an Inspector attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак инспектора.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_ip.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -101,9 +101,9 @@
 				</sticker>
 				<sticker id="tab_ci" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Chief Inspector]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Enforcer Chief Inspector ]]></namePrefix>
+					<namePrefix priority="2"><![CDATA[Enforcer Главный инспектор ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of a Chief Inspector attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак главного инспектора.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_ci.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -119,9 +119,9 @@
 				</sticker>
 				<sticker id="tab_su" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Superintendent]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Enforcer Superintendent ]]></namePrefix>
+					<namePrefix priority="2"><![CDATA[Enforcer Супер интендант ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of a Superintendent attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак супер интенданта.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_su.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -137,9 +137,9 @@
 				</sticker>
 				<sticker id="tab_cs" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Chief Superintendent]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Enforcer Chief Superintendent ]]></namePrefix>
+					<namePrefix priority="2"><![CDATA[Enforcer Главный супер интендант ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of a Chief Superintendent attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак главного супер интенданта.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_cs.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -155,9 +155,9 @@
 				</sticker>
 				<sticker id="tab_cm" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Commissioner]]></stickerName>
-					<namePrefix priority="2"><![CDATA[Enforcer Commissioner ]]></namePrefix>
+					<namePrefix priority="2"><![CDATA[Комиссар Enforcer]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> It has the insignia of the Commissioner attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На нем закреплен знак комиссара.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_tab_cm.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -173,7 +173,7 @@
 				</sticker>
 			</category>
 			<category id="name" priority="2"> 
-				<categoryName><![CDATA[Name Plate]]></categoryName>
+				<categoryName><![CDATA[Именная табличка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="2" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -257,9 +257,9 @@
 				</sticker>
 				<sticker id="name_brax" priority="6" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="ADB4FF">
 					<stickerName><![CDATA[Brax]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Brax's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Brax ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> This one in particular belongs to Brax.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Brax.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_name_brax.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -271,9 +271,9 @@
 				</sticker>
 				<sticker id="name_candi" priority="7" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS">
 					<stickerName><![CDATA[Candi]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Candi's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Кэнди ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> This one in particular belongs to Candi.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Кэнди.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_name_candi.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -285,15 +285,15 @@
 				</sticker>
 				<sticker id="name_claire" priority="8" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="FEMININE">
 					<stickerName><![CDATA[Claire]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Claire's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Клэр ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> This one in particular belongs to Claire.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Клэр.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_name_claire.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 						#IF(pc.getId() != claire.getId())
-							You can't use Claire's name plate!
+							Ты не можешь использовать именную табличку Клэр!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -302,9 +302,9 @@
 				</sticker>
 				<sticker id="name_elle" priority="9" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="d69423">
 					<stickerName><![CDATA[Elle]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Elle's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Элль ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> This one in particular belongs to Elle.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Элль.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_name_elle.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -316,9 +316,9 @@
 				</sticker>
 				<sticker id="name_wesley" priority="10" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="d6c19c">
 					<stickerName><![CDATA[Wes]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Wes' ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Уэса ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> This one in particular belongs to Wes.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Уэсу.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_name_wesley.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -330,9 +330,9 @@
 				</sticker>
 				<sticker id="name_nysa" priority="11" defaultSticker="false" zLayer="2" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_ORANGE">
 					<stickerName><![CDATA[Nysa]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Nysa's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Нисы ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> This one in particular belongs to Nysa.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="2"><![CDATA[<i> Именно эта вещь принадлежит Нисе.</i>]]></descriptionModification>
 					<imageName>enfdjacket_st_name_nysa.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -344,7 +344,7 @@
 				</sticker>
 			</category>
 			<category id="ribbon" priority="3">
-				<categoryName><![CDATA[Ribbon Rack]]></categoryName>
+				<categoryName><![CDATA[Колодка с лентами]]></categoryName>
 				<sticker id="None" priority="0" defaultSticker="true" zLayer="3" colourSelected="TEXT_GREY">
 					<namePrefix/>
 					<namePostfix/>
@@ -441,7 +441,7 @@
 				</sticker>
 			</category>
 			<category id="qual" priority="4">
-				<categoryName><![CDATA[Qualification Badge]]></categoryName>
+				<categoryName><![CDATA[Квалификационный знак]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="4" colourSelected="TEXT_GREY">
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -483,7 +483,7 @@
 				</sticker>	
 			</category>
 			<category id="aig" priority="5">
-				<categoryName><![CDATA[Aiguillette]]></categoryName>
+				<categoryName><![CDATA[Эглет]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="5" colourSelected="TEXT_GREY">
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -592,49 +592,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arms through the coat's sleeves and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] руки в рукава сюртука и [npc.verb(button)] его спереди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the coat's sleeves and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава сюртука и [npc.verb(button)] его спереди.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] arms through the coat's sleeves and hastily [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] руки в рукава сюртука и поспешно [npc.verb(button)] его спереди.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc.her] coat and [npc.verb(pull)] [npc.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] сюртук [npc.her] и [npc.verb(pull)] [npc.her] руки из рукавов.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc2.namePos] coat and [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] сюртук [npc2.namePos] и [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] руки из рукавов.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on the front of [npc2.namePos] coat and roughly [npc.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] пуговицы на сюртуке [npc2.namePos] и грубо [npc.verb(pull)] [npc2.her] руки из рукавов.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc.namePos] coat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] сюртук [npc.namePos] спереди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc2.namePos] coat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] полы [npc2.namePos] пальто.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] hastily [npc.verb(button)] up the front of [npc2.namePos] coat.]]>
+		  <![CDATA[[npc.Name] поспешно [npc.verb(button)] полы [npc2.namePos] пальто.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] coat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] пальто.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] coat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] пальто.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on [npc2.namePos] coat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] пуговицы на [npc2.namePos] пальто.]]>
 		</otherRough>
 	</displacementText>
 	

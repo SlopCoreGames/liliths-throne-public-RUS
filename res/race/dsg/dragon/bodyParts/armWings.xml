@@ -10,7 +10,7 @@
 	<race>dsg_dragon</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[dragon winged]]></transformationName>
+	<transformationName><![CDATA[крылатый дракон]]></transformationName>
 	
 	<!-- The id of the material covering this arm.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -32,8 +32,8 @@
 	
 	<!-- The singular and plural name of this arm type.
 	These should be left as 'arm' and 'arms' for standard arm types, and changed to 'wing' and 'wings' if your arm type are wings (such as those found on harpies or bat-morphs). -->
-	<name><![CDATA[wing]]></name>
-	<namePlural><![CDATA[wings]]></namePlural> 
+	<name><![CDATA[крыло]]></name>
+	<namePlural><![CDATA[крылья]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
@@ -48,8 +48,8 @@
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's hands: -->
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>dragon-like</descriptor>
 		<descriptor>scaly</descriptor>
@@ -62,8 +62,8 @@
 	</handDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's fingers: -->
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>talon-tipped</descriptor>
 		<descriptor>dragon-like</descriptor>
@@ -77,16 +77,14 @@
 	
 	<!-- The description which is shown when a character transforms to obtain this arm type.
 	This description immediately follows a brief description of the arm type beginning to transform. -->
-	<transformationDescription><![CDATA[
-		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, starting at [npc.her] hands in shock, [npc.she] [npc.verb(watch)] [npc.her] fingers narrowing down and growing longer and longer as a tough membrane of leathery skin starts to grow between them. [npc.She] [npc.verb(cry)] out in alarm as [npc.she] [npc.verb(feel)] [npc.her] bones snapping into a new form, and before [npc.her] very eyes, [npc.her] hands and arms have completely transformed into [style.boldDragon(huge, draconic wings)]. Where [npc.her] hands once were, two of [npc.her] fingers have shrunk down into the middle-joint of [npc.her] new appendages, with two small forefingers and an opposable thumb, each tipped with a sharp talon. At [npc.her] shoulders where [npc.her] new wings meet [npc.her] shoulder, her new scales smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] torso.
-		<br/>As the transformation comes to an end, [npc.nameIsFull] left with huge [style.boldDragon(draconic wings)] in place of arms, which are [npc.materialDescriptor] [npc.armFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Буквально за считанные мгновения их покрывает слой [npc.armFullDescription], и, начиная с [npc.her] рук, [npc.she] [npc.verb(watch)] как [npc.her] пальцы сужаются и становятся всё длиннее и длиннее, пока между ними нарастает плотная кожаная перепонка. [npc.She] [npc.verb(cry)] от испуга, когда [npc.she] [npc.verb(feel)], как [npc.her] кости переламываются, принимая новую форму, и на [npc.her] глазах [npc.her] руки и предплечья полностью превращаются в [style.boldDragon(огромные драконьи крылья)]. Там, где раньше были [npc.her] руки, два [npc.her] пальца уменьшились, став средним суставом [npc.her] новых конечностей, снабженных двумя маленькими указательными пальцами и противопоставленным большим пальцем, каждый из которых увенчан острым когтем. Там, где [npc.her] плечи соединяются с [npc.her] новыми крыльями у [npc.her] плеча, её новая чешуя плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] торса.
+<br/>Когда трансформация завершается, [npc.nameIsFull] остаётся с огромными [style.boldDragon(драконьими крыльями)] вместо рук, которые [npc.materialDescriptor] [npc.armFullDescription].]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-	In place of arms and hands, [npc.she] [npc.has] [npc.armRows] huge draconic wings which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].
+	Вместо рук и кистей у [npc.she] [npc.has] [npc.armRows] огромные драконьи крылья, которые [npc.materialCompositionDescriptor] [npc.armFullDescription(true)].
 	#IF(!npc.isFeral())
-	 [npc.Her] hands are comprised of two forefingers and a thumb, each tipped with a sharp talon. Although slightly less dexterous than a five-digit hand, [npc.sheIs] still able to use them to form a hand-like grip.
+	 [npc.Her] кисти состоят из двух указательных пальцев и большого пальца, каждый из которых увенчан острым когтем. Хотя они чуть менее ловкие, чем пятипалая кисть, [npc.sheIs] всё же может использовать их для захвата, подобного руке.
 	#ENDIF
 	]]></bodyDescription>
 	

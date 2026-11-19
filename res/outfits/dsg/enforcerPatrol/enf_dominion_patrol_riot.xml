@@ -4,10 +4,10 @@
 
 	<coreAttributes>
 		<!-- Names are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable (lowercase) name.-->
-		<name><![CDATA[Dominion Frontline Patrol Enforcer riot control uniform]]></name>
+		<name><![CDATA[Форменная униформа Enforcer для подавления беспорядков передовой патрульной группы Dominion]]></name>
 		
 		<!-- Again, descriptions are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable description.-->
-		<description><![CDATA[Enforcer riot control uniform with Dominion Frontline Patrol colours.]]></description>
+		<description><![CDATA[Униформа Enforcer для подавления беспорядков в цветах передовой патрульной группы Dominion.]]></description>
 		
 		<!-- The femininity needed for someone to generate this outfit. MASCULINE, ANDROGYNOUS, and FEMININE are the three acceptable values. ANDROGYNOUS means anyone can use this outfit, while the other two are self-explanatory.-->
 		<femininity>ANDROGYNOUS</femininity>

@@ -6,18 +6,18 @@
 	
 	<race>dsg_raccoon</race>
 	
-	<transformationName><![CDATA[raccoon]]></transformationName>
+	<transformationName><![CDATA[енот]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[raccoon-]]></name>
+		<name><![CDATA[енот-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[raccoon-]]></name>
+		<name><![CDATA[енот-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

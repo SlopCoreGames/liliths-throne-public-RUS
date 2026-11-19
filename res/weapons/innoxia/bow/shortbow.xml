@@ -5,15 +5,15 @@
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[arcane shortbow]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[arcane shortbows]]></namePlural>
-		<description><![CDATA[This shortbow is infused with a potent arcane enchantment, which, once the string is drawn back, extracts an arcane essence out of the user's aura, before converting it into a bolt of energy to be fired at the target.]]></description>
+		<name><![CDATA[арканный короткий лук]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[арканные короткие луки]]></namePlural>
+		<description><![CDATA[Этот короткий лук пропитан мощным арканным зачарованием: стоит натянуть тетиву, как он вытягивает арканную эссенцию из ауры пользователя, превращая её в энергетический снаряд для выстрела по цели.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
 		<attackTooltipDescription>Shoot at [npc.name] with your shortbow.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] shortbow.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] shortbow away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] короткий лук.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] короткий лук.]]></unequipText>
 		<imageName>shortbow.svg</imageName> 
 		<imageEquippedName/>
 		<damage>25</damage>
@@ -53,26 +53,24 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Drawing back [npc.her] arcane shortbow and firing an ethereal arrow, [npc.name] [npc.verb(hit)] [npc2.name] right in the chest, causing [npc2.herHim] to gasp and stagger back from the blow.
+		Натянув [npc.her] арканный короткий лук и выпустив эфирную стрелу, [npc.name] [npc.verb(hit)] [npc2.name] прямо в грудь, заставляя [npc2.herHim] ахнуть и пошатнуться от удара.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(use)] [npc.her] arcane shortbow to fire an ethereal arrow at [npc2.name], and [npc.verb(manage)] to [npc2.herHim] right in the chest!
+		[npc.Name] [npc.verb(use)] [npc.her] арканный короткий лук, чтобы выпустить эфирную стрелу в [npc2.name], и [npc.verb(manage)] попасть [npc2.herHim] прямо в грудь!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane shortbow and [npc.verb(let)] loose, sending an ethereal arrow to cut through the air and hit [npc2.herHim] right in the chest!
+		[npc.Name] [npc.verb(aim)] в [npc2.name], используя [npc.her] арканный короткий лук, и [npc.verb(let)] стрелу на волю; эфирная стрела рассекает воздух и попадает [npc2.herHim] прямо в грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Aiming and firing [npc.her] arcane shortbow, [npc.name] [npc.verb(miss)] [npc2.name]!
+		Прицелившись и выстрелив из [npc.her] арканного короткого лука, [npc.name] [npc.verb(miss)] [npc2.name]!
 		]]></missText>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(use)] [npc.her] arcane shortbow to fire an ethereal arrow at [npc2.name], but [npc.verb(miss)] [npc.her] target!
+		[npc.Name] [npc.verb(use)] [npc.her] арканный короткий лук, чтобы выпустить эфирную стрелу в [npc2.name], но [npc.verb(miss)] мимо цели [npc.her]!
 		]]></missText>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane shortbow and [npc.verb(let)] loose, but [npc.she] [npc.verb(end)] up missing [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(aim)] в [npc2.name] из [npc.her] арканового короткого лука и [npc.verb(let)] пускает стрелу, но [npc.she] [npc.verb(end)] промахивается мимо [npc.her] цели!]]></missText>
 	</missDescriptions>
 	
 </weapon>

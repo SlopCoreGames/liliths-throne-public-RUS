@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>300</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[jeans]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[jeans]]></namePlural>
-		<description><![CDATA[A pair of unisex jeans, made out of stretchy denim.]]></description>
+		<name><![CDATA[джинсы]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[джинсы]]></namePlural>
+		<description><![CDATA[Унисекс-джинсы из эластичного денима.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -78,25 +78,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the jeans, before pulling them up and fastening the button at [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в джинсы, а затем натягивает их и застегивает пуговицу на [npc.her] талии.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the jeans, before pulling them up and fastening the button at [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] накинуть джинсы, после чего помогает натянуть их и застегнуть пуговицу на [npc2.her] талии.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the jeans, before yanking them up and fastening the button at [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] налезть в джинсы, а затем рывком натягивает их и застегивает пуговицу на [npc2.her] талии.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the button on [npc.her] jeans, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] пуговицу на джинсах [npc.her], после чего стягивает их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the button on [npc2.namePos] jeans, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] пуговицу на джинсах [npc2.namePos], после чего стягивает их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the button on [npc2.namePos] jeans, before yanking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] пуговицу на джинсах [npc2.namePos], после чего срывает их с [npc2.namePos].]]>
     </otherRough>
   </displacementText>
 	

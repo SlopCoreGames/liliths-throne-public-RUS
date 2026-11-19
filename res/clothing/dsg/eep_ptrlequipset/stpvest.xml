@@ -5,7 +5,7 @@
 	
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the vest's cummerbund reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На кушаке жилета пришит маленький ярлык: «Официальное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 	
 		
 		<value>1500</value> 
@@ -14,13 +14,13 @@
 		<determiner><![CDATA[an]]></determiner>
 		
 		
-		<name><![CDATA[stabproof vest]]></name>
+		<name><![CDATA[бронежилет от колющих ударов]]></name>
 		
 		
-		<namePlural pluralByDefault="false"><![CDATA[stabproof vests]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[бронежилеты от колющих ударов]]></namePlural>
 		
 		
-		<description><![CDATA[A low-profile pocketed vest made from ballistic fibres, it tips the scale towards mobility and discreetness against protection.]]></description>
+		<description><![CDATA[Низкопрофильный жилет с карманами, изготовленный из баллистических волокон; в нем упор сделан на мобильность и незаметность, а не на максимальную защиту.]]></description>
 		
 		
 		<physicalResistance>10</physicalResistance> 
@@ -47,10 +47,10 @@
 		<stickers>
 			
 			<category id="name_plate" priority="1"> 
-				<categoryName><![CDATA[Name Plate]]></categoryName>
+				<categoryName><![CDATA[Именная табличка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Contractor ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Подрядчик ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
 					<imageName/>
@@ -63,7 +63,7 @@
 					<stickerName><![CDATA[Enforcer]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one is clearly labeled for Enforcer use.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете явно стоит маркировка для использования Enforcer.</i>]]></descriptionModification> 
 					<imageName>stpvest_st_enf.svg</imageName> 
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -75,18 +75,18 @@
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL) ||
 							!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_SWORD) ||
 							!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_ORICL))
-							Only Enforcers can use an Enforcer nameplate!
+							Только Enforcer может использовать именную табличку Enforcer!
 						#ENDIF
 					]]></unavailabilityText> 
 					<availabilityText><![CDATA[
-						As an Enforcer, you can freely use Enforcer name plates.
+						Как Enforcer, ты можешь свободно использовать именные таблички Enforcer.
 					]]></availabilityText> 
 				</sticker>
 				<sticker id="claire" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS"> 
 					<stickerName><![CDATA[Claire]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Claire's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Клэр ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one belongs to Claire.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Это принадлежит Клэр.</i>]]></descriptionModification>
 					<imageName>stpvest_st_claire.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -96,18 +96,18 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 						#IF(pc.getId() != claire.getId())
-							You can't use Claire's name plate!
+							Ты не можешь использовать именную табличку Клэр!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText><![CDATA[
-						I don't know what kind of hax you used to unlock this, but apparently you are Claire.
+						Не знаю, какие хаки ты использовал, чтобы разблокировать это, но, судя по всему, ты — Клэр.
 					]]></availabilityText>
 				</sticker>
 				<sticker id="sean" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="FEMININE_PLUS"> 
 					<stickerName><![CDATA[Sean]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Sean's ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Шона ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one belongs to Sean.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Это принадлежит Шону.</i>]]></descriptionModification>
 					<imageName>stpvest_st_sean.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -117,11 +117,11 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="false"><![CDATA[
 						#IF(pc.getId() != sean.getId())
-							You can't use Sean's name plate!
+							Ты не можешь использовать именную табличку Шона!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText><![CDATA[
-						Beware of flying CRT monitors.
+						Остерегайся летающих ЭЛТ-мониторов.
 					]]></availabilityText>
 				</sticker>
 			</category>
@@ -194,26 +194,26 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the vest over [npc.her] head and [npc.verb(tighten)] the cummerbund on either side of [npc.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] надевает жилет через голову [npc.her] и [npc.verb(tighten)] затягивает кушак по обе стороны торса [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the vest over [npc2.namePos] head and [npc.verb(tighten)] the cummerbund on either side of [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] надевает жилет через голову [npc2.namePos] и [npc.verb(tighten)] затягивает кушак по обе стороны торса [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(shove)] the vest over [npc2.namePos] head and [npc.verb(tighten)] the cummerbund on either side of [npc2.her] torso as much as possible.]]>
+		  <![CDATA[[npc.Name] [npc.verb(shove)] жилет через [npc2.namePos] голову и [npc.verb(tighten)] кушак по обе стороны [npc2.her] торса настолько туго, насколько это возможно.]]>
 		</otherRough>
 	</replacementText>
 	
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] un[npc.do] the cummerbund on either side of [npc.her] vest and slide [npc.her] head through the neck hole.]]>
+		  <![CDATA[[npc.Name] расстегивает [npc.do] кушак по обе стороны [npc.her] жилета и просовывает [npc.her] голову в горловину.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] un[npc.do] the cummerbund on either side of [npc2.namePos] vest and slide [npc2.her] head through the neck hole.]]>
+		  <![CDATA[[npc.Name] расстегивает [npc.do] кушак по обе стороны [npc2.namePos] жилета и просовывает [npc2.her] голову в горловину.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(rip)] open the cummerbund on either side of [npc2.namePos] vest and [npc.verb(yank)] the rest over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(rip)] разрывает кушак по обе стороны [npc2.namePos] жилета и [npc.verb(yank)] остальное через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 	

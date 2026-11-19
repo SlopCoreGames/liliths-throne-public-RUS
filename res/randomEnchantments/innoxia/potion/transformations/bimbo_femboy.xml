@@ -10,17 +10,17 @@
 		[#flags.setInt('extremeTF', RND.nextInt(100))]
 	]]></conditionalPreParsing>
 	
-	<name defaultPrepend="true"><![CDATA[the Bimbo Femboy]]></name>
+	<name defaultPrepend="true"><![CDATA[Бимбо-фембой]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
-		Dominion needs more bimbo femboys!
+		Доминиону нужно больше бимбо-фембоев!
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
 		#IF(game.isAnalContentEnabled())
-			Now get out there and use your hot ass to milk some big, throbbing cocks!
+			А теперь иди и используй свою горячую задницу, чтобы доить огромные, пульсирующие члены!
 		#ELSE
-			Now get out there and suck some big, throbbing cocks!
+			А теперь иди и соси огромные, пульсирующие члены!
 		#ENDIF
 	]]></applicationSpeechEnd>
 	

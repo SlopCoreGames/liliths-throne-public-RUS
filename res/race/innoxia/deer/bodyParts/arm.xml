@@ -2,7 +2,7 @@
 <arm>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<coveringType>innoxia_deer_fur</coveringType>
 	
@@ -12,8 +12,8 @@
 		<tag>ARM_STANDARD</tag>
 	</tags>
 	
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural> 
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
@@ -25,8 +25,8 @@
 		<descriptor>fur-coated</descriptor>
 	</descriptorsFeminine>
 	
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>deer-like</descriptor>
 		<descriptor>furry</descriptor>
@@ -38,8 +38,8 @@
 		<descriptor>furry</descriptor>
 	</handDescriptorsFeminine>
 	
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>deer-like</descriptor>
 	</fingerDescriptorsMasculine>
@@ -50,12 +50,12 @@
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as tough, hoof-like nails push out in place of regular, human-like ones. Despite their appearance, [npc.sheIsFull] relieved to discover that [npc.her] hands have lost none of their dexterity. As the transformation comes to an end, [npc.she] [npc.verb(see)] that at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.
-		<br/>With the transformation having fully run its course, [npc.nameIsFull] left with anthropomorphic, [style.boldGoat(deer-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+		Всего за мгновение их покрыл слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую шерсть, растущую на спинах [npc.her] рук, в то время как вместо обычных человеческих ногтей пробиваются твердые, похожие на копыта когти. Несмотря на внешний вид, [npc.sheIsFull] с облегчением обнаруживает, что [npc.her] руки не утратили своей ловкости. Когда трансформация завершается, [npc.she] [npc.verb(see)], что в районе [npc.her] верхней части бицепса [npc.her] шерсть плавно переходит в [npc.skin], покрывающую остальное тело [npc.her].
+		<br/>Трансформация полностью завершена, и теперь [npc.nameIsFull] обладает антропоморфными, [style.boldGoat(оленьими руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands, while human in shape, have tough little hoof-like nails.
+	[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] руки, сохраняя человеческую форму, имеют твердые маленькие когти, напоминающие копыта.
 	]]></bodyDescription>
 	
 </arm>

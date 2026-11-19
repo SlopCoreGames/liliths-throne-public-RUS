@@ -10,11 +10,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name appendDamageName="false"><![CDATA[Western PPK]]></name>
+		<name appendDamageName="false"><![CDATA[Вестерн PPK]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Western PPKs]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Вестерны PPK]]></namePlural> 
 		
-		<description><![CDATA[A blowback-operated semi-automatic pistol, featuring an exposed hammer, a traditional double-action trigger mechanism, a single-column magazine, and a fixed barrel that also acts as the guide rod for the recoil spring.]]></description> 
+		<description><![CDATA[Полуавтоматический пистолет с работой автоматики при отдаче ствола. Оснащен открытым курком, традиционным механизмом двойного действия, магазином однорядного типа и неподвижным стволом, который одновременно служит направляющей для возвратной пружины.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] Western PPK, ready to use it in combat.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] Вестерн PPK, готовый к бою.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] Western PPK.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] Вестерн PPK.]]></unequipText>
 		
 		<imageName>western_ppk_safe.svg</imageName> 
 		<imageEquippedName>western_ppk.svg</imageEquippedName> 
@@ -68,13 +68,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Taking aim with [npc.her] pistol, [npc.name] [npc.verb(pull)] the trigger and [npc.verb(fire)] a bullet at [npc2.name], hitting [npc2.herHim] directly in the chest!<br/>Thankfully, there seems to be some kind of arcane force preventing [npc2.name] from being seriously wounded or killed...
+		Прицелившись из [npc.her], [npc.name] [npc.verb(pull)] спусковой крючок и [npc.verb(fire)] пулю в [npc2.name], попадая прямо в грудь [npc2.herHim]!<br/>К счастью, какая-то сила Арканы, похоже, не дает [npc2.name] получить серьезное ранение или погибнуть...
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Taking aim with [npc.her] pistol, [npc.name] [npc.verb(pull)] the trigger and fires a bullet at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		Прицелившись из [npc.her], [npc.name] [npc.verb(pull)] спусковой крючок и выпускает пулю в [npc2.name], но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 	</missDescriptions>
 	

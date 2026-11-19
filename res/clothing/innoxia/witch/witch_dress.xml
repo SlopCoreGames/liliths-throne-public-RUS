@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[Witch's dress]]></name>
+		<name><![CDATA[Платье ведьмы]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Witch's dresses]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Платья ведьмы]]></namePlural> 
 		
-		<description><![CDATA[A witch's dress, made of a thin, soft fabric. It has a flared sleeves and a short skirt. A series of ribbons connect the collar to front of the dress, and when worn, they create a pentagram pattern.]]></description> 
+		<description><![CDATA[Платье ведьмы, сшитое из тонкой мягкой ткани. У него расклешенные рукава и короткая юбка. Ряд лент соединяет воротник с передней частью платья, и когда его надевают, они образуют узор в виде пентаграммы.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -94,49 +94,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on the Witch's dress, tidying the skirt down before moving the straps into a comfortable position on [npc.her] shoulders.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] за платье ведьмы, поправляя юбку, а затем перекидывая лямки на удобное положение на плечах [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the Witch's dress over [npc2.namePos] head and down around [npc2.her] torso, tidying the skirt before moving the straps to sit comfortably on [npc2.her] shoulders.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] платье ведьмы через голову [npc2.namePos] и стягивает его вниз по [npc2.her] торсу, поправляя юбку и перекидывая лямки так, чтобы они удобно легли на плечи [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the Witch's dress over [npc2.namePos] head and down around [npc2.her] torso, pulling down the skirt before moving the straps to sit on [npc2.her] shoulders.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] натягивает платье ведьмы через голову [npc2.namePos] и стягивает его вниз по [npc2.her] торсу, дергая за юбку и перекидывая лямки на плечи [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] Witch's dress up over [npc.her] head and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] платье ведьмы [npc.her] вверх через голову [npc.her] и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] Witch's dress up over [npc2.her] head and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] платье ведьмы [npc2.namePos] вверх через голову [npc2.her] и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] Witch's dress, before roughly pulling it up over [npc2.her] head and taking it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] платье ведьмы [npc2.namePos], после чего грубо стягивает его через голову [npc2.her] и снимает.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] Witch's dress back down into the proper position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] платье ведьмы [npc.her] обратно, возвращая его в надлежащее положение.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] Witch's dress back down into the proper position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] платье ведьмы вниз, возвращая его в надлежащее положение.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] Witch's dress back down into the proper position.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] платье ведьмы вниз, возвращая его в надлежащее положение.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] Witch's dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол [npc.her] платья ведьмы вверх.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] Witch's dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол [npc2.namePos] платья ведьмы вверх.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of the bottom of [npc2.namePos] Witch's dress, before roughly pulling the skirt up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] нижний край [npc2.namePos] платья ведьмы, после чего грубо задирает подол вверх.]]>
 		</otherRough>
 	</displacementText>
 

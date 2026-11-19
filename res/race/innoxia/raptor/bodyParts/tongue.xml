@@ -6,19 +6,19 @@
 	
 	<defaultLength>6</defaultLength>
 	
-	<name><![CDATA[tongue]]></name>
-	<namePlural><![CDATA[tongues]]></namePlural>
+	<name><![CDATA[язык]]></name>
+	<namePlural><![CDATA[языки]]></namePlural>
 	
 	<descriptorsMasculine>
-		<descriptor><![CDATA[raptor-like]]></descriptor>
+		<descriptor><![CDATA[похожий на язык раптора]]></descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor><![CDATA[raptor-like]]></descriptor>
+		<descriptor><![CDATA[похожий на язык раптора]]></descriptor>
 	</descriptorsFeminine>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], raptor-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], рапторский [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
 	]]></bodyDescription>
 	
 	<defaultTongueModifiers>

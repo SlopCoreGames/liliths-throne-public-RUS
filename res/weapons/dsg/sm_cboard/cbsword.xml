@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA["MFD DSG Plumbing Supply" is printed on the grip.]]></authorTag>
+		<authorTag><![CDATA[На рукояти красуется надпись «MFD DSG Plumbing Supply».]]></authorTag>
 		
 		<value>100</value> 
 		
@@ -11,11 +11,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[cardboard sword]]></name>
+		<name><![CDATA[картонный меч]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[cardboard swords]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[картонные мечи]]></namePlural> 
 		
-		<description><![CDATA[With a blade of cardboardium alloy folded a thousand times over and a hilt of finest PVC pipe, this sword is light and well-balanced. You'd be hard pressed to do any real damage with it though.]]></description> 
+		<description><![CDATA[С клинком из сплава картондиума, сложенного тысячу раз, и рукоятью из лучшей ПВХ-трубы, этот меч легок и отлично сбалансирован. Впрочем, нанести им реальный урон будет той еще задачкой.]]></description> 
 		
 		<attackDescriptor>Swing</attackDescriptor>
 		
@@ -23,9 +23,9 @@
 		
 		<rarity>UNCOMMON</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] cardboard sword.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] картонный меч.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] cardboard sword away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] картонный меч.]]></unequipText>
 		
 		<imageName>cbsword.svg</imageName> 
 		
@@ -46,7 +46,7 @@
 		<effects/>
 		
 		<extraEffects>
-			<effect><![CDATA[Makes the wielder look like a dork...]]></effect>
+			<effect><![CDATA[Владелец выглядит с ним как полный придурок...]]></effect>
 		</extraEffects>
 		
 		<onHitEffect/>
@@ -69,13 +69,13 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] sword at [npc2.name]! The edge of the mighty cardboardium blade makes contact with [npc2.namePos] aura, draining a minuscule amount of energy.
+		[npc.Name] [npc.verb(swing)] [npc.her] мечом по [npc2.name]! Край могучего картондиумного клинка касается [npc2.namePos] ауры, поглощая мизерное количество энергии.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] sword at [npc2.name] but an errant current of air causes [npc.her] to miss...
+		[npc.Name] [npc.verb(swing)] [npc.her] мечом по [npc2.name], но случайный поток воздуха заставляет [npc.her] промахнуться...
 		]]></missText>
 	</missDescriptions>
 	

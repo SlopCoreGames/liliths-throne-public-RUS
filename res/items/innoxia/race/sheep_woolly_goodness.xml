@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>10</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Woolly Goodness]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Woolly Goodnesses]]></namePlural>
-		<description><![CDATA[A large serving of fluffy candy floss, covered in a type of protective cellophane wrapper and skewered by a wooden stick. A label on the plastic packaging bears the brand name 'Woolly Goodness', and displays a naked sheep-girl happily presenting herself to the viewer.]]></description>
+		<name><![CDATA[Шерстяное блаженство]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Шерстяные блаженства]]></namePlural>
+		<description><![CDATA[Огромная порция пушистой сахарной ваты, обернутая в защитную целлофановую упаковку и насаженная на деревянную палочку. На этикетке красуется название бренда «Шерстяное блаженство», а также изображена голая овечья дева, счастливо позирующая зрителю.]]></description>
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId> <!-- 'RACE' is a special value, and when defined, this item will use the defined 'associatedRace' to give the player enchantment options for making a TF elixir for that race. -->
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot healthier...
+				[npc.Name] [npc.verb(start)] почувствовать себя гораздо здоровее...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] the candy floss out of its protective packaging and quickly [npc.verb(devour)] it, leaving [npc.herHim] with the delicious taste of sweet, sugary goodness filling [npc.her] mouth.
+		[npc.Name] [npc.verb(take)] сахарную вату из упаковки и быстро [npc.verb(devour)] её, оставляя [npc.herHim] с восхитительным вкусом сладкого сахарного блаженства, наполняющим [npc.her] рот.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(take)] the candy floss out of its protective packaging, before bringing it up to [npc2.namePos] [npc2.lips] and getting [npc2.herHim] to eat it. Quickly devouring it, [npc2.name] is left with the delicious taste of sweet, sugary goodness filling [npc2.her] mouth.
+		[npc.Name] [npc.verb(take)] сахарную вату из упаковки, подносит её к [npc2.namePos] [npc2.lips] и заставляет [npc2.herHim] съесть её. Быстро проглотив угощение, [npc2.name] остается с восхитительным вкусом сладкого сахарного блаженства, наполняющим [npc2.her] рот.
 		]]></otherUse>
 	</useDescriptions>
 

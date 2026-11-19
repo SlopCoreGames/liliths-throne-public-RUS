@@ -104,38 +104,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[raccoon-morph]]></name>
-			<namePlural><![CDATA[raccoon-morphs]]></namePlural>
-			<singularMaleName><![CDATA[raccoon-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[raccoon-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[raccoon-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[raccoon-girls]]></pluralFemaleName>
+			<name><![CDATA[морф енота]]></name>
+			<namePlural><![CDATA[морфы енотов]]></namePlural>
+			<singularMaleName><![CDATA[енот-мальчик]]></singularMaleName>
+			<singularFemaleName><![CDATA[енот-девочка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[еноты-мальчики]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[еноты-девочки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic raccoon, known as a 'raccoon-morph' when bipedal, and a 'raccoontaur' when the lower body is that of a typically-oversized feral raccoon.]]></description>
+	<description><![CDATA[Антропоморфный енот; когда он стоит на двух ногах, его называют «енотоморфом», а если его нижняя часть тела представляет собой туловище обычного крупного дикого енота — «енототавром».]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[azeban]]></name>
-			<namePlural><![CDATA[azeban]]></namePlural>
-			<singularMaleName><![CDATA[azeban]]></singularMaleName>
-			<singularFemaleName><![CDATA[azeban]]></singularFemaleName>
-			<pluralMaleName><![CDATA[azeban]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[azeban]]></pluralFemaleName>
+			<name><![CDATA[азебан]]></name>
+			<namePlural><![CDATA[азебан]]></namePlural>
+			<singularMaleName><![CDATA[азебан]]></singularMaleName>
+			<singularFemaleName><![CDATA[азебан]]></singularFemaleName>
+			<pluralMaleName><![CDATA[азебан]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[азебан]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[raccoon]]></feralName>
-		<feralNamePlural><![CDATA[raccoon]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[raccoon]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[raccoon]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[raccoons]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[raccoons]]></feralPluralFemaleName>
+		<feralName><![CDATA[енот]]></feralName>
+		<feralNamePlural><![CDATA[енот]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[енот]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[енот]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[еноты]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[еноты]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -165,9 +165,7 @@
 	</feralAttributes>
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] raccoon-like body is very adaptable, and [npc.she] [npc.has] a primal urge to fondle things [npc.she] [npc.verb(want)] to examine.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] тело, подобное енотьему, очень адаптивно, и [npc.she] [npc.has] первобытный позыв всё ощупывать [npc.she] [npc.verb(want)] рассмотреть поближе.]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 

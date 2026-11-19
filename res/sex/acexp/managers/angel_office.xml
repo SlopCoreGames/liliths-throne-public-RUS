@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<title><![CDATA[For old times' sake]]></title>
-	<wallName><![CDATA[stack of papers]]></wallName>
+	<title><![CDATA[Ради старых добрых времен]]></title>
+	<wallName><![CDATA[стопка бумаг]]></wallName>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[true]]></subHasEqualControl>
 	<canSkipSex><![CDATA[true]]></canSkipSex>
@@ -106,18 +106,18 @@
 			<dirtyTalk>
 				<character id="pc">
 					<standard additionToDefault="true">
-						<line><![CDATA[Go on, treat me like a whore!]]></line>
-						<line><![CDATA[You know I'm just a dirty whore!]]></line>
-						<line><![CDATA[Put this pathetic human in her place!]]></line>
-						<line><![CDATA[I love getting fucked for money, give it to me!]]></line>
-						<line performingAnyPenetration="true"><![CDATA[Treat me like the filthy whore that I am!]]></line>
+						<line><![CDATA[Давай, обращайся со мной как с шлюхой!]]></line>
+						<line><![CDATA[Ты же знаешь, что я просто грязная шлюха!]]></line>
+						<line><![CDATA[Поставь эту жалкую человечишку на место!]]></line>
+						<line><![CDATA[Обожаю трахаться за деньги, давай их мне!]]></line>
+						<line performingAnyPenetration="true"><![CDATA[Обращайся со мной как с грязной шлюхой, которой я и являюсь!]]></line>
 					</standard>
 					<submissive additionToDefault="true">
-						<line><![CDATA[Go on, treat me like a whore!]]></line>
-						<line><![CDATA[You know I'm just a dirty whore!]]></line>
-						<line><![CDATA[Put this pathetic human in her place!]]></line>
-						<line><![CDATA[I love getting fucked for money, give it to me!]]></line>
-						<line performingAnyPenetration="true"><![CDATA[Treat me like the filthy whore that I am!]]></line>
+						<line><![CDATA[Давай, обращайся со мной как с шлюхой!]]></line>
+						<line><![CDATA[Ты же знаешь, что я просто грязная шлюха!]]></line>
+						<line><![CDATA[Поставь эту жалкую человечишку на место!]]></line>
+						<line><![CDATA[Обожаю трахаться за деньги, давай их мне!]]></line>
+						<line performingAnyPenetration="true"><![CDATA[Обращайся со мной как с грязной шлюхой, которой я и являюсь!]]></line>
 					</submissive>
 				</character>
 			</dirtyTalk>

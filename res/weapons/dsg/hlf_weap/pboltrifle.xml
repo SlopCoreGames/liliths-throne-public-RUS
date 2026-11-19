@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[Underneath the stock, a small engraving reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[Под прикладом красуется небольшая гравировка: «Служебное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 		<value>3000</value>
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendDamageName="true"><![CDATA[pepperball bolt-action rifle]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pepperball bolt-action rifle]]></namePlural>
-		<description><![CDATA[The bolt-action predecessor to the modern pepperball rifle, it uses gelatin instead of solid capsules which reduces its damage. Although it bears Enforcer markings, they have been scratched out and replaced with insignia you don't recognize.]]></description>
+		<name appendDamageName="true"><![CDATA[болтовая перекосная винтовка для перцовых шариков]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[болтовая перекосная винтовка для перцовых шариков]]></namePlural>
+		<description><![CDATA[Предшественница современной перцовой винтовки с продольно-скользящим затвором; вместо твердых капсул в ней используются желатиновые, что снижает урон. Хотя на ней и видны знаки Enforcer, они соскоблены и заменены на незнакомую тебе эмблему.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Shoot [npc2.name] with your rifle.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Выстрели в [npc2.name] из своей винтовки.]]></attackTooltipDescription>
 		<rarity>RARE</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] out the rifle, carefully [npc.verb(load)] it, and [npc.verb(crank)] the bolt once before disengaging the safety. The needle on the gauge moves to the green zone as the internal gas reservoir self-pressurizes.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(open)] the bolt and [npc.verb(check)] to see that the chamber is empty before putting the rifle away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(достает)] винтовку, осторожно [npc.verb(загружает)] её и один раз [npc.verb(дергает)] затвор, прежде чем снять предохранитель. Стрелка манометра перемещается в зеленую зону, пока внутренний газовый резервуар самопроизвольно набирает давление.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(открывает)] затвор и [npc.verb(проверяет)], пуст ли патронник, прежде чем убрать винтовку.]]></unequipText>
 		<imageName>pbboltrifle_uneq.svg</imageName>
 		<imageEquippedName>pbboltrifle.svg</imageEquippedName>
 		<physicalResistance>0</physicalResistance>
@@ -47,13 +47,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(pull)] the trigger at [npc2.name]. The gelatin capsule bursts on impact with [npc2.namePos] aura, splattering [npc2.herHim] with stinging, burning oil.
+		[npc.Name] [npc.verb(целится)] в [npc2.name] через [npc.her] прицел и [npc.verb(нажимает)] на спусковой крючок, целясь в [npc2.name]. Желатиновая капсула лопается при столкновении с [npc2.namePos] Аура, забрызгивая [npc2.herHim] жгучим, обжигающим маслом.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(pull)] the trigger at [npc2.name]. The capsule misses [npc2.herHim] completely and splatters uselessly in the distance.
+		[npc.Name] [npc.verb(целится)] в [npc2.name] через [npc.her] прицел и [npc.verb(нажимает)] на спусковой крючок, целясь в [npc2.name]. Капсула пролетает мимо [npc2.herHim] и бесполезно разлетается где-то вдалеке.
 		]]></missText>
 	</missDescriptions>
 	

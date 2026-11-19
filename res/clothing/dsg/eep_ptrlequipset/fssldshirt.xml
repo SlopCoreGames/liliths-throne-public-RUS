@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the shirt's side seam reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве рубашки пришита маленькая бирка: «Официальная форма Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>200</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's short-sleeved blouse]]></name>
+		<name><![CDATA[Короткая блузка Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's short-sleeved blouses]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Короткие блузки Enforcer]]></namePlural> 
 
-		<description><![CDATA[A short sleeve dress shirt with reinforced stitching and a feminine cut. The rank slides on the epaulets and the nameplate make it clear as to what occupation the wearer is supposed to have.]]></description> 
+		<description><![CDATA[Рубашка с коротким рукавом, отличающаяся женственным кроем и усиленными швами. Погон на эполетах и именная табличка не оставляют сомнений в том, кем именно работает ее обладательница.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -91,49 +91,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arms through the shirt's sleeves and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] руки [npc.her] в рукава рубашки и [npc.verb(button)] её спереди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the shirt's sleeves and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] руки [npc2.her] в рукава рубашки и [npc.verb(button)] её спереди.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] arms through the shirt's sleeves and hastily [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] руки [npc2.namePos] в рукава рубашки и торопливо [npc.verb(button)] её спереди.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc.her] shirt and [npc.verb(pull)] [npc.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] рубашку [npc.her] спереди и [npc.verb(pull)] руки [npc.her] из рукавов.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc2.namePos] shirt and [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] рубашку [npc2.namePos] спереди и [npc.verb(help)] [npc2.her] [npc2.verb(pull)] руки [npc2.her] из рукавов.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on the front of [npc2.namePos] shirt and roughly [npc.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] пуговицы на рубашке [npc2.namePos] и грубо [npc.verb(pull)] руки [npc2.her] из рукавов.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc.namePos] shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] пуговицы на рубашке [npc.namePos].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc2.namePos] shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] пуговицы на рубашке [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] hastily [npc.verb(button)] up the front of [npc2.namePos] shirt.]]>
+		  <![CDATA[[npc.Name] поспешно [npc.verb(button)] пуговицы на рубашке [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] рубашку [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] рубашку [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on [npc2.namePos] shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] пуговицы на рубашке [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[Small embroidered lettering informs you that this scrunchie was made by 'Norin'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Мелкая вышивка сообщает тебе, что эта резинка была сделана мастерами 'Norin'.]]></clothingAuthorTag>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[scrunchie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[scrunchies]]></namePlural> 
-		<description><![CDATA[An elastic fabric scrunchie, typically used to tie hair back. It could also be placed around a tail, or onto someone's wrist.]]></description> 
+		<name><![CDATA[резинка для волос]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[резинки для волос]]></namePlural> 
+		<description><![CDATA[Эластичная тканевая резинка, которую обычно используют, чтобы собрать волосы назад. Её также можно накинуть на хвост или надеть на запястье.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<equipSlots>
@@ -80,70 +80,70 @@
 	
 	<displacementText slot="HAIR" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the scrunchie from out of [npc.her] [npc.hairSkin+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] резинку из [npc.her] [npc.hairSkin+].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the scrunchie from out of [npc2.NamePos] [npc2.hairSkin+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] резинку из [npc2.NamePos] [npc2.hairSkin+].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tug)] the scrunchie from out of [npc2.NamePos] [npc2.hairSkin+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(tug)] резинку из [npc2.NamePos] [npc2.hairSkin+].]]>
 		</otherRough>
 	</displacementText>
 	<replacementText slot="HAIR" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc.her] [npc.hairSkin+] and [npc.verb(pull)] it through the scrunchie.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc.her] [npc.hairSkin+] и [npc.verb(pull)] её сквозь резинку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] and [npc.verb(pull)] it through the scrunchie.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] и [npc.verb(pull)] её сквозь резинку.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] and [npc.verb(tug)] it through the scrunchie.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] и [npc.verb(tug)] её сквозь резинку.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="TAIL" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the scrunchie off from around [npc.her] [npc.tail+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] резинку с [npc.her] [npc.tail+].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the scrunchie off from around [npc2.NamePos] [npc2.tail+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] резинку с [npc2.NamePos] [npc2.tail+].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tug)] the scrunchie off from around [npc2.NamePos] [npc2.tail+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(tug)] резинку с [npc2.NamePos] [npc2.tail+].]]>
 		</otherRough>
 	</displacementText>
 	<replacementText slot="TAIL" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the scrunchie down around [npc.her] [npc.tail+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] резинку вниз по [npc.her] [npc.tail+].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the scrunchie down around [npc2.namePos] [npc2.tail+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] резинку вниз по [npc2.namePos] [npc2.tail+].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(push)] the scrunchie down around [npc2.namePos] [npc2.tail+].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(push)] резинку вниз по [npc2.namePos] [npc2.tail+].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the scrunchie off from around [npc.her] wrist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] резинку с запястья [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the scrunchie off from around [npc2.NamePos] wrist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] резинку с запястья [npc2.NamePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(tug)] the scrunchie off from around [npc2.NamePos] wrist.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(tug)] резинку с запястья [npc2.NamePos].]]>
 		</otherRough>
 	</displacementText>
 	<replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the scrunchie down around [npc.her] wrist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] резинку вниз по запястью [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the scrunchie down around [npc2.namePos] wrist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] резинку вниз по запястью [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(push)] the scrunchie down around [npc2.namePos] wrist.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(push)] резинку вниз по запястью [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 	

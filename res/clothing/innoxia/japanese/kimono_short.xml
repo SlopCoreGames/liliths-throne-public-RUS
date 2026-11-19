@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>3000</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[short kimono]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[short kimonos]]></namePlural>
-		<description><![CDATA[Primarily worn by the reclusive youko, these robes are identical to their traditional Japanese namesake. This particular kimono has a shortened skirt, leaving the wearer's legs mostly exposed.]]></description>
+		<name><![CDATA[короткое кимоно]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[короткие кимоно]]></namePlural>
+		<description><![CDATA[В основном их носят затворнически живущие ёкаи; эти одеяния практически идентичны своим традиционным японским прототипам. У этого конкретного кимоно укороченная юбка, из-за чего ноги обладательницы остаются почти полностью открытыми.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot>
@@ -21,12 +21,12 @@
 		
 		<stickers>
 			<category id="kimono_pattern" priority="1">
-				<categoryName><![CDATA[Pattern]]></categoryName>
+				<categoryName><![CDATA[Узор]]></categoryName>
 				<sticker id="flowers" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Flowers]]></stickerName>
 					<namePrefix/>
-					<namePostfix priority="1"><![CDATA[(flowers)]]></namePostfix>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ <i>This particular kimono has a floral pattern.</i>]]></descriptionModification>
+					<namePostfix priority="1"><![CDATA[(цветы)]]></namePostfix>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ <i>На этом кимоно изображен цветочный узор.</i>]]></descriptionModification>
 					<imageName zLayer="1" slot="TORSO_UNDER">kimono_short_flowers.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -36,8 +36,8 @@
 				<sticker id="blossom" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Blossom]]></stickerName>
 					<namePrefix/>
-					<namePostfix priority="1"><![CDATA[(blossom)]]></namePostfix>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ <i>This particular kimono has a cherry blossom pattern.</i>]]></descriptionModification>
+					<namePostfix priority="1"><![CDATA[(цветение)]]></namePostfix>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[ <i>На этом кимоно изображен узор из цветущей сакуры.</i>]]></descriptionModification>
 					<imageName zLayer="1" slot="TORSO_UNDER">kimono_short_blossom.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -128,25 +128,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] on the kimono and [npc.verb(spend)] a moment securely tying it up.
+			[npc.Name] [npc.verb(pull)] кимоно и [npc.verb(spend)] мгновение, чтобы надежно его завязать.
 		]]></self>
 		<other> <![CDATA[
-			[npc.Name] [npc.verb(pull)] on the kimono onto [npc2.name] and [npc.verb(spend)] a moment securely tying it up.
+			[npc.Name] [npc.verb(pull)] кимоно на [npc2.name] и [npc.verb(spend)] мгновение, чтобы надежно его завязать.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.name] into the kimono and [npc.verb(spend)] a moment securely tying it up.
+			[npc.Name] грубо [npc.verb(force)] [npc2.name] в кимоно и [npc.verb(spend)] мгновение, чтобы надежно его завязать.
 		]]></otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(untie)] [npc.her] kimono and [npc.verb(slip)] out of it.
+			[npc.Name] [npc.verb(untie)] кимоно [npc.her] и [npc.verb(slip)] из него.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(untie)] [npc2.namePos] kimono and [npc.verb(pull)] it off of [npc2.herHim].
+			[npc.Name] [npc.verb(untie)] кимоно [npc2.namePos] и [npc.verb(pull)] его с [npc2.herHim].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(untie)] [npc2.namePos] kimono and [npc.verb(yank)] it off of [npc2.herHim].
+			[npc.Name] грубо [npc.verb(untie)] кимоно [npc2.namePos] и [npc.verb(yank)] его с [npc2.herHim].
 		]]></otherRough>
 	</displacementText>
 	

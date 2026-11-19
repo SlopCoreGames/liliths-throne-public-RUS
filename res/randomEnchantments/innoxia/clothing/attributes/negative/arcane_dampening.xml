@@ -8,7 +8,7 @@
 	]]></spawnWeighting>
 	
 	<namePrefix/>
-	<namePostfix><![CDATA[of arcane dampening]]></namePostfix>
+	<namePostfix><![CDATA[подавления аркана]]></namePostfix>
 	<nameOverride/>
 	
 	<conditionalPreParsing/>

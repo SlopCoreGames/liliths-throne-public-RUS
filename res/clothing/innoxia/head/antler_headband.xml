@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>100</value>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[antler headband]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[antler headbands]]></namePlural>
-		<description><![CDATA[A felt-covered headband with a pair of novelty plush reindeer antlers attached to the top.]]></description>
+		<name><![CDATA[ободок с оленьими рогами]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ободки с оленьими рогами]]></namePlural>
+		<description><![CDATA[Обтянутый фетром ободок, к которому сверху прикреплена пара забавных плюшевых оленьих рогов.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -48,25 +48,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(place)] the antler headband onto [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] ободок с оленьими рогами на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(place)] the antler headband onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] ободок с оленьими рогами на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the antler headband onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] ободок с оленьими рогами на голову [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] antler headband.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с головы [npc.her] ободок с оленьими рогами.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] antler headband.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с головы [npc2.namePos] ободок с оленьими рогами.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] antler headband.]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] с головы [npc2.namePos] ободок с оленьими рогами.]]>
     </otherRough>
   </displacementText>
   

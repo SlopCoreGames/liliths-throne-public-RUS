@@ -5,14 +5,14 @@
 	
 	<htmlContent tag="TRANSACTION_START"><![CDATA[
 	<p>
-		[callie.speech(Let me know which doughnut you like the look of,)] Callie says as she gestures to the doughnuts behind the counter's glass.
+		[callie.speech(Выбирай любой пончик, который тебе приглянется,)] — говорит Кэлли, указывая на витрину с пончиками за прилавком.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="TRANSACTION_COMPLETE"><![CDATA[
 	<p>
-		Taking your flames in exchange for the [#SPECIAL_PARSE_0], Callie says, [callie.speech(Thanks for your business, [pc.name]. I hope that you enjoy your doughnut.)]
+		Забирая твои огни в обмен на [#SPECIAL_PARSE_0], Кэлли говорит: [callie.speech(Спасибо за покупку, [pc.name]. Надеюсь, пончик тебе понравится!)]
 	</p>
 	]]>
 	</htmlContent>
@@ -25,30 +25,30 @@
 		#ENDIF
 		#IF(flags.getSavedLong('nnxx_callie_total_donated')>=100000)
 			#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_3))
-				[style.italicsExcellent(You've donated so much that Callie is giving you a 20% discount, stocking more doughnuts, and providing free sex!)]
+				[style.italicsExcellent(Ты пожертвовал так много, что Кэлли дает тебе 20% скидку, закупает больше пончиков и предлагает бесплатный секс!)]
 			#ELSE
-				[style.italicsExcellent(You've donated so much that, starting from tomorrow, Callie will give you a 20% discount, stock more doughnuts, and provide free sex!)]
+				[style.italicsExcellent(Ты пожертвовал так много, что, начиная с завтрашнего дня, Кэлли будет давать тебе 20% скидку, закупать больше пончиков и предлагать бесплатный секс!)]
 			#ENDIF
-			<br/>[style.italics(This is the maximum donation level.)]
+			<br/>[style.italics(Это максимальный уровень пожертвований.)]
 		#ELSEIF(flags.getSavedLong('nnxx_callie_total_donated')>=50000)
 			#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_2))
-				[style.italicsGood(You've donated enough for Callie to give you a 20% discount and stock more doughnuts!)]
-				<br/>[style.italics(The next donation level is 100,000 flames...)]
+				[style.italicsGood(Ты пожертвовал достаточно, чтобы Кэлли дала тебе 20% скидку и стала закупать больше пончиков!)]
+				<br/>[style.italics(Следующий уровень пожертвований — 100 000 огней...)]
 			#ELSE
-				[style.italicsGood(You've donated enough for Callie to give you a 20% discount and stock more doughnuts, starting from tomorrow!)]
-				<br/>[style.italics(The next donation level will be 100,000 flames...)]
+				[style.italicsGood(Ты пожертвовал достаточно, чтобы, начиная с завтрашнего дня, Кэлли давала тебе 20% скидку и закупала больше пончиков!)]
+				<br/>[style.italics(Следующий уровень пожертвований составит 100 000 огней...)]
 			#ENDIF
 		#ELSEIF(flags.getSavedLong('nnxx_callie_total_donated')>=3000)
 			#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_1))
-				[style.italicsMinorGood(You've donated enough for Callie to start stocking more doughnuts!)]
-				<br/>[style.italics(The next donation level is 50,000 flames...)]
+				[style.italicsMinorGood(Ты пожертвовал достаточно, чтобы Кэлли начала закупать больше пончиков!)]
+				<br/>[style.italics(Следующий уровень пожертвований — 50 000 огней...)]
 			#ELSE
-				[style.italicsMinorGood(You've donated enough for Callie to start stocking more doughnuts by tomorrow!)]
-				<br/>[style.italics(The next donation level will be 50,000 flames...)]
+				[style.italicsMinorGood(Ты пожертвовал достаточно, чтобы к завтрашнему дню Кэлли начала закупать больше пончиков!)]
+				<br/>[style.italics(Следующий уровень пожертвований составит 50 000 огней...)]
 			#ENDIF
 		#ELSE
-			[style.italics(You haven't yet donated enough for Callie to make any changes to her store...)]
-			<br/>[style.italics(The next donation level is 3,000 flames...)]
+			[style.italics(Ты еще не сделал достаточно пожертвований, чтобы Кэлли изменила свой магазин...)]
+			<br/>[style.italics(Следующий уровень пожертвований — 3000 огней...)]
 		#ENDIF
 	</p>
 	]]>
@@ -60,48 +60,48 @@
 	<htmlContent tag="EXTERIOR"><![CDATA[
 	#IF(!flags.hasFlag(FLAG_nnxx_callie_upgrade_2))
 		<p>
-			Situated on the intersection of the road and a nearby alleyway stands what appears at first to be a plain looking boutique, but upon closer inspection it bears several signs of being in a state of disrepair. Pausing to take note of the peeling paintwork and the door's rusty hinges, you wonder what kind of owner would care so little for their business. Glancing through the nearest window, which is cracked and adjacent to one that's been completely broken and boarded up, you see a bored-looking horse-girl wearily polishing her nails behind the store's counter.
+			На пересечении дороги и близлежащего переулка стоит здание, которое на первый взгляд кажется обычным бутиком, но при ближайшем рассмотрении заметно, что оно пребывает в запустении. Заметив облупившуюся краску и ржавые петли на двери, ты задаешься вопросом: что за хозяин может так мало заботиться о своем деле? Заглянув в ближайшее окно — треснувшее и соседствующее с тем, что полностью разбито и заколочено досками, — ты видишь за прилавком скучающую девочку-лошадь, которая вяло подпиливает ногти.
 		</p>
 		<p>
-			Above the door shyly stands an old wooden sign with 'The Creamy Bakey' written on it in the most simple way possible. Resting against the window beside the front door is a sign which indicates that the shop is open from 
+			Над дверью робко висит старая деревянная вывеска с максимально простой надписью: «Сливочная пекарня». У окна рядом с входной дверью стоит табличка, указывающая часы работы:
 			#IF(game.isWorkTime())
 				[style.colourMinorGood([unit.time(9)] to [unit.time(15)])]
 			#ELSE
 				[style.colourMinorBad([unit.time(9)] to [unit.time(15)])]
 			#ENDIF
-			 from
+			 с
 			#IF(game.getDayOfWeek()==DOW_SUNDAY)
-				 [style.colourMinorBad(Monday to Saturday)].
+				 [style.colourMinorBad(понедельник — суббота)].
 			#ELSE
-				 [style.colourMinorGood(Monday to Saturday)].
+				 [style.colourMinorGood(понедельник — суббота)].
 			#ENDIF
 			#IF(game.getDayOfWeek()==DOW_SUNDAY || !game.isWorkTime())
-				 As the store is currently [style.colourBad(closed)], you'll have to come back later if you wanted to go inside...
+				 Поскольку магазин сейчас [style.colourBad(закрыт)], тебе придется вернуться позже, если ты хочешь зайти внутрь...
 			#ELSE
-				 As the store is currently [style.colourGood(open)], you wonder if you should head inside...
+				 Поскольку магазин сейчас [style.colourGood(открыт)], ты раздумываешь, стоит ли зайти внутрь...
 			#ENDIF
 		</p>
 	#ELSE
 		 <p>
-			Situated on the intersection of the road and a nearby alleyway stands Callie's bakery. Far from how it was the first time you saw it, this once-shabby establishment now looks like a proper shop. In place of the old wooden one, a hand-crafted oak sign has been  painted in candy pink to proudly bear the name 'The Creamy Bakey'. The door frame has been replaced and sculpted to look like candy cane, while the door itself has been painted so as to look like it's made of marzipan. Through the clean new windows, you can see that the interior has been completely refurbished; new tables and chairs offer comfortable places for the establishment's modest clientèle to sit and eat, while the bakery's glass counter holds a variety of bakery and sweets.  
+			На пересечении дороги и близлежащего переулка расположилась пекарня Кэлли. Она уже совсем не та, какой ты видел её в первый раз: это когда-то невзрачное заведение теперь выглядит как настоящая лавка. Вместо старой деревянной вывески теперь красуется искусно сделанная дубовая табличка, выкрашенная в нежно-розовый цвет, с гордым названием «Сливочная выпечка». Дверной проем заменили и вырезали в форме леденцовой трости, а саму дверь раскрасили так, будто она сделана из марципана. Сквозь чистые новые окна видно, что интерьер полностью обновили: новые столы и стулья предлагают уютные места для скромных посетителей, а на стеклянной витрине пекарни выставлено изобилие выпечки и сладостей. 
 		 </p>
 		 <p>
-			Resting against the window beside the front door is a sign which indicates that the shop is open from 
+			У окна рядом с входной дверью висит табличка, указывающая, что магазин открыт с 
 			#IF(game.isWorkTime())
 				[style.colourMinorGood([unit.time(7)] to [unit.time(17)])]
 			#ELSE
 				[style.colourMinorBad([unit.time(7)] to [unit.time(17)])]
 			#ENDIF
-			 from
+			 с
 			#IF(game.getDayOfWeek()==DOW_SUNDAY)
-				 [style.colourMinorBad(Monday to Saturday)].
+				 [style.colourMinorBad(понедельник — суббота)].
 			#ELSE
-				 [style.colourMinorGood(Monday to Saturday)].
+				 [style.colourMinorGood(понедельник — суббота)].
 			#ENDIF
 			#IF(game.getDayOfWeek()==DOW_SUNDAY || !game.isWorkTime())
-				 As the store is currently [style.colourBad(closed)], you'll have to come back later if you wanted to go inside...
+				 Поскольку магазин сейчас [style.colourBad(закрыт)], тебе придется вернуться позже, если ты хочешь зайти внутрь...
 			#ELSE
-				 As the store is currently [style.colourGood(open)], you wonder if you should head inside...
+				 Поскольку магазин сейчас [style.colourGood(открыт)], ты раздумываешь, стоит ли зайти внутрь...
 			#ENDIF
 		</p>
 	#ENDIF
@@ -109,146 +109,148 @@
 
 	<htmlContent tag="ENTRY_FIRST_TIME"><![CDATA[
 	<p>
-		Deciding to pay a visit to 'The Creamy Bakey', you push open the shop's front door and [pc.step] inside. Looking around, you see that the interior is decorated with fake candies and baked goods of every sort. On the counter before you stands a scented candle giving off an aroma of vanilla which tenderly mixes with the scent of a dozen doughnuts that are displayed behind the counter's glass top. Sitting right next to this candle is a tip jar which looks to be as empty as the shop itself.
+		Решив заглянуть в «Сливочную выпечку», ты толкаешь входную дверь и [pc.step] внутрь. Оглядевшись, ты замечаешь, что интерьер украшен бутафорскими сладостями и всяческой выпечкой. На прилавке перед тобой стоит ароматическая свеча с запахом ванили, который нежно смешивается с ароматом дюжины пончиков, выставленных за стеклом витрины. Рядом со свечой стоит баночка для чаевых, которая кажется такой же пустой, как и сам магазин.
 	</p>
 	<p>
-		[callie.speech(Hello and welcome to 'The Creamy Bakey',)] the horse-girl behind the counter calls out as she sees you enter, before scoffing, [callie.speech(I'm Callie, the owner of this shop, and as you can see, this place is bustling with people so be careful not to get lost in the crowd.)]
+		[callie.speech(Привет и добро пожаловать в «Сливочную пекарню»!)] — окликает тебя девчонка-лошадь за прилавком, завидев твой вход, а затем фыркает: [callie.speech(Я Кэлли, хозяйка этого заведения. И, как видишь, тут полно народу, так что смотри не потеряйся в толпе.)]
 	</p>
 	<p>
-		With that, the horse-girl turns her attention back to her nail polishing, allowing you to pause and take a good look at her. Although mostly human in appearance, you can see that Callie has a pair of horse-ears and a horse-tail, which are as pitch-black as her long, wavy hair. The dark-red, short-sleeved shirt which she's wearing has had its top few buttons left undone, granting you a plunging view of her light-skinned, [callie.cupSize]-cup bust. As the counter is partially open on the bottom, you're able to see that she's wearing a pair of simple, off-white jeans, and after moving your gaze up from her pair of horse-like hoofs, you see that there's quite the bulge in her crotch. Noticing that you haven't left after her introduction, the horse-girl looks at you once again, before sighing, [callie.speech(Sorry about that; I tend to become sarcastic when I'm bored. So what will it be champ, want a doughnut? That's all I have to be honest.)]
+		С этими словами девчонка-лошадь возвращается к покраске ногтей, позволяя тебе замереть и хорошенько её рассмотреть. Хотя внешне она почти человек, ты замечаешь у Кэлли лошадиные ушки и хвост, такие же иссиня-черные, как её длинные волнистые волосы. На ней темно-красная футболка с коротким рукавом, верхние пуговицы которой расстегнуты, открывая твоему взору глубокое декольте с её светлой [callie.cupSize]-й грудью. Поскольку нижняя часть прилавка частично открыта, ты видишь, что на ней простые молочно-белые джинсы, а подняв взгляд от её лошадиных копыт, ты замечаешь весьма заметный бугорок в паху. Заметив, что после её представления ты так и не ушел, девчонка-лошадь снова смотрит на тебя и, вздохнув, произносит: [callie.speech(Ой, прости; я становлюсь саркастичной, когда мне скучно. Ну так что, чемпион, хочешь пончик? Честно говоря, это всё, что у меня есть.)]
 	</p>
 	<p>
-		Clearly feeling a little self-conscious about the fact that her bakery only sells doughnuts, Callie doesn't wait for you to respond and quickly goes on to explain, [callie.speech(I barely make any money at all from this dump, and so I only have enough to make doughnuts. That's what sells the best out of what I've tried. So, do you want to try one...)]
+		Кэлли явно чувствует себя немного неловко из-за того, что в её пекарне продаются одни лишь пончики, поэтому она не ждёт твоего ответа и поспешно объясняет: [callie.speech(В этой дыре я почти ничего не зарабатываю, так что денег хватает только на пончики. Из всего, что я пробовала, они продаются лучше всего. Так что... хочешь попробовать один?)]
 	</p>
 	<p>
-		Callie allows her question to trail off in a manner to suggest that she's asking for your name. Picking up on the hint, you give the horse-girl your name, after which she repeats her question by asking, [callie.speech(So, do you want to buy a doughnut, [pc.name]?)]
+		Кэлли оставляет свой вопрос повиснуть в воздухе, намекая, что хочет узнать твоё имя. Поняв намек, ты называешься конюшиномулочке, после чего она повторяет свой вопрос: [callie.speech(Так что, [pc.name], хочешь купить пончик?)]
 	</p>
 	]]></htmlContent>
 
 	<htmlContent tag="ENTRY_REPEAT"><![CDATA[
 	#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_3))
 		<p>
-			Deciding to pay a visit to 'The Creamy Bakey', you push open the shop's front door and [pc.step] inside. Looking around, you see that the interior looks like a real paradise for any sweet lover; a pink carpet leads you to the various shelves containing dozens of various types of sweets, while the glass-topped counter holds a huge variety of pastries, including most prominently several types of doughnuts. The entire store is brightly lit via a chandelier that's made to look like a wedding cake, while the whole room is enveloped with a soothing aroma of freshly baked bread.
+			Решив заглянуть в «Сливочную пекарню», ты толкаешь входную дверь и [pc.step] внутрь. Оглядевшись, ты понимаешь, что интерьер — настоящий рай для сладкоежки: розовый ковёр ведет тебя мимо стеллажей с десятками видов сладостей, а на прилавке под стеклом красуется огромное разнообразие выпечки, среди которой особенно выделяются несколько видов пончиков. Весь магазин ярко освещен люстрой, сделанной в виде свадебного торта, а комнату наполняет успокаивающий аромат свежеиспеченного хлеба.
 		</p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_reaction_pending))
 			<p>
-				Upon seeing you enter her shop, Callie immediately rushes out from behind her counter to give you a warm hug, exclaiming as she does so, [callie.speech(Oh, [pc.name]! You can't even start to comprehend how much all of this means to me! It's all thanks to you; I'll never be able to thank you enough or to repay your kindness!)]
+				Завидев тебя на пороге, Кэлли тут же выбегает из-за прилавка, чтобы крепко тебя обнять, восклицая при этом: [callie.speech(О, [pc.name]! Ты даже представить не можешь, как много всё это для меня значит! Это всё благодаря тебе; я никогда не смогу отблагодарить тебя в полной мере или отплатить за твою доброту!)]
 			</p>
 			<p>
 				#IF(callie.isAttractedTo(pc))
-					Squeezing you into her [callie.cupSize]-cup breasts, the horse-girl slowly slides a hand around to grope your [pc.ass] and teases, [callie.speech(If you want to fuck again, then it'll be totally free of any donation... Just say the word...)]
+					Сжимая тебя в своей [callie.cupSize]-груди, лошадка медленно обхватывает рукой твой [pc.ass] и дразнит: [callie.speech(Если хочешь трахаться снова, то это будет совершенно бесплатно... Только скажи слово...)]
 				#ELSE
-					After giving you a big hug, the horse-girl steps back and says, [callie.speech(If you transform back to being feminine, then I'd be more than happy to fuck you again, and this time there'll be no need for any donation!)]
+					Крепко обняв тебя, лошадка отступает назад и говорит: [callie.speech(Если ты снова станешь женственной, я буду не прочь трахнуть тебя еще раз, и на этот раз никаких пожертвований не потребуется!)]
 				#ENDIF
 			</p>
 			<p>
-				Smiling at Callie as she then skips back to her side of the counter, you wonder what to ask of her...
+				Улыбаясь Калли, которая вприпрыжку возвращается на свою сторону прилавка, ты раздумываешь, о чем бы ее попросить...
 			</p>
 		#ELSE
 			#IF(callie.isAttractedTo(pc))
 				<p>
-					[callie.speech(If it isn't my favourite customer! Hello, [pc.name], are you here to buy something?)] Callie calls out to you as she sees you enter her shop.
+					[callie.speech(Кто бы мог подумать — мой любимый покупатель! Привет, [pc.name], пришел что-нибудь купить?)] — окликает тебя Калли, завидев твое появление в лавке.
 					#IF(flags.hasFlag(FLAG_nnxx_callie_daily_fucked))
-						 Before you can respond, she gives you a wink and teases, [callie.speech(I'm still tired from the fun we had earlier, but if you come back tomorrow then I'd be happy to give you a taste of my doughnut or baguette again...)]
+						 Не успеваешь ты ответить, как она подмигивает тебе и дразнит: [callie.speech(Я всё еще устала после наших недавних развлечений, но если придешь завтра, я с радостью снова дам тебе попробовать мой пончик или багет...)]
 					#ELSE
-						 Before you can respond, she drops one of her hands down to start stroking the bulge between her legs, and after giving you a wink, she teases, [callie.speech(Or perhaps you'd like a taste of my doughnut or baguette again? After all you've done, there's no need for any donation...)]
+						 Не успеваешь ты ответить, как она опускает одну руку, начиная поглаживать бугорок между ног, и, подмигнув, дразнит: [callie.speech(А может, ты хочешь снова попробовать мой пончик или багет? После всего, что ты сделал, пожертвования не требуются...)]
 					#ENDIF
 				</p>
 			#ELSE
 				<p>
-					Upon seeing you enter her shop, Callie gives you a warm smile and happily calls out, [callie.speech(If it isn't my favourite customer! Hello, [pc.name], what can I do for you today?)]
+					Завидев тебя в лавке, Калли тепло улыбается и радостно окликает: [callie.speech(Кто бы мог подумать — мой любимый покупатель! Привет, [pc.name], чем могу помочь сегодня?)]
 				</p>
 			#ENDIF
 			<p>
-				Smiling at Callie as she leans forwards over her counter, you wonder what to ask of her...
+				Улыбаясь Калли, которая наклоняется над прилавком, ты раздумываешь, о чем бы ее попросить...
 			</p>
 		#ENDIF
 	#ELSEIF(flags.hasFlag(FLAG_nnxx_callie_upgrade_2))
 		<p>
-			Deciding to pay a visit to 'The Creamy Bakey', you push open the shop's front door and [pc.step] inside. Looking around, you see that the interior looks like a real paradise for any sweet lover; a pink carpet leads you to the various shelves containing dozens of various types of sweets, while the glass-topped counter holds a huge variety of pastries, including most prominently several types of doughnuts. The entire store is brightly lit via a chandelier that's made to look like a wedding cake, while the whole room is enveloped with a soothing aroma of freshly baked bread.
+			Решив заглянуть в «Сливочную пекарню», ты толкаешь входную дверь и [pc.step] внутрь. Оглядевшись, ты понимаешь, что интерьер — настоящий рай для сладкоежки: розовый ковёр ведет тебя мимо стеллажей с десятками видов сладостей, а на прилавке под стеклом красуется огромное разнообразие выпечки, среди которой особенно выделяются несколько видов пончиков. Весь магазин ярко освещен люстрой, сделанной в виде свадебного торта, а комнату наполняет успокаивающий аромат свежеиспеченного хлеба.
 		</p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_reaction_pending))
 			<p>
-				Upon seeing you enter her shop, Callie immediately rushes out from behind her counter to give you a warm hug, exclaiming as she does so, [callie.speech([pc.Name]! Look! Thanks to you, I was finally able to get my shop redecorated to make it look like how I always wanted it to! As thanks, I'll give you a 20% discount! Oh, and I've decided to open my shop for longer, so I'll be open from seven to five from now on.)]
+				Увидев, что ты входишь в лавку, Кэлли тут же выбегает из-за прилавка, чтобы крепко тебя обнять, и восклицает: [callie.speech([pc.Name]! Смотри! Благодаря тебе я наконец-то смогла переделать магазин так, как всегда мечтала! В знак благодарности я сделаю тебе скидку 20%! О, и еще я решила работать подольше, так что теперь лавка открыта с семи до пяти.)]
 			</p>
 			<p>
 				#IF(callie.isAttractedTo(pc))
-					Squeezing you into her [callie.cupSize]-cup breasts, the horse-girl slowly slides a hand around to grope your [pc.ass], before grinding the bulge between her legs into you and teasing, [callie.speech(Now then, you'd like another taste of my 'doughnut' or 'baguette', wouldn't you?)]
+					Прижимая тебя к своей [callie.cupSize]-размерной груди, кобылка медленно обводит рукой твой [pc.ass], а затем вжимается в тебя бугорком между своих ног и дразнит: [callie.speech(Ну что, ты ведь хочешь еще раз попробовать мою «пончик» или «багет», а?)]
 				#ELSE
-					After giving you a big hug, the horse-girl steps back and says, [callie.speech(If you transform back to being feminine, then I'd be more than happy to give you another taste of my 'doughnut' or 'baguette'...)]
+					Крепко обняв тебя, кобылка отстраняется и говорит: [callie.speech(Если ты снова станешь женственной, я с огромным удовольствием угощу тебя еще раз моим «пончиком» или «багетом»...)]
 				#ENDIF
 			</p>
 			<p>
-				Smiling at Callie as she then skips back to her side of the counter, you wonder what to ask of her...
+				Улыбаясь Калли, которая вприпрыжку возвращается на свою сторону прилавка, ты раздумываешь, о чем бы ее попросить...
 			</p>
 		#ELSE
 			#IF(callie.isAttractedTo(pc))
 				<p>
-					[callie.speech(If it isn't my favourite customer! Hello, [pc.name], are you here to buy something?)] Callie calls out to you as she sees you enter her shop.
+					[callie.speech(Кто бы мог подумать — мой любимый покупатель! Привет, [pc.name], пришел что-нибудь купить?)] — окликает тебя Калли, завидев твое появление в лавке.
 					#IF(flags.hasFlag(FLAG_nnxx_callie_daily_fucked))
-						 Before you can respond, she gives you a wink and teases, [callie.speech(I'm still tired from the 'donation' you gave to me earlier, but if you come back tomorrow then I'd be happy to give you a taste of my doughnut or baguette again...)]
+						 Не дожидаясь твоего ответа, она подмигивает и дразнит: [callie.speech(Я всё еще устала после того «пожертвования», которое ты сделал мне раньше, но если придешь завтра, я с радостью снова дам тебе попробовать мой пончик или багет...)]
 					#ELSE
-						 Before you can respond, she drops one of her hands down to start stroking the bulge between her legs, and after giving you a wink, she teases, [callie.speech(Or perhaps you'd like to make another donation?)]
+						 Не дожидаясь твоего ответа, она опускает одну руку, чтобы начать ласкать бугорок между своих ног, и, подмигнув, дразнит: [callie.speech(А может, ты хочешь сделать еще одно пожертвование?)]
 					#ENDIF
 				</p>
 			#ELSE
 				<p>
-					Upon seeing you enter her shop, Callie gives you a warm smile and happily calls out, [callie.speech(If it isn't my favourite customer! Hello, [pc.name], what can I do for you today?)]
+					Завидев тебя в лавке, Калли тепло улыбается и радостно окликает: [callie.speech(Кто бы мог подумать — мой любимый покупатель! Привет, [pc.name], чем могу помочь сегодня?)]
 				</p>
 			#ENDIF
 			<p>
-				Smiling at Callie as she leans forwards over her counter, you wonder what to ask of her...
+				Улыбаясь Калли, которая наклоняется над прилавком, ты раздумываешь, о чем бы ее попросить...
 			</p>
 		#ENDIF
 	#ELSEIF(flags.hasFlag(FLAG_nnxx_callie_upgrade_1))
 		<p>
-			Deciding to pay another visit to 'The Creamy Bakey', you push open the shop's front door and [pc.step] inside. Looking around, you see that the interior of the shop is almost the same as it was the first time you were here, with the most noticeable change being that everything looks to have been tidied up and cleaned. Callie seems to have been encouraged from your various donations to start to take care of her business, and you see that apart from giving everything a good clean, she's made a few adjustments to make the place more presentable, including decorating the room with a few extra scented candles.
+			Решив нанести еще один визит в «Сливочную пекарню», ты толкаешь входную дверь и [pc.step] внутрь. Оглядевшись, ты замечаешь, что интерьер почти не изменился с твоего первого визита, за исключением того, что теперь здесь царит идеальный порядок. Твои щедрые пожертвования, похоже, придали Кэлли сил, и теперь она всерьез взялась за свое дело: помимо тщательной уборки, она внесла несколько изменений, чтобы место выглядело презентабельнее, — например, украсила комнату ароматными свечами.
 		</p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_upgrade_reaction_pending))
 			<p>
-				Upon seeing you enter her shop, Callie smiles and calls out a warm welcome, [callie.speech(Greetings, [pc.name]! I hope you like the few adjustments I made! Your generous donations have given me the kick I needed to start to turn this shack into a proper establishment! I've even started to stock iced doughnuts. Would you like to buy one?)]
+				Завидев тебя, Кэлли расплывается в улыбке и тепло приветствует тебя: [callie.speech(Приветствую, [pc.name]! Надеюсь, тебе понравятся небольшие изменения! Твои щедрые пожертвования дали мне тот самый толчок, который был нужен, чтобы превратить эту лачугу в приличное заведение! Я даже начала завозить глазированные пончики. Хочешь купить один?)]
 			</p>
 			#IF(callie.isAttractedTo(pc))
 				<p>
-					Before you can respond, the horse-girl drops one of her hands down to start stroking the bulge between her legs, and after giving you a wink, she teases, [callie.speech(Or perhaps you'd like to make another donation?)]
+					Прежде чем ты успеваешь ответить, коняшка опускает одну руку и начинает поглаживать бугорок между своих ног. Подмигнув тебе, она дразнит: [callie.speech(А может, ты хочешь сделать еще одно пожертвование?)]
 				</p>
 			#ELSE
 				<p>
-					Smiling at Callie as she leans forwards over her counter, you wonder what to ask of her...
+					Улыбаясь Кэлли, которая подалась вперед через прилавок, ты раздумываешь, чего бы ей попросить...
 				</p>
 			#ENDIF
 		#ELSE
 			#IF(callie.isAttractedTo(pc))
 				<p>
-					[callie.speech(Greetings, [pc.name]! Would you like to buy something?)] Callie calls out to you as she sees you enter her shop.
-					#IF(flags.hasFlag(FLAG_nnxx_callie_daily_fucked))
-						 Before you can respond, she gives you a wink and teases, [callie.speech(I'm still tired from the 'donation' you gave to me earlier, but if you come back tomorrow then I'd be happy to give you a taste of my doughnut or baguette again...)]
+					[callie.speech(Приветствую, [pc.name]! Желаешь что-нибудь купить?)] — окликает тебя Кэлли, завидев твое появление в лавке.
+				<p>					#IF(flags.hasFlag(FLAG_nnxx_callie_daily_fucked))
+						 Не дожидаясь твоего ответа, она подмигивает и дразнит: [callie.speech(Я всё еще устала после того «пожертвования», которое ты сделал мне раньше, но если придешь завтра, я с радостью снова дам тебе попробовать мой пончик или багет...)]
 					#ELSE
-						 Before you can respond, she drops one of her hands down to start stroking the bulge between her legs, and after giving you a wink, she teases, [callie.speech(Or perhaps you'd like to make another donation?)]
+						 Не дожидаясь твоего ответа, она опускает одну руку, чтобы начать ласкать бугорок между своих ног, и, подмигнув, дразнит: [callie.speech(А может, ты хочешь сделать еще одно пожертвование?)]
 					#ENDIF
 				</p>
 			#ELSE
 				<p>
-					Upon seeing you enter her shop, Callie smiles and calls out a warm welcome, [callie.speech(Greetings, [pc.name]! Would you like to buy something?)]
+				
+Увидев, что ты входишь в лавку, Кэлли расплывается в улыбке и тепло приветствует тебя: [callie.speech(Приветствую, [pc.name]! Желаешь что-нибудь купить?)]
 				</p>
 			#ENDIF
 			<p>
-				Smiling at Callie as she leans forwards over her counter, you wonder what to ask of her...
+				Улыбаясь Калли, которая наклоняется над прилавком, ты раздумываешь, о чем бы ее попросить...
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Deciding to pay another visit to 'The Creamy Bakey', you push open the shop's front door and [pc.step] inside. Looking around, you see that the interior is decorated with fake candies and baked goods of every sort. On the counter before you stands a scented candle giving off an aroma of vanilla which tenderly mixes with the scent of a dozen doughnuts that are displayed behind the counter's glass top. Sitting right next to this candle is a tip jar which looks to be as empty as the shop itself.
+			Решив снова заглянуть в «Сливочную пекарню», ты толкаешь входную дверь и [pc.step] внутрь. Оглядевшись, ты замечаешь, что интерьер украшен бутафорскими сладостями и выпечкой на любой вкус. На прилавке перед тобой стоит ароматическая свеча с запахом ванили, который нежно смешивается с ароматом дюжины пончиков, выставленных за стеклом витрины. Рядом со свечой стоит баночка для чаевых, которая кажется такой же пустой, как и сама лавка.
 		</p>
 		<p>
-			Upon glancing up and seeing you enter, Callie lifts her head and offers a greeting, [callie.speech(Oh, [pc.name], it's you again. Welcome, do you want to buy something, or did you come to chat?)]
+		
+Заметив твое появление, Кэлли поднимает голову и приветствует тебя: [callie.speech(О, [pc.name], это снова ты. Добро пожаловать! Хочешь что-нибудь купить или просто пришел поболтать?)]
 		</p>
 	#ENDIF
 	]]></htmlContent>
 
 	<htmlContent tag="COUNTER"><![CDATA[
 	<p>
-		[pc.Stepping] back over to where Callie is standing behind her counter, you pause to take a look down at what baked goods are on display. Looking up from polishing her nails, the horse-girl asks, [callie.speech(Can I get you anything, [pc.name]?)]
+		[pc.Stepping] Назад к прилавку, за которым стоит Кэлли, ты на мгновение замираешь, разглядывая выставленную выпечку. Отвлекаясь от полировки ногтей, кобылка спрашивает: [callie.speech(Тебе что-нибудь принести, [pc.name]?)]
 	</p>
 	]]></htmlContent>
 
@@ -258,21 +260,22 @@
 	<htmlContent tag="PROPOSE_ANILINGUS"><![CDATA[
 	#IF(callie.isAttractedTo(pc))
 		<p>
-			Smiling at Callie, you tell her that you'd like to taste another kind of doughnut, one that is unfortunately not displayed on the counter, to which she raises an eyebrow, smiles, and teases, [callie.speech(Oh do you now? Hmm, let me think...)]
+		
+Улыбаясь Кэлли, ты говоришь ей, что хотел бы попробовать другой вид пончика — тот, что, к сожалению, не выставлен на витрине. Она удивленно приподнимает бровь, улыбается и дразнит тебя: [callie.speech(О, неужели? Хм, дай-ка подумать...)]
 		</p>
 		<p>
 			#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
-				After playfully pausing for a few seconds, the horse-girl bites her lip and moans, [callie.speech(I suppose that if you ask nicely, I could let you have a taste of my doughnut.)]
-			#ELSE
-				After pausing for a few seconds, the horse-girl taps on the nearby tip jar with her finger, before stating, [callie.speech(I'm fine with giving you what you want, but given my current situation I can't afford to lose a potential customer walking in while you're at it. So, in exchange for, let's say... a thousand flames, I'll let you get a taste of my doughnut.)]
+				После игривой паузы в несколько секунд кобылка прикусывает губу и стонет: [callie.speech(Полагаю, если ты попросишь вежливо, я позволю тебе попробовать мой пончик.)]
+				#ELSE
+				Помолчав несколько секунд, девочка-лошадь постукивает пальцем по стоящей рядом банке для чаевых, а затем заявляет: [callie.speech(Я не против дать тебе то, что ты хочешь, но в моем нынешнем положении я не могу позволить себе потерять потенциального клиента, пока ты тут развлекаешься. Так что в обмен, скажем... на тысячу огней, я позволю тебе попробовать мой пончик.)]
 			#ENDIF
 		</p>
 	#ELSE
 		<p>
-			Moving towards Callie, you tell her that you'd like to taste another kind of doughnut, one that is unfortunately not displayed on the counter.
+			Направляясь к Колли, ты говоришь ей, что хотел бы попробовать другой вид пончика — тот, который, к сожалению, не выставлен на прилавке.
 		</p>
 		<p>
-			[callie.speech(Ehm, sorry but you're not really my type. I prefer my partners to be a bit more... Y'know, feminine...)] she apologises as she looks away, slightly embarrassed about the atmosphere that's now set in. Trying to change the subject, she quickly goes on to ask, [callie.speech(Anyway, would you like something else? Like, I don't know... A doughnut?)]
+			[callie.speech(Эм, прости, но ты не совсем в моем вкусе. Мне больше нравятся партнеры... ну, знаешь, более женственные...)] — извиняется она, отводя взгляд и слегка смущаясь из-за возникшей атмосферы. Пытаясь сменить тему, она поспешно спрашивает: [callie.speech(В любом случае, хочешь чего-нибудь еще? Ну, не знаю... Пончик?)]
 		</p>
 	#ENDIF
 	]]></htmlContent>
@@ -280,17 +283,17 @@
 	<htmlContent tag="ANILINGUS_START"><![CDATA[
 	<p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
-			Playing along with the horse-girl, you ask her if you could please get a taste of her delicious, puffy doughnut.
+			Подыгрывая девочке-лошади, ты спрашиваешь, можно ли тебе попробовать ее восхитительный, пышный пончик.
 		#ELSE
-			Not breaking eye contact with the horse-girl, you drop a thousand flames in the tip jar and start [pc.stepping] towards the back of the counter.
+			Не разрывая зрительного контакта с девочкой-лошадью, ты бросаешь тысячу огней в банку для чаевых и начинаешь [pc.stepping] к задней части прилавка.
 		#ENDIF
-		 With a big smirk on her face, Callie steps over to the store's front door, before locking it and flipping the sign to show that her establishment is closed. After dropping the blinds to give you some privacy, Callie returns to stand beside her counter, before pulling down her jeans and revealing both her huge horse-cock and puffy asshole. Turning around to present you with her exposed ass, she moans, [callie.speech(You've no idea how much I need this... You're not leaving until I'm satisfied, understand?)]
+		С широкой ухмылкой на лице Кэлли подходит к входной двери лавки, запирает её и переворачивает табличку, сообщая, что заведение закрыто. Опустив жалюзи, чтобы обеспечить вам уединение, Кэлли возвращается к прилавку, после чего стягивает джинсы, демонстрируя свой огромный лошадиный член и пышный зад. Развернувшись к вам спиной и выставляя напоказ свою открытую задницу, она стонет: [callie.speech(Ты даже не представляешь, как сильно мне это нужно... Ты не уйдешь, пока я не получишь своё, понял?)]
 	</p>
 	<p>
-		Agreeing to Callie's terms, you take your place and drop down behind the horse-girl. Reaching up to spread her ass cheeks, you find yourself staring directly at her ebony, horse-like asshole. Leaning in, you give her hot asshole a quick kiss, which causes her to bend forwards, grip the edge of her counter with both hands, and erotically moan, [callie.speech(That's it... ~Mmm!~ Now eat my doughnut...)]
+		Согласившись на условия Кэлли, ты занимаешь своё место и опускаешься позади полукровки. Протянув руки и раздвинув её ягодицы, ты оказываешься лицом к лицу с её иссиня-чёрным лошадиным анусом. Наклонившись, ты быстро целуешь её горячее отверстие, отчего она сгибается вперёд, вцепляясь обеими руками в край прилавка, и эротично стонет: [callie.speech(Вот так... ~Ммм!~ А теперь съешь мой пончик...)]
 	</p>
 	<p>
-		More than happy to do as she says, you press your [pc.lips+] against Callie's ass and slide your [pc.tongue+] over her puffy, doughnut-like asshole, giving it the love it deserves...
+		С радостью повинуясь её приказу, ты прижимаешь свой [pc.lips+] к заднице Кэлли и скользишь своим [pc.tongue+] по её пышному, похожему на пончик анусу, даря ему всю заслуженную ласку...
 	</p>
 	]]></htmlContent>
 
@@ -298,38 +301,40 @@
 	<p>
 		#IF(callie.isAttractedTo(pc))
 			#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
-				Having second thoughts about this, you tell Callie that you've changed your mind about getting a taste of her ass.
+				Засомневавшись, ты говоришь Кэлли, что передумал пробовать её задницу на вкус.
 			#ELSE
-				Finding the asking price of a thousand flames to be too steep, you tell Callie that you've changed your mind about paying for a taste of her ass.
+				Считая цену в тысячу Огней слишком высокой, ты говоришь Кэлли, что передумал платить за то, чтобы попробовать её задницу на вкус.
 			#ENDIF
-			 Upon hearing this, the horse-girl drops her head and sighs, [callie.speech(Well, I can't say I'm not disappointed. Alright then, do you want something else?)]
+			 Услышав это, лошадиная девчонка опускает голову и вздыхает: [callie.speech(Ну, не скажу, что я не разочарована. Ладно, тогда хочешь что-нибудь другое?)]
 		#ELSE
-			As Callie isn't attracted to you, there's no way that you're going to be able to have sex with her. Letting out a disappointed sigh, you wonder what to do next...
+			Поскольку Кэлли к тебе не испытывает влечения, шансов на секс с ней практически нет. Разочарованно вздохнув, ты задумываешься, что делать дальше...
 		#ENDIF
 	</p>
 	]]></htmlContent>
 
 	<htmlContent tag="AFTER_SEX_ANILINGUS"><![CDATA[
 	<p>
-		Having had her fun, and with her puffy doughnut now nicely glazed from your saliva, Callie sighs, [callie.speech(One more kiss, then I think you've had enough.)]
+		Насладившись, Кэлли вздыхает, глядя на свой пышный пончик, теперь аппетитно покрытый твоей слюной: [callie.speech(Еще один поцелуй, и, думаю, с тебя хватит.)]
 	</p>
 	<p>
-		As the horse-girl pushes her puffy, ebony doughnut back towards your face, you find yourself unable to resist doing as she says, and lean in to give it one last kiss...
+		Когда коняшка подталкивает свой пышный угольно-черный пончик обратно к твоему лицу, ты не можешь устоять перед её просьбой и наклоняешься, чтобы напоследок его поцеловать...
 	</p>
 	]]></htmlContent>
 
 	<htmlContent tag="AFTER_SEX_ANILINGUS_CONTINUE"><![CDATA[
 	<p>
-		Leaning forwards, you press your [pc.lips+] against Callie's hot asshole, before delivering one last big, wet kiss to it. Smiling to yourself as you hear the horse-girl let out a satisfied moan, you lean back, allowing her to pull up her jeans as she sighs, [callie.speech(You're good at eating horse-ass...)]
+		Подавшись вперед, ты прижимаешься своим [pc.lips+] к горячему анусу Кэлли, а затем даришь ему последний долгий и влажный поцелуй. Услышав удовлетворенный стон коняшки, ты довольно улыбаешься и откидываешься назад, позволяя ей натянуть джинсы; она вздыхает: [callie.speech(А ты хорош в поедании лошадиных попок...)]
 	</p>
 	<p>
-		As Callie moves over to pull up the blinds and unlock the front door,
+		Пока Кэлли подходит к окну, чтобы поднять жалюзи и отпереть входную дверь,
 		#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-			 you point to the choker around your neck, before telling Callie that you've been well trained as one of Natalya's [style.mules], and that performing anilingus on horse-asses is one of your favourite parts of the job.
+		
+ ты указываешь на чокер на своей шее и говоришь Кэлли, что тебя отлично натренировали как одного из [style.mules] Натальи, и что анилингус лошадиных попок — одна из твоих самых любимых частей работы.
 		#ELSE
-			 you tell Callie that it was easy to satisfy her thanks to how delicious her perfect, puffy asshole is.
+		
+ ты говоришь Кэлли, что удовлетворить её было проще простого, потому что её идеальный, пышный анус невероятно вкусен.
 		#ENDIF
-		 Smiling as she hears you say this, the horse-girl returns to the other side of the counter and offers, [callie.speech(Well, seeing as you love it so much, you can come back and get another taste of my doughnut tomorrow... Now, is there anything else I can get you today? A real doughnut, perhaps?)]
+		 Услышав это, коняшка расплывается в улыбке, возвращается за прилавок и предлагает: [callie.speech(Ну, раз уж тебе так нравится, завтра можешь прийти и снова попробовать мой пончик... А теперь, желаешь ли ты чего-нибудь еще сегодня? Может, настоящий пончик?)]
 	</p>
 	]]></htmlContent>
 	
@@ -340,19 +345,19 @@
 	#IF(callie.isAttractedTo(pc))
 		#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
 			<p>
-				Winking at Callie, you say that you'd like to place an order for her big, fat baguette. Smirking and looking you up and down, the horse-girl laughs and exclaims, [callie.speech(My, my, how direct! How could I say no to such a lovely [pc.race]... Now, which hole were your hoping to have my 'baguette' stuffed into, I wonder?)] 
+				Подмигнув Кэлли, ты заявляешь, что хочешь заказать её большой и толстый багет. Усмехнувшись и окинув тебя взглядом с ног до головы, кобылка заливается смехом и восклицает: [callie.speech(Ох, надо же, как прямолинейно! И как я смогу отказать такому очаровательному [pc.race]... Интересно, в какую дырочку ты мечтаешь засунуть мой «багет»?)] 
 			</p>
 		#ELSE
 			<p>
-				Winking at Callie, you say that you'd like to place an order for her big, fat baguette. Smirking and looking you up and down, the horse-girl laughs and exclaims, [callie.speech(My, my, how direct! How could I say no to such a lovely [pc.race]... But there is the small matter of my shop having to be temporarily closed because of this. If you were to drop, let's say, ten thousand flames in the tip jar, I suppose that would cover the potential loss of business...)] 
+				Подмигнув Кэлли, ты заявляешь, что хочешь заказать её большой и толстый багет. Усмехнувшись и окинув тебя взглядом с ног до головы, кобылка заливается смехом и восклицает: [callie.speech(Ох, надо же, как прямолинейно! И как я смогу отказать такому очаровательному [pc.race]... Но есть одна маленькая проблема: из-за этого мне придется временно закрыть лавку. Если ты, скажем, закинешь в чаевые десять тысяч огней, думаю, это покроет возможные убытки...)] 
 			</p>
 		#ENDIF
 	#ELSE
 		<p>
-			Winking at Callie, you say that you'd like to place an order for her big, fat baguette.
+			Подмигнув Кэлли, ты заявляешь, что хочешь заказать её большой и толстый багет.
 		</p>
 		<p>
-			[callie.speech(Ehm, sorry but you're not really my type. I prefer my partners to be a bit more... Y'know, feminine...)] she apologises as she looks away, slightly embarrassed about the atmosphere that's now set in. Trying to change the subject, she quickly goes on to ask, [callie.speech(Anyway, would you like something else? Like, I don't know... A doughnut?)]
+			[callie.speech(Эм, прости, но ты не совсем в моем вкусе. Мне больше нравятся партнеры... ну, знаешь, более женственные...)] — извиняется она, отводя взгляд и слегка смущаясь из-за возникшей атмосферы. Пытаясь сменить тему, она поспешно спрашивает: [callie.speech(В любом случае, хочешь чего-нибудь еще? Ну, не знаю... Пончик?)]
 		</p>
 	#ENDIF
 	]]></htmlContent>
@@ -360,17 +365,17 @@
 	<htmlContent tag="SEX_START"><![CDATA[
 	<p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
-			Letting out a horny moan, you tell the horse-girl that you want her to stuff her fat baguette deep into your hot cunt.
+			Издавая похотливый стон, ты говоришь кобылке, что хочешь, чтобы она засунула свой толстый багет глубоко в твою горячую киску.
 		#ELSE
-			Telling Callie that she's definitely worth it, you drop the ten thousand flames which she's asked for into her tip jar.
+			Заверяя Кэлли, что она того стоит, ты бросаешь запрошенные ею десять тысяч огней в чаевые.
 		#ENDIF
-		 With a big smirk on her face, Callie steps over to the store's front door, before locking it and flipping the sign to show that her establishment is closed. After dropping the blinds to give you some privacy, Callie returns to stand beside her counter, before pulling down her jeans and revealing both her huge horse-cock and puffy asshole. Teasing her fingers over her rapidly-hardening, ebony shaft, she commands with a moan, [callie.speech(~Mmm!~ Go on then, bend over the counter and show me your pussy.)]
+		С широкой ухмылкой на лице Кэлли подходит к входной двери лавки, запирает её и переворачивает табличку, сообщая, что заведение закрыто. Опустив жалюзи, чтобы обеспечить вам уединение, Кэлли возвращается к прилавку, после чего спускает джинсы, демонстрируя свой огромный лошадиный член и припухшую дырочку. Поглаживая пальцами свой стремительно твердеющий эбеновый ствол, она приказывает с придыханием: [callie.speech(~Ммм!~ Ну же, наклоняйся над прилавком и покажи мне свою киску.)]
 	</p>
 	<p>
-		Doing as you're told, you bend down over the counter in front of Callie, presenting her with your [pc.pussy+]. Immediately, the horny horse-girl steps forwards and presses the flared head of her animalistic cock up against your [pc.labia+]. Playfully rubbing her throbbing dick up and down over your hungry cunt, she teases, [callie.speech(We're not stopping until I'm satisfied... Now go on, beg for it...)]
+		Повинуясь приказу, ты наклоняешься над прилавком перед Кэлли, подставляя ей свою [pc.pussy+]. Тут же похотливая кобылка делает шаг вперед и прижимается раздутой головкой своего звериного члена к твоей [pc.labia+]. Игриво водя пульсирующим членом вверх и вниз по твоей жаждущей щелке, она дразнит: [callie.speech(Мы не остановимся, пока я не наемся... А теперь давай, умоляй меня...)]
 	</p>
 	<p>
-		Failing to suppress a horny squeal, you push your [pc.hips+] back and desperately beg for Callie to start fucking you. Half-way through your frantic plea, the horse-girl suddenly gives you what you want, and you find yourself moaning in ecstasy as Callie thrusts forwards and sinks her fat, hot horse-cock into your pussy, before starting to buck her hips and fuck you over her counter...
+		Не в силах сдержать возбужденный визг, ты подаешь свою [pc.hips+] назад и отчаянно умоляешь Кэлли начать трахать тебя. На середине своей лихорадочной мольбы ты внезапно получаешь желаемое: ты стонешь от экстаза, когда Кэлли делает мощный толчок, погружая свой толстый, горячий лошадиный член в твою киску, и начинает ритмично двигать бедрами, трахая тебя прямо на прилавке...
 	</p>
 	]]>
 	</htmlContent>
@@ -378,17 +383,17 @@
 	<htmlContent tag="SEX_ANAL_START"><![CDATA[
 	<p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
-			Letting out a horny moan, you tell the horse-girl that you want her to stuff her fat baguette deep into your hot asshole.
+			Издавая похотливый стон, ты говоришь кобылке, что хочешь, чтобы она засунула свой толстый багет глубоко в твою горячую дырочку.
 		#ELSE
-			Telling Callie that she's definitely worth it, you drop the ten thousand flames which she's asked for into her tip jar.
+			Заверяя Кэлли, что она того стоит, ты бросаешь запрошенные ею десять тысяч огней в чаевые.
 		#ENDIF
-		 With a big smirk on her face, Callie steps over to the store's front door, before locking it and flipping the sign to show that her establishment is closed. After dropping the blinds to give you some privacy, Callie returns to stand beside her counter, before pulling down her jeans and revealing both her huge horse-cock and puffy asshole. Teasing her fingers over her rapidly-hardening, ebony shaft, she commands with a moan, [callie.speech(~Mmm!~ Go on then, bend over the counter and show me your ass.)]
+		С широкой ухмылкой на лице Кэлли подходит к входной двери лавки, запирает её и переворачивает табличку, сообщая, что заведение закрыто. Опустив жалюзи, чтобы обеспечить вам уединение, Кэлли возвращается к прилавку, после чего спускает джинсы, демонстрируя свой огромный лошадиный член и припухлую дырочку. Поглаживая пальцами свой стремительно твердеющий эбеновый ствол, она приказывает с придыханием: [callie.speech(~Ммм!~ Ну же, наклоняйся над прилавком и покажи мне свою задницу.)]
 	</p>
 	<p>
-		Doing as you're told, you bend down over the counter in front of Callie, presenting her with your [pc.ass+]. Immediately, the horny horse-girl steps forwards and presses the flared head of her animalistic cock up against your [pc.asshole+]. Playfully rubbing her throbbing dick up and down over your hungry hole, she teases, [callie.speech(We're not stopping until I'm satisfied... Now go on, beg for it...)]
+		Повинуясь приказу, ты наклоняешься над прилавком перед Кэлли, подставляя ей свою [pc.ass+]. Тут же похотливая кобылка делает шаг вперед и прижимается раздутой головкой своего звериного члена к твоей [pc.asshole+]. Игриво водя пульсирующим членом вверх и вниз по твоей жадной дырке, она дразнит: [callie.speech(Мы не остановимся, пока я не наемся... А теперь давай, умоляй об этом...)]
 	</p>
 	<p>
-		Failing to suppress a horny squeal, you push your [pc.hips+] back and desperately beg for Callie to start fucking your ass. Half-way through your frantic plea, the horse-girl suddenly gives you what you want, and you find yourself moaning in ecstasy as Callie thrusts forwards and sinks her fat, hot horse-cock into your asshole, before starting to buck her hips and fuck you over her counter...
+		Не в силах подавить возбужденный визг, ты отставляешь [pc.hips+] назад и отчаянно умоляешь Кэлли начать трахать твою задницу. На полпути к своей неистовой мольбе ты внезапно получаешь желаемое: ты стонешь от экстаза, когда Кэлли делает мощный толчок, погружая свой толстый, горячий лошадиный член в твою дырочку, и начинает ритмично двигать бедрами, трахая тебя прямо на прилавке...
 	</p>
 	]]>
 	</htmlContent>
@@ -397,60 +402,60 @@
 	<p>
 		#IF(callie.isAttractedTo(pc))
 			#IF(flags.hasFlag(FLAG_nnxx_callie_sex_is_free))
-				Having second thoughts about this, you tell Callie that you've changed your mind about getting stuffed with her baguette.
+				Засомневавшись, ты говоришь Кэлли, что передумал заглатывать её «багет».
 			#ELSE
-				Finding the asking price of ten thousand flames to be too steep, you tell Callie that you've changed your mind about paying to get stuffed with her baguette.
+				Посчитав цену в десять тысяч огней слишком высокой, ты говоришь Кэлли, что передумал платить за то, чтобы она набила тебя своей багетой.
 			#ENDIF
-			 Upon hearing this, the horse-girl lets out a disappointed huff and sighs, [callie.speech(Aww, that's a pity... I was already starting to get all hot and bothered from the idea of turning you into my personal cock-sleeve... I guess it will have to wait.)]
+			 Услышав это, кобылка разочарованно фыркает и вздыхает: [callie.speech(Оу, какая жалость... А я уже начала заводиться от одной мысли о том, чтобы превратить тебя в свою личную залупную оболочку... Видимо, придется подождать.)]
 		#ELSE
-			As Callie isn't attracted to you, there's no way that you're going to be able to have sex with her. Letting out a disappointed sigh, you wonder what to do next...
+			Поскольку Кэлли к тебе не испытывает влечения, шансов на секс с ней практически нет. Разочарованно вздохнув, ты задумываешься, что делать дальше...
 		#ENDIF
 	</p>
 	]]></htmlContent>
 
 	<htmlContent tag="AFTER_SEX"><![CDATA[
 	<p>
-		Having had her fun, and with her fat horse-cock starting to soften, Callie steps back and sighs, [callie.speech(I think you've had enough for today...)]
+		Насладившись, и чувствуя, как её толстый лошадиный член начинает обмякать, Кэлли отступает назад и вздыхает: [callie.speech(Думаю, на сегодня тебе хватит...)]
 	</p>
 	<p>
-		As the horse-girl pulls up her jeans, you let out a deep sigh and prepare to get your things back in order...
+		Пока кобылка натягивает джинсы, ты тяжело вздыхаешь и готовишься приводить свои вещи в порядок...
 	</p>
 	]]></htmlContent>
 
 	<htmlContent tag="AFTER_SEX_CONTINUE"><![CDATA[
 	<p>
-		As you quickly get your things back in order, Callie moves over to pull up the blinds and unlock the front door. Turning to face you after performing this task, she smiles and states, [callie.speech(You're good at taking horse-cock...)]
+		Пока ты быстро собираешь вещи, Кэлли подходит к окну, чтобы поднять жалюзи и отпереть входную дверь. Закончив с этим, она поворачивается к тебе с улыбкой и заявляет: [callie.speech(А ты хорош в приеме лошадиного члена...)]
 	</p>
 	<p>
-		As the horse-girl then walks over to return to her side of the counter,
+		Затем кобылка возвращается на свою сторону прилавка,
 		#IF(pc.getClothingInSlot(IS_NECK)!=null && pc.getClothingInSlot(IS_NECK).getClothingType().getId().equals('innoxia_neck_filly_choker'))
-			 you point to the choker around your neck, before telling Callie that you've been well trained as one of Natalya's [style.mules], and that getting fucked by big horse-cocks is one of your favourite parts of the job.
+			 ты указываешь на чокер на своей шее, а затем говоришь Кэлли, что тебя отлично натренировали как одну из [style.mules] Натальи, и что трахаться огромными лошадиными членами — одна из твоих любимых частей работы.
 		#ELSE
-			 you tell Callie that it was easy to satisfy her thanks to how perfect her big, throbbing horse-cock is.
+			 ты говоришь Кэлли, что удовлетворить её было проще простого благодаря тому, насколько идеален её большой, пульсирующий лошадиный член.
 		#ENDIF
-		 Smiling as she hears you say this, the horse-girl offers, [callie.speech(Well, seeing as you love it so much, you can come back and get stuffed by my baguette again tomorrow... Now, is there anything else I can get you today? A doughnut, perhaps?)]
+		Услышав твои слова, она расплывается в улыбке и предлагает: [callie.speech(Ну, раз уж тебе так нравится, можешь приходить завтра и снова заглотить мою багет... Так что, желаешь еще чего-нибудь сегодня? Может, пончик?)]
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="DONATION"><![CDATA[
 	<p>
-		Wanting to help Callie out and give her some financial support, you ask her how big of a tip she'd need before being able to improve her store.
+		Желая помочь Кэлли и поддержать её финансово, ты спрашиваешь, какая сумма чаевых ей нужна, чтобы она смогла обустроить свою лавку.
 	</p>
 	<p>
 		#IF(flags.hasFlag(FLAG_nnxx_callie_daily_fucked))
-			[callie.speech(Hey, I already said you've had enough for today,)] she laughs as she misinterprets your question as a request for more sex. Quickly clarifying that all you're interested in this time is topping up her tip jar, you ask her again how much she'd need, to which the horse-girl replies, [callie.speech(Oh, well I guess [style.intToString([#callie.getFlamesToNextUpgrade()])] is what I'd need. I can't count on you coming back every day and paying for sex, though, so I don't expect to get that any time soon.)]
+			[callie.speech(Эй, я же сказала, что на сегодня хватит,)] — смеется она, ошибочно приняв твой вопрос за просьбу о продолжении секса. Быстро пояснив, что на этот раз тебя интересует лишь пополнение её копилки, ты снова спрашиваешь, сколько ей нужно, на что девичья лошадка отвечает: [callie.speech(О, ну, думаю, мне понадобится [style.intToString([#callie.getFlamesToNextUpgrade()])]. Правда, нельзя же рассчитывать, что ты будешь приходить каждый день и платить за секс, так что в ближайшее время ждать особо нечего.)]
 		#ELSE
-			[callie.speech(Well, I guess [style.intToString([#callie.getFlamesToNextUpgrade()])] is what I'd need. I can't count on you coming back every day and paying for sex, though, so I don't expect to get that any time soon,)] she replies.
+			[callie.speech(Ну, думаю, мне понадобится [style.intToString([#callie.getFlamesToNextUpgrade()])]. Правда, нельзя же рассчитывать, что ты будешь приходить каждый день и платить за секс, так что в ближайшее время ждать особо нечего,)] — отвечает она.
 		#ENDIF
 	</p>
 	<p>
-		Producing [style.intToString([#callie.getFlamesToNextUpgrade()])] flames, you place the money in Callie's tip jar and tell her that you're happy to help her improve her business.
+		Выложив [style.intToString([#callie.getFlamesToNextUpgrade()])] Огней, ты кладешь деньги в копилку Кэлли и говоришь, что рад помочь ей развить бизнес.
 	</p>
 	<p>
-		[callie.speech(Are you serious?)] the horse-girl asks, wide-eyed, as she watches you fill her tip jar. After you've confirmed that the money is for her, she happily beams at you and gleefully declares, [callie.speech(That's such a great help, thank you so much, [pc.name]! You should see an improvement in here as soon as tomorrow!)]
+		[callie.speech(Ты серьезно?)] — широко раскрытыми глазами спрашивает кобылка, наблюдая, как ты наполняешь её банку для чаевых. После того как ты подтверждаешь, что деньги — ей, она радостно сияет и восторженно заявляет: [callie.speech(Это такая огромная помощь, спасибо тебе огромное, [pc.name]! Ты заметишь улучшения здесь уже завтра!)]
 	</p>
 	<p>
-		Taking the tip jar off the counter, Callie safely locks it away beneath the counter, before leaning forwards and flashing you her cleavage as she asks, [callie.speech(So, can I get you a doughnut?)]
+		Сняв банку для чаевых со стойки, Кэлли надежно прячет её под прилавок, после чего наклоняется вперед, демонстрируя тебе свою грудь, и спрашивает: [callie.speech(Ну что, принести тебе пончик?)]
 	</p>
 	]]></htmlContent>
 	
@@ -458,10 +463,10 @@
 	
 	<htmlContent tag="SEATING"><![CDATA[
 	<p>
-		Although Callie's bakery is quite small, there's still enough room in this seating area to hold several tables and chairs. There's nobody making use of them, however, as all of the customers you've seen so far choose to order their doughnuts as takeouts.
+		Хотя пекарня Кэлли довольно маленькая, в зале достаточно места, чтобы расставить несколько столов и стульев. Однако сейчас они пустуют, так как все покупатели, которых ты видел до этого момента, предпочитают брать пончики с собой.
 	</p>
 	<p>
-		There's really not much for you to do here except turn around and head back over to Callie's counter...
+		Здесь особо не на что отвлекаться, кроме как развернуться и снова подойти к стойке Кэлли...
 	</p>
 	]]></htmlContent>
 	
@@ -472,103 +477,102 @@
 	<htmlContent tag="NATALYA_ENTRY"><![CDATA[
 	
 	<p>
-		Deciding that you'd like to visit Callie's shop once again, you push open the door to 'The Creamy Bakey' and [pc.step] inside. Thanks to the upgrades to her store, there are normally several customers present at this time of day, but it seems like you've arrived during an unusual lull in business. A couple of customers depart as you enter, leaving the interior deserted save for two people.
+		Решив заглянуть в лавку к Кэлли еще раз, ты толкаешь дверь «Сливочной пекарни» и [pc.step] внутри. Благодаря улучшениям в её магазине, в это время суток здесь обычно полно народу, но, похоже, ты зашел в необычайно затишный час. Пару покупателей уходят как раз в тот момент, когда ты входишь, оставляя помещение пустым, если не считать двух человек.
 	</p>
 	<p>
-		One of these people is, of course, the owner of this business. Callie looks over to you from behind the counter and gives you a smile and a wave. The other person, who's standing in front of the horse-girl, is none other than Mistress Natalya. Turning to see who it is that Callie is waving to, the centauress looks over her shoulder, and upon recognising you, she flashes you a grin.
+		Одна из этих дам, разумеется, владелица этого заведения. Калли смотрит на тебя из-за прилавка, улыбаясь и махая рукой. Другая же особа, стоящая перед конницей, — не кто иная, как госпожа Наталья. Повернувшись, чтобы посмотреть, кому именно машет Калли, кентаврисса оглядывается через плечо и, узнав тебя, расплывается в широкой улыбке.
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="NATALYA_START"><![CDATA[
 	<p>
-		Heading over to the counter, you say hello to Callie and Mistress Natalya.
+		Подойдя к прилавку, ты приветствуешь Калли и госпожу Наталью.
 	</p>
 	#IF(!flags.hasFlag(FLAG_innoxia_callie_natalya_encountered))
 		<p>
-			[callie.speech(This is the [pc.race] who I was just telling you about,)] Callie says to your Mistress. Not knowing about the relationship between the two of you, she continues, [callie.speech([pc.Name] here really helped me to turn my business around. Without [pc.herHim], I may even have closed this place down by now!)]
+		[callie.speech(Это тот самый [pc.race], о котором я вам только что рассказывала,)] — говорит Калли твоей госпоже. Не зная о ваших отношениях, она продолжает: [callie.speech([pc.Name] действительно помог мне наладить дела. Без [pc.herHim] я бы, наверное, уже давно закрыла это место!)]
 		</p>
 		<p>
-			[natalya.speech(Oh, I know this [style.mule] very well indeed,)] Mistress Natalya states, before smirking and teasing, [natalya.speech([pc.SheIs] normally eating a different type of doughnut to the ones you sell here. [pc.She] really is quite good with that [pc.tongue] of [pc.hers]...)]
+		[natalya.speech(О, этот [style.mule] мне очень даже знаком,)] — заявляет госпожа Наталья, после чего ухмыляется и поддразнивает: [natalya.speech([pc.SheIs] обычно ест совсем не такие пончики, как те, что вы продаете здесь. [pc.She] действительно мастерски владеет этим [pc.tongue] из [pc.hers]...)]
 		</p>
 		<p>
-			[callie.speech(I've already experienced that first-hand!)] Callie laughs. Smiling at the centauress, she asks, [callie.speech(I guess I've got you to thank for training [pc.herHim] to be so good at eating ass? Hey! I've got an idea! Have you ever had your 'doughnut' iced before?)]
+		[callie.speech(Я уже проверила это на собственной шкуре!)] — смеется Калли. Улыбаясь кентавриссе, она спрашивает: [callie.speech(Полагаю, мне стоит поблагодарить вас за то, что вы научили [pc.herHim] так искусно есть задницу? Эй! У меня есть идея! А вам когда-нибудь глазировали ваш «пончик»?)]
 		</p>
 		<p>
-			[natalya.speech(I can't say that I have...)] Mistress Natalya replies, before checking the time on her watch and saying, [natalya.speech(If that's an offer, then I have an hour or so to kill.)]
+			[natalya.speech(Не могу сказать, что у меня...)] — отвечает госпожа Наталья, после чего бросает взгляд на свои часы и добавляет: [natalya.speech(Если это предложение, то у меня есть лишний часок, чтобы убить время.)]
 		</p>
 		<p>
-			[callie.speech(Well, it looks like I don't have any other customers, so how about we have some fun?)] Callie replies, before looking over at you and saying, [callie.speech(Lock the front door, [pc.name]. It's your lucky day; you'll get two doughnuts to ice and eat!)]
+			[callie.speech(Ну, похоже, других покупателей нет, так что как насчет того, чтобы немного развлечься?)] — отвечает Кэлли, после чего смотрит на тебя и говорит: [callie.speech(Запри входную дверь, [pc.name]. Тебе сегодня повезло: получишь сразу два пончика — один покрыть глазурью, а другой съесть!)]
 		</p>
 	#ELSE
 		<p>
-			[natalya.speech(I was hoping to see you here again, [style.mule],)] Mistress Natalya says to you, before turning back to Callie and asking, [natalya.speech(Is your offer of having my doughnut iced still on? I have an hour or so to kill...)]
+			[natalya.speech(Надеялась снова увидеть тебя здесь, [style.mule],)] — говорит тебе госпожа Наталья, прежде чем повернуться к Кэлли и спросить: [natalya.speech(Твое предложение покрыть мой пончик глазурью еще в силе? У меня есть около часа, чтобы убить время...)]
 		</p>
 		<p>
-			[callie.speech(Well, it looks like I don't have any other customers, and I'm in the mood for some anal action, so let's do it!)] Callie eagerly replies, before looking over at you and saying, [callie.speech(Lock the front door, [pc.name]. It's your lucky day; you'll get two doughnuts to ice and eat!)]
+			[callie.speech(Ну, похоже, других покупателей нет, а я как раз в настроении для анального секса, так что давай сделаем это!)] — с энтузиазмом отвечает Кэлли, после чего смотрит на тебя и говорит: [callie.speech(Запри входную дверь, [pc.name]. Тебе сегодня повезло: получишь сразу два пончика — один покрыть глазурью, а другой съесть!)]
 		</p>
 	#ENDIF
 	]]></htmlContent>
 	
 	<htmlContent tag="NATALYA_ESCAPE"><![CDATA[
 	<p>
-		Although you've been happy to perform anilingus on Callie and Mistress Natalya in the past, you really aren't in the mood for it right now. As such, you quickly make an excuse to leave, and before either of them can say anything to stop you, you're souting out a rushed apology and darting out of the front door.
+		Хотя раньше тебе и нравилось ласкать языком анус Кэлли и госпожи Натальи, сейчас тебе совсем не до этого. Поэтому ты поспешно придумываешь предлог, чтобы уйти, и, не дав им опомниться, бросаешь на ходу сбивчивое извинение и вылетаешь за входную дверь.
 	</p>
 	<p>
-		Quickly hurrying a short way down the street, you duck into the end of a dark alleyway and peek back around the corner. A couple of minutes pass, and then you see Mistress Natalya leaving the shop. Carrying a brown paper bag that's stuffed full of doughnuts, she trots off down the street and quickly vanishes from your sight.
+		Сделав несколько быстрых шагов по улице, ты ныряешь в конец темного переулка и осторожно выглядываешь из-за угла. Проходит пара минут, и вот ты видишь, как госпожа Наталья выходит из лавки. Неся в руках коричневый бумажный пакет, набитый пончиками доверху, она семенит по улице и быстро скрывается из виду.
 	</p>
 	<p>
-		If you still wanted to, you could always return to 'The Creamy Bakey' and pay Callie a visit, knowing that this time she's sure to be alone...
+		Если захочешь, ты всегда можешь вернуться в «Сливочную пекарню» и навестить Кэлли, зная, что на этот раз она наверняка будет одна...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="NATALYA_ANILINGUS_START"><![CDATA[
-	<p>
-		Doing as you're told, you quickly lock the front door and flip the sign over to show 'closed'. Turning back to face the shop, you see that Callie has already stepped around to the other side of the counter, and is holding a couple of piping bags and three pots of sprinkles in her hands.
+	<p>		Сделав всё, как велели, ты быстро запираешь входную дверь и переворачиваешь табличку на сторону «Закрыто». Повернувшись лицом к лавке, ты замечаешь, что Кэлли уже перешла на другую сторону прилавка; в руках у неё пара кондитерских мешков и три баночки с посыпкой.
 	</p>
 	<p>
-		[callie.speech(Take these, [pc.name],)] she says as you [pc.step] over to her. Taking the icing supplies from the smiling horse-girl, you listen as she instructs, [callie.speech(One bag's got white icing, the other's pink. There should be enough left in each of them to cover one doughnut. After that, choose some sprinkles to finish us off, then you can get to eating!)]
+		[callie.speech(Возьми это, [pc.name],)] — говорит она, когда ты [pc.step] к ней. Забирая глазурь у улыбающейся коняшки, ты слушаешь её наставления: [callie.speech(В одном мешке белая глазурь, в другом — розовая. В каждом должно хватить примерно на один пончик. После этого выбери посыпку, чтобы закончить дело, а потом можешь приступать к еде!)]
 	</p>
 	<p>
-		With that, she turns around and bends over to lean down against the counter-top. Stepping over to get closer to the horse-girl, Mistress Natalya positions her big ass so that it's next to Callie's. Looking back over her shoulder, she sharply commands, [natalya.speech(Lift my skirt, [style.mule], and get Callie's trousers pulled down! You know the drill. Kiss our assholes to demonstrate your subservience, then you can get on with icing them.)]
+		С этими словами она разворачивается и наклоняется, упираясь руками в столешницу. Подойдя ближе к девочке-лошади, госпожа Наталья подставляет свою огромную задницу так, чтобы она оказалась рядом с задницей Кэлли. Оглянувшись через плечо, она резко командует: [natalya.speech(Подними мою юбку, [style.mule], и стяни штаны с Кэлли! Ты знаешь, что делать. Поцелуй наши анусы, чтобы продемонстрировать свою покорность, а потом приступай к глазурированию.)]
 	</p>
 	<p>
-		Obediently carrying out your Mistress's instructions, you flip up her skirt to reveal her hindquarters. Her big, puffy, ebony asshole is nestled between her hindquarters, and beneath that her feral, equine cock and pair of huge, heavy balls sway slightly as she pushes her ass back out towards you. Doing what's expected of you, you drop down behind your Mistress and lean forwards to plant a big, wet kiss on her musky anus, before shuffling over to Callie.
+		Послушно выполняя приказы госпожи, ты задираешь её юбку, обнажая заднюю часть тела. Её огромный, пухлый, иссиня-черный анус уютно устроился между полушариями ягодиц, а под ним слегка покачиваются её дикий лошадиный член и пара огромных тяжелых яиц, пока она выставляет задницу тебе навстречу. Делая то, что от тебя требуется, ты опускаешься позади госпожи и наклоняешься вперед, чтобы запечатлеть долгий, влажный поцелуй на её мускусистом анусе, после чего перебираешься к Кэлли.
 	</p>
 	<p>
-		[callie.speech(You've done this a lot, huh?)] the horse-girl giggles as you pull down her trousers. Her own puffy, ebony doughnut is similar in appearance to Mistress Natalya's, although as it's positioned on an anthro's body instead of a feral, it's a little smaller. Her horse-like cock and balls are also the same colour and shape as Mistress Natalya's genitals, but again they're smaller than the centauress's counterparts. As you lean forwards to plant a passionate kiss on Callie's hot asshole, she moans, [callie.speech(~Mmm!~ That's it... Now get our doughnuts iced you tease...)]
+		[callie.speech(Ты уже не раз это делал, да?)] — хихикает девочка-лошадь, пока ты стягиваешь с неё штаны. Её собственный пухлый черный «пончик» внешне очень похож на анус госпожи Натальи, хотя, будучи на антропоморфном теле, а не на зверином, он чуть меньше. Её лошадиный член и яйца также имеют тот же цвет и форму, что и гениталии госпожи Натальи, но опять же, они меньше, чем у кентаврки. Когда ты наклоняешься вперед, чтобы страстно поцеловать горячий анус Кэлли, она стонет: [callie.speech(~Ммм!~ Вот так... А теперь, дразнилка, покрывай наши пончики глазурью...)]
 	</p>
 	<p>
-		Looking down at the two piping bags in your [pc.hands], you wonder which asshole should be painted white and which one should be pink...
+		Глядя на два кондитерских мешка в своих [pc.hands], ты гадаешь, какой заднице стоит придать белый цвет, а какой — розовый...
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="NATALYA_AFTER_ANILINGUS"><![CDATA[
 	<p>
-		With both Callie and Mistress Natalya having cum hard just from the feeling of your [pc.tongue] in their ass, they let out satisfied sighs and exchange a nod with one another. Looking back over her shoulder, your Mistress commands, [natalya.speech(Give us each one more kiss, [style.mule], then we're done here.)] 
+		И Кэлли, и госпожа Наталья кончили на славу лишь от одного ощущения твоих [pc.tongue] в их задницах; они удовлетворенно вздыхают и обмениваются понимающими взглядами. Оглянувшись через плечо, твоя Госпожа командует: [natalya.speech(Поцелуй нас обеих еще разок, [style.mule], и на этом закончим.)] 
 	</p>
 	<p>
-		Doing as you're told, you plant one last wet kiss on both of the puffy, ebony doughnuts before you, after which you stand up and pull Mistress Natalya's skirt back down to cover her rear end. As Callie pulls up her trousers, she smirks at you and asks, [callie.speech(Did you enjoy eating our iced doughnuts, [pc.name]?)]
+		Повинуясь приказу, ты оставляешь последний влажный поцелуй на обеих пухлых черных «пончиках» перед собой, после чего встаешь и одергиваешь юбку госпожи Натальи, чтобы прикрыть её задницу. Когда Кэлли натягивает брюки, она ухмыляется тебе и спрашивает: [callie.speech(Тебе понравилось лакомиться нашими глазированными пончиками, [pc.name]?)]
 	</p>
 	<p>
-		You eagerly reply in the affirmative, after which Mistress Natalya lets out a short laugh and states, [natalya.speech(Of course [pc.she] enjoyed it. All of my [style.mules] have been trained to love eating horse ass. Now, I'll take a dozen of your doughnuts, then I must be on my way.)]
+		Ты с энтузиазмом отвечаешь утвердительно, после чего госпожа Наталья коротко смеется и заявляет: [natalya.speech(Конечно, [pc.she] понравилось. Все мои [style.mules] обучены обожать поедание лошадиных задниц. Что ж, я возьму дюжину твоих пончиков, и тогда мне пора.)]
 	</p>
 	<p>
-		Callie quickly packs twelve doughnuts into a paper bag, before taking payment from your Mistress and wishing her a good evening. Turning to face you, the centauress smiles and says, [natalya.speech(That was a good performance, [style.mule]. I expect to see you at the warehouse again soon. There are plenty of centaur slaves who need servicing, after all.)]
+		Кэлли быстро упаковывает двенадцать пончиков в бумажный пакет, после чего принимает оплату у твоей Госпожи и желает ей доброго вечера. Повернувшись к тебе, кентаврисса улыбается и говорит: [natalya.speech(Это было достойное выступление, [style.mule]. Надеюсь скоро снова увидеть тебя на складе. В конце концов, там полно рабынь-кентавров, которым нужно внимание.)]
 	</p>
 	]]></htmlContent>
 	
 	<htmlContent tag="NATALYA_AFTER_ANILINGUS_CONTINUE"><![CDATA[
 	<p>
-		Before she unlocks the door and leaves, you manage to call out a brief goodbye to Mistress Natalya. As the centauress trots off down the street, you turn back towards Callie, and see that she's carrying a mop and bucket. As she quickly cleans up the cummy mess which she and your Mistress made all over the floor, she asks, [callie.speech(Would you mind re-opening my shop? I might still get a few customers today.)]
+		Прежде чем она отпирает дверь и уходит, тебе удается бросить короткое «прощай» госпоже Наталье. Пока кентавридка у trot-уходит по улице, ты оборачиваешься к Кэлли и видишь, что она несет швабру и ведро. Пока она быстро отмывает спермящую грязь, которую она и твоя Госпожа развели по всему полу, она спрашивает: [callie.speech(Ты не против снова открыть мою лавку? Может, сегодня ко мне еще заглянут покупатели.)]
 	</p>
 	<p>
-		Doing as the horse-girl asks, you flip over the sign in the door so that it displays 'open' to members of the public. Returning to the counter as Callie finishes cleaning up, you look down at the iced doughnuts on display and get a flashback to how Callie's and Natalya's iced assholes looked. Seeing what it is you're looking at, Callie laughs and teases, [callie.speech(Wishing you had our doughnuts to eat all over again? Don't worry, I'm sure Natalya will be back at some point. Give it a few days, and you'll probably find her here again.)]
+		Повинуясь просьбе лошадиной девицы, ты переворачиваешь табличку на двери, чтобы для прохожих было написано «открыто». Когда Кэлли заканчивает уборку, ты возвращаешься к прилавку, смотришь на выставленные глазурированные пончики и ловишь флешбэк о том, как выглядели глазурированные задницы Кэлли и Натальи. Заметив твой взгляд, Кэлли смеется и поддразнивает тебя: [callie.speech(Захотел снова полакомиться нашими пончиками? Не переживай, я уверена, что Наталья еще вернется. Подожди пару дней, и ты наверняка снова встретишь ее здесь.)]
 	</p>
 	<p>
-		Nodding in agreement, you ask Callie if she had fun. Happily smiling at you, she replies, [callie.speech(I sure did! You were great back there, [pc.name]. Now, I've got no more time for sex today, but if you wanted a real doughnut, perhaps you'd like to select one?)]
+		Кивнув в знак согласия, ты спрашиваешь Кэлли, весело ли она провела время. Счастливо улыбаясь тебе, она отвечает: [callie.speech(Еще бы! Ты был просто великолепен, [pc.name]. Ну, на секс у меня на сегодня больше времени нет, но если ты хочешь настоящий пончик, может, выберешь какой-нибудь?)]
 	</p>
 	<p>
-		Looking down at the goods on offer, you wonder what to do next...
+		Глядя на представленный ассортимент, ты раздумываешь, что делать дальше...
 	</p>
 	]]></htmlContent>
 	

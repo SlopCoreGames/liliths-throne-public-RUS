@@ -2,7 +2,7 @@
 <hair>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<coveringType>innoxia_mouse_hair</coveringType>
 	
@@ -12,8 +12,8 @@
 	
 	<determiner><![CDATA[a head of]]></determiner>
 	
-	<name><![CDATA[hair]]></name>
-	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	<name><![CDATA[волосы]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
@@ -26,11 +26,11 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.
-		<br/>[npc.Name] now [npc.has] [npc.hairColour] [style.boldMouse(mouse hair)].
+		Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, похожими на мех.
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldMouse(mouse hair)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], mouse-like hair
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], мышиные волосы
 	]]></bodyDescription>
 </hair>

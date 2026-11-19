@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>450</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[leg warmer]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[leg warmers]]></namePlural>
-		<description><![CDATA[A pair of ribbed, woollen leg warmers. Forming tubular sleeves, they're intended to keep the wearer's lower legs warm in cold weather, although are often worn simply for the sake of fashion.]]></description>
+		<name><![CDATA[гетра]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[гетры]]></namePlural>
+		<description><![CDATA[Пара шерстяных ребристых гетр. Эти трубчатые рукава предназначены для того, чтобы согревать голени в холодную погоду, хотя зачастую их носят просто ради моды.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>SOCK</slot> 
@@ -45,25 +45,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the leg warmers on to cover [npc.her] lower [npc.legs(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] натягивает гетры на нижнюю часть [npc.her] [npc.legs(true)].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the leg warmers onto [npc2.namePos] lower [npc2.legs(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] натягивает гетры на нижнюю часть [npc2.namePos] [npc2.legs(true)].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the leg warmers onto [npc2.namePos] lower [npc2.legs(true)].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] натягивает гетры на нижнюю часть [npc2.namePos] [npc2.legs(true)].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] leg warmers.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] стягивает с [npc.her] гетры.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] leg warmers.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] стягивает с [npc2.namePos] гетры.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] leg warmers.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] стягивает с [npc2.namePos] гетры.]]>
     </otherRough>
   </displacementText>
 	

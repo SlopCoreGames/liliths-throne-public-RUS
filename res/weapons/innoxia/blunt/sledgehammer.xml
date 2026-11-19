@@ -10,23 +10,23 @@
 		
 		<determiner><![CDATA[]]></determiner>
 		
-		<name><![CDATA[arcane sledgehammer]]></name>
+		<name><![CDATA[арканная кувалда]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[arcane sledgehammers]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[арканные кувалды]]></namePlural>
 		
-		<description><![CDATA[A large, long-handled hammer, bearing the brand 'Dominion Steel'. Despite the name of its manufacturer, this particular tool's head is made out of ethereal arcane energy instead of steel, thereby granting it superior durability and the ability to be easily reforged.]]></description> 
+		<description><![CDATA[Массивный молот на длинной рукояти с клеймом «Dominion Steel». Несмотря на название производителя, бой этого инструмента сделан не из стали, а из эфирной арканной энергии, что делает его невероятно прочным и позволяя легко перековывать его.]]></description> 
 		
 		<attackDescriptor>hammer</attackDescriptor>
 		
-		<attackTooltipDescription><![CDATA[Hammer [npc2.name] with your sledgehammer.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Ударь [npc2.name] своим кувалдой.]]></attackTooltipDescription>
 		
 		<rarity>COMMON</rarity> 
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(heft)] [npc.her] sledgehammer, ready to swing it at a moment's notice.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(heft)] [npc.her] кувалду, готовясь нанести удар в любой момент.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] sledgehammer away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] кувалду на место.]]></unequipText>
 		
 		<imageName>sledgehammer.svg</imageName> 
 		
@@ -67,25 +67,21 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] sledgehammer at [npc2.name], grinning as the ethereal arcane head smacks into [npc2.her] body!
+		[npc.Name] [npc.verb(swing)] [npc.her] кувалдой по [npc2.name], ухмыляясь, когда эфирная арканная голова с размаху врезается в [npc2.her] тело!
 		]]></hitText>
-		<hitText><![CDATA[
-		Lunging out at [npc2.name] with [npc.her] sledgehammer, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the ethereal arcane head connect with [npc2.her] body!
-		]]></hitText>
-		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] at [npc2.name] with [npc.her] sledgehammer, causing [npc2.herHim] to stagger back as the ethereal arcane head whacks into [npc2.her] chest!
-		]]></hitText>
+		<hitText><![CDATA[[npc.name] [npc.verb(grin)], бросаясь на [npc2.name] с [npc.her] кувалдой, когда [npc.she] [npc.verb(see)] , как эфирная аркана-голова врезается в [npc2.her] тело!]]></hitText>
+		<hitText><![CDATA[[npc.Name] [npc.verb(swing)] [npc2.name] с помощью [npc.her] кувалды, отчего [npc2.herHim] пошатывается назад, когда эфирный арканный набалдашник с размаху врезается в [npc2.her] грудь!]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] sledgehammer at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swing)] [npc.her] кувалдой по [npc2.name], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Lunging out at [npc2.name] with [npc.her] sledgehammer, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc2.name] с резким выпадом замахивается [npc.her] тяжелой кувалдой, и [npc.name] [npc.verb(let)] разочарованный крик вырывается из ее уст, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(swing)] at [npc2.name] with [npc.her] sledgehammer, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(swing)] [npc2.name] [npc.her] кувалдой, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

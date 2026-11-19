@@ -6,7 +6,7 @@
 	
 	<race>dsg_bear</race>
 	
-	<transformationName><![CDATA[bear]]></transformationName>
+	<transformationName><![CDATA[медведь]]></transformationName>
 	
 	<baseFluidType>GIRLCUM</baseFluidType>
 	
@@ -17,11 +17,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[bear]]></name>
+		<name><![CDATA[медведь]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[bear]]></name>
+		<name><![CDATA[медведь]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers>

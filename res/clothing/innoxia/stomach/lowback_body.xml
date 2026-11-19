@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>450</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[lowback bodysuit]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[lowback bodysuits]]></namePlural> 
-		<description><![CDATA[A bodysuit with a scooped low back and removable straps.]]></description> 
+		<name><![CDATA[боди с открытой спиной]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[боди с открытой спиной]]></namePlural> 
+		<description><![CDATA[Боди с глубоким вырезом на спине и съемными бретелями.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>STOMACH</slot> 
@@ -16,12 +16,12 @@
 		
 		<stickers>
 			<category id="straps" priority="1">
-				<categoryName><![CDATA[Shoulder Straps]]></categoryName>
+				<categoryName><![CDATA[Бретели]]></categoryName>
 				<sticker id="attached" priority="1" defaultSticker="true" zLayer="-1">
 					<stickerName><![CDATA[Attached]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[ The shoulder straps are currently attached to the body suit.]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[Бретели в данный момент прикреплены к боди.]]></descriptionModification>
 					<imageName>lowback_body_straps.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -32,7 +32,7 @@
 					<stickerName><![CDATA[Removed]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[ The shoulder straps have been removed from the body suit.]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[Бретели сняты с боди.]]></descriptionModification>
 					<imageName/>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -111,70 +111,68 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(step)] into the lowback bodysuit and [npc.verb(pull)] it up to cover [npc.her] torso, before sliding the straps into place around [npc.her] shoulders.
+			[npc.Name] [npc.verb(step)] в боди с открытой спиной и [npc.verb(pull)] его вверх, чтобы прикрыть торс [npc.her], а затем поправляет бретели на [npc.her] плечах.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(get)] [npc2.name] to [npc2.step] into the lowback bodysuit and [npc.verb(pull)] it up to cover [npc2.her] torso, before sliding the straps into place around [npc2.her] shoulders.
+			[npc.Name] [npc.verb(get)] [npc2.name], чтобы [npc2.step] надела боди с открытой спиной, и [npc.verb(pull)] его вверх, прикрывая торс [npc2.her], после чего поправляет бретели на [npc2.her] плечах.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.name] to [npc2.step] into the lowback bodysuit and [npc.verb(yank)] it up to cover [npc2.her] torso, before sliding the straps into place around [npc2.her] shoulders.
+			[npc.Name] грубо [npc.verb(force)] [npc2.name], заставляя [npc2.step] влезть в боди с открытой спиной, и [npc.verb(yank)] его вверх, чтобы прикрыть торс [npc2.her], а затем натягивает бретели на [npc2.her] плечи.
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
-		<self><![CDATA[
-			[npc.Name] [npc.verb(slide)] [npc.her] bodysuit's straps from off of [npc.her] shoulders before tugging it all the way down [npc.her] [npc.legs] and [npc.stepping] out of it.
-		]]></self>
+		<self><![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] спускает лямки боди с [npc.her] плеч, а затем стягивает его до самого низа, вызволяя [npc.her] [npc.legs] и [npc.stepping] из этого плена.]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(slide)] the straps of [npc2.namePos] bodysuit from off of [npc2.her] shoulders before tugging it all the way down [npc2.her] [npc2.legs] and making [npc2.herHim] [npc2.step] out of it.
+			[npc.Name] [npc.verb(slide)] лямки [npc2.namePos] боди с [npc2.her] плеч, а затем стягивает его до самых [npc2.her] [npc2.legs], превращая в [npc2.herHim] [npc2.step].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(yank)] the straps of [npc2.namePos] bodysuit from off of [npc2.her] shoulders before forcefully tugging it all the way down [npc2.her] [npc2.legs] and making [npc2.herHim] [npc2.step] out of it.
+			[npc.Name] грубо [npc.verb(yank)] лямки [npc2.namePos] боди с [npc2.her] плеч, а затем с силой стягивает его до самых [npc2.her] [npc2.legs], превращая в [npc2.herHim] [npc2.step].
 		]]></otherRough>
 	</displacementText>
 	
 	<replacementText type="SHIFTS_ASIDE">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(slide)] the lower part of [npc.her] bodysuit back into its correct position so that [npc.her] groin is covered.
+			[npc.Name] [npc.verb(slide)] нижнюю часть [npc.her] боди обратно на место, чтобы прикрыть [npc.her] пах.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(slide)] the lower part of [npc2.namePos] bodysuit back into its correct position so that [npc2.her] groin is covered.
+			[npc.Name] [npc.verb(slide)] нижнюю часть [npc2.namePos] боди обратно на место, чтобы прикрыть [npc2.her] пах.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(yank)] the lower part of [npc2.namePos] bodysuit back into its correct position so that [npc2.her] groin is covered.
+			[npc.Name] грубо [npc.verb(yank)] нижнюю часть [npc2.namePos] боди обратно на место, чтобы прикрыть [npc2.her] пах.
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="SHIFTS_ASIDE">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(slide)] the lower part of [npc.her] bodysuit to one side in order to gain access to [npc.her] groin.
+			[npc.Name] [npc.verb(slide)] нижнюю часть [npc.her] боди набок, чтобы получить доступ к [npc.her] паху.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(slide)] the lower part of [npc2.namePos] bodysuit to one side in order to gain access to [npc2.her] groin.
+			[npc.Name] [npc.verb(slide)] нижнюю часть [npc2.namePos] боди набок, чтобы получить доступ к [npc2.her] паху.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] impatiently [npc.verb(yank)] the lower part of [npc2.namePos] bodysuit to one side in order to gain access to [npc2.her] groin.
+			[npc.Name] нетерпеливо [npc.verb(yank)] нижнюю часть [npc2.namePos] боди набок, чтобы получить доступ к [npc2.her] паху.
 		]]></otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_DOWN">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] the top part of [npc.her] bodysuit up into its correct position.
+			[npc.Name] [npc.verb(pull)] верхнюю часть [npc.her] боди вверх, возвращая её на место.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(pull)] the top part of [npc2.namePos] bodysuit up into its correct position.
+			[npc.Name] [npc.verb(pull)] верхнюю часть [npc2.namePos] боди вверх, возвращая её на место.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(yank)] the top part of [npc2.namePos] bodysuit up into its correct position.
+			[npc.Name] грубо [npc.verb(yank)] верхнюю часть боди [npc2.namePos], поправляя его на месте.
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="PULLS_DOWN">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] down the top half of [npc.her] bodysuit.
+			[npc.Name] [npc.verb(pull)] верхнюю половину боди [npc.her] вниз.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(pull)] down the top half of [npc2.namePos] bodysuit.
+			[npc.Name] [npc.verb(pull)] верхнюю половину боди [npc2.namePos] вниз.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] down the top half of [npc2.namePos] bodysuit.
+			[npc.Name] грубо [npc.verb(pull)] верхнюю половину боди [npc2.namePos] вниз.
 		]]></otherRough>
 	</displacementText>
 	

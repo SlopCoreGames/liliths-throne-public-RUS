@@ -5,15 +5,15 @@
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[pistol crossbow]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pistol crossbows]]></namePlural>
-		<description><![CDATA[Consisting of a bow-like assembly mounted horizontally on a pistol-shaped frame, this small crossbow can easily be wielded in one hand. When the string is drawn back, an arcane essence is extracted from the wielder and converted into an ethereal bolt, ready to be fired at a target.]]></description>
+		<name><![CDATA[пистолетный арбалет]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пистолетные арбалеты]]></namePlural>
+		<description><![CDATA[Этот компактный арбалет представляет собой лук, закрепленный горизонтально на раме в форме пистолета, и его легко удерживать одной рукой. Когда тетива оттягивается назад, из владельца извлекается арканная эссенция, которая преобразуется в эфирный болт, готовый к выстрелу по цели.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
 		<attackTooltipDescription>Shoot [npc2.name] with your pistol crossbow.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] pistol crossbow, ready to use it in combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] pistol crossbow.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] пистолетный арбалет, готовый к бою.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] пистолетный арбалет.]]></unequipText>
 		
 		<imageName>pistol_crossbow.svg</imageName> 
 		<imageEquippedName>pistol_crossbow_equipped.svg</imageEquippedName>
@@ -59,27 +59,25 @@
 	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Aiming and firing [npc.her] pistol crossbow, [npc.name] [npc.verb(manage)] to hit [npc2.name] with a powerful arcane bolt!
+		Прицеливаясь и стреляя из [npc.her] пистолетного арбалета, [npc.name] [npc.verb(manage)] попасть в [npc2.name] мощным арканным болтом!
 		]]></hitText>
 		<hitText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] pistol crossbow, [npc.name] [npc.verb(pull)] the trigger, unleashing a powerful blast of arcane energy that slams into [npc2.namePos] torso!
+		Прицелившись в [npc2.name] из [npc.her] пистолетного арбалета, [npc.name] [npc.verb(pull)] спусковой крючок, высвобождая мощный заряд арканной энергии, который врезается в торс [npc2.namePos]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] pistol crossbow, and, pulling the trigger, [npc.she] [npc.verb(manage)] to hit [npc2.herHim] right in the chest!
+		[npc.Name] [npc.verb(aim)] в [npc2.name] из [npc.her] пистолетного арбалета и, нажав на спуск, [npc.she] [npc.verb(manage)] попасть [npc2.herHim] прямо в грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		Aiming and firing [npc.her] pistol crossbow, [npc.name] [npc.verb(miss)] [npc2.name]!
+		Прицелившись и выстрелив из [npc.her] пистолетного арбалета, [npc.name] [npc.verb(miss)] [npc2.name]!
 		]]></missText>
 		<missText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] pistol crossbow, [npc.name] [npc.verb(pull)] the trigger, letting out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Прицелившись в [npc2.name] из [npc.her] пистолетного арбалета, [npc.name] [npc.verb(pull)] спусковой крючок и, издав разочарованный крик, понимает, что [npc.she] [npc.verb(miss)] цель [npc.her]!
 		]]></missText>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] pistol crossbow and [npc.verb(pull)] the trigger, but [npc.she] [npc.verb(end)] up missing [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(aim)] на [npc2.name] из [npc.her] пистолета-арбалета и [npc.verb(pull)] за курок, но [npc.she] [npc.verb(end)] всё равно промахивается мимо [npc.her] цели!]]></missText>
 	</missDescriptions>
 	
 </weapon>

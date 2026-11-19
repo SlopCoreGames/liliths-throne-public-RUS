@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[spiral knot]]></name>
+		<name><![CDATA[спиральный узел]]></name>
 		
-		<description><![CDATA[A depiction of a Celtic spiral knot, believed to symbolise the transition between the physical and spiritual worlds.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a Celtic spiral knot]]></bodyOverviewDescription> 
+		<description><![CDATA[Изображение кельтского спирального узла, который, как считается, символизирует переход между физическим и духовным мирами.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с изображением кельтского спирального узла]]></bodyOverviewDescription> 
 		
 		<imageName>spiral.svg</imageName> 
 		

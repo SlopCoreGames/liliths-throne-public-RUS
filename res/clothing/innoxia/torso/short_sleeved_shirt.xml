@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>220</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[short-sleeved shirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[short-sleeved shirts]]></namePlural> 
-		<description><![CDATA[A short-sleeved shirt, complete with collar and a full-length opening at the front, which is fastened using buttons.]]></description> 
+		<name><![CDATA[рубашка с коротким рукавом]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[рубашки с коротким рукавом]]></namePlural> 
+		<description><![CDATA[Рубашка с коротким рукавом, воротником и полноценным разрезом спереди, который застегивается на пуговицы.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>TORSO_UNDER</slot> 

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>50000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Hazmat Rat Vending Machine]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Hazmat Rat Vending Machines]]></namePlural> 
-		<description><![CDATA[This vending machine bears the words 'Hazmat Rat' in bold, green letters, while on both of its sides there are stylised images of rat-morphs wearing hazmat suits. Although it looks to have seen better days, it's still in fully-functioning condition.]]></description> 
+		<name><![CDATA[Торговый автомат «Крыс-морф в химзащите»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Торговые автоматы «Крыс-морф в химзащите»]]></namePlural> 
+		<description><![CDATA[На этом торговом автомате жирным зеленым шрифтом красуется надпись «Крыс-морф в химзащите», а по бокам изображены стилизованные крыс-морфы в защитных костюмах. Хотя вид у него довольно потрепанный, работает он всё еще исправно.]]></description> 
 		<physicalResistance>50</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>TORSO_OVER</slot> 
@@ -117,24 +117,24 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(climb)] into the vending machine.]]>
+		  <![CDATA[[npc.Name] [npc.verb(climb)] в торговый автомат.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(push)] [npc2.name] into the vending machine.]]>
+		  <![CDATA[[npc.Name] [npc.verb(push)] [npc2.name] в торговый автомат.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.name] into the vending machine.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.name] в торговый автомат.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(climb)] out of the vending machine.]]>
+		  <![CDATA[[npc.Name] [npc.verb(climb)] из торгового автомата.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.name] out of the vending machine.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.name] из торгового автомата.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.name] out of the vending machine.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.name] из торгового автомата.]]>
 		</otherRough>
 	</displacementText>
 </clothing>

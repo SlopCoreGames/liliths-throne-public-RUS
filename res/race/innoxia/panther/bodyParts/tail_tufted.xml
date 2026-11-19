@@ -2,7 +2,7 @@
 <tail>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[tufted panther]]></transformationName>
+	<transformationName><![CDATA[пушистый хвост пантеры]]></transformationName>
 	
 	<coveringType>innoxia_panther_fur</coveringType>
 	
@@ -22,8 +22,8 @@
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural> 
 	
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural> 
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>panther-like</descriptor>
@@ -36,8 +36,8 @@
 		<descriptor>tufted</descriptor>
 	</descriptorsFeminine>
 	
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>furry</descriptor>
 	</tipDescriptorsMasculine>
@@ -47,16 +47,15 @@
 	
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A furry, panther-like tail, with a fluffy tuft of fur at the tip, sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over it, and can twist it almost anywhere [npc.she] [npc.verb(please)].
-			<br/>[npc.Name] now [npc.has] a [style.boldPanther(panther-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Из области чуть выше [npc.her] задницы растет пушистый хвост, похожий на пантериный, на кончике которого красуется густая кисточка; он быстро увеличивается в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] вполне умело им управляет и может изгибать его почти как угодно, чтобы [npc.she] [npc.verb(please)].
+			<br/>[npc.Name] теперь [npc.has] [style.boldPanther(пушистый хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] furry, panther-like tails, with fluffy tufts of fur at their tips, sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a decent amount of control over them, and can twist them almost anywhere [npc.she] [npc.verb(please)].
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldPanther(panther-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] пушистые пантероподобные хвосты с мягкими кисточками на концах растут чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] вполне неплохо ими управляет и может изгибать их почти где угодно, чтобы [npc.she] [npc.verb(please)].
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldPanther(пантероподобные хвосты)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] panther tail with a tuft of fur on the end, which [npc.she] can swish from side to side at will.
 		#ELSE

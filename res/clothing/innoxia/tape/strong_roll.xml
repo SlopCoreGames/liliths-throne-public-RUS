@@ -4,20 +4,20 @@
 	<coreAttributes>
 		<value>80</value>
 		<determiner><![CDATA[a roll of]]></determiner>
-		<name><![CDATA[duct tape]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[duct tape]]></namePlural>
+		<name><![CDATA[армированный скотч]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[армированный скотч]]></namePlural>
 		<description><![CDATA[
-			Backed with woven fabric and covered in plastic, this highly adhesive tape is known as 'duct tape', or sometimes 'duck tape'.
+			Основанная на тканой основе и покрытая слоем пластика, эта невероятно липкая лента известна как «армированный скотч».
 			#IF(thisItem.getSlotEquippedTo()==null)
-				 It's easily strong enough to keep a person's wrists, ankles, or lips bound together...
+				Его прочности с запасом хватает, чтобы намертво связать запястья, лодыжки или даже сжать губы...
 			#ELSE
-				 <i>This particular length of duct tape has been
+				 <i>Этот кусок скотча был
 				#IF(thisItem.getSlotEquippedTo()==IS_WRIST)
-					 wrapped around [npc.namePos] wrists, keeping them tightly bound together!
+					 обмотан вокруг запястий [npc.namePos], плотно стягивая их вместе!
 				#ELSEIF(thisItem.getSlotEquippedTo()==IS_ANKLE)
-					 wrapped around [npc.namePos] ankles, keeping them tightly bound together!
+					 обмотан вокруг лодыжек [npc.namePos], плотно стягивая их вместе!
 				#ELSEIF(thisItem.getSlotEquippedTo()==IS_MOUTH)
-					 stuck over [npc.namePos] mouth, preventing [npc.herHim] from speaking!
+					 наклеен поверх рта [npc.namePos], мешая [npc.herHim] говорить!
 				#ENDIF
 				</i>
 			#ENDIF
@@ -115,70 +115,70 @@
 
 	<replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wrap)] the tape around [npc.her] wrists, effectively binding them together.]]>
+			<![CDATA[[npc.Name] [npc.verb(wrap)] скотч вокруг запястий [npc.her], надежно связывая их.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(wrap)] the tape around [npc2.namePos] wrists, effectively binding them together.]]>
+			<![CDATA[[npc.Name] [npc.verb(wrap)] скотч вокруг запястий [npc2.namePos], надежно связывая их.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(wrap)] the tape around [npc2.namePos] wrists, effectively binding them together.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(wrap)] скотч вокруг запястий [npc2.namePos], надежно связывая их.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off the tape from around [npc.her] wrists.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] ленту с запястий [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off the tape from around [npc2.namePos] wrists.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] ленту с запястий [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(tear)] off the tape from around [npc2.namePos] wrists.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(tear)] ленту с запястий [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText slot="ANKLE" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wrap)] the tape around [npc.her] ankles, effectively binding them together.]]>
+			<![CDATA[[npc.Name] [npc.verb(wrap)] ленту вокруг лодыжек [npc.her], намертво стягивая их.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(wrap)] the tape around [npc2.namePos] ankles, effectively binding them together.]]>
+			<![CDATA[[npc.Name] [npc.verb(wrap)] ленту вокруг лодыжек [npc2.namePos], намертво стягивая их.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(wrap)] the tape around [npc2.namePos] ankles, effectively binding them together.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(wrap)] ленту вокруг лодыжек [npc2.namePos], намертво стягивая их.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="ANKLE" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off the tape from around [npc.her] ankles.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] ленту с лодыжек [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off the tape from around [npc2.namePos] ankles.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] ленту с лодыжек [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(tear)] off the tape from around [npc2.namePos] ankles.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(tear)] ленту с лодыжек [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a long piece of tape and [npc.verb(stick)] it over [npc.her] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] длинный кусок ленты и [npc.verb(stick)] его прямо на рот [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a long piece of tape and [npc.verb(stick)] it over [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] длинную полоску скотча и [npc.verb(stick)] её прямо на рот [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a long piece of tape and roughly [npc.verb(stick)] it over [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] длинную полоску скотча и грубо [npc.verb(stick)] её на рот [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(peel)] the tape off [npc.her] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(вздрагивает)], когда [npc.she] [npc.verb(отклеивает)] скотч от рта [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(peel)] the tape off [npc2.her] mouth.]]>
+			<![CDATA[[npc2.Name] [npc2.verb(вздрагивает)], когда [npc.name] [npc.verb(отклеивает)] скотч от рта [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] and [npc2.verb(let)] out a cry as [npc.name] roughly [npc.verb(rip)] the tape off [npc2.her] mouth.]]>
+			<![CDATA[[npc2.Name] [npc2.verb(вздрагивает)] и [npc2.verb(издает)] крик, когда [npc.name] грубо [npc.verb(сдирает)] скотч с рта [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	

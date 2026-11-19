@@ -16,25 +16,25 @@
 	
 	<name defaultPrepend="true"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Pussy-beautification
+			Приукрашивание киски
 		#ELSE
-			Cunt-uglification
+			Уродство киски
 		#ENDIF
 	]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Let's make your pussy the prettiest in town!
+			Давай сделаем твою киску самой прелестной в этом городе!
 		#ELSE
-			Let's make that cunt of yours a really nasty, ugly one!
+			Давай сделаем твою щель по-настоящему мерзкой и уродливой!
 		#ENDIF
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			~Mmm!~ Your pussy's so cute!
+			~Ммм!~ Твоя киска такая миленькая!
 		#ELSE
-			~Eww!~ Your cunt's so nasty!
+			~Фу!~ Твоя щель такая мерзкая!
 		#ENDIF
 	]]></applicationSpeechEnd>
 	

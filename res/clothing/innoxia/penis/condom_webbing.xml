@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>0</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[condom-webbing]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[condom-webbings]]></namePlural>
-    <description><![CDATA[This thick binding of spider-webbing is acting like a condom, and will prevent any semen from entering the body of a sexual partner.]]></description>
+    <name><![CDATA[паутинная оболочка]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[паутинные оболочки]]></namePlural>
+    <description><![CDATA[Эта толстая обмотка из паутины работает как презерватив, не давая семени попасть в тело полового партнера.]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -57,25 +57,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her] spinneret to quickly wrap [npc.her] [npc.penis] in a thick binding of spider-webbing.]]>
+      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her] паутинный аппарат, чтобы быстро обмотать [npc.her] [npc.penis] толстым слоем паутины.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her] spinneret to quickly wrap [npc2.namePos] [npc2.penis] in a thick binding of spider-webbing.]]>
+      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her] паутинный аппарат, чтобы быстро обмотать [npc2.namePos] [npc2.penis] толстым слоем паутины.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(use)] [npc.her] spinneret to roughly wrap [npc2.namePos] [npc2.penis] in a thick binding of spider-webbing.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(use)] [npc.her] паутинный аппарат, чтобы грубо обмотать [npc2.namePos] [npc2.penis] толстым слоем паутины.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tear)] off the webbing which was binding [npc.her] [npc.penis] and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] [npc.verb(tear)] с себя паутину, сковывающую [npc.her] [npc.penis], и [npc.verb(throw)] её прочь.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tear)] off the webbing which was binding [npc2.namePos] [npc2.penis] and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] [npc.verb(tear)] с себя паутину, сковывающую [npc2.namePos] [npc2.penis], и [npc.verb(throw)] её прочь.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(tear)] off the webbing which was binding [npc2.namePos] [npc2.penis] and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(tear)] с себя паутину, сковывающую [npc2.namePos] [npc2.penis], и [npc.verb(throw)] её прочь.]]>
     </otherRough>
   </displacementText>
 

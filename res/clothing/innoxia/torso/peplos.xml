@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>750</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[peplos]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[peploses]]></namePlural>
-		<description><![CDATA[A body-length garment, consisting of a long, rectangular cloth which is gathered about the waist and then pinned into place over the shoulders. The top half of the peplos is folded down, giving the appearance of a second piece of clothing.]]></description>
+		<name><![CDATA[пеплос]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пеплосы]]></namePlural>
+		<description><![CDATA[Длинное одеяние во весь рост, представляющее собой полотно прямоугольной формы, которое собирается на талии и закрепляется булавками на плечах. Верхний край пеплоса отгибается вниз, создавая видимость второго слоя одежды.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot> 
@@ -85,73 +85,73 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] the peplos about [npc.her] waist, before folding the top edges over [npc.her] shoulders and pinning them in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] пеплос вокруг талии [npc.her], после чего отгибает верхние края через [npc.her] плечи и закрепляет их.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] the peplos about [npc2.namePos] waist, before folding the top edges over [npc2.her] shoulders and pinning them in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] пеплос вокруг талии [npc2.namePos], после чего отгибает верхние края через [npc2.her] плечи и закрепляет их.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(gather)] the peplos about [npc2.namePos] waist, before folding the top edges over [npc2.her] shoulders and pinning them in place.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(gather)] пеплос вокруг талии [npc2.namePos], после чего отгибает верхние края через [npc2.her] плечи и закрепляет их.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unpin)] the peplos, before taking it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unpin)] пеплос, прежде чем снять его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unpin)] [npc2.namePos] peplos, before taking it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unpin)] пеплос [npc2.namePos], прежде чем снять его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unpin)] [npc2.namePos] peplos, before taking it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unpin)] пеплос [npc2.namePos], прежде чем снять его.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the skirt of [npc.her] peplos back down into the proper position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол пеплоса [npc.her] вниз, возвращая его в надлежащее положение.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the skirt of [npc2.namePos] peplos back down into the proper position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол [npc2.namePos] пеплоса назад, возвращая его в надлежащее положение.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the skirt of [npc2.namePos] peplos back down into the proper position.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] подол [npc2.namePos] пеплоса назад, возвращая его в надлежащее положение.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] peplos.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол [npc.her] пеплоса вверх.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] peplos.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол [npc2.namePos] пеплоса вверх.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of the skirt of [npc2.namePos] peplos, before roughly pulling it up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] край подола [npc2.namePos] пеплоса, после чего грубо задирает его вверх.]]>
 		</otherRough>
 	</displacementText>
 
 	<displacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unpin)] [npc.her] peplos and [npc.verb(allow)] the top half to fall down around [npc.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unpin)] [npc.her] пеплос, [npc.verb(allow)] его верхней части спасть на [npc.her] талию.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unpin)] [npc2.namePos] peplos and [npc.verb(allow)] the top half to fall down around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unpin)] [npc2.namePos] пеплос, [npc.verb(allow)] его верхней части спасть на [npc2.her] талию.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unpin)] [npc2.namePos] peplos and [npc.verb(yank)] the top half down around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unpin)] [npc2.namePos] пеплос и [npc.verb(yank)] его верхнюю часть вниз, на [npc2.her] талию.]]>
 	  </otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the top half of [npc.her] peplos and [npc.verb(pin)] the top edges into place over [npc.her] shoulders.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc.her] пеплоса вверх и [npc.verb(pin)] её края на [npc.her] плечах.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the top half of [npc2.namePos] peplos and [npc.verb(pin)] the top edges into place over [npc2.her] shoulders.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc2.namePos] пеплоса вверх и [npc.verb(pin)] её края на [npc2.her] плечах.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(yank)] up the top half of [npc2.namePos] peplos and [npc.verb(pin)] the top edges into place over [npc2.her] shoulders.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(yank)] верхнюю часть [npc2.namePos] пеплоса и [npc.verb(pin)] закрепляет края на [npc2.her] плечах.]]>
 		</otherRough>
 	</replacementText>
 

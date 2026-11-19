@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[horn chains]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[horn chains]]></namePlural>
-		<description><![CDATA[Two pairs of rings, with each pair being connected by a decorative chain. The rings are of a size suitable for being slotted onto someone's horns.]]></description>
+		<name><![CDATA[цепи для рогов]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[цепи для рогов]]></namePlural>
+		<description><![CDATA[Две пары колец, соединенных между собой декоративными цепями. Размер колец идеально подходит для того, чтобы надевать их на рога.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -19,7 +19,7 @@
 		
 		<stickers>
 			<category id="more_chains" priority="1">
-				<categoryName><![CDATA[Chain count]]></categoryName>
+				<categoryName><![CDATA[Количество цепей]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="0" colourSelected="GENERIC_GOOD">
 					<stickerName><![CDATA[One chain]]></stickerName>
 					<namePrefix/>
@@ -80,25 +80,25 @@
 
 	<replacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
 	<self>
-		<![CDATA[[npc.Name] [npc.verb(slide)] the rings onto [npc.her] [npc.horns], before allowing the connected chains to dangle free.]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] надевает кольца на [npc.her] [npc.horns], позволяя соединенным цепям свободно свисать.]]>
 	</self>
 	<other>
-		<![CDATA[[npc.Name] [npc.verb(slide)] the rings onto [npc2.namePos] [npc2.horns], before allowing the connected chains to dangle free.]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] надевает кольца на [npc2.namePos] [npc2.horns], позволяя соединенным цепям свободно свисать.]]>
 	</other>
 	<otherRough>
-		<![CDATA[[npc.Name] roughly [npc.verb(slide)] the rings onto [npc2.namePos] [npc2.horns], before allowing the connected chains to dangle free.]]>
+		<![CDATA[[npc.Name] грубо [npc.verb(slide)] натягивает кольца на [npc2.namePos] [npc2.horns], позволяя соединенным цепям свободно свисать.]]>
 	</otherRough>
 	</replacementText>
 
 	<displacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
 	<self>
-		<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] rings from off of [npc.her] [npc.horns].]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] снимает [npc.her] колец с [npc.her] [npc.horns].]]>
 	</self>
 	<other>
-		<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] rings from off of [npc2.her] [npc2.horns].]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] снимает [npc2.namePos] колец с [npc2.her] [npc2.horns].]]>
 	</other>
 	<otherRough>
-		<![CDATA[[npc.Name] roughly [npc.verb(slide)] [npc2.namePos] rings from off of [npc2.her] [npc2.horns].]]>
+		<![CDATA[[npc.Name] грубо [npc.verb(slide)] стягивает [npc2.namePos] колец с [npc2.her] [npc2.horns].]]>
 	</otherRough>
 	</displacementText>
 	

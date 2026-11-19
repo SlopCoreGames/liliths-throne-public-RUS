@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[pencil skirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pencil skirts]]></namePlural>
-		<description><![CDATA[A type of skirt which is designed to cling tightly to the wearer's hips and legs.]]></description> 
+		<name><![CDATA[юбка-карандаш]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[юбки-карандаши]]></namePlural>
+		<description><![CDATA[Тип юбки, которая плотно облегает бедра и ноги того, кто её носит.]]></description> 
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>LEG</slot>
@@ -49,25 +49,25 @@
 	
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the pencil skirt and [npc.verb(pull)] it up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в юбку-карандаш и [npc.verb(pull)] её вверх, чтобы она плотно села на талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the pencil skirt, before pulling it up around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в юбку-карандаш, а затем натягивает её на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the pencil skirt, before yanking it up around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в юбку-карандаш, после чего резко натягивает её на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] pencil skirt, before slipping it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] юбку-карандаш [npc.her] вниз, а затем стягивает её.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] pencil skirt, before slipping it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] юбку-карандаш [npc2.namePos] вниз, а затем стягивает её.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] pencil skirt, before yanking it off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] юбку-карандаш [npc2.namePos] вниз, а затем срывает её с ног.]]>
     </otherRough>
   </displacementText>
   

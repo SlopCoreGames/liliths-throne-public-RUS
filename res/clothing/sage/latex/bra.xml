@@ -2,12 +2,12 @@
 <!-- For a version without all of the comments, see "rental_daddy.xml". -->
 <clothing>
 	<coreAttributes>
-		<authorTag><![CDATA[A small tag sewn into the waist reads "Sage".]]></authorTag>
+		<authorTag><![CDATA[На поясе пришита маленькая бирка с надписью «Sage».]]></authorTag>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[latex zip bra]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[latex zip bras]]></namePlural>
-		<description><![CDATA[A low-cut bra that reveals a lot of the wearer's cleavage. A zip splits the front and can be undone in order to provide quick access to the wearer's breasts.]]></description>
+		<name><![CDATA[латексный бюстгальтер на молнии]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[латексные бюстгальтеры на молнии]]></namePlural>
+		<description><![CDATA[Бюстгальтер с глубоким декольте, открывающий вид на пышную грудь. Спереди расположена молния, которую можно расстегнуть, чтобы быстро добраться до сосков.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -64,25 +64,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the latex bra around [npc.her] chest before pulling up on the zipper.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] латексный бюстгальтер на груди [npc.her], а затем застегивает молнию.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the latex bra around [npc2.namePos] chest before pulling up on the zipper.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] латексный бюстгальтер на груди [npc2.namePos], а затем застегивает молнию.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the latex bra around [npc2.namePos] chest before roughly pulling up on the zipper.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] латексный бюстгальтер на груди [npc2.namePos], а затем резко застегивает молнию.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] latex bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] латексный бюстгальтер [npc.her] и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] latex bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] латексный бюстгальтер [npc2.namePos] и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unzip)] [npc2.namePos] latex bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unzip)] латексный бюстгальтер [npc2.namePos] и [npc.verb(take)] его.]]>
 		</otherRough>
 	</displacementText>
 	

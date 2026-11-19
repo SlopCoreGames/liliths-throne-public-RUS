@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<coveringType>innoxia_panther_fur</coveringType>
 	
@@ -15,10 +15,10 @@
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldPanther(panther-like)], [npc.assholeFullDescription].
+		[npc.She] теперь [npc.has] [style.boldPanther(panther-like)], [npc.assholeFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a panther-like, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] пантероподобная, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

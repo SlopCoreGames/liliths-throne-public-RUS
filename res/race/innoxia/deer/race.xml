@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[deer-morph]]></name>
-	<namePlural><![CDATA[deer-morphs]]></namePlural>
+	<name><![CDATA[оленья морфология]]></name>
+	<namePlural><![CDATA[оленьи морфологии]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[deer]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[олень]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[deer]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[олень]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[deer]]></defaultTransformName>
+	<defaultTransformName><![CDATA[олень]]></defaultTransformName>
 	
 	<colour>innoxia_deer</colour>
 	

@@ -6,18 +6,18 @@
 	
 	<race>dsg_otter</race>
 	
-	<transformationName><![CDATA[otter]]></transformationName>
+	<transformationName><![CDATA[выдра]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[otter-]]></name>
+		<name><![CDATA[выдра-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[otter-]]></name>
+		<name><![CDATA[выдра-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<authorTag><![CDATA[Inside the tongue of each boot, a small engraving reads "MFD by DSG Threadworks".]]></authorTag>
+		<authorTag><![CDATA[На язычке каждого сапога красуется маленькая гравировка: «Изготовлено DSG Threadworks».]]></authorTag>
 		<value>350</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[vintage combat boots]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[vintage combat boots]]></namePlural>
-		<description><![CDATA[A pair of sturdy, traditional-style combat boots. Unlike their modern counterparts, these are designed more for durability than for comfort or agility. Luckily for you, someone has already mostly broken these in.]]></description> 
+		<name><![CDATA[винтажные армейские ботинки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[винтажные армейские ботинки]]></namePlural>
+		<description><![CDATA[Пара добротных армейских ботинок в традиционном стиле. В отличие от современных аналогов, они созданы скорее для долговечности, чем для комфорта или маневренности. К твоему счастью, кто-то уже успел их почти разносить.]]></description> 
 		<physicalResistance>2</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>FOOT</slot>
@@ -47,25 +47,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] the boots on and [npc.verb(adjust)] the laces until they're comfortable. [npc.She] then [npc.verb(wind)] the laces around the upper a few times, [npc.verb(tie)] a sturdy knot and [npc.verb(tuck)] the excess neatly between the lacing and the tongue.]]>
+		  <![CDATA[[npc.Name] [npc.verb(надевает)] сапоги и [npc.verb(затягивает)] шнурки до удобного состояния. Затем [npc.She] [npc.verb(обматывает)] шнурки вокруг голенища несколько раз, [npc.verb(завязывает)] крепкий узел и [npc.verb(заправляет)] лишние концы аккуратно между шнуровкой и язычком.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(put)] [npc2.namePos] [npc2.feet] into the boots and [npc.verb(adjust)] the laces until they're comfortable. [npc.She] then [npc.verb(wind)] the laces around the upper a few times, [npc.verb(tie)] a sturdy knot and [npc.verb(tuck)] the excess neatly between the lacing and the tongue.]]>
+		  <![CDATA[[npc.Name] [npc.verb(вставляет)] [npc2.namePos] [npc2.feet] в сапоги и [npc.verb(затягивает)] шнурки до удобного состояния. Затем [npc.She] [npc.verb(обматывает)] шнурки вокруг голенища несколько раз, [npc.verb(завязывает)] крепкий узел и [npc.verb(заправляет)] лишние концы аккуратно между шнуровкой и язычком.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.namePos] [npc2.feet] into the boots and [npc.verb(pull)] the laces as tightly as possible before tying a hasty knot.]]>
+		  <![CDATA[[npc.Name] [npc.verb(запихивает)] [npc2.namePos] [npc2.feet] в сапоги и [npc.verb(затягивает)] шнурки как можно туже, после чего поспешно завязывает узел.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the laces and pull the boots from [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(развязывает)] шнурки и стягивает сапоги с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the laces and pull the boots from [npc2.namePos] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(развязывает)] шнурки и стягивает сапоги с [npc2.namePos] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(rip)] the lace open and yank the boots from [npc2.namePos] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(раскрывает)] шнуровку и с силой стягивает сапоги с [npc2.namePos] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<authorTag><![CDATA[The tag sewn into the inside reads "MFD by DSG Threadworks".]]></authorTag>
+		<authorTag><![CDATA[На бирке, пришитой с изнанки, гласит: «Изготовлено DSG Threadworks».]]></authorTag>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[vintage fatigue tunic]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[vintage fatigue tunics]]></namePlural>
-		<description><![CDATA[A waist-length tunic made from cotton twill with two breast pockets. Fabric tabs have been sewn onto the collar but you are not familiar with the style or meaning.]]></description>
+		<name><![CDATA[винтажная рабочая туника]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[винтажные рабочие туники]]></namePlural>
+		<description><![CDATA[Туника длиной до талии, сшитая из хлопковой саржи, с двумя нагрудными карманами. На воротник нашиты тканевые петли, но тебе неизвестен этот стиль или его значение.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>TORSO_UNDER</slot>
@@ -18,7 +18,7 @@
 		
 		<stickers>
 			<category id="wearntear" priority="1"> 
-				<categoryName><![CDATA[Wear and Tear]]></categoryName>
+				<categoryName><![CDATA[Износ]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix priority="1"><![CDATA[]]></namePrefix>
@@ -32,9 +32,9 @@
 				</sticker>
 				<sticker id="patched" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BROWN"> 
 					<stickerName><![CDATA[Patched]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Patched ]]></namePrefix> 
+					<namePrefix priority="1"><![CDATA[Латаные ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has been repeatedly patched up, and you don't even want to think about the stains.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Их латали столько раз, что даже вспоминать о пятнах не хочется.</i>]]></descriptionModification> 
 					<imageName>rtunic_st_ragged.svg</imageName> 
 					<itemTagsAdded/> 
 					<itemTagsRemoved/> 
@@ -112,49 +112,49 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] tunic and [npc.verb(pull)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] тунику и [npc.verb(pull)] её с себя.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] tunic and [npc.verb(pull)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] тунику и [npc.verb(pull)] её с себя.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] practically [npc.verb(rip)] [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] практически [npc.verb(rip)] [npc2.namePos] тунику.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the tunic and [npc.verb(button)] it up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] тунику и [npc.verb(button)] её.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] put the tunic on and [npc.verb(button)] it up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] надеть тунику и [npc.verb(button)] её.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] the tunic onto [npc2.name] before roughly buttoning it up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] тунику на [npc2.name], а затем грубо застегивает её на пуговицы.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] тунику.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] тунику.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unbutton)] [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unbutton)] [npc2.namePos] тунику.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up [npc.her] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] [npc.her] тунику.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] [npc2.namePos] тунику.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(button)] up [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(button)] [npc2.namePos] тунику.]]>
 		</otherRough>
 	</replacementText>
 	

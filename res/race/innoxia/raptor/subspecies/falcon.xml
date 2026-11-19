@@ -28,30 +28,30 @@
 	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
 	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[falcon-morph]]></name>
-	<namePlural><![CDATA[falcon-morphs]]></namePlural>
-	<singularMaleName><![CDATA[falcon-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[falcon-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[falcon-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[falcon-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic falcon, known as a 'falcon-morph' when bipedal, and a 'falcon-taur' when the lower body is that of a feral falcon.]]></description>
+	<name><![CDATA[морф-сокол]]></name>
+	<namePlural><![CDATA[морфы-соколы]]></namePlural>
+	<singularMaleName><![CDATA[парень-сокол]]></singularMaleName>
+	<singularFemaleName><![CDATA[девушка-сокол]]></singularFemaleName>
+	<pluralMaleName><![CDATA[парни-соколы]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[девушки-соколы]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный сокол, которого называют «морфом-соколом», когда он передвигается на двух ногах, и «соколотавром», когда его нижняя часть тела представляет собой дикого сокола.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[tengu]]></name>
-			<namePlural><![CDATA[tengu]]></namePlural>
-			<singularMaleName><![CDATA[tengu]]></singularMaleName>
-			<singularFemaleName><![CDATA[tengu]]></singularFemaleName>
-			<pluralMaleName><![CDATA[tengu]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[tengu]]></pluralFemaleName>
+			<name><![CDATA[тенгу]]></name>
+			<namePlural><![CDATA[тенгу]]></namePlural>
+			<singularMaleName><![CDATA[тенгу]]></singularMaleName>
+			<singularFemaleName><![CDATA[тенгу]]></singularFemaleName>
+			<pluralMaleName><![CDATA[тенгу]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[тенгу]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[falcon]]></feralName>
-		<feralNamePlural><![CDATA[falcons]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[falcon]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[falcon]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[falcons]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[falcons]]></feralPluralFemaleName>
+		<feralName><![CDATA[сокол]]></feralName>
+		<feralNamePlural><![CDATA[соколы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[сокол]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[сокол]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[соколы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[соколы]]></feralPluralFemaleName>
 		<legConfiguration>AVIAN</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>56</size>
@@ -63,9 +63,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] speed and agility helps [npc.herHim] to land particularly hard-hitting strikes in combat.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] скорость и ловкость помогают [npc.herHim] наносить в бою особенно мощные удары.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="5">MAJOR_PHYSIQUE</attribute>
 		<attribute value="0">MAJOR_ARCANE</attribute> 

@@ -3,16 +3,16 @@
 	<race>NoStepOnSnek_capybara</race>
 	<coveringType>TONGUE</coveringType>
 	<defaultLength>8</defaultLength>
-	<name><![CDATA[tongue]]></name>
-	<namePlural><![CDATA[tongues]]></namePlural>
+	<name><![CDATA[язык]]></name>
+	<namePlural><![CDATA[языки]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor><![CDATA[capybara-like]]></descriptor>
+		<descriptor><![CDATA[капибароподобный]]></descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor><![CDATA[capybara-like]]></descriptor>
+		<descriptor><![CDATA[капибароподобный]]></descriptor>
 	</descriptorsFeminine>
 	<bodyDescription><![CDATA[
-		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], capybara-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот удерживает [npc.a_tongueLength], [npc.tongueColour(true)], капибароподобный [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
 	]]></bodyDescription>
 	<defaultTongueModifiers></defaultTongueModifiers>
 </tongue>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[ring gag]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[ring gags]]></namePlural> 
-		<description><![CDATA[A leather strap with a metal ring fixed into one side. When secured into position around the wearer's head, the ring is inserted into their mouth, forcing them to keep their mouth open at all times.]]></description>
+		<name><![CDATA[кольцевой кляп]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кольцевые кляпы]]></namePlural> 
+		<description><![CDATA[Кожаный ремень с металлическим кольцом, закрепленным с одной стороны. Когда он затягивается на голове, кольцо вставляется в рот, заставляя человека постоянно держать его широко открытым.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -49,25 +49,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(open)] [npc.her] mouth wide and [npc.verb(slide)] in the ring gag, before reaching back and fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(открывает)] [npc.her] рот широко и [npc.verb(вставляет)] кольцевой кляп, после чего тянется рукой Назад, чтобы застегнуть пряжки и закрепить его на месте.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the ring gag into [npc2.namePos] mouth, before reaching back and fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(засовывает)] кольцевой кляп в рот [npc2.namePos], после чего тянется рукой Назад, чтобы застегнуть пряжки и закрепить его на месте.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(force)] the ring gag into [npc2.namePos] mouth, before reaching back and tightly fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(впихивает)] кольцевой кляп в рот [npc2.namePos], после чего тянется рукой Назад, чтобы туго затянуть пряжки и надежно закрепить его.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the ring gag's straps and [npc.verb(take)] it out of [npc.her] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(расстегивает)] ремни кольцевого кляпа и [npc.verb(вынимает)] его изо рта [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the ring gag's straps and [npc.verb(take)] it out of [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(расстегивает)] ремни кольцевого кляпа и [npc.verb(вынимает)] его изо рта [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] impatiently [npc.verb(unfasten)] the ring gag's straps and [npc.verb(yank)] it out of [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] нетерпеливо [npc.verb(расстегивает)] ремни кольцевого кляпа и [npc.verb(вырывает)] его изо рта [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 </clothing>

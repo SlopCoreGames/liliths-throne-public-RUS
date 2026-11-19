@@ -155,54 +155,54 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[coatl-morph]]></name>
-			<namePlural><![CDATA[coatl-morphs]]></namePlural>
-			<singularMaleName><![CDATA[coatl-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[coatl-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[coatl-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[coatl-girls]]></pluralFemaleName>
+			<name><![CDATA[морф коатля]]></name>
+			<namePlural><![CDATA[морфы коатлей]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-коатль]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-коатль]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-коатли]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-коатли]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="TAIL_LONG">
-			<name><![CDATA[coatl-morph]]></name>
-			<namePlural><![CDATA[coatl-morphs]]></namePlural>
-			<singularMaleName><![CDATA[coatl-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[coatl-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[coatl-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[coatl-girls]]></pluralFemaleName>
+			<name><![CDATA[морф коатля]]></name>
+			<namePlural><![CDATA[морфы коатлей]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-коатль]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-коатль]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-коатли]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-коатли]]></pluralFemaleName>
 		</names>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic coatl, known as a 'coatl-morph' when bipedal, and a 'coatl-naga' when the lower body is that of a typically-oversized feral coatl. To be identified as a coatl-morph, a character must be a dragon-morph with a coatl face, forked tongue, head feathers, internal ears, a normal dragon tail, and feathered wings.]]></description>
+	<description><![CDATA[Антропоморфный коатль, известный как «коатль-морф», когда он передвигается на двух ногах, и «коатль-нага», когда его нижняя часть представляет собой типичного огромного дикого коатля. Чтобы считаться коатль-морфом, персонаж должен быть дракономорфом с лицом коатля, раздвоенным языком, перьями на голове, внутренними ушными раковинами, обычным драконьим хвостом и пернатыми крыльями.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[quetzalcoatl]]></name>
-			<namePlural><![CDATA[quetzalcoatls]]></namePlural>
-			<singularMaleName><![CDATA[quetzalcoatl]]></singularMaleName>
-			<singularFemaleName><![CDATA[quetzalcoatl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[quetzalcoatls]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[quetzalcoatls]]></pluralFemaleName>
+			<name><![CDATA[кецалькоатль]]></name>
+			<namePlural><![CDATA[кецалькоатли]]></namePlural>
+			<singularMaleName><![CDATA[кецалькоатль]]></singularMaleName>
+			<singularFemaleName><![CDATA[кецалькоатль]]></singularFemaleName>
+			<pluralMaleName><![CDATA[кецалькоатли]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[кецалькоатли]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="TAIL_LONG">
-			<name><![CDATA[quetzalcoatl]]></name>
-			<namePlural><![CDATA[quetzalcoatls]]></namePlural>
-			<singularMaleName><![CDATA[quetzalcoatl]]></singularMaleName>
-			<singularFemaleName><![CDATA[quetzalcoatl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[quetzalcoatls]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[quetzalcoatls]]></pluralFemaleName>
+			<name><![CDATA[кецалькоатль]]></name>
+			<namePlural><![CDATA[кецалькоатли]]></namePlural>
+			<singularMaleName><![CDATA[кецалькоатль]]></singularMaleName>
+			<singularFemaleName><![CDATA[кецалькоатль]]></singularFemaleName>
+			<pluralMaleName><![CDATA[кецалькоатли]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[кецалькоатли]]></pluralFemaleName>
 		</names>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[coatl]]></feralName>
-		<feralNamePlural><![CDATA[coatl]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[coatl]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[coatl]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[coatl]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[coatl]]></feralPluralFemaleName>
+		<feralName><![CDATA[коатль]]></feralName>
+		<feralNamePlural><![CDATA[коатль]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[коатль]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[коатль]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[коатль]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[коатль]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -233,9 +233,7 @@
 	</feralAttributes>
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] coatl-like body is very powerful, and as a mythological creature [npc.she] [npc.has] a close arcane affinity with both the strengths and weaknesses that it brings.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] тело, подобное кожулу, обладает огромной силой, а как мифическое существо, [npc.she] [npc.has] оно обладает тесной связью с Арканой, несущей в себе как преимущества, так и недостатки.]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 

@@ -37,20 +37,20 @@
 	<basicDescriptionId>CAT_MORPH_BASIC</basicDescriptionId>
 	<advancedDescriptionId>CAT_MORPH_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[cougar-morph]]></name>
-	<namePlural><![CDATA[cougar-morphs]]></namePlural>
-	<singularMaleName><![CDATA[cougar-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[cougar-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[cougar-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[cougar-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic cougar, known as a 'cougar-morph' when bipedal, and a 'cougartaur' when the lower body is that of a feral cougar. To be identified as a cougar-morph, a character must be a cat-morph with plain, tan-coloured fur, as well as muscles of at least '[#MUSCLE_THREE_MUSCULAR.getName(false)]' and a body size of least '[#BODY_SIZE_TWO_AVERAGE.getName(false)]'.]]></description>
+	<name><![CDATA[кугуар-морф]]></name>
+	<namePlural><![CDATA[кугуар-морфы]]></namePlural>
+	<singularMaleName><![CDATA[парень-кугуар]]></singularMaleName>
+	<singularFemaleName><![CDATA[девушка-кугуар]]></singularFemaleName>
+	<pluralMaleName><![CDATA[парни-кугуары]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[девушки-кугуары]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный кугуар, известный как «кугуар-морф», когда он передвигается на двух ногах, и «кугуартавр», если его нижняя часть тела представляет собой дикого кугуара. Чтобы считаться кугуар-морфом, персонаж должен быть кот-морфом с однотонным рыжевато-коричневым мехом, а также иметь мускулатуру не ниже «[#MUSCLE_THREE_MUSCULAR.getName(false)]» и размер тела не менее «[#BODY_SIZE_TWO_AVERAGE.getName(false)]».]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[cougar]]></feralName>
-		<feralNamePlural><![CDATA[cougars]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[cougar]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[cougar]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[cougars]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[cougars]]></feralPluralFemaleName>
+		<feralName><![CDATA[кугуар]]></feralName>
+		<feralNamePlural><![CDATA[кугуары]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[кугуар]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[кугуар]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[кугуары]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[кугуары]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>80</size>
@@ -62,9 +62,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>true</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body is extremely strong, and [npc.sheIsFull] capable of great feats of strength.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] обладает невероятной силой, и [npc.sheIsFull] способна на великие подвиги.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="25">MAJOR_PHYSIQUE</attribute>
 		<attribute value="0">MAJOR_ARCANE</attribute> 

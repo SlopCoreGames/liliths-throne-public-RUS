@@ -6,15 +6,15 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[witch's broom]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[witch's brooms]]></namePlural>
-		<description><![CDATA[An old-fashioned wooden broom, consisting of a long pole with a bundle of flexible twigs attached to one end. The opposite end of the pole widens out a little, where there's a curious engraving of a pentagram etched into the wood.]]></description>
+		<name><![CDATA[ведьмина метла]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ведьмины метлы]]></namePlural>
+		<description><![CDATA[Старинная деревянная метла, состоящая из длинного шеста с пучком гибких прутьев на одном конце. Противоположный конец шеста слегка расширяется, и на дереве выгравирована любопытная пентаграмма.]]></description>
 		<attackDescriptor>Broom swipe</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Swipe your broom at [npc.name]!]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Взмахни метлой по [npc.name]!]]></attackTooltipDescription>
 		<rarity>EPIC</rarity>
 		<weaponSet>innoxia_witch</weaponSet>
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] broom.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] broom away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] метлу.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] метлу.]]></unequipText>
 		<imageName>witch_broom.svg</imageName> 
 		<imageEquippedName/> 
 		<damage>8</damage> 
@@ -53,23 +53,21 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(whack)] [npc2.namePos] [npc2.arm] with [npc.her] broom!
+		[npc.Name] [npc.verb(whack)] [npc2.namePos] [npc2.arm] с помощью [npc.her] метлы!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swipe)] [npc.her] broom at [npc2.name] and [npc.verb(manage)] to whack [npc2.her] [npc2.arm]!
+		[npc.Name] [npc.verb(swipe)] [npc.her] метлой по [npc2.name] и [npc.verb(manage)] умудряется заехать [npc2.her] по [npc2.arm]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] broom at [npc2.name] and [npc.verb(hit)] [npc2.herHim] in the chest!
+		[npc.Name] [npc.verb(swing)] [npc.her] метлой в сторону [npc2.name] и [npc.verb(hit)] [npc2.herHim] прямо в грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swipe)] [npc.her] broom at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swipe)] [npc.her] метлой по [npc2.name], но [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] broom at [npc2.name], but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(swing)] [npc.her] метлой в [npc2.name], но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 </weapon>

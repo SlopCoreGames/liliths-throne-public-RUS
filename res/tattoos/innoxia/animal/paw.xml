@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[dog paw]]></name>
+		<name><![CDATA[собачья лапа]]></name>
 		
-		<description><![CDATA[A stylised silhouette of a canine's paw-print.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a stylised silhouette of a canine's paw-print]]></bodyOverviewDescription> 
+		<description><![CDATA[Стилизованный силуэт собачьей лапы.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка в виде стилизованного силуэта собачьей лапы]]></bodyOverviewDescription> 
 		
 		<imageName>paw.svg</imageName> 
 		

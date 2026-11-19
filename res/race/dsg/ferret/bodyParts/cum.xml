@@ -6,18 +6,18 @@
 	
 	<race>dsg_ferret</race>
 	
-	<transformationName><![CDATA[ferret]]></transformationName>
+	<transformationName><![CDATA[хорек]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[ferret-]]></name>
+		<name><![CDATA[хорьи-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[ferret-]]></name>
+		<name><![CDATA[хорьи-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

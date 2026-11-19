@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A tag sewn into the side seam reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве пришита бирка: «Официальная экипировка Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>300</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[short-sleeved combat shirt]]></name>
+		<name><![CDATA[боевая рубашка с коротким рукавом]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[short-sleeved combat shirts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[боевые рубашки с коротким рукавом]]></namePlural> 
 
-		<description><![CDATA[A moisture-wicking short-sleeved shirt with reinforced sleeves made from a hard-wearing material. The pockets on the sleeves allow easy access even when the wearer's chest may be obstructed.]]></description> 
+		<description><![CDATA[Влагоотводящая рубашка с коротким рукавом из износостойкого материала с усиленными рукавами. Карманы на рукавах обеспечивают легкий доступ к содержимому, даже если грудь носителя чем-то прикрыта.]]></description> 
 
 		<physicalResistance>1</physicalResistance> 
 
@@ -91,49 +91,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on the combat shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] за боевую рубашку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the combat shirt's sleeves as [npc.she] [npc.verb(pull)] the rest down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава боевой рубашки, пока [npc.she] грубо [npc.verb(pull)] остальную часть вниз по [npc2.her] торсу.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] arms into the combat shirt's sleeves as [npc.she] roughly [npc.verb(pull)] the rest down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава боевой рубашки, пока [npc.she] резко [npc.verb(pull)] остальную часть вниз по [npc2.her] торсу.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] combat shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] боевую рубашку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] combat shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] боевую рубашку.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] combat shirt and roughly pull it off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] хватает [npc2.namePos] за боевую рубашку и резко стягивает её через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] combat shirt back down over [npc.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] боевую рубашку [npc.her] обратно вниз по [npc.her] торсу.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] combat shirt back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] боевую рубашку обратно вниз, на [npc2.her] торс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] combat shirt back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] боевую рубашку обратно вниз, на [npc2.her] торс.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] combat shirt up to just below [npc.her] chin.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] боевую рубашку вверх, почти до самого [npc.her] подбородка.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] combat shirt up to just below [npc2.her] chin.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] боевую рубашку вверх, почти до самого [npc2.her] подбородка.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] combat shirt up to just below [npc2.her] chin.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] боевую рубашку вверх, почти до самого [npc2.her] подбородка.]]>
 		</otherRough>
 	</displacementText>
 	

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>1500</value>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA['Amber's Bitch' collar]]></name>
-		<namePlural pluralByDefault="false"><![CDATA['Amber's Bitch' collars]]></namePlural>
-		<description><![CDATA[A special collar that Mistress Amber clasped around your neck. The metal tag reads 'Amber's Bitch', and you feel a lot more submissive while wearing it...]]></description>
+		<name><![CDATA[Ошейник «Сучка Эмбер»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ошейники «Сучка Эмбер»]]></namePlural>
+		<description><![CDATA[Особый ошейник, который госпожа Эмбер застегнула на твоей шее. На металлической бирке выгравировано «Сучка Эмбер», и, когда ты в нем, ты чувствуешь себя куда более покорной...]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -54,25 +54,25 @@
 
 	<replacementText slot="NECK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(fasten)] the collar around [npc.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(fasten)] ошейник на шее [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(fasten)] the collar around [npc2.namePos] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(fasten)] ошейник на шее [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before fastening the collar around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем застегнуть ошейник на шее [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="NECK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] collar, before taking it off from around [npc.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] ошейник [npc.her], прежде чем снять его с шеи [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] collar, before taking it off from around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] ошейник [npc2.namePos], прежде чем снять его с шеи [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] collar, before yanking it off from around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(unfasten)] ошейник [npc2.namePos], а затем сдергивает его с шеи [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	

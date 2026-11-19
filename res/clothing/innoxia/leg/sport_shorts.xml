@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>150</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[sport shorts]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[sport shorts]]></namePlural>
-		<description><![CDATA[A pair of sporty unisex shorts, of the sort typically worn by people partaking in athletic sports or other forms of exercise.]]></description>
+		<name><![CDATA[спортивные шорты]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[спортивные шорты]]></namePlural>
+		<description><![CDATA[Пара спортивных шорт унисекс, которые обычно носят люди, занимающиеся атлетикой или другими видами физических упражнений.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -62,25 +62,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the sport shorts, before pulling them up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в спортивные шорты, а затем натягивает их на талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the sport shorts, before pulling them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в спортивные шорты, а затем натягивает их на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the sport shorts, before yanking them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в спортивные шорты, а затем резко натягивает их на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] sport shorts, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] спортивные шорты [npc.her] вниз, а затем стягивает их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] sport shorts, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] спортивные шорты [npc2.namePos] вниз, а затем стягивает их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] sport shorts, before yanking them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] спортивные шорты [npc2.namePos] вниз, а затем срывает их.]]>
     </otherRough>
   </displacementText>
 	

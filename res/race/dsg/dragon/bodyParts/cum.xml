@@ -6,18 +6,18 @@
 	
 	<race>dsg_dragon</race>
 	
-	<transformationName><![CDATA[dragon]]></transformationName>
+	<transformationName><![CDATA[дракон]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[dragon-]]></name>
+		<name><![CDATA[драконий-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[dragon-]]></name>
+		<name><![CDATA[драконий-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

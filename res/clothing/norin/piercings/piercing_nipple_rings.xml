@@ -2,12 +2,12 @@
 
 <clothing>
   <coreAttributes>
-    <clothingAuthorTag><![CDATA[Small engraved lettering informs you that these piercings were made by 'Norin'.]]></clothingAuthorTag>
+    <clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что эти украшения сделаны мастером по имени «Норин».]]></clothingAuthorTag>
     <value>300</value> <!--10 flames = £1 ~ $1.5-->
     <determiner><![CDATA[a pair of]]></determiner>
-    <name><![CDATA[nipple ring]]></name>
-    <namePlural pluralByDefault="true"><![CDATA[nipple rings]]></namePlural>
-    <description><![CDATA[A pair of metal nipple rings, closed with a captive ball.]]></description>
+    <name><![CDATA[кольцо в соске]]></name>
+    <namePlural pluralByDefault="true"><![CDATA[кольца в сосках]]></namePlural>
+    <description><![CDATA[Пара металлических колец в сосках, запертых с помощью шарика.]]></description>
     
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
@@ -53,25 +53,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of nipple rings into [npc.her] [npc.nipples+].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару колец в [npc.her] [npc.nipples+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of nipple rings into [npc2.namePos] [npc2.nipples+].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару колец в [npc2.namePos] [npc2.nipples+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of nipple rings into [npc2.namePos] [npc2.nipples+], giving them a rough tug.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару колец в [npc2.namePos] [npc2.nipples+], слегка дернув их.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of nipple rings out of [npc.her] [npc.nipples+].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару колец из [npc.her] [npc.nipples+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of nipple rings out of [npc2.namePos] [npc2.nipples+].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару колец из [npc2.namePos] [npc2.nipples+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(tug)] [npc2.NamePos] nipple rings before sliding them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(tug)] [npc2.NamePos] кольца, прежде чем вытащить их.]]>
     </otherRough>
   </displacementText>
   

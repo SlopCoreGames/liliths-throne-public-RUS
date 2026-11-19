@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA["Tailored by the DSG Textile Guild" is crudely sewn into the fabric near the side seam.]]></authorTag>
+		<authorTag><![CDATA[«Сшито текстильной гильдией DSG» — эта грубая надпись вшита в ткань возле бокового шва.]]></authorTag>
 
 		<value>100</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[linen shirt]]></name>
+		<name><![CDATA[льняная рубашка]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[linen shirt]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[льняная рубашка]]></namePlural> 
 
-		<description><![CDATA[A simple short-sleeved shirt made from coarse linen. The sides are partially slitted to allow for good mobility despite the length. Although it's meant to be worn as an undershirt, it is opaque enough to be worn as an outer garment.]]></description> 
+		<description><![CDATA[Простая рубашка с коротким рукавом, сшитая из грубого льна. Бока частично разрезаны, чтобы не стеснять движения, несмотря на длину. Хотя она предназначена для ношения в качестве нижнего белья, она достаточно плотная, чтобы служить и верхней одеждой.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -89,49 +89,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on the linen shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] за льняную рубашку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the linen shirt's sleeves as [npc.she] [npc.verb(pull)] the rest down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава льняной рубашки, пока [npc.she] [npc.verb(pull)] остальную часть вниз, на [npc2.her] торс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] arms into the linen shirt's sleeves as [npc.she] roughly [npc.verb(pull)] the rest down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава льняной рубашки, пока [npc.she] грубо [npc.verb(pull)] остальную часть вниз, на [npc2.her] торс.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] linen shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] льняную рубашку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] linen shirt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] льняную рубашку.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] combat shirt and roughly pull it off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] хватает [npc2.namePos] за боевую рубашку и резко стягивает её через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] linen shirt back down over [npc.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] льняную рубашку [npc.her] обратно вниз, на [npc.her] торс.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] linen shirt back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] льняную рубашку [npc2.namePos] вниз, прикрывая [npc2.her] торс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] linen shirt back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] льняную рубашку [npc2.namePos] вниз, прикрывая [npc2.her] торс.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] linen shirt up to just below [npc.her] chin.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] льняную рубашку [npc.her] вверх, почти до самого [npc.her] подбородка.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] linen shirt up to just below [npc2.her] chin.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] льняную рубашку [npc2.namePos] вверх, почти до самого [npc2.her] подбородка.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] linen shirt up to just below [npc2.her] chin.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] льняную рубашку [npc2.namePos] вверх, почти до самого [npc2.her] подбородка.]]>
 		</otherRough>
 	</displacementText>
 	

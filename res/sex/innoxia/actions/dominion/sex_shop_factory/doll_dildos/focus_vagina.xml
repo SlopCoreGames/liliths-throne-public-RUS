@@ -34,13 +34,13 @@
 	<areasCummedOn/>
 	<title><![CDATA[
 		#IF(sex.getNumberOfOrgasms(pc)==0)
-			Focus
+			Сосредоточиться
 		#ELSE
-			Hard fuck
+			Жесткий трах
 		#ENDIF
 	]]></title>
 	<tooltip><![CDATA[
-		Do as the doll commands and focus on the pleasure of the vibrating dildo in your pussy.
+		Делай всё, что велит кукла, и сосредоточься на удовольствии от вибрирующего дилдо в своей киске.
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -48,7 +48,7 @@
 				[#sex.getNumberOfOrgasms(pc)==0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Obediently doing as you're told, you focus on the pleasure of the vibrating toy that the doll has stuffed deep in your [pc.pussy+]. Being used as no more than an object to test sex toys fills you with an intense, submissive pleasure that would be troubling if it didn't feel so good. For a moment you can think of yourself as nothing more than a mindless sex doll, willing to do anything that's asked of you. As you snap out of this brief fantasy, you're once again hit by an intense rush of arousal, and you realise that it won't take much more to push you to the brink of an orgasm. 
+				Покорно исполняя приказы, ты концентрируешься на ощущениях от вибрирующей игрушки, которую кукла засунула глубоко в твою [pc.pussy+]. То, что тебя используют всего лишь как объект для тестирования секс-игрушек, наполняет тебя интенсивным, подчиненным удовольствием — оно было бы пугающим, если бы не было таким приятным. На мгновение ты начинаешь воспринимать себя как бездумную секс-куклу, готовую на всё, что от неё потребуют. Как только ты выныриваешь из этой мимолетной фантазии, тебя снова накрывает мощная волна возбуждения, и ты понимаешь, что осталось совсем немного до самого пика оргазма.
 			]]></text>
 		</description>
 		<description>
@@ -56,7 +56,7 @@
 				[#sex.getNumberOfOrgasms(pc)>0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Yet again, you obediently do as the doll commands, and after leaning back on your knees, you get a good grip on the equine dildo's fat balls with both hands and pull it half-way out of your stretched twat. Wanting to push both the toy and your new body to their limits, you slam the huge toy back into your pussy as hard as you can. Moaning in depraved joy as you force the toy deep into your wet orifice, you quickly draw it out and repeat the process, fucking your abused cunt as hard and as fast as you can. As your slick juices coat the thick shaft and drip down onto the floor between your legs, you find yourself once again rapidly approaching your climax.
+				И снова ты послушно выполняешь команды куклы: опершись на колени, ты обхватываешь обеими руками толстые яички лошадиного дилдо и вытягиваешь его наполовину из своей растянутой щели. Желая довести и игрушку, и свое новое тело до предела, ты с силой вбиваешь огромный фаллос обратно в свою киску. Стоная от порочного восторга, пока ты заталкиваешь игрушку глубоко в свое влажное отверстие, ты быстро выдергиваешь её и повторяешь процесс, трахая свою измученную щель так жестко и быстро, как только можешь. Пока твоя смазка покрывает толстый ствол и капает на пол между твоих ног, ты понимаешь, что стремительно приближаешься к кульминации.
 			]]></text>
 		</description>
 	</descriptions>

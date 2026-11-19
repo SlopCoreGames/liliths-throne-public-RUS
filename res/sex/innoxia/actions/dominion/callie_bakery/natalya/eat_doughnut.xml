@@ -27,63 +27,63 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Eat doughnuts]]></title>
+	<title><![CDATA[Есть пончики]]></title>
 	<tooltip><![CDATA[
 		#IF(npc2==natalya)
-			Do as Mistress Natalya commands and eat her iced doughnut, before moving over to Callie.
+		
+Делай, как велит госпожа Наталья, и ешь её глазированный пончик, прежде чем перейти к Кэлли.
 		#ELSE
-			Begin by eating Callie's iced doughnut, before moving over to Mistress Natalya.
+		
+Сначала съешь глазированный пончик Кэлли, а затем переходи к госпоже Наталье.
 		#ENDIF
 	]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
 				#IF(npc2==natalya)
-					Moving up behind Mistress Natlaya, you find yourself in a very familiar position, although unlike the other times in which you've eaten her ass, the centauress's puffy asshole is currently looking exactly like a delicious, iced doughnut. Her horse-like tail swishes to one side as you lean forwards, and a horny moan escapes from between her full lips as you slide your [pc.tongue+] over her sugary hole.
+Подкравшись со спины к госпоже Натальи, ты оказываешься в очень знакомой позиции, хотя, в отличие от прошлых раз, когда ты ел её задницу, пухлое анус кентаврийки сейчас выглядит точь-в-точь как аппетитный пончик в глазури. Её лошадиный хвост отбрасывается в сторону, когда ты наклоняешься вперед, и из её полных губ вырывается похотливый стон, когда ты проводишь своим [pc.tongue+] по её сахарному отверстию.
+
+<br/><br/>
+
+[natalya.speechNoEffects(~Ммм!~ Да... Ешь мой пончик, ты, [style.mule] шлюшка!~)] — требует твоя госпожа. С радостью повинуясь её приказу, ты начинаешь с энтузиазмом вылизывать и покрывать поцелуями её покрытый глазурью анус. Всё больше и больше сладкой сахарной глазури исчезает с её пухлого отверстия, пока ты ешь её задницу, и пока ты проглатываешь глазурь и посыпку, которые нанес меньше минуты назад, её иссиня-черный анус быстро обнажается.
+
+<br/><br/>
+
+[callie.speechNoEffects(Вот так... Ешь её пончик!~)] — подбадривает тебя Калли, с азартом наблюдая за тем, как ты увлеченно занимаешься анилингусом с кентаврийкой.
+
+<br/><br/>
+
+Огромный, дикий член госпожи Натальи встает в неистовую эрекцию, пока ты страстно слизываешь и сосешь каждую последнюю сладкую каплю глазури с её задницы. Оставив её пухлое отверстие покрытым лишь твоей слюной, ты запечатлеваешь на нем последний поцелуй, прежде чем перевести взгляд на нетронутый пончик Калли. Издав глубокий, похотливый стон, твоя госпожа командует: [natalya.speechNoEffects(Давай же, покажи Калли, на что способен один из моих [style.mules]!~)]
+
+<br/><br/>
+
+Перебравшись и устроившись позади Калли, ты наклоняешься вперед и оставляешь на её глазированном анусе большой, влажный поцелуй. Когда полулошадка издает радостный тоненький визг, ты начинаешь скользить своим [pc.tongue] по её пухлому анусу, и, точно так же, как и с госпожой, быстро слизываешь глазурь с её ануса-пончика. Меньше чем за минуту её задний проход оказывается покрыт лишь твоей скользкой слюной, и, напоследок поцеловав его, ты отстраняешься, любуясь своей работой.
+
+<br/><br/>
+
+Слизав глазурь с анусов Калли и Натальи, ты превратил их из красиво украшенных пончиков в похотливые, покрытые слюной дырки для траха. Пока их огромные лошадиные члены пульсируют от желания, обе женщины жадно подаются задом назад, подставляя тебе свои возбужденные лошадиные задницы. Жаждущий добавки и желающий увидеть, как эти два огромных лошадиных члена извергнут свои порции прямо на пол, ты решаешь продолжать и заставить своих двух любовниц кончить от твоего орального ласкания. Снова возвращаясь к госпоже Наталье, ты прижимаешься губами к её пухлому анусу и с энтузиазмом начинаешь есть её задницу...				#ELSE
+Подкравшись к Кэлли сзади, ты оказываешься в знакомой позиции, хотя, в отличие от твоего прошлого опыта поедания её ануса, пухлая дырочка лошадиной девушки сейчас выглядит точь-в-точь как аппетитный пончик в глазури. Её лошадиный хвост виляет в сторону, когда ты наклоняешься вперёд, и из её полных губ вырывается похотливый стон, когда ты проводишь своим [pc.tongue+] по её сахарному отверстию.
+
 					
 					<br/><br/>
 					
-					[natalya.speechNoEffects(~Mmm!~ Yes... Eat my doughnut, you [style.mule] slut!)] your Mistress demands. More than happy to do as she says, you start enthusiastically licking and kissing her icing-covered anus. More and more of the sweet, sugary coating is stripped from her puffy hole as you eat her ass, and as you swallow down the icing and sprinkles which you applied less than a minute ago, her ebony anus is quickly uncovered.
+					[callie.speechNoEffects(~Ммм!~ О! Да... Ешь мой пончик... ~Ооох!~)] — возбуждённо стонет Кэлли. С радостью исполняя её желание, ты с энтузиазмом начинаешь вылизывать и покрывать поцелуями её покрытый глазурью анус. По мере того как ты лакаешь её задницу, сладкая сахарная глазурь всё больше счищается с её пухлого отверстия, и когда ты проглатываешь глазурь и посыпку, которые нанёс меньше минуты назад, её иссиня-чёрный анус быстро обнажается.
 					
 					<br/><br/>
 					
-					[callie.speechNoEffects(That's it... Eat her doughnut!)] Callie encourages you as she watches you eagerly performing anilingus on the centauress.
+					[natalya.speechNoEffects(Вот так, покажи Кэлли, на что способен один из моих [style.mules]!)] — подбадривает тебя госпожа Наталья, с жадностью наблюдая за тем, как ты увлечённо занимаешься анилингусом с лошадиной девушкой рядом с ней.
 					
 					<br/><br/>
 					
-					Mistress Natalya's huge, feral cock rises into a raging erection as you passionately lick and suck every last sweet drop of icing off her asshole. Leaving her puffy hole covered in nothing more than your saliva, you plant one last kiss on it, before looking over to Callie's unspoilt doughnut. Letting out a deep, horny moan, your Mistress commands, [natalya.speechNoEffects(Go on, show Callie what one of my [style.mules] can do!)]
+					Огромный лошадиный член Кэлли встаёт в неистовую эрекцию, пока ты страстно слизываешь и сосёшь каждую последнюю сладкую каплю глазури с её ануса. Оставив её пухлую дырочку покрытой лишь твоей слюной, ты запечатлеваешь на ней последний поцелуй, прежде чем перевести взгляд на нетронутый пончик своей Госпожи. Издав глубокий, похотливый стон, кентавридка командует: [natalya.speechNoEffects(Ну же, [style.mule], теперь моя очередь! Иди сюда и съешь мою задницу!)]
 					
 					<br/><br/>
 					
-					Shuffling over to position yourself behind Callie, you lean forwards and plant a big, sloppy kiss on her iced asshole. As the horse-girl lets out a happy little squeal, you start sliding your [pc.tongue] over her puffy anus, and just like you did with your Mistress, you quickly strip the icing from her doughnut-shaped asshole. In less than a minute, her rear entrance is coated in nothing but your slimy saliva, and after you've given it one final kiss, you pull back and admire your handiwork.
+					Переместившись, чтобы встать позади своей Госпожи, ты наклоняешься вперёд и оставляешь большой, влажный поцелуй на её покрытом глазурью анусе. Когда кентавридка издаёт одобряющий стон, ты начинаешь водить своим [pc.tongue] по её пухлому анусу, и, точно так же, как с Кэлли, быстро счищаешь глазурь с её ануса-пончика. Меньше чем за минуту её задний проход покрывается лишь твоей скользкой слюной, и, запечатлев на нём финальный поцелуй, ты отстраняешься, любуясь своей работой.
 					
 					<br/><br/>
 					
-					Having removed the icing from Callie's and Natalya's assholes, you've transformed them from nicely-decorated doughnuts into lewd-looking, saliva-glazed fuck-holes. As their huge, horse-like cocks throb with need, they both eagerly push their asses back, presenting you with their horny, equine assholes. Hungry for more, and wanting to see these two huge horse-cocks blast their loads all over the floor, you decide to keep going and make your two lovers cum from your oral attention. Moving back over to Mistress Natalya, you press your lips against her puffy asshole and start enthusiastically eating her ass...
-				
-				#ELSE
-					Moving up behind Callie, you find yourself in a familiar position, although unlike your other experiences with eating her ass, the horse-girl's puffy asshole is currently looking exactly like a delicious, iced doughnut. Her horse-like tail swishes to one side as you lean forwards, and a horny moan escapes from between her full lips as you slide your [pc.tongue+] over her sugary hole.
-					
-					<br/><br/>
-					
-					[callie.speechNoEffects(~Mmm!~ Oh! Yes... Eat my doughnut... ~Ooh!~)] Callie excitedly moans. More than happy to do as she says, you start enthusiastically licking and kissing her icing-covered anus. More and more of the sweet, sugary coating is stripped from her puffy hole as you eat her ass, and as you swallow down the icing and sprinkles which you applied less than a minute ago, her ebony anus is quickly uncovered.
-					
-					<br/><br/>
-					
-					[natalya.speechNoEffects(That's it, show Callie what one of my [style.mules] can do!)] Mistress Natalya encourages you as she watches you eagerly performing anilingus on the horse-girl beside her.
-					
-					<br/><br/>
-					
-					Callie's huge, horse-like cock rises into a raging erection as you passionately lick and suck every last sweet drop of icing off her asshole. Leaving her puffy hole covered in nothing more than your saliva, you plant one last kiss on it, before looking over to your Mistress's unspoilt doughnut. Letting out a deep, horny moan, the centauress commands, [natalya.speechNoEffects(Come on [style.mule], it's my turn! Get over here and eat my ass!)]
-					
-					<br/><br/>
-					
-					Shuffling over to position yourself behind your Mistress, you lean forwards and plant a big, sloppy kiss on her iced asshole. As the centauress lets out an approving moan, you start sliding your [pc.tongue] over her puffy anus, and just like you did with Callie, you quickly strip the icing from her doughnut-shaped asshole. In less than a minute, her rear entrance is coated in nothing but your slimy saliva, and after you've given it one final kiss, you pull back and admire your handiwork.
-					
-					<br/><br/>
-					
-					Having removed the icing from Callie's and Natalya's assholes, you've transformed them from nicely-decorated doughnuts into lewd-looking, saliva-glazed fuck-holes. As their huge, horse-like cocks throb with need, they both eagerly push their asses back, presenting you with their horny, equine assholes. Hungry for more, and wanting to see these two huge horse-cocks blast their loads all over the floor, you decide to keep going and make your two lovers cum from your oral attention. Moving back over to Callie, you press your lips against her puffy asshole and start enthusiastically eating her ass...
-				#ENDIF
+					Слизав глазурь с анусов Кэлли и Натальи, ты превратил их из нарядных пончиков в похотливые, покрытые слюной дырки для траха. Пока их огромные лошадиные члены пульсируют от желания, обе женщины жадно подают задницы назад, подставляя тебе свои возбуждённые лошадиные анусы. Жаждущий добавки и желая увидеть, как эти два огромных лошадиных члена извергнут свои порции прямо на пол, ты решаешь продолжать и довести своих двух любовниц до оргазма своим оральным ласкам. Снова возвращаясь к Кэлли, ты прижимаешься губами к её пухлой дырочке и с энтузиазмом начинаешь поедать её задницу...				#ENDIF
 			]]></text>
 		</description>
 	</descriptions>

@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic harpy (feminine)]]></name>
+		<name><![CDATA[обычная гарпия (женская)]]></name>
 		
-		<description><![CDATA[Feminine harpy clothing.]]></description>
+		<description><![CDATA[Женская одежда гарпии.]]></description>
 		
 		<femininity>FEMININE</femininity>
 		

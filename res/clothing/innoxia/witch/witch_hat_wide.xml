@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[wide-brimmed Witch's hat]]></name>
+		<name><![CDATA[Широкополая ведьмина шляпа]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[wide-brimmed Witch's hats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Широкополые ведьмины шляпы]]></namePlural> 
 		
-		<description><![CDATA[A witch's hat, with a pointy top and a particularly wide brim.]]></description> 
+		<description><![CDATA[Ведьмина шляпа с острым верхом и особенно широкими полями.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -59,25 +59,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] on the Witch's hat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] на ведьминскую шляпу.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(put)] the Witch's hat onto [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] ведьминскую шляпу на голову [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the Witch's hat onto [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] ведьминскую шляпу на голову [npc2.namePos].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] Witch's hat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(take)] с [npc.her] ведьминскую шляпу.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(take)] [npc2.namePos] Witch's hat off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(take)] ведьминскую шляпу с [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] Witch's hat and [npc.verb(pull)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] ведьминскую шляпу [npc2.namePos] и [npc.verb(pull)] её с головы.]]>
 		</otherRough>
 	</displacementText>
 	

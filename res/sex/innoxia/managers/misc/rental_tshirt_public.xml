@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[bench]]></deskName>
+	<deskName><![CDATA[скамья]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[true]]></subHasEqualControl>
@@ -13,13 +13,13 @@
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
-			As [npc.name] loudly declares that [npc.sheIs] going to enjoy
+			Когда [npc.name] громко заявляет, что [npc.sheIs] собирается насладиться
 			#IF(npc.hasFetish(FETISH_DOMINANT))
-				 fucking [npc.her] [npc.petName(pc)],
+				 ебля [npc.her] [npc.petName(pc)],
 			#ELSE
-				 getting fucking by [npc.her] [npc.petName(pc)],
+				 когда [npc.her] [npc.petName(pc)] будут поиметь,
 			#ENDIF
-			 several passersby stop and watch to find out what's about to happen. Clearly being turned on by the prospect of putting on a show for the public, [npc.name] lets out an erotic [npc.moan] and hurries to get started...
+				 несколько прохожих останавливаются и замирают в ожидании развязки. Очевидно, заведенная перспективой устроить шоу на публике, [npc.name] издает эротичный [npc.moan] и поспешно принимается за дело...
 		]]></startingDescription>
 		<randomDescriptions enabled="false"/>
 	</publicSex>

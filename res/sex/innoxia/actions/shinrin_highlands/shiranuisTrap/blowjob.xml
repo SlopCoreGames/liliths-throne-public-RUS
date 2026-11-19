@@ -30,9 +30,9 @@
 	<applyEndEffects/>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Blowjob]]></title>
+	<title><![CDATA[Минет]]></title>
 	<tooltip><![CDATA[
-		Service Shiranui's cock with your mouth.
+		Обслуживай член Ширануи своим ртом.
 	]]></tooltip>
 	<descriptions>
 		<!-- No oral fetish: -->
@@ -41,13 +41,13 @@
 				[#!npc.hasFetish(FETISH_ORAL_GIVING)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				As Shiranui's [shiranui.cock+] is pushed into [npc.namePos] mouth, [npc.she] [npc.verb(wrap)] [npc.her] [npc.lips+] around the youko's throbbing shaft and [npc.verb(give)] her a blowjob.
+				Когда [shiranui.cock+] Ширануи вталкивается в [npc.namePos] рот, [npc.she] [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг пульсирующего члена ёкая и [npc.verb(give)] ей минет.
 			]]></text>
 			<text><![CDATA[
-				Although the ribbons are preventing [npc.name] from moving, [npc.she] still [npc.verb(try)] to bob [npc.her] head back and forth as [npc.she] [npc.verb(give)] Shiranui a sloppy blowjob.
+				Хотя ленты мешают [npc.name] двигаться, [npc.she] всё равно [npc.verb(try)] двигать [npc.her] головой вперед-назад, пока [npc.she] [npc.verb(give)] Ширануи влажный минет.
 			]]></text>
 			<text><![CDATA[
-				[npc.Name] [npc.verb(let)] out a series of gargling [npc.moans] as Shiranui pushes her [shiranui.cock+] down [npc.her] throat, and [npc.verb(wrap)] [npc.her] [npc.lips+] around the youko's shaft as [npc.she] [npc.verb(give)] her a blowjob.
+				[npc.Name] издает серию булькающих [npc.moans], когда Ширануи проталкивает свой [shiranui.cock+] глубоко в [npc.her] горло, и [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг члена ёкая, пока [npc.she] [npc.verb(give)] ей минет.
 			]]></text>
 		</description>
 		<!-- (oral fetish) -->
@@ -56,13 +56,13 @@
 				[#npc.hasFetish(FETISH_ORAL_GIVING)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				As Shiranui's [shiranui.cock+] is pushed into [npc.namePos] mouth, [npc.she] eagerly [npc.verb(wrap)] [npc.her] [npc.lips+] around the youko's throbbing shaft and [npc.verb(give)] her an enthusiastic blowjob.
+				Когда [shiranui.cock+] Ширануи вталкивается в [npc.namePos] рот, [npc.she] с жадностью [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг пульсирующего члена ёкая и [npc.verb(give)] ей страстный минет.
 			]]></text>
 			<text><![CDATA[
-				Although the ribbons are preventing [npc.name] from moving, [npc.she] still [npc.verb(try)] to bob [npc.her] head back and forth as [npc.she] [npc.verb(give)] Shiranui a very enthusiastic, sloppy blowjob.
+				Хотя ленты мешают [npc.name] двигаться, [npc.she] всё равно [npc.verb(try)] двигать [npc.her] головой вперед-назад, пока [npc.she] [npc.verb(give)] Ширануи очень страстный и влажный минет.
 			]]></text>
 			<text><![CDATA[
-				[npc.Name] [npc.verb(let)] out a series of horny, gargling [npc.moans] as Shiranui pushes her [shiranui.cock+] down [npc.her] throat, and [npc.verb(wrap)] [npc.her] [npc.lips+] around the youko's shaft as [npc.she] enthusiastically [npc.verb(give)] her a blowjob.
+				[npc.Name] издает серию похотливых, булькающих [npc.moans], когда Ширануи проталкивает свой [shiranui.cock+] глубоко в [npc.her] горло, и [npc.verb(wrap)] [npc.her] [npc.lips+] вокруг члена ёкая, пока [npc.she] с энтузиазмом [npc.verb(give)] ей минет.
 			]]></text>
 		</description>
 	</descriptions>

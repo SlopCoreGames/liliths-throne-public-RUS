@@ -2,7 +2,7 @@
 <fluid>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<baseFluidType>GIRLCUM</baseFluidType>
 	
@@ -13,11 +13,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[deer]]></name>
+		<name><![CDATA[олень]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[deer]]></name>
+		<name><![CDATA[олень]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers>

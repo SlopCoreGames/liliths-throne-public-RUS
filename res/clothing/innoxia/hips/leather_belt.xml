@@ -4,9 +4,9 @@
   <coreAttributes>
 	<value>200</value>
 	<determiner><![CDATA[a]]></determiner>
-	<name><![CDATA[leather belt]]></name>
-	<namePlural pluralByDefault="false"><![CDATA[leather belts]]></namePlural>
-	<description><![CDATA[A plain, unisex leather belt, complete with metal buckle.]]></description>
+	<name><![CDATA[кожаный ремень]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[кожаные ремни]]></namePlural>
+	<description><![CDATA[Простой кожаный ремень на любой пол, дополненный металлической пряжкой.]]></description>
 	<physicalResistance>0</physicalResistance>
 	<femininity>ANDROGYNOUS</femininity>
 	<slot>HIPS</slot>
@@ -54,25 +54,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the leather belt around [npc.her] waist, before fastening the buckle.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] кожаный ремень вокруг талии [npc.her], прежде чем застегнуть пряжку.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the leather belt around [npc2.namePos] waist, before fastening the buckle.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] кожаный ремень вокруг талии [npc2.namePos], прежде чем застегнуть пряжку.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] tightly [npc.verb(wrap)] the leather belt around [npc2.namePos] waist, before fastening the buckle.]]>
+      <![CDATA[[npc.Name] туго [npc.verb(wrap)] кожаный ремень вокруг талии [npc2.namePos], прежде чем застегнуть пряжку.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] leather belt and [npc.verb(slip)] it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbuckle)] кожаный ремень [npc.her] и [npc.verb(slip)] его вниз.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc2.namePos] leather belt and [npc.verb(slip)] it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbuckle)] кожаный ремень [npc2.namePos] и [npc.verb(slip)] его вниз.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(unbuckle)] [npc2.namePos] leather belt and [npc.verb(pull)] it off.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(unbuckle)] кожаный ремень [npc2.namePos] и [npc.verb(pull)] его с себя.]]>
     </otherRough>
   </displacementText>
   

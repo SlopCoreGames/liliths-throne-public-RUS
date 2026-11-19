@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>5</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[ragged chest wrap]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[ragged chest wraps]]></namePlural>
-		<description><![CDATA[A thick strip of ragged, tattered cloth, that's been shaped in such a way so as to be wrapped around the chest in order to support a pair of breasts.]]></description>
+		<name><![CDATA[рваная повязка на грудь]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[рваные повязки на грудь]]></namePlural>
+		<description><![CDATA[Толстая полоса рваной, ветхой ткани, обернутая особым образом вокруг груди, чтобы поддерживать пару женских сосков.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot>
@@ -17,12 +17,12 @@
 		
 		<stickers>
 			<category id="strp" priority="1">
-				<categoryName><![CDATA[Strap]]></categoryName>
+				<categoryName><![CDATA[Лямка]]></categoryName>
 				<sticker id="shldr" priority="1" defaultSticker="true" zLayer="-1">
 					<stickerName><![CDATA[Shoulder]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="3"><![CDATA[ A single loop has been incorporated into the crude design, which is meant to be slung over one shoulder.]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="3"><![CDATA[В грубую конструкцию встроена одна петля, предназначенная для того, чтобы перекинуть её через одно плечо.]]></descriptionModification>
 					<imageName>ragged_chest_wrap_strap.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -83,25 +83,25 @@
 	
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the ragged chest wrap down over [npc.her] head and [npc.verb(fit)] it into place over [npc.her] [npc.breasts].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] натягивает рваную повязку на голову [npc.her] и [npc.verb(fit)] усаживает её на [npc.her] [npc.breasts].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the ragged chest wrap down over [npc2.namePos] head and [npc.verb(fit)] it into place over [npc2.her] [npc2.breasts].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] натягивает рваную повязку на голову [npc2.namePos] и [npc.verb(fit)] усаживает её на [npc2.her] [npc2.breasts].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the ragged chest wrap down over [npc2.namePos] head and [npc.verb(fit)] it into place over [npc2.her] [npc2.breasts].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] натягивает рваную повязку на голову [npc2.namePos] и [npc.verb(fit)] усаживает её на [npc2.her] [npc2.breasts].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] ragged chest wrap.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] срывает с [npc.her] рваную повязку на грудь.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] ragged chest wrap.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] срывает с [npc2.namePos] рваную повязку на грудь.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] ragged chest wrap.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] рваную повязку на груди.]]>
     </otherRough>
   </displacementText>
 	

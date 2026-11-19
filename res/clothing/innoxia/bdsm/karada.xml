@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>400</value> 
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[arcane karada]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[arcane karadas]]></namePlural>
-		<description><![CDATA[A length of rope which, thanks to a special enchantment, ties itself into a tight harness that loops around the wearer's neck, around their body, and under their crotch.]]></description>
+		<name><![CDATA[аркана-карада]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[аркана-карады]]></namePlural>
+		<description><![CDATA[Кусок веревки, который благодаря особому зачарованию сам стягивается в тугую упряжь, обвивая шею, тело и проходя между ног владельца.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>STOMACH</slot>
@@ -53,25 +53,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(hang)] the enchanted rope around [npc.her] neck, whereupon it instantly starts to snake and slide around [npc.her] body with a mind of its own, forming a tight karada within a matter of seconds.]]>
+			<![CDATA[[npc.Name] [npc.verb(hang)] зачарованную веревку на шею [npc.her], после чего она тут же начинает извиваться и скользить по телу [npc.her] словно живая, за считанные секунды образуя тугую караду.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(hang)] the enchanted rope around [npc2.namePos] neck, whereupon it instantly starts to snake and slide around [npc2.her] body with a mind of its own, forming a tight karada within a matter of seconds.]]>
+			<![CDATA[[npc.Name] [npc.verb(hang)] зачарованную веревку на шею [npc2.namePos], после чего она тут же начинает извиваться и скользить по телу [npc2.her] словно живая, за считанные секунды образуя тугую караду.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(loop)] the enchanted rope around [npc2.namePos] neck, whereupon it instantly starts to snake and slide around [npc2.her] body with a mind of its own, forming a tight karada within a matter of seconds.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(loop)] зачарованную веревку вокруг шеи [npc2.namePos], после чего она тут же начинает извиваться и скользить по телу [npc2.her] словно живая, за считанные секунды образуя тугую караду.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(untie)] [npc.her] karada and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(untie)] караду на [npc.her] и [npc.verb(take)] её.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(untie)] [npc2.namePos] karada and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(untie)] караду на [npc2.namePos] и [npc.verb(take)] её.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(untie)] [npc2.namePos] karada and [npc.verb(yank)] it off.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(untie)] караду на [npc2.namePos] и [npc.verb(yank)] её с неё.]]>
 		</otherRough>
 	</displacementText>
 </clothing>

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>750</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[men's haori]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[men's haori]]></namePlural>
-		<description><![CDATA[A traditional thigh-length kimono-style jacket, which is primarily worn by the reclusive youko.]]></description>
+		<name><![CDATA[мужское хаори]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[мужское хаори]]></namePlural>
+		<description><![CDATA[Традиционная куртка в стиле кимоно длиной до середины бедра, которую в основном носят затворнические ёко.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>MASCULINE</femininity>
 		<slot>TORSO_OVER</slot>
@@ -56,25 +56,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] through the haori's sleeves as [npc.she] [npc.verb(pull)] it on.
+			[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] сквозь рукава хаори, пока [npc.she] [npc.verb(pull)] его на себя.
 		]]></self>
 		<other> <![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the haori's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
+			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава хаори, пока [npc.she] [npc.verb(pull)] его на себя [npc2.herHim].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.arms] through the haori's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
+			[npc.Name] грубо [npc.verb(push)] [npc2.namePos] [npc2.arms] сквозь рукава хаори, пока [npc.she] [npc.verb(pull)] его на себя [npc2.herHim].
 		]]></otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(take)] [npc.her] haori off.
+			[npc.Name] [npc.verb(take)] [npc.her] хаори.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(take)] [npc2.namePos] haori off.
+			[npc.Name] [npc.verb(take)] [npc2.namePos] хаори.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(take)] [npc2.namePos] haori off.
+			[npc.Name] грубо [npc.verb(take)] [npc2.namePos] хаори.
 		]]></otherRough>
 	</displacementText>
 	

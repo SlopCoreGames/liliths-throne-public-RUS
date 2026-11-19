@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[The tag sewn into the inside reads "Made for cool cats by DSG Tanning Corp".]]></authorTag>
+		<authorTag><![CDATA[На бирке, пришитой изнутри, гласит: «Сделано для крутых парней корпорацией DSG Tanning Corp».]]></authorTag>
 
 		<value>1200</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[women's leather jacket]]></name>
+		<name><![CDATA[женская кожаная куртка]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[women's leather jackets]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[женские кожаные куртки]]></namePlural> 
 
-		<description><![CDATA[A biker-style leather jacket in a feminine cut. Goes well with too much hair gel and a switchblade.]]></description> 
+		<description><![CDATA[Кожаная куртка в байкерском стиле с женственным кроем. Отлично сочетается с избытком геля для волос и выкидным ножом.]]></description> 
 
 		<physicalResistance>2</physicalResistance> 
 
@@ -91,49 +91,49 @@
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] куртки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] куртки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] practically [npc.verb(rip)] off [npc2.namePos] jacket.]]>
+		  <![CDATA[[npc.Name] практически [npc.verb(rip)] с [npc2.namePos] куртки.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on [npc.her] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] на [npc.her] куртку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the jacket's sleeves and [npc.verb(pull)] the rest of it over [npc2.her] shoulders.]]>
+		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава куртки и [npc.verb(pull)] остальное через [npc2.her] плечи.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] [npc2.arms] through the jacket's sleeves and [npc.verb(yank)] the rest of it over [npc2.her] shoulders.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава куртки и [npc.verb(yank)] остальное через [npc2.her] плечи.]]>
 		</otherRough>
 	</replacementText>
 
 	<replacementText type="UNZIPS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(zip)] up [npc.her] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(zip)] молнию на куртке [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(zip)] up [npc2.namePos] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(zip)] молнию на куртке [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(zip)] up [npc2.namePos] jacket.]]>
+		  <![CDATA[[npc.Name] резко [npc.verb(zip)] молнию на куртке [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на куртке [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] jacket.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на куртке [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] the zipper on [npc2.namePos] jacket open.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] молнию на куртке [npc2.namePos], расстегивая её.]]>
 		</otherRough>
 	</displacementText>
 	

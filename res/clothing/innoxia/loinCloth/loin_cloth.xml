@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[ragged loincloth]]></name>
+		<name><![CDATA[рваная набедренная повязка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[ragged loincloths]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[рваные набедренные повязки]]></namePlural> 
 		
-		<description><![CDATA[A particularly crude and ragged loincloth. Even the most destitute and disadvantaged residents of Dominion wouldn't be seen dead in this.]]></description> 
+		<description><![CDATA[Особенно грубая и рваная набедренная повязка. Даже самые нищие и обездоленные жители Dominion не стали бы носить это даже под страхом смерти.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -72,25 +72,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(step)] into the loincloth, before pulling it up to cover [npc.her] private parts.]]>
+			<![CDATA[[npc.Name] [npc.verb(step)] в набедренную повязку, а затем натягивает её, чтобы прикрыть интимные места [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the loincloth up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] набедренную повязку вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the loincloth up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] набедренную повязку вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] loincloth down and [npc.verb(kick)] them off [npc.her] [npc.feet].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] набедренную повязку [npc.her] вниз и [npc.verb(kick)] её с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] down [npc2.namePos] loincloth and [npc.verb(pull)] them off [npc2.her] [npc2.feet].]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] набедренную повязку [npc2.namePos] вниз и [npc.verb(pull)] её с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] loincloth and [npc.verb(yank)] them off [npc2.her] [npc2.feet].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] набедренную повязку [npc2.namePos] вниз и [npc.verb(yank)] её с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

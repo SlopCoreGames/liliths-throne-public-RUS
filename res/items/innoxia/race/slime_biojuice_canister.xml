@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>2500</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Biojuice Canister]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Biojuice Canister]]></namePlural>
-		<description><![CDATA[A canister of heavily processed glowing pink liquid, which has a thick, slimy consistency. The warning sign on the front makes it quite clear that drinking this would be a bad idea...]]></description>
+		<name><![CDATA[Канистра биосока]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Канистра биосока]]></namePlural>
+		<description><![CDATA[Канистра с густой, светящейся розовой жидкостью, которая имеет вязкую, слизистую консистенцию. Предупреждающий знак на передней панели ясно дает понять, что пить это — плохая затея...]]></description>
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -33,8 +33,8 @@
 		
 		<effectTooltipLines>
 			<line><![CDATA[[#ATTRIBUTE_MAJOR_CORRUPTION.getFormattedValue(10)]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_CORRUPTION.getFormattedValue(25)] to 'potion effects']]></line>
-			<line><![CDATA[[style.boldSlime(Transforms body into slime!)]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_CORRUPTION.getFormattedValue(25)] к «эффектам зелья»]]></line>
+			<line><![CDATA[[style.boldSlime(Превращает тело в слайма!)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
@@ -43,11 +43,11 @@
 			
 			#IF(npc.getBody().getBodyMaterial()==BODY_MATERIAL_SLIME)
 				<p style='margin-bottom:0; padding-bottom:0;'>
-					[style.colourDisabled([npc.NameIsFull] already a slime, so nothing happens...)]
+					[style.colourDisabled([npc.NameIsFull] уже является слаймом, так что ничего не происходит...)]
 				</p>
 			#ELSEIF(npc.getBody().getBodyMaterial()!=BODY_MATERIAL_FLESH)
 				<p style='margin-bottom:0; padding-bottom:0;'>
-					[style.colourDisabled([npc.NameIsFull] an elemental, so nothing happens...)]
+					[style.colourDisabled([npc.NameIsFull] — элементаль, так что ничего не происходит...)]
 				</p>
 			#ELSE
 				[#npc.setBodyMaterial(BODY_MATERIAL_SLIME)]
@@ -64,10 +64,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Ignoring the warning on the front, [npc.name] [npc.verb(unseal)] one end of the Biojuice Canister and [npc.verb(bring)] it up to [npc.her] [npc.lips]. The glowing pink liquid within gives off a faintly sweet smell, which encourages [npc.herHim] to tilt [npc.her] head back and gulp it all down...
+		Игнорируя предупреждение на передней панели, [npc.name] [npc.verb(раскрывает)] одну сторону канистры с биосоком и [npc.verb(подносит)] её к [npc.her] [npc.lips]. Светящаяся розовая жидкость внутри источает едва уловимый сладковатый аромат, побуждая [npc.herHim] запрокинуть [npc.her] голову и жадно осушить всё содержимое...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Ignoring the warning on the front, [npc.name] [npc.verb(unseal)] one end of the Biojuice Canister and [npc.verb(bring)] it up to [npc2.namePos] [npc2.lips]. The glowing pink liquid within gives off a faintly sweet smell, which encourages [npc2.name] to tilt [npc2.her] head back and gulp it all down...
+		Игнорируя предупреждение на передней панели, [npc.name] [npc.verb(раскрывает)] одну сторону канистры с биосоком и [npc.verb(подносит)] её к [npc2.namePos] [npc2.lips]. Светящаяся розовая жидкость внутри источает едва уловимый сладковатый аромат, побуждая [npc2.name] запрокинуть [npc2.her] голову и жадно осушить всё содержимое...
 		]]></otherUse>
 	</useDescriptions>
 

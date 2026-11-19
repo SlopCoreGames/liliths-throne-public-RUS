@@ -2,8 +2,8 @@
 <coveringType>
 	<category>MAIN_SKIN</category>
 	<determiner><![CDATA[a mass of]]></determiner>
-	<name><![CDATA[tentacle]]></name>
-	<namePlural pluralByDefault="true"><![CDATA[tentacles]]></namePlural>
+	<name><![CDATA[щупальце]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[щупальца]]></namePlural>
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>
 	</naturalCoveringModifiers>

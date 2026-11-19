@@ -2,12 +2,12 @@
 <clothing>
 	
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A tag discreetly sewn into the dress's inner lining informs you that it was made by 'Phlarx'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[На внутренней стороне подкладки платья пришит скромный ярлык, сообщающий, что оно сделано брендом «Phlarx».]]></clothingAuthorTag>
 		<value>800</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[rockabilly dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[rockabilly dresses]]></namePlural>
-		<description><![CDATA[A knee length dress that would look perfect on a pinup, or at a drive-in diner.]]></description>
+		<name><![CDATA[платье в стиле рокабилли]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[платья в стиле рокабилли]]></namePlural>
+		<description><![CDATA[Платье длиной до колен, которое идеально подошло бы пинап-диве или для похода в закусочную при автокинотеатре.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot>
@@ -88,50 +88,50 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the sash, before pulling [npc.her] rockabilly dress off over [npc.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] пояс, а затем стягивает через [npc.her] голову [npc.her] платье в стиле рокабилли.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the sash, before pulling [npc2.namePos] rockabilly dress off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] пояс, а затем стягивает через [npc2.her] голову [npc2.namePos] платье в стиле рокабилли.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the sash, before roughly pulling [npc2.namePos] rockabilly dress off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] пояс, а затем грубо стягивает через [npc2.her] голову [npc2.namePos] платье в стиле рокабилли.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the rockabilly dress down over [npc.her] head and torso, then [npc.verb(tie)] the sash around [npc.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] платье в стиле рокабилли через [npc.her] голову и туловище, а затем [npc.verb(tie)] пояс вокруг [npc.her] талии.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the rockabilly dress down over [npc2.namePos] head and torso, then [npc.verb(tie)] the sash around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] платье в стиле рокабилли через [npc2.namePos] голову и туловище, а затем [npc.verb(tie)] пояс вокруг [npc2.her] талии.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the rockabilly dress down over [npc2.namePos] head and torso, then [npc.verb(tie)] the sash around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] платье в стиле рокабилли через [npc2.namePos] голову и туловище, а затем [npc.verb(tie)] пояс вокруг [npc2.her] талии.]]>
 		</otherRough>
 	</replacementText>
 
 	
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] rockabilly dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] юбку [npc.her] платья в стиле рокабилли вверх.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] rockabilly dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол рокбилли-платья [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] up the skirt of [npc2.namePos] rockabilly dress.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] подол рокбилли-платья [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc.her] rockabilly dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол рокбилли-платья [npc.her] вниз.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc2.namePos] rockabilly dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол рокбилли-платья [npc2.namePos] вниз.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the skirt of [npc2.namePos] rockabilly dress.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] подол рокбилли-платья [npc2.namePos] вниз.]]>
 		</otherRough>
 	</replacementText>
 </clothing>

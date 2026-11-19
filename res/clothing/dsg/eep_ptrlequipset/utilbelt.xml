@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small engraving on the belt buckle reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На пряжке ремня выгравирована надпись: «Служебный ремень Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>500</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's utility belt]]></name>
+		<name><![CDATA[Поясной набор Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's utility belts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Поясные наборы Enforcer]]></namePlural> 
 
-		<description><![CDATA[A two-layer belt made from ballistic nylon with all sorts of useful pouches and a holster for a sidearm attached.]]></description> 
+		<description><![CDATA[Двухслойный ремень из баллистического нейлона, оснащенный множеством полезных подсумков и кобурой для пистолета.]]></description> 
 
 		<physicalResistance>1</physicalResistance> 
 
@@ -68,25 +68,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the utility belt around [npc.her] waist and [npc.verb(snap)] the buckle together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] пояс на талии [npc.her] и [npc.verb(snap)] пряжку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the utility belt around [npc2.namePos] waist and [npc.verb(snap)] the buckle together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] пояс на талии [npc2.namePos] и [npc.verb(snap)] пряжку.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the utility belt around [npc2.namePos] waist as much as possible and forcibly [npc.verb(snap)] the buckle together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] пояс на талии [npc2.namePos] изо всех сил и с усилием [npc.verb(snap)] пряжку.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] utility belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] пояс [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc2.namePos] utility belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] пояс [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(rip)] the utility belt off [npc2.namePos] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(rip)] пояс с талии [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

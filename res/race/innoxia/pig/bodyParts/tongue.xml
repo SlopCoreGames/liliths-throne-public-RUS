@@ -6,19 +6,19 @@
 	
 	<defaultLength>12</defaultLength>
 	
-	<name><![CDATA[tongue]]></name>
-	<namePlural><![CDATA[tongues]]></namePlural>
+	<name><![CDATA[язык]]></name>
+	<namePlural><![CDATA[языки]]></namePlural>
 	
 	<descriptorsMasculine>
-		<descriptor><![CDATA[pig-like]]></descriptor>
+		<descriptor><![CDATA[свиной]]></descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor><![CDATA[pig-like]]></descriptor>
+		<descriptor><![CDATA[свиной]]></descriptor>
 	</descriptorsFeminine>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], pig-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], свиной [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
 	]]></bodyDescription>
 	
 	<defaultTongueModifiers>

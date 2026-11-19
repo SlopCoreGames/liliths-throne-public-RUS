@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a pair of]]></determiner>
 		
-		<name><![CDATA[gothic boot]]></name>
+		<name><![CDATA[готический сапог]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[gothic boots]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[готические сапоги]]></namePlural> 
 		
-		<description><![CDATA[A pair of feminine knee-high boots, made from high-quality leather. A series of straps and buckles, while having their functionality made redundant by means of a zip running up the inner sides, give these boots a very 'gothic' look.]]></description> 
+		<description><![CDATA[Пара женственных высоких сапог из высококачественной кожи. Множество ремешков и пряжек придают им истинно «готический» вид, хотя их функциональность сводится к минимуму благодаря молнии, идущей по внутренней стороне.]]></description> 
 		
 		<physicalResistance>1</physicalResistance> 
 		
@@ -68,25 +68,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] into the boots, before zipping them up.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] в сапоги, а затем застегивает их на молнию.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] into the boots, before zipping them up.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] в сапоги, а затем застегивает их на молнию.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the boots, before zipping them up.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.namePos] [npc2.feet] в сапоги, а затем застегивает их на молнию.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] boots, before taking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] сапоги, прежде чем снять их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] boots, before taking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] сапоги, прежде чем снять их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] quickly [npc.verb(unzip)] [npc2.namePos] boots, before roughly tugging them off.]]>
+      <![CDATA[[npc.Name] быстро [npc.verb(unzip)] [npc2.namePos] сапоги, а затем резко стягивает их.]]>
     </otherRough>
   </displacementText>
 	

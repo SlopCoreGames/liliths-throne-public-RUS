@@ -29,15 +29,15 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Swap end]]></title>
-	<tooltip><![CDATA[Move around to the other end of your partner.]]></tooltip>
+	<title><![CDATA[Смена сторон]]></title>
+	<tooltip><![CDATA[Переместиться к другому концу партнера.]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
 				#IF(sex.getCurrentSexPreference(npc, pc).getTargetedSexArea()==ORIFICE_MOUTH)
-					Having had enough of fucking you, [npc.name] slides [npc.her] [npc.cock+] free, before swiftly moving around to the other end of the bondage bench and slapping [npc.her] [npc.cock+] against your [pc.face+].
+					Натрахавшись с тобой досыта, [npc.name] освобождает [npc.her] [npc.cock+], после чего стремительно перебирается на другой конец борной скамьи и с размаху шлепает [npc.her] [npc.cock+] по твоим [pc.face+].
 				#ELSE
-					Having had enough of fucking your face, [npc.name] slides [npc.her] [npc.cock+] out of your mouth, before swiftly moving around to the other end of the bondage bench and slapping [npc.her] [npc.cock+] against your
+					Натрахавшись с твоим лицом досыта, [npc.name] вытаскивает [npc.her] [npc.cock+] изо рта, после чего стремительно перебирается на другой конец борной скамьи и с размаху шлепает [npc.her] [npc.cock+] по твоим
 					#IF(sex.getCurrentSexPreference(npc, pc).getTargetedSexArea()==ORIFICE_VAGINA)
 						 [pc.pussy+].
 					#ELSE

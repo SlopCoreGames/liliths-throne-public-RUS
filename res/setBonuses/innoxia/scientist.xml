@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <setBonus>
-	<name><![CDATA[Brilliant Scientist]]></name>
+	<name><![CDATA[Блестящий учёный]]></name>
 	
 	<statusEffect>SET_SCIENTIST</statusEffect>
 	

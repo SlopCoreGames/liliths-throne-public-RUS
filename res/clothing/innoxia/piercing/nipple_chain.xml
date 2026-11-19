@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[nipple chain]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[nipple chains]]></namePlural>
-		<description><![CDATA[A pair of ring piercings, which are intended to be inserted into pierced nipples, and which are connected via a series of decorative chains.]]></description>
+		<name><![CDATA[цепочка для сосков]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[цепочки для сосков]]></namePlural>
+		<description><![CDATA[Пара колец для пирсинга, предназначенных для вставки в проколотые соски и соединенных между собой рядом декоративных цепочек.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -19,7 +19,7 @@
 		
 		<stickers>
 			<category id="second_chain" priority="1">
-				<categoryName><![CDATA[Second chain]]></categoryName>
+				<categoryName><![CDATA[Вторая цепочка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1">
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -43,7 +43,7 @@
 				</sticker>
 			</category>
 			<category id="third_chain" priority="2">
-				<categoryName><![CDATA[Third chain]]></categoryName>
+				<categoryName><![CDATA[Третья цепочка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1">
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -95,25 +95,25 @@
 
   <replacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the rings into [npc.her] nipple piercings, before allowing the connected chains to dangle free.]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] кольца в [npc.her] пирсинги сосков, позволяя соединенным цепочкам свободно свисать.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the rings into [npc2.namePos] nipple piercings, before allowing the connected chains to dangle free.]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] кольца в [npc2.namePos] пирсинги сосков, позволяя соединенным цепочкам свободно свисать.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(clip)] the rings into [npc2.namePos] nipple piercings, before allowing the connected chains to dangle free.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(clip)] кольца в [npc2.namePos] пирсинги сосков, позволяя соединенным цепочкам свободно свисать.]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] rings from out of [npc.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] кольца из [npc.her] пирсингов сосков.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] rings from out of [npc2.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] кольца из [npc2.her] пирсингов сосков.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unclip)] [npc2.namePos] rings from out of [npc2.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unclip)] [npc2.namePos] колечки из [npc2.her] пирсинга сосков.]]>
     </otherRough>
   </displacementText>
 	

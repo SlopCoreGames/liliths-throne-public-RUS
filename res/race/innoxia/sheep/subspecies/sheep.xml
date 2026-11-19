@@ -27,20 +27,20 @@
 	<basicDescriptionId>SHEEP_BASIC</basicDescriptionId>
 	<advancedDescriptionId>SHEEP_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[sheep-morph]]></name>
-	<namePlural><![CDATA[sheep-morphs]]></namePlural>
-	<singularMaleName><![CDATA[sheep-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[sheep-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[sheep-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[sheep-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic sheep, known as a 'sheep-morph' when bipedal, and a 'sheeptaur' when the lower body is that of a feral sheep.]]></description>
+	<name><![CDATA[овечья морфология]]></name>
+	<namePlural><![CDATA[овечьи морфологии]]></namePlural>
+	<singularMaleName><![CDATA[овечий мальчик]]></singularMaleName>
+	<singularFemaleName><![CDATA[овечья девочка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[овечьи мальчики]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[овечьи девочки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфная овца, известная как «овечьеморф», когда передвигается на двух ногах, и «овечий тавр», когда её нижняя часть тела представляет собой дикую овцу.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[sheep]]></feralName>
-		<feralNamePlural><![CDATA[sheep]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[ram]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[ewe]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[rams]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[ewes]]></feralPluralFemaleName>
+		<feralName><![CDATA[овца]]></feralName>
+		<feralNamePlural><![CDATA[овца]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[баран]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[овца]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[бараны]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[овцы]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>120</size>
@@ -53,7 +53,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] woolly body has a high resistance to both natural and arcane cold. [npc.She] also [npc.has] a strong instinct to be part of a flock, which helps [npc.herHim] to seduce others.
+		[npc.NamePos] пушистое тело обладает высокой сопротивляемостью как к природному, так и к арканическому холоду. [npc.She] также [npc.has] сильный инстинкт быть частью стада, что помогает [npc.herHim] соблазнять других.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="5">MAJOR_PHYSIQUE</attribute>

@@ -129,7 +129,7 @@
 			OPTIONAL: Default is for a generic description to be displayed
 			PARSER: Initial -->
 		<startingDescription><![CDATA[
-			Several people are drawn to the area by Lilaya's lewd squeals, and as the two of you start having sex, they shamelessly stand nearby and watch...
+			На похотливые визги Lilaya сбегается народ. И пока вы вдвоем предаетесь сексу, зеваки бесстыдно стоят рядом и наблюдают...
 		]]></startingDescription>
 		<!-- The descriptions which are appended to the end of sex action descriptions during sex itself.
 			One of the defined 'description' elements will be chosen at random each turn.
@@ -138,9 +138,9 @@
 			OPTIONAL: Default is for generic descriptions to be displayed
 			PARSER: Every check -->
 		<randomDescriptions enabled="true">
-			<description><![CDATA[One of the onlookers loudly comments on how thick Lilaya's tail is.]]></description>
-			<description><![CDATA[A member of the crowd wolf-whistles.]]></description>
-			<description><![CDATA[You receive some lewd encouragement from a particularly enthusiastic member of the crowd.]]></description>
+			<description><![CDATA[Один из зрителей громко комментирует, какой толстый у Lilaya хвост.]]></description>
+			<description><![CDATA[Кто-то из толпы издает восхищенный свист.]]></description>
+			<description><![CDATA[Ты получаешь порцию похотливого подбадривания от особенно восторженного члена толпы.]]></description>
 		</randomDescriptions>
 	</publicSex>
 	
@@ -516,10 +516,10 @@
 							Style advice: You should probably not replace the player's default lines, or if you do then please only make them as specific as the sex scene itself.
 								i.e. If you make a generic sex scene, it would be jarring for the player to have their character use very specific fetish talk towards their partner.
 								However, if your sex scene is a special one with a lot of custom behaviour, then it would enhance the scene to give the player some specific dirty talk. -->
-						<line><![CDATA[Keep on playing with your tits!]]></line>
-						<line><![CDATA[That's it, push your tits together!]]></line>
-						<line><![CDATA[Don't stop; keep on squeezing your tits!]]></line>
-						<line><![CDATA[Look how hard your nipples are! Go on, pinch them!]]></line>
+						<line><![CDATA[Продолжай ласкать свои сиськи!]]></line>
+						<line><![CDATA[Вот так, сдавливай грудь сильнее!]]></line>
+						<line><![CDATA[Не останавливайся, продолжай тискать свои сиськи!]]></line>
+						<line><![CDATA[Посмотри, какие у тебя твердые соски! Давай, ущипни их!]]></line>
 					</standard>
 					<!-- 'submissive' lines are used when using the 'Submissive talk' action, and are not seen as often as standard lines.
 						The 'additionToDefault' attribute works in the same way as it does for 'standard'.
@@ -605,10 +605,10 @@
 			<dirtyTalk>
 				<character id="pc">
 					<standard additionToDefault="false">
-						<line><![CDATA[This is so embarrassing... But kind of hot...]]></line>
-						<line><![CDATA[Why is this turning me on so much?!]]></line>
-						<line><![CDATA[Do you like them? Am I doing this right?]]></line>
-						<line><![CDATA[I hope you appreciate me doing this for you...]]></line>
+						<line><![CDATA[Это так неловко... Но чертовски возбуждающе...]]></line>
+						<line><![CDATA[Почему это так сильно меня заводит?!]]></line>
+						<line><![CDATA[Тебе нравится? Я всё правильно делаю?]]></line>
+						<line><![CDATA[Надеюсь, ты оценишь то, что я делаю это для тебя...]]></line>
 					</standard>
 				</character>
 			</dirtyTalk>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>1000</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[sun earring]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[sun earrings]]></namePlural>
-		<description><![CDATA[A pair of decorative sun earrings. They are typically sold pre-enchanted with effects that boost the wearer's arcane fire damage and resistance.]]></description>
+		<name><![CDATA[солнечная серьга]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[солнечные серьги]]></namePlural>
+		<description><![CDATA[Пара декоративных солнечных серег. Обычно их продают уже зачарованными: они увеличивают наносимый владельцем огненный урон Арканы и сопротивление к нему.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>PIERCING_EAR</slot> 
@@ -47,25 +47,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the sun earrings into [npc.her] [npc.ears].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] солнечные серьги в [npc.her] [npc.ears].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the sun earrings into [npc2.namePos] [npc2.ears].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] солнечные серьги в [npc2.namePos] [npc2.ears].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(clip)] the sun earrings into [npc2.namePos] [npc2.ears].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(clip)] солнечные серьги в [npc2.namePos] [npc2.ears].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] sun earrings and [npc.verb(take)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] солнечные серьги и [npc.verb(take)] их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] sun earrings and [npc.verb(take)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] солнечные серьги и [npc.verb(take)] их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] sun earrings and roughly [npc.verb(pull)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] солнечные серьги и грубо [npc.verb(pull)] их.]]>
     </otherRough>
   </displacementText>
 	

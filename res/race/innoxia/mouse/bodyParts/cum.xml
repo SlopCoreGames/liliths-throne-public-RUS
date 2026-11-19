@@ -2,20 +2,20 @@
 <fluid>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[mouse-]]></name>
-		<name><![CDATA[rodent-]]></name>
+		<name><![CDATA[мышиный-]]></name>
+		<name><![CDATA[грызуний-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[mouse-]]></name>
-		<name><![CDATA[rodent-]]></name>
+		<name><![CDATA[мышиный-]]></name>
+		<name><![CDATA[грызуний-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

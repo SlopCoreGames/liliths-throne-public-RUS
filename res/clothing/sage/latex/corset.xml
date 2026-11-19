@@ -4,9 +4,9 @@
 	<coreAtributes>
 		<value>200</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[latex corset]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[latex corsets]]></namePlural>
-		<description><![CDATA[A tight corset made from latex.]]></description>
+		<name><![CDATA[латексный корсет]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[латексные корсеты]]></namePlural>
+		<description><![CDATA[Тесный корсет, сделанный из латекса.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>STOMACH</slot>
@@ -47,25 +47,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the latex corset around [npc.her] waist and [npc.verb(snap)] the clips together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] латексный корсет на талии [npc.her] и [npc.verb(snap)] застегивает клипсы.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the latex corset around [npc2.namePos] waist and [npc.verb(snap)] the clips together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] латексный корсет на талии [npc2.namePos] и [npc.verb(snap)] застегивает клипсы.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the latex corset around [npc2.namePos] waist as much as possible and forcibly [npc.verb(snap)] the clips together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] латексный корсет на талии [npc2.namePos] изо всех сил и с усилием [npc.verb(snap)] застегивает клипсы.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] latex corset.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unclip)] латексный корсет на [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] latex corset.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unclip)] латексный корсет на [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(rip)] the latex corset off [npc2.namePos] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(rip)] латексный корсет с талии [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

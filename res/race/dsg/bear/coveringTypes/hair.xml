@@ -5,8 +5,8 @@
 	<category>HAIR</category>
 	
 	<determiner><![CDATA[a layer of]]></determiner>
-	<name><![CDATA[hair]]></name>
-	<namePlural pluralByDefault="false"><![CDATA[hair]]></namePlural> 
+	<name><![CDATA[волосы]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>FURRY</modifier>

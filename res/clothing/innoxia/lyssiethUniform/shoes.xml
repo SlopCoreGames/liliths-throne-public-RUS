@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a pair of]]></determiner>
 		
-		<name><![CDATA[service dress shoe]]></name>
+		<name><![CDATA[пара парадной обуви]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[service dress shoes]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[пара парадных туфель]]></namePlural> 
 		
-		<description><![CDATA[A pair of women's leather shoes, which are worn as part of Lyssieth's guards' uniform.]]></description> 
+		<description><![CDATA[Пара женских кожаных туфель, которые входят в состав форменной одежды гвардейцев Lyssieth.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

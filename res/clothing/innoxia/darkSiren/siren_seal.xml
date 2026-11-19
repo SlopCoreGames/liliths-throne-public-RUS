@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[the]]></determiner>
-		<name><![CDATA[Dark Siren's Seal]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Dark Siren's Seals]]></namePlural>
-		<description><![CDATA[A very ordinary-looking medicinal eyepatch, complete with elastic straps to hold in place. It has been enchanted with a powerful arcane-drain by the demon calling herself 'The Dark Siren', so that she can seal away her immense destructive powers...]]></description>
+		<name><![CDATA[Печать Темной Сирены]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Печати Темной Сирены]]></namePlural>
+		<description><![CDATA[На вид это самая обычная медицинская повязка на глаз с эластичными ремешками для фиксации. Она зачарована мощным аркана-поглотителем демоном, называющей себя «Темной Сиреной», чтобы та могла сдерживать свою безмерную разрушительную мощь...]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>
@@ -58,25 +58,25 @@
 	
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(hook)] the eyepatch's straps around [npc.her] [npc.ears], before positioning the pad over [npc.her] [npc.eye].]]>
+      <![CDATA[[npc.Name] [npc.verb(hook)] ремешки повязки вокруг [npc.her] [npc.ears], после чего прикладывает подушечку к [npc.her] [npc.eye].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(hook)] the eyepatch's straps around [npc2.namePos] [npc2.ears], before positioning the pad over [npc2.her] [npc2.eye].]]>
+      <![CDATA[[npc.Name] [npc.verb(hook)] ремешки повязки вокруг [npc2.namePos] [npc2.ears], после чего прикладывает подушечку к [npc2.her] [npc2.eye].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(hook)] the eyepatch's straps around [npc2.namePos] [npc2.ears], before firmly positioning the pad over [npc2.her] [npc2.eye].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(hook)] ремешки повязки вокруг [npc2.namePos] [npc2.ears], после чего плотно прижимает подушечку к [npc2.her] [npc2.eye].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unloop)] the eyepatch's straps from around [npc.her] [npc.ears], before taking it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unloop)] ремешки повязки вокруг [npc.her] [npc.ears], прежде чем снять её.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unloop)] the eyepatch's straps from around [npc2.namePos] [npc2.ears], before taking it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unloop)] ремешки повязки вокруг [npc2.namePos] [npc2.ears], прежде чем снять её.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(tug)] the eyepatch's straps off of [npc2.namePos] [npc2.ears], before taking it off.]]>
+      <![CDATA[[npc.Name] резко [npc.verb(tug)] ремешки повязки с [npc2.namePos] [npc2.ears], прежде чем снять её.]]>
     </otherRough>
   </displacementText>
 	

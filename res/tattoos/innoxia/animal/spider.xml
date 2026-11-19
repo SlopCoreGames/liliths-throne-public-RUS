@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[spider]]></name>
+		<name><![CDATA[паук]]></name>
 		
-		<description><![CDATA[A stylised silhouette of a spider.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a stylised silhouette of a spider]]></bodyOverviewDescription> 
+		<description><![CDATA[Стилизованный силуэт паука.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка в виде стилизованного силуэта паука]]></bodyOverviewDescription> 
 		
 		<imageName>spider.svg</imageName> 
 		

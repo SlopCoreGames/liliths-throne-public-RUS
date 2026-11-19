@@ -2,12 +2,12 @@
 
 <clothing>
   <coreAttributes>
-    <clothingAuthorTag><![CDATA[Small engraved lettering informs you that this piercing was made by 'Norin'.]]></clothingAuthorTag>
+    <clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что этот пирсинг был сделан мастером «Норин».]]></clothingAuthorTag>
     <value>450</value> <!--10 flames = £1 ~ $1.5-->
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[rose nose piercing]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[rose nose piercings]]></namePlural>
-    <description><![CDATA[A nose piercing with a rose.]]></description>
+    <name><![CDATA[пирсинг в носу в виде розы]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[пирсинги в носу в виде роз]]></namePlural>
+    <description><![CDATA[Пирсинг в носу в форме розы.]]></description>
     
     <physicalResistance>0</physicalResistance>
     <femininity>FEMININE</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
@@ -55,25 +55,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(clip)] a rose piercing into [npc.her] nose.]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] розовый пирсинг в нос [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(clip)] a rose piercing into [npc2.namePos] nose.]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] розовый пирсинг в нос [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] a rose piercing into [npc2.namePos] nose.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] силой вгоняет розовый пирсинг в нос [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(remove)] a rose piercing from [npc.her] nose.]]>
+      <![CDATA[[npc.Name] [npc.verb(remove)] розовый пирсинг из носа [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(remove)] a rose piercing from [npc2.namePos] nose.]]>
+      <![CDATA[[npc.Name] [npc.verb(remove)] розовый пирсинг из носа [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(tug)] a rose piercing out from [npc2.namePos] nose.]]>
+      <![CDATA[[npc.Name] [npc.verb(tug)] вытягивает розовый пирсинг из носа [npc2.namePos].]]>
     </otherRough>
   </displacementText>
   

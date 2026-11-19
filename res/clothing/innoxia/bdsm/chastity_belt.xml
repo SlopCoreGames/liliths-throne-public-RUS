@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[chastity belt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[chastity belts]]></namePlural>
-		<description><![CDATA[A chastity belt, designed to deny access to the wearer's vagina. A hole in the rear strap provides access to the wearer's asshole.]]></description>
+		<name><![CDATA[пояс целомудрия]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пояса целомудрия]]></namePlural>
+		<description><![CDATA[Пояс целомудрия, созданный для того, чтобы закрыть доступ к влагалищу носительницы. Отверстие в заднем ремне обеспечивает доступ к анусу.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>GROIN</slot>
@@ -58,25 +58,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] on the chastity belt and [npc.verb(clip)] the locks into place.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] за пояс целомудрия и [npc.verb(clip)] замки на место.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the chastity belt up around [npc2.namePos] groin, before clipping the locks into place.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] пояс целомудрия выше, к паху [npc2.namePos], после чего защелкивает замки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the chastity belt up around [npc2.namePos] groin, before forcefully clipping the locks into place.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] пояс целомудрия вверх, к паху [npc2.namePos], а затем с силой защелкивает замки.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the chastity belt's locks and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] замки пояса целомудрия и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the locks on [npc2.namePos] chastity belt and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] замки на поясе целомудрия [npc2.namePos] и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] hastily [npc.verb(unfasten)] the locks on [npc2.namePos] chastity belt and [npc.verb(yank)] it off.]]>
+			<![CDATA[[npc.Name] поспешно [npc.verb(unfasten)] замки на поясе целомудрия [npc2.namePos] и [npc.verb(yank)] его с нее.]]>
 		</otherRough>
 	</displacementText>
 </clothing>

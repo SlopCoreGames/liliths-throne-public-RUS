@@ -133,38 +133,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[ryu-morph]]></name>
-			<namePlural><![CDATA[ryu-morphs]]></namePlural>
-			<singularMaleName><![CDATA[ryu-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[ryu-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[ryu-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[ryu-girls]]></pluralFemaleName>
+			<name><![CDATA[рю-морф]]></name>
+			<namePlural><![CDATA[рю-морфы]]></namePlural>
+			<singularMaleName><![CDATA[рю-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[рю-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[рю-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[рю-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic ryu, known as a 'ryu-morph' when bipedal, and a 'ryutaur' when the lower body is that of a typically-oversized feral ryu. To be identified as a ryu-morph, a character must be a dragon-morph with a ryu face, a mane, external ears, a tufted tail, and no wings.]]></description>
+	<description><![CDATA[Антропоморфный рю, которого называют «рю-морфом», когда он передвигается на двух ногах, и «рютавром», если его нижняя часть тела представляет собой типично огромного дикого рю. Чтобы считаться рю-морфом, персонаж должен быть дракономорфом с лицом рю, гривой, внешними ушами, кисточкой на хвосте и без крыльев.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[ikuchi]]></name>
-			<namePlural><![CDATA[ikuchi]]></namePlural>
-			<singularMaleName><![CDATA[ikuchi]]></singularMaleName>
-			<singularFemaleName><![CDATA[ikuchi]]></singularFemaleName>
-			<pluralMaleName><![CDATA[ikuchi]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[ikuchi]]></pluralFemaleName>
+			<name><![CDATA[икути]]></name>
+			<namePlural><![CDATA[икути]]></namePlural>
+			<singularMaleName><![CDATA[икути]]></singularMaleName>
+			<singularFemaleName><![CDATA[икути]]></singularFemaleName>
+			<pluralMaleName><![CDATA[икути]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[икути]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[ryu]]></feralName>
-		<feralNamePlural><![CDATA[ryu]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[ryu]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[ryu]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[ryu]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[ryu]]></feralPluralFemaleName>
+		<feralName><![CDATA[рю]]></feralName>
+		<feralNamePlural><![CDATA[рю]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[рю]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[рю]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[рю]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[рю]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -194,9 +194,7 @@
 	</feralAttributes>
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] ryu-like body is very powerful, and as a mythological creature [npc.she] [npc.has] a close arcane affinity that brings both strength and weakness.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] тело, подобное телу рю, обладает огромной мощью, а как мифическое существо [npc.she] [npc.has] оно обладает тесной связью с Арканой, которая дарует как силу, так и слабость.]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 

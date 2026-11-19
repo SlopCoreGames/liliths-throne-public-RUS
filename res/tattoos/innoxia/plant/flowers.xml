@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[flowers]]></name>
+		<name><![CDATA[цветы]]></name>
 		
-		<description><![CDATA[This tattoo depicts a simplified series of flowers.]]></description> 
-		<bodyOverviewDescription><![CDATA[a floral-themed tattoo, depicting a simplified series of flowers]]></bodyOverviewDescription> 
+		<description><![CDATA[Эта татуировка представляет собой упрощенную серию цветов.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка в цветочном стиле, изображающая упрощенную серию цветов]]></bodyOverviewDescription> 
 		
 		<imageName>flowers.svg</imageName> 
 		

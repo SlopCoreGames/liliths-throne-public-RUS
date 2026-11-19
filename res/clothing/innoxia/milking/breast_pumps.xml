@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendColourName="false"><![CDATA[breast pump]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[breast pumps]]></namePlural>
-		<description><![CDATA[Designed to be attached to a person's breasts or udders via their open end, these hollow, plastic cylinders are connected to two tubes. One pressurises the container, while the other sucks up the milk that's drawn out of the wearer's nipples.]]></description>
+		<name appendColourName="false"><![CDATA[сцеживающий насос]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[сцеживающие насосы]]></namePlural>
+		<description><![CDATA[Эти полые пластиковые цилиндры предназначены для крепления к груди или выменам через их открытый конец; они соединены с двумя трубками. Одна создает давление в контейнере, а другая высасывает молоко, которое извлекается из сосков носительницы.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -78,23 +78,23 @@
 	
 	<replacementText slot="NIPPLE" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(turn)] up the dial on the milking machine, before attaching the now-pressurised pumps to [npc.her] [npc.breasts+].
+			<![CDATA[[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, прежде чем прикрепить нагнетающие давление насосы к [npc.her] [npc.breasts+].
 			#IF(npc.getTotalFluidInArea(ORIFICE_NIPPLE)>0)
-				<br/>[style.italicsCum(The breast-pumps quickly drain [npc.namePos] nipple-creampie!)]
+				<br/>[style.italicsCum(Сцеживающие насосы быстро высасывают сцеженную в соски сперму [npc.namePos]!)]
 			#ENDIF
 			]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(turn)] up the dial on the milking machine, before attaching the now-pressurised pumps to [npc2.namePos] [npc2.breasts+].
+			<![CDATA[[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, прежде чем прикрепить нагнетающие давление насосы к [npc2.namePos] [npc2.breasts+].
 			#IF(npc2.getTotalFluidInArea(ORIFICE_NIPPLE)>0)
-				<br/>[style.italicsCum(The breast-pumps quickly drain [npc2.namePos] nipple-creampie!)]
+				<br/>[style.italicsCum(Сцеживающие насосы быстро высасывают сцеженную в соски сперму [npc2.namePos]!)]
 			#ENDIF
 			]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(crank)] up the dial on the milking machine, before roughly attaching the now-pressurised pumps to [npc2.namePos] [npc2.breasts+].
+			<![CDATA[[npc.Name] [npc.verb(crank)] регулятор на доильном аппарате, прежде чем грубо прикрепить нагнетающие давление насосы к [npc2.namePos] [npc2.breasts+].
 			#IF(npc2.getTotalFluidInArea(ORIFICE_NIPPLE)>0)
-				<br/>[style.italicsCum(The breast-pumps quickly drain [npc2.namePos] nipple-creampie!)]
+				<br/>[style.italicsCum(Сцеживающие насосы быстро высасывают сцеженную в соски сперму [npc2.namePos]!)]
 			#ENDIF
 			]]>
 		</otherRough>
@@ -102,13 +102,13 @@
 
 	<displacementText slot="NIPPLE" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before letting the rapidly-depressurising pumps fall off of [npc.her] [npc.breasts+].]]>
+			<![CDATA[[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате вниз, после чего позволяешь быстро теряющим давление насосам соскользнуть с [npc.her] [npc.breasts+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before letting the rapidly-depressurising pumps fall off of [npc2.namePos] [npc2.breasts+].]]>
+			<![CDATA[[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, после чего позволяет быстро сбрасывающимся насосам соскочить с [npc2.namePos] [npc2.breasts+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[With no regard for [npc2.her] comfort, [npc.name] roughly [npc.verb(yank)] the still-pressurised pumps off of [npc2.namePos] [npc2.breasts+].]]>
+			<![CDATA[Ни капли не заботясь о комфорте [npc2.her], [npc.name] грубо [npc.verb(yank)] всё еще под давлением насосы с [npc2.namePos] [npc2.breasts+].]]>
 		</otherRough>
 	</displacementText>
 	
@@ -117,36 +117,36 @@
 		<self>
 			<![CDATA[
 			#IF(npc.hasBreastsCrotch())
-				[npc.Name] [npc.verb(turn)] up the dial on the milking machine, before attaching the now-pressurised pumps to [npc.her] [npc.udders+].
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, после чего прикрепляет теперь уже под давлением насосы к [npc.her] [npc.udders+].
 				#IF(npc.getTotalFluidInArea(ORIFICE_NIPPLE_CROTCH)>0)
-					<br/>[style.italicsCum(The breast-pumps quickly drain [npc.namePos] nipple-creampie!)]
+					<br/>[style.italicsCum(Насосы быстро высасывают ниппель-криампи из [npc.namePos]!)]
 				#ENDIF
 			#ELSE
-				[npc.Name] [npc.verb(turn)] up the dial on the milking machine, and even though [npc.she] [npc.do]n't have any udders, [npc.she] [npc.verb(decide)] to attach the now-pressurised pumps to [npc.her] stomach...
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, и хотя у [npc.she] [npc.do] нет вымени, [npc.she] [npc.verb(decide)] прикрепить под давлением насосы к [npc.her] животу...
 			#ENDIF
 			]]>
 		</self>
 		<other>
 			<![CDATA[
 			#IF(npc.hasBreastsCrotch())
-				[npc.Name] [npc.verb(turn)] up the dial on the milking machine, before attaching the now-pressurised pumps to [npc2.namePos] [npc2.breasts+].
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, после чего прикрепляет теперь уже под давлением насосы к [npc2.namePos] [npc2.breasts+].
 				#IF(npc2.getTotalFluidInArea(ORIFICE_NIPPLE_CROTCH)>0)
-					<br/>[style.italicsCum(The breast-pumps quickly drain [npc2.namePos] nipple-creampie!)]
+					<br/>[style.italicsCum(Насосы быстро высасывают ниппель-криампи из [npc2.namePos]!)]
 				#ENDIF
 			#ELSE
-				[npc.Name] [npc.verb(turn)] up the dial on the milking machine, and even though [npc2.name] [npc2.do]n't have any udders, [npc.she] [npc.verb(decide)] to attach the now-pressurised pumps to [npc2.her] stomach...
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате, и хотя у [npc2.name] [npc2.do] нет вымени, [npc.she] [npc.verb(decide)] прикрепить под давлением насосы к [npc2.her] животу...
 			#ENDIF
 			]]>
 		</other>
 		<otherRough>
 			<![CDATA[
 			#IF(npc.hasBreastsCrotch())
-				[npc.Name] [npc.verb(crank)] up the dial on the milking machine, before roughly attaching the now-pressurised pumps to [npc2.namePos] [npc2.breasts+].
+				[npc.Name] [npc.verb(crank)] регулятор на доильном аппарате, после чего грубо прикрепляет теперь уже под давлением насосы к [npc2.namePos] [npc2.breasts+].
 				#IF(npc2.getTotalFluidInArea(ORIFICE_NIPPLE_CROTCH)>0)
-					<br/>[style.italicsCum(The breast-pumps quickly drain [npc2.namePos] nipple-creampie!)]
+					<br/>[style.italicsCum(Насосы быстро высасывают ниппель-криампи из [npc2.namePos]!)]
 				#ENDIF
 			#ELSE
-				[npc.Name] [npc.verb(crank)] up the dial on the milking machine, and even though [npc2.name] [npc2.do]n't have any udders, [npc.she] [npc.verb(decide)] to roughly attach the now-pressurised pumps to [npc2.her] stomach...
+				[npc.Name] [npc.verb(crank)] регулятор на доильном аппарате, и хотя у [npc2.name] [npc2.do] нет вымени, [npc.she] [npc.verb(decide)] грубо прикрепить раздувшиеся от давления насосы к [npc2.her] животу...
 			#ENDIF
 			]]>
 		</otherRough>
@@ -156,27 +156,27 @@
 		<self>
 			<![CDATA[
 			#IF(npc.hasBreastsCrotch())
-				[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before letting the rapidly-depressurising pumps fall off of [npc.her] [npc.udders+].
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате вниз, после чего позволяет быстро сдувающимся насосам соскользнуть с [npc.her] [npc.udders+].
 			#ELSE
-				[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before letting the rapidly-depressurising pumps fall off of [npc.her] stomach.
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате вниз, после чего позволяет быстро сдувающимся насосам соскользнуть с [npc.her] живота.
 			#ENDIF
 			]]>
 		</self>
 		<other>
 			<![CDATA[
 			#IF(npc.hasBreastsCrotch())
-				[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before letting the rapidly-depressurising pumps fall off of [npc2.namePos] [npc2.udders+].
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате вниз, после чего позволяет быстро сдувающимся насосам соскользнуть с [npc2.namePos] [npc2.udders+].
 			#ELSE
-				[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before letting the rapidly-depressurising pumps fall off of [npc2.namePos] stomach.
+				[npc.Name] [npc.verb(turn)] регулятор на доильном аппарате вниз, после чего позволяет быстро сдувающимся насосам соскользнуть с [npc2.namePos] живота.
 			#ENDIF
 			]]>
 		</other>
 		<otherRough>
 			<![CDATA[
 			#IF(npc.hasBreastsCrotch())
-				With no regard for [npc2.her] comfort, [npc.name] roughly [npc.verb(yank)] the still-pressurised pumps off of [npc2.namePos] [npc2.udders+].
+				Совершенно не заботясь о комфорте [npc2.her], [npc.name] грубо [npc.verb(yank)] всё еще под давлением насосы с [npc2.namePos] [npc2.udders+].
 			#ELSE
-				With no regard for [npc2.her] comfort, [npc.name] roughly [npc.verb(yank)] the still-pressurised pumps off of [npc2.namePos] stomach.
+				Совершенно не заботясь о комфорте [npc2.her], [npc.name] грубо [npc.verb(yank)] всё еще под давлением насосы с [npc2.namePos] живота.
 			#ENDIF
 			]]>
 		</otherRough>

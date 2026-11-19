@@ -9,14 +9,14 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[demonic centauress marauder]]></name>
+			<name><![CDATA[демоническая кентаврисса-мародер]]></name>
 			<chanceToTrigger opportunisticEncounter="true"><![CDATA[
 				3
 			]]></chanceToTrigger>
 			<dialogueReturned><![CDATA[innoxia_encounters_fields_centaur_melee_start]]></dialogueReturned>
 		</encounter>
 		<encounter>
-			<name><![CDATA[demonic centauress raider]]></name>
+			<name><![CDATA[демоническая кентаврисса-рейдер]]></name>
 			<chanceToTrigger opportunisticEncounter="true"><![CDATA[
 				3
 			]]></chanceToTrigger>

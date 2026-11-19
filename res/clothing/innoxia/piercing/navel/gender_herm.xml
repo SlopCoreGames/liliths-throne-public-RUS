@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[herm glyph barbell]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[herm glyph barbells]]></namePlural>
-		<description><![CDATA[A slightly curved bar with a metallic sphere on one end and a freely-moving hinged icon of a hermaphroditic glyph on the other. Its design is such that it would be possible to comfortably fit it into either a navel piercing or a 'clitoral hood' or 'Christina' vaginal piercing.]]></description>
+		<name><![CDATA[гермафродитский глиф-барбел]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[гермафродитские глифы-барбелы]]></namePlural>
+		<description><![CDATA[Слегка изогнутая штанга с металлической сферой на одном конце и свободно вращающейся шарнирной иконкой гермафродитского глифа на другом. Благодаря своей форме, её можно с комфортом использовать как для пирсинга пупка, так и для пирсинга клиторального капюшона или «Кристины».]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -19,7 +19,7 @@
 		
 		<stickers>
 			<category id="glyph_shape" priority="1">
-				<categoryName><![CDATA[Glyph shape]]></categoryName>
+				<categoryName><![CDATA[Форма глифа]]></categoryName>
 				<sticker id="circle" priority="1" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Circle]]></stickerName>
 					<namePrefix/>
@@ -85,49 +85,49 @@
 
   <replacementText slot="PIERCING_STOMACH" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ringed barbell into [npc.her] navel piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцевой бантл в [npc.her] пирсинг пупка.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ringed barbell into [npc2.namePos] navel piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцевой бантл в [npc2.namePos] пирсинг пупка.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the ringed barbell into [npc2.namePos] navel piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] кольцевой бантл в [npc2.namePos] пирсинг пупка.]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="PIERCING_STOMACH" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] ringed barbell out of [npc.her] navel piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] кольцевой бантл из [npc.her] пирсинга пупка.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] ringed barbell out of [npc2.her] navel piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] кольцевой бантл из [npc2.her] пирсинга пупка.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] ringed barbell out of [npc2.her] navel piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] кольцевой бантл из [npc2.her] пирсинга пупка.]]>
     </otherRough>
   </displacementText>
 
   <replacementText slot="PIERCING_VAGINA" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ringed barbell into [npc.her] vaginal piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцевой бантл в [npc.her] вагинальный пирсинг.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ringed barbell into [npc2.namePos] vaginal piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцевидный штангу в [npc2.namePos] вагинальный пирсинг.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the ringed barbell into [npc2.namePos] vaginal piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] кольцевидный штангу в [npc2.namePos] вагинальный пирсинг.]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="PIERCING_VAGINA" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] ringed barbell out of [npc.her] vaginal piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] кольцевидный штангу из [npc.her] вагинального пирсинга.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] ringed barbell out of [npc2.her] vaginal piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] кольцевидный штангу из [npc2.her] вагинального пирсинга.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] ringed barbell out of [npc2.her] vaginal piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] кольцевидный штангу из [npc2.her] вагинального пирсинга.]]>
     </otherRough>
   </displacementText>
 	

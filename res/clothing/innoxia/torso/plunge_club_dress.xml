@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>600</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[plunge-neck clubbing dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[plunge-neck clubbing dresses]]></namePlural>
-		<description><![CDATA[A short-skirted dress with a deep, revealing plunge neck. The skimpy fabric leaves the wearer's stomach and breasts completely on display...]]></description>
+		<name><![CDATA[клубное платье с глубоким декольте]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[клубные платья с глубоким декольте]]></namePlural>
+		<description><![CDATA[Короткое платье с глубоким, вызывающим декольте. Скудная ткань оставляет живот и грудь обладательницы полностью открытыми...]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot> 
@@ -92,73 +92,73 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.steps] into the clubbing dress, before pulling it up around [npc.her] [npc.hips+] and [npc.breasts+] and then tying the straps into a loose bow behind [npc.her] neck.]]>
+		  <![CDATA[[npc.Name] [npc.verb(надевает)] [npc.steps] — клубное платье, натягивая его на [npc.her] [npc.hips+] и [npc.breasts+], а затем завязывая бретельки свободным бантом на шее [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to [npc2.step] into the clubbing dress, before pulling it up around [npc2.her] [npc2.hips+] and [npc2.breasts+] and then tying the straps into a loose bow behind [npc2.her] neck.]]>
+		  <![CDATA[[npc.Name] [npc.verb(надевает)] [npc2.name] на [npc2.step], натягивая его на [npc2.her] [npc2.hips+] и [npc2.breasts+], а затем завязывая бретельки свободным бантом на шее [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.name] to [npc2.step] into the clubbing dress, before yanking it up around [npc2.her] [npc2.hips+] and [npc2.breasts+] and then tying the straps into a loose bow behind [npc2.her] neck.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(натягивает)] [npc2.name] на [npc2.step], рывком поднимая его на [npc2.her] [npc2.hips+] и [npc2.breasts+], а затем завязывая бретельки свободным бантом на шее [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the straps [npc.steps] out of [npc.her] clubbing dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(развязывает)] бретельки [npc.steps], снимая [npc.her] клубное платье.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the straps of [npc2.namePos] clubbing dress and [npc.verb(get)] [npc2.herHim] to [npc2.step] out of it.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] ремешки клубного платья [npc2.namePos] и [npc.verb(get)] [npc2.herHim], чтобы [npc2.step] вылезла из него.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(untie)] the straps of [npc2.namePos] clubbing dress and [npc.verb(force)] [npc2.herHim] to [npc2.step] out of it.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(untie)] ремешки клубного платья [npc2.namePos] и [npc.verb(force)] [npc2.herHim] [[npc.verb(strip)] [npc2.step] из него].]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the skirt of [npc.her] clubbing dress back down into the proper position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(поправляет)] юбку клубного платья [npc.her], спуская её на место.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the skirt [npc2.namePos] clubbing dress back down into the proper position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] юбку [npc2.namePos] клубного платья назад, возвращая её в надлежащее положение.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the skirt [npc2.namePos] clubbing dress back down into the proper position.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] юбку [npc2.namePos] клубного платья назад, возвращая её в надлежащее положение.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] clubbing dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] юбку [npc.her] клубного платья вверх.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] clubbing dress.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] юбку [npc2.namePos] клубного платья вверх.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of the skirt of [npc2.namePos] clubbing dress, before roughly pulling it up.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] край юбки [npc2.namePos] клубного платья, после чего грубо задирает её вверх.]]>
 		</otherRough>
 	</displacementText>
 
 	<displacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the straps of [npc.her] clubbing dress and [npc.verb(allow)] the top half to fall down around [npc.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] бретельки [npc.her] клубного платья и [npc.verb(allow)] верхней части платья соскользнуть вниз до [npc.her] талии.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the straps of [npc2.namePos] clubbing dress and [npc.verb(allow)] the top half to fall down around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] бретельки [npc2.namePos] клубного платья и [npc.verb(allow)] верхней части платья соскользнуть вниз до [npc2.her] талии.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(untie)] the straps of [npc2.namePos] clubbing dress and [npc.verb(yank)] the top half down around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(untie)] бретельки [npc2.namePos] клубного платья и [npc.verb(yank)] верхнюю часть платья вниз до [npc2.her] талии.]]>
 	  </otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the top half of [npc.her] clubbing dress and [npc.verb(tie)] the straps into a loose bow behind [npc.her] neck.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc.her] клубного платья вверх и [npc.verb(tie)] бретельки свободным бантом на затылке [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the top half of [npc2.namePos] clubbing dress and [npc.verb(tie)] the straps into a loose bow behind [npc2.her] neck.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc2.namePos] клубного платья вверх и [npc.verb(tie)] бретельки свободным бантом на затылке [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(yank)] up the top half of [npc2.namePos] clubbing dress and [npc.verb(tie)] the straps into a loose bow behind [npc2.her] neck.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(yank)] за верхнюю часть клубного платья [npc2.namePos] и [npc.verb(tie)] бретельки в свободный бант на затылке [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 

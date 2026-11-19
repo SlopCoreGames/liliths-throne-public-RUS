@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[table]]></deskName>
-	<title><![CDATA[Under table oral]]></title>
+	<deskName><![CDATA[таблица]]></deskName>
+	<title><![CDATA[Оральный секс под столом]]></title>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
 	<canSkipSex><![CDATA[true]]></canSkipSex>
@@ -15,14 +15,14 @@
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
-			Although you shuffle mostly out of sight beneath the table, you're still partially exposed to the tavern, allowing several revellers to look over and watch as you prepare to perform oral on the [attacker.race]...
+			Хотя ты в основном скрываешься под столом, ты всё равно наполовину на виду у посетителей таверны. Несколько гуляк с любопытством наблюдают за тем, как ты готовишься отсосать [attacker.race]...
 		]]></startingDescription>
 		<randomDescriptions enabled="true">
-			<description><![CDATA[Several people sitting at nearby tables laugh and cheer as they watch your lewd display.]]></description>
-			<description><![CDATA[You hear someone in the tavern wolf-whistling as they watch you performing oral under the table.]]></description>
-			<description><![CDATA[You hear someone nearby commenting on your performance.]]></description>
-			<description><![CDATA[Cheering and laughing, several rowdy onlookers happily watch as you continue performing oral.]]></description>
-			<description><![CDATA[You glance across to see a couple of spectators touching themselves as they watch you perform oral.]]></description>
+			<description><![CDATA[Несколько человек за соседними столами смеются и подбадривают тебя, наблюдая за твоим непристойным зрелищем.]]></description>
+			<description><![CDATA[Ты слышишь, как кто-то в таверне одобрительно свистит, наблюдая за тем, как ты занимаешься оральным сексом под столом.]]></description>
+			<description><![CDATA[Ты слышишь, как кто-то неподалеку комментирует твои старания.]]></description>
+			<description><![CDATA[Под радостные крики и смех несколько шумных зевак с удовольствием наблюдают за тем, как ты продолжаешь сосать.]]></description>
+			<description><![CDATA[Ты бросаешь взгляд в сторону и замечаешь пару зрителей, которые ласкают себя, наблюдая за твоим оральным сексом.]]></description>
 		</randomDescriptions>
 	</publicSex>
 	<characterInformationContainer>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <eye>
 	<race>NoStepOnSnek_snake</race>
-	<transformationName><![CDATA[snake]]></transformationName>
+	<transformationName><![CDATA[змея]]></transformationName>
 	<coveringType>NoStepOnSnek_snake_eye</coveringType>
 	<defaultPairCount>1</defaultPairCount>
 	<defaultIrisShape>ROUND</defaultIrisShape>
 	<defaultPupilShape>VERTICAL</defaultPupilShape>
-	<name><![CDATA[eye]]></name>
-	<namePlural><![CDATA[eyes]]></namePlural>
+	<name><![CDATA[глаз]]></name>
+	<namePlural><![CDATA[глаза]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor><![CDATA[predatory]]></descriptor>
+		<descriptor><![CDATA[хищные]]></descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor><![CDATA[predatory]]></descriptor>
+		<descriptor><![CDATA[хищные]]></descriptor>
 	</descriptorsFeminine>
 	<transformationDescription><![CDATA[
-		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into snake-like eyes, with large irises and vertical pupils.
-		<br/>[npc.Name] now [npc.has] [style.boldSnake(snake-like eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они уже превратились в змеиные глаза с огромными радужками и вертикальными зрачками.
+		<br/>[npc.Name] теперь [npc.has] [style.boldSnake(snake-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.eyePairs] snake-like eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+		[npc.SheHasFull] [npc.eyePairs] змеиные глаза, радужки и зрачки которых крупнее, чем у обычного человека. У них [npc.irisShape], [npc.irisColour(true)] радужки, [npc.pupilShape], [npc.pupilColour(true)] зрачки и [npc.scleraColour(true)] склеры.
 	]]></bodyDescription>
 </eye>

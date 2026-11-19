@@ -6,7 +6,7 @@
 	
 	<race>dsg_dragon</race>
 	
-	<transformationName><![CDATA[dragon]]></transformationName>
+	<transformationName><![CDATA[дракон]]></transformationName>
 	
 	<baseFluidType>GIRLCUM</baseFluidType>
 	
@@ -17,11 +17,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[dragon]]></name>
+		<name><![CDATA[дракон]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[dragon]]></name>
+		<name><![CDATA[дракон]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers>

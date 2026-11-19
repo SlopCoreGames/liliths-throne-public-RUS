@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[polo shirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[polo shirts]]></namePlural> 
-		<description><![CDATA[A short-sleeved, collared shirt made from knitted cotton.]]></description> 
+		<name><![CDATA[поло]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[поло]]></namePlural> 
+		<description><![CDATA[Рубашка с коротким рукавом и воротником, выполненная из трикотажного хлопка.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>MASCULINE</femininity> 
 		<slot>TORSO_UNDER</slot> 

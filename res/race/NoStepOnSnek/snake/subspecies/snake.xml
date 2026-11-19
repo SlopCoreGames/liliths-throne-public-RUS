@@ -29,42 +29,42 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[snake-morph]]></name>
-			<namePlural><![CDATA[snake-morphs]]></namePlural>
-			<singularMaleName><![CDATA[snake-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[snake-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[snake-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[snake-girls]]></pluralFemaleName>
+			<name><![CDATA[змеиный морф]]></name>
+			<namePlural><![CDATA[змеиные морфы]]></namePlural>
+			<singularMaleName><![CDATA[змеепарень]]></singularMaleName>
+			<singularFemaleName><![CDATA[змеедевушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[змеепарни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[змеедевушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	<nameAnthroSillyMode>
 		<namesDefault>
-			<name><![CDATA[snek-morph]]></name>
-			<namePlural><![CDATA[snek-morphs]]></namePlural>
-			<singularMaleName><![CDATA[snek-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[snek-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[snek-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[snek-girls]]></pluralFemaleName>
+			<name><![CDATA[змейный морф]]></name>
+			<namePlural><![CDATA[змейные морфы]]></namePlural>
+			<singularMaleName><![CDATA[змеёк-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[змеёк-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[змеёк-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[змеёк-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthroSillyMode>
-	<description><![CDATA[An anthropomorphic snake, known as a 'snake-morph'.]]></description>
+	<description><![CDATA[Антропоморфная змея, известная как «змееморф».]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[basilisk]]></name>
-			<namePlural><![CDATA[basilisks]]></namePlural>
-			<singularMaleName><![CDATA[basilisk]]></singularMaleName>
-			<singularFemaleName><![CDATA[basilisk]]></singularFemaleName>
-			<pluralMaleName><![CDATA[basilisks]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[basilisk]]></pluralFemaleName>
+			<name><![CDATA[василиск]]></name>
+			<namePlural><![CDATA[василиски]]></namePlural>
+			<singularMaleName><![CDATA[василиск]]></singularMaleName>
+			<singularFemaleName><![CDATA[василиск]]></singularFemaleName>
+			<pluralMaleName><![CDATA[василиски]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[василиск]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[snake]]></feralName>
-		<feralNamePlural><![CDATA[snakes]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[snake]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[snake]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[snakes]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[snakes]]></feralPluralFemaleName>
+		<feralName><![CDATA[змея]]></feralName>
+		<feralNamePlural><![CDATA[змеи]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[змея]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[змея]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[змеи]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[змеи]]></feralPluralFemaleName>
 		<legConfiguration>TAIL_LONG</legConfiguration>
 		<sizeHeight>false</sizeHeight>
 		<size>180</size>
@@ -78,7 +78,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		Although [npc.namePos] snake-like body is quick and strong, [npc.she] can't regulate [npc.her] body temperature very well, and so [npc.sheIs] weak to both arcane ice and fire. On the positive side, [npc.she] [npc.has] a strong affinity with arcane poison.
+		Хотя змееподобное тело [npc.namePos] быстрый и сильный, [npc.she] не может очень хорошо регулировать температуру своего тела [npc.her], и поэтому [npc.sheIs] уязвим как к арканическому льду, так и к огню. С другой стороны, [npc.she] [npc.has] обладает сильной склонностью к арканическому яду.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="5">MAJOR_PHYSIQUE</attribute>

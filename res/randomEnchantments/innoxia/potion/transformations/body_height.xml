@@ -22,25 +22,25 @@
 	
 	<name defaultPrepend="true"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Shrinking
+			Уменьшение
 		#ELSE
-			Growth
+			Рост
 		#ENDIF
 	]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Down you go!
+			Вниз, вниз!
 		#ELSE
-			Up you go!
+			Вверх, выше!
 		#ENDIF
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			You'll have fun being small!
+			Тебе понравится быть маленькой!
 		#ELSE
-			You'll have fun being tall!
+			Тебе понравится быть высокой!
 		#ENDIF
 	]]></applicationSpeechEnd>
 	

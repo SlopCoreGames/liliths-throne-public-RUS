@@ -5,17 +5,17 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[opaque demonstone]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[opaque demonstones]]></namePlural> 
-		<description><![CDATA[A common type of demonstone, the power of which can be absorbed into a person's aura in order to enhance their unarmed strikes with extra elemental damage. Demonstones, such as this one, are rumoured to be crystallised essences of a Lilin's orgasm.]]></description> 
+		<name><![CDATA[непрозрачный демонский камень]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[непрозрачные демонские камни]]></namePlural> 
+		<description><![CDATA[Обычный вид демонского камня, чью силу можно поглотить аурой человека, чтобы усилить его удары без оружия дополнительным стихийным уроном. Ходят слухи, что подобные демонские камни — это кристаллизованная эссенция оргазма лилин.]]></description> 
 		
 		<attackDescriptor>crystal strike</attackDescriptor>
 		<attackTooltipDescription>Strike at [npc.name] in melee, using your crystal's power to inflict extra damage!</attackTooltipDescription>
 		
 		<rarity>RARE</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(focus)] on the energy in the demonstone. As [npc.she] [npc.does] so, it dissolves and flows into [npc.her] aura, granting [npc.herHim] the ability to perform arcane-imbued unarmed attacks.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(focus)] on extracting the absorbed arcane energy inside of [npc.her] aura. As [npc.she] [npc.does] so, it reforms back into an opaque demonstone.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(focus)] на энергии внутри демонстоуна. Подобно тому как [npc.she] [npc.does], он растворяется и вливается в ауру [npc.her], даруя [npc.herHim] способность наносить удары, пропитанные арканой.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(focus)] на извлечении поглощенной арканы из ауры [npc.her]. Когда [npc.she] [npc.does], она снова превращается в непрозрачный демонский камень.]]></unequipText>
 		
 		<imageName>rare.svg</imageName> 
 		
@@ -64,23 +64,23 @@
 	<hitDescriptions>
 		<hitText><![CDATA[
 		#IF(npc.isFeral())
-			Darting forwards, [npc.name] [npc.verb(rear)] up [npc.verb(deliver)] a solid kick to [npc2.namePos] torso.
+			Стремительно бросившись вперед, [npc.name] [npc.verb(rear)] и [npc.verb(deliver)] мощный удар ногой в торс [npc2.namePos].
 		#ELSE
-			Darting forwards, [npc.name] [npc.verb(deliver)] a solid punch to [npc2.namePos] [npc2.arm].
+			Стремительно бросившись вперед, [npc.name] [npc.verb(deliver)] мощный удар кулаком в [npc2.namePos] [npc2.arm].
 		#ENDIF
 		]]></hitText>
 		<hitText><![CDATA[
 		#IF(npc.isFeral())
-			Striking out at [npc2.name], [npc.name] [npc.verb(manage)] to land a solid kick on [npc2.her] [npc2.leg]!
+			Нанося ответный удар по [npc2.name], [npc.name] [npc.verb(manage)] попасть мощным ударом ноги в [npc2.her] [npc2.leg]!
 		#ELSE
-			Striking out at [npc2.name], [npc.name] [npc.verb(manage)] to land a solid punch on [npc2.her] [npc2.arm]!
+			Нанося ответный удар по [npc2.name], [npc.name] [npc.verb(manage)] попасть мощным ударом кулаком в [npc2.her] [npc2.arm]!
 		#ENDIF
 		]]></hitText>
 		<hitText><![CDATA[
 		#IF(npc.isFeral())
-			[npc.Name] [npc.verb(strike)] out at [npc2.name] in unarmed combat, and [npc.verb(manage)] to land a solid kick on [npc2.her] torso.
+			[npc.Name] [npc.verb(strike)] по [npc2.name] в рукопашном бою и [npc.verb(manage)] нанести мощный удар ногой в торс [npc2.her].
 		#ELSE
-			[npc.Name] [npc.verb(strike)] out at [npc2.name] in unarmed combat, and [npc.verb(manage)] to land a solid hit on [npc2.her] torso.
+			[npc.Name] [npc.verb(strike)] по [npc2.name] в рукопашном бою и [npc.verb(manage)] нанести крепкий удар в торс [npc2.her].
 		#ENDIF
 		]]></hitText>
 	</hitDescriptions>
@@ -88,13 +88,13 @@
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		Darting forwards, [npc.name] [npc.verb(try)] to deliver a punch to [npc2.namePos] [npc2.arm], but [npc2.she] [npc2.verb(manage)] to step out of the way in time.
+		Резко бросаясь вперед, [npc.name] [npc.verb(try)] нанести удар кулаком в [npc2.arm] [npc2.namePos], но [npc2.she] [npc2.verb(manage)] вовремя уклониться.
 		]]></missText>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(throw)] a punch at [npc2.name], but fails to make contact with any part of [npc2.her] body.
+		[npc.Name] [npc.verb(throw)] удар кулаком в [npc2.name], но не может задеть ни одну часть тела [npc2.her].
 		]]></missText>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(strike)] out at [npc2.name] in unarmed combat, but [npc.she] [npc.verb(end)] up missing.
+		[npc.Name] [npc.verb(strike)] по [npc2.name] в рукопашном бою, но [npc.she] [npc.verb(end)] промахивается.
 		]]></missText>
 	</missDescriptions>
 	

@@ -4,8 +4,8 @@
 	<coreAttributes>
 		<value>10000</value>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[collar]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[collars]]></namePlural>
+		<name><![CDATA[ошейник]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ошейники]]></namePlural>
 		<description><![CDATA[A <span style='color:[#thisItem.getColour(0).toWebHexString()];'>[style.glow(glowing [#thisItem.getColourName()])]</span> leather collar, with bold metal lettering attached to the front spelling out the word ]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
@@ -20,12 +20,12 @@
 	
 	<stickers>
 		<category id="txt" priority="1">
-			<categoryName><![CDATA[Text]]></categoryName>
+			<categoryName><![CDATA[Текст]]></categoryName>
 			<sticker id="breeder" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[Breeder]]></stickerName>
-				<namePrefix priority="1"><![CDATA[ornate <i>'Breeder'</i> ]]></namePrefix>
+				<namePrefix priority="1"><![CDATA[изысканный <i>'Самка'</i> ]]></namePrefix>
 				<namePostfix/>
-				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'BREEDER'</i>.]]></descriptionModification>
+				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'САМКА'</i>.]]></descriptionModification>
 				<imageName zLayer="1" slot="NECK">breeder_collar_stickers/breeder.svg</imageName>
 				<itemTagsAdded/>
 				<itemTagsRemoved/>
@@ -34,9 +34,9 @@
 			</sticker>
 			<sticker id="bimbo" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[Bimbo]]></stickerName>
-				<namePrefix priority="1"><![CDATA[ornate <i>'Bimbo'</i> ]]></namePrefix>
+				<namePrefix priority="1"><![CDATA[изысканный <i>'Бимби'</i> ]]></namePrefix>
 				<namePostfix/>
-				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'BIMBO'</i>.]]></descriptionModification>
+				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'БИМБИ'</i>.]]></descriptionModification>
 				<imageName zLayer="1" slot="NECK">breeder_collar_stickers/bimbo.svg</imageName>
 				<itemTagsAdded/>
 				<itemTagsRemoved/>
@@ -45,9 +45,9 @@
 			</sticker>
 			<sticker id="bitch" priority="3" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[Bitch]]></stickerName>
-				<namePrefix priority="1"><![CDATA[ornate <i>'Bitch'</i> ]]></namePrefix>
+				<namePrefix priority="1"><![CDATA[изысканный <i>'Сучка'</i> ]]></namePrefix>
 				<namePostfix/>
-				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'BITCH'</i>.]]></descriptionModification>
+				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'СУЧКА'</i>.]]></descriptionModification>
 				<imageName zLayer="1" slot="NECK">breeder_collar_stickers/bitch.svg</imageName>
 				<itemTagsAdded/>
 				<itemTagsRemoved/>
@@ -56,9 +56,9 @@
 			</sticker>
 			<sticker id="slut" priority="4" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[Slut]]></stickerName>
-				<namePrefix priority="1"><![CDATA[ornate <i>'Slut'</i> ]]></namePrefix>
+				<namePrefix priority="1"><![CDATA[изысканный <i>«Шлюшка»</i> ]]></namePrefix>
 				<namePostfix/>
-				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'SLUT'</i>.]]></descriptionModification>
+				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>«ШЛЮШКА»</i>.]]></descriptionModification>
 				<imageName zLayer="1" slot="NECK">breeder_collar_stickers/slut.svg</imageName>
 				<itemTagsAdded/>
 				<itemTagsRemoved/>
@@ -67,9 +67,9 @@
 			</sticker>
 			<sticker id="cum_slut" priority="5" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[Cum Slut]]></stickerName>
-				<namePrefix priority="1"><![CDATA[ornate <i>'Cum Slut'</i> ]]></namePrefix>
+				<namePrefix priority="1"><![CDATA[изысканный <i>«Кончница»</i> ]]></namePrefix>
 				<namePostfix/>
-				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'CUM SLUT'</i>.]]></descriptionModification>
+				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>«КОНЧНИЦА»</i>.]]></descriptionModification>
 				<imageName zLayer="1" slot="NECK">breeder_collar_stickers/cum_slut.svg</imageName>
 				<itemTagsAdded/>
 				<itemTagsRemoved/>
@@ -78,9 +78,9 @@
 			</sticker>
 			<sticker id="whore" priority="6" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[Whore]]></stickerName>
-				<namePrefix priority="1"><![CDATA[ornate <i>'Whore'</i> ]]></namePrefix>
+				<namePrefix priority="1"><![CDATA[изысканный <i>«Шалава»</i> ]]></namePrefix>
 				<namePostfix/>
-				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'WHORE'</i>.]]></descriptionModification>
+				<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>«ШАЛАВА»</i>.]]></descriptionModification>
 				<imageName zLayer="1" slot="NECK">breeder_collar_stickers/whore.svg</imageName>
 				<itemTagsAdded/>
 				<itemTagsRemoved/>
@@ -89,7 +89,7 @@
 			</sticker>
 		</category>
 		<category id="ring" priority="2">
-			<categoryName><![CDATA[Extras]]></categoryName>
+			<categoryName><![CDATA[Дополнительно]]></categoryName>
 			<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 				<stickerName><![CDATA[D-ring]]></stickerName>
 				<namePrefix/>
@@ -154,24 +154,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] can't help but let out a small, needy moan as [npc.she] [npc.verb(fasten)] the enchanted collar around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] невольно издает тихий, жаждущий стон, когда [npc.she] [npc.verb(fasten)] зачарованный ошейник на шее [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc2.Name] can't help but let out a small, needy moan as [npc.name] [npc.verb(fasten)] the enchanted collar around [npc2.her] neck.]]>
+      <![CDATA[[npc2.Name] невольно издает тихий, жаждущий стон, когда [npc.name] [npc.verb(fasten)] зачарованный ошейник на шее [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc2.Name] can't help but let out a small, needy moan as [npc.name] roughly [npc.verb(fasten)] the enchanted collar around [npc2.her] neck.]]>
+      <![CDATA[[npc2.Name] невольно издает тихий, жаждущий стон, когда [npc.name] грубо [npc.verb(fasten)] зачарованный ошейник на шее [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] enchanted collar, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] зачарованный ошейник, прежде чем снять его с [npc.her] шеи.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] enchanted collar, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] зачарованный ошейник, прежде чем снять его с [npc2.her] шеи.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] enchanted collar, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] [npc2.namePos] зачарованный ошейник, а затем резко сорвать его с [npc2.her] шеи.]]>
     </otherRough>
   </displacementText>
 	

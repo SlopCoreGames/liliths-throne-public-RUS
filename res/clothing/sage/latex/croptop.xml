@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>50</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[latex crop top]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[latex crop tops]]></namePlural>
-		<description><![CDATA[An extra short latex crop top that leaves the entire torso exposed while only covering the neck and arms.]]></description>
+		<name><![CDATA[латексный кроп-топ]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[латексные кроп-топы]]></namePlural>
+		<description><![CDATA[Экстремально короткий латексный кроп-топ, который оставляет торс полностью открытым, прикрывая лишь шею и руки.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>TORSO_UNDER</slot>

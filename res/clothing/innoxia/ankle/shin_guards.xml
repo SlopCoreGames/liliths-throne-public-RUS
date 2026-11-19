@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[shin guard]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[shin guards]]></namePlural>
-		<description><![CDATA[A pair of protective shin guards, designed to protect the lower half of the wearer's legs from physical blows.]]></description>
+		<name><![CDATA[щиток]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[щитки]]></namePlural>
+		<description><![CDATA[Пара защитных щитков, предназначенных для защиты нижней части ног владельца от физических ударов.]]></description>
 		<physicalResistance>1</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>ANKLE</slot> 
@@ -51,25 +51,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the shin guards around [npc.her] ankles.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] щитки на лодыжках [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the shin guards around [npc2.namePos] ankles.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] щитки на лодыжках [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(fasten)] the shin guards around [npc2.namePos] ankles.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(fasten)] щитки на лодыжках [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] shin guards, before taking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] щитки [npc.her], прежде чем снять их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] shin guards, before taking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] щитки [npc2.namePos], прежде чем снять их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] quickly [npc.verb(unfasten)] [npc2.namePos] shin guards, before roughly snatching them off.]]>
+      <![CDATA[[npc.Name] быстро [npc.verb(unfasten)] щитки [npc2.namePos], а затем резко срывает их.]]>
     </otherRough>
   </displacementText>
 	

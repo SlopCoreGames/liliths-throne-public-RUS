@@ -5,15 +5,15 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[the]]></determiner>
-		<name appendDamageName="false"><![CDATA[Inky's Pen]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Inky's Pens]]></namePlural>
-		<description><![CDATA[This fancy-looking fountain pen holds an incredibly powerful enchantment. When the cap is twisted three times before being taken off, an arcane entity known only as 'Inky' is unleashed upon the holder's enemies...]]></description>
+		<name appendDamageName="false"><![CDATA[Перо Инки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Перья Инки]]></namePlural>
+		<description><![CDATA[Эта изысканная перьевая ручка таит в себе невероятно мощное заклинание. Если перед тем, как снять колпачок, трижды провернуть его, на врагов владельца обрушивается аркана-сущность, известная лишь как «Инка»...]]></description>
 		<attackDescriptor>poke</attackDescriptor>
 		<attackTooltipDescription>Poke [npc2.name] with your pen.</attackTooltipDescription>
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] out Inky's pen and [npc.verb(get)] ready to use it in combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] Inky's pen away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] перо Инки и [npc.verb(get)] готовым использовать его в бою.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] перо Инки.]]></unequipText>
 		<imageName>inky.svg</imageName> 
 		<imageEquippedName/>
 		<damage>1</damage> 
@@ -52,14 +52,14 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(thrust)] [npc.her] pen at [npc2.name], and although it strikes [npc2.her] body, it really doesn't cause much damage... 
+		[npc.Name] [npc.verb(thrust)] пером [npc.her] в [npc2.name], и хотя оно вонзается в [npc2.her] тело, особого урона это не наносит... 
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(thrust)] [npc.her] pen at [npc2.name], but [npc.she] [npc.verb(miss)]... 
+		[npc.Name] [npc.verb(thrust)] пером [npc.her] в [npc2.name], но [npc.she] [npc.verb(miss)]... 
 		]]></missText>
 	</missDescriptions>
 	

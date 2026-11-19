@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[On the inside of the shell, rubberised ink reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне шлема резиновыми чернилами нанесена надпись: «Служебное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>1000</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's combat helmet]]></name>
+		<name><![CDATA[Боевой шлем Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's combat helmets]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Боевые шлемы Enforcer]]></namePlural> 
 
-		<description><![CDATA[A ballistic helmet covered with tough fabric cover lined with shock-absorbing foam. The attached suspension system has plenty of adjustment to fit a variety of head shapes but the faint star on the forehead gives you little doubt as to the intended wearer.]]></description> 
+		<description><![CDATA[Баллистический шлем в прочном тканевом чехле с подкладкой из амортизирующей пены. Прикрепленная система подвеса позволяет легко подогнать шлем под любую форму головы, но едва заметная звезда на лбу не оставляет сомнений в том, кому он предназначен.]]></description> 
 
 		<physicalResistance>6</physicalResistance> 
 
@@ -80,25 +80,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the combat helmet and securely [npc.verb(fasten)] the chinstrap.]]>
+			<![CDATA[[npc.Name] [npc.verb(надевает)] боевой шлем и плотно [npc.verb(застегивает)] подбородочный ремень.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(put)] the combat helmet on [npc2.namePos] head and securely [npc.verb(fasten)] the chinstrap.]]>
+			<![CDATA[[npc.Name] [npc.verb(надевает)] боевой шлем на голову [npc2.namePos] и плотно [npc.verb(застегивает)] подбородочный ремень.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the combat helmet down on [npc2.namePos] head and practically [npc.verb(gag)] [npc2.her] with the chinstrap.]]>
+			<![CDATA[[npc.Name] [npc.verb(натягивает)] боевой шлем на голову [npc2.namePos], практически [npc.verb(затыкая)] [npc2.her] подбородочным ремнем.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] un[npc.do] the chinstrap on [npc.her] combat helmet and [npc.verb(ease)] it off.]]>
+			<![CDATA[[npc.Name] рас[npc.do] подбородочный ремень на боевом шлеме [npc.her] и [npc.verb(плавно снимает)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] un[npc.do] the chinstrap on [npc2.namePos] combat helmet and [npc.verb(ease)] it off.]]>
+			<![CDATA[[npc.Name] рас[npc.do] подбородочный ремень на боевом шлеме [npc2.namePos] и [npc.verb(плавно снимает)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(rip)] open the chinstrap on [npc2.namePos] combat helmet and [npc.verb(yank)] it off [npc2.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(срывает)] подбородочный ремень на боевом шлеме [npc2.namePos] и [npc.verb(сдергивает)] его с головы [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	

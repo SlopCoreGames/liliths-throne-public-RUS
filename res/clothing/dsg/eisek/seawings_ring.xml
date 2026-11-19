@@ -3,17 +3,17 @@
 	
 	<coreAtributes>
 	
-		<authorTag><![CDATA["Made by the DSG Jewellers Guild" is engraved on the bridge behind the gemstone.]]></authorTag>
+		<authorTag><![CDATA[На перекладине за драгоценным камнем выгравировано: «Создано Гильдией ювелиров DSG».]]></authorTag>
 		
 		<value>500000</value>
 		
 		<determiner><![CDATA[]]></determiner>
 		
-		<name appendColourName="false"><![CDATA[Eisek's Ring]]></name>
+		<name appendColourName="false"><![CDATA[Кольцо Эйзека]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Eisek's Rings]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[Кольца Эйзека]]></namePlural>
 		
-		<description><![CDATA[A strange piece of jewellery with an inscription in an unknown language inside the band. It looks very old and you feel like the eye-shaped gem in the middle is watching you.]]></description>
+		<description><![CDATA[Странное украшение с надписью на неизвестном языке внутри ободка. Оно выглядит очень старым, а кажется, будто драгоценный камень в форме глаза в самом центре следит за тобой.]]></description>
 		
 		<physicalResistance>0</physicalResistance>
 		
@@ -33,7 +33,7 @@
 		
 		<stickers>
 			<category id="inscription" priority="1"> 
-				<categoryName><![CDATA[Inscription]]></categoryName> 
+				<categoryName><![CDATA[Надпись]]></categoryName> 
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected=""> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix priority="1"><![CDATA[]]></namePrefix>
@@ -49,15 +49,15 @@
 					<stickerName><![CDATA[Scratches]]></stickerName> 
 					<namePrefix/> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="true" priority="1"><![CDATA[A rare example of pre-Dragonfall craftsmanship, this ring was given by Lisophia to those she considered especially loyal. Considered by most modern dragons to be a symbol of slavery, they are nonetheless kept by a few as family heirlooms to remind them of mistakes committed in an ancient age. The inscription once read "faithful servant" but [eisek.Name] has scratched out the word "servant", turning the grim artefact into a symbol of hope for a future spent at your side.]]></descriptionModification> 
+					<descriptionModification fullReplacement="true" priority="1"><![CDATA[Редкий образец мастерства эпохи до Драконопада; это кольцо Лисофия дарила тем, кого считала особенно преданными. Большинство современных драконов видят в них символ рабства, но немногие хранят их как семейные реликвии, напоминая себе об ошибках древних времен. Когда-то надпись гласила «верный слуга», но [eisek.Name] выцарапал(а) слово «слуга», превратив мрачный артефакт в символ надежды на будущее, проведенное рядом с тобой.]]></descriptionModification> 
 					<imageName zLayer="1">seawings_ring_st_scratch.svg</imageName> 					
 					<itemTagsAdded/> 
 					<itemTagsRemoved/> 
 					<unavailabilityText showDisabledButton="false"><![CDATA[
-							unavailable
+						недоступно
 					]]></unavailabilityText> 
 					<availabilityText><![CDATA[
-						Part of the inscription has been scratched out.
+						Часть надписи была выцарапана.
 					]]></availabilityText> 
 				</sticker>
 			</category>
@@ -99,25 +99,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] the ring onto [npc.her] [npc.finger].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] надевает кольцо на палец [npc.her] [npc.finger].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] the ring onto [npc2.namePos] [npc2.finger].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] надевает кольцо на палец [npc2.namePos] [npc2.finger].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] the ring onto [npc2.namePos] [npc2.finger].]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] надевает кольцо на [npc2.namePos] [npc2.finger].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] ring off [npc.her] [npc.finger].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] стягивает [npc.her] кольцо с [npc.her] [npc.finger].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] ring off [npc2.her] [npc2.finger].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] плавно снимает [npc2.namePos] кольцо с [npc2.her] [npc2.finger].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] ring off [npc2.her] [npc2.finger].]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] срывает [npc2.namePos] кольцо с [npc2.her] [npc2.finger].]]>
 		</otherRough>
 	</displacementText>
 	

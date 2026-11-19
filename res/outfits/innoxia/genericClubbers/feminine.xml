@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic clubber (feminine)]]></name>
+		<name><![CDATA[обычная клубная одежда (женская)]]></name>
 		
-		<description><![CDATA[Feminine clubbing clothing.]]></description>
+		<description><![CDATA[Женская одежда для клубов.]]></description>
 		
 		<femininity>FEMININE</femininity>
 		

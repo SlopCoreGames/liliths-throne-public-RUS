@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>100</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[velvet choker]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[velvet chokers]]></namePlural>
-		<description><![CDATA[A plain velvet choker, which tightly hugs the wearer's neck. It is securely fastened in place by means of a delicate metal chain, which is liable to break if the wearer's throat bulges too much...]]></description>
+		<name><![CDATA[бархатный чокер]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[бархатные чокеры]]></namePlural>
+		<description><![CDATA[Простой бархатный чокер, плотно облегающий шею владельца. Он надежно закреплен изящной металлической цепочкой, которая может порваться, если горло владельца слишком сильно вздуется...]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -48,24 +48,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] securely [npc.verb(fasten)] the velvet choker around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] плотно [npc.verb(fasten)] бархатный чокер на шее [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] securely [npc.verb(fasten)] the velvet choker around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] плотно [npc.verb(fasten)] бархатный чокер на шее [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before securely fastening the velvet choker around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем надежно застегнуть бархатный чокер на шее [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] velvet choker, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] бархатный чокер [npc.her], прежде чем снять его с шеи [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] velvet choker, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] бархатный чокер [npc2.namePos], прежде чем снять его с шеи [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] velvet choker, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] бархатный чокер [npc2.namePos], а затем резко сдергивает его с шеи [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

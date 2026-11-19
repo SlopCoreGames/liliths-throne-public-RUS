@@ -6,18 +6,18 @@
 	
 	<race>dsg_gryphon</race>
 	
-	<transformationName><![CDATA[gryphon]]></transformationName>
+	<transformationName><![CDATA[грифон]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[gryphon-]]></name>
+		<name><![CDATA[грифон-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[gryphon-]]></name>
+		<name><![CDATA[грифон-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

@@ -2,7 +2,7 @@
 <leg>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_fur</coveringType>
 	
@@ -21,8 +21,8 @@
 		<configuration>QUADRUPEDAL</configuration>
 	</allowedLegConfigurations>
 	
-	<name><![CDATA[leg]]></name>
-	<namePlural><![CDATA[legs]]></namePlural> 
+	<name><![CDATA[нога]]></name>
+	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>masculine</descriptor>
@@ -53,12 +53,12 @@
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		A layer of badger-like fur quickly grows over [npc.her] legs as they shift into a new form. As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into blunt claws, and tough leathery pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
-		<br/>[npc.Name] now [npc.has] anthropomorphic, [style.boldBadger(badger-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+		Слой барсучьего меха быстро покрывает [npc.her] ноги, пока те принимают новую форму. По мере того как [npc.her] новый мех спускается к самым кончикам [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в тупые когти, а подошвы [npc.her] покрываются грубыми кожаными подушечками, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)] что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldBadger(барсучьи ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic badger-like paws, complete with blunt claws and tough leathery pads.
+		[npc.Her] ноги — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] ступни превратились в антропоморфные барсучьи лапы с тупыми когтями и грубыми кожаными подушечками.
 	]]></bodyDescription>
 </leg>

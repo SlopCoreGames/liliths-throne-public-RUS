@@ -2,7 +2,7 @@
 <tail>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<coveringType>innoxia_sheep_wool</coveringType>
 	
@@ -20,8 +20,8 @@
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural> 
 	
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural> 
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>sheep-like</descriptor>
@@ -32,8 +32,8 @@
 		<descriptor>woolly</descriptor>
 	</descriptorsFeminine>
 	
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>woolly</descriptor>
 	</tipDescriptorsMasculine>
@@ -43,16 +43,15 @@
 	
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A woolly, sheep-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a very limited amount of control over it, and can only swat it from side to side.
-			<br/>[npc.Name] now [npc.has] a [style.boldSheep(sheep-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Прямо над [npc.her] задницей растет пушистый овечий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь слегка может им управлять, и он лишь беспорядочно мотается из стороны в сторону.
+			<br/>[npc.Name] теперь [npc.has] [style.boldSheep(овечий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] woolly, sheep-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a very limited amount of control over them, and can only swat them from side to side.
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldSheep(sheep-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] пушистые овечьи хвостики прорастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] может ими управлять лишь в очень ограниченной степени, и способен лишь нетерпеливо ими махать из стороны в сторону.
+<br/>[npc.Name] теперь у [npc.has] [npc.tailCount] [style.boldSheep(овечьи хвостики)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] sheep tail, which [npc.she] can just about swish from side to side.
 		#ELSE

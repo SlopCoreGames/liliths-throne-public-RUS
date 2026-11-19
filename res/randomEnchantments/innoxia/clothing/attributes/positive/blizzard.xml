@@ -8,7 +8,7 @@
 	]]></spawnWeighting>
 	
 	<namePrefix/>
-	<namePostfix><![CDATA[of the blizzard]]></namePostfix>
+	<namePostfix><![CDATA[снежной бури]]></namePostfix>
 	<nameOverride/>
 	
 	<conditionalPreParsing/>

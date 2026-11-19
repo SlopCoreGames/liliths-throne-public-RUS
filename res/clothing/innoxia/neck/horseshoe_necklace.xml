@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[horseshoe necklace]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[horseshoe necklaces]]></namePlural>
-		<description><![CDATA[A necklace consisting of a thin chain with a horseshoe-shaped pendant threaded onto it. As an alternative to being worn around the neck, it would be possible to wrap the chain around your wrist.]]></description>
+		<name><![CDATA[подкова-кулон]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[подковки-кулоны]]></namePlural>
+		<description><![CDATA[Ожерелье, состоящее из тонкой цепочки, на которую нанизан кулон в форме подковы. В качестве альтернативы его можно не носить на шее, а обернуть вокруг запястья.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -56,47 +56,47 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the horseshoe necklace around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] подкову-кулон на шее у [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the horseshoe necklace around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] подкову-кулон на шее у [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before fastening the horseshoe necklace around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем застегнуть подкову-кулон на шее у [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] horseshoe necklace, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] подкову-кулон на [npc.her], прежде чем снять его с шеи [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] horseshoe necklace, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] подкову-кулон на [npc2.namePos], прежде чем снять его с шеи [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] horseshoe necklace, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] подкову-кулон на [npc2.namePos], а затем с силой срывает его с шеи [npc2.her].]]>
     </otherRough>
   </displacementText>
 	
   <replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] [npc.her] horseshoe necklace around [npc.her] wrist and then [npc.verb(fasten)] it in place.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] подкову-кулон [npc.her] вокруг запястья [npc.her], а затем [npc.verb(fasten)] его.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the horseshoe necklace around [npc2.namePos] wrist and then [npc.verb(fasten)] it in place.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] подкову-ожерелье вокруг запястья [npc2.namePos], а затем [npc.verb(fasten)] её на месте.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(wrap)] the horseshoe necklace around [npc2.namePos] wrist and then tightly [npc.verb(fasten)] it in place.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(wrap)] подкову-ожерелье вокруг запястья [npc2.namePos], а затем туго [npc.verb(fasten)] её на месте.]]>
     </otherRough>
   </replacementText>
   <displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] horseshoe necklace, before unwrapping it from around [npc.her] wrist.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] подкову-ожерелье [npc.her], прежде чем снять её с запястья [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] horseshoe necklace, before unwrapping it from around [npc2.her] wrist.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] подкову-ожерелье [npc2.namePos], прежде чем снять её с запястья [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] horseshoe necklace, before snatching it off [npc2.her] wrist.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] подкову-ожерелье [npc2.namePos], а затем резко срывает её с запястья [npc2.her].]]>
     </otherRough>
   </displacementText>
 </clothing>

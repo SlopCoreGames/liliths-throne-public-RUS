@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>2500</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[saddle]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[saddles]]></namePlural>
-    <description><![CDATA[A supportive structure for a rider of an animal, which is fastened to the animal's back by a girth. It comes complete with stirrups, the height of which can be freely adjusted.]]></description>
+    <name><![CDATA[седло]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[седла]]></namePlural>
+    <description><![CDATA[Опора для наездника, которая крепится к спине животного с помощью подпруги. Седло укомплектовано стременами, высоту которых можно свободно регулировать.]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -64,25 +64,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(place)] the saddle on [npc.her] back, before reaching around and fastening the buckles to keep it in place and then lowering the stirrups.]]>
+			<![CDATA[[npc.Name] [npc.verb(place)] седло на спину [npc.her], после чего затягивает пряжки, чтобы закрепить его, и опускает стремена.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(place)] the saddle on [npc2.namePos] back, before fastening the buckles to keep it in place and then lowering the stirrups.]]>
+			<![CDATA[[npc.Name] [npc.verb(place)] седло на спину [npc2.namePos], затягивает пряжки для надежной фиксации и опускает стремена.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(force)] the saddle on [npc2.namePos] back, before fastening the buckles to keep it in place and then lowering the stirrups.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(force)] седло на спину [npc2.namePos], после чего затягивает пряжки, чтобы закрепить его, и опускает стремена.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the saddle's straps and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] ремни седла и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the saddle's straps and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] ремни седла и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] impatiently [npc.verb(unfasten)] the saddle's straps and [npc.verb(yank)] it off.]]>
+			<![CDATA[[npc.Name] нетерпеливо [npc.verb(unfasten)] ремни седла и [npc.verb(yank)] его с себя.]]>
 		</otherRough>
 	</displacementText>
 

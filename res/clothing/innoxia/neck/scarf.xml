@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>150</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[scarf]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[scarves]]></namePlural>
-		<description><![CDATA[A plain, unisex scarf. While some scarves are worn just for fashion, this one is made out of a soft, woolly fabric, making it practical for keeping the wearer warm on cold days or nights.]]></description>
+		<name><![CDATA[шарф]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[шарфы]]></namePlural>
+		<description><![CDATA[Простой шарф унисекс. В то время как некоторые носят шарфы лишь ради моды, этот сделан из мягкой шерстяной ткани, что делает его практичным для согрева владельца в холодные дни или ночи.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -45,24 +45,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the scarf around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] шарф вокруг [npc.her] шеи.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the scarf around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] шарф вокруг шеи [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before wrapping the scarf around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем обернуть шарф вокруг шеи [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unwrap)] [npc.her] scarf, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unwrap)] шарф [npc.her], прежде чем снять его с шеи [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unwrap)] [npc2.namePos] scarf, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unwrap)] шарф [npc2.namePos], прежде чем снять его с шеи [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unwrap)] [npc2.namePos] scarf, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unwrap)] шарф [npc2.namePos], прежде чем сорвать его с шеи [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

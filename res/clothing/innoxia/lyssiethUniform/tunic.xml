@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[service dress tunic]]></name>
+		<name><![CDATA[парадная туника]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[service dress tunics]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[парадные туники]]></namePlural> 
 		
-		<description><![CDATA[A four pocket officer's service dress tunic, complete with metal buttons, shoulder rank pips, and a cord lanyard. This style of uniform is worn only by Lyssieth's elite guards.]]></description> 
+		<description><![CDATA[Офицерская парадная туника с четырьмя карманами, дополненная металлическими пуговицами, погонами с шифровками и шнуром аксельбанта. Подобный стиль униформы носят только элитные гвардейцы Lyssieth.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

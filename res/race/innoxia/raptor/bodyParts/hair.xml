@@ -2,7 +2,7 @@
 <hair>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_hair</coveringType>
 	
@@ -12,8 +12,8 @@
 	
 	<determiner><![CDATA[a crest of]]></determiner>
 	
-	<name><![CDATA[head-feather]]></name>
-	<namePlural pluralByDefault="true"><![CDATA[head-feathers]]></namePlural> 
+	<name><![CDATA[головное перо]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[головные перья]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>raptor-like</descriptor>
@@ -24,11 +24,11 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		The transformation only lasts a matter of moments, leaving [npc.herHim] with a crest of feathers in place of hair.
-		<br/>[npc.Name] now [npc.has] [npc.hairColour], bird-like [style.boldRaptor(raptor feathers)].
+		Трансформация длится лишь мгновение, оставляя [npc.herHim] с хохолком из перьев вместо волос.
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour], птичьи [style.boldRaptor(raptor feathers)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], bird-like raptor feathers
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], птичьи перья раптора
 	]]></bodyDescription>
 </hair>

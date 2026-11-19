@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[strapless bra]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[strapless bras]]></namePlural>
-		<description><![CDATA[This bra has no shoulder straps to help hold it in place, and as such relies on an extra-wide band for breast support. It is intended to be worn in combination with dresses that would leave a normal bra's shoulder straps on display.]]></description>
+		<name><![CDATA[бюстгальтер без бретелей]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[бюстгальтеры без бретелей]]></namePlural>
+		<description><![CDATA[У этого бюстгальтера нет лямок, чтобы удерживать его на месте, поэтому он полагается на сверхширокую ленту для поддержки груди. Он предназначен для ношения с платьями, в которых лямки обычного лифчика были бы заметны.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -48,25 +48,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(press)] the cups of the strapless bra to [npc.her] chest, before reaching around to [npc.her] back and fastening it in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(press)] чашечки бюстгальтера без бретелей к [npc.her] груди, а затем обхватывает [npc.her] со спины, чтобы застегнуть его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(press)] the cups of the strapless bra to [npc2.namePos] chest, before reaching around to [npc2.her] back and fastening it in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(press)] чашечки бюстгальтера без бретелей к [npc2.namePos] груди, а затем обхватывает [npc2.her] со спины, чтобы застегнуть его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(press)] the cups of the strapless bra to [npc2.namePos] chest, before reaching around to [npc2.her] back and fastening it in place.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(press)] чашечки бюстгальтера без бретелей к [npc2.namePos] груди, а затем обхватывает [npc2.her] со спины, чтобы застегнуть его.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] strapless bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] бюстгальтер без бретелей и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] strapless bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] бюстгальтер без бретелей и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] strapless bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] [npc2.namePos] бюстгальтер без бретелей и [npc.verb(take)] его.]]>
 		</otherRough>
 	</displacementText>
 	

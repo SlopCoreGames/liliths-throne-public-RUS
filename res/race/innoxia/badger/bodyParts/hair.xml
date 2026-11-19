@@ -2,7 +2,7 @@
 <hair>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_hair</coveringType>
 	
@@ -12,8 +12,8 @@
 	
 	<determiner><![CDATA[a head of]]></determiner>
 	
-	<name><![CDATA[hair]]></name>
-	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	<name><![CDATA[волосы]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
@@ -26,11 +26,11 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		The transformation only lasts a matter of moments, leaving [npc.herHim] with fur-like hair.
-		<br/>[npc.Name] now [npc.has] [npc.hairColour] [style.boldBadger(badger hair)].
+		Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, похожими на мех.
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldBadger(badger hair)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], badger-like hair
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], волосы, подобные барсучьему меху
 	]]></bodyDescription>
 </hair>

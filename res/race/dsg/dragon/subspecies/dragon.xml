@@ -121,38 +121,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[dragon-morph]]></name>
-			<namePlural><![CDATA[dragon-morphs]]></namePlural>
-			<singularMaleName><![CDATA[dragon-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[dragon-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[dragon-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[dragon-girls]]></pluralFemaleName>
+			<name><![CDATA[дракономорф]]></name>
+			<namePlural><![CDATA[дракономорфы]]></namePlural>
+			<singularMaleName><![CDATA[дракон-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[драконша]]></singularFemaleName>
+			<pluralMaleName><![CDATA[драконы-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[драконши]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic dragon, known as a 'dragon-morph' when bipedal, and a 'dragontaur' when the lower body is that of a typically-oversized feral dragon.]]></description>
+	<description><![CDATA[Антропоморфный дракон; когда он передвигается на двух ногах, его называют «дракономорфом», а если его нижняя часть тела представляет собой туловище типичного огромного дикого дракона — «дракотавром».]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[vritra]]></name>
-			<namePlural><![CDATA[vritras]]></namePlural>
-			<singularMaleName><![CDATA[vritra]]></singularMaleName>
-			<singularFemaleName><![CDATA[vritra]]></singularFemaleName>
-			<pluralMaleName><![CDATA[vritras]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[vritras]]></pluralFemaleName>
+			<name><![CDATA[вриттра]]></name>
+			<namePlural><![CDATA[вриттры]]></namePlural>
+			<singularMaleName><![CDATA[вриттра]]></singularMaleName>
+			<singularFemaleName><![CDATA[вриттра]]></singularFemaleName>
+			<pluralMaleName><![CDATA[вриттры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[вриттры]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[dragon]]></feralName>
-		<feralNamePlural><![CDATA[dragons]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[dragon]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[dragoness]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[dragons]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[dragonesses]]></feralPluralFemaleName>
+		<feralName><![CDATA[дракон]]></feralName>
+		<feralNamePlural><![CDATA[драконы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[дракон]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[дракониха]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[драконы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[драконихи]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -183,7 +183,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] dragon-like body is very powerful, and as a mythological creature [npc.she] [npc.has] a close arcane affinity with both the strengths and weaknesses that it brings.
+		[npc.NamePos] драконье тело обладает огромной мощью, а как мифическое существо, [npc.she] [npc.has] обладает тесной связью с Арканой, приносящей как силу, так и слабости.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

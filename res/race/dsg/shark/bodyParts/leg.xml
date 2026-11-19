@@ -10,7 +10,7 @@
 	<race>dsg_shark</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[shark]]></transformationName>
+	<transformationName><![CDATA[акула]]></transformationName>
 	
 	<!-- The id of the material covering this leg.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -47,8 +47,8 @@
 	<!-- The singular and plural name of this leg type.
 	These should be left as 'leg' and 'legs' for standard leg types.
 	The values 'tail/tails', 'tentacle/tentacles' should be used if this leg type is a serpent/fish tail or a collection of tentacles, respectively. -->
-	<name><![CDATA[leg]]></name>
-	<namePlural><![CDATA[legs]]></namePlural> 
+	<name><![CDATA[нога]]></name>
+	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's leg of this type.
 	Can be left blank. -->
@@ -87,13 +87,13 @@
 	<!-- The description which is shown when a character transforms to obtain this leg type.
 	This description immediately follows a brief description of the leg type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		A layer of tough sharkskin quickly grows over [npc.her] legs as they shift into a new form, leaving [npc.herHim] with surprisingly normal humanoid feet. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new skin smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
-		<br/>[npc.Name] now [npc.has] anthropomorphic, [style.boldShark(shark-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+		Слой грубой акултей кожи быстро покрывает [npc.her] ноги, пока они принимают новую форму, оставляя [npc.herHim] с удивительно обычными человеческими ступнями. Когда трансформация завершается, [npc.she] [npc.verb(see)] что [npc.her] новая кожа плавно переходит в [npc.skin], покрывающую остальную часть [npc.her] тела на уровне [npc.her] бедер.
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldShark(акулоподобные ноги и ступни)], которые [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How these legs are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are surprisingly humanoid despite being covered in the same sharkskin.
+		Ноги [npc.Her] — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а ступни [npc.her] на удивление человечны, несмотря на то, что они покрыты той же акултей.
 	]]></bodyDescription>
 	
 </leg>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA["MFD by DSG Beverages GmbH" is engraved into the bottle]]></authorTag>
+		<authorTag><![CDATA[На бутылке выгравировано: "Произведено DSG Beverages GmbH"]]></authorTag>
 		<value>30</value>
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>
@@ -11,15 +11,16 @@
 		<oneShotWeaponChanceToRecoverAfterCombat>0</oneShotWeaponChanceToRecoverAfterCombat>
 		
 		<determiner><![CDATA[an]]></determiner>
-		<name appendDamageName="true"><![CDATA[arcane firebomb]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[arcane firebombs]]></namePlural>
-		<description><![CDATA[A glass bottle filled with highly flammable fish oil and a rag, designed to shatter on impact and shower the immediate area with burning oil.]]></description>
+		<name appendDamageName="true"><![CDATA[арканная огненная бомба]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[арканные огненные бомбы]]></namePlural>
+		<description><![CDATA[Стеклянная бутылка, наполненная легковоспламеняющимся рыбьим жиром и заткнутая тряпкой; при ударе она разбивается, заливая всё вокруг горящим маслом.]]></description>
 		<attackDescriptor>immolate</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Throw your arcane firebomb at [npc2.name].]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Брось арканную огненную бомбу в [npc2.name].]]></attackTooltipDescription>
 		<rarity>UNCOMMON</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(grab)] the arcane firebomb. The rag stuffed down the bottle's neck immediately ignites but the arcane flames don't seem to be consuming it.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] the arcane firebomb away. The rag immediately extinguishes itself.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(схватит)] арканную огненную бомбу. Тряпка, заткнутая в горлышко бутылки, тут же вспыхивает, но арканное пламя, кажется, не пожирает её.
+]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(убирает)] арканную огненную бомбу. Тряпка мгновенно гаснет.]]></unequipText>
 		<imageName>pbomb_uneq.svg</imageName>
 		<imageEquippedName>pbomb.svg</imageEquippedName>
 		<physicalResistance>0</physicalResistance>
@@ -38,12 +39,12 @@
 		<effects/>
 		
 		<extraEffects>
-			<effect><![CDATA[[style.boldFire(Lingering Flames)] for 6 turns on hit.]]></effect>
+			<effect><![CDATA[[style.boldFire(Длительное пламя)] на 6 ходов при попадании.]]></effect>
 		</extraEffects>
 		
 		<onHitEffect><![CDATA[
 			#IF (!npc2.hasStatusEffect(SE_LINGERING_FLAMES))
-				[##npc2.addStatusEffect(SE_LINGERING_FLAMES, 6)] The burning oil pools around [npc2.name], [style.boldFire(causing the flames to lick at [npc2.her] [npc2.feet]!)]
+				[##npc2.addStatusEffect(SE_LINGERING_FLAMES, 6)] Горящее масло растекается вокруг [npc2.name], [style.boldFire(и пламя лижет [npc2.her] [npc2.feet]!)]
 			#ENDIF
 		]]></onHitEffect>
 		
@@ -62,14 +63,12 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(throw)] the firebomb at [npc2.name]. The bottle shatters on impact with [npc2.namePos] aura, engulfing [npc2.herHim] in fire!
+		[npc.Name] [npc.verb(бросает)] огненную бомбу в [npc2.name]. Бутылка разбивается об ауру [npc2.namePos], охватывая [npc2.herHim] огнем!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(throw)] the firebomb at [npc2.name]. The bottle misses [npc2.herHim] completely and shatters in the distance, creating an impressive but useless fireball.
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(throw)] огненную бомбу в [npc2.name]. Бутылка пролетает мимо [npc2.herHim] и с грохотом разбивается где-то вдалеке, порождая внушительный, но совершенно бесполезный огненный шар.]]></missText>
 	</missDescriptions>
 	
 </weapon>

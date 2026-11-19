@@ -27,30 +27,30 @@
 	<basicDescriptionId>GOAT_BASIC</basicDescriptionId>
 	<advancedDescriptionId>GOAT_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[goat-morph]]></name>
-	<namePlural><![CDATA[goat-morphs]]></namePlural>
-	<singularMaleName><![CDATA[goat-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[goat-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[goat-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[goat-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic goat, known as a 'goat-morph' when bipedal, and a 'goat-taur' when the lower body is that of a feral goat.]]></description>
+	<name><![CDATA[козоморф]]></name>
+	<namePlural><![CDATA[козоморфы]]></namePlural>
+	<singularMaleName><![CDATA[козлик]]></singularMaleName>
+	<singularFemaleName><![CDATA[козочка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[козлики]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[козочки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный козел, которого называют «козлеморфом», когда он передвигается на двух ногах, и «козлотором», когда его нижняя часть тела представляет собой дикого козла.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[baphomet]]></name>
-			<namePlural><![CDATA[baphomets]]></namePlural>
-			<singularMaleName><![CDATA[baphomet]]></singularMaleName>
-			<singularFemaleName><![CDATA[baphomet]]></singularFemaleName>
-			<pluralMaleName><![CDATA[baphomets]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[baphomets]]></pluralFemaleName>
+			<name><![CDATA[бафомет]]></name>
+			<namePlural><![CDATA[бафометы]]></namePlural>
+			<singularMaleName><![CDATA[бафомет]]></singularMaleName>
+			<singularFemaleName><![CDATA[бафомет]]></singularFemaleName>
+			<pluralMaleName><![CDATA[бафометы]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[бафометы]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[goat]]></feralName>
-		<feralNamePlural><![CDATA[goat]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[buck]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[doe]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[bucks]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[does]]></feralPluralFemaleName>
+		<feralName><![CDATA[коза]]></feralName>
+		<feralNamePlural><![CDATA[коза]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[козёл]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[олениха]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[козлы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[оленихи]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>75</size>
@@ -63,7 +63,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] strong, tough body helps [npc.herHim] to endure physical blows as well as to put some extra power behind attacks of [npc.her] own.
+		[npc.NamePos] сильное и выносливое тело помогает [npc.herHim] не только выдерживать физические удары, но и вкладывать дополнительную мощь в атаки [npc.her] собственной.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>

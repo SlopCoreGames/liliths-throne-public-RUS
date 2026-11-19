@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[suit jacket]]></name>
+		<name><![CDATA[пиджак]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[suit jackets]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[пиджаки]]></namePlural> 
 		
-		<description><![CDATA[A smart suit jacket, which looks best when worn with a shirt and tie.]]></description> 
+		<description><![CDATA[Элегантный пиджак, который лучше всего смотрится в сочетании с рубашкой и галстуком.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

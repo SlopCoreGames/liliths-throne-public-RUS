@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[Underneath the receiver, a small engraving reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[Под ствольной коробкой виднеется небольшая гравировка: «Официальное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 		<value>5000</value>
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendDamageName="true"><![CDATA[teargas shotgun]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[teargas shotgun]]></namePlural>
-		<description><![CDATA[A huge 4-gauge shotgun loaded with teargas grenades. Although it bears Enforcer markings, they have been scratched out and replaced with insignia you don't recognize.]]></description>
+		<name appendDamageName="true"><![CDATA[слезоточивая дробовик]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[слезоточивая дробовик]]></namePlural>
+		<description><![CDATA[Огромный 4-й калибр, заряженный гранатами со слезоточивым газом. Хотя на нем и видны знаки Enforcer, они были соскоблены и заменены на незнакомую тебе эмблему.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Shoot [npc2.name] with your shotgun.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Выстрели из дробовика в [npc2.name].]]></attackTooltipDescription>
 		<rarity>RARE</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] out the shotgun, [npc.verb(load)] it, [npc.verb(move)] the fore end forward with an intimidating clack before disengaging the safety.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(move)] the foreend back and [npc.verb(check)] to see that the chamber is empty before putting the shotgun away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] дробовик, [npc.verb(load)] его и [npc.verb(move)] цевье вперед с устрашающим щелчком, прежде чем снять предохранитель.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(move)] цевье назад и [npc.verb(check)], пуст ли патронник, прежде чем убрать дробовик.]]></unequipText>
 		<imageName>gbshotgun_uneq.svg</imageName>
 		<imageEquippedName>gbshotgun.svg</imageEquippedName>
 		<physicalResistance>0</physicalResistance>
@@ -34,7 +34,7 @@
 		
 		<extraEffects>
 			<effect><![CDATA[
-				[style.boldPoison(Poison Vapours)] for 2 turns on hit.
+				[style.boldPoison(Ядовитые пары)] на 2 хода при попадании.
 			]]></effect>
 		</extraEffects>
 		
@@ -46,7 +46,7 @@
 		
 		<onCriticalHitEffect><![CDATA[
 			#IF (!npc2.hasStatusEffect(SE_POISON_VAPOURS_CHOKING_HAZE))
-				[##npc2.addStatusEffect(SE_POISON_VAPOURS_CHOKING_HAZE , 4)] There is now a [style.boldPoison(very thick haze of teargas)] around [npc2.name].
+				[##npc2.addStatusEffect(SE_POISON_VAPOURS_CHOKING_HAZE , 4)] Вокруг [npc2.name] теперь висит [style.boldPoison(очень густая пелена слезоточивого газа)].
 			#ENDIF
 		]]></onCriticalHitEffect>
 		
@@ -67,14 +67,12 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(pull)] the trigger at [npc2.name]. The grenade flies in a gracefull arc and lands by [npc2.namePos] [npc2.feet], [style.boldPoison(releasing a choking cloud of tear gas.)]
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицеле [npc.her] и [npc.verb(pull)] за спусковой крючок, целясь в [npc2.name]. Граната летит по изящной дуге и приземляется рядом с [npc2.namePos] [npc2.feet], [style.boldPoison(выпуская удушливое облако слезоточивого газа.)]
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(pull)] the trigger at [npc2.name]. The grenade misses [npc2.herHim] completely and lands in the distance.
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(line)] прицеливается через [npc2.name] в [npc.her] и [npc.verb(pull)] за спусковой крючок, целясь в [npc2.name]. Граната пролетает мимо [npc2.herHim] и падает где-то вдалеке.]]></missText>
 	</missDescriptions>
 	
 </weapon>

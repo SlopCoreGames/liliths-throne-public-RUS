@@ -3,16 +3,16 @@
 	<race>NoStepOnSnek_octopus</race>
 	<coveringType>TONGUE</coveringType>
 	<defaultLength>8</defaultLength>
-	<name><![CDATA[tongue]]></name>
-	<namePlural><![CDATA[tongues]]></namePlural>
+	<name><![CDATA[язык]]></name>
+	<namePlural><![CDATA[языки]]></namePlural>
 	<descriptorsMasculine>
-		<descriptor><![CDATA[octopus-like]]></descriptor>
+		<descriptor><![CDATA[осьминогоподобный]]></descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<descriptor><![CDATA[octopus-like]]></descriptor>
+		<descriptor><![CDATA[осьминогоподобный]]></descriptor>
 	</descriptorsFeminine>
 	<bodyDescription><![CDATA[
-		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], octopus-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот удерживает [npc.a_tongueLength], [npc.tongueColour(true)], осьминогоподобный [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
 	]]></bodyDescription>
 	<defaultTongueModifiers>
 		<modifier>WIDE</modifier>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pattern>
-	<name><![CDATA[tiger-striped]]></name>
+	<name><![CDATA[в тигровый полоску]]></name>
 	<defaultPattern>true</defaultPattern>
     <patternName>tiger_striped.svg</patternName>
 </pattern>

@@ -3,11 +3,9 @@
 	
 	<!-- POSTER -->
 	
-	<htmlContent tag="POSTER"><![CDATA[
-	<p>
-		As you walk down the street, you notice a poster plastered to a nearby building. Although it is evident someone put a lot of effort into it, it nonetheless comes across as crude. In bold letters, it proclaims:
-	</p>
-	<div style='width:45.0%; margin:0 auto'>
+	<htmlContent tag="POSTER"><![CDATA[<p>
+	Когда ты идешь по улице, твой взгляд цепляется за плакат, приклеенный к ближайшему зданию. Хотя очевидно, что кто-то приложил немало усилий, всё же он выглядит довольно грубо. Жирным шрифтом на нем красуется:
+</p><div style='width:45.0%; margin:0 auto'>
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
     <path fill="#998675" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" d="M45.373 22.123l-.123.002c3.625 7.042 2.25 20.208 2.25 20.208l4.333 3h-4.667l2.667 3L47 49.666l2.333 2-2 .167-1.833 10L60.833 67l-15.333.333-.833 10.167 3 1.333-2 1.167.833 5.833 2.333 1.833-2.667 1.167-1.5 13.5 1.667 1.333-1.667 1.167 3 2.333-3 .167L48 110.5l-2.167 2.333 1.5 7 3 2-3.167 2.5-1.333 4.5 11.5 2-11.5 4.667v13.167l2.667 6.167-2.667-.834v13.167l1 .333-1 2.667v4.333L52 180.834l-6.167.166L47 189l2.167 1.834-3.333 2v4.333l3.667 2.667-3.667 1.833L47 211l11.833 3.167-13 2.5v9l4.833.667L45.833 228l5.5 1.167L50.5 233l10.5-1.666 2.5-1 1.167 2.166 2.5-2.833 8 .667L83 223.167l.833 9.333 7.833-3.166 3.5 5 2.333-2.5 2.667 2.5 1-3.167 3 2.167 1.667-2.5L117.167 233l9.167-18.666V233l2.5-2.333L130 233l1.167-1.833 5.333 2.333 1.667-3 2.333 3.5 7.167 1.167 2.5-3 1 2.167h4.666l9.167-.667-3.5-9 8.5 9h5.167l1.166-1.5 1.5.667V230l2.667 3.667 1.167-2.333 1.333 1.5h3.333l1.5-1.834 1.167 1.834h3.833l4-8 6.334 7.333s2.924-.121 6.351-.121c3.821 0 8.269.15 9.982.788-2.375-3.084-3.5-14.667-3.5-14.667l-1.833-1.333L216.5 213l-2.333-4.333L217.5 208l1.167-6.166-2.334-3 1.167-1.667.417-.417 1.583-1.583-3.167-.833 3.167-1.834-1-3.5-11-3.666 11-5.5v-12.5l-2.333-1 2.333-2-2-1.5h2l-.667-2.167-2.166-1 2.166-2v-9.5l-2.166-1.833h.666l-.666-10-1.834-1.667 1.334-1 1.833-9.834L204.833 120 216 116.167 213.583 108h1.75l-1.75-2 3.25-1-1.5-2 1-3-1.166-3.333L216.5 95l.5-4.5-2.333-2 2.166-.833L217 81.5l-.833-8-2.584-1.333 2.417-1 .5-3.5-7.167-2.167 6.834-4.667.833-3.334h-3.667l2.5-1.833-.833-1 1.833-2.333-.5-5.167-6.166-1 7.666-1.167V32.833h-2.166l2.166-3.5c-.552-3.272-3.381-4.344-5.767-4.344-.135 0-.268.003-.399.01l-1.5 2.5-1.334-3.333-3 3-2-1.833-4 2.167-12.458-2.374-4.042 7.708-2.666-8.5-3.834 1.333-.666-2-4.667 1.667-6.167-2.5-9.5 2.833-6.666-1-.667 9.667-5.75-9.583-9.917 4.916.167-3.5-4 2-3.667-1.667-3-1-9.833.5-1 5-3.5-5.667-13.167 2.5-.167-3.333-5.166-.167-6.333 6.833-.667-7-1.833 4.333-2-3.333-2 1.167-1-1.667-5.667 11V24.499l-7.333-1L60 26.166l.833-2.5-4.5 3.333L56 23.833l-5.667.333s-2.846-2.043-4.96-2.043z"/>
     <path fill="#c7b299" d="M165.182 26.008l6.251 2.534 2.856-1.02.658 1.976 3.783-1.316 1.74 5.548 2.163 6.896 3.356-6.4 3.009-5.737 11.322 2.158 3.061-1.657 2.541 2.33 1.815-1.814 1.891 4.724 3.656-6.095c.561.153.979.429 1.251.826l-4.254 6.874h4.551v6.588l-23.988 3.65 22.725 3.685.162 1.668-2.59 3.296.344.413-7.315 5.365h7.165l-8.871 6.058 9.724 2.939-5.727 2.37 6.89 3.556.538 10.163-.299.114-4.693 1.805 4.946 4.24-.229 2.06-1.827 2.285 1.376 3.933-1.103 3.306-3.782 1.164 1.72 1.966 2.31 7.804-17.07 5.859 18.326 5.774-1.53 6.371-2.905 2.178 3.626 3.296.373 5.594h-5.649l7.355 6.225v6.795l-3.77 3.48H207.5l6.208 4.656-3.152 2.702 4.944 2.12v8.667l-15.82 7.91 16.025 5.341-7.172 4.153 5.533 1.456-1.461 2.088 2.862 3.68-.539 2.848-5.324 1.065 3.439 6.389-2.876 4.726 2.989 2.174c.263 2.306.782 6.057 1.661 9.358-1.403-.075-9.121-.081-10.318-.047l-8.338-9.652-5.516 10.366-2.51-3.944-2.626 3.211-1.163.733-3.382-3.805-.941 1.883-5.191-7.138v8.435l-1.134 1.458h-2.406l-7.612-8.06-10.541-11.162 5.564 14.309 2.028 5.216-5.009.364h-2.637l-2.186-4.734-4.442 5.331-4.188-.682-4.337-6.507-2.731 4.916-4.506-1.971-.976-1.952-.389.361V201.42l-13.851 28.204-11.041-2.11-1.043 1.564-3.842-2.775-.815 2.582-1.383-1.296-1.855 1.991-2.745-3.922-6.294 2.544-1.013-11.342-11.34 10.375-8.195-.684-.648.734-.395-.732-10.508 2.796.263-1.207 8.887-3.064-14.68-2.025v-3.907l23.394-4.499-22.501-6.022-.653-5.223 6.182-3.091-6.422-4.671 5.469-4.389-4.498-3.808-.516-3.535 9.638-.26-10.094-10.367 1.902-7.644-1.902-.634v-6.922l5.018 1.569-5.018-11.605V137.52l19.337-7.848-18.398-3.575 5.662-4.469-5.423-3.616-.918-4.282 2.676-3.788 4.063-.226-6.116-4.756 1.62-1.134-3.506-2.804 1.126-10.135 5.673-2.481-5.33-4.188-.378-2.644 5.318-3.103-6.409-2.848.438-5.35 29.756-.646-29.106-9.808.951-5.187 6.867-.572-4.264-3.654 2.269-1.067-.894-1.006h7.59l-7.896-5.467-2.916-2.018c.174-2.806.333-8.419-.647-13.656l3.338-.196.583 5.539 1.082-.801-1.848 5.543 8.988-8.99 1.614-1.614 3.267.445V48.041l5.667-11 4.952-7.79 2.795 4.659.401 4.208 4.552-4.912 5.404-5.83 1.067.607.172 3.44 3.383-.643 11.139-2.115 6.417 10.388 2.035-10.177 6.938-.353 7.14 2.965.697-.349-.166 3.48 4.572-2.267 7.437-3.687 4.326 7.208 4.908 8.18.657-9.517.443-6.424 4.754.426 8.492-2.53"/>
@@ -51,7 +49,7 @@
 	</svg>
 	</div>
 	<p>
-		This must be from that group which has been harassing Eisek. At the bottom there are directions to the building's cellar and you note that the meeting started a few minutes ago. If you want to confront the mob now, you'll need to head into the cellar right away. On the other hand, if they are printing flyers they're probably holding these meetings regularly all over town. You could find another place and time.
+		Это наверняка та самая банда, что изводит Эйзека. Внизу есть указатели к подвалу здания, и ты замечаешь, что собрание началось всего несколько минут назад. Если ты хочешь столкнуться с бандитами прямо сейчас, тебе нужно немедленно спускаться в подвал. С другой стороны, раз они печатают листовки, то, скорее всего, проводят такие встречи регулярно по всему городу. Ты можешь поискать другое место и другое время.
 	</p>
 	]]>
 	</htmlContent>
@@ -60,7 +58,7 @@
 	
 	<htmlContent tag="DISCARD_POSTER"><![CDATA[
 	<p>
-		You don't want to confront the mob right now, but you decide to rip the poster off and toss it into the nearest rubbish bin. Next time, you tell yourself.
+		Ты не хочешь сейчас вступать в конфронтацию с бандой, поэтому просто срываешь плакат и швыряешь его в ближайшую мусорную корзину. «В следующий раз», — обещаешь ты себе.
 	</p>
 	]]>
 	</htmlContent>
@@ -69,31 +67,31 @@
 	
 	<htmlContent tag="CONFRONT"><![CDATA[
 	<p>
-		You descend the steps into the building's cellar, following the sound of voices. It is surprisingly well lit and spacious inside. Unmarked crates and barrels line the walls, providing most of the seating, but there are a handful of chairs upon which you see some familiar faces. One of these is the long-winded donkey-boy who takes notice of you the instant you enter the room.
+		Следуя на звук голосов, ты спускаешься по ступеням в подвал здания. Внутри на удивление просторно и светло. Вдоль стен выстроены немаркированные ящики и бочки, которые служат вместо сидений, но есть и несколько стульев, на которых ты замечаешь знакомые лица. Одно из них — тот самый многословный ослиный мальчишка, который замечает тебя в ту же секунду, как ты входишь в комнату.
 	</p>
 	<p>
-		[test.speechMasculine(You!)] he exclaims, his face twisted in disgust as he extends an accusatory digit,
+		[test.speechMasculine(Ты!)] — восклицает он, и его лицо искажается от отвращения, когда он вытягивает в твою сторону обвиняющий палец.
 		#IF(flags.hasFlag(FLAG_dsg_elis_eisek_introduced_as_dragon) && pc.getRace().equals(RACE_dsg_dragon))
-			 [test.speechMasculine(Come to settle the score? You may have the rest of the town fooled, but we know all about your kind! What they did for generations to us common folk before they fell from favour.)]
+			 [test.speechMasculine(Пришел свести счеты? Остальной город, может, и дурачит тебя, но мы-то знаем, что вы за твари! Знаем, что ваш род вытворял с простым людом целыми поколениями, пока они не лишились милости!)]
 		#ELSEIF(!flags.hasFlag(FLAG_dsg_elis_eisek_introduced_as_dragon) && pc.getRace().equals(RACE_dsg_dragon))
 			#IF(!game.isSillyMode())
-				 [test.speechMasculine(It's not enough that that [eisek.race] has to pollute our market with his presence but now our inaction has led to an invasion.)]
+				 [test.speechMasculine(Мало того, что этот [eisek.race] оскверняет наш рынок своим присутствием, так теперь еще и наше бездействие привело к вторжению!)]
 			#ELSE
-				 [test.speechMasculine(It's not enough that one dragon pollutes our city with his presence but now... We should have acted! They're already here!)]
+				 [test.speechMasculine(Мало того, что один дракон оскверняет наш город своим присутствием, так теперь... Нам следовало действовать раньше! Они уже здесь!)]
 			#ENDIF
 		#ELSEIF(flags.hasFlag(FLAG_dsg_elis_eisek_introduced_as_dragon) && !pc.getRace().equals(RACE_dsg_dragon))
-			 [test.speechMasculine(You can't fool us by wearing the guise of decent folk! We know who you really are.)]
+			 [test.speechMasculine(Тебе не обмануть нас, прикидываясь порядочным человеком! Мы-то знаем, кто ты на самом деле!)]
 		#ELSE
-			 [test.speechMasculine(Come to settle the score? You don't know anything about that [eisek.race] and what his kind are really like, what they did for generations to us common folk before they fell from favour.)]
+			 [test.speechMasculine(Пришел свести счеты? Ты ведь ничего не знаешь об этом [eisek.race] и о том, какие они на самом деле, и что их род вытворял с простым людом целыми поколениями, пока они не лишились милости!)]
 		#ENDIF
 	<p>
-		You tell the donkey-boy, who you assume to be a leader of sorts, that you want them to leave Eisek alone. Your request is met by derisive laughter.
+		Ты говоришь мальчишке-ослику, который, судя по всему, является кем-то вроде лидера, что хочешь, чтобы они оставили Эйсек в покое. Твою просьбу встречают насмешливым хохотом.
 	</p>
 	<p>
-		[test.speechMasculine(And why would we do that? We will not stand by while our homes are in danger!)]
+		[test.speechMasculine(А с какой стати нам это делать? Мы не будем стоять в стороне, когда наши дома в опасности!)]
 	</p>
 	<p>
-		What will do you to convince the mob?
+		Что ты сделаешь, чтобы убедить толпу?
 	</p>
 	]]>
 	</htmlContent>
@@ -105,21 +103,21 @@
 	<htmlContent tag="INTIMIDATE"><![CDATA[
 	<p>
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SHY))
-			With your superior physique providing a much needed confidence boost, you
+			Твое превосходное телосложение придает тебе уверенности, и ты
 		#ELSE
-			You
-		#ENDIF
+Ты		#ENDIF
 		#IF(pc.isFeral())
-			 bare your teeth
+			скалишь зубы,
 		#ELSEIF(pc.getRace() == RACE_SLIME)
-			 increase your bulk by ingesting air
+			надуваешься, заглатывая воздух,
 		#ELSE
-			 crack your knuckles
+			хрустишь костяшками пальцев,
 		#ENDIF
-		 menacingly and explain that if they don't honour your request, the next time you see them anywhere near Eisek you'll give them a thrashing they'll never forget. And with their history with the Enforcers, somehow you don't think you're going to be the one getting arrested.
+		
+		угрожающе объясняешь, что если они не исполнят твою просьбу, то в следующий раз, когда ты увидишь их рядом с Эйзеком, ты устроишь им такую взбучку, которую они никогда не забудут. И, учитывая их прошлое с Enforcer, ты почему-то не думаешь, что арестованным окажешься именно ты.
 	</p>
 	<p>
-		A tough looking [npc.race] steps forward at your threat. [npc.speech(Think you're hot shit, huh? You don't scare me!)] [npc.she] says as [npc.she] charges forward!
+		На твою угрозу вперед выходит крепкий [npc.race]. [npc.speech(Думаешь, ты тут самый крутой, а? Меня не напугаешь!)] — бросает [npc.she], пока [npc.she] бросается в атаку!
 	</p>
 	]]>
 	</htmlContent>
@@ -129,54 +127,50 @@
 	<htmlContent tag= "INTIMIDATE_ARCANE"><![CDATA[
 	<p>
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SHY))
-			With your superior arcane ability providing a much needed confidence boost, you
+			Твои превосходные способности к Аркане придают тебе уверенности, и ты
 		#ELSE
-			You
-		#ENDIF
+Ты		#ENDIF
 		#IF(pc.hasSpell(SPELL_FIREBALL))
-			 cast a ball of fire that flies right between the donkey-boy's legs and scorches the floor beneath his chair.
+			 пускаешь огненный шар, который пролетает прямо между ног ослиноподобного парня и опаляет пол под его стулом.
 		#ELSEIF(pc.hasSpell(SPELL_SLAM))
 			#IF(game.isSillyMode())
-				 punch the ground with a cry of [pc.speech(C'mon and slam!)], causing
+				 с силой бьешь кулаком по земле с криком [pc.speech(Давай, врывайся!)], вызывая
 			#ELSE
-				 use your telekinesis to cause
+				 используешь телекинез, чтобы заставить
 			#ENDIF
-			 a small earthquake in the cellar. Dust rains down from the ceiling.
+			 небольшое землетрясение в подвале. С потолка сыплется пыль.
 		#ELSEIF(pc.hasSpell(SPELL_TELEKENETIC_SHOWER))
-			 lift a few small pebbles and make them orbit around the donkey-boy's head.
+			 поднять несколько мелких камешков и заставить их вращаться вокруг головы ослиноподобного парня.
 		#ELSEIF(pc.hasSpell(SPELL_POISON_VAPOURS))
-			 summon a few wisps of a poisonous vapour and swirl them around the room.
+			 призвать несколько струек ядовитого пара и закружить их по всей комнате.
 		#ELSEIF(pc.hasSpell(SPELL_ICE_SHARD))
-			 cast a shard of ice that flies right between the donkey-boy's legs and freezes a patch of floor beneath his chair.
+			 выпускаешь ледяной осколок, который пролетает прямо между ног ослиноподобного парня и замораживает участок пола под его стулом.
 		#ELSEIF(pc.hasSpell(SPELL_ARCANE_CHAIN_LIGHTNING) || pc.hasSpell(SPELL_ARCANE_LIGHTNING_SUPERBOLT))
-			 send a thin bolt of arcane lightning right between the donkey-boy's legs that scorches the floor beneath his chair.
+			 выпускаешь тонкую молнию Арканы прямо между ног ослиноподобного парня, которая опаляет пол под его стулом.
 		#ELSE
-			 make your aura glow menacingly in a show of arcane prowess.
+			 заставляешь свою ауру угрожающе сиять, демонстрируя свое мастерство в Аркане.
 		#ENDIF
-		 You explain that if your request isn't honoured, the next time you see any of them anywhere near Eisek you won't miss. And with their history with the Enforcers, somehow you don't think you're going to be the one getting arrested.
+		 Ты объясняешь, что если твоя просьба не будет исполнена, то в следующий раз, когда ты увидишь кого-то из них рядом с Эйзеком, ты не промахнешься. И, учитывая их историю с Enforcer, почему-то тебе кажется, что арестованным окажется не кто иной, как не они.
 	</p>
 	<p>
-		A tough looking [npc.race] steps forward at your threat. [npc.speech(Think you're hot shit, huh? Your magic tricks don't scare me!)] [npc.she] says as [npc.she] charges forward.
+		На твою угрозу вперед выходит грозный [npc.race]. [npc.speech(Думаешь, ты тут самый крутой, а? Твои фокусы меня не пугают!)] — бросает [npc.she], пока [npc.she] бросается в атаку.
 	</p>
 	]]>
 	</htmlContent>
 	
 	<htmlContent tag="INTIMIDATE_WON"><![CDATA[
 	<p>
-		As you stand triumphant above the crumpled form of [dsg_muscle.name], a murmur travels around the room. Your victory over what was apparently the mob's muscle seems to have had quite the effect and the donkey-boy for his part is visibly intimidated. [test.speechMasculine(V-very well. But I hope you understand that you've doomed this town and everyone in it!)]
-	</p>
-	<p>
-		Satisfied, you turn around to leave without another word. Somehow you doubt that the donkey-boy's prophecy of doom will come to pass.
+		Пока ты торжествующе стоишь над сжавшимся телом [dsg_muscle.name], по комнате проносится шепот. Твоя победа над тем, кто, казалось, был главной силой банды, произвела заметный эффект, и осел-мальчишка выглядит явно запуганным. [test.speechMasculine(Х-хорошо. Но надеюсь, ты понимаешь, что обрек этот город и всех его жителей на гибель!)]
+	</p>		<p>
+		Довольный собой, ты разворачиваешься, чтобы уйти, не проронив больше ни слова. Почему-то ты сомневаешься, что пророчество об обреченности, брошенное ослом, действительно сбудется.
 	</p>
 	]]>
 	</htmlContent>
 	
-	<htmlContent tag="INTIMIDATE_LOST"><![CDATA[
-	<p>
-		[dsg_muscle.NamePos] finishing blow sends stars across your vision and you collapse in a heap on the cellar floor.
-	</p>
-	<p>
-		When you awake, you're alone in the cellar. Picking yourself up, you gingerly make your way back out into the street. You'd better tell Eisek the bad news...
+	<htmlContent tag="INTIMIDATE_LOST"><![CDATA[		<p>
+		Удар [dsg_muscle.NamePos] заставляет искры посыпаться у тебя из глаз, и ты валишься грудой на пол подвала.
+	</p>		<p>
+		Когда ты просыпаешься, в подвале ты совсем один. Поднявшись, ты осторожно выбираешься обратно на улицу. Тебе стоит сообщить Эйзеку плохие новости...
 	</p>
 	]]>
 	</htmlContent>
@@ -186,20 +180,19 @@
 	<htmlContent tag="INTIMIDATE_FAIL"><![CDATA[
 	<p>
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SHY))
-			Trying your best to put on a brave face, you
+			Стараясь изо всех сил сохранять невозмутимый вид, ты
 		#ELSE
-			You
-		#ENDIF
-		 explain that if they don't honour your request, the next time you see them anywhere near Eisek they'll be sorry.
+Ты		#ENDIF
+		 объясняешь, что если они не исполнят твою просьбу, то в следующий раз, когда ты увидишь их где-нибудь рядом с Эйзеком, они об этом пожалеют.
 	</p>
 	<p>
-		More derisive laughter meets your threat. [test.speechFeminine(We'll be sorry?)] says a tough-looking horse-girl as she walks up to you, [test.speechFeminine(No, I think <i>you'll</i> be sorry.)]
+		Твоя угроза вызывает лишь новую волну насмешливого смеха. [test.speechFeminine(Нам будет жаль?)] — бросает крепкая на вид кентавридка, подходя к тебе вплотную, — [test.speechFeminine(Нет, я думаю, <i>тебе</i> будет жаль.)]
 	</p>
 	<p>
-		She grabs hold of you and starts shoving you towards the exit. Despite your struggling and protestations, you cannot overpower her iron grip before you find yourself back out on the street, slightly worse for wear.
+		Она хватает тебя и начинает толкать к выходу. Несмотря на твои попытки вырваться и протесты, тебе не удается одолеть её железную хватку, и вот ты уже снова на улице, слегка помятый после стычки.
 	</p>
 	<p>
-		You'd better tell Eisek the bad news...
+		Тебе лучше сообщить Эйзеку плохие новости...
 	</p>
 	]]>
 	</htmlContent>
@@ -209,25 +202,25 @@
 	<htmlContent tag="PERSUADE"><![CDATA[
 	<p>
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SHY))
-			The conviction that you have the truth on your side provides a much needed confidence boost. 
+			Уверенность в том, что правда на твоей стороне, дает тебе столь необходимый прилив сил.
 		#ELSEIF (pc.hasPersonalityTrait(PERSONALITY_TRAIT_CONFIDENT))
-			You confidently walk into the middle of the cellar as if you were lecturing a bunch of schoolyard bullies rather than metaphorical den of vipers.
+			Ты уверенно входишь в центр подвала, словно читаешь лекцию кучке школьных хулиганов, а не находишься в метафорическом логове змей.
 		#ENDIF
-		 You explain that the mob's fears are baseless. Eisek isn't anything like his ancestors. If he really was going to burn and pillage the place, running a stall in the market is an awfully strange way to go about it. 
+		Ты объясняешь, что страхи толпы беспочвенны. Эйзеку совсем не похож на своих предков. Если бы он и впрямь собирался сжигать и грабить это место, торговля на рынке была бы чертовски странным способом подготовки.
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SELFISH))
-			 In fact, it's totally wrong. Even if he was just casing the town, there are easier and cheaper ways to do it. 
+			 На самом деле, всё совсем наоборот. Даже если бы он просто разведывал обстановку в городе, нашлось бы куда более простое и дешевое решение.
 		#ENDIF
-		 They have talked so much about what his kind is like and yet not one of them has tried to get to know him and find out what if that was true or not. You have. 
+		Они столько болтали о том, на что способны такие, как он, и при этом ни один из них не попытался узнать его поближе и выяснить, правда это или нет. А ты попытался.
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_CYNICAL))
-			 And you're not even the trusting sort. 
+			 И ведь ты даже не из тех, кто привык слепо доверять людям.
 		#ENDIF		
-		 The Eisek you know is a humble produce farmer who took a big gamble in coming down from the mountains. If any member of this twisted little group had actually taken the time as you did, they would have found out the same thing.
+		 Тот Эйзек, которого знаешь ты — это скромный фермер, решившийся на огромный риск, спустившись с гор. Если бы хоть один участник этой извращенной маленькой группировки уделил ему столько же времени, сколько сделал ты, они бы пришли к тем же выводам.
 	</p>
 	<p>
-		The room is as silent as a tomb in response to your impassioned speech. After what seems like an eternity, the donkey-boy speaks again, [test.speechMasculine(Alright, you've made your point. Perhaps... we have been too quick to judge. Let us verify these claims.)]
+		В ответ на твою страстную речь в комнате воцаряется тишина, словно в гробнице. Спустя, кажется, целую вечность, ослиноголовый парень снова подает голос: [test.speechMasculine(Ладно, ты убедил нас. Возможно... мы слишком поспешили с выводами. Давай проверим эти утверждения.)]
 	</p>
 	<p>
-		Confident that they will come to the same conclusion as you have, you thank the townsfolk and turn around to leave without another word. 
+		Уверенная в том, что они придут к тем же выводам, что и ты, ты благодаришь горожан и, не говоря больше ни слова, разворачиваешься, чтобы уйти.
 	</p>
 	]]>
 	</htmlContent>
@@ -236,7 +229,7 @@
 	
 	<htmlContent tag="SEDUCE"><![CDATA[
 	<p>
-		You channel your aura into your mastery of lust magic, letting fly with every spell you know until the room practically reeks of arousal. Unable to resist your power, the townsfolk immediately begin tearing at each other's clothing with glazed eyes and soaked crotches. The room is soon filled with an orchestra of moans as they use each other to sate the burning lust you've called forth and they haven't even shut the cellar door. Do you use this opportunity to join in or wait until they are finished and perhaps more suggestible?
+		Ты направляешь свою Ауру в мастерское владение магией похоти, обрушивая на них все известные тебе заклинания, пока комната практически не начинает смердеть возбуждением. Не в силах противостоять твоей силе, горожане тут же принимаются рвать друг на друге одежду с остекленевшими глазами и насквозь промокшими промежностями. Вскоре комнату наполняет оркестр стонов: они используют друг друга, чтобы утолить вспыхнувшую похоть, которую ты призвала, и они даже не закрыли дверь в подвал. Воспользуешься ли ты этой возможностью, чтобы присоединиться к ним, или подождешь, пока они закончат и станут более податливыми?
 	</p>
 	]]>
 	</htmlContent>
@@ -245,7 +238,7 @@
 	
 	<htmlContent tag="SEDUCE_AFTERMATH"><![CDATA[
 	<p>
-		You shakily stand up, soaked through with the fluids of the past two hours but more conscious than everyone else. You promise the pile of limp bodies beneath you that if they leave Eisek alone, there's more where that came from. A groggy sea of vaguely affirmative noises replies to your offer. Of course, you don't intend to actually follow through. More likely when the spells wear off, this motley little crew will realise that nobody shut the cellar door during their magic-fueled orgy. They've just given every passerby a free show and will probably disband out of sheer embarrassment.
+		Ты дрожащими ногами встаешь, промокшая насквозь от выделений за последние два часа, но при этом более трезвая умом, чем все остальные. Ты обещаешь куче обмякших тел под тобой, что если они оставят Эйсек в покое, то такого будет еще много. В ответ на твое предложение доносится сонное море неопределенно-согласных звуков. Разумеется, ты не собираешься выполнять обещание на самом деле. Скорее всего, когда действие заклинаний закончится, эта разношерстная компания поймет, что никто не закрыл дверь в подвал во время их магической оргии. Они только что устроили бесплатное шоу для каждого встречного и, вероятно, разбегутся от жгучего стыда.
 	</p>
 	]]>
 	</htmlContent>

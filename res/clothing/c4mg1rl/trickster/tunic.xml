@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A tag discreetly sewn into the dress' inner lining informs you that it was made by 'C4MG1RL'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[На подкладке платья притаилась маленькая бирка, сообщающая, что оно создано мастером 'C4MG1RL'.]]></clothingAuthorTag>
 		<value>8000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Trickster's tunic]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Sleeved tunics]]></namePlural> 
-		<description><![CDATA[A knee-length tunic lined with dozens of hidden pockets. These concealed compartments are perfect for holding all manner of surprises or pilfered trinkets. Expertly designed so as not to impede the wearer's flexibility, this tunic is ideal for both dancing and fighting!]]></description> 
+		<name><![CDATA[Туника Трикстера]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Туники с рукавами]]></namePlural> 
+		<description><![CDATA[Туника длиной до колен, подбитая десятками скрытых карманов. Эти потайные отделения идеально подходят для самых разных сюрпризов или украденных безделушек. Благодаря продуманному крою, туника не стесняет движений, что делает её идеальной как для танцев, так и для боя!]]></description> 
 		<physicalResistance>3</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 
@@ -82,47 +82,47 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unties)] the sash, before [npc.verb(pull)] [npc.her] tunic off over [npc.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(развязывает)] пояс, а затем [npc.verb(снимает)] [npc.her] тунику через голову [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unties)] the sash, before [npc.verb(pull)] [npc2.namePos] tunic off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(развязывает)] пояс, а затем [npc.verb(снимает)] [npc2.namePos] тунику через голову [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(unties)] the sash, before roughly [npc.verb(pull)] [npc2.namePos] tunic off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(развязывает)] пояс, а затем резко [npc.verb(сдергивает)] [npc2.namePos] тунику через голову [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pulls)] the tunic down over [npc.her] head and torso, then [npc.verb(tie)] the sash tightly.]]>
+		  <![CDATA[[npc.Name] [npc.verb(натягивает)] тунику на голову и торс [npc.her], а затем плотно [npc.verb(завязывает)] пояс.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pulls)] the tunic down over [npc2.namePos] head and torso, then [npc.verb(ties)] the sash tightly.]]>
+		  <![CDATA[[npc.Name] [npc.verb(натягивает)] тунику на голову и торс [npc2.namePos], а затем плотно [npc.verb(затягивает)] пояс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pulls)] the tunic down over [npc2.namePos] head and torso, then [npc.verb(ties)] the sash tightly.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(натягивает)] тунику на голову и торс [npc2.namePos], а затем плотно [npc.verb(затягивает)] пояс.]]>
 		</otherRough>
 	</replacementText>
 
 	
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] край туники [npc.her] вверх.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] край туники [npc2.namePos] вверх.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] up the skirt of [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] край туники [npc2.namePos] вверх.]]>
 		</otherRough>
 	</displacementText><replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc.her] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] край туники [npc.her] вниз.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] край туники [npc2.namePos] вниз.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the skirt of [npc2.namePos] tunic.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] край туники [npc2.namePos] вниз.]]>
 		</otherRough>
 	</replacementText>
 </clothing>

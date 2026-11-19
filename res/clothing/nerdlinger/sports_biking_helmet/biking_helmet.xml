@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-	<authorTag><![CDATA[You find a tag printed on the inner wall, "Envisioned for high-performing athletes, by GLIDE.".]]></authorTag>
+	<authorTag><![CDATA[На внутренней стороне ты замечаешь надпись: «Создано для профессиональных атлетов, бренд GLIDE».]]></authorTag>
 		<value>800</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[bike racing helmet]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[bike racing helmets]]></namePlural>
-		<description><![CDATA[Designed for increased ventilation and optimal aerodynamics, this helmet also features proprietary technology for improved comfort and unrivalled protection.]]></description>
+		<name><![CDATA[гоночный велосипедный шлем]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[гоночные велосипедные шлемы]]></namePlural>
+		<description><![CDATA[Этот шлем спроектирован для усиленной вентиляции и оптимальной аэродинамики; он также оснащен запатентованной технологией для повышенного комфорта и непревзойденной защиты.]]></description>
 		<physicalResistance>3.0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>

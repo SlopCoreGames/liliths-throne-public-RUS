@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>100</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[nose ball stud]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[nose ball studs]]></namePlural>
-		<description><![CDATA[A simple nose ball stud, consisting of a thin cylinder topped with a metal sphere.]]></description>
+		<name><![CDATA[носовой шарик]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[носовые шарики]]></namePlural>
+		<description><![CDATA[Простой носовой шарик, представляющий собой тонкий цилиндр с металлической сферой на конце.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>PIERCING_NOSE</slot> 
@@ -44,25 +44,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ball stud into [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] задвигает шарик в [npc.her] [npc.nose] пирсинг.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ball stud into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] задвигает шарик в [npc2.namePos] [npc2.nose] пирсинг.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the ball stud into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] задвигает шарик в [npc2.namePos] [npc2.nose] пирсинг.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] ball stud out of [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] вытаскивает [npc.her] шарик из [npc.her] [npc.nose] пирсинга.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] ball stud out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] вытаскивает [npc2.namePos] шарик из [npc2.her] [npc2.nose] пирсинга.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] ball stud out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] выдергивает [npc2.namePos] шарик из [npc2.her] [npc2.nose] пирсинга.]]>
     </otherRough>
   </displacementText>
 	

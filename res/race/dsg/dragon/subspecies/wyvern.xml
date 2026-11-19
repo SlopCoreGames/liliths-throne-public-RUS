@@ -122,38 +122,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[wyvern-morph]]></name>
-			<namePlural><![CDATA[wyvern-morphs]]></namePlural>
-			<singularMaleName><![CDATA[wyvern-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[wyvern-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[wyvern-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[wyvern-girls]]></pluralFemaleName>
+			<name><![CDATA[виверн-морф]]></name>
+			<namePlural><![CDATA[виверн-морфы]]></namePlural>
+			<singularMaleName><![CDATA[виверн-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[виверн-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[виверны-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[виверны-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic wyvern, known as a 'wyvern-morph' when bipedal, and a 'wyverntaur' when the lower body is that of a typically-oversized feral dragon. To be identified as a wyvern-morph, a character must be a dragon-morph with arm wings.]]></description>
+	<description><![CDATA[Антропоморфная виверна; когда она передвигается на двух ногах, её называют «виверн-морфом», а когда её нижняя часть тела представляет собой типичное массивное тело дикого дракона — «вивернтавром». Чтобы считаться виверн-морфом, персонаж должен быть драконом-морфом с крыльями-лапами.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[typhon]]></name>
-			<namePlural><![CDATA[typhons]]></namePlural>
-			<singularMaleName><![CDATA[typhon]]></singularMaleName>
-			<singularFemaleName><![CDATA[typhon]]></singularFemaleName>
-			<pluralMaleName><![CDATA[typhons]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[typhons]]></pluralFemaleName>
+			<name><![CDATA[тифон]]></name>
+			<namePlural><![CDATA[тифоны]]></namePlural>
+			<singularMaleName><![CDATA[тифон]]></singularMaleName>
+			<singularFemaleName><![CDATA[тифон]]></singularFemaleName>
+			<pluralMaleName><![CDATA[тифоны]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[тифоны]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[wyvern]]></feralName>
-		<feralNamePlural><![CDATA[wyverns]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[wyvern]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[wyverness]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[wyverns]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[wyvernesses]]></feralPluralFemaleName>
+		<feralName><![CDATA[виверна]]></feralName>
+		<feralNamePlural><![CDATA[виверны]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[виверна]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[виверна]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[виверны]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[виверны]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -184,7 +184,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] wyvern-like body is very powerful, and as a mythological creature [npc.she] [npc.has] a close arcane affinity with both the strengths and weaknesses that it brings.
+		[npc.NamePos] тело виверны невероятно мощное, и, будучи мифическим существом, [npc.she] [npc.has] обладает тесной связью с Арканой, приносящей как силу, так и слабость.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

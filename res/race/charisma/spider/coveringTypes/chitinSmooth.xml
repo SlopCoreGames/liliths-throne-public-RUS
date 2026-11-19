@@ -2,8 +2,8 @@
 <coveringType>
 	<category>MAIN_CHITIN</category>
 	<determiner><![CDATA[a layer of]]></determiner>
-	<name><![CDATA[chitin]]></name>
-	<namePlural pluralByDefault="false"><![CDATA[chitin]]></namePlural> 
+	<name><![CDATA[хитин]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[хитин]]></namePlural> 
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>
 	</naturalCoveringModifiers>

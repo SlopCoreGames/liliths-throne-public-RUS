@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>10000</value>
 		<determiner><![CDATA[the]]></determiner>
-		<name><![CDATA[Dark Siren's Amulet]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Dark Siren's Amulets]]></namePlural>
-		<description><![CDATA[An enchanted amulet, created by the demon calling herself 'The Dark Siren'. Its vast power is enough to make a formidable sorceress out of even the most arcane-impaired human.]]></description>
+		<name><![CDATA[Амулет Темной Сирены]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Амулеты Темной Сирены]]></namePlural>
+		<description><![CDATA[Зачарованный амулет, созданный демоном, именующей себя «Темной Сиреной». Его колоссальной мощи достаточно, чтобы превратить в грозную чародейку даже самого слабого в плане Арканы человека.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>NECK</slot>
@@ -68,25 +68,25 @@
 	
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the amulet's chain around [npc.her] neck, before letting out an evil laugh as [npc.she] [npc.verb(feel)] the immense, corruptive power seeping into [npc.her] mind.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] цепь амулета на шею [npc.her], после чего разражается зловещим смехом, пока [npc.she] [npc2.verb(feel)] как огромная, развращающая сила просачивается в разум [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the amulet's chain around [npc2.namePos] neck, which causes [npc2.herHim] to let out an evil laugh as [npc2.she] [npc2.verb(feel)] the immense, corruptive power seeping into [npc2.her] mind.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] цепь амулета на шею [npc2.namePos], отчего [npc2.herHim] разражается зловещим смехом, пока [npc2.she] [npc2.verb(feel)] как огромная, развращающая сила просачивается в разум [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before draping the amulet's chain around [npc2.her] neck. Almost immediately, [npc2.name] [npc2.verb(let)] out an evil laugh as [npc2.she] [npc2.verb(feel)] the immense, corruptive power seeping into [npc2.her] mind.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], а затем накидывает цепь амулета на шею [npc2.her]. Почти мгновенно [npc2.name] [npc2.verb(let)] из себя зловещий смех, пока [npc2.she] [npc2.verb(feel)] как огромная, развращающая сила просачивается в разум [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] amulet's chain, before lifting it up and over [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] цепь амулета [npc.her], прежде чем поднять её и накинуть на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of the amulet's chain, before lifting it up and over [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] цепь амулета, прежде чем поднять её и накинуть на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(grab)] the amulet's chain, before yanking it up and over [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(grab)] цепь амулета, а затем резко натягивает её на голову [npc2.namePos].]]>
     </otherRough>
   </displacementText>
 	

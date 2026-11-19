@@ -6,7 +6,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[Heckling A Dragon]]></name>
+			<name><![CDATA[Дерзость в адрес дракона]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				#IF(!flags.hasFlag(FLAG_dsg_elis_eisek_introduced) && eisek.getLocationPlaceType() == PLACE_TYPE_dsg_fields_elis_market_produce)
 					100

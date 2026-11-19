@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[panther-morph]]></name>
-	<namePlural><![CDATA[panther-morphs]]></namePlural>
+	<name><![CDATA[пантер-морф]]></name>
+	<namePlural><![CDATA[пантер-морфы]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[panther]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[пантера]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[panthers]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[пантеры]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[panther]]></defaultTransformName>
+	<defaultTransformName><![CDATA[пантера]]></defaultTransformName>
 	
 	<colour>innoxia_panther</colour>
 	

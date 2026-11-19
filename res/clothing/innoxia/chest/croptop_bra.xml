@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>100</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[croptop bra]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[croptop bras]]></namePlural>
-		<description><![CDATA[A loose fitting bra which resembles a short croptop.]]></description>
+		<name><![CDATA[брэлет-кроп-топ]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[брэлеты-кроп-топы]]></namePlural>
+		<description><![CDATA[Свободный лифчик, напоминающий короткий кроп-топ.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -59,25 +59,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the croptop bra down over [npc.her] head, before securing it around [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] кроп-топ через [npc.her] голову, а затем застегивает его вокруг [npc.her] груди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the croptop bra down over [npc2.namePos] head, before securing it around [npc2.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] кроп-топ через [npc2.namePos] голову, а затем застегивает его вокруг [npc2.her] груди.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the croptop bra down over [npc2.namePos] head, before securing it around [npc2.her] chest.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] кроп-топ через [npc2.namePos] голову, а затем застегивает его вокруг [npc2.her] груди.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] croptop bra up over [npc.her] head and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] кроп-топ [npc.her] через [npc.her] голову и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] croptop bra up over [npc2.her] head and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] кроп-топ [npc2.namePos] через [npc2.her] голову и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] croptop bra up over [npc2.her] head and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] кроп-топ [npc2.namePos] через [npc2.her] голову и [npc.verb(take)] его.]]>
 		</otherRough>
 	</displacementText>
 	

@@ -119,38 +119,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[drake-morph]]></name>
-			<namePlural><![CDATA[drake-morphs]]></namePlural>
-			<singularMaleName><![CDATA[drake-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[drake-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[drake-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[drake-girls]]></pluralFemaleName>
+			<name><![CDATA[драконид-морф]]></name>
+			<namePlural><![CDATA[дракониды-морфы]]></namePlural>
+			<singularMaleName><![CDATA[драконид-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[драконида-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[дракониды-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[дракониды-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic dragon, known as a 'drake-morph' when bipedal, and a 'draketaur' when the lower body is that of a typically-oversized feral dragon. To be identified as a drake-morph, a character must be a dragon-morph with no wings or arm-wings.]]></description>
+	<description><![CDATA[Антропоморфный дракон, известный как «драконид-морф», когда он передвигается на двух ногах, и «дракотавр», если его нижняя часть тела представляет собой типично огромного дикого дракона. Чтобы считаться драконидом-морфом, персонаж должен быть драконидом без крыльев или перепончатых лап-крыльев.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[jabberwock]]></name>
-			<namePlural><![CDATA[jabberwocks]]></namePlural>
-			<singularMaleName><![CDATA[jabberwock]]></singularMaleName>
-			<singularFemaleName><![CDATA[jabberwock]]></singularFemaleName>
-			<pluralMaleName><![CDATA[jabberwocks]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[jabberwocks]]></pluralFemaleName>
+			<name><![CDATA[жабавок]]></name>
+			<namePlural><![CDATA[жабавоки]]></namePlural>
+			<singularMaleName><![CDATA[жабавок]]></singularMaleName>
+			<singularFemaleName><![CDATA[жабавок]]></singularFemaleName>
+			<pluralMaleName><![CDATA[жабавоки]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[жабавоки]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[drake]]></feralName>
-		<feralNamePlural><![CDATA[drake]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[drake]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[drakess]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[drakes]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[drakesses]]></feralPluralFemaleName>
+		<feralName><![CDATA[дракон]]></feralName>
+		<feralNamePlural><![CDATA[дракон]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[дракона]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[драконица]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[драконы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[драконихи]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -181,7 +181,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] drake-like body is very powerful, and as a mythological creature [npc.she] [npc.has] a close arcane affinity with both the strengths and weaknesses that it brings.
+		[npc.NamePos] Тело, подобное драконьему, обладает огромной мощью, а как мифическое существо, [npc.she] [npc.has] оно обладает тесной связью с Арканой, приносящей как силу, так и слабости.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

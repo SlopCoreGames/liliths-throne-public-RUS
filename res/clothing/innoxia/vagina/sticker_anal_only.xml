@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>500</value>
     <determiner><![CDATA[an]]></determiner>
-    <name><![CDATA[anal-only pastie]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[anal-only pasties]]></namePlural>
-    <description><![CDATA[An adhesive strip of flexible plastic, designed to be stuck over someone's vagina in order to prohibit access. The words 'anal only' make it clear as to which orifice this person prefers to have used.]]></description>
+    <name><![CDATA[наклейка «только анус»]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[наклейки «только анус»]]></namePlural>
+    <description><![CDATA[Липкая полоска из гибкого пластика, предназначенная для того, чтобы заклеить вагину и закрыть к ней доступ. Надпись «только анус» ясно дает понять, какое отверстие этот человек предпочитает использовать.]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -62,25 +62,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(stick)] the anal-only pastie over [npc.her] [npc.pussy+].]]>
+      <![CDATA[[npc.Name] [npc.verb(stick)] наклейку «только анус» поверх [npc.her] [npc.pussy+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(stick)] the anal-only pastie over [npc2.namePos] [npc2.pussy+].]]>
+      <![CDATA[[npc.Name] [npc.verb(stick)] наклейку «только анус» поверх [npc2.namePos] [npc2.pussy+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(stick)] the anal-only pastie over [npc2.namePos] [npc2.pussy+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(stick)] наклейку «только анус» поверх [npc2.namePos] [npc2.pussy+].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] carefully [npc.verb(peel)] off the anal-only pastie that was covering [npc.her] [npc.pussy+].]]>
+      <![CDATA[[npc.Name] осторожно [npc.verb(peel)] наклейку «только анус», закрывавшую [npc.her] [npc.pussy+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] carefully [npc.verb(peel)] off the anal-only pastie that was covering [npc2.namePos] [npc2.pussy+].]]>
+      <![CDATA[[npc.Name] осторожно [npc.verb(peel)] наклейку «только анус», закрывавшую [npc2.namePos] [npc2.pussy+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] quickly [npc.verb(rip)] off the anal-only pastie that was covering [npc2.namePos] [npc2.pussy+], causing [npc2.herHim] to let out a startled yell.]]>
+      <![CDATA[[npc.Name] резко [npc.verb(rip)] наклейку «только анус», закрывавшую [npc2.namePos] [npc2.pussy+], заставив [npc2.herHim] испуганно вскрикнуть.]]>
     </otherRough>
   </displacementText>
 

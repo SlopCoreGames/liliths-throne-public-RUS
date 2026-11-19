@@ -27,20 +27,20 @@
 	<basicDescriptionId>PIG_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PIG_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[pig-morph]]></name>
-	<namePlural><![CDATA[pig-morphs]]></namePlural>
-	<singularMaleName><![CDATA[pig-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[pig-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[pig-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[pig-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic pig, known as a 'pig-morph' when bipedal, and a 'pigtaur' when the lower body is that of a feral pig.]]></description>
+	<name><![CDATA[свиная морфология]]></name>
+	<namePlural><![CDATA[свиные морфологии]]></namePlural>
+	<singularMaleName><![CDATA[свинопарень]]></singularMaleName>
+	<singularFemaleName><![CDATA[свинодевка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[свинопарни]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[свинодевки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфная свинья; когда она передвигается на двух ногах, её называют «свиноморфом», а если нижняя часть тела представляет собой туловище дикой свиньи — «свинотавром».]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[pig]]></feralName>
-		<feralNamePlural><![CDATA[pig]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[boar]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[sow]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[boars]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[sows]]></feralPluralFemaleName>
+		<feralName><![CDATA[свинья]]></feralName>
+		<feralNamePlural><![CDATA[свинья]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[кабан]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[свинья]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[кабаны]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[свиньи]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>95</size>
@@ -53,7 +53,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body gives [npc.herHim] strong urges to try out all manner of new foods, and as such, [npc.she] [npc.has] a slight resistance to food poisoning.
+		Тело [npc.NamePos] вызывает у [npc.herHim] сильное желание пробовать всевозможные новые продукты, и благодаря этому [npc.she] [npc.has] обладает небольшой устойчивостью к пищевым отравлениям.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="5">MAJOR_PHYSIQUE</attribute>

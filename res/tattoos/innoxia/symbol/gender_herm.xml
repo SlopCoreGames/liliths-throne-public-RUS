@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[hermaphroditic glyph]]></name>
+		<name><![CDATA[гермафродитский глиф]]></name>
 		
-		<description><![CDATA[This glyph represents the combination of both male and female sex and gender.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a hermaphroditic symbol]]></bodyOverviewDescription> 
+		<description><![CDATA[Этот глиф олицетворяет сочетание мужского и женского пола и гендера.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с изображением гермафродитского символа]]></bodyOverviewDescription> 
 		
 		<imageName>gender_herm.svg</imageName> 
 		

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>180</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[micro bikini bottoms]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[micro bikini bottoms]]></namePlural>
-		<description><![CDATA[The part of a bikini which covers the wearer's private parts, although this particular item is so skimpy that it only barely manages to do that. If the wearer has a penis, there's no way that this tiny scrap of fabric will conceal it.]]></description>
+		<name><![CDATA[микро-бикини]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[микро-бикини]]></namePlural>
+		<description><![CDATA[Часть купальника, прикрывающая интимные места, хотя этот экземпляр настолько крошечный, что едва справляется с задачей. Если у носительницы есть пенис, этот жалкий лоскуток ткани точно его не скроет.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>GROIN</slot>
@@ -60,25 +60,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the micro bikini bottoms, before pulling them up to cover [npc.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в микро-бикини, а затем натягивает его, чтобы прикрыть интимные места [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the micro bikini bottoms up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] микро-бикини [npc2.namePos] на [npc2.legs], чтобы прикрыть интимные места [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the micro bikini bottoms up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] микро-бикини [npc2.namePos] на [npc2.legs], чтобы прикрыть интимные места [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] micro bikini bottoms down and [npc.verb(kick)] them off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] микро-бикини [npc.her] вниз и [npc.verb(kick)] сбрасывает их с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] down [npc2.namePos] micro bikini bottoms and [npc.verb(pull)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] микро-бикини [npc2.namePos] вниз и [npc.verb(pull)] снимает их с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] micro bikini bottoms and [npc.verb(yank)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] микро-бикини [npc2.namePos] вниз и [npc.verb(yank)] срывает их с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

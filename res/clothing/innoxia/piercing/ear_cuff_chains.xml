@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>200</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[ear cuff chain studs]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[ear cuff chain studs]]></namePlural>
-		<description><![CDATA[A pair of stud earrings, each one of which is connected to an ear cuff by means of thin chains.]]></description>
+		<name><![CDATA[серьги-гвоздики с цепочками для каффов]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[серьги-гвоздики с цепочками для каффов]]></namePlural>
+		<description><![CDATA[Пара сережек-гвоздиков, каждая из которых соединена с каффом тонкими цепочками.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>PIERCING_EAR</slot> 
@@ -17,7 +17,7 @@
 		
 		<stickers>
 			<category id="more_chains" priority="1">
-				<categoryName><![CDATA[Chain count]]></categoryName>
+				<categoryName><![CDATA[Количество цепей]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="0" colourSelected="GENERIC_GOOD">
 					<stickerName><![CDATA[One chain]]></stickerName>
 					<namePrefix/>
@@ -80,25 +80,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(clip)] the stud earrings into [npc.her] [npc.ears], before attaching the cuffs to [npc.her] upper [npc.ears] and allowing the chains to hang loose.]]>
+			<![CDATA[[npc.Name] [npc.verb(clip)] серьги-гвоздики в [npc.her] [npc.ears], после чего закрепляет каффы на [npc.her] верхней [npc.ears], позволяя цепочкам свободно свисать.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(clip)] the stud earrings into [npc2.namePos] [npc2.ears], before attaching the cuffs to [npc2.her] upper [npc2.ears] and allowing the chains to hang loose.]]>
+			<![CDATA[[npc.Name] [npc.verb(clip)] серьги-гвоздики в [npc2.namePos] [npc2.ears], после чего закрепляет каффы на [npc2.her] верхней [npc2.ears], позволяя цепочкам свободно свисать.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(clip)] the stud earrings into [npc2.namePos] [npc2.ears], before attaching the cuffs to [npc2.her] upper [npc2.ears] and allowing the chains to hang loose.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(clip)] серьги-гвоздики в [npc2.namePos] [npc2.ears], после чего закрепляет каффы на [npc2.her] верхней [npc2.ears], позволяя цепочкам свободно свисать.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] stud earrings and [npc.verb(take)] them out, before removing the cuffs.]]>
+			<![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] серьги-гвоздики и [npc.verb(take)] их, прежде чем снять каффы.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] stud earrings and [npc.verb(take)] them out, before removing the cuffs.]]>
+			<![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] серьги-гвоздики и [npc.verb(take)] их, прежде чем снять каффы.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] stud earrings and roughly [npc.verb(pull)] them out, before removing the cuffs.]]>
+			<![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] серьги-гвоздики и грубо [npc.verb(pull)] их, прежде чем снять каффы.]]>
 		</otherRough>
 	</displacementText>
 	

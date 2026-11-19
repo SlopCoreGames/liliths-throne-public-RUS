@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[an]]></determiner>
 		
-		<name><![CDATA[asymmetrical skirt]]></name>
+		<name><![CDATA[асимметричная юбка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[asymmetrical skirts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[асимметричные юбки]]></namePlural> 
 		
-		<description><![CDATA[An asymmetrical skirt, with elasticated waistband and knotted side tie. The cut is particularly short on one side, revealing all of the wearer's leg and thigh.]]></description> 
+		<description><![CDATA[Асимметричная юбка на эластичном поясе с завязками на боку. Крой особенно короткий с одной стороны, полностью открывающий ногу и бедро той, кто её носит.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

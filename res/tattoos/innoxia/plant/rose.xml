@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>750</value> 
 		
-		<name><![CDATA[rose]]></name>
+		<name><![CDATA[роза]]></name>
 		
-		<description><![CDATA[A stylised depiction of a rose, complete with a portion of its stem and several leaves.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a stylised depiction of a rose]]></bodyOverviewDescription> 
+		<description><![CDATA[Стилизованное изображение розы с частью стебля и несколькими листьями.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка в виде стилизованной розы]]></bodyOverviewDescription> 
 		
 		<imageName>rose.svg</imageName> 
 		

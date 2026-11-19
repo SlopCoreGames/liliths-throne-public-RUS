@@ -2,7 +2,7 @@
 <fluid>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<baseFluidType>MILK</baseFluidType>
 	
@@ -12,11 +12,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[badger]]></name>
+		<name><![CDATA[барсук]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[badger]]></name>
+		<name><![CDATA[барсук]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers/>

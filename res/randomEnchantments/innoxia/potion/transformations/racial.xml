@@ -35,7 +35,7 @@
 	<name defaultPrepend="true"><![CDATA[[#flags.getObject('potionRaceStage').getName()] [#flags.getString('potionRaceName')]]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
-		It's time for you to get a new look! How about... Hmm... Oh, I know! Being
+		Пришло время сменить имидж! Как насчет... Хм... О, я знаю! Быть
 		#IF(flags.getObject('potionRaceStage')!=RACE_STAGE_HUMAN)
 			 [#utilText.static.generateSingularDeterminer(flags.getObject('potionRaceStage').getName())]
 			#IF(flags.getObject('potionRaceStage')==RACE_STAGE_PARTIAL)

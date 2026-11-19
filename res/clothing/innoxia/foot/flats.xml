@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[flat]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[flats]]></namePlural>
-		<description><![CDATA[Styled on women's ballet shoes, these feminine, slip-on flats have a very thin heel and a low-cut front.]]></description>
+		<name><![CDATA[плоские]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[балетки]]></namePlural>
+		<description><![CDATA[Подобно женским балетным туфлям, эти изящные слипоны отличаются очень тонким каблуком и низким вырезом.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>FOOT</slot> 
@@ -47,25 +47,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] into the flats.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] в балетки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] into the flats.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] в балетки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the flats.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.namePos] [npc2.feet] в балетки.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slip)] off [npc.her] flats.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] с [npc.her] балеток.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slip)] off [npc2.namePos] flats.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] с [npc2.namePos] балеток.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] flats.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] балеток.]]>
 		</otherRough>
 	</displacementText>
 	

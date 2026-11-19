@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>2400</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[latex catsuit]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[latex catsuits]]></namePlural>
-		<description><![CDATA[This item of fetish clothing covers almost all of the wearer's body. The hands, feet, and head are left exposed, and thanks to a cut-out in the groin area, so are the wearer's genitals and asshole.]]></description>
+		<name><![CDATA[латексный комбинезон]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[латексные комбинезоны]]></namePlural>
+		<description><![CDATA[Этот предмет фетиш-одежды покрывает почти всё тело. Руки, ноги и голова остаются открытыми, а благодаря вырезу в паху обнажены гениталии и анус владельца.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot>
@@ -68,25 +68,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 	<self>
-		<![CDATA[With some effort and much stretching of latex, [npc.name] [npc.verb(manage)] to squeeze into the skin-tight catsuit.]]>
+		<![CDATA[Приложив немало усилий и изрядно растянув латекс, [npc.name] [npc.verb(manage)] втиснуться в этот облегающий комбинезон.]]>
 	</self>
 	<other>
-		<![CDATA[With some effort and much stretching of latex, [npc.name] [npc.verb(manage)] to squeeze [npc2.name] into the skin-tight catsuit.]]>
+		<![CDATA[Приложив немало усилий и изрядно растянув латекс, [npc.name] [npc.verb(manage)] втиснуть [npc2.name] в этот облегающий комбинезон.]]>
 	</other>
 	<otherRough>
-		<![CDATA[With some effort and much stretching of latex, [npc.name] [npc.verb(manage)] to roughly force [npc2.name] into the skin-tight catsuit.]]>
+		<![CDATA[Приложив немало усилий и изрядно растянув латекс, [npc.name] [npc.verb(manage)] грубо втиснуть [npc2.name] в этот облегающий комбинезон.]]>
 	</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 	<self>
-		<![CDATA[Although it takes quite a lot of effort, [npc.name] [npc.verb(manage)] to pull off [npc.her] skin-tight latex catsuit.]]>
+		<![CDATA[Хотя это требует немалых усилий, [npc.name] [npc.verb(manage)] стянуть с [npc.her] этот облегающий латексный комбинезон.]]>
 	</self>
 	<other>
-		<![CDATA[Although it takes quite a lot of effort, [npc.name] [npc.verb(manage)] to pull off [npc2.namePos] skin-tight latex catsuit.]]>
+		<![CDATA[Хотя это требует немалых усилий, [npc.name] [npc.verb(manage)] стянуть с [npc2.namePos] этот облегающий латексный комбинезон.]]>
 	</other>
 	<otherRough>
-		<![CDATA[Although it takes quite a lot of effort and force, [npc.name] [npc.verb(manage)] to pull off [npc2.namePos] skin-tight latex catsuit.]]>
+		<![CDATA[Хотя это требует немалых усилий и силы, [npc.name] [npc.verb(manage)] стянуть с [npc2.namePos] этот облегающий латексный комбинезон.]]>
 	</otherRough>
 	</displacementText>
   

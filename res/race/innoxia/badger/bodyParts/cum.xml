@@ -2,18 +2,18 @@
 <fluid>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[badger-]]></name>
+		<name><![CDATA[барсучий-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[badger-]]></name>
+		<name><![CDATA[барсучий-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

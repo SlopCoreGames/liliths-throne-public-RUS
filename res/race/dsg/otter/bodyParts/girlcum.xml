@@ -6,7 +6,7 @@
 	
 	<race>dsg_otter</race>
 	
-	<transformationName><![CDATA[otter]]></transformationName>
+	<transformationName><![CDATA[выдра]]></transformationName>
 	
 	<baseFluidType>GIRLCUM</baseFluidType>
 	
@@ -17,11 +17,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[otter]]></name>
+		<name><![CDATA[выдра]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[otter]]></name>
+		<name><![CDATA[выдра]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers>

@@ -2,15 +2,15 @@
 <race>
 	<racialBody>NoStepOnSnek_capybara</racialBody>
 	<applyRaceChanges/>
-	<name><![CDATA[capybara-morph]]></name>
-	<namePlural><![CDATA[capybara-morphs]]></namePlural>
+	<name><![CDATA[морф капибары]]></name>
+	<namePlural><![CDATA[морфы капибары]]></namePlural>
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[capybara]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[капибара]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[capybaras]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[капибары]]></name>
 	</nameFeralPlural>
-	<defaultTransformName><![CDATA[capybara]]></defaultTransformName>
+	<defaultTransformName><![CDATA[капибара]]></defaultTransformName>
 	<colour>NoStepOnSnek_capybara</colour>
 	<disposition>CIVILIZED</disposition>
 	<racialClass>MAMMAL</racialClass>

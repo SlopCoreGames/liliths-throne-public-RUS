@@ -18,14 +18,14 @@
 		#ENDIF
 	]]></conditionalPreParsing>
 	
-	<name defaultPrepend="true"><![CDATA[Limb-multiplication]]></name>
+	<name defaultPrepend="true"><![CDATA[Множественные конечности]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
-		Wouldn't it be so much fun to have more arms?!
+		Разве не было бы чертовски весело иметь больше рук?!
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
-		Brilliant! Have fun with your new limbs!
+		Блестяще! Наслаждайся своими новыми конечностями!
 	]]></applicationSpeechEnd>
 	
 	<!-- 66% chance of normal TF -->

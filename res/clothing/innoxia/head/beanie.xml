@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[beanie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[beanies]]></namePlural>
-		<description><![CDATA[A head-hugging brimless cap, knitted out of merino wool. Thick, ribbed stitching helps to give it structure and extra insulation.]]></description>
+		<name><![CDATA[бини]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[бини]]></namePlural>
+		<description><![CDATA[Плотно облегающая голову шапка без полей, связанная из мериносовой шерсти. Плотная рельефная вязка придает ей форму и обеспечивает дополнительную теплоизоляцию.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -44,25 +44,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the beanie down onto [npc.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] бини пониже на голову [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the beanie down  onto [npc2.namePos] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] бини пониже на голову [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] the beanie down onto [npc2.namePos] head.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(push)] натягивает бини на голову [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] beanie.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] бини с головы [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] beanie.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] бини с головы [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] beanie.]]>
+			<![CDATA[[npc.Name] [npc.verb(snatch)] бини с головы [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
   

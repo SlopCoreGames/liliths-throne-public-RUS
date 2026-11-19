@@ -2,7 +2,7 @@
 <fluid>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<baseFluidType>MILK</baseFluidType>
 	
@@ -12,11 +12,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[mouse]]></name>
+		<name><![CDATA[мышь]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[mouse]]></name>
+		<name><![CDATA[мышь]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers/>

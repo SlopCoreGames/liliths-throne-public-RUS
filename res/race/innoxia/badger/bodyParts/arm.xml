@@ -2,7 +2,7 @@
 <arm>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_fur</coveringType>
 	
@@ -12,8 +12,8 @@
 		<tag>ARM_STANDARD</tag>
 	</tags>
 	
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural> 
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
@@ -25,8 +25,8 @@
 		<descriptor>fur-coated</descriptor>
 	</descriptorsFeminine>
 	
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>badger-like</descriptor>
 		<descriptor>furry</descriptor>
@@ -38,8 +38,8 @@
 		<descriptor>furry</descriptor>
 	</handDescriptorsFeminine>
 	
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>badger-like</descriptor>
 	</fingerDescriptorsMasculine>
@@ -50,12 +50,12 @@
 	</fingerDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands as sharp claws push out to replace [npc.her] fingernails. [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.
-		<br/>With the transformation having fully run its course, [npc.nameIsFull] left with anthropomorphic, [style.boldBadger(badger-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+		Всего за мгновение их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую шерсть, растущую на спинах [npc.her] рук, в то время как острые когти прорываются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] маленькие подушечки, а на [npc.her] верхней части бицепсов [npc.her] мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела.
+		<br/>Когда трансформация полностью завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldBadger(badger-like arms and hands)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands are formed into anthropomorphic, badger-like hands, complete with sharp claws and tough leathery pads.
+	[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] руки превращаются в антропоморфные, барсучьи лапы с острыми когтями и грубыми кожаными подушечками.
 	]]></bodyDescription>
 	
 </arm>

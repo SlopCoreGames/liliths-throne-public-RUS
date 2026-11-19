@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>25</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[peach]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[peaches]]></namePlural>
-		<description><![CDATA[A delicate, juicy fruit of the peach tree, which is often cultivated in temperate climates. It kind of looks like a butt if you squint...]]></description> 
+		<name><![CDATA[персик]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[персики]]></namePlural>
+		<description><![CDATA[Нежный, сочный плод персикового дерева, которое часто выращивают в умеренном климате. Если прищуриться, он чем-то напоминает задницу...]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -41,10 +41,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(wipe)] off the peach and [npc.verb(take)] a big bite out of it. The sweet taste of the juicy fruit encourages [npc.herHim] to keep on going, and within a matter of moments [npc.sheHas] eaten the entire thing.
+		[npc.Name] [npc.verb(wipe)] персик и [npc.verb(take)] от него огромный кусок. Сладкий вкус сочного плода побуждает [npc.herHim] продолжать, и всего через мгновение [npc.sheHas] съедает его целиком.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(wipe)] off the peach and [npc.verb(make)] [npc2.name] take a big bite out of it. The sweet taste of the juicy fruit encourages [npc2.herHim] to keep on going, and within a matter of moments [npc2.sheHas] eaten the entire thing.
+		[npc.Name] [npc.verb(wipe)] персик и [npc.verb(make)] так, чтобы [npc2.name] откусила от него огромный кусок. Сладкий вкус сочного плода побуждает [npc2.herHim] продолжать, и всего через мгновение [npc2.sheHas] съедает его целиком.
 		]]></otherUse>
 	</useDescriptions>
 

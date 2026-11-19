@@ -5,20 +5,20 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[kerambit]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[kerambits]]></namePlural>
-		<description><![CDATA[Originally made as a sickle-like agricultural tool, this small, easily-concealable knife soon began to see use as a weapon. The double-edged blade, made from enchanted ethereal energy, is sharply curved to resemble a tiger's claw, and is intended to be held pointing downward from the fist.]]></description> 
+		<name><![CDATA[керамбит]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[керамбиты]]></namePlural>
+		<description><![CDATA[Изначально созданный как серповидный сельскохозяйственный инструмент, этот маленький, легко скрываемый нож вскоре начал использоваться как оружие. Двустороннее лезвие, созданное из зачарованной эфирной энергии, имеет резкий изгиб, напоминающий тигриный коготь, и предназначено для хвата кулаком острием вниз.]]></description> 
 		
 		<attackDescriptor>slash</attackDescriptor>
 		
-		<attackTooltipDescription><![CDATA[Slash at [npc2.name] with your kerambit.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Наносишь рубящий удар [npc2.name] своим керамбитом.]]></attackTooltipDescription>
 		
 		<rarity>COMMON</rarity> 
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(unsheathe)] the kerambit, readying it for use in combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(sheathe)] the kerambit, before putting it away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(unsheathe)] керамбит, готовясь использовать его в бою.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(sheathe)] керамбит, прежде чем убрать его.]]></unequipText>
 		
 		<imageName>kerambit_sheathed.svg</imageName> 
 		<imageEquippedName>kerambit.svg</imageEquippedName>
@@ -63,25 +63,25 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Making a downwards slashing motion with [npc.her] kerambit, [npc.name] [npc.verb(manage)] to strike [npc2.name] in the chest; the ethereal arcane blade passing through [npc2.her] torso to drain [npc2.her] energy!
+		Делая рубящее движение сверху вниз [npc.her] керамбитом, [npc.name] [npc.verb(manage)] ударить [npc2.name] в грудь; эфирное арканное лезвие проходит сквозь торс [npc2.her], высасывая [npc2.her] энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		Swiftly striking at [npc2.name] with [npc.her] kerambit, [npc.name] [npc.verb(manage)] to slash through [npc2.her] [npc2.arm] with the ethereal blade and drain [npc2.her] energy!
+		Быстро нанося удар по [npc2.name] с помощью [npc.her] керамбита, [npc.name] [npc.verb(manage)] рассечь эфирным лезвием [npc2.her] [npc2.arm] и вытянуть [npc2.her] энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] kerambit, slashing the ethereal blade into [npc2.her] shoulder and causing [npc2.herHim] to lose some energy!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] керамбитом, вонзая эфирное лезвие в плечо [npc2.her], из-за чего [npc2.herHim] теряет немного энергии!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Thrusting out with [npc.her] kerambit, [npc.name] [npc.verb(attempt)] to slash [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		Выпад с [npc.her] керамбитом: [npc.name] [npc.verb(attempt)] полоснуть [npc2.name] по груди, но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] kerambit, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc2.name] яростно замахивается [npc.her] керамбитом, и [npc.name] [npc.verb(let)] разочарованный крик вырывается у [npc.she], когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] kerambit, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] керамбитом, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

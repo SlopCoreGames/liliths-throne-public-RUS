@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[On the inside of the each boots' shanks, rubberised ink reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне голенищ каждого сапога резиновой краской нанесена надпись: «Служебное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>300</value> 
 
 		<determiner><![CDATA[a pair of]]></determiner>
 
-		<name><![CDATA[Enforcer's jackboots]]></name>
+		<name><![CDATA[Сапоги Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's jackboots]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Сапоги Enforcer]]></namePlural> 
 
-		<description><![CDATA[A pair of mid-calf hobnailed boots made from well-polished leather. The heels have a band of metal around the bottom that make a distinct clicking noise when knocked against each other. ]]></description> 
+		<description><![CDATA[Пара кожаных сапог средней высоты с гвоздями на подошве. Кожа тщательно отполирована, а на каблуках закреплены металлические ободки, которые издают отчетливый цокающий звук при соприкосновении друг с другом.]]></description> 
 
 		<physicalResistance>1</physicalResistance> 
 
@@ -64,25 +64,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the jackboots.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в сапоги.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.feet] into the jackboots.]]>
+		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.feet] в сапоги.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] [npc2.feet] into the jackboots.]]>
+		  <![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] [npc2.feet] в сапоги.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] jackboots off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] сапоги с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] jackboots off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] сапоги с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] jackboots off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] сапоги с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

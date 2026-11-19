@@ -2,18 +2,18 @@
 <fluid>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[panther-]]></name>
+		<name><![CDATA[пантер-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[panther-]]></name>
+		<name><![CDATA[пантер-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

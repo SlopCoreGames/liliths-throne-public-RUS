@@ -3,11 +3,11 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[hearts]]></name>
+		<name><![CDATA[сердца]]></name>
 		
-		<description><![CDATA[A series of hearts and swirling lines.]]></description> 
+		<description><![CDATA[Ряд сердец и витиеватых линий.]]></description> 
 		
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts of a series of hearts and swirling lines]]></bodyOverviewDescription> 
+		<bodyOverviewDescription><![CDATA[татуировка, изображающая ряд сердец и витиеватых линий]]></bodyOverviewDescription> 
 		
 		<imageName>hearts.svg</imageName> 
 		

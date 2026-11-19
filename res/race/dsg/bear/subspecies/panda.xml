@@ -110,28 +110,28 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[panda-morph]]></name>
-			<namePlural><![CDATA[panda-morphs]]></namePlural>
-			<singularMaleName><![CDATA[panda-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[panda-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[panda-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[panda-girls]]></pluralFemaleName>
+			<name><![CDATA[морф панды]]></name>
+			<namePlural><![CDATA[морфы панды]]></namePlural>
+			<singularMaleName><![CDATA[панда-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[панда-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[панда-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[панда-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<nameAnthroSillyMode>
 		<namesDefault>
-			<name><![CDATA[pamba-morph]]></name>
-			<namePlural><![CDATA[pamba-morphs]]></namePlural>
-			<singularMaleName><![CDATA[pamba-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[pamba-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[pamba-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[pamba-girls]]></pluralFemaleName>
+			<name><![CDATA[морф памбы]]></name>
+			<namePlural><![CDATA[морфы памбы]]></namePlural>
+			<singularMaleName><![CDATA[памба-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[памба-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-панды]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-панды]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthroSillyMode>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic panda, known as a 'panda-morph' when bipedal, and a 'pandataur' when the lower body is that of a typically-oversized feral bear.]]></description>
+	<description><![CDATA[Антропоморфная панда, известная как «панда-морф», когда она передвигается на двух ногах, и «пандатавр», если её нижняя часть тела представляет собой типично огромного дикого медведя.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
@@ -147,12 +147,12 @@
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[panda]]></feralName>
-		<feralNamePlural><![CDATA[panda]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[panda]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[panda]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[pandas]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[pandas]]></feralPluralFemaleName>
+		<feralName><![CDATA[панда]]></feralName>
+		<feralNamePlural><![CDATA[панда]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[панда]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[панда]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[панды]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[панды]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -183,7 +183,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] panda-like body is strong, and [npc.she] [npc.verb(exude)] a sense of single-minded calm.
+		[npc.NamePos] тело, подобное панде, крепкое и [npc.she] [npc.verb(exude)] ощущение непоколебимого спокойствия.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

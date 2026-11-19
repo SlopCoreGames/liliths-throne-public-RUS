@@ -2,18 +2,18 @@
 <fluid>
 	<race>innoxia_goat</race>
 	
-	<transformationName><![CDATA[goat]]></transformationName>
+	<transformationName><![CDATA[коза]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[goat-]]></name>
+		<name><![CDATA[козий-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[goat-]]></name>
+		<name><![CDATA[козий-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

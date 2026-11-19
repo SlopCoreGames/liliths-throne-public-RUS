@@ -2,7 +2,7 @@
 <face>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<coveringType>innoxia_panther_fur</coveringType>
 	
@@ -27,30 +27,30 @@
 		<descriptor>panther-like</descriptor>
 	</descriptorsFeminine>
 	
-	<noseName><![CDATA[nose]]></noseName>
-	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+	<noseName><![CDATA[нос]]></noseName>
+	<noseNamePlural><![CDATA[носы]]></noseNamePlural>
 	
 	<noseDescriptorsMasculine/>
 	<noseDescriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic panther-like muzzle, and [npc.her] tongue flattens and grows wider, turning into a similarly animalistic one.
+		[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную пантероподобную морду, а [npc.her] язык расплющивается и становится шире, превращаясь в такой же звериный язык.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-			 A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face, 
+			 Слой [npc.faceSkin+] быстро разрастается, покрывая новое лицо [npc.her], 
 		#ELSE
-			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+], 
+			 Как и все остальное тело [npc.her], новое лицо [npc.her] становится [npc.materialDescriptor] [npc.faceSkin+], 
 		#ENDIF
-		and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
-		<br/>[npc.Name] now [npc.has] an anthropomorphic [style.boldPanther(panther-like face)], [npc.materialDescriptor] [npc.faceFullDescription]. Within [npc.her] [npc.mouth], [npc.she] [npc.has] a [style.boldPanther(flat, panther-like tongue)].
+		и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащей и вздыхающей, пока [npc.she] [npc.verb(try)] перевести [npc.her] дух.
+		<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldPanther(пантероподобным лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.she] [npc.has] [style.boldPanther(плоский, пантероподобный язык)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, panther-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a muzzle.
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное пантероподобное лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] и с полноценной мордой.
 	]]></bodyDescription>
 	
 	<!-- Feral variant of the above. -->
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a powerful, toothy muzzle, big nose, and strong jawline.
+		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и обладает мощной, зубастой мордой, крупным носом и сильной челюстью.
 	]]></bodyDescriptionFeral>
 	
 </face>

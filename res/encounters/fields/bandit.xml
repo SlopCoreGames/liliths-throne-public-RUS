@@ -10,7 +10,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[bandit ambush]]></name>
+			<name><![CDATA[засада бандитов]]></name>
 			<chanceToTrigger opportunisticEncounter="true"><![CDATA[
 				4
 			]]></chanceToTrigger>

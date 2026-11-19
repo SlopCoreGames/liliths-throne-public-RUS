@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<authorTag><![CDATA[A small tag sewn into the hem reads "MFD by DSG Threadworks".]]></authorTag>
+		<authorTag><![CDATA[На подшитом крае висит маленькая бирка с надписью: «Произведено DSG Threadworks».]]></authorTag>
 		<value>50</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[skull-patterned bandana]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[skull-patterned bandanas]]></namePlural>
-		<description><![CDATA[A square piece of cloth with a stylized canine skull printed on it. Folded and tied just right, it can be made into an intimidating face mask.]]></description>
+		<name><![CDATA[бандана с узором из черепов]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[банданы с узором из черепов]]></namePlural>
+		<description><![CDATA[Квадратный лоскут ткани с принтом в виде стилизованного собачьего черепа. Если сложить и завязать его как следует, из него получится устрашающая маска.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>MOUTH</slot>
@@ -60,49 +60,49 @@
 	
 	<resplacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(tie)] the bandana around [npc.her] head and [npc.verb(adjust)] it so that the skull design is over [npc.her] nose and mouth.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tie)] бандану на голове [npc.her] и [npc.verb(adjust)] её так, чтобы череп оказался прямо на [npc.her] носу и рту.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(tie)] the bandana around [npc2.namePos] head and [npc.verb(adjust)] it so that the skull design is over [npc2.her] nose and mouth.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tie)] бандану на голове [npc2.namePos] и [npc.verb(adjust)] её так, чтобы череп оказался прямо на [npc2.her] носу и рту.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(tie)] the bandana around [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] небрежно [npc.verb(tie)] бандану на голове [npc2.namePos].]]>
 		</otherRough>
 	</resplacementText>
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the bandana from around [npc.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] бандану с головы [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the bandana from around [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] бандану с головы [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tears)] the bandana from around [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tears)] бандану с головы [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	
 	<displacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] bandana down.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] бандану вниз.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] bandana down.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] бандану вниз.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] bandana down.]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] бандану вниз.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up [npc.her] bandana.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вверх [npc.her] бандану.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up [npc2.namePos] bandana.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вверх [npc2.namePos] бандану.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] forcefully [npc.verb(pull)] up [npc2.namePos] bandana.]]>
+		  <![CDATA[[npc.Name] с силой [npc.verb(pull)] вверх [npc2.namePos] бандану.]]>
 		</otherRough>
 	</replacementText>
 	

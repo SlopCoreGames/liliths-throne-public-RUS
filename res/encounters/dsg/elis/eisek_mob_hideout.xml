@@ -6,7 +6,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[A Dragon Poster]]></name>
+			<name><![CDATA[Плакат с драконом]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				#IF(pc.hasQuest(QUEST_LINE_SIDE_EISEK_MOB) && pc.isQuestProgressLessThan(QUEST_LINE_SIDE_EISEK_MOB, QUEST_EISEK_MOB_QUEST_STAGE_TWO))
 					#IF(pc.hasTraitActivated(PERK_OBSERVANT))

@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[butterflies]]></name>
+		<name><![CDATA[бабочки]]></name>
 		
-		<description><![CDATA[An artistic depiction of a trio of butterflies in mid-flight..]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo of a trio of butterflies in mid-flight]]></bodyOverviewDescription> 
+		<description><![CDATA[Художественное изображение трех бабочек в полете...]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с тремя бабочками, застывшими в полете]]></bodyOverviewDescription> 
 		
 		<imageName>butterflies.svg</imageName> 
 		

@@ -5,21 +5,21 @@
 
     <htmlContent author="AceXP" tag="INTRO"><![CDATA[
    	<p>
-		You find yourself walking through labyrinthine alleyways, with not a soul in sight. Back-doors and steaming vents line the dark brick walls, and you often have to navigate around overflowing bins and stacks of empty crates in order to make progress.
+		Ты идешь по лабиринту узких переулков, где нет ни души. Темные кирпичные стены уставлены задними дверями и дымящимися вентиляционными отверстиями; чтобы продвинуться вперед, тебе то и дело приходится огибать переполненные баки и груды пустых ящиков.
 	</p>
 	#IF(flags.hasFlag(FLAG_acexp_shady_dealer_discovered))
 		<p>
-			As you pass by a stack of crates, you suddenly hear a familiar, androgynous voice calling out from the shadows, [AceXpShadyDealer.speech(Hey, we meet again. Do you want to make a deal? Still no questions asked, of course.)]
+			Проходя мимо штабеля ящиков, ты внезапно слышишь из теней знакомый андрогинный голос: [AceXpShadyDealer.speech(Эй, снова встретились. Хочешь заключить сделку? Разумеется, всё так же без лишних вопросов.)]
 		</p>
 		<p>
-			Turning to face the shady alicorn, you wonder whether to take them up on their offer, or instead simply continue on your way...
+			Повернувшись к подозрительному аликорну, ты раздумываешь, стоит ли принять предложение или же просто продолжить свой путь...
 		</p>
 	#ELSE
 		<p>
-			As you pass by a stack of crates, you suddenly hear an androgynous voice calling out from the shadows, [AceXpShadyDealer.speech(Psst! You, yes you! Are you up for the bargain of your life?)]
+			Когда ты проходишь мимо кучи ящиков, из тени внезапно доносится андрогинный голос: [AceXpShadyDealer.speech(Псс! Ты, да-да, ты! Готов к сделке всей твоей жизни?)]
 		</p>
 		<p>
-			Looking over towards the source of this voice, you see a shady figure lurking behind the crates. Not knowing what to make of this, you take a moment to decide whether to approach this mysterious salesperson or instead simply continue on your way...
+			Оглянувшись на источник звука, ты видишь подозрительную фигуру, затаившуюся за ящиками. Не зная, что и как к этому относиться, ты замираешь на мгновение, решая: подойти ли к этому таинственному торговцу или просто пойти дальше...
 		</p>
 	#ENDIF
 	]]>
@@ -27,7 +27,7 @@
 
     <htmlContent tag="INTRO_LEAVE"><![CDATA[
    	<p>
-		Not interested in whatever this shady figure is trying to sell, you ignore them and continue on your way. As you leave this dodgy character behind, their androgynous voice calls out after you, [AceXpShadyDealer.speech(We'll meet again! I'll try to find you tomorrow!)]
+		Не заинтересованный в том, что пытается всучить эта скользкая личность, ты игнорируешь его и идешь дальше. Когда ты оставляешь этого жулика позади, тебе вслед летит его андрогинный голос: [AceXpShadyDealer.speech(Еще встретимся! Попробую найти тебя завтра!)]
 	</p>
 	]]>
     </htmlContent>
@@ -35,29 +35,29 @@
     <htmlContent author="AceXP" tag="TRADE"><![CDATA[
 	#IF(flags.hasFlag(FLAG_acexp_shady_dealer_discovered))
 		<p>
-			Carefully approaching the stack of crates, you once again find yourself face to face with the shady dealer. The single horn on their forehead, along with their horse like appearance and powerful wings, are enough to identify them as [AceXpShadyDealer.a_raceFull(true)]. You get the feeling that they are quite proficient at spell casting, but right now they don't seem to pose a threat. They're mostly clad in dark clothes, with some of their gear clearly having been illegally purloined from the Enforcers. The many pockets on their trousers, shirt, and jacket are bulging with various items that are tucked away in them.
+			Осторожно приближаясь к груде ящиков, ты снова оказываешься лицом к лицу с подозрительным торговцем. Единственный рог на лбу, лошадиный облик и мощные крылья позволяют безошибочно узнать в нем [AceXpShadyDealer.a_raceFull(true)]. У тебя возникает чувство, что он весьма искусен в чтении заклинаний, но сейчас он не кажется опасным. Он одет в основном в темную одежду, а часть его снаряжения явно была незаконно стащена у Enforcer. Множество карманов на его брюках, рубашке и куртке раздуваются от спрятанных в них всяческих безделушек.
 		</p>
 		<p>
-			Quickly looking you up and down, this shady alicorn states, [AceXpShadyDealer.speech(You know the drill, don't ya. Only the best wares, for bargain prices! But make it quick, I don't want any more trouble with the Enforcers than I already have!)]
+			Быстро окинув тебя взглядом с ног до головы, этот подозрительный аликорн заявляет: [AceXpShadyDealer.speech(Ты ведь знаешь, как тут всё устроено. Только лучший товар по дешевке! Но давай побыстрее, не хочу навлекать на себя лишних проблем с Enforcer, которых и так хватает!)]
 		</p>
 	#ELSE
 		<p>
-			Carefully approaching the stack of crates, you find yourself face to face with a shady-looking individual. The single horn on their forehead, along with their horse like appearance and powerful wings, are enough to identify them as [AceXpShadyDealer.a_raceFull(true)]. You get the feeling that they are quite proficient at spell casting, but right now they don't seem to pose a threat. They're mostly clad in dark clothes, with some of their gear clearly having been illegally purloined from the Enforcers. The many pockets on their trousers, shirt, and jacket are bulging with various items that are tucked away in them.
+			Осторожно приближаясь к груде ящиков, ты оказываешься лицом к лицу с подозрительной личностью. Единственный рог на лбу, лошадиный облик и мощные крылья позволяют безошибочно узнать в нем [AceXpShadyDealer.a_raceFull(true)]. У тебя возникает чувство, что он весьма искусен в чтении заклинаний, но сейчас он не кажется опасным. Он одет в основном в темную одежду, а часть его снаряжения явно была незаконно стащена у Enforcer. Множество карманов на его брюках, рубашке и куртке раздуваются от спрятанных в них всяческих безделушек.
 		</p>
 		<p>
-			Casting a quick glance left and right to check if anyone else is around, they start what is probably a well-rehearsed sales pitch, [AceXpShadyDealer.speech(I have only the best wares; you won't find anything like this anywhere else, I guarantee you! All for a price of course! Oh, and if you happen to have some interesting items, just show 'em! I might want to take them off your hands. Can't offer much though, you know, what with money being tight and all...)]
+			Быстро оглядываясь по сторонам, чтобы убедиться, что рядом никого нет, торговец заводит свою, судя по всему, заученную речь: [AceXpShadyDealer.speech(У меня только лучший товар; клянусь, нигде больше такого не найдешь! Ну, за определенную цену, конечно! О, и если у тебя завалялось что-нибудь интересненькое — показывай! Может, захочу забрать это у тебя. Много не предложу, сам понимаешь, денег сейчас в обрез...)]
 		</p>
 	#ENDIF
    	<p>
-	    You take a moment to consider if you should make a deal with this shady dealer...
+	    Ты на мгновение задумываешься, стоит ли иметь дело с этим подозрительным дельцом...
 	</p>
 	]]>
     </htmlContent>
 
     <htmlContent tag="TRADE_LEAVE"><![CDATA[
    	<p>
-		Having seen enough, you tell the alicorn that you've got to be on your way, before setting off down the alleyway. As you leave the shady figure behind, their androgynous voice calls out after you, [AceXpShadyDealer.speech(We'll meet again! I'll try to find you tomorrow!)]
-	</p>
+		Насмотревшись, ты говоришь единорогу, что тебе пора идти, и направляешься вглубь переулка. Когда ты оставляешь сомнительную фигуру позади, тебе вслед доносится чей-то андрогинный голос: [AceXpShadyDealer.speech(Еще встретимся! Постараюсь найти тебя завтра!)]
+		</p>
 	]]>
     </htmlContent>
 

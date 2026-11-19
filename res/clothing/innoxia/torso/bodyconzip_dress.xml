@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[frontal-zip dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[frontal-zip dresses]]></namePlural>
-		<description><![CDATA[A tight fitting bodycon dress with a zip that runs the entire way up the front.]]></description>
+		<name><![CDATA[платье на молнии спереди]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[платья на молнии спереди]]></namePlural>
+		<description><![CDATA[Облегающее платье фасона bodycon с молнией, проходящей по всей длине спереди.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot> 
@@ -82,73 +82,73 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the dress and zip [npc.herself] up.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] платье на [npc.herself] и застегиваешь его на молнию.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(guide)] [npc2.name] into the frontal-zip dress and [npc.verb(zip)] [npc2.herHim] up.]]>
+			<![CDATA[[npc.Name] [npc.verb(помогает)] [npc2.name] облачиться в платье на молнии и [npc.verb(застегивает)] [npc2.herHim].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.name] into the frontal-zip dress and [npc.verb(zip)] [npc2.herHim] up.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(втискивает)] [npc2.name] в платье на молнии и [npc.verb(застегивает)] [npc2.herHim].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] fully [npc.verb(unzip)] [npc.her] frontal-zip dress and [npc.verb(shrug)] it off.]]>
+			<![CDATA[[npc.Name] полностью [npc.verb(расстегивает)] платье на молнии на [npc.her] и [npc.verb(сбрасывает)] его с плеч.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] fully [npc.verb(unzip)] [npc2.namePos] frontal-zip dress and [npc.verb(pull)] it off.]]>
+			<![CDATA[[npc.Name] полностью [npc.verb(расстегивает)] платье на молнии на [npc2.namePos] и [npc.verb(снимает)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] hastily [npc.verb(unzip)] [npc2.namePos] frontal-zip dress and roughly [npc.verb(pull)] it off.]]>
+			<![CDATA[[npc.Name] поспешно [npc.verb(расстегивает)] платье на молнии на [npc2.namePos] и грубо [npc.verb(срывает)] его.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the bottom of [npc.her] frontal-zip dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(подтягивает)] низ платья на молнии на [npc.her] вниз, возвращая его в нужное положение.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the bottom of [npc2.namePos] frontal-zip dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] низ платья [npc2.namePos] на молнии вниз, возвращая его в исходное положение.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the bottom of [npc2.namePos] frontal-zip dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] низ платья [npc2.namePos] на молнии вниз, возвращая его в исходное положение.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] up the bottom of [npc.her] frontal-zip dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] низ платья [npc.her] на молнии вверх.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] up the bottom of [npc2.namePos] frontal-zip dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] низ платья [npc2.namePos] на молнии вверх.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] hold of the bottom of [npc2.namePos] frontal-zip dress, before roughly pulling it up.]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] нижний край платья [npc2.namePos] на молнии, прежде чем грубо задрать его вверх.]]>
 		</otherRough>
 	</displacementText>
 
 	<displacementText type="UNZIPS">
 		<self>
-			<![CDATA[[npc.Name] fully [npc.verb(unzip)] the front of [npc.her] dress.]]>
+			<![CDATA[[npc.Name] полностью [npc.verb(unzip)] платье [npc.her] спереди.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] fully [npc.verb(unzip)] the front of [npc2.namePos] dress.]]>
+			<![CDATA[[npc.Name] полностью [npc.verb(unzip)] платье [npc2.namePos] спереди.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(unzip)] the front of [npc2.namePos] dress.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(unzip)] платье [npc2.namePos] спереди.]]>
 	  </otherRough>
 	</displacementText>
 
 	<replacementText type="UNZIPS">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(zip)] up the front of [npc.her] dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(zip)] платье [npc.her] спереди вверх.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(zip)] up the front of [npc2.namePos] dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(zip)] платье [npc2.namePos] спереди вверх.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(zip)] up the front of [npc2.namePos] dress.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(zip)] молнию на передней части платья [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 	

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A logo subtly printed along the inside of the temples informs you that it was designed by 'Phlarx'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Едва заметный логотип на внутренней стороне дужек сообщает тебе, что эти очки созданы брендом «Phlarx».]]></clothingAuthorTag>
 		<value>1050</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[cat-eye sunglasses]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[cat-eye sunglasses]]></namePlural>
-		<description><![CDATA[A pair of very feminine cat-eye sunglasses. Coordinate with classic makeup and a flirty outfit to complete the look.]]></description>
+		<name><![CDATA[очки «кошачий глаз»]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[очки «кошачий глаз»]]></namePlural>
+		<description><![CDATA[Очень женственные очки формы «кошачий глаз». Сочетай их с классическим макияжем и кокетливым нарядом, чтобы завершить образ.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>EYES</slot>
@@ -59,24 +59,24 @@
 	</coreAttributes>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(remove)] [npc.her] sunglasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(remove)] [npc.her] очки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(remove)] [npc2.namePos] sunglasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(remove)] [npc2.namePos] очки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] aggressively [npc.verb(remove)] [npc2.namePos] sunglasses.]]>
+			<![CDATA[[npc.Name] резко [npc.verb(remove)] [npc2.namePos] очки.]]>
 		</otherRough>
 	</displacementText>
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on [npc.her] sunglasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] на [npc.her] очки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(put)] on [npc2.namePos] sunglasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] на [npc2.namePos] очки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] aggressively [npc.verb(put)] on [npc2.namePos] sunglasses.]]>
+			<![CDATA[[npc.Name] резко [npc.verb(put)] на [npc2.namePos] очки.]]>
 		</otherRough>
 	</replacementText>
 </clothing>

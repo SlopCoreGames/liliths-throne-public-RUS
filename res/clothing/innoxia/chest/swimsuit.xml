@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[one-piece swimsuit]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[one-piece swimsuits]]></namePlural>
-		<description><![CDATA[A sporty one-piece swimsuit.]]></description>
+		<name><![CDATA[цельный купальник]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[цельные купальники]]></namePlural>
+		<description><![CDATA[Спортивный цельный купальник.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -97,70 +97,70 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the swimsuit and [npc.verb(pull)] it up to cover [npc.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в купальник и [npc.verb(pull)] его вверх, чтобы прикрыть торс [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.name] into the swimsuit and [npc.verb(pull)] it up over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.name] в купальник и [npc.verb(pull)] его вверх по торсу [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(guide)] [npc2.name] into the swimsuit and [npc.verb(yank)] it up over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(guide)] [npc2.name] в купальник и [npc.verb(yank)] его вверх по торсу [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the swimsuit's straps down [npc.her] [npc.arms] and [npc.verb(tug)] it off [npc.her] [npc.legs].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] бретельки купальника вниз по [npc.her] [npc.arms] и [npc.verb(tug)] его с [npc.her] [npc.legs].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the swimsuit's straps down [npc2.namePos] [npc2.arms] and [npc.verb(tug)] it off [npc2.her] [npc2.legs].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] бретельки купальника вниз по [npc2.namePos] [npc2.arms] и [npc.verb(tug)] его с [npc2.her] [npc2.legs].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(yank)] the swimsuit's straps down [npc2.namePos] [npc2.arms] and [npc.verb(tug)] it off [npc2.her] [npc2.legs].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(yank)] бретельки купальника вниз по [npc2.namePos] [npc2.arms] и [npc.verb(tug)] его с [npc2.her] [npc2.legs].]]>
 		</otherRough>
 	</displacementText>
 	
 	<displacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the top half of [npc.her] swimsuit.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть купальника [npc.her] вниз.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the top half of [npc2.namePos] swimsuit.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть купальника [npc2.namePos] вниз.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the top half of [npc2.namePos] swimsuit.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] верхнюю часть купальника [npc2.namePos] вниз.]]>
 	  </otherRough>
 	</displacementText>
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] swimsuit up into its correct position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] купальник [npc.her] вверх, поправляя его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] swimsuit up into its correct position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] купальник [npc2.namePos] вверх, поправляя его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] swimsuit up into its correct position.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] купальник [npc2.namePos] вверх, поправляя его.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="SHIFTS_ASIDE">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the lower part of [npc.her] swimsuit to one side.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть купальника [npc.her] в сторону.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the lower part of [npc2.namePos] swimsuit to one side.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть купальника [npc2.namePos] в сторону.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the lower part of [npc2.namePos] swimsuit to one side.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] нижнюю часть купальника [npc2.namePos] в сторону.]]>
 	  </otherRough>
 	</displacementText>
 	<replacementText type="SHIFTS_ASIDE">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the lower part of [npc.her] swimsuit back into its correct position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть купальника [npc.her] обратно на место.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the lower part of [npc2.namePos] swimsuit back into its correct position.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нижнюю часть купальника [npc2.namePos] обратно на место.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the lower part of [npc2.namePos] swimsuit back into its correct position.]]>
+		  <![CDATA[[npc.Name] примерно [npc.verb(pull)] нижнюю часть купальника [npc2.namePos] Назад, возвращая её на место.]]>
 		</otherRough>
 	</replacementText>
 </clothing>

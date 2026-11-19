@@ -24,18 +24,18 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Swap focus]]></title>
+	<title><![CDATA[Сменить фокус]]></title>
 	<tooltip><![CDATA[
-		Move over to be focusing more on [npc2.name].
+		Переключить внимание на [npc2.name].
 	]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
-				Deciding that you should give [npc2.name] a little more attention, you shuffle over to position yourself behind her.
+				Решив, что [npc2.name] заслуживает чуть больше внимания, ты переползаешь, чтобы устроиться позади неё.
 				#IF(npc2==natalya)
-					 Now giving your Mistress most of your attention, you can't help but let out a happy [pc.moan] as she looks back at you over her shoulder and says, [natalya.speech(Good [style.mule]... Keep eating my ass!)]
+					Теперь, сосредоточив всё внимание на своей Госпоже, ты невольно издаешь счастливый [pc.moan], когда она оглядывается на тебя через плечо и говорит: [natalya.speech(Хороший [style.mule]... Продолжай сосать мой зад!)]
 				#ELSE
-					 Now giving Callie most of your attention, you can't help but let out a happy [pc.moan] as she looks back at you over her shoulder and exclaims, [callie.speech(That feels so good! Don't stop!)]
+					Теперь, сосредоточив всё внимание на Колли, ты невольно издаешь счастливый [pc.moan], когда она оглядывается на тебя через плечо и восклицает: [callie.speech(Это так приятно! Не останавливайся!)]
 				#ENDIF
 			]]></text>
 		</description>

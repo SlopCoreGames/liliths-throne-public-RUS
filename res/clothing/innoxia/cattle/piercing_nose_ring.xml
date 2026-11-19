@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[large nose ring]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[large nose rings]]></namePlural>
-		<description><![CDATA[A large nose ring, of the sort typically worn by domestic cattle or pigs. It allows the wearer to be easily controlled by a handler, who may choose to hold the ring directly, or attach a rope or chain to it.]]></description>
+		<name><![CDATA[большое кольцо в носу]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[большие кольца в носу]]></namePlural>
+		<description><![CDATA[Большое кольцо в носу, подобное тем, что обычно носят домашний скот или свиньи. Оно позволяет владельцу легко подчиняться хозяину, который может либо держать кольцо напрямую, либо прикрепить к нему веревку или цепь.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>PIERCING_NOSE</slot>
@@ -43,25 +43,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ring into [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцо в [npc.her] [npc.nose] прокол.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ring into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцо в [npc2.namePos] [npc2.nose] прокол.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the ring into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] кольцо в [npc2.namePos] [npc2.nose] прокол.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] ring out of [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] кольцо из [npc.her] [npc.nose] прокола.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] ring out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] кольцо из [npc2.her] [npc2.nose] прокола.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] ring out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] кольцо из [npc2.her] [npc2.nose] прокола.]]>
     </otherRough>
   </displacementText>
 	

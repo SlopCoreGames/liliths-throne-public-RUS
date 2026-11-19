@@ -2,7 +2,7 @@
 <eye>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_eye</coveringType>
 	
@@ -16,21 +16,19 @@
 	
 	<defaultPupilShape>ROUND</defaultPupilShape>
 	
-	<name><![CDATA[eye]]></name>
-	<namePlural><![CDATA[eyes]]></namePlural>
+	<name><![CDATA[глаз]]></name>
+	<namePlural><![CDATA[глаза]]></namePlural>
 	
 	<descriptorsMasculine/>
 	
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into raptor-like eyes, with large irises and pupils.
-		<br/>
-		[npc.Name] now [npc.has] [style.boldRaptor(raptor-like eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[К тому времени как [npc.she] нерешительно [npc.verb(open)] их снова, они превращаются в глаза раптора с огромными радужками и зрачками.
+<br/>
+[npc.Name] теперь [npc.has] [style.boldRaptor(raptor-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.eyePairs] raptor-like eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+		[npc.SheHasFull] [npc.eyePairs] глаза раптора, радужки и зрачки которых крупнее, чем у обычного человека. У них [npc.irisShape], [npc.irisColour(true)] радужки, [npc.pupilShape], [npc.pupilColour(true)] зрачки и [npc.scleraColour(true)] склеры.
 	]]></bodyDescription>
 	
 </eye>

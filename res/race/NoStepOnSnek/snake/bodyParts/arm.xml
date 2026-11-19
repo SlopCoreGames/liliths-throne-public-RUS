@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <arm>
 	<race>NoStepOnSnek_snake</race>
-	<transformationName><![CDATA[snake]]></transformationName>
+	<transformationName><![CDATA[змея]]></transformationName>
 	<coveringType>SNAKE_SCALES</coveringType>
 	<allowsFlight>false</allowsFlight>
 	<tags>
 		<tag>ARM_STANDARD</tag>
 	</tags>
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural>
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural>
 	<descriptorsMasculine>
 		<descriptor>scaly</descriptor>
 		<descriptor>scale-covered</descriptor>
@@ -17,8 +17,8 @@
 		<descriptor>scaly</descriptor>
 		<descriptor>scale-covered</descriptor>
 	</descriptorsFeminine>
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>reptilian</descriptor>
 		<descriptor>scaly</descriptor>
@@ -29,8 +29,8 @@
 		<descriptor>reptilian</descriptor>
 		<descriptor>scaly</descriptor>
 	</handDescriptorsFeminine>
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>reptilian</descriptor>
 		<descriptor>scaly</descriptor>
@@ -42,10 +42,10 @@
 		<descriptor>scaly</descriptor>
 	</fingerDescriptorsFeminine>
 	<transformationDescription><![CDATA[
-		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new scales growing over the backs of [npc.her] hands as little claws push out to replace [npc.her] fingernails. [npc.Her] palms rapidly transform to be [npc.materialDescriptor] little scales, and at [npc.her] upper-biceps, [npc.her] scales smoothly transition into the [npc.skin] that's covering the rest of [npc.her] body.
-		<br/>As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldSnake(snake-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+		Всего за мгновение их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую чешую, прорастающую на спинах [npc.her] рук, в то время как маленькие когти пробиваются наружу, заменяя [npc.her] ногти. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] мелкую чешую, а на [npc.her] верхней части бицепсов [npc.her] чешуя плавно переходит в [npc.skin], покрывающую остальное тело [npc.her].
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldSnake(змеиными руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands are formed into anthropomorphic, snake-like hands, complete with little claws.
+		[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превращаются в антропоморфные, змееподобные руки с маленькими когтями.
 	]]></bodyDescription>
 </arm>

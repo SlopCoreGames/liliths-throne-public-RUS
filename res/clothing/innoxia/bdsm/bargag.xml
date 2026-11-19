@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>150</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[bar gag]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[bar gags]]></namePlural> 
-		<description><![CDATA[A leather strap with a sturdy rubber bar fixed across one side. When secured into position around the wearer's head, the bar is inserted into their mouth, leaving them unable to speak.]]></description>
+		<name><![CDATA[кляп-палочка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кляпы-палочки]]></namePlural> 
+		<description><![CDATA[Кожаный ремень с прочной резиновой перекладиной, закрепленной с одной стороны. Когда его затягивают на голове, перекладина оказывается во рту, лишая человека возможности говорить.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -52,25 +52,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(open)] [npc.her] mouth wide and [npc.verb(slide)] in the bar gag, before reaching back and fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(открывает)] [npc.her] рот широко и [npc.verb(вставляет)] кляп-палочку, после чего тянется назад, чтобы застегнуть пряжки и закрепить его на месте.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the bar gag into [npc2.namePos] mouth, before reaching back and fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(засовывает)] кляп-палочку в рот [npc2.namePos], после чего тянется назад, чтобы застегнуть пряжки и закрепить его на месте.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(force)] the bar gag into [npc2.namePos] mouth, before reaching back and tightly fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(впихивает)] кляп-палочку в рот [npc2.namePos], после чего тянется назад, чтобы туго затянуть пряжки и надежно закрепить его на месте.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the bar gag's straps and [npc.verb(take)] it out of [npc.her] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(расстегивает)] ремни кляпа-палочки и [npc.verb(вынимает)] его изо рта [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the bar gag's straps and [npc.verb(take)] it out of [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(расстегивает)] ремни кляпа-палочки и [npc.verb(вынимает)] его изо рта [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] impatiently [npc.verb(unfasten)] the bar gag's straps and [npc.verb(yank)] it out of [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] нетерпеливо [npc.verb(расстегивает)] ремни кляпа-палочки и [npc.verb(вырывает)] его изо рта [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 </clothing>

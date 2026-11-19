@@ -10,11 +10,11 @@
 		
 		<determiner><![CDATA[the]]></determiner>
 		
-		<name><![CDATA[arcane lightning globe]]></name>
+		<name><![CDATA[сфера арканальной молнии]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[arcane lightning globes]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[сферы арканальной молнии]]></namePlural>
 		
-		<description><![CDATA[When held, this small crystal globe quickly fills with a crackling, swirling maelstrom of arcane lightning. Although no larger than a golf ball, it holds an immense amount of power, and is able to unleash an uncontrollable surge of arcane lightning. <i>Arthur might know more about it...</p>]]></description> 
+		<description><![CDATA[Когда ты держишь эту маленькую хрустальную сферу, она быстро наполняется трещащим, вихрящимся штормом арканальной молнии. Хотя она не больше мячика для гольфа, в ней заключена огромная мощь, способная высвободить неуправляемый всплеск арканальной молнии. <i>Возможно, Arthur знает о ней побольше...</p>]]></description> 
 		
 		<attackDescriptor>lightning strike</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] hold of the arcane lightning globe and [npc.verb(prepare)] to unleash its power.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] сферу арканальной молнии и [npc.verb(prepare)] высвободить её мощь.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away the arcane lightning globe.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] сферу арканальной молнии.]]></unequipText>
 		
 		<imageName>lightning_globe_inactive.svg</imageName> 
 		
@@ -77,20 +77,20 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Harnessing the power of the arcane lightning globe, [npc.name] [npc.verb(unleash)] a blast of bright pink lightning directly at [npc2.name]!
+		Используя мощь сферы арканальной молнии, [npc.name] [npc.verb(unleash)] яркий розовый разряд молнии прямо в [npc2.name]!
 		]]></hitText>
 		<hitText><![CDATA[
 		#IF(npc.isFeral())
-			Using the power of the small crystal globe, [npc.name] [npc.verb(launch)] a dazzling strike of arcane lightning directly at [npc2.name]!
+			Используя силу маленькой хрустальной сферы, [npc.name] [npc.verb(launch)] ослепительный удар арканальной молнии прямо в [npc2.name]!
 		#ELSE
-			Using the power of the small crystal globe clenched tightly in [npc.her] [npc.hand], [npc.name] [npc.verb(launch)] a dazzling strike of arcane lightning directly at [npc2.name]!
+			Сжимая в [npc.her] [npc.hand] маленькую хрустальную сферу, [npc.name] [npc.verb(launch)] ослепительный удар арканальной молнии прямо в [npc2.name]!
 		#ENDIF
 		]]></hitText>
 		<hitText><![CDATA[
 		#IF(npc.isFeral())
-			A bright pink flash of arcane lightning streaks out from [npc.namePos] crystal globe, hitting [npc2.name] directly in the chest!
+			Яркая розовая вспышка арканальной молнии вырывается из [npc.namePos] хрустальной сферы, попадая прямо в грудь [npc2.name]!
 		#ELSE
-			A bright pink flash of arcane lightning streaks out from [npc.namePos] outstretched [npc.hand], hitting [npc2.name] directly in the chest!
+			Яркая розовая вспышка арканальной молнии вырывается из протянутой руки [npc.namePos] [npc.hand], попадая прямо в грудь [npc2.name]!
 		#ENDIF
 		]]></hitText>
 	</hitDescriptions>
@@ -98,13 +98,13 @@
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		Harnessing the power of the arcane lightning globe, [npc.name] [npc.verb(unleash)] a blast of bright pink lightning, but [npc.verb(end)] up missing [npc2.name]!
+		Обуздав мощь арканального шара молний, [npc.name] [npc.verb(unleash)] яркий розовый разряд, но в итоге [npc.verb(end)] промахивается мимо [npc2.name]!
 		]]></missText>
 		<missText><![CDATA[
-		Launching a dazzling strike of arcane lightning at [npc2.name], [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Обрушив на [npc2.name] ослепительный удар арканальной молнии, [npc.name] [npc.verb(let)] разочарованно вскрикивает, когда [npc.she] [npc.verb(miss)] мимо [npc.her]!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(unleash)] a blast of bright pink lightning at [npc2.name], but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(unleash)] яркий розовый разряд в [npc2.name], но [npc.she] [npc.verb(miss)] мимо [npc.her]!
 		]]></missText>
 	</missDescriptions>
 	

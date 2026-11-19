@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>400</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[skater dress]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[skater dresses]]></namePlural>
-		<description><![CDATA[A sleeveless skater dress, held up by a pair of thin straps that loop over the wearer's shoulders.]]></description>
+		<name><![CDATA[платье-трапеция]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[платья-трапеции]]></namePlural>
+		<description><![CDATA[Платье-трапеция без рукавов, держащееся на двух тонких бретельках, которые проходят через плечи.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot> 
@@ -82,73 +82,73 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] on the skater dress, tidying the skirt down before moving the straps into a comfortable position on [npc.her] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] за платье-трапецию, разглаживая юбку, а затем поправляет бретельки на плечах [npc.her], чтобы они сидели удобнее.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the skater dress over [npc2.namePos] head and down around [npc2.her] torso, tidying the skirt before moving the straps to sit comfortably on [npc2.her] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] платье-трапецию через голову [npc2.namePos] и стягивает его вниз по [npc2.her] торсу, разглаживая юбку и поправляя бретельки на плечах [npc2.her] для удобства.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the skater dress over [npc2.namePos] head and down around [npc2.her] torso.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] платье-трапецию через голову [npc2.namePos] и стягивает его вниз по [npc2.her] торсу.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] skater dress up over [npc.her] head and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] платье-трапецию [npc.her] через голову [npc.her] и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] skater dress up over [npc2.her] head and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] платье-трапецию [npc2.namePos] через голову [npc2.her] и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] skater dress up over [npc2.her] head and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] платье-трапецию [npc2.namePos] через голову [npc2.her] и [npc.verb(take)] его.]]>
 		</otherRough>
 	</displacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] skater dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] юбку платья-трапеции [npc.her] вверх.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] skater dress.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] подол [npc2.namePos] платья-скейтера вверх.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] hold of the skirt of [npc2.namePos] skater dress, before roughly pulling it up.]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] край платья-скейтера [npc2.namePos], а затем грубо задирает его вверх.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the skirt of [npc.her] skater dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] подол [npc.her] платья-скейтера назад, возвращая его в нормальное положение.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the skirt [npc2.namePos] skater dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] подол [npc2.namePos] платья-скейтера назад, возвращая его в нормальное положение.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the skirt [npc2.namePos] skater dress back down into the proper position.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] подол [npc2.namePos] платья-скейтера назад, возвращая его в нормальное положение.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(shrug)] off the shoulder straps of [npc.her] skater dress and [npc.verb(allow)] the top half to fall down around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(shrug)] лямки [npc.her] платья-скейтера с плеч, [npc.verb(allow)] верхней части платья сползти на [npc.her] талию.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the straps of [npc2.namePos] skater dress down off [npc2.her] shoulders, before tugging it down around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] лямки [npc2.namePos] платья-скейтера вниз с [npc2.her] плеч, а затем стягивает его вниз до [npc.her] талии.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the straps of [npc2.namePos] skater dress down off [npc2.her] shoulders, before forcefully yanking it down around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] лямки [npc2.namePos] платья-скейтера вниз с [npc2.her] плеч, а затем с силой сдергивает его до [npc.her] талии.]]>
 	  </otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the top half of [npc.her] skater dress back up into its proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc.her] платья-скейтера вверх, возвращая её в нормальное положение.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the top half of [npc2.namePos] skater dress back up into its proper position.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc2.namePos] платья-скейтера вверх, возвращая её в нормальное положение.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(yank)] the top half of [npc2.namePos] skater dress back up into its proper position.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(yank)] затягивает верхнюю часть платья-трапеции [npc2.namePos] обратно на место.]]>
 		</otherRough>
 	</replacementText>
 

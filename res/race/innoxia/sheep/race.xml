@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[sheep-morph]]></name>
-	<namePlural><![CDATA[sheep-morphs]]></namePlural>
+	<name><![CDATA[овечья морфология]]></name>
+	<namePlural><![CDATA[овечьи морфологии]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[sheep]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[овца]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[sheep]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[овца]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[sheep]]></defaultTransformName>
+	<defaultTransformName><![CDATA[овца]]></defaultTransformName>
 	
 	<colour>innoxia_sheep</colour>
 	

@@ -2,7 +2,7 @@
 <fluid>
 	<race>innoxia_goat</race>
 	
-	<transformationName><![CDATA[goat]]></transformationName>
+	<transformationName><![CDATA[коза]]></transformationName>
 	
 	<baseFluidType>MILK</baseFluidType>
 	
@@ -12,11 +12,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[goat]]></name>
+		<name><![CDATA[коза]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[goat]]></name>
+		<name><![CDATA[коза]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers/>

@@ -6,18 +6,18 @@
 	
 	<race>dsg_shark</race>
 	
-	<transformationName><![CDATA[shark]]></transformationName>
+	<transformationName><![CDATA[акула]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[shark-]]></name>
+		<name><![CDATA[акулий-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[shark-]]></name>
+		<name><![CDATA[акулий-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

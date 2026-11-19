@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>150</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[collar bowtie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[collar bowties]]></namePlural>
-		<description><![CDATA[A shirt collar, with a smart, pre-tied bowtie affixed to the front.]]></description>
+		<name><![CDATA[воротничок с бабочкой]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[воротнички с бабочками]]></namePlural>
+		<description><![CDATA[Воротничок от рубашки с элегантной готовой бабочкой, прикрепленной спереди.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -45,24 +45,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the collar bowtie around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] воротничок с бабочкой на шее [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the collar bowtie around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] воротничок с бабочкой на шее [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before fastening the collar bowtie around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем застегнуть воротничок с бабочкой на шее [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] collar bowtie, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] воротничок с бабочкой на [npc.her], прежде чем снять его с шеи [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] collar bowtie, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] воротничок с бабочкой на [npc2.namePos], прежде чем снять его с шеи [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] collar bowtie, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] воротничок с бабочкой на [npc2.namePos], а затем резко сдергивает его с шеи [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

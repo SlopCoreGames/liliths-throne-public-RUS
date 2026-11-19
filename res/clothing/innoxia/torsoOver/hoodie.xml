@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>300</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[hoodie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[hoodies]]></namePlural>
-		<description><![CDATA[A long-sleeved pullover shirt, fashioned out of thick cotton and complete with a hood.]]></description>
+		<name><![CDATA[худи]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[худи]]></namePlural>
+		<description><![CDATA[Пуловер с длинными рукавами, сшитый из плотного хлопка и дополненный капюшоном.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>TORSO_OVER</slot>
@@ -63,48 +63,48 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] on the hoodie.
+			[npc.Name] [npc.verb(pull)] худи.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the hoodie's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
+			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава худи, пока [npc.she] [npc.verb(pull)] его на [npc2.herHim].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the hoodie's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
+			[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава худи, пока [npc.she] [npc.verb(pull)] его на [npc2.herHim].
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc.her] hoodie.
+			[npc.Name] [npc.verb(take)] с [npc.her] худи.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc2.namePos] hoodie.
+			[npc.Name] [npc.verb(take)] с [npc2.namePos] худи.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] hoodie.
+			[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] худи.
 		]]></otherRough>
 	</displacementText>
 	
 	
 	<replacementText type="PULLS_UP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] [npc.her] hoodie back down to cover [npc.her] torso.
+			[npc.Name] [npc.verb(pull)] [npc.her] худи вниз, чтобы прикрыть [npc.her] торс.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(pull)] [npc2.namePos] hoodie back down to cover [npc2.her] torso.
+			[npc.Name] [npc.verb(pull)] [npc2.namePos] худи обратно вниз, чтобы прикрыть [npc2.her] торс.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] hoodie back down to cover [npc2.her] torso.
+			[npc.Name] грубо [npc.verb(yank)] [npc2.namePos] худи обратно вниз, чтобы прикрыть [npc2.her] торс.
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="PULLS_UP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] [npc.her] hoodie up to just below [npc.her] chin, letting the elastic rim hold it in place.
+			[npc.Name] [npc.verb(pull)] [npc.her] худи вверх, почти до самого [npc.her] подбородка, позволяя эластичному краю удерживать его на месте.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(pull)] [npc2.namePos] hoodie up to just below [npc2.her] chin, letting the elastic rim hold it in place.
+			[npc.Name] [npc.verb(pull)] [npc2.namePos] худи вверх, почти до самого [npc2.her] подбородка, позволяя эластичному краю удерживать его на месте.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] hoodie up to just below [npc2.her] chin, letting the elastic rim hold it in place.
+			[npc.Name] грубо [npc.verb(yank)] [npc2.namePos] худи вверх, почти до самого [npc2.her] подбородка, позволяя эластичному краю удерживать его на месте.
 		]]></otherRough>
 	</displacementText>
 </clothing>

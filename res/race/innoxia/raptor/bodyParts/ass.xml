@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_feathers</coveringType>
 	
@@ -15,10 +15,10 @@
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] an [style.boldRaptor(avian)], [npc.assholeFullDescription].
+		[npc.She] теперь [npc.has] [style.boldRaptor(avian)], [npc.assholeFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] an avian, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] птицеподобное существо, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

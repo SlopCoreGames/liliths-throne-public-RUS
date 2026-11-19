@@ -2,12 +2,12 @@
 <clothing>
 	
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A tag discreetly sewn into the dress's inner lining informs you that it was made by 'Phlarx'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[На внутренней стороне подкладки платья пришит скромный ярлык, сообщающий, что оно сделано брендом «Phlarx».]]></clothingAuthorTag>
 		<value>1500</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[ballgown]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[ballgowns]]></namePlural> 
-		<description><![CDATA[An elegant ballgown, fit for a princess.]]></description> 
+		<name><![CDATA[бальное платье]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[бальные платья]]></namePlural> 
+		<description><![CDATA[Элегантное бальное платье, достойное принцессы.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 
@@ -83,50 +83,50 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] the back of [npc.her] ballgown, letting it fall to [npc.her] feet.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на спине [npc.her] бального платья, позволяя ему соскользнуть к [npc.her] ногам.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] the back of [npc2.namePos] ballgown, letting it fall to [npc2.her] feet.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на спине [npc2.namePos] бального платья, позволяя ему соскользнуть к [npc2.her] ногам.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] the back of [npc2.namePos] ballgown, and [npc.verb(yank)] it down to [npc2.her] feet.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на спине [npc2.namePos] бального платья и [npc.verb(yank)] его вниз, к [npc2.her] ногам.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the ballgown up to [npc.her] chest, then [npc.verb(zip)] it closed.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] бальное платье вверх до [npc.her] груди, а затем [npc.verb(zip)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the ballgown up to [npc2.namePos] chest, then [npc.verb(zip)] it closed.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] бальное платье вверх до [npc2.namePos] груди, а затем [npc.verb(zip)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the ballgown up to [npc2.namePos] chest, then [npc.verb(tug)] the zipper closed.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] бальное платье вверх до [npc2.namePos] груди, а затем [npc.verb(tug)] застегивает молнию.]]>
 		</otherRough>
 	</replacementText>
 
 	
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] ballgown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол бального платья [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] ballgown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вверх подол бального платья [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] up the skirt of [npc2.namePos] ballgown.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] вверх подол бального платья [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc.her] ballgown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вниз подол бального платья [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc2.namePos] ballgown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вниз подол бального платья [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the skirt of [npc2.namePos] ballgown.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] вниз подол бального платья [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 </clothing>

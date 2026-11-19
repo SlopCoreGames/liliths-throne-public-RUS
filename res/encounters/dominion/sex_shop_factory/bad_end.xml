@@ -15,7 +15,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[Angelixx appears]]></name>
+			<name><![CDATA[Появляется Angelixx]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				#IF(pc.isDoll())
 					18

@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[service dress hat]]></name>
+		<name><![CDATA[парадный офицерский головной убор]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[service dress hats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[парадные офицерские головные уборы]]></namePlural> 
 		
-		<description><![CDATA[An officer's service dress hat, complete with leather strap. This style of uniform is worn only by Lyssieth's elite guards.]]></description> 
+		<description><![CDATA[Офицерская парадная фуражка с кожаным ремешком. Подобный стиль униформы носят только элитные гвардейцы Lyssieth.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <tail>
 	<race>charisma_spider</race>
-	<transformationName><![CDATA[furred spider]]></transformationName>
+	<transformationName><![CDATA[волосатый паук]]></transformationName>
 	<coveringType>charisma_spider_chitinFluffy</coveringType>
 	<spinneret>true</spinneret>
 	<defaultGirth>6</defaultGirth>
@@ -12,8 +12,8 @@
 	</tags>
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural> 
-	<name><![CDATA[abdomen]]></name>
-	<namePlural><![CDATA[abdomens]]></namePlural> 
+	<name><![CDATA[брюшко]]></name>
+	<namePlural><![CDATA[брюшки]]></namePlural> 
 	<descriptorsMasculine>
 		<descriptor>spider-like</descriptor>
 		<descriptor>smooth</descriptor>
@@ -22,19 +22,17 @@
 		<descriptor>spider-like</descriptor>
 		<descriptor>smooth</descriptor>
 	</descriptorsFeminine>
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>pointed</descriptor>
 	</tipDescriptorsMasculine>
 	<tipDescriptorsFeminine>
 		<descriptor>pointed</descriptor>
 	</tipDescriptorsFeminine>
-	<transformationDescription><![CDATA[
-		A chitinous, oval-shaped spider's abdomen sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long and over half that in width. [npc.She] then [npc.verb(realise)] that the transformation isn't done, as after a tingling sensation has run up from the tip of [npc.her] new abdomen, [npc.she] [npc.verb(feel)] a deep channel taking form within it. Instinctively, [npc.she] [npc.verb(know)] that this channel is [npc.her] new spinneret, and [npc.she] [npc.verb(feel)] it immediately starting to produce silk.
-		<br/>[npc.Name] now [npc.has] a [style.boldSpider(spider-like abdomen)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Прямо над [npc.her] задницей прорастает хитиновое овальное паучье брюшко, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину и более половины такой ширины. [npc.She] затем [npc.verb(realise)], что трансформация еще не окончена: после того как от кончика [npc.her] нового брюшка вверх пробегает покалывающее ощущение, [npc.she] [npc.verb(feel)], как внутри него начинает формироваться глубокий канал. Инстинктивно [npc.she] [npc.verb(know)], что этот канал — [npc.her] новый паучий орган, и [npc.she] [npc.verb(feel)], как он тут же начинает вырабатывать шелк.
+<br/>[npc.Name] теперь [npc.has] [style.boldSpider(паучье брюшко)], [npc.materialDescriptor] [npc.tailFullDescription(true)].]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull] a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] spider abdomen, complete with a spinneret.
+		Растущее прямо над [npc.her] задницей, [npc.sheHasFull] это #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] spider abdomen, complete with a spinneret.
 	]]></bodyDescription>
 </tail>

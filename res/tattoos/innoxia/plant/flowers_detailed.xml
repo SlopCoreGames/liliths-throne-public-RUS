@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>1000</value> 
 		
-		<name><![CDATA[detailed flowers]]></name>
+		<name><![CDATA[детализированные цветы]]></name>
 		
-		<description><![CDATA[This tattoo depicts a flowing series of intertwined flowers.]]></description> 
-		<bodyOverviewDescription><![CDATA[a floral-themed tattoo, depicting a flowing series of intertwined flowers]]></bodyOverviewDescription> 
+		<description><![CDATA[Эта татуировка представляет собой изящную вязь переплетенных между собой цветов.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка в цветочном стиле, изображающая плавную череду переплетенных цветов]]></bodyOverviewDescription> 
 		
 		<imageName>flowers_detailed.svg</imageName> 
 		

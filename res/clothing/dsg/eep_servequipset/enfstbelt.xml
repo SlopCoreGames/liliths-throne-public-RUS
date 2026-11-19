@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the waist reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На пришитой к поясу бирке гласит: «Официальная форма Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>200</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's stable belt]]></name>
+		<name><![CDATA[Конный пояс Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's stable belts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Конные пояса Enforcer]]></namePlural> 
 
-		<description><![CDATA[A wide, single layer nylon webbing belt.]]></description> 
+		<description><![CDATA[Широкий пояс из однослойной нейлоновой ленты.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -66,25 +66,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the stable belt around [npc.her] waist and [npc.verb(snap)] the buckle together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] конный пояс на талии [npc.her] и [npc.verb(snap)] пряжку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the stable belt around [npc2.namePos] waist and [npc.verb(snap)] the buckle together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] конный пояс на талии [npc2.namePos] и [npc.verb(snap)] пряжку.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the stable belt around [npc2.namePos] waist as much as possible and forcibly [npc.verb(snap)] the buckle together.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] конный пояс на талии [npc2.namePos] максимально туго и с силой [npc.verb(snap)] пряжку.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] stable belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] конный пояс [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc2.namePos] stable belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] конный пояс [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(rip)] the stable belt off [npc2.namePos] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(rip)] конный пояс с талии [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

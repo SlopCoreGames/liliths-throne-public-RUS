@@ -6,15 +6,15 @@
 			[#targetedBody.setArmRows(3)]
 		#ENDIF
 	]]></applyRaceChanges>
-	<name><![CDATA[spider-morph]]></name>
-	<namePlural><![CDATA[spider-morphs]]></namePlural>
+	<name><![CDATA[паукоморф]]></name>
+	<namePlural><![CDATA[паукоморфы]]></namePlural>
 	<nameFeral>
-		<name legConfiguration="ARACHNID"><![CDATA[spider]]></name>
+		<name legConfiguration="ARACHNID"><![CDATA[паук]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="ARACHNID"><![CDATA[spiders]]></name>
+		<name legConfiguration="ARACHNID"><![CDATA[пауки]]></name>
 	</nameFeralPlural>
-	<defaultTransformName><![CDATA[spider]]></defaultTransformName>
+	<defaultTransformName><![CDATA[паук]]></defaultTransformName>
 	<colour>charisma_spider_silk_white</colour>
 	<disposition>SAVAGE</disposition>
 	<racialClass>OTHER</racialClass>

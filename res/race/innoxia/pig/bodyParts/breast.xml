@@ -2,7 +2,7 @@
 <breast>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<coveringType>innoxia_pig_fur</coveringType>
 	
@@ -19,18 +19,18 @@
 	<descriptorsFlat/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldPig(pig-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldPig(pig milk)].
+		У [npc.She] теперь [npc.has] [style.boldPig(свиноподобные)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет вырабатывать [style.boldPig(свиное молоко)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] pig-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] свиноподобно, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldPig(pig-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldPig(pig milk)].
+		У [npc.She] теперь [npc.has] [style.boldPig(свиноподобные)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет вырабатывать [style.boldPig(свиное молоко)].
 	]]></crotchBoobsTransformationDescription>
 	
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] pig-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] свиноподобно, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

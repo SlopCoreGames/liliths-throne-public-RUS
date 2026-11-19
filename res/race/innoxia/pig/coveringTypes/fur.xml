@@ -4,9 +4,9 @@
 	
 	<determiner><![CDATA[a layer of]]></determiner>
 	
-	<name><![CDATA[hair]]></name>
+	<name><![CDATA[волосы]]></name>
 	
-	<namePlural pluralByDefault="false"><![CDATA[hair]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>SHORT</modifier>

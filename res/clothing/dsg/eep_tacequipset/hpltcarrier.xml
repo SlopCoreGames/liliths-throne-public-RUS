@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A tag sewn into the inside of the back reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне спинки пришита бирка: «Официальное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>3000</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[heavy plate carrier]]></name>
+		<name><![CDATA[тяжелый бронежилет]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[heavy plate carriers]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[тяжелые бронежилеты]]></namePlural> 
 
-		<description><![CDATA[A standard plate carrier vest fitted with additional deltoid, groin, neck, and throat protection. It is intended for use in pitched battles rather than quick raids.]]></description>
+		<description><![CDATA[Стандартный бронежилет, оснащенный дополнительной защитой дельт, паха, шеи и горла. Предназначен для участия в полномасштабных сражениях, а не для быстрых рейдов.]]></description>
 
 		<physicalResistance>40</physicalResistance> 
 
@@ -33,7 +33,7 @@
 		<stickers>
 			
 			<category id="branchtape" priority="1"> 
-				<categoryName><![CDATA[Branchtape]]></categoryName>
+				<categoryName><![CDATA[Ветветовая лента]]></categoryName>
 				<sticker id="None" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -49,7 +49,7 @@
 					<stickerName><![CDATA[Enforcer]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one is clearly labeled for Enforcer use.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете явно стоит маркировка для использования Enforcer.</i>]]></descriptionModification> 
 					<imageName>hpltcarrier_st_enftape.svg</imageName> 
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -61,11 +61,11 @@
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL) ||
 							!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_SWORD) ||
 							!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_ORICL))
-							Only Enforcers can use an Enforcer branchtape!
+							Только Enforcer могут использовать ветветовые ленты Enforcer!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText><![CDATA[
-						As an Enforcer, you can freely use Enforcer branchtapes.
+						Как Enforcer, ты можешь свободно использовать ветветовые ленты Enforcer.
 					]]></availabilityText> 
 				</sticker>
 			</category>
@@ -155,49 +155,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] head through the plate carrier's neck hole and [npc.verb(secure)] the cummerbund on either side of [npc.her] torso.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] голову в горловину бронежилета и [npc.verb(secure)] куммербанд по обе стороны от [npc.her] торса.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] head through the plate carrier's neck hole and [npc.verb(secure)] the cummerbund on either side of [npc2.her] torso.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] голову в горловину бронежилета и [npc.verb(secure)] куммербанд по обе стороны от [npc2.her] торса.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] head through the plate carrier's neck hole and hastily [npc.verb(secure)] the cummerbund on either side of [npc2.her] torso.]]>
+			<![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] голову сквозь горловину плитника и поспешно [npc.verb(secure)] куммербанд по обе стороны от [npc2.her] торса.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] un[npc.do] the cummerbund on either side of [npc.her] plate carrier, [npc.verb(withdraw)] [npc.her] [npc.arms] from the deltoid protectors, and [npc.verb(slide)] [npc.her] head through the neck hole.]]>
+			<![CDATA[[npc.Name] рас[npc.do] куммербанд по обе стороны от [npc.her] плитника, [npc.verb(withdraw)] [npc.her] [npc.arms] из наплечников и [npc.verb(slide)] [npc.her] голову сквозь горловину.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] un[npc.do] the cummerbund on either side of [npc2.name] plate carrier, [npc.verb(guide)] [npc.her] [npc.arms] from the deltoid protectors, and [npc.verb(slide)] [npc2.her] head through the neck hole.]]>
+			<![CDATA[[npc.Name] рас[npc.do] куммербанд по обе стороны от [npc2.name] плитника, [npc.verb(guide)] [npc.her] [npc.arms] из наплечников и [npc.verb(slide)] [npc2.her] голову сквозь горловину.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(rip)] open the cummerbund either side of [npc2.namePos] plate carrier, [npc.verb(force)] [npc.her] [npc.arms] from the deltoid protectors, and [npc.verb(yank)] the rest over [npc2.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(rip)] распахивает куммербанд по обе стороны от [npc2.namePos] плитника, [npc.verb(force)] вырывает [npc.her] [npc.arms] из наплечников и [npc.verb(yank)] остальное через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(lower)] the groin protector on [npc.her] heavy plate carrier back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(lower)] защитный фартук на [npc.her] тяжелом плитнике обратно вниз.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(lower)] the groin protector on [npc.her] heavy plate carrier back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(lower)] защитный фартук на [npc.her] тяжелом плитнике обратно вниз.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(flip)] the groin protector on [npc.her] heavy plate carrier back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(flip)] защитный фартук на [npc.her] тяжелом плитнике обратно вниз.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(lift)] the groin protector on [npc.her] heavy plate carrier up.]]>
+			<![CDATA[[npc.Name] [npc.verb(lift)] защитный фартук на [npc.her] тяжелом плитнике вверх.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(lift)] the groin protector on [npc2.namePos] heavy plate carrier up.]]>
+			<![CDATA[[npc.Name] [npc.verb(lift)] защитный фартук на [npc2.namePos] тяжелом плитнике вверх.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(flip)] the groin protector on [npc2.namePos] heavy plate carrier up.]]>
+			<![CDATA[[npc.Name] [npc.verb(flip)] защитный фартук на [npc2.namePos] тяжелом плитнике вверх.]]>
 		</otherRough>
 	</displacementText>
 	

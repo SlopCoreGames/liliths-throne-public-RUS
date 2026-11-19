@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[T-shirt]]></name>
+		<name><![CDATA[Футболка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[T-shirts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Футболки]]></namePlural> 
 		
-		<description><![CDATA[A unisex fabric shirt, named after the T shape of its body and sleeves.]]></description> 
+		<description><![CDATA[Унисекс-футболка из ткани, получившая свое название из-за Т-образной формы корпуса и рукавов.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -77,49 +77,49 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] through the T-shirt's sleeves as [npc.she] [npc.verb(pull)] it down over [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc.her] [npc.arms] сквозь рукава футболки, пока [npc.she] [npc.verb(pull)] ее вниз через [npc.her] голову.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the T-shirt's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава футболки, пока [npc.she] [npc.verb(pull)] ее вниз через [npc2.her] голову.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the T-shirt's sleeves as [npc.she] [npc.verb(pull)] it down over [npc2.her] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава футболки, пока [npc.she] [npc.verb(pull)] ее вниз через [npc2.her] голову.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] T-shirt.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] футболку.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] T-shirt.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] футболку.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] T-shirt.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] футболку.]]>
     </otherRough>
   </displacementText>
 	
   <replacementText type="PULLS_UP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] T-shirt back down, covering [npc.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] футболку обратно вниз, закрывая [npc.her] торс.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] T-shirt back down, covering [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] футболку вниз, прикрывая [npc2.her] торс.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] T-shirt back down, covering [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(yank)] [npc2.namePos] футболку вниз, прикрывая [npc2.her] торс.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="PULLS_UP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] T-shirt up to just below [npc.her] chin, fully exposing [npc.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] футболку вверх, почти до самого [npc.her] подбородка, полностью обнажая [npc.her] торс.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] T-shirt up to just below [npc2.her] chin, fully exposing [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] футболку вверх, почти до самого [npc2.her] подбородка, полностью обнажая [npc2.her] торс.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] T-shirt up to just below [npc2.her] chin, fully exposing [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] футболку вверх, почти до самого [npc2.her] подбородка, полностью обнажая [npc2.her] торс.]]>
     </otherRough>
   </displacementText>
   

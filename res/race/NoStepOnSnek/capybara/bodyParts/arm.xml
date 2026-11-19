@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <arm>
 	<race>NoStepOnSnek_capybara</race>
-	<transformationName><![CDATA[capybara]]></transformationName>
+	<transformationName><![CDATA[капибара]]></transformationName>
 	<coveringType>NoStepOnSnek_capybara_fur</coveringType>
 	<allowsFlight>false</allowsFlight>
 	<tags>
 		<tag>ARM_STANDARD</tag>
 	</tags>
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural>
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural>
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
 		<descriptor>fur-coated</descriptor>
@@ -17,8 +17,8 @@
 		<descriptor>furry</descriptor>
 		<descriptor>fur-coated</descriptor>
 	</descriptorsFeminine>
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>capybara-like</descriptor>
 		<descriptor>furry</descriptor>
@@ -31,8 +31,8 @@
 		<descriptor>furry</descriptor>
 		<descriptor>paw-like</descriptor>
 	</handDescriptorsFeminine>
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>padded</descriptor>
 		<descriptor>capybara-like</descriptor>
@@ -44,10 +44,10 @@
 		<descriptor>capybara-like</descriptor>
 	</fingerDescriptorsFeminine>
 	<transformationDescription><![CDATA[
-		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new fur growing over the backs of [npc.her] hands with just a hint of webbing between [npc.her] fingers. [npc.Her] palms rapidly transform to be [npc.materialDescriptor] tough leathery pads, and at [npc.her] upper-biceps, [npc.her] fur smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.
-		<br/>As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldCapybara(capybara-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+		Всего за мгновение их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую шерсть, растущую на спинках [npc.her] рук, с легкими перепонками между [npc.her] пальцами. [npc.Her] ладони стремительно превращаются в [npc.materialDescriptor] грубые кожистые подушечки, а у [npc.her] верхней части бицепса [npc.her] мех плавно переходит в [npc.skin], покрывающий остальное тело [npc.her].
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются с антропоморфными, [style.boldCapybara(capybara-like arms and hands)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands are formed into anthropomorphic, capybara-like hands, complete tough leathery pads and a hint of webbing connecting the fingers.
+	[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] руки превратились в антропоморфные, капибароподобные кисти с грубыми кожистыми подушечками и легкими перепонками между пальцами.
 	]]></bodyDescription>
 </arm>

@@ -2,7 +2,7 @@
 <breast>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<coveringType>innoxia_deer_fur</coveringType>
 	
@@ -19,18 +19,18 @@
 	<descriptorsFlat/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldGoat(deer-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldGoat(deer milk)].
+		Теперь у [npc.She] [npc.has] [style.boldGoat(оленьи)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldGoat(оленье молоко)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] deer-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast], словно у оленя, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldGoat(deer-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldGoat(deer milk)].
+		Теперь у [npc.She] [npc.has] [style.boldGoat(оленьи)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldGoat(оленье молоко)].
 	]]></crotchBoobsTransformationDescription>
 	
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] deer-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast], словно у оленя, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

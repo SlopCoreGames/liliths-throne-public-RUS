@@ -38,42 +38,42 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[arctic wolf-morph]]></name>
-			<namePlural><![CDATA[arctic wolf-morphs]]></namePlural>
-			<singularMaleName><![CDATA[arctic wolf-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[arctic wolf-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[arctic wolf-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[arctic wolf-girls]]></pluralFemaleName>
+			<name><![CDATA[арктический волк-морф]]></name>
+			<namePlural><![CDATA[арктические волки-морфы]]></namePlural>
+			<singularMaleName><![CDATA[арктический волк-мальчик]]></singularMaleName>
+			<singularFemaleName><![CDATA[арктическая волчица-девочка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[арктические волки-мальчики]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[арктические волчицы-девочки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	<nameAnthroSillyMode>
 		<namesDefault>
-			<name><![CDATA[snow awoo-morph]]></name>
-			<namePlural><![CDATA[snow awoo-morphs]]></namePlural>
-			<singularMaleName><![CDATA[snow awoo-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[snow awoo-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[snow awoo-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[snow awoo-girls]]></pluralFemaleName>
+			<name><![CDATA[снежный аау-морф]]></name>
+			<namePlural><![CDATA[снежные аау-морфы]]></namePlural>
+			<singularMaleName><![CDATA[снежный аау-мальчик]]></singularMaleName>
+			<singularFemaleName><![CDATA[снежная аау-девочка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[снежные вояки]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[снежные вояки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthroSillyMode>
-	<description><![CDATA[An anthropomorphic arctic wolf, known as an 'arctic wolf-morph' when bipedal, and an 'arctic wolftaur' when the lower body is that of a typically-oversized feral arctic wolf.]]></description>
+	<description><![CDATA[Антропоморфный арктический волк, известный как «арктический волк-морф», когда он передвигается на двух ногах, и «арктический волкотавр», когда его нижней частью тела служит типично огромный дикий арктический волк.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[arctic-vargr]]></name>
-			<namePlural><![CDATA[arctic-vargrs]]></namePlural>
-			<singularMaleName><![CDATA[arctic-vargr]]></singularMaleName>
-			<singularFemaleName><![CDATA[arctic-vargr]]></singularFemaleName>
-			<pluralMaleName><![CDATA[arctic-vargrs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[arctic-vargrs]]></pluralFemaleName>
+			<name><![CDATA[арктический варгр]]></name>
+			<namePlural><![CDATA[арктические варгры]]></namePlural>
+			<singularMaleName><![CDATA[арктический варгр]]></singularMaleName>
+			<singularFemaleName><![CDATA[арктический варгр]]></singularFemaleName>
+			<pluralMaleName><![CDATA[арктические варгры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[арктические варгры]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[arctic wolf]]></feralName>
-		<feralNamePlural><![CDATA[arctic-wolves]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[arctic wolf]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[arctic wolf]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[arctic-wolves]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[arctic-wolves]]></feralPluralFemaleName>
+		<feralName><![CDATA[арктический волк]]></feralName>
+		<feralNamePlural><![CDATA[арктические волки]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[арктический волк]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[арктический волк]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[арктические волки]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[арктические волки]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>70</size>
@@ -85,7 +85,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[[npc.NamePos] arctic wolf-like body is both strong and highly resistant to the cold. [npc.She] also often [npc.verb(get)] powerful urges to try and dominate people [npc.she] [npc.verb(meet)].]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] Тело арктического волка одновременно мощное и невероятно устойчивое к холоду. [npc.She] Также у них часто [npc.verb(get)] сильное желание попытаться подчинить себе людей, когда они [npc.she] [npc.verb(meet)].]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="15">MAJOR_PHYSIQUE</attribute>
 		<attribute value="10">RESISTANCE_ICE</attribute>

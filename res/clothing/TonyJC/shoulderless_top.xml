@@ -3,17 +3,17 @@
 <clothing>
 	<coreAtributes>
 	
-		<authorTag><![CDATA[The clothing's tag reads: 'Created by TonyJC, with implementation and editing by NeverLucky']]></authorTag>
+		<authorTag><![CDATA[На бирке написано: «Создано TonyJC, реализация и редактирование — NeverLucky»]]></authorTag>
 
 		<value>250</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[shoulderless sweater]]></name>
+		<name><![CDATA[свитер с открытыми плечами]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[shoulderless sweaters]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[свитеры с открытыми плечами]]></namePlural> 
 
-		<description><![CDATA[A cosy yet seductive sweater that exposes the wearer's shoulders.]]></description> 
+		<description><![CDATA[Уютный, но соблазнительный свитер, открывающий плечи того, кто его носит.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -104,61 +104,61 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on the shoulderless sweater.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] за свитер с открытыми плечами.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the woolly sweater's sleeves as [npc.she] [npc.verb(pull)] the rest down over [npc2.her] torso, the wide collar allowing [npc.her] bare shoulders to lie free.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава шерстяного свитера, пока [npc.she] [npc.verb(pull)] остальную часть вниз по [npc2.her] торсу; широкий ворот позволяет [npc.her] обнаженным плечам оставаться открытыми.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] arms into the woolly sewn sweater's sleeves as [npc.she] <i>roughly</i> [npc.verb(pull)] the rest down over [npc2.her] torso!]]>
+		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава шерстяного свитера, пока [npc.she] <i>грубо</i> [npc.verb(pull)] остальную часть вниз по [npc2.her] торсу!]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] sweater.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] свитер через голову.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the woolly sweater's sleeves as [npc.she] [npc.verb(pull)] the rest down over [npc2.her] torso, the wide collar allowing [npc.her] bare shoulders to lie free.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава шерстяного свитера, пока [npc.she] [npc.verb(pull)] остальную часть вниз по [npc2.her] торсу; широкий ворот позволяет [npc.her] обнаженным плечам оставаться открытыми.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] arms into the woolly sewn sweater's sleeves as [npc.she] <i>roughly</i> [npc.verb(pull)] the rest down over [npc2.her] torso!]]>
+		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава шерстяного свитера, пока [npc.she] <i>грубо</i> [npc.verb(pull)] остальную часть вниз по [npc2.her] торсу!]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] shoulderless sweater back down over [npc.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] свитер с открытыми плечами назад по [npc.her] торсу.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] sweater back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] свитер назад, закрывая [npc2.her] торс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] sweater back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] свитер назад, закрывая [npc2.her] торс.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] bare-shoulder sweater, revealing [npc.her] revealing [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вниз [npc.her] свитер с открытыми плечами, обнажая [npc.her] манящую [npc.her] грудь.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] bare-shoulder sweater, revealing [npc.her] revealing [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вниз [npc.her] свитер с открытыми плечами, обнажая [npc.her] манящую [npc.her] грудь.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] <i>roughly</i> [npc.verb(pull)] [npc2.namePos] sweater downwards, exposing [npc2.her] chest under.]]>
+		  <![CDATA[[npc.Name] <i>грубо</i> [npc.verb(pull)] [npc2.namePos] свитер вниз, обнажая [npc2.her] грудь под ним.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] bare-shoulder sweater back up, concealing [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] свитер с открытыми плечами обратно вверх, скрывая [npc.her] грудь.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] bare-shoulder sweater back up, concealing [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] свитер с открытыми плечами обратно вверх, скрывая [npc.her] грудь.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] <i>firmly</i> [npc.verb(pull)] [npc2.namePos] bare-shoulder sweater back up over [npc2.her] chest.]]>
+		  <![CDATA[[npc.Name] <i>уверенно</i> [npc.verb(pull)] [npc2.namePos] свитер с открытыми плечами обратно вверх, прикрывая [npc2.her] грудь.]]>
 		</otherRough>
 	</replacementText>
 	

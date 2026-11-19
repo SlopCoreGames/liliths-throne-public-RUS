@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic fishnet prostitute (feminine)]]></name>
+		<name><![CDATA[обычная проститутка в сетке (женственный образ)]]></name>
 		
-		<description><![CDATA[Revealing fishnet clothing.]]></description>
+		<description><![CDATA[Откровенная одежда в сеточку.]]></description>
 		
 		<femininity>FEMININE</femininity>
 		

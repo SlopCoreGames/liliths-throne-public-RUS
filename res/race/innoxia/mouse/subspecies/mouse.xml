@@ -27,20 +27,20 @@
 	<basicDescriptionId>MOUSE_BASIC</basicDescriptionId>
 	<advancedDescriptionId>MOUSE_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[mouse-morph]]></name>
-	<namePlural><![CDATA[mouse-morphs]]></namePlural>
-	<singularMaleName><![CDATA[mouse-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[mouse-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[mouse-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[mouse-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic mouse, known as a 'mouse-morph' when bipedal, and a 'mouse-taur' when the lower body is that of a feral mouse.]]></description>
+	<name><![CDATA[мышиный морф]]></name>
+	<namePlural><![CDATA[мышиные морфы]]></namePlural>
+	<singularMaleName><![CDATA[мышопарень]]></singularMaleName>
+	<singularFemaleName><![CDATA[мышодевушка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[мышопарни]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[мышодевушки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфная мышь, известная как «мышеморф», когда передвигается на двух ногах, и «мышетавр», когда её нижняя часть тела представляет собой дикую мышь.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[mouse]]></feralName>
-		<feralNamePlural><![CDATA[mice]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[mouse]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[mouse]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[mice]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[mice]]></feralPluralFemaleName>
+		<feralName><![CDATA[мышь]]></feralName>
+		<feralNamePlural><![CDATA[мыши]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[мышь]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[мышь]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[мыши]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[мыши]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>false</sizeHeight>
 		<size>20</size>
@@ -53,7 +53,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] agility and speed allow [npc.herHim] to effectively strike at an opponent's weak points.
+		[npc.NamePos] ловкость и скорость позволяют [npc.herHim] эффективно бить по уязвимым местам противника.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="0">MAJOR_PHYSIQUE</attribute>

@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>500</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[dragon-branded condom]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[dragon-branded condoms]]></namePlural>
-    <description><![CDATA[A sheath-shaped rubbery barrier device, designed to fit over a penis and prevent any semen from entering the body of a sexual partner. According to the packaging, this brand is <i>'Guaranteed never to break!'</i>]]></description>
+    <name><![CDATA[презерватив с клеймом дракона]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[презервативы с клеймом дракона]]></namePlural>
+    <description><![CDATA[Резиновое изделие в форме чехла, предназначенное для надевания на пенис, чтобы предотвратить попадание спермы в тело полового партнера. Согласно упаковке, этот бренд <i>«Гарантирует, что он никогда не порвется!»</i>]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -60,25 +60,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tear)] open the packet and [npc.verb(roll)] the condom down the length of [npc.her] [npc.penis].]]>
+      <![CDATA[[npc.Name] [npc.verb(tear)] упаковку и [npc.verb(roll)] презерватив по всей длине [npc.her] [npc.penis].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tear)] open the packet and [npc.verb(roll)] the condom down the length of [npc2.namePos] [npc2.penis].]]>
+      <![CDATA[[npc.Name] [npc.verb(tear)] упаковку и [npc.verb(roll)] презерватив по всей длине [npc2.namePos] [npc2.penis].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(tear)] open the packet and [npc.verb(force)] the condom down the length of [npc2.namePos] [npc2.penis].]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(tear)] упаковку и [npc.verb(force)] натягивает презерватив на [npc2.namePos] [npc2.penis].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slip)] off [npc.her] condom and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] презерватив с [npc.her] и [npc.verb(throw)] его прочь.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slip)] off [npc2.namePos] condom and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] презерватив с [npc2.namePos] и [npc.verb(throw)] его прочь.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(pull)] off [npc2.namePos] condom and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(pull)] презерватив с [npc2.namePos] и [npc.verb(throw)] его прочь.]]>
     </otherRough>
   </displacementText>
 

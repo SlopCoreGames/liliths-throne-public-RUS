@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[On the inside of the left thigh panel, faint rubberised ink reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне левой набедренной панели едва заметна надпись резиновыми чернилами: «Служебное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>1000</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's riot belt]]></name>
+		<name><![CDATA[Штурмовой пояс Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's riot belt]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Штурмовой пояс Enforcer]]></namePlural> 
 
-		<description><![CDATA[A heavy duty belt with a codpiece and a set of ballistic fibre thigh panels attached to it. The odd shape of the thigh panels come from the metallic inserts in them.]]></description> 
+		<description><![CDATA[Тяжелый пояс с ластовицей и набором набедренных панелей из баллистического волокна. Необычная форма панелей обусловлена металлическими вставками внутри них.]]></description> 
 
 		<physicalResistance>10</physicalResistance> 
 
@@ -92,49 +92,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(buckle)] the riot belt up around [npc.her] waist and [npc.verb(adjust)] the thigh panels and codpiece until they're comfortable.]]>
+			<![CDATA[[npc.Name] [npc.verb(buckle)] штурмовой пояс на талии [npc.her] и [npc.verb(adjust)] набедренные панели и ластовицу, пока они не сядут удобно.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(buckle)] the riot belt up around [npc2.namePos] waist and [npc.verb(help)] [npc2.her] [npc2.verb(adjust)] the thigh panels and codpiece until they're comfortable.]]>
+			<![CDATA[[npc.Name] [npc.verb(buckle)] штурмовой пояс на талии [npc2.namePos] и [npc.verb(help)] [npc2.her] [npc2.verb(adjust)] набедренные панели и ластовицу, пока они не сядут удобно.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the riot belt around [npc2.namePos] waist and hastily [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] штурмовой пояс на талии [npc2.namePos] и поспешно [npc.verb(tighten)] ремни.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the straps on [npc.her] riot belt before unbuckling it.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] ремни на штурмовом поясе [npc.her], прежде чем расстегнуть его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the straps on [npc2.namePos] riot belt before unbuckling it.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] ремни на штурмовом поясе [npc2.namePos], прежде чем расстегнуть его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] at the straps on [npc2.namePos] riot belt before unbuckling it and tossing them aside.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] ремни на штурмовом поясе [npc2.namePos], прежде чем расстегнуть его и отбросить в сторону.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(lower)] the codpiece on [npc.her] riot belt back down and [npc.verb(tighten)] the adjustment straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(lower)] набедренную пластину на [npc.her] riot belt назад и [npc.verb(tighten)] регулировочные ремни.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(lower)] the codpiece on [npc.her] riot belt back down and [npc.verb(tighten)] the adjustment straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(lower)] набедренную пластину на [npc.her] riot belt назад и [npc.verb(tighten)] регулировочные ремни.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(flip)] the codpiece on [npc.her] riot belt back down and roughly [npc.verb(tighten)] the adjustment straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(flip)] набедренную пластину на [npc.her] riot belt вниз и грубо [npc.verb(tighten)] регулировочные ремни.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the codpiece on [npc.her] riot belt before lifting it up.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] набедренную пластину на [npc.her] riot belt, прежде чем поднять её.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the codpiece on [npc2.namePos] riot belt before lifting it up.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] набедренную пластину на [npc2.namePos] riot belt, прежде чем поднять её.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tug)] at the codpiece on [npc2.namePos] riot belt until it's loose enough before flipping it up.]]>
+			<![CDATA[[npc.Name] [npc.verb(tug)] за набедренную пластину на [npc2.namePos] riot belt, пока она не станет достаточно свободной, чтобы затем подбросить её вверх.]]>
 		</otherRough>
 	</displacementText>
 	

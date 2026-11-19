@@ -7,7 +7,7 @@
 	<metallic>false</metallic>
 	
 	<!-- The name of this colour. -->
-	<name><![CDATA[royal purple]]></name>
+	<name><![CDATA[королевский пурпурный]]></name>
 	
 	<!-- This colour's hex code, which is used when the game is set in the default 'dark' theme. -->
 	<colour>99035a</colour>

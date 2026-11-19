@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[male glyph]]></name>
+		<name><![CDATA[мужской глиф]]></name>
 		
-		<description><![CDATA[This glyph represents the male sex and gender.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a male symbol]]></bodyOverviewDescription> 
+		<description><![CDATA[Этот глиф олицетворяет мужской пол и гендер.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с изображением мужского символа]]></bodyOverviewDescription> 
 		
 		<imageName>gender_male.svg</imageName> 
 		

@@ -2,7 +2,7 @@
 <breast>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<coveringType>innoxia_sheep_wool</coveringType>
 	
@@ -19,18 +19,18 @@
 	<descriptorsFlat/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldSheep(sheep-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldSheep(sheep milk)].
+		У [npc.She] теперь [npc.has] [style.boldSheep(овечьи)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет вырабатывать [style.boldSheep(овечье молоко)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] sheep-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] овечьи, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldSheep(sheep-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldSheep(sheep milk)].
+		У [npc.She] теперь [npc.has] [style.boldSheep(овечьи)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет вырабатывать [style.boldSheep(овечье молоко)].
 	]]></crotchBoobsTransformationDescription>
 	
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] sheep-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] овечьи, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

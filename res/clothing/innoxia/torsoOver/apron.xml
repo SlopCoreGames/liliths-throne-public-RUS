@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>350</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[feminine apron]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[feminine aprons]]></namePlural> 
-		<description><![CDATA[A distinctly feminine apron, which covers the front of the wearer's body in order to protect their clothes and skin from stains and marks. It provides no cover to the wearer's back, leaving their rear completely exposed.]]></description> 
+		<name><![CDATA[женский фартук]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[женские фартуки]]></namePlural> 
+		<description><![CDATA[Изящный женский фартук, который закрывает переднюю часть тела, защищая одежду и кожу от пятен и грязи. Сзади он ничего не прикрывает, оставляя задницу полностью открытой.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_OVER</slot> 
@@ -65,24 +65,24 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] the apron down over [npc.her] head and torso, before securely tying up the band around [npc.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] натягивает фартук на голову и торс [npc.her], после чего крепко завязывает ленту на [npc.her] талии.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] the apron down over [npc2.namePos] head and torso, before securely tying up the band around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] натягивает фартук на голову и торс [npc2.namePos], после чего крепко завязывает ленту на [npc2.her] талии.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the apron down over [npc2.namePos] head and torso, before securely tying up the band around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] натягивает фартук на голову и торс [npc2.namePos], после чего крепко завязывает ленту на [npc2.her] талии.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the apron's band, before pulling it off over [npc.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] ленту фартука, а затем снимает его через голову [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the band on [npc2.namePos] apron, before pulling it off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] ленту на фартуке [npc2.namePos], после чего снимает его через голову [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the band on [npc2.namePos] apron, before roughly pulling it off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] ленту на фартуке [npc2.namePos], после чего грубо стягивает его через голову [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 </clothing>

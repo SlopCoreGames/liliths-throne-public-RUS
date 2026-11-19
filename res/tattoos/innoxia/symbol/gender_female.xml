@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[female glyph]]></name>
+		<name><![CDATA[женский глиф]]></name>
 		
-		<description><![CDATA[This glyph represents the female sex and gender.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a female symbol]]></bodyOverviewDescription> 
+		<description><![CDATA[Этот глиф олицетворяет женский пол и гендер.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с изображением женского символа]]></bodyOverviewDescription> 
 		
 		<imageName>gender_female.svg</imageName> 
 		

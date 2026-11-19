@@ -5,15 +5,15 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[dory]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[dories]]></namePlural>
-		<description><![CDATA[A long, wooden-shafted spear, almost [style.sizes(300)] from tip to butt. The arcane blade on the end has a leaf-like shape, while an arcane, spiked counterpart on the opposite end, known as a 'sauroter', acts as a counter-weight.]]></description> 
+		<name><![CDATA[дори]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[дори]]></namePlural>
+		<description><![CDATA[Длинное копье на деревянном древке, длиной почти в [style.sizes(300)] от острия до конца. Арканное лезвие на конце имеет форму листа, а на противоположном конце расположен арканный шипованный противовес, известный как «сауротер».]]></description> 
 		<attackDescriptor>skewer</attackDescriptor>
 		<attackTooltipDescription>Thrust your dory at [npc2.name] and skewer [npc2.herHim]!</attackTooltipDescription>
 		<rarity>COMMON</rarity> 
 		<weaponSet/> 
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] dory as [npc.she] [npc.verb(ready)] [npc.herself] to use it in combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away [npc.her] dory.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] в руки [npc.her] дори, пока [npc.she] [npc.verb(ready)] [npc.herself], чтобы использовать её в бою.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] на место [npc.her] дори.]]></unequipText>
 		<imageName>dory.svg</imageName> 
 		<imageEquippedName>dory.svg</imageEquippedName>
 		<damage>25</damage> 
@@ -50,28 +50,28 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Thrusting out with [npc.her] dory, [npc.name] [npc.verb(manage)] to stab [npc2.name] in the chest; the ethereal arcane blade passing through [npc2.her] torso to drain [npc2.her] energy!
+		Нанося колющий удар [npc.her] дори, [npc.name] [npc.verb(manage)] пронзить [npc2.name] в грудь; эфирное арканное лезвие проходит сквозь [npc2.her] торс, высасывая [npc2.her] энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] dory, [npc.name] [npc.verb(manage)] to slash through [npc2.her] [npc2.arm] with the ethereal blade and drain [npc2.her] energy!
+		Нанося удар [npc2.name] [npc.her] дори, [npc.name] [npc.verb(manage)] полоснуть эфирным лезвием по [npc2.her] [npc2.arm] и вытянуть [npc2.her] энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick [npc.step] forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] dory, sinking the ethereal blade into [npc2.her] shoulder and causing [npc2.herHim] to lose some energy!
+		Резким [npc.step] вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] дори, вонзая эфирное лезвие в [npc2.her] плечо и заставляя [npc2.herHim] потерять немного энергии!
 		]]></hitText>
 		<criticalHitText><![CDATA[
-		Expertly sidestepping around [npc2.namePos] attempt to block [npc.her] attack, [npc.name] [npc.verb(deal)] a devastating strike with [npc.her] dory!
+		Ловко уклонившись от попытки [npc2.namePos] заблокировать [npc.her] атаку, [npc.name] [npc.verb(deal)] сокрушительный удар [npc.her] дори!
 		]]></criticalHitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Thrusting out with [npc.her] dory, [npc.name] [npc.verb(attempt)] to stab [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		Нанося колющий удар [npc.her] дори, [npc.name] [npc.verb(attempt)] пронзить [npc2.name] в грудь, но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] dory, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc.her] наносит удар [npc2.name] своей [npc.name] дори, и [npc.she] [npc.verb(let)] разочарованный крик, когда [npc.her] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick [npc.step] forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] dory, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Резким [npc.step] вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] дори, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

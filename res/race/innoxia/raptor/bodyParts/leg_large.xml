@@ -2,7 +2,7 @@
 <leg>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[eagle]]></transformationName>
+	<transformationName><![CDATA[орлиные]]></transformationName>
 	
 	<coveringType>innoxia_raptor_feathers</coveringType>
 	
@@ -21,8 +21,8 @@
 		<configuration>AVIAN</configuration>
 	</allowedLegConfigurations>
 	
-	<name><![CDATA[leg]]></name>
-	<namePlural><![CDATA[legs]]></namePlural> 
+	<name><![CDATA[нога]]></name>
+	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>powerful</descriptor>
@@ -55,11 +55,12 @@
 	</toeDescriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		A layer of scaly, bird-like leather quickly grows over [npc.her] legs as they grow larger and shift into a new form. As [npc.her] new leathery skin spreads down to the ends of [npc.her] toes, [npc.her] feet start to undergo an extreme transformation. [npc.Her] toes combine together and re-shape themselves into three forward-facing talons, as a fourth, rear-facing talon branches out behind them. As the transformation ends, this leathery skin sharply transitions into [npc.her] body's [npc.skinColour] [npc.skin] at [npc.her] upper-thigh.
-		<br/>[npc.Name] now [npc.has] anthropomorphic, [style.boldRaptor(eagle-like legs and talons in place of feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+		По мере того как [npc.her] ноги увеличиваются в размерах и обретают новую форму, их быстро покрывает слой чешуйчатой птичьей кожи. Когда [npc.her] новая кожистая оболочка спускается до самых кончиков [npc.her] пальцев, [npc.her] ступни начинают подвергаться экстремальной трансформации. [npc.Her] пальцы срастаются и перестраиваются в три направленных вперед когтя, в то время как четвертый коготь ответвляется сзади. По завершении трансформации эта кожистая кожа резко переходит в [npc.skinColour] [npc.skin] [npc.her] тела на уровне [npc.her] верхней части бедра.
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRaptor(eagle-like legs and talons in place of feet)], которые являются [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] eagle-like legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], which sharply transitions into [npc.her] body's [npc.skinColour] [npc.skin] at [npc.her] upper-thigh. At the end of each of [npc.her] [npc.legs], [npc.she] [npc.has] large, sharp talons.
-	]]></bodyDescription>
+		[npc.Her] орлиные ноги — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], которые резко переходят в [npc.skin] [npc.skinColour] [npc.her] тела на уровне [npc.her] верхней части бедра. На концах каждой из [npc.her] [npc.legs] расположены [npc.she] [npc.has] крупные острые когти.
+	
+]]></bodyDescription>
 </leg>

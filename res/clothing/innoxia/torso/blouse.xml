@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>400</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[blouse]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[blouses]]></namePlural> 
-		<description><![CDATA[A delicate, feminine blouse, made of very fine fabric.]]></description> 
+		<name><![CDATA[блузка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[блузки]]></namePlural> 
+		<description><![CDATA[Изящная женственная блузка, сшитая из очень тонкой ткани.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 
@@ -17,7 +17,7 @@
 		
 		<stickers>
 			<category id="nametag" priority="1">
-				<categoryName><![CDATA[Nametags]]></categoryName>
+				<categoryName><![CDATA[Именные таблички]]></categoryName>
 				<sticker id="none" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -27,20 +27,20 @@
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText showDisabledButton="false"><![CDATA[
-						This cannot be set to none!
+						Это значение не может быть пустым!
 					]]></unavailabilityText>
 					<availabilityText/>
 				</sticker>
 				<sticker id="nyan" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="BASE_PINK">
 					<stickerName><![CDATA[Nyan]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Nyan's]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Nyan]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="true" priority="1"><![CDATA[A delicate, feminine blouse, made of very fine fabric. This particular blouse has a nametag attached to it, declaring its wearer to be 'Nyan, Store Manager'.]]></descriptionModification>
+					<descriptionModification fullReplacement="true" priority="1"><![CDATA[Изящная женственная блузка, сшитая из очень тонкой ткани. К этой конкретной блузке прикреплена именная табличка, гласящая, что её обладательница — «Nyan, управляющая магазином».]]></descriptionModification>
 					<imageName zLayer="1" slot="TORSO_UNDER">blouse_nametag_nyan.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
 					<unavailabilityText showDisabledButton="false"><![CDATA[
-						Only Nyan can attach this nametag!
+						Только Nyan может прикрепить эту табличку!
 					]]></unavailabilityText>
 					<availabilityText/>
 				</sticker>

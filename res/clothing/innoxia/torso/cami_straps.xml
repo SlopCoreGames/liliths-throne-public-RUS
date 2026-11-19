@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>200</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[cami top]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[cami tops]]></namePlural> 
-		<description><![CDATA[A short cami top with straps that loop over the wearer's shoulders. It's short enough that the wearer's stomach is left on display.]]></description> 
+		<name><![CDATA[топ на бретелях]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[топы на бретелях]]></namePlural> 
+		<description><![CDATA[Короткий топ на тонких бретелях, которые проходят через плечи. Он настолько короткий, что оставляет живот открытым.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 

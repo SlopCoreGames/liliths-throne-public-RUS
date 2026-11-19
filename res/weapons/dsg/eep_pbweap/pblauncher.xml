@@ -2,7 +2,7 @@
 <weapon>
 	<coreAttributes>
 		
-		<authorTag><![CDATA[Underneath the scope rails, there is a small engraving that reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[Под планками прицельной планки красуется небольшая гравировка: «Служебное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 	
 		<value>9000</value> 
 		
@@ -12,11 +12,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[pepper grenade launcher]]></name>
+		<name><![CDATA[гранатомёт для перцовых гранат]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[pepper grenade launchers]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[гранатомёты для перцовых гранат]]></namePlural> 
 		
-		<description><![CDATA[Originally designed to disperse pepper oil more efficiently via airburst, it was soon found that the residual heat from the bursting charge turned the aerosolized oil into a small explosive cloud. Despite being a serious design flaw, the Enforcers asked that it not be fixed.]]></description> 
+		<description><![CDATA[Изначально он был разработан для более эффективного распыления перцового масла с помощью воздушного подрыва, но вскоре выяснилось, что остаточное тепло от взрывного заряда превращает аэрозольное масло в небольшое взрывное облако. Несмотря на серьезный конструктивный недостаток, сами Enforcer попросили его не исправлять.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<rarity>EPIC</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] out the grenade launcher, [npc.verb(slap)] in a fresh magazine, [npc.verb(pull)] the charging handle, and [npc.verb(turn)] the safety off.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(достает)] гранатомёт, [npc.verb(вставляет)] свежий магазин, [npc.verb(дергает)] за рукоятку затвора и [npc.verb(снимает)] с предохранителя.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(take)] out the magazine, and [npc.verb(turn)] the safety on, [npc.verb(pull)] the charging handle, and [npc.verb(put)] the grenade launcher away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(вынимает)] магазин, [npc.verb(ставит)] на предохранитель, [npc.verb(дергает)] за рукоятку затвора и [npc.verb(убирает)] гранатомёт.]]></unequipText>
 		
 		<imageName>pblauncher_nomag.svg</imageName> 
 		
@@ -71,9 +71,9 @@
 	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The grenade disperses a fine orange mist near [npc2.name] before engulfing [npc2.her] aura in a fiery cloud.
+		[npc.Name] [npc.verb(целится)] в [npc2.name] через [npc.her] прицел и [npc.verb(нажимает)] на спусковой крючок. Граната распыляет мелкий оранжевый туман рядом с [npc2.name], прежде чем окутать [npc2.her] ауру огненным облаком.
 		#IF game.isSillyModeEnabled()
-			#THEN [npc.speech(That's a spicy meatball!)] [npc.name] [npc.verb(shout)].  
+			#THEN [npc.speech(Ох, какая острая штучка!)] [npc.name] [npc.verb(выкрикивает)].  
 			#ENDIF
 		]]></hitText>
 	</hitDescriptions>
@@ -81,7 +81,7 @@
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The shot goes wide! The grenade explodes well away from [npc2.name].
+		[npc.Name] [npc.verb(целится)] в [npc2.name] через [npc.her] прицел и [npc.verb(нажимает)] на спусковой крючок. Выстрел уходит в сторону! Граната взрывается далеко от [npc2.name].
 		]]></missText>
 	</missDescriptions>
 	

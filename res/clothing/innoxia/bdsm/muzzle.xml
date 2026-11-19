@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>1250</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[muzzle]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[muzzles]]></namePlural> 
-		<description><![CDATA[A wire cage basket muzzle, originally made for dogs and other such muzzled animals to prevent them from biting. Its design is such that it can be strapped around anyone's head, even if they don't have a muzzle.]]></description>
+		<name><![CDATA[намордник]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[намордники]]></namePlural> 
+		<description><![CDATA[Сетчатый намордник из проволочной корзины, изначально созданный для собак и других животных, чтобы те не могли кусаться. Его конструкция позволяет затянуть его на голове любого существа, даже если у него нет естественного мордочки.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -51,25 +51,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the muzzle's cage over [npc.her] mouth, before reaching back and fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] натягивает сетку намордника на рот [npc.her], после чего тянется назад, чтобы застегнуть пряжки и закрепить его на месте.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the muzzle's cage over [npc2.namePos] mouth, before reaching back and fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] натягивает сетку намордника на рот [npc2.namePos], после чего тянется назад, чтобы застегнуть пряжки и закрепить его на месте.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(force)] the muzzle's cage over [npc2.namePos] mouth, before reaching back and tightly fastening the buckles to keep it in place.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(force)] натягивает сетку намордника на рот [npc2.namePos], после чего тянется назад и туго затягивает пряжки, чтобы он сидел плотно.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the muzzle's straps and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] ремни намордника и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the muzzle's straps and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(unfasten)] ремни намордника и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] impatiently [npc.verb(unfasten)] the muzzle's straps and [npc.verb(yank)] it off.]]>
+			<![CDATA[[npc.Name] нетерпеливо [npc.verb(unfasten)] ремни намордника и [npc.verb(yank)] его с лица.]]>
 		</otherRough>
 	</displacementText>
 </clothing>

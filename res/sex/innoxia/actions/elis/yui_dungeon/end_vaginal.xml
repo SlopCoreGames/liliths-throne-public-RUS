@@ -27,20 +27,20 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Stop fucking]]></title>
-	<tooltip><![CDATA[Pull your cock out of [pc.namePos] [pc.pussy+].]]></tooltip>
+	<title><![CDATA[Хватит трахаться]]></title>
+	<tooltip><![CDATA[Вытащи свой член из [pc.namePos] [pc.pussy+].]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
-				Having had enough fun with your [pc.pussyCapacity] pussy, [npc.name] pulls [npc.her] [npc.cock+] out of your well-fucked cunt, before sliding [npc.her] [npc.fingers+] over your [pc.ass+] and teasing, [npc.speechNoEffects(I haven't fucked this hole yet...)]
+				Насладившись твоей [pc.pussyCapacity] киской, [npc.name] вытаскивает [npc.her] [npc.cock+] из твоей изъеденной трахом щели, а затем проводит [npc.her] [npc.fingers+] по твоей [pc.ass+], дразня тебя: [npc.speechNoEffects(Я еще не трахала это отверстие...)]
 				
 				#IF(!pc.isAbleToAccessCoverableArea(CA_ANUS, false) && pc.getClothingInSlot(IS_ANUS)!=null)
 					</p>
 					<p>
 						#IF(pc.getClothingInSlot(IS_ANUS).getClothingType()==CLOTHING_norin_anal_beads_anal_beads)
-							Grabbing hold of the end of your anal beads, [npc.name] roughly yanks the first sphere out of your [pc.asshole+]. You can't help but let out [pc.a_moan+] as you feel this first bead slip out of your ass, and continue to [pc.moan] like a slut as [npc.she] pulls out the other five. With your ass now ready to take [npc.namePos] [npc.cock+], you lewdly squeal as [npc.she] rubs [npc.her] thumb over your inviting orifice...
+							Схватившись за конец твоих анальных бусин, [npc.name] грубо вырывает первую сферу из твоей [pc.asshole+]. Ты невольно издаешь [pc.a_moan+], чувствуя, как первая бусина выскальзывает из твоей задницы, и продолжаешь [pc.moan] как шлюха, пока [npc.she] вытаскивает остальные пять. Теперь, когда твоя задница готова принять [npc.namePos] [npc.cock+], ты похотливо взвизгиваешь, когда [npc.she] проводит [npc.her] большим пальцем по твоему манящему отверстию...
 						#ELSE
-							Grabbing hold of your buttplug, [npc.name] roughly yanks it out of your [pc.asshole+], before eagerly running one of [npc.her] thumbs over your inviting orifice...
+							Схватив твою пробку, [npc.name] грубо вырывает её из твоей [pc.asshole+], а затем с нетерпением проводит одним из [npc.her] больших пальцев по твоему манящему отверстию...
 						#ENDIF
 				#ENDIF
 			]]></text>

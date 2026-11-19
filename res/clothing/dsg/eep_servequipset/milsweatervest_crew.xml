@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the side seam reads "MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве пришита маленькая бирка: «Изготовлено DSG Threadworks».]]></authorTag>
 
 		<value>300</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[commando sweater vest]]></name>
+		<name><![CDATA[жилетка коммандо]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Commando sweater vests]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[жилетки коммандо]]></namePlural> 
 
-		<description><![CDATA[A heavily ribbed, crew-neck sweater vest with hard-wearing fabric panels on the shoulders. Fortunately for you, someone has lovingly de-itched the wool.]]></description> 
+		<description><![CDATA[Плотная вязаная жилетка с круглым вырезом и износостойкими вставками на плечах. К твоему счастью, кто-то с любовью очистил шерсть от катышков.]]></description> 
 
 		<physicalResistance>1</physicalResistance> 
 
@@ -91,49 +91,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on the commando sweater vest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] за жилетку коммандо.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the commando sweater vest's sleeves as [npc.she] [npc.verb(pull)] the rest down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава жилетки коммандо, пока [npc.she] [npc.verb(pull)] остальную часть вниз, на [npc2.her] туловище.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] arms into the commando sweater vest's sleeves as [npc.she] roughly [npc.verb(pull)] the rest down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава жилетки коммандо, пока [npc.she] грубо [npc.verb(pull)] остальную часть вниз, на [npc2.her] туловище.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] commando sweater vest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] жилетку коммандо.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] commando sweater vest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] жилетку коммандо.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] commando sweater vest and roughly pull it off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] хватает [npc2.namePos] за жилетку коммандо и грубо стягивает её через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] commando sweater vest back down over [npc.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] жилетку коммандо обратно вниз, на [npc.her] туловище.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] commando sweater vest back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] натягивает жилетку коммандо обратно на [npc2.her] торс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] commando sweater vest back down over [npc2.her] torso.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] коммандосский жилет назад, на [npc2.her] торс.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] commando sweater vest up to just below [npc.her] chin.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] задирает жилетку из коммандос почти до самого [npc.her] подбородка.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] commando sweater vest up to just below [npc2.her] chin.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] задирает жилетку из коммандос почти до самого [npc2.her] подбородка.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] commando sweater vest up to just below [npc2.her] chin.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] жилетку-свитер коммандо почти до самого подбородка [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	

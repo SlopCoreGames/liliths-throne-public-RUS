@@ -4,10 +4,10 @@
 
 	<coreAttributes>
 		<!-- Names are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable (lowercase) name.-->
-		<name><![CDATA[ORICL dress uniform]]></name>
+		<name><![CDATA[Парадная форма ORICL]]></name>
 		
 		<!-- Again, descriptions are only used for debugging purposes. Still, in case the name is used elsewhere later on, it's best to give your outfit a suitable description.-->
-		<description><![CDATA[Enforcer dress uniform with ORICL colors.]]></description>
+		<description><![CDATA[Парадная форма Enforcer в цветах ORICL.]]></description>
 		
 		<!-- The femininity needed for someone to generate this outfit. MASCULINE, ANDROGYNOUS, and FEMININE are the three acceptable values. ANDROGYNOUS means anyone can use this outfit, while the other two are self-explanatory.-->
 		<femininity>ANDROGYNOUS</femininity>

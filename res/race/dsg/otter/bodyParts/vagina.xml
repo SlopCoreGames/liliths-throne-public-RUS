@@ -10,7 +10,7 @@
 	<race>dsg_otter</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[otter]]></transformationName>
+	<transformationName><![CDATA[выдра]]></transformationName>
 	
 	<!-- The id of the material covering this vagina.
 	This should always be left as 'VAGINA'.
@@ -27,16 +27,16 @@
 	One of the defined names will be chosen at random every time the name is displayed to the player. 
 	Names ending in '-' are handled in a special manner by appending a random, generic vagina name to the end of it before returning, so for this example of 'hyena-', the names 'hyena-pussy', 'hyena-twat', etc. will be returned. -->
 	<names>
-		<name><![CDATA[otter-]]></name>
+		<name><![CDATA[выдра-]]></name>
 	</names>
 	<namesPlural>
-		<name><![CDATA[otter-]]></name>
+		<name><![CDATA[выдра-]]></name>
 	</namesPlural>
 	
 	<!-- The descriptors which should be drawn upon when describing a character's vagina of this type.
 	Additional vagina descriptors are generated based on the vagina's properties (such as its modifiers, lubrication, capacity, etc.), so these descriptors should only be universal and ideally related to the race itself. -->
 	<descriptors>
-		<descriptor><![CDATA[hot]]></descriptor>
+		<descriptor><![CDATA[горячая]]></descriptor>
 	</descriptors>
 	
 	<!-- The orifice modifiers which this vagina has when first created (such as when a new hyena-morph is spawned).
@@ -46,11 +46,11 @@
 	<!-- The description which is shown when a character transforms to obtain this vagina type.
 	This description immediately follows a brief description of the vagina type beginning to transform. -->
 	<transformationDescription><![CDATA[
-			[npc.She] [npc.verb(let)] out a squeal of excitement as a wave of pleasure runs up through [npc.her] groin, which increases in intensity as [npc.she] [npc.verb(feel)] [npc.her] slit uncontrollably shifting and contracting. Within moments, the feeling fades away, and [npc.she] [npc.verb(discover)] that [npc.her] pussy [npc.has] reformed into a distinctly otter-like form.
+			[npc.She] [npc.verb(let)] издать восторженный визг, когда волна удовольствия проносится сквозь пах [npc.her], становясь всё интенсивнее, пока [npc.she] [npc.verb(feel)], как [npc.her] щель непроизвольно дергается и сжимается. Спустя мгновение ощущение утихает, и [npc.she] [npc.verb(discover)], что [npc.her] киска [npc.has] приняла отчетливый облик выдры.
 		</p>
 		<p>
-			Just as [npc.she] [npc.verb(start)] to think that the transformation has come to an end, [npc.her] pussy involuntarily clenches down, and a desperate squeal escapes from between [npc.her] [npc.lips+] as a warm, tingling feeling spreads up through [npc.her] lower abdomen. Images of throbbing otter-cocks slamming deep into [npc.her] new pussy flash before [npc.her] eyes, and [npc.her] squeal turns into a satisfied moan as [npc.she] [npc.verb(imagine)] them pumping their potent seed deep into [npc.her] new womb. Just as quickly as they came, the images fade from [npc.her] mind, and as one last wave of tingling pleasure washes through [npc.her] body, [npc.she] [npc.verb(feel)] [npc.her] female reproductive organs finishing their transformation.
-			<br/>[npc.Name] now [npc.has] a [style.boldOtter(otter vagina)], with [npc.pussyColourPrimary(true)] labia and [npc.pussyColourSecondary(true)] internal walls.
+			Стоит [npc.she] [npc.verb(start)] подумать, что трансформация подошла к концу, как [npc.her] киска непроизвольно сжимается, и отрывистый визг срывается с [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами вспыхивают образы пульсирующих выдриных членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг переходит в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)], как они впрыскивают свое мощное семя глубоко в [npc.her] новую матку. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)], как [npc.her] женские репродуктивные органы завершают свое превращение.
+			<br/>[npc.Name] теперь [npc.has] [style.boldOtter(otter vagina)] с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.
 	]]></transformationDescription>
 	
 	<!-- How this torso is described in a character's description page.

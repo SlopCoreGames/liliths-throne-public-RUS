@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>300</value> <!--10 flames = £1 ~ $1.5-->
 		<determiner><![CDATA[a string of]]></determiner>
-		<name><![CDATA[anal beads]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[anal beads]]></namePlural>
-		<description><![CDATA[A string of six large balls of arcane-cured silicone, which are meant to be inserted into the anus.]]></description>
+		<name><![CDATA[анальные бусы]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[анальные бусы]]></namePlural>
+		<description><![CDATA[Нить из шести крупных шариков из силикона, закаленного Арканой, предназначенная для введения в анус.]]></description>
 		
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
@@ -58,25 +58,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(push)] the anal beads into [npc.her] [npc.ass+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] анальные бусы в [npc.her] [npc.ass+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the anal beads into [npc2.namePos] [npc2.ass+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] анальные бусы в [npc2.namePos] [npc2.ass+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(hold)] [npc2.name] still as [npc.she] roughly [npc.verb(force)] the anal beads into [npc2.her] [npc2.ass+].]]>
+			<![CDATA[[npc.Name] [npc.verb(hold)] [npc2.name] неподвижно, пока [npc.she] грубо [npc.verb(force)] вгоняет анальные бусы в [npc2.her] [npc2.ass+].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] anal beads out of [npc.her] [npc.ass+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] анальные бусы из [npc.her] [npc.ass+] [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] anal beads out of [npc2.her] [npc2.ass+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] анальные бусы из [npc2.her] [npc2.ass+] [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.namePos] anal beads and [npc.verb(yank)] them out of [npc2.her] [npc2.ass+].]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(grab)] анальные бусы [npc2.namePos] и [npc.verb(yank)] вырывает их из [npc2.her] [npc2.ass+].]]>
 		</otherRough>
 	</displacementText>
 	

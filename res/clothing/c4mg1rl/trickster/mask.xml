@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A marking discreetly engraved into the mask's underside informs you that it was made by 'C4MG1RL'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Едва заметная гравировка на внутренней стороне маски сообщает тебе, что она сделана мастером 'C4MG1RL'.]]></clothingAuthorTag>
 		<value>6000</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Trickster's mask]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[Trickster's mask]]></namePlural>
-		<description><![CDATA[A fox-like mask, the design of which is based on the mysterious and mischievous youko. Perfect for concealing one's identity while getting up to all kinds of schemes.]]></description>
+		<name><![CDATA[Маска трикстера]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[Маска трикстера]]></namePlural>
+		<description><![CDATA[Лисья маска, чей облик вдохновлен таинственными и озорными ёкаями. Идеально подходит для того, чтобы скрывать свою личность, замышляя очередную шалость.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>
@@ -49,25 +49,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the mask and secure the straps behind [npc.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(надеть)] маску и закрепить ремешки на затылке [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the mask onto [npc2.namePos] face, then secure the straps behind [npc2.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(натянуть)] маску на лицо [npc2.namePos], а затем закрепить ремешки на затылке [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] the mask onto [npc2.namePos] [npc2.face], then secure the straps behind [npc.her] head.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(насадить)] маску на [npc2.namePos] [npc2.face], а затем закрепить ремешки на затылке [npc.her].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the straps behind [npc.her] head, then [npc.verb(take)] off [npc.her] mask.]]>
+			<![CDATA[[npc.Name] [npc.verb(расстегнуть)] ремешки на затылке [npc.her], а затем [npc.verb(снять)] маску с [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unfasten)] the straps behind [npc2.her] head, then [npc.verb(take)] off [npc2.namePos] mask.]]>
+			<![CDATA[[npc.Name] [npc.verb(расстегнуть)] ремешки на затылке [npc2.her], а затем [npc.verb(снять)] маску с [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] mask and roughly [npc.verb(pull)] it off [npc2.namePos] [npc2.face].]]>
+			<![CDATA[[npc.Name] [npc.verb(схватить)] маску [npc2.namePos] и грубо [npc.verb(сорвать)] её с [npc2.namePos] [npc2.face].]]>
 		</otherRough>
 	</displacementText>
   

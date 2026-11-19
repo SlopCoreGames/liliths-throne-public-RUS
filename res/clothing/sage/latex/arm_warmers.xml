@@ -4,9 +4,9 @@
 	<coreAtributes>
 		<value>1000</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[latex arm warmers]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[latex arm warmers]]></namePlural>
-		<description><![CDATA[A pair of latex arm warmers that hooks around the middle finger.]]></description>
+		<name><![CDATA[латексные митенки]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[латексные митенки]]></namePlural>
+		<description><![CDATA[Пара латексных митенок, которые крепятся на средний палец.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -60,46 +60,46 @@
 
 	<replacementText slot="HAND" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slip)] the arm warmers over [npc.her] forearms and [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] митенки на предплечья [npc.her] и [npc.verb(tighten)] ремешки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slip)] the arm warmers over [npc2.namePos] forearms and [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] митенки на предплечья [npc2.namePos] и [npc.verb(tighten)] ремешки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.namePos] forearms through the arm warmers and hastily [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(stuff)] предплечья [npc2.namePos] в митенки и поспешно [npc.verb(tighten)] ремешки.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="HAND" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the straps on [npc.her] arm warmers and [npc.verb(slip)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] ремешки на митенках [npc.her] и [npc.verb(slip)] их с рук.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the straps on [npc2.namePos] arm warmers and [npc.verb(slip)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] ремешки на митенках [npc2.namePos] и [npc.verb(slip)] их с рук.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] at the straps on [npc2.namePos] arm warmers until they're loose enough and [npc.verb(toss)] them aside.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] за ремешки на митенках [npc2.namePos], пока они не ослабнут, а затем [npc.verb(toss)] их в сторону.]]>
 		</otherRough>
 	</displacementText>
 	<replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slip)] the arm warmers over [npc.her] forearms and [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] митенки на предплечья [npc.her] и [npc.verb(tighten)] ремешки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slip)] the arm warmers over [npc2.namePos] forearms and [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] митенки на предплечья [npc2.namePos] и [npc.verb(tighten)] ремешки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(stuff)] [npc2.namePos] forearms through the arm warmers and hastily [npc.verb(tighten)] the straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(stuff)] предплечья [npc2.namePos] в митенки и поспешно [npc.verb(tighten)] ремешки.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the straps on [npc.her] arm warmers and [npc.verb(slip)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] ремешки на митенках [npc.her] и [npc.verb(slip)] их с рук.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the straps on [npc2.namePos] arm warmers and [npc.verb(slip)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] ремешки на митенках [npc2.namePos] и [npc.verb(slip)] их с рук.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] at the straps on [npc2.namePos] arm warmers until they're loose enough and [npc.verb(toss)] them aside.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] за ремешки на митенках [npc2.namePos], пока они не ослабнут, а затем [npc.verb(toss)] их в сторону.]]>
 		</otherRough>
   </displacementText>
 	

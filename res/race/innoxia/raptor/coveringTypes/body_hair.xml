@@ -3,8 +3,8 @@
 	<category>BODY_HAIR</category>
 	
 	<determiner><![CDATA[a patch of]]></determiner>
-	<name><![CDATA[feather]]></name>
-	<namePlural pluralByDefault="true"><![CDATA[feathers]]></namePlural> 
+	<name><![CDATA[перо]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[перья]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>FLUFFY</modifier>

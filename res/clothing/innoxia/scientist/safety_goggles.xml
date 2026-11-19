@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[safety goggles]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[safety goggles]]></namePlural>
-		<description><![CDATA[A form of protective eyewear which fully enclose and shield the wearer's eyes from particulates and chemicals.]]></description>
+		<name><![CDATA[защитные очки]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[защитные очки]]></namePlural>
+		<description><![CDATA[Вид защитных очков, которые полностью закрывают и оберегают глаза владельца от мелких частиц и химикатов.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>
@@ -61,49 +61,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the safety goggles.]]>
+			<![CDATA[[npc.Name] [npc.verb(надевает)] защитные очки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(strap)] the safety goggles into position so that they're shielding [npc2.namePos] [npc2.eyes].]]>
+			<![CDATA[[npc.Name] [npc.verb(затягивает)] ремешки защитных очков, чтобы они надежно защищали [npc2.namePos] [npc2.eyes].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(strap)] the safety goggles into position so that they're shielding [npc2.namePos] [npc2.eyes].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(затягивает)] ремешки защитных очков, чтобы они защищали [npc2.namePos] [npc2.eyes].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] safety goggles.]]>
+			<![CDATA[[npc.Name] [npc.verb(снимает)] [npc.her] защитные очки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] safety goggles.]]>
+			<![CDATA[[npc.Name] [npc.verb(снимает)] [npc2.namePos] защитные очки.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] safety goggles and roughly [npc.verb(pull)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(хватает)] [npc2.namePos] защитные очки и грубо [npc.verb(срывает)] их.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] safety goggles back down to shield [npc.her] [npc.eyes].]]>
+		  <![CDATA[[npc.Name] [npc.verb(сдвигает)] [npc.her] защитные очки ниже, чтобы защитить [npc.her] [npc.eyes].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] safety goggles back down to shield [npc2.her] [npc2.eyes].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] защитные очки обратно, чтобы прикрыть [npc2.her] [npc2.eyes].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] safety goggles back down to shield [npc2.her] [npc2.eyes].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] защитные очки обратно, чтобы прикрыть [npc2.her] [npc2.eyes].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] safety goggles up onto [npc.her] forehead.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] защитные очки на [npc.her] лоб.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] safety goggles up onto [npc2.her] forehead.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] защитные очки на [npc2.her] лоб.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(grab)] hold [npc2.namePos] safety goggles and roughly [npc.verb(pull)] them up onto [npc2.her] forehead.]]>
+		  <![CDATA[[npc.Name] [npc.verb(grab)] хватает [npc2.namePos] защитные очки и грубо [npc.verb(pull)] их на [npc2.her] лоб.]]>
 		</otherRough>
 	</displacementText>
   

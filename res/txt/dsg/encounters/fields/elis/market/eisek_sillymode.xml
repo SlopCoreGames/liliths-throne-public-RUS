@@ -5,7 +5,7 @@
 	
 	<htmlContent tag="ENCOUNTER_START"><![CDATA[
 	<p>
-		Approaching Eisek's stall once more, you see... a small mob gathered around it. Exasperated that some of the townsfolk still do not understand, you quicken your pace. Yet as you get closer, you see that this crowd is not like the previous one. Diverse in species and ranging from scrawny to chubby, they are nonetheless uniform in their casual manner of dress and poor hygiene. You can't quite discern what they are talking about, but they don't seem to be an immediate threat. Perhaps this isn't the best time?
+		Снова подходя к лавке Эйзека, ты видишь... небольшую толпу, собравшуюся вокруг неё. Раздражённая тем, что некоторые горожане до сих пор ничего не понимают, ты ускоряешь шаг. Однако по мере приближения ты замечаешь, что эта толпа не похожа на предыдущую. Разношерстная — от костлявых до пухлых, — она, тем не менее, едина в своей небрежной одежде и плохой гигиене. Ты не можешь разобрать, о чём они говорят, но они не кажутся немедленной угрозой. Возможно, сейчас не самый подходящий момент?
 	</p>
 	]]>
 	</htmlContent>
@@ -14,7 +14,7 @@
 	
 	<htmlContent tag="ENCOUNTER_BACK_OFF"><![CDATA[
 	<p>
-		You decide that Eisek can handle this on his own for now and step away. As you do, you see a bright blue flash between the press of bodies around the stall. The crowd bursts into... cheering? And then reverently haul away several vaguely bipedal lumps of ice like some sort of holy relics. When you turn back towards the [eisek.race], he only shrugs and states, [eisek.speech(They asked me for it. Some sort of rite of passage. I obliged... There are some very strange customs in this town.)]
+		Ты решаешь, что Эйзеку и самому пока справиться по силам, и отходишь в сторону. В этот момент среди теснящихся у лавки тел проносится яркая синяя вспышка. Толпа взрывается... ликованием? А затем они с благоговением уносят несколько смутно двуногих ледяных комков, словно какие-то священные реликвии. Когда ты поворачиваешься к [eisek.race], он лишь пожимает плечами и произносит: [eisek.speech(Они сами попросили. Что-то вроде обряда посвящения. Я не стал отказывать... В этом городе полно странных обычаев.)]
 	</p>
 	]]>
 	</htmlContent>
@@ -23,15 +23,15 @@
 	<htmlContent tag="ENCOUNTER_END"><![CDATA[
 	#IF(eisek.getAffection(pc) >= 15)
 		<p>
-			With the odd group having now departed, a smile grows across Eisek's face as he asks, [eisek.speech(So, what can I do for my favourite customer?)]
+		Когда странная компания наконец расходится, на лице Эйзека расплывается улыбка, и он спрашивает: [eisek.speech(Итак, что я могу сделать для своего любимого покупателя?)]
 		</p>
 	#ELSEIF(eisek.getAffection(pc) >= 30)
 		<p>
-			With the odd group having now departed, a broad smile grows across Eisek's face, and you catch a glimpse of his tail twitching involuntarily as he asks, [eisek.speech(What can I do for my favourite customer? The day is brighter already.)]
+		Когда странная компания наконец расходится, на лице Эйзека расплывается широкая улыбка, и ты замечаешь, как его хвост непроизвольно дёргается, когда он спрашивает: [eisek.speech(Что я могу сделать для своего любимого покупателя? День сразу стал чуточку светлее.)]
 		</p>
 	#ELSE
 		<p>
-			With the odd group having now departed, a faint smile creeps across Eisek's face as he asks, [eisek.speech(So, what can I do for you?)]
+		Когда странная компания наконец расходится, на лице Эйзека появляется слабая улыбка, и он спрашивает: [eisek.speech(Ну, так что я могу для тебя сделать?)]
 		</p>
 	#ENDIF
 	]]>
@@ -41,51 +41,51 @@
 	
 	<htmlContent tag="ENCOUNTER_APPROACH"><![CDATA[
 	<p>
-		Even though the crowd isn't openly hostile, you still dread seeing what kind of trouble has found the draconic merchant this time as you work your way through the haze of body odour. When you break through, you see what appears to be the ringleader of this particular mob: a scrawny human, hooded and cloaked. Certainly, he's the loudest of the bunch.
+		Хотя толпа и не проявляет открытой враждебности, пробираясь сквозь густой запах пота, ты всё равно с тревогой гадаешь, в какую передрягу на этот раз влип драконий торговец. Вырвавшись вперед, ты видишь того, кто, кажется, заправляет этой шайкой: тощего человека в капюшоне и плаще. Определенно, он самый громкий из всей компании.
 	</p>
 	<p>
-		[test.speechMasculine(I just can't believe that a real dragon has come to this stinking town! What's it like, raining fire and death from above? How many villages have you razed?)] he asks, almost giddy with excitement. These are not accusations, you realise. This crowd has some kind of unhealthy obsession with dragons.
+		[test.speechMasculine(Просто поверить не могу, что настоящий дракон прилетел в этот вонючий город! Каково это — извергать огонь и смерть с небес? Сколько деревень ты уже спалил?)] — спрашивает он, едва не светясь от восторга. Ты понимаешь, что это вовсе не обвинения. У этой толпы какая-то нездоровая одержимость драконами.
 	</p>
 	<p>
-		[eisek.speech(I have razed no villages,)] Eisek replies flatly.
+		[eisek.speech(Я не сжигал никаких деревень,)] — бесстрастно отвечает Эйзек.
 	</p>
 	<p>
-		[test.speechMasculine(You mean you've never razed a village? How did you get your hoard of treasure, then? You've got one of those, right?)]
+		[test.speechMasculine(В смысле — никогда не сжигал деревни? Тогда как ты собрал свою сокровищницу? Она же у тебя есть, верно?)]
 	</p>
 	<p>
-		[eisek.speech(I do not.)]
+		[eisek.speech(Нет.)]
 	</p>
 	<p>
-		[test.speechMasculine(So... you really do just farm?)]
+		[test.speechMasculine(Так... ты что, реально просто фермерствуешь?)]
 	</p>
 	<p>
-		[eisek.speech(Yes.)] Hearing this, the ringleader's demeanour changes instantly.
+		[eisek.speech(Да.)] Услышав это, заводила мгновенно меняется в лице.
 	</p>
 	<p>
-		[test.speechMasculine(Ugh, even the dragons here are boring! What kind of dragon are you anyhow? You should be out there taking what you want but all you do is farm like some kind of... vegan cuck!)] To this insult, the [eisek.race]'s only response is a dismissive snort. Unsatisfied, the ringleader continues, [test.speechMasculine(Oh, I know! You just need some practice. I need a good final boss for my next LARP session! Haven't you ever wanted to own a dungeon?)]
+		[test.speechMasculine(Тьфу, даже драконы здесь скучные! Ты вообще что за дракон такой? Тебе бы там, во внешнем мире, всё брать, что хочешь, а ты тут копаешься в грядках, как какой-то... веганский куколд!)] В ответ на это оскорбление [eisek.race] лишь пренебрежительно фыркает. Недовольный заводила продолжает: [test.speechMasculine(О, я понял! Тебе просто нужна практика. Мне нужен достойный финальный босс для моей следующей ролевой игры! Ты что, никогда не хотел владеть собственным подземельем?)]
 	</p>
 	<p>	
-		His sentiments are echoed by some members of the crowd, while others make general noises of assent. To this Eisek gives an ice cold, [eisek.speech(No.)]
+		Некоторые из толпы поддакивают ему, другие просто издают одобрительный гул. На это Эйсек отвечает ледяным [eisek.speech(Нет.)]
 	</p>
 	<p>
-		Out of patience, the ringleader suddenly tries to push the stall over, to what end you're not sure. To goad him into accepting? Countering this, Eisek extends a single digit and presses down on the table. The ringleader strains for some time before giving up with a huff. [test.speechMasculine(Fine! Nobody wants a lame dragon as a final boss anyhow. Let's get out of here,)] he exclaims, turning around to leave.
+		Терпение заводилы лопается, и он внезапно пытается опрокинуть прилавок — зачем, ты и сам не понимаешь. Чтобы спровоцировать его на согласие? Чтобы противостоять этому, Эйсек вытягивает один палец и надавливает на стол. Заводила какое-то время изо всех сил давит на него, но в итоге сдается с тяжелым вздохом. [test.speechMasculine(Ладно! Всё равно никому не нужен дохлый дракон в роли финального босса. Пошли отсюда,)] — восклицает он, разворачиваясь, чтобы уйти.
 	</p>
 	<p>
-		You turn towards Eisek as the crowd shuffles away. The [eisek.race] only scratches his chin. [eisek.speech(Hmm,)] he rumbles, [eisek.speech(there are some very strange people in this town.)]
+		Ты поворачиваешься к Эйсеку, пока толпа расходится. [eisek.race] лишь чешет подбородок. [eisek.speech(Хм,)] — ворчит он, [eisek.speech(в этом городе водятся очень странные люди.)]
 	</p>
 	<p>
-		For some reason, you don't share his sense of ease.
+		Почему-то тебе не разделяет его спокойствия.
 		#IF(pc.getRace().equals(RACE_dsg_dragon))
-			 And you're a bit
+			 И ты немного
 			#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SELFISH))
-				 annoyed
+				раздражен
 			#ELSE
-				 confused
+				сбит с толку
 			#ENDIF
-			 that they didn't seem to notice <i>your</i> draconic visage at all.
+			тем, что они, кажется, совсем не заметили <i>твой</i> драконий облик.
 		#ENDIF
-		 The dungeon that the ringleader mentioned might warrant a visit, just in case. They seemed local, it shouldn't be too hard to find them.
-	</p>
+Подземелье, о котором упоминал главарь, стоит посетить — на всякий случай. Похоже, они где-то здесь, неподалеку, так что найти их не должно быть большой проблемой.
+</p>
 	]]>
 	</htmlContent>
 	

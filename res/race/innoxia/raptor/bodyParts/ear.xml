@@ -2,14 +2,14 @@
 <ear>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_feathers</coveringType>
 	
 	<tags/>
 	
-	<name><![CDATA[ear]]></name>
-	<namePlural><![CDATA[ears]]></namePlural>
+	<name><![CDATA[ухо]]></name>
+	<namePlural><![CDATA[уши]]></namePlural>
 	
 	<descriptorsMasculine>
 		<descriptor>feathered</descriptor>
@@ -25,20 +25,19 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		They quickly shrink down into little nubs as most of the external cartilage shifts down into the sides of [npc.her] head.
+		Они быстро уменьшаются, превращаясь в крошечные бугорки, так как большая часть внешнего хряща смещается в бока головы [npc.her].
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-			 A layer of [npc.earFullDescriptionColour] grow to cover [npc.her] now-fully-internal ears,
+			 Слой [npc.earFullDescriptionColour] разрастается, чтобы покрыть теперь уже полностью скрытые внутри уши [npc.her],
 		#ELSE
-			 Just like the rest of [npc.her] body, [npc.her] now-fully-internal ears are made out of [npc.earFullDescription],
-		#ENDIF
-		 and as the transformation finishes, [npc.sheIs] left with a pair of feathered raptor ears.
-		<br/>[npc.Name] now [npc.has] [style.boldRaptor(internal, feather-covered raptor ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+Как и всё тело [npc.her], [npc.her] теперь полностью внутренние уши сделаны из [npc.earFullDescription],		#ENDIF
+		 и по завершении трансформации у [npc.sheIs] остается пара пернатых ушей раптора.
+		<br/>[npc.Name] теперь [npc.has] [style.boldRaptor(internal, feather-covered raptor ears)], которые являются [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] ears are an internal part of [npc.her] head, and are covered by a fan of [npc.earFullDescription(true)].
+		Уши [npc.Her] — это внутренняя часть головы [npc.her], покрытая веером [npc.earFullDescription(true)].
 		#IF(npc.isPiercedEar())
-			 They have been cleverly pierced so as to allow [npc.herHim] to wear ear-specific jewellery.
+			Они искусно проколоты, чтобы [npc.herHim] могли носить специальные украшения для ушей.
 		#ENDIF
 	]]></bodyDescription>
 	

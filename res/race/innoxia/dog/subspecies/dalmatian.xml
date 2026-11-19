@@ -48,42 +48,42 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[dalmatian-morph]]></name>
-			<namePlural><![CDATA[dalmatian-morphs]]></namePlural>
-			<singularMaleName><![CDATA[dalmatian-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[dalmatian-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[dalmatian-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[dalmatian-girls]]></pluralFemaleName>
+			<name><![CDATA[морф далматинца]]></name>
+			<namePlural><![CDATA[морфы далматинцев]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-далматинец]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-далматинка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-далматинцы]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-далматинки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	<nameAnthroSillyMode>
 		<namesDefault>
-			<name><![CDATA[dalmatian-morph]]></name>
-			<namePlural><![CDATA[dalmatian-morphs]]></namePlural>
-			<singularMaleName><![CDATA[dalmatian-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[dalmatian-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[dalmatian-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[dalmatian-girls]]></pluralFemaleName>
+			<name><![CDATA[морф далматинца]]></name>
+			<namePlural><![CDATA[морфы далматинцев]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-далматинец]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-далматинка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-далматинцы]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-далматинки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthroSillyMode>
-	<description><![CDATA[A dog-morph which resembles an anthropomorphised dalmatian. They are known as 'dalmatian-morphs' when bipedal, and 'dalmatiantaurs' when the lower body is that of an oversized feral dalmatian. To be identified as a dalmatian-morph, a character must be a dog-morph that has floppy ears and short, white fur, with either black or pitch black spots.]]></description>
+	<description><![CDATA[Пёс-морф, напоминающий антропоморфного далматинца. В двуногой форме их называют «далматин-морфами», а когда нижняя часть тела представляет собой массивное дикое тело далматинца — «далматиантаврами». Чтобы считаться далматин-морфом, персонаж должен быть псом-морфом с висячими ушами и короткой белой шерстью в черный или иссиня-черный пятнах.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[hellhound]]></name>
-			<namePlural><![CDATA[hellhounds]]></namePlural>
-			<singularMaleName><![CDATA[hellhound]]></singularMaleName>
-			<singularFemaleName><![CDATA[hellhound]]></singularFemaleName>
-			<pluralMaleName><![CDATA[hellhounds]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[hellhounds]]></pluralFemaleName>
+			<name><![CDATA[адская гончая]]></name>
+			<namePlural><![CDATA[адские гончие]]></namePlural>
+			<singularMaleName><![CDATA[адская гончая]]></singularMaleName>
+			<singularFemaleName><![CDATA[адская гончая]]></singularFemaleName>
+			<pluralMaleName><![CDATA[адские гончие]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[адские гончие]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[dalmatian]]></feralName>
-		<feralNamePlural><![CDATA[dalmatians]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[dalmatian]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[dalmatian]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[dalmatians]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[dalmatians]]></feralPluralFemaleName>
+		<feralName><![CDATA[далматинец]]></feralName>
+		<feralNamePlural><![CDATA[далматинцы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[далматинец]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[далматинец]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[далматинцы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[далматинцы]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>75</size>
@@ -95,7 +95,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[[npc.NamePos] dalmatian-like body is strong and full of energy. Friendly and loyal to those [npc.she] [npc.verb(know)] and [npc.verb(trust)], [npc.she] also [npc.has] a strong instinct to guard [npc.her] territory, as well as a natural resistance to fire.]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] тело, подобное далматинцу, сильное и полно энергии. Дружелюбный и преданный тем, кого [npc.she] [npc.verb(знает)] и кому [npc.she] [npc.verb(доверяет)], [npc.has] он также обладает сильным инстинктом охраны [npc.her] территории, а также природной устойчивостью к огню.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="15">MAJOR_PHYSIQUE</attribute>
 		<attribute value="5">RESISTANCE_PHYSICAL</attribute>

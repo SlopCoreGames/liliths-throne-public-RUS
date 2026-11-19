@@ -27,30 +27,30 @@
 	<basicDescriptionId>DEER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>DEER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[deer-morph]]></name>
-	<namePlural><![CDATA[deer-morphs]]></namePlural>
-	<singularMaleName><![CDATA[stag-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[deer-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[stag-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[deer-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic deer, known as a 'deer-morph' when bipedal, and a 'deer-taur' when the lower body is that of a feral deer.]]></description>
+	<name><![CDATA[оленья морфология]]></name>
+	<namePlural><![CDATA[оленьи морфологии]]></namePlural>
+	<singularMaleName><![CDATA[оленемальчик]]></singularMaleName>
+	<singularFemaleName><![CDATA[оленедевушка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[оленемальчики]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[оленедевушки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный олень, известный как «оленеморф», когда он передвигается на двух ногах, и «оленетавр», если его нижняя часть тела представляет собой дикого оленя.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[peryton]]></name>
-			<namePlural><![CDATA[perytons]]></namePlural>
-			<singularMaleName><![CDATA[peryton]]></singularMaleName>
-			<singularFemaleName><![CDATA[peryton]]></singularFemaleName>
-			<pluralMaleName><![CDATA[perytons]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[perytons]]></pluralFemaleName>
+			<name><![CDATA[перитон]]></name>
+			<namePlural><![CDATA[перитоны]]></namePlural>
+			<singularMaleName><![CDATA[перитон]]></singularMaleName>
+			<singularFemaleName><![CDATA[перитон]]></singularFemaleName>
+			<pluralMaleName><![CDATA[перитоны]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[перитоны]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[deer]]></feralName>
-		<feralNamePlural><![CDATA[deer]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[stag]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[doe]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[stags]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[does]]></feralPluralFemaleName>
+		<feralName><![CDATA[олень]]></feralName>
+		<feralNamePlural><![CDATA[олень]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[олень]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[олениха]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[олени]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[оленихи]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>75</size>
@@ -63,7 +63,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] strong, tough body helps [npc.herHim] to endure physical blows as well as to put some extra power behind attacks of [npc.her] own.
+		[npc.NamePos] сильное и выносливое тело помогает [npc.herHim] не только выдерживать физические удары, но и вкладывать дополнительную мощь в атаки [npc.her] собственной.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>

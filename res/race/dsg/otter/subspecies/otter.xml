@@ -104,38 +104,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[otter-morph]]></name>
-			<namePlural><![CDATA[otter-morphs]]></namePlural>
-			<singularMaleName><![CDATA[otter-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[otter-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[otter-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[otter-girls]]></pluralFemaleName>
+			<name><![CDATA[выдра-морф]]></name>
+			<namePlural><![CDATA[выдра-морфы]]></namePlural>
+			<singularMaleName><![CDATA[парень-выдра]]></singularMaleName>
+			<singularFemaleName><![CDATA[девушка-выдра]]></singularFemaleName>
+			<pluralMaleName><![CDATA[парни-выдры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девушки-выдры]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic otter, known as an 'otter-morph' when bipedal, and an 'ottertaur' when the lower body is that of a typically-oversized feral otter.]]></description>
+	<description><![CDATA[Антропоморфная выдра; когда она передвигается на двух ногах, её называют «выдроморфом», а если её нижняя часть тела представляет собой туловище типично крупной дикой выдры — «выдротавром».]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[kawauso]]></name>
-			<namePlural><![CDATA[kawauso]]></namePlural>
-			<singularMaleName><![CDATA[kawauso]]></singularMaleName>
-			<singularFemaleName><![CDATA[kawauso]]></singularFemaleName>
-			<pluralMaleName><![CDATA[kawauso]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[kawauso]]></pluralFemaleName>
+			<name><![CDATA[каваусо]]></name>
+			<namePlural><![CDATA[каваусо]]></namePlural>
+			<singularMaleName><![CDATA[каваусо]]></singularMaleName>
+			<singularFemaleName><![CDATA[каваусо]]></singularFemaleName>
+			<pluralMaleName><![CDATA[каваусо]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[каваусо]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[otter]]></feralName>
-		<feralNamePlural><![CDATA[otter]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[otter]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[otter]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[otters]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[otters]]></feralPluralFemaleName>
+		<feralName><![CDATA[выдра]]></feralName>
+		<feralNamePlural><![CDATA[выдра]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[выдра]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[выдра]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[выдры]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[выдры]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -165,9 +165,7 @@
 	</feralAttributes>
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] otter-like body is at home both on land and at sea, and [npc.she] [npc.has] a disarming aura of playfulness about [npc.herHim].
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] тело, подобное телу выдры, одинаково гармонично смотрится и на суше, и в море, а [npc.she] [npc.has] [npc.herHim] окружает обезоруживающая аура игривости.]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 

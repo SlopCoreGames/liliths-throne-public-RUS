@@ -37,19 +37,19 @@
 	<areasCummedIn/>
 	<areasCummedOn/>
 	<title><![CDATA[
-		[style.colourFetish(Push her)]
+		[style.colourFetish(Прижать её)]
 	]]></title>
 	<tooltip><![CDATA[
 		#IF(sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_VAGINA, PENETRATION_FINGER).contains(pc))
-			Make Meraxis admit to you that she loves being fingered as you frantically tease her clit and make her cum.
+			Заставь Меракс признаться, что обожает, когда ты ласкаешь её пальцами, пока ты неистово дразнишь её клитор, доводя до оргазма.
 		#ELSEIF(sex.getOngoingCharactersUsingAreas(pc, PENETRATION_FINGER, ORIFICE_VAGINA).contains(meraxis))
-			Make Meraxis admit that she loves fingering you as she orgasms from it.
+			Заставь Меракс признаться, что ей нравится ласкать тебя пальцами, когда она сама кончает от этого.
 		#ELSEIF(sex.getOngoingCharactersUsingAreas(pc, PENETRATION_FINGER, ORIFICE_ANUS).contains(meraxis))
-			Make Meraxis admit that she loves fingering your ass as she orgasms from it.
+			Заставь Меракс признаться, что ей нравится ласкать твою задницу пальцами, когда она сама кончает от этого.
 		#ELSE
-			Make Meraxis admit that she loves stroking your cock as she orgasms from it.
+			Заставь Меракс признаться, что ей нравится ласкать твой член, когда она сама кончает от этого.
 		#ENDIF
-		<br/>[style.italicsSex(Meraxis will gain the '[#FETISH_MASTURBATION.getName(meraxis)]' fetish from this!)]
+		<br/>[style.italicsSex(Благодаря этому Меракс получит фетиш '[#FETISH_MASTURBATION.getName(meraxis)]'!)]
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -76,21 +76,19 @@
 			<descriptionConditional><![CDATA[
 				[#sex.getOngoingCharactersUsingAreas(pc, PENETRATION_FINGER, ORIFICE_VAGINA).contains(meraxis)]
 			]]></descriptionConditional>
-			<text><![CDATA[
-				Realising that she's about to reach her climax, and wanting to leave a lasting impression on her, you push your [pc.pussy+] out against Meraxis's [meraxis.fingers+] as you tease, [pc.speech(You like this, Meraxis?)]
+			<text><![CDATA[Понимая, что она вот-вот достигнет пика, и желая оставить о себе неизгладимое впечатление, ты прижимаешь свой [pc.pussy+] к [meraxis.fingers+] Мераксис, дразня её: [pc.speech(Тебе нравится, Мераксис?)]
 				<br/><br/>
-				[meraxis.speechNoEffects(~Aah!~ Yes! ~Ooh!~ I-I think I'm going to cum!)]
+				[meraxis.speechNoEffects(~Аах!~ Да! ~Ооо!~ К-кажется, я сейчас кончу!)]
 				<br/><br/>
-				Upon hearing that, you pull your [pc.pussy+] away from the [meraxis.race]'s hand, causing her to let out a desperate, frustrated whine. Knowing that this is your chance to permanently influence Meraxis's sexual preferences, you demand, [pc.speech(Go on, beg for it! Tell me that you're a horny slut who loves to get off from fingering my pussy!)]
+				Услышав это, ты убираешь свой [pc.pussy+] от руки [meraxis.race], заставляя её издать отчаянный, разочарованный стон. Понимая, что это твой шанс навсегда повлиять на сексуальные предпочтения Мераксис, ты требуешь: [pc.speech(Давай, умоляй! Скажи мне, что ты похотливая сучка, которая обожает кончать от того, как ей перебирают пальцами твою киску!)]
 				<br/><br/>
-				Although she furiously blushes as she hears you say this, Meraxis nevertheless does as you say and squeals, [meraxis.speechNoEffects(~Ooh!~ Yes, I'm a horny slut! Please, let me orgasm! Come on, let me finger you!)]
+				Хотя от твоих слов она заливается яростным румянцем, Мераксис всё же повинуется и взвизгивает: [meraxis.speechNoEffects(~Ооо!~ Да, я похотливая сучка! Пожалуйста, дай мне кончить! Ну же, позволь мне потыкать тебе пальцами!)]
 				<br/><br/>
-				Allowing her to tease her fingers over your [pc.labia+], you cement the idea of loving to finger others in Meraxis's mind by saying, [pc.speech(Once more. Tell me how much you like this...)]
+				Позволяя ей дразняще водить пальцами по твоему [pc.labia+], ты закрепляешь в её сознании любовь к ласкам пальцами, произнося: [pc.speech(Ещё раз. Скажи мне, как сильно тебе это нравится...)]
 				<br/><br/>
-				[meraxis.speechNoEffects(Please, [pc.name]! ~Mmm!~ I <i>need</i> this! Come on, just let me finger you already and let me cum!)]
+				[meraxis.speechNoEffects(Пожалуйста, [pc.name]! ~Ммм!~ Мне это <i>необходимо</i>! Ну же, просто дай мне уже потыкать тебе пальцами и дай мне кончить!)]
 				<br/><br/>
-				Confident that you've done enough to give Meraxis a permanent love for fingering you, you allow her to slide her [meraxis.fingers+] into your [pc.pussy+] and continue where she left off. As the panting [meraxis.race] starts to once again let out a stream of horny moans, you realise that she's about to reach her climax...
-			]]></text>
+				Уверенный в том, что ты сделал достаточно, чтобы привить Мераксис вечную страсть к ласкам пальцами, ты позволяешь ей просунуть её [meraxis.fingers+] в твой [pc.pussy+], возвращаясь к тому, на чём она остановилась. Когда тяжело дышащая [meraxis.race] снова начинает издавать поток похотливых стонов, ты понимаешь, что она вот-вот достигнет своего пика...]]></text>
 		</description>
 		<description>
 			<descriptionConditional><![CDATA[
@@ -116,21 +114,19 @@
 			<descriptionConditional><![CDATA[
 				[#sex.getOngoingCharactersUsingAreas(pc, PENETRATION_PENIS, PENETRATION_FINGER).contains(meraxis)]
 			]]></descriptionConditional>
-			<text><![CDATA[
-				Realising that she's about to reach her climax, and wanting to leave a lasting impression on her, you push your [pc.cock+] out against Meraxis's [meraxis.fingers+] as you tease, [pc.speech(You like this, Meraxis?)]
+			<text><![CDATA[Понимая, что она вот-вот достигнет пика, и желая оставить о себе неизгладимое впечатление, ты прижимаешь свой [pc.cock+] к [meraxis.fingers+] Мераксис, дразня её: [pc.speech(Тебе нравится, Мераксис?)]
 				<br/><br/>
-				[meraxis.speechNoEffects(~Aah!~ Yes! ~Ooh!~ I-I think I'm going to cum!)]
+				[meraxis.speechNoEffects(~Аах!~ Да! ~Ооо!~ Кажется... кажется, я сейчас кончу!)]
 				<br/><br/>
-				Upon hearing that, you pull your [pc.cock+] away from the [meraxis.race]'s hand, causing her to let out a desperate, frustrated whine. Knowing that this is your chance to permanently influence Meraxis's sexual preferences, you demand, [pc.speech(Go on, beg for it! Tell me that you're a horny slut who loves to get off from giving me a handjob!)]
+				Услышав это, ты отстраняешь свой [pc.cock+] от руки [meraxis.race], заставляя её издать отчаянный, разочарованный стон. Зная, что это твой шанс навсегда повлиять на сексуальные предпочтения Мераксис, ты требуешь: [pc.speech(Давай, умоляй! Скажи, что ты похотливая сучка, которая обожает доводить тебя до оргазма своей ручкой!)]
 				<br/><br/>
-				Although she furiously blushes as she hears you say this, Meraxis nevertheless does as you say and squeals, [meraxis.speechNoEffects(~Ooh!~ Yes, I'm a horny slut! Please, let me orgasm! Come on, let me stroke your cock!)]
+				Хотя она яростно краснеет, слыша твои слова, Мераксис всё же подчиняется и взвизгивает: [meraxis.speechNoEffects(~Ооо!~ Да, я похотливая сучка! Пожалуйста, дай мне кончить! Ну же, позволь мне ласкать твой член!)]
 				<br/><br/>
-				Allowing her to tease her fingers over the [pc.cockHead+] of your throbbing shaft, you cement the idea of loving to stroke cocks in Meraxis's mind by saying, [pc.speech(Once more. Tell me how much you like this...)]
+				Позволяя ей водить пальцами по [pc.cockHead+] твоего пульсирующего члена, ты закрепляешь в её сознании любовь к мастурбации руками, произнося: [pc.speech(Ещё раз. Скажи мне, как сильно тебе это нравится...)]
 				<br/><br/>
-				[meraxis.speechNoEffects(Please, [pc.name]! ~Mmm!~ I <i>need</i> this! Come on, just let me jerk you off already and let me cum!)]
+				[meraxis.speechNoEffects(Пожалуйста, [pc.name]! ~Ммм!~ Мне это <i>необходимо</i>! Ну же, просто дай мне довести тебя рукой и позволь мне кончить!)]
 				<br/><br/>
-				Confident that you've done enough to give Meraxis a permanent love for performing handjobs, you allow her to slide her [meraxis.fingers+] around your [pc.cock+] and continue where she left off. As the panting [meraxis.race] starts to once again let out a stream of horny moans, you realise that she's about to reach her climax...
-			]]></text>
+				Уверенный в том, что ты сделал достаточно, чтобы привить Мераксис вечную страсть к ручному сексу, ты позволяешь ей обхватить свой [pc.cock+] её [meraxis.fingers+] и продолжаешь с того места, где она остановилась. Когда тяжело дышащая [meraxis.race] снова начинает издавать поток похотливых стонов, ты понимаешь, что она вот-вот достигнет своего пика...]]></text>
 		</description>
 	</descriptions>
 </sexAction>

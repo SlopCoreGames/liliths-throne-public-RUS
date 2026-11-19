@@ -2,7 +2,7 @@
 <tail>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_fur</coveringType>
 	
@@ -21,8 +21,8 @@
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural> 
 	
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural> 
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>badger-like</descriptor>
@@ -33,8 +33,8 @@
 		<descriptor>furry</descriptor>
 	</descriptorsFeminine>
 	
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>furry</descriptor>
 	</tipDescriptorsMasculine>
@@ -44,16 +44,15 @@
 	
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A furry, badger-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a very limited amount of control over it, and can only lift it up and down.
-			<br/>[npc.Name] now [npc.has] a [style.boldBadger(badger-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Прямо над [npc.her] задницей вырастает пушистый барсучий хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь слегка может им управлять, и способен лишь поднимать его вверх и опускать вниз.
+			<br/>[npc.Name] теперь [npc.has] [style.boldBadger(пушистый барсучий хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] furry, badger-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a very limited amount of control over them, and can only lift them up and down.
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldBadger(badger-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] пушистые барсучьи хвосты вырастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] может лишь слегка ими управлять, лишь приподнимая или опуская.
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldBadger(badger-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] badger tail, which [npc.she] can just about lift up and down.
 		#ELSE

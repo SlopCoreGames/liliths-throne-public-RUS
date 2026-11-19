@@ -2,12 +2,12 @@
 <clothing>
 	
 	<coreAtributes>
-		<clothingAuthorTag><![CDATA[A tag discreetly sewn into the dress's inner lining informs you that it was made by 'Phlarx'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[На внутренней стороне подкладки платья пришит скромный ярлык, сообщающий, что оно сделано брендом «Phlarx».]]></clothingAuthorTag>
 		<value>1000</value> 
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[evening gown]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[evening gowns]]></namePlural> 
-		<description><![CDATA[An elegant evening gown, perfect for dinner parties with the social elite.]]></description> 
+		<name><![CDATA[вечернее платье]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[вечерние платья]]></namePlural> 
+		<description><![CDATA[Элегантное вечернее платье, идеально подходящее для званых ужинов в высшем обществе.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 
@@ -85,50 +85,50 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] the back of [npc.her] evening gown, letting it fall to [npc.her] feet.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на спине [npc.her] вечернего платья, позволяя ему соскользнуть к [npc.her] ногам.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] the back of [npc2.namePos] evening gown, letting it fall to [npc2.her] feet.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на спине [npc2.namePos] вечернего платья, позволяя ему соскользнуть к [npc2.her] ногам.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] the back of [npc2.namePos] evening gown, and [npc.verb(yank)] it down to [npc2.her] feet.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] молнию на спине [npc2.namePos] вечернего платья и [npc.verb(yank)] его вниз до [npc2.her] ног.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the evening gown up to [npc.her] chest, then [npc.verb(zip)] it closed.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вечернее платье вверх до [npc.her] груди, а затем [npc.verb(zip)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the evening gown up to [npc2.namePos] chest, then [npc.verb(zip)] it closed.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] вечернее платье вверх до [npc2.namePos] груди, а затем [npc.verb(zip)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the evening gown up to [npc2.namePos] chest, then [npc.verb(tug)] the zipper closed.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] вечернее платье вверх до [npc2.namePos] груди, а затем [npc.verb(tug)] застегивает молнию.]]>
 		</otherRough>
 	</replacementText>
 
 	
 	<displacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc.her] evening gown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол [npc.her] вечернего платья вверх.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up the skirt of [npc2.namePos] evening gown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол вечернего платья [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] up the skirt of [npc2.namePos] evening gown.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] подол вечернего платья [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc.her] evening gown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол вечернего платья [npc.her] вниз.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] down the skirt of [npc2.namePos] evening gown.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] подол вечернего платья [npc2.namePos] вниз.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the skirt of [npc2.namePos] evening gown.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] подол вечернего платья [npc2.namePos] вниз.]]>
 		</otherRough>
 	</replacementText>
 </clothing>

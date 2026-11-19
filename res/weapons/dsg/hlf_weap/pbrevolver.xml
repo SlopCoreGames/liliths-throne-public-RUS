@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[On one side of the cylinder, a small engraving reads "MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[На одной стороне барабана красуется небольшая гравировка: «Изготовлено MFD by DSG Forgeworks».]]></authorTag>
 		<value>1500</value>
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendDamageName="true"><![CDATA[pepperball revolver]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pepperball revolver]]></namePlural>
-		<description><![CDATA[This weapon appears to have been hand modified from something else and shows signs of having sat in pockets rather than in holsters. Stamped on the body is an insignia that you don't recognize.]]></description>
+		<name appendDamageName="true"><![CDATA[перцевый револьвер]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[перцевый револьвер]]></namePlural>
+		<description><![CDATA[Похоже, это оружие было модифицировано вручную из чего-то другого; на нем видны следы того, что его носили в карманах, а не в кобуре. На корпусе выштампована эмблема, которую ты не можешь узнать.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Shoot [npc2.name] with your revolver.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Выстрели в [npc2.name] из своего револьвера.]]></attackTooltipDescription>
 		<rarity>RARE</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] out the revolver and carefully [npc.verb(load)] it before disengaging the safety.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(swing)] out the cylinder and [npc.verb(gives)] it a shake to make sure that it's empty before putting the revolver away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] револьвер и осторожно [npc.verb(load)] его, прежде чем снять с предохранителя.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(swing)] барабан и [npc.verb(gives)] ему встряску, чтобы убедиться, что он пуст, прежде чем убрать револьвер.]]></unequipText>
 		<imageName>pbrevolver.svg</imageName>
 		<imageEquippedName>pbrevolver.svg</imageEquippedName>
 		<physicalResistance>0</physicalResistance>
@@ -49,13 +49,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(pull)] the trigger at [npc2.name]. The gelatin capsule bursts on impact with [npc2.namePos] aura, splattering [npc2.herHim] with stinging, burning oil.
+		[npc.Name] [npc.verb(целится)] в [npc2.name] через [npc.her] прицел и [npc.verb(нажимает)] на спусковой крючок, целясь в [npc2.name]. Желатиновая капсула лопается при столкновении с [npc2.namePos] Аура, забрызгивая [npc2.herHim] жгучим, обжигающим маслом.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] up [npc2.name] in [npc.her] sights and [npc.verb(pull)] the trigger at [npc2.name]. The capsule misses [npc2.herHim] completely and splatters uselessly in the distance.
+		[npc.Name] [npc.verb(целится)] в [npc2.name] через [npc.her] прицел и [npc.verb(нажимает)] на спусковой крючок, целясь в [npc2.name]. Капсула пролетает мимо [npc2.herHim] и бесполезно разлетается где-то вдалеке.
 		]]></missText>
 	</missDescriptions>
 	

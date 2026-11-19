@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-	<authorTag><![CDATA[A tag discreetly printed on the corner reads, "Envisioned for high-performing athletes, by GLIDE.".]]></authorTag>
+	<authorTag><![CDATA[На уголке красуется скромная надпись: «Создано для лучших атлетов компанией GLIDE».]]></authorTag>
 		<value>500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[nose guard]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[nose guards]]></namePlural>
-		<description><![CDATA[A protective hard plastic shell shaped into a mask designed for contact sports. Proprietary treatment technology has made it particularly impact-resistant.]]></description>
+		<name><![CDATA[защитная накладка на нос]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[защитные накладки на нос]]></namePlural>
+		<description><![CDATA[Прочная пластиковая маска, предназначенная для контактных видов спорта. Благодаря запатентованной технологии обработки она обладает повышенной ударопрочностью.]]></description>
 		<physicalResistance>1.0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>

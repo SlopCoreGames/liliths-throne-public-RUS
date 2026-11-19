@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>120</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[cap]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[caps]]></namePlural>
-		<description><![CDATA[A soft cap with a stiff peak projecting from the front, designed to shield the wearer's eyes from sunlight.]]></description>
+		<name><![CDATA[кепка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кепки]]></namePlural>
+		<description><![CDATA[Мягкая кепка с жестким козырьком спереди, предназначенная для защиты глаз от солнечного света.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -44,25 +44,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(place)] the cap onto [npc.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(place)] кепку на голову [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(place)] the cap onto [npc2.namePos] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(place)] кепку на голову [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] the cap onto [npc2.namePos] head.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(push)] кепку на голову [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] cap.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] кепку с [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] cap.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] кепку с [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] cap.]]>
+			<![CDATA[[npc.Name] [npc.verb(snatch)] кепку с [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
   

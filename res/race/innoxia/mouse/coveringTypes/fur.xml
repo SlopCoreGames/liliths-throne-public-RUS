@@ -4,9 +4,9 @@
 	
 	<determiner><![CDATA[a layer of]]></determiner>
 	
-	<name><![CDATA[fur]]></name>
+	<name><![CDATA[мех]]></name>
 	
-	<namePlural pluralByDefault="false"><![CDATA[fur]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[мех]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>

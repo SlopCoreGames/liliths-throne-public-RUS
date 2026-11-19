@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <tentacle>
 	<race>NoStepOnSnek_octopus</race>
-	<transformationName><![CDATA[octopus]]></transformationName>
+	<transformationName><![CDATA[осьминог]]></transformationName>
 	<coveringType>OCTOPUS_SKIN</coveringType>
 	<defaultGirth>4</defaultGirth>
 	<defaultLengthAsPercentageOfHeight>2.5</defaultLengthAsPercentageOfHeight>
@@ -13,16 +13,16 @@
 	</tags>
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural>
-	<name><![CDATA[tentacle]]></name>
-	<namePlural><![CDATA[tentacles]]></namePlural>
+	<name><![CDATA[щупальце]]></name>
+	<namePlural><![CDATA[щупальца]]></namePlural>
 	<descriptorsMasculine>
 		<descriptor>strong</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
 		<descriptor>strong</descriptor>
 	</descriptorsFeminine>
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>rounded</descriptor>
 	</tipDescriptorsMasculine>
@@ -31,7 +31,5 @@
 	</tipDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 	]]></transformationDescription>
-	<bodyDescription><![CDATA[
-		In place of legs, [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)] tentacles, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use them to grip and hold objects.
-	]]></bodyDescription>
+	<bodyDescription><![CDATA[Вместо ног у [npc.sheHasFull] [npc.tentacleCount] [npc.tentacleColour(true)] щупальца, над которыми [npc.sheHasFull] обладает полным контролем, что позволяет [npc.herHim] использовать их, чтобы хватать и удерживать предметы.]]></bodyDescription>
 </tentacle>

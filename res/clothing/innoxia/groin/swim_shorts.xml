@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[swimming shorts]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[swimming shorts]]></namePlural>
-		<description><![CDATA[This pair of masculine swimwear covers the wearer's groin and extends a short way down the legs.]]></description>
+		<name><![CDATA[плавательные шорты]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[плавательные шорты]]></namePlural>
+		<description><![CDATA[Эти мужские плавки закрывают пах и доходят до середины бедер.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>MASCULINE</femininity>
 		<slot>GROIN</slot>
@@ -89,25 +89,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the swimming shorts, before pulling them up to cover [npc.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в плавательные шорты, а затем натягивает их, чтобы прикрыть интимные места [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the swimming shorts up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] плавательные шорты вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the swimming shorts up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] резко [npc.verb(pull)] плавательные шорты вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] swimming shorts down and [npc.verb(kick)] them off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] плавательные шорты [npc.her] вниз и [npc.verb(kick)] их с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] down [npc2.namePos] swimming shorts and [npc.verb(pull)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] плавательные шорты [npc2.namePos] вниз и [npc.verb(pull)] их с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] swimming shorts and [npc.verb(yank)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] плавательные шорты [npc2.namePos] вниз и [npc.verb(yank)] их с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

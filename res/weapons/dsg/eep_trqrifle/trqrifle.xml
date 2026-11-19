@@ -2,7 +2,7 @@
 <weapon>
 	<coreAttributes>
 		
-		<authorTag><![CDATA[On one side of the cylinder, a small engraving reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[На одной стороне цилиндра выгравировано: «Официальное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 	
 		<value>5600</value> 
 		
@@ -12,11 +12,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[revolving tranquiliser rifle]]></name>
+		<name><![CDATA[револьверная транквилизаторная винтовка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[revolving tranquiliser rifles]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[револьверные транквилизаторные винтовки]]></namePlural> 
 		
-		<description><![CDATA[Firing aura-piercing fin-stabilized discarding sabot darts filled with a potent sleeping potion, this rifle is not a true sniping weapon. Rather, it is designed to extend the reach of a standard Enforcer squad. Unlike most dart rifles, it uses a six-shot revolving autoloader.]]></description> 
+		<description><![CDATA[Выстреливая стабилизированными плавниками разрывными снарядами, пронзающими ауру и наполненными мощным снотворным зельем, эта винтовка не является полноценным снайперским оружием. Скорее, она предназначена для увеличения дальности действия стандартного отряда Enforcer. В отличие от большинства дротиковых винтовок, здесь используется шестизарядный револьверный автозаряжатель.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<rarity>EPIC</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] out the rifle, [npc.verb(load)] a fresh gas bottle, and [npc.verb(insert)] a full-moon clip of six darts into the autoloader.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] винтовку, [npc.verb(load)] свежий баллон с газом и [npc.verb(insert)] полный магазин из шести дротиков в автозаряжатель.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(remove)] the unspent darts from the autoloader, [npc.verb(unload)] the gas bottle, and [npc.verb(put)] the rifle away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(remove)] оставшиеся дротики из автозаряжателя, [npc.verb(unload)] баллон с газом и [npc.verb(put)] винтовку на место.]]></unequipText>
 		
 		<imageName>trqrifle_nogas.svg</imageName> 
 		
@@ -47,14 +47,14 @@
 		<effects/>
 		
 		<extraEffects>
-			<effect><![CDATA[[style.boldPoison("Negative Arcane Duality")] on critical hit.]]></effect>
+			<effect><![CDATA[[style.boldPoison("Отрицательная дуальность Arcane")] при критическом попадании.]]></effect>
 		</extraEffects>
 		
 		<onHitEffect/>
 		
 		<onCriticalHitEffect><![CDATA[
 		#IF !npc2.hasStatusEffect(SE_ARCANE_DUALITY_NEGATIVE)
-		#THEN [##npc2.addStatusEffect(SE_ARCANE_DUALITY_NEGATIVE, 6)] [npc2.Name] [style.boldPoison([npc2.verb(struggle)] to defend [npc2.herself])] as [npc2.her] eyelids grow visibly heavier. 
+		#ТОГДА [##npc2.addStatusEffect(SE_ARCANE_DUALITY_NEGATIVE, 6)] [npc2.Name] [style.boldPoison([npc2.verb(struggle)] защитить [npc2.herself])], пока веки [npc2.her] заметно тяжелеют. 
 		#ENDIF
 		]]></onCriticalHitEffect>
 		
@@ -76,13 +76,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The needle on the end of the dart embeds itself in [npc2.namePos] aura and releases its contents.
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] спусковой крючок. Игла на конце дротика вонзается в ауру [npc2.namePos] и выпускает содержимое.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The shot goes wide! The dart clatters uselessly on the ground.
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] спусковой крючок. Выстрел уходит в сторону! Дротик бесполезно со стуком падает на землю.
 		]]></missText>
 	</missDescriptions>
 	

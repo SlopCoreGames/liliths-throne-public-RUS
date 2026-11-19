@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>750</value>
 		<determiner><![CDATA[numerous]]></determiner>
-		<name><![CDATA[thin bangle]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[thin bangles]]></namePlural>
-		<description><![CDATA[Just over a dozen thin bands of metal, which are intended to be split up and worn in equal numbers around the wearer's wrists, or instead slid down to sit around the base of their tail.]]></description>
+		<name><![CDATA[тонкий браслет]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[тонкие браслеты]]></namePlural>
+		<description><![CDATA[Чуть больше дюжины тонких металлических колец, которые предназначены для того, чтобы их разделили и надели поровну на запястья, либо спустили вниз, чтобы они плотно обхватили основание хвоста.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -58,49 +58,49 @@
 
   <replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles into place around [npc.her] wrists.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты на запястья [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles into place around [npc2.namePos] wrists.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты на запястья [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the thin bangles into place around [npc2.namePos] wrists.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] натягивает тонкие браслеты на запястья [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles off [npc.her] wrists.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты с запястий [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles off [npc2.namePos] wrists.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты с запястий [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the thin bangles off [npc2.namePos] wrists.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] тонкие браслеты с запястий [npc2.namePos].]]>
     </otherRough>
   </displacementText>
   
   <replacementText slot="TAIL" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles into place around [npc.her] [npc.tail].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты на [npc.her] [npc.tail].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles into place around [npc2.namePos] [npc2.tail].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты на запястья [npc2.namePos] [npc2.tail].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the thin bangles into place around [npc2.namePos] [npc2.tail].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] натягивает тонкие браслеты на запястья [npc2.namePos] [npc2.tail].]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="TAIL" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles off [npc.her] [npc.tail].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты с запястий [npc.her] [npc.tail].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the thin bangles off [npc2.namePos] [npc2.tail].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] тонкие браслеты с запястий [npc2.namePos] [npc2.tail].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the thin bangles off [npc2.namePos] [npc2.tail].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] тонкие браслеты с запястий [npc2.namePos] [npc2.tail].]]>
     </otherRough>
   </displacementText>
   

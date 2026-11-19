@@ -6,7 +6,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[A Foul Basement]]></name>
+			<name><![CDATA[Грязный подвал]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				#IF(pc.hasQuest(QUEST_LINE_SIDE_EISEK_SILLYMODE) && pc.isQuestProgressLessThan(QUEST_LINE_SIDE_EISEK_SILLYMODE, QUEST_EISEK_SILLYMODE_QUEST_STAGE_TWO) && !flags.hasFlag(FLAG_dsg_elis_eisek_sillymode_basement_found))
 					#IF(pc.hasTraitActivated(PERK_OBSERVANT))

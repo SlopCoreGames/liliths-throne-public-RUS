@@ -15,13 +15,13 @@
 		<determiner><![CDATA[a]]></determiner>
 		
 		<!-- The name of this clothing. -->
-		<name><![CDATA[spiked collar]]></name>
+		<name><![CDATA[шипованный ошейник]]></name>
 		
 		<!-- The plural form of the name. The attribute 'pluralByDefault' determines whether this item is naturally referred to as a plural (use true for things like socks or gloves).-->
-		<namePlural pluralByDefault="false"><![CDATA[spiked collars]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[шипованные ошейники]]></namePlural> 
 		
 		<!-- The description that's shown in tooltips and on the item's inspection page. -->
-		<description><![CDATA[A spiked collar, usually worn by guard dogs or members of some marginal subcultures.]]></description> 
+		<description><![CDATA[Шипованный ошейник, который обычно носят либо сторожевые псы, либо представители определенных маргинальных субкультур.]]></description> 
 		
 		<!-- The default physical resistance for this piece of clothing. Usually use 0 or 1, but if it's armour, then values up to 5 would be fitting (any more than that might be very OP). -->
 		<physicalResistance>0</physicalResistance> 
@@ -120,25 +120,25 @@
 	
 	<replacementText slot="NECK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(clasp)] the spiked collar around [npc.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(clasp)] шипованный ошейник на шее [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(clasp)] the spiked collar around [npc2.namePos] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(clasp)] шипованный ошейник на шее [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before clasping the spiked collar around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем застегнуть шипованный ошейник на шее [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="NECK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unlock)] [npc.her] spiked collar, before taking it off from around [npc.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(unlock)] шипованный ошейник [npc.her], прежде чем снять его с шеи [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unlock)] [npc2.namePos] spiked collar, before taking it off from around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(unlock)] шипованный ошейник [npc2.namePos], прежде чем снять его с шеи [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(unlock)] [npc2.namePos] spiked collar, before yanking it off from around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(unlock)] шипованный ошейник [npc2.namePos], а затем с силой сдергивает его с шеи [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	

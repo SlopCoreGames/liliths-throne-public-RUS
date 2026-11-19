@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[chelsea boot]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[chelsea boots]]></namePlural>
-		<description><![CDATA[A pair of unisex, chelsea-style ankle boots.]]></description>
+		<name><![CDATA[челси]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[ботинки челси]]></namePlural>
+		<description><![CDATA[Унисекс-ботинки по щиколотку в стиле челси.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>FOOT</slot> 
@@ -43,25 +43,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] into the chelsea boots.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] в ботинки челси.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] into the chelsea boots.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] в ботинки челси.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the chelsea boots.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.namePos] [npc2.feet] в ботинки челси.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slip)] off [npc.her] chelsea boots.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] с [npc.her] ботинок челси.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slip)] off [npc2.namePos] chelsea boots.]]>
+      <![CDATA[[npc.Name] [npc.verb(slip)] с [npc2.namePos] ботинок челси.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(tug)] off [npc2.namePos] chelsea boots.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(tug)] с [npc2.namePos] ботинок челси.]]>
     </otherRough>
   </displacementText>
 	

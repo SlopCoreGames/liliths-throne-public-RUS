@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the side seam reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве пришита маленькая бирка: «Служебная форма Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>1500</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[waistcoat]]></name>
+		<name><![CDATA[жилет]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[waistcoats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[жилеты]]></namePlural> 
 
-		<description><![CDATA[A waistcoat with two pockets that serves as the regulation alternative for Enforcers whose arms cannot fit into the regular dress uniform coat.]]></description> 
+		<description><![CDATA[Жилет с двумя карманами, который служит официальной альтернативой для Enforcer, чьи руки не пролезают в стандартный парадный мундир.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -33,7 +33,7 @@
 		<stickers>
 			
 			<category id="tab" priority="1"> 
-				<categoryName><![CDATA[Collar Tabs]]></categoryName>
+				<categoryName><![CDATA[Петлицы]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix>
@@ -49,7 +49,7 @@
 					<stickerName><![CDATA[Police Constable]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Constable ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the insignia of a Police Constable attached to it.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия констебля полиции.</i>]]></descriptionModification> 
 					<imageName>enfdwaistcoat_st_tab_pc.svg</imageName> 
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -61,7 +61,7 @@
 						#IF(pc.getOccupation() != OCCUPATION_NPC_ENFORCER_PATROL_CONSTABLE ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_SWORD_CONSTABLE ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_ORICL_CONSTABLE)
-							Only Enforcers who hold a rank of Police Constables can use these collar tabs!
+							Эти погоны могут носить только Enforcer в звании констебля!
 						#ENDIF
 					]]></unavailabilityText> 
 					<availabilityText>
@@ -72,7 +72,7 @@
 					<stickerName><![CDATA[Sergeant]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer Sergeant ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the insignia of a Sergeant attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия сержанта.</i>]]></descriptionModification>
 					<imageName>enfdwaistcoat_st_tab_sg.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -84,7 +84,7 @@
 						#IF(pc.getOccupation() != OCCUPATION_NPC_ENFORCER_PATROL_SERGEANT ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_SWORD_SERGEANT ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_ORICL_SERGEANT)
-							Only Enforcers who hold a rank of Sergeant can use this insignia!
+							Этот знак отличия могут носить только Enforcer в звании сержанта!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -93,9 +93,9 @@
 				</sticker>
 				<sticker id="tab_ip" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Inspector]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Inspector ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Инспектор ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the insignia of an Inspector attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия инспектора.</i>]]></descriptionModification>
 					<imageName>enfdwaistcoat_st_tab_ip.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -107,7 +107,7 @@
 						#IF(pc.getOccupation() != OCCUPATION_NPC_ENFORCER_PATROL_INSPECTOR ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_SWORD_INSPECTOR ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_ORICL_INSPECTOR)
-							Only Enforcers who hold a rank of Inspector can use these collar tabs!
+							Эти погоны могут носить только Enforcer в звании инспектора!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -116,9 +116,9 @@
 				</sticker>
 				<sticker id="tab_su" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Superintendent]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Superintendent ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Супер интендант ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the insignia of a Superintendent attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплены знаки отличия суперинтенданта.</i>]]></descriptionModification>
 					<imageName>enfdwaistcoat_st_tab_su.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -128,7 +128,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Superintendent can use these collar tabs!
+							Эти погоны могут носить только Enforcer в звании суперинтенданта!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -137,9 +137,9 @@
 				</sticker>
 				<sticker id="tab_cs" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BLUE">
 					<stickerName><![CDATA[Chief Superintendent]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Chief Superintendent ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Главный супер интендант ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the insignia of a Chief Superintendent attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом жилете прикреплен знак старшего суперинтенданта.</i>]]></descriptionModification>
 					<imageName>enfdwaistcoat_st_tab_cs.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -149,7 +149,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Chief Superintendent can use these collar tabs!
+							Эти петлицы могут носить только Enforcers в звании главного суперинтенданта!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -158,7 +158,7 @@
 				</sticker>
 			</category>
 			<category id="name" priority="2"> 
-				<categoryName><![CDATA[Name Plate]]></categoryName>
+				<categoryName><![CDATA[Именная табличка]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="2" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix/>
@@ -182,7 +182,7 @@
 						#IF(pc.getOccupation() != OCCUPATION_NPC_ENFORCER_PATROL_CONSTABLE ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_SWORD_CONSTABLE ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_ORICL_CONSTABLE)
-							Only Enforcers who hold a rank of Police Constable can use this name plate!
+							Этот именной жетон может носить только Enforcer в звании констебля!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -201,7 +201,7 @@
 						#IF(pc.getOccupation() != OCCUPATION_NPC_ENFORCER_PATROL_SERGEANT ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_SWORD_SERGEANT ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_ORICL_SERGEANT)
-							Only Enforcers who hold a rank of Sergeant can use this name plate!
+							Этот именной жетон может носить только Enforcer в звании сержанта!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -220,7 +220,7 @@
 						#IF(pc.getOccupation() != OCCUPATION_NPC_ENFORCER_PATROL_INSPECTOR ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_SWORD_INSPECTOR ||
 							pc.getOccupation() != OCCUPATION_NPC_ENFORCER_ORICL_INSPECTOR)
-							Only Enforcers who hold a rank of Inspector can use this name plate!
+							Этот именной жетон может носить только Enforcer в звании инспектора!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -237,7 +237,7 @@
 					<itemTagsRemoved/>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Superintendent can use this name plate!
+							Этот именной жетон может носить только Enforcer в звании суперинтенданта!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -254,7 +254,7 @@
 					<itemTagsRemoved/>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Chief Superintendent can use this name plate!
+							Этот именной жетон может носить только Enforcer в звании главного суперинтенданта!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -263,7 +263,7 @@
 				</sticker>
 			</category>
 			<category id="ribbon" priority="3">
-				<categoryName><![CDATA[Ribbon Rack]]></categoryName>
+				<categoryName><![CDATA[Колодка с лентами]]></categoryName>
 				<sticker id="None" priority="0" defaultSticker="true" zLayer="3" colourSelected="TEXT_GREY">
 					<namePrefix/>
 					<namePostfix/>
@@ -276,7 +276,7 @@
 				</sticker>				
 			</category>
 			<category id="qual" priority="4">
-				<categoryName><![CDATA[Qualification Badge]]></categoryName>
+				<categoryName><![CDATA[Квалификационный знак]]></categoryName>
 				<sticker id="None" priority="0" defaultSticker="true" zLayer="4" colourSelected="TEXT_GREY">
 					<namePrefix/>
 					<namePostfix/>
@@ -359,49 +359,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arms through the waistcoat's arm holes and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] руки в прорези для рук жилета и [npc.verb(button)] пуговицы спереди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the waistcoat's arm holes and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name], помогая [npc2.verb(put)] [npc2.her] руки в прорези для рук жилета и [npc.verb(button)] пуговицы спереди.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] arms through the waistcoat's arm holes and hastily [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] руки в прорези для рук жилета и поспешно [npc.verb(button)] пуговицы спереди.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc.her] waistcoat and [npc.verb(pull)] [npc.her] arms out of the arm holes.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] жилет [npc.her] и [npc.verb(pull)] [npc.her] руки из прорезей.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc2.namePos] waistcoat and [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] arms out of the arm holes.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] жилет [npc2.namePos] и [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] руки из прорезей.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on the front of [npc2.namePos] waistcoat and roughly [npc.verb(pull)] [npc2.her] arms out of the arm holes.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] расстегивает пуговицы на жилете [npc2.namePos] и грубо [npc.verb(pull)] [npc2.her] руки из прорезей.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc.namePos] waistcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] пуговицы на жилете [npc.namePos].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc2.namePos] waistcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] пуговицы на жилете [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] hastily [npc.verb(button)] up the front of [npc2.namePos] waistcoat.]]>
+		  <![CDATA[[npc.Name] поспешно [npc.verb(button)] пуговицы на жилете [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] waistcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] жилет.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] waistcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] жилет.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on [npc2.namePos] waistcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] расстегивает пуговицы на [npc2.namePos] жилете.]]>
 		</otherRough>
 	</displacementText>
 	

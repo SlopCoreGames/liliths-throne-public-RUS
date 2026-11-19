@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>150</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Hot Chocolate]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Hot Chocolates]]></namePlural>
-		<description><![CDATA[An insulated metal bottle containing hot cocoa. A sticker on the side claims the sweet drink is the perfect comfort during cold winter nights. The sticker also depicts a flame salamander-boy sipping from a similar bottle while louging near an open fire.]]></description> 
+		<name><![CDATA[Горячий шоколад]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Горячие шоколады]]></namePlural>
+		<description><![CDATA[Термос из металла, наполненный горячим какао. Наклейка на боку гласит, что этот сладкий напиток — идеальное утешение в холодные зимние ночи. На наклейке также изображен мальчик-саламандра с пламенем, потягивающий из похожей бутылочки, пока он отдыхает у открытого огня.]]></description> 
 		<useDescriptor>drink</useDescriptor>
 		<sexUse>true</sexUse>
 		<combatUseAllies>true</combatUseAllies>
@@ -27,15 +27,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_ICE.getFormattedValue(5)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_ICE.getFormattedValue(5)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A warm wave of arcane energy washes over [npc.name]...
+				Теплая волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_RESISTANCE_ICE, 5)]
 		]]></applyEffects>
@@ -49,10 +49,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After unscrewing the cap, [npc.name] [npc.verb(bring)] the bottle of hot chocolate up to [npc.her] [npc.mouth]. [npc.She] [npc.is] pleased to find that the label wasn't lying about the drink being sweet and swiftly [npc.verb(drink)] the chocolaty beverage.
+		Открутив крышку, [npc.name] [npc.verb(подносит)] бутылочку горячего шоколада к [npc.her] [npc.mouth]. [npc.She] [npc.is] приятно обнаружить, что этикетка не лгала — напиток действительно сладкий, и [npc.She] быстро [npc.verb(выпивает)] шоколадный напиток.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After unscrewing the cap, [npc.name] [npc.verb(bring)] the bottle of hot chocolate up to [npc2.namePos] waiting [npc2.lips]. [npc2.name] [npc2.is] pleased to find that the label wasn't lying about the drink being sweet and swiftly [npc2.verb(drink)] the chocolaty beverage.
+		Открутив крышку, [npc.name] [npc.verb(подносит)] бутылочку горячего шоколада к ожидающей [npc2.namePos] [npc2.lips]. [npc2.name] [npc2.is] приятно обнаружить, что этикетка не лгала — напиток действительно сладкий, и [npc2.name] быстро [npc2.verb(выпивает)] шоколадный напиток.
 		]]></otherUse>
 	</useDescriptions>
 </item>

@@ -2,7 +2,7 @@
 <breast>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<coveringType>innoxia_mouse_fur</coveringType>
 	
@@ -19,18 +19,18 @@
 	<descriptorsFlat/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldMouse(mouse-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldMouse(mouse milk)].
+		У [npc.She] теперь [npc.has] [style.boldMouse(мышиные)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет вырабатывать [style.boldMouse(мышиное молоко)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] mouse-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] мышиные, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldMouse(mouse-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldMouse(mouse milk)].
+		У [npc.She] теперь [npc.has] [style.boldMouse(мышиные)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет вырабатывать [style.boldMouse(мышиное молоко)].
 	]]></crotchBoobsTransformationDescription>
 	
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] mouse-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] мышиные, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

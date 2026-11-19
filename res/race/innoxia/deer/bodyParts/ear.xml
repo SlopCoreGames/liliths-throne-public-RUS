@@ -2,14 +2,14 @@
 <ear>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<coveringType>innoxia_deer_fur</coveringType>
 	
 	<tags/>
 	
-	<name><![CDATA[ear]]></name>
-	<namePlural><![CDATA[ears]]></namePlural>
+	<name><![CDATA[ухо]]></name>
+	<namePlural><![CDATA[уши]]></namePlural>
 	
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
@@ -23,18 +23,18 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		They quickly take on a distinctly deer-like shape by growing out and narrowing down into long, slightly-folded ovals.
+		Они быстро принимают отчетливую оленью форму, вытягиваясь и сужаясь в длинные, слегка надорванные овалы.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-		 A layer of [npc.earFullDescriptionColour] quickly grows to cover them,
+		Слой [npc.earFullDescriptionColour] быстро разрастается, покрывая их,
 		#ELSE
-		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription],
+		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
-		 and as the transformation finishes, [npc.she] experimentally [npc.verb(twitch)] [npc.her] new deer-like ears back and forth.
-		 <br/>[npc.Name] now [npc.has] [style.boldGoat(deer-like ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		 и когда трансформация завершается, [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми оленьими ушками взад-вперед.
+		 <br/>[npc.Name] теперь [npc.has] [style.boldGoat(deer-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] a pair of #IF(npc.isPiercedEar()) pierced,#ENDIF deer-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара #IF(npc.isPiercedEar()) pierced,#ENDIF deer-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

@@ -14,10 +14,10 @@
 		[#flags.setObject('potionSubspecies', util.static.randomItemFrom(subspecies.static.getCommonSubspecies(util.static.newArrayListOfValues(npc.getSubspecies()))))]
 	]]></conditionalPreParsing>
 	
-	<name defaultPrepend="true"><![CDATA[Random Transformation]]></name>
+	<name defaultPrepend="true"><![CDATA[Случайная трансформация]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
-		Let's roll the dice and see what part of you transforms!
+		Давай бросим кости и посмотрим, какая часть твоего тела изменится!
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd/>

@@ -31,32 +31,32 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[lamia]]></name>
-			<namePlural><![CDATA[lamias]]></namePlural>
-			<singularMaleName><![CDATA[lamia-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[lamia-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[lamia-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[lamia-girls]]></pluralFemaleName>
+			<name><![CDATA[ламия]]></name>
+			<namePlural><![CDATA[ламии]]></namePlural>
+			<singularMaleName><![CDATA[ламия-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[ламия-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[ламии-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[ламии-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
-	<description><![CDATA[An anthropomorphic snake with the lower body of a typically-oversized feral snake, known as a 'lamia'.]]></description>
+	<description><![CDATA[Антропоморфная змея с нижней частью тела в виде огромного дикого змея, известная как «ламия».]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[naga]]></name>
-			<namePlural><![CDATA[nagas]]></namePlural>
-			<singularMaleName><![CDATA[naga]]></singularMaleName>
-			<singularFemaleName><![CDATA[naga]]></singularFemaleName>
-			<pluralMaleName><![CDATA[nagas]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[naga]]></pluralFemaleName>
+			<name><![CDATA[нага]]></name>
+			<namePlural><![CDATA[наги]]></namePlural>
+			<singularMaleName><![CDATA[нага]]></singularMaleName>
+			<singularFemaleName><![CDATA[нага]]></singularFemaleName>
+			<pluralMaleName><![CDATA[наги]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[нага]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[snake]]></feralName>
-		<feralNamePlural><![CDATA[snakes]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[snake]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[snake]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[snakes]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[snakes]]></feralPluralFemaleName>
+		<feralName><![CDATA[змея]]></feralName>
+		<feralNamePlural><![CDATA[змеи]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[змея]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[змея]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[змеи]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[змеи]]></feralPluralFemaleName>
 		<legConfiguration>TAIL_LONG</legConfiguration>
 		<sizeHeight>false</sizeHeight>
 		<size>180</size>

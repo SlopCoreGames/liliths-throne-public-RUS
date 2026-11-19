@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>80</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[tube top]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[tube tops]]></namePlural>
-		<description><![CDATA[A tube-shaped strip of stretchy material, designed to fit snugly around the chest. It's small enough to leave the wearer's stomach completely exposed.]]></description>
+		<name><![CDATA[топ-бандо]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[топы-бандо]]></namePlural>
+		<description><![CDATA[Узкая полоска эластичной ткани, плотно облегающая грудь. Она настолько коротка, что живот остается полностью открытым.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -60,25 +60,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] on the tube top.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] топ-бандо.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the tube top and then [npc.verb(pull)] it down over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь топ-бандо, а затем [npc.verb(pull)] его вниз через [npc2.her] голову.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(shove)] [npc2.namePos] [npc2.arms] through the tube top and then [npc.verb(pull)] it down over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(shove)] [npc2.namePos] [npc2.arms] сквозь топ-бандо, а затем [npc.verb(pull)] его вниз через [npc2.her] голову.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] tube top.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] топ-бандо.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] tube top up and over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] топ-бандо вверх через [npc2.her] голову.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(yank)] [npc2.namePos] tube top up and over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(yank)] [npc2.namePos] топ-бандо вверх через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 	

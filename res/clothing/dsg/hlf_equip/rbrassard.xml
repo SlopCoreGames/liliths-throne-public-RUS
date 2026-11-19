@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<authorTag><![CDATA[Sewn into the inside, a tag reads "MFD by Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне пришита бирка: «Произведено Threadworks».]]></authorTag>
 		<value>150</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[canvas brassard]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[canvas brassards]]></namePlural>
-		<description><![CDATA[A band of heavy cotton fabric designed to be worn around the arm and provide easy identification when uniforms are not available or desirable. You have never seen the insignia sewn into it before.]]></description>
+		<name><![CDATA[брезентовый нарукавник]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[брезентовые нарукавники]]></namePlural>
+		<description><![CDATA[Полоса из плотной хлопковой ткани, предназначенная для ношения на руке; она позволяет легко опознать союзника, когда форма недоступна или нежелательна. Раньше ты никогда не видел нашитого на него знака отличия.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>WRIST</slot>
@@ -49,25 +49,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the brassard around [npc.her] arm.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нарукавник на руке [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the brassard around [npc2.namePos] arm.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нарукавник на руке [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the brassard up around [npc2.namePos] arm.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] натягивает нарукавник на руку [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the brassard off of [npc.her] arm.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нарукавник с руки [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the brassard off of [npc2.namePos] arm.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] нарукавник с руки [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] the brassard off of [npc2.namePos] arm.]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] сдергивает нарукавник с руки [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

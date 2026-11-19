@@ -2,13 +2,13 @@
 <clothing>
 	<coreAttributes>
 	
-		<authorTag><![CDATA[The clothing's tag reads: 'Created by TonyJC, with implementation and editing by NeverLucky']]></authorTag>
+		<authorTag><![CDATA[На бирке написано: «Создано TonyJC, реализация и редактирование — NeverLucky»]]></authorTag>
 
 		<value>600</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[denim overalls]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[denim overalls]]></namePlural> 
-		<description><![CDATA[A one-piece made out of hardy denim. It's sturdy, and designed for continuous use.]]></description> 
+		<name><![CDATA[джинсовый комбинезон]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[джинсовый комбинезон]]></namePlural> 
+		<description><![CDATA[Цельный предмет одежды из плотного денима. Он прочный и рассчитан на долгое и интенсивное использование.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>LEG</slot>
@@ -99,72 +99,72 @@
 
 <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] up the overalls from [npc.her] feet, fastening the straps over [npc.her] shoulders and buttoning them to [npc.her] chest.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] комбинезон вверх от [npc.her] стоп, застегивая лямки на [npc.her] плечах и пристегивая их к [npc.her] груди.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] up the overalls from [npc2.her] feet, fastening the straps over [npc2.her] shoulders and buttoning them to [npc2.her] chest.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] комбинезон вверх от [npc2.her] стоп, застегивая лямки на [npc2.her] плечах и пристегивая их к [npc2.her] груди.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] up the overalls from [npc2.her] feet, fastening the straps over [npc2.her] shoulders and buttoning them to [npc2.her] chest.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] комбинезон вверх от [npc2.her] стоп, застегивая лямки на [npc2.her] плечах и пристегивая их к [npc2.her] груди.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unbutton)] the straps on [npc.her] chest, freeing [npc.her] [npc.arms] and allowing [npc.Name] to pull it down to [npc.her] feet and remove it.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbutton)] лямки на [npc.her] груди, освобождая [npc.her] [npc.arms] и позволяя [npc.Name] стянуть его до [npc.her] стоп и снять.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unbutton)] the straps on [npc2.her] chest, freeing [npc2.her] [npc2.arms] and allowing [npc.Name] to pull it down to [npc2.her] feet and remove it.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbutton)] лямки на [npc2.her] груди, освобождая [npc2.her] [npc2.arms] и позволяя [npc.Name] стянуть его до [npc2.her] стоп и снять.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unbutton)] the straps on [npc2.her] chest, freeing [npc2.her] [npc2.arms] and allowing [npc.Name] to pull it down to [npc2.her] feet and remove it.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unbutton)] лямки на [npc2.her] груди, освобождая [npc2.her] [npc2.arms] и позволяя [npc.Name] стянуть его до [npc2.her] стоп и снять.]]>
     </otherRough>
   </displacementText>
 	
   <replacementText type="UNBUTTONS">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(button)] up [npc.her] top and straps, recovering [npc.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(button)] верх и лямки [npc.her], снова прикрывая [npc.her] торс.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(button)] [npc2.namePos] overalls back up, covering [npc2.her] torso.]]>
+      <![CDATA[[npc.Name] [npc.verb(button)] [npc2.namePos] сзади, закрывая [npc2.her] торс.]]>
     </other>
     <otherRough>
-	<![CDATA[[npc.Name] quickly [npc.verb(pull)] up [npc2.namePos] overalls without even bother to adjusting it for [npc2.her].]]>    </otherRough>
+	<![CDATA[[npc.Name] быстро [npc.verb(pull)] вверх [npc2.namePos], даже не заботясь о том, чтобы поправить их на [npc2.her].]]>    </otherRough>
   </replacementText>
 
   <displacementText type="UNBUTTONS">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unbutton)] the straps on [npc.her] chest, allowing [npc.Name] to pull chest piece to expose exposing [npc.her] chest.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbutton)] лямки на [npc.her], позволяя [npc.Name] стянуть верхнюю часть, обнажая [npc.her] грудь.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] away [npc2.namePos] straps and top down to hang loose, exposing [npc2.her] chest.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] лямки [npc2.namePos] и верхнюю часть вниз, чтобы они свободно свисали, обнажая [npc2.her] грудь.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(yank)] down [npc2.her] top, letting it hang loosely and exposing [npc2.her] chest.]]>
+      <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.her] вниз, позволяя ей свободно висеть и обнажая [npc2.her] грудь.]]>
     </otherRough>
   </displacementText>
   
   <replacementText type="PULLS_DOWN">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] up the overalls from [npc.her] feet, fastening the straps over [npc.her] shoulders and buttoning them to place.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] вверх от самых ног, застегивая лямки на [npc.her] плечах и пристегивая их на место.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] up the overalls from [npc2.her] feet, fastening the straps over [npc2.her] shoulders and buttoning them to place]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.her] вверх от самых ног, застегивая лямки на [npc2.her] плечах и пристегивая их на место.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] up the overalls from [npc2.her] feet, fastening the straps over [npc2.her] shoulders and buttoning them to [npc2.her] chest.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] комбинезон вверх от [npc2.her] стоп, застегивая лямки на [npc2.her] плечах и пристегивая их к [npc2.her] груди.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="PULLS_DOWN">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unbutton)] the straps on [npc.her] chest, freeing [npc.her] [npc.arms] and allowing [npc.Name] to pull it down to [npc.her] ankles.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbutton)] лямки на [npc.her], освобождая [npc.her] [npc.arms] и позволяя [npc.Name] стянуть их до самых [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unbutton)] the straps on [npc2.her] chest, freeing [npc2.her] [npc2.arms] and allowing [npc.Name] to pull it down to [npc2.her] ankles.]]>
+      <![CDATA[[npc.Name] [npc.verb(unbutton)] лямки на [npc2.her], освобождая [npc2.her] [npc2.arms] и позволяя [npc.Name] стянуть их до самых [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unbutton)] the straps on [npc2.her] chest, freeing [npc2.her] [npc2.arms] and allowing [npc.Name] to pull it down to [npc2.her] ankles.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unbutton)] лямки на [npc2.her], освобождая [npc2.her] [npc2.arms] и позволяя [npc.Name] стянуть их до самых [npc2.her].]]>
     </otherRough>
   </displacementText>
   

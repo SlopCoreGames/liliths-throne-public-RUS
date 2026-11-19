@@ -30,9 +30,9 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Restart blowjob]]></title>
+	<title><![CDATA[Начать минет заново]]></title>
 	<tooltip><![CDATA[
-		This feels too good to stop now!
+		Это слишком хорошо, чтобы останавливаться!
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -40,9 +40,9 @@
 				[#sex.getNumberOfOrgasms(dale)==1]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Although he was initially against the idea of receiving a blowjob, Dale is now eager for you to suck his cock. With your [pc.lips+] no longer wrapped around his thick, dark dick, he pushes his flared head against your mouth and grunts under his breath, [dale.speechNoEffects(Keep going, [pc.name]...)]
+				Хотя поначалу Дейл и сомневался, стоит ли ему принимать минет, теперь он жаждет, чтобы ты сосала его член. Поскольку твои [pc.lips+] больше не обхватывают его толстый темный член, он упирается головкой тебе в рот и глухо рычит: [dale.speechNoEffects(Продолжай, [pc.name]...)]
 				<br/><br/>
-				More than happy to do as he asks, you slide your [pc.tongue+] over his hot, throbbing cock before taking it into your mouth and continuing to give your donkey-boy lover an enthusiastic blowjob...
+				С радостью выполняя его просьбу, ты скользишь своими [pc.tongue+] по его горячему, пульсирующему члену, а затем берешь его в рот, с энтузиазмом продолжая ласкать своего ослика-любовника...
 			]]></text>
 		</description>
 		<description>
@@ -50,9 +50,9 @@
 				[#sex.getNumberOfOrgasms(dale)!=1]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				With his initial hesitation now completely forgotten, Dale lets out a disappointed grunt as he feels that your [pc.lips+] are no longer wrapped around his thick cock. Grabbing his hot, dark-skinned dick in one hand, he pushes his wide, flared head against your mouth and groans, [dale.speechNoEffects(Don't stop now, [pc.name]...)]
+				Забыв о первоначальных сомнениях, Дейл разочарованно рычит, почувствовав, что твои [pc.lips+] больше не обхватывают его толстый член. Схватив свой горячий темный член одной рукой, он упирается широкой головкой тебе в рот и стонет: [dale.speechNoEffects(Не останавливайся, [pc.name]...)]
 				<br/><br/>
-				Happy to see how enthusiastic Dale is, you eagerly plant a wet kiss on the underside of his hot, musky shaft, before parting your [pc.lips] and taking his throbbing cock into your mouth...
+				Видя, как Дейл воодушевлен, ты с жадностью оставляешь влажный поцелуй на нижней стороне его горячего мускусного ствола, прежде чем раздвинуть [pc.lips] и заглотить его пульсирующий член...
 			]]></text>
 		</description>
 	</descriptions>

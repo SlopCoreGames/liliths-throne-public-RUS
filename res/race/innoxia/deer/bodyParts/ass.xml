@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<coveringType>innoxia_deer_fur</coveringType>
 	
@@ -15,10 +15,10 @@
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldGoat(deer-like)], [npc.assholeFullDescription].
+		У [npc.She] теперь [npc.has] [style.boldGoat(deer-like)], [npc.assholeFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a deer-like, [npc.anusFullDescription(true)]
+		У [npc.SheHasFull] оленья, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

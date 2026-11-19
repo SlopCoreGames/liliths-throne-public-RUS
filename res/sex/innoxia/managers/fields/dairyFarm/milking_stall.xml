@@ -17,39 +17,39 @@
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
 			#IF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn1)
-				The trainees to either side of you look across as you [pc.step] up behind their neighbour, and as they realise that you're about to fuck her, they each bite their lips and let out excited squeals...
+				Стажёрки по обе стороны от тебя переглядываются, когда ты [pc.step] сзади их соседки, и, осознав, что ты сейчас собираешься её оттрахать, они закусывают губы и издают возбуждённые визги...
 			#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn2)
-				The heifers to either side of you look across as you [pc.step] up behind their neighbour, and as they realise that you're about to fuck her, they each flash you a knowing grin and let out horny whines...
+				Телки по обе стороны от тебя переглядываются, когда ты [pc.step] сзади их соседки, и, осознав, что ты сейчас собираешься её оттрахать, они понимающе ухмыляются и издают похотливые стоны...
 			#ELSE
-				The cows to either side of you look across as you [pc.step] up behind their neighbour, and as they realise that you're about to fuck her, they each flash you a warm smile and let out soft moans...
+				Коровы по обе стороны от тебя переглядываются, когда ты [pc.step] сзади их соседки, и, осознав, что ты сейчас собираешься её оттрахать, они тепло улыбаются тебе и издают мягкие стоны...
 			#ENDIF
 		]]></startingDescription>
 		<randomDescriptions enabled="false">
 			<description><![CDATA[
 				#IF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn1)
-					One of the neighbouring trainees excitedly shouts out some lewd words of encouragement.
+					Одна из стоящих рядом стажёртк азартно выкрикивает непристойные слова поддержки.
 				#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn2)
-					One of the neighbouring heifers teases you with some lewd words of encouragement.
+					Одна из соседних телок дразнит тебя непристойными словами ободрения.
 				#ELSE
-					One of the neighbouring cows offers you some lewd words of encouragement.
+					Одна из соседних коров подбадривает тебя похотливыми словами.
 				#ENDIF
 			]]></description>
 			<description><![CDATA[
 				#IF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn1)
-					An adjacent trainee lets out an erotic whine as she watches you use her neighbour.
+					Стоящая рядом стажёрка издаёт эротический стон, наблюдая за тем, как ты трахаешь её соседку.
 				#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn2)
-					An adjacent heifer lets out an erotic moan as she watches you use her neighbour.
+					Стоящая рядом телка издаёт эротический стон, наблюдая за тем, как ты трахаешь её соседку.
 				#ELSE
-					An adjacent cow lets out a gentle moan as she watches you use her neighbour.
+					Стоящая рядом корова издаёт нежный стон, наблюдая за тем, как ты трахаешь её соседку.
 				#ENDIF
 			]]></description>
 			<description><![CDATA[
 				#IF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn1)
-					The neighbouring trainees let out an erotic, synchronised squeal as they watch the lewd display you're putting on for them.
+				Стажёртки по соседству издают синхронный эротичный визг, наблюдая за тем, какое пошлое зрелище ты им устраиваешь.
 				#ELSEIF(pc.getLocationPlaceType()==PLACE_TYPE_innoxia_fields_dairyFarm_barn2)
-					The neighbouring heifers let out a lewd, synchronised moan as they watch the erotic display you're putting on for them.
+					Соседние телки издают похотливый, синхронный стон, наблюдая за тем эротическим зрелищем, которое ты им устраиваешь.
 				#ELSE
-					The neighbouring cows let out a soft, synchronised moan as they watch the lewd display you're putting on for them.
+					Соседние коровы издают мягкий, синхронный стон, наблюдая за тем непристойным зрелищем, которое ты им устраиваешь.
 				#ENDIF
 			]]></description>
 			<description><![CDATA[]]></description>

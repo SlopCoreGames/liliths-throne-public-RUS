@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic clubber (masculine)]]></name>
+		<name><![CDATA[обычный клубный прикид (мужской)]]></name>
 		
-		<description><![CDATA[Masculine clubbing clothing.]]></description>
+		<description><![CDATA[Мужская одежда для клубов.]]></description>
 		
 		<femininity>MASCULINE</femininity>
 		

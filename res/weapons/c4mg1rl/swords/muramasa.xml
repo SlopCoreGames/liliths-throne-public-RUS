@@ -2,7 +2,7 @@
 <weapon>
 	<coreAttributes>
 	
-		<clothingAuthorTag><![CDATA[A marking discreetly engraved into the sword's handle informs you that it was made by 'C4MG1RL'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Едва заметная гравировка на рукояти меча сообщает тебе, что он был создан мастером 'C4MG1RL'.]]></clothingAuthorTag>
 		
 		<value>40000</value> 
 		
@@ -12,11 +12,11 @@
 		
 		<determiner><![CDATA[]]></determiner>
 		
-		<name><![CDATA[Muramasa]]></name>
+		<name><![CDATA[Мурамаса]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Muramasas]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Мурамасы]]></namePlural> 
 		
-		<description><![CDATA[One of the youko's legendary cursed swords, Muramasa has been masterfully crafted to house and channel the wielder's arcane power. It faintly crackles and hums with arcane power, even when sheathed, almost as though it can't wait to cut down its next foe...]]></description> 
+		<description><![CDATA[Один из легендарных проклятых мечей ёко — Мурамаса. Он искусно создан для того, чтобы вмещать и направлять арканную силу владельца. Даже в ножнах он едва слышно гудит и потрескивает от магической мощи, словно не в силах дождаться момента, чтобы сразить очередного врага...]]></description> 
 		
 		<attackDescriptor>cut</attackDescriptor>
 		
@@ -26,9 +26,9 @@
 		
 		<weaponSet>c4mg1rl_trickster</weaponSet>
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] Muramasa at [npc.her] hip, so that [npc.she] may draw it at a moment's notice.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] Мурамасу на [npc.her] бедре, чтобы [npc.she] могла выхватить её в любой миг.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] Muramasa, before putting it away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] Мурамасу, прежде чем убрать её.]]></unequipText>
 		
 		<imageName>muramasa_sheathed.svg</imageName> 
 		
@@ -76,26 +76,26 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(slash)] [npc.her] Muramasa at [npc2.name], grinning as the ethereal arcane blade travels through [npc2.her] body!
+		[npc.Name] [npc.verb(slash)] [npc.her] Мурамасой по [npc2.name], ухмыляясь, пока эфирное арканное лезвие проходит сквозь тело [npc2.her]!
 		]]></hitText>
 		<hitText><![CDATA[
-		Slashing out at [npc2.name] with [npc.her] Muramasa, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the ethereal blade travel straight through [npc2.her] body!
+		Нанося удар по [npc2.name] с помощью [npc.her] Мурамасы, [npc.name] [npc.verb(grin)], когда [npc.she] [npc.verb(see)] , как эфирное лезвие проходит прямо сквозь тело [npc2.her]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] Muramasa, causing [npc2.herHim] to stagger back as the ethereal blade passes right through [npc2.her] chest!
+		[npc.Name] [npc.verb(slash)] по [npc2.name], используя [npc.her] Мурамасу, заставляя [npc2.herHim] пошатнуться, пока эфирное лезвие проходит прямо сквозь грудь [npc2.her]!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(slash)] [npc.her] Muramasa at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(slash)] [npc.her] Мурамасой по [npc2.name], но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Slashing out at [npc2.name] with [npc.her] Muramasa, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc2.name] наносит рубящий удар [npc.her] мечом Мурамаса, но [npc.name] [npc.verb(let)] разочарованный крик вырывается из уст [npc.she], когда [npc.her] промахивается по цели!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(slash)] at [npc2.name] with [npc.her] Muramasa, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(slash)] по [npc2.name] мечом [npc.her] Мурамаса, но [npc.she] [npc.verb(miss)] [npc.her] промахивается!
 		]]></missText>
 	</missDescriptions>
 	

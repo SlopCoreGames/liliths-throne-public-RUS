@@ -2,7 +2,7 @@
 <penis>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<coveringType>PENIS</coveringType>
 	
@@ -11,21 +11,21 @@
 	<additionalTransformationEffect/>
 	
 	<namesMasculine>
-		<name><![CDATA[sheep-]]></name>
-		<name><![CDATA[ram-]]></name>
+		<name><![CDATA[овечий-]]></name>
+		<name><![CDATA[бараньим-]]></name>
 	</namesMasculine>
 	<namesPluralMasculine>
-		<name><![CDATA[sheep-]]></name>
-		<name><![CDATA[ram-]]></name>
+		<name><![CDATA[овечий-]]></name>
+		<name><![CDATA[бараньим-]]></name>
 	</namesPluralMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[sheep-]]></name>
-		<name><![CDATA[ewe-]]></name>
+		<name><![CDATA[овечий-]]></name>
+		<name><![CDATA[овечьим-]]></name>
 	</namesFeminine>
 	<namesPluralFeminine>
-		<name><![CDATA[sheep-]]></name>
-		<name><![CDATA[ewe-]]></name>
+		<name><![CDATA[овечий-]]></name>
+		<name><![CDATA[овечьим-]]></name>
 	</namesPluralFeminine>
 	
 	<descriptors/>
@@ -35,12 +35,12 @@
 	</defaultPenetrationModifiers>
 	
 	<transformationDescription><![CDATA[
-		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick sheath suddenly grows around the base of [npc.her] shaft.
-		<br/>[npc.She] now [npc.has] a [style.boldSheep(sheep-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		Невольно застонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная оболочка.
+		<br/>[npc.She] теперь [npc.has] [style.boldSheep(овечий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
 		<br/>[npc.She] [npc.has] [style.boldSheep([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE sheep#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldSheep(sheep cum)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] sheep cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] овечий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
 	]]></bodyDescription>
 </penis>

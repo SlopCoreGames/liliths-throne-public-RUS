@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[crotchless panties]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[crotchless panties]]></namePlural>
-		<description><![CDATA[These panties have a strip of fabric missing in the most vital area, leaving their wearer's genitalia and asshole completely exposed.]]></description>
+		<name><![CDATA[трусики с открытой промежностью]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[трусики с открытой промежностью]]></namePlural>
+		<description><![CDATA[В этих трусиках отсутствует полоска ткани в самом интимном месте, из-за чего гениталии и анус их обладательницы остаются полностью открытыми.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>GROIN</slot>
@@ -46,25 +46,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the crotchless panties, before pulling them up to cover [npc.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в трусики с открытой промежностью, а затем натягивает их, чтобы прикрыть интимные места [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the crotchless panties up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] трусики с открытой промежностью вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the crotchless panties up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] трусики с открытой промежностью вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] crotchless panties down and [npc.verb(kick)] them off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] трусики без ластовицы вниз и [npc.verb(kick)] сбрасывает их ногой [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] down [npc2.namePos] crotchless panties and [npc.verb(pull)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] вниз [npc2.namePos] трусики без ластовицы и [npc.verb(pull)] их с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] crotchless panties and [npc.verb(yank)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] вниз [npc2.namePos] трусики с открытой промежностью и [npc.verb(yank)] срывает их с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

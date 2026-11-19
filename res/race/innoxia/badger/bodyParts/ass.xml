@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_fur</coveringType>
 	
@@ -14,11 +14,9 @@
 	<descriptorsMasculine/>
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldBadger(badger-like)], [npc.assholeFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[[npc.She] теперь [npc.has] [style.boldBadger(badger-like)], [npc.assholeFullDescription].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a badger-like, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] — [npc.anusFullDescription(true)], напоминающая барсучью.
 	]]></bodyDescription>
 </ass>

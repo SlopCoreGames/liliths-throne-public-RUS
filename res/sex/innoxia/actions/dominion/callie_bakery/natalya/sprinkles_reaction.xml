@@ -23,22 +23,22 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Decorated doughnut]]></title>
+	<title><![CDATA[Украшенный пончик]]></title>
 	<tooltip><![CDATA[
-		The [style.mule] slut has turned your asshole into a fancy doughnut!
+		Эта [style.mule] шлюха превратила твой анус в изысканный пончик!
 	]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
 				#IF(npc==natalya)
-					[natalya.speechNoEffects([style.Mule]! Fetch me a mirror and show me what it looks like!)] Mistress Natalya demands. Callie helpfully points to one side of the counter, and you quickly discover and retrieve a small mirror from the place where the horse-girl motioned towards. Holding this mirror bahind your Mistress's feral equine rump, you enable her to turn her head and see the state of her asshole.
+					[natalya.speechNoEffects([style.Mule]! Живо принеси мне зеркало, я хочу на это взглянуть!)] — требует госпожа Наталья. Кэлли услужливо указывает на один край прилавка, и ты быстро находишь и достаешь маленькое зеркальце там, куда махнула кобылоголовая. Поднеся зеркало к дикому лошадиному заду своей госпожи, ты позволяешь ей повернуть голову и увидеть, во что превратилось её отверстие.
 					
 					<br/><br/>
 					
-					[natalya.speechNoEffects(Excellent job, [style.mule]!)] the centauress happily declares, before flashing you a horny grin and teasing, [natalya.speechNoEffects(Now you can eat it!)]
+					[natalya.speechNoEffects(Отличная работа, [style.mule]!)] — радостно объявляет кентаврисса, после чего одаривает тебя похотливой ухмылкой и дразнит: [natalya.speechNoEffects(А теперь можешь его съесть!)]
 					
 				#ELSE
-					[callie.speechNoEffects(Great job, [pc.name],)] Callie giggles, before biting her lip and moaning, [callie.speechNoEffects(Now for the best part...)]
+					[callie.speechNoEffects(Отличная работа, [pc.name],)] — хихикает Кэлли, прежде чем прикусить губу и простонать: [callie.speechNoEffects(А теперь самое вкусное...)]
 				#ENDIF
 			]]></text>
 		</description>

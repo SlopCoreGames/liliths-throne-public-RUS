@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>300</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[joggers]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[joggers]]></namePlural>
-		<description><![CDATA[A pair of joggers made from of a blend of stretchy material and cotton fabric, perfectly appropriate for lounging or going for a morning-run.]]></description>
+		<name><![CDATA[джоггеры]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[джоггеры]]></namePlural>
+		<description><![CDATA[Пара джоггеров из смеси эластичного материала и хлопка — идеальный вариант как для того, чтобы поваляться на диване, так и для утренней пробежки.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -67,25 +67,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the joggers, before pulling them up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в джоггеры, а затем натягивает их на талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the joggers, before pulling them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в джоггеры, после чего натягивает их на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the joggers, before yanking them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в джоггеры, а затем резко натягивает их на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] joggers, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] джоггеры [npc.her] вниз, а затем стягивает их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] joggers, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] джоггеры [npc2.namePos] вниз, а затем стягивает их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] joggers, before yanking them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] джоггеры [npc2.namePos] вниз, а затем срывает их с ног.]]>
     </otherRough>
   </displacementText>
 	

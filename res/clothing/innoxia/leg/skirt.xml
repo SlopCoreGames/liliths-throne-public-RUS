@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>150</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[skirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[skirts]]></namePlural>
-		<description><![CDATA[An ordinary skirt, made out of soft fabric and sporting an elasticated waistband. It reaches down to just above the wearer's knees.]]></description> 
+		<name><![CDATA[юбка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[юбки]]></namePlural>
+		<description><![CDATA[Обычная юбка из мягкой ткани на эластичном поясе. Она доходит почти до колен.]]></description> 
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>LEG</slot>
@@ -49,25 +49,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(step)] into the skirt and [npc.verb(pull)] it up to fit around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(step)] в юбку и [npc.verb(pull)] её вверх, чтобы она облегала талию [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the skirt, before pulling it up around [npc2.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в юбку, а затем натягивает её на талию [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the skirt, before yanking it up around [npc2.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в юбку, после чего резко натягивает её на талию [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] skirt, before slipping it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] юбку [npc.her] вниз, а затем стягивает её.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] skirt, before slipping it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] юбку [npc2.namePos] вниз, а затем стягивает её.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] skirt, before yanking it off.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] юбку [npc2.namePos] вниз и срывает её.]]>
 		</otherRough>
 	</displacementText>
   

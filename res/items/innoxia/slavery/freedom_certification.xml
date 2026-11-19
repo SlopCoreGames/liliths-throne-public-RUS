@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>50000</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Freedom Certification]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Freedom Certifications]]></namePlural>
-		<description><![CDATA[An official document which has the power to declare a slave as being legally freed. While it carries the Slavery Administration's official seal, both the slave's name and the owner's signature still need to be filled out before it can be considered a legitimate legal document.]]></description> 
+		<name><![CDATA[Сертификат свободы]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Сертификаты свободы]]></namePlural>
+		<description><![CDATA[Официальный документ, дающий право объявить раба юридически свободным. Несмотря на наличие официальной печати Администрации Рабства, для того чтобы документ обрел законную силу, в нем должны быть вписаны имя раба и подпись владельца.]]></description> 
 		
 		<useDescriptor>examine</useDescriptor>
 		
@@ -23,12 +23,12 @@
 		<colourTertiary/>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.colourGood(Sets a slave free)]]]></line>
+			<line><![CDATA[[style.colourGood(Освобождает раба)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 		<p>
-			While the text is extremely boring legal talk, the enchanted paper upon which it's printed is quite interesting, as no matter how you bend or even attempt to tear it, it seems impossible to inflict any sort of damage to it. Both the signature and the wax seal at the bottom of the page are a dark purple in colour, and both appear to also be enchanted, as they emit a steady, faint purple glow.
+			Хотя текст представляет собой крайне скучную юридическую тягомотину, зачарованная бумага, на которой он напечатан, весьма любопытна: как бы ты ни сгибал её или ни пытался порвать, нанести ей хоть какой-то урон кажется невозможным. И подпись, и сургучная печать в нижней части страницы имеют темно-пурпурный цвет и тоже кажутся зачарованными, так как испускают ровное, слабое фиолетовое свечение.
 		</p>
 		]]></applyEffects>
 		
@@ -38,10 +38,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(take)] a closer look at the Freedom Certification...
+		[npc.Name] [npc.verb(take)] внимательнее рассмотреть Сертификат свободы...
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(show)] off the Freedom Certification to [npc2.name], who is duly impressed by [npc.her] possession of it...
+		[npc.Name] [npc.verb(show)] Сертификат свободы [npc2.name], который должным образом впечатлен тем, что [npc.her] владеет им...
 		]]></otherUse>
 	</useDescriptions>
 

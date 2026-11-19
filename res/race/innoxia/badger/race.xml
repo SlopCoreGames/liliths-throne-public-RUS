@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[badger-morph]]></name>
-	<namePlural><![CDATA[badger-morphs]]></namePlural>
+	<name><![CDATA[барсукоморф]]></name>
+	<namePlural><![CDATA[барсукоморфы]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[badger]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[барсук]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[badger]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[барсук]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[badger]]></defaultTransformName>
+	<defaultTransformName><![CDATA[барсук]]></defaultTransformName>
 	
 	<colour>innoxia_badger</colour>
 	

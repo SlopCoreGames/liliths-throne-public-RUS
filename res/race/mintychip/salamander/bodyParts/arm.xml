@@ -10,7 +10,7 @@
 	<race>mintychip_salamander</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[salamander]]></transformationName>
+	<transformationName><![CDATA[саламандра]]></transformationName>
 	
 	<!-- The id of the material covering this arm.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -36,8 +36,8 @@
 	
 	<!-- The singular and plural name of this arm type.
 	These should be left as 'arm' and 'arms' for standard arm types, and changed to 'wing' and 'wings' if your arm type are wings (such as those found on harpies or bat-morphs). -->
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural> 
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
@@ -52,8 +52,8 @@
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's hands: -->
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>salamander-like</descriptor>
 		<descriptor>scaled</descriptor>
@@ -65,8 +65,8 @@
 	</handDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's fingers: -->
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>scaled</descriptor>
 		<descriptor>salamander-like</descriptor>
@@ -80,13 +80,13 @@
 	<!-- The description which is shown when a character transforms to obtain this arm type.
 	This description immediately follows a brief description of the arm type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		Within a matter of moments, a layer of [npc.armFullDescription] has quickly grown over them, and, looking down, [npc.she] [npc.verb(see)] [npc.her] new scales growing over the backs of [npc.her] hands as sharp claws push out to replace [npc.her] fingernails. At [npc.her] upper-biceps, [npc.her] scales smoothly transitions into the [npc.skin] that's covering the rest of [npc.her] body.
-		<br/>As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldSalamander(salamander-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+		Буквально за считанные мгновения их покрывает слой [npc.armFullDescription], и, взглянув вниз, [npc.she] [npc.verb(see)] [npc.her] новую чешую, прорастающую на спинах [npc.her] рук, в то время как острые когти прорываются наружу, заменяя [npc.her] ногти. На [npc.her] верхней части бицепса [npc.her] чешуя плавно переходит в [npc.skin], покрывающую остальное тело [npc.her].
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остается с антропоморфными, [style.boldSalamander(salamander-like arms and hands)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands are formed into anthropomorphic, salamander-like hands, complete with sharp claws.
+	[npc.She] [npc.has] [npc.armRows] руки, которые [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] руки превращаются в антропоморфные, похожие на лапы саламандры, снабженные острыми когтями.
 	]]></bodyDescription>
 	
 </arm>

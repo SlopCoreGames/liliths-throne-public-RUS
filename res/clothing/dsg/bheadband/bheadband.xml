@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<clothingAuthorTag><![CDATA[Metallic embroidery on the underside of the headband reads 'MFD by DSG Costume Supply Co, Ltd'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[На внутренней стороне ободка металлической вышивкой нанесено: «Изготовлено MFD by DSG Costume Supply Co, Ltd».]]></clothingAuthorTag>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[bunny headband]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[bunny headbands]]></namePlural>
-		<description><![CDATA[A headband with stylised bunny ears attached to the top, designed to keep your hair pushed back out of your face.]]></description>
+		<name><![CDATA[заячий ободок]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[заячьи ободки]]></namePlural>
+		<description><![CDATA[Ободок со стилизованными заячьими ушками, прикрепленными сверху; он предназначен для того, чтобы убирать волосы от лица.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -32,7 +32,7 @@
 				</sticker>
 				<sticker id="inserts" priority="2" defaultSticker="false" zLayer="1">
 					<stickerName><![CDATA[Detailed]]></stickerName>
-					<namePrefix priority="1"><![CDATA[detailed ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[детализированный ]]></namePrefix>
 					<namePostfix/>
 					<descriptionModification/>
 					<imageName>bheadband_inserts.svg</imageName>

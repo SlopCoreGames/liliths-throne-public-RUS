@@ -11,17 +11,17 @@
 			[#targetedBody.getVagina().setEggLayer(null, false)]
 		#ENDIF
 	]]></applyRaceChanges>
-	<name><![CDATA[snake-morph]]></name>
-	<namePlural><![CDATA[snake-morphs]]></namePlural>
-	<nameSillyMode><![CDATA[snek-morph]]></nameSillyMode>
-	<namePluralSillyMode><![CDATA[snek-morphs]]></namePluralSillyMode>
+	<name><![CDATA[змеиный морф]]></name>
+	<namePlural><![CDATA[змеиные морфы]]></namePlural>
+	<nameSillyMode><![CDATA[змейный морф]]></nameSillyMode>
+	<namePluralSillyMode><![CDATA[змейные морфы]]></namePluralSillyMode>
 	<nameFeral>
-		<name legConfiguration="TAIL_LONG"><![CDATA[snake]]></name>
+		<name legConfiguration="TAIL_LONG"><![CDATA[змея]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="TAIL_LONG"><![CDATA[snakes]]></name>
+		<name legConfiguration="TAIL_LONG"><![CDATA[змеи]]></name>
 	</nameFeralPlural>
-	<defaultTransformName><![CDATA[snake]]></defaultTransformName>
+	<defaultTransformName><![CDATA[змея]]></defaultTransformName>
 	<colour>NoStepOnSnek_snake</colour>
 	<disposition>UNPREDICTABLE</disposition>
 	<racialClass>REPTILE</racialClass>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>350</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[men's geta]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[men's geta]]></namePlural>
-		<description><![CDATA[These sandals have a slightly elevated wooden base, and are held onto the foot by means of a cloth thong.]]></description>
+		<name><![CDATA[мужские гэта]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[мужские гэта]]></namePlural>
+		<description><![CDATA[Эти сандалии имеют слегка приподнятую деревянную подошву и крепятся к стопе с помощью тканевой перемычки.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>MASCULINE</femininity>
 		<slot>FOOT</slot> 
@@ -53,25 +53,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] into the geta.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] [npc.feet] в гэта.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] into the geta.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] [npc2.feet] в гэта.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] [npc2.feet] into the geta.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.namePos] [npc2.feet] в гэта.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slip)] off [npc.her] geta.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] с [npc.her] гэта.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slip)] off [npc2.namePos] geta.]]>
+			<![CDATA[[npc.Name] [npc.verb(slip)] с [npc2.namePos] гэта.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] geta.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] гэта.]]>
 		</otherRough>
 	</displacementText>
 	

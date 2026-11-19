@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[crossed blades]]></name>
+		<name><![CDATA[скрещенные клинки]]></name>
 		
-		<description><![CDATA[A stylised depiction of a pair of sabres, crossed over one another to form an 'X'.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a pair of crossed sabres]]></bodyOverviewDescription> 
+		<description><![CDATA[Стилизованное изображение пары сабель, скрещенных между собой в форме буквы «X».]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с изображением пары скрещенных сабель]]></bodyOverviewDescription> 
 		
 		<imageName>crossed_blades.svg</imageName> 
 		

@@ -6,7 +6,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[A Cardboard Warrior]]></name>
+			<name><![CDATA[Картонный воин]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				15
 			]]></chanceToTrigger>

@@ -51,20 +51,20 @@
 	<basicDescriptionId>PANTHER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PANTHER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[tiger-morph]]></name>
-	<namePlural><![CDATA[tiger-morphs]]></namePlural>
-	<singularMaleName><![CDATA[tiger-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[tiger-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[tiger-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[tiger-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic tiger, known as a 'tiger-morph' when bipedal, and a 'tigertaur' when the lower body is that of a feral tiger. To be identified as a tiger-morph, a character must be a panther with striped fur.]]></description>
+	<name><![CDATA[тигроморф]]></name>
+	<namePlural><![CDATA[тигроморфы]]></namePlural>
+	<singularMaleName><![CDATA[тигропарень]]></singularMaleName>
+	<singularFemaleName><![CDATA[тигродевушка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[тигропарни]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[тигродевушки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный тигр, называемый «тигроморфом», когда он передвигается на двух ногах, и «тигротавром», если его нижняя часть тела представляет собой дикого тигра. Чтобы считаться тигроморфом, персонаж должен быть пантерой с полосатым мехом.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[tiger]]></feralName>
-		<feralNamePlural><![CDATA[tigers]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[tiger]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[tigeress]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[tigers]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[tigeresses]]></feralPluralFemaleName>
+		<feralName><![CDATA[тигр]]></feralName>
+		<feralNamePlural><![CDATA[тигры]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[тигриный]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[тигрица]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[тигры]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[тигрицы]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>100</size>
@@ -76,9 +76,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>true</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body is extremely strong, and [npc.sheIsFull] capable of great feats of strength.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] обладает невероятной силой, и [npc.sheIsFull] способна на великие подвиги.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="35">MAJOR_PHYSIQUE</attribute>
 		<attribute value="0">MAJOR_ARCANE</attribute> 

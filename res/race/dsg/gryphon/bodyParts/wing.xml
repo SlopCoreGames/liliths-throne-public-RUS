@@ -14,7 +14,7 @@
 	<race>dsg_gryphon</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[gryphon]]></transformationName>
+	<transformationName><![CDATA[грифон]]></transformationName>
 	
 	<!-- The id of the material covering this wing.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -25,33 +25,33 @@
 	<allowsFlight>true</allowsFlight>
 	
 	<!-- The singular and plural names of this wing. -->
-	<name><![CDATA[wing]]></name>
-	<namePlural><![CDATA[wings]]></namePlural>
+	<name><![CDATA[крыло]]></name>
+	<namePlural><![CDATA[крылья]]></namePlural>
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's wing of this type.
 	Can be left blank. -->
 	<descriptorsMasculine>
-		<descriptor><![CDATA[feathered]]></descriptor>
+		<descriptor><![CDATA[оперенные]]></descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor><![CDATA[feathered]]></descriptor>
+		<descriptor><![CDATA[оперенные]]></descriptor>
 	</descriptorsFeminine>
 	
 	<!-- The description which is shown when a character transforms to obtain this wing type.
 	This description immediately follows a brief description of the wing type beginning to transform. -->
 	<transformationDescription><![CDATA[
 		#IF(npc.getLegConfiguration().isWingsOnLegConfiguration())
-			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered wings push out from the sides of [npc.her] [npc.legConfiguration] body.
+			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить невольный стон удовольствия, когда пара [npc.wingSize] оперенных крыльев с силой прорывается сквозь [npc.her] [npc.legConfiguration] тело.
 		#ELSE
-			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip] to try and suppress an unexpected moan of pleasure as a pair of [npc.wingSize], feathered wings push out from [npc.her] shoulder blades.
+			[npc.She] [npc.verb(bite)] [npc.her] [npc.lip], пытаясь подавить невольный стон удовольствия, когда пара [npc.wingSize] оперенных крыльев прорывается сквозь лопатки [npc.her].
 		#ENDIF
-		<br/>[npc.Name] now [npc.has] [style.boldGryphon(feathered wings)].
+		<br/>[npc.Name] теперь [npc.has] [style.boldGryphon(feathered wings)].
 	]]></transformationDescription>
 	
 	<!-- How this wing is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.sheHasFull] a pair of [npc.wingSize], feathered wings, which are [npc.materialDescriptor] [npc.wingFullDescription(true)].
+		[npc.sheHasFull] пара [npc.wingSize] пернатых крыльев, которые [npc.materialDescriptor] [npc.wingFullDescription(true)].
 	]]></bodyDescription>
 	
 </wing>

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>180</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[sports bra]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[sports bras]]></namePlural>
-		<description><![CDATA[An elastic sports bra that's designed to firmly support the wearer's breasts during exercise.]]></description>
+		<name><![CDATA[спортивный топ]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[спортивные топы]]></namePlural>
+		<description><![CDATA[Эластичный спортивный топ, созданный для надежной поддержки груди во время физических упражнений.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -59,25 +59,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the sports bra down over [npc.her] head, before securing it around [npc.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] спортивный топ через [npc.her] голову, а затем застегивает его вокруг [npc.her] груди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the sports bra down over [npc2.namePos] head, before securing it around [npc2.her] chest.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] спортивный топ через [npc2.namePos] голову, а затем застегивает его вокруг [npc2.her] груди.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the sports bra down over [npc2.namePos] head, before securing it around [npc2.her] chest.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] спортивный топ через [npc2.namePos] голову, а затем застегивает его вокруг [npc2.her] груди.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] sports bra off over [npc.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] спортивный топ [npc.her] через [npc.her] голову.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] sports bra off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] спортивный топ [npc2.namePos] через [npc2.her] голову.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] sports bra off over [npc2.her] head.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] спортивный топ [npc2.namePos] через [npc2.her] голову.]]>
 		</otherRough>
 	</displacementText>
 	

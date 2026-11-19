@@ -2,7 +2,7 @@
 <torso>
 	<race>innoxia_goat</race>
 	
-	<transformationName><![CDATA[goat]]></transformationName>
+	<transformationName><![CDATA[коза]]></transformationName>
 	
 	<coveringType>innoxia_goat_fur</coveringType>
 	
@@ -10,12 +10,10 @@
 	
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with goat-like fur. Although it's relatively close-cropped and smooth over [npc.her] stomach and [npc.breasts], it's thicker on other parts of [npc.her] torso.
-		<br/>[npc.Name] now [npc.has] [style.boldGoat(goat-like)], [npc.skinFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Спустя всего несколько мгновений трансформация завершается, и [npc.she] [npc.verb(let)] глубоко вздохнуть — зуд наконец утихает, оставляя [npc.her] торс покрытым козьей шерстью. Хотя на [npc.her] животе и [npc.breasts] она относительно короткая и гладкая, на остальных частях [npc.her] торса шерсть заметно гуще.
+<br/>[npc.Name] теперь [npc.has] [style.boldGoat(goat-like)], [npc.skinFullDescription].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+		Торс [npc.Her] обладает [npc.a_femininity(true)] видом и [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
 	]]></bodyDescription>
 </torso>

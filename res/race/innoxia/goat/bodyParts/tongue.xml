@@ -6,19 +6,19 @@
 	
 	<defaultLength>12</defaultLength>
 	
-	<name><![CDATA[tongue]]></name>
-	<namePlural><![CDATA[tongues]]></namePlural>
+	<name><![CDATA[язык]]></name>
+	<namePlural><![CDATA[языки]]></namePlural>
 	
 	<descriptorsMasculine>
-		<descriptor><![CDATA[goat-like]]></descriptor>
+		<descriptor><![CDATA[козий]]></descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor><![CDATA[goat-like]]></descriptor>
+		<descriptor><![CDATA[козий]]></descriptor>
 	</descriptorsFeminine>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], goat-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		[npc.Her] рот скрывает [npc.a_tongueLength], [npc.tongueColour(true)], козий [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
 	]]></bodyDescription>
 	
 	<defaultTongueModifiers>

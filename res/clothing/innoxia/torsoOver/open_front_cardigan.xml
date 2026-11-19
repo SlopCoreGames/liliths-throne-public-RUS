@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>350</value>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[open-front cardigan]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[open-front cardigans]]></namePlural>
-		<description><![CDATA[A very feminine, open-front cardigan. It's made from a thin, woolly fabric.]]></description>
+		<name><![CDATA[кардиган нараспашку]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кардиганы нараспашку]]></namePlural>
+		<description><![CDATA[Очень женственный кардиган, распахнутый спереди. Он сделан из тонкой шерстяной ткани.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_OVER</slot>
@@ -48,24 +48,20 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] on the cardigan.
+			[npc.Name] [npc.verb(pull)] за кардиган.
 		]]></self>
-		<other><![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the cardigan's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
-		]]></other>
-		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the cardigan's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
-		]]></otherRough>
+		<other><![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава кардигана, пока [npc.she] [npc.verb(pull)] его на себя [npc2.herHim].]]></other>
+		<otherRough><![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава кардигана, пока [npc.she] [npc.verb(pull)] его на [npc2.herHim].]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc.her] cardigan.
+			[npc.Name] [npc.verb(take)] с [npc.her] кардиган.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc2.namePos] cardigan.
+			[npc.Name] [npc.verb(take)] с [npc2.namePos] кардиган.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] cardigan.
+			[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] кардиган.
 		]]></otherRough>
 	</displacementText>
 	

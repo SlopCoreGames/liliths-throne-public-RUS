@@ -5,10 +5,10 @@
 	
 	<htmlContent tag="AMBUSH"><![CDATA[
 	<p>
-		You cautiously walk down the stairs and open the door. It's surprisingly well lit for a basement. On either side of the entrance are intricately stacked piles of what you can only describe as trash. There's probably several lifetimes of weird craft projects and other kitsch in there. You don't get much time to think about it some more, however, since an unseen force slams the door shut behind you. This disturbance causes the junk towers to come crashing down, but you're able to get out of the way in time!
+		Ты осторожно спускаешься по лестнице и открываешь дверь. Для подвала здесь удивительно светло. По обе стороны от входа высятся причудливые горы того, что можно описать лишь как груды хлама. Наверняка там скопились результаты чьих-то странных рукоделий и прочего китча за несколько жизней. Впрочем, времени на раздумья почти не остается: невидимая сила с грохотом захлопывает дверь прямо у тебя за спиной. От этого толчка башни из мусора начинают рушиться, но тебе удается вовремя отскочить!
 	</p>
 	<p>
-		As the dust settles, you see that your way out is blocked. There's nowhere to go except further into the basement...
+		Когда пыль оседает, ты понимаешь, что выход заблокирован. Идти некуда, кроме как вглубь подвала...
 	</p>
 	]]>
 	</htmlContent>
@@ -17,7 +17,7 @@
 	
 	<htmlContent tag="BOSS"><![CDATA[
 	<p>
-		This "room" is better decorated and more ornate than all the others, but is also just as poorly lit. Skulls, cobweb-covered tomes, and other appropriately macabre items are drawn upon the walls behind a sparse scattering of real props. The ladder in the corner is now known to lead up into the rest of the house. In the centre of the room is a marble pedestal where the Mystical Orb of Fate was once stored, but upon closer inspection it seems to be just a bird-bath.
+		Эта «комната» обставлена куда изысканнее и богаче остальных, но освещена так же скудно. На стенах, за редкими настоящими предметами декора, красуются черепа, покрытые паутиной фолианты и прочий подходящий по случаю макабрический инвентарь. Лестница в углу, как выяснилось, ведет наверх, в остальную часть дома. В центре комнаты стоит мраморный пьедестал, где когда-то хранилась Мистическая Сфера Судьбы, но при ближайшем рассмотрении она оказывается обычной купальней для птиц.
 	</p>
 	]]>
 	</htmlContent>
@@ -26,13 +26,13 @@
 	
 	<htmlContent tag="ENTRY"><![CDATA[
 	<p>
-		Behind this avalanche of junk was once the door to the outside world. The pile is now so high that you cannot even see the frame of the door. The junk itself is a boring mix of kitschy craft projects and worthless trash but the sheer mass would make digging your way out a filthy, dangerous
+		За этим лавинообразным завалом хлама когда-то была дверь во внешний мир. Куча стала настолько высокой, что ты даже не видишь дверной рамы. Сам мусор представляет собой скучную смесь безвкусного рукоделия и бесполезного хлама, но из-за его огромной массы попытка прокопаться наружу станет грязным и опасным
 		#IF(pc.hasSpell(SPELL_TELEKENETIC_SHOWER))
-			 affair, even with your telekinetic earth magic.
+			делом, даже с твоей телекинетической магией земли.
 		#ELSE
-			 affair.
+			делом.
 		#ENDIF
-		 One wonders how the occupants of this "dungeon" reset this trap, or even if they bother resetting it at all. There is nowhere to go except deeper into the basement.
+		Интересно, как обитатели этого «подземелья» снова устанавливают эту ловушку, или вообще утруждают ли они себя этим. Идти некуда, кроме как всё глубже в подвал.
 	</p>
 	]]>
 	</htmlContent>
@@ -41,7 +41,7 @@
 	
 	<htmlContent tag="EXIT"><![CDATA[
 	<p>
-		The air is noticeably fresher in front of this door. It must be the way out, or is at least substantially closer to it. How curious, a basement with two doors...
+		Перед этой дверью воздух заметно свежее. Должно быть, это выход или, по крайней мере, путь к нему стал куда короче. Как любопытно, подвал с двумя дверями...
 	</p>
 	]]>
 	</htmlContent>
@@ -50,7 +50,7 @@
 	
 	<htmlContent tag="EXIT_TAKEN"><![CDATA[
 	<p>
-		You open the door and follow the stairs up back into the streets of Elis. Behind you, you hear a crashing noise. You turn around and try to open the door again, but it's blocked. Another junk avalanche probably...
+		Ты открываешь дверь и поднимаешься по лестнице обратно на улицы Элиса. Позади раздается грохот. Ты оборачиваешься и пытаешься снова открыть дверь, но она заблокирована. Вероятно, очередная лавина из хлама...
 	</p>
 	]]>
 	</htmlContent>
@@ -59,7 +59,7 @@
 	
 	<htmlContent tag="PASSAGE"><![CDATA[
 	<p>
-		The walls on either side of this passage appear to be made from ill-fitting pieces of cardboard from floor to ceiling but through the occasional gap you catch glimpses of dust covered junk from an unknown age. Cobblestones, manacles, sconces for torches, and various related accoutrements have been illustrated on the walls to give the appearance of a real dungeon with differing degrees of success. Beneath you is an unremarkable cobblestone floor that bears the marks of recent movement of both furniture and people. Above you hangs a mishmash of arcane lighting, giving the place a suitably dour atmosphere.
+		Стены по обе стороны этого прохода кажутся сделанными из плохо подогнанных кусков картона от пола до потолка, но сквозь редкие щели проглядывает покрытый пылью хлам неведомых эпох. На стенах, с переменным успехом, изображены булыжники, кандалы, настенные факелы и прочая атрибутика, чтобы создать иллюзию настоящего подземелья. Под ногами — заурядный булыжный пол, на котором видны следы недавнего перемещения мебели и людей. Сверху свисает мешанина из арканных светильников, придающая этому месту подходящую мрачную атмосферу.
 	</p>
 	]]>
 	</htmlContent>
@@ -68,7 +68,7 @@
 	
 	<htmlContent tag="TRAP"><![CDATA[
 	<p>
-		This area is noticeably wider than the passage behind and in front of it. In the middle, you see some lit candles and aerosol cans rigged into a primitive flamethrower trap; an incredibly brave thing to put in a dungeon that is not only made of cardboard but also has defenders clad in it. Although the trap mechanism is obvious, the web of tripwires connected to it is also dense.
+		Эта область заметно шире проходов до и после неё. Посредине ты видишь зажженные свечи и баллончики с аэрозолем, собранные в примитивную ловушку-огнемет; невероятно смелое решение для подземелья, которое не только сделано из картона, но и защищено существами, облаченными в него. Хотя механизм ловушки очевиден, сеть растяжек, подключенных к ней, довольно густая.
 	</p>
 	]]>
 	</htmlContent>
@@ -78,15 +78,15 @@
 	<htmlContent tag="TRAP_SUCCESS"><![CDATA[
 	<p>
 		#IF(pc.hasSpell(SPELL_TELEKENETIC_SHOWER))
-			With your telekinetic earth magic, it's trivial for you to set off the tripwires from a safe distance. A huge gout of flame shoots into the room as the trap goes off, obliterating the candles. That's certainly one way to disarm a trap.
+			Используя свою телекинетическую магию земли, ты с легкостью обрываешь растяжки с безопасного расстояния. Когда ловушка срабатывает, в комнату врывается огромный столб огня, мгновенно уничтожая все свечи. Определенно, это один из способов обезвредить ловушку.
 		#ELSEIF(pc.hasSpell(SPELL_VACUUM))
-			You easily snuff out the candles with your vacuum spell, disarming the trap. To prove a point, you casually stroll into the room, setting off all the tripwires to no effect.
+			Ты легко гасишь свечи заклинанием вакуума, обезвреживая ловушку. Чтобы доказать свое превосходство, ты небрежно входишь в комнату, задевая все растяжки, но они больше не представляют угрозы.
 		#ELSEIF(pc.hasSpell(SPELL_PROTECTIVE_GUSTS))
-			You easily blow out the candles with your wind magic, disarming the trap. To prove a point, you casually stroll into the room, setting off all the tripwires to no effect.
+			Ты с легкостью задуваешь свечи своей магией ветра, обезвреживая ловушку. Чтобы доказать свое превосходство, ты небрежно входишь в комнату, задевая все растяжки, но они больше не представляют угрозы.
 		#ELSEIF(pc.hasSpell(SPELL_SOOTHING_WATERS)||pc.hasSpell(SPELL_RAIN_CLOUD))
-			You easily douse the candles with your ice magic, disarming the trap. To prove a point, you casually stroll into the room, setting off all the tripwires to no effect.
+			Ты легко тушишь свечи своей магией льда, обезвреживая ловушку. Чтобы доказать свое превосходство, ты небрежно входишь в комнату, задевая все растяжки, но они больше не представляют угрозы.
 		#ELSE
-			You manage to work your way through the tripwires without setting off the trap. You carefully blow out each candle, disarming the trap. 
+			Тебе удается пробраться сквозь растяжки, не активировав ловушку. Ты осторожно задуваешь каждую свечу, тем самым обезвреживая механизм.
 		#ENDIF
 	</p>
 	]]>
@@ -96,11 +96,11 @@
 	
 	<htmlContent tag="TRAP_FAILURE"><![CDATA[
 	<p>
-		You try to work your way through the tripwires but trigger one of them. A huge gout of flame shoots into the room,
+		Ты пытаешься пробраться сквозь растяжки, но все же задеваешь одну из них. В комнату врывается огромный столб огня,
 		#IF(pc.isImmuneToDamageType(DAMAGE_TYPE_FIRE) || pc.getAttributeValue(ATTRIBUTE_RESISTANCE_FIRE) >= 30)
-			 but your resistance to fire protects you! Looking down, you see that this sudden burst of heat also obliterated the candles. It should be safe to continue.
+			но твоя сопротивляемость огню спасает тебя! Посмотрев вниз, ты видишь, что этот внезапный жар также уничтожил все свечи. Теперь можно продолжать путь.
 		#ELSE
-			 forcing you to make a hasty retreat! Looking back, you see that this sudden burst of heat also obliterated the candles. It should be safe to go back in now.
+			заставляя тебя поспешно отступить! Оглянувшись, ты видишь, что этот внезапный жар также уничтожил все свечи. Теперь можно снова войти внутрь.
 		#ENDIF
 	</p>
 	]]>
@@ -110,7 +110,7 @@
 	
 	<htmlContent tag="TRAP_TRIGGERED"><![CDATA[
 	<p>
-		This area is noticeably wider than the passage behind and in front of it. In the middle was once a flamethrower trap but the candles serving as its sources of ignition have since been extinguished, rendering it harmless.
+		Эта область заметно шире, чем проходы до и после нее. Когда-то в центре находилась ловушка с огнеметом, но свечи, служившие источниками воспламенения, давно погасли, сделав ее безвредной.
 	</p>
 	]]>
 	</htmlContent>
@@ -119,7 +119,7 @@
 	
 	<htmlContent tag="TREASURE"><![CDATA[
 	<p>
-		A dead end room with walls on all three sides. There doesn't seem to be anything here except an antique chest, unclasped and unlocked, with "Snack Fund" neatly scrawled on the lid. Surely no one would mind if you took a peek inside?
+		Тупиковая комната, окруженная стенами с трех сторон. Кажется, здесь больше ничего нет, кроме антикварного сундука — распахнутого и незапертого, с аккуратной надписью «Заначка на перекус» на крышке. Наверняка никто не будет против, если ты заглянешь внутрь?
 	</p>
 	]]>
 	</htmlContent>
@@ -128,7 +128,7 @@
 	
 	<htmlContent tag="TREASURE_TAKING"><![CDATA[
 	<p>
-		You open the chest to find a pile of loose flames. Well... finders keepers.
+		Ты открываешь сундук и обнаруживаешь в нем кучу разрозненных Огней. Ну что ж... кто успел, тот и съел.
 	</p>
 	]]>
 	</htmlContent>
@@ -137,7 +137,7 @@
 	
 	<htmlContent tag="TREASURE_TAKEN"><![CDATA[
 	<p>
-		A dead end room with walls on all three sides. There isn't anything here except an antique chest which you've looted. This strange little group is going without snacks for a while.
+		Тупиковая комната, окруженная стенами с трех сторон. Здесь больше ничего нет, кроме антикварного сундука, который ты только что обчистила. Похоже, эта странная компания какое-то время останется без перекуса.
 	</p>
 	]]>
 	</htmlContent>

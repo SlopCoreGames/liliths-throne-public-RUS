@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a pair of]]></determiner>
 		
-		<name><![CDATA[leather bracelet]]></name>
+		<name><![CDATA[кожаный браслет]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[leather bracelets]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[кожаные браслеты]]></namePlural> 
 		
-		<description><![CDATA[A pair of leather restraints which lack a connecting chain. While doing nothing to impede movement, these bracelets nevertheless signify that the wearer is someone else's plaything or property.]]></description> 
+		<description><![CDATA[Пара кожаных фиксаторов без соединительной цепи. Хотя они никак не сковывают движения, эти браслеты всё же служат знаком того, что обладательница — чья-то игрушка или собственность.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity>
 		
@@ -80,47 +80,47 @@
 
   <replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(wrap)] the leather bracelets around [npc.her] wrists, before fastening the straps in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(wrap)] кожаные браслеты на запястьях [npc.her], после чего затягивает ремешки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(wrap)] the leather bracelets around [npc2.namePos] wrists, before fastening the straps in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(wrap)] кожаные браслеты на запястьях [npc2.namePos], после чего затягивает ремешки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the leather bracelets around [npc2.namePos] wrists, before firmly fastening the straps in place.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] натягивает кожаные браслеты на запястья [npc2.namePos], после чего крепко затягивает ремешки.]]>
 	  </otherRough>
 	</replacementText>
 	<displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unfasten)] the leather bracelets from around [npc.her] wrists, before taking them off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] кожаные браслеты на запястьях [npc.her], после чего снимает их.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unfasten)] the leather bracelets from around [npc2.namePos] wrists, before taking them off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] кожаные браслеты на запястьях [npc2.namePos], после чего снимает их.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the leather bracelets from around [npc2.namePos] wrists, before yanking them off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] кожаные браслеты на запястьях [npc2.namePos], после чего срывает их.]]>
 		</otherRough>
 	</displacementText>
 
   <replacementText slot="ANKLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the leather bracelets around [npc.her] ankles, before fastening the straps in place.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] кожаные браслеты на лодыжках [npc.her], после чего затягивает ремешки.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the leather bracelets around [npc2.namePos] ankles, before fastening the straps in place.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] кожаные браслеты вокруг лодыжек [npc2.namePos], а затем затягивает ремешки.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(force)] the leather bracelets around [npc2.namePos] ankles, before firmly fastening the straps in place.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(force)] натягивает кожаные браслеты на лодыжки [npc2.namePos], после чего крепко затягивает ремешки.]]>
     </otherRough>
   </replacementText>
   <displacementText slot="ANKLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the leather bracelets from around [npc.her] ankles, before taking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] кожаные браслеты на лодыжках [npc.her], прежде чем снять их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the leather bracelets from around [npc2.namePos] ankles, before taking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] кожаные браслеты на лодыжках [npc2.namePos], прежде чем снять их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the leather bracelets from around [npc2.namePos] ankles, before yanking them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] кожаные браслеты на лодыжках [npc2.namePos], а затем срывает их.]]>
     </otherRough>
   </displacementText>
 	

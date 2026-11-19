@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[Small engraved lettering informs you that this piercing was made by 'Norin'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что этот пирсинг был сделан мастером «Норин».]]></clothingAuthorTag>
 		<value>500</value> <!--10 flames = £1 ~ $1.5-->
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[pentagram piercing]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pentagram piercings]]></namePlural>
-		<description><![CDATA[A navel piercing with a pentagram at its base.]]></description>
+		<name><![CDATA[пирсинг-пентаграмма]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пирсинги-пентаграммы]]></namePlural>
+		<description><![CDATA[Пирсинг в пупке в форме пентаграммы.]]></description>
 		
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
@@ -59,25 +59,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the pentagram piercing into [npc.her] navel.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] пирсинг-пентаграмму в пупок [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the pentagram piercing into [npc2.namePos] navel.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] пирсинг-пентаграмму в пупок [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(slide)] the pentagram piercing into [npc2.namePos] navel.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(slide)] пирсинг-пентаграмму в пупок [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] pentagram piercing out of [npc.her] navel.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] пирсинг-пентаграмму [npc.her] из пупка [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] pentagram piercing out of [npc2.her] navel.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] пирсинг-пентаграмму [npc2.namePos] из пупка [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] pentagram piercing out of [npc2.her] navel.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] пирсинг-пентаграмму [npc2.namePos] из пупка [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 </clothing>

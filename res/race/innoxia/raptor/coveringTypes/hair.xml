@@ -3,8 +3,8 @@
 	<category>HAIR</category>
 	
 	<determiner><![CDATA[a crest of]]></determiner>
-	<name><![CDATA[feather]]></name>
-	<namePlural pluralByDefault="true"><![CDATA[feathers]]></namePlural> 
+	<name><![CDATA[перо]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[перья]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>

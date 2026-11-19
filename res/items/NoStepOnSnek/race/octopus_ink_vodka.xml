@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>200</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Ink Vodka]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Ink Vodkas]]></namePlural>
-		<description><![CDATA[A glass bottle in a minimalistic and entirely black design. The label reads 'Ink Vodka' and depicts a large splotch of the liquid this drink was named after.]]></description> 
+		<name><![CDATA[Чернильная водка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Чернильные водки]]></namePlural>
+		<description><![CDATA[Стеклянная бутылка в минималистичном, полностью черном дизайне. На этикетке красуется надпись «Чернильная водка» и изображено огромное пятно жидкости, в честь которой назван напиток.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,16 +28,16 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 15% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_ICE.getFormattedValue(3)] to 'potion effects']]></line>
-			<line><![CDATA[[style.boldMinorBad(Adds)] 25% to [style.boldAlcohol(intoxication level)]]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 15% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_ICE.getFormattedValue(3)] к «эффектам зелий»]]></line>
+			<line><![CDATA[[style.boldMinorBad(Добавляет)] 25% к [style.boldAlcohol(уровню опьянения)]]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM) * 0.15)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A powerful wave of arcane energy washes over [npc.name]...
+				Мощная волна арканной энергии накрывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_RESISTANCE_ICE, 3)]
 			[#npc.incrementAlcoholLevel(0.25)]
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the bottle of Ink Vodka, before tilting [npc.her] head back and bringing it up to [npc.her] waiting [npc.lips]. With a gulp, [npc.name] [npc.verb(start)] downing the liquid, discovering that despite its novelty colouration, it's almost completely tasteless.
+		[npc.Name] [npc.verb(unscrew)] крышку бутылки чернильной водки, после чего закидывает [npc.her] голову и подносит её к ожидающим [npc.her] [npc.lips]. Сделав глоток, [npc.name] [npc.verb(start)] жадно пить жидкость, обнаруживая, что, несмотря на необычный цвет, она почти безвкусная.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unscrew)] the cap from the bottle of Ink Vodka, before bringing it up to [npc2.namePos] waiting [npc2.lips]. With a gulp, [npc2.name] [npc2.verb(start)] downing the liquid, discovering that despite its novelty colouration, it's almost completely tasteless.
+		[npc.Name] [npc.verb(unscrew)] крышку бутылки чернильной водки, после чего подносит её к ожидающим [npc2.namePos] [npc2.lips]. Сделав глоток, [npc2.name] [npc2.verb(start)] жадно пить жидкость, обнаруживая, что, несмотря на необычный цвет, она почти безвкусная.
 		]]></otherUse>
 	</useDescriptions>
 

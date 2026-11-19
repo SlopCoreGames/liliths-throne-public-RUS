@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>2500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[heavy gemstone ring]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[heavy gemstone rings]]></namePlural>
-		<description><![CDATA[A heavy band of metal, housing a cut and polished gemstone, which slides down onto a person's finger. Its sturdy, thick shape is suitable for both masculine and feminine characters to wear.]]></description>
+		<name><![CDATA[массивное кольцо с драгоценным камнем]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[массивные кольца с драгоценными камнями]]></namePlural>
+		<description><![CDATA[Тяжелый металлический ободок с ограненным и отполированным камнем, который надевается на палец. Его прочная, толстая форма одинаково хорошо подходит как мужским, так и женским персонажам.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>FINGER</slot>
@@ -59,25 +59,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the gemstone ring onto [npc.her] [npc.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцо с драгоценным камнем на палец [npc.her] [npc.finger].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the gemstone ring onto [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцо с драгоценным камнем на палец [npc2.namePos] [npc2.finger].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the gemstone ring onto [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] кольцо с драгоценным камнем на палец [npc2.namePos] [npc2.finger].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the gemstone ring off [npc.her] [npc.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцо с драгоценным камнем с пальца [npc.her] [npc.finger].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the gemstone ring off [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] кольцо с драгоценным камнем с пальца [npc2.namePos] [npc2.finger].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] the gemstone ring off [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] кольцо с драгоценным камнем с пальца [npc2.namePos] [npc2.finger].]]>
     </otherRough>
   </displacementText>
   

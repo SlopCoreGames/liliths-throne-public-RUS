@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>30</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Rudolph's Egg nog]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Rudolph's Egg nogs]]></namePlural>
-		<description><![CDATA[The label on the front of this carton declares it to be 'Rudolph's Egg Nog'. The drink's namesake, a buff, stark-naked reindeer-boy, is shown on the label to be drinking a glass of egg nog while receiving oral sex from three enraptured reindeer-girls.]]></description> 
+		<name><![CDATA[Эгг-ног Рудольфа]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Эгг-ноги Рудольфа]]></namePlural>
+		<description><![CDATA[На этикетке этого пакета красуется надпись: «Эгг-ног Рудольфа». На рисунке изображен тезка напитка — мускулистый, совершенно голый олень-мальчик; он прихлебывает эгг-ног из стакана, пока три увлеченные оленихи доводят его до экстаза оральным сексом.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -28,15 +28,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(1)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A soothing wave of arcane energy washes over [npc.name]...
+				Успокаивающая волна арканы омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 1)]
 		]]></applyEffects>
@@ -51,10 +51,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		Opening the carton of Rudolph's Egg Nog, [npc.name] [npc.verb(bring)] it up to [npc.her] [npc.lips] and [npc.verb(start)] drinking. Although there's nothing out of the ordinary about its creamy, sweet taste, [npc.name] soon [npc.verb(discover)] that the egg nog leaves a strange, slightly salty aftertaste lingering on [npc.her] [npc.tongue].
+		Открыв пакет с эгг-ногом Рудольфа, [npc.name] [npc.verb(подносишь)] его к [npc.her] [npc.lips] и [npc.verb(начинаешь)] пить. Хотя в его сливочном сладком вкусе нет ничего необычного, [npc.name] вскоре [npc.verb(обнаруживаешь)], что после эгг-нога на [npc.her] [npc.tongue] остается странное, слегка солоноватое послевкусие.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		Opening the carton of Rudolph's Egg Nog, [npc.name] [npc.verb(bring)] it up to [npc2.namePos] [npc2.lips] and [npc.verb(get)] [npc2.herHim] to drink it. Although there's nothing out of the ordinary about its creamy, sweet taste, [npc2.name] soon [npc2.verb(discover)] that the egg nog leaves a strange, slightly salty aftertaste lingering on [npc2.her] [npc2.tongue].
+		Открыв пакет с эгг-ногом Рудольфа, [npc.name] [npc.verb(подносишь)] его к [npc2.namePos] [npc2.lips] и [npc.verb(заставляешь)] [npc2.herHim] выпить его. Хотя в его сливочном сладком вкусе нет ничего необычного, [npc2.name] вскоре [npc2.verb(обнаруживаешь)], что после эгг-нога на [npc2.her] [npc2.tongue] остается странное, слегка солоноватое послевкусие.
 		]]></otherUse>
 	</useDescriptions>
 

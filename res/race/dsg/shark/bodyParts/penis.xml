@@ -10,7 +10,7 @@
 	<race>dsg_shark</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[shark]]></transformationName>
+	<transformationName><![CDATA[акула]]></transformationName>
 	
 	<!-- The id of the material covering this penis.
 	This should always be left as 'PENIS'.
@@ -34,18 +34,18 @@
 	One of the defined names will be chosen at random every time the name is displayed to the player. 
 	Names ending in '-' are handled in a special manner by appending a random, generic penis name to the end of it before returning, so for this example of 'hyena-', the names 'hyena-cock', 'hyena-dick', etc. will be returned. -->
 	<namesMasculine>
-		<name><![CDATA[shark-]]></name>
+		<name><![CDATA[акулий-]]></name>
 	</namesMasculine>
 	<namesPluralMasculine>
-		<name><![CDATA[shark-]]></name>
+		<name><![CDATA[акулий-]]></name>
 	</namesPluralMasculine>
 	
 	<!-- Same as above, but for when this penis is on a feminine character. -->
 	<namesFeminine>
-		<name><![CDATA[shark-]]></name>
+		<name><![CDATA[акулий-]]></name>
 	</namesFeminine>
 	<namesPluralFeminine>
-		<name><![CDATA[shark-]]></name>
+		<name><![CDATA[акулий-]]></name>
 	</namesPluralFeminine>
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's penis of this type.
@@ -68,14 +68,14 @@
 	<!-- The description which is shown when a character transforms to obtain this penis type.
 	This description immediately follows a brief description of the penis type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick sheath suddenly grows around the base of [npc.her] shaft. As [npc.she] [npc.verb(pant)] and [npc.verb(gasp)] for air, the tip of [npc.her] cock narrows down as it tapers into its new form, before retracting into its new sheath.
-		<br/>[npc.She] now [npc.has] a [style.boldShark(shark-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		Невольно издав стон, [npc.name] [npc.verb(feel)] как [npc.her] пенис принимает новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая оболочка. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотая воздух, головка [npc.her] члена сужается, принимая новую форму, прежде чем втянуться в новую оболочку.
+		<br/>[npc.She] теперь [npc.has] [style.boldShark(акулий пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
 		<br/>[npc.She] [npc.has] [style.boldShark([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldShark(shark cum)].
 	]]></transformationDescription>
 	
 	<!-- How this penis is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] shark cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] акулий член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
 	]]></bodyDescription>
 	
 </penis>

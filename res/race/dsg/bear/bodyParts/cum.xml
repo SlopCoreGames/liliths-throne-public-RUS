@@ -6,18 +6,18 @@
 	
 	<race>dsg_bear</race>
 	
-	<transformationName><![CDATA[bear]]></transformationName>
+	<transformationName><![CDATA[медведь]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[bear-]]></name>
+		<name><![CDATA[медвежий-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[bear-]]></name>
+		<name><![CDATA[медвежий-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

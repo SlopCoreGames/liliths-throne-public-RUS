@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[On the back of the shield, slightly raised lettering reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[На задней стороне щита слегка выпуклыми буквами выведено: «Служебное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 		
 		<value>2000</value> 
 		
@@ -11,11 +11,11 @@
 		
 		<determiner><![CDATA[an]]></determiner>
 		
-		<name><![CDATA[Enforcer's riot shield]]></name>
+		<name><![CDATA[Щит Enforcer]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's riot shields]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Щиты Enforcer]]></namePlural> 
 		
-		<description><![CDATA[A medium-sized shield made of transparent polycarbonate, it covers an average-sized bearer from the top of their head to their knees. It is enchanted to protect against weapons typically used by rioters as well as offer limited offensive capabilities.]]></description> 
+		<description><![CDATA[Средний щит из прозрачного поликарбоната, закрывающий владельку среднего роста от макушки до колен. Он зачарован, чтобы защищать от типичного оружия бунтовщиков, а также обладает ограниченными атакующими свойствами.]]></description> 
 		
 		<attackDescriptor>bash</attackDescriptor>
 		
@@ -23,9 +23,9 @@
 		
 		<rarity>UNCOMMON</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] out the shield and [npc.verb(strap)] it to [npc.her] arm.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(достает)] щит и [npc.verb(пристегивает)] его к руке [npc.her].]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(unstrap)] the shield from [npc.her] arm before putting it away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(отстегивает)] щит от руки [npc.her], прежде чем убрать его.]]></unequipText>
 		
 		<imageName>riotshield.svg</imageName> 
 		
@@ -51,14 +51,14 @@
 		</effects>
 		
 		<extraEffects>
-			<effect><![CDATA[[style.boldPhysical("Dazed")] on critical hit.]]></effect>
+			<effect><![CDATA[[style.boldPhysical("Ошеломление")] при критическом попадании.]]></effect>
 		</extraEffects>
 		
 		<onHitEffect/>
 		
 		<onCriticalHitEffect><![CDATA[
 		#IF !npc2.hasStatusEffect(SE_DAZED)
-		#THEN [##npc2.addStatusEffect(SE_DAZED, 4)] [npc.Name] managed to body [npc2.name] to the ground! [npc2.She] [style.boldPhysical([npc2.verb(feel)] unsteady)] as [npc2.she] gets up. 
+		#THEN [##npc2.addStatusEffect(SE_DAZED, 4)] [npc.Name] удается повалить [npc2.name] на землю! [npc2.She] [style.boldPhysical([npc2.verb(чувствует)] неустойчивость)], пока [npc2.she] поднимается. 
 		#ENDIF
 		]]></onCriticalHitEffect>
 		
@@ -75,16 +75,16 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Charging forward with [npc.her] riot shield, [npc.name] [npc.verb(manage)] to hit [npc2.name] dead on. The enchanted polycarbonate bounces off [npc2.her] aura and knocks [npc2.herHim] back, draining [npc.her] energy!
+		Бросившись вперед со щитом [npc.her], [npc.name] [npc.verb(умудряется)] нанести [npc2.name] прямой удар. Зачарованный поликарбонат отскакивает от [npc2.her] ауры и отбрасывает [npc2.herHim] назад, истощая [npc.her] энергию!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Charging forward with [npc.her] riot shield, [npc.name] [npc.verb(attempt)] to hit [npc2.name] dead on but stumbles and misses completely!
+		Бросившись вперед со щитом [npc.her], [npc.name] [npc.verb(пытается)] нанести [npc2.name] прямой удар, но спотыкается и полностью промахивается!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(swings)] [npc.her] riot shield out at [npc2.name] but misses!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(замахивается)] щитом [npc.her] на [npc2.name], но промахивается!
 		]]></missText>
 	</missDescriptions>
 	

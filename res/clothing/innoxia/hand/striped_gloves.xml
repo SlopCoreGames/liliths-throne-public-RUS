@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a pair of]]></determiner>
 		
-		<name><![CDATA[striped gloves]]></name>
+		<name><![CDATA[полосатые перчатки]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[striped gloves]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[полосатые перчатки]]></namePlural> 
 		
-		<description><![CDATA[A pair of long, fingerless gloves, which are made out of soft wool. Their most notable feature is the looping pattern of colourful stripes that they're decorated with.]]></description> 
+		<description><![CDATA[Пара длинных перчаток без пальцев, сделанных из мягкой шерсти. Их главная особенность — узор из ярких разноцветных полос.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -54,25 +54,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the gloves over [npc.her] [npc.hands], before pulling them up to [npc.her] elbows.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] надевает перчатки на [npc.her] [npc.hands], а затем натягивает их до [npc.her] локтей.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the gloves over [npc2.namePos] [npc2.hands], before pulling them up to [npc2.her] elbows.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] надевает перчатки на [npc2.namePos] [npc2.hands], а затем натягивает их до [npc2.her] локтей.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the gloves onto [npc2.namePos] [npc2.hands], before yanking them up to [npc2.her] elbows.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] натягивает перчатки на [npc2.namePos] [npc2.hands], а затем резко дергает их до [npc2.her] локтей.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the gloves down from [npc.her] elbows, before pulling them free from [npc.her] [npc.hands].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] стягивает перчатки с [npc.her] локтей, прежде чем освободить [npc.her] [npc.hands].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] the gloves down from [npc2.namePos] elbows, before pulling them free from [npc2.her] [npc2.hands].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] стягивает перчатки с [npc2.namePos] локтей, прежде чем освободить [npc2.her] [npc2.hands].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] the gloves down from [npc2.namePos] elbows, before roughly pulling them free from [npc2.her] [npc2.hands].]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] сдергивает перчатки с [npc2.namePos] локтей, а затем грубо стягивает их с [npc2.her] [npc2.hands].]]>
 		</otherRough>
 	</displacementText>
 	

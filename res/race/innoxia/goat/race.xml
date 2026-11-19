@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[goat-morph]]></name>
-	<namePlural><![CDATA[goat-morphs]]></namePlural>
+	<name><![CDATA[козоморф]]></name>
+	<namePlural><![CDATA[козоморфы]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[goat]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[коза]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[goats]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[козы]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[goat]]></defaultTransformName>
+	<defaultTransformName><![CDATA[коза]]></defaultTransformName>
 	
 	<colour>innoxia_goat</colour>
 	

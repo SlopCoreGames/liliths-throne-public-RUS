@@ -2,13 +2,13 @@
 <coveringType>
 	<category>MAIN_FUR</category>
 	
-	<nameTransformation><![CDATA[fur (face)]]></nameTransformation>
+	<nameTransformation><![CDATA[мех (морда)]]></nameTransformation>
 	
 	<determiner><![CDATA[a layer of]]></determiner>
 	
-	<name><![CDATA[fur]]></name>
+	<name><![CDATA[мех]]></name>
 	
-	<namePlural pluralByDefault="false"><![CDATA[fur]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[мех]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>

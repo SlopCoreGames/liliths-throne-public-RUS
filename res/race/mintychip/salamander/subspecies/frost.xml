@@ -136,20 +136,20 @@
 	Formatting for bipeds (which should probably be left to be covered by the 'namesDefault' element) should usually follow the pattern of X-morph, X-boy, X-girl. -->
 	<nameAnthro>
 		<namesDefault> <!-- You must include this 'namesDefault' element, which will be used for any undefined legConfiguration names (for example, if the player somehow became a TAIL_LONG salamander). -->
-			<name><![CDATA[frost salamander-morph]]></name>
-			<namePlural><![CDATA[frost salamander-morphs]]></namePlural>
-			<singularMaleName><![CDATA[frost salamander-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[frost salamander-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[frost salamander-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[frost salamander-girls]]></pluralFemaleName>
+			<name><![CDATA[морф морозной саламандры]]></name>
+			<namePlural><![CDATA[морфы морозных саламандр]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-морозная саламандра]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-морозная саламандра]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-морозные саламандры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-морозные саламандры]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="QUADRUPEDAL"> <!-- This is the usual naming pattern for quadrupeds, even if the names do get a little unwieldy at times... -->
-			<name><![CDATA[frost salamandertaur]]></name>
-			<namePlural><![CDATA[frost salamandertaurs]]></namePlural>
-			<singularMaleName><![CDATA[frost salamandertaur]]></singularMaleName>
-			<singularFemaleName><![CDATA[frost salamandertauress]]></singularFemaleName>
-			<pluralMaleName><![CDATA[frost salamandertaurs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[frost salamandertauresses]]></pluralFemaleName>
+			<name><![CDATA[саламандертавр морозной саламандры]]></name>
+			<namePlural><![CDATA[саламандертавры морозных саламандр]]></namePlural>
+			<singularMaleName><![CDATA[саламандертавр морозной саламандры]]></singularMaleName>
+			<singularFemaleName><![CDATA[саламандертавриха морозной саламандры]]></singularFemaleName>
+			<pluralMaleName><![CDATA[саламандертавры морозных саламандр]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[морозные саламандры-таврессы]]></pluralFemaleName>
 		</names>
 	</nameAnthro>
 	
@@ -157,24 +157,24 @@
 	See the 'res/race/NoStepOnSnek/snake/subspecies/snake.xml' file for an example in use. -->
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic frost salamander, known as a 'frost salamander-morph' when bipedal, and a 'frost salamandertaur' when the lower body is that of a typically-oversized feral frost salamander.]]></description>
+	<description><![CDATA[Антропоморфная морозная саламандра, известная как «морозная саламандра-морф», когда она передвигается на двух ногах, и «морозная саламандра-тавр», когда её нижняя часть тела представляет собой типично огромную дикую морозную саламандру.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault> <!-- You must include this 'namesDefault' element, which will be used for any undefined legConfiguration names (for example, if the player somehow became a TAIL_LONG salamander). -->
-			<name><![CDATA[hellfrost salamander-morph]]></name>
-			<namePlural><![CDATA[hellfrost salamander-morphs]]></namePlural>
-			<singularMaleName><![CDATA[hellfrost salamander-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[hellfrost salamander-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[hellfrost salamander-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[hellfrost salamander-girls]]></pluralFemaleName>
+			<name><![CDATA[адско-морозная саламандра-морф]]></name>
+			<namePlural><![CDATA[адско-морозные саламандры-морфы]]></namePlural>
+			<singularMaleName><![CDATA[адско-морозный саламандр-мальчик]]></singularMaleName>
+			<singularFemaleName><![CDATA[адско-морозная саламандра-девочка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[адско-морозные саламандры-мальчики]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[адско-морозные саламандры-девочки]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="QUADRUPEDAL"> <!-- This is the usual naming pattern for quadrupeds, even if the names do get a little unwieldy at times... -->
-			<name><![CDATA[hellfrost salamandertaur]]></name>
-			<namePlural><![CDATA[hellfrost salamandertaurs]]></namePlural>
-			<singularMaleName><![CDATA[hellfrost salamandertaur]]></singularMaleName>
-			<singularFemaleName><![CDATA[hellfrost salamandertauress]]></singularFemaleName>
-			<pluralMaleName><![CDATA[hellfrost salamandertaurs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[hellfrost salamandertauresses]]></pluralFemaleName>
+			<name><![CDATA[адско-морозная саламандра-тавр]]></name>
+			<namePlural><![CDATA[адско-морозные саламандры-тавры]]></namePlural>
+			<singularMaleName><![CDATA[адско-морозная саламандра-тавр]]></singularMaleName>
+			<singularFemaleName><![CDATA[адская морозная саламандра-тауресса]]></singularFemaleName>
+			<pluralMaleName><![CDATA[адско-морозные саламандры-тавры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[адские морозные саламандры-таурессы]]></pluralFemaleName>
 		</names>
 	</nameHalfDemon>
 	
@@ -182,12 +182,12 @@
 	<feralAttributes>
 		<!-- As ferals can only be of one leg configuration, there is no need to define names based on a 'legConfiguration' attribute as done with half-demons and anthro names.
 		As such, just define your names like so: -->
-		<name><![CDATA[frost salamander]]></name>
-		<namePlural><![CDATA[frost salamanders]]></namePlural>
-		<singularMaleName><![CDATA[frost salamander]]></singularMaleName>
-		<singularFemaleName><![CDATA[frost salamander]]></singularFemaleName>
-		<pluralMaleName><![CDATA[frost salamanders]]></pluralMaleName>
-		<pluralFemaleName><![CDATA[frost salamanders]]></pluralFemaleName>
+		<name><![CDATA[морозная саламандра]]></name>
+		<namePlural><![CDATA[морозные саламандры]]></namePlural>
+		<singularMaleName><![CDATA[морозная саламандра]]></singularMaleName>
+		<singularFemaleName><![CDATA[морозная саламандра]]></singularFemaleName>
+		<pluralMaleName><![CDATA[морозные саламандры]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[морозные саламандры]]></pluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -225,7 +225,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] salamander-like body is very fast which, along with a natural affinity for arcane ice, makes [npc.herHim] a formidable opponent.
+		[npc.NamePos] обладает очень быстрым, похожим на саламандру телом, а в сочетании с природной склонностью к арканическому льду это делает [npc.herHim] грозным противником.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

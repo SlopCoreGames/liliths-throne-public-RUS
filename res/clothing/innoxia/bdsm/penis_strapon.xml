@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>750</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[strap-on]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[strap-ons]]></namePlural>
-    <description><![CDATA[This [unit.size(25)] dildo is made of self-cleaning, arcane-cured silicone. It is firmly held in place at the wearer's groin by means of a comfortable leather harness. The harness's straps are cleverly positioned so as to keep the wearer's vagina and anus exposed.]]></description>
+    <name><![CDATA[страпон]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[страпоны]]></namePlural>
+    <description><![CDATA[Этот фаллос [unit.size(25)] сделан из самоочищающегося силикона, закаленного магией Арканы. Он надежно закреплен в паху на владельце с помощью удобной кожаной портупеи. Ремни портупеи расположены так искусно, что влагалище и анус владельца остаются полностью открытыми.]]></description>
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
     <slot>PENIS</slot>
@@ -60,25 +60,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(fit)] the strap-on around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(fit)] страпон на талии [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(fit)] the strap-on around [npc2.namePos] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(fit)] страпон на талии [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(fit)] the strap-on around [npc2.namePos] waist.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(fit)] страпон на талии [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] strap-on.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с [npc.her] страпон.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] strap-on.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с [npc2.namePos] страпон.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(take)] off [npc2.namePos] strap-on.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(take)] с [npc2.namePos] страпон.]]>
     </otherRough>
   </displacementText>
 

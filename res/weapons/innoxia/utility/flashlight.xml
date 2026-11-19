@@ -5,14 +5,14 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendDamageName="false"><![CDATA[flashlight]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[flashlights]]></namePlural>
-		<description><![CDATA[An arcane-powered flashlight. As well as being able to illuminate even the darkest of areas, this sturdy torch could also be used as an impromptu baton...]]></description>
+		<name appendDamageName="false"><![CDATA[фонарик]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[фонарики]]></namePlural>
+		<description><![CDATA[Фонарик, работающий на энергии Арканы. Этот прочный прибор не только освещает самые темные уголки, но и может послужить импровизированной дубинкой...]]></description>
 		<attackDescriptor>whack</attackDescriptor>
 		<attackTooltipDescription>Whack [npc2.name] with your flashlight.</attackTooltipDescription>
 		<rarity>COMMON</rarity>
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] flashlight and [npc.verb(prepare)] to use it to illuminate any dark areas [npc.she] [npc.verb(encounter)].]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] flashlight away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] фонарик и [npc.verb(prepare)] использовать его, чтобы осветить любые темные места [npc.she] [npc.verb(encounter)].]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] фонарик.]]></unequipText>
 		
 		<imageName>flashlight.svg</imageName> 
 		<imageEquippedName>flashlight.svg</imageEquippedName>
@@ -46,26 +46,24 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Swinging [npc.her] flashlight, [npc.name] [npc.verb(manage)] to whack [npc2.name] on the [npc2.arm], which causes [npc2.herHim] to let out a surprised yelp!
+		Размахнувшись [npc.her] фонариком, [npc.name] [npc.verb(manage)] ударить [npc2.name] по [npc2.arm], отчего [npc2.herHim] издает удивленный вскрик!
 		]]></hitText>
 		<hitText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] flashlight, [npc.name] [npc.verb(manage)] to land a solid hit on [npc2.her] [npc2.arm]!
+		Нанося удар [npc2.name] с помощью [npc.her] фонарика, [npc.name] [npc.verb(manage)] нанести крепкий удар по [npc2.her] [npc2.arm]!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] flashlight, whacking the heavy end against [npc2.her] shoulder!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] фонариком, ударяя тяжелым концом по [npc2.her] плечу!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Thrusting out with [npc.her] flashlight, [npc.name] [npc.verb(attempt)] to whack [npc2.name] on the [npc2.arm], but [npc.verb(end)] up missing [npc2.herHim]!
+		Ткнув вперед [npc.her] фонариком, [npc.name] [npc.verb(attempt)] ударить [npc2.name] по [npc2.arm], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] flashlight, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Нанося удар [npc2.name] с помощью [npc.her] фонарика, [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
-		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] flashlight, but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] фонариком, но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 </weapon>

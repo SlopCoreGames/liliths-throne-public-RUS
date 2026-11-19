@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>200</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[hot pants]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[hot pants]]></namePlural>
-		<description><![CDATA[A pair of very small, very tight shorts, commonly referred to as 'hot pants'. This particular pair are made of a stretchy, elastic material, which clings tightly to the wearer's every curve and crevice.]]></description>
+		<name><![CDATA[горячие шорты]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[горячие шорты]]></namePlural>
+		<description><![CDATA[Пара очень коротких и очень обтягивающих шорт, которые обычно называют «горячими шортами». Именно эта пара сделана из эластичного материала, который плотно облегает каждый изгиб и каждую складочку тела.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -60,25 +60,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the hot pants, before pulling them up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в горячие шорты, а затем натягивает их на талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the hot pants, before pulling them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в горячие шорты, а затем натягивает их на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the hot pants, before yanking them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в горячие шорты, а затем резко натягивает их на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] hot pants, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] горячие шорты [npc.her] вниз, а затем стягивает их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] hot pants, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] горячие шорты [npc2.namePos] вниз, а затем стягивает их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] hot pants, before yanking them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] горячие шорты [npc2.namePos] вниз, а затем сдергивает их.]]>
     </otherRough>
   </displacementText>
 	

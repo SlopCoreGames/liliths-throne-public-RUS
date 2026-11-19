@@ -34,30 +34,30 @@
 	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
 	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[owl-morph]]></name>
-	<namePlural><![CDATA[owl-morphs]]></namePlural>
-	<singularMaleName><![CDATA[owl-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[owl-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[owl-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[owl-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic owl, known as a 'owl-morph' when bipedal, and a 'owl-taur' when the lower body is that of a feral owl.]]></description>
+	<name><![CDATA[совоморф]]></name>
+	<namePlural><![CDATA[совоморфы]]></namePlural>
+	<singularMaleName><![CDATA[мальчик-сова]]></singularMaleName>
+	<singularFemaleName><![CDATA[девочка-сова]]></singularFemaleName>
+	<pluralMaleName><![CDATA[мальчики-совы]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[девочки-совы]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфная сова, известная как «совоморф», когда она передвигается на двух ногах, и «совотавр», когда её нижняя часть тела представляет собой дикую сову.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[tengu]]></name>
-			<namePlural><![CDATA[tengu]]></namePlural>
-			<singularMaleName><![CDATA[tengu]]></singularMaleName>
-			<singularFemaleName><![CDATA[tengu]]></singularFemaleName>
-			<pluralMaleName><![CDATA[tengu]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[tengu]]></pluralFemaleName>
+			<name><![CDATA[тенгу]]></name>
+			<namePlural><![CDATA[тенгу]]></namePlural>
+			<singularMaleName><![CDATA[тенгу]]></singularMaleName>
+			<singularFemaleName><![CDATA[тенгу]]></singularFemaleName>
+			<pluralMaleName><![CDATA[тенгу]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[тенгу]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[owl]]></feralName>
-		<feralNamePlural><![CDATA[owls]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[owl]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[owl]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[owls]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[owls]]></feralPluralFemaleName>
+		<feralName><![CDATA[совиные]]></feralName>
+		<feralNamePlural><![CDATA[совы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[совиные]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[совиные]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[совы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[совы]]></feralPluralFemaleName>
 		<legConfiguration>AVIAN</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>90</size>
@@ -69,9 +69,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] speed, stealth, and power helps [npc.herHim] to land particularly hard-hitting strikes in combat.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] скорость, скрытность и мощь помогают [npc.herHim] наносить в бою особенно сокрушительные удары.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>
 		<attribute value="0">MAJOR_ARCANE</attribute> 

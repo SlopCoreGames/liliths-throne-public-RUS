@@ -10,11 +10,11 @@
 		
 		<determiner><![CDATA[]]></determiner>
 		
-		<name><![CDATA[knuckle duster]]></name>
+		<name><![CDATA[кастет]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[knuckle dusters]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[кастеты]]></namePlural> 
 		
-		<description><![CDATA[A piece of metal shaped to fit around someone's fist. The outer rim, which is the part that impacts the wielder's target, has been imbued with an arcane enchantment.]]></description> 
+		<description><![CDATA[Кусок металла, изогнутый так, чтобы плотно облегать кулак. Внешний обод, которым владелец наносит удары по цели, пропитан чарами Арканы.]]></description> 
 		
 		<attackDescriptor>punch</attackDescriptor>
 		
@@ -22,9 +22,9 @@
 		
 		<rarity>COMMON</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(fit)] [npc.her] knuckle dusters onto [npc.her] fist, so that they're ready to use in combat.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(fit)] [npc.her] кастеты на [npc.her] кулак, чтобы ими можно было сразу вступить в бой.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] knuckle dusters, before putting them away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(take)] [npc.her] кастеты, прежде чем убрать их.]]></unequipText>
 		
 		<imageName>knuckle_dusters.svg</imageName> 
 		
@@ -67,27 +67,25 @@
 	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Swinging [npc.her] knuckle-duster-clad fist, [npc.name] [npc.verb(manage)] to land a solid punch on [npc2.namePos] [npc2.arm].
+		Взмахнув [npc.her] кулаком в кастетах, [npc.name] [npc.verb(manage)] нанести мощный удар по [npc2.namePos] [npc2.arm].
 		]]></hitText>
 		<hitText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] knuckle dusters, [npc.name] [npc.verb(manage)] to land a solid hit on [npc2.her] [npc2.arm]!
+		Нанося удары по [npc2.name] с помощью [npc.her] кастетов, [npc.name] [npc.verb(manage)] нанести тяжелый удар по [npc2.her] [npc2.arm]!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(jab)] out at [npc2.name] with [npc.her] fist, whacking [npc.her] knuckle dusters against [npc2.her] shoulder!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(jab)] [npc2.name] [npc.her] кулаком, впечатывая [npc.her] кастеты в [npc2.her] плечо!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		Swinging [npc.her] knuckle-duster-clad fist, [npc.name] [npc.verb(attempt)] to punch [npc2.name] on the [npc2.arm], but [npc.verb(end)] up missing [npc2.herHim]!
+		Взмахнув [npc.her] кулаком в кастетах, [npc.name] [npc.verb(attempt)] ударить [npc2.name] в [npc2.arm], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] knuckle dusters, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Нанося удары по [npc2.name] с помощью [npc.her] кастетов, [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
-		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(jab)] out at [npc2.name] with [npc.her] fist, but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[Сделав быстрый шаг вперед, [npc.name] [npc.verb(jab)] [npc2.name] [npc.her] кулаком, но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 </weapon>

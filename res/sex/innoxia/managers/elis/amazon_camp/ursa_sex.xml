@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[bed]]></deskName>
-	<wallName><![CDATA[wardrobe]]></wallName>
+	<deskName><![CDATA[кровать]]></deskName>
+	<wallName><![CDATA[гардероб]]></wallName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[true]]></subHasEqualControl>

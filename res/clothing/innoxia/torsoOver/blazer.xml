@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>300</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[blazer]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[blazers]]></namePlural>
-		<description><![CDATA[A type of jacket which resembles a suit, but which is cut in a more casual manner.]]></description>
+		<name><![CDATA[блейзер]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[блейзеры]]></namePlural>
+		<description><![CDATA[Вид пиджака, напоминающий костюмный, но имеющий более свободный, повседневный крой.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>TORSO_OVER</slot>
@@ -75,24 +75,24 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] on the blazer.
+			[npc.Name] [npc.verb(pull)] за блейзер.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the blazer's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
+			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава блейзера, пока [npc.she] [npc.verb(pull)] его на [npc2.herHim].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the blazer's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
+			[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава блейзера, пока [npc.she] [npc.verb(pull)] его на [npc2.herHim].
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc.her] blazer.
+			[npc.Name] [npc.verb(take)] с [npc.her] блейзер.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc2.namePos] blazer.
+			[npc.Name] [npc.verb(take)] с [npc2.namePos] блейзер.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] blazer.
+			[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] блейзер.
 		]]></otherRough>
 	</displacementText>
 	

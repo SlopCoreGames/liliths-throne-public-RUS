@@ -2,7 +2,7 @@
 <eye>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<coveringType>innoxia_panther_eye</coveringType>
 	
@@ -16,24 +16,24 @@
 	
 	<defaultPupilShape>ROUND</defaultPupilShape>
 	
-	<name><![CDATA[eye]]></name>
-	<namePlural><![CDATA[eyes]]></namePlural>
+	<name><![CDATA[глаз]]></name>
+	<namePlural><![CDATA[глаза]]></namePlural>
 	
 	<descriptorsMasculine>
-		<descriptor><![CDATA[predatory]]></descriptor>
+		<descriptor><![CDATA[хищные]]></descriptor>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<descriptor><![CDATA[predatory]]></descriptor>
+		<descriptor><![CDATA[хищные]]></descriptor>
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into panther-like eyes, with large irises and round pupils.
-		<br/>[npc.Name] now [npc.has] [style.boldPanther(panther-like eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они превратились в кошачьи глаза с огромными радужками и круглыми зрачками.
+		<br/>[npc.Name] теперь [npc.has] [style.boldPanther(panther-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.eyePairs] panther-like eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+		[npc.SheHasFull] [npc.eyePairs] кошачьи глаза, радужки и зрачки которых крупнее, чем у обычного человека. У них [npc.irisShape], [npc.irisColour(true)] радужки, [npc.pupilShape], [npc.pupilColour(true)] зрачки и [npc.scleraColour(true)] склеры.
 	]]></bodyDescription>
 	
 </eye>

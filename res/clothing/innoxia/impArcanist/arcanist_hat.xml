@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[an]]></determiner>
 		
-		<name><![CDATA[imp arcanist's hat]]></name>
+		<name><![CDATA[шляпа беса-арканиста]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[imp arcanist's hats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[шляпы беса-арканиста]]></namePlural> 
 		
-		<description><![CDATA[A hat of the sort you'd expect to see a witch or wizard wearing. Although perhaps it was of great value at one time in its life, it looks to have had countless owners since then, and is covered in signs of extensive wear and tear.]]></description> 
+		<description><![CDATA[Шляпа, которую обычно носят ведьмы или волшебники. Возможно, когда-то она была очень ценной, но с тех пор сменила бесчисленное множество владельцев и теперь покрыта следами сильного износа и ветхости.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -69,25 +69,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(place)] the arcanist's hat onto [npc.her] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(place)] шляпу арканиста на голову [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(place)] the arcanist's hat onto [npc2.namePos] head.]]>
+			<![CDATA[[npc.Name] [npc.verb(place)] шляпу арканиста на голову [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] the arcanist's hat onto [npc2.namePos] head.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(push)] шляпу арканиста на голову [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] arcanist's hat.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] с головы [npc.her] шляпу арканиста.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] arcanist's hat.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] с головы [npc2.namePos] шляпу арканиста.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] arcanist's hat.]]>
+			<![CDATA[[npc.Name] [npc.verb(snatch)] с головы [npc2.namePos] шляпу арканиста.]]>
 		</otherRough>
 	</displacementText>
 	

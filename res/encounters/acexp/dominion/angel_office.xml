@@ -7,7 +7,7 @@
 
     <possibleEncounters>
         <encounter>
-            <name><![CDATA[Horny Angel]]></name>
+            <name><![CDATA[Похотливый ангел]]></name>
             <chanceToTrigger opportunisticEncounter="false"><![CDATA[
    				#IF(!game.isStarted() || flags.hasFlag(FLAG_acexp_horny_angel_found) || !flags.hasFlag(FLAG_angelsOfficeIntroduced) || !flags.hasFlag(FLAG_prostitutionLicenseObtained))
 	        		0

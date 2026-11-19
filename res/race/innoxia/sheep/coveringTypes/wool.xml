@@ -4,9 +4,9 @@
 	
 	<determiner><![CDATA[a layer of]]></determiner>
 	
-	<name><![CDATA[wool]]></name>
+	<name><![CDATA[шерсть]]></name>
 	
-	<namePlural pluralByDefault="false"><![CDATA[wool]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[шерсть]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>FLUFFY</modifier>

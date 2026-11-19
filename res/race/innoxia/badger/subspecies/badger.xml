@@ -27,20 +27,20 @@
 	<basicDescriptionId>BADGER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>BADGER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[badger-morph]]></name>
-	<namePlural><![CDATA[badger-morphs]]></namePlural>
-	<singularMaleName><![CDATA[badger-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[badger-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[badger-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[badger-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic badger, known as a 'badger-morph' when bipedal, and a 'badgertaur' when the lower body is that of a feral badger.]]></description>
+	<name><![CDATA[барсукоморф]]></name>
+	<namePlural><![CDATA[барсукоморфы]]></namePlural>
+	<singularMaleName><![CDATA[мальчик-барсук]]></singularMaleName>
+	<singularFemaleName><![CDATA[девочка-барсук]]></singularFemaleName>
+	<pluralMaleName><![CDATA[мальчики-барсуки]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[девочки-барсуки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный барсук, известный как «барсукоморф», когда он передвигается на двух ногах, и «барсуктавр», когда его нижняя часть тела представляет собой дикого барсука.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[badger]]></feralName>
-		<feralNamePlural><![CDATA[badger]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[badger]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[badger]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[badgers]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[badgers]]></feralPluralFemaleName>
+		<feralName><![CDATA[барсук]]></feralName>
+		<feralNamePlural><![CDATA[барсук]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[барсук]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[барсук]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[барсуки]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[барсуки]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>false</sizeHeight>
 		<size>90</size>
@@ -53,7 +53,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body is quite strong, and is also slightly resistant to both natural and arcane cold.
+		Тело [npc.NamePos] довольно крепкое и обладает небольшой устойчивостью как к природному, так и к арканическому холоду.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>

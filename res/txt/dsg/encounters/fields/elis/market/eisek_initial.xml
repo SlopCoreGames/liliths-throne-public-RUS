@@ -5,7 +5,7 @@
 	
 	<htmlContent tag="ENCOUNTER_START"><![CDATA[
 	<p>
-		As you stroll through the market, you notice a small mob gathered around one of the stalls. It is composed of all sorts of plainly dressed animal morphs, and you see that a few are carrying simple wooden signs. They are angrily shouting or chanting something, but you can't quite make out what it is above the general hubbub and music around you. Those not in the mob are giving the area a wide berth, perhaps you should do the same.
+		Прогуливаясь по рынку, ты замечаешь небольшую толпу, собравшуюся у одного из прилавков. Она состоит из самых разных зверолюдей в простой одежде; некоторые из них держат в руках самодельные деревянные таблички. Они яростно кричат или скандируют что-то, но из-за общего шума и музыки вокруг разобрать слова с трудом. Те, кто не входит в толпу, стараются обходить это место стороной — возможно, тебе стоит поступить так же.
 	</p>
 	]]>
 	</htmlContent>
@@ -14,7 +14,7 @@
 	
 	<htmlContent tag="ENCOUNTER_BACK_OFF"><![CDATA[
 	<p>
-		You decide not to get any closer to the stall or the crowd around it.
+		Ты решаешь не приближаться ни к прилавку, ни к толпе вокруг него.
 	</p>
 	]]>
 	</htmlContent>
@@ -23,52 +23,52 @@
 	
 	<htmlContent tag="ENCOUNTER_APPROACH"><![CDATA[
 	<p>
-		Curious to see what the mob is so angry about, you decide to approach the stall. As you get closer, the crowd's shouting becomes clearer and you can make out a few phrases.
+		Любопытство берет верх, и ты решаешь подойти поближе, чтобы узнать, из-за чего все так разбушевались. По мере твоего приближения крики толпы становятся отчетливее, и ты начинаешь различать отдельные фразы.
 	</p>
 	<p>
-		[test.speechMasculine(Get out of our town!)] shouts a portly rabbit-boy.
+		[test.speechMasculine(Вон из нашего города!)] — вопит пухлый кролик-мальчишка.
 	</p>
 	<p>
-		[test.speechFeminine(We're not here as plunder!)] bleats the sheep-girl next to him.
+		[test.speechFeminine(Мы здесь не для того, чтобы нас грабили!)] — блеет стоящая рядом с ним овечка.
 	</p>
 	<p>
-		Fortunately, they are not packed in so close together that you cannot squeeze through and after a bit of effort you are able to make your way to the front. The object of the crowd's ire is [eisek.a_raceFull(true)] [eisek.materialDescriptor] [eisek.skinFullDescription(true)] who seems to be a bit oversized for his stall.
+		К счастью, они стоят не так плотно, чтобы ты не смог протиснуться, и после небольших усилий тебе удается пробраться к самому краю. Объект ярости толпы — [eisek.a_raceFull(true)] [eisek.materialDescriptor] [eisek.skinFullDescription(true)], который кажется слишком крупным для своего прилавка.
 	</p>
 	<p>
 		#IF(pc.hasTraitActivated(PERK_OBSERVANT))
-			 Save for the briefest glint of gold around one of his fingers, his
+			 Лишь мимолетный блеск золота на одном из его пальцев выдает его
 		#ELSE
-			 His
+			 Его
 		#ENDIF
-		 clothing looks positively medieval and hard-worn, but the produce on display before him almost glows with health. You can tell from his expression that he's trying very hard to look unperturbed by the crowd and while he hasn't said a word so far, the puffs of steam occasionally emitting from his nostrils must surely mean he's very close to breaking point.
+		Его одежда выглядит по-настоящему средневековой и поношенной, но продукты, выставленные перед ним, словно светятся здоровьем. По его лицу видно, что он изо всех сил старается не подавать виду, что толпа его раздражает, и хотя он пока не проронил ни слова, из его ноздрей периодически вырываются струйки пара — верный признак того, что он на грани срыва.
 	</p>
 	#IF(pc.getRace().equals(RACE_dsg_dragon))
 		<p>
-			He takes notice of your draconic features almost immediately, his [eisek.eyeColour(true)] eyes locking with yours. 
+			Он замечает твои драконьи черты почти мгновенно, и его [eisek.eyeColour(true)] глаза встречаются с твоими.
 		</p>
 		<p>
-			[eisek.speech(Kin! It is not safe here, you must get away!)] he warns in a rumbling baritone.
+			[eisek.speech(Сородич! Здесь небезопасно, тебе нужно уходить!)] — предостерегает он рокочущим баритоном.
 		</p>
 		<p>
-			Unfortunately, this shifts the attention of the crowd from the [eisek.race] to you instead. Before you can even think of a response or an excuse, panic begins to spread.
+			К несчастью, это переключает внимание толпы с [eisek.race] на тебя. Прежде чем ты успеваешь придумать ответ или оправдание, начинает распространяться паника.
 		</p>
 		<p>
 			#IF(game.isSillyMode())
-				[test.speechMasculine(This is getting out of hand! Now there are two of them!)]
+				[test.speechMasculine(Всё выходит из-под контроля! Теперь их двое!)]
 			#ELSE
-				[test.speechMasculine(I knew it! We've been invaded!)]
+				[test.speechMasculine(Так и знал! Нас захватили!)]
 			#ENDIF
-			 brays a scrawny donkey-boy. His words are soon drowned out by the screams and footfalls of the rapidly dispersing crowd.
+			 — проревел тощий мальчишка-осёл. Его слова вскоре потонули в криках и топоте стремительно разбегающейся толпы.
 		</p>
 	#ELSE
 		<p>
-			Perhaps spurred on by your intense visual study, his [eisek.eyeColour(true)] eyes lock with yours.
+			Возможно, подстегнутый твоим пристальным взглядом, он устремляет на тебя свои [eisek.eyeColour(true)] глаза.
 		</p>
 		<p>
-			[eisek.speech(Ah, you again! Would you like the usual?)] he asks, his rumbling baritone cutting across the din, [eisek.speech(They are all fresh in today.)] His face has brightened somewhat, but you recognise the pleading look in his eyes.
+			[eisek.speech(А, снова ты! Желаешь как обычно?)] — спрашивает он, и его рокочущий баритон прорезает шум толпы. [eisek.speech(Сегодня всё самое свежее.)] Его лицо немного посветлело, но ты замечаешь в его глазах умоляющий взгляд.
 		</p>
 		<p>
-			It's obvious he wants you to play along, but should you? Perhaps the angry mob is right. After all, you don't know anything about this [eisek.race], what if all this is just a front? With all the shouting about plunder that the crowd is doing, he could be back tonight to raze and loot the place.
+			Очевидно, он хочет, чтобы ты подыграла ему, но стоит ли? Возможно, разъяренная толпа права. В конце концов, ты ведь ничего не знаешь об этом [eisek.race] — а вдруг всё это лишь прикрытие? Судя по крикам толпы о грабежах, он может вернуться уже сегодня ночью, чтобы разнести и разграбить это место.
 		</p>
 	#ENDIF
 	]]>
@@ -79,28 +79,28 @@
 	<htmlContent tag="ENCOUNTER_SIDE_WITH_MOB"><![CDATA[
 	<p>
 		#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SELFISH))
-			You tell the [eisek.race] that you're neither a fool nor a friend of his. Before you can say anything else, a tough looking horse-girl interjects with a shout, [test.speechFeminine(Yeah! We're not fools and we don't want you in our town! Get out!)]
+			Ты говоришь [eisek.race], что ты не дура и уж точно не его подружка. Не успеваешь ты договорить, как суровая кобылка вклинивается в разговор с криком: [test.speechFeminine(Ага! Мы не дуры и ты нам в городе не нужен! Проваливай!)]
 		#ELSEIF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SHY))
-			You break eye contact with the [eisek.race] and simply look away, saying nothing in response. An awkward moment passes before a tough looking horse-girl breaks the silence with a shout, [test.speechFeminine(You can't fool us! We don't want you in our town! Get out!)]
+			Ты отводишь взгляд от [eisek.race] и просто смотришь в сторону, ничего не отвечая. Проходит неловкая пауза, прежде чем суровая кобылка нарушает тишину выкриком: [test.speechFeminine(Нас не проведешь! Ты нам в городе не нужен! Проваливай!)]
 		#ELSEIF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_CYNICAL))
-			You tell the [eisek.race] to find some other patsy. Before you can say anything else, a tough looking horse-girl interjects with a shout, [test.speechFeminine(Yeah! And find some other town while you're at it! Get out!)]
+			Ты говоришь [eisek.race], чтобы он искал себе другую жертву. Не успеваешь ты договорить, как суровая кобылка вклинивается в разговор с криком: [test.speechFeminine(Ага! И прихвати с собой другой город заодно! Проваливай!)]
 		#ELSE
-			You hesitate, not wanting to play a part in this mass deception. Before you can say anything else, a tough looking horse-girl interjects with a shout, [test.speechFeminine(We don't want you in our town! Get out!)]
+			Ты колеблешься, не желая участвовать в этом массовом обмане. Не успеваешь ты договорить, как суровая кобылка вклинивается в разговор с криком: [test.speechFeminine(Ты нам в городе не нужен! Проваливай!)]
 		#ENDIF
 	</p>
 	<p>
-		Her words are accompanied by a rotten tomato that tints part of the stall red as it splatters against the wood. The mob takes this as a cue to start throwing rotten produce at will, and when they run out, rubbish and small rocks start flying. Finally at the limit of his patience, the [eisek.race] opens his mouth and [style.boldIce(you are momentarily blinded by a bright blue flash!)]
+		Ее слова сопровождаются полетом гнилого помидора, который окрашивает часть прилавка в красный цвет, разбрызгиваясь о дерево. Толпа воспринимает это как сигнал и начинает швырять гнилые продукты во все стороны, а когда они заканчиваются, в ход идут мусор и мелкие камни. Наконец, достигнув предела терпения, [eisek.race] открывает рот, и [style.boldIce(тебя на мгновение ослепляет яркая синяя вспышка!)]
 	</p>
 	<p>
 		#IF(pc.isImmuneToDamageType(DAMAGE_TYPE_ICE) || pc.getAttributeValue(ATTRIBUTE_RESISTANCE_ICE) >= 300)
-			You feel a slight chill as an icy cloud envelops the immediate area. Although you are unaffected, the mob is unable to continue its bombardment as all of its members have been frozen in place from the neck down by a thin glazing of ice.
+			Ты чувствуешь легкий холодок, когда ледяное облако окутывает всё вокруг. Хотя на тебе это почти не сказывается, толпа не может продолжать обстрел, так как все ее участники оказались скованы тонкой ледяной коркой по шею.
 		#ELSE
-			When your vision clears, you find yourself feeling very cold as an icy cloud envelops the immediate area. You want to cover yourself for warmth but when you try, you find that you're unable to do anything except shiver from the neck down.
+			Когда зрение проясняется, ты чувствуешь сильный холод — ледяное облако окутывает всё вокруг. Тебе хочется укутаться, чтобы согреться, но когда ты пытаешься это сделать, оказывается, что ты не можешь ничего, кроме как дрожать всем телом ниже шеи.
 		#ENDIF
-		 The cloud obstructs your vision but you can hear the flapping of large wings, prompting you to look up just in time to see the [eisek.race] flying off to parts unknown. After a few minutes, the ice melts and the cloud dissipates, leaving behind the empty, defenceless stall. 
+		Облако застилает обзор, но ты слышишь хлопанье огромных крыльев и успеваешь поднять взгляд, чтобы увидеть, как [eisek.race] улетает в неведомые края. Через несколько минут лед тает, облако рассеивается, оставляя после себя лишь пустой, беззащитный прилавок.
 	</p>
 	<p>
-		The mob, evidently not content with driving off the [eisek.race] and not deterred by the partial freezing, rushes forward to demolish the stall and remove all evidence of its hated occupant. By the time Enforcers show up to investigate the commotion, nothing is left except splinters of wood, shreds of fabric, and a worthless paste of ruined produce. Cheering at having achieved its goal, the mob does not resist and disperses on its own, leaving you standing alone before a sad pile of debris.
+		Толпа, явно не удовлетворенная тем, что [eisek.race] прогнал, и не испугавшаяся частичного обледенения, бросается вперед, чтобы разнести лавку в щепки и уничтожить все следы ее ненавистного обитателя. К тому времени, как на шум прибывают Enforcer, чтобы разобраться в происходящем, не остается ничего, кроме деревянных щепок, обрывков ткани и бесполезной кашицы из испорченных продуктов. Ликующая от успеха, толпа без сопротивления расходится, оставляя тебя стоять в одиночестве перед грудой жалких обломков.
 	</p>
 	]]>
 	</htmlContent>
@@ -110,53 +110,56 @@
 	<htmlContent tag="ENCOUNTER_PLAY_ALONG"><![CDATA[
 	#IF(pc.getRace().equals(RACE_dsg_dragon))
 		<p>
-			With the mob now gone, the [eisek.race] bows his head slightly and lets out a long sigh of relief. [eisek.speech(Thank you, kin)] he says, [eisek.speech(Indeed, I did not expect another dragon in this place. If you had not shown up, I do not know what I might have done. Somebody could have gotten hurt. I am Eisek, of the Seawings line. How shall I address you?)]
+			Когда толпа рассеивается, [eisek.race] слегка склоняет голову и издает долгий вздох облегчения. [eisek.speech(Благодарю тебя, сородич)] — говорит он, — [eisek.speech(Признаться, я не ожидал встретить здесь другого дракона. Если бы не ты, не знаю, что бы я сделал. Кто-нибудь мог пострадать. Меня зовут Эйсек, из рода Морских крыльев. Как мне обращаться к тебе?)]
 		</p>
 		<p>
-			Seeing no reason to keep your name from the [eisek.race], you introduce yourself.
+			Не видя причин скрывать свое имя от [eisek.race], ты представляешься.
 			#IF(pc.getSurname() == eisek.getSurname())
-				 He acknowledges you with a nod. [eisek.speech([pc.Name]... I will remember you. Yet I do not recall another branch in my line. From where do you hail? The dunes?)]
+				 Он кивает в знак признания. [eisek.speech([pc.Name]... Я запомню тебя. И все же я не припомню другой ветви своего рода. Откуда ты родом? Из дюн?)]
 			#ELSE
-				 He acknowledges you with a nod. [eisek.speech([pc.Name]... I will remember you. Yet I do not recall your line. From where do you hail? The mountains? The dunes?)]
+				 Он кивает в знак признания. [eisek.speech([pc.Name]... Я запомню тебя. И все же я не помню твоего рода. Откуда ты родом? Из гор? Из дюн?)]
 			#ENDIF
 		</p>
 		<p>
-			You somewhat sheepishly explain you were not born a dragon and became one through... other means. Eisek scratches his chin in thought at your revelation. 
+			Ты с некоторым смущением объясняешь, что не родился драконом, а стал им благодаря... иным способам. Выслушав твое откровение, Эйсек задумчиво чешет подбородок.
 		</p>
 		<p>
-			[eisek.speech(Truly? Then things must be...)] he trails off as he notices bystanders and stall owners alike staring at the two of you and whispering amongst themselves. Probably your handiwork. [eisek.speech(Ah, we should not linger. Here, a token of my appreciation.)] Eisek gives you a small pouch that jingles with the sound of flames before continuing, [eisek.speech(Now, can I interest you in some fine produce?)]
+			[eisek.speech(Неужели? Тогда всё должно быть...)] — он замолкает, заметив, что прохожие и владельцы лавок вовсю пялятся на вас двоих и перешептываются. Вероятно, это твоих рук дело. [eisek.speech(Ах, нам не стоит задерживаться. Вот, возьми это в знак моей признательности.)] Эйсек протягивает тебе небольшой мешочек, внутри которого мелодично позвякивают огни, а затем продолжает: [eisek.speech(Ну так что, не желаете ли вы присмотреться к свежему урожаю?)]
 		</p>
 	#ELSE
 		<p>
 			#IF(pc.hasPersonalityTrait(PERSONALITY_TRAIT_SHY))
-				With every ounce of courage you can muster, you greet the [eisek.race]
+				Собрав всю свою храбрость, ты приветствуешь [eisek.race]
 			#ELSEIF (pc.hasPersonalityTrait(PERSONALITY_TRAIT_CONFIDENT))
-				Confidently striding forward, you greet the [eisek.race] like an old friend
+				Уверенно шагая вперед, ты приветствуешь [eisek.race] как старого друга
 			#ELSE
-				You greet the [eisek.race] on familiar terms
+				Ты приветствуешь [eisek.race] на дружеской ноте
 			#ENDIF
-			 and respond affirmatively to his question. To really make it look convincing, you also ask if he has a new crop in today as you close the distance with the stall and casually lean on the counter.
+			 и утвердительно отвечаешь на его вопрос. Чтобы всё выглядело по-настоящему убедительно, ты также спрашиваешь, не привез ли он сегодня новый урожай, сокращая дистанцию и непринужденно облокачиваясь на прилавок.
 		</p>
 		<p>
-			It's subtle, but relief washes across the [eisek.race]'s face as he continues the charade, [eisek.speech(You have a keen eye, [pc.sir], it is indeed a new crop.)]
+			Это едва заметно, но на лице [eisek.race] проскальзывает облегчение, пока он продолжает этот спектакль: [eisek.speech(У тебя наметан глаз, [pc.sir], это действительно новый урожай.)]
 		</p>
 		<p>
-			The mob, having been stunned into silence by your friendly exchange with what by all accounts should be a violent creature of unequal greed, regains its composure.
+			Толпа, ошеломленная твоим дружелюбным общением с существом, которое по всем признакам должно быть свирепым и ненасытным в своей жадности, постепенно приходит в себя.
 		</p>
 		<p>
-			[test.speechMasculine(Hey! What's wrong with you?)] a scrawny donkey-boy asks indignantly, [test.speechMasculine(He's a looting, plundering animal!)]
+			[test.speechMasculine(Эй! Вы чего это?!)] — возмущенно спрашивает тощий мальчишка-ослик, [test.speechMasculine(Да он же просто зверь, мародер и грабитель!)]
 		</p>
 		<p>
-			You look back towards the angry mob and, looking as disinterested in their arguments as possible, tell them that if they're here to buy they should get in line or else you are going to call in the Enforcers. You don't catch what the donkey-boy's long-winded response is, preferring to make banter about the weather with the [eisek.race] instead.
+			Ты оглядываешься на разъяренную толпу и, стараясь казаться как можно более равнодушной к их спорам, заявляешь: если они пришли покупать, то пусть встают в очередь, иначе ты позовешь Enforcer. Ты не особо вслушиваешься в пространную тираду мальчишки-ослика, предпочитая перекинуться парой слов о погоде с [eisek.race].
 		</p>
 		<p>
-			Finding themselves ignored in favour of the most mundane of topics, most of the mob awkwardly disperses, leaving only the still-rambling donkey-boy behind. Eventually realising he's alone, the donkey-boy points in the general direction of the stall and brays, [test.speechMasculine(This isn't over!)] before trotting off.
+		
+Поняв, что их игнорируют ради обсуждения самых банальных тем, большая часть толпы неловко расходится, оставляя позади лишь всё еще разглагольствующего мальчишку-ослика. В конце концов осознав, что он остался один, мальчишка указывает в сторону прилавка и ревет: [test.speechMasculine(Это еще не конец!)], после чего у trots away.
 		</p>
 		<p>
-			With the mob now gone, the [eisek.race] bows his head slightly and lets out a long sigh of relief. [eisek.speech(Thank you,)] he says in the first bit of genuine conversation between the two of you, [eisek.speech(If you had not shown up, I do not know what I might have done. Somebody could have gotten hurt. Here, a token of my appreciation.)] He gives you a small pouch that jingles with the sound of flames before continuing. [eisek.speech(The name is Eisek, Eisek Seawings, by the way... I do not believe I know yours, or else I would have used it in our little subterfuge.)]
+		
+Когда толпа наконец расходится, [eisek.race] слегка склоняет голову и издает долгий вздох облегчения. [eisek.speech(Спасибо,)] — произносит он в первом за сегодня искреннем разговоре между вами, — [eisek.speech(Если бы ты не появилась, не знаю, что бы я делал. Кто-нибудь мог бы пострадать. Вот, возьми это в знак благодарности.)] Он протягивает тебе небольшой мешочек, внутри которого мелодично позвякивают огни, и продолжает: [eisek.speech(Кстати, меня зовут Эйзек, Эйзек Сивингс... Кажется, я не знаю твоего имени, иначе использовал бы его в нашей маленькой хитрости.)]
 		</p>
 		<p>
-			You stash away the money and, seeing no reason to keep your name from the [eisek.race], introduce yourself. He acknowledges you with a nod. [eisek.speech([pc.Name]... I will remember you. Now then, can interest I you in some fine fruits and vegetables?)]
+		
+Ты убираешь деньги и, не видя причин скрывать свое имя от [eisek.race], представляешься. Он отвечает тебе кивком. [eisek.speech([pc.Name]... Я запомню тебя. Ну что, не желаешь ли ты присмотреться к отборным фруктам и овощам?)]
 		</p>
 	#ENDIF
 	]]>

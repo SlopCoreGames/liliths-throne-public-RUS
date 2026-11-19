@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendColourName="false"><![CDATA[pussy pump]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pussy pumps]]></namePlural>
-		<description><![CDATA[This pump consists of a vibrating dildo, which is inserted into the wearer's pussy, and an enclosing shield. At the base of the dildo, there are a series of holes, through which the orgasming wearer's girlcum is drained and sucked down into a plastic tube.]]></description>
+		<name appendColourName="false"><![CDATA[вагинальный насос]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[вагинальные насосы]]></namePlural>
+		<description><![CDATA[Этот насос состоит из вибрирующего дилдо, который вставляется в киску носительницы, и охватывающего её защитного кожуха. У основания дилдо расположена серия отверстий, через которые смазка достигающей оргазма женщины сливается и засасывается в пластиковую трубку.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>VAGINA</slot>
@@ -70,23 +70,23 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(push)] the dildo into [npc.her] [npc.pussy+], before turning up the dial on the milking machine and letting the now-pressurised shield suck itself into place over [npc.her] [npc.labia+].
+			<![CDATA[[npc.Name] [npc.verb(push)] дилдо в [npc.her] [npc.pussy+], после чего [npc.Name] выкручивает регулятор на доильном аппарате, позволяя создавшемуся давлению в кожухе плотно присосаться к [npc.her] [npc.labia+].
 			#IF(npc.getTotalFluidInArea(ORIFICE_VAGINA)>0)
-				<br/>[style.italicsCum(The pussy-pump quickly sucks out all of [npc.namePos] creampie!)]
+				<br/>[style.italicsCum(Вагинальный насос быстро высасывает всё содержимое [npc.namePos]!)]
 			#ENDIF
 			]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the dildo into [npc2.namePos] [npc2.pussy+], before turning up the dial on the milking machine and letting the now-pressurised shield suck itself into place over [npc2.her] [npc2.labia+].
+			<![CDATA[[npc.Name] [npc.verb(push)] дилдо в [npc2.namePos] [npc2.pussy+], после чего [npc.Name] выкручивает регулятор на доильном аппарате, позволяя создавшемуся давлению в кожухе плотно присосаться к [npc2.her] [npc2.labia+].
 			#IF(npc2.getTotalFluidInArea(ORIFICE_VAGINA)>0)
-				<br/>[style.italicsCum(The pussy-pump quickly sucks out all of [npc2.namePos] creampie!)]
+				<br/>[style.italicsCum(Вагинальный насос быстро высасывает всё содержимое [npc2.namePos]!)]
 			#ENDIF
 			]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(hold)] [npc2.name] still as [npc.she] roughly [npc.verb(force)] the dildo into [npc2.her] [npc2.pussy+], before cranking up the dial on the milking machine and letting the now-pressurised shield suck itself into place over [npc2.her] [npc2.labia+].
+			<![CDATA[[npc.Name] крепко [npc.verb(hold)] [npc2.name], пока [npc.she] грубо [npc.verb(force)] вгоняет дилдо в [npc2.her] [npc2.pussy+], а затем [npc.Name] выкручивает регулятор на доильном аппарате, позволяя создавшемуся давлению в кожухе плотно присосаться к [npc2.her] [npc2.labia+].
 			#IF(npc2.getTotalFluidInArea(ORIFICE_VAGINA)>0)
-				<br/>[style.italicsCum(The pussy-pump quickly sucks out all of [npc2.namePos] creampie!)]
+				<br/>[style.italicsCum(Вагинальный насос быстро высасывает всё содержимое [npc2.namePos]!)]
 			#ENDIF
 			]]>
 		</otherRough>
@@ -94,13 +94,13 @@
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before sliding the dildo out of [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] уменьшает напор на доильном аппарате, после чего вынимает дилдо из [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(turn)] down the dial on the milking machine, before sliding the dildo out of [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(turn)] ручку на доильном аппарате, прежде чем вытащить дилдо из [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[With no regard for [npc2.her] comfort, [npc.name] roughly [npc.verb(pull)] the still-pressurised pump off of [npc2.namePos] [npc2.labia+] and [npc.verb(yank)] the vibrating dildo out of [npc2.her] [npc2.pussy+].]]>
+			<![CDATA[Совершенно не заботясь о комфорте [npc2.her], [npc.name] грубо [npc.verb(pull)] вакуумный насос, всё ещё находящийся под давлением, с [npc2.namePos] [npc2.labia+] и [npc.verb(yank)] вырывает вибрирующий дилдо из [npc2.her] [npc2.pussy+].]]>
 		</otherRough>
 	</displacementText>
 	

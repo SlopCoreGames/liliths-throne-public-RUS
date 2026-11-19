@@ -10,7 +10,7 @@
 	<race>dsg_raccoon</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[raccoon]]></transformationName>
+	<transformationName><![CDATA[енот]]></transformationName>
 	
 	<!-- The id of the material covering this tail.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -49,8 +49,8 @@
 	
 	<!-- The singular and plural name of this tail type.
 	These should be left as 'tail' and 'tails' for standard tail types, but could be something like 'tail feathers'/'tail feathers' (both as plural) for bird tails. -->
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural> 
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tail of this type.
 	Can be left blank. -->
@@ -67,8 +67,8 @@
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the tail type above, but these describe the tail's tip: -->
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>furry</descriptor>
 	</tipDescriptorsMasculine>
@@ -80,17 +80,16 @@
 	This description immediately follows a brief description of the tail type beginning to transform. -->
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A furry, raccoon-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] limited control over it, but [npc.is] still able to swish it from side to side.
-			<br/>[npc.Name] now [npc.has] a [style.boldRaccoon(raccoon-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Прямо над [npc.her] задницей вырастает пушистый енотовидный хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь частично управляет им, но [npc.is] всё же может вилять им из стороны в сторону.
+			<br/>[npc.Name] теперь [npc.has] [style.boldRaccoon(пушистый енотовидный хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] furry, raccoon-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] limited control over them, but [npc.is] still able to swish them from side to side.
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldRaccoon(raccoon-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] пушистые, похожие на енотовые хвосты вырастают прямо над [npc.her] задницей, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] лишь ограниченно может ими управлять, но [npc.is] всё же способен помахивать ими из стороны в сторону.
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldRaccoon(raccoon-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<!-- How this tail is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] raccoon tail complete with dark ring markings, which [npc.she] can swish from side to side at will.
 		#ELSE

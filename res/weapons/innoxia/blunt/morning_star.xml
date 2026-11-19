@@ -10,23 +10,23 @@
 		
 		<determiner><![CDATA[]]></determiner>
 		
-		<name><![CDATA[morning star]]></name>
+		<name><![CDATA[моргенштерн]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[morning stars]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[моргенштерны]]></namePlural>
 		
-		<description><![CDATA[A club-like weapon, consisting of a handle and a sturdy shaft, with a spiked ball fixed to the end. This spiked ball has been formed out of arcane energy, allowing its use against people without permanently wounding them.]]></description> 
+		<description><![CDATA[Оружие, напоминающее булаву: рукоять с прочным древком, на конце которого закреплен шипастый шар. Этот шар сформирован из арканы, что позволяет использовать его против людей, не нанося им при этом смертельных ран.]]></description> 
 		
 		<attackDescriptor>hit</attackDescriptor>
 		
-		<attackTooltipDescription><![CDATA[Hit [npc2.name] with your morning star.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Ударь [npc2.name] своим моргенштерном.]]></attackTooltipDescription>
 		
 		<rarity>COMMON</rarity> 
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] morning star at [npc.her] hip, so that [npc.she] may draw it at a moment's notice.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] моргенштерн у [npc.her] на бедре, чтобы [npc.she] могла выхватить его в любой момент.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] morning star away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] моргенштерн на место.]]></unequipText>
 		
 		<imageName>morning_star.svg</imageName> 
 		
@@ -71,25 +71,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] morning star at [npc2.name], grinning as the ethereal arcane ball travels through [npc2.her] body!
+		[npc.Name] [npc.verb(swing)] [npc.her] моргенштерном по [npc2.name], ухмыляясь при виде того, как эфирный шар из арканы проходит сквозь [npc2.her] тело!
 		]]></hitText>
 		<hitText><![CDATA[
-		Lunging out at [npc2.name] with [npc.her] morning star, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the ethereal ball travel straight through [npc2.her] body!
+		Резко бросаясь на [npc2.name] с [npc.her] моргенштерном, [npc.name] [npc.verb(grin)], когда [npc.she] [npc.verb(see)] , как эфирный шар проходит прямо сквозь [npc2.her] тело!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] at [npc2.name] with [npc.her] morning star, causing [npc2.herHim] to stagger back as the ethereal ball passes right through [npc2.her] chest!
+		[npc.Name] [npc.verb(swing)] по [npc2.name], размахивая [npc.her] моргенштерном, отчего [npc2.herHim] пошатывается, пока эфирный шар проходит прямо сквозь [npc2.her] грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] morning star at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swing)] [npc.her] моргенштерном по [npc2.name], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Lunging out at [npc2.name] with [npc.her] morning star, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc2.name] делает выпад с [npc.her] булавой, и [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(swing)] at [npc2.name] with [npc.her] morning star, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(swing)] по [npc2.name] с [npc.her] булавой, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

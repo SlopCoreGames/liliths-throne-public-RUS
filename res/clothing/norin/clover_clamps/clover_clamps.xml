@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>540</value>
     <determiner><![CDATA[a pair of]]></determiner>
-    <name><![CDATA[clover clamps]]></name>
-    <namePlural pluralByDefault="true"><![CDATA[clover clamps]]></namePlural>
-    <description><![CDATA[A pair of metal clover clamps designed to tightly pinch onto the wearer's skin. The attached weights pull down to apply a constant, painful pressure.]]></description>
+    <name><![CDATA[клеверные зажимы]]></name>
+    <namePlural pluralByDefault="true"><![CDATA[клеверные зажимы]]></namePlural>
+    <description><![CDATA[Пара металлических зажимов в форме клевера, предназначенных для того, чтобы туго впиваться в кожу владельца. Подвешенные к ним грузики тянут вниз, создавая постоянное болезненное давление.]]></description>
     
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -93,70 +93,70 @@
 
   <displacementText slot="NIPPLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] carefully [npc.verb(remove)] the clover clamps from [npc.her] [npc.nipples+].]]>
+      <![CDATA[[npc.Name] осторожно [npc.verb(remove)] клеверные зажимы с [npc.her] [npc.nipples+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] carefully [npc.verb(remove)] the clover clamps from [npc2.namePos] [npc2.nipples+].]]>
+      <![CDATA[[npc.Name] осторожно [npc.verb(remove)] клеверные зажимы с [npc2.namePos] [npc2.nipples+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(give)] [npc2.namePos] clover clamps a rough tug before removing them from [npc2.her] [npc2.nipples+].]]>
+      <![CDATA[[npc.Name] [npc.verb(give)] [npc2.namePos] клеверные зажимы резким рывком, прежде чем снять их с [npc2.her] [npc2.nipples+].]]>
     </otherRough>
   </displacementText>
   <replacementText slot="NIPPLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(affix)] the clover clamps on [npc.her] [npc.nipples+].]]>
+      <![CDATA[[npc.Name] [npc.verb(wince)], когда [npc.she] [npc.verb(affix)] клеверные зажимы на [npc.her] [npc.nipples+].]]>
     </self>
     <other>
-      <![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(affix)] the clover clamps on [npc2.her] [npc2.nipples+].]]>
+      <![CDATA[[npc2.Name] [npc2.verb(wince)], когда [npc.name] [npc.verb(affix)] клеверные зажимы на [npc2.her] [npc2.nipples+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(affix)] the clover clamps to [npc2.namePos] [npc2.nipples+] before giving them a sharp tug.]]>
+      <![CDATA[[npc.Name] [npc.verb(affix)] клеверные зажимы к [npc2.namePos] [npc2.nipples+], а затем резко дергает за них.]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="VAGINA" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] carefully [npc.verb(remove)] the clover clamps from [npc.her] [npc.vaginaColourSecondary] [npc.vagina] lips.]]>
+      <![CDATA[[npc.Name] осторожно [npc.verb(remove)] клеверные зажимы с губ [npc.her] [npc.vaginaColourSecondary] [npc.vagina].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] carefully [npc.verb(remove)] the clover clamps from [npc2.namePos] [npc2.vaginaColourSecondary] [npc2.vagina] lips.]]>
+      <![CDATA[[npc.Name] осторожно [npc.verb(remove)] клеверные зажимы с [npc2.namePos] [npc2.vaginaColourSecondary] [npc2.vagina] губ.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(give)] [npc2.namePos] clover clamps a rough tug before removing them from [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina] lips.]]>
+      <![CDATA[[npc.Name] [npc.verb(give)] [npc2.namePos] клеверным зажимам резкий рывок, прежде чем снять их с [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina] губ.]]>
     </otherRough>
   </displacementText>
   <replacementText slot="VAGINA" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(affix)] the clover clamps on [npc.her] [npc.vaginaColourSecondary] [npc.vagina] lips.]]>
+      <![CDATA[[npc.Name] [npc.verb(wince)], когда [npc.she] [npc.verb(affix)] клеверные зажимы на [npc.her] [npc.vaginaColourSecondary] [npc.vagina] губы.]]>
     </self>
     <other>
-      <![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(affix)] the clover clamps on [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina] lips.]]>
+      <![CDATA[[npc2.Name] [npc2.verb(wince)], когда [npc.name] [npc.verb(affix)] клеверные зажимы на [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina] губы.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(affix)] the clover clamps to [npc2.namePos] [npc2.vaginaColourSecondary] [npc2.vagina] lips before giving them a sharp tug.]]>
+      <![CDATA[[npc.Name] [npc.verb(affix)] клеверные зажимы к [npc2.namePos] [npc2.vaginaColourSecondary] [npc2.vagina] губам, а затем резко дергает за них.]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="VAGINA" type="SHIFTS_ASIDE">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(use)] the clover clamps to spread [npc.her] [npc.vaginaColourSecondary] [npc.vagina].]]>
+      <![CDATA[[npc.Name] [npc.verb(use)] клеверные зажимы, чтобы растянуть [npc.her] [npc.vaginaColourSecondary] [npc.vagina].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(use)] the clover clamps to spread [npc2.namePos] [npc2.vaginaColourSecondary] [npc2.vagina].]]>
+      <![CDATA[[npc.Name] [npc.verb(use)] клеверные зажимы, чтобы растянуть [npc2.namePos] [npc2.vaginaColourSecondary] [npc2.vagina].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(tug)] on [npc2.namePos] clover clamps, painfully spreading [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina].]]>
+      <![CDATA[[npc.Name] [npc.verb(tug)] за [npc2.namePos] клеверные зажимы, болезненно растягивая [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina].]]>
     </otherRough>
   </displacementText>
   <replacementText slot="VAGINA" type="SHIFTS_ASIDE">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wince)] as the clover clamps bite into [npc.her] [npc.vaginaColourSecondary] [npc.vagina].]]>
+      <![CDATA[[npc.Name] [npc.verb(wince)], когда клеверные зажимы впиваются в [npc.her] [npc.vaginaColourSecondary] [npc.vagina].]]>
     </self>
     <other>
-      <![CDATA[[npc2.Name] [npc2.verb(wince)] as the clover clamps bite into [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina].]]>
+      <![CDATA[[npc2.Name] [npc2.verb(wince)], когда клеверные зажимы впиваются в [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc2.Name] [npc2.verb(yelp)] as [npc.name] [npc.verb(tug)] the clover clamps on [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina] before letting them hang free.]]>
+      <![CDATA[[npc2.Name] [npc2.verb(yelp)], когда [npc.name] [npc.verb(tug)] за клеверные зажимы на [npc2.her] [npc2.vaginaColourSecondary] [npc2.vagina], а затем отпускает их, позволяя им свободно болтаться.]]>
     </otherRough>
   </replacementText>
 </clothing>

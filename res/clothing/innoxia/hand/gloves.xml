@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>150</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[glove]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[gloves]]></namePlural>
-		<description><![CDATA[A pair of normal-looking gloves, they're designed to keep the wearer's hands warm.]]></description>
+		<name><![CDATA[перчатка]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[перчатки]]></namePlural>
+		<description><![CDATA[Пара обычных на вид перчаток, предназначенных для того, чтобы согревать руки владельца.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HAND</slot>
@@ -41,25 +41,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the gloves onto [npc.her] [npc.hands], before giving [npc.her] [npc.fingers] an experimental wiggle.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] натягивает перчатки на [npc.her] [npc.hands], а затем игриво шевелит [npc.her] [npc.fingers].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the gloves onto [npc2.namePos] [npc2.hands].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] натягивает перчатки на [npc2.namePos] [npc2.hands].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] the gloves onto [npc2.namePos] [npc2.hands].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] натягивает перчатки на [npc2.namePos] [npc2.hands].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] gloves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] снимает с [npc.her] перчатки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] gloves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] снимает с [npc2.namePos] перчатки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(yank)] off [npc2.namePos] gloves.]]>
+		  <![CDATA[[npc.Name] резко [npc.verb(yank)] стягивает с [npc2.namePos] перчатки.]]>
 		</otherRough>
 	</displacementText>
 	

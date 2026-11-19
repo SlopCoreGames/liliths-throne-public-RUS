@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-	<authorTag><![CDATA[A tag discreetly printed on the inside reads, "Safer Play brought to you by the Friendly Neighbourhood Co.".]]></authorTag>
+	<authorTag><![CDATA[На внутренней стороне приклеена скромная бирка: «Безопасная игра от Friendly Neighbourhood Co.».]]></authorTag>
 		<value>650</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[roller skating helmet]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[roller skating helmets]]></namePlural>
-		<description><![CDATA[A low-profile, lightweight helmet, consisting of a rugged plastic shell over shock-absorbing foam padding and sweat-wicking inner liner.]]></description>
+		<name><![CDATA[шлем для роликов]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[шлемы для роликов]]></namePlural>
+		<description><![CDATA[Низкопрофильный легкий шлем, состоящий из прочного пластикового корпуса, амортизирующей пены и внутренней подкладки, отводящей пот.]]></description>
 		<physicalResistance>3.0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>

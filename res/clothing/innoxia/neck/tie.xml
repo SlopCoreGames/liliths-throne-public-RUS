@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>100</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[tie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[ties]]></namePlural>
-		<description><![CDATA[A smart-looking tie. Although designed to be worn with a shirt, it could be worn with any outfit as a fashion statement.]]></description>
+		<name><![CDATA[галстук]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[галстуки]]></namePlural>
+		<description><![CDATA[Элегантный галстук. Хотя он предназначен для ношения с рубашкой, его можно использовать как стильный аксессуар к любому наряду.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -45,24 +45,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the tie around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] галстук на шее [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(fasten)] the tie around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(fasten)] галстук на шее [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before fastening the tie around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем завязать галстук на шее [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] tie, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] галстук [npc.her], а затем снимает его с шеи [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] tie, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] галстук [npc2.namePos], а затем снимает его с шеи [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] tie, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] галстук [npc2.namePos], а затем резким движением срывает его с шеи [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

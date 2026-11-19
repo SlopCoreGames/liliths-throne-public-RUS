@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[barcode]]></name>
+		<name><![CDATA[штрихкод]]></name>
 		
-		<description><![CDATA[A series of vertical lines of alternating widths which represent data in a visual, machine-readable form.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which acts as a functional barcode]]></bodyOverviewDescription> 
+		<description><![CDATA[Ряд вертикальных линий разной толщины, которые представляют собой данные в визуальной форме, считываемой машиной.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка, выполняющая функцию штрихкода]]></bodyOverviewDescription> 
 		
 		<imageName>barcode.svg</imageName> 
 		

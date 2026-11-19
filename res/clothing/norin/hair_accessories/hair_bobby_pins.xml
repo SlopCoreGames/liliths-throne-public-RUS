@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[Small engraved lettering informs you that these pins were made by 'Norin'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что эти шпильки были сделаны мастером по имени «Норин».]]></clothingAuthorTag>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[bobby pin]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[bobby pins]]></namePlural> 
-		<description><![CDATA[A couple of bobby pins used to help tame unruly hair.]]></description> 
+		<name><![CDATA[невидимка]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[невидимки]]></namePlural> 
+		<description><![CDATA[Пара заколок-невидимок, помогающих усмирить непослушные волосы.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>HAIR</slot> 
@@ -46,24 +46,24 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(remove)] some bobby pins from [npc.her] [npc.hairSkin+], letting it flow free.]]>
+		  <![CDATA[[npc.Name] [npc.verb(remove)] несколько невидимок из [npc.her] [npc.hairSkin+], позволяя волосам рассыпаться по плечам.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(remove)] some bobby pins from [npc2.NamePos] [npc2.hairSkin+], letting it flow free.]]>
+		  <![CDATA[[npc.Name] [npc.verb(remove)] несколько невидимок из [npc2.NamePos] [npc2.hairSkin+], позволяя волосам рассыпаться по плечам.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(rip)] some bobby pins out from [npc2.NamePos] [npc2.hairSkin+].]]>
+		  <![CDATA[[npc.Name] [npc.verb(rip)] несколько невидимок из [npc2.NamePos] [npc2.hairSkin+].]]>
 		</otherRough>
 	</displacementText>
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc.her] [npc.hairSkin+] and [npc.verb(slide)] in some bobby pins to keep in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc.her] [npc.hairSkin+] и [npc.verb(slide)] несколько невидимок, чтобы закрепить прическу.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] and [npc.verb(slide)] in some bobby pins to keep in place.]]>
+		  <![CDATA[[npc.Name] [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] и [npc.verb(slide)] несколько невидимок, чтобы закрепить прическу.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] and [npc.verb(force)] in some bobby pins.]]>
+		  <![CDATA[[npc.Name] небрежно [npc.verb(gather)] [npc2.NamePos] [npc2.hairSkin+] и [npc.verb(force)] в них несколько невидимок.]]>
 		</otherRough>
 	</replacementText>
 </clothing>

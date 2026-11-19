@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a pair of]]></determiner>
 		
-		<name><![CDATA[Witch's thigh-high boot]]></name>
+		<name><![CDATA[Высокие сапоги ведьмы]]></name>
 		
-		<namePlural pluralByDefault="true"><![CDATA[Witch's thigh-high boots]]></namePlural> 
+		<namePlural pluralByDefault="true"><![CDATA[Высокие сапоги ведьмы]]></namePlural> 
 		
-		<description><![CDATA[A pair of stylish thigh-high boots, of the sort worn by a witch.]]></description> 
+		<description><![CDATA[Пара стильных сапог выше колена, подобных тем, что носят ведьмы.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -68,25 +68,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] [npc.feet] into the boots.]]>
+		  <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] [npc.feet] в сапоги.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] [npc2.feet] into the boots.]]>
+		  <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] [npc2.feet] в сапоги.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.feet] into the boots.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.feet] в сапоги.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] boots.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] сапоги [npc.her] с ног.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] boots off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] сапоги с ног.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] boots off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] сапоги с ног.]]>
 		</otherRough>
 	</displacementText>
 	

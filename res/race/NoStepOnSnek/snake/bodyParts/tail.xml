@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <tail>
 	<race>NoStepOnSnek_snake</race>
-	<transformationName><![CDATA[snake]]></transformationName>
+	<transformationName><![CDATA[змея]]></transformationName>
 	<coveringType>SNAKE_SCALES</coveringType>
 	<spinneret>false</spinneret>
 	<defaultGirth>3</defaultGirth>
@@ -15,8 +15,8 @@
 	</tags>
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural>
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural>
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural>
 	<descriptorsMasculine>
 		<descriptor>snake-like</descriptor>
 		<descriptor>scaly</descriptor>
@@ -25,8 +25,8 @@
 		<descriptor>snake-like</descriptor>
 		<descriptor>scaly</descriptor>
 	</descriptorsFeminine>
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>scaly</descriptor>
 	</tipDescriptorsMasculine>
@@ -35,15 +35,14 @@
 	</tipDescriptorsFeminine>
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A scaly, snake-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where it goes, allowing [npc.herHim] to use it like a third limb.
-			<br/>[npc.Name] now [npc.has] a [style.boldSnake(snake-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Прямо над [npc.her] задницей прорастает чешуйчатый змеиный хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] полностью контролирует каждое его движение, что позволяет [npc.herHim] использовать его как третью конечность.
+			<br/>[npc.Name] теперь [npc.has] [style.boldSnake(змеиный хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] scaly, snake-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] complete control over where they go, allowing [npc.herHim] to use them like extra limbs.
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldSnake(snake-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] чешуйчатые змеиные хвосты вырастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] полностью контролирует направление их движения, что позволяет [npc.herHim] использовать их как дополнительные конечности.
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldSnake(snake-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] snake tail, over which [npc.sheHasFull] complete control, allowing [npc.herHim] to use it to grip and hold objects.
 		#ELSE

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>450</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[blindfold]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[blindfolds]]></namePlural>
-		<description><![CDATA[A leather blindfold, with a strap that's so tightly-fitting that it makes it impossible for the wearer to pull it up.]]></description>
+		<name><![CDATA[повязка на глаза]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[повязки на глаза]]></namePlural>
+		<description><![CDATA[Кожаная повязка на глаза с настолько тугой застежкой, что носящему её практически невозможно её стянуть.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>
@@ -56,25 +56,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(fasten)] the eye patch around [npc.her] head, before moving it into place to cover [npc.her] [npc.eye].]]>
+			<![CDATA[[npc.Name] [npc.verb(fasten)] повязку на голове [npc.her], а затем поправляет её так, чтобы закрыть [npc.her] [npc.eye].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(fasten)] the eye patch around [npc2.namePos] head, before moving it into place to cover [npc2.her] [npc2.eye].]]>
+			<![CDATA[[npc.Name] [npc.verb(fasten)] повязку на голове [npc2.namePos], а затем поправляет её так, чтобы закрыть [npc2.her] [npc2.eye].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(fasten)] the eye patch around [npc2.namePos] head, before moving it into place to cover [npc2.her] [npc2.eye].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(fasten)] повязку на голове [npc2.namePos], а затем поправляет её так, чтобы закрыть [npc2.her] [npc2.eye].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] eye patch.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] повязку с глаз [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] eye patch.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] повязку с глаз [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] eye patch and roughly [npc.verb(pull)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(grab)] повязку [npc2.namePos] и грубо [npc.verb(pull)] её с глаз.]]>
 		</otherRough>
 	</displacementText>
   

@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA["MFD by DSG Stationery Co. from 99% post-consumer material" is printed on the back.]]></authorTag>
+		<authorTag><![CDATA[На спине красуется надпись: "Произведено DSG Stationery Co. из 99% переработанного сырья".]]></authorTag>
 
 		<value>150</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[cardboard cuirass]]></name>
+		<name><![CDATA[картонный кираса]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[cardboard cuirasses]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[картонные кирасы]]></namePlural> 
 
-		<description><![CDATA[An extended cuirass made from cardboardium alloy with ailettes added for additional protection. Light and relatively nimble thanks to its partial articulation, its actual protective qualities leave something to be desired.]]></description>
+		<description><![CDATA[Удлиненная кираса, изготовленная из сплава кардбордиума и дополненная айлеттами для дополнительной защиты. Благодаря частичному сочленению она легкая и довольно маневренная, однако ее реальные защитные свойства оставляют желать лучшего.]]></description>
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -102,49 +102,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] head between the cardboard plates and [npc.verb(let)] the armour sit on [npc.her] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] голову между картонных пластин и [npc.verb(let)] кираса опускается на [npc.her] плечи.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] between the cardboard plates and [npc.verb(let)] the armour sit on [npc2.her] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] между картонных пластин и [npc.verb(let)] кираса опускается на [npc2.her] плечи.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] between the cardboard plates and [npc.verb(secure)] the armour sit on [npc2.her] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] между картонных пластин и [npc.verb(secure)] кираса фиксируется на [npc2.her] плечах.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(lift)] the armour from [npc.her] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(lift)] кирасу с [npc.her] плеч.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(lift)] the armour from [npc2.namePos] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(lift)] кирасу с [npc2.namePos] плеч.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(toss)] the armour from [npc2.namePos] shoulders.]]>
+			<![CDATA[[npc.Name] [npc.verb(toss)] кирасу с [npc2.namePos] плеч.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="PULLS_DOWN">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(lower)] the lower section of [npc.her] cardboard cuirass back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(lower)] нижнюю часть [npc.her] картонного кирасы обратно вниз.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(lower)] the lower section of [npc.her] cardboard cuirass back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(lower)] нижнюю часть [npc.her] картонного кирасы обратно вниз.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(flip)] the lower section of [npc.her] cardboard cuirass back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(flip)] нижнюю часть [npc.her] картонного кирасы обратно вниз.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="PULLS_UP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(lift)] the lower section of [npc.her] cardboard cuirass back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(lift)] нижнюю часть [npc.her] картонного кирасы обратно вниз.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(lift)] the lower section of [npc2.namePos] cardboard cuirass back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(lift)] нижнюю часть [npc2.namePos] картонного кирасы обратно вниз.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(flip)] the lower section of [npc2.namePos] cardboard cuirass back down.]]>
+			<![CDATA[[npc.Name] [npc.verb(flip)] нижнюю часть [npc2.namePos] картонного кирасы обратно вниз.]]>
 		</otherRough>
 	</displacementText>
 	

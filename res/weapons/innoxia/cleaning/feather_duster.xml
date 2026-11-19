@@ -6,20 +6,20 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[feather duster]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[feather dusters]]></namePlural>
+		<name><![CDATA[пушистая метелка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пушистые метелки]]></namePlural>
 		<description><![CDATA[
 		#IF(pc.getLocationPlace().getPlaceType().equals(PLACE_TYPE_SHOPPING_ARCADE_ASHLEYS_SHOP))
-			A short-handled feather duster, ideal for keeping a house clean, but not much use in combat. [ashley.speech(A feather duster: the epitome of romance, at least for those who don't know anything about their lover, other than that they're the person who keeps the house clean.)]
+			Короткая метелка из перьев, идеальная для поддержания чистоты в доме, но малопригодная в бою. [ashley.speech(Пушистая метелка — само воплощение романтики, по крайней мере для тех, кто ничего не знает о своем возлюбленном, кроме того, что он — человек, который следит за чистотой в доме.)]
 		#ELSE
-			A short-handled feather duster, ideal for keeping a house clean, but not much use in combat...
+			Короткая метелка из перьев, идеальная для поддержания чистоты в доме, но малопригодная в бою...
 		#ENDIF]]></description>
 		<attackDescriptor>Duster tickle</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Tickle [npc.name] with your feather duster!]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Пощекочи [npc.name] своей метелкой!]]></attackTooltipDescription>
 		<rarity>EPIC</rarity>
 		<weaponSet>innoxia_maid</weaponSet>
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] feather duster.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] feather duster away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] метелку.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] метелку.]]></unequipText>
 		<imageName>feather_duster.svg</imageName> 
 		<imageEquippedName/> 
 		<damage>2</damage> 
@@ -54,22 +54,22 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(tickle)] [npc2.namePos] [npc2.arm] with [npc.her] feather duster!
+		[npc.Name] [npc.verb(tickle)] [npc2.namePos] [npc2.arm] с помощью [npc.her] метелки!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swipe)] [npc.her] feather duster at [npc2.name] and [npc.verb(manage)] to tickle [npc2.her] [npc2.face].
+		[npc.Name] [npc.verb(swipe)] [npc.her] метелкой по [npc2.name] и [npc.verb(manage)] щекотать [npc2.her] [npc2.face].
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] feather duster at [npc2.name], grinning as [npc.she] [npc.verb(tickle)] [npc2.her] torso.
+		[npc.Name] [npc.verb(swing)] [npc.her] метелкой в сторону [npc2.name], ухмыляясь, пока [npc.she] [npc.verb(tickle)] [npc2.her] торс.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swipe)] [npc.her] feather duster at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swipe)] [npc.her] пушистой метелкой по [npc2.name], но в итоге [npc.verb(end)] теряет [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] feather duster at [npc2.name], but [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc.Name] [npc.verb(swing)] [npc.her] пушистой метелкой по [npc2.name], но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

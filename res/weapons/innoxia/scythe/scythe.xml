@@ -10,11 +10,11 @@
 		
 		<determiner><![CDATA[the]]></determiner>
 		
-		<name><![CDATA[Dark Siren's Scythe]]></name>
+		<name><![CDATA[Коса Темной Сирены]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Dark Siren's Scythes]]></namePlural>
+		<namePlural pluralByDefault="false"><![CDATA[Косы Темной Сирены]]></namePlural>
 		
-		<description><![CDATA[A huge, arcane-bladed metal scythe. Enchanted by 'The Dark Siren' herself, this scythe holds tremendous power, and feels as light as a feather to the one who wields it. Such power comes at a cost, however, and each strike drains a huge amount of arcane essences from the wielder...]]></description> 
+		<description><![CDATA[Огромная металлическая коса с арканным лезвием. Зачарованная самой «Темной Сиреной», эта коса таит в себе колоссальную мощь и кажется легкой как перышко в руках того, кто ею владеет. Однако за такую силу приходится платить: каждый удар вытягивает из владельца огромное количество арканных эссенций...]]></description> 
 		
 		<attackDescriptor>reap</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<weaponSet>DARK_SIREN</weaponSet> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] hold of the Dark Siren's Scythe as [npc.she] [npc.verb(ready)] [npc.herself] to use it in combat.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] косу Темной Сирены, пока [npc.she] [npc.verb(ready)] [npc.herself], чтобы использовать её в бою.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away the Dark Siren's Scythe.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] косу Темной Сирены.]]></unequipText>
 		
 		<imageName>scythe.svg</imageName> 
 		
@@ -79,27 +79,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] scythe at [npc2.name], letting out an evil laugh as the ethereal blade unleashes a tremendous burst of arcane energy upon contacting [npc2.her] body!
+		[npc.Name] [npc.verb(swing)] [npc.her] косой по [npc2.name], издавая зловещий смех, когда эфирное лезвие высвобождает мощнейший всплеск арканной энергии при контакте с [npc2.her] телом!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] scythe at [npc2.name], grinning in delight as the ethereal blade delivers a cataclysmic blast of energy upon contacting with [npc2.her] body!
+		[npc.Name] [npc.verb(swing)] [npc.her] косой по [npc2.name], довольно ухмыляясь, когда эфирное лезвие обрушивает катаклизмический взрыв энергии при контакте с [npc2.her] телом!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] at [npc2.name] with [npc.her] scythe, laughing in maniacal glee as [npc2.her] body's contact with the ethereal blade triggers a tremendous burst of arcane energy!
+		[npc.Name] [npc.verb(swing)] по [npc2.name], размахивая [npc.her] косой и маниакально хохоча, пока контакт [npc2.her] тела с эфирным лезвием вызывает мощнейший всплеск арканной энергии!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] scythe at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swing)] [npc.her] косой по [npc2.name], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Swinging at [npc2.name] with [npc.her] scythe, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Замахиваясь [npc.her] косой на [npc2.name], [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
-		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(swing)] at [npc2.name] with [npc.her] scythe, but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[Сделав быстрый шаг вперед, [npc.name] [npc.verb(swing)] [npc2.name] своей [npc.her] косой, но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 </weapon>

@@ -11,19 +11,19 @@
 		<!-- The base value of this clothing. I roughly base things on 1 flame = 10p, so 10 flames = £1. -->
 		<value>350</value> 
 		
-		<authorTag><![CDATA[Yarn sewn into the unpatterned side of the scarf reads "MFD by DSG Threadworks".]]></authorTag>
+		<authorTag><![CDATA[На гладкой стороне шарфа вышито: «Изготовлено DSG Threadworks».]]></authorTag>
 		
 		<!-- The determiner that's displayed before this item's name. While usually 'a' or 'an', for things like socks or gloves, you'll want to use 'a pair of'. I use the CDATA tag for all text values, as it allows html markup to be embedded without causing issues.-->
 		<determiner><![CDATA[a]]></determiner>
 		
 		<!-- The name of this clothing. -->
-		<name><![CDATA[fox-patterned scarf]]></name>
+		<name><![CDATA[шарф с узором лисы]]></name>
 		
 		<!-- The plural form of the name. The attribute 'pluralByDefault' determines whther this item is naturally referred to as a plural (use true for things like socks or gloves).-->
-		<namePlural pluralByDefault="false"><![CDATA[fox-patterned scarves]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[шарфы с узором лисы]]></namePlural> 
 		
 		<!-- The description that's shown in tooltips and on the item's inspection page. -->
-		<description><![CDATA[A scarf made from cotton yarn, patterned to look like a fox on one side.]]></description> 
+		<description><![CDATA[Шарф из хлопковой пряжи, на одной стороне которого вышит узор в виде лисы.]]></description> 
 		
 		<!-- The default physical resistance for this piece of clothing. Usually use 0 or 1, but if it's armour, then values up to 5 would be fitting (any more than that might be very OP). -->
 		<physicalResistance>0</physicalResistance> 
@@ -121,26 +121,26 @@
 	<!-- 'displacementText' is used for removal and displacement. -->
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] scarf.]]>
+		  <![CDATA[[npc.Name] [npc.verb(take)] с [npc.her] шарф.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] scarf.]]>
+		  <![CDATA[[npc.Name] [npc.verb(take)] с [npc2.namePos] шарф.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tear)] [npc2.namePos] scarf away.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tear)] с [npc2.namePos] шарф.]]>
 		</otherRough>
 	</displacementText>
 
 	<!-- 'replacementText' is used for equipping and replacements. -->	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(wrap)] the scarf around [npc.her] neck.]]>
+		  <![CDATA[[npc.Name] [npc.verb(wrap)] шарф вокруг [npc.her] шеи.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(wrap)] the scarf around [npc2.her] neck.]]>
+		  <![CDATA[[npc.Name] [npc.verb(wrap)] шарф вокруг [npc2.her] шеи.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] nearly [npc.verb(gag)] [npc2.name] with the scarf as [npc.name] roughly [npc.verb(gag)] it around [npc2.namePos] neck.]]>
+		  <![CDATA[[npc.Name] почти [npc.verb(gag)] [npc2.name] этим шарфом, когда [npc.name] грубо [npc.verb(gag)] его вокруг [npc2.namePos] шеи.]]>
 		</otherRough>
   </replacementText>
 

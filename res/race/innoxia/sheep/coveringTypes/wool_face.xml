@@ -2,13 +2,13 @@
 <coveringType>
 	<category>MAIN_FUR</category>
 	
-	<nameTransformation><![CDATA[wool (face)]]></nameTransformation>
+	<nameTransformation><![CDATA[шерсть (на морде)]]></nameTransformation>
 	
 	<determiner><![CDATA[a layer of]]></determiner>
 	
-	<name><![CDATA[wool]]></name>
+	<name><![CDATA[шерсть]]></name>
 	
-	<namePlural pluralByDefault="false"><![CDATA[wool]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[шерсть]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>

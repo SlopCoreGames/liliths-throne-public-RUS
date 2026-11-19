@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[long-sleeved shirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[long-sleeved shirts]]></namePlural> 
-		<description><![CDATA[A long-sleeved shirt, complete with collar and a full-length opening at the front, which is fastened using buttons.]]></description> 
+		<name><![CDATA[рубашка с длинным рукавом]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[рубашки с длинным рукавом]]></namePlural> 
+		<description><![CDATA[Рубашка с длинным рукавом, с воротником и разрезом спереди на всю длину, застегивающаяся на пуговицы.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>TORSO_UNDER</slot> 

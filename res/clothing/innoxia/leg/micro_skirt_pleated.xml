@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[pleated microskirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[pleated microskirts]]></namePlural>
-		<description><![CDATA[Consisting of little more than a narrow band of pleated fabric, this microskirt is so short that it leaves its wearer's private parts completely exposed.]]></description> 
+		<name><![CDATA[плиссированная микроюбка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[плиссированные микроюбки]]></namePlural>
+		<description><![CDATA[Эта микроюбка представляет собой лишь узкую полоску плиссированной ткани; она настолько коротка, что полностью оставляет интимные места своей обладательницы открытыми.]]></description> 
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>LEG</slot>
@@ -35,25 +35,25 @@
 	
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the pleated microskirt and [npc.verb(pull)] it up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в плиссированную микроюбку и [npc.verb(pull)] её вверх, чтобы она облегала талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the pleated microskirt, before pulling it up around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в плиссированную микроюбку, после чего натягивает её на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the pleated microskirt, before yanking it up around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в плиссированную микроюбку, а затем резко натягивает её на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] pleated microskirt, before slipping it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] вниз плиссированную микроюбку [npc.her], а затем стягивает её.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] pleated microskirt, before slipping it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] вниз плиссированную микроюбку [npc2.namePos], а затем стягивает её.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] pleated microskirt, before yanking it off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] вниз плиссированную микроюбку [npc2.namePos], а затем срывает её.]]>
     </otherRough>
   </displacementText>
   

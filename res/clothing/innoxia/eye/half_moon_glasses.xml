@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>750</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[half-moon reading glasses]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[half-moon reading glasses]]></namePlural>
-		<description><![CDATA[A pair of unisex, half-moon glasses. This design is typically used to help the wearer overcome any long-sightedness they may suffer from, allowing them to read documents and focus on up-close objects. This particular pair, however, are good for correcting both short and long-sightedness.]]></description>
+		<name><![CDATA[очки-половинки для чтения]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[очки-половинки для чтения]]></namePlural>
+		<description><![CDATA[Унисекс-очки в форме полумесяца. Обычно такой дизайн используют, чтобы помочь владельцу справиться с дальнозоркостью, позволяя читать документы и фокусироваться на предметах вблизи. Однако именно эта пара отлично подходит для коррекции как близорукости, так и дальнозоркости.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>
@@ -58,25 +58,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the glasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] очки.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the glasses onto [npc2.namePos] face.]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] очки на лицо [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(push)] the glasses onto [npc2.namePos] face.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(push)] очки на лицо [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] glasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] очки с [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] glasses.]]>
+			<![CDATA[[npc.Name] [npc.verb(take)] очки с [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] glasses and roughly [npc.verb(pull)] them off.]]>
+			<![CDATA[[npc.Name] хватает очки [npc2.namePos] и грубо [npc.verb(pull)] их с лица.]]>
 		</otherRough>
 	</displacementText>
 	

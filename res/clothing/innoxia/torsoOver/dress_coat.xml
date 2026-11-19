@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>2500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[dress coat]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[dress coats]]></namePlural>
-		<description><![CDATA[A type of dress coat, this garment does absolutely nothing to conceal the wearer's groin or rear end when worn.]]></description>
+		<name><![CDATA[парадный сюртук]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[парадные сюртуки]]></namePlural>
+		<description><![CDATA[Особый вид парадного сюртука; эта одежда совершенно не скрывает пах или задницу того, кто её носит.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_OVER</slot>
@@ -62,24 +62,20 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] on the dress coat.
+			[npc.Name] [npc.verb(pull)] за парадный сюртук.
 		]]></self>
-		<other><![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the dress coat's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
-		]]></other>
-		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the dress coat's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
-		]]></otherRough>
+		<other><![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава платья-пальто, пока [npc.she] [npc.verb(pull)] надевает его на [npc2.herHim].]]></other>
+		<otherRough><![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава сюртука, пока [npc.she] [npc.verb(pull)] его на себя [npc2.herHim].]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc.her] dress coat.
+			[npc.Name] [npc.verb(take)] с [npc.her] парадный сюртук.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc2.namePos] dress coat.
+			[npc.Name] [npc.verb(take)] с [npc2.namePos] парадный сюртук.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] dress coat.
+			[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] парадный сюртук.
 		]]></otherRough>
 	</displacementText>
 	

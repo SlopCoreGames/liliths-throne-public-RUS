@@ -2,12 +2,12 @@
 
 <clothing>
   <coreAttributes>
-    <clothingAuthorTag><![CDATA[Small engraved lettering informs you that this piercing was made by 'Norin'.]]></clothingAuthorTag>
+    <clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что этот пирсинг был сделан мастером «Норин».]]></clothingAuthorTag>
     <value>450</value> <!--10 flames = £1 ~ $1.5-->
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[sunflower lip piercing]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[sunflower lip piercings]]></namePlural>
-    <description><![CDATA[A lip piercing with a sunflower.]]></description>
+    <name><![CDATA[пирсинг в губе с подсолнухом]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[пирсинги в губах с подсолнухами]]></namePlural>
+    <description><![CDATA[Пирсинг в губе в виде подсолнуха.]]></description>
     
     <physicalResistance>0</physicalResistance>
     <femininity>FEMININE</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
@@ -57,25 +57,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(clip)] a flowered lip piercing into [npc.her] [npc.lips+].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] пирсинг в виде цветка в губу [npc.her] [npc.lips+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(clip)] a flowered lip piercing into [npc2.namePos] [npc2.lips+].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] пирсинг в виде цветка в губу [npc2.namePos] [npc2.lips+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] a flowered lip piercing into [npc2.namePos] [npc2.lips+].]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] силой вгоняет пирсинг в виде цветка в губу [npc2.namePos] [npc2.lips+].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(remove)] a flowered lip piercing from [npc.her] [npc.lips+].]]>
+      <![CDATA[[npc.Name] [npc.verb(remove)] вынимает пирсинг в виде цветка из губы [npc.her] [npc.lips+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(remove)] a flowered lip piercing from [npc2.namePos] [npc2.lips+].]]>
+      <![CDATA[[npc.Name] [npc.verb(remove)] вынимает пирсинг в виде цветка из губы [npc2.namePos] [npc2.lips+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(tug)] a flowered lip piercing out from [npc2.namePos] [npc2.lips+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tug)] вытягивает пирсинг в виде цветка из губы [npc2.namePos] [npc2.lips+].]]>
     </otherRough>
   </displacementText>
   

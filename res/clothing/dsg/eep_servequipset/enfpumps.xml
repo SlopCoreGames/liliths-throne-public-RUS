@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[Inside the arches of each pump, a small engraving reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[Внутри свода каждого туфля красуется гравировка: «Официальная экипировка Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>300</value> 
 
 		<determiner><![CDATA[a pair of]]></determiner>
 
-		<name><![CDATA[Enforcer's pumps]]></name>
+		<name><![CDATA[Туфли Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's pumps]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Туфли Enforcer]]></namePlural> 
 
-		<description><![CDATA[A pair of polished shoes with low-cut uppers and modest heels.]]></description> 
+		<description><![CDATA[Пара лакированных туфель с низким вырезом и скромным каблуком.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -70,25 +70,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the pumps.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в туфли.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.feet] into the pumps.]]>
+		  <![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.feet] в туфли.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] [npc2.feet] into the pumps.]]>
+		  <![CDATA[[npc.Name] [npc.verb(shove)] [npc2.namePos] [npc2.feet] в туфли.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] pumps off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc.her] туфли с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] pumps off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slip)] [npc2.namePos] туфли с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] pumps off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] туфли с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

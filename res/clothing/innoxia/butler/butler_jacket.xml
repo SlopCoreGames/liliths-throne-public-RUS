@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[Butler's Jacket]]></name>
+		<name><![CDATA[Пиджак дворецкого]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Butler's Jackets]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Пиджаки дворецкого]]></namePlural> 
 		
-		<description><![CDATA[A smart tailcoat, of the type worn by butlers.]]></description> 
+		<description><![CDATA[Элегантный фрак, типичный для гардероба дворецких.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -88,24 +88,20 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(pull)] on the jacket.
+			[npc.Name] [npc.verb(pull)] за пиджак.
 		]]></self>
-		<other><![CDATA[
-			[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] through the jacket's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
-		]]></other>
-		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.arms] through the jacket's sleeves as [npc.she] [npc.verb(pull)] it on [npc2.herHim].
-		]]></otherRough>
+		<other><![CDATA[[npc.Name] [npc.verb(guide)] [npc2.namePos] [npc2.arms] сквозь рукава пиджака, пока [npc.she] [npc.verb(pull)] его на себя [npc2.herHim].]]></other>
+		<otherRough><![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.arms] сквозь рукава пиджака, пока [npc.she] [npc.verb(pull)] его на [npc2.herHim].]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc.her] jacket.
+			[npc.Name] [npc.verb(take)] с [npc.her] пиджак.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(take)] off [npc2.namePos] jacket.
+			[npc.Name] [npc.verb(take)] с [npc2.namePos] пиджак.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] jacket.
+			[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] пиджак.
 		]]></otherRough>
 	</displacementText>
 	

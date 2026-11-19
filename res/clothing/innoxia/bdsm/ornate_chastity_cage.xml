@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>1500</value>
     <determiner><![CDATA[an]]></determiner>
-    <name><![CDATA[ornate chastity cage]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[ornate chastity cages]]></namePlural>
-    <description><![CDATA[An ornate metal cage, designed to be fit in place around someone's penis in order to prevent it from being used in penetrative sex. When worn, it will physically prevent an erection from occurring.]]></description>
+    <name><![CDATA[изысканная девственная клетка]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[изысканные девственные клетки]]></namePlural>
+    <description><![CDATA[Изящная металлическая клетка, предназначенная для фиксации на пенисе, чтобы предотвратить возможность проникновения. При ношении она физически не дает возникнуть эрекции.]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -66,25 +66,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(lock)] the ornate chastity cage in place around [npc.her] cock.]]>
+      <![CDATA[[npc.Name] [npc.verb(lock)] изысканную девственную клетку на [npc.her] члену.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(lock)] the ornate chastity cage in place around [npc2.namePos] cock.]]>
+      <![CDATA[[npc.Name] [npc.verb(lock)] изысканную девственную клетку на [npc2.namePos] члену.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly squeezes [npc2.namePos] cock before locking it inside the ornate chastity cage.]]>
+      <![CDATA[[npc.Name] грубо сжимает [npc2.namePos] член, прежде чем запереть его внутри изысканной девственной клетки.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unlock)] and [npc.verb(remove)] the ornate chastity cage that was imprisoning [npc.her] cock.]]>
+      <![CDATA[[npc.Name] [npc.verb(unlock)] и [npc.verb(remove)] изысканную девственную клетку, заточившую [npc.her] член.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unlock)] and [npc.verb(remove)] the ornate chastity cage that was imprisoning [npc2.namePos] cock.]]>
+      <![CDATA[[npc.Name] [npc.verb(unlock)] и [npc.verb(remove)] изысканную девственную клетку, заточившую [npc2.namePos] член.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(unlock)] and [npc.verb(pull)] off the ornate chastity cage that was imprisoning [npc2.namePos] cock.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(unlock)] и [npc.verb(pull)] срывает изысканную девственную клетку, заточившую [npc2.namePos] член.]]>
     </otherRough>
   </displacementText>
 

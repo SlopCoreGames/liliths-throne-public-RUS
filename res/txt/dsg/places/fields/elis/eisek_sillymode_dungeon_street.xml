@@ -3,10 +3,9 @@
 
 	<!-- STREET -->
 	
-	<htmlContent tag="STREET"><![CDATA[
-	<p>
-		You detect a faint odour emanating from a nearby building. It is unpleasant but also familiar. Upon closer inspection, the smell is coming from the building's basement, the door to which is down a short flight of stairs. This must be where that group of dragon-obsessed weirdos do their "LARP"ing or at least gather in numbers.
-	</p>
+	<htmlContent tag="STREET"><![CDATA[<p>
+Ты улавливаешь слабый запах, исходящий от соседнего здания. Он неприятный, но какой-то знакомый. Присмотревшись, ты понимаешь, что воняет из подвала, вход в который ведет вниз по короткой лестнице. Должно быть, именно здесь эта кучка помешанных на драконах чудиков занимается своим «ролеплеем» или, по крайней мере, собирается толпой.
+</p>
 	]]>
 	</htmlContent>
 	

@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<authorTag><![CDATA[On the underside of each lens set, a faint engraving reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне каждой линзы видна едва заметная гравировка: «Официальное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 		<value>1000</value>
 		<determiner><![CDATA[a set of]]></determiner>
-		<name><![CDATA[Enforcer's night vision goggles]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's night vision goggles]]></namePlural>
-		<description><![CDATA[With its array of four sight enchantments, this set of panoramic night vision goggles offers twice the field of view compared to older systems. The included mount is very flexible and can be securely attached to compatible headgear.]]></description>
+		<name><![CDATA[Ночные очки Enforcer]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ночные очки Enforcer]]></namePlural>
+		<description><![CDATA[Благодаря набору из четырех чар обзора, этот комплект панорамных ночных очков обеспечивает вдвое больший угол обзора по сравнению со старыми системами. В комплект входит очень гибкое крепление, позволяющее надежно зафиксировать очки на совместимом головном уборе.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>EYES</slot>
@@ -50,25 +50,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(equip)] the goggles and [npc.verb(lower)] them over [npc.her] [npc.eyes].]]>
+			<![CDATA[[npc.Name] [npc.verb(equip)] очки и [npc.verb(lower)] их на [npc.her] [npc.eyes].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] equip the goggles and [npc.verb(lower)] them over [npc2.her] [npc2.eyes].]]>
+			<![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] надеть очки и [npc.verb(lower)] их на [npc2.her] [npc2.eyes].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the goggles onto [npc2.namePos] [npc2.eyes].]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] натянуть очки на [npc2.namePos] [npc2.eyes].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(raise)] [npc.her] goggles from [npc.her] [npc.eyes] and [npc.verb(unequip)] them.]]>
+		  <![CDATA[[npc.Name] [npc.verb(raise)] очки с [npc.her] [npc.eyes] [npc.her] и [npc.verb(unequip)] их.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(raise)] [npc2.namePos] goggles from [npc2.her] [npc2.eyes] and [npc.verb(unequip)] them.]]>
+		  <![CDATA[[npc.Name] [npc.verb(raise)] очки с [npc2.her] [npc2.eyes] [npc2.namePos] и [npc.verb(unequip)] их.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] goggles from [npc2.her] [npc2.eyes].]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] очки с [npc2.her] [npc2.eyes] [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

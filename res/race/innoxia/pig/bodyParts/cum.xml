@@ -2,18 +2,18 @@
 <fluid>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[pig-]]></name>
+		<name><![CDATA[свинской-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[pig-]]></name>
+		<name><![CDATA[свинской-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

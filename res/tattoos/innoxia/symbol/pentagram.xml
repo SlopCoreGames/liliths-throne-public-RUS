@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[pentagram]]></name>
+		<name><![CDATA[пентаграмма]]></name>
 		
-		<description><![CDATA[The pentagram is the symbol of Lilith herself, and this particular depiction of it has been set within a circle.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a pentagram within a circle]]></bodyOverviewDescription> 
+		<description><![CDATA[Пентаграмма — это символ самой Lilith, и именно это изображение заключено в круг.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка с изображением пентаграммы внутри круга]]></bodyOverviewDescription> 
 		
 		<imageName>pentagram.svg</imageName> 
 		

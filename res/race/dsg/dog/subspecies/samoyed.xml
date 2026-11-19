@@ -111,38 +111,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[samoyed-morph]]></name>
-			<namePlural><![CDATA[samoyed-morphs]]></namePlural>
-			<singularMaleName><![CDATA[samoyed-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[samoyed-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[samoyed-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[samoyed-girls]]></pluralFemaleName>
+			<name><![CDATA[самоед-морф]]></name>
+			<namePlural><![CDATA[самоед-морфы]]></namePlural>
+			<singularMaleName><![CDATA[самоед-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[самоед-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[самоед-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[самоед-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[A smart, industrious subspecies of dog-morph with a pelt that can endure the coldest climates. Known as a 'samoyed-morph' when bipedal, and a 'samoyedtaur' when the lower body is that of a typically-oversized feral samoyed. To be identified as a samoyed-morph, a character must be a dog-morph with fluffy, un-patterned white fur.]]></description>
+	<description><![CDATA[Умный и трудолюбивый подвид псов-морфов с густой шерстью, способной выдержать самый суровый климат. В двуногой форме их называют «самоед-морфами», а когда нижняя часть тела представляет собой тело типично крупного дикого самоеда — «самоедтаврами». Чтобы считаться самоед-морфом, персонаж должен быть псом-морфом с пушистой однотонной белой шерстью.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[hellhound]]></name>
-			<namePlural><![CDATA[hellhounds]]></namePlural>
-			<singularMaleName><![CDATA[hellhound]]></singularMaleName>
-			<singularFemaleName><![CDATA[hellhound]]></singularFemaleName>
-			<pluralMaleName><![CDATA[hellhounds]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[hellhounds]]></pluralFemaleName>
+			<name><![CDATA[адская гончая]]></name>
+			<namePlural><![CDATA[адские гончие]]></namePlural>
+			<singularMaleName><![CDATA[адская гончая]]></singularMaleName>
+			<singularFemaleName><![CDATA[адская гончая]]></singularFemaleName>
+			<pluralMaleName><![CDATA[адские гончие]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[адские гончие]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[samoyed]]></feralName>
-		<feralNamePlural><![CDATA[samoyeds]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[samoyed]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[samoyed]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[samoyeds]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[samoyeds]]></feralPluralFemaleName>
+		<feralName><![CDATA[самоед]]></feralName>
+		<feralNamePlural><![CDATA[самоеды]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[самоедский]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[самоедский]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[самоедские]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[самоедские]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -173,7 +173,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] samoyed-like body is hearty and well protected against the cold, and [npc.she] [npc.verb(tend)] to find purpose and comfort in doing work.
+		[npc.NamePos] Телосложение, подобное самоедам, крепкое и отлично защищенное от холода, а [npc.she] [npc.verb(tend)] находить смысл и утешение в работе.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

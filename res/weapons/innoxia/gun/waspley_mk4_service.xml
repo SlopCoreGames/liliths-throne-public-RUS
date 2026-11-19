@@ -5,16 +5,16 @@
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name appendDamageName="false"><![CDATA[Waspley Mk IV .38/200 Service Revolver]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Waspley Mk IV Service Revolvers]]></namePlural> 
-		<description><![CDATA[Although nearly identical in appearance to its .455 calibre counterpart, this particular top-break, double action revolver is chambered for the smaller .38 cartridge.]]></description>
+		<name appendDamageName="false"><![CDATA[Служебный револьвер Waspley Mk IV .38/200]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Служебные револьверы Waspley Mk IV]]></namePlural> 
+		<description><![CDATA[Хотя внешне он почти идентичен своему собрату калибра .455, этот револьвер с двойным действием и откидным стволом рассчитан под более мелкий патрон .38.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
 		<attackTooltipDescription>Shoot [npc2.name] with your revolver.</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		<weaponSet/> 
-		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her] revolver, ready to use it in combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her] revolver.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] [npc.her], готовый пустить его в ход в бою.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(holster)] [npc.her].]]></unequipText>
 		
 		<imageName>revolver.svg</imageName> 
 		<imageEquippedName/>
@@ -48,13 +48,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Taking aim with [npc.her] pistol, [npc.name] [npc.verb(pull)] the trigger and [npc.verb(fire)] a bullet at [npc2.name], hitting [npc2.herHim] directly in the chest!<br/>Thankfully, there seems to be some kind of arcane force preventing [npc2.name] from being seriously wounded or killed...
+		Прицелившись из [npc.her], [npc.name] [npc.verb(pull)] спусковой крючок и [npc.verb(fire)] пулю в [npc2.name], попадая прямо в грудь [npc2.herHim]!<br/>К счастью, какая-то сила Арканы, похоже, не дает [npc2.name] получить серьезное ранение или погибнуть...
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Taking aim with [npc.her] pistol, [npc.name] [npc.verb(pull)] the trigger and fires a bullet at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		Прицелившись из [npc.her], [npc.name] [npc.verb(pull)] спусковой крючок и выпускает пулю в [npc2.name], но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 	</missDescriptions>
 	

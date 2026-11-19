@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[pig-morph]]></name>
-	<namePlural><![CDATA[pig-morphs]]></namePlural>
+	<name><![CDATA[свиная морфология]]></name>
+	<namePlural><![CDATA[свиные морфологии]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[pig]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[свинья]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[pig]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[свинья]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[pig]]></defaultTransformName>
+	<defaultTransformName><![CDATA[свинья]]></defaultTransformName>
 	
 	<colour>innoxia_pig</colour>
 	

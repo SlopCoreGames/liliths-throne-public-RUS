@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[tabi sock]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[tabi socks]]></namePlural>
-		<description><![CDATA[A pair of traditional Japanese cotton socks, designed to be worn with thonged footwear. They have fasteners at the back to secure them in place.]]></description>
+		<name><![CDATA[носок таби]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[носки таби]]></namePlural>
+		<description><![CDATA[Пара традиционных японских хлопковых носков, предназначенных для ношения с обувью с разделенным большим пальцем. Сзади они снабжены застежками, чтобы надежно удерживаться на ноге.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>SOCK</slot> 
@@ -51,25 +51,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the tabi socks on to cover [npc.her] [npc.feet].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] таби на [npc.her] [npc.feet].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the tabi socks onto [npc2.namePos] [npc2.feet].]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] таби на [npc2.namePos] [npc2.feet].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the tabi socks onto [npc2.namePos] [npc2.feet].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] таби на [npc2.namePos] [npc2.feet].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] tabi socks.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] таби.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] tabi socks.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] таби.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] tabi socks.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] таби.]]>
     </otherRough>
   </displacementText>
 	

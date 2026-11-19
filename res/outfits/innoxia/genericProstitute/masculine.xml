@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic prostitute (masculine)]]></name>
+		<name><![CDATA[обычная проститутка (мужчина)]]></name>
 		
-		<description><![CDATA[Revealing clothing.]]></description>
+		<description><![CDATA[Откровенный наряд.]]></description>
 		
 		<femininity>MASCULINE</femininity>
 		

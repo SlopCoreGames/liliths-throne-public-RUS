@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[tight latex leggings]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[tight latex leggings]]></namePlural>
-		<description><![CDATA[A pair of tight latex leggings that are butter-soft to touch and shiny to behold. Form fitting even without the arcane, they are sure to fit tightly and snugly to anyone that wears them.]]></description> 
+		<name><![CDATA[облегающие латексные леггинсы]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[облегающие латексные леггинсы]]></namePlural>
+		<description><![CDATA[Пара облегающих латексных леггинсов, невероятно мягких на ощупь и сияющих на свету. Они идеально облегают тело даже без магии Арканы, гарантированно плотно и уютно прилегая к любому, кто их наденет.]]></description> 
 		<physicalResistance>1</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>LEG</slot>
@@ -63,25 +63,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the latex leggings, before pulling them up and fastening the zip at [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в латексные леггинсы, после чего натягивает их и застегивает молнию на талии [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the latex leggings, before pulling them up and fastening the zip at [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в латексные леггинсы, после чего натягивает их и застегивает молнию на талии [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the latex leggings, before yanking them up and fastening the zip at [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в латексные леггинсы, после чего резко натягивает их и застегивает молнию на талии [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the zip on [npc.her] latex leggings, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] молнию на латексных леггинсах [npc.her], после чего стягивает их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the zip on [npc2.namePos] latex leggings, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] молнию на латексных леггинсах [npc2.namePos], после чего стягивает их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the zip on [npc2.namePos] latex leggings, before yanking them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] молнию на латексных леггинсах [npc2.namePos], после чего срывает их.]]>
     </otherRough>
   </displacementText>
 	

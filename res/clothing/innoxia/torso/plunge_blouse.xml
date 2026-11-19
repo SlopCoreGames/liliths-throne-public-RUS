@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[plunge blouse]]></name>
+		<name><![CDATA[блуза с глубоким декольте]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[plunge blouses]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[блузы с глубоким декольте]]></namePlural> 
 		
-		<description><![CDATA[A silk blouse, with long sleeves and a hanging front tie. The plunging neckline reveals much of the wearer's cleavage.]]></description> 
+		<description><![CDATA[Шелковая блуза с длинными рукавами и завязками спереди. Глубокий вырез открывает вид на пышное декольте обладательницы.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

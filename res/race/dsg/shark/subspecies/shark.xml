@@ -104,17 +104,17 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[shark-morph]]></name>
-			<namePlural><![CDATA[shark-morphs]]></namePlural>
-			<singularMaleName><![CDATA[shark-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[shark-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[shark-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[shark-girls]]></pluralFemaleName>
+			<name><![CDATA[морф акулы]]></name>
+			<namePlural><![CDATA[морфы акулы]]></namePlural>
+			<singularMaleName><![CDATA[шарко-мальчик]]></singularMaleName>
+			<singularFemaleName><![CDATA[шарко-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[шарко-мальчики]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[шарко-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic shark, known as a 'shark-morph' when bipedal, and a 'nanaue' when the lower body is that of a typically-oversized feral shark.]]></description>
+	<description><![CDATA[Антропоморфная акула; когда она передвигается на двух ногах, её называют «шаркоморфом», а когда её нижняя часть тела представляет собой типично огромную дикую акулу — «нанауэ».]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
@@ -123,19 +123,19 @@
 			<singularMaleName><![CDATA[kojin]]></singularMaleName>
 			<singularFemaleName><![CDATA[kojin]]></singularFemaleName>
 			<pluralMaleName><![CDATA[kojin]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[kojin]]></pluralFemaleName>
+			<pluralFemaleName><![CDATA[коджин]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[shark]]></feralName>
-		<feralNamePlural><![CDATA[shark]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[shark]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[shark]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[shark]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[shark]]></feralPluralFemaleName>
+		<feralName><![CDATA[акула]]></feralName>
+		<feralNamePlural><![CDATA[акула]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[акула]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[акула]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[акула]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[акула]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -166,7 +166,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] shark-like body is quick and strong, and [npc.she] [npc.has] a primal urge to relentlessly pursue [npc.her] goals and desires.
+		[npc.NamePos] тело, подобное акуле, быстрое и сильное, а также [npc.she] [npc.has] первобытный инстинкт неустанно преследовать [npc.her] цели и желания.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

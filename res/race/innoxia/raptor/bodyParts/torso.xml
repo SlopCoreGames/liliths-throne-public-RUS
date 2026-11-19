@@ -2,7 +2,7 @@
 <torso>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_feathers</coveringType>
 	
@@ -10,12 +10,10 @@
 	
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered in overlapping feathers. [npc.Her] new feathers follow the lines of [npc.her] figure, and are very smooth to the touch.
-		<br/>[npc.Name] now [npc.has] [style.boldRaptor(raptor)], [npc.skinFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Спустя всего несколько мгновений трансформация завершается, и [npc.she] [npc.verb(let)] глубоко вздохнуть — зуд наконец утихает, оставляя [npc.her] торс покрытым слоями перьев. [npc.Her] новые перья повторяют контуры [npc.her] фигуры и очень гладкие на ощупь.
+<br/>[npc.Name] теперь [npc.has] [style.boldRaptor(raptor)], [npc.skinFullDescription].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+		Торс [npc.Her] обладает [npc.a_femininity(true)] видом и [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
 	]]></bodyDescription>
 </torso>

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>800</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[strapless strap-on]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[strapless strap-on's]]></namePlural>
-		<description><![CDATA[A [unit.size(25)] dildo made of self-cleaning, arcane-cured silicone, which is designed to be worn vaginally. It features a textured clitoral pad, as well as a handle shaped to target the wearer's G-Spot.]]></description>
+		<name><![CDATA[безремешковый страпон]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[безремешковые страпоны]]></namePlural>
+		<description><![CDATA[Дилдо размером [unit.size(25)], сделанное из самоочищающегося силикона, закаленного Арканой и предназначенное для вагинального использования. Оно оснащено текстурированной накладкой для клитора и рукояткой, форма которой позволяет воздействовать на точку G носительницы.]]></description>
 
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
@@ -73,25 +73,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(push)] the strapless dildo into [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] безремешковый дилдо в [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the strapless dildo into [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] безремешковый дилдо в [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(hold)] [npc2.name] still as [npc.she] roughly [npc.verb(force)] the strapless dildo into [npc2.her] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(hold)] [npc2.name] неподвижно, пока [npc.she] грубо [npc.verb(force)] безремешковый дилдо в [npc2.her] [npc2.pussy+].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the strapless dildo out of [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] безремешковый дилдо из [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the strapless dildo out [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] безремешковый дилдо из [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.namePos] strapless dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.namePos] безремешковый дилдо и [npc.verb(yank)] его из [npc2.her] [npc2.pussy+].]]>
 		</otherRough>
 	</displacementText>
 	

@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<coveringType>innoxia_mouse_fur</coveringType>
 	
@@ -14,11 +14,9 @@
 	<descriptorsMasculine/>
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldMouse(mouse-like)], [npc.assholeFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[[npc.She] теперь [npc.has] [style.boldMouse(mouse-like)], [npc.assholeFullDescription].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a mouse-like, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] — мышеподобная, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>70</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Shrimp Cocktail]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Shrimp Cocktails]]></namePlural>
-		<description><![CDATA[A disposable cocktail glass rimmed with freshly poached shrimp and with a small cup of spicy sauce in the centre. The illustration on the outer packaging shows an octopus-morph in chef's clothing handling a comically large number of ingredients and utensils at once.]]></description> 
+		<name><![CDATA[Коктейль из креветок]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Коктейли из креветок]]></namePlural>
+		<description><![CDATA[Одноразовый коктейльный бокал, края которого украшены свежесваренными креветками, а в центре находится маленькая чашечка с острым соусом. На иллюстрации на упаковке изображен осьминогоморф в поварском колпаке, одновременно управляющий комично огромным количеством ингредиентов и кухонной утвари.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(2)] к 'эффектам зелий']]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel stronger...
+				[npc.Name] [npc.verb(start)] чувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 2)]
 		]]></applyEffects>
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(remove)] the clear plastic cover and [npc.verb(grab)] the cocktail glass. Unable to resist the delicious-looking little shellfish inside, [npc.she] eagerly [npc.verb(start)] dipping and snacking and in a matter of moments [npc.has] completely devoured the entire arrangement.
+		[npc.Name] [npc.verb(remove)] прозрачную пластиковую крышку и [npc.verb(grab)] коктейльный бокал. Не в силах устоять перед аппетитным морепродуктом внутри, [npc.she] с жадностью [npc.verb(start)] макает креветки в соус и уплетает их, и всего через мгновение [npc.has] полностью пожирает всё содержимое.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(remove)] the clear plastic cover and [npc.verb(hold)] out the cocktail glass to [npc2.name]. Unable to resist the delicious-looking little shellfish inside, [npc2.she] eagerly [npc2.verb(start)] dipping and snacking and in a matter of moments [npc2.has] completely devoured the entire arrangement.
+		[npc.Name] [npc.verb(remove)] прозрачную пластиковую крышку и [npc.verb(hold)] коктейльный бокал перед [npc2.name]. Не в силах устоять перед аппетитным морепродуктом внутри, [npc2.she] с жадностью [npc2.verb(start)] макает креветки в соус и уплетает их, и всего через мгновение [npc2.has] полностью пожирает всё содержимое.
 		]]></otherUse>
 	</useDescriptions>
 

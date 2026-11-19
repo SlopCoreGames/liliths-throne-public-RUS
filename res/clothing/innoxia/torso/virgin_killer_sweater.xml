@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>800</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA['Virgin-killer' sweater]]></name>
-		<namePlural pluralByDefault="false"><![CDATA['Virgin-killer' sweaters]]></namePlural>
-		<description><![CDATA[A long, dress-like sweater, with a large portion cut out of the back.]]></description>
+		<name><![CDATA[Свитер «убийца девственниц»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Свитеры «убийцы девственниц»]]></namePlural>
+		<description><![CDATA[Длинный свитер, похожий на платье, с огромным вырезом на спине.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_UNDER</slot> 

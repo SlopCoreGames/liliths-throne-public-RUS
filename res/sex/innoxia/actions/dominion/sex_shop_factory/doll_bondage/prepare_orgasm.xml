@@ -24,15 +24,15 @@
 	<areasCummedIn/>
 	<areasCummedOn/>
 	<title><![CDATA[
-		Allow orgasm
+		Разрешить оргазм
 	]]></title>
 	<tooltip><![CDATA[
-		Give the horny doll permission to orgasm.
+		Дать похотливой кукле разрешение кончить.
 	]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
-				[doll.speechNoEffects(The test is almost complete, I just need you to orgasm,)] the doll states as she sees that you're about to climax. In her expressionless voice, she commands, [doll.speechNoEffects(Go on then, cum!)]
+				[doll.speechNoEffects(Испытание почти завершено, мне нужно лишь, чтобы ты кончила,)] — произносит кукла, видя, что ты вот-вот достигнешь пика. Бесстрастным голосом она приказывает: [doll.speechNoEffects(Ну же, кончай!)]
 			]]></text>
 		</description>
 	</descriptions>

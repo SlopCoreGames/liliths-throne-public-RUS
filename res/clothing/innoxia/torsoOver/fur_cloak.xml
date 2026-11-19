@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>1000</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[fur cloak]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[fur cloaks]]></namePlural>
-		<description><![CDATA[A sleeveless, loose garment, which is worn over clothing for the purpose of keeping the wearer warm and protected from the elements. This particular example is both lined and trimmed with fur.]]></description>
+		<name><![CDATA[меховой плащ]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[меховые плащи]]></namePlural>
+		<description><![CDATA[Безрукавная свободная одежда, которую надевают поверх основного наряда, чтобы согреться и защититься от непогоды. Этот экземпляр подшит и оторочен мехом.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 	<equipSlots>
@@ -239,47 +239,47 @@
 
 	<replacementText slot="NECK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc.her] shoulders, before tying the cord around [npc.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc.her], а затем завязывает шнурок на шее [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before tying the cord around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc2.namePos], а затем завязывает шнурок на шее [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before firmly tying the cord around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] небрежно [npc.verb(drape)] плащ на плечи [npc2.namePos], а затем крепко завязывает шнурок на шее [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="NECK" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(untie)] the cord around [npc.her] neck, before taking off [npc.her] cloak.]]>
+			<![CDATA[[npc.Name] [npc.verb(untie)] шнурок на шее [npc.her], а затем снимает с [npc.her] плащ.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(untie)] the cord around [npc2.namePos] neck, before taking off [npc2.her] cloak.]]>
+			<![CDATA[[npc.Name] [npc.verb(untie)] шнурок на шее [npc2.namePos], а затем снимает с [npc2.her] плащ.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(untie)] the cord around [npc2.namePos] neck, before pulling off [npc2.her] cloak.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(untie)] шнурок на шее [npc2.namePos], а затем срывает с [npc2.her] плащ.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc.her] shoulders, before tying the cord around [npc.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc.her], а затем завязывает шнурок на шее [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before tying the cord around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc2.namePos], а затем завязывает шнурок на шее [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before firmly tying the cord around [npc2.her] neck.]]>
+			<![CDATA[[npc.Name] небрежно [npc.verb(drape)] плащ на плечи [npc2.namePos], а затем крепко завязывает шнурок на шее [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(untie)] the cord around [npc.her] neck, before taking off [npc.her] cloak.]]>
+			<![CDATA[[npc.Name] [npc.verb(untie)] шнурок на шее [npc.her], а затем снимает с [npc.her] плащ.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(untie)] the cord around [npc2.namePos] neck, before taking off [npc2.her] cloak.]]>
+			<![CDATA[[npc.Name] [npc.verb(untie)] шнурок на шее [npc2.namePos], а затем снимает с [npc2.her] плащ.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(untie)] the cord around [npc2.namePos] neck, before pulling off [npc2.her] cloak.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(untie)] шнурок на шее [npc2.namePos], а затем срывает с [npc2.her] плащ.]]>
 		</otherRough>
 	</displacementText>
 

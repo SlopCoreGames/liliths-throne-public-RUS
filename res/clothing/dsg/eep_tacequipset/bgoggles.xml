@@ -5,7 +5,7 @@
 	
 	<coreAtributes>
 	
-		<authorTag><![CDATA[On the protective sleeve, rubberized ink reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На защитном чехле резиновой краской выведено: «Служебное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 	
 		
 		<value>1000</value> 
@@ -14,13 +14,13 @@
 		<determiner><![CDATA[a set of]]></determiner>
 		
 		
-		<name><![CDATA[Enforcer's ballistic goggles]]></name>
+		<name><![CDATA[Баллистические очки Enforcer]]></name>
 		
 		
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's ballistic goggles]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Баллистические очки Enforcer]]></namePlural> 
 		
 		
-		<description><![CDATA[A pair of well-ventilated goggles with impact resistant polycarbonate lenses. When not in use, they can be slid into a protective sleeve. The headband has a lot of adjustment available to fit a variety of head sizes.]]></description> 
+		<description><![CDATA[Пара хорошо вентилируемых очков с ударопрочными поликарбонатными линзами. Когда они не нужны, их можно убрать в защитный чехол. Лента на оголовье имеет множество настроек, чтобы подойти под любой размер головы.]]></description> 
 		
 		
 		<physicalResistance>2</physicalResistance> 
@@ -103,26 +103,26 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the ballistic goggles and [npc.verb(adjust)] the headband until they're comfortable.]]>
+			<![CDATA[[npc.Name] [npc.verb(надеваешь)] баллистические очки и [npc.verb(поправляешь)] оголовье, пока они не сядут удобно.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the ballistic goggles onto [npc2.namePos] [npc2.face] and [npc.verb(help)] [npc2.her] [npc2.verb(adjust)] the headband until they're comfortable.]]>
+			<![CDATA[[npc.Name] [npc.verb(надеваешь)] баллистические очки на [npc2.namePos] [npc2.face] и [npc.verb(помогаешь)] [npc2.her] [npc2.verb(поправить)] оголовье, чтобы им было удобно.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the ballistic goggles onto [npc2.namePos] [npc2.face] and [npc.verb(tighten)] the headband as much as possible.]]>
+			<![CDATA[[npc.Name] [npc.verb(натягиваешь)] баллистические очки на [npc2.namePos] [npc2.face] и [npc.verb(затягиваешь)] оголовье изо всех сил.]]>
 		</otherRough>
 	</replacementText>
 
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the headband on [npc.her] ballistic goggles and [npc.verb(take)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(ослабляешь)] оголовье на баллистических очках [npc.her] и [npc.verb(снимаешь)] их.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the headband on [npc2.namePos] ballistic goggles and [npc.verb(take)] them off.]]>
+			<![CDATA[[npc.Name] [npc.verb(ослабляешь)] оголовье на баллистических очках [npc2.namePos] и [npc.verb(снимаешь)] их.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] ballistic goggles from [npc2.her] [npc2.face].]]>
+			<![CDATA[[npc.Name] [npc.verb(срываешь)] баллистические очки [npc2.namePos] с [npc2.her] [npc2.face].]]>
 		</otherRough>
 	</displacementText>
 	

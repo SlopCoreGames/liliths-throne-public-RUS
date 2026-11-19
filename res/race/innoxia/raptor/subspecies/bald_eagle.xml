@@ -46,30 +46,30 @@
 	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
 	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[bald-eagle-morph]]></name>
-	<namePlural><![CDATA[bald-eagle-morphs]]></namePlural>
-	<singularMaleName><![CDATA[bald-eagle-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[bald-eagle-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[bald-eagle-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[bald-eagle-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic bald-eagle, known as a 'bald-eagle-morph' when bipedal, and a 'bald-eagle-taur' when the lower body is that of a feral bald-eagle.]]></description>
+	<name><![CDATA[морф белоголового орлана]]></name>
+	<namePlural><![CDATA[морфы белоголового орлана]]></namePlural>
+	<singularMaleName><![CDATA[парень-белоголовый орлан]]></singularMaleName>
+	<singularFemaleName><![CDATA[девушка-белоголовый орлан]]></singularFemaleName>
+	<pluralMaleName><![CDATA[парни-белоголовые орланы]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[девушки-белоголовые орланы]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный белоголовый орлан, известный как «морф белоголового орлана», когда он передвигается на двух ногах, и как «тавр белоголового орлана», когда его нижняя часть тела представляет собой дикого орлана.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[tengu]]></name>
-			<namePlural><![CDATA[tengu]]></namePlural>
-			<singularMaleName><![CDATA[tengu]]></singularMaleName>
-			<singularFemaleName><![CDATA[tengu]]></singularFemaleName>
-			<pluralMaleName><![CDATA[tengu]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[tengu]]></pluralFemaleName>
+			<name><![CDATA[тенгу]]></name>
+			<namePlural><![CDATA[тенгу]]></namePlural>
+			<singularMaleName><![CDATA[тенгу]]></singularMaleName>
+			<singularFemaleName><![CDATA[тенгу]]></singularFemaleName>
+			<pluralMaleName><![CDATA[тенгу]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[тенгу]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[bald-eagle]]></feralName>
-		<feralNamePlural><![CDATA[bald-eagles]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[bald-eagle]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[bald-eagle]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[bald-eagles]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[bald-eagles]]></feralPluralFemaleName>
+		<feralName><![CDATA[белоголовый орлан]]></feralName>
+		<feralNamePlural><![CDATA[белоголовые орланы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[белоголовый орлан]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[белоголовый орлан]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[белоголовые орланы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[белоголовые орланы]]></feralPluralFemaleName>
 		<legConfiguration>AVIAN</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>90</size>
@@ -82,7 +82,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] speed and power helps [npc.herHim] to land particularly hard-hitting strikes in combat.
+		Скорость и мощь [npc.NamePos] помогают [npc.herHim] наносить в бою особенно сокрушительные удары.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="15">MAJOR_PHYSIQUE</attribute>

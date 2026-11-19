@@ -34,9 +34,9 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Oral test]]></title>
+	<title><![CDATA[Оральный тест]]></title>
 	<tooltip><![CDATA[
-		Test out the next dildo on the doll.
+		Испытай следующий дилдо на кукле.
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -44,15 +44,15 @@
 				[#sex.getNumberOfOrgasms(pc)==0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Picking up a dark purple dildo from the table, the doll steps towards you and commands, [doll.speech(Open wide. This first one's going down your throat.)]
+				Подхватив со стола темно-пурпурный дилдо, кукла шагает к тебе и командует: [doll.speech(Раскрой рот. Этот первым полетит тебе прямо в глотку.)]
 				
 				<br/><br/>
 				
-				Committed to your course of action, you don't really have to do anything but remain still to obey the doll, as your plump lips are already formed into a resting 'o' shape. After carefully pushing the tip of the dildo into your mouth, the doll suddenly rams the entire length of it down your throat, causing you to let out a muffled, gargled cry.
+				Преданный выбранному курсу, ты почти ничего не делаешь, лишь замираешь, чтобы подчиниться кукле, пока твои пухлые губы уже сами собой складываются в букву «о». Осторожно просунув кончик дилдо тебе в рот, кукла внезапно с силой вгоняет его целиком, заставляя тебя издать приглушенный, булькающий крик.
 				
 				<br/><br/>
 				
-				[doll.speech(Fuck your throat with that toy,)] the red doll commands in an expressionless tone, before turning to the table to get the next dildo...
+				[doll.speech(Трахай свою глотку этой игрушкой,)] — бесстрастным тоном приказывает красная кукла, прежде чем повернуться к столу за следующим дилдо...
 			]]></text>
 		</description>
 		<description>
@@ -60,18 +60,17 @@
 				[#sex.getNumberOfOrgasms(pc)>0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Pulling the dark purple dildo out of your mouth, the doll places it on the table and retrieves the next toy that's going down your throat.
+				Вытащив темно-пурпурный дилдо из твоего рта, кукла кладет его на стол и берет следующую игрушку, которая отправится тебе в глотку.
 				#IF(pc.getClothingInSlot(IS_ANUS)==null)
-					 The huge, [units.sizeShort(45)]-long dildo which she retrieves is shaped like a realistic horse's penis, and has been coloured in shades of blue, from dark at the base to light at the wide, flared tip.
+					 Огромный дилдо длиной [units.sizeShort(45)], который она достает, по форме напоминает реалистичный лошадиный член и окрашен в синие тона: от темного у основания до светлого на широком, расширяющемся кончике.
 				#ELSE
-					 The huge, equine dildo which she retrieves is similar to the one that's in your ass, but this particular toy has been coloured in shades of blue, from dark at the base to light at the wide, flared tip.
+					 Огромный лошадиный дилдо, который она достает, похож на тот, что сейчас в твоей заднице, но эта конкретная игрушка окрашена в синие тона: от темного у основания до светлого на широком, расширяющемся кончике.
 				#ENDIF
-				 Treating you like nothing more than an object to be used for her tests, the doll unceremoniously pushes the head of the dildo past your 'o'-shaped lips and into your mouth, before using her palm to push on the flat base and force the entire length down your throat.
+Относясь к тебе как к простому объекту для своих тестов, кукла бесцеремонно проталкивает головку дилдо сквозь твои сомкнутые буквой «О» губы, а затем, надавив ладонью на плоское основание, заставляет тебя проглотить его почти целиком.
 				
 				<br/><br/>
 				
-				[doll.speech(Leave it like that and use your tongue to massage it,)] the red doll commands as she turns to retrieve the next toy.
-			]]></text>
+				[doll.speech(Оставь его так и массируй языком,)] — командует красная кукла, поворачиваясь, чтобы достать следующую игрушку.]]></text>
 		</description>
 	</descriptions>
 </sexAction>

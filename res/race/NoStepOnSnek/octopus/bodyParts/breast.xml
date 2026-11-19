@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <breast>
 	<race>NoStepOnSnek_octopus</race>
-	<transformationName><![CDATA[octopus]]></transformationName>
+	<transformationName><![CDATA[осьминог]]></transformationName>
 	<coveringType>OCTOPUS_SKIN</coveringType>
 	<nippleType>NoStepOnSnek_octopus_nipple</nippleType>
 	<fluidType>NoStepOnSnek_octopus_milk</fluidType>
@@ -12,15 +12,15 @@
 	<namesPluralFlat/>
 	<descriptorsFlat/>
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldOctopus(octopus-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldOctopus(octopus milk)].
+		Теперь у [npc.She] есть [npc.has] [style.boldOctopus(octopus-like)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldOctopus(octopus milk)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] octopus-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] осьминогоподобных, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldOctopus(octopus-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldOctopus(octopus milk)].
+		Теперь у [npc.She] есть [npc.has] [style.boldOctopus(octopus-like)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldOctopus(octopus milk)].
 	]]></crotchBoobsTransformationDescription>
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] octopus-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] осьминогоподобных, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

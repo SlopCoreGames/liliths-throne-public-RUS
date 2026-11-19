@@ -41,20 +41,20 @@
 	<basicDescriptionId>PANTHER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PANTHER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[snow leopard-morph]]></name>
-	<namePlural><![CDATA[snow leopard-morphs]]></namePlural>
-	<singularMaleName><![CDATA[snow leopard-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[snow leopard-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[snow leopard-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[snow leopard-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic snow leopard, known as a 'snow leopard-morph' when bipedal, and a 'snow leopardtaur' when the lower body is that of a feral snow leopard. To be identified as a snow leopard-morph, a character must be a panther with fluffy, spotted fur.]]></description>
+	<name><![CDATA[морф снежного барса]]></name>
+	<namePlural><![CDATA[морфы снежного барса]]></namePlural>
+	<singularMaleName><![CDATA[снежный барс-парень]]></singularMaleName>
+	<singularFemaleName><![CDATA[снежный барс-девушка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[снежные барсы-парни]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[снежные барсы-девушки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный снежный барс, известный как «морф снежного барса», когда он передвигается на двух ногах, и «снежнобарставр», если его нижняя часть тела представляет собой дикого снежного барса. Чтобы считаться морфом снежного барса, персонаж должен быть пантерой с пушистым пятнистым мехом.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[snow leopard]]></feralName>
-		<feralNamePlural><![CDATA[snow leopards]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[snow leopard]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[snow leopardess]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[snow leopards]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[snow leopardesses]]></feralPluralFemaleName>
+		<feralName><![CDATA[снежный барс]]></feralName>
+		<feralNamePlural><![CDATA[снежные барсы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[снежный барс]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[снежная леопардица]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[снежные барсы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[снежные леопардицы]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>100</size>
@@ -67,7 +67,7 @@
 		<hairPresent>true</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body is very strong and agile, and [npc.sheIsFull] capable of great feats of strength and stealth alike. [npc.She] also [npc.has] a very high resistance to both natural and arcane cold.
+		Тело [npc.NamePos] очень сильное и ловкое, а [npc.sheIsFull] способна как на великие подвиги силы, так и на мастерскую скрытность. [npc.She] также [npc.has] обладает очень высокой сопротивляемостью как к природному, так и к арканическому холоду.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="25">MAJOR_PHYSIQUE</attribute>

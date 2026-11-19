@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>150</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Iced Tea]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Iced Tea]]></namePlural>
-		<description><![CDATA[An insulated metal bottle containing ice and mint tea. A sticker on the side claims the drink is the perfect refreshment for a hot summer day. The sticker also depicts a sweaty frost salamander-girl drinking from a similar bottle.]]></description> 
+		<name><![CDATA[Ледяной чай]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Ледяной чай]]></namePlural>
+		<description><![CDATA[Термос из металла, наполненный льдом и мятным чаем. Наклейка на боку гласит, что этот напиток — идеальное спасение в жаркий летний день. На наклейке также изображена вспотевшая саламандра-девушка, припавшая к такой же бутылке.]]></description> 
 		<useDescriptor>drink</useDescriptor>
 		<sexUse>true</sexUse>
 		<combatUseAllies>true</combatUseAllies>
@@ -27,15 +27,15 @@
 		<enchantmentEffectId>ATTRIBUTE_PHYSIQUE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_FIRE.getFormattedValue(5)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 5% [style.boldMana([#ATTRIBUTE_MANA_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_RESISTANCE_FIRE.getFormattedValue(5)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementMana(npc.getAttributeValue(ATTRIBUTE_MANA_MAXIMUM)/20)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A cold wave of arcane energy washes over [npc.name]...
+				Холодная волна арканы омывает [npc.name]...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_RESISTANCE_FIRE, 5)]
 		]]></applyEffects>
@@ -49,10 +49,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		After unscrewing the cap, [npc.name] [npc.verb(bring)] the bottle of iced tea up to [npc.her] [npc.mouth]. [npc.She] [npc.is] pleased to find that the label wasn't lying about the drink being refreshing and swiftly [npc.verb(drink)] the minty beverage.
+		Открутив крышку, [npc.name] [npc.verb(bring)] бутылку ледяного чая к [npc.her] [npc.mouth]. [npc.She] [npc.is] приятно обнаружить, что надпись на этикетке не лгала — напиток и впрямь освежает, и [npc.name] быстро [npc.verb(drink)] мятный напиток.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		After unscrewing the cap, [npc.name] [npc.verb(bring)] the bottle of iced tea up to [npc2.namePos] waiting [npc2.lips]. [npc2.name] [npc2.is] pleased to find that the label wasn't lying about the drink being refreshing and swiftly [npc2.verb(drink)] the minty beverage.
+		Открутив крышку, [npc.name] [npc.verb(bring)] бутылку ледяного чая к ожидающей [npc2.namePos] [npc2.lips]. [npc2.name] [npc2.is] приятно обнаружить, что надпись на этикетке не лгала — напиток и впрямь освежает, и [npc.name] быстро [npc2.verb(drink)] мятный напиток.
 		]]></otherUse>
 	</useDescriptions>
 </item>

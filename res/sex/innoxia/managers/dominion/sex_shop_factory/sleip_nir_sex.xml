@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[crate]]></deskName>
+	<deskName><![CDATA[ящик]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -12,9 +12,7 @@
 	<positionsAvailable/>
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
-        <startingDescription><![CDATA[
-			The slimes which are present in this area are lost in the pleasure of being milked and so pay no attention to you as you're fucked by Sleip and Nir...
-		]]></startingDescription>
+        <startingDescription><![CDATA[Слаймы, обитающие в этой области, настолько увлечены процессом дойки, что совершенно не обращают на тебя внимания, пока тебя трахают Слейп и Нир...]]></startingDescription>
         <randomDescriptions enabled="false"/>
 	</publicSex>
 	<characterInformationContainer>

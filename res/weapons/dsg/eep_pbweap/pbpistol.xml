@@ -2,7 +2,7 @@
 <weapon>
 	<coreAttributes>
 		
-		<authorTag><![CDATA[On the underside of the barrel housing, a small engraving reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[На нижней части ствольной коробки видна небольшая гравировка: «Служебное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 	
 		<value>3500</value> 
 		
@@ -12,11 +12,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[pepperball pistol]]></name>
+		<name><![CDATA[перцовый пистолет]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[pepperball pistols]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[перцовые пистолеты]]></namePlural> 
 		
-		<description><![CDATA[A miniaturized version of the Pepperball Rifle with a weaker air spell enchantment, this weapon uses the same pepper oil ammunition but has less range and does less damage. Enforcers favor it as a hold-out or secondary weapon.]]></description> 
+		<description><![CDATA[Миниатюрная версия перцовой винтовки с более слабым зачарованием воздушного заклинания; это оружие использует те же боеприпасы с перцовым маслом, но обладает меньшей дальностью и наносит меньше урона. Enforcer предпочитают использовать его как скрытое или дополнительное оружие.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<rarity>UNCOMMON</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(unholster)] the pistol, [npc.verb(slap)] in a fresh magazine, and [npc.verb(turn)] the safety off.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(unholster)] пистолет, [npc.verb(slap)] свежий магазин и [npc.verb(turn)] предохранитель.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(take)] out the magazine, and [npc.verb(turn)] the safety on, and [npc.verb(holster)] the pistol.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(take)] магазин, [npc.verb(turn)] предохранитель и [npc.verb(holster)] пистолет.]]></unequipText>
 		
 		<imageName>pbpistol_nomag.svg</imageName> 
 		
@@ -63,38 +63,38 @@
 	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.arm] with bright orange oil.
+		[npc.Name] [npc.verb(line)] [npc2.name] в [npc.her] прицел и [npc.verb(pull)] спусковой крючок. Пуля разлетается при соприкосновении с [npc2.namePos] аурой, забрызгивая [npc2.her] [npc2.arm] ярко-оранжевым маслом.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.leg] with bright orange oil.
+		[npc.Name] [npc.verb(line)] [npc2.name] в [npc.her] прицел и [npc.verb(pull)] спусковой крючок. Пуля разлетается при соприкосновении с [npc2.namePos] аурой, забрызгивая [npc2.her] [npc2.leg] ярко-оранжевым маслом.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.face] with bright orange oil.
+		[npc.Name] [npc.verb(line)] [npc2.name] в [npc.her] прицел и [npc.verb(pull)] спусковой крючок. Пуля разлетается при соприкосновении с [npc2.namePos] аурой, забрызгивая [npc2.her] [npc2.face] ярко-оранжевым маслом.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.arm] with stinging, burning oil.
+		[npc.Name] [npc.verb(line)] [npc2.name] в [npc.her] прицел и [npc.verb(pull)] спусковой крючок. Пуля разлетается при соприкосновении с [npc2.namePos] аурой, забрызгивая [npc2.her] [npc2.arm] жгучим, едким маслом.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.leg] with stinging, burning oil.
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] за курок. Пуля разбивается об [npc2.namePos] ауру, обдавая [npc2.her] [npc2.leg] едким, обжигающим маслом.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.face] with stinging, burning oil.
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] за курок. Пуля разбивается об [npc2.namePos] ауру, обдавая [npc2.her] [npc2.face] едким, обжигающим маслом.
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.arm] with painful oil that quickly forms a slick on [npc2.her] [npc2.skin].
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] за курок. Пуля разбивается об [npc2.namePos] ауру, обдавая [npc2.her] [npc2.arm] болезненным маслом, которое быстро образует скользкую пленку на [npc2.her] [npc2.skin].
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.leg] with painful oil that quickly forms a slick on [npc2.her] [npc2.skin].
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] за курок. Пуля разбивается об [npc2.namePos] ауру, обдавая [npc2.her] [npc2.leg] болезненным маслом, которое быстро образует скользкую пленку на [npc2.her] [npc2.skin].
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The round shatters on [npc2.namePos] aura, splashing [npc2.her] [npc2.face] with painful oil that quickly forms a slick on [npc2.her] [npc2.skin].
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] за курок. Пуля разбивается об [npc2.namePos] ауру, обдавая [npc2.her] [npc2.face] болезненным маслом, которое быстро образует скользкую пленку на [npc2.her] [npc2.skin].
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The shot goes wide! The capsule shatters uselessly on the ground.
+		[npc.Name] [npc.verb(line)] [npc2.name] в прицел [npc.her] и [npc.verb(pull)] за курок. Выстрел идет мимо! Капсула бесполезно разбивается о землю.
 		]]></missText>
 	</missDescriptions>
 	

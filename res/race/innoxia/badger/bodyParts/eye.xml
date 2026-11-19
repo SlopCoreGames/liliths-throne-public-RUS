@@ -2,7 +2,7 @@
 <eye>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_eye</coveringType>
 	
@@ -16,21 +16,21 @@
 	
 	<defaultPupilShape>ROUND</defaultPupilShape>
 	
-	<name><![CDATA[eye]]></name>
-	<namePlural><![CDATA[eyes]]></namePlural>
+	<name><![CDATA[глаз]]></name>
+	<namePlural><![CDATA[глаза]]></namePlural>
 	
 	<descriptorsMasculine/>
 	
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into panther-like eyes, with large irises and round pupils.
+		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они превращаются в глаза, подобные пантеровому взору, с огромными радужками и круглыми зрачками.
 		<br/>
-		[npc.Name] now [npc.has] [style.boldBadger(badger-like eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		[npc.Name] теперь [npc.has] [style.boldBadger(badger-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.eyePairs] badger-like eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+		[npc.SheHasFull] [npc.eyePairs] барсучьи глаза, радужки и зрачки которых крупнее, чем у обычного человека. У них [npc.irisShape], [npc.irisColour(true)] радужки, [npc.pupilShape], [npc.pupilColour(true)] зрачки и [npc.scleraColour(true)] склеры.
 	]]></bodyDescription>
 	
 </eye>

@@ -6,21 +6,21 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[wooden bat]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[wooden bats]]></namePlural>
-		<description><![CDATA[A smooth wooden club used to strike a ball as a form of sport. This particular bat has been enchanted for use as a weapon.]]></description> 
+		<name><![CDATA[деревянная бита]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[деревянные биты]]></namePlural>
+		<description><![CDATA[Гладкая деревянная бита, используемая в спортивных играх для отбивания мяча. Эта конкретная бита была зачарована, чтобы служить грозным оружием.]]></description> 
 		
 		<attackDescriptor>whack</attackDescriptor>
 		
-		<attackTooltipDescription><![CDATA[Whack [npc2.name] with your wooden bat.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Хлестни [npc2.name] своей деревянной битой.]]></attackTooltipDescription>
 		
 		<rarity>COMMON</rarity> 
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] wooden bat in anticipation of using it as a weapon.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] деревянную биту, готовясь использовать её как оружие.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away [npc.her] wooden bat.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] деревянную биту.]]></unequipText>
 		
 		<imageName>wooden.svg</imageName> 
 		
@@ -64,25 +64,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] wooden bat at [npc2.name], grinning as it connects with [npc2.her] body!
+		[npc.Name] [npc.verb(swing)] [npc.her] деревянной битой по [npc2.name], довольно скалясь, когда та с глухим звуком врезается в [npc2.her]!
 		]]></hitText>
 		<hitText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] wooden bat, [npc.name] [npc.verb(grin)] as it strikes [npc2.herHim] on the [npc2.arm]!
+		Нанося удар по [npc2.name] [npc.her] деревянной битой, [npc.name] [npc.verb(grin)], когда та попадает [npc2.herHim] по [npc2.arm]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(swipe)] at [npc2.name] with [npc.her] wooden bat, causing [npc2.herHim] to stagger back as [npc2.she] [npc2.verb(get)] whacked in the [npc2.arm]!
+		[npc.Name] [npc.verb(swipe)] по [npc2.name], размахивая [npc.her] деревянной битой, отчего [npc2.herHim] отшатывается, пока [npc2.she] получает смачный удар по [npc2.arm]!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] wooden bat at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swing)] [npc.her] деревянной битой по [npc2.name], но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] wooden bat, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc2.name] замахивается на [npc.her] деревянной битой, и [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(swipe)] at [npc2.name] with [npc.her] wooden bat, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(swipe)] по [npc2.name] деревянной битой [npc.her], но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

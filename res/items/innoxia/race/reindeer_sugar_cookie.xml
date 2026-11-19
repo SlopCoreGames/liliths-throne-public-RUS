@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>25</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Sugar Cookie]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Sugar Cookies]]></namePlural>
-		<description><![CDATA[An individually-wrapped sugar cookie, which is covered in white icing and multi-coloured sprinkles. Although the icon on the package is of a reindeer-morph, it is declared to be safe to eat for all races.]]></description> 
+		<name><![CDATA[Сахарное печенье]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Сахарное печенье]]></namePlural>
+		<description><![CDATA[Индивидуально упакованное сахарное печенье, покрытое белой глазурью и разноцветной посыпкой. Хотя на упаковке изображен олень-морф, заявлено, что оно безопасно для поедания всеми расами.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,15 +31,15 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(3)] to 'potion effects']]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(3)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot stronger...
+				[npc.Name] [npc.verb(start)] почувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 3)]
 		]]></applyEffects>
@@ -54,10 +54,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(unwrap)] the Sugar Cookie from its protective packaging and [npc.verb(pop)] it into [npc.her] mouth. Although it looked normal enough, [npc.she] soon [npc.verb(discover)] that the taste is anything but, as it's somehow both extremely sweet and salty at the same time. Despite the unusual combination of flavours, it's tasty enough, and [npc.she] soon [npc.verb(find)] [npc.herself] having eaten the whole cookie.
+		[npc.Name] [npc.verb(unwrap)] сахарное печенье из защитной упаковки и [npc.verb(pop)] его в [npc.her] рот. Хотя на вид оно казалось вполне обычным, [npc.she] вскоре [npc.verb(discover)] , что вкус у него совсем не такой, как ожидалось: он каким-то образом одновременно и невероятно сладкий, и соленый. Несмотря на необычное сочетание вкусов, печенье довольно вкусное, и [npc.she] вскоре [npc.verb(find)] [npc.herself] съевшим всё печенье целиком.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(unwrap)] the Sugar Cookie from its protective packaging and [npc.verb(pop)] it into [npc2.namePos] mouth. Although it looked normal enough, [npc2.name] soon [npc2.verb(discover)] that the taste is anything but, as it's somehow both extremely sweet and salty at the same time. Despite the unusual combination of flavours, it's tasty enough, and [npc2.she] soon [npc2.verb(find)] [npc2.herself] having eaten the whole cookie.
+		[npc.Name] [npc.verb(unwrap)] сахарное печенье из защитной упаковки и [npc.verb(pop)] его в [npc2.namePos] рот. Хотя на вид оно казалось вполне обычным, [npc2.name] вскоре [npc2.verb(discover)] , что вкус у него совсем не такой, как ожидалось: он каким-то образом одновременно и невероятно сладкий, и соленый. Несмотря на необычное сочетание вкусов, печенье довольно вкусное, и [npc2.she] вскоре [npc2.verb(find)] [npc2.herself] съевшим всё печенье целиком.
 		]]></otherUse>
 	</useDescriptions>
 

@@ -10,7 +10,7 @@
 	<race>dsg_dragon</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[dragon curled]]></transformationName>
+	<transformationName><![CDATA[закрученный дракон]]></transformationName>
 	
 	<!-- The id of the material covering this horn.
 	The id will typically take the form of 'innoxia_hyena'.
@@ -22,10 +22,10 @@
 	<defaultHornsPerRow>2</defaultHornsPerRow>
 	
 	<!-- The singular name of this horn. -->
-	<name><![CDATA[horn]]></name>
+	<name><![CDATA[рог]]></name>
 	
 	<!-- The plural name of this horn. -->
-	<namePlural><![CDATA[horns]]></namePlural> 
+	<namePlural><![CDATA[рога]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's horn of this type.
 	Can be left blank. -->
@@ -43,19 +43,19 @@
 	This description immediately follows the text:
 		' Hard nubs suddenly push out from the sides of [npc.her] head, and [npc.she] [npc.verb(gasp)] as [npc.she] [npc.verb(feel)] them quickly grow out into '-->
 	<transformationDescription><![CDATA[
-		curled [npc.horns].
-		<br/>[npc.Name] now [npc.has] [npc.hornsDeterminer] [style.boldDragon(circular-curling draconic [npc.horns])].
+		закрученный [npc.horns].
+		<br/>[npc.Name] теперь [npc.has] [npc.hornsDeterminer] [style.boldDragon(циклически закрученный драконий [npc.horns])].
 	]]></transformationDescription>
 	
 	<!-- How these horns are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], circular-curling
+		[npc.HornsDeterminer] [npc.hornSize], [npc.hornColour(true)], циклически закрученный
 		#IF(npc.getTotalHorns()==1)
-			 [npc.horn] grows
+			 [npc.horn] растет
 		#ELSE
-			 [npc.horns] grow
+			 [npc.horns] растут
 		#ENDIF
-		 out of the back of [npc.her] head.
+		 из затылка [npc.her].
 	]]></bodyDescription>
 	
 </horn>

@@ -31,9 +31,9 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Watch them kiss]]></title>
+	<title><![CDATA[Смотреть, как они целуются]]></title>
 	<tooltip><![CDATA[
-		Pull your cock back and let [pc.name] and Meraxis kiss one another.
+		Отстранить свой член и позволить [pc.name] и Мераксису целоваться.
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -41,7 +41,7 @@
 				[#!flags.hasFlag(FLAG_innoxia_shiranui_sex_kissing)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Shiranui suddenly pulls back, and with a snap of her fingers, the leather bindings move to force you and Meraxis to be kissing one another again. The youko lets out [shiranui.moan+] and strokes her saliva-coated shaft as she watches the two of you start to passionately kiss one another.
+				Ширануи внезапно отстраняется и щелчком пальцев заставляет кожаные путы снова прижать тебя к Мераксису для поцелуя. Йоко издает [shiranui.moan+] и ласкает свой покрытый слюной член, наблюдая за тем, как вы вдвоем начинаете страстно целоваться.
 			]]></text>
 		</description>
 		<description>
@@ -49,13 +49,13 @@
 				[#flags.hasFlag(FLAG_innoxia_shiranui_sex_kissing)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Shiranui continues to stroke her [shiranui.cock+] and moan in delight as she watches the two of you sloppily kissing each other.
+				Ширануи продолжает ласкать свой [shiranui.cock+] и стонать от удовольствия, наблюдая за вашими влажными, неистовыми поцелуями.
 			]]></text>
 			<text><![CDATA[
-				Moaning and stroking her saliva-coated cock, Shiranui smirks down at you and Meraxis as you continue to passionately make out with each other.
+				Стоная и поглаживая свой покрытый слюной член, Ширануи с ухмылкой смотрит на тебя и Мераксиса, пока вы продолжаете страстно ворковать и целоваться.
 			]]></text>
 			<text><![CDATA[
-				Continuing to watch you and Meraxis kiss one another, Shiranui lets out [shiranui.a_moan+] as she plays with her saliva-coated cock.
+				Продолжая наблюдать за вашими поцелуями с Мераксисом, Ширануи издает [shiranui.a_moan+], играя со своим влажным от слюны членом.
 			]]></text>
 		</description>
 	</descriptions>

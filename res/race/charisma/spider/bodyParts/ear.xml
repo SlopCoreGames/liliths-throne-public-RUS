@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ear>
 	<race>charisma_spider</race>
-	<transformationName><![CDATA[spider]]></transformationName>
+	<transformationName><![CDATA[паук]]></transformationName>
 	<coveringType>charisma_spider_chitinSmooth</coveringType>
 	<tags/>
-	<name><![CDATA[ear]]></name>
-	<namePlural><![CDATA[ears]]></namePlural>
+	<name><![CDATA[ухо]]></name>
+	<namePlural><![CDATA[уши]]></namePlural>
 	<descriptorsMasculine>
 		<descriptor>spider-like</descriptor>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
 		<descriptor>spider-like</descriptor>
 	</descriptorsFeminine>
-	<transformationDescription><![CDATA[
-		They quickly recede into small holes while a chitin plating grows over to protect them.
-		<br/>[npc.Name] now [npc.has] [style.boldSpider(internal, spider-like ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Они быстро прячутся в небольшие отверстия, а сверху нарастает хитиновая пластина для их защиты.
+<br/>[npc.Name] теперь [npc.has] [style.boldSpider(internal, spider-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.Her] ears are an internal part of [npc.her] head, and are covered by [npc.earFullDescription(true)].
+		Уши [npc.Her] — это внутренняя часть головы [npc.her], покрытая [npc.earFullDescription(true)].
 		#IF(npc.isPiercedEar())
-			 They have been cleverly pierced so as to allow [npc.herHim] to wear ear-specific jewellery.
+			Они искусно проколоты, чтобы [npc.herHim] могли носить специальные украшения для ушей.
 		#ENDIF
 	]]></bodyDescription>
 </ear>

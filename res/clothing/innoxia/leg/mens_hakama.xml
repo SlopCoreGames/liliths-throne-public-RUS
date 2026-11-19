@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[hakama]]></name>
+		<name><![CDATA[хакама]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[hakama]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[хакама]]></namePlural> 
 		
-		<description><![CDATA[Tied at the waist and falling approximately to the ankles, hakama, such as this one, are meant to be worn over a kimono.]]></description> 
+		<description><![CDATA[Хакама, подобные этой, подвязываются на талии и ниспадают почти до самых лодыжек; их принято носить поверх кимоно.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -72,25 +72,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(put)] on the hakama, before tying it up at [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(put)] хакама, прежде чем завязать её на [npc.her] талии.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(put)] on the hakama on [npc2.name], before tying it up at [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(put)] хакаму на [npc2.name], прежде чем туго завязать её на [npc2.her] талии.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(put)] on the hakama on [npc2.name], before firmly tying it up at [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] небрежно [npc.verb(put)] хакаму на [npc2.name], прежде чем крепко завязать её на [npc2.her] талии.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(untie)] [npc.her] hakama, before taking it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] хакаму на [npc.her], прежде чем снять её.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(untie)] [npc2.namePos] hakama, before taking it off.]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] хакаму на [npc2.namePos], прежде чем снять её.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(untie)] [npc2.namePos] hakama, before yanking it off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(untie)] хакаму на [npc2.namePos], прежде чем сорвать её.]]>
     </otherRough>
   </displacementText>
 	

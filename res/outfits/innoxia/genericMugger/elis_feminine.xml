@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic mugger (feminine)]]></name>
+		<name><![CDATA[обычная разбойница]]></name>
 		
-		<description><![CDATA[Simple clothing, with the possibility of a weapon or two...]]></description>
+		<description><![CDATA[Простая одежда, и, возможно, пара пушек...]]></description>
 		
 		<femininity>FEMININE</femininity>
 		

@@ -8,7 +8,7 @@
 	]]></spawnWeighting>
 	
 	<namePrefix/>
-	<namePostfix><![CDATA[of nausea]]></namePostfix>
+	<namePostfix><![CDATA[тошноты]]></namePostfix>
 	<nameOverride/>
 	
 	<conditionalPreParsing/>

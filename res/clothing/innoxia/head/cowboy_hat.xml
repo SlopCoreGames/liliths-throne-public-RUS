@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>750</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[cowboy hat]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[cowboy hats]]></namePlural>
-		<description><![CDATA[A high-crowned, wide-brimmed hat. The high crown helps to keep the wearer's head insulated, while the brim keeps sunlight off their face and neck.]]></description>
+		<name><![CDATA[ковбойская шляпа]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ковбойские шляпы]]></namePlural>
+		<description><![CDATA[Шляпа с высокой тульей и широкими полями. Высокая тулья помогает сохранять тепло, а широкие поля защищают лицо и шею от солнечных лучей.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -44,25 +44,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(place)] the cowboy hat onto [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] ковбойскую шляпу на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(place)] the cowboy hat onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] ковбойскую шляпу на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the cowboy hat onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] ковбойскую шляпу на голову [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] cowboy hat.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] ковбойскую шляпу с [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] cowboy hat.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] ковбойскую шляпу с [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] cowboy hat.]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] ковбойскую шляпу с [npc2.namePos].]]>
     </otherRough>
   </displacementText>
   

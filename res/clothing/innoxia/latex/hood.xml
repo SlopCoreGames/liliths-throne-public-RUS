@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>800</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[latex hood]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[latex hood]]></namePlural>
-		<description><![CDATA[A latex hood which completely encapsulates the wearer's head. Thanks to some trick of the arcane, this hood reshapes itself to fit the head of any wearer, no matter if they have an anthropomorphic muzzle, beak, or other such non-human facial configuration.]]></description>
+		<name><![CDATA[латексный капюшон]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[латексный капюшон]]></namePlural>
+		<description><![CDATA[Латексный капюшон, который полностью охватывает голову владельца. Благодаря хитрости Арканы, этот капюшон принимает форму головы любого носителя, независимо от того, есть ли у него антропоморфная морда, клюв или иная нечеловеческая конфигурация лица.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>HEAD</slot>
@@ -18,7 +18,7 @@
 		
 		<stickers>
 			<category id="ponytail" priority="1">
-				<categoryName><![CDATA[Ponytail]]></categoryName>
+				<categoryName><![CDATA[Хвостик]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Present]]></stickerName>
 					<namePrefix/>
@@ -42,7 +42,7 @@
 				</sticker>
 			</category>
 			<category id="eyes" priority="2">
-				<categoryName><![CDATA[Eye holes]]></categoryName>
+				<categoryName><![CDATA[Отверстия для глаз]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Present]]></stickerName>
 					<namePrefix/>
@@ -69,7 +69,7 @@
 				</sticker>
 			</category>
 			<category id="mouth" priority="3">
-				<categoryName><![CDATA[Mouth holes]]></categoryName>
+				<categoryName><![CDATA[Отверстия для рта]]></categoryName>
 				<sticker id="present" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Present]]></stickerName>
 					<namePrefix/>
@@ -130,25 +130,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(place)] the latex hood onto [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] латексный капюшон на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(place)] the latex hood onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] латексный капюшон на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the latex hood onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] латексный капюшон на голову [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] latex hood.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] латексный капюшон с головы [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] latex hood.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с [npc2.namePos] латексного капюшона.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] latex hood.]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] с [npc2.namePos] латексного капюшона.]]>
     </otherRough>
   </displacementText>
 	

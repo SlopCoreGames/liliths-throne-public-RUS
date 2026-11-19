@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>750</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[crotchless chaps]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[crotchless chaps]]></namePlural>
-		<description><![CDATA[These leather chaps are missing a large piece at the front and back, which leaves the wearer's ass and groin completely exposed.]]></description>
+		<name><![CDATA[шапсы без промежности]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[шапсы без промежности]]></namePlural>
+		<description><![CDATA[Эти кожаные шапсы лишены больших кусков спереди и сзади, из-за чего задница и пах того, кто их носит, остаются полностью открытыми.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -52,25 +52,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the crotchless chaps, before pulling them up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в шапсы без промежности, а затем натягивает их на талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the crotchless chaps, before pulling them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] влезть в шапсы без промежности, а затем натягивает их на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the crotchless chaps, before yanking them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] влезть в шапсы без промежности, а затем резко натягивает их на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] crotchless chaps, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] вниз шапсы без промежности [npc.her], а затем стягивает их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] crotchless chaps, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] вниз шапсы без промежности [npc2.namePos], а затем стягивает их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] crotchless chaps, before yanking them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] вниз шапсы без промежности [npc2.namePos], а затем срывает их.]]>
     </otherRough>
   </displacementText>
 	

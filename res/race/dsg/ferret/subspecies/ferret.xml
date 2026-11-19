@@ -104,17 +104,17 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[ferret-morph]]></name>
-			<namePlural><![CDATA[ferret-morphs]]></namePlural>
-			<singularMaleName><![CDATA[ferret-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[ferret-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[ferret-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[ferret-girls]]></pluralFemaleName>
+			<name><![CDATA[хорькоморф]]></name>
+			<namePlural><![CDATA[хорькоморфы]]></namePlural>
+			<singularMaleName><![CDATA[парень-хорек]]></singularMaleName>
+			<singularFemaleName><![CDATA[девушка-хорек]]></singularFemaleName>
+			<pluralMaleName><![CDATA[парни-хорьки]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девушки-хорьки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic ferret, known as a 'ferret-morph' when bipedal, and a 'ferrettaur' when the lower body is that of a typically-oversized feral ferret.]]></description>
+	<description><![CDATA[Антропоморфный хорек, которого называют «хорек-морф», когда он передвигается на двух ногах, и «хоректавр», если его нижняя часть тела представляет собой туловище типично крупного дикого хорька.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
@@ -123,19 +123,19 @@
 			<singularMaleName><![CDATA[vallug]]></singularMaleName>
 			<singularFemaleName><![CDATA[vallug]]></singularFemaleName>
 			<pluralMaleName><![CDATA[vallug]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[vallug]]></pluralFemaleName>
+			<pluralFemaleName><![CDATA[валлуг]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[ferret]]></feralName>
-		<feralNamePlural><![CDATA[ferrets]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[ferret]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[ferret]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[ferrets]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[ferrets]]></feralPluralFemaleName>
+		<feralName><![CDATA[хорек]]></feralName>
+		<feralNamePlural><![CDATA[хорьки]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[хорек]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[хорек]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[хорьки]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[хорьки]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -166,7 +166,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] ferret-like body is very flexible and quick. Once fixated on something, [npc.she] [npc.verb(gain)] the primal urge find out everything there is to know about it.
+		[npc.NamePos] тело, подобное землеройке, очень гибкое и быстрое. Стоит только зацепиться взглядом за что-то, как [npc.she] [npc.verb(gain)] первобытное желание разузнать об этом объекте всё до мельчайших подробностей.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

@@ -2,7 +2,7 @@
 <face>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<coveringType>innoxia_pig_fur</coveringType>
 	
@@ -26,30 +26,30 @@
 		<descriptor>pig-like</descriptor>
 	</descriptorsFeminine>
 	
-	<noseName><![CDATA[snout]]></noseName>
-	<noseNamePlural><![CDATA[snouts]]></noseNamePlural>
+	<noseName><![CDATA[рыло]]></noseName>
+	<noseNamePlural><![CDATA[рыла]]></noseNamePlural>
 	
 	<noseDescriptorsMasculine/>
 	<noseDescriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		[npc.Her] face twitches and transforms into a stubby, anthropomorphic, pig-like muzzle, while [npc.her] nose pushes up into a distinctly pig-like snout. Within [npc.her] mouth, [npc.she] [npc.verb(feel)] [npc.her] tongue similarly transforming into a strong, pig-like one.
+		Лицо [npc.Her] дергается и превращается в короткую антропоморфную свиноподобную морду, а нос [npc.her] выпячивается, становясь отчетливо свиным пятаком. Во рту [npc.her] язык [npc.she] [npc.verb(feel)] [npc.her] так же трансформируется в мощный, свиной язык.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-			 A layer of very close-cropped, smooth hair quickly grows to cover [npc.her] new face, 
+			 Слой очень коротких, гладких волос быстро покрывает новое лицо [npc.her], 
 		#ELSE
-			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+], 
+			 Как и все остальное тело [npc.her], новое лицо [npc.her] становится [npc.materialDescriptor] [npc.faceSkin+], 
 		#ENDIF
-		and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
-		<br/>[npc.Name] now [npc.has] an anthropomorphic [style.boldPig(pig-like face and snout)], [npc.materialDescriptor] [npc.faceFullDescription]. Within [npc.her] [npc.mouth], [npc.she] [npc.has] a [style.boldPig(strong, pig-like tongue)].
+		и когда трансформация наконец завершается, [npc.sheIs] тяжело дышит и вздыхает, пытаясь [npc.she] [npc.verb(try)] перевести [npc.her] дух.
+		<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldPig(свиноподобным лицом и рылом)], [npc.materialDescriptor] [npc.faceFullDescription]. Во рту [npc.her] [npc.mouth], [npc.she] [npc.has] [style.boldPig(сильный свиной язык)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, pig-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a muzzle and pig-like snout.
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное свиноподобное лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)], дополненное мордой и свиным пятаком.
 	]]></bodyDescription>
 	
 	<!-- Feral variant of the above. -->
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a muzzle and pig-like snout.
+		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено мордой и свиным пятаком.
 	]]></bodyDescriptionFeral>
 	
 </face>

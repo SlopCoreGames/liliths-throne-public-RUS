@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>120</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[pantyhose]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[pantyhose]]></namePlural>
-		<description><![CDATA[A pair of nylon pantyhose which reach up to the wearer's lower abdomen.]]></description>
+		<name><![CDATA[колготки]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[колготки]]></namePlural>
+		<description><![CDATA[Пара нейлоновых колготок, доходящих до нижней части живота.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>SOCK</slot> 
@@ -65,50 +65,50 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] feet into the pantyhose and [npc.verb(pull)] them up to [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] ноги в колготки и [npc.verb(pull)] их до [npc.her] талии.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] feet into the pantyhose and [npc.verb(pull)] them up to [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] ноги в колготки и [npc.verb(pull)] их до [npc2.her] талии.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.namePos] feet into the pantyhose and [npc.verb(pull)] them up to [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.namePos] ноги в колготки и [npc.verb(pull)] их до [npc2.her] талии.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] pantyhose.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] колготки.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] pantyhose.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] колготки.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] pantyhose.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] колготки.]]>
     </otherRough>
   </displacementText>
   
   
    <replacementText type="PULLS_DOWN">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the top of [npc.her] pantyhose back up to sit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] верхнюю часть [npc.her] колготок обратно, чтобы они сидели на [npc.her] талии.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the top of [npc2.namePos] pantyhose back up to sit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] край [npc2.namePos] колготок наверх, чтобы они плотнее облегали талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the top of [npc2.namePos] pantyhose back up to sit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] край [npc2.namePos] колготок наверх, затягивая их на талии [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="PULLS_DOWN">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down the top of [npc.her] pantyhose.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] край [npc.her] колготок вниз.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down the top of [npc2.namePos] pantyhose.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] край [npc2.namePos] колготок вниз.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down the top of [npc2.namePos] pantyhose.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] край [npc2.namePos] колготок вниз.]]>
     </otherRough>
   </displacementText>
 	

@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic labourer (feminine)]]></name>
+		<name><![CDATA[простая рабочая одежда (женская)]]></name>
 		
-		<description><![CDATA[Feminine labourer clothing.]]></description>
+		<description><![CDATA[Женская рабочая одежда.]]></description>
 		
 		<femininity>FEMININE</femininity>
 		

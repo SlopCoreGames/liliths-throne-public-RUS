@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<authorTag><![CDATA['MFD by DSG Threadworks' has been printed onto the inside of the webbing's backing.]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне подкладки стропы напечатано: 'MFD by DSG Threadworks'.]]></authorTag>
 		<value>500</value>
 		<determiner><![CDATA[a set of]]></determiner>
-		<name appendColourName="true"><![CDATA[canvas webbing]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[canvas webbing]]></namePlural>
-		<description><![CDATA[Consisting of a belt, suspenders, and two generously sized pouches, this piece of equipment allows the wearer to carry and quickly access loads that would be otherwise too awkward or heavy.]]></description>
+		<name appendColourName="true"><![CDATA[холщовая стропа]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[холщовая стропа]]></namePlural>
+		<description><![CDATA[Этот комплект, состоящий из ремня, подтяжек и двух вместительных подсумков, позволяет носителю переносить и быстро доставать грузы, которые иначе были бы слишком громоздкими или тяжелыми.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -52,25 +52,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the webbing and securely [npc.verb(buckle)] the belt around [npc.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] стропу на себя и плотно [npc.verb(buckle)] ремень вокруг [npc.her] талии.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(put)] the webbing onto [npc2.name] and [npc.verb(buckle)] the belt around [npc2.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] стропу на [npc2.name] и [npc.verb(buckle)] ремень вокруг [npc2.her] талии.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the webbing onto [npc2.name] and roughly [npc.verb(buckle)] the belt around [npc2.her] waist.]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] стропу на [npc2.name] и грубо [npc.verb(buckle)] ремень вокруг [npc2.her] талии.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(unbuckle)] the belt and [npc.verb(take)] off the webbing.]]>
+			<![CDATA[[npc.Name] [npc.verb(unbuckle)] ремень и [npc.verb(take)] стропу.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(unbuckle)] the belt from around [npc2.namePos] waist and [npc.verb(take)] off the webbing.]]>
+			<![CDATA[[npc.Name] [npc.verb(unbuckle)] ремень вокруг [npc2.namePos] талии и [npc.verb(take)] стропу.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(unbuckle)] the belt from around [npc2.namePos] waist and [npc.verb(tears)] the webbing from [npc2.namePos] torso.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(unbuckle)] ремень вокруг [npc2.namePos] талии и [npc.verb(tears)] стропу с [npc2.namePos] торса.]]>
 		</otherRough>
 	</displacementText>
 	

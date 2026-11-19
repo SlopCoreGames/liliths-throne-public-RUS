@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[Small engraved lettering informs you that this piercing was made by 'Norin'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что этот пирсинг был сделан мастером «Норин».]]></clothingAuthorTag>
 		<value>150</value> <!--10 flames = £1 ~ $1.5-->
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[heart-shaped barbell]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[heart-shaped barbells]]></namePlural>
-		<description><![CDATA[A barbell which surrounds the wearer's clit with a cute heart.]]></description>
+		<name><![CDATA[серьга-барабан в форме сердца]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[серьги-штанги в форме сердечек]]></namePlural>
+		<description><![CDATA[Штанга, которая окружает клитор обладательницы милым сердечком.]]></description>
 		
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity> <!-- FEMININE, MASCULINE ANDROGYNOUS -->
@@ -52,25 +52,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the heart-shaped barbell into [npc.her] vaginal piercing.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] сердцевидную штангу в вагинальный пирсинг [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the heart-shaped barbell into [npc2.namePos] vaginal piercing.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] сердцевидную штангу в вагинальный пирсинг [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(slide)] the heart-shaped barbell into [npc2.namePos] vaginal piercing.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(slide)] сердцевидную штангу в вагинальный пирсинг [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] heart-shaped barbell out of [npc.her] vaginal piercing.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] сердцевидную штангу [npc.her] из вагинального пирсинга [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] heart-shaped barbell out of [npc2.her] vaginal piercing.]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] сердцевидную штангу [npc2.namePos] из вагинального пирсинга [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] heart-shaped barbell out of [npc2.her] vaginal piercing.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] сердцевидную штангу [npc2.namePos] из вагинального пирсинга [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 	

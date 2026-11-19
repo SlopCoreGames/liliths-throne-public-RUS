@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[taur-skirt]]></name>
+		<name><![CDATA[таврская юбка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[taur-skirts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[таврские юбки]]></namePlural> 
 		
-		<description><![CDATA[A specially-designed skirt, suitable to be fit onto the lower body of any taur race.]]></description> 
+		<description><![CDATA[Специально разработанная юбка, подходящая для нижней части тела представителей любой расы тавров.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -87,25 +87,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the taur-skirt down over [npc.her] head, before allowing it to settle into place over [npc.her] [npc.legRace]'s body.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] таврскую юбку через голову [npc.her], позволяя ей наконец удобно устроиться на теле [npc.her] [npc.legRace].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the taur-skirt down over [npc2.namePos] head, before allowing it to settle into place over [npc2.her] [npc2.legRace]'s body.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] таврскую юбку через голову [npc2.namePos], позволяя ей наконец удобно устроиться на теле [npc2.her] [npc2.legRace].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(yank)] the taur-skirt down over [npc2.namePos] head, before firmly pulling it down over [npc2.her] [npc2.legRace]'s body.]]>
+      <![CDATA[[npc.Name] [npc.verb(yank)] таврскую юбку через голову [npc2.namePos], а затем решительно натягивает её на тело [npc2.her] [npc2.legRace].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] taur-skirt, before pulling it up and over [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)]сь за таврскую юбку [npc.her], [npc.Name] тянет её вверх, натягивая на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc2.namePos] taur-skirt, before pulling it up and over [npc2.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)]сь за таврскую юбку [npc2.namePos], [npc.Name] тянет её вверх, натягивая на голову [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(grab)] hold of [npc2.namePos] taur-skirt, before yanking it up and over [npc2.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(grab)] таврскую юбку [npc2.namePos], а затем резко дергает её вверх, натягивая на голову [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

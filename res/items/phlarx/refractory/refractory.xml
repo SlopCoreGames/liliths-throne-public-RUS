@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <item>
 	<coreAttributes>
-		<authorTag><![CDATA[A note at the bottom of the label informs you that this product was imported by 'Phlarx Pharmaceuticals'.]]></authorTag>
+		<authorTag><![CDATA[Внизу этикетки приписка о том, что этот продукт был импортирован компанией «Phlarx Pharmaceuticals».]]></authorTag>
 		<value>2400</value>
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[sybaritic potion]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[sybaritic potions]]></namePlural>
-		<description><![CDATA[A tiny geometric glass bottle bearing a black label embossed with gold foil that reads 'Sybaritic Energizing Philter'. The fine print below issues a warning that it may cause imbibers to become distressed if not provided with prompt sexual relief.]]></description>
+		<name><![CDATA[сибаритский эликсир]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[сибаритские эликсиры]]></namePlural>
+		<description><![CDATA[Крошечный стеклянный флакон геометрической формы с черной этикеткой, украшенной золотым тиснением с надписью «Сибаритский бодрящий филтер». Мелкий шрифт ниже предупреждает, что если не обеспечить потребителю скорую сексуальную разрядку, это может вызвать у него сильное беспокойство.]]></description>
 		<useDescriptor>swallow</useDescriptor>
 		<sexUse>true</sexUse>
 		<combatUseAllies>true</combatUseAllies>
@@ -24,26 +24,26 @@
 			<effect seconds="14400" conditional="[#!game.isInSex()]">DESPERATELY_HORNY</effect> <!-- applied for 4 hours -->
 		</statusEffects>
 		<effectTooltipLines>
-			<line><![CDATA[During [style.colourSex(sex)]:]]></line>
-			<line><![CDATA[[style.colourExcellent(Increases)] desired [style.colourLust(orgasms)] by [style.colourGood(3)]-[style.colourGood(5)]]]></line>
-			<line><![CDATA[Out of sex:]]></line>
+			<line><![CDATA[Во время [style.colourSex(sex)]:]]></line>
+			<line><![CDATA[[style.colourExcellent(Желаемое)] [style.colourLust(количество оргазмов)] увеличено на [style.colourGood(3)]-[style.colourGood(5)]]]></line>
+			<line><![CDATA[Вне секса:]]></line>
 		</effectTooltipLines>
 		<applyEffects><![CDATA[
 			#IF(game.isInSex())
 				<p style='margin-bottom:0; padding-bottom:0;'>
-					As the contents of the small bottle disappear between [npc.herPos] [npc.lips+], [npc.namePos] [npc.eyes] flash soft pink for an instant, before returning to [npc.irisColour]. With a sudden, [npc.moan+] and an excited shiver, [npc.herPos] movements intensify as if [npc.sheHasFull] been pent up for far too long.
+					Когда содержимое маленького флакона исчезает между [npc.herPos] [npc.lips+], [npc.namePos] [npc.eyes] на мгновение вспыхивают нежно-розовым цветом, прежде чем снова стать [npc.irisColour]. С внезапным, [npc.moan+] и возбуждающей дрожью, движения [npc.herPos] становятся интенсивнее, словно [npc.sheHasFull] копились слишком долго.
 				</p>
 				[##
 					var boost = 3 + RND.nextInt(3); /* randomly select 3, 4, or 5 */
 					sex.incrementNumberOfAdditionalOrgasms(npc, boost);
 				]
 				<p style='margin-bottom:0; padding-bottom:0;text-align:center;'>
-					[style.italicsExcellent([npc.NamePos] desired number of orgasms has been increased by [#~~boost]!)]
+					[style.italicsExcellent(Желаемое количество оргазмов [npc.NamePos] увеличено на [#~~boost]!)]
 				</p>
 			#ELSE
-				<p style='margin-bottom:0; padding-bottom:0;'>
-					As the contents of the small bottle disappear between [npc.herPos] [npc.lips+], [npc.namePos] [npc.verb(feel)] a sensation similar to static electricity surging through [npc.her] body. Experiencing a rush of intense, stupefying arousal, [npc.she] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(find)] [npc.herself] struggling to think of anything but sex.
-				</p>
+<p style='margin-bottom:0; padding-bottom:0;'>
+Когда содержимое маленького флакона исчезает между [npc.herPos], [npc.lips+] и [npc.namePos], [npc.namePos] [npc.verb(feel)] ощущение, будто по [npc.her] телу проносится разряд статического электричества. Охваченная мощным, дурманящим приливом возбуждения, [npc.she] [npc.verb(let)] вырывается [npc.a_moan+], пока [npc.she] [npc.verb(find)] [npc.herself] тщетно пытается думать о чем-то, кроме секса.
+</p>
 			#ENDIF
 		]]></applyEffects>
 		<itemTags>
@@ -53,10 +53,10 @@
 	</coreAttributes>
 	<useDescriptions>
 		<selfUse><![CDATA[
-			[npc.Name] [npc.verb(remove)] the cap and [npc.verb(glance)] down at the refractory philter in [npc.herPos] palm. Before [npc.she] [npc.verb(realize)] what [npc.sheIsFull] doing, the bottle is inverted above [npc.herPos] mouth.
+			[npc.Name] [npc.verb(снимает)] крышку и [npc.verb(бросает взгляд)] на рефрактерный филтер в [npc.herPos] ладони. Прежде чем [npc.she] [npc.verb(осознает)], что [npc.sheIsFull] делает, бутылочка уже перевернута над [npc.herPos] ртом.
 		]]></selfUse>
 		<otherUse><![CDATA[
-			[npc.Name] [npc.verb(remove)] the cap and quickly [npc.verb(press)] the refractory philter into [npc2.namePos] palm. Before [npc2.she] [npc2.verb(realize)] what [npc2.sheIsFull] doing, the bottle is inverted above [npc2.herPos] mouth.
+			[npc.Name] [npc.verb(снимает)] крышку и быстро [npc.verb(выжимает)] рефрактерный филтер в [npc2.namePos] ладонь. Прежде чем [npc2.she] [npc2.verb(осознает)], что [npc2.sheIsFull] делает, бутылочка уже перевернута над [npc2.herPos] ртом.
 		]]></otherUse>
 	</useDescriptions>
 </item>

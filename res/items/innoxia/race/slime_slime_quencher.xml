@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>250</value> 
 		<determiner><![CDATA[a bottle of]]></determiner>
-		<name><![CDATA[Slime Quencher]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Slime Quenchers]]></namePlural>
-		<description><![CDATA[A small glass bottle of luminescent, fizzy pop. The label on the front reads 'Slime Quencher', and beneath this, there's a picture of a completely naked slime-girl pressing her breasts together and smiling at you.]]></description> 
+		<name><![CDATA[Утолитель жажды слаймов]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Утолители жажды слаймов]]></namePlural>
+		<description><![CDATA[Маленькая стеклянная бутылочка с люминесцентной шипучкой. На этикетке красуется надпись «Утолитель жажды слаймов», а под ней — изображение совершенно голой слайм-девушки, которая с улыбкой прижимает груди друг к другу, глядя на тебя.]]></description> 
 		
 		<useDescriptor>drink</useDescriptor>
 		
@@ -30,12 +30,12 @@
 		<effectTooltipLines>
 			<line><![CDATA[[style.boldSex(+1)] [style.boldWetness(Vagina Wetness)]]]></line>
 			<line><![CDATA[[style.boldSex(+1)] [style.boldWetness(Anal Wetness)]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(5)] to 'potion effects']]></line>
+			<line><![CDATA[[#ATTRIBUTE_DAMAGE_LUST.getFormattedValue(5)] к «эффектам зелий»]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				A warm wave of arcane energy washes over [npc.name]...
+				Теплая волна арканной энергии омывает [npc.name]...
 			</p>
 			[#npc.incrementVaginaWetness(1)]
 			[#npc.incrementAssWetness(1)]
@@ -53,10 +53,10 @@
 
 	<useDescriptions>
 		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off of the bottle of Slime Quencher and [npc.verb(start)] drinking the liquid contained within. The recognisable taste of a sugary energy drink fills [npc.namePos] mouth, and [npc.she] greedily [npc.verb(gulp)] down the all of the glowing beverage in a matter of seconds.
+		[npc.Name] [npc.verb(pop)] пробку бутылки «Утолителя жажды слаймов» и [npc.verb(start)] жадно [npc.verb(gulp)] выпивает содержимое. Знакомый вкус сладкого энергетического напитка наполняет рот [npc.namePos], и [npc.she] за считанные секунды до дна осушает весь этот светящийся напиток.
 		]]></selfUse>
 		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(pop)] the cap off of the bottle of Slime Quencher and [npc.verb(get)] [npc2.name] to drink the liquid contained within. The recognisable taste of a sugary energy drink fills [npc2.namePos] mouth, and [npc2.she] greedily [npc2.verb(gulp)] down the all of the glowing beverage in a matter of seconds.
+		[npc.Name] [npc.verb(pop)] пробку бутылки «Утолителя жажды слаймов» и [npc.verb(get)] [npc2.name] выпить содержимое. Знакомый вкус сладкого энергетического напитка наполняет рот [npc2.namePos], и [npc2.she] за считанные секунды жадно [npc2.verb(gulp)] осушает весь этот светящийся напиток.
 		]]></otherUse>
 	</useDescriptions>
 

@@ -2,7 +2,7 @@
 <tail>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<coveringType>innoxia_deer_fur</coveringType>
 	
@@ -20,8 +20,8 @@
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural> 
 	
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural> 
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>deer-like</descriptor>
@@ -32,8 +32,8 @@
 		<descriptor>furry</descriptor>
 	</descriptorsFeminine>
 	
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine>
 		<descriptor>furry</descriptor>
 	</tipDescriptorsMasculine>
@@ -43,16 +43,15 @@
 	
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A furry, deer-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a very limited amount of control over it, and can only lift it up and down.
-			<br/>[npc.Name] now [npc.has] a [style.boldGoat(deer-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Прямо над [npc.her] задницей растет пушистый олений хвост, стремительно увеличиваясь в размерах, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь слегка может им управлять, и способна лишь поднимать его вверх-вниз.
+			<br/>[npc.Name] теперь [npc.has] [style.boldGoat(олений хвост)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] furry, deer-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] a very limited amount of control over them, and can only lift them up and down.
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldGoat(deer-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] пушистые оленьи хвостики прорастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)] что [npc.she] [npc.has] лишь слегка может ими управлять, способная лишь поднимать и опускать их.
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldGoat(deer-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF [npc.tailColour(true)] deer tail, which [npc.she] can lift up and down.
 		#ELSE

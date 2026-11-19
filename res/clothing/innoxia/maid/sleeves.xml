@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>350</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[maid's sleeve]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[maid's sleeves]]></namePlural>
-		<description><![CDATA[A pair of maid's sleeves that end just past the elbow. They're made of soft coloured fabric and sport lace trimmings.]]></description>
+		<name><![CDATA[рукав горничной]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[рукава горничной]]></namePlural>
+		<description><![CDATA[Пара рукавов горничной, заканчивающихся чуть ниже локтя. Они сделаны из мягкой цветной ткани и украшены кружевной отделкой.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>HAND</slot>
@@ -47,25 +47,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the sleeves down onto [npc.her] [npc.arms].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] рукава вниз на [npc.her] [npc.arms].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the sleeves down onto [npc2.namePos] [npc2.arms].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] рукава вниз на [npc2.namePos] [npc2.arms].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] the sleeves down onto [npc2.namePos] [npc2.arms].]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] рукава вниз на [npc2.namePos] [npc2.arms].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] sleeves.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] рукава.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] sleeves.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] рукава.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(yank)] off [npc2.namePos] sleeves.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(yank)] с [npc2.namePos] рукава.]]>
 		</otherRough>
 	</displacementText>
 	

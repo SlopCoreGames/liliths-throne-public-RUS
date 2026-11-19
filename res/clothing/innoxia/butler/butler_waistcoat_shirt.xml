@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[Butler's Waistcoat]]></name>
+		<name><![CDATA[Жилет дворецкого]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Butler's Waistcoats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Жилеты дворецкого]]></namePlural> 
 		
-		<description><![CDATA[A smart shirt, with accompanying waistcoat.]]></description> 
+		<description><![CDATA[Элегантная рубашка в комплекте с жилетом.]]></description> 
 		
 		<physicalResistance>0</physicalResistance>
 		

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>200</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[Slavery Administration shirt]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Slavery Administration shirts]]></namePlural>	
-		<description><![CDATA[A form-fitting short-sleeved shirt, with a nametag used by Slavery Administration staff.]]></description>	
+		<name><![CDATA[Рубашка Администрации Рабства]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Рубашки Администрации Рабства]]></namePlural>	
+		<description><![CDATA[Облегающая рубашка с коротким рукавом и именной табличкой, которую носят сотрудники Администрации Рабства.]]></description>	
 		<physicalResistance>0</physicalResistance>	
 		<femininity>ANDROGYNOUS</femininity>	
 		<slot>TORSO_UNDER</slot>

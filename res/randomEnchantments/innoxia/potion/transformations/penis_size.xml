@@ -22,25 +22,25 @@
 	
 	<name defaultPrepend="true"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Cock-shrinking
+			Уменьшение члена
 		#ELSE
-			Cock-growth
+			Увеличение члена
 		#ENDIF
 	]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Let's shrink that dick of yours right down!
+			Давай-ка урежем твой член поменьше!
 		#ELSE
-			Let's make that cock of yours much bigger!
+			Давай сделаем твой член куда больше!
 		#ENDIF
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
 		#IF(flags.getInt('extremeTF')<50)
-			Haha! What a cute little cock!
+			Ха-ха! Какой миленький крошечный член!
 		#ELSE
-			~Mmm!~ Now that's a big cock!
+			~Ммм!~ Вот это я понимаю — здоровенный член!
 		#ENDIF
 	]]></applicationSpeechEnd>
 	

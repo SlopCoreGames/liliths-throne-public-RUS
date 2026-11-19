@@ -4,9 +4,9 @@
 	
 	<determiner><![CDATA[a layer of]]></determiner>
 	
-	<name><![CDATA[skin]]></name>
+	<name><![CDATA[кожа]]></name>
 	
-	<namePlural pluralByDefault="false"><![CDATA[skin]]></namePlural> 
+	<namePlural pluralByDefault="false"><![CDATA[кожа]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>SMOOTH</modifier>

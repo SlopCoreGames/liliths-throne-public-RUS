@@ -47,20 +47,20 @@
 	<basicDescriptionId>PANTHER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PANTHER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[lion-morph]]></name>
-	<namePlural><![CDATA[lion-morphs]]></namePlural>
-	<singularMaleName><![CDATA[lion-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[lion-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[lion-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[lion-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic lion, known as a 'lion-morph' when bipedal, and a 'liontaur' when the lower body is that of a feral lion. To be identified as a lion-morph, a character must be a panther without striped or spotted fur.]]></description>
+	<name><![CDATA[львиный морф]]></name>
+	<namePlural><![CDATA[львиные морфы]]></namePlural>
+	<singularMaleName><![CDATA[львёнок]]></singularMaleName>
+	<singularFemaleName><![CDATA[львёнка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[львята]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[львицы]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный лев, называемый «львиным морфом», когда он передвигается на двух ногах, и «львентавром», если его нижняя часть тела представляет собой дикого льва. Чтобы считаться львиным морфом, персонаж должен быть пантерой без полосок или пятен на шкуре.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[lion]]></feralName>
-		<feralNamePlural><![CDATA[lions]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[lion]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[lioness]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[lions]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[lionesses]]></feralPluralFemaleName>
+		<feralName><![CDATA[лев]]></feralName>
+		<feralNamePlural><![CDATA[львы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[лев]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[львица]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[львы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[львицы]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>100</size>
@@ -73,7 +73,7 @@
 		<hairPresent>true</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body is extremely strong, and [npc.sheIsFull] capable of great feats of strength. [npc.She] also [npc.has] a high resistance to both natural and arcane heat.
+		Тело [npc.NamePos] чрезвычайно крепкое, и [npc.sheIsFull] способна на великие подвиги силы. [npc.She] также [npc.has] обладает высокой устойчивостью как к природному, так и к арканическому жару.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="30">MAJOR_PHYSIQUE</attribute>

@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[trainer]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[trainers]]></namePlural>
-		<description><![CDATA[A pair of shoes made from flexible rubber and breathable cloth. Although designed to be worn when performing physical exercise, they are widely used for everyday wear.]]></description>
+		<name><![CDATA[кроссовки]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[кроссовки]]></namePlural>
+		<description><![CDATA[Пара обуви из гибкой резины и дышащей ткани. Хотя они предназначены для занятий спортом, их часто носят и в повседневной жизни.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>FOOT</slot> 
@@ -51,25 +51,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] [npc.feet] into the trainers and [npc.verb(tie)] up the laces.]]>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc.her] [npc.feet] в кроссовки и [npc.verb(tie)] шнурки.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] [npc2.feet] into the trainers and [npc.verb(tie)] up the laces.]]>
+      <![CDATA[[npc.Name] [npc.verb(push)] [npc2.namePos] [npc2.feet] в кроссовки и [npc.verb(tie)] шнурки.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(force)] [npc2.namePos] [npc2.feet] into the trainers and [npc.verb(tie)] up the laces.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(force)] [npc2.namePos] [npc2.feet] в кроссовки и [npc.verb(tie)] шнурки.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the laces of [npc.her] trainers, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] шнурки на [npc.her] кроссовках, а затем стягивает их с ног.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the laces of [npc2.namePos] trainers, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] шнурки на [npc2.namePos] кроссовках, а затем стягивает их с ног.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(untie)] the laces of [npc2.namePos] trainers, before tugging them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(untie)] шнурки на [npc2.namePos] кроссовках, а затем с силой стягивает их с ног.]]>
     </otherRough>
   </displacementText>
 	

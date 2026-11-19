@@ -3,8 +3,8 @@
 	<category>EYE_IRIS</category>
 	
 	<determiner><![CDATA[a pair of]]></determiner>
-	<name><![CDATA[eye]]></name>
-	<namePlural pluralByDefault="true"><![CDATA[eyes]]></namePlural> 
+	<name><![CDATA[глаз]]></name>
+	<namePlural pluralByDefault="true"><![CDATA[глаза]]></namePlural> 
 	
 	<naturalCoveringModifiers>
 		<modifier>EYE</modifier>

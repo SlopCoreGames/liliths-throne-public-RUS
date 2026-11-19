@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <face>
 	<race>charisma_spider</race>
-	<transformationName><![CDATA[spider]]></transformationName>
+	<transformationName><![CDATA[паук]]></transformationName>
 	<coveringType>charisma_spider_chitinSmooth</coveringType>
 	<mouthType>charisma_spider_mouth</mouthType>
 	<tags>
@@ -18,18 +18,18 @@
 		<descriptor>spider-like</descriptor>
 		<descriptor>chelicerae-equipped</descriptor>
 	</descriptorsFeminine>
-	<noseName><![CDATA[nose]]></noseName>
-	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+	<noseName><![CDATA[нос]]></noseName>
+	<noseNamePlural><![CDATA[носы]]></noseNamePlural>
 	<noseDescriptorsMasculine/>
 	<noseDescriptorsFeminine/>
 	<transformationDescription><![CDATA[
-		[npc.Her] face burns as large chitinous chelicerae emerge from the sides of [npc.her] face and surround [npc.her] [npc.mouth]. [npc.She] also [npc.verb(feel)] a burning in [npc.her] cheeks as venom glands start to form that feed into them. As the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
-		<br/>[npc.Name] now [npc.has] an anthropomorphic [style.boldSpider(spider-like face)], [npc.materialDescriptor] [npc.skinFullDescription], complete with large fang-like chelicerae, which are [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)]. Within [npc.her] [npc.mouth], [npc.she] [npc.has] a mammal-like tongue.
+		Лицо [npc.Her] горит, когда по бокам от [npc.her] лица прорезаются огромные хитиновые хелицеры, окружающие [npc.her] [npc.mouth]. [npc.She] также [npc.verb(feel)] жжение в [npc.her] щеках — это начинают формироваться ядовитые железы, ведущие прямо в них. Когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышащим и вздыхающим, пока [npc.she] [npc.verb(try)] перевести [npc.her] дух.
+		<br/>[npc.Name] теперь [npc.has] антропоморфное [style.boldSpider(паукообразное лицо)], [npc.materialDescriptor] [npc.skinFullDescription], с огромными похожими на клыки хелицерами, которые являются [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)]. Внутри [npc.her] [npc.mouth], [npc.she] [npc.has] млекопитающий язык.
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], spider-like face [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)] and complete with large fang-like chelicerae, which are [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)].
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], паукообразное лицо, [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)] и с огромными похожими на клыки хелицерами, которые являются [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)].
 	]]></bodyDescription>
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with large fang-like chelicerae.
+		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое является [npc.materialDescriptor] [npc.faceFullDescription(true)] и дополнено огромными похожими на клыки хелицерами.
 	]]></bodyDescriptionFeral>
 </face>

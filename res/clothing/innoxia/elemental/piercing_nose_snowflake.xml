@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>600</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[snowflake nose stud]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[snowflake nose studs]]></namePlural>
-		<description><![CDATA[A nose stud in the shape of a snowflake. It is typically sold pre-enchanted with effects that boost the wearer's arcane cold damage and resistance.]]></description>
+		<name><![CDATA[серьга в носу в виде снежинки]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[серьги в носу в виде снежинок]]></namePlural>
+		<description><![CDATA[Серьга в носу в форме снежинки. Обычно она продается уже зачарованной: она увеличивает арканный урон холодом и сопротивление холоду владельца.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>PIERCING_NOSE</slot> 
@@ -47,25 +47,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the snowflake stud into [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] снежинку в [npc.her] [npc.nose] прокол.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the snowflake stud into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] снежинку в [npc2.namePos] [npc2.nose] прокол.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the snowflake stud into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] снежинку в [npc2.namePos] [npc2.nose] прокол.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] snowflake stud out of [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] снежинку из [npc.her] [npc.nose] прокола.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] snowflake stud out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] снежинку из [npc2.her] [npc2.nose] прокола.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] snowflake stud out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] снежинку из [npc2.her] [npc2.nose] прокола.]]>
     </otherRough>
   </displacementText>
 	

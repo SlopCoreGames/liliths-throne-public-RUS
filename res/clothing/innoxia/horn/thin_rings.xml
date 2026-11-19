@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a collection of]]></determiner>
-		<name><![CDATA[thin horn rings]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[thin horn rings]]></namePlural>
-		<description><![CDATA[A dozen thin rings, each one being of a size suitable for being slotted onto someone's horns.]]></description>
+		<name><![CDATA[тонкие роговые кольца]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[тонкие роговые кольца]]></namePlural>
+		<description><![CDATA[Дюжина тонких колец, каждое из которых подходит по размеру, чтобы надеть на чьи-то рога.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -43,25 +43,25 @@
 
 	<replacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
 	<self>
-		<![CDATA[[npc.Name] [npc.verb(slide)] the dozen thin rings onto [npc.her] [npc.horns].]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] дюжину тонких колец на рога [npc.her] [npc.horns].]]>
 	</self>
 	<other>
-		<![CDATA[[npc.Name] [npc.verb(slide)] the dozen thin rings onto [npc2.namePos] [npc2.horns].]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] дюжину тонких колец на рога [npc2.namePos] [npc2.horns].]]>
 	</other>
 	<otherRough>
-		<![CDATA[[npc.Name] roughly [npc.verb(slide)] the dozen thin rings onto [npc2.namePos] [npc2.horns].]]>
+		<![CDATA[[npc.Name] грубо [npc.verb(slide)] дюжину тонких колец на рога [npc2.namePos] [npc2.horns].]]>
 	</otherRough>
 	</replacementText>
 
 	<displacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
 	<self>
-		<![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] rings from off of [npc.her] [npc.horns].]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] снимает [npc.her] колец с [npc.her] [npc.horns].]]>
 	</self>
 	<other>
-		<![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] rings from off of [npc2.her] [npc2.horns].]]>
+		<![CDATA[[npc.Name] [npc.verb(slide)] снимает [npc2.namePos] колец с [npc2.her] [npc2.horns].]]>
 	</other>
 	<otherRough>
-		<![CDATA[[npc.Name] roughly [npc.verb(slide)] [npc2.namePos] rings from off of [npc2.her] [npc2.horns].]]>
+		<![CDATA[[npc.Name] грубо [npc.verb(slide)] стягивает [npc2.namePos] колец с [npc2.her] [npc2.horns].]]>
 	</otherRough>
 	</displacementText>
 	

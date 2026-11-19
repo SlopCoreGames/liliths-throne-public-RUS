@@ -33,32 +33,32 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[octopus-morph]]></name>
-			<namePlural><![CDATA[octopus-morphs]]></namePlural>
-			<singularMaleName><![CDATA[octopus-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[octopus-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[octopus-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[octopus-girls]]></pluralFemaleName>
+			<name><![CDATA[осьминог-морф]]></name>
+			<namePlural><![CDATA[осьминоги-морфы]]></namePlural>
+			<singularMaleName><![CDATA[осьминог-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[осьминожка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[осьминоги-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[осьминожки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
-	<description><![CDATA[An anthropomorphic octopus, known as an 'octopus-morph'.]]></description>
+	<description><![CDATA[Антропоморфный осьминог, известный как «осьминог-морф».]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[kraken]]></name>
-			<namePlural><![CDATA[krakens]]></namePlural>
-			<singularMaleName><![CDATA[kraken]]></singularMaleName>
-			<singularFemaleName><![CDATA[kraken]]></singularFemaleName>
-			<pluralMaleName><![CDATA[krakens]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[krakens]]></pluralFemaleName>
+			<name><![CDATA[кракен]]></name>
+			<namePlural><![CDATA[кракены]]></namePlural>
+			<singularMaleName><![CDATA[кракен]]></singularMaleName>
+			<singularFemaleName><![CDATA[кракен]]></singularFemaleName>
+			<pluralMaleName><![CDATA[кракены]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[кракены]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[octopus]]></feralName>
-		<feralNamePlural><![CDATA[octopuses]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[octopus]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[octopus]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[octopuses]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[octopuses]]></feralPluralFemaleName>
+		<feralName><![CDATA[осьминог]]></feralName>
+		<feralNamePlural><![CDATA[осьминоги]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[осьминог]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[осьминог]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[осьминоги]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[осьминоги]]></feralPluralFemaleName>
 		<legConfiguration>CEPHALOPOD</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>40</size>
@@ -70,9 +70,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] octopus-like body is quite strong, and [npc.she] [npc.has] an increased affinity for the arcane.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] осьминогоподобное тело довольно крепкое, а [npc.she] [npc.has] повышенная предрасположенность к аркане.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>
 		<attribute value="10">MAJOR_ARCANE</attribute> 

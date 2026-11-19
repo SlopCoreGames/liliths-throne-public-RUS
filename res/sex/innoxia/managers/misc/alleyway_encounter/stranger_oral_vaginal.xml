@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[crate]]></deskName>
+	<deskName><![CDATA[ящик]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -12,9 +12,7 @@
 	<positionsAvailable/>
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
-		<startingDescription><![CDATA[
-			A few people loitering about nearby catch sight of what you're doing and stop to watch...
-		]]></startingDescription>
+		<startingDescription><![CDATA[Несколько зевак, ошивающихся неподалеку, замечают, чем ты занята, и останавливаются, чтобы понаблюдать...]]></startingDescription>
 		<randomDescriptions/>
 	</publicSex>
 	<characterInformationContainer>

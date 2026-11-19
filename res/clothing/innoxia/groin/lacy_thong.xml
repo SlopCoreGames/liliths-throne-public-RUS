@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>350</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[lacy thong]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[lacy thongs]]></namePlural>
-		<description><![CDATA[A skimpy thong, with a decorative lace front panel.]]></description>
+		<name><![CDATA[кружевные стринги]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кружевные стринги]]></namePlural>
+		<description><![CDATA[Откровенные стринги с декоративной передней панелью из кружева.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>GROIN</slot>

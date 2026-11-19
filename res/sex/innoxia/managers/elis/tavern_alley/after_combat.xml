@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[table]]></deskName>
+	<deskName><![CDATA[таблица]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -13,14 +13,14 @@
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
-			With the chaotic brawl continuing to take place all throughout the tavern, you and [attacker.name] are very much on public display as you have sex...
+			Пока по всей таверне бушует хаотичная потасовка, ты и [attacker.name] находитесь на виду у всех, вовсю занимаясь сексом...
 		]]></startingDescription>
 		<randomDescriptions enabled="true">
-			<description><![CDATA[A couple of nearby combatants pause for a moment to laugh and cheer at your lewd display.]]></description>
-			<description><![CDATA[You hear someone in the tavern wolf-whistling as they watch you and [attacker.name] go at it.]]></description>
-			<description><![CDATA[Over the sound of smashing bottles and breaking furniture, you somehow manage to hear someone nearby commenting on your performance.]]></description>
-			<description><![CDATA[Cheering and laughing, several rowdy combatants find a moment of peace in the chaos to watch and cheer you and [attacker.name] on.]]></description>
-			<description><![CDATA[You glance across to see a couple of defeated combatants touching themselves as they watch you and [attacker.name] have sex.]]></description>
+			<description><![CDATA[Пара бойцов неподалеку на мгновение замирает, чтобы посмеяться и поорать, глядя на ваше непристойное зрелище.]]></description>
+			<description><![CDATA[Ты слышишь, как кто-то в таверне одобрительно свистит, наблюдая за тем, как вы с [attacker.name] трахаетесь.]]></description>
+			<description><![CDATA[Сквозь грохот бьющихся бутылок и ломающейся мебели тебе каким-то чудом удается расслышать, как кто-то рядом комментирует твою технику.]]></description>
+			<description><![CDATA[Оглашая зал криками и смехом, несколько буйных бойцов находят в этом хаосе момент спокойствия, чтобы поглазеть на вас с [attacker.name] и подбодрить вас.]]></description>
+			<description><![CDATA[Ты бросаешь взгляд в сторону и видишь, как пара поверженных бойцов ласкают себя, наблюдая за вашим сексом с [attacker.name].]]></description>
 		</randomDescriptions>
 	</publicSex>
 	<characterInformationContainer>

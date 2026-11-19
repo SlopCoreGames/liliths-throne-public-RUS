@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>200</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[v-string panties]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[v-string panties]]></namePlural>
-		<description><![CDATA[A pair of feminine, v-string panties, made from soft cotton.]]></description>
+		<name><![CDATA[трусики v-string]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[трусики v-string]]></namePlural>
+		<description><![CDATA[Женственные трусики v-string, сделанные из мягкого хлопка.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>GROIN</slot>
@@ -60,25 +60,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into the v-string panties, before pulling them up to cover [npc.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в трусики v-string, а затем натягивает их, чтобы прикрыть интимные места [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the v-string panties up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] трусики v-string вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] the v-string panties up [npc2.namePos] [npc2.legs] to cover [npc2.her] private parts.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] трусики v-string вверх по [npc2.namePos] [npc2.legs], прикрывая интимные места [npc2.her].]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] v-string panties down and [npc.verb(kick)] them off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] стягивает с себя трусики-стринги и [npc.verb(kick)] сбрасывает их ногой [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(slide)] down [npc2.namePos] v-string panties and [npc.verb(pull)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(slide)] трусики-стринги [npc2.namePos] вниз и [npc.verb(pull)] их с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] v-string panties and [npc.verb(yank)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] вниз трусики-стринги [npc2.namePos], а затем [npc.verb(yank)] их с [npc2.her] [npc2.feet].]]>
 		</otherRough>
 	</displacementText>
 	

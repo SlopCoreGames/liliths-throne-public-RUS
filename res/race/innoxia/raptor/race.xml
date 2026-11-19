@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[raptor-morph]]></name>
-	<namePlural><![CDATA[raptor-morphs]]></namePlural>
+	<name><![CDATA[морф раптора]]></name>
+	<namePlural><![CDATA[морфы раптора]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[raptor]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[раптор]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[raptor]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[раптор]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[raptor]]></defaultTransformName>
+	<defaultTransformName><![CDATA[раптор]]></defaultTransformName>
 	
 	<colour>innoxia_raptor</colour>
 	

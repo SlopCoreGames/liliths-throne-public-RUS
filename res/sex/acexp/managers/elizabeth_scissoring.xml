@@ -2,7 +2,7 @@
 <sexManager>
     <title/>
     <wallName/>
-    <deskName><![CDATA[sofa]]></deskName>
+    <deskName><![CDATA[диван]]></deskName>
     <consensual><![CDATA[true]]></consensual>
     <subHasEqualControl><![CDATA[true]]></subHasEqualControl>
     <canSkipSex><![CDATA[true]]></canSkipSex>
@@ -13,14 +13,14 @@
     <positionsAvailable/>
     <publicSex>
         <startingDescription><![CDATA[
-			The maids that are present in the room pretend not to pay any attention to what is happening in front of them...
+			Присутствующие в комнате горничные делают вид, что совершенно не замечают происходящего прямо перед ними...
 		]]></startingDescription>
         <randomDescriptions enabled="true">
-            <description><![CDATA[One of the maids casts a quick glance at the pair of you.]]></description>
-            <description><![CDATA[A maid sucks in her breath and then exhales sharply.]]></description>
-            <description><![CDATA[You see one of the maids groping herself.]]></description>
-            <description><![CDATA[One of the maids is moaning audibly.]]></description>
-            <description><![CDATA[A maid licks her lips while pretending to look the other way.]]></description>
+            <description><![CDATA[Одна из горничных бросает на вас двоих быстрый взгляд.]]></description>
+            <description><![CDATA[Горничная резко втягивает воздух, а затем шумно выдыхает.]]></description>
+            <description><![CDATA[Ты замечаешь, как одна из горничных вовсю ласкает саму себя.]]></description>
+            <description><![CDATA[Одна из горничных громко и отчетливо стонет.]]></description>
+            <description><![CDATA[Горничная облизывает губы, делая вид, что смотрит в другую сторону.]]></description>
         </randomDescriptions>
     </publicSex>
     <characterInformationContainer>

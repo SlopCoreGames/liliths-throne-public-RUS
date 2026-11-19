@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[On the inside the chest plate, faint rubberised ink reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне нагрудника едва заметна резиновая печать: «Служебная экипировка Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>2500</value> 
 
 		<determiner><![CDATA[a set of]]></determiner>
 
-		<name><![CDATA[Enforcer's riot armour]]></name>
+		<name><![CDATA[Штурмовая броня Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[sets of Enforcer's riot armour]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[комплекты штурмовой брони Enforcer]]></namePlural> 
 
-		<description><![CDATA[A set of metallic panels attached to a sleeved vest made from ballistic fibres, it is the best protection available to an ordinary Enforcer. Despite its bulk, the two-piece design allows the wearer to put the armour on or take it off without needing to remove any headgear.]]></description> 
+		<description><![CDATA[Набор металлических пластин, закрепленных на жилете из баллистических волокон — лучшая защита, доступная обычному Enforcer. Несмотря на громоздкость, благодаря двухсоставной конструкции, носитель может надеть или снять броню, не снимая шлема.]]></description> 
 
 		<physicalResistance>30</physicalResistance> 
 
@@ -88,25 +88,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(buckle)] the armour together around [npc.her] torso and [npc.verb(tighten)] the adjustment straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(buckle)] бронестенок вокруг торса [npc.her] и [npc.verb(tighten)] регулировочные ремни.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(buckle)] the armour together around [npc2.namePos] torso and [npc.verb(tighten)] the adjustment straps.]]>
+			<![CDATA[[npc.Name] [npc.verb(buckle)] бронестенок вокруг торса [npc2.namePos] и [npc.verb(tighten)] регулировочные ремни.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] hastily [npc.verb(buckle)] the armour together around [npc2.namePos] torso and [npc.verb(tighten)] the adjustment straps.]]>
+			<![CDATA[[npc.Name] поспешно [npc.verb(buckle)] бронестенок вокруг торса [npc2.namePos] и [npc.verb(tighten)] регулировочные ремни.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the adjustment straps on [npc.her] armour and [npc.verb(unbuckles)] them, letting the two halves fall away.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] регулировочные ремни на броне [npc.her] и [npc.verb(unbuckles)] их, позволяя двум половинам соскользнуть.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the adjustment straps on [npc2.namePos] armour and [npc.verb(unbuckles)] them, letting the two halves fall away.]]>
+			<![CDATA[[npc.Name] [npc.verb(loosen)] регулировочные ремни на броне [npc2.namePos] и [npc.verb(unbuckles)] их, позволяя двум половинам соскользнуть.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] at the adjustment straps on [npc2.namePos] armour until they're loose enough and [npc.verb(pop)] open the buckles, flinging the two halves away.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] регулировочные ремни на броне [npc2.namePos], пока они не ослабнут, и [npc.verb(pop)] расстегивает пряжки, отбрасывая обе половины в стороны.]]>
 		</otherRough>
 	</displacementText>
 	

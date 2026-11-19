@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>120</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[basic barbell]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[basic barbells]]></namePlural>
-		<description><![CDATA[Each of these basic barbells consists of a thin cylinder of metal, with an unscrewable sphere on either end. They could be slid into place through either a pair of pierced nipples or 'industrial' ear piercings.]]></description>
+		<name><![CDATA[обычный штанга]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[обычные штанги]]></namePlural>
+		<description><![CDATA[Каждый из этих простых штангов представляет собой тонкий металлический цилиндр с откручивающимися шариками на обоих концах. Их можно продеть сквозь проколотые соски или через «индустриальный» пирсинг в ушах.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -54,49 +54,49 @@
 
   <replacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the barbells into [npc.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] штанги в пирсинги [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the barbells into [npc2.namePos] nipple piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] штанги в пирсинги [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the barbells into [npc2.namePos] nipple piercings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] штанги в пирсинги [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="PIERCING_NIPPLE" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] barbells out of [npc.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] штангов из пирсингов [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] barbells out of [npc2.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] штангов из пирсингов [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] barbells out of [npc2.her] nipple piercings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] штангов из пирсингов [npc2.her].]]>
     </otherRough>
   </displacementText>
 
   <replacementText slot="PIERCING_EAR" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the barbells into [npc.her] [npc.ear]'s industrial piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] штанги в индустриальный пирсинг [npc.her] [npc.ear].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the barbells into [npc2.namePos] [npc2.ear]'s industrial piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] штанги в индустриальный пирсинг [npc2.namePos] [npc2.ear].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the barbells into [npc2.namePos] [npc2.ear]'s industrial piercings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] штанги в индустриальный пирсинг [npc2.namePos] [npc2.ear].]]>
     </otherRough>
   </replacementText>
 
   <displacementText slot="PIERCING_EAR" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] barbells out of [npc.her] [npc.ear]'s industrial piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] штанги из индустриальных проколов [npc.her] [npc.ear].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] barbells out of [npc2.her] [npc2.ear]'s industrial piercings.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] штанги из индустриальных проколов [npc2.her] [npc2.ear].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] barbells out of [npc2.her] [npc2.ear]'s industrial piercings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] штанги из индустриальных проколов [npc2.her] [npc2.ear].]]>
     </otherRough>
   </displacementText>
 	

@@ -23,45 +23,45 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Enjoy anilingus]]></title>
+	<title><![CDATA[Наслаждаться анилингусом]]></title>
 	<tooltip><![CDATA[
-		Enjoy the feeling of having your ass eaten by [pc.name].
+		Наслаждайся тем, как [pc.name] ласкает твой зад языком.
 	]]></tooltip>
 	<descriptions>
 		<description>
 			<text><![CDATA[
 				#IF(npc==natalya)
-					[natalya.speech(That's it, [style.mule], keep eating my ass!)] Mistress Natalya moans.
+					[natalya.speech(Вот так, [style.mule], продолжай жрать мой зад!)] — стонет госпожа Наталья.
 				#ELSE
-					[callie.speech(Don't stop!)] Callie happily squeals as you continue eating her ass.
+					[callie.speech(Не останавливайся!)] — радостно визжит Колли, пока ты продолжаешь вылизывать её задницу.
 				#ENDIF
 			]]></text>
 			<text><![CDATA[
 				#IF(npc==natalya)
-					Mistress Natalya lets out a series of [natalya.moans+] as you continue to perform anilingus on her.
+					Госпожа Наталья издает серию [natalya.moans+], пока ты продолжаешь делать ей анилингус.
 				#ELSE
-					Callie lustfully pants and moans as you kiss and lick her puffy, ebony asshole.
+					Колли похотливо дышит и стонет, когда ты целуешь и лижешь её пухлую, иссиня-черную дырочку.
 				#ENDIF
 			]]></text>
 			<text><![CDATA[
 				#IF(npc==natalya)
-					Mistress Natalya pushes her ass back against your face and lets out [natalya.a_moan+] as you kiss her hot, puffy doughnut.
+					Госпожа Наталья сильнее прижимает зад к твоему лицу и издает [natalya.a_moan+], когда ты целуешь её горячий, раздутый «пончик».
 				#ELSE
-					Callie [callie.moansVerb+] and reaches back to spread her ass cheeks as you slide your [pc.tongue+] over her [callie.asshole+].
+					Колли [callie.moansVerb+] и тянется назад, чтобы раздвинуть ягодицы, пока ты скользишь своим [pc.tongue+] по её [callie.asshole+].
 				#ENDIF
 			]]></text>
 			<text><![CDATA[
 				#IF(npc==natalya)
-					The flared head of Mistress Natalya's huge, ebony horse-cock engorges and her shaft twitches and throbs as she lets out a series of [natalya.moans+].
+					Раздутая головка огромного, иссиня-черного лошадиного члена госпожи Натальи наливается кровью, а сам ствол дергается и пульсирует, пока она издает серию [natalya.moans+].
 				#ELSE
-					Rock-hard and constantly twitching, the state of Callie's huge, ebony horse-cock makes it clear that she's loving every moment of this.
+					Твердый как камень и постоянно подергивающийся, огромный иссиня-черный лошадиный член Колли ясно дает понять, что она наслаждается каждым мгновением.
 				#ENDIF
 			]]></text>
 			<text><![CDATA[
 				#IF(npc==natalya)
-					Mistress Natalya lets out [natalya.a_moan+] and eagerly bucks her feral hindquarters back into your face as you perform oral on her [natalya.asshole+].
+					Госпожа Наталья издает [natalya.a_moan+] и жадно вжимается своей дикой задницей тебе в лицо, пока ты ласкаешь её [natalya.asshole+] языком.
 				#ELSE
-					[callie.A_moan+] bursts out from between Callie's lips as you continue to perform oral on her [callie.asshole+].
+					[callie.A_moan+] вырывается из уст Кэлли, пока ты продолжаешь её [callie.asshole+].
 				#ENDIF
 			]]></text>
 		</description>

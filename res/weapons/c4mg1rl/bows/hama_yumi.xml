@@ -5,15 +5,15 @@
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[the]]></determiner>
-		<name appendDamageName="false"><![CDATA[Hama Yumi]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Cheater's Yumi]]></namePlural> 
-		<description><![CDATA[A yumi crafted for the youko lilin to smite those who threaten the weak. Arcane arrows fired from this weapon strike hard, strike true, and with grace to match.]]></description> 
+		<name appendDamageName="false"><![CDATA[Хама Юми]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Юми читера]]></namePlural> 
+		<description><![CDATA[Юми, созданная для лилин-ёко, чтобы карать тех, кто угрожает слабым. Аркана-стрелы, выпущенные из этого оружия, бьют мощно, точно и с присущим им изяществом.]]></description> 
 		<attackDescriptor>loose</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Loose an ethereal arrow at [npc2.name].]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Выпустить эфирную стрелу в [npc2.name].]]></attackTooltipDescription>
 		<rarity>LEGENDARY</rarity> 
 		<weaponSet>c4mg1rl_benevolent</weaponSet>
-		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] the Hama Yumi, readying it for combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] puts away [npc.her] yumi.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(draw)] Хама Юми, готовясь к бою.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] убирает [npc.her] юми.]]></unequipText>
 		<imageName>hama_yumi.svg</imageName> 
 		<imageEquippedName>hama_yumi.svg</imageEquippedName>
 		<physicalResistance>0</physicalResistance> 
@@ -45,27 +45,27 @@
 	</coreAttributes>
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Taking aim with [npc.her] yumi, [npc.name] [npc.verb(manage)] to strike [npc2.name] in the chest; the ethereal arcane arrow passing through [npc2.her] torso to drain [npc2.her] energy!
+		Прицелившись из [npc.her] юми, [npc.name] [npc.verb(manage)] попасть [npc2.name] прямо в грудь; эфирная аркана-стрела пронзает [npc2.her] торс, высасывая [npc2.her] Энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		Taking aim with [npc.her] yumi, [npc.name] [npc.verb(manage)] to strike through [npc2.her] [npc2.arm] with the ethereal arrow and drain [npc2.her] energy!
+		Прицелившись из [npc.her] юми, [npc.name] [npc.verb(manage)] пронзить [npc2.her] [npc2.arm] эфирной стрелой и вытянуть [npc2.her] Энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a bated breath, [npc.name] looses an ethereal arrow at [npc2.name], sinking into [npc2.her] shoulder and causing [npc2.herHim] to lose some energy!
+		Затаив дыхание, [npc.name] выпускает эфирную стрелу в [npc2.name]; она вонзается в [npc2.her] плечо, заставляя [npc2.herHim] потерять немного Энергии!
 		]]></hitText>
 		<criticalHitText><![CDATA[
-		With focused breath [npc.name] let loose a charged arrow delivering a devastating shot to [npc2.her] neck!
+		С глубоким вдохом [npc.name] выпускает заряженную стрелу, нанося сокрушительный удар в [npc2.her] шею!
 		]]></criticalHitText>
 	</hitDescriptions>
 	<missDescriptions>
 		<missText><![CDATA[
-		Taking aim with [npc.her] yumi, [npc.name] [npc.verb(attempt)] to strike [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		Нацелившись из [npc.her] юми, [npc.name] [npc.verb(attempt)] попасть [npc2.name] прямо в грудь, но в итоге [npc2.herHim] [npc.verb(end)] промахивается!
 		]]></missText>
 		<missText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] yumi, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Целясь в [npc2.name] из [npc.her] юми, [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a bated breath, [npc.name] looses an ethereal arrow at [npc2.name] with [npc.her] yumi, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Затаив дыхание, [npc.name] выпускает эфирную стрелу в [npc2.name] из [npc.her] юми, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

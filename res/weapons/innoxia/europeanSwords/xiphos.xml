@@ -5,15 +5,15 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[xiphos]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[xiphe]]></namePlural>
-		<description><![CDATA[A double-edged, one-handed shortsword, with a straight, #IF(game.isMetricSizes())60cm#ELSE24 inch#ENDIF blade. The ancient Greeks used it as a secondary battlefield weapon after the dory or javelin.]]></description> 
+		<name><![CDATA[ксифос]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ксифа]]></namePlural>
+		<description><![CDATA[Одноручный короткий меч с обоюдоострым, прямым, #IF(game.isMetricSizes())60cm#ELSE24 inch#ENDIF blade. The ancient Greeks used it as a secondary battlefield weapon after the dory or javelin.]]></description> 
 		<attackDescriptor>slash</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Slash at [npc2.name] with your xiphos.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Наносишь удар [npc2.name] своим ксифосом.]]></attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] xiphos at [npc.her] hip, ready to draw it at a moment's notice.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] xiphos, before putting it away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] ксифос на [npc.her] бедре, готовый в любой момент выхватить его.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] ксифос, прежде чем убрать его.]]></unequipText>
 		<imageName>xiphos_sheathed.svg</imageName> 
 		<imageEquippedName>xiphos.svg</imageEquippedName> 
 		<damage>25</damage>
@@ -61,25 +61,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(slash)] [npc.her] xiphos at [npc2.name], grinning as the ethereal arcane blade travels through [npc2.her] body!
+		[npc.Name] [npc.verb(slash)] [npc.her] ксифосом по [npc2.name], скалясь, пока эфирный арканный клинок проходит сквозь тело [npc2.her]!
 		]]></hitText>
 		<hitText><![CDATA[
-		Slashing out at [npc2.name] with [npc.her] xiphos, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the ethereal blade travel straight through [npc2.her] body!
+		Наносишь удар [npc2.name], размахивая [npc.her] ксифосом; [npc.name] [npc.verb(grin)], когда [npc.she] [npc.verb(see)] эфирный клинок, пронзающий тело [npc2.her] насквозь!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(slash)] at [npc2.name] with [npc.her] xiphos, causing [npc2.herHim] to stagger back as the ethereal blade passes right through [npc2.her] chest!
+		[npc.Name] [npc.verb(slash)] по [npc2.name], используя [npc.her] ксифос, заставляя [npc2.herHim] пошатнуться, пока эфирный клинок проходит прямо сквозь грудь [npc2.her]!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(slash)] [npc.her] xiphos at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(slash)] [npc.her] ксифосом по [npc2.name], но в итоге промахиваешься по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Slashing out at [npc2.name] with [npc.her] xiphos, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc2.name] делает рубящий выпад [npc.her] ксифосом, и [npc.name] [npc.verb(let)] разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(slash)] at [npc2.name] with [npc.her] xiphos, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(slash)] по [npc2.name] [npc.her] ксифосом, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 	</missDescriptions>
 	

@@ -4,20 +4,20 @@
 	<coreAttributes>
 		<value>40</value>
 		<determiner><![CDATA[a roll of]]></determiner>
-		<name><![CDATA[electrical tape]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[electrical tapes]]></namePlural>
+		<name><![CDATA[изолента]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[изоленты]]></namePlural>
 		<description><![CDATA[
-			This shiny tape is of the sort that's typically used by electricians. Although it holds enough adhesive to stick to most surfaces, it isn't particularly strong, and could comfortably be stuck to skin, fur, or hair without fear of a painful removal.
+			Эта блестящая лента — из тех, что обычно используют электрики. Хотя она достаточно липкая, чтобы приклеиться почти к любой поверхности, она не слишком прочная, поэтому её можно спокойно лепить на кожу, мех или волосы, не опасаясь болезненного отклеивания.
 			#IF(thisItem.getSlotEquippedTo()!=null)
-				<i>This particular length of tape has been
+				<i>Этот кусок изоленты был
 				#IF(thisItem.getSlotEquippedTo()==IS_NIPPLE)
-					 stuck over [npc.namePos] [npc.nipples]!
+					 наклеен поверх [npc.namePos] [npc.nipples]!
 				#ELSEIF(thisItem.getSlotEquippedTo()==IS_VAGINA)
-					 stuck over [npc.namePos] [npc.pussy]!
+					 наклеен поверх [npc.namePos] [npc.pussy]!
 				#ELSEIF(thisItem.getSlotEquippedTo()==IS_ANUS)
-					 stuck over [npc.namePos] [npc.asshole]!
+					 наклеен поверх [npc.namePos] [npc.asshole]!
 				#ELSEIF(thisItem.getSlotEquippedTo()==IS_MOUTH)
-					 stuck over [npc.namePos] mouth, preventing [npc.herHim] from speaking!
+					 наклеен поверх рта [npc.namePos], мешая [npc.herHim] говорить!
 				#ENDIF
 				</i>
 			#ENDIF
@@ -142,93 +142,93 @@
 
 	<replacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off two long pieces of tape and [npc.verb(stick)] them over [npc.her] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] отрывает два длинных куска изоленты и [npc.verb(stick)] их поверх рта [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off two long pieces of tape and [npc.verb(stick)] them over [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] отрывает два длинных куска изоленты и [npc.verb(stick)] их поверх рта [npc2.namePos].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off two long pieces of tape and roughly [npc.verb(stick)] them over [npc2.namePos] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(отрывает)] два длинных куска скотча и грубо [npc.verb(лепит)] их поверх рта [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(peel)] the tape off [npc.her] mouth.]]>
+			<![CDATA[[npc.Name] [npc.verb(вздрагивает)], когда [npc.she] [npc.verb(отклеивает)] скотч от рта [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(peel)] the tape off [npc2.her] mouth.]]>
+			<![CDATA[[npc2.Name] [npc2.verb(вздрагивает)], когда [npc.name] [npc.verb(отклеивает)] скотч от рта [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] and [npc2.verb(let)] out a cry as [npc.name] roughly [npc.verb(rip)] the tape off [npc2.her] mouth.]]>
+			<![CDATA[[npc2.Name] [npc2.verb(вздрагивает)] и [npc2.verb(издает)] крик, когда [npc.name] грубо [npc.verb(сдирает)] скотч с рта [npc2.her].]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText slot="NIPPLE" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off pieces of tape and [npc.verb(join)] them together into tape crosses, before sticking them over [npc.her] [npc.nipples].]]>
+			<![CDATA[[npc.Name] [npc.verb(отрывает)] куски скотча и [npc.verb(склеивает)] их в кресты, прежде чем наклеить их на [npc.her] [npc.nipples].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off pieces of tape and [npc.verb(join)] them together into tape crosses, before sticking them over [npc2.namePos] [npc2.nipples].]]>
+			<![CDATA[[npc.Name] [npc.verb(отрывает)] куски скотча и [npc.verb(склеивает)] их в кресты, прежде чем наклеить их на [npc2.namePos] [npc2.nipples].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off pieces of tape and [npc.verb(join)] them together into tape crosses, before roughly sticking them over [npc2.namePos] [npc2.nipples].]]>
+			<![CDATA[[npc.Name] [npc.verb(отрывает)] куски скотча и [npc.verb(склеивает)] их в кресты, прежде чем грубо наклеить их на [npc2.namePos] [npc2.nipples].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="NIPPLE" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(peel)] the tape crosses off [npc.her] [npc.nipples].]]>
+			<![CDATA[[npc.Name] [npc.verb(вздрагивает)], когда [npc.she] [npc.verb(отклеивает)] скотч-кресты от [npc.her] [npc.nipples].]]>
 		</self>
 		<other>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(peel)] the tape crosses off [npc2.her] [npc2.nipples].]]>
+			<![CDATA[[npc2.Name] [npc2.verb(вздрагивает)], когда [npc.name] [npc.verb(отклеивает)] скотч-кресты от [npc2.her] [npc2.nipples].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] and [npc2.verb(let)] out a cry as [npc.name] roughly [npc.verb(tear)] the tape crosses off [npc2.her] [npc2.nipples].]]>
+			<![CDATA[[npc2.Name] [npc2.verb(вздрагивает)] и [npc2.verb(издает)] крик, когда [npc.name] грубо [npc.verb(сдирает)] скотч-кресты с [npc2.her] [npc2.nipples].]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText slot="VAGINA" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a piece of tape and [npc.verb(stick)] it over [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] кусок скотча и [npc.verb(stick)] его поверх [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a piece of tape and [npc.verb(stick)] it over [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] кусок скотча и [npc.verb(stick)] его поверх [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a piece of tape and roughly [npc.verb(stick)] it over [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] кусок скотча и грубо [npc.verb(stick)] его поверх [npc2.namePos] [npc2.pussy+].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="VAGINA" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(peel)] off the tape that was covering [npc.her] [npc.pussy+].]]>
+			<![CDATA[[npc.Name] [npc.verb(wince)], когда [npc.she] [npc.verb(peel)] скотч, закрывавший [npc.her] [npc.pussy+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(peel)] off the tape that was covering [npc2.namePos] [npc2.pussy+].]]>
+			<![CDATA[[npc2.Name] [npc2.verb(wince)], когда [npc.name] [npc.verb(peel)] скотч, закрывавший [npc2.namePos] [npc2.pussy+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] and [npc2.verb(let)] out a cry as [npc.name] roughly [npc.verb(tear)] off the tape that was covering [npc2.her] [npc2.pussy+].]]>
+			<![CDATA[[npc2.Name] [npc2.verb(wince)] и [npc2.verb(let)] из себя вскрик, когда [npc.name] грубо [npc.verb(tear)] скотч, закрывавший [npc2.her] [npc2.pussy+].]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText slot="ANUS" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a piece of tape and [npc.verb(stick)] it over [npc.her] [npc.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] кусок скотча и [npc.verb(stick)] его поверх [npc.her] [npc.asshole+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a piece of tape and [npc.verb(stick)] it over [npc2.namePos] [npc2.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] кусок скотча и [npc.verb(stick)] его поверх [npc2.namePos] [npc2.asshole+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tear)] off a piece of tape and roughly [npc.verb(stick)] it over [npc2.namePos] [npc2.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(tear)] кусок скотча и грубо [npc.verb(stick)] его поверх [npc2.namePos] [npc2.asshole+].]]>
 		</otherRough>
 	</replacementText>
 	<displacementText slot="ANUS" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(wince)] as [npc.she] [npc.verb(peel)] off the tape that was covering [npc.her] [npc.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(wince)], когда [npc.she] [npc.verb(peel)] скотч, закрывавший [npc.her] [npc.asshole+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] as [npc.name] [npc.verb(peel)] off the tape that was covering [npc2.namePos] [npc2.asshole+].]]>
+			<![CDATA[[npc2.Name] [npc2.verb(wince)] , когда [npc.name] [npc.verb(peel)] отклеивает ленту, закрывавшую [npc2.namePos] [npc2.asshole+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc2.Name] [npc2.verb(wince)] and [npc2.verb(let)] out a cry as [npc.name] roughly [npc.verb(tear)] off the tape that was covering [npc2.her] [npc2.asshole+].]]>
+			<![CDATA[[npc2.Name] [npc2.verb(wince)] и [npc2.verb(let)] из себя вскрик, когда [npc.name] грубо [npc.verb(tear)] ленту, закрывавшую [npc2.her] [npc2.asshole+].]]>
 		</otherRough>
 	</displacementText>
 	

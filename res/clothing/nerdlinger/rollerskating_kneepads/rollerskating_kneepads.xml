@@ -2,12 +2,12 @@
 <!-- For a version without all of the comments, see "rental_daddy.xml". -->
 <clothing>
 	<coreAttributes>
-	<authorTag><![CDATA[A tag discreetly printed on the inside reads, "Safer Play brought to you by the Friendly Neighbourhood Co.".]]></authorTag>
+	<authorTag><![CDATA[На внутренней стороне приклеена скромная бирка: «Безопасная игра от Friendly Neighbourhood Co.».]]></authorTag>
 		<value>350</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[roller skating knee pad]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[roller skating knee pads]]></namePlural>
-		<description><![CDATA[A pair of plastic shells riveted to knee pads designed to protect the wearer when roller skating. They attach to the wearer's knees via velcro straps.]]></description>
+		<name><![CDATA[наколенник для роликов]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[наколенники для роликов]]></namePlural>
+		<description><![CDATA[Пара пластиковых щитков, прикрепленных к мягким наколенникам, предназначенных для защиты при катании на роликах. Крепятся к коленям с помощью липучек.]]></description>
 		<physicalResistance>2.0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>ANKLE</slot>

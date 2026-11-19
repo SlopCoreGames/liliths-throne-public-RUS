@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <arm>
 	<race>NoStepOnSnek_octopus</race>
-	<transformationName><![CDATA[octopus]]></transformationName>
+	<transformationName><![CDATA[осьминог]]></transformationName>
 	<coveringType>OCTOPUS_SKIN</coveringType>
 	<allowsFlight>false</allowsFlight>
 	<tags>
 		<tag>ARM_STANDARD</tag>
 	</tags>
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural>
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural>
 	<descriptorsMasculine>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
 	</descriptorsFeminine>
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>octopus-like</descriptor>
 		<descriptor>webbed</descriptor>
@@ -25,8 +25,8 @@
 		<descriptor>octopus-like</descriptor>
 		<descriptor>webbed</descriptor>
 	</handDescriptorsFeminine>
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>octopus-like</descriptor>
 	</fingerDescriptorsMasculine>
@@ -36,10 +36,10 @@
 		<descriptor>octopus-like</descriptor>
 	</fingerDescriptorsFeminine>
 	<transformationDescription><![CDATA[
-		Within a matter of moments, they've changed into slender arms not too unlike those of a normal human, albeit with thin webbing partially connecting the fingers on each hand.
-		<br/>As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldOctopus(octopus-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
+		Всего за мгновение они превращаются в стройные конечности, не слишком отличающиеся от человеческих рук, разве что между пальцами на каждой кисти натянута тонкая перепонка.
+		<br/>Когда трансформация завершается, [npc.nameIsFull] остаются антропоморфными, [style.boldOctopus(похожими на щупальца руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] hands are formed into anthropomorphic, octopus-like hands, complete with webbing stretching to the first knuckle of each finger.
+	[npc.She] [npc.has] [npc.armRows] руки, которые [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. [npc.Her] кисти превращаются в антропоморфные, осьминожьи ладони с перепонками, доходящими до первой фаланги каждого пальца.
 	]]></bodyDescription>
 </arm>

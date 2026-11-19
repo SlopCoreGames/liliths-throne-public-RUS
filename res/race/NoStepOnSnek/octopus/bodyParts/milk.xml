@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <fluid>
 	<race>NoStepOnSnek_octopus</race>
-	<transformationName><![CDATA[octopus]]></transformationName>
+	<transformationName><![CDATA[осьминог]]></transformationName>
 	<baseFluidType>MILK</baseFluidType>
 	<flavour>MILK</flavour>
 	<namesMasculine/>
 	<namesFeminine/>
 	<descriptorsMasculine>
-		<name><![CDATA[octopus]]></name>
+		<name><![CDATA[осьминог]]></name>
 	</descriptorsMasculine>
 	<descriptorsFeminine>
-		<name><![CDATA[octopus]]></name>
+		<name><![CDATA[осьминог]]></name>
 	</descriptorsFeminine>
 	<defaultFluidModifiers/>
 </fluid>

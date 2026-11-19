@@ -36,9 +36,9 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Pussy test]]></title>
+	<title><![CDATA[Тест киски]]></title>
 	<tooltip><![CDATA[
-		Test out the next dildo on the doll.
+		Испытай следующий дилдо на кукле.
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -46,9 +46,9 @@
 				[#sex.getNumberOfOrgasms(pc)==0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				The doll grabs a light pink insertable dildo from the table, before kneeling down between your legs and firmly pushing it into your pussy. As it's pushed fully inside of you, the toy starts to vibrate, which causes you to let out a delighted, muffled moan.
+				Кукла берет со стола светло-розовый фаллоимитатор и, опустившись на колени между твоих ног, с силой вгоняет его в твою киску. Как только игрушка входит до самого конца, она начинает вибрировать, заставляя тебя издать восторженный, приглушенный стон.
 				<br/>
-				Giving the dildo another push to make sure that it's fully inserted into your dripping cunt, the doll commands, [doll.speech(Focus on the pleasure and the strength of the vibrations.)]
+				Еще раз толкнув дилдо, чтобы убедиться, что он полностью вошел в твою сочащуюся смазкой щель, кукла командует, [doll.speech(Сосредоточься на удовольствии и силе вибраций.)]
 			]]></text>
 		</description>
 		<description>
@@ -56,15 +56,18 @@
 				[#sex.getNumberOfOrgasms(pc)>0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Squatting down to pull the light pink insertable dildo out of your pussy, the doll makes an approving hum as she sees how wet you are. Grabbing
+				Присев, чтобы вытащить светло-розовый фаллоимитатор из твоей киски, кукла одобрительно хмыкает, видя, насколько ты промокла. Схватив
 				#IF(game.isAnalContentEnabled())
-					 a huge, equine dildo, similar to the ones you've got down your throat and up your ass but coloured a realistic-looking black-and-pink,
+
+					 огромный лошадиный дилдо, похожий на те, что были у тебя в горле и в заднице, но окрашенный в реалистичные черно-розовые цвета,
 				#ELSE
-					 a huge, equine dildo, similar to the one you've got down your throat but coloured a realistic-looking black-and-pink,
+
+					 огромный лошадиный дилдо, похожий на тот, что был у тебя в горле, но окрашенный в реалистичные черно-розовые цвета,
 				#ENDIF
-				 she wastes no time in ramming it balls-deep into your quivering plastic pussy. Bracing yourself with one arm placed down on the floor behind you, you shudder and moan in ecstasy as you feel the toy's wide, flared head stretching out your insides.
+
+					 она не теряет времени и с размаху вбивает его по самую рукоятку в твою дрожащую пластиковую киску. Упираясь одной рукой в пол позади себя, ты вздрагиваешь и стонешь от экстаза, чувствуя, как широкая, расширяющаяся головка игрушки растягивает твои внутренности.
 				<br/>
-				[doll.speech(Now fuck yourself with this one,)] the doll commands in her expressionless voice, [doll.speech(and put some real force into it; these toys need to be checked for their durability.)]
+				[doll.speech(А теперь трахни себя этим,)] — командует кукла своим бесстрастным голосом, [doll.speech(и приложи настоящую силу; эти игрушки нужно проверять на прочность.)]
 			]]></text>
 		</description>
 	</descriptions>

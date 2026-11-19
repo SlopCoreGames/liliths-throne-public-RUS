@@ -2,15 +2,15 @@
 <race>
 	<racialBody>NoStepOnSnek_octopus</racialBody>
 	<applyRaceChanges/>
-	<name><![CDATA[octopus-morph]]></name>
-	<namePlural><![CDATA[octopus-morphs]]></namePlural>
+	<name><![CDATA[осьминог-морф]]></name>
+	<namePlural><![CDATA[осьминоги-морфы]]></namePlural>
 	<nameFeral>
-		<name legConfiguration="CEPHALOPOD"><![CDATA[octopus]]></name>
+		<name legConfiguration="CEPHALOPOD"><![CDATA[осьминог]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="CEPHALOPOD"><![CDATA[octopuses]]></name>
+		<name legConfiguration="CEPHALOPOD"><![CDATA[осьминоги]]></name>
 	</nameFeralPlural>
-	<defaultTransformName><![CDATA[octopus]]></defaultTransformName>
+	<defaultTransformName><![CDATA[осьминог]]></defaultTransformName>
 	<colour>NoStepOnSnek_octopus</colour>
 	<disposition>UNPREDICTABLE</disposition>
 	<racialClass>FISH</racialClass>

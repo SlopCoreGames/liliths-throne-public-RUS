@@ -6,15 +6,15 @@
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[]]></determiner>
 		<name appendDamageName="false"><![CDATA[MKAR]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[MKARs]]></namePlural>
-		<description><![CDATA[Chambered in 7.62×39mm Soviet intermediate cartridge, this modernised assault rifle supports both semi and fully automatic fire modes. The gas-operated firing mechanism utilises a rotating bolt, and is capable of producing a cyclic rate of fire of around 600–650 rounds per minute.]]></description>
+		<namePlural pluralByDefault="false"><![CDATA[MKAR]]></namePlural>
+		<description><![CDATA[Эта модернизированная штурмовая винтовка под патрон 7,62×39 мм советского промежуточного типа поддерживает как полуавтоматический, так и полностью автоматический режимы стрельбы. Газоотводный механизм с поворотным затвором обеспечивает темп стрельбы около 600–650 выстрелов в минуту.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
 		<attackTooltipDescription>Use your MKAR to fire a single bullet at your target.</attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		<weaponSet/> 
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] out [npc.her] MKAR, inserts a magazine, and pulls the charging handle, putting it into a state where it's ready to be used in combat.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] MKAR away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] [npc.her] MKAR, вставляет магазин и дергает за рукоятку затвора, приводя оружие в боевую готовность.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] MKAR.]]></unequipText>
 		<imageName>mkar.svg</imageName>
 		<imageEquippedName>mkar_semi_auto.svg</imageEquippedName> 
 		
@@ -63,13 +63,13 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Taking aim with [npc.her] MKAR, [npc.name] [npc.verb(pull)] the trigger and [npc.verb(fire)] a bullet at [npc2.name], hitting [npc2.herHim] directly in the chest!<br/>Thankfully, there seems to be some kind of arcane force preventing [npc2.name] from being seriously wounded or killed...
+		Прицелившись из [npc.her] MKAR, [npc.name] [npc.verb(pull)] за спусковой крючок и [npc.verb(fire)] пулю прямо в [npc2.name], попадая [npc2.herHim] точно в грудь!<br/>К счастью, какая-то аркана сила, похоже, не дает [npc2.name] получить смертельное ранение...
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Taking aim with [npc.her] MKAR, [npc.name] [npc.verb(pull)] the trigger and fires a bullet at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		Прицелившись из [npc.her] MKAR, [npc.name] [npc.verb(pull)] за спусковой крючок и [npc.verb(fire)] пулю в [npc2.name], но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 	</missDescriptions>
 	

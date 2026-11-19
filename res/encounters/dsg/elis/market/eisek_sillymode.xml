@@ -6,7 +6,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[Another Mob??]]></name>
+			<name><![CDATA[Еще одна толпа??]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				#IF(game.isSillyMode()
 					&& !flags.hasFlag(FLAG_dsg_elis_eisek_sillymode_mob_dispersed)

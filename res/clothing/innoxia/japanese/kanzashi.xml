@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[kanzashi]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[kanzashi]]></namePlural>
-		<description><![CDATA[A traditional Japanese hair ornament, composed primarily of folded cloth flowers.]]></description>
+		<name><![CDATA[кандзаси]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кандзаси]]></namePlural>
+		<description><![CDATA[Традиционное японское украшение для волос, состоящее в основном из цветов из ткани.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>HAIR</slot>
@@ -44,25 +44,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(tie)] up [npc.her] [npc.hair(true)] and [npc.verb(fasten)] the kanzashi in place.
+			[npc.Name] [npc.verb(tie)] [npc.her] [npc.hair(true)], а затем [npc.verb(fasten)] кандзаси.
 		]]></self>
 		<other> <![CDATA[
-			[npc.Name] [npc.verb(tie)] up [npc2.namePos] [npc2.hair(true)] and [npc.verb(fasten)] the kanzashi in place.
+			[npc.Name] [npc.verb(tie)] [npc2.namePos] [npc2.hair(true)], а затем [npc.verb(fasten)] кандзаси.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(scrunch)] up [npc2.namePos] [npc2.hair(true)] and [npc.verb(fasten)] the kanzashi in place.
+			[npc.Name] небрежно [npc.verb(scrunch)] [npc2.namePos] [npc2.hair(true)] и [npc.verb(fasten)] кандзаси.
 		]]></otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(slide)] [npc.her] kanzashi out of [npc.her] [npc.hair(true)].
+			[npc.Name] [npc.verb(slide)] [npc.her] кандзаси из [npc.her] [npc.hair(true)].
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(slide)] [npc2.namePos] kanzashi out of [npc2.her] [npc2.hair(true)].
+			[npc.Name] [npc.verb(slide)] [npc2.namePos] кандзаси из [npc2.her] [npc2.hair(true)].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] kanzashi out of [npc2.her] [npc2.hair(true)].
+			[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] кандзаси из [npc2.her] [npc2.hair(true)].
 		]]></otherRough>
 	</displacementText>
 	

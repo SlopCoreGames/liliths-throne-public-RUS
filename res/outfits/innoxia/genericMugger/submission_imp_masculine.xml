@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic imp mugger (masculine)]]></name>
+		<name><![CDATA[обычный бес-грабитель (мужской)]]></name>
 		
-		<description><![CDATA[Crude clothing and weapons...]]></description>
+		<description><![CDATA[Грубая одежда и оружие...]]></description>
 		
 		<femininity>MASCULINE</femininity>
 		

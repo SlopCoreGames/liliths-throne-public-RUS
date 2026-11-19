@@ -12,7 +12,7 @@
 	]]></spawnWeighting>
 	
 	<namePrefix/>
-	<namePostfix><![CDATA[of the Yeti]]></namePostfix>
+	<namePostfix><![CDATA[Йети]]></namePostfix>
 	<nameOverride/>
 	
 	<conditionalPreParsing><![CDATA[

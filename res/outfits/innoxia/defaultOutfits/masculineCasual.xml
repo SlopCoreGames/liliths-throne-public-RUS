@@ -2,9 +2,9 @@
 <!-- Look in the mods folder for a commented version of this. -->
 <outfit>
 	<coreAttributes>
-		<name><![CDATA[generic casual (masculine)]]></name>
+		<name><![CDATA[обычная повседневная одежда (мужская)]]></name>
 		
-		<description><![CDATA[Masculine casual clothing.]]></description>
+		<description><![CDATA[Повседневная мужская одежда.]]></description>
 		
 		<femininity>MASCULINE</femininity>
 		

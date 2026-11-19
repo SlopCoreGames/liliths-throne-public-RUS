@@ -6,18 +6,18 @@
 	
 	<race>mintychip_salamander</race>
 	
-	<transformationName><![CDATA[salamander]]></transformationName>
+	<transformationName><![CDATA[саламандра]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[salamander-]]></name>
+		<name><![CDATA[саламандра-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[salamander-]]></name>
+		<name><![CDATA[саламандра-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

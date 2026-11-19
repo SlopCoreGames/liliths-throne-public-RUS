@@ -6,9 +6,9 @@
 	<coreAttributes>
 		<value>1000</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[choker]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[chokers]]></namePlural>
-		<description><![CDATA[A sturdy, leather choker, which is fastened around the wearer's neck by means of a metal buckle. A series of large metal letters are fastened to the front of the collar and boldly spell out the word ]]></description>
+		<name><![CDATA[чокер]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[чокеры]]></namePlural>
+		<description><![CDATA[Прочный кожаный чокер, застегивающийся на шее с помощью металлической пряжки. На передней части ошейника закреплены крупные металлические буквы, которые отчетливо складываются в слово ]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -21,12 +21,12 @@
 		
 		<stickers>
 			<category id="txt" priority="1">
-				<categoryName><![CDATA[Text]]></categoryName>
+				<categoryName><![CDATA[Текст]]></categoryName>
 				<sticker id="mule" priority="1" defaultSticker="true" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Mule]]></stickerName>
-					<namePrefix priority="1"><![CDATA[<i>'Mule'</i> ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[<i>'Мулка'</i> ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'MULE'</i>.]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'МУЛКА'</i>.]]></descriptionModification>
 					<imageName zLayer="1" slot="NECK">filly_choker_stickers/mule.svg</imageName>
 					<itemTagsAdded/>
 					<itemTagsRemoved/>
@@ -35,9 +35,9 @@
 				</sticker>
 				<sticker id="filly" priority="2" defaultSticker="false" zLayer="1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Filly]]></stickerName>
-					<namePrefix priority="1"><![CDATA[<i>'Filly'</i> ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[<i>'Кобылка'</i> ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'FILLY'</i>.]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i>'КОБЫЛКА'</i>.]]></descriptionModification>
 					<imageName zLayer="1" slot="NECK">filly_choker_stickers/filly.svg</imageName>
 					<itemTagsAdded>
 						<tag>FILLY_NAMING</tag>
@@ -91,24 +91,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] securely [npc.verb(fasten)] the leather choker around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(fasten)] кожаный чокер на шее [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] securely [npc.verb(fasten)] the leather choker around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] надежно [npc.verb(fasten)] кожаный чокер на шее [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before securely fastening the leather choker around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем надежно [npc.verb(fasten)] кожаный чокер на шее [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] leather choker, before taking it off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] кожаный чокер, прежде чем снять его с [npc.her] шеи.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] leather choker, before taking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] кожаный чокер, прежде чем снять его с [npc2.her] шеи.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] leather choker, before yanking it off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] [npc2.namePos] кожаный чокер, а затем резко сорвать его с [npc2.her] шеи.]]>
     </otherRough>
   </displacementText>
 	

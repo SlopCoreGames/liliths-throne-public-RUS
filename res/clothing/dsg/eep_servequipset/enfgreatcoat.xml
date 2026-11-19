@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the side seam reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве пришита маленькая бирка: «Служебная форма Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>850</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's greatcoat]]></name>
+		<name><![CDATA[Пальто Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's greatcoats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Пальто Enforcer]]></namePlural> 
 
-		<description><![CDATA[A large overcoat commonly issued to Enforcers as a uniform item for inclement weather. Made from heavy wool, it protects the wearer from rain and cold.]]></description> 
+		<description><![CDATA[Объемное пальто, которое обычно выдают Enforcer в качестве униформы для плохой погоды. Сшитое из тяжелой шерсти, оно защищает владельца от дождя и холода.]]></description> 
 
 		<physicalResistance>1</physicalResistance> 
 
@@ -98,49 +98,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arms through the greatcoat's sleeves and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] руки в рукава пальто и [npc.verb(button)] его спереди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the greatcoat's sleeves and [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава пальто и [npc.verb(button)] его спереди.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] arms through the greatcoat's sleeves and hastily [npc.verb(button)] up the front.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] руки в рукава пальто и поспешно [npc.verb(button)] его спереди.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc.her] greatcoat and [npc.verb(pull)] [npc.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] пальто [npc.her] спереди и [npc.verb(pull)] [npc.her] руки из рукавов.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] the front of [npc2.namePos] greatcoat and [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] пальто [npc2.namePos] спереди и [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] руки из рукавов.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on the front of [npc2.namePos] greatcoat and roughly [npc.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] расстегивает пуговицы на передней части пальто [npc2.namePos] и грубо [npc.verb(pull)] [npc2.her] руки из рукавов.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc.namePos] greatcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] пальто [npc.namePos] спереди.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc2.namePos] greatcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] полы [npc2.namePos] шинели.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] hastily [npc.verb(button)] up the front of [npc2.namePos] greatcoat.]]>
+		  <![CDATA[[npc.Name] поспешно [npc.verb(button)] полы [npc2.namePos] шинели.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] greatcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] шинель.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] greatcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] шинель.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on [npc2.namePos] greatcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] пуговицы на [npc2.namePos] шинели.]]>
 		</otherRough>
 	</displacementText>
 	

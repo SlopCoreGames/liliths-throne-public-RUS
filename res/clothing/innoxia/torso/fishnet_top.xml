@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>100</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[fishnet top]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[fishnet tops]]></namePlural> 
-		<description><![CDATA[A small fishnet top that leaves its wearer's stomach completely exposed, while not doing much to conceal anything else, either.]]></description> 
+		<name><![CDATA[сетчатый топ]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[сетчатые топы]]></namePlural> 
+		<description><![CDATA[Крошечный сетчатый топ, который оставляет живот полностью открытым, но при этом почти ничего не скрывает и в остальных местах.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 

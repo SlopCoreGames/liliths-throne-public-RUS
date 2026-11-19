@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<wallName><![CDATA[crates]]></wallName>
-	<deskName><![CDATA[crate]]></deskName>
+	<wallName><![CDATA[ящики]]></wallName>
+	<deskName><![CDATA[ящик]]></deskName>
 	<title/>
 	<consensual><![CDATA[false]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -13,9 +13,7 @@
 	<positionsAvailable/>
 	<publicSex>
 		<isPublic><![CDATA[[#pc.getCell().getPlaceType()!=PLACE_TYPE_innoxia_dominion_sex_shop_factory_door_1]]]></isPublic>
-        <startingDescription><![CDATA[
-			The dolls which are present in this area continue working as though you and the succubus aren't even here...
-		]]></startingDescription>
+        <startingDescription><![CDATA[Куклы, находящиеся в этой зоне, продолжают работать так, будто тебя и суккуба здесь вовсе нет...]]></startingDescription>
         <randomDescriptions enabled="false"/>
 	</publicSex>
 	<characterInformationContainer>

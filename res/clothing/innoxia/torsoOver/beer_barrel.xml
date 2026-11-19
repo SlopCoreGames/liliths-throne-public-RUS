@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>100</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[beer barrel]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[beer barrels]]></namePlural> 
-		<description><![CDATA[A very large wooden barrel, which is being used to hold a beer bitch behind the bar in tavern, 'The Crossed Blades'. Thanks to cutouts in the front and back, the occupant's tits and rear end are left completely exposed.]]></description> 
+		<name><![CDATA[пивная бочка]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[пивные бочки]]></namePlural> 
+		<description><![CDATA[Огромная деревянная бочка, которую в таверне «Скрещенные клинки» используют вместо сосуда для хранения пивной сучки. Благодаря прорезям спереди и сзади, сиськи и задница обитательницы бочки остаются полностью открытыми.]]></description> 
 		<physicalResistance>50</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>TORSO_OVER</slot> 
@@ -112,24 +112,24 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(climb)] into the beer barrel.]]>
+		  <![CDATA[[npc.Name] [npc.verb(climb)] в пивную бочку.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(push)] [npc2.name] into the beer barrel.]]>
+		  <![CDATA[[npc.Name] [npc.verb(push)] [npc2.name] в пивную бочку.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(push)] [npc2.name] into the beer barrel.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(push)] [npc2.name] в пивную бочку.]]>
 		</otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(climb)] out of the beer barrel.]]>
+		  <![CDATA[[npc.Name] [npc.verb(climb)] из пивной бочки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.name] out of the beer barrel.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.name] из пивной бочки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.name] out of the beer barrel.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.name] из пивной бочки.]]>
 		</otherRough>
 	</displacementText>
 </clothing>

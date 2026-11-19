@@ -2,7 +2,7 @@
 <eye>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<coveringType>innoxia_mouse_eye</coveringType>
 	
@@ -14,20 +14,20 @@
 	
 	<defaultPupilShape>ROUND</defaultPupilShape>
 	
-	<name><![CDATA[eye]]></name>
-	<namePlural><![CDATA[eyes]]></namePlural>
+	<name><![CDATA[глаз]]></name>
+	<namePlural><![CDATA[глаза]]></namePlural>
 	
 	<descriptorsMasculine/>
 	
 	<descriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
-		By the time [npc.she] hesitantly [npc.verb(open)] them again, they've changed into mouse-like eyes, with large irises and pupils.
-		<br/>[npc.Name] now [npc.has] [style.boldMouse(mouse-like eyes)] with [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] and [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
+		К тому времени, как [npc.she] нерешительно [npc.verb(open)] их снова, они уже превратились в мышиные глаза с огромными радужками и зрачками.
+		<br/>[npc.Name] теперь [npc.has] [style.boldMouse(mouse-like eyes)] с [style.boldGenericTF([npc.irisShape])], [npc.irisFullDescription(true)] и [style.boldGenericTF([npc.pupilShape])], [npc.pupilFullDescription(true)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.eyePairs] mouse-like eyes, the irises and pupils of which are larger than a regular human's. They have [npc.irisShape], [npc.irisColour(true)] irises, [npc.pupilShape], [npc.pupilColour(true)] pupils, and [npc.scleraColour(true)] sclerae.
+		[npc.SheHasFull] [npc.eyePairs] мышиные глаза, радужки и зрачки которых крупнее, чем у обычного человека. У них [npc.irisShape], [npc.irisColour(true)] радужки, [npc.pupilShape], [npc.pupilColour(true)] зрачки и [npc.scleraColour(true)] склеры.
 	]]></bodyDescription>
 	
 </eye>

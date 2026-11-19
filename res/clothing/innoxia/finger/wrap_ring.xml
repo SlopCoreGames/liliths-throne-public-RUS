@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[wrap ring]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[wrap rings]]></namePlural>
-		<description><![CDATA[Instead of forming a complete circle, the slender band of metal which forms this ring has been wrapped around into a circular shape, with a gap left at the point where each end overlaps.]]></description>
+		<name><![CDATA[кольцо-обруч]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кольца-обручи]]></namePlural>
+		<description><![CDATA[Вместо того чтобы образовывать замкнутый круг, тонкая металлическая полоска этого кольца просто обернута вокруг пальца, оставляя зазор в месте наложения концов друг на друга.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>FINGER</slot>
@@ -44,25 +44,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the wrap ring onto [npc.her] [npc.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] надевает кольцо-обруч на [npc.her] [npc.finger].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the wrap ring onto [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] надевает кольцо-обруч на [npc2.namePos] [npc2.finger].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the wrap ring onto [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] натягивает кольцо-обруч на [npc2.namePos] [npc2.finger].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the wrap ring off [npc.her] [npc.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] снимает кольцо-обруч с [npc.her] [npc.finger].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the wrap ring off [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] снимает кольцо-обруч с [npc2.namePos] [npc2.finger].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] the wrap ring off [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] срывает кольцо-обруч с [npc2.namePos] [npc2.finger].]]>
     </otherRough>
   </displacementText>
   

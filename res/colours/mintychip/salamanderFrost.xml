@@ -7,7 +7,7 @@
 	<metallic>false</metallic>
 	
 	<!-- The name of this colour. -->
-	<name><![CDATA[Celestial Blue]]></name>
+	<name><![CDATA[Небесно-голубой]]></name>
 	
 	<!-- This colour's hex code, which is used when the game is set in the default 'dark' theme. -->
 	<colour>4997D0</colour>

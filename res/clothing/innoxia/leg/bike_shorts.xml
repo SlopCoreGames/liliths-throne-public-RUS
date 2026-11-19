@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>350</value> 
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[bike shorts]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[bike shorts]]></namePlural>
-		<description><![CDATA[A pair of very tight lycra bike shorts, which are commonly also called 'spats'. The elastic material hugs to the wearer's body, showing off their curves.]]></description>
+		<name><![CDATA[велосипедки]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[велосипедки]]></namePlural>
+		<description><![CDATA[Пара очень обтягивающих велосипедок из лайкры, которые часто называют «спатами». Эластичный материал плотно облегает тело, подчеркивая все изгибы.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -61,25 +61,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(step)] into the bike shorts, before pulling them up to fit around [npc.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(step)] в велосипедки, а затем натягивает их на талию [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] to step into the bike shorts, before pulling them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(get)] [npc2.name] наступить в велосипедки, после чего натягивает их на талию [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] to step into the bike shorts, before yanking them up to fit around [npc2.her] waist.]]>
+      <![CDATA[[npc.Name] [npc.verb(force)] [npc2.name] наступить в велосипедки, а затем резко натягивает их на талию [npc2.her].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc.her] bike shorts, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] велосипедки [npc.her] вниз, прежде чем стянуть их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] down [npc2.namePos] bike shorts, before slipping them off.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] велосипедки [npc2.namePos] вниз, прежде чем стянуть их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] down [npc2.namePos] bike shorts, before yanking them off.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] велосипедки [npc2.namePos] вниз, а затем сдергивает их.]]>
     </otherRough>
   </displacementText>
 	

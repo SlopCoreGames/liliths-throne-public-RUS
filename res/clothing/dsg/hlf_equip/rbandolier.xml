@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<authorTag><![CDATA['MFD by DSG Threadworks' has been printed onto the inside of the bandolier's backing.]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне подкладки бандольера напечатано: 'Изготовлено DSG Threadworks'.]]></authorTag>
 		<value>500</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name appendColourName="true"><![CDATA[canvas bandolier]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[canvas bandoliers]]></namePlural>
-		<description><![CDATA[A messenger-style bandolier made from heavy cotton fabric with nine pouches designed for long and thin magazines.]]></description>
+		<name appendColourName="true"><![CDATA[холщовый бандольеер]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[холщовые бандольееры]]></namePlural>
+		<description><![CDATA[Бандольеер в стиле сумки-посла, сделанный из плотной хлопковой ткани; оснащен девятью подсумками для длинных и тонких магазинов.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -53,25 +53,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the bandolier and securely [npc.verb(tighten)] the strap around [npc.her] shoulder.]]>
+			<![CDATA[[npc.Name] [npc.verb(надевает)] бандольеер и плотно [npc.verb(затягивает)] ремень на плече [npc.her].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(put)] the [npc.verb(wrap)] the bandolier around [npc2.name] and [npc.verb(tighten)] the strap around [npc2.her] shoulder.]]>
+			<![CDATA[[npc.Name] [npc.verb(накидывает)] бандольеер на [npc2.name] и [npc.verb(затягивает)] ремень на плече [npc2.her].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(shove)] the bandolier onto [npc2.name] and [npc.verb(yank)] the strap around [npc2.her] shoulder.]]>
+			<![CDATA[[npc.Name] [npc.verb(натягивает)] бандольеер на [npc2.name] и [npc.verb(дергает)] ремень на плече [npc2.her].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the bandolier's strap from [npc.her] shoulder and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(ослабляет)] ремень бандольера на плече [npc.her] и [npc.verb(снимает)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(loosen)] the bandolier's strap from [npc2.namePos] shoulder and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(ослабляет)] ремень бандольера на плече [npc2.namePos] и [npc.verb(снимает)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(tears)] the bandolier from [npc2.namePos] torso.]]>
+			<![CDATA[[npc.Name] [npc.verb(срывает)] бандольеер с торса [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

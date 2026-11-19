@@ -2,7 +2,7 @@
 <tail>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<coveringType>innoxia_pig_fur</coveringType>
 	
@@ -21,8 +21,8 @@
 	<determiner><![CDATA[]]></determiner>
 	<determinerPlural><![CDATA[]]></determinerPlural> 
 	
-	<name><![CDATA[tail]]></name>
-	<namePlural><![CDATA[tails]]></namePlural> 
+	<name><![CDATA[хвост]]></name>
+	<namePlural><![CDATA[хвосты]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>pig-like</descriptor>
@@ -33,23 +33,22 @@
 		<descriptor>curly</descriptor>
 	</descriptorsFeminine>
 	
-	<tipName><![CDATA[tip]]></tipName>
-	<tipNamePlural><![CDATA[tips]]></tipNamePlural>
+	<tipName><![CDATA[кончик]]></tipName>
+	<tipNamePlural><![CDATA[кончики]]></tipNamePlural>
 	<tipDescriptorsMasculine/>
 	<tipDescriptorsFeminine/>
 	
 	<transformationDescription><![CDATA[
 		#IF(npc.getTailCount()==1)
-			A curly, pig-like tail sprouts from just above [npc.her] ass, rapidly growing in size until it's about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] no control over it whatsoever.
-			<br/>[npc.Name] now [npc.has] a [style.boldPig(curly, pig-like tail)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
+			Прямо над [npc.her] задницей пробивается кудрявый свиной хвостик, который стремительно растет, пока не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] совершенно не может его контролировать.
+			<br/>[npc.Name] теперь [npc.has] [style.boldPig(кудрявый свиной хвостик)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
 		#ELSE
-			[npc.TailCount] curly, pig-like tails sprout from just above [npc.her] ass, rapidly growing in size until they're each about [npc.tailLength] long. [npc.She] quickly [npc.verb(realise)] that [npc.she] [npc.has] no control over them whatsoever.
-			<br/>[npc.Name] now [npc.has] [npc.tailCount] [style.boldPig(curly, pig-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].
-		#ENDIF
+[npc.TailCount] кудрявые свиные хвостики прорастают чуть выше [npc.her] задницы, стремительно увеличиваясь в размерах, пока каждый из них не достигнет примерно [npc.tailLength] в длину. [npc.She] быстро [npc.verb(realise)], что [npc.she] [npc.has] совершенно не может ими управлять.
+<br/>[npc.Name] теперь [npc.has] [npc.tailCount] [style.boldPig(curly, pig-like tails)], [npc.materialDescriptor] [npc.tailFullDescription(true)].		#ENDIF
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		Growing out from just above [npc.her] ass, [npc.sheHasFull]
+		Растущие прямо над [npc.her] задницей, [npc.sheHasFull]
 		#IF(npc.getTailCount()==1)
 			 a #IF(npc.isTailFeral()) [style.colourFeral(feral)],#ENDIF curly, [npc.tailColour(true)] pig tail.
 		#ELSE

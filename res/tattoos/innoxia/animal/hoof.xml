@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[horse-shoe]]></name>
+		<name><![CDATA[подкова]]></name>
 		
-		<description><![CDATA[A stylised silhouette of a horse shoe.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which depicts a stylised silhouette of a horse shoe]]></bodyOverviewDescription> 
+		<description><![CDATA[Стилизованный силуэт подковы.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка в виде стилизованного силуэта подковы]]></bodyOverviewDescription> 
 		
 		<imageName>hoof.svg</imageName> 
 		

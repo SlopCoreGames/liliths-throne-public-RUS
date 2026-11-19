@@ -2,7 +2,7 @@
 <breast>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<coveringType>innoxia_panther_fur</coveringType>
 	
@@ -19,18 +19,18 @@
 	<descriptorsFlat/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldPanther(panther-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldPanther(panther milk)].
+		Теперь у [npc.She] [npc.has] [style.boldPanther(пантероподобные)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldPanther(пантерье молоко)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] panther-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] пантероподобно, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldPanther(panther-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldPanther(panther milk)].
+		Теперь у [npc.She] [npc.has] [style.boldPanther(пантероподобные)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldPanther(пантерье молоко)].
 	]]></crotchBoobsTransformationDescription>
 	
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] panther-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] пантероподобно, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

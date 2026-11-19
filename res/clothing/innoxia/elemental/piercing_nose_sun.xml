@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>600</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[sun nose stud]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[sun nose studs]]></namePlural>
-		<description><![CDATA[A nose stud in the shape of a sun. It is typically sold pre-enchanted with effects that boost the wearer's arcane fire damage and resistance.]]></description>
+		<name><![CDATA[солнечный гвоздик в носу]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[солнечные гвоздики в носу]]></namePlural>
+		<description><![CDATA[Серьга в нос в форме солнца. Обычно продается уже зачарованной: она увеличивает урон огнем Арканы и сопротивление к нему у владельца.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>PIERCING_NOSE</slot> 
@@ -49,25 +49,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the sun stud into [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] солнечный гвоздик в [npc.her] [npc.nose] прокол.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the sun stud into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] солнечный гвоздик в [npc2.namePos] [npc2.nose] прокол.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] the sun stud into [npc2.namePos] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] солнечный гвоздик в [npc2.namePos] [npc2.nose] прокол.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] sun stud out of [npc.her] [npc.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] солнечный гвоздик из [npc.her] [npc.nose] прокола.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] sun stud out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] солнечный гвоздик из [npc2.her] [npc2.nose] прокола.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] sun stud out of [npc2.her] [npc2.nose] piercing.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] [npc2.namePos] солнечный гвоздик из [npc2.her] [npc2.nose] прокола.]]>
     </otherRough>
   </displacementText>
 	

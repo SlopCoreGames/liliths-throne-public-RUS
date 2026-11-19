@@ -9,7 +9,7 @@
 	
 	<namePrefix/>
 	<namePostfix/>
-	<nameOverride><![CDATA[Binding of the bimbo femboy]]></nameOverride>
+	<nameOverride><![CDATA[Оковы бимбо-фембоя]]></nameOverride>
 	
 	<conditionalPreParsing><![CDATA[
 		[#flags.setInt('bimboSeal', RND.nextInt(100))]

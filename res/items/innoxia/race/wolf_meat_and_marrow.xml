@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>80</value> 
 		<determiner><![CDATA[a package of]]></determiner>
-		<name><![CDATA[Meat and Marrow]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Meat and Marrows]]></namePlural>
-		<description><![CDATA[A package of 'Meat and Marrow', which consists of a slab of some sort of raw meat, wrapped in grease-proof paper and tied up with brown string.]]></description> 
+		<name><![CDATA[Мясо и костный мозг]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Мясо и костный мозг]]></namePlural>
+		<description><![CDATA[Упаковка «Мяса и костного мозга», состоящая из куска какого-то сырого мяса, завернутого в пергаментную бумагу и перевязанного коричневой бечевкой.]]></description> 
 		
 		<useDescriptor>eat</useDescriptor>
 		
@@ -31,16 +31,16 @@
 		<enchantmentEffectId>RACE</enchantmentEffectId>
 		
 		<effectTooltipLines>
-			<line><![CDATA[[style.boldGood(Restores)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
-			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(5)] to 'potion effects']]></line>
-			<line><![CDATA[If muscles are less than [style.colourMuscleThree('muscular')], increases muscles by 1]]></line>
+			<line><![CDATA[[style.boldGood(Восстанавливает)] 10% [style.boldHealth([#ATTRIBUTE_HEALTH_MAXIMUM.getName()])]]]></line>
+			<line><![CDATA[[#ATTRIBUTE_MAJOR_PHYSIQUE.getFormattedValue(5)] к «эффектам зелий»]]></line>
+			<line><![CDATA[Если мышцы менее [style.colourMuscleThree('muscular')], увеличивает мышцы на 1]]></line>
 		</effectTooltipLines>
 		
 		<applyEffects><![CDATA[
 			[##npc.incrementHealth(npc.getAttributeValue(ATTRIBUTE_HEALTH_MAXIMUM)/10)]
 			
 			<p style='margin-bottom:0; padding-bottom:0;'>
-				[npc.Name] [npc.verb(start)] to feel a lot stronger...
+				[npc.Name] [npc.verb(start)] почувствовать прилив сил...
 			</p>
 			[#npc.addPotionEffect(ATTRIBUTE_MAJOR_PHYSIQUE, 5)]
 			#IF(npc.getMuscleValue()<60)
@@ -58,12 +58,8 @@
 	</coreAttributes>
 
 	<useDescriptions>
-		<selfUse><![CDATA[
-		[npc.Name] [npc.verb(untie)] the package's brown string, and after peeling back the grease-proof paper, [npc.verb(bring)] the now-exposed slab of Meat and Marrow up to [npc.her] mouth. A rich, bloody smell rises to fill [npc.her] nostrils, and [npc.she] [npc.verb(find)] [npc.herself] drooling at the thought of eating the raw meat. Without further thought, [npc.she] greedily [npc.verb(devour)] the dripping flesh, licking [npc.her] fingers clean after rapidly finishing [npc.her] impromptu meal.
-		]]></selfUse>
-		<otherUse><![CDATA[
-		[npc.Name] [npc.verb(untie)] the package's brown string, and after peeling back the grease-proof paper, [npc.verb(bring)] the now-exposed slab of Meat and Marrow up to [npc2.namePos] mouth. A rich, bloody smell rises to fill [npc2.her] nostrils, and [npc2.she] [npc2.verb(find)] [npc2.herself] drooling at the thought of eating the raw meat. Without further thought, [npc2.she] greedily [npc2.verb(devour)] the dripping flesh, licking [npc2.her] fingers clean after rapidly finishing [npc2.her] impromptu meal.
-		]]></otherUse>
+		<selfUse><![CDATA[[npc.Name] [npc.verb(untie)] коричневую верёвку на свертке, а затем, развернув пергаментную бумагу, [npc.verb(bring)] обнажённый кусок мяса с костным мозгом к [npc.her] рту. Насыщенный кровавый запах наполняет [npc.her] ноздри, и [npc.she] [npc.verb(find)] [npc.herself] пускает слюни при одной мысли о поедании сырого мяса. Не раздумывая, [npc.she] жадно [npc.verb(devour)] сочащуюся плоть, а затем слизывает остатки с [npc.her] пальцев, быстро расправившись с этой импровизированной трапезой [npc.her].]]></selfUse>
+		<otherUse><![CDATA[[npc.Name] [npc.verb(untie)] коричневую верёвку на свертке, и, развернув пергаментную бумагу, [npc.verb(bring)] обнажённый кусок мяса с костным мозгом к [npc2.namePos] рту. Насыщенный кровавый запах наполняет [npc2.her] ноздри, и [npc2.she] [npc2.verb(find)] [npc2.herself] пускающим слюнки при одной мысли о поедании сырого мяса. Не раздумывая, [npc2.she] жадно [npc2.verb(devour)] сочащуюся плоть, а затем слизывает остатки с [npc2.her] пальцев, стремительно расправившись с этой импровизированной трапезой [npc2.her].]]></otherUse>
 	</useDescriptions>
 
 	

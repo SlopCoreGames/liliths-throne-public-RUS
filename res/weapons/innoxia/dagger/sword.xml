@@ -10,11 +10,11 @@
 		
 		<determiner><![CDATA[]]></determiner>
 		
-		<name><![CDATA[SWORD dagger]]></name>
+		<name><![CDATA[Меч-кинжал]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[SWORD daggers]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Мечи-кинжалы]]></namePlural> 
 		
-		<description><![CDATA[A double-edged fighting knife with a foil grip, issued to SWORD Enforcers. Its tapered, sharply pointed blade is made for thrusting and stabbing attacks. This particular dagger is a rare first pattern example, issued from 1976-1977.]]></description> 
+		<description><![CDATA[Двусторонний боевой нож с гардой-фойлом, выдаваемый Enforcer из подразделения SWORD. Его сужающееся, остро заточенное лезвие предназначено для колющих и режущих ударов. Данный экземпляр — редкий образец первой модели, выпускавшийся в 1976–1977 годах.]]></description> 
 		
 		<attackDescriptor>stab</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] dagger at [npc.her] hip and releases the snap fastener on the retaining strap so that [npc.she] may draw it at a moment's notice.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(position)] [npc.her] кинжал на [npc.her] бедре и расстегивает застежку на удерживающем ремне, чтобы [npc.she] мог в любой момент его выхватить.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] dagger, before putting it away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(sheath)] [npc.her] кинжал, прежде чем убрать его.]]></unequipText>
 		
 		<imageName>sword_sheathed.svg</imageName> 
 		
@@ -71,27 +71,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(thrust)] [npc.her] dagger at [npc2.name], grinning as the ethereal arcane blade pierces [npc2.her] body!
+		[npc.Name] [npc.verb(thrust)] [npc.her] кинжал в [npc2.name], ухмыляясь, когда эфирное аркана-лезвие пронзает [npc2.her] тело!
 		]]></hitText>
 		<hitText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] dagger, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(see)] the ethereal blade travel straight into [npc2.her] body!
+		Нанося удар по [npc2.name] с помощью [npc.her] кинжала, [npc.name] [npc.verb(grin)], когда [npc.she] [npc.verb(see)], как эфирное лезвие вонзается прямо в [npc2.her] тело!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(thrust)] at [npc2.name] with [npc.her] dagger, causing [npc2.herHim] to stagger back as the ethereal blade stabs right into [npc2.her] chest!
+		[npc.Name] [npc.verb(thrust)] [npc2.name] с помощью [npc.her] кинжала, заставляя [npc2.herHim] пошатнуться, когда эфирное лезвие вонзается прямо в [npc2.her] грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(thrust)] [npc.her] dagger at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(thrust)] [npc.her] кинжал в [npc2.name], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] dagger, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Нанося удар по [npc2.name] с помощью [npc.her] кинжала, [npc.name] [npc.verb(let)] вырвать разочарованный крик, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
-		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(thrust)] at [npc2.name] with [npc.her] dagger, but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[Сделав быстрый шаг вперед, [npc.name] [npc.verb(thrust)] в [npc2.name] с [npc.her] кинжалом, но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 </weapon>

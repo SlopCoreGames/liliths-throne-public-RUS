@@ -2,14 +2,14 @@
 <ear>
 	<race>innoxia_badger</race>
 	
-	<transformationName><![CDATA[badger]]></transformationName>
+	<transformationName><![CDATA[барсук]]></transformationName>
 	
 	<coveringType>innoxia_badger_fur</coveringType>
 	
 	<tags/>
 	
-	<name><![CDATA[ear]]></name>
-	<namePlural><![CDATA[ears]]></namePlural>
+	<name><![CDATA[ухо]]></name>
+	<namePlural><![CDATA[уши]]></namePlural>
 	
 	<descriptorsMasculine>
 		<descriptor>furry</descriptor>
@@ -23,18 +23,18 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		They quickly take on a distinctly badger-like shape by growing out into stubby ovals.
+		Они быстро принимают отчетливую барсучью форму, разрастаясь в короткие овалы.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-		 A layer of [npc.earFullDescriptionColour] quickly grows to cover them,
+		Слой [npc.earFullDescriptionColour] быстро разрастается, покрывая их,
 		#ELSE
-		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription],
+		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
-		 and as the transformation finishes, [npc.she] experimentally [npc.verb(twitch)] [npc.her] new badger-like ears back and forth.
-		 <br/>[npc.Name] now [npc.has] [style.boldBadger(badger-like ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		 и по завершении трансформации, [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми барсучьими ушами взад-вперед.
+		 <br/>[npc.Name] теперь [npc.has] [style.boldBadger(badger-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] a pair of #IF(npc.isPiercedEar()) pierced,#ENDIF badger-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара #IF(npc.isPiercedEar()) pierced,#ENDIF badger-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

@@ -2,7 +2,7 @@
 <weapon>
 	<coreAttributes>
 		
-		<authorTag><![CDATA[On the underside of the stock, slightly raised lettering reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[На нижней части приклада едва заметны выгравированные буквы: «Официальное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 	
 		<value>5700</value> 
 		
@@ -12,11 +12,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[cryoprism gun]]></name>
+		<name><![CDATA[криопризма]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[cryoprism guns]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[криопризмы]]></namePlural> 
 		
-		<description><![CDATA[Having the longest reach in the Enforcer arsenal, the cryoprism gun uses a [style.colourIce(freezing)] [style.colourLegendary(clear demonstone)] as the active medium of an otherwise normal quad-pumped solid state laser. The result turns a mildly annoying laser beam into a powerful freeze ray with a perfectly flat trajectory.]]></description> 
+		<description><![CDATA[Обладая самой большой дальностью стрельбы в арсенале Enforcer, криопризма использует [style.colourIce(freezing)] [style.colourLegendary(clear demonstone)] в качестве активной среды для обычного четырехканального твердотельного лазера. В результате слегка раздражающий лазерный луч превращается в мощный замораживающий луч с идеально прямой траекторией.]]></description> 
 		
 		<attackDescriptor>shoot</attackDescriptor>
 		
@@ -24,9 +24,9 @@
 		
 		<rarity>EPIC</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(bring)] out the cryoprism and [npc.verb(turn)] the selector switch to the fire position. There is a brief, unnerving hum as the arcane power source inside comes to life.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(достань)] криопризму и [npc.verb(переключи)] селектор в режим огня. Раздается короткий, внушающий тревогу гул — это оживает арканановый источник энергии внутри оружия.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(turn)] the selector switch back to the safe position and [npc.verb(put)] the rifle away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(переключи)] селектор обратно в безопасный режим и [npc.verb(убери)] винтовку.]]></unequipText>
 		
 		<imageName>cryoprism_safe.svg</imageName> 
 		
@@ -47,18 +47,18 @@
 		<effects/>
 		
 		<extraEffects>
-			<effect><![CDATA[[style.boldIce("Freezing Fog")] on critical hit.]]></effect>
+			<effect><![CDATA[[style.boldIce("Замораживающий туман")] при критическом попадании.]]></effect>
 		</extraEffects>
 		
 		<onHitEffect/>
 		
 		<onCriticalHitEffect><![CDATA[
 		#IF (!npc2.hasStatusEffect(SE_FREEZING_FOG))
-			[##npc2.addStatusEffect(SE_FREEZING_FOG, 4)] A [style.boldIce(freezing fog)] settles around [npc2.name]!
+			[##npc2.addStatusEffect(SE_FREEZING_FOG, 4)] Вокруг [npc2.name] оседает [style.boldIce(замораживающий туман)]!
 		#ELSEIF (npc2.hasStatusEffect(SE_FREEZING_FOG) && !npc2.hasStatusEffect(SE_FROZEN))
 			[##npc2.addStatusEffect(SE_FROZEN, 2)]
 			[##npc2.removeStatusEffect(SE_FREEZING_FOG)]
-			The [style.colourIce(fog)] around [npc2.name] flash-freezes [style.boldIce(thin layer of ice)]!
+			[style.colourIce(Туман)] вокруг [npc2.name] мгновенно превращается в [style.boldIce(тонкий слой льда)]!
 		#ENDIF
 		]]></onCriticalHitEffect>
 		
@@ -80,14 +80,12 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. A bright blue beam of light smashes into [npc2.her] aura. A faint trail of snowflakes flutters delicately in the air as the light fades.
+		[npc.Name] [npc.verb(наведи)] [npc2.name] через прицел [npc.her] и [npc.verb(нажми)] на спусковой крючок. Яркий синий луч света врезается в ауру [npc2.her]. Когда свет гаснет, в воздухе деликатно кружится едва заметный шлейф снежинок.
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(line)] [npc2.name] up in [npc.her] sights and [npc.verb(pull)] the trigger. The shot goes wide! The beam uselessly creates a large patch of ice some distance away.
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(line)] [npc2.name] прицеливается в [npc.her] и [npc.verb(pull)] затвор. Выстрел уходит в сторону! Луч бесполезно выжигает на некотором расстоянии огромный ледяной пласт.]]></missText>
 	</missDescriptions>
 	
 </weapon>

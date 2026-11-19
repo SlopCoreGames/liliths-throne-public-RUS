@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>200</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[male glyph earring]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[male glyph earrings]]></namePlural>
-		<description><![CDATA[Freely-moving hinged icons of a male glyph hang from these earrings.]]></description>
+		<name><![CDATA[мужская серьга с глифом]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[мужские серьги с глифами]]></namePlural>
+		<description><![CDATA[С этих серег свисают свободно подвижные шарнирные иконки мужского глифа.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>MASCULINE</femininity>
 		<slot>PIERCING_EAR</slot> 
@@ -16,7 +16,7 @@
 		
 		<stickers>
 			<category id="glyph_shape" priority="1">
-				<categoryName><![CDATA[Glyph shape]]></categoryName>
+				<categoryName><![CDATA[Форма глифа]]></categoryName>
 				<sticker id="circle" priority="1" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[Circle]]></stickerName>
 					<namePrefix/>
@@ -72,25 +72,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the earrings into [npc.her] [npc.ears].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] серьги в [npc.her] [npc.ears].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the earrings into [npc2.namePos] [npc2.ears].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] серьги в [npc2.namePos] [npc2.ears].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(clip)] the earrings into [npc2.namePos] [npc2.ears].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(clip)] серьги в [npc2.namePos] [npc2.ears].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] earrings and [npc.verb(take)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] серьги и [npc.verb(take)] их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] earrings and [npc.verb(take)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] серьги и [npc.verb(take)] их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] earrings and roughly [npc.verb(pull)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] серьги и грубо [npc.verb(pull)] их.]]>
     </otherRough>
   </displacementText>
 	

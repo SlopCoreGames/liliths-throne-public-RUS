@@ -2,7 +2,7 @@
 <penis>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<coveringType>PENIS</coveringType>
 	
@@ -11,17 +11,17 @@
 	<additionalTransformationEffect/>
 	
 	<namesMasculine>
-		<name><![CDATA[pig-]]></name>
+		<name><![CDATA[свинской-]]></name>
 	</namesMasculine>
 	<namesPluralMasculine>
-		<name><![CDATA[pig-]]></name>
+		<name><![CDATA[свинской-]]></name>
 	</namesPluralMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[pig-]]></name>
+		<name><![CDATA[свинской-]]></name>
 	</namesFeminine>
 	<namesPluralFeminine>
-		<name><![CDATA[pig-]]></name>
+		<name><![CDATA[свинской-]]></name>
 	</namesPluralFeminine>
 	
 	<descriptors/>
@@ -32,12 +32,12 @@
 	</defaultPenetrationModifiers>
 	
 	<transformationDescription><![CDATA[
-		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick sheath suddenly grows around the base of [npc.her] shaft, before the head suddenly tapers down.
-		<br/>[npc.She] now [npc.has] a [style.boldPig(pig-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		Непроизвольно простонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно разрастается толстая кожа, а головка резко сужается.
+		<br/>[npc.She] теперь [npc.has] [style.boldPig(свиной пенис)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
 		<br/>[npc.She] [npc.has] [style.boldPig([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE pig#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldPig(pig cum)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] pig cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
-	]]></bodyDescription>
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] свиной член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+		]]></bodyDescription>
 </penis>

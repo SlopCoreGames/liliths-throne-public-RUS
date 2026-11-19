@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>0</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[key-chain necklace]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[key-chain necklaces]]></namePlural>
-		<description><![CDATA[A necklace made out of the three keys you acquired from the imp fortresses in Submission.]]></description>
+		<name><![CDATA[ожерелье-брелок]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[ожерелья-брелоки]]></namePlural>
+		<description><![CDATA[Ожерелье, сделанное из трех ключей, которые ты добыла в крепостях бесов в Submission.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -64,47 +64,47 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the key-chain around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] ожерелье-брелок на шею [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the key-chain around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] ожерелье-брелок на шею [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before draping the key-chain around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем накинуть ожерелье-брелок на шею [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] key-chain, before lifting it up and over [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] ожерелье-брелок [npc.her], прежде чем накинуть его сверху на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of the key-chain, before lifting it up and over [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] ожерелье-брелок, прежде чем накинуть его сверху на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(grab)] the key-chain, before yanking it up and over [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(grab)] ожерелье-брелок, прежде чем резко накинуть его на голову [npc2.namePos].]]>
     </otherRough>
   </displacementText>
 	
   <replacementText slot="WRIST" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] key-chain, before wrapping it around [npc.her] wrist.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] ожерелье-брелок [npc.her], прежде чем обернуть его вокруг запястья [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of the key-chain, before wrapping it around [npc2.namePos] wrist.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] связку ключей, а затем обматывает её вокруг запястья [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.namePos] wrist, wrapping the key-chain tightly around it.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.namePos] за запястье, туго обматывая вокруг него связку ключей.]]>
     </otherRough>
   </replacementText>
   <displacementText slot="WRIST" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] key-chain, unwrapping it from around [npc.her] wrist.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)]сь за [npc.her] связку ключей, разматывая её с запястья [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] hold of [npc2.namePos] key-chain, unwrapping it from around [npc2.her] wrist.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)]сь за [npc2.namePos] связку ключей, разматывая её с запястья [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(grab)] [npc2.namePos] key-chain, ripping it from [npc2.her] wrist.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(grab)] [npc2.namePos] за связку ключей, срывая её с запястья [npc2.her].]]>
     </otherRough>
   </displacementText>
 </clothing>

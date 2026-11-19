@@ -4,17 +4,17 @@
 	
 	<applyRaceChanges/>
 	
-	<name><![CDATA[mouse-morph]]></name>
-	<namePlural><![CDATA[mouse-morphs]]></namePlural>
+	<name><![CDATA[мышиный морф]]></name>
+	<namePlural><![CDATA[мышиные морфы]]></namePlural>
 	
 	<nameFeral>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[mouse]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[мышь]]></name>
 	</nameFeral>
 	<nameFeralPlural>
-		<name legConfiguration="QUADRUPEDAL"><![CDATA[mouse]]></name>
+		<name legConfiguration="QUADRUPEDAL"><![CDATA[мышь]]></name>
 	</nameFeralPlural>
 	
-	<defaultTransformName><![CDATA[mouse]]></defaultTransformName>
+	<defaultTransformName><![CDATA[мышь]]></defaultTransformName>
 	
 	<colour>innoxia_mouse</colour>
 	

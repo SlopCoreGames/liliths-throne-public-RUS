@@ -9,7 +9,7 @@
 	
 	<possibleEncounters>
 		<encounter>
-			<name><![CDATA[rental parental figure detected]]></name>
+			<name><![CDATA[обнаружена фигура опекуна для аренды]]></name>
 			<chanceToTrigger opportunisticEncounter="false"><![CDATA[
 				#IF(pc.getClothingInSlot(IS_TORSO_UNDER)!=null
 					&& !pc.getInventorySlotsConcealed(npc).containsKey(IS_TORSO_UNDER)

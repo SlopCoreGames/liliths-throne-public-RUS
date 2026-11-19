@@ -10,16 +10,16 @@
 		<oneShotWeaponChanceToRecoverAfterCombat>100</oneShotWeaponChanceToRecoverAfterCombat>
 		
 		<determiner><![CDATA[a]]></determiner>
-		<name appendDamageName="false"><![CDATA[ball of yarn]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[balls of yarn]]></namePlural>
-		<description><![CDATA[A long, continuous length of interlocked woollen fibres, which has been wrapped up into a tight ball.]]></description>
+		<name appendDamageName="false"><![CDATA[клубок шерсти]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[клубки шерсти]]></namePlural>
+		<description><![CDATA[Длинная, непрерывная нить переплетенных шерстяных волокон, плотно смотанная в тугой шар.]]></description>
 		<attackDescriptor>throw</attackDescriptor>
 		<attackDescriptionPrefix>throw ball of yarn at</attackDescriptionPrefix>
 		<attackTooltipDescription>Throw the ball of yarn at [npc2.name].</attackTooltipDescription>
 		<rarity>COMMON</rarity>
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(take)] hold of [npc.her] ball of yarn and [npc.verb(prepare)] to throw it.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] ball of yarn away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(take)] [npc.her] клубок шерсти и [npc.verb(prepare)] бросить его.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] клубок шерсти на место.]]></unequipText>
 		
 		<imageName>yarn.svg</imageName> 
 		<imageEquippedName/>
@@ -39,13 +39,13 @@
 		
 		<effects/>
 		<extraEffects>
-			<effect><![CDATA[[style.colourExcellent(Subdues)] [style.colourTfGreater(greater)] [style.colourCat(cat-morphs)]]]></effect>
+			<effect><![CDATA[[style.colourExcellent(Усмиряет)] [style.colourTfGreater(превосходящий)] [style.colourCat(кот-морфы)]]]></effect>
 		</extraEffects>
 		
 		<onHitEffect><![CDATA[
 		#IF(npc2.getRace()==RACE_CAT_MORPH && npc2.getRaceStage()==RACE_STAGE_GREATER)
 			[##npc2.setHealth(0)]
-			<i>[npc2.Name] immediately [npc2.verb(fix)] [npc2.her] gaze on the ball of yarn as it rolls across the floor. After lowering [npc2.herself] down into a stalking posture, [npc2.she] suddenly [npc2.verb(pounce)] on the yarn, and after letting out a happy meow, [npc2.she] [npc2.verb(start)] pawing and playing with it, leaving [npc2.herHim] completely vulnerable and [style.italicsExcellent(utterly defeated)]!</i>
+			<i>[npc2.Name] тут же [npc2.verb(fix)] [npc2.her] взгляд на катящемся по полу клубке шерсти. Опустив [npc2.herself] в охотничью стойку, [npc2.she] внезапно [npc2.verb(pounce)] на клубок и, издав радостное мяуканье, [npc2.she] [npc2.verb(start)] лапать и играть с ним, оставляя [npc2.herHim] совершенно беззащитным и [style.italicsExcellent(полностью побежденным)]!</i>
 		#ENDIF
 		]]></onHitEffect>
 		
@@ -72,31 +72,29 @@
 
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Hurling [npc.her] ball of yarn at [npc2.name], [npc.name] [npc.verb(manage)] to hit [npc2.herHim] square in the chest!
+		Зашвырнув [npc.her] клубок шерсти в [npc2.name], [npc.name] [npc.verb(manage)] попасть прямо в [npc2.herHim] грудь!
 		]]></hitText>
 		<hitText><![CDATA[
-		Throwing [npc.her] ball of yarn at [npc2.name], [npc.name] [npc.verb(manage)] to strike [npc2.herHim] on the [npc.arm(true)]!
+		Зашвырнув [npc.her] клубок шерсти в [npc2.name], [npc.name] [npc.verb(manage)] угодить [npc2.herHim] в [npc.arm(true)]!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(launch)] [npc.her] ball of yarn at [npc2.name] and [npc.verb(succeed)] in hitting [npc2.herHim]!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(launch)] [npc.her] клубок шерсти в [npc2.name] и [npc.verb(succeed)] попасть в [npc2.herHim]!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Hurling [npc.her] ball of yarn at [npc2.name], [npc.name] [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.her] швыряет клубок пряжи в [npc2.name], [npc.name] [npc.verb(end)] в ярости из-за промаха по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Throwing [npc.her] ball of yarn at [npc2.name], [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		[npc.her] бросает клубок пряжи в [npc2.name], [npc.name] [npc.verb(let)] разочарованно вскрикивает, когда [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
-		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(launch)] [npc.her] ball of yarn at [npc2.name], but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[Сделав быстрый шаг вперед, [npc.name] [npc.verb(launch)] [npc.her] клубок пряжи в [npc2.name], но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 	<oneShotEndTurnRecoveryDescriptions>
 		<recoveryText><![CDATA[
-			The ball of yarn bounces back towards [npc.name], allowing [npc.herHim] to pick it up and reuse it!
+			Клубок пряжи отскакивает назад к [npc.name], позволяя [npc.herHim] подобрать его и использовать снова!
 		]]></recoveryText>
 	</oneShotEndTurnRecoveryDescriptions>
 	

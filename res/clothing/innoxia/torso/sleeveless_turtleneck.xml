@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>350</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[sleeveless turtleneck]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[sleeveless turtlenecks]]></namePlural> 
-		<description><![CDATA[A feminine sleeveless sweater, with a high turtleneck.]]></description> 
+		<name><![CDATA[водолазка без рукавов]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[водолазки без рукавов]]></namePlural> 
+		<description><![CDATA[Женственный свитер без рукавов с высоким горлом.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>TORSO_UNDER</slot> 

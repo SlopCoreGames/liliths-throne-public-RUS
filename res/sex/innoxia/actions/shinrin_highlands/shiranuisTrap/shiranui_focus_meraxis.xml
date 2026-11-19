@@ -32,9 +32,9 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Focus on Meraxis]]></title>
+	<title><![CDATA[Сосредоточиться на Мераксис]]></title>
 	<tooltip><![CDATA[
-		Sink your [shiranui.cock+] down Meraxis's throat.
+		Засадить свой [shiranui.cock+] глубоко в глотку Мераксис.
 	]]></tooltip>
 	<descriptions>
 		<!-- starting this turn -->
@@ -43,7 +43,7 @@
 				[#sex.getPrimaryOngoingActionPerformer(shiranui, PENETRATION_PENIS).isPlayer() || flags.hasFlag(FLAG_innoxia_shiranui_sex_kissing) || flags.hasFlag(FLAG_innoxia_shiranui_sex_cock_worship)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Shiranui commands the leather bindings to turn Meraxis's head to face her, leaving you kissing the [meraxis.race]'s cheek. Lining her [shiranui.cock+] up to Meraxis's lips, the youko pushes forwards, moaning in delight as she sinks her [shiranui.cock+] down her throat.
+				Ширануи приказывает кожаным ремням повернуть голову Мераксис к себе, отчего ты оказываешься лицом к лицу, целуя [meraxis.race] в щеку. Приставив свою [shiranui.cock+] к губам Мераксис, ёко подается вперед, сладострастно стоная, когда ее [shiranui.cock+] погружается ей в самое горло.
 			]]></text>
 		</description>
 		<!-- ongoing -->
@@ -52,7 +52,7 @@
 				[#!sex.getPrimaryOngoingActionPerformer(shiranui, PENETRATION_PENIS).isPlayer() && !flags.hasFlag(FLAG_innoxia_shiranui_sex_kissing) && !flags.hasFlag(FLAG_innoxia_shiranui_sex_cock_worship)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Shiranui continues to moan in delight as she sinks her [shiranui.cock+] down Meraxis's throat.
+				Ширануи продолжает сладострастно стонать, засаживая свой [shiranui.cock+] глубоко в глотку Мераксис.
 			]]></text>
 		</description>
 	</descriptions>

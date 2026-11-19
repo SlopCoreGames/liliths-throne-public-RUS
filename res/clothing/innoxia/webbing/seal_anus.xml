@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>0</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[asshole web-seal]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[asshole web-seals]]></namePlural>
-    <description><![CDATA[A thick layer of sticky spider-webbing has been shot all over [npc.namePos] [npc.asshole+], completely sealing it and preventing it from being penetrated!]]></description>
+    <name><![CDATA[паутина-печать для ануса]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[паутины-печати для ануса]]></namePlural>
+    <description><![CDATA[Толстый слой липкой паутины окутывает [npc.namePos] [npc.asshole+], полностью запечатывая его и не давая проникнуть внутрь!]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -55,25 +55,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her] spinneret to quickly shoot a thick binding of spider-webbing all over [npc.her] [npc.asshole+].]]>
+      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her], чтобы быстро выстрелить густой путами паутины прямо на [npc.her] [npc.asshole+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her] spinneret to quickly shoot a thick binding of spider-webbing all over [npc2.namePos] [npc2.asshole+].]]>
+      <![CDATA[[npc.Name] [npc.verb(use)] [npc.her], чтобы быстро выстрелить густой путами паутины прямо на [npc2.namePos] [npc2.asshole+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(use)] [npc.her] spinneret to quickly shoot a thick binding of spider-webbing all over [npc2.namePos] [npc2.asshole+].]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(use)] [npc.her], чтобы быстро выстрелить густой путами паутины прямо на [npc2.namePos] [npc2.asshole+].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tear)] off the webbing which was covering [npc.her] [npc.asshole] and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] [npc.verb(tear)] паутину, покрывавшую [npc.her] [npc.asshole], и [npc.verb(throw)] её прочь.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tear)] off the webbing which was covering [npc2.namePos] [npc2.asshole] and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] [npc.verb(tear)] паутину, покрывавшую [npc2.namePos] [npc2.asshole], и [npc.verb(throw)] её прочь.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] impatiently [npc.verb(tear)] off the webbing which was covering [npc2.namePos] [npc2.asshole] and [npc.verb(throw)] it away.]]>
+      <![CDATA[[npc.Name] нетерпеливо [npc.verb(tear)] паутину, покрывавшую [npc2.namePos] [npc2.asshole], и [npc.verb(throw)] её прочь.]]>
     </otherRough>
   </displacementText>
 

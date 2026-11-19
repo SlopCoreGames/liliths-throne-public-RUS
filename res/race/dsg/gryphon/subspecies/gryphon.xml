@@ -111,38 +111,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[gryphon-morph]]></name>
-			<namePlural><![CDATA[gryphon-morphs]]></namePlural>
-			<singularMaleName><![CDATA[gryphon-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[gryphon-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[gryphon-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[gryphon-girls]]></pluralFemaleName>
+			<name><![CDATA[грифон-морф]]></name>
+			<namePlural><![CDATA[грифон-морфы]]></namePlural>
+			<singularMaleName><![CDATA[грифон-парень]]></singularMaleName>
+			<singularFemaleName><![CDATA[грифон-девушка]]></singularFemaleName>
+			<pluralMaleName><![CDATA[грифоны-парни]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[грифоны-девушки]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic gryphon, known as a 'gryphon-morph' when bipedal, and a 'gryphontaur' when the lower body is that of a typically-oversized feral gryphon.]]></description>
+	<description><![CDATA[Антропоморфный грифон; когда он передвигается на двух ногах, его называют «грифон-морф», а если его нижняя часть тела представляет собой типичное массивное дикое животное — «грифонтавр».]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[anzû]]></name>
-			<namePlural><![CDATA[anzûs]]></namePlural>
-			<singularMaleName><![CDATA[anzû]]></singularMaleName>
-			<singularFemaleName><![CDATA[anzû]]></singularFemaleName>
-			<pluralMaleName><![CDATA[anzûs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[anzûs]]></pluralFemaleName>
+			<name><![CDATA[анзу]]></name>
+			<namePlural><![CDATA[анзу]]></namePlural>
+			<singularMaleName><![CDATA[анзу]]></singularMaleName>
+			<singularFemaleName><![CDATA[анзу]]></singularFemaleName>
+			<pluralMaleName><![CDATA[анзу]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[анзу]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[gryphon]]></feralName>
-		<feralNamePlural><![CDATA[gryphons]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[gryphon]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[gryphon]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[gryphons]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[gryphons]]></feralPluralFemaleName>
+		<feralName><![CDATA[грифон]]></feralName>
+		<feralNamePlural><![CDATA[грифоны]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[грифон]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[грифон]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[грифоны]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[грифоны]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -172,9 +172,7 @@
 	</feralAttributes>
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] gryphon-like body possesses graceful strength befitting a mythological creature, but [npc.her] closeness to the arcane also brings weaknesses.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] грифоноподобное тело обладает грациозной силой, подобающей мифическому существу, но [npc.her] близость к аркане также несет в себе слабости.]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 

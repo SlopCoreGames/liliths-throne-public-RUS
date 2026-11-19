@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[table]]></deskName>
+	<deskName><![CDATA[таблица]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -15,14 +15,14 @@
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
-			A number of the tavern's nearby patrons sit back and enjoy the show that you and [oglixElemental.name] are putting on for them...
+			Несколько завсегдатаев таверны откинулись на спинки стульев, с удовольствием наблюдая за шоу, которое вы с [oglixElemental.name] устроили для них...
 		]]></startingDescription>
 		<randomDescriptions enabled="true">
-			<description><![CDATA[A couple of nearby spectators loudly laugh and cheer at your lewd display.]]></description>
-			<description><![CDATA[You hear someone in the tavern wolf-whistling as they watch you and [oglixElemental.name] go at it.]]></description>
-			<description><![CDATA[Over the sound of laughter and drunken cheers, you somehow manage to hear someone nearby commenting on your performance.]]></description>
-			<description><![CDATA[Cheering and laughing, the crowd which has gathered around you encourage [oglixElemental.name] to give you a good, hard fuck.]]></description>
-			<description><![CDATA[You glance across to see a couple of drunks touching themselves as they watch you and [oglixElemental.name] having sex.]]></description>
+			<description><![CDATA[Пара случайных зрителей громко хохочет и подбадривает вас во время вашего непристойного действа.]]></description>
+			<description><![CDATA[Ты слышишь, как кто-то в таверне заливисто свистит, наблюдая за тем, как ты и [oglixElemental.name] трахаетесь.]]></description>
+			<description><![CDATA[Сквозь шум смеха и пьяных криков тебе удается расслышать, как кто-то неподалеку комментирует твой перформанс.]]></description>
+			<description><![CDATA[Скандируя и смеясь, собравшаяся вокруг тебя толпа подгоняет [oglixElemental.name], призывая ее хорошенько и жестко тебя оттрахать.]]></description>
+			<description><![CDATA[Ты бросаешь взгляд в сторону и видишь парочку пьяниц, которые ласкают себя, глядя на ваш секс с [oglixElemental.name].]]></description>
 		</randomDescriptions>
 	</publicSex>
 	<characterInformationContainer>
@@ -120,11 +120,11 @@
 			<dirtyTalk>
 				<character id="pc">
 					<standard additionToDefault="false">
-						<line><![CDATA[Take your punishment, you bad [pc.girl]!]]></line>
-						<line><![CDATA[Remember this! Remember how good my cock feels!]]></line>
-						<line><![CDATA[This is your punishment!]]></line>
-						<line><![CDATA[You've been a bad [pc.girl]!]]></line>
-						<line><![CDATA[Don't ever forget this!]]></line>
+						<line><![CDATA[Получай свое наказание, паршивая [pc.girl]!]]></line>
+						<line><![CDATA[Запомни это! Запомни, как хорош мой член!]]></line>
+						<line><![CDATA[Это твоя кара!]]></line>
+						<line><![CDATA[Ты была плохой [pc.girl]!]]></line>
+						<line><![CDATA[Никогда об этом не забывай!]]></line>
 					</standard>
 				</character>
 			</dirtyTalk>

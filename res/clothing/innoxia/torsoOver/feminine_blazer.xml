@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[feminine blazer]]></name>
+		<name><![CDATA[женский блейзер]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[feminine blazers]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[женские блейзеры]]></namePlural> 
 		
-		<description><![CDATA[A smart blazer, typically worn as part of a business suit. Its cut is such that is only suitable for feminine figures.]]></description> 
+		<description><![CDATA[Элегантный блейзер, обычно входящий в состав делового костюма. Его крой рассчитан исключительно на женственную фигуру.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

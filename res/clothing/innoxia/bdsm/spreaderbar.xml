@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>450</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[spreader bar]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[spreader bars]]></namePlural>
-		<description><![CDATA[A pair of ankle restraints, attached to one another by a long metal pole. When worn, the wearer's legs are forced open.]]></description>
+		<name><![CDATA[распорка для ног]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[распорки для ног]]></namePlural>
+		<description><![CDATA[Пара манжет для лодыжек, соединенных между собой длинным металлическим стержнем. Когда их надевают, ноги носителя принудительно разводятся в стороны.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>ANDROGYNOUS</femininity> 
 		<slot>ANKLE</slot>
@@ -54,25 +54,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the spreader bar's restraints around [npc.her] ankles and [npc.verb(fasten)] the straps, leaving [npc.her] [npc.legs] spread wide open.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] ремни распорки вокруг лодыжек [npc.her] и [npc.verb(fasten)] пряжки, оставляя [npc.her] [npc.legs] широко разведенными.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(wrap)] the spreader bar's restraints around [npc2.namePos] ankles and [npc.verb(fasten)] the straps, leaving [npc2.her] [npc2.legs] spread wide open.]]>
+      <![CDATA[[npc.Name] [npc.verb(wrap)] ремни распорки вокруг лодыжек [npc2.namePos] и [npc.verb(fasten)] пряжки, оставляя [npc2.her] [npc2.legs] широко разведенными.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(wrap)] the spreader bar's restraints around [npc2.namePos] ankles and tightly [npc.verb(fasten)] the straps, leaving [npc2.her] [npc2.legs] spread wide open.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(wrap)] ремни распорки вокруг лодыжек [npc2.namePos] и туго [npc.verb(fasten)] пряжки, оставляя [npc2.her] [npc2.legs] широко разведенными.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the spreader bar's restraints and [npc.verb(remove)] it from around [npc.her] ankles.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] ремни распорки и [npc.verb(remove)] её с лодыжек [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the restraints on [npc2.namePos] spreader bar and [npc.verb(remove)] it from around [npc2.her] ankles.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] ремни на распорке [npc2.namePos] и [npc.verb(remove)] её с лодыжек [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the restraints on [npc2.namePos] spreader bar and quickly [npc.verb(remove)] it from around [npc2.her] ankles.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] ремни на распорке [npc2.namePos] и быстро [npc.verb(remove)] её с лодыжек [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

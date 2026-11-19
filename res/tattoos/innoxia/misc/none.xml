@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>100</value> 
 		
-		<name><![CDATA[none]]></name>
+		<name><![CDATA[нет]]></name>
 		
-		<description><![CDATA[This tattoo has no particular pattern, and simply displays either writing or a counter.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which lacks any kind of image or pattern]]></bodyOverviewDescription> 
+		<description><![CDATA[У этой татуировки нет особого узора; на ней отображаются лишь надписи или счетчик.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка без какого-либо изображения или узора]]></bodyOverviewDescription> 
 		
 		<imageName>none.svg</imageName> 
 		

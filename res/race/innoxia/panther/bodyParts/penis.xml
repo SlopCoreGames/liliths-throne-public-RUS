@@ -2,7 +2,7 @@
 <penis>
 	<race>innoxia_panther</race>
 	
-	<transformationName><![CDATA[panther]]></transformationName>
+	<transformationName><![CDATA[пантера]]></transformationName>
 	
 	<coveringType>PENIS</coveringType>
 	
@@ -11,17 +11,17 @@
 	<additionalTransformationEffect/>
 	
 	<namesMasculine>
-		<name><![CDATA[panther-]]></name>
+		<name><![CDATA[пантер-]]></name>
 	</namesMasculine>
 	<namesPluralMasculine>
-		<name><![CDATA[panther-]]></name>
+		<name><![CDATA[пантер-]]></name>
 	</namesPluralMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[panther-]]></name>
+		<name><![CDATA[пантер-]]></name>
 	</namesFeminine>
 	<namesPluralFeminine>
-		<name><![CDATA[panther-]]></name>
+		<name><![CDATA[пантер-]]></name>
 	</namesPluralFeminine>
 	
 	<descriptors/>
@@ -32,12 +32,12 @@
 	</defaultPenetrationModifiers>
 	
 	<transformationDescription><![CDATA[
-		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick sheath suddenly grows around the base of [npc.her] shaft. As [npc.she] [npc.verb(pant)] and [npc.verb(gasp)] for air, rows of fleshy little backwards-facing barbs press out all along [npc.her] shaft.
-		<br/>[npc.She] now [npc.has] a [style.boldPanther(panther-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		Невольно издав стон, [npc.name] [npc.verb(feel)], как [npc.her] пенис принимает новую форму, а [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно разрастается толстая оболочка. Пока [npc.she] [npc.verb(pant)] и [npc.verb(gasp)] глотками хватая воздух, вдоль всего [npc.her] ствола проступают ряды плотских маленьких шипов, направленных назад.
+		<br/>[npc.She] теперь [npc.has] [style.boldPanther(пантерский член)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
 		<br/>[npc.She] [npc.has] [style.boldPanther([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldPanther(panther cum)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] panther cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
-	]]></bodyDescription>
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] пантерский член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+		]]></bodyDescription>
 </penis>

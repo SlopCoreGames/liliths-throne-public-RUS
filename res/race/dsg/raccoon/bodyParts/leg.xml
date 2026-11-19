@@ -10,7 +10,7 @@
 	<race>dsg_raccoon</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[raccoon]]></transformationName>
+	<transformationName><![CDATA[енот]]></transformationName>
 	
 	<!-- The id of the material covering this leg.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -47,8 +47,8 @@
 	<!-- The singular and plural name of this leg type.
 	These should be left as 'leg' and 'legs' for standard leg types.
 	The values 'tail/tails', 'tentacle/tentacles' should be used if this leg type is a serpent/fish tail or a collection of tentacles, respectively. -->
-	<name><![CDATA[leg]]></name>
-	<namePlural><![CDATA[legs]]></namePlural> 
+	<name><![CDATA[нога]]></name>
+	<namePlural><![CDATA[ноги]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's leg of this type.
 	Can be left blank. -->
@@ -87,13 +87,13 @@
 	<!-- The description which is shown when a character transforms to obtain this leg type.
 	This description immediately follows a brief description of the leg type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		A layer of raccoon-like fur quickly grows over [npc.her] legs as they shift into a new form. As [npc.her] new fur spreads down to the ends of [npc.her] toes, [npc.her] toenails thicken into sharp claws, and tough leathery pads grow to cover [npc.her] soles, leaving [npc.herHim] with paw-like feet. As the transformation ends, [npc.she] [npc.verb(see)] that [npc.her] new fur smoothly transitions into the [npc.skin] covering the rest of [npc.her] body at [npc.her] upper-thigh.
-		<br/>[npc.Name] now [npc.has] anthropomorphic, [style.boldRaccoon(raccoon-like legs and feet)], which are [npc.materialDescriptor] [npc.legFullDescription].
+		Слой еножьего меха быстро покрывает [npc.her] ноги, пока те принимают новую форму. По мере того как [npc.her] новый мех спускается к самым кончикам [npc.her] пальцев, [npc.her] ногти утолщаются, превращаясь в острые когти, а подошвы [npc.her] покрываются грубыми кожаными подушечками, оставляя [npc.herHim] с лапами вместо ступней. Когда трансформация завершается, [npc.she] [npc.verb(see)], что [npc.her] новый мех плавно переходит в [npc.skin], покрывающий остальную часть [npc.her] тела на уровне [npc.her] бедер.
+		<br/>[npc.Name] теперь [npc.has] антропоморфные, [style.boldRaccoon(еножьи ноги и лапы)], которые являются [npc.materialDescriptor] [npc.legFullDescription].
 	]]></transformationDescription>
 	
 	<!-- How these legs are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.Her] legs are [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], and [npc.her] feet are formed into anthropomorphic raccoon-like paws, complete with sharp claws and tough leathery pads.
+		Ноги [npc.Her] — это [npc.materialCompositionDescriptor] [npc.legFullDescription(true)], а [npc.her] стопы превратились в антропоморфные еножьи лапы с острыми когтями и грубыми кожаными подушечками.
 	]]></bodyDescription>
 	
 </leg>

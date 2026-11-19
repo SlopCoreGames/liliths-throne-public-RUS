@@ -16,13 +16,13 @@
 		<determiner><![CDATA[a]]></determiner>
 		
 		<!-- The name of this weapon. -->
-		<name><![CDATA[metal pipe]]></name>
+		<name><![CDATA[металлическая труба]]></name>
 		
 		<!-- The plural name of this weapon. If pluralByDefault's "false" is changed to "true", then the game will always the plural name when referring to this weapon. -->
-		<namePlural pluralByDefault="false"><![CDATA[metal pipes]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[металлические трубы]]></namePlural> 
 		
 		<!-- The description/lore of this weapon. -->
-		<description><![CDATA[A length of metal pipe, which, for reasons unknown, someone has gone to the trouble of enchanting. Despite its new arcane power, however, it really isn't a particularly effective weapon...]]></description> 
+		<description><![CDATA[Отрезок металлической трубы, которую по каким-то неведомым причинам кто-то удосужился зачаровать. Несмотря на новообретенную силу Арканы, это всё ещё не самый эффективный вид оружия...]]></description> 
 		
 		<!-- How the weapon is used. This should be a single verb, and is used as the title of attacking actions in combat. -->
 		<attackDescriptor>whack</attackDescriptor>
@@ -41,10 +41,10 @@
 		The target "npc" OR "npc1" should be used for the character using the weapon. e.g. If the player is the one attacking (and is called Innoxia), then [npc.Name] will return "Innoxia"
 		The target "npc2" should be used for the character being attacked. e.g. If Brax is the one being attacked, then [npc2.Name] will return "Brax"
 		-->
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] metal pipe, and [npc.verb(prepare)] to use it in combat.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] металлическую трубу и [npc.verb(prepare)] использовать её в бою.]]></equipText>
 		
 		<!-- The description that's used when equipping this weapon. Follow the same guidelines as equipText. -->
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] metal pipe away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] металлическую трубу.]]></unequipText>
 		
 		<!-- The file name of this weapon's image when in the character's inventory. The only supported file type is .svg. I use the free program "Inkscape" to make .svg images for the game. -->
 		<imageName>pipe.svg</imageName> 
@@ -123,27 +123,25 @@
 	<!-- Descriptions that are used when hitting an enemy. One of the hitText values will be randomly selected each time the attacker hits their target. Follow the same guidelines as equipText. -->
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Swinging [npc.her] metal pipe, [npc.name] [npc.verb(manage)] to whack [npc2.name] on the [npc2.arm], which causes [npc2.herHim] to let out a surprised yelp!
+		Взмахивая [npc.her] металлической трубой, [npc.name] [npc.verb(manage)] заехать [npc2.name] по [npc2.arm], отчего [npc2.herHim] издаёт удивлённый вскрик!
 		]]></hitText>
 		<hitText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] metal pipe, [npc.name] [npc.verb(manage)] to land a solid hit on [npc2.her] [npc2.arm]!
+		Нанося удар по [npc2.name] с помощью [npc.her] металлической трубы, [npc.name] [npc.verb(manage)] нанести [npc2.her] [npc2.arm] сочным ударом!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] metal pipe, whacking the heavy end against [npc2.her] shoulder!
+		Сделав быстрый шаг вперёд, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] металлической трубой, обрушивая её тяжёлый конец на [npc2.her] плечо!
 		]]></hitText>
 	</hitDescriptions>
 
 	<!-- Descriptions that are used when missing an enemy. One of the missText values will be randomly selected each time the attacker misses their target. Follow the same guidelines as equipText. -->
 	<missDescriptions>
 		<missText><![CDATA[
-		Thrusting out with [npc.her] metal pipe, [npc.name] [npc.verb(attempt)] to whack [npc2.name] on the [npc2.arm], but [npc.verb(end)] up missing [npc2.herHim]!
+		Выпад с [npc.her] металлической трубой: [npc.name] [npc.verb(attempt)] заехать [npc2.name] по [npc2.arm], но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] metal pipe, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Нанося удар по [npc2.name] с помощью [npc.her] металлической трубы, [npc.name] [npc.verb(let)] разочарованно вскрикнуть, когда [npc.she] [npc.verb(miss)] цель [npc.her]!
 		]]></missText>
-		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] metal pipe, but [npc.she] [npc.verb(miss)] [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] металлической трубой, но [npc.she] [npc.verb(miss)] [npc.her] цель!]]></missText>
 	</missDescriptions>
 	
 </weapon>

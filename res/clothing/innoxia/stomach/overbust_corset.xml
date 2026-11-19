@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[overbust corset]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[overbust corsets]]></namePlural> 
-		<description><![CDATA[A corset that keeps the wearer's stomach nicely shaped, while also covering their breasts. It has a series of laces at the back that are used to tighten it.]]></description> 
+		<name><![CDATA[корсет с открытой грудью]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[корсеты с открытой грудью]]></namePlural> 
+		<description><![CDATA[Корсет, который отлично подчеркивает форму живота, при этом закрывая грудь. Сзади имеется ряд шнуровок, с помощью которых его можно затянуть.]]></description> 
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity> 
 		<slot>STOMACH</slot> 
@@ -60,24 +60,24 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(place)] the corset around [npc.her] stomach before tying the laces up at [npc.her] back.
+			[npc.Name] [npc.verb(place)] корсет вокруг живота [npc.her], прежде чем зашнуровать его на [npc.her] Назад.
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(place)] the corset around [npc2.namePos] stomach before tying the laces up at [npc2.her] back.
+			[npc.Name] [npc.verb(place)] корсет вокруг живота [npc2.namePos], прежде чем зашнуровать его на [npc2.her] Назад.
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] roughly [npc.verb(place)] the corset around [npc2.namePos] stomach before impatiently tying the laces up at [npc2.her] back.
+			[npc.Name] грубо [npc.verb(place)] корсет вокруг живота [npc2.namePos], а затем нетерпеливо зашнуровывает его на [npc2.her] Назад.
 		]]></otherRough>
 	</replacementText>
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self><![CDATA[
-			[npc.Name] [npc.verb(untie)] [npc.her] corset's laces and [npc.verb(remove)] it from [npc.her] stomach.
+			[npc.Name] [npc.verb(untie)] шнуровку корсета [npc.her] и [npc.verb(remove)] его с живота [npc.her].
 		]]></self>
 		<other><![CDATA[
-			[npc.Name] [npc.verb(untie)] the laces of [npc2.namePos] corset and [npc.verb(remove)] it from [npc2.her] stomach.
+			[npc.Name] [npc.verb(untie)] шнуровку корсета [npc2.namePos] и [npc.verb(remove)] его с живота [npc2.her].
 		]]></other>
 		<otherRough><![CDATA[
-			[npc.Name] impatiently [npc.verb(untie)] the laces of [npc2.namePos] corset and roughly [npc.verb(remove)] it from [npc2.her] stomach.
+			[npc.Name] нетерпеливо [npc.verb(untie)] шнуровку корсета [npc2.namePos] и грубо [npc.verb(remove)] его с живота [npc2.her].
 		]]></otherRough>
 	</displacementText>
 	

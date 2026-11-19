@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <sexManager>
-	<deskName><![CDATA[crate]]></deskName>
+	<deskName><![CDATA[ящик]]></deskName>
 	<title/>
 	<consensual><![CDATA[true]]></consensual>
 	<subHasEqualControl><![CDATA[false]]></subHasEqualControl>
@@ -15,15 +15,15 @@
 	<publicSex>
 		<isPublic><![CDATA[true]]></isPublic>
 		<startingDescription><![CDATA[
-			The gang members look on and encourage their victim as [client.she] uses [client.her] tongue to clean your pussy...
+			Члены банды наблюдают за происходящим и подбадривают свою жертву, пока [client.she] вылизывает твою киску своим [client.her] языком...
 		]]></startingDescription>
 		<randomDescriptions enabled="true">
-			<description><![CDATA[One of the gang members loudly comments on how submissive and pathetic you look.]]></description>
-			<description><![CDATA[A gang member laughs and tells their victim to keep licking your pussy.]]></description>
-			<description><![CDATA[One of the gang members uses their foot to push [client.namePos] face into your groin.]]></description>
-			<description><![CDATA[A few members of the gang laugh as they watch the scene before them.]]></description>
-			<description><![CDATA[You hear jeers and insults being thrown from several members of the gang as [client.name] continues to eat you out.]]></description>
-			<description><![CDATA[A gang member crudely comments on the state of your sloppy pussy.]]></description>
+			<description><![CDATA[Один из бандитов громко комментирует то, насколько покорной и жалкой ты выглядишь.]]></description>
+			<description><![CDATA[Член банды смеется и велит своей жертве не прекращать лизать твою киску.]]></description>
+			<description><![CDATA[Один из бандитов нажимает ногой, вжимая лицо [client.namePos] тебе в пах.]]></description>
+			<description><![CDATA[Несколько бандитов смеются, наблюдая за разворачивающейся перед ними сценой.]]></description>
+			<description><![CDATA[Ты слышишь насмешки и оскорбления, которые выкрикивают несколько членов банды, пока [client.name] продолжает тебя отсасывать.]]></description>
+			<description><![CDATA[Член банды грубо комментирует то, насколько мокрая и сочная у тебя киска.]]></description>
 		</randomDescriptions>
 	</publicSex>
 	<characterInformationContainer>

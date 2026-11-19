@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[service dress skirt]]></name>
+		<name><![CDATA[парадная юбка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[service dress skirts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[парадные юбки]]></namePlural> 
 		
-		<description><![CDATA[An officer's service dress skirt, complete with metal buttons. This style of uniform is worn only by Lyssieth's elite guards.]]></description> 
+		<description><![CDATA[Парадная офицерская юбка с металлическими пуговицами. Подобный стиль униформы носят только элитные гвардейцы Lyssieth.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>1200</value>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[equine dildo]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[equine dildos]]></namePlural>
-		<description><![CDATA[A huge dildo, formed out of self-cleaning, arcane-cured silicone into the shape of a horse penis. True to the animal's anatomy, this dildo's [units.sizeShort(45)] length is sectioned into three parts; the balls and sheath at the base; a section of shaft in the middle; and a wide, flared head at the tip.]]></description>
+		<name><![CDATA[лошадиный дилдо]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[лошадиные дилдо]]></namePlural>
+		<description><![CDATA[Огромный дилдо, сделанный из самоочищающегося силикона, закаленного Арканой, в форме лошадиного члена. В точности повторяя анатомию животного, этот дилдо длиной [units.sizeShort(45)] разделен на три части: яички и препуций у основания, средняя часть ствола и широкая, расширяющаяся головка на конце.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -21,7 +21,7 @@
 		
 		<stickers>
 			<category id="colour" priority="1">
-				<categoryName><![CDATA[Colours]]></categoryName>
+				<categoryName><![CDATA[Цвета]]></categoryName>
 				<sticker id="one" priority="1" defaultSticker="true" zLayer="-1" colourDisabled="" colourSelected="">
 					<stickerName><![CDATA[One]]></stickerName>
 					<namePrefix/>
@@ -170,22 +170,22 @@
 	
 	<replacementText slot="VAGINA" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the huge equine dildo into [npc.her] [npc.vagina+].]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] огромный лошадиный дилдо в [npc.her] [npc.vagina+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the huge equine dildo into [npc2.namePos] [npc2.vagina+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] огромный лошадиный дилдо в [npc2.namePos] [npc2.vagina+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the huge equine dildo into [npc2.namePos] [npc2.vagina+].]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] огромный лошадиный дилдо в [npc2.namePos] [npc2.vagina+].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="VAGINA" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the huge equine dildo out of [npc.her] [npc.vagina+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] огромный лошадиный дилдо из [npc.her] [npc.vagina+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the huge equine dildo out of [npc2.namePos] [npc2.vagina+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] огромный лошадиный дилдо из [npc2.namePos] [npc2.vagina+].]]>
 		</other>
 		<otherRough>
 			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] huge equine dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.vagina+].]]>
@@ -194,22 +194,22 @@
 
 	<replacementText slot="ANUS" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the huge equine dildo into [npc.her] [npc.anus+].]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] огромный конский дилдо в [npc.her] [npc.anus+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the huge equine dildo into [npc2.namePos] [npc2.anus+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] огромный конский дилдо в [npc2.namePos] [npc2.anus+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the huge equine dildo into [npc2.namePos] [npc2.anus+].]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] огромный конский дилдо в [npc2.namePos] [npc2.anus+].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="ANUS" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the huge equine dildo out of [npc.her] [npc.anus+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] огромный конский дилдо из [npc.her] [npc.anus+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the huge equine dildo out of [npc2.namePos] [npc2.anus+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] огромный конский дилдо из [npc2.namePos] [npc2.anus+].]]>
 		</other>
 		<otherRough>
 			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] huge equine dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.anus+].]]>
@@ -218,22 +218,22 @@
 
 	<replacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(slide)] the huge equine dildo into [npc.her] [npc.mouth+].]]>
+			<![CDATA[[npc.Name] [npc.verb(slide)] огромный конский дилдо в [npc.her] [npc.mouth+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the huge equine dildo into [npc2.namePos] [npc2.mouth+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] огромный конский дилдо в [npc2.namePos] [npc2.mouth+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(force)] the huge equine dildo into [npc2.namePos] [npc2.mouth+].]]>
+			<![CDATA[[npc.Name] [npc.verb(force)] огромный конский дилдо в [npc2.namePos] [npc2.mouth+].]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText slot="MOUTH" type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the huge equine dildo out of [npc.her] [npc.mouth+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] огромный конский дилдо из [npc.her] [npc.mouth+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the huge equine dildo out of [npc2.namePos] [npc2.mouth+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] огромный лошадиный дилдо из [npc2.namePos] [npc2.mouth+].]]>
 		</other>
 		<otherRough>
 			<![CDATA[[npc.Name] [npc.verb(grab)] [npc2.namePos] huge equine dildo and [npc.verb(yank)] it out of [npc2.her] [npc2.mouth+].]]>

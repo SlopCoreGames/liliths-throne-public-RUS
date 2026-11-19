@@ -2,12 +2,12 @@
 <!-- For a version without all of the comments, see "rental_daddy.xml". -->
 <clothing>
 	<coreAttributes>
-		<authorTag><![CDATA[A small tag sewn into the waist reads "MFD by DSG Apparel LLC.", based on design by "Blue999".]]></authorTag>
+		<authorTag><![CDATA[На маленькой бирке, пришитой к поясу, красуется надпись: «Произведено DSG Apparel LLC», дизайн «Blue999».]]></authorTag>
 		<value>200</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[lacy plunge bra]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[lacy plunge bras]]></namePlural>
-		<description><![CDATA[A low-cut bra that reveals a lot of the wearer's cleavage. This particular design is made from a soft, thin fabric, and has a lot of lace trimmings.]]></description>
+		<name><![CDATA[кружевной бюстгальтер с глубоким декольте]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кружевные бюстгальтеры с глубоким декольте]]></namePlural>
+		<description><![CDATA[Бюстгальтер с низким вырезом, открывающий вид на пышное декольте. Эта модель выполнена из мягкой тонкой ткани и украшена обилием кружевных элементов.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -59,25 +59,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the bra over [npc.her] chest before fastening the straps at [npc.her] back.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] бюстгальтер на [npc.her] грудь, а затем застегивает лямки на [npc.her] спине.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the bra over [npc2.namePos] chest before fastening the straps at [npc2.her] back.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] бюстгальтер на [npc2.namePos] грудь, а затем застегивает лямки на [npc2.her] спине.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the bra over [npc2.namePos] chest before roughly fastening the straps at [npc2.her] back.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] бюстгальтер поверх [npc2.namePos] груди, а затем грубо застегивает лямки на [npc2.her] спине.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc.her] бюстгальтер и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unfasten)] [npc2.namePos] бюстгальтер и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] [npc2.namePos] bra and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unfasten)] [npc2.namePos] бюстгальтер и [npc.verb(take)] его.]]>
 		</otherRough>
 	</displacementText>
 	

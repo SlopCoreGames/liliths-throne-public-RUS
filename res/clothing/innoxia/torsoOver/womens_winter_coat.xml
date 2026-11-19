@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>1400</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[women's winter coat]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[women's winter coats]]></namePlural>
-		<description><![CDATA[A stylish women's winter coat, worn both for keeping warm and to look good while doing it.]]></description>
+		<name><![CDATA[женское зимнее пальто]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[женские зимние пальто]]></namePlural>
+		<description><![CDATA[Стильное женское зимнее пальто, которое помогает не только согреться, но и выглядеть при этом великолепно.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>TORSO_OVER</slot>

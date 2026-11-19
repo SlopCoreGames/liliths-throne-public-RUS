@@ -5,15 +5,15 @@
 		<melee>false</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[suspicious dog whistle]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[suspicious dog whistles]]></namePlural>
-		<description><![CDATA[Although it looks like an ordinary dog-whistle, you can't help but get the feeling that it's been enchanted, and is likely to have a devastating effect on greater dog-morphs...]]></description>
+		<name><![CDATA[подозрительный собачий свисток]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[подозрительные собачьи свистки]]></namePlural>
+		<description><![CDATA[Хотя он выглядит как обычный собачий свисток, тебя не покидает чувство, что он зачарован и способен оказать разрушительное воздействие на высших псов-морфов...]]></description>
 		<attackDescriptor>blow</attackDescriptor>
-		<attackTooltipDescription><![CDATA[Blow the whistle at [npc.name]!]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Дунь в свисток, чтобы призвать [npc.name]!]]></attackTooltipDescription>
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] suspicious dog whistle.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] suspicious dog whistle away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] подозрительный собачий свисток.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] подозрительный собачий свисток.]]></unequipText>
 		<imageName>doggo_whistle.svg</imageName> 
 		<imageEquippedName/> 
 		<damage>0</damage> 
@@ -27,12 +27,12 @@
 		
 		<effects/>
 		<extraEffects>
-			<effect><![CDATA[[style.colourExcellent(Subdues)] [style.colourTfGreater(greater)] [style.colourDog(dog-morphs)]]]></effect>
+			<effect><![CDATA[[style.colourExcellent(Покоряет)] [style.colourTfGreater(высших)] [style.colourDog(псов-морфов)]]]></effect>
 		</extraEffects>
 		
 		<onHitEffect><![CDATA[
 		#IF(npc2.getRace()==RACE_DOG_MORPH && npc2.getRaceStage()==RACE_STAGE_GREATER)
-			<i>[npc2.Name] [npc2.verb(stand)] to attention as [npc2.she] [npc2.verb(hear)] the arcane whistle. With [npc2.her] tail uncontrollably wagging in excitement, [npc2.she] [npc2.verb(stand)] to attention and [style.italicsExcellent(completely submits to [npc.herHim])]!</i>
+			<i>[npc2.Name] [npc2.verb(вытянулся)] по стойке «смирно», когда [npc2.she] [npc2.verb(услышал)] арканный свист. С [npc2.her] хвостом, неудержимо виляющим от возбуждения, [npc2.she] [npc2.verb(замирает)] в ожидании и [style.italicsExcellent(полностью подчиняется [npc.herHim])]!</i>
 			[##npc2.setHealth(0)]
 		#ENDIF
 		]]></onHitEffect>
@@ -56,13 +56,13 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Bringing the dog whistle up to [npc.her] [npc.lips], [npc.name] [npc.verb(give)] it a short, sharp blow. There's a faint, unnatural shrill within the high-pitched noise that's produced...
+		Поднеся собачий свисток к [npc.her] [npc.lips], [npc.name] [npc.verb(коротко и резко дует)] в него. В изданном пронзительном звуке слышится едва уловимый неестественный визг...
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Bringing the dog whistle up to [npc.her] [npc.lips], [npc.name] [npc.verb(give)] it a short, sharp blow. There's a faint, unnatural shrill within the high-pitched noise that's produced...
+		Поднеся собачий свисток к [npc.her] [npc.lips], [npc.name] [npc.verb(коротко и резко дует)] в него. В изданном пронзительном звуке слышится едва уловимый неестественный визг...
 		]]></missText>
 	</missDescriptions>
 	

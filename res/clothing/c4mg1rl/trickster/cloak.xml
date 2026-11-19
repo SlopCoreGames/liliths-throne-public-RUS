@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A tag discreetly sewn into the cloak's inner lining informs you that it was made by 'C4MG1RL'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Скромная бирка, пришитая к внутренней подкладке плаща, сообщает тебе, что он сделан мастером 'C4MG1RL'.]]></clothingAuthorTag>
 		<value>10000</value>
 		<determiner><![CDATA[the]]></determiner>
-		<name><![CDATA[Trickster's Cloak]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Arcanist's Cloaks]]></namePlural>
-		<description><![CDATA[Whether trying to stand out and draw a crowd or hide your identity after executing a devious plan, this weather-proof cloak will suit your needs. Angled for easy access to a sword, and carrying powerful enchantments, the wearer is sure to always look and perform at their best!]]></description>
+		<name><![CDATA[Плащ Трикстера]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Плащи Арканиста]]></namePlural>
+		<description><![CDATA[Будь то желание выделиться и привлечь толпу или стремление скрыть свою личность после реализации коварного плана — этот защищенный от непогоды плащ подойдет для любых целей. Благодаря крою, обеспечивающему легкий доступ к мечу, и мощным чарам, его обладатель всегда будет выглядеть безупречно и действовать на пике своих возможностей!]]></description>
 		<physicalResistance>3</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<equipSlots>
@@ -76,47 +76,47 @@
 	
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc.her] shoulders, before fastening the brooches around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc.her], после чего застегивает броши на [npc.her] шее.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before fastening the brooches around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc2.namePos], после чего застегивает броши на [npc2.her] шее.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before firmly fastening the brooches around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] резким движением [npc.verb(drape)] плащ на плечи [npc2.namePos], после чего плотно застегивает броши на [npc2.her] шее.]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the brooches around [npc.her] neck, before taking off [npc.her] cloak.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] броши на [npc.her] шее, после чего снимает с [npc.her] плащ.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the brooches around [npc2.namePos] neck, before taking off [npc2.her] cloak.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] броши на [npc2.namePos] шее, после чего снимает с [npc2.her] плащ.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the brooches around [npc2.namePos] neck, before pulling off [npc2.her] cloak.]]>
+      <![CDATA[[npc.Name] небрежно [npc.verb(unfasten)] броши на [npc2.namePos] шее, после чего сдергивает с [npc2.her] плащ.]]>
     </otherRough>
   </displacementText>
 
   <replacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc.her] shoulders, before fastening the brooches around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc.her], после чего застегивает броши на [npc.her] шее.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before fastening the brooches around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(drape)] плащ на плечи [npc2.namePos], после чего застегивает броши на [npc2.her] шее.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(drape)] the cloak over [npc2.namePos] shoulders, before firmly fastening the brooches around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] резким движением [npc.verb(drape)] плащ на плечи [npc2.namePos], после чего плотно застегивает броши на [npc2.her] шее.]]>
     </otherRough>
   </replacementText>
   <displacementText slot="TORSO_OVER" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the brooches around [npc.her] neck, before taking off [npc.her] cloak.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] броши на [npc.her] шее, после чего снимает с [npc.her] плащ.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unfasten)] the brooches around [npc2.namePos] neck, before taking off [npc2.her] cloak.]]>
+      <![CDATA[[npc.Name] [npc.verb(unfasten)] броши на [npc2.namePos] шее, после чего снимает с [npc2.her] плащ.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(unfasten)] the brooches around [npc2.namePos] neck, before pulling off [npc2.her] cloak.]]>
+      <![CDATA[[npc.Name] небрежно [npc.verb(unfasten)] броши на [npc2.namePos] шее, после чего сдергивает с [npc2.her] плащ.]]>
     </otherRough>
   </displacementText>
 

@@ -42,30 +42,30 @@
 	<basicDescriptionId>RAPTOR_BASIC</basicDescriptionId>
 	<advancedDescriptionId>RAPTOR_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[eagle-morph]]></name>
-	<namePlural><![CDATA[eagle-morphs]]></namePlural>
-	<singularMaleName><![CDATA[eagle-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[eagle-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[eagle-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[eagle-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic eagle, known as a 'eagle-morph' when bipedal, and a 'eagle-taur' when the lower body is that of a feral eagle.]]></description>
+	<name><![CDATA[орломорф]]></name>
+	<namePlural><![CDATA[орломорфы]]></namePlural>
+	<singularMaleName><![CDATA[орлопарень]]></singularMaleName>
+	<singularFemaleName><![CDATA[орлодевушка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[орлопарни]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[орлодевушки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный орел; когда он передвигается на двух ногах, его называют «орломорфом», а если его нижняя часть тела представляет собой дикого орла — «орлотавром».]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[tengu]]></name>
-			<namePlural><![CDATA[tengu]]></namePlural>
-			<singularMaleName><![CDATA[tengu]]></singularMaleName>
-			<singularFemaleName><![CDATA[tengu]]></singularFemaleName>
-			<pluralMaleName><![CDATA[tengu]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[tengu]]></pluralFemaleName>
+			<name><![CDATA[тенгу]]></name>
+			<namePlural><![CDATA[тенгу]]></namePlural>
+			<singularMaleName><![CDATA[тенгу]]></singularMaleName>
+			<singularFemaleName><![CDATA[тенгу]]></singularFemaleName>
+			<pluralMaleName><![CDATA[тенгу]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[тенгу]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[eagle]]></feralName>
-		<feralNamePlural><![CDATA[eagles]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[eagle]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[eagle]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[eagles]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[eagles]]></feralPluralFemaleName>
+		<feralName><![CDATA[орлиные]]></feralName>
+		<feralNamePlural><![CDATA[орлы]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[орлиные]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[орлиные]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[орлы]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[орлы]]></feralPluralFemaleName>
 		<legConfiguration>AVIAN</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>90</size>
@@ -78,7 +78,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] speed and power helps [npc.herHim] to land particularly hard-hitting strikes in combat.
+		Скорость и мощь [npc.NamePos] помогают [npc.herHim] наносить в бою особенно сокрушительные удары.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="15">MAJOR_PHYSIQUE</attribute>

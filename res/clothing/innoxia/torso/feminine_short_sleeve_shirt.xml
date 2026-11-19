@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[feminine short-sleeved shirt]]></name>
+		<name><![CDATA[женская рубашка с коротким рукавом]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[feminine short-sleeved shirts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[женские рубашки с коротким рукавом]]></namePlural> 
 		
-		<description><![CDATA[A form-fitting short-sleeved shirt, with a cut designed to fit comfortably on feminine figures.]]></description> 
+		<description><![CDATA[Облегающая рубашка с коротким рукавом, крой которой специально адаптирован под женскую фигуру.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

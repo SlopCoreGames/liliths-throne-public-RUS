@@ -36,20 +36,20 @@
 	<basicDescriptionId>PANTHER_BASIC</basicDescriptionId>
 	<advancedDescriptionId>PANTHER_ADVANCED</advancedDescriptionId>
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
-	<name><![CDATA[leopard-morph]]></name>
-	<namePlural><![CDATA[leopard-morphs]]></namePlural>
-	<singularMaleName><![CDATA[leopard-boy]]></singularMaleName>
-	<singularFemaleName><![CDATA[leopard-girl]]></singularFemaleName>
-	<pluralMaleName><![CDATA[leopard-boys]]></pluralMaleName>
-	<pluralFemaleName><![CDATA[leopard-girls]]></pluralFemaleName>
-	<description><![CDATA[An anthropomorphic leopard, known as a 'leopard-morph' when bipedal, and a 'leopardtaur' when the lower body is that of a feral leopard. To be identified as a leopard-morph, a character must be a panther with short, spotted fur.]]></description>
+	<name><![CDATA[леопард-морф]]></name>
+	<namePlural><![CDATA[леопард-морфы]]></namePlural>
+	<singularMaleName><![CDATA[леопард-мальчик]]></singularMaleName>
+	<singularFemaleName><![CDATA[леопард-девочка]]></singularFemaleName>
+	<pluralMaleName><![CDATA[леопард-мальчики]]></pluralMaleName>
+	<pluralFemaleName><![CDATA[леопард-девочки]]></pluralFemaleName>
+	<description><![CDATA[Антропоморфный леопард, называемый «леопард-морфом», когда он передвигается на двух ногах, и «леопардтавром», если его нижняя часть тела — это тело дикого леопарда. Чтобы считаться леопард-морфом, персонаж должен быть пантерой с короткой пятнистой шерстью.]]></description>
 	<feralAttributes>
-		<feralName><![CDATA[leopard]]></feralName>
-		<feralNamePlural><![CDATA[leopards]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[leopard]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[leopardess]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[leopards]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[leopardesses]]></feralPluralFemaleName>
+		<feralName><![CDATA[леопард]]></feralName>
+		<feralNamePlural><![CDATA[леопарды]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[леопард]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[леопардица]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[леопарды]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[леопардицы]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>100</size>
@@ -62,7 +62,7 @@
 		<hairPresent>true</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] body is very strong and agile, and [npc.sheIsFull] capable of great feats of strength and stealth alike. [npc.She] also [npc.has] a high resistance to both natural and arcane heat.
+		Тело [npc.NamePos] очень сильное и гибкое, а [npc.sheIsFull] способна как на великие подвиги силы, так и на мастерскую скрытность. [npc.She] также [npc.has] обладает высокой устойчивостью как к природному, так и к арканическому жару.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="25">MAJOR_PHYSIQUE</attribute>

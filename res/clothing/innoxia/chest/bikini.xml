@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>120</value> 
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[bikini top]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[bikini tops]]></namePlural>
-		<description><![CDATA[A triangle-shaped bikini top. It uses loose strings tied around the neck and back to keep it in place.]]></description>
+		<name><![CDATA[лиф бикини]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[лифы бикини]]></namePlural>
+		<description><![CDATA[Лиф бикини треугольной формы. Он держится на тонких завязках, которые оборачиваются вокруг шеи и спины.]]></description>
 		<physicalResistance>0</physicalResistance> 
 		<femininity>FEMININE</femininity>
 		<slot>CHEST</slot> 
@@ -59,25 +59,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the bikini top over [npc.her] chest before tying up the strings at [npc.her] back.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] лиф бикини на грудь [npc.her], а затем завязывает завязки на [npc.her] спине.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the bikini top over [npc2.namePos] chest before tying up the strings at [npc2.her] back.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] лиф бикини на грудь [npc2.namePos], а затем завязывает завязки на [npc2.her] спине.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(place)] the bikini top over [npc2.namePos] chest before roughly tying up the strings at [npc2.her] back.]]>
+		  <![CDATA[[npc.Name] [npc.verb(place)] лиф бикини на грудь [npc2.namePos], а затем кое-как завязывает завязки на [npc2.her] спине.]]>
 	  </otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the strings of [npc.her] bikini top and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] завязки лифа бикини [npc.her] и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(untie)] the strings of [npc2.namePos] bikini top and [npc.verb(take)] it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(untie)] завязки лифа бикини [npc2.namePos] и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(untie)] the strings of [npc2.namePos] bikini top and [npc.verb(pull)] it off.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(untie)] завязки лифа бикини [npc2.namePos] и [npc.verb(pull)] его с себя.]]>
 		</otherRough>
 	</displacementText>
 	

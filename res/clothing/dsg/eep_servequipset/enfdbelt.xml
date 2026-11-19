@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[Embossed into the leather are the words "Official Enforcer Issue, MFD by DSG Threadworks"]]></authorTag>
+		<authorTag><![CDATA[На коже вытиснены слова: «Служебное снаряжение Enforcer, произведено DSG Threadworks»]]></authorTag>
 
 		<value>200</value> 
 
 		<determiner><![CDATA[an]]></determiner>
 
-		<name><![CDATA[Enforcer's dress belt]]></name>
+		<name><![CDATA[Парадный пояс Enforcer]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's dress belts]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Парадные пояса Enforcer]]></namePlural> 
 
-		<description><![CDATA[A thick leather stomach belt supported by a thinner shoulder strap. Although it once served as a sword belt, its role is now largely ceremonial.]]></description> 
+		<description><![CDATA[Толстый кожаный пояс, охватывающий живот, который поддерживается более узким наплечным ремнем. Хотя когда-то он служил мечом, сейчас его роль стала преимущественно церемониальной.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -72,25 +72,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the dress belt around [npc.her] waist and [npc.verb(thread)] excess through the buckle frame before inserting the double prongs through the closest adjustment hole. [npc.she] then [npc.verb(adjust)] the shoulder strap and [npc.verb(secure)] it in a similar fashion.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] парадный пояс на талии [npc.her], [npc.verb(thread)] излишек ремня сквозь оправу пряжки, а затем вставляет двойные шпенки в ближайшее регулировочное отверстие. Затем [npc.she] [npc.verb(adjust)] наплечный ремень и [npc.verb(secure)] его таким же образом.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the dress belt around [npc2.namePos] waist and [npc.verb(thread)] excess through the buckle frame before inserting the double prongs through the closest adjustment hole. [npc.she] the [npc.verb(adjust)] the shoulder strap and [npc.verb(secure)] it in a similar fashion.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] парадный пояс на талии [npc2.namePos], [npc.verb(thread)] излишек ремня сквозь оправу пряжки, а затем вставляет двойные шпенки в ближайшее регулировочное отверстие. [npc.she] [npc.verb(adjust)] наплечный ремень и [npc.verb(secure)] его таким же образом.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tighten)] the dress belt around [npc2.namePos] waist as much as possible and hastily [npc.verb(thread)] excess through the buckle frame before inserting the double prongs through the closest adjustment hole. [npc.she] then [npc.verb(does)] much the same with the shoulder strap.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tighten)] парадный пояс на талии [npc2.namePos] настолько туго, насколько возможно, и поспешно [npc.verb(thread)] излишек ремня сквозь оправу пряжки, вставляя двойные шпенки в ближайшее регулировочное отверстие. Затем [npc.she] делает то же самое с наплечным ремнем.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc.her] dress belt and its shoulder strap before taking it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] парадный пояс [npc.her] и его наплечный ремень, прежде чем снять его.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] [npc2.namePos] dress belt and its shoulder strap before taking it off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbuckle)] парадный пояс [npc2.namePos] и его наплечный ремень, прежде чем снять его.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] hastily [npc.verb(unbuckle)] [npc2.namePos] dress belt and its shoulder strap before tearing the whole thing away from [npc2.namePos] waist.]]>
+		  <![CDATA[[npc.Name] поспешно [npc.verb(unbuckle)] парадный пояс [npc2.namePos] и его наплечный ремень, после чего срывает всё это с талии [npc2.namePos].]]>
 		</otherRough>
 	</displacementText>
 	

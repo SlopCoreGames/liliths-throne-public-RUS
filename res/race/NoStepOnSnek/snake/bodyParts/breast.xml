@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <breast>
 	<race>NoStepOnSnek_snake</race>
-	<transformationName><![CDATA[snake]]></transformationName>
+	<transformationName><![CDATA[змея]]></transformationName>
 	<coveringType>SNAKE_SCALES</coveringType>
 	<nippleType>NoStepOnSnek_snake_nipple</nippleType>
 	<fluidType>NoStepOnSnek_snake_milk</fluidType>
@@ -12,15 +12,15 @@
 	<namesPluralFlat/>
 	<descriptorsFlat/>
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldSnake(snake-like)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldSnake(snake milk)].
+		Теперь у [npc.She] [npc.has] [style.boldSnake(змеиные)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldSnake(змеиное молоко)].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] snake-like, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] змеиные, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldSnake(snake-like)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldSnake(snake milk)].
+		Теперь у [npc.She] [npc.has] [style.boldSnake(змеиные)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldSnake(змеиное молоко)].
 	]]></crotchBoobsTransformationDescription>
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] snake-like, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] змеиные, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

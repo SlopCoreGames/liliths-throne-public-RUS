@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <setBonus>
-	<name><![CDATA[Butler]]></name>
+	<name><![CDATA[Дворецкий]]></name>
 	
 	<statusEffect>SET_BUTLER</statusEffect>
 	

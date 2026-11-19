@@ -36,66 +36,60 @@
 	<areasCummedIn/>
 	<areasCummedOn/>
 	<title><![CDATA[
-		[style.colourFetish(Butt slut)]
+		[style.colourFetish(Задняя шлюха)]
 	]]></title>
 	<tooltip><![CDATA[
 		#IF(sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_ANUS, PENETRATION_TONGUE).contains(pc))
-			Make Meraxis admit to you that she's a dirty buttslut as you make her cum from anilingus.
+			Заставь Мераксис признаться, что она грязная задняя шлюха, пока доводишь её до оргазма анилингусом.
 		#ELSEIF(sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_ANUS, PENETRATION_PENIS).contains(pc))
-			Make Meraxis admit to you that she's a dirty buttslut as you make her cum from anal.
+			Заставь Мераксис признаться, что она грязная задняя шлюха, пока доводишь её до оргазма через анус.
 		#ELSE
-			Make Meraxis admit to you that she's a dirty buttslut as you make her cum from being hotdogged.
+			Заставь Мераксис признаться, что она грязная задняя шлюха, пока доводишь её до оргазма, засаживая в неё по самые гланды.
 		#ENDIF
-		<br/>[style.italicsSex(Meraxis will gain the '[#FETISH_ANAL_RECEIVING.getName(meraxis)]' fetish from this!)]
+		<br/>[style.italicsSex(Мераксис получит фетиш '[#FETISH_ANAL_RECEIVING.getName(meraxis)]' благодаря этому!)]
 	]]></tooltip>
 	<descriptions>
 		<description>
 			<descriptionConditional><![CDATA[
 				[#sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_ANUS, PENETRATION_TONGUE).contains(pc)]
 			]]></descriptionConditional>
-			<text><![CDATA[
-				Sensing that Meraxis is on the verge of orgasming, you pull back and stop licking her asshole to tease, [pc.speech(You want to cum from this?)]
+			<text><![CDATA[Чувствуя, что Мераксис вот-вот кончит, ты отстраняешься и перестаёшь лизать её анус, чтобы подразнить её, [pc.speech(Хочешь кончить от этого?)]
 				<br/><br/>
-				Driven to the point of climax, and then suddenly having you stop giving her anilingus, Meraxis desperately tries to push her ass back against your face as she squeals, [meraxis.speechNoEffects(Yes! ~Aah!~ Why did you stop?! Come on, I'm so close! ~Mmm!~ Give it to me!)]
+				Доведённая до самого пика и внезапно лишившаяся анилингуса, Мераксис отчаянно пытается прижать задницу обратно к твоему лицу, визжа, [meraxis.speechNoEffects(Да! ~Аах!~ Почему ты остановился?! Ну же, я уже почти! ~Ммм!~ Дай мне это!)]
 				<br/><br/>
-				Realising that you have the opportunity to permanently impact Meraxis's attitude towards receiving anal, you lean forwards and plant a big, wet kiss on her [meraxis.asshole+]. Smirking at the desperate moan she lets out in response to your touch, you make your demand, [pc.speech(Tell me that you're a dirty little buttslut, and I'll let you cum.)]
+				Понимая, что у тебя есть шанс навсегда изменить отношение Мераксис к анальному сексу, ты подаёшься вперёд и оставляешь долгий, влажный поцелуй на её [meraxis.asshole+]. Усмехаясь её отчаянному стону, который она издаёт в ответ на твоё прикосновение, ты выдвигаешь требование, [pc.speech(Скажи, что ты грязная маленькая задротка, и тогда я дам тебе кончить.)]
 				<br/><br/>
-				[meraxis.speechNoEffects(What?! I... You're so perverted, [pc.name]...)] she whines, but as you lean in and give her asshole another lick, she relents and cries out, [meraxis.speechNoEffects(Fine! I... I'm a dirty little buttslut! Now let me cum!)]
+				[meraxis.speechNoEffects(Что?! Я... Ты такой извращенец, [pc.name]...)] — канючит она, но когда ты наклоняешься и снова лижешь её анус, она сдаётся и вскрикивает, [meraxis.speechNoEffects(Ладно! Я... Я грязная маленькая задротка! Теперь дай мне кончить!)]
 				<br/><br/>
-				Burying your face in her ass, you continue where you left off, and greedily lick, kiss, and nuzzle into Meraxis's asshole. Letting out a series of increasingly-louder squeals, the [meraxis.race] screams, [meraxis.speechNoEffects(~Aah!~ I'm cumming!)]
-			]]></text>
+				Зарывшись лицом в её задницу, ты продолжаешь с того места, где остановился, жадно лизая, целуя и притираясь к анусу Мераксис. Издавая всё более громкие визги, [meraxis.race] вопит, [meraxis.speechNoEffects(~Ааах!~ Я кончаю!)]]]></text>
 		</description>
 		<description>
 			<descriptionConditional><![CDATA[
 				[#sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_ANUS, PENETRATION_PENIS).contains(pc)]
 			]]></descriptionConditional>
-			<text><![CDATA[
-				Sensing that Meraxis is on the verge of orgasming, you slide your [pc.cock+] out of her ass, before rubbing the [pc.cockHead+] over her asshole and teasing, [pc.speech(You want to cum from this?)]
+			<text><![CDATA[Чувствуя, что Мераксис вот-вот кончит, ты вынимаешь свой [pc.cock+] из её задницы, а затем втираешь [pc.cockHead+] в её анус, дразня её: [pc.speech(Хочешь кончить от этого?)]
 				<br/><br/>
-				Driven to the point of climax, and then suddenly having you stop fucking her ass, Meraxis desperately tries to push her asshole back against your cock as she squeals, [meraxis.speechNoEffects(Yes! ~Aah!~ Why did you stop?! Come on, I'm so close! ~Mmm!~ Give it to me!)]
+				Доведенная до самого пика и внезапно лишенная твоего члена в заднице, Мераксис отчаянно пытается прижаться анусом обратно к твоему члену, визжа: [meraxis.speechNoEffects(Да! ~Аах!~ Почему ты остановился?! Ну же, я уже почти! ~Ммм!~ Дай мне его!)]
 				<br/><br/>
-				Realising that you have the opportunity to permanently impact Meraxis's attitude towards receiving anal, you push forwards and slide just the tip of your [pc.cock+] into her [meraxis.asshole+]. Smirking at the desperate moan she lets out in response to your limited penetration, you make your demand, [pc.speech(Tell me that you're a dirty little buttslut, and I'll let you cum.)]
+				Понимая, что у тебя есть шанс навсегда изменить отношение Мераксис к анальному сексу, ты подаешься вперед и вводишь лишь кончик своего [pc.cock+] в её [meraxis.asshole+]. Усмехаясь её отчаянному стону на твое мизерное проникновение, ты выдвигаешь требование: [pc.speech(Скажи, что ты грязная маленькая задрочка, и тогда я дам тебе кончить.)]
 				<br/><br/>
-				[meraxis.speechNoEffects(What?! I... You're so perverted, [pc.name]...)] she whines, but as you pull back and start to slide your cock out of her ass, she relents and desperately cries out, [meraxis.speechNoEffects(Fine! I... I'm a dirty little buttslut! Now let me cum!)]
+				[meraxis.speechNoEffects(Что?! Я... Ты такой извращенец, [pc.name]...)] — канючит она, но когда ты отстраняешься и начинаешь выводить член из её задницы, она сдается и отчаянно выкрикивает: [meraxis.speechNoEffects(Ладно! Я... Я грязная маленькая задрочка! Теперь дай мне кончить!)]
 				<br/><br/>
-				Pushing forwards and driving your [pc.cock+] back into her ass, you continue where you left off, and dominantly pump your [pc.cock+] in and out of Meraxis's asshole. Letting out a series of increasingly-louder squeals, the [meraxis.race] screams, [meraxis.speechNoEffects(~Aah!~ I'm cumming!)]
-			]]></text>
+				Резко подавшись вперед и вгоняя свой [pc.cock+] обратно в её задницу, ты продолжаешь с того места, где остановился, властно вколачивая свой [pc.cock+] в анус Мераксис. Издавая всё более громкие визги, [meraxis.race] вопит: [meraxis.speechNoEffects(~Аах!~ Я кончаю!)]]]></text>
 		</description>
 		<description>
 			<descriptionConditional><![CDATA[
 				[#sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_ASS, PENETRATION_PENIS).contains(pc)]
 			]]></descriptionConditional>
-			<text><![CDATA[
-				Sensing that Meraxis is on the verge of orgasming, you stop sliding your [pc.cock+] over her ass, before teasing, [pc.speech(You want to cum from this?)]
-				<br/><br/>
-				Driven to the point of climax, and then suddenly having you stop hotdogging her ass, Meraxis desperately tries to push back against your cock as she squeals, [meraxis.speechNoEffects(Yes! ~Aah!~ Why did you stop?! Come on, I'm so close! ~Mmm!~ Give it to me!)]
-				<br/><br/>
-				Realising that you have the opportunity to permanently impact Meraxis's attitude towards receiving anal, you push forwards and slide just the tip of your [pc.cock+] over her [meraxis.ass+]. Smirking at the desperate moan she lets out in response to your touch, you make your demand, [pc.speech(Tell me that you're a dirty little buttslut, and I'll let you cum.)]
-				<br/><br/>
-				[meraxis.speechNoEffects(What?! I... You're so perverted, [pc.name]...)] she whines, but as you pull back and slap your hard cock against her ass a couple of times, she relents and desperately cries out, [meraxis.speechNoEffects(Fine! I... I'm a dirty little buttslut! Now let me cum!)]
-				<br/><br/>
-				Pushing forwards and driving your [pc.cock+] up between her ass cheeks, you continue where you left off, and dominantly slide your [pc.cock+] back and forth over Meraxis's asshole. Letting out a series of increasingly-louder squeals, the [meraxis.race] screams, [meraxis.speechNoEffects(~Aah!~ I'm cumming!)]
-			]]></text>
+			<text><![CDATA[Чувствуя, что Мераксис вот-вот кончит, ты перестаёшь водить своим [pc.cock+] по её заднице, а затем дразнишь её: [pc.speech(Хочешь кончить от этого?)]
+<br/><br/>
+Доведённая почти до самого пика и внезапно лишенная твоего горячего «хотдога» в заднице, Мераксис отчаянно пытается податься навстречу твоему члену, визжа: [meraxis.speechNoEffects(Да! ~Аах!~ Почему ты остановился?! Ну же, я уже почти! ~Ммм!~ Дай мне его!)]
+<br/><br/>
+Понимая, что у тебя есть шанс навсегда изменить отношение Мераксис к анальному сексу, ты подаёшься вперёд и лишь кончиком своего [pc.cock+] проводишь по её [meraxis.ass+]. Услышав в ответ на твоё прикосновение отчаянный стон, ты ухмыляешься и выдвигаешь требование: [pc.speech(Скажи, что ты грязная маленькая задротка, и тогда я дам тебе кончить.)]
+<br/><br/>
+[meraxis.speechNoEffects(Что?! Я... Ты такой извращенец, [pc.name]...)] — канючит она, но когда ты отстраняешься и пару раз хлопаешь своим твёрдым членом по её заднице, она сдаётся и отчаянно выкрикивает: [meraxis.speechNoEffects(Ладно! Я... Я грязная маленькая задротка! Теперь дай мне кончить!)]
+<br/><br/>
+Подавшись вперёд и проталкивая свой [pc.cock+] между её ягодиц, ты продолжаешь с того места, где остановился, властно водя [pc.cock+] туда-сюда по анусу Мераксис. Издавая всё более громкие визги, [meraxis.race] вопит: [meraxis.speechNoEffects(~Ааах!~ Я кончаю!)]]]></text>
 		</description>
 	</descriptions>
 </sexAction>

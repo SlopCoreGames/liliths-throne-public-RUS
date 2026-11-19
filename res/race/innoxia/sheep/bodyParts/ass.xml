@@ -2,7 +2,7 @@
 <ass>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<coveringType>innoxia_sheep_wool</coveringType>
 	
@@ -14,11 +14,9 @@
 	<descriptorsMasculine/>
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldSheep(sheep-like)], [npc.assholeFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[[npc.She] теперь [npc.has] [style.boldSheep(sheep-like)], [npc.assholeFullDescription].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a sheep-like, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] — овечий, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

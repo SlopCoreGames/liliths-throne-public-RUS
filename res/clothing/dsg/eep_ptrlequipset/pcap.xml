@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 		
-		<authorTag><![CDATA[On the inside of the hat's crown, faint rubberised ink reads "Official Enforcer Issue, MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На внутренней стороне тульи шляпы едва различимая резиновая печать гласит: «Официальное снаряжение Enforcer, произведено DSG Threadworks».]]></authorTag>
 
 		<value>850</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[cap]]></name>
+		<name><![CDATA[кепка]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's caps]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Кепки Enforcer]]></namePlural> 
 
-		<description><![CDATA[A cap with a flat circular top and a short polished visor. It is standard issue headgear for Enforcers on patrol duty.]]></description> 
+		<description><![CDATA[Кепка с плоским круглым верхом и коротким полированным козырьком. Стандартный головной убор для Enforcer, находящихся на патрульной службе.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -33,7 +33,7 @@
 		<stickers>
 			
 			<category id="badge" priority="1"> 
-				<categoryName><![CDATA[Cap Badge]]></categoryName>
+				<categoryName><![CDATA[Кокарда]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix priority="1"><![CDATA[Enforcer ]]></namePrefix>
@@ -47,9 +47,9 @@
 				</sticker>
 				<sticker id="badge_dominion" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_LUST"> 
 					<stickerName><![CDATA[Dominion]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Dominion Patrol Enforcer ]]></namePrefix> 
+					<namePrefix priority="1"><![CDATA[Патрульный Enforcer Dominion ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the badge of the Dominion Frontline Patrol attached to it.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой шляпе прикреплена кокарда патруля передовой линии Dominion.</i>]]></descriptionModification> 
 					<imageName>pcap_st_badge_dominion.svg</imageName> 
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -59,7 +59,7 @@
 					</itemTagsRemoved> 
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL))
-							Only Patrol Enforcers can use this cap badge!
+							Эту кокарду могут носить только патрульные Enforcer!
 						#ENDIF
 					]]></unavailabilityText> 
 					<availabilityText>
@@ -68,9 +68,9 @@
 				</sticker>
 				<sticker id="badge_elis" priority="2" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_PHYSICAL"> 
 					<stickerName><![CDATA[Elis]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Elis Enforcer ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Элис ]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the badge of the Elis Frontline Patrol attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Элиса.</i>]]></descriptionModification>
 					<imageName>pcap_st_badge_elis.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -80,7 +80,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL))
-							Only Patrol Enforcers can use this cap badge!
+							Эту кокарду могут носить только патрульные Enforcer!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -89,9 +89,9 @@
 				</sticker>
 				<sticker id="badge_thinis" priority="3" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_FIRE">
 					<stickerName><![CDATA[Thinis]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Thinis Enforcer ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Тинис]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the badge of the Thinis Frontline Patrol attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Тинис.</i>]]></descriptionModification>
 					<imageName>pcap_st_badge_thinis.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -101,7 +101,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL))
-							Only Patrol Enforcers can use this cap badge!
+							Эту кокарду могут носить только патрульные Enforcer!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -110,9 +110,9 @@
 				</sticker>
 				<sticker id="badge_itzaaak" priority="4" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_POISON">
 					<stickerName><![CDATA[Itza'aak]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Itza'aak Enforcer ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Ицаак]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the badge of the Itza'aak Frontline Patrol attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Ицаак.</i>]]></descriptionModification>
 					<imageName>pcap_st_badge_itzaaak.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -122,7 +122,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL))
-							Only Patrol Enforcers can use this cap badge!
+							Эту кокарду могут носить только патрульные Enforcer!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -131,9 +131,9 @@
 				</sticker>
 				<sticker id="badge_lyonesse" priority="5" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="DAMAGE_TYPE_COLD">
 					<stickerName><![CDATA[Lyonesse]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Lyonesse Enforcer ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Enforcer Лионесс]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the badge of the Lyonesse Frontline Patrol attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон передового патруля Лионесс.</i>]]></descriptionModification>
 					<imageName>pcap_st_badge_lyonesse.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -143,7 +143,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(!pc.hasOccupationTag(OCCUPATION_TAG_ENFORCER_PATROL))
-							Only Patrol Enforcers can use this cap badge!
+							Эту кокарду могут носить только патрульные Enforcer!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -152,9 +152,9 @@
 				</sticker>
 				<sticker id="badge_cm" priority="6" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_PURPLE">
 					<stickerName><![CDATA[Commissioner]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Enforcer Commissioner ]]></namePrefix>
+					<namePrefix priority="1"><![CDATA[Комиссар Enforcer]]></namePrefix>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the badge of the Commissioner's Office attached to it.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> К этой кепке прикреплен жетон канцелярии Комиссара.</i>]]></descriptionModification>
 					<imageName>pcap_st_badge_cm.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -164,7 +164,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Commissioner can use this cap badge!
+							Этот жетон может носить только Enforcer в звании Комиссара!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -173,7 +173,7 @@
 				</sticker>
 			</category>
 			<category id="oakleaves" priority="2">
-				<categoryName><![CDATA[Oak Leaves]]></categoryName>
+				<categoryName><![CDATA[Дубовые листья]]></categoryName>
 				<sticker id="None" priority="0" defaultSticker="true" zLayer="2" colourSelected="TEXT_GREY">
 					<namePrefix/>
 					<namePostfix/>
@@ -188,7 +188,7 @@
 					<stickerName><![CDATA[Deputy Commissioner]]></stickerName>
 					<namePrefix/>
 					<namePostfix/>
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has the single row of oak leaves of a Deputy Commissioner.</i>]]></descriptionModification>
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> На этом значке изображен единственный ряд дубовых листьев, соответствующий рангу заместителя комиссара.</i>]]></descriptionModification>
 					<imageName>pcap_st_oakleaves_dm.svg</imageName>
 					<itemTagsAdded>
 						<tag>CONTRABAND_HEAVY</tag>
@@ -198,7 +198,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Deputy Commissioner can use this cap badge!
+							Этот кокардный знак могут носить только Enforcer в звании заместителя комиссара!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -219,7 +219,7 @@
 					</itemTagsRemoved>
 					<unavailabilityText showDisabledButton="true"><![CDATA[
 						#IF(true)
-							Only Enforcers who hold a rank of Commissioner can use this cap badge!
+							Этот жетон может носить только Enforcer в звании Комиссара!
 						#ENDIF
 					]]></unavailabilityText>
 					<availabilityText>
@@ -270,25 +270,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] the peaked cap on.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] кепку на голову.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(put)] the peaked cap on [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] кепку на голову [npc2.namePos].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] the peaked cap down on [npc2.namePos] head.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] нахлобучивает кепку на голову [npc2.namePos].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(take)] [npc.her] peaked cap off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(take)] кепку с головы [npc.her].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(take)] [npc2.namePos] peaked cap off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(take)] [npc2.namePos] кепку с козырьком.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(slap)] [npc2.namePos] peaked cap off.]]>
+		  <![CDATA[[npc.Name] [npc.verb(slap)] [npc2.namePos] кепку с козырьком.]]>
 		</otherRough>
 	</displacementText>
 	

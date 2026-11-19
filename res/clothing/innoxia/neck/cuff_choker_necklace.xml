@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>250</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[cuff choker necklace]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[cuff choker necklaces]]></namePlural>
-		<description><![CDATA[A solid band of metal with a gap at the back, allowing it to be fitted onto someone's neck.]]></description>
+		<name><![CDATA[чокер-манжет]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[чокеры-манжеты]]></namePlural>
+		<description><![CDATA[Цельная металлическая полоса с прорезью сзади, позволяющая застегнуть её на шее.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
     <equipSlots>
@@ -45,24 +45,24 @@
 
   <replacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] securely [npc.verb(slot)] the cuff choker necklace around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] плотно [npc.verb(slot)] чокер-манжет на шее [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] securely [npc.verb(slot)] the cuff choker necklace around [npc2.namePos] neck.]]>
+      <![CDATA[[npc.Name] плотно [npc.verb(slot)] чокер-манжет на шее [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.name], before forcing the cuff choker necklace around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] крепко [npc.verb(grab)] [npc2.name], прежде чем силой натянуть чокер-манжет на шею [npc2.her].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="NECK" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc.her] cuff choker necklace off from around [npc.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] чокер-манжет [npc.her] с шеи [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] [npc2.namePos] cuff choker necklace off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] чокер-манжет [npc2.namePos] с шеи [npc2.her].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] [npc2.namePos] cuff choker necklace off from around [npc2.her] neck.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] чокер-манжет [npc2.namePos] с шеи [npc2.her].]]>
     </otherRough>
   </displacementText>
 	

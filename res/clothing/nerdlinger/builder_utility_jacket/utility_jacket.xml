@@ -5,11 +5,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[utility jacket]]></name>
+		<name><![CDATA[рабочая куртка]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[utility jackets]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[рабочие куртки]]></namePlural> 
 		
-		<description><![CDATA[A sleeveless jacket made from a thick, wear-resistant fabric. It's lined with multiple pockets, making it any handyman's favourite.]]></description> 
+		<description><![CDATA[Жилетка из плотной, износостойкой ткани без рукавов. Она усыпана множеством карманов, что делает её любимым предметом любого мастера на все руки.]]></description> 
 		
 		<physicalResistance>0.5</physicalResistance> 
 		

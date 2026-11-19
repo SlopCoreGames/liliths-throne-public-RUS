@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ass>
 	<race>NoStepOnSnek_snake</race>
-	<transformationName><![CDATA[snake]]></transformationName>
+	<transformationName><![CDATA[змея]]></transformationName>
 	<coveringType>SNAKE_SCALES</coveringType>
 	<anusType>NoStepOnSnek_snake_anus</anusType>
 	<names/>
@@ -9,9 +9,9 @@
 	<descriptorsMasculine/>
 	<descriptorsFeminine/>
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] a [style.boldSnake(snake-like)], [npc.assholeFullDescription].
+		[npc.She] теперь [npc.has] [style.boldSnake(snake-like)], [npc.assholeFullDescription].
 	]]></transformationDescription>
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] a snake-like, [npc.anusFullDescription(true)]
+		[npc.SheHasFull] змееподобный, [npc.anusFullDescription(true)]
 	]]></bodyDescription>
 </ass>

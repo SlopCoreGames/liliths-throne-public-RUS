@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>100</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[tail bandage]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[tail bandages]]></namePlural>
-    <description><![CDATA[A length of bandage, which has been enchanted so as to automatically wrap itself around someone's tail in order to protect it from damage and to keep loose hair away from machinery.]]></description>
+    <name><![CDATA[бинты для хвоста]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[бинты для хвоста]]></namePlural>
+    <description><![CDATA[Кусок бинта, на который наложено заклинание: он сам собой обволакивает хвост, защищая его от повреждений и не давая волосам запутаться в механизмах.]]></description>
 
     <physicalResistance>0</physicalResistance>
     <femininity>ANDROGYNOUS</femininity>
@@ -49,25 +49,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(move)] the bandage close to [npc.her] [npc.tail], at which point the arcane enchantment activates, and within seconds it's wrapped itself securely in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(move)] подносит бинт к [npc.her] [npc.tail], после чего срабатывает арканальное зачарование, и через несколько секунд бинт плотно фиксируется на месте.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(move)] the bandage close to [npc2.namePos] [npc2.tail], at which point the arcane enchantment activates, and within seconds it's wrapped itself securely in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(move)] подносит бинт к [npc2.namePos] [npc2.tail], после чего срабатывает арканальное зачарование, и через несколько секунд бинт плотно фиксируется на месте.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] [npc.verb(move)] the bandage close to [npc2.namePos] [npc2.tail], at which point the arcane enchantment activates, and within seconds it's wrapped itself securely in place.]]>
+			<![CDATA[[npc.Name] [npc.verb(move)] подносит бинт к [npc2.namePos] [npc2.tail], после чего срабатывает арканальное зачарование, и через несколько секунд бинт плотно фиксируется на месте.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] at the bandage and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] за бинт и [npc.verb(take)] его.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] at [npc2.namePos] bandage and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] за [npc2.namePos] бинт и [npc.verb(take)] его.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] impatiently [npc.verb(pull)] at [npc2.namePos] bandage and [npc.verb(take)] it off.]]>
+			<![CDATA[[npc.Name] нетерпеливо [npc.verb(pull)] за [npc2.namePos] бинт и [npc.verb(take)] его.]]>
 		</otherRough>
 	</displacementText>
 

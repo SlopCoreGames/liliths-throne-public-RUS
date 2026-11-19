@@ -12,14 +12,14 @@
 	
 	<conditionalPreParsing/>
 	
-	<name defaultPrepend="true"><![CDATA[Androgyny]]></name>
+	<name defaultPrepend="true"><![CDATA[Андрогинность]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
-		It's so fun when nobody knows if you're a girl or a guy!
+		Так весело, когда никто не может понять, девушка ты или парень!
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
-		You look perfect!
+		Ты выглядишь идеально!
 	]]></applicationSpeechEnd>
 	
 	<potionEffects>

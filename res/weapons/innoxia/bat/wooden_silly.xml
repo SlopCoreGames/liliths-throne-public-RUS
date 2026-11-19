@@ -6,21 +6,21 @@
 		<melee>true</melee>
 		<twoHanded>false</twoHanded>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[wooden 'BONK!' bat]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[wooden 'BONK!' bats]]></namePlural>
-		<description><![CDATA[A smooth wooden club used to strike a ball as a form of sport. This particular bat has been enchanted to bonk the horny out of people.]]></description> 
+		<name><![CDATA[деревянная бита «БАНК!»]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[деревянные биты «БАНК!»]]></namePlural>
+		<description><![CDATA[Гладкая деревянная бита, используемая для игры в мяч. Эта конкретная бита зачарована на то, чтобы выбивать всю похоть из людей одним точным ударом.]]></description> 
 		
 		<attackDescriptor>bonk</attackDescriptor>
 		
-		<attackTooltipDescription><![CDATA[Send [npc2.name] to horny jail.]]></attackTooltipDescription>
+		<attackTooltipDescription><![CDATA[Отправить [npc2.name] в похотливую тюрьму.]]></attackTooltipDescription>
 		
 		<rarity>LEGENDARY</rarity> 
 		
 		<weaponSet/> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] wooden 'BONK!' bat in anticipation of sending some people to horny jail.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] деревянную биту «БАНК!», предвкушая, как отправит кого-нибудь в похотливую тюрьму.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] away [npc.her] wooden 'BONK!' bat.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] на место [npc.her] деревянную биту «БАНК!».]]></unequipText>
 		
 		<imageName>wooden_silly.svg</imageName> 
 		
@@ -46,14 +46,14 @@
 		</effects>
 		
 		<extraEffects>
-			<effect><![CDATA[[style.colourMinorBad(-25)] [style.colourLust(lust)] on hit]]></effect>
-			<effect><![CDATA[[style.colourExcellent(Instantly defeats)] 0-lust enemies]]></effect>
+			<effect><![CDATA[[style.colourMinorBad(-25)] [style.colourLust(lust)] при попадании]]></effect>
+			<effect><![CDATA[[style.colourExcellent(Мгновенно побеждает)] врагов с 0-похотью]]></effect>
 		</extraEffects>
 		
 		<onHitEffect><![CDATA[
 		#IF(npc2.getLust()>0 && npc2.getLust()<=25)
 			[##npc2.setHealth(0)]
-			<i>Having had all of the horny bonked out of [npc2.herHim], [npc2.name] is [style.italicsExcellent(instantly defeated)]!</i>
+			<i>Вся похоть была выбита из [npc2.herHim], так что [npc2.name] [style.italicsExcellent(мгновенно повержен)]!</i>
 		#ENDIF
 		[#npc2.incrementLust(-25, false)]
 		]]></onHitEffect>
@@ -82,25 +82,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(bonk)] [npc2.name] with [npc.her] wooden 'BONK!' bat in an attempt to send [npc2.herHim] straight to horny jail!
+		[npc.Name] [npc.verb(bonk)] [npc2.name] с помощью [npc.her] деревянной биты «БАНК!», пытаясь отправить [npc2.herHim] прямиком в похотливую тюрьму!
 		]]></hitText>
 		<hitText><![CDATA[
-		Whacking [npc2.name] with [npc.her] wooden 'BONK!' bat, [npc.name] [npc.verb(grin)] as [npc.she] [npc.verb(bonk)] the horny right out of [npc2.herHim]!
+		Ударяешь [npc2.name] деревянной битой «БОНК!» [npc.her], [npc.name] [npc.verb(grin)], выбивая всю похоть из [npc2.herHim] с помощью [npc.she] [npc.verb(bonk)]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(bonk)] [npc2.name] with [npc.her] wooden 'BONK!' bat, causing [npc2.herHim] to stagger back and stop being so outrageously horny!
+		[npc.Name] [npc.verb(bonk)] [npc2.name] деревянной битой «БОНК!» [npc.her], заставляя [npc2.herHim] пошатнуться и наконец перестать быть такой неистово похотливой!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		[npc.Name] [npc.verb(swing)] [npc.her] wooden 'BONK!' bat at [npc2.name], but [npc.verb(end)] up missing [npc2.herHim]!
+		[npc.Name] [npc.verb(swing)] деревянной битой «БОНК!» [npc.her] по [npc2.name], но в итоге [npc.verb(end)] промахивается мимо [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		Striking out at [npc2.name] with [npc.her] wooden 'BONK!' bat, [npc.name] [npc.verb(let)] out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Замахиваешься на [npc2.name] деревянной битой «БОНК!» [npc.her], [npc.name] [npc.verb(let)] разочарованно вскрикнуть, когда [npc.she] [npc.verb(miss)] цель [npc.her]!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(swipe)] at [npc2.name] with [npc.her] wooden 'BONK!' bat, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(swipe)] по [npc2.name] деревянной битой «БОНК!» [npc.her], но [npc.she] [npc.verb(miss)] цель [npc.her]!
 		]]></missText>
 	</missDescriptions>
 	

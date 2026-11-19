@@ -5,15 +5,15 @@
 		<melee>false</melee>
 		<twoHanded>true</twoHanded>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[arcane musket]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[arcane muskets]]></namePlural>
-		<description><![CDATA[Thanks to the efforts of you and Meraxis, the township of Elis is producing as many of these arcane muskets as they possibly can. Instead of bullets, these smoothbore long guns fire bolts of arcane energy, and give even the most inexperienced member of the militia a fighting chance against Lunette's demonic centaurs.]]></description>
+		<name><![CDATA[арканный мушкет]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[арканные мушкеты]]></namePlural>
+		<description><![CDATA[Благодаря твоим усилиям и стараниям Мераксиса, городок Элис производит столько этих арканных мушкетов, сколько только может. Вместо пуль эти гладкоствольные длинноствольные ружья выпускают сгустки арканной энергии, давая даже самому неопытному ополченцу шанс выстоять против демонических кентавров Лунетт.]]></description>
 		<attackDescriptor>shoot</attackDescriptor>
 		<attackTooltipDescription>Point your musket at [npc.name] and fire!</attackTooltipDescription>
 		<rarity>LEGENDARY</rarity>
 		<weaponSet/>
-		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] arcane musket.]]></equipText>
-		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arcane musket away.]]></unequipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(ready)] [npc.her] арканный мушкет.]]></equipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(put)] [npc.her] арканный мушкет.]]></unequipText>
 		<imageName>arcane_musket.svg</imageName>
 		<imageEquippedName/>
 		<damage>150</damage>
@@ -40,26 +40,24 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Aiming and firing [npc.her] arcane musket, [npc.name] [npc.verb(manage)] to hit [npc2.name] with a powerful arcane bullet!
+		Прицелившись и выстрелив из [npc.her] арканного мушкета, [npc.name] [npc.verb(manage)] попасть в [npc2.name] мощной арканной пулей!
 		]]></hitText>
 		<hitText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] arcane musket, [npc.name] [npc.verb(pull)] the trigger, unleashing a powerful blast of arcane energy that slams into [npc2.namePos] torso!
+		Прицелившись в [npc2.name] из [npc.her] арканного мушкета, [npc.name] [npc.verb(pull)] затвор, высвобождая мощный заряд арканной энергии, который врезается в торс [npc2.namePos]!
 		]]></hitText>
 		<hitText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane musket, and, pulling the trigger, [npc.she] [npc.verb(manage)] to hit [npc2.herHim] right in the chest!
+		[npc.Name] [npc.verb(aim)] в [npc2.name] из [npc.her] арканного мушкета и, нажав на курок, [npc.she] [npc.verb(manage)] попасть [npc2.herHim] прямо в грудь!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Aiming and firing [npc.her] arcane musket, [npc.name] [npc.verb(miss)] [npc2.name]!
+		Прицелившись и выстрелив из [npc.her] арканного мушкета, [npc.name] [npc.verb(miss)] [npc2.name]!
 		]]></missText>
 		<missText><![CDATA[
-		Taking aim at [npc2.name] with [npc.her] arcane musket, [npc.name] [npc.verb(pull)] the trigger, letting out a frustrated cry as [npc.she] [npc.verb(miss)] [npc.her] target!
+		Прицелившись в [npc2.name] из [npc.her] арканного мушкета, [npc.name] [npc.verb(pull)] затвор, издавая разочарованный крик, когда [npc.she] [npc.verb(miss)] цель [npc.her]!
 		]]></missText>
-		<missText><![CDATA[
-		[npc.Name] [npc.verb(aim)] at [npc2.name] with [npc.her] arcane musket and [npc.verb(pull)] the trigger, but [npc.she] [npc.verb(end)] up missing [npc.her] target!
-		]]></missText>
+		<missText><![CDATA[[npc.Name] [npc.verb(aim)] на [npc2.name], сжимая в руках [npc.her] аркана-мушкет, и [npc.verb(pull)] за курок, но [npc.she] [npc.verb(end)] всё равно промахивается мимо [npc.her]!]]></missText>
 	</missDescriptions>
 	
 </weapon>

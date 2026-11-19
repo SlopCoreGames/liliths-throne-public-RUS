@@ -4,7 +4,7 @@
 	You can see another annotated example in the 'res/setBonuses/innoxia/enforcer.xml'-->
 	
 	<!-- The name of this set bonus -->
-	<name><![CDATA[Dutiful Enforcer]]></name>
+	<name><![CDATA[Послушный Enforcer]]></name>
 	
 	<!-- The id of the status effect which should be applied when a character is under the effect of this set bonus. -->
 	<statusEffect>dsg_set_enforcer_service</statusEffect>

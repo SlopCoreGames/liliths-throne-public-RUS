@@ -143,20 +143,20 @@
 	Formatting for bipeds (which should probably be left to be covered by the 'namesDefault' element) should usually follow the pattern of X-morph, X-boy, X-girl. -->
 	<nameAnthro>
 		<namesDefault> <!-- You must include this 'namesDefault' element, which will be used for any undefined legConfiguration names (for example, if the player somehow became a TAIL_LONG salamander). -->
-			<name><![CDATA[flame salamander-morph]]></name>
-			<namePlural><![CDATA[flame salamander-morphs]]></namePlural>
-			<singularMaleName><![CDATA[flame salamander-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[flame salamander-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[flame salamander-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[flame salamander-girls]]></pluralFemaleName>
+			<name><![CDATA[морф огненной саламандры]]></name>
+			<namePlural><![CDATA[морфы огненных саламандр]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-огненная саламандра]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-огненная саламандра]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-огненные саламандры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-огненные саламандры]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="QUADRUPEDAL"> <!-- This is the usual naming pattern for quadrupeds, even if the names do get a little unwieldy at times... -->
-			<name><![CDATA[flame salamandertaur]]></name>
-			<namePlural><![CDATA[flame salamandertaurs]]></namePlural>
-			<singularMaleName><![CDATA[flame salamandertaur]]></singularMaleName>
-			<singularFemaleName><![CDATA[flame salamandertauress]]></singularFemaleName>
-			<pluralMaleName><![CDATA[flame salamandertaurs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[flame salamandertauresses]]></pluralFemaleName>
+			<name><![CDATA[огненная саламандертавра]]></name>
+			<namePlural><![CDATA[огненные саламандертавры]]></namePlural>
+			<singularMaleName><![CDATA[огненная саламандертавра]]></singularMaleName>
+			<singularFemaleName><![CDATA[огненная саламандертаврес]]></singularFemaleName>
+			<pluralMaleName><![CDATA[огненные саламандертавры]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[саламандры-таврес огня]]></pluralFemaleName>
 		</names>
 	</nameAnthro>
 	
@@ -164,26 +164,26 @@
 	See the 'res/race/NoStepOnSnek/snake/subspecies/snake.xml' file for an example in use. -->
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic flame salamander, known as a 'flame salamander-morph' when bipedal, and a 'flame salamandertaur' when the lower body is that of a typically-oversized feral flame salamander.]]></description>
+	<description><![CDATA[Антропоморфная саламандра огня, известная как «саламандра-мор огня», когда она передвигается на двух ногах, и «саламандра-тавр огня», когда её нижняя часть тела представляет собой типично огромную дикую саламандру огня.]]></description>
 	
 	<!-- Names for this subspecies when the character is a half-demon.
 	You can omit these altogether, in which case the game will automatically generate a generic half-demon name for your subspecies, based on the names you've defined in the 'nameAnthro' element up above. -->
 	<nameHalfDemon>
 		<namesDefault> <!-- You must include this 'namesDefault' element, which will be used for any undefined legConfiguration names (for example, if the player somehow became a TAIL_LONG salamander). -->
-			<name><![CDATA[hellfire salamander-morph]]></name>
-			<namePlural><![CDATA[hellfire salamander-morphs]]></namePlural>
-			<singularMaleName><![CDATA[hellfire salamander-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[hellfire salamander-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[hellfire salamander-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[hellfire salamander-girls]]></pluralFemaleName>
+			<name><![CDATA[саламандра-мор адского пламени]]></name>
+			<namePlural><![CDATA[саламандры-моры адского пламени]]></namePlural>
+			<singularMaleName><![CDATA[мальчик-саламандра адского пламени]]></singularMaleName>
+			<singularFemaleName><![CDATA[девочка-саламандра адского пламени]]></singularFemaleName>
+			<pluralMaleName><![CDATA[мальчики-саламандры адского пламени]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девочки-саламандры адского пламени]]></pluralFemaleName>
 		</namesDefault>
 		<names legConfiguration="QUADRUPEDAL"> <!-- This is the usual naming pattern for quadrupeds, even if the names do get a little unwieldy at times... -->
-			<name><![CDATA[hellfire salamandertaur]]></name>
-			<namePlural><![CDATA[hellfire salamandertaurs]]></namePlural>
-			<singularMaleName><![CDATA[hellfire salamandertaur]]></singularMaleName>
-			<singularFemaleName><![CDATA[hellfire salamandertauress]]></singularFemaleName>
-			<pluralMaleName><![CDATA[hellfire salamandertaurs]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[hellfire salamandertauresses]]></pluralFemaleName>
+			<name><![CDATA[саламандра-тавр адского пламени]]></name>
+			<namePlural><![CDATA[саламандры-тавры адского пламени]]></namePlural>
+			<singularMaleName><![CDATA[саламандра-тавр адского пламени]]></singularMaleName>
+			<singularFemaleName><![CDATA[саламандра-тауресса адского пламени]]></singularFemaleName>
+			<pluralMaleName><![CDATA[саламандры-тавры адского пламени]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[саламандры-таурессы адского пламени]]></pluralFemaleName>
 		</names>
 	</nameHalfDemon>
 	
@@ -191,12 +191,12 @@
 	<feralAttributes>
 		<!-- As ferals can only be of one leg configuration, there is no need to define names based on a 'legConfiguration' attribute as done with half-demons and anthro names.
 		As such, just define your names like so: -->
-		<name><![CDATA[flame salamander]]></name>
-		<namePlural><![CDATA[flame salamanders]]></namePlural>
-		<singularMaleName><![CDATA[flame salamander]]></singularMaleName>
-		<singularFemaleName><![CDATA[flame salamander]]></singularFemaleName>
-		<pluralMaleName><![CDATA[flame salamanders]]></pluralMaleName>
-		<pluralFemaleName><![CDATA[flame salamanders]]></pluralFemaleName>
+		<name><![CDATA[огненная саламандра]]></name>
+		<namePlural><![CDATA[огненные саламандры]]></namePlural>
+		<singularMaleName><![CDATA[огненная саламандра]]></singularMaleName>
+		<singularFemaleName><![CDATA[огненная саламандра]]></singularFemaleName>
+		<pluralMaleName><![CDATA[огненные саламандры]]></pluralMaleName>
+		<pluralFemaleName><![CDATA[огненные саламандры]]></pluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -234,7 +234,7 @@
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] salamander-like body is very fast which, along with a natural affinity for arcane fire, makes [npc.herHim] a formidable opponent.
+		[npc.NamePos] обладает очень быстрым, похожим на саламандру телом, что в сочетании с природной склонностью к арканическому огню делает [npc.herHim] грозным противником.
 	]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.

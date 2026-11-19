@@ -10,7 +10,7 @@
 	<race>dsg_shark</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[shark finned]]></transformationName>
+	<transformationName><![CDATA[акульи плавники]]></transformationName>
 	
 	<!-- The id of the material covering this arm.
 	The id will typically take the form of 'innoxia_hyena_fur'.
@@ -31,8 +31,8 @@
 	
 	<!-- The singular and plural name of this arm type.
 	These should be left as 'arm' and 'arms' for standard arm types, and changed to 'wing' and 'wings' if your arm type are wings (such as those found on harpies or bat-morphs). -->
-	<name><![CDATA[arm]]></name>
-	<namePlural><![CDATA[arms]]></namePlural> 
+	<name><![CDATA[рука]]></name>
+	<namePlural><![CDATA[руки]]></namePlural> 
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's arm of this type.
 	Can be left blank. -->
@@ -49,8 +49,8 @@
 	</descriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's hands: -->
-	<handName><![CDATA[hand]]></handName>
-	<handNamePlural><![CDATA[hands]]></handNamePlural>
+	<handName><![CDATA[кисть]]></handName>
+	<handNamePlural><![CDATA[кисти]]></handNamePlural>
 	<handDescriptorsMasculine>
 		<descriptor>shark-like</descriptor>
 	</handDescriptorsMasculine>
@@ -61,8 +61,8 @@
 	</handDescriptorsFeminine>
 	
 	<!-- Same naming formats as those for the arm type above, but these describe the arm's fingers: -->
-	<fingerName><![CDATA[finger]]></fingerName>
-	<fingerNamePlural><![CDATA[fingers]]></fingerNamePlural>
+	<fingerName><![CDATA[палец]]></fingerName>
+	<fingerNamePlural><![CDATA[пальцы]]></fingerNamePlural>
 	<fingerDescriptorsMasculine>
 		<descriptor>shark-like</descriptor>
 	</fingerDescriptorsMasculine>
@@ -74,14 +74,12 @@
 	
 	<!-- The description which is shown when a character transforms to obtain this arm type.
 	This description immediately follows a brief description of the arm type beginning to transform. -->
-	<transformationDescription><![CDATA[
-		Within a matter of moments, [npc.she] [npc.verb(see)] tough sharkskin growing over [npc.her] hands and up [npc.her] arms, leaving [npc.her] surprisingly normal fingernails. Squat protrusions vaguely resembling the pectoral fins of a shark erupt from [npc.her] forearms. At [npc.her] upper-biceps, [npc.her] sharkskin gradually transitions into the [npc.skin] that's covering the rest of [npc.her] body.
-		<br/>As the transformation comes to an end, [npc.nameIsFull] left with anthropomorphic, [style.boldShark(shark-like arms and hands)], which are [npc.materialDescriptor] [npc.armFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Буквально за мгновение [npc.she] [npc.verb(see)] как на [npc.her] руках и выше по [npc.her] предплечьям прорастает грубая акулья кожа, оставляя [npc.her] на удивление обычные ногти. Из [npc.her] предплечий пробиваются приземистые выросты, отдаленно напоминающие грудные плавники акулы. На [npc.her] верхней части бицепса [npc.her] акулья кожа постепенно переходит в [npc.skin], покрывающую остальное тело [npc.her].
+<br/>Когда трансформация завершается, [npc.nameIsFull] остаешься с антропоморфными, [style.boldShark(акулоподобными руками и кистями)], которые [npc.materialDescriptor] [npc.armFullDescription].]]></transformationDescription>
 	
 	<!-- How these arms are described in a character's description page. -->
 	<bodyDescription><![CDATA[
-	[npc.She] [npc.has] [npc.armRows] arms, which are [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. Protruding from [npc.her] forearms are fins vaguely resembling the pectoral fins of a shark but much shorter and more swept-back. [npc.Her] hands are formed into anthropomorphic, shark-like hands with surprisingly normal fingernails.
+	[npc.She] [npc.has] [npc.armRows] руки, которые являются [npc.materialCompositionDescriptor] [npc.armFullDescription(true)]. Из [npc.her] предплечий выступают плавники, отдаленно напоминающие грудные плавники акулы, но гораздо более короткие и загнутые назад. [npc.Her] кисти превращаются в антропоморфные, акульи руки с на удивление обычными ногтями.
 	]]></bodyDescription>
 	
 </arm>

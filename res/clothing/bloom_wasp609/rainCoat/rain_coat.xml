@@ -6,11 +6,11 @@
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[raincoat]]></name>
+		<name><![CDATA[дождевик]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[raincoats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[дождевики]]></namePlural> 
 		
-		<description><![CDATA[A waterproof raincoat, complete with hood and soft inner-lining. It's long enough in the leg to keep the wearer's groin hidden from sight.]]></description> 
+		<description><![CDATA[Водонепроницаемый дождевик с капюшоном и мягкой подкладкой. Он достаточно длинный, чтобы полностью скрывать пах владельца от посторонних глаз.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		

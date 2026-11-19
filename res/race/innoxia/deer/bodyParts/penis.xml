@@ -2,7 +2,7 @@
 <penis>
 	<race>innoxia_deer</race>
 	
-	<transformationName><![CDATA[deer]]></transformationName>
+	<transformationName><![CDATA[олень]]></transformationName>
 	
 	<coveringType>PENIS</coveringType>
 	
@@ -11,17 +11,17 @@
 	<additionalTransformationEffect/>
 	
 	<namesMasculine>
-		<name><![CDATA[deer-]]></name>
+		<name><![CDATA[олений-]]></name>
 	</namesMasculine>
 	<namesPluralMasculine>
-		<name><![CDATA[deer-]]></name>
+		<name><![CDATA[олений-]]></name>
 	</namesPluralMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[deer-]]></name>
+		<name><![CDATA[олений-]]></name>
 	</namesFeminine>
 	<namesPluralFeminine>
-		<name><![CDATA[deer-]]></name>
+		<name><![CDATA[олений-]]></name>
 	</namesPluralFeminine>
 	
 	<descriptors/>
@@ -31,12 +31,12 @@
 	</defaultPenetrationModifiers>
 	
 	<transformationDescription><![CDATA[
-		Letting out an involuntary moan, [npc.name] [npc.verb(feel)] [npc.her] penis shifting into a new form, and [npc.sheIs] hit by a wave of overwhelming arousal as a thick sheath suddenly grows around the base of [npc.her] shaft.
-		<br/>[npc.She] now [npc.has] a [style.boldGoat(deer-like penis)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
+		 way, невольно застонав, [npc.name] [npc.verb(feel)] [npc.her] пенис, принимающий новую форму, и [npc.sheIs] накрывает волна непреодолимого возбуждения, когда у основания [npc.her] ствола внезапно вырастает толстая кожаная оболочка.
+		<br/>[npc.She] теперь [npc.has] [style.boldGoat(оленье подобие пениса)], [npc.materialDescriptor] [npc.penisFullDescription(true)].
 		<br/>[npc.She] [npc.has] [style.boldGoat([npc.ballsCount]#IF(npc.isInternalTesticles()) internal#ELSE deer#ENDIF balls)], [npc.materialDescriptor] [npc.ballsFullDescription(true)], which produce [npc.cumColour(true)] [style.boldGoat(deer cum)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] deer cock, which is [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
-	]]></bodyDescription>
+		[npc.She] [npc.has] [npc.a_cockGirth], [npc.cockLengthValue] олений член, который [npc.materialCompositionDescriptor] [npc.cockFullDescription(true)].
+		]]></bodyDescription>
 </penis>

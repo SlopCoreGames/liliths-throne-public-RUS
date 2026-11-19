@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>1000</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[latex open thigh-high stockings]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[latex open thigh-high stockings]]></namePlural>
-		<description><![CDATA[A pair of open thigh-high latex stockings that leave the heels and toes uncovered. They are made from shiny latex material that conforms to the shape of the leg leaving nothing to the imagination.]]></description>
+		<name><![CDATA[латексные чулки выше колена с открытыми стопами]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[латексные чулки выше колена с открытыми стопами]]></namePlural>
+		<description><![CDATA[Пара латексных чулок выше колена, оставляющих пятки и пальцы ног открытыми. Они сделаны из блестящего латекса, который плотно облегает ногу, не оставляя места для воображения.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>SOCK</slot> 
@@ -52,25 +52,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] on the latex stockings before pulling them all the way up to [npc.her] mid-thigh.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] латексные чулки, прежде чем натянуть их до [npc.her] середины бедра.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] the latex stockings onto [npc2.namePos] [npc2.feet], before pulling them all the way up to [npc2.her] mid-thigh.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] латексные чулки на [npc2.namePos] [npc2.feet], а затем натягивает их до [npc2.her] середины бедра.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] the latex stockings onto [npc2.namePos] [npc2.feet], before pulling them all the way up to [npc2.her] mid-thigh.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] латексные чулки на [npc2.namePos] [npc2.feet], а затем натягивает их до [npc2.her] середины бедра.]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] thigh-high latex stockings.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] латексные чулки выше колена.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] thigh-high latex stockings.]]>
+      <![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] латексные чулки выше колена.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] thigh-high latex stockings.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] латексные чулки выше колена.]]>
     </otherRough>
   </displacementText>
 	

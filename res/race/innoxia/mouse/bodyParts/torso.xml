@@ -2,7 +2,7 @@
 <torso>
 	<race>innoxia_mouse</race>
 	
-	<transformationName><![CDATA[mouse]]></transformationName>
+	<transformationName><![CDATA[мышь]]></transformationName>
 	
 	<coveringType>innoxia_mouse_fur</coveringType>
 	
@@ -10,12 +10,10 @@
 	
 	<descriptorsFeminine/>
 	
-	<transformationDescription><![CDATA[
-		After just a few moments, the transformation comes to an end, and [npc.she] [npc.verb(let)] out a deep sigh as the itching finally stops, leaving [npc.her] torso covered with mouse-like fur. [npc.Her] new, close-cropped fur follows the lines of [npc.her] figure and is very smooth and soft.
-		<br/>[npc.Name] now [npc.has] [style.boldMouse(mouse-like)], [npc.skinFullDescription].
-	]]></transformationDescription>
+	<transformationDescription><![CDATA[Спустя всего несколько мгновений трансформация завершается, и [npc.she] [npc.verb(let)] глубоко вздохнуть — зуд наконец утихает, оставляя [npc.her] торс покрытым мышиным мехом. [npc.Her] новый, короткий мех повторяет контуры [npc.her] фигуры; он очень гладкий и мягкий.
+<br/>[npc.Name] теперь [npc.has] [style.boldMouse(mouse-like)], [npc.skinFullDescription].]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.Her] torso has [npc.a_femininity(true)] appearance, and is [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
+		Торс [npc.Her] обладает [npc.a_femininity(true)] видом и [npc.materialCompositionDescriptor] [npc.skinFullDescription(true)].
 	]]></bodyDescription>
 </torso>

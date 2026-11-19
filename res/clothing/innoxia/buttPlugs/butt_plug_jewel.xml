@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>200</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[jewelled butt plug]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[jewelled butt plugs]]></namePlural>
-		<description><![CDATA[A metal plug, designed to be inserted into someone's anus. The cap has a pretty gemstone fixed into it.]]></description>
+		<name><![CDATA[украшенный драгоценным камнем анальный плаг]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[украшенные драгоценными камнями анальные плаги]]></namePlural>
+		<description><![CDATA[Металлический плаг, предназначенный для введения в анус. На основании закреплен изящный драгоценный камень.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>ANUS</slot>
@@ -58,25 +58,25 @@
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(push)] the butt plug into [npc.her] [npc.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] анальную пробку в [npc.her] [npc.asshole+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(push)] the butt plug into [npc2.namePos] [npc2.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(push)] анальную пробку в [npc2.namePos] [npc2.asshole+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(hold)] [npc2.name] still as [npc.she] roughly [npc.verb(force)] the butt plug into [npc2.her] [npc2.asshole+].]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(hold)] [npc2.name] на месте, пока [npc.she] грубо [npc.verb(force)] анальную пробку в [npc2.her] [npc2.asshole+].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the butt plug out from [npc.her] [npc.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] анальную пробку из [npc.her] [npc.asshole+].]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] the butt plug out from [npc2.namePos] [npc2.asshole+].]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] анальную пробку из [npc2.namePos] [npc2.asshole+].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] firmly [npc.verb(grab)] [npc2.namePos] butt plug and [npc.verb(yank)] it out of [npc2.her] [npc2.asshole+].]]>
+			<![CDATA[[npc.Name] крепко [npc.verb(grab)] анальную пробку [npc2.namePos] и [npc.verb(yank)] её из [npc2.her] [npc2.asshole+].]]>
 		</otherRough>
 	</displacementText>
 	

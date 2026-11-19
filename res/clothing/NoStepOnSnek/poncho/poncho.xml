@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <clothing>
 	<coreAttributes>
-		<clothingAuthorTag><![CDATA[A tag discreetly sewn into the poncho's inner lining informs you that it was made by 'Serpentia Silk&Satin Ltd.'.]]></clothingAuthorTag>
+		<clothingAuthorTag><![CDATA[Маленькая бирка, незаметно пришитая к внутренней подкладке пончо, сообщает тебе, что его изготовила компания «Serpentia Silk&Satin Ltd.».]]></clothingAuthorTag>
 
 		<value>750</value> 
 		
 		<determiner><![CDATA[a]]></determiner>
 		
-		<name><![CDATA[poncho]]></name>
+		<name><![CDATA[пончо]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[ponchos]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[пончо]]></namePlural> 
 		
-		<description><![CDATA[A fringed blanket shaped for easy wear, it makes for a warm yet airy garment suitable for a broad range of temperatures.]]></description> 
+		<description><![CDATA[Подобие бахромчатого одеяла, адаптированного для удобства ношения; оно представляет собой теплую, но при этом легкую вещь, подходящую для самых разных температур.]]></description> 
 		
 		<physicalResistance>0</physicalResistance> 
 		
@@ -70,25 +70,25 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(put)] on the poncho.]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] на себя пончо.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(put)] the poncho onto [npc2.name].]]>
+			<![CDATA[[npc.Name] [npc.verb(put)] пончо на [npc2.name].]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(put)] the poncho onto [npc2.name].]]>
+			<![CDATA[[npc.Name] резким движением [npc.verb(put)] пончо на [npc2.name].]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc.her] poncho.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] с [npc.her] пончо.]]>
 		</self>
 		<other>
-			<![CDATA[[npc.Name] [npc.verb(pull)] off [npc2.namePos] poncho.]]>
+			<![CDATA[[npc.Name] [npc.verb(pull)] с [npc2.namePos] пончо.]]>
 		</other>
 		<otherRough>
-			<![CDATA[[npc.Name] roughly [npc.verb(pull)] off [npc2.namePos] poncho.]]>
+			<![CDATA[[npc.Name] грубо [npc.verb(pull)] с [npc2.namePos] пончо.]]>
 		</otherRough>
 	</displacementText>
 	

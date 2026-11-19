@@ -4,17 +4,17 @@
 
 	<coreAtributes>
 	
-		<authorTag><![CDATA[A small tag sewn into the side seam reads "MFD by DSG Threadworks."]]></authorTag>
+		<authorTag><![CDATA[На боковом шве пришита маленькая бирка: «Изготовлено DSG Threadworks».]]></authorTag>
 
 		<value>500</value> 
 
 		<determiner><![CDATA[a]]></determiner>
 
-		<name><![CDATA[trenchcoat]]></name>
+		<name><![CDATA[тренч]]></name>
 
-		<namePlural pluralByDefault="false"><![CDATA[trenchcoats]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[тренчи]]></namePlural> 
 
-		<description><![CDATA[A knee-length coat secured around the waist and wrists. Designed to keep wind and rain off of the wearer, it is generously sized to fit practically any body type, making it useful in hiding the wearer's identity especially when combined with headwear.]]></description> 
+		<description><![CDATA[Пальто длиной до колен, подпоясанное на талии и затянутое на запястьях. Оно создано, чтобы защищать владельца от ветра и дождя, и имеет свободный крой, подходящий практически любому телосложению, что делает его отличным средством для сокрытия личности, особенно в сочетании с головным убором.]]></description> 
 
 		<physicalResistance>0</physicalResistance> 
 
@@ -93,49 +93,49 @@
 
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] arms through the trenchcoat's sleeves and [npc.verb(button)] up the front before cinching up the belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(put)] [npc.her] руки в рукава тренча и [npc.verb(button)] пуговицы спереди, после чего затягивает пояс.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] arms through the trenchcoat's sleeves and [npc.verb(button)] up the front before cinching up the belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(help)] [npc2.name] [npc2.verb(put)] [npc2.her] руки в рукава тренча и [npc.verb(button)] пуговицы спереди, после чего затягивает пояс.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] arms through the trenchcoat's sleeves and hastily [npc.verb(button)] up the front before hastily tightening up the belt.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] руки в рукава тренча и поспешно [npc.verb(button)] пуговицы спереди, торопливо затягивая пояс.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(uncinch)] the belt and [npc.verb(unbutton)] the front of [npc.her] trenchcoat and [npc.verb(pull)] [npc.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(uncinch)] пояс, [npc.verb(unbutton)] переднюю часть [npc.her] тренча и [npc.verb(pull)] [npc.her] руки из рукавов.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(uncinch)] the belt and [npc.verb(unbutton)] the front of [npc2.namePos] trenchcoat and [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(uncinch)] пояс, [npc.verb(unbutton)] переднюю часть [npc2.namePos] тренча и [npc.verb(help)] [npc2.her] [npc2.verb(pull)] [npc2.her] руки из рукавов.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(tear)] at the belt before popping open the buttons on the front of [npc2.namePos] trenchcoat and roughly [npc.verb(pull)] [npc2.her] arms out of the sleeves.]]>
+		  <![CDATA[[npc.Name] [npc.verb(tear)] за пояс, прежде чем расстегнуть пуговицы на [npc2.namePos] тренче и грубо [npc.verb(pull)] [npc2.her] руки из рукавов.]]>
 		</otherRough>
 	</displacementText>
 
 	<replacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc.namePos] trenchcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] пуговицы на [npc.namePos] тренче.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(button)] up the front of [npc2.namePos] trenchcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(button)] полы [npc2.namePos] тренчкота.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] hastily [npc.verb(button)] up the front of [npc2.namePos] trenchcoat.]]>
+		  <![CDATA[[npc.Name] поспешно [npc.verb(button)] полы [npc2.namePos] тренчкота.]]>
 		</otherRough>
 	</replacementText>
 
 	<displacementText type="UNBUTTONS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] trenchcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc.her] тренчкот.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] trenchcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unbutton)] [npc2.namePos] тренчкот.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(pop)] open the buttons on [npc2.namePos] trenchcoat.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pop)] расстегиваешь пуговицы на [npc2.namePos] тренчкоте.]]>
 		</otherRough>
 	</displacementText>
 	

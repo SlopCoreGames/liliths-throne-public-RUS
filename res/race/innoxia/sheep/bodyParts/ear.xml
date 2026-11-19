@@ -2,14 +2,14 @@
 <ear>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<coveringType>innoxia_sheep_wool</coveringType>
 	
 	<tags/>
 	
-	<name><![CDATA[ear]]></name>
-	<namePlural><![CDATA[ears]]></namePlural>
+	<name><![CDATA[ухо]]></name>
+	<namePlural><![CDATA[уши]]></namePlural>
 	
 	<descriptorsMasculine>
 		<descriptor>woolly</descriptor>
@@ -23,18 +23,18 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		They quickly take on a distinctly sheep-like shape by growing out and narrowing down into long, slightly-folded ovals.
+		Они быстро принимают отчетливую овечью форму, вытягиваясь и сужаясь в длинные, слегка надорванные овалы.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-		 A layer of [npc.earFullDescriptionColour] quickly grows to cover them,
+		Слой [npc.earFullDescriptionColour] быстро разрастается, покрывая их,
 		#ELSE
-		 Just like the rest of [npc.her] body, they're made out of [npc.earFullDescription],
+		Как и всё остальное тело [npc.her], они состоят из [npc.earFullDescription],
 		#ENDIF
-		 and as the transformation finishes, [npc.she] experimentally [npc.verb(twitch)] [npc.her] new sheep-like ears back and forth.
-		 <br/>[npc.Name] now [npc.has] [style.boldSheep(sheep-like ears)], which are [npc.materialCompositionDescriptor] [npc.earFullDescription].
+		 и по завершении трансформации, [npc.she] экспериментально [npc.verb(twitch)] [npc.her] новыми овечьими ушками взад-вперед.
+		 <br/>[npc.Name] теперь [npc.has] [style.boldSheep(sheep-like ears)], которые [npc.materialCompositionDescriptor] [npc.earFullDescription].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.She] [npc.has] a pair of #IF(npc.isPiercedEar()) pierced,#ENDIF sheep-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
+		[npc.She] [npc.has] пара #IF(npc.isPiercedEar()) pierced,#ENDIF sheep-like ears, which are positioned high up on [npc.her] head and are [npc.materialCompositionDescriptor] [npc.earFullDescription(true)].
 	]]></bodyDescription>
 	
 </ear>

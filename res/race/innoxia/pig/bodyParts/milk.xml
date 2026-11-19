@@ -2,7 +2,7 @@
 <fluid>
 	<race>innoxia_pig</race>
 	
-	<transformationName><![CDATA[pig]]></transformationName>
+	<transformationName><![CDATA[свинья]]></transformationName>
 	
 	<baseFluidType>MILK</baseFluidType>
 	
@@ -12,11 +12,11 @@
 	<namesFeminine/>
 	
 	<descriptorsMasculine>
-		<name><![CDATA[pig]]></name>
+		<name><![CDATA[свинья]]></name>
 	</descriptorsMasculine>
 	
 	<descriptorsFeminine>
-		<name><![CDATA[pig]]></name>
+		<name><![CDATA[свинья]]></name>
 	</descriptorsFeminine>
 	
 	<defaultFluidModifiers/>

@@ -2,7 +2,7 @@
 <breast>
 	<race>innoxia_raptor</race>
 	
-	<transformationName><![CDATA[raptor]]></transformationName>
+	<transformationName><![CDATA[раптор]]></transformationName>
 	
 	<coveringType>innoxia_raptor_feathers</coveringType>
 	
@@ -19,18 +19,18 @@
 	<descriptorsFlat/>
 	
 	<transformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldRaptor(avian)], [npc.nipplesFullDescription], and when lactating, [npc.she] will produce [style.boldRaptor(raptor milk)].
+		У [npc.She] теперь [npc.has] [style.boldRaptor(avian)], [npc.nipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldRaptor(raptor milk)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		On each of [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] avian, [npc.nipplesFullDescription].
+		На каждой из [npc.her] [npc.breastSize] [npc.breasts], [npc.she] [npc.has] [npc.nipplesPerBreast] avian, [npc.nipplesFullDescription].
 	]]></bodyDescription>
 	
 	<crotchBoobsTransformationDescription><![CDATA[
-		[npc.She] now [npc.has] [style.boldRaptor(avian)], [npc.crotchNipplesFullDescription], and when lactating, [npc.she] will produce [style.boldRaptor(raptor milk)].
+		У [npc.She] теперь [npc.has] [style.boldRaptor(avian)], [npc.crotchNipplesFullDescription], а во время лактации [npc.she] будет выделять [style.boldRaptor(raptor milk)].
 	]]></crotchBoobsTransformationDescription>
 	
 	<crotchBoobsBodyDescription><![CDATA[
-		On each of [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] avian, [npc.crotchNipplesFullDescription].
+		На каждой из [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs], [npc.she] [npc.has] [npc.crotchNipplesPerBreast] avian, [npc.crotchNipplesFullDescription].
 	]]></crotchBoobsBodyDescription>
 </breast>

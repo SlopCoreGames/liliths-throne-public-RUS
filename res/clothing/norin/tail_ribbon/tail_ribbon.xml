@@ -4,9 +4,9 @@
   <coreAttributes>
     <value>150</value>
     <determiner><![CDATA[a]]></determiner>
-    <name><![CDATA[ribbon]]></name>
-    <namePlural pluralByDefault="false"><![CDATA[ribbons]]></namePlural>
-    <description><![CDATA[A small, cute cotton ribbon. It could be tied around a tail, or into someone's hair. It could also potentially be tied around someone's penis...]]></description>
+    <name><![CDATA[лента]]></name>
+    <namePlural pluralByDefault="false"><![CDATA[ленты]]></namePlural>
+    <description><![CDATA[Маленькая милая хлопковая ленточка. Её можно повязать на хвост или вплести в чьи-то волосы. А можно даже обвязать ею чей-нибудь член...]]></description>
     
     <physicalResistance>0</physicalResistance>
     <femininity>FEMININE</femininity>
@@ -78,76 +78,76 @@
 
   <replacementText slot="TAIL" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tie)] the ribbon into place around [npc.her] [npc.tail+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tie)] ленту на [npc.her] [npc.tail+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tie)] the ribbon into place around [npc2.namePos] [npc2.tail+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tie)] ленту на [npc2.namePos] [npc2.tail+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(tie)] the ribbon into place around [npc2.namePos] [npc2.tail+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(tie)] ленту на [npc2.namePos] [npc2.tail+].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="TAIL" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the ribbon from around [npc.her] [npc.tail+].]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] ленту с [npc.her] [npc.tail+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the ribbon from around [npc2.namePos] [npc2.tail+].]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] ленту с [npc2.namePos] [npc2.tail+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(untie)] the ribbon from around [npc2.namePos] [npc2.tail+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(untie)] ленту с [npc2.namePos] [npc2.tail+].]]>
     </otherRough>
   </displacementText>
 
   <replacementText slot="HAIR" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tie)] the ribbon into place into [npc.her] [npc.hair+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tie)] ленту в [npc.her] [npc.hair+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tie)] the ribbon into place into [npc2.namePos] [npc2.hair+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tie)] ленту на [npc2.namePos] [npc2.hair+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(tie)] the ribbon into place into [npc2.namePos] [npc2.hair+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(tie)] ленту на [npc2.namePos] [npc2.hair+].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="HAIR" type="REMOVE_OR_EQUIP">
     <self>
       <![CDATA[
 	  #IF(npc.hasHair())
-		[npc.Name] [npc.verb(untie)] the ribbon from [npc.her] [npc.hair+].
+		[npc.Name] [npc.verb(untie)] ленту с [npc.her] [npc.hair+].
 	  #ELSE
-		As [npc.name] no longer [npc.has] any [npc.hair], [npc.her] ribbon [npc.verb(falls)] off of [npc.her] head.
+		Поскольку [npc.name] больше не [npc.has] никаких [npc.hair], лента [npc.her] [npc.verb(falls)] с [npc.her] головы.
 	  #ENDIF
 	  ]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the ribbon from [npc2.namePos] [npc2.hair+].]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] ленту с [npc2.namePos] [npc2.hair+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(untie)] the ribbon from [npc2.namePos] [npc2.hair+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(untie)] ленту с [npc2.namePos] [npc2.hair+].]]>
     </otherRough>
   </displacementText>
   
   <replacementText slot="PENIS" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tie)] the ribbon into place around [npc.her] [npc.penis+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tie)] ленту вокруг [npc.her] [npc.penis+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tie)] the ribbon into place around [npc2.namePos] [npc2.penis+].]]>
+      <![CDATA[[npc.Name] [npc.verb(tie)] ленту вокруг [npc2.namePos] [npc2.penis+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(tie)] the ribbon into place around [npc2.namePos] [npc2.penis+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(tie)] ленту вокруг [npc2.namePos] [npc2.penis+].]]>
     </otherRough>
   </replacementText>
   <displacementText slot="PENIS" type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the ribbon from around [npc.her] [npc.penis+].]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] ленту вокруг [npc.her] [npc.penis+].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(untie)] the ribbon from around [npc2.namePos] [npc2.penis+].]]>
+      <![CDATA[[npc.Name] [npc.verb(untie)] ленту с [npc2.namePos] [npc2.penis+].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(untie)] the ribbon from around [npc2.namePos] [npc2.penis+].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(untie)] ленту с [npc2.namePos] [npc2.penis+].]]>
     </otherRough>
   </displacementText>
   

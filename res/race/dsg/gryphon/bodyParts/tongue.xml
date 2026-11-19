@@ -19,26 +19,26 @@
 	<defaultLength>8</defaultLength>
 	
 	<!-- The singular and plural names of this tongue. -->
-	<name><![CDATA[tongue]]></name>
-	<namePlural><![CDATA[tongues]]></namePlural>
+	<name><![CDATA[язык]]></name>
+	<namePlural><![CDATA[языки]]></namePlural>
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's tongue of this type.
 	Additional tongue descriptors are generated based on the tongue's properties (such as its modifiers, lubrication, capacity, etc.), so these descriptors should only be related to the race itself. -->
 	<descriptorsMasculine>
-		<descriptor><![CDATA[gryphon-like]]></descriptor>
-		<descriptor><![CDATA[tapered]]></descriptor>
-		<descriptor><![CDATA[avian]]></descriptor>
+		<descriptor><![CDATA[грифоний]]></descriptor>
+		<descriptor><![CDATA[заостренный]]></descriptor>
+		<descriptor><![CDATA[птичий]]></descriptor>
 	</descriptorsMasculine>
 	<!-- Same as above, but for feminine characters. -->
 	<descriptorsFeminine>
-		<descriptor><![CDATA[gryphon-like]]></descriptor>
-		<descriptor><![CDATA[tapered]]></descriptor>
-		<descriptor><![CDATA[avian]]></descriptor>
+		<descriptor><![CDATA[грифоний]]></descriptor>
+		<descriptor><![CDATA[заостренный]]></descriptor>
+		<descriptor><![CDATA[птичий]]></descriptor>
 	</descriptorsFeminine>
 	
 	<!-- How this tongue is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.Her] mouth holds [npc.a_tongueLength], [npc.tongueColour(true)], gryphon-like [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
+		Во рту [npc.Her] находится [npc.a_tongueLength], [npc.tongueColour(true)], заостренный грифоний [npc.tongue]#IF(npc.isPiercedTongue()), which has been pierced#ENDIF.
 	]]></bodyDescription>
 	
 	<!-- The tongue modifiers which this tongue has when first created (such as when a new hyena-morph is spawned).

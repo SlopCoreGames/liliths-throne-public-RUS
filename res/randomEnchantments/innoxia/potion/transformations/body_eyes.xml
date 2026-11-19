@@ -20,14 +20,14 @@
 		#ENDIF
 	]]></conditionalPreParsing>
 	
-	<name defaultPrepend="true"><![CDATA[Eye-multiplication]]></name>
+	<name defaultPrepend="true"><![CDATA[Множественные глаза]]></name>
 	
 	<applicationSpeechStart replaceAll="false"><![CDATA[
-		Wouldn't it be so much fun to have more eyes?!
+		Разве не было бы чертовски весело — иметь больше глаз?!
 	]]></applicationSpeechStart>
 	
 	<applicationSpeechEnd replaceAll="false"><![CDATA[
-		What fun!
+		Какое веселье!
 	]]></applicationSpeechEnd>
 	
 	<!-- 33% chance of 2 eye pairs -->

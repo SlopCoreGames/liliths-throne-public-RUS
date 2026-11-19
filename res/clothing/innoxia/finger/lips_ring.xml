@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>500</value>
 		<determiner><![CDATA[]]></determiner>
-		<name><![CDATA[lips ring]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[lips rings]]></namePlural>
-		<description><![CDATA[This ring consists of a thin band of metal, with a stylised pair of metallic lips attached to one side of it.]]></description>
+		<name><![CDATA[кольцо на губу]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[кольца на губы]]></namePlural>
+		<description><![CDATA[Это кольцо представляет собой тонкий металлический ободок, с одной стороны которого закреплены стилизованные металлические губы.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>FINGER</slot>
@@ -48,25 +48,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ring onto [npc.her] [npc.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] надевает кольцо на [npc.her] [npc.finger].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ring onto [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] надевает кольцо на [npc2.namePos] [npc2.finger].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the ring onto [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] натягивает кольцо на [npc2.namePos] [npc2.finger].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ring off [npc.her] [npc.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] снимает кольцо с [npc.her] [npc.finger].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] the ring off [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] снимает кольцо с [npc2.namePos] [npc2.finger].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] the ring off [npc2.namePos] [npc2.finger].]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] срывает кольцо с [npc2.namePos] [npc2.finger].]]>
     </otherRough>
   </displacementText>
   

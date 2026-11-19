@@ -3,9 +3,9 @@
 	<coreAttributes>
 		<value>150</value>
 		<determiner><![CDATA[an]]></determiner>
-		<name><![CDATA[ear tag]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[ear tags]]></namePlural>
-		<description><![CDATA[A rectangular, plastic tag, typically worn in a pierced ear by domestic animals so that they can be quickly and easily identified.]]></description>
+		<name><![CDATA[бирка для уха]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[бирки для уха]]></namePlural>
+		<description><![CDATA[Прямоугольная пластиковая бирка, которую обычно надевают в проколотое ухо домашним животным для быстрой и легкой идентификации.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>PIERCING_EAR</slot>
@@ -43,25 +43,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the tag into [npc.her] [npc.ear].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] бирку в [npc.her] [npc.ear].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(clip)] the tag into [npc2.namePos] [npc2.ear].]]>
+      <![CDATA[[npc.Name] [npc.verb(clip)] бирку в [npc2.namePos] [npc2.ear].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(clip)] the tag into [npc2.namePos] [npc2.ear].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(clip)] бирку в [npc2.namePos] [npc2.ear].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] tag and [npc.verb(take)] it out of [npc.her] [npc.ear] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] бирку и [npc.verb(take)] её из [npc.her] [npc.ear] прокола.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] tag and [npc.verb(take)] it out of [npc2.her] [npc2.ear] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] бирку и [npc.verb(take)] её из [npc2.her] [npc2.ear] прокола.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] tag and roughly [npc.verb(yank)] it out of [npc2.her] [npc2.ear] piercing.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] бирку и грубо [npc.verb(yank)] её из [npc2.her] [npc2.ear] прокола.]]>
     </otherRough>
   </displacementText>
 	

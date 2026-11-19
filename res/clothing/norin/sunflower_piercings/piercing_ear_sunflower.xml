@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <clothing>
 	<coreAttributes>
-    <clothingAuthorTag><![CDATA[Small engraved lettering informs you that these piercings were made by 'Norin'.]]></clothingAuthorTag>
+    <clothingAuthorTag><![CDATA[Мелкая гравировка сообщает тебе, что эти украшения сделаны мастером по имени «Норин».]]></clothingAuthorTag>
 		<value>600</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[sunflower earring]]></name>
-		<namePlural pluralByDefault="true"><![CDATA[sunflower earrings]]></namePlural>
-		<description><![CDATA[A pair of earrings with dangling sunflowers.]]></description>
+		<name><![CDATA[серьга-подсолнух]]></name>
+		<namePlural pluralByDefault="true"><![CDATA[серьги-подсолнухи]]></namePlural>
+		<description><![CDATA[Пара сережек с висящими подсолнухами.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>PIERCING_EAR</slot> 
@@ -46,25 +46,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of sunflower earrings into [npc.her] [npc.ears].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару сережек-подсолнухов в [npc.her] [npc.ears].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(slide)] a pair of sunflower earrings into [npc2.namePos] [npc2.ears].]]>
+      <![CDATA[[npc.Name] [npc.verb(slide)] пару сережек-подсолнухов в [npc2.namePos] [npc2.ears].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(slide)] a pair of sunflower earrings into [npc2.namePos] [npc2.ears].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(slide)] пару сережек-подсолнухов в [npc2.namePos] [npc2.ears].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] sunflower earrings and [npc.verb(take)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc.her] сережек-подсолнухов и [npc.verb(take)] их.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] sunflower earrings and [npc.verb(take)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] сережек-подсолнухов и [npc.verb(take)] их.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] sunflower earrings and roughly [npc.verb(pull)] them out.]]>
+      <![CDATA[[npc.Name] [npc.verb(unclip)] [npc2.namePos] сережек-подсолнухов и грубо [npc.verb(pull)] их.]]>
     </otherRough>
   </displacementText>
 	

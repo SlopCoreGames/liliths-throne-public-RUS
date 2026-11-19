@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[lines]]></name>
+		<name><![CDATA[линии]]></name>
 		
-		<description><![CDATA[A series of flowing, swirling lines.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which consists of a series of flowing, swirling lines]]></bodyOverviewDescription> 
+		<description><![CDATA[Ряд плавных, извилистых линий.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка, состоящая из ряда плавных, извилистых линий]]></bodyOverviewDescription> 
 		
 		<imageName>lines.svg</imageName> 
 		

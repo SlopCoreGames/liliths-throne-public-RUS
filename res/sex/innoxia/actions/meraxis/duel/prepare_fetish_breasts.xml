@@ -39,11 +39,11 @@
 	]]></title>
 	<tooltip><![CDATA[
 		#IF(sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_NIPPLE, PENETRATION_TONGUE).contains(pc))
-			Make Meraxis admit to you that she loves having her breasts used as you suck on her nipples and make her cum.
+			Заставь Мераксис признаться, что ей нравится, когда ты сосёшь её соски и доводишь её до оргазма.
 		#ELSE
-			Make Meraxis admit to you that she loves having her breasts used as you push your cock up against them and make her cum.
+			Заставь Мераксис признаться, что ей нравится, когда ты прижимаешь к её груди свой член и доводишь её до оргазма.
 		#ENDIF
-		<br/>[style.italicsSex(Meraxis will gain the '[#FETISH_BREASTS_SELF.getName(meraxis)]' fetish from this!)]
+			<br/>[style.italicsSex(Мераксис получит фетиш '[#FETISH_BREASTS_SELF.getName(meraxis)]'!)]
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -51,20 +51,20 @@
 				[#sex.getOngoingCharactersUsingAreas(meraxis, ORIFICE_NIPPLE, PENETRATION_TONGUE).contains(pc)]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Sensing that Meraxis is on the verge of orgasming, you pull back and stop sucking on her [meraxis.nipples+] to tease, [pc.speech(You want to cum from this?)]
+				Чувствуя, что Мераксис вот-вот кончит, ты отстраняешься и перестаёшь сосать её [meraxis.nipples+], чтобы помучить её, [pc.speech(Хочешь кончить?)]
 				<br/><br/>
-				Driven to the point of climax, and then suddenly having you stop stimulating her nipples, Meraxis desperately tries to push her [meraxis.breasts+] against your face as she squeals, [meraxis.speechNoEffects(Yes! ~Aah!~ Why did you stop?! Come on, I'm so close! ~Mmm!~ Give it to me!)]
+				Доведённая до самого пика и внезапно лишенная стимуляции сосков, Мераксис отчаянно пытается прижаться своими [meraxis.breasts+] к твоему лицу, взвизгивая: [meraxis.speechNoEffects(Да! ~Аах!~ Почему ты остановился?! Ну же, я уже почти! ~Ммм!~ Дай мне это!)]
 				<br/><br/>
-				Realising that you have the opportunity to permanently impact Meraxis's attitude towards having her breasts used, you lean forwards and plant a big, wet kiss on each of her [meraxis.nipples+]. Smirking at the desperate moan she lets out in response to your touch, you make your demand, [pc.speech(Tell me that you love having your sexy tits used, and I'll let you cum.)]
+				Понимая, что у тебя есть шанс навсегда изменить отношение Мераксис к ласкам груди, ты наклоняешься вперёд и покрываешь каждый её [meraxis.nipples+] долгим, влажным поцелуем. Усмехаясь её отчаянному стону, ты выдвигаешь требование: [pc.speech(Скажи, что обожаешь, когда твои сексуальные сиськи используют, и тогда я дам тебе кончить.)]
 				<br/><br/>
-				[meraxis.speechNoEffects(What?! I... You're so perverted, [pc.name]...)] she whines, but as you lean in and deliver a slow, wet lick to her right nipple, she relents and cries out, [meraxis.speechNoEffects(Fine! I... I love having my tits used! Now let me cum!)]
+				[meraxis.speechNoEffects(Что?! Я... Ну ты и извращенец, [pc.name]...)] — скулит она, но когда ты наклоняешься и медленно облизываешь её правый сосок, она сдаётся и вскрикивает: [meraxis.speechNoEffects(Ладно! Я... Я обожаю, когда мои сиськи используют! А теперь дай мне кончить!)]
 				<br/><br/>
 				#IF(meraxis.getBreastRawSizeValue()>5)
-				Burying your face between her [meraxis.breasts+],
+				Зарывшись лицом в её [meraxis.breasts+],
 				#ELSE
-				Nuzzling into her flat chest,
+				Прижимаясь к её плоской груди,
 				#ENDIF
-				 you continue where you left off, and greedily lick and kiss Meraxis's [meraxis.nipples+]. Letting out a series of increasingly-louder squeals, the [meraxis.race] screams, [meraxis.speechNoEffects(~Aah!~ I'm cumming!)]
+				 ты продолжаешь с того места, где остановился, жадно вылизывая и целуя [meraxis.nipples+] Мераксис. Издавая всё более громкие визги, [meraxis.race] вскрикивает: [meraxis.speechNoEffects(~Аах!~ Я кончаю!)]
 			]]></text>
 		</description>
 		<description>
@@ -73,26 +73,24 @@
 			]]></descriptionConditional>
 			<text><![CDATA[
 				#IF(meraxis.isBreastFuckablePaizuri())
-					Sensing that Meraxis is on the verge of orgasming, you stop sliding your [pc.cock+] between her [meraxis.breasts+], before teasing, [pc.speech(You want to cum from this?)]
+Чувствуя, что Мераксис вот-вот кончит, ты перестаёшь возить своим [pc.cock+] между её [meraxis.breasts+], а затем начинаешь дразнить её, [pc.speech(Хочешь кончить от этого?)]
+<br/><br/>
+Доведённая до самого пика и внезапно лишенная твоего члена в её груди, Мераксис отчаянно пытается двигать своими [meraxis.breasts+] вверх-вниз вокруг твоего члена, визжа, [meraxis.speechNoEffects(Да! ~Аах!~ Почему ты остановился?! Ну же, я уже почти! ~Ммм!~ Дай мне его!)]
+<br/><br/>
+Понимая, что у тебя есть шанс навсегда изменить отношение Мераксис к тому, что с её грудью делают всякие вещи, ты подаёшься вперёд и снова втискиваешь свой [pc.cock+] в её ложбинку. Усмехаясь её отчаянному стону, ты выдвигаешь требование, [pc.speech(Скажи, что обожаешь, когда используют твои сексуальные титьки, и тогда я дам тебе кончить.)]
+<br/><br/>
+[meraxis.speechNoEffects(Что?! Я... Ну ты и извращенец, [pc.name]...)] — канючит она, но когда ты отстраняешься и пару раз хлопаешь своим твёрдым членом по её [meraxis.breasts+], она сдаётся и отчаянно выкрикивает: [meraxis.speechNoEffects(Ладно! Я... Я обожаю, когда используют мои титьки! А теперь дай мне кончить!)]
+<br/><br/>
+Подавшись вперёд и вгоняя свой [pc.cock+] в её ложбинку, ты продолжаешь с того места, где остановился, властно водя своим [pc.cock+] вверх-вниз между [meraxis.breasts+] Мераксис. Издавая всё более громкие визги, [meraxis.race] вопит: [meraxis.speechNoEffects(~Ааах!~ Я кончаю!)]				#ELSE
+Чувствуя, что Мераксис вот-вот кончит, ты перестаёшь водить своим [pc.cock+] по её [meraxis.breasts+], а затем дразнишь её: [pc.speech(Хочешь кончить от этого?)]
 					<br/><br/>
-					Driven to the point of climax, and then suddenly having you stop fucking her tits, Meraxis desperately tries to slide her [meraxis.breasts+] up and down around your cock as she squeals, [meraxis.speechNoEffects(Yes! ~Aah!~ Why did you stop?! Come on, I'm so close! ~Mmm!~ Give it to me!)]
+					Доведённая до самого пика и внезапно лишенная твоего трения о свою плоскую грудь, Мераксис отчаянно пытается тереться своими [meraxis.breasts+] о твой член, визжа: [meraxis.speechNoEffects(Да! ~Аах!~ Почему ты остановился?! Ну же, я уже почти! ~Ммм!~ Дай мне его!)]
 					<br/><br/>
-					Realising that you have the opportunity to permanently impact Meraxis's attitude towards having her breasts used, you push forwards and slide your [pc.cock+] up into her cleavage once more. Smirking at the desperate moan she lets out in response to your move, you make your demand, [pc.speech(Tell me that you love having your sexy tits used, and I'll let you cum.)]
+					Понимая, что у тебя есть шанс навсегда изменить отношение Мераксис к тому, когда её грудь используют, ты подаёшься вперёд и снова проводишь своим [pc.cock+] по её груди. Усмехаясь её отчаянному стону, ты диктуешь свои условия: [pc.speech(Скажи, что обожаешь, когда используют твои сексуальные сиськи, и тогда я дам тебе кончить.)]
 					<br/><br/>
-					[meraxis.speechNoEffects(What?! I... You're so perverted, [pc.name]...)] she whines, but as you pull back and slap your hard cock against her [meraxis.breasts+] a couple of times, she relents and desperately cries out, [meraxis.speechNoEffects(Fine! I... I love having my tits used! Now let me cum!)]
+					[meraxis.speechNoEffects(Что?! Я... Ну ты и извращенец, [pc.name]...)] — канючит она, но когда ты отстраняешься и пару раз хлопаешь своим твёрдым членом по её [meraxis.breasts+], она сдаётся и отчаянно выкрикивает: [meraxis.speechNoEffects(Ладно! Я... Я обожаю, когда используют мои сиськи! А теперь дай мне кончить!)]
 					<br/><br/>
-					Pushing forwards and driving your [pc.cock+] up into her cleavage, you continue where you left off, and dominantly slide your [pc.cock+] up and down between Meraxis's [meraxis.breasts+]. Letting out a series of increasingly-louder squeals, the [meraxis.race] screams, [meraxis.speechNoEffects(~Aah!~ I'm cumming!)]
-				#ELSE
-					Sensing that Meraxis is on the verge of orgasming, you stop sliding your [pc.cock+] over her [meraxis.breasts+], before teasing, [pc.speech(You want to cum from this?)]
-					<br/><br/>
-					Driven to the point of climax, and then suddenly having you stop grinding against her flat chest, Meraxis desperately tries to rub her [meraxis.breasts+] up and down against your cock as she squeals, [meraxis.speechNoEffects(Yes! ~Aah!~ Why did you stop?! Come on, I'm so close! ~Mmm!~ Give it to me!)]
-					<br/><br/>
-					Realising that you have the opportunity to permanently impact Meraxis's attitude towards having her breasts used, you push forwards and slide your [pc.cock+] over her chest once more. Smirking at the desperate moan she lets out in response to your move, you make your demand, [pc.speech(Tell me that you love having your sexy tits used, and I'll let you cum.)]
-					<br/><br/>
-					[meraxis.speechNoEffects(What?! I... You're so perverted, [pc.name]...)] she whines, but as you pull back and slap your hard cock against her [meraxis.breasts+] a couple of times, she relents and desperately cries out, [meraxis.speechNoEffects(Fine! I... I love having my tits used! Now let me cum!)]
-					<br/><br/>
-					Pushing forwards and driving your [pc.cock+] over her flat chest, you continue where you left off, and dominantly slide your [pc.cock+] up and down between Meraxis's [meraxis.breasts+]. Letting out a series of increasingly-louder squeals, the [meraxis.race] screams, [meraxis.speechNoEffects(~Aah!~ I'm cumming!)]
-				#ENDIF
+					Подавшись вперёд и снова прижимая свой [pc.cock+] к её плоской груди, ты продолжаешь с того места, где остановился, властно водя своим [pc.cock+] вверх и вниз между [meraxis.breasts+] Мераксис. Издавая всё более громкие визги, [meraxis.race] вопит: [meraxis.speechNoEffects(~Аах!~ Я кончаю!)]				#ENDIF
 			]]></text>
 		</description>
 	</descriptions>

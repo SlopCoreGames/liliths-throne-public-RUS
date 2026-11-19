@@ -134,17 +134,17 @@
 		It is also displayed at the top of the description, so even if this action is only ever to be used by NPCs, you should still give it a title. -->
 	<title><![CDATA[
 		#IF(meraxis.hasFetish(FETISH_CUM_ADDICT))
-			Cum in panties
+			Кончить в трусики
 		#ELSE
-			[style.colourFetish(Cum in panties)]
+			[style.colourFetish(Кончить в трусики)]
 		#ENDIF
 	]]></title>
 	
 	<!-- The tooltip for this action, which is displayed to the player when hovering their mouse over this action's button. -->
 	<tooltip><![CDATA[
-		Tell Meraxis to show you her pussy, and when she pulls down her panties, direct your cum both into them and all over her cunt.
+		Прикажи Меракси показать тебе её киску, а когда она стянет трусики, направь струю спермы прямо в них и на её щелочку.
 		#IF(!meraxis.hasFetish(FETISH_CUM_ADDICT))
-			<br/>[style.italicsSex(Meraxis will gain the '[#FETISH_CUM_ADDICT.getName(meraxis)]' fetish from this!)]
+			<br/>[style.italicsSex(Меракси получит фетиш '[#FETISH_CUM_ADDICT.getName(meraxis)]' после этого!)]
 		#ENDIF
 	]]></tooltip>
 	
@@ -165,37 +165,33 @@
 						<text><![CDATA[Huge cum in panties variation 1.]]></text>
 						<text><![CDATA[Huge cum in panties variation 2.]]></text>
 						<text><![CDATA[Huge cum in panties variation 3.]]></text> -->
-			<text><![CDATA[
-				Feeling that you're about to reach your climax, you start furiously stroking your [pc.cock+] and quickly order Meraxis, [pc.speech(Pull down your panties! I'm going to cum in them!)]
+			<text><![CDATA[Чувствуя, что ты вот-вот достигнешь пика, ты начинаешь неистово теребить свой [pc.cock+] и быстро приказываешь Мераксис: [pc.speech(Спускай трусики! Я сейчас кончу в них!)]
 				<br/><br/>
-				Although she blushes at your command, the [meraxis.race] obediently takes her hands away from her [meraxis.breasts+], before slipping her thumbs into the band of her lacy panties and pulling them both down and forwards. Presenting you with her [meraxis.pussy+], Meraxis breathlessly pants, [meraxis.speechNoEffects(Go on... Shoot it into my panties...)]
+				Хотя она и краснеет от твоего приказа, [meraxis.race] послушно убирает руки от своих [meraxis.breasts+], после чего просовывает большие пальцы под резинку своих кружевных трусиков и стягивает их вниз и вперед. Представляя тебе свою [meraxis.pussy+], Мераксис прерывисто дышит: [meraxis.speechNoEffects(Давай... Лей прямо в мои трусики...)]
 				<br/><br/>
-				[pc.Stepping] forwards, you aim your throbbing cock at the chuuni [meraxis.race]'s exposed pussy, and as your [pc.balls+] tense up, you start unleashing your massive load of [pc.cum+] all over her wet cunt and lacy panties.
+				Подавшись [pc.Stepping] вперед, ты нацеливаешь свой пульсирующий член на обнаженную киску чуни-[meraxis.race], и когда твои [pc.balls+] напрягаются, ты начинаешь извергать свою массивную порцию [pc.cum+] прямо на её влажную щелку и кружевные трусики.
 				<br/><br/>
-				[meraxis.speechNoEffects(~Aah!~ You're making such a mess!)] Meraxis exclaims as she watches your massive amount of [pc.cum+] covering her smooth, [meraxis.skinColour] skin and saturating her purple underwear.
+				[meraxis.speechNoEffects(~Аах!~ Ты так всё испачкал!)] — восклицает Мераксис, наблюдая, как твоё огромное количество [pc.cum+] покрывает её гладкую, [meraxis.skinColour] кожу и пропитывает фиолетовое белье.
 				<br/><br/>
-				After several more violent pumps, your cock finally finishes releasing its massive load, and with a devious grin on your face, you tell Meraxis that she can pull her panties up again. Furiously blushing, she does as you say, and after sliding her underwear back up to cover her cum-coated cunt, she lets out a lewd moan and pants, [meraxis.speechNoEffects(~Aah!~ This is so dirty...)]
+				После нескольких последних мощных толчков твой член наконец заканчивает извергать свою массивную порцию, и с лукавой ухмылкой на лице ты говоришь Мераксис, что она может снова натянуть трусики. Яростно краснея, она делает, как ты сказал, и, натянув белье обратно на свою покрытую спермой киску, издает похотливый стон и тяжело дышит: [meraxis.speechNoEffects(~Аах!~ Это так грязно...)]
 				<br/><br/>
-				Looking down, you see a copious amount of your [pc.cum+] drooling down the insides of Meraxis's smooth thighs, and you tell her what a good girl she is for having done what you told her. With her cheeks turning a deep shade of scarlet, she steps back and says, [meraxis.speechNoEffects(You've had your fun... That's enough now...)]
-			]]></text>
+				Посмотрев вниз, ты видишь, как обильное количество твоей [pc.cum+] стекает по внутренней стороне гладких бедер Мераксис, и говоришь ей, какая она хорошая девочка, раз сделала всё, что ты велел. Её щеки становятся ярко-алыми, она отступает на шаг и произносит: [meraxis.speechNoEffects(Ты повеселился... Теперь хватит...)]]]></text>
 		</description>
 		<description>
 			<descriptionConditional><![CDATA[
 				[#pc.getPenisRawOrgasmCumQuantity()<CUM_PRODUCTION_SIX_EXTREME.getMinimumValue()]
 			]]></descriptionConditional>
-			<text><![CDATA[
-				Feeling that you're about to reach your climax, you start furiously stroking your [pc.cock+] and quickly order Meraxis, [pc.speech(Pull down your panties! I'm going to cum in them!)]
+			<text><![CDATA[Чувствуя, что ты вот-вот достигнешь пика, ты начинаешь неистово ласкать свой [pc.cock+] и быстро приказываешь Мераксис: [pc.speech(Спускай трусики! Я сейчас кончу прямо в них!)]
 				<br/><br/>
-				Although she blushes at your command, the [meraxis.race] obediently takes her hands away from her [meraxis.breasts+], before slipping her thumbs into the band of her lacy panties and pulling them both down and forwards. Presenting you with her [meraxis.pussy+], Meraxis breathlessly pants, [meraxis.speechNoEffects(Go on... Shoot it into my panties...)]
+				Хотя она и краснеет от твоего приказа, [meraxis.race] послушно убирает руки от своих [meraxis.breasts+], после чего просовывает большие пальцы под резинку своих кружевных трусиков и стягивает их вниз и вперед. Представляя тебе свою [meraxis.pussy+], Мераксис прерывисто дышит: [meraxis.speechNoEffects(Давай... Лей прямо в мои трусики...)]
 				<br/><br/>
-				[pc.Stepping] forwards, you aim your throbbing cock at the chuuni [meraxis.race]'s exposed pussy, and as your [pc.balls+] tense up, you start squirting your [pc.cum+] all over her wet cunt and lacy panties.
+				Наклонившись [pc.Stepping] вперед, ты нацеливаешь свой пульсирующий член на обнаженную киску чуни [meraxis.race], и когда твои [pc.balls+] напрягаются, ты начинаешь извергать свою [pc.cum+] прямо на её влажную щелку и кружевные трусики.
 				<br/><br/>
-				[meraxis.speechNoEffects(~Aah!~ You're making such a mess...)] Meraxis moans as she watches your [pc.cum+] splatter onto her smooth, [meraxis.skinColour] skin and purple underwear.
+				[meraxis.speechNoEffects(~Аах!~ Ты так всё испачкал...)] — стонет Мераксис, наблюдая, как твоя [pc.cum+] разлетается брызгами по её гладкой, [meraxis.skinColour] коже и фиолетовому белью.
 				<br/><br/>
-				After another couple of squirts, you reach the end of your climax, and with a devious grin on your face, you tell Meraxis that she can pull her panties up again. Furiously blushing, she does as you say, and after sliding her underwear back up to cover her cum-coated cunt, she lets out a lewd moan and pants, [meraxis.speechNoEffects(~Aah!~ This is so dirty...)]
+				После еще пары мощных толчков оргазма ты достигаешь финала, и с лукавой ухмылкой на лице говоришь Мераксис, что она может снова натянуть трусики. Густо покраснев, она делает, как ты сказал, и, натянув белье обратно на свою покрытую спермой киску, издает похотливый стон и тяжело дышит: [meraxis.speechNoEffects(~Аах!~ Это так грязно...)]
 				<br/><br/>
-				Looking down, you see a trickle of your [pc.cum+] drooling down the insides of Meraxis's smooth thighs, and you tell her what a good girl she is for having done what you told her. With her cheeks turning a deep shade of scarlet, she steps back and says, [meraxis.speechNoEffects(You've had your fun... That's enough now...)]
-			]]></text>
+				Посмотрев вниз, ты видишь струйку своей [pc.cum+], стекающую по внутренней стороне гладких бедер Мераксис, и говоришь ей, какая она хорошая девочка, раз сделала всё, что ты велел. Её щеки становятся ярко-алыми; она отступает на шаг и произносит: [meraxis.speechNoEffects(Ты повеселился... Теперь хватит...)]]]></text>
 		</description>
 	</descriptions>
 	

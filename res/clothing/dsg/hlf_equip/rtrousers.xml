@@ -2,12 +2,12 @@
 
 <clothing>
 	<coreAtributes>
-		<authorTag><![CDATA[A small tag sewn into the waist reads "MFD by DSG Threadworks".]]></authorTag>
+		<authorTag><![CDATA[На поясе пришита маленькая бирка с надписью: «Произведено DSG Threadworks».]]></authorTag>
 		<value>250</value>
 		<determiner><![CDATA[a pair of]]></determiner>
-		<name><![CDATA[vintage fatigue trousers]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[vintage fatigue trousers]]></namePlural>
-		<description><![CDATA[A pair of trousers made of cotton twill, it has a variety of pockets for storing all sorts of things.]]></description>
+		<name><![CDATA[винтажные брюки в стиле милитари]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[винтажные брюки в стиле милитари]]></namePlural>
+		<description><![CDATA[Брюки из хлопковой саржи с множеством карманов, в которых можно разложить всё что угодно.]]></description>
 		<physicalResistance>1</physicalResistance>
 		<femininity>ANDROGYNOUS</femininity>
 		<slot>LEG</slot>
@@ -18,7 +18,7 @@
 		
 		<stickers>
 			<category id="wearntear" priority="1"> 
-				<categoryName><![CDATA[Wear and Tear]]></categoryName>
+				<categoryName><![CDATA[Износ]]></categoryName>
 				<sticker id="none" priority="0" defaultSticker="true" zLayer="1" colourSelected="TEXT_GREY"> 
 					<stickerName><![CDATA[None]]></stickerName>
 					<namePrefix priority="1"><![CDATA[]]></namePrefix>
@@ -32,9 +32,9 @@
 				</sticker>
 				<sticker id="patched" priority="1" defaultSticker="false" zLayer="1" colourDisabled="TEXT_GREY" colourSelected="CLOTHING_BROWN"> 
 					<stickerName><![CDATA[Patched]]></stickerName>
-					<namePrefix priority="1"><![CDATA[Patched ]]></namePrefix> 
+					<namePrefix priority="1"><![CDATA[Латаные ]]></namePrefix> 
 					<namePostfix/> 
-					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> This one has been repeatedly patched up, and you don't even want to think about the stains.</i>]]></descriptionModification> 
+					<descriptionModification fullReplacement="false" priority="1"><![CDATA[<i> Их латали столько раз, что даже вспоминать о пятнах не хочется.</i>]]></descriptionModification> 
 					<imageName>rtrousers_st_ragged.svg</imageName> 
 					<itemTagsAdded/> 
 					<itemTagsRemoved/> 
@@ -111,73 +111,73 @@
 	
 	<displacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] trousers down and [npc.verb(kick)] them off [npc.her] [npc.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] штаны вниз и [npc.verb(kick)] сбрасывает их с [npc.her] [npc.feet].]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] trousers down and [npc.verb(slide)] them off [npc2.her] [npc2.feet].]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] штаны вниз и [npc.verb(slide)] стягивает их с [npc2.her] [npc2.feet].]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] trousers down and [npc.verb(toss)] them aside.]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] штаны вниз и [npc.verb(toss)] отбрасывает их в сторону.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="REMOVE_OR_EQUIP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(step)] into [npc.her] trousers before pulling them up to [npc.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(step)] в [npc.her] штаны, а затем натягивает их до [npc.her] талии.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] the trousers up [npc2.namePos] [npc2.legs] and [npc.verb(button)] them up around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] штаны вверх по [npc2.namePos] [npc2.legs] и [npc.verb(button)] застегивает их на [npc2.her] талии.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] [npc2.legs] into the trousers and [npc.verb(yank)] them up around [npc2.her] waist.]]>
+		  <![CDATA[[npc.Name] [npc.verb(force)] [npc2.namePos] [npc2.legs] в штаны и [npc.verb(yank)] натягивает их на [npc2.her] талию.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="UNZIPS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] trousers.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc.her] брюки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] trousers.]]>
+		  <![CDATA[[npc.Name] [npc.verb(unzip)] [npc2.namePos] брюки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(unzip)] [npc2.namePos] trousers.]]>
+		  <![CDATA[[npc.Name] грубо [npc.verb(unzip)] [npc2.namePos] брюки.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="UNZIPS">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(zip)] up [npc.her] trousers.]]>
+		  <![CDATA[[npc.Name] [npc.verb(zip)] застегивает [npc.her] брюки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(zip)] up [npc2.namePos] trousers.]]>
+		  <![CDATA[[npc.Name] [npc.verb(zip)] застегивает [npc2.namePos] брюки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] roughly [npc.verb(zip)] up [npc2.namePos] trousers.]]>
+		  <![CDATA[[npc.Name] резко [npc.verb(zip)] застегивает [npc2.namePos] брюки.]]>
 		</otherRough>
 	</replacementText>
 	
 	<displacementText type="PULLS_DOWN">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] trousers down.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] спуская брюки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] trousers down.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] спуская брюки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] trousers down.]]>
+		  <![CDATA[[npc.Name] [npc.verb(yank)] [npc2.namePos] резко сдергивая брюки.]]>
 		</otherRough>
 	</displacementText>
 	
 	<replacementText type="PULLS_UP">
 		<self>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up [npc.her] trousers.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc.her] натягивая брюки.]]>
 		</self>
 		<other>
-		  <![CDATA[[npc.Name] [npc.verb(pull)] up [npc2.namePos] trousers.]]>
+		  <![CDATA[[npc.Name] [npc.verb(pull)] [npc2.namePos] натягивая брюки.]]>
 		</other>
 		<otherRough>
-		  <![CDATA[[npc.Name] forcefully [npc.verb(pull)] up [npc2.namePos] trousers.]]>
+		  <![CDATA[[npc.Name] с силой [npc.verb(pull)] [npc2.namePos] натягивая брюки.]]>
 		</otherRough>
 	</replacementText>
 	

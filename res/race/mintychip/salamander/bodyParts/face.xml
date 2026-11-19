@@ -10,7 +10,7 @@
 	<race>mintychip_salamander</race>
 	
 	<!-- The name that will be used when referring to transformations related to this type (such as when changing body parts in the self-TF menu). -->
-	<transformationName><![CDATA[salamander]]></transformationName>
+	<transformationName><![CDATA[саламандра]]></transformationName>
 	
 	<!-- The id of the material covering this face.
 	The id will typically take the form of 'mintychip_salamander_fur'.
@@ -63,8 +63,8 @@
 	
 	<!-- The singular and plural names of the nose associated with this face type.
 	For most faces, it will be 'nose' and 'noses'. -->
-	<noseName><![CDATA[nose]]></noseName>
-	<noseNamePlural><![CDATA[noses]]></noseNamePlural>
+	<noseName><![CDATA[нос]]></noseName>
+	<noseNamePlural><![CDATA[носы]]></noseNamePlural>
 	
 	<!-- The descriptors which should be drawn upon when describing a masculine character's nose of this type.
 	If you decide to add any descriptors, define them like so:
@@ -79,24 +79,24 @@
 	<!-- The description which is shown when a character transforms to obtain this face type.
 	This description immediately follows a brief description of the face type beginning to transform. -->
 	<transformationDescription><![CDATA[
-		[npc.Her] nose and mouth twitch and transform as they push out into an anthropomorphic salamander-like muzzle, and [npc.her] tongue flattens and grows wider, turning into a similarly animalistic one.
+		[npc.Her] нос и рот дергаются и трансформируются, вытягиваясь в антропоморфную саламандроподобную морду, а [npc.her] язык становится плоским и широким, превращаясь в нечто звериное.
 		#IF(npc.getBodyMaterial()==BODY_MATERIAL_FLESH)
-			 A layer of [npc.faceSkin+] quickly grows to cover [npc.her] new face, 
+			 Слой [npc.faceSkin+] быстро разрастается, покрывая новое лицо [npc.her], 
 		#ELSE
-			 Just like the rest of [npc.her] body, [npc.her] new face is [npc.materialDescriptor] [npc.faceSkin+], 
+			 Как и все остальное тело [npc.her], новое лицо [npc.her] становится [npc.materialDescriptor] [npc.faceSkin+], 
 		#ENDIF
-		and as the transformation finally comes to an end, [npc.sheIs] left panting and sighing as [npc.she] [npc.verb(try)] to catch [npc.her] breath.
-		<br/>[npc.Name] now [npc.has] an anthropomorphic [style.boldSalamander(salamander-like face)], [npc.materialDescriptor] [npc.faceFullDescription]. Within [npc.her] [npc.mouth], [npc.she] [npc.has] a [style.boldSalamander(flat, salamander-like tongue)].
+		и когда трансформация наконец завершается, [npc.sheIs] остается тяжело дышать и вздыхать, пока [npc.she] [npc.verb(try)] перевести [npc.her] дух.
+		<br/>[npc.Name] теперь [npc.has] антропоморфным [style.boldSalamander(саламандроподобным лицом)], [npc.materialDescriptor] [npc.faceFullDescription]. Внутри [npc.her] [npc.mouth], [npc.she] [npc.has] [style.boldSalamander(плоский, саламандроподобный язык)].
 	]]></transformationDescription>
 	
 	<!-- How this face is described in a character's description page. -->
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], anthropomorphic, salamander-like face [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] and complete with a pointed muzzle.
+		[npc.SheHasFull] [npc.a_feminineDescriptor(true)], антропоморфное саламандроподобное лицо, [npc.materialCompositionDescriptor] [npc.faceFullDescription(true)] с заостренной мордой.
 	]]></bodyDescription>
 	
 	<!-- Feral variant of the above. -->
 	<bodyDescriptionFeral><![CDATA[
-		[npc.SheHasFull] the [npc.feminineDescriptor(true)] face of a feral [npc.legRace], which is [npc.materialDescriptor] [npc.faceFullDescription(true)] and complete with a pointed muzzle.
+		[npc.SheHasFull] [npc.feminineDescriptor(true)] лицо дикого [npc.legRace], которое [npc.materialDescriptor] [npc.faceFullDescription(true)] и имеет заостренную морду.
 	]]></bodyDescriptionFeral>
 	
 </face>

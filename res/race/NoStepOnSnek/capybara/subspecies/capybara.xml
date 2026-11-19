@@ -29,32 +29,32 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[capybara-morph]]></name>
-			<namePlural><![CDATA[capybara-morphs]]></namePlural>
-			<singularMaleName><![CDATA[capybara-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[capybara-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[capybara-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[capybara-girls]]></pluralFemaleName>
+			<name><![CDATA[морф капибары]]></name>
+			<namePlural><![CDATA[морфы капибары]]></namePlural>
+			<singularMaleName><![CDATA[парень-капибара]]></singularMaleName>
+			<singularFemaleName><![CDATA[девушка-капибара]]></singularFemaleName>
+			<pluralMaleName><![CDATA[парни-капибары]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девушки-капибары]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
-	<description><![CDATA[An anthropomorphic capybara, known as a 'capybara-morph' when bipedal, and a 'capybarataur' when the lower body is that of a typically-oversized feral capybara.]]></description>
+	<description><![CDATA[Антропоморфная капибара, известная как «капибара-морф», когда она передвигается на двух ногах, и «капибаратавр», если её нижняя часть тела представляет собой типичную крупную дикую капибару.]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[demonic-capybara]]></name>
-			<namePlural><![CDATA[demonic-capybaras]]></namePlural>
-			<singularMaleName><![CDATA[demonic-capybara-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[demonic-capybara-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[demonic-capybara-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[demonic-capybara-girls]]></pluralFemaleName>
+			<name><![CDATA[демоническая капибара]]></name>
+			<namePlural><![CDATA[демонические капибары]]></namePlural>
+			<singularMaleName><![CDATA[демонический парень-капибара]]></singularMaleName>
+			<singularFemaleName><![CDATA[демоническая девушка-капибара]]></singularFemaleName>
+			<pluralMaleName><![CDATA[демонические парни-капибары]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[демонические девушки-капибары]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[capybara]]></feralName>
-		<feralNamePlural><![CDATA[capybara]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[capybara]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[capybara]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[capybara]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[capybara]]></feralPluralFemaleName>
+		<feralName><![CDATA[капибара]]></feralName>
+		<feralNamePlural><![CDATA[капибара]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[капибара]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[капибара]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[капибара]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[капибара]]></feralPluralFemaleName>
 		<legConfiguration>QUADRUPEDAL</legConfiguration>
 		<sizeHeight>true</sizeHeight>
 		<size>50</size>
@@ -67,7 +67,7 @@
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
 	<statusEffectDescription><![CDATA[
-		[npc.NamePos] capybara-like body predisposes [npc.herHim] towards serenity, resulting in better arcane focus and an easier time dealing with arousal.
+		[npc.NamePos] телосложение капибары располагает [npc.herHim] к безмятежности, что позволяет лучше концентрироваться на аркане и легче справляться с возбуждением.
 	]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="0">MAJOR_PHYSIQUE</attribute>

@@ -23,9 +23,9 @@
 	]]></applyEndEffects>
 	<areasCummedIn/>
 	<areasCummedOn/>
-	<title><![CDATA[Wait]]></title>
+	<title><![CDATA[Ждать]]></title>
 	<tooltip><![CDATA[
-		Obediently wait for the doll's next command.
+		Послушно ждать следующей команды куклы.
 	]]></tooltip>
 	<descriptions>
 		<description>
@@ -33,7 +33,7 @@
 				[#sex.getNumberOfOrgasms(pc)==0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				Kneeling down on the floor in front of the red doll, you obediently stay still and wait to see which toy she'll test on you first...
+				Преклонив колени перед красной куклой, ты послушно замираешь, гадая, какую игрушку она решит испытать на тебе первой...
 			]]></text>
 		</description>
 		<description>
@@ -41,7 +41,7 @@
 				[#sex.getNumberOfOrgasms(pc)>0]
 			]]></descriptionConditional>
 			<text><![CDATA[
-				With toys stuffed in each of your three orifices, you try to ignore the feeling of your slick juices trickling down your thigh as you obediently stay still and wait for the red doll's next command...
+				С игрушками, засунутыми в каждое из твоих трех отверстий, ты пытаешься не замечать, как по бедру стекают твои сочные выделения, пока ты послушно замираешь в ожидании следующей команды красной куклы...
 			]]></text>
 		</description>
 	</descriptions>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <weapon>
 	<coreAttributes>
-		<authorTag><![CDATA[At the base of the grip, there is a small engraving that reads "Official Enforcer Issue, MFD by DSG Forgeworks."]]></authorTag>
+		<authorTag><![CDATA[У основания рукояти красуется небольшая гравировка: «Служебное снаряжение Enforcer, произведено DSG Forgeworks».]]></authorTag>
 		
 		<value>3000</value> 
 		
@@ -11,11 +11,11 @@
 		
 		<determiner><![CDATA[an]]></determiner>
 		
-		<name><![CDATA[Enforcer's baton]]></name>
+		<name><![CDATA[Дубинка Enforcer]]></name>
 		
-		<namePlural pluralByDefault="false"><![CDATA[Enforcer's Batons]]></namePlural> 
+		<namePlural pluralByDefault="false"><![CDATA[Дубинки Enforcer]]></namePlural> 
 		
-		<description><![CDATA[A standard issue baton for Enforcers. It is favored for its ability to collapse into a more discrete form factor but offers little in the way of defensive techniques.]]></description> 
+		<description><![CDATA[Стандартная дубинка, выдаваемая Enforcer. Она ценится за возможность складываться в компактный вид, но почти не дает преимуществ в защитных техниках.]]></description> 
 		
 		<attackDescriptor>Bludgeon</attackDescriptor>
 		
@@ -23,9 +23,9 @@
 		
 		<rarity>UNCOMMON</rarity> 
 		
-		<equipText><![CDATA[[npc.Name] [npc.verb(swing)] the baton out, letting the weight of the tip extend the shaft to full length.]]></equipText>
+		<equipText><![CDATA[[npc.Name] [npc.verb(swing)] дубинку, позволяя весу наконечника растянуть древко на полную длину.]]></equipText>
 		
-		<unequipText><![CDATA[[npc.Name] [npc.verb(push)] the end of the baton into the handle and [npc.verb(put)] it away.]]></unequipText>
+		<unequipText><![CDATA[[npc.Name] [npc.verb(push)] конец дубинки в рукоять и [npc.verb(put)] её на место.]]></unequipText>
 		
 		<imageName>enbaton_inv.svg</imageName> 
 		
@@ -46,14 +46,14 @@
 		<effects/>
 		
 		<extraEffects>
-			<effect><![CDATA[[style.boldPhysical("Dazed")] on critical hit.]]></effect>
+			<effect><![CDATA[[style.boldPhysical("Ошеломление")] при критическом попадании.]]></effect>
 		</extraEffects>
 		
 		<onHitEffect/>
 		
 		<onCriticalHitEffect><![CDATA[
 		#IF !npc2.hasStatusEffect(SE_DAZED)
-		#THEN [##npc2.addStatusEffect(SE_DAZED, 6)] [npc2.Name] [npc2.is] [style.boldPhysical(seeing stars)] from such a succession of blows! 
+		#THEN [##npc2.addStatusEffect(SE_DAZED, 6)] [npc2.Name] [npc2.is] [style.boldPhysical(в глазах рябит)] от такой серии ударов! 
 		#ENDIF
 		]]></onCriticalHitEffect>
 		
@@ -70,25 +70,25 @@
 	
 	<hitDescriptions>
 		<hitText><![CDATA[
-		Swinging out with [npc.her] baton, [npc.name] [npc.verb(manage)] to hit [npc2.name] square in the chest. There is a loud cracking sound as the shaft connects with the aura above [npc2.her] torso to drain [npc2.her] energy!
+		Взмахнув [npc.her] дубинкой, [npc.name] [npc.verb(manage)] попасть [npc2.name] прямо в грудь. Раздается громкий треск, когда древко соприкасается с аурой над [npc2.her] торсом, высасывая [npc2.her] энергию!
 		]]></hitText>
 		<hitText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] baton, bashing into the aura around [npc2.her] shoulder with the shaft and causing [npc2.herHim] to lose some energy!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] дубинкой, врезаясь древком в ауру вокруг [npc2.her] плеча и заставляя [npc2.herHim] потерять немного энергии!
 		]]></hitText>
 		<hitText><![CDATA[
-		Swinging out with [npc.her] baton, [npc.name] [npc.verb(manage)] to hit [npc2.name] across the head! There is a loud cracking sound as the shaft connects with the aura above [npc2.her] head to drain [npc2.her] energy!
+		Взмахивая [npc.her] дубинкой, [npc.name] [npc.verb(manage)] ударить [npc2.name] по голове! Раздается громкий треск, когда древко задевает ауру над головой [npc2.her], высасывая [npc2.her] энергию!
 		]]></hitText>
 	</hitDescriptions>
 
 	<missDescriptions>
 		<missText><![CDATA[
-		Thrusting out with [npc.her] baton, [npc.name] [npc.verb(attempt)] to hit [npc2.name] in the chest, but [npc.verb(end)] up missing [npc2.herHim]!
+		Нанося колющий удар [npc.her] дубинкой, [npc.name] [npc.verb(attempt)] попасть [npc2.name] в грудь, но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 		<missText><![CDATA[
-		With a quick step forwards, [npc.name] [npc.verb(lunge)] out at [npc2.name] with [npc.her] baton, but [npc.she] [npc.verb(miss)] [npc.her] target!
+		Сделав быстрый шаг вперед, [npc.name] [npc.verb(lunge)] на [npc2.name] с [npc.her] дубинкой, но [npc.she] [npc.verb(miss)] [npc.her] цель!
 		]]></missText>
 		<missText><![CDATA[
-		Thrusting out with [npc.her] baton, [npc.name] [npc.verb(attempt)] to hit [npc2.name] across the head, but [npc.verb(end)] up missing [npc2.herHim]!
+		Нанося колющий удар [npc.her] дубинкой, [npc.name] [npc.verb(attempt)] ударить [npc2.name] по голове, но в итоге [npc.verb(end)] промахивается по [npc2.herHim]!
 		]]></missText>
 	</missDescriptions>
 	

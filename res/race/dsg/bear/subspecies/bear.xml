@@ -100,38 +100,38 @@
 	
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[bear-morph]]></name>
-			<namePlural><![CDATA[bear-morphs]]></namePlural>
-			<singularMaleName><![CDATA[bear-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[bear-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[bear-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[bear-girls]]></pluralFemaleName>
+			<name><![CDATA[медвежья морфа]]></name>
+			<namePlural><![CDATA[медвежьи морфы]]></namePlural>
+			<singularMaleName><![CDATA[медведь-мальчик]]></singularMaleName>
+			<singularFemaleName><![CDATA[медведица]]></singularFemaleName>
+			<pluralMaleName><![CDATA[медведи-мальчики]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[медведицы]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
 	
 	<!-- A brief description and identification requirements of this subspecies. -->
-	<description><![CDATA[An anthropomorphic bear, known as a 'bear-morph' when bipedal, and a 'beartaur' when the lower body is that of a typically-oversized feral bear.]]></description>
+	<description><![CDATA[Антропоморфный медведь, которого называют «медведоморфом», когда он ходит на двух ногах, и «медведавром», если его нижняя часть тела представляет собой туловище типично огромного дикого медведя.]]></description>
 	
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[onikuma]]></name>
-			<namePlural><![CDATA[onikuma]]></namePlural>
-			<singularMaleName><![CDATA[onikuma]]></singularMaleName>
-			<singularFemaleName><![CDATA[onikuma]]></singularFemaleName>
-			<pluralMaleName><![CDATA[onikuma]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[onikuma]]></pluralFemaleName>
+			<name><![CDATA[оникума]]></name>
+			<namePlural><![CDATA[оникума]]></namePlural>
+			<singularMaleName><![CDATA[оникума]]></singularMaleName>
+			<singularFemaleName><![CDATA[оникума]]></singularFemaleName>
+			<pluralMaleName><![CDATA[оникума]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[оникума]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	
 	<!-- Attributes related to this subspecies when in a feral form. -->
 	<feralAttributes>
 		<!-- Naming: -->
-		<feralName><![CDATA[bear]]></feralName>
-		<feralNamePlural><![CDATA[bear]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[bear]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[bear]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[bears]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[bears]]></feralPluralFemaleName>
+		<feralName><![CDATA[медведь]]></feralName>
+		<feralNamePlural><![CDATA[медведь]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[медведь]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[медведь]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[медведи]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[медведи]]></feralPluralFemaleName>
 		
 		<!-- The leg configuration that a feral form of this subspecies has.
 		This determines their overall body shape. -->
@@ -161,9 +161,7 @@
 	</feralAttributes>
 	
 	<!-- The description which is shown to the player in this subspecies' status effect tooltip. -->
-	<statusEffectDescription><![CDATA[
-		[npc.NamePos] bear-like body is strong and resilient, and [npc.she] [npc.has] a primal urge to defend what is [npc.hers].
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[[npc.NamePos] медвежье тело сильное и выносливое, а [npc.she] [npc.has] в нем живет первобытный инстинкт защищать то, что [npc.hers].]]></statusEffectDescription>
 	
 	<!-- The core attributes which a character of this subspecies benefits from.
 	The text inside the 'attribute' element corresponds to an Attribute found here: https://github.com/Innoxia/liliths-throne-public/blob/dev/src/com/lilithsthrone/game/character/attributes/Attribute.java 

@@ -2,7 +2,7 @@
 <hair>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<coveringType>innoxia_sheep_hair</coveringType>
 	
@@ -12,8 +12,8 @@
 	
 	<determiner><![CDATA[a head of]]></determiner>
 	
-	<name><![CDATA[hair]]></name>
-	<namePlural pluralByDefault="false"><![CDATA[hairs]]></namePlural> 
+	<name><![CDATA[волосы]]></name>
+	<namePlural pluralByDefault="false"><![CDATA[волосы]]></namePlural> 
 	
 	<descriptorsMasculine>
 		<descriptor>woolly</descriptor>
@@ -26,11 +26,11 @@
 	</descriptorsFeminine>
 	
 	<transformationDescription><![CDATA[
-		The transformation only lasts a matter of moments, leaving [npc.herHim] with wool-like hair.
-		<br/>[npc.Name] now [npc.has] [npc.hairColour] [style.boldSheep(sheep hair)].
+		Трансформация длится всего мгновение, оставляя [npc.herHim] с волосами, похожими на шерсть.
+		<br/>[npc.Name] теперь [npc.has] [npc.hairColour] [style.boldSheep(sheep hair)].
 	]]></transformationDescription>
 	
 	<bodyDescription><![CDATA[
-		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], sheep-like hair
+		[npc.SheHasFull] [npc.hairDeterminer] [npc.hairLength], [npc.hairColour(true)], овечья шерсть
 	]]></bodyDescription>
 </hair>

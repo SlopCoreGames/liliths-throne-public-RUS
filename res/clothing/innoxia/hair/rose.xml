@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>100</value>
 		<determiner><![CDATA[a]]></determiner>
-		<name><![CDATA[rose]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[roses]]></namePlural>
-		<description><![CDATA[A single, colourful rose, which could be tucked into someone's hair as a decorative accessory. You imagine that if it were any other colour, it would smell just as sweet.]]></description>
+		<name><![CDATA[роза]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[розы]]></namePlural>
+		<description><![CDATA[Одинокая яркая роза, которую можно заколоть в волосы в качестве украшения. Ты думаешь, что будь она любого другого цвета, пахла бы так же сладко.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>HAIR</slot>
@@ -51,25 +51,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(tuck)] the rose into [npc.her] [npc.hair(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(tuck)] розу в [npc.her] [npc.hair(true)].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(tuck)] the rose into [npc2.namePos] [npc2.hair(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(tuck)] розу в [npc2.namePos] [npc2.hair(true)].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the rose into [npc2.namePos] [npc2.hair(true)].]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] розу в [npc2.namePos] [npc2.hair(true)].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] the rose out of [npc.her] [npc.hair(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] розу из [npc.her] [npc.hair(true)].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] the rose out of [npc2.namePos] [npc2.hair(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] розу из [npc2.namePos] [npc2.hair(true)].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] the rose out of [npc2.namePos] [npc2.hair(true)].]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] розу из [npc2.namePos] [npc2.hair(true)].]]>
     </otherRough>
   </displacementText>
   

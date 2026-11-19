@@ -3,10 +3,10 @@
 	<coreAttributes>
 		<value>500</value> 
 		
-		<name><![CDATA[tribal]]></name>
+		<name><![CDATA[трайбл]]></name>
 		
-		<description><![CDATA[A series of flowing lines and intricate patterns.]]></description> 
-		<bodyOverviewDescription><![CDATA[a tattoo which consists of a series of flowing lines and intricate patterns]]></bodyOverviewDescription> 
+		<description><![CDATA[Ряд плавных линий и замысловатых узоров.]]></description> 
+		<bodyOverviewDescription><![CDATA[татуировка, состоящая из ряда плавных линий и замысловатых узоров]]></bodyOverviewDescription> 
 		
 		<imageName>tribal.svg</imageName> 
 		

@@ -2,18 +2,18 @@
 <fluid>
 	<race>innoxia_sheep</race>
 	
-	<transformationName><![CDATA[sheep]]></transformationName>
+	<transformationName><![CDATA[овца]]></transformationName>
 	
 	<baseFluidType>CUM</baseFluidType>
 	
 	<flavour>CUM</flavour>
 	
 	<namesMasculine>
-		<name><![CDATA[sheep-]]></name>
+		<name><![CDATA[овечий-]]></name>
 	</namesMasculine>
 	
 	<namesFeminine>
-		<name><![CDATA[sheep-]]></name>
+		<name><![CDATA[овечий-]]></name>
 	</namesFeminine>
 	
 	<descriptorsMasculine/>

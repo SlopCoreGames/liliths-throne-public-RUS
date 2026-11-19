@@ -4,9 +4,9 @@
 	<coreAttributes>
 		<value>10000</value>
 		<determiner><![CDATA[the]]></determiner>
-		<name><![CDATA[Slime Queen's Tiara]]></name>
-		<namePlural pluralByDefault="false"><![CDATA[Slime Queen's Tiaras]]></namePlural>
-		<description><![CDATA[Worn by the Slime Queen, this tiara consists of a thin band of metal, studded with precious gemstones.]]></description>
+		<name><![CDATA[Тиара Королевы Слаймов]]></name>
+		<namePlural pluralByDefault="false"><![CDATA[Тиары Королевы Слаймов]]></namePlural>
+		<description><![CDATA[Эту тиару носит сама Королева Слаймов; она представляет собой тонкий металлический обруч, инкрустированный драгоценными камнями.]]></description>
 		<physicalResistance>0</physicalResistance>
 		<femininity>FEMININE</femininity>
 		<slot>HEAD</slot>
@@ -54,25 +54,25 @@
 
   <replacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(place)] the tiara onto [npc.her] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] тиару на голову [npc.her].]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(place)] the tiara onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] [npc.verb(place)] тиару на голову [npc2.namePos].]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] roughly [npc.verb(push)] the tiara onto [npc2.namePos] head.]]>
+      <![CDATA[[npc.Name] грубо [npc.verb(push)] тиару на голову [npc2.namePos].]]>
     </otherRough>
   </replacementText>
 
   <displacementText type="REMOVE_OR_EQUIP">
     <self>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc.her] tiara.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с [npc.her] тиару.]]>
     </self>
     <other>
-      <![CDATA[[npc.Name] [npc.verb(take)] off [npc2.namePos] tiara.]]>
+      <![CDATA[[npc.Name] [npc.verb(take)] с [npc2.namePos] тиару.]]>
     </other>
     <otherRough>
-      <![CDATA[[npc.Name] [npc.verb(snatch)] off [npc2.namePos] tiara.]]>
+      <![CDATA[[npc.Name] [npc.verb(snatch)] с [npc2.namePos] тиару.]]>
     </otherRough>
   </displacementText>
   

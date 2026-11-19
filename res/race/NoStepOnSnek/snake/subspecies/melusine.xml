@@ -36,32 +36,32 @@
 	<defaultPreference>TWO_AVERAGE</defaultPreference>
 	<nameAnthro>
 		<namesDefault>
-			<name><![CDATA[melusine]]></name>
-			<namePlural><![CDATA[melusines]]></namePlural>
-			<singularMaleName><![CDATA[melusine-boy]]></singularMaleName>
-			<singularFemaleName><![CDATA[melusine-girl]]></singularFemaleName>
-			<pluralMaleName><![CDATA[melusine-boys]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[melusine-girls]]></pluralFemaleName>
+			<name><![CDATA[мелюзина]]></name>
+			<namePlural><![CDATA[мелюзины]]></namePlural>
+			<singularMaleName><![CDATA[парень-мелюзина]]></singularMaleName>
+			<singularFemaleName><![CDATA[девушка-мелюзина]]></singularFemaleName>
+			<pluralMaleName><![CDATA[парни-мелюзины]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[девушки-мелюзины]]></pluralFemaleName>
 		</namesDefault>
 	</nameAnthro>
-	<description><![CDATA[An anthropomorphic snake with the lower body of a typically-oversized feral snake and a pair of wings, known as a 'melusine'.]]></description>
+	<description><![CDATA[Антропоморфная змея с нижней частью тела в виде огромного дикого змея и парой крыльев, известная как «мелюзина».]]></description>
 	<nameHalfDemon>
 		<namesDefault>
-			<name><![CDATA[demonic-melusine]]></name>
-			<namePlural><![CDATA[demonic-melusines]]></namePlural>
-			<singularMaleName><![CDATA[demonic-melusine]]></singularMaleName>
-			<singularFemaleName><![CDATA[demonic-melusine]]></singularFemaleName>
-			<pluralMaleName><![CDATA[demonic-melusines]]></pluralMaleName>
-			<pluralFemaleName><![CDATA[demonic-melusine]]></pluralFemaleName>
+			<name><![CDATA[демоническая мелюзина]]></name>
+			<namePlural><![CDATA[демонические мелюзины]]></namePlural>
+			<singularMaleName><![CDATA[демоническая мелюзина]]></singularMaleName>
+			<singularFemaleName><![CDATA[демоническая мелюзина]]></singularFemaleName>
+			<pluralMaleName><![CDATA[демонические мелюзины]]></pluralMaleName>
+			<pluralFemaleName><![CDATA[демоническая мелюзина]]></pluralFemaleName>
 		</namesDefault>
 	</nameHalfDemon>
 	<feralAttributes>
-		<feralName><![CDATA[snake]]></feralName>
-		<feralNamePlural><![CDATA[snakes]]></feralNamePlural>
-		<feralSingularMaleName><![CDATA[snake]]></feralSingularMaleName>
-		<feralSingularFemaleName><![CDATA[snake]]></feralSingularFemaleName>
-		<feralPluralMaleName><![CDATA[snakes]]></feralPluralMaleName>
-		<feralPluralFemaleName><![CDATA[snakes]]></feralPluralFemaleName>
+		<feralName><![CDATA[змея]]></feralName>
+		<feralNamePlural><![CDATA[змеи]]></feralNamePlural>
+		<feralSingularMaleName><![CDATA[змея]]></feralSingularMaleName>
+		<feralSingularFemaleName><![CDATA[змея]]></feralSingularFemaleName>
+		<feralPluralMaleName><![CDATA[змеи]]></feralPluralMaleName>
+		<feralPluralFemaleName><![CDATA[змеи]]></feralPluralFemaleName>
 		<legConfiguration>TAIL_LONG</legConfiguration>
 		<sizeHeight>false</sizeHeight>
 		<size>160</size>
@@ -74,9 +74,7 @@
 		<fingerActionsAvailable>false</fingerActionsAvailable>
 		<hairPresent>false</hairPresent>
 	</feralAttributes>
-	<statusEffectDescription><![CDATA[
-		Although [npc.namePos] snake-like body is very quick and strong, [npc.she] can't regulate [npc.her] body temperature very well, and so [npc.sheIs] weak to both arcane ice and fire. On the positive side, [npc.she] [npc.has] a strong affinity with arcane poison.
-	]]></statusEffectDescription>
+	<statusEffectDescription><![CDATA[Хотя [npc.namePos] змееподобное тело очень быстрое и сильное, [npc.she] не может очень хорошо регулировать [npc.her] температуру тела, поэтому [npc.sheIs] уязвима как к арканическому льду, так и к огню. С другой стороны, [npc.she] [npc.has] сильная предрасположенность к арканическому яду.]]></statusEffectDescription>
 	<statusEffectAttributeModifiers>
 		<attribute value="10">MAJOR_PHYSIQUE</attribute>
 		<attribute value="0">MAJOR_ARCANE</attribute> 
