@@ -67,9 +67,8 @@ public class HarpyNymphoCompanion extends NPC {
 	}
 	
 	public HarpyNymphoCompanion(boolean isImported) {
-		super(isImported, new NameTriplet("Max"), "Maly",
-				"Lexi's favourite partner, Max, does everything she can to please her matriarch."
-						+ " Just like most of the harpies in her nest, she does absolutely anything Lexi orders her to do, which usually involves trying to sate her matriarch's never-ending lust.",
+		super(isImported, new NameTriplet("Макс"), "Мали",
+				"Макс, любимый партнер Лекси, делает всё возможное, чтобы угодить своей матриарху. Как и большинство гарпий в её гнезде, она беспрекословно выполняет любые приказы Лекси, что обычно сводится к попыткам утолить бесконечную похоть её матриарха.",
 				26, Month.JANUARY, 22,
 				5, Gender.M_P_MALE, Subspecies.HARPY, RaceStage.LESSER,
 				new CharacterInventory(false, 30), WorldType.HARPY_NEST, PlaceType.HARPY_NESTS_HARPY_NEST_PINK, true);

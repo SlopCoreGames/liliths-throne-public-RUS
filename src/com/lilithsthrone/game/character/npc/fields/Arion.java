@@ -57,8 +57,8 @@ public class Arion extends NPC {
 	}
 	
 	public Arion(boolean isImported) {
-		super(isImported, new NameTriplet("Arion"), "Zephyrus",
-				"The ever-present assistant to Minotallys, Arion is fiercely protective of his superior.",
+		super(isImported, new NameTriplet("Арион"), "Зефир",
+				"Неотступный помощник Миноталлиса, Арион яростно оберегает своего господина.",
 				26, Month.FEBRUARY, 26,
 				20, Gender.M_P_MALE, Subspecies.HORSE_MORPH_ALICORN, RaceStage.GREATER,
 				new CharacterInventory(false, 10),

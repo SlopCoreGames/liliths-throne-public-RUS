@@ -80,9 +80,8 @@ public class Scarlett extends NPC {
 	}
 	
 	public Scarlett(boolean isImported) {
-		super(isImported, new NameTriplet("Scarlett"), "Kardos",
-				"Scarlett is the owner of the rather unoriginally named establishment 'Scarlett's shop'."
-						+ " Rude, loud, and quick to anger, Scarlett isn't a very pleasant person to have to deal with.",
+		super(isImported, new NameTriplet("Scarlett"), "Кардос",
+				"Scarlett — владелица довольно неоригинального заведения под названием «Лавка Scarlett». Грубая, шумная и вспыльчивая, она далеко не самый приятный человек в общении.",
 				23, Month.NOVEMBER, 14,
 				5, Gender.M_P_MALE, Subspecies.HARPY, RaceStage.LESSER,
 				new CharacterInventory(false, 30), WorldType.SLAVER_ALLEY, PlaceType.SLAVER_ALLEY_SCARLETTS_SHOP, true);
@@ -294,30 +293,25 @@ public class Scarlett extends NPC {
 	public String getDescription() {
 		if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.ROMANCE_HELENA, Quest.ROMANCE_HELENA_4_SCARLETTS_RETURN)) {
 			return UtilText.parse(this,
-					"Scarlett is currently employed in the very same establishment that she used to own as Helena's personal assistant."
-						+ " Showing respect only to her matriarch, she's extremely rude and obnoxious towards everyone else.");
+					"В настоящее время Scarlett работает в том самом заведении, которым когда-то владела, но уже в качестве личной помощницы Helena. Проявляя уважение только к своей матриархизне, она ведет себя крайне грубо и несносно со всеми остальными.");
 		}
 		if(Main.game.getPlayer().isQuestProgressGreaterThan(QuestLine.MAIN, Quest.MAIN_1_F_SCARLETTS_FATE)) {
 			if(this.getLocationPlace().getPlaceType()==PlaceType.GENERIC_EMPTY_TILE) {
 				return UtilText.parse(this,
-						"Once the owner of a shop in Slaver Alley, Scarlett is now a slave [npc.herself]."
-								+ " Having been sold by you, there's no knowing where [npc.she] is or what [npc.sheIs] doing...");
+						"Когда-то Scarlett владела лавкой в Переулке Рабов, а теперь она — рабыня [npc.herself]. После того как вы её продали, никто не знает, где сейчас [npc.she] и чем [npc.sheIs] занимается...");
 				
 			} else if(this.isSlave()) {
 				return UtilText.parse(this,
-						"Once the owner of a shop in Slaver Alley, Scarlett is now a slave [npc.herself]."
-								+ " Rude, loud, and quick to anger, [npc.she] isn't a very pleasant person to have to deal with.");
+						"Когда-то Scarlett владела лавкой в Переулке Рабов, а теперь она — рабыня [npc.herself]. Грубая, шумная и вспыльчивая, [npc.she] — далеко не самый приятный человек в общении.");
 				
 			} else {
 				return UtilText.parse(this,
-						"Once the owner of a shop in Slaver Alley, Scarlett was enslaved by [helena.name], before then being set free by you."
-								+ " Rude, loud, and quick to anger, [npc.she] isn't a very pleasant person to have to deal with.");
+						"Когда-то Scarlett владела лавкой в Переулке Рабов, но была порабощена [helena.name], пока вы не освободили её. Грубая, шумная и вспыльчивая, [npc.she] — далеко не самый приятный человек в общении.");
 			}
 			
 		} else {
 			return UtilText.parse(this,
-					"Scarlett is the owner of the rather unoriginally named establishment, 'Scarlett's shop'."
-							+ " Rude, loud, and quick to anger, [npc.she] isn't a very pleasant person to have to deal with.");
+					"Scarlett — владелица довольно неоригинального заведения под названием «Лавка Scarlett». Грубая, шумная и вспыльчивая, [npc.she] — далеко не самый приятный человек в общении.");
 		}
 	}
 	
@@ -346,7 +340,7 @@ public class Scarlett extends NPC {
 		if(this.getVirginityLoss(sexType)!=null
 				&& sexType.equals(new SexType(SexParticipantType.NORMAL, SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS))
 				&& this.getVirginityLoss(sexType).getKey().isEmpty()) {
-			return UtilText.parse(this, "[npc.Name] lost [npc.her] virginity to one of [npc.her] harpy friends up in Helena's nest.");
+			return UtilText.parse(this, "[npc.Name] лишилась [npc.her] девственности с одной из подруг-[npc.her] гарпий в гнезде Helena.");
 		}
 		return super.getVirginityLossDescription(sexType);
 	}
@@ -441,7 +435,7 @@ public class Scarlett extends NPC {
 	
 	public void resetName() {
 		this.setName(new NameTriplet("Scarlett"));
-		this.setSurname("Kardos");
+		this.setSurname("Кардос");
 	}
 	
 	public void completeBodyReset() {

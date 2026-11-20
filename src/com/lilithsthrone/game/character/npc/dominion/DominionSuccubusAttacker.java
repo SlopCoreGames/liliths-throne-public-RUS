@@ -191,12 +191,10 @@ public class DominionSuccubusAttacker extends NPC {
 		}
 		if(isSlave()) {
 			return UtilText.parse(this,
-					"Having lost [npc.herself] to [npc.her] powerful libido, [npc.name] ended up stalking the alleyways of Dominion in search of innocent citizens to force [npc.herself] on."
-					+ " Being unlucky enough to have been placed on the Enforcer's wanted list, and then to have encountered you, [npc.she] soon ended up being enslaved and owned by you.");
+					"Потеряв [npc.herself] перед лицом [npc.her] мощного либидо, [npc.name] принялась рыскать по переулкам Dominion в поисках невинных горожан, чтобы навязать им [npc.herself]. Из-за невезения она попала в список разыскиваемых Enforcer, а затем столкнулась с вами, и вскоре [npc.she] оказалась в вашем рабстве и полной вашей собственности.");
 		}
 		return UtilText.parse(this,
-				"Although all demons have an extremely powerful libido, some suffer from it far more than others."
-				+ " While most are able to control their sexual desires, others, such as this [npc.race], struggle to think of anything but how to secure their next sexual conquest.");
+				"Хотя у всех демонов чрезвычайно сильное либидо, некоторые страдают от него гораздо сильнее других. В то время как большинство способны контролировать свои сексуальные желания, другие, подобные этой [npc.race], изо всех сил пытаются думать лишь о том, как заполучить очередную сексуальную добычу.");
 	}
 
 	@Override
@@ -235,15 +233,15 @@ public class DominionSuccubusAttacker extends NPC {
 			if(this.isFeminine()) {
 				return UtilText.parse(this, target,
 						UtilText.returnStringAtRandom(
-								"[npc.Name] looks annoyed that [npc2.nameIs] trying to put up a fight, and leaps forwards to deliver a stinging slap across [npc2.her] face.",
-								"With an angry little click of her tongue, [npc.Name] slaps [npc2.name] across the face.",
-								"With a frustrated whine, [npc.Name] kicks out at [npc2.namePos] shins."));
+								"[npc.Name] выглядит раздраженной тем, что [npc2.nameIs] пытается сопротивляться, и бросается вперед, чтобы отвесить [npc2.her] звонкую пощечину.",
+								"Сердито цокнув языком, [npc.Name] дает [npc2.name] пощечину.",
+								"С разочарованным скулением [npc.Name] бьет [npc2.namePos] по голеням."));
 			} else {
 				return UtilText.parse(this, target,
 						UtilText.returnStringAtRandom(
-								"[npc.Name] looks annoyed that [npc2.nameIs] trying to put up a fight, and leaps forwards to deliver a solid punch to [npc2.her] [npc2.arm].",
-								"With an angry shout, [npc.Name] darts forwards and punches [npc2.name] right in the chest!",
-								"With a frustrated cry, [npc.Name] kicks out at [npc2.namePos] shins."));
+								"[npc.Name] выглядит раздраженной тем, что [npc2.nameIs] пытается сопротивляться, и бросается вперед, чтобы нанести мощный удар кулаком в [npc2.her] [npc2.arm].",
+								"С яростным криком [npc.Name] бросается вперед и бьет [npc2.name] прямо в грудь!",
+								"С разочарованным криком [npc.Name] бьет [npc2.namePos] по голеням."));
 			}
 		}
 		return super.getMainAttackDescription(armRow, target, isHit, critical);
@@ -269,11 +267,7 @@ public class DominionSuccubusAttacker extends NPC {
 					return null;
 				}
 				return UtilText.parse(equipper, target,
-						"<p>"
-							+ "Holding out a condom to [npc2.name], [npc.name] [npc.verb(force)] [npc2.herHim] to take it and put it on."
-							+ " Quickly ripping it out of its little foil wrapper, [npc2.she] [npc2.verb(roll)] it down the length of [npc2.her] [npc2.cock+] as [npc2.she] [npc2.verb(whine)],"
-							+ " [npc2.speech(Do I really have to? It feels so much better without one...)]"
-						+ "</p>");
+						"<p>[npc2.name] [npc.name] [npc.verb(force)] [npc2.herHim], протягивая ей презерватив, чтобы она надела его. Быстро вырывая его из маленькой фольгированной упаковки, [npc2.she] [npc2.verb(roll)] по всей длине [npc2.her] [npc2.cock+], пока [npc2.she] [npc2.verb(whine)], [npc2.speech(Мне правда обязательно это делать? Без него куда приятнее...)]</p>");
 				
 			} else if (!target.isPlayer()) {
 				AbstractClothing clothing = target.getClothingInSlot(InventorySlot.PENIS);
@@ -283,15 +277,10 @@ public class DominionSuccubusAttacker extends NPC {
 				}
 				if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 					return UtilText.parse(equipper, target,
-							"[npc.Name] [npc.verb(direct)] [npc.her] spinneret at [npc2.namePos] [npc2.cock], but, sensing what [npc.sheIs] about to do, [npc2.name] [npc2.verb(slap)] it away and [npc2.verb(sneer)],"
-							+ " [npc2.speech(Hah! I don't think so!)]");
+							"[npc.Name] [npc.verb(direct)] [npc.her] паутинка на [npc2.namePos] [npc2.cock], но, почуяв, что [npc.sheIs] собирается сделать, [npc2.name] [npc2.verb(slap)] её прочь и [npc2.verb(sneer)], [npc2.speech(Ха! Ну уж нет!)]");
 				}
 				return UtilText.parse(equipper, target,
-						"<p>"
-							+ "[npc.Name] [npc.verb(pull)] out a condom and [npc.verb(try)] to give it to [npc2.name], but [npc2.she] simply laughs in [npc.her] face before grabbing the little foil packet and tearing it in two."
-							+ " Mocking [npc.namePos] attempt at trying to get [npc2.herHim] to wear a rubber, [npc2.she] [npc2.verb(sneer)],"
-							+ " [npc2.speech(Hah! I don't think so!)]"
-						+ "</p>");
+						"<p>[npc.Name] [npc.verb(pull)] презерватив и [npc.verb(try)], чтобы отдать его [npc2.name], но [npc2.she] лишь смеется ей в [npc.her] лицо, прежде чем схватить маленький фольгированный пакетик и разорвать его пополам. Насмехаясь над попыткой [npc.namePos] заставить [npc2.herHim] надеть резину, [npc2.she] [npc2.verb(sneer)], [npc2.speech(Ха! Ну уж нет!)]</p>");
 			}
 		}
 		return null;
@@ -306,86 +295,15 @@ public class DominionSuccubusAttacker extends NPC {
 		StringBuilder sb = new StringBuilder();
 		
 		if(Main.game.getPlayer().hasHymen()) {
-			sb.append("<p>"
-							+ "As the dominant [npc.race] drives [npc.her] [npc.cock+] deep into your [pc.pussy+], your vision explodes in stars, and a painful, high-pitched shriek escapes from between your lips."
-							+ " Due to the fact that you're still a virgin, the sudden, violent penetration is like nothing you've ever felt before,"
-								+ " and your shriek turns into a shuddering cry as you find yourself overwhelmed by the agony of your first penetration."
-						+ "</p>"
+			sb.append("<p>Когда доминантная [npc.race] вонзает [npc.her] [npc.cock+] глубоко в твою [pc.pussy+], перед глазами взрываются искры, а с твоих губ срывается болезненный, пронзительный крик. Поскольку ты всё ещё девственница, это внезапное, яростное проникновение не похоже ни на что из того, что ты чувствовала прежде, и твой крик переходит в дрожащий стон, когда тебя захлестывает агония первого проникновения.</p>"
 						+ (Main.game.getPlayer().hasFetish(Fetish.FETISH_MASOCHIST)
-								?"<p>"
-									+ "Due to being an extreme masochist, you find your painful cries being interspersed with lewd moans of pleasure."
-									+ " The agony between your legs is pure bliss, and you focus on the pain as you squeal and moan in a delightful haze of overwhelming ecstasy."
-								+ "</p>"
+								?"<p>Из-за своей запредельной мазохистки вы обнаруживаете, что ваши болезненные крики перемежаются с похотливыми стонами удовольствия. Агония между ног — это чистое блаженство, и вы сосредотачиваетесь на боли, визжа и стоная в восхитительном тумане всепоглощающего экстаза.</p>"
 								:"")
-						+"<p>"
-							+ "Glancing down, you see a small trickle of blood flowing out of your now-broken-in pussy, and you realise that your hymen has been completely torn."
-							+ " As you let out a desperate sigh, you hear the [npc.race] giggling at your reaction."
-						+ "</p>"
-						+"<p>"
-							+ "Looking up at [npc.herHim], you see a wild, crazed look in [npc.her] eyes."
-							+ " Another jolt of pain shoots up between your legs as [npc.she] drives [npc.her] [npc.cock+] even deeper into your [pc.pussy+]."
-							+ " Leaning into you, [npc.she] pulls you into a sloppy kiss, and with a final, violent thrust into your groin, you feel the base of [npc.her] cock grind up against your [pc.labia+]."
-						+ "</p>"
-						+ "<p>"
-							+ "Still keeping [npc.her] [npc.cock] fully hilted in your [pc.pussy], [npc.she] breaks off the kiss, raising [npc.her] hand to cover your mouth as [npc.she] muffles your painful cries."
-							+ " Playfully biting [npc.her] lip, [npc.she] starts taunting you, clearly getting incredibly excited about being the one to take your virginity."
-						+ "</p>"
-						+ "<p>"
-							+ "[npc.speechNoEffects(~Mmm!~ Doesn't that feel good?! Aww, I wonder if you were saving yourself for someone?)]"
-							+ " [npc.She] pauses for a moment to let out a mocking laugh, before continuing,"
-							+ " [npc.speechNoEffects(Well, I guess you were saving yourself for me in the end! Which is a shame, really, because you're just another easy fuck to me.)]"
-						+ "</p>"
-						+ "<p>"
-							+ "You let out a protesting moan, but the [npc.race] just presses [npc.her] hand down even tighter over your mouth as [npc.she] continues, "
-							+ "[npc.speechNoEffects(What's that? You want me to do it again?!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Letting out a manic laugh, the [npc.race] suddenly drops [npc.her] hips, allowing [npc.her] [npc.cock+] to slide fully out of your [pc.pussy+]."
-							+ " Lining [npc.herself] up once more, [npc.she] wastes no time before violently thrusting up into you for a second time."
-							+ " Although still uncomfortable enough to cause you to cry out into the palm of [npc.her] hand, it's nothing like the agony you experienced on the first thrust,"
-								+ " and as you feel [npc.her] throbbing length filling you up once more, you find yourself letting out a desperate little moan."
-						+ "</p>"
-						+ "<p>"
-							+ "The [npc.race] looks delighted at your reaction, and leans in as [npc.she] continues teasing you,"
-							+ " [npc.speechNoEffects(~Ooh!~ So, you're a slut for demon dick? Can you feel it, pushing <i>deep</i>, claiming your precious little virginity?!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Dropping [npc.her] hips a little, [npc.she] starts rapidly thrusting in and out of your [pc.pussy], taking [npc.her] hand away from your mouth as you find yourself letting out a series of lewd moans."
-							+ " Moving [npc.her] hands down to take hold of your waist, [npc.she] carries on taunting you, repeating that you'll always remember this moment as the time you discovered that you're just a slut for big, thick demon cock."
-							+ " As the pain between your legs fades away into a dull ache, you find yourself letting out moan after desperate moan, and you start to worry that the [npc.race] might be right..."
-						+ "</p>");
+						+"<p>Glancing down, you see a small trickle of blood flowing out of your now-broken-in pussy, and you realise that your hymen has been completely torn. As you let out a desperate sigh, you hear the [npc.race] giggling at your reaction.</p><p>Looking up at [npc.herHim], you see a wild, crazed look in [npc.her] eyes. Another jolt of pain shoots up between your legs as [npc.she] drives [npc.her] [npc.cock+] even deeper into your [pc.pussy+]. Leaning into you, [npc.she] pulls you into a sloppy kiss, and with a final, violent thrust into your groin, you feel the base of [npc.her] cock grind up against your [pc.labia+].</p><p>Still keeping [npc.her] [npc.cock] fully hilted in your [pc.pussy], [npc.she] breaks off the kiss, raising [npc.her] hand to cover your mouth as [npc.she] muffles your painful cries. Playfully biting [npc.her] lip, [npc.she] starts taunting you, clearly getting incredibly excited about being the one to take your virginity.</p><p>[npc.speechNoEffects(~Mmm!~ Doesn't that feel good?! Aww, I wonder if you were saving yourself for someone?)] [npc.She] pauses for a moment to let out a mocking laugh, before continuing, [npc.speechNoEffects(Well, I guess you were saving yourself for me in the end! Which is a shame, really, because you're just another easy fuck to me.)]</p><p>You let out a protesting moan, but the [npc.race] just presses [npc.her] hand down even tighter over your mouth as [npc.she] continues, [npc.speechNoEffects(What's that? You want me to do it again?!)]</p><p>Letting out a manic laugh, the [npc.race] suddenly drops [npc.her] hips, allowing [npc.her] [npc.cock+] to slide fully out of your [pc.pussy+]. Lining [npc.herself] up once more, [npc.she] wastes no time before violently thrusting up into you for a second time. Although still uncomfortable enough to cause you to cry out into the palm of [npc.her] hand, it's nothing like the agony you experienced on the first thrust, and as you feel [npc.her] throbbing length filling you up once more, you find yourself letting out a desperate little moan.</p><p>The [npc.race] looks delighted at your reaction, and leans in as [npc.she] continues teasing you, [npc.speechNoEffects(~Ooh!~ So, you're a slut for demon dick? Can you feel it, pushing <i>deep</i>, claiming your precious little virginity?!)]</p><p>Dropping [npc.her] hips a little, [npc.she] starts rapidly thrusting in and out of your [pc.pussy], taking [npc.her] hand away from your mouth as you find yourself letting out a series of lewd moans. Moving [npc.her] hands down to take hold of your waist, [npc.she] carries on taunting you, repeating that you'll always remember this moment as the time you discovered that you're just a slut for big, thick demon cock. As the pain between your legs fades away into a dull ache, you find yourself letting out moan after desperate moan, and you start to worry that the [npc.race] might be right...</p>");
 			
 		} else {
 			sb.append(
-					"<p>"
-						+ "As the dominant [npc.race] drives [npc.her] [npc.cock+] deep into your [pc.pussy+], you can't stop a desperate, high-pitched wail from bursting out of your mouth."
-						+ " Due to the fact that you're still a virgin, the sudden, violent penetration is like nothing you've ever felt before, and your wail turns into a shuddering cry as you find yourself overwhelmed byt this new sensation."
-					+ "</p>"
-					+"<p>"
-						+ "As your hymen has been previously torn, the penetration isn't painful, but from your surprised reaction, [npc.name] is still able to realise that [npc.sheHas] just taken your virginity."
-						+ " With a wild, crazed look in [npc.her] eyes, [npc.name] violently thrusts into your groin, driving [npc.her] [npc.cock+] as deep as [npc.she] possibly can into your [pc.pussy+]."
-						+ " Keeping [npc.her] throbbing demonic cock driven as deep as possible into your [pc.pussy+], [npc.name] playfully licks [npc.her] [npc.lips], before starting to taunt you."
-					+ "</p>"
-					+ "<p>"
-						+ "[npc.speechNoEffects(~Mmm!~ Having a big demonic cock stuffed into your pussy feels good, doesn't it?! ~Ooh!~ I wonder if you were saving your first time for a special someone in your life?)]"
-						+ " [npc.she] asks, before pausing to let out a mocking laugh. Clearly getting incredibly excited about being the one to take your virginity, [npc.she] impatiently continues,"
-						+ " [npc.speechNoEffects(It looks like you were saving yourself for me in the end! Which is a shame, really, because you're just another easy fuck to me.)]"
-					+ "</p>"
-					+ "<p>"
-						+ "You can't help but let out [pc.a_moan+] as you feel [npc.namePos] [npc.cock+] throbbing deep within your cunt, which causes [npc.herHim] to let out another mocking laugh and ask,"
-						+ " [npc.speechNoEffects(What's that? You want me to do it again?!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Not waiting to hear your response, the [npc.race] suddenly pulls [npc.her] hips back, allowing [npc.her] [npc.cock+] to slide fully out of your [pc.pussy+]."
-						+ " Lining [npc.herself] up once more, [npc.she] immediately thrusts into you for a second time, and as you feel [npc.her] hot cock filling you up once more, you find yourself letting out a desperate [pc.moan]."
-						+ " [npc.Name] looks delighted at your reaction, and pushes [npc.her] demonic cock in a little deeper as [npc.she] teases,"
-						+ " [npc.speechNoEffects(~Ooh!~ So, you're a dirty slut for demon dick, are you? You like that feeling? ~Mmm!~ Having my cock push <i>deep</i> into your horny little pussy, claiming your precious virginity?!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Pulling back a little, [npc.she] starts thrusting in and out of your [pc.pussy+], grinning in delight as [npc.she] hears you let out a series of lewd [pc.moans]."
-						+ " As [npc.her] cock continues to pound your cunt, [npc.name] carries on taunting you, repeating that you'll always remember this moment as the time you discovered that you're just a slut for demonic cock."
-						+ " As [npc.she] says this, you find yourself letting out moan after desperate moan, and you start to worry that the [npc.race] might be right..."
-					+ "</p>");
+					"<p>As the dominant [npc.race] drives [npc.her] [npc.cock+] deep into your [pc.pussy+], you can't stop a desperate, high-pitched wail from bursting out of your mouth. Due to the fact that you're still a virgin, the sudden, violent penetration is like nothing you've ever felt before, and your wail turns into a shuddering cry as you find yourself overwhelmed byt this new sensation.</p><p>As your hymen has been previously torn, the penetration isn't painful, but from your surprised reaction, [npc.name] is still able to realise that [npc.sheHas] just taken your virginity. With a wild, crazed look in [npc.her] eyes, [npc.name] violently thrusts into your groin, driving [npc.her] [npc.cock+] as deep as [npc.she] possibly can into your [pc.pussy+]. Keeping [npc.her] throbbing demonic cock driven as deep as possible into your [pc.pussy+], [npc.name] playfully licks [npc.her] [npc.lips], before starting to taunt you.</p><p>[npc.speechNoEffects(~Mmm!~ Having a big demonic cock stuffed into your pussy feels good, doesn't it?! ~Ooh!~ I wonder if you were saving your first time for a special someone in your life?)] [npc.she] asks, before pausing to let out a mocking laugh. Clearly getting incredibly excited about being the one to take your virginity, [npc.she] impatiently continues, [npc.speechNoEffects(It looks like you were saving yourself for me in the end! Which is a shame, really, because you're just another easy fuck to me.)]</p><p>You can't help but let out [pc.a_moan+] as you feel [npc.namePos] [npc.cock+] throbbing deep within your cunt, which causes [npc.herHim] to let out another mocking laugh and ask, [npc.speechNoEffects(What's that? You want me to do it again?!)]</p><p>Not waiting to hear your response, the [npc.race] suddenly pulls [npc.her] hips back, allowing [npc.her] [npc.cock+] to slide fully out of your [pc.pussy+]. Lining [npc.herself] up once more, [npc.she] immediately thrusts into you for a second time, and as you feel [npc.her] hot cock filling you up once more, you find yourself letting out a desperate [pc.moan]. [npc.Name] looks delighted at your reaction, and pushes [npc.her] demonic cock in a little deeper as [npc.she] teases, [npc.speechNoEffects(~Ooh!~ So, you're a dirty slut for demon dick, are you? You like that feeling? ~Mmm!~ Having my cock push <i>deep</i> into your horny little pussy, claiming your precious virginity?!)]</p><p>Pulling back a little, [npc.she] starts thrusting in and out of your [pc.pussy+], grinning in delight as [npc.she] hears you let out a series of lewd [pc.moans]. As [npc.her] cock continues to pound your cunt, [npc.name] carries on taunting you, repeating that you'll always remember this moment as the time you discovered that you're just a slut for demonic cock. As [npc.she] says this, you find yourself letting out moan after desperate moan, and you start to worry that the [npc.race] might be right...</p>");
 		}
 		
 		return UtilText.parse(this, sb.toString());
@@ -394,29 +312,15 @@ public class DominionSuccubusAttacker extends NPC {
 	@Override
 	public String getSpecialPlayerPureVirginityLoss(GameCharacter penetratingCharacter, SexAreaPenetration penetrating) {
 		return "<p style='text-align:center;'>"
-						+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Broken Virgin</b>"
-					+ "</p>"
-					+ "<p>"
-						+ "As the [npc.race] carries on pounding away between your legs, the sudden realisation of what's just happened hits you like a sledgehammer."
-					+ "</p>"
-					+ "<p style='text-align:center;'>"
-						+ UtilText.parsePlayerThought("I-I've lost my virginity?!<br/>"
-								+ "To... <b>her</b>?!")
-					+ "</p>"
-					+ "<p>"
-						+ "You don't know what's worse, losing the virginity that you prized so highly, or the fact that you're actually enjoying it."
-						+ " As your labia spread lewdly around the hot, thick demon-dick, you find yourself starting to agree with what the [npc.race] is telling you."
-					+ "</p>"
-					+ "<p style='text-align:center;'>"
-					+ UtilText.parsePlayerThought("If I'm not a virgin, that makes me a slut...<br/>"
-							+ "Just a slut for demon cock...<br/>"
-							+ "She's right, I'm just another easy fuck for someone like her...")
+						+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Сломанная девственница</b></p><p>Пока [npc.race] продолжает долбить между твоих ног, внезапное осознание случившегося обрушивается на тебя, словно удар кувалдой.</p><p style='text-align:center;'>"
+						+ UtilText.parsePlayerThought("Я... я лишилась девственности?!<br/>У... <b>неё</b>?!")
+					+ "</p><p>Хуже всего даже не потеря девственности, которой ты так дорожила, а тот факт, что тебе это чертовски нравится. Пока твои половые губы бесстыдно обволакивают горячий, толстый демонский член, ты ловишь себя на мысли, что начинаешь соглашаться с тем, что говорит [npc.race].</p><p style='text-align:center;'>"
+					+ UtilText.parsePlayerThought("Если я больше не девственница, значит, я шлюха...<br/>Просто шлюха для демонского члена...<br/>Она права, я всего лишь очередная легкая сучка для такой, как она...")
 					+ "</p>"
 					+ "<p>"
 						+ "You're vaguely aware of the [npc.race]'s taunts fading away as [npc.she] starts to focus [npc.her] concentration on fucking you."
 						+ " With a desperate moan, you start bucking your hips back against [npc.herHim], resigning yourself to the fact that now you're nothing more than a"
-						+ " <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>broken virgin</b>..."
-					+ "</p>";
+						+ " <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>сломанная девственница</b>...</p>";
 	}
 	
 	// Dirty talk:
@@ -430,15 +334,15 @@ public class DominionSuccubusAttacker extends NPC {
 		List<String> speech = new ArrayList<>();
 		
 		if(isPlayerDom && Main.sex.getSexPace(this)!=SexPace.SUB_RESISTING){
-			speech.add("Come on, fuck me already!");
-			speech.add("Come on! What's taking so long?!");
-			speech.add("Fuck me already!");
-			speech.add("Let's get started! Come on!");
+			speech.add("Давай же, трахни меня уже!");
+			speech.add("Ну же! Чего ты так долго?!");
+			speech.add("Трахни меня уже!");
+			speech.add("Давай начнем! Ну же!");
 		} else if(!isPlayerDom) {
-			speech.add("I'm gonna turn you into a slut for demon cock!");
-			speech.add("You ever been fucked by a demon?");
-			speech.add("You're going to be begging for my cum before the end!");
-			speech.add("You're going to be a good little bitch!");
+			speech.add("Я превращу тебя в настоящую шлюху для демонского члена!");
+			speech.add("Тебя когда-нибудь трахал демон?");
+			speech.add("До конца этого будет ты умолять меня о моей сперме!");
+			speech.add("Будешь послушной маленькой сучкой!");
 		} else {
 			return super.getDirtyTalkNoPenetration(target, isPlayerDom);
 		}

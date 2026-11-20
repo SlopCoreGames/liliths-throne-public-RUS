@@ -137,9 +137,8 @@ public class Saellatrix extends NPC {
 	}
 	
 	public Saellatrix(boolean isImported) {
-		super(isImported, new NameTriplet("Saellatrix"), "Loviennemartuilani",
-				"Saellatrix is a recognised daughter of the elder lilin, Lovienne, and as such commands an immense deal of respect."
-					+ " The fact that she works at her mother's sex shop shows how important the business is to Lovienne.",
+		super(isImported, new NameTriplet("Саэллатрикс"), "Ловиеннемартуилани",
+				"Саэллатрикс — признанная дочь старшей лилин, Ловиенны, и потому пользуется огромным уважением. Тот факт, что она работает в секс-шопе своей матери, показывает, насколько важен этот бизнес для Ловиенны.",
 				187, Month.AUGUST, 2,
 				35, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER,
 				new CharacterInventory(false, 10),
@@ -148,7 +147,7 @@ public class Saellatrix extends NPC {
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("big-chested succubus");
+			this.setGenericName("пышногрудая суккуб");
 			dailyUpdate();
 		}
 	}
@@ -354,7 +353,7 @@ public class Saellatrix extends NPC {
 					PresetColour.CLOTHING_BLACK, PresetColour.CLOTHING_BLACK, PresetColour.CLOTHING_BLACK,
 					false,
 					new TattooWriting(
-							"&#9829; Fuck Hole &#9829; | &#9829; Cock Sleeve &#9829;",
+							"&#9829; Дырочка &#9829; | &#9829; Рукав для члена &#9829;",
 							PresetColour.CLOTHING_BLACK,
 							false),
 					null));
@@ -589,8 +588,8 @@ public class Saellatrix extends NPC {
 			doll.setPlayerKnowsName(false);
 			doll.setName("doll");
 			doll.setSurname("#01734");
-			doll.setGenericName("demo doll");
-			doll.setDescription("The demo doll works in Lovienne's Luxuries, providing oral sex to potential customers.");
+			doll.setGenericName("демо-кукла");
+			doll.setDescription("Демо-кукла работает в «Роскоши Ловиенны», оказывая оральный секс потенциальным клиентам.");
 
 			doll.setBirthday(doll.getBirthday().minusDays((365*4) + Util.random.nextInt(365))); // Creation date is 4-5 years before encounter
 			
@@ -607,7 +606,7 @@ public class Saellatrix extends NPC {
 							PresetColour.CLOTHING_WHITE,
 							false,
 							new TattooWriting(
-									"DEMONSTRATION MODEL - NOT FOR SALE",
+									"ДЕМОНСТРАЦИОННАЯ МОДЕЛЬ — НЕ ДЛЯ ПРОДАЖИ",
 									PresetColour.CLOTHING_WHITE,
 									false),
 							null));
@@ -779,9 +778,9 @@ public class Saellatrix extends NPC {
 			// Loss is doughnut face sitting
 			chokerTopText = "dumb";
 			chokerBottomText = "bitch";
-			crimeText = "Telling Saellatrix to kiss my ass";
+			crimeText = "Велеть Саэллатрикс лизнуть мой зад";
 			
-			sister.setName("Raenix");
+			sister.setName("Раэникс");
 			sister.setSpeechColour(PresetColour.BASE_PURPLE_LIGHT);
 			
 			sister.setVaginaSquirter(false);
@@ -812,7 +811,7 @@ public class Saellatrix extends NPC {
 						PresetColour.CLOTHING_PINK_HOT,
 						false,
 						new TattooWriting(
-								"Butt Slut",
+								"Задница-раб",
 								PresetColour.CLOTHING_PINK_HOT,
 								false),
 						new TattooCounter(
@@ -829,9 +828,9 @@ public class Saellatrix extends NPC {
 			// Loss is riding pc cock or face sitting
 			chokerTopText = "broken";
 			chokerBottomText = "cunt";
-			crimeText = "Boasting about my pretty, virgin pussy";
+			crimeText = "Хвастается своей милой девственной киской";
 
-			sister.setName("Jasmixia");
+			sister.setName("Джасмиксия");
 			sister.setSpeechColour(PresetColour.BASE_PINK_LIGHT);
 			
 			PerkManager.initialisePerks(sister,
@@ -878,7 +877,7 @@ public class Saellatrix extends NPC {
 						PresetColour.CLOTHING_PINK_HOT,
 						false,
 						new TattooWriting(
-								"&#8595; Free Fuck &#8595;",
+								"&#8595; Бесплатный трах &#8595;",
 								PresetColour.CLOTHING_PINK_HOT,
 								false),
 						new TattooCounter(
@@ -896,9 +895,9 @@ public class Saellatrix extends NPC {
 			// Loss is forced to fuck nipples, suckle while fingered or jerked off, or face sitting while she plays with tits (based on content settings)
 			chokerTopText = "worthless";
 			chokerBottomText = "slut";
-			crimeText = "Called Saellatrix a dumb tit cow";
+			crimeText = "Назвала Саэллатрикс тупой дойной коровой";
 
-			sister.setName("Niomia");
+			sister.setName("Ниомия");
 			sister.setSpeechColour(PresetColour.BASE_INDIGO);
 			
 			sister.setAgeAppearanceAbsolute(24);
@@ -936,7 +935,7 @@ public class Saellatrix extends NPC {
 						PresetColour.CLOTHING_PINK_HOT,
 						false,
 						new TattooWriting(
-								"Tit Cow",
+								"Дойная корова",
 								PresetColour.CLOTHING_PINK_HOT,
 								false),
 						new TattooCounter(
@@ -951,9 +950,9 @@ public class Saellatrix extends NPC {
 			// Loss is fucking player
 			chokerTopText = "bad";
 			chokerBottomText = "dog";
-			crimeText = "Called Saellatrix's cock disgusting";
+			crimeText = "Назвала член Саэллатрикс отвратительным";
 
-			sister.setName("Ellaxia");
+			sister.setName("Эллаксия");
 			
 			sister.setVaginaType(VaginaType.NONE);
 			sister.setSpeechColour(PresetColour.BASE_RED);
@@ -995,7 +994,7 @@ public class Saellatrix extends NPC {
 						PresetColour.CLOTHING_RED_BRIGHT,
 						false,
 						new TattooWriting(
-								"Get knotted, bitch!",
+								"Получи узлом, сучка!",
 								PresetColour.CLOTHING_PINK_HOT,
 								false),
 						new TattooCounter(
@@ -1012,9 +1011,9 @@ public class Saellatrix extends NPC {
 			// Loss is receive blowjob/cunnilingus
 			chokerTopText = "broken";
 			chokerBottomText = "slut";
-			crimeText = "Refused to suck Saellatrix's cock";
+			crimeText = "Отказалась сосать член Саэллатрикс";
 
-			sister.setName("Ionixis");
+			sister.setName("Иониксис");
 			sister.setSpeechColour(PresetColour.BASE_LILAC);
 			
 			PerkManager.initialisePerks(sister,
@@ -1054,7 +1053,7 @@ public class Saellatrix extends NPC {
 						PresetColour.CLOTHING_PINK_HOT,
 						false,
 						new TattooWriting(
-								"&#8593; Fuck Hole &#8593;",
+								"&#8593; Дыра для траха &#8593;",
 								PresetColour.CLOTHING_PINK_HOT,
 								false),
 						new TattooCounter(
@@ -1082,7 +1081,7 @@ public class Saellatrix extends NPC {
 		choker.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_MASOCHIST, TFPotency.MAJOR_BOOST, 0));
 		choker.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.TF_MOD_FETISH_BEHAVIOUR, TFModifier.TF_MOD_FETISH_EXHIBITIONIST, TFPotency.MAJOR_BOOST, 0));
 		
-		choker.setName("Saellatrix's Gift");
+		choker.setName("Дар Саэллатрикс");
 		
 		sister.equipClothingFromNowhere(choker, true, sister);
 		
@@ -1094,10 +1093,7 @@ public class Saellatrix extends NPC {
 					PresetColour.CLOTHING_GOLD,
 					false,
 					new TattooWriting(
-							"<b>Crimes:</b>"
-							+ "<br/>Scheming against Saellatrix"
-							+ "<br/>Attempting to gain Lovienne's recognition"
-							+ "<br/>"
+							"<b>Преступления:</b><br/>Интриги против Саэллатрикс<br/>Попытки добиться признания Ловиенны<br/>"
 							+ crimeText,
 							PresetColour.CLOTHING_GOLD,
 							false),
@@ -1214,7 +1210,7 @@ public class Saellatrix extends NPC {
 		Main.game.getNpc(Nir.class).returnToHome();
 	}
 	
-	private static String[] toyNames = new String[]{"dildos", "anal beads", "cock rings", "strap-ons", "onaholes"};
+	private static String[] toyNames = new String[]{"dildos", "анальные бусы", "кольца для члена", "strap-ons", "onaholes"};
 	private static Colour[] toyColours = new Colour[]{
 			PresetColour.CLOTHING_PURPLE,
 			PresetColour.CLOTHING_ORANGE,
@@ -1400,12 +1396,12 @@ public class Saellatrix extends NPC {
 		doll.setPlayerKnowsName(false);
 		doll.setName("doll");
 		String dollNumber = "#"+String.format("%03d", Util.random.nextInt(800));
-		if(id=="doll2") {
+		if(id=="кукла2") {
 			dollNumber = "#"+String.format("%03d", 800+Util.random.nextInt(200));
 		}
 		doll.setSurname(dollNumber);
 		
-		doll.setDescription("This doll works in Saellatrix's factory, and is responsible for maintaining the machines and performing quality control checks.");
+		doll.setDescription("Эта кукла работает на фабрике Саэллатрикс; она отвечает за обслуживание машин и контроль качества продукции.");
 
 		doll.setBirthday(doll.getBirthday().minusDays((365*8) + Util.random.nextInt(365))); // Creation date is 8-9 years before encounter
 		
@@ -1548,7 +1544,7 @@ public class Saellatrix extends NPC {
 			owner.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_torsoOver_suit_jacket", PresetColour.CLOTHING_BLACK, PresetColour.CLOTHING_WHITE, PresetColour.CLOTHING_GREY, false), true, owner);
 			
 			// MILF body
-			Main.game.getPlayer().setName("Honey");
+			Main.game.getPlayer().setName("Милочка");
 			Main.game.getPlayer().setSurname("");
 			Main.game.getPlayer().clearTattoos();
 			Main.game.getPlayer().setAgeAppearanceAbsolute(45);
@@ -1561,10 +1557,10 @@ public class Saellatrix extends NPC {
 			Main.game.getPlayer().setHairStyle(HairStyle.BUN);
 			
 			Main.game.getPlayer().completeVirginityLoss();
-			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), this, "before being delivered to your Master");
-			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS), this, "before being delivered to your Master");
-			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.ANUS, SexAreaPenetration.PENIS), this, "before being delivered to your Master");
-			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.NIPPLE, SexAreaPenetration.PENIS), this, "before being delivered to your Master");
+			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.VAGINA, SexAreaPenetration.PENIS), this, "прежде чем будет доставлена твоему Господину");
+			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.MOUTH, SexAreaPenetration.PENIS), this, "прежде чем будет доставлена твоему Господину");
+			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.ANUS, SexAreaPenetration.PENIS), this, "прежде чем будет доставлена твоему Господину");
+			Main.game.getPlayer().setVirginityLoss(new SexType(SexAreaOrifice.NIPPLE, SexAreaPenetration.PENIS), this, "прежде чем будет доставлена твоему Господину");
 
 			Main.game.getPlayer().equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_leg_mini_skirt", PresetColour.CLOTHING_BLACK, false), true, Main.game.getPlayer());
 			Main.game.getPlayer().equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_sock_trainer_socks", PresetColour.CLOTHING_BLACK, false), true, Main.game.getPlayer());
@@ -1675,11 +1671,11 @@ public class Saellatrix extends NPC {
 
 		if(doll instanceof Angelixx || doll instanceof Fiammetta) {
 			doll.setDescription(UtilText.parse(doll,
-					"Having been transformed into a sex doll by Saellatrix, [npc.name] is now used as a demonstration model. Members of the public can freely transform her pussy and asshole and fuck her as much as they want."));
+					"Превращенная Саэллатрикс в секс-куклу, [npc.name] теперь служит демонстрационной моделью. Любой желающий может свободно менять форму её киски и ануса и трахать её сколько душе угодно."));
 			
 		} else if(doll instanceof Sleip || doll instanceof Nir) {
 			doll.setDescription(UtilText.parse(doll,
-					"Having been transformed into a sex doll by Saellatrix, [npc.name] was sold to an anonymous customer and her current whereabouts are unknown."));
+					"Превращенная Саэллатрикс в секс-куклу, [npc.name] была продана анонимному покупателю, и её нынешнее местонахождение неизвестно."));
 		}
 		// Birthday is set to TF time, and just leave it as that
 //		doll.setBirthday(doll.getBirthday().minusDays((365*4) + Util.random.nextInt(365)));
@@ -1698,7 +1694,7 @@ public class Saellatrix extends NPC {
 							PresetColour.CLOTHING_WHITE,
 							false,
 							new TattooWriting(
-									"DEMONSTRATION MODEL - NOT FOR SALE",
+									"ДЕМОНСТРАЦИОННАЯ МОДЕЛЬ — НЕ ДЛЯ ПРОДАЖИ",
 									PresetColour.CLOTHING_WHITE,
 									false),
 							null));

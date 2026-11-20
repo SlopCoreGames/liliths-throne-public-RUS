@@ -81,8 +81,8 @@ public class ZaranixMaidKatherine extends NPC {
 	}
 	
 	public ZaranixMaidKatherine(boolean isImported) {
-		super(isImported, new NameTriplet("Katherine"), "Lasiellemartu",
-				"One of Zaranix's succubi maid twins, Katherine is assigned by her master to keep the ground floor clean.",
+		super(isImported, new NameTriplet("Кэтрин"), "Ласиэллемарту",
+				"Одна из сестер-близнецов суккубов-горничных Зараникса, Кэтрин поручена своим господином следить за чистотой первого этажа.",
 				26, Month.SEPTEMBER, 20,
 				10,
 				null, null, null,
@@ -106,7 +106,7 @@ public class ZaranixMaidKatherine extends NPC {
 			this.resetPerksMap(true);
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.5.1")) {
-			this.setDescription("One of Zaranix's succubi maid twins, Katherine is assigned by her master to keep the ground floor clean.");
+			this.setDescription("Одна из сестер-близнецов суккубов-горничных Зараникса, Кэтрин поручена своим господином следить за чистотой первого этажа.");
 			this.setPersonalityTraits(
 					PersonalityTrait.KIND,
 					PersonalityTrait.LEWD);
@@ -265,10 +265,10 @@ public class ZaranixMaidKatherine extends NPC {
 	@Override
 	public String getName(boolean applyNameAlteringEffects) {
 		if(!playerKnowsName) {
-			return "Zaranix's Maid";
+			return "Горничная Зараникса";
 			
 		} else {
-			return "Katherine";
+			return "Кэтрин";
 		}
 	}
 
@@ -324,9 +324,9 @@ public class ZaranixMaidKatherine extends NPC {
 		return "<p>"
 				+ UtilText.parse(target,
 						UtilText.returnStringAtRandom(
-						"Letting out a desperate cry, Katherine swings her little feather duster at [npc.name], brushing the feathers over [npc.her] face!",
-						"With a little shout, Katherine tickles her feather duster over [npc.namePos] torso!",
-						"Katherine lets out a little cry as she brushes her feather duster over [npc.namePos] torso!"))
+						"Издав отчаянный крик, Кэтрин размахивает своей маленькой метелкой из перьев перед [npc.name], проводя перьями по лицу [npc.her]!",
+						"С коротким вскриком Кэтрин щекочет торс [npc.namePos] своей метелкой из перьев!",
+						"Кэтрин издает тонкий возглас, проводя метелкой из перьев по торсу [npc.namePos]!"))
 			+ "</p>";
 	}
 
@@ -334,8 +334,8 @@ public class ZaranixMaidKatherine extends NPC {
 	public String getSpellDescription() {
 		return "<p>"
 				+ UtilText.returnStringAtRandom(
-						"Katherine grips her feather duster to her chest and cries out as she casts a spell!",
-						"Katherine thrusts her feather duster up into the air as she casts a spell!") 
+						"Кэтрин прижимает метелку к груди и вскрикивает, произнося заклинание!",
+						"Кэтрин взмывает вверх с метелкой из перьев, произнося заклинание!") 
 			+ "</p>";
 	}
 
@@ -343,12 +343,12 @@ public class ZaranixMaidKatherine extends NPC {
 	public String getSeductionDescription(GameCharacter target) {
 		return "<p>"
 				+ UtilText.returnStringAtRandom(
-						"Katherine pulls the bottom of her maid's dress up a little, moaning, [katherine.speech(If you beat me, there'd be nothing stopping you from ravishing me!)]",
-						"With a lewd moan, Katherine snakes a hand under her dress, moaning [katherine.speech(~Ah!~ You're so powerful! I'm getting wet already!)]",
-						"Biting her lip, Katherine looks up into your eyes, and you hear a lewd moan echoing around inside of your head, [katherine.speech(I hope you beat me! Show me no mercy!)]",
-						"With an incredibly lewd moan, Katherine runs her hands up the length of her body to cup her [katherine.cupSize]-cup breasts, [katherine.speech(~Mmm!~ If I fail, there'd be nothing stopping you from fucking me!)]",
-						"Katherine makes a show of staggering back, before desperately pressing her hands down between her legs, [katherine.speech(~Aah!~ I can just imagine all the lewd things you'd do to me if I fall here!)]",
-						"Katherine's [npc.breasts+] starts to heave up and down as she pants, [katherine.speech(Oh no! I'm feeling weak already! Y-You're sure to take advantage of me if I lose!)]") 
+						"Кэтрин, стоная, слегка приподнимает подол своего платья горничной, [katherine.speech(Если ты победишь меня, ничто не помешает тебе взять меня прямо здесь!)]",
+						"С похотливым стоном Кэтрин просовывает руку под платье, простоная [katherine.speech(~Ах!~ Ты такой могущественный! Я уже вся промокла!)]",
+						"Прикусив губу, Кэтрин смотрит тебе прямо в глаза, и в твоей голове эхом отдается похотливый стон: [katherine.speech(Надеюсь, ты побьешь меня! Не щади меня!)]",
+						"Издавая невероятно сладострастный стон, Кэтрин проводит ладонями вверх по телу, чтобы обхватить свои [katherine.cupSize]-чашечные груди, [katherine.speech(~Ммм!~ Если я проиграю, ничто не будет мешать тебе трахать меня!)]",
+						"Кэтрин картинно пошатывается, прежде чем отчаянно прижать ладони между ног, [katherine.speech(~Аах!~ Я прямо представляю, какие грязные вещи ты сделаешь со мной, если я упаду здесь!)]",
+						"Грудь Кэтрин [npc.breasts+] начинает тяжело вздыматься, пока она часто дышит, [katherine.speech(О нет! Я уже чувствую слабость! Т-ты точно воспользуешься мной, если я проиграю!)]") 
 			+ "</p>";
 	}
 	
@@ -367,51 +367,31 @@ public class ZaranixMaidKatherine extends NPC {
 		}
 	}
 	
-	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Victory", "", true) {
+	public static final DialogueNode AFTER_COMBAT_VICTORY = new DialogueNode("Победа", "", true) {
 
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Katherine staggers back, gripping the edge of a nearby cabinet as she collapses against the wall."
-						+ " She doesn't seem all that upset at having failed to defend her master's home, as she looks up at you and moans,"
-						+ " [katherine.speech(~Ah!~ Oh no! I'm totally defenceless! ~Mmm!~ Nothing can stop you from having your way with me now!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "It's quite obvious that she wants to have sex with you, and she continues to moan and pant with desire as she leans back against the wall."
-						+ " Unable to wait even two seconds to hear your reply, her hands slip under her dress, and she starts shamelessly masturbating right there in front of you."
-					+ "</p>"
-					+ "<p>"
-						+ "In her current lust-filled state, Katherine isn't going to pose much of a threat from now on, so you could either do what she obviously wants you to do, and have sex with her,"
-							+ " or simply ignore her and continue on your way."
-					+ "</p>";
+			return "<p>Кэтрин отшатывается, хватаясь за край стоящего рядом шкафа, и сползает по стене. Кажется, её не слишком расстраивает то, что она не смогла защитить дом своего господина: она смотрит на тебя и стонет: [katherine.speech(~Ах!~ О нет! Я совершенно беззащитна! ~Ммм!~ Теперь ничто не помешает тебе взять то, что ты хочешь!)]</p><p>Совершенно очевидно, что она жаждет секса с тобой; она продолжает стонать и тяжело дышать от желания, прислонившись спиной к стене. Не в силах прождать и двух секунд, чтобы услышать твой ответ, она просовывает руки под платье и начинает бесстыдно мастурбировать прямо у тебя на глазах.</p><p>В своём нынешнем состоянии, пресыщенном Похотью, Кэтрин вряд ли будет представлять серьезную угрозу, так что ты можешь либо сделать то, чего она так явно хочет — заняться с ней сексом, — либо просто проигнорировать её и идти дальше своим путем.</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue exploring Zaranix's house.", PlaceType.ZARANIX_GF_MAID.getDialogue(false));
+				return new Response("Продолжить", "Продолжить исследование дома Зараникс.", PlaceType.ZARANIX_GF_MAID.getDialogue(false));
 				
 			} if(index==2) {
-				return new ResponseSex("Use Katherine", "Have some fun with the horny maid.",
+				return new ResponseSex("Использовать Кэтрин", "Немного развлечься с похотливой горничной.",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),
 								Util.newArrayListOfValues(Main.game.getNpc(ZaranixMaidKatherine.class)),
 						null,
 						null),
-						AFTER_SEX_VICTORY, "<p>"
-							+ "It doesn't look like any of the other maids of the household will interrupt you, so you decide to take this opportunity to have a little fun with Katherine."
-							+ " Stepping over to where she's leaning back against the wall, you reach forwards and take hold of her arm, before pulling her hand away from her groin."
-							+ " Denied the freedom to get herself off, the horny maid looks up into your eyes, and you see them filled with a desperate, burning lust."
-						+ "</p>"
-						+ "<p>"
-							+ "She pushes herself off from the wall, wrapping her arms around your back and desperately pressing her [katherine.lips+] against yours."
-							+ " You reciprocate the gesture, and after spending a few moments of sliding your tongues into one another's mouths, you pull back, grinning..."
-						+ "</p>");
+						AFTER_SEX_VICTORY, "<p>Похоже, другие горничные в доме вас не прервут, поэтому вы решаете воспользоваться случаем и немного развлечься с Кэтрин. Подойдя к ней, пока она прислонена к стене, вы протягиваете руку и берете ее за предплечье, а затем убираете ее ладонь от паха. Лишенная возможности довести себя до оргазма, похотливая горничная смотрит вам в глаза, и вы видите в них отчаянную, пылающую похоть.</p><p>Она отталкивается от стены, обвивает руками вашу спину и отчаянно прижимается своей [katherine.lips+] к вашей. Вы отвечаете тем же, и после нескольких мгновений, проведенных в переплетении языков, вы отстраняетесь с ухмылкой...</p>");
 				
 			} else if(index==3) {
-				return new ResponseSex("Submit",
-						"You can't bring yourself to take the dominant role, but you <i>do</i> want to have sex with Katherine. Perhaps if you submitted, she'd be willing to fuck you?",
+				return new ResponseSex("Подчиниться",
+						"Вы не можете заставить себя взять на себя доминирующую роль, но вы <i>действительно</i> хотите заняться сексом с Кэтрин. Возможно, если вы подчинитесь, она сама захочет вас оттрахать?",
 						Util.newArrayListOfValues(Fetish.FETISH_SUBMISSIVE), null, CorruptionLevel.THREE_DIRTY, null, null, null,
 						true, false,
 						new SMGeneric(
@@ -419,22 +399,11 @@ public class ZaranixMaidKatherine extends NPC {
 								Util.newArrayListOfValues(Main.game.getPlayer()),
 						null,
 						null),
-						AFTER_SEX_VICTORY, "<p>"
-							+ "Not willing to take the dominant role, but with a deep desire to have sex with the horny succubus, you walk up to where Katherine's collapsed against the wall, and sigh,"
-							+ " [pc.speech(Katherine... Erm... If you're feeling a little horny, perhaps you could use me? I mean, I-)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Despite the fact that you're a stranger in her master's house, Katherine looks up at you with an intense, burning passion in her eyes."
-							+ " Sliding her hand out from under her dress, she immediately interrupts your sentence as she grabs your head and pulls you into a desperate kiss."
-						+ "</p>"
-						+ "<p>"
-							+ "You reciprocate the gesture, but only spend a few moments sliding your tongues into one another's mouths before Katherine pulls back, moaning,"
-							+ " [katherine.speech(Oh yes! Fuck... I'm so fucking horny! I <i>need</i> you!)]"
-						+ "</p>");
+						AFTER_SEX_VICTORY, "<p>Не желая брать на себя доминирующую роль, но испытывая глубокое желание заняться сексом с похотливой суккубом, вы подходите к месту, где прислонилась к стене обессиленная Кэтрин, и вздыхаете: [pc.speech(Кэтрин... Эм... Если ты чувствуешь небольшое возбуждение, может быть, ты могла бы использовать меня? То есть, я...)]</p><p>Несмотря на то, что вы — чужак в доме её госпожи, Кэтрин смотрит на вас с неистовой, пылающей страстью в глазах. Высунув руку из-под платья, она тут же прерывает вашу фразу, хватает вас за голову и втягивает в отчаянный поцелуй.</p><p>Вы отвечаете на жест, но лишь на несколько мгновений сплетаете языки, прежде чем Кэтрин отстраняется с стоном: [katherine.speech(О да! Блядь... Как же меня штырит! Ты мне <i>нужен</i>!)]</p>");
 				
 			} else if (index == 4) {
-				return new Response("Transformations",
-						"Get Katherine to use [katherine.her] demonic powers to transform [katherine.herself]...",
+				return new Response("Трансформации",
+						"Заставить Кэтрин использовать [katherine.her] демонические силы, чтобы превратить [katherine.herself]...",
 						BodyChanging.BODY_CHANGING_CORE){
 					@Override
 					public void effects() {
@@ -449,38 +418,22 @@ public class ZaranixMaidKatherine extends NPC {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Continue", "", true) {
+	public static final DialogueNode AFTER_SEX_VICTORY = new DialogueNode("Продолжить", "", true) {
 
 		@Override
 		public String getContent() {
 			UtilText.nodeContentSB.setLength(0);
 			if(Main.sex.getNumberOfOrgasms(Main.game.getNpc(ZaranixMaidKatherine.class)) >= Main.game.getNpc(ZaranixMaidKatherine.class).getOrgasmsBeforeSatisfied()) {
 				UtilText.nodeContentSB.append(
-						"<p>"
-							+ "With a satisfied sigh, Katherine slumps back against the wall,"
-							+ " [katherine.speech(~Ah!~ That was good...)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Despite the fact that you only just brought her to an orgasm, her hands slip down between her legs, and, with an exceptionally lewd moan, she starts fingering herself."
-							+ " It's quite clear from her actions that she's still overwhelmed by the arousing power of your aura, so it would be safe to leave her behind and continue in your exploration of Zaranix's home."
-						+ "</p>");
+						"<p>С удовлетворенным вздохом Кэтрин откидывается на стену: [katherine.speech(~Ах!~ Это было хорошо...)]</p><p>Несмотря на то, что вы только что довели её до оргазма, её руки скользят между ног, и с исключительно похотливым стоном она начинает ласкать себя пальцами. По её действиям совершенно ясно, что она всё ещё ошеломлена возбуждающей силой вашей ауры, так что можно со спокойной совестью оставить её и продолжить изучение дома Зараникса.</p>");
 				
 			} else {
 				UtilText.nodeContentSB.append(
-						"<p>"
-							+ "With a desperate moan, Katherine slumps back against the wall,"
-							+ " [katherine.speech(~Ah!~ That wasn't enough for me!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Her hands instantly slip down between her legs, and, with an exceptionally lewd moan, she starts fingering herself."
-							+ " It's quite clear from her actions that she's still overwhelmed by the arousing power of your aura, so it would be safe to leave her behind and continue in your exploration of Zaranix's home."
-						+ "</p>");
+						"<p>С отчаянным стоном Кэтрин прислоняется спиной к стене, [katherine.speech(~Ах!~~ Этого мне было мало!~)]</p><p>Ее руки мгновенно скользят между ног, и с исключительно похотливым стоном она начинает ласкать себя пальцами. По ее действиям совершенно ясно, что она все еще ошеломлена возбуждающей силой вашей <p>, так что можно спокойно оставить ее и продолжить исследование дома Зараникса.</p>");
 			}
 			
 			UtilText.nodeContentSB.append(
-					"<p>"
-						+ "Conscious of the fact that there are other maids to look out for, you prepare to set off further into the house..."
-					+ "</p>");
+					"<p>Понимая, что нужно присматривать и за другими горничными, вы готовитесь отправиться дальше вглубь дома...</p>");
 			
 			return UtilText.nodeContentSB.toString();
 		}
@@ -488,7 +441,7 @@ public class ZaranixMaidKatherine extends NPC {
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Continue", "Continue exploring Zaranix's house.", PlaceType.ZARANIX_GF_MAID.getDialogue(false));
+				return new Response("Продолжить", "Продолжить исследование дома Зараникс.", PlaceType.ZARANIX_GF_MAID.getDialogue(false));
 				
 			} else {
 				return null;
@@ -496,28 +449,17 @@ public class ZaranixMaidKatherine extends NPC {
 		}
 	};
 	
-	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Defeated", "", true) {
+	public static final DialogueNode AFTER_COMBAT_DEFEAT = new DialogueNode("Повержена", "", true) {
 
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Katherine proves to be too powerful for you to handle, and, letting out a defeated cry, you stagger across the corridor and lean against the wall for support."
-						+ " Looking up, you see the ivory-skinned maid pouting at you as she steps forwards,"
-						+ " [katherine.speech(Aww... I was sort of hoping you'd put up a bit more of a fight... That was no fun at all!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "You're powerless to resist as she moves right up beside you, wrapping her arms around your back and pulling you into her [katherine.breasts+] as she giggles,"
-						+ " [katherine.speech(Looks like I'll have to get my fun in a different way...)]"
-					+ "</p>"
-					+ "<p>"
-						+ "With that, she suddenly presses her [katherine.lips+] against yours, pulling you into a passionate kiss as her demonic tail snakes up to rub at your groin..."
-					+ "</p>";
+			return "<p>Кэтрин оказывается слишком сильной, чтобы вы могли с ней совладать, и, издав побежденный крик, вы шатаетесь по коридору и прислоняетесь к стене, чтобы не упасть. Подняв взгляд, вы видите, как служанка с кожей цвета слоновой кости дует губы, подходя к вам ближе: [katherine.speech(Оу... А я надеялась, что ты будешь сопротивляться чуть дольше... Совсем не весело!)]</p><p>Вы бессильны перед ней, когда она прижимается вплотную, обхватывает вас руками за спину и притягивает к своей [katherine.breasts+], хихикая: [katherine.speech(Похоже, мне придется развлекаться как-нибудь иначе...)]</p><p>С этими словами она внезапно прижимает свою [katherine.lips+] к вашей, вовлекая вас в страстный поцелуй, пока ее демоний хвост обвивается вокруг вас, потирая вашу пах...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new ResponseSex("Used", "Katherine uses you.",
+				return new ResponseSex("Использовано", "Кэтрин использует вас.",
 						false, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getNpc(ZaranixMaidKatherine.class)),
@@ -532,29 +474,17 @@ public class ZaranixMaidKatherine extends NPC {
 		}
 	};
 	
-	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Used", "", true) {
+	public static final DialogueNode AFTER_SEX_DEFEAT = new DialogueNode("Использовано", "", true) {
 
 		@Override
 		public String getContent() {
-			return "<p>"
-						+ "Completely exhausted, you collapse to the floor, panting."
-						+ " Towering over you, Katherine speaks down in a very patronising tone,"
-						+ " [katherine.speech(Awww! Was that too much fun for you? In that case, I think it's about time I showed you the exit!)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Too tired to resist, you're left totally helpless as Katherine drags you along the corridor to the front entrance."
-						+ " Opening the door, she unceremoniously shoves you out into the street, sighing,"
-						+ " [katherine.speech(I guess you picked the wrong house to try and rob, huh?)]"
-					+ "</p>"
-					+ "<p>"
-						+ "With that, she slams the door shut, leaving you to pick yourself up and carry on your way..."
-					+ "</p>";
+			return "<p>Совершенно обессиленный, ты валишься на пол, тяжело дыша. Возвышаясь над тобой, Кэтрин произносит с крайне покровительственным тоном: [katherine.speech(Оууу! Не слишком ли весело тебе было? В таком случае, думаю, пришло время показать тебе выход!)]</p><p>Слишком уставший, чтобы сопротивляться, ты остаешься совершенно беспомощным, пока Кэтрин тащит тебя по коридору к главному входу. Открыв дверь, она бесцеремонно выталкивает тебя на улицу, вздыхая: [katherine.speech(Полагаю, ты выбрал не тот дом для попытки ограбления, а?)]</p><p>С этими словами она захлопывает дверь, оставляя тебя приходить в себя и продолжать свой путь...</p>";
 		}
 
 		@Override
 		public Response getResponse(int responseTab, int index) {
 			if(index==1) {
-				return new Response("Thrown out", "Katherine throws you out into the street.", PlaceType.DOMINION_DEMON_HOME.getDialogue(false)) {
+				return new Response("Тебя вышвыривают", "Кэтрин вышвыривает тебя на улицу.", PlaceType.DOMINION_DEMON_HOME.getDialogue(false)) {
 					@Override
 					public void effects() {
 						Main.game.getPlayer().setLocation(WorldType.DOMINION, PlaceType.DOMINION_DEMON_HOME, false);

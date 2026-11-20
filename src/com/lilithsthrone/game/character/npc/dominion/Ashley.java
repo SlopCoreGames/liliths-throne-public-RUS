@@ -56,9 +56,8 @@ public class Ashley extends NPC {
 	}
 	
 	public Ashley(boolean isImported) {
-		super(isImported, new NameTriplet("Ashley"), "Minett", //TODO
-				"Ashley is the owner of the shop 'Dream Lover', and is seemingly also its only working staff."
-						+ " They are very stand-offish and loathe helping out their customers, to the point where they'd rather stare at the walls instead of offering any help.",
+		super(isImported, new NameTriplet("Эшли"), "Минетт", //TODO
+				"Эшли — владелица магазина «Dream Lover», и, судя по всему, единственный там работник. Она ведет себя крайне отстраненно и терпеть не может помогать покупателям — доходит до того, что ей проще пялиться в стену, чем предложить какую-то помощь.",
 				200, Month.AUGUST, 14,//TODO
 				10,
 				Gender.N_P_TRAP,
@@ -213,14 +212,9 @@ public class Ashley extends NPC {
 		infoScreenSB.setLength(0);
 		
 		infoScreenSB.append(
-				"<h4>Background</h4>"
-				+ "<p>"
+				"<h4>Биография</h4><p>"
 					+ this.getDescription()
-				+ "</p>"
-				+ "<br/>"
-				+ "<h4>Relationships</h4>"
-				+ "<p>"
-					+ "[style.boldAffection(Affection:)]<br/>"
+				+ "</p><br/><h4>Отношения</h4><p>[style.boldAffection(Привязанность:)]<br/>"
 					+ AffectionLevel.getDescription(this, Main.game.getPlayer(), true));
 		
 		for(Entry<String, Float> entry : this.getAffectionMap().entrySet()) {
@@ -234,27 +228,14 @@ public class Ashley extends NPC {
 			}
 		}
 		
-		infoScreenSB.append("<br/><br/>"
-					+ "[style.boldObedience(Obedience:)]<br/>"
-					+ UtilText.parse(this, "[npc.Name] [style.boldGood(is not a slave)].")
+		infoScreenSB.append("<br/><br/>[style.boldObedience(Покорность:)]<br/>"
+					+ UtilText.parse(this, "[npc.Name] [style.boldGood(не рабыня)].")
 					+ "<br/>"+ObedienceLevel.getDescription(this, ObedienceLevel.getObedienceLevelFromValue(this.getObedienceValue()), true, true)
-				+"</p>"
-				+ "<br/>"
-					+ "<h4>Appearance</h4>"
-				+ "<p>"
+				+"</p><br/><h4>Внешность</h4><p>"
 					+ (Main.game.getPlayer().hasTraitActivated(Perk.OBSERVANT)
-							?"Despite the fact that you're highly observant, there's no giveaway whatsoever which would hint as to what Ashley's gender is."
-							:"You have no idea what Ashley's gender is.")
-					+ " Standing at full height, they measure 6'1\" (186cm)."
-				+ "</p>"
-				+ "<p>"
-					+ "The hood of their cloak is pulled up, completely obscuring their facial features."
-					+ " All that you can make out from the darkness of the hood is the sheen of a pair of deep blue eyes."
-				+ "</p>"
-				+ "<p>"
-					+ "Ashley's cloak covers the entirety of their body, leaving you completely unable to see any part of their body."
-					+ " You have no idea what race they are, much less the state of their breasts and genitals."
-				+ "</p>");
+							?"Несмотря на вашу наблюдательность, в облике Эшли нет ни единой зацепки, которая могла бы намекнуть на её пол."
+							:"Вы понятия не имеете, какого пола Эшли.")
+					+ " При полном росте они достигают 186 см.</p><p>Капюшон их плаща накинут на голову, полностью скрывая черты лица. Из темноты капюшона можно различить лишь блеск пары глубоких синих глаз.</p><p>Плащ Эшли полностью закрывает их тело, не давая вам разглядеть ни единого изгиба. Вы понятия не имеете, какой они расы, не говоря уже о состоянии их груди и гениталий.</p>");
 		
 		return infoScreenSB.toString();
 	}

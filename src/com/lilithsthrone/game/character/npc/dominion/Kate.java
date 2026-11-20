@@ -95,9 +95,8 @@ public class Kate extends NPC {
 	}
 	
 	public Kate(boolean isImported) {
-		super(isImported, new NameTriplet("Kate"), "Lasiellemartu",
-				"Kate is a demon who owns the beauty salon 'Succubi's Secrets'."
-						+ " Despite being incredibly good at what she does, she's exceedingly lazy, and prefers to keep the exterior of her shop looking run-down so as to scare off potential customers.",
+		super(isImported, new NameTriplet("Кейт"), "Ласиэллемарту",
+				"Кейт — демон, владеющая салоном красоты «Секреты суккуба». Несмотря на невероятное мастерство в своём деле, она чрезвычайно ленива и предпочитает держать фасад своего магазина в запущенном виде, чтобы отпугивать потенциальных клиентов.",
 				361, Month.SEPTEMBER, 9,
 				10, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER,
 				new CharacterInventory(false, 10), WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_KATES_SHOP, true);
@@ -214,7 +213,7 @@ public class Kate extends NPC {
 							null,
 							false,
 							new TattooWriting(
-									"Don't pull out!",
+									"Не вытаскивай!",
 									PresetColour.CLOTHING_BLACK,
 									false),
 							null));
@@ -423,10 +422,7 @@ public class Kate extends NPC {
 			if(item.isTypeOneOf("innoxia_pills_fertility", "innoxia_pills_broodmother")) {
 				String useDesc = itemOwner.useItem(item, target, false, true);
 				return new Value<>(true,
-						"<p>"
-							+ "Producing a "+item.getName(false, false)+" from your inventory, you pop it out of its plastic wrapper before pushing it into Kate's mouth."
-							+ " She giggles as she happily swallows the little "+item.getColour(0).getName()+" pill, knowing that it's going to make her womb far more fertile."
-						+ "</p>"
+						"<p>Доставая "+item.getName(false, false)+" из своего инвентаря, ты достаёшь её из пластиковой упаковки и запихиваешь Кейт в рот. Она хихикает, с удовольствием проглатывая маленькую "+item.getColour(0).getName()+" таблетку, зная, что та сделает её утробу куда более плодородной.</p>"
 						+ useDesc);
 				
 			} else if(item.getItemType()==ItemType.PREGNANCY_TEST) {
@@ -435,38 +431,31 @@ public class Kate extends NPC {
 					this.setCharacterReactedToPregnancy(user, true);
 					String litterCount = Util.intToString(this.getPregnantLitter().getTotalLitterCount());
 					return new Value<>(true,
-							"<p>"
-								+ "Producing "+item.getName(true, false)+" from your inventory, you pass it over Kate's tummy and take a look at the results..."
-							+ "</p>"
+							"<p>Производя "+item.getName(true, false)+" из своего инвентаря, ты проводишь ею над животом Кейт и смотришь на результат...</p>"
 							+ useDesc
 							+"<p>"
 								+ (this.isVisiblyPregnant()
-									?"[kate.speechNoEffects(What were you expecting?)] Kate laughs, before rubbing her pregnant belly and winking at you. [kate.speech(You can already see I'm knocked up, can't you?)]"
-									:"[kate.speechNoEffects(~Ooh!~ I'm pregnant!)]"
+									?"[kate.speechNoEffects(А чего ты ожидал?)] Кейт смеётся, после чего поглаживает свой беременный живот и подмигивает тебе. [kate.speech(Уже видно, что я залетела, правда?)]"
+									:"[kate.speechNoEffects(~О-о!~ Я беременна!)]"
 											+ (this.getPregnantLitter().getTotalLitterCount()>2
-													?" Kate exclaims, before rubbing her belly and biting her lip. [kate.speechNoEffects(I've got "+litterCount+" kids in here? ~Mmm!~ My tummy's gonna be so big...)]"
-													:" Kate moans, before rubbing her belly and winking at you. [kate.speech(I'm gonna have a big, round tummy soon!)]"))
+													?" Кейт восклицает, после чего потирает живот и закусывает губу. [kate.speechNoEffects(Неужели у меня внутри "+litterCount+" дети? ~Ммм!~ Мой животик станет таким большим...)]"
+													:" Кейт стонет, после чего потирает живот и подмигивает тебе. [kate.speech(Скоро у меня будет большой круглый животик!)]"))
 							+ "</p>");
 					
 				} else {
 					return new Value<>(true,
-							"<p>"
-									+ "Producing "+item.getName(true, false)+" from your inventory, you pass it over Kate's tummy and take a look at the results..."
-							+ "</p>"
+							"<p>Производя "+item.getName(true, false)+" из своего инвентаря, ты проводишь ею над животом Кейт и смотришь на результат...</p>"
 							+ useDesc
 							+"<p>"
 								+ (this.hasStatusEffect(StatusEffect.PREGNANT_0)
-									?"[kate.speechNoEffects(~Aww!~ I'm not pregnant!)] Kate whines, before rubbing her belly and pouting at you. [kate.speech(Come on, [pc.name], there's plenty of time for you to change that!)]"
-									:"[kate.speechNoEffects(What were you expecting? Of course I'm not going to be pregnant!)] Kate laughs, before rubbing her belly and biting her lip."
-											+ " [kate.speech(Although there's plenty of time for you to change that...)]")
+									?"[kate.speechNoEffects(~Ой!~ Я не беременна!)] — капризничает Кейт, потирая живот и надув губы. [kate.speech(Да ладно тебе, [pc.name], у тебя еще полно времени, чтобы это исправить!)]"
+									:"[kate.speechNoEffects(А чего ты ожидал? Конечно, я не беременна!)] — смеется Кейт, потирая живот и закусывая губу. [kate.speech(Хотя у тебя еще полно времени, чтобы это исправить...)]")
 							+ "</p>");
 				}
 				
 			} else {
 				return new Value<>(false,
-						"<p>"
-							+ "You start to pull "+item.getItemType().getDeterminer()+" "+item.getName()+" out from your inventory, but Kate quickly kicks your hand away and frowns at you."
-						+ "</p>");
+						"<p>Ты начинаешь доставать "+item.getItemType().getDeterminer()+" "+item.getName()+" из твоего инвентаря, но Кейт быстро отбивает твою руку и хмурится на тебя.</p>");
 			}
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
@@ -479,11 +468,7 @@ public class Kate extends NPC {
 				if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 					return null;
 				}
-				return "<p>"
-							+ "Holding out a condom to [kate.name], you force [kate.herHim] to take it and put it on."
-							+ " Quickly ripping it out of its little foil wrapper, [kate.she] rolls it down the length of [kate.her] [kate.cock+] as [kate.she] whines at you,"
-							+ " [kate.speech(Do I really have to? It feels so much better without one...)]"
-						+ "</p>";
+				return "<p>Протягивая презерватив [kate.name], ты заставляешь [kate.herHim] взять его и надеть. Быстро сорвав его с маленькой фольгированной упаковки, [kate.she] натягивает его на [kate.her] [kate.cock+], пока [kate.she] капризничает: [kate.speech(Мне правда обязательно? Без него куда приятнее...)]</p>";
 			}
 			if(target.equals(equipper) && target.isPlayer() && !this.isAsleep()) {
 				AbstractClothing clothing = target.getClothingInSlot(InventorySlot.PENIS);
@@ -493,17 +478,9 @@ public class Kate extends NPC {
 				}
 				if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 					return UtilText.parse(equipper, target,
-							"You direct your spinneret at your own [npc.cock], with the intention of weaving a silky web condom around it, but as Kate sees what it is you're about to do, she firmly slaps it away and giggles,"
-							+ " [kate.speech(Don't do that! It's no fun if I don't get any cum!)]");
+							"Ты направляешь свое паучье брюшко на собственный [npc.cock], намереваясь сплести вокруг него шелковый паучий презерватив, но как только Кейт видит, что ты задумал, она решительно отбивает его и хихикает: [kate.speech(Не делай так! Будет неинтересно, если я не получу ни капли спермы!)]");
 				}
-				return "<p>"
-							+ "As you pull out a condom, a worried frown flashes across Kate's face, "
-							+ "[kate.speech(Oh! Erm, let me put that on for you!)]"
-							+"<br/>"
-							+ "Before you can react, Kate snatches the condom out of your hands, and with a devious smile, uses her sharp little canines to [style.colourBad(tear a big hole in it)]."
-							+ " She laughs at your shocked reaction and declares, "
-							+ "[kate.speech(It's no fun if I don't get any cum!)]"
-						+ "</p>";
+				return "<p>Когда вы достаете презерватив, на лице Кейт промелькивает обеспокоенная гримаса, [kate.speech(О! Эм, давай я сама его надену!)]<br/>Прежде чем вы успеваете среагировать, Кейт выхватывает презерватив из ваших рук и с лукавой улыбкой использует свои острые клыки, чтобы [style.colourBad(разорвать его в клочья)]. Она смеется над вашей шокированной реакцией и заявляет: [kate.speech(Будет неинтересно, если я не получу хоть немного спермы!)]</p>";
 			}
 		}
 		return null;
@@ -519,9 +496,9 @@ public class Kate extends NPC {
 	public String getDirtyTalkNoPenetration(GameCharacter target, boolean isPlayerDom){
 		List<String> speech = new ArrayList<>();
 
-		speech.add("Come on! Fuck me already!");
-		speech.add("Please, let's get started!");
-		speech.add("My little pussy needs you so bad!");
+		speech.add("Давай же! Трахни меня уже!");
+		speech.add("Пожалуйста, давай начнем!");
+		speech.add("Моя киска так сильно тебя хочет!");
 
 		String returnedLine = speech.get(Util.random.nextInt(speech.size()));
 		return UtilText.parse(this, target, "[npc.speech("+returnedLine+")]");
@@ -535,7 +512,7 @@ public class Kate extends NPC {
 				PresetColour.CLOTHING_PURPLE,
 				true,
 				new TattooWriting(
-						"Breed me!",
+						"Оплодотвори меня!",
 						PresetColour.CLOTHING_PINK_LIGHT,
 						true,
 						TattooWritingStyle.ITALICISED),

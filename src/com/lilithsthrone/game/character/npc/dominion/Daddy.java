@@ -78,14 +78,14 @@ public class Daddy extends NPC {
 	}
 	
 	public Daddy(boolean isImported) {
-		super(isImported, new NameTriplet("Desryth"), "Loviennemartu",
-				"First encountered as an unwelcome guest being turned away from Lilaya's home, the demon [npc.name] has the lofty goal of winning the love and affection of none other than the elder Lilin, Lyssieth.",
+		super(isImported, new NameTriplet("Десрит"), "Loviennemartu",
+				"Впервые встреченный как незваный гость, которого прогнали из дома Lilaya, демон [npc.name] ставит перед собой возвышенную цель — завоевать любовь и привязанность самой старшей лилин, Lyssieth.",
 				57, Month.JANUARY, 17,
 				25, Gender.M_P_MALE, Subspecies.DEMON, RaceStage.GREATER,
 				new CharacterInventory(false, 10), WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL, true);
 		
 		if(!isImported) {
-			this.setGenericName("unwelcome incubus");
+			this.setGenericName("незваный инкуб");
 			
 			this.setPlayerKnowsName(false);
 		}
@@ -426,13 +426,13 @@ public class Daddy extends NPC {
 //						+ "[style.colourBad([daddy.She] will also be unavailable until tomorrow.)]"
 //					:"");
 		
-		return " [daddy.SheIsFull] only at home between the hours of "+Units.time(LocalTime.of(Daddy.getHourAvailableStart(), 00))+" and "+Units.time(LocalTime.of(Daddy.getHourAvailableEnd(), 00))
+		return " [daddy.SheIsFull] дома только в часы с "+Units.time(LocalTime.of(Daddy.getHourAvailableStart(), 00))+" and "+Units.time(LocalTime.of(Daddy.getHourAvailableEnd(), 00))
 				+(Main.game.getSecondsPassed()<Main.game.getDialogueFlags().getSavedLong(DADDY_RESET_TIMER_ID)+(60*60*3)
-						?". [style.colourBad(Due to recently meeting [daddy.herHim], [daddy.she] will not be available again until tomorrow.)]"
-						:", and as such, [daddy.sheIs] currently "
+						?". [style.colourBad(Из-за недавней встречи с [daddy.herHim], [daddy.she] снова появится только завтра.)]"
+						:", и поэтому сейчас [daddy.sheIs] "
 							+(Daddy.isAvailable()
-									?"[style.colourGood(available)]."
-									:"[style.colourBad(not available)]."));
+									?"[style.colourGood(доступен)]."
+									:"[style.colourBad(недоступен)]."));
 	}
 	
 	/**

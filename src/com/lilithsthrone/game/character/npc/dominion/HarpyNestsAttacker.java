@@ -171,13 +171,13 @@ public class HarpyNestsAttacker extends NPC {
 	@Override
 	public String getDescription() {
 		if(this.isSlave()) {
-			return UtilText.parse(this, "Having run afoul of the law, [npc.nameIsFull] now a slave, and is no more than [npc.her] owner's property.");
+			return UtilText.parse(this, "Нарушив закон, [npc.nameIsFull] теперь рабыня и не более чем собственность [npc.her].");
 			
 		} else if(this.getAffectionLevel(Main.game.getPlayer()).isLessThan(AffectionLevel.POSITIVE_ONE_FRIENDLY)) {
-			return UtilText.parse(this, "[npc.Name] is angry with the fact that you've walked into what [npc.she] considers to be '[npc.her]' territory. It seems as though [npc.sheIs] prepared to fight you in order to teach you a lesson...");
+			return UtilText.parse(this, "[npc.Name] в ярости от того, что вы забрели на территорию, которую [npc.she] считает «[npc.her]». Похоже, [npc.sheIs] готовится вступить с вами в бой, чтобы преподать вам урок...");
 			
 		} else {
-			return UtilText.parse(this, "While your first encounter with [npc.name] was a hostile one, you've since managed to become friends with the aggressive [npc.race], and you're sure to always receive a warm welcome from [npc.herHim].");
+			return UtilText.parse(this, "Хотя ваша первая встреча с [npc.name] была враждебной, с тех пор вам удалось подружиться с этой агрессивной [npc.race], и теперь вы уверены, что всегда получите теплый прием от [npc.herHim].");
 		}
 	}
 

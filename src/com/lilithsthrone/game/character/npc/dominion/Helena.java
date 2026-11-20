@@ -85,9 +85,8 @@ public class Helena extends NPC {
 	}
 	
 	public Helena(boolean isImported) {
-		super(isImported, new NameTriplet("Helena"), "Labelle",
-				"Helena is an extremely powerful harpy matriarch, and is in control of one of the largest harpy flocks in Dominion."
-						+ " Her beauty rivals that of even the most gorgeous of succubi, which, combined with her sharp mind and regal personality, makes her somewhat of an idol in harpy society.",
+		super(isImported, new NameTriplet("Helena"), "Лабель",
+				"Helena — чрезвычайно могущественная матриарх гарпий, управляющая одним из крупнейших стай в Dominion. Её красота соперничает даже с самыми прекрасными суккубами, что в сочетании с острым умом и царственным характером делает её своего рода идолом в обществе гарпий.",
 				26, Month.MAY, 3,
 				10, Gender.F_V_B_FEMALE, Subspecies.HARPY_SWAN, RaceStage.LESSER,
 				new CharacterInventory(false, 30), WorldType.HELENAS_APARTMENT, PlaceType.HELENA_APARTMENT_HELENA_BEDROOM, true);
@@ -120,14 +119,14 @@ public class Helena extends NPC {
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.5.9")) {
 			this.setName(new NameTriplet("Helena"));
-			this.getHomeCell().removeCharacterHomeId("-1,Alexa");
+			this.getHomeCell().removeCharacterHomeId("-1,Алекса");
 			this.getHomeCell().addCharacterHomeId("-1,Helena");
-			this.getCell().removeCharacterPresentId("-1,Alexa");
+			this.getCell().removeCharacterPresentId("-1,Алекса");
 			this.getCell().addCharacterPresentId("-1,Helena");
 			this.setId("-1,Helena");
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.6.2")) {
-			this.setSurname("Labelle");
+			this.setSurname("Лабель");
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.6.9")) {
 			this.clearFetishes();
@@ -143,8 +142,7 @@ public class Helena extends NPC {
 			this.setFetishDesire(Fetish.FETISH_KINK_RECEIVING, FetishDesire.THREE_LIKE);
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.7.1")) {
-			this.setDescription("Helena is an extremely powerful harpy matriarch, and is in control of one of the largest harpy flocks in Dominion."
-						+ " Her beauty rivals that of even the most gorgeous of succubi, which, combined with her sharp mind and regal personality, makes her somewhat of an idol in harpy society.");
+			this.setDescription("Helena — чрезвычайно могущественная матриарх гарпий, управляющая одним из крупнейших стай в Dominion. Её красота соперничает даже с самыми прекрасными суккубами, что в сочетании с острым умом и царственным характером делает её своего рода идолом в обществе гарпий.");
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.8.7")) {
 			this.setHomeLocation(WorldType.HELENAS_APARTMENT, PlaceType.HELENA_APARTMENT_HELENA_BEDROOM);

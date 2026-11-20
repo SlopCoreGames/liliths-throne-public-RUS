@@ -72,8 +72,8 @@ public class RentalMommy extends NPC {
 	}
 	
 	public RentalMommy(boolean isImported) {
-		super(isImported, new NameTriplet("Mommy"), "Hathaway",
-				"'Mommy' earns a living by renting herself out to those in need of some motherly love.",
+		super(isImported, new NameTriplet("Мамочка"), "Хэтэуэй",
+				"«Мамочка» зарабатывает на жизнь тем, что сдает себя в аренду тем, кому не хватает материнской любви.",
 				45, Month.JULY, 3,
 				15,
 				null, null, null,

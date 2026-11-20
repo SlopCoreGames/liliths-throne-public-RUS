@@ -70,9 +70,8 @@ public class Bunny extends NPC {
 	}
 	
 	public Bunny(boolean isImported) {
-		super(isImported, new NameTriplet("Bunny"), "Hasenkamp",
-				"Bunny is one of the two prostitutes Angel has working for her."
-						+ " Just like her older sister, Loppy, Bunny is a rabbit-morph, and seems to genuinely love her line of work.",
+		super(isImported, new NameTriplet("Банни"), "Хазенкамп",
+				"Банни — одна из двух проституток, работающих на Ангел. Как и её старшая сестра Лоппи, Банни — морф-кролик, и, кажется, она искренне любит свою работу.",
 				19, Month.FEBRUARY, 13,
 				10, Gender.F_V_B_FEMALE, Subspecies.RABBIT_MORPH, RaceStage.PARTIAL,
 				new CharacterInventory(false, 30), WorldType.ANGELS_KISS_FIRST_FLOOR, PlaceType.ANGELS_KISS_BEDROOM_BUNNY, true);
@@ -84,8 +83,7 @@ public class Bunny extends NPC {
 		
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.2.10.5")) {
 			resetBodyAfterVersion_2_10_5();
-			this.setDescription("Bunny is one of the two prostitutes Angel has working for her."
-						+ " Just like her older sister, Loppy, Bunny is a rabbit-morph, and seems to genuinely love her line of work.");
+			this.setDescription("Банни — одна из двух проституток, работающих на Ангел. Как и её старшая сестра Лоппи, Банни — морф-кролик, и, кажется, она искренне любит свою работу.");
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.3.6")) {
 			this.resetPerksMap(true);
@@ -299,10 +297,7 @@ public class Bunny extends NPC {
 			String itemName = item.getName();
 			return new Value<>(false,
 					UtilText.parse(user, target,
-						"<p>"
-							+ "[npc.Name] [npc.verb(take)] out "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" from [npc.her] inventory and [npc.verb(try)] to give it to [npc2.name],"
-								+ " but [npc2.she] dismisses it with a wave of [npc2.her] hand and says, [npc2.speech(Sorry, [npc.babe], but that's not part of the deal!)]"
-						+ "</p>"));
+						"<p>[npc.Name] [npc.verb(take)] наружу "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" из [npc.her] инвентаря и [npc.verb(try)], чтобы отдать это [npc2.name], но [npc2.she] отмахивается [npc2.her] рукой и говорит: [npc2.speech(Прости, [npc.babe], но это не входит в сделку!)]</p>"));
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
 	}

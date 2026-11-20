@@ -73,10 +73,8 @@ public class NyanMum extends NPC {
 	}
 	
 	public NyanMum(boolean isImported) {
-		super(isImported, new NameTriplet("Leotie"), "Rey",
-				"Although she's the mother of Nyan, Leotie is the polar opposite of her daughter."
-						+ " Extremely confident and assertive, she's one of the most successful businesswomen in all of Lilith's Realm."
-						+ " Considering Nyan to be her most beloved treasure, Leotie's over-protective nature has undoubtedly contributed to her daughter's timid nature.",
+		super(isImported, new NameTriplet("Леоти"), "Рей",
+				"Хотя она и мать Nyan, Леоти — полная противоположность своей дочери. Невероятно уверенная в себе и напористая, она является одной из самых успешных бизнес-леди во всем Королевстве Lilith. Считая Nyan своим самым драгоценным сокровищем, Леоти своей чрезмерной опекой, несомненно, способствовала формированию робкого характера дочери.",
 				47, Month.APRIL, 12,
 				15,
 				Gender.F_V_B_FEMALE,

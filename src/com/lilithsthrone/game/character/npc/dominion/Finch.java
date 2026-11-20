@@ -65,10 +65,8 @@ public class Finch extends NPC {
 	}
 	
 	public Finch(boolean isImported) {
-		super(isImported, new NameTriplet("Finch"), "Moreno",
-				"Finch is the manager of Slaver Alley's 'Slave Administration' building."
-						+ " Although he acts friendly enough, you can't help but wonder if his disarming disposition is just for show."
-						+ " After all, would the manager of Dominion's 'Slave Administration' really have got to that position just by being nice?",
+		super(isImported, new NameTriplet("Финч"), "Морено",
+				"Finch — управляющий зданием «Рабской администрации» в Переулке работорговцев. Хотя он ведет себя довольно дружелюбно, невольно задаешься вопросом: не является ли его обезоруживающая манера лишь притворством? В конце концов, неужели управляющий «Рабской администрацией» в Dominion действительно достиг бы такой должности, будучи просто милым парнем?",
 				27, Month.SEPTEMBER, 29,
 				10,
 				Gender.M_P_MALE,
@@ -292,10 +290,7 @@ public class Finch extends NPC {
 
 	@Override
 	public String getTraderDescription() {
-		return "<p>"
-					+ "[finch.speech(Looking for the good stuff, huh?)] [finch.name] says, winking at you as he hands you a 'slaver-exclusive' sales brochure,"
-					+ " [finch.speech(Let me know what you fancy!)]"
-				+ "</p>"
+		return "<p>[finch.speech(Ищешь что-нибудь эдакое, а?)] [finch.name] говорит, подмигивая вам и протягивая рекламный буклет «только для работорговцев», [finch.speech(Дай знать, если что-то приглянется!)]</p>"
 				+ (Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.finchFreedomTalk)
 					?"<p>"
 						+ "As you start to look through the brochure, [finch.name] lowers his voice and adds,"

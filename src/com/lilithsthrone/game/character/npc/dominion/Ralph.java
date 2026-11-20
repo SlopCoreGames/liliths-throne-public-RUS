@@ -75,8 +75,8 @@ public class Ralph extends NPC {
 	}
 	
 	public Ralph(boolean isImported) {
-		super(isImported, new NameTriplet("Ralph"), "Armstrong",
-				"Ralph is the owner of the shop 'Ralph's Snacks'. There's an air of confidence in the way he holds himself, and he behaves in a professional manner at all times.",
+		super(isImported, new NameTriplet("Ralph"), "Армстронг",
+				"Ralph — владелец лавки «Закуски от Ralph». В его осанке чувствуется уверенность, а сам он всегда ведет себя крайне профессионально.",
 				34, Month.MAY, 17,
 				10, Gender.M_P_MALE, Subspecies.HORSE_MORPH, RaceStage.GREATER,
 				new CharacterInventory(false, 10), WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_RALPHS_SHOP, true);
@@ -337,49 +337,29 @@ public class Ralph extends NPC {
 		if(Main.game.getDialogueFlags().getSavedLong(RALPH_DISCOUNT_TIMER_ID)>0){
 			StringBuilder descriptionSB = new StringBuilder();
 			
-			descriptionSB.append("<p>"
-						+ "You look over at the counter to see Ralph smiling back at you. Sensing that you might need some assistance, he briskly walks over to where you're standing."
-					+ "</p>"
-					+ "<p>"
-						+ "Although the memory of you submissively pleasuring Ralph's huge horse-cock is still fresh in both of your minds, he treats you with the utmost respect and politely lists off the prices of the transformative consumables on display."
+			descriptionSB.append("<p>Вы оглядываетесь на прилавок и видите, что Ralph улыбается вам в ответ. Почувствовав, что вам может понадобиться помощь, он бодро направляется к вам.</p><p>Хотя воспоминание о том, как вы покорно ласкали огромный конский член Ralph, всё еще свежо в памяти обоих, он относится к вам с величайшим уважением и вежливо перечисляет цены на выставленные на продажу трансформирующие расходники."
 						+ (this.hasItemType(ItemType.getItemTypeFromId("innoxia_pills_sterility"))
-								?" While most of them seem to have a reasonable markup, the small blue '"+ItemType.getItemTypeFromId("innoxia_pills_sterility").getNamePlural(false)+"' appear to be unreasonably pricy,"
-								+ " and Ralph once again notes that there's a huge tax levied on their sale."
-							+ "</p>"
-							+ "<p>"
+								?" Хотя большинство из них, кажется, продаются с разумной наценкой, маленькие синие «"+ItemType.getItemTypeFromId("innoxia_pills_sterility").getNamePlural(false)+"», похоже, стоят неоправданно дорого, и Ralph снова отмечает, что на их продажу наложен огромный налог.</p><p>"
 						:"")
-						+ " He reminds you that he's also interested in buying any transformative consumables that you're willing to sell."
-						+ " As you turn back to look at the goods, Ralph tells you that he refreshes his stock every day."
-					+ "</p>");
+						+ " Он напоминает вам, что также заинтересован в покупке любых трансформирующих расходников, которые вы готовы продать. Когда вы поворачиваетесь обратно к товарам, Ralph говорит, что обновляет свой ассортимент каждый день.</p>");
 			
 			if(isDiscountActive()){
 				descriptionSB.append("<p>"
-						+ "<b>Ralph is giving you a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+Main.game.getDialogueFlags().ralphDiscount+"%</b> <b>discount!</b>"
-							+ "</p>");
+						+ "<b>Ralph is giving you a</b> <b style='color:" + PresetColour.GENERIC_GOOD.toWebHexString() + ";'>"+Main.game.getDialogueFlags().ralphDiscount+"%</b> <b>скидка!</b></p>");
 			}else{
-				descriptionSB.append("<p>"
-						+ "Before he turns to walk back to the counter, he leans in and whispers in your ear, "
-						+ UtilText.parseSpeech("If you're interested in earning a little discount again, just call me over.", Main.game.getNpc(Ralph.class))
+				descriptionSB.append("<p>Прежде чем он развернется, чтобы вернуться к прилавку, он наклоняется и шепчет вам на ухо: "
+						+ UtilText.parseSpeech("Если захочешь снова получить небольшую скидку, просто позови меня.", Main.game.getNpc(Ralph.class))
 							+ "</p>");
 			}
 			
 			return descriptionSB.toString();
 			
 		} else {
-			return "<p>"
-						+ "You look over at the counter to see Ralph smiling back at you. Sensing that you might need some assistance, he briskly walks over to where you're standing."
-					+ "</p>"
-					+ "<p>"
-						+ "After a brief greeting, you ask him about the transformative consumables on display. He politely informs you that they're all for sale and quickly lists off their prices."
+			return "<p>Вы переводите взгляд на прилавок и видите, что Ralph улыбается вам в ответ. Почувствовав, что вам может понадобиться помощь, он бодро направляется к вам.</p><p>После короткого приветствия вы расспрашиваете его о выставленных на продажу трансформирующих расходниках. Он вежливо сообщает, что все они продаются, и быстро перечисляет их цены."
 						+ (this.hasItemType(ItemType.getItemTypeFromId("innoxia_pills_sterility"))
-							?" While most of them seem to have a reasonable markup, the small blue '"+ItemType.getItemTypeFromId("innoxia_pills_sterility").getNamePlural(false)+"' appear to be unreasonably pricy,"
-									+ " and after asking Ralph about their high cost, he explains that there's a huge tax levied on their sale."
-								+ "</p>"
-								+ "<p>"
+							?" Хотя большинство из них, кажется, продаются с разумной наценкой, маленькие синие «"+ItemType.getItemTypeFromId("innoxia_pills_sterility").getNamePlural(false)+"' кажутся неоправданно дорогими, и после вашего вопроса о высокой стоимости Ralph объясняет, что на их продажу наложен огромный налог.</p><p>"
 							:"")
-						+ " Sensing that you might not be a typical customer, he tells you that he's also interested in buying any transformative consumables that you're willing to sell."
-						+ " As you turn back to look at the goods, Ralph tells you that he refreshes his stock every day."
-					+ "</p>";
+						+ " Почувствовав, что вы можете быть не обычным покупателем, он говорит, что также заинтересован в покупке любых трансформирующих расходников, которые вы захотите продать. Когда вы снова поворачиваетесь к товарам, Ralph сообщает, что обновляет свой запас каждый день.</p>";
 		}
 		
 	}
@@ -452,14 +432,10 @@ public class Ralph extends NPC {
 				}
 				if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 					return UtilText.parse(equipper, target,
-							"[npc.Name] [npc.verb(direct)] [npc.her] spinneret at [npc2.namePos] [npc2.cock], but, sensing what [npc.sheIs] about to do, he slaps it away and grunts,"
-							+ " [npc2.speech(I don't think so! You agreed to let me breed you, and that's exactly what I'm going to do!)]");
+							"[npc.Name] [npc.verb(direct)] [npc.her] прядилка у [npc2.namePos] [npc2.cock], но, предчувствуя, что [npc.sheIs] собирается сделать, он отмахивается от нее и ворчит: [npc2.speech(Не думаю! Ты согласилась, чтобы я тебя оплодотворил, и именно это я и сделаю!)]");
 				}
 				return UtilText.parse(target,
-						"<p>"
-							+ "You pull out a condom and hold it out to Ralph, but as he sees what it is you've got, he grabs it and tears it in two, before dismissively grunting,"
-							+ " [npc.speech(I don't think so! You agreed to let me breed you, and that's exactly what I'm going to do!)]"
-						+ "</p>");
+						"<p>Вы достаете презерватив и протягиваете его Ralph, но, увидев, что это, он хватает его и разрывает пополам, после чего пренебрежительно ворчит: [npc.speech(Не думаю! Ты согласилась, чтобы я тебя оплодотворил, и именно это я и сделаю!)]</p>");
 			}
 			
 			if(!target.isPlayer()) {
@@ -467,34 +443,13 @@ public class Ralph extends NPC {
 					return null;
 				}
 				if(Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.MOUTH, Main.game.getNpc(Ralph.class)).contains(SexAreaPenetration.PENIS)) {
-					return "<p>"
-							+ "You pull out a condom from your inventory, and, making a muffled questioning sound, hold it up to Ralph."
-								+ " He looks down at you before nodding and stepping back, sliding his huge cock free from your mouth."
-								+ " You get a moment to catch your breath as Ralph tears opens the little foil package before rolling the condom down the length of his massive shaft."
-								+ " Stepping forwards once more, he shoves his rubber-bound dick back down your throat, and you let out a muffled sigh of relief, happy that he did as you asked."
-						+ "</p>";
+					return "<p>Вы достаете презерватив из своего инвентаря и, издав приглушенный вопросительный звук, протягиваете его Ralph. Он смотрит на вас сверху вниз, затем кивает и отстраняется, вынимая свой огромный член из вашего рта. У вас появляется мгновение, чтобы перевести дух, пока Ralph разрывает маленькую фольгированную упаковку и натягивает презерватив на всю длину своего массивного ствола. Снова шагнув вперед, он вталкивает свой обтянутый резиной член обратно вам в глотку, и вы издаете приглушенный вздох облегчения, радуясь тому, что он сделал так, как вы просили.</p>";
 				} else if(Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.VAGINA, Main.game.getNpc(Ralph.class)).contains(SexAreaPenetration.PENIS)) {
-					return "<p>"
-								+ "As Ralph carries on slamming his huge cock in and out of your pussy, you fumble around in your inventory and produce a condom."
-									+ " Suppressing your moans, you turn back, holding out your hand as you ask him to put it on."
-									+ " He lets out a disappointed sigh, but doesn't openly object as he pulls his cock free from your pussy, giving you a moment to breathe as he"
-										+ " tears opens the little foil package before rolling the condom down the length of his massive shaft."
-									+ " Once the condom is securely in place, he lines himself up and pushes forwards, burying his rubber-bound dick deep into your pussy."
-							+ "</p>";
+					return "<p>Пока Ralph продолжает с силой вколачивать свой огромный член в вашу киску, вы шарите в инвентаре и достаете презерватив. Подавляя стоны, вы поворачиваетесь к нему и, протянув руку, просите надеть его. Он разочарованно вздыхает, но не возражает открыто, вынимая член из вашей киски; это дает вам секунду передохнуть, пока он разрывает маленькую фольгированную упаковку и натягивает презерватив на всю длину своего массивного ствола. Как только презерватив надежно зафиксирован, он пристраивается и толкается вперед, глубоко погружая свой обтянутый резиной член в вашу киску.</p>";
 				} else if(Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.ANUS, Main.game.getNpc(Ralph.class)).contains(SexAreaPenetration.PENIS)) {
-					return "<p>"
-						+ "As Ralph carries on slamming his huge cock in and out of your ass, you fumble around in your inventory and produce a condom."
-							+ " Suppressing your groans, you turn back, holding out your hand as you ask him to put it on."
-							+ " He lets out a disappointed sigh, but doesn't openly object as he pulls his cock free from your rear entrance, giving you a moment to breathe as he"
-								+ " tears opens the little foil package before rolling the condom down the length of his massive shaft."
-							+ " Once the condom is securely in place, he lines himself up and pushes forwards, burying his rubber-bound dick deep into your waiting asshole."
-						+ "</p>";
+					return "<p>Пока Ralph продолжает с силой вколачивать свой огромный член в твою задницу, ты шаришь в своем инвентаре и достаешь презерватив. Сдерживая стоны, ты оборачиваешься и, протянув ему упаковку, просишь надеть его. Он разочарованно вздыхает, но не возражает, вынимая свой член из твоего заднего прохода; это дает тебе мгновение передохнуть, пока он разрывает маленькую фольгированную упаковку и натягивает презерватив на всю длину своего массивного ствола. Как только презерватив плотно садится на место, он пристраивается и толкается вперед, глубоко погружая свой обтянутый резиной член в твой ждущий анус.</p>";
 				} else {
-					return "<p>"
-						+ "Producing a condom from your inventory, you lean forwards, looking up at Ralph and asking him to put it on as you hold the little foil package up to him."
-								+ " With a sigh, he takes the condom from you, and, tearing the package open, quickly rolls the condom down the length of his massive shaft."
-								+ " You thank him for doing as you asked, and he replies that he's happy to respect your request."
-					+ "</p>";
+					return "<p>Достав презерватив из инвентаря, ты наклоняешься вперед, смотришь на Ralph и, протягивая ему маленькую фольгированную упаковку, просишь надеть его. Со вздохом он забирает презерватив у тебя и, вскрыв упаковку, быстро натягивает его на всю длину своего массивного ствола. Ты благодаришь его за то, что он послушался, на что он отвечает, что рад уважить твою просьбу.</p>";
 				}
 			}
 		}
@@ -507,18 +462,18 @@ public class Ralph extends NPC {
 		if(Math.random()>0.3) {
 			if(penetrationType == SexAreaPenetration.PENIS && orifice == SexAreaOrifice.VAGINA) {
 				return UtilText.returnStringAtRandom(
-						"Ralph carries on driving you into the counter-top as he fucks your [pc.pussy+].",
-						"You feel Ralph's strong grip on your hips as his [ralph.cock+] pounds away at your [pc.pussy+].",
-						"Ralph's [ralph.cock+] carries on slamming in and out of your greedy [pc.pussy].",
-						"Your pussy lips spread around Ralph's [ralph.cock+] as he fucks you on the counter-top.");
+						"Ralph продолжает вжимать тебя в столешницу, трахая твою [pc.pussy+].",
+						"Ты чувствуешь крепкую хватку Ralph на своих бедрах, пока его [ralph.cock+] долбит твою [pc.pussy+].",
+						"[ralph.cock+] Ralph продолжает с силой входить и выходить из твоей ненасытной [pc.pussy].",
+						"Губы твоей киски обволакивают [ralph.cock+] Ralph, пока он трахает тебя на столешнице.");
 			}
 			
 			if(penetrationType == SexAreaPenetration.PENIS && orifice == SexAreaOrifice.MOUTH) {
 				return UtilText.returnStringAtRandom(
-						"Slimy saliva drools down your chin as you carry on sucking Ralph's [ralph.cock+].",
-						"You look down at the [ralph.cock+] sliding in and out of your mouth.",
-						"Ralph's [ralph.cock+] pushes its way past your lips as you kneel beneath him.",
-						"You bob your head back and forth as you carry on servicing Ralph's [ralph.cock+].");
+						"Слизистая слюна стекает по твоему подбородку, пока ты продолжаешь сосать [ralph.cock+] Ralph.",
+						"Ты смотришь вниз на [ralph.cock+], который то входит, то выходит из твоего рта.",
+						"[ralph.cock+] Ralph проталкивается сквозь твои губы, пока ты стоишь перед ним на коленях.",
+						"Ты ритмично двигаешь головой вверх-вниз, продолжая обслуживать [ralph.cock+] Ralph.");
 			}
 		}
 
@@ -535,20 +490,20 @@ public class Ralph extends NPC {
 					return super.getStretchingDescription(initialPenetration, partner, penetrationType, orifice, pastTense);
 				} else {
 					return UtilText.returnStringAtRandom(
-							"You feel tears streaming down your face as you force the [ralph.cock+] down your throat.",
-							"You aren't skilled enough at giving head to be able to comfortably handle Ralph's [ralph.cock+].",
-							"You squirm and choke as you do your best to fit the [ralph.cock+] down your throat.",
-							"You struggle to fit Ralph's [ralph.cock+] down your throat.");
+							"Ты чувствуешь, как слезы текут по твоему лицу, когда ты пытаешься проглотить [ralph.cock+].",
+							"Ты недостаточно умело занимаешься минетом, чтобы с комфортом справляться с [ralph.cock+] Ralph.",
+							"Ты корчишься и задыхаешься, изо всех сил пытаясь проглотить [ralph.cock+].",
+							"Ты изо всех сил пытаешься проглотить [ralph.cock+] Ralph.");
 				}
 			case VAGINA:
 				if(Math.random()<0.3) {
 					return super.getStretchingDescription(initialPenetration, partner, penetrationType, orifice, pastTense);
 				} else {
 					return UtilText.returnStringAtRandom(
-							"You squirm about uncomfortably on the counter-top as Ralph's [ralph.cock+] struggles to fit in your [pc.pussyCapacity] [pc.pussy].",
-							"Ralph's [ralph.cock+] painfully stretches you out as it rams its way in and out of your [pc.pussyCapacity] [pc.pussy].",
-							"Ralph's [ralph.cock+] is too large for your [pc.pussyCapacity] [pc.pussy], and you let out an uncomfortable whine as it stretches you out.",
-							"Your [pc.pussyCapacity] [pc.pussy] struggles to accommodate the sheer size of Ralph's [ralph.cock+].");
+							"Ты неудобно ерзаешь на столешнице, пока [ralph.cock+] Ralph с трудом входит в твою [pc.pussyCapacity] [pc.pussy].",
+							"[ralph.cock+] Ralph болезненно растягивает тебя, когда с силой входит и выходит из твоей [pc.pussyCapacity] [pc.pussy].",
+							"[ralph.cock+] Ralph слишком велик для твоего [pc.pussyCapacity] [pc.pussy], и ты издаешь неуютный стон, когда он растягивает тебя.",
+							"Твой [pc.pussyCapacity] [pc.pussy] с трудом справляется с невероятным размером [ralph.cock+] Ralph.");
 				}
 			default:
 				return super.getStretchingDescription(initialPenetration, partner, penetrationType, orifice, pastTense);
@@ -559,11 +514,9 @@ public class Ralph extends NPC {
 	public String getStretchingFinishedDescription(SexAreaOrifice orifice) {
 		switch(orifice) {
 			case MOUTH:
-				return "The next time Ralph gently pushes forwards, you feel your throat instinctively opening up to accommodate his flared equine member,"
-						+ " and with a muffled moan of delight, you realise that you're now able to comfortably suck Ralph's massive black horse-cock!";
+				return "В следующий раз, когда Ralph мягко толкнется вперед, ты чувствуешь, как твоя глотка инстинктивно раскрывается, чтобы принять его раздутый лошадиный член, и с приглушенным стоном восторга ты понимаешь, что теперь можешь с комфортом сосать массивный черный конский член Ralph!";
 			case VAGINA:
-				return "The next time Ralph slams forwards, you feel your pussy easily stretching out to accommodate his flared equine member, and with a squeal of delight,"
-						+ " you realise that you're now able to comfortably fit Ralph's massive black horse-cock in your [pc.pussy+]!";
+				return "В следующий раз, когда Ralph с силой ворвется вперед, ты чувствуешь, как твоя киска легко растягивается, чтобы принять его раздутый лошадиный член, и с восторженным визгом ты понимаешь, что теперь твой [pc.pussy+] может с комфортом вместить массивный черный конский член Ralph!";
 			default:
 				return super.getStretchingFinishedDescription(orifice);
 		}
@@ -577,75 +530,43 @@ public class Ralph extends NPC {
 				
 				if(Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.MOUTH, Main.game.getNpc(Ralph.class)).contains(SexAreaPenetration.PENIS)) {
 					return new Value<>(true,
-							"<p>"
-								+ "You pull out a "+item.getName(false, false)+" from your inventory, and, making a muffled questioning sound, hold it up to Ralph."
-								+ " He looks down at you, letting out a little laugh and shrugging his shoulders as he sees what you're trying to give him."
-								+ " Quickly popping the pill out of its plastic container, he swallows it, and you let out a happy, although somewhat muffled, giggle, knowing that his sperm just got a lot more potent."
-							+ "</p>");
+							"<p>Ты достаешь "+item.getName(false, false)+" из своего инвентаря и, издав приглушенный вопросительный звук, протягиваешь это Ralph. Он смотрит на тебя сверху вниз, тихо посмеиваясь и пожимая плечами, когда видит, что ты пытаешься ему дать. Быстро выщелкнув таблетку из пластикового контейнера, он проглатывает ее, и ты издаешь радостный, хоть и несколько приглушенный смешок, понимая, что его сперма только что стала гораздо мощнее.</p>");
 				
 				} else if(Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.VAGINA, Main.game.getNpc(Ralph.class)).contains(SexAreaPenetration.PENIS)) {
 					return new Value<>(true,
-							"<p>"
-								+ "As Ralph carries on slamming his huge cock in and out of your pussy, you fumble around in your inventory and produce a "+item.getName(false, false)+"."
-								+ " Suppressing your moans, you turn back, holding out your hand as you ask him to swallow it."
-								+ " He lets out a little laugh as he sees what you're giving him, and, quickly popping the pill out of its plastic container and swallowing it,"
-								+ " he takes a moment to say a few words before continuing to fuck you, "
+							"<p>Пока Ralph продолжает вколачивать свой огромный член в твою киску, ты шаришь в своем инвентаре и извлекаешь "+item.getName(false, false)+". Сдерживая стоны, ты оборачиваешься и протягиваешь ему руку, прося проглотить это. Он издает короткий смешок, видя, что ты ему предлагаешь, и, быстро выщелкнув таблетку из пластикового контейнера и проглотив ее, на мгновение прерывается, чтобы сказать пару слов, прежде чем продолжить трахать тебя, "
 								+ (Main.game.getNpc(Ralph.class).isWearingCondom()
-									?" [ralph.speech(You do realise I'm wearing a condom, right?)]"
+									?" [ralph.speech(Ты ведь понимаешь, что на мне презерватив, да?)]"
 									:(Main.game.getPlayer().isVisiblyPregnant()
-											?" [ralph.speech(Uhh, you're already pregnant, but sure, why not?)]"
-											:" [ralph.speech(Hoping to get pregnant, huh? Well, I'm more than happy to help with that!)]"))
+											?" [ralph.speech(Ох, ты ведь уже беременна, но ладно, почему бы и нет?)]"
+											:" [ralph.speech(Надеешься забеременеть, а? Что ж, я буду только рад помочь!)]"))
 							+ "</p>");
 					
 				} else if(Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.ANUS, Main.game.getNpc(Ralph.class)).contains(SexAreaPenetration.PENIS)) {
 					return new Value<>(true,
-								"<p>"
-									+ "As Ralph carries on slamming his huge cock in and out of your ass, you fumble around in your inventory and produce a "+item.getName(false, false)+"."
-									+ " Suppressing your groans, you turn back, holding out your hand as you ask him to swallow it."
-									+ " He lets out a little laugh as he sees what you're giving him, and, quickly popping the pill out of its plastic container and swallowing it,"
-									+ " he takes a moment to say a few words before continuing to fuck you, "
-									+ "[ralph.speech(You do know you can't get pregnant from this, right?)]"
-								+ "</p>");
+								"<p>Пока Ralph продолжает вколачивать свой огромный член в твою задницу, ты шаришь в своем инвентаре и достаешь "+item.getName(false, false)+". Сдерживая стоны, ты оборачиваешься и протягиваешь ему руку, прося проглотить это. Он издает короткий смешок, видя, что ты ему предлагаешь, и, быстро выщелкнув таблетку из пластикового контейнера и проглотив ее, на мгновение прерывается, чтобы сказать пару слов, прежде чем продолжить трахать тебя, [ralph.speech(Ты ведь знаешь, что от этого нельзя забеременеть, верно?)]</p>");
 					
 				} else {
 					return new Value<>(true,
-							"<p>"
-								+ "Producing a "+item.getName(false, false)+" from your inventory, you lean forwards, looking up at Ralph and asking him to swallow it as you hold it up to him."
-									+ " He looks down at you, letting out a little laugh and shrugging his shoulders as he sees what you're trying to give him."
-									+ " Quickly popping the pill out of its plastic container, he swallows it, and you let out a happy giggle, knowing that his sperm just got a lot more potent."
-							+ "</p>");
+							"<p>Доставая "+item.getName(false, false)+" из своего инвентаря, ты наклоняешься вперед, глядя на Ralph, и просишь его проглотить это, поднося предмет к его лицу. Он смотрит на тебя сверху вниз, тихо посмеиваясь и пожимая плечами, когда понимает, что именно ты пытаешься ему дать. Быстро выщелкнув таблетку из пластикового контейнера, он проглатывает ее, и ты радостно хихикаешь, зная, что его сперма только что стала куда мощнее.</p>");
 				}
 				
 			} else {
 				if(!Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.MOUTH, Main.game.getNpc(Ralph.class)).isEmpty()) {
 					return new Value<>(false,
-							"<p>"
-								+ "You pull out "+item.getItemType().getDeterminer()+" "+item.getName()+" from your inventory, and, making a muffled questioning sound, hold it up to Ralph."
-								+ " He looks down at you before making a dismissive grunt and stepping forwards slightly, ramming his cock that little bit further down your throat as you put the "+item.getName()+" back in your inventory."
-							+ "</p>");
+							"<p>Вы достаете "+item.getItemType().getDeterminer()+" "+item.getName()+" из своего инвентаря и, издав приглушенный вопросительный звук, протягиваете это Ralph. Он смотрит на вас сверху вниз, затем издает пренебрежительное хмыканье и слегка подается вперед, проталкивая свой член еще глубже в ваше горло, пока вы убираете "+item.getName()+" обратно в инвентарь.</p>");
 					
 				} else if(!Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.VAGINA, Main.game.getNpc(Ralph.class)).isEmpty()) {
 					return new Value<>(false,
-							"<p>"
-								+ "As Ralph carries on slamming his huge cock in and out of your pussy, you fumble around in your inventory and produce a "+item.getItemType().getDeterminer()+" "+item.getName()+"."
-								+ " Suppressing your moans, you ask him if he'd like to "+item.getItemType().getUseName()+" it, but he simply makes a dismissive grunt and carries on fucking you."
-								+ " You start sighing and crying out in pleasure once more as you put the "+item.getName()+" back in your inventory."
-							+ "</p>");
+							"<p>Пока Ralph продолжает вколачивать свой огромный член в твою киску, ты шаришь в своем инвентаре и извлекаешь "+item.getItemType().getDeterminer()+" "+item.getName()+". Сдерживая стоны, вы спрашиваете его, не хочет ли он "+item.getItemType().getUseName()+" , но он лишь пренебрежительно хмыкает и продолжает трахать вас. Вы снова начинаете вздыхать и вскрикивать от удовольствия, убирая "+item.getName()+" обратно в инвентарь.</p>");
 					
 				} else if(!Main.sex.getOngoingSexAreas(Main.game.getPlayer(), SexAreaOrifice.ANUS, Main.game.getNpc(Ralph.class)).isEmpty()) {
 					return new Value<>(false,
-							"<p>"
-								+ "As Ralph carries on slamming his huge cock in and out of your ass, you fumble around in your inventory and produce a "+item.getItemType().getDeterminer()+" "+item.getName()+"."
-								+ " Suppressing your groans, you ask him if he'd like to "+item.getItemType().getUseName()+" it, but he simply makes a dismissive grunt and carries on fucking you."
-								+ " You start sighing and crying out in pleasure once more as you put the "+item.getName()+" back in your inventory."
-							+ "</p>");
+							"<p>Пока Ralph продолжает вколачивать свой огромный член в твою задницу, ты шаришь в своем инвентаре и достаешь "+item.getItemType().getDeterminer()+" "+item.getName()+". Сдерживая стоны, вы спрашиваете его, не хочет ли он "+item.getItemType().getUseName()+" , но он лишь пренебрежительно хмыкает и продолжает трахать вас. Вы снова начинаете вздыхать и вскрикивать от удовольствия, убирая "+item.getName()+" обратно в инвентарь.</p>");
 					
 				} else {
 					return new Value<>(false,
-							"<p>"
-								+ "You ask Ralph if he'd like to use "+item.getItemType().getDeterminer()+" "+item.getName()+" that you've got, but he simply makes a dismissive grunt and tells you he's not interested."
-								+ " With a sigh, you put the "+item.getName()+" back in your inventory."
-							+ "</p>");
+							"<p>Вы спрашиваете Ralph, не хочет ли он использовать "+item.getItemType().getDeterminer()+" "+item.getName()+" что у тебя есть, но он лишь пренебрежительно хмыкает и говорит, что не заинтересован. Со вздохом ты кладешь "+item.getName()+" обратно в инвентарь.</p>");
 				}
 			}
 		}

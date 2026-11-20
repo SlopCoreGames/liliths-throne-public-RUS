@@ -78,9 +78,8 @@ public class Zaranix extends NPC {
 	}
 	
 	public Zaranix(boolean isImported) {
-		super(isImported, new NameTriplet("Zaranix", "Zaranix", "Zaranix"), "Lyniximartu",
-				"Zaranix is one of the few demons that feels more comfortable in his incubus, rather than succubus, form."
-						+ " Muscular, tall, and handsome, Zaranix uses both his cunning mind and good looks to get what he wants.",
+		super(isImported, new NameTriplet("Зараникс", "Зараникс", "Зараникс"), "Линиксимарту",
+				"Зараникс — один из немногих демонов, которым комфортнее в облике инкуба, а не суккуба. Мускулистый, высокий и статный, Зараникс использует как свой острый ум, так и привлекательную внешность, чтобы получать желаемое.",
 				204, Month.JULY, 3,
 				15,
 				null, null, null,
@@ -112,7 +111,7 @@ public class Zaranix extends NPC {
 			this.setSkinCovering(new Covering(BodyCoveringType.NIPPLES, PresetColour.SKIN_PURPLE_DARK), true);
 			this.clearPenisModifiers();
 			this.addPenisModifier(PenetrationModifier.RIBBED);
-			this.setName(new NameTriplet("Zaranix", "Zaranix", "Zaranix"));
+			this.setName(new NameTriplet("Зараникс", "Зараникс", "Зараникс"));
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.4.9.8")) {
 			this.setAge(204);
@@ -349,9 +348,9 @@ public class Zaranix extends NPC {
 		return "<p>"
 				+ UtilText.parse(target,
 						UtilText.returnStringAtRandom(
-						"With a booming shout, [zaranix.name] delivers a solid kick to [npc.namePos] torso!",
-						"With an angry roar, [zaranix.name] punches [npc.name] square in the chest!",
-						"[Zaranix.name] lets out a furious shout as he punches [npc.name] in the [npc.arm]!")) 
+						"С громогласным криком [zaranix.name] наносит мощный удар ногой в торс [npc.namePos]!",
+						"С яростным ревом [zaranix.name] наносит [npc.name] прямой удар кулаком в грудь!",
+						"[Zaranix.name] яростно кричит, нанося [npc.name] удар в [npc.arm]!")) 
 			+ "</p>";
 	}
 
@@ -359,8 +358,8 @@ public class Zaranix extends NPC {
 	public String getSpellDescription() {
 		return "<p>"
 				+ UtilText.returnStringAtRandom(
-						"Letting out a booming roar, Zaranix thrusts his arm into the air and casts a spell!",
-						"Zaranix steps back, and with an angry shout, casts a spell!") 
+						"Издавая громоподобный рев, Зараникс вскидывает руку и произносит заклинание!",
+						"Зараникс отступает и с яростным криком творит заклинание!") 
 			+ "</p>";
 	}
 
@@ -372,7 +371,7 @@ public class Zaranix extends NPC {
 	@Override
 	public Response endCombat(boolean applyEffects, boolean victory) {
 		if (victory) {
-			return new Response("Victory", "You have defeated Zaranix!", ZaranixDialogue.AFTER_COMBAT_VICTORY) {
+			return new Response("Победа", "Вы победили Зараникса!", ZaranixDialogue.AFTER_COMBAT_VICTORY) {
 				@Override
 				public void effects() {
 					Main.game.getNpc(Arthur.class).setLocation(WorldType.LILAYAS_HOUSE_GROUND_FLOOR, PlaceType.LILAYA_HOME_LAB, false);
@@ -383,7 +382,7 @@ public class Zaranix extends NPC {
 				}
 			};
 		} else {
-			return new Response("Defeat", "You have been defeated...", ZaranixDialogue.AFTER_COMBAT_DEFEAT);
+			return new Response("Поражение", "Вы были повержены...", ZaranixDialogue.AFTER_COMBAT_DEFEAT);
 		}
 	}
 	

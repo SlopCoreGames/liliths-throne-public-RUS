@@ -131,7 +131,7 @@ public class DominionAlleywayAttacker extends NPC {
 			setName(Name.getRandomTriplet(this.getSubspecies()));
 			this.setPlayerKnowsName(false);
 			setDescription(UtilText.parse(this,
-					"[npc.Name] is a resident of Dominion, who, for reasons of [npc.her] own, prowls the back alleys in search of victims to prey upon."));
+					"[npc.Name] — жительница Dominion, которая по своим [npc.her] причинам рыщет по задворкам в поисках жертв, чтобы на них охотиться."));
 			
 			// PERSONALITY & BACKGROUND:
 			
@@ -236,25 +236,25 @@ public class DominionAlleywayAttacker extends NPC {
 		if(this.getHistory()==Occupation.NPC_PROSTITUTE) {
 			if(this.isSlave()) {
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of whoring [npc.herself] out in the back alleys of Dominion are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+						"[npc.NamePos] дней шлюшничества [npc.herself] в задворках Dominion подошли к концу. Навлекая на себя гнев закона, [npc.sheIs] теперь рабыня и не более чем собственность [npc.her] хозяина."));
 			} else if(this.getLocationPlace().getPlaceType().equals(PlaceType.ANGELS_KISS_BEDROOM)){
 				return (UtilText.parse(this,
-						"You first found [npc.name] in the alleyways of Dominion, where [npc.she] was illegally selling [npc.her] body. You offered [npc.herHim] the chance to move and work out of Angel's Kiss; an offer which [npc.she] happily accepted."));
+						"Впервые вы встретили [npc.name] в переулках Dominion, где [npc.she] незаконно торговала своим [npc.her] телом. Вы предложили [npc.herHim] переехать и работать за пределами Angel's Kiss — предложение, которое [npc.she] с радостью приняла."));
 			} else {
 				return (UtilText.parse(this,
-						"[npc.Name] is a prostitute who whores [npc.herself] out in the backalleys of Dominion."));
+						"[npc.Name] — проститутка, которая шлюшничает [npc.herself] в закоулках Dominion."));
 			}
 			
 		} else {
 			if(this.isSlave()) {
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of prowling the back alleys of Dominion and mugging innocent travellers are now over. Having run afoul of the law, [npc.sheIs] now a slave, and is no more than [npc.her] owner's property."));
+						"[npc.NamePos] дней рысканий по задворкам Dominion и ограблений невинных путников остались позади. Навлекая на себя гнев закона, [npc.sheIs] теперь раб и не более чем собственность [npc.her]."));
 			} else if(Main.game.getPlayer().getFriendlyOccupants().contains(this.getId())){
 				return (UtilText.parse(this,
-						"[npc.NamePos] days of prowling the back alleys of Dominion and mugging innocent travellers are now over. Having befriended [npc.herHim], you invited [npc.name] to move in with you and helped [npc.herHim] to start a new life."));
+						"[npc.NamePos] дней рысканий по задворкам Dominion и грабежей невинных путешественников остались позади. Подружившись с [npc.herHim], вы пригласили [npc.name] пожить с вами и помогли [npc.herHim] начать новую жизнь."));
 			} else {
 				return (UtilText.parse(this,
-						"[npc.Name] is a resident of Dominion, who prowls the back alleys in search of innocent travellers to prey upon."));
+						"[npc.Name] — жительница Dominion, которая рыщет по закоулкам в поисках невинных путников, чтобы на них охотиться."));
 			}
 		}
 	}

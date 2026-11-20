@@ -74,10 +74,8 @@ public class HarpyNympho extends NPC {
 	}
 	
 	public HarpyNympho(boolean isImported) {
-		super(isImported, new NameTriplet("Lexi"), "Holub",
-				"One of the more notable harpy matriarchs, Lexi is the leader of a flock of harpies."
-						+ " Either due to her obsession with sex, or perhaps because she's not as cruel as a typical harpy, Lexi is far more accepting of males than a typical matriarch."
-						+ " As a result, her flock serves as her personal harem; it's members constantly trying to sate their matriarch's never-ending lust.",
+		super(isImported, new NameTriplet("Лекси"), "Холб",
+				"Одна из самых заметных матриархов гарпий, Лекси возглавляет стаю. То ли из-за своей одержимости сексом, то ли потому, что она не так жестока, как типичная гарпия, Лекси гораздо терпимее к самцам, чем обычные матриархи. В результате её стая служит ей личным гаремом; её сородичи постоянно пытаются утолить её бесконечную Похоть.",
 				22, Month.APRIL, 13,
 				7, Gender.F_V_B_FEMALE, Subspecies.HARPY, RaceStage.LESSER,
 				new CharacterInventory(false, 30), WorldType.HARPY_NEST, PlaceType.HARPY_NESTS_HARPY_NEST_PINK, true);
@@ -333,10 +331,7 @@ public class HarpyNympho extends NPC {
 		// You really shouldn't be able to alter this character's fetishes...
 		if(user.isPlayer() && !target.isPlayer() && (item.getItemType().equals(ItemType.FETISH_UNREFINED) || item.getItemType().equals(ItemType.FETISH_REFINED))){
 			return new Value<>(false,
-					"<p>"
-						+ "You try to give [npc.name] your "+item.getName()+", but [npc.she] takes one look at it and sighs,"
-						+ " [npc.speechNoEffects(Mmm, yeah, that's not happening. I'm really not going to drink some random potion of yours!)]"
-					+ "</p>");
+					"<p>Вы пытаетесь дать [npc.name] свою "+item.getName()+", но [npc.she] лишь бросает на это взгляд и вздыхает, [npc.speechNoEffects(Ммм, ну да, этого не будет. Я точно не собираюсь пить какое-то твое случайное зелье!)]</p>");
 		}
 		
 		return super.getItemUseEffects(item, itemOwner, user, target);

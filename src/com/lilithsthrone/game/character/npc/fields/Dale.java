@@ -72,8 +72,8 @@ public class Dale extends NPC {
 	}
 	
 	public Dale(boolean isImported) {
-		super(isImported, new NameTriplet("Dale"), "Lane",
-				"Dale is the receptionist at Evelyx's Dairy.",
+		super(isImported, new NameTriplet("Дейл"), "Лейн",
+				"Дейл — администратор в молочной лавке Эвеликс.",
 				28, Month.JANUARY, 2,
 				15,
 				Gender.M_P_MALE, Subspecies.HORSE_MORPH_DONKEY, RaceStage.GREATER,
@@ -332,82 +332,50 @@ public class Dale extends NPC {
 			if(Main.game.getPlayer().hasHymen()) {
 				sb.append("<p>");
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-						sb.append("As [npc.name] slowly pushes [npc.her] [npc.cock+] into your [pc.pussy+], you can't help but let out a desperate, shuddering wail."
-									+ " Being so enamoured with the idea of being a pure virgin, you don't know what on Earth possessed you to offer him your virginity in a place like this,"
-										+ " but as [npc.namePos] [npc.cock+] claims your precious virginity, you don't have any time to reflect on your choice."
-									+ " The only thing that's on your mind is the agonising pain of having your hymen torn by the [npc.cockGirth] donkey-dick that's been pushed into your now-despoiled cunt.");
+						sb.append("Когда [npc.name] медленно вталкивает [npc.her] [npc.cock+] в твою [pc.pussy+], ты невольно издаешь отчаянный, дрожащий вопль. Будучи настолько очарованной идеей оставаться невинной девой, ты и сама не понимаешь, что нашло на тебя, раз ты решила отдать ему свою девственность в таком месте, но пока [npc.namePos] [npc.cock+] забирает твою драгоценную невинность, у тебя нет времени на раздумья о сделанном выборе. Единственное, о чем ты можешь думать, — это мучительная боль от того, что твоя девственная плева разрывается этим [npc.cockGirth] ослиным членом, втиснутым в твою теперь уже оскверненную киску.");
 					} else if(Main.game.getPlayer().hasFetish(Fetish.FETISH_MASOCHIST)) {
-						sb.append("As [npc.name] slowly pushes [npc.her] [npc.cock+] into your [pc.pussy+] to tear your hymen and claim your virginity, you can't help but let out a lewd, masochistic scream."
-								+ " The agonising pain of having your hymen torn by [npc.namePos] [npc.cockGirth] donkey-dick completely overwhelms you, and you can't help but squeal and moan in a delightful haze of overwhelming ecstasy.");
+						sb.append("Когда [npc.name] медленно вталкивает [npc.her] [npc.cock+] в твою [pc.pussy+], разрывая твою плеву и забирая девственность, ты невольно издаешь похотливый, мазохистский крик. Мучительная боль от того, что твою плеву разрывает [npc.namePos] [npc.cockGirth] ослиный член, полностью овладевает тобой, и ты не можешь удержаться от визгов и стонов в восхитительном тумане всепоглощающего экстаза.");
 					} else {
-						sb.append("As [npc.name] slowly pushes [npc.her] [npc.cock+] into your [pc.pussy+] to claim your virginity, you can't help but let out a desperate, shuddering wail."
-								+ " The agonising pain of having your hymen torn by [npc.namePos] [npc.cockGirth] donkey-dick completely overwhelms you, and you squirm about in discomfort as you try to endure this painful experience.");
+						sb.append("Когда [npc.name] медленно вталкивает [npc.her] [npc.cock+] в твою [pc.pussy+], чтобы забрать твою девственность, ты невольно издаешь отчаянный, дрожащий вопль. Мучительная боль от того, что твою плеву разрывает [npc.namePos] [npc.cockGirth] ослиный член, полностью овладевает тобой, и ты ерзаешь от дискомфорта, пытаясь вытерпеть этот болезненный опыт.");
 					}
 				sb.append("</p>");
 				
 			} else {
 				sb.append("<p>");
 					if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-						sb.append("As [npc.name] slowly pushes [npc.her] [npc.cock+] into your [pc.pussy+], you can't help but let out a desperate, shuddering wail."
-								+ " Being so enamoured with the idea of being a pure virgin, you don't know what on Earth possessed you to agree to this,"
-									+ " but as [npc.namePos] [npc.cock+] claims your precious virginity, you don't have any time to reflect on your choice."
-								+ " The only thing that's on your mind is the fact that you've being broken in by the [npc.cockGirth] donkey-dick that's been pushed into your now-despoiled cunt.");
+						sb.append("Когда [npc.name] медленно втискивает [npc.her] [npc.cock+] в твою [pc.pussy+], ты невольно издаешь отчаянный, дрожащий вопль. Будучи столь очарованной идеей оставаться невинной девой, ты и сама не понимаешь, что нашло на тебя, когда ты согласилась на это, но пока [npc.namePos] [npc.cock+] забирает твою драгоценную девственность, у тебя нет времени на раздумья о сделанном выборе. Единственное, о чем ты можешь думать, — это то, что тебя разминает [npc.cockGirth] ослиный член, вошедший в твою теперь уже оскверненную киску.");
 					} else {
-						sb.append("As [npc.namePos] [npc.cock+] is slowly pushed into your [pc.pussy+] to claim your virginity, you can't help but let out a desperately lewd [pc.moan]."
-								+ " [npc.NamePos] [npc.cockGirth] donkey-dick is giving you an intense pleasure unlike any you've felt before, and you can't help but continue to scream and [pc.moan] in a delightful haze of overwhelming ecstasy.");
+						sb.append("Пока [npc.namePos] медленно вгоняет [npc.cock+] в твою [pc.pussy+], чтобы забрать твою девственность, ты невольно издаешь отчаянно похотливый [pc.moan]. [npc.NamePos] [npc.cockGirth] ослиный член дарит тебе столь интенсивное наслаждение, какого ты никогда прежде не чувствовала, и ты не можешь перестать кричать и [pc.moan] в восхитительном тумане всепоглощающего экстаза.");
 					}
 				sb.append("</p>");
 			}
 			
-			sb.append("<p>"
-						+ "Upon hearing your ear-splitting wail, [npc.name] instantly stops thrusting forwards, and in a worried tone [npc.she] asks,"
-						+ " [npc.speechNoExtraEffects(Are you ok, [pc.name]? We can stop if this is too much for you...)]"
-					+ "</p>");
+			sb.append("<p>Услышав твой оглушительный вопль, [npc.name] мгновенно прекращает толчки и обеспокоенным тоном [npc.she] спрашивает: [npc.speechNoExtraEffects(Ты в порядке, [pc.name]? Мы можем остановиться, если для тебя это слишком...)]</p>");
 			
 			sb.append("<p>");
 				if(Main.game.getPlayer().hasFetish(Fetish.FETISH_PURE_VIRGIN)) {
-					sb.append("Although you can't help but shed a tear as you realise that you've lost your precious, pure virginity, you're comforted by the fact that [npc.name] seems to be genuinely concerned about you.");
+					sb.append("Хотя ты не можешь сдержать слезы, осознавая, что потеряла свою драгоценную, чистую девственность, тебя утешает тот факт, что [npc.name] кажется искренне обеспокоенным тобой.");
 				} else {
-					sb.append("Although you can't help but wince as a pang of pain shoots up from your cock-filled pussy, you're comforted by the fact that [npc.name] seems to be genuinely concerned about you.");
+					sb.append("Хотя ты невольно морщишься от резкой боли, пронзающей твою набитую членом киску, тебя утешает тот факт, что [npc.name], кажется, искренне за тебя беспокоится.");
 				}
-				sb.append(" After taking a moment to catch your breath, you realise that there's no going back from this, and so you pant, [pc.speechNoExtraEffects(I'm fine... You can keep going...)]");
+				sb.append(" Сделав небольшую паузу, чтобы перевести дух, ты понимаешь, что пути назад нет, и, тяжело дыша, произносишь: [pc.speechNoExtraEffects(Я в порядке... Можешь продолжать...)]");
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "[npc.speechNoExtraEffects(Ok, I'll take it real slow,)] [npc.name] responds, and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and slowly pushes [npc.her] huge donkey-cock into your cunt."
-						+ " As [npc.she] fills your freshly popped cherry with [npc.her] throbbing shaft, [npc.name] reassures you with a soft grunt,"
-						+ " [npc.speechNoExtraEffects(You're doing really well for your first time... You'll get into the swing of it in a moment...)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your pussy, the pain starts to fade away,"
-							+ " and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] flat, flared head pushing its way into your broken-in pussy as [npc.she] gently thrusts forwards once again..."
-					+ "</p>");
+			sb.append("<p>[npc.speechNoExtraEffects(Хорошо, тогда я буду очень осторожен,)] — отвечает [npc.name], и ты пытаешься подавить свои всхлипы, пока [npc.she] возобновляет то, на чем [npc.she] остановился, медленно втискивая свой огромный ослиный член [npc.her] в твою киску. Пока [npc.she] наполняет твою едва растерзанную девственность своим пульсирующим стволом [npc.her], [npc.name] подбадривает тебя мягким хрипом: [npc.speechNoExtraEffects(Для первого раза ты держишься просто отлично... Скоро ты войдешь во вкус...)]</p><p>И действительно, после того как [npc.nameHas] вытащил свой член [npc.her] из твоей киски, боль начинает утихать, и ты ловишь себя на том, что издаешь похотливый стон, сосредоточившись на ощущении того, как плоская, расширенная головка [npc.her] втискивается в твою размякшую киску, когда [npc.she] снова плавно толкается вперед...</p>");
 			
 		} else if(penetrated == SexAreaOrifice.ANUS) {
 			sb.append("<p>");
-				sb.append("As [npc.name] slowly pushes [npc.her] [npc.cock+] into your [pc.asshole+] to claim your virginity, you can't help but let out a desperate, shuddering wail."
-						+ " The uncomfortable sensation of having [npc.namePos] [npc.cockGirth] donkey-dick slowly forcing its way inside of you causes you to squirm about in discomfort.");
+				sb.append("Когда [npc.name] медленно втискивает [npc.her] [npc.cock+] в твою [pc.asshole+], чтобы забрать твою девственность, ты невольно издаешь отчаянный, дрожащий вопль. Неприятное ощущение от того, что [npc.namePos] [npc.cockGirth] ослиный член медленно пробивается внутрь тебя, заставляет тебя беспокойно ерзать.");
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "Upon hearing your distressed cry, [npc.name] instantly stops thrusting forwards, and in a worried tone [npc.she] asks,"
-						+ " [npc.speechNoExtraEffects(Are you ok, [pc.name]? We can stop if this is too much for you...)]"
-					+ "</p>");
+			sb.append("<p>Услышав твой страдальческий крик, [npc.name] мгновенно прекращает толчки и обеспокоенным тоном [npc.she] спрашивает: [npc.speechNoExtraEffects(Ты в порядке, [pc.name]? Мы можем остановиться, если для тебя это слишком...)]</p>");
 			
 			sb.append("<p>");
-				sb.append("Although you can't help but wince as a pang of pain shoots up from your cock-filled ass, you're comforted by the fact that [npc.name] seems to be genuinely concerned about you.");
-				sb.append(" After taking a moment to catch your breath, you realise that there's no going back from this, and so you pant, [pc.speechNoExtraEffects(I'm fine... You can keep going...)]");
+				sb.append("Хотя ты невольно морщишься от резкой боли, пронзающей твою набитую членом задницу, тебя утешает тот факт, что [npc.name] кажется искренне обеспокоенным тобой.");
+				sb.append(" Сделав небольшую паузу, чтобы перевести дух, ты понимаешь, что пути назад нет, и, тяжело дыша, произносишь: [pc.speechNoExtraEffects(Я в порядке... Можешь продолжать...)]");
 			sb.append("</p>");
 			
-			sb.append("<p>"
-						+ "[npc.speechNoExtraEffects(Ok, I'll take it real slow,)] [npc.name] responds, and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and slowly pushes [npc.her] huge donkey-cock into your back door."
-						+ " As [npc.she] fills your ass with [npc.her] throbbing shaft, [npc.name] reassures you with a soft grunt,"
-						+ " [npc.speechNoExtraEffects(You're doing really well for your first time... You'll get into the swing of it in a moment...)]"
-					+ "</p>"
-					+ "<p>"
-						+ "Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your asshole, the pain starts to fade away,"
-							+ " and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] flat, flared head pushing its way into your broken-in butt as [npc.she] gently thrusts forwards once again..."
-					+ "</p>");
+			sb.append("<p>[npc.speechNoExtraEffects(Ok, I'll take it real slow,)] [npc.name] responds, and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and slowly pushes [npc.her] huge donkey-cock into your back door. As [npc.she] fills your ass with [npc.her] throbbing shaft, [npc.name] reassures you with a soft grunt, [npc.speechNoExtraEffects(You're doing really well for your first time... You'll get into the swing of it in a moment...)]</p><p>Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your asshole, the pain starts to fade away, and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] flat, flared head pushing its way into your broken-in butt as [npc.she] gently thrusts forwards once again...</p>");
 		}
 		
 		return UtilText.parse(this,  sb.toString());
@@ -416,32 +384,10 @@ public class Dale extends NPC {
 	@Override
 	public String getSpecialPlayerPureVirginityLoss(GameCharacter penetratingCharacter, SexAreaPenetration penetrating) {
 		return "<p style='text-align:center;'>"
-					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Broken Virgin</b>"
-				+ "</p>"
-				+ "<p>"
-					+ "As [npc.name] once again begins to stuff your cunt with [npc.her] hot donkey-cock, the sudden realisation of what's just happened hits you like a sledgehammer."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+"[pc.thought(I-I've lost my virginity?!"
-					+ "<br/>Like... Like <b>this</b>?!)]"
-				+ "</p>"
-				+ "<p>"
-					+ "You don't know what's worse, losing the virginity that you prized so highly, or the fact that you're actually enjoying it."
-					+ " As your [pc.labia+] spread lewdly around the hot, thick [npc.cock] slowly sliding in and out of you, you start convincing yourself that this is all you're good for."
-				+ "</p>"
-				+ "<p style='text-align:center;'>"
-					+ "[pc.thought(If I'm not a virgin, that makes me a slut..."
-					+ "<br/>Just a slut to be fucked and pumped full of cum..."
-					+ "<br/>I wonder if all cocks are as good as [npc.namePos]...)]"
-				+ "</p>"
-				+ "<p>"
-					+ "You're vaguely aware of [npc.namePos] reassuring comments fading away as [npc.she] starts to focus [npc.her] attention on fucking you."
-					+ " With a desperate moan,"
+					+ "<b style='color:"+PresetColour.GENERIC_TERRIBLE.toWebHexString()+";'>Сломленная девственница</b></p><p>Когда [npc.name] снова начинает засовывать в твою киску горячий ослиный член [npc.her], внезапное осознание случившегося бьет тебя словно кувалдой.</p><p style='text-align:center;'>[pc.thought(Я... я лишилась девственности?!<br/>Вот так... Вот так, как <b>это</b>?!)]</p><p>Ты не знаешь, что хуже: потеря девственности, которой так дорожила, или тот факт, что тебе это на самом деле нравится. Пока твои [pc.labia+] похотливо раздвинуты вокруг горячего, толстого [npc.cock], который медленно входит и выходит из тебя, ты начинаешь убеждать себя, что только на это ты и годна.</p><p style='text-align:center;'>[pc.thought(Если я больше не девственница, значит, я шлюха...<br/>Просто шлюха, которую трахают и набивают спермой...<br/>Интересно, все члены такие же классные, как [npc.namePos]...)]</p><p>Ты смутно осознаешь, как подбадривающие комментарии [npc.namePos] затихают, когда [npc.she] начинает сосредотачивать [npc.her] внимание на траххе тебя. С отчаянным стоном,"
 					+ (Main.game.getPlayer().hasLegs()
-						?" you spread your legs and"
+						?" ты раздвигаешь ноги и"
 						:" you")
-					+ " resign yourself to the fact that you're now nothing more than a"
-					+ " <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>broken virgin</b>..."
-				+ "</p>";
+					+ " смиряешься с тем фактом, что теперь ты не более чем <b style='color:"+StatusEffect.FETISH_BROKEN_VIRGIN.getColour().toWebHexString()+";'>сломанная девственница</b>...</p>";
 	}
 }

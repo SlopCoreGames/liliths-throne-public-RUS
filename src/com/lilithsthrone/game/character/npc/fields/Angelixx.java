@@ -103,8 +103,8 @@ public class Angelixx extends NPC {
 	
 	public Angelixx(boolean isImported) {
 		super(isImported,
-				new NameTriplet("Angelixx"), "Loviennemartuilani",
-				"Although she appears as a young, innocent succubus, Angelixx is an extremely powerful and dangerous pawn of her mother, the elder lilin Lovienne.",
+				new NameTriplet("Ангеликс"), "Ловиеннемартуилани",
+				"Хотя она и кажется юной, невинной суккубом, Анжеликса — чрезвычайно могущественная и опасная пешка своей матери, старшей лилин Ловьенны.",
 				52, Month.MAY, 17,
 				30, Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.GREATER,
 				new CharacterInventory(false, 10),
@@ -421,7 +421,7 @@ public class Angelixx extends NPC {
 		gangMember.equipClothing();
 		gangMember.setLocation(Main.game.getPlayerCell(), true);
 		gangMember.removePersonalityTrait(PersonalityTrait.MUTE);
-		adjectivesUsed.add(Main.game.getCharacterUtils().setGenericName(gangMember, "gang member", adjectivesUsed));
+		adjectivesUsed.add(Main.game.getCharacterUtils().setGenericName(gangMember, "член банды", adjectivesUsed));
 		
 		gangMember.unequipAllWeaponsIntoVoid(true);
 	}
@@ -521,58 +521,20 @@ public class Angelixx extends NPC {
 	}
 	
 	private static List<String> diaryEntries = Util.newArrayListOfValues(
-		"A cat-girl pushed me out of the way today and called me a 'silly little girl'."
-			+ " Luckily my boys were nearby, and so I had them take her down an alley and double-team her."
-			+ " I ordered them to cum all over her and then asked her who the silly one was now."
-			+"<br/>(01/14)",
-		"This evening I got hit on again at the bar. He was a big, handsome zebra-boy, and I kind of have a weakness for all horse-morphs, so I let him take me back to his grotty little apartment and rail me hard on his bed."
-			+ " His fat fucking cock stretched me out so good, and after giving me a creampie he made me suck him off."
-			+ " Fuck, I'm getting horny thinking about it... I think I'll call a slave to come and pound me on the bed..."
-			+"<br/>(02/14)",
-		"Saellatrix wants me to increase the number of kidnappings, but insists that they be loners who won't have friends or family to report their disappearance."
-			+ " My gang's doing all they can, doesn't she know how hard it is?! At this rate I'll have to go back to seducing people in the alleyways, and that'll seriously eat into the time I get to spend with my boys..."
-			+"<br/>(03/14)",
-		"My good boys, Sleip and Nir, captured three refugees today! As a reward, I told them to come to my room at midnight, where I'd dressed up in their favourite lingerie and had a slave tie me to the bed."
-			+ " Fuck, they pounded me so hard for the rest of the night, I can barely walk this morning..."
-			+"<br/>(04/14)",
-		"As I was teleporting the refugees to Saellatrix's shop, one of them called me a stupid little bitch."
-			+ " Fuck, that pissed me off. I got my boys to double-penetrate her dirty little pussy while I carried on teleporting the others."
-			+ " By the time I'd finished, the bitch's cunt was a gaping, cum-filled mess. I promised her that this was just a taste of her new life, before teleporting her too..."
-			+"<br/>(05/14)",
-		"I went to the bank today, and the asshole in the lobby told me to go to the back of the queue. I told him who the fuck I am, and he realised his mistake."
-			+ " Too late! I got the stupid prick fired, and after making a potion that'd turn him into a big-titted, fertile horse-girl, I sent Sleip and Nir after him with instructions to leave 'her' as a naked, pregnant, cum-covered slut..."
-			+"<br/>(06/14)",
-		"That centaur who made me his cock-sleeve yesterday ended up getting me pregnant with triplets... Eugh..."
-			+ " Horse-morphs are one thing, but pushing out demonic centaurs is really fucking tiring."
-			+ " I'll get some Mother's Milk later and get it over and done with. It kind of ruins my whole look when I'm pregnant anyway..."
-			+"<br/>(07/14)",
-		"Mother sent Saellatrix to see me today. That bitch kept on telling me to increase the number of kidnappings."
-			+ " She was so dominant and direct in her behaviour that I couldn't help but get turned on, and when she grew herself a fat cock, I couldn't resist!"
-			+ " She pinned me down and fucked me raw while my boys just stood there and watched..."
-			+"<br/>(08/14)",
-		"Some of my gang members have disappeared... It's got to be the Enforcers who got them, or maybe it's a rival gang?"
-			+ " Fuck, I'm not cut out for some kind of gang war! I'll seduce one of the Enforcers tonight and see what I can learn."
-			+ " Perhaps that big, hunky horse-boy who I've seen doing patrols?"
-			+"<br/>(09/14)",
-		"Tonight I found that big, handsome horse-boy Enforcer I'd seen doing patrols. He was harder to seduce than I expected, and I had to fall back on telepathy to get him aroused."
-			+ " Oh well, I got what I wanted in the end. He didn't have any information on who was responsible for attacking my gang, but I did get his massive, fat cock balls-deep in my hot little pussy..."
-			+"<br/>(10/14)",
-		"I got mugged in the alleyway today! A couple of dog-boys demanded flames from me, and one of them had an Enforcer's pistol!"
-			+ " I know I could have beaten them, but I just couldn't move... After they took my flames, they said they'd give me their knots in exchange."
-			+ " Fuck, that got me wet, and so I let them rail me doggy-style right there on the floor..."
-			+"<br/>(11/14)",
-		"I saw that assistant of Minotallys's today in the Farmer's Market. Alicorns really do it for me, so I ambushed him by the kissing booth stall and seduced him."
-			+ " Sure, I had to use arcane arousal *and* telepathy, but I got him in the end. We found a quiet spot behind a nearby building, where he insisted on starting by eating me out."
-			+ " He actually managed to get me to orgasm with just his tongue, and then a dozen or so more times when his fat horse-cock was balls-deep in my sloppy cunt..."
-			+"<br/>(12/14)",
-		"Mother called me back to Dominion today to see her, and I decided to take a carriage instead of teleporting."
-			+ " The big, hunky centaur who was pulling it was called 'Vronti', and I tried everything to get him to stop and fuck me raw with his massive horse-cock."
-			+ " I could barely get a word out of him, though. Fuck! I had a centaur rail me just now and I was thinking of Vronti the whole time..."
-			+"<br/>(13/14)",
-		"Nir recruited a new member into the gang today. I don't normally pay much attention to new recruits, but this one's a big, dumb brute of a donkey-boy."
-			+ " I wanted him so badly that I let him pull me into that filthy bathroom at our HQ and fuck me hard up against the wall."
-			+ " His fat cock felt as good as I'd hoped, but the dumb, horny idiot tore my favourite pair of panties in two in his haste to get to my pussy..."
-			+"<br/>(14/14)"
+		"Сегодня какая-то кошкодевочка оттолкнула меня с дороги и назвала «глупенькой девчонкой». К счастью, мои мальчики были неподалеку, так что я велела им затащить её в переулок и взять вдвоем. Я приказала им кончить на неё всю, а потом спросила, кто теперь из нас глупенькая.<br/>(01/14)",
+		"Сегодня вечером в баре меня снова пытались подцепить. Это был крупный, красавчик зебра-бой, а у меня, знаете ли, слабость ко всем конь-морфам, так что я позволила ему утащить меня в его вонючую каморку и жестко оттрахать прямо на кровати. Его жирный гребаный член так сладко меня растянул, а после того как он залил меня спермой, он заставил меня отсосать. Блядь, у меня уже встает от одних мыслей об этом... Наверное, позову раба, чтобы он пришел и отлупил меня на кровати...<br/>(02/14)",
+		"Саэллатрикс хочет, чтобы я увеличила число похищений, но настаивает, чтобы это были одиночки, у которых нет друзей или семьи, которые могли бы заявить об их исчезновении. Моя банда делает всё возможное, неужели она не знает, как это трудно?! При таком раскладе мне придется вернуться к соблазнению людей в подворотнях, а это серьезно отнимет время, которое я провожу со своими мальчиками...<br/>(03/14)",
+		"Мои хорошие мальчики, Слейп и Нир, сегодня поймали троих беженцев! В награду я велела им прийти ко мне в комнату в полночь, где я надела их любимое белье, а раб привязал меня к кровати. Блядь, они так жарили меня до самого утра, что сегодня утром я едва могу ходить...<br/>(04/14)",
+		"Когда я телепортировала беженцев в лавку Саэллатрикс, одна из них назвала меня тупой маленькой сучкой. Блядь, это меня так взбесило! Пока я телепортировала остальных, я велела своим мальчикам устроить ей двойное проникновение в её грязную киску. К тому времени, как я закончила, щель этой сучки превратилась в зияющее, залитое спермой месиво. Прежде чем телепортировать и её, я пообещала, что это лишь дегустация её новой жизни...<br/>(05/14)",
+		"Сегодня я ходила в банк, и какой-то мудак в холле велел мне встать в конец очереди. Я сказала ему, кто он, блядь, такой, и он осознал свою ошибку. Слишком поздно! Я добила этого тупого придурка увольнением, а после того как сварила зелье, превращающее его в здоровую, плодовитую кобылку с огромными сиськами, я отправила за ним Слейпа и Нира с приказом оставить «её» голой, беременной и перепачканной в сперме шлюхой...<br/>(06/14)",
+		"Тот кентавр, который вчера использовал меня как чехол для своего члена, в итоге умудрился забеременеть меня тройней... Фу... Одни конь-морфы — это полбеды, но вынашивать демонических кентавров — это реально чертовски утомительно. Позже возьму немного материнского молока и покончу с этим. В любом случае, беременность немного портит мой вид...<br/>(07/14)",
+		"Сегодня Мать прислала Саэллатрикс навестить меня. Эта сучка всё твердила, чтобы я увеличила число похищений. Она вела себя настолько властно и прямолинейно, что я не могла не возбудиться, а когда она отрастила себе жирный член, я просто не смогла устоять! Она прижала меня к земле и трахала во всю мощь, пока мои парни просто стояли и смотрели...<br/>(08/14)",
+		"Некоторые члены моей банды исчезли... Должно быть, это Enforcer их схватили, или, может, это вражеская банда? Блядь, я явно не создана для бандитских войн! Сегодня ночью я соблазню одного из Enforcer и посмотрю, что смогу разузнать. Может, того здоровяка-красавчика, конь-морфа, которого я видела во время патрулирования?<br/>(09/14)",
+		"Сегодня ночью я нашла того самого крупного, красавца-Enforcer, которого видела на патруле. Соблазнить его оказалось сложнее, чем я ожидала, и мне пришлось прибегнуть к телепатии, чтобы раззадорить его. Ну да ладно, в итоге я получила то, что хотела. У него не оказалось никакой информации о том, кто напал на мою банду, зато его массивный, жирный член зашел в мою горячую киску по самые яйца...<br/>(10/14)",
+		"Сегодня меня ограбили в переулке! Пара псов-мальчишек потребовала у меня огни, и у одного из них был пистолет Enforcer! Знаю, я могла бы надрать им задницы, но просто не могла пошевелиться... После того как они забрали мои огни, они сказали, что отдадут мне свои узлы взамен. Блядь, у меня аж всё промокло, так что я позволила им трахать меня в позе собаки прямо там, на полу...<br/>(11/14)",
+		"Видела сегодня того помощника Миноталлиса на фермерском рынке. Единороги — это прямо по моей части, так что я подкараулила его у киоска с поцелуями и соблазнила. Конечно, пришлось использовать арканное возбуждение *и* телепатию, но в итоге я его взяла. Мы нашли укромное местечко за соседним зданием, где он настоял на том, чтобы начать с минета... точнее, с кунилингуса. Ему реально удалось довести меня до оргазма одним только языком, а потом еще раз дюжину раз, когда его жирный конский член был забит в мою сочащуюся щелку по самые яйца...<br/>(12/14)",
+		"Мама позвала меня сегодня обратно в Dominion, и я решила поехать на карете вместо телепортации. Огромного, мускулистого кентавра, который её вез, звали Вронти, и я перепробовала всё, чтобы он остановился и трахнул меня без смазки своим массивным конским членом. Но из него было почти не вытянуть ни слова. Блядь! Кентавр только что оттрахал меня, а я всё это время думала о Вронти...<br/>(13/14)",
+		"Сегодня Нир приняла в банду нового члена. Обычно я не особо обращаю внимание на новичков, но этот — просто огромный, тупой осел. Он так меня завел, что я позволила ему затащить себя в ту грязную уборную в нашей штаб-квартире и жестко оттрахать прямо у стены. Его толстый член ощущался именно так хорошо, как я и надеялась, но этот тупой, похотливый идиот в спешке добраться до моей киски разорвал в клочья мои любимые трусики...<br/>(14/14)"
 		);
 
 	private static Set<Integer> viewedDiaryIndexes = new HashSet<>();

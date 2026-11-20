@@ -68,9 +68,8 @@ public class Angel extends NPC {
 	}
 	
 	public Angel(boolean isImported) {
-		super(isImported, new NameTriplet("Angel"), "Cox",
-				"Angel is the owner of the brothel 'Angel's Kiss', located in Dominion's red-light district."
-						+ " A beautiful, blonde-haired human, Angel acts in a friendly and professional manner at all times.",
+		super(isImported, new NameTriplet("Ангел"), "Кокс",
+				"Angel — владелица борделя «Поцелуй Ангела», расположенного в квартале красных фонарей в Dominion. Красивая блондинка-человек, Angel всегда ведет себя дружелюбно и профессионально.",
 				34, Month.JANUARY, 4,
 				10, Gender.F_V_B_FEMALE, Subspecies.HUMAN, RaceStage.HUMAN,
 				new CharacterInventory(false, 30), WorldType.ANGELS_KISS_GROUND_FLOOR, PlaceType.ANGELS_KISS_OFFICE, true);
@@ -229,7 +228,7 @@ public class Angel extends NPC {
 		
 		this.addTattoo(InventorySlot.TORSO_UNDER,
 				new Tattoo("innoxia_symbol_tribal", PresetColour.COVERING_BLACK, PresetColour.COVERING_BLACK, PresetColour.COVERING_BLACK, false,
-						new TattooWriting("I'm all yours", PresetColour.COVERING_BLACK, false, TattooWritingStyle.ITALICISED), null));
+						new TattooWriting("Я вся твоя", PresetColour.COVERING_BLACK, false, TattooWritingStyle.ITALICISED), null));
 		
 		// No scars
 

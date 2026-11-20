@@ -98,9 +98,8 @@ public class Natalya extends NPC {
 	}
 	
 	public Natalya(boolean isImported) {
-		super(isImported, new NameTriplet("Natalya"), "Lunettemartu",
-				"Holding the prestigious title of 'Stable Mistress' at the delivery company, 'Dominion Express', Natalya is responsible for the training and care of over fifty centaur slaves."
-					+ " While she tries her best to remain calm and professional at all times, her lustful demonic urges sometimes get the better of her...",
+		super(isImported, new NameTriplet("Наталья"), "Лунеттемарту",
+				"Занимая престижный пост «Хозяйки конюшен» в курьерской компании «Dominion Express», Наталья отвечает за обучение и уход более чем за пятьюдесятью рабынями-кентаврами. Хотя она изо всех сил старается сохранять спокойствие и профессионализм, её похотливые демонические порывы порой берут верх...",
 				84, Month.OCTOBER, 12,
 				15,
 				null, null, null,
@@ -110,7 +109,7 @@ public class Natalya extends NPC {
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("strict succutaur");
+			this.setGenericName("строгая суккутавр");
 		}
 	}
 
@@ -321,7 +320,7 @@ public class Natalya extends NPC {
 		if(this.isPlayerKnowsName()) {
 			return super.getDescription();
 		}
-		return UtilText.parse(this, "This smartly dressed succutaur has an air of superiorty about her...");
+		return UtilText.parse(this, "Эта элегантно одетая суккутавр излучает ауру превосходства...");
 	}
 	
 	@Override
@@ -331,7 +330,7 @@ public class Natalya extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Natalya";
+		return "Наталья";
 	}
 	
 	@Override
@@ -390,8 +389,7 @@ public class Natalya extends NPC {
 			String itemName = item.getName();
 			return new Value<>(false,
 					UtilText.parse(user, target,
-						"[npc.Name] [npc.verb(take)] out "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" from [npc.her] inventory and [npc.verb(try)] to give it to [npc2.name],"
-							+ " but [npc2.she] dismisses it with an angry shout, [npc2.speech(Put that away, you stupid slut!)]"));
+						"[npc.Name] [npc.verb(take)] наружу "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" из [npc.her] инвентаря и [npc.verb(try)], чтобы отдать это [npc2.name], но [npc2.she] отмахивается с сердитым криком: [npc2.speech(Убери это, тупая шлюха!)]"));
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
 	}
@@ -406,13 +404,10 @@ public class Natalya extends NPC {
 			}
 			if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 				return UtilText.parse(equipper, target,
-						"You direct your spinneret at [npc2.namePos] [npc2.cock], with the intention of weaving a silky web condom around it, but as she sees what it is you're about to do, Natalya angrily slaps it away and shouts,"
-						+ " [natalya.speech(How dare you! Keep that filthy little web-spinner to yourself!)]");
+						"Вы направляете свой паучий аппарат на [npc2.namePos] [npc2.cock], намереваясь сплести вокруг него шелковый кокон-презерватив, но, увидев, что вы задумали, Наталья гневно отмахивается и кричит: [natalya.speech(Как ты смеешь! Прибереги свою грязную паутинку для себя!)]");
 			}
 			return UtilText.parse(equipper, target,
-					"Not wanting [npc2.name] to cum on or inside of you, you pull out a condom and quickly extract it from its foil packaging."
-						+ " Seeing what it is you're doing, Natalya lets out a furious shout, before snatching the condom out of your [pc.hands] and [style.colourBad(tearing it in half)]."
-						+ " Glaring at you, she snaps, [kate.speech(You disrespectful slut! You'll take "+(target instanceof Natalya?"my":"[npc2.namePos]")+" cum and you'll love it!)]");
+					"Не желая, чтобы [npc2.name] кончил на тебя или внутрь тебя, ты достаешь презерватив и быстро вынимаешь его из фольги. Увидев, что ты делаешь, Наталья издает яростный крик, прежде чем выхватить презерватив из твоих [pc.hands] и [style.colourBad(разорвать его пополам)]. Глядя на тебя исподлобья, она огрызается: [kate.speech(Ты, неблагодарная шлюха! Ты примешь "+(target instanceof Natalya?"мою":"[npc2.namePos]")+" сперму, и тебе это понравится!)]");
 		}
 		return null;
 	}
@@ -421,7 +416,7 @@ public class Natalya extends NPC {
 		AbstractClothing dildo = Main.game.getItemGen().generateClothing("innoxia_anus_ribbed_dildo", PresetColour.CLOTHING_BLACK, false);
 		
 		dildo.addEffect(new ItemEffect(ItemEffectType.CLOTHING, TFModifier.CLOTHING_SEXUAL, TFModifier.CLOTHING_VIBRATION, TFPotency.MAJOR_BOOST, 0));
-		dildo.setName("Natalya's "+UtilText.applyVibration("vibrating", dildo.getRarity().getColour())+" dildo");
+		dildo.setName("Наталья's "+UtilText.applyVibration("vibrating", dildo.getRarity().getColour())+" dildo");
 		
 		this.equipClothingFromNowhere(dildo, true, this);
 	}
@@ -539,11 +534,11 @@ public class Natalya extends NPC {
 			
 			sb.append("<p>");
 				sb.append(UtilText.parse(characterBeingRevealed, characterReacting,
-						"[npc2.Name] [npc2.verb(sneer)] when [npc2.she] [npc2.verb(see)] "
+						"[npc2.Name] [npc2.verb(sneer)], когда [npc2.she] [npc2.verb(see)] "
 								+ (Main.sex.hasLubricationTypeFromAnyone(characterBeingRevealed, SexAreaOrifice.VAGINA, LubricationType.GIRLCUM)
-										? "[npc.namePos] wet [npc.pussy] betraying [npc.her] arousal, and in a tone of absolute disgust, [npc2.she] snaps, "
-										: "[npc.namePos] [npc.pussy+], and in a tone of absolute disgust, [npc2.she] snaps, ")
-								+ "[npc2.speech(How repulsive! I <i>hate</i> seeing dirty little fuck-holes! I'll have that removed later...)]"));
+										? "[npc.namePos] влажная [npc.pussy] выдает [npc.her] возбуждение, и тоном, полным абсолютного отвращения, [npc2.she] резко бросает, "
+										: "[npc.namePos] [npc.pussy+], и тоном, полным абсолютного отвращения, [npc2.she] резко бросает, ")
+								+ "[npc2.speech(Как отвратительно! Просто <i>ненавижу</i> видеть эти грязные маленькие дырки! Потом заставлю это убрать...)]"));
 			sb.append("</p>");
 			
 			return sb.toString();

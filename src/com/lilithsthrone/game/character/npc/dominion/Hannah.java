@@ -72,8 +72,8 @@ public class Hannah extends NPC {
 	}
 	
 	public Hannah(boolean isImported) {
-		super(isImported, new NameTriplet("Hannah"), "Wilkinson",
-				"Hannah works at the gym, 'Pix's Playground' as a boxing instructor.",
+		super(isImported, new NameTriplet("Ханна"), "Уилкинсон",
+				"Ханна работает инструктором по боксу в спортзале «Игровая площадка Пикс».",
 				31, Month.AUGUST, 22,
 				40,
 				Gender.F_V_B_FEMALE, Subspecies.getSubspeciesFromId("innoxia_hyena_subspecies_spotted"), RaceStage.GREATER,
@@ -253,7 +253,7 @@ public class Hannah extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("dsg_ljacket_ljacket_f", PresetColour.CLOTHING_BLACK, false), true, this);
 		this.isAbleToBeDisplaced(this.getClothingInSlot(InventorySlot.TORSO_OVER), DisplacementType.UNZIPS, true, true, this);
 		
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_crop_tank_top", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_кроп-топ", PresetColour.CLOTHING_PURPLE_VERY_DARK, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_sock_socks", PresetColour.CLOTHING_WHITE, false), true, this);
 
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_leg_distressed_jeans", PresetColour.CLOTHING_BLUE_NAVY, PresetColour.CLOTHING_GREY, PresetColour.CLOTHING_BRASS, false), true, this);
@@ -274,9 +274,9 @@ public class Hannah extends NPC {
 	public String getArtworkFolderName() {
 
 		if(this.getWorldLocation()==WorldType.getWorldTypeFromId("innoxia_dominion_shopping_arcade_gym")) {
-			return "Hannah";
+			return "Ханна";
 		} else {
-			return "HannahCasual";
+			return "ХаннаПовседневная";
 		}
 		
 //		if(this.getWorldLocation()==WorldType.getWorldTypeFromId("innoxia_dominion_shopping_arcade_gym")) {

@@ -66,8 +66,8 @@ public class Kay extends NPC {
 	}
 	
 	public Kay(boolean isImported) {
-		super(isImported, new NameTriplet("Jack", "Jack", "Jackie"), "Kay",
-				"Jack Kay, who prefers to always be referred to by his surname, is the owner of Kay's Textiles; a business which produces enchanted clothing for wholesale.",
+		super(isImported, new NameTriplet("Джек", "Джек", "Джеки"), "Кей",
+				"Джек Кей, который предпочитает, чтобы его всегда называли по фамилии, является владельцем компании «Текстиль Кей» — предприятия, производящего зачарованную одежду оптом.",
 				24, Month.MAY, 11,
 				10,
 				Gender.M_P_MALE, Subspecies.CAT_MORPH, RaceStage.PARTIAL,
@@ -284,9 +284,9 @@ public class Kay extends NPC {
 	@Override
 	public String getArtworkFolderName() {
 		if(this.isFeminine()) {
-			return "KayFeminine";
+			return "Кей (жен.)";
 		}
-		return "Kay";
+		return "Кей";
 	}
 	
 	@Override

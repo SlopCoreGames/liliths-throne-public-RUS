@@ -74,7 +74,7 @@ public class Wes extends NPC {
 	}
 	
 	public Wes(boolean isImported) {
-		super(isImported, new NameTriplet("Wesley"), "Wormwood",
+		super(isImported, new NameTriplet("Уэсли"), "Вормвуд",
 				"",
 				38, Month.MARCH, 28,
 				20,
@@ -85,7 +85,7 @@ public class Wes extends NPC {
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
-			this.setGenericName("mysterious Enforcer");
+			this.setGenericName("таинственный Enforcer");
 		}
 	}
 	
@@ -271,25 +271,25 @@ public class Wes extends NPC {
 	@Override
 	public String getArtworkFolderName() {
 		if(isSlave()) {
-			return "WesSlave";
+			return "Раб_Уэсли";
 		} else {
-			return "Wes";
+			return "Вес";
 		}
 	}
 	
 	@Override
 	public String getDescription() {
 		if(Main.game.getPlayer().isQuestProgressLessThan(QuestLine.SIDE_WES, Quest.WES_1)) {
-			return "This mysterious fox-boy approached you regarding some matter which couldn't be discussed in public.";
+			return "Этот таинственный лис-мальчишка подошел к вам по какому-то делу, которое нельзя было обсуждать на людях.";
 			
 		} else if(this.isSlave()) {
-			return "Wes was once the Junior Quartermaster for all of the Enforcers in Central Dominion. Thanks to you, he is now a plaything of his former commanding officer, Elle.";
+			return "Когда-то Уэс был младшим квартирмейстером у всех Enforcer в Центральном Dominion. Благодаря вам, теперь он — лишь игрушка своего бывшего командира, Элль.";
 			
 		} else if(Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_WES)) {
-			return "With your help, Wes is now the Senior Quartermaster for all of the Enforcers in Central Dominion. Although he seems to enjoy his promotion, owning Elle has nonetheless left him a bit frazzled.";
+			return "С вашей помощью Уэс стал старшим квартирмейстером у всех Enforcer в Центральном Dominion. Хотя, кажется, он наслаждается своим повышением, владение Элль всё же оставило его немного взвинченным.";
 			
 		} else {
-			return "Wes is the Junior Quartermaster for all of the Enforcers in Central Dominion. He lacks the usual shiftiness foxes are stereotyped for and instead projects a sort of folksy naiveté.";
+			return "Уэс — младший квартирмейстер у всех Enforcer в Центральном Dominion. Ему не хватает привычной хитрости, которой обычно славятся лисы; вместо этого он излучает своего рода простодушную наивность.";
 		}
 	}
 	

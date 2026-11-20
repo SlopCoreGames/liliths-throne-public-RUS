@@ -64,8 +64,8 @@ public class Callie extends NPC {
 	}
 	
 	public Callie(boolean isImported) {
-		super(isImported, new NameTriplet("Callie"), "Dulce",
-				"Callie is the owner of the bakery, 'The Creamy Bakey', which is to be found in the north-west of Dominion.",
+		super(isImported, new NameTriplet("Кэлли"), "Дульсе",
+				"Callie — владелица пекарни «The Creamy Bakey», расположенной на северо-западе Dominion.",
 				26, Month.JUNE, 11,
 				10, Gender.F_P_B_SHEMALE, Subspecies.HORSE_MORPH, RaceStage.PARTIAL_FULL,
 				new CharacterInventory(false, 250),

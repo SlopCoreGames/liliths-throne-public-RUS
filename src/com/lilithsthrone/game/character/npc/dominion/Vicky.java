@@ -178,8 +178,8 @@ public class Vicky extends NPC {
 	}
 	
 	public Vicky(boolean isImported) {
-		super(isImported, new NameTriplet("Vicky"), "Haugen",
-				"Vicky is the owner of the shop 'Arcane Arts'. Her manner of staring at anyone who enters her shop is quite unsettling, and you feel as though she's ready to pounce on you at any moment...",
+		super(isImported, new NameTriplet("Vicky"), "Хауген",
+				"Vicky — владелица лавки «Arcane Arts». То, как она уставится на каждого входящего, способно выбить из колеи; кажется, будто она готова наброситься на тебя в любой момент...",
 				37, Month.MAY, 26,
 				10, Gender.F_P_V_B_FUTANARI,
 				Subspecies.WOLF_MORPH, RaceStage.GREATER, new CharacterInventory(false, 10), WorldType.SHOPPING_ARCADE, PlaceType.SHOPPING_ARCADE_VICKYS_SHOP, true);
@@ -653,14 +653,8 @@ public class Vicky extends NPC {
 
 	@Override
 	public String getTraderDescription() {
-		return "<p>"
-					+ "You walk up to the counter, trying to ignore Vicky's piercing gaze and wolfish grin."
-					+ " As you start to ask her about what sort of things she has in stock, she suddenly crouches down slightly, and you brace yourself as you half-expect her to leap over the counter and attack."
-					+ " Instead, thankfully, she bends down and retrieves a few items, placing them before you on the countertop."
-				+ "</p>"
-				+ "<p>"
-					+ UtilText.parseSpeech("This is what I've got today... I might have some new stuff tomorrow... You interested?", this) + " she asks, never taking her eyes off of you for a second."
-				+ "</p>";
+		return "<p>Ты подходишь к прилавку, стараясь не замечать пронзительный взгляд Vicky и её волчью ухмылку. Как только ты собираешься спросить, что у неё есть в наличии, она внезапно слегка приседает; ты невольно напрягаешься, ожидая, что она вот-вот перемахнет через прилавок и атакует. Но, к счастью, она лишь наклоняется, достает несколько предметов и выкладывает их перед тобой на столешницу.</p><p>"
+					+ UtilText.parseSpeech("Вот это у меня есть на сегодня... Завтра может появиться что-нибудь новенькое... Тебя интересует?", this) + " спрашивает она, ни на секунду не сводя с тебя глаз.</p>";
 	}
 
 	@Override

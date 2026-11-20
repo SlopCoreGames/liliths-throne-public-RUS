@@ -78,9 +78,8 @@ public class Vanessa extends NPC {
 	}
 	
 	public Vanessa(boolean isImported) {
-		super(isImported, new NameTriplet("Vanessa"), "Cunningham",
-				"Ms. Cunningham, as she prefers to be called, is the sole person responsible for all of the affairs of Dominion's 'Bureau of Demographics'."
-						+ " Although getting on years, she's aged remarkably well, and has a refined, elegant beauty about her.",
+		super(isImported, new NameTriplet("Vanessa"), "Каннингем",
+				"Мисс Каннингем — как она предпочитает, чтобы её называли — единственная, кто отвечает за все дела «Бюро демографии» Dominion. Несмотря на почтенный возраст, она прекрасно сохранилась; в её облике чувствуется утонченная, элегантная красота.",
 				55, Month.SEPTEMBER, 26,
 				10, Gender.F_V_B_FEMALE, Subspecies.FOX_MORPH, RaceStage.PARTIAL,
 				new CharacterInventory(false, 10), WorldType.CITY_HALL, PlaceType.CITY_HALL_ARCHIVES, true);
@@ -289,7 +288,7 @@ public class Vanessa extends NPC {
 	
 	@Override
 	public String getGenericName() {
-		return "Ms. Cunningham";
+		return "Мисс Каннингем";
 	}
 	
 	@Override
@@ -354,14 +353,7 @@ public class Vanessa extends NPC {
 			if(item.isTypeOneOf("innoxia_pills_fertility", "innoxia_pills_broodmother")) {
 				String useDesc = itemOwner.useItem(item, target, false, true);
 				return new Value<>(true,
-						"<p>"
-							+ "Producing a "+item.getName(false, false)+" from your inventory, you pop it out of its plastic wrapper before offering it to [vanessa.name]."
-							+ " Flashing you a knowing look, the mature fox-girl takes the little "+item.getColour(0).getName()+" pill, before teasing, [vanessa.speechNoEffects(~Mmm!~ You really want to knock me up that badly, huh?)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Before you can reply, [vanessa.name] pops the pill into her mouth and swallows it down."
-							+ " Playfully biting her lip, she breathlessly moans, [vanessa.speechNoEffects(Come on then... Make me a mommy...)]"
-						+ "</p>"
+						"<p>Доставая "+item.getName(false, false)+" из своего инвентаря, вы достаете её из пластиковой упаковки и протягиваете [vanessa.name]. Бросив на вас многозначительный взгляд, зрелая лисица берет маленькую "+item.getColour(0).getName()+" таблетку, а затем дразнит вас: [vanessa.speechNoEffects(~Ммм!~ Ты и правда так сильно хочешь меня обрюхатить, а?)]</p><p>Прежде чем вы успеваете ответить, [vanessa.name] закидывает таблетку в рот и проглатывает её. Игриво прикусив губу, она прерывисто стонет: [vanessa.speechNoEffects(Ну же... Сделай из меня мамочку...)]</p>"
 						+ useDesc);
 			}
 		}

@@ -65,12 +65,8 @@ public class Arthur extends NPC {
 	}
 	
 	public Arthur(boolean isImported) {
-		super(isImported, new NameTriplet("Arthur"), "Fairbanks",
-				"With messy brown hair, pale skin, and a thin frame, the Arthur of this world looks exactly the same as the one you've always known."
-						+ " Just as he was in your world, this Arthur used to be a colleague of Lilaya's, before Lilaya kicked him out."
-						+ "<br/>"
-						+ "Arthur is recognised as one of, if not the best arcane researcher in all of Dominion."
-						+ " Despite this, however, he's unable to harness the arcane himself.",
+		super(isImported, new NameTriplet("Arthur"), "Фэрбанкс",
+				"С растрепанными каштановыми волосами, бледной кожей и худощавым телосложением, Arthur этого мира выглядит точно так же, как тот, которого вы всегда знали. Как и в вашем мире, этот Arthur когда-то был коллегой Lilaya, пока та не вышвырнула его.<br/>Arthur признан одним из лучших, если не лучшим исследователем Арканы во всем Dominion. Несмотря на это, он сам не способен управлять Арканой.",
 				41, Month.DECEMBER, 9,
 				10,
 				Gender.M_P_MALE,
@@ -81,11 +77,7 @@ public class Arthur extends NPC {
 	
 	@Override
 	public String getDescription() {
-		return "With messy brown hair, pale skin, and a thin frame, the Arthur of this world looks exactly the same as the one you've always known."
-				+ " Just as he was in your world, this Arthur used to be a colleague of Lilaya's, before Lilaya kicked him out."
-				+ "<br/>"
-				+ "Arthur is recognised as one of, if not the best arcane researcher in all of Dominion."
-				+ " Despite this, however, he's unable to harness the arcane himself.";
+		return "С растрепанными каштановыми волосами, бледной кожей и худощавым телосложением, Arthur этого мира выглядит точно так же, как тот, которого вы всегда знали. Как и в вашем мире, этот Arthur когда-то был коллегой Lilaya, пока та не вышвырнула его.<br/>Arthur признан одним из лучших, если не лучшим исследователем Арканы во всем Dominion. Несмотря на это, он сам не способен управлять Арканой.";
 	}
 	
 	@Override
@@ -98,7 +90,7 @@ public class Arthur extends NPC {
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.2.12")) {
 			equipClothing(EquipClothingSetting.getAllClothingSettings());
 		}
-		this.setSurname("Fairbanks");
+		this.setSurname("Фэрбанкс");
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.3.6")) {
 			this.resetPerksMap(true);
 		}

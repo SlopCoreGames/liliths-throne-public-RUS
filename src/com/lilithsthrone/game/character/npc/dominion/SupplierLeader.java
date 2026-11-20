@@ -64,8 +64,8 @@ public class SupplierLeader extends NPC {
 	}
 	
 	public SupplierLeader(boolean isImported) {
-		super(isImported, new NameTriplet("Wolfgang", "Wolfgang", "Winifred"), "Meyer",
-				"Wolfgang is the senior partner of the dobermann bounty-hunter duo which you first met at Kay's Textiles.",
+		super(isImported, new NameTriplet("Вольфганг", "Вольфганг", "Винифред"), "Мейер",
+				"Вольфганг — старший напарник дуэта доберманов-охотников за головами, с которыми вы впервые встретились в «Текстиле Кей».",
 				30, Month.DECEMBER, 4,
 				12,
 				null, null, null,
@@ -99,7 +99,7 @@ public class SupplierLeader extends NPC {
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.14")) {
 			this.setStartingBody(true);
 		}
-		this.setDescription("Wolfgang is the senior partner of the dobermann bounty-hunter duo which you first met at Kay's Textiles.");
+		this.setDescription("Вольфганг — старший напарник дуэта доберманов-охотников за головами, с которыми вы впервые встретились в «Текстиле Кей».");
 	}
 
 	@Override

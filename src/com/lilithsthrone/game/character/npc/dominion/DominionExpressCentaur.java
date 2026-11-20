@@ -80,9 +80,9 @@ public class DominionExpressCentaur extends NPC {
 
 			List<String> names;
 			if(this.isFeminine()) {
-				names = Util.newArrayListOfValues("horny centauress", "lustful centauress", "desperate centauress");
+				names = Util.newArrayListOfValues("возбужденная кентаврисса", "похотливая кентаврисса", "отчаявшаяся кентаврисса");
 			} else {
-				names = Util.newArrayListOfValues("horny centaur", "lustful centaur", "desperate centaur");
+				names = Util.newArrayListOfValues("возбужденный кентавр", "похотливый кентавр", "отчаявшийся кентавр");
 			}
 			this.setGenericName(Util.randomItemFrom(names));
 			setName(Name.getRandomTriplet(this.getSubspecies()));
@@ -198,7 +198,7 @@ public class DominionExpressCentaur extends NPC {
 	
 	@Override
 	public String getDescription() {
-		return UtilText.parse(this, "[npc.Name] is a slave at Dominion Express, and works hard every day to transport goods all over the city.");
+		return UtilText.parse(this, "[npc.Name] — рабыня в Dominion Express, которая каждый день усердно трудится, перевозя товары по всему городу.");
 	}
 	
 	@Override
@@ -276,8 +276,7 @@ public class DominionExpressCentaur extends NPC {
 				String itemName = item.getName();
 				return new Value<>(false,
 						UtilText.parse(user, target,
-							"[npc.Name] [npc.verb(take)] out "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" from [npc.her] inventory and [npc.verb(try)] to give it to [npc2.name],"
-								+ " but [npc2.she] dismisses it with an angry shout, [npc2.speech(Put that away, you stupid slut!)]"));
+							"[npc.Name] [npc.verb(take)] наружу "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" из [npc.her] инвентаря и [npc.verb(try)], чтобы отдать это [npc2.name], но [npc2.she] отмахивается с сердитым криком: [npc2.speech(Убери это, тупая шлюха!)]"));
 			}
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
@@ -294,14 +293,10 @@ public class DominionExpressCentaur extends NPC {
 				}
 				if(condomClothingType.equals(ClothingType.getClothingTypeFromId("innoxia_penis_condom_webbing"))) {
 					return UtilText.parse(equipper, target,
-							"[npc.Name] [npc.verb(direct)] [npc.her] spinneret at [npc2.namePos] [npc2.cock], but, sensing what [npc.sheIs] about to do, [npc2.name] [npc2.verb(slap)] it away and [npc2.verb(growl)],"
-							+ " [npc2.speech(I'm not wearing a condom for this!)]");
+							"[npc.Name] [npc.verb(direct)] [npc.her] паутинку на [npc2.namePos] [npc2.cock], но, предчувствуя, что [npc.sheIs] собирается сделать, [npc2.name] [npc2.verb(slap)] её прочь и [npc2.verb(growl)], [npc2.speech(Я не собираюсь надевать презерватив для этого!)]");
 				}
 				return UtilText.parse(equipper, target,
-						"[npc.Name] [npc.verb(hold)] out a condom to [npc2.name], but instead of setting about rolling it down over [npc2.her] [npc2.cock] as [npc.she]'d hoped,"
-								+ " [npc2.name] [npc2.verb(let)] out an annoyed growl and [npc2.verb(tear)] the packet in two!"
-						+ " With yet another growl, [npc2.she] states,"
-						+ " [npc2.speech(I'm not wearing a condom for this!)]");
+						"[npc.Name] [npc.verb(hold)] достает презерватив для [npc2.name], но вместо того, чтобы, как надеялся [npc.she], натянуть его на [npc2.her] [npc2.cock], [npc2.name] [npc2.verb(let)] раздраженное рычание и [npc2.verb(tear)] пакетик пополам! С очередным рыком [npc2.she] заявляет: [npc2.speech(Я не собираюсь надевать презерватив ради этого!)]");
 			}
 		}
 		return null;

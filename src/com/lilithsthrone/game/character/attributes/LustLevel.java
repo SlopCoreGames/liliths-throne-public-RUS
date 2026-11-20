@@ -186,54 +186,54 @@ public enum LustLevel {
 		List<String> modifiersList = new ArrayList<>();
 
 		Colour levelColour = LustLevel.getLustLevelFromValue(character.getRestingLust()).getColour();
-		modifiersList.add("Resting lust: <b style='color:"+levelColour.toWebHexString()+";'>"+character.getRestingLust()+"</b>");
+		modifiersList.add("Текущая похоть: <b style='color:"+levelColour.toWebHexString()+";'>"+character.getRestingLust()+"</b>");
 		
 		if(Main.game.isInSex()) {
 			switch(this.getSexPace(consensual, character)) {
 				case DOM_GENTLE:
 					if(!character.isPlayer()) {
-						modifiersList.add("Prefers <b style='color: " + SexPace.DOM_GENTLE.getColour().toWebHexString() + "'>gentle</b> pace");
+						modifiersList.add("Предпочитает <b style='color: " + SexPace.DOM_GENTLE.getColour().toWebHexString() + "'>нежный</b> темп");
 					}
 					break;
 				case DOM_NORMAL:
 					if(!character.isPlayer()) {
-						modifiersList.add("Prefers <b style='color: " + SexPace.DOM_NORMAL.getColour().toWebHexString() + "'>normal</b> pace");
+						modifiersList.add("Предпочитает <b style='color: " + SexPace.DOM_NORMAL.getColour().toWebHexString() + "'>обычный</b> темп");
 					}
 					break;
 				case DOM_ROUGH:
 					if(!character.isPlayer()) {
 						if(!character.hasFetish(Fetish.FETISH_DOMINANT) && !character.hasFetish(Fetish.FETISH_SADIST)) {
-							modifiersList.add("Prefers <b style='color: " + SexPace.DOM_NORMAL.getColour().toWebHexString() + "'>normal</b> pace");
-							modifiersList.add("(<b style='color: " + SexPace.DOM_ROUGH.getColour().toWebHexString() + "'>Rough</b> pace requires "+Fetish.FETISH_DOMINANT.getName(character)
-													+", "+Fetish.FETISH_NON_CON_DOM.getName(character)+", or "+Fetish.FETISH_SADIST.getName(character)+" fetish)");
+							modifiersList.add("Предпочитает <b style='color: " + SexPace.DOM_NORMAL.getColour().toWebHexString() + "'>обычный</b> темп");
+							modifiersList.add("(<b style='color: " + SexPace.DOM_ROUGH.getColour().toWebHexString() + "'>Грубый</b> темп требует "+Fetish.FETISH_DOMINANT.getName(character)
+													+", "+Fetish.FETISH_NON_CON_DOM.getName(character)+", или "+Fetish.FETISH_SADIST.getName(character)+" фетиш)");
 						} else {
-							modifiersList.add("Prefers <b style='color: " + SexPace.DOM_ROUGH.getColour().toWebHexString() + "'>rough</b> pace");
+							modifiersList.add("Предпочитает <b style='color: " + SexPace.DOM_ROUGH.getColour().toWebHexString() + "'>грубый</b> темп");
 						}
 					}
 					break;
 				case SUB_EAGER:
 					if(!character.isPlayer()) {
-						modifiersList.add("Prefers <b style='color: " + SexPace.SUB_EAGER.getColour().toWebHexString() + "'>eager</b> pace");
+						modifiersList.add("Предпочитает <b style='color: " + SexPace.SUB_EAGER.getColour().toWebHexString() + "'>жадный</b> темп");
 					}
 					break;
 				case SUB_NORMAL:
 					if(!character.isPlayer()) {
-						modifiersList.add("Prefers <b style='color: " + SexPace.SUB_NORMAL.getColour().toWebHexString() + "'>normal</b> pace");
+						modifiersList.add("Предпочитает <b style='color: " + SexPace.SUB_NORMAL.getColour().toWebHexString() + "'>обычный</b> темп");
 					}
 					break;
 				case SUB_RESISTING:
 					if(!character.isPlayer()) {
 						if(character.hasFetish(Fetish.FETISH_NON_CON_SUB)) {
-							modifiersList.add("Always prefers <b style='color: " + SexPace.SUB_RESISTING.getColour().toWebHexString() + "'>resisting</b> pace due to "+Fetish.FETISH_NON_CON_SUB.getName(character)+" fetish");
+							modifiersList.add("Всегда предпочитает <b style='color: " + SexPace.SUB_RESISTING.getColour().toWebHexString() + "'>сопротивляющийся</b> темп из-за "+Fetish.FETISH_NON_CON_SUB.getName(character)+" fetish");
 						} else {
-							modifiersList.add("Prefers <b style='color: " + SexPace.SUB_RESISTING.getColour().toWebHexString() + "'>resisting</b> pace");
+							modifiersList.add("Предпочитает <b style='color: " + SexPace.SUB_RESISTING.getColour().toWebHexString() + "'>сопротивляющийся</b> темп");
 						}
 					}
 					break;
 			}
 		
 			int gains = (int)(this.getArousalModifier()*100);
-			modifiersList.add((gains>=100?"[style.boldArousal("+gains+"%)]":"[style.boldBad("+gains+"%)]")+" arousal gains");
+			modifiersList.add((gains>=100?"[style.boldArousal("+gains+"%)]":"[style.boldBad("+gains+"%)]")+" прироста возбуждения");
 			
 		}
 		
@@ -248,22 +248,22 @@ public enum LustLevel {
 				case DOM_GENTLE:
 					switch(this) {
 						case ZERO_COLD:
-							sb.append("[npc.NameIsFull] not really interested in having sex at all right now, and as a result, [npc.she] [npc.verb(want)] to take things slow and gentle.");
+							sb.append("[npc.NameIsFull] сейчас не особо хочет заниматься сексом, и в результате, [npc.she] [npc.verb(want)] предпочитает действовать медленно и нежно.");
 							break;
 						case ONE_HORNY:
-							sb.append("[npc.NameIsFull] currently quite horny, but [npc.is] still in control of [npc.her] lust, allowing [npc.herHim] to keep a cool head and concentrate on taking things slow and gentle.");
+							sb.append("[npc.NameIsFull] сейчас довольно возбуждена, но [npc.is] все еще контролирует свою [npc.her] похоть, что позволяет [npc.herHim] сохранять хладнокровие и сосредоточиться на медленном и нежном темпе.");
 							break;
 						case TWO_AMOROUS:
-							sb.append("[npc.NameIsFull] currently feeling more than a little lustful, but [npc.is] still able to concentrate on taking things slow and gentle.");
+							sb.append("[npc.NameIsFull] сейчас чувствует нешуточное желание, но [npc.is] все еще способна сосредоточиться на медленном и нежном темпе.");
 							break;
 						case THREE_LUSTFUL:
-							sb.append("[npc.NameIsFull] currently burning with lust, but [npc.is] still able to concentrate on taking things slow and gentle.");
+							sb.append("[npc.NameIsFull] сейчас горит от похоти, но [npc.is] всё ещё в состоянии сосредоточиться на том, чтобы всё было медленно и нежно.");
 							break;
 						case FOUR_IMPASSIONED:
-							sb.append("[npc.NameIsFull] completely burning with lust, but [npc.is] still able to concentrate on taking things slow and gentle.");
+							sb.append("[npc.NameIsFull] буквально сгорает от похоти, но [npc.is] всё ещё в состоянии сосредоточиться на том, чтобы всё было медленно и нежно.");
 							break;
 						case FIVE_BURNING:
-							sb.append("[npc.NameIsFull] completely overwhelmed with lust, but, somehow, [npc.is] still able to concentrate on taking things slow and gentle.");
+							sb.append("[npc.NameIsFull] полностью захлестнула похоть, но, каким-то образом, [npc.is] всё ещё в состоянии сосредоточиться на том, чтобы всё было медленно и нежно.");
 							break;
 					}
 					break;
@@ -271,22 +271,22 @@ public enum LustLevel {
 				case SUB_NORMAL:
 					switch(this) {
 						case ZERO_COLD:
-							sb.append("Although [npc.nameIsFull]n't really interested in having sex at all right now, [npc.she] [npc.is] still able to force [npc.herself] to act as though [npc.sheIs] turned on and horny.");
+							sb.append("Хотя [npc.nameIsFull] сейчас не особо и хочется секса, [npc.she] [npc.is] всё ещё может заставить [npc.herself] вести себя так, будто [npc.sheIs] дико возбуждена.");
 							break;
 						case ONE_HORNY:
-							sb.append("[npc.NameIsFull] currently quite horny, and [npc.is] more than happy to have sex at the moment.");
+							sb.append("[npc.NameIsFull] сейчас довольно возбуждена, и [npc.is] более чем не прочь заняться сексом в данный момент.");
 							break;
 						case TWO_AMOROUS:
-							sb.append("[npc.NameIsFull] currently feeling more than a little lustful, and [npc.is] very happy to be having sex right at this moment.");
+							sb.append("[npc.NameIsFull] сейчас чувствует нешуточное желание, и [npc.is] очень рада, что прямо сейчас занимается сексом.");
 							break;
 						case THREE_LUSTFUL:
-							sb.append("[npc.NameIsFull] currently burning with lust, and [npc.is] ecstatic to be having sex right at this moment.");
+							sb.append("[npc.NameIsFull] сейчас горит от похоти, и [npc.is] в экстазе от того, что прямо сейчас занимается сексом.");
 							break;
 						case FOUR_IMPASSIONED:
-							sb.append("[npc.NameIsFull] completely burning with lust, but [npc.is] still able to prevent [npc.herself] from getting too carried away with things.");
+							sb.append("[npc.NameIsFull] буквально сгорает от похоти, но [npc.is] всё ещё в состоянии не дать [npc.herself] слишком сильно увлечься процессом.");
 							break;
 						case FIVE_BURNING:
-							sb.append("[npc.NameIsFull] completely overwhelmed with lust, but, somehow, [npc.is] still able to prevent [npc.herself] from getting too carried away with things.");
+							sb.append("[npc.NameIsFull] полностью захлестнула похоть, но, каким-то образом, [npc.is] всё ещё в состоянии не дать [npc.herself] слишком сильно увлечься процессом.");
 							break;
 					}
 					break;
@@ -294,44 +294,44 @@ public enum LustLevel {
 				case SUB_EAGER:
 					switch(this) {
 						case ZERO_COLD:
-							sb.append("Although [npc.nameIsFull]n't really interested in having sex at all right now, [npc.she] [npc.is] still able to force [npc.herself] to act as though [npc.sheIs] extremely turned on.");
+							sb.append("Хотя [npc.nameIsFull] сейчас не особо и хочется секса, [npc.she] [npc.is] всё ещё может заставить [npc.herself] вести себя так, будто [npc.sheIs] чрезвычайно возбуждена.");
 							break;
 						case ONE_HORNY:
-							sb.append("[npc.NameIsFull] currently quite horny, and [npc.is] more than happy to have sex at the moment.");
+							sb.append("[npc.NameIsFull] сейчас довольно возбуждена, и [npc.is] более чем не прочь заняться сексом в данный момент.");
 							break;
 						case TWO_AMOROUS:
-							sb.append("[npc.NameIsFull] currently feeling more than a little lustful, and [npc.is] very happy to be having sex right at this moment.");
+							sb.append("[npc.NameIsFull] сейчас чувствует нешуточное желание, и [npc.is] очень рада, что прямо сейчас занимается сексом.");
 							break;
 						case THREE_LUSTFUL:
-							sb.append("[npc.NameIsFull] currently burning with lust, and [npc.is] ecstatic to be having sex right at this moment.");
+							sb.append("[npc.NameIsFull] сейчас горит от похоти, и [npc.is] в экстазе от того, что прямо сейчас занимается сексом.");
 							break;
 						case FOUR_IMPASSIONED:
-							sb.append("[npc.NameIsFull] completely burning with lust, and [npc.is] really starting to get carried away with things.");
+							sb.append("[npc.NameIsFull] полностью сгорает от похоти, и [npc.is] начинает по-настоящему терять голову.");
 							break;
 						case FIVE_BURNING:
-							sb.append("[npc.NameIsFull] completely overwhelmed with lust, and [npc.has] totally lost [npc.herself] to the pleasure of having sex.");
+							sb.append("[npc.NameIsFull] полностью захлестнута похотью, и [npc.has] окончательно теряет [npc.herself] в удовольствии от секса.");
 							break;
 					}
 					break;
 				case SUB_RESISTING:
 					switch(this) {
 						case ZERO_COLD:
-							sb.append("[npc.NameIsFull] not at all interested in having sex right now, and [npc.is] desperately trying to resist what's currently happening to [npc.herHim].");
+							sb.append("[npc.NameIsFull] сейчас совсем не заинтересована в сексе и [npc.is] отчаянно пытается сопротивляться тому, что сейчас происходит с [npc.herHim].");
 							break;
 						case ONE_HORNY:
-							sb.append("[npc.NameIsFull] currently quite horny, but, despite this, [npc.sheIs] not at all happy with [npc.her] current situation, and [npc.is] desperately resisting sex.");
+							sb.append("[npc.NameIsFull] сейчас довольно возбуждена, но, несмотря на это, [npc.sheIs] совсем не довольна текущей ситуацией [npc.her] и [npc.is] отчаянно сопротивляется сексу.");
 							break;
 						case TWO_AMOROUS:
-							sb.append("[npc.NameIsFull] currently feeling more than a little lustful, but, despite this, [npc.sheIs] not at all happy with [npc.her] current situation, and [npc.is] desperately resisting sex.");
+							sb.append("[npc.NameIsFull] сейчас чувствует нешуточное желание, но, несмотря на это, [npc.sheIs] совсем не довольна текущей ситуацией [npc.her] и [npc.is] отчаянно сопротивляется сексу.");
 							break;
 						case THREE_LUSTFUL:
-							sb.append("[npc.NameIsFull] currently burning with lust, but, despite this, [npc.sheIs] not at all happy with [npc.her] current situation, and [npc.is] desperately resisting sex.");
+							sb.append("[npc.NameIsFull] сейчас горит от похоти, но, несмотря на это, [npc.sheIs] совсем не довольна текущей ситуацией [npc.her] и [npc.is] отчаянно сопротивляется сексу.");
 							break;
 						case FOUR_IMPASSIONED:
-							sb.append("[npc.NameIsFull] completely burning with lust, but, despite this, [npc.sheIs] not at all happy with [npc.her] current situation, and [npc.is] desperately resisting sex.");
+							sb.append("[npc.NameIsFull] полностью сгорает от похоти, но, несмотря на это, [npc.sheIs] совсем не довольна текущей ситуацией [npc.her] и [npc.is] отчаянно сопротивляется сексу.");
 							break;
 						case FIVE_BURNING:
-							sb.append("[npc.NameIsFull] completely overwhelmed with lust, but, despite this, [npc.sheIs] not at all happy with [npc.her] current situation, and [npc.is] desperately resisting sex.");
+							sb.append("[npc.NameIsFull] полностью захлестнута похотью, но, несмотря на это, [npc.sheIs] совсем не довольна текущей ситуацией [npc.her] и [npc.is] отчаянно сопротивляется сексу.");
 							break;
 					}
 					break;
@@ -340,32 +340,32 @@ public enum LustLevel {
 		} else {
 			switch(this) {
 				case ZERO_COLD:
-					sb.append("[npc.NameIsFull] not really interested in having sex at all right now.");
+					sb.append("[npc.NameIsFull] сейчас не особо-то и хочет заниматься сексом.");
 					break;
 				case ONE_HORNY:
-					sb.append("[npc.NameIsFull] currently quite horny, but [npc.is] still in control of [npc.her] lust.");
+					sb.append("[npc.NameIsFull] сейчас довольно возбуждена, но [npc.is] всё ещё контролирует [npc.her] похоть.");
 					if(Main.game.isOpportunisticAttackersEnabled() && character.isPlayer())
-						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br>It seems you're beginning to attract trouble.");
+						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Осторожные нападающие</b><br>Похоже, ты начинаешь привлекать неприятности.");
 					break;
 				case TWO_AMOROUS:
-					sb.append("[npc.NameIsFull] currently feeling more than a little lustful, and [npc.is] thinking about sex quite a lot.");
+					sb.append("[npc.NameIsFull] сейчас чувствует недюжинную похоть, и [npc.is] постоянно думает о сексе.");
 					if(Main.game.isOpportunisticAttackersEnabled() && character.isPlayer())
-						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br>You can feel more and more troublesome gazes.");
+						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Осторожные нападающие</b><br>Ты всё отчетливее ощущаешь на себе беспокойные взгляды.");
 					break;
 				case THREE_LUSTFUL:
-					sb.append("[npc.NameIsFull] currently burning with lust, and [npc.is] struggling to think of anything other than sex.");
+					sb.append("[npc.NameIsFull] сейчас горит от похоти, и [npc.is] с трудом может думать о чем-то, кроме секса.");
 					if(Main.game.isOpportunisticAttackersEnabled() && character.isPlayer())
-						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br>Your lust-filled aura can no longer be denied.");
+						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Осторожные нападающие</b><br>Твою пропитанную похотью ауру уже невозможно игнорировать.");
 					break;
 				case FOUR_IMPASSIONED:
-					sb.append("[npc.NameIsFull] completely burning with lust, and [npc.is] struggling to think of anything other than sex.");
+					sb.append("[npc.NameIsFull] полностью сгорает от похоти, и [npc.is] с трудом может думать о чем-то, кроме секса.");
 					if(Main.game.isOpportunisticAttackersEnabled() && character.isPlayer())
-						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br>Almost every passerby turns to you with lustful gazes.");
+						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Осторожные нападающие</b><br>Почти каждый прохожий оглядывается на тебя с вожделением.");
 					break;
 				case FIVE_BURNING:
-					sb.append("[npc.NameIsFull] completely overwhelmed with lust, and [npc.is] incapable of thinking of anything but sex.");
+					sb.append("[npc.NameIsFull] полностью захлестнута похотью, и [npc.is] не способна думать ни о чем, кроме секса.");
 					if(Main.game.isOpportunisticAttackersEnabled() && character.isPlayer())
-						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Opportunistic Attackers</b><br>Everyone can tell you're completely filled with lust. Some will probably try take advantage.");
+						sb.append("<br><b style='color:" + PresetColour.BASE_GREY.toWebHexString() +";'>Осторожные нападающие</b><br>Всем видно, что ты буквально наполнена похотью. Некоторые наверняка попытаются этим воспользоваться.");
 					break;
 			}
 		}

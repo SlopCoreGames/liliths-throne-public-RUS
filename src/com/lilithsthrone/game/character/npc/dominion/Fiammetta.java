@@ -76,8 +76,8 @@ public class Fiammetta extends NPC {
 	}
 	
 	public Fiammetta(boolean isImported) {
-		super(isImported, new NameTriplet("Fiammetta"), "Sciarra",
-				"Fiammetta is a human reporter who works for Dominion's only newspaper; The Octogram Herald.",
+		super(isImported, new NameTriplet("Фиамметта"), "Шиарра",
+				"Фиамметта — журналистка-человек, работающая в единственной газете Dominion — «The Octogram Herald».",
 				23, Month.JULY, 14,
 				15, Gender.F_V_B_FEMALE, Subspecies.HUMAN, RaceStage.HUMAN,
 				new CharacterInventory(false, 30),
@@ -233,7 +233,7 @@ public class Fiammetta extends NPC {
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_chest_sports_bra", PresetColour.CLOTHING_GREY, false), true, this);
 		
 		
-		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_tank_top", PresetColour.CLOTHING_WHITE, false), true, this);
+		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_майка_алкоголичка", PresetColour.CLOTHING_WHITE, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("innoxia_torsoOver_hoodie", PresetColour.CLOTHING_GREEN_DRAB, false), true, this);
 		this.equipClothingFromNowhere(Main.game.getItemGen().generateClothing("TonyJC_daisy_dukes", PresetColour.CLOTHING_BLUE_GREY, false), true, this);
 		

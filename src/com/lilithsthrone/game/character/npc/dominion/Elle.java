@@ -81,7 +81,7 @@ public class Elle extends NPC {
 	}
 	
 	public Elle(boolean isImported) {
-		super(isImported, new NameTriplet("Aellasys"), "Lunettemartu",
+		super(isImported, new NameTriplet("Аэлласис"), "Лунеттемарту",
 				"",
 				44, Month.FEBRUARY, 5,
 				15,
@@ -289,22 +289,22 @@ public class Elle extends NPC {
 	@Override
 	public String getArtworkFolderName() {
 		if(isSlave()) {
-			return "ElleSlave";
+			return "ЭлльРабыня";
 		} else {
-			return "Elle";
+			return "Элль";
 		}
 	}
 	
 	@Override
 	public String getDescription() {
 		if(this.isSlave()) {
-			return "Elle is no longer the Senior Quartermaster for all of the Enforcers in Central Dominion thanks to you. Although her fall from her former office was meteoric, she doesn't seem to mind at all.";
+			return "Благодаря тебе, Эль больше не является старшим интендантом всех Enforcer в Центральном Dominion. Хотя ее падение с прежнего поста было стремительным, кажется, ее это совсем не беспокоит.";
 			
 		} else if(Main.game.getPlayer().isQuestCompleted(QuestLine.SIDE_WES)) {
-			return "With your help, Elle remains the Senior Quartermaster for all of the Enforcers in Central Dominion. Although she could fill Wes' former position with any of her subordinates, she has chosen to man the desk herself.";
+			return "Благодаря твоей помощи, Эль остается старшим интендантом всех Enforcer в Центральном Dominion. Хотя она могла бы заменить на месте Уэса любого из своих подчиненных, она предпочла сама сидеть за столом.";
 			
 		} else {
-			return "Elle is the Senior Quartermaster for all of the Enforcers in Central Dominion and is Wes' commanding officer. Although her temper makes her difficult to work for, her subordinates, except for Wes, have little complaint.";
+			return "Эль — старший интендант всех Enforcer в Центральном Dominion и командир Уэса. Хотя из-за ее вспыльчивого нрава с ней бывает трудно работать, ее подчиненные, за исключением Уэса, почти не жалуются.";
 		}
 	}
 	
@@ -404,19 +404,10 @@ public class Elle extends NPC {
 		if(user.isPlayer() && !target.isPlayer()) {
 			if(item.isTypeOneOf("innoxia_pills_fertility", "innoxia_pills_broodmother")) {
 				return new Value<>(true,
-						"<p>"
-							+ "Producing a "+item.getName(false, false)+" from your inventory, you prepare to offer it to Elle, but before you can even get that far, the [elle.race] sees what it is you're holding and declares,"
-							+ " [elle.speechNoEffects(There's no way I'm taking that! I have absolutely zero intention of ever getting pregnant, thank you very much!)]"
-						+ "</p>"
-						+ "<p>"
-							+ "Deciding that it would be a very bad idea to try and force Elle to take the pill, you put it away..."
-						+ "</p>");
+						"<p>Доставая "+item.getName(false, false)+" из своего инвентаря, ты готовишься предложить его Эль, но не успеваешь даже дойти до этого, как [elle.race] замечает, что у тебя в руках, и заявляет: [elle.speechNoEffects(Ни за что я это не приму! У меня нет абсолютно никакого намерения когда-либо забеременеть, большое спасибо!)]</p><p>Решив, что пытаться заставить Эль принять таблетку — очень плохая идея, ты убираешь ее...</p>");
 			}
 			return new Value<>(false,
-					"<p>"
-						+ "You start to pull "+item.getItemType().getDeterminer()+" "+item.getName()+" out from your inventory, but Elle quickly says that she has absolutely no intention of letting you use it on her."
-						+ " Deciding that it would be a very bad idea to try and force Elle to change her mind, you put "+(item.getItemType().isPlural()?"them":"it")+" away..."
-					+ "</p>");
+					"<p>Ты начинаешь доставать "+item.getItemType().getDeterminer()+" "+item.getName()+" из своего инвентаря, но Эль быстро говорит, что у нее нет ни малейшего намерения позволить тебе использовать это на ней. Решив, что пытаться заставить Эль передумать — очень плохая идея, ты убираешь "+(item.getItemType().isPlural()?"them":"it")+" прочь...</p>");
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
 	}

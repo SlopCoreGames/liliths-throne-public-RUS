@@ -69,8 +69,8 @@ public class Jules extends NPC {
 	}
 	
 	public Jules(boolean isImported) {
-		super(isImported, new NameTriplet("Jules", "Jules", "Julia"), "Kamau",
-				"Jules is the zebra-boy bouncer for the nightclub 'The Watering Hole'.",
+		super(isImported, new NameTriplet("Джулс", "Джулс", "Джулия"), "Камау",
+				"Джулс — парень-зебра, вышибала в ночном клубе «Водопой».",
 				33, Month.FEBRUARY, 21,
 				10,
 				Gender.M_P_MALE,

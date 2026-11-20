@@ -61,7 +61,7 @@ public class DollFactorySuccubus extends NPC {
 	}
 	
 	public DollFactorySuccubus(boolean isImported) {
-		super(isImported, null, "Loviennemartuilani",
+		super(isImported, null, "Ловиеннемартуилани",
 				"",
 				Util.random.nextInt(50)+18, Util.randomItemFrom(Month.values()), 1+Util.random.nextInt(28),
 				25,
@@ -166,7 +166,7 @@ public class DollFactorySuccubus extends NPC {
 					PresetColour.CLOTHING_GOLD,
 					false,
 					new TattooWriting(
-							"Property of Saellatrix",
+							"Собственность Саэллатрикс",
 							PresetColour.CLOTHING_GOLD,
 							false),
 					new TattooCounter(
@@ -185,8 +185,7 @@ public class DollFactorySuccubus extends NPC {
 	@Override
 	public String getDescription() {
 		return UtilText.parse(this,
-				"Having been outplayed and utterly defeated in the game of demonic politics by her sister, Saellatrix, this succubus is now no more than a slave."
-				+ " Putting her to use, Saellatrix has ordered her to oversee the dolls who work in her factory.");
+				"Проиграв в демонических политических играх своей сестре Саэллатрикс и потерпев полное поражение, эта суккуб превратилась в обычную рабыню. Используя её в своих целях, Саэллатрикс приказала ей надзирать за куклами, работающими на её фабрике.");
 	}
 
 	@Override
@@ -265,20 +264,12 @@ public class DollFactorySuccubus extends NPC {
 							Main.sex.isMasturbation()
 							?UtilText.parse(this,
 										Main.sex.getNumberOfOrgasms(this)==1
-											?"Producing a glass bottle filled with purple liquid, the succubus pulls out the stopper and tosses it over her shoulder, before downing the contents in three big gulps."
-												+ " Her gigantic balls visibly swell as the rejuvenation potion does its work, and she happily moans,"
-												+ " [npc.speechNoEffects(~Ooh!~ Fuck! That's better! ~Mmm!~ I'm such a bad bitch... I just need to cum some more!)]"
-											:"Producing another glass bottle filled with yet more purple liquid, the succubus once again pulls out the stopper and tosses it over her shoulder, before downing the contents in three big gulps."
-												+ " Just like before, her gigantic balls visibly swell as the rejuvenation potion does its work, and she excitedly moans,"
-												+ " [npc.speechNoEffects(~Aah!~ Fuck! Just one more... ~Mmm!~ Mistress... I'm a bad dog... I just need to cum!)]")
+											?"Достав стеклянную бутылочку с фиолетовой жидкостью, суккуб вытаскивает пробку, отбрасывает её через плечо и осушает содержимое в три огромных глотка. Её гигантские яйца заметно раздуваются, пока эликсир омоложения делает своё дело, и она счастливо стонет: [npc.speechNoEffects(~Ох!~ Блядь! Вот так лучше! ~Ммм!~ Какая же я сучка... Мне просто нужно кончить ещё разок!)]"
+											:"Достав ещё одну стеклянную бутылочку с фиолетовой жидкостью, суккуб снова вытаскивает пробку, отбрасывает её через плечо и осушает содержимое в три огромных глотка. Как и прежде, её гигантские яйца заметно раздуваются под действием эликсира омоложения, и она возбужденно стонет: [npc.speechNoEffects(~Аах!~ Блядь! Еще всего одну... ~Ммм!~ Госпожа... Я плохая собачка... Мне просто нужно кончить!)]")
 							:UtilText.parse(this,
 									Main.sex.getNumberOfOrgasms(this)==1
-									?"Producing a glass bottle filled with purple liquid, the succubus pulls out the stopper and tosses it over her shoulder, before downing the contents in three big gulps."
-										+ " Her gigantic balls visibly swell as the rejuvenation potion does its work, and she happily moans,"
-										+ " [npc.speechNoEffects(~Ooh!~ Fuck! My balls feel so full! ~Mmm!~ Now I'm ready to pump another load in you, bitch!)]"
-									:"Producing another glass bottle filled with yet more purple liquid, the succubus once again pulls out the stopper and tosses it over her shoulder, before downing the contents in three big gulps."
-										+ " Just like before, her gigantic balls visibly swell as the rejuvenation potion does its work, and she excitedly moans,"
-										+ " [npc.speechNoEffects(~Aah!~ Fuck! Got another full load for you, bitch! ~Mmm!~ I'm going to fill you up real good...)]"));
+									?"Достав стеклянную бутылочку, наполненную фиолетовой жидкостью, суккуб выдергивает пробку и отбрасывает её через плечо, после чего осушает содержимое тремя огромными глотками. Её гигантские яйца заметно раздуваются, пока эликсир омоложения делает своё дело, и она счастливо стонет: [npc.speechNoEffects(~Ооо!~ Блядь! Мои яйца так налились! ~Ммм!~ Теперь я готова влить в тебя ещё одну порцию, сучка!)]"
+									:"Достав ещё одну стеклянную бутылочку с фиолетовой жидкостью, суккуб снова выдергивает пробку и отбрасывает её через плечо, после чего осушает содержимое тремя огромными глотками. Как и прежде, её гигантские яйца заметно раздуваются под действием эликсира омоложения, и она возбужденно стонет: [npc.speechNoEffects(~Ааах!~ Блядь! У меня припасена для тебя ещё одна полная порция, сучка! ~Ммм!~ Сейчас я тебя как следует заполню...)]"));
 				}
 			}
 		}

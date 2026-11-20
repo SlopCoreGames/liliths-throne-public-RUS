@@ -74,9 +74,8 @@ public class Ceridwen extends NPC {
 	}
 	
 	public Ceridwen(boolean isImported) {
-		super(isImported, new NameTriplet("Ceridwen"), "Morgan",
-				"Ceridwen owns the convenience store, 'The Barn', in Elis's shopping precinct."
-					+ " Although she's very kind and helpful, she has an unnerving habit of silently stalking her favourite customers...",
+		super(isImported, new NameTriplet("Керидвен"), "Морган",
+				"Керидвен владеет магазинчиком «Амбар» в торговом квартале Элис. Несмотря на её доброту и готовность помочь, у неё есть пугающая привычка — она молча выслеживает своих любимых покупателей...",
 				32, Month.DECEMBER, 30,
 				20,
 				Gender.F_V_B_FEMALE, Subspecies.getSubspeciesFromId("innoxia_raptor_subspecies_owl"), RaceStage.GREATER,
@@ -84,7 +83,7 @@ public class Ceridwen extends NPC {
 				WorldType.getWorldTypeFromId("innoxia_fields_elis_shops"), PlaceType.getPlaceTypeFromId("innoxia_fields_elis_shops_convenience"),
 				true);
 		
-		this.setGenericName("white-feathered owl-girl");
+		this.setGenericName("совиная девушка с белыми перьями");
 		
 		if(!isImported) {
 			dailyUpdate();

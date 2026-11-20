@@ -38,8 +38,8 @@ public class TestNPC extends NPC {
 	}
 	
 	public TestNPC(boolean isImported) {
-		super(isImported, new NameTriplet("TestNPC"), "Scriven",
-				"Test NPC.",
+		super(isImported, new NameTriplet("ТестNPC"), "Писец",
+				"Тестовый NPC.",
 				28, Month.JUNE, 1,
 				1, Gender.F_V_B_FEMALE, Subspecies.CAT_MORPH, RaceStage.PARTIAL_FULL,
 				new CharacterInventory(false, 10), WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL, true);

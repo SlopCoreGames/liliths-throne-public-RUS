@@ -75,15 +75,15 @@ public class Astrapi extends NPC {
 	}
 	
 	public Astrapi(boolean isImported) {
-		super(isImported, new NameTriplet("Astrapi"), "Grigori",
-				"The younger sister of the only two centaurs brave enough to keep their Dominion-to-Elis transport business running, Astrapi has the body of a Greek goddess, and a fiery, indomitable personality to match.",
+		super(isImported, new NameTriplet("Астрапи"), "Григорий",
+				"Младшая сестра единственных двух кентавров, которым хватает смелости поддерживать свой транспортный бизнес между Dominion и Элисом. Астрапи обладает телом греческой богини и столь же огненным, неукротимым характером.",
 				29, Month.AUGUST, 15,
 				20, Gender.F_V_B_FEMALE, Subspecies.CENTAUR, RaceStage.PARTIAL_FULL,
 				new CharacterInventory(false, 10),
 				WorldType.EMPTY, PlaceType.GENERIC_HOLDING_CELL,
 				true);
 
-		this.setGenericName("buff centauress");
+		this.setGenericName("мускулистая кентаврисса");
 		
 		if(!isImported) {
 			this.setPlayerKnowsName(false);
@@ -338,7 +338,7 @@ public class Astrapi extends NPC {
 
 	@Override
 	public String getArtworkFolderName() {
-		return "Astrapi";
+		return "Астрапи";
 	}
 	
 	@Override
@@ -390,20 +390,15 @@ public class Astrapi extends NPC {
 			if(!Main.game.getDialogueFlags().hasFlag("innoxia_astrapi_impregnation_talk")) {
 				itemOwner.removeItem(item);
 				return new Value<>(false,
-						"<p>"
-							+ "Producing a "+item.getColour(0).getName()+" "+item.getName(false, false)+" from your inventory, you pop it out of its plastic wrapper before handing it over to Astrapi."
-							+ " Seeing what it is you're trying to get her to swallow, she laughs and tosses the pill away, saying, "
-							+ " [astrapi.speech(I'm not interested in getting pregnant. Nice try, though!)]"
-						+ "</p>");
+						"<p>Доставая "+item.getColour(0).getName()+" "+item.getName(false, false)+" из своего инвентаря, вы достаете её из пластиковой упаковки и протягиваете Астрапи. Увидев, что именно вы пытаетесь заставить её проглотить, она смеется и отбрасывает таблетку, говоря: [astrapi.speech(Меня не интересует возможность забеременеть. Но попытка была неплохой!)]</p>");
 				
 			} else {
 				itemOwner.useItem(item, this, false);
-				String returnText = "Producing a "+item.getName(false, false)+" from your inventory, you pop it out of its plastic wrapper before handing it over to Astrapi."
-							+ " Seeing what it is you're trying to get her to swallow, she laughs and swallows the little "+ item.getColour(0).getName() +" pill, before saying,";
+				String returnText = "Доставая "+item.getName(false, false)+" из своего инвентаря, вы достаете её из пластиковой упаковки и протягиваете Астрапи. Увидев, что именно вы пытаетесь заставить её проглотить, она смеется и проглатывает маленькую "+ item.getColour(0).getName() +" таблетку, после чего произносит:";
 				if(this.isVisiblyPregnant()) {
-					returnText += " [astrapi.speechNoEffects(~Mmm!~ Well, I mean, I'm clearly already pregnant, but whatever...)]";
+					returnText += " [astrapi.speechNoEffects(~Ммм!~ Ну, то есть, я явно уже беременна, но неважно...)]";
 				} else {
-					returnText += " [astrapi.speechNoEffects(~Mmm!~ Fine, you can go ahead and get me knocked up, if that's what'll make you happy...)]";
+					returnText += " [astrapi.speechNoEffects(~Ммм!~ Ладно, можешь и дальше пытаться меня обрюхатить, если тебе от этого станет легче...)]";
 				}
 				return new Value<>(true,
 						"<p>"

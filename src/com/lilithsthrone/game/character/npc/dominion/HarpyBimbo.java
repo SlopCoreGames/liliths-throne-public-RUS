@@ -76,10 +76,8 @@ public class HarpyBimbo extends NPC {
 	}
 	
 	public HarpyBimbo(boolean isImported) {
-		super(isImported, new NameTriplet("Brittany"), "Blomgren",
-				"One of the more notable harpy matriarchs, Brittany is the leader of a flock of harpies."
-						+ " In order to get into her good graces, most of her flock try to mimic her behaviour and appearance."
-						+ " As a result, Brittany's flock is primarily made up of bleach-blonde bimbos.",
+		super(isImported, new NameTriplet("Бриттани"), "Бломгрен",
+				"Одна из самых заметных матриархов гарпий, Бриттани — предводительница целого стада. Чтобы задобрить её, большинство её последовательниц стараются подражать её поведению и внешности. В результате стадо Бриттани состоит преимущественно из обесцвеченных блондинок-бимбо.",
 				24, Month.MARCH, 17,
 				7, Gender.F_V_B_FEMALE, Subspecies.HARPY, RaceStage.LESSER,
 				new CharacterInventory(false, 30), WorldType.HARPY_NEST, PlaceType.HARPY_NESTS_HARPY_NEST_YELLOW, true);
@@ -335,10 +333,7 @@ public class HarpyBimbo extends NPC {
 		// You really shouldn't be able to alter this character's fetishes...
 		if(user.isPlayer() && !target.isPlayer() && (item.getItemType().equals(ItemType.FETISH_UNREFINED) || item.getItemType().equals(ItemType.FETISH_REFINED))) {
 			return new Value<>(false,
-					"<p>"
-						+ "You try to give [npc.name] your "+item.getName()+", but [npc.she] takes one look at it and laughs,"
-						+ " [npc.speechNoEffects(Erm, do you, like, seriously expect me to drink that icky-lookin' potion?! That's, like, totally not happening!)]"
-					+ "</p>");
+					"<p>Вы пытаетесь дать [npc.name] свою "+item.getName()+", но [npc.she] лишь бросает на неё взгляд и смеется, [npc.speechNoEffects(Эмм, ты, типа, серьезно ждешь, что я буду пить это мерзкое зелье?! Это, типа, вообще не вариант!)]</p>");
 		}
 		
 		return super.getItemUseEffects(item, itemOwner, user, target);

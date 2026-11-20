@@ -151,7 +151,7 @@ public class EnforcerWarehouseGuard extends NPC {
 	
 	@Override
 	public String getDescription() {
-		return UtilText.parse(this, "One of the SWORD Enforcers tasked with guarding [npc.his] division's warehouse, [npc.name] is more than prepared to use an unreasonable amount of force to detain anyone [npc.she] catches..."); 
+		return UtilText.parse(this, "Один из Enforcer организации SWORD, приставленный к охране склада подразделения [npc.his], [npc.name] более чем готов применить неоправданную силу, чтобы задержать любого, кого [npc.she] поймает..."); 
 	}
 	
 	@Override
@@ -187,7 +187,7 @@ public class EnforcerWarehouseGuard extends NPC {
 	public Response endCombat(boolean applyEffects, boolean victory) {
 		if(Main.game.getPlayer().getCell().getPlace().getPlaceType()==PlaceType.ENFORCER_WAREHOUSE_ENFORCER_GUARD_POST) {
 			if(victory) {
-				return new Response("Victory", "The Enforcer slumps to the floor before you, defeated.", EnforcerWarehouse.AFTER_GUARD_COMBAT_VICTORY) {
+				return new Response("Победа", "Enforcer покорно опускается на пол перед вами, поверженный.", EnforcerWarehouse.AFTER_GUARD_COMBAT_VICTORY) {
 					@Override
 					public void effects() {
 						Main.game.getDialogueFlags().warehouseDefeatedIDs.add(EnforcerWarehouseGuard.this.getId());
@@ -196,15 +196,15 @@ public class EnforcerWarehouseGuard extends NPC {
 				};
 				
 			} else {
-				return new Response ("Defeated...", "You collapse to the floor, completely defeated.", EnforcerWarehouse.AFTER_GUARD_COMBAT_DEFEAT);
+				return new Response ("Повержен...", "Вы валитесь на пол, полностью побежденный.", EnforcerWarehouse.AFTER_GUARD_COMBAT_DEFEAT);
 			}
 			
 		} else { // Main entrance:
 			if(victory) {
-				return new Response("Victory", "The Enforcers slump to the floor before you, defeated.", EnforcerWarehouse.AFTER_ENTRANCE_VICTORY);
+				return new Response("Победа", "Enforcer'ы покорно опускаются на пол перед вами, поверженные.", EnforcerWarehouse.AFTER_ENTRANCE_VICTORY);
 				
 			} else {
-				return new Response ("Defeated...", "You collapse to the floor, completely defeated.", EnforcerWarehouse.AFTER_ENTRANCE_DEFEAT);
+				return new Response ("Повержены...", "Вы валитесь на пол, полностью побежденный.", EnforcerWarehouse.AFTER_ENTRANCE_DEFEAT);
 			}
 		}
 	}

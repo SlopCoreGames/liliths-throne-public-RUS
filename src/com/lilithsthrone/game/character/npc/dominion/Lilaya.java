@@ -99,10 +99,7 @@ public class Lilaya extends NPC {
 	
 	public Lilaya(boolean isImported) {
 		super(isImported, new NameTriplet("Lilaya"), "Lyssiethmartusarri",
-				"Along with your twin cousins, your aunt Lily was the only family you'd ever known."
-						+ " Although she still exists in this world, she isn't your aunt any more, and in this reality, she's a half-demon called 'Lilaya'."
-						+ " Whereas your old aunt was a researcher at the city museum, Lilaya is a privately-funded researcher of the arcane."
-						+ " Due to her demonic appearance and the fact that she's the daughter of the Lilin Lyssieth, people usually regard Lilaya with a mixture of fear and respect.",
+				"Вместе с вашими двоюродными сестрами-близнецами, ваша тетя Лили была единственной семьей, которую вы когда-либо знали. Хотя она все еще существует в этом мире, она больше не ваша тетя; в этой реальности она — полудемон по имени Lilaya. Если ваша прежняя тетя была исследователем в городском музее, то Lilaya — частный исследователь Арканы. Из-за ее демонической внешности и того факта, что она дочь лилин Lyssieth, люди обычно смотрят на Lilaya со смесью страха и уважения.",
 				48, Month.DECEMBER, 28, // Note that Lilaya's age is always set to 22 years older than the player in CharacterCreation.applyGameStart(), so the age of 48 here doesn't mean much.
 				25,
 				Gender.F_V_B_FEMALE, Subspecies.DEMON, RaceStage.PARTIAL_FULL,
@@ -390,26 +387,26 @@ public class Lilaya extends NPC {
 	@Override
 	public String getArtworkFolderName() {
 		if(this.getRaceStage()==RaceStage.GREATER) {
-			return "LilayaDemon";
+			return "LilayaДемон";
 		}
 		
 		Colour skinColour = this.getCovering(BodyCoveringType.HUMAN).getPrimaryColour();
 		if(skinColour==PresetColour.SKIN_PORCELAIN
 				|| skinColour==PresetColour.SKIN_PALE) {
-			return "LilayaPale";
+			return "LilayaБледная";
 			
 		} else if(skinColour==PresetColour.SKIN_TANNED
 				|| skinColour==PresetColour.SKIN_OLIVE) {
-			return "LilayaOlive";
+			return "LilayaОливковая";
 			
 		} else if(skinColour==PresetColour.SKIN_CHOCOLATE
 				|| skinColour==PresetColour.SKIN_DARK) {
-			return "LilayaDark";
+			return "LilayaТемная";
 			
 		} else if(skinColour==PresetColour.SKIN_EBONY) {
-			return "LilayaEbony";
+			return "LilayaЭбеновая";
 		}
-		return "LilayaLight";
+		return "LilayaСветлая";
 	}
 
 	@Override
@@ -489,23 +486,16 @@ public class Lilaya extends NPC {
 			if(this.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
 				itemOwner.removeItem(item);
 				return new Value<>(false,
-						"<p>"
-							+ "Producing a "+item.getColour(0).getName()+" "+item.getName(false, false)+" from your inventory, you pop it out of its plastic wrapper before bringing it up to Lilaya's mouth."
-							+ " Seeing what it is you're trying to get her to swallow, she furrows her eyebrows and smacks the pill out of your [pc.hand], sending it flying off under one of the lab tables."
-							+ " In a sharp tone, she admonishes you, "
+						"<p>Доставая "+item.getColour(0).getName()+" "+item.getName(false, false)+" доставая предмет из своего Инвентаря, вы вынимаете его из пластиковой упаковки и подносите к рту Lilaya. Увидев, что именно вы пытаетесь заставить ее проглотить, она хмурит брови и сбивает таблетку из ваших [pc.hand], отчего та улетает под один из лабораторных столов. Резким тоном она отчитывает вас: "
 							+ (this.hasPenis()
-									?" [lilaya.speech(I don't care if you're trying to make my cum more virile! I'm <i>not</i> swallowing anything that would make me more fertile!)]"
-									:" [lilaya.speech(I'm <i>not</i> swallowing anything that would make me more fertile! You're <i>not</i> going to cum inside of me anyway, so why would you even try that?!)]")
+									?" [lilaya.speech(Мне плевать, если ты пытаешься сделать мою сперму более плодовитой! Я <i>не</i> собираюсь глотать что угодно, лишь бы стать фертильнее!)]"
+									:" [lilaya.speech(Я <i>не</i> собираюсь глотать что угодно, лишь бы стать фертильнее! Ты всё равно <i>не</i> кончишь в меня, так зачем вообще пытаться?!)]")
 						+ "</p>");
 				
 			} else {
 				itemOwner.useItem(item, this, false);
 				return new Value<>(true,
-						"<p>"
-							+ "Producing a "+item.getName(false, false)+" from your inventory, you pop it out of its plastic wrapper before pushing it into Lilaya's mouth."
-							+ " She lets out a delighted moan as she happily swallows the little "+ item.getColour(0).getName() +" pill,"
-								+ " [lilaya.speechNoEffects(~Mmm!~ That's right, make my demonic womb nice and fertile! I don't hate getting pregnant anymore...)]"
-						+ "</p>");
+						"<p>Доставая "+item.getName(false, false)+" из твоего инвентаря, ты достаешь её из пластиковой упаковки и проталкиваешь в рот Lilaya. Она издает восторженный стон, с удовольствием проглатывая маленькую "+ item.getColour(0).getName() +" таблетку, [lilaya.speechNoEffects(~Ммм!~ Вот так, сделай мою демоническую утробу хорошенько плодовитой! Я больше не против забеременеть...)]</p>");
 			}
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
@@ -520,19 +510,11 @@ public class Lilaya extends NPC {
 		if(this.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
 			if(att==Attribute.FERTILITY && value>0) {
 				sb.append(UtilText.parse(this,
-						"<p>"
-							+ "[lilaya.speech(Wait... That made me more fertile?! What were you thinking?!)]"
-							+ " Lilaya angrily exclaims, before letting out a deep sigh and muttering,"
-							+ " [lilaya.speech(Whatever... It's not like it's ever going to make a difference...)]"
-						+ "</p>"));
+						"<p>[lilaya.speech(Погоди... Это сделало меня плодовитее?! О чем ты только думал?!)] — гневно восклицает Lilaya, после чего тяжело вздыхает и бормочет: [lilaya.speech(Ну и ладно... Всё равно это вряд ли на что-то повлияет...)]</p>"));
 				
 			} else if(att==Attribute.FERTILITY && value<0) {
 				sb.append(UtilText.parse(this,
-						"<p>"
-							+ "[lilaya.speech(Wait... That made me less fertile?! Thank you, [pc.name]!)]"
-							+ " Lilaya happily exclaims, before sighing,"
-							+ " [lilaya.speech(It's not like it's ever going to make a difference anyway, but the thought is nice...)]"
-						+ "</p>"));
+						"<p>[lilaya.speech(Погоди... Это сделало меня менее плодовитой?! Спасибо, [pc.name]!)] — радостно восклицает Lilaya, а затем вздыхает: [lilaya.speech(Всё равно это вряд ли на что-то повлияет, но сама мысль приятна...)]</p>"));
 			}
 		}
 		
@@ -548,19 +530,11 @@ public class Lilaya extends NPC {
 		if(this.getFetishDesire(Fetish.FETISH_PREGNANCY).isNegative()) {
 			if(att==Attribute.FERTILITY && value>0) {
 				sb.append(UtilText.parse(this,
-						"<p>"
-							+ "[lilaya.speech(Wait... That made me more fertile?! What were you thinking?!)]"
-							+ " Lilaya angrily exclaims, before letting out a deep sigh and muttering,"
-							+ " [lilaya.speech(Whatever... It's not like it's ever going to make a difference...)]"
-						+ "</p>"));
+						"<p>[lilaya.speech(Погоди... Это сделало меня плодовитее?! О чем ты только думал?!)] — гневно восклицает Lilaya, после чего тяжело вздыхает и бормочет: [lilaya.speech(Ну и ладно... Всё равно это вряд ли на что-то повлияет...)]</p>"));
 				
 			} else if(att==Attribute.FERTILITY && value<0) {
 				sb.append(UtilText.parse(this,
-						"<p>"
-							+ "[lilaya.speech(Wait... That made me less fertile?! Thank you, [pc.name]!)]"
-							+ " Lilaya happily exclaims, before sighing,"
-							+ " [lilaya.speech(It's not like it's ever going to make a difference anyway, but the thought is nice...)]"
-						+ "</p>"));
+						"<p>[lilaya.speech(Погоди... Это сделало меня менее плодовитой?! Спасибо, [pc.name]!)] — радостно восклицает Lilaya, а затем вздыхает: [lilaya.speech(Всё равно это вряд ли на что-то повлияет, но сама мысль приятна...)]</p>"));
 			}
 		}
 		
@@ -581,16 +555,16 @@ public class Lilaya extends NPC {
 	public String getDirtyTalkNoPenetration(GameCharacter target, boolean isPlayerDom){
 		List<String> speech = new ArrayList<>();
 
-		speech.add("Fuck, why do demons always have to feel so horny?! All I ever think about is fucking you or Rose!");
-		speech.add("I'm sure I can collect some valuable data from this...");
+		speech.add("Блядь, ну почему демоны вечно такие похотливые?! Все, о чем я только и могу думать — это как трахаю тебя или Роуз!");
+		speech.add("Уверена, что смогу собрать здесь ценные данные...");
 		
 		if(Main.game.isIncestEnabled()) {
 			if(Main.game.getDialogueFlags().hasFlag("innoxia_child_of_lyssieth")) {
-				speech.add("Horny for your new half-sister, hmm?");
-				speech.add("There's nothing wrong with demonic siblings fucking one another...");
+				speech.add("Похотливый на свою новую сводную сестренку, хм?");
+				speech.add("В том, что демонические брат и сестра трахают друг друга, нет ничего плохого...");
 			} else {
-				speech.add("I wonder if you ever did this with your real aunt?");
-				speech.add("Wait, you still see me as your aunt, right? I guess I can go along with that...");
+				speech.add("Интересно, а со своей настоящей тетушкой ты тоже так делал?");
+				speech.add("Погоди, ты ведь всё еще видишь во мне свою тетушку, верно? Что ж, тогда я не против...");
 			}
 		}
 		
@@ -607,70 +581,70 @@ public class Lilaya extends NPC {
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Pull my hair!", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Тяни меня за волосы!", PresetColour.CLOTHING_BLACK, false),
 						null));
 		this.addTattoo(InventorySlot.TORSO_UNDER,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Slap my ass!", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Шлепай меня по заднице!", PresetColour.CLOTHING_BLACK, false),
 						null));
 		this.addTattoo(InventorySlot.ANUS,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Buttslut whore", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Задницеблядская шлюха", PresetColour.CLOTHING_BLACK, false),
 						new TattooCounter(TattooCounterType.ANUS_FUCKED, TattooCountType.TALLY, PresetColour.CLOTHING_BLACK, false, this)));
 		this.addTattoo(InventorySlot.CHEST,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Fuck my fat fucking tits", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Трахни мои жирные, блядь, сиськи", PresetColour.CLOTHING_BLACK, false),
 						new TattooCounter(TattooCounterType.NIPPLES_FUCKED, TattooCountType.TALLY, PresetColour.CLOTHING_BLACK, false, this)));
 		this.addTattoo(InventorySlot.GROIN,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Free fuck", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Свободная трахалка", PresetColour.CLOTHING_BLACK, false),
 						new TattooCounter(TattooCounterType.PUSSY_FUCKED, TattooCountType.TALLY, PresetColour.CLOTHING_BLACK, false, this)));
 		this.addTattoo(InventorySlot.STOMACH,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Kiarillex's cum claimed this womb", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Эта утроба принадлежит сперме Киарилекса", PresetColour.CLOTHING_BLACK, false),
 						null));
 		this.addTattoo(InventorySlot.LEG,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Sex slave", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Секс-рабыня", PresetColour.CLOTHING_BLACK, false),
 						null));
 		this.addTattoo(InventorySlot.FOOT,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Cum on my feet", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Кончай мне на ноги", PresetColour.CLOTHING_BLACK, false),
 						new TattooCounter(TattooCounterType.CUM_TAKEN_FEET, TattooCountType.TALLY, PresetColour.CLOTHING_BLACK, false, this)));
 		this.addTattoo(InventorySlot.NECK,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Owned by Kiarillex", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Принадлежит Киарилексу", PresetColour.CLOTHING_BLACK, false),
 						null));
 		this.addTattoo(InventorySlot.VAGINA,
 				new Tattoo(
 						"innoxia_misc_none",
 						PresetColour.CLOTHING_BLACK,
 						false,
-						new TattooWriting("Cum dump cunt", PresetColour.CLOTHING_BLACK, false),
+						new TattooWriting("Дыра для конча", PresetColour.CLOTHING_BLACK, false),
 						new TattooCounter(TattooCounterType.CUM_TAKEN_PUSSY, TattooCountType.TALLY, PresetColour.CLOTHING_BLACK, false, this)));
 		
 		// Increment stats for tattoo counters:

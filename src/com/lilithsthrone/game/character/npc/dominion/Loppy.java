@@ -74,9 +74,8 @@ public class Loppy extends NPC {
 	}
 	
 	public Loppy(boolean isImported) {
-		super(isImported, new NameTriplet("Loppy"), "Hasenkamp",
-				"Loppy is one of the two prostitutes Angel has working for her."
-						+ " Just like her younger sister, Bunny, Loppy is a rabbit-morph, and seems to genuinely love her line of work.",
+		super(isImported, new NameTriplet("Лоппи"), "Хазенкамп",
+				"Лоппи — одна из двух проституток, работающих на Ангел. Как и её младшая сестра Банни, Лоппи — кроличий морф, и, кажется, она искренне любит свою работу.",
 				22, Month.JANUARY, 7,
 				10, Gender.F_P_V_B_FUTANARI, Subspecies.RABBIT_MORPH_LOP, RaceStage.PARTIAL,
 				new CharacterInventory(false, 30), WorldType.ANGELS_KISS_FIRST_FLOOR, PlaceType.ANGELS_KISS_BEDROOM_LOPPY, true);
@@ -88,8 +87,7 @@ public class Loppy extends NPC {
 		
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.2.10.5")) {
 			resetBodyAfterVersion_2_10_5();
-			this.setDescription("Loppy is one of the two prostitutes Angel has working for her."
-						+ " Just like her younger sister, Bunny, Loppy is a rabbit-morph, and seems to genuinely love her line of work.");
+			this.setDescription("Лоппи — одна из двух проституток, работающих на Ангел. Как и её младшая сестра Банни, Лоппи — кроличий морф, и, кажется, она искренне любит свою работу.");
 		}
 		if(Main.isVersionOlderThan(Game.loadingVersion, "0.3.3.6")) {
 			this.resetPerksMap(true);
@@ -313,10 +311,7 @@ public class Loppy extends NPC {
 			String itemName = item.getName();
 			return new Value<>(false,
 					UtilText.parse(user, target,
-						"<p>"
-							+ "[npc.Name] [npc.verb(take)] out "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" from [npc.her] inventory and [npc.verb(try)] to give it to [npc2.name],"
-								+ " but [npc2.she] dismisses it with a shake of [npc.her] head and huffs, [npc2.speech(I'm not getting paid for that!)]"
-						+ "</p>"));
+						"<p>[npc.Name] [npc.verb(take)] наружу "+UtilText.generateSingularDeterminer(itemName)+" "+itemName+" достает из [npc.her] инвентаря и [npc.verb(try)], чтобы отдать это [npc2.name], но [npc2.she] отмахивается, качнув [npc.her] головой, и фыркает: [npc2.speech(Мне за это не платят!)]</p>"));
 		}
 		return super.getItemUseEffects(item, itemOwner, user, target);
 	}
