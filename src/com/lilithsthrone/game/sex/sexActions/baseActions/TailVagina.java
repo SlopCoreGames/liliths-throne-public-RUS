@@ -1192,7 +1192,7 @@ public class TailVagina {
 			switch(Main.sex.getSexPace(Main.sex.getCharacterTargetedForSexAction(this))) {
 				case DOM_GENTLE:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears [npc.verb(start)] to well up in [npc.her] [npc.eyes], and, not being able to hold back any longer, [npc.she] suddenly [npc.verb(let)] out [npc.a_sob+], before weakly trying to pull [npc2.namePos] [npc2.tail(true)] out of [npc.her] [npc.vagina+].",
+							"[npc.Name] [npc.verb(feel)] слезы [npc.verb(start)] наполняют [npc.her] [npc.eyes], и, не в силах больше сдерживаться, [npc.she] внезапно [npc.verb(let)] [npc.a_sob+], прежде чем слабо попытаться вытащить [npc2.namePos] [npc2.tail(true)] из [npc.her] [npc.vagina+].",
 
 							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], пытаясь увести [npc.her] [npc.pussy] от нежелательного проникновения [npc2.namePos], в отчаянной борьбе, пока [npc2.her] [npc2.tail+(true)] [npc2.verb(continue)] медленно скользит туда-сюда в [npc.her] [npc.vagina+].",
 
@@ -1200,7 +1200,7 @@ public class TailVagina {
 					break;
 				case DOM_NORMAL:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-							"[npc.Name] [npc.verb(feel)] tears [npc.verb(start)] to well up in [npc.her] [npc.eyes], and, not being able to hold back any longer, [npc.she] suddenly [npc.verb(let)] out [npc.a_sob+], before weakly trying to pull [npc2.namePos] [npc2.tail(true)] out of [npc.her] [npc.vagina+].",
+							"[npc.Name] [npc.verb(feel)] слезы [npc.verb(start)] наполняют [npc.her] [npc.eyes], и, не в силах больше сдерживаться, [npc.she] внезапно [npc.verb(let)] [npc.a_sob+], прежде чем слабо попытаться вытащить [npc2.namePos] [npc2.tail(true)] из [npc.her] [npc.vagina+].",
 
 							"[npc.A_sob+] вырывается изо рта [npc.namePos], пока [npc.she] отчаянно [npc.verb(try)], пытаясь увести [npc.her] [npc.pussy] от нежелательного проникновения [npc2.namePos], в отчаянной борьбе, пока [npc2.her] [npc2.tail+(true)] [npc2.verb(continue)] неистово вбивается в [npc.her] [npc.vagina+].",
 

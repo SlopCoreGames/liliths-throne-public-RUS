@@ -613,7 +613,7 @@ public class MilkingRoom implements XMLSaving {
 				case VAGINA:
 					if(!ingestingCharacter.getFetishDesire(Fetish.FETISH_VAGINAL_RECEIVING).isPositive()) {
 						 sb.append(UtilText.parse(ingestingCharacter,
-									"[npc.Name] requires a non-negative desire for the "+Fetish.FETISH_VAGINAL_RECEIVING.getName(ingestingCharacter)+" фетиш."));
+									"[npc.Name] требуется неотрицательное значение желания для "+Fetish.FETISH_VAGINAL_RECEIVING.getName(ingestingCharacter)+" фетиш."));
 					}
 					break;
 				default:

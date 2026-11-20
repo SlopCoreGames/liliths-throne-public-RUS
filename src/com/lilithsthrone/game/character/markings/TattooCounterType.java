@@ -136,21 +136,21 @@ public enum TattooCounterType {
 		}
 	},
 	
-	CUM_GIVEN("всего сделанных к림пи", "Ведет счет тому, сколько раз носитель кончал внутрь кого-либо.") {
+	CUM_GIVEN("всего сделанных кримпи", "Ведет счет тому, сколько раз носитель кончал внутрь кого-либо.") {
 		@Override
 		public int getCount(GameCharacter bearer) {
 			return bearer.getTotalCumCount(true, false);
 		}
 	},
 
-	CUM_GIVEN_PUSSY("сделанных в киску к림пи", "Ведет счет тому, сколько раз носитель кончал в чью-либо киску.") {
+	CUM_GIVEN_PUSSY("сделанных в киску кримпи", "Ведет счет тому, сколько раз носитель кончал в чью-либо киску.") {
 		@Override
 		public int getCount(GameCharacter bearer) {
 			return bearer.getTotalCumCountInArea(SexAreaOrifice.VAGINA, true, false);
 		}
 	},
 
-	CUM_GIVEN_ANUS("сделанных в анус к림пи", "Считает, сколько раз обладатель кончал кому-то в задницу.") {
+	CUM_GIVEN_ANUS("сделанных в анус кримпи", "Считает, сколько раз обладатель кончал кому-то в задницу.") {
 		@Override
 		public int getCount(GameCharacter bearer) {
 			return bearer.getTotalCumCountInArea(SexAreaOrifice.ANUS, true, false);

@@ -1030,7 +1030,7 @@ public class SlaverAlleyDialogue {
 		}
 	};
 	
-	public static final DialogueNode MARKET_STALL_ORAL = new DialogueNode("Viva Voce", "", false) {
+	public static final DialogueNode MARKET_STALL_ORAL = new DialogueNode("Вива Воче", "", false) {
 
 		@Override
 		public int getSecondsPassed() {
@@ -1456,7 +1456,7 @@ public class SlaverAlleyDialogue {
 					boolean alternateBackground = i%2==0;
 					
 					UtilText.nodeContentSB.append(UtilText.parse(slave,
-							"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:40%; float:left; margin:0; padding:0; text-align:center;'><b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b> - "
+							"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:40%; float:left; margin:0; padding:0; text-align:center;'><b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b> - "
 									+ "<span style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(slave.getGender().getName())+"</span> "
 									+ "<span style='color:"+slave.getRace().getColour().toWebHexString()+";'>"
 										+Util.capitaliseSentence((slave.isFeminine()?slave.getSubspecies().getSingularFemaleName(slave.getBody()):slave.getSubspecies().getSingularMaleName(slave.getBody())))
@@ -1472,7 +1472,7 @@ public class SlaverAlleyDialogue {
 									+ UtilText.formatAsMoney((int)(slave.getValueAsSlave(true)*0.5f), "охват")
 								+"</div>"
 								+ "<div style='float:left; width:9%; font-weight:bold; margin:0; padding:0;'>"
-									+ "<div id='"+slave.getId()+"_СТАВКА<div class='square-button-content'> class='square-button solo'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBid()+"</div></div>"
+									+ "<div id='"+slave.getId()+"_BID' class='square-button solo'> class='square-button solo'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBid()+"</div></div>"
 								+ "</div>"
 							+ "</div>"
 							));
@@ -1622,7 +1622,7 @@ public class SlaverAlleyDialogue {
 							}
 						};
 					} else {
-						return new Response("Ставка "+UtilText.formatAsMoneyUncoloured(biddingPrice+100, "охват"), "You can't afford a bid of "+(biddingPrice+100)+" огней, так что тебе придется уступить эту рабыню кому-то другому.", null);
+						return new Response("Ставка "+UtilText.formatAsMoneyUncoloured(biddingPrice+100, "охват"), "Вам не хватает средств, чтобы сделать ставку в "+(biddingPrice+100)+" огней, так что тебе придется уступить эту рабыню кому-то другому.", null);
 					}
 					
 				} else if(index==2) {

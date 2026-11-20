@@ -379,7 +379,7 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 			case CEPHALOPOD:
 				return FootType.TENTACLE.getFootName();
 			case TAIL:
-				return "fin";
+				return "плавник";
 			case TAIL_LONG:
 				return "хвост";
 		}
@@ -421,9 +421,9 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 			case TAIL:
 			case TAIL_LONG:
 				if (gc.isFeminine()) {
-					return Util.randomItemFrom(Util.newArrayListOfValues("masculine","strong"));
+					return Util.randomItemFrom(Util.newArrayListOfValues("маскулинный","сильный"));
 				} else {
-					return Util.randomItemFrom(Util.newArrayListOfValues("feminine", "strong", "slender"));
+					return Util.randomItemFrom(Util.newArrayListOfValues("женственный", "сильный", "стройный"));
 				}
 		}
 		if (gc.isFeminine()) {
@@ -487,9 +487,9 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 			case TAIL:
 			case TAIL_LONG:
 				if (gc.isFeminine()) {
-					return Util.randomItemFrom(Util.newArrayListOfValues("masculine","strong"));
+					return Util.randomItemFrom(Util.newArrayListOfValues("маскулинный","сильный"));
 				} else {
-					return Util.randomItemFrom(Util.newArrayListOfValues("feminine", "strong", "slender"));
+					return Util.randomItemFrom(Util.newArrayListOfValues("женственный", "сильный", "стройный"));
 				}
 		}
 		if (gc.isFeminine()) {
@@ -666,7 +666,7 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 					}
 				}
 				feralStringBuilder.append(
-						"<p>Без предупреждения, [npc.name] внезапно [npc.verb(lose)] всю силу в [npc.her] [npc.legs], и [npc.she] [npc.verb(collapse)] на землю с испуганным криком. Прежде чем [npc.sheIs] успеет среагировать на это тревожное событие, нижняя часть тела [npc.her] начинает стремительно трансформироваться...</p><p>Посмотрев вниз, [npc.name] [npc.verb(watch)] в неверии, как вся нижняя часть тела [npc.her] стремительно превращается в тело огромной "+feralRaceName+". A horny [npc.moan] bursts out of [npc.her] mouth as [npc.her] genitals and asshole shift to be located within a cloaca that's found on the rear-facing underside of [npc.her] massive avian body. [style.italicsSex(As [npc.her] genitals are only visible from below, [npc.she] [npc.do]n't feel embarrassed to have no clothing covering [npc.her] avian body.)]<br/>[npc.Name] now [npc.has] the [style.boldTfGeneric(avian body)] of <b style='color:"+raceColorString+";'>"+feralRaceNameWithDeterminer+"</b>, покрытое [npc.legFullDescription].</p>");
+						"<p>Без предупреждения, [npc.name] внезапно [npc.verb(lose)] всю силу в [npc.her] [npc.legs], и [npc.she] [npc.verb(collapse)] на землю с испуганным криком. Прежде чем [npc.sheIs] успеет среагировать на это тревожное событие, нижняя часть тела [npc.her] начинает стремительно трансформироваться...</p><p>Посмотрев вниз, [npc.name] [npc.verb(watch)] в неверии, как вся нижняя часть тела [npc.her] стремительно превращается в тело огромной "+feralRaceName+". Из [npc.her] рта вырывается похотливый [npc.moan], когда [npc.her] гениталии и анус смещаются, располагаясь внутри клоаки на направленной назад нижней стороне [npc.her] массивного птичьего тела. [style.italicsSex(Так как [npc.her] гениталии видны только снизу, [npc.she] не стесняется отсутствия одежды на своем птичьем теле.)]<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(птичье тело)] <b style='color:"+raceColorString+";'>"+feralRaceNameWithDeterminer+"</b>, покрытое [npc.legFullDescription].</p>");
 				break;
 			case CEPHALOPOD:
 				if(applyEffects) {
@@ -690,7 +690,7 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 					body.setGenitalArrangement(GenitalArrangement.CLOACA);
 				}
 				feralStringBuilder.append(
-						"<p>нижняя часть тела [npc.NamePos] трансформируется в тело огромного "+feralRaceName+"хвост <b style='color:, при этом [npc.her] гениталии и анус смещаются, образуя направленную вперед клоаку, расположенную там же, где обычно находятся [npc.her] межбедренные половые органы.<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(огромный хвост)] <b style='color:"+raceColorString+";'>"+feralRaceNameWithDeterminer+"</b>, покрытое [npc.legFullDescription].</p>");
+						"<p>Нижняя часть тела [npc.namePos] трансформируется в огромный хвост "+feralRaceNameWithDeterminer+", при этом [npc.her] гениталии и анус смещаются, образуя направленную вперед клоаку, расположенную там же, где обычно находятся [npc.her] межбедренные половые органы.<br/>[npc.Name] теперь [npc.has] [style.boldTfGeneric(огромный хвост)] <b style='color:"+raceColorString+";'>"+feralRaceNameWithDeterminer+"</b>, покрытый [npc.legFullDescription].</p>");
 				break;
 			case WINGED_BIPED:
 				if(applyEffects) {
@@ -701,10 +701,10 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 
 				feralStringBuilder.append(
 						"<p>"
-							+ "[npc.NamePos] lower body transforms back into a bipedal configuration, with [npc.her] genitals shifting back to their normal position between [npc.her] [npc.legs]."
-							+ " Letting out a surprised cry, [npc.name] [npc.verb(bend)] down and [npc.verb(stoop)] over as [npc.her] spine rapidly reshapes itself."
-							+ " The transformation is over within a matter of moments, leaving [npc.name] to naturally use [npc.her] [npc.arms] in place of forelegs so as to support [npc.her] newly-shaped body.<br/>"
-							+ "[npc.Name] now [npc.has] [style.boldTfGeneric(bipedal)] <b style='color:"+raceColorString+";'>"+this.getTransformName()+" ноги</b>, покрытые [npc.legFullDescription], и [style.boldTfGeneric([npc.verb(use)] [npc.her] [npc.arms], словно передние лапы)].</p>");
+							+ "Нижняя часть тела [npc.namePos] снова принимает двуногую форму, а [npc.her] гениталии возвращаются на свое обычное место между [npc.her] [npc.legs]."
+							+ " Издав удивленный вскрик, [npc.name] [npc.verb(bend)] и [npc.verb(stoop)], пока [npc.her] позвоночник стремительно меняет форму."
+							+ " Трансформация завершается в считанные мгновения, и [npc.name] начинает естественно использовать свои [npc.arms] вместо передних лап для поддержки своего нового тела.<br/>"
+							+ "[npc.Name] теперь [npc.has] [style.boldTfGeneric(двуногие)] <b style='color:"+raceColorString+";'>"+this.getTransformName()+" ноги</b>, покрытые [npc.legFullDescription], и [style.boldTfGeneric([npc.verb(use)] [npc.her] [npc.arms], словно передние лапы)].</p>");
 				break;
 			case QUADRUPEDAL:
 				feralStringBuilder.append(
@@ -794,13 +794,13 @@ public abstract class AbstractLegType implements BodyPartTypeInterface {
 					+body.getTail().getName(null)+")]");
 		}
 		// Ass:
-		partsList.add(feralRaceNameWithDeterminer+"'s ass");
+		partsList.add("зад как у "+feralRaceNameWithDeterminer);
 		// Crotch boobs:
 		if((Main.getProperties().getUddersLevel()==1 && legConfiguration!=LegConfiguration.BIPEDAL)
 				|| (Main.getProperties().getUddersLevel()==2 && body.getRaceStage()==RaceStage.GREATER)
 				|| body.isFeral()) {
 			if(body.getBreastCrotch().getType()!=BreastType.NONE && !legConfiguration.isBipedalPositionedCrotchBoobs()) {
-				partsList.add("animal-like "+body.getBreastCrotch().getName(null));
+				partsList.add("животное "+body.getBreastCrotch().getName(null));
 			}
 		}
 		feralStringBuilder.append(Util.stringsToStringList(partsList, false)+".");

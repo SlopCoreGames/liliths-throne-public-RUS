@@ -88,7 +88,7 @@ public class ClitClit {
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" Bucking [npc2.her] own [npc2.hips] in response, [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] as [npc2.she] [npc2.verb(mirror)] the movements of [npc.name] and [npc2.verb(rub)] [npc2.her] [npc2.clit+] against [npc.her] [npc.pussy+].",
+								" Подаваясь своими [npc2.hips] в ответ, [npc2.name] [npc2.verb(let)] [npc2.a_moan+], когда [npc2.she] [npc2.verb(mirror)] движения [npc.name] и [npc2.verb(rub)] свой [npc2.clit+] о [npc.her] [npc.pussy+].",
 								" В ответ на это [npc2.her] дергает своим [npc2.hips], [npc2.name] [npc2.verb(start)], зеркально повторяя движения [npc.namePos], помогая тереться [npc2.her] [npc2.clit+] вверх и вниз по [npc.her] [npc.labia+]."));
 						break;
 					case SUB_RESISTING:

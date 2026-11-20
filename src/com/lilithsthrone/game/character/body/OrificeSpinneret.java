@@ -277,7 +277,7 @@ public class OrificeSpinneret implements OrificeInterface {
 		String elasticityDescriptor = getElasticity().getDescriptor();
 		if (elasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>[npc.Name] can't help but let out a surprised gasp as [npc.she] [npc.verb(feel)] a strange slackening sensation pulsating deep within [npc.her] spinneret. Just as quickly as it started, the feeling passes, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] spinneret's [style.boldGrow(elasticity has increased)].<br/>[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " паутинница)]!</p>");
+					"<p>[npc.Name] не может сдержать удивленного вздоха, когда [npc.she] [npc.verb(feel)] странное ощущение расслабления, пульсирующее глубоко внутри [npc.her] паутинного аппарата. Это чувство проходит так же быстро, как и появилось, и [npc.she] очень быстро [npc.verb(realise)], что [style.boldGrow(эластичность [npc.her] паутинного аппарата увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(elasticityDescriptor) + " " + elasticityDescriptor + " паутинница)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 

@@ -322,7 +322,7 @@ public class SelfPenisMouth {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
 							"Грубо протолкнув [npc.her] [npc.cock+] в [npc.her] горло в последний раз, [npc.name] затем [npc.verb(pull)] [npc.her] голову назад, быстро завершая [npc.her] аутофелляцио.",
 
-							"Slamming [npc.her] [npc.face] into [npc.her] own groin, [npc.name] [npc.verb(force)] [npc.her] [npc.cock+] deep down [npc.her] throat, before pulling completely back and putting an end to [npc.her] autofellatio."));
+							"Вжимая своё [npc.face] в собственный пах, [npc.name] [npc.verb(force)] свой [npc.cock+] глубоко себе в горло, прежде чем полностью отстраниться и прекратить автофелляцию."));
 					break;
 				default:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

@@ -787,12 +787,12 @@ public class LilayaDressingRoomDialogue {
 							"Вам не хватает денег на покупку этого наряда.<br/>"
 								+(Main.game.getPlayer().getMoney()<activeOutfit.getCost()
 									?"У вас [style.colourBad(нет)] [style.moneyFormat("+activeOutfit.getCost()+", span)] (у вас есть только [style.moneyFormat("+Main.game.getPlayer().getMoney()+", span)])."
-									:"У вас [style.colourGood(есть)] необходимое количество [style.moneyFormat("+activeOutfit.getCost()+", span)].")
+									:"You [style.colourGood(have)] the required [style.moneyFormat("+activeOutfit.getCost()+", span)].")
 							+ (activeOutfit.getEssenceCost()<=0
 								?""
 								:"<br/>"
 									+(Main.game.getPlayer().getEssenceCount()<activeOutfit.getEssenceCost()
-										?"У вас [style.colourBad(нет)] [style.essenceFormat("+activeOutfit.getEssenceCost()+", span)] (у вас есть только [style.essenceFormat("+Main.game.getPlayer().getEssenceCount()+", span)])."
+										?"You [style.colourBad(don't have)] [style.essenceFormat("+activeOutfit.getEssenceCost()+", span)] (у вас есть только [style.essenceFormat("+Main.game.getPlayer().getEssenceCount()+", span)])."
 										:"У вас [style.colourGood(есть)] необходимое количество [style.essenceFormat("+activeOutfit.getEssenceCost()+", span)].")),
 							null);
 				} else {
@@ -804,7 +804,7 @@ public class LilayaDressingRoomDialogue {
 							+ "<br/>[style.colorGood(У вас есть)] [style.moneyFormat("+Main.game.getPlayer().getMoney()+", span)]"
 								+(activeOutfit.getEssenceCost()<=0
 								?"."
-								:" и [style.essenceFormat("+Main.game.getPlayer().getEssenceCount()+", span)]."),
+								:" and [style.essenceFormat("+Main.game.getPlayer().getEssenceCount()+", span)]."),
 							OUTFIT_PURCHASE) {
 						@Override
 						public void effects() {
@@ -1327,7 +1327,7 @@ public class LilayaDressingRoomDialogue {
 		String styleModifier= "width:23%; margin:1%; padding:0;";
 		if(isSecondary) {
 			className = "ячейка инвентаря (второстепенная)";
-			styleModifier = "ширина:"+((mainClothingPanelWidth/4)-1.5f)+"%; margin:0.75%; padding:0;";
+			styleModifier = "width:"+((mainClothingPanelWidth/4)-1.5f)+"%; margin:0.75%; padding:0;";
 		}
 
 		if(clothing!=null) {
@@ -1356,7 +1356,7 @@ public class LilayaDressingRoomDialogue {
 			
 		} else {
 			boolean disabled = isSlotDisabled(invSlot);
-			sb.append("<div class='"+className+(disabled?" отключено":"")+"' style='"+styleModifier+"'>");
+			sb.append("<div class='"+className+(disabled?" disabled":"")+"' style='"+styleModifier+"'>");
 				if(activeOutfit.getIgnoredSlots().contains(invSlot) && !disabled) {
 					sb.append("<div class='inventory-icon-content' style='opacity:0.25;'>"+SVGImages.SVG_IMAGE_PROVIDER.getDeniedIconDisabled()+"</div>");
 				}
@@ -1380,7 +1380,7 @@ public class LilayaDressingRoomDialogue {
 	private static String getEmptyWeaponDiv(boolean disabled, InventorySlot slot, String weaponStyle) {
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("<div class='inventory-item-slot"+(disabled?" отключено":"")+"' "+(disabled?"id='outfit_select_slot_" + slot.toString() + "'":"")+" style='"+weaponStyle+"'>");
+		sb.append("<div class='inventory-item-slot"+(disabled?" disabled":"")+"' "+(disabled?"id='outfit_select_slot_" + slot.toString() + "'":"")+" style='"+weaponStyle+"'>");
 		
 		if(!disabled) {
 			if(activeOutfit.getIgnoredSlots().contains(slot)) {
@@ -1437,7 +1437,7 @@ public class LilayaDressingRoomDialogue {
 	private static String getItemDeleteButton(InventorySlot slot, int size) {
 		StringBuilder sb = new StringBuilder();
 		int sizeReduced = size/3;
-		sb.append("<div class='normal-button' id='clear_slot_"+slot.toString()+"'style='position:absolute; right:-"+sizeReduced+"px; top:-"+sizeReduced+"px; text-align:center; font-size:"+size+"px; межстрочный интервал:"+size+"px; ширина:"+(size+2)+"px;  padding:0; margin:0; цвет:"+PresetColour.GENERIC_BAD.toWebHexString()+"; граница:1px сплошная "+PresetColour.BACKGROUND_DARK.toWebHexString()+";'>");
+		sb.append("<div class='normal-button' id='clear_slot_"+slot.toString()+"'style='position:absolute; right:-"+sizeReduced+"px; top:-"+sizeReduced+"px; text-align:center; font-size:"+size+"px; line-height:"+size+"px; width:"+(size+2)+"px;  padding:0; margin:0; color:"+PresetColour.GENERIC_BAD.toWebHexString()+"; border:1px solid "+PresetColour.BACKGROUND_DARK.toWebHexString()+";'>");
 			sb.append("X");
 //			sb.append(SVGImages.SVG_IMAGE_PROVIDER.getDiskDelete());
 		sb.append("</div>");
@@ -1764,9 +1764,9 @@ public class LilayaDressingRoomDialogue {
 				
 				for(Colour c : cr.getAllColours()) {
 //					if(!c.isDesaturated()) {
-						sb.append("<div class='normal-button"+(clothingColours.size()>i && clothingColours.get(i)==c?" выбранный":"")+"' id='DYE_CLOTHING_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
+						sb.append("<div class='normal-button"+(clothingColours.size()>i && clothingColours.get(i)==c?" selected":"")+"' id='DYE_CLOTHING_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
 												+(cr.getDefaultColours().contains(c)
-													?"цвет-границы:"+PresetColour.TEXT_GREY.toWebHexString()+";"
+													?"border-color:"+PresetColour.TEXT_GREY.toWebHexString()+";"
 													:"")
 												+(clothingColours.size()>i && clothingColours.get(i)==c
 													?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";"
@@ -1806,7 +1806,7 @@ public class LilayaDressingRoomDialogue {
 					sb.append("<div class='container-quarter-width' style='width:calc(75% - 16px);'>Узор "+Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет:<br/>");
 					
 					for (Colour c : cr.getAllColours()) {
-						sb.append("<div class='normal-button"+(clothingSelected.getPatternColours().size()>i && clothingSelected.getPatternColours().get(i)==c?" выбранный":"")+"' id='DYE_CLOTHING_PATTERN_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px;"+(clothingSelected.getPatternColours().size()>i && clothingSelected.getPatternColours().get(i)==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='"
+						sb.append("<div class='normal-button"+(clothingSelected.getPatternColours().size()>i && clothingSelected.getPatternColours().get(i)==c?" selected":"")+"' id='DYE_CLOTHING_PATTERN_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px;"+(clothingSelected.getPatternColours().size()>i && clothingSelected.getPatternColours().get(i)==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='"
 										+ (c.isMetallic()
 												?"background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 												:"background-color:" + c.toWebHexString() + ";")
@@ -1859,7 +1859,7 @@ public class LilayaDressingRoomDialogue {
 		
 		sb.append("<div class='container-quarter-width' style='text-align:center;width:calc(75% - 16px);'><b>Тип урона:</b><br/>");
 		for(DamageType dt : weaponSelected.getWeaponType().getAvailableDamageTypes()) {
-			sb.append("<div class='normal-button"+(weaponSelected.getDamageType()==dt?" выбранный":"")+"' id='ТИП_УРОНА_"+dt.toString()+"'style='width:20%; margin:0 2.5%; color:"+(weaponSelected.getDamageType()==dt?dt.getColour().toWebHexString():dt.getColour().getShades(8)[0])+";'>"
+			sb.append("<div class='normal-button"+(weaponSelected.getDamageType()==dt?" selected":"")+"' id='DAMAGE_TYPE_"+dt.toString()+"'style='width:20%; margin:0 2.5%; color:"+(weaponSelected.getDamageType()==dt?dt.getColour().toWebHexString():dt.getColour().getShades(8)[0])+";'>"
 						+ Util.capitaliseSentence(dt.getName())
 					+ "</div>");
 		}
@@ -1875,9 +1875,9 @@ public class LilayaDressingRoomDialogue {
 						+ Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет"+(cr.isRecolouringAllowed()?"":" ([style.italicsBad(нельзя изменить)])")+":<br/>");
 				
 				for(Colour c : cr.getAllColours()) {
-					sb.append("<div class='normal-button"+(weaponSelected.getColours().size()>i && weaponSelected.getColours().get(i)==c?" выбранный":"")+"' id='DYE_WEAPON_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
+					sb.append("<div class='normal-button"+(weaponSelected.getColours().size()>i && weaponSelected.getColours().get(i)==c?" selected":"")+"' id='DYE_WEAPON_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
 											+(cr.getDefaultColours().contains(c)
-												?"цвет-границы:"+PresetColour.TEXT_GREY.toWebHexString()+";"
+												?"border-color:"+PresetColour.TEXT_GREY.toWebHexString()+";"
 												:"")
 											+(weaponSelected.getColours().size()>i && weaponSelected.getColours().get(i)==c
 												?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";"
@@ -2285,8 +2285,8 @@ public class LilayaDressingRoomDialogue {
 		
 		for(TFPotency potency : TFPotency.getAllPotencies()) {
 			inventorySB.append("<div class='normal-button"
-									+(getSelectedItem().getEnchantmentEffect().getPotencyModifiers(primaryMod, secondaryMod).contains(potency)?"":" отключено")
-									+(LilayaDressingRoomDialogue.potency==potency?" выбранный":"")+"' id='МОЩНОСТЬ_"+potency+"' style='"+(LilayaDressingRoomDialogue.potency==potency?"цвет:"+potency.getColour().toWebHexString()+";":"")+" margin:0 1%; width:14%;'>"+potency.getName()+"</div>");
+									+(getSelectedItem().getEnchantmentEffect().getPotencyModifiers(primaryMod, secondaryMod).contains(potency)?"":" disabled")
+									+(LilayaDressingRoomDialogue.potency==potency?" selected":"")+"' id='POTENCY_"+potency+"' style='"+(LilayaDressingRoomDialogue.potency==potency?"color:"+potency.getColour().toWebHexString()+";":"")+" margin:0 1%; width:14%;'>"+potency.getName()+"</div>");
 		}
 		
 		inventorySB.append("</div>");

@@ -256,7 +256,7 @@ public class SadisticActions {
 							isTargetedCharacterInanimate()?null
 								:"[npc2.Name] [npc2.verb(let)] [npc2.a_moan+], пока [npc.name] [npc.verb(start)] грубо шлепает по [npc2.her] [npc2.ass+], а [npc.name] [npc.verb(find)] [npc.herself], довольно ухмыляясь, пока [npc.she] [npc.verb(watch)] [npc2.herHim] корчится и вскрикивает под [npc.her] хлесткими ударами.",
 							isTargetedCharacterInanimate()?null
-								:"[npc2.Name] [npc2.verb(let)] out a startled wail as [npc.name] [npc.verb(start)] to roughly slap [npc2.her] [npc2.ass+], and [npc.name] quickly [npc.verb(find)] [npc.herself] grinning in glee as [npc.she] [npc.verb(watch)] [npc2.herHim] squirm and wail beneath [npc.her] relentless blows.",
+								:"[npc2.Name] [npc2.verb(let)] испускает испуганный вопль, когда [npc.name] [npc.verb(start)] грубо шлепает [npc2.her] [npc2.ass+], а [npc.name] быстро [npc.verb(find)] [npc.herself], довольно ухмыляясь, пока [npc.she] [npc.verb(watch)] [npc2.herHim] корчится и воет под непрестанными ударами [npc.her]",
 							isTargetedCharacterInanimate()?null
 								:"[npc.Name] [npc.verb(growl)] на эту [npc.sheIs], собираясь занять [npc2.name] на [npc2.her] месте, прежде чем начать агрессивно шлепать [npc2.her] [npc2.ass+], ухмыляясь сверху вниз на покорную форму [npc2.her], пока та визжит и стонет под [npc.her] беспощадными ударами [npc2.she].");
 			}
@@ -529,13 +529,13 @@ public class SadisticActions {
 				sb.append(UtilText.returnStringAtRandom(
 						"Продолжая вбивать [npc.her] [npc.cock+] туда-сюда в [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(reach)] вверх, чтобы схватить [npc2.her] за шею, а затем сжать её и задушить [npc2.herHim].",
 						"[npc.Name] [npc.verb(reach)] вверх, чтобы схватить [npc2.namePos] за шею, и, всё еще мощно вколачивая [npc2.her] в [npc2.pussy+], [npc.she] грубо [npc.verb(squeeze)] вниз, чтобы задушить [npc2.herHim].",
-						"Slamming [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(reach)] up and [npc.verb(grab)] [npc2.her] neck, squeezing down and choking [npc2.herHim] as [npc.she] [npc.verb(pull)] back and [npc.verb(continue)] roughly fucking [npc2.herHim]."));
+						"Впечатывая [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(reach)] вверх и [npc.verb(grab)] [npc2.her] шею, сжимая и удушая [npc2.herHim], пока [npc.she] [npc.verb(pull)] назад и [npc.verb(continue)] грубо трахает [npc2.herHim]."));
 				
 			} else if(Main.sex.getOngoingCharactersUsingAreas(Main.sex.getCharacterTargetedForSexAction(this), SexAreaOrifice.ANUS, SexAreaPenetration.PENIS).contains(Main.sex.getCharacterPerformingAction())) {
 				sb.append(UtilText.returnStringAtRandom(
 						"Продолжая с силой вбивать [npc.her] [npc.cock+] в [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(reach)] вверх, чтобы схватить [npc2.her] за шею, а затем сжать её и начать душить [npc2.herHim].",
 						"[npc.Name] [npc.verb(reach)] вверх, чтобы схватить [npc2.namePos] за шею, и, продолжая яростно вколачивать [npc2.her] [npc2.asshole+], [npc.she] грубо [npc.verb(squeeze)] вниз, чтобы задушить [npc2.herHim].",
-						"Slamming [npc.her] [npc.cock+] deep into [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(reach)] up and [npc.verb(grab)] [npc2.her] neck, squeezing down and choking [npc2.herHim] as [npc.she] [npc.verb(pull)] back and [npc.verb(continue)] roughly fucking [npc2.herHim]."));
+						"Впечатывая [npc.her] [npc.cock+] глубоко в [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(reach)] вверх и [npc.verb(grab)] [npc2.her] шею, сжимая и удушая [npc2.herHim], пока [npc.she] [npc.verb(pull)] назад и [npc.verb(continue)] грубо трахает [npc2.herHim]."));
 				
 			} else {
 				sb.append(UtilText.returnStringAtRandom(

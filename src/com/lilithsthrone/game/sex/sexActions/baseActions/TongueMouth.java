@@ -101,7 +101,7 @@ public class TongueMouth {
 							break;
 						default:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] happily [npc2.verb(push)] [npc2.her] [npc2.tongue] deep into [npc.namePos] mouth, eagerly pressing [npc2.her] [npc2.lips+] back against [npc.hers] and [npc2.moaning] in delight as [npc2.she] greedily [npc2.verb(return)] [npc.her] display of affection.",
+								" [npc2.Name] счастливо [npc2.verb(push)] [npc2.her] [npc2.tongue] глубоко в [npc.namePos] рот, жадно прижимая [npc2.her] [npc2.lips+] к [npc.hers], а [npc2.moaning] в восторге, пока [npc2.she] жадно [npc2.verb(return)] [npc.her] знак привязанности.",
 								
 								" С нетерпеливым [npc2.moan], [npc2.name] отчаянно [npc2.verb(grind)] назад к [npc.name], заглушая [npc2.her] [npc2.moans] в [npc.her] рот, пока [npc2.she] жадно [npc2.verb(thrust)] [npc2.her] [npc2.tongue] сквозь [npc.her] [npc.lips+].",
 								
@@ -307,7 +307,7 @@ public class TongueMouth {
 					return(UtilText.returnStringAtRandom(
 						" [npc2.Name] [npc2.verb(let)] рычание, грубо втирая [npc2.her] [npc2.lips] в рот [npc.her], пока [npc2.she] яростно [npc2.verb(thrust)] [npc2.her] язык глубоко в [npc.her] горло.",
 						
-						" With a menacing growl, [npc2.name] violently [npc2.verb(grind)] up against [npc.name], concerned solely with [npc2.her] own pleasure as [npc2.she] greedily [npc2.verb(thrust)] [npc2.her] [npc2.tongue] deep down [npc.her] throat.",
+						" С угрожающим рычанием [npc2.name] яростно [npc2.verb(grind)] к [npc.name], заботясь исключительно о собственном удовольствии, пока [npc2.she] жадно [npc2.verb(thrust)] свой [npc2.tongue] глубоко в [npc.her] горло.",
 						
 						" [npc2.Name] ухмыляются в ответ на проявление [npc.namePos] привязанности, и с яростным рычанием, [npc2.she] с силой [npc2.verb(grind)] [npc2.her] [npc2.lips] против [npc.hers], заталкивая [npc2.moaning] в рот [npc.her], пока [npc2.she] жадно языком [npc2.verb(fuck)] [npc.her] горло."));
 				default:

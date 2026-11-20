@@ -633,7 +633,7 @@ public class PenisMouth {
 	
 								" Жадно втискивая [npc2.her] [npc2.pussy+] в [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] из [npc2.a_moan+], прежде чем [npc.name] решит вернуться к сосредоточению на [npc2.her] [npc2.cock+].",
 	
-								" [npc2.Moaning+], [npc2.name] eagerly [npc2.verb(buck)] [npc2.her] [npc2.hips] into [npc.namePos] [npc.face] for a few moments, before [npc.she] [npc.verb(decide)] to shift [npc.her] oral attention back to [npc2.her] [npc2.cock+]."));
+								" [npc2.Moaning+], [npc2.name] с нетерпением [npc2.verb(buck)] [npc2.her] [npc2.hips] в [npc.namePos] [npc.face] на несколько мгновений, прежде чем [npc.she] [npc.verb(decide)] переключить [npc.her] оральное внимание обратно на [npc2.her] [npc2.cock+]."));
 						break;
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -1821,7 +1821,7 @@ public class PenisMouth {
 								descriptions.add(" [npc.name] [npc.verb(bury)] глубоко в [npc2.namePos] горле [npc.her] [npc.cock+]. Удерживая [npc2.her] голову обеими [npc.hands], [npc.she] затем [npc.verb(proceed)], чтобы начать грубо трахать [npc2.her] [npc2.face], отчего из [npc2.her] [npc2.eyes] начинают катиться слезы, пока шипы, покрывающие ствол [npc.namePos], раз за разом скребут по стенкам [npc2.her] горла.");
 								break;
 							case FLARED:
-								descriptions.add(" [npc.name] [npc.verb(bury)] [npc.her] [npc.cock+] deep down [npc2.namePos] throat. Holding [npc2.her] head in place with both [npc.hands], [npc.she] then proceeds to start roughly fucking [npc2.her] [npc2.face], causing tears to start streaming from [npc2.her] [npc2.eyes] as [npc.namePos] wide, flared head forces its way up and down [npc2.her] throat.");
+								descriptions.add(" [npc.name] [npc.verb(bury)] [npc.her] [npc.cock+] глубоко в [npc2.namePos] горло. Удерживая [npc2.her] голову обеими [npc.hands], [npc.she] затем приступает к тому, чтобы грубо трахать [npc2.her] [npc2.face], заставляя слезы течь из [npc2.her] [npc2.eyes], пока [npc.namePos] широкий, раздутый головка пробивается вверх и вниз по [npc2.her] горлу.");
 								break;
 							case KNOTTED:
 								descriptions.add(" [npc.name] внезапно и яростно [npc.verb(bury)] [npc.her] глубоко в [npc.cock+] [npc2.namePos]. Удерживая [npc2.her] за голову обеими [npc.hands], [npc.she] начинает грубо трахать [npc2.her] [npc2.face], отчего из [npc2.her] [npc2.eyes] начинают течь слезы, пока [npc.namePos] [npc.verb(slam)] [npc.her] раз за разом бьется об [npc2.her] [npc2.lips+].");

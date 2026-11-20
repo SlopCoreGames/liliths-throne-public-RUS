@@ -160,7 +160,7 @@ public class LilayaSpa {
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SEDUCTIVE,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())[npc.Name] leans forwards over the counter and flashes you [npc.her] most seductive smile as [npc.she] waits to see if you'll ask anything of [npc.herHim].#ELSE[npc.Name] gazes into your [pc.eyes] and flashes you [npc.her] most seductive smile as [npc.she] waits to see if you'll ask anything of [npc.herHim].#ENDIF",
+						"#IF(npc.isFeminine())[npc.Name] наклоняется над прилавком и одаривает тебя [npc.her] самой соблазнительной улыбкой, [npc.she] ожидая, попросишь ли ты чего-нибудь у [npc.herHim].#ELSE[npc.Name] пристально смотрит тебе в [pc.eyes] и одаривает [npc.her] самой соблазнительной улыбкой, пока [npc.she] ждет, решишься ли ты попросить что-нибудь у [npc.herHim].#ENDIF",
 						"Одарив вас соблазнительной улыбкой, [npc.name] ждет, сможет ли [npc.she] чем-нибудь вам помочь.")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
@@ -242,7 +242,7 @@ public class LilayaSpa {
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_SLUTTY,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())Shamelessly rubbing [npc.her] soapy [npc.breasts] over your back, [npc.name] crudely asks,#ELSEShamelessly pressing [npc.her] soapy body against your back, [npc.name] crudely asks,#ENDIF",
+						"#IF(npc.isFeminine())Бесстыдно потирая [npc.her] мыльные [npc.breasts] по твоей спине, [npc.name] грубо спрашивает,#ELSESбесстыдно прижимая [npc.her] свое мыльное тело к твоей спине, [npc.name] грубо спрашивает,#ENDIF",
 						"Основательно ощупывая твое тело, пока [npc.she] растирает мыльные [npc.hands] [npc.her] по твоим [pc.skin], [npc.name] многозначительно спрашивает,")),
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_STANDARD,
@@ -252,7 +252,7 @@ public class LilayaSpa {
 			new Value<>(
 					SlavePermissionSetting.BEHAVIOUR_WHOLESOME,
 					Util.newArrayListOfValues(
-						"#IF(npc.isFeminine())[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and sighing,#ELSE[npc.Name] lovingly runs [npc.her] soapy hands over your body, before leaning in against you and saying,#ENDIF",
+						"#IF(npc.isFeminine())[npc.Name] с любовью проводит [npc.her] мыльными руками по твоему телу, прежде чем прижаться к тебе и вздохнуть:#ELSE[npc.Name] с любовью проводит [npc.her] мыльными руками по твоему телу, а затем прижимается к тебе и говорит:#ENDIF",
 						"Счастливо напевая [npc.herself], пока [npc.she] растирает мыло по твоему телу, [npc.name] говорит,")));
 
 	private static Map<SlavePermissionSetting, List<String>> showerGreetingsMute = Util.newHashMapOfValues(

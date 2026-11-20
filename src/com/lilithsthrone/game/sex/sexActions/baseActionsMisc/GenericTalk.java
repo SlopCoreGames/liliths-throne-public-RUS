@@ -449,7 +449,7 @@ public class GenericTalk {
 			if(Main.sex.getCharacterPerformingAction().isSpeechMuffled()) {
 				sb.append(
 						UtilText.returnStringAtRandom(
-						"As [npc.her] mouth is currently blocked, [npc.name] can't make a direct request, so instead, [npc.she] [npc.verb(let)] out a pathetic whine and [npc.verb(try)] to make [npc.herself] look as small as possible in an attempt to entice [npc2.name] to start treating [npc.herHim] roughly.",
+						"Поскольку рот [npc.her] сейчас забит, [npc.name] не может обратиться с прямой просьбой, поэтому вместо этого [npc.she] [npc.verb(let)] жалкий скулёж и [npc.verb(try)], стараясь казаться как можно меньше перед [npc.herself], в попытке соблазнить [npc2.name] начать обращаться с [npc.herHim] грубо.",
 						"Стараясь выглядеть перед [npc.herself] как можно более жалкой и ничтожной, [npc.name] [npc.verb(let)] издает тонкий скулящий звук, пока [npc.she] [npc.verb(attempt)], чтобы заставить [npc2.name] обращаться с [npc.her] похуже.",
 						"В отчаянии желая, чтобы с ней обращались как с никчемной сучкой, [npc.name] [npc.verb(try)], стараясь казаться [npc.herself] как можно меньше, и одновременно издавая жалкий, похотливый скулеж.",
 						"Не получается говорить, так как рот [npc.her] забит; [npc.name] [npc.do] — лучшее, что [npc.she] может придумать, пытаясь заставить [npc2.name] обращаться с [npc.her] грубо, и [npc.verb(make)] [npc.herself] выглядит как можно более жалко и беспомощно, при этом издавая тонкий скулящий звук."));

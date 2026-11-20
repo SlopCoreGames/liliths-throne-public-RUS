@@ -6918,9 +6918,9 @@ public class InventoryDialogue {
 				
 				for(Colour c : cr.getAllColours()) {
 //					if(!c.isDesaturated()) {
-						inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" выбранный":"")+"' id='DYE_CLOTHING_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
+						inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" selected":"")+"' id='DYE_CLOTHING_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
 												+(cr.getDefaultColours().contains(c)
-													?"цвет-границы:"+PresetColour.TEXT_GREY.toWebHexString()+";"
+													?"border-color:"+PresetColour.TEXT_GREY.toWebHexString()+";"
 													:"")
 												+(dyePreviews.size()>i && dyePreviews.get(i)==c
 													?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";"
@@ -6960,7 +6960,7 @@ public class InventoryDialogue {
 					inventorySB.append("<div class='container-quarter-width' style='width:calc(75% - 16px);'>Узор "+Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет:<br/>");
 					
 					for (Colour c : cr.getAllColours()) {
-						inventorySB.append("<div class='normal-button"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" выбранный":"")+"' id='DYE_CLOTHING_PATTERN_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px;"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='"
+						inventorySB.append("<div class='normal-button"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" selected":"")+"' id='DYE_CLOTHING_PATTERN_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px;"+(dyePreviewPatternColours.size()>i && dyePreviewPatternColours.get(i)==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='"
 											+ (c.isMetallic()
 													?"background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 													:"background-color:" + c.toWebHexString() + ";")
@@ -7003,7 +7003,7 @@ public class InventoryDialogue {
 		
 		inventorySB.append("<div class='container-quarter-width' style='text-align:center;width:calc(75% - 16px);'><b>Тип урона:</b><br/>");
 		for(DamageType dt : weapon.getWeaponType().getAvailableDamageTypes()) {
-			inventorySB.append("<div class='normal-button"+(damageTypePreview==dt?" выбранный":"")+"' id='ТИП_УРОНА_"+dt.toString()+"'style='width:20%; margin:0 2.5%; color:"+(damageTypePreview==dt?dt.getColour().toWebHexString():dt.getColour().getShades(8)[0])+";'>"
+			inventorySB.append("<div class='normal-button"+(damageTypePreview==dt?" selected":"")+"' id='DAMAGE_TYPE_"+dt.toString()+"'style='width:20%; margin:0 2.5%; color:"+(damageTypePreview==dt?dt.getColour().toWebHexString():dt.getColour().getShades(8)[0])+";'>"
 						+ Util.capitaliseSentence(dt.getName())
 					+ "</div>");
 		}
@@ -7019,9 +7019,9 @@ public class InventoryDialogue {
 						+ Util.capitaliseSentence(Util.intToPrimarySequence(i+1))+" Цвет"+(cr.isRecolouringAllowed()?"":" ([style.italicsBad(нельзя изменить)])")+":<br/>");
 				
 				for(Colour c : cr.getAllColours()) {
-					inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" выбранный":"")+"' id='DYE_WEAPON_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
+					inventorySB.append("<div class='normal-button"+(dyePreviews.size()>i && dyePreviews.get(i)==c?" selected":"")+"' id='DYE_WEAPON_"+i+"_"+c.getId()+"' style='width:auto; margin-right:4px; border-width:1px;"
 											+(cr.getDefaultColours().contains(c)
-												?"цвет-границы:"+PresetColour.TEXT_GREY.toWebHexString()+";"
+												?"border-color:"+PresetColour.TEXT_GREY.toWebHexString()+";"
 												:"")
 											+(dyePreviews.size()>i && dyePreviews.get(i)==c
 												?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";"

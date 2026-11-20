@@ -274,7 +274,7 @@ public class CityHall {
 					boolean alternateBackground = i%2==0;
 					
 					UtilText.nodeContentSB.append(UtilText.parse(slave,
-							"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:40%; float:left; margin:0; padding:0; text-align:center;'><span style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</span>"
+							"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:40%; float:left; margin:0; padding:0; text-align:center;'><span style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</span>"
 								+ "</div>"
 								+ "<div style='float:left; width:17%; margin:0; padding:0; text-align:center;'>"
 									+ UtilText.parse(slave, "[npc.Gender(true)]")
@@ -286,7 +286,7 @@ public class CityHall {
 									+ Util.capitaliseSentence(slave.getOccupation().getName(slave))
 								+"</div>"
 								+ "<div style='float:left; width:9%; font-weight:bold; margin:0; padding:0;'>"
-									+ "<div id='"+slave.getId()+"_ЖИЛЕЦ' class='square-button solo'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getPeopleIcon()+"</div></div>"
+									+ "<div id='"+slave.getId()+"_LODGER' class='square-button solo'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getPeopleIcon()+"</div></div>"
 								+ "</div>"
 							+ "</div>"
 							));

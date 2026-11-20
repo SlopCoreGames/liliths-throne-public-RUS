@@ -466,7 +466,7 @@ public class PenisBreasts {
 							break;
 						case DOM_NORMAL:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] in response, quickly pushing [npc2.her] chest out as [npc2.she] happily [npc2.verb(encourage)] [npc.herHim] to keep going."));
+									" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+] в ответ, быстро выпячивая [npc2.her] грудь, пока [npc2.she] счастливо [npc2.verb(encourage)] [npc.herHim], чтобы продолжать."));
 							break;
 						case DOM_ROUGH:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -478,7 +478,7 @@ public class PenisBreasts {
 							break;
 						case SUB_NORMAL:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-									" [npc2.Name] [npc2.verb(let)] out a little [npc2.moan] in response, pushing [npc2.her] chest out as [npc2.she] [npc2.verb(encourage)] [npc.herHim] to keep going."));
+									" [npc2.Name] слегка [npc2.verb(let)] [npc2.moan] в ответ, выпячивая [npc2.her] грудь, пока [npc2.she] [npc2.verb(encourage)] [npc.herHim], чтобы продолжать."));
 							break;
 						case SUB_RESISTING:
 							UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -1701,7 +1701,7 @@ public class PenisBreasts {
 
 							"Доминантно прижимая [npc.her] [npc.breastSize] [npc.breasts] к бокам [npc2.namePos] [npc2.cock+], [npc.name] грубо [npc.verb(lift)] их вверх и вниз, издавая [npc.a_moan+], пока [npc.she] [npc.verb(attempt)], чтобы устроить [npc2.herHim] мощный титфак.",
 
-							"Letting out [npc.a_moan+], [npc.name] forcefully [npc2.verb(push)] [npc.her] [npc.breasts+] together, trying [npc.her] best to pleasure [npc2.namePos] [npc2.cock+] with the tiny amount of cleavage [npc.she] [npc.has]."));
+							"Издавая [npc.a_moan+], [npc.name] с силой [npc2.verb(push)] [npc.her] [npc.breasts+] вместе, стараясь изо всех [npc.her] доставить удовольствие [npc2.namePos] [npc2.cock+] тем крошечным количеством декольте, что [npc.she] [npc.has]."));
 					
 				} else {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -1766,7 +1766,7 @@ public class PenisBreasts {
 
 							"Прижимая [npc.her] [npc.breastSize] [npc.breasts] к бокам [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(lift)] их вверх и вниз, издавая [npc.a_moan+], пока [npc.she] [npc.verb(attempt)], чтобы устроить [npc2.herHim] титфак.",
 
-							"Letting out [npc.a_moan+], [npc.name] [npc.verb(push)] [npc.her] [npc.breasts+] together, trying [npc.her] best to pleasure [npc2.namePos] [npc2.cock+] with the tiny amount of cleavage [npc.she] [npc.has]."));
+							"Издавая [npc.a_moan+], [npc.name] [npc.verb(push)] свои [npc.breasts+] вместе, изо всех сил стараясь доставить удовольствие [npc2.cock+] [npc2.namePos] той крошечной ложбинкой, которая у [npc.her] есть."));
 					
 				} else {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

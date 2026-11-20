@@ -2209,7 +2209,7 @@ public class PhoneDialogue {
 	private static String sexStatRow(Colour colour, String name, int given, int loadsGiven, int received, int loadsReceived, boolean light) {
 		return 
 //				"<div class='container-full-width' style='width:100%; padding:0; margin:4px 0; text-align:center;'>"
-				"<div class='container-full-width inner' style='text-align:center; margin-bottom:0;"+(light?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='float:left; width:33.3%; padding:0; margin:0;'><span style='color:" + colour.toWebHexString() + ";'>" + name + "</span>"
+				"<div class='container-full-width inner' style='text-align:center; margin-bottom:0;"+(light?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='float:left; width:33.3%; padding:0; margin:0;'><span style='color:" + colour.toWebHexString() + ";'>" + name + "</span>"
 					+ "</div>"
 					+ "<div style='float:left; width:16.66%; padding:0; margin:0;'>"
 						+ given
@@ -2602,7 +2602,7 @@ public class PhoneDialogue {
 	
 	private static String statRow(String colourLeft, String left, Colour colourCentre, String centre, String colourRight, String right) {
 		rowCount++;
-		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colourLeft+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
+		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colourLeft+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
 					+ left
 				+ "</div>"
 				+ "<div style='color:"+colourCentre.toWebHexString()+"; width:30%; float:left; font-weight:bold; margin:0; padding:0;'>"
@@ -2616,7 +2616,7 @@ public class PhoneDialogue {
 	
 	private static String statRow(Colour colourLeft, String left, Colour colourCentre, String centre, Colour colourRight, String right) {
 		rowCount++;
-		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colourLeft.toWebHexString()+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
+		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colourLeft.toWebHexString()+"; width:40%; float:left; font-weight:bold; margin:0; padding:0;'>"
 						+ left
 					+ "</div>"
 					+ "<div style='color:"+(centre.equalsIgnoreCase("unknown") || centre.equalsIgnoreCase("N/A")?PresetColour.TEXT_GREY:colourCentre).toWebHexString()+"; width:30%; float:left; font-weight:bold; margin:0; padding:0;'>"
@@ -2630,7 +2630,7 @@ public class PhoneDialogue {
 
 	private static String statRow(Colour colour, String text) {
 		rowCount++;
-		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colour.toWebHexString()+"; width:100%; float:left; font-weight:bold; margin:0; padding:0; text-align:center;'>"
+		return "<div class='container-full-width inner' style='margin-bottom:0;"+(rowCount%2==0?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"><div style='color:"+colour.toWebHexString()+"; width:100%; float:left; font-weight:bold; margin:0; padding:0; text-align:center;'>"
 						+ text
 					+ "</div>"
 				+ "</div>";
@@ -3760,10 +3760,10 @@ public class PhoneDialogue {
 			for(AbstractFetish fetish : derivedFetishList) {
 				journalSB.append(
 						"<div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon" + (Main.game.getPlayer().hasFetish(fetish)
-						? " есть' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
+						? " owned' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
 						: (fetish.isAvailable(Main.game.getPlayer())
-								? " разблокирован' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
-								: " заблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
+								? " unlocked' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
+								: " locked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
 						+ "<div class='fetish-icon-content'>"+fetish.getSVGString(Main.game.getPlayer())+"</div>"
 						+ (Main.game.getPlayer().hasFetish(fetish) // Overlay to create disabled effect:
 								? ""
@@ -3821,10 +3821,10 @@ public class PhoneDialogue {
 						+getFetishDesireEntry(targetedCharacter, fetish, FetishDesire.THREE_LIKE)
 						+getFetishDesireEntry(targetedCharacter, fetish, FetishDesire.FOUR_LOVE)
 					+ "</div><div class='container-full-width' style='margin:0 8px; width: calc(22% - 16px);'><div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon full" + (targetedCharacter.hasFetish(fetish)
-							? " есть' style='border:2px solid " + PresetColour.FETISH.toWebHexString() + ";'>"
+							? " owned' style='border:2px solid " + PresetColour.FETISH.toWebHexString() + ";'>"
 							: (fetish.isAvailable(targetedCharacter)
-									? " разблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
-									: " заблокирован' style='border:2px solid " + PresetColour.TEXT_GREY_DARK.toWebHexString() + ";'>"))
+									? " unlocked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
+									: " locked' style='border:2px solid " + PresetColour.TEXT_GREY_DARK.toWebHexString() + ";'>"))
 										+ "<div class='fetish-icon-content'>"+fetish.getSVGString(targetedCharacter)+"</div>"
 										+ "<div style='width:40%;height:40%;position:absolute;top:0;right:4px;'>"+level.getSVGImageOverlay()+"</div>"
 										+ (targetedCharacter.hasFetish(fetish) // Overlay to create disabled effect:
@@ -3844,7 +3844,7 @@ public class PhoneDialogue {
 		boolean disabled = desire!=FetishDesire.FOUR_LOVE && targetedCharacter.hasFetish(fetish);
 		
 		return "<div class='square-button"+(disabled?" disabled":"")+"' id='"+Fetish.getIdFromFetish(fetish)+"_"+desire+"' style='"+(targetedCharacter.getBaseFetishDesire(fetish)==desire
-								?"граница:2px сплошная "+PresetColour.FETISH.getShades()[1]+";"
+								?"border:2px solid "+PresetColour.FETISH.getShades()[1]+";"
 								:"")+"width:10%; margin:0 5%; float:left; cursor:pointer;'><div class='square-button-content'>"+(targetedCharacter.getFetishDesire(fetish)==desire?desire.getSVGImage():desire.getSVGImageDesaturated())+"</div>"
 				+ (targetedCharacter.hasFetish(fetish) && targetedCharacter.getFetishDesire(fetish)!=desire
 					?"<div style='position:absolute; left:0; top:0; margin:0; padding:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); border-radius:5px;'></div>"

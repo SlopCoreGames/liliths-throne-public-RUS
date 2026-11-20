@@ -237,7 +237,7 @@ public class ClitMouth {
 	
 								" Дрожащий [npc2.moan] вырывается из между [npc2.namePos] [npc2.lips+], и, прижимая [npc2.her] [npc2.pussy] к [npc.namePos] [npc.face], [npc2.she] [npc2.verb(beg)], чтобы [npc.herHim] не останавливался.",
 	
-								" Bucking [npc2.her] [npc2.hips] out against [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] out [npc2.a_moan+] before pleading for [npc.herHim] to continue."));
+								" [npc2.her] выгибается, [npc2.hips] толкаясь против [npc.namePos] [npc.face], [npc2.name] [npc2.verb(let)] [npc2.a_moan+], прежде чем умолять [npc.herHim] продолжить."));
 						break;
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -1619,7 +1619,7 @@ public class ClitMouth {
 							" [npc2.Sobbing] в смятении, [npc2.name] тщетно [npc2.verb(try)], пытаясь оттянуть [npc2.her] [npc2.clit] от рта [npc.namePos].");
 				case DOM_GENTLE:
 					return UtilText.returnStringAtRandom(
-							" [npc2.Name] gently [npc2.verb(slide)] [npc2.her] [npc2.clit+] deep into [npc.namePos] throat, letting out a soft, muffled [npc2.moan] as [npc2.she] [npc2.verb(receive)] [npc.her] oral attention.",
+							" [npc2.Name] нежно [npc2.verb(slide)] [npc2.her] [npc2.clit+] глубоко в [npc.namePos] горло, издавая мягкий, приглушенный [npc2.moan], пока [npc2.she] [npc2.verb(receive)] [npc.her] оральное внимание.",
 							" Приглушенный [npc2.moan] доносится из [npc2.namePos] рта, прежде чем [npc2.she] [npc2.verb(start)] медленно скользит [npc2.her] [npc2.clit+] глубоко в [npc.namePos] горло.",
 							" [npc2.Moaning] в восторге, [npc2.name] нежно [npc2.verb(slide)] [npc2.her] [npc2.clit+] глубоко в горло [npc.namePos].");
 				case DOM_ROUGH:

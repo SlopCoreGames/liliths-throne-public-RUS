@@ -141,7 +141,7 @@ public class ReindeerOverseerDialogue {
 				
 			} else if(index==2) {
 				return new Response("Использовать тепловой шест",
-						UtilText.parse(getReindeer(), "Tell [npc.name] that you'd like to use one of the heat-staves to score out lines in the snow.<br/>Your performance and payment will be based on your [style.italicsIntelligence("+Attribute.MAJOR_ARCANE.getName()+")]."),
+						UtilText.parse(getReindeer(), "Скажи [npc.name], что ты хочешь использовать одну из нагретых палок, чтобы прочертить линии на снегу.<br/>Твои успехи и оплата будут зависеть от твоего [style.italicsIntelligence("+Attribute.MAJOR_ARCANE.getName()+")]."),
 						ENCOUNTER_WORK_FINISHED) {
 					@Override
 					public void effects() {
@@ -154,7 +154,7 @@ public class ReindeerOverseerDialogue {
 				
 			} else if(index==3) {
 				return new Response("'Поощрение'",
-						UtilText.parse(getReindeer(), "Tell [npc.name] that you'd be best suited for delivering drinks and 'encouraging' the workers.<br/>Your performance and payment will be based on your [style.italicsCorruption("+Attribute.MAJOR_CORRUPTION.getName()+")]."),
+						UtilText.parse(getReindeer(), "Скажи [npc.name], что ты лучше всего подойдешь для разноса напитков и «поощрения» рабочих.<br/>Твоя производительность и оплата будут зависеть от твоей [style.italicsCorruption("+Attribute.MAJOR_CORRUPTION.getName()+")]."),
 						ENCOUNTER_WORK_FINISHED) {
 					@Override
 					public void effects() {

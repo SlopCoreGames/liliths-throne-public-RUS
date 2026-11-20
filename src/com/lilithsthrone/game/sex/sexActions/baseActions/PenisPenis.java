@@ -125,7 +125,7 @@ public class PenisPenis {
 				case DOM_ROUGH:
 					sb.append(UtilText.returnStringAtRandom(
 							" Грубо подаваясь [npc2.her] собственным [npc2.hips] в ответ, [npc2.name] [npc2.verb(let)] наружу [npc2.a_moan+], пока [npc2.she] [npc2.verb(mirror)] движения [npc.name] иforcefully [npc2.verb(grind)] [npc2.her] [npc2.cock] против "+getHersWithDildoHandling("npc")+".",
-							" Responding with a violent buck of [npc2.her] own [npc2.hips], [npc2.name] [npc2.verb(start)] mirroring [npc.namePos] movements, helping to roughly grind [npc2.her] [npc2.cock] up and down over "+getHersWithDildoHandling("npc")+"."));
+							" Отвечая яростным толчком [npc2.her] собственного [npc2.hips], [npc2.name] [npc2.verb(start)] зеркально повторяет движения [npc.namePos], помогая грубо втирать [npc2.her] [npc2.cock] вверх и вниз по "+getHersWithDildoHandling("npc")+"."));
 					break;
 				case DOM_NORMAL:
 				case SUB_EAGER:
@@ -499,7 +499,7 @@ public class PenisPenis {
 			if(Main.sex.getSexPace(Main.sex.getCharacterPerformingAction())==SexPace.DOM_ROUGH) {
 				String start = UtilText.returnStringAtRandom(
 						"Выпуская [npc.a_moan+], [npc.name] [npc.verb(ram)] кончик [npc.her] [npc.cock] в препуций, окружающий [npc2.namePos] [npc2.cock+], обвивая его и дразня чувствительную кожу внутри препуция.",
-						"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(reach)] down to [npc2.namePos] [npc2.cock+]. Guiding it to [npc.her] own [npc.cock+], [npc.name] [npc.verb(grin)] as [npc.she] then forcefully [npc.verb(thrust)] it past [npc2.her] [npc2.cock+] and stuffs it into [npc2.her] sheath, causing [npc2.name] to let out a startled [npc2.moan].",
+						"[npc.Name] [npc.verb(let)] наружу [npc.a_moan+] как [npc.she] [npc.verb(reach)] вниз к [npc2.namePos] [npc2.cock+]. Направляя его к [npc.her] собственному [npc.cock+], [npc.name] [npc.verb(grin)] как [npc.she] затем с силой [npc.verb(thrust)] его сквозь [npc2.her] [npc2.cock+] и запихивает в [npc2.her] ножны, заставляя [npc2.name] издать испуганный [npc2.moan].",
 						"[npc.Name] [npc.verb(grin)] от восторга, когда [npc.she] [npc.verb(guide)] [npc.her] член к отверстию препуция [npc2.namePos], прежде чем вогнать его внутрь. [npc.NamePos] [npc.cock] плотно прилегает к "+getHersWithDildoHandling("npc2")+", и [npc.she] [npc.verb(start)], чтобы с силой массировать и ласкать оба члена, ритмично подергивая препуций.",
 						"[npc.Name] [npc.verb(let)] из [npc.a_moan+] как [npc.she] [npc.verb(ram)] [npc.her] [npc.cock] в [npc2.namePos] чехол, на мгновение дразня его резкими круговыми движениями, прежде чем войти глубже.");
 				String middle1 = UtilText.returnStringAtRandom(
@@ -577,9 +577,9 @@ public class PenisPenis {
 			return UtilText.returnStringAtRandom(
 					"Выпуская [npc.a_moan+], [npc.name] [npc.verb(concentrate)], используя хватательность [npc.her] [npc.cock], чтобы обвиться вокруг [npc2.namePos] [npc2.cock+]. [npc2.Name] [npc2.verb(match)] [npc.name], сворачивая [npc2.her] [npc2.cock] в соответствии с [npc.hers], прежде чем [npc.name] [npc.verb(start)], чтобы медленно массировать и тереться о него.",
 							
-					"[npc.Name] [npc.verb(let)] out [npc.a_moan+] as [npc.she] [npc.verb(focus)] on controlling [npc.her] prehensile [npc.cock]. Wrapping it around [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(grin)] as [npc.she] then [npc.verb(entice)] [npc2.namePos] [npc2.cock] by stroking and curling around it with [npc.her] own. [npc2.Name] eagerly [npc2.verb(wrap)] [npc2.her] own prehensile [npc2.cock] around [npc.hers], returning the favour with teasing squeezes of [npc2.her] own.",
+					"[npc.Name] [npc.verb(let)] наружу, [npc.a_moan+] словно [npc.she], [npc.verb(focus)] на управлении [npc.her] цепким [npc.cock]. Оборачивая его вокруг [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(grin)] как [npc.she], затем [npc.verb(entice)] [npc2.namePos] [npc2.cock], поглаживая и обвивая его [npc.her] собственным. [npc2.Name] жадно [npc2.verb(wrap)] [npc2.her] собственный цепкий [npc2.cock] вокруг [npc.hers], отвечая взаимностью дразнящими сжатиями [npc2.her] собственного.",
 							
-					"[npc.Name] [npc.verb(grin)] in delight as [npc.she] [npc.verb(use)] [npc.her] prehensile cock to massage and stroke [npc2.namePos] [npc2.cock+], while [npc2.name] [npc2.verb(use)] [npc2.her] own prehensile shaft to mimic [npc.her] movements. Tugging at it with [npc.her] undulating [npc.cock], [npc.name] [npc.verb(settle)] on a comfortable rhythm with [npc2.name].",
+					"[npc.Name] [npc.verb(grin)] в восторге, когда [npc.she] [npc.verb(use)] [npc.her] цепкий член, чтобы массировать и ласкать [npc2.namePos] [npc2.cock+], в то время как [npc2.name] [npc2.verb(use)] [npc2.her] собственный цепкий ствол, подражая движениям [npc.her]. Потягивая за него своими [npc.her] волнообразными [npc.cock], [npc.name] [npc.verb(settle)] в комфортном ритме вместе с [npc2.name].",
 							
 					"С [npc.a_moan+], [npc.name] [npc.verb(focus)] на управлении хватательным [npc.cock] [npc.her], обвивая им [npc2.namePos] [npc2.cock+]. Обладая хватательными пенисами, [npc.name] и [npc2.name] пытаются захватить и окутать член другого, сжимая и выжимая его в стягивающих кольцах.");
 		}

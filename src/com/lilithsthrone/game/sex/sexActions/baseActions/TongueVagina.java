@@ -150,7 +150,7 @@ public class TongueVagina {
 	
 								" Мягко втискивая [npc2.her] [npc2.cock] в [npc.namePos] рот, [npc2.name] [npc2.verb(let)] мягкий [npc2.moan], прежде чем [npc.she] [npc.verb(decide)] снова спуститься, чтобы сосредоточиться на [npc2.her] [npc2.pussy+].",
 	
-								" Softly [npc2.moaning], [npc2.name] gently [npc2.verb(buck)] [npc2.her] [npc2.hips] into [npc.namePos] [npc.face] for a few moments, before [npc.she] [npc.verb(decide)] to shift [npc.her] oral attention back down to [npc2.her] [npc2.pussy+]."));
+								" Мягко [npc2.moaning], [npc2.name] нежно [npc2.verb(buck)] [npc2.her] [npc2.hips] в [npc.namePos] [npc.face] на несколько мгновений, прежде чем [npc.she] [npc.verb(decide)] снова переключить [npc.her] оральное внимание вниз, на [npc2.her] [npc2.pussy+]."));
 						break;
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

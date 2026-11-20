@@ -1285,30 +1285,30 @@ public abstract class AbstractStatusEffect {
 		int marginLeft = (50-size)/2;
 
 		if(breastsExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreasts()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreasts()+"</div>");
 			marginTop+=size;
 		} else if (nipplesExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsFlat()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsFlat()+"</div>");
 			marginTop+=size;
 		}
 		if(crotchBoobsExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsCrotch()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaBreastsCrotch()+"</div>");
 			marginTop+=size;
 		}
 		if(anusExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
 			marginTop+=size;
 		}
 		if(moundExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMound()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMound()+"</div>");
 			marginTop+=size;
 		}
 		if(penisExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getPenetrationTypePenis()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getPenetrationTypePenis()+"</div>");
 			marginTop+=size;
 		}
 		if(vaginaExposed) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
 			marginTop+=size;
 		}
 		
@@ -1335,31 +1335,31 @@ public abstract class AbstractStatusEffect {
 		int marginLeft = (50-size)/2;
 
 		if(vaginaRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
 			marginTop+=size;
 		}
 		if(anusRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
 			marginTop+=size;
 		}
 		if(throatRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
 			marginTop+=size;
 		}
 		if(nipplesRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
 			marginTop+=size;
 		}
 		if(nipplesCrotchRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNippleCrotch()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNippleCrotch()+"</div>");
 			marginTop+=size;
 		}
 		if(penileUrethraRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraPenis()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraPenis()+"</div>");
 			marginTop+=size;
 		}
 		if(vaginalUrethraRecovering) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaUrethraVagina()+"</div>");
 			marginTop+=size;
 		}
 		
@@ -1374,15 +1374,15 @@ public abstract class AbstractStatusEffect {
 		
 		int topMargin = 0;
 		if(stretch) {
-			SVGImageSB.append("<div style='width:"+iconSize+"%;высота:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(tooDeep||stretchRecoveryPrevented?"0":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretching()+"</div>");
+			SVGImageSB.append("<div style='width:"+iconSize+"%;height:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(tooDeep||stretchRecoveryPrevented?"0":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretching()+"</div>");
 			topMargin+=iconSize;
 		}
 		if(stretchRecoveryPrevented) {
-			SVGImageSB.append("<div style='width:"+iconSize+"%;высота:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||tooDeep?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretchRecoveryPrevented()+"</div>");
+			SVGImageSB.append("<div style='width:"+iconSize+"%;height:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||tooDeep?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationStretchRecoveryPrevented()+"</div>");
 			topMargin+=iconSize;
 		}
 		if(tooDeep) {
-			SVGImageSB.append("<div style='width:"+iconSize+"%;высота:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||stretchRecoveryPrevented?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationDepthMaximum()+"</div>");
+			SVGImageSB.append("<div style='width:"+iconSize+"%;height:"+iconSize+"%;position:absolute;right:"+iconRight+";top:"+(stretch||stretchRecoveryPrevented?topMargin+"%":"25%")+";'>"+SVGImages.SVG_IMAGE_PROVIDER.getCombinationDepthMaximum()+"</div>");
 		}
 		
 		int size = Math.min(50, (100/(orifices.size()+1)));
@@ -1390,19 +1390,19 @@ public abstract class AbstractStatusEffect {
 		int marginLeft = (50-size)/2;
 
 		if(orifices.contains(SexAreaOrifice.VAGINA)) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaVagina()+"</div>");
 			marginTop+=size;
 		}
 		if(orifices.contains(SexAreaOrifice.ANUS)) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaAnus()+"</div>");
 			marginTop+=size;
 		}
 		if(orifices.contains(SexAreaOrifice.NIPPLE)) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaNipple()+"</div>");
 			marginTop+=size;
 		}
 		if(orifices.contains(SexAreaOrifice.MOUTH)) {
-			SVGImageSB.append("<div style='width:"+size+"%;высота:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
+			SVGImageSB.append("<div style='width:"+size+"%;height:"+size+"%;position:absolute;left:"+marginLeft+"%;top:"+marginTop+"%;'>"+SVGImages.SVG_IMAGE_PROVIDER.getCoverableAreaMouth()+"</div>");
 			marginTop+=size;
 		}
 		

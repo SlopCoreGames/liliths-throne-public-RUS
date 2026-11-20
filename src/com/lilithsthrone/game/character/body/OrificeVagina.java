@@ -143,7 +143,7 @@ public class OrificeVagina implements OrificeInterface {
 			
 		} else {
 			return UtilText.parse(owner, 
-					"<p>[npc.Name] [npc.verb(let)] out a cry as [npc.she] [npc.verb(feel)] [npc.her] cunt uncontrollably tighten and clench. Within moments, the feeling has passed, and [npc.she] very quickly [npc.verb(realise)] that [npc.her] pussy's internal [style.boldShrink(capacity has decreased)].<br/>[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " киской)]!</p>");
+					"<p>[npc.Name] [npc.verb(let)] вырывается крик, когда [npc.she] [npc.verb(feel)] [npc.her] киска начинает неконтролируемо сжиматься и пульсировать. Спустя мгновение ощущение проходит, и [npc.she] очень быстро [npc.verb(realise)], что внутренняя часть [npc.her] щелочки [style.boldShrink(емкость уменьшилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(capacityDescriptor) + " " + capacityDescriptor + " киской)]!</p>");
 		}
 	}
 	

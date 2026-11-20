@@ -224,7 +224,7 @@ public class SexSlotAllFours {
 		@Override
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS);
-			return "Performing oral on "+UtilText.parse(partner, "[npc.name]");
+			return "Делает минет "+UtilText.parse(partner, "[npc.name]");
 		}
 	};
 	public static final SexSlot BEHIND_ORAL_TWO = new SexSlot(
@@ -236,7 +236,7 @@ public class SexSlotAllFours {
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS_TWO);
 			if(partner==null) {partner = getCharacterInSlot(ALL_FOURS);}
-			return "Performing oral on "+UtilText.parse(partner, "[npc.name]");
+			return "Делает минет "+UtilText.parse(partner, "[npc.name]");
 		}
 	};
 	public static final SexSlot BEHIND_ORAL_THREE = new SexSlot(
@@ -248,7 +248,7 @@ public class SexSlotAllFours {
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS_THREE);
 			if(partner==null) {partner = getCharacterInSlot(ALL_FOURS);}
-			return "Performing oral on "+UtilText.parse(partner, "[npc.name]");
+			return "Делает минет "+UtilText.parse(partner, "[npc.name]");
 		}
 	};
 	public static final SexSlot BEHIND_ORAL_FOUR = new SexSlot(
@@ -260,7 +260,7 @@ public class SexSlotAllFours {
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS_FOUR);
 			if(partner==null) {partner = getCharacterInSlot(ALL_FOURS);}
-			return "Performing oral on "+UtilText.parse(partner, "[npc.name]");
+			return "Делает минет "+UtilText.parse(partner, "[npc.name]");
 		}
 	};
 
@@ -321,7 +321,7 @@ public class SexSlotAllFours {
 		@Override
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS);
-			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" over ":" before ")+UtilText.parse(partner, "[npc.name]");
+			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" над ":" перед ")+UtilText.parse(partner, "[npc.name]");
 		}
 		@Override
 		public boolean isStanding(GameCharacter target) {
@@ -338,7 +338,7 @@ public class SexSlotAllFours {
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS_TWO);
 			if(partner==null) {partner = getCharacterInSlot(ALL_FOURS);}
-			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" over ":" before ")+UtilText.parse(partner, "[npc.name]");
+			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" над ":" перед ")+UtilText.parse(partner, "[npc.name]");
 		}
 		@Override
 		public boolean isStanding(GameCharacter target) {
@@ -356,7 +356,7 @@ public class SexSlotAllFours {
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS_THREE);
 			if(partner==null) {partner = getCharacterInSlot(ALL_FOURS);}
-			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" over ":" before ")+UtilText.parse(partner, "[npc.name]");
+			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" над ":" перед ")+UtilText.parse(partner, "[npc.name]");
 		}
 		@Override
 		public boolean isStanding(GameCharacter target) {
@@ -374,7 +374,7 @@ public class SexSlotAllFours {
 		public String getName(GameCharacter target) {
 			GameCharacter partner = getCharacterInSlot(ALL_FOURS_FOUR);
 			if(partner==null) {partner = getCharacterInSlot(ALL_FOURS);}
-			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" over ":" before ")+UtilText.parse(partner, "[npc.name]");
+			return (this.isStanding(target)?"Стоя":"На коленях")+(target.isTaur()?" над ":" перед ")+UtilText.parse(partner, "[npc.name]");
 		}
 		@Override
 		public boolean isStanding(GameCharacter target) {

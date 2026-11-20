@@ -92,7 +92,7 @@ public class PenisVagina {
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getPrimaryDPPerformer(Main.sex.getCharacterTargetedForSexAction(this))),
 								UtilText.returnStringAtRandom(
-								"Not deterred by the fact that [npc3.namePos] [npc3.cock] is already deep in [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(start)] roughly grinding the [npc.cockTip+] of [npc.her] own [npc.cock+] up against [npc2.her] [npc2.labia+], threatening to start double-penetrating [npc.herHim] at any moment.",
+								"Тот факт, что [npc3.namePos] [npc3.cock] уже глубоко в [npc2.namePos] [npc2.pussy+], ничуть не сдерживает [npc.name], который грубо [npc.verb(start)] трется [npc.cockTip+] своего собственного [npc.cock+] о [npc2.her] [npc2.labia+] [npc.her], угрожая в любой момент начать двойное проникновение в [npc.herHim].",
 								"С [npc.a_moan+], [npc.name] с силой [npc.verb(rub)] [npc.cockTip+] [npc.her] [npc.cock] по открытым частям [npc2.namePos] [npc2.labia+], намекая на то, что [npc.she] может присоединиться к [npc3.name] и начать двойное проникновение в [npc2.her] [npc2.pussy+].",
 								"Грубо водя [npc.cockTip+] [npc.her] [npc.cock] вверх и вниз по открытым частям [npc2.namePos] [npc2.pussy+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(signal)], что [npc.she] может присоединиться к [npc3.name] для какого-нибудь двойного проникновения.")));
 						break;
@@ -695,7 +695,7 @@ public class PenisVagina {
 					case SUB_RESISTING:
 						UtilText.nodeContentSB.append(UtilText.parse(getCharactersForParsing(), UtilText.returnStringAtRandom(
 								" [npc2.Name] [npc2.verb(let)] [npc2.a_sob+], когда второй [npc.cock] входит в [npc2.herHim], и, пока слезы текут по [npc2.her] [npc2.face], [npc2.she] [npc2.verb(beg)] ради [npc.name] и того, чтобы [npc3.name] вытащил его.",
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(try)], in vain, to pull away from the second unwanted penetration, and tears start once again running freely down [npc2.her] [npc2.face] as [npc2.she] [npc2.verb(feel)] [npc.namePos] unwelcome [npc.cock] pushing deep into [npc2.her] [npc2.pussy+].")));
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(try)], тщетно пытаясь отстраниться от второго нежеланного проникновения, и слезы снова начинают свободно катиться по [npc2.her] [npc2.face], пока [npc2.she] [npc2.verb(feel)] [npc.namePos] незваный [npc.cock], втискиваясь глубоко в [npc2.her] [npc2.pussy+].")));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.parse(getCharactersForParsing(),

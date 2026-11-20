@@ -101,21 +101,21 @@ public class PenisAnus {
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(
 								UtilText.returnStringAtRandom(
-								"Not deterred by the fact that [npc3.namePos] [npc3.cock] is already deep in [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(start)] roughly grinding the [npc.cockTip+] of [npc.her] own [npc.cock+] up against [npc2.her] [npc2.assCloaca+], threatening to start double-penetrating [npc.herHim] at any moment.",
+								"Ничуть не смущаясь тем, что [npc3.cock] [npc3.namePos] уже глубоко в [npc2.asshole+] [npc2.namePos], [npc.name] [npc.verb(start)] грубо тереться головкой ([npc.cockTip+]) своего [npc.cock+] о [npc2.her] [npc2.assCloaca+], угрожая начать двойное проникновение в любой момент.",
 								"С [npc.a_moan+], [npc.name] с силой [npc.verb(rub)] [npc.cockTip+] [npc.her] [npc.cock] по открытым частям [npc2.namePos] [npc2.assCloaca+], намекая на то, что [npc.she] может присоединиться к [npc3.name] и начать двойное проникновение в [npc2.her] [npc2.asshole+].",
 								"Грубо водя [npc.cockTip+] [npc.her] [npc.cock] вверх и вниз по открытым частям [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(signal)], что [npc.she] может присоединиться к [npc3.name] для какого-нибудь двойного проникновения."));
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(
 								UtilText.returnStringAtRandom(
-								"Not deterred by the fact that [npc3.namePos] [npc3.cock] is already deep in [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(start)] grinding the [npc.cockTip+] of [npc.her] own [npc.cock+] up against [npc2.her] [npc2.assCloaca+], threatening to start double-penetrating [npc.herHim] at any moment.",
+								"Ничуть не смущаясь тем, что [npc3.cock] [npc3.namePos] уже глубоко в [npc2.asshole+] [npc2.namePos], [npc.name] [npc.verb(start)] тереться головкой ([npc.cockTip+]) своего [npc.cock+] о [npc2.her] [npc2.assCloaca+], угрожая начать двойное проникновение в любой момент.",
 								"С [npc.a_moan+], [npc.name] [npc.verb(rub)] [npc.cockTip+] [npc.her] [npc.cock] по открытым частям [npc2.namePos] [npc2.assCloaca+], намекая на то, что [npc.she] может присоединиться к [npc3.name] и начать двойное проникновение в [npc2.her] [npc2.asshole+].",
 								"Водя [npc.cockTip+] [npc.her] [npc.cock] вверх и вниз по открытым частям [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(signal)], что [npc.she] может присоединиться к [npc3.name] для какого-нибудь двойного проникновения."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(
 								UtilText.returnStringAtRandom(
-								"Not deterred by the fact that [npc3.namePos] [npc3.cock] is already deep in [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(start)] eagerly grinding the [npc.cockTip+] of [npc.her] own [npc.cock+] up against [npc2.her] [npc2.assCloaca+], threatening to start double-penetrating [npc.herHim] at any moment.",
+								"Ничуть не смущаясь тем, что [npc3.cock] [npc3.namePos] уже глубоко в [npc2.asshole+] [npc2.namePos], [npc.name] [npc.verb(start)] нетерпеливо тереться головкой ([npc.cockTip+]) своего [npc.cock+] о [npc2.her] [npc2.assCloaca+], угрожая начать двойное проникновение в любой момент.",
 								"Пока [npc.a_moan+], [npc.name] с энтузиазмом [npc.verb(rub)] [npc.cockTip+] [npc.her] [npc.cock] по открытым частям [npc2.namePos] [npc2.assCloaca+], намекая, что [npc.she] может присоединиться к [npc3.name] и начать двойное проникновение в [npc2.her] [npc2.asshole+].",
 								"С жадностью потирая [npc.cockTip+] [npc.her] [npc.cock] вверх и вниз по открытым частям [npc2.namePos] [npc2.asshole+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(signal)], что [npc.she] может присоединиться к [npc3.name] в каком-нибудь двойном проникновении."));
 						break;

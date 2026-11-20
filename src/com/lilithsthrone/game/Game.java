@@ -3830,13 +3830,13 @@ public class Game implements XMLSaving {
 //										+ "<div class='inner-text-content'>"
 											+ getMapDiv()
 											+ (headerContent != null
-												? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px; -webkit-user-select: none;'>"
+												? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px; -webkit-user-select: none;'>"
 													+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 													+ "</div>"
 												: "")
 											+ (content != null
 													? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-															+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
+															+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
 																+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+"'>"
 															+ pastDialogueSB.toString()
 														+ "</div>"
@@ -3856,13 +3856,13 @@ public class Game implements XMLSaving {
 //									+ "<div class='inner-text-content'>"
 										+ getMapDiv()
 										+ (headerContent != null
-											? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+											? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 												+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 												+ "</div>"
 											: "")
 										+ (content != null
 												? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-														+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
+														+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
 															+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 														+ pastDialogueSB.toString()
 													+ "</div>"
@@ -4080,13 +4080,13 @@ public class Game implements XMLSaving {
 //							+ "<div class='inner-text-content'>"
 								+ getMapDiv()
 								+ (headerContent != null
-									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 										+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 										+ "</div>"
 									: "") 
 								+ (content != null
 									? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-											+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
+											+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
 												+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 									+ pastDialogueSB.toString() + "</div>" : "")
 	//									+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>" : "")
@@ -4104,13 +4104,13 @@ public class Game implements XMLSaving {
 //								+ "<div class='inner-text-content'>"
 									+ getMapDiv()
 									+ (headerContent != null
-										? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+										? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 											+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 											+ "</div>"
 										: "")
 									+ (content != null
 										? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")
-												+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
+												+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
 													+ (requiresYScroll(node)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 												+ pastDialogueSB.toString()
 											+ "</div>"
@@ -4328,7 +4328,7 @@ public class Game implements XMLSaving {
 			int responsePageCounter = 0;
 			while (node.getResponseTabTitle(responsePageCounter) != null){
 				choicesDialogueSB.append(
-						"<div class='response-tab"+(responseTab==responsePageCounter?" выбран":"'")
+						"<div class='response-tab"+(responseTab==responsePageCounter?" selected'":"'")
 							+ (isResponseTabEmpty(node, responsePageCounter)
 									?"style='color:"+PresetColour.TEXT_GREY.toWebHexString()+";'"
 									:(responseTab==responsePageCounter
@@ -4377,7 +4377,7 @@ public class Game implements XMLSaving {
 				if (response != null) {
 					choicesDialogueSB.append(getResponseBoxDiv(response, i));
 				} else
-					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==i?" выбранный":"")+"' id='option_" + i + "'>"
+					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==i?" selected":"")+"' id='option_" + i + "'>"
 												+ "<b class='hotkey-icon disabled'>" + getResponseHotkey(i) + "</b>"
 											+ "</div>");
 			}
@@ -4386,7 +4386,7 @@ public class Game implements XMLSaving {
 				choicesDialogueSB.append(getResponseBoxDiv(response, 0));
 
 			} else
-				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==0?" выбранный":"")+"' id='option_0'><b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
+				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer==0?" selected":"")+"' id='option_0'><b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
 										+ "</div>");
 			
 		} else {
@@ -4395,7 +4395,7 @@ public class Game implements XMLSaving {
 				if (response != null) {
 					choicesDialogueSB.append(getResponseBoxDiv(response, i + 1));
 				} else {
-					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)==i?" выбранный":"")+"' id='option_" + (i + 1) + "'>"
+					choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-(responsePage*MainController.RESPONSE_COUNT)==i?" selected":"")+"' id='option_" + (i + 1) + "'>"
 												+ "<b class='hotkey-icon disabled'>" + getResponseHotkey(i + 1) + "</b>"
 											+ "</div>");
 				}
@@ -4404,7 +4404,7 @@ public class Game implements XMLSaving {
 			if (response != null) {
 				choicesDialogueSB.append(getResponseBoxDiv(response, 0));
 			} else {
-				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==0?" выбранный":"")+"' id='option_0'><b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
+				choicesDialogueSB.append("<div class='response-box disabled"+(responsePointer-((responsePage+1)*MainController.RESPONSE_COUNT)+1==0?" selected":"")+"' id='option_0'><b class='hotkey-icon disabled'>" + getResponseHotkey(0) + "</b>"
 											+ "</div>");
 			}
 			
@@ -4473,7 +4473,7 @@ public class Game implements XMLSaving {
 						+ (currentDialogueNode.getHeaderContent() != null ? "<div id='header-content'>" + currentDialogueNode.getHeaderContent() + "</div>" : "")
 						+ (content != null
 								? "<div id='text-content'"
-									+ " style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;"
+									+ " style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;"
 										+ (requiresYScroll(currentDialogueNode)?" overflow-y:scroll; overflow-x:hidden;":"")+ "'>"
 									+ textStartStringBuilder.toString() + pastDialogueSB.toString() + textEndStringBuilder.toString() + "</div>"
 								: "")
@@ -4738,12 +4738,12 @@ public class Game implements XMLSaving {
 						+ "<div class='div-center' id='content-block'>"
 								+ getMapDiv()
 								+ (headerContent != null
-									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
+									? "<div id='header-content' style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;-webkit-user-select: none;'>"
 										+ (currentDialogueNode.disableHeaderParsing() ? headerContent : UtilText.parse(headerContent))
 										+ "</div>"
 									: "")
 								+ (content != null
-										? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")+" style='font-size:" + Main.getProperties().fontSize + "px; межстрочный интервал:" + (Main.getProperties().fontSize + 6) + "px;'>"
+										? "<div "+(Main.getProperties().hasValue(PropertyValue.fadeInText)?"id='text-content'":"")+" style='font-size:" + Main.getProperties().fontSize + "px; line-height:" + (Main.getProperties().fontSize + 6) + "px;'>"
 												+ content
 											+ "</div>"
 										: "")

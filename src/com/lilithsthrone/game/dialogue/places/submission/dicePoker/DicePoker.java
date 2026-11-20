@@ -123,8 +123,8 @@ public class DicePoker {
 					+(comparingHands==0
 						?"[style.colourDisabled(Вы "+(progress==3?"вытянули":"вытягиваете")+"...)]"
 						:(comparingHands<0
-							?"[style.colourTerrible(Вы "+(progress==3?"проиграли":"проигрывают")+"!)]"
-							:"[style.colourExcellent(Вы "+(progress==3?"выиграли":"выигрываете")+"!)]"))
+							?"[style.colourTerrible(Вы "+(progress==3?"have lost":"are losing")+"!)]"
+							:"[style.colourExcellent(You "+(progress==3?"выиграли":"выигрываете")+"!)]"))
 						+ "</div>");
 		UtilText.nodeContentSB.append("</div>");
 		

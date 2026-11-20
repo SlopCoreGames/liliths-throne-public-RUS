@@ -396,7 +396,7 @@ public class PenisThighs {
 
 							"[npc.A_sob+] с силой вырывается из-за [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя протесты [npc.her], [npc2.she] властно удерживает [npc.herHim] на месте, яростно вжимая [npc2.her] [npc2.legs] в пах [npc.her], пока [npc2.she] грубо [npc2.verb(force)] [npc.her] [npc.cock+] между [npc2.her] бедрами.",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.name] to let go of [npc.her] [npc.cock]. [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, roughly grinding [npc2.herself] against [npc.herHim] as [npc2.she] [npc2.verb(force)] [npc.her] [npc.cock+] deep between [npc2.her] thighs."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.name] отпустил [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] совершенно [npc2.verb(ignore)] [npc.her] протестует, грубо втирая [npc2.herself] в [npc.herHim], пока [npc2.she] [npc2.verb(force)] [npc.her] [npc.cock+] глубоко между [npc2.her] бёдер."));
 					break;
 				default: // DOM_NORMAL and in case anything goes wrong:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

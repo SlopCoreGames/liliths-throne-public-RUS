@@ -51,7 +51,7 @@ public class PenisFoot {
 			
 			if(Main.sex.getCharacterTargetedForSexAction(this).getLegType().getFootType().equals(FootType.HOOFS)) {
 				UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						"[npc.Eagerly(bringing)] [npc2.namePos] hard hoof up to [npc.her] [npc.cock+], [npc.name] carefully [npc.verb(press)] the sole against [npc.her] genitals, before thrusting [npc.her] [npc.hips] forwards and starting to receive a hoofjob.",
+						"[npc.Eagerly(bringing)] [npc2.namePos] подносит твердое копыто к [npc.her] [npc.cock+], аккуратно [npc.verb(press)] подошвой по [npc.her] гениталиям, после чего [npc.name] резко подает [npc.her] [npc.hips] вперед, начиная получать hoofjob.",
 	
 								"[npc.Name] [npc.verb(rub)] [npc.cockHead+] [npc.her], прижимая [npc.cock] к твердому [npc2.namePos] копыту, прежде чем осторожно прижать [npc2.her] подошву к [npc.her] стволу и начать получать hoofjob."));
 

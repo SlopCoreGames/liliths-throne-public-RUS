@@ -1007,7 +1007,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(!author.isEmpty()) {
 			int authorDivHeight = 48;
 			specialYIncrease += 48 + 8;
-			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; макс.-высота:"+authorDivHeight+"px;'>" + author + "</div>");
+			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; max-height:"+authorDivHeight+"px;'>" + author + "</div>");
 		}
 		
 		tooltipSB.append("</body>");
@@ -1277,7 +1277,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(!author.isEmpty()) {
 			int authorDivHeight = 48;
 			specialYIncrease += 48 + 8;
-			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; макс.-высота:"+authorDivHeight+"px;'>" + author + "</div>");
+			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; max-height:"+authorDivHeight+"px;'>" + author + "</div>");
 		}
 		
 		tooltipSB.append("</body>");
@@ -1550,7 +1550,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		if(!author.isEmpty()) {
 			int authorDivHeight = 48;
 			specialYIncrease += 48 + 8;
-			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; макс.-высота:"+authorDivHeight+"px;'>" + author + "</div>");
+			tooltipSB.append("<div class='description' style='margin:4px 8px; min-height:"+authorDivHeight+"px; max-height:"+authorDivHeight+"px;'>" + author + "</div>");
 		}
 		
 		tooltipSB.append("</body>");
@@ -1645,7 +1645,7 @@ public class TooltipInventoryEventListener implements EventListener {
 		String slotStyle = Main.game.isEnchantmentCapacityEnabled()
 				?"style='margin:2px 2px 2px 8px; width:calc(50% - 10px);'"
 				:"";
-		tooltipSB.append("<div class='"+(Main.game.isEnchantmentCapacityEnabled()?"контейнер-половина-ширины титул":"контейнер-на-всю-ширину титульный")+"' "+slotStyle+">" 
+		tooltipSB.append("<div class='"+(Main.game.isEnchantmentCapacityEnabled()?"container-half-width titular":"container-full-width titular")+"' "+slotStyle+">" 
 					+ (invSlot.getTattooSlotName()==null
 						?"[style.colourDisabled(Нельзя набить татуировку)]"
 						:Util.capitaliseSentence(invSlot.getTattooSlotName())) 

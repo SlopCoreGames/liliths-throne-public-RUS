@@ -429,7 +429,7 @@ public class Daddy extends NPC {
 		return " [daddy.SheIsFull] дома только в часы с "+Units.time(LocalTime.of(Daddy.getHourAvailableStart(), 00))+" and "+Units.time(LocalTime.of(Daddy.getHourAvailableEnd(), 00))
 				+(Main.game.getSecondsPassed()<Main.game.getDialogueFlags().getSavedLong(DADDY_RESET_TIMER_ID)+(60*60*3)
 						?". [style.colourBad(Из-за недавней встречи с [daddy.herHim], [daddy.she] снова появится только завтра.)]"
-						:", и поэтому сейчас [daddy.sheIs] "
+						:", and as such, [daddy.sheIs] currently "
 							+(Daddy.isAvailable()
 									?"[style.colourGood(доступен)]."
 									:"[style.colourBad(недоступен)]."));

@@ -1024,7 +1024,7 @@ public class CompanionManagement {
 			
 			UtilText.nodeContentSB.append("<div class='container-full-width inner' style='text-align:center;padding-left:2px;padding-right:2px;'>");
 
-			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSchedulePasteAvailable()?"без выбора":"")+"' id='pasteSlaveJobSchedule' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSchedulePasteAvailable()?"opacity:0.5;":"")+"'>"
+			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSchedulePasteAvailable()?"no-select":"")+"' id='pasteSlaveJobSchedule' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSchedulePasteAvailable()?"opacity:0.5;":"")+"'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getPasteIcon()
 								+ "</div>");
 			UtilText.nodeContentSB.append("<div class='title-button' id='copySlaveJobSchedule' style='position:absolute; left:auto; right:48px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999;'>"
@@ -1038,8 +1038,8 @@ public class CompanionManagement {
 			for(SlaveJob job : SlaveJob.values()) {
 				if(!job.isHidden(character) && (character.isSlave() || job.hasFlag(SlaveJobFlag.GUEST_CAN_WORK))) {
 					UtilText.nodeContentSB.append(
-							"<div class='normal-button' id='"+job+"_НАЗНАЧИТЬ' style='width:calc(16.6% - 2px); margin:1px;color:"
-									+job.getColour().toWebHexString()+";"+(Main.game.getDialogueFlags().getSlaveryManagerJobSelected()==job?"цвет-границы:"+job.getColour().toWebHexString()+";":"")+"'>"
+							"<div class='normal-button' id='"+job+"_ASSIGN' style='width:calc(16.6% - 2px); margin:1px;color:"
+									+job.getColour().toWebHexString()+";"+(Main.game.getDialogueFlags().getSlaveryManagerJobSelected()==job?"border-color:"+job.getColour().toWebHexString()+";":"")+"'>"
 									+Util.capitaliseSentence(job.getName(character))
 									+"</div>");
 				}
@@ -1052,7 +1052,7 @@ public class CompanionManagement {
 				Colour colour = character.getSlaveJob(i).getColour();
 				Colour borderColour = colour;
 				Colour backgroundColour = colour;
-				String background = "фон:"+backgroundColour.getShades()[0]+";";
+				String background = "background:"+backgroundColour.getShades()[0]+";";
 //				if(character.isSleepingAtHour(i)) {
 ////					colour = PresetColour.BASE_PURPLE_DARK;
 ////					background = "background:"+PresetColour.BASE_PURPLE.getShades()[0]+";";
@@ -1065,10 +1065,10 @@ public class CompanionManagement {
 							|| (!character.isSlave() && character.isSleepingAtHour(i)))
 						&& !jobSelected.equals(SlaveJob.IDLE)) { // Always allow idle job
 					UtilText.nodeContentSB.append(
-							"<div class='normal-button hour disabled' style='"+background+"цвет-границы:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_РАБОТА_ОТКЛЮЧЕНА'>");
+							"<div class='normal-button hour disabled' style='"+background+"border-color:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_WORK_DISABLED'>");
 				} else {
 					UtilText.nodeContentSB.append(
-							"<div class='normal-button hour' style='"+background+"цвет-границы:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_WORK'>");
+							"<div class='normal-button hour' style='"+background+"border-color:"+borderColour.toWebHexString()+";color:"+colour.getShades()[4]+";' id='"+i+"_WORK'>");
 				}
 				UtilText.nodeContentSB.append(String.format("%02d", i)+":00");
 				if(character.isSleepingAtHour(i)) { // Sleeping indication via 'zzZ'
@@ -1116,7 +1116,7 @@ public class CompanionManagement {
 			UtilText.nodeContentSB.append(
 					"<div class='container-full-width' style='text-align:center;'>");
 
-			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSettingsPasteAvailable()?"без выбора":"")+"' id='pasteSlaveJobSettings' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSettingsPasteAvailable()?"opacity:0.5;":"")+"'>"
+			UtilText.nodeContentSB.append("<div class='title-button "+(!isJobSettingsPasteAvailable()?"no-select":"")+"' id='pasteSlaveJobSettings' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isJobSettingsPasteAvailable()?"opacity:0.5;":"")+"'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getPasteIcon()
 								+ "</div>");
 			UtilText.nodeContentSB.append("<div class='title-button' id='copySlaveJobSettings' style='position:absolute; left:auto; right:48px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999;'>"
@@ -1181,8 +1181,8 @@ public class CompanionManagement {
 							:job.toString()+setting.toString()+"_ADD";
 			
 					UtilText.nodeContentSB.append(
-							"<div id='"+id+"' class='normal-button"+(settingActive?" выбранный":"")+"' style='width:23%; margin:1%; text-align:center;"
-										+(settingActive?"цвет-границы:"+job.getColour().toWebHexString()+";":"цвет-границы:"+job.getColour().getShades()[0]+";")+"'>"
+							"<div id='"+id+"' class='normal-button"+(settingActive?" selected":"")+"' style='width:23%; margin:1%; text-align:center;"
+										+(settingActive?"border-color:"+job.getColour().toWebHexString()+";":"border-color:"+job.getColour().getShades()[0]+";")+"'>"
 								+ (settingActive
 										?"<span style='color:"+job.getColour().toWebHexString()+";margin:8px;'>"+setting.getName()+"</span>"
 										:"[style.colourDisabled("+setting.getName()+")]")
@@ -1205,8 +1205,8 @@ public class CompanionManagement {
 								:setting.toString()+"_TOGGLE_ADD";
 				
 						UtilText.nodeContentSB.append(
-								"<div id='"+id+"' class='normal-button"+(settingActive?" выбранный":"")+"' style='width:23%; margin:1%; text-align:center;"
-											+(settingActive?"цвет-границы:"+job.getColour().toWebHexString()+";":"")+"'>"
+								"<div id='"+id+"' class='normal-button"+(settingActive?" selected":"")+"' style='width:23%; margin:1%; text-align:center;"
+											+(settingActive?"border-color:"+job.getColour().toWebHexString()+";":"")+"'>"
 									+ (settingActive
 											?"<span style='color:"+job.getColour().toWebHexString()+";margin:8px;'>"+setting.getName()+"</span>"
 											:"[style.colourDisabled("+setting.getName()+")]")
@@ -1281,7 +1281,7 @@ public class CompanionManagement {
 			// Permissions:
 			UtilText.nodeContentSB.append("<div class='container-full-width' style='text-align:center;'>");
 
-			UtilText.nodeContentSB.append("<div class='title-button "+(!isPermissionsPasteAvailable()?"без выбора":"")+"' id='pastePermissions' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isPermissionsPasteAvailable()?"opacity:0.5;":"")+"'>"
+			UtilText.nodeContentSB.append("<div class='title-button "+(!isPermissionsPasteAvailable()?"no-select":"")+"' id='pastePermissions' style='position:absolute; left:auto; right:8px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999; "+(!isPermissionsPasteAvailable()?"opacity:0.5;":"")+"'>"
 									+ SVGImages.SVG_IMAGE_PROVIDER.getPasteIcon()
 								+ "</div>");
 			UtilText.nodeContentSB.append("<div class='title-button' id='copyPermissions' style='position:absolute; left:auto; right:48px; top:8px; padding:2px; margin:0; width:24px; height:24px; border:1px solid #999;'>"
@@ -1302,18 +1302,18 @@ public class CompanionManagement {
 											?(settingActive?setting+"_REMOVE_ME":setting+"_ADD")
 											:(settingActive?setting+"_REMOVE":setting+"_ADD"));
 							
-							String style = "ширина:23%; отступ:1%;";
+							String style = "width:23%; margin:1%;";
 							if(permission.getSettings().size()==5) {
-								style = "ширина:18%; отступ:1%;"; // These settings can fit 5 on a line
+								style = "width:18%; margin:1%;"; // These settings can fit 5 on a line
 							}
 							
 							UtilText.nodeContentSB.append(
-									"<div id='"+id+"' class='normal-button"+(settingActive?" выбранный":"")+"' style='"+style+"text-align:center;"
+									"<div id='"+id+"' class='normal-button"+(settingActive?" selected":"")+"' style='"+style+"text-align:center;"
 												+(settingActive
-													?"цвет-границы:"+permission.getColour().toWebHexString()+";"
+													?"border-color:"+permission.getColour().toWebHexString()+";"
 													:(permission.isMutuallyExclusiveSettings()
 															?""
-															:"цвет-границы:"+permission.getColour().getShades()[0]+";"))+"'>"
+															:"border-color:"+permission.getColour().getShades()[0]+";"))+"'>"
 										+ (settingActive
 												?"<span style='color:"+permission.getColour().toWebHexString()+";margin:8px;'>"+setting.getName()+"</span>"
 												:"[style.colourDisabled("+setting.getName()+")]")

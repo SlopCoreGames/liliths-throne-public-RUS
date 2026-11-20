@@ -4556,7 +4556,7 @@ public class Sex {
 								}
 								penetrationSB.append(UtilText.parse(characterPenetrated, characterPenetrating,
 										"<p style='text-align:center;'>"
-												+ "[style.italicsSex([npc2.NamePos] "+penetrationType.getName(characterPenetrating)+" bulges [npc.namePos] throat so much that [npc.her] [style.boldBad("+clothing.getName()+" щелкает)]!)]<br/>"+characterPenetrated.addedItemToInventoryText(clothing, 1)
+												+ "[style.italicsSex([npc2.NamePos] "+penetrationType.getName(characterPenetrating)+" так сильно раздувает [npc.namePos] горло, что [npc.her] [style.boldBad("+clothing.getName()+" щелкает)]!)]<br/>"+characterPenetrated.addedItemToInventoryText(clothing, 1)
 										+ "</p>"));
 								characterPenetrated.unequipClothingIntoInventory(clothing, true, characterPenetrated);
 							}

@@ -1418,7 +1418,7 @@ public class Lyssieth extends NPC {
 				sb.append("</p>");
 			}
 
-			sb.append("<p>[npc.speechNoExtraEffects(That's a good [pc.girl],)] [npc.name] responds, and you try to suppress your whimpers as [npc.she] resumes where [npc.she] left off and thrusts the remaining length of [npc.her] huge demonic-cock into your asshole. As [npc.she] fills you with [npc.her] hot, throbbing shaft, [npc.name] softly moans, [npc.speechNoExtraEffects(That's it... ~Mmm!~ Take my cock nice and deep... It'll start feeling good for you soon enough...)]</p><p>Sure enough, after [npc.nameHas] pulled [npc.her] cock back out of your asshole, the discomfort starts to fade away, and you find yourself letting out a lewd moan as you concentrate on the feeling of [npc.her] [npc.cockHead+] pushing its way into your broken-in butt as [npc.she] gently thrusts forwards once again...</p>");
+			sb.append("<p>[npc.speechNoExtraEffects(Хороший [pc.girl],)] [npc.name] отзывается, и ты пытаешься подавить всхлипы, пока [npc.she] продолжает там, где [npc.she] остановилась, и вгоняет оставшуюся часть [npc.her] огромного демонического члена в твой анус. Пока [npc.she] наполняет тебя [npc.her] горячим, пульсирующим стволом, [npc.name] тихо стонет: [npc.speechNoExtraEffects(Вот так... ~Ммм!~ Принимай мой член поглубже... Скоро тебе станет очень хорошо...)]</p><p>Как и ожидалось, после того как [npc.nameHas] вытащил [npc.her] член из твоего ануса, дискомфорт начинает утихать, и ты невольно издаешь похотливый стон, сосредоточившись на ощущении того, как [npc.her] [npc.cockHead+] втискивается в твою размятую задницу, пока [npc.she] снова плавно толкается вперед...</p>");
 		}
 		
 		return UtilText.parse(this,  sb.toString());

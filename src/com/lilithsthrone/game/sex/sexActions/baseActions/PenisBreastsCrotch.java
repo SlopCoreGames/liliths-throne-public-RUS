@@ -603,7 +603,7 @@ public class PenisBreastsCrotch {
 				
 			} else if(Main.sex.getCharacterTargetedForSexAction(this).getBreastCrotchSize().getMeasurement()>=CupSize.AA.getMeasurement()) {
 				UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-						"Sliding [npc.her] [npc.cock+] between [npc2.namePos] tiny [npc2.crotchBoobs], [npc.name] [npc.verb(start)] bucking [npc.her] [npc.hips] back and forth, letting out [npc.a_moan+] with every thrust as [npc.she] [npc.verb(fuck)] [npc2.her] diminutive cleavage.",
+						"Скользя [npc.her] [npc.cock+] между крошечными [npc2.namePos] [npc2.crotchBoobs], [npc.name] [npc.verb(start)] дергаясь [npc.her] [npc.hips] взад-вперед, издавая [npc.a_moan+] при каждом толчке, пока [npc.she] [npc.verb(fuck)] [npc2.her] крошечную ложбинку.",
 
 						"Втискивая [npc.her] [npc.cock+] в узкую ложбинку между [npc2.namePos] [npc2.crotchBoobs+], [npc.name] [npc.verb(start)] толкая [npc.her] [npc.hips] вперед, издавая [npc.moans+], пока [npc.she] счастливо [npc.verb(grind)] вверх-вниз по [npc2.her] низ живота.",
 
@@ -1294,7 +1294,7 @@ public class PenisBreastsCrotch {
 
 							"Нежно прижимая [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs] к бокам [npc2.namePos] [npc2.cock+], [npc.name] медленно [npc.verb(lift)] их вверх и вниз, издавая тихий [npc.moan], пока [npc.she] с любовью [npc.verb(attempt)], чтобы устроить [npc2.herHim] титфак.",
 
-							"Letting out a soft [npc.moan], [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs+] together, trying [npc.her] best to pleasure [npc2.namePos] [npc2.cock+] with the tiny amount of cleavage [npc.she] [npc.has]."));
+							"Издавая тихий [npc.moan], [npc.name] [npc.verb(push)] свои [npc.crotchBoobs+] вместе, изо всех сил стараясь доставить удовольствие [npc2.cock+] [npc2.namePos] той крошечной ложбинкой, которая у [npc.her] есть."));
 					
 				} else {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -1355,7 +1355,7 @@ public class PenisBreastsCrotch {
 
 							"С жадностью прижимая [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs] к бокам [npc2.namePos] [npc2.cock+], [npc.name] энергично [npc.verb(lift)] их вверх и вниз, издавая [npc.a_moan+], пока [npc.she] с энтузиазмом [npc.verb(attempt)], чтобы устроить [npc2.herHim] титфак.",
 
-							"Letting out [npc.a_moan+], [npc.name] happily [npc2.verb(push)] [npc.her] [npc.crotchBoobs+] together, trying [npc.her] best to pleasure [npc2.namePos] [npc2.cock+] with the tiny amount of cleavage [npc.she] [npc.has]."));
+							"Издавая [npc.a_moan+], [npc.name] счастливо [npc2.verb(push)] [npc.her] [npc.crotchBoobs+] вместе, стараясь изо всех [npc.her] сил доставить удовольствие [npc2.namePos] [npc2.cock+] тем крошечным количеством декольте, что [npc.she] [npc.has]."));
 					
 				} else {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -1477,7 +1477,7 @@ public class PenisBreastsCrotch {
 
 							"Прижимая [npc.her] [npc.crotchBoobSize] [npc.crotchBoobs] к бокам [npc2.namePos] [npc2.cock+], [npc.name] [npc.verb(lift)] их вверх и вниз, издавая [npc.a_moan+], пока [npc.she] [npc.verb(attempt)], чтобы устроить [npc2.herHim] титфак.",
 
-							"Letting out [npc.a_moan+], [npc.name] [npc.verb(push)] [npc.her] [npc.crotchBoobs+] together, trying [npc.her] best to pleasure [npc2.namePos] [npc2.cock+] with the tiny amount of cleavage [npc.she] [npc.has]."));
+							"Издавая [npc.a_moan+], [npc.name] [npc.verb(push)] свои [npc.crotchBoobs+] вместе, изо всех сил стараясь доставить удовольствие [npc2.cock+] [npc2.namePos] той крошечной ложбинкой, которая у [npc.her] есть."));
 					
 				} else {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

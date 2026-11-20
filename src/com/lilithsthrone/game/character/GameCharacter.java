@@ -5002,14 +5002,14 @@ public abstract class GameCharacter implements XMLSaving {
 		if(this.isPlayer()) {
 			return UtilText.parse(this,
 					"<p style='text-align:center'>"
-							+ "[npc.Name] "+(increment>0?"[style.boldGrow(gain)]":"[style.boldShrink(lose)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(obedience)],"
+							+ "[npc.Name] "+(increment>0?"[style.boldGrow(прирост)]":"[style.boldShrink(потеря)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(obedience)],"
 									+ " and feel <b style='color:"+this.getObedience().getColour().toWebHexString()+";'>"+this.getObedience().getName()+"</b>!"
 						+ "</p>");
 			
 		} else {
 			return UtilText.parse(this,
 					"<p style='text-align:center'>"
-							+ "[npc.Name] "+(increment>0?"[style.boldGrow(gains)]":"[style.boldShrink(теряет)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(покорность)].<br/>"
+							+ "[npc.Name] "+(increment>0?"[style.boldGrow(приросты)]":"[style.boldShrink(теряет)]")+" <b>"+Math.abs(increment)+"</b> [style.boldObedience(покорность)]!<br/>[npc.She] теперь [npc.has] <b>"+(obedience>0?"+":"")+Units.round(obedience, 1)+"</b> [style.boldObedience(покорность)].<br/>"
 							+ ObedienceLevel.getDescription(this, ObedienceLevel.getObedienceLevelFromValue(obedience), true, false)
 						+ "</p>"
 						+ (teacherPerkGain
@@ -5491,7 +5491,7 @@ public abstract class GameCharacter implements XMLSaving {
 		return UtilText.parse(this, character,
 				"<p style='text-align:center'>"
 					+ (affectionChangeDescription!=null && !affectionChangeDescription.isEmpty()?"<i>"+affectionChangeDescription+"</i><br/>":"")
-					+ "[npc.Name] "+(affectionIncrement>0?"[style.boldGood(gains)]":"[style.boldBad(loses)]")+" <b>"+Math.abs(affectionIncrement)+"</b> [style.boldAffection(привязанность)] к [npc2.name]!<br/>"
+					+ "[npc.Name] "+(affectionIncrement>0?"[style.boldGood(приросты)]":"[style.boldBad(потери)]")+" <b>"+Math.abs(affectionIncrement)+"</b> [style.boldAffection(привязанность)] к [npc2.name]!<br/>"
 					+ AffectionLevel.getDescription(this, character, true)
 				+ "</p>");
 	}
@@ -8071,7 +8071,7 @@ public abstract class GameCharacter implements XMLSaving {
 						"[npc.Name] медленно ведет [npc.her] руками между бедер [npc.her], [npc.speech(Ты же знаешь, что хочешь этого!)]",
 						"[npc.Name] посылает тебе воздушный поцелуй, а затем многозначительно подмигивает в твою сторону.",
 						"Прикусив [npc.her] губу и бросив на [npc.her] самый томный взгляд, [npc.name] медленно ведет [npc.her] руками по внутренней стороне бедер [npc.her].",
-						"[npc.Name] gives you [npc.her] most innocent look and blows you a kiss.",
+						"[npc.Name] бросает на [npc.her] самый невинный взгляд и посылает тебе воздушный поцелуй.",
 						"Развернувшись, [npc.name] игриво хихикает, пока [npc.she] дает [npc.her] [npc.ass+] звонкую пощечину.",
 						"[npc.Name] медленно ведет [npc.her] [npc.hands] вдоль всего тела [npc.her], а затем капризно надувает губы, глядя на тебя."));
 				
@@ -8094,7 +8094,7 @@ public abstract class GameCharacter implements XMLSaving {
 						"[npc.Name] ухмыляется тебе, опуская [npc.he] руку и сжимая [npc.his] промежность, [npc.speech(Ты же знаешь, что хочешь попробовать это на вкус!)]",
 						"[npc.Name] посылает тебе воздушный поцелуй, а затем многозначительно подмигивает в твою сторону.",
 						"Уверенно улыбаясь тебе, [npc.name] медленно ведет [npc.her] руками по внутренней стороне бедер [npc.her].",
-						"[npc.Name] gives you [npc.her] most seductive look and blows you a kiss.",
+						"[npc.Name] бросает на тебя [npc.her] самый соблазнительный взгляд и посылает воздушный поцелуй.",
 						"Развернувшись, [npc.name] игриво смеется, когда [npc.she] дает [npc.her] [npc.ass+] звонкую пощечину.",
 						"[npc.Name] старается выглядеть как можно властнее, пока [npc.she] игриво ухмыляется тебе."));
 				
@@ -26371,7 +26371,7 @@ public abstract class GameCharacter implements XMLSaving {
 			return UtilText.parse(this, "Будучи [npc.sheIsFull] [npc.a_race], [npc.name] не может по своему желанию менять форму [npc.her] тела!");
 		}
 		if(this.isFeral()) {
-			return UtilText.parse(this, "As [npc.sheIsFull] a feral [npc.race], [npc.name] cannot have [npc.her] body transformed!");
+			return UtilText.parse(this, "Как [npc.sheIsFull] дикая [npc.race], [npc.name] не может позволить своему [npc.her] телу трансформироваться!");
 		}
 		if(this.getClothingCurrentlyEquipped().stream().anyMatch(c -> c.isSelfTransformationInhibiting())) {
 			return UtilText.parse(this, "Хотя [npc.nameIsFull] обычно способна к самотрансформации, [npc.she] не может этого сделать из-за чар на одежде [npc.her], запрещающих использование [npc.her] способностей к самотрансформации!");
@@ -26759,13 +26759,13 @@ public abstract class GameCharacter implements XMLSaving {
 				if(partner.equals(this)) {
 					return UtilText.parse(this, partner,
 							"<p style='text-align:center;'><i>"
-								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(marked)] by [npc.her] "+lipstickToAdd.getFullDescription(partner, true)+"!"
+								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(отмечено)] [npc.her] "+lipstickToAdd.getFullDescription(partner, true)+"!"
 							+ "</i></p>");
 					
 				} else {
 					return UtilText.parse(this, partner,
 							"<p style='text-align:center;'><i>"
-								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(marked)] by [npc2.namePos] "+lipstickToAdd.getFullDescription(partner, true)+"!"
+								+ "[npc.NamePos] "+invSlot.getNameOfAssociatedPart(this)+" "+(invSlot.isPlural(this)?"являются":"есть")+" [style.italicsPinkDeep(отмечено)] [npc2.namePos] "+lipstickToAdd.getFullDescription(partner, true)+"!"
 							+ "</i></p>");
 				}
 				
@@ -30446,7 +30446,7 @@ public abstract class GameCharacter implements XMLSaving {
 			}
 			milkedSB.append((Main.getProperties().hasValue(PropertyValue.cumRegenerationContent)
 									?"[npc.NamePos]"
-									:Units.fluid(Math.abs(increment))+" of [npc.namePos]")
+									:Units.fluid(Math.abs(increment))+" из [npc.namePos]")
 								+ " [npc.cum] засасывает в резервуар доильного аппарата!");
 			if(withFormatting) {
 				milkedSB.append(")]</p>");

@@ -918,7 +918,7 @@ public class GenericActions {
 				
 			} else if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction()).hasTag(SexSlotTag.ALL_FOURS)) {
 				return UtilText.returnStringAtRandom(
-						"[npc.Name] [npc.verb(let)] out [npc.a_sob+] as [npc.she] [npc.verb(try)] to crawl away from [npc2.name], but [npc.her] efforts prove to be in vain as [npc2.name] [npc2.verb(grab)] [npc.her] [npc.hips] and [npc2.verb(pull)] [npc.her] [npc.ass] back into [npc2.her] groin.",
+						"[npc.Name] [npc.verb(let)] из [npc.a_sob+] как [npc.she] [npc.verb(try)], чтобы уползти от [npc2.name], но усилия [npc.her] оказываются напрасными, так как [npc2.name] [npc2.verb(grab)] [npc.her] [npc.hips] и [npc2.verb(pull)] [npc.her] [npc.ass] обратно в пах [npc2.her].",
 						
 						"Пытаясь уползти от [npc2.name] на четвереньках, [npc.name] [npc.verb(let)] [npc.a_sob+], пока [npc2.she] [npc2.verb(grasp)] [npc.her] [npc.hips], прежде чем снова притянуть [npc.herHim] на место.",
 						
@@ -2416,7 +2416,7 @@ public class GenericActions {
 		
 		@Override
 		public String getDescription() {
-			return "With an annoyed sigh, [npc.name] disentangles [npc.herself] from [npc2.namePos] clutches, [npc.speechNoExtraEffects(Eugh... I'm not really feeling this right now, ok?)]";
+			return "Раздраженно вздохнув, [npc.name] высвобождает [npc.herself] из хватки [npc2.namePos], [npc.speechNoExtraEffects(Эх... мне сейчас не особо хочется, ладно?)]";
 		}
 		
 		@Override
@@ -2983,7 +2983,7 @@ public class GenericActions {
 		}
 		@Override
 		public String getDescription() {
-			return "Not wanting [npc2.name] to try and make any move of [npc2.her] own, [npc.name] [npc.verb(point)] [npc.her] spinneret at [npc2.herHim], before starting to shoot out a continuous strand of thick, sticky webbing. Before [npc2.she] [npc2.verb(know)] what's happening, [npc2.namePos] [npc2.arms] and [npc2.legs] are completely restrained by the strong binding, and after just a few moments more, [npc.name] [npc.has] completely wrapped [npc2.herHim] up in a cocoon. Smirking at [npc.her] handiwork, [npc.name] [npc.verb(prepare)] to make good use of the fact that [style.boldBad([npc2.name] [npc2.is] no longer able to move)].";
+			return "Не желая, чтобы [npc2.name] попыталась предпринять хоть какое-то движение, [npc.name] [npc.verb(point)] свою паутинную бородавку на [npc2.herHim], после чего начинает выпускать непрерывную нить густой, липкой паутины. Прежде чем [npc2.she] [npc2.verb(know)] происходящее, [npc2.namePos] [npc2.arms] и [npc2.legs] оказываются полностью скованы тугими путами, а спустя всего несколько мгновений [npc.name] [npc.has] полностью окутывает [npc2.herHim] коконом. Усмехаясь над проделками [npc.her], [npc.name] [npc.verb(prepare)], чтобы вовсю воспользоваться тем, что [style.boldBad([npc2.name] [npc2.is] больше не может двигаться)].";
 		}
 		@Override
 		public void applyEffects() {

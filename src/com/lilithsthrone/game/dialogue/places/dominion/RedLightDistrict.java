@@ -525,7 +525,7 @@ public class RedLightDistrict {
 			
 			if (index == 1) {
 				return new ResponseSex("Секс ("+UtilText.formatAsMoney(2000, "охват")+")",
-						"Accept the price of "+2000+" огней, чтобы переспать с [npc.name].",
+						"Принять цену за "+2000+" огней, чтобы переспать с [npc.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getActiveNPC()),
@@ -575,7 +575,7 @@ public class RedLightDistrict {
 			
 			if (index == 1) {
 				return new ResponseSex("Секс ("+UtilText.formatAsMoney(2000, "охват")+")",
-						"Accept the price of "+2000+" огней, чтобы переспать с [npc.name].",
+						"Принять цену за "+2000+" огней, чтобы переспать с [npc.name].",
 						true, false,
 						new SMGeneric(
 								Util.newArrayListOfValues(Main.game.getPlayer()),

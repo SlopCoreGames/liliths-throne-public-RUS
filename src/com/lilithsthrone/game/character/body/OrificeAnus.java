@@ -248,7 +248,7 @@ public class OrificeAnus implements OrificeInterface {
 		String plasticityDescriptor = getPlasticity().getDescriptor();
 		if (plasticityChange > 0) {
 			return UtilText.parse(owner, 
-					"<p>[npc.Name] [npc.verb(let)] out a shocked gasp as [npc.she] suddenly [npc.verb(feel)] a strange hardening sensation pulsating deep within [npc.her] ass. Before [npc.she] [npc.has] any time to panic, the feeling quickly fades away, leaving [npc.herHim] instinctively knowing that [npc.her] asshole's [style.boldGrow(plasticity has increased)].<br/>[npc.Name] now [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " анусом)]!</p>");
+					"<p>[npc.Name] [npc.verb(let)] издает шокированный вздох, когда [npc.she] внезапно [npc.verb(feel)] странное ощущение затвердевания, пульсирующее глубоко внутри [npc.her] задницы. Прежде чем [npc.she] [npc.has] успеет запаниковать, чувство быстро исчезает, оставляя [npc.herHim] инстинктивное понимание того, что [style.boldGrow(пластичность ануса [npc.her] увеличилась)].<br/>[npc.Name] теперь [npc.has] [style.boldSex(" + UtilText.generateSingularDeterminer(plasticityDescriptor) + " " + plasticityDescriptor + " анусом)]!</p>");
 			
 		} else {
 			return UtilText.parse(owner, 

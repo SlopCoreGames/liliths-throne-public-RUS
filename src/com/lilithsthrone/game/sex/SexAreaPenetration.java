@@ -429,7 +429,7 @@ public enum SexAreaPenetration implements SexAreaInterface {
 										sb.append(" Поднимая и опуская [npc2.her] [npc2.hips+], [npc2.name] [npc2.was] вскоре [npc2.moaning], когда [npc2.she] [npc2.sexPaceVerb] заставил [npc.namePos] [npc.cock] поверх [npc2.her] [npc2.asshole+].");
 										break;
 									case SUB_RESISTING:
-										sb.append(" Sobbing and crying, [npc2.name] did [npc2.her] best to pull away from [npc.name], but ended up being held in place and having [npc2.her] [npc2.ass] used against [npc2.her] will.");
+										sb.append(" Всхлипывая и рыдая, [npc2.name] изо всех сил [npc2.her] пыталась вырваться из рук [npc.name], но в итоге ее удерживали на месте, вопреки [npc2.her] воле, заставляя принимать [npc2.her] [npc2.ass].");
 										break;
 								}
 							}
@@ -469,7 +469,7 @@ public enum SexAreaPenetration implements SexAreaInterface {
 										sb.append(" Удерживая [npc2.her] [npc2.arm] наверху, [npc2.name] [npc2.was] вскоре [npc2.moaning], когда [npc2.she] [npc2.sexPaceVerb] заставили [npc.namePos] [npc.cock] через [npc2.her] [npc2.armpit+].");
 										break;
 									case SUB_RESISTING:
-										sb.append(" Sobbing and crying, [npc2.name] did [npc2.her] best to pull away from [npc.name], but ended up being held in place and having [npc2.her] [npc2.armpits] fucked against [npc2.her] will.");
+										sb.append(" Всхлипывая и рыдая, [npc2.name] изо всех сил пыталась вырваться из рук [npc.name], но в итоге ее удерживали на месте, вопреки [npc2.her], заставляя [npc2.her] [npc2.armpits] [npc2.her].");
 										break;
 								}
 							}
@@ -662,7 +662,7 @@ public enum SexAreaPenetration implements SexAreaInterface {
 										sb.append("[npc.Name] [npc.sexPaceVerb] прижал [npc.cockHead+] [npc.her] [npc.cock] к одной из [npc2.namePos] [npc2.nipples+], после чего резко толкнулся вперед и трахнул [npc2.her] [npc2.breast+].");
 										break;
 									case SUB_RESISTING:
-										sb.append("[npc.Name] tried to resist, but [npc.was] unable to stop [npc2.name] from making [npc.herHim] penetrate and fuck [npc2.her] [npc2.nipples+].");
+										sb.append("[npc.Name] пыталась сопротивляться, но [npc.was] не смог помешать [npc2.name] заставить [npc.herHim] проникнуть и трахать [npc2.her] [npc2.nipples+].");
 										break;
 								}
 							}
@@ -1156,7 +1156,7 @@ public enum SexAreaPenetration implements SexAreaInterface {
 										sb.append(" Поднятие и опускание [npc2.her] [npc2.hips+], [npc2.name] [npc2.was] вскоре [npc2.moaning], как [npc2.she] [npc2.sexPaceVerb] заставил [npc.namePos] [npc.clit] через [npc2.her] [npc2.asshole+].");
 										break;
 									case SUB_RESISTING:
-										sb.append(" Sobbing and crying, [npc2.name] did [npc2.her] best to pull away from [npc.name], but ended up being held in place and having [npc2.her] [npc2.ass] used against [npc2.her] will.");
+										sb.append(" Всхлипывая и рыдая, [npc2.name] изо всех сил [npc2.her] пыталась вырваться из рук [npc.name], но в итоге ее удерживали на месте, вопреки [npc2.her] воле, заставляя принимать [npc2.her] [npc2.ass].");
 										break;
 								}
 							}
@@ -1389,7 +1389,7 @@ public enum SexAreaPenetration implements SexAreaInterface {
 										sb.append("[npc.Name] [npc.sexPaceVerb] прижал [npc.her] [npc.clit] к одной из [npc2.namePos] [npc2.crotchNipples+], прежде чем резко толкнуться вперед и оттрахать [npc2.her] [npc2.crotchBoob+].");
 										break;
 									case SUB_RESISTING:
-										sb.append("[npc.Name] tried to resist, but [npc.was] unable to stop [npc2.name] from making [npc.herHim] penetrate and fuck [npc2.her] [npc2.crotchNipples+].");
+										sb.append("[npc.Name] пыталась сопротивляться, но [npc.was] не смогла помешать [npc2.name] [npc.herHim] проникать и трахать [npc2.her] [npc2.crotchNipples+].");
 										break;
 								}
 							}

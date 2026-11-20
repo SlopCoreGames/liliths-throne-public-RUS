@@ -74,7 +74,7 @@ public class KneelingOral {
 							false));
 			}
 			
-			UtilText.nodeContentSB.append("<br/><br/>After a few moments of grinding down on [npc2.namePos] face, [npc.namePos] overwhelming orgasm starts to fade, and [npc.she] [npc.verb(stand)] up on shaky [npc.legs], grinning down at [npc2.name] as [npc.she] [npc.verb(feel)] a slick stream of saliva and [npc.girlCum] drooling down from [npc.her] [npc.pussy+].");
+			UtilText.nodeContentSB.append("<br/><br/>Спустя несколько мгновений после того, как [npc2.namePos] терлась лицом о [npc.namePos], ее всепоглощающий оргазм начинает утихать, и [npc.she] [npc.verb(stand)] на дрожащих [npc.legs], ухмыляясь на [npc2.name], пока [npc.she] [npc.verb(feel)] скользкую струю слюны и [npc.girlCum], стекающую из [npc.her] [npc.pussy+].");
 			
 			return Main.sex.getCharacterPerformingAction().getSexActionOrgasmOverride(this, Main.sex.getAvailableCumTargets(Main.sex.getCharacterPerformingAction()).get(0), false, UtilText.nodeContentSB.toString()).getDescription();
 		}

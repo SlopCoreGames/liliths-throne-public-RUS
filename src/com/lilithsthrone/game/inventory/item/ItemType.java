@@ -154,7 +154,7 @@ public class ItemType {
 					"Вы вытаскиваете пробку из стеклянного флакона «Дара фетиша», подносите его к губам и жадно выпиваете содержащуюся внутри приторно-сладкую жидкость.",
 					"Вы вытаскиваете пробку из стеклянного флакона «Дара фетиша», подносите его к губам [npc.namePos] и заставляете [npc.herHim] выпить содержимое.",
 					"[npc.Name] достает стеклянный флакон «Дара фетиша» и, быстро вытащив пробку, [npc.she] залпом осушает всю бутылочку.",
-					"[npc.Name] pulls out a glass vial of 'Fetish Endowment', and, after quickly pulling out the stopper, [npc.she] brings it to your lips before tilting your head back and forcing you to quickly gulp down the sickly sweet liquid that's contained within.");
+					"[npc.Name] достает стеклянный флакон «Дара Фетиша» и, быстро вытащив пробку, [npc.she] подносит его к твоим губам, после чего запрокидывает твою голову и заставляет жадно глотать содержащуюся внутри приторно-сладкую жидкость.");
 		}
 	};
 	
@@ -222,7 +222,7 @@ public class ItemType {
 					"Вы вынимаете пробку из стеклянного флакона «Ангельской чистоты», подносите его к губам и жадно выпиваете прохладную, освежающую жидкость.",
 					"Вы вынимаете пробку из стеклянного флакона «Ангельской чистоты», подносите его к губам [npc.namePos] и заставляете [npc.herHim] осушить содержимое.",
 					"[npc.Name] достает стеклянный флакон «Ангельской чистоты» и, быстро вытащив пробку, [npc.she] залпом выпивает всё содержимое.",
-					"[npc.Name] pulls out a glass vial of 'Angel's Purity', and, after quickly pulling out the stopper, [npc.she] brings it to your lips before tilting your head back and forcing you to quickly gulp down the cool, refreshing liquid which is contained within.");
+					"[npc.Name] достает стеклянный флакон «Чистоты Ангела» и, быстро вытащив пробку, [npc.she] подносит его к твоим губам, после чего запрокидывает твою голову и заставляет жадно глотать содержащуюся внутри прохладную освежающую жидкость.");
 		}
 	};
 	
@@ -952,7 +952,7 @@ public class ItemType {
 			return getGenericUseDescription(user, target,
 					"Вы проводите тестом на беременность по своему животу, ожидая звукового сигнала, прежде чем поднести его к глазам, чтобы взглянуть на показания.",
 					"Вы проводите тестом на беременность по животу [npc.namePos], ожидая звукового сигнала, прежде чем поднести его к глазам, чтобы взглянуть на показания.",
-					"[npc.Name] swipes the pregnancy tester over [npc.her] stomach, waiting until [npc.she] hears it beep before bringing it up to take a look at the readout.",
+					"[npc.Name] проводит тестом на беременность по [npc.her] животу, ожидая, пока [npc.she] услышит писк, прежде чем поднести его к глазам, чтобы взглянуть на результат.",
 					"[npc.Name] проводит тестом на беременность по твоему животу, ожидая, пока [npc.she] услышит писк, прежде чем поднести его поближе, чтобы взглянуть на результат.");
 		}
 	};

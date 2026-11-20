@@ -815,7 +815,7 @@ public class TailNipple {
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
 								" [npc2.Name] [npc2.verb(let)] [npc2.a_sob+], пока [npc.name] [npc.verb(force)] [npc2.her] [npc2.tail] внутри [npc.herHim], и, борясь с [npc.herHim], [npc2.she] отчаянно [npc2.verb(try)], чтобы вырвать [npc2.her] [npc2.tail+] из [npc.her] [npc.nipple+].",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] against [npc.name] as [npc.she] [npc.verb(force)] [npc2.her] [npc2.tail] deep into [npc.her] [npc.nipple+]."));
+								" С [npc2.a_sob+] [npc2.name] [npc2.verb(struggle)] против [npc.name], пока [npc.she] [npc.verb(force)] [npc2.her] [npc2.tail] глубоко в свой [npc.nipple+]."));
 						break;
 					default:
 						break;

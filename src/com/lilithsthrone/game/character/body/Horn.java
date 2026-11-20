@@ -156,7 +156,7 @@ public class Horn implements BodyPartInterface {
 		
 		if(removingHorns) {
 			return UtilText.parse(owner,
-					"<p>A tingling feeling spreads over [npc.namePos] [npc.horns], before moving down and concentrating in [npc.her] forehead. [npc.She] can't help but let out a cry as [npc.she] [npc.verb(feel)] some of them [style.boldShrink(crumbling away)] and disappearing back down into [npc.her] [npc.faceSkin].<br/>After a few moments, [npc.sheIs] left with [style.boldTfGeneric([npc.a_horns])].</p>");
+					"<p>По [npc.namePos] [npc.horns] разливается покалывающее чувство, которое затем спускается ниже и концентрируется на лбу [npc.her]. [npc.She] не может сдержать крика, когда [npc.she] [npc.verb(feel)] некоторые из них [style.boldShrink(рассыпаются в прах)] и исчезают, уходя обратно в [npc.her] [npc.faceSkin].<br/>Спустя несколько мгновений, [npc.sheIs] остается с [style.boldTfGeneric([npc.a_horns])].</p>");
 			
 		} else {
 			return UtilText.parse(owner,

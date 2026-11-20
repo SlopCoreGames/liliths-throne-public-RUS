@@ -1813,7 +1813,7 @@ public class AlleywayAttackerDialogue {
 		
 		@Override
 		public String getDescription(){
-			return "Теперь, когда ты вдоволь на楽しみлся, ты можешь отступить и оставить [npc.name] приходить в себя.";
+			return "Теперь, когда ты вдоволь насладился, ты можешь отступить и оставить [npc.name] приходить в себя.";
 		}
 
 		@Override

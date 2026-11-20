@@ -1678,7 +1678,7 @@ public abstract class AbstractSubspecies {
 					}
 					SVGStringUncoloured = sb.toString();
 					float iconResizeBorder = (100-getIconSize())/2f;
-					SVGStringUncoloured = "<div style='width:"+getIconSize()+"%;высота:"+getIconSize()+"%;position:absolute;left:"+iconResizeBorder+"%;bottom:"+iconResizeBorder+"%;'>"+SVGStringUncoloured+"</div>";
+					SVGStringUncoloured = "<div style='width:"+getIconSize()+"%;height:"+getIconSize()+"%;position:absolute;left:"+iconResizeBorder+"%;bottom:"+iconResizeBorder+"%;'>"+SVGStringUncoloured+"</div>";
 					
 				} else {
 					InputStream is = this.getClass().getResourceAsStream(getPathName() + ".svg");

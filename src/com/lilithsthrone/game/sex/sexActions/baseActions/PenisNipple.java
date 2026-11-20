@@ -405,7 +405,7 @@ public class PenisNipple {
 		
 							" [npc2.A_moan+] вырывается из между [npc2.namePos] [npc2.lips+], и, жадно выпячивая [npc2.her] грудь, [npc2.she] [npc2.verb(beg)], чтобы [npc.name] продолжал трахать [npc2.her] [npc2.breasts].",
 		
-							" [npc2.Moaning] in delight, [npc2.name] eagerly [npc2.verb(thrust)] [npc2.her] chest out, eagerly begging for [npc.name] to continue fucking [npc2.her] [npc2.breasts] as [npc2.her] movements help to sink [npc.her] [npc.cock+] deep into [npc2.her] [npc2.nipple+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] жадно [npc2.verb(thrust)] [npc2.her] грудь, умоляя [npc.name] продолжать трахать [npc2.her] [npc2.breasts], пока движения [npc2.her] помогают погружать [npc.her] [npc.cock+] глубоко в [npc2.her] [npc2.nipple+]."));
 					break;
 				case SUB_RESISTING:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -888,7 +888,7 @@ public class PenisNipple {
 		
 							" [npc2.A_moan+] вырывается изо рта [npc2.namePos], прежде чем [npc2.she] [npc2.verb(start)] вонзает [npc2.her] [npc2.cock+] глубоко в [npc.namePos] [npc.nipple+].",
 	
-							" [npc2.Moaning] in delight, [npc2.name] [npc2.verb(slide)] [npc2.her] [npc2.cock+] deep into [npc.namePos] [npc.nipple+]."));
+							" [npc2.Moaning] в восторге, [npc2.name] [npc2.verb(slide)] [npc2.her] [npc2.cock+] глубоко в [npc.namePos] [npc.nipple+]."));
 					break;
 			}
 		}

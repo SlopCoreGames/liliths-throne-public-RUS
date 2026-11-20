@@ -366,7 +366,7 @@ public class Breast implements BodyPartInterface {
 		String regenerationDescriptor = getLactationRegeneration().getName();
 		if (regenerationChange > 0) {
 			return UtilText.parse(owner,
-					"<p>[npc.Name] [npc.verb(feel)] an alarming bubbling and churning taking place deep within [npc.her] [npc.breasts], and [npc.a_moan+] drifts out from between [npc.her] [npc.lips] as a few drops of [npc.milk] suddenly leak from [npc.her] [npc.nipples]; clear evidence that [npc.her] [npc.milk] regeneration has [style.boldGrow(increased)].<br/>[npc.NamePos] rate of [npc.milk] regeneration is now [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/день)!</p>");
+					"<p>[npc.Name] [npc.verb(feel)] внутри [npc.her] [npc.breasts] слышится тревожное бурление и клокотание, а из-за [npc.her] [npc.lips] вырывается [npc.a_moan+], когда из [npc.her] [npc.nipples] внезапно просачиваются несколько капель [npc.milk]; явное свидетельство того, что регенерация [npc.her] [npc.milk] [style.boldGrow(ускорилась)].<br/>[npc.NamePos] скорость регенерации [npc.milk] теперь [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/день)!</p>");
 			
 		} else {
 			return UtilText.parse(owner,

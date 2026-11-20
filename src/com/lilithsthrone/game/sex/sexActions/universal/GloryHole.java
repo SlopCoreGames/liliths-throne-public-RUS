@@ -163,7 +163,7 @@ public class GloryHole {
 		public String getDescription() {
 			if(Main.sex.getTotalParticipantCount(false)==3) {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole. Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall, and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.asshole+] and mouth used at the same time.";
+					return "Встав с места, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF наклоняется к [npc2.name], а затем, присев, прижимает [npc.her] [npc.ass+] к отверстию. Подавшись вперед, [npc.she] [npc.verb(position)] [npc.herself] так, что [npc.her] рот оказывается всего в [unit.sizes] от отверстия на противоположной стороне кабинки, и, издав [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы [npc.her] [npc.asshole+] и рот использовались одновременно.";
 					
 				} else {
 					return "Отстранившись от отверстий, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к [npc2.namePos] отверстию. Наклонившись вперед, [npc.she] [npc.verb(position)] [npc.herself] так, что [npc.her] рот находится всего в [unit.sizes] от отверстия на противоположной стороне кабинки, и, издав [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы [npc.her] [npc.asshole+] и рот использовались одновременно.";
@@ -240,7 +240,7 @@ public class GloryHole {
 		public String getDescription() {
 			if(Main.sex.getTotalParticipantCount(false)==3) {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole. Leaning forwards, [npc.she] [npc.verb(position)] [npc.herself] so that [npc.her] mouth is just [unit.sizes] away from the hole on the opposite side of the stall, and, letting out [npc.a_moan+], [npc.she] [npc.verb(prepare)] to have [npc.her] [npc.pussy+] and mouth used at the same time.";
+					return "Встав с места, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF наклоняется к [npc2.name], прежде чем пригнуться и прижать [npc.her] [npc.ass+] к отверстию. Подавшись вперед, [npc.she] [npc.verb(position)] [npc.herself] так, что рот [npc.her] находится всего в [unit.sizes] от отверстия на противоположной стороне кабинки, и, издав [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы [npc.her] [npc.pussy+] и рот использовались одновременно.";
 					
 				} else {
 					return "Отстранившись от дырок в стене, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к [npc2.namePos] дырке в стене. Наклонившись вперед, [npc.she] [npc.verb(position)] [npc.herself] так, что рот [npc.her] находится всего в [unit.sizes] от отверстия на противоположной стороне кабинки, и, издав [npc.a_moan+], [npc.she] [npc.verb(prepare)], чтобы одновременно использовать [npc.her] [npc.pussy+] и рот.";
@@ -248,7 +248,7 @@ public class GloryHole {
 				
 			} else {
 				if(Main.sex.getSexPositionSlot(Main.sex.getCharacterPerformingAction())==SexSlotUnique.GLORY_HOLE_KNEELING) {
-					return "Standing up, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF over towards [npc2.name], before bending down and pushing [npc.her] [npc.ass+] up against the glory hole. Letting out [npc.a_moan+], [npc.she] [npc.verb(press)] back against the wall, preparing to have [npc.her] [npc.pussy+] used.";
+					return "Встав с места, [npc.name] #IF(npc.isPlayer())[npc.step]#ELSE[npc.steps]#ENDIF наклоняется к [npc2.name], прежде чем пригнуться и прижать [npc.her] [npc.ass+] к «позорному отверстию». Издавая [npc.a_moan+], [npc.she] [npc.verb(press)] к стене, готовясь к тому, что [npc.her] [npc.pussy+] будут использовать.";
 					
 				} else {
 					return "Отходя от отверстий, [npc.name] [npc.verb(reposition)] [npc.herself] так, что [npc.sheIs] наклоняется и прижимает [npc.her] [npc.ass+] к отверстию. Издавая [npc.a_moan+], [npc.she] [npc.verb(press)] спиной к стене, готовясь к тому, что [npc.her] [npc.pussy+] будет использована.";

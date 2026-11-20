@@ -1917,7 +1917,7 @@ public class MainController implements Initializable {
 		
 		// Responses:
 		for (int i = 0; i < RESPONSE_COUNT; i++) {
-			String id = "вариант_" + i;
+			String id = "option_" + i;
 			if (((EventTarget) document.getElementById(id)) != null) {
 				SetContentEventListener el = new SetContentEventListener().setIndex(i);
 				addEventListener(document, id, "click", el, false);
@@ -1937,7 +1937,7 @@ public class MainController implements Initializable {
 	}
 	
 	private static void setResponseTabListeners(int responsePageCounter) {
-		String id = "вкладка_" + responsePageCounter;
+		String id = "tab_" + responsePageCounter;
 
 		addEventListener(document, id, "click", e -> {
 				Main.game.setResponseTab(responsePageCounter);

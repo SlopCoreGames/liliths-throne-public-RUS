@@ -3227,7 +3227,7 @@ public class SexPosition {
 							
 						} else {
 							sb.append(UtilText.parse(matingPress, lyingDown,
-									" [npc.NameHasFull] pushed [npc2.namePos] [npc2.legs] apart and back up towards [npc2.her] head, before dropping [npc.her] feral [npc.legRace]'s body down on top of [npc2.herHim], with [npc.her] animalistic groin hovering just over [npc2.hers]. [npc.SheIs] dominantly using [npc.her] front [npc.legs] to pin [npc2.name] wrists to the floor on either side of [npc2.her] head, thereby fully locking [npc2.herHim] down beneath [npc.herHim] in a position suitable for being bred."));
+									" [npc.NameHasFull] раздвинул [npc2.namePos] [npc2.legs] и прижал [npc2.her] голову назад, прежде чем обрушить [npc.her] дикое [npc.legRace] тело на [npc2.herHim], зависнув [npc.her] звериным пахом прямо над [npc2.hers]. [npc.SheIs] доминантно использует [npc.her] передний [npc.legs], чтобы прижать [npc2.name] запястья к полу по обе стороны от [npc2.her] головы, тем самым полностью пригвождая [npc2.herHim] под [npc.herHim] в позе, идеально подходящей для осеменения."));
 						}
 						continuation = true;
 					}

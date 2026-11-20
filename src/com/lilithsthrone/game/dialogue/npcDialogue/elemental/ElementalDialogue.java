@@ -508,10 +508,10 @@ public class ElementalDialogue {
 				if(!fetish.getFetishesForAutomaticUnlock().isEmpty()) {
 					sb.append(
 							"<div id='FETISH_" + Fetish.getIdFromFetish(fetish) + "' class='fetish-icon" + (Main.game.getPlayer().hasFetish(fetish)
-							? " есть' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
+							? " owned' style='border:2px solid " + PresetColour.FETISH.getShades()[1] + ";'>"
 							: (fetish.isAvailable(Main.game.getPlayer())
-									? " разблокирован' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
-									: " заблокирован' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
+									? " unlocked' style='border:2px solid " +  PresetColour.TEXT_GREY.toWebHexString() + ";" + "'>"
+									: " locked' style='border:2px solid " + PresetColour.TEXT_GREY.toWebHexString() + ";'>"))
 							+ "<div class='fetish-icon-content'>"+fetish.getSVGString(Main.game.getPlayer())+"</div>"
 							+ (Main.game.getPlayer().hasFetish(fetish) // Overlay to create disabled effect:
 									? ""

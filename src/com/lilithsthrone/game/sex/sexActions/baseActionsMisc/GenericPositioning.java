@@ -635,7 +635,7 @@ public class GenericPositioning {
 					if(SexSlotStanding.PERFORMING_ORAL_BEHIND.isStanding(Main.sex.getCharacterPerformingAction())) {
 						return "Желая сделать оральный секс задней части тела [npc2.namePos], опущенного [npc2.legRace], [npc.name] [npc.verb(move)] вокруг так, чтобы [npc.sheIs] стоял позади [npc2.herHim]. Проводя [npc.a_hand] вверх и через [npc2.her] [npc2.ass+], [npc.she] [npc.moansVerb], [npc.speech(О да, пора пустить в дело свой ротик!)]";
 					} else {
-						return "Wanting to perform oral on the rear part of [npc2.namePos] lower [npc2.legRace]'s body, [npc.name] [npc.verb(move)] around and [npc.verb(kneel)] down behind [npc2.herHim]. Running [npc.a_hand] up and over [npc2.her] [npc2.ass+], [npc.she] [npc.moansVerb], [npc.speech(Oh yes, time to put my mouth to use!)]";
+						return "Желая заняться оралом с задней части тела [npc2.namePos], [npc.name] [npc.verb(move)] вокруг и [npc.verb(kneel)] позади [npc2.legRace] [npc2.herHim]. [npc.a_hand] бежит вверх и через [npc2.her] [npc2.ass+], [npc.she] [npc.moansVerb], [npc.speech(О да, пора пустить рот в дело!)]";
 					}
 				}
 			}
@@ -1550,7 +1550,7 @@ public class GenericPositioning {
 		}
 		@Override
 		public String getDescription() {
-			return "[npc.Name] [npc.verb(lie)] down on [npc.her] front before [npc2.name], letting out a little [npc.moan] as [npc.she] [npc.verb(present)] [npc.her] [npc.ass+] and groin to try and encourage [npc2.name] to have sex with [npc.herHim] in the prone bone position.";
+			return "[npc.Name] [npc.verb(lie)] вниз на переднюю часть [npc.her] перед [npc2.name], издавая легкий [npc.moan], пока [npc.she] [npc.verb(present)] [npc.her] [npc.ass+] и пах, пытаясь побудить [npc2.name] заняться сексом с [npc.herHim] в позе «лежа на животе».";
 		}
 		@Override
 		public void applyEffects() {
@@ -1593,7 +1593,7 @@ public class GenericPositioning {
 								:"")
 						+ " [npc.verb(lower)] [npc.herself] через [npc2.herHim], чтобы принять позу шестьдесят девять. Жадно облизав [npc.her] [npc.lips+], [npc.she] мягко [npc.verb(whisper)], <i>[npc.speech(Позволь мне подарить тебе сладкие сны...)]</i>";
 			}
-			return "Taking hold of [npc2.namePos] shoulders, [npc.name] [npc.verb(push)] [npc2.herHim] down onto [npc2.her] back. Quickly lowering [npc.herself] down onto all fours over the top of [npc2.herHim], [npc.she] [npc.verb(drop)] [npc.her] crotch down over [npc2.her] face as [npc.she] similarly [npc.verb(position)] [npc.her] own head over [npc2.her] groin. Looking back beneath [npc.herHim], [npc.name] [npc.moansVerb], [npc.speech(Good [npc2.girl]! Now let's have some fun!)]";
+			return "Схватив [npc2.namePos] за плечи, [npc.name] [npc.verb(push)] [npc2.herHim] на [npc2.her] спину. Быстро опуская [npc.herself] на четвереньки поверх [npc2.herHim], [npc.she] [npc.verb(drop)] [npc.her] пахом на [npc2.her] лицо, в то время как [npc.she] так же [npc.verb(position)] [npc.her] голову над [npc2.her] пахом. Оглядываясь под [npc.herHim], [npc.name] [npc.moansVerb], [npc.speech(Хороший [npc2.girl]! А теперь давай повеселимся!)]";
 		}
 		@Override
 		public void applyEffects() {
@@ -1746,7 +1746,7 @@ public class GenericPositioning {
 								:"")
 						+ " [npc.verb(straddle)] [npc2.herHim] в позе наездницы. Как только [npc.sheHas] устроит [npc.herself], [npc.she] [npc.verb(grin)] на [npc2.name] и мягко [npc.verb(whisper)], <i>[npc.speech(Спи, пока я скачу на тебе...)]</i>";
 			}
-			return "Taking hold of [npc2.namePos] shoulders, [npc.name] [npc.verb(push)] [npc2.herHim] down onto [npc2.her] back. [npc.She] then lowers [npc.herself] down on top of [npc2.herHim], bringing [npc.her] crotch down to bump against [npc2.hers] as [npc.she] [npc.verb(straddle)] [npc2.herHim] in the cowgirl position. Once [npc.sheHas] made [npc.herself] comfortable, [npc.she] [npc.verb(grin)] down at [npc2.name] and [npc.moansVerb], [npc.speech(Good [npc2.girl]! It's time to give you a ride!)]";
+			return "Схватив [npc2.namePos] за плечи, [npc.name] [npc.verb(push)] [npc2.herHim] на [npc2.her] спину. Затем [npc.She] опускается [npc.herself] сверху на [npc2.herHim], прижимая [npc.her] промежность к [npc2.hers], пока [npc.she] [npc.verb(straddle)] [npc2.herHim] в позе наездницы. Как только [npc.sheHas] устраивает [npc.herself] поудобнее, [npc.she] [npc.verb(grin)] на [npc2.name] и [npc.moansVerb], [npc.speech(Хороший [npc2.girl]! Пора прокатиться на тебе!)]";
 		}
 		@Override
 		public void applyEffects() {

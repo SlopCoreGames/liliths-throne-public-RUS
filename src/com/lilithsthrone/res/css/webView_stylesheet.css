@@ -693,7 +693,8 @@ position:relative;
 .cosmetics-button {
 	display:inline-block;
 	
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
 	
 	text-align:center;
 	box-sizing: border-box;

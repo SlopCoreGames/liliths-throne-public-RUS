@@ -771,7 +771,7 @@ public enum SexAreaOrifice implements SexAreaInterface {
 										sb.append(" Издавая [npc2.a_moan+], [npc2.name] [npc2.sexPaceVerb] вгонял [npc2.her] [npc2.cock+] вверх и через [npc.namePos] [npc.asshole+].");
 										break;
 									case SUB_RESISTING:
-										sb.append(" Sobbing and crying, [npc2.name] did [npc2.her] best to pull away from [npc.name], but ended up being held in place and having [npc2.her] [npc2.cock] used against [npc2.her] will.");
+										sb.append(" Рыдая и всхлипывая, [npc2.name] изо всех сил [npc2.her] пыталась вырваться из рук [npc.name], но в итоге ее удерживали на месте, вопреки [npc2.her] воле, используя [npc2.her] [npc2.cock].");
 										break;
 								}
 							}
@@ -2243,7 +2243,7 @@ public enum SexAreaOrifice implements SexAreaInterface {
 										sb.append(" Издавая [npc2.a_moan+], [npc2.name] [npc2.sexPaceVerb] втиснул(а) [npc2.her] [npc2.cock+] в ложбинку между бедрами [npc.namePos].");
 										break;
 									case SUB_RESISTING:
-										sb.append(" Sobbing and crying, [npc2.name] did [npc2.her] best to pull away from [npc.name], but ended up being held in place and having [npc2.her] [npc2.cock] used against [npc2.her] will.");
+										sb.append(" Рыдая и всхлипывая, [npc2.name] изо всех сил [npc2.her] пыталась вырваться из рук [npc.name], но в итоге ее удерживали на месте, вопреки [npc2.her] воле, используя [npc2.her] [npc2.cock].");
 										break;
 								}
 							}
@@ -2363,7 +2363,7 @@ public enum SexAreaOrifice implements SexAreaInterface {
 										sb.append(" Издавая [npc2.a_moan+], [npc2.name] [npc2.sexPaceVerb] с силой [npc2.her] [npc2.cock+] в [npc.namePos] подмышку.");
 										break;
 									case SUB_RESISTING:
-										sb.append(" Sobbing and crying, [npc2.name] did [npc2.her] best to pull away from [npc.name], but ended up being held in place and having [npc2.her] [npc2.cock] used against [npc2.her] will.");
+										sb.append(" Рыдая и всхлипывая, [npc2.name] изо всех сил [npc2.her] пыталась вырваться из рук [npc.name], но в итоге ее удерживали на месте, вопреки [npc2.her] воле, используя [npc2.her] [npc2.cock].");
 										break;
 								}
 							}

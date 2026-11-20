@@ -512,7 +512,7 @@ public class Perk {
 
 	public static AbstractPerk JOB_NPC_ARCANE_RESEARCHER = new AbstractPerk(20,
 			true,
-			"@@T0@@ посвятил большую часть своей жизни изучению Арканы и разгадыванию ее секретов.",
+			"[npc.Name] посвятил(а) большую часть своей жизни изучению Арканы и разгадыванию её секретов.",
 			PerkCategory.JOB,
 			"perks/jobs/npc_arcane_researcher",
 			PresetColour.ATTRIBUTE_ARCANE,
@@ -2592,7 +2592,7 @@ public class Perk {
 			Util.newHashMapOfValues(
 					new Value<>(Attribute.DAMAGE_LUST, 15),
 					new Value<>(Attribute.RESISTANCE_LUST, -5)),
-			Util.newArrayListOfValues("@@T0@@ полностью и безнадежно одержим сексом")) {
+			Util.newArrayListOfValues("[npc.Name] полностью и безнадёжно одержим(а) сексом")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner, "Оргазмы [npc.NamePos] особенно интенсивны, и [npc.she] не может не делать преувеличенное выражение лица каждый раз, когда [npc.she] [npc.verb(климакс)].");
@@ -3145,7 +3145,7 @@ public class Perk {
 
 		@Override
 		public String getDescription(GameCharacter owner) {
-			return UtilText.parse(owner, "[npc.NameHasFull] a considerable amount of experience with wielding melee weapons, making [npc.herHim] a fearsome foe to face when armed with a weapon of [npc.her] choice.");
+			return UtilText.parse(owner, "[npc.NameHasFull] обладает внушительным опытом владения холодным оружием, что делает [npc.herHim] грозным противником, когда в руках у него оружие на любой [npc.her] вкус.");
 		}
 		@Override
 		public boolean isHiddenPerk() {
@@ -6497,7 +6497,7 @@ public class Perk {
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
 					"Внутренняя структура тела [npc.namePos] состоит исключительно из глубоких проходов, которые связаны с отверстиями [npc.her]."
-					+ "[npc.name] [npc.is] не имеют биологических систем, поэтому @@T2@@ невосприимчив к воздействию большинства веществ.");
+					+ " У [npc.namePos] нет биологических систем, поэтому [npc.she] невосприимчив(а) к воздействию большинства веществ.");
 		}
 	};
 
@@ -6569,7 +6569,7 @@ public class Perk {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,
-					"Как автомат, который не имеет свободной воли, [npc.name] [npc.do] не имеет своего мнения о различных фетишах, и [npc.is] довольна тем, что [npc.her] делает то, что [npc.herHim] просит от @@T5@@.");
+					"Будучи автоматоном без свободной воли, [npc.name] не имеет собственного мнения о различных фетишах и охотно делает всё, о чём [npc.herHim] попросят.");
 		}
 	};
 	
@@ -6626,7 +6626,7 @@ public class Perk {
 					"Может [style.colourTerrible(never)] получать опыт",
 					"[style.colourTerrible(Постоянно заблокирован)] до [style.colourExperience(уровень 1)]",
 					"Может [style.colourTerrible(never)] получать черты личности",
-					"[style.colourAffection(Привязанность)] к другим всегда нейтральна@@H0@@"+PresetColour.AFFECTION_NEUTRAL.toWebHexString()+";'>всегда нейтральна</span>")) {
+					"[style.colourAffection(Привязанность)] к другим <span style='color:"+PresetColour.AFFECTION_NEUTRAL.toWebHexString()+";'>всегда нейтральна</span>")) {
 		@Override
 		public String getDescription(GameCharacter owner) {
 			return UtilText.parse(owner,

@@ -219,7 +219,7 @@ public class BreastCrotch implements BodyPartInterface {
 			
 		} else if(this.getType().equals(BreastType.NONE)) { // New addition:
 			sb.append(
-					"<p>The area above [npc.namePos] crotch suddenly feels extremely soft and sensitive, and [npc.she] can't help but let out [npc.a_moan+] as [npc.she] [npc.verb(feel)] a transformation start to take place. [npc.CrotchBoobsRows] hard little nubs start to grow out of the [npc.skin] covering [npc.her] lower stomach, and [npc.she] can't help but let out a surprised gasp as they quickly swell out into [npc.crotchBoobsSize] [npc.crotchBoobs].<br/>");
+					"<p>Область над [npc.namePos] пахом внезапно становится невероятно мягкой и чувствительной, и [npc.she] невольно издает [npc.a_moan+], когда [npc.she] [npc.verb(feel)] начинает происходить трансформация. [npc.CrotchBoobsRows] твердые маленькие бугорки начинают прорастать сквозь [npc.skin], прикрывающие [npc.her] низ живота, и [npc.she] невольно ахает от неожиданности, когда они стремительно раздуваются, превращаясь в [npc.crotchBoobsSize] [npc.crotchBoobs].<br/>");
 			
 			
 		} else {
@@ -393,13 +393,13 @@ public class BreastCrotch implements BodyPartInterface {
 		}
 		
 		if (regenerationChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.namePos] rate of [npc.crotchMilk] regeneration doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(скорость [npc.crotchMilk] регенерации [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String regenerationDescriptor = getLactationRegeneration().getName();
 		if (regenerationChange > 0) {
 			return UtilText.parse(owner,
-					"<p>[npc.Name] [npc.verb(feel)] an alarming bubbling and churning taking place deep within [npc.her] [npc.crotchBoobs], and [npc.a_moan+] drifts out from between [npc.her] [npc.lips] as a few drops of [npc.crotchMilk] suddenly leak from [npc.her] [npc.crotchNipples]; clear evidence that [npc.her] [npc.crotchMilk] regeneration has [style.boldGrow(increased)].<br/>[npc.NamePos] rate of [npc.crotchMilk] regeneration is now [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/день)!</p>");
+					"<p>[npc.Name] [npc.verb(feel)] слышится тревожное бурление и клокотание глубоко внутри [npc.her] [npc.crotchBoobs], и [npc.a_moan+] вырывается из меж [npc.her] [npc.lips], когда несколько капель [npc.crotchMilk] внезапно просачиваются из [npc.her] [npc.crotchNipples]; явное свидетельство того, что регенерация [npc.her] [npc.crotchMilk] [style.boldGrow(ускорилась)].<br/>Скорость регенерации [npc.NamePos] [npc.crotchMilk] теперь [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(milkRegeneration)+"/день)!</p>");
 			
 		} else {
 			return UtilText.parse(owner,

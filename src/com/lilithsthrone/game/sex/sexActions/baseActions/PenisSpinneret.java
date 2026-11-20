@@ -95,7 +95,7 @@ public class PenisSpinneret {
 					case DOM_ROUGH:
 						UtilText.nodeContentSB.append(UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getPrimaryDPPerformer(Main.sex.getCharacterTargetedForSexAction(this))),
 								UtilText.returnStringAtRandom(
-								"Not deterred by the fact that [npc3.namePos] [npc3.cock] is already deep in [npc2.namePos] [npc2.spinneret+], [npc.name] [npc.verb(start)] roughly grinding the [npc.cockTip+] of [npc.her] own [npc.cock+] up against [npc2.her] web-spinning orifice, threatening to start double-penetrating [npc.herHim] at any moment.",
+								"Ничуть не смущаясь тем, что [npc3.cock] [npc3.namePos] уже глубоко в [npc2.spinneret+] [npc2.namePos], [npc.name] [npc.verb(start)] грубо тереться головкой ([npc.cockTip+]) своего [npc.cock+] о [npc2.her] прядильное отверстие, угрожая начать двойное проникновение в любой момент.",
 								"С помощью [npc.a_moan+], [npc.name] с силой [npc.verb(rub)] [npc.cockTip+] [npc.her] [npc.cock] по открытым частям [npc2.namePos] [npc2.spinneret+], давая понять, что [npc.she] может присоединиться к [npc3.name] и начать двойное проникновение в паутинное отверстие [npc2.her].",
 								"Грубо потирая [npc.cockTip+] [npc.her] [npc.cock] вверх и вниз по открытым частям [npc2.namePos] [npc2.spinneret+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(signal)], что [npc.she] может присоединиться к [npc3.name] для какого-нибудь двойного проникновения.")));
 						break;
@@ -109,7 +109,7 @@ public class PenisSpinneret {
 					default:
 						UtilText.nodeContentSB.append(UtilText.parse(Util.newArrayListOfValues(Main.sex.getCharacterPerformingAction(), Main.sex.getCharacterTargetedForSexAction(this), getPrimaryDPPerformer(Main.sex.getCharacterTargetedForSexAction(this))),
 								UtilText.returnStringAtRandom(
-								"Not deterred by the fact that [npc3.namePos] [npc3.cock] is already deep in [npc2.namePos] [npc2.spinneret+], [npc.name] [npc.verb(start)] eagerly grinding the [npc.cockTip+] of [npc.her] own [npc.cock+] up against [npc2.her] web-spinning orifice, threatening to start double-penetrating [npc.herHim] at any moment.",
+								"Ничуть не смущаясь тем, что [npc3.cock] [npc3.namePos] уже глубоко в [npc2.spinneret+] [npc2.namePos], [npc.name] [npc.verb(start)] нетерпеливо тереться головкой ([npc.cockTip+]) своего [npc.cock+] о [npc2.her] прядильное отверстие, угрожая начать двойное проникновение в любой момент.",
 								"Пока [npc.a_moan+], [npc.name] с энтузиазмом [npc.verb(rub)] [npc.cockTip+] [npc.her] [npc.cock] по открытым частям [npc2.namePos] [npc2.spinneret+], намекая, что [npc.she] может присоединиться к [npc3.name] и начать двойное проникновение в паутину [npc2.her].",
 								"С жадностью растирая [npc.cockTip+] [npc.her] [npc.cock] вверх и вниз по открытым частям [npc2.namePos] [npc2.spinneret+], [npc.name] [npc.verb(let)] [npc.a_moan+], пока [npc.she] [npc.verb(signal)], что [npc.she] может присоединиться к [npc3.name] в каком-нибудь двойном проникновении.")));
 						break;
@@ -1252,7 +1252,7 @@ public class PenisSpinneret {
 						break;
 					case SUB_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.parse(getCharactersForParsing(), UtilText.returnStringAtRandom(
-							"Not satisfied with having just [npc3.name] fucking [npc.her] [npc.spinneret+], [npc.name] [npc.verb(grab)] [npc2.namePos] [npc2.cock], before moving it up to [npc.her] web-spinning orifice. Letting out [npc.a_moan+], [npc.she] then [npc.verb(buck)] [npc.her] [npc.hips] and [npc.verb(force)] [npc2.herHim] to join [npc3.name] in double-penetrating [npc.her] [npc.spinneret+].",
+							"Ему мало просто трахать [npc3.name] [npc.her], [npc.spinneret+], [npc.name] [npc.verb(grab)] [npc2.namePos] [npc2.cock], прежде чем поднести его к [npc.her] паутине ее отверстия. Выпустив [npc.a_moan+], [npc.she] затем [npc.verb(buck)] [npc.her] [npc.hips] и [npc.verb(force)] [npc2.herHim], чтобы присоединиться к [npc3.name] в двойном проникновении в [npc.her] [npc.spinneret+].",
 							"Желая большего, чем просто [npc3.namePos] [npc3.cock] в [npc.her] [npc.spinneret], [npc.name] [npc.verb(grab)] [npc2.namePos] [npc2.cock], прежде чем нацелить его на [npc.her] "+spinneretArea+". Ритмично выгибая [npc.her] [npc.hips] назад, [npc.she] [npc.verb(let)] из [npc.a_moan+], пока [npc.she] [npc.verb(feel)] [npc2.namePos] [npc2.cock+] втискивается вместе с [npc3.namePos] в [npc.her] [npc.spinneret+].")));
 						break;
 					default:

@@ -35,7 +35,7 @@ public class SelfTailAnus {
 
 		@Override
 		public String getActionDescription() {
-			return "Start fucking [npc.her] own [npc.ass] with [npc.her] [npc.tail+].";
+			return "Начать трахать собственную [npc.ass] своим [npc.tail+].";
 		}
 
 		@Override
@@ -64,7 +64,7 @@ public class SelfTailAnus {
 
 		@Override
 		public String getActionDescription() {
-			return "Gently fuck [npc.her] own [npc.ass] with [npc.her] [npc.tail+].";
+			return "Мягко трахай [npc.her] собственную [npc.ass] с помощью [npc.her] [npc.tail+].";
 		}
 
 		@Override
@@ -194,7 +194,7 @@ public class SelfTailAnus {
 
 		@Override
 		public String getActionDescription() {
-			return "Eagerly start fucking [npc.her] own [npc.ass] with [npc.her] [npc.tail+].";
+			return "С жадностью начинаешь ебать свой [npc.ass] с помощью [npc.her] [npc.tail+] [npc.her].";
 		}
 
 		@Override

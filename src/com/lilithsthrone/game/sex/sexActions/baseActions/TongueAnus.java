@@ -463,7 +463,7 @@ public class TongueAnus {
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
 								" [npc2.Name] [npc2.verb(continue)], пытаясь сопротивляться [npc.name], [npc2.sobbing] и ерзая от дискомфорта, когда [npc2.she] понимает, что [npc.name] еще не совсем закончил с [npc2.herHim].",
 		
-								" Realising that [npc.sheHasFull]n't completely finished with [npc2.herHim] just yet, [npc2.name] [npc2.verb(continue)] struggling and [npc2.sobbing], tears streaming down [npc2.her] [npc2.face] as [npc2.she] [npc2.verb(plead)] for [npc.name] to let [npc2.herHim] go."));
+								" Осознав, что [npc.sheHasFull] еще не совсем закончил с [npc2.herHim], [npc2.name] [npc2.verb(continue)] изо всех сил борется и [npc2.sobbing], слезы текут по [npc2.her] [npc2.face], пока [npc2.she] [npc2.verb(plead)], ожидая, когда [npc.name] отпустит [npc2.herHim]."));
 						break;
 					default:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

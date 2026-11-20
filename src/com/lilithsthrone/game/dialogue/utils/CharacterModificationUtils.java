@@ -3637,7 +3637,7 @@ public class CharacterModificationUtils {
 					boolean cannotChoose = vagina==VaginaType.NONE
 							&& (BodyChanging.getTarget().isPregnant() || BodyChanging.getTarget().hasStatusEffect(StatusEffect.PREGNANT_0) || BodyChanging.getTarget().hasIncubationLitter(SexAreaOrifice.VAGINA));
 					contentSB.append(
-							"<div id='VAGINA_"+VaginaType.getIdFromVaginaType(vagina)+"' class='cosmetics-button"+(cannotChoose?" отключено":"")+"'><span style='color:"+(cannotChoose?PresetColour.TEXT_GREY.toWebHexString():c.getShades()[0])+";'>"
+							"<div id='VAGINA_"+VaginaType.getIdFromVaginaType(vagina)+"' class='cosmetics-button"+(cannotChoose?" disabled":"")+"'><span style='color:"+(cannotChoose?PresetColour.TEXT_GREY.toWebHexString():c.getShades()[0])+";'>"
 									+Util.capitaliseSentence(vagina.getTransformName())+(vagina.isEggLayer()?"*":"")
 								+"</span>"
 							+ "</div>");
@@ -3771,10 +3771,10 @@ public class CharacterModificationUtils {
 		
 		if(BodyChanging.getTarget().isVaginaEggLayer()) {
 			contentSB.append(
-					"<div id='VAGINA_EGG_LAYER_OFF' class='cosmetics-button"+(disabled?" отключено":"")+"'><span style='color:"+PresetColour.GENERIC_SEX.getShades()[0]+";'>Естественные роды</span></div><div class='cosmetics-button"+(disabled?" отключено":" активно")+"'><span style='color:"+PresetColour.EGG.toWebHexString()+";'>Яйцеклад</span></div>");
+					"<div id='VAGINA_EGG_LAYER_OFF' class='cosmetics-button"+(disabled?" disabled":"")+"'><span style='color:"+PresetColour.GENERIC_SEX.getShades()[0]+";'>Естественные роды</span></div><div class='cosmetics-button"+(disabled?" отключено":" активно")+"'><span style='color:"+PresetColour.EGG.toWebHexString()+";'>Яйцеклад</span></div>");
 		} else {
 			contentSB.append(
-					"<div class='cosmetics-button"+(disabled?" отключено":" активно")+"'><span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Живорождение</span></div><div id='VAGINA_EGG_LAYER_ON' class='cosmetics-button"+(disabled?" отключено":"")+"'><span style='color:"+PresetColour.EGG.getShades()[0]+";'>Яйцеклад</span></div>");
+					"<div class='cosmetics-button"+(disabled?" disabled":" active")+"'><span style='color:"+PresetColour.GENERIC_SEX.toWebHexString()+";'>Живорождение</span></div><div id='VAGINA_EGG_LAYER_ON' class='cosmetics-button"+(disabled?" отключено":"")+"'><span style='color:"+PresetColour.EGG.getShades()[0]+";'>Яйцеклад</span></div>");
 		}
 		
 		return applyWrapper("Тип рождения",
@@ -5595,7 +5595,7 @@ public class CharacterModificationUtils {
 													:coveringType.getNaturalColoursSecondary());
 		Collections.sort(availableSecondaryColours, (c1, c2)->c2.isMetallic()?(c1.isMetallic()?0:-1):(c1.isMetallic()?1:0));
 		
-		String border = "граница: 1px сплошная "+PresetColour.BACKGROUND.toWebHexString()+";";
+		String border = "border: 1px solid "+PresetColour.BACKGROUND.toWebHexString()+";";
 		
 		boolean secondaryDisabled = activeCovering.getPattern()==CoveringPattern.NONE
 										|| activeCovering.getPattern()==CoveringPattern.EYE_IRISES
@@ -5702,14 +5702,14 @@ public class CharacterModificationUtils {
 						} else {
 							rainbow = "";
 						}
-						sb.append("<div class='normal-button"+(activeCovering.getPrimaryColour()==c?" выбранный":"")+"' id='"+BodyCoveringType.getIdFromBodyCoveringType(coveringType)+"_PRIMARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(activeCovering.getPrimaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'>"
+						sb.append("<div class='normal-button"+(activeCovering.getPrimaryColour()==c?" selected":"")+"' id='"+BodyCoveringType.getIdFromBodyCoveringType(coveringType)+"_PRIMARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(activeCovering.getPrimaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'>"
 											+ (c.isMetallic()
 													?"<div class='phone-item-colour' style='background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 													:(c.getRainbowColours()!=null
 														?"<div class='phone-item-colour' style='background: "+rainbow
 														:"<div class='phone-item-colour' style='background"+(c==PresetColour.COVERING_CLEAR?"-изображение":"-цвет")+":" + (c.getCoveringIconColour()) + ";"))
 												+(c==PresetColour.COVERING_NONE
-													?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X"
+													?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X"
 													:"'>")
 											+"</div>"
 										+ "</div>");
@@ -5749,14 +5749,14 @@ public class CharacterModificationUtils {
 							} else {
 								rainbow = "";
 							}
-							sb.append("<div class='normal-button"+(activeCovering.getSecondaryColour()==c?" выбранный":"")+"' id='"+BodyCoveringType.getIdFromBodyCoveringType(coveringType)+"_SECONDARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(activeCovering.getSecondaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'>"
+							sb.append("<div class='normal-button"+(activeCovering.getSecondaryColour()==c?" selected":"")+"' id='"+BodyCoveringType.getIdFromBodyCoveringType(coveringType)+"_SECONDARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(activeCovering.getSecondaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'>"
 												+ (c.isMetallic()
 														?"<div class='phone-item-colour' style='background: repeating-linear-gradient(135deg, " + c.toWebHexString() + ", " + c.getShades()[4] + " 10px);"
 														:(c.getRainbowColours()!=null
 															?"<div class='phone-item-colour' style='background: "+rainbow
 															:"<div class='phone-item-colour' style='background"+(c==PresetColour.COVERING_CLEAR?"-изображение":"-цвет")+":" + (c.getCoveringIconColour()) + ";"))
 													+(c==PresetColour.COVERING_NONE
-														?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X"
+														?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X"
 														:"'>")
 												+"</div>"
 											+ "</div>");
@@ -5935,7 +5935,7 @@ public class CharacterModificationUtils {
 						
 						if(canPierce) {
 							contentSB.append(
-									"<div id='"+piercingType+"_ПРОТЫКАНА' class='cosmetics-button'>"
+									"<div id='"+piercingType+"_PIERCE' class='cosmetics-button'>"
 										+ (Main.game.getPlayer().getMoney()>=SuccubisSecrets.getPiercingCost(piercingType) || noCost
 											?"<span style='color:"+PresetColour.GENERIC_ARCANE.getShades()[0]+";'>С проколами</span>"
 											:"[style.colourDisabled(Проколотый)]")
@@ -6132,7 +6132,7 @@ public class CharacterModificationUtils {
 			// Primary:
 			contentSB.append("<div class='container-full-width' style='width:33.3%; margin:0;'>");
 				for (Colour c : tattoo.getType().getAvailablePrimaryColours()) {
-					contentSB.append("<div class='normal-button"+(tattoo.getPrimaryColour()==c?" выбранный":"")+"' id='TATTOO_COLOUR_PRIMARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getPrimaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
+					contentSB.append("<div class='normal-button"+(tattoo.getPrimaryColour()==c?" selected":"")+"' id='TATTOO_COLOUR_PRIMARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getPrimaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
 									+ "</div>");
 				}
 			contentSB.append("</div>");
@@ -6145,7 +6145,7 @@ public class CharacterModificationUtils {
 				
 			} else {
 				for (Colour c : tattoo.getType().getAvailableSecondaryColours()) {
-					contentSB.append("<div class='normal-button"+(tattoo.getSecondaryColour()==c?" выбранный":"")+"' id='TATTOO_COLOUR_SECONDARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getSecondaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
+					contentSB.append("<div class='normal-button"+(tattoo.getSecondaryColour()==c?" selected":"")+"' id='TATTOO_COLOUR_SECONDARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getSecondaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
 									+ "</div>");
 				}
 			}
@@ -6159,7 +6159,7 @@ public class CharacterModificationUtils {
 				
 			} else {
 				for (Colour c : tattoo.getType().getAvailableTertiaryColours()) {
-					contentSB.append("<div class='normal-button"+(tattoo.getTertiaryColour()==c?" выбранный":"")+"' id='TATTOO_COLOUR_TERTIARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getTertiaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
+					contentSB.append("<div class='normal-button"+(tattoo.getTertiaryColour()==c?" selected":"")+"' id='TATTOO_COLOUR_TERTIARY_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getTertiaryColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
 									+ "</div>");
 				}
 			}
@@ -6202,7 +6202,7 @@ public class CharacterModificationUtils {
 			
 			contentSB.append("<div class='container-full-width' style='width:33.3%; margin:0;'>");
 				for (Colour c : TattooWriting.getAvailableColours()) {
-					contentSB.append("<div class='normal-button"+(tattoo.getWriting().getColour()==c?" выбранный":"")+"' id='TATTOO_WRITING_COLOUR_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getWriting().getColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
+					contentSB.append("<div class='normal-button"+(tattoo.getWriting().getColour()==c?" selected":"")+"' id='TATTOO_WRITING_COLOUR_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getWriting().getColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
 									+ "</div>");
 				}
 				if(Main.game.isInNewWorld()) {
@@ -6249,7 +6249,7 @@ public class CharacterModificationUtils {
 				
 				contentSB.append("<div class='container-full-width' style='width:33.3%; margin:0;'>");
 					for (Colour c : TattooCounter.getAvailableColours()) {
-						contentSB.append("<div class='normal-button"+(tattoo.getCounter().getColour()==c?" выбранный":"")+"' id='TATTOO_COUNTER_COLOUR_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getCounter().getColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" цвет:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
+						contentSB.append("<div class='normal-button"+(tattoo.getCounter().getColour()==c?" selected":"")+"' id='TATTOO_COUNTER_COLOUR_"+c.getId()+"' style='width:auto; margin-right:4px;"+(tattoo.getCounter().getColour()==c?" background-color:"+PresetColour.BASE_GREEN.getShades()[4]+";":"")+"'><div class='phone-item-colour' style='background-color:" + c.getCoveringIconColour() + ";"+(c==PresetColour.COVERING_NONE?" color:"+PresetColour.BASE_RED.toWebHexString()+";'>X":"'>")+"</div>"
 										+ "</div>");
 					}
 					contentSB.append("<br/>");
@@ -6269,12 +6269,12 @@ public class CharacterModificationUtils {
 
 						if(tattoo.getCounter().getType().isRetroactiveApplicationAvailable()) {
 							contentSB.append("<div style='width:98%; margin:1%; padding:0; display:inline-block;'>");
-								contentSB.append("<div class='normal-button"+(activeButtonZero?" выбранный":"")+"' id='TATTOO_COUNT_RETROACTIVE_DISABLED' style='width:100%; margin:0; color:"+(activeButtonZero?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>");
+								contentSB.append("<div class='normal-button"+(activeButtonZero?" selected":"")+"' id='TATTOO_COUNT_RETROACTIVE_DISABLED' style='width:100%; margin:0; color:"+(activeButtonZero?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>");
 									contentSB.append("Начать с 0");
 								contentSB.append("</div>");
 							contentSB.append("</div>");
 							contentSB.append("<div style='width:98%; margin:1%; padding:0; display:inline-block;'>");
-								contentSB.append("<div class='normal-button"+(!activeButtonZero?" выбранный":"")+"' id='TATTOO_COUNT_RETROACTIVE_ENABLED' style='width:100%; margin:0; color:"+(!activeButtonZero?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>");
+								contentSB.append("<div class='normal-button"+(!activeButtonZero?" selected":"")+"' id='TATTOO_COUNT_RETROACTIVE_ENABLED' style='width:100%; margin:0; color:"+(!activeButtonZero?PresetColour.GENERIC_GOOD:PresetColour.TEXT_HALF_GREY).toWebHexString()+";'>");
 									contentSB.append("Показать все");
 								contentSB.append("</div>");
 							contentSB.append("</div>");

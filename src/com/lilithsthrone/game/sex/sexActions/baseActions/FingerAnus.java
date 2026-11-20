@@ -189,7 +189,7 @@ public class FingerAnus {
 						break;
 					case DOM_NORMAL:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.namePos] [npc.fingers] enter [npc2.herHim], before eagerly bucking [npc2.her] [npc2.assCloaca] back against [npc.her] [npc.hand] as [npc2.she] enthusiastically [npc2.verb(help)] to [npc2.verb(sink)] [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.asshole+].",
+								" [npc2.Name] [npc2.verb(let)] [npc2.a_moan+], когда [npc.fingers] [npc.namePos] входят в [npc2.herHim], прежде чем охотно податься своей [npc2.assCloaca] назад навстречу [npc.her] [npc.hand], с энтузиазмом помогая погрузить [npc.her] [npc.fingers] ещё глубже в свою [npc2.asshole+].",
 	
 	
 								" С [npc2.a_moan+], [npc2.name] [npc2.verb(start)] жадно выгибает [npc2.her] [npc2.assCloaca] назад к [npc.namePos] [npc.hand], отчаянно подталкивая [npc.name] погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.asshole+]."));
@@ -203,7 +203,7 @@ public class FingerAnus {
 						break;
 					case SUB_EAGER:
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
-								" [npc2.Name] [npc2.verb(let)] out [npc2.a_moan+] as [npc.namePos] [npc.fingers] enter [npc2.herHim], eagerly bucking [npc2.her] [npc2.assCloaca] back against [npc.her] [npc.hand] as [npc2.she] enthusiastically [npc2.verb(help)] to [npc2.verb(sink)] [npc.her] [npc.fingers] even deeper into [npc2.her] [npc2.asshole+].",
+								" [npc2.Name] [npc2.verb(let)] наружу, пока [npc2.a_moan+] как [npc.namePos] [npc.fingers] входит в [npc2.herHim], жадно выгибая [npc2.her] [npc2.assCloaca] назад, прижимаясь к [npc.her] [npc.hand], пока [npc2.she] с энтузиазмом [npc2.verb(help)] к [npc2.verb(sink)] [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.asshole+].",
 	
 	
 								" С [npc2.a_moan+], [npc2.name] [npc2.verb(start)] жадно выгибая [npc2.her] [npc2.assCloaca] назад на [npc.namePos] [npc.hand], отчаянно подталкивая [npc.herHim] погрузить [npc.her] [npc.fingers] еще глубже в [npc2.her] [npc2.asshole+]."));

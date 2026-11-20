@@ -464,7 +464,7 @@ public class PenisFeet {
 
 							"[npc.A_sob+] вырывается из между [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя [npc.her] протесты, [npc2.name] крепко [npc2.verb(hold)] [npc.herHim] на месте, мягко прижимая [npc2.her] [npc2.feet] к паху [npc.her], пока [npc2.she] [npc2.verb(force)] [npc.herHim], чтобы принять [npc2.a_footjob].",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.herHim] to let go of [npc.her] [npc.cock]. [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, slowly grinding [npc2.herself] against [npc.herHim] as [npc2.she] [npc2.verb(force)] [npc.herHim] to receive [npc2.a_footjob]."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], умоляя [npc2.herHim] отпустить [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] полностью [npc2.verb(ignore)] протесты [npc.her], медленно растирая [npc2.herself] о [npc.herHim], пока [npc2.she] [npc2.verb(force)] [npc.herHim], чтобы получить [npc2.a_footjob]."));
 					break;
 				case DOM_ROUGH:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(

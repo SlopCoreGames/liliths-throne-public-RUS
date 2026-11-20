@@ -162,8 +162,8 @@ public class EnchantmentDialogue {
 		inventorySB.append("<div class='container-full-width' style='text-align:center; padding:8px 0; margin-top:0;'>");
 		
 		for(TFPotency potency : TFPotency.getAllPotencies()) {
-			inventorySB.append("<div class='normal-button"+(ingredient.getEnchantmentEffect().getPotencyModifiers(primaryMod, secondaryMod).contains(potency)?"":" отключено")+(EnchantmentDialogue.potency==potency?" выбранный":"")
-					+"' id='МОЩНОСТЬ_"+potency+"' style='"+(EnchantmentDialogue.potency==potency?"цвет:"+potency.getColour().toWebHexString()+";":"")+" margin:0 1%; width:14%;'>"+potency.getName()+"</div>");
+			inventorySB.append("<div class='normal-button"+(ingredient.getEnchantmentEffect().getPotencyModifiers(primaryMod, secondaryMod).contains(potency)?"":" disabled")+(EnchantmentDialogue.potency==potency?" selected":"")
+					+"' id='POTENCY_"+potency+"' style='"+(EnchantmentDialogue.potency==potency?"color:"+potency.getColour().toWebHexString()+";":"")+" margin:0 1%; width:14%;'>"+potency.getName()+"</div>");
 		}
 		
 		inventorySB.append("</div>");

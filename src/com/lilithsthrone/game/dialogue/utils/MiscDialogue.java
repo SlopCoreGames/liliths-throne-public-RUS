@@ -1279,7 +1279,7 @@ public class MiscDialogue {
 	private static String applyWrapper(String title, String description, Colour buttonColour, String buttonId, String buttonText, boolean buttonActive, int cost, boolean isCostAdditional, boolean isDisabled, boolean isDiscounted) {
 		StringBuilder sb = new StringBuilder();
 
-		String border = "граница: 1px сплошная "+(buttonActive?buttonColour:PresetColour.BASE_GREY_DARK).toWebHexString()+"55;";
+		String border = "border: 1px solid "+(buttonActive?buttonColour:PresetColour.BASE_GREY_DARK).toWebHexString()+"55;";
 		String background = "";//buttonActive?"background:#555;":"";
 		String buttonStyle= "style='min-width:0; width:calc(100% - 8px); padding:4px; margin:0;'";
 		

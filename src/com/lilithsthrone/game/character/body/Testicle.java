@@ -330,13 +330,13 @@ public class Testicle implements BodyPartInterface {
 		}
 		
 		if (regenerationChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.namePos] rate of [npc.cum] regeneration doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled(скорость [npc.cum] регенерации [npc.namePos] не меняется...)]</p>");
 		}
 		
 		String regenerationDescriptor = getCumProductionRegeneration().getName();
 		if (regenerationChange > 0) {
 			return UtilText.parse(owner,
-					"<p>[npc.Name] [npc.verb(feel)] an alarming bubbling and churning taking place deep within [npc.her] [npc.balls], and [npc.she] can't help but let out [npc.a_moan+] as a small squirt of precum suddenly drools out from [npc.her] [npc.cock]; clear evidence that [npc.her] [npc.cum] regeneration has [style.boldGrow(increased)].<br/>[npc.Her] rate of [npc.cum] regeneration is now [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(cumRegeneration)+"/день)!</p>");
+					"<p>[npc.Name] [npc.verb(feel)] тревожное бурление и копошение глубоко внутри [npc.her] [npc.balls], и [npc.she] не может не издать [npc.a_moan+], когда маленькая струйка предэякулята внезапно вытекает из [npc.her] [npc.cock]; явное свидетельство того, что регенерация [npc.her] [npc.cum] [style.boldGrow(увеличилась)].<br/>Скорость регенерации [npc.Her] [npc.cum] теперь [style.boldSex(" + regenerationDescriptor + ")] ("+Units.fluid(cumRegeneration)+"/день)!</p>");
 			
 		} else {
 			return UtilText.parse(owner,
@@ -364,7 +364,7 @@ public class Testicle implements BodyPartInterface {
 		}
 		
 		if (expulsionChange == 0) {
-			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.namePos] rate of [npc.cum] expulsion doesn't change...)]</p>");
+			return UtilText.parse(owner, "<p style='text-align:center;'>[style.colourDisabled([npc.namePos] скорость [npc.cum] извержения не меняется...)]</p>");
 		}
 		
 		String expulsionDescriptor = getCumExpulsion().getDescriptor();

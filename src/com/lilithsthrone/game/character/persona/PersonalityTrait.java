@@ -137,7 +137,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(NAIVE)
-								?"[style.colourDisabled([npc.Name] @@T1@@ уже циничный, так что ничего не происходит...)]"
+								?"[style.colourDisabled([npc.Name] не отличается наивностью, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(теряя [npc.her] наивность)]!")
 						+ "</p>");
 		}
@@ -214,7 +214,7 @@ public enum PersonalityTrait {
 			return UtilText.parse(target,
 					"<p style='text-align:center;'>"
 							+ (!target.hasPersonalityTrait(COWARDLY)
-								?"[style.colourDisabled([npc.Name] @@T1@@ уже трусливый, так что ничего не происходит...)]"
+								?"[style.colourDisabled([npc.Name] не отличается трусостью, так что ничего не происходит...)]"
 								:"[npc.Name] [npc.verb(find)] [npc.herself] [style.colourMinorBad(теряя [npc.her] трусость)]!")
 						+ "</p>");
 		}

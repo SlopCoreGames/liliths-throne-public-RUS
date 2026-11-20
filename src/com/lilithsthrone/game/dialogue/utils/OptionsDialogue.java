@@ -113,7 +113,7 @@ public class OptionsDialogue {
 					sb.append("<p style='text-align:center;margin:0;padding:0;'><b>Уровень ").append(Main.getProperties().level).append("</b></p>");
 					String colourString = Main.getProperties().raceColour;
 					if(!colourString.isEmpty()) {
-						colourString = "цвет:"+colourString+";";
+						colourString = "color:"+colourString+";";
 					}
 					sb.append("<p style='text-align:center;margin:0;padding:0;").append(colourString).append("'><b>").append(Util.capitaliseSentence(Main.getProperties().race)).append("</b></p>");
 					sb.append("<p style='text-align:center;margin:0;padding:0;'>").append(UtilText.formatAsMoney(Main.getProperties().money, "b")).append("</p>");
@@ -536,7 +536,7 @@ public class OptionsDialogue {
 			String baseName = Util.getFileName(name);
 			String identifierName = Util.getFileIdentifier(name);
 
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
 						+ "<div class='container-full-width' style='width:calc(25% - 16px); background:transparent;'>"
 							+ date
 						+ "</div>"
@@ -562,7 +562,7 @@ public class OptionsDialogue {
 					+ "</div>";
 			
 		} else {
-			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
+			return "<div class='container-full-width' style='padding:0; margin:0 0 4px 0;"+(altColour?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";":"")+"'>"
 						+ "<div class='container-full-width' style='width:calc(25% - 16px); background:transparent;'>"
 							+ "-"
 						+ "</div>"
@@ -593,7 +593,7 @@ public class OptionsDialogue {
 					+ "<div class='container-quarter-width' style='padding:auto 0; margin:auto 0; width:20%; text-align:center; background:transparent;'>"
 					+ (name.equals(deleteConfirmationName)
 							?"<div class='square-button big' id='DELETE_CHARACTER_" + identifierName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDeleteConfirm()+"</div></div>"
-							:"<div class='square-button big' id='DELETE_CHARACTER_', " + identifierName + "Вот перевод на русский язык:\n\n'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDelete()+"</div></div>")
+							:"<div class='square-button big' id='DELETE_CHARACTER_', " + identifierName + "'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getDiskDelete()+"</div></div>")
 					+ "</div>"
 				+ "</div>";
 	}
@@ -1265,7 +1265,7 @@ public class OptionsDialogue {
 								+ "<div style='width:140px; float:left;'><b style='color:"+colour.getShades(8)[count]+";'>" +Util.capitaliseSentence(g.getName())+"</b></div>");
 				
 				for(ContentPreferenceValue preference : ContentPreferenceValue.values()) {
-					sb.append("<div id='"+preference+"_"+g+"' class='preference-button"+(Main.getProperties().genderPreferencesMap.get(g)==preference.getValue()?" выбранный":"")+"'>"+Util.capitaliseSentence(preference.getName())+"</div>");
+					sb.append("<div id='"+preference+"_"+g+"' class='preference-button"+(Main.getProperties().genderPreferencesMap.get(g)==preference.getValue()?" selected":"")+"'>"+Util.capitaliseSentence(preference.getName())+"</div>");
 				}
 								
 				sb.append("<p><br/>"
@@ -1438,7 +1438,7 @@ public class OptionsDialogue {
 					+ "<div style='width:140px; float:left;'><b style='color:"+colour.toWebHexString()+";'>" +Util.capitaliseSentence(orient.getName())+"</b></div>");
 		
 		for(SexualOrientationPreference preference : SexualOrientationPreference.values()) {
-			sb.append("<div id='"+preference+"_"+orient+"' class='preference-button"+(Main.getProperties().orientationPreferencesMap.get(orient)==preference.getValue()?" выбранный":"")+"'>"
+			sb.append("<div id='"+preference+"_"+orient+"' class='preference-button"+(Main.getProperties().orientationPreferencesMap.get(orient)==preference.getValue()?" selected":"")+"'>"
 							+Util.capitaliseSentence(preference.getName())
 						+"</div>");
 		}
@@ -1494,7 +1494,7 @@ public class OptionsDialogue {
 				sb.append("<div style='display:inline-block;'><span class='option-disabled'>Фетиш насильно отключен из-за "+disabledMsg+" установки!</span></div>");
 				break;
 			} else {
-				sb.append("<div id='"+preference+"_"+Fetish.getIdFromFetish(fetish)+"' class='preference-button"+(Main.getProperties().fetishPreferencesMap.get(fetish)==preference.getValue()?" выбранный":"")+"' style='width:70px;'>"
+				sb.append("<div id='"+preference+"_"+Fetish.getIdFromFetish(fetish)+"' class='preference-button"+(Main.getProperties().fetishPreferencesMap.get(fetish)==preference.getValue()?" selected":"")+"' style='width:70px;'>"
 							+Util.capitaliseSentence(preference.getName())
 						+"</div>");
 			}
@@ -1627,7 +1627,7 @@ public class OptionsDialogue {
 			
 			for(ContentPreferenceValue preference : ContentPreferenceValue.values()) {
 				sb.append(
-						"<div id='"+type+"_"+preference+"_"+ageCat+"' class='preference-button"+(Main.getProperties().agePreferencesMap.get(type).get(ageCat)==preference.getValue()?" выбранный":"")+"'>"
+						"<div id='"+type+"_"+preference+"_"+ageCat+"' class='preference-button"+(Main.getProperties().agePreferencesMap.get(type).get(ageCat)==preference.getValue()?" selected":"")+"'>"
 								+Util.capitaliseSentence(preference.getName())
 						+"</div>");
 			}
@@ -1853,7 +1853,7 @@ public class OptionsDialogue {
 		contentSB.append("<div class='container-full-width' style='padding:0; margin:2px 0;'>");
 		
 			contentSB.append(
-					"<div id='"+id+"_УВЕЛИЧИТЬ_БОЛЬШОЙ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+					"<div id='"+id+"_INCREASE_LARGE' class='normal-button"+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 							+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 					+ "</div>"
 					+ "<div id='"+id+"_УВЕЛИЧИТЬ' class='normal-button"+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
@@ -1903,17 +1903,17 @@ public class OptionsDialogue {
 			sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 
 				for(FurryPreference preference : FurryPreference.values()) {
-					sb.append("<div id='FEMININE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" отключено":"")
+					sb.append("<div id='FEMININE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" disabled":"")
 								+(Main.getProperties().getSubspeciesFeminineFurryPreferencesMap().get(s)==preference && s.isFurryPreferencesEnabled()
-									?" selected' style='"+baseStyle+" цвет-границы:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" border-color:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 				sb.append("</div>");
 				sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 				for(SubspeciesPreference preference : SubspeciesPreference.values()) {
-					sb.append("<div id='FEMININE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" отключено":"")
+					sb.append("<div id='FEMININE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" disabled":"")
 								+(Main.getProperties().getSubspeciesFemininePreferencesMap().get(s)==preference && s.isSpawnPreferencesEnabled()
-									?" selected' style='"+baseStyle+" цвет-границы:"+PresetColour.FEMININE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" border-color:"+PresetColour.FEMININE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 				
@@ -1927,17 +1927,17 @@ public class OptionsDialogue {
 			sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 			
 				for(FurryPreference preference : FurryPreference.values()) {
-					sb.append("<div id='MASCULINE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" отключено":"")
+					sb.append("<div id='MASCULINE_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isFurryPreferencesEnabled()?" disabled":"")
 								+(Main.getProperties().getSubspeciesMasculineFurryPreferencesMap().get(s)==preference && s.isFurryPreferencesEnabled()
-									?" selected' style='"+baseStyle+" цвет-границы:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" border-color:"+preference.getColour().toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 			sb.append("</div>");
 			sb.append("<div class='container-full-width' style='text-align:center; width:30%; background:transparent; margin:2px 0; padding:0;'>");
 				for(SubspeciesPreference preference : SubspeciesPreference.values()) {
-					sb.append("<div id='MASCULINE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" отключено":"")
+					sb.append("<div id='MASCULINE_SPAWN_"+preference+"_"+subspeciesId+"' class='square-button small"+(!s.isSpawnPreferencesEnabled()?" disabled":"")
 								+(Main.getProperties().getSubspeciesMasculinePreferencesMap().get(s)==preference && s.isSpawnPreferencesEnabled()
-									?" selected' style='"+baseStyle+" цвет-границы:"+PresetColour.MASCULINE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
+									?" selected' style='"+baseStyle+" border-color:"+PresetColour.MASCULINE_PLUS.toWebHexString()+";'><div class='square-button-content'>"+preference.getSVGImage(false)+"</div></div>"
 									:"' style='"+baseStyle+"'><div class='square-button-content'>"+preference.getSVGImage(true)+"</div></div>"));
 				}
 				
@@ -2174,7 +2174,7 @@ public class OptionsDialogue {
 					+ "<div class='container-half-width' style='width:calc(45% - 16px);'>");
 		
 		contentSB.append(
-				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" отключено":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
+				"<div id='"+id+"_ON' class='normal-button', "+(value==maximum?" disabled":"")+"' style='width:10%; margin:0 2.5%; text-align:center; float:right;'>"
 						+ (value==maximum?"[style.boldDisabled(+)]":"[style.boldGood(+)]")
 				+ "</div>"
 				+ "Контекст: Java UI/Dialogue src/com/lilithsthrone/game/dialogue/utils/OptionsDialogue.java\nТекст:\n<div class='container-full-width' style='text-align:center; width:calc(30%); float:right; margin:0;'>"
@@ -2417,7 +2417,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.GENERIC_GOOD, "Частота автосохранения", "Выберите, как часто вы хотите, чтобы игра автоматически сохранялась при переходе с одной карты на другую."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button', "+(Main.getProperties().autoSaveFrequency == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='AUTOSAVE_FREQUENCY_"+i+"' class='normal-button', "+(Main.getProperties().autoSaveFrequency == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().autoSaveFrequency == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2449,11 +2449,11 @@ public class OptionsDialogue {
 				Artist artist = artists.get(i);
 				if (!artist.getName().equals("Custom")) {
 					UtilText.nodeContentSB.append("<div style='width:100%;  margin:1px 0; border-radius:4px; background-color:"+PresetColour.BACKGROUND.toWebHexString()+";'>");
-						UtilText.nodeContentSB.append("<div "+(i==0?"":"id='ARTIST_"+artist.getFolderName()+"_ВВЕРХ'")+" class='normal-button"+(i==0?" отключено":"")+"' style='width:10%; margin:0; text-align:center;'>");
+						UtilText.nodeContentSB.append("<div "+(i==0?"":"id='ARTIST_"+artist.getFolderName()+"_UP'")+" class='normal-button"+(i==0?" disabled":"")+"' style='width:10%; margin:0; text-align:center;'>");
 							UtilText.nodeContentSB.append("&#8593;");
 						UtilText.nodeContentSB.append("</div>");
-						UtilText.nodeContentSB.append("<div "+(i==artists.size()-1?"":"id='ARTIST_"+artist.getFolderName()+"_ВНИЗ'")
-									+" class='normal-button"+(i==artists.size()-1?" отключено":"")+"' style='width:10%; margin:0; text-align:center; float:right;'>&#8595;</div>");
+						UtilText.nodeContentSB.append("<div "+(i==artists.size()-1?"":"id='ARTIST_"+artist.getFolderName()+"_DOWN'")
+									+" class='normal-button"+(i==artists.size()-1?" disabled":"")+"' style='width:10%; margin:0; text-align:center; float:right;'>&#8595;</div>");
 						UtilText.nodeContentSB.append("<div style='width:80%; margin:0; text-align:center; float:right;'>"
 								+"<span style='color:"+artist.getColour().toWebHexString()+";'>"+artist.getName()+"</span> ("+artist.getArtworkCount()+")"
 							+"</div>");
@@ -2546,7 +2546,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Обход действия секса", "Если это включено, требования к порочности при действии секса могут быть обходятся."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='BYPASS_SEX_ACTIONS_"+i+"' class='normal-button'}"+(Main.getProperties().bypassSexActions == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='BYPASS_SEX_ACTIONS_"+i+"' class='normal-button'}"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().bypassSexActions == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2807,7 +2807,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.BASE_PINK, "Полные описания обнажения", "Устанавливает, как часто обнаженные части тела полностью описываются во время секса."));
 			for (int i = 2; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='FULL_EXPOSURE_DESCRIPTIONS_"+i+"' class='normal-button"+(Main.getProperties().bypassSexActions == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='FULL_EXPOSURE_DESCRIPTIONS_"+i+"' class='normal-button"+(Main.getProperties().bypassSexActions == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().fullExposureDescriptions == i
 						?"[style.boldGood("
 						:"[style.colourDisabled(")
@@ -2879,7 +2879,7 @@ public class OptionsDialogue {
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES, "Многогрудь", "Выберите, должны ли случайно сгенерированные пушистые персонажи иметь несколько рядов груди."));
 			int[] buttonOrder = new int[] {2, 1, 0, 3}; // Order buttons in this manner so that they appear to be a little more logical
 			for (int i : buttonOrder) {
-				UtilText.nodeContentSB.append("<div id='MULTI_BREAST_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().multiBreasts == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='MULTI_BREAST_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().multiBreasts == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().multiBreasts == i
 							?(i == 0
 								?"[style.boldTerrible("
@@ -2893,7 +2893,7 @@ public class OptionsDialogue {
 			
 			UtilText.nodeContentSB.append(getCustomContentPreferenceDivStart(PresetColour.NIPPLES_CROTCH, "Груди в паху & Вымя", "Выберите, должны ли случайно сгенерированные тауры и пушистые персонажи иметь вымя или грудь в паху."));
 			for (int i = com.lilithsthrone.game.Properties.uddersLabels.length-1; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='UDDER_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getUddersLevel() == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='UDDER_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getUddersLevel() == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(Main.getProperties().getUddersLevel() == i
 						?(i == 0?"[style.boldBad(":"[style.boldGood(")
 						:"[style.colourDisabled(")
@@ -2905,7 +2905,7 @@ public class OptionsDialogue {
 			int[] hairButtonOrder = new int[] {2, 1, 0, 3}; // Order buttons in this manner so that they appear to be a little more logical
 			for (int i : hairButtonOrder) {
 				boolean active = Main.getProperties().getHairGrowth() == i;
-				UtilText.nodeContentSB.append("<div id='HAIR_GROWTH_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getHairGrowth() == i?" выбранный":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
+				UtilText.nodeContentSB.append("<div id='HAIR_GROWTH_PREFERENCE_"+i+"' class='normal-button"+(Main.getProperties().getHairGrowth() == i?" selected":"")+"' style='width:calc(33% - 8px); margin-right:8px; text-align:center; float:right;'>"
 						+(i == 0
 								?"[style.bold"+(active?"Плохая":"Отключено")+"(Никогда)]"
 								:(i == 1

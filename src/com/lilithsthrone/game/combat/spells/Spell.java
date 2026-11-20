@@ -419,7 +419,7 @@ public enum Spell {
 									?Util.randomItemFrom(
 									Util.newArrayListOfValues(
 										"[npc.speech(По древним обрядам огня, я призываю ад и воплощение ярости! Ответь на зов твоего [npc.master], [npc2.name], и, через уничтожение миллиона измерений, будь связан с моей волей!)] ",
-										"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc2.name] зовет! Послушай и будь призвана, @@T1@@!)] ",
+										"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc.master] зовёт! Внемли и явись, [npc2.name]!)] ",
 										"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc.master] зовет! Послушай и будь призвана, [npc2.name]!)] "))
 									:"")
 								+(caster.isPlayer()
@@ -433,7 +433,7 @@ public enum Spell {
 										?Util.randomItemFrom(
 										Util.newArrayListOfValues(
 											"[npc.speech(По древним обрядам огня, я призываю ад и воплощение ярости! Ответь на зов твоего [npc.master], [npc2.name], и, через уничтожение миллиона измерений, будь связан с моей волей!)] ",
-											"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc2.name] зовет! Послушай и будь призвана, @@T1@@!)] ",
+											"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc.master] зовёт! Внемли и явись, [npc2.name]!)] ",
 											"[npc.speech(Пусть огонь поглотит, и ад внутри меня будет развязан! Огонь и ярость, твой [npc.master] зовет! Послушай и будь призвана, [npc2.name]!)] "))
 										:"")
 								+(caster.isPlayer()
@@ -640,7 +640,7 @@ public enum Spell {
 			true,
 			"Успокаивающие воды",
 			"soothing_waters",
-			"Призывает шар успокаивающей воды, пропитанной арканой энергией, которая восстанавливает "+Attribute.HEALTH_MAXIMUM.getName()+" @@T0@@ @@T1@@ не знает этого заклинания, поэтому не может его использовать!",
+			"Призывает шар успокаивающей воды, пропитанной арканной энергией, которая восстанавливает "+Attribute.HEALTH_MAXIMUM.getName()+" каждого, кто её выпьет.",
 			0,
 			DamageVariance.LOW,
 			100,
@@ -665,11 +665,11 @@ public enum Spell {
 				return new Value<>(false, UtilText.parse(owner, "Заклинания могут быть использованы только в нейтральной сцене!"));
 				
 			} else if(Main.game.isInCombat()) {
-				return new Value<>(false, UtilText.parse(owner, "@@T1@@ [npc.verb(need)] как минимум @@H0@@"));
+				return new Value<>(false, UtilText.parse(owner, "Во время боя заклинания можно применять только как боевой приём!"));
 				
 			} else if(!Main.game.isSavedDialogueNeutral()
 					&& (Main.game.getCurrentDialogueNode()!=SpellManagement.CHARACTER_SPELLS_WATER?false:SpellManagement.getDialogueReturn().getDialogueNodeType()!=DialogueNodeType.OCCUPANT_MANAGEMENT)) {
-				return new Value<>(false, "@@H0@@ [style.boldMana(aura)] для использования этого заклинания!");
+				return new Value<>(false, "Заклинания можно применять только в нейтральной сцене!");
 				
 			} else if(owner.getMana()<this.getModifiedCost(owner)) {
 				return new Value<>(false, UtilText.parse(owner, "[npc.Name] [npc.verb(need)] как минимум <b>"+this.getModifiedCost(owner)+"</b> [style.boldMana(aura)] для того, чтобы использовать это заклинание!"));
@@ -1483,7 +1483,7 @@ public enum Spell {
 											"Толкая ваше [pc.hand] вперед, вы призываете левитирующий каменный панцирь, чтобы защитить [npc.name] от входящих атак!",
 											"Толкая [npc.her] [npc.hand] вперед, [npc.name] призывает левитирующий каменный панцирь, чтобы защитить [npc.herHim] от входящих атак!",
 											"Толкая [npc.her] [npc.hand] вперед, [npc.name] призывает левитирующий каменный панцирь, чтобы защитить вас от входящих атак!",
-											"[npc1.her] [npc1.hand] выталкивает [npc1.name] вперед, [npc2.name] вызывает левитирующую каменную оболочку, чтобы защитить @@T4@@ от входящих атак!"));
+											"Выбрасывая [npc1.her] [npc1.hand] вперёд, [npc1.name] призывает левитирующий каменный панцирь, чтобы защитить [npc2.name] от входящих атак!"));
 
 			descriptionSB.append(getDamageDescription(caster, target, 0, isHit, isCritical));
 			
@@ -3528,9 +3528,9 @@ public enum Spell {
 				boolean hasSpell = character.hasSpell(spell, miscSpell);
 				boolean forbidden = spell.isForbiddenSpell();
 				
-				spellSB.append("<div class='square-button "+(!hasSpell?" отключено":"")+"' style='width:50%; margin:8px 25% 4px 25%; cursor: default; "
+				spellSB.append("<div class='square-button "+(!hasSpell?" disabled":"")+"' style='width:50%; margin:8px 25% 4px 25%; cursor: default; "
 										+(hasSpell
-												?"цвет-границы:"+spell.getSpellSchool().getColour().toWebHexString()+";"
+												?"border-color:"+spell.getSpellSchool().getColour().toWebHexString()+";"
 												:"")+"' id='SPELL_TREE_"+spell+"'>"
 									+ "<div class='square-button-content' style='cursor: default;'>"+spell.getSVGString()+"</div>"
 									+ (!hasSpell
@@ -3541,7 +3541,7 @@ public enum Spell {
 								+ "</div>");
 				
 				Value<Boolean, String> useDesc = spell.getSpellCastOutOfCombatDescription(character, target);
-				spellSB.append("<div class='normal-button "+(useDesc.getKey()?"":"отключено")+"' id='SPELL_TREE_CAST_"+spell+"' style='width:50%; margin:8px 25% "+(miscSpell?"8px":"0")+" 25%; text-align:center;'>");
+				spellSB.append("<div class='normal-button "+(useDesc.getKey()?"":"disabled")+"' id='SPELL_TREE_CAST_"+spell+"' style='width:50%; margin:8px 25% "+(miscSpell?"8px":"0")+" 25%; text-align:center;'>");
 				spellSB.append("Применить");
 				spellSB.append("</div>");
 				
@@ -3614,11 +3614,11 @@ public enum Spell {
 					+ "<svg width='100%' height='100%'><line x1='"+entryX+"%' y1='100%' x2='"+entryX+"%' y2='50%' stroke='"+getPerkLineChildColour(character, spell, perkEntry).toWebHexString()+"' stroke-width='2px'/></svg></div>");
 		}
 		
-		entrySB.append("<div class='square-button round"+(!hasUpgrade && !isUpgradeAvailable?" отключено":"")+"' style='width:40%; margin:8px "+getMargin(size)+"%; "
+		entrySB.append("<div class='square-button round"+(!hasUpgrade && !isUpgradeAvailable?" disabled":"")+"' style='width:40%; margin:8px "+getMargin(size)+"%; "
 										+ (character.hasSpellUpgrade(perkEntry.getEntry())
-											?"курсор: по умолчанию; цвет границы:"+perkEntry.getCategory().getColour().toWebHexString()+";"
+											?"cursor: default; border-color:"+perkEntry.getCategory().getColour().toWebHexString()+";"
 											:(!perkEntry.getEntry().isAvailable(character) //|| character.getSpellUpgradePoints(perkEntry.getCategory()) < perkEntry.getEntry().getPointCost()
-												?"курсор: по умолчанию; цвет границы:"+PresetColour.GENERIC_BAD.toWebHexString()+";"
+												?"cursor: default; border-color:"+PresetColour.GENERIC_BAD.toWebHexString()+";"
 												:""))
 										+"' id='SPELL_UPGRADE_"+perkEntry.getEntry()+"'>"
 							+ "<div class='square-button-content'>"+perkEntry.getEntry().getSVGString()+"</div>"

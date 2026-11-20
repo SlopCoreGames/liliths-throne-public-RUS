@@ -243,7 +243,7 @@ public class VaginaType {
 			Util.newArrayListOfValues("аллигаторийский-"),
 			Util.newArrayListOfValues("горячая"),
 			"[npc.She] [npc.verb(let)] издает восторженный визг, когда волна удовольствия пробегает сквозь пах [npc.her], интенсивность которой нарастает, пока [npc.she] [npc.verb(feel)] [npc.her] щель беспорядочно смещается и сокращается. Спустя мгновение ощущение угасает, и [npc.she] [npc.verb(discover)] то, что [npc.her] киска [npc.has], принимает отчетливую форму аллигатора.</p><p>Как раз когда [npc.she] [npc.verb(start)] думает, что трансформация [npc.has] подошла к концу, [npc.her] киска непроизвольно сжимается, и отчаянный визг вырывается из-за [npc.her] [npc.lips+], когда теплое, покалывающее чувство разливается по [npc.her] нижней части живота. Перед [npc.her] глазами мелькают образы жирных аллигачьих членов, глубоко вбивающихся в [npc.her] новую киску, и [npc.her] визг превращается в удовлетворенный стон, когда [npc.she] [npc.verb(imagine)] их, впрыскивающих горячее семя глубоко в [npc.her] новую матку. Так же быстро, как и появились, образы исчезают из [npc.her] сознания, и когда последняя волна покалывающего удовольствия омывает [npc.her] тело, [npc.she] [npc.verb(feel)] [npc.her] женские репродуктивные органы завершают свою трансформацию.<br/>[npc.Name] теперь [npc.has] [style.boldAlligatorMorph(alligator vagina)], с [npc.pussyColourPrimary(true)] половыми губами и [npc.pussyColourSecondary(true)] внутренними стенками.",
-			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())a pierced#ELSEan#ENDIF alligator-pussy, with [npc.labiaSize], [npc.pussyPrimaryColour(true)] labia and [npc.pussySecondaryColour(true)] inner-walls.",
+			"[npc.she] [npc.has] #IF(npc.isPiercedVagina())проколотая#ELSEобычная#ENDIF аллигаторова киска с [npc.labiaSize], [npc.pussyPrimaryColour(true)] половыми губами и [npc.pussySecondaryColour(true)] внутренними стенками.",
 			null) {
 	};
 
@@ -379,7 +379,7 @@ public class VaginaType {
 			return VaginaType.DEMON_COMMON;
 		}
 		if(id.equals("NoStepOnSnek_snake_vagina_e")) {
-			id = "NoStepOnSnek_змеиная_вагина";
+			id = "NoStepOnSnek_snake_vagina";
 		}
 		id = Util.getClosestStringMatch(id, idToVaginaMap.keySet());
 		return idToVaginaMap.get(id);

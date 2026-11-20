@@ -759,6 +759,29 @@ def _translate_single_java(api_url: str, raw: str, glossary: dict, ctx: str, tm:
             if unm != core and "@@" not in unm and not base.has_translatable_words(unm):
                 tm[core] = unm
             return lead + unm + trail
+    # Fallback 1: split on #IF/#ELSE/#ENDIF, </p>, <br/><br/> directives if present
+    toks = base.split_directives(core)
+    if len(toks) > 1:
+        rebuilt = []
+        changed_any = False
+        for is_dir, seg in toks:
+            if is_dir or not seg.strip() or not base.has_translatable_words(seg):
+                rebuilt.append(seg)
+            else:
+                tr_seg = base.translate_single(api_url, seg, glossary, ctx)
+                if tr_seg != seg:
+                    changed_any = True
+                rebuilt.append(tr_seg)
+        if changed_any:
+            unm = "".join(rebuilt)
+            if "@@" not in unm:
+                tm[core] = unm
+                return lead + unm + trail
+    # Fallback 2: wrapper + sentence-split fallback from translate_lt
+    tr_fb = base.translate_single(api_url, core, glossary, ctx)
+    if tr_fb != core and "@@" not in tr_fb:
+        tm[core] = tr_fb
+        return lead + tr_fb + trail
     return raw
 
 

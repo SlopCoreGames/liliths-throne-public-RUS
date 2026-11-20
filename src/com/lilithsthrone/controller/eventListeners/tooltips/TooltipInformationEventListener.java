@@ -450,7 +450,7 @@ public class TooltipInformationEventListener implements EventListener {
 			
 			if(currentCooldown>0) {
 				specialYIncrease += 64;
-				tooltipSB.append("<div class='subTitle'>[style.colourTerrible(On cooldown)]: "+currentCooldown+(currentCooldown==1?" ход":" ходов")+"</div>");
+				tooltipSB.append("<div class='subTitle'>[style.colourTerrible(Перезарядка)]: "+currentCooldown+(currentCooldown==1?" ход":" ходов")+"</div>");
 			}
 			
 			// Main description box & image:
@@ -1321,7 +1321,7 @@ public class TooltipInformationEventListener implements EventListener {
 						tooltipSB.append("</div>"
 								+ "<div style='float: left;'>"
 									+ "<img id='CHARACTER_IMAGE' style='"+(revealed?"":"-webkit-filter: brightness(0%);")
-										+" ширина: auto; высота: auto; макс. ширина: 380; макс. высота: 445; отступ сверху: " + imagePadding + "px;' src='" + image.getThumbnailString()+ "'/>"
+										+" width: auto; height: auto; max-width: 380; max-height: 445; padding-top: " + imagePadding + "px;' src='" + image.getThumbnailString()+ "'/>"
 										+(revealed?"":"<p style='position:absolute; top:33%; right:0; width:"+imageWidth+"; font-weight:bold; text-align:center; color:"+PresetColour.BASE_GREY.toWebHexString()+";'>Открывается через секс!</p>")
 								+ "</div>");
 					}
@@ -1974,16 +1974,16 @@ public class TooltipInformationEventListener implements EventListener {
 						+ (primaryColour.isMetallic()
 								?"background: repeating-linear-gradient(135deg, " + primaryColour.toWebHexString() + ", " + primaryColour.getShades()[4] + " 1px);"
 								:(primaryColour.getRainbowColours()!=null
-									?"фон: "+primaryColour.getRainbowDiv(1)+";"
-									:"фон:" + (primaryColour.getCoveringIconColour()) + ";"))
+									?"background: "+primaryColour.getRainbowDiv(1)+";"
+									:"background:" + (primaryColour.getCoveringIconColour()) + ";"))
 						+ "'></div>"
 						+ (displaySecondary
 							?"<div class='colour-box' style='width:8px; height:8px; margin:0; padding:0; border-radius:2px;"
 								+ (secondaryColour.isMetallic()
 									?"background: repeating-linear-gradient(135deg, " + secondaryColour.toWebHexString() + ", " + secondaryColour.getShades()[4] + " 1px);"
 									:(secondaryColour.getRainbowColours()!=null
-										?"фон: "+secondaryColour.getRainbowDiv(1)+";"
-										:"фон:" + (secondaryColour.getCoveringIconColour()) + ";"))
+										?"background: "+secondaryColour.getRainbowDiv(1)+";"
+										:"background:" + (secondaryColour.getCoveringIconColour()) + ";"))
 								+ "'></div>"
 							:"")
 					+ "</div>"
@@ -2032,16 +2032,16 @@ public class TooltipInformationEventListener implements EventListener {
 						+ (primaryColour.isMetallic()
 								?"background: repeating-linear-gradient(135deg, " + primaryColour.toWebHexString() + ", " + primaryColour.getShades()[4] + " 1px);"
 								:(primaryColour.getRainbowColours()!=null
-									?"фон: "+primaryColour.getRainbowDiv(1)+";"
-									:"фон:" + (primaryColour.getCoveringIconColour()) + ";"))
+									?"background: "+primaryColour.getRainbowDiv(1)+";"
+									:"background:" + (primaryColour.getCoveringIconColour()) + ";"))
 						+ "'></div>"
 						+ (displaySecondary
 							?"<div class='colour-box' style='width:8px; height:8px; margin:0; padding:0; border-radius:2px;"
 								+ (secondaryColour.isMetallic()
 									?"background: repeating-linear-gradient(135deg, " + secondaryColour.toWebHexString() + ", " + secondaryColour.getShades()[4] + " 1px);"
 									:(secondaryColour.getRainbowColours()!=null
-										?"фон: "+secondaryColour.getRainbowDiv(1)+";"
-										:"фон:" + (secondaryColour.getCoveringIconColour()) + ";"))
+										?"background: "+secondaryColour.getRainbowDiv(1)+";"
+										:"background:" + (secondaryColour.getCoveringIconColour()) + ";"))
 								+ "'></div>"
 							:"")
 					+ "</div>"

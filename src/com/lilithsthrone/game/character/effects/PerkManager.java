@@ -974,11 +974,11 @@ public enum PerkManager {
 					+ "<svg width='100%' height='100%'><line x1='"+entryX+"%' y1='100%' x2='"+entryX+"%' y2='50%' stroke='"+getPerkLineChildColour(character, perkEntry).toWebHexString()+"' stroke-width='2px'/></svg></div>");
 		}
 		
-		entrySB.append("<div class='square-button"+(perkEntry.getEntry().isEquippableTrait()?"":" округление")+(disabled?" отключено":"")+"' style='width:16%; margin:16px "+getMargin(size)+"%; "+
+		entrySB.append("<div class='square-button"+(perkEntry.getEntry().isEquippableTrait()?"":" round")+(disabled?" disabled":"")+"' style='width:16%; margin:16px "+getMargin(size)+"%; "+
 							(isPerkOwned(character, perkEntry)
 									?character.hasTraitActivated(perkEntry.getEntry())
-										?"цвет-границы:"+PresetColour.TRAIT.toWebHexString()+";"
-										:"цвет-границы:"+borderColour.toWebHexString()+";"
+										?"border-color:"+PresetColour.TRAIT.toWebHexString()+";"
+										:"border-color:"+borderColour.toWebHexString()+";"
 									:"")+"' id='"+perkEntry.getRow()+"_"+perkEntry.getCategory()+"_"+Perk.getIdFromPerk(perkEntry.getEntry())+"'>"
 				+ "<div class='square-button-content'>"+perkEntry.getEntry().getSVGString(character)+"</div>"
 				+ (disabled

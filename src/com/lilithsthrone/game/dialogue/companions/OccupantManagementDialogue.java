@@ -235,7 +235,7 @@ public class OccupantManagementDialogue {
 						+ "<h6 style='color:"+PresetColour.GENERIC_ARCANE.toWebHexString()+"; text-align:center;'>Журнал событий</h6>");
 			// Buttons:
 			for(int i=6; i>=0; i--) {
-				UtilText.nodeContentSB.append("<div id='SLAVE_DAY_"+i+"' class='normal-button' style='width:12%; margin:1%;"+(Main.game.getDayNumber()-i==dayNumber?"цвет:"+PresetColour.GENERIC_GOOD.toWebHexString()+";":"")+"'>"
+				UtilText.nodeContentSB.append("<div id='SLAVE_DAY_"+i+"' class='normal-button' style='width:12%; margin:1%;"+(Main.game.getDayNumber()-i==dayNumber?"color:"+PresetColour.GENERIC_GOOD.toWebHexString()+";":"")+"'>"
 						+ (i==0
 							?"Сегодня"
 							:(i==1
@@ -491,7 +491,7 @@ public class OccupantManagementDialogue {
 		GenericPlace place = cell.getPlace();
 		
 		miscDialogueSB.append(
-				"<div class='container-full-width inner' style='margin-bottom:4px; margin-top:4px; "+(!occupants.isEmpty()?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:15%; float:left; margin:0; padding:0;'><span style='color:"+place.getColour().toWebHexString()+";'>"+place.getName()+"</span><br/>"
+				"<div class='container-full-width inner' style='margin-bottom:4px; margin-top:4px; "+(!occupants.isEmpty()?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:15%; float:left; margin:0; padding:0;'><span style='color:"+place.getColour().toWebHexString()+";'>"+place.getName()+"</span><br/>"
 						+ "</div>"
 						+ "<div style='width:20%; float:left; margin:0; padding:0;'>");
 		
@@ -758,10 +758,10 @@ public class OccupantManagementDialogue {
 	private static String getRoomUpgradeHeader() {
 		return "<div class='container-full-width' style='margin-bottom:0;'>"
 					+ "<div style='width:30%; float:left; font-weight:bold; margin:0; padding:0;'>"
-						+ "Upgrade"
+						+ "Улучшение"
 					+ "</div>"
 					+ "<div style='float:left; width:10%; font-weight:bold; margin:0; padding:0;'>"
-						+ "Capacity"
+						+ "Места"
 					+"</div>"
 					+ "<div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'>"
 						+ "<span style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Привязанность</span></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'><span style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Покорность</span></div><div style='float:left; width:10%; font-weight:bold; margin:0; padding:0;'><span style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Содержание</span></div><div style='float:left; width:10%; font-weight:bold; margin:0; padding:0;'><span style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Стоимость</span></div><div style='float:left; width:10%; font-weight:bold; margin:0; padding:0;'>Действия</div></div>";
@@ -777,7 +777,7 @@ public class OccupantManagementDialogue {
 		boolean canBuy = availableForPurchase;
 		
 		miscDialogueSB.append(
-				"<div class='container-full-width inner' style='margin-bottom:4px; margin-top:4px;"+(owned?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:5%; float:left; margin:0; padding:0;'><div class='title-button no-select' id='ROOM_MOD_INFO_"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"' style='position:relative; top:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInformationIcon()+"</div>"
+				"<div class='container-full-width inner' style='margin-bottom:4px; margin-top:4px;"+(owned?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:5%; float:left; margin:0; padding:0;'><div class='title-button no-select' id='ROOM_MOD_INFO_"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"' style='position:relative; top:0;'>"+SVGImages.SVG_IMAGE_PROVIDER.getInformationIcon()+"</div>"
 						+ "</div>"
 						+ "<div style='width:25%; float:left; margin:0; padding:0;'>"
 							+ (owned
@@ -832,7 +832,7 @@ public class OccupantManagementDialogue {
 				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_SELL_DISABLED' class='square-button solo disabled'><div class='square-button-content'>"
 							+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSellDisabled()+"</div></div>");
 			} else {
-				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_ПРОДАТЬ' class='square-button solo'><div class='square-button-content'>"
+				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_SELL' class='square-button solo'><div class='square-button-content'>"
 							+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSell()+"</div></div>");
 			}
 			
@@ -852,10 +852,10 @@ public class OccupantManagementDialogue {
 			}
 			
 			if(canBuy) {
-				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_BUY' class='square-button solo'><div class='square-button-content'>Купить<div class='square-button-content'>"
+				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_BUY' class='square-button solo'><div class='square-button-content'>"
 							+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBuy()+"</div></div>");
 			} else {
-				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_BUY_DISABLED' class='square-button solo disabled'><div class='square-button-content'>Купить<div class='square-button-content'>"
+				miscDialogueSB.append("<div id='"+PlaceUpgrade.getIdFromPlaceUpgrade(upgrade)+"_BUY_DISABLED' class='square-button solo disabled'><div class='square-button-content'>"
 							+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBuyDisabled()+"</div></div>");
 			}
 		}
@@ -1015,7 +1015,7 @@ public class OccupantManagementDialogue {
 			UtilText.nodeContentSB.append("<div style='width:100%;font-weight:bold;margin-top:8px'>Сортировать по</div>");
 			
 			for(OccupantSortingMethod method : OccupantSortingMethod.values()) {
-				UtilText.nodeContentSB.append("<div id='SORT_SLAVES_BY_"+method.toString()+"' class='normal-button"+((sortingMethod==method)?" выбранный":"")+"' style='"+buttonStyle+"'>"+Util.capitaliseSentence(method.getName())+"</div>");
+				UtilText.nodeContentSB.append("<div id='SORT_SLAVES_BY_"+method.toString()+"' class='normal-button"+((sortingMethod==method)?" selected":"")+"' style='"+buttonStyle+"'>"+Util.capitaliseSentence(method.getName())+"</div>");
 			}
 //			UtilText.nodeContentSB.append("<div id='SORT_SLAVES_BY_NONE' class='normal-button"+((sortingMethod==OccupantSortingMethod.NONE)?" selected":"")+"' style='"+buttonStyle+"'>None</div>");
 //			UtilText.nodeContentSB.append("<div id='SORT_SLAVES_BY_NAME' class='normal-button"+((sortingMethod==OccupantSortingMethod.NAME)?" selected":"")+"' style='"+buttonStyle+"'>Name</div>");
@@ -1029,8 +1029,8 @@ public class OccupantManagementDialogue {
 //			UtilText.nodeContentSB.append("<div class='container-full-width inner' style='text-align:center'>");
 //			UtilText.nodeContentSB.append("<div style='width:100%;font-weight:bold;margin-top:8px'>Order</div>");
 			UtilText.nodeContentSB.append("<div style='width:100%; height:0;'></div>");
-			UtilText.nodeContentSB.append("<div id='SORT_SLAVES_ASC' class='normal-button"+((!reverseSortSlaves)?" выбранный":"")+"' style='"+buttonStyle+"'>Восходящий</div>");
-			UtilText.nodeContentSB.append("<div id='SORT_SLAVES_DESC' class='normal-button"+((reverseSortSlaves)?" выбранный":"")+"' style='"+buttonStyle+"'>Нисходящий</div>");
+			UtilText.nodeContentSB.append("<div id='SORT_SLAVES_ASC' class='normal-button"+((!reverseSortSlaves)?" selected":"")+"' style='"+buttonStyle+"'>Восходящий</div>");
+			UtilText.nodeContentSB.append("<div id='SORT_SLAVES_DESC' class='normal-button"+((reverseSortSlaves)?" selected":"")+"' style='"+buttonStyle+"'>Нисходящий</div>");
 			UtilText.nodeContentSB.append("</div>");
 			//UtilText.nodeContentSB.append("<div>");
 			
@@ -1216,10 +1216,10 @@ public class OccupantManagementDialogue {
 	private static String getSlaveryHeader() {
 		return "<div class='container-full-width' style='margin-bottom:0;'>"
 					+ "<div style='width:20%; float:left; font-weight:bold; margin:0; padding:0;'>"
-					+ "Slave"
+					+ "Раб"
 				+ "</div>"
 				+ "<div style='width:20%; float:left; font-weight:bold; margin:0; padding:0;'>"
-					+ "Location"
+					+ "Локация"
 				+ "</div>"
 				+ "<div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'>"
 					+ "<b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Привязанность</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Покорность</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Стоимость</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'>Действия</div></div>";
@@ -1228,10 +1228,10 @@ public class OccupantManagementDialogue {
 	private static String getOccupantHeader() {
 		return "<div class='container-full-width' style='margin-bottom:0;'>"
 					+ "<div style='width:20%; float:left; font-weight:bold; margin:0; padding:0;'>"
-					+ "Occupant"
+					+ "Жилец"
 				+ "</div>"
 				+ "<div style='width:20%; float:left; font-weight:bold; margin:0; padding:0;'>"
-					+ "Location"
+					+ "Локация"
 				+ "</div>"
 				+ "<div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'>"
 					+ "<b style='color:"+PresetColour.AFFECTION.toWebHexString()+";'>Привязанность</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.OBEDIENCE.toWebHexString()+";'>Покорность</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'><b style='color:"+PresetColour.CURRENCY_GOLD.toWebHexString()+";'>Стоимость</b></div><div style='float:left; width:15%; font-weight:bold; margin:0; padding:0;'>Действия</div></div>";
@@ -1240,7 +1240,7 @@ public class OccupantManagementDialogue {
 	private static String getSlaveryEntry(boolean slaveOwned, GenericPlace place, NPC slave, AffectionLevel affection, float affectionChange, ObedienceLevel obedience, float obedienceChange, boolean alternateBackground) {
 		miscDialogueSB.setLength(0);
 		miscDialogueSB.append(
-				"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:20%; float:left; margin:0; padding:0;'><b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b><br/>"
+				"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:20%; float:left; margin:0; padding:0;'><b style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+slave.getName(true)+"</b><br/>"
 							+ "<span style='color:"+slave.getRace().getColour().toWebHexString()+";'>"
 								+Util.capitaliseSentence((slave.isPrependWingedToRaceName()?"крылатый ":"")+(slave.isFeminine()?slave.getSubspecies().getSingularFemaleName(slave.getBody()):slave.getSubspecies().getSingularMaleName(slave.getBody())))+"</span><br/>"
 							+ "<span style='color:"+slave.getFemininity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(slave.getGender().getName())+"</span>"
@@ -1253,14 +1253,14 @@ public class OccupantManagementDialogue {
 						+ "<div style='float:left; width:15%; margin:0; padding:0;'>"
 							+ "<b style='color:"+affection.getColour().toWebHexString()+";'>"+slave.getAffection(Main.game.getPlayer())+ "</b>"
 							+ "<br/><span style='color:"+(affectionChange==0?PresetColour.BASE_GREY:(affectionChange>0?PresetColour.GENERIC_GOOD:PresetColour.GENERIC_BAD)).toWebHexString()+";'>"+(affectionChange>0?"+":"")
-								+decimalFormat.format(affectionChange)+"</span>/day"
+								+decimalFormat.format(affectionChange)+"</span>/день"
 							+ "<br/>"
 							+ "<span style='color:"+affection.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(affection.getName())+"</span>"
 						+"</div>"
 						+ "<div style='float:left; width:15%; margin:0; padding:0;'>"
 							+ "<b style='color:"+obedience.getColour().toWebHexString()+";'>"+slave.getObedienceValue()+ "</b>"
 							+ "<br/><span style='color:"+(obedienceChange==0?PresetColour.BASE_GREY:(obedienceChange>0?PresetColour.GENERIC_GOOD:PresetColour.GENERIC_BAD)).toWebHexString()+";'>"+(obedienceChange>0?"+":"")
-								+decimalFormat.format(obedienceChange)+"</span>/day"
+								+decimalFormat.format(obedienceChange)+"</span>/день"
 							+ "<br/>"
 							+ "<span style='color:"+obedience.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(obedience.getName())+"</span>"
 						+"</div>"
@@ -1281,22 +1281,22 @@ public class OccupantManagementDialogue {
 			miscDialogueSB.append("<div id='"+slave.getId()+"' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveInspect()+"</div></div>");
 
 			if(Main.game.getDialogueFlags().getSlaveTrader()==null) { // Only show these buttons if you aren't in a trade screen:
-				miscDialogueSB.append("<div id='"+slave.getId()+"_РАБОТА' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJob()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_JOB' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJob()+"</div></div>");
 	
-				miscDialogueSB.append("<div id='"+slave.getId()+"_ПРАВА' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlavePermissions()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_PERMISSIONS' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlavePermissions()+"</div></div>");
 				
-				miscDialogueSB.append("<div id='"+slave.getId()+"_ИНВЕНТАРЬ' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_INVENTORY' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()+"</div></div>");
 				
 				if(place.getCapacity()<=Main.game.getCharactersTreatingCellAsHome(Main.game.getPlayerCell()).size()) {
-					miscDialogueSB.append("<div id='"+slave.getId()+"_ПЕРЕНОС_ОТКЛЮЧЕН_ПОЛНЫЙ' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
+					miscDialogueSB.append("<div id='"+slave.getId()+"_TRANSFER_DISABLED_FULL' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
 				} else if(slave.isDoll()
 							?!place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_DOLL_CLOSET)
 							:!place.isSlaveCell() || place.getPlaceUpgrades().contains(PlaceUpgrade.LILAYA_DOLL_CLOSET)) {
-					miscDialogueSB.append("<div id='"+slave.getId()+"_ПЕРЕНОС_ОТКЛЮЧЕН_НЕУМЕСТНО' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
+					miscDialogueSB.append("<div id='"+slave.getId()+"_TRANSFER_DISABLED_INAPPPROPRIATE' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
 				} else if(slave.getLocation().equals(Main.game.getPlayer().getLocation()) && slave.getWorldLocation().equals(Main.game.getPlayer().getWorldLocation())) {
-					miscDialogueSB.append("<div id='"+slave.getId()+"_ПЕРЕНОС_ОТКЛЮЧЕН_УЖЕ_ЗДЕСЬ' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
+					miscDialogueSB.append("<div id='"+slave.getId()+"_TRANSFER_DISABLED_ALREADY_HERE' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
 				} else {
-					miscDialogueSB.append("<div id='"+slave.getId()+"_TRANSFER' class='square-button big'>ПЕРЕДАТЬ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransfer()+"</div></div>");
+					miscDialogueSB.append("<div id='"+slave.getId()+"_TRANSFER' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransfer()+"</div></div>");
 				}
 				
 //				miscDialogueSB.append("<div "+((place.getCapacity()<=Main.game.getCharactersTreatingCellAsHome(Main.game.getPlayerCell()).size())
@@ -1307,21 +1307,21 @@ public class OccupantManagementDialogue {
 			}
 			
 			if(Main.game.getDialogueFlags().getSlaveTrader()==null || !slave.isAbleToBeSold()) {
-				miscDialogueSB.append("<div id='"+slave.getId()+"_SELL_DISABLED' class='square-button big disabled'>ПРОДАТЬ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSellDisabled()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_SELL_DISABLED' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSellDisabled()+"</div></div>");
 			} else {
-				miscDialogueSB.append("<div id='"+slave.getId()+"_SELL' class='square-button big'>ПРОДАТЬ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSell()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_SELL' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionSell()+"</div></div>");
 			}
 
 			if(Main.game.getDialogueFlags().getSlaveTrader()==null) { // Only show these buttons if you aren't in a trade screen:
 				if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kateIntroduced)) {
-					miscDialogueSB.append("<div id='"+slave.getId()+"_COSMETICS' class='square-button big'>КОСМЕТИКА<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmetics()+"</div></div>");
+					miscDialogueSB.append("<div id='"+slave.getId()+"_COSMETICS' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmetics()+"</div></div>");
 				} else {
-					miscDialogueSB.append("<div id='"+slave.getId()+"_COSMETICS_DISABLED' class='square-button big disabled'>КОСМЕТИКА<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmeticsDisabled()+"</div></div>");
+					miscDialogueSB.append("<div id='"+slave.getId()+"_COSMETICS_DISABLED' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmeticsDisabled()+"</div></div>");
 				}
 			}
 			
 		} else { // Slave trader's slave:
-			miscDialogueSB.append("<div id='"+slave.getId()+"_TRADER' class='square-button big'>ТОРГОВЕЦ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveInspect()+"</div></div>");
+			miscDialogueSB.append("<div id='"+slave.getId()+"_TRADER' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveInspect()+"</div></div>");
 
 //			miscDialogueSB.append("<div id='"+slave.getId()+"_TRADER_JOB' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJobDisabled()+"</div></div>");
 //
@@ -1332,9 +1332,9 @@ public class OccupantManagementDialogue {
 //			miscDialogueSB.append("<div id='"+slave.getId()+"_TRADER_TRANSFER' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>");
 			
 			if(Main.game.getPlayer().getMoney() < ((int) (slave.getValueAsSlave(true)*Main.game.getDialogueFlags().getSlaveTrader().getSellModifier(null)))) {
-				miscDialogueSB.append("<div id='"+slave.getId()+"_BUY_DISABLED' class='square-button big disabled'>КУПИТЬ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBuyDisabled()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_BUY_DISABLED' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBuyDisabled()+"</div></div>");
 			} else {
-				miscDialogueSB.append("<div id='"+slave.getId()+"_BUY' class='square-button big'>КУПИТЬ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBuy()+"</div></div>");
+				miscDialogueSB.append("<div id='"+slave.getId()+"_BUY' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getTransactionBuy()+"</div></div>");
 			}
 			
 //			miscDialogueSB.append("<div id='"+slave.getId()+"_TRADER_COSMETICS' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmeticsDisabled()+"</div></div>");
@@ -1348,7 +1348,7 @@ public class OccupantManagementDialogue {
 	private static String getOccupantEntry(GenericPlace place, NPC occupant, AffectionLevel affection, float affectionChange, ObedienceLevel obedience, float obedienceChange, boolean alternateBackground) {
 		miscDialogueSB.setLength(0);
 		miscDialogueSB.append(
-				"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"фон:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:20%; float:left; margin:0; padding:0;'><b style='color:"+occupant.getFemininity().getColour().toWebHexString()+";'>"+occupant.getName(true)+"</b><br/>"
+				"<div class='container-full-width inner' style='margin-bottom:0;"+(alternateBackground?"background:"+PresetColour.BACKGROUND_ALT.toWebHexString()+";'":"'")+"'><div style='width:20%; float:left; margin:0; padding:0;'><b style='color:"+occupant.getFemininity().getColour().toWebHexString()+";'>"+occupant.getName(true)+"</b><br/>"
 							+ "<span style='color:"+occupant.getRace().getColour().toWebHexString()+";'>"
 								+Util.capitaliseSentence((occupant.isPrependWingedToRaceName()?"крылатый ":"")+(occupant.isFeminine()?occupant.getSubspecies().getSingularFemaleName(occupant.getBody()):occupant.getSubspecies().getSingularMaleName(occupant.getBody())))+"</span><br/>"
 							+ "<span style='color:"+occupant.getFemininity().getColour().toWebHexString()+";'>"+Util.capitaliseSentence(occupant.getGender().getName())+"</span>"
@@ -1363,14 +1363,14 @@ public class OccupantManagementDialogue {
 						+ "<div style='float:left; width:15%; margin:0; padding:0;'>"
 							+ "<b style='color:"+affection.getColour().toWebHexString()+";'>"+occupant.getAffection(Main.game.getPlayer())+ "</b>"
 							+ "<br/><span style='color:"+(affectionChange==0?PresetColour.BASE_GREY:(affectionChange>0?PresetColour.GENERIC_GOOD:PresetColour.GENERIC_BAD)).toWebHexString()+";'>"+(affectionChange>0?"+":"")
-								+decimalFormat.format(affectionChange)+"</span>/day"
+								+decimalFormat.format(affectionChange)+"</span>/день"
 							+ "<br/>"
 							+ "<span style='color:"+affection.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(affection.getName())+"</span>"
 						+"</div>"
 						+ "<div style='float:left; width:15%; margin:0; padding:0;'>"
 							+ "<b style='color:"+obedience.getColour().toWebHexString()+";'>"+occupant.getObedienceValue()+ "</b>"
 							+ "<br/><span style='color:"+(obedienceChange==0?PresetColour.BASE_GREY:(obedienceChange>0?PresetColour.GENERIC_GOOD:PresetColour.GENERIC_BAD)).toWebHexString()+";'>"+(obedienceChange>0?"+":"")
-								+decimalFormat.format(obedienceChange)+"</span>/day"
+								+decimalFormat.format(obedienceChange)+"</span>/день"
 							+ "<br/>"
 							+ "<span style='color:"+obedience.getColour().toWebHexString()+";'>"+Util.capitaliseSentence(obedience.getName())+"</span>"
 						+"</div>"
@@ -1387,22 +1387,22 @@ public class OccupantManagementDialogue {
 								+"/день</div><div style='float:left; width:15%; margin:0 auto; padding:0; display:inline-block; text-align:center;'><div id='"+occupant.getId()+"' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveInspect()+"</div></div>"
 
 				+ (occupant.hasJob()
-						?"<div id='"+occupant.getId()+"_РАБОТА' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJobDisabled()+"</div></div>"
-						:"<div id='"+occupant.getId()+"_РАБОТА' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJob()+"</div></div>")
+						?"<div id='"+occupant.getId()+"_JOB' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJobDisabled()+"</div></div>"
+						:"<div id='"+occupant.getId()+"_JOB' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveJob()+"</div></div>")
 
-				+ "<div id='"+occupant.getId()+"_ПРАВА' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlavePermissionsDisabled()+"</div></div>"
+				+ "<div id='"+occupant.getId()+"_PERMISSIONS' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlavePermissionsDisabled()+"</div></div>"
 				
-				+"<div id='"+occupant.getId()+"_ИНВЕНТАРЬ' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()+"</div></div><div "+((place.getCapacity()<=Main.game.getCharactersTreatingCellAsHome(Main.game.getPlayerCell()).size())
+				+"<div id='"+occupant.getId()+"_INVENTORY' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getInventoryIcon()+"</div></div><div "+((place.getCapacity()<=Main.game.getCharactersTreatingCellAsHome(Main.game.getPlayerCell()).size())
 							|| place.isSlaveCell()
 							|| occupant.getHomeWorldLocation()==WorldType.DOMINION
 							|| (occupant.getLocation().equals(Main.game.getPlayer().getLocation()) && occupant.getWorldLocation().equals(Main.game.getPlayer().getWorldLocation()))
-									?" id='"+occupant.getId()+"_ПЕРЕВОД_ВЫКЛЮЧЕН' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>"
-									:" id='"+occupant.getId()+"_TRANSFER' class='square-button big'>ПЕРЕДАТЬ<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransfer()+"</div></div>"));
+									?" id='"+occupant.getId()+"_TRANSFER_DISABLED' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransferDisabled()+"</div></div>"
+									:" id='"+occupant.getId()+"_TRANSFER' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveTransfer()+"</div></div>"));
 		
 		if(Main.game.getDialogueFlags().hasFlag(DialogueFlagValue.kateIntroduced)) {
-			miscDialogueSB.append("<div id='"+occupant.getId()+"_COSMETICS' class='square-button big'>КОСМЕТИКА<div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmetics()+"</div></div>");
+			miscDialogueSB.append("<div id='"+occupant.getId()+"_COSMETICS' class='square-button big'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmetics()+"</div></div>");
 		} else {
-			miscDialogueSB.append("<div id='"+occupant.getId()+"_КОСМЕТИКА_ВЫКЛЮЧЕНА' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmeticsDisabled()+"</div></div>");
+			miscDialogueSB.append("<div id='"+occupant.getId()+"_COSMETICS_DISABLED' class='square-button big disabled'><div class='square-button-content'>"+SVGImages.SVG_IMAGE_PROVIDER.getSlaveCosmeticsDisabled()+"</div></div>");
 		}
 		
 		miscDialogueSB.append("</div></div>");

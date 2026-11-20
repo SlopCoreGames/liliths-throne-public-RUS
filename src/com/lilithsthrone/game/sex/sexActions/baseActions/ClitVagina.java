@@ -316,7 +316,7 @@ public class ClitVagina {
 				if(Main.sex.getCharacterPerformingAction().isMute()) {
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
 							" Лелея [npc.her] девственность превыше всего, [npc.name] затем быстро [npc.verb(pull)] [npc.her] [npc.pussy] от [npc2.namePos] [npc2.clit+].",
-							" Not at all ready to lose [npc.her] precious virginity, [npc.name] then quickly [npc.verb(pull)] [npc.her] [npc.pussy] away from [npc2.namePos] [npc2.clit+].",
+							" Совсем не готова потерять [npc.her] драгоценную девственность, [npc.name], а затем быстро [npc.verb(pull)] [npc.her] [npc.pussy] от [npc2.namePos] [npc2.clit+].",
 							" Поскольку [npc.she] [npc.verb(treasure)] [npc.her] драгоценную девственность превыше всего, [npc.name] [npc.verb(make)] дает понять, что [npc.she] [npc.do] на самом деле не хочет, чтобы ее проникали, оттягивая [npc.her] [npc.pussy] от [npc2.namePos] [npc2.clit+]."));
 						
 				} else {
@@ -414,7 +414,7 @@ public class ClitVagina {
 						UtilText.nodeContentSB.append(" Будучи девственницей, [npc2.sheIs] не может сдержать отчаянного вопля, когда [npc2.name] [npc2.verb(experience)] ощущение первого проникновения, которое испытывает [npc2.she].");
 						
 					} else {
-						UtilText.nodeContentSB.append(" As [npc2.sheIs] a virgin, [npc2.name] can't help but let out a shocked [npc2.moan] as [npc2.she] [npc2.verb(experience)] the feeling of being penetrated for the first time.");
+						UtilText.nodeContentSB.append(" Будучи [npc2.sheIs] девственницей, [npc2.name] не может сдержать шокированного [npc2.moan], когда [npc2.she] [npc2.verb(experience)] ощущение первого проникновения.");
 					}
 					
 				} else if(Main.sex.getCharacterTargetedForSexAction(this).hasHymen()) {
@@ -905,7 +905,7 @@ public class ClitVagina {
 						UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
 								" [npc2.Name] [npc2.verb(let)] [npc2.a_sob+], пока [npc.name] [npc.verb(force)] [npc2.her] [npc2.clit] внутри [npc.herHim], и, борясь с [npc.herHim], [npc2.she] отчаянно [npc2.verb(try)], чтобы вырвать [npc2.her] [npc2.clit+] из [npc.her] [npc.vagina+].",
 	
-								" With [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] against [npc.name] as [npc.she] [npc.verb(force)] [npc2.her] [npc2.clit] deep into [npc.her] [npc.vagina+]."));
+								" С [npc2.a_sob+], [npc2.name] [npc2.verb(struggle)] против [npc.name], пока [npc.she] [npc.verb(force)] [npc2.her] [npc2.clit] глубоко в [npc.her] [npc.vagina+]."));
 						break;
 				}
 			}

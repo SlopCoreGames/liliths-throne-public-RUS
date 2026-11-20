@@ -455,9 +455,9 @@ public class RoomPlayer {
 				if(npc.isShy()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps, [npc.name] nervously shuffles forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Включив краны, [npc.name] нервно шагает вперед, а затем принимается помогать тебе мыть [pc.hair(true)] и тело. Стараясь [npc.her] изо всех сил, чтобы тебя было слышно сквозь шум льющейся воды, [npc.she] немного повышает [npc.her] голос и говорит:");
 						} else {
-							start.add("Turning on the taps, [npc.name] nervously shuffles forwards, before starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Включив краны, [npc.name] нервно шагает вперед, а затем принимается помогать тебе мыть тело. Стараясь [npc.her] изо всех сил, чтобы тебя было слышно сквозь шум льющейся воды, [npc.she] немного повышает [npc.her] голос и говорит:");
 						}
 					} else {
 						start.add("Сжимая в руке кусок мыла, [npc.name] нервно подается вперед, чтобы помочь [npc.her] соратнику "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Немного повысив [npc.her] голос, [npc.she] говорит:");
@@ -477,9 +477,9 @@ public class RoomPlayer {
 				} else if(npc.isKind()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps, [npc.name] happily steps forwards, before gently starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив краны, [npc.name] радостно шагает вперед, а затем нежно принимается помогать тебе мыть [pc.hair(true)] и тело. Стараясь [npc.her] изо всех сил, чтобы тебя было слышно сквозь шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит:");
 						} else {
-							start.add("Turning on the taps, [npc.name] happily steps forwards, before gently starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив краны, [npc.name] радостно шагает вперед, а затем нежно принимается помогать тебе мыть тело. Стараясь [npc.her] изо всех сил, чтобы тебя было слышно сквозь шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит:");
 						}
 					} else {
 						start.add("Сжимая в руке кусок мыла, [npc.name] счастливо шагает вперед, чтобы помочь своему товарищу [npc.her] "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
@@ -499,9 +499,9 @@ public class RoomPlayer {
 				} else {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps, [npc.name] steps forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив краны, [npc.name] шагает вперед, а затем принимается помогать тебе мыть [pc.hair(true)] и тело. Стараясь [npc.her] изо всех сил, чтобы тебя было слышно сквозь шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит:");
 						} else {
-							start.add("Turning on the taps, [npc.name] steps forwards, before starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив краны, [npc.name] шагает вперед, а затем принимается помогать тебе мыть тело. Стараясь [npc.her] изо всех сил, чтобы тебя было слышно сквозь шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит:");
 						}
 					} else {
 						start.add("Сжимая в руке кусок мыла, [npc.name] делает шаг вперед, чтобы помочь [npc.her] своему "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
@@ -679,7 +679,7 @@ public class RoomPlayer {
 				if(npc.isShy()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps and running you a bath, [npc.name] nervously shuffles forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice a little and says,");
+							start.add("Включив воду и набирая тебе ванну, [npc.name] нервно шагает вперед, а затем принимается помогать тебе мыть [pc.hair(true)] и тело. Стараясь изо всех [npc.her] сил перекричать шум льющейся воды, [npc.she] немного повышает [npc.her] голос и говорит,");
 						} else {
 							start.add("Включив краны и набрав тебе ванну, [npc.name] нервно делает шаг вперед, а затем принимается помогать тебе мыться. Стараясь перекричать шум льющейся воды, [npc.she] немного повышает [npc.her] голос и говорит: [npc.her] старается изо всех сил, чтобы её было слышно, и говорит,");
 						}
@@ -701,9 +701,9 @@ public class RoomPlayer {
 				} else if(npc.isKind()) {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps and running you a bath, [npc.name] happily steps forwards, before gently starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив воду и набирая тебе ванну, [npc.name] радостно шагает вперед, а затем нежно принимается помогать тебе мыть [pc.hair(true)] и тело. Стараясь изо всех [npc.her] сил перекричать шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит,");
 						} else {
-							start.add("Turning on the taps and running you a bath, [npc.name] happily steps forwards, before gently starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив воду и набирая тебе ванну, [npc.name] радостно шагает вперед, а затем нежно принимается помогать тебе мыть тело. Стараясь изо всех [npc.her] сил перекричать шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит,");
 						}
 					} else {
 						start.add("Сжимая в руке кусок мыла, [npc.name] счастливо шагает вперед, чтобы помочь своему товарищу [npc.her] "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");
@@ -723,9 +723,9 @@ public class RoomPlayer {
 				} else {
 					if(firstWashing) {
 						if(Main.game.getPlayer().hasHair()) {
-							start.add("Turning on the taps and running you a bath, [npc.name] steps forwards, before starting to help you wash your [pc.hair(true)] and body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив воду и набирая тебе ванну, [npc.name] шагает вперед, а затем принимается помогать тебе мыть [pc.hair(true)] и тело. Стараясь изо всех [npc.her] сил перекричать шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит,");
 						} else {
-							start.add("Turning on the taps and running you a bath, [npc.name] steps forwards, before starting to help you wash your body. Doing [npc.her] best to be heard over the sound of running water, [npc.she] raises [npc.her] voice and says,");
+							start.add("Включив воду и набирая тебе ванну, [npc.name] шагает вперед, а затем принимается помогать тебе мыть тело. Стараясь изо всех [npc.her] сил перекричать шум льющейся воды, [npc.she] повышает [npc.her] голос и говорит,");
 						}
 					} else {
 						start.add("Сжимая в руке кусок мыла, [npc.name] делает шаг вперед, чтобы помочь [npc.her] своему "+(washingNice.size()>2?"slaves":"slave")+" отмыться. Повысив [npc.her] голос, [npc.she] говорит:");

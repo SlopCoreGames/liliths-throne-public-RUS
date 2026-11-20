@@ -2608,7 +2608,7 @@ public class StatusEffect {
 						"[npc.NameHasFull] был отмечен мускусом, и [npc.verb(find)] [npc.herself] возбуждается от этого запаха [npc.she] теперь [npc.verb(carry)].");
 			} else {
 				return UtilText.parse(target,
-						"[npc.NameHasFull] был отмечен мускусом, и [npc.verb(find)] [npc.NameHasFull] возбуждается от этого запаха @@T1@@ теперь [npc.verb(carry)]."+Util.charactersToStringListOfNames(target.getMuskMarkerCharacters(), true)
+						"[npc.NameHasFull] помечен(а) мускусом "+Util.charactersToStringListOfNames(target.getMuskMarkerCharacters(), true)
 							+", и [npc.verb(find)] [npc.herself], которая возбуждается от характерного запаха [npc.she], теперь [npc.verb(carry)].");
 			}
 		}
@@ -2633,7 +2633,7 @@ public class StatusEffect {
 			false,
 			Util.newHashMapOfValues(new Value<>(Attribute.MAJOR_CORRUPTION, 25f)),
 			Util.newArrayListOfValues("[style.boldMinorBad(-10%)] [style.boldMana(Максимальное "+Attribute.HEALTH_MAXIMUM.getName()+")]",
-					"@@T0@@ не может справиться с количеством арканических заклинаний, наложенных на @@T1@@ оружие, одежду и татуировки, и поэтому @@T2@@ страдает от некоторых негативных побочных эффектов."+Attribute.MANA_MAXIMUM.getName()+")]")) {
+					"[style.boldMinorBad(-10%)] [style.boldMana(Максимальная "+Attribute.MANA_MAXIMUM.getName()+")]")) {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
@@ -4741,7 +4741,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
-						"From one of [npc.namePos] recent sexual encounters, [npc.sheHas] had [npc.her] stomach filled with eggs!@@H0@@");
+						"После одного из недавних половых актов живот [npc.namePos] оказался наполнен яйцами!");
 		}
 		@Override
 		public String extraRemovalEffects(GameCharacter target) {
@@ -5612,7 +5612,7 @@ public class StatusEffect {
 	};
 
 	public static AbstractStatusEffect MILK_CROTCH_FULL = new AbstractStatusEffect(80,
-			"Полные @@T0@@",
+			"Полное вымя",
 			"milkCrotchFull",
 			PresetColour.GENERIC_SEX,
 			true,
@@ -6687,7 +6687,7 @@ public class StatusEffect {
 			
 			if(target.isOrificePlugged(SexAreaOrifice.NIPPLE)) {
 				if(target.isPlayer()) {
-					return "[pc.nipples] @@T1@@ have recently been filled with cum, before being plugged.<br/>[style.boldTerrible(Plugged Nipples:)] No cum is leaking out"
+					return "Твои [pc.nipples] недавно были наполнены спермой и заткнуты пробками.<br/>[style.boldTerrible(Заткнутые соски:)] Сперма не вытекает"
 							+ (retention?"!":", хотя она всё еще впитывается!");
 				} else {
 					return UtilText.parse(target, 
@@ -7303,11 +7303,11 @@ public class StatusEffect {
 				fluidNames.add("liquid");
 			}
 			if(target.isPlayer()) {
-				return "После того, как @@T0@@ надули колоссальным количеством "+Util.stringsToStringList(fluidNames, false)+", ваши [pc.breasts] теперь значительно надуты."
+				return "После того, как их накачали колоссальным количеством "+Util.stringsToStringList(fluidNames, false)+", ваши [pc.breasts] теперь значительно надуты."
 						+ "Огромное количество лишнего веса в верхней части тела мешает вам двигаться.";
 			} else {
 				return UtilText.parse(target,
-							"После того, как @@T0@@ надули колоссальным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.breasts] теперь значительно надуты."
+							"После того, как [npc.herHim] накачали колоссальным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.breasts] теперь значительно надуты."
 									+ "Огромное количество лишнего веса в верхней части тела [npc.her] мешает [npc.herHim] двигаться.");
 			}
 		}
@@ -7348,7 +7348,7 @@ public class StatusEffect {
 			if(target!=null) {
 				if(target.hasTailSpinneret()) {
 					return UtilText.parse(target,
-							"После того, как @@T0@@ надули значительным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь оно немного опухло. Из-за лишнего веса [npc.herHim] стало немного трудно передвигаться.");
+							"После того, как [npc.herHim] накачали значительным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь оно немного опухло. Из-за лишнего веса [npc.herHim] стало немного трудно передвигаться.");
 				} else {
 					return UtilText.parse(target,
 							"После того как внутрь залили приличное количество "+Util.stringsToStringList(fluidNames, false)+", живот [npc.namePos] теперь немного раздут. Из-за лишнего веса [npc.herHim] стало немного трудно передвигаться.");
@@ -7397,7 +7397,7 @@ public class StatusEffect {
 							"После того как внутрь залили огромное количество "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь заметно раздуто. Лишний вес мешает [npc.her] нормально двигаться.");
 				} else {
 					return UtilText.parse(target,
-							"После того, как @@T0@@ брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] брюхо теперь заметно вздулось."
+							"После того, как [npc.her] брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] брюхо теперь заметно вздулось."
 							+ "Дополнительный вес мешает [npc.her] двигаться.");
 				}
 			}
@@ -7441,11 +7441,11 @@ public class StatusEffect {
 			if(target!=null) {
 				if(target.hasTailSpinneret()) {
 					return UtilText.parse(target,
-							"После того, как @@T0@@ брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь сильно вздулось."
+							"После того, как [npc.her] брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] [npc.tail] "+(target.getTailCount()>1?"являются":"есть")+"теперь сильно вздулось."
 							+ "Огромный дополнительный вес делает для [npc.herHim] крайне затруднительным передвижение.");
 				} else {
 					return UtilText.parse(target,
-							"После того, как @@T0@@ брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] брюхо теперь сильно вздулось."
+							"После того, как [npc.her] брюхо было наполнено огромным количеством "+Util.stringsToStringList(fluidNames, false)+", [npc.namePos] брюхо теперь сильно вздулось."
 							+ "Огромное количество лишнего веса делает для [npc.herHim] крайне сложно передвигаться.");
 				}
 			}
@@ -8752,7 +8752,7 @@ public class StatusEffect {
 		}
 		@Override
 		public String getDescription(GameCharacter target) {//British Auxiliary Territorial Service
-			return UtilText.parse(target, "[npc.name] [npc.sheIs] связана в бондаже и [npc.her] абсолютно наслаждается тем, что @@T3@@ @@T4@@ с трудом двигается.");
+			return UtilText.parse(target, "[npc.Name] связана в бондаже и безмерно наслаждается тем, что [npc.she] едва может пошевелиться.");
 		}
 		@Override
 		public boolean isConditionsMet(GameCharacter target) {
@@ -9257,7 +9257,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			if(target.isPlayer()) {
-				return "@@T0@@ абсолютно отчаянно нуждаетесь в сексе, но благодаря силе @@T1@@ арканой ауры, @@T2@@ можете сопротивляться и не сдаваться прямо здесь и сейчас!";
+				return "Ты отчаянно нуждаешься в сексе, но благодаря силе твоей арканной ауры ты можешь сопротивляться и не сдаваться прямо здесь и сейчас!";
 			} else {
 				return UtilText.parse(target,
 						"[npc.NameIsFull] отчаянно хочет секса, но благодаря силе [npc.her] аркана, [npc.sheIs] может устоять и не сдаться прямо здесь и сейчас!");
@@ -9288,7 +9288,7 @@ public class StatusEffect {
 			null) {
 		@Override
 		public String getDescription(GameCharacter target) {
-			return UtilText.parse(target, "[npc.NamePos] голова кружится и [npc.sheIs] с трудом держится на ногах. @@T2@@ испытывает невероятные трудности с нанесением ударов или уклонением от любых входящих атак.");
+			return UtilText.parse(target, "[npc.NamePos] голова кружится и [npc.sheIs] с трудом держится на ногах. [npc.She] испытывает невероятные трудности с нанесением ударов или уклонением от любых входящих атак.");
 		}
 		@Override
 		public boolean isCombatEffect() {
@@ -10840,7 +10840,7 @@ public class StatusEffect {
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
 						"Постоянное существование пустоты в воздухе, которая смещается, чтобы оставаться рядом с телом [npc.namePos], вызывает у [npc.her] потерю равновесия!"
-						+ "Постоянное существование пустоты в воздухе, которая смещается, чтобы оставаться рядом с телом [npc.herHim], вызывает у @@T1@@ потерю равновесия!");
+						+ " Вокруг [npc.herHim] также непрерывно возникают и схлопываются малые вторичные пустоты!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -10874,9 +10874,9 @@ public class StatusEffect {
 					AbstractClothing clothingBlownOff = suitableClothing.get(Util.random.nextInt(suitableClothing.size()));
 					target.unequipClothingOntoFloor(clothingBlownOff, true, target);
 					if(target.isPlayer()) {
-						return "Вашей "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+"@@H0@@10%@@H1@@ шанс в ход на [style.boldExcellent(stripping)] одежду";
+						return "Порыв ветра срывает твою одежду ("+clothingBlownOff.getName()+")!";
 					} else {
-						return "[npc.NamePos] "+clothingBlownOff.getName()+" "+(clothingBlownOff.getClothingType().isPlural()?"are":"is")+"@@H0@@10%@@H1@@ шанс в ход на [style.boldExcellent(stripping)] одежду";
+						return "Порыв ветра срывает одежду [npc.namePos] ("+clothingBlownOff.getName()+")!";
 					}
 				}
 			}
@@ -10886,7 +10886,7 @@ public class StatusEffect {
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target,
 						"Постоянное существование пустоты в воздухе, которая смещается, чтобы оставаться рядом с телом [npc.namePos], вызывает у [npc.her] потерю равновесия!"
-						+ "Постоянное существование пустоты в воздухе, которая смещается, чтобы оставаться рядом с телом [npc.herHim], вызывает у @@T1@@ потерю равновесия!");
+						+ " Вокруг [npc.herHim] также непрерывно возникают и схлопываются малые вторичные пустоты!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -11874,7 +11874,7 @@ public class StatusEffect {
 		@Override
 		public String getDescription(GameCharacter target) {
 			return UtilText.parse(target, target.getElemental(),
-						"Having sworn [npc.her] subservience to the school of Arcane, [npc.namePos] Arcane elemental, [npc2.name], is now siphoning off as much of [npc.namePos] energy as [npc2.she] wants!");
+						"Присягнув [npc.her] на верность школе Arcane, [npc.namePos] элементаль Arcane, [npc2.name], теперь высасывает столько [npc.namePos] энергии, сколько пожелает [npc2.she]!");
 		}
 		@Override
 		public String getSVGString(GameCharacter owner) {
@@ -12857,7 +12857,7 @@ public class StatusEffect {
 								if(selfAction) {
 									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.her] владей [npc.ass]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(licking)] [npc2.namePos] [npc2.ass]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(облизывая)] [npc2.namePos] [npc2.ass]!"));
 								}
 								break;
 							case CLIT:
@@ -13015,7 +13015,7 @@ public class StatusEffect {
 								break;
 							case TONGUE:
 								if(selfAction) {
-									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.herself]!"));
+									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc.herself]!"));
 								} else {
 									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc2.NameIsFull] [style.boldSex(kissing)] [npc.name]!"));
 								}
@@ -13871,7 +13871,7 @@ public class StatusEffect {
 								if(selfAction) {
 									descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc.her] сама [npc.urethraPenis]!"));
 								} else {
-									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(kissing)] [npc2.namePos] [npc2.urethraPenis]!"));
+									descriptionSB.append(UtilText.parse(entry.getKey(), target, "[npc.NameIsFull] [style.boldSex(целуя)] [npc2.namePos] [npc2.urethraPenis]!"));
 								}
 								break;
 							case CLIT:
@@ -14213,7 +14213,7 @@ public class StatusEffect {
 								descriptionSB.append(UtilText.parse(target, "[npc.NameIsFull] [style.boldSex(pushing [npc.her] [npc.toes])] в [npc.her] собственную [npc.pussy]!"));
 							} else {
 								descriptionSB.append(UtilText.parse(target, Util.capitaliseSentence(Util.stringsToStringList(names, false))
-										+(names.size()==1?UtilText.parse(main, " [npc.is] [style.boldSex(вжимает [npc.her] [npc.toes])]"):"  в @@T0@@ @@T1@@!")
+										+(names.size()==1?UtilText.parse(main, " [style.boldSex(трахает)]"):" [style.boldSex(трахают)] ")
 										+"в [npc.namePos] [npc.pussy]!"));
 							}
 							break;

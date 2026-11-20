@@ -543,7 +543,7 @@ public class ChairSex {
 			if(!Main.sex.getCharacterPerformingAction().isTaur()) {
 				return "[npc.Name] [npc.verb(decide)] поменяться местами: заставив [npc2.name] сесть, [npc.she] [npc.verb(sit)] на [npc2.her]. Глядя в [npc2.her] [npc2.eyes], [npc.she] [npc.moansVerb], [npc.speech(Хороший [npc2.girl]!)]";
 			} else {
-				return "[npc.Name] [npc.verb(decide)] to switch positions, and, getting [npc2.name] to sit down, [npc.she] [npc.verb(stand)] up, [npc.verb(turn)] around, and [npc.verb(lower)] [npc.her] animalistic rear end down into [npc2.namePos] lap. Looking back down over [npc.her] shoulder, [npc.name] then [npc.moansVerb], [npc.speech(Time to give you a ride!)]";
+				return "[npc.Name] [npc.verb(decide)] чтобы сменить позы, и, заставив [npc2.name] сесть, [npc.she] [npc.verb(stand)] вверх, [npc.verb(turn)] вокруг, и [npc.verb(lower)] [npc.her] животный зад в [npc2.namePos] колени. Оглянувшись через [npc.her] плечо, [npc.name] затем [npc.moansVerb], [npc.speech(Пора прокатиться!)]";
 			}
 		}
 		@Override
@@ -777,7 +777,7 @@ public class ChairSex {
 							case DOM_ROUGH:
 								return "Сев, [npc.name] [npc.verb(grab)] хватает [npc2.namePos] за [npc2.arm] и резким рывком [npc.she] [npc.verb(pull)] опускает [npc2.herHim] на [npc2.her] колени перед [npc.herHim]. Наклонившись вперед, чтобы впиться взглядом в [npc2.her] глаза, [npc.name] [npc.moansVerb], [npc.speech(Ну же, шлюшка, используй свой ротик!)]";
 							default:
-								return "Sitting down, [npc.name] [npc.verb(take)] hold of [npc2.namePos] [npc2.arm], and with a firm tug, [npc.she] [npc.verb(pull)] [npc2.herHim] down onto [npc2.her] knees before [npc.herHim]. Leaning forwards to gaze into [npc2.her] eyes, [npc.name] [npc.moansVerb], [npc.speech(Good [npc2.girl]. Let's put your mouth to use...)]";
+								return "Садясь, [npc.name] [npc.verb(take)] хватает [npc2.namePos] за [npc2.arm] и резким рывком [npc.she] [npc.verb(pull)] [npc2.herHim] на [npc2.her] колени перед [npc.herHim]. Наклонившись вперед, чтобы заглянуть в [npc2.her] глаза, [npc.name] [npc.moansVerb], [npc.speech(Хороший [npc2.girl]. Давай заставим твой ротик поработать...)]";
 						}
 						
 					} else {

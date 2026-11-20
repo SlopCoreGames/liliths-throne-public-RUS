@@ -715,7 +715,7 @@ public class PenisAss {
 
 							"[npc.A_sob+] с силой вырывается из между [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя протесты [npc.her], [npc2.she] властно удерживает [npc.herHim] на месте, яростно вжимая [npc2.her] [npc2.ass] в [npc.her] пах, пока [npc2.she] грубо [npc2.verb(force)] [npc.her] [npc.cock+] между ягодицами [npc2.her].",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.name] to let go of [npc.her] [npc.cock]. [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, roughly grinding [npc2.herself] against [npc.herHim] as [npc2.she] [npc2.verb(force)] [npc.her] [npc.cock+] deep between [npc2.her] ass cheeks."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.name] отпустила [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] полностью [npc2.verb(ignore)] протесты [npc.her], грубо втирая [npc2.herself] в [npc.herHim], пока [npc2.she] [npc2.verb(force)] [npc.her] [npc.cock+] глубоко между [npc2.her] ягодиц."));
 					break;
 				default: // DOM_NORMAL and in case anything goes wrong:
 					UtilText.nodeContentSB.append(UtilText.returnStringAtRandom(
@@ -723,7 +723,7 @@ public class PenisAss {
 
 							"[npc.A_sob+] с силой вырывается из между [npc.namePos] [npc.lips], пока [npc.she] слабо пытается оттолкнуть [npc2.name], но, полностью игнорируя протесты [npc.her], [npc2.she] крепко удерживает [npc.herHim] на месте, жадно вжимая [npc2.her] [npc2.ass] в пах [npc.her], пока [npc2.she] отчаянно [npc2.verb(force)] [npc.her] [npc.cock+] между ягодицами [npc2.her].",
 
-							"[npc.Sobbing] in distress, [npc.name] weakly [npc.verb(struggle)] against [npc2.name] as [npc.she] [npc.verb(plead)] for [npc2.name] to let go of [npc.her] [npc.cock]. [npc2.Moaning] in delight, [npc2.name] totally [npc2.verb(ignore)] [npc.her] protests, eagerly grinding [npc2.herself] against [npc.herHim] as [npc2.she] happily [npc2.verb(force)] [npc.her] [npc.cock+] deep between [npc2.her] ass cheeks."));
+							"[npc.Sobbing] в смятении, [npc.name] слабо [npc.verb(struggle)] против [npc2.name], пока [npc.she] [npc.verb(plead)], чтобы [npc2.name] отпустила [npc.her] [npc.cock]. [npc2.Moaning] в восторге, [npc2.name] совершенно [npc2.verb(ignore)] [npc.her] протестует, жадно притирая [npc2.herself] к [npc.herHim], пока [npc2.she] счастливо [npc2.verb(force)] [npc.her] [npc.cock+] глубоко между [npc2.her] ягодиц."));
 					break;
 			}
 			
